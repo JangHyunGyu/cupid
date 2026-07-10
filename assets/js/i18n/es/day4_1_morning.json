@@ -6,7 +6,7 @@
     "morning4_nightmare_check": {},
     "morning4_nightmare_seo": {
         "name": "{name}",
-        "text": "*...Tuve un sueño raro. La sonrisa de Seoyeon — aún me baila delante.*"
+        "text": "*...Tuve un sueño extraño. La sonrisa de Seoyeon aún flota ante mis ojos.*"
     },
     "morning4_nightmare_yuna": {
         "name": "{name}",
@@ -34,7 +34,7 @@
     },
     "minsu_cheer_1_d": {
         "name": "Minsu",
-        "text": "*Lo soltó Dain en el grupo jajaja ¡¡Mañana tengo plan!! puso*"
+        "text": "*lo soltó Dain en el grupo jajaja puso: ¡¡mañana tengo plan!!*"
     },
     "minsu_cheer_2": {
         "name": "Minsu",
@@ -108,7 +108,7 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "*La puerta de la escuela está ligeramente abierta. Presencia adentro. El profesor tutor sale a la puerta principal. Lleva una bolsa de papel.*"
+        "text": "*El portón de la escuela está entreabierto. Se percibe movimiento dentro. La tutora sale hacia la entrada con una bolsa de papel en la mano.*"
     },
     "hidden_homeroom_d4_1_b": {
         "name": "{name}",
@@ -140,7 +140,7 @@
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
-        "text": "*Mirando desde afuera de la puerta de la escuela, el maestro del salón mira más cerca del bloc de notas que de la mesa del maestro.*"
+        "text": "*La tutora mantiene la bolsa de papel en una mano.*"
     },
     "hidden_homeroom_d4_4_b": {
         "name": "Profesora",
@@ -196,7 +196,7 @@
     },
     "hidden_homeroom_d4_cafe_1_d": {
         "name": "Profesora",
-        "text": "*El profesor lo dice como una broma y toca la taza de café. Dos anillos circulares de agua se superponen en el posavasos.*"
+        "text": "*La profesora lo dice como una broma y toca la taza de café. Dos cercos de agua se superponen sobre el posavasos.*"
     },
     "hidden_homeroom_d4_cafe_1_e": {
         "name": "{name}",
@@ -252,7 +252,7 @@
     },
     "hidden_homeroom_d4_cafe_4_b": {
         "name": "{name}",
-        "text": "*Me viene a la mente el trabajo manuscrito en el aula vacía de ayer. Hoy estoy fuera de la escuela y las esquinas del portavasos se siguen doblando.*"
+        "text": "*Sigue doblando la esquina de la funda de cartón del vaso.*"
     },
     "hidden_homeroom_d4_cafe_5": {
         "name": "{name}",
@@ -486,7 +486,7 @@
     },
     "hidden_nurse_d4_6": {
         "name": "Enfermera",
-        "text": "Gracias. Gracias a ti terminé rápido. ...Tampoco era para tanto."
+        "text": "Gracias. Contigo he terminado mucho antes. ...No es gran cosa."
     },
     "hidden_nurse_d4_6_b": {
         "name": "{name}",

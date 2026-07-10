@@ -455,7 +455,7 @@
     },
     "perfect_seo_4": {
         "name": "Seoyeon",
-        "text": "*Corre la brisa en la azotea.* Aunque me gradúe, seguiré viniendo. Estas plantas solo crecen si estás tú."
+        "text": "Lo que falta lo vemos mañana."
     },
     "perfect_seo_5": {
         "name": "Seoyeon",
@@ -479,7 +479,7 @@
     },
     "perfect_epilogue_3_seo": {
         "name": "Seoyeon",
-        "text": "*No borra las fotos aunque el delineador esté un poco corrido. Los algodones frente al espejo no se usaron ni una vez hoy.*"
+        "text": "Elige tú una."
     },
     "perfect_epilogue_4_seo": {
         "name": "Sistema",
@@ -515,11 +515,11 @@
     },
     "true_seo_4": {
         "name": "{name}",
-        "text": "Nunca tuviste que hacerlo."
+        "text": "*Al acercar la silla, las patas raspan suavemente el suelo.*"
     },
     "true_seo_5": {
         "name": "Seoyeon",
-        "text": "...saber. Pero tomó algún tiempo creerlo."
+        "text": "En casa, las conversaciones largas me agotan."
     },
     "true_seo_6": {
         "name": "Seoyeon",
@@ -543,7 +543,7 @@
     },
     "true_seo_8": {
         "name": "{name}",
-        "text": "*Enlazamos meñiques. El dedo que cortaba el aire vacío el primer día ahora está enganchado al mío.*"
+        "text": "*Una taza se desliza hacia {name}.*"
     },
     "true_seo_bridge": {
         "name": "{name}",
@@ -575,7 +575,7 @@
     },
     "perfect_yuna_5": {
         "name": "Yuna",
-        "text": "*Se levantó y me abrazó. Sin decir nada. La luz de la ventana rota se extendió larga por el piso. Su mano se detuvo lentamente detrás de mi espalda.*"
+        "text": "*Se levanta y me abraza sin decir nada. La luz de la ventana rota se alarga sobre el suelo. Su mano se detiene despacio en mi espalda.*"
     },
     "perfect_epilogue_1_yuna": {
         "name": "{name}",
@@ -937,7 +937,7 @@
     },
     "good_1_seo_c": {
         "name": "Seoyeon",
-        "text": "*Retrasa medio paso sin decir nada. Espera hasta que el hombro de {name} queda a la misma altura que el suyo.*"
+        "text": "*Seoyeon reduce el paso medio paso.*"
     },
     "good_1_seo_d": {
         "name": "{name}",
@@ -949,7 +949,7 @@
     },
     "good_3_seo": {
         "name": "{name}",
-        "text": "*\"...¿Qué pasa, no vienes?\" Lo masculla, pero es el tono de quien te ha estado esperando.*"
+        "text": "El semáforo cambia."
     },
     "good_4_seo": {
         "name": "{name}",
@@ -1001,7 +1001,7 @@
     },
     "good_5_yuna": {
         "name": "{name}",
-        "text": "*Sal por la puerta de la azotea y baja las escaleras. Los pasos son lentos pero no se detienen. Esta vez leeré hasta el final y hablaré hasta el final.*"
+        "text": "*Salgo por la puerta de la azotea y bajo las escaleras. Mis pasos son lentos, pero no se detienen.*"
     },
     "good_epilogue_1_yuna": {
         "name": "{name}",
@@ -1129,11 +1129,11 @@
     },
     "mayhem_3": {
         "name": "Dain",
-        "text": "*Dain se rió como siempre. \"Cómo estás.\" El final de sus palabras cayó al suelo. No había ningún signo de exclamación que yo supiera.*"
+        "text": "*Sonríe como siempre. «Cuídate». El final de la frase cae sin fuerza.*"
     },
     "mayhem_4": {
         "name": "{name}",
-        "text": "*Miré las espaldas de las tres personas. Ninguno de los tres se dio la vuelta.*"
+        "text": "*Miro las espaldas de las tres. Ninguna se vuelve.*"
     },
     "mayhem_5": {
         "name": "{name}",
@@ -1145,7 +1145,7 @@
     },
     "mayhem_7": {
         "name": "{name}",
-        "text": "*Mira el memorándum no enviado debajo de la foto de Sojung. Esta vez, el bocadillo enviado fue largo. La pantalla se oscurece tal cual.*"
+        "text": "*Miro la nota sin enviar que estaba bajo la foto de Sojeong. Los mensajes enviados forman ahora una larga fila. La pantalla se apaga tal cual.*"
     },
     "mayhem_8": {
         "name": "Sistema",

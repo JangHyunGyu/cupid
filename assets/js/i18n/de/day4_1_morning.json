@@ -6,23 +6,23 @@
     "morning4_nightmare_check": {},
     "morning4_nightmare_seo": {
         "name": "{name}",
-        "text": "*...Hatte einen seltsamen Traum. Seoyeons lächelndes Gesicht — schwebt mir noch vor Augen.*"
+        "text": "*Der Wecker klingelt. Auf dem Display wartet eine Nachricht von Seoyeon.*"
     },
     "morning4_nightmare_yuna": {
         "name": "{name}",
-        "text": "*...Hatte einen seltsamen Traum. Wollte Yuna erreichen — meine Fingerspitzen fühlen sich noch leer an.*"
+        "text": "*Der Wecker klingelt. Auf dem Display wartet eine Nachricht von Yuna.*"
     },
     "morning4_nightmare_dain": {
         "name": "{name}",
-        "text": "*...Hatte einen seltsamen Traum. Dachte, ich hätte Dain gefangen — aber meine Hände sind noch leer.*"
+        "text": "*Der Wecker klingelt. Auf dem Display wartet eine Nachricht von Dain.*"
     },
     "morning4_nightmare_after": {
         "name": "{name}",
-        "text": "*Als ich meine Augen öffnete, fiel mir zuerst nur ein Name ein.*"
+        "text": "*Ich sehe mir die Benachrichtigung noch einmal an.*"
     },
     "minsu_cheer_1": {
         "name": "{name}",
-        "text": "*Aufs Handy schauen. Nachricht am Morgen. — Minsu steht ganz oben.*"
+        "text": "*Ich sehe aufs Handy. Eine Morgennachricht — ganz oben steht Minsu.*"
     },
     "minsu_cheer_1_b": {
         "name": "Minsu",
@@ -34,7 +34,7 @@
     },
     "minsu_cheer_1_d": {
         "name": "Minsu",
-        "text": "*Dain hat es in den Gruppenchat geschrieben lol Hab morgen was vor!! hat sie geschrieben*"
+        "text": "*Dain hat in den Gruppenchat geschrieben: ‚Hab morgen was vor.‘*"
     },
     "minsu_cheer_2": {
         "name": "Minsu",
@@ -47,7 +47,7 @@
     "minsu_cheer_4_branch": {},
     "minsu_cheer_4_ins_single": {
         "name": "{name}",
-        "text": "*Ich schaue auf den Kalender meines Handys. Heute gibt es nur ein einziges Treffen. — Diesmal habe ich beschlossen, nichts mehr aufzuschieben.*"
+        "text": "*Ich sehe in den Kalender meines Handys. Heute steht nur eine einzige Verabredung darin.*"
     },
     "minsu_cheer_4_c": {
         "name": "{name}",
@@ -55,7 +55,7 @@
     },
     "minsu_cheer_4_d": {
         "name": "{name}",
-        "text": "*...Was mache ich hier eigentlich.*"
+        "text": "*...Was mache ich hier eigentlich?*"
     },
     "minsu_cheer_4_e": {
         "name": "{name}",
@@ -71,11 +71,11 @@
     },
     "morning4_seo_msg_1_b": {
         "name": "{name}",
-        "text": "*Imperativ. Sogar Verabredungen klingen wie Befehle. — Aber irgendwie witzig.*"
+        "text": "*Damit endet die Nachricht.*"
     },
     "morning4_seo_msg_1_c": {
         "name": "{name}",
-        "text": "*Ich stehe am Treffpunkt. Wird sie kommen? Nach dem Streit am Freitag.*"
+        "text": "*Ich stehe vor dem Brunnen. Die Uhr zeigt 9:58 Uhr.*"
     },
     "morning4_yuna_msg_1": {
         "name": "Yuna",
@@ -83,15 +83,15 @@
     },
     "morning4_yuna_msg_1_b": {
         "name": "{name}",
-        "text": "*Kurz. Typisch Yuna. Kein Punkt nach 'ich gehe, wenn du zu spät bist.'*"
+        "text": "*Kurz. Typisch Yuna. Hinter ‚Wenn du zu spät kommst, gehe ich‘ fehlt sogar der Punkt.*"
     },
     "morning4_yuna_msg_single": {
         "name": "{name}",
-        "text": "*Kurz. Aber heute wirkt diese Kürze besonders klar. Es gibt keine anderen Verabredungen. — Diesmal gehe ich wirklich nur an diesen einen Ort.*"
+        "text": "*Die Nachricht ist kurz. Heute habe ich nur diese eine Verabredung.*"
     },
     "morning4_dain_msg_1": {
         "name": "Dain",
-        "text": "Heute ist DER Tag!!!! 18 Uhr vor der Halle!! Bin irgendwie nervös lol, warte, sollte ich das überhaupt abschicken"
+        "text": "Heute ist es so weit. 18 Uhr vor der Turnhalle. Ach, warum bin ich so nervös? Kann ich das so abschicken?"
     },
     "morning4_fallback_msg": {
         "name": "{name}",
@@ -108,7 +108,7 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "*Das Schultor steht leicht offen. Eine Präsenz drinnen. Die Klassenlehrerin kommt zum Haupttor heraus. Hält eine Papiertüte.*"
+        "text": "*Das Schultor steht einen Spalt offen. Drinnen ist jemand zu hören. Die Klassenlehrerin kommt mit einem Papierumschlag in der Hand zum Tor.*"
     },
     "hidden_homeroom_d4_1_b": {
         "name": "{name}",
@@ -116,11 +116,11 @@
     },
     "hidden_homeroom_d4_2": {
         "name": "Klassenlehrerin",
-        "text": "...Hä? {name}?"
+        "text": "...Oh? {name}?"
     },
     "hidden_homeroom_d4_3": {
         "name": "{name}",
-        "text": "Frau Lehrerin? Es ist Wochenende, was machen Sie hier?"
+        "text": "Sie? Was machen Sie am Wochenende in der Schule?"
     },
     "hidden_homeroom_d4_3_b": {
         "name": "Klassenlehrerin",
@@ -140,7 +140,7 @@
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
-        "text": "*Der Klassenlehrer blickt von außerhalb des Schultors näher auf den Notizblock als auf den Lehrertisch.*"
+        "text": "*Die Klassenlehrerin hält den Papierumschlag noch immer in der Hand.*"
     },
     "hidden_homeroom_d4_4_b": {
         "name": "Klassenlehrerin",
@@ -156,7 +156,7 @@
     },
     "hidden_homeroom_d4_4_e": {
         "name": "{name}",
-        "text": "*Unangenehme Stille. — Die Lehrerin spricht zuerst.*"
+        "text": "*Mir fällt nichts mehr ein.*"
     },
     "hidden_homeroom_d4_5": {
         "name": "Klassenlehrerin",
@@ -204,7 +204,7 @@
     },
     "hidden_homeroom_d4_cafe_1_f": {
         "name": "Klassenlehrerin",
-        "text": "*Sie stellt ihre Kaffeetasse ab. Hält kurz inne, als ob sie nachdenkt.*"
+        "text": "*Sie stellt ihre Kaffeetasse ab. Ihre Finger bleiben am Henkel liegen.*"
     },
     "hidden_homeroom_d4_cafe_2": {
         "name": "Klassenlehrerin",
@@ -252,7 +252,7 @@
     },
     "hidden_homeroom_d4_cafe_4_b": {
         "name": "{name}",
-        "text": "*Das Manuskriptpapier gestern im leeren Klassenzimmer fällt mir ein. Heute bin ich außerhalb der Schule und die Ecken des Getränkehalters klappen ständig.*"
+        "text": "*Die Ecke des Becherhalters wird immer weiter umgeknickt.*"
     },
     "hidden_homeroom_d4_cafe_5": {
         "name": "{name}",
@@ -304,7 +304,7 @@
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "*Am Morgen des Vorbereitungstags für das Schulfest öffne ich pünktlich zu meinem gebuchten Gesprächstermin die Tür der Krankenstation. Vor der Krankenschwester liegen ein Beratungsprotokoll und ein Informationsblatt.*"
+        "text": "*Am Morgen des Vorbereitungstags für das Schulfest öffne ich pünktlich zu meinem gebuchten Gesprächstermin die Tür des Krankenzimmers. Vor der Krankenschwester liegen ein Beratungsprotokoll und ein Informationsblatt.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "Schulkrankenschwester",
@@ -340,19 +340,19 @@
     },
     "hidden_nurse_d4_morning_11": {
         "name": "Schulkrankenschwester",
-        "text": "Hast du außer der Krankenstation schon einen Erwachsenen, den du um Hilfe bitten kannst?"
+        "text": "Hast du außer mir noch einen Erwachsenen, den du um Hilfe bitten kannst?"
     },
     "hidden_nurse_d4_morning_choice": {
         "name": "{name}",
         "text": "*Auf dem Blatt steht die Reihenfolge: Klassenleitung, Wee-Class-Beratung, Kontakt zu den Eltern.*",
         "choices": [
-            "Ich werde auch mit meiner Klassenlehrerin und der Beratung sprechen.",
+            "Ich werde auch mit meiner Klassenlehrerin und der Beratungsstelle sprechen.",
             "Ich weiß es noch nicht."
         ]
     },
     "hidden_nurse_d4_morning_choice_a": {
         "name": "{name}",
-        "text": "Ich werde auch mit meiner Klassenlehrerin und der Beratung sprechen."
+        "text": "Ich werde auch mit meiner Klassenlehrerin und der Beratungsstelle sprechen."
     },
     "hidden_nurse_d4_morning_choice_b": {
         "name": "{name}",
@@ -364,7 +364,7 @@
     },
     "hidden_nurse_d4_morning_13": {
         "name": "Schulkrankenschwester",
-        "text": "Ich gebe deine Geschichte nicht einfach weiter. Aber wenn ich sehe, dass du dich verletzen könntest, hole ich sofort einen anderen Erwachsenen dazu. Das vereinbaren wir vorher."
+        "text": "Was du mir erzählst, gebe ich nicht einfach weiter. Aber wenn ich sehe, dass du dich verletzen könntest, hole ich sofort einen anderen Erwachsenen dazu. Das vereinbaren wir vorher."
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "Schulkrankenschwester",
@@ -382,11 +382,11 @@
     },
     "hidden_nurse_d4_1_b": {
         "name": "Schulkrankenschwester",
-        "text": "*Dreht sich um* Hm? Du bist wirklich gekommen?"
+        "text": "*Sie dreht sich um.* Hm? Du bist wirklich gekommen?"
     },
     "hidden_nurse_d4_2": {
         "name": "Schulkrankenschwester",
-        "text": "Ich habe Helfer zum Packen der Erste-Hilfe-Sets fürs Schulfest gesucht, aber mit deiner Bewerbung habe ich wirklich nicht gerechnet."
+        "text": "Ich habe Helfer zum Packen der Erste-Hilfe-Sets fürs Schulfest gesucht, aber ich hätte nicht gedacht, dass du dich wirklich meldest."
     },
     "hidden_nurse_d4_2_b": {
         "name": "{name}",
@@ -422,7 +422,7 @@
     },
     "hidden_nurse_d4_4": {
         "name": "Schulkrankenschwester",
-        "text": "...Im Krankenhaus hab ich das alles allein gemacht. In Nachtschichten — manchmal Tage, an denen eine Schwester die Arbeit von dreien gemacht hat."
+        "text": "...Im Krankenhaus habe ich das alles allein gemacht. In manchen Nachtschichten musste ich die Arbeit von drei Pflegekräften übernehmen."
     },
     "hidden_nurse_d4_4_b": {
         "name": "{name}",
@@ -430,7 +430,7 @@
     },
     "hidden_nurse_d4_4_c": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie hält inne. Legt die Papiere hin.*"
+        "text": "*Sie hält kurz inne und legt die Unterlagen ab.*"
     },
     "hidden_nurse_d4_4_d": {
         "name": "Schulkrankenschwester",
@@ -458,11 +458,11 @@
     },
     "hidden_nurse_d4_4_j": {
         "name": "Schulkrankenschwester",
-        "text": "Wenn du also hier nicht weiterkommst, geh auch zur Klassenleitung oder zur Beratung. Trag es nicht allein."
+        "text": "Wenn du also hier nicht weiterkommst, geh auch zur Klassenleitung oder zur Beratungsstelle. Trag es nicht allein mit dir herum."
     },
     "hidden_nurse_d4_4_k": {
         "name": "{name}",
-        "text": "*Sie schließt den Reißverschluss des letzten Erste-Hilfe-Sets. Draußen tragen andere Helfer die fertigen Kisten fort.*"
+        "text": "*Ich schließe den Reißverschluss des letzten Erste-Hilfe-Sets. Draußen tragen andere Helfer die fertigen Kisten fort.*"
     },
     "hidden_nurse_d4_5": {
         "name": "Schulkrankenschwester",
@@ -494,7 +494,7 @@
     },
     "hidden_nurse_d4_6_c": {
         "name": "Schulkrankenschwester",
-        "text": "Doch, das ist etwas. Dafür trage ich deine Helferstunden ganz genau ein."
+        "text": "Doch, das war durchaus etwas. Dafür trage ich deine Helferstunden ganz genau ein."
     },
     "hidden_nurse_d4_6_d": {
         "name": "{name}",
@@ -502,7 +502,7 @@
     },
     "hidden_nurse_d4_choice": {
         "name": "Schulkrankenschwester",
-        "text": "Jetzt fehlen nur noch die Etiketten. Die Helfer holen gerade Snacks. Wer macht mit mir fertig?",
+        "text": "Jetzt fehlen nur noch die Etiketten. Die Helfer holen gerade Snacks. Wer hilft mir noch beim Fertigmachen?",
         "choices": [
             "Ich klebe die Etiketten auf die Erste-Hilfe-Sets und gehe dann.",
             "Nein danke, ich gehe jetzt."
@@ -514,7 +514,7 @@
     },
     "hidden_nurse_d4_meal_1": {
         "name": "Schulkrankenschwester",
-        "text": "Wer hat die extra scharfe Variante bestellt? Holt erst mal Wasser."
+        "text": "Wer hat die extra scharfe Variante bestellt? Nehmt euch zuerst Wasser."
     },
     "hidden_nurse_d4_meal_1_b": {
         "name": "{name}",
@@ -526,7 +526,7 @@
     },
     "hidden_nurse_d4_meal_1b": {
         "name": "{name}",
-        "text": "*Wir kehren mit den Helfern zur Krankenstation zurück und kleben Etiketten auf die Set-Kisten.*"
+        "text": "*Wir kehren mit den Helfern ins Krankenzimmer zurück und kleben Etiketten auf die Kisten mit den Sets.*"
     },
     "hidden_nurse_d4_meal_2": {
         "name": "{name}",
@@ -542,7 +542,7 @@
     },
     "hidden_nurse_d4_meal_3_b": {
         "name": "{name}",
-        "text": "*Sie klebt das letzte Etikett in die Mitte der Kiste.*"
+        "text": "*Ich klebe das letzte Etikett in die Mitte der Kiste.*"
     },
     "hidden_nurse_d4_meal_3_c": {
         "name": "Schulkrankenschwester",
@@ -566,7 +566,7 @@
     },
     "hidden_nurse_d4_pass": {
         "name": "Schulkrankenschwester",
-        "text": "Gut. Dass du am Wochenende gekommen bist, reicht völlig. Komm sicher nach Hause."
+        "text": "Gut. Dass du am Wochenende gekommen bist, reicht völlig. Komm gut nach Hause."
     },
     "morning4_end": {
         "name": "{name}",

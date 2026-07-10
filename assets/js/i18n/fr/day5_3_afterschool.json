@@ -13,7 +13,7 @@
     },
     "after5_farewell_seo_2": {
         "name": "Seoyeon",
-        "text": "*Elle soupire.* ...Bon."
+        "text": "...Pff."
     },
     "after5_farewell_seo_3": {
         "name": "Seoyeon",
@@ -248,7 +248,7 @@
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
-        "text": "*Une courte phrase. Mais ces mots me poussent en avant. Yuna ne détourne pas le regard.*"
+        "text": "*Yuna ne détourne pas les yeux. {name} fait un pas en avant.*"
     },
     "after5_last_chance_yuna_7": {
         "name": "Yuna",

@@ -21,15 +21,15 @@
     },
     "date_seo_pretty_high_2": {
         "name": "Seoyeon",
-        "text": "*Blickt weg und streicht sich eine Strähne hinter das Ohr.* ...Lass uns kurz ein Stück gehen."
+        "text": "*Sie blickt weg und streicht sich eine Strähne hinter das Ohr.* ...Lass uns ein wenig spazieren gehen."
     },
     "date_seo_pretty_high_3": {
         "name": "{name}",
-        "text": "Kam gerade so raus."
+        "text": "Ist mir einfach so rausgerutscht."
     },
     "date_seo_pretty_high_3_b": {
         "name": "Seoyeon",
-        "text": "*Streicht sich die Haare zurück* ...Bild dir bloß nichts ein."
+        "text": "*Sie streicht sich die Haare zurück.* ...Schon gut."
     },
     "date_seo_pretty_high_4": {
         "name": "Seoyeon",
@@ -65,7 +65,7 @@
     },
     "date_seo_flower_b": {
         "name": "Seoyeon",
-        "text": "*Bleibt stehen* ...Sollen wir reingehen?"
+        "text": "*Sie bleibt stehen.* ...Sollen wir reingehen?"
     },
     "date_seo_flower_2": {
         "name": "Seoyeon",
@@ -73,7 +73,7 @@
     },
     "date_seo_succulent_2": {
         "name": "Seoyeon",
-        "text": "Die ist pflegeleicht. Überlebt auch ohne Wasser."
+        "text": "Die ist pflegeleicht. Sie kommt auch lange ohne Wasser aus."
     },
     "date_seo_succulent_2_b": {
         "name": "{name}",
@@ -85,11 +85,11 @@
     },
     "date_seo_end": {
         "name": "Seoyeon",
-        "text": "*Was Seoyeon mir gab. — Meine Hand, die es hält, zittert.*"
+        "text": "*Sie hält mir die Pflanze hin. Der kleine, mit Erde gefüllte Topf landet in meiner Handfläche.*"
     },
     "date_seo_end_b": {
         "name": "{name}",
-        "text": "*Wir verließen den Park und gingen die Straße entlang.*"
+        "text": "*Wir verlassen den Park und gehen die Straße entlang.*"
     },
     "date_seo_end_c": {
         "name": "Seoyeon",
@@ -97,18 +97,18 @@
     },
     "date_seo_end_d": {
         "name": "Seoyeon",
-        "text": "Es war schön. — Merk dir das einfach."
+        "text": "Heute war's schön."
     },
     "date_yuna_1": {
         "name": "{name}",
-        "text": "*Vor dem Café. Yuna steht an der Wand. Ein schwarzes Kleid und eine kleine Umhängetasche. Since there is no school uniform, the lines of the tattoo are what catches the eye first.*"
+        "text": "*Vor dem Café lehnt Yuna an der Wand. Sie trägt ein schwarzes Kleid und eine kleine Umhängetasche. Ohne Schuluniform fallen als Erstes die Linien ihres Tattoos ins Auge.*"
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
         "text": "*Was sage ich?*",
         "choices": [
             "Ich seh dich zum ersten Mal ohne Uniform.",
-            "Deine Augen sehen heute anders aus."
+            "Du siehst heute irgendwie anders aus."
         ]
     },
     "date_yuna_pretty_high": {
@@ -137,15 +137,15 @@
     },
     "date_yuna_pretty_high_5_c": {
         "name": "Yuna",
-        "text": "*Ihre Ohren werden rot.* ...Reicht."
+        "text": "*Sie senkt den Blick wieder auf ihre Tasse.* ...Reicht."
     },
     "date_yuna_pretty_low": {
         "name": "Yuna",
-        "text": "...Das hat mir noch nie jemand gesagt."
+        "text": "...An solche Worte bin ich nicht gewöhnt."
     },
     "date_yuna_bright": {
         "name": "Yuna",
-        "text": "...Was ist denn anders."
+        "text": "...Was ist denn anders?"
     },
     "date_yuna_bookstore": {
         "name": "{name}",
@@ -177,7 +177,7 @@
     },
     "date_yuna_earphone_3": {
         "name": "{name}",
-        "text": "*Der Abstand zwischen uns ist die Länge des Kopfhörerkabels. Dreißig Zentimeter. — Näher und wir berühren uns, weiter und er fällt heraus.*"
+        "text": "*Der Abstand zwischen uns reicht genau so weit, dass das Kopfhörerkabel noch nicht spannt. Yuna setzt sich nur so nah neben mich.*"
     },
     "date_yuna_oldbook": {
         "name": "{name}",
@@ -205,15 +205,15 @@
     },
     "date_yuna_end": {
         "name": "Yuna",
-        "text": "*Sie sieht {name} an. Die Seite, sie umblätterte, bleibt unter ihren Fingerspitzen stehen.*"
+        "text": "*Sie sieht {name} an. Die Seite, die sie gerade umblättern wollte, hält unter ihren Fingern inne.*"
     },
     "date_yuna_end_b": {
         "name": "Yuna",
-        "text": "*Kurz bevor wir aus der Buchhandlung treten, reicht sie einen Zettel. Wortlos.*"
+        "text": "*Kurz bevor wir aus der Buchhandlung treten, reicht sie mir wortlos einen Zettel.*"
     },
     "date_yuna_end_c": {
         "name": "{name}",
-        "text": "*'Heute hatte ich viele Sätze. Nur vor dir.' — Yunas Schrift zittert.*"
+        "text": "*‚Heute habe ich viel geredet. Weil ich bei dir war.‘ Die hellviolette Tinte ist beim letzten Buchstaben leicht verwischt.*"
     },
     "date_dain_1": {
         "name": "{name}",
@@ -221,22 +221,22 @@
     },
     "date_dain_2": {
         "name": "Dain",
-        "text": "Du bist da!! Hätt nicht viel gefehlt und du wärst zu spät gewesen!!"
+        "text": "Da bist du ja! Du wärst beinahe zu spät gekommen, oder?"
     },
     "date_dain_3": {
         "name": "{name}",
-        "text": "Ich war zehn Minuten früher hier."
+        "text": "Ich bin zehn Minuten zu früh gekommen."
     },
     "date_dain_4": {
         "name": "Dain",
-        "text": "Ich war zwanzig Minuten vorher da!!"
+        "text": "Ich war schon vor zwanzig Minuten da!"
     },
     "date_dain_compliment_choice": {
         "name": "{name}",
-        "text": "*Das wird langsam zum Muster.*",
+        "text": "*Was soll ich sagen?*",
         "choices": [
             "Die Kappe ist cool.",
-            "Warum sieht Sportkleidung an dir so gut aus?"
+            "Die Sportkleidung steht dir gut."
         ]
     },
     "date_dain_pretty_high": {
@@ -245,7 +245,7 @@
     },
     "date_dain_pretty_high_2": {
         "name": "Dain",
-        "text": "Hey!! Ohne Vorwarnung!! Sowas kannst du doch nicht einfach sagen!!"
+        "text": "Hey, sag so etwas nicht ohne Vorwarnung!"
     },
     "date_dain_pretty_high_3": {
         "name": "{name}",
@@ -253,19 +253,19 @@
     },
     "date_dain_pretty_high_4": {
         "name": "Dain",
-        "text": "*Sie sagte 'wenn du so was sagst', aber ihre Stimme zitterte.*"
+        "text": "*Lange kann sie die Hand nicht vom Schirm ihrer Kappe nehmen.*"
     },
     "date_dain_pretty_low": {
         "name": "Dain",
-        "text": "Was?! ...Haha, danke, aber hör auf, das ist mir peinlich."
+        "text": "Was soll das so plötzlich? ...Danke trotzdem."
     },
     "date_dain_bright": {
         "name": "Dain",
-        "text": "Natürlich!! Heute bin ich in Topform!!"
+        "text": "Natürlich. Heute bin ich in Topform!"
     },
     "date_dain_to_arcade": {
         "name": "{name}",
-        "text": "*Wir gingen zur Spielhalle.*"
+        "text": "*Wir gehen zur Arcade.*"
     },
     "date_dain_arcade": {
         "name": "{name}",
@@ -273,7 +273,7 @@
     },
     "date_dain_arcade_2": {
         "name": "Dain",
-        "text": "Los, wir wetten!! Verlierer zahlt die Getränke!!"
+        "text": "Los, wir wetten! Wer verliert, zahlt die Getränke."
     },
     "date_dain_arcade_2_b": {
         "name": "{name}",
@@ -281,19 +281,19 @@
     },
     "date_dain_arcade_3": {
         "name": "Dain",
-        "text": "Ohne Wetteinsatz macht's keinen Spaß!!"
+        "text": "Ohne Wetteinsatz macht es doch keinen Spaß!"
     },
     "date_dain_arcade_3_b": {
         "name": "{name}",
-        "text": "*Rhythmusspiel. Dain ist überwältigend gut.*"
+        "text": "*Als das Rhythmusspiel beginnt, finden Dains Hände sofort den Takt. Bis zum Ende des Songs reißt ihre Combo auf dem Bildschirm kein einziges Mal ab.*"
     },
     "date_dain_arcade_3_c": {
         "name": "Dain",
-        "text": "*Kreischt* Full Combo!! Hast du das gesehen?!"
+        "text": "*Sie springt von ihrem Platz auf.* Full Combo! Hast du das gesehen?"
     },
     "date_dain_rhythm": {
         "name": "Dain",
-        "text": "*Zeigt auf den Bildschirm.* Dieser Score — ist der zweitbeste überhaupt!!"
+        "text": "*Sie zeigt auf den Bildschirm.* Dieser Score ist mein zweitbester überhaupt!"
     },
     "date_dain_rhythm_2": {
         "name": "{name}",
@@ -305,11 +305,11 @@
     },
     "date_dain_knee": {
         "name": "{name}",
-        "text": "*'Weil ich meine Knie nicht benutzen muss.' Dain says with a smile, but takes a look at his knees reflected in the window glass.*"
+        "text": "*‚Dafür brauche ich die Knie nicht.‘ Dain sagt es lächelnd, wirft aber einen Blick auf ihr Knie im Spiegelbild des Schaufensters.*"
     },
     "date_dain_knee_2": {
         "name": "{name}",
-        "text": "*Wir verlassen die Spielhalle und gehen auf die Straße. Wir kommen an einem Sportgeschäft vorbei. Dain bleibt vor dem Schaufenster stehen. Volleyballschuhe.*"
+        "text": "*Wir verlassen die Arcade und gehen die Straße entlang. Vor einem Sportgeschäft bleibt Dain am Schaufenster stehen. Darin sind Volleyballschuhe ausgestellt.*"
     },
     "date_dain_shop": {
         "name": "Dain",
@@ -321,15 +321,15 @@
     },
     "date_dain_shop_2_b": {
         "name": "Dain",
-        "text": "*Dreht sich weg* Nichts! Komm, gehen wir!"
+        "text": "*Sie dreht den Kopf weg.* Nichts! Komm, gehen wir!"
     },
     "date_dain_shop_3": {
         "name": "Dain",
-        "text": "*Zieht die Kappe tiefer ins Gesicht.* ...Schau nicht so."
+        "text": "*Sie zieht die Kappe tiefer ins Gesicht.* ...Schau nicht so."
     },
     "date_dain_shop_3_b": {
         "name": "Dain",
-        "text": "*Unter der Kappe hervor* ...Sag das noch einmal und ich hau dich."
+        "text": "*Unter der Kappe hervor.* ...Sag das noch einmal und ich hau dich."
     },
     "date_dain_end": {
         "name": "{name}",
@@ -341,11 +341,11 @@
     },
     "date_dain_end_c": {
         "name": "Dain",
-        "text": "Heute hat echt Spaß gemacht. ...Ohne Ausrufezeichen."
+        "text": "Heute hat echt Spaß gemacht. ...Das sage ich nicht nur so."
     },
     "pre_confess_minsu": {
         "name": "Minsu",
-        "text": "Hey, du bist grad auf Date, oder? Ich sag nur eins"
+        "text": "Hey, du bist gerade bei einem Date, oder? Ich sage dir nur eins"
     },
     "pre_confess_minsu_2": {
         "name": "Minsu",

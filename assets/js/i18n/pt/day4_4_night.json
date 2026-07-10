@@ -41,7 +41,7 @@
     },
     "wall_seo_3": {
         "name": "{name}",
-        "text": "*Seoyeon está sentada em um banco do parque. As pontas da minha maquiagem estão um pouco borradas.*"
+        "text": "*Seoyeon está sentada num banco do parque. A maquiagem dela está um pouco borrada nas pontas.*"
     },
     "wall_seo_4": {
         "name": "{name}",
@@ -53,7 +53,7 @@
     },
     "wall_seo_6": {
         "name": "{name}",
-        "text": "*Sente-se ao meu lado. Seoyeon está apenas olhando para frente. A luz do poste paira sobre os vidros.*"
+        "text": "*Sento ao lado dela. Seoyeon olha para a frente. A luz do poste se estende pelas lentes dos óculos.*"
     },
     "wall_seo_7": {
         "name": "Seoyeon",
@@ -141,7 +141,7 @@
     },
     "wall_seo_hug_3": {
         "name": "Seoyeon",
-        "text": "*A respiração de ela bate curta no meu ombro.*"
+        "text": "*A respiração dela bate no meu ombro em rajadas curtas.*"
     },
     "wall_seo_pinky_1": {
         "name": "{name}",
@@ -198,7 +198,7 @@
     },
     "wall_seo_after_line_2": {
         "name": "Seoyeon",
-        "text": "Esse rosto — está uma bagunça agora, né? Maquiagem borrada, olho inchado. — Tá tudo bem assim?"
+        "text": "*Seoyeon olha para o dorso da mão. A maquiagem está borrada.*"
     },
     "wall_seo_after_line_3": {
         "name": "{name}",
@@ -210,7 +210,7 @@
     },
     "wall_seo_after_line_4_b": {
         "name": "Seoyeon",
-        "text": "...Hoje acho que nem preciso de espelho."
+        "text": "*Enxuga embaixo dos olhos.*"
     },
     "wall_seo_after_line_5": {
         "name": "Seoyeon",
@@ -227,7 +227,7 @@
     },
     "wall_seo_skin60_1": {
         "name": "{name}",
-        "text": "*Sentamos lado a lado no banco. Seoyeon calmamente se apoia em seu ombro.*"
+        "text": "*Sentamos lado a lado no banco. Seoyeon se apoia em silêncio no meu ombro.*"
     },
     "wall_seo_skin60_2": {
         "name": "Seoyeon",
@@ -255,7 +255,7 @@
     },
     "wall_dain_pre_high_2": {
         "name": "Dain",
-        "text": "*Está mais quieto que o normal. O final da voz toca o chão.*"
+        "text": "*A voz dela está mais baixa que o normal.*"
     },
     "wall_dain_pre_low_1": {
         "name": "Dain",
@@ -331,7 +331,7 @@
     },
     "wall_dain_13": {
         "name": "{name}",
-        "text": "*Senta-se ao meu lado sem dizer nada. Dain fecha a boca. As luzes do ginásio zumbem.*"
+        "text": "*Sento ao lado dela sem dizer nada. Dain fecha a boca. As luzes do ginásio zumbem baixo.*"
     },
     "wall_dain_14": {
         "name": "Dain",
@@ -339,7 +339,7 @@
     },
     "wall_dain_14_b": {
         "name": "Dain",
-        "text": "*Nenhum ponto de exclamação.*"
+        "text": "*Não olha para a bola de vôlei.*"
     },
     "wall_dain_15": {
         "name": "Dain",
@@ -391,7 +391,7 @@
     },
     "wall_dain_21": {
         "name": "Dain",
-        "text": "hoje. Ao correr em um encontro. Quando eu finjo ser brilhante ao seu lado. Meus joelhos não aguentaram."
+        "text": "Hoje também. Correndo durante o encontro. Fingindo animação do seu lado. Meu joelho continuou falhando."
     },
     "wall_dain_22": {
         "name": "Dain",
@@ -412,7 +412,7 @@
     },
     "wall_dain_newdream_1": {
         "name": "{name}",
-        "text": "*Eu estava sentado ao lado dele. Ambos estão sem palavras. Apenas as pontas dos tênis de Dain balançam lentamente.*"
+        "text": "*Continuo sentado ao lado dela. Nenhum dos dois fala. Só a ponta de um dos tênis de Dain balança devagar.*"
     },
     "wall_dain_newdream_2_b": {
         "name": "Dain",
@@ -444,7 +444,7 @@
     },
     "wall_dain_cry_1": {
         "name": "Dain",
-        "text": "*Desabou na quadra. Começou a chorar abraçada à bola de vôlei.*"
+        "text": "*Desaba na quadra e começa a chorar abraçada à bola de vôlei.*"
     },
     "wall_dain_cry_2": {
         "name": "Dain",
@@ -452,7 +452,7 @@
     },
     "wall_dain_cry_3": {
         "name": "Dain",
-        "text": "Sozinho, enfaixando meu joelho todas as manhãs..."
+        "text": "Sozinha, enfaixando meu joelho todas as manhãs..."
     },
     "wall_dain_cry_4": {
         "name": "Dain",
@@ -549,7 +549,7 @@
     },
     "wall_dain_glimpse_2": {
         "name": "{name}",
-        "text": "*É Yuna. sentado sozinho Meus pés param no lugar. Não houve nenhuma mensagem de Yuna hoje.*"
+        "text": "*É Yuna, sentada sozinha. Meus pés param. Hoje ela não mandou uma única mensagem.*"
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
@@ -601,7 +601,7 @@
     },
     "wall_yuna_7": {
         "name": "{name}",
-        "text": "*Carta em envelope. — 'Para Yuna. Desculpe. Surgiu algo sobre o qual eu não pude falar. —Junho Lee'*"
+        "text": "*Dentro do envelope há uma carta: «Yuna, me desculpa. Aconteceu uma coisa sobre a qual eu não podia falar. — Junho Lee».*"
     },
     "wall_yuna_8": {
         "name": "{name}",
@@ -621,7 +621,7 @@
     },
     "wall_yuna_11": {
         "name": "Yuna",
-        "text": "Foi minha primeira vez como sênior. ‘Gostei da sua escrita’ - só por causa daquele comentário, parecia que eu estava na aula naquele dia."
+        "text": "Ele foi o primeiro. «Gostei do que você escreveu.» Só de ouvir aquilo, naquele dia senti que eu existia na sala."
     },
     "wall_yuna_12": {
         "name": "Yuna",
@@ -653,7 +653,7 @@
     },
     "wall_yuna_14_f": {
         "name": "Yuna",
-        "text": "A presença era parecida com a dele. — Por isso tive medo."
+        "text": "Você tinha um jeito parecido com o dele. — Por isso tive medo."
     },
     "wall_yuna_14_g": {
         "name": "Yuna",
@@ -673,7 +673,7 @@
     },
     "wall_yuna_16_b": {
         "name": "Yuna",
-        "text": "*Está segurando a manga com força. Enquanto recupero o fôlego, a lombada do livro é pressionada na palma da minha mão.*"
+        "text": "*Aperta a manga com força. Enquanto recupera o fôlego, a lombada do livro afunda na palma da mão dela.*"
     },
     "wall_yuna_choice": {
         "name": "Yuna",
@@ -694,7 +694,7 @@
     },
     "wall_yuna_moved_3": {
         "name": "Yuna",
-        "text": "*Yuna levanta a cabeça. Não são mais os olhos vermelhos semicerrados de sempre. Ela olha direto, sem vacilar.*"
+        "text": "*Yuna levanta a cabeça e olha para {name}.*"
     },
     "wall_yuna_moved_4": {
         "name": "Yuna",
@@ -727,7 +727,7 @@
     },
     "wall_yuna_skin60_2": {
         "name": "Yuna",
-        "text": "...Porque é quente."
+        "text": "...Porque você é quentinho."
     },
     "wall_yuna_sub_1": {
         "name": "Yuna",
@@ -759,7 +759,7 @@
     },
     "wall_yuna_glimpse_2": {
         "name": "{name}",
-        "text": "*Sob a iluminação pública em frente ao portão da escola. Seoyeon estava de pé. Pego meu telefone, escrevo algo e apago. Escreva novamente e apague. A luz da tela permanece apenas nos óculos.*"
+        "text": "*Seoyeon está de pé sob o poste diante do portão. Escreve algo no celular, apaga, escreve de novo e apaga outra vez. Só os óculos guardam o reflexo da tela.*"
     },
     "wall_yuna_glimpse_3_b": {
         "name": "Seoyeon",
@@ -767,7 +767,7 @@
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*Depois de não poder sair dos fundos da escola por um tempo, voltei para casa. O celular no meu bolso está silencioso.*"
+        "text": "*Fico um tempo atrás da escola antes de voltar para casa. O celular permanece em silêncio dentro do bolso.*"
     },
     "day4_night_regret": {
         "name": "{name}",
@@ -799,7 +799,7 @@
     },
     "day4_night_reflect": {
         "name": "{name}",
-        "text": "*Sábado passou assim. Amanhã é dia de evento na escola. — Domingo, mas tem aula.*"
+        "text": "*O sábado passa assim. Amanhã tem evento na escola. — É domingo, mas preciso ir mesmo assim.*"
     },
     "day4_hidden_msg_branch": {
         "name": "Sistema",

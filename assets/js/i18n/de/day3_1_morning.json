@@ -210,7 +210,7 @@
     },
     "morning3_date_intro": {
         "name": "{name}",
-        "text": "*Erste Stunde zu Ende. Jede Pause — jemand wählt genau den richtigen Moment.*"
+        "text": "*Die erste Stunde ist vorbei. In jeder Pause spricht mich jemand an.*"
     },
     "morning3_date_intro_b": {
         "name": "{name}",
@@ -234,35 +234,35 @@
     },
     "hidden_homeroom_d3_4_b": {
         "name": "{name}",
-        "text": "*Die Handschrift ist zwischen den umgedrehten Blättern verstreut. Die Handfläche des Klassenlehrers bedeckt die Ecke des Papiers.*"
+        "text": "*Zwischen den umgedrehten Blättern ist dicht gedrängte Handschrift zu sehen. Die Handfläche der Lehrerin bedeckt die Ecke des Papiers.*"
     },
     "hidden_homeroom_d3_4_c": {
         "name": "Klassenlehrerin",
-        "text": "*Der Gesichtsausdruck des Klassenlehrers kehrt zu seiner gewohnten Gleichgültigkeit zurück. Es ist ein Manuskript, aber es wird immer noch umgedreht.*"
+        "text": "*Der Gesichtsausdruck der Lehrerin wird wieder so unbeteiligt wie sonst. Nur das Manuskript liegt noch immer mit der Schrift nach unten da.*"
     },
     "hidden_homeroom_d3_4_d": {
         "name": "Klassenlehrerin",
-        "text": "...Was glotzt du so? Was machst du überhaupt hier in der Pause?"
+        "text": "...Was schaust du so? Warum bist du in der Pause überhaupt hier?"
     },
     "hidden_homeroom_d3_4_e": {
         "name": "{name}",
-        "text": "*Manuskriptpapier. Dicht beschriebene Zeilen. Ein Gesicht, das etwas verbergen will. — Soll ich fragen oder so tun, als wüsste ich nichts?*"
+        "text": "*Manuskriptpapier. Dicht beschriebene Zeilen. Die Lehrerin dreht das Blatt um. — Soll ich fragen oder so tun, als hätte ich nichts bemerkt?*"
     },
     "hidden_homeroom_d3_4_f": {
         "name": "{name}",
-        "text": "*Ich kann keinen Schritt machen. Auf dem Pult: Anwesenheitsbuch, Notenakten, Schüleraktenmappen, eins nach dem anderen. Die Hand der Lehrerin liegt noch auf dem Manuskriptpapier.*"
+        "text": "*Ich bringe keinen Fuß vor den anderen. Auf dem Pult fallen mir nacheinander das Klassenbuch, die Notenmappe und der Umschlag mit den Schülerakten ins Auge. Die Hand der Lehrerin liegt noch auf dem Manuskript.*"
     },
     "hidden_homeroom_d3_4_g": {
         "name": "{name}",
-        "text": "*Rote Stiftspuren scheinen durch das umgedrehte Manuskriptpapier. Zwei Zeichen: 'Zurückgestellt.' In dem Moment, als ich es sehe, drücken die Fingerspitzen der Lehrerin fester auf das Papier.*"
+        "text": "*Rote Stiftspuren scheinen durch das umgedrehte Manuskriptpapier. Das Wort ‚Zurückgestellt‘. Sobald ich es sehe, drückt die Lehrerin fester auf das Blatt.*"
     },
     "hidden_homeroom_d3_4_h": {
         "name": "{name}",
-        "text": "*Ich hätte so tun können, als hätte ich nichts bemerkt. Die Lehrerin deckt das Papier nicht zu. Schließt die Stiftkappe, öffnet sie wieder.*"
+        "text": "*Ich könnte so tun, als hätte ich nichts bemerkt. Die Lehrerin deckt das Papier nicht ab. Sie setzt die Kappe auf den Stift und nimmt sie wieder herunter.*"
     },
     "hidden_homeroom_d3_choice": {
         "name": "{name}",
-        "text": "*Das ist Manuskriptpapier. Sie hat den Gesichtsausdruck von jemandem, der ertappt wurde.*",
+        "text": "*Es ist Manuskriptpapier. Die Lehrerin bedeckt den Rand des Blattes mit ihrer Handfläche.*",
         "choices": [
             "Ich hab gesehen, dass es ein Manuskript ist. — Schreiben Sie einen Roman?",
             "Entschuldigung, ich hab nichts gesehen."
@@ -270,7 +270,7 @@
     },
     "hidden_homeroom_d3_reveal_1": {
         "name": "Klassenlehrerin",
-        "text": "...Zu peinlich, um es Roman zu nennen. Zu alt für eine Übung. Sieben Jahre."
+        "text": "...Zu unfertig, um es Roman zu nennen. Und für eine bloße Übung arbeite ich schon zu lange daran. Sieben Jahre."
     },
     "hidden_homeroom_d3_reveal_1_b": {
         "name": "{name}",
@@ -278,7 +278,7 @@
     },
     "hidden_homeroom_d3_reveal_1_c": {
         "name": "Klassenlehrerin",
-        "text": "Sieben Jahre. *Aus dem Fenster schauend* Habe in der Uni angefangen. Kreatives Schreiben."
+        "text": "Sieben Jahre. *Sie sieht aus dem Fenster.* Im Studium habe ich angefangen. Kreatives Schreiben."
     },
     "hidden_homeroom_d3_reveal_1_d": {
         "name": "{name}",
@@ -286,7 +286,7 @@
     },
     "hidden_homeroom_d3_reveal_1_e": {
         "name": "Klassenlehrerin",
-        "text": "Nach dem Abschluss habe ich es ein paarmal eingereicht. Wurde abgelehnt. Danach... waren Bewerbungen leichter auszufüllen."
+        "text": "Nach dem Abschluss habe ich es ein paarmal eingereicht. Es wurde abgelehnt. Danach... fiel es mir leichter, Bewerbungen abzuschicken."
     },
     "hidden_homeroom_d3_reveal_1_f": {
         "name": "Klassenlehrerin",
@@ -298,7 +298,7 @@
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "Klassenlehrerin",
-        "text": "Ich dachte, mit dem Job würde ich es weglegen. Aber jedes Mal, wenn ich eine Schublade wechselte, kam es mit."
+        "text": "Ich dachte, mit dem Job würde ich es weglegen. Aber bei jedem Umzug von einer Schublade in die nächste kam es mit."
     },
     "hidden_homeroom_d3_reveal_2_c": {
         "name": "{name}",
@@ -306,7 +306,7 @@
     },
     "hidden_homeroom_d3_reveal_2_d": {
         "name": "Klassenlehrerin",
-        "text": "*Die Lehrerin schließt kurz den Mund. Dann — seufzt sie. Kurz.*"
+        "text": "*Die Lehrerin presst die Lippen zusammen und stößt dann einen kurzen Seufzer aus.*"
     },
     "hidden_homeroom_d3_reveal_2_e": {
         "name": "Klassenlehrerin",
@@ -326,7 +326,7 @@
     },
     "hidden_homeroom_d3_reveal_3_c": {
         "name": "Klassenlehrerin",
-        "text": "*Die Lehrerin legt das Manuskriptpapier ab. Langsam.*"
+        "text": "*Einen Moment später legt die Lehrerin das Manuskriptpapier ab.*"
     },
     "hidden_homeroom_d3_reveal_4": {
         "name": "Klassenlehrerin",
@@ -334,11 +334,11 @@
     },
     "hidden_homeroom_d3_reveal_4_b": {
         "name": "{name}",
-        "text": "*Jede Kante des Manuskriptpapiers ist von Händen abgenutzt. Die Klassenlehrerin legt die Fingerspitze auf eine leere Zeile.*"
+        "text": "*An den Rändern des Manuskripts sind deutliche Griffspuren. Die Klassenlehrerin legt die Fingerspitzen auf eine leere Zeile.*"
     },
     "hidden_homeroom_d3_reveal_4_c": {
         "name": "Klassenlehrerin",
-        "text": "*Sie fasst sich wieder.* Das habe ich privat geschrieben. Es hat nichts mit dem Unterricht zu tun, und du musst es nicht lesen."
+        "text": "*Sie setzt wieder ihre übliche Miene auf.* Das habe ich privat geschrieben. Es hat nichts mit dem Unterricht zu tun, und du musst es nicht lesen."
     },
     "hidden_homeroom_d3_reveal_4_d": {
         "name": "{name}",
@@ -360,13 +360,13 @@
         "name": "{name}",
         "text": "*Sieben Jahre. Das Manuskriptpapier auf dem Pult ist abgegriffen.*",
         "choices": [
-            "Sieben Jahre sind kein Aufgeben — das ist Durchhaltevermögen",
+            "Sieben Jahre sind kein Aufgeben — das ist Durchhaltevermögen.",
             "Warum schreiben Sie immer hier?"
         ]
     },
     "hidden_homeroom_d3_reveal_choice_a": {
         "name": "Klassenlehrerin",
-        "text": "*Pause. Die Hand, die das Manuskriptpapier berührte, bleibt stehen.*...Es fühlt sich weniger schäbig an, wenn ich höre, dass man es Beharrlichkeit nennt."
+        "text": "*Sie hält inne. Auch die Hand auf dem Manuskript bleibt stehen.* ...Wenn du es Durchhaltevermögen nennst, klingt es gleich weniger kläglich."
     },
     "hidden_homeroom_d3_reveal_choice_b": {
         "name": "Klassenlehrerin",
@@ -386,7 +386,7 @@
     },
     "hidden_homeroom_d3_reveal_6_c": {
         "name": "{name}",
-        "text": "*Aufgrund dieses verlegenen Lachens wird das Geräusch des Sekundenzeigers im leeren Klassenzimmer lauter.*"
+        "text": "*Die Klassenlehrerin lächelt verlegen. Im leeren Klassenzimmer scheint das Ticken der Uhr lauter zu werden.*"
     },
     "hidden_homeroom_d3_reveal_6_d": {
         "name": "Klassenlehrerin",
@@ -394,7 +394,7 @@
     },
     "hidden_homeroom_d3_reveal_6_e": {
         "name": "Klassenlehrerin",
-        "text": "*Der Klassenlehrer drückt mit dem Daumen auf die Ecke des Manuskripts. Das Papier ist leicht zerknittert.*"
+        "text": "*Die Klassenlehrerin drückt mit dem Daumen auf die Ecke des Manuskripts. Das Papier knittert leicht.*"
     },
     "hidden_homeroom_d3_reveal_6_f": {
         "name": "Klassenlehrerin",
@@ -402,7 +402,7 @@
     },
     "hidden_homeroom_d3_reveal_6_g": {
         "name": "{name}",
-        "text": "*Das Ticken der Uhr in einem leeren Klassenzimmer ist laut. Der Blick fällt nicht vom Satz mit überlagernden Löschspuren.*"
+        "text": "*Das Ticken der Uhr klingt im leeren Klassenzimmer laut. Mein Blick bleibt an einem Satz hängen, über dem sich die Spuren mehrfacher Korrekturen überlagern.*"
     },
     "hidden_homeroom_d3_hide_1": {
         "name": "Klassenlehrerin",
@@ -428,15 +428,15 @@
     },
     "hidden_nurse_d3_1_b": {
         "name": "Schulkrankenschwester",
-        "text": "*Aufblickend* ...Hm? Wo hast du dich heute verletzt?"
+        "text": "*Sie blickt auf.* ...Hm? Wo hast du dich heute verletzt?"
     },
     "hidden_nurse_d3_1_c": {
         "name": "{name}",
-        "text": "Ich bin nicht verletzt."
+        "text": "Mir tut nichts weh."
     },
     "hidden_nurse_d3_1_d": {
         "name": "Schulkrankenschwester",
-        "text": "Nicht verletzt, aber im Krankenzimmer?"
+        "text": "Dir tut nichts weh, und trotzdem kommst du ins Krankenzimmer?"
     },
     "hidden_nurse_d3_1_e": {
         "name": "{name}",
@@ -464,11 +464,11 @@
     },
     "hidden_nurse_d3_3": {
         "name": "{name}",
-        "text": "...Wollte mich einfach ausruhen. Beziehungen werden kompliziert."
+        "text": "...Ich wollte mich nur etwas ausruhen. Es ist nur... mit den Leuten wird es kompliziert."
     },
     "hidden_nurse_d3_3_b": {
         "name": "Schulkrankenschwester",
-        "text": "*Der Gesundheitslehrer stellt den Becher ab.*"
+        "text": "*Die Krankenschwester stellt den Becher ab.*"
     },
     "hidden_nurse_d3_3_c": {
         "name": "Schulkrankenschwester",
@@ -480,7 +480,7 @@
     },
     "hidden_nurse_d3_4": {
         "name": "Schulkrankenschwester",
-        "text": "*zieht den Vorhang zu und reicht dir eine Tasse Wasser*...setz dich. Hier können Sie sich wohlfühlen. Sie können langsam sprechen."
+        "text": "*Sie zieht den Vorhang zu und reicht mir einen Becher Wasser.* ...Setz dich. Hier kannst du es dir etwas bequemer machen. Lass dir Zeit beim Reden."
     },
     "hidden_nurse_d3_5_b": {
         "name": "Schulkrankenschwester",
@@ -492,7 +492,7 @@
     },
     "hidden_nurse_d3_5_d": {
         "name": "{name}",
-        "text": "*Nachdem er „ähnlich“ gesagt hat, verharrt die Hand des Gesundheitslehrers kurz auf dem Wasserbecher.*"
+        "text": "*Nach ihrem ‚So ähnlich?‘ hält die Hand der Krankenschwester über dem Wasserbecher inne.*"
     },
     "hidden_nurse_d3_5_e": {
         "name": "{name}",
@@ -500,7 +500,7 @@
     },
     "hidden_nurse_d3_5_f": {
         "name": "Schulkrankenschwester",
-        "text": "*Einen Stuhl heranziehend und sich gegenüber setzend* Beziehungen."
+        "text": "*Sie zieht einen Stuhl heran und setzt sich mir gegenüber.* Beziehungen."
     },
     "hidden_nurse_d3_5_g": {
         "name": "{name}",
@@ -508,7 +508,7 @@
     },
     "hidden_nurse_d3_5_h": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Krankenschwester schweigt einen Moment. Dann.*"
+        "text": "*Die Krankenschwester schweigt einen Moment.*"
     },
     "hidden_nurse_d3_5_i": {
         "name": "Schulkrankenschwester",
@@ -520,15 +520,15 @@
     },
     "hidden_nurse_d3_5_k": {
         "name": "Schulkrankenschwester",
-        "text": "*Schmunzelt* So zu tun als wäre es nicht so, ist das Offensichtlichste."
+        "text": "*Sie schmunzelt.* Wenn man so tut, als wäre es nicht so, merkt man es erst recht."
     },
     "hidden_nurse_d3_5_l": {
         "name": "{name}",
-        "text": "*Volltreffer. — Ihre Beobachtungsgabe ist kein Scherz.*"
+        "text": "*Volltreffer.*"
     },
     "hidden_nurse_d3_5_m": {
         "name": "Schulkrankenschwester",
-        "text": "Geht das ins Gesundheitswesen...*schneidet das Kinn ab*Ich werde trotzdem zuhören. Weil das Bett leer ist."
+        "text": "Fällt das noch unter meine Aufgaben... *Sie stützt das Kinn in die Hand.* Ich höre dir trotzdem zu. Das Bett ist ja frei."
     },
     "hidden_nurse_d3_5_n": {
         "name": "{name}",
@@ -550,7 +550,7 @@
         "name": "{name}",
         "text": "*...Da hat sie recht.*",
         "choices": [
-            "Vielleicht schon, ja...",
+            "So ähnlich.",
             "Nein, es ist einfach... kompliziert"
         ]
     },
@@ -564,19 +564,19 @@
     },
     "hidden_nurse_d3_6": {
         "name": "Schulkrankenschwester",
-        "text": "Als ich im Universitätskrankenhaus gearbeitet habe. Wenn die Rufglocken gleichzeitig klingelten, zählten meine Hände zuerst die leeren Betten. Das habe ich gehasst."
+        "text": "Als ich im Universitätskrankenhaus gearbeitet habe. Wenn mehrere Rufglocken gleichzeitig klingelten, habe ich unwillkürlich zuerst die freien Betten gezählt. Das habe ich gehasst."
     },
     "hidden_nurse_d3_6_b": {
         "name": "Schulkrankenschwester",
-        "text": "*Der Gesundheitslehrer stellt den Wasserbecher ab. Das Wasser am Boden des Bechers verteilt sich kreisförmig.*"
+        "text": "*Die Krankenschwester stellt den Wasserbecher ab. Die Feuchtigkeit am Becherboden breitet sich kreisförmig aus.*"
     },
     "hidden_nurse_d3_6_c": {
         "name": "Schulkrankenschwester",
-        "text": "...Eher als aufgehört zu haben, bin ich weggelaufen. *Mit einem schwachen Lächeln* Es gibt keinen noblen Grund."
+        "text": "...Eigentlich habe ich nicht gekündigt. Ich bin einfach gegangen. *Sie lächelt schwach.* Einen edlen Grund gab es nicht."
     },
     "hidden_nurse_d3_6_d": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Krankenschwester hält kurz bei 'weglaufen' inne. Ihre Fingerspitzen berühren das Stethoskop, bewegen sich in Richtung der Notizbuch-Schublade, ziehen sich dann zurück.*"
+        "text": "*Ihre Hand am Stethoskop bewegt sich in Richtung der Schublade mit dem Notizbuch, hält aber vorher inne.*"
     },
     "hidden_nurse_d3_6_e": {
         "name": "Schulkrankenschwester",
@@ -588,7 +588,7 @@
     },
     "hidden_nurse_d3_7": {
         "name": "Schulkrankenschwester",
-        "text": "Deshalb bin ich hierher gekommen. In der Schule — kann ich mich wirklich um jeden Einzelnen kümmern."
+        "text": "Deshalb bin ich hierhergekommen. Hier an der Schule kann man jedem Einzelnen wirklich ins Gesicht sehen."
     },
     "hidden_nurse_d3_7_b": {
         "name": "Schulkrankenschwester",
@@ -596,7 +596,7 @@
     },
     "hidden_nurse_d3_8": {
         "name": "Schulkrankenschwester",
-        "text": "Für dich gilt das Gleiche. Versuch nicht, dich um alle zu kümmern. — Wäre es nicht besser, die eine Person, die wirklich zählt, richtig anzuschauen?"
+        "text": "Für dich gilt das Gleiche. Versuch nicht, dich um alle zu kümmern. — Wäre es nicht besser, bei der einen Person, die dir wirklich wichtig ist, richtig hinzusehen?"
     },
     "hidden_nurse_d3_8_b": {
         "name": "{name}",
@@ -608,7 +608,7 @@
     },
     "hidden_nurse_d3_8_d": {
         "name": "Schulkrankenschwester",
-        "text": "Wenn es schon so schwer wird, sag etwas, statt es auszuhalten. Wenn nötig, vermittle ich dir auch einen Termin in der Beratung."
+        "text": "Wenn es dir so viel abverlangt, sprich darüber, statt alles auszuhalten. Wenn nötig, vermittle ich dir auch einen Termin bei der Beratungsstelle."
     },
     "hidden_nurse_d3_8_e": {
         "name": "{name}",
@@ -620,7 +620,7 @@
     },
     "hidden_nurse_d3_8_g": {
         "name": "{name}",
-        "text": "*Das Band am Handrücken ist leicht gerissen. Der Vorhang schwankt zwischen Bett und Namensschild. Besonders deutlich sind die drei Buchstaben „Gesundheitslehrer“.*"
+        "text": "*Das Pflaster auf meinem Handrücken hat sich etwas gelöst. Der Vorhang zwischen Bett und Namensschild schwankt. Die Aufschrift ‚Schulkrankenschwester‘ wirkt plötzlich ungewöhnlich deutlich.*"
     },
     "hidden_nurse_d3_8_h": {
         "name": "{name}",
@@ -628,7 +628,7 @@
     },
     "hidden_nurse_d3_choice2": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Krankenschwester hielt bei 'einer Person' inne. Der Rand des Pappbechers wird unter ihren Fingerspitzen zerknittert.*",
+        "text": "*Bei ‚einer Person‘ hält die Krankenschwester inne. Der Rand des Pappbechers knickt unter ihren Fingern ein.*",
         "choices": [
             "Sind Sie nach diesem Erlebnis aus dem Krankenhaus gegangen?",
             "Ist es für Sie in Ordnung, noch mehr davon zu erzählen?"
@@ -648,7 +648,7 @@
     },
     "hidden_nurse_d3_9_b": {
         "name": "{name}",
-        "text": "*Sie stellt den Pappbecher ab und nickt.*"
+        "text": "*Ich stelle den Pappbecher ab und nicke.*"
     },
     "hidden_nurse_d3_9_c": {
         "name": "Schulkrankenschwester",
@@ -664,7 +664,7 @@
     },
     "hidden_nurse_d3_9_f": {
         "name": "{name}",
-        "text": "*Auf dem Plan stehen die Zeiten der Krankenstation und der Beratungsstelle nebeneinander. Ich kreise ein freies Feld ein.*"
+        "text": "*Auf dem Plan stehen die Zeiten des Krankenzimmers und der Beratungsstelle nebeneinander. Ich kreise ein freies Feld ein.*"
     },
     "hidden_nurse_d3_11": {
         "name": "Schulkrankenschwester",
@@ -678,7 +678,7 @@
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",
-        "text": "Hast du am Wochenende Zeit? Es gibt einen Ort, den ich besuchen möchte."
+        "text": "Hast du am Wochenende Zeit? Es gibt einen Ort, zu dem ich gern möchte."
     },
     "morning3_date_seo_choice": {
         "name": "Seoyeon",
@@ -690,7 +690,7 @@
     },
     "morning3_date_seo_accept": {
         "name": "{name}",
-        "text": "*Ich habe die Wochenendpläne mit Seoyeon angenommen.*"
+        "text": "*Ich nehme Seoyeons Einladung fürs Wochenende an.*"
     },
     "morning3_date_seo_accept_b": {
         "name": "{name}",
@@ -698,7 +698,7 @@
     },
     "morning3_date_seo_decline": {
         "name": "{name}",
-        "text": "*Ich habe Seoyeons Angebot abgelehnt.*"
+        "text": "*Ich lehne Seoyeons Einladung ab.*"
     },
     "morning3_date_seo_decline_b": {
         "name": "{name}",
@@ -706,11 +706,11 @@
     },
     "morning3_date_dain_1": {
         "name": "Dain",
-        "text": "Hey! Was machst du am Wochenende?! Lass uns zusammen in die Spielhalle gehen!!"
+        "text": "Hey, was machst du am Wochenende? Wollen wir zusammen in die Arcade gehen?"
     },
     "morning3_date_dain_2": {
         "name": "Dain",
-        "text": "*Ihre Finger klopfen auf die Tischkante. Schneller als sonst. Die Stuhlbeine kratzen in kurzen Stößen über den Boden.*"
+        "text": "*Ihre Finger klopfen schneller als sonst auf die Tischkante. Auch die Stuhlbeine scharren kurz über den Boden.*"
     },
     "morning3_date_dain_choice": {
         "name": "Dain",
@@ -722,7 +722,7 @@
     },
     "morning3_date_dain_accept": {
         "name": "{name}",
-        "text": "*Ich habe die Wochenendpläne mit Dain angenommen.*"
+        "text": "*Ich nehme Dains Einladung fürs Wochenende an.*"
     },
     "morning3_date_dain_decline": {
         "name": "Dain",
@@ -758,18 +758,18 @@
     },
     "morning3_date_yuna_accept": {
         "name": "{name}",
-        "text": "*Ich habe die Wochenendpläne mit Yuna angenommen.*"
+        "text": "*Ich nehme Yunas Einladung fürs Wochenende an.*"
     },
     "morning3_date_yuna_decline": {
         "name": "{name}",
-        "text": "*Ich faltete den Zettel leise zusammen und steckte ihn in meine Tasche. Ich schrieb keine Antwort. Yuna senkt leicht den Kopf und schließt das Buch.*"
+        "text": "*Ich falte den Zettel leise zusammen und stecke ihn ein. Eine Antwort schreibe ich nicht. Yuna senkt leicht den Kopf und klappt ihr Buch zu.*"
     },
     "morning3_check_multiple": {},
     "morning3_multi_from_seo": {},
     "morning3_multi_from_dain": {},
     "morning3_set_multiple": {
         "name": "{name}",
-        "text": "*...Moment. Die Wochenendpläne überschneiden sich. Was mache ich jetzt.*"
+        "text": "*Meine Pläne fürs Wochenende überschneiden sich. Im Kalender ist derselbe Zeitraum dreifach belegt.*"
     },
     "morning3_multi_from_yuna": {},
     "morning3_end": {
@@ -778,6 +778,6 @@
     },
     "morning3_end_b": {
         "name": "Yuna",
-        "text": "...Ist gut."
+        "text": "...Schmeckt gut."
     }
 }

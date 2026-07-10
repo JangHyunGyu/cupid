@@ -71,7 +71,7 @@
     },
     "tour_yuna_1": {
         "name": "{name}",
-        "text": "*El anexo de la biblioteca. Un sofá viejo, luz de tarde por la ventana. El mismo olor a polvo de cuando entraste por primera vez.*"
+        "text": "*El anexo de la biblioteca. Un sofá viejo, luz de tarde por la ventana. El mismo olor a polvo de cuando entré por primera vez.*"
     },
     "tour_yuna_1b": {
         "name": "{name}",
@@ -111,7 +111,7 @@
     },
     "tour_yuna_10": {
         "name": "{name}",
-        "text": "*Le tiende la nota. Mis manos tiemblan ligeramente. Yuna no puede colocar la esquina de la funda por completo.*"
+        "text": "*Me ofrece el cuaderno. Le tiembla un poco la mano. Yuna no consigue soltar del todo la esquina de la cubierta.*"
     },
     "tour_yuna_11": {
         "name": "{name}",
@@ -169,7 +169,7 @@
     },
     "tour_dain_8": {
         "name": "{name}",
-        "text": "*Sonríe incluso cuando estás enojado. Dain deja la pelota de voleibol en la cancha. despacio.*"
+        "text": "*Incluso mientras protesta, Dain sonríe. Deja la pelota de voleibol en la cancha, un instante tarde.*"
     },
     "tour_dain_10": {
         "name": "Dain",

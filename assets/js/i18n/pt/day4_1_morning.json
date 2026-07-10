@@ -10,11 +10,11 @@
     },
     "morning4_nightmare_yuna": {
         "name": "{name}",
-        "text": "*...Tive um sonho estranho. Tentava alcançar a Yuna — e a ponta dos meus dedos ainda está vazia.*"
+        "text": "*...Tive um sonho estranho. Tentava alcançar Yuna, e as pontas dos meus dedos ainda parecem vazias.*"
     },
     "morning4_nightmare_dain": {
         "name": "{name}",
-        "text": "*...Tive um sonho estranho. Achei que tinha segurado a Dain — mas ainda não tem nada nas minhas mãos.*"
+        "text": "*...Tive um sonho estranho. Achei que tinha segurado Dain, mas minhas mãos continuam vazias.*"
     },
     "morning4_nightmare_after": {
         "name": "{name}",
@@ -55,7 +55,7 @@
     },
     "minsu_cheer_4_d": {
         "name": "{name}",
-        "text": "*...O que eu estou fazendo.*"
+        "text": "*...Mas o que eu estou fazendo?*"
     },
     "minsu_cheer_4_e": {
         "name": "{name}",
@@ -140,7 +140,7 @@
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
-        "text": "*Olhando de fora do portão da escola, o professor da sala parece mais próximo do bloco de notas do que da mesa do professor.*"
+        "text": "*A professora continua com a sacola de papel em uma das mãos.*"
     },
     "hidden_homeroom_d4_4_b": {
         "name": "Professora",
@@ -252,7 +252,7 @@
     },
     "hidden_homeroom_d4_cafe_4_b": {
         "name": "{name}",
-        "text": "*O papel manuscrito na sala de aula vazia de ontem me vem à mente. Hoje estou fora da escola e os cantos do porta-copos continuam dobrando.*"
+        "text": "*Ela continua dobrando a ponta da proteção de papel do copo.*"
     },
     "hidden_homeroom_d4_cafe_5": {
         "name": "{name}",
@@ -428,7 +428,7 @@
     },
     "hidden_nurse_d4_4_c": {
         "name": "Enfermeira",
-        "text": "*A ela para. Pousa os papéis.*"
+        "text": "*Ela para por um instante e pousa os papéis.*"
     },
     "hidden_nurse_d4_4_d": {
         "name": "Enfermeira",
@@ -484,11 +484,11 @@
     },
     "hidden_nurse_d4_6": {
         "name": "Enfermeira",
-        "text": "Valeu. Terminou muito mais rápido. ...Não foi nada demais."
+        "text": "Obrigada. Com a sua ajuda, terminei muito mais rápido. ...Não é nada demais."
     },
     "hidden_nurse_d4_6_b": {
         "name": "{name}",
-        "text": "Foi, sim."
+        "text": "Não foi nada."
     },
     "hidden_nurse_d4_6_c": {
         "name": "Enfermeira",

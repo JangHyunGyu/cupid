@@ -1,7 +1,7 @@
 {
     "morning5_start": {
         "name": "{name}",
-        "text": "*Quinto dia. É domingo, mas há um evento escolar. Os uniformes escolares ficaram mais confortáveis. As pontas das mangas não arranham mais seus pulsos.*"
+        "text": "*Quinto dia. É domingo, mas tem evento na escola. O uniforme já está mais confortável. As mangas não arranham mais meus pulsos.*"
     },
     "morning5_start_branch": {},
     "morning5_start_b": {
@@ -78,7 +78,7 @@
     },
     "morning5_dain_2": {
         "name": "Dain",
-        "text": "Se voc? fugir, eu fico brava."
+        "text": "Se você fugir, eu fico brava."
     },
     "morning5_committed_start": {},
     "morning5_committed_seo": {
@@ -143,7 +143,7 @@
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "Professora",
-        "text": "*O professor da sala de aula faz uma pausa por um momento. Ele logo retorna à sua expressão seca habitual, mas os cantos do envelope estão amassados.*"
+        "text": "*A professora faz uma pausa. Logo recupera sua habitual expressão seca, mas os cantos do envelope estão amassados.*"
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Professora",
@@ -191,11 +191,11 @@
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "Professora",
-        "text": "*O professor da sala para. A mão que segura a prancheta ganha força. A extremidade do papel é ligeiramente curvada.*"
+        "text": "*A professora para. A borda do papel se curva um pouco entre os dedos dela.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Professora",
-        "text": "...Como você sabia."
+        "text": "...Aqui?"
     },
     "hidden_homeroom_d5_correct_3": {
         "name": "{name}",
@@ -243,7 +243,7 @@
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "*Ela abraça o manuscrito de novo. A professora esfrega a marca da etiqueta de devolução com o polegar. A borda do papel amassa levemente na palma da mão.*"
+        "text": "*Abraço o manuscrito de novo. A professora esfrega a marca da etiqueta de devolução com o polegar. A borda do papel amassa levemente na palma da mão dela.*"
     },
     "hidden_homeroom_d5_6": {
         "name": "Professora",
@@ -291,7 +291,7 @@
     },
     "hidden_homeroom_d5_6_l": {
         "name": "{name}",
-        "text": "Eu leio. Direito."
+        "text": "Vou ler. De verdade."
     },
     "hidden_homeroom_d5_6_m": {
         "name": "Professora",
@@ -367,7 +367,7 @@
     },
     "hidden_nurse_d5_1_e": {
         "name": "Enfermeira",
-        "text": "Se estiver machucado ou sobrecarregado, venha pelo procedimento normal. Não precisa inventar um motivo."
+        "text": "Se estiver machucado ou sobrecarregado, vem pelos canais de sempre. Não precisa inventar um motivo."
     },
     "hidden_nurse_d5_1_f": {
         "name": "{name}",

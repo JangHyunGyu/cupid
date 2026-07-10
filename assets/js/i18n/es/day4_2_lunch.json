@@ -65,11 +65,11 @@
     },
     "date_seo_flower_b": {
         "name": "Seoyeon",
-        "text": "*Se detuvo.* ...¿Entramos?"
+        "text": "*Se detiene.* ...¿Entramos?"
     },
     "date_seo_flower_2": {
         "name": "Seoyeon",
-        "text": "*Empujó la puerta de la florería. Sonó una campanilla. Elige una maceta pequeña. Una suculenta.*"
+        "text": "*Empuja la puerta de la floristería y suena una campanilla. Elige una maceta pequeña: una suculenta.*"
     },
     "date_seo_succulent_2": {
         "name": "Seoyeon",
@@ -93,7 +93,7 @@
     },
     "date_seo_end_c": {
         "name": "Seoyeon",
-        "text": "*Se detuvo.* ...Hoy."
+        "text": "*Se detiene.* ...Hoy."
     },
     "date_seo_end_d": {
         "name": "Seoyeon",
@@ -129,7 +129,7 @@
     },
     "date_yuna_pretty_high_5": {
         "name": "Yuna",
-        "text": "*No levanta la mirada. Est? Esperando.*"
+        "text": "*No levanta la mirada. Está esperando.*"
     },
     "date_yuna_pretty_high_5_b": {
         "name": "{name}",
@@ -325,7 +325,7 @@
     },
     "date_dain_shop_3": {
         "name": "Dain",
-        "text": "*Se cala la gorra.* ...No me mires."
+        "text": "*Se baja la gorra.* ...No me mires."
     },
     "date_dain_shop_3_b": {
         "name": "Dain",

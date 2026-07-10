@@ -21,7 +21,7 @@
     },
     "seoyeon_meet_2": {
         "name": "Seoyeon",
-        "text": "*She confirms {name}'s name once more and checks it off on her clipboard. Then she studies {name} for another moment over her glasses.*"
+        "text": "*She confirms {name}'s name once more and checks it off on her clipboard. Then she studies me for another moment over her glasses.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",
@@ -266,7 +266,7 @@
     },
     "classroom_dain_talk_3": {
         "name": "Dain",
-        "text": "Yo, {name}! You into sports?!"
+        "text": "Yo, {name}! You into sports?"
     },
     "classroom_dain_talk_4": {
         "name": "{name}",

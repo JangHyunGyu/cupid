@@ -198,7 +198,7 @@
     },
     "wall_seo_after_line_2": {
         "name": "Seoyeon",
-        "text": "Ce visage — c’est un désastre maintenant, non ? Le maquillage coulé, les yeux gonflés. — C’est vraiment bien comme ça ?"
+        "text": "*Seoyeon baisse les yeux vers le dos de sa main. Son maquillage a coulé.*"
     },
     "wall_seo_after_line_3": {
         "name": "{name}",
@@ -210,7 +210,7 @@
     },
     "wall_seo_after_line_4_b": {
         "name": "Seoyeon",
-        "text": "...Je crois que je n'ai pas besoin de miroir aujourd'hui."
+        "text": "*Elle s'essuie sous les yeux.*"
     },
     "wall_seo_after_line_5": {
         "name": "Seoyeon",
@@ -694,7 +694,7 @@
     },
     "wall_yuna_moved_3": {
         "name": "Yuna",
-        "text": "*Yuna lève la tête. Ce ne sont pas ses yeux nonchalants habituels. Elle me regarde droit dans les yeux, sans vaciller.*"
+        "text": "*Yuna lève la tête et regarde {name}.*"
     },
     "wall_yuna_moved_4": {
         "name": "Yuna",

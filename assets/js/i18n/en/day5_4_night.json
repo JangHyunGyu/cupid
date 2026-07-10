@@ -439,35 +439,35 @@
     },
     "perfect_seo_1": {
         "name": "{name}",
-        "text": "*Seoyeon's rooftop. Standing among the plants she grew herself.*"
+        "text": "*On the rooftop, several planters sit beneath the railing. Damp patches remain on the soil.*"
     },
     "perfect_seo_1_b": {
         "name": "Seoyeon",
-        "text": "*Her eyes are wet. This time, she does not hide them with the back of her hand.*"
+        "text": "*Seoyeon sets down the watering can. Droplets cling to the handle.*"
     },
     "perfect_seo_2": {
         "name": "{name}",
-        "text": "*Her eyes are completely wet. Even so, she doesn't look away.*"
+        "text": "*There are smudges beneath her eyes. Seoyeon folds a handkerchief and puts it in her pocket.*"
     },
     "perfect_seo_3": {
         "name": "Seoyeon",
-        "text": "...Even when you have this face, don't run away."
+        "text": "I'll only tidy up this much today."
     },
     "perfect_seo_4": {
         "name": "Seoyeon",
-        "text": "*The rooftop breeze stirs around us.* Even after graduation, I'll keep coming here. These plants only really grow when you're here."
+        "text": "We'll look at the rest tomorrow."
     },
     "perfect_seo_5": {
         "name": "Seoyeon",
-        "text": "*She reaches out. Not a pinky finger. Her whole hand.*"
+        "text": "*Seoyeon walks toward the stairs first, then stops at the door.*"
     },
     "perfect_seo_5_b": {
         "name": "{name}",
-        "text": "*The rooftop breeze blows.*"
+        "text": "*The door remains open.*"
     },
     "perfect_epilogue_1_seo": {
         "name": "{name}",
-        "text": "*I walked the same path every morning. Next to Seoyeon, the same road had a different expression every time.*"
+        "text": "*Even after graduation, the rooftop door was open from time to time.*"
     },
     "perfect_epilogue_bridge_seo": {
         "name": "System",
@@ -475,11 +475,11 @@
     },
     "perfect_epilogue_2_seo": {
         "name": "{name}",
-        "text": "*University entrance ceremony day. A message on my phone. 'Watered the plant today. — But come home soon.'*"
+        "text": "*On the day of my university entrance ceremony, Seoyeon sends a photo of two new plants and one empty space.*"
     },
     "perfect_epilogue_3_seo": {
         "name": "Seoyeon",
-        "text": "*She doesn't delete photos even when her eyeliner has smudged a little. The cotton pads in front of the mirror haven't been used once today.*"
+        "text": "You pick one."
     },
     "perfect_epilogue_4_seo": {
         "name": "System",
@@ -487,71 +487,71 @@
     },
     "bitter_seo_1": {
         "name": "{name}",
-        "text": "*I confessed. Seoyeon said let's try. A month or so later, she messaged asking to meet at the café in front of school. The message ended with only a period.*"
+        "text": "*About a month later, she sends a short message asking to meet at the café in front of school.*"
     },
     "bitter_seo_2": {
         "name": "Seoyeon",
-        "text": "...I thought we'd be fine. I guess you and I are both one step late."
+        "text": "We were too careful."
     },
     "bitter_seo_2_b": {
         "name": "{name}",
-        "text": "*Seoyeon at the café. Her gaze stays on the coaster behind her glasses. The coffee she ordered is barely half gone.*"
+        "text": "*Seoyeon squares the edge of her coaster. Her coffee is still more than half full.*"
     },
     "bitter_seo_3": {
         "name": "{name}",
-        "text": "*I left the cafe. It's raining. We used to share one umbrella — now we each have our own.*"
+        "text": "*I leave the café. It's raining. We have one umbrella, but our bus stops are in opposite directions.*"
     },
     "true_seo_1": {
         "name": "{name}",
-        "text": "*Seoyeon's room. Her parents are out. Items on the desk are aligned as if measured with a ruler, and the family photo in the frame is tilted slightly.*"
+        "text": "*Seoyeon's room. Three plants and a file binder sit on her desk. A family photo leans beside the bookshelf.*"
     },
     "true_seo_2": {
         "name": "{name}",
-        "text": "*— Except for one thing. On the desk, a row of plants Seoyeon grew herself.*"
+        "text": "*A folded piece of paper is tucked beneath one of the plant saucers.*"
     },
     "true_seo_3": {
         "name": "Seoyeon",
-        "text": "In front of you, I think I do not need the practiced face."
+        "text": "Sit down. The chair's over there."
     },
     "true_seo_4": {
         "name": "{name}",
-        "text": "You never had to."
+        "text": "*The chair scrapes softly as I pull it over.*"
     },
     "true_seo_5": {
         "name": "Seoyeon",
-        "text": "...know. But it took some time to believe it."
+        "text": "Long conversations at home wear me out."
     },
     "true_seo_6": {
         "name": "Seoyeon",
-        "text": "*She smiles. Her hair scatters in the wind.*"
+        "text": "*Seoyeon pulls the paper from beneath the plant saucer.*"
     },
     "true_seo_6b": {
         "name": "Seoyeon",
-        "text": "I always had to smile. With you, I just want to be myself."
+        "text": "So I wrote it down. I didn't want to forget."
     },
     "true_seo_7": {
         "name": "Seoyeon",
-        "text": "...Stay with me."
+        "text": "Don't read it. Not yet."
     },
     "true_seo_7_b": {
         "name": "Seoyeon",
-        "text": "*She hesitates, then holds out her pinky.*"
+        "text": "*The paper goes back beneath the saucer.*"
     },
     "true_seo_7b": {
         "name": "{name}",
-        "text": "*I reach out too. Just before our fingers touch, Seoyeon smiles first.*"
+        "text": "*Seoyeon places two cups on the desk.*"
     },
     "true_seo_8": {
         "name": "{name}",
-        "text": "*We linked pinkies. The finger that cut through empty air on the first day is now hooked around mine.*"
+        "text": "*She slides one cup toward {name}.*"
     },
     "true_seo_bridge": {
         "name": "{name}",
-        "text": "*The promise Seoyeon gave me still lingers in my hand.*"
+        "text": "*The bedroom door stays slightly open.*"
     },
     "true_epilogue_1_seo": {
         "name": "{name}",
-        "text": "*It was five days. Until I saw the face Seoyeon had hidden behind her clipboard.*"
+        "text": "*Five days. That's how long it took to memorize where everything sat on Seoyeon's desk.*"
     },
     "ending_aff_check_yuna": {
         "name": "System",
@@ -571,15 +571,15 @@
     },
     "perfect_yuna_4": {
         "name": "{name}",
-        "text": "*The last sentence of the story: 'There was someone who did not disappear.' The ink blurs a little beneath it.*"
+        "text": "*The ink is slightly smudged beneath the story's final sentence.*"
     },
     "perfect_yuna_5": {
         "name": "Yuna",
-        "text": "*She stood and hugged me. Without a word. Light from the broken window stretched long across the floor. Her hand stopped slowly behind my back.*"
+        "text": "*She stands and hugs me without a word. Light through the cracked window stretches across the floor. The hand at my back comes to rest one beat late.*"
     },
     "perfect_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*I sat in the same place every day. The sound of Yuna turning the pages was also slightly different every day.*"
+        "text": "*I sit in the same place every day. Yuna no longer lingers on the same page for too long.*"
     },
     "perfect_epilogue_bridge_yuna": {
         "name": "System",
@@ -591,7 +591,7 @@
     },
     "perfect_epilogue_3_yuna": {
         "name": "Yuna",
-        "text": "*She is still quiet. But only with {name}, her sentences have grown longer.*"
+        "text": "*She still doesn't say much. The notes she sends {name} have grown a little longer.*"
     },
     "perfect_epilogue_4_yuna": {
         "name": "System",
@@ -732,7 +732,7 @@
     },
     "bitter_dain_1": {
         "name": "{name}",
-        "text": "*I confessed. Dain smiled good-naturedly. It was bright like gym lights, but it didn't last long. About a month later, I received a text message telling me to wait in front of the gym.*"
+        "text": "*I confessed. About a month later, a text arrives asking me to wait outside the gym.*"
     },
     "bitter_dain_2": {
         "name": "Dain",
@@ -744,11 +744,11 @@
     },
     "bitter_dain_3_b": {
         "name": "{name}",
-        "text": "*I walked out past the school gate. It's raining. — No umbrella. Cherry blossoms stick to the wet ground at my feet.*"
+        "text": "*I walk out through the school gate. It's raining. — No umbrella. Wet cherry petals cling to the ground at my feet.*"
     },
     "bitter_epilogue_1": {
         "name": "{name}",
-        "text": "*After graduation, we heard from each other less and less. Once a month became once every two months, leaving each other on read became normal, and one day - when I opened the chat and had nothing to say - I knew it was over.*"
+        "text": "*After graduation, we speak less and less. Once a month becomes once every two months. One day, I leave only 'What should I say?' in the message box, then turn off the screen.*"
     },
     "bitter_epilogue_2": {
         "name": "{name}",
@@ -812,12 +812,12 @@
     },
     "true_epilogue_3": {
         "name": "{name}",
-        "text": "*But looking back — I think it was already decided the moment our eyes first met. It just took five days to admit it.*"
+        "text": "*But looking back, the beginning came quickly. It only took five days to admit it.*"
     },
     "true_epilogue_4": {},
     "true_epilogue_4_seo": {
         "name": "{name}",
-        "text": "*Her mother's calls are still short, and the practice in front of the mirror isn't over. But Seoyeon sometimes looks my way with an unpracticed face now.*"
+        "text": "*Her mother's calls are still short, and the note by the mirror remains. Sometimes Seoyeon speaks without a note now.*"
     },
     "true_epilogue_4_yuna": {
         "name": "{name}",
@@ -913,15 +913,15 @@
     },
     "day5_ending_good": {
         "name": "{name}",
-        "text": "*Just saying 'I like you' didn't magically fix everything. Even so, we chose not to end it here.*"
+        "text": "*Not much changes after the confession. I simply have one more plan on my calendar.*"
     },
     "good_1": {
         "name": "{name}",
-        "text": "*We were clumsy, late, and missed each other more than once.*"
+        "text": "*For several days, our conversations keep faltering. Even so, we don't stop talking.*"
     },
     "good_1b": {
         "name": "{name}",
-        "text": "*Still, we walk in the same direction.*"
+        "text": "*The two of us leave by the same road.*"
     },
     "good_1c": {
         "name": "{name}",
@@ -929,35 +929,35 @@
     },
     "good_1_seo": {
         "name": "Seoyeon",
-        "text": "We are both clumsy. ...But this time, do not let go halfway."
+        "text": "Let's take it slowly."
     },
     "good_1_seo_b": {
         "name": "Seoyeon",
-        "text": "*She brushes {name}'s sleeve once, as if removing a cherry blossom petal. The touch is blunt, but it is not pushing away.*"
+        "text": "*Seoyeon removes a petal caught on the cuff of {name}'s sleeve.*"
     },
     "good_1_seo_c": {
         "name": "Seoyeon",
-        "text": "*She silently falls half a step behind. She waits until {name}'s shoulder comes level with hers.*"
+        "text": "*Seoyeon slows by half a step.*"
     },
     "good_1_seo_d": {
         "name": "{name}",
-        "text": "*I walk side by side with Seoyeon. Our steps often fall out of sync, but neither lets go first.*"
+        "text": "*Our steps fall into line.*"
     },
     "good_2_seo": {
         "name": "{name}",
-        "text": "*At the end of the cherry blossom path, Seoyeon stops half a step ahead of me. When she looks back, her gaze is softer than it used to be.*"
+        "text": "*At the end of the cherry blossom path, Seoyeon stops at the crosswalk.*"
     },
     "good_3_seo": {
         "name": "{name}",
-        "text": "*\"...Why aren't you coming?\" She mutters it under her breath, but her slowed steps give her away — she was waiting.*"
+        "text": "The light's changing."
     },
     "good_4_seo": {
         "name": "{name}",
-        "text": "*I smile, and Seoyeon pretends not to see it before slowing her steps a little.*"
+        "text": "*Seoyeon crosses first, then slows near the middle.*"
     },
     "good_5_seo": {
         "name": "{name}",
-        "text": "*We walk slowly past the end of the cherry blossom road. This time, I do not swallow the words that I want to make another plan.*"
+        "text": "*On the other side, we make our next plan using only a time and place.*"
     },
     "good_epilogue_1": {
         "name": "{name}",
@@ -981,11 +981,11 @@
     },
     "good_1_yuna_b": {
         "name": "Yuna",
-        "text": "*She hands me a folded note. When I open it, there's just one line: 'Next time, don't disappear.'*"
+        "text": "*She hands me a folded note. When I open it, there's one line: 'Next time, tell me first.'*"
     },
     "good_1_yuna_b_b": {
         "name": "{name}",
-        "text": "*It's a short sentence, but this time it reads like a request.*"
+        "text": "*It's a short sentence. Ink has bled along the fold.*"
     },
     "good_2_yuna": {
         "name": "{name}",
@@ -1001,7 +1001,7 @@
     },
     "good_5_yuna": {
         "name": "{name}",
-        "text": "*Go out the rooftop door and come down the stairs. The steps are slow but do not stop. This time, I will read to the end and speak to the end.*"
+        "text": "*We leave through the rooftop door and head down the stairs. Our steps are slow, but they don't stop.*"
     },
     "good_epilogue_1_yuna": {
         "name": "{name}",
@@ -1009,7 +1009,7 @@
     },
     "good_epilogue_2_yuna": {
         "name": "Yuna",
-        "text": "*Instead of words, she prepares what comes next. Volume 2 after volume 1. Tomorrow after today. This is her version of 'let's keep meeting.'*"
+        "text": "*Volume two after volume one. Tomorrow after today. Yuna folds the note and hands it to me.*"
     },
     "good_epilogue_3_yuna": {
         "name": "{name}",
@@ -1129,7 +1129,7 @@
     },
     "mayhem_3": {
         "name": "Dain",
-        "text": "*Dain laughed as usual. \"how are you.\" The end of his words fell to the floor. There was no exclamation mark that I knew of.*"
+        "text": "*Dain smiles like always. 'Take care.' The words fall flat at the end.*"
     },
     "mayhem_4": {
         "name": "{name}",
@@ -1141,11 +1141,11 @@
     },
     "mayhem_6": {
         "name": "{name}",
-        "text": "*The confirmation was sent, but every chat still held questions I hadn't answered.*"
+        "text": "*The words 'I like you' remain, but every chat is piled with questions I never answered.*"
     },
     "mayhem_7": {
         "name": "{name}",
-        "text": "*Look at the unsent memo under Sojung’s photo. This time, the speech bubble sent was long. The screen turns dark as is.*"
+        "text": "*I look at the unsent note beneath Sojeong's photo. A long chain of sent messages fills the chat. The screen goes dark without changing.*"
     },
     "mayhem_8": {
         "name": "System",
@@ -1153,7 +1153,7 @@
     },
     "day5_ending_harem": {
         "name": "{name}",
-        "text": "*I like all of you. — When those words left my mouth, all three faces froze at once.*"
+        "text": "*The answer catches in my throat. All three smiles stop at once.*"
     },
     "harem_1": {
         "name": "Seoyeon",
@@ -1189,7 +1189,7 @@
     },
     "harem_8": {
         "name": "System",
-        "text": "─── HAREM END ───"
+        "text": "─── UNRESOLVED END ───"
     },
     "day5_credits": {
         "name": "",
