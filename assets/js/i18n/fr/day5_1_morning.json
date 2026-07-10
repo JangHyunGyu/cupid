@@ -1,16 +1,16 @@
 {
     "morning5_start": {
         "name": "{name}",
-        "text": "*Cinquième jour. C'est dimanche, mais il y a un événement scolaire. Les uniformes scolaires sont devenus plus confortables. Les extrémités des manches ne grattent plus vos poignets.*"
+        "text": "*Cinquième jour. C'est dimanche, mais l'école organise une activité. Le bord de mes manches ne m'irrite plus le poignet.*"
     },
     "morning5_start_branch": {},
     "morning5_start_b": {
         "name": "{name}",
-        "text": "*Dès que j'entre dans la classe, l'attention vient de trois directions. Une note sur mon bureau, un ruban noué au cordon d'une tenue de sport, une notification sur mon écran de verrouillage.*"
+        "text": "*Dès que j'entre dans la classe, trois choses me sautent aux yeux : un mot sur mon bureau, un ruban noué au cordon d'une tenue de sport et une notification sur mon écran de verrouillage.*"
     },
     "morning5_start_2_b": {
         "name": "{name}",
-        "text": "*Un mot est posé sur mon bureau. L'écriture de Seoyeon.*"
+        "text": "*Un mot est posé sur mon bureau. C'est l'écriture de Seoyeon.*"
     },
     "morning5_mood_check": {
         "name": "Système",
@@ -18,15 +18,15 @@
     },
     "morning5_mood_high": {
         "name": "{name}",
-        "text": "C'est le dernier jour. La clé du toit dans ma poche touche le dos de ma main à chaque pas."
+        "text": "C'est le dernier jour. À chaque pas, la clé du toit dans ma poche effleure le dos de ma main."
     },
     "morning5_mood_mid": {
         "name": "{name}",
-        "text": "Dernier jour. Toujours pas sûr. Mais il faut que j'y aille."
+        "text": "Dernier jour. Je ne suis toujours sûr de rien. Pourtant, je dois y aller."
     },
     "morning5_mood_low": {
         "name": "{name}",
-        "text": "Le dernier jour. Je tape chacun des trois noms restants sur mon écran de verrouillage. Je ne peux ouvrir aucune des fenêtres de discussion."
+        "text": "Dernier jour. Je touche tour à tour les trois noms affichés sur l'écran de verrouillage, sans parvenir à ouvrir la moindre conversation."
     },
     "morning5_gate": {
         "name": "{name}",
@@ -34,35 +34,35 @@
     },
     "morning5_seo_note_1": {
         "name": "{name}",
-        "text": "*Il y a un mot sur mon bureau. L'écriture de Seoyeon. — 'Prends un moment cet après-midi. Je laisserai le toit ouvert. — Seoyeon'*"
+        "text": "*Un mot est posé sur mon bureau. C'est l'écriture de Seoyeon. — « Libère-toi un moment cet après-midi. Je laisserai la porte du toit ouverte. — Seoyeon »*"
     },
     "morning5_seo_note_1_b": {
         "name": "{name}",
-        "text": "*Je passe devant le coin d'exposition du club littéraire dans le couloir. Mes pieds s'arrêtent devant le panneau d'affichage.*"
+        "text": "*Dans le couloir, je passe devant l'espace d'exposition du club littéraire. Mes pas s'arrêtent devant le panneau d'affichage.*"
     },
     "morning5_yuna_story_gone": {
         "name": "{name}",
-        "text": "*Sur le panneau, il ne reste que les trous des punaises. Là où la nouvelle aurait dû être. — Elle l’a retirée. Ou peut-être qu’elle ne l’a jamais affichée.*"
+        "text": "*Sur le panneau, il ne reste que les trous des punaises, là où la nouvelle aurait dû être. — Elle l'a retirée. À moins qu'elle ne l'ait jamais affichée.*"
     },
     "morning5_yuna_story_gone_2": {
         "name": "{name}",
-        "text": "*Une chaise vide à la bibliothèque, un marque-page disparu, un roman non affiché. Seuls quatre trous de punaise subsistent sur le tableau.*"
+        "text": "*Une place vide à la bibliothèque, un marque-page disparu, une nouvelle jamais affichée. Il ne reste que quatre trous de punaise sur le panneau.*"
     },
     "morning5_seo_note_1_c": {
         "name": "{name}",
-        "text": "*Une nouvelle est affichée sur le tableau d'affichage. Titre : 'À la personne que j'ai rencontrée à la bibliothèque.' Encre violet clair. Une petite miette de pain colle sur le coin plié.*"
+        "text": "*Une nouvelle est affichée sur le panneau. Titre : « À la personne rencontrée à la bibliothèque ». L'encre est violet clair. Une petite miette de pain est restée collée au coin plié.*"
     },
     "morning5_yuna_story_1": {
         "name": "{name}",
-        "text": "*Un personnage du roman pose une couverture sur l'épaule de quelqu'un endormi à la bibliothèque. — Cette scène, il n'y a que moi qui la connais.*"
+        "text": "*Dans la nouvelle, un personnage couvre l'épaule de quelqu'un qui s'est endormi à la bibliothèque. — C'est une scène que je suis le seul à connaître.*"
     },
     "morning5_yuna_story_2": {
         "name": "{name}",
-        "text": "*La dernière phrase. 'Quand cette personne a ouvert les yeux, j'étais déjà partie. Je n'ai laissé qu'une note. — Je serai encore ici la prochaine fois.' Encre violet clair. La même couleur que la première note.*"
+        "text": "*La dernière phrase : « Quand cette personne a ouvert les yeux, j'étais déjà partie. Je n'avais laissé qu'un mot. — La prochaine fois aussi, je serai ici. » L'encre est violet clair, de la même couleur que sur le premier mot.*"
     },
     "morning5_yuna_story_4": {
         "name": "{name}",
-        "text": "*Dans le coin inférieur du tableau d'affichage, un petit texte — 'C'est de la fiction. Ce n'est pas réel.' Des traces de gomme restent.*"
+        "text": "*En petit, dans le coin inférieur du panneau : « C'est une fiction. Ce n'est pas réel. » On distingue encore des traces de gomme.*"
     },
     "morning5_return_class": {
         "name": "{name}",
@@ -78,28 +78,28 @@
     },
     "morning5_dain_2": {
         "name": "Dain",
-        "text": "Si tu fuis, je me f?che."
+        "text": "Si tu es en retard, je me fâche, compris ?"
     },
     "morning5_committed_start": {},
     "morning5_committed_seo": {
         "name": "{name}",
-        "text": "*Il n'y a pas de nouveau mot sur le bureau. À la place, le regard que Seoyeon m'a lancé hier sur le toit reste encore vif.*"
+        "text": "*Aucun nouveau mot sur le bureau. Seoyeon garde aujourd'hui encore son porte-bloc serré contre l'intérieur du bras. Yuna et Dain ne m'adressent que quelques mots sur les préparatifs.*"
     },
     "morning5_committed_yuna": {
         "name": "{name}",
-        "text": "*Il n'y a pas de nouveau mot. À la place, il reste encore la façon dont Yuna a soutenu mon regard plus longtemps que d'habitude hier.*"
+        "text": "*Aucun nouveau mot. Yuna a glissé le marque-page entre les pages de son carnet. Seoyeon et Dain ne m'adressent que quelques mots sur les préparatifs.*"
     },
     "morning5_committed_dain": {
         "name": "{name}",
-        "text": "*Avant même les points d'exclamation de Dain, c'est le souffle suspendu à la fin d'hier qui me revient d'abord. Seoyeon et Yuna ne me disent que quelques mots sur les préparatifs de l'événement.*"
+        "text": "*Du côté du gymnase, Dain resserre son protège-poignet. Seoyeon et Yuna ne m'adressent que quelques mots sur les préparatifs.*"
     },
     "hidden_homeroom_d5_check": {
         "name": "{name}",
-        "text": "*Préparation de l'événement. En marchant dans le couloir — je passe devant la salle vide. La porte est ouverte.*"
+        "text": "*Pendant les préparatifs, je traverse le couloir et passe devant une salle de classe vide. La porte est ouverte.*"
     },
     "hidden_homeroom_d5_1": {
         "name": "Professeure principale",
-        "text": "*La prof est assise au bureau. — Pas un manuscrit, elle tient une enveloppe. Brune.*"
+        "text": "*La professeure est assise au bureau. — Ce n'est pas un manuscrit qu'elle tient, mais une enveloppe brune.*"
     },
     "hidden_homeroom_d5_1_b": {
         "name": "Professeure principale",
@@ -111,7 +111,7 @@
     },
     "hidden_homeroom_d5_1_d": {
         "name": "Professeure principale",
-        "text": "*Soulevant légèrement l'enveloppe* ...Ça."
+        "text": "*Elle lève légèrement l'enveloppe.* ...Ça."
     },
     "hidden_homeroom_d5_1_e": {
         "name": "{name}",
@@ -123,7 +123,7 @@
     },
     "hidden_homeroom_d5_3": {
         "name": "Professeure principale",
-        "text": "Je l'ai gardé fermé pendant sept ans. Cette fois, je vais aussi le faire lire au club littéraire et aux autres profs de lettres."
+        "text": "Je l'ai laissé dormir pendant sept ans. Cette fois, je vais aussi le faire lire au club littéraire et aux autres professeurs de lettres."
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",
@@ -131,19 +131,19 @@
     },
     "hidden_homeroom_d5_5": {
         "name": "Professeure principale",
-        "text": "Même en imprimant plusieurs exemplaires, j'ai toujours aussi peur."
+        "text": "Même après en avoir imprimé plusieurs exemplaires, je tremble toujours autant."
     },
     "hidden_homeroom_d5_choice": {
         "name": "{name}",
         "text": "*Je serre le manuscrit contre moi. Le coin de l'enveloppe appuie contre l'intérieur de mon bras.*",
         "choices": [
-            "Vous l’avez gardé si longtemps. Ça doit bien compter.",
+            "Vous y avez travaillé pendant sept ans. Ce doit forcément être un bon texte.",
             "Je vais d'abord le lire. Je peux écrire dessus ?"
         ]
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "Professeure principale",
-        "text": "*Le professeur principal fait une pause un instant. Il retrouve bientôt son expression sèche habituelle, mais les coins de l'enveloppe sont froissés.*"
+        "text": "*La professeure principale marque un temps d'arrêt. Son expression redevient vite impassible, mais l'enveloppe se froisse légèrement dans sa main.*"
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Professeure principale",
@@ -155,15 +155,15 @@
     },
     "hidden_homeroom_d5_praise_trap_4": {
         "name": "Professeure principale",
-        "text": "...Bon."
+        "text": "...Oui."
     },
     "hidden_homeroom_d5_praise_trap_5": {
         "name": "Professeure principale",
-        "text": "*La prof tend la main. Reprend le manuscrit. Lentement. Le remet dans l'enveloppe.*"
+        "text": "*Elle tend la main, reprend le manuscrit, puis hésite avant de le glisser dans l'enveloppe.*"
     },
     "hidden_homeroom_d5_praise_trap_6": {
         "name": "Professeure principale",
-        "text": "Ce n'est pas grave. Mais pendant la critique, ne parle que de ce que tu as vraiment lu."
+        "text": "Ce n'est pas grave. Mais pendant la séance de critique, ne parle que de ce que tu as réellement lu."
     },
     "hidden_homeroom_d5_praise_trap_7": {
         "name": "{name}",
@@ -179,7 +179,7 @@
     },
     "hidden_homeroom_d5_praise_trap_10": {
         "name": "Professeure principale",
-        "text": "J'avais besoin des traces d'une vraie lecture plus que de compliments. Si je t'ai mis cette pression, c'est ma faute en tant que professeure."
+        "text": "J'avais besoin des traces d'une vraie lecture plus que de compliments. Si je t'ai mis la pression, c'est moi qui ai eu tort."
     },
     "hidden_homeroom_d5_praise_trap_11": {
         "name": "Professeure principale",
@@ -187,15 +187,15 @@
     },
     "hidden_homeroom_d5_praise_trap_12": {
         "name": "{name}",
-        "text": "*Je suis sorti et j'ai fermé la porte de la classe. L'enveloppe est toujours sur le bureau de l'enseignante. Une trace d'étiquette de retour de la taille d'un ongle reste à la surface.*"
+        "text": "*Je sors et referme la porte de la classe. L'enveloppe est toujours sur le bureau de la professeure. Sur sa face, il reste une trace d'étiquette de retour de la taille d'un ongle.*"
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "Professeure principale",
-        "text": "*Le professeur principal s'arrête. La main qui tient le presse-papiers prend de la force. Le bout du papier est légèrement courbé.*"
+        "text": "*La professeure principale s'interrompt. Le bord de la feuille se courbe légèrement dans sa main.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Professeure principale",
-        "text": "...Comment tu as su."
+        "text": "...Ici ?"
     },
     "hidden_homeroom_d5_correct_3": {
         "name": "{name}",
@@ -211,11 +211,11 @@
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Professeure principale",
-        "text": "...Je n'arrive vraiment pas à l'écrire. Cette dernière ligne."
+        "text": "...Tu as lu jusque-là ?"
     },
     "hidden_homeroom_d5_correct_7": {
         "name": "Professeure principale",
-        "text": "Ma main s'arrête dès que je regarde la dernière page. Depuis des années."
+        "text": "Dès que je regarde la dernière page, ma main s'arrête. Ça dure depuis des années."
     },
     "hidden_homeroom_d5_correct_8": {
         "name": "Professeure principale",
@@ -223,19 +223,19 @@
     },
     "hidden_homeroom_d5_correct_9": {
         "name": "{name}",
-        "text": "Je peux indiquer sur la dernière page pourquoi je me suis arrêté ?"
+        "text": "Je peux indiquer sur la dernière page pourquoi vous vous êtes arrêtée ?"
     },
     "hidden_homeroom_d5_correct_10": {
         "name": "Professeure principale",
-        "text": "Tu vas jusqu'à proposer une critique ?"
+        "text": "Tu comptes aller jusqu'à me faire une critique ?"
     },
     "hidden_homeroom_d5_correct_11": {
         "name": "{name}",
-        "text": "Oui. Je le lis comme l'un de vos lecteurs."
+        "text": "Oui. Parce que je le lis comme un lecteur."
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Professeure principale",
-        "text": "*La prof principale sourit. Le porte-documents descend sur le bureau.*"
+        "text": "*La professeure sourit. Le porte-bloc se pose sur le bureau.*"
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Professeure principale",
@@ -243,7 +243,7 @@
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "*Elle reprend le manuscrit contre elle. L'enseignante frotte la trace de l'étiquette de retour avec son pouce. Le bord du papier se froisse légèrement dans sa paume.*"
+        "text": "*Je serre de nouveau le manuscrit contre moi. La professeure frotte du pouce la trace laissée par l'étiquette de retour. Le bord du papier se froisse légèrement dans sa paume.*"
     },
     "hidden_homeroom_d5_6": {
         "name": "Professeure principale",
@@ -259,7 +259,7 @@
     },
     "hidden_homeroom_d5_6_d": {
         "name": "Professeure principale",
-        "text": "Écris franchement, mais seulement jusqu'à l'endroit où tu as lu. Tu n'as pas besoin de mettre ton nom."
+        "text": "Écris franchement ce que tu penses de ce que tu as lu. Tu n'as pas besoin de mettre ton nom."
     },
     "hidden_homeroom_d5_6_e": {
         "name": "{name}",
@@ -283,7 +283,7 @@
     },
     "hidden_homeroom_d5_6_j": {
         "name": "Professeure principale",
-        "text": "Lis-le avant le club littéraire de lundi."
+        "text": "Lis-le avant la séance du club littéraire, lundi."
     },
     "hidden_homeroom_d5_6_k": {
         "name": "{name}",
@@ -291,7 +291,7 @@
     },
     "hidden_homeroom_d5_6_l": {
         "name": "{name}",
-        "text": "Je le lirai. Vraiment."
+        "text": "Je le lirai. Attentivement."
     },
     "hidden_homeroom_d5_6_m": {
         "name": "Professeure principale",
@@ -299,11 +299,11 @@
     },
     "hidden_homeroom_d5_6_n": {
         "name": "{name}",
-        "text": "Vous mentez."
+        "text": "Vous mentez, pas vrai ?"
     },
     "hidden_homeroom_d5_6_o": {
         "name": "Professeure principale",
-        "text": "*Un petit rire* ...D'accord. Écris-moi au moins une ligne."
+        "text": "*Elle rit doucement.* ...C'est vrai. Écris-moi au moins une ligne."
     },
     "hidden_homeroom_d5_6_p": {
         "name": "Professeure principale",
@@ -315,7 +315,7 @@
     },
     "hidden_homeroom_d5_6_r": {
         "name": "Professeure principale",
-        "text": "Je prendrai ta réponse lundi, pendant le club littéraire. D'ici là, je continuerai aussi à travailler sur la fin."
+        "text": "Je lirai ta réponse lundi, pendant la séance du club littéraire. D'ici là, je vais continuer à travailler sur la fin."
     },
     "hidden_homeroom_d5_6_s": {
         "name": "Professeure principale",
@@ -335,7 +335,7 @@
     },
     "hidden_homeroom_d5_7_c": {
         "name": "Professeure principale",
-        "text": "Commence par bien terminer l'événement. On se voit lundi au club littéraire."
+        "text": "Finis d'abord l'événement comme il faut. On se retrouve lundi au club littéraire pour la critique."
     },
     "hidden_homeroom_d5_8": {
         "name": "Professeure principale",
@@ -344,8 +344,8 @@
     "hidden_homeroom_d5_freetalk": {
         "name": "Professeure principale",
         "text": "*Elle désigne l'exemplaire n° 04.* C'est la dernière relecture. Même s'il reste des blancs, ne sois pas indulgent.",
-        "context": "Jour 5. Dernier jour. La prof a remis son manuscrit. Ton : Tous deux savent que c'est la dernière fois. Rire avec une touche d'amertume douce. Plus honnêtes que d'habitude, tout semble précieux.",
-        "personality": "La prof est plus honnête que d'habitude car c'est la dernière fois. Dernière conversation après avoir remis le manuscrit."
+        "context": "Jour 5, dernier jour de l'événement. La professeure vient de confier son manuscrit inachevé pour une véritable critique. Ton : retenu, vulnérable et plus honnête que d'habitude.",
+        "personality": "La professeure cache son appréhension derrière un ton sec, mais elle attend sincèrement un avis de lecteur précis."
     },
     "hidden_nurse_d5_check": {
         "name": "{name}",
@@ -369,7 +369,7 @@
     },
     "hidden_nurse_d5_1_e": {
         "name": "Infirmière",
-        "text": "Si tu as mal ou si tout devient trop lourd, prends rendez-vous officiellement. Pas besoin d'inventer un prétexte."
+        "text": "Si tu as mal ou que tout devient trop lourd, prends rendez-vous et viens me voir. Tu n'as pas besoin d'inventer un prétexte."
     },
     "hidden_nurse_d5_1_f": {
         "name": "{name}",
@@ -377,7 +377,7 @@
     },
     "hidden_nurse_d5_2_b": {
         "name": "Infirmière",
-        "text": "*J'ouvre la porte de l'infirmerie et consulte la liste des rendez-vous.*"
+        "text": "*Elle ouvre la porte de l'infirmerie et consulte la liste des rendez-vous.*"
     },
     "hidden_nurse_d5_2_c": {
         "name": "Infirmière",
@@ -409,7 +409,7 @@
     },
     "hidden_nurse_d5_3_g": {
         "name": "Infirmière",
-        "text": "Allez, file. Tu ne vas pas sécher l'événement."
+        "text": "Allez, file. Tu ne voudrais pas rater l'événement."
     },
     "hidden_nurse_d5_3_h": {
         "name": "Infirmière",
@@ -421,7 +421,7 @@
     },
     "hidden_nurse_d5_4": {
         "name": "Infirmière",
-        "text": "La trousse de secours de l'événement est à l'entrée du gymnase. Si quelqu'un se blesse, appelle tout de suite le professeur responsable."
+        "text": "La trousse de secours est à l'entrée du gymnase. Si tu te blesses, appelle tout de suite le professeur responsable."
     },
     "hidden_nurse_d5_4_b": {
         "name": "{name}",
@@ -429,7 +429,7 @@
     },
     "hidden_nurse_d5_4_c": {
         "name": "{name}",
-        "text": "*Un tampon apparaît au bas de l'attestation : « Suivi terminé, nouveau rendez-vous si nécessaire. »*"
+        "text": "*Un tampon est apposé au bas de l'attestation : « Suivi terminé, nouveau rendez-vous si nécessaire. »*"
     },
     "hidden_nurse_d5_4_d": {
         "name": "Infirmière",
@@ -489,7 +489,7 @@
     },
     "hidden_nurse_d5_6_b": {
         "name": "Infirmière",
-        "text": "*Elle range la carte dans son étui et me montre la poche extérieure de mon sac, où je pourrai la trouver tout de suite.*"
+        "text": "*Elle range la carte dans son étui et m'indique de la glisser dans la poche extérieure de mon sac, pour pouvoir la retrouver tout de suite.*"
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
@@ -501,8 +501,8 @@
     "hidden_nurse_d5_freetalk": {
         "name": "Infirmière",
         "text": "*Elle classe la fiche de suivi.* L'entretien s'arrête ici. La prochaine fois, dis tout de suite ce dont tu as besoin.",
-        "context": "Jour 5. Dernier jour. L'infirmière a écrit un message sur un pansement. Ton : Tous deux savent que c'est la dernière fois. Rire avec une touche d'amertume douce. Plus honnêtes que d'habitude, tout semble précieux.",
-        "personality": "L'infirmière est moins joueuse. Elle attend le jour où les excuses ne seront plus nécessaires."
+        "context": "Jour 5, dernier jour de l'événement. L'infirmière vient de clore le dossier de suivi et remet une carte de premiers secours. Ton : calme, direct et bienveillant.",
+        "personality": "L'infirmière plaisante moins que d'habitude. Elle insiste sur le fait qu'il faut demander de l'aide sans chercher de prétexte."
     },
     "morning5_end_branch": {},
     "morning5_end": {
@@ -511,6 +511,6 @@
     },
     "morning5_committed_end": {
         "name": "{name}",
-        "text": "*Je range les notes sur mon bureau et vérifie le programme de l'événement pour la direction que j'ai déjà choisie.*"
+        "text": "*Je range les mots sur mon bureau et vérifie le programme correspondant au choix que j'ai déjà fait.*"
     }
 }
