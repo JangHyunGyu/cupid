@@ -37,7 +37,7 @@
     },
     "night2_msg_dain_general": {
         "name": "Dain",
-        "text": "oye, mañana pasemos por el kiosko. ¡Todavía me molesta no haber podido ir hoy!"
+        "text": "oye, mañana pasemos por la tienda. ¡Todavía me molesta no haber podido ir hoy!"
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
@@ -53,7 +53,7 @@
     },
     "night2_msg_generic": {
         "name": "Dain",
-        "text": "oye ¡¿mañana vamos al kiosko?!"
+        "text": "oye, ¿mañana vamos a la tienda?!"
     },
     "night2_msg_generic_2": {
         "name": "Seoyeon",
@@ -65,7 +65,7 @@
     },
     "night2_msg_7": {
         "name": "{name}",
-        "text": "*Tres hilos de mensajes se abren uno tras otro. Antes de poder escribir una respuesta, el indicador de batería baja una barra.*"
+        "text": "*Tres conversaciones se abren una tras otra. Antes de que pueda escribir una respuesta, el indicador de batería baja una barra.*"
     },
     "night2_choice": {
         "name": "{name}",
@@ -210,15 +210,15 @@
     },
     "night2_flashback_2": {
         "name": "{name}",
-        "text": "*Bajé bastante. Foto de la excursión de hace tres meses. Sojeong está sonriendo a mi lado. En las fotos siguientes, el escritorio de Sojeong está empujado hacia atrás poco a poco. Como si alguien lo hubiera recortado a propósito para que no se viera el grafiti.*"
+        "text": "*Desplazo la pantalla bastante hacia abajo. Una foto de la excursión de hace tres meses. Sojeong sonríe a mi lado. En cada foto posterior, su pupitre aparece un poco más apartado. La parte inferior, donde estaba el grafiti, queda fuera del encuadre.*"
     },
     "night2_flashback_3": {
         "name": "{name}",
-        "text": "*Quedan filas de frases sin enviar en el bloc de notas. 'me gustas.' 'Maestro, Sojung está en el escritorio...' 'Hoy también...' Todo se cortó en la primera línea. Última modificación a las 2:17 a. m.*"
+        "text": "*La aplicación de notas está llena de frases que nunca envié. «Profe, en el pupitre de Sojeong—». «Hoy otra vez—». Todas se interrumpen en la primera línea. Última modificación: 2:17 a. m.*"
     },
     "night2_flashback_5": {
         "name": "{name}",
-    "text": "*Debajo de la nota 38 no hay nada. Solo está vacío el título de la 39. Al día siguiente, el asiento de Sojung permaneció vacío hasta el final. La tutora se limitó a decir que Sojung se había cambiado de colegio.*"
+        "text": "*Después de la nota número 38 no hay nada. La 39 solo tiene el título en blanco. Al día siguiente, el asiento de Sojeong permaneció vacío todo el día. La tutora se limitó a decir que se había cambiado de colegio.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
@@ -250,7 +250,7 @@
     },
     "night2_end_4_b": {
         "name": "{name}",
-        "text": "*Abrí el refrigerador. Arroz sobrante, huevos, kimchi. Saco la lonchera y la pongo sobre la mesa. Todavía no abrí la tapa.*"
+        "text": "*Abro el refrigerador. Arroz del día anterior, huevos, algas. Saco una lonchera y la dejo sobre la mesa. Todavía no he abierto la tapa.*"
     },
     "night2_end_4_c": {
         "name": "{name}",

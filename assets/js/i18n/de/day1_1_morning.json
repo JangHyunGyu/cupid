@@ -1,11 +1,11 @@
 {
     "start": {
         "name": "{name}",
-        "text": "*April. Kirschblüten flattern. Die Schuluniform ist immer noch steif. Es riecht leicht nach Gras. Der Überweisungsbeleg wird gefaltet und in die Tasche gepresst.*"
+        "text": "*April, vor dem Schultor. Hier und da kleben zertretene Blütenblätter am Boden. Die Falten der neuen Schuluniform zeichnen sich noch an den Ellbogen ab, und die Unterlagen für den Schulwechsel liegen flach gedrückt in meiner Tasche.*"
     },
     "start_3": {
         "name": "{name}",
-        "text": "*Mein Handy vibriert in der Tasche. Der Gruppenchat von meiner alten Schule. Ich sehe den Namen auf dem Display — und stecke es wieder weg. Noch nicht.*"
+        "text": "*Mein Handy vibriert in der Tasche. Der Gruppenchat meiner alten Schule. Ein vertrauter Name erscheint auf dem Display. Ich starre einen Moment darauf und stecke das Handy wieder ein.*"
     },
     "name_input_scene": {
         "name": "System",
@@ -13,7 +13,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*Vor dem unbekannten Schultor. Nur meine Schuluniform hat noch Faltlinien. Neben dem Schultor rückt eine Schülerin mit langen schwarzen Haaren ihre Brille zurecht und schaut auf die Uhrzeit. Als ich aufhöre, schaut auch sie auf.*"
+        "text": "*Vor dem fremden Schultor. Nur an meiner Uniform sind die Bügelfalten noch deutlich zu sehen. Neben dem Tor rückt eine Schülerin mit langen schwarzen Haaren ihre Brille zurecht und sieht auf die Uhr. Als ich stehen bleibe, hebt auch sie den Kopf.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -21,7 +21,7 @@
     },
     "seoyeon_meet_2": {
         "name": "Seoyeon",
-        "text": "*Sie prüft {name}s Namen noch einmal und setzt einen kurzen Haken auf der Liste am Klemmbrett. Ihr Blick hinter der Brille senkt sich nicht sofort.*"
+        "text": "*Sie prüft {name}s Namen noch einmal und hakt ihn auf der Liste an ihrem Klemmbrett ab. Durch ihre Brille mustert sie mich noch einen Moment.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",
@@ -45,20 +45,20 @@
     },
     "seoyeon_meet_8": {
         "name": "{name}",
-        "text": "*Sie schmunzelt. Und ohne es zu merken, lächle ich zurück. Seoyeon geht aufs Tor zu und winkt mich heran.*"
+        "text": "*Unwillkürlich muss ich lächeln. Seoyeon ist bereits durch das Schultor gegangen.*"
     },
     "seoyeon_choice": {
         "name": "{name}",
         "text": "*Wie soll ich reagieren?*",
         "choices": [
-            "Bist du etwa nur früher gekommen, weil du dich für mich interessierst?",
+            "Bist du extra gekommen, um mich abzuholen?",
             "Was kostet die Führung denn so?",
             "Passt schon. Ich schau mich einfach selbst um."
         ]
     },
     "choice_dismiss_1": {
         "name": "Seoyeon",
-        "text": "*Ihre Schritte halten inne. Nur ihr Kopf dreht sich zu {name}.*"
+        "text": "*Sie bleibt stehen und dreht nur den Kopf zu {name}.*"
     },
     "choice_dismiss_2": {
         "name": "Seoyeon",
@@ -70,7 +70,7 @@
     },
     "choice_flirt_1": {
         "name": "Seoyeon",
-        "text": "*Sie bleibt stehen und dreht sich um. Nicht überrascht — eher amüsiert.*"
+        "text": "*Sie bleibt stehen und dreht sich um. Hinter der Brille verengen sich ihre Augen leicht.*"
     },
     "choice_flirt_2": {
         "name": "Seoyeon",
@@ -82,7 +82,7 @@
     },
     "choice_flirt_4": {
         "name": "Seoyeon",
-        "text": "Liegt's daran, dass du neu bist? Hast echt kein Gespür für die Stimmung. Witzig."
+        "text": "Du hast wohl noch kein Gespür für die Stimmung. Nicht schlecht."
     },
     "choice_flirt_5": {
         "name": "{name}",
@@ -110,11 +110,11 @@
     },
     "hallway_1": {
         "name": "Seoyeon",
-        "text": "*Sie ging voraus durch den Flur. Vorbeigehende Schüler grüßten sie zuerst. Sie erwiderte jeden Gruß mit einem leichten Tippen ihres Klemmbretts, ohne ein einziges Mal langsamer zu werden.*"
+        "text": "*Sie geht vor mir durch den Flur. Entgegenkommende Schüler grüßen sie zuerst, und Seoyeon erwidert jeden Gruß mit einem knappen Nicken.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
-        "text": "Das Gebäude der Zwölftklässler ist hier, die Bibliothek da drüben. Der Schulkiosk ist im Untergeschoss."
+        "text": "Hier ist das Gebäude der Abschlussklassen, dort drüben die Bibliothek. Der Schulkiosk ist im Untergeschoss."
     },
     "hallway_4": {
         "name": "Seoyeon",
@@ -130,19 +130,19 @@
     },
     "hallway_6_b": {
         "name": "Seoyeon",
-        "text": "*Kurzes Zögern* ...Du bist aufmerksam."
+        "text": "*Der Schlüsselanhänger hält in ihrer Hand kurz inne.* ...Du bist aufmerksam."
     },
     "hallway_6_c": {
         "name": "Seoyeon",
-        "text": "*Der Rand der Zwischenablage bewegt sich einen Schlag später erneut.*"
+        "text": "*Statt zu antworten, steckt sie den Schlüssel wieder ein.*"
     },
     "hallway_7": {
         "name": "Seoyeon",
-        "text": "Ach, Mittagessen. Du weißt bestimmt nicht, wo die Mensa ist, oder? Komm mit."
+        "text": "Ach ja, die Mittagspause. Du weißt bestimmt nicht, wo man hier isst, oder? Komm mit."
     },
     "hallway_8": {
         "name": "{name}",
-        "text": "*Plötzlich hab ich Mittagspläne. — Dabei hab ich nie Ja gesagt. Wir kommen vor dem Klassenzimmer an.*"
+        "text": "*Seoyeon bleibt vor einem Klassenzimmer stehen und zeigt auf das Türschild.*"
     },
     "hallway_10": {
         "name": "Seoyeon",
@@ -158,19 +158,19 @@
     },
     "hallway_13": {
         "name": "Seoyeon",
-        "text": "*Sie dreht sich um und winkt kurz. Ohne sich noch einmal umzusehen.*"
+        "text": "*Sie dreht sich um und winkt kurz, ohne noch einmal zurückzusehen.*"
     },
     "hallway_13_b": {
         "name": "{name}",
-        "text": "*Der Rücken gerade. Nur ihre Finger bewegten sich und tippten in gleichmäßigem Rhythmus auf die Kante des Klemmbretts.*"
+        "text": "*Ihr Schritt bleibt gleichmäßig, bis sie am Ende des Flurs verschwunden ist.*"
     },
     "classroom_1": {
         "name": "{name}",
-        "text": "*Ich öffne die Klassentür. Blicke prasseln auf mich ein. Ich hab damit gerechnet, aber dreißig Augenpaare wiegen doch schwerer als gedacht.*"
+        "text": "*Ich öffne die Klassentür. Alle Blicke richten sich auf mich.*"
     },
     "classroom_2_b": {
         "name": "{name}",
-        "text": "*Die Klassenlehrerin steht am Pult. Ende zwanzig. Ihre Strickjacke ist von Anfang an offen. Ihr Ausdruck ist gleichgültig, aber — ihre Augen mustern jeden einzelnen Schüler.*"
+        "text": "*Die Klassenlehrerin steht am Pult. Ende zwanzig. Einige Knöpfe ihrer Strickjacke sind offen, in der Hand hält sie das Klassenbuch.*"
     },
     "classroom_3": {
         "name": "Klassenlehrerin",
@@ -182,7 +182,7 @@
     },
     "classroom_5_b": {
         "name": "Klassenlehrerin",
-        "text": "...Gut. {name}. Merk ich mir. *Leise, fast wie ein Selbstgespräch* Ich mache es mir zur Regel, Namen beim ersten Mal zu merken."
+        "text": "...Gut. {name}. Den Namen merke ich mir. *Leise, fast wie zu sich selbst* Ich merke mir Namen immer beim ersten Mal."
     },
     "classroom_5_c": {
         "name": "{name}",
@@ -190,11 +190,11 @@
     },
     "classroom_dain_1": {
         "name": "Dain",
-        "text": "Oh! Ein neuer Junge in der Klasse! Endlich ein Neuzugang im Kader!"
+        "text": "Oh, ein Neuer! Endlich mal ein neues Gesicht in unserer Klasse!"
     },
     "classroom_dain_2": {
         "name": "{name}",
-        "text": "*Brauner Kurzhaarschnitt. Im Volleyball-Trikot. Eine Stimme voller Energie. Sie ist halb von ihrem Platz aufgesprungen. Ihre Sitznachbarin zieht sie am Ärmel, aber das hilft auch nichts.*"
+        "text": "*Brauner Kurzhaarschnitt, Volleyballtrikot. Sie springt halb von ihrem Platz auf und winkt. Ihre Sitznachbarin zieht sie am Ärmel, aber dafür ist es längst zu spät.*"
     },
     "classroom_dain_3": {
         "name": "Klassenlehrerin",
@@ -206,11 +206,11 @@
     },
     "classroom_dain_5": {
         "name": "{name}",
-        "text": "*Eindeutig der Typ ohne Lautstärkeregler.*"
+        "text": "*An mehreren Stellen im Klassenzimmer bricht Gelächter aus. Dain winkt nur noch höher.*"
     },
     "classroom_dain_5_b": {
         "name": "Klassenlehrerin",
-        "text": "*Sie seufzte leise. Sie tippte auf die Ecke des Klassenbuchs und suchte den nächsten Namen, ohne auch nur in Dains Richtung zu schauen.*"
+        "text": "*Die Lehrerin seufzt leise, tippt gegen die Ecke des Klassenbuchs und sucht den nächsten Namen, ohne Dain eines Blickes zu würdigen.*"
     },
     "classroom_dain_5_c": {
         "name": "Klassenlehrerin",
@@ -218,19 +218,19 @@
     },
     "classroom_dain_5_d": {
         "name": "Klassenlehrerin",
-        "text": "*Sie sagt es trocken, aber ihr Mundwinkel ist minimal angehoben.*"
+        "text": "*Die Lehrerin blättert im Klassenbuch weiter.*"
     },
     "classroom_yuna_1": {
         "name": "{name}",
-        "text": "*Ich sah hinüber — ganz hinten am Fenster stützte ein Mädchen das Kinn auf die Hand und starrte nach draußen. Während mein Name an die Tafel geschrieben wurde, blätterte nur eine Seite um.*"
+        "text": "*Ich sehe hinüber. Ganz hinten am Fenster stützt ein Mädchen das Kinn auf die Hand und schaut nur hinaus. Selbst als mein Name an die Tafel geschrieben wird, blättert sie lediglich eine Seite um.*"
     },
     "classroom_yuna_2": {
         "name": "{name}",
-        "text": "*Silberweißes Haar. Rote Augen. Ein Tattoo am Arm. Das Mädchen ganz hinten am Fenster stützte weiterhin das Kinn auf und schaute nach draußen. Die Tische um sie herum waren nach und nach leerer.*"
+        "text": "*Silberweißes Haar. Rote Augen. Ein Tattoo am Arm. Das Mädchen ganz hinten am Fenster stützt das Kinn weiterhin auf die Hand und schaut hinaus. Die Plätze um sie herum wirken auffällig leer.*"
     },
     "classroom_yuna_4": {
         "name": "{name}",
-        "text": "*Jemand in der vorderen Reihe flüsterte. ‚…Sprich sie bloß nicht an, die ist unheimlich.' Yuna blätterte eine Seite um. Nur etwas langsamer als zuvor.*"
+        "text": "*Jemand in der vorderen Reihe flüstert: ‚...Sprich sie bloß nicht an, die ist unheimlich.‘ Yuna blättert eine Seite um.*"
     },
     "classroom_seat_1": {
         "name": "Klassenlehrerin",
@@ -238,7 +238,7 @@
     },
     "classroom_seat_2": {
         "name": "{name}",
-        "text": "*Der Platz neben Dain. Noch bevor ich mich setzen konnte, hatte Dain sich schon halb zu meinem Tisch gedreht.*"
+        "text": "*Der Platz neben Dain. Noch bevor ich mich setzen kann, dreht sie sich schon halb zu meinem Tisch.*"
     },
     "classroom_minsu_1": {
         "name": "{name}",
@@ -274,7 +274,7 @@
     },
     "classroom_dain_talk_5": {
         "name": "Dain",
-        "text": "Einfach so! Ich brauch jemanden für Annahme-Training nach der Schule! Niemand, der mir Aufschläge rüberschlägt!"
+        "text": "Einfach so! Ich brauche nach der Schule jemanden fürs Annahmetraining. Mir fehlt jemand, der mir Bälle aufschlägt!"
     },
     "classroom_dain_talk_6": {
         "name": "{name}",
@@ -286,7 +286,7 @@
     },
     "classroom_dain_talk_8": {
         "name": "{name}",
-        "text": "*Nach dem ‚vielleicht' wanderte Dains Blick zur Ballmaschine. Ein Korb voller Bälle wartete am Ende des Platzes.*"
+        "text": "*Nach dem ‚Wahrscheinlich‘ wandert Dains Blick zur Ballmaschine. Am anderen Ende des Spielfelds wartet ein Korb voller Bälle.*"
     },
     "classroom_yuna_note_1": {
         "name": "{name}",
@@ -294,14 +294,14 @@
     },
     "classroom_yuna_note_3": {
         "name": "{name}",
-        "text": "*‚Hast einen lauten Platz erwischt. — Yuna' Lavendelfarbene Tinte. Eine kleine Faltspur an der Ecke des Zettels.*"
+        "text": "*‚Du hast einen lauten Platz erwischt. — Yuna‘ Lavendelfarbene Tinte. Eine kleine Faltspur an der Ecke des Zettels.*"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
-        "text": "*Ich sah zu Yuna — immer noch zum Fenster gewandt. Nur ihre Fingerspitzen waren unter den Tisch gerutscht. Genau dorthin, wo der Zettel gelegen hatte.*"
+        "text": "*Ich sehe zu Yuna. Ihr Blick ist noch immer nach draußen gerichtet; nur ihre Hand ist unter den Tisch gesunken, dorthin, woher der Zettel gekommen ist.*"
     },
     "classroom_yuna_note_6": {
         "name": "{name}",
-        "text": "*Der Unterricht beginnt. Yuna schaut wieder aus dem Fenster. Dain quatscht schon mit der Person neben ihr.*"
+        "text": "*Es klingelt zum Unterricht. Yuna schaut wieder nach draußen. Dain redet bereits auf ihre Sitznachbarin ein.*"
     }
 }

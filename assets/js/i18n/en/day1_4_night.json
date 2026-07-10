@@ -1,7 +1,7 @@
 {
     "night_start": {
         "name": "{name}",
-        "text": "*Back in my room. Collapsed on the bed. For my first day — I'm drained. But it's not a bad kind of tired.*"
+        "text": "*Back in my room, I lie down on the bed. The scent of cherry blossoms still clinging to my uniform rubs off on the blankets. It was a long first day.*"
     },
     "night_start_3": {
         "name": "{name}",
@@ -29,7 +29,7 @@
     },
     "night_msg_yuna_1": {
         "name": "Yuna",
-        "text": "*...Thanks for being quiet today*"
+        "text": "*...It was nice having you sit quietly with me today*"
     },
     "night_msg_yuna_2": {
         "name": "Yuna",
@@ -45,7 +45,7 @@
     },
     "night_msg_dain_2": {
         "name": "Dain",
-        "text": "*Don't you dare run lol*"
+        "text": "*Tomorrow's the rematch lol*"
     },
     "night_msg_dain_3": {
         "name": "Dain",
@@ -53,7 +53,7 @@
     },
     "night_msg_dain_4": {
         "name": "{name}",
-        "text": "*Three texts in a row. Does she ever pause between messages?*"
+        "text": "*All three messages arrive almost at once. A laugh slips out before I even open the reply box.*"
     },
     "night_hidden_check": {
         "name": "{name}",
@@ -65,7 +65,7 @@
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*I read the notice once more. The corner of my mouth lifts, so I turn the phone face down.*"
+        "text": "*I read the notice one more time, then set the phone face down. My reflection flickers across the dark screen.*"
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
@@ -77,7 +77,7 @@
     },
     "night_late_transition": {
         "name": "{name}",
-        "text": "*Almost asleep when — my phone buzzes one more time. 11 PM. Who's up?*"
+        "text": "*Just as I'm about to fall asleep, my phone buzzes again. Eleven at night. Who is it?*"
     },
     "night_late_branch": {
         "name": "{name}",
@@ -89,7 +89,7 @@
     },
     "night_seo_late_2": {
         "name": "Seoyeon",
-        "text": "*— Don't show up and I'll come find you*"
+        "text": "*— If you don't show up, I'll come find you*"
     },
     "night_seo_late_3": {
         "name": "{name}",
@@ -101,7 +101,7 @@
     },
     "night_yuna_late_2": {
         "name": "{name}",
-        "text": "*The indicator turns on and off during input. The only thing that arrived was '...'.*"
+        "text": "*The typing indicator flickers on and off. All that arrives is '...'.*"
     },
     "night_yuna_late_3": {
         "name": "{name}",
@@ -125,7 +125,7 @@
     },
     "night_dain_late_4": {
         "name": "{name}",
-        "text": "*'Call' is already stamped in the reply window.*"
+        "text": "*I've already typed 'I'm in' into the reply box.*"
     },
     "night_dain_late_4_b": {
         "name": "{name}",

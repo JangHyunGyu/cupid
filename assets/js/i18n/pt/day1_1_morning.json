@@ -1,7 +1,7 @@
 {
     "start": {
         "name": "{name}",
-        "text": "*abril. As flores de cerejeira estão vibrando. O uniforme escolar ainda está rígido. Há um leve cheiro de grama. O documento de transferência é dobrado e prensado na bolsa.*"
+        "text": "*Abril. Pétalas de cerejeira flutuam no ar. O uniforme ainda está duro. Há um leve cheiro de grama. Os documentos da transferência estão dobrados e apertados dentro da mochila.*"
     },
     "start_3": {
         "name": "{name}",
@@ -13,7 +13,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*Em frente ao portão da escola desconhecido. Só meu uniforme escolar ainda tem dobras. Ao lado do portão da escola, uma aluna de longos cabelos negros ajusta os óculos e verifica as horas. Quando paro, ela olha para cima também.*"
+        "text": "*Paro diante do portão de uma escola desconhecida. Só o meu uniforme ainda guarda as marcas das dobras. Ao lado do portão, uma aluna de cabelos negros e compridos ajeita os óculos e confere as horas. Quando paro, ela também levanta o olhar.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -25,11 +25,11 @@
     },
     "seoyeon_meet_3": {
         "name": "{name}",
-        "text": "Sou. Como sabia?"
+        "text": "Sou eu. Como você sabia?"
     },
     "seoyeon_meet_4": {
         "name": "Seoyeon",
-        "text": "Presidente do conselho. Os transferidos ficam comigo."
+        "text": "Presidente do grêmio. Os transferidos ficam por minha conta."
     },
     "seoyeon_meet_5": {
         "name": "Seoyeon",
@@ -52,7 +52,7 @@
         "text": "*Como eu reajo?*",
         "choices": [
             "Você veio me buscar porque tá a fim, né?",
-            "Quanto tá a diária do guia?",
+            "Quanto custa o passeio guiado?",
             "De boa, eu me viro."
         ]
     },
@@ -70,7 +70,7 @@
     },
     "choice_flirt_1": {
         "name": "Seoyeon",
-        "text": "*Para e se vira. A cara não é de surpresa — É de quem tá achando graça.*"
+        "text": "*Para e se vira. Não parece surpresa: está achando graça.*"
     },
     "choice_flirt_2": {
         "name": "Seoyeon",
@@ -134,7 +134,7 @@
     },
     "hallway_6_c": {
         "name": "Seoyeon",
-        "text": "*A borda da área de transferência se move novamente uma batida depois.*"
+        "text": "*A borda da prancheta volta a se mexer um instante depois.*"
     },
     "hallway_7": {
         "name": "Seoyeon",
@@ -178,7 +178,7 @@
     },
     "classroom_3_b": {
         "name": "{name}",
-        "text": "Sou o {name}. Prazer. *Curto e grosso. A professora balança a cabeça.*"
+        "text": "Sou o {name}. Prazer. *Curto e direto. A professora assente.*"
     },
     "classroom_5_b": {
         "name": "Professora",
@@ -190,11 +190,11 @@
     },
     "classroom_dain_1": {
         "name": "Dain",
-        "text": "Opa! Um transferido homem! Finalmente um reforço novo pro time!"
+        "text": "Opa! Um garoto transferido! Finalmente um reforço novo pro time!"
     },
     "classroom_dain_2": {
         "name": "{name}",
-        "text": "*Cabelo castanho curto. Uniforme do time de vôlei. Voz que enche a sala. Já tá meio de pé — e a coleguinha do lado puxando o braço dela não adianta nada.*"
+        "text": "*Cabelo castanho curto. Uniforme do time de vôlei. Uma voz que enche a sala. Ela já está meio de pé, e a colega ao lado puxa seu braço sem nenhum resultado.*"
     },
     "classroom_dain_3": {
         "name": "Professora",
@@ -262,7 +262,7 @@
     },
     "classroom_dain_talk_2": {
         "name": "{name}",
-        "text": "*Mal sentei e a Dain já se joga pra cima de mim. Espaço pessoal? Ela nunca ouviu falar.*"
+        "text": "*Mal me sento, Dain já se inclina sobre a minha carteira. Espaço pessoal? Ela nunca ouviu falar.*"
     },
     "classroom_dain_talk_3": {
         "name": "Dain",
@@ -278,11 +278,11 @@
     },
     "classroom_dain_talk_6": {
         "name": "{name}",
-        "text": "Eu pareço uma máquina de bolas?"
+        "text": "Eu pareço uma máquina lançadora?"
     },
     "classroom_dain_talk_7": {
         "name": "Dain",
-        "text": "Mesmo assim, deve ser melhor que uma máquina de bolas. Acho!"
+        "text": "Mesmo assim, você deve ser melhor que uma máquina lançadora. Acho!"
     },
     "classroom_dain_talk_8": {
         "name": "{name}",

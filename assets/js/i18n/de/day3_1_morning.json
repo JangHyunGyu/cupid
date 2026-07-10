@@ -1,7 +1,7 @@
 {
     "morning3_start": {
         "name": "{name}",
-        "text": "*Dritter Tag. Ich habe verschlafen. Dreimal den Wecker ausgemacht. Gestern Nacht zu lange Nachrichten gelesen.*"
+        "text": "*Dritter Tag. Ich habe verschlafen und den Wecker gleich dreimal ausgeschaltet. Gestern Nacht war ich zu lange mit den Nachrichten beschäftigt.*"
     },
     "morning3_start_2": {
         "name": "{name}",
@@ -14,7 +14,7 @@
     },
     "morning3_seo_gate_warm_1": {
         "name": "Seoyeon",
-        "text": "*Sie wartet anders als sonst vor dem Schultor.*"
+        "text": "*Anders als sonst wartet sie vor dem Schultor.*"
     },
     "morning3_seo_gate_warm_2": {
         "name": "Seoyeon",
@@ -38,11 +38,11 @@
     },
     "morning3_seo_gate_4": {
         "name": "Seoyeon",
-        "text": "Wen kümmert's, wenn wir zu spät sind. Besser, als allein geschimpft zu werden."
+        "text": "Was macht es schon, wenn wir zu spät kommen? Besser, als allein Ärger zu bekommen."
     },
     "morning3_seo_gate_5": {
         "name": "{name}",
-        "text": "Das glaube ich nicht."
+        "text": "Darum geht es doch nicht."
     },
     "morning3_seo_gate_6": {
         "name": "Seoyeon",
@@ -62,11 +62,11 @@
     },
     "morning3_seo_gate_cold_2": {
         "name": "Seoyeon",
-        "text": "...Der Neue. Bist immer noch hier."
+        "text": "...Der Neue. Du gehst also noch hier zur Schule."
     },
     "morning3_seo_gate_cold_3": {
         "name": "{name}",
-        "text": "*Ihr Ton ist sachlich. Seoyeon entfernt sich durchs Tor, wird immer kleiner.*"
+        "text": "*Ihr Ton klingt geschäftsmäßig. Seoyeons Rücken entfernt sich hinter dem Schultor.*"
     },
     "morning3_yuna_gate_1": {
         "name": "{name}",
@@ -82,7 +82,7 @@
     },
     "morning3_yuna_gate_warm_3": {
         "name": "{name}",
-        "text": "*Ein Wort auf dem Zettel. Gewartet.*"
+        "text": "*Ich ziehe den Zettel hervor. ‚Ich habe gewartet.‘*"
     },
     "morning3_yuna_gate_warm_4": {
         "name": "{name}",
@@ -106,11 +106,11 @@
     },
     "morning3_yuna_gate_6": {
         "name": "{name}",
-        "text": "*Eine Person, die die ganze Nacht liest und zu spät kommt. Yuna kramte wortlos in ihrer Tasche, schnitt dann ein kleines Brot in zwei Hälften und hielt es ihr hin. Im Inneren der Tasche ist ein Zettel sichtbar.*"
+        "text": "*Jemand, der die ganze Nacht liest und deshalb zu spät kommt. Yuna kramt wortlos in ihrer Tasche, bricht ein kleines Brötchen in zwei Hälften und hält mir eine hin. In der Tasche ist ein Zettel zu sehen.*"
     },
     "morning3_yuna_gate_6_b": {
         "name": "{name}",
-        "text": "*Hinweis: Ich dachte, Sie hätten nicht gefrühstückt. Auf der Unterseite des Brotbeutels befindet sich ein wenig hellviolette Tinte.*"
+        "text": "*Auf dem Zettel steht: ‚Du hast doch nicht gefrühstückt.‘ Am unteren Rand der Brottüte klebt etwas hellviolette Tinte.*"
     },
     "morning3_yuna_gate_7": {
         "name": "Yuna",
@@ -122,7 +122,7 @@
     },
     "morning3_yuna_gate_cold_2": {
         "name": "{name}",
-        "text": "*Ihre Schritte werden schneller. — Es fühlt sich an, als ob die Mauer wieder hochgeht.*"
+        "text": "*Ihre Schritte werden schneller. — Es fühlt sich an, als würde die Mauer zwischen uns wieder hochgezogen.*"
     },
     "morning3_dain_gate_1": {
         "name": "{name}",
@@ -134,7 +134,7 @@
     },
     "morning3_dain_gate_warm_2": {
         "name": "Dain",
-        "text": "Hey! Fast zu spät! Lass uns zusammen gehen!"
+        "text": "Hey, wir wären fast zu spät gekommen. Komm, gehen wir zusammen!"
     },
     "morning3_dain_gate_warm_3": {
         "name": "{name}",
@@ -142,7 +142,7 @@
     },
     "morning3_dain_gate_2": {
         "name": "Dain",
-        "text": "Hey hey hey!! Wir kommen zu spät!! Renn!!"
+        "text": "Hey, wir sind spät dran. Lauf!"
     },
     "morning3_dain_gate_3": {
         "name": "Dain",
@@ -150,19 +150,19 @@
     },
     "morning3_dain_gate_4": {
         "name": "{name}",
-        "text": "Moment mal — warum hältst du meine Hand?!"
+        "text": "Moment mal — warum hältst du meine Hand?"
     },
     "morning3_dain_gate_4_b": {
         "name": "Dain",
-        "text": "So ist es schneller!! Frag nicht!!"
+        "text": "So sind wir schneller. Stell keine Fragen!"
     },
     "morning3_dain_gate_5": {
         "name": "{name}",
-        "text": "*Ihre Hand ist heiß. Ob vom Schweiß, oder ob es nur dort heiß ist, wo Dain sie gehalten hat. Beim Rennen bleibt keine Zeit zum Nachdenken.*"
+        "text": "*Ihre Hand ist heiß. Ob das am Schweiß liegt oder nur die Stelle so heiß ist, die Dain umschließt? Beim Rennen bleibt keine Zeit zum Nachdenken.*"
     },
     "morning3_dain_gate_5_b": {
         "name": "{name}",
-        "text": "*Im Moment, als wir das Tor passierten, landete Dain und ließ ein kleines 'uff' hören. Aber als ich mich umdrehte, lächelte sie, als wäre nichts gewesen. — Hab ich mich verhört?*"
+        "text": "*Als wir das Tor passieren, landet Dain und stößt ein leises ‚Uff‘ aus. Doch als ich mich umdrehe, lächelt sie, als wäre nichts gewesen. — Habe ich mich verhört?*"
     },
     "morning3_dain_gate_cold_1": {
         "name": "Dain",
@@ -174,11 +174,11 @@
     },
     "morning3_classroom_1": {
         "name": "{name}",
-        "text": "*Als ich das Klassenzimmer betrete, hält Seoyeons Stift inne, Dains Stuhl rutscht zurück. Yuna legt das Lesezeichen zweimal auf dieselbe Seite.*"
+        "text": "*Als ich das Klassenzimmer betrete, hält Seoyeons Stift inne und Dains Stuhl rutscht zurück. Yuna schiebt ihr Lesezeichen zweimal auf dieselbe Seite.*"
     },
     "morning3_react_seo_1": {
         "name": "Dain",
-        "text": "Hey! Bist du etwa mit der Schülersprecherin gekommen?! Schon am frühen Morgen?!"
+        "text": "Hey, bist du etwa mit der Schülersprecherin gekommen? Gleich am frühen Morgen?"
     },
     "morning3_react_seo_2": {
         "name": "Yuna",
@@ -190,11 +190,11 @@
     },
     "morning3_react_yuna_1_b": {
         "name": "Dain",
-        "text": "*Sie kehrt ganz offen ins Klassenzimmer zurück.*"
+        "text": "*Sie kehrt demonstrativ ins Klassenzimmer zurück.*"
     },
     "morning3_react_yuna_2": {
         "name": "Dain",
-        "text": "Voll neidisch!! Ich hätt auch gern jemanden, mit dem ich morgens herkomme!!"
+        "text": "Bin echt neidisch! Ich hätte auch gern jemanden, mit dem ich morgens herkomme!"
     },
     "morning3_react_yuna_2_b": {
         "name": "Seoyeon",

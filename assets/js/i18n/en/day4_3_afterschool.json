@@ -1,111 +1,111 @@
 {
     "confess_seo_1": {
         "name": "{name}",
-        "text": "*The date is winding down. Instead of heading to the school gate, we go up to the rooftop.*"
+        "text": "*The date is over. Instead of heading for the front gate, we go up to the rooftop.*"
     },
     "confess_seo_2": {
         "name": "Seoyeon",
-        "text": "There's one last place I want to show you."
+        "text": "Let's go up for a minute."
     },
     "confess_seo_3": {
         "name": "{name}",
-        "text": "*The rooftop. Sunset paints the school. I can see the railing where Seoyeon looked down on the first day.*"
+        "text": "*The rooftop. The field lights glow below the railing. It's the spot where Seoyeon stood on my first day.*"
     },
     "confess_seo_3b": {
         "name": "{name}",
-        "text": "*The rooftop. The sunset paints the school. A place that became familiar in just a few days.*"
+        "text": "*The rooftop. The field lights glow below the railing. We've come up here several times in just a few days.*"
     },
     "confess_seo_4": {
         "name": "Seoyeon",
-        "text": "*She is leaning against the railing. The wind catches her hair. — She tucks it back with her pinky. That habit.*"
+        "text": "*Seoyeon stands one step back from the railing and slips the key into her pocket.*"
     },
     "confess_seo_4_b": {
         "name": "{name}",
-        "text": "*My breath goes shallow. Same as my old school. — Words I swallowed back then.*"
+        "text": "*My fingers catch on the folded note inside my pocket.*"
     },
     "confess_seo_5": {
         "name": "{name}",
-        "text": "*My lips part once, then close again.*"
+        "text": "*I don't take the note out.*"
     },
     "confess_seo_choice": {
         "name": "{name}",
-        "text": "*The confession-practice memo folds and unfolds in my palm. The crease is now three layers deep.*",
+        "text": "*Seoyeon doesn't speak first.*",
         "choices": [
-            "Seoyeon. Just a second.",
-            "...Nice breeze."
+            "Say it",
+            "Stay a little longer"
         ]
     },
     "confess_seo_yes_1": {
         "name": "Seoyeon",
-        "text": "*She turns around. The wind whips through her hair.*"
+        "text": "*Seoyeon lifts her head.*"
     },
     "confess_seo_yes_2": {
         "name": "{name}",
-        "text": "*My breath catches in my throat. Still, this time I won't avoid it.*"
+        "text": "*My throat is dry. The note folds inside my pocket.*"
     },
     "confess_seo_yes_3": {
         "name": "{name}",
-        "text": "*Sentences I wrote and erased at my old school come back to me. The phone stays quiet in my pocket.*"
+        "text": "I want to keep seeing you after today."
     },
     "confess_seo_yes_4": {
         "name": "{name}",
-        "text": "Seoyeon. Everyone sees you as the one who has it all together, right? But what sticks with me are the moments you let your guard down for a second."
+        "text": "*Seoyeon doesn't answer right away. The key ring turns once in her hand.*"
     },
     "confess_seo_yes_5": {
         "name": "{name}",
-        "text": "*The words tangle. I never prepared any — and I can't stop.*"
+        "text": "You don't have to answer right now."
     },
     "confess_seo_yes_6": {
         "name": "{name}",
-        "text": "Not the council president — moments when you were just Seoyeon. Those are the ones I keep coming back to."
+        "text": "Saying that only makes me think about it more."
     },
     "confess_seo_yes_7": {
         "name": "{name}",
-        "text": "*The seconds waiting for an answer stretch longer.*"
+        "text": "*Seoyeon looks down past the railing.*"
     },
     "confess_seo_yes_8": {
         "name": "Seoyeon",
-        "text": "*She says nothing. Her lips tremble. There is no clipboard, no student council armband.*"
+        "text": "I've been watching you too."
     },
     "confess_seo_yes_9": {
         "name": "Seoyeon",
-        "text": "...Me too."
+        "text": "Where you sit. When you get quiet."
     },
     "confess_seo_yes_10": {
         "name": "Seoyeon",
-        "text": "...That 'I'm flattered' you said at the gate. I've been thinking about you ever since."
+        "text": "*The key disappears into her pocket.*"
     },
     "confess_seo_yes_11": {
         "name": "Seoyeon",
-        "text": "It took me forever to bring this up."
+        "text": "I'll leave the rooftop open tomorrow at lunch."
     },
     "confess_seo_yes_11_b": {
         "name": "Seoyeon",
-        "text": "*Her hand moves.*"
+        "text": "*Seoyeon walks toward the stairs.*"
     },
     "confess_seo_yes_12": {
         "name": "Seoyeon",
-        "text": "*She holds out her pinky. Same as the first day, but this time she offers the promise without hesitation.*"
+        "text": "*She goes down two steps and stops without looking back.*"
     },
     "confess_seo_no_1": {
         "name": "{name}",
-        "text": "...Nice breeze."
+        "text": "Want to stay a little longer?"
     },
     "confess_seo_no_2": {
         "name": "{name}",
-        "text": "*She said the same thing on the first day. Seoyeon's finger stops at the edge of the clipboard.*"
+        "text": "*Seoyeon nods.*"
     },
     "confess_seo_no_3": {
         "name": "Seoyeon",
-        "text": "*She smiles. A practiced smile. — She turns and walks away. On the third step, she stops.*"
+        "text": "*We both look down at the field. Another light switches on.*"
     },
     "confess_seo_no_4": {
         "name": "Seoyeon",
-        "text": "...Next time you come here, have something else to say to me."
+        "text": "Come by tomorrow at lunch if you have time."
     },
     "confess_seo_no_4_b": {
         "name": "{name}",
-        "text": "*Her back is straight. She's trembling.*"
+        "text": "*The note stays in my pocket all the way down the stairs.*"
     },
     "confess_yuna_1": {
         "name": "{name}",
@@ -121,19 +121,19 @@
     },
     "confess_yuna_3b": {
         "name": "{name}",
-        "text": "*The library annex. Sunset seeps through the windows. A place that became familiar in just a few days.*"
+        "text": "*The library annex. Sunset seeps through the window. A bookmark rests beside the sofa.*"
     },
     "confess_yuna_4": {
         "name": "Yuna",
-        "text": "*She sits on the sofa and looks at {name}. Her gaze seems to have been waiting.*"
+        "text": "*She sits on the sofa and looks at {name}, a bookmark held in one hand.*"
     },
     "confess_yuna_5": {
         "name": "{name}",
-        "text": "*While I search for the words, my fingertips go cold.*"
+        "text": "*The tip of the bookmark is bent.*"
     },
     "confess_yuna_choice": {
         "name": "{name}",
-        "text": "*My breath is getting shorter. The reason this silence felt comfortable — was because it was Yuna. I have to say it.*",
+        "text": "*Yuna waits, toying with the bookmark.*",
         "choices": [
             "Yuna. Let me ask you one thing.",
             "...This place is really nice."
@@ -145,35 +145,35 @@
     },
     "confess_yuna_yes_2": {
         "name": "{name}",
-        "text": "*The excuses come easily. Only the words I want to say remain.*"
+        "text": "*The sound of turning pages stops.*"
     },
     "confess_yuna_yes_3": {
         "name": "{name}",
-        "text": "Yuna. At first I thought your silence was a wall. It wasn't."
+        "text": "Yuna. When I'm with you, I don't have to choose my words as carefully."
     },
     "confess_yuna_yes_3_b": {
         "name": "{name}",
-        "text": "When I'm next to you, the silence never feels uncomfortable."
+        "text": "I liked that."
     },
     "confess_yuna_yes_4": {
         "name": "{name}",
-        "text": "*Speak less in front of Yuna. I feel like I'm being caught even blankly.*"
+        "text": "*Yuna sets down the bookmark.*"
     },
     "confess_yuna_yes_5": {
         "name": "{name}",
-        "text": "You're the kind of person who sits next to someone instead of speaking. That silence was warmer than anything anyone's said to me."
+        "text": "I want to keep seeing you after today."
     },
     "confess_yuna_yes_6": {
         "name": "{name}",
-        "text": "I like you."
+        "text": "You don't have to answer right now."
     },
     "confess_yuna_yes_6_b": {
         "name": "{name}",
-        "text": "*As soon as I finish speaking, even the dust in the room becomes quiet.*"
+        "text": "*When I finish speaking, the sound of turning pages is gone.*"
     },
     "confess_yuna_yes_7": {
         "name": "{name}",
-        "text": "*Even after the words land, my eyes do not lift easily.*"
+        "text": "*Yuna doesn't answer right away.*"
     },
     "confess_yuna_yes_8": {
         "name": "Yuna",
@@ -185,15 +185,15 @@
     },
     "confess_yuna_yes_8_c": {
         "name": "Yuna",
-        "text": "...Don't go. I don't want you to just disappear."
+        "text": "...Tell me first. If you're going to disappear."
     },
     "confess_yuna_yes_9": {
         "name": "Yuna",
-        "text": "...Don't go. This time, don't go."
+        "text": "Don't disappear without saying anything."
     },
     "confess_yuna_yes_9_b": {
         "name": "{name}",
-        "text": "*'This time.' Yuna's breath catches just slightly on those two words. She doesn't let go of my hand.*"
+        "text": "*Yuna keeps hold of the end of her sleeve.*"
     },
     "confess_yuna_no_1": {
         "name": "{name}",
@@ -221,7 +221,7 @@
     },
     "confess_dain_2": {
         "name": "Dain",
-        "text": "One last place!! Come on!!"
+        "text": "One last place. Come on."
     },
     "confess_dain_3": {
         "name": "{name}",
@@ -229,7 +229,7 @@
     },
     "confess_dain_3b": {
         "name": "{name}",
-        "text": "*The gym. Empty. Sunset seeps through the windows onto the court. A place where so many memories were made in just a few days.*"
+        "text": "*The gym is empty. Sunset spills through the windows and colors the court.*"
     },
     "confess_dain_4": {
         "name": "Dain",
@@ -237,7 +237,7 @@
     },
     "confess_dain_5": {
         "name": "{name}",
-        "text": "*I could turn this into a joke and let today pass. I don't want to.*"
+        "text": "*The ball bounces once against the floor.*"
     },
     "confess_dain_choice": {
         "name": "Dain",
@@ -261,43 +261,43 @@
     },
     "confess_dain_yes_3_b": {
         "name": "{name}",
-        "text": "When your eyes aren't on me — it gets hard to breathe."
+        "text": "I want to keep seeing you after today."
     },
     "confess_dain_yes_4": {
         "name": "{name}",
-        "text": "*It's not a big dramatic confession or anything. But this is everything to me.*"
+        "text": "*Dain sets down the ball.*"
     },
     "confess_dain_yes_5": {
         "name": "{name}",
-        "text": "That's why I keep coming back to you."
+        "text": "You don't have to answer right now."
     },
     "confess_dain_yes_6": {
         "name": "{name}",
-        "text": "I like you."
+        "text": "I just wanted you to know."
     },
     "confess_dain_yes_7": {
         "name": "{name}",
-        "text": "*The last words remain on the court.*"
+        "text": "*The gym lights hum softly.*"
     },
     "confess_dain_yes_8": {
         "name": "Dain",
-        "text": "*She freezes. The laughter is gone from her face. Only her eyes slowly fill with tears. She covers her face with both hands.*"
+        "text": "*Dain freezes where she stands and covers her face with both hands.*"
     },
     "confess_dain_yes_8_b": {
         "name": "{name}",
-        "text": "*She covers her face with both hands. Through the gaps between her fingers, red cheeks are visible.*"
+        "text": "*She keeps her face covered. The volleyball bumps her toes, but she doesn't pick it up.*"
     },
     "confess_dain_yes_9": {
         "name": "Dain",
-        "text": "...Wait, I'm gonna cry... I'm happy, so why am I crying..."
+        "text": "...Wait. I can't get my words straight right now."
     },
     "confess_dain_yes_9_b": {
         "name": "{name}",
-        "text": "*She lowers her hands and smiles. Tears are running down her face.*"
+        "text": "*She lowers her hands and smiles, roughly wiping her eyes with her sleeve.*"
     },
     "confess_dain_yes_10": {
         "name": "Dain",
-        "text": "I like you too. ...A lot."
+        "text": "Come back tomorrow."
     },
     "confess_dain_yes_10_b": {
         "name": "Dain",
@@ -309,7 +309,7 @@
     },
     "confess_dain_no_2": {
         "name": "{name}",
-        "text": "*I can set a ball for her, but I can't say three words. Pathetic.*"
+        "text": "*I toss the ball up for her. No words come out.*"
     },
     "confess_dain_no_3": {
         "name": "Dain",
@@ -317,7 +317,7 @@
     },
     "confess_dain_no_4": {
         "name": "Dain",
-        "text": "...Next time, don't run away."
+        "text": "...Next time, say it."
     },
     "confess_dain_no_4_b": {
         "name": "{name}",

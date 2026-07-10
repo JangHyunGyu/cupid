@@ -29,7 +29,7 @@
     },
     "date_seo_pretty_high_3_b": {
         "name": "Seoyeon",
-        "text": "*Tucking her hair back* ...Don't get the wrong idea."
+        "text": "*She tucks her hair back.* ...Enough."
     },
     "date_seo_pretty_high_4": {
         "name": "Seoyeon",
@@ -65,7 +65,7 @@
     },
     "date_seo_flower_b": {
         "name": "Seoyeon",
-        "text": "*Stopping in her tracks* ...Want to go in?"
+        "text": "*She stops walking.* ...Want to go in?"
     },
     "date_seo_flower_2": {
         "name": "Seoyeon",
@@ -89,7 +89,7 @@
     },
     "date_seo_end_b": {
         "name": "{name}",
-        "text": "*We left the park and walked down the street.*"
+        "text": "*We leave the park and walk down the street.*"
     },
     "date_seo_end_c": {
         "name": "Seoyeon",
@@ -97,18 +97,18 @@
     },
     "date_seo_end_d": {
         "name": "Seoyeon",
-        "text": "I had a good time today. I wanted you to know that."
+        "text": "I had a good time today."
     },
     "date_yuna_1": {
         "name": "{name}",
-        "text": "*In front of the cafe. Yuna is standing against the wall. A black dress and a small cross bag. Since there is no school uniform, the lines of the tattoo are what catches the eye first.*"
+        "text": "*Outside the café, Yuna leans against the wall in a black dress with a small crossbody bag. Without her school uniform, the lines of her tattoos catch my eye first.*"
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
         "text": "*What do I say?*",
         "choices": [
             "First time I'm seeing you out of uniform.",
-            "Your eyes look different today."
+            "You look a little different today."
         ]
     },
     "date_yuna_pretty_high": {
@@ -137,15 +137,15 @@
     },
     "date_yuna_pretty_high_5_c": {
         "name": "Yuna",
-        "text": "*Ears turning red* ...Enough."
+        "text": "*She lowers her eyes to her cup.* ...Enough."
     },
     "date_yuna_pretty_low": {
         "name": "Yuna",
-        "text": "...No one's ever said that to me before."
+        "text": "...I'm not used to hearing things like that."
     },
     "date_yuna_bright": {
         "name": "Yuna",
-        "text": "...What's different about them."
+        "text": "...What's different?"
     },
     "date_yuna_bookstore": {
         "name": "{name}",
@@ -177,7 +177,7 @@
     },
     "date_yuna_earphone_3": {
         "name": "{name}",
-        "text": "*The distance lasts until the earphone cord goes taut. Yuna sits only that close.*"
+        "text": "*The earbud cord sets the distance between us. Yuna sits exactly that close.*"
     },
     "date_yuna_oldbook": {
         "name": "{name}",
@@ -189,7 +189,7 @@
     },
     "date_yuna_oldbook_c": {
         "name": "{name}",
-        "text": "*She pulls out an old book. Flipping through the pages.*"
+        "text": "*She pulls out an old book and flips through the pages.*"
     },
     "date_yuna_oldbook_2": {
         "name": "Yuna",
@@ -201,7 +201,7 @@
     },
     "date_yuna_oldbook_4": {
         "name": "Yuna",
-        "text": "...Now it reads different."
+        "text": "...Now it reads differently."
     },
     "date_yuna_end": {
         "name": "Yuna",
@@ -213,15 +213,15 @@
     },
     "date_yuna_end_c": {
         "name": "{name}",
-        "text": "*'I had a lot of sentences today. Only in front of you.' — Yuna's handwriting is trembling.*"
+        "text": "*'I talked a lot today. Because I was with you.' The lavender ink smudges slightly on the final character.*"
     },
     "date_dain_1": {
         "name": "{name}",
-        "text": "*In front of the gym. Dain comes running over. Cap and sportswear.*"
+        "text": "*Outside the gym, Dain runs up in a cap and athletic wear.*"
     },
     "date_dain_2": {
         "name": "Dain",
-        "text": "You made it!! Cutting it pretty close, huh?!"
+        "text": "You're here! Almost late, weren't you?"
     },
     "date_dain_3": {
         "name": "{name}",
@@ -229,14 +229,14 @@
     },
     "date_dain_4": {
         "name": "Dain",
-        "text": "I was here twenty minutes ago!!"
+        "text": "I got here twenty minutes early!"
     },
     "date_dain_compliment_choice": {
         "name": "{name}",
-        "text": "*This is becoming a pattern now.*",
+        "text": "*What do I say?*",
         "choices": [
             "That cap looks good on you.",
-            "Sportswear shouldn't look this good."
+            "Sportswear really suits you."
         ]
     },
     "date_dain_pretty_high": {
@@ -245,7 +245,7 @@
     },
     "date_dain_pretty_high_2": {
         "name": "Dain",
-        "text": "WHAT — you can't just SAY stuff like that!!"
+        "text": "Hey, don't say things like that out of nowhere."
     },
     "date_dain_pretty_high_3": {
         "name": "{name}",
@@ -257,11 +257,11 @@
     },
     "date_dain_pretty_low": {
         "name": "Dain",
-        "text": "WHAT — !! ...Haha, thanks, but stop, it's embarrassing."
+        "text": "What brought that on? ...Thanks, though."
     },
     "date_dain_bright": {
         "name": "Dain",
-        "text": "OBVIOUSLY!! I'm in peak form today!!"
+        "text": "Of course. I'm feeling great today!"
     },
     "date_dain_to_arcade": {
         "name": "{name}",
@@ -273,7 +273,7 @@
     },
     "date_dain_arcade_2": {
         "name": "Dain",
-        "text": "Okay, bet time!! Loser buys drinks!!"
+        "text": "All right, another bet. Loser buys the drinks!"
     },
     "date_dain_arcade_2_b": {
         "name": "{name}",
@@ -281,19 +281,19 @@
     },
     "date_dain_arcade_3": {
         "name": "Dain",
-        "text": "It's no fun without stakes!!"
+        "text": "It's no fun without stakes!"
     },
     "date_dain_arcade_3_b": {
         "name": "{name}",
-        "text": "*Rhythm game. Dain is overwhelmingly good.*"
+        "text": "*As soon as the rhythm game starts, Dain catches the beat. Her combo never breaks before the song ends.*"
     },
     "date_dain_arcade_3_c": {
         "name": "Dain",
-        "text": "*Full combo!! Did you see that?!*"
+        "text": "*She jumps to her feet.* Full combo! Did you see that?"
     },
     "date_dain_rhythm": {
         "name": "Dain",
-        "text": "*Pointing at the screen* This score — it's the second highest ever!!"
+        "text": "*She points at the screen.* This score is the second highest ever!"
     },
     "date_dain_rhythm_2": {
         "name": "{name}",
@@ -305,11 +305,11 @@
     },
     "date_dain_knee": {
         "name": "{name}",
-        "text": "*'Because I don't have to use my knees.' Dain says with a smile, but takes a look at his knees reflected in the window glass.*"
+        "text": "*'Because I don't have to use my knees.' Dain says it with a smile, but glances once at her knee reflected in the glass.*"
     },
     "date_dain_knee_2": {
         "name": "{name}",
-        "text": "*We step out of the arcade onto the street. We pass a sporting goods store. Dain stops in front of the display window. Volleyball shoes.*"
+        "text": "*We step out of the arcade and pass a sporting goods store. Dain stops at the display window, where a pair of volleyball shoes is on display.*"
     },
     "date_dain_shop": {
         "name": "Dain",
@@ -321,15 +321,15 @@
     },
     "date_dain_shop_2_b": {
         "name": "Dain",
-        "text": "*Turning away* It's nothing! Let's go!"
+        "text": "*She turns away.* It's nothing! Let's go!"
     },
     "date_dain_shop_3": {
         "name": "Dain",
-        "text": "*Pulling her cap lower* ...Don't stare."
+        "text": "*She pulls her cap lower.* ...Don't stare."
     },
     "date_dain_shop_3_b": {
         "name": "Dain",
-        "text": "*From under her cap* ...Say that one more time and I'll seriously hit you."
+        "text": "*From beneath her cap* ...Say that one more time and I'll hit you."
     },
     "date_dain_end": {
         "name": "{name}",
@@ -341,7 +341,7 @@
     },
     "date_dain_end_c": {
         "name": "Dain",
-        "text": "Today was really fun. ...Without the exclamation mark."
+        "text": "I had fun today. ...I mean it."
     },
     "pre_confess_minsu": {
         "name": "Minsu",
@@ -349,7 +349,7 @@
     },
     "pre_confess_minsu_2": {
         "name": "Minsu",
-        "text": "do it right this time. don't run"
+        "text": "don't dodge it. do it properly"
     },
     "pre_confess_callback": {
         "name": "{name}",

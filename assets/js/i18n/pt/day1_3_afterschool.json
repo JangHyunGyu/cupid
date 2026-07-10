@@ -17,7 +17,7 @@
     },
     "after_kakao_end": {
         "name": "{name}",
-        "text": "*Pego o celular de novo e saio do grupo. No topo da lista de conversas, só resta o mensageiro da escola nova.*"
+        "text": "*Pego o celular de novo e saio do grupo. No topo da lista de conversas, só resta o chat da escola nova.*"
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
@@ -69,11 +69,11 @@
     },
     "after1_jealousy_yuna_1": {
         "name": "Dain",
-        "text": "Tu foi na biblioteca no almoço? Com a Yuna?"
+        "text": "Você foi à biblioteca no almoço? Com a Yuna?"
     },
     "after1_jealousy_yuna_2": {
         "name": "Dain",
-        "text": "...Ela normalmente não chega em ninguém."
+        "text": "...Ela normalmente não anda com ninguém."
     },
     "after1_pre_miss": {
         "name": "{name}",
@@ -106,7 +106,7 @@
     },
     "after_miss_dain_6_b": {
         "name": "{name}",
-        "text": "*Acene com as mãos e corra. Ao parar repentinamente, segure o joelho direito e solte imediatamente a mão.*"
+        "text": "*Sai correndo enquanto acena. Ao frear de repente, segura o joelho direito, mas solta na mesma hora.*"
     },
     "after_miss_dain_7": {
         "name": "{name}",
@@ -204,7 +204,7 @@
     },
     "after_hidden_homeroom_4": {
         "name": "Professora",
-        "text": "Não fez nada de errado. — Transferido é assim mesmo. E aí, adaptação?"
+        "text": "Você não fez nada de errado. — Como é novo, eu queria saber: como está se adaptando?"
     },
     "after_hidden_homeroom_choice": {
         "name": "Professora",
@@ -216,7 +216,7 @@
     },
     "after_homeroom_ok": {
         "name": "Professora",
-        "text": "É? — Se bater alguma coisa, passa na sala dos professores. Sempre tem papelada de desculpa."
+        "text": "É? — Se surgir algum problema, passa na sala dos professores. Nem que seja com a papelada como desculpa."
     },
     "after_homeroom_ok_b": {
         "name": "Professora",
@@ -228,7 +228,7 @@
     },
     "after_homeroom_ok_4": {
         "name": "Professora",
-        "text": "*O professor da sala olha para os documentos, mas o final da prancheta não se move mais.*"
+        "text": "*A professora olha para os documentos, mas a ponta da prancheta não se move mais.*"
     },
     "after_homeroom_ok_5": {
         "name": "Professora",
@@ -236,7 +236,7 @@
     },
     "after_homeroom_ok_6": {
         "name": "Professora",
-        "text": "*O professor da sala se volta para a mesa novamente. Diga olá brevemente e feche a porta do escritório. A história das máquinas de venda automática de sucos permanece em meus ouvidos.*"
+        "text": "*A professora volta a se virar para a mesa. Eu me despeço brevemente e fecho a porta da sala dos professores.*"
     },
     "after_homeroom_honest_1": {
         "name": "Professora",
@@ -244,7 +244,7 @@
     },
     "after_homeroom_honest_2": {
         "name": "{name}",
-        "text": "A senhora já transferiu de escola?"
+        "text": "A senhora também já mudou de escola?"
     },
     "after_homeroom_honest_3": {
         "name": "Professora",
@@ -362,7 +362,7 @@
     },
     "after_nurse_enter_4_c": {
         "name": "Enfermeira",
-        "text": "O uniforme tá duro de tão novo. E cheira a goma. *Funga* Ah, tem cheiro de cerejeira misturado também. Transferido romântico."
+        "text": "O uniforme ainda está duro. Tem cheiro de grama e até pétala de cerejeira grudada. Dá pra ver que é seu primeiro dia."
     },
     "after_nurse_enter_4_d": {
         "name": "Enfermeira",
@@ -390,7 +390,7 @@
     },
     "after_nurse_enter_7_c": {
         "name": "Enfermeira",
-        "text": "*Fecha a cortina até a metade* Quer água? Ou uma coisa quente?"
+        "text": "*Fecha a cortina até a metade.* Quer água? Ou algo quente?"
     },
     "after_nurse_enter_7_d": {
         "name": "{name}",
@@ -458,11 +458,11 @@
     },
     "after_nurse_enter_11": {
         "name": "Enfermeira",
-        "text": "Se você sentir tontura novamente, volte. Porque a sala de saúde está sempre aberta. Em vez disso, segure-se e não chegue atrasado. Eu poderia repreendê-lo primeiro."
+        "text": "Se sentir tontura de novo, volta. A enfermaria está sempre aberta. Só não fica aguentando até piorar. Posso acabar te dando uma bronca antes de cuidar de você."
     },
     "after_nurse_enter_11_b": {
         "name": "{name}",
-        "text": "Preocupa como?"
+        "text": "Ficou preocupada?"
     },
     "after_nurse_enter_11_c": {
         "name": "Enfermeira",
@@ -470,7 +470,7 @@
     },
     "after_nurse_enter_11_d": {
         "name": "Enfermeira",
-        "text": "*A enfermeira coloca o copo d'água na mesa. O fundo do copo soa baixo.*"
+        "text": "*A enfermeira pousa o copo d'água na mesa. O fundo bate na madeira com um som baixo.*"
     },
     "after_nurse_enter_11_e": {
         "name": "Enfermeira",
@@ -514,7 +514,7 @@
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*Sorria levemente e acene. Olhe para as costas da sua mão com a faixa. O cheiro de desinfetante permanece em você por mais tempo do que o esperado.*"
+        "text": "*Eu me despeço brevemente e saio da enfermaria. O cheiro de desinfetante me acompanha até o corredor.*"
     },
     "after_nurse_freetalk": {
         "name": "Enfermeira",

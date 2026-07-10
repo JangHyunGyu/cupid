@@ -17,7 +17,7 @@
     },
     "after_kakao_end": {
         "name": "{name}",
-        "text": "*Vuelvo a sacar el móvil y salgo del grupo. En la parte superior de la lista solo queda el mensajero de la nueva escuela.*"
+        "text": "*Vuelvo a sacar el móvil y salgo del grupo. En la parte superior de la lista solo queda el chat de la nueva escuela.*"
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
@@ -82,7 +82,7 @@
     "after_dain_skip": {},
     "after_miss_dain_1": {
         "name": "{name}",
-        "text": "*Caminando por el pasillo cuando escucho pasos pesados detrás de mí.*"
+        "text": "*Camino por el pasillo cuando oigo unas pisadas fuertes a mi espalda.*"
     },
     "after_miss_dain_2": {
         "name": "Dain",
@@ -90,7 +90,7 @@
     },
     "after_miss_dain_3": {
         "name": "{name}",
-        "text": "*Me esquivo por reflejo. Dain pasa rozando a mi lado. Corriendo y luego un frenazo.*"
+        "text": "*Me aparto por reflejo. Dain pasa rozándome y frena de golpe unos pasos más allá.*"
     },
     "after_miss_dain_4": {
         "name": "Dain",
@@ -106,7 +106,7 @@
     },
     "after_miss_dain_6_b": {
         "name": "{name}",
-        "text": "*Mueve las manos y corre. Cuando te detengas repentinamente, toma tu rodilla derecha y suelta inmediatamente tu mano.*"
+        "text": "*Se aleja corriendo mientras agita la mano. Al frenar de golpe, se agarra la rodilla derecha, pero enseguida la suelta.*"
     },
     "after_miss_dain_7": {
         "name": "{name}",
@@ -127,7 +127,7 @@
     },
     "after_miss_yuna_2": {
         "name": "Yuna",
-        "text": "*Abre la esquina del marcapáginas con el pulgar y lo sostiene contra la luz. Sin pliegues.*"
+        "text": "*Alisa con el pulgar la esquina del marcapáginas y lo sostiene a contraluz. Ni una arruga.*"
     },
     "after_miss_yuna_3": {
         "name": "Yuna",
@@ -177,7 +177,7 @@
         "name": "{name}",
         "text": "*Se va con una sonrisa.*",
         "choices": [
-            "Oficina",
+            "Sala de profesores",
             "Enfermería",
             "Ir a casa"
         ]
@@ -228,7 +228,7 @@
     },
     "after_homeroom_ok_4": {
         "name": "Profesora",
-        "text": "*El profesor titular mira los documentos, pero el extremo del portapapeles ya no se mueve.*"
+        "text": "*La tutora mira los documentos, pero el extremo del portapapeles ya no se mueve.*"
     },
     "after_homeroom_ok_5": {
         "name": "Profesora",
@@ -236,7 +236,7 @@
     },
     "after_homeroom_ok_6": {
         "name": "Profesora",
-        "text": "*La profesora titular se gira nuevamente hacia el escritorio. Saluda brevemente y cierra la puerta de la oficina. La historia del jugo de la máquina expendedora perdura en mis oídos.*"
+        "text": "*La profesora vuelve a girarse hacia el escritorio. Me despido brevemente y cierro la puerta de la sala de profesores.*"
     },
     "after_homeroom_honest_1": {
         "name": "Profesora",
@@ -362,7 +362,7 @@
     },
     "after_nurse_enter_4_c": {
         "name": "Enfermera",
-        "text": "El uniforme lo llevas tieso. Y huele a hierba. *Olfatea* Ah, y se cuela olor a cerezos. Qué nuevo tan romántico."
+        "text": "El uniforme aún está tieso. Huele a hierba y llevas pétalos de cerezo pegados. Se nota que es tu primer día."
     },
     "after_nurse_enter_4_d": {
         "name": "Enfermera",
@@ -458,7 +458,7 @@
     },
     "after_nurse_enter_11": {
         "name": "Enfermera",
-        "text": "Si vuelve a sentirse mareado, regrese. Porque la sala de salud está siempre abierta. En lugar de eso, reprime y no llegues tarde. Podría regañarte primero."
+        "text": "Si vuelves a marearte, ven. La enfermería siempre está abierta. Eso sí, no te aguantes hasta que sea demasiado tarde. Podría regañarte antes de atenderte."
     },
     "after_nurse_enter_11_b": {
         "name": "{name}",
@@ -470,7 +470,7 @@
     },
     "after_nurse_enter_11_d": {
         "name": "Enfermera",
-        "text": "*La enfermera deja el vaso de agua sobre el escritorio. El fondo del vaso suena bajo.*"
+        "text": "*La enfermera deja el vaso de agua sobre el escritorio. El fondo golpea la madera con un sonido suave.*"
     },
     "after_nurse_enter_11_e": {
         "name": "Enfermera",
@@ -514,7 +514,7 @@
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*Sonríe levemente y saluda. Mire el dorso de su mano con la banda puesta. El olor a desinfectante permanece contigo más tiempo del esperado.*"
+        "text": "*Me despido brevemente y salgo de la enfermería. El olor a desinfectante me sigue hasta el pasillo.*"
     },
     "after_nurse_freetalk": {
         "name": "Enfermera",

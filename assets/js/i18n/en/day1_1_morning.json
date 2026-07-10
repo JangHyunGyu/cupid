@@ -1,11 +1,11 @@
 {
     "start": {
         "name": "{name}",
-        "text": "*april. Cherry blossoms are fluttering. The school uniform is still stiff. There is a faint smell of grass. The transfer document is folded and pressed in the bag.*"
+        "text": "*Outside the school gates in April. Crushed petals cling to the pavement here and there. The creases in my new uniform still run across the elbows, and my transfer papers lie pressed flat inside my bag.*"
     },
     "start_3": {
         "name": "{name}",
-        "text": "*My phone buzzes in my pocket. The group chat from my old school. I see the name on the screen — and slip it back into my pocket. Not yet.*"
+        "text": "*My phone buzzes in my pocket. It's the group chat from my old school. A familiar name is on the screen. I stare at it for a moment, then put the phone away.*"
     },
     "name_input_scene": {
         "name": "System",
@@ -13,7 +13,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*In front of the unfamiliar school gate. Only my school uniform still has fold lines. Next to the school gate, a female student with long black hair adjusts her glasses and checks the time. When I stop, she looks up too.*"
+        "text": "*An unfamiliar school gate. Mine is the only uniform with sharp creases still pressed into it. Beside the gate, a girl with long black hair adjusts her glasses and checks the time. When I stop, she looks up.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -21,7 +21,7 @@
     },
     "seoyeon_meet_2": {
         "name": "Seoyeon",
-        "text": "*She checks {name}'s name once more and makes a short mark on the clipboard list. Her gaze does not immediately drop from behind her glasses.*"
+        "text": "*She confirms {name}'s name once more and checks it off on her clipboard. Then she studies {name} for another moment over her glasses.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",
@@ -29,11 +29,11 @@
     },
     "seoyeon_meet_4": {
         "name": "Seoyeon",
-        "text": "Student council president. New transfers are on me."
+        "text": "I'm the student council president. Showing transfer students around is my job."
     },
     "seoyeon_meet_5": {
         "name": "Seoyeon",
-        "text": "Follow me. I'll show you around."
+        "text": "Come on. I'll have this done in fifteen minutes."
     },
     "seoyeon_meet_6": {
         "name": "{name}",
@@ -45,7 +45,7 @@
     },
     "seoyeon_meet_8": {
         "name": "{name}",
-        "text": "*She smirks. Without thinking, I'm smiling too. Seoyeon waves me toward the gate.*"
+        "text": "*A laugh slips out before I can stop it. Seoyeon is already walking through the gate.*"
     },
     "seoyeon_choice": {
         "name": "{name}",
@@ -58,7 +58,7 @@
     },
     "choice_dismiss_1": {
         "name": "Seoyeon",
-        "text": "*Her steps stop. Only her head turns toward {name}.*"
+        "text": "*She stops and turns only her head toward {name}.*"
     },
     "choice_dismiss_2": {
         "name": "Seoyeon",
@@ -70,7 +70,7 @@
     },
     "choice_flirt_1": {
         "name": "Seoyeon",
-        "text": "*She stops walking and turns around. Not surprised — more amused.*"
+        "text": "*She stops and looks back. Her eyes curve slightly behind her glasses.*"
     },
     "choice_flirt_2": {
         "name": "Seoyeon",
@@ -82,7 +82,7 @@
     },
     "choice_flirt_4": {
         "name": "Seoyeon",
-        "text": "Must be a transfer kid thing — can't read a room at all. I kinda like it."
+        "text": "Looks like you still haven't read the room. I don't hate it."
     },
     "choice_flirt_5": {
         "name": "{name}",
@@ -94,7 +94,7 @@
     },
     "choice_flirt_7": {
         "name": "Seoyeon",
-        "text": "*She walks ahead. She looks back once, and when {name}'s footsteps draw closer, she does not slow down.*"
+        "text": "*She walks on ahead and glances back once. When {name}'s footsteps draw closer, she keeps the same pace.*"
     },
     "choice_joke_1": {
         "name": "Seoyeon",
@@ -110,7 +110,7 @@
     },
     "hallway_1": {
         "name": "Seoyeon",
-        "text": "*She walked ahead through the hallway. Students greeted her as she passed. She acknowledged each one with a light tap of her clipboard, never slowing her pace.*"
+        "text": "*She leads the way down the hall. Students greet her first as they pass, and Seoyeon acknowledges each one with a light nod.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
@@ -130,11 +130,11 @@
     },
     "hallway_6_b": {
         "name": "Seoyeon",
-        "text": "*A brief pause* ...Sharp."
+        "text": "*The key ring goes still in her hand.* ...Sharp."
     },
     "hallway_6_c": {
         "name": "Seoyeon",
-        "text": "*The edge of the clipboard moves again one beat later.*"
+        "text": "*Instead of answering, she slips the key back into her pocket.*"
     },
     "hallway_7": {
         "name": "Seoyeon",
@@ -142,7 +142,7 @@
     },
     "hallway_8": {
         "name": "{name}",
-        "text": "*So now I have lunch plans. I don't remember agreeing to that. We stop in front of the classroom.*"
+        "text": "*Seoyeon stops outside a classroom and points to the sign beside the door.*"
     },
     "hallway_10": {
         "name": "Seoyeon",
@@ -162,15 +162,15 @@
     },
     "hallway_13_b": {
         "name": "{name}",
-        "text": "*Her back was straight. Only her fingers moved, tapping the edge of the clipboard in a steady rhythm.*"
+        "text": "*Her stride never falters, all the way to the end of the hall.*"
     },
     "classroom_1": {
         "name": "{name}",
-        "text": "*I push the door open. Every head turns. I knew it was coming, but thirty stares hit heavier than I expected.*"
+        "text": "*I open the classroom door. Every eye turns toward me.*"
     },
     "classroom_2_b": {
         "name": "{name}",
-        "text": "*The homeroom teacher stands at the podium. Late twenties. Her cardigan hangs open from the start. Her expression is indifferent, but — her eyes are scanning each student one by one.*"
+        "text": "*The homeroom teacher stands at the front of the room, attendance book in hand. She's in her late twenties, with a few buttons of her cardigan undone.*"
     },
     "classroom_3": {
         "name": "Homeroom Teacher",
@@ -178,7 +178,7 @@
     },
     "classroom_3_b": {
         "name": "{name}",
-        "text": "{name}. Nice to meet you all. *Short and clean. The teacher nods.*"
+        "text": "I'm {name}. Nice to meet you all. *The teacher nods.*"
     },
     "classroom_5_b": {
         "name": "Homeroom Teacher",
@@ -190,11 +190,11 @@
     },
     "classroom_dain_1": {
         "name": "Dain",
-        "text": "Ohhh! A new guy! Finally, a fresh recruit!"
+        "text": "Oh, a transfer student! A new face in our class!"
     },
     "classroom_dain_2": {
         "name": "{name}",
-        "text": "*Short brown hair. Volleyball team jersey. A voice loud enough to fill the room. She's halfway out of her seat — and the girl next to her is trying to pull her back down, but it's not working.*"
+        "text": "*Short brown hair and a volleyball uniform. She half rises from her seat and waves. The girl beside her tugs at her sleeve, but it's already too late.*"
     },
     "classroom_dain_3": {
         "name": "Homeroom Teacher",
@@ -206,11 +206,11 @@
     },
     "classroom_dain_5": {
         "name": "{name}",
-        "text": "*She's the type with no volume control.*"
+        "text": "*Laughter breaks out around the room. Dain waves even higher.*"
     },
     "classroom_dain_5_b": {
         "name": "Homeroom Teacher",
-        "text": "*The homeroom teacher let out a small sigh. She tapped the corner of the attendance book and moved on to the next name without even glancing at Dain.*"
+        "text": "*The homeroom teacher lets out a small sigh. She taps the corner of the attendance book and looks for the next name without even glancing at Dain.*"
     },
     "classroom_dain_5_c": {
         "name": "Homeroom Teacher",
@@ -218,19 +218,19 @@
     },
     "classroom_dain_5_d": {
         "name": "Homeroom Teacher",
-        "text": "*Deadpan delivery, but the corner of her mouth is fighting a smile.*"
+        "text": "*The teacher turns the page in her attendance book.*"
     },
     "classroom_yuna_1": {
         "name": "{name}",
-        "text": "*I looked over and saw a girl at the very back by the window, chin propped on her hand, staring outside. Even as my name was being written on the board, only a page turned.*"
+        "text": "*I look over. A girl at the very back by the window rests her chin on one hand and stares outside. Even while my name goes up on the board, all she does is turn a page.*"
     },
     "classroom_yuna_2": {
         "name": "{name}",
-        "text": "*Silver-white hair. Red eyes. A tattoo on her arm. The girl in the back corner by the window kept her chin propped up, gazing outside. The desks around her were gradually emptier.*"
+        "text": "*Silver-white hair. Red eyes. Tattoos along her arms. The girl in the back corner keeps her chin propped on one hand and looks only out the window. The desks around her are conspicuously empty.*"
     },
     "classroom_yuna_4": {
         "name": "{name}",
-        "text": "*Someone in the front row whispered. '…Don't talk to her, she's scary.' Yuna turned a page. Just a little slower than before.*"
+        "text": "*Someone in the front row whispers, '...Don't talk to her. She's scary.' Yuna turns a page.*"
     },
     "classroom_seat_1": {
         "name": "Homeroom Teacher",
@@ -258,11 +258,11 @@
     },
     "classroom_dain_talk_1": {
         "name": "{name}",
-        "text": "*At least one normal person in this school. — The name on his tag says 'Minsu.'*"
+        "text": "*The name tag on the desk in front of me reads 'Minsu.' He has the look of someone who's already been through all this before.*"
     },
     "classroom_dain_talk_2": {
         "name": "{name}",
-        "text": "*The second I sit down, Dain leans way in. Personal space? Never heard of her.*"
+        "text": "*The moment I sit down, Dain leans over. The gap between our desks vanishes at once.*"
     },
     "classroom_dain_talk_3": {
         "name": "Dain",
@@ -274,7 +274,7 @@
     },
     "classroom_dain_talk_5": {
         "name": "Dain",
-        "text": "No reason! I need a receive drill partner after school! Nobody else'll serve for me!"
+        "text": "Just because. I need someone to practice receives with after school. There's nobody to serve for me."
     },
     "classroom_dain_talk_6": {
         "name": "{name}",
@@ -286,7 +286,7 @@
     },
     "classroom_dain_talk_8": {
         "name": "{name}",
-        "text": "*After 'probably,' Dain's eyes drifted toward the ball machine. A basket full of balls waited at the far end of the court.*"
+        "text": "*After 'probably,' Dain's eyes drift toward the ball machine. A basket full of balls waits at the far end of the court.*"
     },
     "classroom_yuna_note_1": {
         "name": "{name}",
@@ -298,7 +298,7 @@
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
-        "text": "*I looked toward Yuna — still gazing out the window. Only her fingertips had slipped below the desk. Right where the note had been.*"
+        "text": "*I look toward Yuna. Her gaze is still fixed outside, but one hand rests below the desk, right where the note came from.*"
     },
     "classroom_yuna_note_6": {
         "name": "{name}",

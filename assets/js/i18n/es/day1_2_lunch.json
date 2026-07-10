@@ -46,7 +46,7 @@
     },
     "lunch_seo_2": {
         "name": "{name}",
-        "text": "*La azotea está limpia. Cada maceta aún tiene restos de humedad, y las sillas plegables están apoyadas contra la pared a intervalos iguales.*"
+        "text": "*La azotea está limpia. La tierra de las macetas aún conserva algo de humedad, y las sillas plegables están apoyadas contra la pared a intervalos regulares.*"
     },
     "lunch_seo_3": {
         "name": "Seoyeon",
@@ -102,7 +102,7 @@
     },
     "lunch_seo_17": {
         "name": "Seoyeon",
-        "text": "*Come en lugar de responder. El viento es agradable. La escuela vista desde la azotea es más grande de lo que piensas.*"
+        "text": "*Come en lugar de responder. La brisa es agradable. Vista desde la azotea, la escuela parece más grande.*"
     },
     "lunch_seo_19": {
         "name": "Seoyeon",
@@ -150,7 +150,7 @@
     },
     "lunch_seo_c1_3_b": {
         "name": "{name}",
-        "text": "*La etiqueta de la botella de agua gira al alcance de tu mano. Finge que no lo sabes y levanta tus palillos.*"
+        "text": "*Una etiqueta medio despegada sigue adherida a la botella. Seoyeon vuelve a levantar los palillos.*"
     },
     "lunch_seo_c2_1": {
         "name": "Seoyeon",
@@ -260,7 +260,7 @@
     },
     "lunch_dain_16": {
         "name": "Dain",
-        "text": "*mordiendo el pan* Oye, ¿en serio no haces deporte?"
+        "text": "*Parte el pan con las manos.* Oye, ¿en serio no haces deporte?"
     },
     "lunch_dain_17": {
         "name": "{name}",
@@ -272,7 +272,7 @@
     },
     "lunch_dain_19": {
         "name": "{name}",
-        "text": "Pensé que era autopromoción."
+        "text": "Pensé que estabas presumiendo."
     },
     "lunch_dain_20": {
         "name": "Dain",
@@ -342,7 +342,7 @@
     },
     "lunch_yuna_1_aff_default": {
         "name": "Yuna",
-        "text": "*\"...\" Está sentada sin ninguna nota.*"
+        "text": "*\"…\" Se limita a sentarse. Esta vez no hay ninguna nota.*"
     },
     "lunch_yuna_2": {
         "name": "Yuna",

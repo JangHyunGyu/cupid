@@ -1,12 +1,12 @@
 {
     "morning5_start": {
         "name": "{name}",
-        "text": "*Fifth day. It's Sunday, but there's a school event. School uniforms have become more comfortable. Sleeve ends no longer scratch your wrists.*"
+        "text": "*Day five. It's Sunday, but there's a school event. The cuff of my uniform no longer scratches my wrist.*"
     },
     "morning5_start_branch": {},
     "morning5_start_b": {
         "name": "{name}",
-        "text": "*The moment I step into the classroom, attention comes from three directions. A note on my desk, a ribbon tied to a gym uniform string, one notification on my lock screen.*"
+        "text": "*The moment I step into the classroom, three things catch my eye at once: a note on my desk, a ribbon tied to a gym-uniform drawstring, and a notification on my lock screen.*"
     },
     "morning5_start_2_b": {
         "name": "{name}",
@@ -70,7 +70,7 @@
     },
     "morning5_dain_1": {
         "name": "Dain",
-        "text": "YO! I signed you up as my partner for today's sports event!"
+        "text": "Hey! I put you down as my partner for today's sports event."
     },
     "morning5_dain_1_b": {
         "name": "{name}",
@@ -78,24 +78,24 @@
     },
     "morning5_dain_2": {
         "name": "Dain",
-        "text": "Bail on me and I will be SO mad."
+        "text": "If you're late, I'll be mad."
     },
     "morning5_committed_start": {},
     "morning5_committed_seo": {
         "name": "{name}",
-        "text": "*There's no new note on my desk. Instead, the look in Seoyeon's eyes from the rooftop yesterday is still vivid. Yuna and Dain only say a few short things about getting ready for the event.*"
+        "text": "*There's no new note on my desk. Seoyeon's clipboard is tucked against her arm as always. Yuna and Dain exchange only a few words with me about the event preparations.*"
     },
     "morning5_committed_yuna": {
         "name": "{name}",
-        "text": "*There isn't any new note. Instead, the way Yuna held my gaze a little too long yesterday is still there. Seoyeon and Dain only say a few short things about getting ready for the event.*"
+        "text": "*There's no new note. Yuna keeps her bookmark tucked between the pages of her notebook. Seoyeon and Dain exchange only a few words with me about the event preparations.*"
     },
     "morning5_committed_dain": {
         "name": "{name}",
-        "text": "*Before Dain's exclamation marks, what comes back to me first is the breath that caught at the very end yesterday. Seoyeon and Yuna only say a few short things about getting ready for the event.*"
+        "text": "*Near the gym, Dain adjusts her wrist guard. Seoyeon and Yuna exchange only a few words with me about the event preparations.*"
     },
     "hidden_homeroom_d5_check": {
         "name": "{name}",
-        "text": "*Event prep time. Walking down the hallway — I pass the empty classroom. The door is open.*"
+        "text": "*During event preparations, I pass an empty classroom with its door open.*"
     },
     "hidden_homeroom_d5_1": {
         "name": "Homeroom Teacher",
@@ -195,7 +195,7 @@
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Homeroom Teacher",
-        "text": "...How did you know."
+        "text": "...Here?"
     },
     "hidden_homeroom_d5_correct_3": {
         "name": "{name}",
@@ -211,7 +211,7 @@
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Homeroom Teacher",
-        "text": "...I really can't write it. The last line."
+        "text": "...You read that far?"
     },
     "hidden_homeroom_d5_correct_7": {
         "name": "Homeroom Teacher",
@@ -295,7 +295,7 @@
     },
     "hidden_homeroom_d5_6_m": {
         "name": "Homeroom Teacher",
-        "text": "*Tucking her hair back* ...I don't accept book reports."
+        "text": "*She tucks her hair back.* ...I don't accept book reports."
     },
     "hidden_homeroom_d5_6_n": {
         "name": "{name}",
@@ -303,7 +303,7 @@
     },
     "hidden_homeroom_d5_6_o": {
         "name": "Homeroom Teacher",
-        "text": "*With a small laugh* ...Right. At least write one line."
+        "text": "*She gives a small laugh.* ...Right. At least write one line."
     },
     "hidden_homeroom_d5_6_p": {
         "name": "Homeroom Teacher",
@@ -349,7 +349,7 @@
     },
     "hidden_nurse_d5_check": {
         "name": "{name}",
-        "text": "*Break during the event. Passing by the nurse's office.*"
+        "text": "*During a break in the event, I pass the nurse's office.*"
     },
     "hidden_nurse_d5_1": {
         "name": "School Nurse",
@@ -413,7 +413,7 @@
     },
     "hidden_nurse_d5_3_h": {
         "name": "School Nurse",
-        "text": "*The school nurse turns to go back inside — and stops.*"
+        "text": "*I start to step into the nurse's office — then stop.*"
     },
     "hidden_nurse_d5_3_i": {
         "name": "School Nurse",

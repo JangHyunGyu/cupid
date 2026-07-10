@@ -1,7 +1,7 @@
 {
     "night2_start": {
         "name": "{name}",
-        "text": "*Zu Hause. Geduscht und ins Bett gelegt — da prasseln die Messenger-Benachrichtigungen herein. Drei Leute. Gleichzeitig.*"
+        "text": "*Wieder zu Hause. Ich habe geduscht und liege im Bett, als die Messenger-Benachrichtigungen hereinprasseln. Drei Leute. Gleichzeitig.*"
     },
     "night2_msg_1": {
         "name": "{name}",
@@ -9,11 +9,11 @@
     },
     "night2_msg_dain_specific": {
         "name": "Dain",
-        "text": "Hey!! Das Tteokbokki heute war der Hammer!!"
+        "text": "Hey, das Tteokbokki heute war richtig gut!"
     },
     "night2_msg_dain_specific_2": {
         "name": "Dain",
-        "text": "Morgen wetten wir wieder!! Andere Disziplin!!"
+        "text": "Morgen wetten wir wieder! Diesmal in einer anderen Disziplin!"
     },
     "night2_msg_seo_general": {
         "name": "Seoyeon",
@@ -33,7 +33,7 @@
     },
     "night2_msg_yuna_specific_2": {
         "name": "Yuna",
-        "text": "...Spiel es mir irgendwann nochmal vor"
+        "text": "...Lass es mich nächstes Mal noch einmal hören"
     },
     "night2_msg_dain_general": {
         "name": "Dain",
@@ -41,7 +41,7 @@
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
-        "text": "Willst du mittags aufs Dach kommen? Der Wind wird schön sein"
+        "text": "Willst du mittags aufs Dach kommen? Der Wind wird angenehm"
     },
     "night2_msg_seo_general_alt": {
         "name": "Seoyeon",
@@ -49,11 +49,11 @@
     },
     "night2_msg_yuna_general": {
         "name": "Yuna",
-        "text": "...kommst du morgen zum Nebengebäude?"
+        "text": "...Kommst du morgen in den Bibliotheksanbau?"
     },
     "night2_msg_generic": {
         "name": "Dain",
-        "text": "Hey!! Morgen Kiosk, ja?!"
+        "text": "Hey, morgen gehen wir zum Schulkiosk, ja?"
     },
     "night2_msg_generic_2": {
         "name": "Seoyeon",
@@ -61,7 +61,7 @@
     },
     "night2_msg_generic_3": {
         "name": "Yuna",
-        "text": "...Das Buch, hast du es fertig gelesen?"
+        "text": "...Hast du das Buch schon zu Ende gelesen?"
     },
     "night2_msg_7": {
         "name": "{name}",
@@ -86,11 +86,11 @@
     },
     "night2_reply_dain_3": {
         "name": "Dain",
-        "text": "Morgen bestellen wir mildes!!"
+        "text": "Morgen nehmen wir die milde Variante!"
     },
     "night2_reply_dain_4": {
         "name": "Dain",
-        "text": "Ah warte mildes Tteokbokki ist kein richtiges Tteokbokki hahaha"
+        "text": "Aber Moment, mildes Tteokbokki ist doch kein richtiges Tteokbokki, haha"
     },
     "night2_reply_dain_5": {
         "name": "{name}",
@@ -98,7 +98,7 @@
     },
     "night2_reply_dain_react_high": {
         "name": "Dain",
-        "text": "Alter hahaha. Du MUSST morgen in die Turnhalle kommen!!"
+        "text": "Hey, ernsthaft, was bist du eigentlich für einer? Morgen kommst du unbedingt in die Turnhalle!"
     },
     "night2_reply_dain_react_default": {
         "name": "Dain",
@@ -110,19 +110,19 @@
     },
     "night2_reply_seo_2": {
         "name": "Seoyeon",
-        "text": "Du gibst aber schnell Versprechen"
+        "text": "Du machst solche Versprechen aber leichtfertig"
     },
     "night2_reply_seo_3": {
         "name": "{name}",
-        "text": "Ist ja nur ein leichtes Versprechen"
+        "text": "Es ist doch ein einfaches Versprechen"
     },
     "night2_reply_seo_4": {
         "name": "Seoyeon",
-        "text": "Ich lass das Dach mittags offen. Komm diesmal wirklich"
+        "text": "Ich lasse das Dach mittags offen. Komm nicht zu spät"
     },
     "night2_reply_seo_5": {
         "name": "{name}",
-        "text": "*'Diesmal komm wirklich.' — Ein Ton, der Konsequenzen verspricht.*"
+        "text": "*Damit beendet Seoyeon den Chat.*"
     },
     "night2_reply_seo_react_high": {
         "name": "Seoyeon",
@@ -142,7 +142,7 @@
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
-        "text": "*Kurze Stille. — Und dann.*"
+        "text": "*Das Antwortfeld bleibt eine Weile leer. Dann erscheint eine neue Sprechblase.*"
     },
     "night2_reply_yuna_4": {
         "name": "Yuna",
@@ -170,7 +170,7 @@
     },
     "night2_reply_yuna_react_high": {
         "name": "Yuna",
-        "text": "...Wenn du alles gehört hast, sag mir morgen, wie du es fandest. Kommst du ins Nebengebäude?"
+        "text": "...Wenn du alles gehört hast, sag mir morgen, wie du es fandest. Kommst du in den Bibliotheksanbau?"
     },
     "night2_reply_yuna_react_default": {
         "name": "Yuna",
@@ -178,7 +178,7 @@
     },
     "night2_hidden_check": {
         "name": "{name}",
-        "text": "*Zwischen den Chat-Benachrichtigungen — fallen mir weitere Meldungen auf.*"
+        "text": "*Zwischen den Chat-Benachrichtigungen entdecke ich noch eine weitere Meldung.*"
     },
     "night2_hidden_homeroom_1": {
         "name": "{name}",
@@ -194,7 +194,7 @@
     },
     "night2_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Meldung der Gesundheits-App: ‚Krankenstationsakte: Neuer Schüler — Schürfwunde am Ellbogen (leicht). Pflaster bis morgen früh trocken halten. Wenn es sich löst oder Blut durchsickert, auf der Krankenstation wechseln lassen.‘*"
+        "text": "*Meldung der Gesundheits-App: ‚Eintrag des Krankenzimmers: Neuer Schüler — leichte Schürfwunde am Ellbogen. Pflaster bis morgen früh trocken halten. Wenn es sich löst oder Blut durchsickert, im Krankenzimmer wechseln lassen.‘*"
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",
@@ -206,23 +206,23 @@
     },
     "night2_flashback_1": {
         "name": "{name}",
-        "text": "*Was Minsu gesagt hat, kommt immer wieder. 'Seoyeon, Dain, Yuna. Alle drei lächeln dich an.'*"
+        "text": "*Minsus Worte kehren immer wieder zurück: ‚Seoyeon, Dain, Yuna. Alle drei lächeln dich an.‘*"
     },
     "night2_flashback_2": {
         "name": "{name}",
-        "text": "*Ich scrollte eine Weile runter. Ausflugsfoto von vor drei Monaten. Sojeong lächelt neben mir. In den Fotos danach ist Sojeongs Schreibtisch Stück für Stück nach hinten gerückt. Als hätte jemand es absichtlich zugeschnitten, damit das Graffiti nicht zu sehen ist.*"
+        "text": "*Ich scrolle weit nach unten. Ein Ausflugsfoto von vor drei Monaten. Sojeong lächelt neben mir. Auf den folgenden Bildern steht ihr Tisch immer weiter hinten; der untere Teil mit dem Gekritzel ist abgeschnitten.*"
     },
     "night2_flashback_3": {
         "name": "{name}",
-        "text": "*Im Notizblock sind noch Reihen mit nicht gesendeten Sätzen übrig. 'Ich mag dich.' „Lehrer, Sojung ist am Schreibtisch –“ „Heute auch –“ In der ersten Zeile wurde alles abgeschnitten. Zuletzt geändert um 02:17 Uhr.*"
+        "text": "*Im Notizblock stehen noch etliche nie verschickte Sätze. ‚Frau Lehrerin, an Sojeongs Tisch—‘ ‚Heute auch—‘ Jeder bricht schon in der ersten Zeile ab. Zuletzt bearbeitet um 2:17 Uhr.*"
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*Unter der 38. Notiz steht nichts. Nur der Titel der 39. ist leer. Am nächsten Tag blieb Sojungs Platz bis zum Schluss leer. Die Klassenlehrerin sagte lediglich, Sojung sei umgezogen.*"
+        "text": "*Unter der 38. Notiz steht nichts mehr. Nur der Titel der 39. ist leer. Am nächsten Tag bleibt Sojeongs Platz bis zum Schluss leer. Die Klassenlehrerin sagt lediglich, Sojeong habe die Schule gewechselt.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*Ich schloss die Galerie. Mein Finger hält über dem Foto-Löschen-Button an. Am Ende schalte ich den Bildschirm aus. Nur mein Gesicht bleibt auf dem schwarzen Display.*"
+        "text": "*Ich schließe die Galerie. Mein Finger verharrt über der Schaltfläche zum Löschen des Fotos. Schließlich schalte ich das Display aus.*"
     },
     "night2_flashback_8": {
         "name": "{name}",
@@ -250,10 +250,10 @@
     },
     "night2_end_4_b": {
         "name": "{name}",
-        "text": "*Ich öffnete den Kühlschrank. Übrig gebliebener Reis, Eier, Kimchi. Ich nehme die Lunchbox heraus und stelle sie auf den Tisch. Den Deckel hab ich noch nicht geöffnet.*"
+        "text": "*Ich öffne den Kühlschrank. Übrig gebliebener Reis, Eier und Gim. Ich hole die Bentobox heraus und stelle sie auf den Tisch. Den Deckel habe ich noch nicht geöffnet.*"
     },
     "night2_end_4_c": {
         "name": "{name}",
-        "text": "*Ich habe schnell eine Lunchbox zusammengestellt. Ist nicht toll. Zu grob, um es liebevoll zubereitet zu nennen. — Aber besser als nichts.*"
+        "text": "*Ich packe hastig eine Bentobox. Besonders gelungen ist sie nicht; von liebevoll zubereitet zu sprechen, wäre eher peinlich. — Aber besser als gar nichts.*"
     }
 }

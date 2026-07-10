@@ -1,7 +1,7 @@
 {
     "start": {
         "name": "{name}",
-        "text": "*abril. Las flores de cerezo revolotean. El uniforme escolar todavía está rígido. Hay un ligero olor a hierba. El documento de transferencia está doblado y prensado en la bolsa.*"
+        "text": "*Abril. Los pétalos de cerezo revolotean. El uniforme todavía está tieso. Se percibe un leve olor a hierba. Los documentos del traslado van doblados y apretados dentro de la mochila.*"
     },
     "start_3": {
         "name": "{name}",
@@ -13,7 +13,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*Frente a la puerta desconocida de la escuela. Sólo mi uniforme escolar todavía tiene líneas dobladas. Junto a la puerta de la escuela, una estudiante de largo cabello negro se ajusta las gafas y mira la hora. Cuando me detengo, ella también mira hacia arriba.*"
+        "text": "*Me detengo frente al portón de una escuela desconocida. Solo mi uniforme conserva aún las marcas de los dobleces. Junto al portón, una alumna de largo cabello negro se ajusta las gafas y mira la hora. Cuando me paro, ella también levanta la vista.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -37,7 +37,7 @@
     },
     "seoyeon_meet_6": {
         "name": "{name}",
-        "text": "¿La presidenta en persona? Es demasiado para mí."
+        "text": "¿La presidenta en persona? Qué honor."
     },
     "seoyeon_meet_7": {
         "name": "Seoyeon",
@@ -70,7 +70,7 @@
     },
     "choice_flirt_1": {
         "name": "Seoyeon",
-        "text": "*Se para y se gira. No está sorprendida — Le hace gracia.*"
+        "text": "*Se detiene y se gira. No parece sorprendida: le hace gracia.*"
     },
     "choice_flirt_2": {
         "name": "Seoyeon",
@@ -82,7 +82,7 @@
     },
     "choice_flirt_4": {
         "name": "Seoyeon",
-        "text": "Será por ser nuevo, pero no tienes ni idea de leer el ambiente. Me causas gracia."
+        "text": "Será porque eres nuevo, pero no sabes leer el ambiente. Me haces gracia."
     },
     "choice_flirt_5": {
         "name": "{name}",
@@ -90,7 +90,7 @@
     },
     "choice_flirt_6": {
         "name": "Seoyeon",
-        "text": "Todavía no sabes si es un halago o una condena."
+        "text": "Todavía no sabes si es un halago o una desgracia."
     },
     "choice_flirt_7": {
         "name": "Seoyeon",
@@ -110,7 +110,7 @@
     },
     "hallway_1": {
         "name": "Seoyeon",
-        "text": "*Iba delante por el pasillo. Los estudiantes la saludaban al pasar. Ella respondía con un ligero gesto de la carpeta, sin aminorar el paso ni una vez.*"
+        "text": "*Va delante por el pasillo. Los estudiantes la saludan al pasar. Ella responde con un leve gesto del portapapeles, sin aminorar el paso ni una sola vez.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
@@ -134,7 +134,7 @@
     },
     "hallway_6_c": {
         "name": "Seoyeon",
-        "text": "*El borde del portapapeles se mueve nuevamente un tiempo después.*"
+        "text": "*El borde del portapapeles vuelve a moverse un instante después.*"
     },
     "hallway_7": {
         "name": "Seoyeon",
@@ -170,7 +170,7 @@
     },
     "classroom_2_b": {
         "name": "{name}",
-        "text": "*La profesora está delante de la tarima. Finales de los veinte. Lleva el cárdigan abierto desde el principio. Cara indiferente, pero — los ojos van repasando a cada alumno uno por uno.*"
+        "text": "*La profesora está junto a la tarima. Rondará los veintitantos. Lleva el cárdigan abierto. Su expresión es neutra, pero va repasando con la mirada a cada alumno.*"
     },
     "classroom_3": {
         "name": "Profesora",
@@ -222,11 +222,11 @@
     },
     "classroom_yuna_1": {
         "name": "{name}",
-        "text": "*Miré hacia allá: al fondo junto a la ventana, una chica con la barbilla apoyada en la mano observaba el exterior. Mientras escribían mi nombre en la pizarra, solo pasó una página.*"
+        "text": "*Miro hacia el fondo, junto a la ventana. Una chica observa el exterior con la barbilla apoyada en la mano. Mientras escriben mi nombre en la pizarra, ella se limita a pasar una página.*"
     },
     "classroom_yuna_2": {
         "name": "{name}",
-        "text": "*Pelo blanco plateado. Ojos rojos. Un tatuaje en el brazo. La chica del último asiento junto a la ventana seguía con la barbilla en la mano, mirando afuera. Los pupitres a su alrededor estaban un poco más vacíos.*"
+        "text": "*Cabello blanco plateado. Ojos rojos. Un tatuaje en el brazo. La chica del último asiento junto a la ventana sigue con la barbilla apoyada en la mano, mirando afuera. Hay más espacio entre los pupitres que la rodean.*"
     },
     "classroom_yuna_4": {
         "name": "{name}",
@@ -298,7 +298,7 @@
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
-        "text": "*Miré hacia Yuna: seguía observando por la ventana. Solo las puntas de sus dedos habían bajado por debajo del pupitre. Justo en la dirección donde había estado la nota.*"
+        "text": "*Miro hacia Yuna: sigue observando por la ventana. Solo ha bajado las puntas de los dedos bajo el pupitre, justo en la dirección de la que vino la nota.*"
     },
     "classroom_yuna_note_6": {
         "name": "{name}",

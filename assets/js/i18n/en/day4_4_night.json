@@ -21,7 +21,7 @@
     },
     "wall_seo_pre_low_1": {
         "name": "{name}",
-        "text": "*Seoyeon is silent. I need to be the one to reach out first.*"
+        "text": "*Seoyeon is silent.*"
     },
     "wall_seo_pre_low_1b": {
         "name": "{name}",
@@ -41,7 +41,7 @@
     },
     "wall_seo_3": {
         "name": "{name}",
-        "text": "*Seoyeon is sitting on a park bench. The ends of my makeup are a little smudged.*"
+        "text": "*Seoyeon sits on a park bench. The edges of her makeup are slightly smudged.*"
     },
     "wall_seo_4": {
         "name": "{name}",
@@ -53,7 +53,7 @@
     },
     "wall_seo_6": {
         "name": "{name}",
-        "text": "*Sit next to me. Seoyeon is only looking ahead. The light from the streetlight hangs over the glasses.*"
+        "text": "*I sit beside her. Seoyeon looks straight ahead, the streetlight stretching across her lenses.*"
     },
     "wall_seo_7": {
         "name": "Seoyeon",
@@ -85,7 +85,7 @@
     },
     "wall_seo_10": {
         "name": "Seoyeon",
-        "text": "So at home and at school, I chose to smile. That was the easiest way not to get caught."
+        "text": "So I smiled at home and at school. It was the easiest thing to do."
     },
     "wall_seo_11": {
         "name": "Seoyeon",
@@ -101,11 +101,11 @@
     },
     "wall_seo_13": {
         "name": "Seoyeon",
-        "text": "Since then, I practiced smiling in front of the mirror. If my eyes did not smile, I did it again. And again."
+        "text": "Since then, I practiced getting my expression right in front of the mirror. If it looked wrong, I started over."
     },
     "wall_seo_14": {
         "name": "Seoyeon",
-        "text": "Every time someone praised me, that was the first thing I thought. That this was a face I had practiced in front of the mirror, over and over."
+        "text": "Whenever someone praised me, the first thing I counted was how many tries it had taken in the mirror."
     },
     "wall_seo_14_b": {
         "name": "Seoyeon",
@@ -117,19 +117,19 @@
     },
     "wall_seo_14_d": {
         "name": "{name}",
-        "text": "*Water runs from her eyes. Silently. Seoyeon starts to wipe it with the back of her hand, then stops, and just looks up.*"
+        "text": "*Tears slide down her face without a sound. Seoyeon starts to wipe them with the back of her hand, then stops and simply looks up.*"
     },
     "wall_seo_hug_choice": {
         "name": "Seoyeon",
-        "text": "*She is crying. The makeup on the back of my hand is smearing.*",
+        "text": "*She's crying. The makeup on the back of her hand smears.*",
         "choices": [
             "Hold her",
-            "Offer my pinky finger"
+            "Hold out a hand"
         ]
     },
     "wall_seo_hug_1": {
         "name": "{name}",
-        "text": "*I hold Seoyeon. She buries her face in my chest. My uniform shirt gets wet.*"
+        "text": "*I hold Seoyeon. She buries her face in my shoulder, soaking my uniform shirt.*"
     },
     "wall_seo_hug_2_b": {
         "name": "Seoyeon",
@@ -145,48 +145,48 @@
     },
     "wall_seo_pinky_1": {
         "name": "{name}",
-        "text": "*I hold out my pinky finger.*"
+        "text": "*I hold out my hand.*"
     },
     "wall_seo_pinky_2": {
         "name": "{name}",
-        "text": "When you want to cry, text me. I won't ask why."
+        "text": "Call me at night too. I won't ask questions."
     },
     "wall_seo_pinky_3": {
         "name": "Seoyeon",
-        "text": "*She stares at my pinky finger.*"
+        "text": "*Seoyeon looks down at my hand.*"
     },
     "wall_seo_pinky_4": {
         "name": "Seoyeon",
-        "text": "...Why are you like this. Why do you make promises so easily."
+        "text": "...Don't say things like that so easily."
     },
     "wall_seo_pinky_5": {
         "name": "Seoyeon",
-        "text": "Everyone says that and then disappears."
+        "text": "The person hearing them remembers."
     },
     "wall_seo_pinky_5_b": {
         "name": "{name}",
-        "text": "*The pinky that sliced through air on the first day now hooks onto mine. Seoyeon's fingertip is cold.*"
+        "text": "*Seoyeon's hand touches my palm. It's cold.*"
     },
     "wall_seo_line_choice": {
         "name": "Seoyeon",
         "text": "*She is wiping her tears, looking up at me with trembling eyes.*",
         "choices": [
-            "I like this face too. Not the practiced one.",
-            "You do not have to play any role today.",
-            "Thank you for showing me. Even the part you hid."
+            "Want a wet wipe?",
+            "Let's sit here for a minute.",
+            "You don't have to say anything."
         ]
     },
     "wall_seo_line_react_1": {
         "name": "Seoyeon",
-        "text": "...Really?"
+        "text": "...You have one?"
     },
     "wall_seo_line_react_2": {
         "name": "Seoyeon",
-        "text": "...Girlfriend?"
+        "text": "...Yeah."
     },
     "wall_seo_line_react_3": {
         "name": "Seoyeon",
-        "text": "...Thanks, I guess."
+        "text": "...Okay."
     },
     "wall_seo_line_react_3_b": {
         "name": "Seoyeon",
@@ -194,32 +194,32 @@
     },
     "wall_seo_after_line": {
         "name": "Seoyeon",
-        "text": "Is this really okay?"
+        "text": "Do you have a wet wipe?"
     },
     "wall_seo_after_line_2": {
         "name": "Seoyeon",
-        "text": "This face — it's a mess right now, isn't it? Makeup smeared, eyes swollen. — Is this really okay?"
+        "text": "*Seoyeon looks down at the back of her hand. Her makeup is smeared.*"
     },
     "wall_seo_after_line_3": {
         "name": "{name}",
-        "text": "It's okay."
+        "text": "I do."
     },
     "wall_seo_after_line_4": {
         "name": "Seoyeon",
-        "text": "*She smiles. Damp marks remain under the smudged makeup.*"
+        "text": "*She takes the wet wipe I pull from my pocket.*"
     },
     "wall_seo_after_line_4_b": {
         "name": "Seoyeon",
-        "text": "...I don't think I need a mirror today."
+        "text": "*She wipes beneath her eyes.*"
     },
     "wall_seo_after_line_5": {
         "name": "Seoyeon",
-        "text": "Being here without a practiced face feels all right today."
+        "text": "Give me one if you have one."
     },
     "wall_seo_skin_check": {},
     "wall_seo_skin70_1": {
         "name": "Seoyeon",
-        "text": "*She extends her pinky first. She doesn't stop there. She takes my hand. Presses her lips to my forehead.*"
+        "text": "*Seoyeon takes my hand. Our hands remain between us on the bench.*"
     },
     "wall_seo_skin70_3": {
         "name": "Seoyeon",
@@ -227,7 +227,7 @@
     },
     "wall_seo_skin60_1": {
         "name": "{name}",
-        "text": "*We sat side by side on the bench. Seoyeon quietly leans on your shoulder.*"
+        "text": "*We sit side by side on the bench. Seoyeon quietly leans against my shoulder.*"
     },
     "wall_seo_skin60_2": {
         "name": "Seoyeon",
@@ -235,7 +235,7 @@
     },
     "wall_seo_glimpse_1": {
         "name": "{name}",
-        "text": "*Walking home after seeing Seoyeon to her door. — I pass by the school.*"
+        "text": "*On my way home after walking Seoyeon to her door, I pass the school. An emergency light glows in the gym window.*"
     },
     "wall_seo_glimpse_2": {
         "name": "{name}",
@@ -255,7 +255,7 @@
     },
     "wall_dain_pre_high_2": {
         "name": "Dain",
-        "text": "*She is quieter than usual. The end of the voice touches the floor.*"
+        "text": "*Her voice is lower than usual.*"
     },
     "wall_dain_pre_low_1": {
         "name": "Dain",
@@ -275,7 +275,7 @@
     },
     "wall_dain_3": {
         "name": "Dain",
-        "text": "just come lol! left the gym back door open!"
+        "text": "...Just come. I left the gym's back door open."
     },
     "wall_dain_4": {
         "name": "{name}",
@@ -283,7 +283,7 @@
     },
     "wall_dain_5": {
         "name": "Dain",
-        "text": "You came?! You're late!!"
+        "text": "You're here? You're late."
     },
     "wall_dain_6": {
         "name": "{name}",
@@ -291,7 +291,7 @@
     },
     "wall_dain_7": {
         "name": "Dain",
-        "text": "I sneak in sometimes! For practice!!"
+        "text": "I sneak in sometimes. To practice."
     },
     "wall_dain_7_b": {
         "name": "Dain",
@@ -299,7 +299,7 @@
     },
     "wall_dain_8": {
         "name": "Dain",
-        "text": "Set for me!! Just once!!"
+        "text": "Set one for me. Just once."
     },
     "wall_dain_8_b": {
         "name": "{name}",
@@ -307,7 +307,7 @@
     },
     "wall_dain_9": {
         "name": "{name}",
-        "text": "*My heart drops.*"
+        "text": "*The ball rolls across the gym floor.*"
     },
     "wall_dain_10": {
         "name": "Dain",
@@ -323,7 +323,7 @@
     },
     "wall_dain_12_b": {
         "name": "Dain",
-        "text": "I said I'm fine!! Really!!"
+        "text": "I'm fine. Really."
     },
     "wall_dain_12_c": {
         "name": "{name}",
@@ -331,7 +331,7 @@
     },
     "wall_dain_13": {
         "name": "{name}",
-        "text": "*Sits next to me without saying anything. Dain closes his mouth. The gym lights hum low.*"
+        "text": "*I sit beside her without a word. Dain closes her mouth. The gym lights hum softly.*"
     },
     "wall_dain_14": {
         "name": "Dain",
@@ -347,7 +347,7 @@
     },
     "wall_dain_16": {
         "name": "Dain",
-        "text": "*She does not smile. That is the strangest part.*"
+        "text": "*Dain doesn't smile.*"
     },
     "wall_dain_16_b": {
         "name": "Dain",
@@ -379,7 +379,7 @@
     },
     "wall_dain_19_b": {
         "name": "Dain",
-        "text": "*She clutches her chest.*"
+        "text": "*She clutches the front of her uniform.*"
     },
     "wall_dain_20": {
         "name": "Dain",
@@ -387,11 +387,11 @@
     },
     "wall_dain_20_b": {
         "name": "Dain",
-        "text": "...I couldn't breathe until the end."
+        "text": "...I couldn't draw a full breath."
     },
     "wall_dain_21": {
         "name": "Dain",
-        "text": "today. When running around on a date. When I pretend to be bright next to you. My knees couldn't hold on."
+        "text": "Today too. Running around on our date. Pretending to be cheerful beside you. My knee kept giving out."
     },
     "wall_dain_22": {
         "name": "Dain",
@@ -412,7 +412,7 @@
     },
     "wall_dain_newdream_1": {
         "name": "{name}",
-        "text": "*I was just sitting next to him. Both are speechless. Only the tips of Dain's sneakers shake slowly.*"
+        "text": "*I stay seated beside her. Neither of us speaks. Only the toe of Dain's sneaker sways slowly.*"
     },
     "wall_dain_newdream_2_b": {
         "name": "Dain",
@@ -456,7 +456,7 @@
     },
     "wall_dain_cry_4": {
         "name": "Dain",
-        "text": "I set it as my phone alarm. 'Smile today!!' it says..."
+        "text": "I put it in my phone alarm. 'Smile today,' it says..."
     },
     "wall_dain_cry_5": {
         "name": "Dain",
@@ -529,7 +529,7 @@
     },
     "wall_dain_skin70_2": {
         "name": "Dain",
-        "text": "Don't let go."
+        "text": "Just stay like this for a minute."
     },
     "wall_dain_skin70_3": {
         "name": "{name}",
@@ -549,7 +549,7 @@
     },
     "wall_dain_glimpse_2": {
         "name": "{name}",
-        "text": "*It’s Yuna. sitting alone My feet stop in place. There was no message from Yuna today.*"
+        "text": "*It's Yuna, sitting alone. My feet stop. She hasn't sent me a single message today.*"
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
@@ -621,7 +621,7 @@
     },
     "wall_yuna_11": {
         "name": "Yuna",
-        "text": "It was my first time as a senior. ‘I liked your writing’ — just because of that one comment, it felt like I was in the class that day."
+        "text": "He was the first. 'I liked your writing.' — Hearing that one thing made me feel like I existed in class that day."
     },
     "wall_yuna_12": {
         "name": "Yuna",
@@ -669,19 +669,19 @@
     },
     "wall_yuna_16": {
         "name": "Yuna",
-        "text": "But you came every day. Quietly. — Without disappearing."
+        "text": "But you came every day. Quietly."
     },
     "wall_yuna_16_b": {
         "name": "Yuna",
-        "text": "*She is holding her sleeve tightly. While I catch my breath, the spine of the book is pressed into my palm.*"
+        "text": "*She grips her sleeve tightly. As she steadies her breathing, the book's spine presses into her palm.*"
     },
     "wall_yuna_choice": {
         "name": "Yuna",
         "text": "*She tightens her grip on the book. While she waits for an answer, the corner of the letter creases a little.*",
         "choices": [
-            "I'm not that senior. I'm me. But I'll still stay by your side.",
-            "Forget about him. The one in front of you right now is me.",
-            "...So you came to me because of him? As some kind of replacement?"
+            "I can't replace him. But I'm here now.",
+            "I'm listening to you right now.",
+            "...Is that why you approached me? As a substitute for him?"
         ]
     },
     "wall_yuna_moved_1": {
@@ -694,11 +694,11 @@
     },
     "wall_yuna_moved_3": {
         "name": "Yuna",
-        "text": "*She raises her head. This time, she does not look away.*"
+        "text": "*She raises her head and looks at {name}.*"
     },
     "wall_yuna_moved_4": {
         "name": "Yuna",
-        "text": "Now I see you. Just you."
+        "text": "Now I'm looking at you."
     },
     "wall_yuna_moved_5": {
         "name": "Yuna",
@@ -755,11 +755,11 @@
     },
     "wall_yuna_glimpse_1": {
         "name": "{name}",
-        "text": "*I leave the school, leaving Yuna behind. Passing the front gate.*"
+        "text": "*I leave Yuna behind and head out of the school. As I pass the front gate—*"
     },
     "wall_yuna_glimpse_2": {
         "name": "{name}",
-        "text": "*Under the streetlight in front of the school gate. Seoyeon was standing. I pick up my phone, write something, and then erase it. Write it again and erase it. The screen light only stays on the glasses.*"
+        "text": "*Seoyeon stands beneath the streetlight by the gate. She types something on her phone, deletes it, then types and deletes it again. Only her glasses hold the glow of the screen.*"
     },
     "wall_yuna_glimpse_3_b": {
         "name": "Seoyeon",
@@ -767,11 +767,11 @@
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*After not being able to leave the back of the school for a while, I returned home. The cell phone in my pocket is quiet.*"
+        "text": "*I linger behind the school for a while before going home. The phone in my pocket stays silent.*"
     },
     "day4_night_regret": {
         "name": "{name}",
-        "text": "*The sentence you entered remains in the chat window. The cursor blinks at the end.*"
+        "text": "*A half-written sentence remains in the chat box. The cursor blinks at the end.*"
     },
     "day4_night_regret_msg_branch": {
         "name": "System",

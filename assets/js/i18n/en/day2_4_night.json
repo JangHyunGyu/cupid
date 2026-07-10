@@ -1,7 +1,7 @@
 {
     "night2_start": {
         "name": "{name}",
-        "text": "*Back home. Showered, lying in bed — when — messenger notifications start pouring in. Three people. At the same time.*"
+        "text": "*Back home, I shower and lie down in bed — and messenger notifications start pouring in. Three people, all at once.*"
     },
     "night2_msg_1": {
         "name": "{name}",
@@ -9,7 +9,7 @@
     },
     "night2_msg_dain_specific": {
         "name": "Dain",
-        "text": "yo!! tteokbokki today SLAPPED!!"
+        "text": "Hey, the tteokbokki was good today!"
     },
     "night2_msg_dain_specific_2": {
         "name": "Dain",
@@ -53,7 +53,7 @@
     },
     "night2_msg_generic": {
         "name": "Dain",
-        "text": "Hey!! You're coming to the snack bar tomorrow, right?!"
+        "text": "Hey! You're coming to the snack bar tomorrow, right?"
     },
     "night2_msg_generic_2": {
         "name": "Seoyeon",
@@ -86,7 +86,7 @@
     },
     "night2_reply_dain_3": {
         "name": "Dain",
-        "text": "we'll go mild tomorrow!!"
+        "text": "We'll go mild tomorrow!"
     },
     "night2_reply_dain_4": {
         "name": "Dain",
@@ -98,7 +98,7 @@
     },
     "night2_reply_dain_react_high": {
         "name": "Dain",
-        "text": "LOL you're unreal. You HAVE to come to the gym tomorrow!!"
+        "text": "Seriously, what are you? You have to come to the gym tomorrow!"
     },
     "night2_reply_dain_react_default": {
         "name": "Dain",
@@ -118,11 +118,11 @@
     },
     "night2_reply_seo_4": {
         "name": "Seoyeon",
-        "text": "I'll leave the roof open at lunch. Actually show up this time."
+        "text": "I'll leave the rooftop open at lunch. Don't be late."
     },
     "night2_reply_seo_5": {
         "name": "{name}",
-        "text": "*'This time, really come.' — The kind of tone that comes with consequences.*"
+        "text": "*Seoyeon ends the conversation there.*"
     },
     "night2_reply_seo_react_high": {
         "name": "Seoyeon",
@@ -142,7 +142,7 @@
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
-        "text": "*A brief silence. — Then.*"
+        "text": "*The reply box stays empty for a while. Then a new message bubble appears.*"
     },
     "night2_reply_yuna_4": {
         "name": "Yuna",
@@ -178,7 +178,7 @@
     },
     "night2_hidden_check": {
         "name": "{name}",
-        "text": "*Between the messenger alerts — I spot more notifications.*"
+        "text": "*Between the messenger alerts, I spot another notification.*"
     },
     "night2_hidden_homeroom_1": {
         "name": "{name}",
@@ -202,7 +202,7 @@
     },
     "night2_end_1": {
         "name": "{name}",
-        "text": "*I sent my replies and set the phone down. Day two is over.*"
+        "text": "*I send my replies and set the phone down. Day two is over.*"
     },
     "night2_flashback_1": {
         "name": "{name}",
@@ -210,11 +210,11 @@
     },
     "night2_flashback_2": {
         "name": "{name}",
-        "text": "*I scrolled down for a while. Field trip photo from three months ago. Sojeong is smiling next to me. In the photos after that, Sojeong's desk is pushed back little by little. Like someone cropped it on purpose so the graffiti wouldn't show.*"
+        "text": "*I scroll back a long way. A field trip photo from three months ago. Sojeong smiles beside me. In each photo after that, her desk has been pushed a little farther back. The lower section where the graffiti had been is cropped out.*"
     },
     "night2_flashback_3": {
         "name": "{name}",
-        "text": "*There are rows of unsent sentences left in the notepad. 'i like you.' ‘Teacher, Sojung is at the desk—’ ‘Today as well—’ Everything was cut off at the first line. Last modified at 2:17 AM.*"
+        "text": "*The notes app is full of sentences I never sent. 'Teacher, on Sojeong's desk—' 'Again today—' Every one ends on the first line. The last edit was at 2:17 a.m.*"
     },
     "night2_flashback_5": {
         "name": "{name}",
@@ -222,7 +222,7 @@
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*I closed the gallery. My finger stops over the delete photo button. In the end, I turn off the screen. Only my face remains on the black display.*"
+        "text": "*I close the gallery. My finger stops over the delete button. In the end, I turn off the screen.*"
     },
     "night2_flashback_8": {
         "name": "{name}",
@@ -250,10 +250,10 @@
     },
     "night2_end_4_b": {
         "name": "{name}",
-        "text": "*I opened the fridge. Leftover rice, eggs, kimchi. I take out the lunchbox and set it on the table. Haven't opened the lid yet.*"
+        "text": "*I open the fridge. Leftover rice, eggs, seaweed. I take out a lunchbox and set it on the table. I haven't opened the lid yet.*"
     },
     "night2_end_4_c": {
         "name": "{name}",
-        "text": "*I threw together a lunch box. It's nothing special. Too sloppy to call it homemade with pride. — But it beats showing up empty-handed.*"
+        "text": "*I throw together a lunchbox. It's nothing special — too sloppy to claim I made it with care. But it beats showing up empty-handed.*"
     }
 }

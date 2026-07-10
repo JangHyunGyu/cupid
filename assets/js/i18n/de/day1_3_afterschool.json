@@ -5,7 +5,7 @@
     },
     "after_kakao_1": {
         "name": "{name}",
-        "text": "*'Hey, Sojeong soll sich an der neuen Schule gut eingelebt haben~' 'Zum Glück lol' — Ich stecke das Handy wieder in die Tasche.*"
+        "text": "*‚Hey, Sojeong kommt an ihrer neuen Schule wohl gut klar.‘ ‚Zum Glück, haha.‘ — Ich stecke das Handy wieder in die Tasche.*"
     },
     "after_kakao_3": {
         "name": "{name}",
@@ -33,7 +33,7 @@
     },
     "after1_jealousy_seo_choice": {
         "name": "Dain",
-        "text": "*Ihre Stimme wurde etwas höher.*",
+        "text": "*Ihre Hand umklammert das Handy fester.*",
         "choices": [
             "Ich hab auf dem Dach mit der Sprecherin gegessen. (Ehrlich)",
             "Ich bin einfach allein rumgelaufen. (Lüge)"
@@ -90,7 +90,7 @@
     },
     "after_miss_dain_3": {
         "name": "{name}",
-        "text": "*Ich weiche reflexartig aus. Dain schießt an mir vorbei. Rennen, dann Vollbremsung.*"
+        "text": "*Reflexartig springe ich zur Seite. Dain schießt an mir vorbei und legt dann eine Vollbremsung hin.*"
     },
     "after_miss_dain_4": {
         "name": "Dain",
@@ -98,24 +98,24 @@
     },
     "after_miss_dain_5": {
         "name": "{name}",
-        "text": "Warum rennst du wie blöd durch den Flur?"
+        "text": "Warum sprintest du durch den Flur?"
     },
     "after_miss_dain_6": {
         "name": "Dain",
-        "text": "Bin spät dran! Muss in die Halle! — Ach, bis morgen, Neuer!"
+        "text": "Ich bin spät dran! Muss in die Turnhalle. Bis morgen, Neuer!"
     },
     "after_miss_dain_6_b": {
         "name": "{name}",
-        "text": "*Winken Sie mit den Händen und rennen Sie. Wenn Sie plötzlich anhalten, greifen Sie Ihr rechtes Knie und lassen Sie Ihre Hand sofort los.*"
+        "text": "*Sie läuft winkend davon. Beim abrupten Abbremsen greift sie kurz an ihr rechtes Knie, lässt es aber sofort wieder los.*"
     },
     "after_miss_dain_7": {
         "name": "{name}",
-        "text": "*Sie rennt winkend davon. Der Name, den die Lehrerin vorhin gerufen hat: Dain. Schon beim Du.*"
+        "text": "*Sie läuft winkend davon. Verspätet fällt mir der Name ein, den die Lehrerin vorhin gerufen hat: Dain.*"
     },
     "after_yuna_skip": {},
     "after_miss_yuna_1": {
         "name": "{name}",
-        "text": "*Als ich am Eingang der Bibliothek vorbeigehe, sehe ich ein Mädchen mit roten Augen, das lesend geht. Ihr tätowierter Arm stützt vorsichtig den Buchrücken.*"
+        "text": "*Als ich an der Bibliothek vorbeigehe, kommt mir das Mädchen mit den roten Augen entgegen und liest dabei. Mit ihrem tätowierten Arm stützt sie behutsam den Buchrücken.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
@@ -127,7 +127,7 @@
     },
     "after_miss_yuna_2": {
         "name": "Yuna",
-        "text": "*Sie spreizt die Ecke des Lesezeichens mit dem Daumen und hält es ins Licht. Keine Falte.*"
+        "text": "*Mit dem Daumen streicht sie die Ecke des Lesezeichens glatt und hält es ins Licht. Keine Knickspur.*"
     },
     "after_miss_yuna_3": {
         "name": "Yuna",
@@ -139,7 +139,7 @@
     },
     "after_miss_yuna_4": {
         "name": "{name}",
-        "text": "*Und geht dann wieder. Nur der Daumen, der die Ecke des Lesezeichens berührt, ist sichtbar.*"
+        "text": "*Dann geht sie weiter. Mir bleibt nur ihr Daumen in Erinnerung, der die Ecke des Lesezeichens berührt hat.*"
     },
     "after_miss_seoyeon_1": {
         "name": "{name}",
@@ -151,7 +151,7 @@
     },
     "after_miss_seoyeon_3": {
         "name": "{name}",
-        "text": "Vorhin?"
+        "text": "Was meinst du?"
     },
     "after_miss_seoyeon_4": {
         "name": "Seoyeon",
@@ -171,7 +171,7 @@
     },
     "after_miss_seoyeon_8": {
         "name": "Seoyeon",
-        "text": "Morgen verschwindest du mir nicht."
+        "text": "Morgen kneifst du nicht."
     },
     "after_end": {
         "name": "{name}",
@@ -210,13 +210,13 @@
         "name": "Klassenlehrerin",
         "text": "*Sie senkt das Klemmbrett und sieht {name} ins Gesicht.*",
         "choices": [
-            "Ganz gut. Nette Schule.",
+            "Ganz gut. Es ist nur noch ungewohnt.",
             "Ehrlich gesagt, ziemlich überwältigend."
         ]
     },
     "after_homeroom_ok": {
         "name": "Klassenlehrerin",
-        "text": "Soso? — Wenn was ist, komm ins Lehrerzimmer. Dann erledigen wir gleich den Papierkram mit."
+        "text": "Ach ja? — Wenn etwas ist, komm ins Lehrerzimmer. Dann können wir gleich den Papierkram mit erledigen."
     },
     "after_homeroom_ok_b": {
         "name": "Klassenlehrerin",
@@ -224,11 +224,11 @@
     },
     "after_homeroom_ok_3": {
         "name": "Klassenlehrerin",
-        "text": "Eine bessere Schule, als du dachtest. — Wenn ich sowas höre, bin ich seltsam erleichtert."
+        "text": "Wenn es nur ungewohnt ist, bin ich beruhigt. Wäre doch seltsamer, wenn du dich am ersten Tag schon völlig zu Hause fühlen würdest."
     },
     "after_homeroom_ok_4": {
         "name": "Klassenlehrerin",
-        "text": "*Der Klassenlehrer schaut auf die Dokumente, aber das Ende der Zwischenablage bewegt sich nicht mehr.*"
+        "text": "*Die Lehrerin sieht auf die Unterlagen hinab. Das Ende des Klemmbretts bewegt sich nicht mehr.*"
     },
     "after_homeroom_ok_5": {
         "name": "Klassenlehrerin",
@@ -236,7 +236,7 @@
     },
     "after_homeroom_ok_6": {
         "name": "Klassenlehrerin",
-        "text": "*Der Klassenlehrer wendet sich wieder dem Schreibtisch zu. Sagen Sie kurz Hallo und schließen Sie die Bürotür. Die Geschichte vom Automatensaft bleibt mir im Ohr.*"
+        "text": "*Die Lehrerin wendet sich wieder ihrem Schreibtisch zu. Ich verabschiede mich kurz und schließe die Tür des Lehrerzimmers hinter mir.*"
     },
     "after_homeroom_honest_1": {
         "name": "Klassenlehrerin",
@@ -248,11 +248,11 @@
     },
     "after_homeroom_honest_3": {
         "name": "Klassenlehrerin",
-        "text": "...So was Ähnliches. Ich wurde schon mal von heute auf morgen irgendwo hin verfrachtet."
+        "text": "...So etwas Ähnliches. Ich wurde schon einmal von heute auf morgen an einen völlig neuen Ort geworfen."
     },
     "after_homeroom_honest_3_b": {
         "name": "Klassenlehrerin",
-        "text": "*Etwas Ähnliches? Die Hand der Lehrerin verschwindet kurz hinter dem Klemmbrett.*"
+        "text": "*Ihre Hand verschwindet kurz hinter dem Klemmbrett und kommt wieder hervor.*"
     },
     "after_homeroom_honest_4": {
         "name": "Klassenlehrerin",
@@ -260,7 +260,7 @@
     },
     "after_homeroom_honest_5": {
         "name": "{name}",
-        "text": "Eine Lehrerin, die einem Schüler was ausgibt?"
+        "text": "Sie geben einem Schüler etwas aus?"
     },
     "after_homeroom_honest_6": {
         "name": "Klassenlehrerin",
@@ -288,7 +288,7 @@
     },
     "after_homeroom_honest_choice2b": {
         "name": "Klassenlehrerin",
-        "text": "*Unterdrückt ein Lachen.* Erwarte nicht zu viel. Ist aus dem Automaten."
+        "text": "*Sie lacht kurz.* Erwarte nicht zu viel. Der Saft kommt aus dem Automaten."
     },
     "after_homeroom_honest_choice2b_b": {
         "name": "Klassenlehrerin",
@@ -308,7 +308,7 @@
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
-        "text": "*Am Ende des Flurs ist leise zu hören, wie die Anwesenheitsliste zuklappt.*"
+        "text": "*Am Ende des Flurs höre ich leise das Klassenbuch zuklappen.*"
     },
     "after_homeroom_honest_10": {
         "name": "Klassenlehrerin",
@@ -316,17 +316,17 @@
     },
     "after_homeroom_freetalk": {
         "name": "Klassenlehrerin",
-        "text": "*Im Gespräch mit ihr auf dem Flur.*",
+        "text": "*Wir unterhalten uns im Flur.*",
         "context": "Tag 1 nach der Schule. Die Klassenlehrerin hat den neuen Schüler angehalten, um nach ihm zu sehen. Ton: leicht und vorsichtig, weil es noch der erste Tag ist. Keine schweren Vorgeschichten ansprechen. Bei Neckereien und kurzen Wechseln bleiben.",
         "personality": "Die Klassenlehrerin versteckt Wärme hinter trockenem Humor. Ende zwanzig, braunes welliges langes Haar und beige Strickjacke. Sie verpackt ihre Gefühle in Worte wie \"Arbeit\" und \"pädagogisches Interesse\". Ehemalige angehende Romanautorin."
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",
-        "text": "*Ich gehe den Flur entlang, als — mir plötzlich leicht schwindelig wird. Als ich mich an die Wand lehne, spüre ich die kühle Farbe auf meiner Handfläche. Ich sehe ein 'Krankenzimmer'-Schild am Ende des Flurs.*"
+        "text": "*Die Leuchtstoffröhren im Flur scheinen zu schwanken. Als ich mich an der Wand abstütze, spüre ich die kühle Farbe an meiner Handfläche. An einer Seite des Flurs entdecke ich das Schild zum Krankenzimmer.*"
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
-        "text": "*Seit heute Morgen habe ich ohne Pause Leute getroffen. Zehn Minuten zum Durchatmen wären jetzt wirklich kein Drama.*",
+        "text": "*Seit dem Morgen bin ich ununterbrochen unter Menschen gewesen. Vor dem Krankenzimmer bleiben meine Schritte stehen.*",
         "choices": [
             "Ins Krankenzimmer gehen",
             "Einfach nach Hause gehen"
@@ -334,7 +334,7 @@
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
-        "text": "*Vor der Tür bleibe ich kurz stehen und atme einmal durch. Nur kurz rein und ausruhen. Ich lege die Hand auf die Klinke. Kaltes Metall unter der Handfläche.*"
+        "text": "*Vor der Tür bleibe ich stehen und atme einmal durch. Ich gehe nur kurz hinein und ruhe mich aus. Meine Hand legt sich auf die Klinke; das Metall ist kalt.*"
     },
     "after_nurse_enter_1": {
         "name": "{name}",
@@ -346,7 +346,7 @@
     },
     "after_nurse_enter_2_b": {
         "name": "{name}",
-        "text": "*Ihr Ton ist locker.*"
+        "text": "*Sie lächelt leicht.*"
     },
     "after_nurse_enter_3": {
         "name": "{name}",
@@ -362,7 +362,7 @@
     },
     "after_nurse_enter_4_c": {
         "name": "Schulkrankenschwester",
-        "text": "Deine Uniform ist ja ganz steif. Riecht auch nach Stärke. *Schnüffel* Oh, da mischt sich Kirschblütenduft rein. Ein romantischer Neuer."
+        "text": "Deine Uniform ist noch ganz steif. Sie riecht nach Stärke, und sogar ein Kirschblütenblatt hängt daran. Man sieht dir den ersten Tag an."
     },
     "after_nurse_enter_4_d": {
         "name": "Schulkrankenschwester",
@@ -390,7 +390,7 @@
     },
     "after_nurse_enter_7_c": {
         "name": "Schulkrankenschwester",
-        "text": "*Zieht den Vorhang halb zu* Willst du Wasser? Oder etwas Warmes?"
+        "text": "*Sie zieht den Vorhang halb zu.* Willst du Wasser? Oder etwas Warmes?"
     },
     "after_nurse_enter_7_d": {
         "name": "{name}",
@@ -430,7 +430,7 @@
     },
     "after_nurse_enter_9_b": {
         "name": "{name}",
-        "text": "Die Pflanze da — gehört die Ihnen?"
+        "text": "Die Pflanze da — pflegen Sie die?"
     },
     "after_nurse_enter_9_c": {
         "name": "Schulkrankenschwester",
@@ -458,15 +458,15 @@
     },
     "after_nurse_enter_11": {
         "name": "Schulkrankenschwester",
-        "text": "Wenn Ihnen wieder schwindelig wird, kommen Sie zurück. Denn der Gesundheitsraum ist immer geöffnet. Halten Sie sich stattdessen zurück und kommen Sie nicht zu spät. Vielleicht schimpfe ich zuerst mit dir."
+        "text": "Wenn dir wieder schwindelig wird, komm her. Das Krankenzimmer ist immer offen. Aber warte nicht, bis es zu spät ist — sonst schimpfe ich womöglich zuerst mit dir."
     },
     "after_nurse_enter_11_b": {
         "name": "{name}",
-        "text": "Ihnen Sorgen machen?"
+        "text": "Dann werde ich ausgeschimpft?"
     },
     "after_nurse_enter_11_c": {
         "name": "Schulkrankenschwester",
-        "text": "*Verengt die Augen* Wenn es dir schlecht geht und du trotzdem weiter durchziehst, mache ich mir natürlich Sorgen. Genau dafür bin ich hier."
+        "text": "*Sie verengt die Augen.* Wenn du krank bist, dich trotzdem durch den Tag schleppst und erst spät herkommst, hast du eine Standpauke verdient. Genau dafür bin ich hier."
     },
     "after_nurse_enter_11_d": {
         "name": "Schulkrankenschwester",
@@ -514,7 +514,7 @@
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*Lächle leicht und winke. Schauen Sie sich den Handrücken mit dem Band an. Der Geruch von Desinfektionsmitteln bleibt länger hängen als erwartet.*"
+        "text": "*Ich verabschiede mich mit einem knappen Nicken und verlasse das Krankenzimmer. Der Geruch nach Desinfektionsmittel folgt mir bis auf den Flur.*"
     },
     "after_nurse_freetalk": {
         "name": "Schulkrankenschwester",
@@ -524,6 +524,6 @@
     },
     "after_nurse_skip": {
         "name": "{name}",
-        "text": "*Für heute habe ich genug herumgelaufen. Ab nach Hause und ausruhen.*"
+        "text": "*Für heute bin ich genug herumgelaufen. Ich gehe nach Hause und ruhe mich aus.*"
     }
 }

@@ -13,7 +13,7 @@
     },
     "night_msg_seo_2": {
         "name": "{name}",
-        "text": "*O vento tava bom*"
+        "text": "*A brisa estava boa*"
     },
     "night_msg_seo_3": {
         "name": "Seoyeon",
@@ -21,7 +21,7 @@
     },
     "night_msg_seo_4": {
         "name": "Seoyeon",
-        "text": "*...Cortesia da casa*"
+        "text": "*...cortesia da casa*"
     },
     "night_msg_seo_5": {
         "name": "{name}",
@@ -101,7 +101,7 @@
     },
     "night_yuna_late_2": {
         "name": "{name}",
-        "text": "*O indicador liga e desliga durante a entrada. A única coisa que chegou foi '...'.*"
+        "text": "*O indicador de digitação acende e apaga. A única coisa que chega é «...».*"
     },
     "night_yuna_late_3": {
         "name": "{name}",
@@ -125,7 +125,7 @@
     },
     "night_dain_late_4": {
         "name": "{name}",
-        "text": "*'Chamada' já está carimbado na janela de resposta.*"
+        "text": "*Já digitei «Tô dentro» na caixa de resposta.*"
     },
     "night_dain_late_4_b": {
         "name": "{name}",

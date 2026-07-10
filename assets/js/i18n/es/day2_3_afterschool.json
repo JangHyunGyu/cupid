@@ -13,7 +13,7 @@
     },
     "after2_msg_yuna": {
         "name": "{name}",
-        "text": "*No hay comunicación por parte de Yuna. Mientras estaba haciendo la maleta, salió de mi bolsillo una nota matutina. El texto \"Anexo de la Biblioteca\" cuelga de la línea doblada.*"
+        "text": "*Yuna no se ha puesto en contacto conmigo. Mientras recojo la mochila, la nota de esta mañana se desliza fuera de mi bolsillo. Las palabras «Anexo de la biblioteca» quedan atravesadas por el doblez.*"
     },
     "after2_nurse_transition": {
         "name": "{name}",
@@ -106,7 +106,7 @@
     },
     "after2_dain_3": {
         "name": "{name}",
-        "text": "Si llegué cinco minutos antes."
+        "text": "Pero si he llegado cinco minutos antes."
     },
     "after2_dain_4": {
         "name": "Dain",
@@ -122,7 +122,7 @@
     },
     "after2_dain_7": {
         "name": "{name}",
-        "text": "¿Y el tteokbokki a qué viene?"
+        "text": "¿Y lo del tteokbokki a qué viene?"
     },
     "after2_dain_8": {
         "name": "Dain",
@@ -150,7 +150,7 @@
     },
     "after2_dain_9_f": {
         "name": "{name}",
-        "text": "*El marcador es 3:2. Ganamos por poco. Dain se levanta y se frota la rodilla derecha una vez. La sonrisa sigue siendo la misma.*"
+        "text": "*El marcador queda 3 a 2. Gano por poco. Al levantarse, Dain se frota una vez la rodilla derecha. Sigue sonriendo.*"
     },
     "after2_dain_11b": {
         "name": "{name}",
@@ -224,7 +224,7 @@
     },
     "after2_dain_end_3": {
         "name": "Dain",
-        "text": "*Frena los palillos. Un segundo.*"
+        "text": "*Detiene los palillos. Solo un segundo.*"
     },
     "after2_dain_end_3b": {
         "name": "Dain",
@@ -276,7 +276,7 @@
     },
     "after2_seo_6_b": {
         "name": "{name}",
-        "text": "*Tiene un don para que los favores suenen a órdenes. Me pongo con los papeles. Presupuestos de eventos, solicitudes de clubes. Hay un rato.*"
+        "text": "*Tiene un don para que las peticiones suenen a órdenes. Nos ponemos con los papeles: presupuestos de eventos, solicitudes de clubes. Hay una buena pila.*"
     },
     "after2_seo_7": {
         "name": "Seoyeon",
@@ -316,7 +316,7 @@
     },
     "after2_seo_8b4_b": {
         "name": "Seoyeon",
-        "text": "*Dice que es un cumplido y vuelve directamente a ordenar los papeles. En el momento en que gira el cuello, sus hombros se tensan—Solo un poco.*"
+        "text": "*Dice que es un cumplido y vuelve directamente a ordenar los papeles. Al girar el cuello, se le tensan los hombros. Solo un poco.*"
     },
     "after2_seo_choice1": {
         "name": "{name}",
@@ -336,7 +336,7 @@
     },
     "after2_seo_sunset_react": {
         "name": "Seoyeon",
-        "text": "...Si dices cosas así tan rápido, no hay tiempo para escribirlas."
+        "text": "...Si sueltas cosas así de repente, ni siquiera me da tiempo a apuntarlas."
     },
     "after2_seo_sunset_react_b": {
         "name": "Seoyeon",
@@ -360,11 +360,11 @@
     },
     "after2_seo_neck_touch": {
         "name": "Seoyeon",
-    "text": "¿Piensas usar mis documentos de soporte?"
+        "text": "¿Piensas usar mi caja de archivo como soporte?"
     },
     "after2_seo_neck_high": {
         "name": "{name}",
-    "text": "La caja está vacía. Cuello solo tienes uno."
+        "text": "La caja está vacía. Cuello solo tienes uno."
     },
     "after2_seo_neck_high_b": {
         "name": "Seoyeon",
@@ -440,7 +440,7 @@
     },
     "after2_seo_skinship_1": {
         "name": "Seoyeon",
-        "text": "*Alarga la mano. Me quita una pelusa del cuello de la camisa. Sus dedos me rozan el cuello.*"
+        "text": "*Extiende la mano. Me quita una pelusa del cuello de la camisa. Sus dedos me rozan la piel.*"
     },
     "after2_seo_skinship_2": {
         "name": "Seoyeon",
@@ -516,11 +516,11 @@
     },
     "after2_yuna_choice_pre3": {
         "name": "Yuna",
-        "text": "Desde cierto sénior, nadie."
+        "text": "Nadie desde aquella alumna de último curso."
     },
     "after2_yuna_choice_pre3_b": {
         "name": "Yuna",
-        "text": "*No evita el contacto visual. Las cuerdas de los auriculares todavía están enrolladas entre mis dedos.*"
+        "text": "*Yuna levanta la cabeza y mira a {name}. El cable del auricular sigue inmóvil, enredado entre sus dedos.*"
     },
     "after2_yuna_choice": {
         "name": "{name}",
@@ -544,7 +544,7 @@
     },
     "after2_yuna_everyday_react_b": {
         "name": "{name}",
-        "text": "*Esto no parece un permiso, pero Yuna no elimina el marcador.*"
+        "text": "*No suena precisamente a permiso, pero Yuna no retira el marcapáginas.*"
     },
     "after2_yuna_quiet": {
         "name": "Yuna",
@@ -556,7 +556,7 @@
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "*En mi teléfono, el '¿Te estaba esperando?' de Dain y el 'Avísame si cambia tu horario' de Seoyeon llegaron tarde. En el asiento donde Yuna y yo estábamos sentados juntos, un auricular todavía está tibio.*"
+        "text": "*En el teléfono me esperan un «¿Y yo esperando?» de Dain y un «Avísame si cambian tus planes» de Seoyeon. En el asiento donde Yuna y yo estábamos sentados queda uno de los auriculares.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",
@@ -564,7 +564,7 @@
     },
     "after2_yuna_skinship_2": {
         "name": "Yuna",
-        "text": "*No aparta la mano la primera. Tres segundos. Baja la mirada.*"
+        "text": "*No es la primera en retirar la mano. Tres segundos. Baja la mirada.*"
     },
     "after2_yuna_skinship_3": {
         "name": "{name}",

@@ -1,7 +1,7 @@
 {
     "night3_start": {
         "name": "{name}",
-        "text": "*I’m back in my room. It was a heavy day.*"
+        "text": "*I return to my room and set down my bag.*"
     },
     "night3_start_2": {
         "name": "{name}",
@@ -33,7 +33,7 @@
     },
     "night3_faithful_msg_yuna_2_b": {
         "name": "{name}",
-        "text": "*The cursor blinks on the last line of the notepad. Leave the ending blank, and the file stays in saving mode.*"
+        "text": "*The cursor blinks on the last line of the note. A saved icon remains beside the filename.*"
     },
     "night3_faithful_msg_dain_1": {
         "name": "Dain",
@@ -49,15 +49,15 @@
     },
     "night3_dream_1": {
         "name": "{name}",
-        "text": "*I had a dream. Walking side by side with someone. I couldn't see their face, only footsteps keeping the same rhythm.*"
+        "text": "*I dream of walking beside someone. Only our footsteps continue in the same rhythm.*"
     },
     "night3_dream_2_b": {
         "name": "{name}",
-        "text": "*I closed the notepad. No sentence to send tomorrow yet. But I decided not to leave the screen blank.*"
+        "text": "*I close the notes app. I still have no sentence to send tomorrow.*"
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*Open my eyes. Morning sunlight comes through the curtains. My palms are still warm. I took out my cell phone. Opened a gallery. Sojeong's photo. — Stopped scrolling, pressed and held*"
+        "text": "*I open my eyes. Morning sunlight slips between the curtains, and my palm is still warm. I take out my phone, open the gallery, and stop on Sojeong's photo. — Then I press and hold.*"
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
@@ -69,47 +69,47 @@
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
-        "text": "*...okay. I put my finger on the delete button. — pressed.*"
+        "text": "*...Okay. I place my finger over the delete button — and press it.*"
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
-        "text": "*My finger stops over the delete button. Instead I moved the photo to a new folder. Folder name: 'Record'.*"
+        "text": "*My finger stops over the delete button. Instead, I move the photo to a new folder named 'Record.'*"
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*Minsu said. 'Rejection is also something you have to do.' Sojung in the gallery is still smiling. Notepad number 38 has not been sent yet. Only the send button is blue.*"
+        "text": "*Minsu said, 'Saying no is something you have to do, too.' Sojeong is still smiling in the gallery. Note number thirty-eight remains unsent. Only the Send button is blue.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*The gallery is empty. The place where Sojung’s photo was. A blank screen is rather clear. I will tell you when I see it. I will come forward if I know.*"
+        "text": "*The gallery is empty. Only the space where Sojeong's photo used to be glows white.*"
     },
     "night3_faithful_reflect_4_b": {
         "name": "{name}",
-        "text": "*Deleting the photo was easy. Just one finger. I stare at the empty album thumbnail for a while.*"
+        "text": "*I stare at the empty album thumbnail for a long time.*"
     },
     "night3_faithful_reflect_4_c": {
         "name": "{name}",
-        "text": "*Covered the cell phone. An empty gallery space appears on a black screen.*"
+        "text": "*I close the phone. The empty space in the gallery reflects in the black screen.*"
     },
     "night3_dream_3": {
         "name": "{name}",
-        "text": "*It was a good dream.*"
+        "text": "*I wake before the alarm rings.*"
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",
-        "text": "*When I close my eyes, the feeling of walking beside Seoyeon still lingers.*"
+        "text": "*When I close my eyes, the rooftop railing comes to mind first.*"
     },
     "night3_dream_yuna_bonus": {
         "name": "{name}",
-        "text": "*When I close my eyes, the quiet air beside Yuna still lingers.*"
+        "text": "*When I close my eyes, the library annex window comes to mind first.*"
     },
     "night3_dream_dain_bonus": {
         "name": "{name}",
-        "text": "*When I close my eyes, Dain's laughter comes back to me a beat later.*"
+        "text": "*When I close my eyes, I hear a ball bouncing on the gym floor.*"
     },
     "night3_cheat_msg_1": {
         "name": "{name}",
-        "text": "*I’m back in my room. It was a heavy day. I look at my phone.*"
+        "text": "*I return to my room and look at my phone.*"
     },
     "night3_cheat_msg_2": {
         "name": "Seoyeon",
@@ -121,7 +121,7 @@
     },
     "night3_cheat_msg_3_b": {
         "name": "Seoyeon",
-        "text": "*She uses the word 'favor.' The cursor stays frozen after that word for a long time.*"
+        "text": "*She types the word 'please.' The cursor sits after it for a long time.*"
     },
     "night3_cheat_msg_4": {
         "name": "Yuna",
@@ -129,11 +129,11 @@
     },
     "night3_cheat_msg_4_b": {
         "name": "Yuna",
-        "text": "*Me too, they hate reserve seats.*"
+        "text": "*Neither I nor they want to be your backup.*"
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "*I just hope you don't treat that choice lightly.*"
+        "text": "*Decide who you're going to choose tomorrow.*"
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
@@ -238,6 +238,6 @@
     },
     "night3_end": {
         "name": "{name}",
-        "text": "*The night grows deeper...*"
+        "text": "*I turn off the light.*"
     }
 }
