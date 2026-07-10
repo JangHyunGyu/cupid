@@ -200,7 +200,7 @@
     },
     "after3_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Abraza el portapapeles contra el pecho y no aparta la mirada.* Si tienes algo que decir, dilo ahora.",
+        "text": "*Abraza el portapapeles contra el pecho y mira a {name} sin apartar la vista.* Si tienes algo que decir, dilo ahora.",
         "context": "Día 3 después de clases, justo tras la confrontación/reconciliación con Seoyeon. La relación se ha fracturado por sospechas de doble juego. Tono: Educado pero las respuestas se acortan; la tensión se muestra en el agarre del portapapeles y movimientos de dedos.",
         "personality": "Seoyeon es posesiva y directa cuando está celosa. Herida pero intentando no mostrarlo."
     },

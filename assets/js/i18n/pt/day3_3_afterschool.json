@@ -200,7 +200,7 @@
     },
     "after3_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Ela abraça a prancheta contra o peito e não desvia o olhar.* Se tem algo pra dizer, fala agora.",
+        "text": "*Ela abraça a prancheta contra o peito e olha para {name} sem desviar.* Se tem algo pra dizer, fala agora.",
         "context": "Dia 3 após as aulas, logo após confronto/reconciliação com Seoyeon. O relacionamento rachou devido a suspeitas de estar com duas ao mesmo tempo. Tom: Educado mas respostas ficam mais curtas; tensão aparece no aperto da prancheta e movimentos dos dedos.",
         "personality": "Seoyeon é a presidente do grêmio cool. Possessiva, direta quando com ciúmes. Magoada mas tentando não demonstrar."
     },
