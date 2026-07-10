@@ -53,6 +53,15 @@ function getGalleryFreeTalkStablePromptHash(content) {
     return (hash >>> 0).toString(36);
 }
 
+function encodeGalleryFreeTalkCacheKeyPart(value) {
+    const text = String(value ?? '');
+    try {
+        return encodeURIComponent(text);
+    } catch {
+        return getGalleryFreeTalkStablePromptHash(text);
+    }
+}
+
 function keepGalleryFreeTalkRuntimeBoundary(content) {
     const prompt = normalizeGalleryPromptBlockForCache(content);
     const markerIndex = prompt.indexOf(GALLERY_FREETALK_CACHE_BOUNDARY_MARKER);
@@ -1490,14 +1499,16 @@ The latest user input contains an outside scene cue that happens before the char
             }
             _optimized = this._forceLatestUserMessageLast(_optimized, finalContent);
             const _stablePromptHash = getGalleryFreeTalkStablePromptHash(_optimized[0]?.content || finalContent);
-            const _gftCacheKey = this.currentCharId ? `cupid-gft:ctx:${this.lang}:${this.currentCharId}:s${_stablePromptHash}` : '';
+            const _gftCacheKey = this.currentCharId
+                ? `cupid-gft:ctx:${encodeGalleryFreeTalkCacheKeyPart(this.lang)}:${encodeGalleryFreeTalkCacheKeyPart(this.currentCharId)}:s${_stablePromptHash}`
+                : '';
             _lastCacheKey = _gftCacheKey;
             const _turnMeta = this._createTurnMeta(finalContent);
             _lastTurnMeta = _turnMeta;
             this._activeChatTurnId = _turnMeta?.turnId || null;
             const aiEndpoint = window.AI_API_ENDPOINT || window.API_ENDPOINT || 'https://chatbot-api.yama5993.workers.dev/';
             _lastAiEndpoint = aiEndpoint;
-            const response = await fetch(aiEndpoint, {
+            const requestInit = {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -1515,7 +1526,19 @@ The latest user input contains an outside scene cue that happens before the char
                     cacheKey: _gftCacheKey,
                     ...(_turnMeta || {})
                 })
-            });
+            };
+            let response;
+            try {
+                response = await fetch(aiEndpoint, requestInit);
+            } catch (primaryError) {
+                const fallbackEndpoint = window.API_ENDPOINT || 'https://chatbot-api.yama5993.workers.dev/';
+                const canFallback = primaryError instanceof TypeError
+                    && fallbackEndpoint
+                    && fallbackEndpoint !== aiEndpoint;
+                if (!canFallback) throw primaryError;
+                _lastAiEndpoint = fallbackEndpoint;
+                response = await fetch(fallbackEndpoint, requestInit);
+            }
 
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
