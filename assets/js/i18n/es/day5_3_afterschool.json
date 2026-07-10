@@ -132,13 +132,13 @@
     },
     "after5_last_chance_2": {
         "name": "{name}",
-        "text": "*El pasillo de tu antigua escuela, el teléfono en tu bolsillo, la nota 38 sin enviar—todo emerge a la vez.*"
+        "text": "*Aprieto el celular dentro del bolsillo. La pantalla permanece apagada.*"
     },
     "after5_last_chance_route_check": {},
     "after5_last_chance_seo_aff_check": {},
     "after5_last_chance_2_b": {
         "name": "{name}",
-        "text": "*Aprietas el teléfono en tu bolsillo. Lo dejas ahí sin encender la pantalla. Tus piernas se mueven primero, y el nombre se escapa.*"
+        "text": "*Aprieto el celular dentro del bolsillo y lo dejo ahí sin encender la pantalla. Las piernas se mueven antes que yo y el nombre se me escapa.*"
     },
     "after5_last_chance_2_c": {
         "name": "{name}",
@@ -162,7 +162,7 @@
     },
     "after5_last_chance_2_h": {
         "name": "{name}",
-        "text": "*Extiendes tu meñique. El dedo que no pudiste atrapar ese día en la barandilla.*"
+        "text": "*Seoyeon extiende la mano.*"
     },
     "after5_last_chance_2_i": {
         "name": "Seoyeon",
@@ -191,7 +191,7 @@
     },
     "after5_last_chance_2_m": {
         "name": "Dain",
-        "text": "Oye, t?..."
+        "text": "Oye, tú..."
     },
     "after5_last_chance_2_n": {
         "name": "Dain",
@@ -248,7 +248,7 @@
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
-        "text": "*Una frase corta. Pero me empuja por la espalda. Yuna no aparta la mirada.*"
+        "text": "*Yuna no aparta la mirada. {name} da un paso al frente.*"
     },
     "after5_last_chance_yuna_7": {
         "name": "Yuna",
@@ -290,7 +290,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*Al salir de la escuela.* ¿Oye, en serio?! ...¿De verdad? Esperar, esperé. — Pero sonreír al toque me sentiría barato. Esta vez dímelo hasta el final."
+        "text": "*Al salir de la escuela.* ¿Oye, en serio?! ...¿De verdad? Esperar, esperé. Pero sonreír enseguida haría que pareciera demasiado fácil. Esta vez dímelo hasta el final."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",
@@ -347,7 +347,7 @@
     },
     "after5_confess_fail_walk_2": {
         "name": "{name}",
-        "text": "*Continuaron pasos inconclusos hacia el parque.*"
+        "text": "*Sin llegar a una respuesta, caminamos hacia el parque.*"
     },
     "after5_confess_no": {
         "name": "{name}",
@@ -363,11 +363,11 @@
     },
     "after5_set_harem": {
         "name": "{name}",
-        "text": "*Las palabras dobladas al almuerzo permanecen. Tres conversaciones se iluminan a la vez, y no puedes escribir la primera letra en ninguna.*"
+        "text": "*Las palabras que guardé a la hora de comer siguen ahí. Tres conversaciones se iluminan a la vez y no consigo escribir la primera letra en ninguna.*"
     },
     "after5_harem_commit": {
         "name": "{name}",
-        "text": "*Las palabras atascadas en tu garganta salen. Que no puedes elegir a una. Las tres expresiones se congelan a la vez.*"
+        "text": "*Obligo a salir las palabras atascadas en mi garganta: no puedo elegir solo a una. Las tres se quedan serias a la vez.*"
     },
     "after5_harem_walk_1": {
         "name": "{name}",

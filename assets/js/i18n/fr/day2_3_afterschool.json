@@ -520,7 +520,7 @@
     },
     "after2_yuna_choice_pre3_b": {
         "name": "Yuna",
-        "text": "*Elle n'évite pas le contact visuel. The earphone strings are still wrapped between my fingers.*"
+        "text": "*Yuna lève la tête et regarde {name}. Le fil de l'écouteur reste enroulé autour de ses doigts immobiles.*"
     },
     "after2_yuna_choice": {
         "name": "{name}",

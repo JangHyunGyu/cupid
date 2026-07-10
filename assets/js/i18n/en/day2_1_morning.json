@@ -63,7 +63,7 @@
     },
     "morning2_greet_yuna_others_dain": {
         "name": "Dain",
-        "text": "What is that?! Lemme see!"
+        "text": "What is that? Lemme see!"
     },
     "morning2_greet_yuna_others_2": {
         "name": "{name}",
@@ -223,7 +223,7 @@
     },
     "hidden_homeroom_d2_choice1_a": {
         "name": "Homeroom Teacher",
-        "text": "*She pauses briefly.* ...Mystery novels. Not the whodunit kind — the ones that trace the motive."
+        "text": "...Mystery novels. Not the whodunit kind — the ones that trace the motive."
     },
     "hidden_homeroom_d2_choice1_b": {
         "name": "Homeroom Teacher",

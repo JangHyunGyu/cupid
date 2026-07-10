@@ -33,7 +33,7 @@
     },
     "night3_faithful_msg_yuna_2_b": {
         "name": "{name}",
-        "text": "*O cursor pisca na última linha do bloco de notas. Deixe o final em branco, e o arquivo fica em modo salvando.*"
+        "text": "*O cursor pisca na última linha. Ao lado do nome do arquivo, aparece o ícone de que foi salvo.*"
     },
     "night3_faithful_msg_dain_1": {
         "name": "Dain",
@@ -57,7 +57,7 @@
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*Abra meus olhos. A luz do sol da manhã entra pelas cortinas. Minhas palmas ainda estão quentes. Peguei meu celular. Abriu uma galeria. Foto de Sojeong. — Parou de rolar, pressionou e segurou*"
+        "text": "*Abro os olhos. A luz da manhã entra pelas cortinas. A palma da mão ainda está quente. Pego o celular, abro a galeria e paro na foto de Sojeong. Mantenho o dedo pressionado.*"
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
-        "text": "*...OK. Coloquei meu dedo no botão excluir. — pressionado.*"
+        "text": "*...Certo. Coloco o dedo sobre o botão de excluir e aperto.*"
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
@@ -77,11 +77,11 @@
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*Minsu disse. 'Rejeição é algo que você tem que fazer.' Sojung na galeria ainda está sorrindo. O bloco de notas número 38 ainda não foi enviado. Apenas o botão enviar é azul.*"
+        "text": "*Minsu disse: «Dizer não também é responsabilidade sua». Sojeong ainda sorri na galeria. A nota número 38 continua sem ser enviada. Só o botão de envio está azul.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*A galeria está vazia. O lugar onde estava a foto de Sojung. Uma tela em branco é bastante clara. Eu vou te contar quando eu ver. Eu irei me apresentar se souber.*"
+        "text": "*A galeria está vazia. Só o espaço onde ficava a foto de Sojeong continua aceso em branco.*"
     },
     "night3_faithful_reflect_4_b": {
         "name": "{name}",
@@ -89,7 +89,7 @@
     },
     "night3_faithful_reflect_4_c": {
         "name": "{name}",
-        "text": "*Cobriu o celular. Um espaço vazio da galeria aparece em uma tela preta.*"
+        "text": "*Bloqueio o celular. O espaço vazio da galeria se reflete na tela preta.*"
     },
     "night3_dream_3": {
         "name": "{name}",
@@ -129,11 +129,11 @@
     },
     "night3_cheat_msg_4_b": {
         "name": "Yuna",
-        "text": "*Eu também, eles odeiam assentos reserva.*"
+        "text": "*Nem eu nem elas queremos ser sua segunda opção.*"
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "*espero que cê não trate essa escolha como qualquer coisa*"
+        "text": "*espero que você não trate essa escolha como se não fosse nada*"
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
@@ -238,6 +238,6 @@
     },
     "night3_end": {
         "name": "{name}",
-        "text": "*A noite vai ficando mais funda...*"
+        "text": "*Apago a luz do quarto.*"
     }
 }

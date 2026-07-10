@@ -9,11 +9,11 @@
     },
     "tour_seo_3": {
         "name": "{name}",
-        "text": "Back then I said 'this is too much' — and almost got scolded."
+        "text": "Back then, I said I was flattered — and almost got scolded."
     },
     "tour_seo_4": {
         "name": "Seoyeon",
-        "text": "I didn't actually scold you, did I? — I liked you from that moment on."
+        "text": "I didn't actually scold you, did I? — I've been watching you since then."
     },
     "tour_seo_5": {
         "name": "{name}",
@@ -67,15 +67,15 @@
     },
     "tour_yuna_1_check": {
         "name": "{name}",
-        "text": "*Heading to the library annex.*"
+        "text": "*I head to the library annex.*"
     },
     "tour_yuna_1": {
         "name": "{name}",
-        "text": "*The library annex. An old sofa, afternoon sunlight through the window. The same dusty smell as when you first walked in.*"
+        "text": "*The library annex. An old sofa, afternoon sunlight through the window, and the same dusty smell as when I first walked in.*"
     },
     "tour_yuna_1b": {
         "name": "{name}",
-        "text": "*The library annex. The secret reading space shared with Yuna. An old sofa, afternoon sunlight streaming through the window.*"
+        "text": "*The library annex. Our secret reading spot. An old sofa, with afternoon sunlight streaming through the window.*"
     },
     "tour_yuna_2": {
         "name": "Yuna",
@@ -107,11 +107,11 @@
     },
     "tour_yuna_9": {
         "name": "Yuna",
-        "text": "If it's not an ending — but the start of a new story — I thought that'd be okay."
+        "text": "It felt strange to call it the end."
     },
     "tour_yuna_10": {
         "name": "{name}",
-        "text": "*Holds out the note. My hands are shaking slightly. Yuna cannot place the corner of the cover all the way.*"
+        "text": "*She holds out the notebook, her hand trembling slightly. Yuna can't quite let go of the corner of the cover.*"
     },
     "tour_yuna_11": {
         "name": "{name}",
@@ -129,11 +129,11 @@
     },
     "tour_yuna_end_2": {
         "name": "{name}",
-        "text": "*'For now.' — That's the most Yuna can promise.*"
+        "text": "*Yuna ends the sentence there.*"
     },
     "tour_dain_1_check": {
         "name": "{name}",
-        "text": "*Heading to the gym.*"
+        "text": "*I head to the gym.*"
     },
     "tour_dain_1": {
         "name": "{name}",
@@ -141,11 +141,11 @@
     },
     "tour_dain_1b": {
         "name": "{name}",
-        "text": "*The gym. A place filled with countless bets and spikes over the past few days. — The lights are on today.*"
+        "text": "*The gym. The lights are on today.*"
     },
     "tour_dain_2": {
         "name": "Dain",
-        "text": "*She is standing in the middle of the court. Holding a volleyball.*"
+        "text": "*She stands in the middle of the court, holding a volleyball.*"
     },
     "tour_dain_3": {
         "name": "Dain",
@@ -157,7 +157,7 @@
     },
     "tour_dain_5": {
         "name": "Dain",
-        "text": "I'm winning this time!!"
+        "text": "I'm winning this time!"
     },
     "tour_dain_6": {
         "name": "{name}",
@@ -165,11 +165,11 @@
     },
     "tour_dain_7": {
         "name": "Dain",
-        "text": "...ARGHHH!! WHY!! I lost AGAIN!!"
+        "text": "...Why did I lose again?"
     },
     "tour_dain_8": {
         "name": "{name}",
-        "text": "*Smiling even when angry. Dain puts the volleyball down on the court. slowly.*"
+        "text": "*Even while she fumes, she's smiling. Dain sets the volleyball on the court, one beat late.*"
     },
     "tour_dain_10": {
         "name": "Dain",
@@ -185,7 +185,7 @@
     },
     "tour_dain_12": {
         "name": "Dain",
-        "text": "Dunno what changed. ...But I can see myself off the court now, too."
+        "text": "I don't know what changed. ...But I have things I want to say off the court now, too."
     },
     "tour_dain_13": {
         "name": "{name}",
@@ -193,7 +193,7 @@
     },
     "tour_dain_end": {
         "name": "Dain",
-        "text": "...I have someone beside me now."
+        "text": "...I'm not alone."
     },
     "tour_dain_freetalk": {
         "name": "Dain",
@@ -203,6 +203,6 @@
     },
     "tour_dain_end_2": {
         "name": "{name}",
-        "text": "*She speaks without exclamation marks. This time she doesn't bow her head. Dain's hand rests on the volleyball, not on her knee.*"
+        "text": "*Dain's hand rests on the volleyball, not on her knee.*"
     }
 }

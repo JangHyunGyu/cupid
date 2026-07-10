@@ -200,7 +200,7 @@
     },
     "after3_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*She holds the clipboard to her chest and does not look away.* If you have something to say, say it now.",
+        "text": "*She holds the clipboard to her chest and looks at {name}.* If you have something to say, say it now.",
         "context": "Day 3 after school, right after confrontation/reconciliation with Seoyeon. The relationship has fractured due to suspicions of two-timing. Tone: Polite but answers grow shorter; tension shows through clipboard grip and fingertip movements.",
         "personality": "Seoyeon is the cool student council president. Strong possessiveness, direct when jealous. Hurt but trying not to show it."
     },
@@ -392,7 +392,7 @@
     },
     "after3_reject_for_dain_2b": {
         "name": "{name}",
-        "text": "*I headed to Yuna's hideout.*"
+        "text": "*I head to Yuna's hideout.*"
     },
     "after3_reject_for_dain_3": {
         "name": "{name}",

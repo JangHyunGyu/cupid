@@ -17,7 +17,7 @@
     },
     "wall_seo_pre_high_2": {
         "name": "{name}",
-        "text": "*Seoyeon’s breathing is heard first through the cell phone.*"
+        "text": "*Seoyeon's breathing is the first thing I hear through the phone.*"
     },
     "wall_seo_pre_low_1": {
         "name": "{name}",
@@ -25,7 +25,7 @@
     },
     "wall_seo_pre_low_1b": {
         "name": "{name}",
-        "text": "*I sent a text. 'Seoyeon, are you okay?' — One minute. Read receipt appears. No reply. Then — my phone rings.*"
+        "text": "*I send a text: 'Seoyeon, are you okay?' — One minute. A read receipt appears. No reply. Then my phone rings.*"
     },
     "wall_seo_pre_low_2": {
         "name": "Seoyeon",
@@ -37,7 +37,7 @@
     },
     "wall_seo_to_park": {
         "name": "{name}",
-        "text": "*I left the house and headed to the park.*"
+        "text": "*I leave the house and head to the park.*"
     },
     "wall_seo_3": {
         "name": "{name}",
@@ -311,7 +311,7 @@
     },
     "wall_dain_10": {
         "name": "Dain",
-        "text": "No, I'm fine!! Just twisted it a little, it's noth—"
+        "text": "No, I'm fine! I just twisted it a little, it's noth—"
     },
     "wall_dain_11": {
         "name": "{name}",
@@ -553,7 +553,7 @@
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*I walked past, pretending not to see. Made it all the way to the back gate, but the note in my hand is still folded.*"
+        "text": "*I walk past, pretending not to see. I make it all the way to the back gate, but the note in my hand stays folded.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",

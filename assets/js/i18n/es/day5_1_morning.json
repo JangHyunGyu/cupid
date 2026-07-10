@@ -1,7 +1,7 @@
 {
     "morning5_start": {
         "name": "{name}",
-        "text": "*Quinto día. Es domingo, pero hay un evento escolar. Los uniformes escolares se han vuelto más cómodos. Los extremos de las mangas ya no rayan las muñecas.*"
+        "text": "*Quinto día. Es domingo, pero hay un evento escolar. El uniforme ya resulta más cómodo. Los puños de las mangas ya no me rozan las muñecas.*"
     },
     "morning5_start_branch": {},
     "morning5_start_b": {
@@ -143,7 +143,7 @@
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "Profesora",
-        "text": "*La profesora hace una pausa por un momento. Pronto vuelve a su habitual expresión seca, pero las esquinas del sobre están arrugadas.*"
+        "text": "*La profesora hace una pausa. Pronto recupera su habitual expresión seca, pero las esquinas del sobre están arrugadas.*"
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Profesora",
@@ -191,7 +191,7 @@
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "Profesora",
-        "text": "*La tutora se detiene. El borde del papel se dobla un poco en su mano.*"
+        "text": "*La tutora se detiene. El borde del papel se curva un poco entre sus dedos.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Profesora",
@@ -243,7 +243,7 @@
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "*Abraza el manuscrito de nuevo. La profesora frota la marca de la etiqueta de devolución con el pulgar. El borde del papel se arruga ligeramente en su palma.*"
+        "text": "*Vuelvo a abrazar el manuscrito. La profesora frota con el pulgar la marca de la etiqueta de devolución. El borde del papel se arruga ligeramente en su palma.*"
     },
     "hidden_homeroom_d5_6": {
         "name": "Profesora",

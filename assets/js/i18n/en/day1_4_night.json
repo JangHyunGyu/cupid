@@ -41,7 +41,7 @@
     },
     "night_msg_dain_1": {
         "name": "Dain",
-        "text": "*Rock-paper-scissors rematch is TOMORROW!!*"
+        "text": "*Rock-paper-scissors rematch is TOMORROW!*"
     },
     "night_msg_dain_2": {
         "name": "Dain",
@@ -113,7 +113,7 @@
     },
     "night_dain_late_1": {
         "name": "Dain",
-        "text": "*you're still up right?!*"
+        "text": "*you're still up, right?*"
     },
     "night_dain_late_2": {
         "name": "Dain",

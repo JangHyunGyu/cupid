@@ -25,7 +25,7 @@
     },
     "date_seo_pretty_high_3": {
         "name": "{name}",
-        "text": "Acabei de sair de casa."
+        "text": "Saiu sem eu pensar."
     },
     "date_seo_pretty_high_3_b": {
         "name": "Seoyeon",
@@ -97,11 +97,11 @@
     },
     "date_seo_end_d": {
         "name": "Seoyeon",
-        "text": "Hoje foi bom. Eu queria que voc? soubesse disso."
+        "text": "Gostei de hoje. Só queria que você soubesse disso."
     },
     "date_yuna_1": {
         "name": "{name}",
-        "text": "*Em frente ao café. Yuna está encostada na parede. Um vestido preto e uma pequena bolsa transversal. Como não existe uniforme escolar, as linhas da tatuagem são o que primeiro chama a atenção.*"
+        "text": "*Em frente ao café, Yuna está encostada na parede. Vestido preto e uma pequena bolsa transversal. Sem o uniforme, as linhas da tatuagem são o que primeiro chama a atenção.*"
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
@@ -129,7 +129,7 @@
     },
     "date_yuna_pretty_high_5": {
         "name": "Yuna",
-        "text": "*De novo? — Yuna pediu pra eu repetir.*"
+        "text": "*Não levanta o olhar. Está esperando.*"
     },
     "date_yuna_pretty_high_5_b": {
         "name": "{name}",
@@ -145,7 +145,7 @@
     },
     "date_yuna_bright": {
         "name": "Yuna",
-        "text": "...Diferente como."
+        "text": "...Diferente em quê?"
     },
     "date_yuna_bookstore": {
         "name": "{name}",
@@ -201,7 +201,7 @@
     },
     "date_yuna_oldbook_4": {
         "name": "Yuna",
-        "text": "...Agora lê diferente."
+        "text": "...Agora eu leio de outro jeito."
     },
     "date_yuna_end": {
         "name": "Yuna",
@@ -229,7 +229,7 @@
     },
     "date_dain_4": {
         "name": "Dain",
-        "text": "Eu cheguei vinte!!"
+        "text": "Eu cheguei há vinte minutos!!"
     },
     "date_dain_compliment_choice": {
         "name": "{name}",
@@ -253,7 +253,7 @@
     },
     "date_dain_pretty_high_4": {
         "name": "Dain",
-        "text": "*Disse 'não pode soltar isso', mas a voz dela está tremendo.*"
+        "text": "*Continua segurando a aba do boné e demora a baixar a mão.*"
     },
     "date_dain_pretty_low": {
         "name": "Dain",
@@ -341,7 +341,7 @@
     },
     "date_dain_end_c": {
         "name": "Dain",
-        "text": "Hoje foi muito bom de verdade. ...Sem ponto de exclamação."
+        "text": "Hoje foi divertido. ...Não estou falando por falar."
     },
     "pre_confess_minsu": {
         "name": "Minsu",

@@ -222,7 +222,7 @@
     },
     "hidden_good_homeroom_4": {
         "name": "{name}",
-        "text": "*Depois da despedida, você caminha até o fim do corredor e olha para trás. A professora está junto à janela, despedindo-se dos formandos. {name} também inclina levemente a cabeça antes de sair da escola.*"
+        "text": "*Depois da despedida, caminho até o fim do corredor e olho para trás. A professora está junto à janela, despedindo-se dos formandos. {name} também inclina levemente a cabeça antes de sair da escola.*"
     },
     "hidden_good_homeroom_ending_title": {
         "name": "",
@@ -455,7 +455,7 @@
     },
     "perfect_seo_4": {
         "name": "Seoyeon",
-        "text": "*A brisa do terraço sopra.* Depois da formatura também venho. Essas plantas só crescem com você por perto."
+        "text": "O resto fica para amanhã."
     },
     "perfect_seo_5": {
         "name": "Seoyeon",
@@ -479,7 +479,7 @@
     },
     "perfect_epilogue_3_seo": {
         "name": "Seoyeon",
-        "text": "*Não apaga as fotos mesmo quando o delineador borrou um pouco. Os algodões em frente ao espelho não foram usados nem uma vez hoje.*"
+        "text": "Escolhe uma."
     },
     "perfect_epilogue_4_seo": {
         "name": "Sistema",
@@ -515,11 +515,11 @@
     },
     "true_seo_4": {
         "name": "{name}",
-        "text": "Você nunca precisou."
+        "text": "*Quando puxo a cadeira, os pés raspam de leve no chão.*"
     },
     "true_seo_5": {
         "name": "Seoyeon",
-        "text": "...saber. Mas demorou algum tempo para acreditar."
+        "text": "Em casa, conversas longas me cansam."
     },
     "true_seo_6": {
         "name": "Seoyeon",
@@ -543,7 +543,7 @@
     },
     "true_seo_8": {
         "name": "{name}",
-        "text": "*Entrelaçamos os mindinhos. O dedo que cortava o ar vazio no primeiro dia agora está preso no meu.*"
+        "text": "*Uma xícara desliza na direção de {name}.*"
     },
     "true_seo_bridge": {
         "name": "{name}",
@@ -732,7 +732,7 @@
     },
     "bitter_dain_1": {
         "name": "{name}",
-        "text": "*Eu confessei. Dain sorriu bem-humorado. Era brilhante como as luzes de um ginásio, mas não durou muito. Cerca de um mês depois, recebi uma mensagem de texto me dizendo para esperar na frente da academia.*"
+        "text": "*Eu me declarei. Dain sorriu, animada. O sorriso era forte como as luzes do ginásio, mas não durou muito. Cerca de um mês depois, recebi uma mensagem pedindo que eu esperasse diante do ginásio.*"
     },
     "bitter_dain_2": {
         "name": "Dain",
@@ -893,11 +893,11 @@
     },
     "confess_fail_1": {
         "name": "{name}",
-        "text": "*Alguns dias depois, diante do portão da escola sob a chuva. Debaixo do guarda-chuva, você vê as costas dela se afastando, mas não chama seu nome nem vai atrás.*"
+        "text": "*Alguns dias depois, diante do portão sob a chuva. Vejo as costas dela se afastando sob o guarda-chuva, mas não chamo seu nome nem vou atrás.*"
     },
     "confess_fail_2": {
         "name": "{name}",
-        "text": "*Você continua parado e abre a conversa. Depois de escrever e apagar várias vezes, deixa apenas uma frase.*"
+        "text": "*Continuo parado e abro a conversa. Depois de escrever e apagar várias vezes, deixo apenas uma frase.*"
     },
     "confess_fail_3": {
         "name": "{name}",
@@ -937,7 +937,7 @@
     },
     "good_1_seo_c": {
         "name": "Seoyeon",
-        "text": "*Atrasa meio passo sem dizer nada. Espera até o ombro de {name} ficar alinhado ao dela.*"
+        "text": "*Seoyeon diminui o passo em meio passo.*"
     },
     "good_1_seo_d": {
         "name": "{name}",
@@ -949,7 +949,7 @@
     },
     "good_3_seo": {
         "name": "{name}",
-        "text": "*\"...Por que não vem.\" Resmunga baixinho, mas é o ritmo de quem ficou me esperando.*"
+        "text": "O sinal abre."
     },
     "good_4_seo": {
         "name": "{name}",
@@ -1001,7 +1001,7 @@
     },
     "good_5_yuna": {
         "name": "{name}",
-        "text": "*Saia pela porta do telhado e desça as escadas. Os passos são lentos, mas não param. Desta vez, lerei até o fim e falarei até o fim.*"
+        "text": "*Saio pela porta do terraço e desço as escadas. Meus passos são lentos, mas não param.*"
     },
     "good_epilogue_1_yuna": {
         "name": "{name}",
@@ -1129,11 +1129,11 @@
     },
     "mayhem_3": {
         "name": "Dain",
-        "text": "*Dain riu como sempre. \"como vai você.\" O final de suas palavras caiu no chão. Que eu soubesse, não havia nenhum ponto de exclamação.*"
+        "text": "*Sorri como sempre. «Se cuida.» O fim da frase cai sem força.*"
     },
     "mayhem_4": {
         "name": "{name}",
-        "text": "*Olhei para as costas das três pessoas. Nenhum dos três se virou.*"
+        "text": "*Olho para as costas das três. Nenhuma se vira.*"
     },
     "mayhem_5": {
         "name": "{name}",
@@ -1145,7 +1145,7 @@
     },
     "mayhem_7": {
         "name": "{name}",
-        "text": "*Veja o memorando não enviado abaixo da foto de Sojung. Desta vez, o balão de fala enviado foi longo. A tela fica escura como está.*"
+        "text": "*Olho a nota não enviada que estava sob a foto de Sojeong. As mensagens enviadas agora formam uma longa sequência. A tela apaga assim mesmo.*"
     },
     "mayhem_8": {
         "name": "Sistema",
