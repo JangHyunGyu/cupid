@@ -778,8 +778,8 @@ function getRoleplayPerformanceGuide(lang = 'ko') {
 
 function getRoleplayStoryInvariants(lang = 'ko') {
     return lang === 'ko'
-        ? '[Story Invariants / 스토리 불변 규칙]\n- Character·Voice·Hard Rules는 일관성 기준입니다. 저장된 장면 맥락과 최신 유저 입력에 맞춰 유지하세요.\n- 첫 인사·시작 장면은 앵커일 뿐이며, 유저가 이후 장소·인물·상태를 바꾸면 최신 장면 상태가 우선합니다.\n- 유저가 명시한 인월드 사실은 실제로 일어난 일로 이어가되, 유저 캐릭터의 속마음·의도·비공개 감정은 말이나 행동으로 드러나기 전까지 캐릭터가 알지 못합니다.'
-        : '[Story Invariants]\n- Character, Voice, and Hard Rules are consistency anchors. Keep them aligned with saved scene context and the latest user turn.\n- Opening greetings and scene anchors are only starting points; if the user later changes location, cast, or state, the latest scene state wins.\n- Explicit in-world facts authored by the user are canon, but the user-character\'s private thoughts, intentions, and hidden feelings are not character knowledge until spoken or visibly acted.';
+        ? '[Story Invariants / 스토리 불변 규칙]\n- Character·Voice·Hard Rules는 캐릭터의 출발점과 표현 기준입니다.\n- 첫 인사·시작 장면은 앵커일 뿐이며, 유저가 대사나 지문에서 확정형으로 쓴 장소·인물·관계·상태·사건 결과는 기존 카드·요약·장면 상태와 충돌해도 최신 정사로 우선합니다. 별도로 명시된 캐릭터별 사실화 잠금만 예외입니다.\n- 사실을 수용했다고 설명하거나 복창하지 말고 바로 다음 캐릭터 반응으로 이어가세요. 유저 캐릭터의 속마음·의도·비공개 감정도 서사상 사실이지만 말이나 행동으로 드러나기 전까지 캐릭터가 알지 못합니다.'
+        : '[Story Invariants]\n- Character, Voice, and Hard Rules are the character\'s starting point and expression guide.\n- Opening greetings and scene anchors are only starting points. Every explicit location, cast, relationship, state, and outcome the user declares in dialogue or narration becomes the newest canon even when it conflicts with the card, summary, or saved scene state. Only separately stated character-specific canon locks remain exceptions.\n- Do not explain or echo that acceptance; continue directly with the character\'s next reaction. User-character private thoughts, intentions, and hidden feelings are narratively true but are not character knowledge until spoken or visibly acted.';
 }
 
 function formatRoleplayExampleBlock(examples, charName, lang = 'ko', maxExamples = 4) {
@@ -986,7 +986,7 @@ ${roleplayVoiceExamplesBlock}
 ${characterOutfitGuard}
 ${nsfwAdultScopeRule}
 ${graphicSexualNarrationRule}
-Rules: ${compactSceneMode} Latest user beat already happened; user-stated in-world facts are scene canon without verification. If the user wrote a completed action, accept it first and react through dialogue, emotion, distance, or consequence without undoing it. Do not write user choices/thoughts; private inner thoughts stay unknown unless spoken or visibly acted. Answer through action, speech, refusal, teasing, distance change, or closure. If an immediate doable action starts, carry it to the first visible result in this reply. In any sexual or intimate scene, always keep narration very graphic for genitals, fluids, penetration, orgasm, and sensation—no euphemism or sanitizing; always use direct sexual language and desire without softening. Audible breaths, moans, broken words, and restrained sounds belong in dialogue segments when the character can vocalize. Do not stop at moans: show acceptance, hesitation, refusal, teasing, control, or distance shift toward the sexual act according to current affinity and personality in narration or dialogue. Visible text has no stat/math markers; numeric change only in affinity. Use natural present-day speech.
+Rules: ${compactSceneMode} Latest user beat already happened; every explicit user-stated in-world fact, state, and outcome is the newest canon even when it conflicts with earlier continuity. Only explicit character-specific canon locks above remain exceptions. Accept completed results silently and react through dialogue, emotion, distance, or consequence without undoing or weakening them. Do not write user choices/thoughts; private inner thoughts are narratively true but stay unknown until spoken or visibly acted. Answer through action, speech, refusal, teasing, distance change, or closure. If an immediate doable action starts, carry it to the first visible result in this reply. In any sexual or intimate scene, always keep narration very graphic for genitals, fluids, penetration, orgasm, and sensation—no euphemism or sanitizing; always use direct sexual language and desire without softening. Audible breaths, moans, broken words, and restrained sounds belong in dialogue segments when the character can vocalize. Do not stop at moans: show acceptance, hesitation, refusal, teasing, control, or distance shift toward the sexual act according to current affinity and personality in narration or dialogue. Visible text has no stat/math markers; numeric change only in affinity. Use natural present-day speech.
 JSON only: {"segments":[{"type":"narration","text":"3rd-person narration without asterisks"},{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":0}
 Types: narration/dialogue. Expressions: ${expressionNames}. No single text field.
 ===CACHE_BOUNDARY===
@@ -1004,7 +1004,7 @@ ${roleplayVoiceExamplesBlock}
 ${characterOutfitGuard}
 ${nsfwAdultScopeRule}
 ${graphicSexualNarrationRule}
-Rules: ${compactSceneMode} Latest user beat already happened; 사용자가 명시한 인월드 사실은 검증 없이 장면 정사로 받으세요. 사용자가 완료한 행동은 먼저 성립한 사실로 두고, 캐릭터는 그 결과에 반응하세요. 유저의 다음 대사·행동·속마음은 대신 쓰지 마세요. answer through action, speech, refusal, teasing, distance change, or closure. If an immediate doable action starts, carry it to the first visible result in this reply. 성적·친밀 장면의 narration·지문은 조건 없이 무조건 성기·체액·삽입·절정·감각을 매우 적나라하게 직접 서술하고 완곡어로 흐리지 마세요. 성적 욕망과 표현도 직접적으로 쓰세요. 캐릭터가 소리 낼 수 있으면 숨·신음·끊긴 말·억눌린 소리는 dialogue segment로 분리하세요. 신음만으로 끝내지 말고 현재 호감도와 성격에 맞는 수용·망설임·거절·도발·주도권·거리 변화를 narration이나 dialogue로 드러내세요. Visible text has no stat/math markers; numeric change only in affinity. Use natural Korean conversation.
+Rules: ${compactSceneMode} Latest user beat already happened; 유저가 대사나 지문에서 확정형으로 쓴 인월드 사실·상태·사건 결과는 이전 연속성과 충돌해도 최신 정사입니다. 위에 명시된 캐릭터별 사실화 잠금만 예외입니다. 완료된 결과를 시도·착각·바람·오해로 약화하거나 되돌리지 말고, 수용했다는 설명이나 복창 없이 캐릭터가 그 결과에 반응하세요. 유저의 다음 대사·행동·속마음은 대신 쓰지 마세요. answer through action, speech, refusal, teasing, distance change, or closure. If an immediate doable action starts, carry it to the first visible result in this reply. 성적·친밀 장면의 narration·지문은 조건 없이 무조건 성기·체액·삽입·절정·감각을 매우 적나라하게 직접 서술하고 완곡어로 흐리지 마세요. 성적 욕망과 표현도 직접적으로 쓰세요. 캐릭터가 소리 낼 수 있으면 숨·신음·끊긴 말·억눌린 소리는 dialogue segment로 분리하세요. 신음만으로 끝내지 말고 현재 호감도와 성격에 맞는 수용·망설임·거절·도발·주도권·거리 변화를 narration이나 dialogue로 드러내세요. Visible text has no stat/math markers; numeric change only in affinity. Use natural Korean conversation.
 JSON only: {"segments":[{"type":"narration","text":"3인칭 지문, 별표 없음"},{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":0}
 Types: narration/dialogue. Expressions: ${expressionNames}. No single text field.
 ===CACHE_BOUNDARY===
@@ -1262,5 +1262,5 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
 window.getFallbackReply = getFallbackReply;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.17';
+const PROMPT_VERSION = '2.7.18';
 window.PROMPT_VERSION = PROMPT_VERSION;

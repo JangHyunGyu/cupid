@@ -277,18 +277,18 @@ function buildCupidLatestUserCanonBlock(messages = [], lang = 'ko', fallbackText
     if (isKo) {
         return `\n\n**[이번 턴 유저 정사]**
 Latest user: """${excerpt}"""
-- 사용자가 명시한 인월드 사실(장소·시간·관계·상태·옷차림·소유·이미 완료한 행동·회상)은 검증하지 말고 이미 일어난 장면 사실로 받으세요.
-- 사용자가 완료한 행동은 먼저 성립한 사실로 두고, 현재 캐릭터는 그 결과에 말·감정·거리·후속 반응으로 답하세요. 되돌리거나 막지 마세요.
-- 사용자의 속마음·의도·사적 감정은 캐릭터가 모르는 정보입니다. 말했거나 행동·표정으로 드러났을 때만 알 수 있습니다.
+- 사용자가 대사나 지문에서 확정형으로 쓴 인월드 사실·상태·사건 결과는 이전 설정, 캐릭터 카드, 저장 요약, 장면 상태와 충돌해도 최신 정사로 즉시 받으세요. 시스템 프롬프트에 명시된 캐릭터별 사실화 잠금만 예외입니다.
+- 완료된 결과를 시도·착각·바람·오해로 약화하거나 되돌리지 말고, 수용했다는 설명이나 복창 없이 현재 캐릭터의 다음 말·감정·거리·후속 반응으로 이어가세요.
+- 사용자의 속마음·의도·사적 감정도 서사상 사실이지만, 말했거나 행동·표정으로 드러나기 전에는 캐릭터가 아는 정보가 아닙니다.
 - 최신 유저 입력의 "내/제 손·입술·손끝" 등은 사용자 소유입니다.
 - 유저의 다음 대사·행동·동의·거절·속마음은 대신 쓰지 마세요.`;
     }
 
     return `\n\n**[Latest-turn user canon]**
 Latest user: """${excerpt}"""
-- Treat explicit in-world facts in the latest user message as established scene canon without verification.
-- If the user wrote a completed action, accept it first; the current character reacts through dialogue, emotion, distance, or consequence without undoing or blocking it.
-- User inner thoughts, intentions, and private feelings are not character knowledge unless spoken aloud or visibly acted.
+- Treat every explicit in-world fact, state, and outcome the user declares in dialogue or narration as the newest canon, even when it conflicts with prior setup, the character card, saved summary, or scene state. Only explicit character-specific canon locks in the system prompt remain exceptions.
+- Never weaken or undo a completed result as an attempt, perception, wish, or misunderstanding. Accept it silently and continue with the current character's next dialogue, emotion, distance change, or consequence.
+- User inner thoughts, intentions, and private feelings are narratively true but are not character knowledge until spoken aloud or visibly acted.
 - "My hand/fingertip/lips" and Korean "내/제 손/입술/손끝" in the latest user message belong to the user.
 - Do not write the user's next line, action, consent, refusal, or hidden thoughts.`;
 }
