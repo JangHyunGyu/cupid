@@ -1483,5 +1483,5 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
 window.getFallbackReply = getFallbackReply;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.20';
+const PROMPT_VERSION = '2.7.21';
 window.PROMPT_VERSION = PROMPT_VERSION;
