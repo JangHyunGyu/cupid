@@ -107,7 +107,7 @@
     },
     "tour_yuna_9": {
         "name": "Yuna",
-        "text": "No es un final — si es el principio de la siguiente historia, entonces está bien."
+        "text": "Me parecía extraño llamarlo el final."
     },
     "tour_yuna_10": {
         "name": "{name}",
@@ -141,7 +141,7 @@
     },
     "tour_dain_1b": {
         "name": "{name}",
-        "text": "*El gimnasio. El lugar por donde pasaron incontables apuestas y remates estos días. — Hoy las luces están prendidas.*"
+        "text": "*El gimnasio. Hoy las luces están encendidas.*"
     },
     "tour_dain_2": {
         "name": "Dain",
@@ -203,6 +203,6 @@
     },
     "tour_dain_end_2": {
         "name": "{name}",
-        "text": "*Habla sin signos de exclamación. Esta vez no agacha la cabeza. La mano de Dain descansa sobre el balón, no sobre su rodilla.*"
+        "text": "*La mano de Dain descansa sobre el balón, no sobre su rodilla.*"
     }
 }
