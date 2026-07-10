@@ -913,11 +913,11 @@
     },
     "day5_ending_good": {
         "name": "{name}",
-        "text": "*Decir 'me gustas' no lo arregló todo de golpe. Aun así, decidimos no dejarlo aquí.*"
+        "text": "*No cambia gran cosa después de la confesión. Simplemente aparece una cita más en mi calendario.*"
     },
     "good_1": {
         "name": "{name}",
-        "text": "*Fuimos torpes, llegamos tarde y más de una vez nos cruzamos sin vernos.*"
+        "text": "*Durante varios días, nuestras conversaciones se atascan una y otra vez. Aun así, no dejamos de hablar.*"
     },
     "good_1b": {
         "name": "{name}",
@@ -929,42 +929,42 @@
     },
     "good_1_seo": {
         "name": "Seoyeon",
-        "text": "Los dos somos torpes. ...Pero esta vez no lo sueltes a mitad de camino."
+        "text": "Vayamos despacio."
     },
     "good_1_seo_b": {
         "name": "Seoyeon",
-        "text": "*Acomoda una vez el borde de la manga de {name}, como si quitara un pétalo de cerezo. El gesto es brusco, pero no aparta.*"
+        "text": "*Seoyeon retira un pétalo enganchado en el puño de la manga de {name}.*"
     },
     "good_1_seo_c": {
         "name": "Seoyeon",
-        "text": "*Seoyeon reduce el paso medio paso.*"
+        "text": "*Seoyeon aminora un poco el paso.*"
     },
     "good_1_seo_d": {
         "name": "{name}",
-        "text": "*Camino junto a Seoyeon. Nuestros pasos a menudo se desacompasan, pero ninguno suelta primero.*"
+        "text": "*Nuestros pasos se acompasan.*"
     },
     "good_2_seo": {
         "name": "{name}",
-        "text": "*Al final del paseo de los cerezos, Seoyeon se para medio paso por delante. Cuando se gira, la mirada tiene menos filo que antes.*"
+        "text": "*Al final del paseo de los cerezos, Seoyeon se detiene ante el paso de peatones.*"
     },
     "good_3_seo": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "El semáforo cambia."
     },
     "good_4_seo": {
         "name": "{name}",
-        "text": "*Yo sonrío, y Seoyeon finge no verlo antes de aflojar un poco el paso.*"
+        "text": "*Seoyeon cruza primero y reduce el paso cerca de la mitad.*"
     },
     "good_5_seo": {
         "name": "{name}",
-        "text": "*Cruzando despacio el final del paseo de los cerezos, pensé que quería volver a recorrerlo con ella la primavera siguiente. Y esta vez sí me salió decirlo.*"
+        "text": "*Al llegar al otro lado, concertamos nuestra próxima cita usando solo una hora y un lugar.*"
     },
     "good_epilogue_1": {
         "name": "{name}",
         "text": "*Llega un mensaje de Seoyeon: «Mañana, a la hora de comer, en la azotea. Esta vez la he reservado como corresponde».*"
     },
     "good_epilogue_2": {
-        "name": "Seoyeon",
+        "name": "{name}",
         "text": "*En la foto, nuestros dos nombres figuran en la casilla del mediodía del registro de uso. Al lado, con la letra de Seoyeon: «No llegues tarde».*"
     },
     "good_epilogue_3": {
@@ -981,11 +981,11 @@
     },
     "good_1_yuna_b": {
         "name": "Yuna",
-        "text": "*Me da una nota doblada. Al abrirla, solo hay una línea: 'La próxima vez, no desaparezcas.'*"
+        "text": "*Me entrega una nota doblada. Al abrirla, solo hay una línea: «La próxima vez, dímelo primero».*"
     },
     "good_1_yuna_b_b": {
         "name": "{name}",
-        "text": "*Una frase corta, pero esta vez se leía como una petición.*"
+        "text": "*Es una frase corta. La tinta se ha corrido a lo largo del pliegue.*"
     },
     "good_2_yuna": {
         "name": "{name}",
@@ -1001,7 +1001,7 @@
     },
     "good_5_yuna": {
         "name": "{name}",
-        "text": "*Salgo por la puerta de la azotea y bajo las escaleras. Mis pasos son lentos, pero no se detienen.*"
+        "text": "*Salimos por la puerta de la azotea y bajamos las escaleras. Nuestros pasos son lentos, pero no se detienen.*"
     },
     "good_epilogue_1_yuna": {
         "name": "{name}",
@@ -1009,7 +1009,7 @@
     },
     "good_epilogue_2_yuna": {
         "name": "Yuna",
-        "text": "*En lugar de hablar, prepara lo siguiente. Después del primer tomo, el segundo. Después de hoy, mañana. Esta es su manera de decir 'sigamos viéndonos'.*"
+        "text": "*El segundo tomo después del primero. Mañana después de hoy. Yuna dobla la nota y me la entrega.*"
     },
     "good_epilogue_3_yuna": {
         "name": "{name}",
@@ -1141,7 +1141,7 @@
     },
     "mayhem_6": {
         "name": "{name}",
-        "text": "*La confirmación fue enviada, pero cada chat aún tenía preguntas sin responder.*"
+        "text": "*Las palabras «me gustas» permanecen, pero en todas las conversaciones se acumulan preguntas que nunca respondí.*"
     },
     "mayhem_7": {
         "name": "{name}",
@@ -1153,7 +1153,7 @@
     },
     "day5_ending_harem": {
         "name": "{name}",
-        "text": "*Me gustan las tres. — Cuando esas palabras se me escaparon, las tres caras se congelaron a la vez.*"
+        "text": "*La respuesta se me atasca en la garganta. Las tres dejan de sonreír al mismo tiempo.*"
     },
     "harem_1": {
         "name": "Seoyeon",
@@ -1189,7 +1189,7 @@
     },
     "harem_8": {
         "name": "Sistema",
-        "text": "─── HAREM END ───"
+        "text": "─── UNRESOLVED END ───"
     },
     "day5_credits": {
         "name": "",
