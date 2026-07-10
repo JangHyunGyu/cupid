@@ -37,7 +37,7 @@
     },
     "night2_msg_dain_general": {
         "name": "Dain",
-        "text": "Ei, amanhã bora pra cantina! Ainda tô com pena de não ter ido hoje!"
+        "text": "Ei, amanhã bora pra cantina! Ainda tô chateada porque não fui hoje!"
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
@@ -65,7 +65,7 @@
     },
     "night2_msg_7": {
         "name": "{name}",
-        "text": "*Três conversas de mensagem se abrem uma após a outra. Antes de poder escrever uma resposta, o indicador de bateria cai uma barra.*"
+        "text": "*Três conversas se abrem uma depois da outra. Antes que eu consiga responder, o indicador da bateria cai uma barra.*"
     },
     "night2_choice": {
         "name": "{name}",
@@ -98,7 +98,7 @@
     },
     "night2_reply_dain_react_high": {
         "name": "Dain",
-        "text": "kkkk tu é doido. Amanhã vem pro ginásio SEM FALTA!!"
+        "text": "kkkk você é doido. Amanhã vem pro ginásio SEM FALTA!!"
     },
     "night2_reply_dain_react_default": {
         "name": "Dain",
@@ -178,7 +178,7 @@
     },
     "night2_hidden_check": {
         "name": "{name}",
-        "text": "*No meio das notificações do mensageiro — aparece mais uma.*"
+        "text": "*No meio das notificações do chat, aparece mais uma.*"
     },
     "night2_hidden_homeroom_1": {
         "name": "{name}",
@@ -210,15 +210,15 @@
     },
     "night2_flashback_2": {
         "name": "{name}",
-        "text": "*Rolei bastante para baixo. Foto do passeio de três meses atrás. Sojeong está sorrindo ao meu lado. Nas fotos seguintes, a mesa de Sojeong está empurrada para trás aos poucos. Como se alguém tivesse cortado de propósito para não mostrar o grafite.*"
+        "text": "*Rolo a tela bastante para baixo. Uma foto do passeio de três meses atrás. Sojeong sorri ao meu lado. Em cada foto seguinte, a carteira dela aparece um pouco mais afastada. A parte de baixo, onde ficava o grafite, está fora do enquadramento.*"
     },
     "night2_flashback_3": {
         "name": "{name}",
-        "text": "*Existem linhas de frases não enviadas no bloco de notas. 'gosto de você.' ‘Professor, Sojung está na recepção—’ ‘Hoje também—’ Tudo foi cortado na primeira linha. Última modificação às 2h17.*"
+        "text": "*O aplicativo de notas está cheio de frases que nunca enviei. «Professora, na carteira da Sojeong—». «Hoje de novo—». Todas param na primeira linha. Última modificação: 2h17.*"
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*Não há nada abaixo da 38ª anotação. Só o título da 39ª está vazio. No dia seguinte, o lugar de Sojung ficou vazio até o fim. A professora apenas disse que Sojung havia mudado de escola.*"
+        "text": "*Depois da 38ª anotação, não há nada. A 39ª tem apenas o título em branco. No dia seguinte, o lugar de Sojeong ficou vazio o dia todo. A professora apenas disse que ela havia mudado de escola.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
@@ -250,7 +250,7 @@
     },
     "night2_end_4_b": {
         "name": "{name}",
-        "text": "*Abri a geladeira. Arroz sobrado, ovos, kimchi. Tiro a marmita e coloco na mesa. Ainda não abri a tampa.*"
+        "text": "*Abro a geladeira. Arroz do dia anterior, ovos, algas. Tiro uma marmita e coloco sobre a mesa. Ainda não abri a tampa.*"
     },
     "night2_end_4_c": {
         "name": "{name}",

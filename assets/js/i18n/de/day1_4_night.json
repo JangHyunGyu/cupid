@@ -1,7 +1,7 @@
 {
     "night_start": {
         "name": "{name}",
-        "text": "*Zurück in meinem Zimmer. Ich liege auf dem Bett. Für einen ersten Tag — ich bin platt. Aber gar nicht schlecht.*"
+        "text": "*Zurück in meinem Zimmer lege ich mich aufs Bett. Der Kirschblütenduft an meinem Uniformhemd geht auf die Decke über. Der erste Tag war lang.*"
     },
     "night_start_3": {
         "name": "{name}",
@@ -29,7 +29,7 @@
     },
     "night_msg_yuna_1": {
         "name": "Yuna",
-        "text": "*...Danke, dass du heute still warst*"
+        "text": "*...Dass du heute so still warst, war angenehm*"
     },
     "night_msg_yuna_2": {
         "name": "Yuna",
@@ -37,7 +37,7 @@
     },
     "night_msg_yuna_3": {
         "name": "{name}",
-        "text": "*'Morgen halte ich dir den Platz frei.' — Die Hand, mit der ich das Handy weglege, bewegt sich ganz langsam.*"
+        "text": "*‚Morgen halte ich dir den Platz frei.‘ — Meine Hand zögert einen Moment, bevor sie das Handy weglegt.*"
     },
     "night_msg_dain_1": {
         "name": "Dain",
@@ -45,7 +45,7 @@
     },
     "night_msg_dain_2": {
         "name": "Dain",
-        "text": "*Bloß nicht abhauen lol*"
+        "text": "*Morgen gibt's die Revanche, haha*"
     },
     "night_msg_dain_3": {
         "name": "Dain",
@@ -53,23 +53,23 @@
     },
     "night_msg_dain_4": {
         "name": "{name}",
-        "text": "*Drei Nachrichten am Stück. Kann sie zwischendurch nicht mal kurz Luft holen?*"
+        "text": "*Die drei Nachrichten kommen fast gleichzeitig an. Noch bevor ich das Antwortfeld öffne, muss ich lächeln.*"
     },
     "night_hidden_check": {
         "name": "{name}",
-        "text": "*Zwischen den Messenger-Benachrichtigungen — fällt mir noch etwas auf.*"
+        "text": "*Zwischen den Messenger-Benachrichtigungen entdecke ich noch eine andere Meldung.*"
     },
     "night_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*In der Schul-App gibt es einen Post von der Klassenlehrerin. 'Klasse 3-2: Mathematerialien für die 1. Stunde morgen mitbringen. — Und der Transferstudent muss sich einfach weiter gut einleben.'*"
+        "text": "*In der Schul-App sehe ich einen Beitrag der Klassenlehrerin. ‚Mitteilung an Klasse 3-2: Morgen die Materialien für die erste Mathestunde mitbringen. — Und der Neue soll sich einfach in Ruhe eingewöhnen.‘*"
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Ich lese die Mitteilung noch einmal. Mein Mundwinkel hebt sich, also lege ich das Handy mit dem Display nach unten.*"
+        "text": "*Ich lese die Mitteilung noch einmal und lege das Handy mit dem Display nach unten. In der dunkel gewordenen Scheibe spiegelt sich kurz mein Gesicht.*"
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Eine Benachrichtigung der Schulgesundheits-App erscheint. ‚Krankenstationsakte: Neuer Schüler — leichter Schwindel. Heute ausreichend trinken und das Frühstück nicht auslassen. Bei erneutem Auftreten die Krankenstation aufsuchen.‘*"
+        "text": "*Eine Benachrichtigung der Schulgesundheits-App erscheint. ‚Eintrag des Krankenzimmers: Neuer Schüler — leichter Schwindel. Heute ausreichend trinken und das Frühstück nicht auslassen. Bei erneutem Auftreten das Krankenzimmer aufsuchen.‘*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
@@ -101,7 +101,7 @@
     },
     "night_yuna_late_2": {
         "name": "{name}",
-        "text": "*Die Anzeige schaltet sich während der Eingabe ein und aus. Das Einzige, was angekommen ist, war „...“.*"
+        "text": "*Die Tippanzeige erscheint und verschwindet wieder. Angekommen ist nur ‚...‘.*"
     },
     "night_yuna_late_3": {
         "name": "{name}",
@@ -109,23 +109,23 @@
     },
     "night_yuna_late_4": {
         "name": "{name}",
-        "text": "*Auch nachdem der Bildschirm dunkel wurde, hielt ich das Handy noch lange fest.*"
+        "text": "*Auch nachdem der Bildschirm dunkel geworden ist, halte ich das Handy noch lange in der Hand.*"
     },
     "night_dain_late_1": {
         "name": "Dain",
-        "text": "*Hey du bist doch noch wach?!*"
+        "text": "*Hey, du bist doch noch wach?!*"
     },
     "night_dain_late_2": {
         "name": "Dain",
-        "text": "*Such jemanden zum Training morgen früh!*"
+        "text": "*Ich suche jemanden fürs Training morgen früh!*"
     },
     "night_dain_late_3": {
         "name": "Dain",
-        "text": "*Nein gilt nicht lol*"
+        "text": "*Nein gilt nicht, haha*"
     },
     "night_dain_late_4": {
         "name": "{name}",
-        "text": "*'Anruf' ist bereits im Antwortfenster gestempelt.*"
+        "text": "*Im Antwortfeld steht bereits ‚Bin dabei‘.*"
     },
     "night_dain_late_4_b": {
         "name": "{name}",
@@ -133,10 +133,10 @@
     },
     "night_end_1": {
         "name": "{name}",
-        "text": "*Ich lege das Handy hin. Ich schaue zur Decke. Der Kirschblütenduft hängt noch in meiner Uniform.*"
+        "text": "*Ich lege das Handy weg und sehe zur Decke. Der Kirschblütenduft haftet noch an meiner Uniform.*"
     },
     "night_end_3": {
         "name": "{name}",
-        "text": "*Die Namen, die ich heute gespeichert habe, bleiben auf meinem Sperrbildschirm. Selbst nachdem ich das Display ausgeschaltet habe, sucht mein Finger noch einmal den Power-Knopf.*"
+        "text": "*Auf dem Sperrbildschirm stehen noch die Namen, die ich heute gespeichert habe. Selbst nachdem das Display dunkel ist, sucht mein Finger noch einmal die Ein-/Aus-Taste.*"
     }
 }

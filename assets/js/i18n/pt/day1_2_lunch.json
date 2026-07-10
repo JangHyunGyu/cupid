@@ -46,7 +46,7 @@
     },
     "lunch_seo_2": {
         "name": "{name}",
-        "text": "*A cobertura está limpa. Cada vaso ainda guarda resquícios de água, e as cadeiras dobráveis estão encostadas na parede em intervalos iguais.*"
+        "text": "*O terraço está limpo. A terra de cada vaso ainda guarda um pouco de umidade, e as cadeiras dobráveis estão encostadas na parede a intervalos regulares.*"
     },
     "lunch_seo_3": {
         "name": "Seoyeon",
@@ -102,7 +102,7 @@
     },
     "lunch_seo_17": {
         "name": "Seoyeon",
-        "text": "*Come em vez de responder. O vento é bom. A escola vista do telhado é maior do que você imagina.*"
+        "text": "*Come em vez de responder. A brisa é agradável. Vista do terraço, a escola parece maior.*"
     },
     "lunch_seo_19": {
         "name": "Seoyeon",
@@ -150,7 +150,7 @@
     },
     "lunch_seo_c1_3_b": {
         "name": "{name}",
-        "text": "*O rótulo da garrafa de água gira na ponta dos dedos. Finja que não sabe e levante os pauzinhos.*"
+        "text": "*Um rótulo meio descolado continua preso à garrafa. Seoyeon volta a erguer o hashi.*"
     },
     "lunch_seo_c2_1": {
         "name": "Seoyeon",
@@ -260,7 +260,7 @@
     },
     "lunch_dain_16": {
         "name": "Dain",
-        "text": "*Rasgando o pão* Aí, sério que você não faz nenhum esporte?"
+        "text": "*Parte o pão com as mãos.* Ei, sério que você não pratica nenhum esporte?"
     },
     "lunch_dain_17": {
         "name": "{name}",
@@ -272,7 +272,7 @@
     },
     "lunch_dain_19": {
         "name": "{name}",
-        "text": "Achei que era só pra te gabar do seu PR."
+        "text": "Achei que você só queria se gabar."
     },
     "lunch_dain_20": {
         "name": "Dain",
@@ -280,7 +280,7 @@
     },
     "lunch_dain_21": {
         "name": "{name}",
-        "text": "Personal Record. Termo da área de esporte."
+        "text": "Personal record. É um termo esportivo."
     },
     "lunch_dain_22": {
         "name": "Dain",
@@ -292,7 +292,7 @@
     },
     "lunch_dain_choice": {
         "name": "Dain",
-        "text": "*A ela tá me olhando com os olhos cheios de expectativa.*",
+        "text": "*Ela me olha com os olhos cheios de expectativa.*",
         "choices": [
             "Um pouquinho. Me ensina?",
             "Tava só fingindo."
@@ -342,7 +342,7 @@
     },
     "lunch_yuna_1_aff_default": {
         "name": "Yuna",
-        "text": "*\"...\" Ela senta sem um bilhete sequer.*"
+        "text": "*\"…\" Ela apenas se senta. Desta vez, sem bilhete.*"
     },
     "lunch_yuna_2": {
         "name": "Yuna",

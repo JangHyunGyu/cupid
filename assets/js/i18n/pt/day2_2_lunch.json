@@ -91,7 +91,7 @@
     },
     "lunch2_seo_7": {
         "name": "{name}",
-        "text": "*Seoyeon não diz mais nada. Enquanto almoçamos, a porta do telhado se abre. Dain acordou.*"
+        "text": "*Seoyeon não diz mais nada. Enquanto comemos, a porta do terraço se abre e Dain aparece.*"
     },
     "lunch2_seo_9": {
         "name": "Dain",
@@ -150,7 +150,7 @@
         "text": "*A mão dela se aproxima.*",
         "choices": [
             "Ficar parado",
-            "Eu limpo eu mesmo"
+            "Eu mesmo limpo"
         ]
     },
     "lunch2_seo_c1_1": {
@@ -183,7 +183,7 @@
     },
     "lunch2_seo_end_c1": {
         "name": "{name}",
-        "text": "*Acabei de limpar a boca, mas o clima do almoço foi interrompido por um momento. Meus olhos se movem na direção que Dain viu.*"
+        "text": "*Ela só limpou o canto da minha boca, mas a mesa fica em silêncio por um instante. Olho na mesma direção que Dain.*"
     },
     "lunch2_seo_c2_1": {
         "name": "{name}",
@@ -219,7 +219,7 @@
     },
     "lunch2_dain_3b_seo": {
         "name": "{name}",
-        "text": "Como o presidente me arrastou ontem, também fiquei curioso sobre você hoje."
+        "text": "Ontem a presidente me arrastou, então hoje eu quis saber como era almoçar com você."
     },
     "lunch2_dain_4b_seo": {
         "name": "Dain",
@@ -243,7 +243,7 @@
     },
     "lunch2_dain_1": {
         "name": "{name}",
-        "text": "*Cantina com a Dain. Revanche do pedra-papel-tesoura de ontem.*"
+        "text": "*Cantina com Dain. Revanche de pedra, papel e tesoura por ontem.*"
     },
     "lunch2_dain_2": {
         "name": "Dain",
@@ -320,7 +320,7 @@
     },
     "lunch2_dain_c1_1": {
         "name": "Dain",
-        "text": "*A expressão de ela endurece. Ela morde o soboro e vira a cabeça sem mastigar.*"
+        "text": "*A expressão dela endurece. Ela morde o soboro e vira a cabeça sem mastigar.*"
     },
     "lunch2_dain_c2_1": {
         "name": "Dain",
@@ -328,7 +328,7 @@
     },
     "lunch2_dain_c3_1": {
         "name": "Dain",
-        "text": "Q-quê, para de rir! *Rasga o pão no meio e empurra um pedaço* ...Toma, come logo."
+        "text": "Quê? Para de rir! *Parte o pão ao meio e empurra um pedaço na minha direção.* ...Toma, come logo."
     },
     "lunch2_dain_c3_2": {
         "name": "Dain",
@@ -396,7 +396,7 @@
     },
     "lunch2_dain_end_l": {
         "name": "Enfermeira",
-        "text": "*Aplica o curativo*Não se mova....É isso."
+        "text": "*Coloca o curativo.* Não se mexe... Pronto."
     },
     "lunch2_dain_end_m": {
         "name": "Enfermeira",
@@ -420,7 +420,7 @@
     },
     "lunch2_dain_end_r": {
         "name": "{name}",
-        "text": "*Enquanto verifico o curativo, vejo um caderno verde-claro saindo da gaveta da mesa. Na primeira linha da página aberta está escrito: 'Para quem você era naquele dia—'. A enfermeira fecha a gaveta.*"
+        "text": "*Enquanto confiro o curativo, vejo um caderno verde-claro saindo da gaveta. Na primeira linha da página aberta está escrito: 'Para você, naquele dia—'. A enfermeira fecha a gaveta.*"
     },
     "lunch2_dain_end_s": {
         "name": "Enfermeira",
@@ -428,7 +428,7 @@
     },
     "lunch2_dain_end_t": {
         "name": "{name}",
-        "text": "*É uma resposta sem importância, mas a mão que segura o puxador da gaveta não se afasta.*"
+        "text": "*A resposta parece banal, mas a mão dela não se afasta do puxador da gaveta.*"
     },
     "lunch2_dain_end_u": {
         "name": "Enfermeira",
@@ -452,7 +452,7 @@
     },
     "lunch2_dain_end_z": {
         "name": "Enfermeira",
-        "text": "Venha se levantar ou molhar. Se continuar bem, deixe como está."
+        "text": "Volta se descolar ou molhar. Se continuar firme, deixa como está."
     },
     "lunch2_dain_end_b2": {
         "name": "{name}",
@@ -577,7 +577,7 @@
     },
     "lunch2_yuna_15": {
         "name": "Yuna",
-        "text": "*Senta no sofá. Deixa o espaço do lado dela disfarçadamente vazio.*"
+        "text": "*Senta no sofá. Deixa livre o espaço ao lado, como se não fosse nada.*"
     },
     "lunch2_yuna_16": {
         "name": "Yuna",
@@ -593,7 +593,7 @@
     },
     "lunch2_yuna_choice": {
         "name": "{name}",
-        "text": "*Não há palavra depois de ‘havia’. Yuna enfia a ponta do marcador no livro.*",
+        "text": "*Ela não continua depois de «Tinha outra pessoa...». Yuna empurra a ponta do marcador para dentro do livro.*",
         "choices": [
             "E essa pessoa, agora?",
             "Não pergunto. Só sento do lado."
@@ -605,7 +605,7 @@
     },
     "lunch2_yuna_c1_2": {
         "name": "Yuna",
-        "text": "*O dedo de ela pressiona firmemente o final do marcador.*"
+        "text": "*O dedo dela pressiona com força a ponta do marcador.*"
     },
     "lunch2_yuna_c1_3": {
         "name": "Yuna",
@@ -613,7 +613,7 @@
     },
     "lunch2_yuna_c1_4": {
         "name": "Yuna",
-        "text": "*Empurra o marcador fundo dentro do livro. A página dobra depois de 'Eu tinha.'*"
+        "text": "*Empurra o marcador até o fundo. A página dobra na altura daquele «Tinha outra pessoa...».*"
     },
     "lunch2_yuna_c1_5": {
         "name": "{name}",
@@ -681,6 +681,6 @@
     },
     "lunch2_yuna_end": {
         "name": "{name}",
-        "text": "*O 'Eu tinha' de Yuna ecoa na minha cabeça. Relembro a página onde o marcador estava colocado.*"
+        "text": "*O «Tinha outra pessoa...» de Yuna fica ecoando na minha cabeça. Volto a imaginar a página marcada.*"
     }
 }

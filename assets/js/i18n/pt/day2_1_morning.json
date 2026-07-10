@@ -151,15 +151,15 @@
     },
     "morning2_dain_claim_6": {
         "name": "Dain",
-        "text": "Eu te vi primeiro~ então é nosso mesmo. Marquei."
+        "text": "Eu te vi primeiro, então é nosso mesmo. Já reservei."
     },
     "morning2_break_transition": {
         "name": "{name}",
-        "text": "*Intervalo. Saí pro corredor.*"
+        "text": "*Intervalo. Saio para o corredor.*"
     },
     "morning2_break_transition_b": {
         "name": "{name}",
-        "text": "*A professora está parada na porta da sala. Segurando a lista de presença, olha de relance pra porta — e nossos olhares se cruzam.*"
+        "text": "*A professora está parada na porta da sala. Com a lista de presença na mão, olha de relance para dentro, e nossos olhares se cruzam.*"
     },
     "morning2_break_1": {
         "name": "{name}",
@@ -183,7 +183,7 @@
     },
     "hidden_homeroom_d2_2_b": {
         "name": "{name}",
-        "text": "*Segui a professora até a sala dos professores. Uma gaveta em uma mesa de canto está ligeiramente aberta. Sob uma pilha de papéis, a borda de um papel manuscrito transparece.*"
+        "text": "*Sigo a professora até a sala dos professores. Uma gaveta numa mesa de canto está entreaberta. Sob uma pilha de papéis, aparece a borda de uma folha manuscrita.*"
     },
     "hidden_homeroom_d2_3": {
         "name": "Professora",
@@ -223,7 +223,7 @@
     },
     "hidden_homeroom_d2_choice1_a": {
         "name": "Professora",
-        "text": "...Policial. Não o de pegar o culpado — o que rastreia o motivo."
+        "text": "...Romance policial. Não daqueles sobre pegar o culpado, mas dos que investigam o motivo."
     },
     "hidden_homeroom_d2_choice1_b": {
         "name": "Professora",
@@ -235,7 +235,7 @@
     },
     "hidden_homeroom_d2_6": {
         "name": "{name}",
-        "text": "*A borda do manuscrito é visível através da gaveta ligeiramente aberta. A professora da sala de aula pousa a xícara de café e fecha a gaveta.*"
+        "text": "*A borda do manuscrito aparece pela gaveta entreaberta. A professora pousa a xícara de café e fecha a gaveta.*"
     },
     "hidden_homeroom_d2_7": {
         "name": "Professora",
@@ -263,7 +263,7 @@
     },
     "hidden_homeroom_d2_8_e": {
         "name": "Professora",
-        "text": "*Colocando o café na mesa* ...Enfim. Da sua parte, tudo bem."
+        "text": "*Pousa a xícara na mesa.* ...Enfim. Da sua parte, tudo certo."
     },
     "hidden_homeroom_d2_8_f": {
         "name": "Professora",
@@ -307,7 +307,7 @@
     },
     "morning2_seo_dust_1": {
         "name": "{name}",
-        "text": "*Tempo de intervalo após o 1º período. Passo por Seoyeon no corredor. Seoyeon para e olha para meu ombro. A mão que segura a prancheta aparece primeiro.*"
+        "text": "*Intervalo depois da primeira aula. Cruzo com Seoyeon no corredor. Ela para e olha para o meu ombro. A mão que segura a prancheta se adianta.*"
     },
     "morning2_seo_dust_2": {
         "name": "Seoyeon",
@@ -355,6 +355,6 @@
     },
     "morning2_end": {
         "name": "{name}",
-        "text": "*A pessoa que não se aproximou de ninguém primeiro durante um ano inteiro — veio até mim.*"
+        "text": "*A pessoa que não tomou a iniciativa com ninguém durante um ano inteiro foi quem veio até mim.*"
     }
 }

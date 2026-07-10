@@ -38,7 +38,7 @@
     },
     "morning3_seo_gate_4": {
         "name": "Seoyeon",
-        "text": "¿Qué importa llegar tarde? Mejor que te regañen sola."
+        "text": "¿Qué importa llegar tarde? Mejor que me regañen sola."
     },
     "morning3_seo_gate_5": {
         "name": "{name}",
@@ -70,7 +70,7 @@
     },
     "morning3_yuna_gate_1": {
         "name": "{name}",
-        "text": "*Me encuentro a Yuna parada frente a la entrada, ida. Con los ojos medio cerrados.*"
+        "text": "*Encuentro a Yuna plantada frente al portón, ausente. Tiene los ojos medio cerrados.*"
     },
     "morning3_yuna_gate_warm_1": {
         "name": "{name}",
@@ -82,7 +82,7 @@
     },
     "morning3_yuna_gate_warm_3": {
         "name": "{name}",
-        "text": "*Saca una nota. 'Te estaba esperando.'*"
+        "text": "*Desdoblo la nota. «Te estaba esperando».*"
     },
     "morning3_yuna_gate_warm_4": {
         "name": "{name}",
@@ -106,7 +106,7 @@
     },
     "morning3_yuna_gate_6": {
         "name": "{name}",
-        "text": "*Una persona que lee toda la noche y llega tarde. Yuna rebuscó en su bolso sin decir una palabra, luego cortó un pan pequeño por la mitad y se lo tendió. Dentro de la bolsa se ve una nota.*"
+        "text": "*Se pasa la noche leyendo y llega tarde. Yuna rebusca en su bolso sin decir nada, parte un panecillo por la mitad y me ofrece un trozo. Dentro de la bolsa asoma una nota.*"
     },
     "morning3_yuna_gate_6_b": {
         "name": "{name}",
@@ -150,7 +150,7 @@
     },
     "morning3_dain_gate_4": {
         "name": "{name}",
-        "text": "¡Espera — ¿¡por qué me agarras la mano?!"
+        "text": "¡Espera! ¿Por qué me agarras de la mano?!"
     },
     "morning3_dain_gate_4_b": {
         "name": "Dain",
@@ -162,7 +162,7 @@
     },
     "morning3_dain_gate_5_b": {
         "name": "{name}",
-        "text": "*Al cruzar la entrada, Dain aterrizó y se le escapó un pequeño ay. Pero al mirarla, sonreía como si nada. — ¿Habré oído mal?*"
+        "text": "*Al cruzar el portón, Dain apoya el pie y se le escapa un leve gemido. Cuando la miro, sonríe como si nada. ¿Lo habré imaginado?*"
     },
     "morning3_dain_gate_cold_1": {
         "name": "Dain",
@@ -218,7 +218,7 @@
     },
     "hidden_homeroom_d3_1": {
         "name": "{name}",
-        "text": "*Recreo. El sonido de un bolígrafo raspando en el aula vacía. El profesor está sentado en el escritorio. El bolígrafo se detiene cuando aparezco en la puerta.*"
+        "text": "*Recreo. El roce de un bolígrafo en el aula vacía. La profesora está sentada ante el escritorio. El bolígrafo se detiene cuando aparezco en la puerta.*"
     },
     "hidden_homeroom_d3_3": {
         "name": "Profesora",
@@ -234,11 +234,11 @@
     },
     "hidden_homeroom_d3_4_b": {
         "name": "{name}",
-        "text": "*La escritura a mano está esparcida entre los papeles volteados. La palma del maestro cubre la esquina del papel.*"
+        "text": "*Entre las hojas vueltas asoma una letra apretada. La palma de la profesora cubre una esquina.*"
     },
     "hidden_homeroom_d3_4_c": {
         "name": "Profesora",
-        "text": "*La expresión del profesor titular vuelve a su habitual indiferencia. Es un manuscrito, pero todavía está entregado.*"
+        "text": "*La expresión de la tutora vuelve a su habitual indiferencia. Es un manuscrito, pero sigue boca abajo.*"
     },
     "hidden_homeroom_d3_4_d": {
         "name": "Profesora",
@@ -250,15 +250,15 @@
     },
     "hidden_homeroom_d3_4_f": {
         "name": "{name}",
-        "text": "*No puedo dar ni un paso. Sobre el escritorio: libro de asistencia, archivos de calificaciones, sobres de expedientes estudiantiles, uno tras otro. La mano del profesor sigue sobre el papel manuscrito.*"
+        "text": "*No consigo moverme. Sobre el escritorio se suceden el libro de asistencia, los informes de notas y los expedientes de los alumnos. La mano de la profesora sigue sobre el manuscrito.*"
     },
     "hidden_homeroom_d3_4_g": {
         "name": "{name}",
-        "text": "*Marcas de bolígrafo rojo se transparentan bajo el papel manuscrito volteado. Dos palabras: 'En espera.' En el momento en que lo veo, las yemas de los dedos del profesor presionan el papel con más fuerza.*"
+        "text": "*Bajo el manuscrito vuelto se transparentan unas marcas de bolígrafo rojo. Dos palabras: «En espera». En cuanto las veo, la profesora aprieta el papel con las yemas de los dedos.*"
     },
     "hidden_homeroom_d3_4_h": {
         "name": "{name}",
-        "text": "*Podría haber fingido no darme cuenta. El profesor no cubre el papel. Cierra la tapa del bolígrafo, luego la vuelve a abrir.*"
+        "text": "*Podría haber fingido no darme cuenta. La profesora no tapa la hoja. Cierra el bolígrafo y vuelve a abrirlo.*"
     },
     "hidden_homeroom_d3_choice": {
         "name": "{name}",
@@ -278,7 +278,7 @@
     },
     "hidden_homeroom_d3_reveal_1_c": {
         "name": "Profesora",
-        "text": "Siete años. *Mira por la ventana.* Empecé en la facultad. Filología Hispánica, especialidad en escritura creativa."
+        "text": "Siete años. *Mira por la ventana.* Empecé en la facultad. Estudiaba Escritura Creativa."
     },
     "hidden_homeroom_d3_reveal_1_d": {
         "name": "{name}",
@@ -294,7 +294,7 @@
     },
     "hidden_homeroom_d3_reveal_2": {
         "name": "Profesora",
-        "text": "El día que esperé el último resultado, la llamada no llegó. Ese día llené la solicitud para la universidad de educación."
+        "text": "El día que esperé el último resultado, la llamada no llegó. Ese mismo día rellené la solicitud para la Facultad de Educación."
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "Profesora",
@@ -366,7 +366,7 @@
     },
     "hidden_homeroom_d3_reveal_choice_a": {
         "name": "Profesora",
-        "text": "*Pausa. La mano que estaba tocando el papel manuscrito se detiene.*...Se siente menos lamentable cuando escucho que se llama persistencia."
+        "text": "*Hace una pausa. La mano que tocaba el manuscrito se detiene.* ...Suena menos patético cuando lo llamas constancia."
     },
     "hidden_homeroom_d3_reveal_choice_b": {
         "name": "Profesora",
@@ -394,7 +394,7 @@
     },
     "hidden_homeroom_d3_reveal_6_e": {
         "name": "Profesora",
-        "text": "*El profesor titular presiona la esquina del manuscrito con el pulgar. El papel está ligeramente arrugado.*"
+        "text": "*La tutora presiona con el pulgar una esquina del manuscrito. El papel se arruga un poco.*"
     },
     "hidden_homeroom_d3_reveal_6_f": {
         "name": "Profesora",
@@ -468,7 +468,7 @@
     },
     "hidden_nurse_d3_3_b": {
         "name": "Enfermera",
-        "text": "*La profesora de salud deja la taza.*"
+        "text": "*La enfermera deja la taza.*"
     },
     "hidden_nurse_d3_3_c": {
         "name": "Enfermera",
@@ -476,11 +476,11 @@
     },
     "hidden_nurse_d3_3_d": {
         "name": "Enfermera",
-        "text": "*La enfermera deja el vaso. La mano que se movía con ligereza hace un momento se queda quieta. Se sienta en la cama.*"
+        "text": "*La enfermera deja el vaso. Sus movimientos, ligeros hasta hace un momento, se detienen. Me siento en la cama.*"
     },
     "hidden_nurse_d3_4": {
         "name": "Enfermera",
-        "text": "*corre la cortina y te entrega un vaso de agua*...siéntate. Puedes sentirte cómodo aquí. Puedes hablar despacio."
+        "text": "*Corre la cortina y me entrega un vaso de agua.* ...Siéntate. Aquí puedes relajarte. Habla a tu ritmo."
     },
     "hidden_nurse_d3_5_b": {
         "name": "Enfermera",
@@ -492,7 +492,7 @@
     },
     "hidden_nurse_d3_5_d": {
         "name": "{name}",
-        "text": "*Después de decir \"similar\", la mano del profesor de salud se detiene brevemente sobre el vaso de agua.*"
+        "text": "*Después de decir «algo así», la mano de la enfermera se detiene un instante sobre el vaso de agua.*"
     },
     "hidden_nurse_d3_5_e": {
         "name": "{name}",
@@ -528,7 +528,7 @@
     },
     "hidden_nurse_d3_5_m": {
         "name": "Enfermera",
-        "text": "¿Esto va al cuidado de la salud...*Se corta la barbilla*Lo escucharé de todos modos. Porque la cama está vacía."
+        "text": "¿Esto cuenta como atención sanitaria...? *Se apoya la barbilla en una mano.* En fin, te escucharé. La cama está libre."
     },
     "hidden_nurse_d3_5_n": {
         "name": "{name}",
@@ -568,7 +568,7 @@
     },
     "hidden_nurse_d3_6_b": {
         "name": "Enfermera",
-        "text": "*La profesora de salud deja el vaso de agua. El agua del fondo del vaso se esparce formando un círculo.*"
+        "text": "*La enfermera deja el vaso de agua. El agua del fondo se extiende en un pequeño círculo.*"
     },
     "hidden_nurse_d3_6_c": {
         "name": "Enfermera",
@@ -600,7 +600,7 @@
     },
     "hidden_nurse_d3_8_b": {
         "name": "{name}",
-        "text": "*Los dedos que sostienen la copa se detienen.*"
+        "text": "*Los dedos que sostienen el vaso se detienen.*"
     },
     "hidden_nurse_d3_8_c": {
         "name": "{name}",
@@ -620,7 +620,7 @@
     },
     "hidden_nurse_d3_8_g": {
         "name": "{name}",
-        "text": "*La banda en el dorso de la mano está ligeramente rota. La cortina se balancea entre la cama y la etiqueta con el nombre. Las tres letras “profesor de salud” son particularmente claras.*"
+        "text": "*El apósito del dorso de la mano se ha despegado un poco. La cortina se balancea entre la cama y su identificación. La palabra «Enfermera» resalta con una claridad extraña.*"
     },
     "hidden_nurse_d3_8_h": {
         "name": "{name}",
@@ -648,7 +648,7 @@
     },
     "hidden_nurse_d3_9_b": {
         "name": "{name}",
-        "text": "*Dejo el vaso de papel y asiento.*"
+        "text": "*La enfermera deja el vaso de papel y asiente.*"
     },
     "hidden_nurse_d3_9_c": {
         "name": "Enfermera",
@@ -734,7 +734,7 @@
     },
     "morning3_date_dain_decline_inner_2": {
         "name": "{name}",
-        "text": "*Voy de observador. — Y justo cuando importa, la arruino.*"
+        "text": "*Presumo de observador y, justo cuando importa, lo estropeo.*"
     },
     "morning3_date_yuna_1": {
         "name": "{name}",
