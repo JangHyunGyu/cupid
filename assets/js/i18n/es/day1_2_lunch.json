@@ -292,7 +292,7 @@
     },
     "lunch_dain_choice": {
         "name": "Dain",
-        "text": "*Me mira con ojos llenos de expectación.*",
+        "text": "*Se le iluminan los ojos.*",
         "choices": [
             "Un poco. ¿Me enseñarías?",
             "Solo fingí."
