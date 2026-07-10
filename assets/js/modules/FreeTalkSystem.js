@@ -67,6 +67,15 @@ function getFreeTalkStablePromptHash(content) {
     return (hash >>> 0).toString(36);
 }
 
+function encodeFreeTalkCacheKeyPart(value) {
+    const text = String(value ?? '');
+    try {
+        return encodeURIComponent(text);
+    } catch {
+        return getFreeTalkStablePromptHash(text);
+    }
+}
+
 function cupidRecentPhraseMatches(pattern, text) {
     pattern.lastIndex = 0;
     return pattern.test(text || '');
@@ -996,14 +1005,16 @@ class FreeTalkSystem {
             }
             _optimized = this._forceLatestUserMessageLast(_optimized, finalContent);
             const _stablePromptHash = getFreeTalkStablePromptHash(_optimized[0]?.content || finalContent);
-            const _cacheKey = charKey ? `cupid:ctx:${_lang}:${charKey}:${this._isRemote ? 'r' : 'f'}:s${_stablePromptHash}` : '';
+            const _cacheKey = charKey
+                ? `cupid:ctx:${encodeFreeTalkCacheKeyPart(_lang)}:${encodeFreeTalkCacheKeyPart(charKey)}:${this._isRemote ? 'r' : 'f'}:s${_stablePromptHash}`
+                : '';
             _lastCacheKey = _cacheKey;
             const _turnMeta = this._createTurnMeta(finalContent);
             _lastTurnMeta = _turnMeta;
             this._activeChatTurnId = _turnMeta?.turnId || null;
             const aiEndpoint = (typeof AI_API_ENDPOINT !== 'undefined' && AI_API_ENDPOINT) ? AI_API_ENDPOINT : API_ENDPOINT;
             _lastAiEndpoint = aiEndpoint;
-            const response = await fetch(aiEndpoint, {
+            const requestInit = {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -1021,7 +1032,19 @@ class FreeTalkSystem {
                     cacheKey: _cacheKey,
                     ...(_turnMeta || {})
                 })
-            });
+            };
+            let response;
+            try {
+                response = await fetch(aiEndpoint, requestInit);
+            } catch (primaryError) {
+                const fallbackEndpoint = (typeof API_ENDPOINT !== 'undefined' && API_ENDPOINT) ? API_ENDPOINT : window.API_ENDPOINT;
+                const canFallback = primaryError instanceof TypeError
+                    && fallbackEndpoint
+                    && fallbackEndpoint !== aiEndpoint;
+                if (!canFallback) throw primaryError;
+                _lastAiEndpoint = fallbackEndpoint;
+                response = await fetch(fallbackEndpoint, requestInit);
+            }
 
             // HTTP 상태 코드 확인 (200번대가 아니면 오류)
             // 400: 잘못된 요청, 401: 인증 실패, 429: 요청 제한, 500: 서버 오류
