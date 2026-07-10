@@ -150,7 +150,7 @@
     },
     "morning3_dain_gate_4": {
         "name": "{name}",
-        "text": "Peraí — por que cê tá segurando a minha mão?!"
+        "text": "Peraí — por que você está segurando a minha mão?!"
     },
     "morning3_dain_gate_4_b": {
         "name": "Dain",
@@ -178,7 +178,7 @@
     },
     "morning3_react_seo_1": {
         "name": "Dain",
-        "text": "Ei! Cê veio junto com a presidente?! Logo de manhã?!"
+        "text": "Ei! Você veio junto com a presidente?! Logo de manhã?!"
     },
     "morning3_react_seo_2": {
         "name": "Yuna",
@@ -242,7 +242,7 @@
     },
     "hidden_homeroom_d3_4_d": {
         "name": "Professora",
-        "text": "...Que cê tá olhando? Por que veio aqui no intervalo?"
+        "text": "...O que você está olhando? Por que veio aqui no intervalo?"
     },
     "hidden_homeroom_d3_4_e": {
         "name": "{name}",
@@ -706,7 +706,7 @@
     },
     "morning3_date_dain_1": {
         "name": "Dain",
-        "text": "Ei! O que cê vai fazer no fim de semana?! Bora fliperama?!"
+        "text": "Ei! O que você vai fazer no fim de semana?! Bora ao fliperama?!"
     },
     "morning3_date_dain_2": {
         "name": "Dain",
@@ -726,7 +726,7 @@
     },
     "morning3_date_dain_decline": {
         "name": "Dain",
-        "text": "Ah é? Beleza, se cê tá ocupado, tranquilo!"
+        "text": "Ah é? Beleza, se você está ocupado, tranquilo!"
     },
     "morning3_date_dain_decline_narr": {
         "name": "Dain",

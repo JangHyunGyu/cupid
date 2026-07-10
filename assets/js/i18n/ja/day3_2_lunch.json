@@ -96,7 +96,7 @@
     },
     "lunch3_give_seo_2": {
         "name": "ダイン",
-        "text": "えー！私も食べたかったのに！"
+        "text": "えー！　あたしも食べたかったのに！"
     },
     "lunch3_seo_witness_1": {
         "name": "{name}",
@@ -194,7 +194,7 @@
     },
     "lunch3_give_yuna_3": {
         "name": "ダイン",
-        "text": "なんで！私は？！"
+        "text": "なんで！　あたしは？"
     },
     "lunch3_expose_1": {
         "name": "{name}",
@@ -222,7 +222,7 @@
     },
     "lunch3_expose_7": {
         "name": "ダイン",
-        "text": "…ちょっと待って。私にも週末遊ぼうって言ったよね？"
+        "text": "……ちょっと待って。あたしにも週末遊ぼうって言ったよね？"
     },
     "lunch3_expose_7_b": {
         "name": "{name}",
@@ -307,7 +307,7 @@
     },
     "lunch3_expose_excuse_3": {
         "name": "ダイン",
-        "text": "私にも考える時間をちょうだい。"
+        "text": "あたしにも考える時間をちょうだい。"
     },
     "lunch3_expose_excuse_4": {
         "name": "ダイン",

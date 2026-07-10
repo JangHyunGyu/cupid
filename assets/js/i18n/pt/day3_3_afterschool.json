@@ -44,7 +44,7 @@
     },
     "after3_reject_for_seo_2": {
         "name": "Dain",
-        "text": "...Hoje cê não vai no ginásio, né."
+        "text": "...Hoje você não vai ao ginásio, né."
     },
     "after3_reject_for_seo_3": {
         "name": "{name}",
@@ -80,7 +80,7 @@
     },
     "after3_seo_5_b": {
         "name": "Seoyeon",
-        "text": "*Ajeitando o cabelo apressada* ...Cê viu?"
+        "text": "*Ajeitando o cabelo às pressas* ...Você viu?"
     },
     "after3_seo_6": {
         "name": "Seoyeon",
@@ -254,7 +254,7 @@
     },
     "after3_yuna_6": {
         "name": "Yuna",
-        "text": "O que cê tá fazendo."
+        "text": "O que você está fazendo?"
     },
     "after3_yuna_7": {
         "name": "{name}",
@@ -488,7 +488,7 @@
     },
     "after3_dain_correct_4": {
         "name": "Dain",
-        "text": "Cê é esquisito."
+        "text": "Você é esquisito."
     },
     "after3_dain_correct_5": {
         "name": "{name}",
@@ -528,7 +528,7 @@
     },
     "after3_dain_dilemma_tell_2": {
         "name": "{name}",
-        "text": "O seu joelho. Cê tá esfregando faz tempo. Isso não foi de torcer hoje, né?"
+        "text": "O seu joelho. Você está esfregando faz tempo. Isso não foi de torcer hoje, né?"
     },
     "after3_dain_dilemma_tell_3": {
         "name": "{name}",
@@ -536,7 +536,7 @@
     },
     "after3_dain_dilemma_tell_4": {
         "name": "Dain",
-        "text": "...Se já sabia, pra que falar? Cê sabe que o campeonato é semana que vem."
+        "text": "...Se já sabia, para que falar? Você sabe que o campeonato é semana que vem."
     },
     "after3_dain_dilemma_tell_5": {
         "name": "{name}",
@@ -564,7 +564,7 @@
     },
     "after3_dain_tell_confirm": {
         "name": "Dain",
-        "text": "...Cê é o pior."
+        "text": "...Você é o pior."
     },
     "after3_dain_tell_confirm_2": {
         "name": "Dain",
@@ -584,11 +584,11 @@
     },
     "after3_dain_choice1_2": {
         "name": "Dain",
-        "text": "...Por que cê não pergunta?"
+        "text": "...Por que você não pergunta?"
     },
     "after3_dain_choice1_3": {
         "name": "{name}",
-        "text": "Porque cê ia dizer que tá tudo bem."
+        "text": "Porque você ia dizer que está tudo bem."
     },
     "after3_dain_choice1_react": {
         "name": "Dain",
@@ -663,7 +663,7 @@
     },
     "after3_confront_admit": {
         "name": "Seoyeon",
-        "text": "...Porque cê não conseguiu recusar."
+        "text": "...Porque você não conseguiu recusar."
     },
     "after3_confront_admit_b": {
         "name": "Seoyeon",
@@ -695,7 +695,7 @@
     },
     "after3_confront_excuse": {
         "name": "Seoyeon",
-        "text": "...Cê não tá vendo que o problema é justamente esse?"
+        "text": "...Você não está vendo que o problema é justamente esse?"
     },
     "after3_confront_excuse_b": {
         "name": "Seoyeon",
@@ -703,7 +703,7 @@
     },
     "after3_confront_excuse_2": {
         "name": "Seoyeon",
-        "text": "Não é com quantas cê marcou. O problema é o que aquela promessa significava pra mim."
+        "text": "Não é com quantas você marcou. O problema é o que aquela promessa significava para mim."
     },
     "after3_confront_excuse_2_b": {
         "name": "Seoyeon",
@@ -803,7 +803,7 @@
     },
     "haeun_warn_2_b": {
         "name": "{name}",
-        "text": "Haeun? O que cê faz aqui?"
+        "text": "Haeun? O que você está fazendo aqui?"
     },
     "haeun_warn_2b": {
         "name": "{name}",
@@ -811,7 +811,7 @@
     },
     "haeun_warn_3": {
         "name": "Haeun",
-        "text": "A veterana — cê acabou de ver a Seoyeon?"
+        "text": "A veterana — você acabou de ver a Seoyeon?"
     },
     "haeun_warn_3_b": {
         "name": "Haeun",
@@ -843,7 +843,7 @@
     },
     "haeun_warn_5c_b": {
         "name": "Seoyeon",
-        "text": "Quando cê sorria daquele jeito pras outras também, eu não gostei."
+        "text": "Quando você sorria daquele jeito para as outras também, eu não gostei."
     },
     "haeun_warn_6": {
         "name": "Haeun",

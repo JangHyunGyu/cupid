@@ -108,7 +108,7 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "*O portão da escola está levemente aberto. Uma presença lá dentro. A professora responsável sai até o portão. Segurando uma sacola de papel.*"
+        "text": "*O portão da escola está entreaberto. Há movimento lá dentro. A professora sai em direção ao portão com uma sacola de papel na mão.*"
     },
     "hidden_homeroom_d4_1_b": {
         "name": "{name}",
@@ -156,7 +156,7 @@
     },
     "hidden_homeroom_d4_4_e": {
         "name": "{name}",
-        "text": "*Silêncio constrangedor. — E a Professora fala primeiro.*"
+        "text": "*Silêncio constrangedor. — E a professora fala primeiro.*"
     },
     "hidden_homeroom_d4_5": {
         "name": "Professora",
