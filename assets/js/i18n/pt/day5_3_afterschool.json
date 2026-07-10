@@ -67,7 +67,7 @@
     "after5_farewell_dain_check": {},
     "after5_farewell_dain_1": {
         "name": "{name}",
-        "text": "*Dain se aproxima vindo do ginásio. Seus passos estão menores que o normal.*"
+        "text": "*Dain se aproxima vindo do ginásio. Ela dá passos mais curtos que o normal.*"
     },
     "after5_farewell_dain_2": {
         "name": "Dain",
@@ -211,7 +211,7 @@
     },
     "after5_last_chance_2_r": {
         "name": "Dain",
-        "text": "*Esfrega o canto do olho. Seu sorriso permanece o mesmo, mas umidade gruda no dorso da mão.*"
+        "text": "*Esfrega o canto do olho. O sorriso continua o mesmo, mas o dorso da mão fica molhado.*"
     },
     "after5_last_chance_2_s": {
         "name": "Dain",

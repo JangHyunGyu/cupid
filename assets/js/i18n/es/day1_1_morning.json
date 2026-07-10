@@ -58,7 +58,7 @@
     },
     "choice_dismiss_1": {
         "name": "Seoyeon",
-        "text": "*Sus pasos se detienen. Solo gira la cabeza hacia {name}.*"
+        "text": "*Se detiene y gira solo la cabeza hacia {name}.*"
     },
     "choice_dismiss_2": {
         "name": "Seoyeon",

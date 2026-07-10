@@ -205,7 +205,7 @@
     },
     "date_yuna_end": {
         "name": "Yuna",
-        "text": "*Olha para {name}. A página que estava virando para sob seus dedos.*"
+        "text": "*Olha para {name}. A página que estava virando fica imóvel sob seus dedos.*"
     },
     "date_yuna_end_b": {
         "name": "Yuna",
