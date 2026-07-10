@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.17';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.18';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function normalizeGalleryPromptBlockForCache(content) {
@@ -229,8 +229,8 @@ function buildGalleryRecentExpressionRepetitionGuard(messages = [], lang = 'en')
             ? '성인 성적 장면의 narration·지문은 반복을 피하더라도 이미 벌어진 행위·신체 부위·성적 감각의 직접성을 낮추거나 완곡·암시·생략으로 바꾸지 않습니다. 이번에 달라진 한두 가지만 고르고 dialogue에는 기존 말투에 맞는 실제 발화만 둡니다.'
             : 'In adult sexual-scene narration, avoiding repetition must not lower the directness of established acts, body parts, or sensations. Select only one or two changed details, and keep dialogue limited to words that fit the established voice.');
     return isKo
-        ? `\n\n[최근 표현 반복 참고]\n최근 3~6개 캐릭터 출력에서 아래 반복 패턴이 보입니다.\n${guardBody}\n플레이어가 방금 다시 요구한 게 아니라면, 이번 턴에는 위 표현·문장 시작·제스처·동의어를 segments[].text에 그대로 반복하지 마세요. 말만 바꿔 같은 감정이나 자세를 되풀이하지 말고, 캐릭터의 욕망/망설임/자존심, 거리 변화, 손의 위치, 경계 반응, 좁혀진 선택지 중 장면에 맞는 쪽을 고르세요. 진행 신호가 있으면 멈춰 있지 말고 첫 가시적 결과까지 이어갑니다. 성인 성적 장면의 추가적인 노골성은 narration에서 담당하고 dialogue에는 현재 캐릭터가 실제로 입 밖에 낼 말만 둡니다. 현재 관계와 성격에 맞는 수용·망설임·거절·도발·주도권·거리 변화를 남기세요.\n단, ${graphicRepetitionNote}`
-        : `\n\n[Recent Expression Repetition Note]\nThe last 3-6 character outputs show these repeated patterns.\n${guardBody}\nUnless the latest player insertion directly mentioned or requested one of them again, do not repeat the expressions, sentence openings, gestures, or close synonyms above in segments[].text this turn. Rather than swapping words while repeating the same emotional summary or static posture, choose a response that fits this character's desire/hesitation/pride, distance change, hand-position change, boundary response, or narrowed choice when the scene calls for it. When the player clearly asks the scene to continue, avoid repeated stillness and carry the beat to its first visible result. In adult sexual scenes, put added explicitness in narration and keep dialogue limited to words the character would actually voice. Preserve acceptance, hesitation, refusal, teasing, control, or distance according to relationship and personality.\nHowever, ${graphicRepetitionNote}`;
+        ? `\n\n[최근 표현 반복 참고]\n최근 3~6개 캐릭터 출력에서 아래 반복 패턴이 보입니다.\n${guardBody}\n플레이어가 방금 다시 요구한 게 아니라면, 이번 턴에는 위 표현·문장 시작·제스처·동의어를 segments[].text에 그대로 반복하지 마세요. 말만 바꿔 같은 감정이나 자세를 되풀이하지 말고, 캐릭터의 욕망/망설임/자존심, 거리 변화, 손의 위치, 경계 반응, 좁혀진 선택지 중 장면에 맞는 쪽을 고르세요. 진행 신호가 있으면 멈춰 있지 말고 첫 가시적 결과까지 이어갑니다. 성인 성적 장면의 추가적인 노골성은 narration에서 담당하고, 실제 입 밖으로 난 숨·신음·끊긴 말·억눌린 소리는 dialogue에 둡니다. 같은 소리를 반복하거나 정해진 신음을 매 턴 붙이지 말고 현재 관계와 성격에 맞는 수용·망설임·거절·도발·주도권·거리 변화를 남기세요.\n단, ${graphicRepetitionNote}`
+        : `\n\n[Recent Expression Repetition Note]\nThe last 3-6 character outputs show these repeated patterns.\n${guardBody}\nUnless the latest player insertion directly mentioned or requested one of them again, do not repeat the expressions, sentence openings, gestures, or close synonyms above in segments[].text this turn. Rather than swapping words while repeating the same emotional summary or static posture, choose a response that fits this character's desire/hesitation/pride, distance change, hand-position change, boundary response, or narrowed choice when the scene calls for it. When the player clearly asks the scene to continue, avoid repeated stillness and carry the beat to its first visible result. In adult sexual scenes, put added explicitness in narration and put audible breaths, moans, broken words, and restrained sounds in dialogue. Do not repeat the same sound or attach a prescribed moan every turn; preserve acceptance, hesitation, refusal, teasing, control, or distance according to relationship and personality.\nHowever, ${graphicRepetitionNote}`;
 }
 
 class GalleryFreeTalk {
@@ -2312,7 +2312,7 @@ ${roleplayVoiceExamplesBlock}
 ${characterOutfitGuard}
 ${typeof getNsfwAdultScopeRule === 'function' ? getNsfwAdultScopeRule(this.lang) : '[Adult Scene Scope] Apply explicit narration only when a sexual scene between clearly adult characters is already established.'}
 ${typeof getGraphicSexualNarrationRule === 'function' ? getGraphicSexualNarrationRule(this.lang) : ''}
-Rules: 1:1 only; third parties stay offstage except ${charName}'s reaction to mentions. Romance, desire, skinship, tension, refusal, teasing, and distance are valid. The adult intimate narration rule above controls explicitness: preserve dialogue voice, put added explicit detail in narration, and do not force new moans or sexual wording into dialogue. Latest user beat already happened; every explicit user-stated in-world fact, state, and outcome is the newest canon even when it conflicts with earlier continuity. Only explicit character-specific canon locks above remain exceptions. Accept completed results silently and react without undoing or weakening them. Do not write user choices/thoughts. Use natural present-day speech.
+Rules: 1:1 only; third parties stay offstage except ${charName}'s reaction to mentions. Romance, desire, skinship, tension, refusal, teasing, and distance are valid. The adult intimate narration rule above controls explicitness: keep physical detail in narration, put sounds the character actually makes in dialogue, and avoid forcing the same stock moan every turn. Latest user beat already happened; every explicit user-stated in-world fact, state, and outcome is the newest canon even when it conflicts with earlier continuity. Only explicit character-specific canon locks above remain exceptions. Accept completed results silently and react without undoing or weakening them. Do not write user choices/thoughts. Use natural present-day speech.
 ${compactGalleryGuidance}
 JSON only: {"segments":[{"type":"narration","text":"3rd-person narration without asterisks"},{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal"}
 Types: narration/dialogue. Expressions: ${compactGalleryExpressions}. No single text field.
@@ -2329,7 +2329,7 @@ ${roleplayVoiceExamplesBlock}
 ${characterOutfitGuard}
 ${typeof getNsfwAdultScopeRule === 'function' ? getNsfwAdultScopeRule(this.lang) : '[성인 장면 적용 범위] 명확히 성인인 인물들의 성적 장면이 이미 성립했을 때만 직접적인 지문 원칙을 적용합니다.'}
 ${typeof getGraphicSexualNarrationRule === 'function' ? getGraphicSexualNarrationRule(this.lang) : ''}
-Rules: 1:1 only; third parties stay offstage except ${charName}'s reaction to mentions. Romance, desire, skinship, tension, refusal, teasing, and distance are valid. 위 성인 장면 지문 원칙에 따라 대사 말투는 유지하고 더 노골적인 정보는 narration에 두며, 노골성을 높이려고 신음이나 성적 표현을 dialogue에 새로 강제하지 마세요. Latest user beat already happened; 유저가 확정형으로 쓴 인월드 사실·상태·사건 결과는 이전 연속성과 충돌해도 최신 정사입니다. 위에 명시된 캐릭터별 사실화 잠금만 예외이며, 완료된 결과를 약화하거나 되돌리지 말고 조용히 수용한 뒤 반응하세요. 유저의 다음 대사·행동·속마음은 대신 쓰지 마세요. Use natural Korean conversation.
+Rules: 1:1 only; third parties stay offstage except ${charName}'s reaction to mentions. Romance, desire, skinship, tension, refusal, teasing, and distance are valid. 위 성인 장면 지문 원칙에 따라 신체의 세부 묘사는 narration에 두고 실제 입 밖으로 난 숨·신음·끊긴 말은 dialogue에 두되, 같은 정형 신음을 매 턴 강제하지 마세요. Latest user beat already happened; 유저가 확정형으로 쓴 인월드 사실·상태·사건 결과는 이전 연속성과 충돌해도 최신 정사입니다. 위에 명시된 캐릭터별 사실화 잠금만 예외이며, 완료된 결과를 약화하거나 되돌리지 말고 조용히 수용한 뒤 반응하세요. 유저의 다음 대사·행동·속마음은 대신 쓰지 마세요. Use natural Korean conversation.
 ${compactGalleryGuidance}
 JSON only: {"segments":[{"type":"narration","text":"3인칭 지문, 별표 없음"},{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal"}
 Types: narration/dialogue. Expressions: ${compactGalleryExpressions}. No single text field.
