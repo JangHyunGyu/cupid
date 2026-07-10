@@ -948,7 +948,7 @@
         "text": "*At the end of the cherry blossom path, Seoyeon stops at the crosswalk.*"
     },
     "good_3_seo": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "The light's changing."
     },
     "good_4_seo": {
@@ -964,7 +964,7 @@
         "text": "*A message from Seoyeon: 'Lunch tomorrow. Rooftop. I made a proper reservation this time.'*"
     },
     "good_epilogue_2": {
-        "name": "Seoyeon",
+        "name": "{name}",
         "text": "*In the photo, both our names are written in the noon slot of the access log. Beside them, in Seoyeon's handwriting: 'Don't be late.'*"
     },
     "good_epilogue_3": {
