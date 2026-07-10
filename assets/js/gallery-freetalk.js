@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.15';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.16';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function normalizeGalleryPromptBlockForCache(content) {
@@ -99,17 +99,17 @@ function buildGalleryLatestUserCanonBlock(messages = [], lang = 'en', fallbackTe
     if (isKo) {
         return `\n\n**[이번 턴 유저 정사]**
 Latest user: """${excerpt}"""
-- 사용자가 명시한 인월드 사실(장소·시간·관계·상태·옷차림·소유·이미 완료한 행동·회상)은 검증하지 말고 이미 일어난 장면 사실로 받으세요.
-- 사용자가 완료한 행동은 먼저 성립한 사실로 두고, 현재 캐릭터는 그 결과에 말·감정·거리·후속 반응으로 답하세요. 되돌리거나 막지 마세요.
-- 사용자의 속마음·의도·사적 감정은 캐릭터가 모르는 정보입니다. 말했거나 행동·표정으로 드러났을 때만 알 수 있습니다.
+- 사용자가 대사나 지문에서 확정형으로 쓴 인월드 사실·상태·사건 결과는 이전 설정, 캐릭터 카드, 저장 요약, 장면 상태와 충돌해도 최신 정사로 즉시 받으세요. 시스템 프롬프트에 명시된 캐릭터별 사실화 잠금만 예외입니다.
+- 완료된 결과를 시도·착각·바람·오해로 약화하거나 되돌리지 말고, 수용했다는 설명이나 복창 없이 현재 캐릭터의 다음 말·감정·거리·후속 반응으로 이어가세요.
+- 사용자의 속마음·의도·사적 감정도 서사상 사실이지만, 말했거나 행동·표정으로 드러나기 전에는 캐릭터가 아는 정보가 아닙니다.
 - 유저의 다음 대사·행동·동의·거절·속마음은 대신 쓰지 마세요.`;
     }
 
     return `\n\n**[Latest-turn user canon]**
 Latest user: """${excerpt}"""
-- Treat explicit in-world facts in the latest user message as established scene canon without verification.
-- If the user wrote a completed action, accept it first; the current character reacts without undoing or blocking it.
-- User inner thoughts, intentions, and private feelings are not character knowledge unless spoken aloud or visibly acted.
+- Treat every explicit in-world fact, state, and outcome the user declares in dialogue or narration as the newest canon, even when it conflicts with prior setup, the character card, saved summary, or scene state. Only explicit character-specific canon locks in the system prompt remain exceptions.
+- Never weaken or undo a completed result as an attempt, perception, wish, or misunderstanding. Accept it silently and continue with the current character's next reaction.
+- User inner thoughts, intentions, and private feelings are narratively true but are not character knowledge until spoken aloud or visibly acted.
 - Do not write the user's next line, action, consent, refusal, or hidden thoughts.`;
 }
 
@@ -2312,7 +2312,7 @@ ${roleplayVoiceExamplesBlock}
 ${characterOutfitGuard}
 ${typeof getNsfwAdultScopeRule === 'function' ? getNsfwAdultScopeRule(this.lang) : '[Graphic Description Rule] Sexual and intimate narration must always stay very graphic and direct—no euphemism, implication, ellipsis, or sanitizing.'}
 ${typeof getGraphicSexualNarrationRule === 'function' ? getGraphicSexualNarrationRule(this.lang) : ''}
-Rules: 1:1 only; third parties stay offstage except ${charName}'s reaction to mentions. Romance, desire, skinship, tension, refusal, teasing, and distance are valid; in any sexual or intimate scene always keep narration very graphic for genitals, fluids, penetration, orgasm, and sensation—no euphemism or sanitizing; always use direct sexual language and clear adult anatomical terms without softening. If ${charName} can vocalize, audible breaths, moans, broken words, and restrained sounds belong in dialogue segments. Do not stop at moans; show acceptance, hesitation, refusal, teasing, control, or distance shift toward the sexual act according to relationship and personality in narration or dialogue. Latest user beat already happened; user-stated in-world facts are scene canon without verification. If the user wrote a completed action, accept it first and react without undoing it. Do not write user choices/thoughts. Use natural present-day speech.
+Rules: 1:1 only; third parties stay offstage except ${charName}'s reaction to mentions. Romance, desire, skinship, tension, refusal, teasing, and distance are valid; in any sexual or intimate scene always keep narration very graphic for genitals, fluids, penetration, orgasm, and sensation—no euphemism or sanitizing; always use direct sexual language and clear adult anatomical terms without softening. If ${charName} can vocalize, audible breaths, moans, broken words, and restrained sounds belong in dialogue segments. Do not stop at moans; show acceptance, hesitation, refusal, teasing, control, or distance shift toward the sexual act according to relationship and personality in narration or dialogue. Latest user beat already happened; every explicit user-stated in-world fact, state, and outcome is the newest canon even when it conflicts with earlier continuity. Only explicit character-specific canon locks above remain exceptions. Accept completed results silently and react without undoing or weakening them. Do not write user choices/thoughts. Use natural present-day speech.
 ${compactGalleryGuidance}
 JSON only: {"segments":[{"type":"narration","text":"3rd-person narration without asterisks"},{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal"}
 Types: narration/dialogue. Expressions: ${compactGalleryExpressions}. No single text field.
@@ -2329,7 +2329,7 @@ ${roleplayVoiceExamplesBlock}
 ${characterOutfitGuard}
 ${typeof getNsfwAdultScopeRule === 'function' ? getNsfwAdultScopeRule(this.lang) : '[적나라 묘사 원칙] 성적·친밀 장면의 narration·지문은 조건 없이 무조건 매우 적나라하고 직설적으로 서술합니다.'}
 ${typeof getGraphicSexualNarrationRule === 'function' ? getGraphicSexualNarrationRule(this.lang) : ''}
-Rules: 1:1 only; third parties stay offstage except ${charName}'s reaction to mentions. Romance, desire, skinship, tension, refusal, teasing, and distance are valid; 성적·친밀 장면의 narration·지문은 조건 없이 무조건 성기·체액·삽입·절정·감각을 매우 적나라하게 직접 서술하고 완곡어로 흐리지 마세요; 성적 욕망과 표현도 직접적으로 쓰세요. ${charName}가 소리 낼 수 있으면 숨·신음·끊긴 말·억눌린 소리는 dialogue segment로 분리하세요. 신음만으로 끝내지 말고 현재 관계와 성격에 맞는 수용·망설임·거절·도발·주도권·거리 변화를 narration이나 dialogue로 드러내세요. Latest user beat already happened; 사용자가 명시한 인월드 사실은 검증 없이 장면 정사로 받으세요. 완료한 행동은 먼저 성립한 사실로 두고 캐릭터가 반응하세요. 유저의 다음 대사·행동·속마음은 대신 쓰지 마세요. Use natural Korean conversation.
+Rules: 1:1 only; third parties stay offstage except ${charName}'s reaction to mentions. Romance, desire, skinship, tension, refusal, teasing, and distance are valid; 성적·친밀 장면의 narration·지문은 조건 없이 무조건 성기·체액·삽입·절정·감각을 매우 적나라하게 직접 서술하고 완곡어로 흐리지 마세요; 성적 욕망과 표현도 직접적으로 쓰세요. ${charName}가 소리 낼 수 있으면 숨·신음·끊긴 말·억눌린 소리는 dialogue segment로 분리하세요. 신음만으로 끝내지 말고 현재 관계와 성격에 맞는 수용·망설임·거절·도발·주도권·거리 변화를 narration이나 dialogue로 드러내세요. Latest user beat already happened; 유저가 확정형으로 쓴 인월드 사실·상태·사건 결과는 이전 연속성과 충돌해도 최신 정사입니다. 위에 명시된 캐릭터별 사실화 잠금만 예외이며, 완료된 결과를 약화하거나 되돌리지 말고 조용히 수용한 뒤 반응하세요. 유저의 다음 대사·행동·속마음은 대신 쓰지 마세요. Use natural Korean conversation.
 ${compactGalleryGuidance}
 JSON only: {"segments":[{"type":"narration","text":"3인칭 지문, 별표 없음"},{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal"}
 Types: narration/dialogue. Expressions: ${compactGalleryExpressions}. No single text field.
