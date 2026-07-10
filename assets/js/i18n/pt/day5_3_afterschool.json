@@ -21,7 +21,7 @@
     },
     "after5_farewell_seo_4": {
         "name": "Seoyeon",
-        "text": "Bem, eu esperava por isso. Porque você não se moveu como eu esperava desde o início."
+        "text": "Bem, eu já esperava por isso."
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
@@ -83,7 +83,7 @@
     },
     "after5_farewell_dain_4_b": {
         "name": "{name}",
-        "text": "*Sorrindo de lado, me dá um soquinho no ombro. — Mesma força do primeiro dia.*"
+        "text": "*Dain dá um soquinho de leve no meu ombro.*"
     },
     "after5_farewell_dain_4_c": {
         "name": "Dain",
@@ -107,7 +107,7 @@
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
-        "text": "*Não é fácil para mim pedir desculpas. Só levantei a mão uma vez na frente do portão da escola. Obrigado.*"
+        "text": "*No portão da escola, levanto uma mão para me despedir.*"
     },
     "after5_hidden_farewell_3b": {
         "name": "{name}",
@@ -115,7 +115,7 @@
     },
     "after5_sunset_1": {
         "name": "{name}",
-        "text": "*O pôr do sol se prende em cada janela do pátio. Da sala de transmissões vem o aviso de encerramento do evento, e os alto-falantes do campo rangem com um compasso de atraso.*"
+        "text": "*O pôr do sol se reflete em todas as janelas das salas. Da sala de transmissão vem o aviso de encerramento do evento, e os alto-falantes do campo chiam um instante depois.*"
     },
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
@@ -154,11 +154,11 @@
     },
     "after5_last_chance_2_f": {
         "name": "{name}",
-        "text": "*Um segundo de silêncio. O vento balança o cabelo dela. Ela não tira do rosto.*"
+        "text": "*O vento joga o cabelo sobre o rosto dela. Desta vez, Seoyeon não o afasta.*"
     },
     "after5_last_chance_2_g": {
         "name": "Seoyeon",
-        "text": "— Desta vez não quero te deixar ir. Já que você voltou."
+        "text": "Eu vou falar. Fica só mais um pouco."
     },
     "after5_last_chance_2_h": {
         "name": "{name}",
@@ -166,11 +166,11 @@
     },
     "after5_last_chance_2_i": {
         "name": "Seoyeon",
-        "text": "Dessa vez, pega."
+        "text": "Pega."
     },
     "after5_last_chance_2_j": {
         "name": "Seoyeon",
-        "text": "*As pontas dos dedos que ela estende param diante de {name}. É uma mão esperando uma resposta.*"
+        "text": "*A mão de Seoyeon para diante de {name}.*"
     },
     "after5_last_chance_seo_low_1": {
         "name": "{name}",
@@ -195,19 +195,19 @@
     },
     "after5_last_chance_2_n": {
         "name": "Dain",
-        "text": "*Os olhos arregalam. Um segundo. Dois segundos.*"
+        "text": "*Ela fica imóvel. A bola em sua mão baixa devagar.*"
     },
     "after5_last_chance_2_o": {
         "name": "Dain",
-        "text": "...Sério?"
+        "text": "...Você voltou?"
     },
     "after5_last_chance_2_p": {
         "name": "Dain",
-        "text": "*Os lábios dela tremem. Respiro fundo antes de responder.*"
+        "text": "*Os lábios dela tremem. Ela precisa engolir em seco antes de responder.*"
     },
     "after5_last_chance_2_q": {
         "name": "Dain",
-        "text": "Esperei. Desde ontem. Não, desde anteontem. Mas — não fica tudo bem de cara."
+        "text": "Estou esperando desde ontem. Mas não consigo sorrir como se nada tivesse acontecido."
     },
     "after5_last_chance_2_r": {
         "name": "Dain",
@@ -240,7 +240,7 @@
     },
     "after5_last_chance_yuna_4": {
         "name": "{name}",
-        "text": "*Não tenho nada preparado, mas dessa vez meu pé não recua. Yuna não insiste.*"
+        "text": "*Não recuo. Yuna não me apressa.*"
     },
     "after5_last_chance_yuna_5": {
         "name": "Yuna",
@@ -272,7 +272,7 @@
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*Meus pés param. Respiro uma vez e chamo o nome.*"
+        "text": "*Paro e chamo o nome dela.*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",
@@ -281,16 +281,16 @@
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "Seoyeon",
-        "text": "*Caminhando lado a lado.* ...Demorou. Mas pelo menos dessa vez você não fugiu. Essa frase, hoje eu não vou deixar passar batido."
+        "text": "*Caminhamos lado a lado.* ...Demorou. Mas eu vou escutar."
     },
     "after5_confess_react_seo_low": {
         "name": "Seoyeon",
-        "text": "*Ela fica em silêncio por um bom tempo.* ...Obrigada. Mas acho que agora eu não devia fingir que está tudo bem só por causa dessa frase."
+        "text": "*Ela fica em silêncio por um bom tempo.* ...Eu ouvi. Por enquanto, isso basta."
     },
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*Saindo da escola.* Ei, sério?! ...Mesmo? Esperar eu esperei. Mas sorrir na mesma hora faria parecer fácil demais. Desta vez fala até o fim."
+        "text": "*Enquanto saímos da escola.* Ei... Eu esperei, sim. Fala tudo o que você veio falar."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",
@@ -299,7 +299,7 @@
     "after5_confess_aff_yuna": {},
     "after5_confess_react_yuna": {
         "name": "Yuna",
-        "text": "*Caminhamos lado a lado.* ...Eu sabia. Mas hoje — leio até o fim."
+        "text": "*Caminhamos lado a lado.* ...Eu já sabia. Mas vou escutar."
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",
@@ -307,7 +307,7 @@
     },
     "after5_confess_react_yuna_b": {
         "name": "Yuna",
-        "text": "*Pousa o livro. A expressão não muda. — Mas as mãos tremem.*"
+        "text": "*Abaixa o livro. As mãos tremem.*"
     },
     "after5_confess_react_yuna_c": {
         "name": "Yuna",
@@ -351,11 +351,11 @@
     },
     "after5_confess_no": {
         "name": "{name}",
-        "text": "*A garganta trava. Não sai nada. De novo.*"
+        "text": "*A garganta trava. Nenhuma palavra sai.*"
     },
     "after5_confess_no_2": {
         "name": "{name}",
-        "text": "*Vem a brisa da noite. A sombra atrás de mim se alonga. — Fiquei com as mãos vazias.*"
+        "text": "*A brisa do entardecer sopra. A sombra atrás de mim se alonga.*"
     },
     "after5_confess_no_2b": {
         "name": "{name}",

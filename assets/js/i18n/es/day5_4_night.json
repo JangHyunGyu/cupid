@@ -439,7 +439,7 @@
     },
     "perfect_seo_1": {
         "name": "{name}",
-        "text": "*La azotea de Seoyeon. De pie entre las macetas que cuida ella.*"
+        "text": "*En la azotea hay varias jardineras bajo la barandilla. La tierra conserva manchas de humedad.*"
     },
     "perfect_seo_1_b": {
         "name": "Seoyeon",
@@ -447,11 +447,11 @@
     },
     "perfect_seo_2": {
         "name": "{name}",
-        "text": "*Tiene los ojos empapados. Aun así, no aparta la mirada.*"
+        "text": "*Tiene manchas bajo los ojos. Seoyeon dobla un pañuelo y se lo guarda en el bolsillo.*"
     },
     "perfect_seo_3": {
         "name": "Seoyeon",
-        "text": "...Incluso cuando tengas esta cara, no huyas."
+        "text": "Por hoy, solo voy a ordenar hasta aquí."
     },
     "perfect_seo_4": {
         "name": "Seoyeon",
@@ -459,15 +459,15 @@
     },
     "perfect_seo_5": {
         "name": "Seoyeon",
-        "text": "*Extiende la mano. No el meñique. La mano entera.*"
+        "text": "*Seoyeon camina primero hacia las escaleras y se detiene ante la puerta.*"
     },
     "perfect_seo_5_b": {
         "name": "{name}",
-        "text": "*Corre la brisa en la azotea.*"
+        "text": "*La puerta queda abierta.*"
     },
     "perfect_epilogue_1_seo": {
         "name": "{name}",
-        "text": "*Caminaba por el mismo camino todas las mañanas. Junto a Seoyeon, el mismo camino tenía una expresión diferente cada vez.*"
+        "text": "*Incluso después de graduarnos, la puerta de la azotea se abría de vez en cuando.*"
     },
     "perfect_epilogue_bridge_seo": {
         "name": "Sistema",
@@ -475,7 +475,7 @@
     },
     "perfect_epilogue_2_seo": {
         "name": "{name}",
-        "text": "*Día de ingreso a la universidad. Un mensaje en el celular. 'Hoy regué la planta. — Pero vuelve pronto.'*"
+        "text": "*El día de mi ceremonia de ingreso en la universidad, Seoyeon envía una foto de dos plantas nuevas y un espacio vacío.*"
     },
     "perfect_epilogue_3_seo": {
         "name": "Seoyeon",
@@ -487,11 +487,11 @@
     },
     "bitter_seo_1": {
         "name": "{name}",
-        "text": "*Me declaré. Seoyeon dijo intentémoslo. Tras un mes más o menos, llegó un mensaje pidiendo que nos viéramos en el café frente a la escuela. El mensaje terminaba solo con un punto.*"
+        "text": "*Un mes después, más o menos, envía un mensaje breve pidiéndome que nos veamos en la cafetería frente a la escuela.*"
     },
     "bitter_seo_2": {
         "name": "Seoyeon",
-        "text": "...Pensé que estaríamos bien. Supongo que tú y yo llegamos un paso tarde."
+        "text": "Fuimos demasiado cuidadosos."
     },
     "bitter_seo_2_b": {
         "name": "{name}",
@@ -499,19 +499,19 @@
     },
     "bitter_seo_3": {
         "name": "{name}",
-        "text": "*Salí de la cafetería. Está lloviendo. Antes había un paraguas; ahora hay dos.*"
+        "text": "*Salgo de la cafetería. Llueve. Solo tenemos un paraguas, pero nuestras paradas de autobús quedan en direcciones opuestas.*"
     },
     "true_seo_1": {
         "name": "{name}",
-        "text": "*La habitación de Seoyeon. Sus padres están fuera. Los objetos sobre el escritorio están alineados como medidos con regla, y la foto familiar en el marco está ligeramente inclinada.*"
+        "text": "*La habitación de Seoyeon. Sobre el escritorio hay tres plantas y un archivador. Junto a la estantería se apoya una foto familiar.*"
     },
     "true_seo_2": {
         "name": "{name}",
-        "text": "*— Salvo por una cosa. Sobre el escritorio, una fila de macetas que cuida ella.*"
+        "text": "*Hay una hoja doblada bajo uno de los platos de las macetas.*"
     },
     "true_seo_3": {
         "name": "Seoyeon",
-        "text": "Contigo, creo que no necesito la cara ensayada."
+        "text": "Siéntate. La silla está ahí."
     },
     "true_seo_4": {
         "name": "{name}",
@@ -523,23 +523,23 @@
     },
     "true_seo_6": {
         "name": "Seoyeon",
-        "text": "*Sonríe. El viento le desordena el cabello.*"
+        "text": "*Seoyeon saca el papel de debajo del plato de la maceta.*"
     },
     "true_seo_6b": {
         "name": "Seoyeon",
-        "text": "Siempre tuve que sonreír. Contigo solo quiero ser yo."
+        "text": "Por eso lo escribí. No quería olvidarlo."
     },
     "true_seo_7": {
         "name": "Seoyeon",
-        "text": "...Quédate conmigo."
+        "text": "No lo leas. Todavía no."
     },
     "true_seo_7_b": {
         "name": "Seoyeon",
-        "text": "*Duda un momento y me tiende el meñique.*"
+        "text": "*El papel vuelve debajo del plato.*"
     },
     "true_seo_7b": {
         "name": "{name}",
-        "text": "*Yo también tiendo la mano. Justo antes de rozarnos, Seoyeon sonríe la primera.*"
+        "text": "*Seoyeon coloca dos tazas sobre el escritorio.*"
     },
     "true_seo_8": {
         "name": "{name}",
@@ -547,11 +547,11 @@
     },
     "true_seo_bridge": {
         "name": "{name}",
-        "text": "*La promesa de Seoyeon aún me dura en los dedos.*"
+        "text": "*La puerta de la habitación queda entreabierta.*"
     },
     "true_epilogue_1_seo": {
         "name": "{name}",
-        "text": "*Cinco días. Eso fue lo que tomó ver las yemas de los dedos detrás del portapapeles de Seoyeon.*"
+        "text": "*Cinco días. Eso fue lo que tardé en memorizar dónde estaba cada cosa sobre el escritorio de Seoyeon.*"
     },
     "ending_aff_check_yuna": {
         "name": "Sistema",
@@ -571,15 +571,15 @@
     },
     "perfect_yuna_4": {
         "name": "{name}",
-        "text": "*La última frase de la novela: 'Había alguien que no desaparecía.' Debajo, la tinta se corre un poco.*"
+        "text": "*La tinta está un poco corrida bajo la última frase del relato.*"
     },
     "perfect_yuna_5": {
         "name": "Yuna",
-        "text": "*Se levanta y me abraza sin decir nada. La luz de la ventana rota se alarga sobre el suelo. Su mano se detiene despacio en mi espalda.*"
+        "text": "*Se levanta y me abraza sin decir nada. La luz que entra por la ventana entreabierta se alarga sobre el suelo. La mano que apoya en mi espalda tarda un instante en quedarse quieta.*"
     },
     "perfect_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*Me sentaba en el mismo lugar todos los días. El sonido de Yuna pasando las páginas también era ligeramente diferente cada día.*"
+        "text": "*Me siento todos los días en el mismo sitio. Yuna ya no se queda demasiado tiempo en la misma página.*"
     },
     "perfect_epilogue_bridge_yuna": {
         "name": "Sistema",
@@ -591,7 +591,7 @@
     },
     "perfect_epilogue_3_yuna": {
         "name": "Yuna",
-        "text": "*Sigue hablando poco. Pero solo con {name}, la longitud de sus frases ha cambiado.*"
+        "text": "*Sigue hablando poco. Las notas que envía a {name} se han vuelto un poco más largas.*"
     },
     "perfect_epilogue_4_yuna": {
         "name": "Sistema",
@@ -732,7 +732,7 @@
     },
     "bitter_dain_1": {
         "name": "{name}",
-        "text": "*Confesé. Dain sonrió de buen humor. Era brillante como las luces de un gimnasio, pero no duró mucho. Aproximadamente un mes después, recibí un mensaje de texto diciéndome que esperara frente al gimnasio.*"
+        "text": "*Me declaré. Un mes después, más o menos, recibo un mensaje pidiéndome que espere frente al gimnasio.*"
     },
     "bitter_dain_2": {
         "name": "Dain",
@@ -748,7 +748,7 @@
     },
     "bitter_epilogue_1": {
         "name": "{name}",
-        "text": "*Después de graduarnos, el contacto se fue espaciando. De una vez al mes pasó a una cada dos, dejar mensajes en visto se hizo costumbre, y un día — cuando fui a escribir algo y no supe qué decir — entendí que se había acabado.*"
+        "text": "*Después de graduarnos, hablamos cada vez menos. Una vez al mes se convierte en una vez cada dos meses. Un día, dejo escrito «¿Qué debería decir?» en la caja de mensajes y apago la pantalla.*"
     },
     "bitter_epilogue_2": {
         "name": "{name}",
@@ -812,16 +812,16 @@
     },
     "true_epilogue_3": {
         "name": "{name}",
-        "text": "*Pero visto con perspectiva — creo que ya estaba decidido desde la primera vez que nuestras miradas se cruzaron. Solo tardé cinco días en reconocerlo.*"
+        "text": "*Pero, al mirar atrás, todo empezó muy rápido. Solo tardé cinco días en admitirlo.*"
     },
     "true_epilogue_4": {},
     "true_epilogue_4_seo": {
         "name": "{name}",
-        "text": "*Las llamadas de su madre siguen siendo cortas, y la práctica frente al espejo no ha terminado. Pero Seoyeon a veces me mira ahora con un rostro sin practicar.*"
+        "text": "*Las llamadas de su madre siguen siendo breves y la nota junto al espejo permanece ahí. Ahora, a veces Seoyeon habla sin recurrir a una nota.*"
     },
     "true_epilogue_4_yuna": {
         "name": "{name}",
-        "text": "*El contacto de su senior sigue desaparecido. El asiento del rincón de la biblioteca sigue vacío. Pero Yuna ahora usa su voz antes que las notas.*"
+        "text": "*El contacto de su antigua compañera sigue borrado. El asiento del rincón de la biblioteca sigue vacío. Pero ahora Yuna usa la voz antes que las notas.*"
     },
     "true_epilogue_4_dain": {
         "name": "{name}",
