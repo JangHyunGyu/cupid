@@ -21,7 +21,7 @@
     },
     "wall_seo_pre_low_1": {
         "name": "{name}",
-        "text": "*Seoyeon schweigt. Ich muss den ersten Schritt machen.*"
+        "text": "*Seoyeon schweigt.*"
     },
     "wall_seo_pre_low_1b": {
         "name": "{name}",
@@ -37,11 +37,11 @@
     },
     "wall_seo_to_park": {
         "name": "{name}",
-        "text": "*Ich verließ das Haus und ging zum Park.*"
+        "text": "*Ich verlasse das Haus und gehe zum Park.*"
     },
     "wall_seo_3": {
         "name": "{name}",
-        "text": "*Seoyeon sitzt auf einer Parkbank. Die Enden meines Make-ups sind etwas verschmiert.*"
+        "text": "*Seoyeon sitzt auf einer Parkbank. Ihr Make-up ist an den Rändern leicht verschmiert.*"
     },
     "wall_seo_4": {
         "name": "{name}",
@@ -53,7 +53,7 @@
     },
     "wall_seo_6": {
         "name": "{name}",
-        "text": "*Setz dich neben mich. Seoyeon blickt nur nach vorne. Das Licht der Straßenlaterne hängt über der Brille.*"
+        "text": "*Ich setze mich neben sie. Seoyeon sieht starr nach vorn. Das Licht der Straßenlaterne zieht sich über ihre Brillengläser.*"
     },
     "wall_seo_7": {
         "name": "Seoyeon",
@@ -73,7 +73,7 @@
     },
     "wall_seo_9_b": {
         "name": "Seoyeon",
-        "text": "Meine Familie sieht von außen normal aus, oder? Großes Haus, schönes Auto, Tochter als Schülersprecherin."
+        "text": "Nach außen sieht meine Familie völlig normal aus, oder? Großes Haus, schönes Auto, die Tochter ist Schülersprecherin."
     },
     "wall_seo_9_c": {
         "name": "Seoyeon",
@@ -85,7 +85,7 @@
     },
     "wall_seo_10": {
         "name": "Seoyeon",
-        "text": "Also habe ich zu Hause und in der Schule das Lächeln gewählt. So wurde ich am wenigsten durchschaut."
+        "text": "Deshalb habe ich zu Hause und in der Schule immer gelächelt. Das war einfach am bequemsten."
     },
     "wall_seo_11": {
         "name": "Seoyeon",
@@ -105,7 +105,7 @@
     },
     "wall_seo_14": {
         "name": "Seoyeon",
-        "text": "Jedes Mal, wenn mich jemand gelobt hat, dachte ich zuerst daran. Dass dieses Gesicht eines war, das ich vor dem Spiegel immer wieder ge?bt hatte."
+        "text": "Jedes Mal, wenn mich jemand lobte, zählte ich zuerst, wie oft ich diesen Ausdruck vor dem Spiegel geübt hatte."
     },
     "wall_seo_14_b": {
         "name": "Seoyeon",
@@ -117,11 +117,11 @@
     },
     "wall_seo_14_d": {
         "name": "{name}",
-        "text": "*Wasser läuft aus ihren Augen. Lautlos. Seoyeon will es mit dem Handrücken abwischen, hält inne, und blickt einfach nach oben.*"
+        "text": "*Tränen laufen ihr lautlos über die Wangen. Seoyeon will sie mit dem Handrücken fortwischen, hält aber inne und sieht einfach auf.*"
     },
     "wall_seo_hug_choice": {
         "name": "Seoyeon",
-        "text": "*Sie weint. Das Make-up auf meinem Handrücken verschmiert.*",
+        "text": "*Sie weint. Das Make-up verschmiert auf ihrem Handrücken.*",
         "choices": [
             "Sie in den Arm nehmen",
             "Ihr meinen kleinen Finger reichen"
@@ -129,7 +129,7 @@
     },
     "wall_seo_hug_1": {
         "name": "{name}",
-        "text": "*Ich umarmte Seoyeon. Seoyeon vergrub ihr Gesicht an meiner Brust. Mein Uniformhemd wird nass.*"
+        "text": "*Ich umarme Seoyeon. Sie vergräbt das Gesicht an meiner Schulter. Mein Uniformhemd wird nass.*"
     },
     "wall_seo_hug_2_b": {
         "name": "Seoyeon",
@@ -141,52 +141,52 @@
     },
     "wall_seo_hug_3": {
         "name": "Seoyeon",
-        "text": "*Ihre Atem stößt kurz gegen meine Schulter.*"
+        "text": "*Ihr Atem trifft in kurzen Stößen auf meine Schulter.*"
     },
     "wall_seo_pinky_1": {
         "name": "{name}",
-        "text": "*Ich strecke meinen kleinen Finger aus.*"
+        "text": "*Ich strecke ihr die Hand hin.*"
     },
     "wall_seo_pinky_2": {
         "name": "{name}",
-        "text": "Wenn du weinen willst, schreib mir. Ich frag nicht nach."
+        "text": "Melde dich auch nachts. Ich frage nicht nach dem Grund."
     },
     "wall_seo_pinky_3": {
         "name": "Seoyeon",
-        "text": "*Sie starrt meinen kleinen Finger an.*"
+        "text": "*Seoyeon sieht auf meine Hand hinab.*"
     },
     "wall_seo_pinky_4": {
         "name": "Seoyeon",
-        "text": "Warum machst du das. Warum — gibst du so leicht Versprechen."
+        "text": "...Sag so etwas nicht so leichtfertig."
     },
     "wall_seo_pinky_5": {
         "name": "Seoyeon",
-        "text": "Alle sagen das und verschwinden dann."
+        "text": "Die Person, die es hört, merkt es sich nämlich."
     },
     "wall_seo_pinky_5_b": {
         "name": "{name}",
-        "text": "*Der kleine Finger, der am ersten Tag durch die Luft schnitt, hakt sich jetzt an meinen. Seoyeons Fingerspitze ist kalt.*"
+        "text": "*Seoyeons Hand berührt meine Handfläche. Sie ist kalt.*"
     },
     "wall_seo_line_choice": {
         "name": "Seoyeon",
         "text": "*Sie wischt sich die Tränen ab und schaut mit zitternden Augen zu mir hoch.*",
         "choices": [
-            "Ich mag auch dieses Gesicht. Nicht das geübte.",
-            "Nicht die Schülersprecherin — einfach Seoyeon ist meine Freundin.",
-            "Ehrlich gesagt dachte ich, du könntest alles. Danke, dass du mir auch diese Seite zeigst."
+            "Soll ich dir ein Feuchttuch geben?",
+            "Lass uns noch ein wenig sitzen bleiben.",
+            "Du musst nichts sagen."
         ]
     },
     "wall_seo_line_react_1": {
         "name": "Seoyeon",
-        "text": "...Wirklich?"
+        "text": "...Hast du eins?"
     },
     "wall_seo_line_react_2": {
         "name": "Seoyeon",
-        "text": "...Freundin?"
+        "text": "...Okay."
     },
     "wall_seo_line_react_3": {
         "name": "Seoyeon",
-        "text": "...Danke, schätze ich."
+        "text": "...Gut."
     },
     "wall_seo_line_react_3_b": {
         "name": "Seoyeon",
@@ -194,40 +194,40 @@
     },
     "wall_seo_after_line": {
         "name": "Seoyeon",
-        "text": "Ist das wirklich in Ordnung?"
+        "text": "Hast du Feuchttücher?"
     },
     "wall_seo_after_line_2": {
         "name": "Seoyeon",
-        "text": "Dieses Gesicht — es ist gerade ein Chaos, oder? Make-up verschmiert, Augen geschwollen. — Ist das wirklich in Ordnung?"
+        "text": "*Seoyeon sieht auf ihren Handrücken. Das Make-up ist verschmiert.*"
     },
     "wall_seo_after_line_3": {
         "name": "{name}",
-        "text": "Es ist in Ordnung."
+        "text": "Ja."
     },
     "wall_seo_after_line_4": {
         "name": "Seoyeon",
-        "text": "*Sie lächelt. Unter dem verschmierten Make-up bleiben feuchte Spuren.*"
+        "text": "*Sie nimmt das Feuchttuch, das ich aus meiner Tasche hole.*"
     },
     "wall_seo_after_line_4_b": {
         "name": "Seoyeon",
-        "text": "...Ich glaube, heute brauche ich keinen Spiegel."
+        "text": "*Sie wischt sich damit unter den Augen entlang.*"
     },
     "wall_seo_after_line_5": {
         "name": "Seoyeon",
-        "text": "Heute ist es in Ordnung, ohne geübtes Gesicht hier zu sein."
+        "text": "Wenn du Feuchttücher hast, gib mir eins."
     },
     "wall_seo_skin_check": {},
     "wall_seo_skin70_1": {
         "name": "Seoyeon",
-        "text": "*Sie streckt zuerst ihren kleinen Finger aus. Sie hört dort nicht auf. Sie nimmt meine Hand. Und drückt ihre Lippen auf meine Stirn.*"
+        "text": "*Seoyeon nimmt meine Hand. Unsere Hände bleiben zwischen uns auf der Bank liegen.*"
     },
     "wall_seo_skin70_3": {
         "name": "Seoyeon",
-        "text": "...Das ist neu. Wirklich."
+        "text": "...Das ist das erste Mal."
     },
     "wall_seo_skin60_1": {
         "name": "{name}",
-        "text": "*Wir saßen Seite an Seite auf der Bank. Seoyeon lehnt sich leise an deine Schulter.*"
+        "text": "*Wir sitzen nebeneinander auf der Bank. Seoyeon lehnt sich vorsichtig an meine Schulter.*"
     },
     "wall_seo_skin60_2": {
         "name": "Seoyeon",
@@ -243,7 +243,7 @@
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
-        "text": "*Nachdem ich eine Weile hinter der Schule gestanden hatte, kehrte ich nach Hause zurück. Die Lichter des Fitnessstudios bleiben in meinen Augenlidern.*"
+        "text": "*Nachdem ich lange hinter der Schule gestanden habe, kehre ich nach Hause zurück. Das Licht der Turnhalle bleibt hinter meinen geschlossenen Lidern.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -255,7 +255,7 @@
     },
     "wall_dain_pre_high_2": {
         "name": "Dain",
-        "text": "*Sie ist leiser als sonst. Das Ende der Stimme berührt den Boden.*"
+        "text": "*Ihre Stimme ist leiser als sonst.*"
     },
     "wall_dain_pre_low_1": {
         "name": "Dain",
@@ -263,7 +263,7 @@
     },
     "wall_dain_pre_low_2": {
         "name": "Dain",
-        "text": "Haha, heute hat Spaß gemacht, oder!"
+        "text": "Haha, heute hat Spaß gemacht, oder?"
     },
     "wall_dain_2": {
         "name": "Dain",
@@ -271,19 +271,19 @@
     },
     "wall_dain_2_b": {
         "name": "Dain",
-        "text": "*Ich sollte doch nicht zur Schule kommen, oder?*"
+        "text": "*Du kannst nicht zur Schule kommen, oder?*"
     },
     "wall_dain_3": {
         "name": "Dain",
-        "text": "Komm einfach lol! Ich hab die Hintertür der Turnhalle offen gelassen!"
+        "text": "Komm einfach. Ich hab die Hintertür der Turnhalle offen gelassen."
     },
     "wall_dain_4": {
         "name": "{name}",
-        "text": "*Die dunkle Turnhalle, nur von Notbeleuchtung erhellt. Dain dribbelt allein einen Volleyball. Sie lächelt stärker als sonst.*"
+        "text": "*In der Turnhalle brennt nur das Notlicht. Dain lässt allein einen Volleyball aufprallen. Sie lächelt, doch ihre Schultern sind steif.*"
     },
     "wall_dain_5": {
         "name": "Dain",
-        "text": "Du bist da?! Du bist spät!!"
+        "text": "Da bist du ja. Du bist spät!"
     },
     "wall_dain_6": {
         "name": "{name}",
@@ -291,7 +291,7 @@
     },
     "wall_dain_7": {
         "name": "Dain",
-        "text": "Ich schleich mich manchmal rein! Zum Trainieren!!"
+        "text": "Ich schleiche mich manchmal zum Trainieren rein."
     },
     "wall_dain_7_b": {
         "name": "Dain",
@@ -299,7 +299,7 @@
     },
     "wall_dain_8": {
         "name": "Dain",
-        "text": "Stell mir zu!! Nur einmal!!"
+        "text": "Spiel mir einen Ball zu. Nur einmal."
     },
     "wall_dain_8_b": {
         "name": "{name}",
@@ -307,23 +307,23 @@
     },
     "wall_dain_9": {
         "name": "{name}",
-        "text": "*Mir wird eiskalt.*"
+        "text": "*Der Ball rollt über den Hallenboden.*"
     },
     "wall_dain_10": {
         "name": "Dain",
-        "text": "Nein, alles gut!! Nur kurz umgeknickt haha, ist nich..."
+        "text": "Nein, alles gut. Ich bin nur kurz umgeknickt. Ist nichts..."
     },
     "wall_dain_11": {
         "name": "{name}",
-        "text": "*Ihre Hand am Knie ist weiß geworden. — Das ist nicht nichts.*"
+        "text": "*Die Knöchel ihrer Hand am Knie treten weiß hervor.*"
     },
     "wall_dain_12": {
         "name": "{name}",
-        "text": "Dain. Es geht dir nicht gut, das sehe ich."
+        "text": "Dain. Es geht dir nicht gut."
     },
     "wall_dain_12_b": {
         "name": "Dain",
-        "text": "Ich sag doch, es geht mir gut!! Echt!!"
+        "text": "Ich sag doch, es geht mir gut. Wirklich."
     },
     "wall_dain_12_c": {
         "name": "{name}",
@@ -331,11 +331,11 @@
     },
     "wall_dain_13": {
         "name": "{name}",
-        "text": "*Setzt sich neben mich, ohne etwas zu sagen. Dain schließt den Mund. Die Lichter im Fitnessstudio summen leise.*"
+        "text": "*Ich setze mich wortlos neben sie. Dain presst die Lippen zusammen. Die Hallenbeleuchtung summt leise.*"
     },
     "wall_dain_14": {
         "name": "Dain",
-        "text": "...Kreuzband."
+        "text": "...Vorderes Kreuzband."
     },
     "wall_dain_14_b": {
         "name": "Dain",
@@ -347,7 +347,7 @@
     },
     "wall_dain_16": {
         "name": "Dain",
-        "text": "*Dain macht einen Gesichtsausdruck, den ich noch nie gesehen habe. Dain, ohne Lächeln.*"
+        "text": "*Dain lächelt nicht.*"
     },
     "wall_dain_16_b": {
         "name": "Dain",
@@ -371,27 +371,27 @@
     },
     "wall_dain_18_d": {
         "name": "Dain",
-        "text": "*Ballt und öffnet die Fäuste.* ...Also."
+        "text": "*Sie ballt die Hand zur Faust und öffnet sie wieder.* ...Also."
     },
     "wall_dain_19": {
         "name": "Dain",
-        "text": "Ich hab es niemandem gesagt. Nicht mal meinen Eltern. „Dain wäre nicht Dain, wenn sie nicht spielen könnte!“ — Das wollte ich nicht hören."
+        "text": "Ich hab es niemandem gesagt. Nicht mal meinen Eltern. ‚Dain ist nicht Dain, wenn sie nicht rennt!‘ — Das wollte ich nicht hören."
     },
     "wall_dain_19_b": {
         "name": "Dain",
-        "text": "*Sie presst die Hand auf ihre Brust.*"
+        "text": "*Sie umklammert den Saum ihres Trikots.*"
     },
     "wall_dain_20": {
         "name": "Dain",
-        "text": "Jedes Mal wenn in der Schule jemand „So viel Energie!“ sagte — hier. ...bekam ich keine Luft mehr."
+        "text": "Jedes Mal, wenn in der Schule jemand ‚So viel Energie!‘ sagte — genau hier. ...Da bekam ich keine Luft mehr."
     },
     "wall_dain_20_b": {
         "name": "Dain",
-        "text": "...Ich konnte bis zum Schluss nicht atmen."
+        "text": "...Ich konnte nie richtig tief einatmen."
     },
     "wall_dain_21": {
         "name": "Dain",
-        "text": "Heute. Wenn man bei einem Date herumläuft. Wenn ich vorgebe, neben dir hell zu sein. Meine Knie konnten sich nicht halten."
+        "text": "Auch heute. Als wir bei unserem Date herumgelaufen sind und ich neben dir so getan habe, als wäre ich gut drauf. Mein Knie hat die ganze Zeit kaum mitgemacht."
     },
     "wall_dain_22": {
         "name": "Dain",
@@ -399,7 +399,7 @@
     },
     "wall_dain_22_b": {
         "name": "{name}",
-        "text": "*Ich setzte mich neben Dain. Der Hallenboden ist kalt. Ich sagte nichts.*"
+        "text": "*Ich setze mich neben Dain. Der Hallenboden ist kalt. Ich sage nichts.*"
     },
     "wall_dain_choice": {
         "name": "Dain",
@@ -412,7 +412,7 @@
     },
     "wall_dain_newdream_1": {
         "name": "{name}",
-        "text": "*Ich saß einfach neben ihm. Beide sind sprachlos. Nur die Spitzen von Dains Turnschuhen zittern langsam.*"
+        "text": "*Ich bleibe einfach neben ihr sitzen. Wir schweigen beide. Nur die Spitze von Dains Turnschuh bewegt sich langsam hin und her.*"
     },
     "wall_dain_newdream_2_b": {
         "name": "Dain",
@@ -428,7 +428,7 @@
     },
     "wall_dain_newdream_5": {
         "name": "Dain",
-        "text": "*Sie schaut auf ihre Hände auf den Knien. Ballt die Fäuste, öffnet sie wieder.*"
+        "text": "*Sie sieht auf ihre Hände auf den Knien und ballt sie abwechselnd zu Fäusten und öffnet sie wieder.*"
     },
     "wall_dain_newdream_6": {
         "name": "Dain",
@@ -436,7 +436,7 @@
     },
     "wall_dain_newdream_7": {
         "name": "Dain",
-        "text": "Solange ich suche ... bleibst du manchmal so neben mir?"
+        "text": "Solange ich suche... bleibst du dann manchmal so neben mir?"
     },
     "wall_dain_newdream_8": {
         "name": "{name}",
@@ -444,7 +444,7 @@
     },
     "wall_dain_cry_1": {
         "name": "Dain",
-        "text": "*Sie brach auf dem Spielfeld zusammen. Sie fing an zu weinen, den Volleyball umklammernd.*"
+        "text": "*Sie lässt sich auf dem Spielfeld nieder und beginnt zu weinen, den Volleyball fest an sich gedrückt.*"
     },
     "wall_dain_cry_2": {
         "name": "Dain",
