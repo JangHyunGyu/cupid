@@ -754,7 +754,7 @@ function getLanguageQualityGuard(lang) {
 - The protagonist is newly arrived in this campus setting. Use "transfer student" as the setting term, or "new kid" in casual dialogue when it sounds more native. Never call them an "exchange student" or "college transfer".
 - Dialogue must sound like natural contemporary English, not translated Korean/Japanese or old visual-novel prose. Prefer contractions and spoken rhythm; do not repeat the subject, the user's name, or a pet name in every line.`,
         es: `**[Language & Terminology Naturalness]**
-- The protagonist is newly arrived in this campus setting. In natural Latin American Spanish, prefer "alumno nuevo", "chico nuevo", or the nickname "transferido" in casual dialogue. Use "alumno/estudiante transferido" only for formal records or official narration.
+- The protagonist is newly arrived in this campus setting. In natural Latin American Spanish, prefer "el nuevo", "alumno nuevo", or "chico nuevo" in dialogue. If an official record must specify the transfer, use "alumno trasladado" once rather than turning it into a nickname.
 - Never use "estudiante de intercambio" unless the story explicitly says exchange student. Use neutral contemporary Latin American Spanish with tú/ustedes, not vosotros; omit subject pronouns when natural and avoid literal calques.`,
         ja: `**[Language & Terminology Naturalness]**
 - The protagonist is newly arrived in this campus setting. In Japanese, the correct term is 「転校生」. Never use 「編入生」 here; it sounds like a different admissions category and breaks the school-transfer premise.
@@ -766,7 +766,7 @@ function getLanguageQualityGuard(lang) {
 - The protagonist is newly arrived in this campus setting. In natural German dialogue, prefer "der Neue" or "neuer Schüler". Never use "Austauschschüler"; that means exchange student and is wrong for this premise.
 - Dialogue should sound like contemporary spoken German, not a literal translation from English/Korean/Japanese. Use du consistently in the established relationship; Sie appears only when the scene explicitly creates formal distance or a deliberate emotional slip.`,
         pt: `**[Language & Terminology Naturalness]**
-- The protagonist is newly arrived in this campus setting. In Brazilian Portuguese, prefer "aluno novo" or "transferido" in casual dialogue. Use "aluno transferido" for official records when needed.
+- The protagonist is newly arrived in this campus setting. In Brazilian Portuguese, prefer "aluno novo" or "novato" in casual dialogue. Use "aluno transferido" only for official records when needed; do not use "transferido" by itself as a routine nickname.
 - Never use "intercambista" unless the story explicitly says exchange student. Use contemporary Brazilian Portuguese with você and natural contractions when they fit the character; never drift into European Portuguese, omit required accents, or imitate English word order.`
     };
     return (guards[lang] || guards.en) + "\n\n";
@@ -928,22 +928,22 @@ function getUserAddressInstruction(lang, playerName, knowsName) {
         return ({
             ko: `사용자의 이름은 '${playerName}'입니다. 이름을 자연스럽게 사용하되, 캐릭터 성격상 별명으로 부를 때도 반드시 '전학생' 계열 표현만 쓰고 '편입생'은 쓰지 마세요.`,
             en: `The user's name is '${playerName}'. Use their name naturally. If the character uses the old setting nickname, use "transfer student" or "new kid", never "exchange student".`,
-            es: `The user's name is '${playerName}'. Use their name naturally. If using the setting nickname, use "alumno nuevo", "chico nuevo", or "transferido"; never English words or "estudiante de intercambio".`,
+            es: `The user's name is '${playerName}'. Use their name naturally. If using the setting nickname, use "el nuevo", "alumno nuevo", or "chico nuevo"; never English words or "estudiante de intercambio".`,
             ja: `The user's name is '${playerName}'. Use their name naturally. If using the setting nickname, use 「転校生」; never 「編入生」.`,
             fr: `The user's name is '${playerName}'. Use their name naturally. If using the setting nickname, use "le nouveau" or "le nouvel élève"; avoid "étudiant transféré".`,
             de: `The user's name is '${playerName}'. Use their name naturally. If using the setting nickname, use "der Neue" or "neuer Schüler"; never "Austauschschüler".`,
-            pt: `The user's name is '${playerName}'. Use their name naturally. If using the setting nickname, use "aluno novo" or "transferido"; never "intercambista".`
+            pt: `The user's name is '${playerName}'. Use their name naturally. If using the setting nickname, use "aluno novo" or "novato"; never "intercambista" or bare "transferido".`
         })[lang] || `The user's name is '${playerName}'. Use their name naturally.`;
     }
 
     return ({
         ko: "사용자의 이름을 아직 모릅니다. 반드시 '전학생' 또는 '학생'이라고 부르세요. '편입생'은 금지입니다.",
         en: "You do not know the user's name yet. Call them 'transfer student' or, in casual dialogue, 'new kid'. Never call them an exchange student.",
-        es: "You do not know the user's name yet. In Spanish, call them 'alumno nuevo', 'chico nuevo', or 'transferido' depending on tone. Never output 'Transfer Student' in English.",
+        es: "You do not know the user's name yet. In Spanish, call them 'el nuevo', 'alumno nuevo', or 'chico nuevo' depending on tone. Never output 'Transfer Student' in English.",
         ja: "You do not know the user's name yet. In Japanese, call them 「転校生」 or 「転校生くん」 depending on tone. Never use 「編入生」.",
         fr: "You do not know the user's name yet. In French, call them 'le nouveau' or 'le nouvel élève'. Avoid 'étudiant transféré'.",
         de: "You do not know the user's name yet. In German, call them 'der Neue' or 'neuer Schüler'. Never use 'Austauschschüler'.",
-        pt: "You do not know the user's name yet. In Brazilian Portuguese, call them 'aluno novo' or 'transferido' depending on tone. Never output 'Transfer Student' in English."
+        pt: "You do not know the user's name yet. In Brazilian Portuguese, call them 'aluno novo' or 'novato' depending on tone. Never output 'Transfer Student' in English or use bare 'transferido' as a nickname."
     })[lang] || "You do not know the user's name yet. Call them naturally in the target language.";
 }
 
