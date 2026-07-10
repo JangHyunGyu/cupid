@@ -9,11 +9,11 @@
     },
     "lunch_start_4_b": {
         "name": "{name}",
-        "text": "*À côté de moi, Dain m'attrape le bras.*"
+        "text": "*À côté de moi, Dain m'attrape le poignet.*"
     },
     "lunch_start_5": {
         "name": "Dain",
-        "text": "Hé ! T'as mangé ?! On va au kiosque ! Un pari sur le pain, le perdant paie !"
+        "text": "Hé, tu as déjà mangé ? Viens à la supérette. On parie le pain : celui qui perd paie."
     },
     "lunch_start_6": {
         "name": "{name}",
@@ -21,7 +21,7 @@
     },
     "lunch_start_7": {
         "name": "{name}",
-        "text": "*Le couloir se divise en trois. Toit, cafétéria, bibliothèque. Au fond de ma poche, le coin de mon téléphone accroche le bout de mes doigts.*"
+        "text": "*Le couloir se divise en trois directions : le toit, la supérette et la bibliothèque. Dans ma poche, mes doigts butent contre le coin de mon téléphone.*"
     },
     "lunch_choice": {
         "name": "{name}",
@@ -58,7 +58,7 @@
     },
     "lunch_seo_5": {
         "name": "Seoyeon",
-        "text": "Je n’amène pas n’importe qui ici. *déplie une chaise* Aujourd’hui, c’est spécial."
+        "text": "Je n'amène pas n'importe qui ici. *Elle déplie une chaise.* Pour aujourd'hui, je fais une exception."
     },
     "lunch_seo_6": {
         "name": "{name}",
@@ -66,7 +66,7 @@
     },
     "lunch_seo_6_b": {
         "name": "Seoyeon",
-        "text": "*Elle pousse la chaise du bout du pied et l'aligne vers {name}.* Méfiant, hein. C'est calme là-haut."
+        "text": "*Elle pousse la chaise du bout du pied vers {name}.* Tu es méfiant. C'est parce qu'ici, on est tranquilles."
     },
     "lunch_seo_8": {
         "name": "Seoyeon",
@@ -74,15 +74,15 @@
     },
     "lunch_seo_9": {
         "name": "{name}",
-        "text": "...C’est pour deux personnes."
+        "text": "...Il y en a pour deux."
     },
     "lunch_seo_10": {
         "name": "Seoyeon",
-        "text": "Je prépare toujours en plus. Avec le boulot du conseil, je finis souvent par sauter des repas."
+        "text": "Avec le travail du conseil, il m'arrive de ne pas avoir le temps de manger. Alors j'en prépare toujours largement."
     },
     "lunch_seo_11": {
         "name": "{name}",
-        "text": "*Elle avait prévu de manger ensemble depuis le début. J'ouvre le bento et les accompagnements ont l'air soignés. Omelette roulée, saucisse, mini onigiris.*"
+        "text": "*Lorsque j'ouvre la boîte, tous les accompagnements sont soigneusement alignés : omelette roulée, saucisses et petites boulettes de riz. Il y a deux paires de baguettes.*"
     },
     "lunch_seo_13": {
         "name": "{name}",
@@ -90,7 +90,7 @@
     },
     "lunch_seo_14": {
         "name": "Seoyeon",
-        "text": "Si la présidente du conseil ne sait même pas préparer un bento, ça le fait pas."
+        "text": "Une présidente du conseil qui ne sait même pas préparer son déjeuner, ce ne serait pas sérieux."
     },
     "lunch_seo_15": {
         "name": "{name}",
@@ -98,11 +98,11 @@
     },
     "lunch_seo_16": {
         "name": "Seoyeon",
-        "text": "*me tend les baguettes* Mange. C’est pas bon froid."
+        "text": "*Elle me tend les baguettes.* Mange. Ce n'est pas bon quand ça refroidit."
     },
     "lunch_seo_17": {
         "name": "Seoyeon",
-        "text": "*Elle mange au lieu de répondre. Le vent est sympa. L'école vue du toit est plus grande que vous ne le pensez.*"
+        "text": "*Elle mange au lieu de répondre. Par-dessus la rambarde, le terrain de sport et le toit de l'annexe apparaissent d'un seul coup d'œil.*"
     },
     "lunch_seo_19": {
         "name": "Seoyeon",
@@ -114,7 +114,7 @@
     },
     "lunch_seo_21": {
         "name": "Seoyeon",
-        "text": "*petit sourire* Je t’interroge sur l’école, et toi tu me parles cuisine."
+        "text": "*Elle laisse échapper un petit rire.* Je te demandais ce que tu pensais de l'école, et toi, tu me parles du repas."
     },
     "lunch_seo_22": {
         "name": "Seoyeon",
@@ -134,7 +134,7 @@
     },
     "lunch_seo_c1_1": {
         "name": "{name}",
-        "text": "*J’accepte l’omelette roulée des baguettes de Seoyeon.*"
+        "text": "*Je mange le morceau d'omelette directement entre les baguettes de Seoyeon.*"
     },
     "lunch_seo_c1_2": {
         "name": "{name}",
@@ -142,19 +142,19 @@
     },
     "lunch_seo_c1_2_b": {
         "name": "Seoyeon",
-        "text": "*Elle détourne la tête et tripote sa bouteille d'eau sans raison.*"
+        "text": "*Elle lève sa bouteille pour cacher sa bouche. L'étiquette se froisse dans sa main.*"
     },
     "lunch_seo_c1_3": {
         "name": "Seoyeon",
-        "text": "...Évidemment."
+        "text": "C'est la moindre des choses."
     },
     "lunch_seo_c1_3_b": {
         "name": "{name}",
-        "text": "*L'étiquette de la bouteille d'eau tourne du bout des doigts. Faites comme si vous ne saviez pas et levez vos baguettes.*"
+        "text": "*L'étiquette à moitié pliée reste collée à la bouteille. Seoyeon reprend ses baguettes.*"
     },
     "lunch_seo_c2_1": {
         "name": "Seoyeon",
-        "text": "*Elle met l’omelette roulée dans sa propre bouche. Mâche lentement.*"
+        "text": "*Elle met l'omelette dans sa propre bouche et la mâche inutilement longtemps.*"
     },
     "lunch_seo_c2_2": {
         "name": "Seoyeon",
@@ -162,7 +162,7 @@
     },
     "lunch_seo_c2_3": {
         "name": "Seoyeon",
-        "text": "*Elle referme le couvercle de sa boîte à lunch très lentement. Son petit doigt appuie une fois de plus sur le rebord.*"
+        "text": "*Même après avoir refermé la boîte, ses doigts s'attardent un instant sur le coin du couvercle.*"
     },
     "lunch_seo_after": {
         "name": "{name}",
@@ -182,11 +182,11 @@
     },
     "lunch_seo_after_5": {
         "name": "Seoyeon",
-        "text": "*Pas une invitation, une autorisation. Pendant qu'elle range le bento — elle remet ses cheveux derrière l'oreille avec l'auriculaire.*"
+        "text": "*Elle replie sa boîte à déjeuner sans revenir sur sa réponse, puis repousse machinalement une mèche de cheveux.*"
     },
     "lunch_seo_after_7": {
         "name": "{name}",
-        "text": "*Le petit doigt de Seoyeon repousse une dernière fois la pointe de ses cheveux.*"
+        "text": "*Ses doigts effleurent une nouvelle fois la pointe de ses cheveux.*"
     },
     "lunch_seo_freetalk": {
         "name": "Seoyeon",

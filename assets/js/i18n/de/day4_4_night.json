@@ -484,11 +484,11 @@
     },
     "wall_dain_lastspike_3_c": {
         "name": "{name}",
-        "text": "Ja. Und diesmal hörst du dir die Ergebnisse bis zum Ende an."
+        "text": "Ja. Und diesmal hörst du dir den Befund bis zum Ende an."
     },
     "wall_dain_lastspike_4": {
         "name": "Dain",
-        "text": "Mit dem Profisport weiß ich noch nicht. Aber ich höre auf, den Schmerz zu verstecken und weiterzuspringen."
+        "text": "Mit dem Profisport weiß ich noch nicht. Aber ich höre auf, den Schmerz zu verstecken und einfach weiterzuspielen."
     },
     "wall_dain_lastspike_4_b": {
         "name": "Dain",
@@ -496,7 +496,7 @@
     },
     "wall_dain_lastspike_5": {
         "name": "Dain",
-        "text": "Morgen sage ich es auch meiner Mutter und dem Coach."
+        "text": "Morgen sage ich es auch meiner Mutter und dem Trainer."
     },
     "wall_dain_lastspike_6": {
         "name": "Dain",
@@ -516,11 +516,11 @@
     },
     "wall_dain_mention_2": {
         "name": "Dain",
-        "text": "Hätte sie was gesagt, hätte ich wenigstens dagegen kämpfen können. Wenn jemand nichts sagt, fühlt man sich wie der Böse."
+        "text": "Hätte sie etwas gesagt, hätte ich mich wenigstens mit ihr streiten können. Wenn sie gar nichts sagt, komme ich mir wie die Böse vor."
     },
     "wall_dain_mention_3": {
         "name": "Dain",
-        "text": "*Ihre Schritt stockt einmal. Als sie weitergeht, wirkt er etwas leichter.*"
+        "text": "*Ihr Schritt stockt einmal. Als sie weitergeht, wirkt ihr Gang etwas leichter.*"
     },
     "wall_dain_skin_check": {},
     "wall_dain_skin70_1": {
@@ -529,7 +529,7 @@
     },
     "wall_dain_skin70_2": {
         "name": "Dain",
-        "text": "Lass nicht los."
+        "text": "Nur kurz so bleiben."
     },
     "wall_dain_skin70_3": {
         "name": "{name}",
@@ -537,11 +537,11 @@
     },
     "wall_dain_skin60_1": {
         "name": "{name}",
-        "text": "*Wir setzten uns auf die Bank neben dem hinteren Schultor. Dain legt sich ohne Vorwarnung auf meinen Schoß.*"
+        "text": "*Wir setzen uns auf die Bank neben dem hinteren Schultor. Dain legt sich ohne Vorwarnung mit dem Kopf auf meinen Schoß.*"
     },
     "wall_dain_skin60_2": {
         "name": "Dain",
-        "text": "Nur fünf Minuten. Aufladen."
+        "text": "Nur fünf Minuten. Energie auftanken."
     },
     "wall_dain_glimpse_1": {
         "name": "{name}",
@@ -549,11 +549,11 @@
     },
     "wall_dain_glimpse_2": {
         "name": "{name}",
-        "text": "*Es ist Yuna. Wenn ich alleine sitze, bleiben meine Füße stehen. Heute gab es keine Nachricht von Yuna.*"
+        "text": "*Es ist Yuna. Sie sitzt dort allein. Meine Füße bleiben wie angewurzelt stehen. Heute gab es keine Nachricht von ihr.*"
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*Ich bin vorbeigelaufen, so getan als sähe ich nichts. Bis zum Hintertor gegangen, aber der Zettel in meiner Hand ist immer noch gefaltet.*"
+        "text": "*Ich gehe vorbei und tue so, als hätte ich nichts gesehen. Selbst am Hintertor liegt der Zettel in meiner Hand noch immer gefaltet da.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -589,11 +589,11 @@
     },
     "wall_yuna_3": {
         "name": "Yuna",
-        "text": "Folge mir zum Hintertor der Schule."
+        "text": "Komm vom Hintertor aus mit mir."
     },
     "wall_yuna_4": {
         "name": "Yuna",
-        "text": "*Sie geht zu Fuß in Richtung Bibliotheks-Anbau. Vorbei an ihrem geheimen Lesezimmer — noch tiefer. Das Kellerarchiv. Zwischen verstaubten Regalen. Sie holt einen alten Umschlag heraus.*"
+        "text": "*Sie geht zum Bibliotheksanbau. Vorbei am geheimen Lesezimmer und noch tiefer hinein, bis ins Kellerarchiv. Zwischen verstaubten Regalen holt sie einen alten Umschlag hervor.*"
     },
     "wall_yuna_6": {
         "name": "Yuna",
@@ -601,7 +601,7 @@
     },
     "wall_yuna_7": {
         "name": "{name}",
-        "text": "*Brief im Umschlag. – „An Yuna. Entschuldigung. Es ist etwas passiert, worüber ich nicht sprechen konnte. — Junho Lee'*"
+        "text": "*Im Umschlag steckt ein Brief: ‚An Yuna. Es tut mir leid. Es ist etwas passiert, über das ich nicht sprechen kann. — Junho Lee‘*"
     },
     "wall_yuna_8": {
         "name": "{name}",
@@ -609,7 +609,7 @@
     },
     "wall_yuna_9": {
         "name": "Yuna",
-        "text": "Ein Senior, der früher mit mir herkam. — Die einzige Person, mit der ich eng war."
+        "text": "Ein älterer Schüler, der früher mit mir hierherkam. — Die einzige Person, mit der ich befreundet war."
     },
     "wall_yuna_9_b": {
         "name": "Yuna",
@@ -621,7 +621,7 @@
     },
     "wall_yuna_11": {
         "name": "Yuna",
-        "text": "Es war mein erstes Mal als Senior. „Mir hat Ihr Schreiben gefallen“ – allein aufgrund dieses einen Kommentars fühlte es sich an, als wäre ich an diesem Tag im Unterricht."
+        "text": "Er war der Erste. ‚Deine Texte gefallen mir.‘ — Nach diesem einen Satz wusste ich an jenem Tag, dass ich überhaupt zur Klasse gehörte."
     },
     "wall_yuna_12": {
         "name": "Yuna",
@@ -629,11 +629,11 @@
     },
     "wall_yuna_13": {
         "name": "Yuna",
-        "text": "Eines Tages wechselte er die Schule. Ohne Kontakt. Nur dieser Brief."
+        "text": "Eines Tages wechselte er die Schule. Ohne sich zu melden. Er ließ nur diesen Brief zurück."
     },
     "wall_yuna_14": {
         "name": "Yuna",
-        "text": "Die Person, die gesehen hatte, dass ich da war, verschwand. Ich dachte, niemand würde mich wieder bemerken."
+        "text": "Der einzige Mensch, der gesehen hatte, dass ich überhaupt da war, verschwand. Danach würde mich wieder niemand bemerken."
     },
     "wall_yuna_14_b": {
         "name": "Yuna",
@@ -653,11 +653,11 @@
     },
     "wall_yuna_14_f": {
         "name": "Yuna",
-        "text": "Du hattest die gleiche Ausstrahlung wie er. Deshalb hatte ich Angst."
+        "text": "Du hattest eine ähnliche Ausstrahlung wie er. — Deshalb hatte ich Angst."
     },
     "wall_yuna_14_g": {
         "name": "Yuna",
-        "text": "Wenn ich dich wieder nah ranlasse, könntest du auch wieder verschwinden."
+        "text": "Ich hatte Angst, dass du auch wieder verschwindest, sobald wir uns näherkommen."
     },
     "wall_yuna_14_h": {
         "name": "{name}",
@@ -665,22 +665,22 @@
     },
     "wall_yuna_15": {
         "name": "Yuna",
-        "text": "*Den Kopf senkend* ...Deshalb habe ich mich absichtlich kalt verhalten. Ich dachte, wenn ich dich vorher wegstoße, würde es weniger wehtun."
+        "text": "*Sie senkt den Kopf.* ...Deshalb habe ich mich absichtlich kalt verhalten. Ich dachte, es würde weniger wehtun, wenn ich dich vorher wegstoße."
     },
     "wall_yuna_16": {
         "name": "Yuna",
-        "text": "Aber du kamst jeden Tag. Still. — Ohne zu verschwinden."
+        "text": "Aber du bist jeden Tag gekommen. Ganz still."
     },
     "wall_yuna_16_b": {
         "name": "Yuna",
-        "text": "*Sie hält ihren Ärmel fest. Während ich zu Atem komme, drückt sich der Buchrücken in meine Handfläche.*"
+        "text": "*Sie umklammert ihren Ärmel. Während sie Luft holt, drückt sich der Buchrücken in ihre Handfläche.*"
     },
     "wall_yuna_choice": {
         "name": "Yuna",
-        "text": "*Yunas Augen sind leicht feucht. Die Spitzen ihrer Finger, die das Buch halten, sind weiß gedrückt.*",
+        "text": "*Sie hält das Buch fester. Während sie auf eine Antwort wartet, knickt die Ecke des Briefs unter ihren Fingern leicht ein.*",
         "choices": [
-            "Ich bin nicht dieser Senior. Ich bin ich. Aber ich bleibe an deiner Seite.",
-            "Vergiss diesen Senior. Der, der jetzt vor dir steht, bin ich.",
+            "Ich kann ihn nicht ersetzen. Aber jetzt bin ich hier.",
+            "Im Moment höre ich dir zu.",
             "...Also bist du wegen ihm auf mich zugekommen? Als Ersatz?"
         ]
     },
@@ -694,11 +694,11 @@
     },
     "wall_yuna_moved_3": {
         "name": "Yuna",
-        "text": "*Sie hebt den Kopf. Diesmal sieht sie nicht weg.*"
+        "text": "*Sie hebt den Kopf und sieht {name} an.*"
     },
     "wall_yuna_moved_4": {
         "name": "Yuna",
-        "text": "Jetzt sehe ich dich. Nur dich."
+        "text": "Jetzt sehe ich dich."
     },
     "wall_yuna_moved_5": {
         "name": "Yuna",
@@ -719,7 +719,7 @@
     },
     "wall_yuna_skin70_3": {
         "name": "{name}",
-        "text": "*Yunas Hand ist wärmer als erwartet. — Nur das.*"
+        "text": "*Yunas Hand ist warm. Das ist alles.*"
     },
     "wall_yuna_skin60_1": {
         "name": "{name}",
@@ -755,11 +755,11 @@
     },
     "wall_yuna_glimpse_1": {
         "name": "{name}",
-        "text": "*Ich verlasse die Schule und lasse Yuna zurück. Am Haupttor vorbei.*"
+        "text": "*Ich lasse Yuna zurück und verlasse die Schule. Als ich am Haupttor vorbeikomme...*"
     },
     "wall_yuna_glimpse_2": {
         "name": "{name}",
-        "text": "*Unter der Straßenlaterne vor dem Schultor. Seoyeon stand. Ich nehme mein Telefon, schreibe etwas und lösche es dann. Schreiben Sie es noch einmal und löschen Sie es. Die Bildschirmbeleuchtung bleibt nur auf der Brille.*"
+        "text": "*Unter der Straßenlaterne vor dem Schultor steht Seoyeon. Sie tippt etwas auf ihrem Handy und löscht es, tippt erneut und löscht es wieder. Nur in ihrer Brille bleibt das Licht des Displays hängen.*"
     },
     "wall_yuna_glimpse_3_b": {
         "name": "Seoyeon",
@@ -767,11 +767,11 @@
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*Nachdem ich den hinteren Teil der Schule eine Zeit lang nicht verlassen konnte, kehrte ich nach Hause zurück. Das Handy in meiner Tasche ist leise.*"
+        "text": "*Ich kehre von der Rückseite der Schule nach Hause zurück. Das Handy in meiner Tasche bleibt still.*"
     },
     "day4_night_regret": {
         "name": "{name}",
-        "text": "*Der von Ihnen eingegebene Satz bleibt im Chatfenster erhalten. Am Ende blinkt der Cursor.*"
+        "text": "*Im Chatfenster steht noch ein halb getippter Satz. Am Ende blinkt der Cursor.*"
     },
     "day4_night_regret_msg_branch": {
         "name": "System",
@@ -779,11 +779,11 @@
     },
     "day4_night_regret_msg_seo": {
         "name": "Seoyeon",
-        "text": "Der Wind war heute schön. Deshalb... hatte ich ein wenig Hoffnung. Umsonst."
+        "text": "Der Wind war heute schön. Ich habe ein bisschen gewartet."
     },
     "day4_night_regret_msg_dain": {
         "name": "Dain",
-        "text": "Hey, heute war es lustig, haha. ...Ich hätte gehofft, dass ich nicht die Einzige war, die so aufgeregt war."
+        "text": "Hey, heute hat Spaß gemacht. ...Ich hoffe, ich war nicht die Einzige, die sich so gefreut hat."
     },
     "day4_night_regret_msg_yuna": {
         "name": "Yuna",
@@ -823,7 +823,7 @@
     },
     "night_nurse_msg_1": {
         "name": "Schulkrankenschwester",
-        "text": "*Meldung der schulischen Gesundheits-App* Bitte geben Sie an, wie es Ihnen nach dem heutigen Beratungsgespräch geht."
+        "text": "*Meldung der schulischen Gesundheits-App* Bitte gib an, wie es dir nach dem heutigen Beratungsgespräch geht."
     },
     "night_nurse_msg_2": {
         "name": "{name}",
@@ -831,11 +831,11 @@
     },
     "night_nurse_msg_3": {
         "name": "Schulkrankenschwester",
-        "text": "*Hinweis der Krankenstation* Wenn du ein weiteres Gespräch brauchst, buche es morgen vor Beginn des Schulfests. Du kannst die Klassenleitung oder die Beratungsstelle wählen."
+        "text": "*Hinweis des Krankenzimmers* Wenn du ein weiteres Gespräch brauchst, buche es morgen vor Beginn des Schulfests. Du kannst die Klassenleitung oder die Beratungsstelle wählen."
     },
     "night_nurse_msg_4": {
         "name": "Schulkrankenschwester",
-        "text": "*Hinweis der Krankenstation* Spät am Abend musst du nicht antworten. Wenn es dringend ist, informiere zuerst deine Eltern oder einen Erwachsenen in deiner Nähe."
+        "text": "*Hinweis des Krankenzimmers* Spät am Abend musst du nicht antworten. Wenn es dringend ist, informiere zuerst deine Eltern oder einen Erwachsenen in deiner Nähe."
     },
     "day4_night_sleep": {
         "name": "{name}",

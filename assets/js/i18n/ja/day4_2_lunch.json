@@ -273,7 +273,7 @@
     },
     "date_dain_arcade_2": {
         "name": "ダイン",
-        "text": "さあ、勝負だ!! 負けた方がジュース!!"
+        "text": "さあ、勝負だ！ 負けた方がジュース！"
     },
     "date_dain_arcade_2_b": {
         "name": "{name}",
@@ -281,7 +281,7 @@
     },
     "date_dain_arcade_3": {
         "name": "ダイン",
-        "text": "賭けがないとつまんないじゃん!!"
+        "text": "賭けがないとつまんないじゃん！"
     },
     "date_dain_arcade_3_b": {
         "name": "{name}",

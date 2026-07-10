@@ -1,12 +1,12 @@
 {
     "morning5_start": {
         "name": "{name}",
-        "text": "*Fünfter Tag. Es ist Sonntag, aber es gibt eine Schulveranstaltung. Schuluniformen sind bequemer geworden. Die Ärmelenden kratzen nicht mehr an den Handgelenken.*"
+        "text": "*Fünfter Tag. Obwohl Sonntag ist, findet in der Schule eine Veranstaltung statt. Der Ärmel meiner Uniform kratzt nicht mehr am Handgelenk.*"
     },
     "morning5_start_branch": {},
     "morning5_start_b": {
         "name": "{name}",
-        "text": "*In dem Moment, als ich das Klassenzimmer betrete, kommt Aufmerksamkeit aus drei Richtungen. Eine Notiz auf meinem Schreibtisch, ein Band an einer Sportanzug-Schnur, eine Benachrichtigung auf meinem Sperrbildschirm.*"
+        "text": "*Beim Betreten des Klassenzimmers fallen mir drei Dinge gleichzeitig ins Auge: ein Zettel auf meinem Tisch, eine Schleife am Band einer Trainingshose und eine Benachrichtigung auf dem Sperrbildschirm.*"
     },
     "morning5_start_2_b": {
         "name": "{name}",
@@ -22,7 +22,7 @@
     },
     "morning5_mood_mid": {
         "name": "{name}",
-        "text": "Letzter Tag. Noch nicht sicher. Aber ich muss hin."
+        "text": "Letzter Tag. Ich bin mir noch immer nicht sicher. Aber ich muss gehen."
     },
     "morning5_mood_low": {
         "name": "{name}",
@@ -62,7 +62,7 @@
     },
     "morning5_yuna_story_4": {
         "name": "{name}",
-        "text": "*In der unteren Ecke des schwarzen Bretts, kleine Schrift — 'Das ist Fiktion. Es ist nicht echt.' Radiergummi-Spuren bleiben.*"
+        "text": "*Unten in der Ecke der Pinnwand steht klein: ‚Das ist eine Geschichte. Sie ist nicht wahr.‘ Daneben sind noch Spuren eines Radiergummis zu sehen.*"
     },
     "morning5_return_class": {
         "name": "{name}",
@@ -78,24 +78,24 @@
     },
     "morning5_dain_2": {
         "name": "Dain",
-        "text": "Lauf bloß nicht weg, sonst werd ich echt sauer!"
+        "text": "Wenn du zu spät kommst, werde ich sauer!"
     },
     "morning5_committed_start": {},
     "morning5_committed_seo": {
         "name": "{name}",
-        "text": "*Auf meinem Tisch liegt kein neuer Zettel. Stattdessen ist Seoyeons Blick von gestern auf dem Dach noch immer deutlich vor mir. Yuna und Dain wechseln mit mir nur ein paar kurze Worte über die Vorbereitungen für die Veranstaltung.*"
+        "text": "*Auf meinem Tisch liegt kein neuer Zettel. Seoyeons Klemmbrett liegt auch heute eng an ihrem Arm. Yuna und Dain wechseln mit mir nur ein paar knappe Worte über die Vorbereitungen.*"
     },
     "morning5_committed_yuna": {
         "name": "{name}",
-        "text": "*Es gibt keinen neuen Zettel. Stattdessen ist mir noch immer im Kopf, wie Yuna gestern ungewöhnlich lange meinen Blick festgehalten hat. Seoyeon und Dain sagen nur ein paar kurze Dinge über die Vorbereitungen für die Veranstaltung.*"
+        "text": "*Es gibt keinen neuen Zettel. Yuna hat ihr Lesezeichen zwischen die Seiten ihres Notizbuchs gesteckt. Seoyeon und Dain wechseln mit mir nur ein paar knappe Worte über die Vorbereitungen.*"
     },
     "morning5_committed_dain": {
         "name": "{name}",
-        "text": "*Noch vor Dains Ausrufezeichen kommt mir zuerst der Atem in den Sinn, der ihr gestern am Ende stockte. Seoyeon und Yuna sagen nur ein paar kurze Dinge über die Vorbereitungen für die Veranstaltung.*"
+        "text": "*Vor der Turnhalle zieht Dain ihre Handgelenkbandage zurecht. Seoyeon und Yuna wechseln mit mir nur ein paar knappe Worte über die Vorbereitungen.*"
     },
     "hidden_homeroom_d5_check": {
         "name": "{name}",
-        "text": "*Vorbereitungszeit. Auf dem Flur — das leere Klassenzimmer. Die Tür ist offen.*"
+        "text": "*Während der Vorbereitungszeit gehe ich über den Flur. Als ich an einem leeren Klassenzimmer vorbeikomme, steht die Tür offen.*"
     },
     "hidden_homeroom_d5_1": {
         "name": "Klassenlehrerin",
@@ -111,7 +111,7 @@
     },
     "hidden_homeroom_d5_1_d": {
         "name": "Klassenlehrerin",
-        "text": "*Hebt den Umschlag hoch* ...Das hier."
+        "text": "*Sie hebt den Umschlag hoch.* ...Das hier."
     },
     "hidden_homeroom_d5_1_e": {
         "name": "{name}",
@@ -143,7 +143,7 @@
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "Klassenlehrerin",
-        "text": "*Der Klassenlehrer hält einen Moment inne. Bald nimmt er wieder seinen gewohnt trockenen Gesichtsausdruck an, aber die Ecken des Umschlags sind zerknittert.*"
+        "text": "*Die Klassenlehrerin hält einen Moment inne. Ihr gewohnt trockener Gesichtsausdruck kehrt rasch zurück, doch der Umschlag knittert leicht in ihrer Hand.*"
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Klassenlehrerin",
@@ -159,7 +159,7 @@
     },
     "hidden_homeroom_d5_praise_trap_5": {
         "name": "Klassenlehrerin",
-        "text": "*Die Lehrerin streckt die Hand aus. Nimmt das Manuskript zurück. Langsam. Steckt es zurück in den Umschlag.*"
+        "text": "*Die Lehrerin streckt die Hand aus, nimmt das Manuskript zurück und steckt es nach kurzem Zögern wieder in den Umschlag.*"
     },
     "hidden_homeroom_d5_praise_trap_6": {
         "name": "Klassenlehrerin",
@@ -187,15 +187,15 @@
     },
     "hidden_homeroom_d5_praise_trap_12": {
         "name": "{name}",
-        "text": "*Ich verließ den Raum und schloss die Klassenzimmertür. Der Umschlag liegt noch auf dem Schreibtisch der Lehrerin. Eine Rücksende-Aufkleber-Spur in Nagelgröße bleibt auf der Oberfläche.*"
+        "text": "*Ich verlasse das Klassenzimmer und schließe die Tür. Der Umschlag liegt noch auf dem Pult; auf seiner Vorderseite ist ein fingernagelgroßer Rest eines Rücksendeaufklebers zu sehen.*"
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "Klassenlehrerin",
-        "text": "*Der Klassenlehrer bleibt stehen. Die Hand, die das Klemmbrett hält, erfordert Kraft. Das Ende des Papiers ist leicht gebogen.*"
+        "text": "*Die Klassenlehrerin hält inne. Das Ende des Blattes biegt sich leicht in ihrer Hand.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Klassenlehrerin",
-        "text": "...Woher wusstest du das."
+        "text": "...Hier drin?"
     },
     "hidden_homeroom_d5_correct_3": {
         "name": "{name}",
@@ -211,7 +211,7 @@
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Klassenlehrerin",
-        "text": "...Ich kriege sie wirklich nicht hin. Die letzte Zeile."
+        "text": "...Du hast bis dorthin gelesen?"
     },
     "hidden_homeroom_d5_correct_7": {
         "name": "Klassenlehrerin",
@@ -223,11 +223,11 @@
     },
     "hidden_homeroom_d5_correct_9": {
         "name": "{name}",
-        "text": "Darf ich auf der letzten Seite markieren, warum ich aufgehört habe zu lesen?"
+        "text": "Darf ich auf der letzten Seite anmerken, warum ich dort aufgehört habe?"
     },
     "hidden_homeroom_d5_correct_10": {
         "name": "Klassenlehrerin",
-        "text": "Du willst sogar Kritik schreiben?"
+        "text": "Du willst es sogar rezensieren?"
     },
     "hidden_homeroom_d5_correct_11": {
         "name": "{name}",
@@ -243,7 +243,7 @@
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "*Sie nimmt das Manuskript wieder in die Arme. Die Lehrerin reibt über die Rücksende-Aufkleber-Spur mit dem Daumen. Die Papierkante zerknittert leicht in ihrer Handfläche.*"
+        "text": "*Ich nehme das Manuskript wieder an mich. Die Lehrerin reibt mit dem Daumen über die Spur des Rücksendeaufklebers; die Papierecke knittert leicht in ihrer Hand.*"
     },
     "hidden_homeroom_d5_6": {
         "name": "Klassenlehrerin",
@@ -291,19 +291,19 @@
     },
     "hidden_homeroom_d5_6_l": {
         "name": "{name}",
-        "text": "Ich lese es. Richtig."
+        "text": "Ich werde es gründlich lesen."
     },
     "hidden_homeroom_d5_6_m": {
         "name": "Klassenlehrerin",
-        "text": "*Streicht sich die Haare zurück* ...Bloße Leseeindrücke nehme ich nicht an."
+        "text": "*Sie streicht sich die Haare zurück.* ...Einen Aufsatz will ich aber nicht."
     },
     "hidden_homeroom_d5_6_n": {
         "name": "{name}",
-        "text": "Das ist geflunkert."
+        "text": "Das meinen Sie doch nicht ernst."
     },
     "hidden_homeroom_d5_6_o": {
         "name": "Klassenlehrerin",
-        "text": "*Mit einem kleinen Lachen* ...Stimmt. Schreib wenigstens eine Zeile."
+        "text": "*Sie lacht leise.* ...Stimmt. Schreib wenigstens eine Zeile."
     },
     "hidden_homeroom_d5_6_p": {
         "name": "Klassenlehrerin",
@@ -373,11 +373,11 @@
     },
     "hidden_nurse_d5_1_f": {
         "name": "{name}",
-        "text": "*Unter dem Beratungsprotokoll stehen die Buchungswege für Krankenstation und Wee-Class-Beratung nebeneinander.*"
+        "text": "*Unter dem Beratungsprotokoll stehen die Buchungswege für das Krankenzimmer und die Wee-Class-Beratung nebeneinander.*"
     },
     "hidden_nurse_d5_2_b": {
         "name": "Schulkrankenschwester",
-        "text": "*Ich öffne die Tür der Krankenstation und prüfe die Terminliste.*"
+        "text": "*Sie öffnet die Tür des Krankenzimmers und prüft die Terminliste.*"
     },
     "hidden_nurse_d5_2_c": {
         "name": "Schulkrankenschwester",
@@ -401,7 +401,7 @@
     },
     "hidden_nurse_d5_3_e": {
         "name": "Schulkrankenschwester",
-        "text": "Natürlich. Die Krankenstation ist kein Ort, an dem man Vorwände erfindet, sondern Hilfe bekommt, wenn man sie braucht."
+        "text": "Natürlich. Das Krankenzimmer ist kein Ort, an dem man Vorwände erfindet, sondern ein Ort, an dem man die nötige Hilfe bekommt."
     },
     "hidden_nurse_d5_3_f": {
         "name": "Schulkrankenschwester",
@@ -425,7 +425,7 @@
     },
     "hidden_nurse_d5_4_b": {
         "name": "{name}",
-        "text": "Frau Krankenschwester..."
+        "text": "Entschuldigen Sie..."
     },
     "hidden_nurse_d5_4_c": {
         "name": "{name}",
@@ -465,7 +465,7 @@
     },
     "hidden_nurse_d5_choice_b_c": {
         "name": "Schulkrankenschwester",
-        "text": "Drück in der Schul-App auf ‚Beratung buchen‘. Du kannst zwischen Krankenstation und Wee-Class-Beratung wählen."
+        "text": "Drück in der Schul-App auf ‚Beratung buchen‘. Du kannst zwischen dem Krankenzimmer und der Wee-Class-Beratung wählen."
     },
     "hidden_nurse_d5_choice_b_d": {
         "name": "Schulkrankenschwester",
@@ -481,7 +481,7 @@
     },
     "hidden_nurse_d5_choice_b_g": {
         "name": "{name}",
-        "text": "Meinen Eltern oder einer Lehrkraft in der Nähe. Ich halte es nicht allein aus."
+        "text": "Meinen Eltern oder einer Lehrkraft in der Nähe. Ich versuche nicht, allein durchzuhalten."
     },
     "hidden_nurse_d5_6": {
         "name": "Schulkrankenschwester",
