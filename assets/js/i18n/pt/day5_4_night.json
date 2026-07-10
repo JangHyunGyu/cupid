@@ -367,7 +367,7 @@
     },
     "hidden_true_nurse_8_b": {
         "name": "{name}",
-        "text": "*Durante três meses, os dois se encontraram em um café diferente a cada fim de semana. Naquele dia, {name} foi convidado pela primeira vez para a casa de Juwon.*"
+        "text": "*Durante três meses, os dois se encontraram em um café diferente a cada fim de semana. Naquele dia, Juwon o convida pela primeira vez para sua casa.*"
     },
     "hidden_true_nurse_8_c": {
         "name": "{name}",
@@ -395,7 +395,7 @@
     },
     "hidden_good_nurse_1": {
         "name": "Enfermeira",
-        "text": "*Depois da cerimônia de formatura, {name} abre pela última vez a porta da enfermaria. Juwon toma café junto à janela, vê {name} e abaixa a xícara.* O que foi? Hoje você não deve estar sentindo dor."
+        "text": "*Depois da cerimônia de formatura, a porta da enfermaria se abre pela última vez. Juwon toma café junto à janela, vê {name} e abaixa a xícara.* O que foi? Hoje você não deve estar sentindo dor."
     },
     "hidden_good_nurse_2": {
         "name": "Enfermeira",
@@ -415,7 +415,7 @@
     },
     "hidden_good_nurse_3": {
         "name": "{name}",
-        "text": "*Juwon anota a data e \"formado, sem alterações\" e fecha o caderno. Desta vez, não entrega nem um curativo nem seus dados de contato.*"
+        "text": "*Juwon anota a data e 'formado, sem alterações' e fecha o caderno. Desta vez, não entrega nem um curativo nem seus dados de contato.*"
     },
     "hidden_good_nurse_3_b": {
         "name": "Enfermeira",
@@ -700,7 +700,7 @@
     },
     "perfect_dain_5": {
         "name": "Dain",
-        "text": "Posso te abraçar um pouco? *Quando {name} abre os braços, Dain se equilibra sobre o pé esquerdo e passa os braços pelos ombros de {name}. {name} sustenta seu corpo para que o joelho direito não receba peso.*"
+        "text": "Posso te abraçar um pouco? *Quando {name} abre os braços, Dain se equilibra sobre o pé esquerdo e passa os braços pelos ombros dele. {name} sustenta seu corpo para que o joelho direito não receba peso.*"
     },
     "perfect_epilogue_1_dain": {
         "name": "{name}",
@@ -800,7 +800,7 @@
     },
     "true_dain_bridge": {
         "name": "{name}",
-        "text": "*Depois de confirmarem a promessa, Dain pergunta: \"Posso me apoiar um pouco?\" {name} assente. Dain segura a bola, apoia a cabeça no ombro de {name} e fecha os olhos. A tela do celular ainda mostra a confirmação da consulta de reabilitação.*"
+        "text": "*Depois de confirmarem a promessa, Dain pergunta: \"Posso me apoiar um pouco?\" {name} assente. Dain segura a bola, apoia a cabeça no ombro dele e fecha os olhos. A tela do celular ainda mostra a confirmação da consulta de reabilitação.*"
     },
     "true_epilogue_1_dain": {
         "name": "{name}",

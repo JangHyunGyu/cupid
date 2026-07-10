@@ -74,7 +74,7 @@
     },
     "hidden_perfect_homeroom_4e": {
         "name": "{name}",
-        "text": "*Das dritte Treffen hat {name} vorgeschlagen. Nach der Arbeit, auf einer Caféterrasse mit Blick auf die Kirschblüten, richtet {name} noch einmal das Papier um den Blumenstrauß.*"
+        "text": "*Das dritte Treffen hat {name} vorgeschlagen. Nach der Arbeit richtet die wartende Person auf einer Caféterrasse mit Blick auf die Kirschblüten noch einmal das Papier um den Blumenstrauß.*"
     },
     "hidden_perfect_homeroom_4f": {
         "name": "{name}",
@@ -367,7 +367,7 @@
     },
     "hidden_true_nurse_8_b": {
         "name": "{name}",
-        "text": "*Drei Monate lang trafen sie sich jedes Wochenende in einem anderen Café. An diesem Tag ist {name} zum ersten Mal zu Juwon nach Hause eingeladen.*"
+        "text": "*Drei Monate lang trafen sie sich jedes Wochenende in einem anderen Café. An diesem Tag folgt die erste Einladung zu Juwon nach Hause.*"
     },
     "hidden_true_nurse_8_c": {
         "name": "{name}",
@@ -395,7 +395,7 @@
     },
     "hidden_good_nurse_1": {
         "name": "Schulkrankenschwester",
-        "text": "*Nach der Abschlussfeier öffnet {name} ein letztes Mal die Tür zum Krankenzimmer. Juwon trinkt am Fenster Kaffee, sieht {name} und stellt die Tasse ab.* Was führt dich her? Heute tut dir doch nichts weh."
+        "text": "*Nach der Abschlussfeier öffnet sich die Tür zum Krankenzimmer ein letztes Mal. Juwon trinkt am Fenster Kaffee, sieht {name} und stellt die Tasse ab.* Was führt dich her? Heute tut dir doch nichts weh."
     },
     "hidden_good_nurse_2": {
         "name": "Schulkrankenschwester",
@@ -700,7 +700,7 @@
     },
     "perfect_dain_5": {
         "name": "Dain",
-        "text": "Darf ich dich kurz umarmen? *Als {name} die Arme öffnet, verlagert Dain das Gewicht auf den linken Fuß und legt die Arme um {name}s Schultern. {name} stützt sie, sodass ihr rechtes Knie nicht belastet wird.*"
+        "text": "Darf ich dich kurz umarmen? *Als {name} die Arme öffnet, verlagert Dain das Gewicht auf den linken Fuß und legt die Arme um ihn. {name} stützt sie, sodass ihr rechtes Knie nicht belastet wird.*"
     },
     "perfect_epilogue_1_dain": {
         "name": "{name}",
@@ -800,7 +800,7 @@
     },
     "true_dain_bridge": {
         "name": "{name}",
-        "text": "*Nachdem das Versprechen besiegelt ist, fragt Dain: \"Darf ich mich kurz anlehnen?\" {name} nickt. Dain hält den Ball im Arm, lehnt sich an {name}s Schulter und schließt die Augen. Auf dem Handy ist weiterhin die Bestätigung des Reha-Termins zu sehen.*"
+        "text": "*Nachdem das Versprechen besiegelt ist, fragt Dain: \"Darf ich mich kurz anlehnen?\" {name} nickt. Dain hält den Ball im Arm, lehnt sich an seine Schulter und schließt die Augen. Auf dem Handy ist weiterhin die Bestätigung des Reha-Termins zu sehen.*"
     },
     "true_epilogue_1_dain": {
         "name": "{name}",
