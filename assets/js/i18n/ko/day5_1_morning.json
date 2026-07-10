@@ -6,7 +6,7 @@
     "morning5_start_branch": {},
     "morning5_start_b": {
         "name": "{name}",
-        "text": "*교실에 들어서자마자 세 방향에서 눈길이 온다. 책상 위 쪽지, 체육복 끈에 묶인 리본, 잠금화면의 알림 하나.*"
+        "text": "*교실에 들어서자 세 가지가 한꺼번에 눈에 들어온다. 책상 위 쪽지, 체육복 끈에 묶인 리본, 잠금화면의 알림 하나.*"
     },
     "morning5_start_2_b": {
         "name": "{name}",
@@ -131,7 +131,7 @@
     },
     "hidden_homeroom_d5_5": {
         "name": "담임선생님",
-        "text": "...이걸 남 먼저 보여주는 건 아직 떨리네."
+        "text": "...이걸 남한테 먼저 보여주는 건 아직 떨리네."
     },
     "hidden_homeroom_d5_choice": {
         "name": "{name}",
@@ -159,7 +159,7 @@
     },
     "hidden_homeroom_d5_praise_trap_5": {
         "name": "담임선생님",
-        "text": "*손을 뻗는다. 원고를 가져간다. 한 박자 늦게 다시 봉투에 넣는다.*"
+        "text": "*손을 뻗어 원고를 받아 든 뒤 잠시 머뭇거리다 봉투에 넣는다.*"
     },
     "hidden_homeroom_d5_praise_trap_6": {
         "name": "담임선생님",
