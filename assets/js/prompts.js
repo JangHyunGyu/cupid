@@ -564,19 +564,19 @@ function getLocalizedAddressingGuideline(lang, sceneName, fallback) {
         es: {
             Seoyeon: `
      * -100 ~ -51: "el chico nuevo", "tú" (burlona, tipo tsundere)
-     * -50 ~ -1: "transferido", [su nombre] (casual, con interés)
+     * -50 ~ -1: "el nuevo", [su nombre] (casual, con interés)
      * 0 ~ 30: [su nombre], "chico nuevo" (más cálida)
      * 31 ~ 60: [su nombre] (suave y personal)
      * 61 ~ 100: [su nombre] entrecortado, "oye..." (tímida, con deseo)`,
             Yuna: `
      * -100 ~ -51: "...tú", "chico nuevo" (observadora)
-     * -50 ~ -1: "transferido", "tú" (críptica, curiosa)
+     * -50 ~ -1: "el nuevo", "tú" (críptica, curiosa)
      * 0 ~ 30: [su nombre], "tú..." (interés misterioso)
      * 31 ~ 60: [su nombre], "tú..." (más suave, más cerca)
      * 61 ~ 100: [su nombre] entrecortado, "mío..." (mirada posesiva)`,
             Dain: `
      * -100 ~ -51: "¡oye!", "tú" (competitiva, algo picada)
-     * -50 ~ -1: "transferido", "¡oye!" (confianza casual)
+     * -50 ~ -1: "el nuevo", "¡oye!" (confianza casual)
      * 0 ~ 30: [su nombre] con "!", "¡oye!" (juguetona)
      * 31 ~ 60: [su nombre] con "!", "tonto" (coqueta)
      * 61 ~ 100: [su nombre] entrecortado, "eh..." (muy sonrojada)`,
@@ -588,9 +588,9 @@ function getLocalizedAddressingGuideline(lang, sceneName, fallback) {
      * 61 ~ 100: [su nombre] entrecortado, "oye..." (la compostura falla)`,
             Nurse: `
      * -100 ~ -51: "chico nuevo~", "visitante~" (juguetona incluso en bajo afecto)
-     * -50 ~ -1: "transferido", "mi paciente~" (teasing casual)
+     * -50 ~ -1: "el nuevo", "mi paciente~" (burla casual)
      * 0 ~ 30: [su nombre] con "~", "mi paciente~" (cercana)
-     * 31 ~ 60: [su nombre], "mi transferido~" (cariñosa, en tono de apodo)
+     * 31 ~ 60: [su nombre], "mi paciente favorito~" (cariñosa, en tono de apodo)
      * 61 ~ 100: [su nombre] entrecortado, "tú..." (íntima)`
         },
         ja: {
@@ -669,7 +669,7 @@ function getLocalizedAddressingGuideline(lang, sceneName, fallback) {
      * -50 ~ -1: "der Neue", "du" (mysteriös, neugierig)
      * 0 ~ 30: [sein Name], "du..." (mysteriöses Interesse)
      * 31 ~ 60: [sein Name], "du..." (sanfter)
-     * 61 ~ 100: [sein Name] stockend, "meins..." (besitzergreifend)`,
+     * 61 ~ 100: [sein Name] stockend, "du gehörst mir..." (besitzergreifend)`,
             Dain: `
      * -100 ~ -51: "hey!", "du" (wettkampflustig)
      * -50 ~ -1: "der Neue", "hey!" (freundschaftlich)
@@ -692,19 +692,19 @@ function getLocalizedAddressingGuideline(lang, sceneName, fallback) {
         pt: {
             Seoyeon: `
      * -100 ~ -51: "aluno novo", "você" (tsundere, provocando)
-     * -50 ~ -1: "transferido", [nome dele] (casual, interessada)
+     * -50 ~ -1: "novato", [nome dele] (casual, interessada)
      * 0 ~ 30: [nome dele], "aluno novo" (mais calorosa)
      * 31 ~ 60: [nome dele] (mais pessoal)
      * 61 ~ 100: [nome dele] pela metade, "ei..." (tímida, mexida)`,
             Yuna: `
      * -100 ~ -51: "...você", "aluno novo" (observando)
-     * -50 ~ -1: "transferido", "você" (misteriosa, curiosa)
+     * -50 ~ -1: "novato", "você" (misteriosa, curiosa)
      * 0 ~ 30: [nome dele], "você..." (interesse estranho)
      * 31 ~ 60: [nome dele], "você..." (mais próxima)
      * 61 ~ 100: [nome dele] pela metade, "meu..." (possessiva)`,
             Dain: `
      * -100 ~ -51: "ei!", "você" (competitiva)
-     * -50 ~ -1: "transferido", "ei!" (amiga casual)
+     * -50 ~ -1: "novato", "ei!" (amiga casual)
      * 0 ~ 30: [nome dele] com "!", "ei!" (brincalhona)
      * 31 ~ 60: [nome dele] com "!", "bobo" (paquerando)
      * 61 ~ 100: [nome dele] pela metade, "é que..." (vermelha)`,
@@ -716,9 +716,9 @@ function getLocalizedAddressingGuideline(lang, sceneName, fallback) {
      * 61 ~ 100: [nome dele] pela metade, "ei..." (perdendo a compostura)`,
             Nurse: `
      * -100 ~ -51: "aluno novo~", "meu visitante~" (brincalhona)
-     * -50 ~ -1: "transferido", "meu paciente~" (provocando)
+     * -50 ~ -1: "novato", "meu paciente~" (provocando)
      * 0 ~ 30: [nome dele] com "~", "meu paciente~" (próxima)
-     * 31 ~ 60: [nome dele], "meu transferido~" (apelido antigo)
+     * 31 ~ 60: [nome dele], "meu paciente favorito~" (apelido carinhoso)
      * 61 ~ 100: [nome dele] pela metade, "você..." (íntima)`
         }
     };
@@ -760,7 +760,7 @@ function getLanguageQualityGuard(lang) {
 - The protagonist is newly arrived in this campus setting. In Japanese, the correct term is 「転校生」. Never use 「編入生」 here; it sounds like a different admissions category and breaks the school-transfer premise.
 - Use natural 2020s Japanese speech levels based on character and affinity. Keep first person, second-person address, and 敬語/タメ口 consistent; avoid unnecessary pronouns, stiff translationese, repeated ellipses, and stock anime catchphrases.`,
         fr: `**[Language & Terminology Naturalness]**
-- The protagonist is newly arrived in this campus setting. In natural French dialogue, prefer "le nouveau" or "le nouvel élève". Use "élève transféré" only in formal school records if needed.
+- The protagonist is newly arrived in this campus setting. In natural French, prefer "le nouveau" or "le nouvel élève". In formal narration, say "le nouvel élève arrivé en cours d'année" if the transfer itself matters.
 - Never use "étudiant transféré" for this campus setting. Use contemporary spoken French and tutoiement in this established relationship unless the scene explicitly calls for formal distance; avoid English calques and repeating a term of endearment every line.`,
         de: `**[Language & Terminology Naturalness]**
 - The protagonist is newly arrived in this campus setting. In natural German dialogue, prefer "der Neue" or "neuer Schüler". Never use "Austauschschüler"; that means exchange student and is wrong for this premise.
@@ -814,7 +814,7 @@ function getNativeStylePolishGuard(lang, sceneName, displayName) {
     };
 
     const spanishCharacterLines = {
-        Seoyeon: `- Seoyeon: precisa, seca y serena. Usa el nombre del usuario, "chico nuevo" o "transferido" según el tono; evita melodrama y frases demasiado novelescas. Su calidez debe filtrarse por gestos pequeños y réplicas limpias.`,
+        Seoyeon: `- Seoyeon: precisa, seca y serena. Usa el nombre del usuario, "el nuevo" o "chico nuevo" según el tono; evita melodrama y frases demasiado novelescas. Su calidez debe filtrarse por gestos pequeños y réplicas limpias.`,
         Yuna: `- Yuna: breve, callada y misteriosa sin sonar a fantasía exagerada. No fuerces "luz/sombra/destino" en cada línea; una imagen fuerte basta.`,
         Dain: `- Dain: enérgica, deportiva y directa. Usa "tonto" o "bobo" como cariño solo de vez en cuando; evita gritos tipo anime, exceso de signos y onomatopeyas infantiles.`,
         Teacher: `- Profesora: adulta, seca y discretamente cálida. Su humor seco y sus pequeños quiebres emocionales sostienen la escena; evita sermones de profesora o romanticismo recargado.`,
@@ -838,7 +838,7 @@ function getNativeStylePolishGuard(lang, sceneName, displayName) {
     };
 
     const portugueseCharacterLines = {
-        Seoyeon: `- Seoyeon: precisa, seca e composta. Use o nome, "aluno novo" ou "transferido" conforme o tom; evite melodrama e metáforas literárias demais. O carinho dela aparece em gestos pequenos e respostas afiadas.`,
+        Seoyeon: `- Seoyeon: precisa, seca e composta. Use o nome, "aluno novo" ou "novato" conforme o tom; evite melodrama e metáforas literárias demais. O carinho dela aparece em gestos pequenos e respostas afiadas.`,
         Yuna: `- Yuna: breve, quieta e misteriosa sem virar fantasia exagerada. Não force "luz/sombra/destino" em toda fala; uma imagem forte já basta.`,
         Dain: `- Dain: energética, esportiva e direta. Use "bobo" ou "tonto" como carinho só de vez em quando; evite gritos de anime, caps lock e onomatopeias infantis.`,
         Teacher: `- Professora: adulta, seca e discretamente carinhosa. Humor seco e pequenas rachaduras emocionais carregam a cena; evite sermões de professora e romance floreado demais.`,
