@@ -51,7 +51,7 @@ const AI_MODEL_ID = "deepseek-v4-flash";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.70";
+const ASSET_VERSION = "2.9.71";
 
 /**
  * 프리토킹(자유 대화) 기본 최대 턴 수
@@ -490,6 +490,9 @@ function makeCupidLogSafe(value) {
 
 function logCupidError(error, options = {}) {
     try {
+        if (typeof window !== 'undefined' && typeof window.__cupidReportCaughtError === 'function') {
+            return window.__cupidReportCaughtError(error, options);
+        }
         const message = error?.message || String(error || 'Unknown Cupid error');
         const currentLocation = typeof location !== 'undefined' ? location : null;
         const payload = {
