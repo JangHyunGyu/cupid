@@ -20601,7 +20601,7 @@
 - 다음: `confess_fail_1`
 
 - 캐릭터: `없음`
-**유나**: *오래 침묵한 뒤 책을 품에 안는다.* ...지금은 못 해.
+**유나**: *둘은 공원 출구까지 나란히 걸었지만 손은 닿지 않는다. 유나는 앞만 본 채 말한다.* ...미안. 나는 그 마음을 받아줄 수 없어.
 
 ---
 
@@ -20610,7 +20610,7 @@
 - 다음: `confess_fail_1`
 
 - 캐릭터: `없음`
-**다인**: *웃지 않은 채 운동화 끝만 본다.* 미안. 나는 친구로 남고 싶어.
+**다인**: *눈가를 훔치고 웃어 보이려 하지만 목소리는 분명하다.* 미안. 나는 친구로 남고 싶어.
 
 ---
 
@@ -20619,7 +20619,7 @@
 - 다음: `confess_fail_2`
 
 - 캐릭터: `없음`
-**{name}**: *공원을 혼자 걸어 나온다. 방금 들은 대답이 귓가에 남아 있다.*
+**{name}**: *며칠 뒤, 비 오는 학교 정문. 우산 아래서 멀어지는 뒷모습을 보지만 이름을 부르거나 따라가지 않는다.*
 
 ---
 
@@ -20628,7 +20628,7 @@
 - 다음: `confess_fail_3`
 
 - 캐릭터: `없음`
-**{name}**: *집에 도착해 대화방을 연다. 커서가 빈 입력창에서 깜빡인다.*
+**{name}**: *그 자리에 선 채 대화방을 연다. 썼다 지운 끝에 한 문장만 남긴다.*
 
 ---
 
@@ -20946,7 +20946,7 @@
 ---
 
 ### `harem_6`
-- 배경: `ending_harem.png`
+- 배경: `park.png`
 - 다음: `harem_7`
 
 - 캐릭터: `없음`
@@ -20955,7 +20955,7 @@
 ---
 
 ### `harem_7`
-- 배경: `ending_harem.png`
+- 배경: `room_my.png`
 - 다음: `harem_8`
 
 - 캐릭터: `없음`
@@ -20964,7 +20964,7 @@
 ---
 
 ### `harem_8`
-- 배경: `ending_harem.png`
+- 배경: `room_my.png`
 - 다음: `day5_credits`
 
 - 캐릭터: `없음`
@@ -21008,7 +21008,7 @@
 - 배경: `room_school.png`
 - 배경톤: `empty`
 - BGM: `ending.mp3`
-- 플래그: `ending_perfect`, `isDating_Teacher`
+- 플래그: `ending_perfect`
 - 다음: `hidden_perfect_homeroom_1b`
 
 - 캐릭터: `없음`
@@ -21057,7 +21057,7 @@
 - 다음: `hidden_perfect_homeroom_3b`
 
 - 캐릭터: `teacher_normal.png`
-**{name}**: *4년 후. 학교를 떠나 대학을 마치고, 첫 직장 근처에 작은 원룸을 얻었다.*
+**{name}**: *그날 교실 문이 닫힌 뒤, 둘은 개인적으로 연락하지 않았다. 4년이 지나 {name}은 대학을 마치고 첫 직장 근처에서 혼자 살고 있었다.*
 
 ---
 
@@ -21138,7 +21138,7 @@
 - 다음: `hidden_perfect_homeroom_4f`
 
 - 캐릭터: `teacher_normal.png`
-**{name}**: *세 번째 만남은 {name}이 먼저 정했다. 퇴근 후, 꽃집 앞에서 기다린다.*
+**{name}**: *세 번째 만남은 {name}이 먼저 정했다. 퇴근 후, 벚꽃이 내려다보이는 카페 테라스에서 꽃다발 포장지를 다시 고쳐 잡는다.*
 
 ---
 
@@ -21153,6 +21153,7 @@
 
 ### `hidden_perfect_homeroom_4g`
 - 배경: `ending_perfect_teacher.png`
+- 플래그: `isDating_Teacher`
 - 다음: `hidden_perfect_homeroom_ending_title`
 
 - 캐릭터: `없음`
@@ -21221,7 +21222,7 @@
 - 다음: `hidden_true_homeroom_2`
 
 - 캐릭터: `없음`
-**{name}**: *졸업 후 4년. 학교를 떠나 대학을 마치고 혼자 생활비를 버는 중이다. 퇴근길 독립서점에서 익숙한 이름의 북토크 포스터를 본다.*
+**{name}**: *졸업 후 4년. 그동안 둘은 개인적으로 연락한 적이 없다. 학교를 떠나 대학을 마치고 혼자 생활비를 버는 중인 {name}은 퇴근길 독립서점에서 익숙한 이름의 북토크 포스터를 본다.*
 
 ---
 
@@ -21428,7 +21429,7 @@
 - 다음: `hidden_true_homeroom_ending_title`
 
 - 캐릭터: `없음`
-**담임선생님**: 다음 주에도 만날래?
+**담임선생님**: *케이크 접시 너머로 {name}이 손을 내민다. 잠시 바라보다 조심스럽게 잡고, 새어 나온 웃음을 반대 손으로 가린다.* 다음 주에도 만날래?
 
 ---
 
@@ -21442,30 +21443,30 @@
 ---
 
 ### `hidden_good_homeroom_1`
-- 배경: `bookstore.png`
+- 배경: `room_school.png`
 - BGM: `night2.mp3`
 - 다음: `hidden_good_homeroom_2`
 
 - 캐릭터: `teacher_normal.png`
-**담임선생님**: *졸업 후 5년. 독립서점 낭독회에서 책을 정리하다 {name}을 알아본다.* ...오랜만이네.
+**담임선생님**: *졸업식이 끝난 뒤, 빈 교실에서 추천서 사본과 문예부 합평본을 정리하다 {name}을 부른다.* 이건 네 기록이야. 빠진 건 없는지 확인해.
 
 ---
 
 ### `hidden_good_homeroom_2`
-- 배경: `bookstore.png`
+- 배경: `room_school.png`
 - 다음: `hidden_good_homeroom_3`
 
 - 캐릭터: `teacher_normal.png`
-**{name}**: *행사 출구에서 다시 마주친다. 서로 명함을 꺼내다 같은 순간 멈춘다.*
+**{name}**: *봉투를 받아 들고 함께 복도로 나온다. 마지막 학생들이 계단을 내려가고, 담임은 남은 원고와 서류를 품에 안는다.*
 
 ---
 
 ### `hidden_good_homeroom_3`
-- 배경: `bookstore.png`
+- 배경: `room_school.png`
 - 다음: `hidden_good_homeroom_4`
 
 - 캐릭터: `teacher_normal.png`
-**담임선생님**: 책 다 읽고도 할 말이 남으면 연락해. 이번엔 독자와 작가로.
+**담임선생님**: 네 글은 네가 계속 써. 내 원고는 내가 끝낼게. 서로 맡은 일부터 하자.
 
 ---
 
@@ -21474,7 +21475,7 @@
 - 다음: `hidden_good_homeroom_ending_title`
 
 - 캐릭터: `없음`
-**{name}**: *누가 먼저랄 것 없이 연락처 화면을 연다. 다음 만남을 정할지는 책을 다 읽은 뒤 결정하기로 한다.*
+**{name}**: *인사를 마치고 복도 끝까지 걷다 돌아본다. 담임은 창가에 서서 졸업생들을 배웅하고 있다. {name}도 가볍게 고개를 숙인 뒤 학교를 나선다.*
 
 ---
 
@@ -21500,9 +21501,9 @@
 ---
 
 ### `hidden_perfect_nurse_1`
-- 배경: `cafe.png`
+- 배경: `street.png`
 - BGM: `ending.mp3`
-- 플래그: `ending_perfect`, `isDating_Nurse`
+- 플래그: `ending_perfect`
 - 다음: `hidden_perfect_nurse_2`
 
 - 캐릭터: `없음`
@@ -21511,7 +21512,7 @@
 ---
 
 ### `hidden_perfect_nurse_2`
-- 배경: `cafe.png`
+- 배경: `street.png`
 - 다음: `hidden_perfect_nurse_3`
 
 - 캐릭터: `nurse_normal.png`
@@ -21547,7 +21548,7 @@
 ---
 
 ### `hidden_perfect_nurse_4b`
-- 배경: `ending_perfect_nurse.png`
+- 배경: `cafe.png`
 - 다음: `hidden_perfect_nurse_5`
 
 - 캐릭터: `없음`
@@ -21556,43 +21557,44 @@
 ---
 
 ### `hidden_perfect_nurse_5`
-- 배경: `ending_perfect_nurse.png`
+- 배경: `cafe.png`
 - 다음: `hidden_perfect_nurse_5b`
 
-- 캐릭터: `없음`
+- 캐릭터: `nurse_normal.png`
 **보건선생님**: 그럼 다음 만남은 진료도 상담도 아닌 걸로 잡을까?
 
 ---
 
 ### `hidden_perfect_nurse_5b`
-- 배경: `ending_perfect_nurse.png`
-- 다음: `hidden_perfect_nurse_ending_title`
+- 배경: `cafe.png`
+- 플래그: `isDating_Nurse`
+- 다음: `hidden_perfect_nurse_ep1`
 
 - 캐릭터: `없음`
 **{name}**: *달력을 번갈아 보다가 둘 다 비는 토요일을 찾는다.*
 
 ---
 
+### `hidden_perfect_nurse_ep1`
+- 배경: `ending_perfect_nurse.png`
+- 다음: `hidden_perfect_nurse_ending_title`
+
+- 캐릭터: `없음`
+**{name}**: *몇 달 뒤. 몇 번의 주말을 함께 보낸 끝에 처음으로 같은 아침을 맞는다. 주원이 이불 아래로 {name}의 손을 찾아 맞잡는다. {name}도 놓지 않는다.*
+
+---
+
 ### `hidden_perfect_nurse_ending_title`
 - 배경: `ending_perfect_nurse.png`
-- 다음: `hidden_perfect_nurse_ep1`
+- 다음: `hidden_perfect_nurse_ep2`
 
 - 캐릭터: `없음`
 **—**: ─── 보건선생님 PERFECT END ───
 
 ---
 
-### `hidden_perfect_nurse_ep1`
-- 배경: `ending_perfect_nurse.png`
-- 다음: `hidden_perfect_nurse_ep2`
-
-- 캐릭터: `없음`
-**{name}**: *몇 달 뒤. 각자 일을 마친 주말, 같은 식탁에서 늦은 아침을 먹는다. 밴드는 약상자 안에만 있다.*
-
----
-
 ### `hidden_perfect_nurse_ep2`
-- 배경: `ending_perfect_nurse.png`
+- 배경: `nurse_house.png`
 - 다음: `hidden_perfect_nurse_ep3`
 
 - 캐릭터: `없음`
@@ -21601,7 +21603,7 @@
 ---
 
 ### `hidden_perfect_nurse_ep3`
-- 배경: `ending_perfect_nurse.png`
+- 배경: `nurse_house.png`
 - 다음: `hidden_perfect_nurse_ep4`
 
 - 캐릭터: `없음`
@@ -21610,7 +21612,7 @@
 ---
 
 ### `hidden_perfect_nurse_ep4`
-- 배경: `ending_perfect_nurse.png`
+- 배경: `nurse_house.png`
 - 다음: `day5_credits`
 
 - 캐릭터: `없음`
@@ -21792,43 +21794,34 @@
 ---
 
 ### `hidden_true_nurse_8`
-- 배경: `ending_true_nurse.png`
-- 다음: `hidden_true_nurse_ending_title`
+- 배경: `street.png`
+- 다음: `hidden_true_nurse_8_b`
 
-- 캐릭터: `없음`
+- 캐릭터: `nurse_normal.png`
 **보건선생님**: 다음엔 건강 행사 말고, 그냥 만나자.
 
 ---
 
-### `hidden_true_nurse_ending_title`
-- 배경: `ending_true_nurse.png`
-- 다음: `hidden_true_nurse_8_b`
-
-- 캐릭터: `없음`
-**—**: ─── 보건선생님 TRUE LOVE END ───
-
----
-
 ### `hidden_true_nurse_8_b`
-- 배경: `ending_true_nurse.png`
+- 배경: `nurse_house.png`
 - 다음: `hidden_true_nurse_8_c`
 
 - 캐릭터: `없음`
-**{name}**: *한 달 뒤, 둘은 주말마다 카페를 바꿔가며 만났다.*
+**{name}**: *세 달 동안 둘은 주말마다 다른 카페에서 만났다. 그날은 처음으로 주원의 집에 초대받았다.*
 
 ---
 
 ### `hidden_true_nurse_8_c`
-- 배경: `ending_true_nurse.png`
+- 배경: `nurse_house.png`
 - 다음: `hidden_true_nurse_8_d`
 
 - 캐릭터: `없음`
-**{name}**: *카페 창문에는 지금의 두 사람만 비친다. 학교의 흰 커튼은 더 이상 겹치지 않는다.*
+**{name}**: *영화를 고르다 소파에 나란히 앉는다. 창밖은 어둡고, 테이블 위 커피 두 잔이 천천히 식는다.*
 
 ---
 
 ### `hidden_true_nurse_8_d`
-- 배경: `ending_true_nurse.png`
+- 배경: `nurse_house.png`
 - 다음: `hidden_true_nurse_8_e`
 
 - 캐릭터: `없음`
@@ -21837,7 +21830,7 @@
 ---
 
 ### `hidden_true_nurse_8_e`
-- 배경: `ending_true_nurse.png`
+- 배경: `nurse_house.png`
 - 다음: `hidden_true_nurse_8_f`
 
 - 캐릭터: `없음`
@@ -21846,7 +21839,7 @@
 ---
 
 ### `hidden_true_nurse_8_f`
-- 배경: `ending_true_nurse.png`
+- 배경: `nurse_house.png`
 - 다음: `hidden_true_nurse_8_g`
 
 - 캐릭터: `없음`
@@ -21855,7 +21848,7 @@
 ---
 
 ### `hidden_true_nurse_8_g`
-- 배경: `ending_true_nurse.png`
+- 배경: `nurse_house.png`
 - 다음: `hidden_true_nurse_8_h`
 
 - 캐릭터: `없음`
@@ -21865,74 +21858,83 @@
 
 ### `hidden_true_nurse_8_h`
 - 배경: `ending_true_nurse.png`
+- 다음: `hidden_true_nurse_ending_title`
+
+- 캐릭터: `없음`
+**{name}**: 그럼 다음 주도 볼게요. 제 선택으로. *영화가 끝나기 전, 주원은 {name}의 어깨에 기대 잠든다.*
+
+---
+
+### `hidden_true_nurse_ending_title`
+- 배경: `ending_true_nurse.png`
 - 다음: `day5_credits`
 
 - 캐릭터: `없음`
-**{name}**: 그럼 다음 주도 볼게요. 제 선택으로.
+**—**: ─── 보건선생님 TRUE LOVE END ───
 
 ---
 
 ### `hidden_good_nurse_1`
-- 배경: `street.png`
+- 배경: `nurse_room.png`
 - BGM: `night2.mp3`
 - 다음: `hidden_good_nurse_2`
 
 - 캐릭터: `nurse_normal.png`
-**보건선생님**: *졸업 후 5년. 지역 건강행사 접수대에서 {name}을 알아본다.* 웬일이야, 여기서 다 보네.
+**보건선생님**: *졸업식이 끝난 뒤, 마지막으로 보건실 문을 연다. 주원은 창가에서 커피를 마시다 {name}을 보고 잔을 내려놓는다.* 웬일이야. 오늘은 아픈 데 없을 텐데.
 
 ---
 
 ### `hidden_good_nurse_2`
-- 배경: `street.png`
+- 배경: `nurse_room.png`
 - 다음: `hidden_good_nurse_2_b`
 
 - 캐릭터: `nurse_normal.png`
-**보건선생님**: 행사 끝나면 커피 한 잔 할래? 오랜만에 근황이나 듣게.
+**보건선생님**: 졸업 인사하러 왔으면 앉아. 진료는 오늘부로 끝이니까.
 
 ---
 
 ### `hidden_good_nurse_2_b`
-- 배경: `street.png`
+- 배경: `nurse_room.png`
 - 다음: `hidden_good_nurse_2_c`
 
 - 캐릭터: `nurse_normal.png`
-**{name}**: 괜찮아요? 예전 일도 있는데.
+**{name}**: 그동안 감사했어요.
 
 ---
 
 ### `hidden_good_nurse_2_c`
-- 배경: `street.png`
+- 배경: `nurse_room.png`
 - 다음: `hidden_good_nurse_2_d`
 
 - 캐릭터: `nurse_normal.png`
-**보건선생님**: *말을 고른다.* 불편하면 인사만 하고 가도 돼. 선택은 네가 해.
+**보건선생님**: *잠깐 말을 고른 뒤 고개를 끄덕인다.* 그래. 다치면 참지 말고 병원부터 가. 이제는 내가 확인해 줄 수 없으니까.
 
 ---
 
 ### `hidden_good_nurse_2_d`
-- 배경: `street.png`
+- 배경: `nurse_room.png`
 - 다음: `hidden_good_nurse_3`
 
 - 캐릭터: `nurse_normal.png`
-**보건선생님**: *행사 상자에 남은 밴드를 정리한다. 이번에는 아무것도 건네지 않고 기다린다.*
+**보건선생님**: *책상 서랍에서 연두색 노트를 꺼내 마지막 페이지를 펼친다.*
 
 ---
 
 ### `hidden_good_nurse_3`
-- 배경: `cafe.png`
+- 배경: `nurse_room.png`
 - 다음: `hidden_good_nurse_3_b`
 
 - 캐릭터: `nurse_normal.png`
-**{name}**: *카페에 도착한 뒤 서로 휴대폰을 꺼낸다. 누가 먼저랄 것 없이 연락처 화면을 연다.*
+**{name}**: *주원은 날짜와 '졸업, 이상 없음'을 적고 노트를 덮는다. 이번에는 밴드도 연락처도 건네지 않는다.*
 
 ---
 
 ### `hidden_good_nurse_3_b`
-- 배경: `cafe.png`
+- 배경: `nurse_room.png`
 - 다음: `hidden_good_nurse_4`
 
 - 캐릭터: `nurse_normal.png`
-**보건선생님**: 다음 연락은 아픈 얘기 말고 다른 걸로 해.
+**보건선생님**: 잘 가. 다음에 마주치면 환자 말고 졸업생으로 인사해.
 
 ---
 
@@ -21941,7 +21943,7 @@
 - 다음: `hidden_good_nurse_ending_title`
 
 - 캐릭터: `없음`
-**{name}**: *{name}이 먼저 다음 주말의 빈 시간을 보여준다. 주원도 자기 일정표를 나란히 펼친다.*
+**{name}**: *보건실 문을 나서기 전 돌아본다. 주원은 커피잔을 든 채 창가에 앉아 있다. 둘은 가볍게 고개를 마주 숙인다.*
 
 ---
 
@@ -22431,7 +22433,7 @@
 ---
 
 ### `true_yuna_2_c`
-- 배경: `yuna_hideout.png`
+- 배경: `top_school.png`
 - 다음: `true_yuna_2_d`
 
 - 캐릭터: `yuna_normal.png`
@@ -22440,16 +22442,16 @@
 ---
 
 ### `true_yuna_2_d`
-- 배경: `yuna_hideout.png`
+- 배경: `top_school.png`
 - 다음: `true_yuna_3`
 
 - 캐릭터: `yuna_normal.png`
-**유나**: *난간에 기대어 선다. 별이 보인다.*
+**유나**: *난간에 기대어 선다. 산 너머로 해가 기울고 있다.*
 
 ---
 
 ### `true_yuna_3`
-- 배경: `yuna_hideout.png`
+- 배경: `top_school.png`
 - 다음: `true_yuna_4`
 
 - 캐릭터: `yuna_normal.png`
@@ -22458,7 +22460,7 @@
 ---
 
 ### `true_yuna_4`
-- 배경: `yuna_hideout.png`
+- 배경: `top_school.png`
 - 다음: `true_yuna_5`
 
 - 캐릭터: `yuna_smile.png`
@@ -22467,7 +22469,7 @@
 ---
 
 ### `true_yuna_5`
-- 배경: `yuna_hideout.png`
+- 배경: `top_school.png`
 - 다음: `true_yuna_5_b`
 
 - 캐릭터: `yuna_smile.png`
@@ -22476,7 +22478,7 @@
 ---
 
 ### `true_yuna_5_b`
-- 배경: `yuna_hideout.png`
+- 배경: `top_school.png`
 - 다음: `true_yuna_6`
 
 - 캐릭터: `yuna_smile.png`
@@ -22485,7 +22487,7 @@
 ---
 
 ### `true_yuna_6`
-- 배경: `yuna_hideout.png`
+- 배경: `top_school.png`
 - 다음: `true_yuna_6b`
 
 - 캐릭터: `yuna_shy.png`
@@ -22494,7 +22496,7 @@
 ---
 
 ### `true_yuna_6b`
-- 배경: `yuna_hideout.png`
+- 배경: `top_school.png`
 - 다음: `true_yuna_7`
 
 - 캐릭터: `yuna_smile.png`
@@ -22503,7 +22505,7 @@
 ---
 
 ### `true_yuna_7`
-- 배경: `yuna_hideout.png`
+- 배경: `top_school.png`
 - 다음: `true_yuna_bridge`
 
 - 캐릭터: `yuna_shy.png`
@@ -22516,7 +22518,7 @@
 - 다음: `true_epilogue_1_yuna`
 
 - 캐릭터: `없음`
-**{name}**: *노트에 찍힌 연보라색 점이 아직 마르지 않았다.*
+**{name}**: *마지막 곡이 끝날 무렵 초승달이 떴다. 유나가 "등 기대도 돼?" 하고 묻는다. {name}이 고개를 끄덕이자 둘은 등을 맞대고 다음 곡을 재생한다.*
 
 ---
 
@@ -22604,7 +22606,7 @@
 - 다음: `perfect_epilogue_1_dain`
 
 - 캐릭터: `없음`
-**다인**: *한 걸음 다가와 {name}의 어깨에 팔을 두른다. {name}이 허리를 받치자 오른발에 힘을 빼고 웃는다.*
+**다인**: 잠깐 안아도 돼? *{name}이 팔을 내밀자, 다인은 왼발로 중심을 잡고 어깨에 팔을 두른다. {name}이 몸을 받쳐 오른쪽 무릎에는 힘이 실리지 않는다.*
 
 ---
 
@@ -22613,7 +22615,7 @@
 - 다음: `perfect_epilogue_1b_dain`
 
 - 캐릭터: `없음`
-**{name}**: *다인은 팔을 두른 채 한참 웃다가 천천히 두 발을 바닥에 고쳐 딛는다.*
+**{name}**: *다인이 "이제 내려줘"라고 하자, {name}은 왼발부터 닿도록 천천히 내려놓는다.*
 
 ---
 
@@ -22825,7 +22827,7 @@
 - 다음: `true_dain_bridge`
 
 - 캐릭터: `dain_laugh.png`
-**다인**: *배구공을 옆에 내려놓고 새끼손가락을 내민다.*
+**다인**: *배구공을 품에 안은 채 새끼손가락을 내민다.*
 
 ---
 
@@ -22834,7 +22836,7 @@
 - 다음: `true_epilogue_1_dain`
 
 - 캐릭터: `없음`
-**{name}**: *두 사람의 새끼손가락이 걸린 채, 병원 예약 알림이 화면 위에 남아 있다.*
+**{name}**: *약속을 확인한 뒤 다인이 묻는다. "잠깐 기대도 돼?" {name}이 고개를 끄덕이자, 다인은 공을 안은 채 어깨에 기대 눈을 감는다. 휴대폰에는 병원 예약 완료 화면이 남아 있다.*
 
 ---
 
@@ -23201,7 +23203,7 @@
 - 다음: `good_epilogue_1_dain`
 
 - 캐릭터: `없음`
-**{name}**: *교문을 지나 함께 걸어 나온다. 걷는 속도는 다인이 정한다.*
+**{name}**: *다인이 먼저 주먹을 내민다. {name}이 가볍게 맞대자 다인이 웃는다. 둘은 교문을 지나, 다인이 정한 속도로 천천히 걷기 시작한다.*
 
 ---
 

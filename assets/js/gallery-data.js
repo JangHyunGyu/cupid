@@ -832,7 +832,7 @@ class GalleryData {
             ,
                 name: '다인의 승리',
                 character: '다인',
-                description: '석양 빛 체육관에서, 다인이 뛰어올라 안기던 순간',
+                description: '석양의 체육관에서, 다인이 다친 무릎에 힘을 싣지 않고 품에 안긴 순간',
                 file: 'assets/images/background/ending_perfect_dain.png',
                 thumbnail: 'assets/images/background/ending_perfect_dain.png'
             },
@@ -850,9 +850,9 @@ class GalleryData {
                 id: 'ending_true_teacher',
                 unlockHint: "담임 트루러브 엔딩 도달"
             ,
-                name: '금지된 손잡기',
+                name: '다음 주의 약속',
                 character: '담임선생님',
-                description: '카페 창가에서 몰래 손을 잡은 순간, 선생님의 볼이 빨갛게 물들다',
+                description: '졸업 후 다시 만난 카페에서 손을 잡고 다음 약속을 정한 순간',
                 file: 'assets/images/background/ending_true_teacher.png',
                 thumbnail: 'assets/images/background/ending_true_teacher.png'
             },
@@ -868,11 +868,11 @@ class GalleryData {
             },
             {
                 id: 'ending_harem',
-                unlockHint: "하렘 엔딩 도달"
+                unlockHint: "엇갈린 대답 엔딩 도달"
             ,
-                name: '삼각관계...아니 사각?',
+                name: '엇갈린 대답',
                 character: null,
-                description: '세 명에게 둘러싸인 혼돈의 순간',
+                description: '세 사람 앞에서 솔직한 대답과 각자의 경계를 확인한 순간',
                 file: 'assets/images/background/ending_harem.png',
                 thumbnail: 'assets/images/background/ending_harem.png'
             },
@@ -911,7 +911,7 @@ class GalleryData {
             { id: 'ending_good_yuna', name: '옥상의 침묵', character: '유나', description: '어두운 옥상에 나란히 앉아 하늘을 바라보는 두 사람', file: 'assets/images/background/ending_good_yuna.png', thumbnail: 'assets/images/background/ending_good_yuna.png',
                 unlockHint: "유나 굿 엔딩 도달"
             },
-            { id: 'ending_good_dain', name: '교문 앞 인사', character: '다인', description: '석양 교문에서 장난스럽게 어깨를 치며 웃는 다인', file: 'assets/images/background/ending_good_dain.png', thumbnail: 'assets/images/background/ending_good_dain.png',
+            { id: 'ending_good_dain', name: '교문 앞 인사', character: '다인', description: '석양의 교문 앞에서 주먹을 맞대고 함께 걷기 시작한 순간', file: 'assets/images/background/ending_good_dain.png', thumbnail: 'assets/images/background/ending_good_dain.png',
                 unlockHint: "다인 굿 엔딩 도달"
             },
             { id: 'ending_confess_fail_seoyeon', name: '서연의 침묵', character: '서연', description: '석양의 공원에서, 안경을 고쳐 쓰며 조용히 시선을 돌리는 서연', file: 'assets/images/background/ending_confess_fail_seoyeon.png', thumbnail: 'assets/images/background/ending_confess_fail_seoyeon.png',
@@ -970,19 +970,19 @@ class GalleryData {
             { id: 'ending_perfect_yuna', name: 'Yuna\'s Warmth', character: 'Yuna', description: 'In the moonlit hideout, Yuna holds you close for the first time', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png',
                 unlockHint: "Reach Yuna Perfect Ending"
             },
-            { id: 'ending_perfect_dain', name: 'Dain\'s Victory', character: 'Dain', description: 'In the sunset gym, Dain leaps into your arms', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png',
+            { id: 'ending_perfect_dain', name: 'Dain\'s Victory', character: 'Dain', description: 'In the sunset gym, Dain wraps her arms around you while keeping the weight off her injured knee', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png',
                 unlockHint: "Reach Dain Perfect Ending"
             },
             { id: 'ending_bittersweet', name: 'Farewell in the Rain', character: null, description: 'Standing alone under an umbrella, watching a silhouette fade away', file: 'assets/images/background/ending_bittersweet.png', thumbnail: 'assets/images/background/ending_bittersweet.png',
                 unlockHint: "Reach the Bittersweet Ending"
             },
-            { id: 'ending_true_teacher', name: 'Forbidden Touch', character: 'Teacher', description: 'A secret hand-holding at the cafe, her cheeks turning red', file: 'assets/images/background/ending_true_teacher.png', thumbnail: 'assets/images/background/ending_true_teacher.png',
+            { id: 'ending_true_teacher', name: 'Next Week\'s Promise', character: 'Teacher', description: 'Holding hands at a cafe after meeting again as adults and making plans for next week', file: 'assets/images/background/ending_true_teacher.png', thumbnail: 'assets/images/background/ending_true_teacher.png',
                 unlockHint: "Reach Teacher True Love Ending"
             },
             { id: 'ending_true_nurse', name: 'Safe Place', character: 'School Nurse', description: 'She falls asleep on your shoulder on her couch, a quiet night', file: 'assets/images/background/ending_true_nurse.png', thumbnail: 'assets/images/background/ending_true_nurse.png',
                 unlockHint: "Reach Nurse True Love Ending"
             },
-            { id: 'ending_harem', name: 'Love Triangle...or Square?', character: null, description: 'Surrounded by three girls at once — chaos ensues', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png',
+            { id: 'ending_harem', name: 'Different Answers', character: null, description: 'Facing all three girls as everyone states their honest answer and boundaries', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png',
                 unlockHint: "Reach the Harem Ending"
             },
             { id: 'ending_alone', name: 'Empty Room', character: null, description: 'A dark room, a dead phone, city lights through the curtain', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png',
@@ -1047,19 +1047,19 @@ class GalleryData {
             { id: 'ending_perfect_yuna', name: 'La calidez de Yuna', character: 'Yuna', description: 'En el escondite bajo la luz de la luna, Yuna se abraza a ti por primera vez', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png',
                 unlockHint: "Alcanza el Final Perfecto de Yuna"
             },
-            { id: 'ending_perfect_dain', name: 'La victoria de Dain', character: 'Dain', description: 'En el gimnasio al atardecer, Dain salta a tus brazos', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png',
+            { id: 'ending_perfect_dain', name: 'La victoria de Dain', character: 'Dain', description: 'En el gimnasio al atardecer, Dain te abraza sin cargar peso sobre la rodilla lesionada', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png',
                 unlockHint: "Alcanza el Final Perfecto de Dain"
             },
             { id: 'ending_bittersweet', name: 'Despedida bajo la lluvia', character: null, description: 'Solo bajo un paraguas, viendo una silueta desaparecer', file: 'assets/images/background/ending_bittersweet.png', thumbnail: 'assets/images/background/ending_bittersweet.png',
                 unlockHint: "Alcanza el Final Agridulce"
             },
-            { id: 'ending_true_teacher', name: 'Toque prohibido', character: 'Profesora', description: 'Tomarse las manos en secreto en el café', file: 'assets/images/background/ending_true_teacher.png', thumbnail: 'assets/images/background/ending_true_teacher.png',
+            { id: 'ending_true_teacher', name: 'La promesa de la próxima semana', character: 'Profesora', description: 'Tomarse de la mano en un café tras reencontrarse como adultos y acordar la próxima cita', file: 'assets/images/background/ending_true_teacher.png', thumbnail: 'assets/images/background/ending_true_teacher.png',
                 unlockHint: "Alcanza Final Amor Verdadero"
             },
             { id: 'ending_true_nurse', name: 'Lugar seguro', character: 'Enfermera', description: 'Ella se duerme en tu hombro en su sofá', file: 'assets/images/background/ending_true_nurse.png', thumbnail: 'assets/images/background/ending_true_nurse.png',
                 unlockHint: "Alcanza Final Amor Verdadero"
             },
-            { id: 'ending_harem', name: 'Triángulo...¿o cuadrado?', character: null, description: 'Rodeado por tres chicas a la vez', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png',
+            { id: 'ending_harem', name: 'Respuestas distintas', character: null, description: 'Frente a las tres chicas, cada persona deja clara su respuesta y sus límites', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png',
                 unlockHint: "Alcanza el Final Haren"
             },
             { id: 'ending_alone', name: 'Habitación vacía', character: null, description: 'Una habitación oscura, un teléfono apagado', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png',
@@ -1124,19 +1124,19 @@ class GalleryData {
             { id: 'ending_perfect_yuna', name: 'ユナの温もり', character: 'ユナ', description: '月明かりの隠れ家で、ユナが初めて胸に飛び込んだ夜', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png',
                 unlockHint: "ユナのパーフェクトエンディングに到達"
             },
-            { id: 'ending_perfect_dain', name: 'ダインの勝利', character: 'ダイン', description: '夕日の体育館で、ダインが飛びついて抱きついた瞬間', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png',
+            { id: 'ending_perfect_dain', name: 'ダインの勝利', character: 'ダイン', description: '夕暮れの体育館で、ダインが痛めた膝に体重をかけずに抱きついた瞬間', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png',
                 unlockHint: "ダインのパーフェクトエンディングに到達"
             },
             { id: 'ending_bittersweet', name: '雨の中の別れ', character: null, description: '傘の下で一人、遠ざかる影を見つめる', file: 'assets/images/background/ending_bittersweet.png', thumbnail: 'assets/images/background/ending_bittersweet.png',
                 unlockHint: "ビタースイートエンディングに到達"
             },
-            { id: 'ending_true_teacher', name: '禁じられた手つなぎ', character: '担任先生', description: 'カフェでこっそり手を繋いだ瞬間、先生の頬が赤く染まる', file: 'assets/images/background/ending_true_teacher.png', thumbnail: 'assets/images/background/ending_true_teacher.png',
+            { id: 'ending_true_teacher', name: '来週の約束', character: '担任先生', description: '大人になって再会したカフェで手を取り、次の約束を決めた瞬間', file: 'assets/images/background/ending_true_teacher.png', thumbnail: 'assets/images/background/ending_true_teacher.png',
                 unlockHint: "担任トゥルーラブエンディングに到達"
             },
             { id: 'ending_true_nurse', name: '安全な場所', character: '保健先生', description: '保健先生の家のソファで、肩にもたれて眠った静かな夜', file: 'assets/images/background/ending_true_nurse.png', thumbnail: 'assets/images/background/ending_true_nurse.png',
                 unlockHint: "保健先生トゥルーラブに到達"
             },
-            { id: 'ending_harem', name: '三角関係...いや四角？', character: null, description: '三人の女の子に囲まれた混沌の瞬間', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png',
+            { id: 'ending_harem', name: 'すれ違う答え', character: null, description: '三人を前に、それぞれが本音と境界線を確かめた瞬間', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png',
                 unlockHint: "ハーレムエンディングに到達"
             },
             { id: 'ending_alone', name: '一人きりの部屋', character: null, description: '暗い部屋、消えたスマホ、カーテン越しの街の灯り', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png',
@@ -1201,19 +1201,19 @@ class GalleryData {
             { id: 'ending_perfect_yuna', name: 'La chaleur de Yuna', character: 'Yuna', description: 'Dans le repaire au clair de lune, Yuna se blottit contre toi pour la première fois', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png',
                 unlockHint: "Atteindre la fin parfaite de Yuna"
             },
-            { id: 'ending_perfect_dain', name: 'La victoire de Dain', character: 'Dain', description: 'Dans le gymnase au coucher du soleil, Dain saute dans tes bras', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png',
+            { id: 'ending_perfect_dain', name: 'La victoire de Dain', character: 'Dain', description: 'Dans le gymnase au coucher du soleil, Dain t\'enlace sans appuyer sur son genou blessé', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png',
                 unlockHint: "Atteindre la fin parfaite de Dain"
             },
             { id: 'ending_bittersweet', name: 'Adieu sous la pluie', character: null, description: 'Seul sous un parapluie, regardant une silhouette s\'éloigner', file: 'assets/images/background/ending_bittersweet.png', thumbnail: 'assets/images/background/ending_bittersweet.png',
                 unlockHint: "Atteindre la fin douce-amere"
             },
-            { id: 'ending_true_teacher', name: 'Contact interdit', character: 'Professeure', description: 'Se tenir la main en secret au café', file: 'assets/images/background/ending_true_teacher.png', thumbnail: 'assets/images/background/ending_true_teacher.png',
+            { id: 'ending_true_teacher', name: 'La promesse de la semaine prochaine', character: 'Professeure', description: 'Se tenir la main au café après s\'être retrouvés adultes et fixer le prochain rendez-vous', file: 'assets/images/background/ending_true_teacher.png', thumbnail: 'assets/images/background/ending_true_teacher.png',
                 unlockHint: "Atteindre fin amour vrai"
             },
             { id: 'ending_true_nurse', name: 'Lieu sûr', character: 'Infirmière', description: 'Elle s\'endort sur ton épaule sur son canapé', file: 'assets/images/background/ending_true_nurse.png', thumbnail: 'assets/images/background/ending_true_nurse.png',
                 unlockHint: "Atteindre fin amour vrai"
             },
-            { id: 'ending_harem', name: 'Triangle...ou carré ?', character: null, description: 'Entouré par trois filles en même temps', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png',
+            { id: 'ending_harem', name: 'Des réponses différentes', character: null, description: 'Face aux trois filles, chacun exprime franchement sa réponse et ses limites', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png',
                 unlockHint: "Atteindre la fin harem"
             },
             { id: 'ending_alone', name: 'Chambre vide', character: null, description: 'Une chambre sombre, un téléphone éteint', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png',
@@ -1278,19 +1278,19 @@ class GalleryData {
             { id: 'ending_perfect_yuna', name: 'Yunas Wärme', character: 'Yuna', description: 'Im mondbeleuchteten Versteck schmiegt sich Yuna zum ersten Mal an dich', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png',
                 unlockHint: "Erreiche Yunas perfektes Ende"
             },
-            { id: 'ending_perfect_dain', name: 'Dains Sieg', character: 'Dain', description: 'In der Turnhalle bei Sonnenuntergang springt Dain in deine Arme', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png',
+            { id: 'ending_perfect_dain', name: 'Dains Sieg', character: 'Dain', description: 'In der Turnhalle bei Sonnenuntergang umarmt Dain dich, ohne ihr verletztes Knie zu belasten', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png',
                 unlockHint: "Erreiche Dains perfektes Ende"
             },
             { id: 'ending_bittersweet', name: 'Abschied im Regen', character: null, description: 'Allein unter einem Regenschirm, eine Silhouette verschwindet', file: 'assets/images/background/ending_bittersweet.png', thumbnail: 'assets/images/background/ending_bittersweet.png',
                 unlockHint: "Erreiche das bittersuesze Ende"
             },
-            { id: 'ending_true_teacher', name: 'Verbotene Berührung', character: 'Lehrerin', description: 'Heimliches Händchenhalten im Café', file: 'assets/images/background/ending_true_teacher.png', thumbnail: 'assets/images/background/ending_true_teacher.png',
+            { id: 'ending_true_teacher', name: 'Das Versprechen für nächste Woche', character: 'Lehrerin', description: 'Nach dem Wiedersehen als Erwachsene halten sie im Café Händchen und verabreden sich erneut', file: 'assets/images/background/ending_true_teacher.png', thumbnail: 'assets/images/background/ending_true_teacher.png',
                 unlockHint: "Erreiche das wahre Liebesende"
             },
             { id: 'ending_true_nurse', name: 'Sicherer Ort', character: 'Schulkrankenschwester', description: 'Sie schläft auf deiner Schulter auf ihrem Sofa ein', file: 'assets/images/background/ending_true_nurse.png', thumbnail: 'assets/images/background/ending_true_nurse.png',
                 unlockHint: "Erreiche das wahre Liebesende"
             },
-            { id: 'ending_harem', name: 'Dreieck...oder Viereck?', character: null, description: 'Von drei Mädchen gleichzeitig umringt', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png',
+            { id: 'ending_harem', name: 'Unterschiedliche Antworten', character: null, description: 'Vor allen drei Mädchen spricht jeder offen aus, was er will und wo seine Grenzen liegen', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png',
                 unlockHint: "Erreiche das Harem-Ende"
             },
             { id: 'ending_alone', name: 'Leeres Zimmer', character: null, description: 'Ein dunkles Zimmer, ein totes Handy', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png',
@@ -1355,19 +1355,19 @@ class GalleryData {
             { id: 'ending_perfect_yuna', name: 'O calor da Yuna', character: 'Yuna', description: 'No esconderijo ao luar, Yuna se aconchega em voce pela primeira vez', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png',
                 unlockHint: "Alcancar o Final Perfeito da Yuna"
             },
-            { id: 'ending_perfect_dain', name: 'A vitoria da Dain', character: 'Dain', description: 'No ginasio ao por do sol, Dain pula nos seus bracos', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png',
+            { id: 'ending_perfect_dain', name: 'A vitória da Dain', character: 'Dain', description: 'No ginásio ao pôr do sol, Dain te abraça sem apoiar o peso no joelho machucado', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png',
                 unlockHint: "Alcancar o Final Perfeito da Dain"
             },
             { id: 'ending_bittersweet', name: 'Despedida na chuva', character: null, description: 'Sozinho debaixo de um guarda-chuva, vendo uma silhueta desaparecer', file: 'assets/images/background/ending_bittersweet.png', thumbnail: 'assets/images/background/ending_bittersweet.png',
                 unlockHint: "Alcancar o Final Agridoce"
             },
-            { id: 'ending_true_teacher', name: 'Toque proibido', character: 'Professora', description: 'Dar as maos em segredo no cafe, as bochechas dela ficando vermelhas', file: 'assets/images/background/ending_true_teacher.png', thumbnail: 'assets/images/background/ending_true_teacher.png',
+            { id: 'ending_true_teacher', name: 'A promessa da próxima semana', character: 'Professora', description: 'De mãos dadas no café após se reencontrarem como adultos e marcarem o próximo encontro', file: 'assets/images/background/ending_true_teacher.png', thumbnail: 'assets/images/background/ending_true_teacher.png',
                 unlockHint: "Alcancar Final Amor Verdadeiro"
             },
             { id: 'ending_true_nurse', name: 'Lugar seguro', character: 'Enfermeira', description: 'Ela adormece no seu ombro no sofa, uma noite tranquila', file: 'assets/images/background/ending_true_nurse.png', thumbnail: 'assets/images/background/ending_true_nurse.png',
                 unlockHint: "Alcancar Final Amor Verdadeiro"
             },
-            { id: 'ending_harem', name: 'Triangulo...ou quadrado?', character: null, description: 'Cercado por tres garotas ao mesmo tempo', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png',
+            { id: 'ending_harem', name: 'Respostas diferentes', character: null, description: 'Diante das três garotas, cada um deixa clara sua resposta e seus limites', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png',
                 unlockHint: "Alcancar o Final Harem"
             },
             { id: 'ending_alone', name: 'Quarto vazio', character: null, description: 'Um quarto escuro, um celular desligado, luzes da cidade pela cortina', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png',
@@ -1415,7 +1415,7 @@ class GalleryData {
             { id: 'ending_good_yuna', name: 'Silencio no terraco', character: 'Yuna', description: 'Duas pessoas sentadas lado a lado no terraco escuro olhando o ceu', file: 'assets/images/background/ending_good_yuna.png', thumbnail: 'assets/images/background/ending_good_yuna.png',
                 unlockHint: "Alcancar o Bom Final da Yuna"
             },
-            { id: 'ending_good_dain', name: 'Cumprimento no portao', character: 'Dain', description: 'Dain dando um tapinha brincalhao no ombro e sorrindo no portao ao entardecer', file: 'assets/images/background/ending_good_dain.png', thumbnail: 'assets/images/background/ending_good_dain.png',
+            { id: 'ending_good_dain', name: 'Cumprimento no portão', character: 'Dain', description: 'Dain encosta o punho no seu diante do portão ao entardecer, e os dois começam a caminhar juntos', file: 'assets/images/background/ending_good_dain.png', thumbnail: 'assets/images/background/ending_good_dain.png',
                 unlockHint: "Alcancar o Bom Final da Dain"
             }
         ]
