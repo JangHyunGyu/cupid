@@ -5,27 +5,27 @@
     },
     "confess_seo_2": {
         "name": "Seoyeon",
-        "text": "Me queda un sitio por enseñarte."
+        "text": "Subamos un momento."
     },
     "confess_seo_3": {
         "name": "{name}",
-        "text": "*La azotea. El atardecer pinta la escuela. Puedo ver la baranda donde Seoyeon miró hacia abajo el primer día.*"
+        "text": "*La azotea. Bajo la barandilla brillan las luces del campo. Es el lugar donde Seoyeon se quedó de pie el primer día.*"
     },
     "confess_seo_3b": {
         "name": "{name}",
-        "text": "*La azotea. El atardecer tiñe la escuela. En unos días se volvió un lugar familiar.*"
+        "text": "*La azotea. Bajo la barandilla brillan las luces del campo. En apenas unos días, hemos subido aquí varias veces.*"
     },
     "confess_seo_4": {
         "name": "Seoyeon",
-        "text": "*Está apoyada en la barandilla. El viento le mueve el pelo. — Se lo aparta con el meñique. Esa manía suya.*"
+        "text": "*Seoyeon se queda un paso atrás de la barandilla y guarda la llave en el bolsillo.*"
     },
     "confess_seo_4_b": {
         "name": "{name}",
-        "text": "*Mi respiración se vuelve superficial. Igual que en la otra escuela. — Palabras que me tragué entonces.*"
+        "text": "*Mis dedos rozan la nota doblada dentro del bolsillo.*"
     },
     "confess_seo_5": {
         "name": "{name}",
-        "text": "*Los labios se abren una vez y vuelven a cerrarse.*"
+        "text": "*No saco la nota.*"
     },
     "confess_seo_choice": {
         "name": "{name}",
@@ -56,7 +56,7 @@
         "text": "No tienes que responder ahora."
     },
     "confess_seo_yes_6": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "Si dices eso, me harás darle todavía más vueltas."
     },
     "confess_seo_yes_7": {
@@ -89,23 +89,23 @@
     },
     "confess_seo_no_1": {
         "name": "{name}",
-        "text": "...Qué bien sopla el viento."
+        "text": "¿Quieres quedarte un poco más?"
     },
     "confess_seo_no_2": {
         "name": "{name}",
-        "text": "*Dijo lo mismo el primer día. El dedo de Seoyeon se detiene en el borde de la carpeta.*"
+        "text": "*Seoyeon asiente.*"
     },
     "confess_seo_no_3": {
         "name": "Seoyeon",
-        "text": "*Sonríe. Una sonrisa ensayada. — Se da vuelta y empieza a caminar. Al tercer paso, se detiene.*"
+        "text": "*Los dos miramos el campo. Se enciende otra luz.*"
     },
     "confess_seo_no_4": {
         "name": "Seoyeon",
-        "text": "...La próxima vez que vengas, trae algo distinto que decir."
+        "text": "Pásate mañana a la hora de comer si tienes tiempo."
     },
     "confess_seo_no_4_b": {
         "name": "{name}",
-        "text": "*Tiene la espalda recta. Le tiembla.*"
+        "text": "*La nota permanece en mi bolsillo durante todo el camino escaleras abajo.*"
     },
     "confess_yuna_1": {
         "name": "{name}",
@@ -121,15 +121,15 @@
     },
     "confess_yuna_3b": {
         "name": "{name}",
-        "text": "*El anexo de la biblioteca. El atardecer se cuela por la ventana. En unos días se volvió un lugar familiar.*"
+        "text": "*El anexo de la biblioteca. El atardecer se cuela por la ventana. Hay un marcapáginas junto al sofá.*"
     },
     "confess_yuna_4": {
         "name": "Yuna",
-        "text": "*Se sienta en el sofá y mira a {name}. Su mirada parece haber estado esperando.*"
+        "text": "*Se sienta en el sofá y mira a {name}, con un marcapáginas en una mano.*"
     },
     "confess_yuna_5": {
         "name": "{name}",
-        "text": "*Mientras busco las palabras, se me enfrían las puntas de los dedos.*"
+        "text": "*La punta del marcapáginas está doblada.*"
     },
     "confess_yuna_choice": {
         "name": "{name}",
@@ -229,7 +229,7 @@
     },
     "confess_dain_3b": {
         "name": "{name}",
-        "text": "*El gimnasio. Vacío. El atardecer se cuela por las ventanas y tiñe la cancha. Un lugar donde en unos días se amontonaron un montón de recuerdos.*"
+        "text": "*El gimnasio está vacío. El atardecer se cuela por las ventanas y tiñe la cancha.*"
     },
     "confess_dain_4": {
         "name": "Dain",
@@ -237,7 +237,7 @@
     },
     "confess_dain_5": {
         "name": "{name}",
-        "text": "*Podría convertirlo en una broma y dejar que el día pase. Pero no quiero.*"
+        "text": "*El balón rebota una vez contra el suelo.*"
     },
     "confess_dain_choice": {
         "name": "Dain",
@@ -309,7 +309,7 @@
     },
     "confess_dain_no_2": {
         "name": "{name}",
-        "text": "*Puedo pasarle la pelota, pero tres palabras no me salen. Qué patético.*"
+        "text": "*Le lanzo el balón. No me sale ninguna palabra.*"
     },
     "confess_dain_no_3": {
         "name": "Dain",
@@ -317,7 +317,7 @@
     },
     "confess_dain_no_4": {
         "name": "Dain",
-        "text": "...La próxima vez, no huyas."
+        "text": "...La próxima vez, dilo."
     },
     "confess_dain_no_4_b": {
         "name": "{name}",

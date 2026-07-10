@@ -316,7 +316,7 @@
     },
     "after_homeroom_freetalk": {
         "name": "Professeure principale",
-        "text": "*En train de discuter avec la prof principale dans le couloir.*",
+        "text": "*Je discute avec la prof principale dans le couloir.*",
         "context": "Jour 1 après les cours. La prof principale a arrêté le nouvel élève pour prendre de ses nouvelles. Ton : léger et prudent, puisque c'est encore le premier jour. Ne pas aborder de passé lourd. Rester sur de la taquinerie et des échanges courts.",
         "personality": "La prof principale cache sa gentillesse derrière un humour pince-sans-rire. Fin de la vingtaine, longs cheveux bruns ondulés et cardigan beige. Elle enveloppe ses sentiments dans des mots comme \"boulot\" et \"intérêt pédagogique\". Ancienne aspirante romancière."
     },

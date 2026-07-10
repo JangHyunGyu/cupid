@@ -1,7 +1,7 @@
 {
     "night3_start": {
         "name": "{name}",
-        "text": "*Je suis de retour dans ma chambre. Journée lourde.*"
+        "text": "*Je rentre dans ma chambre et pose mon sac.*"
     },
     "night3_start_2": {
         "name": "{name}",
@@ -33,7 +33,7 @@
     },
     "night3_faithful_msg_yuna_2_b": {
         "name": "{name}",
-        "text": "*Le curseur clignote sur la dernière ligne du bloc-notes. Laisser la fin vide, et le fichier reste en mode sauvegarde.*"
+        "text": "*Le curseur clignote sur la dernière ligne de la note. Une icône de sauvegarde reste affichée près du nom du fichier.*"
     },
     "night3_faithful_msg_dain_1": {
         "name": "Dain",
@@ -49,15 +49,15 @@
     },
     "night3_dream_1": {
         "name": "{name}",
-        "text": "*J'ai fait un rêve. Je marchais côte à côte avec quelqu'un. Je ne voyais pas son visage, seulement des pas gardant le même rythme.*"
+        "text": "*Je rêve que je marche à côté de quelqu'un. Seuls nos pas continuent au même rythme.*"
     },
     "night3_dream_2_b": {
         "name": "{name}",
-        "text": "*J'ai fermé le bloc-notes. Pas encore de phrase à envoyer demain. Mais j'ai décidé de ne pas laisser l'écran vide.*"
+        "text": "*Je ferme l'application de notes. Je n'ai toujours aucune phrase à envoyer demain.*"
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*Ouvre mes yeux. La lumière du soleil du matin traverse les rideaux. Mes paumes sont encore chaudes. J'ai sorti mon téléphone portable. Ouverture d'une galerie. La photo de Sojeong. — Défilement arrêté, enfoncé et maintenu*"
+        "text": "*J'ouvre les yeux. Le soleil du matin filtre entre les rideaux et ma paume est encore chaude. Je prends mon téléphone, ouvre la galerie et m'arrête sur la photo de Sojeong. — Puis je maintiens le doigt dessus.*"
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
@@ -69,47 +69,47 @@
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
-        "text": "*...d'accord. Je pose mon doigt sur le bouton Supprimer. — pressé.*"
+        "text": "*...D'accord. Je pose le doigt sur le bouton Supprimer — et j'appuie.*"
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
-        "text": "*Mon doigt s'arrête sur le bouton supprimer. À la place, j'ai déplacé la photo vers un nouveau dossier. Nom du dossier : 'Archive'.*"
+        "text": "*Mon doigt s'arrête au-dessus du bouton Supprimer. À la place, je déplace la photo dans un nouveau dossier nommé « Archives ».*"
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*Minsu a dit. \"Le rejet est quelque chose que vous devez faire.\" Sojung dans la galerie sourit toujours. Le bloc-notes numéro 38 n'a pas encore été envoyé. Seul le bouton d'envoi est bleu.*"
+        "text": "*Minsu l'a dit : « Dire non, c'est aussi à toi de le faire. » Sojeong sourit toujours dans la galerie. La note numéro trente-huit n'a jamais été envoyée. Seul le bouton Envoyer est bleu.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*La galerie est vide. L’endroit où se trouvait la photo de Sojung. Un écran vide est plutôt clair. Je vous le dirai quand je le verrai. Je me présenterai si je sais.*"
+        "text": "*La galerie est vide. Seul l'emplacement où se trouvait la photo de Sojeong reste éclairé en blanc.*"
     },
     "night3_faithful_reflect_4_b": {
         "name": "{name}",
-        "text": "*Supprimer la photo était facile. Un seul doigt suffit. Je fixe la vignette d'album vide pendant un moment.*"
+        "text": "*Je fixe longtemps la vignette vide de l'album.*"
     },
     "night3_faithful_reflect_4_c": {
         "name": "{name}",
-        "text": "*Couvert le téléphone portable. Un espace de galerie vide apparaît sur un écran noir.*"
+        "text": "*Je referme le téléphone. L'espace vide de la galerie se reflète sur l'écran noir.*"
     },
     "night3_dream_3": {
         "name": "{name}",
-        "text": "*C’était un beau rêve.*"
+        "text": "*Je me réveille avant que l'alarme sonne.*"
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",
-        "text": "*Quand je ferme les yeux, la sensation d'avoir marché aux côtés de Seoyeon est encore là.*"
+        "text": "*Lorsque je ferme les yeux, la rambarde du toit me revient en premier.*"
     },
     "night3_dream_yuna_bonus": {
         "name": "{name}",
-        "text": "*Quand je ferme les yeux, le calme à côté de Yuna est encore là.*"
+        "text": "*Lorsque je ferme les yeux, la fenêtre de l'annexe de la bibliothèque me revient en premier.*"
     },
     "night3_dream_dain_bonus": {
         "name": "{name}",
-        "text": "*Quand je ferme les yeux, le rire de Dain me revient avec un léger retard.*"
+        "text": "*Lorsque je ferme les yeux, j'entends un ballon rebondir sur le sol du gymnase.*"
     },
     "night3_cheat_msg_1": {
         "name": "{name}",
-        "text": "*Je suis de retour dans ma chambre. Journée lourde. Je regarde mon téléphone.*"
+        "text": "*Je rentre dans ma chambre et regarde mon téléphone.*"
     },
     "night3_cheat_msg_2": {
         "name": "Seoyeon",
@@ -121,7 +121,7 @@
     },
     "night3_cheat_msg_3_b": {
         "name": "Seoyeon",
-        "text": "*Elle utilise le mot 'faveur'. Le curseur reste figé après ce mot pendant longtemps.*"
+        "text": "*Elle écrit « s'il te plaît ». Le curseur reste longtemps derrière ces mots.*"
     },
     "night3_cheat_msg_4": {
         "name": "Yuna",
@@ -129,11 +129,11 @@
     },
     "night3_cheat_msg_4_b": {
         "name": "Yuna",
-        "text": "*Moi aussi, ils détestent les sièges de réserve.*"
+        "text": "*Ni moi ni elles ne voulons être ton second choix.*"
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "*J'aimerais juste que tu ne prennes pas à la légère le choix de qui tu vas soutenir.*"
+        "text": "*Demain, décide qui tu vas choisir.*"
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
@@ -145,7 +145,7 @@
     },
     "night3_cheat_msg_7": {
         "name": "Yuna",
-        "text": "*Elle a envoyé trois lignes. Elle qui en tape jamais une.*"
+        "text": "*Elle a envoyé trois lignes, elle qui d'habitude n'en écrit même pas une.*"
     },
     "night3_nightmare_1": {
         "name": "{name}",
@@ -190,7 +190,7 @@
     },
     "night3_nightmare_seo": {
         "name": "{name}",
-        "text": "*Dans la zone de saisie de Seoyeon, j'écris : « Je te parlerai en face demain. » Mon doigt s'arrête juste avant Envoyer.*"
+        "text": "*Dans la zone de saisie de Seoyeon, j'écris : « Demain, je te le dirai en personne. » Mon doigt s'arrête juste avant Envoyer.*"
     },
     "night3_nightmare_yuna": {
         "name": "{name}",
@@ -238,6 +238,6 @@
     },
     "night3_end": {
         "name": "{name}",
-        "text": "*La nuit s’approfondit...*"
+        "text": "*J'éteins la lumière.*"
     }
 }

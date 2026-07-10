@@ -5,27 +5,27 @@
     },
     "confess_seo_2": {
         "name": "Seoyeon",
-        "text": "Tem um último lugar pra te mostrar."
+        "text": "Vamos subir um pouco."
     },
     "confess_seo_3": {
         "name": "{name}",
-        "text": "*O terraço. O pôr do sol pinta a escola. Consigo ver o parapeito onde Seoyeon olhou para baixo no primeiro dia.*"
+        "text": "*O terraço. As luzes do campo brilham abaixo do parapeito. É o lugar onde Seoyeon ficou no meu primeiro dia.*"
     },
     "confess_seo_3b": {
         "name": "{name}",
-        "text": "*O terraço. O pôr do sol tinge a escola. Um lugar que ficou familiar em poucos dias.*"
+        "text": "*O terraço. As luzes do campo brilham abaixo do parapeito. Subimos aqui várias vezes em apenas alguns dias.*"
     },
     "confess_seo_4": {
         "name": "Seoyeon",
-        "text": "*Está encostada na grade. O vento mexe no cabelo dela. — Ela afasta com o mindinho. Aquele hábito.*"
+        "text": "*Seoyeon fica um passo atrás do parapeito e guarda a chave no bolso.*"
     },
     "confess_seo_4_b": {
         "name": "{name}",
-        "text": "*A respiração fica rasa. Como na outra escola. — Palavras que engoli naquela época.*"
+        "text": "*Meus dedos esbarram no bilhete dobrado dentro do bolso.*"
     },
     "confess_seo_5": {
         "name": "{name}",
-        "text": "*Meus lábios se abrem uma vez e se fecham de novo.*"
+        "text": "*Não tiro o bilhete do bolso.*"
     },
     "confess_seo_choice": {
         "name": "{name}",
@@ -56,7 +56,7 @@
         "text": "Não precisa responder agora."
     },
     "confess_seo_yes_6": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "Se você fala assim, vou pensar ainda mais nisso."
     },
     "confess_seo_yes_7": {
@@ -89,23 +89,23 @@
     },
     "confess_seo_no_1": {
         "name": "{name}",
-        "text": "...Vento bom, né."
+        "text": "Quer ficar mais um pouco?"
     },
     "confess_seo_no_2": {
         "name": "{name}",
-        "text": "*Ela disse a mesma coisa no primeiro dia. O dedo de Seoyeon para na borda da prancheta.*"
+        "text": "*Seoyeon assente.*"
     },
     "confess_seo_no_3": {
         "name": "Seoyeon",
-        "text": "*Sorri. Um sorriso ensaiado. — Se vira e começa a andar. No terceiro passo, para.*"
+        "text": "*Nós dois olhamos para o campo. Mais uma luz se acende.*"
     },
     "confess_seo_no_4": {
         "name": "Seoyeon",
-        "text": "...Da próxima vez, traz outra coisa pra me dizer."
+        "text": "Aparece amanhã no almoço, se tiver tempo."
     },
     "confess_seo_no_4_b": {
         "name": "{name}",
-        "text": "*As costas retas. Mas tremendo.*"
+        "text": "*O bilhete continua no meu bolso durante todo o caminho escada abaixo.*"
     },
     "confess_yuna_1": {
         "name": "{name}",
@@ -121,15 +121,15 @@
     },
     "confess_yuna_3b": {
         "name": "{name}",
-        "text": "*Anexo da biblioteca. O pôr do sol entra pela janela. Um lugar que ficou familiar em poucos dias.*"
+        "text": "*Anexo da biblioteca. O pôr do sol entra pela janela. Há um marcador ao lado do sofá.*"
     },
     "confess_yuna_4": {
         "name": "Yuna",
-        "text": "*Se senta no sofá e olha para {name}. O olhar parece ter esperado.*"
+        "text": "*Senta-se no sofá e olha para {name}, segurando um marcador em uma das mãos.*"
     },
     "confess_yuna_5": {
         "name": "{name}",
-        "text": "*Enquanto procuro as palavras, as pontas dos meus dedos ficam frias.*"
+        "text": "*A ponta do marcador está dobrada.*"
     },
     "confess_yuna_choice": {
         "name": "{name}",
@@ -145,7 +145,7 @@
     },
     "confess_yuna_yes_2": {
         "name": "{name}",
-        "text": "*O som das páginas virando para.*"
+        "text": "*O som das páginas sendo viradas cessa.*"
     },
     "confess_yuna_yes_3": {
         "name": "{name}",
@@ -169,7 +169,7 @@
     },
     "confess_yuna_yes_6_b": {
         "name": "{name}",
-        "text": "*Quando termino de falar, o som das páginas virando para.*"
+        "text": "*Quando termino de falar, o som das páginas sendo viradas cessa.*"
     },
     "confess_yuna_yes_7": {
         "name": "{name}",
@@ -225,11 +225,11 @@
     },
     "confess_dain_3": {
         "name": "{name}",
-        "text": "*A quadra. Vazia. O pôr do sol mancha a quadra pelas janelas. A linha da aposta do primeiro dia ainda está visível.*"
+        "text": "*O ginásio. Vazio. O pôr do sol tinge a quadra através das janelas. A linha da aposta do primeiro dia ainda está visível.*"
     },
     "confess_dain_3b": {
         "name": "{name}",
-        "text": "*O ginásio. Vazio. O pôr do sol entra pelas janelas e tinge a quadra. Um lugar onde muitas memórias se acumularam nesses poucos dias.*"
+        "text": "*O ginásio está vazio. O pôr do sol entra pelas janelas e tinge a quadra.*"
     },
     "confess_dain_4": {
         "name": "Dain",
@@ -237,7 +237,7 @@
     },
     "confess_dain_5": {
         "name": "{name}",
-        "text": "*Eu poderia transformar isso numa piada e deixar o dia passar. Mas não quero.*"
+        "text": "*A bola quica uma vez no chão.*"
     },
     "confess_dain_choice": {
         "name": "Dain",
@@ -309,7 +309,7 @@
     },
     "confess_dain_no_2": {
         "name": "{name}",
-        "text": "*Levantar bola pra ela eu consigo, mas três palavrinhas não. Que patético.*"
+        "text": "*Lanço a bola para ela. Nenhuma palavra sai.*"
     },
     "confess_dain_no_3": {
         "name": "Dain",
@@ -317,7 +317,7 @@
     },
     "confess_dain_no_4": {
         "name": "Dain",
-        "text": "...Da próxima vez, não foge."
+        "text": "...Da próxima vez, fala."
     },
     "confess_dain_no_4_b": {
         "name": "{name}",

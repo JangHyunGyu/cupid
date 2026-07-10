@@ -627,7 +627,7 @@ class FreeTalkSystem {
         const charStats = this.stateManager.stats[charKey] || { affinity: 0 };
 
         // 🔧 프롬프트 데이터 가져오기 (prompts.js에서)
-        const promptData = window.getPromptData ? window.getPromptData(lang !== 'ko', this.stateManager.playerName) : {};
+        const promptData = window.getPromptData ? window.getPromptData(lang, this.stateManager.playerName) : {};
 
         // 연인 관계 가이드라인
         let datingGuideline = "";
