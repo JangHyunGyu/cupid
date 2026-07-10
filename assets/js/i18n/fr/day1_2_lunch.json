@@ -28,7 +28,7 @@
         "text": "*Qui est-ce que je vais suivre ?*",
         "choices": [
             "Suivre Seoyeon sur le toit",
-            "Aller à la boutique avec Dain",
+            "Aller à la supérette avec Dain",
             "Suivre Yuna à la bibliothèque"
         ]
     },
@@ -196,11 +196,11 @@
     },
     "lunch_dain_1": {
         "name": "Dain",
-        "text": "Voilà, on est arrivés ! C’est le kiosque. Choisis ce que tu veux !"
+        "text": "On est arrivés. Voilà la supérette. Choisis d'abord, on verra ensuite."
     },
     "lunch_dain_1_aff_default": {
         "name": "Dain",
-        "text": "*Le kiosque est bondé à l'heure du déjeuner. Ça sent le pain et le lait mélangés.*"
+        "text": "*La supérette est bondée à l'heure du déjeuner. Les odeurs de pain et de lait se mélangent.*"
     },
     "lunch_dain_2": {
         "name": "Dain",
@@ -212,7 +212,7 @@
     },
     "lunch_dain_4": {
         "name": "Dain",
-        "text": "Pierre-feuille-ciseaux ! Évidemment !"
+        "text": "Pierre-feuille-ciseaux. C'est simple."
     },
     "lunch_dain_5": {
         "name": "{name}",
@@ -220,7 +220,7 @@
     },
     "lunch_dain_6": {
         "name": "Dain",
-        "text": "Tu joues pas ?! Alors c’est toi qui paies !"
+        "text": "Si tu refuses, je considère que c'est toi qui paies."
     },
     "lunch_dain_7": {
         "name": "{name}",
@@ -240,7 +240,7 @@
     },
     "lunch_dain_11": {
         "name": "Dain",
-        "text": "...Hein ?! J’ai perdu ?! On refait !!"
+        "text": "...Hein ? J'ai perdu. On recommence."
     },
     "lunch_dain_12": {
         "name": "{name}",
@@ -248,11 +248,11 @@
     },
     "lunch_dain_12_b": {
         "name": "Dain",
-        "text": "Ah, d'accord ! Je les achète, je les achète ! Madame, deux pains soboro !"
+        "text": "Ah, d'accord. C'est moi qui paie. Madame, deux pains soboro, s'il vous plaît !"
     },
     "lunch_dain_14": {
         "name": "Dain",
-        "text": "*Elle râle en achetant le pain. Mais les coins de sa bouche sont relevés.*"
+        "text": "*Elle râle en achetant le pain, mais elle sourit quand même.*"
     },
     "lunch_dain_15": {
         "name": "{name}",
@@ -260,7 +260,7 @@
     },
     "lunch_dain_16": {
         "name": "Dain",
-        "text": "*mordant dans le pain* Hé, tu fais vraiment pas de sport ?"
+        "text": "*Elle ouvre l'emballage du pain.* Hé, tu ne fais vraiment pas de sport ?"
     },
     "lunch_dain_17": {
         "name": "{name}",
@@ -268,19 +268,19 @@
     },
     "lunch_dain_18": {
         "name": "Dain",
-        "text": "Nan, sortir avec moi, faut d'abord passer un test physique !"
+        "text": "Non. Si tu veux réussir à me suivre, je dois d'abord vérifier ton endurance."
     },
     "lunch_dain_19": {
         "name": "{name}",
-        "text": "J'ai cru que c'était ton PR."
+        "text": "Je croyais que tu faisais ta propre pub."
     },
     "lunch_dain_20": {
         "name": "Dain",
-        "text": "Quoi ?! C’est quoi un PR ?!"
+        "text": "Ma propre pub ? Pourquoi tu dis ça ?"
     },
     "lunch_dain_21": {
         "name": "{name}",
-        "text": "Personal Record. C’est un terme sportif."
+        "text": "À cause du test physique. Ça faisait très « record personnel ». C'est un terme sportif."
     },
     "lunch_dain_22": {
         "name": "Dain",
@@ -300,15 +300,15 @@
     },
     "lunch_dain_c1_1": {
         "name": "Dain",
-        "text": "Bien. Entraînement spécial à partir d'aujourd'hui. Gymnase après les cours, échauffement d'abord. Deal ?"
+        "text": "D'accord. Alors viens au gymnase après les cours. On commencera par l'échauffement, ça marche ?"
     },
     "lunch_dain_c1_2": {
         "name": "{name}",
-        "text": "*Ses yeux deviennent des croissants de lune. — Contre ce sourire, je ne fais pas le poids.*"
+        "text": "*Lorsque Dain sourit, ses yeux se plissent. Sa chaise recule : elle est déjà debout.*"
     },
     "lunch_dain_c2_1": {
         "name": "Dain",
-        "text": "Allez, mais ça t’intéresse quand même ! Viens au gymnase après les cours ! Tu regretteras pas !"
+        "text": "Ça t'intéresse quand même. Viens au gymnase après les cours. Tu peux te contenter de regarder un peu."
     },
     "lunch_dain_after": {
         "name": "{name}",
@@ -324,11 +324,11 @@
     },
     "lunch_dain_after_4": {
         "name": "Dain",
-        "text": "Premier partenaire de repas dans ta nouvelle école, c'est moi ? C'est un record, un RECORD !"
+        "text": "Et ta toute première partenaire de repas depuis ton transfert, c'est moi ? C'est historique, quand même."
     },
     "lunch_dain_after_5": {
         "name": "Dain",
-        "text": "*Elle donne un léger coup de poing sur l'épaule de {name}. Le geste est taquin, mais une expression fière reste sur son visage.*"
+        "text": "*Elle donne un léger coup de poing sur l'épaule de {name}, puis y laisse la main en souriant.*"
     },
     "lunch_dain_freetalk": {
         "name": "Dain",
@@ -342,7 +342,7 @@
     },
     "lunch_yuna_1_aff_default": {
         "name": "Yuna",
-        "text": "*\"...\" Elle est assise, sans un mot.*"
+        "text": "*« ... » Elle est déjà assise, sans même avoir laissé de mot.*"
     },
     "lunch_yuna_2": {
         "name": "Yuna",
@@ -370,7 +370,7 @@
     },
     "lunch_yuna_10": {
         "name": "{name}",
-        "text": "*Assis à la bibliothèque pendant le déjeuner sans dire un mot — et pourtant ce n’est pas gênant. C’est même agréable.*"
+        "text": "*Il ne reste plus que le bruit des pages que l'on tourne. Les pieds de la chaise restent immobiles contre le sol.*"
     },
     "lunch_yuna_10_b": {
         "name": "{name}",
@@ -402,7 +402,7 @@
     },
     "lunch_yuna_18": {
         "name": "Yuna",
-        "text": "*Ses phrases sont courtes. Pas froides — plutôt économes. Je lis un moment. C'est plutôt bien.*"
+        "text": "*Elle replonge dans son livre. Son regard s'attarde un moment sur la première phrase du livre qu'elle vient de me prêter.*"
     },
     "lunch_yuna_20": {
         "name": "{name}",
@@ -430,7 +430,7 @@
     },
     "lunch_yuna_choice": {
         "name": "{name}",
-        "text": "*Je remarque le livre que Yuna a oublié. — Elle n'est pas allée loin. Je l'ai suivie.*",
+        "text": "*Je remarque le livre que Yuna a oublié. Elle n'est encore qu'à quelques pas. Je me lance à sa poursuite.*",
         "choices": [
             "Il est bien ce livre ? Je devrais le lire aussi ?",
             "Tu aimes lire, on dirait."

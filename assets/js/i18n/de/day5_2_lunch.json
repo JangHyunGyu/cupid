@@ -9,11 +9,11 @@
     },
     "tour_seo_3": {
         "name": "{name}",
-        "text": "Damals sagte ich 'das ist zu viel' — und wäre beinahe ausgeschimpft worden."
+        "text": "Damals habe ich gesagt: ‚Was für eine Ehre‘ — und wäre beinahe ausgeschimpft worden."
     },
     "tour_seo_4": {
         "name": "Seoyeon",
-        "text": "Hab ich dich doch gar nicht ausgeschimpft. — Und du hast mir schon damals gefallen."
+        "text": "Ich habe dich doch gar nicht ausgeschimpft. — Seitdem habe ich dich im Blick."
     },
     "tour_seo_5": {
         "name": "{name}",
@@ -21,7 +21,7 @@
     },
     "tour_seo_6": {
         "name": "Seoyeon",
-        "text": "...Vielleicht war es nur eine Täuschung des Windes."
+        "text": "...Vielleicht hast du dich wegen des Winds verhört."
     },
     "tour_seo_7": {
         "name": "{name}",
@@ -37,7 +37,7 @@
     },
     "tour_seo_10": {
         "name": "{name}",
-        "text": "Der Dachschlüssel ... nein, doch nicht."
+        "text": "Der Dachschlüssel... nein, doch nicht."
     },
     "tour_seo_11": {
         "name": "Seoyeon",
@@ -45,7 +45,7 @@
     },
     "tour_seo_12": {
         "name": "Seoyeon",
-        "text": "*Sie reicht mir den Schlüsselanhänger. Als sich unsere Hände streifen, richtet Seoyeon den Träger ihrer Tasche neu.*"
+        "text": "*Sie reicht mir den Schlüsselanhänger. Als sich unsere Hände streifen, richtet Seoyeon den Riemen ihrer Tasche neu.*"
     },
     "tour_seo_13": {
         "name": "{name}",
@@ -67,7 +67,7 @@
     },
     "tour_yuna_1_check": {
         "name": "{name}",
-        "text": "*Auf dem Weg zum Bibliotheksanbau.*"
+        "text": "*Ich gehe zum Bibliotheksanbau.*"
     },
     "tour_yuna_1": {
         "name": "{name}",
@@ -95,7 +95,7 @@
     },
     "tour_yuna_6": {
         "name": "Yuna",
-        "text": "*Sie holt ein Notizbuch aus ihrer Tasche. Dasselbe, das hastig auf dem Dachboden bedeckt wurde.*"
+        "text": "*Sie holt das Notizbuch aus ihrer Tasche, das sie auf dem Dachboden so hastig zugeklappt hatte.*"
     },
     "tour_yuna_7": {
         "name": "Yuna",
@@ -103,15 +103,15 @@
     },
     "tour_yuna_8": {
         "name": "{name}",
-        "text": "Du hast es damals gesagt. 'Das Ende schreiben heißt es beenden.'"
+        "text": "Du hast damals gesagt: ‚Wenn du das Ende schreibst, ist es vorbei.‘"
     },
     "tour_yuna_9": {
         "name": "Yuna",
-        "text": "Es ist kein richtiges Ende — wenn es der Anfang einer neuen Geschichte sein kann, ist's okay."
+        "text": "Es fühlt sich nur seltsam an, es das Ende zu nennen."
     },
     "tour_yuna_10": {
         "name": "{name}",
-        "text": "*Hält die Notiz hin. Meine Hände zittern leicht. Yuna kann die Ecke der Abdeckung nicht vollständig platzieren.*"
+        "text": "*Sie hält mir das Notizbuch hin. Ihre Hand zittert leicht, und bis zuletzt kann Yuna die Ecke des Umschlags nicht loslassen.*"
     },
     "tour_yuna_11": {
         "name": "{name}",
@@ -129,11 +129,11 @@
     },
     "tour_yuna_end_2": {
         "name": "{name}",
-        "text": "*‚Vorerst.' — Das ist das Maximum, das Yuna versprechen kann.*"
+        "text": "*Damit beendet Yuna den Satz.*"
     },
     "tour_dain_1_check": {
         "name": "{name}",
-        "text": "*Auf dem Weg zur Turnhalle.*"
+        "text": "*Ich gehe zur Turnhalle.*"
     },
     "tour_dain_1": {
         "name": "{name}",
@@ -141,7 +141,7 @@
     },
     "tour_dain_1b": {
         "name": "{name}",
-        "text": "*Die Turnhalle. Ein Ort, an dem in den letzten Tagen unzählige Wetten und Schmetterbälle ausgetauscht wurden. — Heute ist das Licht an.*"
+        "text": "*Die Turnhalle. Heute ist das Licht an.*"
     },
     "tour_dain_2": {
         "name": "Dain",
@@ -149,7 +149,7 @@
     },
     "tour_dain_3": {
         "name": "Dain",
-        "text": "Hey, ein letztes Schere-Stein-Papier?"
+        "text": "Hey, Lust auf eine letzte Runde Schere, Stein, Papier?"
     },
     "tour_dain_4": {
         "name": "{name}",
@@ -157,19 +157,19 @@
     },
     "tour_dain_5": {
         "name": "Dain",
-        "text": "Diesmal gewinne ich!!"
+        "text": "Diesmal gewinne ich!"
     },
     "tour_dain_6": {
         "name": "{name}",
-        "text": "*Schere-Stein-Papier. — Dain hat verloren.*"
+        "text": "*Schere, Stein, Papier. — Dain verliert.*"
     },
     "tour_dain_7": {
         "name": "Dain",
-        "text": "...Aaaah!! Warum!! Schon wieder verloren!!"
+        "text": "...Warum hab ich schon wieder verloren?"
     },
     "tour_dain_8": {
         "name": "{name}",
-        "text": "*Lächelt, auch wenn er wütend ist. Dain legt den Volleyball auf das Spielfeld. langsam.*"
+        "text": "*Obwohl sie sich ärgert, lächelt sie. Einen Moment später legt Dain den Volleyball auf dem Spielfeld ab.*"
     },
     "tour_dain_10": {
         "name": "Dain",
@@ -185,7 +185,7 @@
     },
     "tour_dain_12": {
         "name": "Dain",
-        "text": "Weiß nicht, was sich geändert hat. ...Aber ich sehe mich jetzt auch außerhalb des Platzes."
+        "text": "Ich weiß nicht, was sich verändert hat. ...Aber inzwischen habe ich auch außerhalb des Spielfelds etwas zu sagen."
     },
     "tour_dain_13": {
         "name": "{name}",
@@ -193,7 +193,7 @@
     },
     "tour_dain_end": {
         "name": "Dain",
-        "text": "...Jetzt ist jemand an meiner Seite."
+        "text": "...Ich bin ja nicht allein."
     },
     "tour_dain_freetalk": {
         "name": "Dain",
@@ -203,6 +203,6 @@
     },
     "tour_dain_end_2": {
         "name": "{name}",
-        "text": "*Sie spricht ohne Ausrufezeichen. Diesmal senkt sie nicht den Kopf. Dains Hand liegt auf dem Volleyball, nicht auf ihrem Knie.*"
+        "text": "*Dains Hand liegt auf dem Volleyball, nicht auf ihrem Knie.*"
     }
 }
