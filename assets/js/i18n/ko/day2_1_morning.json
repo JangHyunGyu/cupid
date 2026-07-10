@@ -1,7 +1,7 @@
 {
     "morning2_start": {
         "name": "{name}",
-        "text": "*둘째 날. 교복 소매가 어제보다 덜 접힌다.*"
+        "text": "*둘째 날. 교복 소매의 접힌 자국이 어제보다 옅다.*"
     },
     "morning2_start_2": {},
     "morning2_greet_seo_1": {},
@@ -87,11 +87,11 @@
     },
     "morning2_dain_5": {
         "name": "다인",
-        "text": "이게 정상이야! 너가 부족한 거야!"
+        "text": "이게 정상이야! 네가 부족한 거야!"
     },
     "morning2_dain_6": {
         "name": "다인",
-        "text": "*목소리가 아침 조회 전 교실을 먼저 채운다.*"
+        "text": "*아침 조회 전 교실에 다인의 목소리가 먼저 울린다.*"
     },
     "morning2_note_1": {
         "name": "{name}",
@@ -263,7 +263,7 @@
     },
     "hidden_homeroom_d2_8_e": {
         "name": "담임선생님",
-        "text": "*커피를 내려놓으며* ...아무튼. 네 쪽은 별 이상 없어."
+        "text": "*커피를 내려놓으며* ...아무튼. 너는 별문제 없어."
     },
     "hidden_homeroom_d2_8_f": {
         "name": "담임선생님",
@@ -299,7 +299,7 @@
     },
     "hidden_homeroom_d2_11_b": {
         "name": "담임선생님",
-        "text": "*목소리가 커피잔 안쪽에 낮게 묻힌다.*"
+        "text": "*담임은 커피잔을 내려다보며 낮게 말한다.*"
     },
     "hidden_homeroom_d2_12": {
         "name": "{name}",
