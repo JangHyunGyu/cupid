@@ -13,13 +13,13 @@ const NAME_MAP = {
     '서연': { en: 'Seoyeon', ja: 'ソヨン', es: 'Seoyeon', fr: 'Seoyeon', de: 'Seoyeon', pt: 'Seoyeon' },
     '다인': { en: 'Dain', ja: 'ダイン', es: 'Dain', fr: 'Dain', de: 'Dain', pt: 'Dain' },
     '유나': { en: 'Yuna', ja: 'ユナ', es: 'Yuna', fr: 'Yuna', de: 'Yuna', pt: 'Yuna' },
-    '담임선생님': { en: 'Homeroom Teacher', ja: '担任先生', es: 'Profesora', fr: 'Professeure principale', de: 'Klassenlehrerin', pt: 'Professora' },
-    '보건선생님': { en: 'School Nurse', ja: '保健先生', es: 'Enfermera', fr: 'Infirmière', de: 'Schulkrankenschwester', pt: 'Enfermeira' },
+    '담임선생님': { en: 'Homeroom Teacher', ja: '担任の先生', es: 'Profesora', fr: 'Professeure principale', de: 'Klassenlehrerin', pt: 'Professora' },
+    '보건선생님': { en: 'School Nurse', ja: '保健室の先生', es: 'Enfermera', fr: 'Infirmière', de: 'Schulkrankenschwester', pt: 'Enfermeira' },
     '나': { en: 'Me', ja: '僕', es: 'Yo', fr: 'Moi', de: 'Ich', pt: 'Eu' },
     '시스템': { en: 'System', ja: 'システム', es: 'Sistema', fr: 'Système', de: 'System', pt: 'Sistema' },
     '{name}': { en: '{name}', ja: '{name}', es: '{name}', fr: '{name}', de: '{name}', pt: '{name}' },
     '민수': { en: 'Minsu', ja: 'ミンス', es: 'Minsu', fr: 'Minsu', de: 'Minsu', pt: 'Minsu' },
-    '해은': { en: 'Haeun', ja: 'ヘウン', es: 'Haeun', fr: 'Haeun', de: 'Haeun', pt: 'Haeun' },
+    '해은': { en: 'Haeun', ja: 'ハウン', es: 'Haeun', fr: 'Haeun', de: 'Haeun', pt: 'Haeun' },
 };
 
 const FILES = [
@@ -257,7 +257,7 @@ for (const file of FILES) {
             const trData = i18n[lang][file];
             if (!trData || !trData[key] || !trData[key].text) continue;
             totalChecks++;
-            const trQuotes = /["\u201C\u201D\u00AB\u00BB\u300C\u300D]/.test(trData[key].text);
+            const trQuotes = /["'\u2018\u2019\u201A\u201C\u201D\u00AB\u00BB\u300C\u300D\u300E\u300F]/.test(trData[key].text);
             if (!trQuotes) {
                 addIssue('WARNING', 'QUOTE_MISSING', lang, file, key, 'ko에 따옴표 있으나 번역에 없음');
             }

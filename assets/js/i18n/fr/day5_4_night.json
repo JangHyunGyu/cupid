@@ -748,7 +748,7 @@
     },
     "bitter_epilogue_1": {
         "name": "{name}",
-        "text": "*Après le diplôme. Les contacts se sont espacés. Une fois par mois est devenu une fois tous les deux mois, laisser les messages sans réponse est devenu la norme, et un jour — quand j'ai voulu écrire et que j'ai bloqué sur quoi dire — j'ai su que c'était fini.*"
+        "text": "*Après le diplôme, nos échanges se sont espacés. Une fois par mois est devenu une fois tous les deux mois. Un jour, j'ai éteint l'écran après avoir laissé « Qu'est-ce que je pourrais lui dire ? » dans le champ de saisie.*"
     },
     "bitter_epilogue_2": {
         "name": "{name}",
@@ -812,16 +812,16 @@
     },
     "true_epilogue_3": {
         "name": "{name}",
-        "text": "*Mais avec le recul — je crois que c'était déjà joué à l'instant où nos regards se sont croisés. Il m'a juste fallu cinq jours pour l'admettre.*"
+        "text": "*Mais avec le recul, tout a commencé assez vite. Il m'a seulement fallu cinq jours pour l'admettre.*"
     },
     "true_epilogue_4": {},
     "true_epilogue_4_seo": {
         "name": "{name}",
-        "text": "*Les appels de sa mère sont toujours brefs, et la répétition devant le miroir n'est pas terminée. Mais Seoyeon me regarde parfois maintenant avec un visage sans répétition.*"
+        "text": "*Les appels de sa mère sont toujours brefs. Le mot devant le miroir est toujours là. Mais il arrive désormais à Seoyeon de parler sans s'aider d'un mot.*"
     },
     "true_epilogue_4_yuna": {
         "name": "{name}",
-        "text": "*Le contact de son aînée est toujours absent. Le siège du coin de la bibliothèque est toujours vide. Mais Yuna utilise maintenant sa voix avant les notes.*"
+        "text": "*Le numéro de son aînée est toujours absent de ses contacts. La place au fond de la bibliothèque est toujours vide. Mais désormais, Yuna se sert de sa voix avant de passer par un mot.*"
     },
     "true_epilogue_4_dain": {
         "name": "{name}",
@@ -948,7 +948,7 @@
         "text": "*Au bout de l'allée des cerisiers, Seoyeon s'arrête devant le passage piéton.*"
     },
     "good_3_seo": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "Le feu va changer."
     },
     "good_4_seo": {
@@ -964,7 +964,7 @@
         "text": "*Un message de Seoyeon : « Demain midi, le toit. Cette fois, j'ai fait une réservation officielle. »*"
     },
     "good_epilogue_2": {
-        "name": "Seoyeon",
+        "name": "{name}",
         "text": "*Sur la photo du registre, nos deux noms figurent dans la case de midi. À côté, de l'écriture de Seoyeon : « Ne sois pas en retard. »*"
     },
     "good_epilogue_3": {
@@ -1133,7 +1133,7 @@
     },
     "mayhem_4": {
         "name": "{name}",
-        "text": "*J'ai regardé le dos des trois personnes. Aucun des trois ne s'est retourné.*"
+        "text": "*Je regarde leurs trois silhouettes s'éloigner. Aucune ne se retourne.*"
     },
     "mayhem_5": {
         "name": "{name}",
@@ -1141,11 +1141,11 @@
     },
     "mayhem_6": {
         "name": "{name}",
-        "text": "*La confirmation est partie, mais chaque conversation gardait des questions sans réponse.*"
+        "text": "*Les mots « je t'aime » sont restés, mais les questions auxquelles je n'ai jamais répondu se sont accumulées dans chaque conversation.*"
     },
     "mayhem_7": {
         "name": "{name}",
-        "text": "*Regardez le mémo non envoyé sous la photo de Sojung. Cette fois, la bulle envoyée était longue. L'écran devient sombre tel quel.*"
+        "text": "*Je regarde le mémo non envoyé sous la photo de Sojeong. Une longue suite de messages envoyés remplit la conversation. L'écran s'éteint sans que rien ne change.*"
     },
     "mayhem_8": {
         "name": "Système",
@@ -1153,7 +1153,7 @@
     },
     "day5_ending_harem": {
         "name": "{name}",
-        "text": "*Je vous aime toutes. — Quand ces mots sont sortis de ma bouche, les trois visages se sont figés en même temps.*"
+        "text": "*La réponse reste coincée dans ma gorge. Les sourires des trois filles s'effacent au même instant.*"
     },
     "harem_1": {
         "name": "Seoyeon",
@@ -1189,7 +1189,7 @@
     },
     "harem_8": {
         "name": "Système",
-        "text": "─── HAREM END ───"
+        "text": "─── UNRESOLVED END ───"
     },
     "day5_credits": {
         "name": "",
