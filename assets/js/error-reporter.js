@@ -3,7 +3,7 @@
 
     if (window.__cupidErrorReporterInstalled) return;
 
-    var VERSION = '20260710-durable';
+    var VERSION = '20260711-load-recovery';
     var ERROR_ENDPOINT = 'https://chatbot-api.yama5993.workers.dev/error-logs';
     var QUEUE_KEY = 'cupid-error-queue-v2';
     var SESSION_KEY = 'cupid-error-session-v2';
@@ -12,6 +12,7 @@
     var pagePath = window.location.pathname || '/';
     var queue = readQueue();
     var flushing = false;
+    var inFlightId = null;
     var retryTimer = null;
     var reportedCaughtErrors = typeof WeakSet === 'function' ? new WeakSet() : null;
 
@@ -130,7 +131,7 @@
         if (/chrome-extension:|moz-extension:|safari-web-extension:|webkit-masked-url:\/\/hidden/i.test(text)) {
             return 'external';
         }
-        if (/googletagmanager|google-analytics|gtag\/js|cdn\.jsdelivr\.net/i.test(text)) {
+        if (/googletagmanager|google-analytics|gtag\/js|cdn\.jsdelivr\.net|wcs\.pstatic\.net\/wcslog\.js|static\.cloudflareinsights\.com\/beacon\.min\.js/i.test(text)) {
             return 'external';
         }
         if (type === 'ResourceError' || /Loading chunk|dynamically imported module|Failed to fetch/i.test(message)) {
@@ -167,6 +168,7 @@
             var normalizedStack = safeString(stack || '');
             var normalizedSource = safeString(source || window.location.href);
             var errorClass = details.errorClass || classifyError(normalizedMessage, normalizedStack, normalizedSource, type);
+            if (errorClass === 'external') return;
             var context = mergeObjects(getGameContext(), details.context || {});
             enqueue({
                 appId: details.appId || defaultAppId,
@@ -215,6 +217,7 @@
 
         flushing = true;
         var current = queue[0];
+        inFlightId = current.id;
         window.fetch(ERROR_ENDPOINT, {
             method: 'POST',
             headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
@@ -227,9 +230,11 @@
             if (!response.ok) throw new Error('Error log endpoint returned ' + response.status);
             removeQueuedEvent(current.id);
             flushing = false;
+            if (inFlightId === current.id) inFlightId = null;
             if (queue.length) window.setTimeout(flushQueue, 0);
         }).catch(function () {
             flushing = false;
+            if (inFlightId === current.id) inFlightId = null;
             scheduleRetry();
         });
     }
@@ -238,6 +243,7 @@
         if (!queue.length || navigator.onLine === false || typeof navigator.sendBeacon !== 'function') return;
         var acceptedIds = [];
         for (var i = 0; i < queue.length; i++) {
+            if (queue[i].id === inFlightId) continue;
             try {
                 if (navigator.sendBeacon(ERROR_ENDPOINT, JSON.stringify(queue[i].payload))) {
                     acceptedIds.push(queue[i].id);
@@ -249,12 +255,35 @@
         persistQueue();
     }
 
+    function tryRecoverEntryScript(target, resource) {
+        if (!target || typeof target.getAttribute !== 'function') return false;
+        if (target.getAttribute('data-cupid-entry-script') !== 'true') return false;
+
+        var attempts = parseInt(target.getAttribute('data-cupid-entry-retries') || '0', 10);
+        if (attempts >= 2) return false;
+
+        try {
+            var retryUrl = new URL(resource, window.location.href);
+            if (retryUrl.origin !== window.location.origin) return false;
+            target.setAttribute('data-cupid-entry-retries', String(attempts + 1));
+            retryUrl.searchParams.set('retry', Date.now() + '-' + (attempts + 1));
+            window.setTimeout(function () {
+                target.src = retryUrl.href;
+            }, 300 * (attempts + 1));
+            return true;
+        } catch (_) {
+            return false;
+        }
+    }
+
     function handleWindowError(event) {
         var target = event.target || event.srcElement;
         if (target && target !== window && target !== document) {
             var tagName = String(target.tagName || '').toUpperCase();
             if (tagName !== 'SCRIPT' && tagName !== 'LINK') return;
             var resource = target.src || target.href || '';
+            if (target.getAttribute && target.getAttribute('data-cupid-managed-script') === 'true') return;
+            if (tagName === 'SCRIPT' && tryRecoverEntryScript(target, resource)) return;
             report(
                 'ResourceError',
                 'Failed to load resource: ' + (tagName || 'UNKNOWN'),
