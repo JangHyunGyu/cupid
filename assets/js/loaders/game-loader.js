@@ -53,9 +53,8 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-        const version = '2.9.75';
+        const version = '2.9.76';
     const LOAD_RETRIES = 3;
-    const LOAD_TIMEOUT_MS = 15000;
 
     // =========================================================================
     // 언어 감지 (Language Detection)
@@ -284,12 +283,8 @@
             var scriptUrl = buildScriptUrl(src, attempt);
             var script = document.createElement('script');
             var settled = false;
-            var timeoutId = setTimeout(function() {
-                rejectLoad('timeout');
-            }, LOAD_TIMEOUT_MS);
 
             function cleanup() {
-                clearTimeout(timeoutId);
                 script.onload = null;
                 script.onerror = null;
             }
@@ -305,6 +300,7 @@
             }
 
             script.async = false;
+            script.setAttribute('data-cupid-managed-script', 'true');
             script.onload = function() {
                 if (settled) return;
                 settled = true;
