@@ -21,6 +21,9 @@ https://:version.:project.pages.dev/*
 /*.py
   X-Robots-Tag: noindex, nofollow
 
+/*.txt
+  X-Robots-Tag: noindex
+
 /tmp/*
   X-Robots-Tag: noindex, nofollow
 

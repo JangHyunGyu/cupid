@@ -31,6 +31,7 @@ const PRIMARY_SEO_SLUGS = new Set([
 const read = file => fs.readFileSync(path.join(ROOT, file), 'utf8');
 const capture = (source, pattern) => (source.match(pattern) || [])[1] || '';
 const fail = message => errors.push(message);
+const escapeRegExp = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 function canonicalize(value) {
   if (Array.isArray(value)) return value.map(canonicalize);
@@ -64,7 +65,8 @@ let stableGame = '';
 
 for (const page of indexable) {
   const html = read(page.file);
-  const charsetOffset = Buffer.byteLength(html.slice(0, html.search(/<meta\s+charset=/i)), 'utf8');
+  const charsetIndex = html.search(/<meta\s+charset=/i);
+  const charsetOffset = charsetIndex < 0 ? -1 : Buffer.byteLength(html.slice(0, charsetIndex), 'utf8');
   const lang = capture(html, /<html\s+lang="([^"]+)"/i);
   const title = capture(html, /<title>([\s\S]*?)<\/title>/i).trim();
   const description = capture(html, /<meta\s+name="description"\s+content="([^"]+)"/i);
@@ -138,6 +140,19 @@ for (const page of indexable) {
   }
 }
 
+// Keep high-impression Search Console queries aligned with their exact landing pages.
+const observedQueryLinks = [
+  ['index.html', '웹 미연시', '/seo/web-misinsi'],
+  ['index.html', '미연시 무료', '/seo/misinsi-muryo'],
+  ['index-ja.html', 'ブラウザ乙女ゲーム', '/seo/browser-otome-game-ja']
+];
+for (const [file, anchor, expectedHref] of observedQueryLinks) {
+  const html = read(file);
+  const match = html.match(new RegExp(`<a\\b[^>]*\\bhref="([^"]+)"[^>]*>\\s*${escapeRegExp(anchor)}\\s*</a>`, 'i'));
+  if (!match) fail(`${file}: missing observed-query link ${anchor}`);
+  else if (match[1] !== expectedHref) fail(`${file}: ${anchor} points to ${match[1]}, expected ${expectedHref}`);
+}
+
 const noindexFiles = [
   'game.html', 'game-en.html', 'game-ja.html', 'game-es.html', 'game-fr.html', 'game-de.html', 'game-pt.html',
   'gallery.html', 'gallery-en.html', 'gallery-ja.html', 'gallery-es.html', 'gallery-fr.html', 'gallery-de.html', 'gallery-pt.html'
@@ -177,6 +192,9 @@ if (!/noindex/i.test(notFound) || !notFound.includes(`${SITE}/`)) fail('404.html
 const headers = read('_headers');
 for (const signal of ['https://:project.pages.dev/*', 'https://:version.:project.pages.dev/*', 'X-Robots-Tag: noindex']) {
   if (!headers.includes(signal)) fail(`_headers: missing ${signal}`);
+}
+if (!/\/\*\.txt\s*\r?\n\s*X-Robots-Tag:\s*noindex\b/i.test(headers)) {
+  fail('_headers: deployed text artifacts must be noindex');
 }
 
 if (errors.length) {
