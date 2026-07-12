@@ -1,0 +1,31 @@
+# Prevent Cloudflare preview and default domains from competing with the canonical domain.
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex, nofollow
+
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex, nofollow
+
+# Repository sources are deployed as static files; keep them out of search results.
+/*.md
+  X-Robots-Tag: noindex, nofollow
+
+/*.json
+  X-Robots-Tag: noindex, nofollow
+
+/*.js
+  X-Robots-Tag: noindex
+
+/*.cjs
+  X-Robots-Tag: noindex, nofollow
+
+/*.py
+  X-Robots-Tag: noindex, nofollow
+
+/tmp/*
+  X-Robots-Tag: noindex, nofollow
+
+/node_modules/*
+  X-Robots-Tag: noindex, nofollow
+
+/seo/_*
+  X-Robots-Tag: noindex, nofollow
