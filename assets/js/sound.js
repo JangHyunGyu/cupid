@@ -138,11 +138,11 @@ class SoundManager {
 
     async _fetchAudioResponse(path) {
         let lastError = null;
-        for (let attempt = 0; attempt < 2; attempt++) {
+        for (let attempt = 0; attempt < 3; attempt++) {
             const separator = path.includes('?') ? '&' : '?';
             const url = attempt === 0 ? path : `${path}${separator}retry=${Date.now()}`;
             try {
-                if (attempt > 0) await this._sleep(350);
+                if (attempt > 0) await this._sleep(350 * attempt);
                 const response = await fetch(url, {
                     cache: attempt === 0 ? 'default' : 'reload'
                 });
@@ -190,13 +190,13 @@ class SoundManager {
                 return audioBuffer;
             } catch (e) {
                 console.error("SoundManager: 오디오 로드 실패 ->", path, e);
-                if (typeof window.__cupidLogRuntimeError === 'function') {
-                    window.__cupidLogRuntimeError(
-                        'SoundLoadError',
-                        e?.message || String(e || 'Audio load failed'),
-                        e?.stack || '',
-                        path || 'sound-manager'
-                    );
+                if (typeof window.__cupidReportCaughtError === 'function') {
+                    window.__cupidReportCaughtError(e, {
+                        errorType: 'SoundLoadError',
+                        source: path || 'sound-manager'
+                    });
+                } else if (typeof window.__cupidLogRuntimeError === 'function') {
+                    window.__cupidLogRuntimeError('SoundLoadError', e?.message, e?.stack || '', path || 'sound-manager');
                 }
                 return null;
             } finally {

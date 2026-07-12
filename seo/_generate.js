@@ -658,7 +658,7 @@ function renderPage(lang, page) {
   return `<!DOCTYPE html>
 <html lang="${c.htmlLang}">
 <head>
-  <script src="/assets/js/error-reporter.js?v=20260711-load-recovery"></script>
+  <script src="/assets/js/error-reporter.js?v=20260712-network-recovery"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>${escapeHTML(page.title)}</title>

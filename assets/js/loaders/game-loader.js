@@ -53,7 +53,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-        const version = '2.9.76';
+        const version = '2.9.77';
     const LOAD_RETRIES = 3;
 
     // =========================================================================
@@ -79,6 +79,7 @@
                : pathname.includes('-pt') ? 'pt'
                : pathname.includes('-en') ? 'en'
                : 'ko';
+    const LOAD_RECOVERY_KEY = 'cupid:script-load-recovery:' + version + ':' + lang;
 
     // =========================================================================
     // 공통 스크립트 (Common Scripts)
@@ -348,17 +349,34 @@
         window.dispatchEvent(new Event('gameScriptsLoaded'));
     }
 
-    loadAllScripts().catch(function(error) {
-        window.gameScriptsLoadError = error;
-        console.error(error);
-        if (typeof window.__cupidLogRuntimeError === 'function') {
-            window.__cupidLogRuntimeError(
-                'ScriptLoadError',
-                error && error.message ? error.message : String(error || 'Game script load failed'),
-                error && error.stack ? error.stack : '',
-                'game-loader'
-            );
+    function clearLoadRecoveryMarker() {
+        try { sessionStorage.removeItem(LOAD_RECOVERY_KEY); } catch (_) { /* ignore */ }
+    }
+
+    function scheduleOneTimeLoadRecovery() {
+        if (navigator.onLine === false) return false;
+        try {
+            if (sessionStorage.getItem(LOAD_RECOVERY_KEY) === '1') return false;
+            sessionStorage.setItem(LOAD_RECOVERY_KEY, '1');
+        } catch (_) {
+            return false;
         }
+        window.setTimeout(function() { window.location.reload(); }, 700);
+        return true;
+    }
+
+    loadAllScripts().then(clearLoadRecoveryMarker).catch(function(error) {
+        if (scheduleOneTimeLoadRecovery()) return;
+        window.gameScriptsLoadError = error;
+        if (typeof window.__cupidReportCaughtError === 'function') {
+            window.__cupidReportCaughtError(error, {
+                errorType: 'ScriptLoadError',
+                source: 'game-loader'
+            });
+        } else if (typeof window.__cupidLogRuntimeError === 'function') {
+            window.__cupidLogRuntimeError('ScriptLoadError', error && error.message, error && error.stack, 'game-loader');
+        }
+        console.error(error);
         window.dispatchEvent(createEvent('gameScriptsLoadError', { error: error }));
     });
 

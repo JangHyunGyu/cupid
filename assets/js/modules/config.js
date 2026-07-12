@@ -51,7 +51,7 @@ const AI_MODEL_ID = "deepseek-v4-flash";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.76";
+const ASSET_VERSION = "2.9.77";
 
 /**
  * 프리토킹(자유 대화) 기본 최대 턴 수
@@ -419,14 +419,27 @@ async function saveCupidChatLog({ charId, userContent, assistantContent, session
     const playerName = _pn || window.gameEngine?.stateManager?.playerName || '';
     const language = getCupidLanguage();
     const headers = { 'Content-Type': 'application/json', 'x-app-id': getCupidAppId() };
-    const post = (role, content) => fetch(API_ENDPOINT + 'chat-logs', {
-        method: 'POST',
-        headers,
-        body: JSON.stringify({ userId, charId, sessionId, role, content, context, playerName, language })
-    }).then(res => {
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        return res;
-    }).catch(err => {
+    const post = async (role, content) => {
+        let lastError = null;
+        for (let attempt = 0; attempt < 2; attempt++) {
+            try {
+                if (attempt > 0) await new Promise(resolve => setTimeout(resolve, 750));
+                const res = await fetch(API_ENDPOINT + 'chat-logs', {
+                    method: 'POST',
+                    headers,
+                    body: JSON.stringify({ userId, charId, sessionId, role, content, context, playerName, language }),
+                    credentials: 'omit',
+                    cache: 'no-store',
+                    keepalive: true
+                });
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                return res;
+            } catch (err) {
+                lastError = err;
+                if (navigator.onLine === false) break;
+            }
+        }
+        const err = lastError || new Error('Chat log request failed');
         console.warn('[ChatLog] cupid 저장 실패:', err.message);
         logCupidError(err, {
             source: 'saveCupidChatLog',
@@ -439,7 +452,7 @@ async function saveCupidChatLog({ charId, userContent, assistantContent, session
             }
         });
         return null;
-    });
+    };
 
     try {
         // 순서 보장: user 먼저 저장 후 assistant 저장 (병렬 시 created_at/id 역전 방지)
