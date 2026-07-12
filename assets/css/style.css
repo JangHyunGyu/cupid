@@ -77,9 +77,8 @@ html, body, button, input, textarea, select {
     color: var(--c-text);
 }
 
-/* 스크린리더/SEO용 시각적 숨김 (크롤러는 인식, 사용자에겐 안 보임) */
-.sr-only,
-.seo-screenshots {
+/* 스크린리더용 시각적 숨김 */
+.sr-only {
     position: absolute;
     width: 1px;
     height: 1px;

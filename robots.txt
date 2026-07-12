@@ -1,18 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /game.html
-Disallow: /game-en.html
-Disallow: /game-es.html
-Disallow: /game-ja.html
-Disallow: /game-fr.html
-Disallow: /game-de.html
-Disallow: /game-pt.html
-Disallow: /gallery.html
-Disallow: /gallery-en.html
-Disallow: /gallery-es.html
-Disallow: /gallery-ja.html
-Disallow: /gallery-fr.html
-Disallow: /gallery-de.html
-Disallow: /gallery-pt.html
 
 Sitemap: https://cupid.archerlab.dev/sitemap.xml

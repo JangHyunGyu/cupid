@@ -5,8 +5,10 @@ const path = require('path');
 
 const SITE = 'https://cupid.archerlab.dev';
 const OUT = __dirname;
-const LASTMOD = '2026-07-07';
+const LASTMOD = '2026-07-12';
 const SEO_IMAGE = `${SITE}/cupid_link.png?v=2.9.6`;
+const SOCIAL_IMAGE = `${SITE}/assets/images/screenshots/cupid-title.jpg?v=2.9.6`;
+const GAME_DESCRIPTION = 'Cupid is a free browser romance visual novel with a five-day school story, five character routes, multiple endings, and support for seven languages.';
 const GA_MEASUREMENT_ID = 'G-05YM7K3VX9';
 const GA_LINKER_DOMAINS = [
   'latindance.kr',
@@ -545,7 +547,7 @@ function findPageByGroup(lang, group) {
 
 function getAlternateEntries(lang, page) {
   if (!page.group) {
-    return [{ lang, page }];
+    return [];
   }
   return Object.keys(PAGES)
     .map(L => ({ lang: L, page: findPageByGroup(L, page.group) }))
@@ -577,9 +579,11 @@ function renderPage(lang, page) {
   const alternateEntries = getAlternateEntries(lang, page);
   const defaultAlternate = getDefaultAlternate(alternateEntries);
 
-  const altLinks = alternateEntries.map(({ lang: L, page: altPage }) =>
-    `<link rel="alternate" hreflang="${L}" href="${seoUrl(altPage.slug)}">`
-  ).join('\n  ') + `\n  <link rel="alternate" hreflang="x-default" href="${seoUrl(defaultAlternate.page.slug)}">`;
+  const altLinks = alternateEntries.length > 0
+    ? alternateEntries.map(({ lang: L, page: altPage }) =>
+      `<link rel="alternate" hreflang="${L}" href="${seoUrl(altPage.slug)}">`
+    ).join('\n  ') + `\n  <link rel="alternate" hreflang="x-default" href="${seoUrl(defaultAlternate.page.slug)}">`
+    : '';
 
   const languageTargets = alternateEntries.length > 1
     ? alternateEntries
@@ -600,14 +604,29 @@ function renderPage(lang, page) {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "VideoGame",
+        "@type": "WebPage",
+        "@id": `${url}#webpage`,
+        "url": url,
+        "name": page.title,
+        "description": page.meta,
+        "inLanguage": lang,
+        "mainEntity": { "@id": `${SITE}/#videogame` },
+        "breadcrumb": { "@id": `${url}#breadcrumb` }
+      },
+      {
+        "@type": ["VideoGame", "WebApplication"],
         "@id": `${SITE}/#videogame`,
         "name": "Cupid",
         "alternateName": ["Cupid Game", "Cupid Visual Novel", "무료 미연시 Cupid", "学園恋愛ゲーム Cupid"],
-        "description": page.meta,
-        "url": siteUrl(homeUrl),
+        "description": GAME_DESCRIPTION,
+        "url": siteUrl('/'),
         "image": SEO_IMAGE,
-        "genre": ["Visual Novel", "Romance", "Dating Simulation", "Otome Game"],
+        "screenshot": [
+          `${SITE}/assets/images/screenshots/cupid-title.jpg?v=2.9.6`,
+          `${SITE}/assets/images/screenshots/cupid-dialogue.jpg?v=2.9.6`,
+          `${SITE}/assets/images/screenshots/cupid-school.jpg?v=2.9.6`
+        ],
+        "genre": ["Visual Novel", "Romance", "Dating Simulation"],
         "gamePlatform": ["Web Browser", "Mobile Browser"],
         "applicationCategory": "GameApplication",
         "operatingSystem": "Any",
@@ -615,14 +634,14 @@ function renderPage(lang, page) {
         "isAccessibleForFree": true,
         "offers": {
           "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock"
+          "price": 0,
+          "priceCurrency": "USD"
         },
         "publisher": {
           "@type": "Organization",
+          "@id": "https://archerlab.dev/#organization",
           "name": "Archerlab",
-          "url": "https://archerlab.dev"
+          "url": "https://archerlab.dev/"
         }
       },
       {
@@ -658,25 +677,29 @@ function renderPage(lang, page) {
   return `<!DOCTYPE html>
 <html lang="${c.htmlLang}">
 <head>
-  <script src="/assets/js/error-reporter.js?v=20260712-network-recovery"></script>
   <meta charset="UTF-8">
+  <script src="/assets/js/error-reporter.js?v=20260712-network-recovery"></script>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>${escapeHTML(page.title)}</title>
   <meta name="description" content="${escapeHTML(page.meta)}">
   <link rel="canonical" href="${url}">
-  ${altLinks}
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+${altLinks ? `  ${altLinks}\n` : ''}  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta property="og:title" content="${escapeHTML(page.title)}">
   <meta property="og:description" content="${escapeHTML(page.meta)}">
   <meta property="og:url" content="${url}">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Archerlab Games">
+  <meta property="og:site_name" content="Cupid">
   <meta property="og:locale" content="${LOCALES[lang] || 'en_US'}">
-  <meta property="og:image" content="${SEO_IMAGE}">
+  <meta property="og:image" content="${SOCIAL_IMAGE}">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1920">
+  <meta property="og:image:height" content="1080">
+  <meta property="og:image:alt" content="Cupid browser romance visual novel title screen">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${escapeHTML(page.title)}">
   <meta name="twitter:description" content="${escapeHTML(page.meta)}">
-  <meta name="twitter:image" content="${SEO_IMAGE}">
+  <meta name="twitter:image" content="${SOCIAL_IMAGE}">
+  <meta name="twitter:image:alt" content="Cupid browser romance visual novel title screen">
   <link rel="icon" href="/favicon.ico">
   ${renderGoogleAnalytics()}
   <style>${CSS}</style>
@@ -747,14 +770,15 @@ console.log(`✓ ${count} SEO pages generated in ${OUT}`);
 
 function renderSitemapUrl(url, altEntries, changefreq, priority) {
   const defaultEntry = getDefaultAlternate(altEntries);
-  const altLinks = altEntries.map(entry =>
-    `        <xhtml:link rel="alternate" hreflang="${entry.lang}" href="${seoUrl(entry.page.slug)}"/>`
-  ).join('\n') + `\n        <xhtml:link rel="alternate" hreflang="x-default" href="${seoUrl(defaultEntry.page.slug)}"/>`;
+  const altLinks = altEntries.length > 0
+    ? altEntries.map(entry =>
+      `        <xhtml:link rel="alternate" hreflang="${entry.lang}" href="${seoUrl(entry.page.slug)}"/>`
+    ).join('\n') + `\n        <xhtml:link rel="alternate" hreflang="x-default" href="${seoUrl(defaultEntry.page.slug)}"/>`
+    : '';
 
   return `    <url>
         <loc>${url}</loc>
-${altLinks}
-        <lastmod>${LASTMOD}</lastmod>
+${altLinks ? `${altLinks}\n` : ''}        <lastmod>${LASTMOD}</lastmod>
         <changefreq>${changefreq}</changefreq>
         <priority>${priority}</priority>
     </url>`;
