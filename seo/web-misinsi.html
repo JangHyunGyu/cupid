@@ -35,6 +35,11 @@
         domains: ["latindance.kr","archerlab.dev","itstory.archerlab.dev","chatbot.archerlab.dev","walkwithme.archerlab.dev","golf.archerlab.dev","cupid.archerlab.dev","harem.archerlab.dev"]
       }
     });
+    window.sendGAEvent = function(eventName, params) {
+      gtag('event', eventName, Object.assign({
+        page_language: document.documentElement.lang || 'en'
+      }, params || {}));
+    };
   </script>
   <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -80,7 +85,7 @@ footer{margin-top:48px;padding-top:20px;border-top:1px solid #fce4ec;text-align:
     <nav class="related" aria-label="Related Cupid search pages"><a href="/seo/muryo-misinsi-game">무료 미연시 게임</a> | <a href="/seo/muryo-misinsi">무료 미연시</a> | <a href="/seo/misinsi-muryo">미연시 무료 플레이</a> | <a href="/seo/muryo-yeonae-sim">무료 연애 시뮬레이션 게임 BEST</a> | <a href="/seo/browser-misinsi">브라우저 미연시 추천</a> | <a href="/seo/mu-seolchi-yeonae-game">무설치 연애게임 추천</a></nav>
 
     <div class="cta-box">
-      <a class="cta" href="/">지금 무료로 플레이 →</a>
+      <a class="cta" href="/" data-seo-cta="top" onclick="window.sendGAEvent('seo_cta_click',{seo_slug:'web-misinsi',cta_placement:'top',link_url:'https://cupid.archerlab.dev/',transport_type:'beacon'})">지금 무료로 플레이 →</a>
     </div>
 
     <h2>왜 무설치 웹 연애게임인가</h2>
@@ -109,7 +114,7 @@ footer{margin-top:48px;padding-top:20px;border-top:1px solid #fce4ec;text-align:
     </ul>
 
     <div class="cta-box">
-      <a class="cta" href="/">지금 무료로 플레이 →</a>
+      <a class="cta" href="/" data-seo-cta="bottom" onclick="window.sendGAEvent('seo_cta_click',{seo_slug:'web-misinsi',cta_placement:'bottom',link_url:'https://cupid.archerlab.dev/',transport_type:'beacon'})">지금 무료로 플레이 →</a>
     </div>
 
     <h2>자주 묻는 질문</h2>

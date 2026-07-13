@@ -35,6 +35,11 @@
         domains: ["latindance.kr","archerlab.dev","itstory.archerlab.dev","chatbot.archerlab.dev","walkwithme.archerlab.dev","golf.archerlab.dev","cupid.archerlab.dev","harem.archerlab.dev"]
       }
     });
+    window.sendGAEvent = function(eventName, params) {
+      gtag('event', eventName, Object.assign({
+        page_language: document.documentElement.lang || 'en'
+      }, params || {}));
+    };
   </script>
   <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -80,7 +85,7 @@ footer{margin-top:48px;padding-top:20px;border-top:1px solid #fce4ec;text-align:
     <nav class="related" aria-label="Related Cupid search pages"><a href="/seo/dating-sim-kostenlos">Dating Sim kostenlos ohne Download</a> | <a href="/seo/browser-otome">Browser Otome Game kostenlos</a></nav>
 
     <div class="cta-box">
-      <a class="cta" href="/index-de">Jetzt kostenlos spielen →</a>
+      <a class="cta" href="/index-de" data-seo-cta="top" onclick="window.sendGAEvent('seo_cta_click',{seo_slug:'dating-spiel-online',cta_placement:'top',link_url:'https://cupid.archerlab.dev/index-de',transport_type:'beacon'})">Jetzt kostenlos spielen →</a>
     </div>
 
     <h2>Warum ein Browser-Dating-Sim?</h2>
@@ -109,7 +114,7 @@ footer{margin-top:48px;padding-top:20px;border-top:1px solid #fce4ec;text-align:
     </ul>
 
     <div class="cta-box">
-      <a class="cta" href="/index-de">Jetzt kostenlos spielen →</a>
+      <a class="cta" href="/index-de" data-seo-cta="bottom" onclick="window.sendGAEvent('seo_cta_click',{seo_slug:'dating-spiel-online',cta_placement:'bottom',link_url:'https://cupid.archerlab.dev/index-de',transport_type:'beacon'})">Jetzt kostenlos spielen →</a>
     </div>
 
     <h2>Häufige Fragen</h2>

@@ -43,6 +43,11 @@
         domains: ["latindance.kr","archerlab.dev","itstory.archerlab.dev","chatbot.archerlab.dev","walkwithme.archerlab.dev","golf.archerlab.dev","cupid.archerlab.dev","harem.archerlab.dev"]
       }
     });
+    window.sendGAEvent = function(eventName, params) {
+      gtag('event', eventName, Object.assign({
+        page_language: document.documentElement.lang || 'en'
+      }, params || {}));
+    };
   </script>
   <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -88,7 +93,7 @@ footer{margin-top:48px;padding-top:20px;border-top:1px solid #fce4ec;text-align:
     <nav class="related" aria-label="Related Cupid search pages"><a href="/seo/cupid-game-online">Cupid Game Online</a> | <a href="/seo/cupid-visual-novel">Cupid Visual Novel</a> | <a href="/seo/browser-otome-game">Browser Otome Game (Free, No Install)</a> | <a href="/seo/play-dating-simulator-online">Play Dating Simulator Online Free</a></nav>
 
     <div class="cta-box">
-      <a class="cta" href="/index-en">Play Free Now →</a>
+      <a class="cta" href="/index-en" data-seo-cta="top" onclick="window.sendGAEvent('seo_cta_click',{seo_slug:'free-dating-sim-no-download',cta_placement:'top',link_url:'https://cupid.archerlab.dev/index-en',transport_type:'beacon'})">Play Free Now →</a>
     </div>
 
     <h2>Why a browser dating sim?</h2>
@@ -117,7 +122,7 @@ footer{margin-top:48px;padding-top:20px;border-top:1px solid #fce4ec;text-align:
     </ul>
 
     <div class="cta-box">
-      <a class="cta" href="/index-en">Play Free Now →</a>
+      <a class="cta" href="/index-en" data-seo-cta="bottom" onclick="window.sendGAEvent('seo_cta_click',{seo_slug:'free-dating-sim-no-download',cta_placement:'bottom',link_url:'https://cupid.archerlab.dev/index-en',transport_type:'beacon'})">Play Free Now →</a>
     </div>
 
     <h2>Frequently asked questions</h2>
