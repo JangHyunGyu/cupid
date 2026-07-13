@@ -12,30 +12,78 @@
  * ============================================================================
  */
 
-const CACHE_VERSION = 'cupid-v3.3.39';
+const CACHE_VERSION = 'cupid-v3.3.40';
 const STATIC_CACHE = CACHE_VERSION + '-static';
 const MEDIA_CACHE = CACHE_VERSION + '-media';
 
 const ERROR_LOG_ENDPOINT = 'https://chatbot-api.yama5993.workers.dev/error-logs';
+const ERROR_DEDUPE_TTL_MS = 30000;
+const recentServiceWorkerErrors = new Map();
+const SERVICE_WORKER_REPORT_NONCE = (() => {
+    try {
+        if (typeof crypto?.randomUUID === 'function') return crypto.randomUUID();
+    } catch (_) {}
+    return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 12)}`;
+})();
+let serviceWorkerReportSequence = 0;
+
+function stableErrorHash(value) {
+    let hash = 2166136261;
+    const text = String(value || '');
+    for (let index = 0; index < text.length; index++) {
+        hash ^= text.charCodeAt(index);
+        hash = Math.imul(hash, 16777619);
+    }
+    return (hash >>> 0).toString(36);
+}
+
+function createServiceWorkerErrorId(signature, occurredAtMs) {
+    // A report ID identifies one event, not one global signature/time bucket.
+    // The serialized request body keeps this ID stable if fetch is retried,
+    // while the UUID/session nonce prevents unrelated users from colliding.
+    try {
+        if (typeof crypto?.randomUUID === 'function') return `cupid-sw-${crypto.randomUUID()}`;
+    } catch (_) {}
+    serviceWorkerReportSequence += 1;
+    return `cupid-sw-${SERVICE_WORKER_REPORT_NONCE}-${serviceWorkerReportSequence.toString(36)}-${stableErrorHash(`${signature}|${occurredAtMs}`)}`;
+}
+
+function shouldSuppressRecentServiceWorkerError(signature, occurredAtMs) {
+    const previous = recentServiceWorkerErrors.get(signature);
+    if (Number.isFinite(previous) && occurredAtMs - previous < ERROR_DEDUPE_TTL_MS) return true;
+    recentServiceWorkerErrors.set(signature, occurredAtMs);
+    if (recentServiceWorkerErrors.size > 50) {
+        for (const [key, timestamp] of recentServiceWorkerErrors) {
+            if (occurredAtMs - timestamp >= ERROR_DEDUPE_TTL_MS) recentServiceWorkerErrors.delete(key);
+        }
+    }
+    return false;
+}
 
 function reportServiceWorkerError(type, error) {
     try {
         const message = error?.message || String(error || 'Unknown service worker error');
+        const normalizedType = String(type || 'ServiceWorkerError');
+        const signature = `${normalizedType}|${message}`;
+        const occurredAtMs = Date.now();
+        if (shouldSuppressRecentServiceWorkerError(signature, occurredAtMs)) return Promise.resolve();
+        const eventId = createServiceWorkerErrorId(signature, occurredAtMs);
         return fetch(ERROR_LOG_ENDPOINT, {
             method: 'POST',
             headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
             body: JSON.stringify({
                 appId: 'cupid-service-worker',
                 userId: '',
-                message: `[app:${type}] ${message}`.slice(0, 500),
+                message: `[app:${normalizedType}] ${message}`.slice(0, 500),
                 stack: String(error?.stack || '').slice(0, 4000),
                 url: self.location.href.slice(0, 500),
                 source: 'service-worker.js',
-                errorType: type,
+                errorType: normalizedType,
                 errorClass: error?.name || 'Error',
                 sessionId: '',
                 context: { cacheVersion: CACHE_VERSION, scope: self.registration?.scope || '' },
-                extra: { occurredAt: new Date().toISOString() }
+                reportId: eventId,
+                extra: { eventId, occurredAt: new Date(occurredAtMs).toISOString() }
             }),
             keepalive: true
         }).catch(() => {});
@@ -49,8 +97,23 @@ self.addEventListener('error', event => {
 });
 
 self.addEventListener('unhandledrejection', event => {
+    if (isExpectedTransientNetworkError(event.reason)) {
+        // Safari reports interrupted response streams as an unhandled
+        // "TypeError: Load failed" even when the fetch strategy has already
+        // returned an offline response. This is expected network noise.
+        event.preventDefault?.();
+        return;
+    }
     reportServiceWorkerError('UnhandledRejection', event.reason);
 });
+
+function isExpectedTransientNetworkError(error) {
+    const name = String(error?.name || '');
+    const message = String(error?.message || error || '');
+    if (name === 'AbortError' || name === 'NetworkError') return true;
+    return name === 'TypeError'
+        && /load failed|failed to fetch|network request failed|fetch failed/i.test(message);
+}
 
 // 설치 시 핵심 에셋 프리캐시
 const PRECACHE_URLS = [];
@@ -62,7 +125,8 @@ self.addEventListener('install', (event) => {
     console.log('[SW] 설치 (캐시 최적화 모드)');
     event.waitUntil(
         caches.open(STATIC_CACHE)
-            .then(cache => cache.addAll(PRECACHE_URLS))
+            .then(cache => PRECACHE_URLS.length ? cache.addAll(PRECACHE_URLS) : undefined)
+            .catch(() => {})
             .then(() => self.skipWaiting())
     );
 });
@@ -73,13 +137,14 @@ self.addEventListener('install', (event) => {
 self.addEventListener('activate', (event) => {
     event.waitUntil(
         caches.keys()
+            .catch(() => [])
             .then(cacheNames => {
                 return Promise.all(
                     cacheNames
                         .filter(name => name !== STATIC_CACHE && name !== MEDIA_CACHE)
                         .map(name => {
                             console.log('[SW] 구버전 캐시 삭제:', name);
-                            return caches.delete(name);
+                            return caches.delete(name).catch(() => false);
                         })
                 );
             })
@@ -128,14 +193,14 @@ self.addEventListener('fetch', (event) => {
  * 이미지/오디오 등 변경이 드문 대용량 에셋에 적합
  */
 async function cacheFirst(request, cacheName) {
-    const cached = await caches.match(request);
+    const cacheRequest = normalizeAssetCacheRequest(request);
+    const cached = await matchCacheSafely(cacheRequest);
     if (cached) return cached;
 
     try {
         const response = await fetch(request);
         if (response.ok) {
-            const cache = await caches.open(cacheName);
-            cache.put(request, response.clone());
+            await cacheResponseSafely(cacheName, cacheRequest, response);
         }
         return response;
     } catch (e) {
@@ -156,10 +221,37 @@ async function networkOnly(request) {
 }
 
 function normalizeAssetCacheRequest(request) {
-    const url = new URL(request.url);
-    if (!url.searchParams.has('retry')) return request;
-    url.searchParams.delete('retry');
-    return new Request(url.toString(), request);
+    try {
+        const url = new URL(request.url);
+        if (!url.searchParams.has('retry')) return request;
+        url.searchParams.delete('retry');
+        return new Request(url.toString(), request);
+    } catch (_) {
+        return request;
+    }
+}
+
+async function matchCacheSafely(request) {
+    try {
+        return await caches.match(request);
+    } catch (_) {
+        return undefined;
+    }
+}
+
+async function cacheResponseSafely(cacheName, request, response) {
+    try {
+        const copy = response.clone();
+        // Cache writes consume a cloned response stream. Safari rejects this
+        // promise with "Load failed" when that stream is interrupted, so the
+        // best-effort write must always own its rejection handler.
+        const cache = await caches.open(cacheName);
+        await cache.put(request, copy);
+        return true;
+    } catch (_) {
+        // A failed clone/cache must never fail the user-facing response.
+        return false;
+    }
 }
 
 async function networkFirstAsset(request, cacheName) {
@@ -167,15 +259,14 @@ async function networkFirstAsset(request, cacheName) {
     try {
         const response = await fetch(request);
         if (response.ok) {
-            const cache = await caches.open(cacheName);
-            cache.put(cacheRequest, response.clone());
+            await cacheResponseSafely(cacheName, cacheRequest, response);
             return response;
         }
-        const cached = await caches.match(cacheRequest);
+        const cached = await matchCacheSafely(cacheRequest);
         if (cached) return cached;
         return response;
     } catch (e) {
-        const cached = await caches.match(cacheRequest);
+        const cached = await matchCacheSafely(cacheRequest);
         if (cached) return cached;
         return new Response('Offline', { status: 503 });
     }
@@ -189,12 +280,11 @@ async function networkFirst(request, cacheName) {
     try {
         const response = await fetch(request);
         if (response.ok) {
-            const cache = await caches.open(cacheName);
-            cache.put(request, response.clone());
+            await cacheResponseSafely(cacheName, request, response);
         }
         return response;
     } catch (e) {
-        const cached = await caches.match(request);
+        const cached = await matchCacheSafely(request);
         if (cached) return cached;
 
         if (request.mode === 'navigate') {

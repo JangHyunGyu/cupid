@@ -49,6 +49,14 @@ class SoundManager {
         this._audioUnavailable = false;
         // 잠금 해제 대기 중인 재생 요청
         this._pendingPlay = null;
+        // 일시적인 네트워크 단절 뒤 현재 BGM을 자동 복구하기 위한 상태
+        this._bgmRecoveryTimer = null;
+        this._bgmRecoveryAttempts = 0;
+        this._bgmRecoveryExhaustedPath = '';
+        this._reportedBgmFailurePath = '';
+        this._networkWasOffline = typeof navigator !== 'undefined' && navigator.onLine === false;
+        this._networkRecoveryPending = false;
+        this._availabilityListenersInstalled = false;
     }
 
     /**
@@ -84,6 +92,7 @@ class SoundManager {
         if (this.isInitialized) return;
         console.log("SoundManager: 시스템 초기화 중...");
         this.isInitialized = true;
+        this._installAvailabilityRecovery();
 
         const unlock = () => {
             console.log("SoundManager: 사용자 상호작용 감지");
@@ -136,7 +145,141 @@ class SoundManager {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
 
-    async _fetchAudioResponse(path) {
+    _installAvailabilityRecovery() {
+        if (this._availabilityListenersInstalled) return;
+        this._availabilityListenersInstalled = true;
+
+        const resumeCurrentBgm = (resetAttempts = false) => {
+            if (navigator.onLine === false || document.visibilityState === 'hidden') return;
+            if (!this.currentBgmPath || this.bgmSourceNode) return;
+            this._scheduleBgmRecovery(this.currentBgmPath, this._bgmLoop, {
+                immediate: true,
+                resetAttempts
+            });
+        };
+
+        const handleOffline = () => {
+            this._networkWasOffline = true;
+            this._cancelBgmRecovery(false);
+        };
+        const handleOnline = () => {
+            // Only a real offline -> online transition opens one new bounded
+            // recovery budget. Duplicate online/visibility events cannot keep
+            // resetting an exhausted retry loop.
+            const recoveredFromOffline = this._networkWasOffline;
+            this._networkWasOffline = false;
+            this._networkRecoveryPending = this._networkRecoveryPending || recoveredFromOffline;
+            if (document.visibilityState === 'hidden') return;
+            const resetAttempts = this._networkRecoveryPending;
+            this._networkRecoveryPending = false;
+            resumeCurrentBgm(resetAttempts);
+        };
+        const handleVisibilityChange = () => {
+            if (document.visibilityState === 'hidden') {
+                this._cancelBgmRecovery(false);
+                return;
+            }
+            // Returning to a visible tab resumes a paused timer without
+            // replenishing attempts, unless an actual offline -> online signal
+            // arrived while the tab was hidden.
+            const resetAttempts = this._networkRecoveryPending;
+            this._networkRecoveryPending = false;
+            resumeCurrentBgm(resetAttempts);
+        };
+
+        window.addEventListener('offline', handleOffline);
+        window.addEventListener('online', handleOnline);
+        document.addEventListener('visibilitychange', handleVisibilityChange);
+    }
+
+    _isRetryableAudioError(error) {
+        const name = String(error?.name || '');
+        const message = String(error?.message || error || '');
+        if (name === 'AbortError' || name === 'NetworkError') return true;
+        if (name === 'TypeError'
+            && /load failed|failed to fetch|network request failed|fetch failed/i.test(message)) {
+            return true;
+        }
+        const httpMatch = message.match(/^HTTP\s+(\d{3})$/i);
+        if (!httpMatch) return false;
+        const status = Number(httpMatch[1]);
+        return status === 408 || status === 425 || status === 429 || status >= 500;
+    }
+
+    _cancelBgmRecovery(resetAttempts = true) {
+        if (this._bgmRecoveryTimer !== null) {
+            clearTimeout(this._bgmRecoveryTimer);
+            this._bgmRecoveryTimer = null;
+        }
+        if (resetAttempts) this._bgmRecoveryAttempts = 0;
+    }
+
+    _resetBgmRecoveryEpisode() {
+        this._cancelBgmRecovery();
+        this._bgmRecoveryExhaustedPath = '';
+        this._reportedBgmFailurePath = '';
+        this._networkRecoveryPending = false;
+    }
+
+    _reportSoundLoadError(error, path, oncePerBgmEpisode = false) {
+        if (oncePerBgmEpisode) {
+            if (this._reportedBgmFailurePath === path) return;
+            this._reportedBgmFailurePath = path;
+        }
+        const reportExtra = oncePerBgmEpisode
+            ? {
+                audioRecoveryExhausted: true,
+                recoveryAttempts: this._bgmRecoveryAttempts
+            }
+            : {};
+        if (typeof window.__cupidReportCaughtError === 'function') {
+            window.__cupidReportCaughtError(error, {
+                errorType: 'SoundLoadError',
+                source: path || 'sound-manager',
+                extra: reportExtra
+            });
+        } else if (typeof window.__cupidLogRuntimeError === 'function') {
+            window.__cupidLogRuntimeError(
+                'SoundLoadError',
+                error?.message,
+                error?.stack || '',
+                path || 'sound-manager',
+                reportExtra
+            );
+        }
+    }
+
+    _scheduleBgmRecovery(path, loop, options = {}) {
+        if (!path || this.currentBgmPath !== path || this.bgmSourceNode) return 'inactive';
+        if (navigator.onLine === false || document.visibilityState === 'hidden') return 'paused';
+        if (options.resetAttempts) {
+            this._bgmRecoveryAttempts = 0;
+            this._bgmRecoveryExhaustedPath = '';
+        }
+        if (this._bgmRecoveryTimer !== null) return 'scheduled';
+        if (this._bgmRecoveryAttempts >= 3) {
+            this._bgmRecoveryExhaustedPath = path;
+            return 'exhausted';
+        }
+
+        const delays = [2000, 5000, 12000];
+        const attempt = this._bgmRecoveryAttempts;
+        const delay = options.immediate ? 0 : delays[attempt];
+        this._bgmRecoveryTimer = setTimeout(() => {
+            this._bgmRecoveryTimer = null;
+            if (this.currentBgmPath !== path || this.bgmSourceNode) return;
+            if (navigator.onLine === false || document.visibilityState === 'hidden') return;
+            this._bgmRecoveryAttempts = attempt + 1;
+            this.playBgm(path, loop, true).catch(error => {
+                console.error("SoundManager: BGM 복구 실패 ->", path, error);
+                this._bgmRecoveryExhaustedPath = path;
+                this._reportSoundLoadError(error, path, true);
+            });
+        }, delay);
+        return 'scheduled';
+    }
+
+    async _fetchAudioArrayBuffer(path) {
         let lastError = null;
         for (let attempt = 0; attempt < 3; attempt++) {
             const separator = path.includes('?') ? '&' : '?';
@@ -146,8 +289,16 @@ class SoundManager {
                 const response = await fetch(url, {
                     cache: attempt === 0 ? 'default' : 'reload'
                 });
-                if (response.ok) return response;
-                lastError = new Error(`HTTP ${response.status}`);
+                if (!response.ok) {
+                    lastError = new Error(`HTTP ${response.status}`);
+                    continue;
+                }
+                // fetch() resolves after headers arrive. Consume the full body
+                // inside the retry loop so Safari stream interruptions are
+                // retried instead of surfacing as a terminal "Load failed".
+                const arrayBuffer = await response.arrayBuffer();
+                if (!arrayBuffer.byteLength) throw new Error('Empty audio response');
+                return arrayBuffer;
             } catch (error) {
                 lastError = error;
             }
@@ -159,7 +310,7 @@ class SoundManager {
      * 오디오 파일을 완전히 다운로드 + 디코딩하여 AudioBuffer로 변환.
      * 캐시하여 같은 파일은 재다운로드하지 않음.
      */
-    async _loadBuffer(path) {
+    async _loadBuffer(path, isBgm = false) {
         // 이미 캐시에 있으면 즉시 반환
         if (this._bufferCache[path]) {
             return this._bufferCache[path];
@@ -176,9 +327,7 @@ class SoundManager {
         this._loadingPromises[path] = (async () => {
             try {
                 console.log("SoundManager: 오디오 다운로드 시작 ->", path);
-                const response = await this._fetchAudioResponse(path);
-
-                const arrayBuffer = await response.arrayBuffer();
+                const arrayBuffer = await this._fetchAudioArrayBuffer(path);
                 console.log("SoundManager: 다운로드 완료, 디코딩 중 ->", path);
 
                 const audioBuffer = await ctx.decodeAudioData(arrayBuffer);
@@ -187,16 +336,30 @@ class SoundManager {
 
                 // 캐시에 저장
                 this._bufferCache[path] = audioBuffer;
+                if (this.currentBgmPath === path) this._resetBgmRecoveryEpisode();
                 return audioBuffer;
             } catch (e) {
+                if (this._isRetryableAudioError(e)) {
+                    console.warn("SoundManager: 일시적인 오디오 네트워크 오류, 복구 대기 ->", path, e?.message || e);
+                    if (isBgm && this.currentBgmPath === path) {
+                        const recoveryStatus = this._scheduleBgmRecovery(path, this._bgmLoop);
+                        if (recoveryStatus === 'exhausted') {
+                            this._reportSoundLoadError(e, path, true);
+                        }
+                    } else if (!isBgm) {
+                        // One-shot SFX has no delayed recovery phase. Its three
+                        // fetch attempts are the complete budget, so report the
+                        // final failure once for this load request.
+                        this._reportSoundLoadError(e, path);
+                    }
+                    return null;
+                }
                 console.error("SoundManager: 오디오 로드 실패 ->", path, e);
-                if (typeof window.__cupidReportCaughtError === 'function') {
-                    window.__cupidReportCaughtError(e, {
-                        errorType: 'SoundLoadError',
-                        source: path || 'sound-manager'
-                    });
-                } else if (typeof window.__cupidLogRuntimeError === 'function') {
-                    window.__cupidLogRuntimeError('SoundLoadError', e?.message, e?.stack || '', path || 'sound-manager');
+                if (isBgm && this.currentBgmPath === path) {
+                    this._bgmRecoveryExhaustedPath = path;
+                    this._reportSoundLoadError(e, path, true);
+                } else if (!isBgm) {
+                    this._reportSoundLoadError(e, path);
                 }
                 return null;
             } finally {
@@ -211,7 +374,14 @@ class SoundManager {
      * BGM 재생 요청
      */
     async playBgm(path, loop = true, force = false) {
-        if (!force && this.currentBgmPath === path && this.bgmSourceNode) return;
+        if (!force && this.currentBgmPath === path) {
+            if (this.bgmSourceNode
+                || this._loadingPromises[path]
+                || this._bgmRecoveryTimer !== null
+                || this._bgmRecoveryExhaustedPath === path) {
+                return;
+            }
+        }
 
         console.log("SoundManager: BGM 재생 요청 ->", path);
 
@@ -222,13 +392,14 @@ class SoundManager {
         }
 
         // 기존 BGM 페이드 아웃
+        if (this.currentBgmPath !== path) this._resetBgmRecoveryEpisode();
         this._fadeOutAndCleanup();
 
         this.currentBgmPath = path;
         this._bgmLoop = loop;
 
         // 파일 다운로드 + 디코딩 (완료될 때까지 대기)
-        const buffer = await this._loadBuffer(path);
+        const buffer = await this._loadBuffer(path, true);
         if (!buffer) return;
 
         // 다운로드 중 다른 곡으로 전환된 경우 무시
@@ -276,6 +447,7 @@ class SoundManager {
         this.bgmSourceNode = sourceNode;
         this.bgmGain = gainNode;
         this.bgmBuffer = buffer;
+        this._resetBgmRecoveryEpisode();
 
         // 재생 시작
         sourceNode.start(0);
@@ -322,11 +494,12 @@ class SoundManager {
      * BGM 페이드 아웃 후 정지
      */
     stopBgm() {
-        if (this.bgmSourceNode || this._pendingPlay) {
+        if (this.bgmSourceNode || this._pendingPlay || this._bgmRecoveryTimer !== null || this.currentBgmPath) {
             console.log("SoundManager: BGM 페이드 아웃 정지");
             this._fadeOutAndCleanup();
             this.currentBgmPath = '';
             this._pendingPlay = null;
+            this._resetBgmRecoveryEpisode();
         }
     }
 
