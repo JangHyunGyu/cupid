@@ -35,6 +35,11 @@
         domains: ["latindance.kr","archerlab.dev","itstory.archerlab.dev","chatbot.archerlab.dev","walkwithme.archerlab.dev","golf.archerlab.dev","cupid.archerlab.dev","harem.archerlab.dev"]
       }
     });
+    window.sendGAEvent = function(eventName, params) {
+      gtag('event', eventName, Object.assign({
+        page_language: document.documentElement.lang || 'en'
+      }, params || {}));
+    };
   </script>
   <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -80,7 +85,7 @@ footer{margin-top:48px;padding-top:20px;border-top:1px solid #fce4ec;text-align:
     <nav class="related" aria-label="Related Cupid search pages"><a href="/seo/simulador-citas-gratis">Simulador de citas gratis sin descargar</a> | <a href="/seo/otome-navegador">Otome game español gratis en el navegador</a></nav>
 
     <div class="cta-box">
-      <a class="cta" href="/index-es">Jugar gratis ahora →</a>
+      <a class="cta" href="/index-es" data-seo-cta="top" onclick="window.sendGAEvent('seo_cta_click',{seo_slug:'juego-citas-online',cta_placement:'top',link_url:'https://cupid.archerlab.dev/index-es',transport_type:'beacon'})">Jugar gratis ahora →</a>
     </div>
 
     <h2>¿Por qué un simulador de citas en el navegador?</h2>
@@ -109,7 +114,7 @@ footer{margin-top:48px;padding-top:20px;border-top:1px solid #fce4ec;text-align:
     </ul>
 
     <div class="cta-box">
-      <a class="cta" href="/index-es">Jugar gratis ahora →</a>
+      <a class="cta" href="/index-es" data-seo-cta="bottom" onclick="window.sendGAEvent('seo_cta_click',{seo_slug:'juego-citas-online',cta_placement:'bottom',link_url:'https://cupid.archerlab.dev/index-es',transport_type:'beacon'})">Jugar gratis ahora →</a>
     </div>
 
     <h2>Preguntas frecuentes</h2>

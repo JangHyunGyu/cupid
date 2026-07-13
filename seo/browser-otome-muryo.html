@@ -35,6 +35,11 @@
         domains: ["latindance.kr","archerlab.dev","itstory.archerlab.dev","chatbot.archerlab.dev","walkwithme.archerlab.dev","golf.archerlab.dev","cupid.archerlab.dev","harem.archerlab.dev"]
       }
     });
+    window.sendGAEvent = function(eventName, params) {
+      gtag('event', eventName, Object.assign({
+        page_language: document.documentElement.lang || 'en'
+      }, params || {}));
+    };
   </script>
   <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -80,7 +85,7 @@ footer{margin-top:48px;padding-top:20px;border-top:1px solid #fce4ec;text-align:
     <nav class="related" aria-label="Related Cupid search pages"><a href="/seo/gakuen-renai-game-muryo-browser">学園恋愛ゲーム 無料 ブラウザ</a> | <a href="/seo/gakuen-renai-game-muryo-download-nashi">学園恋愛ゲーム 無料ダウンロードなし</a> | <a href="/seo/browser-otome-game-ja">ブラウザ 乙女ゲーム</a> | <a href="/seo/renai-game-browser">恋愛ゲーム ブラウザ</a> | <a href="/seo/muryo-renai-sim">無料 恋愛シミュレーション ダウンロード不要</a> | <a href="/seo/web-otome">Web 乙女ゲー おすすめ</a></nav>
 
     <div class="cta-box">
-      <a class="cta" href="/index-ja">今すぐ無料でプレイ →</a>
+      <a class="cta" href="/index-ja" data-seo-cta="top" onclick="window.sendGAEvent('seo_cta_click',{seo_slug:'browser-otome-muryo',cta_placement:'top',link_url:'https://cupid.archerlab.dev/index-ja',transport_type:'beacon'})">今すぐ無料でプレイ →</a>
     </div>
 
     <h2>なぜブラウザ恋愛ゲームなのか</h2>
@@ -109,7 +114,7 @@ footer{margin-top:48px;padding-top:20px;border-top:1px solid #fce4ec;text-align:
     </ul>
 
     <div class="cta-box">
-      <a class="cta" href="/index-ja">今すぐ無料でプレイ →</a>
+      <a class="cta" href="/index-ja" data-seo-cta="bottom" onclick="window.sendGAEvent('seo_cta_click',{seo_slug:'browser-otome-muryo',cta_placement:'bottom',link_url:'https://cupid.archerlab.dev/index-ja',transport_type:'beacon'})">今すぐ無料でプレイ →</a>
     </div>
 
     <h2>よくある質問</h2>

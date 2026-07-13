@@ -5,7 +5,7 @@ const path = require('path');
 
 const SITE = 'https://cupid.archerlab.dev';
 const OUT = __dirname;
-const LASTMOD = '2026-07-12';
+const LASTMOD = '2026-07-13';
 const SEO_IMAGE = `${SITE}/cupid_link.png?v=2.9.6`;
 const SOCIAL_IMAGE = `${SITE}/assets/images/screenshots/cupid-title.jpg?v=2.9.6`;
 const GAME_DESCRIPTION = 'Cupid is a free browser romance visual novel with a five-day school story, five character routes, multiple endings, and support for seven languages.';
@@ -569,6 +569,11 @@ function renderGoogleAnalytics() {
         domains: ${JSON.stringify(GA_LINKER_DOMAINS)}
       }
     });
+    window.sendGAEvent = function(eventName, params) {
+      gtag('event', eventName, Object.assign({
+        page_language: document.documentElement.lang || 'en'
+      }, params || {}));
+    };
   </script>`;
 }
 
@@ -716,7 +721,7 @@ ${altLinks ? `  ${altLinks}\n` : ''}  <meta name="robots" content="index, follow
     ${relatedLinks ? `<nav class="related" aria-label="Related Cupid search pages">${relatedLinks}</nav>` : ''}
 
     <div class="cta-box">
-      <a class="cta" href="${homeUrl}">${escapeHTML(c.cta)}</a>
+      <a class="cta" href="${homeUrl}" data-seo-cta="top" onclick="window.sendGAEvent('seo_cta_click',{seo_slug:'${page.slug}',cta_placement:'top',link_url:'${siteUrl(homeUrl)}',transport_type:'beacon'})">${escapeHTML(c.cta)}</a>
     </div>
 
     <h2>${escapeHTML(c.why_title)}</h2>
@@ -740,7 +745,7 @@ ${altLinks ? `  ${altLinks}\n` : ''}  <meta name="robots" content="index, follow
     </ul>
 
     <div class="cta-box">
-      <a class="cta" href="${homeUrl}">${escapeHTML(c.cta)}</a>
+      <a class="cta" href="${homeUrl}" data-seo-cta="bottom" onclick="window.sendGAEvent('seo_cta_click',{seo_slug:'${page.slug}',cta_placement:'bottom',link_url:'${siteUrl(homeUrl)}',transport_type:'beacon'})">${escapeHTML(c.cta)}</a>
     </div>
 
     <h2>${escapeHTML(c.faq_title)}</h2>

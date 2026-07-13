@@ -5,7 +5,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const SITE = 'https://cupid.archerlab.dev';
-const LASTMOD = '2026-07-12';
+const LASTMOD = '2026-07-13';
 const errors = [];
 
 const HOME = [
@@ -94,6 +94,12 @@ for (const page of indexable) {
   }
   if (!html.includes('name="twitter:image:alt"')) fail(`${page.file}: missing twitter:image:alt`);
   if (html.includes('seo-screenshots')) fail(`${page.file}: hidden SEO screenshot section is still present`);
+  if (!page.home) {
+    const ctaPlacements = [...html.matchAll(/data-seo-cta="([^"]+)"/g)].map(match => match[1]);
+    const ctaEvents = [...html.matchAll(/seo_cta_click/g)].length;
+    if (ctaPlacements.join(',') !== 'top,bottom') fail(`${page.file}: expected tracked top and bottom SEO CTAs`);
+    if (ctaEvents !== 2) fail(`${page.file}: expected two seo_cta_click handlers, found ${ctaEvents}`);
+  }
 
   const slug = page.file.startsWith('seo/') ? path.basename(page.file, '.html') : '';
   const expectedAlternates = page.home || PRIMARY_SEO_SLUGS.has(slug) ? 8 : 0;
@@ -140,17 +146,40 @@ for (const page of indexable) {
   }
 }
 
-// Keep high-impression Search Console queries aligned with their exact landing pages.
-const observedQueryLinks = [
+// Keep homepage search links aligned with their exact localized landing pages.
+const homepageSeoLinks = [
   ['index.html', '웹 미연시', '/seo/web-misinsi'],
   ['index.html', '미연시 무료', '/seo/misinsi-muryo'],
-  ['index-ja.html', 'ブラウザ乙女ゲーム', '/seo/browser-otome-game-ja']
+  ['index-ja.html', 'ブラウザ乙女ゲーム', '/seo/browser-otome-game-ja'],
+  ['index-es.html', 'Simulador de citas gratis', '/seo/simulador-citas-gratis'],
+  ['index-es.html', 'Otome en navegador', '/seo/otome-navegador'],
+  ['index-es.html', 'Juego de citas online', '/seo/juego-citas-online'],
+  ['index-fr.html', 'Simulation amoureuse gratuite', '/seo/simulation-amour-gratuit'],
+  ['index-fr.html', 'Otome game en français', '/seo/otome-navigateur'],
+  ['index-fr.html', 'Jeu de drague en ligne', '/seo/jeu-drague-en-ligne'],
+  ['index-de.html', 'Dating Sim kostenlos', '/seo/dating-sim-kostenlos'],
+  ['index-de.html', 'Browser Otome Game', '/seo/browser-otome'],
+  ['index-de.html', 'Dating Spiel online', '/seo/dating-spiel-online'],
+  ['index-pt.html', 'Otome game grátis no navegador', '/seo/otome-navegador-gratis'],
+  ['index-pt.html', 'Jogo de namoro online grátis', '/seo/jogo-namoro-online-gratis'],
+  ['index-pt.html', 'Visual novel de romance grátis', '/seo/visual-novel-romance-gratis']
 ];
-for (const [file, anchor, expectedHref] of observedQueryLinks) {
+for (const [file, anchor, expectedHref] of homepageSeoLinks) {
   const html = read(file);
   const match = html.match(new RegExp(`<a\\b[^>]*\\bhref="([^"]+)"[^>]*>\\s*${escapeRegExp(anchor)}\\s*</a>`, 'i'));
-  if (!match) fail(`${file}: missing observed-query link ${anchor}`);
+  if (!match) fail(`${file}: missing homepage SEO link ${anchor}`);
   else if (match[1] !== expectedHref) fail(`${file}: ${anchor} points to ${match[1]}, expected ${expectedHref}`);
+}
+
+const gaSource = read('assets/js/ga.js');
+for (const signal of ['sendGAEvent', 'sendGAGameStart', 'sendGAGameMilestone', 'day_2_reached', 'ending_reached']) {
+  if (!gaSource.includes(signal)) fail(`assets/js/ga.js: missing ${signal}`);
+}
+if (!read('assets/js/modules/index.js').includes("sendGAGameStart('new')")) {
+  fail('assets/js/modules/index.js: new-game conversion tracking is missing');
+}
+if (!read('assets/js/modules/GameEngine.js').includes('sendGAGameMilestone(sceneId)')) {
+  fail('assets/js/modules/GameEngine.js: progression milestone tracking is missing');
 }
 
 const noindexFiles = [

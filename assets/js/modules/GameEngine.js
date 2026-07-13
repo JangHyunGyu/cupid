@@ -934,6 +934,7 @@ class GameEngine {
 
         // GA4 가상 페이지뷰 전송 (SPA 보정)
         if (window.sendGAPageView) window.sendGAPageView(sceneId);
+        if (window.sendGAGameMilestone) window.sendGAGameMilestone(sceneId);
 
         // ─────────────────────────────────────────────────────────
         // 📝 호감도 기반 대사 분기
