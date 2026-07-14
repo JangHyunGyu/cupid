@@ -51,7 +51,7 @@ const AI_MODEL_ID = "deepseek-v4-flash";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.79";
+const ASSET_VERSION = "2.9.80";
 
 /**
  * 프리토킹(자유 대화) 기본 최대 턴 수
@@ -412,61 +412,152 @@ async function migrateCupidChatHistoryToD1() {
     }
 }
 
-// user/assistant 메시지 한 페어를 D1에 저장. 실패해도 게임 흐름 영향 없음.
-async function saveCupidChatLog({ charId, userContent, assistantContent, sessionId = '', context = '1:1', playerName: _pn }) {
-    if (!charId) return;
-    const userId = getCupidDeviceId();
-    const playerName = _pn || window.gameEngine?.stateManager?.playerName || '';
-    const language = getCupidLanguage();
-    const headers = { 'Content-Type': 'application/json', 'x-app-id': getCupidAppId() };
-    const post = async (role, content) => {
-        let lastError = null;
-        for (let attempt = 0; attempt < 2; attempt++) {
+const CUPID_CHAT_LOG_QUEUE_KEY = 'cupid_pending_chat_logs_v1';
+const CUPID_CHAT_LOG_QUEUE_LIMIT = 80;
+let cupidChatLogFlushPromise = null;
+
+function readCupidChatLogQueue() {
+    try {
+        const parsed = JSON.parse(localStorage.getItem(CUPID_CHAT_LOG_QUEUE_KEY) || '[]');
+        return Array.isArray(parsed) ? parsed.filter(entry => entry && entry.clientMsgId) : [];
+    } catch (_) {
+        try { localStorage.removeItem(CUPID_CHAT_LOG_QUEUE_KEY); } catch (_) {}
+        return [];
+    }
+}
+
+function writeCupidChatLogQueue(queue) {
+    try {
+        if (!queue.length) localStorage.removeItem(CUPID_CHAT_LOG_QUEUE_KEY);
+        else localStorage.setItem(CUPID_CHAT_LOG_QUEUE_KEY, JSON.stringify(queue.slice(-CUPID_CHAT_LOG_QUEUE_LIMIT)));
+        return true;
+    } catch (_) {
+        return false;
+    }
+}
+
+function enqueueCupidChatLog(entry) {
+    const queue = readCupidChatLogQueue();
+    if (!queue.some(item => item.clientMsgId === entry.clientMsgId)) queue.push(entry);
+    return writeCupidChatLogQueue(queue);
+}
+
+function makeCupidChatLogEntry({ userId, charId, sessionId, role, content, context, playerName, language, appId }) {
+    const createdAt = new Date().toISOString();
+    return {
+        userId,
+        charId,
+        sessionId,
+        role,
+        content,
+        context,
+        playerName,
+        language,
+        appId,
+        createdAt,
+        clientMsgId: `cupid-${Date.now().toString(36)}-${role.charAt(0)}-${Math.random().toString(36).slice(2, 10)}`
+    };
+}
+
+async function postCupidChatLogEntry(entry) {
+    const res = await fetch(API_ENDPOINT + 'chat-logs', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'x-app-id': entry.appId || getCupidAppId() },
+        body: JSON.stringify(entry),
+        credentials: 'omit',
+        cache: 'no-store',
+        keepalive: true
+    });
+    if (!res.ok) {
+        const error = new Error(`HTTP ${res.status}`);
+        error.cupidStatus = res.status;
+        throw error;
+    }
+    return res;
+}
+
+function isTransientCupidChatLogError(error) {
+    const status = Number(error?.cupidStatus || 0);
+    return !status || status === 408 || status === 429 || status >= 500;
+}
+
+async function flushCupidChatLogQueue() {
+    if (typeof navigator !== 'undefined' && navigator.onLine === false) return false;
+    if (cupidChatLogFlushPromise) return cupidChatLogFlushPromise;
+
+    cupidChatLogFlushPromise = (async () => {
+        let sent = 0;
+        while (typeof navigator === 'undefined' || navigator.onLine !== false) {
+            const queue = readCupidChatLogQueue();
+            const entry = queue[0];
+            if (!entry) break;
             try {
-                if (attempt > 0) await new Promise(resolve => setTimeout(resolve, 750));
-                const res = await fetch(API_ENDPOINT + 'chat-logs', {
-                    method: 'POST',
-                    headers,
-                    body: JSON.stringify({ userId, charId, sessionId, role, content, context, playerName, language }),
-                    credentials: 'omit',
-                    cache: 'no-store',
-                    keepalive: true
+                await postCupidChatLogEntry(entry);
+                const latestQueue = readCupidChatLogQueue();
+                writeCupidChatLogQueue(latestQueue.filter(item => item.clientMsgId !== entry.clientMsgId));
+                sent++;
+            } catch (error) {
+                if (isTransientCupidChatLogError(error)) {
+                    console.warn('[ChatLog] cupid pending queue retained:', error.message);
+                    break;
+                }
+                writeCupidChatLogQueue(queue.slice(1));
+                logCupidError(error, {
+                    source: 'flushCupidChatLogQueue',
+                    errorType: 'chat_log_queue_rejected',
+                    sessionId: entry.sessionId,
+                    context: { charId: entry.charId, role: entry.role, logContext: entry.context },
+                    extra: {
+                        contentLength: String(entry.content || '').length,
+                        contentHash: hashCupidLogText(entry.content),
+                        clientMsgId: entry.clientMsgId
+                    }
                 });
-                if (!res.ok) throw new Error(`HTTP ${res.status}`);
-                return res;
-            } catch (err) {
-                lastError = err;
-                if (navigator.onLine === false) break;
             }
         }
-        const err = lastError || new Error('Chat log request failed');
-        console.warn('[ChatLog] cupid 저장 실패:', err.message);
-        logCupidError(err, {
-            source: 'saveCupidChatLog',
-            errorType: 'chat_log_save_failed',
-            sessionId,
-            context: { charId, role, logContext: context },
-            extra: {
-                contentLength: String(content || '').length,
-                contentHash: hashCupidLogText(content)
+        return sent;
+    })().finally(() => {
+        cupidChatLogFlushPromise = null;
+    });
+    return cupidChatLogFlushPromise;
+}
+
+// user/assistant 메시지 한 페어를 D1에 저장. 전송 실패 시 오프라인 큐에서 복구한다.
+async function saveCupidChatLog({ charId, userContent, assistantContent, sessionId = '', context = '1:1', playerName: _pn }) {
+    if (!charId) return;
+    const shared = {
+        userId: getCupidDeviceId(),
+        charId,
+        sessionId,
+        context,
+        playerName: _pn || window.gameEngine?.stateManager?.playerName || '',
+        language: getCupidLanguage(),
+        appId: getCupidAppId()
+    };
+    const queueAndFlush = async (role, content) => {
+        const entry = makeCupidChatLogEntry({ ...shared, role, content });
+        if (enqueueCupidChatLog(entry)) {
+            await flushCupidChatLogQueue();
+            return;
+        }
+        if (navigator.onLine === false) return;
+        try {
+            await postCupidChatLogEntry(entry);
+        } catch (error) {
+            if (!isTransientCupidChatLogError(error)) {
+                logCupidError(error, {
+                    source: 'saveCupidChatLog',
+                    errorType: 'chat_log_direct_rejected',
+                    sessionId,
+                    context: { charId, role, logContext: context }
+                });
             }
-        });
-        return null;
+        }
     };
 
-    try {
-        // 순서 보장: user 먼저 저장 후 assistant 저장 (병렬 시 created_at/id 역전 방지)
-        if (userContent) await post('user', userContent);
-        if (assistantContent) await post('assistant', assistantContent);
-    } catch (e) {
-        console.warn('[ChatLog] cupid saveCupidChatLog 오류:', e.message);
-        reportCupidCaughtError(e, {
-            source: 'saveCupidChatLog',
-            errorType: 'chat_log_save_exception',
-            sessionId,
-            context: { charId, logContext: context }
-        });
-    }
+    // 순서 보장: user 먼저 저장 후 assistant 저장 (병렬 시 created_at/id 역전 방지)
+    if (userContent) await queueAndFlush('user', userContent);
+    if (assistantContent) await queueAndFlush('assistant', assistantContent);
 }
 
 // ============================================================================
@@ -628,6 +719,7 @@ window.getCupidAppId = getCupidAppId;
 window.uploadImageToR2 = uploadImageToR2;
 window.optimizeImageHistory = optimizeImageHistory;
 window.saveCupidChatLog = saveCupidChatLog;
+window.flushCupidChatLogQueue = flushCupidChatLogQueue;
 window.logCupidError = logCupidError;
 window.reportCupidCaughtError = reportCupidCaughtError;
 window.hashCupidLogText = hashCupidLogText;
@@ -637,10 +729,17 @@ window.migrateCupidChatHistoryToD1 = migrateCupidChatHistoryToD1;
 function _cupidMigrateOnLoad() {
     window.removeEventListener('load', _cupidMigrateOnLoad);
     setTimeout(() => {
+        try { flushCupidChatLogQueue(); } catch (_) {}
+    }, 1000);
+    setTimeout(() => {
         try { migrateCupidChatHistoryToD1(); } catch (_) {}
     }, 3000);
 }
+function _cupidFlushChatLogsOnOnline() {
+    try { flushCupidChatLogQueue(); } catch (_) {}
+}
 if (typeof window !== 'undefined') {
+    window.addEventListener('online', _cupidFlushChatLogsOnOnline);
     if (document.readyState === 'complete') {
         _cupidMigrateOnLoad();
     } else {

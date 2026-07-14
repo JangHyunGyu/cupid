@@ -591,6 +591,20 @@ try {
     const modulesConfigContent = fs.readFileSync(modulesConfigPath, 'utf8');
     const assetVersion = (modulesConfigContent.match(/ASSET_VERSION\s*=\s*(['"])([^'"]+)\1/) || [])[2];
 
+    const chatLogQueueMarkers = [
+        'CUPID_CHAT_LOG_QUEUE_KEY',
+        'clientMsgId:',
+        "window.addEventListener('online', _cupidFlushChatLogsOnOnline)"
+    ];
+    for (const marker of chatLogQueueMarkers) {
+        if (!modulesConfigContent.includes(marker)) {
+            errors.push('[CHAT_LOG_QUEUE] 오프라인 대화 로그 복구 마커 누락: ' + marker);
+        }
+    }
+    if (modulesConfigContent.includes("errorType: 'chat_log_save_failed'")) {
+        errors.push('[CHAT_LOG_QUEUE] 일시적 전송 실패를 D1 오류로 재보고하는 레거시 경로가 남아 있음');
+    }
+
     const versions = { 'loaders/config.js(LoaderConfig)': loaderVersion, 'game-loader.js': gameLoaderVersion, 'gallery-loader.js': galleryLoaderVersion, 'modules/config.js(ASSET_VERSION)': assetVersion };
     for (const [label, value] of Object.entries(versions)) {
         if (!value) errors.push('[VERSION_SYNC] JS version missing: ' + label);
