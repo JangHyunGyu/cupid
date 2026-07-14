@@ -591,6 +591,30 @@ try {
     const modulesConfigContent = fs.readFileSync(modulesConfigPath, 'utf8');
     const assetVersion = (modulesConfigContent.match(/ASSET_VERSION\s*=\s*(['"])([^'"]+)\1/) || [])[2];
 
+    const errorReporterContent = fs.readFileSync(path.join(__dirname, 'assets/js/error-reporter.js'), 'utf8');
+    const errorReporterVersion = (errorReporterContent.match(/var\s+VERSION\s*=\s*(['"])([^'"]+)\1/) || [])[2];
+    if (!errorReporterVersion) {
+        errors.push('[ERROR_REPORTER] 리포터 버전 누락');
+    }
+    if (!errorReporterContent.includes('ssl\\.pstatic\\.net\\/melona\\/libs\\/gfp-nac-module\\/synchronizer\\.js')) {
+        errors.push('[ERROR_REPORTER] 선택적 네이버 synchronizer 스크립트 필터 누락');
+    }
+    const seoDir = path.join(__dirname, 'seo');
+    const seoHtmlFiles = fs.readdirSync(seoDir).filter(file => file.endsWith('.html')).map(file => ({
+        name: `seo/${file}`,
+        content: fs.readFileSync(path.join(seoDir, file), 'utf8')
+    }));
+    for (const file of [...htmlFiles, ...seoHtmlFiles]) {
+        if (file.content.includes('error-reporter.js')
+            && !file.content.includes(`error-reporter.js?v=${errorReporterVersion}`)) {
+            errors.push('[ERROR_REPORTER] 버전 불일치: ' + file.name);
+        }
+    }
+    const seoGeneratorContent = fs.readFileSync(path.join(seoDir, '_generate.js'), 'utf8');
+    if (!seoGeneratorContent.includes(`error-reporter.js?v=${errorReporterVersion}`)) {
+        errors.push('[ERROR_REPORTER] seo/_generate.js 리포터 버전 불일치');
+    }
+
     const chatLogQueueMarkers = [
         'CUPID_CHAT_LOG_QUEUE_KEY',
         'clientMsgId:',
