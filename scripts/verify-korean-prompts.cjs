@@ -132,6 +132,8 @@ function assertCommonKoreanPrompt(prompt, label) {
         `${label} does not keep narration optional`);
     assert(prompt.includes('===CACHE_BOUNDARY==='), `${label} is missing the cache boundary`);
     assert(prompt.includes('현재 상태:'), `${label} is missing the Korean state label`);
+    assert(!prompt.includes('[현재 진행 상황]') && !prompt.includes('; 턴='),
+        `${label} still exposes a turn budget to the roleplay model`);
     assert(!prompt.includes('유저'), `${label} still mixes the loanword 유저 into Korean instructions`);
     assert(!prompt.includes('<START>'), `${label} still contains the English example delimiter`);
     assert(!prompt.includes('{{user}}') && !prompt.includes('{{char}}'),
@@ -174,7 +176,6 @@ function verifyMainAndGalleryPrompts(context) {
             mediumInstruction: '',
             isRemote: false,
             promptData,
-            currentMaxTurns: 3,
             playerName: '민준',
             knowsName: true,
             datingGuideline: ''
@@ -213,7 +214,6 @@ function verifyMainAndGalleryPrompts(context) {
         mediumInstruction: '',
         isRemote: false,
         promptData,
-        currentMaxTurns: 99,
         playerName: 'CACHE_DYNAMIC_USER',
         knowsName: false,
         datingGuideline: 'CACHE_DYNAMIC_RELATIONSHIP'
@@ -221,15 +221,17 @@ function verifyMainAndGalleryPrompts(context) {
     const mainBaseParts = splitCacheBoundary(mainPrompts.Seoyeon, 'main cache baseline');
     const mainVariantParts = splitCacheBoundary(mainDynamicVariant, 'main cache dynamic variant');
     assert(mainBaseParts.stable === mainVariantParts.stable,
-        'main stable cache prefix changes with live scene, affinity, memory, relationship, turn, or player state');
+        'main stable cache prefix changes with live scene, affinity, memory, relationship, or player state');
     for (const signal of [
         'CACHE_DYNAMIC_ROOM', 'CACHE_DYNAMIC_CONTEXT', 'CACHE_DYNAMIC_SCENE',
         'CACHE_DYNAMIC_MEMORY', 'CACHE_DYNAMIC_SOCIAL', 'CACHE_DYNAMIC_USER',
-        'CACHE_DYNAMIC_RELATIONSHIP', '-77', '99'
+        'CACHE_DYNAMIC_RELATIONSHIP', '-77'
     ]) {
         assert(!mainVariantParts.stable.includes(signal), `main stable cache prefix leaked dynamic value: ${signal}`);
         assert(mainVariantParts.dynamic.includes(signal), `main dynamic cache suffix lost value: ${signal}`);
     }
+    assert(!mainDynamicVariant.includes('턴=') && !mainDynamicVariant.includes('[현재 진행 상황]'),
+        'main prompt still exposes a turn budget to the roleplay model');
     assert(mainBaseParts.stable.includes('호칭:') && mainBaseParts.stable.includes('거리와 상호작용:'),
         'main static character guidance is not promoted ahead of the cache boundary');
     assert(getRuntimeStableHash(context, 'getFreeTalkStablePromptHash', mainPrompts.Seoyeon)
@@ -238,6 +240,28 @@ function verifyMainAndGalleryPrompts(context) {
     assert(getRuntimeStableHash(context, 'getFreeTalkStablePromptHash', mainPrompts.Seoyeon)
         !== getRuntimeStableHash(context, 'getFreeTalkStablePromptHash', mainPrompts.Yuna),
         'main stable prompt hash does not separate character identities');
+    const mainRemotePrompt = context.window.buildSystemPrompt({
+        isEn: false,
+        lang: 'ko',
+        sceneName: '서연',
+        displayName: '서연',
+        locationName: '메신저',
+        context: '주인공이 메시지를 보냈다.',
+        affinity: 45,
+        extraGuideline: '',
+        gameContext: '',
+        socialContext: '',
+        mediumInstruction: '메신저로 대화 중입니다.',
+        isRemote: true,
+        promptData,
+        playerName: '민준',
+        knowsName: true,
+        datingGuideline: ''
+    });
+    assert(mainRemotePrompt.includes('길이와 호흡은 캐릭터와 순간을 따르며'),
+        'main remote prompt does not preserve scene-paced response length');
+    assert(!mainRemotePrompt.includes('대사를 짧게 쓰고 꼭 필요한 지문만 붙이세요'),
+        'main remote prompt still forces terse dialogue and narration');
 
     galleryPlayerName = 'CACHE_DYNAMIC_GALLERY_USER';
     const galleryDynamicVariant = gallery._buildSystemPrompt('seyoun');
@@ -254,6 +278,13 @@ function verifyMainAndGalleryPrompts(context) {
     assert(getRuntimeStableHash(context, 'getGalleryFreeTalkStablePromptHash', galleryPrompts.Seoyeon)
         === getRuntimeStableHash(context, 'getGalleryFreeTalkStablePromptHash', galleryDynamicVariant),
         'gallery stable prompt hash changes with the player name');
+
+    galleryPlayerName = '';
+    const galleryUnnamedPrompt = gallery._buildSystemPrompt('seyoun');
+    assert(galleryUnnamedPrompt.includes('사용자=상대'),
+        'gallery unnamed-user state lost its neutral fallback');
+    assert(!/(?:Honey|Cariño|Chéri\(e\)|Liebling|Amor)/.test(galleryUnnamedPrompt),
+        'gallery unnamed-user state still injects a stock pet name');
     assert(getRuntimeStableHash(context, 'getGalleryFreeTalkStablePromptHash', galleryPrompts.Seoyeon)
         !== getRuntimeStableHash(context, 'getGalleryFreeTalkStablePromptHash', galleryPrompts.Yuna),
         'gallery stable prompt hash does not separate character identities');

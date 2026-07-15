@@ -587,7 +587,6 @@ class FreeTalkSystem {
             mediumInstruction,
             isRemote,
             promptData,
-            currentMaxTurns: this.currentMaxTurns,
             playerName: this.stateManager.playerName,
             knowsName,
             datingGuideline
@@ -846,16 +845,6 @@ class FreeTalkSystem {
         this.uiManager.resizeChatInput?.();
         this.freeTalkTurns++;
         if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
-
-        // 진행 상황 업데이트
-        if (requestHistory.length > 0 && requestHistory[0].role === "system") {
-            const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
-            const remaining = this.currentMaxTurns - this.freeTalkTurns;
-            const progressTag = { es: `\n[Progreso del escenario]: ${this.freeTalkTurns}/${this.currentMaxTurns} turnos. ${remaining} restantes.`, ja: `\n[シナリオ進行度]: ${this.freeTalkTurns}/${this.currentMaxTurns}ターン。残り${remaining}ターン。`, en: `\n[CURRENT_PROGRESS]: ${this.freeTalkTurns}/${this.currentMaxTurns} turns. ${remaining} remaining.`, fr: `\n[Progression du scénario] : ${this.freeTalkTurns}/${this.currentMaxTurns} tours. ${remaining} restants.`, de: `\n[Szenariofortschritt]: ${this.freeTalkTurns}/${this.currentMaxTurns} Runden. ${remaining} übrig.`, pt: `\n[Progresso do cenário]: ${this.freeTalkTurns}/${this.currentMaxTurns} turnos. ${remaining} restantes.` }[lang] || `\n[현재 진행 상황]: ${this.freeTalkTurns}/${this.currentMaxTurns}턴. ${remaining}턴 남음.`;
-
-            const baseContent = requestHistory[0].content.split('\n[CURRENT_PROGRESS]')[0].split('\n[현재 진행 상황]')[0].split('\n[Progreso del escenario]')[0].split('\n[シナリオ進行度]')[0].split('\n[Progression du scénario]')[0].split('\n[Szenariofortschritt]')[0].split('\n[Progresso do cenário]')[0];
-            requestHistory[0].content = appendFreeTalkDynamicContext(baseContent, progressTag);
-        }
 
         // 사용자 메시지 표시
         const playerLabelByLang = { en: "Me", es: "Yo", ja: "僕", fr: "Moi", de: "Ich", pt: "Eu" };

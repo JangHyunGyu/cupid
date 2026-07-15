@@ -979,7 +979,6 @@ function buildSystemPrompt(params) {
         mediumInstruction,
         isRemote,
         promptData,
-        currentMaxTurns,
         playerName,
         knowsName,
         datingGuideline
@@ -1059,14 +1058,14 @@ function buildSystemPrompt(params) {
     ]).filter(Boolean).join("\n");
     const compactSceneMode = useEnTemplate
         ? (isRemote
-            ? "Remote/messenger input is still in-world; use compact dialogue and only helpful narration."
+            ? "Remote/messenger input is still in-world. Let length and rhythm follow the character and moment, and react only through speech, sounds, or content the other person can receive through that medium."
             : "Face-to-face input is already an in-scene line, action, silence, correction, or cue.")
         : (isRemote
-            ? "전화나 메신저 대화도 세계 안에서 벌어집니다. 대사를 짧게 쓰고 꼭 필요한 지문만 붙이세요."
+            ? "전화나 메신저 대화도 세계 안에서 벌어집니다. 길이와 호흡은 캐릭터와 순간을 따르며, 상대가 그 매체로 알 수 있는 말·소리·전송된 내용 안에서 반응하세요."
             : "대면 입력은 이미 장면 안에서 나온 말, 행동, 침묵, 정정, 단서 가운데 하나입니다.");
     const compactLiveState = useEnTemplate
-        ? `State: place=${locationName || 'current scene'}; user=${playerName || 'the user'}; knowsName=${knowsName ? 'yes' : 'no'}; affinity=${affinity}; turns=${currentMaxTurns || 'scene-paced'}\nContext: ${context}`
-        : `현재 상태: 장소=${locationName || '현재 장면'}; 사용자=${playerName || '주인공'}; 이름 인지=${knowsName ? '예' : '아니요'}; 호감도=${affinity}; 턴=${currentMaxTurns || '장면 흐름에 맞춤'}\n장면 맥락: ${context}`;
+        ? `State: place=${locationName || 'current scene'}; user=${playerName || 'the user'}; knowsName=${knowsName ? 'yes' : 'no'}; affinity=${affinity}\nContext: ${context}`
+        : `현재 상태: 장소=${locationName || '현재 장면'}; 사용자=${playerName || '주인공'}; 이름 인지=${knowsName ? '예' : '아니요'}; 호감도=${affinity}\n장면 맥락: ${context}`;
     if (useEnTemplate) {
         return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Cupid 1:1 scene with ${aiCharName}; no third parties except ${aiCharName}'s reaction to a mention.
 Character: ${charPersonality}
@@ -1128,5 +1127,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 };
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.25';
+const PROMPT_VERSION = '2.7.26';
 window.PROMPT_VERSION = PROMPT_VERSION;
