@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.23';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.24';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function normalizeGalleryPromptBlockForCache(content) {
@@ -535,7 +535,7 @@ class GalleryFreeTalk {
 
     _getNativeStylePolishGuard(charId) {
         const englishCharacterLines = {
-            seyoun: `- Seoyeon: precise, dry, and composed. Use "Honey" only when intimacy genuinely calls for it; otherwise use the name or a clean teasing line. Avoid melodramatic metaphors for her feelings.`,
+            seyoun: `- Seoyeon: precise, dry, and composed. Let terms of address follow the immediate intimacy and her dry voice; otherwise use the saved name when present, a clean teasing line, or no direct address. Never invent a name. Avoid melodramatic metaphors for her feelings.`,
             yuna: `- Yuna: spare, quiet, and eerie without becoming fantasy-poetic. Do not force "light/shadow/fate" into every line. Silence and short phrasing are stronger than ornate prose.`,
             dain: `- Dain: energetic, direct, sporty, and casual. Use "dummy" or "silly" sparingly as affection. Avoid anime catchphrases, all-caps screaming, and cartoonish onomatopoeia spam.`,
             teacher: `- Former teacher: adult, dry, and quietly warm. Let dry wit and short slips of vulnerability carry the scene. Avoid preachy teacher monologues or overly flowery romance narration.`,
@@ -543,15 +543,15 @@ class GalleryFreeTalk {
         };
 
         const japaneseCharacterLines = {
-            seyoun: `- ソヨン: 一人称は「私」。恋人同士でも基本は落ち着いたタメ口。呼び方は名前、「君」、親密な場面の「あなた」を使い分ける。「あなた」を毎回使うと硬くなるので多用しない。`,
-            yuna: `- ユナ: 一人称は「私」。短く静かなタメ口。呼び方は「君」または名前。神秘的でも古語・中二病・翻訳調に寄せすぎず、「光」「影」「運命」は一返答に一つまでを目安にする。`,
-            dain: `- ダイン: 一人称は「私」。元気な幼なじみのくだけたタメ口。呼び方は名前、名前+「！」、「バカ」を愛称としてたまに使う。「マジマジ」より「マジで」「え、ほんとに」「ちょっと」など自然な現代口語を使う。`,
-            teacher: `- 元先生: 一人称は「私」。落ち着いた大人の日本語。卒業後の恋人なので「生徒さん」は使わず、名前、「君」、親密な場面の「あなた」を使い分ける。敬語が崩れる時は短く自然に。`,
-            nurse: `- 保健先生: 一人称は「私」。余裕のある大人のタメ口寄り。呼び方は名前+「くん」、「君」、「うちの患者さん」などを軽く使う。「ふふ」は効かせ所だけにする。`
+            seyoun: `- ソヨン: 一人称は「私」。恋人同士でも基本は落ち着いたタメ口。保存された名前がある時だけその名前を使い、名前がなければ「君」、親密な場面の「あなた」、または呼びかけなしを使い分ける。「あなた」を毎回使うと硬くなるので多用しない。名前を作らない。`,
+            yuna: `- ユナ: 一人称は「私」。短く静かなタメ口。保存された名前があればその名前、なければ「君」か呼びかけなしにする。神秘的でも古語・中二病・翻訳調に寄せすぎず、「光」「影」「運命」は一返答に一つまでを目安にする。`,
+            dain: `- ダイン: 一人称は「私」。元気な幼なじみのくだけたタメ口。保存された名前がある時だけ名前や名前+「！」を使い、名前がなければ呼びかけを省くか「バカ」を愛称としてたまに使う。「マジマジ」より「マジで」「え、ほんとに」「ちょっと」など自然な現代口語を使う。`,
+            teacher: `- 元先生: 一人称は「私」。落ち着いた大人の日本語。卒業後の恋人なので「生徒さん」は使わず、保存された名前があればその名前、なければ「君」、親密な場面の「あなた」、または呼びかけなしを使い分ける。敬語が崩れる時は短く自然に。`,
+            nurse: `- 保健先生: 一人称は「私」。余裕のある大人のタメ口寄り。保存された名前がある時だけ名前+「くん」を使い、名前がなければ「君」、「うちの患者さん」、または呼びかけなしを軽く使う。「ふふ」は効かせ所だけにする。`
         };
 
         const spanishCharacterLines = {
-            seyoun: `- Seoyeon: precisa, seca y serena incluso como novia. Usa el nombre o un cariño solo cuando la intimidad lo justifique; evita melodrama y frases demasiado novelescas.`,
+            seyoun: `- Seoyeon: precisa, seca y serena incluso como novia. Usa el nombre solo si aparece guardado en el estado; si no, omite el vocativo o usa un trato natural, sin inventar un nombre. Reserva los cariños para cuando la intimidad los justifique; evita melodrama y frases demasiado novelescas.`,
             yuna: `- Yuna: breve, callada y misteriosa sin sonar a fantasía exagerada. No fuerces "luz/sombra/destino" en cada línea; una imagen fuerte basta.`,
             dain: `- Dain: enérgica, deportiva y directa. Usa "tonto" o "bobo" como cariño solo de vez en cuando; evita gritos tipo anime, exceso de signos y onomatopeyas infantiles.`,
             teacher: `- Exprofesora: adulta, seca y discretamente cálida. Ya son adultos y pareja; no la hagas sonar como si estuviera dando clase ni como si siguiera en modo escuela.`,
@@ -559,7 +559,7 @@ class GalleryFreeTalk {
         };
 
         const frenchCharacterLines = {
-            seyoun: `- Seoyeon : précise, sèche et posée même en couple. Utilise le prénom ou un mot tendre seulement quand l'intimité le justifie ; évite le mélodrame et les métaphores trop littéraires.`,
+            seyoun: `- Seoyeon : précise, sèche et posée même en couple. Utilise le prénom seulement s'il est enregistré dans l'état ; sinon, omets l'adresse directe ou choisis un pronom naturel sans inventer de prénom. Réserve les mots tendres aux moments où l'intimité les justifie ; évite le mélodrame et les métaphores trop littéraires.`,
             yuna: `- Yuna : brève, calme et étrange sans devenir fantasy. Ne force pas "lumière/ombre/destin" à chaque ligne ; une image forte suffit.`,
             dain: `- Dain : énergique, sportive et directe. Utilise "idiot" ou "bêta" comme taquinerie affectueuse avec parcimonie ; évite les cris d'anime et les onomatopées enfantines.`,
             teacher: `- Ancienne professeure : adulte, sèche et discrètement chaleureuse. Vous êtes adultes et en couple ; ne la fais pas parler comme si elle donnait encore cours.`,
@@ -567,7 +567,7 @@ class GalleryFreeTalk {
         };
 
         const germanCharacterLines = {
-            seyoun: `- Seoyeon: präzise, trocken und gefasst, auch als Partnerin. Nutze den Namen oder einen Kosenamen nur, wenn die Nähe es wirklich trägt; vermeide Melodrama und zu literarische Metaphern.`,
+            seyoun: `- Seoyeon: präzise, trocken und gefasst, auch als Partnerin. Nutze den Namen nur, wenn er im Status gespeichert ist; sonst verwende eine natürliche Anrede oder keine direkte Anrede und erfinde keinen Namen. Kosenamen passen nur, wenn die Nähe sie wirklich trägt; vermeide Melodrama und zu literarische Metaphern.`,
             yuna: `- Yuna: knapp, still und unheimlich, ohne fantasyhaft zu werden. Erzwinge nicht in jeder Zeile "Licht/Schatten/Schicksal"; ein starkes Bild reicht.`,
             dain: `- Dain: energiegeladen, sportlich und direkt. Nutze "Idiot" oder "Dummkopf" als liebevolle Neckerei nur sparsam; vermeide Anime-Schreie, Capslock und kindische Lautmalerei.`,
             teacher: `- Ehemalige Lehrerin: erwachsen, trocken und leise warm. Ihr seid Erwachsene und ein Paar; lass sie nicht klingen, als würde sie noch Unterricht halten.`,
@@ -575,7 +575,7 @@ class GalleryFreeTalk {
         };
 
         const portugueseCharacterLines = {
-            seyoun: `- Seoyeon: precisa, seca e composta mesmo como namorada. Use o nome ou um carinho só quando a intimidade pedir; evite melodrama e metáforas literárias demais.`,
+            seyoun: `- Seoyeon: precisa, seca e composta mesmo como namorada. Use o nome apenas se estiver salvo no estado; se não estiver, omita o vocativo ou use um tratamento natural sem inventar nome. Reserve carinhos para quando a intimidade pedir; evite melodrama e metáforas literárias demais.`,
             yuna: `- Yuna: breve, quieta e misteriosa sem virar fantasia exagerada. Não force "luz/sombra/destino" em toda fala; uma imagem forte já basta.`,
             dain: `- Dain: energética, esportiva e direta. Use "bobo" ou "tonto" como carinho só de vez em quando; evite gritos de anime, caps lock e onomatopeias infantis.`,
             teacher: `- Ex-professora: adulta, seca e discretamente carinhosa. Vocês são adultos e namoram; não faça ela soar como se ainda estivesse dando aula.`,
@@ -1918,8 +1918,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const location = this.CHAR_LOCATIONS[charId]?.[this.lang] || '';
         const personality = this.CHAR_PERSONALITIES[charId]?.[this.lang] || '';
         const datingPrompt = this.CHAR_DATING_PROMPTS[charId]?.[this.lang] || '';
-        // 플레이어 이름
-        const playerName = this.progress.getPlayerName() || this._L('자기', 'Honey', 'Cariño', 'あなた', 'Chéri(e)', 'Liebling', 'Amor');
+        // 이름이 비어 있을 때 애칭을 이름처럼 주입하지 않는다.
+        const playerName = String(this.progress.getPlayerName() || '').trim();
 
         const validExprs = this.CHAR_EXPRESSIONS[charId] || [];
 
@@ -1947,8 +1947,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         ]).filter(Boolean).join("\n");
         const compactGalleryExpressions = validExprs.join(', ') || 'normal';
         const compactGalleryState = isEn
-            ? `State: place=${location || 'current gallery scene'}; user=${playerName}; language=${langName}`
-            : `현재 상태: 장소=${location || '현재 갤러리 장면'}; 사용자=${playerName}; 언어=한국어`;
+            ? `State: place=${location || 'current gallery scene'}; user=${playerName || 'the user'}; language=${langName}`
+            : `현재 상태: 장소=${location || '현재 갤러리 장면'}; 사용자=${playerName || '상대'}; 언어=한국어`;
         if (isEn) {
             return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Cupid gallery free-talk: ${charName} with their post-graduation adult partner; not a current school scene.
 Character: ${personality}

@@ -638,8 +638,8 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.84') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.84이 아님: ' + loaderVersion);
+    if (loaderVersion !== '2.9.85') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.85이 아님: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');
@@ -651,8 +651,8 @@ try {
         }
     }
     const swContent = fs.readFileSync(path.join(__dirname, 'service-worker.js'), 'utf8');
-    if (!swContent.includes("const CACHE_VERSION = 'cupid-v3.3.44'")) {
-        errors.push('[VERSION_SYNC] service-worker 캐시 버전이 cupid-v3.3.44이 아님');
+    if (!swContent.includes("const CACHE_VERSION = 'cupid-v3.3.45'")) {
+        errors.push('[VERSION_SYNC] service-worker 캐시 버전이 cupid-v3.3.45이 아님');
     }
 } catch (e) {
     warnings.push('[VERSION_SYNC] 버전 파일 읽기 실패: ' + e.message);
@@ -1692,11 +1692,11 @@ try {
     const activePromptSources = [promptsContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
-    if (promptVersion !== '2.7.25') {
-        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.25이 아님: ' + promptVersion);
+    if (promptVersion !== '2.7.26') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.26이 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.23') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.23이 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.24') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.24이 아님: ' + galleryPromptVersion);
     }
     for (const removedSymbol of [
         'CHAR_SPEECH_STYLES',
@@ -1734,6 +1734,32 @@ try {
         if (activePromptSources.includes(removedPhrase)) {
             errors.push('[FREETALK_PROMPT] 제거한 편집/강제 축약 압박이 남아 있음: ' + removedPhrase);
         }
+    }
+    for (const removedTurnPressure of [
+        '[CURRENT_PROGRESS]',
+        '[현재 진행 상황]',
+        '[Progreso del escenario]',
+        '[シナリオ進行度]',
+        '[Progression du scénario]',
+        '[Szenariofortschritt]',
+        '[Progresso do cenário]',
+        '; turns=',
+        '; 턴=',
+        'use compact dialogue and only helpful narration',
+        '대사를 짧게 쓰고 꼭 필요한 지문만 붙이세요'
+    ]) {
+        if (activePromptSources.includes(removedTurnPressure)) {
+            errors.push('[FREETALK_PROMPT] 제거한 턴 예산/강제 축약 압박이 남아 있음: ' + removedTurnPressure);
+        }
+    }
+    const galleryPromptBuilderStart = gftContent.indexOf('    _buildSystemPrompt(charId) {');
+    const galleryPromptBuilderEnd = gftContent.indexOf('_sanitizeDainOutfitHistory', galleryPromptBuilderStart);
+    const galleryPromptBuilder = galleryPromptBuilderStart >= 0 && galleryPromptBuilderEnd > galleryPromptBuilderStart
+        ? gftContent.slice(galleryPromptBuilderStart, galleryPromptBuilderEnd)
+        : '';
+    if (!galleryPromptBuilder.includes("const playerName = String(this.progress.getPlayerName() || '').trim();")
+        || /Honey|Cariño|Chéri\(e\)|Liebling|Amor/.test(galleryPromptBuilder)) {
+        errors.push('[FREETALK_PROMPT] 갤러리 system prompt가 빈 이름을 고정 애칭으로 주입함');
     }
     for (const fakeCharacterFailure of [
         '응답을 이해할 수 없습니다. 다시 시도하겠습니다.',

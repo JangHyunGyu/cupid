@@ -27,6 +27,14 @@ for (const relativePath of [
 context.FLAG_MEMORIES = context.window.FLAG_MEMORIES;
 
 const languages = ['en', 'es', 'ja', 'fr', 'de', 'pt'];
+const unnamedPlayerGuardByLanguage = {
+    en: 'saved name when present',
+    es: 'nombre solo si aparece guardado',
+    ja: '保存された名前がある時だけ',
+    fr: "prénom seulement s'il est enregistré",
+    de: 'Namen nur, wenn er im Status gespeichert ist',
+    pt: 'nome apenas se estiver salvo'
+};
 const characters = ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse'];
 const promptKeys = {
     Seoyeon: 'Seoyeon',
@@ -196,7 +204,6 @@ for (const lang of languages) {
             mediumInstruction: '',
             isRemote: false,
             promptData: data,
-            currentMaxTurns: 3,
             playerName: 'Alex',
             knowsName: true,
             datingGuideline: ''
@@ -208,6 +215,8 @@ for (const lang of languages) {
         assert(systemPrompt.includes('A dialogue-only reply is normal; add narration only'),
             `[${lang}/${char}] main prompt does not keep narration optional`);
         assertNoEditorPressure(systemPrompt, `[${lang}/${char}] main prompt`);
+        assert(!systemPrompt.includes('[CURRENT_PROGRESS]') && !systemPrompt.includes('; turns='),
+            `[${lang}/${char}] main prompt still exposes a turn budget`);
         if (char === 'Seoyeon') mainCacheBaseline = systemPrompt;
     }
 
@@ -225,7 +234,6 @@ for (const lang of languages) {
         mediumInstruction: '',
         isRemote: false,
         promptData: data,
-        currentMaxTurns: 99,
         playerName: 'CACHE_DYNAMIC_USER',
         knowsName: false,
         datingGuideline: 'CACHE_DYNAMIC_RELATIONSHIP'
@@ -239,7 +247,7 @@ for (const lang of languages) {
     for (const signal of [
         'CACHE_DYNAMIC_ROOM', 'CACHE_DYNAMIC_CONTEXT', 'CACHE_DYNAMIC_SCENE',
         'CACHE_DYNAMIC_MEMORY', 'CACHE_DYNAMIC_SOCIAL', 'CACHE_DYNAMIC_USER',
-        'CACHE_DYNAMIC_RELATIONSHIP', '-77', '99'
+        'CACHE_DYNAMIC_RELATIONSHIP', '-77'
     ]) {
         assert(!mainVariantParts.stable.includes(signal), `[${lang}] main stable prefix leaked: ${signal}`);
         assert(mainVariantParts.dynamic.includes(signal), `[${lang}] main dynamic suffix lost: ${signal}`);
@@ -247,6 +255,28 @@ for (const lang of languages) {
     assert(getRuntimeStableHash('getFreeTalkStablePromptHash', mainCacheBaseline)
         === getRuntimeStableHash('getFreeTalkStablePromptHash', mainDynamicVariant),
         `[${lang}] main stable prompt hash changes with live state`);
+    const mainRemotePrompt = context.window.buildSystemPrompt({
+        isEn: true,
+        lang,
+        sceneName: 'Seoyeon',
+        displayName: 'Seoyeon',
+        locationName: 'Messenger',
+        context: 'The user sent a message.',
+        affinity: 45,
+        extraGuideline: '',
+        gameContext: '',
+        socialContext: '',
+        mediumInstruction: 'Remote conversation.',
+        isRemote: true,
+        promptData: data,
+        playerName: 'Alex',
+        knowsName: true,
+        datingGuideline: ''
+    });
+    assert(mainRemotePrompt.includes('Let length and rhythm follow the character and moment'),
+        `[${lang}] main remote prompt does not preserve scene-paced response length`);
+    assert(!mainRemotePrompt.includes('use compact dialogue and only helpful narration'),
+        `[${lang}] main remote prompt still forces terse dialogue and narration`);
 
     const gallery = new context.window.GalleryFreeTalk(lang, progress);
     let galleryCacheBaseline = '';
@@ -281,6 +311,15 @@ for (const lang of languages) {
     assert(getRuntimeStableHash('getGalleryFreeTalkStablePromptHash', galleryCacheBaseline)
         === getRuntimeStableHash('getGalleryFreeTalkStablePromptHash', galleryDynamicVariant),
         `[${lang}] gallery stable prompt hash changes with the player name`);
+
+    galleryPlayerName = '';
+    const galleryUnnamedPrompt = gallery._buildSystemPrompt('seyoun');
+    assert(galleryUnnamedPrompt.includes('user=the user'),
+        `[${lang}] gallery unnamed-user state lost its neutral fallback`);
+    assert(galleryUnnamedPrompt.includes(unnamedPlayerGuardByLanguage[lang]),
+        `[${lang}] gallery prompt does not condition name use on a saved player name`);
+    assert(!/(?:Honey|Cariño|Chéri\(e\)|Liebling|Amor)/.test(galleryUnnamedPrompt),
+        `[${lang}] gallery unnamed-user state still injects a stock pet name`);
 
     if (lang === 'pt') {
         const activePortuguesePromptData = [
