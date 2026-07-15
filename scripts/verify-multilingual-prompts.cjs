@@ -16,10 +16,15 @@ const context = {
 context.globalThis = context;
 vm.createContext(context);
 
-for (const relativePath of ['assets/js/prompts.js', 'assets/js/gallery-freetalk.js']) {
+for (const relativePath of [
+    'assets/js/prompts.js',
+    'assets/js/gallery-freetalk.js',
+    'assets/js/modules/FreeTalkSystem.js'
+]) {
     const source = fs.readFileSync(path.join(root, relativePath), 'utf8');
     vm.runInContext(source, context, { filename: relativePath });
 }
+context.FLAG_MEMORIES = context.window.FLAG_MEMORIES;
 
 const languages = ['en', 'es', 'ja', 'fr', 'de', 'pt'];
 const characters = ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse'];
@@ -92,6 +97,21 @@ function assertNoEditorPressure(prompt, label) {
     }
 }
 
+function splitCacheBoundary(prompt, label) {
+    const marker = '===CACHE_BOUNDARY===';
+    const first = prompt.indexOf(marker);
+    assert(first >= 0, `${label} is missing the cache boundary`);
+    assert(first === prompt.lastIndexOf(marker), `${label} has more than one cache boundary`);
+    return {
+        stable: prompt.slice(0, first).trim(),
+        dynamic: prompt.slice(first + marker.length).trim()
+    };
+}
+
+function getRuntimeStableHash(functionName, prompt) {
+    return vm.runInContext(`${functionName}(${JSON.stringify(prompt)})`, context);
+}
+
 function verifyLocalizedFreeTalkInventory() {
     const scenarioContext = { SCENARIO: {}, console };
     vm.createContext(scenarioContext);
@@ -140,14 +160,17 @@ function verifyLocalizedFreeTalkInventory() {
     }
 }
 
+let galleryPlayerName = 'Alex';
 const progress = {
-    getPlayerName: () => 'Alex',
+    getPlayerName: () => galleryPlayerName,
     isFreeTalkUnlocked: () => false
 };
 
 for (const lang of languages) {
+    galleryPlayerName = 'Alex';
     const data = context.window.getPromptData(lang, 'Alex');
     assert(data && typeof data === 'object', `[${lang}] getPromptData returned no data`);
+    let mainCacheBaseline = '';
 
     for (const char of characters) {
         const key = promptKeys[char];
@@ -185,9 +208,48 @@ for (const lang of languages) {
         assert(systemPrompt.includes('A dialogue-only reply is normal; add narration only'),
             `[${lang}/${char}] main prompt does not keep narration optional`);
         assertNoEditorPressure(systemPrompt, `[${lang}/${char}] main prompt`);
+        if (char === 'Seoyeon') mainCacheBaseline = systemPrompt;
     }
 
+    const mainDynamicVariant = context.window.buildSystemPrompt({
+        isEn: true,
+        lang,
+        sceneName: 'Seoyeon',
+        displayName: 'Seoyeon',
+        locationName: 'CACHE_DYNAMIC_ROOM',
+        context: 'CACHE_DYNAMIC_CONTEXT',
+        affinity: -77,
+        extraGuideline: 'CACHE_DYNAMIC_SCENE',
+        gameContext: 'CACHE_DYNAMIC_MEMORY',
+        socialContext: 'CACHE_DYNAMIC_SOCIAL',
+        mediumInstruction: '',
+        isRemote: false,
+        promptData: data,
+        currentMaxTurns: 99,
+        playerName: 'CACHE_DYNAMIC_USER',
+        knowsName: false,
+        datingGuideline: 'CACHE_DYNAMIC_RELATIONSHIP'
+    });
+    const mainBaseParts = splitCacheBoundary(mainCacheBaseline, `[${lang}] main cache baseline`);
+    const mainVariantParts = splitCacheBoundary(mainDynamicVariant, `[${lang}] main cache dynamic variant`);
+    assert(mainBaseParts.stable === mainVariantParts.stable,
+        `[${lang}] main stable cache prefix changes with live state`);
+    assert(mainBaseParts.stable.includes('Addressing:') && mainBaseParts.stable.includes('Distance/interaction:'),
+        `[${lang}] main static character guidance is not ahead of the cache boundary`);
+    for (const signal of [
+        'CACHE_DYNAMIC_ROOM', 'CACHE_DYNAMIC_CONTEXT', 'CACHE_DYNAMIC_SCENE',
+        'CACHE_DYNAMIC_MEMORY', 'CACHE_DYNAMIC_SOCIAL', 'CACHE_DYNAMIC_USER',
+        'CACHE_DYNAMIC_RELATIONSHIP', '-77', '99'
+    ]) {
+        assert(!mainVariantParts.stable.includes(signal), `[${lang}] main stable prefix leaked: ${signal}`);
+        assert(mainVariantParts.dynamic.includes(signal), `[${lang}] main dynamic suffix lost: ${signal}`);
+    }
+    assert(getRuntimeStableHash('getFreeTalkStablePromptHash', mainCacheBaseline)
+        === getRuntimeStableHash('getFreeTalkStablePromptHash', mainDynamicVariant),
+        `[${lang}] main stable prompt hash changes with live state`);
+
     const gallery = new context.window.GalleryFreeTalk(lang, progress);
+    let galleryCacheBaseline = '';
     for (const char of characters) {
         const id = galleryIds[char];
         assert(gallery.CHAR_PERSONALITIES[id]?.[lang], `[${lang}/${char}] missing gallery personality`);
@@ -201,7 +263,24 @@ for (const lang of languages) {
             `[${lang}/${char}] gallery prompt does not keep narration optional`);
         assertNoEditorPressure(systemPrompt, `[${lang}/${char}] gallery prompt`);
         assert(languageSignals[lang].test(systemPrompt), `[${lang}/${char}] gallery prompt lacks target-language anchors`);
+        if (char === 'Seoyeon') galleryCacheBaseline = systemPrompt;
     }
+
+    galleryPlayerName = `CACHE_DYNAMIC_GALLERY_USER_${lang}`;
+    const galleryDynamicVariant = gallery._buildSystemPrompt('seyoun');
+    const galleryBaseParts = splitCacheBoundary(galleryCacheBaseline, `[${lang}] gallery cache baseline`);
+    const galleryVariantParts = splitCacheBoundary(galleryDynamicVariant, `[${lang}] gallery cache dynamic variant`);
+    assert(galleryBaseParts.stable === galleryVariantParts.stable,
+        `[${lang}] gallery stable cache prefix changes with the player name`);
+    assert(!galleryBaseParts.stable.includes('Alex')
+        && !galleryVariantParts.stable.includes(`CACHE_DYNAMIC_GALLERY_USER_${lang}`),
+        `[${lang}] gallery stable cache prefix contains a player identity`);
+    assert(galleryBaseParts.dynamic.includes('Alex')
+        && galleryVariantParts.dynamic.includes(`CACHE_DYNAMIC_GALLERY_USER_${lang}`),
+        `[${lang}] gallery dynamic cache suffix lost the player identity`);
+    assert(getRuntimeStableHash('getGalleryFreeTalkStablePromptHash', galleryCacheBaseline)
+        === getRuntimeStableHash('getGalleryFreeTalkStablePromptHash', galleryDynamicVariant),
+        `[${lang}] gallery stable prompt hash changes with the player name`);
 
     if (lang === 'pt') {
         const activePortuguesePromptData = [

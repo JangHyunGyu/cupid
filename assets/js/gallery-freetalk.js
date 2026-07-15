@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.22';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.23';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function normalizeGalleryPromptBlockForCache(content) {
@@ -1160,8 +1160,13 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 ];
             }
             _optimized = this._forceLatestUserMessageLast(_optimized, finalContent);
-            const _stablePromptHash = getGalleryFreeTalkStablePromptHash(_optimized[0]?.content || finalContent);
-            const _gftCacheKey = requestCharId
+            const _stablePromptContent = Array.isArray(_optimized) && _optimized[0]?.role === 'system'
+                ? _optimized[0].content
+                : '';
+            const _stablePromptHash = _stablePromptContent
+                ? getGalleryFreeTalkStablePromptHash(_stablePromptContent)
+                : '';
+            const _gftCacheKey = requestCharId && _stablePromptHash
                 ? `cupid-gft:ctx:${encodeGalleryFreeTalkCacheKeyPart(this.lang)}:${encodeGalleryFreeTalkCacheKeyPart(requestCharId)}:s${_stablePromptHash}`
                 : '';
             _lastCacheKey = _gftCacheKey;
@@ -1945,7 +1950,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             ? `State: place=${location || 'current gallery scene'}; user=${playerName}; language=${langName}`
             : `현재 상태: 장소=${location || '현재 갤러리 장면'}; 사용자=${playerName}; 언어=한국어`;
         if (isEn) {
-            return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Cupid gallery free-talk: post-graduation adult lovers, ${charName} and ${playerName}; not a current school scene.
+            return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Cupid gallery free-talk: ${charName} with their post-graduation adult partner; not a current school scene.
 Character: ${personality}
 ${charName} is in-scene, not assistant/narrator.
 ${characterOutfitGuard}
@@ -1956,7 +1961,7 @@ Types: narration/dialogue. A dialogue-only reply is normal; add narration only w
 ===CACHE_BOUNDARY===
 ${compactGalleryState}`;
         }
-        return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}한국어로만 답하세요. 졸업 후 독립한 성인 연인 두 사람만 등장하는 갤러리 프리토킹입니다. 당신은 ${charName}, 연인은 ${playerName}입니다. 현재의 학교 장면이 아닙니다.
+        return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}한국어로만 답하세요. 졸업 후 독립한 성인 연인 두 사람만 등장하는 갤러리 프리토킹입니다. 당신은 ${charName}이고, 상대는 성인 연인입니다. 현재의 학교 장면이 아닙니다.
 캐릭터: ${personality}
 현재 장면의 인물은 ${charName}입니다. 도우미나 해설자처럼 말하지 마세요.
 ${characterOutfitGuard}

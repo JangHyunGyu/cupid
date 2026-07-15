@@ -1035,23 +1035,26 @@ function buildSystemPrompt(params) {
     const nativeStylePolishGuard = getNativeStylePolishGuard(effectiveLang, sceneName, displayName);
     const nativeAntiTranslationGuard = getNativeAntiTranslationGuard(effectiveLang);
     const expressionNames = Object.keys(getCharacterExpressionSet(sceneName, aiCharName) || { normal: true }).join(", ") || "normal";
-    const compactOptionalGuidance = (useEnTemplate ? [
+    const compactStableGuidance = (useEnTemplate ? [
         charAddressingGuideline && `Addressing: ${charAddressingGuideline}`,
         charInteractionGuideline && `Distance/interaction: ${charInteractionGuideline}`,
         charSpecificCriteria && `Affinity criteria: ${charSpecificCriteria}`,
-        extraGuideline && `Extra: ${extraGuideline}`,
-        gameContext && `Game context: ${gameContext}`,
-        socialContext && `Social context: ${socialContext}`,
-        mediumInstruction && `Medium: ${mediumInstruction}`,
-        datingGuideline && `Dating context: ${datingGuideline}`
+        mediumInstruction && `Medium: ${mediumInstruction}`
     ] : [
         charAddressingGuideline && `호칭: ${charAddressingGuideline}`,
         charInteractionGuideline && `거리와 상호작용: ${charInteractionGuideline}`,
         charSpecificCriteria && `호감도 기준: ${charSpecificCriteria}`,
+        mediumInstruction && `대화 방식: ${mediumInstruction}`
+    ]).filter(Boolean).join("\n");
+    const compactDynamicGuidance = (useEnTemplate ? [
+        extraGuideline && `Extra: ${extraGuideline}`,
+        gameContext && `Game context: ${gameContext}`,
+        socialContext && `Social context: ${socialContext}`,
+        datingGuideline && `Dating context: ${datingGuideline}`
+    ] : [
         extraGuideline && `장면별 지침: ${extraGuideline}`,
         gameContext && `최근 사건과 기억: ${gameContext}`,
         socialContext && `주변 인물 관계: ${socialContext}`,
-        mediumInstruction && `대화 방식: ${mediumInstruction}`,
         datingGuideline && `현재 연애 관계: ${datingGuideline}`
     ]).filter(Boolean).join("\n");
     const compactSceneMode = useEnTemplate
@@ -1073,9 +1076,10 @@ ${characterOutfitGuard}
 Scene: ${compactSceneMode} Treat the user's latest explicit in-world facts and completed outcomes as the current scene, and respond without recap or reversal; only the character-specific canon locks above remain exceptions. Stay inside ${aiCharName}; do not write the user's next action, dialogue, choice, or hidden thought. Let action and speech follow this character, affinity, and the immediate moment instead of a generic romance pattern. In an already-established adult intimate scene, keep physical description in narration and only what is actually spoken or sounded in dialogue, without a stock sound pattern. Visible text has no stat/math markers; numeric change only in affinity. Use natural present-day speech.
 JSON only: {"segments":[{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":0}
 Types: narration/dialogue. A dialogue-only reply is normal; add narration only when a visible action or scene change matters. Expressions: ${expressionNames}. No single text field.
+${compactStableGuidance}
 ===CACHE_BOUNDARY===
 ${compactLiveState}
-${compactOptionalGuidance}`;
+${compactDynamicGuidance}`;
     }
     return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}한국어로만 답하세요. 지금은 주인공과 ${aiCharName}, 두 사람만 마주한 장면입니다. 다른 인물은 언급을 들은 ${aiCharName}의 반응으로만 남기고 장면에 들이지 마세요.
 캐릭터: ${charPersonality}
@@ -1085,9 +1089,10 @@ ${characterOutfitGuard}
 장면: ${compactSceneMode} 사용자가 방금 확정해 쓴 극중 사실과 끝난 사건은 현재 장면으로 받고, 복창하거나 되돌리지 말고 ${aiCharName}의 반응으로 이어갑니다. 위의 캐릭터별 사실 잠금만 예외입니다. 사용자의 다음 행동·대사·선택·속마음은 대신 쓰지 마세요. 공용 로맨스 공식보다 이 인물의 성격, 현재 호감도와 바로 앞 순간에 맞춰 행동과 말을 고릅니다. 성인 사이의 친밀한 장면이 이미 성립했다면 신체 묘사는 narration에, 실제 발화와 소리는 dialogue에 두되 정형화된 소리를 반복하지 않습니다. 화면 문장에는 점수나 계산 표식을 쓰지 말고, 호감도 변화만 affinity에 숫자로 기록합니다. 자연스러운 현재 한국어를 쓰세요.
 JSON만 출력: {"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":0}
 허용 type: narration, dialogue. 대사만으로 자연스러우면 dialogue 하나면 충분하며, 눈에 보이는 행동이나 장면 변화가 있을 때만 narration을 더합니다. 허용 expression: ${expressionNames}. text 단일 필드는 쓰지 마세요.
+${compactStableGuidance}
 ===CACHE_BOUNDARY===
 ${compactLiveState}
-${compactOptionalGuidance}`;
+${compactDynamicGuidance}`;
 }
 
 // 전역 함수로 노출
@@ -1123,5 +1128,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 };
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.24';
+const PROMPT_VERSION = '2.7.25';
 window.PROMPT_VERSION = PROMPT_VERSION;

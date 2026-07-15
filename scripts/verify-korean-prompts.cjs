@@ -38,6 +38,21 @@ function read(relativePath) {
     return fs.readFileSync(path.join(ROOT, relativePath), 'utf8');
 }
 
+function splitCacheBoundary(prompt, label) {
+    const marker = '===CACHE_BOUNDARY===';
+    const first = prompt.indexOf(marker);
+    assert(first >= 0, `${label} is missing the cache boundary`);
+    assert(first === prompt.lastIndexOf(marker), `${label} has more than one cache boundary`);
+    return {
+        stable: prompt.slice(0, first).trim(),
+        dynamic: prompt.slice(first + marker.length).trim()
+    };
+}
+
+function getRuntimeStableHash(context, functionName, prompt) {
+    return vm.runInContext(`${functionName}(${JSON.stringify(prompt)})`, context);
+}
+
 function verifyGalleryLoaderOrder() {
     const writes = [];
     const loaderContext = {
@@ -129,8 +144,9 @@ function assertCommonKoreanPrompt(prompt, label) {
 
 function verifyMainAndGalleryPrompts(context) {
     const promptData = context.window.getPromptData('ko', '민준');
+    let galleryPlayerName = '민준';
     const progress = {
-        getPlayerName: () => '민준',
+        getPlayerName: () => galleryPlayerName,
         isFreeTalkUnlocked: () => false
     };
     const gallery = new context.window.GalleryFreeTalk('ko', progress);
@@ -182,6 +198,65 @@ function verifyMainAndGalleryPrompts(context) {
         assert(galleryPrompt.includes('현재 장면의 인물은'), `[gallery/${character.key}] missing the in-world role rule`);
         assert(galleryPrompt.includes('연인 관계:'), `[gallery/${character.key}] missing the relationship label`);
     }
+
+    const mainDynamicVariant = context.window.buildSystemPrompt({
+        isEn: false,
+        lang: 'ko',
+        sceneName: '서연',
+        displayName: '서연',
+        locationName: 'CACHE_DYNAMIC_ROOM',
+        context: 'CACHE_DYNAMIC_CONTEXT',
+        affinity: -77,
+        extraGuideline: 'CACHE_DYNAMIC_SCENE',
+        gameContext: 'CACHE_DYNAMIC_MEMORY',
+        socialContext: 'CACHE_DYNAMIC_SOCIAL',
+        mediumInstruction: '',
+        isRemote: false,
+        promptData,
+        currentMaxTurns: 99,
+        playerName: 'CACHE_DYNAMIC_USER',
+        knowsName: false,
+        datingGuideline: 'CACHE_DYNAMIC_RELATIONSHIP'
+    });
+    const mainBaseParts = splitCacheBoundary(mainPrompts.Seoyeon, 'main cache baseline');
+    const mainVariantParts = splitCacheBoundary(mainDynamicVariant, 'main cache dynamic variant');
+    assert(mainBaseParts.stable === mainVariantParts.stable,
+        'main stable cache prefix changes with live scene, affinity, memory, relationship, turn, or player state');
+    for (const signal of [
+        'CACHE_DYNAMIC_ROOM', 'CACHE_DYNAMIC_CONTEXT', 'CACHE_DYNAMIC_SCENE',
+        'CACHE_DYNAMIC_MEMORY', 'CACHE_DYNAMIC_SOCIAL', 'CACHE_DYNAMIC_USER',
+        'CACHE_DYNAMIC_RELATIONSHIP', '-77', '99'
+    ]) {
+        assert(!mainVariantParts.stable.includes(signal), `main stable cache prefix leaked dynamic value: ${signal}`);
+        assert(mainVariantParts.dynamic.includes(signal), `main dynamic cache suffix lost value: ${signal}`);
+    }
+    assert(mainBaseParts.stable.includes('호칭:') && mainBaseParts.stable.includes('거리와 상호작용:'),
+        'main static character guidance is not promoted ahead of the cache boundary');
+    assert(getRuntimeStableHash(context, 'getFreeTalkStablePromptHash', mainPrompts.Seoyeon)
+        === getRuntimeStableHash(context, 'getFreeTalkStablePromptHash', mainDynamicVariant),
+        'main stable prompt hash changes with dynamic state');
+    assert(getRuntimeStableHash(context, 'getFreeTalkStablePromptHash', mainPrompts.Seoyeon)
+        !== getRuntimeStableHash(context, 'getFreeTalkStablePromptHash', mainPrompts.Yuna),
+        'main stable prompt hash does not separate character identities');
+
+    galleryPlayerName = 'CACHE_DYNAMIC_GALLERY_USER';
+    const galleryDynamicVariant = gallery._buildSystemPrompt('seyoun');
+    const galleryBaseParts = splitCacheBoundary(galleryPrompts.Seoyeon, 'gallery cache baseline');
+    const galleryVariantParts = splitCacheBoundary(galleryDynamicVariant, 'gallery cache dynamic variant');
+    assert(galleryBaseParts.stable === galleryVariantParts.stable,
+        'gallery stable cache prefix changes with the player name');
+    assert(!galleryBaseParts.stable.includes('민준')
+        && !galleryVariantParts.stable.includes('CACHE_DYNAMIC_GALLERY_USER'),
+        'gallery stable cache prefix contains a player identity');
+    assert(galleryBaseParts.dynamic.includes('민준')
+        && galleryVariantParts.dynamic.includes('CACHE_DYNAMIC_GALLERY_USER'),
+        'gallery dynamic cache suffix lost the player identity');
+    assert(getRuntimeStableHash(context, 'getGalleryFreeTalkStablePromptHash', galleryPrompts.Seoyeon)
+        === getRuntimeStableHash(context, 'getGalleryFreeTalkStablePromptHash', galleryDynamicVariant),
+        'gallery stable prompt hash changes with the player name');
+    assert(getRuntimeStableHash(context, 'getGalleryFreeTalkStablePromptHash', galleryPrompts.Seoyeon)
+        !== getRuntimeStableHash(context, 'getGalleryFreeTalkStablePromptHash', galleryPrompts.Yuna),
+        'gallery stable prompt hash does not separate character identities');
 
     assert(!mainPrompts.Teacher.includes('오늘은 그냥 안기고 싶어'),
         'main Teacher prompt leaked a post-graduation lover example');
@@ -374,6 +449,38 @@ function verifyRequestOwnershipGuards() {
         'gallery free-talk cannot isolate an old animation frame from a newer render');
 }
 
+function verifyCacheKeyWiring() {
+    const main = read('assets/js/modules/FreeTalkSystem.js');
+    const gallery = read('assets/js/gallery-freetalk.js');
+    assert(main.includes("_optimized[0]?.role === 'system'")
+        && main.includes('getFreeTalkStablePromptHash(_stablePromptContent)')
+        && main.includes('const _cacheKey = charKey && _stablePromptHash'),
+        'main cache key is not gated by an actual system prompt stable prefix');
+    assert(gallery.includes("_optimized[0]?.role === 'system'")
+        && gallery.includes('getGalleryFreeTalkStablePromptHash(_stablePromptContent)')
+        && gallery.includes('const _gftCacheKey = requestCharId && _stablePromptHash'),
+        'gallery cache key is not gated by an actual system prompt stable prefix');
+    assert(!main.includes('getFreeTalkStablePromptHash(_optimized[0]?.content || finalContent)'),
+        'main cache key can still hash the latest user message when the system prompt is missing');
+    assert(!gallery.includes('getGalleryFreeTalkStablePromptHash(_optimized[0]?.content || finalContent)'),
+        'gallery cache key can still hash the latest user message when the system prompt is missing');
+    for (const dimension of [
+        'encodeFreeTalkCacheKeyPart(_lang)',
+        'encodeFreeTalkCacheKeyPart(charKey)',
+        "this._isRemote ? 'r' : 'f'",
+        ':s${_stablePromptHash}'
+    ]) {
+        assert(main.includes(dimension), `main cache key lost required stable dimension: ${dimension}`);
+    }
+    for (const dimension of [
+        'encodeGalleryFreeTalkCacheKeyPart(this.lang)',
+        'encodeGalleryFreeTalkCacheKeyPart(requestCharId)',
+        ':s${_stablePromptHash}'
+    ]) {
+        assert(gallery.includes(dimension), `gallery cache key lost required stable dimension: ${dimension}`);
+    }
+}
+
 function verifyTypingOwnerIsolation(context) {
     const frames = [];
     context.requestAnimationFrame = callback => {
@@ -465,6 +572,7 @@ verifyLatestUserCanon(context);
 verifyWiringAndScenePrompts();
 verifyAdultExamplesOwnUserActions();
 verifyRequestOwnershipGuards();
+verifyCacheKeyWiring();
 verifyTypingOwnerIsolation(context);
 
 console.log(`Verified Korean runtime prompts for ${CHARACTERS.length} characters, 10 scene prompts, loader order, memories, user agency, and stale-turn ownership.`);

@@ -951,8 +951,13 @@ class FreeTalkSystem {
                 ];
             }
             _optimized = this._forceLatestUserMessageLast(_optimized, finalContent);
-            const _stablePromptHash = getFreeTalkStablePromptHash(_optimized[0]?.content || finalContent);
-            const _cacheKey = charKey
+            const _stablePromptContent = Array.isArray(_optimized) && _optimized[0]?.role === 'system'
+                ? _optimized[0].content
+                : '';
+            const _stablePromptHash = _stablePromptContent
+                ? getFreeTalkStablePromptHash(_stablePromptContent)
+                : '';
+            const _cacheKey = charKey && _stablePromptHash
                 ? `cupid:ctx:${encodeFreeTalkCacheKeyPart(_lang)}:${encodeFreeTalkCacheKeyPart(charKey)}:${this._isRemote ? 'r' : 'f'}:s${_stablePromptHash}`
                 : '';
             _lastCacheKey = _cacheKey;
