@@ -343,9 +343,7 @@
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Klassenlehrerin",
-        "text": "*Sie zeigt auf die Kopie mit der Nummer 04.* Das ist die letzte Prüfung. Wenn du Lücken findest, sei nicht nachsichtig.",
-        "context": "Tag 5. Letzter Tag. Die Lehrerin übergab ihr 7-Jahre-Manuskript. Ton: Beide wissen, dass es das letzte Mal ist. Lachen, aber mit einem bittersüßen Beigeschmack. Ehrlicher als sonst, alles fühlt sich kostbar an.",
-        "personality": "Die Lehrerin ist ehrlicher als sonst, weil es das letzte Mal ist. Letztes Gespräch nach der Übergabe des Manuskripts."
+        "text": "*Sie zeigt auf die Kopie mit der Nummer 04.* Das ist die letzte Prüfung. Wenn du Lücken findest, sei nicht nachsichtig."
     },
     "hidden_nurse_d5_check": {
         "name": "{name}",
@@ -500,9 +498,7 @@
     "hidden_nurse_d5_7_both": {},
     "hidden_nurse_d5_freetalk": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie legt das Beratungsprotokoll in die Akte.* Damit ist die Beratung beendet. Sag nächstes Mal direkt, was du brauchst.",
-        "context": "Tag 5. Letzter Tag. Die Krankenschwester schrieb eine Nachricht auf ein Pflaster. Ton: Beide wissen, dass es das letzte Mal ist. Lachen, aber mit einem bittersüßen Beigeschmack. Ehrlicher als sonst, alles fühlt sich kostbar an.",
-        "personality": "Die Krankenschwester ist weniger verspielt. Wartet auf den Tag ohne Ausreden."
+        "text": "*Sie legt das Beratungsprotokoll in die Akte.* Damit ist die Beratung beendet. Sag nächstes Mal direkt, was du brauchst."
     },
     "morning5_end_branch": {},
     "morning5_end": {

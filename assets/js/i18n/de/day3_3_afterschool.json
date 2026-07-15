@@ -201,8 +201,8 @@
     "after3_seo_freetalk": {
         "name": "Seoyeon",
         "text": "*Sie hält das Klemmbrett an die Brust und sieht {name} an.* Wenn du etwas zu sagen hast, sag es jetzt.",
-        "context": "Tag 3 nach der Schule, direkt nach Konfrontation/Versöhnung mit Seoyeon. Die Beziehung hat Risse durch Verdacht auf Doppelspiel. Ton: Höflich, aber Antworten werden kürzer; Spannung zeigt sich durch Klemmbrett-Griff und Fingerbewegungen.",
-        "personality": "Seoyeon ist besitzergreifend und direkt wenn eifersüchtig. Verletzt aber versucht es nicht zu zeigen."
+        "context": "Tag 3 nach der Schule, direkt nach einem schwierigen Gespräch mit Seoyeon. Der Verdacht, dass der Protagonist zwei Menschen zugleich sein Herz geschenkt hat, hat die Beziehung beschädigt; Seoyeon ist verletzt und möchte noch klären, was geschehen ist.",
+        "personality": "Seoyeon ist eine gefasste und direkte Schülersprecherin. Auch bei Eifersucht oder Verletzung stellt sie lieber fest, was geschehen ist, und benennt ihre Grenzen, statt sich mit Annahmen zufriedenzugeben."
     },
     "after3_seo_end": {
         "name": "{name}",
@@ -375,8 +375,8 @@
     "after3_yuna_freetalk": {
         "name": "Yuna",
         "text": "*Sie faltet und entfaltet das Lesezeichen und geht einen halben Schritt hinter mir.* ...Ich möchte etwas überprüfen.",
-        "context": "Tag 3 nach der Schule, direkt nach Gespräch mit Yuna. Yuna hält das Gespräch länger als gewöhnlich. Ton: Antwortet kurz, dann fummelt mit einem Zettel oder Lesezeichen herum, während sie prüfende Fragen stellt.",
-        "personality": "Yuna ist ein mysteriöses literarisches Mädchen. Normalerweise ruhig, aber jetzt ist die Angewohnheit, Notizen zu falten und aufzufalten, auffällig. Eher Überprüfung als Eifersucht."
+        "context": "Tag 3 nach der Schule, direkt nach einem Gespräch mit Yuna. Sie führt das Gespräch weiter, weil sie verstehen möchte, was zwischen den Beteiligten tatsächlich geschehen ist.",
+        "personality": "Yuna ist eine ruhige und aufmerksame Leserin. Statt Eifersucht vorauszusetzen oder sich hinter einer schwer verständlichen Metapher zu verstecken, fragt sie direkt, wenn sie etwas wissen muss."
     },
     "after3_yuna_end": {
         "name": "Yuna",
@@ -605,8 +605,8 @@
     "after3_dain_freetalk": {
         "name": "Dain",
         "text": "*Sie zieht die Handgelenkbandage zurecht und zwingt sich zu einem Lächeln.* Heute rede ich zuerst.",
-        "context": "Tag 3 nach der Schule, direkt nach dem Gespräch mit Dain. Dain versucht es mit einem Lachen abzutun, macht aber Pausen zwischen Worten. Ton: Witze bleiben, aber Spannung zeigt sich durch Handlungen wie das Berühren des Balls oder der Handgelenkbandage.",
-        "personality": "Dain nutzt Fröhlichkeit als Verteidigung. Weniger Ausrufezeichen bedeuten Ehrlichkeit."
+        "context": "Tag 3 nach der Schule, direkt nach einem Gespräch mit Dain. Sie versucht, dem Protagonisten mit ihrer gewohnten Energie zu begegnen, doch Verletzung und Unsicherheit bleiben, und sie möchte verstehen, für welche Beziehungen der Protagonist sich entschieden hat.",
+        "personality": "Dain ist eine energiegeladene und direkte Volleyballspielerin. Humor und Aufrichtigkeit können sich natürlich zeigen, wenn sie ausdrückt, was sie fühlt und was sie über die Beziehung wissen möchte."
     },
     "after3_dain_end_check": {
         "name": "Dain",

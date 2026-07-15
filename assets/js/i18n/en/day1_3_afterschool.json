@@ -317,8 +317,8 @@
     "after_homeroom_freetalk": {
         "name": "Homeroom Teacher",
         "text": "*Chatting with the homeroom teacher in the hallway.*",
-        "context": "Day 1 after school. The homeroom teacher stopped the transfer student to check on them. The student was honest about feeling overwhelmed. Tone: light and cautious because it is still the first day. Do not bring up heavy backstory. Keep it to banter and short exchanges.",
-        "personality": "The homeroom teacher hides warmth behind dry humor and deadpan delivery. Late 20s female teacher with brown wavy long hair and beige cardigan. She wraps her feelings in words like \"work\" and \"professional concern.\" Former aspiring novelist."
+        "context": "Day 1 after school. The homeroom teacher stopped the transfer student to check how they were adjusting, and the student honestly said they felt overwhelmed. This is their first formal teacher-student check-in.",
+        "personality": "The homeroom teacher is an attentive woman in her late twenties with long wavy brown hair and a beige cardigan. She keeps counseling and guidance within formal school procedures. She once hoped to become a novelist and still cares about writing."
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",
@@ -519,8 +519,8 @@
     "after_nurse_freetalk": {
         "name": "School Nurse",
         "text": "*She puts away the thermometer and leans back in her chair with a smile.* Feeling less dizzy now?",
-        "context": "Day 1 after school. The transfer student felt dizzy and visited the nurse's office. The nurse was playful but attentive. Tone: light and cautious because it is still the first day. Do not bring up heavy backstory. Keep it to banter and short exchanges.",
-        "personality": "The school nurse is playful and teasing, but hides sincerity behind jokes. A former hospital nurse who burned out and moved to the school. She's quick to loosen the atmosphere so students can relax first."
+        "context": "Day 1 after school. The transfer student felt dizzy and visited the nurse's office. The nurse checked the symptoms and let the student rest; the conversation continues as she monitors recovery and school adjustment.",
+        "personality": "The school nurse is observant and easygoing. She moved to the school after experiencing burnout as a hospital nurse and may use light humor when it helps a student relax. She keeps treatment and counseling within professional boundaries."
     },
     "after_nurse_skip": {
         "name": "{name}",

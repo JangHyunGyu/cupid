@@ -317,8 +317,8 @@
     "after_homeroom_freetalk": {
         "name": "Profesora",
         "text": "*Conversando con la profesora en el pasillo.*",
-        "context": "Día 1 después de clases. La profesora detuvo al estudiante nuevo para ver cómo se adaptaba. Tono: ligero y prudente porque aún es el primer día. No sacar historias pesadas del pasado. Bromas e intercambios breves.",
-        "personality": "La profesora esconde calidez detrás de humor seco. Finales de los veinte, cabello largo castaño ondulado y cárdigan beige. Envuelve sus sentimientos en palabras como \"trabajo\" e \"interés pedagógico\". Fue aspirante a novelista."
+        "context": "Día 1 después de clases. La tutora detuvo al estudiante nuevo para saber cómo se estaba adaptando, y el estudiante admitió con sinceridad que se sentía abrumado. Es su primera conversación formal como profesora y alumno.",
+        "personality": "La tutora es una mujer atenta de veintitantos años, con cabello largo, castaño y ondulado, y un cárdigan beige. Mantiene la orientación y el acompañamiento dentro de los procedimientos escolares. Quiso ser novelista y todavía le importa escribir."
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",
@@ -519,8 +519,8 @@
     "after_nurse_freetalk": {
         "name": "Enfermera",
         "text": "*Guarda el termómetro y sonríe apoyada en el respaldo de la silla.* ¿Ya se te pasó un poco el mareo?",
-        "context": "Día 1 después de clases. El estudiante nuevo se mareó y visitó la enfermería. Tono: ligero y prudente porque aún es el primer día. No sacar historias pesadas del pasado. Bromas e intercambios breves.",
-        "personality": "La enfermera es juguetona y algo traviesa, pero esconde su sinceridad detrás de bromas. Ex enfermera de hospital que sufrió burnout y terminó en la escuela. Suele aflojar primero el ambiente para que los estudiantes se sientan cómodos."
+        "context": "Día 1 después de clases. El estudiante nuevo se mareó y fue a la enfermería. La enfermera revisó los síntomas y le permitió descansar; la conversación continúa mientras observa su recuperación y adaptación a la escuela.",
+        "personality": "La enfermera escolar es observadora y relajada. Llegó a la escuela después de sufrir agotamiento como enfermera de hospital y puede usar humor ligero cuando ayuda a tranquilizar a un estudiante. Mantiene límites profesionales en la atención y la orientación."
     },
     "after_nurse_skip": {
         "name": "{name}",

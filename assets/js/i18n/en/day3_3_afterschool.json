@@ -201,8 +201,8 @@
     "after3_seo_freetalk": {
         "name": "Seoyeon",
         "text": "*She holds the clipboard to her chest and looks at {name}.* If you have something to say, say it now.",
-        "context": "Day 3 after school, right after confrontation/reconciliation with Seoyeon. The relationship has fractured due to suspicions of two-timing. Tone: Polite but answers grow shorter; tension shows through clipboard grip and fingertip movements.",
-        "personality": "Seoyeon is the cool student council president. Strong possessiveness, direct when jealous. Hurt but trying not to show it."
+        "context": "Day 3 after school, just after a difficult conversation with Seoyeon. Suspicion that the protagonist gave their heart to two people has fractured the relationship, leaving Seoyeon hurt and with facts she still wants clarified.",
+        "personality": "Seoyeon is a composed and direct student council president. Even when jealous or hurt, she prefers to establish what happened and state her boundaries rather than settle for assumptions."
     },
     "after3_seo_end": {
         "name": "{name}",
@@ -375,8 +375,8 @@
     "after3_yuna_freetalk": {
         "name": "Yuna",
         "text": "*She folds and unfolds the bookmark, walking half a step behind.* ...There is something I want to check.",
-        "context": "Day 3 after school, right after conversation with Yuna. Yuna is holding the conversation longer than usual. Tone: Answers briefly, then fidgets with a note or bookmark while bringing up checking questions.",
-        "personality": "Yuna is a mysterious literary girl. Usually calm, but now the habit of folding and unfolding notes is prominent. More about checking than jealousy."
+        "context": "Day 3 after school, just after a conversation with Yuna. She is keeping the conversation going because she wants to understand what actually happened between the people involved.",
+        "personality": "Yuna is a calm and observant reader. Rather than assume jealousy or hide behind an obscure metaphor, she asks directly when there is something she needs to know."
     },
     "after3_yuna_end": {
         "name": "Yuna",
@@ -605,8 +605,8 @@
     "after3_dain_freetalk": {
         "name": "Dain",
         "text": "*She adjusts her wrist guard and forces a smile.* Today, I'll talk first.",
-        "context": "Day 3 after school, right after conversation with Dain. Dain tries to laugh it off but pauses between words. Tone: jokes persist, but tension shows through actions like touching the ball or wrist guard.",
-        "personality": "Dain is an energetic athlete. Being cheerful is her only defense. Fewer exclamation marks mean she's being real."
+        "context": "Day 3 after school, just after a conversation with Dain. She is trying to meet the protagonist with her usual brightness, but hurt and uncertainty remain, and she wants to understand which relationships the protagonist has chosen.",
+        "personality": "Dain is an energetic and straightforward volleyball player. Humor and sincerity can both appear naturally as she expresses what she feels and what she wants to know about the relationship."
     },
     "after3_dain_end_check": {
         "name": "Dain",

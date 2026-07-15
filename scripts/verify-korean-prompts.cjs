@@ -12,14 +12,24 @@ const CHARACTERS = [
 ];
 const REQUIRED_BLOCKS = [
     '[한국어 원문체]',
-    '[출력 전 한국어 점검]',
+    '[자연스러운 한국어 말투]',
     '[캐릭터 문체]',
+    '[대화 예시]'
+];
+const REMOVED_PRESSURE_BLOCKS = [
     '[필수 규칙]',
     '[역할 연기 기준]',
     '[스토리 불변 규칙]',
-    '[대화 예시]'
+    '[성인 장면 적용 범위]',
+    '[성인 장면 지문 원칙]'
 ];
 const LEGACY_META_LABELS = /(?:^|\n)(?:Reply in Korean|Character:|Voice:|Integrity:|Rules:|Latest user:|JSON only:|Types:|State:|Context:)/;
+const REMOVED_EDITOR_PRESSURE = [
+    '[출력 전 한국어 점검]',
+    '짧게 다시 씁니다',
+    '실제 말처럼 짧고',
+    '실제 연인의 말처럼 짧고'
+];
 
 function assert(condition, message) {
     if (!condition) throw new Error(message);
@@ -93,12 +103,19 @@ function assertCommonKoreanPrompt(prompt, label) {
     for (const block of REQUIRED_BLOCKS) {
         assert(prompt.includes(block), `${label} is missing ${block}`);
     }
+    for (const block of REMOVED_PRESSURE_BLOCKS) {
+        assert(!prompt.includes(block), `${label} still injects removed pressure block ${block}`);
+    }
+    for (const phrase of REMOVED_EDITOR_PRESSURE) {
+        assert(!prompt.includes(phrase), `${label} still injects editor or forced-brevity pressure: ${phrase}`);
+    }
     assert(!LEGACY_META_LABELS.test(prompt), `${label} still contains a legacy English meta label`);
     assert(prompt.includes('JSON만 출력:'), `${label} is missing the Korean JSON-only label`);
     assert(prompt.includes('허용 type: narration, dialogue.'), `${label} changed the type contract`);
     assert(prompt.includes('"segments"'), `${label} changed the segments schema`);
-    assert(prompt.includes('"type":"narration"'), `${label} changed the narration enum`);
     assert(prompt.includes('"type":"dialogue"'), `${label} changed the dialogue enum`);
+    assert(prompt.includes('대사만으로 자연스러우면 dialogue 하나면 충분하며'),
+        `${label} does not keep narration optional`);
     assert(prompt.includes('===CACHE_BOUNDARY==='), `${label} is missing the cache boundary`);
     assert(prompt.includes('현재 상태:'), `${label} is missing the Korean state label`);
     assert(!prompt.includes('유저'), `${label} still mixes the loanword 유저 into Korean instructions`);
@@ -165,7 +182,6 @@ function verifyMainAndGalleryPrompts(context) {
         assert(galleryPrompt.includes('[성적]'), `[gallery/${character.key}] missing the adult example`);
         assert(galleryPrompt.includes('현재 장면의 인물은'), `[gallery/${character.key}] missing the in-world role rule`);
         assert(galleryPrompt.includes('연인 관계:'), `[gallery/${character.key}] missing the relationship label`);
-        assert(galleryPrompt.includes('말투와 반응:'), `[gallery/${character.key}] missing the voice label`);
     }
 
     assert(mainPrompts.Teacher.includes('공개 합평') && mainPrompts.Teacher.includes('따로 만날 일은 아니야'),
@@ -183,8 +199,7 @@ function verifyMainAndGalleryPrompts(context) {
 
     const activeGalleryKorean = [
         ...Object.values(gallery.CHAR_PERSONALITIES).map(value => value.ko),
-        ...Object.values(gallery.CHAR_DATING_PROMPTS).map(value => value.ko),
-        ...Object.values(gallery.CHAR_SPEECH_STYLES).map(value => value.ko)
+        ...Object.values(gallery.CHAR_DATING_PROMPTS).map(value => value.ko)
     ].join('\n');
     for (const stalePhrase of [
         '소꿉친구 바이브',
@@ -263,8 +278,9 @@ function verifyLatestUserCanon(context) {
         assert(block.includes('최신 사용자 입력:'), `${label} canon block has the old user label`);
         assert(block.includes('이전 설정, 캐릭터 카드, 저장 요약, 장면 상태와 충돌해도 같습니다'),
             `${label} canon block lost latest-user precedence`);
-        assert(block.includes('사용자 소유입니다'), `${label} canon block lost ownership`);
-        assert(block.includes('다음 대사·행동·동의·거절·속마음은 대신 쓰지 마세요'),
+        assert(block.includes('"내/제 손·입술·손끝"은 사용자 캐릭터의 몸입니다'),
+            `${label} canon block lost user-body ownership`);
+        assert(block.includes('다음 행동·대사·동의·거절·속마음은 대신 쓰지 않으며'),
             `${label} canon block lost user agency`);
         assert(!block.includes('Latest user:'), `${label} canon block still has an English meta label`);
     }

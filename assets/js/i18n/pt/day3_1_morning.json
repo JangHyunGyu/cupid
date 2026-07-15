@@ -415,7 +415,7 @@
     "hidden_homeroom_d3_freetalk": {
         "name": "Professora",
         "text": "*Guarda as folhas do manuscrito em uma pasta.* Entendo a sua curiosidade. Mesmo assim, vamos falar disso durante o clube de literatura.",
-        "context": "Dia 3, de manhã. Em uma sala vazia, encontrei o manuscrito de um romance pessoal da professora. Ela não pede ao aluno que guarde segredo nem que dê sua opinião; está pensando em apresentá-lo a uma sessão aberta de leitura e crítica do clube de literatura. Tom: quando o manuscrito entra no assunto, ela faz menos piadas e usa frases mais curtas.",
+        "context": "Dia 3, de manhã. Em uma sala vazia, o aluno encontrou o manuscrito de um romance pessoal da professora. Ela não pede que ele guarde segredo nem dê uma opinião particular; está pensando em apresentá-lo a uma sessão aberta de leitura e crítica do clube de literatura.",
         "personality": "A professora queria ser romancista. Mesmo depois de se tornar professora, nunca deixou de escrever; porém, procura separar as aulas e avaliações da sua criação pessoal na relação com os alunos."
     },
     "hidden_nurse_d3_check": {
@@ -673,8 +673,8 @@
     "hidden_nurse_d3_freetalk": {
         "name": "Enfermeira",
         "text": "*Ela fecha a cortina pela metade e puxa uma cadeira.* Hoje a conversa séria vem antes das piadas.",
-        "context": "Dia 3. Vim à enfermaria depois que os relacionamentos se complicaram. A enfermeira deu aconselhamento sério. História sobre burnout no hospital universitário. Tom: começa com piadas, mas desvia ou evita com ações quando surgem tópicos do hospital.",
-        "personality": "A enfermeira escolar geralmente é brincalhona, mas fica mais quieta quando séria. Profissional experiente com histórico de burnout. Tenta manter limites com os alunos."
+        "context": "Dia 3. O aluno procurou a enfermaria para um aconselhamento formal depois que os relacionamentos se complicaram, e a enfermeira compartilhou sua experiência de esgotamento em um hospital universitário. Ela separa essa experiência do peso carregado pelo aluno.",
+        "personality": "A enfermeira escolar é uma profissional de saúde experiente e bem-humorada. Pode falar do próprio esgotamento sem tornar o aluno responsável por sua recuperação e mantém limites profissionais."
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",

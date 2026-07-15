@@ -343,9 +343,7 @@
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Homeroom Teacher",
-        "text": "*She points to critique copy No. 04.* It's the final review. Don't go easy on it just because you see blanks.",
-        "context": "Day 5. Last day. The teacher handed over her 7-year manuscript. A promise to meet after graduation. Tone: Both know this is the last time. Laughing but with a tinge of bittersweetness. More honest than usual, everything feels precious.",
-        "personality": "The teacher is more honest than usual because it's the last time. Last conversation after handing over the manuscript."
+        "text": "*She points to critique copy No. 04.* It's the final review. Don't go easy on it just because you see blanks."
     },
     "hidden_nurse_d5_check": {
         "name": "{name}",
@@ -500,9 +498,7 @@
     "hidden_nurse_d5_7_both": {},
     "hidden_nurse_d5_freetalk": {
         "name": "School Nurse",
-        "text": "*She files the counseling form.* That's all for counseling. Next time, say what you need right away.",
-        "context": "Day 5. Last day. The nurse wrote a message on a bandage. A promise to meet after graduation. Tone: Both know this is the last time. Laughing but with a tinge of bittersweetness. More honest than usual, everything feels precious.",
-        "personality": "The nurse is less playful than usual. Waiting for the day when excuses aren't needed."
+        "text": "*She files the counseling form.* That's all for counseling. Next time, say what you need right away."
     },
     "morning5_end_branch": {},
     "morning5_end": {

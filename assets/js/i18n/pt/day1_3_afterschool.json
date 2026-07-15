@@ -317,8 +317,8 @@
     "after_homeroom_freetalk": {
         "name": "Professora",
         "text": "*Conversando com a professora no corredor.*",
-        "context": "Dia 1 depois da aula. A professora parou o aluno transferido pra saber como ele estava. O aluno foi sincero sobre estar atordoado. Tom: leve e cauteloso porque ainda é o primeiro dia. Não puxar histórias pesadas do passado. Ficar em brincadeiras e trocas curtas.",
-        "personality": "A professora esconde cuidado atrás de humor seco e jeito indiferente. Mulher de vinte e poucos, cabelo castanho ondulado comprido e cardigã bege. Tem o hábito de disfarçar sentimentos com palavras como 'trabalho' e 'interesse pedagógico'. Ex-aspirante a escritora."
+        "context": "Dia 1 depois da aula. A professora chamou o aluno transferido para saber como ele estava se adaptando, e o aluno admitiu com sinceridade que se sentia sobrecarregado. É a primeira conversa formal entre professora e aluno.",
+        "personality": "A professora é uma mulher atenta de vinte e poucos anos, com cabelo castanho, ondulado e comprido, e cardigã bege. Mantém orientação e acompanhamento dentro dos procedimentos da escola. Já quis ser romancista e ainda se importa com a escrita."
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",
@@ -519,8 +519,8 @@
     "after_nurse_freetalk": {
         "name": "Enfermeira",
         "text": "*Ela guarda o termômetro e sorri encostada na cadeira.* A tontura já melhorou um pouco?",
-        "context": "Dia 1 depois da aula. O aluno transferido sentiu tontura e foi à enfermaria. A enfermeira foi brincalhona mas atenciosa. Tom: leve e cauteloso porque ainda é o primeiro dia. Não puxar histórias pesadas do passado. Ficar em brincadeiras e trocas curtas.",
-        "personality": "A enfermeira é brincalhona e provocadora, mas esconde sinceridade por trás das piadas. Ex-enfermeira de hospital que teve burnout e veio pra escola. Sempre desarma a tensão pra os alunos relaxarem primeiro."
+        "context": "Dia 1 depois da aula. O aluno transferido sentiu tontura e foi à enfermaria. A enfermeira verificou os sintomas e o deixou descansar; a conversa continua enquanto ela observa a recuperação e a adaptação à escola.",
+        "personality": "A enfermeira escolar é observadora e tranquila. Veio para a escola depois de sofrer esgotamento como enfermeira de hospital e pode usar humor leve quando isso ajuda um aluno a relaxar. Mantém limites profissionais no atendimento e no aconselhamento."
     },
     "after_nurse_skip": {
         "name": "{name}",

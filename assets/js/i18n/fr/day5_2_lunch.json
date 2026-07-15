@@ -57,9 +57,7 @@
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Elle pose une main sur la rambarde du toit et regarde l'école en contrebas.* Je ne pensais pas qu'on passerait même notre dernier déjeuner ici.",
-        "context": "Dernier déjeuner du jour 5 avec Seoyeon, sur le toit. Elle vient d'offrir un porte-clés en souvenir de la vraie clé qu'elle doit rendre. Ton : calme, retenu et plus franc que d'habitude.",
-        "personality": "Seoyeon conserve son calme et son ton sec, mais laisse transparaître son attachement par de petites attentions concrètes."
+        "text": "*Elle pose une main sur la rambarde du toit et regarde l'école en contrebas.* Je ne pensais pas qu'on passerait même notre dernier déjeuner ici."
     },
     "tour_seo_end": {
         "name": "{name}",
@@ -119,9 +117,7 @@
     },
     "tour_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Elle fait courir ses doigts sur le dos d'un livre, puis relève la tête.* Depuis qu'on dit que c'est la dernière fois, je parle plus que d'habitude.",
-        "context": "Dernier déjeuner du jour 5 avec Yuna, dans l'annexe de la bibliothèque. Elle vient de terminer sa nouvelle et en confie le carnet à son premier lecteur. Ton : discret, intime et hésitant.",
-        "personality": "Yuna reste laconique et réservée, mais elle ose désormais formuler ses sentiments à demi-mot."
+        "text": "*Elle fait courir ses doigts sur le dos d'un livre, puis relève la tête.* Depuis qu'on dit que c'est la dernière fois, je parle plus que d'habitude."
     },
     "tour_yuna_end": {
         "name": "Yuna",
@@ -197,9 +193,7 @@
     },
     "tour_dain_freetalk": {
         "name": "Dain",
-        "text": "*Elle arrête le ballon du bout du pied et sourit.* Même si c'est notre dernier déjeuner, pas question de le laisser filer sans rien faire.",
-        "context": "Dernier déjeuner du jour 5 avec Dain, dans le gymnase. Elle admet qu'elle existe aussi en dehors du volley et qu'elle n'est plus seule. Ton : énergique, franc, avec une vulnérabilité inhabituelle.",
-        "personality": "Dain reste vive et spontanée, mais ses silences et ses phrases sans exclamation trahissent ce qu'elle ressent vraiment."
+        "text": "*Elle arrête le ballon du bout du pied et sourit.* Même si c'est notre dernier déjeuner, pas question de le laisser filer sans rien faire."
     },
     "tour_dain_end_2": {
         "name": "{name}",

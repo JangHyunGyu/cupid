@@ -343,9 +343,7 @@
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Professeure principale",
-        "text": "*Elle désigne l'exemplaire n° 04.* C'est la dernière relecture. Même s'il reste des blancs, ne sois pas indulgent.",
-        "context": "Jour 5, dernier jour de l'événement. La professeure vient de confier son manuscrit inachevé pour une véritable critique. Ton : retenu, vulnérable et plus honnête que d'habitude.",
-        "personality": "La professeure cache son appréhension derrière un ton sec, mais elle attend sincèrement un avis de lecteur précis."
+        "text": "*Elle désigne l'exemplaire n° 04.* C'est la dernière relecture. Même s'il reste des blancs, ne sois pas indulgent."
     },
     "hidden_nurse_d5_check": {
         "name": "{name}",
@@ -500,9 +498,7 @@
     "hidden_nurse_d5_7_both": {},
     "hidden_nurse_d5_freetalk": {
         "name": "Infirmière",
-        "text": "*Elle classe la fiche de suivi.* L'entretien s'arrête ici. La prochaine fois, dis tout de suite ce dont tu as besoin.",
-        "context": "Jour 5, dernier jour de l'événement. L'infirmière vient de clore le dossier de suivi et remet une carte de premiers secours. Ton : calme, direct et bienveillant.",
-        "personality": "L'infirmière plaisante moins que d'habitude. Elle insiste sur le fait qu'il faut demander de l'aide sans chercher de prétexte."
+        "text": "*Elle classe la fiche de suivi.* L'entretien s'arrête ici. La prochaine fois, dis tout de suite ce dont tu as besoin."
     },
     "morning5_end_branch": {},
     "morning5_end": {

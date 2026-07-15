@@ -415,7 +415,7 @@
     "hidden_homeroom_d3_freetalk": {
         "name": "Professeure principale",
         "text": "*Elle glisse les pages du manuscrit dans une chemise.* Je comprends que tu sois curieux. Mais gardons cette conversation pour le club littéraire.",
-        "context": "Jour 3, matin. Dans une classe vide, un élève a découvert le manuscrit personnel de sa professeure principale. Elle ne lui demande ni de garder le secret ni de donner un avis privé ; elle envisage de le soumettre à une séance de critique ouverte au club littéraire. Ton : ses plaisanteries disparaissent et ses phrases raccourcissent dès que le manuscrit est évoqué.",
+        "context": "Jour 3, matin. Dans une classe vide, un élève a découvert le manuscrit personnel de sa professeure principale. Elle ne lui demande ni de garder le secret ni de donner un avis privé ; elle envisage de le soumettre à une séance de critique ouverte au club littéraire.",
         "personality": "La professeure principale rêvait autrefois de devenir romancière. Elle n'a jamais cessé d'écrire après être devenue enseignante, mais elle tient à séparer sa création personnelle de son rôle de professeure et d'évaluatrice."
     },
     "hidden_nurse_d3_check": {
@@ -673,8 +673,8 @@
     "hidden_nurse_d3_freetalk": {
         "name": "Infirmière",
         "text": "*Elle tire le rideau à moitié et approche une chaise.* Aujourd'hui, on commence par parler sérieusement. Les blagues après.",
-        "context": "Jour 3. Venu à l'infirmerie après que les relations se soient compliquées. L'infirmière a donné des conseils sérieux. Histoire de burn-out à l'hôpital universitaire. Ton : commence par des blagues, mais s'estompe ou détourne avec des actions lorsque les sujets hospitaliers arrivent.",
-        "personality": "L'infirmière scolaire est généralement joueuse mais devient plus silencieuse quand c'est sérieux. Professionnelle expérimentée avec un historique de burn-out. Essaie de maintenir des limites avec les élèves."
+        "context": "Jour 3. L'élève est venu à l'infirmerie pour un entretien formel après que ses relations se sont compliquées, et l'infirmière a parlé de son épuisement professionnel dans un hôpital universitaire. Elle distingue son expérience du poids porté par l'élève.",
+        "personality": "L'infirmière scolaire est une professionnelle de santé expérimentée, dotée d'un humour décontracté. Elle peut parler de son épuisement sans rendre l'élève responsable de son rétablissement et maintient des limites professionnelles."
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",

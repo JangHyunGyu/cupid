@@ -57,9 +57,7 @@
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Sie legt eine Hand auf das Geländer des Dachs und sieht auf die Schule hinunter.* Ich hätte nicht gedacht, dass wir auch die letzte Mittagspause hier verbringen.",
-        "context": "Letztes Mittagessen an Tag 5 mit Seoyeon. Das Ende naht. Ton: Beide wissen, dass es das letzte Mal ist. Lachen, aber mit einem bittersüßen Beigeschmack. Ehrlicher als sonst, alles fühlt sich kostbar an.",
-        "personality": "Da es das letzte Mal ist, verschwindet Seoyeons Gelassenheit und wahre Gefühle kommen zum Vorschein."
+        "text": "*Sie legt eine Hand auf das Geländer des Dachs und sieht auf die Schule hinunter.* Ich hätte nicht gedacht, dass wir auch die letzte Mittagspause hier verbringen."
     },
     "tour_seo_end": {
         "name": "{name}",
@@ -119,9 +117,7 @@
     },
     "tour_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Sie streicht mit den Fingerspitzen über die Buchrücken und hebt dann den Kopf.* Weil es das letzte Mal ist, rede ich seltsam viel.",
-        "context": "Letztes Mittagessen an Tag 5 mit Yuna. Ton: Beide wissen, dass es das letzte Mal ist. Lachen, aber mit einem bittersüßen Beigeschmack. Ehrlicher als sonst, alles fühlt sich kostbar an.",
-        "personality": "Da es das letzte Mal ist, sind Yunas Mauern komplett gefallen."
+        "text": "*Sie streicht mit den Fingerspitzen über die Buchrücken und hebt dann den Kopf.* Weil es das letzte Mal ist, rede ich seltsam viel."
     },
     "tour_yuna_end": {
         "name": "Yuna",
@@ -197,9 +193,7 @@
     },
     "tour_dain_freetalk": {
         "name": "Dain",
-        "text": "*Sie stoppt den Volleyball mit der Fußspitze und grinst.* Auch die letzte Mittagspause lasse ich nicht einfach so vorbeigehen.",
-        "context": "Letztes Mittagessen an Tag 5 mit Dain. Ton: Beide wissen, dass es das letzte Mal ist. Lachen, aber mit einem bittersüßen Beigeschmack. Ehrlicher als sonst, alles fühlt sich kostbar an.",
-        "personality": "Da es das letzte Mal ist, kann Dain ihre fröhliche Fassade nicht aufrechterhalten."
+        "text": "*Sie stoppt den Volleyball mit der Fußspitze und grinst.* Auch die letzte Mittagspause lasse ich nicht einfach so vorbeigehen."
     },
     "tour_dain_end_2": {
         "name": "{name}",

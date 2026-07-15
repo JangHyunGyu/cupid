@@ -343,9 +343,7 @@
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Profesora",
-        "text": "*Señala la copia número 04.* Es la última revisión. No me hagas concesiones aunque encuentres huecos.",
-        "context": "Día 5. Último día. La profesora entregó su manuscrito de 7 años. Tono: Ambos saben que es la última vez. Riendo pero con un toque agridulce. Más honestos que de costumbre, todo se siente precioso.",
-        "personality": "La profesora es más sincera porque es la última vez. Última conversación tras entregar el manuscrito."
+        "text": "*Señala la copia número 04.* Es la última revisión. No me hagas concesiones aunque encuentres huecos."
     },
     "hidden_nurse_d5_check": {
         "name": "{name}",
@@ -500,9 +498,7 @@
     "hidden_nurse_d5_7_both": {},
     "hidden_nurse_d5_freetalk": {
         "name": "Enfermera",
-        "text": "*Guarda la hoja de seguimiento en una carpeta.* La consulta termina aquí. La próxima vez, di directamente qué necesitas.",
-        "context": "Día 5. Último día. La enfermera escribió un mensaje en una curita. Tono: Ambos saben que es la última vez. Riendo pero con un toque agridulce. Más honestos que de costumbre, todo se siente precioso.",
-        "personality": "La enfermera está menos juguetona. Esperando el día sin excusas."
+        "text": "*Guarda la hoja de seguimiento en una carpeta.* La consulta termina aquí. La próxima vez, di directamente qué necesitas."
     },
     "morning5_end_branch": {},
     "morning5_end": {

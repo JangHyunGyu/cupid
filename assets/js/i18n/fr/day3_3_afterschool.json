@@ -201,8 +201,8 @@
     "after3_seo_freetalk": {
         "name": "Seoyeon",
         "text": "*Elle serre son porte-bloc contre sa poitrine et regarde {name}.* Si tu as quelque chose à dire, dis-le maintenant.",
-        "context": "Jour 3 après les cours, juste après la confrontation/réconciliation avec Seoyeon. La relation s'est fissurée en raison de soupçons de double jeu. Ton : Poli mais les réponses raccourcissent ; tension visible dans la prise du porte-documents et mouvements des doigts.",
-        "personality": "Seoyeon est possessive et directe quand elle est jalouse. Blessée mais essayant de ne pas le montrer."
+        "context": "Jour 3 après les cours, juste après une conversation difficile avec Seoyeon. Le soupçon que le protagoniste a donné son cœur à deux personnes a fissuré leur relation ; Seoyeon reste blessée et veut encore éclaircir les faits.",
+        "personality": "Seoyeon est une présidente du conseil des élèves posée et directe. Même jalouse ou blessée, elle préfère établir ce qui s'est passé et exprimer ses limites plutôt que se contenter de suppositions."
     },
     "after3_seo_end": {
         "name": "{name}",
@@ -375,8 +375,8 @@
     "after3_yuna_freetalk": {
         "name": "Yuna",
         "text": "*Elle plie et déplie le marque-page en marchant un demi-pas derrière moi.* ...Il y a quelque chose que je veux vérifier.",
-        "context": "Jour 3 après les cours, juste après la conversation avec Yuna. Yuna prolonge la conversation plus que d'habitude. Ton : Répond brièvement, puis tripote une note ou un marque-page en soulevant des questions de vérification.",
-        "personality": "Yuna est une fille littéraire mystérieuse. Habituellement calme, mais maintenant l'habitude de plier et déplier des notes est proéminente. Plus proche de la vérification que de la jalousie."
+        "context": "Jour 3 après les cours, juste après une conversation avec Yuna. Elle prolonge l'échange parce qu'elle veut comprendre ce qui s'est réellement passé entre les personnes concernées.",
+        "personality": "Yuna est une lectrice calme et observatrice. Plutôt que de conclure à la jalousie ou de se cacher derrière une métaphore obscure, elle pose directement les questions dont elle a besoin."
     },
     "after3_yuna_end": {
         "name": "Yuna",
@@ -605,8 +605,8 @@
     "after3_dain_freetalk": {
         "name": "Dain",
         "text": "*Elle resserre sa protection de poignet et force un sourire.* Aujourd'hui, je parle en premier.",
-        "context": "Jour 3 après l'école, juste après la conversation avec Dain. Dain essaie de rire et de passer à autre chose mais fait des pauses entre les mots. Ton : les blagues persistent, mais la tension se montre par des actions comme toucher le ballon ou le protège-poignet.",
-        "personality": "Dain utilise la joie comme défense. Moins de points d'exclamation signifient qu'elle est sincère."
+        "context": "Jour 3 après les cours, juste après une conversation avec Dain. Elle essaie d'aborder le protagoniste avec son énergie habituelle, mais la blessure et l'incertitude demeurent, et elle veut comprendre quelles relations le protagoniste a choisies.",
+        "personality": "Dain est une volleyeuse énergique et directe. L'humour comme la sincérité peuvent apparaître naturellement lorsqu'elle exprime ce qu'elle ressent et ce qu'elle veut savoir sur leur relation."
     },
     "after3_dain_end_check": {
         "name": "Dain",

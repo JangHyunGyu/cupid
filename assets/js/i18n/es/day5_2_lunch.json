@@ -57,9 +57,7 @@
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Apoya una mano en la baranda de la azotea y mira la escuela desde arriba.* No pensé que también pasaríamos aquí el último almuerzo.",
-        "context": "Último almuerzo del día 5 con Seoyeon. El final se acerca. Tono: Ambos saben que es la última vez. Riendo pero con un toque agridulce. Más honestos que de costumbre, todo se siente precioso.",
-        "personality": "Siendo la última vez, la compostura de Seoyeon desaparece y sus verdaderos sentimientos emergen."
+        "text": "*Apoya una mano en la baranda de la azotea y mira la escuela desde arriba.* No pensé que también pasaríamos aquí el último almuerzo."
     },
     "tour_seo_end": {
         "name": "{name}",
@@ -119,9 +117,7 @@
     },
     "tour_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Pasa los dedos por los lomos de los libros y luego levanta la cabeza.* Como es la última vez, hablo más de lo normal.",
-        "context": "Último almuerzo del día 5 con Yuna. Tono: Ambos saben que es la última vez. Riendo pero con un toque agridulce. Más honestos que de costumbre, todo se siente precioso.",
-        "personality": "Siendo la última vez, las defensas de Yuna están completamente abajo."
+        "text": "*Pasa los dedos por los lomos de los libros y luego levanta la cabeza.* Como es la última vez, hablo más de lo normal."
     },
     "tour_yuna_end": {
         "name": "Yuna",
@@ -197,9 +193,7 @@
     },
     "tour_dain_freetalk": {
         "name": "Dain",
-        "text": "*Detiene la pelota de voleibol con la punta del pie y sonríe.* Aunque sea el último almuerzo, no puedo dejarlo pasar sin más.",
-        "context": "Último almuerzo del día 5 con Dain. Tono: Ambos saben que es la última vez. Riendo pero con un toque agridulce. Más honestos que de costumbre, todo se siente precioso.",
-        "personality": "Siendo la última vez, Dain no puede mantener su fachada alegre."
+        "text": "*Detiene la pelota de voleibol con la punta del pie y sonríe.* Aunque sea el último almuerzo, no puedo dejarlo pasar sin más."
     },
     "tour_dain_end_2": {
         "name": "{name}",

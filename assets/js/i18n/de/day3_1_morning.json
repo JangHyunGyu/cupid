@@ -415,7 +415,7 @@
     "hidden_homeroom_d3_freetalk": {
         "name": "Klassenlehrerin",
         "text": "*Sie legt die Manuskriptseiten in eine Mappe.* Ich verstehe, dass du neugierig bist. Aber darüber sprechen wir im Literaturklub.",
-        "context": "Morgen von Tag 3. In einem leeren Klassenzimmer wurde das private Romanmanuskript der Klassenlehrerin entdeckt. Sie verlangt vom Schüler weder Geheimhaltung noch eine Meinung und überlegt, ob sie es in einer offenen Besprechung des Literaturklubs vorlegen soll. Ton: Sobald es um das Manuskript geht, macht sie weniger Witze und spricht in kürzeren Sätzen.",
+        "context": "Morgen von Tag 3. In einem leeren Klassenzimmer entdeckte ein Schüler das private Romanmanuskript der Klassenlehrerin. Sie verlangt weder Geheimhaltung noch eine private Meinung und überlegt, ob sie es in einer offenen Besprechung des Literaturklubs vorlegen soll.",
         "personality": "Die Klassenlehrerin wollte Romanautorin werden. Auch nach Beginn ihrer Laufbahn als Lehrerin konnte sie das Schreiben nicht aufgeben, versucht aber, Unterricht und Bewertung klar von ihrem privaten Schreiben zu trennen."
     },
     "hidden_nurse_d3_check": {
@@ -673,8 +673,8 @@
     "hidden_nurse_d3_freetalk": {
         "name": "Schulkrankenschwester",
         "text": "*Sie zieht den Vorhang halb zu und holt einen Stuhl heran.* Heute kommt die Beratung vor den Witzen.",
-        "context": "Tag 3. Kam ins Krankenzimmer, nachdem Beziehungen kompliziert wurden. Die Krankenschwester gab ernsthafte Beratung. Geschichte über Burnout im Universitätskrankenhaus. Ton: beginnt mit Witzen, weicht aber ab oder lenkt mit Handlungen ab, wenn Krankenhausthemen aufkommen.",
-        "personality": "Die Schulkrankenschwester ist normalerweise verspielt, wird aber ruhiger, wenn es ernst wird. Erfahrene Fachkraft mit Burnout-Geschichte. Versucht, Grenzen zu Schülern zu wahren."
+        "context": "Tag 3. Der Schüler kam zu einem formellen Beratungsgespräch ins Krankenzimmer, nachdem Beziehungen kompliziert geworden waren, und die Schulkrankenschwester erzählte von ihrem Burnout an einem Universitätskrankenhaus. Sie trennt ihre Erfahrung von der Belastung des Schülers.",
+        "personality": "Die Schulkrankenschwester ist eine erfahrene medizinische Fachkraft mit gelassenem Humor. Sie kann über ihren Burnout sprechen, ohne den Schüler für ihre Erholung verantwortlich zu machen, und wahrt professionelle Grenzen."
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",

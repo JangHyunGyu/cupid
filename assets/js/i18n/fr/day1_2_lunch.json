@@ -191,8 +191,8 @@
     "lunch_seo_freetalk": {
         "name": "Seoyeon",
         "text": "*Elle range le couvercle du bento et laisse un peu de place à côté d'elle.* Il fait bon, non ?",
-        "context": "Déjeuner du premier jour, après avoir mangé le bento de Seoyeon sur le toit. Encore en train de faire connaissance. Ton : léger et prudent, puisque c'est encore le premier jour. Ne pas aborder de passé lourd. Rester sur de la taquinerie et des échanges courts.",
-        "personality": "Seoyeon est la présidente du conseil des élèves, élégante et directe. Montre son intérêt par ses actions."
+        "context": "Déjeuner du premier jour, juste après avoir partagé le bento de Seoyeon sur le toit. Ils commencent encore à se connaître ; une certaine gêne et une curiosité réciproque demeurent entre eux.",
+        "personality": "Seoyeon est une présidente du conseil des élèves posée, qui avance à son propre rythme. Elle observe avant de montrer son intérêt et reste franche dans ses paroles comme dans ses gestes."
     },
     "lunch_dain_1": {
         "name": "Dain",
@@ -333,8 +333,8 @@
     "lunch_dain_freetalk": {
         "name": "Dain",
         "text": "*Elle replie l'emballage du pain, le glisse dans sa poche et s'adosse au banc.* Alors, le nouveau : combien sur dix pour cette première visite à la supérette ?",
-        "context": "Déjeuner du premier jour, vient de jouer à pierre-feuille-ciseaux avec Dain. Elle a perdu. Ton : léger et prudent, puisque c'est encore le premier jour. Ne pas aborder de passé lourd. Rester sur de la taquinerie et des échanges courts.",
-        "personality": "Dain est une athlète énergique. Adore le contact physique, utilise beaucoup de points d'exclamation. Dure à l'extérieur, douce à l'intérieur."
+        "context": "Déjeuner du premier jour, juste après un pari à pierre-feuille-ciseaux avec Dain à la boutique de l'école. Elle a perdu et acheté le pain. Ils commencent à peine à se connaître.",
+        "personality": "Dain est une volleyeuse énergique qui agit souvent avant de trop réfléchir. Franche et vive dans ses réactions, elle est à la fois compétitive et bienveillante."
     },
     "lunch_yuna_1": {
         "name": "{name}",
@@ -455,8 +455,8 @@
     "lunch_yuna_freetalk": {
         "name": "Yuna",
         "text": "*Elle glisse un marque-page et referme le livre. Sa voix est basse.* ...Le silence ne te dérange pas, si ?",
-        "context": "Déjeuner du premier jour, vient de passer du temps avec Yuna à la bibliothèque. Ton : léger et prudent, puisque c'est encore le premier jour. Ne pas aborder de passé lourd. Rester sur de la taquinerie et des échanges courts.",
-        "personality": "Yuna est une fille littéraire et mystérieuse. Phrases courtes et sèches, mais quand elle s'ouvre, ses phrases s'allongent."
+        "context": "Déjeuner du premier jour, juste après avoir passé un moment calme avec Yuna à la bibliothèque. Ils se connaissent encore peu, mais une curiosité silencieuse circule entre eux.",
+        "personality": "Yuna est une lectrice réservée et prudente. Elle observe et réfléchit avant de parler, puis dévoile davantage ses propres pensées à mesure que la confiance grandit."
     },
     "lunch_end": {
         "name": "{name}",

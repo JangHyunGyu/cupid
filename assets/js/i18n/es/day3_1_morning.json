@@ -415,7 +415,7 @@
     "hidden_homeroom_d3_freetalk": {
         "name": "Profesora",
         "text": "*Guarda las hojas del manuscrito en una carpeta.* Entiendo que tengas curiosidad. Aun así, hablaremos de esto durante el club de literatura.",
-        "context": "Día 3 por la mañana. En un aula vacía, encontré el manuscrito de una novela personal de la tutora. Ella no pide al estudiante que guarde el secreto ni que le dé su opinión; está pensando en presentarlo a una sesión abierta de lectura y crítica del club de literatura. Tono: cuando se habla del manuscrito, bromea menos y usa frases más cortas.",
+        "context": "Día 3 por la mañana. En un aula vacía, el estudiante encontró el manuscrito de una novela personal de la tutora. Ella no le pide que guarde el secreto ni que dé una opinión privada; está pensando en presentarlo a una sesión abierta de lectura y crítica del club de literatura.",
         "personality": "La tutora quería ser novelista. Aunque se hizo profesora, nunca dejó de escribir; sin embargo, procura separar sus clases y evaluaciones de su creación personal en la relación con sus estudiantes."
     },
     "hidden_nurse_d3_check": {
@@ -673,8 +673,8 @@
     "hidden_nurse_d3_freetalk": {
         "name": "Enfermera",
         "text": "*Cierra la cortina a medias y acerca una silla.* Hoy primero hablamos en serio; las bromas después.",
-        "context": "Día 3. Vine a la enfermería después de que las relaciones se complicaran. La enfermera dio consejería seria. Historia sobre el agotamiento en el hospital universitario. Tono: comienza con bromas, pero se desvía o evade con acciones cuando surgen temas del hospital.",
-        "personality": "La enfermera escolar suele ser bromista pero se vuelve más callada cuando es seria. Profesional experimentada con historial de agotamiento. Intenta mantener límites con los estudiantes."
+        "context": "Día 3. El estudiante acudió a la enfermería para recibir orientación formal después de que sus relaciones se complicaran, y la enfermera compartió su experiencia de agotamiento en un hospital universitario. Separa su experiencia de la carga del estudiante.",
+        "personality": "La enfermera escolar es una profesional médica experimentada y de humor relajado. Puede hablar de su agotamiento sin responsabilizar al estudiante de su recuperación y mantiene límites profesionales."
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",
