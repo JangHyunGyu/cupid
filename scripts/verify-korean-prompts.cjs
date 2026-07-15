@@ -381,6 +381,10 @@ function verifyLatestUserCanon(context) {
         assert(block.includes('최신 사용자 입력:'), `${label} canon block has the old user label`);
         assert(block.includes('이전 설정, 캐릭터 카드, 저장 요약, 장면 상태와 충돌해도 같습니다'),
             `${label} canon block lost latest-user precedence`);
+        assert(block.includes('완료형으로 쓴 행동은 성적 접촉도 이미 일어난 사건이며'),
+            `${label} canon block can still erase a completed sexual action`);
+        assert(block.includes('이는 캐릭터의 동의나 호응을 대신 정하지 않으므로'),
+            `${label} canon block no longer separates event fact from character consent`);
         assert(block.includes('"내/제 손·입술·손끝"은 사용자 캐릭터의 몸입니다'),
             `${label} canon block lost user-body ownership`);
         assert(block.includes('다음 행동·대사·동의·거절·속마음은 대신 쓰지 않으며'),

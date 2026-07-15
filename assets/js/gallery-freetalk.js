@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.24';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.25';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function normalizeGalleryPromptBlockForCache(content) {
@@ -109,6 +109,7 @@ function buildGalleryLatestUserCanonBlock(messages = [], lang = 'en', fallbackTe
         return `\n\n**[이번 턴 사용자 입력]**
 최신 사용자 입력: """${excerpt}"""
 - 사용자가 확정한 극중 사실·상태·사건 결과는 가장 최근의 극중 사실입니다. 이전 설정, 캐릭터 카드, 저장 요약, 장면 상태와 충돌해도 같습니다. 캐릭터별 사실 잠금만 예외입니다.
+- 완료형으로 쓴 행동은 성적 접촉도 이미 일어난 사건이며 시도·착각·바람으로 되돌리지 않습니다. 이는 캐릭터의 동의나 호응을 대신 정하지 않으므로, 캐릭터는 자신의 성격·관계·경계에 맞게 반응합니다.
 - 최신 입력의 "내/제 손·입술·손끝"은 사용자 캐릭터의 몸입니다.
 - 끝난 일을 되돌리거나 입력을 복창하지 말고 현재 캐릭터의 다음 반응으로 이어갑니다. 사용자의 다음 행동·대사·동의·거절·속마음은 대신 쓰지 않으며, 속마음은 겉으로 드러나기 전까지 캐릭터가 알지 못합니다.`;
     }
@@ -116,6 +117,7 @@ function buildGalleryLatestUserCanonBlock(messages = [], lang = 'en', fallbackTe
     return `\n\n**[Latest-turn user canon]**
 Latest user: """${excerpt}"""
 - Explicit in-world facts, states, and outcomes in this message are the newest canon, even when it conflicts with prior setup, the character card, saved summary, or scene state. Only character-specific canon locks remain exceptions.
+- A user action written as completed, including sexual contact, already happened in the scene and must not be reduced to an attempt, misperception, or wish. This does not decide the character's consent or reciprocation; the character responds from their personality, relationship, and boundaries.
 - "My hand/fingertip/lips" in the latest input belong to the user character.
 - Continue with the current character's reaction without undoing or echoing a completed result. Do not write the user's next action, dialogue, consent, refusal, or hidden thought; private thoughts remain unknown until expressed.`;
 }
