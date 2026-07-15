@@ -46,6 +46,10 @@ class DialogueSystem {
         /** 타이핑 스킵 요청 플래그 */
         this.skipTyping = false;
 
+        /** 이전 requestAnimationFrame이 새 타이핑 상태를 해제하지 못하게 하는 렌더 소유권 */
+        this._renderGeneration = 0;
+        this._activeRenderOwner = null;
+
         /**
          * 타이핑 속도 (밀리초 단위)
          * - 30 = 한 글자당 30ms = 초당 약 33글자
@@ -299,9 +303,11 @@ class DialogueSystem {
      *
      * @param {string} text - 출력할 텍스트
      * @param {string} charName - 말하는 캐릭터 이름
+     * @param {Array|null} structuredSegments - 구조화된 narration/dialogue 배열
+     * @param {Function|null} isStillCurrent - 장면 전환 시 오래된 렌더를 중단하는 소유권 검사
      * @returns {Promise} 타이핑 완료 시 resolve
      */
-    typeText(text, charName, structuredSegments = null) {
+    typeText(text, charName, structuredSegments = null, isStillCurrent = null) {
         // 텍스트가 없으면 바로 완료
         if (text === undefined || text === null) {
             console.warn("[DialogueSystem] typeText: 텍스트 없음");
@@ -312,6 +318,18 @@ class DialogueSystem {
         const processedText = Array.isArray(structuredSegments) && structuredSegments.length > 0
             ? this._segmentsToInlineText(structuredSegments, charName)
             : this.processPlaceholders(text, charName);
+
+        const renderOwner = { generation: ++this._renderGeneration };
+        this._activeRenderOwner = renderOwner;
+        const ownsRender = () => this._activeRenderOwner === renderOwner;
+        const finishOwnedRender = () => {
+            if (!ownsRender()) return false;
+            this.isTyping = false;
+            this.skipTyping = false;
+            this._activeRenderOwner = null;
+            this.updateTalkingAnimation(charName, false);
+            return true;
+        };
 
         // 말하기 애니메이션 시작
         this.updateTalkingAnimation(charName, true);
@@ -346,17 +364,24 @@ class DialogueSystem {
 
             // 애니메이션 프레임 함수
             const typeFrame = (timestamp) => {
+                if (!ownsRender()) {
+                    resolve();
+                    return;
+                }
+                if (typeof isStillCurrent === 'function' && !isStillCurrent()) {
+                    finishOwnedRender();
+                    resolve();
+                    return;
+                }
                 if (!startTime) startTime = timestamp;
 
                 // 스킵 요청이 들어오면 즉시 전체 텍스트 표시
                 if (this.skipTyping) {
                     this.uiManager.messageEl.innerHTML = this.parseNarration(textPart);
-                    this.isTyping = false;
                     if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;
-                    this.skipTyping = false;
-                    this.updateTalkingAnimation(charName, false);
                     const msgEl = this.uiManager.messageEl;
                     if (msgEl) msgEl.scrollTop = msgEl.scrollHeight;
+                    finishOwnedRender();
                     resolve();
                     return;
                 }
@@ -377,9 +402,7 @@ class DialogueSystem {
                 if (charIndex < textPart.length) {
                     requestAnimationFrame(typeFrame);
                 } else {
-                    this.isTyping = false;
                     if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;
-                    this.updateTalkingAnimation(charName, false);
 
                     // 이미지가 있으면 추가
                     if (imagePart) {
@@ -396,6 +419,7 @@ class DialogueSystem {
                     const msgEl = this.uiManager.messageEl;
                     if (msgEl) msgEl.scrollTop = msgEl.scrollHeight;
 
+                    finishOwnedRender();
                     resolve();
                 }
             };

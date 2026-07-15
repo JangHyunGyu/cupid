@@ -13,8 +13,7 @@ const CHARACTERS = [
 const REQUIRED_BLOCKS = [
     '[한국어 원문체]',
     '[자연스러운 한국어 말투]',
-    '[캐릭터 문체]',
-    '[대화 예시]'
+    '[캐릭터 문체]'
 ];
 const REMOVED_PRESSURE_BLOCKS = [
     '[필수 규칙]',
@@ -123,8 +122,8 @@ function assertCommonKoreanPrompt(prompt, label) {
     assert(!prompt.includes('{{user}}') && !prompt.includes('{{char}}'),
         `${label} still contains English example placeholders`);
     assert(!prompt.includes('enum'), `${label} still contains an avoidable English meta term`);
-    assert(prompt.includes('예시 1') && prompt.includes('사용자:') && prompt.includes('캐릭터:'),
-        `${label} does not use Korean example labels`);
+    assert(!prompt.includes('[대화 예시]') && !prompt.includes('예시 1\n상황:'),
+        `${label} still injects fixed dialogue examples into the active prompt`);
     assert(!prompt.includes('undefined'), `${label} contains undefined`);
 }
 
@@ -179,23 +178,21 @@ function verifyMainAndGalleryPrompts(context) {
         const galleryPrompt = gallery._buildSystemPrompt(character.galleryId);
         galleryPrompts[character.key] = galleryPrompt;
         assertCommonKoreanPrompt(galleryPrompt, `gallery/${character.key}`);
-        assert(galleryPrompt.includes('[성적]'), `[gallery/${character.key}] missing the adult example`);
+        assert(!galleryPrompt.includes('[성적]'), `[gallery/${character.key}] injected the adult example`);
         assert(galleryPrompt.includes('현재 장면의 인물은'), `[gallery/${character.key}] missing the in-world role rule`);
         assert(galleryPrompt.includes('연인 관계:'), `[gallery/${character.key}] missing the relationship label`);
     }
 
-    assert(mainPrompts.Teacher.includes('공개 합평') && mainPrompts.Teacher.includes('따로 만날 일은 아니야'),
-        'main Teacher prompt does not model the school-time professional boundary');
     assert(!mainPrompts.Teacher.includes('오늘은 그냥 안기고 싶어'),
         'main Teacher prompt leaked a post-graduation lover example');
-    assert(galleryPrompts.Teacher.includes('오늘은 그냥 안기고 싶어'),
-        'gallery Teacher prompt does not use the post-graduation example set');
+    assert(!galleryPrompts.Teacher.includes('오늘은 그냥 안기고 싶어'),
+        'gallery Teacher prompt still injects the post-graduation example set');
     assert(!galleryPrompts.Teacher.includes('주말에 따로 원고 얘기하면 안 돼요'),
         'gallery Teacher prompt leaked a school-time boundary example');
     assert(!mainPrompts.Nurse.includes('오늘 좀 외로웠어'),
         'main Nurse prompt leaked a post-graduation lover example');
-    assert(galleryPrompts.Nurse.includes('오늘 좀 외로웠어'),
-        'gallery Nurse prompt does not use the post-graduation example set');
+    assert(!galleryPrompts.Nurse.includes('오늘 좀 외로웠어'),
+        'gallery Nurse prompt still injects the post-graduation example set');
 
     const activeGalleryKorean = [
         ...Object.values(gallery.CHAR_PERSONALITIES).map(value => value.ko),
@@ -303,7 +300,7 @@ function verifyWiringAndScenePrompts() {
         'game memories do not use the canonical character key');
     assert(freeTalkSource.includes('this.stateManager.getChatMemory(charKey)'),
         'chat history does not read the canonical character key');
-    assert(freeTalkSource.includes('this.stateManager.setChatMemory(charKey, this.freeTalkHistory);'),
+    assert(freeTalkSource.includes('this.stateManager.setChatMemory(charKey, requestHistory);'),
         'chat history does not save the canonical character key');
     assert(freeTalkSource.includes('[scene.personality, scene.extra_guideline].filter(Boolean).join("\\n")'),
         'scene personality is not passed into the system prompt');
@@ -349,6 +346,117 @@ function verifyAdultExamplesOwnUserActions() {
     }
 }
 
+function verifyRequestOwnershipGuards() {
+    const main = read('assets/js/modules/FreeTalkSystem.js');
+    const gallery = read('assets/js/gallery-freetalk.js');
+    const dialogue = read('assets/js/modules/DialogueSystem.js');
+    for (const snippet of [
+        '_freeTalkEpoch', '_invalidateFreeTalkContext', 'history: requestHistory',
+        'this._assertRequestContext(requestContext, data)',
+        'this._rollbackRequestHistory(requestContext)',
+        'if (this._activeRequestOwner === requestOwner)'
+    ]) {
+        assert(main.includes(snippet), `main free-talk stale ownership guard is missing: ${snippet}`);
+    }
+    for (const snippet of [
+        '_galleryTalkEpoch', '_invalidateGalleryTalkContext', 'history: this.chatHistory',
+        'this._assertRequestContext(requestContext, data)',
+        'this._rollbackRequestHistory(requestContext)',
+        'this._saveMemory(requestCharId, requestHistory)'
+    ]) {
+        assert(gallery.includes(snippet), `gallery free-talk stale ownership guard is missing: ${snippet}`);
+    }
+    assert(dialogue.includes('isStillCurrent') && dialogue.includes('_activeRenderOwner') && dialogue.includes('if (!ownsRender())'),
+        'DialogueSystem cannot isolate a stale in-progress render from a newer render');
+    assert(gallery.includes('requestContext && !this._isRequestContextCurrent(requestContext)'),
+        'gallery free-talk cannot cancel a stale in-progress render');
+    assert(gallery.includes('_activeTypingOwner') && gallery.includes('if (!ownsTyping())'),
+        'gallery free-talk cannot isolate an old animation frame from a newer render');
+}
+
+function verifyTypingOwnerIsolation(context) {
+    const frames = [];
+    context.requestAnimationFrame = callback => {
+        frames.push(callback);
+        return frames.length;
+    };
+
+    const makeMessageElement = () => ({
+        _html: '',
+        children: [],
+        scrollTop: 0,
+        scrollHeight: 0,
+        set innerHTML(value) {
+            this._html = String(value || '');
+            this.children = [];
+        },
+        get innerHTML() { return this._html; },
+        appendChild(child) { this.children.push(child); }
+    });
+    const makeSpan = () => ({ className: '', textContent: '' });
+
+    context.KoreanProcessor = class KoreanProcessor {};
+    context.CHAR_NAME_MAP = {};
+    vm.runInContext(read('assets/js/modules/DialogueSystem.js'), context, {
+        filename: 'assets/js/modules/DialogueSystem.js'
+    });
+
+    const dialogueMessage = makeMessageElement();
+    const dialogueEvents = [];
+    const dialogue = new context.window.DialogueSystem({}, {
+        messageEl: dialogueMessage,
+        chatSkipBtn: null,
+        charSlots: {}
+    });
+    dialogue.processPlaceholders = text => text;
+    dialogue.parseNarration = text => text;
+    dialogue.updateTalkingAnimation = (charName, active) => dialogueEvents.push(`${charName}:${active}`);
+
+    let oldDialogueCurrent = true;
+    dialogue.typeText('old', 'Old', null, () => oldDialogueCurrent);
+    const oldDialogueFrame = frames.shift();
+    oldDialogueCurrent = false;
+    dialogue.typeText('new', 'New', null, () => true);
+    const newDialogueFrame = frames.shift();
+    const newDialogueOwner = dialogue._activeRenderOwner;
+    oldDialogueFrame(1);
+    assert(dialogue.isTyping, 'old DialogueSystem frame cleared the new typing state');
+    assert(dialogue._activeRenderOwner === newDialogueOwner,
+        'old DialogueSystem frame released the new render owner');
+    assert(!dialogueEvents.includes('Old:false'),
+        'old DialogueSystem frame disabled animation after a new render started');
+    newDialogueFrame(1);
+    frames.shift()(1000);
+    assert(!dialogue.isTyping && dialogue._activeRenderOwner === null,
+        'current DialogueSystem render did not release its own typing state');
+
+    const galleryMessage = makeMessageElement();
+    context.document = {
+        documentElement: { lang: 'ko' },
+        getElementById: id => id === 'message' ? galleryMessage : null,
+        createElement: () => makeSpan()
+    };
+    const gallery = new context.window.GalleryFreeTalk('ko', {});
+    gallery._sanitizePlayerPlaceholders = text => text;
+    gallery._sanitizeSegmentsPlaceholders = segments => segments;
+    gallery._parseSegments = text => [{ type: 'text', content: text }];
+    gallery._zetaFormatText = text => text;
+
+    gallery._typeText('old');
+    const oldGalleryFrame = frames.shift();
+    gallery._typeText('new');
+    const newGalleryFrame = frames.shift();
+    const newGalleryOwner = gallery._activeTypingOwner;
+    oldGalleryFrame(1);
+    assert(gallery.isTyping, 'old gallery frame cleared the new typing state');
+    assert(gallery._activeTypingOwner === newGalleryOwner,
+        'old gallery frame released the new typing owner');
+    newGalleryFrame(1);
+    frames.shift()(1000);
+    assert(!gallery.isTyping && gallery._activeTypingOwner === null,
+        'current gallery render did not release its own typing state');
+}
+
 verifyGalleryLoaderOrder();
 const context = createPromptRuntime();
 verifyMainAndGalleryPrompts(context);
@@ -356,5 +464,7 @@ verifyMemories(context);
 verifyLatestUserCanon(context);
 verifyWiringAndScenePrompts();
 verifyAdultExamplesOwnUserActions();
+verifyRequestOwnershipGuards();
+verifyTypingOwnerIsolation(context);
 
-console.log(`Verified Korean runtime prompts for ${CHARACTERS.length} characters, 10 scene prompts, loader order, memories, and user agency.`);
+console.log(`Verified Korean runtime prompts for ${CHARACTERS.length} characters, 10 scene prompts, loader order, memories, user agency, and stale-turn ownership.`);
