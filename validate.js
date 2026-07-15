@@ -638,8 +638,8 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.85') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.85이 아님: ' + loaderVersion);
+    if (loaderVersion !== '2.9.86') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.86이 아님: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');
@@ -651,8 +651,8 @@ try {
         }
     }
     const swContent = fs.readFileSync(path.join(__dirname, 'service-worker.js'), 'utf8');
-    if (!swContent.includes("const CACHE_VERSION = 'cupid-v3.3.45'")) {
-        errors.push('[VERSION_SYNC] service-worker 캐시 버전이 cupid-v3.3.45이 아님');
+    if (!swContent.includes("const CACHE_VERSION = 'cupid-v3.3.46'")) {
+        errors.push('[VERSION_SYNC] service-worker 캐시 버전이 cupid-v3.3.46이 아님');
     }
 } catch (e) {
     warnings.push('[VERSION_SYNC] 버전 파일 읽기 실패: ' + e.message);
@@ -1695,8 +1695,19 @@ try {
     if (promptVersion !== '2.7.26') {
         errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.26이 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.24') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.24이 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.25') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.25이 아님: ' + galleryPromptVersion);
+    }
+    const completedActionCanonSignals = [
+        '완료형으로 쓴 행동은 성적 접촉도 이미 일어난 사건이며',
+        '이는 캐릭터의 동의나 호응을 대신 정하지 않으므로',
+        'including sexual contact, already happened in the scene',
+        "This does not decide the character's consent or reciprocation"
+    ];
+    for (const source of [ftSysContent, gftContent]) {
+        if (completedActionCanonSignals.some(signal => !source.includes(signal))) {
+            errors.push('[FREETALK_PROMPT] 완료형 성적 행동의 사실성과 캐릭터 동의가 분리되어 있지 않음');
+        }
     }
     for (const removedSymbol of [
         'CHAR_SPEECH_STYLES',

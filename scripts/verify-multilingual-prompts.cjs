@@ -178,6 +178,15 @@ for (const lang of languages) {
     galleryPlayerName = 'Alex';
     const data = context.window.getPromptData(lang, 'Alex');
     assert(data && typeof data === 'object', `[${lang}] getPromptData returned no data`);
+    const canonSource = JSON.stringify([{ role: 'user', content: '*I kissed her.*' }]);
+    const mainCanonBlock = vm.runInContext(`buildCupidLatestUserCanonBlock(${canonSource}, '${lang}', '')`, context);
+    const galleryCanonBlock = vm.runInContext(`buildGalleryLatestUserCanonBlock(${canonSource}, '${lang}', '')`, context);
+    for (const [label, block] of [['main', mainCanonBlock], ['gallery', galleryCanonBlock]]) {
+        assert(block.includes('including sexual contact, already happened in the scene'),
+            `[${lang}/${label}] canon block can still erase a completed sexual action`);
+        assert(block.includes("This does not decide the character's consent or reciprocation"),
+            `[${lang}/${label}] canon block no longer separates event fact from character consent`);
+    }
     let mainCacheBaseline = '';
 
     for (const char of characters) {
