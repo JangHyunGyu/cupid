@@ -368,9 +368,7 @@
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "Infirmière",
-        "text": "*Elle referme la fiche de suivi.* Tu te souviens de l'ordre qu'on a noté aujourd'hui ? Si tu te sens perdu, commence par la première personne de la liste.",
-        "context": "Jour 4. Le moment des adieux quand elle demande si tu reviendras après tes études. La scène où les deux montrent leurs vrais cœurs. Ton : Conversation plus profonde et émotionnelle. La vérité derrière la malice. Le sens d'être appelé par son nom.",
-        "personality": "L'infirmière est prudente et honnête. Elle veut t'appeler par ton nom mais elle est dans une position prudente. Des larmes coulent à ta promesse."
+        "text": "*Elle referme la fiche de suivi.* Tu te souviens de l'ordre qu'on a noté aujourd'hui ? Si tu te sens perdu, commence par la première personne de la liste."
     },
     "hidden_nurse_d4_check": {
         "name": "Système",

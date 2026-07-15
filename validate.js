@@ -638,6 +638,22 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
+    if (loaderVersion !== '2.9.81') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.81이 아님: ' + loaderVersion);
+    }
+    if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
+        errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');
+    }
+    for (const file of htmlFiles) {
+        if (file.content.includes('data-cupid-entry-script="true"')
+            && !file.content.includes(`?v=${loaderVersion}`)) {
+            errors.push('[VERSION_SYNC] 진입 로더 캐시 버전 불일치: ' + file.name);
+        }
+    }
+    const swContent = fs.readFileSync(path.join(__dirname, 'service-worker.js'), 'utf8');
+    if (!swContent.includes("const CACHE_VERSION = 'cupid-v3.3.41'")) {
+        errors.push('[VERSION_SYNC] service-worker 캐시 버전이 cupid-v3.3.41이 아님');
+    }
 } catch (e) {
     warnings.push('[VERSION_SYNC] 버전 파일 읽기 실패: ' + e.message);
 }
@@ -1621,8 +1637,17 @@ try {
     if (!ftSysContent.includes(requiredEn) || !gftContent.includes(requiredEn)) {
         errors.push('[FREETALK_CANON] 영문 최신 유저 사실화 규칙이 동일하지 않음');
     }
-    if (!promptsContent.includes('따로 적힌 캐릭터별 사실 잠금만 예외입니다')) {
+    const staticCanonLock = '위의 캐릭터별 사실 잠금만 예외입니다';
+    if (!promptsContent.includes(staticCanonLock) || !gftContent.includes(staticCanonLock)) {
         errors.push('[FREETALK_CANON] 정적 프롬프트의 유일 예외 규칙 누락');
+    }
+    const ownershipKo = '"내/제 손·입술·손끝"은 사용자 캐릭터의 몸입니다';
+    if (!ftSysContent.includes(ownershipKo) || !gftContent.includes(ownershipKo)) {
+        errors.push('[FREETALK_CANON] 게임/갤러리 사용자 신체 소유 주체 규칙 누락');
+    }
+    const optionalNarrationKo = '대사만으로 자연스러우면 dialogue 하나면 충분하며';
+    if (!promptsContent.includes(optionalNarrationKo) || !gftContent.includes(optionalNarrationKo)) {
+        errors.push('[FREETALK_SCHEMA] narration 선택 규칙이 게임/갤러리에 동일하게 유지되지 않음');
     }
 } catch (e) {
     errors.push('[FREETALK_CANON] 사실화 규칙 검증 실패: ' + e.message);
@@ -1632,6 +1657,12 @@ try {
     require('./scripts/verify-korean-prompts.cjs');
 } catch (e) {
     errors.push('[KOREAN_PROMPT_CHECK] 한국어 런타임 프롬프트 검증 실패: ' + e.message);
+}
+
+try {
+    require('./scripts/verify-multilingual-prompts.cjs');
+} catch (e) {
+    errors.push('[MULTILINGUAL_PROMPT_CHECK] 7언어 프리토킹 프롬프트 검증 실패: ' + e.message);
 }
 
 // FT-5: 프리토킹 턴 수 / maxTurns 설정 일관성
@@ -1652,26 +1683,62 @@ try {
     }
 } catch (e) {}
 
-// FT-6: 갤러리 프리토킹 CHAR_SPEECH_STYLES 언어별 캐릭터 완전성
+// FT-6: 제거한 프롬프트 압박 블록이 런타임 경로에 되살아나지 않는지 확인
 try {
+    const promptsContent = fs.readFileSync(path.join(__dirname, 'assets/js/prompts.js'), 'utf8');
+    const ftSysContent = fs.readFileSync(path.join(__dirname, 'assets/js/modules/FreeTalkSystem.js'), 'utf8');
     const gftContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-freetalk.js'), 'utf8');
-    const speechMatch = gftContent.match(/CHAR_SPEECH_STYLES\s*=\s*\{([\s\S]*?)\n\s{4}\};/);
-    if (speechMatch) {
-        const charIds = ['seyoun', 'yuna', 'dain', 'teacher', 'nurse'];
-        for (const lang of allLangs) {
-            // 각 언어 블록에 모든 캐릭터가 있는지
-            const langBlock = speechMatch[1].split(new RegExp("'" + lang + "'\\s*:"))[1]?.split(/'\w+'\s*:/)[0] || '';
-            for (const cid of charIds) {
-                if (!langBlock.includes(cid)) {
-                    // 언어 블록 자체가 없으면 FREETALK_LANG에서 이미 잡으므로 skip
-                    if (speechMatch[1].includes("'" + lang + "'")) {
-                        warnings.push('[FREETALK_SPEECH] CHAR_SPEECH_STYLES ' + lang + ': "' + cid + '" 캐릭터 스타일 누락');
-                    }
-                }
-            }
+    const activePromptSources = [promptsContent, ftSysContent, gftContent].join('\n');
+    const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
+    const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
+    if (promptVersion !== '2.7.23') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.23이 아님: ' + promptVersion);
+    }
+    if (galleryPromptVersion !== '2.7.21') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.21이 아님: ' + galleryPromptVersion);
+    }
+    for (const removedSymbol of [
+        'CHAR_SPEECH_STYLES',
+        'getRoleplayHardRules',
+        'getRoleplayPerformanceGuide',
+        'getRoleplayStoryInvariants',
+        'GRAPHIC_SEXUAL_REPETITION_GUARD_NOTE',
+        '_buildLatestOutsideCueNarrationOverride',
+        'buildCupidActionFollowThroughGuard',
+        'getSocialContext',
+        'otherDatingChars'
+    ]) {
+        if (activePromptSources.includes(removedSymbol)) {
+            errors.push('[FREETALK_PROMPT] 제거한 압박 프롬프트 심볼이 남아 있음: ' + removedSymbol);
         }
     }
-} catch (e) {}
+    for (const removedPhrase of [
+        '[출력 전 한국어 점검]',
+        '짧게 다시 씁니다',
+        '실제 말처럼 짧고',
+        '실제 연인의 말처럼 짧고',
+        'answer in polished target-language prose',
+        'silently rewrite every dialogue and narration line',
+        'Before outputting JSON, do a native English rewrite pass',
+        'Most spoken lines should be one or two short sentences',
+        '10〜35字程度',
+        'una o dos frases cortas',
+        'une ou deux phrases courtes',
+        'ein oder zwei kurze Sätze',
+        'uma ou duas frases curtas'
+    ]) {
+        if (activePromptSources.includes(removedPhrase)) {
+            errors.push('[FREETALK_PROMPT] 제거한 편집/강제 축약 압박이 남아 있음: ' + removedPhrase);
+        }
+    }
+    for (const [label, source] of [['main', promptsContent], ['gallery', gftContent]]) {
+        if (!source.includes('"segments"') || !source.includes('"expression"')) {
+            errors.push('[FREETALK_PROMPT] ' + label + ' segments/expression 계약 누락');
+        }
+    }
+} catch (e) {
+    errors.push('[FREETALK_PROMPT] 압박 프롬프트 제거 검증 실패: ' + e.message);
+}
 
 console.log('[FREETALK_CHECK] AI 프리토킹 검증 완료\n');
 

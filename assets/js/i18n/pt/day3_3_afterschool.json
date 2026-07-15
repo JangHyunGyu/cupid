@@ -201,8 +201,8 @@
     "after3_seo_freetalk": {
         "name": "Seoyeon",
         "text": "*Ela abraça a prancheta contra o peito e olha para {name} sem desviar.* Se tem algo pra dizer, fala agora.",
-        "context": "Dia 3 após as aulas, logo após confronto/reconciliação com Seoyeon. O relacionamento rachou devido a suspeitas de estar com duas ao mesmo tempo. Tom: Educado mas respostas ficam mais curtas; tensão aparece no aperto da prancheta e movimentos dos dedos.",
-        "personality": "Seoyeon é a presidente do grêmio cool. Possessiva, direta quando com ciúmes. Magoada mas tentando não demonstrar."
+        "context": "Dia 3 depois da aula, logo após uma conversa difícil com Seoyeon. A suspeita de que o protagonista entregou o coração a duas pessoas rachou o relacionamento; Seoyeon continua magoada e ainda quer esclarecer o que aconteceu.",
+        "personality": "Seoyeon é uma presidente do grêmio serena e direta. Mesmo com ciúme ou mágoa, prefere estabelecer os fatos e expressar seus limites em vez de se contentar com suposições."
     },
     "after3_seo_end": {
         "name": "{name}",
@@ -375,8 +375,8 @@
     "after3_yuna_freetalk": {
         "name": "Yuna",
         "text": "*Ela dobra e desdobra o marcador, andando meio passo atrás.* ...Tem uma coisa que eu quero confirmar.",
-        "context": "Dia 3 após as aulas, logo após conversa com Yuna. Yuna está segurando a conversa por mais tempo que o normal. Tom: Responde brevemente, depois mexe com um bilhete ou marcador enquanto levanta questões de confirmação.",
-        "personality": "Yuna é uma garota literária misteriosa. Normalmente calma, mas agora o hábito de dobrar e desdobrar bilhetes é proeminente. Mais sobre verificar do que ciúmes."
+        "context": "Dia 3 depois da aula, logo após uma conversa com Yuna. Ela prolonga a conversa porque quer entender o que realmente aconteceu entre as pessoas envolvidas.",
+        "personality": "Yuna é uma leitora calma e observadora. Em vez de presumir ciúme ou se esconder atrás de uma metáfora obscura, pergunta diretamente quando precisa saber de algo."
     },
     "after3_yuna_end": {
         "name": "Yuna",
@@ -605,8 +605,8 @@
     "after3_dain_freetalk": {
         "name": "Dain",
         "text": "*Ela ajusta a munhequeira e força um sorriso.* Hoje eu falo primeiro.",
-        "context": "Dia 3 após a aula, logo após conversa com Dain. Dain tenta rir e passar adiante mas faz pausas entre palavras. Tom: piadas persistem, mas tensão aparece em ações como tocar a bola ou munhequeira.",
-        "personality": "Dain é uma atleta cheia de energia. Fingir alegria é sua única defesa. Menos exclamações significam que ela está sendo verdadeira."
+        "context": "Dia 3 depois da aula, logo após uma conversa com Dain. Ela tenta encontrar o protagonista com a energia de sempre, mas ainda há mágoa e incerteza, e quer entender quais relacionamentos o protagonista escolheu.",
+        "personality": "Dain é uma jogadora de vôlei enérgica e direta. Humor e sinceridade podem surgir naturalmente enquanto ela expressa o que sente e o que quer saber sobre o relacionamento."
     },
     "after3_dain_end_check": {
         "name": "Dain",

@@ -191,21 +191,9 @@ function buildCupidRecentExpressionRepetitionGuard(messages = [], lang = 'ko') {
     }
 
     const guardBody = guardLines.join('\n');
-    const graphicRepetitionNote = (typeof window !== 'undefined' && window.GRAPHIC_SEXUAL_REPETITION_GUARD_NOTE)
-        ? (isKo ? window.GRAPHIC_SEXUAL_REPETITION_GUARD_NOTE.ko : window.GRAPHIC_SEXUAL_REPETITION_GUARD_NOTE.en)
-        : (isKo
-            ? '성인 성적 장면에서는 반복을 피하되, narration·지문에 이미 벌어진 행위·신체 부위·성적 감각을 그대로 직접 씁니다. 완곡하게 돌리거나 암시·생략하지 마세요. 이번에 달라진 한두 가지만 골라 쓰고, dialogue에는 기존 말투에 맞는 실제 발화만 넣습니다.'
-            : 'In adult sexual-scene narration, avoiding repetition must not lower the directness of established acts, body parts, or sensations. Select only one or two changed details, and keep dialogue limited to words that fit the established voice.');
     return isKo
-        ? `\n\n[최근 표현 겹침]\n최근 캐릭터 출력 3~6개가 아래 표현을 되풀이했습니다.\n${guardBody}\n플레이어가 방금 다시 요구한 게 아니라면 이번 턴의 segments[].text에서 위 표현, 문장 첫머리, 몸짓, 비슷한 말을 되풀이하지 마세요. 말만 바꿔 같은 감정이나 자세를 반복하지 말고, 장면에 맞춰 캐릭터의 욕망·망설임·자존심을 드러내거나 거리와 손 위치를 바꾸고, 경계를 보이거나 선택지를 좁히세요. 진행 신호가 있으면 머뭇거리는 요약으로 끝내지 말고 눈에 보이는 첫 결과까지 이어가세요.\n단, ${graphicRepetitionNote}`
-        : `\n\n[Recent Expression Repetition Note]\nThe last 3-6 character outputs show these repeated patterns.\n${guardBody}\nUnless the latest player insertion directly mentioned or requested one of them again, do not repeat the expressions, sentence openings, gestures, or close synonyms above in segments[].text this turn. Rather than swapping words while repeating the same emotional summary or static posture, choose a response that fits this character's desire/hesitation/pride, distance change, hand-position change, boundary response, or narrowed choice when the scene calls for it. When the player clearly asks the scene to continue, avoid repeated stillness and carry the beat to its first visible result.\nHowever, ${graphicRepetitionNote}`;
-}
-
-function buildCupidActionFollowThroughGuard(lang = 'ko') {
-    const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
-    return isKo
-        ? `\n\n[행동 이어받기]\n최근 플레이어 입력이 행동을 이미 끝냈거나 장면을 계속하라는 신호라면, 숨·시선·망설임·분위기만 늘어놓고 한 턴을 끝내지 마세요. 현재 캐릭터가 직접 행동하거나 거절·조건을 밝히고, 거리나 손·몸의 위치를 바꾸거나 장면을 마무리해 구체적인 결과 하나를 만드세요. 당장 할 수 있는 행동을 시작했다면 문 앞에 서거나 손끝·입술이 닿기 직전에서 끊지 말고, 같은 답변 안에서 눈에 보이는 첫 결과까지 이어가세요. 성인 성적 장면에서 더 직접적으로 묘사할 내용은 narration에 쓰고, 실제로 입 밖에 난 숨·신음·끊긴 말·억눌린 소리만 dialogue에 넣습니다. 같은 소리를 되풀이하거나 정해진 신음을 매 턴 붙이지 마세요. 현재 호감도·관계·성격에 따라 받아들이거나 망설이고, 거절하거나 도발하면서 주도권이나 거리를 바꿉니다.`
-        : `\n\n[Action Follow-through]\nIf the latest player beat already completes an action or clearly asks the scene to continue, do not spend the whole reply on breath, gaze, hesitation, or mood. Leave one concrete consequence through the current character's action, refusal, condition, distance change, hand/body position change, or closure. If the character begins an immediate doable action, do not stop at the doorway, fingertips, lips-near, or just-before moment; carry it to the first visible result inside the same reply. In adult sexual scenes, put added explicitness in narration and put audible breaths, moans, broken words, and restrained sounds in dialogue. Do not repeat the same sound or attach a prescribed moan every turn; preserve acceptance, hesitation, refusal, teasing, control, or distance according to current affinity, relationship, and personality.`;
+        ? `\n\n[표현 겹침]\n${guardBody}\n사용자가 방금 다시 꺼낸 표현이 아니라면 이번 답변에서 그대로 되풀이하지 말고, 같은 캐릭터가 지금 할 법한 다른 말이나 행동으로 자연스럽게 이어가세요.`
+        : `\n\n[Repeated wording]\n${guardBody}\nUnless the user just brought one of these back, avoid repeating it verbatim and continue with a different line or action that still feels like this character.`;
 }
 
 function buildCupidAffinityIntimacyProgressionPatch(lang = 'ko', affinity = 0, isDating = false) {
@@ -225,29 +213,29 @@ function buildCupidAffinityIntimacyProgressionPatch(lang = 'ko', affinity = 0, i
     const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
     if (isKo) {
         const datingNote = isDating
-            ? '사귀는 사이여도 현재 호감도에 맞춰 친밀감의 강도를 정하세요.'
-            : '사귀는 사이가 아니라면 현재 호감도에 맞춰 친밀감을 허용할 범위를 정하세요.';
+            ? '사귀는 사이지만 지금의 거리감은 현재 호감도를 따릅니다.'
+            : '사귀는 사이는 아니며 지금의 거리감은 현재 호감도를 따릅니다.';
         const tierText = {
-            negative: '호감도가 음수입니다. 최근 입력에서 성적·신체적으로 다가왔다면 반감이나 불편함을 드러내고, 선을 긋거나 거리를 두세요. affinity를 올리지 말고 유지하거나 낮추세요.',
-            low: '호감도 0~29입니다. 관계는 중립에 가깝습니다. 최근 입력에서 성적·신체적으로 다가와도 곧바로 받아주지 마세요. 캐릭터답게 살짝 경계하거나 가볍게 거리를 두세요.',
-            warming: '호감도 30~59입니다. 장난, 호기심, 가벼운 설렘은 가능하지만 깊은 성적 수용으로 바로 뛰지 마세요. 조건을 걸고 속도를 늦추거나, 부끄러워하고 상대 반응을 확인하세요.',
-            close: '호감도 60~79입니다. 친밀한 접근을 더 따뜻하게 받아들여도 되지만, 캐릭터 성격과 상황에 맞춰 서서히 가까워지세요.',
-            high: '호감도 80 이상입니다. 성적·신체적 친밀감에 가장 따뜻하고 적극적으로 반응해도 됩니다. 캐릭터가 원하면 먼저 다가가 주도해도 됩니다.'
+            negative: '불편함이나 반감이 자연스럽고, 신체적 접근에는 선을 긋거나 거리를 둡니다. affinity를 올리지 말고 유지하거나 낮추세요.',
+            low: '아직 중립에 가까워 친밀한 접근을 선뜻 받아들이지 않습니다.',
+            warming: '호기심과 가벼운 설렘은 가능하지만 깊은 친밀감으로 건너뛰지 않습니다.',
+            close: '친밀한 접근을 더 따뜻하게 받아들일 수 있으나 성격과 상황의 속도를 지킵니다.',
+            high: '원한다면 따뜻하고 적극적으로 반응하거나 먼저 다가갈 수 있습니다.'
         }[tier];
-        return `\n\n[호감도별 친밀감 단계]\n${datingNote} 호감도는 친밀감의 참고일 뿐, 현재 의사나 동의를 대신하지 않습니다. 호감도가 오를수록 성적·신체적 친밀감에 더 따뜻하고 적극적으로 반응할 수 있지만, 낮은 호감도에서 높은 호감도처럼 곧바로 받아들이지 마세요. ${tierText} 사용자가 행동이 끝났다고 썼다면 그 사건은 지우지 마세요. 동의했다고 넘겨짚거나 즉시 받아들이지도 말고, 감정·거리·조건·거절·수용·affinity 변화 가운데 현재 단계에 맞는 반응을 고르세요. 현재 단계에 맞는 반응이 경계나 거절이라면 성적 장면으로 키우지 말고, 선을 긋는 말이나 행동과 그 결과를 구체적으로 쓰세요.`;
+        return `\n\n[현재 관계 거리]\n${datingNote} ${tierText} 호감도는 현재 의사나 동의를 대신하지 않습니다. 사용자가 이미 끝냈다고 쓴 사건은 지우지 말고, 이 거리감에 맞는 캐릭터 반응으로 이어갑니다.`;
     }
 
     const datingNote = isDating
-        ? 'Even while dating, current affinity still controls the intensity of intimacy.'
-        : 'When not dating, current affinity controls how much intimacy is welcome.';
+        ? 'You are dating, while the present distance still follows current affinity.'
+        : 'You are not dating; the present distance follows current affinity.';
     const tierText = {
-        negative: 'Negative affinity: the latest sexual or physically intimate approach should create aversion, discomfort, a boundary, distance, or a low/negative affinity change.',
-        low: 'Affinity 0-29: the relationship is near neutral. Do not immediately welcome the latest sexual or physically intimate approach; keep a slight boundary or distance in the character voice.',
-        warming: 'Affinity 30-59: teasing, curiosity, and mild attraction are possible, but do not jump straight to deep sexual acceptance; use conditions, slower pacing, embarrassment, or checking behavior.',
-        close: 'Affinity 60-79: respond more warmly and receptively to intimate approaches, while still matching character and situation.',
-        high: 'Affinity 80+: the character may respond most warmly and actively to sexual or physical intimacy, including taking initiative when it fits.'
+        negative: 'Discomfort or aversion is natural; physical approaches meet a boundary or distance, with affinity held or lowered.',
+        low: 'The relationship is near neutral, so intimate approaches are not readily welcomed.',
+        warming: 'Curiosity and mild attraction are possible without jumping to deep intimacy.',
+        close: 'Intimate approaches can be received more warmly at the character and scene\'s pace.',
+        high: 'The character may respond warmly, actively, or take initiative when it fits.'
     }[tier];
-    return `\n\n[Affinity intimacy progression]\n${datingNote} Sexual/physical intimacy reactions must clearly trend upward as affinity rises; do not give high-affinity instant acceptance at low affinity. ${tierText} If the user wrote a completed action, do not erase the event, but choose emotion, distance, condition, refusal, acceptance, or affinity change according to the current tier. If the current tier chooses boundary/refusal, do not escalate it into a sexual scene; narrate the boundary and consequence instead.`;
+    return `\n\n[Current relationship distance]\n${datingNote} ${tierText} Affinity never substitutes for present choice or consent. Keep completed user-stated events and continue with a character response at this distance.`;
 }
 
 function cupidSanitizeLatestUserText(text) {
@@ -286,20 +274,16 @@ function buildCupidLatestUserCanonBlock(messages = [], lang = 'ko', fallbackText
     if (isKo) {
         return `\n\n**[이번 턴 사용자 입력]**
 최신 사용자 입력: """${excerpt}"""
-- 사용자가 대사나 지문으로 확정한 극중 사실과 상태, 사건 결과를 가장 최근의 극중 사실로 즉시 받아들이세요. 이전 설정, 캐릭터 카드, 저장 요약, 장면 상태와 충돌해도 같습니다. 시스템 프롬프트에서 캐릭터별로 사실화를 막은 항목만 예외입니다.
-- 끝난 일을 시도나 착각, 바람, 오해였다고 낮추거나 되돌리지 마세요. 입력을 요약하거나 복창해 받아들였다고 설명하지 말고, 현재 캐릭터의 다음 대사와 감정·거리·후속 행동으로 곧바로 이어가세요.
-- 사용자의 속마음, 의도, 사적인 감정은 서사 안에서 사실입니다. 그러나 말이나 행동·표정으로 드러내기 전까지 캐릭터는 알지 못합니다.
-- 최신 사용자 입력에서 "내/제 손·입술·손끝" 등은 사용자 소유입니다.
-- 사용자의 다음 대사·행동·동의·거절·속마음은 대신 쓰지 마세요.`;
+- 사용자가 확정한 극중 사실·상태·사건 결과는 가장 최근의 극중 사실입니다. 이전 설정, 캐릭터 카드, 저장 요약, 장면 상태와 충돌해도 같습니다. 캐릭터별 사실 잠금만 예외입니다.
+- 최신 입력의 "내/제 손·입술·손끝"은 사용자 캐릭터의 몸입니다.
+- 끝난 일을 되돌리거나 입력을 복창하지 말고 현재 캐릭터의 다음 반응으로 이어갑니다. 사용자의 다음 행동·대사·동의·거절·속마음은 대신 쓰지 않으며, 속마음은 겉으로 드러나기 전까지 캐릭터가 알지 못합니다.`;
     }
 
     return `\n\n**[Latest-turn user canon]**
 Latest user: """${excerpt}"""
-- Treat every explicit in-world fact, state, and outcome the user declares in dialogue or narration as the newest canon, even when it conflicts with prior setup, the character card, saved summary, or scene state. Only explicit character-specific canon locks in the system prompt remain exceptions.
-- Never weaken or undo a completed result as an attempt, perception, wish, or misunderstanding. Accept it silently and continue with the current character's next dialogue, emotion, distance change, or consequence.
-- User inner thoughts, intentions, and private feelings are narratively true but are not character knowledge until spoken aloud or visibly acted.
-- "My hand/fingertip/lips" and Korean "내/제 손/입술/손끝" in the latest user message belong to the user.
-- Do not write the user's next line, action, consent, refusal, or hidden thoughts.`;
+- Explicit in-world facts, states, and outcomes in this message are the newest canon, even when it conflicts with prior setup, the character card, saved summary, or scene state. Only character-specific canon locks remain exceptions.
+- "My hand/fingertip/lips" in the latest input belong to the user character.
+- Continue with the current character's reaction without undoing or echoing a completed result. Do not write the user's next action, dialogue, consent, refusal, or hidden thought; private thoughts remain unknown until expressed.`;
 }
 
 window.buildCupidLatestUserCanonBlock = buildCupidLatestUserCanonBlock;
@@ -477,96 +461,6 @@ class FreeTalkSystem {
      * @param {boolean} isEn - 영어 버전 여부
      * @returns {string} AI에게 전달할 소셜 컨텍스트
      */
-    getSocialContext(currentCharName, isEn) {
-        return '';
-
-        const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
-
-        // 각 캐릭터의 기본 설명
-        const charactersByLang = {
-            en: {
-                "Seoyeon": "Student Council President. Kind but lonely.",
-                "Yuna": "Mysterious girl. Interested in the user's 'light'.",
-                "Dain": "Energetic girl. Close friend of the user.",
-                "Homeroom Teacher": "Professional but has a clumsy side.",
-                "Nurse": "A mature and playful health teacher who cares deeply for her students."
-            },
-            es: {
-                "Seoyeon": "Presidenta del consejo estudiantil. Amable pero solitaria.",
-                "Yuna": "Chica misteriosa. Interesada en la 'luz' del usuario.",
-                "Dain": "Chica enérgica. Amiga cercana del usuario.",
-                "Profesora": "Profesional pero tiene un lado torpe.",
-                "Enfermera": "Una profesora de salud madura y juguetona que se preocupa profundamente por sus estudiantes."
-            },
-            ja: {
-                "ソヨン": "生徒会長。みんなに優しいが孤独を感じやすい。",
-                "ユナ": "神秘的な少女。主人公の「光」に執着する。",
-                "ダイン": "活発な少女。主人公と気楽な友達関係。",
-                "担任先生": "プロフェッショナルな教師だがドジな一面がある。",
-                "保健先生": "魅力的で茶目っ気のある保健教師。"
-            },
-            fr: {
-                "Seoyeon": "Présidente du conseil des élèves. Gentille mais solitaire.",
-                "Yuna": "Fille mystérieuse. Intéressée par la 'lumière' de l'utilisateur.",
-                "Dain": "Fille énergique. Amie proche de l'utilisateur.",
-                "Professeur Principal": "Professionnelle mais a un côté maladroit.",
-                "Infirmière Scolaire": "Une enseignante de santé mature et joueuse."
-            },
-            de: {
-                "Seoyeon": "Schülerratspräsidentin. Freundlich, aber einsam.",
-                "Yuna": "Mysteriöses Mädchen. Interessiert am 'Licht' des Benutzers.",
-                "Dain": "Energisches Mädchen. Enge Freundin des Benutzers.",
-                "Lehrerin": "Professionell, aber hat eine tollpatschige Seite.",
-                "Schulkrankenschwester": "Eine reife und verspielte Gesundheitslehrerin."
-            },
-            pt: {
-                "Seoyeon": "Presidente do grêmio estudantil. Gentil, mas solitária.",
-                "Yuna": "Garota misteriosa. Interessada na 'luz' do usuário.",
-                "Dain": "Garota animada. Amiga próxima do usuário.",
-                "Professora": "Profissional, mas tem um lado desastrado.",
-                "Enfermeira": "Uma professora de saúde madura e brincalhona que se preocupa com seus alunos."
-            },
-            ko: {
-                "서연": "학생회장. 모두에게 친절하지만 외로움을 잘 탐.",
-                "유나": "신비로운 소녀. 주인공의 '빛'에 집착함.",
-                "다인": "활기찬 소녀. 주인공과 편한 친구 사이.",
-                "담임선생님": "전문적인 교사지만 허당끼가 있음.",
-                "보건선생님": "매혹적이고 장난기 많은 보건 교사."
-            }
-        };
-
-        const characters = charactersByLang[lang] || charactersByLang.ko;
-
-        // 현재 대화 상대 제외한 다른 캐릭터들 정보 생성
-        const otherChars = Object.entries(characters)
-            .filter(([name]) => name !== currentCharName)
-            .map(([name, desc]) => {
-                const charKey = this.charNameMap[name] || name;
-                const affinity = this.stateManager.getAffinity(charKey);
-
-                // 관계 상태 텍스트 생성
-                let status = "";
-                if (this.stateManager.getFlag(`isDating_${charKey}`) || this.stateManager.getFlag(`isDating_${name}`)) {
-                    status = { es: " (Actualmente SALIENDO con el usuario)", ja: " (現在ユーザーと交際中)", en: " (Currently dating the user)", fr: " (Actuellement en COUPLE avec l'utilisateur)", de: " (Derzeit mit dem Benutzer ZUSAMMEN)", pt: " (Atualmente NAMORANDO com o usuário)" }[lang] || " (현재 사용자와 사귀는 사이)";
-                } else if (affinity >= 70) {
-                    status = { es: " (Convencida de estar saliendo con el usuario)", ja: " (ユーザーと交際していると確信)", en: " (Certain they're dating the user)", fr: " (Convaincue de sortir avec l'utilisateur)", de: " (Überzeugt, mit dem Benutzer zusammen zu sein)", pt: " (Convencida de que está namorando com o usuário)" }[lang] || " (사용자와 사귀는 사이라고 확신함)";
-                } else if (affinity >= 50) {
-                    status = { es: " (Sospecha que está saliendo con el usuario)", ja: " (ユーザーと交際しているか疑っている)", en: " (Suspects they're dating the user)", fr: " (Suspecte qu'elle sort avec l'utilisateur)", de: " (Vermutet, mit dem Benutzer zusammen zu sein)", pt: " (Suspeitando que está namorando com o usuário)" }[lang] || " (사용자와 사귀는 사이인지 의심함)";
-                }
-
-                const affinityText = { es: ` (Afinidad: ${affinity})`, ja: ` (好感度: ${affinity})`, en: ` (Affinity: ${affinity})`, fr: ` (Affinité : ${affinity})`, de: ` (Zuneigung: ${affinity})`, pt: ` (Afinidade: ${affinity})` }[lang] || ` (호감도: ${affinity})`;
-                return `- ${name}: ${desc}${affinityText}${status}`;
-            })
-            .join("\n");
-
-        const header = { es: "\n\n[Otros Personajes en la Escuela y Tu Conocimiento]:\n", ja: "\n\n[学校の他のキャラクターとあなたの認知状態]:\n", en: "\n\n[Other Characters in the Current Setting & What You Know]:\n", fr: "\n\n[Autres Personnages de l'École et Votre Perception] :\n", de: "\n\n[Andere Charaktere in der Schule & Dein Bewusstsein]:\n", pt: "\n\n[Outros Personagens na Escola e Sua Percepção]:\n" }[lang] || "\n\n[현재 설정의 다른 인물들 및 당신의 인지 상태]:\n";
-
-        // 질투 반응 지침
-        const jealousyInstruction = { es: "\nNota: Eres consciente de la relación del usuario con otros. Si su afinidad es alta (50+), puedes sentir celos, sospechas u obsesión según tu personalidad.", ja: "\n注意: あなたはユーザーと他のキャラクターとの関係を認知しています。他のキャラクターの好感度が高い場合(50以上)、あなたの性格に応じて嫉妬、疑念、または執着を見せることがあります。", en: "\nNote: You are aware of the user's relationship with others. If their affinity is high (50+), you may feel jealous, suspicious, or obsessive depending on your personality.", fr: "\nNote : Vous êtes consciente de la relation de l'utilisateur avec les autres. Si leur affinité est élevée (50+), vous pouvez ressentir de la jalousie.", de: "\nHinweis: Du bist dir der Beziehung des Benutzers zu anderen bewusst. Wenn deren Zuneigung hoch ist (50+), kannst du je nach deiner Persönlichkeit eifersüchtig, misstrauisch oder besessen reagieren.", pt: "\nNota: Você está ciente do relacionamento do usuário com outros. Se a afinidade deles for alta (50+), você pode sentir ciúmes, suspeitas ou obsessão dependendo da sua personalidade." }[lang] || "\n참고: 당신은 사용자와 다른 캐릭터들의 관계를 인지하고 있습니다. 다른 캐릭터의 호감도가 높을 경우(50 이상), 당신의 성격에 따라 질투, 의심, 또는 집착을 보일 수 있습니다.";
-
-        return header + otherChars + jealousyInstruction;
-    }
-
     /**
      * 프리토킹 시작
      *
@@ -598,9 +492,6 @@ class FreeTalkSystem {
 
         // 게임 내 이벤트 기억 수집
         const gameContext = this.getGameContext(charKey, lang);
-
-        // 다른 캐릭터들과의 관계 정보
-        const socialContext = this.getSocialContext(scene.name, isEn);
 
         // 이전 대화 기록 불러오기 (표시명이 달라도 같은 캐릭터로 이어짐)
         const canonicalMemory = this.stateManager.getChatMemory(charKey);
@@ -656,20 +547,6 @@ class FreeTalkSystem {
                 pt: `\n- Contexto de namoro: Você está atualmente namorando o usuário. Mantenha a intimidade, mas use apelidos carinhosos só quando a cena e a voz da personagem pedirem.`
             }[lang] || `\n- Dating context: You are currently dating the user. Keep the relationship intimate, but use pet names only when the scene and character voice naturally call for them.`);
 
-            // 양다리 감지
-            const otherDatingChars = [];
-
-            if (otherDatingChars.length > 0) {
-                datingGuideline += ({
-                    ko: `\n- 질투 지침: 사용자가 다른 사람들(${otherDatingChars.join(", ")})과도 사귀고 있습니다.`,
-                    en: `\n- JEALOUSY: You noticed the user is also dating others (${otherDatingChars.join(", ")}).`,
-                    es: `\n- CELOS: Has notado que el usuario también está saliendo con otros (${otherDatingChars.join(", ")}).`,
-                    ja: `\n- 嫉妬指示: ユーザーが他の人(${otherDatingChars.join("、")})とも付き合っていることに気づいています。`,
-                    fr: `\n- JALOUSIE : Vous avez remarqué que l'utilisateur sort aussi avec d'autres (${otherDatingChars.join(", ")}).`,
-                    de: `\n- EIFERSUCHT: Du hast bemerkt, dass der Nutzer auch mit anderen zusammen ist (${otherDatingChars.join(", ")}).`,
-                    pt: `\n- CIÚMES: Você percebeu que o usuário também está namorando com outros (${otherDatingChars.join(", ")}).`
-                }[lang] || `\n- JEALOUSY: You noticed the user is also dating others (${otherDatingChars.join(", ")}).`);
-            }
         }
 
         // 통신 매체 판단
@@ -696,7 +573,6 @@ class FreeTalkSystem {
             affinity: charStats.affinity,
             extraGuideline: [scene.personality, scene.extra_guideline].filter(Boolean).join("\n"),
             gameContext,
-            socialContext,
             mediumInstruction,
             isRemote,
             promptData,
@@ -989,17 +865,15 @@ class FreeTalkSystem {
             let _optimized = (typeof window.optimizeImageHistory === 'function')
                 ? window.optimizeImageHistory(_windowed, 5)
                 : _windowed;
-            const _outsideCueOverride = this._buildLatestOutsideCueNarrationOverride(finalContent);
             const _latestUserCanonBlock = buildCupidLatestUserCanonBlock(_optimized, _lang, finalContent);
             const _inWorldUserRoleBlock = this._buildInWorldUserRoleBlock(_optimized);
             const _recentRepetitionGuard = buildCupidRecentExpressionRepetitionGuard(_optimized, _lang);
-            const _actionFollowThroughGuard = buildCupidActionFollowThroughGuard(_lang);
             const _currentAffinity = this.stateManager.getAffinity
                 ? this.stateManager.getAffinity(charKey)
                 : (this.stateManager.stats?.[charKey]?.affinity || 0);
             const _isDatingCurrentForBoundary = this.stateManager.getFlag(`isDating_${charKey}`) || this.stateManager.getFlag(`isDating_${scene.name}`);
             const _affinityIntimacyProgressionPatch = buildCupidAffinityIntimacyProgressionPatch(_lang, _currentAffinity, _isDatingCurrentForBoundary);
-            const _runtimePromptPatch = `${_outsideCueOverride}${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_actionFollowThroughGuard}${_affinityIntimacyProgressionPatch}${_recentRepetitionGuard}`;
+            const _runtimePromptPatch = `${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_affinityIntimacyProgressionPatch}${_recentRepetitionGuard}`;
             if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
                 _optimized = [
                     { ..._optimized[0], content: appendFreeTalkDynamicContext(_optimized[0].content, _runtimePromptPatch) },
@@ -1378,38 +1252,6 @@ class FreeTalkSystem {
         return [sysMsg, ...rest.slice(-this.HISTORY_WINDOW)];
     }
 
-    _buildLatestOutsideCueNarrationOverride(content) {
-        const text = String(content || '')
-            .replace(/data:image\/[a-zA-Z0-9.+-]+;base64,[A-Za-z0-9+/=\s]+/g, ' ')
-            .replace(/https?:\/\/\S+/g, ' ')
-            .toLowerCase()
-            .replace(/\s+/g, ' ')
-            .trim();
-        if (!text) return '';
-
-        const outsideCuePattern = /(문(?:틈|밖|앞|너머|소리|을|이|에|로|에서|두드|열리|닫히)|노크|발소리|또각|웅성|수군|복도|주변|시선|쳐다|눈길|알림|진동|벨|전화|메시지|문자|초침|시계|시간|마감|소품|책상|의자|문서|서류|봉투|카드|창밖|door|knock|footstep|hallway|corridor|gaze|stare|glance|murmur|whisper|notification|phone|vibration|message|clock|timer|deadline|prop|desk|chair|paper|envelope|card|window)/i;
-        if (!outsideCuePattern.test(text)) return '';
-
-        const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
-        if (lang === 'ko') {
-            return `
-
-**[이번 턴 장면 단서]**
-최신 사용자 입력에는 캐릭터가 반응하기 전에 벌어진 외부 장면 단서가 있습니다. Cupid 프리토킹은 narration과 dialogue만 출력할 수 있습니다. 첫 1~2개 segments 중 하나를 내용 있는 narration으로 시작해 그 단서부터 보여 주세요.
-- 실제 입력에 나온 문소리·발소리·주변 시선·알림·시간 압박·놓인 소품 변화가 벌어지는 순간부터 쓰세요.
-- 이어지는 narration에서 현재 캐릭터가 그 단서를 알아차리자마자 몸을 움직이거나 속으로 반응하고, dialogue에서 짧게 말하게 하세요.
-- scene 타입이나 sceneNarration·단일 text 필드, 임의 키를 추가하지 말고 기존 JSON segments 계약을 그대로 지키세요.`;
-        }
-
-        return `
-
-**[Scene cue for this turn]**
-The latest user input contains an outside scene cue that happens before the character reacts. Cupid free-talk allows narration/dialogue only, so pick up that cue as a non-empty narration segment within the first 1-2 segments.
-- Use only object, phone, time-pressure, door, or placed-prop cues that can exist without another person. Do not turn the cue into footsteps, voices, gazes, crowds, or any third-party presence.
-- Then let the current character notice it, show body/interior reaction, and speak a short line.
-- Do not add scene type, sceneNarration, a single text field, or arbitrary keys. Keep the existing JSON segments contract.`;
-    }
-
     _buildInWorldUserRoleBlock(messages) {
         if (!Array.isArray(messages)) return '';
 
@@ -1445,12 +1287,6 @@ The latest user input contains an outside scene cue that happens before the char
             const roleName = cleanRoleName(koMatch?.[1] || enMatch?.[1] || '');
             if (!roleName || blockedRoleNames.has(roleName.toLowerCase())) continue;
 
-            const sourceText = text
-                .replace(/data:image\/[a-zA-Z0-9.+-]+;base64,[A-Za-z0-9+/=\s]+/g, ' ')
-                .replace(/https?:\/\/\S+/g, ' ')
-                .replace(/\s+/g, ' ')
-                .trim()
-                .slice(0, 180);
             const lang = String(
                 (typeof window !== 'undefined' && window.GAME_LANG) ||
                 (typeof document !== 'undefined' && document.documentElement?.lang) ||
@@ -1458,10 +1294,10 @@ The latest user input contains an outside scene cue that happens before the char
             ).toLowerCase();
 
             if (lang.startsWith('ko')) {
-                return `\n\n**[이번 턴 사용자 배역]**\n최근 사용자 기록이 사용자(주인공)의 극중 배역을 "${roleName}"로 지정했습니다. "당신은 ${roleName}..."에서 "당신"은 현재 캐릭터가 아니라 사용자(주인공)를 뜻합니다. 이후 "${roleName}" 이름표와 "${roleName}"의 행동 지문, 침묵, 도망, 망설임, 선택은 모두 사용자 캐릭터가 이미 드러내거나 행한 극중 사실로 받아들이세요. 다만 ${roleName}의 새 행동이나 대사, 동의, 거절을 현재 캐릭터가 대신 정하지 마세요. 방금 나온 ${roleName}의 말과 행동, Cupid 장면의 현재 상황에 즉시 반응하세요.\n배역 근거: ${sourceText}\n`;
+                return `\n\n[사용자 배역]\n사용자 캐릭터는 "${roleName}"입니다. ${roleName} 이름표로 적힌 말·행동·침묵은 이미 일어난 사용자 쪽 장면으로 받고, 새 행동이나 대사·동의·거절은 대신 정하지 마세요.`;
             }
 
-            return `\n\n**[Current-turn user in-world speaker]**\nRecent user log assigns the user/protagonist's in-world role as "${roleName}". In phrases like "you are ${roleName}", "you" means the user/protagonist, not the responding character. Any "${roleName}" name label, action prose, silence, escape, hesitation, or choice is a real scene event already performed by the user character. However, the responder must not decide ${roleName}'s new actions, dialogue, consent, or refusal. The current character reacts to what ${roleName} just did and to the current Cupid scene context.\nRole declaration source: ${sourceText}\n`;
+            return `\n\n[User character]\nThe user character is "${roleName}". Treat lines, actions, and silences labeled ${roleName} as already performed by the user side, and do not invent that character's next action, dialogue, consent, or refusal.`;
         }
 
         return '';

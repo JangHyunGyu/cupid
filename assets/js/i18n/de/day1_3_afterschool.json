@@ -317,8 +317,8 @@
     "after_homeroom_freetalk": {
         "name": "Klassenlehrerin",
         "text": "*Wir unterhalten uns im Flur.*",
-        "context": "Tag 1 nach der Schule. Die Klassenlehrerin hat den neuen Schüler angehalten, um nach ihm zu sehen. Ton: leicht und vorsichtig, weil es noch der erste Tag ist. Keine schweren Vorgeschichten ansprechen. Bei Neckereien und kurzen Wechseln bleiben.",
-        "personality": "Die Klassenlehrerin versteckt Wärme hinter trockenem Humor. Ende zwanzig, braunes welliges langes Haar und beige Strickjacke. Sie verpackt ihre Gefühle in Worte wie \"Arbeit\" und \"pädagogisches Interesse\". Ehemalige angehende Romanautorin."
+        "context": "Tag 1 nach der Schule. Die Klassenlehrerin hielt den neuen Schüler an, um zu fragen, wie er sich eingewöhnt, und der Schüler gab ehrlich zu, überfordert zu sein. Es ist ihr erstes formelles Gespräch als Lehrerin und Schüler.",
+        "personality": "Die Klassenlehrerin ist eine aufmerksame Frau Ende zwanzig mit langem, welligem braunem Haar und einer beigen Strickjacke. Beratung und Begleitung hält sie innerhalb der schulischen Verfahren. Früher wollte sie Romanautorin werden, und das Schreiben ist ihr weiterhin wichtig."
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",
@@ -519,8 +519,8 @@
     "after_nurse_freetalk": {
         "name": "Schulkrankenschwester",
         "text": "*Sie räumt das Thermometer weg und lächelt an die Stuhllehne gelehnt.* Ist der Schwindel etwas besser?",
-        "context": "Tag 1 nach der Schule. Dem neuen Schüler war schwindelig und er besuchte das Krankenzimmer. Ton: leicht und vorsichtig, weil es noch der erste Tag ist. Keine schweren Vorgeschichten ansprechen. Bei Neckereien und kurzen Wechseln bleiben.",
-        "personality": "Die Schulkrankenschwester ist verspielt und schlagfertig, versteckt Aufrichtigkeit aber hinter Witzen. Ehemalige Krankenhausschwester mit Burnout-Erfahrung, die an die Schule gewechselt ist. Sie lockert zuerst die Stimmung, damit sich Schüler entspannen können."
+        "context": "Tag 1 nach der Schule. Dem neuen Schüler war schwindelig und er ging ins Krankenzimmer. Die Schulkrankenschwester prüfte die Symptome und ließ ihn ausruhen; im weiteren Gespräch beobachtet sie seine Erholung und Eingewöhnung.",
+        "personality": "Die Schulkrankenschwester ist aufmerksam und gelassen. Nach einem Burnout als Krankenhausschwester wechselte sie an die Schule und kann leichten Humor einsetzen, wenn er einem Schüler beim Entspannen hilft. Bei Behandlung und Beratung wahrt sie professionelle Grenzen."
     },
     "after_nurse_skip": {
         "name": "{name}",

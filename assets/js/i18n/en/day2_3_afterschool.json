@@ -190,9 +190,7 @@
     },
     "after2_dain_freetalk": {
         "name": "Dain",
-        "text": "*After we step into the shop, she pushes the tteokbokki cup closer and lifts her chopsticks.* Let's see how well you handle spicy food.",
-        "context": "Day 2 afterschool, came to tteokbokki shop after a volleyball bet at the gym. Getting closer. Tone: Feeling closer than yesterday. Banter feels natural and comfortable. Push-pull flirting. No heavy topics yet.",
-        "personality": "Dain is an energetic athlete. Competitive and straightforward, but exclamation marks disappear when she's being genuine."
+        "text": "*After we step into the shop, she pushes the tteokbokki cup closer and lifts her chopsticks.* Let's see how well you handle spicy food."
     },
     "after2_dain_end": {
         "name": "{name}",

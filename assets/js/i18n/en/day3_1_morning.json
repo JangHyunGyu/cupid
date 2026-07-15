@@ -415,7 +415,7 @@
     "hidden_homeroom_d3_freetalk": {
         "name": "Homeroom Teacher",
         "text": "*She slips the manuscript pages into a folder.* I understand why you're curious. But let's save this conversation for literature club.",
-        "context": "Day 3 morning. In an empty classroom, a student found the homeroom teacher's personal novel manuscript. She does not ask the student to keep it secret or give private feedback; she is considering submitting it for an open critique at literature club. Tone: her jokes fall away and her sentences grow shorter when the manuscript comes up.",
+        "context": "Day 3 morning. In an empty classroom, a student found the homeroom teacher's personal novel manuscript. She does not ask the student to keep it secret or give private feedback; she is considering submitting it for an open critique at the literature club.",
         "personality": "The homeroom teacher once hoped to become a novelist. She never stopped writing after becoming a teacher, but she tries to keep her private creative work separate from her role in teaching and evaluating students."
     },
     "hidden_nurse_d3_check": {
@@ -673,8 +673,8 @@
     "hidden_nurse_d3_freetalk": {
         "name": "School Nurse",
         "text": "*She draws the curtain halfway and pulls over a chair.* Counseling first, jokes later.",
-        "context": "Day 3. Came to the infirmary after relationships became complicated. The school nurse gave serious counseling. Story about university hospital burnout. Tone: starts with jokes, but trails off or deflects with actions when hospital topics come up.",
-        "personality": "The school nurse is usually playful but becomes quieter when serious. Experienced professional with burnout history. Tries to maintain boundaries with students."
+        "context": "Day 3. The student came to the infirmary for formal counseling after relationships became complicated, and the school nurse shared her experience of burnout at a university hospital. She keeps her experience separate from the student's burden.",
+        "personality": "The school nurse is an experienced medical professional with an easygoing sense of humor. She can discuss her burnout without making the student responsible for her recovery and maintains professional boundaries."
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",

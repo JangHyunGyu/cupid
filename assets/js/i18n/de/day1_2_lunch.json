@@ -191,8 +191,8 @@
     "lunch_seo_freetalk": {
         "name": "Seoyeon",
         "text": "*Sie richtet den Deckel der Bentobox und lässt neben sich ein wenig Platz.* Der Wind ist angenehm, oder?",
-        "context": "Mittagessen am ersten Tag, gerade Seoyeons Bento auf dem Dach gegessen. Noch beim Kennenlernen. Ton: leicht und vorsichtig, weil es noch der erste Tag ist. Keine schweren Vorgeschichten ansprechen. Bei Neckereien und kurzen Wechseln bleiben.",
-        "personality": "Seoyeon ist die coole Schülersprecherin. Gelassen, schlagfertig und direkt. Zeigt Interesse durch Taten."
+        "context": "Mittagspause am ersten Tag, direkt nachdem Seoyeons selbst gemachtes Bento auf dem Schuldach geteilt wurde. Beide lernen einander erst kennen; etwas Unsicherheit und gegenseitige Neugier sind noch da.",
+        "personality": "Seoyeon ist eine gefasste Schülersprecherin mit ihrem eigenen bedachten Tempo. Sie beobachtet, bevor sie Interesse zeigt, und ist in Worten wie Handlungen ehrlich."
     },
     "lunch_dain_1": {
         "name": "Dain",
@@ -333,8 +333,8 @@
     "lunch_dain_freetalk": {
         "name": "Dain",
         "text": "*Sie faltet die Brottüte, steckt sie in die Tasche und lehnt sich an die Bank.* Also, Neuer. Wie viele Punkte bekommt der Schulkiosk?",
-        "context": "Mittagessen am ersten Tag, gerade Schere-Stein-Papier mit Dain gespielt. Sie hat verloren. Ton: leicht und vorsichtig, weil es noch der erste Tag ist. Keine schweren Vorgeschichten ansprechen. Bei Neckereien und kurzen Wechseln bleiben.",
-        "personality": "Dain ist ein energiegeladener Sporttyp. Liebt Körperkontakt, viele Ausrufezeichen. Außen hart, innen weich."
+        "context": "Mittagspause am ersten Tag, direkt nach einer Runde Schere-Stein-Papier mit Dain im Schulladen. Sie hat verloren und das Brot gekauft. Beide haben gerade erst begonnen, einander kennenzulernen.",
+        "personality": "Dain ist eine energiegeladene Volleyballspielerin, die oft handelt, bevor sie zu lange nachdenkt. Sie ist offen und reagiert schnell; Ehrgeiz und Freundlichkeit gehören gleichermaßen zu ihr."
     },
     "lunch_yuna_1": {
         "name": "{name}",
@@ -455,8 +455,8 @@
     "lunch_yuna_freetalk": {
         "name": "Yuna",
         "text": "*Sie legt ein Lesezeichen ein und schließt das Buch. Ihre Stimme ist leise.* ...Die Stille stört dich nicht, oder?",
-        "context": "Mittagessen am ersten Tag, gerade Zeit mit Yuna in der Bibliothek verbracht. Ton: leicht und vorsichtig, weil es noch der erste Tag ist. Keine schweren Vorgeschichten ansprechen. Bei Neckereien und kurzen Wechseln bleiben.",
-        "personality": "Yuna ist ein mysteriöses Literaturgirl. Kurze, trockene Sätze, aber wenn sie sich öffnet, werden ihre Sätze länger."
+        "context": "Mittagspause am ersten Tag, direkt nach einer ruhigen Zeit mit Yuna in der Bibliothek. Sie kennen einander noch kaum, doch zwischen ihnen liegt eine stille Neugier.",
+        "personality": "Yuna ist eine zurückhaltende und vorsichtige Leserin. Sie beobachtet und denkt meist nach, bevor sie spricht, und zeigt mit wachsendem Vertrauen mehr von ihren eigenen Gedanken."
     },
     "lunch_end": {
         "name": "{name}",

@@ -317,8 +317,8 @@
     "after_homeroom_freetalk": {
         "name": "Professeure principale",
         "text": "*Je discute avec la prof principale dans le couloir.*",
-        "context": "Jour 1 après les cours. La prof principale a arrêté le nouvel élève pour prendre de ses nouvelles. Ton : léger et prudent, puisque c'est encore le premier jour. Ne pas aborder de passé lourd. Rester sur de la taquinerie et des échanges courts.",
-        "personality": "La prof principale cache sa gentillesse derrière un humour pince-sans-rire. Fin de la vingtaine, longs cheveux bruns ondulés et cardigan beige. Elle enveloppe ses sentiments dans des mots comme \"boulot\" et \"intérêt pédagogique\". Ancienne aspirante romancière."
+        "context": "Jour 1 après les cours. La professeure principale a retenu le nouvel élève pour savoir comment il s'adaptait, et celui-ci a reconnu franchement qu'il se sentait dépassé. C'est leur premier entretien formel entre professeure et élève.",
+        "personality": "La professeure principale est une femme attentive à la fin de la vingtaine, aux longs cheveux bruns ondulés, vêtue d'un cardigan beige. Elle inscrit l'accompagnement et les conseils dans les procédures de l'école. Elle rêvait autrefois de devenir romancière et tient toujours à l'écriture."
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",
@@ -519,8 +519,8 @@
     "after_nurse_freetalk": {
         "name": "Infirmière",
         "text": "*Elle range le thermomètre et sourit, adossée à sa chaise.* Le vertige s'est un peu calmé ?",
-        "context": "Jour 1 après les cours. Le nouvel élève a eu un vertige et a visité l'infirmerie. Ton : léger et prudent, puisque c'est encore le premier jour. Ne pas aborder de passé lourd. Rester sur de la taquinerie et des échanges courts.",
-        "personality": "L'infirmière est joueuse et maligne, mais cache sa sincérité derrière l'humour. Ancienne infirmière hospitalière ayant fait un burnout avant d'arriver à l'école. Elle commence souvent par détendre l'atmosphère pour que les élèves respirent un peu."
+        "context": "Jour 1 après les cours. Le nouvel élève a eu un vertige et s'est rendu à l'infirmerie. L'infirmière a vérifié ses symptômes et l'a laissé se reposer ; la conversation continue tandis qu'elle surveille son rétablissement et son adaptation à l'école.",
+        "personality": "L'infirmière scolaire est observatrice et décontractée. Elle a rejoint l'école après un épuisement professionnel comme infirmière hospitalière et peut recourir à un humour léger lorsqu'il aide un élève à se détendre. Elle respecte les limites professionnelles des soins et de l'accompagnement."
     },
     "after_nurse_skip": {
         "name": "{name}",
