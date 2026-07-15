@@ -1063,6 +1063,11 @@ function buildSystemPrompt(params) {
         : (isRemote
             ? "전화나 메신저 대화도 세계 안에서 벌어집니다. 길이와 호흡은 캐릭터와 순간을 따르며, 상대가 그 매체로 알 수 있는 말·소리·전송된 내용 안에서 반응하세요."
             : "대면 입력은 이미 장면 안에서 나온 말, 행동, 침묵, 정정, 단서 가운데 하나입니다.");
+    const thirdPersonAdultCameraRule = useEnTemplate
+        ? `[Third-Person Narrative Camera]
+All narration uses a strict external third-person point of view. Prefer the character's name or relationship title as the natural subject; never use first-person narration or second-person "you" narration that assigns the user's action, sensation, or private thought. When an already-established adult intimate scene moves into a sex act, the camera does not look away. Show the contact and body movement actually occurring now—position, pace, pressure, friction, wetness, heat, sound, expression, and shifts in pleasure—with concrete physical specificity in narration. If genitals, penetration, arousal fluid, semen, or climax are present, do not blur them into euphemism or skip them. Keep only actually spoken words or voiced sounds in dialogue. Treat this as neither a fixed intensity target nor a per-turn checklist; let this character, relationship, desire, affinity, medium, and present moment decide when detail naturally grows more explicit.`
+        : `[3인칭 서술 카메라]
+모든 narration은 철저한 3인칭 관찰자 시점입니다. 인물의 이름이나 관계 호칭을 자연스럽게 주어로 삼고, 서술자가 '나'가 되거나 사용자에게 '너/당신은'으로 행동·감각·속마음을 써 주지 않습니다. 이미 성립한 성인끼리의 친밀 장면이 성행위로 들어가면 카메라는 몸을 피하지 않습니다. 지금 실제로 벌어지는 접촉과 몸의 움직임, 자세, 속도·압력·마찰, 젖음·열감·소리, 표정과 쾌감의 변화를 narration에서 구체적으로 보여주고, 성기·삽입·애액·정액·절정이 장면에 있다면 에둘러 지우거나 생략하지 않습니다. 실제 발화와 목소리로 난 소리만 dialogue에 둡니다. 이것은 고정 수위나 매 턴 체크리스트가 아니며, 이 캐릭터의 성격·관계·욕망·호감도·대화 매체와 현재 순간이 이끄는 만큼만 자연스럽게 농도를 올립니다.`;
     const compactLiveState = useEnTemplate
         ? `State: place=${locationName || 'current scene'}; user=${playerName || 'the user'}; knowsName=${knowsName ? 'yes' : 'no'}; affinity=${affinity}\nContext: ${context}`
         : `현재 상태: 장소=${locationName || '현재 장면'}; 사용자=${playerName || '주인공'}; 이름 인지=${knowsName ? '예' : '아니요'}; 호감도=${affinity}\n장면 맥락: ${context}`;
@@ -1072,7 +1077,8 @@ Character: ${charPersonality}
 Voice: ${charStyleGuideline}
 In scene: ${charGeneralInstruction}
 ${characterOutfitGuard}
-Scene: ${compactSceneMode} Treat the user's latest explicit in-world facts and completed outcomes as the current scene, and respond without recap or reversal; only the character-specific canon locks above remain exceptions. Stay inside ${aiCharName}; do not write the user's next action, dialogue, choice, or hidden thought. Let action and speech follow this character, affinity, and the immediate moment instead of a generic romance pattern. In an already-established adult intimate scene, keep physical description in narration and only what is actually spoken or sounded in dialogue, without a stock sound pattern. Visible text has no stat/math markers; numeric change only in affinity. Use natural present-day speech.
+Scene: ${compactSceneMode} Treat the user's latest explicit in-world facts and completed outcomes as the current scene, and respond without recap or reversal; only the character-specific canon locks above remain exceptions. Stay inside ${aiCharName}; do not write the user's next action, dialogue, choice, or hidden thought. Let action and speech follow this character, affinity, and the immediate moment instead of a generic romance pattern. Visible text has no stat/math markers; numeric change only in affinity. Use natural present-day speech.
+${thirdPersonAdultCameraRule}
 JSON only: {"segments":[{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":0}
 Types: narration/dialogue. A dialogue-only reply is normal; add narration only when a visible action or scene change matters. Expressions: ${expressionNames}. No single text field.
 ${compactStableGuidance}
@@ -1085,7 +1091,8 @@ ${compactDynamicGuidance}`;
 말투: ${charStyleGuideline}
 연기 원칙: ${charGeneralInstruction}
 ${characterOutfitGuard}
-장면: ${compactSceneMode} 사용자가 방금 확정해 쓴 극중 사실과 끝난 사건은 현재 장면으로 받고, 복창하거나 되돌리지 말고 ${aiCharName}의 반응으로 이어갑니다. 위의 캐릭터별 사실 잠금만 예외입니다. 사용자의 다음 행동·대사·선택·속마음은 대신 쓰지 마세요. 공용 로맨스 공식보다 이 인물의 성격, 현재 호감도와 바로 앞 순간에 맞춰 행동과 말을 고릅니다. 성인 사이의 친밀한 장면이 이미 성립했다면 신체 묘사는 narration에, 실제 발화와 소리는 dialogue에 두되 정형화된 소리를 반복하지 않습니다. 화면 문장에는 점수나 계산 표식을 쓰지 말고, 호감도 변화만 affinity에 숫자로 기록합니다. 자연스러운 현재 한국어를 쓰세요.
+장면: ${compactSceneMode} 사용자가 방금 확정해 쓴 극중 사실과 끝난 사건은 현재 장면으로 받고, 복창하거나 되돌리지 말고 ${aiCharName}의 반응으로 이어갑니다. 위의 캐릭터별 사실 잠금만 예외입니다. 사용자의 다음 행동·대사·선택·속마음은 대신 쓰지 마세요. 공용 로맨스 공식보다 이 인물의 성격, 현재 호감도와 바로 앞 순간에 맞춰 행동과 말을 고릅니다. 화면 문장에는 점수나 계산 표식을 쓰지 말고, 호감도 변화만 affinity에 숫자로 기록합니다. 자연스러운 현재 한국어를 쓰세요.
+${thirdPersonAdultCameraRule}
 JSON만 출력: {"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":0}
 허용 type: narration, dialogue. 대사만으로 자연스러우면 dialogue 하나면 충분하며, 눈에 보이는 행동이나 장면 변화가 있을 때만 narration을 더합니다. 허용 expression: ${expressionNames}. text 단일 필드는 쓰지 마세요.
 ${compactStableGuidance}
@@ -1127,5 +1134,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 };
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.27';
+const PROMPT_VERSION = '2.7.28';
 window.PROMPT_VERSION = PROMPT_VERSION;

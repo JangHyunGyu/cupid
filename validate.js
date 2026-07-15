@@ -638,8 +638,8 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.87') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.87이 아님: ' + loaderVersion);
+    if (loaderVersion !== '2.9.88') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.88이 아님: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');
@@ -1692,11 +1692,11 @@ try {
     const activePromptSources = [promptsContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
-    if (promptVersion !== '2.7.27') {
-        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.27이 아님: ' + promptVersion);
+    if (promptVersion !== '2.7.28') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.28이 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.26') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.26이 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.27') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.27이 아님: ' + galleryPromptVersion);
     }
     const completedActionCanonSignals = [
         '완료형으로 쓴 행동은 성적 접촉도 이미 일어난 사건이며',
@@ -1707,6 +1707,19 @@ try {
     for (const source of [ftSysContent, gftContent]) {
         if (completedActionCanonSignals.some(signal => !source.includes(signal))) {
             errors.push('[FREETALK_PROMPT] 완료형 성적 행동의 사실성과 캐릭터 동의가 분리되어 있지 않음');
+        }
+    }
+    const thirdPersonAdultCameraSignals = [
+        '모든 narration은 철저한 3인칭 관찰자 시점입니다',
+        '성기·삽입·애액·정액·절정이 장면에 있다면',
+        '고정 수위나 매 턴 체크리스트가 아니며',
+        'All narration uses a strict external third-person point of view',
+        'genitals, penetration, arousal fluid, semen, or climax',
+        'fixed intensity target nor a per-turn checklist'
+    ];
+    for (const [label, source] of [['main', promptsContent], ['gallery', gftContent]]) {
+        if (thirdPersonAdultCameraSignals.some(signal => !source.includes(signal))) {
+            errors.push('[FREETALK_PROMPT] ' + label + ' 3인칭 성인 친밀 장면 카메라 계약 누락');
         }
     }
     for (const removedSymbol of [
