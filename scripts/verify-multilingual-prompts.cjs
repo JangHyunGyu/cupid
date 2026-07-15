@@ -247,23 +247,44 @@ for (const lang of languages) {
         knowsName: false,
         datingGuideline: 'CACHE_DYNAMIC_RELATIONSHIP'
     });
-    const mainBaseParts = splitCacheBoundary(mainCacheBaseline, `[${lang}] main cache baseline`);
+    const mainStableStateBaseline = context.window.buildSystemPrompt({
+        isEn: true,
+        lang,
+        sceneName: 'Seoyeon',
+        displayName: 'Seoyeon',
+        locationName: 'CACHE_BASE_ROOM',
+        context: 'CACHE_BASE_CONTEXT',
+        affinity: 45,
+        extraGuideline: 'CACHE_DYNAMIC_SCENE',
+        gameContext: 'CACHE_BASE_MEMORY',
+        socialContext: 'CACHE_BASE_SOCIAL',
+        mediumInstruction: '',
+        isRemote: false,
+        promptData: data,
+        playerName: 'CACHE_BASE_USER',
+        knowsName: true,
+        datingGuideline: 'CACHE_DYNAMIC_RELATIONSHIP'
+    });
+    const mainBaseParts = splitCacheBoundary(mainStableStateBaseline, `[${lang}] main cache baseline`);
     const mainVariantParts = splitCacheBoundary(mainDynamicVariant, `[${lang}] main cache dynamic variant`);
     assert(mainBaseParts.stable === mainVariantParts.stable,
-        `[${lang}] main stable cache prefix changes with live state`);
+        `[${lang}] main stable cache prefix changes with per-turn state`);
     assert(mainBaseParts.stable.includes('Addressing:') && mainBaseParts.stable.includes('Distance/interaction:'),
         `[${lang}] main static character guidance is not ahead of the cache boundary`);
     for (const signal of [
-        'CACHE_DYNAMIC_ROOM', 'CACHE_DYNAMIC_CONTEXT', 'CACHE_DYNAMIC_SCENE',
-        'CACHE_DYNAMIC_MEMORY', 'CACHE_DYNAMIC_SOCIAL', 'CACHE_DYNAMIC_USER',
-        'CACHE_DYNAMIC_RELATIONSHIP', '-77'
+        'CACHE_DYNAMIC_ROOM', 'CACHE_DYNAMIC_CONTEXT', 'CACHE_DYNAMIC_MEMORY',
+        'CACHE_DYNAMIC_SOCIAL', 'CACHE_DYNAMIC_USER', '-77'
     ]) {
         assert(!mainVariantParts.stable.includes(signal), `[${lang}] main stable prefix leaked: ${signal}`);
         assert(mainVariantParts.dynamic.includes(signal), `[${lang}] main dynamic suffix lost: ${signal}`);
     }
-    assert(getRuntimeStableHash('getFreeTalkStablePromptHash', mainCacheBaseline)
+    for (const signal of ['CACHE_DYNAMIC_SCENE', 'CACHE_DYNAMIC_RELATIONSHIP']) {
+        assert(mainVariantParts.stable.includes(signal), `[${lang}] main stable prefix lost: ${signal}`);
+        assert(!mainVariantParts.dynamic.includes(signal), `[${lang}] main dynamic suffix retained: ${signal}`);
+    }
+    assert(getRuntimeStableHash('getFreeTalkStablePromptHash', mainStableStateBaseline)
         === getRuntimeStableHash('getFreeTalkStablePromptHash', mainDynamicVariant),
-        `[${lang}] main stable prompt hash changes with live state`);
+        `[${lang}] main stable prompt hash changes with per-turn state`);
     const mainRemotePrompt = context.window.buildSystemPrompt({
         isEn: true,
         lang,

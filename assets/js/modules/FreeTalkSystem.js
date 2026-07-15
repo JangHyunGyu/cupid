@@ -67,6 +67,13 @@ function getFreeTalkStablePromptHash(content) {
     return (hash >>> 0).toString(36);
 }
 
+function getFreeTalkStablePromptFingerprint(content) {
+    const prompt = normalizeFreeTalkPromptBlockForCache(content || '');
+    const markerIndex = prompt.indexOf(FREE_TALK_CACHE_BOUNDARY_MARKER);
+    const stable = markerIndex >= 0 ? prompt.slice(0, markerIndex).trim() : prompt;
+    return `${stable.length.toString(36)}_${getFreeTalkStablePromptHash(stable)}`;
+}
+
 function encodeFreeTalkCacheKeyPart(value) {
     const text = String(value ?? '');
     try {
@@ -945,11 +952,11 @@ class FreeTalkSystem {
             const _stablePromptContent = Array.isArray(_optimized) && _optimized[0]?.role === 'system'
                 ? _optimized[0].content
                 : '';
-            const _stablePromptHash = _stablePromptContent
-                ? getFreeTalkStablePromptHash(_stablePromptContent)
+            const _stablePromptFingerprint = _stablePromptContent
+                ? getFreeTalkStablePromptFingerprint(_stablePromptContent)
                 : '';
-            const _cacheKey = charKey && _stablePromptHash
-                ? `cupid:ctx:${encodeFreeTalkCacheKeyPart(_lang)}:${encodeFreeTalkCacheKeyPart(charKey)}:${this._isRemote ? 'r' : 'f'}:s${_stablePromptHash}`
+            const _cacheKey = charKey && _stablePromptFingerprint
+                ? `cupid:ctx:${encodeFreeTalkCacheKeyPart(_lang)}:${encodeFreeTalkCacheKeyPart(charKey)}:${this._isRemote ? 'r' : 'f'}:s${_stablePromptFingerprint}`
                 : '';
             _lastCacheKey = _cacheKey;
             const _turnMeta = this._createTurnMeta(finalContent);

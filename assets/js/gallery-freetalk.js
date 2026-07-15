@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.25';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.26';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function normalizeGalleryPromptBlockForCache(content) {
@@ -51,6 +51,13 @@ function getGalleryFreeTalkStablePromptHash(content) {
         hash = Math.imul(hash, 16777619);
     }
     return (hash >>> 0).toString(36);
+}
+
+function getGalleryFreeTalkStablePromptFingerprint(content) {
+    const prompt = normalizeGalleryPromptBlockForCache(content || '');
+    const markerIndex = prompt.indexOf(GALLERY_FREETALK_CACHE_BOUNDARY_MARKER);
+    const stable = markerIndex >= 0 ? prompt.slice(0, markerIndex).trim() : prompt;
+    return `${stable.length.toString(36)}_${getGalleryFreeTalkStablePromptHash(stable)}`;
 }
 
 function encodeGalleryFreeTalkCacheKeyPart(value) {
@@ -1165,11 +1172,11 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             const _stablePromptContent = Array.isArray(_optimized) && _optimized[0]?.role === 'system'
                 ? _optimized[0].content
                 : '';
-            const _stablePromptHash = _stablePromptContent
-                ? getGalleryFreeTalkStablePromptHash(_stablePromptContent)
+            const _stablePromptFingerprint = _stablePromptContent
+                ? getGalleryFreeTalkStablePromptFingerprint(_stablePromptContent)
                 : '';
-            const _gftCacheKey = requestCharId && _stablePromptHash
-                ? `cupid-gft:ctx:${encodeGalleryFreeTalkCacheKeyPart(this.lang)}:${encodeGalleryFreeTalkCacheKeyPart(requestCharId)}:s${_stablePromptHash}`
+            const _gftCacheKey = requestCharId && _stablePromptFingerprint
+                ? `cupid-gft:ctx:${encodeGalleryFreeTalkCacheKeyPart(this.lang)}:${encodeGalleryFreeTalkCacheKeyPart(requestCharId)}:s${_stablePromptFingerprint}`
                 : '';
             _lastCacheKey = _gftCacheKey;
             const _turnMeta = this._createTurnMeta(finalContent);
@@ -1928,14 +1935,6 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const languageQualityGuard = this._getLanguageQualityGuard();
         const nativeStylePolishGuard = this._getNativeStylePolishGuard(charId);
         const nativeAntiTranslationGuard = this._getNativeAntiTranslationGuard();
-        const langName = {
-            en: 'English',
-            es: 'Spanish (Español)',
-            ja: 'Japanese (日本語)',
-            fr: 'French (Français)',
-            de: 'German (Deutsch)',
-            pt: 'Brazilian Portuguese (Português Brasileiro)'
-        }[this.lang] || 'English';
         const characterOutfitGuard = charId === 'dain'
             ? (isEn
                 ? `\n**[Dain Outfit Continuity]**\n- Current post-graduation Dain is not in a student uniform. Use everyday sporty streetwear with a black arm sleeve.\n- If referencing student-day memories, Dain's iconic outfit is the ETAURS #19 volleyball jersey, not a blazer/tie/school skirt.\n- Keep school-uniform hems, school-uniform sleeves, blazers, ties, and school skirts out of current Dain descriptions.`
@@ -1943,14 +1942,16 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             : '';
 
         const compactGalleryGuidance = (isEn ? [
-            datingPrompt && `Relationship: ${datingPrompt}`
+            datingPrompt && `Relationship: ${datingPrompt}`,
+            location && `Location baseline: ${location}`
         ] : [
-            datingPrompt && `연인 관계: ${datingPrompt}`
+            datingPrompt && `연인 관계: ${datingPrompt}`,
+            location && `기본 장소: ${location}`
         ]).filter(Boolean).join("\n");
         const compactGalleryExpressions = validExprs.join(', ') || 'normal';
         const compactGalleryState = isEn
-            ? `State: place=${location || 'current gallery scene'}; user=${playerName || 'the user'}; language=${langName}`
-            : `현재 상태: 장소=${location || '현재 갤러리 장면'}; 사용자=${playerName || '상대'}; 언어=한국어`;
+            ? `State: user=${playerName || 'the user'}`
+            : `현재 상태: 사용자=${playerName || '상대'}`;
         if (isEn) {
             return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Cupid gallery free-talk: ${charName} with their post-graduation adult partner; not a current school scene.
 Character: ${personality}

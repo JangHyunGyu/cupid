@@ -1038,23 +1038,23 @@ function buildSystemPrompt(params) {
         charAddressingGuideline && `Addressing: ${charAddressingGuideline}`,
         charInteractionGuideline && `Distance/interaction: ${charInteractionGuideline}`,
         charSpecificCriteria && `Affinity criteria: ${charSpecificCriteria}`,
-        mediumInstruction && `Medium: ${mediumInstruction}`
+        mediumInstruction && `Medium: ${mediumInstruction}`,
+        extraGuideline && `Scene persona: ${extraGuideline}`,
+        datingGuideline && `Relationship state: ${datingGuideline}`
     ] : [
         charAddressingGuideline && `호칭: ${charAddressingGuideline}`,
         charInteractionGuideline && `거리와 상호작용: ${charInteractionGuideline}`,
         charSpecificCriteria && `호감도 기준: ${charSpecificCriteria}`,
-        mediumInstruction && `대화 방식: ${mediumInstruction}`
+        mediumInstruction && `대화 방식: ${mediumInstruction}`,
+        extraGuideline && `장면 페르소나: ${extraGuideline}`,
+        datingGuideline && `관계 상태: ${datingGuideline}`
     ]).filter(Boolean).join("\n");
     const compactDynamicGuidance = (useEnTemplate ? [
-        extraGuideline && `Extra: ${extraGuideline}`,
         gameContext && `Game context: ${gameContext}`,
-        socialContext && `Social context: ${socialContext}`,
-        datingGuideline && `Dating context: ${datingGuideline}`
+        socialContext && `Social context: ${socialContext}`
     ] : [
-        extraGuideline && `장면별 지침: ${extraGuideline}`,
         gameContext && `최근 사건과 기억: ${gameContext}`,
-        socialContext && `주변 인물 관계: ${socialContext}`,
-        datingGuideline && `현재 연애 관계: ${datingGuideline}`
+        socialContext && `주변 인물 관계: ${socialContext}`
     ]).filter(Boolean).join("\n");
     const compactSceneMode = useEnTemplate
         ? (isRemote
@@ -1127,5 +1127,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 };
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.26';
+const PROMPT_VERSION = '2.7.27';
 window.PROMPT_VERSION = PROMPT_VERSION;

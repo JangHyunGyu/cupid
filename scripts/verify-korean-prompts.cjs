@@ -218,25 +218,46 @@ function verifyMainAndGalleryPrompts(context) {
         knowsName: false,
         datingGuideline: 'CACHE_DYNAMIC_RELATIONSHIP'
     });
-    const mainBaseParts = splitCacheBoundary(mainPrompts.Seoyeon, 'main cache baseline');
+    const mainStableStateBaseline = context.window.buildSystemPrompt({
+        isEn: false,
+        lang: 'ko',
+        sceneName: '서연',
+        displayName: '서연',
+        locationName: 'CACHE_BASE_ROOM',
+        context: 'CACHE_BASE_CONTEXT',
+        affinity: 45,
+        extraGuideline: 'CACHE_DYNAMIC_SCENE',
+        gameContext: 'CACHE_BASE_MEMORY',
+        socialContext: 'CACHE_BASE_SOCIAL',
+        mediumInstruction: '',
+        isRemote: false,
+        promptData,
+        playerName: 'CACHE_BASE_USER',
+        knowsName: true,
+        datingGuideline: 'CACHE_DYNAMIC_RELATIONSHIP'
+    });
+    const mainBaseParts = splitCacheBoundary(mainStableStateBaseline, 'main cache baseline');
     const mainVariantParts = splitCacheBoundary(mainDynamicVariant, 'main cache dynamic variant');
     assert(mainBaseParts.stable === mainVariantParts.stable,
-        'main stable cache prefix changes with live scene, affinity, memory, relationship, or player state');
+        'main stable cache prefix changes with location, affinity, memory, social context, or player state');
     for (const signal of [
-        'CACHE_DYNAMIC_ROOM', 'CACHE_DYNAMIC_CONTEXT', 'CACHE_DYNAMIC_SCENE',
-        'CACHE_DYNAMIC_MEMORY', 'CACHE_DYNAMIC_SOCIAL', 'CACHE_DYNAMIC_USER',
-        'CACHE_DYNAMIC_RELATIONSHIP', '-77'
+        'CACHE_DYNAMIC_ROOM', 'CACHE_DYNAMIC_CONTEXT', 'CACHE_DYNAMIC_MEMORY',
+        'CACHE_DYNAMIC_SOCIAL', 'CACHE_DYNAMIC_USER', '-77'
     ]) {
         assert(!mainVariantParts.stable.includes(signal), `main stable cache prefix leaked dynamic value: ${signal}`);
         assert(mainVariantParts.dynamic.includes(signal), `main dynamic cache suffix lost value: ${signal}`);
+    }
+    for (const signal of ['CACHE_DYNAMIC_SCENE', 'CACHE_DYNAMIC_RELATIONSHIP']) {
+        assert(mainVariantParts.stable.includes(signal), `main stable cache prefix lost session-stable value: ${signal}`);
+        assert(!mainVariantParts.dynamic.includes(signal), `main dynamic cache suffix retained session-stable value: ${signal}`);
     }
     assert(!mainDynamicVariant.includes('턴=') && !mainDynamicVariant.includes('[현재 진행 상황]'),
         'main prompt still exposes a turn budget to the roleplay model');
     assert(mainBaseParts.stable.includes('호칭:') && mainBaseParts.stable.includes('거리와 상호작용:'),
         'main static character guidance is not promoted ahead of the cache boundary');
-    assert(getRuntimeStableHash(context, 'getFreeTalkStablePromptHash', mainPrompts.Seoyeon)
+    assert(getRuntimeStableHash(context, 'getFreeTalkStablePromptHash', mainStableStateBaseline)
         === getRuntimeStableHash(context, 'getFreeTalkStablePromptHash', mainDynamicVariant),
-        'main stable prompt hash changes with dynamic state');
+        'main stable prompt hash changes with per-turn state');
     assert(getRuntimeStableHash(context, 'getFreeTalkStablePromptHash', mainPrompts.Seoyeon)
         !== getRuntimeStableHash(context, 'getFreeTalkStablePromptHash', mainPrompts.Yuna),
         'main stable prompt hash does not separate character identities');
@@ -488,12 +509,12 @@ function verifyCacheKeyWiring() {
     const main = read('assets/js/modules/FreeTalkSystem.js');
     const gallery = read('assets/js/gallery-freetalk.js');
     assert(main.includes("_optimized[0]?.role === 'system'")
-        && main.includes('getFreeTalkStablePromptHash(_stablePromptContent)')
-        && main.includes('const _cacheKey = charKey && _stablePromptHash'),
+        && main.includes('getFreeTalkStablePromptFingerprint(_stablePromptContent)')
+        && main.includes('const _cacheKey = charKey && _stablePromptFingerprint'),
         'main cache key is not gated by an actual system prompt stable prefix');
     assert(gallery.includes("_optimized[0]?.role === 'system'")
-        && gallery.includes('getGalleryFreeTalkStablePromptHash(_stablePromptContent)')
-        && gallery.includes('const _gftCacheKey = requestCharId && _stablePromptHash'),
+        && gallery.includes('getGalleryFreeTalkStablePromptFingerprint(_stablePromptContent)')
+        && gallery.includes('const _gftCacheKey = requestCharId && _stablePromptFingerprint'),
         'gallery cache key is not gated by an actual system prompt stable prefix');
     assert(!main.includes('getFreeTalkStablePromptHash(_optimized[0]?.content || finalContent)'),
         'main cache key can still hash the latest user message when the system prompt is missing');
@@ -503,14 +524,14 @@ function verifyCacheKeyWiring() {
         'encodeFreeTalkCacheKeyPart(_lang)',
         'encodeFreeTalkCacheKeyPart(charKey)',
         "this._isRemote ? 'r' : 'f'",
-        ':s${_stablePromptHash}'
+        ':s${_stablePromptFingerprint}'
     ]) {
         assert(main.includes(dimension), `main cache key lost required stable dimension: ${dimension}`);
     }
     for (const dimension of [
         'encodeGalleryFreeTalkCacheKeyPart(this.lang)',
         'encodeGalleryFreeTalkCacheKeyPart(requestCharId)',
-        ':s${_stablePromptHash}'
+        ':s${_stablePromptFingerprint}'
     ]) {
         assert(gallery.includes(dimension), `gallery cache key lost required stable dimension: ${dimension}`);
     }
