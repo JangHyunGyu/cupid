@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.21';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.22';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function normalizeGalleryPromptBlockForCache(content) {
@@ -253,6 +253,12 @@ class GalleryFreeTalk {
         this.overlayEl = null;
         this.stagedImage = null;
         this._imageUploadVersion = 0;
+        this._galleryTalkEpoch = 0;
+        this._activeRequestOwner = null;
+        this._activeRequestContext = null;
+        this._activeChatTurnId = null;
+        this._typingGeneration = 0;
+        this._activeTypingOwner = null;
 
         this.MEMORY_KEY = 'cupid_freetalk_memory';
         this.HISTORY_WINDOW = 10;
@@ -668,6 +674,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
      * @param {string} charId - 캐릭터 ID (예: 'seyoun')
      */
     open(charId) {
+        this._invalidateGalleryTalkContext();
+        const openEpoch = this._galleryTalkEpoch;
         this.currentCharId = charId;
         this.currentCharKey = this.CHAR_ID_TO_KEY[charId];
         if (!this.currentCharKey) return;
@@ -704,7 +712,13 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         // 입력 포커스
         const input = document.getElementById('chat-input');
         if (input && (!window.isCupidDesktopPointer || window.isCupidDesktopPointer())) {
-            setTimeout(() => input.focus(), 300);
+            setTimeout(() => {
+                if (this._galleryTalkEpoch === openEpoch
+                    && this.currentCharId === charId
+                    && this.overlayEl?.classList?.contains('active')) {
+                    input.focus();
+                }
+            }, 300);
         }
 
         console.log(`[GalleryFreeTalk] 오버레이 열기: ${charId}`);
@@ -716,6 +730,10 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
     close() {
         if (!this.overlayEl) return;
         if (!this.overlayEl.classList.contains('active')) return;
+
+        const closingCharId = this.currentCharId;
+        const closingHistory = this.chatHistory;
+        this._invalidateGalleryTalkContext();
 
         this.overlayEl.classList.remove('active');
         this.overlayEl.innerHTML = '';
@@ -731,8 +749,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         }
 
         // 메모리 저장
-        if (this.currentCharId) {
-            this._saveMemory(this.currentCharId);
+        if (closingCharId) {
+            this._saveMemory(closingCharId, closingHistory);
         }
 
         console.log('[GalleryFreeTalk] 오버레이 닫기');
@@ -947,6 +965,44 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         return Math.ceil((lineHeight * maxRows) + verticalPadding + verticalBorder);
     }
 
+    _invalidateGalleryTalkContext() {
+        if (this._activeRequestContext) {
+            this._rollbackRequestHistory(this._activeRequestContext);
+        }
+        this._galleryTalkEpoch += 1;
+        this._activeChatTurnId = null;
+        this._activeRequestOwner = null;
+        this._activeRequestContext = null;
+        this._typingGeneration += 1;
+        this._activeTypingOwner = null;
+        this.isTyping = false;
+        this.skipTyping = false;
+    }
+
+    _isRequestContextCurrent(requestContext) {
+        return Boolean(requestContext
+            && this._galleryTalkEpoch === requestContext.epoch
+            && this.currentCharId === requestContext.charId
+            && this.currentCharKey === requestContext.charKey
+            && this.chatHistory === requestContext.history
+            && this._activeRequestOwner === requestContext.owner
+            && this.overlayEl?.classList?.contains('active'));
+    }
+
+    _assertRequestContext(requestContext, payload = null) {
+        if (!this._isRequestContextCurrent(requestContext)) {
+            throw this._makeStaleTurnError('Gallery free-talk character changed before the AI response completed');
+        }
+        this._assertCurrentTurn(requestContext.turnMeta, payload);
+    }
+
+    _rollbackRequestHistory(requestContext) {
+        const history = requestContext?.history;
+        const start = requestContext?.historyLengthBeforeTurn;
+        if (!Array.isArray(history) || !Number.isInteger(start) || start < 0) return;
+        if (history.length > start) history.splice(start);
+    }
+
     _hashTurnText(value) {
         const text = String(value || '');
         let hash = 2166136261;
@@ -997,6 +1053,21 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
     async _handleSend() {
         if (this.isProcessing) return;
+        if (!this.currentCharId || !this.currentCharKey || !this.overlayEl?.classList?.contains('active')) return;
+
+        const requestOwner = {};
+        const requestContext = {
+            owner: requestOwner,
+            epoch: this._galleryTalkEpoch,
+            charId: this.currentCharId,
+            charKey: this.currentCharKey,
+            history: this.chatHistory,
+            historyLengthBeforeTurn: null,
+            turnMeta: null
+        };
+        const requestHistory = requestContext.history;
+        const requestCharId = requestContext.charId;
+        const requestCharKey = requestContext.charKey;
 
         const input = document.getElementById('chat-input');
         const text = input.value.trim();
@@ -1007,6 +1078,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
         input.value = '';
         this._resizeInput(input);
+        this._activeRequestOwner = requestOwner;
+        this._activeRequestContext = requestContext;
         this.isProcessing = true;
 
         // 이미지 + 텍스트 결합 (게임과 동일: text\n\nbase64)
@@ -1034,7 +1107,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         // 이미지 미리보기 제거
         this._removeStagedImage();
 
-        this.chatHistory.push({ role: 'user', content: finalContent });
+        const historyLengthBeforeTurn = requestHistory.length;
+        requestContext.historyLengthBeforeTurn = historyLengthBeforeTurn;
+        requestHistory.push({ role: 'user', content: finalContent });
 
         // 전송 버튼 & 입력 비활성화 + 로딩 상태 (게임과 동일)
         const sendBtn = document.getElementById('chat-send');
@@ -1059,7 +1134,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             indicator.innerHTML = '<span class="dot"></span><span class="dot"></span><span class="dot"></span>';
             gftChar.appendChild(indicator);
         }
-        const pendingCharName = this.CHAR_NAMES[this.currentCharId]?.[this.lang] || this.currentCharId;
+        const pendingCharName = this.CHAR_NAMES[requestCharId]?.[this.lang] || requestCharId;
         this._showThinkingMessage(pendingCharName);
 
         let _lastTurnMeta = null;
@@ -1069,7 +1144,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         try {
             // [Explicit Caching] 캐시 키 헤더 추가
             // 토큰 절감: 최근 5개 메시지 외의 이미지는 [이전 사진]으로 치환
-            const _historyForRequest = this._sanitizeDainOutfitHistory(this._buildWindowedHistory(), this.currentCharId);
+            this._assertRequestContext(requestContext);
+            const _historyForRequest = this._sanitizeDainOutfitHistory(this._buildWindowedHistory(requestHistory), requestCharId);
             let _optimized = (typeof window.optimizeImageHistory === 'function')
                 ? window.optimizeImageHistory(_historyForRequest, 5)
                 : _historyForRequest;
@@ -1085,12 +1161,13 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             }
             _optimized = this._forceLatestUserMessageLast(_optimized, finalContent);
             const _stablePromptHash = getGalleryFreeTalkStablePromptHash(_optimized[0]?.content || finalContent);
-            const _gftCacheKey = this.currentCharId
-                ? `cupid-gft:ctx:${encodeGalleryFreeTalkCacheKeyPart(this.lang)}:${encodeGalleryFreeTalkCacheKeyPart(this.currentCharId)}:s${_stablePromptHash}`
+            const _gftCacheKey = requestCharId
+                ? `cupid-gft:ctx:${encodeGalleryFreeTalkCacheKeyPart(this.lang)}:${encodeGalleryFreeTalkCacheKeyPart(requestCharId)}:s${_stablePromptHash}`
                 : '';
             _lastCacheKey = _gftCacheKey;
             const _turnMeta = this._createTurnMeta(finalContent);
             _lastTurnMeta = _turnMeta;
+            requestContext.turnMeta = _turnMeta;
             this._activeChatTurnId = _turnMeta?.turnId || null;
             const aiEndpoint = window.AI_API_ENDPOINT || window.API_ENDPOINT || 'https://chatbot-api.yama5993.workers.dev/';
             _lastAiEndpoint = aiEndpoint;
@@ -1106,7 +1183,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 body: JSON.stringify({
                     messages: _optimized,
                     model: window.AI_MODEL_ID || (typeof AI_MODEL_ID !== 'undefined' ? AI_MODEL_ID : undefined),
-                    characterId: this.currentCharId || '',
+                    characterId: requestCharId || '',
                     requestType: 'character',
                     chatMode: 'single',
                     cacheKey: _gftCacheKey,
@@ -1116,7 +1193,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             let response;
             try {
                 response = await fetch(aiEndpoint, requestInit);
+                this._assertRequestContext(requestContext);
             } catch (primaryError) {
+                this._assertRequestContext(requestContext);
                 const fallbackEndpoint = window.API_ENDPOINT || 'https://chatbot-api.yama5993.workers.dev/';
                 const canFallback = primaryError instanceof TypeError
                     && fallbackEndpoint
@@ -1124,19 +1203,20 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 if (!canFallback) throw primaryError;
                 _lastAiEndpoint = fallbackEndpoint;
                 response = await fetch(fallbackEndpoint, requestInit);
+                this._assertRequestContext(requestContext);
             }
 
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
             const data = await response.json();
-            this._assertCurrentTurn(_turnMeta, data);
+            this._assertRequestContext(requestContext, data);
             const replyContent = data?.choices?.[0]?.message?.content;
             const reply = typeof replyContent === 'string' ? replyContent.trim() : '';
 
             if (!reply) {
                 console.warn('[Cupid GalleryFreeTalk] Empty AI response payload:', {
                     reason: data?.reason || data?.error || data?.choices?.[0]?.finish_reason || 'EMPTY_AI_RESPONSE',
-                    character: this.currentCharId || ''
+                    character: requestCharId || ''
                 });
                 throw new Error('AI response was empty. Please try again.');
             }
@@ -1150,7 +1230,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 const hitRatio = hitTokens + missTokens > 0 ? hitTokens / (hitTokens + missTokens) : 0;
                 console.info('[DeepSeek Cache]', {
                     app: 'cupid-gallery-freetalk',
-                    character: this.currentCharId || '',
+                    character: requestCharId || '',
                     cacheKey: _gftCacheKey || '',
                     hitTokens,
                     missTokens,
@@ -1161,17 +1241,20 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 });
             }
 
+            this._assertRequestContext(requestContext, data);
             const parsed = this._parseResponse(reply);
-            const displayText = this._sanitizePlayerPlaceholders(parsed.text || '...');
+            if (!parsed?.text && !(Array.isArray(parsed?.segments) && parsed.segments.length > 0)) {
+                throw new Error('AI response did not contain visible roleplay text. Please try again.');
+            }
+            const displayText = this._sanitizePlayerPlaceholders(parsed.text || '');
             const displaySegments = this._sanitizeSegmentsPlaceholders(parsed.segments || null);
-
-            // 표정 변경
-            if (parsed.expression) {
-                this._updateExpression(parsed.expression);
+            if (!displayText) {
+                throw new Error('AI response did not contain visible roleplay text. Please try again.');
             }
 
+            this._assertRequestContext(requestContext, data);
             // 이름표를 캐릭터로 변경 + 생각중 상태 해제
-            const charName = this.CHAR_NAMES[this.currentCharId]?.[this.lang] || this.currentCharId;
+            const charName = this.CHAR_NAMES[requestCharId]?.[this.lang] || requestCharId;
             this._clearThinkingMessage();
             if (nameTag) nameTag.textContent = charName;
             if (charImg) charImg.classList.remove('thinking');
@@ -1179,18 +1262,27 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
 
             // 대사창에 타이핑 효과로 표시 (segments 있으면 구조화 렌더)
-            await this._typeText(displayText, displaySegments);
-            this.chatHistory.push({ role: 'assistant', content: displayText });
+            await this._typeText(displayText, displaySegments, requestContext);
+            this._assertRequestContext(requestContext, data);
+            if (parsed.expression) {
+                this._updateExpression(parsed.expression, requestCharId);
+            }
+            this._assertRequestContext(requestContext, data);
+            requestHistory.push({ role: 'assistant', content: displayText });
 
             // 프리토킹 횟수 증가
-            this._incrementFreeTalkCount();
+            this._incrementFreeTalkCount(requestCharId);
+
+            this._assertRequestContext(requestContext, data);
+            this._saveMemory(requestCharId, requestHistory);
 
             // D1 chat-logs 저장 (백업 뷰어용, 비동기 fire-and-forget)
             // charId: 대문자 키(this.currentCharKey)로 저장해 게임 내 프리토킹 기록과 버킷 통일
             // assistantContent: 파싱된 displayText(raw JSON 저장 금지 — 뷰어에서 원본 JSON이 그대로 노출됨)
             if (typeof window.saveCupidChatLog === 'function') {
+                this._assertRequestContext(requestContext, data);
                 window.saveCupidChatLog({
-                    charId: this.currentCharKey,
+                    charId: requestCharKey,
                     userContent: finalContent,
                     assistantContent: displayText,
                     sessionId: 'gallery-freetalk',
@@ -1200,7 +1292,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             }
 
         } catch (err) {
-            if (err?.isStaleTurn || err?.reason === 'STALE_TURN') {
+            const ownsCurrentContext = this._isRequestContextCurrent(requestContext);
+            this._rollbackRequestHistory(requestContext);
+            if (!ownsCurrentContext || err?.isStaleTurn || err?.reason === 'STALE_TURN') {
                 console.warn('[Cupid GalleryFreeTalk] Ignored stale chat response');
                 err.__staleTurnHandled = true;
             }
@@ -1212,10 +1306,10 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                         errorType: /^HTTP\s+\d+/.test(err?.message || '') ? 'freetalk_http_error' : 'freetalk_request_failed',
                         sessionId: 'gallery-freetalk',
                         context: {
-                            charId: this.currentCharKey || this.currentCharId || '',
-                            galleryCharId: this.currentCharId || '',
+                            charId: requestCharKey || requestCharId || '',
+                            galleryCharId: requestCharId || '',
                             language: this.lang || '',
-                            freeTalkCount: this.progress?.getFreeTalkCount?.(this.currentCharId) || 0
+                            freeTalkCount: this.progress?.getFreeTalkCount?.(requestCharId) || 0
                         },
                         extra: {
                             cacheKey: _lastCacheKey,
@@ -1224,42 +1318,51 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                             latestUserHash: _lastTurnMeta?.latestUserHash || '',
                             latestUserLength: _lastTurnMeta?.latestUserLength || String(finalContent || '').length,
                             hasImage: String(finalContent || '').includes('data:image/'),
-                            historyLength: Array.isArray(this.chatHistory) ? this.chatHistory.length : 0
+                            historyLength: requestHistory.length
                         }
                     });
                 }
-                const charName = this.CHAR_NAMES[this.currentCharId]?.[this.lang] || this.currentCharId;
                 this._clearThinkingMessage();
-                if (nameTag) nameTag.textContent = charName;
+                const noticeLabel = this._L('안내', 'Notice', 'Aviso', 'お知らせ', 'Information', 'Hinweis', 'Aviso');
+                if (nameTag) nameTag.textContent = noticeLabel;
                 if (charImg) charImg.classList.remove('thinking');
                 if (dialogueBox) dialogueBox.classList.remove('thinking-box');
                 document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
-                const fallback = this._getFallbackReply();
-                await this._typeText(fallback);
-                this.chatHistory.push({ role: 'assistant', content: fallback });
+                const requestErrorMessage = this._L(
+                    '연결이 잠시 원활하지 않습니다. 방금 입력은 대화 기록에 저장되지 않았습니다. 다시 시도해 주세요.',
+                    'The connection was interrupted. Your last input was not saved to the conversation. Please try again.',
+                    'La conexión se interrumpió. Tu último mensaje no se guardó en la conversación. Inténtalo de nuevo.',
+                    '接続が一時的に中断されました。直前の入力は会話履歴に保存されていません。もう一度お試しください。',
+                    'La connexion a été interrompue. Votre dernier message n’a pas été enregistré dans la conversation. Réessayez.',
+                    'Die Verbindung wurde unterbrochen. Deine letzte Eingabe wurde nicht im Gespräch gespeichert. Bitte versuche es erneut.',
+                    'A conexão foi interrompida. Sua última mensagem não foi salva na conversa. Tente novamente.'
+                );
+                await this._typeText(requestErrorMessage, null, requestContext);
             }
         }
 
-        if (charImg) charImg.classList.remove('thinking');
-        if (dialogueBox) dialogueBox.classList.remove('thinking-box');
-        document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
-        this._clearThinkingMessage();
+        if (this._activeRequestOwner === requestOwner) {
+            this._activeRequestOwner = null;
+            this._activeRequestContext = null;
+            this._activeChatTurnId = null;
+            if (charImg) charImg.classList.remove('thinking');
+            if (dialogueBox) dialogueBox.classList.remove('thinking-box');
+            document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
+            this._clearThinkingMessage();
 
-        // UI 복원 (게임과 동일: 버튼 원복 + 입력 활성화)
-        if (sendBtn) {
-            sendBtn.disabled = false;
-            sendBtn.innerHTML = originalBtnContent;
-        }
-        if (input) {
-            input.disabled = false;
-            if (!window.isCupidDesktopPointer || window.isCupidDesktopPointer()) {
-                input.focus();
+            // UI 복원 (게임과 동일: 버튼 원복 + 입력 활성화)
+            if (sendBtn) {
+                sendBtn.disabled = false;
+                sendBtn.innerHTML = originalBtnContent;
             }
+            if (input) {
+                input.disabled = false;
+                if (!window.isCupidDesktopPointer || window.isCupidDesktopPointer()) {
+                    input.focus();
+                }
+            }
+            this.isProcessing = false;
         }
-        this.isProcessing = false;
-
-        // 메모리 저장
-        this._saveMemory(this.currentCharId);
     }
 
     // =========================================================================
@@ -1368,7 +1471,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
             // 알려진 텍스트 키 폴백
             const text = parsed.text || parsed.dialogue || parsed.content || parsed.message || parsed.response || '';
-            return { text: this._sanitizePlayerPlaceholders(text || reply), segments: null, expression: (parsed.expression || '').toLowerCase() };
+            return { text: this._sanitizePlayerPlaceholders(text), segments: null, expression: (parsed.expression || '').toLowerCase() };
 
         } catch (e) {
             window.reportCupidCaughtError?.(e, {
@@ -1383,7 +1486,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     replyHash: window.hashCupidLogText ? window.hashCupidLogText(reply || '') : ''
                 }
             });
-            return { text: this._sanitizePlayerPlaceholders(reply), segments: null, expression: '' };
+            return { text: '', segments: null, expression: '' };
         }
     }
 
@@ -1461,14 +1564,27 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
      * 지문(*text*)은 처음부터 포맷 적용된 상태로 타이핑.
      *
      * @param {string} text - 표시할 텍스트
+     * @param {Array|null} structuredSegments - 구조화된 narration/dialogue 배열
+     * @param {Object|null} requestContext - 현재 오버레이/캐릭터 요청 소유권
      * @returns {Promise} 타이핑 완료 시 resolve
      */
-    _typeText(text, structuredSegments = null) {
+    _typeText(text, structuredSegments = null, requestContext = null) {
         const msgEl = document.getElementById('message');
         if (!msgEl) return Promise.resolve();
 
         text = this._sanitizePlayerPlaceholders(text || '');
         structuredSegments = this._sanitizeSegmentsPlaceholders(structuredSegments);
+
+        const typingOwner = { generation: ++this._typingGeneration };
+        this._activeTypingOwner = typingOwner;
+        const ownsTyping = () => this._activeTypingOwner === typingOwner;
+        const finishOwnedTyping = () => {
+            if (!ownsTyping()) return false;
+            this.isTyping = false;
+            this.skipTyping = false;
+            this._activeTypingOwner = null;
+            return true;
+        };
 
         this.isTyping = true;
         this.skipTyping = false;
@@ -1500,13 +1616,21 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             let startTime = null;
 
             const typeFrame = (timestamp) => {
+                if (!ownsTyping()) {
+                    resolve();
+                    return;
+                }
+                if (requestContext && !this._isRequestContextCurrent(requestContext)) {
+                    finishOwnedTyping();
+                    resolve();
+                    return;
+                }
                 if (!startTime) startTime = timestamp;
 
                 // 스킵 요청 시 즉시 전체 텍스트 표시
                 if (this.skipTyping) {
                     segments.forEach((seg, i) => { elements[i].textContent = seg.content; });
-                    this.isTyping = false;
-                    this.skipTyping = false;
+                    finishOwnedTyping();
                     resolve();
                     return;
                 }
@@ -1532,7 +1656,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 if (targetTotal < totalLength) {
                     requestAnimationFrame(typeFrame);
                 } else {
-                    this.isTyping = false;
+                    finishOwnedTyping();
                     resolve();
                 }
             };
@@ -1584,34 +1708,22 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         }).join(' ');
     }
 
-    _updateExpression(expression) {
-        if (!this.currentCharId) return;
-        const validExprs = this.CHAR_EXPRESSIONS[this.currentCharId] || [];
+    _updateExpression(expression, charId = this.currentCharId) {
+        if (!charId) return;
+        const validExprs = this.CHAR_EXPRESSIONS[charId] || [];
         if (!validExprs.includes(expression)) return;
 
         const img = document.getElementById('gft-char-img');
         if (img) {
-            img.src = `assets/images/characters/${this.currentCharId}_${expression}.png?v=${window.ASSET_VERSION || ''}`;
+            img.src = `assets/images/characters/${charId}_${expression}.png?v=${window.ASSET_VERSION || ''}`;
         }
     }
 
-    _getFallbackReply() {
-        return this._L(
-            '...미안, 잠깐 멍했어. 다시 말해줄래?',
-            "...Sorry, I spaced out for a moment. Could you say that again?",
-            '...Perdón, me distraje un momento. ¿Puedes repetirlo?',
-            '...ごめん、ちょっとぼんやりしてた。もう一度言ってくれる？',
-            "...Désolée, j'étais dans la lune. Tu peux répéter ?",
-            '...Entschuldigung, ich war kurz abgelenkt. Kannst du das nochmal sagen?',
-            '...Desculpa, eu me distraí um momento. Pode repetir?'
-        );
-    }
-
-    _incrementFreeTalkCount() {
-        if (!this.currentCharId || !this.progress) return;
+    _incrementFreeTalkCount(charId = this.currentCharId) {
+        if (!charId || !this.progress) return;
         try {
             this.progress.refresh();
-            const charData = this.progress.data.characters?.[this.currentCharId];
+            const charData = this.progress.data.characters?.[charId];
             if (charData) {
                 charData.freeTalkCount = (charData.freeTalkCount || 0) + 1;
                 this.progress.save();
@@ -1832,16 +1944,10 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const compactGalleryState = isEn
             ? `State: place=${location || 'current gallery scene'}; user=${playerName}; language=${langName}`
             : `현재 상태: 장소=${location || '현재 갤러리 장면'}; 사용자=${playerName}; 언어=한국어`;
-        const charKey = this.CHAR_ID_TO_KEY[charId] || charId;
-        const roleplayVoiceExamplesBlock = (typeof getFreeTalkVoiceExamples === 'function')
-            ? getFreeTalkVoiceExamples(this.lang, charKey, charKey, 3, true)
-            : '';
-
         if (isEn) {
             return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Cupid gallery free-talk: post-graduation adult lovers, ${charName} and ${playerName}; not a current school scene.
 Character: ${personality}
 ${charName} is in-scene, not assistant/narrator.
-${roleplayVoiceExamplesBlock}
 ${characterOutfitGuard}
 Scene: Keep this 1:1; other people remain offstage except through ${charName}'s reaction to a mention. Treat the user's latest explicit in-world facts and completed outcomes as current, without recap or reversal; only the character-specific canon locks above remain exceptions. Stay inside ${charName} and do not write the user's next action, dialogue, choice, or hidden thought. Let intimacy, distance, refusal, teasing, and initiative arise from this character and the immediate moment rather than a generic lover pattern. In an already-established adult intimate scene, keep physical description in narration and actual speech or sounds in dialogue without a stock sound pattern. Use natural present-day speech.
 ${compactGalleryGuidance}
@@ -1853,7 +1959,6 @@ ${compactGalleryState}`;
         return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}한국어로만 답하세요. 졸업 후 독립한 성인 연인 두 사람만 등장하는 갤러리 프리토킹입니다. 당신은 ${charName}, 연인은 ${playerName}입니다. 현재의 학교 장면이 아닙니다.
 캐릭터: ${personality}
 현재 장면의 인물은 ${charName}입니다. 도우미나 해설자처럼 말하지 마세요.
-${roleplayVoiceExamplesBlock}
 ${characterOutfitGuard}
 장면: 두 사람만 장면에 두고, 다른 인물은 언급을 들은 ${charName}의 반응으로만 남깁니다. 사용자가 방금 확정해 쓴 극중 사실과 끝난 사건은 현재 장면으로 받고, 복창하거나 되돌리지 말고 ${charName}의 반응으로 이어갑니다. 위의 캐릭터별 사실 잠금만 예외입니다. 사용자의 다음 행동·대사·선택·속마음은 대신 쓰지 마세요. 친밀감, 거리, 거절, 장난과 주도성은 공용 연인 공식이 아니라 이 인물과 바로 앞 순간에서 나옵니다. 성인 사이의 친밀한 장면이 이미 성립했다면 신체 묘사는 narration에, 실제 발화와 소리는 dialogue에 두되 정형화된 소리를 반복하지 않습니다. 자연스러운 현재 한국어를 쓰세요.
 ${compactGalleryGuidance}
@@ -1892,16 +1997,16 @@ ${compactGalleryState}`;
         });
     }
 
-    _buildWindowedHistory() {
-        if (!Array.isArray(this.chatHistory) || this.chatHistory.length === 0) return [];
+    _buildWindowedHistory(history = this.chatHistory) {
+        if (!Array.isArray(history) || history.length === 0) return [];
 
-        const sysMsg = this.chatHistory[0];
+        const sysMsg = history[0];
         if (!sysMsg || sysMsg.role !== 'system') {
-            return this.chatHistory.slice(-this.HISTORY_WINDOW);
+            return history.slice(-this.HISTORY_WINDOW);
         }
 
-        const rest = this.chatHistory.slice(1);
-        if (rest.length <= this.HISTORY_WINDOW) return this.chatHistory;
+        const rest = history.slice(1);
+        if (rest.length <= this.HISTORY_WINDOW) return history;
 
         return [sysMsg, ...rest.slice(-this.HISTORY_WINDOW)];
     }
@@ -1925,13 +2030,13 @@ ${compactGalleryState}`;
         }
     }
 
-    _saveMemory(charId) {
+    _saveMemory(charId, history = this.chatHistory) {
         try {
             const saved = localStorage.getItem(this.MEMORY_KEY);
             const all = saved ? JSON.parse(saved) : {};
 
             // system 메시지 제외, 최근 20개만 저장
-            const chatOnly = this.chatHistory.filter(m => m.role !== 'system');
+            const chatOnly = (Array.isArray(history) ? history : []).filter(m => m.role !== 'system');
             all[charId] = chatOnly.slice(-20);
 
             localStorage.setItem(this.MEMORY_KEY, JSON.stringify(all));

@@ -6,7 +6,7 @@
 //
 // 📦 의존성:
 //    - config.js → CHAR_NAME_MAP, DEFAULT_MAX_FREE_TALK_TURNS, SEND_ICON, API_ENDPOINT, getAssetUrl
-//    - prompts.js → FLAG_MEMORIES, getPromptData, buildSystemPrompt, getFallbackReply, CHARACTER_EXPRESSIONS
+//    - prompts.js → FLAG_MEMORIES, getPromptData, buildSystemPrompt, CHARACTER_EXPRESSIONS
 //
 // 🌐 window 노출:
 //    - window.FreeTalkSystem
@@ -325,6 +325,13 @@ class FreeTalkSystem {
         /** 현재 프리토킹 씬의 ID */
         this.currentSceneId = null;
 
+        /** 장면 전환 뒤 늦게 도착한 응답을 무효화하는 단조 증가 세대값 */
+        this._freeTalkEpoch = 0;
+        this._activeRequestOwner = null;
+        this._activeRequestContext = null;
+        this._activeChatTurnId = null;
+        this.currentCharKey = null;
+
         /** 현재 씬의 통신 매체 (대면 vs 원격) — 캐시 키 분기용 */
         this._isRemote = false;
 
@@ -478,7 +485,10 @@ class FreeTalkSystem {
         // 이미 프리토킹 중이면 무시 (중복 호출 방지)
         if (this.isFreeTalking) return;
 
+        this._invalidateFreeTalkContext();
+        const startEpoch = this._freeTalkEpoch;
         this.isFreeTalking = true;
+        this.isProcessingChat = false;
         this.freeTalkTurns = 0;
         this.currentMaxTurns = scene.maxTurns || DEFAULT_MAX_FREE_TALK_TURNS;
         this.currentSceneId = sceneId;
@@ -489,6 +499,7 @@ class FreeTalkSystem {
         const isJa = lang === 'ja';
 
         const charKey = this.charNameMap[scene.name] || scene.name;
+        this.currentCharKey = charKey;
 
         // 게임 내 이벤트 기억 수집
         const gameContext = this.getGameContext(charKey, lang);
@@ -584,6 +595,7 @@ class FreeTalkSystem {
         const systemPrompt = normalizeFreeTalkPromptBlockForCache(rawSystemPrompt);
 
         this.freeTalkHistory = [{ role: "system", content: systemPrompt }, ...this.freeTalkHistory.filter(m => m.role !== "system")];
+        const startHistory = this.freeTalkHistory;
 
         // UI 설정
         this.uiManager.chatContainer.style.display = 'block';
@@ -652,8 +664,21 @@ class FreeTalkSystem {
         // 캐릭터가 먼저 말을 거는 상황 (예: "안녕! 무슨 일이야?")
         // → 타이핑 효과로 표시하고, AI 대화 기록에도 추가
         if (scene.text) {
-            await this.dialogueSystem.typeText(scene.text, scene.name);
-            this.freeTalkHistory.push({ role: "assistant", content: scene.text });
+            await this.dialogueSystem.typeText(scene.text, scene.name, null, () => (
+                this._freeTalkEpoch === startEpoch
+                && this.currentSceneId === sceneId
+                && this.currentCharKey === charKey
+                && this.freeTalkHistory === startHistory
+                && this.isFreeTalking
+            ));
+            if (this._freeTalkEpoch !== startEpoch
+                || this.currentSceneId !== sceneId
+                || this.currentCharKey !== charKey
+                || this.freeTalkHistory !== startHistory
+                || !this.isFreeTalking) {
+                return;
+            }
+            startHistory.push({ role: "assistant", content: scene.text });
         }
 
         // 초기 대사 출력 후 입력창에 포커스 (모바일 키보드 활성화)
@@ -666,15 +691,26 @@ class FreeTalkSystem {
     async skipFreeTalk() {
         if (!this.isFreeTalking) return;
 
+        const skipEpoch = this._freeTalkEpoch;
+        const skipSceneId = this.currentSceneId;
+        const skipHistory = this.freeTalkHistory;
+
         const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
         const confirmMsg = { es: "¿Cerrar esta inserción de escena y continuar?", ja: "この場面挿入を終了して次のシーンに進みますか？", en: "Close this scene insert and proceed?", fr: "Terminer cette insertion de scène et continuer ?", de: "Diesen Szeneneinsatz beenden und fortfahren?", pt: "Encerrar esta inserção de cena e continuar?" }[lang] || "이 장면 삽입을 끝내고 다음 장면으로 넘어가시겠습니까?";
 
         const confirmed = await this.uiManager.showModal(confirmMsg);
         if (confirmed) {
+            if (this._freeTalkEpoch !== skipEpoch
+                || this.currentSceneId !== skipSceneId
+                || this.freeTalkHistory !== skipHistory
+                || !this.isFreeTalking) {
+                return;
+            }
             // 타이핑 중이면 중단
             if (this.dialogueSystem.isCurrentlyTyping()) {
                 this.dialogueSystem.requestSkip();
             }
+            this._invalidateFreeTalkContext();
             this.freeTalkTurns = this.currentMaxTurns;
             this.stateManager.setFlag(`messaged_${this.currentSceneId}`);
             this.uiManager.chatContainer.style.display = 'none';
@@ -686,28 +722,44 @@ class FreeTalkSystem {
         }
     }
 
-    /** 폴백 응답 생성 */
-    getFallbackReply(charName, isEn, getSceneFn) {
-        const charKey = this.charNameMap[charName] || charName;
-        const affinity = this.stateManager.getAffinity(charKey);
-        const isDating = this.stateManager.getFlag(`isDating_${charKey}`) || this.stateManager.getFlag(`isDating_${charName}`);
-
-        const scene = getSceneFn(this.currentSceneId);
-        const remoteKeywords = ["연락", "메시지", "전화", "톡", "문자", "Contact", "Message", "Call", "Text", "전송"];
-        const isRemote = scene && remoteKeywords.some(k =>
-            (scene.context && scene.context.includes(k)) ||
-            (scene.buttonText && scene.buttonText.includes(k)) ||
-            (scene.text && scene.text.includes(k))
-        );
-
-        // prompts.js의 함수 호출
-        if (window.getFallbackReply) {
-            return window.getFallbackReply(charKey, isEn, isDating, affinity, isRemote, this.stateManager.playerName);
+    /** 채팅 메시지 전송 */
+    _invalidateFreeTalkContext({ preserveRequestOwner = false } = {}) {
+        if (!preserveRequestOwner && this._activeRequestContext) {
+            this._rollbackRequestHistory(this._activeRequestContext);
+            if (this.uiManager?.messageEl) this.uiManager.messageEl.innerHTML = '';
         }
-        return "...";
+        this._freeTalkEpoch += 1;
+        this._activeChatTurnId = null;
+        if (!preserveRequestOwner) {
+            this._activeRequestOwner = null;
+            this._activeRequestContext = null;
+        }
     }
 
-    /** 채팅 메시지 전송 */
+    _isRequestContextCurrent(requestContext) {
+        return Boolean(requestContext
+            && this._freeTalkEpoch === requestContext.epoch
+            && this.currentSceneId === requestContext.sceneId
+            && this.currentCharKey === requestContext.charKey
+            && this.freeTalkHistory === requestContext.history
+            && this._activeRequestOwner === requestContext.owner
+            && this.isFreeTalking);
+    }
+
+    _assertRequestContext(requestContext, payload = null) {
+        if (!this._isRequestContextCurrent(requestContext)) {
+            throw this._makeStaleTurnError('Free-talk scene changed before the AI response completed');
+        }
+        this._assertCurrentTurn(requestContext.turnMeta, payload);
+    }
+
+    _rollbackRequestHistory(requestContext) {
+        const history = requestContext?.history;
+        const start = requestContext?.historyLengthBeforeTurn;
+        if (!Array.isArray(history) || !Number.isInteger(start) || start < 0) return;
+        if (history.length > start) history.splice(start);
+    }
+
     _hashTurnText(value) {
         const text = String(value || '');
         let hash = 2166136261;
@@ -766,9 +818,28 @@ class FreeTalkSystem {
         // 텍스트가 없고 이미지도 없으면 전송하지 않음
         if ((!text && !stagedImageEarly) || this.freeTalkTurns >= this.currentMaxTurns || this.dialogueSystem.isCurrentlyTyping()) return;
 
-        const scene = getSceneFn(this.currentSceneId);
+        const requestSceneId = this.currentSceneId;
+        const requestHistory = this.freeTalkHistory;
+        const requestEpoch = this._freeTalkEpoch;
+        const scene = getSceneFn(requestSceneId);
         if (!scene) return;
 
+        const charKey = this.charNameMap[scene.name] || scene.name;
+        if (this.currentCharKey !== charKey) return;
+
+        const requestOwner = {};
+        const requestContext = {
+            owner: requestOwner,
+            epoch: requestEpoch,
+            sceneId: requestSceneId,
+            charKey,
+            history: requestHistory,
+            historyLengthBeforeTurn: null,
+            freeTalkTurnsBefore: this.freeTalkTurns,
+            turnMeta: null
+        };
+        this._activeRequestOwner = requestOwner;
+        this._activeRequestContext = requestContext;
         this.isProcessingChat = true;
 
         this.uiManager.chatInput.value = "";
@@ -776,18 +847,14 @@ class FreeTalkSystem {
         this.freeTalkTurns++;
         if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
 
-        // 프리토킹 횟수 증가
-        const charKey = this.charNameMap[scene.name] || scene.name;
-        this.galleryManager.incrementFreeTalkCount(charKey);
-
         // 진행 상황 업데이트
-        if (this.freeTalkHistory.length > 0 && this.freeTalkHistory[0].role === "system") {
+        if (requestHistory.length > 0 && requestHistory[0].role === "system") {
             const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
             const remaining = this.currentMaxTurns - this.freeTalkTurns;
             const progressTag = { es: `\n[Progreso del escenario]: ${this.freeTalkTurns}/${this.currentMaxTurns} turnos. ${remaining} restantes.`, ja: `\n[シナリオ進行度]: ${this.freeTalkTurns}/${this.currentMaxTurns}ターン。残り${remaining}ターン。`, en: `\n[CURRENT_PROGRESS]: ${this.freeTalkTurns}/${this.currentMaxTurns} turns. ${remaining} remaining.`, fr: `\n[Progression du scénario] : ${this.freeTalkTurns}/${this.currentMaxTurns} tours. ${remaining} restants.`, de: `\n[Szenariofortschritt]: ${this.freeTalkTurns}/${this.currentMaxTurns} Runden. ${remaining} übrig.`, pt: `\n[Progresso do cenário]: ${this.freeTalkTurns}/${this.currentMaxTurns} turnos. ${remaining} restantes.` }[lang] || `\n[현재 진행 상황]: ${this.freeTalkTurns}/${this.currentMaxTurns}턴. ${remaining}턴 남음.`;
 
-            const baseContent = this.freeTalkHistory[0].content.split('\n[CURRENT_PROGRESS]')[0].split('\n[현재 진행 상황]')[0].split('\n[Progreso del escenario]')[0].split('\n[シナリオ進行度]')[0].split('\n[Progression du scénario]')[0].split('\n[Szenariofortschritt]')[0].split('\n[Progresso do cenário]')[0];
-            this.freeTalkHistory[0].content = appendFreeTalkDynamicContext(baseContent, progressTag);
+            const baseContent = requestHistory[0].content.split('\n[CURRENT_PROGRESS]')[0].split('\n[현재 진행 상황]')[0].split('\n[Progreso del escenario]')[0].split('\n[シナリオ進行度]')[0].split('\n[Progression du scénario]')[0].split('\n[Szenariofortschritt]')[0].split('\n[Progresso do cenário]')[0];
+            requestHistory[0].content = appendFreeTalkDynamicContext(baseContent, progressTag);
         }
 
         // 사용자 메시지 표시
@@ -812,7 +879,9 @@ class FreeTalkSystem {
         // 유저 메시지 표시 후 대화창 최하단으로 스크롤
         if (this.uiManager.messageEl) this.uiManager.messageEl.scrollTop = this.uiManager.messageEl.scrollHeight;
 
-        this.freeTalkHistory.push({ role: "user", content: finalContent });
+        const historyLengthBeforeTurn = requestHistory.length;
+        requestContext.historyLengthBeforeTurn = historyLengthBeforeTurn;
+        requestHistory.push({ role: "user", content: finalContent });
 
         // 이미지 미리보기 제거
         this.uiManager.removeStagedImage();
@@ -860,7 +929,8 @@ class FreeTalkSystem {
             // [Explicit Caching] 캐시 키 — static 영역이 유저 중립(placeholder 유지)이라 전체 유저 공유 캐시 가능
             const _lang = window.GAME_LANG || document.documentElement.lang || 'ko';
             // [슬라이딩 윈도우] system + 누적 요약 주입 + 최근 N개 메시지만 전송 (토큰 폭증 방지)
-            const _windowed = this._sanitizeDainOutfitHistory(this._buildWindowedHistory(), charKey);
+            this._assertRequestContext(requestContext);
+            const _windowed = this._sanitizeDainOutfitHistory(this._buildWindowedHistory(requestHistory), charKey);
             // 토큰 절감: 최근 5개 메시지 외의 이미지는 [이전 사진]으로 치환
             let _optimized = (typeof window.optimizeImageHistory === 'function')
                 ? window.optimizeImageHistory(_windowed, 5)
@@ -888,6 +958,7 @@ class FreeTalkSystem {
             _lastCacheKey = _cacheKey;
             const _turnMeta = this._createTurnMeta(finalContent);
             _lastTurnMeta = _turnMeta;
+            requestContext.turnMeta = _turnMeta;
             this._activeChatTurnId = _turnMeta?.turnId || null;
             const aiEndpoint = (typeof AI_API_ENDPOINT !== 'undefined' && AI_API_ENDPOINT) ? AI_API_ENDPOINT : API_ENDPOINT;
             _lastAiEndpoint = aiEndpoint;
@@ -913,7 +984,9 @@ class FreeTalkSystem {
             let response;
             try {
                 response = await fetch(aiEndpoint, requestInit);
+                this._assertRequestContext(requestContext);
             } catch (primaryError) {
+                this._assertRequestContext(requestContext);
                 const fallbackEndpoint = (typeof API_ENDPOINT !== 'undefined' && API_ENDPOINT) ? API_ENDPOINT : window.API_ENDPOINT;
                 const canFallback = primaryError instanceof TypeError
                     && fallbackEndpoint
@@ -921,6 +994,7 @@ class FreeTalkSystem {
                 if (!canFallback) throw primaryError;
                 _lastAiEndpoint = fallbackEndpoint;
                 response = await fetch(fallbackEndpoint, requestInit);
+                this._assertRequestContext(requestContext);
             }
 
             // HTTP 상태 코드 확인 (200번대가 아니면 오류)
@@ -929,7 +1003,7 @@ class FreeTalkSystem {
 
             // JSON 파싱
             const data = await response.json();
-            this._assertCurrentTurn(_turnMeta, data);
+            this._assertRequestContext(requestContext, data);
 
             // OpenAI API 응답 구조에서 대답 텍스트 추출
             // 구조: { choices: [{ message: { content: "대답 내용" } }] }
@@ -964,141 +1038,31 @@ class FreeTalkSystem {
                 });
             }
 
+            this._assertRequestContext(requestContext, data);
             const parsed = this.parseJsonResponse(reply);
 
-            // ─────────────────────────────────────────────────────────
-            // 🔑 히든 키워드 시스템: 캐릭터 트라우마/비밀 관련 키워드 감지
-            // ─────────────────────────────────────────────────────────
-            // 플레이어가 캐릭터의 민감한 주제를 언급하면 AI 응답을
-            // 사전 스크립팅된 특수 반응으로 교체한다. 캐릭터당 1회 한정.
-            if (parsed && text) {
-                const _kwLang = window.GAME_LANG || document.documentElement.lang || 'ko';
-                const _lowerText = text.toLowerCase();
-                const _kwFlag = `keyword_${charKey.toLowerCase()}`;
-
-                // 캐릭터별 히든 키워드 정의
-                const HIDDEN_KEYWORDS = {
-                    "Yuna": {
-                        flag: "keyword_yuna_junho",
-                        keywords: { ko: ["준호", "이준호"], en: ["junho", "lee junho"], ja: ["ジュンホ"], es: ["junho"], fr: ["junho"], de: ["junho"], pt: ["junho"] },
-                        response: {
-                            ko: "*긴 침묵이 내려앉는다.* \"...그 이름. 어디서 들었어.\" *말끝이 잠깐 끊긴다.* \"...아무것도 아니야.\"",
-                            en: "*A long silence settles in.* \"...That name. Where did you hear it.\" *The end of the sentence catches for a moment.* \"...It's nothing.\"",
-                            ja: "*長い沈黙が落ちる。* \"...その名前。どこで聞いたの。\" *言葉尻が一瞬途切れる。* \"...なんでもない。\"",
-                            es: "*Se instala un largo silencio.* \"...Ese nombre. ¿Dónde lo escuchaste?\" *El final de la frase se corta por un momento.* \"...No es nada.\"",
-                            fr: "*Un long silence tombe.* \"...Ce nom. Où l'as-tu entendu ?\" *La fin de la phrase se brise un instant.* \"...Ce n'est rien.\"",
-                            de: "*Ein langes Schweigen senkt sich.* \"...Dieser Name. Wo hast du den gehört?\" *Das Satzende stockt kurz.* \"...Es ist nichts.\"",
-                            pt: "*Um longo silêncio cai.* \"...Esse nome. Onde você ouviu isso?\" *O fim da frase falha por um instante.* \"...Não é nada.\""
-                        },
-                        expression: "sad", affinity: 5
-                    },
-                    "Seoyeon": {
-                        flag: "keyword_seo_family",
-                        keywords: { ko: ["엄마", "부모님", "이혼"], en: ["mom", "mother", "parents", "divorce"], ja: ["お母さん", "両親", "離婚"], es: ["mamá", "padres", "divorcio"], fr: ["maman", "parents", "divorce"], de: ["mama", "eltern", "scheidung"], pt: ["mãe", "pais", "divórcio"] },
-                        response: {
-                            ko: "*젓가락을 내려놓는다.* \"...그 얘기는.\" *짧은 정적 뒤에 미소가 돌아온다. 연습된 미소다.* \"왜 갑자기?\"",
-                            en: "*Sets down chopsticks.* \"...That topic.\" *After a brief hush, the smile returns. A practiced smile.* \"Why suddenly?\"",
-                            ja: "*箸を置く。* \"...その話は。\" *短い静けさのあと、笑顔が戻る。練習された笑顔だ。* \"なんで急に？\"",
-                            es: "*Deja los palillos.* \"...Ese tema.\" *Tras un breve silencio, la sonrisa regresa. Una sonrisa ensayada.* \"¿Por qué de repente?\"",
-                            fr: "*Pose les baguettes.* \"...Ce sujet.\" *Après un bref silence, le sourire revient. Un sourire répété.* \"Pourquoi soudainement ?\"",
-                            de: "*Legt die Stäbchen ab.* \"...Das Thema.\" *Nach einer kurzen Stille kehrt das Lächeln zurück. Ein einstudiertes Lächeln.* \"Warum plötzlich?\"",
-                            pt: "*Coloca os hashis na mesa.* \"...Esse assunto.\" *Depois de um breve silêncio, o sorriso volta. Um sorriso ensaiado.* \"Por que de repente?\""
-                        },
-                        expression: "sad", affinity: 5
-                    },
-                    "Dain": {
-                        flag: "keyword_dain_knee",
-                        keywords: { ko: ["무릎", "인대", "수술", "프로"], en: ["knee", "ligament", "surgery", "pro"], ja: ["膝", "靭帯", "手術", "プロ"], es: ["rodilla", "ligamento", "cirugía", "profesional"], fr: ["genou", "ligament", "chirurgie", "pro"], de: ["knie", "band", "operation", "profi"], pt: ["joelho", "ligamento", "cirurgia", "profissional"] },
-                        response: {
-                            ko: "*웃음이 멈춘다.* \"...\" *잠깐 숨을 고른 뒤, 목소리가 다시 밝아진다.* \"괜찮아!! 별거 아냐!!\" *느낌표가 돌아왔지만 목소리가 반 톤 높다.*",
-                            en: "*The smile stops.* \"...\" *After a brief breath, the voice brightens again.* \"I'm fine!! It's nothing!!\" *The exclamation marks are back, but half a tone too high.*",
-                            ja: "*笑顔が止まる。* \"...\" *短く息を整えたあと、声がまた明るくなる。* \"大丈夫!! 何でもないよ!!\" *ビックリマークは戻ったが、声が半トーン高い。*",
-                            es: "*La sonrisa se detiene.* \"...\" *Después de tomar aire un momento, la voz vuelve a iluminarse.* \"¡¡Estoy bien!! ¡¡No es nada!!\" *Los signos de exclamación volvieron, pero medio tono más alto.*",
-                            fr: "*Le sourire s'arrête.* \"...\" *Après une brève inspiration, la voix redevient claire.* \"Ça va !! C'est rien !!\" *Les points d'exclamation sont revenus, mais d'un demi-ton trop haut.*",
-                            de: "*Das Lächeln stoppt.* \"...\" *Nach einem kurzen Atemzug hellt sich die Stimme wieder auf.* \"Mir geht's gut!! Ist nichts!!\" *Die Ausrufezeichen sind zurück, aber einen halben Ton zu hoch.*",
-                            pt: "*O sorriso para.* \"...\" *Depois de uma breve respiração, a voz volta a ficar clara.* \"Tô bem!! Não é nada!!\" *As exclamações voltaram, mas meio tom acima.*"
-                        },
-                        expression: "sad", affinity: 5
-                    },
-                    "Teacher": {
-                        flag: "keyword_homeroom_writing",
-                        keywords: { ko: ["원고", "소설", "등단"], en: ["manuscript", "novel", "debut"], ja: ["原稿", "小説", "デビュー"], es: ["manuscrito", "novela", "debut"], fr: ["manuscrit", "roman", "début"], de: ["manuskript", "roman", "debüt"], pt: ["manuscrito", "romance", "estreia"] },
-                        response: {
-                            ko: "*볼펜을 만지작거리던 손이 멈춘다.* \"...누구한테 들었어?\" *짧은 정적이 지나간다.* \"아무것도 아니야. 업무 서류야.\"",
-                            en: "*The hand fidgeting with the pen stops.* \"...Who told you?\" *A brief stillness passes.* \"It's nothing. Just paperwork.\"",
-                            ja: "*ボールペンをいじっていた手が止まる。* \"...誰に聞いたの？\" *短い静けさが過ぎる。* \"何でもない。業務書類だよ。\"",
-                            es: "*La mano que jugueteaba con el bolígrafo se detiene.* \"...¿Quién te lo dijo?\" *Pasa una breve quietud.* \"No es nada. Solo papeleo.\"",
-                            fr: "*La main qui jouait avec le stylo s'arrête.* \"...Qui t'a dit ça ?\" *Un bref silence passe.* \"Ce n'est rien. Juste de la paperasse.\"",
-                            de: "*Die Hand, die mit dem Kugelschreiber spielte, hält inne.* \"...Wer hat dir das erzählt?\" *Eine kurze Stille vergeht.* \"Es ist nichts. Nur Papierkram.\"",
-                            pt: "*A mão que brincava com a caneta para.* \"...Quem te contou?\" *Uma breve quietude passa.* \"Não é nada. Só papelada.\""
-                        },
-                        expression: "shy", affinity: 5
-                    },
-                    "Nurse": {
-                        flag: "keyword_nurse_hospital",
-                        keywords: { ko: ["환자", "대학병원", "응급실"], en: ["patient", "hospital", "er", "emergency"], ja: ["患者", "大学病院", "救急"], es: ["paciente", "hospital", "emergencia"], fr: ["patient", "hôpital", "urgences"], de: ["patient", "krankenhaus", "notaufnahme"], pt: ["paciente", "hospital", "emergência"] },
-                        response: {
-                            ko: "*청진기를 만지는 손이 멈춘다.* *목소리가 한 톤 낮아진다.* \"...옛날 얘기야.\" *다시 웃는다.* \"여기선 다 괜찮아~\"",
-                            en: "*The hand touching the stethoscope stops.* *Voice drops a tone.* \"...That's an old story.\" *Smiles again.* \"Everyone's fine here~\"",
-                            ja: "*聴診器に触れていた手が止まる。* *声が一トーン低くなる。* \"...昔の話だよ。\" *また笑う。* \"ここではみんな大丈夫~\"",
-                            es: "*La mano que toca el estetoscopio se detiene.* *La voz baja un tono.* \"...Es una vieja historia.\" *Sonríe de nuevo.* \"Aquí todos están bien~\"",
-                            fr: "*La main touchant le stéthoscope s'arrête.* *La voix baisse d'un ton.* \"...C'est une vieille histoire.\" *Sourit à nouveau.* \"Ici tout le monde va bien~\"",
-                            de: "*Die Hand am Stethoskop hält inne.* *Die Stimme senkt sich um einen Ton.* \"...Das ist eine alte Geschichte.\" *Lächelt wieder.* \"Hier ist alles gut~\"",
-                            pt: "*A mão no estetoscópio para.* *A voz abaixa um tom.* \"...Isso é história antiga.\" *Sorri de novo.* \"Aqui todo mundo tá bem~\""
-                        },
-                        expression: "shy", affinity: 3
-                    }
-                };
-
-                const kwData = HIDDEN_KEYWORDS[charKey];
-                if (kwData && !this.stateManager.getFlag(kwData.flag)) {
-                    const kwList = kwData.keywords[_kwLang] || kwData.keywords['en'] || [];
-                    const triggered = kwList.some(kw => _lowerText.includes(kw.toLowerCase()));
-                    if (triggered) {
-                        // 키워드 발동: AI 응답을 스크립팅된 반응으로 교체
-                        parsed.text = kwData.response[_kwLang] || kwData.response['en'];
-                        parsed.expression = kwData.expression;
-                        parsed.affinity = kwData.affinity;
-                        this.stateManager.setFlag(kwData.flag, true);
-
-                        // 시스템 프롬프트에 민감 주제 언급 컨텍스트 추가
-                        if (this.freeTalkHistory.length > 0 && this.freeTalkHistory[0].role === "system") {
-                            const sensitiveNote = {
-                                ko: "\n[주의: 플레이어가 민감한 주제를 꺼냈습니다. 현재 캐릭터답게 경계를 살짝 드러낸 뒤, 방금 말에 바로 답하세요.]",
-                                en: "\n[NOTE: The player mentioned a sensitive topic. Maintain a slightly guarded tone while continuing naturally.]",
-                                ja: "\n[注意: プレイヤーがデリケートな話題に触れました。少し警戒しつつ、自然に会話を続けてください。]",
-                                es: "\n[NOTA: El jugador mencionó un tema sensible. Mantén un tono ligeramente cauteloso mientras continúas naturalmente.]",
-                                fr: "\n[NOTE : Le joueur a mentionné un sujet sensible. Gardez un ton légèrement réservé tout en continuant naturellement.]",
-                                de: "\n[HINWEIS: Der Spieler hat ein sensibles Thema angesprochen. Behalten Sie einen leicht vorsichtigen Ton bei.]",
-                                pt: "\n[NOTA: O jogador mencionou um assunto sensível. Mantenha um tom levemente cauteloso enquanto continua naturalmente.]"
-                            };
-                            this.freeTalkHistory[0].content += sensitiveNote[_kwLang] || sensitiveNote['en'];
-                        }
-                    }
-                }
+            if (!parsed?.text && !(Array.isArray(parsed?.segments) && parsed.segments.length > 0)) {
+                throw new Error('AI response did not contain visible roleplay text. Please try again.');
             }
 
             if (parsed) {
                 // NSFW 판단은 AI 프롬프트에 위임 (코드 레벨 강제 차단 없음)
 
-                // JSON 필드에서 표정 변화 처리
-                if (parsed.expression) {
-                    this.applyExpression(parsed.expression, scene);
-                }
-                // JSON 필드에서 호감도 변화 처리
-                if (parsed.affinity !== 0) {
-                    this.applyAffinity(parsed.affinity, scene);
-                }
-
-                reply = this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(parsed.text || "..."));
+                reply = this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(parsed.text || ""));
                 const parsedSegments = this._sanitizeSegmentsPlaceholders(parsed.segments || null);
 
-                // 레거시 폴백: 인라인 태그가 텍스트에 남아있을 경우 처리
-                reply = this.processExpressionTags(reply, scene);
-                reply = this.processStatsTags(reply, scene);
+                // 레거시 인라인 메타 태그는 화면에서만 제거하고 상태에는 적용하지 않는다.
+                // 표정과 호감도는 검증된 JSON 필드만 렌더 성공 후 반영한다.
+                reply = reply
+                    .replace(/\[EXPRESSION:\s*\w+\]/gi, '')
+                    .replace(/\[STATS:\s*affinity\s*[+-]?\d+\]/gi, '')
+                    .trim();
 
-                if (!reply) reply = "...";
+                if (!reply) {
+                    throw new Error('AI response did not contain visible roleplay text. Please try again.');
+                }
 
+                this._assertRequestContext(requestContext, data);
                 this._clearThinkingMessage();
                 this.uiManager.updateNameTag(scene.name);
 
@@ -1108,59 +1072,75 @@ class FreeTalkSystem {
                 document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
 
                 // segments가 있으면 typeText에 전달 (별표 파싱 건너뛰고 구조화 렌더)
-                await this.dialogueSystem.typeText(reply, scene.name, parsedSegments);
-                this.freeTalkHistory.push({ role: "assistant", content: reply, segments: parsedSegments });
+                await this.dialogueSystem.typeText(
+                    reply,
+                    scene.name,
+                    parsedSegments,
+                    () => this._isRequestContextCurrent(requestContext)
+                );
+
+                // 화면 렌더가 성공한 응답에만 표정과 호감도를 적용한다.
+                this._assertRequestContext(requestContext, data);
+                if (parsed.expression) {
+                    this.applyExpression(parsed.expression, scene);
+                }
+                if (parsed.affinity !== 0) {
+                    this.applyAffinity(parsed.affinity, scene);
+                }
+                this._assertRequestContext(requestContext, data);
+                requestHistory.push({ role: "assistant", content: reply, segments: parsedSegments });
+                this.galleryManager.incrementFreeTalkCount(charKey);
 
                 // 대화 기록 저장 (로컬)
-                this.stateManager.setChatMemory(charKey, this.freeTalkHistory);
+                this._assertRequestContext(requestContext, data);
+                this.stateManager.setChatMemory(charKey, requestHistory);
 
                 // D1 chat-logs 저장 (백업 뷰어용, 비동기 fire-and-forget)
                 if (typeof window.saveCupidChatLog === 'function') {
+                    this._assertRequestContext(requestContext, data);
                     window.saveCupidChatLog({
                         charId: charKey,
                         userContent: finalContent,
                         assistantContent: reply,
-                        sessionId: this.currentSceneId || '',
+                        sessionId: requestSceneId || '',
                         context: '1:1'
                     });
                 }
-            } else {
-                this._clearThinkingMessage();
-                this.uiManager.updateNameTag(scene.name);
-                await this.dialogueSystem.typeText("...", scene.name);
             }
 
             // 대화 종료 체크
             if (this.freeTalkTurns >= this.currentMaxTurns) {
-                this.endFreeTalk();
+                this._assertRequestContext(requestContext, data);
+                this.endFreeTalk(requestOwner);
             }
-            // ─────────────────────────────────────────────────────────────
-            // ❌ 오류 발생 시: 폴백 메시지로 대체
-            // ─────────────────────────────────────────────────────────────
-            // 폴백 메시지: AI 연결 실패 시 미리 정의된 대답을 보여줌
-            // 사용자가 오류 화면을 보지 않고 게임을 계속할 수 있음
-            // ─────────────────────────────────────────────────────────────
         } catch (error) {
+            const ownsCurrentContext = this._isRequestContextCurrent(requestContext);
+            this._rollbackRequestHistory(requestContext);
+            if (ownsCurrentContext) {
+                this.freeTalkTurns = requestContext.freeTalkTurnsBefore;
+                if (this.uiManager.turnCountEl) {
+                    this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
+                }
+            }
+
             // 🔍 오류 내용을 콘솔에 기록 (디버깅용)
             // F12 → Console 탭에서 확인 가능
-            if (error?.isStaleTurn || error?.reason === 'STALE_TURN') {
+            if (!ownsCurrentContext || error?.isStaleTurn || error?.reason === 'STALE_TURN') {
                 console.warn('[Cupid FreeTalk] Ignored stale chat response');
                 return;
             }
             console.error("AI Chat Error:", error);
 
-            // 현재 언어 확인
             const langErr = window.GAME_LANG || document.documentElement.lang || 'ko';
-            const isEnErr = langErr === 'en';
 
             if (typeof window.logCupidError === 'function') {
                 window.logCupidError(error, {
                     source: 'cupid-freetalk',
                     errorType: /^HTTP\s+\d+/.test(error?.message || '') ? 'freetalk_http_error' : 'freetalk_request_failed',
-                    sessionId: this.currentSceneId || '',
+                    sessionId: requestSceneId || '',
                     context: {
                         charId: charKey || '',
-                        sceneId: this.currentSceneId || '',
+                        sceneId: requestSceneId || '',
                         sceneName: scene?.name || '',
                         language: langErr,
                         chatMode: this._isRemote ? 'remote' : 'face',
@@ -1173,37 +1153,46 @@ class FreeTalkSystem {
                         latestUserHash: _lastTurnMeta?.latestUserHash || '',
                         latestUserLength: _lastTurnMeta?.latestUserLength || String(finalContent || '').length,
                         hasImage: String(finalContent || '').includes('data:image/'),
-                        historyLength: Array.isArray(this.freeTalkHistory) ? this.freeTalkHistory.length : 0
+                        historyLength: requestHistory.length
                     }
                 });
             }
 
-            // 폴백 메시지 가져오기 (prompts.js에서 정의)
-            const fallbackMsg = this.getFallbackReply(scene.name, isEnErr, getSceneFn);
-
-            // 폴백 메시지를 화면에 표시
             this._clearThinkingMessage();
-            this.uiManager.updateNameTag(scene.name);
-            await this.dialogueSystem.typeText(fallbackMsg, scene.name);
-            this.freeTalkHistory.push({ role: "assistant", content: fallbackMsg });
+            const requestErrorMessage = {
+                ko: '연결이 잠시 원활하지 않습니다. 방금 입력은 대화 기록에 저장되지 않았습니다. 다시 시도해 주세요.',
+                en: 'The connection was interrupted. Your last input was not saved to the conversation. Please try again.',
+                es: 'La conexión se interrumpió. Tu último mensaje no se guardó en la conversación. Inténtalo de nuevo.',
+                ja: '接続が一時的に中断されました。直前の入力は会話履歴に保存されていません。もう一度お試しください。',
+                fr: 'La connexion a été interrompue. Votre dernier message n’a pas été enregistré dans la conversation. Réessayez.',
+                de: 'Die Verbindung wurde unterbrochen. Deine letzte Eingabe wurde nicht im Gespräch gespeichert. Bitte versuche es erneut.',
+                pt: 'A conexão foi interrompida. Sua última mensagem não foi salva na conversa. Tente novamente.'
+            }[langErr] || 'The connection was interrupted. Your last input was not saved to the conversation. Please try again.';
 
-            // 대화 종료 처리 (오류 발생해도 게임은 계속)
-            this.freeTalkTurns = this.currentMaxTurns;
-            this.endFreeTalk();
+            if (typeof this.uiManager.showModal === 'function') {
+                await this.uiManager.showModal(requestErrorMessage, true);
+            } else if (typeof window.alert === 'function') {
+                window.alert(requestErrorMessage);
+            }
         } finally {
-            this.isProcessingChat = false;  // 처리 완료 플래그 해제
-            this.uiManager.chatSendBtn.disabled = false;
-            if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;
-            this.uiManager.chatInput.disabled = false;
-            this.uiManager.chatSendBtn.innerHTML = originalBtnContent;
+            if (this._activeRequestOwner === requestOwner) {
+                this._activeRequestOwner = null;
+                this._activeRequestContext = null;
+                this._activeChatTurnId = null;
+                this.isProcessingChat = false;
+                this.uiManager.chatSendBtn.disabled = false;
+                if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;
+                this.uiManager.chatInput.disabled = false;
+                this.uiManager.chatSendBtn.innerHTML = originalBtnContent;
 
-            document.querySelectorAll('.char-slot img').forEach(img => img.classList.remove('thinking'));
-            this.uiManager.dialogueBox.classList.remove('thinking-box');
-            document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
-            this._clearThinkingMessage();
+                document.querySelectorAll('.char-slot img').forEach(img => img.classList.remove('thinking'));
+                this.uiManager.dialogueBox.classList.remove('thinking-box');
+                document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
+                this._clearThinkingMessage();
 
-            if (!window.isCupidDesktopPointer || window.isCupidDesktopPointer()) {
-                this.uiManager.chatInput.focus();
+                if (!window.isCupidDesktopPointer || window.isCupidDesktopPointer()) {
+                    this.uiManager.chatInput.focus();
+                }
             }
         }
     }
@@ -1241,13 +1230,13 @@ class FreeTalkSystem {
     /**
      * Builds a bounded request history: system plus the latest HISTORY_WINDOW messages.
      */
-    _buildWindowedHistory() {
-        if (!this.freeTalkHistory || this.freeTalkHistory.length === 0) return [];
-        const sysMsg = this.freeTalkHistory[0];
-        if (!sysMsg || sysMsg.role !== 'system') return this.freeTalkHistory;
+    _buildWindowedHistory(history = this.freeTalkHistory) {
+        if (!Array.isArray(history) || history.length === 0) return [];
+        const sysMsg = history[0];
+        if (!sysMsg || sysMsg.role !== 'system') return history;
 
-        const rest = this.freeTalkHistory.slice(1);
-        if (rest.length <= this.HISTORY_WINDOW) return this.freeTalkHistory;
+        const rest = history.slice(1);
+        if (rest.length <= this.HISTORY_WINDOW) return history;
 
         return [sysMsg, ...rest.slice(-this.HISTORY_WINDOW)];
     }
@@ -1434,8 +1423,9 @@ class FreeTalkSystem {
     }
 
     parseJsonResponse(reply) {
-        // 📌 빈 응답이면 기본 구조체 반환
-        if (!reply) return { text: "", segments: null, expression: "", affinity: 0 };
+        if (!reply) {
+            throw new Error('AI response was empty. Please try again.');
+        }
 
         // 📌 JSON일 가능성 체크 (중괄호, 대괄호, 또는 코드블록 포함 여부)
         const likelyJson = reply.includes('{') || reply.includes('[') || reply.includes('```json');
@@ -1526,7 +1516,7 @@ class FreeTalkSystem {
                 return { text: this._sanitizePlayerPlaceholders(fallbackText), segments: null, expression: "", affinity: 0 };
             }
         } catch (e) {
-            // 📌 JSON 파싱 실패 시 경고 로그 (원본 반환됨)
+            // 📌 JSON 파싱 실패 시 경고 로그
             console.warn("JSON parsing failed:", e);
             window.reportCupidCaughtError?.(e, {
                 source: 'cupid-freetalk',
@@ -1541,14 +1531,7 @@ class FreeTalkSystem {
             });
         }
 
-        // 📌 파싱 실패하거나 텍스트 추출 실패 시 fallback 메시지 반환
-        const langFallback = window.GAME_LANG || document.documentElement.lang || 'ko';
-        return {
-            text: { es: "No pude entender la respuesta. Intentaré de nuevo.", ja: "応答を理解できませんでした。もう一度試みます。", en: "I couldn't understand the response. Let me try again.", fr: "Je n'ai pas pu comprendre la réponse. Laissez-moi réessayer.", de: "Ich konnte die Antwort nicht verstehen. Lass mich es nochmal versuchen.", pt: "Não consegui entender a resposta. Deixa eu tentar de novo." }[langFallback] || "응답을 이해할 수 없습니다. 다시 시도하겠습니다.",
-            segments: null,
-            expression: "",
-            affinity: 0,
-        };
+        throw new Error('AI response format could not be parsed. Please try again.');
     }
 
     /**
@@ -1741,11 +1724,18 @@ class FreeTalkSystem {
      * - 채팅 UI 숨김
      * - 다음 씬으로 넘어가라는 안내 메시지 표시
      */
-    endFreeTalk() {
+    endFreeTalk(requestOwner = null) {
+        const endingSceneId = this.currentSceneId;
+        const preserveRequestOwner = Boolean(requestOwner && this._activeRequestOwner === requestOwner);
+        this._invalidateFreeTalkContext({ preserveRequestOwner });
+        if (!preserveRequestOwner) this.isProcessingChat = false;
+        const endingEpoch = this._freeTalkEpoch;
+
         // 이 프리토킹을 완료했다는 플래그 설정
-        this.stateManager.setFlag(`messaged_${this.currentSceneId}`);
+        this.stateManager.setFlag(`messaged_${endingSceneId}`);
 
         setTimeout(() => {
+            if (this._freeTalkEpoch !== endingEpoch || this.currentSceneId !== endingSceneId) return;
             this.uiManager.chatContainer.style.display = 'none';
             this.isFreeTalking = false;
 

@@ -638,8 +638,8 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.81') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.81이 아님: ' + loaderVersion);
+    if (loaderVersion !== '2.9.83') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.83이 아님: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');
@@ -651,8 +651,8 @@ try {
         }
     }
     const swContent = fs.readFileSync(path.join(__dirname, 'service-worker.js'), 'utf8');
-    if (!swContent.includes("const CACHE_VERSION = 'cupid-v3.3.41'")) {
-        errors.push('[VERSION_SYNC] service-worker 캐시 버전이 cupid-v3.3.41이 아님');
+    if (!swContent.includes("const CACHE_VERSION = 'cupid-v3.3.43'")) {
+        errors.push('[VERSION_SYNC] service-worker 캐시 버전이 cupid-v3.3.43이 아님');
     }
 } catch (e) {
     warnings.push('[VERSION_SYNC] 버전 파일 읽기 실패: ' + e.message);
@@ -1592,7 +1592,7 @@ try {
     if (!ftSysContent.includes('encodeFreeTalkCacheKeyPart(_lang)')
         || !ftSysContent.includes('encodeFreeTalkCacheKeyPart(charKey)')
         || !gftContent.includes('encodeGalleryFreeTalkCacheKeyPart(this.lang)')
-        || !gftContent.includes('encodeGalleryFreeTalkCacheKeyPart(this.currentCharId)')) {
+        || !gftContent.includes('encodeGalleryFreeTalkCacheKeyPart(requestCharId)')) {
         errors.push('[FREETALK_API] non-ASCII cache-key parts must be URI encoded before use in request headers');
     }
     if (!ftSysContent.includes('primaryError instanceof TypeError')
@@ -1688,14 +1688,15 @@ try {
     const promptsContent = fs.readFileSync(path.join(__dirname, 'assets/js/prompts.js'), 'utf8');
     const ftSysContent = fs.readFileSync(path.join(__dirname, 'assets/js/modules/FreeTalkSystem.js'), 'utf8');
     const gftContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-freetalk.js'), 'utf8');
+    const dialogueContent = fs.readFileSync(path.join(__dirname, 'assets/js/modules/DialogueSystem.js'), 'utf8');
     const activePromptSources = [promptsContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
-    if (promptVersion !== '2.7.23') {
-        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.23이 아님: ' + promptVersion);
+    if (promptVersion !== '2.7.24') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.24이 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.21') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.21이 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.22') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.22이 아님: ' + galleryPromptVersion);
     }
     for (const removedSymbol of [
         'CHAR_SPEECH_STYLES',
@@ -1706,7 +1707,10 @@ try {
         '_buildLatestOutsideCueNarrationOverride',
         'buildCupidActionFollowThroughGuard',
         'getSocialContext',
-        'otherDatingChars'
+        'otherDatingChars',
+        'HIDDEN_KEYWORDS',
+        'function getFallbackReply(',
+        '_getFallbackReply'
     ]) {
         if (activePromptSources.includes(removedSymbol)) {
             errors.push('[FREETALK_PROMPT] 제거한 압박 프롬프트 심볼이 남아 있음: ' + removedSymbol);
@@ -1730,6 +1734,102 @@ try {
         if (activePromptSources.includes(removedPhrase)) {
             errors.push('[FREETALK_PROMPT] 제거한 편집/강제 축약 압박이 남아 있음: ' + removedPhrase);
         }
+    }
+    for (const fakeCharacterFailure of [
+        '응답을 이해할 수 없습니다. 다시 시도하겠습니다.',
+        "I couldn't understand the response. Let me try again.",
+        '...미안, 잠깐 멍했어. 다시 말해줄래?',
+        '...Sorry, I spaced out for a moment.'
+    ]) {
+        if (activePromptSources.includes(fakeCharacterFailure)) {
+            errors.push('[FREETALK_PROMPT] 캐릭터 대사로 위장한 오류 폴백이 남아 있음: ' + fakeCharacterFailure);
+        }
+    }
+    const mainVoiceExampleCalls = (promptsContent.match(/getFreeTalkVoiceExamples\(/g) || []).length;
+    if (mainVoiceExampleCalls !== 1 || gftContent.includes('getFreeTalkVoiceExamples(')) {
+        errors.push('[FREETALK_PROMPT] 활성 프리토킹 system prompt에 예시 대사 블록이 다시 주입됨');
+    }
+    const mainSendIndex = ftSysContent.indexOf('async sendChatMessage');
+    const gallerySendIndex = gftContent.indexOf('async _handleSend');
+    const mainCatchIndex = ftSysContent.indexOf('} catch (error)', mainSendIndex);
+    const galleryCatchIndex = gftContent.indexOf('} catch (err)', gallerySendIndex);
+    for (const [label, source, required] of [
+        ['main', ftSysContent, [
+            '_freeTalkEpoch', '_invalidateFreeTalkContext', '_activeRequestOwner', '_activeRequestContext',
+            'sceneId: requestSceneId', 'charKey', 'history: requestHistory',
+            'this._rollbackRequestHistory(requestContext)',
+            'this.freeTalkTurns = requestContext.freeTalkTurnsBefore',
+            'if (this._activeRequestOwner === requestOwner)'
+        ]],
+        ['gallery', gftContent, [
+            '_galleryTalkEpoch', '_invalidateGalleryTalkContext', '_activeRequestOwner', '_activeRequestContext',
+            'charId: this.currentCharId', 'charKey: this.currentCharKey', 'history: this.chatHistory',
+            'this._rollbackRequestHistory(requestContext)',
+            'if (this._activeRequestOwner === requestOwner)',
+            'this._saveMemory(requestCharId, requestHistory)',
+            'this._saveMemory(closingCharId, closingHistory)'
+        ]]
+    ]) {
+        for (const snippet of required) {
+            if (!source.includes(snippet)) {
+                errors.push('[FREETALK_STALE] ' + label + ' 요청 소유권/롤백 계약 누락: ' + snippet);
+            }
+        }
+    }
+    const mainInvalidations = (ftSysContent.match(/this\._invalidateFreeTalkContext\(/g) || []).length;
+    const galleryInvalidations = (gftContent.match(/this\._invalidateGalleryTalkContext\(/g) || []).length;
+    const mainAssertions = (ftSysContent.match(/this\._assertRequestContext\(requestContext/g) || []).length;
+    const galleryAssertions = (gftContent.match(/this\._assertRequestContext\(requestContext/g) || []).length;
+    if (mainInvalidations < 3 || galleryInvalidations < 2 || mainAssertions < 7 || galleryAssertions < 7) {
+        errors.push('[FREETALK_STALE] start/open/skip/end/close 무효화 또는 단계별 요청 소유권 검사가 부족함');
+    }
+    const mainRollbackIndex = ftSysContent.indexOf('this._rollbackRequestHistory(requestContext)', mainCatchIndex);
+    const mainTurnRollbackIndex = ftSysContent.indexOf('this.freeTalkTurns = requestContext.freeTalkTurnsBefore', mainCatchIndex);
+    const mainStaleIndex = ftSysContent.indexOf('if (!ownsCurrentContext || error?.isStaleTurn', mainCatchIndex);
+    const galleryRollbackIndex = gftContent.indexOf('this._rollbackRequestHistory(requestContext)', galleryCatchIndex);
+    const galleryStaleIndex = gftContent.indexOf('if (!ownsCurrentContext || err?.isStaleTurn', galleryCatchIndex);
+    if (!(mainCatchIndex >= 0 && mainRollbackIndex > mainCatchIndex && mainTurnRollbackIndex > mainRollbackIndex && mainTurnRollbackIndex < mainStaleIndex)
+        || !(galleryCatchIndex >= 0 && galleryRollbackIndex > galleryCatchIndex && galleryRollbackIndex < galleryStaleIndex)) {
+        errors.push('[FREETALK_STALE] stale 분기 전에 원래 history/턴을 안전하게 롤백하지 않음');
+    }
+    if (!dialogueContent.includes('isStillCurrent')
+        || !dialogueContent.includes('_renderGeneration')
+        || !dialogueContent.includes('_activeRenderOwner')
+        || !dialogueContent.includes('if (!ownsRender())')
+        || !ftSysContent.includes('() => this._isRequestContextCurrent(requestContext)')
+        || !gftContent.includes('requestContext && !this._isRequestContextCurrent(requestContext)')
+        || !gftContent.includes('_typingGeneration')
+        || !gftContent.includes('_activeTypingOwner')
+        || !gftContent.includes('if (!ownsTyping())')) {
+        errors.push('[FREETALK_STALE] 장면 전환 중 진행 중인 타이핑 렌더 취소 계약이 누락됨');
+    }
+    const mainRenderIndex = ftSysContent.indexOf('await this.dialogueSystem.typeText(', mainSendIndex);
+    const mainExpressionIndex = ftSysContent.indexOf('this.applyExpression(parsed.expression');
+    const mainAffinityIndex = ftSysContent.indexOf('this.applyAffinity(parsed.affinity');
+    const galleryRenderIndex = gftContent.indexOf('await this._typeText(displayText, displaySegments, requestContext)', gallerySendIndex);
+    const galleryExpressionIndex = gftContent.indexOf('this._updateExpression(parsed.expression, requestCharId)', galleryRenderIndex);
+    if (!(mainRenderIndex >= 0 && mainExpressionIndex > mainRenderIndex && mainAffinityIndex > mainRenderIndex)
+        || !(galleryRenderIndex >= 0 && galleryExpressionIndex > galleryRenderIndex)) {
+        errors.push('[FREETALK_ERROR] 렌더 실패 전에 표정 또는 호감도를 적용하는 경로가 남아 있음');
+    }
+    if (ftSysContent.includes('reply = this.processExpressionTags(reply, scene)')
+        || ftSysContent.includes('reply = this.processStatsTags(reply, scene)')) {
+        errors.push('[FREETALK_ERROR] 렌더 전에 상태를 바꾸는 레거시 인라인 태그 경로가 남아 있음');
+    }
+    if (!ftSysContent.includes('방금 입력은 대화 기록에 저장되지 않았습니다.')
+        || !gftContent.includes('방금 입력은 대화 기록에 저장되지 않았습니다.')) {
+        errors.push('[FREETALK_ERROR] 캐릭터 밖 중립 오류 안내가 누락됨');
+    }
+    const mainAssistantPush = ftSysContent.indexOf('requestHistory.push({ role: "assistant"', mainSendIndex);
+    const mainFreeTalkIncrement = ftSysContent.indexOf('this.galleryManager.incrementFreeTalkCount(charKey)');
+    if (mainAssistantPush < 0 || mainFreeTalkIncrement < mainAssistantPush) {
+        errors.push('[FREETALK_ERROR] 메인 프리토킹 횟수가 성공 응답 저장 전에 증가함');
+    }
+    if (gftContent.includes('this._saveMemory(this.currentCharId);')) {
+        errors.push('[FREETALK_STALE] gallery 요청 종료 시 현재 캐릭터 메모리를 무조건 덮어쓰는 경로가 남아 있음');
+    }
+    if (ftSysContent.includes('parsed.text || "..."') || gftContent.includes("parsed.text || '...'")) {
+        errors.push('[FREETALK_ERROR] 빈 AI 응답을 캐릭터의 말줄임표 대사로 저장하는 경로가 남아 있음');
     }
     for (const [label, source] of [['main', promptsContent], ['gallery', gftContent]]) {
         if (!source.includes('"segments"') || !source.includes('"expression"')) {
