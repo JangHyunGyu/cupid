@@ -43,6 +43,14 @@ function normalizeFreeTalkPromptBlockForCache(content) {
 }
 
 const FREE_TALK_CACHE_BOUNDARY_MARKER = '===CACHE_BOUNDARY===';
+const FREE_TALK_AI_FAILOVER_HTTP_STATUSES = new Set([408, 422, 425, 429]);
+
+function shouldFailOverFreeTalkAiResponse(response) {
+    return !!response && (
+        FREE_TALK_AI_FAILOVER_HTTP_STATUSES.has(response.status)
+        || response.status >= 500
+    );
+}
 
 function appendFreeTalkDynamicContext(content, addition) {
     if (!addition) return content || '';
@@ -987,19 +995,25 @@ class FreeTalkSystem {
                 })
             };
             let response;
+            let primaryError = null;
             try {
                 response = await fetch(aiEndpoint, requestInit);
                 this._assertRequestContext(requestContext);
-            } catch (primaryError) {
+            } catch (error) {
                 this._assertRequestContext(requestContext);
-                const fallbackEndpoint = (typeof API_ENDPOINT !== 'undefined' && API_ENDPOINT) ? API_ENDPOINT : window.API_ENDPOINT;
-                const canFallback = primaryError instanceof TypeError
-                    && fallbackEndpoint
-                    && fallbackEndpoint !== aiEndpoint;
-                if (!canFallback) throw primaryError;
+                primaryError = error;
+            }
+
+            const fallbackEndpoint = (typeof API_ENDPOINT !== 'undefined' && API_ENDPOINT) ? API_ENDPOINT : window.API_ENDPOINT;
+            const canFallback = (
+                primaryError instanceof TypeError || shouldFailOverFreeTalkAiResponse(response)
+            ) && fallbackEndpoint && fallbackEndpoint !== aiEndpoint;
+            if (canFallback) {
                 _lastAiEndpoint = fallbackEndpoint;
                 response = await fetch(fallbackEndpoint, requestInit);
                 this._assertRequestContext(requestContext);
+            } else if (primaryError) {
+                throw primaryError;
             }
 
             // HTTP 상태 코드 확인 (200번대가 아니면 오류)

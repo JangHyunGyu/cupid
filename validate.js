@@ -599,6 +599,10 @@ try {
     if (!errorReporterContent.includes('ssl\\.pstatic\\.net\\/melona\\/libs\\/gfp-nac-module\\/synchronizer\\.js')) {
         errors.push('[ERROR_REPORTER] 선택적 네이버 synchronizer 스크립트 필터 누락');
     }
+    if (!errorReporterContent.includes('pretendard\\/pretendard\\.css')
+        || !errorReporterContent.includes('optional, same-origin font stylesheet')) {
+        errors.push('[ERROR_REPORTER] optional local Pretendard stylesheet filter missing');
+    }
     const seoDir = path.join(__dirname, 'seo');
     const seoHtmlFiles = fs.readdirSync(seoDir).filter(file => file.endsWith('.html')).map(file => ({
         name: `seo/${file}`,
@@ -1603,9 +1607,11 @@ try {
     }
     if (!ftSysContent.includes('primaryError instanceof TypeError')
         || !ftSysContent.includes('fallbackEndpoint !== aiEndpoint')
+        || !ftSysContent.includes('FREE_TALK_AI_FAILOVER_HTTP_STATUSES')
         || !gftContent.includes('primaryError instanceof TypeError')
-        || !gftContent.includes('fallbackEndpoint !== aiEndpoint')) {
-        errors.push('[FREETALK_API] game and gallery chat requests must keep the network fallback endpoint');
+        || !gftContent.includes('fallbackEndpoint !== aiEndpoint')
+        || !gftContent.includes('GALLERY_AI_FAILOVER_HTTP_STATUSES')) {
+        errors.push('[FREETALK_API] game and gallery chat requests must keep network and HTTP-status failover');
     }
 } catch (e) {
     errors.push('[FREETALK_API] request-safety validation failed: ' + e.message);
