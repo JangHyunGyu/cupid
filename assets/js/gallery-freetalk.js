@@ -29,6 +29,14 @@ function normalizeGalleryPromptBlockForCache(content) {
 }
 
 const GALLERY_FREETALK_CACHE_BOUNDARY_MARKER = '===CACHE_BOUNDARY===';
+const GALLERY_AI_FAILOVER_HTTP_STATUSES = new Set([408, 422, 425, 429]);
+
+function shouldFailOverGalleryAiResponse(response) {
+    return !!response && (
+        GALLERY_AI_FAILOVER_HTTP_STATUSES.has(response.status)
+        || response.status >= 500
+    );
+}
 
 function appendGalleryFreeTalkDynamicContext(content, addition) {
     if (!addition) return content || '';
@@ -1207,19 +1215,25 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 })
             };
             let response;
+            let primaryError = null;
             try {
                 response = await fetch(aiEndpoint, requestInit);
                 this._assertRequestContext(requestContext);
-            } catch (primaryError) {
+            } catch (error) {
                 this._assertRequestContext(requestContext);
-                const fallbackEndpoint = window.API_ENDPOINT || 'https://chatbot-api.yama5993.workers.dev/';
-                const canFallback = primaryError instanceof TypeError
-                    && fallbackEndpoint
-                    && fallbackEndpoint !== aiEndpoint;
-                if (!canFallback) throw primaryError;
+                primaryError = error;
+            }
+
+            const fallbackEndpoint = window.API_ENDPOINT || 'https://chatbot-api.yama5993.workers.dev/';
+            const canFallback = (
+                primaryError instanceof TypeError || shouldFailOverGalleryAiResponse(response)
+            ) && fallbackEndpoint && fallbackEndpoint !== aiEndpoint;
+            if (canFallback) {
                 _lastAiEndpoint = fallbackEndpoint;
                 response = await fetch(fallbackEndpoint, requestInit);
                 this._assertRequestContext(requestContext);
+            } else if (primaryError) {
+                throw primaryError;
             }
 
             if (!response.ok) throw new Error(`HTTP ${response.status}`);

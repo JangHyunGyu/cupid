@@ -3,7 +3,7 @@
 
     if (window.__cupidErrorReporterInstalled) return;
 
-    var VERSION = '20260714-pstatic-filter';
+    var VERSION = '20260717-resilient-failover';
     var ERROR_ENDPOINT = 'https://chatbot-api.yama5993.workers.dev/error-logs';
     var QUEUE_KEY = 'cupid-error-queue-v2';
     var SESSION_KEY = 'cupid-error-session-v2';
@@ -276,12 +276,24 @@
         }
     }
 
+    function isIgnorableResourceError(tagName, resource) {
+        // Pretendard is an optional, same-origin font stylesheet. If a browser
+        // cancels it during navigation, the CSS font stack safely falls back to
+        // the system sans-serif font and the app remains fully functional.
+        if (tagName === 'LINK'
+            && /\/assets\/vendor\/pretendard\/pretendard\.css(?:[?#]|$)/i.test(resource || '')) {
+            return true;
+        }
+        return false;
+    }
+
     function handleWindowError(event) {
         var target = event.target || event.srcElement;
         if (target && target !== window && target !== document) {
             var tagName = String(target.tagName || '').toUpperCase();
             if (tagName !== 'SCRIPT' && tagName !== 'LINK') return;
             var resource = target.src || target.href || '';
+            if (isIgnorableResourceError(tagName, resource)) return;
             if (target.getAttribute && target.getAttribute('data-cupid-managed-script') === 'true') return;
             if (tagName === 'SCRIPT' && tryRecoverEntryScript(target, resource)) return;
             report(
