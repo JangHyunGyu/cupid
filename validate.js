@@ -638,8 +638,8 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.88') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.88이 아님: ' + loaderVersion);
+    if (loaderVersion !== '2.9.89') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.89이 아님: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');
@@ -651,8 +651,8 @@ try {
         }
     }
     const swContent = fs.readFileSync(path.join(__dirname, 'service-worker.js'), 'utf8');
-    if (!swContent.includes("const CACHE_VERSION = 'cupid-v3.3.47'")) {
-        errors.push('[VERSION_SYNC] service-worker 캐시 버전이 cupid-v3.3.47이 아님');
+    if (!swContent.includes("const CACHE_VERSION = 'cupid-v3.3.48'")) {
+        errors.push('[VERSION_SYNC] service-worker 캐시 버전이 cupid-v3.3.48이 아님');
     }
 } catch (e) {
     warnings.push('[VERSION_SYNC] 버전 파일 읽기 실패: ' + e.message);
@@ -1594,6 +1594,12 @@ try {
         || !gftContent.includes('encodeGalleryFreeTalkCacheKeyPart(this.lang)')
         || !gftContent.includes('encodeGalleryFreeTalkCacheKeyPart(requestCharId)')) {
         errors.push('[FREETALK_API] non-ASCII cache-key parts must be URI encoded before use in request headers');
+    }
+    if (!ftSysContent.includes('"x-output-language": _lang')
+        || !ftSysContent.includes('outputLanguage: _lang')
+        || !gftContent.includes("'x-output-language': this.lang")
+        || !gftContent.includes('outputLanguage: this.lang')) {
+        errors.push('[FREETALK_API] game and gallery requests must send the explicit output-language contract in both header and body');
     }
     if (!ftSysContent.includes('primaryError instanceof TypeError')
         || !ftSysContent.includes('fallbackEndpoint !== aiEndpoint')
