@@ -1192,6 +1192,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     'x-app-type': 'cupid',
                     'x-request-type': 'character',
                     'x-chat-mode': 'single',
+                    'x-output-language': this.lang,
                     ...(_gftCacheKey && { 'x-cache-key': _gftCacheKey })
                 },
                 body: JSON.stringify({
@@ -1200,6 +1201,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     characterId: requestCharId || '',
                     requestType: 'character',
                     chatMode: 'single',
+                    outputLanguage: this.lang,
                     cacheKey: _gftCacheKey,
                     ...(_turnMeta || {})
                 })

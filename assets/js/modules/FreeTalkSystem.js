@@ -972,6 +972,7 @@ class FreeTalkSystem {
                     "x-app-type": "cupid",
                     "x-request-type": "character",
                     "x-chat-mode": "single",
+                    "x-output-language": _lang,
                     ...(_cacheKey && { "x-cache-key": _cacheKey })
                 },
                 body: JSON.stringify({
@@ -980,6 +981,7 @@ class FreeTalkSystem {
                     characterId: charKey,
                     requestType: "character",
                     chatMode: "single",
+                    outputLanguage: _lang,
                     cacheKey: _cacheKey,
                     ...(_turnMeta || {})
                 })
