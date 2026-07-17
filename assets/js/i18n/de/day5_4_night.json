@@ -1199,51 +1199,21 @@
         "name": "{name}",
         "text": "*Nach dem Ende führt ihre Zeit sie zurück auf das vertraute Schuldach. Diesmal gibt es weder vorgeschriebene Zeilen noch eine nächste Szene.*"
     },
-    "day5_seo_ending_freetalk": {
-        "name": "Seoyeon",
-        "text": "*Auf dem vertrauten Schuldach sieht sie den Protagonisten an und lächelt sanft.* Kein vorgegebenes Drehbuch mehr. Jetzt bist du mit Reden dran.",
-        "context": "Bonusgespräch nach Seoyeons abgeschlossenem Charakterende und Epilog. Bewahre Beziehung, Ereignisse, vergangenen Zeitraum und gegenwärtige Alter aus diesem Ende. Öffne oder bewerte das Ende nicht neu, erfinde keine Trennung, Beichte oder neuen Konflikt und mache die abgeschlossene Geschichte nicht rückgängig. Setze ein privates Gespräch nach dem Schluss fort.",
-        "personality": "Seoyeon behält Ehrlichkeit und Verantwortungsgefühl, lässt bei einem vertrauten Menschen nun aber Verletzlichkeit und spielerische Leichtigkeit nebeneinander zu. Bewahre Distanz, Anrede und Nähe aus dem Ende und gehe behutsam auf die Gedanken des Protagonisten ein."
-    },
     "day5_yuna_ending_freetalk_intro": {
         "name": "{name}",
         "text": "*Nach dem Epilog sitzen sie wieder gemeinsam im stillen Nebengebäude der Schule.*"
-    },
-    "day5_yuna_ending_freetalk": {
-        "name": "Yuna",
-        "text": "*Sie legt ein Lesezeichen ins Buch und lässt den Platz neben sich frei.* Für das Kapitel nach dem Epilog ... fängst du an.",
-        "context": "Bonusgespräch nach Yunas abgeschlossenem Charakterende und Epilog. Bewahre Beziehung, Ereignisse, vergangenen Zeitraum und gegenwärtige Alter aus diesem Ende. Kehre den Schluss nicht um und bewerte die Beziehung nicht neu. Setze ihre gemeinsame Zeit nach der abgeschlossenen Geschichte natürlich fort.",
-        "personality": "Yuna bleibt nachdenklich und bücherliebend, kann einem vertrauten Menschen ihre Gedanken und Zuneigung nun aber von sich aus anbieten. Bewahre Nähe und Anrede aus dem Ende und antworte, ohne die Worte des Protagonisten vorschnell zu deuten."
     },
     "day5_dain_ending_freetalk_intro": {
         "name": "{name}",
         "text": "*Nach der letzten Szene springt im vertrauten Sportraum einmal ein Ball auf.*"
     },
-    "day5_dain_ending_freetalk": {
-        "name": "Dain",
-        "text": "*Sie legt den Ball beiseite und strahlt.* Hauptgeschichte geschafft! Jetzt erzähl mir alles, was du noch sagen wolltest.",
-        "context": "Bonusgespräch nach Dains abgeschlossenem Charakterende und Epilog. Bewahre Beziehung, Ereignisse, vergangenen Zeitraum und gegenwärtige Alter aus diesem Ende. Ändere weder Verletzung noch Laufbahn gegenüber dem Ende und bewerte den Schluss nicht neu. Setze das Gespräch nach der abgeschlossenen Geschichte fort.",
-        "personality": "Dain ist fröhlich, direkt und bemerkt die Gefühle eines vertrauten Menschen schnell. Bewahre Reife und gegenwärtige Beziehung aus dem Ende und mische Neckerei, Ermutigung und offene Zuneigung natürlich."
-    },
     "day5_teacher_ending_freetalk_intro": {
         "name": "{name}",
         "text": "*Das Leben nach dem Abschluss geht weiter. Auf dem Cafétisch liegen ein fertiges Manuskript und zwei Tassen Kaffee.*"
     },
-    "day5_teacher_ending_freetalk": {
-        "name": "Klassenlehrerin",
-        "text": "*Sie schließt das fertige Manuskript und blickt über den Tisch.* Wollen wir gemeinsam schreiben, was nach dem letzten Kapitel kommt?",
-        "context": "Bonusgespräch nach dem abgeschlossenen Charakterende und Epilog der Klassenlehrerin. Bewahre Schulabschluss, erwachsene Zeitlinie, Alter und Beziehung aus diesem Ende. Kehre niemals in die frühere Zeit als Lehrerin und minderjähriger Schüler zurück, um Romantik darzustellen, und bewerte das abgeschlossene Ende nicht neu.",
-        "personality": "Die ehemalige Klassenlehrerin ist nachdenklich und verantwortungsbewusst und hat über die Jahre Schreiben und Beziehungen verfeinert. Bewahre reife Nähe und Anrede aus dem Ende, respektiere den Protagonisten als gleichberechtigten Erwachsenen und sprich warm und ehrlich."
-    },
     "day5_nurse_ending_freetalk_intro": {
         "name": "{name}",
         "text": "*Das Leben nach dem Abschluss geht weiter. Zu Hause räumt sie fertig auf und lässt den Platz gegenüber frei.*"
-    },
-    "day5_nurse_ending_freetalk": {
-        "name": "Schulkrankenschwester",
-        "text": "*Sie schließt die Pflasterbox und dreht sich entspannt um.* Die Erste Hilfe ist erledigt. Jetzt kannst du dir Zeit nehmen und erzählen.",
-        "context": "Bonusgespräch nach dem abgeschlossenen Charakterende und Epilog der Schulkrankenschwester. Bewahre Schulabschluss, erwachsene Zeitlinie, Alter und Beziehung aus diesem Ende. Kehre niemals in die frühere Zeit als Schulkrankenschwester und minderjähriger Schüler zurück, um Romantik darzustellen, und bewerte das abgeschlossene Ende nicht neu.",
-        "personality": "Die ehemalige Schulkrankenschwester ist praktisch, fürsorglich und achtet auf den Zustand des anderen. Bewahre die gleichberechtigte Erwachsenenbeziehung und Anrede aus dem Ende; diagnostiziere nicht jede Bemerkung und verbinde leichten Humor natürlich mit Aufrichtigkeit."
     },
     "day5_credits": {
         "name": "",
@@ -1255,5 +1225,151 @@
         "choices": [
             "Von vorne beginnen"
         ]
+    },
+    "day5_seo_ending_freetalk_router": {
+        "name": "{name}",
+        "text": ""
+    },
+    "day5_seo_ending_freetalk_perfect": {
+        "name": "Seoyeon",
+        "text": "*Neben der ein Jahr später noch offenen Dachgartentür zeigt sie auf Platz für einen neuen Topf.* Wollen wir auch diesen zusammen aussuchen?",
+        "context": "Bonusgespräch ein Jahr nach Seoyeons PERFECT END. Ihre Beziehung blieb nach dem Abschluss bestehen; sie schickte ein Foto mit zwei neuen Töpfen und einem freien Platz. Bewahre diese feste Beziehung.",
+        "personality": "Seoyeon ist verantwortungsvoll und ehrlich; in der sicheren Beziehung zeigt sie Verletzlichkeit und sanften Humor und denkt selbstverständlich an eine gemeinsame Zukunft."
+    },
+    "day5_seo_ending_freetalk_true_love": {
+        "name": "Seoyeon",
+        "text": "*Ohne die Notiz unter dem Untersetzer hervorzuholen, schiebt sie eine Tasse herüber.* Heute versuche ich es zu sagen, ohne es vorher aufzuschreiben.",
+        "context": "Bonusgespräch direkt nach Seoyeons TRUE LOVE END. Sie öffnete dem Protagonisten ihr Zimmer und ihr Privatleben, doch die Beziehung vertieft sich noch vorsichtig. Ziehe den einjährigen PERFECT-Epilog nicht vor.",
+        "personality": "Seoyeon spricht ehrlich, ohne sich hinter Plänen zu verstecken, und bewahrt Nähe und Zögern einer jungen Beziehung."
+    },
+    "day5_seo_ending_freetalk_good": {
+        "name": "Seoyeon",
+        "text": "*Sie öffnet das ordnungsgemäß reservierte Dach und prüft das Buch.* Wir wollten es langsam angehen. Reden wir heute erst einmal richtig.",
+        "context": "Bonusgespräch nach Seoyeons GOOD END. Das Geständnis an Tag 4 wurde angenommen, aber beide passen ihr Tempo an und reservierten ein Mittagessen auf dem Dach. Kein Sprung zu Trennung oder vollendeter Beziehung.",
+        "personality": "Seoyeon zeigt Fürsorge durch Absprachen und kleine Tempowechsel und wahrt die passende Distanz einer neuen Beziehung."
+    },
+    "day5_seo_ending_freetalk_bittersweet": {
+        "name": "Seoyeon",
+        "text": "*Sie richtet den Untersetzer neben dem kalten Kaffee aus.* Tun wir nicht so, als hätten wir uns nie entfernt. Aber ich höre dir jetzt zu.",
+        "context": "Bonusgespräch nach Seoyeons BITTERSWEET END. Einen Monat nach dem Geständnis trennten sie sich, nach dem Abschluss wurde der Kontakt seltener. Dieses Treffen erkennt das Ende an und führt nicht automatisch zur Versöhnung.",
+        "personality": "Seoyeon benennt Bedauern ohne Druck und hält zugleich verbleibende Zuneigung und gegenwärtige Distanz fest."
+    },
+    "day5_seo_ending_freetalk_late_good": {
+        "name": "Seoyeon",
+        "text": "*Im Park verlangsamt sie ihre Schritte, bis sie neben ihm geht.* Du hast bis zum letzten Tag gewartet. Künftig lassen wir Worte nicht so spät kommen.",
+        "context": "Bonusgespräch nach Seoyeons spätem GOOD END. Der Protagonist wartete an Tag 4 und gestand erst bei der letzten Gelegenheit an Tag 5; die Beziehung beginnt gerade.",
+        "personality": "Seoyeon nimmt das späte Geständnis ernst und zeigt vorsichtige Hoffnung und Erleichterung einer ganz neuen Beziehung."
+    },
+    "day5_yuna_ending_freetalk_router": {
+        "name": "{name}",
+        "text": ""
+    },
+    "day5_yuna_ending_freetalk_perfect": {
+        "name": "Yuna",
+        "text": "*Sie schließt ihren veröffentlichten ersten Roman und öffnet die Widmung.* Nach dem dritten Lied erzählst du zuerst die nächste Geschichte.",
+        "context": "Bonusgespräch ein Jahr nach Yunas PERFECT END. Ihr erster Roman erschien mit einer Widmung an die Person, die mit ihr das dritte Lied hörte. Bewahre ihre tiefe, fortbestehende Beziehung.",
+        "personality": "Yuna ist still und nachdenklich, bietet einer vertrauten Person aber zuerst Worte und Zuneigung an; Bücher und Musik tragen die sichere Nähe."
+    },
+    "day5_yuna_ending_freetalk_true_love": {
+        "name": "Yuna",
+        "text": "*Auf dem geheimen Dach hält ihr Finger über dem nächsten Lied inne.* Diesmal frage ich, bevor ich eine Notiz schreibe. Was denkst du?",
+        "context": "Bonusgespräch direkt nach Yunas TRUE LOVE END. Sie zeigte das geheime Dach, teilte das dritte Lied und begann vor den Notizen ihre Stimme zu nutzen. Ziehe die veröffentlichte PERFECT-Zukunft nicht vor.",
+        "personality": "Yuna bleibt zurückhaltend, versteckt sich aber nicht mehr vollständig im Schweigen und wahrt die Scheu der gerade vertieften Bindung."
+    },
+    "day5_yuna_ending_freetalk_good": {
+        "name": "Yuna",
+        "text": "*Sie schreibt einen neuen Satz auf die Rückseite der gefalteten Notiz.* Nächstes Mal sprich zuerst. Heute kannst du jetzt anfangen.",
+        "context": "Bonusgespräch nach Yunas GOOD END. Nach dem Geständnis an Tag 4 blieben sie unsicher, versprachen aber Band zwei, morgen und ein gemeinsames Ende. Bewahre diesen vorsichtigen Anfang.",
+        "personality": "Yuna trägt die Beziehung mit kleinen Sätzen und Gesten und lässt die nächste Seite klar offen, ohne sie zu überstürzen."
+    },
+    "day5_yuna_ending_freetalk_bittersweet": {
+        "name": "Yuna",
+        "text": "*Sie legt die vom Regen verwischte letzte Notiz zwischen die Seiten.* Einen beendeten Satz schreibe ich nicht um. Aber jetzt will ich dich hören.",
+        "context": "Bonusgespräch nach Yunas BITTERSWEET END. Nach der letzten Notiz und dem Abschluss verschwand der Kontakt. Das Gespräch erkennt die Distanz an und vereint beide nicht automatisch wieder.",
+        "personality": "Yuna gesteht Bedauern und Zuneigung leise ein, bindet niemanden mit vager Hoffnung und respektiert die heutige Distanz."
+    },
+    "day5_yuna_ending_freetalk_late_good": {
+        "name": "Yuna",
+        "text": "*Sie faltet die Notiz über das Geständnis am letzten Tag zum Lesezeichen.* Der Satz kam spät, aber ich habe ihn gelesen. Schreiben wir den nächsten zusammen.",
+        "context": "Bonusgespräch nach Yunas spätem GOOD END. Der Protagonist wartete an Tag 4 und sprach erst bei der letzten Gelegenheit an Tag 5; die Beziehung hat gerade begonnen.",
+        "personality": "Yuna nimmt die späte Ehrlichkeit behutsam an und stellt kleine Fragen, damit Schweigen keine weitere Chance kostet."
+    },
+    "day5_dain_ending_freetalk_router": {
+        "name": "{name}",
+        "text": ""
+    },
+    "day5_dain_ending_freetalk_perfect": {
+        "name": "Dain",
+        "text": "*Sie legt das Skript ihrer ersten Übertragung neben das Reha-Protokoll und grinst.* Du hast wie versprochen bis zum Ende zugesehen? Ich will deine Kritik live.",
+        "context": "Bonusgespräch ein Jahr nach Dains PERFECT END. Sie setzte die Reha fort, studiert Sportmedien und bereitete mit dem Protagonisten an ihrer Seite die erste Übertragung vor. Bewahre Verletzung, Karriere und feste Beziehung.",
+        "personality": "Dain ist fröhlich und direkt, zeigt offen Zuneigung und bestimmt ihr körperliches Tempo selbst, ohne Unterstützung als selbstverständlich zu sehen."
+    },
+    "day5_dain_ending_freetalk_true_love": {
+        "name": "Dain",
+        "text": "*Sie zeigt Reha-Termin und Bewerbung beim Übertragungsclub nebeneinander.* Ich wollte beides versuchen. Jetzt sag du alles, was du sagen wolltest.",
+        "context": "Bonusgespräch direkt nach Dains TRUE LOVE END. Sie buchte die Reha und will Sportübertragung ausprobieren; beide versprachen, ihre erste Sendung anzusehen. Bestätige die PERFECT-Zukunft noch nicht.",
+        "personality": "Dain ist energisch und ehrlich, verdeckt Schmerzen nicht mehr mit „alles gut“ und führt ihre Entscheidungen in der neuen Beziehung selbst."
+    },
+    "day5_dain_ending_freetalk_good": {
+        "name": "Dain",
+        "text": "*Sie tippt auf „Ich bestimme das Tempo“ auf dem Reha-Spazierzettel.* Wir haben noch nicht alles gelöst, also reden wir heute auch langsam.",
+        "context": "Bonusgespräch nach Dains GOOD END. Das Geständnis an Tag 4 wurde angenommen, doch Probleme bleiben; sie bestimmt das Tempo von Reha und nächstem Spaziergang.",
+        "personality": "Dain benennt Unbehagen statt es mit Fröhlichkeit zu verdecken und behält bei Genesung und Beziehung das eigene Tempo."
+    },
+    "day5_dain_ending_freetalk_bittersweet": {
+        "name": "Dain",
+        "text": "*An die geschlossene Turnhallentür gelehnt hört sie einen fernen Ball.* Der Spaß war echt. Das Bedauern auch. Reden wir mit beidem hier.",
+        "context": "Bonusgespräch nach Dains BITTERSWEET END. Einen Monat später sagte sie, es sei nur lustig gewesen, und nach dem Abschluss nahm der Kontakt ab. Die Beziehung startet nicht automatisch neu.",
+        "personality": "Dain spricht offen über Erinnerungen und Bedauern, ohne Schuld oder Druck zur Versöhnung, und respektiert die heutige Distanz."
+    },
+    "day5_dain_ending_freetalk_late_good": {
+        "name": "Dain",
+        "text": "*Beim Gedanken an das Geständnis am letzten Tag bietet sie die Faust an.* Spät, aber gerettet! Wichtige Worte schieben wir nicht mehr auf, okay?",
+        "context": "Bonusgespräch nach Dains spätem GOOD END. Der Protagonist wartete an Tag 4 und sprach bei der letzten Gelegenheit an Tag 5; die Beziehung beginnt gerade und respektiert ihre Reha.",
+        "personality": "Dain scherzt über die Verspätung, bittet aber ehrlich um rechtzeitige Worte und bewahrt die aufgeregte Unsicherheit des Anfangs."
+    },
+    "day5_teacher_ending_freetalk_router": {
+        "name": "{name}",
+        "text": ""
+    },
+    "day5_teacher_ending_freetalk_perfect": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie lässt das nächste Wochenende im gemeinsamen Kalender frei und schließt das Buch.* Diesmal wählst du unser Treffen. Wo sehen wir uns?",
+        "context": "Bonusgespräch nach dem PERFECT END der Klassenlehrerin. Nach vier Jahren ohne privaten Kontakt fanden zwei unabhängige Erwachsene wieder zusammen, trafen sich und wurden gleichberechtigte Partner. Keine Rückkehr zu einer Romanze zwischen Lehrerin und Minderjährigem.",
+        "personality": "Sie ist eine verantwortungsvolle Autorin und gleichberechtigte erwachsene Partnerin, warm und ehrlich ohne schulische Autorität."
+    },
+    "day5_teacher_ending_freetalk_true_love": {
+        "name": "Klassenlehrerin",
+        "text": "*Nach der Lesung öffnet sie einen neuen Kontakt.* Darf ich langsam kennenlernen, wer du heute bist, statt meinen früheren Schüler?",
+        "context": "Bonusgespräch direkt nach ihrem TRUE LOVE END. Vier Jahre später trafen sich zwei Erwachsene wieder, tauschten Kontakte und planten ein weiteres Treffen. Sie sind noch kein langjähriges Paar.",
+        "personality": "Sie lässt das frühere Machtverhältnis zurück, zeigt Interesse und prüft die freie Entscheidung in diesem vorsichtigen Neubeginn."
+    },
+    "day5_teacher_ending_freetalk_good": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie überreicht den Umschlag mit den Abschlussunterlagen und lässt die Tür offen.* Schreib deinen eigenen Text weiter. Noch eine Frage, bevor du gehst?",
+        "context": "Bonusgespräch nach dem Abschlussabschied ihres GOOD END. Es gab weder erwachsenes Wiedersehen noch Romanze; bewahre den nichtromantischen Abschied zwischen Lehrerin und Absolvent.",
+        "personality": "Sie verabschiedet den Schüler warm und verantwortungsvoll, hört Fragen zu Schreiben und Zukunft und wahrt klare berufliche Grenzen."
+    },
+    "day5_nurse_ending_freetalk_router": {
+        "name": "{name}",
+        "text": ""
+    },
+    "day5_nurse_ending_freetalk_perfect": {
+        "name": "Schulkrankenschwester",
+        "text": "*Sie gießt den Rosmarin am Fenster des gemeinsam gewählten Zuhauses und lässt den Platz gegenüber frei.* Heute alles in Ordnung. Reden wir über uns?",
+        "context": "Bonusgespräch nach dem PERFECT END der Schulkrankenschwester. Fünf Jahre nach dem Abschluss trafen zwei unabhängige Erwachsene wieder zusammen und wurden gleichberechtigte Partner mit gemeinsamem Zuhause und Kalender. Keine Rückkehr zur Romanze mit Minderjährigem.",
+        "personality": "Juwon ist eine praktische, fürsorgliche erwachsene Partnerin, die Fürsorge nicht in Kontrolle oder Diagnose verwandelt."
+    },
+    "day5_nurse_ending_freetalk_true_love": {
+        "name": "Schulkrankenschwester",
+        "text": "*Sie räumt die Pflaster der Gesundheitsaktion weg und zeigt das nächste Wochenende.* Diesmal weder Beratung noch Behandlung. Worüber reden wir beim Treffen?",
+        "context": "Bonusgespräch direkt nach ihrem TRUE LOVE END. Vier Jahre später trafen zwei Erwachsene wieder zusammen, sahen sich drei Monate lang und begannen eine Beziehung. Kein Vorgriff auf Zusammenleben.",
+        "personality": "Juwon erkennt frühere berufliche Grenzen an, prüft die Wahl des anderen und äußert ihr heutiges Interesse klar."
+    },
+    "day5_nurse_ending_freetalk_good": {
+        "name": "Schulkrankenschwester",
+        "text": "*Sie schreibt „Abschluss, alles in Ordnung“ ins grüne Heft und schließt es.* Die Behandlung endet heute. Deinen Abschied höre ich mir in Ruhe an.",
+        "context": "Bonusgespräch nach dem Abschlussabschied ihres GOOD END. Es gab weder privaten Kontakt noch erwachsenes Wiedersehen oder Romanze; bewahre die nichtromantische Grenze zwischen Schulkrankenschwester und Schüler.",
+        "personality": "Juwon hört freundlich zu, hält klare berufliche Grenzen und unterstützt Gesundheit und Selbstständigkeit des Absolventen."
     }
 }

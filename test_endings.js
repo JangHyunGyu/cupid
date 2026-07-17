@@ -162,51 +162,74 @@ function buildState(config) {
 }
 
 const tests = [
-  { name: 'Perfect(Seoyeon)', expected: 'perfect_seo_1', affinities: { Seoyeon: 90 }, flags: ['route_seoyeon', 'day4_confession_accepted'] },
-  { name: 'Perfect(Yuna)', expected: 'perfect_yuna_1', affinities: { Yuna: 90 }, flags: ['route_yuna', 'day4_confession_accepted'] },
-  { name: 'Perfect(Dain)', expected: 'perfect_dain_1', affinities: { Dain: 90 }, flags: ['route_dain', 'day4_confession_accepted'] },
+  { name: 'Perfect(Seoyeon)', expected: 'day5_seo_ending_freetalk_perfect', affinities: { Seoyeon: 90 }, flags: ['route_seoyeon', 'day4_confession_accepted'], required: ['perfect_seo_1'] },
+  { name: 'Perfect(Yuna)', expected: 'day5_yuna_ending_freetalk_perfect', affinities: { Yuna: 90 }, flags: ['route_yuna', 'day4_confession_accepted'], required: ['perfect_yuna_1'] },
+  { name: 'Perfect(Dain)', expected: 'day5_dain_ending_freetalk_perfect', affinities: { Dain: 90 }, flags: ['route_dain', 'day4_confession_accepted'], required: ['perfect_dain_1'] },
 
-  { name: 'True(Seoyeon)', expected: 'true_seo_1', affinities: { Seoyeon: 70 }, flags: ['route_seoyeon', 'day4_confession_accepted'] },
-  { name: 'True(Yuna)', expected: 'true_yuna_1', affinities: { Yuna: 70 }, flags: ['route_yuna', 'day4_confession_accepted'] },
-  { name: 'True(Dain)', expected: 'true_dain_1', affinities: { Dain: 70 }, flags: ['route_dain', 'day4_confession_accepted'] },
+  { name: 'True(Seoyeon)', expected: 'day5_seo_ending_freetalk_true_love', affinities: { Seoyeon: 70 }, flags: ['route_seoyeon', 'day4_confession_accepted'], required: ['true_seo_1'] },
+  { name: 'True(Yuna)', expected: 'day5_yuna_ending_freetalk_true_love', affinities: { Yuna: 70 }, flags: ['route_yuna', 'day4_confession_accepted'], required: ['true_yuna_1'] },
+  { name: 'True(Dain)', expected: 'day5_dain_ending_freetalk_true_love', affinities: { Dain: 70 }, flags: ['route_dain', 'day4_confession_accepted'], required: ['true_dain_1'] },
 
   {
     name: 'Good Accepted(Seoyeon)',
     start: 'after5_ending_check',
-    expected: 'good_5_cg_seo',
+    expected: 'day5_seo_ending_freetalk_good',
     affinities: { Seoyeon: 50 },
     flags: ['route_seoyeon', 'day4_confession_accepted'],
+    required: ['good_5_cg_seo'],
     forbidden: ['after5_last_chance_1', 'after5_last_chance_choice']
   },
   {
     name: 'Good Accepted(Yuna)',
     start: 'after5_ending_check',
-    expected: 'good_5_cg_yuna',
+    expected: 'day5_yuna_ending_freetalk_good',
     affinities: { Yuna: 50 },
     flags: ['route_yuna', 'day4_confession_accepted'],
+    required: ['good_5_cg_yuna'],
     forbidden: ['after5_last_chance_1', 'after5_last_chance_choice']
   },
   {
     name: 'Good Accepted(Dain)',
     start: 'after5_ending_check',
-    expected: 'good_5_cg_dain',
+    expected: 'day5_dain_ending_freetalk_good',
     affinities: { Dain: 50 },
     flags: ['route_dain', 'day4_confession_accepted'],
+    required: ['good_5_cg_dain'],
     forbidden: ['after5_last_chance_1', 'after5_last_chance_choice']
   },
 
-  { name: 'Bittersweet(Seoyeon)', expected: 'bitter_seo_1', affinities: { Seoyeon: 20 }, flags: ['route_seoyeon', 'day4_confession_accepted'] },
-  { name: 'Bittersweet(Yuna)', expected: 'bitter_yuna_1', affinities: { Yuna: 20 }, flags: ['route_yuna', 'day4_confession_accepted'] },
-  { name: 'Bittersweet(Dain)', expected: 'bitter_dain_1', affinities: { Dain: 20 }, flags: ['route_dain', 'day4_confession_accepted'] },
+  { name: 'Bittersweet(Seoyeon)', expected: 'day5_seo_ending_freetalk_bittersweet', affinities: { Seoyeon: 20 }, flags: ['route_seoyeon', 'day4_confession_accepted'], required: ['bitter_seo_1'] },
+  { name: 'Bittersweet(Yuna)', expected: 'day5_yuna_ending_freetalk_bittersweet', affinities: { Yuna: 20 }, flags: ['route_yuna', 'day4_confession_accepted'], required: ['bitter_yuna_1'] },
+  { name: 'Bittersweet(Dain)', expected: 'day5_dain_ending_freetalk_bittersweet', affinities: { Dain: 20 }, flags: ['route_dain', 'day4_confession_accepted'], required: ['bitter_dain_1'] },
 
+  {
+    name: 'Late Confess Good(Seoyeon)',
+    start: 'after5_ending_check',
+    expected: 'day5_seo_ending_freetalk_late_good',
+    affinities: { Seoyeon: 55 },
+    flags: ['route_seoyeon', 'day4_waited'],
+    choices: { after5_last_chance_choice: 0 },
+    required: ['after5_confess_react_seo', 'good_5_cg_seo'],
+    forbidden: ['after5_confess_react_seo_low']
+  },
+  {
+    name: 'Late Confess Good(Yuna)',
+    start: 'after5_ending_check',
+    expected: 'day5_yuna_ending_freetalk_late_good',
+    affinities: { Yuna: 55 },
+    flags: ['route_yuna', 'day4_waited'],
+    choices: { after5_last_chance_choice: 0 },
+    required: ['after5_confess_react_yuna', 'good_5_cg_yuna'],
+    forbidden: ['after5_confess_react_yuna_low']
+  },
   {
     name: 'Late Confess Good(Dain)',
     start: 'after5_ending_check',
-    expected: 'good_5_cg_dain',
+    expected: 'day5_dain_ending_freetalk_late_good',
     affinities: { Dain: 55 },
     flags: ['route_dain', 'day4_waited'],
     choices: { after5_last_chance_choice: 0 },
-    required: ['after5_confess_react_dain'],
+    required: ['after5_confess_react_dain', 'good_5_cg_dain'],
     forbidden: ['after5_confess_react_dain_low']
   },
   {
@@ -244,13 +267,13 @@ const tests = [
   },
   { name: 'Alone', expected: 'day5_ending_alone' },
 
-  { name: 'Hidden Perfect(Teacher)', expected: 'hidden_perfect_homeroom_1', affinities: { Teacher: 90 }, flags: ['homeroom_day5'] },
-  { name: 'Hidden True(Teacher)', expected: 'hidden_true_homeroom_1', affinities: { Teacher: 60 }, flags: ['homeroom_day5'] },
-  { name: 'Hidden Good(Teacher)', expected: 'hidden_good_homeroom_1', affinities: { Teacher: 20 }, flags: ['homeroom_day5'] },
+  { name: 'Hidden Perfect(Teacher)', expected: 'day5_teacher_ending_freetalk_perfect', affinities: { Teacher: 90 }, flags: ['homeroom_day5'], required: ['hidden_perfect_homeroom_1'] },
+  { name: 'Hidden True(Teacher)', expected: 'day5_teacher_ending_freetalk_true_love', affinities: { Teacher: 60 }, flags: ['homeroom_day5'], required: ['hidden_true_homeroom_1'] },
+  { name: 'Hidden Good(Teacher)', expected: 'day5_teacher_ending_freetalk_good', affinities: { Teacher: 20 }, flags: ['homeroom_day5'], required: ['hidden_good_homeroom_1'] },
 
-  { name: 'Hidden Perfect(Nurse)', expected: 'hidden_perfect_nurse_1', affinities: { Nurse: 90 }, flags: ['nurse_day5'] },
-  { name: 'Hidden True(Nurse)', expected: 'hidden_true_nurse_1', affinities: { Nurse: 60 }, flags: ['nurse_day5'] },
-  { name: 'Hidden Good(Nurse)', expected: 'hidden_good_nurse_1', affinities: { Nurse: 20 }, flags: ['nurse_day5'] }
+  { name: 'Hidden Perfect(Nurse)', expected: 'day5_nurse_ending_freetalk_perfect', affinities: { Nurse: 90 }, flags: ['nurse_day5'], required: ['hidden_perfect_nurse_1'] },
+  { name: 'Hidden True(Nurse)', expected: 'day5_nurse_ending_freetalk_true_love', affinities: { Nurse: 60 }, flags: ['nurse_day5'], required: ['hidden_true_nurse_1'] },
+  { name: 'Hidden Good(Nurse)', expected: 'day5_nurse_ending_freetalk_good', affinities: { Nurse: 20 }, flags: ['nurse_day5'], required: ['hidden_good_nurse_1'] }
 ];
 
 let passed = 0;

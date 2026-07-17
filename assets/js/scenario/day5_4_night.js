@@ -1620,11 +1620,50 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "day5_seo_ending_freetalk_intro": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "day5_seo_ending_freetalk"
+        "next": "day5_seo_ending_freetalk_router"
     },
-    "day5_seo_ending_freetalk": {
+    "day5_seo_ending_freetalk_router": {
+        "background": "assets/images/background/top_school.png",
+        "character": null,
+        "branches": [
+            { "condition": "ending_perfect", "next": "day5_seo_ending_freetalk_perfect" },
+            { "condition": "ending_true_love", "next": "day5_seo_ending_freetalk_true_love" },
+            { "condition": "ending_bittersweet", "next": "day5_seo_ending_freetalk_bittersweet" },
+            { "condition": "day5_confessed", "next": "day5_seo_ending_freetalk_late_good" },
+            { "next": "day5_seo_ending_freetalk_good" }
+        ]
+    },
+    "day5_seo_ending_freetalk_perfect": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
+        "type": "free_talk",
+        "maxTurns": 5,
+        "next": "day5_credits"
+    },
+    "day5_seo_ending_freetalk_true_love": {
+        "background": "assets/images/background/seyoun_room.png",
+        "character": "assets/images/characters/seyoun_shy.png",
+        "type": "free_talk",
+        "maxTurns": 5,
+        "next": "day5_credits"
+    },
+    "day5_seo_ending_freetalk_good": {
+        "background": "assets/images/background/top_school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "type": "free_talk",
+        "maxTurns": 5,
+        "next": "day5_credits"
+    },
+    "day5_seo_ending_freetalk_bittersweet": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "type": "free_talk",
+        "maxTurns": 5,
+        "next": "day5_credits"
+    },
+    "day5_seo_ending_freetalk_late_good": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_laugh.png",
         "type": "free_talk",
         "maxTurns": 5,
         "next": "day5_credits"
@@ -1632,10 +1671,49 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "day5_yuna_ending_freetalk_intro": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_smile.png",
-        "next": "day5_yuna_ending_freetalk"
+        "next": "day5_yuna_ending_freetalk_router"
     },
-    "day5_yuna_ending_freetalk": {
+    "day5_yuna_ending_freetalk_router": {
         "background": "assets/images/background/yuna_hideout.png",
+        "character": null,
+        "branches": [
+            { "condition": "ending_perfect", "next": "day5_yuna_ending_freetalk_perfect" },
+            { "condition": "ending_true_love", "next": "day5_yuna_ending_freetalk_true_love" },
+            { "condition": "ending_bittersweet", "next": "day5_yuna_ending_freetalk_bittersweet" },
+            { "condition": "day5_confessed", "next": "day5_yuna_ending_freetalk_late_good" },
+            { "next": "day5_yuna_ending_freetalk_good" }
+        ]
+    },
+    "day5_yuna_ending_freetalk_perfect": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_smile.png",
+        "type": "free_talk",
+        "maxTurns": 5,
+        "next": "day5_credits"
+    },
+    "day5_yuna_ending_freetalk_true_love": {
+        "background": "assets/images/background/library_old.png",
+        "character": "assets/images/characters/yuna_smile.png",
+        "type": "free_talk",
+        "maxTurns": 5,
+        "next": "day5_credits"
+    },
+    "day5_yuna_ending_freetalk_good": {
+        "background": "assets/images/background/top_school.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "type": "free_talk",
+        "maxTurns": 5,
+        "next": "day5_credits"
+    },
+    "day5_yuna_ending_freetalk_bittersweet": {
+        "background": "assets/images/background/library_old.png",
+        "character": "assets/images/characters/yuna_sad.png",
+        "type": "free_talk",
+        "maxTurns": 5,
+        "next": "day5_credits"
+    },
+    "day5_yuna_ending_freetalk_late_good": {
+        "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/yuna_smile.png",
         "type": "free_talk",
         "maxTurns": 5,
@@ -1644,10 +1722,49 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "day5_dain_ending_freetalk_intro": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_laugh.png",
-        "next": "day5_dain_ending_freetalk"
+        "next": "day5_dain_ending_freetalk_router"
     },
-    "day5_dain_ending_freetalk": {
+    "day5_dain_ending_freetalk_router": {
         "background": "assets/images/background/gym.png",
+        "character": null,
+        "branches": [
+            { "condition": "ending_perfect", "next": "day5_dain_ending_freetalk_perfect" },
+            { "condition": "ending_true_love", "next": "day5_dain_ending_freetalk_true_love" },
+            { "condition": "ending_bittersweet", "next": "day5_dain_ending_freetalk_bittersweet" },
+            { "condition": "day5_confessed", "next": "day5_dain_ending_freetalk_late_good" },
+            { "next": "day5_dain_ending_freetalk_good" }
+        ]
+    },
+    "day5_dain_ending_freetalk_perfect": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "type": "free_talk",
+        "maxTurns": 5,
+        "next": "day5_credits"
+    },
+    "day5_dain_ending_freetalk_true_love": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_shy.png",
+        "type": "free_talk",
+        "maxTurns": 5,
+        "next": "day5_credits"
+    },
+    "day5_dain_ending_freetalk_good": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "type": "free_talk",
+        "maxTurns": 5,
+        "next": "day5_credits"
+    },
+    "day5_dain_ending_freetalk_bittersweet": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "type": "free_talk",
+        "maxTurns": 5,
+        "next": "day5_credits"
+    },
+    "day5_dain_ending_freetalk_late_good": {
+        "background": "assets/images/background/park.png",
         "character": "assets/images/characters/dain_laugh.png",
         "type": "free_talk",
         "maxTurns": 5,
@@ -1656,11 +1773,34 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "day5_teacher_ending_freetalk_intro": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/teacher_smile.png",
-        "next": "day5_teacher_ending_freetalk"
+        "next": "day5_teacher_ending_freetalk_router"
     },
-    "day5_teacher_ending_freetalk": {
+    "day5_teacher_ending_freetalk_router": {
+        "background": "assets/images/background/cafe.png",
+        "character": null,
+        "branches": [
+            { "condition": "ending_perfect", "next": "day5_teacher_ending_freetalk_perfect" },
+            { "condition": "ending_true_love", "next": "day5_teacher_ending_freetalk_true_love" },
+            { "next": "day5_teacher_ending_freetalk_good" }
+        ]
+    },
+    "day5_teacher_ending_freetalk_perfect": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/teacher_smile.png",
+        "type": "free_talk",
+        "maxTurns": 5,
+        "next": "day5_credits"
+    },
+    "day5_teacher_ending_freetalk_true_love": {
+        "background": "assets/images/background/bookstore.png",
+        "character": "assets/images/characters/teacher_smile.png",
+        "type": "free_talk",
+        "maxTurns": 5,
+        "next": "day5_credits"
+    },
+    "day5_teacher_ending_freetalk_good": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "type": "free_talk",
         "maxTurns": 5,
         "next": "day5_credits"
@@ -1668,10 +1808,33 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "day5_nurse_ending_freetalk_intro": {
         "background": "assets/images/background/nurse_house.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "day5_nurse_ending_freetalk"
+        "next": "day5_nurse_ending_freetalk_router"
     },
-    "day5_nurse_ending_freetalk": {
+    "day5_nurse_ending_freetalk_router": {
         "background": "assets/images/background/nurse_house.png",
+        "character": null,
+        "branches": [
+            { "condition": "ending_perfect", "next": "day5_nurse_ending_freetalk_perfect" },
+            { "condition": "ending_true_love", "next": "day5_nurse_ending_freetalk_true_love" },
+            { "next": "day5_nurse_ending_freetalk_good" }
+        ]
+    },
+    "day5_nurse_ending_freetalk_perfect": {
+        "background": "assets/images/background/nurse_house.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "type": "free_talk",
+        "maxTurns": 5,
+        "next": "day5_credits"
+    },
+    "day5_nurse_ending_freetalk_true_love": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "type": "free_talk",
+        "maxTurns": 5,
+        "next": "day5_credits"
+    },
+    "day5_nurse_ending_freetalk_good": {
+        "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "type": "free_talk",
         "maxTurns": 5,

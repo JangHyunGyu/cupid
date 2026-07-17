@@ -186,7 +186,11 @@ for (const [sceneId, { scene }] of Object.entries(allScenes)) {
     if (scene.branches) scene.branches.forEach(b => { if (b.next) targets.push(b.next); });
     for (const t of targets) {
         if (freeTalkScenes[t]) {
-            freeTalkScenes[t].predecessors.push({ id: sceneId, bg: scene.background });
+            freeTalkScenes[t].predecessors.push({
+                id: sceneId,
+                bg: scene.background,
+                isRouter: /_router$/.test(sceneId) && Array.isArray(scene.branches)
+            });
         }
     }
 }
@@ -194,6 +198,7 @@ for (const [ftId, { scene: ftScene, predecessors }] of Object.entries(freeTalkSc
     if (predecessors.length === 0) continue;
     const ftBg = ftScene.background;
     for (const pred of predecessors) {
+        if (pred.isRouter) continue;
         if (pred.bg && ftBg && pred.bg !== ftBg) {
             warnings.push('[FREETALK_BG] ' + ftId + ': bg="' + ftBg + '" but predecessor ' + pred.id + ' uses bg="' + pred.bg + '"');
         }
@@ -650,8 +655,8 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.90') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.90이 아님: ' + loaderVersion);
+    if (loaderVersion !== '2.9.91') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.91이 아님: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');
@@ -663,8 +668,8 @@ try {
         }
     }
     const swContent = fs.readFileSync(path.join(__dirname, 'service-worker.js'), 'utf8');
-    if (!swContent.includes("const CACHE_VERSION = 'cupid-v3.3.48'")) {
-        errors.push('[VERSION_SYNC] service-worker 캐시 버전이 cupid-v3.3.48이 아님');
+    if (!swContent.includes("const CACHE_VERSION = 'cupid-v3.3.49'")) {
+        errors.push('[VERSION_SYNC] service-worker 캐시 버전이 cupid-v3.3.49가 아님');
     }
 } catch (e) {
     warnings.push('[VERSION_SYNC] 버전 파일 읽기 실패: ' + e.message);

@@ -469,7 +469,7 @@ function verifyWiringAndScenePrompts() {
         Object.values(value).forEach(collect);
     }
     sceneFiles.forEach(file => collect(JSON.parse(read(file))));
-    assert(scenePrompts.length === 25, `expected 25 active Korean scene prompts, found ${scenePrompts.length}`);
+    assert(scenePrompts.length === 41, `expected 41 active Korean scene prompts, found ${scenePrompts.length}`);
     const joined = scenePrompts.join('\n');
     for (const stalePhrase of ['Day 1', 'Day 3', '톤:', '티키타카', '쿨뷰티', '신비주의 문학소녀', '체육계']) {
         assert(!joined.includes(stalePhrase), `active Korean scene prompt still contains: ${stalePhrase}`);
@@ -486,7 +486,9 @@ function verifyWiringAndScenePrompts() {
     for (let day = 1; day <= 5; day += 1) {
         const freeTalks = Object.entries(scenarioContext.SCENARIO[day] || {})
             .filter(([, scene]) => scene?.type === 'free_talk');
-        assert(freeTalks.length === 5, `day ${day} must contain exactly 5 free-talk scenes, found ${freeTalks.length}`);
+        const expectedCount = day === 5 ? 21 : 5;
+        assert(freeTalks.length === expectedCount,
+            `day ${day} must contain exactly ${expectedCount} free-talk scenes, found ${freeTalks.length}`);
         const expectedTurns = day === 5 ? 5 : 3;
         for (const [id, scene] of freeTalks) {
             assert(scene.maxTurns === expectedTurns,
@@ -522,9 +524,23 @@ function verifyWiringAndScenePrompts() {
     }
     for (const character of ['seo', 'yuna', 'dain', 'teacher', 'nurse']) {
         const introId = `day5_${character}_ending_freetalk_intro`;
-        const freeTalkId = `day5_${character}_ending_freetalk`;
-        assert(day5[introId]?.next === freeTalkId, `${introId} does not enter ${freeTalkId}`);
-        assert(day5[freeTalkId]?.next === 'day5_credits', `${freeTalkId} must continue to credits`);
+        const routerId = `day5_${character}_ending_freetalk_router`;
+        assert(day5[introId]?.next === routerId, `${introId} does not enter ${routerId}`);
+    }
+    const endingVariants = {
+        seo: ['perfect', 'true_love', 'good', 'bittersweet', 'late_good'],
+        yuna: ['perfect', 'true_love', 'good', 'bittersweet', 'late_good'],
+        dain: ['perfect', 'true_love', 'good', 'bittersweet', 'late_good'],
+        teacher: ['perfect', 'true_love', 'good'],
+        nurse: ['perfect', 'true_love', 'good']
+    };
+    for (const [character, variants] of Object.entries(endingVariants)) {
+        for (const variant of variants) {
+            const freeTalkId = `day5_${character}_ending_freetalk_${variant}`;
+            assert(day5[freeTalkId]?.type === 'free_talk', `${freeTalkId} must be a free-talk scene`);
+            assert(day5[freeTalkId]?.maxTurns === 5, `${freeTalkId} must use maxTurns 5`);
+            assert(day5[freeTalkId]?.next === 'day5_credits', `${freeTalkId} must continue to credits`);
+        }
     }
 }
 
@@ -702,4 +718,4 @@ verifyRequestOwnershipGuards();
 verifyCacheKeyWiring();
 verifyTypingOwnerIsolation(context);
 
-console.log(`Verified Korean runtime prompts for ${CHARACTERS.length} characters, 25 scene prompts, daily turn limits, loader order, memories, user agency, and stale-turn ownership.`);
+console.log(`Verified Korean runtime prompts for ${CHARACTERS.length} characters, 41 scene prompts, daily turn limits, loader order, memories, user agency, and stale-turn ownership.`);
