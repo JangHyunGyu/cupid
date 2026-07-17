@@ -73,6 +73,29 @@ const removedEditorPressure = [
     'faça uma passada como editor',
     'uma ou duas frases curtas'
 ];
+const day5EndingFreeTalkIds = [
+    'day5_seo_ending_freetalk_perfect',
+    'day5_seo_ending_freetalk_true_love',
+    'day5_seo_ending_freetalk_good',
+    'day5_seo_ending_freetalk_bittersweet',
+    'day5_seo_ending_freetalk_late_good',
+    'day5_yuna_ending_freetalk_perfect',
+    'day5_yuna_ending_freetalk_true_love',
+    'day5_yuna_ending_freetalk_good',
+    'day5_yuna_ending_freetalk_bittersweet',
+    'day5_yuna_ending_freetalk_late_good',
+    'day5_dain_ending_freetalk_perfect',
+    'day5_dain_ending_freetalk_true_love',
+    'day5_dain_ending_freetalk_good',
+    'day5_dain_ending_freetalk_bittersweet',
+    'day5_dain_ending_freetalk_late_good',
+    'day5_teacher_ending_freetalk_perfect',
+    'day5_teacher_ending_freetalk_true_love',
+    'day5_teacher_ending_freetalk_good',
+    'day5_nurse_ending_freetalk_perfect',
+    'day5_nurse_ending_freetalk_true_love',
+    'day5_nurse_ending_freetalk_good'
+];
 const activeFreeTalkIds = [
     'lunch_seo_freetalk',
     'lunch_dain_freetalk',
@@ -94,11 +117,7 @@ const activeFreeTalkIds = [
     'wall_seo_freetalk',
     'wall_dain_freetalk',
     'wall_yuna_freetalk',
-    'day5_seo_ending_freetalk',
-    'day5_yuna_ending_freetalk',
-    'day5_dain_ending_freetalk',
-    'day5_teacher_ending_freetalk',
-    'day5_nurse_ending_freetalk'
+    ...day5EndingFreeTalkIds
 ];
 const freeTalkPressureByLanguage = {
     ko: /장난과 짧은 문답|문장이 짧|답이 짧|감탄부호|클립보드|손끝|책갈피를 만|접었다 펴|손목 보호대|유일한 방어|무거운 과거는 꺼내지|꾸며 낸 단계/,
@@ -176,6 +195,16 @@ function verifyLocalizedFreeTalkInventory() {
             const pressureMatch = injectedPrompt.match(freeTalkPressureByLanguage[lang]);
             assert(!pressureMatch,
                 `[${lang}/${id}] robotic scene pressure remains in ${entry.file}: ${pressureMatch?.[0]}`);
+        }
+        const endingSignatures = new Map();
+        for (const id of day5EndingFreeTalkIds) {
+            const value = entries.get(id)?.value;
+            assert(typeof value?.text === 'string' && value.text.trim(),
+                `[${lang}/${id}] ending free-talk opening is missing or empty`);
+            const signature = JSON.stringify([value.text.trim(), value.context.trim(), value.personality.trim()]);
+            assert(!endingSignatures.has(signature),
+                `[${lang}/${id}] duplicates ending prompt ${endingSignatures.get(signature)}`);
+            endingSignatures.set(signature, id);
         }
         for (const id of entries.keys()) {
             assert(activeFreeTalkIds.includes(id), `[${lang}/${id}] dead context/personality prompt fragment remains`);
