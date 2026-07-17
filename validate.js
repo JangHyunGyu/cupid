@@ -650,8 +650,8 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.89') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.89이 아님: ' + loaderVersion);
+    if (loaderVersion !== '2.9.90') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.90이 아님: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');

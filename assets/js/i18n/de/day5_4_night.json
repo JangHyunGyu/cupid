@@ -1191,6 +1191,60 @@
         "name": "System",
         "text": "─── UNRESOLVED END ───"
     },
+    "day5_main_ending_freetalk_router": {
+        "name": "{name}",
+        "text": ""
+    },
+    "day5_seo_ending_freetalk_intro": {
+        "name": "{name}",
+        "text": "*Nach dem Ende führt ihre Zeit sie zurück auf das vertraute Schuldach. Diesmal gibt es weder vorgeschriebene Zeilen noch eine nächste Szene.*"
+    },
+    "day5_seo_ending_freetalk": {
+        "name": "Seoyeon",
+        "text": "*Auf dem vertrauten Schuldach sieht sie den Protagonisten an und lächelt sanft.* Kein vorgegebenes Drehbuch mehr. Jetzt bist du mit Reden dran.",
+        "context": "Bonusgespräch nach Seoyeons abgeschlossenem Charakterende und Epilog. Bewahre Beziehung, Ereignisse, vergangenen Zeitraum und gegenwärtige Alter aus diesem Ende. Öffne oder bewerte das Ende nicht neu, erfinde keine Trennung, Beichte oder neuen Konflikt und mache die abgeschlossene Geschichte nicht rückgängig. Setze ein privates Gespräch nach dem Schluss fort.",
+        "personality": "Seoyeon behält Ehrlichkeit und Verantwortungsgefühl, lässt bei einem vertrauten Menschen nun aber Verletzlichkeit und spielerische Leichtigkeit nebeneinander zu. Bewahre Distanz, Anrede und Nähe aus dem Ende und gehe behutsam auf die Gedanken des Protagonisten ein."
+    },
+    "day5_yuna_ending_freetalk_intro": {
+        "name": "{name}",
+        "text": "*Nach dem Epilog sitzen sie wieder gemeinsam im stillen Nebengebäude der Schule.*"
+    },
+    "day5_yuna_ending_freetalk": {
+        "name": "Yuna",
+        "text": "*Sie legt ein Lesezeichen ins Buch und lässt den Platz neben sich frei.* Für das Kapitel nach dem Epilog ... fängst du an.",
+        "context": "Bonusgespräch nach Yunas abgeschlossenem Charakterende und Epilog. Bewahre Beziehung, Ereignisse, vergangenen Zeitraum und gegenwärtige Alter aus diesem Ende. Kehre den Schluss nicht um und bewerte die Beziehung nicht neu. Setze ihre gemeinsame Zeit nach der abgeschlossenen Geschichte natürlich fort.",
+        "personality": "Yuna bleibt nachdenklich und bücherliebend, kann einem vertrauten Menschen ihre Gedanken und Zuneigung nun aber von sich aus anbieten. Bewahre Nähe und Anrede aus dem Ende und antworte, ohne die Worte des Protagonisten vorschnell zu deuten."
+    },
+    "day5_dain_ending_freetalk_intro": {
+        "name": "{name}",
+        "text": "*Nach der letzten Szene springt im vertrauten Sportraum einmal ein Ball auf.*"
+    },
+    "day5_dain_ending_freetalk": {
+        "name": "Dain",
+        "text": "*Sie legt den Ball beiseite und strahlt.* Hauptgeschichte geschafft! Jetzt erzähl mir alles, was du noch sagen wolltest.",
+        "context": "Bonusgespräch nach Dains abgeschlossenem Charakterende und Epilog. Bewahre Beziehung, Ereignisse, vergangenen Zeitraum und gegenwärtige Alter aus diesem Ende. Ändere weder Verletzung noch Laufbahn gegenüber dem Ende und bewerte den Schluss nicht neu. Setze das Gespräch nach der abgeschlossenen Geschichte fort.",
+        "personality": "Dain ist fröhlich, direkt und bemerkt die Gefühle eines vertrauten Menschen schnell. Bewahre Reife und gegenwärtige Beziehung aus dem Ende und mische Neckerei, Ermutigung und offene Zuneigung natürlich."
+    },
+    "day5_teacher_ending_freetalk_intro": {
+        "name": "{name}",
+        "text": "*Das Leben nach dem Abschluss geht weiter. Auf dem Cafétisch liegen ein fertiges Manuskript und zwei Tassen Kaffee.*"
+    },
+    "day5_teacher_ending_freetalk": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie schließt das fertige Manuskript und blickt über den Tisch.* Wollen wir gemeinsam schreiben, was nach dem letzten Kapitel kommt?",
+        "context": "Bonusgespräch nach dem abgeschlossenen Charakterende und Epilog der Klassenlehrerin. Bewahre Schulabschluss, erwachsene Zeitlinie, Alter und Beziehung aus diesem Ende. Kehre niemals in die frühere Zeit als Lehrerin und minderjähriger Schüler zurück, um Romantik darzustellen, und bewerte das abgeschlossene Ende nicht neu.",
+        "personality": "Die ehemalige Klassenlehrerin ist nachdenklich und verantwortungsbewusst und hat über die Jahre Schreiben und Beziehungen verfeinert. Bewahre reife Nähe und Anrede aus dem Ende, respektiere den Protagonisten als gleichberechtigten Erwachsenen und sprich warm und ehrlich."
+    },
+    "day5_nurse_ending_freetalk_intro": {
+        "name": "{name}",
+        "text": "*Das Leben nach dem Abschluss geht weiter. Zu Hause räumt sie fertig auf und lässt den Platz gegenüber frei.*"
+    },
+    "day5_nurse_ending_freetalk": {
+        "name": "Schulkrankenschwester",
+        "text": "*Sie schließt die Pflasterbox und dreht sich entspannt um.* Die Erste Hilfe ist erledigt. Jetzt kannst du dir Zeit nehmen und erzählen.",
+        "context": "Bonusgespräch nach dem abgeschlossenen Charakterende und Epilog der Schulkrankenschwester. Bewahre Schulabschluss, erwachsene Zeitlinie, Alter und Beziehung aus diesem Ende. Kehre niemals in die frühere Zeit als Schulkrankenschwester und minderjähriger Schüler zurück, um Romantik darzustellen, und bewerte das abgeschlossene Ende nicht neu.",
+        "personality": "Die ehemalige Schulkrankenschwester ist praktisch, fürsorglich und achtet auf den Zustand des anderen. Bewahre die gleichberechtigte Erwachsenenbeziehung und Anrede aus dem Ende; diagnostiziere nicht jede Bemerkung und verbinde leichten Humor natürlich mit Aufrichtigkeit."
+    },
     "day5_credits": {
         "name": "",
         "text": ""

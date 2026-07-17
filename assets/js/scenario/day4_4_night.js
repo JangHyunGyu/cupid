@@ -334,7 +334,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "backgroundVariant": "cold",
         "character": "assets/images/characters/seyoun_normal.png",
         "affinityChar": "Seoyeon",
-        "affinityBranches": [{"minAffinity":70,"next":"wall_seo_skin70_1"},{"minAffinity":60,"next":"wall_seo_skin60_1"},{"minAffinity":-100,"next":"wall_seo_glimpse_1"}]
+        "affinityBranches": [{"minAffinity":70,"next":"wall_seo_skin70_1"},{"minAffinity":60,"next":"wall_seo_skin60_1"},{"minAffinity":-100,"next":"wall_seo_freetalk"}]
     },
     "wall_seo_skin70_1": {
         "background": "assets/images/background/park.png",
@@ -347,7 +347,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "backgroundVariant": "cold",
         "character": "assets/images/characters/seyoun_shy.png",
         "setFlags": ["day4_skinship_seoyeon_70"],
-        "next": "wall_seo_glimpse_1"
+        "next": "wall_seo_freetalk"
     },
     "wall_seo_skin60_1": {
         "background": "assets/images/background/park.png",
@@ -360,6 +360,14 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "backgroundVariant": "cold",
         "character": "assets/images/characters/seyoun_shy.png",
         "setFlags": ["day4_skinship_seoyeon_60"],
+        "next": "wall_seo_freetalk"
+    },
+    "wall_seo_freetalk": {
+        "background": "assets/images/background/park.png",
+        "backgroundVariant": "cold",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "type": "free_talk",
+        "maxTurns": 3,
         "next": "wall_seo_glimpse_1"
     },
     "wall_seo_glimpse_1": {
@@ -783,7 +791,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/dain_normal.png",
         "affinityChar": "Dain",
-        "affinityBranches": [{"minAffinity":70,"next":"wall_dain_skin70_1"},{"minAffinity":60,"next":"wall_dain_skin60_1"},{"minAffinity":-100,"next":"wall_dain_glimpse_1"}]
+        "affinityBranches": [{"minAffinity":70,"next":"wall_dain_skin70_1"},{"minAffinity":60,"next":"wall_dain_skin60_1"},{"minAffinity":-100,"next":"wall_dain_freetalk"}]
     },
     "wall_dain_skin70_1": {
         "background": "assets/images/background/school_back.png",
@@ -799,7 +807,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/dain_shy.png",
         "setFlags": ["day4_skinship_dain_70"],
-        "next": "wall_dain_glimpse_1"
+        "next": "wall_dain_freetalk"
     },
     "wall_dain_skin60_1": {
         "background": "assets/images/background/school_back.png",
@@ -810,6 +818,13 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/dain_shy.png",
         "setFlags": ["day4_skinship_dain_60"],
+        "next": "wall_dain_freetalk"
+    },
+    "wall_dain_freetalk": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "type": "free_talk",
+        "maxTurns": 3,
         "next": "wall_dain_glimpse_1"
     },
     "wall_dain_glimpse_1": {
@@ -1059,7 +1074,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_normal.png",
         "affinityChar": "Yuna",
-        "affinityBranches": [{"minAffinity":70,"next":"wall_yuna_skin70_1"},{"minAffinity":60,"next":"wall_yuna_skin60_1"},{"minAffinity":-100,"next":"wall_yuna_glimpse_1"}]
+        "affinityBranches": [{"minAffinity":70,"next":"wall_yuna_skin70_1"},{"minAffinity":60,"next":"wall_yuna_skin60_1"},{"minAffinity":-100,"next":"wall_yuna_freetalk"}]
     },
     "wall_yuna_skin70_1": {
         "background": "assets/images/background/yuna_hideout.png",
@@ -1078,7 +1093,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_shy.png",
         "setFlags": ["day4_skinship_yuna_70"],
-        "next": "wall_yuna_glimpse_1"
+        "next": "wall_yuna_freetalk"
     },
     "wall_yuna_skin60_1": {
         "background": "assets/images/background/yuna_hideout.png",
@@ -1091,7 +1106,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_shy.png",
         "setFlags": ["day4_skinship_yuna_60"],
-        "next": "wall_yuna_glimpse_1"
+        "next": "wall_yuna_freetalk"
     },
     "wall_yuna_sub_1": {
         "background": "assets/images/background/yuna_hideout.png",
@@ -1104,7 +1119,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_smile.png",
         "setFlags": ["day4_yuna_wall_broken"],
-        "next": "wall_yuna_glimpse_1"
+        "next": "wall_yuna_freetalk"
     },
     "wall_yuna_reject_1": {
         "background": "assets/images/background/yuna_hideout.png",
@@ -1128,6 +1143,14 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/yuna_hideout.png",
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_sad.png",
+        "next": "wall_yuna_freetalk"
+    },
+    "wall_yuna_freetalk": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "backgroundVariant": "dream",
+        "character": "assets/images/characters/yuna_normal.png",
+        "type": "free_talk",
+        "maxTurns": 3,
         "next": "wall_yuna_glimpse_1"
     },
     "wall_yuna_glimpse_1": {

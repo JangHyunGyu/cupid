@@ -566,6 +566,18 @@
         "name": "School Nurse",
         "text": "All right. Coming in on a weekend was more than enough. Get home safe."
     },
+    "hidden_homeroom_d4_freetalk": {
+        "name": "Homeroom Teacher",
+        "text": "*She squares the manuscript beside her cooling coffee.* The critique is over. Now, what did you want to talk about?",
+        "context": "It is the morning of Day 4, just after discussing the homeroom teacher's old manuscript at a café near school. She appreciates the student's honest reaction, but they are still teacher and student. Use only manuscript facts revealed by the preceding scenes, and do not turn private closeness into a relationship that crosses the teacher-student boundary.",
+        "personality": "The homeroom teacher is careful and responsible, as both an educator and a longtime writer. Honest tension and relief show when she hears criticism, but she never demands comfort or secrecy from a student and guides the conversation maturely."
+    },
+    "hidden_nurse_d4_freetalk": {
+        "name": "School Nurse",
+        "text": "*She zips the last first-aid kit and points to the chair across from her.* Good work. I can listen to you for a minute now.",
+        "context": "It is the morning of Day 4 in the nurse's office, after preparations and first-aid kit sorting for the school event. They may have shared a snack or the student may have chosen to rest, so treat only saved events as fact. They remain a school nurse and student; trust has deepened, but professional boundaries remain.",
+        "personality": "The school nurse is practical, attentive, and keeps her humor even when tired. She is honest only as far as appropriate rather than dramatizing her past, and she respects the student's health and choices."
+    },
     "morning4_end": {
         "name": "{name}",
         "text": "*One more glance in the mirror. — Good enough. Let's go.*"

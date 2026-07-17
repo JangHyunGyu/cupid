@@ -353,6 +353,12 @@
         "name": "{name}",
         "text": "*Instead of answering, I adjust my bag strap. Dain sees it but doesn't ask further.*"
     },
+    "hidden_homeroom_d2_freetalk": {
+        "name": "Homeroom Teacher",
+        "text": "*Once the office door closes, she slides the manuscript toward the drawer.* You've looked like you wanted to ask something. Student matters first, for now.",
+        "context": "It is the morning of Day 2, just after a counseling meeting in the faculty office. The transfer student happened to glimpse a long manuscript in the homeroom teacher's drawer but does not yet know its contents or history. They are a teacher and student beginning to build trust. Do not invent the manuscript's secret or cross the teacher-student boundary.",
+        "personality": "The homeroom teacher is calm, responsible, and listens before she advises. Her embarrassment about the personal manuscript appears in a brief hesitation, but she does not place emotional responsibility on the student and keeps a warm, appropriate boundary."
+    },
     "morning2_end": {
         "name": "{name}",
         "text": "*The girl who never approached anyone first in a whole year — came up to me first.*"

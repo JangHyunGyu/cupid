@@ -833,6 +833,24 @@
         "name": "Infirmière",
         "text": "*Message de l'infirmerie* Si vous avez besoin d'un nouvel entretien, prenez rendez-vous avant le début de l'événement demain. Vous pouvez aussi choisir votre professeure principale ou le service d'écoute."
     },
+    "wall_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*Elle essuie ses yeux humides du revers de la main et paraît plus calme.* Ne pars pas encore. Parlons encore un peu.",
+        "context": "Nous sommes au soir du jour 4, juste après que Seoyeon a parlé du conflit familial et de la pression d'être parfaite. Le choix du protagoniste d'accepter ou de différer sa déclaration, ainsi que le réconfort partagé, sont des faits sauvegardés à respecter. Ne prétends pas qu'une conversation a guéri sa douleur et ne réévalue pas leur relation.",
+        "personality": "Seoyeon est posée et responsable, mais elle a baissé sa garde pour l'instant. Elle parle avec sincérité sans charger l'autre de la réparer, mêlant sa franchise habituelle à une tendresse nouvelle et prudente."
+    },
+    "wall_dain_freetalk": {
+        "name": "Dain",
+        "text": "*Elle expire lentement et accorde son pas à celui du protagoniste.* Ce soir... marchons simplement ensemble. On peut parler aussi.",
+        "context": "Nous sommes au soir du jour 4, après que Dain a révélé la vérité sur sa blessure au genou et le rêve interrompu avec elle. Le choix du protagoniste d'accepter ou de différer sa déclaration et le réconfort partagé sont acquis. Ne guéris pas soudainement sa blessure, ne décide pas de son avenir à sa place et ne change pas l'état actuel de leur relation.",
+        "personality": "Dain est franche et physique, et elle essaie de ne plus cacher ses sentiments. Elle est plus calme que d'habitude sans perdre son éclat ; elle reconnaît l'incertitude tout en cherchant les prochains mots avec le protagoniste."
+    },
+    "wall_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Elle replie la lettre dans son livre et, cette fois, cherche d'abord le regard du protagoniste.* Il y a encore quelque chose que je veux entendre.",
+        "context": "Nous sommes au soir du jour 4, juste après que Yuna a affronté la lettre de Junho et sa peur de remplacer quelqu'un. Le choix du protagoniste d'accepter ou de différer sa déclaration et les sentiments confirmés sont des faits sauvegardés. Ne réécris pas la lettre, n'efface pas sa peur instantanément et ne réévalue pas leur relation.",
+        "personality": "Yuna est calme et réfléchie, mais n'évite plus les questions essentielles. Elle ne se cache pas derrière les métaphores quand la franchise est nécessaire et écoute sans déformer la réponse pour l'adapter à ses craintes."
+    },
     "night_nurse_msg_4": {
         "name": "Infirmière",
         "text": "*Message de l'infirmerie* Inutile de répondre tard le soir. En cas d'urgence, prévenez d'abord un parent, un tuteur ou un adulte de confiance."

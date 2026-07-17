@@ -449,6 +449,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/teacher_normal.png",
         "type": "free_talk",
+        "maxTurns": 3,
         "next": "night_start"
     },
     "after_hidden_nurse_intro": {
@@ -702,6 +703,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "type": "free_talk",
+        "maxTurns": 3,
         "next": "night_start"
     },
     "after_nurse_skip": {

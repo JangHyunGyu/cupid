@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "generated": "2026-07-10T19:40:21.709Z",
+    "generated": "2026-07-17T17:54:02.643Z",
     "day": 4,
-    "total_nodes": 500,
+    "total_nodes": 505,
     "lang_avg": {
       "en": 10,
       "ja": 10,
@@ -5391,6 +5391,90 @@
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day4_1_morning.json#morning4_fallback_msg",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "hidden_homeroom_d4_freetalk": {
+      "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_homeroom_d4_freetalk",
+      "_ko_name": "담임선생님",
+      "_ko_text_preview": "*식은 커피 옆에 원고를 가지런히 놓는다.* 평가는 끝났고. 이제 네가 하고 싶었던 얘기, 들어 볼까?",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_homeroom_d4_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day4_1_morning.json#hidden_homeroom_d4_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day4_1_morning.json#hidden_homeroom_d4_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day4_1_morning.json#hidden_homeroom_d4_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day4_1_morning.json#hidden_homeroom_d4_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#hidden_homeroom_d4_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "hidden_nurse_d4_freetalk": {
+      "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_nurse_d4_freetalk",
+      "_ko_name": "보건선생님",
+      "_ko_text_preview": "*마지막 응급키트의 지퍼를 닫고 맞은편 의자를 가리킨다.* 수고했어. 이제 잠깐은 네 얘기 들어도 되겠네.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_nurse_d4_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day4_1_morning.json#hidden_nurse_d4_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day4_1_morning.json#hidden_nurse_d4_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day4_1_morning.json#hidden_nurse_d4_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day4_1_morning.json#hidden_nurse_d4_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#hidden_nurse_d4_freetalk",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -19957,6 +20041,132 @@
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day4_4_night.json#day4_final",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "wall_seo_freetalk": {
+      "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_freetalk",
+      "_ko_name": "서연",
+      "_ko_text_preview": "*젖은 눈가를 손등으로 닦고 한결 편해진 얼굴로 바라본다.* 아직 가지 마. 조금만 더 얘기하자.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day4_4_night.json#wall_seo_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day4_4_night.json#wall_seo_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day4_4_night.json#wall_seo_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day4_4_night.json#wall_seo_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "wall_dain_freetalk": {
+      "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_freetalk",
+      "_ko_name": "다인",
+      "_ko_text_preview": "*숨을 길게 내쉬고 주인공 곁에 보폭을 맞춘다.* 오늘은... 그냥 같이 좀 걷자. 말해도 좋고.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day4_4_night.json#wall_dain_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day4_4_night.json#wall_dain_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day4_4_night.json#wall_dain_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day4_4_night.json#wall_dain_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "wall_yuna_freetalk": {
+      "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_freetalk",
+      "_ko_name": "유나",
+      "_ko_text_preview": "*편지를 접어 책 사이에 넣고 이번에는 먼저 눈을 맞춘다.* 아직 듣고 싶은 말이 있어.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day4_4_night.json#wall_yuna_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day4_4_night.json#wall_yuna_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day4_4_night.json#wall_yuna_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day4_4_night.json#wall_yuna_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_freetalk",
         "_reviewed": false,
         "_score": 10,
         "_issues": null

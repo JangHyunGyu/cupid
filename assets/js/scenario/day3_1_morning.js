@@ -559,6 +559,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "backgroundVariant": "empty",
         "character": "assets/images/characters/teacher_normal.png",
         "type": "free_talk",
+        "maxTurns": 3,
         "next": "hidden_nurse_d3_check"
     },
     "hidden_nurse_d3_check": {
@@ -883,6 +884,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "type": "free_talk",
+        "maxTurns": 3,
         "next": "morning3_date_seo_1"
     },
     "morning3_date_seo_1": {

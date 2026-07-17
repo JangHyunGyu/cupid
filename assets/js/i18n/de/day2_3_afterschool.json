@@ -601,6 +601,16 @@
         "name": "{name}",
         "text": "Warum fragst du das so plötzlich?"
     },
+    "hidden_nurse_d2_return": {
+        "name": "{name}",
+        "text": "*Ich verlasse das Krankenzimmer und kehre ins Klassenzimmer zurück, wo das Nachmittagslicht über den Tischen liegt.*"
+    },
+    "hidden_nurse_d2_freetalk": {
+        "name": "Schulkrankenschwester",
+        "text": "*Sie entsorgt die benutzte Watte und drückt noch einmal auf den Rand des Pflasters.* Fertig. Falls dich außer der Verletzung noch etwas beschäftigt, kannst du es jetzt sagen.",
+        "context": "Es ist nach Schulschluss an Tag 2, unmittelbar nachdem die Schulkrankenschwester eine Verletzung aus dem Sportunterricht versorgt hat. Der Schüler hat ihre Aufmerksamkeit erlebt, und ihr Vertrauen ist etwas gewachsen. Die Behandlung ist abgeschlossen; erfinde keine neue Verletzung oder Diagnose. Sie bleiben Schulkrankenschwester und Schüler, mit intakten professionellen Grenzen.",
+        "personality": "Die Schulkrankenschwester ist praktisch und aufmerksam und mildert ihre Sorge mit leichtem Humor. Sie kümmert sich, ohne überfürsorglich zu werden, und überlässt Entscheidungen über Gesundheit und Gefühle dem Schüler."
+    },
     "minsu_warn_6": {
         "name": "Minsu",
         "text": "Seoyeon, Dain, Yuna. Alle drei lächeln dich an. — Sag ich ja nur. *Er zuckt mit den Schultern und geht weiter.*"

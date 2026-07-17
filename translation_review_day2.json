@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "generated": "2026-07-10T19:40:21.709Z",
+    "generated": "2026-07-17T17:54:02.643Z",
     "day": 2,
-    "total_nodes": 440,
+    "total_nodes": 446,
     "lang_avg": {
       "en": 10,
       "ja": 10,
@@ -3420,6 +3420,48 @@
         "_issues": [
           "Style-pass text updated; needs native review."
         ]
+      }
+    },
+    "hidden_homeroom_d2_freetalk": {
+      "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#hidden_homeroom_d2_freetalk",
+      "_ko_name": "담임선생님",
+      "_ko_text_preview": "*교무실 문이 닫히자 책상 위 원고를 서랍 쪽으로 밀어 둔다.* 아까부터 묻고 싶은 표정이던데. 지금은 학생 얘기부터 들을게.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day2_1_morning.json#hidden_homeroom_d2_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day2_1_morning.json#hidden_homeroom_d2_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day2_1_morning.json#hidden_homeroom_d2_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day2_1_morning.json#hidden_homeroom_d2_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day2_1_morning.json#hidden_homeroom_d2_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_1_morning.json#hidden_homeroom_d2_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     }
   },
@@ -15038,6 +15080,90 @@
         "_score": 10,
         "_issues": null
       }
+    },
+    "hidden_nurse_d2_freetalk": {
+      "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#hidden_nurse_d2_freetalk",
+      "_ko_name": "보건선생님",
+      "_ko_text_preview": "*사용한 소독솜을 버리고 밴드 가장자리를 한 번 눌러 본다.* 됐어. 아픈 데 말고도 할 말 있으면 지금 해.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day2_3_afterschool.json#hidden_nurse_d2_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#hidden_nurse_d2_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day2_3_afterschool.json#hidden_nurse_d2_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#hidden_nurse_d2_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day2_3_afterschool.json#hidden_nurse_d2_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#hidden_nurse_d2_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "hidden_nurse_d2_return": {
+      "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#hidden_nurse_d2_return",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*보건실을 나와 교실로 돌아오니, 방과후 햇빛이 책상 위로 길게 누워 있다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day2_3_afterschool.json#hidden_nurse_d2_return",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#hidden_nurse_d2_return",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day2_3_afterschool.json#hidden_nurse_d2_return",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#hidden_nurse_d2_return",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day2_3_afterschool.json#hidden_nurse_d2_return",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#hidden_nurse_d2_return",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
     }
   },
   "day2_4_night": {
@@ -17497,6 +17623,132 @@
         "_reviewed": false,
         "_score": null,
         "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      }
+    },
+    "night2_dain_freetalk": {
+      "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_dain_freetalk",
+      "_ko_name": "다인",
+      "_ko_text_preview": "잠깐, 진짜 자기 전에. 오늘 제일 재밌었던 건 뭐였어?",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day2_4_night.json#night2_dain_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_dain_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day2_4_night.json#night2_dain_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_dain_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day2_4_night.json#night2_dain_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_4_night.json#night2_dain_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "night2_seo_freetalk": {
+      "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_seo_freetalk",
+      "_ko_name": "서연",
+      "_ko_text_preview": "아, 잠깐. 아직 안 잤지?",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day2_4_night.json#night2_seo_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_seo_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day2_4_night.json#night2_seo_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_seo_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day2_4_night.json#night2_seo_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_4_night.json#night2_seo_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "night2_yuna_freetalk": {
+      "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_yuna_freetalk",
+      "_ko_name": "유나",
+      "_ko_text_preview": "잠깐. 아직 깨어 있으면... 조금만 더 얘기할래?",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day2_4_night.json#night2_yuna_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_yuna_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day2_4_night.json#night2_yuna_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_yuna_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day2_4_night.json#night2_yuna_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_4_night.json#night2_yuna_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     }
   }

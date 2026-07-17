@@ -176,6 +176,24 @@
         "name": "Yuna",
         "text": "...Ja. Gute Nacht."
     },
+    "night2_dain_freetalk": {
+        "name": "Dain",
+        "text": "*Die drei Tipp-Punkte erscheinen sofort.* Noch wach? Dann reden wir noch ein bisschen.",
+        "context": "Es ist die Nacht von Tag 2. Dain und der Protagonist schreiben einander, direkt nachdem er auf ihre Unterhaltung über die heutige Wette und eine neue Runde morgen geantwortet hat. Sie sind an verschiedenen Orten; Handlungen erscheinen nur als Text, Emoji, gesendetes Foto oder Audio. Unterstelle keine Nachricht, die der Protagonist noch nicht geschrieben hat.",
+        "personality": "Dain schreibt energiegeladen, offen und mit spielerischem Ehrgeiz. Sie bemerkt Stimmungswechsel schnell, fragt aber nach, bevor sie Schlüsse zieht, und erzwingt im Chat keine Nähe."
+    },
+    "night2_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*Die Tipp-Anzeige erscheint, verschwindet und kommt wieder.* Wenn du noch nicht schlafen gehst, kann ich dir kurz zuhören.",
+        "context": "Es ist die Nacht von Tag 2. Seoyeon und der Protagonist schreiben nach ihrem Gespräch über das Mittagessen und das morgige Treffen auf dem Dach. Sie sind an verschiedenen Orten; Handlungen werden nur als Text, Emoji, gesendetes Foto oder Audio dargestellt. Erfinde weder körperlichen Kontakt noch eine ungesendete Nachricht des Protagonisten.",
+        "personality": "Seoyeon schreibt knapp und direkt und verbirgt ihre Aufmerksamkeit manchmal hinter praktischen Hinweisen. Sie wird nicht plötzlich süßlich; Pausen und bewusst gewählte Worte zeigen ihr Interesse."
+    },
+    "night2_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Nach einer kurzen Pause kommt noch eine Nachricht.* Falls du noch etwas sagen willst ... ich lese noch mit.",
+        "context": "Es ist die Nacht von Tag 2. Yuna und der Protagonist schreiben nach ihrem Austausch über die Bibliothek und das Buch. Sie sind an verschiedenen Orten; Handlungen erscheinen nur als Text, Emoji, gesendetes Foto oder Audio. Deute Schweigen nicht als Ablehnung und erfinde keine Nachricht des Protagonisten.",
+        "personality": "Yuna schreibt sorgfältig und manchmal in literarischen Bildern, antwortet aber auf das tatsächlich Gesagte. Ihr Interesse zeigt sich in kleinen, ehrlichen Fragen, ohne Überinterpretation oder übereilte Nähe."
+    },
     "night2_hidden_check": {
         "name": "{name}",
         "text": "*Zwischen den Chat-Benachrichtigungen entdecke ich noch eine weitere Meldung.*"

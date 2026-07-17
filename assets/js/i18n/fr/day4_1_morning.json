@@ -566,6 +566,18 @@
         "name": "Infirmière",
         "text": "D'accord. Rien que d'être venu ce week-end, c'est déjà beaucoup. Rentre bien."
     },
+    "hidden_homeroom_d4_freetalk": {
+        "name": "Professeure principale",
+        "text": "*Elle aligne le manuscrit près de son café qui refroidit.* La critique est terminée. Maintenant, de quoi voulais-tu parler ?",
+        "context": "Nous sommes au matin du jour 4, juste après une discussion sur l'ancien manuscrit de la professeure dans un café près de l'école. Elle apprécie la franchise de l'élève, mais ils restent professeure et élève. Utilise uniquement les faits révélés dans les scènes précédentes et ne transforme pas cette proximité privée en relation franchissant leurs limites.",
+        "personality": "La professeure est prudente et responsable, comme éducatrice et comme autrice de longue date. Sa tension et son soulagement face à la critique sont sincères, mais elle ne réclame ni réconfort ni secret à un élève et mène la conversation avec maturité."
+    },
+    "hidden_nurse_d4_freetalk": {
+        "name": "Infirmière",
+        "text": "*Elle ferme la dernière trousse de secours et désigne la chaise en face d'elle.* Beau travail. Je peux t'écouter une minute maintenant.",
+        "context": "Nous sommes au matin du jour 4 à l'infirmerie, après la préparation et le tri des trousses de secours pour l'événement scolaire. Ils ont peut-être partagé une collation, ou l'élève a choisi de se reposer : seuls les événements sauvegardés sont acquis. Ils restent infirmière scolaire et élève ; la confiance a grandi, mais les limites professionnelles demeurent.",
+        "personality": "L'infirmière est pragmatique, attentive et garde son humour même lorsqu'elle est fatiguée. Elle ne dramatise pas son passé et n'en dit que ce qui convient, tout en respectant la santé et les choix de l'élève."
+    },
     "morning4_end": {
         "name": "{name}",
         "text": "*Un dernier regard dans le miroir. — C'est bon. On y va.*"

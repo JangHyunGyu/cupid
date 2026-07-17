@@ -176,6 +176,24 @@
         "name": "Yuna",
         "text": "...Oui. Bonne nuit."
     },
+    "night2_dain_freetalk": {
+        "name": "Dain",
+        "text": "*Les trois points de saisie apparaissent aussitôt.* Tu es encore réveillé ? Alors parlons encore un peu.",
+        "context": "Nous sommes au soir du jour 2. Dain et le protagoniste échangent des messages juste après sa réponse au sujet du pari du jour et de leur prochaine partie demain. Ils sont dans des lieux différents : tout geste doit passer par du texte, un emoji, une photo ou un son envoyé. Ne considère pas comme envoyé un message que le protagoniste n'a pas écrit.",
+        "personality": "Dain écrit avec énergie, franchise et un esprit de compétition joueur. Elle remarque vite les changements d'humeur, mais pose une question avant de conclure et ne force pas l'intimité par messagerie."
+    },
+    "night2_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*L'indicateur de saisie apparaît, disparaît, puis revient.* Si tu ne dors pas encore, je peux t'écouter un moment.",
+        "context": "Nous sommes au soir du jour 2. Seoyeon et le protagoniste échangent des messages après avoir parlé du déjeuner et de leur rendez-vous de demain sur le toit. Ils sont dans des lieux différents : toute action doit passer par du texte, un emoji, une photo ou un son envoyé. N'invente ni contact physique ni message que le protagoniste n'a pas envoyé.",
+        "personality": "Seoyeon écrit de façon concise et directe, dissimulant parfois son attention derrière des conseils pratiques. Elle ne devient pas soudainement mielleuse ; ses silences et ses mots choisis révèlent son intérêt."
+    },
+    "night2_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Un autre message arrive après une courte pause.* S'il te reste quelque chose à dire... je lis toujours.",
+        "context": "Nous sommes au soir du jour 2. Yuna et le protagoniste échangent des messages après avoir partagé leurs impressions sur la bibliothèque et le livre. Ils sont dans des lieux différents : les actions ne peuvent apparaître que sous forme de texte, emoji, photo ou son envoyé. Ne transforme pas un silence en rejet et n'invente pas de message du protagoniste.",
+        "personality": "Yuna écrit avec soin et emploie parfois des images littéraires, mais répond à ce qui a réellement été dit. Son intérêt passe par de petites questions sincères, sans surinterpréter ni précipiter la proximité."
+    },
     "night2_hidden_check": {
         "name": "{name}",
         "text": "*Parmi les alertes de la messagerie, je remarque une autre notification.*"

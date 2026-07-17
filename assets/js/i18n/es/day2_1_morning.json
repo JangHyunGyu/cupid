@@ -353,6 +353,12 @@
         "name": "{name}",
         "text": "*En lugar de responder, ajusto la correa de mi bolso. Dain lo ve pero no pregunta más.*"
     },
+    "hidden_homeroom_d2_freetalk": {
+        "name": "Profesora",
+        "text": "*Cuando se cierra la puerta de la sala de profesores, desliza el manuscrito hacia el cajón.* Parecía que querías preguntarme algo. Por ahora, los asuntos del alumno van primero.",
+        "context": "Es la mañana del día 2, justo después de una tutoría en la sala de profesores. El estudiante transferido alcanzó a ver un manuscrito largo en el cajón de la profesora, pero aún desconoce su contenido y su historia. Son profesora y alumno y apenas están creando confianza. No inventes el secreto del manuscrito ni cruces los límites entre profesora y alumno.",
+        "personality": "La profesora es serena y responsable; escucha antes de aconsejar. Su vergüenza por el manuscrito personal se nota en una breve vacilación, pero no hace responsable al alumno de sus emociones y mantiene una cercanía apropiada."
+    },
     "morning2_end": {
         "name": "{name}",
         "text": "*La persona que no se había acercado primero a nadie en todo un año fue quien se acercó a mí.*"
