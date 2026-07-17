@@ -79,7 +79,7 @@ class GalleryData {
                 bust: '34-21-34 65E',
                 hobby: '음악 감상, 소설 쓰기',
                 personality: '관찰형, 신중함',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'bikini']
             },
 
             // 다인 - 코트 밖의 진로를 찾는 배구부원
@@ -113,7 +113,7 @@ class GalleryData {
                 bust: '38-24-38 70G',
                 hobby: '독서, 영화 감상',
                 personality: '원칙적, 성찰적',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'worried', 'bikini']
             },
 
             // 보건선생님 - 도움을 연결하는 보건교사
@@ -130,7 +130,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: '원예, 명상',
                 personality: '실무적, 침착함',
-                expressions: ['normal', 'shy', 'angry', 'flushed', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'bikini']
             }
         },
 
@@ -168,7 +168,7 @@ class GalleryData {
                 bust: '34-21-34 65E',
                 hobby: 'Stargazing, Poetry',
                 personality: 'Kuudere, Mysterious',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'bikini']
             },
 
             // Dain - 햇살 같은 소꿉친구 (Tsundere)
@@ -202,7 +202,7 @@ class GalleryData {
                 bust: '38-24-38 70G',
                 hobby: 'Reading, Movies',
                 personality: 'Professional, Clumsy',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'worried', 'bikini']
             },
 
             // Nurse (School Nurse) - 장난꾸러기 보건교사 (Playful)
@@ -219,7 +219,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: 'Gardening, Meditation',
                 personality: 'Playful, Mature',
-                expressions: ['normal', 'shy', 'angry', 'flushed', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'bikini']
             }
         },
 
@@ -253,7 +253,7 @@ class GalleryData {
                 bust: '34-21-34 65E',
                 hobby: 'Observar estrellas, Poesía',
                 personality: 'Kuudere, Misteriosa',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'bikini']
             },
             dain: {
                 id: 'dain',
@@ -283,7 +283,7 @@ class GalleryData {
                 bust: '38-24-38 70G',
                 hobby: 'Lectura, Películas',
                 personality: 'Profesional, Despistada',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'worried', 'bikini']
             },
             nurse: {
                 id: 'nurse',
@@ -298,7 +298,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: 'Jardinería, Meditación',
                 personality: 'Juguetona, Madura',
-                expressions: ['normal', 'shy', 'angry', 'flushed', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'bikini']
             }
         },
 
@@ -332,7 +332,7 @@ class GalleryData {
                 bust: '34-21-34 65E',
                 hobby: '星を見ること、詩を書くこと',
                 personality: 'クーデレ、神秘的',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'bikini']
             },
             dain: {
                 id: 'dain',
@@ -362,7 +362,7 @@ class GalleryData {
                 bust: '38-24-38 70G',
                 hobby: '読書、映画鑑賞',
                 personality: '専門的、ドジ',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'worried', 'bikini']
             },
             nurse: {
                 id: 'nurse',
@@ -377,7 +377,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: '園芸、瞑想',
                 personality: 'いたずら好き、成熟',
-                expressions: ['normal', 'shy', 'angry', 'flushed', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'bikini']
             }
         },
 
@@ -411,7 +411,7 @@ class GalleryData {
                 bust: '34-21-34 65E',
                 hobby: 'Observation des étoiles, Poésie',
                 personality: 'Kuudere, Mystérieuse',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'bikini']
             },
             dain: {
                 id: 'dain',
@@ -441,7 +441,7 @@ class GalleryData {
                 bust: '38-24-38 70G',
                 hobby: 'Lecture, Cinéma',
                 personality: 'Professionnelle, Maladroite',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'worried', 'bikini']
             },
             nurse: {
                 id: 'nurse',
@@ -456,7 +456,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: 'Jardinage, Méditation',
                 personality: 'Espiègle, Mature',
-                expressions: ['normal', 'shy', 'angry', 'flushed', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'bikini']
             }
         },
 
@@ -490,7 +490,7 @@ class GalleryData {
                 bust: '34-21-34 65E',
                 hobby: 'Sternbeobachtung, Poesie',
                 personality: 'Kuudere, Geheimnisvoll',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'bikini']
             },
             dain: {
                 id: 'dain',
@@ -520,7 +520,7 @@ class GalleryData {
                 bust: '38-24-38 70G',
                 hobby: 'Lesen, Filme',
                 personality: 'Professionell, Tollpatschig',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'worried', 'bikini']
             },
             nurse: {
                 id: 'nurse',
@@ -535,7 +535,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: 'Gartenarbeit, Meditation',
                 personality: 'Verspielt, Reif',
-                expressions: ['normal', 'shy', 'angry', 'flushed', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'bikini']
             }
         },
 
@@ -569,7 +569,7 @@ class GalleryData {
                 bust: '34-21-34 65E',
                 hobby: 'Observar estrelas, Poesia',
                 personality: 'Kuudere, Misteriosa',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'bikini']
             },
             dain: {
                 id: 'dain',
@@ -599,7 +599,7 @@ class GalleryData {
                 bust: '38-24-38 70G',
                 hobby: 'Leitura, Filmes',
                 personality: 'Profissional, Desastrada',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'worried', 'bikini']
             },
             nurse: {
                 id: 'nurse',
@@ -614,7 +614,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: 'Jardinagem, Meditacao',
                 personality: 'Brincalhona, Madura',
-                expressions: ['normal', 'shy', 'angry', 'flushed', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'bikini']
             }
         }
     };
