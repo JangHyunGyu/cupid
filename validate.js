@@ -564,6 +564,38 @@ try {
             }
         }
     }
+
+    // Every canonical main-character sprite must be exposed by every language's gallery data.
+    // Generated/working derivatives are intentionally excluded from the public gallery.
+    const GalleryDataClass = new Function('window', gdContent + '\nreturn GalleryData;')({});
+    const galleryLanguages = ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt'];
+    const mainGalleryCharacters = ['seyoun', 'yuna', 'dain', 'teacher', 'nurse'];
+    const ignoredCharacterImages = new Set(['seyoun_normal_bg-removal.png']);
+    for (const charId of mainGalleryCharacters) {
+        const diskExpressions = fs.readdirSync(charImgDir)
+            .filter(file => file.startsWith(charId + '_') && file.endsWith('.png') && !ignoredCharacterImages.has(file))
+            .map(file => file.slice((charId + '_').length, -'.png'.length))
+            .sort();
+        for (const lang of galleryLanguages) {
+            const galleryExpressions = GalleryDataClass.characters?.[lang]?.[charId]?.expressions || [];
+            const missingFromGallery = diskExpressions.filter(expr => !galleryExpressions.includes(expr));
+            if (missingFromGallery.length > 0) {
+                errors.push('[GALLERY_ASSET] gallery-data.js: ' + lang + '/' + charId
+                    + ' missing expressions: ' + missingFromGallery.join(', '));
+            }
+        }
+    }
+
+    // Concerned replies in gallery free-talk must be able to select the new worried sprites.
+    const galleryFreeTalkContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-freetalk.js'), 'utf8');
+    const freeTalkExpressionBlock = (galleryFreeTalkContent.match(/this\.CHAR_EXPRESSIONS\s*=\s*\{([\s\S]*?)\n\s*\};/) || [])[1] || '';
+    for (const charId of ['yuna', 'teacher', 'nurse']) {
+        const charMatch = freeTalkExpressionBlock.match(new RegExp(charId + ':\\s*\\[([^\\]]+)\\]'));
+        const freeTalkExpressions = charMatch ? (charMatch[1].match(/'([^']+)'/g) || []).map(value => value.slice(1, -1)) : [];
+        if (!freeTalkExpressions.includes('worried')) {
+            errors.push('[GALLERY_FREETALK] ' + charId + ' worried expression missing');
+        }
+    }
 } catch (e) {
     warnings.push('[GALLERY_ASSET] gallery-data.js 파싱 실패: ' + e.message);
 }
@@ -655,8 +687,8 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.92') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.92가 아님: ' + loaderVersion);
+    if (loaderVersion !== '2.9.93') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.93가 아님: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');
@@ -668,8 +700,8 @@ try {
         }
     }
     const swContent = fs.readFileSync(path.join(__dirname, 'service-worker.js'), 'utf8');
-    if (!swContent.includes("const CACHE_VERSION = 'cupid-v3.3.50'")) {
-        errors.push('[VERSION_SYNC] service-worker 캐시 버전이 cupid-v3.3.50가 아님');
+    if (!swContent.includes("const CACHE_VERSION = 'cupid-v3.3.51'")) {
+        errors.push('[VERSION_SYNC] service-worker 캐시 버전이 cupid-v3.3.51가 아님');
     }
 } catch (e) {
     warnings.push('[VERSION_SYNC] 버전 파일 읽기 실패: ' + e.message);
