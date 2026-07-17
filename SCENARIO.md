@@ -23540,7 +23540,7 @@
 ---
 
 ### `day5_yuna_ending_freetalk_true_love`
-- 배경: `library_old.png`
+- 배경: `yuna_secret_rooftop.png`
 - 타입: `free_talk`
 - 다음: `day5_credits`
 - 컨텍스트: "유나 TRUE LOVE END 직후의 보너스 대화다. 유나는 비밀 다락방 위 옥상을 보여 주고 세 번째 곡을 함께 들으며 기대도 되는지 물었다. 쪽지보다 목소리를 먼저 쓰기 시작한 단계이며, PERFECT END의 출간 후 미래를 앞당기지 않는다."
@@ -23692,7 +23692,7 @@
 ---
 
 ### `day5_dain_ending_freetalk_perfect`
-- 배경: `gym.png`
+- 배경: `dain_broadcast_booth.png`
 - 타입: `free_talk`
 - 다음: `day5_credits`
 - 컨텍스트: "다인 PERFECT END의 1년 후 보너스 대화다. 다인은 재활을 이어 가며 스포츠미디어학과 경기 중계부에서 첫 방송을 준비했고, 주인공은 통증이 있는 날과 새 진로를 곁에서 함께했다. 부상이나 진로를 없던 일로 하지 않고 안정된 관계를 유지한다."
