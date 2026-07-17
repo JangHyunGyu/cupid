@@ -30,6 +30,17 @@
                 .catch(err => console.log('[SW] Registrierung fehlgeschlagen:', err));
         }
     </script>
+    <script>
+        // Keep landing-page controls usable while the parser-blocking game loader is still downloading.
+        window.openContactModal = function () {
+            const modal = document.getElementById('contactModal');
+            if (modal) modal.classList.add('is-open');
+        };
+        window.closeContactModal = function () {
+            const modal = document.getElementById('contactModal');
+            if (modal) modal.classList.remove('is-open');
+        };
+    </script>
     <script src="assets/js/browser-check.js?v=2.9.6" defer></script>
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">

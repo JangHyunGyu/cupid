@@ -437,6 +437,14 @@ if (koIndex) {
 // maxlength는 언어별로 다를 수 있음 (한글 6자, 일본어 8자, 영문 12자) — 검사 스킵
 
 // ===== 13-2. HTML Structure Sync (KO 기준 핵심 HTML 요소가 다른 언어에도 존재하는지) =====
+for (const file of htmlFiles.filter(f => /^index(?:-(?:en|es|ja|fr|de|pt))?\.html$/.test(f.name))) {
+    const earlyContactHandlerIndex = file.content.indexOf('window.openContactModal = function');
+    const gameLoaderIndex = file.content.indexOf('data-cupid-entry-script="true"');
+    if (earlyContactHandlerIndex < 0 || gameLoaderIndex < 0 || earlyContactHandlerIndex > gameLoaderIndex) {
+        errors.push('[LANDING_CONTROLS] ' + file.name + ': contact modal handlers must be defined before the blocking game loader');
+    }
+}
+
 const htmlStructureChecks = [
     { name: 'title-heroines', selector: 'class="title-heroines"', context: 'index' },
     { name: 'title-heroine images', selector: 'class="title-heroine pos-1"', context: 'index' },
