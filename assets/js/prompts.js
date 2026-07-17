@@ -250,6 +250,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         shy: 'assets/images/characters/yuna_shy.png',
         angry: 'assets/images/characters/yuna_angry.png',
         sad: 'assets/images/characters/yuna_sad.png',
+        worried: 'assets/images/characters/yuna_worried.png',
         bored: 'assets/images/characters/yuna_bored.png',
         flushed: 'assets/images/characters/yuna_flushed.png',
         bikini: 'assets/images/characters/yuna_bikini.png'
@@ -272,6 +273,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         shy: 'assets/images/characters/teacher_shy.png',
         angry: 'assets/images/characters/teacher_angry.png',
         sad: 'assets/images/characters/teacher_sad.png',
+        worried: 'assets/images/characters/teacher_worried.png',
         flushed: 'assets/images/characters/teacher_flushed.png',
         bikini: 'assets/images/characters/teacher_bikini.png'
     }),
@@ -279,6 +281,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         normal: 'assets/images/characters/nurse_normal.png',
         shy: 'assets/images/characters/nurse_shy.png',
         angry: 'assets/images/characters/nurse_angry.png',
+        worried: 'assets/images/characters/nurse_worried.png',
         flushed: 'assets/images/characters/nurse_flushed.png',
         bikini: 'assets/images/characters/nurse_bikini.png'
     })
@@ -1134,5 +1137,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 };
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.28';
+const PROMPT_VERSION = '2.7.29';
 window.PROMPT_VERSION = PROMPT_VERSION;

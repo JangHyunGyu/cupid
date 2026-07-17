@@ -542,6 +542,22 @@ function verifyWiringAndScenePrompts() {
             assert(day5[freeTalkId]?.next === 'day5_credits', `${freeTalkId} must continue to credits`);
         }
     }
+    assert(day5.day5_yuna_ending_freetalk_true_love?.background ===
+        'assets/images/background/yuna_secret_rooftop.png',
+        'Yuna TRUE LOVE bonus must use the secret rooftop background');
+    assert(day5.day5_dain_ending_freetalk_perfect?.background ===
+        'assets/images/background/dain_broadcast_booth.png',
+        'Dain PERFECT bonus must use the sports broadcast booth background');
+
+    const promptSource = read('assets/js/prompts.js');
+    for (const expressionPath of [
+        'assets/images/characters/yuna_worried.png',
+        'assets/images/characters/teacher_worried.png',
+        'assets/images/characters/nurse_worried.png'
+    ]) {
+        assert(promptSource.includes(expressionPath),
+            `free-talk expression map is missing ${expressionPath}`);
+    }
 }
 
 function verifyAdultExamplesOwnUserActions() {

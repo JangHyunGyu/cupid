@@ -1692,7 +1692,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "day5_credits"
     },
     "day5_yuna_ending_freetalk_true_love": {
-        "background": "assets/images/background/library_old.png",
+        "background": "assets/images/background/yuna_secret_rooftop.png",
         "character": "assets/images/characters/yuna_smile.png",
         "type": "free_talk",
         "maxTurns": 5,
@@ -1736,7 +1736,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         ]
     },
     "day5_dain_ending_freetalk_perfect": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/dain_broadcast_booth.png",
         "character": "assets/images/characters/dain_laugh.png",
         "type": "free_talk",
         "maxTurns": 5,

@@ -14,12 +14,14 @@
 | school_hallway.png | 복도 | 이동, 쉬는시간, 방과후 전환, 미선택 캐릭터 보충 |
 | room_school.png | 교실 | 수업, 아침, 담임 히든(빈 교실), 데이트 제안 |
 | top_school.png | 옥상 | 서연 점심, 서연 고백, 서연 퍼펙트 엔딩 |
+| yuna_secret_rooftop.png | 별관 비밀 옥상(블루아워) | 유나 TRUE LOVE 엔딩 보상 프리토킹 |
 | store.png | 매점 | 다인 점심, Day5 다인 투어 |
 | library_old.png | 도서관 | 유나 점심, Day5 유나 작별 |
 | yuna_hideout.png | 유나 비밀공간(별관) | 유나 방과후, 유나 고백, 유나 Wall, 유나 트루/퍼펙트 엔딩 |
 | teacher_office.png | 교무실/학생회실 | 서연 방과후, 담임 히든 Day2 |
 | nurse_room.png | 보건실 | 보건선생님 히든 루트 전체 |
 | gym.png | 체육관 | 다인 방과후, 다인 고백, 다인 Wall, 다인 트루/퍼펙트 엔딩 |
+| dain_broadcast_booth.png | 대학 스포츠 중계석 | 다인 PERFECT 엔딩 보상 프리토킹 |
 | playground.png | 놀이터/운동장 | (현재 미사용) |
 | street.png | 거리/떡볶이집 | 다인 Day2 방과후, Day4 데이트, 담임 Day4 히든 |
 | park.png | 공원 | 서연 Day4 데이트, 서연 Wall, 굿 엔딩 공통 |
@@ -95,20 +97,23 @@
 | **유나** | yuna_normal.png | 기본 표정 |
 | | yuna_smile.png | 미소 |
 | | yuna_shy.png | 수줍은 표정 |
+| | yuna_worried.png | 조용히 걱정하는 표정 |
 | | yuna_sad.png | 슬픈 표정 |
 | | yuna_bored.png | 무관심/지루한 표정 |
 | **담임선생님** | teacher_normal.png | 기본 표정 |
 | | teacher_smile.png | 미소 |
 | | teacher_shy.png | 수줍은 표정 |
+| | teacher_worried.png | 사려 깊게 걱정하는 표정 |
 | | teacher_sad.png | 슬픈 표정 |
 | **보건선생님** | nurse_normal.png | 기본 표정 |
 | | nurse_shy.png | 수줍은 표정 |
+| | nurse_worried.png | 다정하고 집중된 걱정 표정 |
 | **하은 (NPC)** | haeun_normal.png | 기본 표정 |
 | | haeun_worried.png | 걱정하는 표정 |
 | **민수 (NPC)** | minsu_normal.png | 기본 표정 |
 | | minsu_smirk.png | 씩 웃는 표정 |
 
-### 시나리오 미사용 캐릭터 이미지 (에셋만 존재)
+### 정적 시나리오 미사용 캐릭터 이미지 (프리토킹에서는 동적 사용 가능)
 
 | 이미지 | 비고 |
 |--------|------|
@@ -736,13 +741,29 @@
 
 성공한 캐릭터 엔딩의 본편·에필로그·엔딩 CG가 모두 끝난 뒤, 크레딧 전에 해당 캐릭터의 보상 프리토킹으로 진입한다. 중간 종료할 수 있으며 실패/친구/다중연애/혼자 엔딩에는 진입하지 않는다.
 
-| 씬 ID | 캐릭터 | 배경 | 설정 |
-|--------|----------|------|------|
-| day5_seo_ending_freetalk | 서연 | top_school.png | **maxTurns: 5** |
-| day5_yuna_ending_freetalk | 유나 | yuna_hideout.png | **maxTurns: 5** |
-| day5_dain_ending_freetalk | 다인 | gym.png | **maxTurns: 5** |
-| day5_teacher_ending_freetalk | 담임 | cafe.png | **maxTurns: 5**, 졸업 후 성인 시점 유지 |
-| day5_nurse_ending_freetalk | 보건 | nurse_house.png | **maxTurns: 5**, 졸업 후 성인 시점 유지 |
+| 씬 ID | 캐릭터/엔딩 | 배경 | 설정 |
+|--------|---------------|------|------|
+| day5_seo_ending_freetalk_perfect | 서연 PERFECT | top_school.png | **maxTurns: 5** |
+| day5_seo_ending_freetalk_true_love | 서연 TRUE LOVE | seyoun_room.png | **maxTurns: 5** |
+| day5_seo_ending_freetalk_good | 서연 GOOD | top_school.png | **maxTurns: 5** |
+| day5_seo_ending_freetalk_bittersweet | 서연 BITTERSWEET | cafe.png | **maxTurns: 5** |
+| day5_seo_ending_freetalk_late_good | 서연 뒤늦은 고백 GOOD | park.png | **maxTurns: 5** |
+| day5_yuna_ending_freetalk_perfect | 유나 PERFECT | yuna_hideout.png | **maxTurns: 5** |
+| day5_yuna_ending_freetalk_true_love | 유나 TRUE LOVE | yuna_secret_rooftop.png | **maxTurns: 5** |
+| day5_yuna_ending_freetalk_good | 유나 GOOD | top_school.png | **maxTurns: 5** |
+| day5_yuna_ending_freetalk_bittersweet | 유나 BITTERSWEET | library_old.png | **maxTurns: 5** |
+| day5_yuna_ending_freetalk_late_good | 유나 뒤늦은 고백 GOOD | top_school.png | **maxTurns: 5** |
+| day5_dain_ending_freetalk_perfect | 다인 PERFECT | dain_broadcast_booth.png | **maxTurns: 5** |
+| day5_dain_ending_freetalk_true_love | 다인 TRUE LOVE | gym.png | **maxTurns: 5** |
+| day5_dain_ending_freetalk_good | 다인 GOOD | park.png | **maxTurns: 5** |
+| day5_dain_ending_freetalk_bittersweet | 다인 BITTERSWEET | gym.png | **maxTurns: 5** |
+| day5_dain_ending_freetalk_late_good | 다인 뒤늦은 고백 GOOD | park.png | **maxTurns: 5** |
+| day5_teacher_ending_freetalk_perfect | 담임 PERFECT | cafe.png | **maxTurns: 5**, 졸업 후 성인 시점 유지 |
+| day5_teacher_ending_freetalk_true_love | 담임 TRUE LOVE | bookstore.png | **maxTurns: 5**, 졸업 후 성인 시점 유지 |
+| day5_teacher_ending_freetalk_good | 담임 GOOD | room_school.png | **maxTurns: 5**, 교사-졸업생 경계 유지 |
+| day5_nurse_ending_freetalk_perfect | 보건 PERFECT | nurse_house.png | **maxTurns: 5**, 졸업 후 성인 시점 유지 |
+| day5_nurse_ending_freetalk_true_love | 보건 TRUE LOVE | cafe.png | **maxTurns: 5**, 졸업 후 성인 시점 유지 |
+| day5_nurse_ending_freetalk_good | 보건 GOOD | nurse_room.png | **maxTurns: 5**, 교사-졸업생 경계 유지 |
 
 ---
 
