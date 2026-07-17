@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "generated": "2026-07-10T19:40:21.709Z",
+    "generated": "2026-07-17T17:54:02.643Z",
     "day": 5,
-    "total_nodes": 579,
+    "total_nodes": 590,
     "lang_avg": {
       "en": 10,
       "ja": 10,
@@ -23131,6 +23131,468 @@
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day5_4_night.json#bitter_yuna_2_book",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "day5_main_ending_freetalk_router": {
+      "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#day5_main_ending_freetalk_router",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day5_4_night.json#day5_main_ending_freetalk_router",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day5_4_night.json#day5_main_ending_freetalk_router",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day5_4_night.json#day5_main_ending_freetalk_router",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day5_4_night.json#day5_main_ending_freetalk_router",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day5_4_night.json#day5_main_ending_freetalk_router",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day5_4_night.json#day5_main_ending_freetalk_router",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "day5_seo_ending_freetalk": {
+      "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#day5_seo_ending_freetalk",
+      "_ko_name": "서연",
+      "_ko_text_preview": "*익숙한 옥상에서 주인공을 바라보고 작게 웃는다.* 이제 정해진 이야기 말고, 네 얘기를 들을 차례네.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day5_4_night.json#day5_seo_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day5_4_night.json#day5_seo_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day5_4_night.json#day5_seo_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day5_4_night.json#day5_seo_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day5_4_night.json#day5_seo_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day5_4_night.json#day5_seo_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "day5_yuna_ending_freetalk": {
+      "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#day5_yuna_ending_freetalk",
+      "_ko_name": "유나",
+      "_ko_text_preview": "*읽던 책에 책갈피를 끼우고 옆자리를 비워 둔다.* 에필로그 다음 장은... 네가 먼저 말해 줘.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day5_4_night.json#day5_yuna_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day5_4_night.json#day5_yuna_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day5_4_night.json#day5_yuna_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day5_4_night.json#day5_yuna_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day5_4_night.json#day5_yuna_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day5_4_night.json#day5_yuna_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "day5_dain_ending_freetalk": {
+      "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#day5_dain_ending_freetalk",
+      "_ko_name": "다인",
+      "_ko_text_preview": "*공을 옆에 내려놓고 환하게 웃는다.* 본편 끝! 이제 하고 싶었던 말 다 해 봐.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day5_4_night.json#day5_dain_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day5_4_night.json#day5_dain_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day5_4_night.json#day5_dain_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day5_4_night.json#day5_dain_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day5_4_night.json#day5_dain_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day5_4_night.json#day5_dain_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "day5_teacher_ending_freetalk": {
+      "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#day5_teacher_ending_freetalk",
+      "_ko_name": "담임선생님",
+      "_ko_text_preview": "*완성된 원고를 덮고 맞은편 자리를 바라본다.* 마지막 장 뒤의 이야기는, 같이 써 볼래?",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day5_4_night.json#day5_teacher_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day5_4_night.json#day5_teacher_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day5_4_night.json#day5_teacher_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day5_4_night.json#day5_teacher_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day5_4_night.json#day5_teacher_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day5_4_night.json#day5_teacher_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "day5_nurse_ending_freetalk": {
+      "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#day5_nurse_ending_freetalk",
+      "_ko_name": "보건선생님",
+      "_ko_text_preview": "*밴드 상자를 닫고 편안한 표정으로 돌아본다.* 응급 처치는 끝. 이제 천천히 얘기해 봐.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day5_4_night.json#day5_nurse_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day5_4_night.json#day5_nurse_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day5_4_night.json#day5_nurse_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day5_4_night.json#day5_nurse_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day5_4_night.json#day5_nurse_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day5_4_night.json#day5_nurse_ending_freetalk",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "day5_seo_ending_freetalk_intro": {
+      "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#day5_seo_ending_freetalk_intro",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*엔딩 뒤의 시간은 다시 익숙한 학교 옥상으로 이어진다. 이번에는 정해진 대사도, 다음 장면도 없다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day5_4_night.json#day5_seo_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day5_4_night.json#day5_seo_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day5_4_night.json#day5_seo_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day5_4_night.json#day5_seo_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day5_4_night.json#day5_seo_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day5_4_night.json#day5_seo_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "day5_yuna_ending_freetalk_intro": {
+      "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#day5_yuna_ending_freetalk_intro",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*에필로그가 끝난 뒤, 두 사람은 다시 학교 별관의 조용한 자리에서 마주 앉는다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day5_4_night.json#day5_yuna_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day5_4_night.json#day5_yuna_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day5_4_night.json#day5_yuna_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day5_4_night.json#day5_yuna_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day5_4_night.json#day5_yuna_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day5_4_night.json#day5_yuna_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "day5_dain_ending_freetalk_intro": {
+      "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#day5_dain_ending_freetalk_intro",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*마지막 장면이 지나고, 익숙한 체육관에 공 튀는 소리만 한 번 울린다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day5_4_night.json#day5_dain_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day5_4_night.json#day5_dain_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day5_4_night.json#day5_dain_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day5_4_night.json#day5_dain_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day5_4_night.json#day5_dain_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day5_4_night.json#day5_dain_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "day5_teacher_ending_freetalk_intro": {
+      "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#day5_teacher_ending_freetalk_intro",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*졸업 후의 시간이 이어진다. 카페 테이블 위에는 완성된 원고와 커피 두 잔이 놓여 있다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day5_4_night.json#day5_teacher_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day5_4_night.json#day5_teacher_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day5_4_night.json#day5_teacher_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day5_4_night.json#day5_teacher_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day5_4_night.json#day5_teacher_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day5_4_night.json#day5_teacher_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "day5_nurse_ending_freetalk_intro": {
+      "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#day5_nurse_ending_freetalk_intro",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*졸업 후의 시간이 이어진다. 집에서 정리를 마친 그녀가 맞은편 자리를 비워 둔다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day5_4_night.json#day5_nurse_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day5_4_night.json#day5_nurse_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day5_4_night.json#day5_nurse_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day5_4_night.json#day5_nurse_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day5_4_night.json#day5_nurse_ending_freetalk_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day5_4_night.json#day5_nurse_ending_freetalk_intro",
         "_reviewed": false,
         "_score": 10,
         "_issues": null

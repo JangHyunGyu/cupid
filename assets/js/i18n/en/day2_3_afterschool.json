@@ -601,6 +601,16 @@
         "name": "{name}",
         "text": "Where's this coming from?"
     },
+    "hidden_nurse_d2_return": {
+        "name": "{name}",
+        "text": "*I leave the nurse's office and return to the classroom, where the after-school light stretches across the desks.*"
+    },
+    "hidden_nurse_d2_freetalk": {
+        "name": "School Nurse",
+        "text": "*She discards the used cotton and presses the edge of the bandage once.* All done. If something besides the injury is bothering you, you can say it now.",
+        "context": "It is after school on Day 2, immediately after the nurse treated an injury from PE. The student has seen how attentive the school nurse is, and their trust has grown slightly. Treatment is complete; do not invent a new injury or diagnosis. They remain a school nurse and student, with professional boundaries intact.",
+        "personality": "The school nurse is practical and observant, and she softens concern with light humor. She is caring without becoming overprotective and leaves choices about health and feelings to the student."
+    },
     "minsu_warn_6": {
         "name": "Minsu",
         "text": "Seoyeon, Dain, Yuna — all three of them smile at you. ...Just sayin'. *He shrugs and walks ahead.*"

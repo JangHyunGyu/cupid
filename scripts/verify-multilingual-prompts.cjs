@@ -79,11 +79,26 @@ const activeFreeTalkIds = [
     'lunch_yuna_freetalk',
     'after_homeroom_freetalk',
     'after_nurse_freetalk',
+    'hidden_homeroom_d2_freetalk',
+    'hidden_nurse_d2_freetalk',
+    'night2_dain_freetalk',
+    'night2_seo_freetalk',
+    'night2_yuna_freetalk',
     'hidden_homeroom_d3_freetalk',
     'hidden_nurse_d3_freetalk',
     'after3_seo_freetalk',
     'after3_yuna_freetalk',
-    'after3_dain_freetalk'
+    'after3_dain_freetalk',
+    'hidden_homeroom_d4_freetalk',
+    'hidden_nurse_d4_freetalk',
+    'wall_seo_freetalk',
+    'wall_dain_freetalk',
+    'wall_yuna_freetalk',
+    'day5_seo_ending_freetalk',
+    'day5_yuna_ending_freetalk',
+    'day5_dain_ending_freetalk',
+    'day5_teacher_ending_freetalk',
+    'day5_nurse_ending_freetalk'
 ];
 const freeTalkPressureByLanguage = {
     ko: /장난과 짧은 문답|문장이 짧|답이 짧|감탄부호|클립보드|손끝|책갈피를 만|접었다 펴|손목 보호대|유일한 방어|무거운 과거는 꺼내지|꾸며 낸 단계/,

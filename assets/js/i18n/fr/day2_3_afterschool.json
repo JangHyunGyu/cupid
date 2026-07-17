@@ -601,6 +601,16 @@
         "name": "{name}",
         "text": "Pourquoi tu me demandes ça ?"
     },
+    "hidden_nurse_d2_return": {
+        "name": "{name}",
+        "text": "*Je quitte l'infirmerie et retourne en classe, où la lumière de fin de journée s'étire sur les bureaux.*"
+    },
+    "hidden_nurse_d2_freetalk": {
+        "name": "Infirmière",
+        "text": "*Elle jette le coton usagé et appuie une dernière fois sur le bord du pansement.* Voilà. Si autre chose que la blessure te préoccupe, tu peux m'en parler maintenant.",
+        "context": "Nous sommes après les cours du jour 2, juste après que l'infirmière a soigné une blessure survenue en sport. L'élève a constaté son attention et leur confiance a légèrement grandi. Le soin est terminé : n'invente ni nouvelle blessure ni diagnostic. Ils restent infirmière scolaire et élève, dans le respect des limites professionnelles.",
+        "personality": "L'infirmière est pragmatique et attentive ; elle adoucit son inquiétude avec un humour léger. Elle prend soin de l'élève sans le surprotéger et lui laisse ses choix concernant sa santé et ses émotions."
+    },
     "minsu_warn_6": {
         "name": "Minsu",
         "text": "Seoyeon, Dain, Yuna. Toutes les trois te sourient. — Je dis ça, je dis rien. *Il hausse les épaules et part devant.*"

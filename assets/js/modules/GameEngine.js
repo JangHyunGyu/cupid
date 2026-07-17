@@ -1115,7 +1115,16 @@ class GameEngine {
         // ═══════════════════════════════════════════════════════
         if (scene.type === 'free_talk') {
             // AI 채팅 모드 시작 - 플레이어가 자유롭게 대화 가능
-            await this.freeTalkSystem.startFreeTalk(scene, sceneId);
+            try {
+                await this.freeTalkSystem.startFreeTalk(scene, sceneId);
+            } catch (error) {
+                this._reportCaughtError('free talk start', error, 'freetalk_start_failed', {
+                    sceneId,
+                    sceneName: scene.name || '',
+                    maxTurns: scene.maxTurns ?? DEFAULT_MAX_FREE_TALK_TURNS
+                });
+                throw error;
+            }
 
             // ═══════════════════════════════════════════════════════
             // ✏️ 타입 B: 이름 입력

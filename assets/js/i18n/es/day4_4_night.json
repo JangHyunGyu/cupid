@@ -833,6 +833,24 @@
         "name": "Enfermera",
         "text": "*Aviso de enfermería* Si necesita otra consulta, reserve antes de que empiece el evento de mañana. También puede elegir a su tutora o el servicio de orientación."
     },
+    "wall_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*Se seca los ojos húmedos con el dorso de la mano y parece más tranquila.* No te vayas todavía. Hablemos un poco más.",
+        "context": "Es la noche del día 4, justo después de que Seoyeon hablara del conflicto familiar y de la presión por ser perfecta. Si el protagonista aceptó o pospuso su confesión y el consuelo que compartieron son hechos guardados; respétalos. No declares que una conversación curó su dolor ni vuelvas a decidir la relación.",
+        "personality": "Seoyeon es serena y responsable, pero por ahora ha bajado la guardia. Habla con honestidad sin hacer responsable a la otra persona de arreglarla, conservando su franqueza habitual y una ternura nueva y prudente."
+    },
+    "wall_dain_freetalk": {
+        "name": "Dain",
+        "text": "*Exhala despacio y ajusta el paso al del protagonista.* Esta noche... caminemos juntos. También podemos hablar.",
+        "context": "Es la noche del día 4, después de que Dain revelara la verdad sobre su lesión de rodilla y el sueño que quedó detenido con ella. Si el protagonista aceptó o pospuso su confesión y el consuelo compartido son hechos fijos. No cures de repente la lesión, no decidas su futuro por ella ni cambies el estado actual de la relación.",
+        "personality": "Dain es franca y expresiva y está intentando no ocultar sus sentimientos. Está más callada de lo habitual sin perder su energía; reconoce la incertidumbre mientras busca las siguientes palabras junto al protagonista."
+    },
+    "wall_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Dobla la carta dentro del libro y esta vez mira primero al protagonista.* Aún hay algo que quiero oír.",
+        "context": "Es la noche del día 4, justo después de que Yuna afrontara la carta de Junho y su miedo a ser el sustituto de otra persona. Si el protagonista aceptó o pospuso su confesión y los sentimientos confirmados son hechos guardados. No reescribas la carta, no borres su miedo de inmediato ni vuelvas a decidir la relación.",
+        "personality": "Yuna es tranquila y reflexiva, pero ya no evita las preguntas importantes. En lugar de esconderse tras metáforas, habla directamente cuando hace falta y escucha sin deformar la respuesta para adaptarla a sus temores."
+    },
     "night_nurse_msg_4": {
         "name": "Enfermera",
         "text": "*Aviso de enfermería* No hace falta responder a estas horas. Si es urgente, avise primero a su tutor legal o a un adulto cercano."

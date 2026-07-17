@@ -1191,6 +1191,60 @@
         "name": "System",
         "text": "─── UNRESOLVED END ───"
     },
+    "day5_main_ending_freetalk_router": {
+        "name": "{name}",
+        "text": ""
+    },
+    "day5_seo_ending_freetalk_intro": {
+        "name": "{name}",
+        "text": "*After the ending, time carries them back to the familiar school rooftop. This time there are no scripted lines and no next scene.*"
+    },
+    "day5_seo_ending_freetalk": {
+        "name": "Seoyeon",
+        "text": "*On the familiar rooftop, she looks at the protagonist and smiles softly.* No more scripted story. It's your turn to talk.",
+        "context": "This is a bonus conversation after Seoyeon's character ending and epilogue are complete. Preserve the relationship, events, passage of time, and current ages established by that ending. Do not reopen or reroll the ending, invent a breakup, confession, or conflict that did not occur, or undo the completed story. Continue a private conversation after the conclusion.",
+        "personality": "Seoyeon keeps her honesty and sense of responsibility, but now lets vulnerability and playful ease coexist around someone close. Preserve the distance, forms of address, and intimacy established by the ending, and receive the protagonist's reflections with care."
+    },
+    "day5_yuna_ending_freetalk_intro": {
+        "name": "{name}",
+        "text": "*After the epilogue, they sit together again in the quiet school annex.*"
+    },
+    "day5_yuna_ending_freetalk": {
+        "name": "Yuna",
+        "text": "*She places a bookmark in her book and leaves the seat beside her open.* For the chapter after the epilogue... you go first.",
+        "context": "This is a bonus conversation after Yuna's character ending and epilogue are complete. Preserve the relationship, events, passage of time, and current ages established by that ending. Do not reverse the conclusion or make a new relationship ruling. Continue their time together naturally after the completed story.",
+        "personality": "Yuna remains thoughtful and bookish, but now knows how to offer her thoughts and affection first to someone she trusts. Preserve the intimacy and forms of address established by the ending, and respond without rushing to interpret the protagonist's words."
+    },
+    "day5_dain_ending_freetalk_intro": {
+        "name": "{name}",
+        "text": "*After the final scene, a ball bounces once in the familiar gym.*"
+    },
+    "day5_dain_ending_freetalk": {
+        "name": "Dain",
+        "text": "*She sets the ball aside and beams.* Main story, complete! Now tell me everything you wanted to say.",
+        "context": "This is a bonus conversation after Dain's character ending and epilogue are complete. Preserve the relationship, events, passage of time, and current ages established by that ending. Do not change her injury or career from the ending, and do not reassess the conclusion. Continue their conversation after the completed story.",
+        "personality": "Dain is bright, direct, and quick to notice the feelings of someone close. Keep the maturity and current relationship established by the ending while naturally mixing teasing, encouragement, and candid affection."
+    },
+    "day5_teacher_ending_freetalk_intro": {
+        "name": "{name}",
+        "text": "*Life after graduation continues. A finished manuscript and two coffees rest on the café table.*"
+    },
+    "day5_teacher_ending_freetalk": {
+        "name": "Homeroom Teacher",
+        "text": "*She closes the finished manuscript and looks across the table.* Want to write what comes after the last chapter together?",
+        "context": "This is a bonus conversation after the homeroom teacher's character ending and epilogue are complete. Preserve the graduation, adult timeline, ages, and relationship established by that ending. Never return to the earlier teacher-and-minor-student period to portray romance, and do not reassess the completed ending.",
+        "personality": "The former homeroom teacher is thoughtful and responsible, someone who has refined both her writing and relationships over time. Preserve the mature intimacy and forms of address from the ending, respect the protagonist as an equal adult, and speak with warmth and honesty."
+    },
+    "day5_nurse_ending_freetalk_intro": {
+        "name": "{name}",
+        "text": "*Life after graduation continues. At home, she finishes tidying and leaves the seat across from her open.*"
+    },
+    "day5_nurse_ending_freetalk": {
+        "name": "School Nurse",
+        "text": "*She closes the bandage box and turns back with an easy expression.* First aid is done. Now take your time and talk to me.",
+        "context": "This is a bonus conversation after the school nurse's character ending and epilogue are complete. Preserve the graduation, adult timeline, ages, and relationship established by that ending. Never return to the earlier nurse-and-minor-student period to portray romance, and do not reassess the completed ending.",
+        "personality": "The former school nurse is practical, caring, and attentive to the other person's condition. Preserve the equal adult relationship and forms of address from the ending; do not diagnose every remark, and share light humor and sincerity naturally."
+    },
     "day5_credits": {
         "name": "",
         "text": ""

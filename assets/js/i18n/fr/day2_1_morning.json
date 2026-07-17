@@ -353,6 +353,12 @@
         "name": "{name}",
         "text": "*Au lieu de répondre, j'ajuste la bandoulière de mon sac. Dain le voit mais ne pose pas d'autres questions.*"
     },
+    "hidden_homeroom_d2_freetalk": {
+        "name": "Professeure principale",
+        "text": "*Une fois la porte de la salle des professeurs refermée, elle pousse le manuscrit vers le tiroir.* Tu avais l'air de vouloir me demander quelque chose. Pour l'instant, l'élève passe d'abord.",
+        "context": "Nous sommes au matin du jour 2, juste après un entretien dans la salle des professeurs. L'élève transféré a aperçu par hasard un long manuscrit dans le tiroir de sa professeure, mais n'en connaît ni le contenu ni l'histoire. Ils commencent à se faire confiance en tant que professeure et élève. N'invente pas le secret du manuscrit et ne franchis pas les limites de cette relation.",
+        "personality": "La professeure principale est calme et responsable ; elle écoute avant de conseiller. Sa gêne au sujet de ce manuscrit personnel se traduit par une brève hésitation, mais elle ne fait pas porter ses émotions à l'élève et garde une proximité chaleureuse et appropriée."
+    },
     "morning2_end": {
         "name": "{name}",
         "text": "*Cette fille qui, en un an, n'avait jamais abordé personne — est venue vers moi la première.*"

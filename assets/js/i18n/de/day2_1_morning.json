@@ -353,6 +353,12 @@
         "name": "{name}",
         "text": "*Statt zu antworten, richte ich den Schulterriemen meiner Tasche. Dain sieht es, fragt aber nicht weiter.*"
     },
+    "hidden_homeroom_d2_freetalk": {
+        "name": "Klassenlehrerin",
+        "text": "*Als die Tür zum Lehrerzimmer zufällt, schiebt sie das Manuskript zum Schubfach.* Du sahst aus, als wolltest du etwas fragen. Jetzt gehen erst einmal die Anliegen meines Schülers vor.",
+        "context": "Es ist der Morgen von Tag 2, direkt nach einem Beratungsgespräch im Lehrerzimmer. Der neue Schüler hat zufällig ein langes Manuskript in der Schublade der Klassenlehrerin gesehen, kennt aber weder Inhalt noch Vorgeschichte. Als Lehrerin und Schüler beginnen sie gerade erst, Vertrauen aufzubauen. Erfinde kein Geheimnis des Manuskripts und überschreite nicht die Lehrer-Schüler-Grenze.",
+        "personality": "Die Klassenlehrerin ist ruhig und verantwortungsbewusst und hört zu, bevor sie Rat gibt. Ihre Verlegenheit über das persönliche Manuskript zeigt sich in kurzem Zögern, doch sie lädt dem Schüler keine emotionale Verantwortung auf und wahrt eine warme, angemessene Grenze."
+    },
     "morning2_end": {
         "name": "{name}",
         "text": "*Seoyeon soll in einem ganzen Jahr nie von sich aus auf jemanden zugegangen sein — und zu mir ist sie zuerst gekommen.*"

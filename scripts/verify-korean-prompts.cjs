@@ -425,6 +425,7 @@ function verifyLatestUserCanon(context) {
 function verifyWiringAndScenePrompts() {
     const configSource = read('assets/js/modules/config.js');
     const freeTalkSource = read('assets/js/modules/FreeTalkSystem.js');
+    const gameEngineSource = read('assets/js/modules/GameEngine.js');
     assert(/"담임"\s*:\s*"Teacher"/.test(configSource), 'CHAR_NAME_MAP is missing the 담임 alias');
     assert(/"보건"\s*:\s*"Nurse"/.test(configSource), 'CHAR_NAME_MAP is missing the 보건 alias');
     assert(freeTalkSource.includes('const gameContext = this.getGameContext(charKey, lang);'),
@@ -435,12 +436,30 @@ function verifyWiringAndScenePrompts() {
         'chat history does not save the canonical character key');
     assert(freeTalkSource.includes('[scene.personality, scene.extra_guideline].filter(Boolean).join("\\n")'),
         'scene personality is not passed into the system prompt');
+    assert(freeTalkSource.includes('scene.isRemote === true || remoteKeywords.some'),
+        'explicit remote free-talk scenes are not honored');
+    assert(freeTalkSource.includes('async skipFreeTalk()')
+        && freeTalkSource.includes('this._invalidateFreeTalkContext();')
+        && freeTalkSource.includes('this.uiManager.chatContainer.style.display = \'none\';'),
+        'free-talk scenes cannot be ended early through the shared skip flow');
+    assert(freeTalkSource.includes('window.logCupidError(error, {')
+        && freeTalkSource.includes("'freetalk_request_failed'")
+        && freeTalkSource.includes("'freetalk_http_error'"),
+        'free-talk request failures are not reported to the D1 error pipeline');
+    assert(gameEngineSource.includes("'freetalk_start_failed'"),
+        'free-talk startup errors are not reported to the D1 error pipeline');
 
     const sceneFiles = [
         'assets/js/i18n/ko/day1_2_lunch.json',
         'assets/js/i18n/ko/day1_3_afterschool.json',
+        'assets/js/i18n/ko/day2_1_morning.json',
+        'assets/js/i18n/ko/day2_3_afterschool.json',
+        'assets/js/i18n/ko/day2_4_night.json',
         'assets/js/i18n/ko/day3_1_morning.json',
-        'assets/js/i18n/ko/day3_3_afterschool.json'
+        'assets/js/i18n/ko/day3_3_afterschool.json',
+        'assets/js/i18n/ko/day4_1_morning.json',
+        'assets/js/i18n/ko/day4_4_night.json',
+        'assets/js/i18n/ko/day5_4_night.json'
     ];
     const scenePrompts = [];
     function collect(value) {
@@ -450,10 +469,62 @@ function verifyWiringAndScenePrompts() {
         Object.values(value).forEach(collect);
     }
     sceneFiles.forEach(file => collect(JSON.parse(read(file))));
-    assert(scenePrompts.length === 10, `expected 10 active Korean scene prompts, found ${scenePrompts.length}`);
+    assert(scenePrompts.length === 25, `expected 25 active Korean scene prompts, found ${scenePrompts.length}`);
     const joined = scenePrompts.join('\n');
     for (const stalePhrase of ['Day 1', 'Day 3', '톤:', '티키타카', '쿨뷰티', '신비주의 문학소녀', '체육계']) {
         assert(!joined.includes(stalePhrase), `active Korean scene prompt still contains: ${stalePhrase}`);
+    }
+
+    const scenarioContext = { SCENARIO: {}, console };
+    vm.createContext(scenarioContext);
+    const scenarioDir = path.join(ROOT, 'assets/js/scenario');
+    for (const file of fs.readdirSync(scenarioDir).filter(name => /^day.*\.js$/.test(name)).sort()) {
+        vm.runInContext(read(`assets/js/scenario/${file}`), scenarioContext, {
+            filename: `assets/js/scenario/${file}`
+        });
+    }
+    for (let day = 1; day <= 5; day += 1) {
+        const freeTalks = Object.entries(scenarioContext.SCENARIO[day] || {})
+            .filter(([, scene]) => scene?.type === 'free_talk');
+        assert(freeTalks.length === 5, `day ${day} must contain exactly 5 free-talk scenes, found ${freeTalks.length}`);
+        const expectedTurns = day === 5 ? 5 : 3;
+        for (const [id, scene] of freeTalks) {
+            assert(scene.maxTurns === expectedTurns,
+                `${id} must use maxTurns ${expectedTurns}, found ${scene.maxTurns}`);
+        }
+    }
+    for (const id of ['night2_dain_freetalk', 'night2_seo_freetalk', 'night2_yuna_freetalk']) {
+        assert(scenarioContext.SCENARIO[2][id].isRemote === true, `${id} must be explicitly remote`);
+    }
+
+    const day5 = scenarioContext.SCENARIO[5];
+    const directEndingIntros = {
+        perfect_epilogue_4_seo: 'day5_seo_ending_freetalk_intro',
+        perfect_epilogue_4_yuna: 'day5_yuna_ending_freetalk_intro',
+        perfect_epilogue_4_dain: 'day5_dain_ending_freetalk_intro',
+        good_5_cg_seo: 'day5_seo_ending_freetalk_intro',
+        good_5_cg_yuna: 'day5_yuna_ending_freetalk_intro',
+        good_5_cg_dain: 'day5_dain_ending_freetalk_intro',
+        hidden_perfect_homeroom_ep4: 'day5_teacher_ending_freetalk_intro',
+        hidden_true_homeroom_ending_title: 'day5_teacher_ending_freetalk_intro',
+        hidden_good_homeroom_ending_title: 'day5_teacher_ending_freetalk_intro',
+        hidden_perfect_nurse_ep4: 'day5_nurse_ending_freetalk_intro',
+        hidden_true_nurse_ending_title: 'day5_nurse_ending_freetalk_intro',
+        hidden_good_nurse_ending_title: 'day5_nurse_ending_freetalk_intro'
+    };
+    for (const [endingId, introId] of Object.entries(directEndingIntros)) {
+        assert(day5[endingId]?.next === introId,
+            `${endingId} must enter its resolved character bonus through ${introId}`);
+    }
+    for (const endingId of ['true_epilogue_7', 'bitter_epilogue_3']) {
+        assert(day5[endingId]?.next === 'day5_main_ending_freetalk_router',
+            `${endingId} must route to the resolved main character bonus`);
+    }
+    for (const character of ['seo', 'yuna', 'dain', 'teacher', 'nurse']) {
+        const introId = `day5_${character}_ending_freetalk_intro`;
+        const freeTalkId = `day5_${character}_ending_freetalk`;
+        assert(day5[introId]?.next === freeTalkId, `${introId} does not enter ${freeTalkId}`);
+        assert(day5[freeTalkId]?.next === 'day5_credits', `${freeTalkId} must continue to credits`);
     }
 }
 
@@ -631,4 +702,4 @@ verifyRequestOwnershipGuards();
 verifyCacheKeyWiring();
 verifyTypingOwnerIsolation(context);
 
-console.log(`Verified Korean runtime prompts for ${CHARACTERS.length} characters, 10 scene prompts, loader order, memories, user agency, and stale-turn ownership.`);
+console.log(`Verified Korean runtime prompts for ${CHARACTERS.length} characters, 25 scene prompts, daily turn limits, loader order, memories, user agency, and stale-turn ownership.`);

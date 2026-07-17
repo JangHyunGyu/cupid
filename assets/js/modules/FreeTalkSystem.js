@@ -579,7 +579,7 @@ class FreeTalkSystem {
 
         // 통신 매체 판단
         const remoteKeywords = ["연락", "메시지", "전화", "톡", "문자", "Contact", "Message", "Call", "Text", "전송"];
-        const isRemote = remoteKeywords.some(k =>
+        const isRemote = scene.isRemote === true || remoteKeywords.some(k =>
             (scene.context && scene.context.includes(k)) ||
             (scene.buttonText && scene.buttonText.includes(k)) ||
             (scene.text && scene.text.includes(k))

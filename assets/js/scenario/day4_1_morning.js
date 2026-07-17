@@ -433,6 +433,14 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/cafe.png",
         "backgroundVariant": "warm",
         "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d4_freetalk"
+    },
+    "hidden_homeroom_d4_freetalk": {
+        "background": "assets/images/background/cafe.png",
+        "backgroundVariant": "warm",
+        "character": "assets/images/characters/teacher_normal.png",
+        "type": "free_talk",
+        "maxTurns": 3,
         "next": "hidden_nurse_d4_check"
     },
     "hidden_homeroom_d4_decline": {
@@ -780,11 +788,18 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "hidden_nurse_d4_meal_4_b": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "morning4_end"
+        "next": "hidden_nurse_d4_freetalk"
     },
     "hidden_nurse_d4_pass": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d4_freetalk"
+    },
+    "hidden_nurse_d4_freetalk": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "type": "free_talk",
+        "maxTurns": 3,
         "next": "morning4_end"
     },
     "morning4_end": {

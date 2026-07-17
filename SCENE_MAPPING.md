@@ -238,7 +238,6 @@
 | night_msg_seo_1 ~ 5 | room_my.png | seyoun_normal (0.35) | 서연 메시지 |
 | night_msg_dain_1 ~ 4 | room_my.png | dain_normal (0.35) | 다인 메시지 |
 | night_msg_yuna_1 ~ 3 | room_my.png | yuna_normal (0.35) | 유나 메시지 |
-| night_seo/dain/yuna_freetalk | room_my.png | 캐릭터 | **프리토킹, night: true** |
 
 ---
 
@@ -262,6 +261,7 @@
 |--------|------|--------|-----------|
 | hidden_homeroom_d2_1 ~ 2 | school_hallway.png | teacher_normal | 복도에서 호출 |
 | hidden_homeroom_d2_3 ~ 12 | teacher_office.png | teacher_normal | 교무실 상담, 서랍 원고 목격 |
+| hidden_homeroom_d2_freetalk | teacher_office.png | teacher_normal | **프리토킹, maxTurns: 3** |
 
 **조건**: `homeroom_day1 = true`
 **플래그**: `homeroom_day2 = true`, `noticed_manuscript = true`
@@ -314,17 +314,17 @@
 |--------|------|--------|-----------|
 | after2_nurse_transition | school_hallway.png | 없음 | 보건실로 이동 |
 | hidden_nurse_d2_1 ~ 9 | nurse_room.png | nurse_normal/shy | 밴드, 선택지 2개 (+10/+3, +7/+0) |
-| hidden_nurse_d2_freetalk | nurse_room.png | nurse_normal | **프리토킹**, sunset:true |
+| hidden_nurse_d2_freetalk | nurse_room.png | nurse_normal | **프리토킹, maxTurns: 3**, sunset:true |
 
 **조건**: `nurse_day1 = true`
 **플래그**: `nurse_day2 = true`
 
 ### 방과후 3지 선택
-| 루트 | 배경 | 캐릭터 | 장면 설명 | 프리토킹 |
-|------|------|--------|-----------|----------|
-| 다인 | gym.png → street.png | dain_active/laugh/shy | 체육관 배구 → 떡볶이 | after2_dain_freetalk: **street.png** (떡볶이집) |
-| 서연 | teacher_office.png | seyoun_normal/laugh/shy/shy2 | 학생회실 노을, 어깨 마사지 | (없음) |
-| 유나 | yuna_hideout.png | yuna_normal/shy/smile | 별관 이어폰 공유 | (없음) |
+| 루트 | 배경 | 캐릭터 | 장면 설명 |
+|------|------|--------|-----------|
+| 다인 | gym.png → street.png | dain_active/laugh/shy | 체육관 배구 → 떡볶이 |
+| 서연 | teacher_office.png | seyoun_normal/laugh/shy/shy2 | 학생회실 노을, 어깨 마사지 |
+| 유나 | yuna_hideout.png | yuna_normal/shy/smile | 별관 이어폰 공유 |
 
 ### 민수 직설 (공통)
 | 씬 ID | 배경 | 캐릭터 | 장면 설명 |
@@ -341,7 +341,7 @@
 | night2_start ~ msg | room_my.png | 없음 | **night: true** |
 | night2_msg_*_specific | room_my.png | 캐릭터(0.35) | 방과후 선택 캐릭터 전용 메시지 |
 | night2_choice | room_my.png | 없음 | 답장 3지선다: 다인(+5)/서연(+3)/유나(+5) |
-| night2_reply_*_freetalk | room_my.png | 캐릭터(0.35) | **프리토킹**, night:true |
+| night2_dain/seo/yuna_freetalk | room_my.png | 캐릭터(0.35) | **원격 프리토킹, maxTurns: 3**, night:true |
 
 ### 히든 루트 밤 메시지
 | 루트 | 씬 ID | 캐릭터 |
@@ -518,7 +518,7 @@
 |--------|------|--------|-----------|
 | hidden_homeroom_d4_1 ~ 5 | **street.png** | teacher_normal | 학교 근처 거리 조우 |
 | hidden_homeroom_d4_cafe_1 ~ 6 | **cafe.png** | teacher_normal/shy | 카페 대화, 원고 |
-| hidden_homeroom_d4_freetalk | cafe.png | teacher_normal | **프리토킹** |
+| hidden_homeroom_d4_freetalk | cafe.png | teacher_normal | **프리토킹, maxTurns: 3** |
 
 **조건**: `homeroom_day3 = true` + `discovered_manuscript = true`
 **플래그**: `homeroom_day4 = true`
@@ -529,20 +529,10 @@
 | hidden_nurse_d4_1 ~ 6 | nurse_room.png | nurse_normal/shy | 보건실 서류 정리 |
 | hidden_nurse_d4_meal_walk ~ 1 | store.png | nurse_normal | 편의점 이동 |
 | hidden_nurse_d4_meal_1b ~ 4 | nurse_room.png | nurse_normal | 보건실 식사 |
-| hidden_nurse_d4_freetalk | nurse_room.png | nurse_normal | **프리토킹** |
+| hidden_nurse_d4_freetalk | nurse_room.png | nurse_normal | **프리토킹, maxTurns: 3** |
 
 **조건**: `nurse_day3 = true`
 **플래그**: `nurse_day4 = true`
-
-### 히든: 보건 Day4 주말 아침 전용
-| 씬 ID | 배경 | 캐릭터 | 장면 설명 |
-|--------|------|--------|-----------|
-| hidden_nurse_d4_morning_1 ~ 13 | nurse_room.png | nurse_normal/shy | 해금 후 추가 이벤트 |
-| hidden_nurse_d4_morning_freetalk | nurse_room.png | nurse_normal | **프리토킹** |
-
-**조건**: `nurse_route_unlocked = true` + `nurse_day4 = true`
-
----
 
 ## Day 4 점심 (day4_2_lunch) - 데이트
 
@@ -550,7 +540,6 @@
 | 씬 ID | 배경 | 캐릭터 | 장면 설명 |
 |--------|------|--------|-----------|
 | date_seo_1 ~ succulent_3 | park.png | seyoun_normal/shy/shy2/laugh | 공원, 다육이 선물 |
-| date_seo_freetalk | park.png | seyoun_normal | **프리토킹** |
 | date_seo_end_b | street.png | 없음 | 거리 전환 |
 
 ### 유나 데이트 — 카페 → 서점
@@ -558,7 +547,6 @@
 |--------|------|--------|-----------|
 | date_yuna_1 ~ 2 | cafe.png | yuna_normal | 카페에서 시작 |
 | date_yuna_bookstore ~ oldbook_4 | **bookstore.png** | yuna_normal/smile/shy | 서점 이동, 헌책방 |
-| date_yuna_freetalk | bookstore.png | yuna_normal | **프리토킹** |
 
 ### 다인 데이트 — 체육관 → 오락실 → 거리
 | 씬 ID | 배경 | 캐릭터 | 장면 설명 |
@@ -566,7 +554,6 @@
 | date_dain_1 ~ 4 | gym.png | dain_laugh/normal | 체육관 시작 |
 | date_dain_to_arcade ~ rhythm_3 | **arcade.png** | dain_laugh/normal | 오락실 리듬게임 |
 | date_dain_knee ~ shop_3 | **street.png** | dain_laugh/normal | 거리 스포츠용품점 |
-| date_dain_freetalk | street.png | dain_normal | **프리토킹** |
 
 ### 공통: 민수 독려 + 고백 직전
 | 씬 ID | 배경 | 캐릭터 | 장면 설명 |
@@ -611,6 +598,7 @@
 | wall_seo_hug/pinky | park.png | seyoun_cry | 안아줌/새끼손가락 선택 |
 | wall_seo_after_line ~ 5 | park.png | seyoun_sad → normal | `day4_seoyeon_wall_broken` |
 | wall_seo_skin70/60 | park.png | seyoun_shy | 스킨십 (호감도 70+/60+) |
+| wall_seo_freetalk | park.png | seyoun_normal | **프리토킹, maxTurns: 3** |
 | **wall_seo_glimpse** | school_back → **gym.png** → school_back | **dain_sad** | 다인 목격 (체육관 창문) |
 
 ### 다인 Wall — 멈춰버린 꿈
@@ -623,6 +611,7 @@
 | wall_dain_cry_2 ~ 6 | gym.png | dain_sad | `day4_dain_tears` |
 | wall_dain_farewell | gym.png | dain_normal | `day4_dain_wall_broken` |
 | wall_dain_skin70/60 | gym.png | dain_shy | 스킨십 |
+| wall_dain_freetalk | gym.png | dain_normal | **프리토킹, maxTurns: 3** |
 | **wall_dain_glimpse** | school_back → **yuna_hideout.png** → school_back | **yuna_sad/normal** | 유나 목격 (별관 창문) |
 
 ### 유나 Wall — 편지, 벽 너머
@@ -634,6 +623,7 @@
 | wall_yuna_choice | yuna_hideout.png | yuna_sad | 나는선배아냐/대역이어도/선배대신 |
 | wall_yuna_moved_1 ~ 5 | yuna_hideout.png | yuna_normal → shy | `day4_yuna_wall_broken` |
 | wall_yuna_skin70/60 | yuna_hideout.png | yuna_shy | 스킨십 |
+| wall_yuna_freetalk | yuna_hideout.png | yuna_normal | **프리토킹, maxTurns: 3** |
 | **wall_yuna_glimpse** | **school_back.png** | seyoun_normal | 서연 목격 (교문 가로등) |
 
 ### 고백 보류 시 후회 메시지
@@ -664,7 +654,6 @@
 |--------|------|--------|-----------|
 | hidden_homeroom_d5_check | school_hallway.png | teacher_normal | 복도 호출 |
 | hidden_homeroom_d5_1 ~ 8 | room_school.png | teacher_normal/shy/smile | 빈 교실, 7년 원고 전달 |
-| hidden_homeroom_d5_freetalk | room_school.png | teacher_normal | **프리토킹** |
 
 **조건**: `homeroom_day4 = true`
 **플래그**: `homeroom_day5 = true`
@@ -674,7 +663,6 @@
 |--------|------|--------|-----------|
 | hidden_nurse_d5_check | school_hallway.png | 없음 | 복도 호출 |
 | hidden_nurse_d5_1 ~ 7 | school_hallway.png | nurse_normal/shy | 밴드 메시지: "카페에서 만나자" |
-| hidden_nurse_d5_freetalk | school_hallway.png | nurse_normal | **프리토킹** |
 
 **조건**: `nurse_day4 = true`
 **플래그**: `nurse_day5 = true`
@@ -683,11 +671,11 @@
 
 ## Day 5 점심 (day5_2_lunch) - 추억 투어
 
-| 루트 | 배경 | 캐릭터 | 프리토킹 배경 | 매핑 근거 |
-|------|------|--------|--------------|-----------|
-| 서연 | school.png | seyoun_normal/laugh/shy | **top_school.png** | 교문 첫 만남 → 옥상(상징 장소)으로 이동 |
-| 유나 | yuna_hideout.png | yuna_normal/smile/shy | yuna_hideout.png | 별관 비밀공간 회상 |
-| 다인 | store.png | dain_normal/laugh/sad/shy | store.png | 매점 첫 만남 회상 장소 |
+| 루트 | 배경 | 캐릭터 | 장면 설명 |
+|------|------|--------|-----------|
+| 서연 | school.png | seyoun_normal/laugh/shy | 교문 첫 만남 회상 |
+| 유나 | yuna_hideout.png | yuna_normal/smile/shy | 별관 비밀공간 회상 |
+| 다인 | store.png | dain_normal/laugh/sad/shy | 매점 첫 만남 회상 |
 
 ---
 
@@ -743,6 +731,18 @@
 | 14 | `day5_confessed` + 호감 <50 | **CONFESS FAIL END** |
 | 15 | `day4_waited` | **FRIEND END** |
 | 16 | 기본값 | **ALONE END** |
+
+### 캐릭터 엔딩 보상 프리토킹
+
+성공한 캐릭터 엔딩의 본편·에필로그·엔딩 CG가 모두 끝난 뒤, 크레딧 전에 해당 캐릭터의 보상 프리토킹으로 진입한다. 중간 종료할 수 있으며 실패/친구/다중연애/혼자 엔딩에는 진입하지 않는다.
+
+| 씬 ID | 캐릭터 | 배경 | 설정 |
+|--------|----------|------|------|
+| day5_seo_ending_freetalk | 서연 | top_school.png | **maxTurns: 5** |
+| day5_yuna_ending_freetalk | 유나 | yuna_hideout.png | **maxTurns: 5** |
+| day5_dain_ending_freetalk | 다인 | gym.png | **maxTurns: 5** |
+| day5_teacher_ending_freetalk | 담임 | cafe.png | **maxTurns: 5**, 졸업 후 성인 시점 유지 |
+| day5_nurse_ending_freetalk | 보건 | nurse_house.png | **maxTurns: 5**, 졸업 후 성인 시점 유지 |
 
 ---
 
@@ -945,28 +945,17 @@
 
 ### 프리토킹 전체 배치표
 
-| Day | 캐릭터 | 장소 | 비고 |
-|-----|--------|------|------|
-| D1 점심 | 서연/다인/유나 | top_school / store / library_old | 선택 루트 |
-| D1 방과후 | 담임 | school_hallway | 히든 |
-| D1 방과후 | 보건 | nurse_room | 히든 |
-| D1 밤 | 호감 최고 캐릭터 | room_my (night) | 원격 |
-| D2 방과후 | 보건 | nurse_room (sunset) | 히든 |
-| D2 방과후 | 다인 | street (떡볶이집) | 선택 루트 |
-| D2 밤 | 서연/다인/유나 | room_my (night) | 답장 선택 |
-| D3 아침 | 담임 | room_school | 히든 |
-| D3 아침 | 보건 | nurse_room | 히든 |
-| D3 방과후 | 서연 | teacher_office (sunset) | 루트 확정 |
-| D3 방과후 | 유나 | yuna_hideout (sunset) | 루트 확정 |
-| D3 방과후 | 다인 | gym (sunset) | 루트 확정 |
-| D4 아침 | 담임 | cafe | 히든 |
-| D4 아침 | 보건 | nurse_room | 히든 |
-| D4 아침 | 보건(주말) | nurse_room | 히든(해금) |
-| D4 점심 | 서연 | park | 데이트 |
-| D4 점심 | 유나 | bookstore | 데이트 |
-| D4 점심 | 다인 | street | 데이트 |
-| D5 아침 | 담임 | room_school | 히든 |
-| D5 아침 | 보건 | school_hallway | 히든 |
-| D5 점심 | 서연 | top_school | 투어 |
-| D5 점심 | 유나 | yuna_hideout | 투어 |
-| D5 점심 | 다인 | store | 투어 |
+| Day | 캐릭터 | 장소/상황 | maxTurns |
+|-----|--------|-----------|----------|
+| D1 | 서연/다인/유나 | 점심 선택 루트 | 3 |
+| D1 | 담임/보건 | 방과후 히든 루트 | 3 |
+| D2 | 담임 | 아침 교무실 상담 직후 | 3 |
+| D2 | 보건 | 방과후 치료 직후 | 3 |
+| D2 | 서연/다인/유나 중 답장 상대 | 밤 원격 메시지 | 3 |
+| D3 | 담임/보건 | 아침 히든 루트 | 3 |
+| D3 | 서연/다인/유나 | 방과후 루트 확정 | 3 |
+| D4 | 담임/보건 | 아침 히든 루트 | 3 |
+| D4 | 서연/다인/유나 | 밤 Wall 장면 직후 | 3 |
+| D5 | 확정 엔딩 캐릭터 1명 | 엔딩·에필로그 후 보상 대화 | 5 |
+
+모든 프리토킹은 턴 제한 전에 중간 종료할 수 있다. 각 Day에는 캐릭터 5명의 장면이 루트별로 준비되며, 한 회차에서는 현재 선택·히든·엔딩 조건에 맞는 장면만 진입한다.

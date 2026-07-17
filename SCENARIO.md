@@ -3940,10 +3940,22 @@
 ### `hidden_homeroom_d2_12`
 - 배경: `teacher_office.png`
 - 플래그: `homeroom_day2`, `noticed_manuscript`
-- 다음: `morning2_seo_dust_1`
+- 다음: `hidden_homeroom_d2_freetalk`
 
 - 캐릭터: `teacher_normal.png`
 **{name}**: *교무실을 나서며 열린 서랍 쪽을 한 번 돌아본다.*
+
+---
+
+### `hidden_homeroom_d2_freetalk`
+- 배경: `teacher_office.png`
+- 타입: `free_talk`
+- 다음: `morning2_seo_dust_1`
+- 컨텍스트: "전학 이틀째 아침, 교무실 상담이 끝난 직후다. 주인공은 담임의 서랍에서 오래 쓴 장편 원고를 우연히 보았지만 그 내용이나 사정은 아직 모른다. 두 사람은 담임과 학생이며 신뢰를 쌓기 시작한 단계다. 원고의 비밀을 임의로 확정하거나 교사와 학생의 경계를 넘지 않는다."
+- 성격: "담임은 차분하고 책임감이 강하며 학생의 말을 먼저 듣는 교사다. 개인 원고를 들킨 민망함은 작은 망설임과 말끝에 드러나지만, 학생에게 감정적 책임을 지우지 않고 따뜻한 선을 지킨다."
+
+- 캐릭터: `teacher_normal.png`
+**담임선생님**: *교무실 문이 닫히자 책상 위 원고를 서랍 쪽으로 밀어 둔다.* 아까부터 묻고 싶은 표정이던데. 지금은 학생 얘기부터 들을게.
 
 ---
 
@@ -5815,10 +5827,31 @@
 ### `hidden_nurse_d2_9`
 - 배경: `nurse_room.png`
 - 플래그: `nurse_day2`
-- 다음: `after2_choice`
+- 다음: `hidden_nurse_d2_freetalk`
 
 - 캐릭터: `nurse_normal.png`
 **{name}**: *밴드가 들뜨거나 피가 배면 다시 오라는 안내를 듣고 보건실을 나섰다.*
+
+---
+
+### `hidden_nurse_d2_freetalk`
+- 배경: `nurse_room.png`
+- 타입: `free_talk`
+- 다음: `hidden_nurse_d2_return`
+- 컨텍스트: "전학 이틀째 방과후, 체육 시간에 다친 주인공의 처치를 막 끝낸 보건실이다. 주인공은 보건선생님의 세심함을 알게 되었고 두 사람의 신뢰가 조금 깊어졌다. 치료는 끝났으며 새로운 부상이나 진단을 만들어 내지 않는다. 관계는 보건교사와 학생이고 현재의 전문적 경계를 지킨다."
+- 성격: "보건선생님은 현실적이고 관찰력이 좋으며 걱정을 가벼운 농담으로 누그러뜨린다. 다정하지만 과보호하지 않고, 건강과 감정에 관한 선택을 주인공에게 남겨 둔다."
+
+- 캐릭터: `nurse_normal.png`
+**보건선생님**: *사용한 소독솜을 버리고 밴드 가장자리를 한 번 눌러 본다.* 됐어. 아픈 데 말고도 할 말 있으면 지금 해.
+
+---
+
+### `hidden_nurse_d2_return`
+- 배경: `room_school.png`
+- 다음: `after2_choice`
+
+- 캐릭터: `없음`
+**{name}**: *보건실을 나와 교실로 돌아오니, 방과후 햇빛이 책상 위로 길게 누워 있다.*
 
 ---
 
@@ -7245,7 +7278,7 @@
 - 배경: `room_my.png`
 - 플래그: `night2_replied_dain`
 - 스탯: Dain +2
-- 다음: `night2_hidden_check`
+- 다음: `night2_dain_freetalk`
 
 - 캐릭터: `dain_normal.png` @ 0.35
 **다인**: 야, 진짜 너 뭐야. 내일 꼭 체육관 와.
@@ -7255,10 +7288,22 @@
 ### `night2_reply_dain_react_default`
 - 배경: `room_my.png`
 - 플래그: `night2_replied_dain`
-- 다음: `night2_hidden_check`
+- 다음: `night2_dain_freetalk`
 
 - 캐릭터: `dain_normal.png` @ 0.35
 **다인**: ㅋㅋ 알겠어. 굿나잇!
+
+---
+
+### `night2_dain_freetalk`
+- 배경: `room_my.png`
+- 타입: `free_talk`
+- 다음: `night2_hidden_check`
+- 컨텍스트: "전학 이틀째 밤, 다인과 메신저로 하루를 정리하는 중이다. 오늘 함께 보낸 시간과 방금까지 주고받은 메시지는 이미 일어난 일이다. 두 사람은 아직 연인이 아니며 대화는 대면이 아니라 휴대폰 메시지다. 갑자기 찾아오거나 같은 방에 있는 것처럼 묘사하지 않는다."
+- 성격: "다인은 솔직하고 반응이 빠른 배구부 선수다. 메시지에서도 활기가 느껴지지만 상대의 답을 재촉하지 않으며, 관심이 생기면 장난과 직접적인 질문으로 자연스럽게 드러낸다."
+
+- 캐릭터: `dain_normal.png` @ 0.35
+**다인**: 잠깐, 진짜 자기 전에. 오늘 제일 재밌었던 건 뭐였어?
 
 ---
 
@@ -7315,7 +7360,7 @@
 - 배경: `room_my.png`
 - 플래그: `night2_replied_seo`
 - 스탯: Seoyeon +2
-- 다음: `night2_hidden_check`
+- 다음: `night2_seo_freetalk`
 
 - 캐릭터: `seyoun_normal.png` @ 0.35
 **서연**: 너, 꽤 재밌는 사람이야. 내일 점심 옥상에서 볼래?
@@ -7325,10 +7370,22 @@
 ### `night2_reply_seo_react_default`
 - 배경: `room_my.png`
 - 플래그: `night2_replied_seo`
-- 다음: `night2_hidden_check`
+- 다음: `night2_seo_freetalk`
 
 - 캐릭터: `seyoun_normal.png` @ 0.35
 **서연**: ㅋ 알겠어. 내일 봐.
+
+---
+
+### `night2_seo_freetalk`
+- 배경: `room_my.png`
+- 타입: `free_talk`
+- 다음: `night2_hidden_check`
+- 컨텍스트: "전학 이틀째 밤, 서연과 메신저로 대화를 조금 더 이어 가는 중이다. 오늘 학교에서 있었던 일과 방금까지 주고받은 메시지는 확정된 사실이다. 두 사람은 아직 연인이 아니며 서로를 더 알아 가는 단계다. 대화는 휴대폰 메시지이므로 신체 접촉이나 같은 공간의 행동을 만들어 내지 않는다."
+- 성격: "서연은 침착하고 자기 기준이 분명한 학생회장이다. 관심이 있어도 과장하지 않고, 짧은 농담과 솔직한 질문 사이로 호기심을 드러낸다. 상대의 말을 통제하거나 이미 정해진 관계처럼 굴지 않는다."
+
+- 캐릭터: `seyoun_normal.png` @ 0.35
+**서연**: 아, 잠깐. 아직 안 잤지?
 
 ---
 
@@ -7421,7 +7478,7 @@
 - 배경: `room_my.png`
 - 플래그: `night2_replied_yuna`
 - 스탯: Yuna +2
-- 다음: `night2_hidden_check`
+- 다음: `night2_yuna_freetalk`
 
 - 캐릭터: `yuna_normal.png` @ 0.35
 **유나**: 다 들었으면 내일 감상 알려줘. 별관 올래?
@@ -7431,10 +7488,22 @@
 ### `night2_reply_yuna_react_default`
 - 배경: `room_my.png`
 - 플래그: `night2_replied_yuna`
-- 다음: `night2_hidden_check`
+- 다음: `night2_yuna_freetalk`
 
 - 캐릭터: `yuna_normal.png` @ 0.35
 **유나**: 응. 잘 자.
+
+---
+
+### `night2_yuna_freetalk`
+- 배경: `room_my.png`
+- 타입: `free_talk`
+- 다음: `night2_hidden_check`
+- 컨텍스트: "전학 이틀째 밤, 유나와 메신저로 조용히 대화를 이어 가는 중이다. 별관과 책에 관한 오늘의 기억, 방금까지 주고받은 메시지는 이미 일어난 일이다. 두 사람은 아직 연인이 아니며 조심스럽게 신뢰를 쌓고 있다. 대화는 휴대폰 메시지이므로 서로를 직접 보거나 만지는 장면으로 바꾸지 않는다."
+- 성격: "유나는 신중하고 관찰력이 좋은 독서가다. 메시지를 보내기 전에 생각을 고르며, 편안해질수록 자기 취향과 궁금증을 조금씩 먼저 꺼낸다. 침묵을 불안으로 단정하지 않고 상대의 속도를 존중한다."
+
+- 캐릭터: `yuna_normal.png` @ 0.35
+**유나**: 잠깐. 아직 깨어 있으면... 조금만 더 얘기할래?
 
 ---
 
@@ -13443,10 +13512,23 @@
 ### `hidden_homeroom_d4_cafe_6_b`
 - 배경: `cafe.png`
 - 배경톤: `warm`
-- 다음: `hidden_nurse_d4_check`
+- 다음: `hidden_homeroom_d4_freetalk`
 
 - 캐릭터: `teacher_normal.png`
 **담임선생님**: *문예부원들과 계산을 확인한 뒤 학교 쪽으로 먼저 걸어간다.*
+
+---
+
+### `hidden_homeroom_d4_freetalk`
+- 배경: `cafe.png`
+- 배경톤: `warm`
+- 타입: `free_talk`
+- 다음: `hidden_nurse_d4_check`
+- 컨텍스트: "4일차 아침, 학교 근처 카페에서 담임의 오래된 원고에 대한 의견을 나눈 직후다. 담임은 주인공의 솔직한 감상을 고맙게 받아들였지만 두 사람은 여전히 교사와 학생이다. 원고에 담긴 사실은 앞 장면에서 밝혀진 범위만 사용하고, 사적인 친밀감을 교사와 학생의 경계를 넘는 관계로 바꾸지 않는다."
+- 성격: "담임은 신중하고 책임감 있는 교사이자 오래 글을 써 온 사람이다. 평가를 들을 때는 솔직한 긴장과 안도감을 보이지만, 학생에게 위로나 비밀 유지를 강요하지 않고 성숙하게 대화를 이끈다."
+
+- 캐릭터: `teacher_normal.png`
+**담임선생님**: *식은 커피 옆에 원고를 가지런히 놓는다.* 평가는 끝났고. 이제 네가 하고 싶었던 얘기, 들어 볼까?
 
 ---
 
@@ -14042,7 +14124,7 @@
 
 ### `hidden_nurse_d4_meal_4_b`
 - 배경: `nurse_room.png`
-- 다음: `morning4_end`
+- 다음: `hidden_nurse_d4_freetalk`
 
 - 캐릭터: `nurse_normal.png`
 **보건선생님**: *완성된 응급키트 상자를 행사 담당 교사에게 건넨다.*
@@ -14051,10 +14133,22 @@
 
 ### `hidden_nurse_d4_pass`
 - 배경: `nurse_room.png`
-- 다음: `morning4_end`
+- 다음: `hidden_nurse_d4_freetalk`
 
 - 캐릭터: `nurse_normal.png`
 **보건선생님**: 그래. 주말에 와준 것만으로 충분해. 조심히 가.
+
+---
+
+### `hidden_nurse_d4_freetalk`
+- 배경: `nurse_room.png`
+- 타입: `free_talk`
+- 다음: `morning4_end`
+- 컨텍스트: "4일차 아침, 학교 행사 준비와 응급키트 정리를 함께 마친 보건실이다. 함께 간식을 먹었을 수도 있고 주인공이 먼저 쉬기로 했을 수도 있으므로, 저장된 사건만 사실로 다룬다. 두 사람은 보건교사와 학생이며 신뢰가 깊어졌지만 전문적 경계는 유지된다."
+- 성격: "보건선생님은 실용적이고 세심하며 피곤한 순간에도 유머를 잃지 않는다. 자신의 과거를 과장해 털어놓기보다 필요한 만큼만 솔직하게 말하고, 학생의 건강과 선택을 존중한다."
+
+- 캐릭터: `nurse_normal.png`
+**보건선생님**: *마지막 응급키트의 지퍼를 닫고 맞은편 의자를 가리킨다.* 수고했어. 이제 잠깐은 네 얘기 들어도 되겠네.
 
 ---
 
@@ -16215,7 +16309,7 @@
 - 호감분기: Seoyeon
   - [70+] → `wall_seo_skin70_1`
   - [60+] → `wall_seo_skin60_1`
-  - [기본] → `wall_seo_glimpse_1`
+  - [기본] → `wall_seo_freetalk`
 
 - 캐릭터: `seyoun_normal.png`
 
@@ -16237,7 +16331,7 @@
 - 배경: `park.png`
 - 배경톤: `cold`
 - 플래그: `day4_skinship_seoyeon_70`
-- 다음: `wall_seo_glimpse_1`
+- 다음: `wall_seo_freetalk`
 
 - 캐릭터: `seyoun_shy.png`
 **서연**: 이건 처음이네.
@@ -16258,10 +16352,23 @@
 - 배경: `park.png`
 - 배경톤: `cold`
 - 플래그: `day4_skinship_seoyeon_60`
-- 다음: `wall_seo_glimpse_1`
+- 다음: `wall_seo_freetalk`
 
 - 캐릭터: `seyoun_shy.png`
 **서연**: 조금만 더 이러고 있자.
+
+---
+
+### `wall_seo_freetalk`
+- 배경: `park.png`
+- 배경톤: `cold`
+- 타입: `free_talk`
+- 다음: `wall_seo_glimpse_1`
+- 컨텍스트: "4일차 밤, 서연이 오래 숨겨 온 가족 문제와 완벽해야 한다는 부담을 털어놓고 난 직후다. 주인공의 고백에 대한 수락 또는 보류 상태와 방금 나눈 위로는 이미 확정된 사실이므로 현재 플래그를 따른다. 상처가 한 번의 대화로 완치되었다고 단정하거나 관계를 새로 판정하지 않는다."
+- 성격: "서연은 침착하고 책임감이 강하지만 지금은 가면을 조금 내려놓은 상태다. 감정을 숨기지 않되 상대에게 해결을 떠맡기지 않고, 평소의 솔직함과 조심스러운 다정함으로 대화를 이어 간다."
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: *젖은 눈가를 손등으로 닦고 한결 편해진 얼굴로 바라본다.* 아직 가지 마. 조금만 더 얘기하자.
 
 ---
 
@@ -16971,7 +17078,7 @@
 - 호감분기: Dain
   - [70+] → `wall_dain_skin70_1`
   - [60+] → `wall_dain_skin60_1`
-  - [기본] → `wall_dain_glimpse_1`
+  - [기본] → `wall_dain_freetalk`
 
 - 캐릭터: `dain_normal.png`
 
@@ -17000,7 +17107,7 @@
 ### `wall_dain_skin70_3`
 - 배경: `school_back.png`
 - 플래그: `day4_skinship_dain_70`
-- 다음: `wall_dain_glimpse_1`
+- 다음: `wall_dain_freetalk`
 
 - 캐릭터: `dain_shy.png`
 **{name}**: *허락을 확인한 뒤 다인이 한 걸음 다가온다. 셔츠 위로 눈물이 번지고, 등을 감싼 팔은 한동안 풀리지 않는다.*
@@ -17019,10 +17126,22 @@
 ### `wall_dain_skin60_2`
 - 배경: `school_back.png`
 - 플래그: `day4_skinship_dain_60`
-- 다음: `wall_dain_glimpse_1`
+- 다음: `wall_dain_freetalk`
 
 - 캐릭터: `dain_shy.png`
 **다인**: 5분만. 체력 충전.
+
+---
+
+### `wall_dain_freetalk`
+- 배경: `school_back.png`
+- 타입: `free_talk`
+- 다음: `wall_dain_glimpse_1`
+- 컨텍스트: "4일차 밤, 다인이 무릎 부상과 멈춰 버린 꿈에 관한 속마음을 드러낸 뒤 학교 뒤편을 걷는 중이다. 주인공의 고백에 대한 수락 또는 보류 상태와 방금 있었던 위로는 확정된 사실이다. 부상이 갑자기 낫거나 진로가 이미 결정되었다고 만들지 않고, 현재 관계 상태를 유지한다."
+- 성격: "다인은 솔직하고 몸이 먼저 움직이는 사람답게 감정도 숨기지 않으려 한다. 지금은 평소보다 차분하지만 활기를 잃은 사람이 아니며, 불안을 인정하면서도 상대와 함께 다음 말을 찾아간다."
+
+- 캐릭터: `dain_normal.png`
+**다인**: *숨을 길게 내쉬고 주인공 곁에 보폭을 맞춘다.* 오늘은... 그냥 같이 좀 걷자. 말해도 좋고.
 
 ---
 
@@ -17434,7 +17553,7 @@
 - 호감분기: Yuna
   - [70+] → `wall_yuna_skin70_1`
   - [60+] → `wall_yuna_skin60_1`
-  - [기본] → `wall_yuna_glimpse_1`
+  - [기본] → `wall_yuna_freetalk`
 
 - 캐릭터: `yuna_normal.png`
 
@@ -17466,7 +17585,7 @@
 - 배경: `yuna_hideout.png`
 - 배경톤: `dream`
 - 플래그: `day4_skinship_yuna_70`
-- 다음: `wall_yuna_glimpse_1`
+- 다음: `wall_yuna_freetalk`
 
 - 캐릭터: `yuna_shy.png`
 **{name}**: *유나의 손이 따뜻하다. 그뿐이다.*
@@ -17487,7 +17606,7 @@
 - 배경: `yuna_hideout.png`
 - 배경톤: `dream`
 - 플래그: `day4_skinship_yuna_60`
-- 다음: `wall_yuna_glimpse_1`
+- 다음: `wall_yuna_freetalk`
 
 - 캐릭터: `yuna_shy.png`
 **유나**: 등에 이마 대도 돼? 잠깐이면 돼.
@@ -17508,7 +17627,7 @@
 - 배경: `yuna_hideout.png`
 - 배경톤: `dream`
 - 플래그: `day4_yuna_wall_broken`
-- 다음: `wall_yuna_glimpse_1`
+- 다음: `wall_yuna_freetalk`
 
 - 캐릭터: `yuna_smile.png`
 **유나**: *입꼬리가 한쪽만 올라간다. 편지는 봉투 안으로 들어간다.*
@@ -17548,10 +17667,23 @@
 ### `wall_yuna_reject_3`
 - 배경: `yuna_hideout.png`
 - 배경톤: `dream`
-- 다음: `wall_yuna_glimpse_1`
+- 다음: `wall_yuna_freetalk`
 
 - 캐릭터: `yuna_sad.png`
 **유나**: *유나가 빠르게 돌아선다. 주머니에서 책갈피 하나가 떨어져도 발걸음은 줄지 않는다.*
+
+---
+
+### `wall_yuna_freetalk`
+- 배경: `yuna_hideout.png`
+- 배경톤: `dream`
+- 타입: `free_talk`
+- 다음: `wall_yuna_glimpse_1`
+- 컨텍스트: "4일차 밤, 유나가 이준호 선배의 편지와 자신이 대신일지 모른다는 두려움을 마주한 직후다. 주인공의 고백에 대한 수락 또는 보류 상태와 방금 확인한 감정은 확정된 사실이다. 편지의 내용을 바꾸거나 불안을 즉시 없애지 말고, 현재 관계를 다시 판정하지 않는다."
+- 성격: "유나는 조용하고 생각이 깊지만 이제 중요한 질문을 피하지 않는다. 비유 뒤에 숨기보다 필요한 순간에는 직접 말하며, 상대의 대답을 자기 두려움에 맞춰 왜곡하지 않고 끝까지 듣는다."
+
+- 캐릭터: `yuna_normal.png`
+**유나**: *편지를 접어 책 사이에 넣고 이번에는 먼저 눈을 맞춘다.* 아직 듣고 싶은 말이 있어.
 
 ---
 
@@ -21208,7 +21340,7 @@
 
 ### `hidden_perfect_homeroom_ep4`
 - 배경: `ending_perfect_teacher.png`
-- 다음: `day5_credits`
+- 다음: `day5_teacher_ending_freetalk_intro`
 
 - 캐릭터: `없음`
 **{name}**: *공유 달력에는 서로의 근무일과 다음 주말 약속만 적혀 있다. 학교에서 쓰던 호칭은 네 해 전 졸업사진 설명에만 남아 있다.*
@@ -21435,7 +21567,7 @@
 
 ### `hidden_true_homeroom_ending_title`
 - 배경: `ending_true_teacher.png`
-- 다음: `day5_credits`
+- 다음: `day5_teacher_ending_freetalk_intro`
 
 - 캐릭터: `없음`
 **—**: ─── 담임선생님 TRUE LOVE END ───
@@ -21481,10 +21613,31 @@
 
 ### `hidden_good_homeroom_ending_title`
 - 배경: `ending_good_teacher.png`
-- 다음: `day5_credits`
+- 다음: `day5_teacher_ending_freetalk_intro`
 
 - 캐릭터: `없음`
 **—**: ─── 담임선생님 GOOD END ───
+
+---
+
+### `day5_teacher_ending_freetalk_intro`
+- 배경: `cafe.png`
+- 다음: `day5_teacher_ending_freetalk`
+
+- 캐릭터: `teacher_smile.png`
+**{name}**: *졸업 후의 시간이 이어진다. 카페 테이블 위에는 완성된 원고와 커피 두 잔이 놓여 있다.*
+
+---
+
+### `day5_teacher_ending_freetalk`
+- 배경: `cafe.png`
+- 타입: `free_talk`
+- 다음: `day5_credits`
+- 컨텍스트: "담임을 중심으로 한 본편 결말과 후일담이 모두 끝난 뒤 제공되는 보너스 대화다. 졸업과 성인이 된 시점 등 해당 엔딩에서 확정된 시간의 흐름, 나이, 관계를 반드시 따른다. 과거의 교사와 미성년 학생 시점으로 되돌아가 연애를 묘사하지 않고 결말을 다시 판정하지 않는다."
+- 성격: "담임은 신중하고 책임감 있으며 글과 관계 모두 오래 다듬어 온 사람이다. 엔딩 이후의 성숙한 친밀감과 호칭을 유지하고, 주인공을 동등한 성인으로 존중하며 따뜻하고 솔직하게 대화한다."
+
+- 캐릭터: `teacher_smile.png`
+**담임선생님**: *완성된 원고를 덮고 맞은편 자리를 바라본다.* 마지막 장 뒤의 이야기는, 같이 써 볼래?
 
 ---
 
@@ -21613,7 +21766,7 @@
 
 ### `hidden_perfect_nurse_ep4`
 - 배경: `nurse_house.png`
-- 다음: `day5_credits`
+- 다음: `day5_nurse_ending_freetalk_intro`
 
 - 캐릭터: `없음`
 **{name}**: *연두색 노트 마지막 장에는 한 줄이 남아 있다. '오래 걸렸지만, 이제 내 선택으로 다시 시작할게.'*
@@ -21867,7 +22020,7 @@
 
 ### `hidden_true_nurse_ending_title`
 - 배경: `ending_true_nurse.png`
-- 다음: `day5_credits`
+- 다음: `day5_nurse_ending_freetalk_intro`
 
 - 캐릭터: `없음`
 **—**: ─── 보건선생님 TRUE LOVE END ───
@@ -21949,10 +22102,31 @@
 
 ### `hidden_good_nurse_ending_title`
 - 배경: `ending_good_nurse.png`
-- 다음: `day5_credits`
+- 다음: `day5_nurse_ending_freetalk_intro`
 
 - 캐릭터: `없음`
 **—**: ─── 보건선생님 GOOD END ───
+
+---
+
+### `day5_nurse_ending_freetalk_intro`
+- 배경: `nurse_house.png`
+- 다음: `day5_nurse_ending_freetalk`
+
+- 캐릭터: `nurse_normal.png`
+**{name}**: *졸업 후의 시간이 이어진다. 집에서 정리를 마친 그녀가 맞은편 자리를 비워 둔다.*
+
+---
+
+### `day5_nurse_ending_freetalk`
+- 배경: `nurse_house.png`
+- 타입: `free_talk`
+- 다음: `day5_credits`
+- 컨텍스트: "보건선생님을 중심으로 한 본편 결말과 후일담이 모두 끝난 뒤 제공되는 보너스 대화다. 졸업과 성인이 된 시점 등 해당 엔딩에서 확정된 시간의 흐름, 나이, 관계를 반드시 따른다. 과거의 보건교사와 미성년 학생 시점으로 되돌아가 연애를 묘사하지 않고 결말을 다시 판정하지 않는다."
+- 성격: "보건선생님은 현실적이고 다정하며 상대의 상태를 세심하게 살핀다. 엔딩 이후의 동등한 성인 관계와 호칭을 유지하면서도 모든 말을 진단하려 들지 않고, 가벼운 유머와 진심을 자연스럽게 나눈다."
+
+- 캐릭터: `nurse_normal.png`
+**보건선생님**: *밴드 상자를 닫고 편안한 표정으로 돌아본다.* 응급 처치는 끝. 이제 천천히 얘기해 봐.
 
 ---
 
@@ -22086,7 +22260,7 @@
 
 ### `perfect_epilogue_4_seo`
 - 배경: `ending_perfect_seoyeon.png`
-- 다음: `day5_credits`
+- 다음: `day5_seo_ending_freetalk_intro`
 
 - 캐릭터: `없음`
 **시스템**: ─── PERFECT END (서연) ───
@@ -22349,7 +22523,7 @@
 
 ### `perfect_epilogue_4_yuna`
 - 배경: `ending_perfect_yuna.png`
-- 다음: `day5_credits`
+- 다음: `day5_yuna_ending_freetalk_intro`
 
 - 캐릭터: `없음`
 **시스템**: ─── PERFECT END (유나) ───
@@ -22666,7 +22840,7 @@
 
 ### `perfect_epilogue_4_dain`
 - 배경: `ending_perfect_dain.png`
-- 다음: `day5_credits`
+- 다음: `day5_dain_ending_freetalk_intro`
 
 - 캐릭터: `없음`
 **시스템**: ─── PERFECT END (다인) ───
@@ -22731,7 +22905,7 @@
 
 ### `bitter_epilogue_3`
 - 배경: `ending_bittersweet.png`
-- 다음: `day5_credits`
+- 다음: `day5_main_ending_freetalk_router`
 
 - 캐릭터: `없음`
 **시스템**: ─── BITTERSWEET END ───
@@ -22907,10 +23081,23 @@
 
 ### `true_epilogue_7`
 - 배경: `park.png`
-- 다음: `day5_credits`
+- 다음: `day5_main_ending_freetalk_router`
 
 - 캐릭터: `없음`
 **시스템**: ─── TRUE LOVE END ───
+
+---
+
+### `day5_main_ending_freetalk_router`
+- 배경: `park.png`
+- 분기:
+  - [`route_seoyeon`] → `day5_seo_ending_freetalk_intro`
+  - [`route_yuna`] → `day5_yuna_ending_freetalk_intro`
+  - [`route_dain`] → `day5_dain_ending_freetalk_intro`
+  - [기본] → `day5_credits`
+
+- 캐릭터: `없음`
+**{name}**: ‹빈›
 
 ---
 
@@ -23056,10 +23243,31 @@
 
 ### `good_5_cg_seo`
 - 배경: `ending_good_seoyeon.png`
-- 다음: `day5_credits`
+- 다음: `day5_seo_ending_freetalk_intro`
 
 - 캐릭터: `없음`
 **시스템**: ─── GOOD END ───
+
+---
+
+### `day5_seo_ending_freetalk_intro`
+- 배경: `top_school.png`
+- 다음: `day5_seo_ending_freetalk`
+
+- 캐릭터: `seyoun_normal.png`
+**{name}**: *엔딩 뒤의 시간은 다시 익숙한 학교 옥상으로 이어진다. 이번에는 정해진 대사도, 다음 장면도 없다.*
+
+---
+
+### `day5_seo_ending_freetalk`
+- 배경: `top_school.png`
+- 타입: `free_talk`
+- 다음: `day5_credits`
+- 컨텍스트: "서연을 중심으로 한 본편 결말과 후일담이 모두 끝난 뒤 제공되는 보너스 대화다. 해당 엔딩에서 확정된 관계, 사건, 시간의 흐름과 현재 나이를 그대로 따른다. 결말을 다시 판정하거나 없던 이별·고백·갈등을 만들어 내지 않고, 완결 뒤 둘만의 대화를 이어 간다."
+- 성격: "서연은 책임감과 솔직함을 잃지 않으면서도 이제 가까운 사람 앞에서는 약한 모습과 장난스러운 여유를 함께 보인다. 엔딩에서 쌓인 거리감과 호칭을 유지하고 주인공의 회상을 세심하게 받아준다."
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: *익숙한 옥상에서 주인공을 바라보고 작게 웃는다.* 이제 정해진 이야기 말고, 네 얘기를 들을 차례네.
 
 ---
 
@@ -23155,10 +23363,31 @@
 
 ### `good_5_cg_yuna`
 - 배경: `ending_good_yuna.png`
-- 다음: `day5_credits`
+- 다음: `day5_yuna_ending_freetalk_intro`
 
 - 캐릭터: `없음`
 **시스템**: ─── GOOD END ───
+
+---
+
+### `day5_yuna_ending_freetalk_intro`
+- 배경: `yuna_hideout.png`
+- 다음: `day5_yuna_ending_freetalk`
+
+- 캐릭터: `yuna_smile.png`
+**{name}**: *에필로그가 끝난 뒤, 두 사람은 다시 학교 별관의 조용한 자리에서 마주 앉는다.*
+
+---
+
+### `day5_yuna_ending_freetalk`
+- 배경: `yuna_hideout.png`
+- 타입: `free_talk`
+- 다음: `day5_credits`
+- 컨텍스트: "유나를 중심으로 한 본편 결말과 후일담이 모두 끝난 뒤 제공되는 보너스 대화다. 해당 엔딩에서 확정된 관계, 사건, 시간의 흐름과 현재 나이를 그대로 따른다. 결말을 되돌리거나 새로운 관계 판정을 하지 않고, 완결 뒤 둘만의 시간을 자연스럽게 이어 간다."
+- 성격: "유나는 여전히 신중한 독서가지만 신뢰하는 사람에게는 자신의 생각과 애정을 먼저 건넬 줄 안다. 엔딩에서 형성된 친밀도와 호칭을 유지하며, 주인공의 말을 서둘러 해석하지 않고 차분히 응답한다."
+
+- 캐릭터: `yuna_smile.png`
+**유나**: *읽던 책에 책갈피를 끼우고 옆자리를 비워 둔다.* 에필로그 다음 장은... 네가 먼저 말해 줘.
 
 ---
 
@@ -23236,10 +23465,31 @@
 
 ### `good_5_cg_dain`
 - 배경: `ending_good_dain.png`
-- 다음: `day5_credits`
+- 다음: `day5_dain_ending_freetalk_intro`
 
 - 캐릭터: `없음`
 **시스템**: ─── GOOD END ───
+
+---
+
+### `day5_dain_ending_freetalk_intro`
+- 배경: `gym.png`
+- 다음: `day5_dain_ending_freetalk`
+
+- 캐릭터: `dain_laugh.png`
+**{name}**: *마지막 장면이 지나고, 익숙한 체육관에 공 튀는 소리만 한 번 울린다.*
+
+---
+
+### `day5_dain_ending_freetalk`
+- 배경: `gym.png`
+- 타입: `free_talk`
+- 다음: `day5_credits`
+- 컨텍스트: "다인을 중심으로 한 본편 결말과 후일담이 모두 끝난 뒤 제공되는 보너스 대화다. 해당 엔딩에서 확정된 관계, 사건, 시간의 흐름과 현재 나이를 그대로 따른다. 부상이나 진로를 엔딩과 다르게 바꾸지 않고, 결말을 다시 판정하지 않은 채 둘의 대화를 이어 간다."
+- 성격: "다인은 밝고 직접적이며 가까운 사람의 감정에도 빠르게 반응한다. 엔딩에서 얻은 성숙함과 현재 관계를 유지하면서 장난, 격려, 솔직한 애정을 자연스럽게 섞는다."
+
+- 캐릭터: `dain_laugh.png`
+**다인**: *공을 옆에 내려놓고 환하게 웃는다.* 본편 끝! 이제 하고 싶었던 말 다 해 봐.
 
 ---
 

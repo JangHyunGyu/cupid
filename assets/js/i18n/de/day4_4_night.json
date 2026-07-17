@@ -833,6 +833,24 @@
         "name": "Schulkrankenschwester",
         "text": "*Hinweis des Krankenzimmers* Wenn du ein weiteres Gespräch brauchst, buche es morgen vor Beginn des Schulfests. Du kannst die Klassenleitung oder die Beratungsstelle wählen."
     },
+    "wall_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*Sie wischt sich mit dem Handrücken über die feuchten Augen und wirkt ruhiger.* Geh noch nicht. Lass uns noch etwas reden.",
+        "context": "Es ist die Nacht von Tag 4, unmittelbar nachdem Seoyeon über den Familienkonflikt und den Druck, perfekt sein zu müssen, gesprochen hat. Ob der Protagonist ihr Geständnis angenommen oder vertagt hat, und der geteilte Trost sind gespeicherte Tatsachen. Erkläre ihren Schmerz nicht durch ein Gespräch für geheilt und bewerte die Beziehung nicht neu.",
+        "personality": "Seoyeon ist gefasst und verantwortungsbewusst, hat ihre Deckung aber vorerst gesenkt. Sie spricht ehrlich, ohne den anderen für ihre Heilung verantwortlich zu machen, und verbindet ihre gewohnte Direktheit mit neuer, vorsichtiger Zärtlichkeit."
+    },
+    "wall_dain_freetalk": {
+        "name": "Dain",
+        "text": "*Sie atmet langsam aus und passt sich dem Schritt des Protagonisten an.* Heute Abend ... gehen wir einfach zusammen. Reden können wir auch.",
+        "context": "Es ist die Nacht von Tag 4, nachdem Dain die Wahrheit über ihre Knieverletzung und den dadurch ins Stocken geratenen Traum erzählt hat. Ob der Protagonist ihr Geständnis angenommen oder vertagt hat, und der geteilte Trost stehen fest. Heile die Verletzung nicht plötzlich, entscheide nicht ihre Zukunft und ändere nicht den aktuellen Beziehungsstatus.",
+        "personality": "Dain ist offen und körperlich und versucht, auch ihre Gefühle nicht länger zu verbergen. Sie ist stiller als sonst, ohne ihren Schwung zu verlieren, erkennt Unsicherheit an und findet gemeinsam mit dem Protagonisten die nächsten Worte."
+    },
+    "wall_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Sie faltet den Brief in ihr Buch und sucht diesmal zuerst den Blick des Protagonisten.* Etwas möchte ich noch hören.",
+        "context": "Es ist die Nacht von Tag 4, direkt nachdem Yuna sich Junhos Brief und ihrer Angst, nur Ersatz für jemand anderen zu sein, gestellt hat. Ob der Protagonist ihr Geständnis angenommen oder vertagt hat, und die bestätigten Gefühle sind gespeicherte Tatsachen. Schreibe den Brief nicht um, lösche ihre Angst nicht sofort und bewerte die Beziehung nicht neu.",
+        "personality": "Yuna ist still und nachdenklich, weicht wichtigen Fragen aber nicht mehr aus. Statt sich hinter Metaphern zu verstecken, spricht sie wenn nötig direkt und hört zu, ohne die Antwort passend zu ihren Ängsten umzudeuten."
+    },
     "night_nurse_msg_4": {
         "name": "Schulkrankenschwester",
         "text": "*Hinweis des Krankenzimmers* Spät am Abend musst du nicht antworten. Wenn es dringend ist, informiere zuerst deine Eltern oder einen Erwachsenen in deiner Nähe."

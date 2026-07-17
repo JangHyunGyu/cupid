@@ -118,6 +118,18 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "setFlags": ["nurse_day2"],
+        "next": "hidden_nurse_d2_freetalk"
+    },
+    "hidden_nurse_d2_freetalk": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "type": "free_talk",
+        "maxTurns": 3,
+        "next": "hidden_nurse_d2_return"
+    },
+    "hidden_nurse_d2_return": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
         "next": "after2_choice"
     },
     "after2_choice": {

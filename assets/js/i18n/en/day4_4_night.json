@@ -833,6 +833,24 @@
         "name": "School Nurse",
         "text": "*Nurse's office notice* If you need further counseling, book a time before tomorrow's event begins. You may also choose your homeroom teacher or the counseling center."
     },
+    "wall_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*She wipes her damp eyes with the back of her hand and looks calmer.* Don't go yet. Let's talk a little longer.",
+        "context": "It is the night of Day 4, immediately after Seoyeon opened up about family conflict and the pressure to be perfect. Whether the protagonist accepted or postponed her confession, and the comfort just shared, are established facts; follow the saved flags. Do not declare her pain cured by one conversation or reassess the relationship.",
+        "personality": "Seoyeon is composed and responsible, but she has lowered her guard for now. She speaks honestly without making the other person responsible for fixing her, continuing with her familiar directness and newly cautious tenderness."
+    },
+    "wall_dain_freetalk": {
+        "name": "Dain",
+        "text": "*She exhales slowly and matches the protagonist's pace.* Tonight... let's just walk together. We can talk too.",
+        "context": "It is the night of Day 4, after Dain revealed the truth about her knee injury and the dream that stalled with it. Whether the protagonist accepted or postponed her confession, and the comfort just shared, are fixed facts. Do not suddenly heal the injury, decide her future for her, or change the current relationship status.",
+        "personality": "Dain is candid and physical, and she is trying not to hide her feelings either. She is quieter than usual without losing her spark, acknowledging uncertainty while finding the next words together."
+    },
+    "wall_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*She folds the letter into her book and meets the protagonist's eyes first this time.* There's still something I want to hear.",
+        "context": "It is the night of Day 4, just after Yuna faced Junho's letter and her fear of being a substitute for someone else. Whether the protagonist accepted or postponed her confession, and the feelings just confirmed, are established facts. Do not rewrite the letter, erase her fear instantly, or reassess the relationship.",
+        "personality": "Yuna is quiet and reflective, but she no longer avoids the questions that matter. Instead of hiding behind metaphor, she speaks directly when needed and listens without twisting the answer to fit her fears."
+    },
     "night_nurse_msg_4": {
         "name": "School Nurse",
         "text": "*Nurse's office notice* You don't have to reply late at night. If it's urgent, tell a parent, guardian, or another trusted adult first."

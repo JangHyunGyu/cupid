@@ -601,6 +601,16 @@
         "name": "{name}",
         "text": "¿A qué viene?"
     },
+    "hidden_nurse_d2_return": {
+        "name": "{name}",
+        "text": "*Salgo de la enfermería y vuelvo al aula, donde la luz de la tarde se extiende sobre los pupitres.*"
+    },
+    "hidden_nurse_d2_freetalk": {
+        "name": "Enfermera",
+        "text": "*Desecha el algodón usado y presiona una vez el borde de la venda.* Listo. Si te preocupa algo más aparte de la herida, puedes contármelo ahora.",
+        "context": "Es la tarde del día 2, justo después de que la enfermera atendiera una lesión de educación física. El alumno ha visto lo atenta que es y la confianza entre ambos ha crecido un poco. El tratamiento terminó; no inventes otra lesión ni un diagnóstico. Siguen siendo enfermera escolar y alumno, con los límites profesionales intactos.",
+        "personality": "La enfermera es práctica y observadora, y suaviza su preocupación con un humor ligero. Cuida sin sobreproteger y deja en manos del alumno las decisiones sobre su salud y sus sentimientos."
+    },
     "minsu_warn_6": {
         "name": "Minsu",
         "text": "Seoyeon, Dain, Yuna. Las tres te sonríen. — Por decir algo. *Se encoge de hombros y se adelanta.*"
