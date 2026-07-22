@@ -687,8 +687,8 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.94') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.94가 아님: ' + loaderVersion);
+    if (loaderVersion !== '2.9.95') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.95가 아님: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');
@@ -1749,11 +1749,11 @@ try {
     const activePromptSources = [promptsContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
-    if (promptVersion !== '2.7.30') {
-        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.30이 아님: ' + promptVersion);
+    if (promptVersion !== '2.7.31') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.31이 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.28') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.28이 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.29') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.29가 아님: ' + galleryPromptVersion);
     }
     const completedActionCanonSignals = [
         '완료형으로 쓴 행동은 성적 접촉도 이미 일어난 사건이며',
@@ -1790,10 +1790,10 @@ try {
             errors.push('[FREETALK_PROMPT] ' + label + ' 언어별 narration 2인칭 금지 계약 누락');
         }
         if (!source.includes('segments must contain at least one item with non-empty text')
-            || !source.includes('Never repeat the same sentence or segment twice in one reply')
             || !source.includes('segments에는 빈 문자열이 아닌 항목을 하나 이상 넣습니다')
-            || !source.includes('한 답변 안에서 같은 문장이나 segment를 두 번 쓰지 않고')) {
-            errors.push('[FREETALK_PROMPT] ' + label + ' 빈 구조 응답 및 정확 중복 생성 방지 계약 누락');
+            || source.includes('Never repeat the same sentence or segment twice in one reply')
+            || source.includes('한 답변 안에서 같은 문장이나 segment를 두 번 쓰지 않고')) {
+            errors.push('[FREETALK_PROMPT] ' + label + ' 빈 구조 방지 계약 또는 전역 문구 반복 금지 제거 상태 불일치');
         }
     }
     for (const removedSymbol of [

@@ -1101,7 +1101,7 @@ ${characterOutfitGuard}
 Scene: ${compactSceneMode} Treat the user's latest explicit in-world facts and completed outcomes as the current scene, and respond without recap or reversal; only the character-specific canon locks above remain exceptions. Stay inside ${aiCharName}; do not write the user's next action, dialogue, choice, or hidden thought. Let action and speech follow this character, affinity, and the immediate moment instead of a generic romance pattern. Visible text has no stat/math markers; numeric change only in affinity. Use natural present-day speech.
 ${thirdPersonAdultCameraRule}
 JSON only: {"segments":[{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":0}
-Types: narration/dialogue. segments must contain at least one item with non-empty text. A dialogue-only reply is normal; add narration only when a visible action or scene change matters. Never repeat the same sentence or segment twice in one reply, and do not reuse a recent reply's opening verbatim. Expressions: ${expressionNames}. No single text field.
+Types: narration/dialogue. segments must contain at least one item with non-empty text. A dialogue-only reply is normal; add narration only when a visible action or scene change matters. Expressions: ${expressionNames}. No single text field.
 ${compactStableGuidance}
 ===CACHE_BOUNDARY===
 ${compactLiveState}
@@ -1115,7 +1115,7 @@ ${characterOutfitGuard}
 장면: ${compactSceneMode} 사용자가 방금 확정해 쓴 극중 사실과 끝난 사건은 현재 장면으로 받고, 복창하거나 되돌리지 말고 ${aiCharName}의 반응으로 이어갑니다. 위의 캐릭터별 사실 잠금만 예외입니다. 사용자의 다음 행동·대사·선택·속마음은 대신 쓰지 마세요. 공용 로맨스 공식보다 이 인물의 성격, 현재 호감도와 바로 앞 순간에 맞춰 행동과 말을 고릅니다. 화면 문장에는 점수나 계산 표식을 쓰지 말고, 호감도 변화만 affinity에 숫자로 기록합니다. 자연스러운 현재 한국어를 쓰세요.
 ${thirdPersonAdultCameraRule}
 JSON만 출력: {"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":0}
-허용 type: narration, dialogue. segments에는 빈 문자열이 아닌 항목을 하나 이상 넣습니다. 대사만으로 자연스러우면 dialogue 하나면 충분하며, 눈에 보이는 행동이나 장면 변화가 있을 때만 narration을 더합니다. 한 답변 안에서 같은 문장이나 segment를 두 번 쓰지 않고 최근 답변의 도입 문장도 그대로 재사용하지 않습니다. 허용 expression: ${expressionNames}. text 단일 필드는 쓰지 마세요.
+허용 type: narration, dialogue. segments에는 빈 문자열이 아닌 항목을 하나 이상 넣습니다. 대사만으로 자연스러우면 dialogue 하나면 충분하며, 눈에 보이는 행동이나 장면 변화가 있을 때만 narration을 더합니다. 허용 expression: ${expressionNames}. text 단일 필드는 쓰지 마세요.
 ${compactStableGuidance}
 ===CACHE_BOUNDARY===
 ${compactLiveState}
@@ -1155,5 +1155,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 };
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.30';
+const PROMPT_VERSION = '2.7.31';
 window.PROMPT_VERSION = PROMPT_VERSION;
