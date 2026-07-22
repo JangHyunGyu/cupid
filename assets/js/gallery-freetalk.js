@@ -16,8 +16,28 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.27';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.28';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
+
+function buildGalleryThirdPersonAdultCameraRule(lang = 'ko') {
+    const rules = {
+        ko: `[3인칭 서술 카메라]
+모든 narration은 철저한 3인칭 관찰자 시점입니다. 캐릭터는 이름이나 관계 호칭, 사용자는 저장된 이름이나 '상대·그 사람'처럼 장면에 맞는 3인칭 표현으로 가리킵니다. '너는·네가·너를·너의·당신은·당신이·당신을·당신의' 같은 2인칭 표현은 실제 발화인 dialogue 안에서만 쓸 수 있고 narration에는 쓰지 않습니다. 서술자가 '나'가 되거나 사용자의 행동·감각·속마음을 대신 정하지 않습니다. 이미 성립한 성인끼리의 친밀 장면이 성행위로 들어가면 카메라는 몸을 피하지 않습니다. 지금 실제로 벌어지는 접촉과 몸의 움직임, 자세, 속도·압력·마찰, 젖음·열감·소리, 표정과 쾌감의 변화를 narration에서 구체적으로 보여주고, 성기·삽입·애액·정액·절정이 장면에 있다면 에둘러 지우거나 생략하지 않습니다. 실제 발화와 목소리로 난 소리만 dialogue에 둡니다. 이것은 고정 수위나 매 턴 체크리스트가 아니며, 이 캐릭터의 성격·관계·욕망·대화 매체와 현재 순간이 이끄는 만큼만 자연스럽게 농도를 올립니다.`,
+        en: `[Third-Person Narrative Camera]
+All narration uses a strict external third-person point of view. Refer to the character by name, relationship title, or a natural third-person pronoun; refer to the user by their saved name or as the other person/their partner. "You" and "your" may appear only inside actually spoken dialogue, never narration. Never make the narrator "I" or assign the user's action, sensation, or private thought. When an already-established adult intimate scene moves into a sex act, the camera does not look away. Show the contact and body movement actually occurring now—position, pace, pressure, friction, wetness, heat, sound, expression, and shifts in pleasure—with concrete physical specificity in narration. If genitals, penetration, arousal fluid, semen, or climax are present, do not blur them into euphemism or skip them. Keep only actually spoken words or voiced sounds in dialogue. Treat this as neither a fixed intensity target nor a per-turn checklist; let this character, relationship, desire, medium, and present moment decide when detail naturally grows more explicit.`,
+        es: `[Cámara narrativa en tercera persona]
+Toda narración usa una tercera persona externa estricta. Para el personaje usa su nombre, un título de relación o él/ella; para el usuario usa su nombre, «la otra persona» o «su pareja». «Tú», «te», «ti», «tu/tus» y «usted» solo pueden aparecer dentro de un dialogue realmente pronunciado, nunca en narration. El narrador no es «yo» ni decide las acciones, sensaciones o pensamientos privados del usuario. Cuando una escena íntima ya establecida entre adultos entra en un acto sexual, la cámara no aparta la mirada: narration muestra con precisión concreta el contacto, la posición, el ritmo, la presión, la fricción, la humedad, el calor, el sonido, la expresión y los cambios de placer. Si la escena incluye genitales, penetración, fluidos de excitación, semen u orgasmo, no los borra con eufemismos ni los omite. Solo las palabras o sonidos realmente vocalizados van en dialogue; la intensidad sigue al personaje y al momento, no una cuota fija.`,
+        ja: `[三人称の叙述カメラ]
+すべての narration は厳密な外部三人称で書きます。キャラクターは名前・関係上の呼称・彼／彼女で、ユーザーは保存名・相手・恋人など場面に合う三人称で示します。「あなた・君・お前」や二人称の所有表現は、実際に発声された dialogue の中だけで使い、narration には使いません。語り手を「私」にせず、ユーザーの次の行動・感覚・内心を決めません。成人同士ですでに成立した親密な場面が性行為に進んだら、カメラをそらさず、接触、体位、速度、圧力、摩擦、濡れ、熱、音、表情、快感の変化を narration で具体的に描きます。性器、挿入、愛液、精液、絶頂が場面にある場合は、婉曲表現で消したり省略したりしません。dialogue には実際の発話と声だけを置き、濃度は固定ノルマではなくキャラクターと現在の瞬間に従います。`,
+        fr: `[Caméra narrative à la troisième personne]
+Toute narration emploie une troisième personne externe stricte. Pour le personnage, utilisez son nom, un titre relationnel ou il/elle ; pour l'utilisateur, son nom, « l'autre personne » ou « son/sa partenaire ». « Tu », « te », « toi », « ton/ta/tes », « vous » et « votre » ne peuvent apparaître que dans un dialogue réellement prononcé, jamais dans narration. Le narrateur n'est pas « je » et ne décide ni les actions, ni les sensations, ni les pensées privées de l'utilisateur. Lorsqu'une scène intime déjà établie entre adultes passe à un acte sexuel, la caméra ne détourne pas le regard : narration montre concrètement le contact, la position, le rythme, la pression, le frottement, l'humidité, la chaleur, les sons, les expressions et l'évolution du plaisir. Si des organes génitaux, une pénétration, des fluides d'excitation, du sperme ou un orgasme sont présents, ne les effacez pas par des euphémismes et ne les omettez pas. Seules les paroles et vocalisations réellement émises vont dans dialogue ; l'intensité suit le personnage et le moment, pas un quota fixe.`,
+        de: `[Erzählkamera in der dritten Person]
+Jede narration steht in einer strikten äußeren dritten Person. Für die Figur werden Name, Beziehungsbezeichnung oder er/sie verwendet; für den Nutzer der gespeicherte Name, „die andere Person“ oder „der/die Partner/in“. „Du“, „dir“, „dich“, „dein“, „Sie“ und „Ihr“ dürfen nur in tatsächlich gesprochener dialogue stehen, niemals in narration. Der Erzähler ist kein „Ich“ und legt weder Handlungen noch Empfindungen oder private Gedanken des Nutzers fest. Wenn eine bereits etablierte intime Szene zwischen Erwachsenen in eine sexuelle Handlung übergeht, blendet die Kamera nicht aus: narration zeigt Kontakt, Position, Tempo, Druck, Reibung, Nässe, Wärme, Geräusche, Mimik und Lustveränderungen konkret. Wenn Genitalien, Penetration, Erregungsflüssigkeit, Sperma oder Orgasmus vorkommen, werden sie weder euphemistisch verwischt noch ausgelassen. Nur tatsächlich gesprochene Worte und Laute gehören in dialogue; die Intensität folgt Figur und Moment statt einer festen Quote.`,
+        pt: `[Câmera narrativa em terceira pessoa]
+Toda narration usa terceira pessoa externa estrita. Para a personagem, use o nome, um título de relação ou ele/ela; para o usuário, o nome salvo, “a outra pessoa” ou “o/a parceiro/a”. “Você”, “te”, “ti”, “seu/sua/seus/suas” só podem aparecer em dialogue realmente falado, nunca em narration. O narrador não é “eu” e não decide ações, sensações ou pensamentos privados do usuário. Quando uma cena íntima já estabelecida entre adultos entra em um ato sexual, a câmera não desvia: narration mostra de forma concreta contato, posição, ritmo, pressão, fricção, umidade, calor, sons, expressão e mudanças de prazer. Se genitais, penetração, fluidos de excitação, sêmen ou orgasmo estiverem presentes, não os apague com eufemismos nem os omita. Apenas palavras e sons realmente vocalizados ficam em dialogue; a intensidade segue a personagem e o momento, não uma cota fixa.`
+    };
+    return rules[lang] || rules.en;
+}
 
 function normalizeGalleryPromptBlockForCache(content) {
     if (!content) return '';
@@ -1968,11 +1988,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const compactGalleryState = isEn
             ? `State: user=${playerName || 'the user'}`
             : `현재 상태: 사용자=${playerName || '상대'}`;
-        const thirdPersonAdultCameraRule = isEn
-            ? `[Third-Person Narrative Camera]
-All narration uses a strict external third-person point of view. Prefer the character's name or relationship title as the natural subject; never use first-person narration or second-person "you" narration that assigns the user's action, sensation, or private thought. When an already-established adult intimate scene moves into a sex act, the camera does not look away. Show the contact and body movement actually occurring now—position, pace, pressure, friction, wetness, heat, sound, expression, and shifts in pleasure—with concrete physical specificity in narration. If genitals, penetration, arousal fluid, semen, or climax are present, do not blur them into euphemism or skip them. Keep only actually spoken words or voiced sounds in dialogue. Treat this as neither a fixed intensity target nor a per-turn checklist; let this character, relationship, desire, medium, and present moment decide when detail naturally grows more explicit.`
-            : `[3인칭 서술 카메라]
-모든 narration은 철저한 3인칭 관찰자 시점입니다. 인물의 이름이나 관계 호칭을 자연스럽게 주어로 삼고, 서술자가 '나'가 되거나 사용자에게 '너/당신은'으로 행동·감각·속마음을 써 주지 않습니다. 이미 성립한 성인끼리의 친밀 장면이 성행위로 들어가면 카메라는 몸을 피하지 않습니다. 지금 실제로 벌어지는 접촉과 몸의 움직임, 자세, 속도·압력·마찰, 젖음·열감·소리, 표정과 쾌감의 변화를 narration에서 구체적으로 보여주고, 성기·삽입·애액·정액·절정이 장면에 있다면 에둘러 지우거나 생략하지 않습니다. 실제 발화와 목소리로 난 소리만 dialogue에 둡니다. 이것은 고정 수위나 매 턴 체크리스트가 아니며, 이 캐릭터의 성격·관계·욕망·대화 매체와 현재 순간이 이끄는 만큼만 자연스럽게 농도를 올립니다.`;
+        const thirdPersonAdultCameraRule = buildGalleryThirdPersonAdultCameraRule(this.lang);
         if (isEn) {
             return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Cupid gallery free-talk: ${charName} with their post-graduation adult partner; not a current school scene.
 Character: ${personality}
@@ -1982,7 +1998,7 @@ Scene: Keep this 1:1; other people remain offstage except through ${charName}'s 
 ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}
 JSON only: {"segments":[{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal"}
-Types: narration/dialogue. A dialogue-only reply is normal; add narration only when a visible action or scene change matters. Expressions: ${compactGalleryExpressions}. No single text field.
+Types: narration/dialogue. segments must contain at least one item with non-empty text. A dialogue-only reply is normal; add narration only when a visible action or scene change matters. Never repeat the same sentence or segment twice in one reply, and do not reuse a recent reply's opening verbatim. Expressions: ${compactGalleryExpressions}. No single text field.
 ===CACHE_BOUNDARY===
 ${compactGalleryState}`;
         }
@@ -1994,7 +2010,7 @@ ${characterOutfitGuard}
 ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}
 JSON만 출력: {"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal"}
-허용 type: narration, dialogue. 대사만으로 자연스러우면 dialogue 하나면 충분하며, 눈에 보이는 행동이나 장면 변화가 있을 때만 narration을 더합니다. 허용 expression: ${compactGalleryExpressions}. text 단일 필드는 쓰지 마세요.
+허용 type: narration, dialogue. segments에는 빈 문자열이 아닌 항목을 하나 이상 넣습니다. 대사만으로 자연스러우면 dialogue 하나면 충분하며, 눈에 보이는 행동이나 장면 변화가 있을 때만 narration을 더합니다. 한 답변 안에서 같은 문장이나 segment를 두 번 쓰지 않고 최근 답변의 도입 문장도 그대로 재사용하지 않습니다. 허용 expression: ${compactGalleryExpressions}. text 단일 필드는 쓰지 마세요.
 ===CACHE_BOUNDARY===
 ${compactGalleryState}`;
     }
