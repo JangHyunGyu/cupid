@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.28';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.29';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function buildGalleryThirdPersonAdultCameraRule(lang = 'ko') {
@@ -1998,7 +1998,7 @@ Scene: Keep this 1:1; other people remain offstage except through ${charName}'s 
 ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}
 JSON only: {"segments":[{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal"}
-Types: narration/dialogue. segments must contain at least one item with non-empty text. A dialogue-only reply is normal; add narration only when a visible action or scene change matters. Never repeat the same sentence or segment twice in one reply, and do not reuse a recent reply's opening verbatim. Expressions: ${compactGalleryExpressions}. No single text field.
+Types: narration/dialogue. segments must contain at least one item with non-empty text. A dialogue-only reply is normal; add narration only when a visible action or scene change matters. Expressions: ${compactGalleryExpressions}. No single text field.
 ===CACHE_BOUNDARY===
 ${compactGalleryState}`;
         }
@@ -2010,7 +2010,7 @@ ${characterOutfitGuard}
 ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}
 JSON만 출력: {"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal"}
-허용 type: narration, dialogue. segments에는 빈 문자열이 아닌 항목을 하나 이상 넣습니다. 대사만으로 자연스러우면 dialogue 하나면 충분하며, 눈에 보이는 행동이나 장면 변화가 있을 때만 narration을 더합니다. 한 답변 안에서 같은 문장이나 segment를 두 번 쓰지 않고 최근 답변의 도입 문장도 그대로 재사용하지 않습니다. 허용 expression: ${compactGalleryExpressions}. text 단일 필드는 쓰지 마세요.
+허용 type: narration, dialogue. segments에는 빈 문자열이 아닌 항목을 하나 이상 넣습니다. 대사만으로 자연스러우면 dialogue 하나면 충분하며, 눈에 보이는 행동이나 장면 변화가 있을 때만 narration을 더합니다. 허용 expression: ${compactGalleryExpressions}. text 단일 필드는 쓰지 마세요.
 ===CACHE_BOUNDARY===
 ${compactGalleryState}`;
     }
