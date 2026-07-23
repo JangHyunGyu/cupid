@@ -405,6 +405,60 @@ for (const lang of languages) {
     }
 }
 
+const getQualityIssue = context.window.getCupidRoleplayQualityIssue;
+assert(typeof getQualityIssue === 'function', 'Cupid roleplay output validator is missing');
+
+const issueCodes = (parsed, lang, charKey) => getQualityIssue(parsed, { lang, charKey }).issues;
+assert(issueCodes({
+    text: 'Looking past you, Yuna closes the door.',
+    segments: [{ type: 'narration', text: 'Looking past you, Yuna closes the door.' }]
+}, 'en', 'Yuna').includes('narration_player_point_of_view'), 'English narration second person was not rejected');
+assert(!issueCodes({
+    text: 'Yuna says, "I was looking for you."',
+    segments: [{ type: 'dialogue', text: 'I was looking for you.' }]
+}, 'en', 'Yuna').includes('narration_player_point_of_view'), 'English dialogue second person was incorrectly rejected');
+assert(issueCodes({
+    text: 'Sie sieht dich ruhig an.',
+    segments: [{ type: 'narration', text: 'Sie sieht dich ruhig an.' }]
+}, 'de', 'Yuna').includes('narration_player_point_of_view'), 'German narration second person was not rejected');
+assert(issueCodes({
+    text: '유나가 나를 올려다보는 순간 숨을 멈춘다.',
+    segments: [{ type: 'narration', text: '유나가 나를 올려다보는 순간 숨을 멈춘다.' }]
+}, 'ko', 'Yuna').includes('narration_player_point_of_view'), 'Korean first-person player narration was not rejected');
+assert(issueCodes({
+    text: '어�너머로',
+    segments: [{ type: 'dialogue', text: '어�너머로' }]
+}, 'ko', 'Yuna').includes('unicode_replacement_character'), 'Unicode replacement character was not rejected');
+assert(issueCodes({
+    text: 'Ihr langes schwarzes Haar fällt über die Schulter.',
+    segments: [{ type: 'narration', text: 'Ihr langes schwarzes Haar fällt über die Schulter.' }]
+}, 'de', 'Yuna').includes('yuna_hair_canon'), 'Yuna black-hair hallucination was not rejected');
+assert(issueCodes({
+    text: 'Mit 36 erinnert sie sich an die erste Begegnung.',
+    segments: [{ type: 'narration', text: 'Mit 36 erinnert sie sich an die erste Begegnung.' }]
+}, 'de', 'Nurse').includes('nurse_age_canon'), 'Nurse age-36 hallucination was not rejected');
+assert(issueCodes({
+    text: 'Als sie sich kennenlernten, war der Nutzer siebzehn.',
+    segments: [{ type: 'narration', text: 'Als sie sich kennenlernten, war der Nutzer siebzehn.' }]
+}, 'de', 'Nurse').includes('nurse_user_age_canon'), 'Invented user age at the nurse meeting was not rejected');
+assert(issueCodes({
+    text: '彼女は学校の医者だった。',
+    segments: [{ type: 'narration', text: '彼女は学校の医者だった。' }]
+}, 'ja', 'Nurse').includes('nurse_profession_canon'), 'Japanese nurse-as-doctor hallucination was not rejected');
+assert(issueCodes({
+    text: 'Sie hält deinem stand.',
+    segments: [{ type: 'narration', text: 'Sie hält deinem stand.' }]
+}, 'de', 'Nurse').includes('german_blick_grammar'), 'Broken German standhalten phrase was not rejected');
+assert(!getQualityIssue({
+    text: 'Yuna hält dem Blick ihres Partners stand.',
+    segments: [{ type: 'narration', text: 'Yuna hält dem Blick ihres Partners stand.' }]
+}, { lang: 'de', charKey: 'Yuna' }).shouldRetry, 'Clean German third-person output was incorrectly rejected');
+assert(context.window.buildCupidRoleplayQualityRepairBlock(
+    { reason: 'narration_player_point_of_view' },
+    'de',
+    'Nurse'
+).includes('hält seinem/deinem Blick stand'), 'German repair block lost the correct standhalten form');
+
 verifyLocalizedFreeTalkInventory();
 
 console.log(`Verified ${languages.length} non-Korean languages across ${characters.length} characters, plus ${activeFreeTalkIds.length} active scene prompts in all 7 languages.`);

@@ -772,7 +772,8 @@ function getLanguageQualityGuard(lang) {
 - Never use "étudiant transféré" for this campus setting. Use contemporary spoken French and tutoiement in this established relationship unless the scene explicitly calls for formal distance; avoid English calques and repeating a term of endearment every line.`,
         de: `**[Language & Terminology Naturalness]**
 - The protagonist is newly arrived in this campus setting. In natural German dialogue, prefer "der Neue" or "neuer Schüler". Never use "Austauschschüler"; that means exchange student and is wrong for this premise.
-- Dialogue should sound like contemporary spoken German, not a literal translation from English/Korean/Japanese. Use du consistently in the established relationship; Sie appears only when the scene explicitly creates formal distance or a deliberate emotional slip.`,
+- Dialogue should sound like contemporary spoken German, not a literal translation from English/Korean/Japanese. Use du consistently in the established relationship; Sie appears only when the scene explicitly creates formal distance or a deliberate emotional slip.
+- Use “jemandem standhalten” correctly. If a gaze is the object, write “hält seinem/deinem Blick stand”; never write “hält deinem stand”.`,
         pt: `**[Language & Terminology Naturalness]**
 - The protagonist is newly arrived in this campus setting. In Brazilian Portuguese, prefer "aluno novo" or "novato" in casual dialogue. Use "aluno transferido" only for official records when needed; do not use "transferido" by itself as a routine nickname.
 - Never use "intercambista" unless the story explicitly says exchange student. Use contemporary Brazilian Portuguese with você and natural contractions when they fit the character; never drift into European Portuguese, omit required accents, or imitate English word order.`
@@ -986,6 +987,146 @@ Toda narration usa terceira pessoa externa estrita. Para a personagem, use o nom
 }
 
 window.buildCupidThirdPersonAdultCameraRule = buildCupidThirdPersonAdultCameraRule;
+
+function normalizeCupidQualityCharacterKey(value) {
+    const raw = String(value || '').trim();
+    const normalized = normalizePromptCharacterKey(raw);
+    const aliases = {
+        yuna: 'Yuna',
+        nurse: 'Nurse',
+        'health teacher': 'Nurse',
+        'school nurse': 'Nurse',
+        보건선생님: 'Nurse',
+        유나: 'Yuna',
+        ユナ: 'Yuna',
+        保健先生: 'Nurse',
+        '保健室の先生': 'Nurse',
+        schulkrankenschwester: 'Nurse'
+    };
+    return aliases[String(normalized || raw).toLowerCase()] || normalized || raw;
+}
+
+function getCupidCharacterCanonGuard(lang, sceneName, displayName) {
+    const characterKey = normalizeCupidQualityCharacterKey(sceneName || displayName);
+    if (characterKey === 'Yuna') {
+        const localized = {
+            ko: `**[유나 외형 잠금]** 유나의 머리는 언제나 은백색이고 눈은 붉습니다. 검은 머리나 흑발로 바꾸지 마세요.`,
+            ja: `**[ユナの外見固定]** ユナの髪は常に銀白色で、瞳は赤い。黒髪として描写しない。`,
+            de: `**[Yunas Aussehen]** Yuna hat immer silberweißes Haar und rote Augen. Ihr Haar ist niemals schwarz.`
+        };
+        return `${localized[lang] || `**[Yuna Canon Lock]** Yuna always has silver-white hair and red eyes. Never describe her hair as black.`}\n`;
+    }
+    if (characterKey === 'Nurse') {
+        const localized = {
+            ko: `**[보건선생님 설정 잠금]** 학교 재직 시점의 나이는 26세입니다. 졸업 4~5년 뒤 재회한 성인 연인 시점에는 30~31세이며 36세가 아닙니다. 사용자가 처음 만났을 때의 나이를 임의로 만들지 마세요. 이 인물은 보건 교사/보건실 선생님이며 의사가 아닙니다.`,
+            ja: `**[保健室の先生の設定固定]** 学校勤務時は26歳。卒業から4〜5年後に再会した恋人時点では30〜31歳で、36歳ではない。初対面時のユーザー年齢を捏造しない。この人物は養護教諭／保健室の先生であり、医者・医師ではない。`,
+            de: `**[Kanon der Schulkrankenschwester]** Während ihrer Schulzeit ist sie 26. Beim Wiedersehen vier bis fünf Jahre nach dem Abschluss ist sie 30–31, niemals 36. Erfinde kein Alter des Nutzers bei der ersten Begegnung. Sie ist Schulkrankenschwester bzw. Gesundheitslehrerin, keine Ärztin.`
+        };
+        return `${localized[lang] || `**[School Nurse Canon Lock]** She is 26 during the school timeline. At the adult reunion exactly four or five years after graduation, she is 30–31, never 36. Do not invent the user's age at their first meeting. She is a school nurse/health teacher, not a doctor.`}\n`;
+    }
+    return '';
+}
+
+function getCupidNarrationPointOfViewPattern(lang = 'ko') {
+    const patterns = {
+        ko: /(?:당신|너)(?:은|는|이|가|을|를|의|에게|한테|와|과|도|만)|(?:나|내)(?:는|가|를|의|게|에게|한테)|내\s+[가-힣]/u,
+        en: /\b(?:you|your|yours|yourself|yourselves|i|me|my|mine|myself)\b/iu,
+        de: /\b(?:du|dich|dir|dein(?:e|em|en|er|es)?|ich|mich|mir|mein(?:e|em|en|er|es)?)\b/iu,
+        ja: /(?:あなた|君|きみ|お前)(?:は|が|を|の|に|へ|と|も)|(?:私|僕|俺)(?:は|が|を|の|に|へ|と|も)/u,
+        es: /\b(?:tú|tu|tus|te|ti|contigo|usted|ustedes|su|sus|yo|me|mi|mis|mío|mía)\b/iu,
+        fr: /\b(?:tu|toi|te|ton|ta|tes|vous|votre|vos|je|j['’]|me|moi|mon|ma|mes)\b/iu,
+        pt: /\b(?:tu|te|ti|contigo|você|vocês|seu|sua|seus|suas|eu|me|mim|meu|minha)\b/iu
+    };
+    return patterns[lang] || patterns.en;
+}
+
+function getCupidRoleplayQualityIssue(parsed = {}, { lang = 'ko', charKey = '' } = {}) {
+    const text = String(parsed?.text || '');
+    const segments = Array.isArray(parsed?.segments) ? parsed.segments : [];
+    const visibleTexts = segments.length > 0
+        ? segments.map(segment => String(segment?.text || '')).filter(Boolean)
+        : [text].filter(Boolean);
+    const combinedText = visibleTexts.join('\n');
+    const issues = [];
+
+    if (combinedText.includes('\uFFFD')) {
+        issues.push('unicode_replacement_character');
+    }
+
+    const narrationTexts = segments.length > 0
+        ? segments
+            .filter(segment => String(segment?.type || '').toLowerCase() !== 'dialogue')
+            .map(segment => String(segment?.text || '').trim())
+            .filter(Boolean)
+        : Array.from(text.matchAll(/\*([^*]+)\*/gu), match => String(match[1] || '').trim()).filter(Boolean);
+    const pointOfViewPattern = getCupidNarrationPointOfViewPattern(lang);
+    if (narrationTexts.some(narration => pointOfViewPattern.test(narration))) {
+        issues.push('narration_player_point_of_view');
+    }
+
+    const characterKey = normalizeCupidQualityCharacterKey(charKey);
+    if (characterKey === 'Yuna') {
+        const blackHairPattern = /(?:long\s+black\s+hair|black\s+hair|lange[nmrs]?\s+schwarze[nmrs]?\s+haar|schwarze[nmrs]?\s+haar|긴\s*검은\s*머리|검은\s*머리|黒髪|黒い髪|cabello\s+negro|cheveux\s+noirs|cabelo\s+preto)/iu;
+        if (blackHairPattern.test(combinedText)) issues.push('yuna_hair_canon');
+    }
+
+    if (characterKey === 'Nurse') {
+        const ageThirtySixPattern = /(?:\b36\b|36\s*세|36歳|서른여섯|sechsunddreißig|thirty[- ]six|treinta\s+y\s+seis|trente[- ]six|trinta\s+e\s+seis)/iu;
+        if (ageThirtySixPattern.test(combinedText)) issues.push('nurse_age_canon');
+
+        const ageSeventeenPattern = /(?:\b17\b|17\s*세|17歳|열일곱|siebzehn|seventeen|diecisiete|dix-sept|dezessete)/iu;
+        const meetingPattern = /(?:처음\s*만|만났|알게\s*됐|初めて|出会|会った|kennenlern|kennengelernt|begegnet|met\b|first\s+met|conoc|rencontr|conhec)/iu;
+        if (ageSeventeenPattern.test(combinedText) && meetingPattern.test(combinedText)) {
+            issues.push('nurse_user_age_canon');
+        }
+
+        const japaneseDoctorPattern = /(?:医者|医師|女医|ドクター)/u;
+        const japaneseNotDoctorPattern = /(?:医者|医師|女医|ドクター)(?:ではない|じゃない|ではありません)/u;
+        if (lang === 'ja'
+            && japaneseDoctorPattern.test(combinedText)
+            && !japaneseNotDoctorPattern.test(combinedText)) {
+            issues.push('nurse_profession_canon');
+        }
+    }
+
+    if (lang === 'de' && /\bhält\s+deinem\s+stand\b/iu.test(combinedText)) {
+        issues.push('german_blick_grammar');
+    }
+
+    return {
+        shouldRetry: issues.length > 0,
+        reason: issues.join(','),
+        issues
+    };
+}
+
+function buildCupidRoleplayQualityRepairBlock(issue = {}, lang = 'ko', charKey = '') {
+    const languageNames = {
+        ko: 'Korean',
+        en: 'English',
+        es: 'Spanish',
+        ja: 'Japanese',
+        fr: 'French',
+        de: 'German',
+        pt: 'Brazilian Portuguese'
+    };
+    const characterCanon = getCupidCharacterCanonGuard(lang, charKey, charKey).trim();
+    return [
+        '[System Notice: rejected roleplay draft]',
+        `Rejected reasons: ${issue.reason || 'invalid output'}.`,
+        'Regenerate the complete assistant response to the original latest in-world user message; do not continue or discuss the rejected draft.',
+        `Write every segments[].text in ${languageNames[lang] || languageNames.en}.`,
+        'Keep the required JSON schema. Use strict external third-person narration; second-person and first-person player references belong only in spoken dialogue.',
+        'Never emit U+FFFD. Use fresh, grammatical wording.',
+        characterCanon,
+        lang === 'de' ? 'Use the idiom “jemandem standhalten”; when gaze is meant, write “hält seinem/deinem Blick stand”, never “hält deinem stand”.' : '',
+        'Return JSON only.'
+    ].filter(Boolean).join('\n');
+}
+
+window.getCupidCharacterCanonGuard = getCupidCharacterCanonGuard;
+window.getCupidRoleplayQualityIssue = getCupidRoleplayQualityIssue;
+window.buildCupidRoleplayQualityRepairBlock = buildCupidRoleplayQualityRepairBlock;
 /**
  * 시스템 프롬프트 생성 함수
  */
@@ -1034,6 +1175,7 @@ function buildSystemPrompt(params) {
         findPromptValue(data.addressingGuidelines, useEnTemplate ? "Address the user naturally based on affinity." : "호감도에 따라 사용자를 자연스럽게 부르세요.")
     );
     const characterOutfitGuard = getCharacterOutfitGuard(effectiveLang, sceneName, displayName);
+    const characterCanonGuard = getCupidCharacterCanonGuard(effectiveLang, sceneName, displayName);
 
     // Language instruction prefix — 모든 비-한국어 언어에 강제 적용
     // 사용자가 어떤 언어로 입력하든 무조건 effectiveLang으로 답해야 함 (이전 대화 히스토리에 한국어가 섞여 있어도 무시)
@@ -1098,6 +1240,7 @@ Character: ${charPersonality}
 Voice: ${charStyleGuideline}
 In scene: ${charGeneralInstruction}
 ${characterOutfitGuard}
+${characterCanonGuard}
 Scene: ${compactSceneMode} Treat the user's latest explicit in-world facts and completed outcomes as the current scene, and respond without recap or reversal; only the character-specific canon locks above remain exceptions. Stay inside ${aiCharName}; do not write the user's next action, dialogue, choice, or hidden thought. Let action and speech follow this character, affinity, and the immediate moment instead of a generic romance pattern. Visible text has no stat/math markers; numeric change only in affinity. Use natural present-day speech.
 ${thirdPersonAdultCameraRule}
 JSON only: {"segments":[{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":0}
@@ -1112,6 +1255,7 @@ ${compactDynamicGuidance}`;
 말투: ${charStyleGuideline}
 연기 원칙: ${charGeneralInstruction}
 ${characterOutfitGuard}
+${characterCanonGuard}
 장면: ${compactSceneMode} 사용자가 방금 확정해 쓴 극중 사실과 끝난 사건은 현재 장면으로 받고, 복창하거나 되돌리지 말고 ${aiCharName}의 반응으로 이어갑니다. 위의 캐릭터별 사실 잠금만 예외입니다. 사용자의 다음 행동·대사·선택·속마음은 대신 쓰지 마세요. 공용 로맨스 공식보다 이 인물의 성격, 현재 호감도와 바로 앞 순간에 맞춰 행동과 말을 고릅니다. 화면 문장에는 점수나 계산 표식을 쓰지 말고, 호감도 변화만 affinity에 숫자로 기록합니다. 자연스러운 현재 한국어를 쓰세요.
 ${thirdPersonAdultCameraRule}
 JSON만 출력: {"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":0}
@@ -1155,5 +1299,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 };
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.31';
+const PROMPT_VERSION = '2.7.32';
 window.PROMPT_VERSION = PROMPT_VERSION;

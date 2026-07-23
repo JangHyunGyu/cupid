@@ -687,8 +687,8 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.96') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.96가 아님: ' + loaderVersion);
+    if (loaderVersion !== '2.9.97') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.97가 아님: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');
@@ -1760,11 +1760,11 @@ try {
     const activePromptSources = [promptsContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
-    if (promptVersion !== '2.7.31') {
-        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.31이 아님: ' + promptVersion);
+    if (promptVersion !== '2.7.32') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.32가 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.29') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.29가 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.30') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.30가 아님: ' + galleryPromptVersion);
     }
     const completedActionCanonSignals = [
         '완료형으로 쓴 행동은 성적 접촉도 이미 일어난 사건이며',
@@ -1806,6 +1806,25 @@ try {
             || source.includes('한 답변 안에서 같은 문장이나 segment를 두 번 쓰지 않고')) {
             errors.push('[FREETALK_PROMPT] ' + label + ' 빈 구조 방지 계약 또는 전역 문구 반복 금지 제거 상태 불일치');
         }
+    }
+    if (!promptsContent.includes('function getCupidRoleplayQualityIssue(')
+        || !promptsContent.includes('unicode_replacement_character')
+        || !promptsContent.includes('narration_player_point_of_view')
+        || !promptsContent.includes('yuna_hair_canon')
+        || !promptsContent.includes('nurse_profession_canon')
+        || !promptsContent.includes('german_blick_grammar')) {
+        errors.push('[FREETALK_OUTPUT_QUALITY] 다국어 시점·문자·캐릭터 설정 검증기 누락');
+    }
+    if (!ftSysContent.includes('requestCupidReplyData(repairMessages)')
+        || !gftContent.includes('requestCupidGalleryReplyData(repairMessages)')
+        || !ftSysContent.includes("qualityError.reason = 'ROLEPLAY_QUALITY_REJECTED'")
+        || !gftContent.includes("qualityError.reason = 'ROLEPLAY_QUALITY_REJECTED'")) {
+        errors.push('[FREETALK_OUTPUT_QUALITY] 게임/갤러리 저장 전 재생성 경로 누락');
+    }
+    if (!promptsContent.includes('At the adult reunion exactly four or five years after graduation, she is 30–31, never 36')
+        || !promptsContent.includes('Yuna always has silver-white hair and red eyes')
+        || !promptsContent.includes('hält seinem/deinem Blick stand')) {
+        errors.push('[FREETALK_CANON] 유나/보건선생님/독일어 설정 잠금 누락');
     }
     for (const removedSymbol of [
         'CHAR_SPEECH_STYLES',
