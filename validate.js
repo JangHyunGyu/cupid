@@ -687,8 +687,8 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.95') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.95가 아님: ' + loaderVersion);
+    if (loaderVersion !== '2.9.96') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.96가 아님: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');
@@ -700,8 +700,19 @@ try {
         }
     }
     const swContent = fs.readFileSync(path.join(__dirname, 'service-worker.js'), 'utf8');
-    if (!swContent.includes("const CACHE_VERSION = 'cupid-v3.3.51'")) {
-        errors.push('[VERSION_SYNC] service-worker 캐시 버전이 cupid-v3.3.51가 아님');
+    if (!swContent.includes("const CACHE_VERSION = 'cupid-v3.3.52'")) {
+        errors.push('[VERSION_SYNC] service-worker 캐시 버전이 cupid-v3.3.52가 아님');
+    }
+    const soundContent = fs.readFileSync(path.join(__dirname, 'assets/js/sound.js'), 'utf8');
+    if (!soundContent.includes('_isAudioDecodeError')
+        || !soundContent.includes('audio-recovery=')
+        || !soundContent.includes('{ bypassCache: true }')) {
+        errors.push('[AUDIO_RECOVERY] 디코딩 실패 후 캐시 우회 재다운로드 경로가 없음');
+    }
+    if (!swContent.includes("url.searchParams.has('audio-recovery')")
+        || !swContent.includes('refreshMediaFromNetwork')
+        || !swContent.includes("url.searchParams.delete('audio-recovery')")) {
+        errors.push('[AUDIO_RECOVERY] Service Worker가 오디오 복구 요청을 네트워크로 갱신하지 않음');
     }
 } catch (e) {
     warnings.push('[VERSION_SYNC] 버전 파일 읽기 실패: ' + e.message);

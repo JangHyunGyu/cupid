@@ -12,7 +12,7 @@
  * ============================================================================
  */
 
-const CACHE_VERSION = 'cupid-v3.3.51';
+const CACHE_VERSION = 'cupid-v3.3.52';
 const STATIC_CACHE = CACHE_VERSION + '-static';
 const MEDIA_CACHE = CACHE_VERSION + '-media';
 
@@ -170,7 +170,13 @@ self.addEventListener('fetch', (event) => {
 
     // 이미지/오디오: Cache-first (가장 큰 에셋, 캐시 효과 극대화)
     if (/\.(png|jpg|jpeg|webp|gif|svg|mp3|ogg|wav)$/i.test(path)) {
-        event.respondWith(cacheFirst(event.request, MEDIA_CACHE));
+        const isAudioRecovery = /\.(mp3|ogg|wav)$/i.test(path)
+            && url.searchParams.has('audio-recovery');
+        event.respondWith(
+            isAudioRecovery
+                ? refreshMediaFromNetwork(event.request, MEDIA_CACHE)
+                : cacheFirst(event.request, MEDIA_CACHE)
+        );
         return;
     }
 
@@ -208,6 +214,21 @@ async function cacheFirst(request, cacheName) {
     }
 }
 
+async function refreshMediaFromNetwork(request, cacheName) {
+    const cacheRequest = normalizeAssetCacheRequest(request);
+    try {
+        const response = await fetch(new Request(request, { cache: 'reload' }));
+        if (response.ok) {
+            await cacheResponseSafely(cacheName, cacheRequest, response);
+        }
+        return response;
+    } catch (_) {
+        const cached = await matchCacheSafely(cacheRequest);
+        if (cached) return cached;
+        return new Response('Offline', { status: 503 });
+    }
+}
+
 /**
  * Network-only: 항상 네트워크에서 직접 로드 (캐시 사용 안 함)
  * 소스코드(CSS/JS) 수정 사항을 즉시 반영하기 위해 사용
@@ -223,8 +244,9 @@ async function networkOnly(request) {
 function normalizeAssetCacheRequest(request) {
     try {
         const url = new URL(request.url);
-        if (!url.searchParams.has('retry')) return request;
+        if (!url.searchParams.has('retry') && !url.searchParams.has('audio-recovery')) return request;
         url.searchParams.delete('retry');
+        url.searchParams.delete('audio-recovery');
         return new Request(url.toString(), request);
     } catch (_) {
         return request;
