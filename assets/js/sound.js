@@ -206,6 +206,13 @@ class SoundManager {
         return status === 408 || status === 425 || status === 429 || status >= 500;
     }
 
+    _isAudioDecodeError(error) {
+        const name = String(error?.name || '');
+        const message = String(error?.message || error || '');
+        return name === 'EncodingError'
+            || /unable to decode audio data|decode audio data|audio.*decod/i.test(message);
+    }
+
     _cancelBgmRecovery(resetAttempts = true) {
         if (this._bgmRecoveryTimer !== null) {
             clearTimeout(this._bgmRecoveryTimer);
@@ -279,15 +286,19 @@ class SoundManager {
         return 'scheduled';
     }
 
-    async _fetchAudioArrayBuffer(path) {
+    async _fetchAudioArrayBuffer(path, options = {}) {
         let lastError = null;
+        const bypassCache = options.bypassCache === true;
         for (let attempt = 0; attempt < 3; attempt++) {
             const separator = path.includes('?') ? '&' : '?';
-            const url = attempt === 0 ? path : `${path}${separator}retry=${Date.now()}`;
+            const shouldRefresh = bypassCache || attempt > 0;
+            const url = shouldRefresh
+                ? `${path}${separator}audio-recovery=${Date.now()}-${attempt}`
+                : path;
             try {
                 if (attempt > 0) await this._sleep(350 * attempt);
                 const response = await fetch(url, {
-                    cache: attempt === 0 ? 'default' : 'reload'
+                    cache: shouldRefresh ? 'reload' : 'default'
                 });
                 if (!response.ok) {
                     lastError = new Error(`HTTP ${response.status}`);
@@ -327,10 +338,18 @@ class SoundManager {
         this._loadingPromises[path] = (async () => {
             try {
                 console.log("SoundManager: 오디오 다운로드 시작 ->", path);
-                const arrayBuffer = await this._fetchAudioArrayBuffer(path);
+                let arrayBuffer = await this._fetchAudioArrayBuffer(path);
                 console.log("SoundManager: 다운로드 완료, 디코딩 중 ->", path);
 
-                const audioBuffer = await ctx.decodeAudioData(arrayBuffer);
+                let audioBuffer;
+                try {
+                    audioBuffer = await ctx.decodeAudioData(arrayBuffer);
+                } catch (decodeError) {
+                    if (!this._isAudioDecodeError(decodeError)) throw decodeError;
+                    console.warn("SoundManager: 캐시 오디오 디코딩 실패, 원본을 다시 받습니다 ->", path);
+                    arrayBuffer = await this._fetchAudioArrayBuffer(path, { bypassCache: true });
+                    audioBuffer = await ctx.decodeAudioData(arrayBuffer);
+                }
                 console.log("SoundManager: 디코딩 완료 ->", path,
                     `(${audioBuffer.duration.toFixed(1)}초)`);
 
