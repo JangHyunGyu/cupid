@@ -973,55 +973,57 @@ class FreeTalkSystem {
             this._activeChatTurnId = _turnMeta?.turnId || null;
             const aiEndpoint = (typeof AI_API_ENDPOINT !== 'undefined' && AI_API_ENDPOINT) ? AI_API_ENDPOINT : API_ENDPOINT;
             _lastAiEndpoint = aiEndpoint;
-            const requestInit = {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "x-app-type": "cupid",
-                    "x-request-type": "character",
-                    "x-chat-mode": "single",
-                    "x-output-language": _lang,
-                    ...(_cacheKey && { "x-cache-key": _cacheKey })
-                },
-                body: JSON.stringify({
-                    messages: _optimized,
-                    model: (typeof AI_MODEL_ID !== 'undefined' && AI_MODEL_ID) ? AI_MODEL_ID : (window.AI_MODEL_ID || undefined),
-                    characterId: charKey,
-                    requestType: "character",
-                    chatMode: "single",
-                    outputLanguage: _lang,
-                    cacheKey: _cacheKey,
-                    ...(_turnMeta || {})
-                })
-            };
-            let response;
-            let primaryError = null;
-            try {
-                response = await fetch(aiEndpoint, requestInit);
-                this._assertRequestContext(requestContext);
-            } catch (error) {
-                this._assertRequestContext(requestContext);
-                primaryError = error;
-            }
-
             const fallbackEndpoint = (typeof API_ENDPOINT !== 'undefined' && API_ENDPOINT) ? API_ENDPOINT : window.API_ENDPOINT;
-            const canFallback = (
-                primaryError instanceof TypeError || shouldFailOverFreeTalkAiResponse(response)
-            ) && fallbackEndpoint && fallbackEndpoint !== aiEndpoint;
-            if (canFallback) {
-                _lastAiEndpoint = fallbackEndpoint;
-                response = await fetch(fallbackEndpoint, requestInit);
-                this._assertRequestContext(requestContext);
-            } else if (primaryError) {
-                throw primaryError;
-            }
+            const requestCupidReplyData = async (messages) => {
+                const requestInit = {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "x-app-type": "cupid",
+                        "x-request-type": "character",
+                        "x-chat-mode": "single",
+                        "x-output-language": _lang,
+                        ...(_cacheKey && { "x-cache-key": _cacheKey })
+                    },
+                    body: JSON.stringify({
+                        messages,
+                        model: (typeof AI_MODEL_ID !== 'undefined' && AI_MODEL_ID) ? AI_MODEL_ID : (window.AI_MODEL_ID || undefined),
+                        characterId: charKey,
+                        requestType: "character",
+                        chatMode: "single",
+                        outputLanguage: _lang,
+                        cacheKey: _cacheKey,
+                        ...(_turnMeta || {})
+                    })
+                };
+                let response;
+                let primaryError = null;
+                _lastAiEndpoint = aiEndpoint;
+                try {
+                    response = await fetch(aiEndpoint, requestInit);
+                    this._assertRequestContext(requestContext);
+                } catch (error) {
+                    this._assertRequestContext(requestContext);
+                    primaryError = error;
+                }
 
-            // HTTP 상태 코드 확인 (200번대가 아니면 오류)
-            // 400: 잘못된 요청, 401: 인증 실패, 429: 요청 제한, 500: 서버 오류
-            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                const canFallback = (
+                    primaryError instanceof TypeError || shouldFailOverFreeTalkAiResponse(response)
+                ) && fallbackEndpoint && fallbackEndpoint !== aiEndpoint;
+                if (canFallback) {
+                    _lastAiEndpoint = fallbackEndpoint;
+                    response = await fetch(fallbackEndpoint, requestInit);
+                    this._assertRequestContext(requestContext);
+                } else if (primaryError) {
+                    throw primaryError;
+                }
+
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                return await response.json();
+            };
 
             // JSON 파싱
-            const data = await response.json();
+            let data = await requestCupidReplyData(_optimized);
             this._assertRequestContext(requestContext, data);
 
             // OpenAI API 응답 구조에서 대답 텍스트 추출
@@ -1058,7 +1060,49 @@ class FreeTalkSystem {
             }
 
             this._assertRequestContext(requestContext, data);
-            const parsed = this.parseJsonResponse(reply);
+            let parsed = this.parseJsonResponse(reply);
+
+            for (let repairAttempt = 0; repairAttempt < 2; repairAttempt += 1) {
+                const qualityIssue = window.getCupidRoleplayQualityIssue?.(parsed, {
+                    lang: _lang,
+                    charKey
+                });
+                if (!qualityIssue?.shouldRetry) break;
+
+                console.warn('[Cupid FreeTalk] Rejected roleplay draft; regenerating before display', qualityIssue);
+                const repairBlock = window.buildCupidRoleplayQualityRepairBlock?.(
+                    qualityIssue,
+                    _lang,
+                    charKey
+                );
+                if (!repairBlock || !_optimized[0] || _optimized[0].role !== 'system') break;
+
+                let repairMessages = [
+                    {
+                        ..._optimized[0],
+                        content: appendFreeTalkDynamicContext(_optimized[0].content, repairBlock)
+                    },
+                    ..._optimized.slice(1)
+                ];
+                repairMessages = this._forceLatestUserMessageLast(repairMessages, finalContent);
+                data = await requestCupidReplyData(repairMessages);
+                this._assertRequestContext(requestContext, data);
+                const repairedContent = data?.choices?.[0]?.message?.content;
+                reply = typeof repairedContent === 'string' ? repairedContent.trim() : '';
+                if (!reply) throw new Error('AI response was empty. Please try again.');
+                parsed = this.parseJsonResponse(reply);
+            }
+
+            const finalQualityIssue = window.getCupidRoleplayQualityIssue?.(parsed, {
+                lang: _lang,
+                charKey
+            });
+            if (finalQualityIssue?.shouldRetry) {
+                const qualityError = new Error('AI response failed roleplay quality validation. Please try again.');
+                qualityError.reason = 'ROLEPLAY_QUALITY_REJECTED';
+                qualityError.qualityIssue = finalQualityIssue;
+                throw qualityError;
+            }
 
             if (!parsed?.text && !(Array.isArray(parsed?.segments) && parsed.segments.length > 0)) {
                 throw new Error('AI response did not contain visible roleplay text. Please try again.');
@@ -1155,7 +1199,9 @@ class FreeTalkSystem {
             if (typeof window.logCupidError === 'function') {
                 window.logCupidError(error, {
                     source: 'cupid-freetalk',
-                    errorType: /^HTTP\s+\d+/.test(error?.message || '') ? 'freetalk_http_error' : 'freetalk_request_failed',
+                    errorType: error?.reason === 'ROLEPLAY_QUALITY_REJECTED'
+                        ? 'freetalk_roleplay_quality_rejected'
+                        : (/^HTTP\s+\d+/.test(error?.message || '') ? 'freetalk_http_error' : 'freetalk_request_failed'),
                     sessionId: requestSceneId || '',
                     context: {
                         charId: charKey || '',
@@ -1172,7 +1218,8 @@ class FreeTalkSystem {
                         latestUserHash: _lastTurnMeta?.latestUserHash || '',
                         latestUserLength: _lastTurnMeta?.latestUserLength || String(finalContent || '').length,
                         hasImage: String(finalContent || '').includes('data:image/'),
-                        historyLength: requestHistory.length
+                        historyLength: requestHistory.length,
+                        qualityReason: error?.qualityIssue?.reason || ''
                     }
                 });
             }

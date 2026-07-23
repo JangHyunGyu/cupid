@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.29';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.30';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function buildGalleryThirdPersonAdultCameraRule(lang = 'ko') {
@@ -1213,55 +1213,59 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             this._activeChatTurnId = _turnMeta?.turnId || null;
             const aiEndpoint = window.AI_API_ENDPOINT || window.API_ENDPOINT || 'https://chatbot-api.yama5993.workers.dev/';
             _lastAiEndpoint = aiEndpoint;
-            const requestInit = {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'x-app-type': 'cupid',
-                    'x-request-type': 'character',
-                    'x-chat-mode': 'single',
-                    'x-output-language': this.lang,
-                    ...(_gftCacheKey && { 'x-cache-key': _gftCacheKey })
-                },
-                body: JSON.stringify({
-                    messages: _optimized,
-                    model: window.AI_MODEL_ID || (typeof AI_MODEL_ID !== 'undefined' ? AI_MODEL_ID : undefined),
-                    characterId: requestCharId || '',
-                    requestType: 'character',
-                    chatMode: 'single',
-                    outputLanguage: this.lang,
-                    cacheKey: _gftCacheKey,
-                    ...(_turnMeta || {})
-                })
-            };
-            let response;
-            let primaryError = null;
-            try {
-                response = await fetch(aiEndpoint, requestInit);
-                this._assertRequestContext(requestContext);
-            } catch (error) {
-                this._assertRequestContext(requestContext);
-                primaryError = error;
-            }
-
             const fallbackEndpoint = window.API_ENDPOINT || 'https://chatbot-api.yama5993.workers.dev/';
-            const canFallback = (
-                primaryError instanceof TypeError || shouldFailOverGalleryAiResponse(response)
-            ) && fallbackEndpoint && fallbackEndpoint !== aiEndpoint;
-            if (canFallback) {
-                _lastAiEndpoint = fallbackEndpoint;
-                response = await fetch(fallbackEndpoint, requestInit);
-                this._assertRequestContext(requestContext);
-            } else if (primaryError) {
-                throw primaryError;
-            }
+            const requestCupidGalleryReplyData = async (messages) => {
+                const requestInit = {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'x-app-type': 'cupid',
+                        'x-request-type': 'character',
+                        'x-chat-mode': 'single',
+                        'x-output-language': this.lang,
+                        ...(_gftCacheKey && { 'x-cache-key': _gftCacheKey })
+                    },
+                    body: JSON.stringify({
+                        messages,
+                        model: window.AI_MODEL_ID || (typeof AI_MODEL_ID !== 'undefined' ? AI_MODEL_ID : undefined),
+                        characterId: requestCharId || '',
+                        requestType: 'character',
+                        chatMode: 'single',
+                        outputLanguage: this.lang,
+                        cacheKey: _gftCacheKey,
+                        ...(_turnMeta || {})
+                    })
+                };
+                let response;
+                let primaryError = null;
+                _lastAiEndpoint = aiEndpoint;
+                try {
+                    response = await fetch(aiEndpoint, requestInit);
+                    this._assertRequestContext(requestContext);
+                } catch (error) {
+                    this._assertRequestContext(requestContext);
+                    primaryError = error;
+                }
 
-            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                const canFallback = (
+                    primaryError instanceof TypeError || shouldFailOverGalleryAiResponse(response)
+                ) && fallbackEndpoint && fallbackEndpoint !== aiEndpoint;
+                if (canFallback) {
+                    _lastAiEndpoint = fallbackEndpoint;
+                    response = await fetch(fallbackEndpoint, requestInit);
+                    this._assertRequestContext(requestContext);
+                } else if (primaryError) {
+                    throw primaryError;
+                }
 
-            const data = await response.json();
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                return await response.json();
+            };
+
+            let data = await requestCupidGalleryReplyData(_optimized);
             this._assertRequestContext(requestContext, data);
             const replyContent = data?.choices?.[0]?.message?.content;
-            const reply = typeof replyContent === 'string' ? replyContent.trim() : '';
+            let reply = typeof replyContent === 'string' ? replyContent.trim() : '';
 
             if (!reply) {
                 console.warn('[Cupid GalleryFreeTalk] Empty AI response payload:', {
@@ -1292,7 +1296,50 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             }
 
             this._assertRequestContext(requestContext, data);
-            const parsed = this._parseResponse(reply);
+            let parsed = this._parseResponse(reply);
+
+            for (let repairAttempt = 0; repairAttempt < 2; repairAttempt += 1) {
+                const qualityIssue = window.getCupidRoleplayQualityIssue?.(parsed, {
+                    lang: this.lang,
+                    charKey: requestCharKey || requestCharId
+                });
+                if (!qualityIssue?.shouldRetry) break;
+
+                console.warn('[Cupid GalleryFreeTalk] Rejected roleplay draft; regenerating before display', qualityIssue);
+                const repairBlock = window.buildCupidRoleplayQualityRepairBlock?.(
+                    qualityIssue,
+                    this.lang,
+                    requestCharKey || requestCharId
+                );
+                if (!repairBlock || !_optimized[0] || _optimized[0].role !== 'system') break;
+
+                let repairMessages = [
+                    {
+                        ..._optimized[0],
+                        content: appendGalleryFreeTalkDynamicContext(_optimized[0].content, repairBlock)
+                    },
+                    ..._optimized.slice(1)
+                ];
+                repairMessages = this._forceLatestUserMessageLast(repairMessages, finalContent);
+                data = await requestCupidGalleryReplyData(repairMessages);
+                this._assertRequestContext(requestContext, data);
+                const repairedContent = data?.choices?.[0]?.message?.content;
+                reply = typeof repairedContent === 'string' ? repairedContent.trim() : '';
+                if (!reply) throw new Error('AI response was empty. Please try again.');
+                parsed = this._parseResponse(reply);
+            }
+
+            const finalQualityIssue = window.getCupidRoleplayQualityIssue?.(parsed, {
+                lang: this.lang,
+                charKey: requestCharKey || requestCharId
+            });
+            if (finalQualityIssue?.shouldRetry) {
+                const qualityError = new Error('AI response failed roleplay quality validation. Please try again.');
+                qualityError.reason = 'ROLEPLAY_QUALITY_REJECTED';
+                qualityError.qualityIssue = finalQualityIssue;
+                throw qualityError;
+            }
+
             if (!parsed?.text && !(Array.isArray(parsed?.segments) && parsed.segments.length > 0)) {
                 throw new Error('AI response did not contain visible roleplay text. Please try again.');
             }
@@ -1353,7 +1400,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 if (typeof window.logCupidError === 'function') {
                     window.logCupidError(err, {
                         source: 'cupid-gallery-freetalk',
-                        errorType: /^HTTP\s+\d+/.test(err?.message || '') ? 'freetalk_http_error' : 'freetalk_request_failed',
+                        errorType: err?.reason === 'ROLEPLAY_QUALITY_REJECTED'
+                            ? 'freetalk_roleplay_quality_rejected'
+                            : (/^HTTP\s+\d+/.test(err?.message || '') ? 'freetalk_http_error' : 'freetalk_request_failed'),
                         sessionId: 'gallery-freetalk',
                         context: {
                             charId: requestCharKey || requestCharId || '',
@@ -1368,7 +1417,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                             latestUserHash: _lastTurnMeta?.latestUserHash || '',
                             latestUserLength: _lastTurnMeta?.latestUserLength || String(finalContent || '').length,
                             hasImage: String(finalContent || '').includes('data:image/'),
-                            historyLength: requestHistory.length
+                            historyLength: requestHistory.length,
+                            qualityReason: err?.qualityIssue?.reason || ''
                         }
                     });
                 }
@@ -1976,6 +2026,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 ? `\n**[Dain Outfit Continuity]**\n- Current post-graduation Dain is not in a student uniform. Use everyday sporty streetwear with a black arm sleeve.\n- If referencing student-day memories, Dain's iconic outfit is the ETAURS #19 volleyball jersey, not a blazer/tie/school skirt.\n- Keep school-uniform hems, school-uniform sleeves, blazers, ties, and school skirts out of current Dain descriptions.`
                 : `\n**[다인 의상 연속성]**\n- 졸업 후 현재의 다인은 교복이 아니라 검정 암슬리브를 곁들인 스포티한 일상복 차림입니다.\n- 학생 시절을 회상할 때도 다인의 상징 의상은 ETAURS #19 배구 유니폼이지 블레이저/넥타이/교복 치마가 아닙니다.\n- 현재 다인 묘사에는 '교복 자락', '교복 소매', '블레이저', '넥타이', '교복 치마'를 넣지 마세요.`)
             : '';
+        const characterCanonGuard = window.getCupidCharacterCanonGuard
+            ? window.getCupidCharacterCanonGuard(this.lang, charId, charName)
+            : '';
 
         const compactGalleryGuidance = (isEn ? [
             datingPrompt && `Relationship: ${datingPrompt}`,
@@ -1994,6 +2047,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 Character: ${personality}
 ${charName} is in-scene, not assistant/narrator.
 ${characterOutfitGuard}
+${characterCanonGuard}
 Scene: Keep this 1:1; other people remain offstage except through ${charName}'s reaction to a mention. Treat the user's latest explicit in-world facts and completed outcomes as current, without recap or reversal; only the character-specific canon locks above remain exceptions. Stay inside ${charName} and do not write the user's next action, dialogue, choice, or hidden thought. Let intimacy, distance, refusal, teasing, and initiative arise from this character and the immediate moment rather than a generic lover pattern. Use natural present-day speech.
 ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}
@@ -2006,6 +2060,7 @@ ${compactGalleryState}`;
 캐릭터: ${personality}
 현재 장면의 인물은 ${charName}입니다. 도우미나 해설자처럼 말하지 마세요.
 ${characterOutfitGuard}
+${characterCanonGuard}
 장면: 두 사람만 장면에 두고, 다른 인물은 언급을 들은 ${charName}의 반응으로만 남깁니다. 사용자가 방금 확정해 쓴 극중 사실과 끝난 사건은 현재 장면으로 받고, 복창하거나 되돌리지 말고 ${charName}의 반응으로 이어갑니다. 위의 캐릭터별 사실 잠금만 예외입니다. 사용자의 다음 행동·대사·선택·속마음은 대신 쓰지 마세요. 친밀감, 거리, 거절, 장난과 주도성은 공용 연인 공식이 아니라 이 인물과 바로 앞 순간에서 나옵니다. 자연스러운 현재 한국어를 쓰세요.
 ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}
