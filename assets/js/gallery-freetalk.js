@@ -298,6 +298,7 @@ class GalleryFreeTalk {
         this._activeTypingOwner = null;
 
         this.MEMORY_KEY = 'cupid_freetalk_memory';
+        this.PROMPT_EPOCH_MEMORY_KEY = 'cupid_freetalk_prompt_epochs_v1';
         this.HISTORY_WINDOW = 10;
 
         // 캐릭터 ID → 키 매핑
@@ -1182,7 +1183,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             // [Explicit Caching] 캐시 키 헤더 추가
             // 토큰 절감: 최근 5개 메시지 외의 이미지는 [이전 사진]으로 치환
             this._assertRequestContext(requestContext);
-            const _historyForRequest = this._sanitizeDainOutfitHistory(this._buildWindowedHistory(requestHistory), requestCharId);
+            const _historyForRequest = this._sanitizeDainOutfitHistory(this._buildWindowedHistory(requestHistory, requestCharId), requestCharId);
             let _optimized = (typeof window.optimizeImageHistory === 'function')
                 ? window.optimizeImageHistory(_historyForRequest, 5)
                 : _historyForRequest;
@@ -2113,18 +2114,53 @@ ${compactGalleryState}`;
         });
     }
 
-    _buildWindowedHistory(history = this.chatHistory) {
+    _buildWindowedHistory(history = this.chatHistory, charId = this.currentCharId) {
         if (!Array.isArray(history) || history.length === 0) return [];
-
-        const sysMsg = history[0];
-        if (!sysMsg || sysMsg.role !== 'system') {
-            return history.slice(-this.HISTORY_WINDOW);
+        if (typeof window.buildCupidPromptEpoch !== 'function') {
+            const sysMsg = history[0];
+            if (!sysMsg || sysMsg.role !== 'system') {
+                return history.slice(-this.HISTORY_WINDOW);
+            }
+            const rest = history.slice(1);
+            return rest.length <= this.HISTORY_WINDOW
+                ? history
+                : [sysMsg, ...rest.slice(-this.HISTORY_WINDOW)];
         }
 
-        const rest = history.slice(1);
-        if (rest.length <= this.HISTORY_WINDOW) return history;
+        const result = window.buildCupidPromptEpoch(history, {
+            state: this._loadPromptEpochState(charId),
+            maxMessages: this.HISTORY_WINDOW,
+            retainMessages: 2,
+            carryoverChars: 1800
+        });
+        this._savePromptEpochState(charId, result.state);
+        return result.messages;
+    }
 
-        return [sysMsg, ...rest.slice(-this.HISTORY_WINDOW)];
+    _loadPromptEpochState(charId) {
+        if (!charId) return null;
+        try {
+            const all = JSON.parse(localStorage.getItem(this.PROMPT_EPOCH_MEMORY_KEY) || '{}');
+            return all?.[charId] || null;
+        } catch (_) {
+            return null;
+        }
+    }
+
+    _savePromptEpochState(charId, state) {
+        if (!charId) return;
+        try {
+            const all = JSON.parse(localStorage.getItem(this.PROMPT_EPOCH_MEMORY_KEY) || '{}');
+            if (state?.version === 1) all[charId] = state;
+            else delete all[charId];
+            localStorage.setItem(this.PROMPT_EPOCH_MEMORY_KEY, JSON.stringify(all));
+        } catch (e) {
+            window.reportCupidCaughtError?.(e, {
+                source: 'cupid-gallery-freetalk',
+                errorType: 'gallery_freetalk_prompt_epoch_save_failed',
+                context: { charId }
+            });
+        }
     }
 
     _loadMemory(charId) {

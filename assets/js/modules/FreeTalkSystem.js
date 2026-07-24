@@ -934,9 +934,9 @@ class FreeTalkSystem {
             // - messages: 대화 기록 전체 (시스템 프롬프트 + 대화 내용)
             // [Explicit Caching] 캐시 키 — static 영역이 유저 중립(placeholder 유지)이라 전체 유저 공유 캐시 가능
             const _lang = window.GAME_LANG || document.documentElement.lang || 'ko';
-            // [슬라이딩 윈도우] system + 누적 요약 주입 + 최근 N개 메시지만 전송 (토큰 폭증 방지)
+            // [Prompt epoch] 구간 안에서는 append-only, 초과 시 고정 체크포인트와 최근 tail로 롤오버
             this._assertRequestContext(requestContext);
-            const _windowed = this._sanitizeDainOutfitHistory(this._buildWindowedHistory(requestHistory), charKey);
+            const _windowed = this._sanitizeDainOutfitHistory(this._buildWindowedHistory(requestHistory, charKey), charKey);
             // 토큰 절감: 최근 5개 메시지 외의 이미지는 [이전 사진]으로 치환
             let _optimized = (typeof window.optimizeImageHistory === 'function')
                 ? window.optimizeImageHistory(_windowed, 5)
@@ -1308,17 +1308,27 @@ class FreeTalkSystem {
     }
 
     /**
-     * Builds a bounded request history: system plus the latest HISTORY_WINDOW messages.
+     * Builds append-only request history inside a cacheable prompt epoch.
      */
-    _buildWindowedHistory(history = this.freeTalkHistory) {
+    _buildWindowedHistory(history = this.freeTalkHistory, charKey = this.currentCharKey) {
         if (!Array.isArray(history) || history.length === 0) return [];
-        const sysMsg = history[0];
-        if (!sysMsg || sysMsg.role !== 'system') return history;
+        if (typeof window.buildCupidPromptEpoch !== 'function') {
+            const sysMsg = history[0];
+            if (!sysMsg || sysMsg.role !== 'system') return history.slice(-this.HISTORY_WINDOW);
+            const rest = history.slice(1);
+            return rest.length <= this.HISTORY_WINDOW
+                ? history
+                : [sysMsg, ...rest.slice(-this.HISTORY_WINDOW)];
+        }
 
-        const rest = history.slice(1);
-        if (rest.length <= this.HISTORY_WINDOW) return history;
-
-        return [sysMsg, ...rest.slice(-this.HISTORY_WINDOW)];
+        const result = window.buildCupidPromptEpoch(history, {
+            state: this.stateManager.getChatPromptEpoch?.(charKey),
+            maxMessages: this.HISTORY_WINDOW,
+            retainMessages: 2,
+            carryoverChars: 1800
+        });
+        this.stateManager.setChatPromptEpoch?.(charKey, result.state);
+        return result.messages;
     }
 
     _buildInWorldUserRoleBlock(messages) {

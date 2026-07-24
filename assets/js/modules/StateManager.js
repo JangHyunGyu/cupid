@@ -56,6 +56,9 @@ class StateManager {
          */
         this.chatMemories = {};
 
+        /** Character-specific API prompt epoch checkpoints. */
+        this.chatPromptEpochs = {};
+
         /**
          * 게임 플래그들 (이벤트 발생 여부 기록)
          * - 예: { metSeoyeon: true, knowsName_Seoyeon: true, ... }
@@ -154,16 +157,17 @@ class StateManager {
 
     /**
      * AI 대화 기록 저장
-     * - 최근 10개의 대화만 유지 (메모리 절약)
+     * - 최근 20개 대화를 유지해 현재 prompt epoch anchor를 보존
      * - 시스템 프롬프트는 제외하고 저장
      *
      * @param {string} charName - 캐릭터 이름
      * @param {Array} history - 대화 기록 배열 [{role, content}, ...]
      */
     setChatMemory(charName, history) {
-        // 시스템 메시지 제외, 최근 10개만 저장
+        // 시스템 메시지 제외, 최근 20개 저장
         const chatOnly = history.filter(m => m.role !== "system");
-        this.chatMemories[charName] = chatOnly.slice(-10);
+        this.chatMemories[charName] = chatOnly.slice(-20);
+        if (chatOnly.length === 0) delete this.chatPromptEpochs[charName];
     }
 
     /**
@@ -172,6 +176,23 @@ class StateManager {
      * @returns {Array} 대화 기록 (없으면 빈 배열)
      */
     getChatMemory(charName) { return this.chatMemories[charName] || []; }
+
+    setChatPromptEpoch(charName, state) {
+        if (!charName) return;
+        if (!state || state.version !== 1) {
+            delete this.chatPromptEpochs[charName];
+            return;
+        }
+        this.chatPromptEpochs[charName] = JSON.parse(JSON.stringify(state));
+    }
+
+    getChatPromptEpoch(charName) {
+        return this.chatPromptEpochs[charName] || null;
+    }
+
+    clearChatPromptEpoch(charName) {
+        delete this.chatPromptEpochs[charName];
+    }
 
     /**
      * 전체 게임 상태를 객체로 내보내기 (저장용)
@@ -187,6 +208,7 @@ class StateManager {
             currentDay: this.currentDay,
             stats: JSON.parse(JSON.stringify(this.stats)),
             chatMemories: JSON.parse(JSON.stringify(this.chatMemories)),
+            chatPromptEpochs: JSON.parse(JSON.stringify(this.chatPromptEpochs)),
             flags: { ...this.flags }
         };
     }
@@ -204,6 +226,7 @@ class StateManager {
         if (data.currentDay !== undefined) this.currentDay = data.currentDay;
         if (data.stats) this.stats = data.stats;
         if (data.chatMemories) this.chatMemories = data.chatMemories;
+        if (data.chatPromptEpochs) this.chatPromptEpochs = data.chatPromptEpochs;
         if (data.flags) this.flags = data.flags;
 
         console.log('[StateManager] 상태 복원 완료');
@@ -218,6 +241,7 @@ class StateManager {
         if (key === 'currentDay') return this.currentDay;
         if (key === 'stats') return this.stats;
         if (key === 'chatMemories') return this.chatMemories;
+        if (key === 'chatPromptEpochs') return this.chatPromptEpochs;
         return this.flags[key];
     }
 

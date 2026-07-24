@@ -51,7 +51,139 @@ const AI_MODEL_ID = "deepseek-v4-flash";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.98";
+const ASSET_VERSION = "2.9.99";
+
+const CUPID_PROMPT_EPOCH_VERSION = 1;
+
+function _getCupidPromptEpochMessageText(message) {
+    const content = message?.content;
+    if (typeof content === 'string') return content;
+    if (!Array.isArray(content)) return String(content || '');
+
+    return content.map(part => {
+        if (typeof part === 'string') return part;
+        if (part?.type === 'text') return part.text || '';
+        if (part?.type === 'image_url' || part?.image_url) return '[image attachment]';
+        return '';
+    }).filter(Boolean).join(' ');
+}
+
+function _getCupidPromptEpochMessageKey(message) {
+    const text = _getCupidPromptEpochMessageText(message);
+    let hash = 2166136261;
+    for (let i = 0; i < text.length; i++) {
+        hash ^= text.charCodeAt(i);
+        hash = Math.imul(hash, 16777619);
+    }
+
+    return [
+        message?.role || '',
+        message?.speakerId || message?.speakerName || '',
+        Number(message?.timestamp || message?.ts || 0) || '',
+        (hash >>> 0).toString(36)
+    ].join('|');
+}
+
+function _compactCupidPromptEpochMessages(messages = []) {
+    return (Array.isArray(messages) ? messages : []).map(message => {
+        const rawText = _getCupidPromptEpochMessageText(message)
+            .replace(/data:image\/[^;]+;base64,[a-zA-Z0-9+/=\s]+/g, '[image attachment]')
+            .replace(/===CACHE_BOUNDARY===/g, '')
+            .replace(/\r\n?/g, '\n')
+            .replace(/[ \t]+/g, ' ')
+            .replace(/\n{3,}/g, '\n\n')
+            .trim();
+        if (!rawText) return '';
+
+        const text = rawText.length > 420 ? `${rawText.slice(0, 417).trim()}...` : rawText;
+        const label = message?.speakerName || (message?.role === 'assistant' ? 'Character' : 'User');
+        return `${label}: ${text}`;
+    }).filter(Boolean).join('\n');
+}
+
+function _mergeCupidPromptEpochCarryover(previousCarryover, droppedMessages, maxChars) {
+    const nextBlock = _compactCupidPromptEpochMessages(droppedMessages);
+    let merged = [String(previousCarryover || '').trim(), nextBlock].filter(Boolean).join('\n');
+    if (merged.length <= maxChars) return merged;
+
+    merged = merged.slice(-maxChars);
+    const firstLineBreak = merged.indexOf('\n');
+    if (firstLineBreak >= 0 && firstLineBreak < 420) merged = merged.slice(firstLineBreak + 1);
+    return `...\n${merged}`;
+}
+
+/**
+ * Keeps request history append-only inside an epoch. Once the epoch exceeds its
+ * cap, older turns become a frozen checkpoint and only a small verbatim tail is
+ * carried into the next epoch.
+ */
+function buildCupidPromptEpoch(history, options = {}) {
+    if (!Array.isArray(history) || history.length === 0) {
+        return { messages: [], state: null };
+    }
+
+    const systemMessage = history[0]?.role === 'system' ? history[0] : null;
+    const source = (systemMessage ? history.slice(1) : history).filter(Boolean);
+    if (source.length === 0) {
+        return { messages: systemMessage ? [systemMessage] : [], state: null };
+    }
+
+    const maxMessages = Math.max(4, Number(options.maxMessages) || 10);
+    const retainMessages = Math.max(2, Math.min(maxMessages - 1, Number(options.retainMessages) || 2));
+    const carryoverChars = Math.max(800, Number(options.carryoverChars) || 1800);
+    const savedState = options.state?.version === CUPID_PROMPT_EPOCH_VERSION ? options.state : {};
+    const state = {
+        version: CUPID_PROMPT_EPOCH_VERSION,
+        anchorKeys: Array.isArray(savedState.anchorKeys) ? savedState.anchorKeys : [],
+        carryover: String(savedState.carryover || '')
+    };
+
+    let anchorIndex = 0;
+    if (state.anchorKeys.length > 0) {
+        anchorIndex = -1;
+        for (let i = 0; i <= source.length - state.anchorKeys.length; i++) {
+            const matches = state.anchorKeys.every((key, offset) =>
+                _getCupidPromptEpochMessageKey(source[i + offset]) === key
+            );
+            if (matches) {
+                anchorIndex = i;
+                break;
+            }
+        }
+        if (anchorIndex < 0) anchorIndex = 0;
+    }
+
+    let epochMessages = source.slice(anchorIndex);
+    if (epochMessages.length > maxMessages) {
+        const droppedMessages = epochMessages.slice(0, -retainMessages);
+        epochMessages = epochMessages.slice(-retainMessages);
+        state.carryover = _mergeCupidPromptEpochCarryover(
+            state.carryover,
+            droppedMessages,
+            carryoverChars
+        );
+    }
+
+    state.anchorKeys = epochMessages
+        .slice(0, Math.min(2, epochMessages.length))
+        .map(_getCupidPromptEpochMessageKey);
+    state.updatedAt = Date.now();
+
+    const carryover = state.carryover.trim();
+    const checkpointMessage = carryover ? {
+        role: 'system',
+        content: `[Earlier conversation checkpoint]\nThis is a frozen compact handoff from completed earlier turns. If it conflicts with newer verbatim messages, prefer the newer messages.\n${carryover}`
+    } : null;
+
+    return {
+        messages: [
+            ...(systemMessage ? [systemMessage] : []),
+            ...(checkpointMessage ? [checkpointMessage] : []),
+            ...epochMessages
+        ],
+        state
+    };
+}
 
 /**
  * 프리토킹(자유 대화) 기본 최대 턴 수
@@ -704,6 +836,7 @@ window.API_ENDPOINT = API_ENDPOINT;
 window.AI_API_ENDPOINT = AI_API_ENDPOINT;
 window.AI_MODEL_ID = AI_MODEL_ID;
 window.ASSET_VERSION = ASSET_VERSION;
+window.buildCupidPromptEpoch = buildCupidPromptEpoch;
 window.DEFAULT_MAX_FREE_TALK_TURNS = DEFAULT_MAX_FREE_TALK_TURNS;
 window.SEND_ICON = SEND_ICON;
 window.REGISTERED_CG_IDS = REGISTERED_CG_IDS;
