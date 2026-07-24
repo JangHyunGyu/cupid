@@ -458,6 +458,31 @@ assert(context.window.buildCupidRoleplayQualityRepairBlock(
     'de',
     'Nurse'
 ).includes('hält seinem/deinem Blick stand'), 'German repair block lost the correct standhalten form');
+const recoverQualityFallback = context.window.recoverCupidRoleplayQualityFallback;
+assert(typeof recoverQualityFallback === 'function', 'Cupid roleplay quality fallback recovery is missing');
+const recoveredKoreanReply = recoverQualityFallback({
+    text: '*당신을 바라본다.* 괜찮아?',
+    segments: [
+        { type: 'narration', text: '당신을 바라본다.' },
+        { type: 'dialogue', text: '괜찮아?' }
+    ],
+    expression: 'soft',
+    affinity: 1
+}, { lang: 'ko', charKey: 'Yuna' });
+assert(recoveredKoreanReply?.text === '괜찮아?'
+    && recoveredKoreanReply.segments.length === 1
+    && recoveredKoreanReply.segments[0].type === 'dialogue',
+'Persistent player-POV narration was not removed while preserving valid dialogue');
+assert(recoverQualityFallback({
+    text: '*당신을 바라본다.*',
+    segments: [{ type: 'narration', text: '당신을 바라본다.' }]
+}, { lang: 'ko', charKey: 'Yuna' }) === null,
+'Quality fallback must not commit an empty response after removing invalid narration');
+assert(recoverQualityFallback({
+    text: 'Ihr langes schwarzes Haar fällt über die Schulter.',
+    segments: [{ type: 'dialogue', text: 'Ihr langes schwarzes Haar fällt über die Schulter.' }]
+}, { lang: 'de', charKey: 'Yuna' }) === null,
+'Quality fallback must not bypass character canon failures');
 
 verifyLocalizedFreeTalkInventory();
 
