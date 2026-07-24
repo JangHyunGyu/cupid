@@ -1100,6 +1100,57 @@ function getCupidRoleplayQualityIssue(parsed = {}, { lang = 'ko', charKey = '' }
     };
 }
 
+function recoverCupidRoleplayQualityFallback(parsed = {}, { lang = 'ko', charKey = '' } = {}) {
+    const initialIssue = getCupidRoleplayQualityIssue(parsed, { lang, charKey });
+    const recoverableIssues = new Set([
+        'narration_player_point_of_view',
+        'unicode_replacement_character'
+    ]);
+    if (!initialIssue.shouldRetry
+        || !Array.isArray(parsed?.segments)
+        || parsed.segments.length === 0
+        || initialIssue.issues.some(issue => !recoverableIssues.has(issue))) {
+        return null;
+    }
+
+    const pointOfViewPattern = getCupidNarrationPointOfViewPattern(lang);
+    let droppedSegments = 0;
+    const segments = parsed.segments.flatMap(segment => {
+        if (!segment || typeof segment !== 'object') return [];
+        const text = String(segment.text || '').trim();
+        if (!text) return [];
+        const type = String(segment.type || '').toLowerCase() === 'dialogue'
+            ? 'dialogue'
+            : 'narration';
+        const isCorrupt = text.includes('\uFFFD');
+        const hasPlayerPointOfView = type !== 'dialogue' && pointOfViewPattern.test(text);
+        if (isCorrupt || hasPlayerPointOfView) {
+            droppedSegments += 1;
+            return [];
+        }
+        return [{ ...segment, type, text }];
+    });
+
+    if (droppedSegments === 0 || segments.length === 0) return null;
+
+    const recovered = {
+        ...parsed,
+        text: segments.map(segment => (
+            segment.type === 'narration' ? `*${segment.text}*` : segment.text
+        )).join(' ').trim(),
+        segments,
+        qualityRecovery: {
+            reason: initialIssue.reason,
+            droppedSegments
+        }
+    };
+    if (!recovered.text
+        || getCupidRoleplayQualityIssue(recovered, { lang, charKey }).shouldRetry) {
+        return null;
+    }
+    return recovered;
+}
+
 function buildCupidRoleplayQualityRepairBlock(issue = {}, lang = 'ko', charKey = '') {
     const languageNames = {
         ko: 'Korean',
@@ -1126,6 +1177,7 @@ function buildCupidRoleplayQualityRepairBlock(issue = {}, lang = 'ko', charKey =
 
 window.getCupidCharacterCanonGuard = getCupidCharacterCanonGuard;
 window.getCupidRoleplayQualityIssue = getCupidRoleplayQualityIssue;
+window.recoverCupidRoleplayQualityFallback = recoverCupidRoleplayQualityFallback;
 window.buildCupidRoleplayQualityRepairBlock = buildCupidRoleplayQualityRepairBlock;
 /**
  * 시스템 프롬프트 생성 함수

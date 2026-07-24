@@ -1329,10 +1329,24 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 parsed = this._parseResponse(reply);
             }
 
-            const finalQualityIssue = window.getCupidRoleplayQualityIssue?.(parsed, {
+            let finalQualityIssue = window.getCupidRoleplayQualityIssue?.(parsed, {
                 lang: this.lang,
                 charKey: requestCharKey || requestCharId
             });
+            if (finalQualityIssue?.shouldRetry) {
+                const recovered = window.recoverCupidRoleplayQualityFallback?.(parsed, {
+                    lang: this.lang,
+                    charKey: requestCharKey || requestCharId
+                });
+                if (recovered) {
+                    console.warn('[Cupid GalleryFreeTalk] Kept the valid response segments after quality retries were exhausted', recovered.qualityRecovery);
+                    parsed = recovered;
+                    finalQualityIssue = window.getCupidRoleplayQualityIssue?.(parsed, {
+                        lang: this.lang,
+                        charKey: requestCharKey || requestCharId
+                    });
+                }
+            }
             if (finalQualityIssue?.shouldRetry) {
                 const qualityError = new Error('AI response failed roleplay quality validation. Please try again.');
                 qualityError.reason = 'ROLEPLAY_QUALITY_REJECTED';
