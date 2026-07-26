@@ -3,7 +3,7 @@
 
     if (window.__cupidErrorReporterInstalled) return;
 
-    var VERSION = '20260717-resilient-failover';
+    var VERSION = '20260727-offline-analytics-filter';
     var ERROR_ENDPOINT = 'https://chatbot-api.yama5993.workers.dev/error-logs';
     var QUEUE_KEY = 'cupid-error-queue-v2';
     var SESSION_KEY = 'cupid-error-session-v2';
@@ -282,6 +282,10 @@
         // the system sans-serif font and the app remains fully functional.
         if (tagName === 'LINK'
             && /\/assets\/vendor\/pretendard\/pretendard\.css(?:[?#]|$)/i.test(resource || '')) {
+            return true;
+        }
+        if (tagName === 'SCRIPT'
+            && /\/assets\/js\/ga-engagement\.js(?:[?#]|$)/i.test(resource || '')) {
             return true;
         }
         return false;

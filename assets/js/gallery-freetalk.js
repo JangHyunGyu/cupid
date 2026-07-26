@@ -1237,11 +1237,26 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                         ...(_turnMeta || {})
                     })
                 };
+                const fetchWithTransientRetry = async (endpoint) => {
+                    let lastError = null;
+                    for (let attempt = 0; attempt < 2; attempt += 1) {
+                        try {
+                            return await fetch(endpoint, requestInit);
+                        } catch (error) {
+                            lastError = error;
+                            this._assertRequestContext(requestContext);
+                            if (!(error instanceof TypeError) || navigator.onLine === false || attempt >= 1) throw error;
+                            await new Promise(resolve => window.setTimeout(resolve, 400));
+                            this._assertRequestContext(requestContext);
+                        }
+                    }
+                    throw lastError;
+                };
                 let response;
                 let primaryError = null;
                 _lastAiEndpoint = aiEndpoint;
                 try {
-                    response = await fetch(aiEndpoint, requestInit);
+                    response = await fetchWithTransientRetry(aiEndpoint);
                     this._assertRequestContext(requestContext);
                 } catch (error) {
                     this._assertRequestContext(requestContext);
@@ -1253,7 +1268,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 ) && fallbackEndpoint && fallbackEndpoint !== aiEndpoint;
                 if (canFallback) {
                     _lastAiEndpoint = fallbackEndpoint;
-                    response = await fetch(fallbackEndpoint, requestInit);
+                    response = await fetchWithTransientRetry(fallbackEndpoint);
                     this._assertRequestContext(requestContext);
                 } else if (primaryError) {
                     throw primaryError;
@@ -1412,7 +1427,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             }
             if (!err?.__staleTurnHandled) {
                 console.error('[GalleryFreeTalk] API 오류:', err);
-                if (typeof window.logCupidError === 'function') {
+                const isOfflineTransportFailure = navigator.onLine === false
+                    && (err instanceof TypeError || /^(?:Failed to fetch|Load failed|NetworkError)$/i.test(err?.message || ''));
+                if (typeof window.logCupidError === 'function' && !isOfflineTransportFailure) {
                     window.logCupidError(err, {
                         source: 'cupid-gallery-freetalk',
                         errorType: err?.reason === 'ROLEPLAY_QUALITY_REJECTED'
