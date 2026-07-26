@@ -996,11 +996,26 @@ class FreeTalkSystem {
                         ...(_turnMeta || {})
                     })
                 };
+                const fetchWithTransientRetry = async (endpoint) => {
+                    let lastError = null;
+                    for (let attempt = 0; attempt < 2; attempt += 1) {
+                        try {
+                            return await fetch(endpoint, requestInit);
+                        } catch (error) {
+                            lastError = error;
+                            this._assertRequestContext(requestContext);
+                            if (!(error instanceof TypeError) || navigator.onLine === false || attempt >= 1) throw error;
+                            await new Promise(resolve => window.setTimeout(resolve, 400));
+                            this._assertRequestContext(requestContext);
+                        }
+                    }
+                    throw lastError;
+                };
                 let response;
                 let primaryError = null;
                 _lastAiEndpoint = aiEndpoint;
                 try {
-                    response = await fetch(aiEndpoint, requestInit);
+                    response = await fetchWithTransientRetry(aiEndpoint);
                     this._assertRequestContext(requestContext);
                 } catch (error) {
                     this._assertRequestContext(requestContext);
@@ -1012,7 +1027,7 @@ class FreeTalkSystem {
                 ) && fallbackEndpoint && fallbackEndpoint !== aiEndpoint;
                 if (canFallback) {
                     _lastAiEndpoint = fallbackEndpoint;
-                    response = await fetch(fallbackEndpoint, requestInit);
+                    response = await fetchWithTransientRetry(fallbackEndpoint);
                     this._assertRequestContext(requestContext);
                 } else if (primaryError) {
                     throw primaryError;
@@ -1210,7 +1225,9 @@ class FreeTalkSystem {
 
             const langErr = window.GAME_LANG || document.documentElement.lang || 'ko';
 
-            if (typeof window.logCupidError === 'function') {
+            const isOfflineTransportFailure = navigator.onLine === false
+                && (error instanceof TypeError || /^(?:Failed to fetch|Load failed|NetworkError)$/i.test(error?.message || ''));
+            if (typeof window.logCupidError === 'function' && !isOfflineTransportFailure) {
                 window.logCupidError(error, {
                     source: 'cupid-freetalk',
                     errorType: error?.reason === 'ROLEPLAY_QUALITY_REJECTED'

@@ -648,6 +648,9 @@ try {
         || !errorReporterContent.includes('optional, same-origin font stylesheet')) {
         errors.push('[ERROR_REPORTER] optional local Pretendard stylesheet filter missing');
     }
+    if (!errorReporterContent.includes('ga-engagement\\.js')) {
+        errors.push('[ERROR_REPORTER] optional engagement analytics script filter missing');
+    }
     const seoDir = path.join(__dirname, 'seo');
     const seoHtmlFiles = fs.readdirSync(seoDir).filter(file => file.endsWith('.html')).map(file => ({
         name: `seo/${file}`,
@@ -687,8 +690,8 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.99') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.99가 아님: ' + loaderVersion);
+    if (loaderVersion !== '2.9.100') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.100가 아님: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');
@@ -1668,6 +1671,14 @@ try {
         || !gftContent.includes('fallbackEndpoint !== aiEndpoint')
         || !gftContent.includes('GALLERY_AI_FAILOVER_HTTP_STATUSES')) {
         errors.push('[FREETALK_API] game and gallery chat requests must keep network and HTTP-status failover');
+    }
+    if (!ftSysContent.includes('fetchWithTransientRetry')
+        || !gftContent.includes('fetchWithTransientRetry')) {
+        errors.push('[FREETALK_API] game and gallery chat requests must retry transient fetch failures before failover');
+    }
+    if (!ftSysContent.includes('isOfflineTransportFailure')
+        || !gftContent.includes('isOfflineTransportFailure')) {
+        errors.push('[FREETALK_API] offline transport failures must not be persisted to D1');
     }
 } catch (e) {
     errors.push('[FREETALK_API] request-safety validation failed: ' + e.message);
