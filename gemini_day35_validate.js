@@ -1,10 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-
-// Read API key
-const envContent = fs.readFileSync(path.join('d:/workspace/nevergrad/.env'), 'utf8');
-const API_KEY = envContent.match(/GEMINI_API_KEY=(.+)/)?.[1]?.trim();
-if (!API_KEY) { console.error('API key not found'); process.exit(1); }
+const { callDeepSeek } = require('./deepseek_api');
 
 async function main() {
     // Read SCENARIO.md and extract Day 3 후반 ~ end (from line 2702)
@@ -41,31 +37,8 @@ SCENARIO.md (Day 3 후반~끝):
 ${truncated}`;
 
     console.log(`Prompt length: ${prompt.length} chars`);
-    console.log('Sending to Gemini API...');
-
-    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-pro-preview:generateContent?key=${API_KEY}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            contents: [{ parts: [{ text: prompt }] }],
-            generationConfig: { temperature: 0.2, maxOutputTokens: 8192 }
-        })
-    });
-
-    const data = await res.json();
-
-    if (!res.ok) {
-        console.error('API Error:', JSON.stringify(data, null, 2));
-        fs.writeFileSync('d:/workspace/cupid/gemini_day35_validate_result.json', JSON.stringify(data, null, 2));
-        process.exit(1);
-    }
-
-    const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
-    if (!text) {
-        console.error('No text in response:', JSON.stringify(data, null, 2));
-        fs.writeFileSync('d:/workspace/cupid/gemini_day35_validate_result.json', JSON.stringify(data, null, 2));
-        process.exit(1);
-    }
+    console.log('Sending to official DeepSeek API...');
+    const text = await callDeepSeek(prompt, { temperature: 0.2, maxTokens: 8192, json: true });
 
     console.log('Response received. Parsing...');
     const cleaned = text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();

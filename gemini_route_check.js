@@ -4,22 +4,10 @@
  */
 const fs = require('fs');
 const path = require('path');
-
-const API_KEY = fs.readFileSync(path.join(__dirname, '..', 'nevergrad', '.env'), 'utf8')
-    .match(/GEMINI_API_KEY=(.+)/)?.[1]?.trim();
-const ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-pro-preview:generateContent?key=${API_KEY}`;
+const { callDeepSeek } = require('./deepseek_api');
 
 async function callGemini(prompt) {
-    const res = await fetch(ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            contents: [{ parts: [{ text: prompt }] }],
-            generationConfig: { temperature: 0.1, maxOutputTokens: 8192 }
-        })
-    });
-    const data = await res.json();
-    const text = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+    const text = await callDeepSeek(prompt, { temperature: 0.1, maxTokens: 8192, json: true });
     const cleaned = text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
     try { return JSON.parse(cleaned); }
     catch { return { raw: text.substring(0, 3000) }; }

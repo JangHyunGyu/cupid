@@ -385,6 +385,10 @@ class UIManager {
             alert({ es: 'Solo se pueden subir archivos de imagen.', ja: '画像ファイルのみアップロード可能です。', en: 'Only image files can be uploaded.', fr: 'Seuls les fichiers image peuvent être téléchargés.', de: 'Nur Bilddateien können hochgeladen werden.', pt: 'Apenas arquivos de imagem podem ser enviados.' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 파일만 업로드 가능합니다.');
             return;
         }
+        if (file.size > 50 * 1024 * 1024) {
+            alert({ es: 'La imagen supera el límite de 50 MB.', ja: '画像サイズが50MBを超えています。', en: 'The image exceeds the 50 MB limit.', fr: "L’image dépasse la limite de 50 Mo.", de: 'Das Bild überschreitet das Limit von 50 MB.', pt: 'A imagem excede o limite de 50 MB.' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 크기가 50MB를 초과합니다.');
+            return;
+        }
 
         const uploadVersion = ++this._imageUploadVersion;
         const reader = new FileReader();
