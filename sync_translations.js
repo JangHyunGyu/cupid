@@ -2,16 +2,11 @@
 /**
  * sync_translations.js
  * SCENARIO.md 수정 후 변경된 ko 텍스트를 5개 언어로 번역 동기화
- * Gemini API 사용
+ * 공식 DeepSeek API 사용
  */
 const fs = require('fs');
 const path = require('path');
-
-const API_KEY = fs.readFileSync(path.join(__dirname, '..', '.env.txt'), 'utf8')
-    .split('\n').find(l => l.startsWith('GEMINI_API_KEY='))
-    ?.split('=')[1]?.trim();
-
-if (!API_KEY) { console.error('GEMINI_API_KEY not found'); process.exit(1); }
+const { callDeepSeek } = require('./deepseek_api');
 
 const i18nDir = path.join(__dirname, 'assets', 'js', 'i18n');
 const LANGS = ['en', 'ja', 'es', 'fr', 'de', 'pt'];
@@ -57,27 +52,7 @@ Translate each numbered Korean text to ${langName}. Return ONLY a JSON object wi
 
 ${JSON.stringify(koTexts, null, 2)}`;
 
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
-    const body = {
-        contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: { temperature: 0.3, responseMimeType: "application/json" }
-    };
-
-    const res = await fetch(url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(body)
-    });
-
-    if (!res.ok) {
-        const err = await res.text();
-        throw new Error(`Gemini API error (${res.status}): ${err}`);
-    }
-
-    const data = await res.json();
-    const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
-    if (!text) throw new Error('Empty Gemini response');
-
+    const text = await callDeepSeek(prompt, { temperature: 0.3, maxTokens: 8192, json: true });
     return JSON.parse(text);
 }
 

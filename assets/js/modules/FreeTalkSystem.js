@@ -971,9 +971,11 @@ class FreeTalkSystem {
             _lastTurnMeta = _turnMeta;
             requestContext.turnMeta = _turnMeta;
             this._activeChatTurnId = _turnMeta?.turnId || null;
-            const aiEndpoint = (typeof AI_API_ENDPOINT !== 'undefined' && AI_API_ENDPOINT) ? AI_API_ENDPOINT : API_ENDPOINT;
+            const aiEndpoint = (typeof AI_API_ENDPOINT !== 'undefined' && AI_API_ENDPOINT)
+                ? AI_API_ENDPOINT
+                : 'https://openrouter-api.yama5993.workers.dev/';
             _lastAiEndpoint = aiEndpoint;
-            const fallbackEndpoint = (typeof API_ENDPOINT !== 'undefined' && API_ENDPOINT) ? API_ENDPOINT : window.API_ENDPOINT;
+            const fallbackEndpoint = ''; // AI text must not fall back to the legacy Gemini endpoint.
             const requestCupidReplyData = async (messages) => {
                 const requestInit = {
                     method: "POST",

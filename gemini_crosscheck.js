@@ -4,10 +4,7 @@
  */
 const fs = require('fs');
 const path = require('path');
-
-const API_KEY = fs.readFileSync(path.join(__dirname, '..', 'nevergrad', '.env'), 'utf8')
-    .match(/GEMINI_API_KEY=(.+)/)?.[1]?.trim();
-const ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-pro-preview:generateContent?key=${API_KEY}`;
+const { callDeepSeek } = require('./deepseek_api');
 
 async function crossCheck(dayRange, changes, codeFiles) {
     const scenarioMd = fs.readFileSync(path.join(__dirname, 'SCENARIO.md'), 'utf8');
@@ -51,17 +48,7 @@ ${codeContent}
 ## 응답 형식 (JSON만, 마크다운 코드블록 없이):
 {"pass": true/false, "verified_items": ["올바르게 수정된 항목"], "remaining_issues": [{"node_id": "문제 노드", "severity": "high/medium/low", "description": "문제 설명", "suggested_fix": "수정 제안"}], "summary": "전체 평가"}`;
 
-    const res = await fetch(ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            contents: [{ parts: [{ text: prompt }] }],
-            generationConfig: { temperature: 0.2, maxOutputTokens: 8192 }
-        })
-    });
-
-    const data = await res.json();
-    const text = data.candidates?.[0]?.content?.parts?.[0]?.text || JSON.stringify(data);
+    const text = await callDeepSeek(prompt, { temperature: 0.2, maxTokens: 8192, json: true });
     const cleaned = text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
 
     try {

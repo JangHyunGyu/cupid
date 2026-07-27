@@ -1212,9 +1212,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             _lastTurnMeta = _turnMeta;
             requestContext.turnMeta = _turnMeta;
             this._activeChatTurnId = _turnMeta?.turnId || null;
-            const aiEndpoint = window.AI_API_ENDPOINT || window.API_ENDPOINT || 'https://chatbot-api.yama5993.workers.dev/';
+            const aiEndpoint = window.AI_API_ENDPOINT || 'https://openrouter-api.yama5993.workers.dev/';
             _lastAiEndpoint = aiEndpoint;
-            const fallbackEndpoint = window.API_ENDPOINT || 'https://chatbot-api.yama5993.workers.dev/';
+            const fallbackEndpoint = ''; // AI text must not fall back to the legacy Gemini endpoint.
             const requestCupidGalleryReplyData = async (messages) => {
                 const requestInit = {
                     method: 'POST',
@@ -1915,6 +1915,18 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 'Seuls les fichiers image peuvent être téléchargés.',
                 'Nur Bilddateien können hochgeladen werden.',
                 'Somente arquivos de imagem podem ser enviados.'
+            ));
+            return;
+        }
+        if (file.size > 50 * 1024 * 1024) {
+            alert(this._L(
+                '이미지 크기가 50MB를 초과합니다.',
+                'The image exceeds the 50 MB limit.',
+                'La imagen supera el límite de 50 MB.',
+                '画像サイズが50MBを超えています。',
+                "L’image dépasse la limite de 50 Mo.",
+                'Das Bild überschreitet das Limit von 50 MB.',
+                'A imagem excede o limite de 50 MB.'
             ));
             return;
         }

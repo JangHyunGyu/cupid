@@ -4,16 +4,7 @@
  */
 const fs = require('fs');
 const path = require('path');
-
-const API_KEY = fs.readFileSync(path.join(__dirname, '..', 'nevergrad', '.env'), 'utf8')
-    .match(/GEMINI_API_KEY=(.+)/)?.[1]?.trim();
-
-if (!API_KEY) {
-    console.error('GEMINI_API_KEY not found');
-    process.exit(1);
-}
-
-const ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-pro-preview:generateContent?key=${API_KEY}`;
+const { callDeepSeek } = require('./deepseek_api');
 
 async function reviewScenario(scenarioContent, i18nContent, issueDesc) {
     const prompt = `당신은 비주얼 노벨 시나리오 개연성 전문 검수자입니다.
@@ -59,34 +50,14 @@ ${issueDesc}
 
 JSON만 출력하세요. 마크다운 코드블록 없이 순수 JSON만.`;
 
-    const body = {
-        contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: {
-            temperature: 0.2,
-            maxOutputTokens: 8192
-        }
-    };
-
-    const res = await fetch(ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(body)
-    });
-
-    if (!res.ok) {
-        const err = await res.text();
-        throw new Error(`Gemini API error ${res.status}: ${err}`);
-    }
-
-    const data = await res.json();
-    const text = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+    const text = await callDeepSeek(prompt, { temperature: 0.2, maxTokens: 8192, json: true });
 
     // JSON 파싱 (마크다운 코드블록 제거)
     const cleaned = text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
     try {
         return JSON.parse(cleaned);
     } catch (e) {
-        console.error('Failed to parse Gemini response:', text.substring(0, 500));
+        console.error('Failed to parse DeepSeek response:', text.substring(0, 500));
         return { pass: false, issues: [], summary: 'Parse error: ' + text.substring(0, 200) };
     }
 }
