@@ -680,6 +680,23 @@ try {
     if (modulesConfigContent.includes("errorType: 'chat_log_save_failed'")) {
         errors.push('[CHAT_LOG_QUEUE] 일시적 전송 실패를 D1 오류로 재보고하는 레거시 경로가 남아 있음');
     }
+    const chatRenderReceiptContent = [
+        modulesConfigContent,
+        fs.readFileSync(path.join(__dirname, 'assets/js/modules/DialogueSystem.js'), 'utf8'),
+        fs.readFileSync(path.join(__dirname, 'assets/js/modules/FreeTalkSystem.js'), 'utf8'),
+        fs.readFileSync(path.join(__dirname, 'assets/js/gallery-freetalk.js'), 'utf8')
+    ].join('\n');
+    for (const marker of [
+        "chat-logs/render-ack",
+        'assistantRenderReceipt',
+        'getChatRenderReceipt',
+        '_getChatRenderReceipt',
+        'renderedContent'
+    ]) {
+        if (!chatRenderReceiptContent.includes(marker)) {
+            errors.push('[CHAT_RENDER_ACK] 실제 화면 렌더 영수증 마커 누락: ' + marker);
+        }
+    }
 
     const versions = { 'loaders/config.js(LoaderConfig)': loaderVersion, 'game-loader.js': gameLoaderVersion, 'gallery-loader.js': galleryLoaderVersion, 'modules/config.js(ASSET_VERSION)': assetVersion };
     for (const [label, value] of Object.entries(versions)) {
@@ -690,8 +707,8 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.100') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.100가 아님: ' + loaderVersion);
+    if (loaderVersion !== '2.9.101') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.101가 아님: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');

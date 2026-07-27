@@ -1172,6 +1172,11 @@ class FreeTalkSystem {
                     parsedSegments,
                     () => this._isRequestContextCurrent(requestContext)
                 );
+                const assistantRenderReceipt = this.dialogueSystem.getChatRenderReceipt(
+                    reply,
+                    scene.name,
+                    parsedSegments
+                );
 
                 // 화면 렌더가 성공한 응답에만 표정과 호감도를 적용한다.
                 this._assertRequestContext(requestContext, data);
@@ -1197,7 +1202,8 @@ class FreeTalkSystem {
                         userContent: finalContent,
                         assistantContent: reply,
                         sessionId: requestSceneId || '',
-                        context: '1:1'
+                        context: '1:1',
+                        assistantRenderReceipt
                     });
                 }
             }
