@@ -51,7 +51,7 @@ const AI_MODEL_ID = "deepseek-v4-flash";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.100";
+const ASSET_VERSION = "2.9.101";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -574,7 +574,18 @@ function enqueueCupidChatLog(entry) {
     return writeCupidChatLogQueue(queue);
 }
 
-function makeCupidChatLogEntry({ userId, charId, sessionId, role, content, context, playerName, language, appId }) {
+function makeCupidChatLogEntry({
+    userId,
+    charId,
+    sessionId,
+    role,
+    content,
+    context,
+    playerName,
+    language,
+    appId,
+    clientMsgId = ''
+}) {
     const createdAt = new Date().toISOString();
     return {
         userId,
@@ -587,7 +598,8 @@ function makeCupidChatLogEntry({ userId, charId, sessionId, role, content, conte
         language,
         appId,
         createdAt,
-        clientMsgId: `cupid-${Date.now().toString(36)}-${role.charAt(0)}-${Math.random().toString(36).slice(2, 10)}`
+        clientMsgId: String(clientMsgId || '').trim()
+            || `cupid-${Date.now().toString(36)}-${role.charAt(0)}-${Math.random().toString(36).slice(2, 10)}`
     };
 }
 
@@ -654,8 +666,62 @@ async function flushCupidChatLogQueue() {
     return cupidChatLogFlushPromise;
 }
 
+function normalizeCupidRenderedText(value) {
+    return String(value || '').replace(/\s+/g, ' ').trim();
+}
+
+async function postCupidChatRenderAck(entry, receipt = {}) {
+    try {
+        if (!entry?.clientMsgId || entry.role !== 'assistant') return false;
+        const expectedContent = String(receipt.expectedContent || '').substring(0, 8000);
+        const renderedContent = String(receipt.renderedContent || '').substring(0, 8000);
+        const expectedComparable = normalizeCupidRenderedText(expectedContent);
+        const renderedComparable = normalizeCupidRenderedText(renderedContent);
+        const requestedStatus = String(receipt.status || '').toLowerCase();
+        const status = ['rendered', 'mismatch', 'failed'].includes(requestedStatus)
+            ? requestedStatus
+            : (!renderedComparable
+                ? 'failed'
+                : (expectedComparable === renderedComparable ? 'rendered' : 'mismatch'));
+
+        const res = await fetch(API_ENDPOINT + 'chat-logs/render-ack', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'x-app-id': entry.appId || getCupidAppId() },
+            body: JSON.stringify({
+                appId: entry.appId || getCupidAppId(),
+                userId: entry.userId,
+                clientMsgId: entry.clientMsgId,
+                charId: entry.charId,
+                sessionId: entry.sessionId,
+                speakerId: entry.charId,
+                context: entry.context || '1:1',
+                expectedContent,
+                renderedContent,
+                status,
+                renderedAt: receipt.renderedAt || Date.now()
+            }),
+            credentials: 'omit',
+            cache: 'no-store',
+            keepalive: true
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return true;
+    } catch (error) {
+        console.warn('[ChatLog] cupid render acknowledgement skipped:', error?.message || error);
+        return false;
+    }
+}
+
 // user/assistant 메시지 한 페어를 D1에 저장. 전송 실패 시 오프라인 큐에서 복구한다.
-async function saveCupidChatLog({ charId, userContent, assistantContent, sessionId = '', context = '1:1', playerName: _pn }) {
+async function saveCupidChatLog({
+    charId,
+    userContent,
+    assistantContent,
+    sessionId = '',
+    context = '1:1',
+    playerName: _pn,
+    assistantRenderReceipt = null
+}) {
     if (!charId) return;
     const shared = {
         userId: getCupidDeviceId(),
@@ -670,9 +736,9 @@ async function saveCupidChatLog({ charId, userContent, assistantContent, session
         const entry = makeCupidChatLogEntry({ ...shared, role, content });
         if (enqueueCupidChatLog(entry)) {
             await flushCupidChatLogQueue();
-            return;
+            return entry;
         }
-        if (navigator.onLine === false) return;
+        if (navigator.onLine === false) return entry;
         try {
             await postCupidChatLogEntry(entry);
         } catch (error) {
@@ -685,11 +751,17 @@ async function saveCupidChatLog({ charId, userContent, assistantContent, session
                 });
             }
         }
+        return entry;
     };
 
     // 순서 보장: user 먼저 저장 후 assistant 저장 (병렬 시 created_at/id 역전 방지)
     if (userContent) await queueAndFlush('user', userContent);
-    if (assistantContent) await queueAndFlush('assistant', assistantContent);
+    if (assistantContent) {
+        const assistantEntry = await queueAndFlush('assistant', assistantContent);
+        if (assistantEntry && assistantRenderReceipt) {
+            await postCupidChatRenderAck(assistantEntry, assistantRenderReceipt);
+        }
+    }
 }
 
 // ============================================================================

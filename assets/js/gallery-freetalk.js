@@ -1390,6 +1390,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
             // 대사창에 타이핑 효과로 표시 (segments 있으면 구조화 렌더)
             await this._typeText(displayText, displaySegments, requestContext);
+            const assistantRenderReceipt = this._getChatRenderReceipt(displayText, displaySegments);
             this._assertRequestContext(requestContext, data);
             if (parsed.expression) {
                 this._updateExpression(parsed.expression, requestCharId);
@@ -1414,7 +1415,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     assistantContent: displayText,
                     sessionId: 'gallery-freetalk',
                     context: '1:1',
-                    playerName: this.progress.getPlayerName() || ''
+                    playerName: this.progress.getPlayerName() || '',
+                    assistantRenderReceipt
                 });
             }
 
@@ -1689,6 +1691,47 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
     // =========================================================================
     // UI 헬퍼 (VN 스타일 — 대사창 기반)
     // =========================================================================
+
+    _normalizeRenderedText(value) {
+        return String(value || '').replace(/\s+/g, ' ').trim();
+    }
+
+    _getExpectedRenderedMessageText(text, structuredSegments = null) {
+        const resolvedText = this._sanitizePlayerPlaceholders(text || '');
+        const resolvedSegments = this._sanitizeSegmentsPlaceholders(structuredSegments);
+        const html = Array.isArray(resolvedSegments) && resolvedSegments.length > 0
+            ? resolvedSegments.map(seg => {
+                if (!seg || !seg.text) return '';
+                const type = seg.type === 'narration' ? 'action' : 'text';
+                const formatted = this._zetaFormatText(seg.text, type === 'action');
+                const escaped = String(formatted)
+                    .replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;');
+                return type === 'action'
+                    ? `<span class="gft-action">${escaped}</span>`
+                    : `<span class="gft-text">${escaped}</span>`;
+            }).join(' ')
+            : this._formatAction(resolvedText);
+        const preview = document.createElement('div');
+        preview.innerHTML = html;
+        return this._normalizeRenderedText(preview.textContent || '');
+    }
+
+    _getChatRenderReceipt(text, structuredSegments = null) {
+        const expectedContent = this._getExpectedRenderedMessageText(text, structuredSegments);
+        const renderedContent = this._normalizeRenderedText(
+            document.getElementById('message')?.textContent || ''
+        );
+        return {
+            expectedContent,
+            renderedContent,
+            status: !renderedContent
+                ? 'failed'
+                : (expectedContent === renderedContent ? 'rendered' : 'mismatch'),
+            renderedAt: Date.now()
+        };
+    }
 
     /**
      * 대사창에 텍스트 타이핑 효과 (게임 DialogueSystem.typeText와 동일)

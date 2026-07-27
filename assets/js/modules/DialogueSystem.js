@@ -291,6 +291,39 @@ class DialogueSystem {
         }).filter(Boolean).join('\n');
     }
 
+    _normalizeRenderedText(value) {
+        return String(value || '').replace(/\s+/g, ' ').trim();
+    }
+
+    getRenderedMessageText() {
+        return this._normalizeRenderedText(this.uiManager.messageEl?.textContent || '');
+    }
+
+    getExpectedRenderedMessageText(text, charName, structuredSegments = null) {
+        const processedText = Array.isArray(structuredSegments) && structuredSegments.length > 0
+            ? this._segmentsToInlineText(structuredSegments, charName)
+            : this.processPlaceholders(text || '', charName);
+        const textPart = processedText.includes('\n\ndata:image/')
+            ? processedText.split('\n\ndata:image/')[0]
+            : (processedText.startsWith('data:image/') ? '' : processedText);
+        const preview = document.createElement('div');
+        preview.innerHTML = this.parseNarration(textPart);
+        return this._normalizeRenderedText(preview.textContent || '');
+    }
+
+    getChatRenderReceipt(text, charName, structuredSegments = null) {
+        const expectedContent = this.getExpectedRenderedMessageText(text, charName, structuredSegments);
+        const renderedContent = this.getRenderedMessageText();
+        return {
+            expectedContent,
+            renderedContent,
+            status: !renderedContent
+                ? 'failed'
+                : (expectedContent === renderedContent ? 'rendered' : 'mismatch'),
+            renderedAt: Date.now()
+        };
+    }
+
     /**
      * 텍스트 타이핑 효과 (한 글자씩 출력)
      *
