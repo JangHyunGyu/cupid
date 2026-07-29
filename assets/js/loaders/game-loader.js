@@ -53,7 +53,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-        const version = '2.9.105';
+        const version = '2.9.106';
     const LOAD_RETRIES = 3;
 
     // =========================================================================
@@ -506,13 +506,14 @@
 
     window.addEventListener('error', function(e) {
         var src = (e.filename || '') + ':' + e.lineno + ':' + e.colno;
-        _sendError(e.error?.name || 'Error', e.message, e.error?.stack || '', src);
+        var error = e.error;
+        _sendError((error && error.name) || 'Error', e.message, (error && error.stack) || '', src);
     });
 
     window.addEventListener('unhandledrejection', function(e) {
         var reason = e.reason;
-        var msg = reason?.message || String(reason || 'Unhandled rejection');
-        var stack = reason?.stack || '';
+        var msg = (reason && reason.message) || String(reason || 'Unhandled rejection');
+        var stack = (reason && reason.stack) || '';
         _sendError('UnhandledRejection', msg, stack, window.location.href);
     });
 })();
