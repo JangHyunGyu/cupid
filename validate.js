@@ -707,8 +707,8 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.101') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.101가 아님: ' + loaderVersion);
+    if (loaderVersion !== '2.9.102') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.102가 아님: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');
@@ -1788,11 +1788,11 @@ try {
     const activePromptSources = [promptsContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
-    if (promptVersion !== '2.7.32') {
-        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.32가 아님: ' + promptVersion);
+    if (promptVersion !== '2.7.33') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.33이 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.30') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.30가 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.31') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.31이 아님: ' + galleryPromptVersion);
     }
     const completedActionCanonSignals = [
         '완료형으로 쓴 행동은 성적 접촉도 이미 일어난 사건이며',
@@ -1806,12 +1806,15 @@ try {
         }
     }
     const thirdPersonAdultCameraSignals = [
-        '모든 narration은 철저한 3인칭 관찰자 시점입니다',
+        '모든 narration은 3인칭 시점입니다',
         '성기·삽입·애액·정액·절정이 장면에 있다면',
         '고정 수위나 매 턴 체크리스트가 아니며',
-        'All narration uses a strict external third-person point of view',
+        'All narration uses third person',
         'genitals, penetration, arousal fluid, semen, or climax',
-        'fixed intensity target nor a per-turn checklist'
+        'fixed intensity target nor a per-turn checklist',
+        '캐릭터의 행동·신체 감각·욕망·내면 반응',
+        "character's action, physical sensation, desire, and inner response",
+        "infer or narrate the user's response, emotion, or inner thought"
     ];
     for (const [label, source] of [['main', promptsContent], ['gallery', gftContent]]) {
         if (thirdPersonAdultCameraSignals.some(signal => !source.includes(signal))) {
@@ -1834,6 +1837,24 @@ try {
             || source.includes('한 답변 안에서 같은 문장이나 segment를 두 번 쓰지 않고')) {
             errors.push('[FREETALK_PROMPT] ' + label + ' 빈 구조 방지 계약 또는 전역 문구 반복 금지 제거 상태 불일치');
         }
+    }
+    for (const [label, source] of [['main runtime', ftSysContent], ['gallery runtime', gftContent]]) {
+        if (!source.includes('반응·감정·속마음을 자연스럽게 추론하거나 서술')
+            || !source.includes("infer or narrate the user's response, emotion, or inner thought")) {
+            errors.push('[FREETALK_PROMPT] ' + label + ' 사용자 맥락 추론 유연화 계약 누락');
+        }
+    }
+    for (const [label, source] of [['main', promptsContent], ['gallery', gftContent]]) {
+        if (!source.includes('짧거나 수동적')
+            || !source.includes('brief or passive')
+            || !source.includes('제안·예고·허락')
+            || !source.includes('proposal, preview, or permission')) {
+            errors.push('[FREETALK_PROMPT] ' + label + ' 짧은 입력 선제 진행 계약 누락');
+        }
+    }
+    if (!ftSysContent.includes('function buildCupidRecentExpressionRepetitionGuard(')
+        || !gftContent.includes('function buildGalleryRecentExpressionRepetitionGuard(')) {
+        errors.push('[FREETALK_PROMPT] 실제 최근 표현 중복 감지기가 누락됨');
     }
     if (!promptsContent.includes('function getCupidRoleplayQualityIssue(')
         || !promptsContent.includes('unicode_replacement_character')
@@ -1881,6 +1902,12 @@ try {
         'silently rewrite every dialogue and narration line',
         'Before outputting JSON, do a native English rewrite pass',
         'Most spoken lines should be one or two short sentences',
+        '사용자의 다음 행동·대사·선택·속마음은 대신 쓰지 마세요',
+        "Do not write the user's next action, dialogue, choice, or hidden thought",
+        '속마음은 겉으로 드러나기 전까지 캐릭터가 알지 못합니다',
+        'private thoughts remain unknown until expressed',
+        '현재 장면에서는 문장과 몸짓을 새로 쓰세요',
+        'Write fresh wording and actions for the current scene',
         '10〜35字程度',
         'una o dos frases cortas',
         'une ou deux phrases courtes',
