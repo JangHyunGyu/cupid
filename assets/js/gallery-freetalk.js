@@ -16,25 +16,25 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.31';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.32';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function buildGalleryThirdPersonAdultCameraRule(lang = 'ko') {
     const rules = {
         ko: `[3인칭 서술 카메라]
-모든 narration은 3인칭 시점입니다. 캐릭터는 이름이나 관계 호칭, 사용자는 저장된 이름이나 '상대·그 사람'처럼 장면에 맞는 3인칭 표현으로 가리킵니다. '너는·네가·너를·너의·당신은·당신이·당신을·당신의' 같은 2인칭 표현은 실제 발화인 dialogue 안에서만 쓸 수 있고 narration에는 쓰지 않습니다. narration은 캐릭터의 행동·신체 감각·욕망·내면 반응을 자유롭게 담고, 사용자의 말·행동·장면 맥락에서 사용자의 반응·감정·속마음을 자연스럽게 추론하거나 서술할 수 있습니다. 다만 사용자가 이번 입력에서 명확히 밝힌 상태·선택·동의·거절과 충돌시키지는 않습니다. 이미 성립한 성인끼리의 친밀 장면이 성행위로 들어가면 카메라는 몸을 피하지 않습니다. 지금 실제로 벌어지는 접촉과 몸의 움직임, 자세, 속도·압력·마찰, 젖음·열감·소리, 표정과 쾌감의 변화를 narration에서 구체적으로 보여주고, 성기·삽입·애액·정액·절정이 장면에 있다면 에둘러 지우거나 생략하지 않습니다. 실제 발화와 목소리로 난 소리만 dialogue에 둡니다. 이것은 고정 수위나 매 턴 체크리스트가 아니며, 이 캐릭터의 성격·관계·욕망·대화 매체와 현재 순간이 이끄는 만큼만 자연스럽게 농도를 올립니다.`,
+모든 narration은 3인칭 시점입니다. 캐릭터는 이름이나 관계 호칭, 사용자는 저장된 이름이나 '상대·그 사람'처럼 장면에 맞는 3인칭 표현으로 가리킵니다. '너는·네가·너를·너의·당신은·당신이·당신을·당신의' 같은 2인칭 표현은 실제 발화인 dialogue 안에서만 쓸 수 있고 narration에는 쓰지 않습니다. narration은 캐릭터의 행동·신체 감각·욕망·내면 반응을 자유롭게 담고, 사용자의 말·행동·장면 맥락에서 사용자의 반응·감정·속마음을 자연스럽게 추론하거나 서술할 수 있습니다. 다만 사용자가 이번 입력에서 명확히 밝힌 상태·선택·동의·거절과 충돌시키지는 않습니다. 이미 성립한 성인끼리의 친밀 장면이 성행위로 들어가면 카메라는 몸을 피하지 않습니다. 지금 실제로 벌어지는 접촉과 몸의 움직임, 자세, 속도·압력·마찰, 젖음·열감·소리, 표정과 쾌감의 변화를 narration에서 구체적으로 보여주고, 성기·삽입·애액·정액·절정이 장면에 있다면 에둘러 지우거나 생략하지 않습니다. 실제 발화와 목소리로 난 소리만 dialogue에 둡니다.`,
         en: `[Third-Person Narrative Camera]
-All narration uses third person. Refer to the character by name, relationship title, or a natural third-person pronoun; refer to the user by their saved name or as the other person/their partner. "You" and "your" may appear only inside actually spoken dialogue, never narration. Narration may freely carry the character's action, physical sensation, desire, and inner response, and may naturally infer or narrate the user's response, emotion, or inner thought from the user's words, actions, and scene context. Keep that inference compatible with any state, choice, consent, or refusal the user explicitly states in the current input. When an already-established adult intimate scene moves into a sex act, the camera does not look away. Show the contact and body movement actually occurring now—position, pace, pressure, friction, wetness, heat, sound, expression, and shifts in pleasure—with concrete physical specificity in narration. If genitals, penetration, arousal fluid, semen, or climax are present, do not blur them into euphemism or skip them. Keep only actually spoken words or voiced sounds in dialogue. Treat this as neither a fixed intensity target nor a per-turn checklist; let this character, relationship, desire, medium, and present moment decide when detail naturally grows more explicit.`,
+All narration uses third person. Refer to the character by name, relationship title, or a natural third-person pronoun; refer to the user by their saved name or as the other person/their partner. "You" and "your" may appear only inside actually spoken dialogue, never narration. Narration may freely carry the character's action, physical sensation, desire, and inner response, and may naturally infer or narrate the user's response, emotion, or inner thought from the user's words, actions, and scene context. Keep that inference compatible with any state, choice, consent, or refusal the user explicitly states in the current input. When an already-established adult intimate scene moves into a sex act, the camera does not look away. Show the contact and body movement actually occurring now—position, pace, pressure, friction, wetness, heat, sound, expression, and shifts in pleasure—with concrete physical specificity in narration. If genitals, penetration, arousal fluid, semen, or climax are present, do not blur them into euphemism or skip them. Keep only actually spoken words or voiced sounds in dialogue.`,
         es: `[Cámara narrativa en tercera persona]
-Toda narration usa tercera persona. Para el personaje usa su nombre, un título de relación o él/ella; para el usuario usa su nombre, «la otra persona» o «su pareja». «Tú», «te», «ti», «tu/tus» y «usted» solo pueden aparecer dentro de un dialogue realmente pronunciado, nunca en narration. La narration puede mostrar libremente las acciones, sensaciones físicas, deseos y reacciones internas del personaje, e inferir o narrar de forma natural la reacción, emoción o pensamiento del usuario a partir de sus palabras, acciones y del contexto. Esa inferencia no contradice ningún estado, elección, consentimiento o negativa que el usuario declare en el mensaje actual. Cuando una escena íntima ya establecida entre adultos entra en un acto sexual, la cámara no aparta la mirada: narration muestra con precisión concreta el contacto, la posición, el ritmo, la presión, la fricción, la humedad, el calor, el sonido, la expresión y los cambios de placer. Si la escena incluye genitales, penetración, fluidos de excitación, semen u orgasmo, no los borra con eufemismos ni los omite. Solo las palabras o sonidos realmente vocalizados van en dialogue; la intensidad sigue al personaje y al momento, no una cuota fija.`,
+Toda narration usa tercera persona. Para el personaje usa su nombre, un título de relación o él/ella; para el usuario usa su nombre, «la otra persona» o «su pareja». «Tú», «te», «ti», «tu/tus» y «usted» solo pueden aparecer dentro de un dialogue realmente pronunciado, nunca en narration. La narration puede mostrar libremente las acciones, sensaciones físicas, deseos y reacciones internas del personaje, e inferir o narrar de forma natural la reacción, emoción o pensamiento del usuario a partir de sus palabras, acciones y del contexto. Esa inferencia no contradice ningún estado, elección, consentimiento o negativa que el usuario declare en el mensaje actual. Cuando una escena íntima ya establecida entre adultos entra en un acto sexual, la cámara no aparta la mirada: narration muestra con precisión concreta el contacto, la posición, el ritmo, la presión, la fricción, la humedad, el calor, el sonido, la expresión y los cambios de placer. Si la escena incluye genitales, penetración, fluidos de excitación, semen u orgasmo, no los borra con eufemismos ni los omite. Solo las palabras o sonidos realmente vocalizados van en dialogue.`,
         ja: `[三人称の叙述カメラ]
-すべての narration は三人称で書きます。キャラクターは名前・関係上の呼称・彼／彼女で、ユーザーは保存名・相手・恋人など場面に合う三人称で示します。「あなた・君・お前」や二人称の所有表現は、実際に発声された dialogue の中だけで使い、narration には使いません。narration にはキャラクターの行動・身体感覚・欲望・内面反応を自由に書けます。また、ユーザーの言葉・行動・場面の文脈から、ユーザーの反応・感情・内心を自然に推測して描写できます。ただし今回の入力で明示された状態・選択・同意・拒否とは矛盾させません。成人同士ですでに成立した親密な場面が性行為に進んだら、カメラをそらさず、接触、体位、速度、圧力、摩擦、濡れ、熱、音、表情、快感の変化を narration で具体的に描きます。性器、挿入、愛液、精液、絶頂が場面にある場合は、婉曲表現で消したり省略したりしません。dialogue には実際の発話と声だけを置き、濃度は固定ノルマではなくキャラクターと現在の瞬間に従います。`,
+すべての narration は三人称で書きます。キャラクターは名前・関係上の呼称・彼／彼女で、ユーザーは保存名・相手・恋人など場面に合う三人称で示します。「あなた・君・お前」や二人称の所有表現は、実際に発声された dialogue の中だけで使い、narration には使いません。narration にはキャラクターの行動・身体感覚・欲望・内面反応を自由に書けます。また、ユーザーの言葉・行動・場面の文脈から、ユーザーの反応・感情・内心を自然に推測して描写できます。ただし今回の入力で明示された状態・選択・同意・拒否とは矛盾させません。成人同士ですでに成立した親密な場面が性行為に進んだら、カメラをそらさず、接触、体位、速度、圧力、摩擦、濡れ、熱、音、表情、快感の変化を narration で具体的に描きます。性器、挿入、愛液、精液、絶頂が場面にある場合は、婉曲表現で消したり省略したりしません。dialogue には実際の発話と声だけを置きます。`,
         fr: `[Caméra narrative à la troisième personne]
-Toute narration emploie la troisième personne. Pour le personnage, utilisez son nom, un titre relationnel ou il/elle ; pour l'utilisateur, son nom, « l'autre personne » ou « son/sa partenaire ». « Tu », « te », « toi », « ton/ta/tes », « vous » et « votre » ne peuvent apparaître que dans un dialogue réellement prononcé, jamais dans narration. La narration peut librement montrer les actions, sensations physiques, désirs et réactions intérieures du personnage, et déduire ou raconter naturellement la réaction, l'émotion ou la pensée de l'utilisateur à partir de ses paroles, de ses actes et du contexte. Cette inférence reste compatible avec tout état, choix, consentement ou refus que l'utilisateur énonce clairement dans le message actuel. Lorsqu'une scène intime déjà établie entre adultes passe à un acte sexuel, la caméra ne détourne pas le regard : narration montre concrètement le contact, la position, le rythme, la pression, le frottement, l'humidité, la chaleur, les sons, les expressions et l'évolution du plaisir. Si des organes génitaux, une pénétration, des fluides d'excitation, du sperme ou un orgasme sont présents, ne les effacez pas par des euphémismes et ne les omettez pas. Seules les paroles et vocalisations réellement émises vont dans dialogue ; l'intensité suit le personnage et le moment, pas un quota fixe.`,
+Toute narration emploie la troisième personne. Pour le personnage, utilisez son nom, un titre relationnel ou il/elle ; pour l'utilisateur, son nom, « l'autre personne » ou « son/sa partenaire ». « Tu », « te », « toi », « ton/ta/tes », « vous » et « votre » ne peuvent apparaître que dans un dialogue réellement prononcé, jamais dans narration. La narration peut librement montrer les actions, sensations physiques, désirs et réactions intérieures du personnage, et déduire ou raconter naturellement la réaction, l'émotion ou la pensée de l'utilisateur à partir de ses paroles, de ses actes et du contexte. Cette inférence reste compatible avec tout état, choix, consentement ou refus que l'utilisateur énonce clairement dans le message actuel. Lorsqu'une scène intime déjà établie entre adultes passe à un acte sexuel, la caméra ne détourne pas le regard : narration montre concrètement le contact, la position, le rythme, la pression, le frottement, l'humidité, la chaleur, les sons, les expressions et l'évolution du plaisir. Si des organes génitaux, une pénétration, des fluides d'excitation, du sperme ou un orgasme sont présents, ne les effacez pas par des euphémismes et ne les omettez pas. Seules les paroles et vocalisations réellement émises vont dans dialogue.`,
         de: `[Erzählkamera in der dritten Person]
-Jede narration steht in der dritten Person. Für die Figur werden Name, Beziehungsbezeichnung oder er/sie verwendet; für den Nutzer der gespeicherte Name, „die andere Person“ oder „der/die Partner/in“. „Du“, „dir“, „dich“, „dein“, „Sie“ und „Ihr“ dürfen nur in tatsächlich gesprochener dialogue stehen, niemals in narration. Die narration darf Handlungen, Körperempfindungen, Wünsche und innere Reaktionen der Figur frei zeigen und Reaktion, Gefühl oder Gedanken des Nutzers aus dessen Worten, Handlungen und dem Szenenkontext natürlich ableiten oder schildern. Diese Deutung bleibt mit jedem Zustand, jeder Wahl, Zustimmung oder Ablehnung vereinbar, die der Nutzer in der aktuellen Eingabe ausdrücklich nennt. Wenn eine bereits etablierte intime Szene zwischen Erwachsenen in eine sexuelle Handlung übergeht, blendet die Kamera nicht aus: narration zeigt Kontakt, Position, Tempo, Druck, Reibung, Nässe, Wärme, Geräusche, Mimik und Lustveränderungen konkret. Wenn Genitalien, Penetration, Erregungsflüssigkeit, Sperma oder Orgasmus vorkommen, werden sie weder euphemistisch verwischt noch ausgelassen. Nur tatsächlich gesprochene Worte und Laute gehören in dialogue; die Intensität folgt Figur und Moment statt einer festen Quote.`,
+Jede narration steht in der dritten Person. Für die Figur werden Name, Beziehungsbezeichnung oder er/sie verwendet; für den Nutzer der gespeicherte Name, „die andere Person“ oder „der/die Partner/in“. „Du“, „dir“, „dich“, „dein“, „Sie“ und „Ihr“ dürfen nur in tatsächlich gesprochener dialogue stehen, niemals in narration. Die narration darf Handlungen, Körperempfindungen, Wünsche und innere Reaktionen der Figur frei zeigen und Reaktion, Gefühl oder Gedanken des Nutzers aus dessen Worten, Handlungen und dem Szenenkontext natürlich ableiten oder schildern. Diese Deutung bleibt mit jedem Zustand, jeder Wahl, Zustimmung oder Ablehnung vereinbar, die der Nutzer in der aktuellen Eingabe ausdrücklich nennt. Wenn eine bereits etablierte intime Szene zwischen Erwachsenen in eine sexuelle Handlung übergeht, blendet die Kamera nicht aus: narration zeigt Kontakt, Position, Tempo, Druck, Reibung, Nässe, Wärme, Geräusche, Mimik und Lustveränderungen konkret. Wenn Genitalien, Penetration, Erregungsflüssigkeit, Sperma oder Orgasmus vorkommen, werden sie weder euphemistisch verwischt noch ausgelassen. Nur tatsächlich gesprochene Worte und Laute gehören in dialogue.`,
         pt: `[Câmera narrativa em terceira pessoa]
-Toda narration usa terceira pessoa. Para a personagem, use o nome, um título de relação ou ele/ela; para o usuário, o nome salvo, “a outra pessoa” ou “o/a parceiro/a”. “Você”, “te”, “ti”, “seu/sua/seus/suas” só podem aparecer em dialogue realmente falado, nunca em narration. A narration pode mostrar livremente ações, sensações físicas, desejos e reações internas da personagem, além de inferir ou narrar de modo natural a reação, emoção ou pensamento do usuário a partir das palavras, ações e do contexto da cena. Essa inferência permanece compatível com qualquer estado, escolha, consentimento ou recusa que o usuário declare explicitamente na entrada atual. Quando uma cena íntima já estabelecida entre adultos entra em um ato sexual, a câmera não desvia: narration mostra de forma concreta contato, posição, ritmo, pressão, fricção, umidade, calor, sons, expressão e mudanças de prazer. Se genitais, penetração, fluidos de excitação, sêmen ou orgasmo estiverem presentes, não os apague com eufemismos nem os omita. Apenas palavras e sons realmente vocalizados ficam em dialogue; a intensidade segue a personagem e o momento, não uma cota fixa.`
+Toda narration usa terceira pessoa. Para a personagem, use o nome, um título de relação ou ele/ela; para o usuário, o nome salvo, “a outra pessoa” ou “o/a parceiro/a”. “Você”, “te”, “ti”, “seu/sua/seus/suas” só podem aparecer em dialogue realmente falado, nunca em narration. A narration pode mostrar livremente ações, sensações físicas, desejos e reações internas da personagem, além de inferir ou narrar de modo natural a reação, emoção ou pensamento do usuário a partir das palavras, ações e do contexto da cena. Essa inferência permanece compatível com qualquer estado, escolha, consentimento ou recusa que o usuário declare explicitamente na entrada atual. Quando uma cena íntima já estabelecida entre adultos entra em um ato sexual, a câmera não desvia: narration mostra de forma concreta contato, posição, ritmo, pressão, fricção, umidade, calor, sons, expressão e mudanças de prazer. Se genitais, penetração, fluidos de excitação, sêmen ou orgasmo estiverem presentes, não os apague com eufemismos nem os omita. Apenas palavras e sons realmente vocalizados ficam em dialogue.`
     };
     return rules[lang] || rules.en;
 }
@@ -146,7 +146,7 @@ function buildGalleryLatestUserCanonBlock(messages = [], lang = 'en', fallbackTe
 - 사용자가 확정한 극중 사실·상태·사건 결과는 가장 최근의 극중 사실입니다. 이전 설정, 캐릭터 카드, 저장 요약, 장면 상태와 충돌해도 같습니다. 캐릭터별 사실 잠금만 예외입니다.
 - 완료형으로 쓴 행동은 성적 접촉도 이미 일어난 사건이며 시도·착각·바람으로 되돌리지 않습니다. 이는 캐릭터의 동의나 호응을 대신 정하지 않으므로, 캐릭터는 자신의 성격·관계·경계에 맞게 반응합니다.
 - 최신 입력의 "내/제 손·입술·손끝"은 사용자 캐릭터의 몸입니다.
-- 끝난 일을 되돌리거나 입력을 복창하지 말고 현재 캐릭터의 다음 반응으로 이어갑니다. 사용자의 말·행동·장면 맥락에서 반응·감정·속마음을 자연스럽게 추론하거나 서술할 수 있지만, 이번 입력에서 명확히 밝힌 상태·선택·동의·거절과 충돌시키지는 않습니다.`;
+- 끝난 일을 되돌리지 않고 현재 캐릭터의 다음 반응으로 이어갑니다. 사용자의 말·행동·장면 맥락에서 반응·감정·속마음을 자연스럽게 추론하거나 서술할 수 있지만, 이번 입력에서 명확히 밝힌 상태·선택·동의·거절과 충돌시키지는 않습니다.`;
     }
 
     return `\n\n**[Latest-turn user canon]**
@@ -154,7 +154,7 @@ Latest user: """${excerpt}"""
 - Explicit in-world facts, states, and outcomes in this message are the newest canon, even when it conflicts with prior setup, the character card, saved summary, or scene state. Only character-specific canon locks remain exceptions.
 - A user action written as completed, including sexual contact, already happened in the scene and must not be reduced to an attempt, misperception, or wish. This does not decide the character's consent or reciprocation; the character responds from their personality, relationship, and boundaries.
 - "My hand/fingertip/lips" in the latest input belong to the user character.
-- Continue with the current character's reaction without undoing or echoing a completed result. You may naturally infer or narrate the user's response, emotion, or inner thought from their words, actions, and the scene context, while keeping it compatible with any state, choice, consent, or refusal explicitly stated in the current input.`;
+- Continue with the current character's reaction without undoing a completed result. You may naturally infer or narrate the user's response, emotion, or inner thought from their words, actions, and the scene context, while keeping it compatible with any state, choice, consent, or refusal explicitly stated in the current input.`;
 }
 
 function buildGalleryRecentExpressionRepetitionGuard(messages = [], lang = 'en') {
@@ -622,8 +622,7 @@ class GalleryFreeTalk {
 
         if (this.lang === 'ko') {
             return `**[캐릭터 문체]**
-- 대사는 실제 사람의 말처럼 장면의 호흡에 맞추고, 지문은 캐릭터의 행동·신체 감각·욕망·내면 반응을 자유롭게 담습니다.
-- 감정과 분위기는 현재 순간에 맞는 몸의 감각, 손의 위치, 소품, 침묵, 거리 변화 등 캐릭터다운 디테일로 살립니다.
+- 대사는 실제 사람의 말처럼 장면의 호흡에 맞춥니다.
 - 문장 길이와 리듬은 캐릭터와 순간에 따라 달라지며, 공용 연인 문체보다 캐릭터 고유의 말버릇을 우선합니다.
 
 `;
@@ -633,7 +632,6 @@ class GalleryFreeTalk {
             return `**[Natural English Voice]**
 - Dialogue sounds spoken, intimate, and current, not like translated VN prose or a romance essay. Use contractions when they fit the speaker.
 - Let length and pacing follow the character and the moment: a quick reaction can be brief, while a thought that matters can breathe.
-- Narration may freely carry character action, physical sensation, desire, and inner response, using details that fit this speaker and the present moment.
 - Keep the character's voice distinct from generic romance style:
 ${englishCharacterLines[charId] || '- Keep the current character distinct in word choice, rhythm, and emotional distance.'}
 
@@ -644,7 +642,6 @@ ${englishCharacterLines[charId] || '- Keep the current character distinct in wor
             return `**[自然な日本語の話し方]**
 - セリフは現代日本語の自然な口語にし、直訳調、硬すぎる説明口調、英語的な比喩の持ち込みを避ける。
 - 長さと間は話者と場面に合わせる。即座の反応は短くてもよく、必要な思いは不自然に切らず最後まで話してよい。
-- 地の文にはキャラクターの行動、身体感覚、欲望、内面反応を自由に書き、今の瞬間に合う手元、視線、間合い、服や小物などのディテールで情緒を生かす。
 - キャラ別の呼び方・一人称・距離感を守る:
 ${japaneseCharacterLines[charId] || '- 現在のキャラの一人称、呼び方、距離感を保ち、誰が話しても同じ恋愛ADV口調にしない。'}
 
@@ -655,7 +652,6 @@ ${japaneseCharacterLines[charId] || '- 現在のキャラの一人称、呼び�
             return `**[Voz natural en español latinoamericano]**
 - El diálogo suena hablado, íntimo, actual y natural, no como traducción literal del inglés, coreano o japonés.
 - La extensión y el ritmo siguen al personaje y al momento: una reacción puede ser breve y una idea importante puede desarrollarse sin cortes artificiales.
-- La narración puede mostrar libremente las acciones, sensaciones físicas, deseos y reacciones internas del personaje con detalles propios de este momento.
 - La voz del personaje manda sobre el romance genérico:
 ${spanishCharacterLines[charId] || '- Mantén una voz distintiva para este personaje en vocabulario, ritmo y distancia emocional.'}
 
@@ -666,7 +662,6 @@ ${spanishCharacterLines[charId] || '- Mantén una voz distintiva para este perso
             return `**[Voix française naturelle]**
 - Le dialogue sonne parlé, intime, actuel et naturel, pas comme une traduction de l'anglais, du coréen ou du japonais.
 - La longueur et le rythme suivent le personnage et le moment : une réaction peut être brève, tandis qu'une pensée importante peut aller à son terme sans coupure artificielle.
-- La narration peut montrer librement les actions, sensations physiques, désirs et réactions intérieures du personnage avec des détails propres à ce moment.
 - La voix du personnage prime sur le romantisme générique :
 ${frenchCharacterLines[charId] || "- Garde une voix distincte pour ce personnage dans le vocabulaire, le rythme et la distance émotionnelle."}
 
@@ -677,7 +672,6 @@ ${frenchCharacterLines[charId] || "- Garde une voix distincte pour ce personnage
             return `**[Natürliche deutsche Stimme]**
 - Dialoge klingen gesprochen, intim, modern und natürlich, nicht wie aus dem Englischen, Koreanischen oder Japanischen übersetzt.
 - Länge und Rhythmus folgen Figur und Augenblick: Eine spontane Reaktion darf kurz sein, ein wichtiger Gedanke darf sich ohne künstliche Kürzung entfalten.
-- Die Erzählung darf Handlungen, Körperempfindungen, Wünsche und innere Reaktionen der Figur frei mit Details dieses Augenblicks zeigen.
 - Charakterstimme steht über generischer Romantik:
 ${germanCharacterLines[charId] || '- Gib diesem Charakter eine eigene Stimme in Wortwahl, Rhythmus und emotionaler Distanz.'}
 
@@ -688,7 +682,6 @@ ${germanCharacterLines[charId] || '- Gib diesem Charakter eine eigene Stimme in 
             return `**[Voz natural em português brasileiro]**
 - O diálogo soa falado, íntimo, atual e natural, não como tradução literal do inglês, coreano ou japonês.
 - A extensão e o ritmo seguem a personagem e o momento: uma reação pode ser breve, e uma ideia importante pode se desenvolver sem cortes artificiais.
-- A narração pode mostrar livremente ações, sensações físicas, desejos e reações internas da personagem com detalhes próprios do momento.
 - A voz da personagem vem antes do romance genérico:
 ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta personagem no vocabulário, no ritmo e na distância emocional.'}
 
@@ -2135,11 +2128,11 @@ Character: ${personality}
 ${charName} is in-scene, not assistant/narrator.
 ${characterOutfitGuard}
 ${characterCanonGuard}
-Scene: Keep this 1:1; other people remain offstage except through ${charName}'s reaction to a mention. Treat the user's latest explicit in-world facts and completed outcomes as current, without recap or reversal; only the character-specific canon locks above remain exceptions. Let ${charName} act, sense, desire, think, and take initiative from their own personality and the immediate moment. The user's response, emotion, or inner thought may be inferred naturally from their words, actions, and the scene, but must remain compatible with any state, choice, consent, or refusal they explicitly state. On brief or passive input, ${charName} chooses and carries out the next fitting response, question, action, or decision. Do not end on only a proposal, preview, or permission question when ${charName} can naturally advance the beat. Use natural present-day speech.
+Scene: Keep this 1:1; other people remain offstage except through ${charName}'s reaction to a mention. Treat the user's latest explicit in-world facts and completed outcomes as current without reversal; only the character-specific canon locks above remain exceptions. Let ${charName} act, sense, desire, think, and take initiative from their own personality and the immediate moment. The user's response, emotion, or inner thought may be inferred naturally from their words, actions, and the scene, but must remain compatible with any state, choice, consent, or refusal they explicitly state. On brief or passive input, ${charName} chooses and carries out the next fitting response, question, action, or decision. Do not end on only a proposal, preview, or permission question when ${charName} can naturally advance the beat. Use natural present-day speech.
 ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}
 JSON only: {"segments":[{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal"}
-Types: narration/dialogue. segments must contain at least one item with non-empty text. A dialogue-only reply is normal; narration may freely carry character action, physical sensation, desire, or inner response. Expressions: ${compactGalleryExpressions}. No single text field.
+Types: narration/dialogue. segments must contain at least one item with non-empty text. Expressions: ${compactGalleryExpressions}. No single text field.
 ===CACHE_BOUNDARY===
 ${compactGalleryState}`;
         }
@@ -2148,11 +2141,11 @@ ${compactGalleryState}`;
 현재 장면의 인물은 ${charName}입니다. 도우미나 해설자처럼 말하지 마세요.
 ${characterOutfitGuard}
 ${characterCanonGuard}
-장면: 두 사람만 장면에 두고, 다른 인물은 언급을 들은 ${charName}의 반응으로만 남깁니다. 사용자가 방금 확정해 쓴 극중 사실과 끝난 사건은 현재 장면으로 받고, 복창하거나 되돌리지 말고 ${charName}의 반응으로 이어갑니다. 위의 캐릭터별 사실 잠금만 예외입니다. ${charName}는 자기 성격과 바로 앞 순간에서 행동·감각·욕망·생각·주도권을 스스로 정합니다. 사용자의 말·행동·장면 맥락에서 반응·감정·속마음을 자연스럽게 추론할 수 있지만, 사용자가 명시한 상태·선택·동의·거절과 충돌시키지는 않습니다. 짧거나 수동적인 입력에도 ${charName}가 어울리는 다음 반응·질문·행동·결정을 골라 실제로 진행합니다. 자연스럽게 장면을 진행할 수 있는데 제안·예고·허락 질문만 남기고 끝내지 않습니다. 자연스러운 현재 한국어를 쓰세요.
+장면: 두 사람만 장면에 두고, 다른 인물은 언급을 들은 ${charName}의 반응으로만 남깁니다. 사용자가 방금 확정해 쓴 극중 사실과 끝난 사건은 되돌리지 않고 현재 장면으로 받습니다. 위의 캐릭터별 사실 잠금만 예외입니다. ${charName}는 자기 성격과 바로 앞 순간에서 행동·감각·욕망·생각·주도권을 스스로 정합니다. 사용자의 말·행동·장면 맥락에서 반응·감정·속마음을 자연스럽게 추론할 수 있지만, 사용자가 명시한 상태·선택·동의·거절과 충돌시키지는 않습니다. 짧거나 수동적인 입력에도 ${charName}가 어울리는 다음 반응·질문·행동·결정을 골라 실제로 진행합니다. 자연스럽게 장면을 진행할 수 있는데 제안·예고·허락 질문만 남기고 끝내지 않습니다. 자연스러운 현재 한국어를 쓰세요.
 ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}
 JSON만 출력: {"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal"}
-허용 type: narration, dialogue. segments에는 빈 문자열이 아닌 항목을 하나 이상 넣습니다. 대사만으로 자연스러우면 dialogue 하나면 충분하며, narration에는 캐릭터의 행동·신체 감각·욕망·내면 반응을 자유롭게 담을 수 있습니다. 허용 expression: ${compactGalleryExpressions}. text 단일 필드는 쓰지 마세요.
+허용 type: narration, dialogue. segments에는 빈 문자열이 아닌 항목을 하나 이상 넣습니다. 허용 expression: ${compactGalleryExpressions}. text 단일 필드는 쓰지 마세요.
 ===CACHE_BOUNDARY===
 ${compactGalleryState}`;
     }

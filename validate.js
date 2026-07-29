@@ -707,8 +707,8 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.102') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.102가 아님: ' + loaderVersion);
+    if (loaderVersion !== '2.9.103') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.103이 아님: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');
@@ -1741,9 +1741,9 @@ try {
     if (!ftSysContent.includes(ownershipKo) || !gftContent.includes(ownershipKo)) {
         errors.push('[FREETALK_CANON] 게임/갤러리 사용자 신체 소유 주체 규칙 누락');
     }
-    const optionalNarrationKo = '대사만으로 자연스러우면 dialogue 하나면 충분하며';
-    if (!promptsContent.includes(optionalNarrationKo) || !gftContent.includes(optionalNarrationKo)) {
-        errors.push('[FREETALK_SCHEMA] narration 선택 규칙이 게임/갤러리에 동일하게 유지되지 않음');
+    const structuralOutputKo = '허용 type: narration, dialogue.';
+    if (!promptsContent.includes(structuralOutputKo) || !gftContent.includes(structuralOutputKo)) {
+        errors.push('[FREETALK_SCHEMA] 구조적 출력 type 계약이 게임/갤러리에 동일하게 유지되지 않음');
     }
 } catch (e) {
     errors.push('[FREETALK_CANON] 사실화 규칙 검증 실패: ' + e.message);
@@ -1788,11 +1788,11 @@ try {
     const activePromptSources = [promptsContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
-    if (promptVersion !== '2.7.33') {
-        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.33이 아님: ' + promptVersion);
+    if (promptVersion !== '2.7.34') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.34가 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.31') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.31이 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.32') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.32가 아님: ' + galleryPromptVersion);
     }
     const completedActionCanonSignals = [
         '완료형으로 쓴 행동은 성적 접촉도 이미 일어난 사건이며',
@@ -1808,10 +1808,8 @@ try {
     const thirdPersonAdultCameraSignals = [
         '모든 narration은 3인칭 시점입니다',
         '성기·삽입·애액·정액·절정이 장면에 있다면',
-        '고정 수위나 매 턴 체크리스트가 아니며',
         'All narration uses third person',
         'genitals, penetration, arousal fluid, semen, or climax',
-        'fixed intensity target nor a per-turn checklist',
         '캐릭터의 행동·신체 감각·욕망·내면 반응',
         "character's action, physical sensation, desire, and inner response",
         "infer or narrate the user's response, emotion, or inner thought"
@@ -1850,6 +1848,26 @@ try {
             || !source.includes('제안·예고·허락')
             || !source.includes('proposal, preview, or permission')) {
             errors.push('[FREETALK_PROMPT] ' + label + ' 짧은 입력 선제 진행 계약 누락');
+        }
+    }
+    const removedAlwaysOnPromptBrakes = [
+        '입력을 복창하지 말고',
+        'without undoing or echoing',
+        'without recap or reversal',
+        '복창하거나 되돌리지 말고',
+        '고정 수위나 매 턴 체크리스트',
+        'fixed intensity target nor a per-turn checklist',
+        'una cuota fija',
+        '固定ノルマ',
+        'quota fixe',
+        'festen Quote',
+        'cota fixa',
+        'A dialogue-only reply is normal',
+        '대사만으로 자연스러우면 dialogue 하나면 충분하며'
+    ];
+    for (const phrase of removedAlwaysOnPromptBrakes) {
+        if (activePromptSources.includes(phrase)) {
+            errors.push('[FREETALK_PROMPT] 제거한 상시 복창·출력·수위 제동 문구가 남아 있음: ' + phrase);
         }
     }
     if (!ftSysContent.includes('function buildCupidRecentExpressionRepetitionGuard(')

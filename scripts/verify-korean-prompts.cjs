@@ -128,8 +128,10 @@ function assertCommonKoreanPrompt(prompt, label) {
     assert(prompt.includes('허용 type: narration, dialogue.'), `${label} changed the type contract`);
     assert(prompt.includes('"segments"'), `${label} changed the segments schema`);
     assert(prompt.includes('"type":"dialogue"'), `${label} changed the dialogue enum`);
-    assert(prompt.includes('대사만으로 자연스러우면 dialogue 하나면 충분하며'),
-        `${label} does not keep narration optional`);
+    assert(!prompt.includes('대사만으로 자연스러우면 dialogue 하나면 충분하며'),
+        `${label} still duplicates narration capability in the output contract`);
+    assert(!prompt.includes('입력을 복창하지 말고') && !prompt.includes('복창하거나 되돌리지 말고'),
+        `${label} still contains an always-on input recap prohibition`);
     assert(prompt.includes('===CACHE_BOUNDARY==='), `${label} is missing the cache boundary`);
     assert(prompt.includes('현재 상태:'), `${label} is missing the Korean state label`);
     assert(!prompt.includes('[현재 진행 상황]') && !prompt.includes('; 턴='),
