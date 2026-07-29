@@ -408,8 +408,10 @@ function verifyLatestUserCanon(context) {
             `${label} canon block no longer separates event fact from character consent`);
         assert(block.includes('"내/제 손·입술·손끝"은 사용자 캐릭터의 몸입니다'),
             `${label} canon block lost user-body ownership`);
-        assert(block.includes('다음 행동·대사·동의·거절·속마음은 대신 쓰지 않으며'),
-            `${label} canon block lost user agency`);
+        assert(block.includes('반응·감정·속마음을 자연스럽게 추론하거나 서술할 수 있지만'),
+            `${label} canon block lost scene-compatible user inference`);
+        assert(block.includes('명확히 밝힌 상태·선택·동의·거절과 충돌시키지는 않습니다'),
+            `${label} canon block lost explicit user-state compatibility`);
         assert(!block.includes('Latest user:'), `${label} canon block still has an English meta label`);
     }
 

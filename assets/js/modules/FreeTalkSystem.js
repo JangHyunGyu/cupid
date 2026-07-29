@@ -292,7 +292,7 @@ function buildCupidLatestUserCanonBlock(messages = [], lang = 'ko', fallbackText
 - 사용자가 확정한 극중 사실·상태·사건 결과는 가장 최근의 극중 사실입니다. 이전 설정, 캐릭터 카드, 저장 요약, 장면 상태와 충돌해도 같습니다. 캐릭터별 사실 잠금만 예외입니다.
 - 완료형으로 쓴 행동은 성적 접촉도 이미 일어난 사건이며 시도·착각·바람으로 되돌리지 않습니다. 이는 캐릭터의 동의나 호응을 대신 정하지 않으므로, 캐릭터는 자신의 성격·관계·경계에 맞게 반응합니다.
 - 최신 입력의 "내/제 손·입술·손끝"은 사용자 캐릭터의 몸입니다.
-- 끝난 일을 되돌리거나 입력을 복창하지 말고 현재 캐릭터의 다음 반응으로 이어갑니다. 사용자의 다음 행동·대사·동의·거절·속마음은 대신 쓰지 않으며, 속마음은 겉으로 드러나기 전까지 캐릭터가 알지 못합니다.`;
+- 끝난 일을 되돌리거나 입력을 복창하지 말고 현재 캐릭터의 다음 반응으로 이어갑니다. 사용자의 말·행동·장면 맥락에서 반응·감정·속마음을 자연스럽게 추론하거나 서술할 수 있지만, 이번 입력에서 명확히 밝힌 상태·선택·동의·거절과 충돌시키지는 않습니다.`;
     }
 
     return `\n\n**[Latest-turn user canon]**
@@ -300,7 +300,7 @@ Latest user: """${excerpt}"""
 - Explicit in-world facts, states, and outcomes in this message are the newest canon, even when it conflicts with prior setup, the character card, saved summary, or scene state. Only character-specific canon locks remain exceptions.
 - A user action written as completed, including sexual contact, already happened in the scene and must not be reduced to an attempt, misperception, or wish. This does not decide the character's consent or reciprocation; the character responds from their personality, relationship, and boundaries.
 - "My hand/fingertip/lips" in the latest input belong to the user character.
-- Continue with the current character's reaction without undoing or echoing a completed result. Do not write the user's next action, dialogue, consent, refusal, or hidden thought; private thoughts remain unknown until expressed.`;
+- Continue with the current character's reaction without undoing or echoing a completed result. You may naturally infer or narrate the user's response, emotion, or inner thought from their words, actions, and the scene context, while keeping it compatible with any state, choice, consent, or refusal explicitly stated in the current input.`;
 }
 
 window.buildCupidLatestUserCanonBlock = buildCupidLatestUserCanonBlock;
@@ -1398,10 +1398,10 @@ class FreeTalkSystem {
             ).toLowerCase();
 
             if (lang.startsWith('ko')) {
-                return `\n\n[사용자 배역]\n사용자 캐릭터는 "${roleName}"입니다. ${roleName} 이름표로 적힌 말·행동·침묵은 이미 일어난 사용자 쪽 장면으로 받고, 새 행동이나 대사·동의·거절은 대신 정하지 마세요.`;
+                return `\n\n[사용자 배역]\n사용자 캐릭터는 "${roleName}"입니다. ${roleName} 이름표로 적힌 말·행동·침묵은 이미 일어난 사용자 쪽 장면으로 받습니다. 그 맥락에서 ${roleName}의 자연스러운 반응·감정·속마음을 추론해 서술할 수 있지만, 사용자가 명시한 상태·선택·동의·거절과 충돌시키지는 마세요.`;
             }
 
-            return `\n\n[User character]\nThe user character is "${roleName}". Treat lines, actions, and silences labeled ${roleName} as already performed by the user side, and do not invent that character's next action, dialogue, consent, or refusal.`;
+            return `\n\n[User character]\nThe user character is "${roleName}". Treat lines, actions, and silences labeled ${roleName} as already performed by the user side. You may infer and narrate a natural response, emotion, or inner thought for ${roleName} from that context, but keep it compatible with any state, choice, consent, or refusal the user explicitly states.`;
         }
 
         return '';

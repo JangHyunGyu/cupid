@@ -265,7 +265,7 @@ for (const lang of languages) {
         assert(!systemPrompt.includes('Voice: Use a natural style for the character.'), `[${lang}/${char}] fell back to generic main voice`);
         assert(!systemPrompt.includes('undefined'), `[${lang}/${char}] main prompt contains undefined`);
         assert(!systemPrompt.includes('[Example Dialogue]'), `[${lang}/${char}] main prompt still injects voice examples`);
-        assert(systemPrompt.includes('A dialogue-only reply is normal; add narration only'),
+        assert(systemPrompt.includes('A dialogue-only reply is normal; narration may carry'),
             `[${lang}/${char}] main prompt does not keep narration optional`);
         assertNoEditorPressure(systemPrompt, `[${lang}/${char}] main prompt`);
         assert(!systemPrompt.includes('[CURRENT_PROGRESS]') && !systemPrompt.includes('; turns='),
@@ -363,7 +363,7 @@ for (const lang of languages) {
         assert(systemPrompt.includes('Character:'), `[${lang}/${char}] gallery prompt has no character block`);
         assert(!systemPrompt.includes('[Example Dialogue]'), `[${lang}/${char}] gallery prompt still injects voice examples`);
         assert(!systemPrompt.includes('undefined'), `[${lang}/${char}] gallery prompt contains undefined`);
-        assert(systemPrompt.includes('A dialogue-only reply is normal; add narration only'),
+        assert(systemPrompt.includes('A dialogue-only reply is normal; narration may freely carry'),
             `[${lang}/${char}] gallery prompt does not keep narration optional`);
         assertNoEditorPressure(systemPrompt, `[${lang}/${char}] gallery prompt`);
         assert(languageSignals[lang].test(systemPrompt), `[${lang}/${char}] gallery prompt lacks target-language anchors`);
