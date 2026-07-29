@@ -77,7 +77,7 @@
                 window.__cupidLogRuntimeError(
                     'I18nLoadFailure',
                     `[i18n-loader] ${failures.length} translation file(s) failed for lang=${lang}`,
-                    failures.map(f => f.reason?.stack || f.reason?.message || String(f.reason)).join('\n'),
+                    failures.map(f => (f.reason && f.reason.stack) || (f.reason && f.reason.message) || String(f.reason)).join('\n'),
                     'i18n-loader'
                 );
             }
@@ -103,8 +103,8 @@
         if (typeof window.__cupidLogRuntimeError === 'function') {
             window.__cupidLogRuntimeError(
                 'I18nReadyError',
-                error?.message || String(error || 'i18n ready failed'),
-                error?.stack || '',
+                (error && error.message) || String(error || 'i18n ready failed'),
+                (error && error.stack) || '',
                 'i18n-loader'
             );
         }

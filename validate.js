@@ -630,6 +630,16 @@ try {
     const galleryLoaderPath = path.join(__dirname, 'assets/js/loaders/gallery-loader.js');
     const galleryLoaderContent = fs.readFileSync(galleryLoaderPath, 'utf8');
     const galleryLoaderVersion = (galleryLoaderContent.match(/const\s+version\s*=\s*(['"])([^'"]+)\1/) || [])[2];
+    const i18nLoaderContent = fs.readFileSync(path.join(__dirname, 'assets/js/loaders/i18n-loader.js'), 'utf8');
+    for (const [name, content] of Object.entries({
+        'game-loader.js': gameLoaderContent,
+        'gallery-loader.js': galleryLoaderContent,
+        'i18n-loader.js': i18nLoaderContent
+    })) {
+        if (content.includes('?.')) {
+            errors.push('[LOADER_COMPAT] Safari 12 호환 진입 로더에 optional chaining이 남아 있음: ' + name);
+        }
+    }
 
     // modules/config.js ASSET_VERSION
     const modulesConfigPath = path.join(__dirname, 'assets/js/modules/config.js');
@@ -707,8 +717,8 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.105') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.105가 아님: ' + loaderVersion);
+    if (loaderVersion !== '2.9.106') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.106이 아님: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');

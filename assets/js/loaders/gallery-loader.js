@@ -86,18 +86,24 @@
 
     window.addEventListener('error', function(e) {
         var src = (e.filename || '') + ':' + e.lineno + ':' + e.colno;
-        _sendError(e.error?.name || 'Error', e.message, e.error?.stack || '', src);
+        var error = e.error;
+        _sendError((error && error.name) || 'Error', e.message, (error && error.stack) || '', src);
     });
 
     window.addEventListener('unhandledrejection', function(e) {
         var reason = e.reason;
-        _sendError('UnhandledRejection', reason?.message || String(reason || 'Unhandled rejection'), reason?.stack || '', window.location.href);
+        _sendError(
+            'UnhandledRejection',
+            (reason && reason.message) || String(reason || 'Unhandled rejection'),
+            (reason && reason.stack) || '',
+            window.location.href
+        );
     });
 })();
 
 (function () {
     // 로더 설정 로드 (동기)
-    document.write('<script src="assets/js/loaders/config.js?v=2.9.105"><\/script>');
+    document.write('<script src="assets/js/loaders/config.js?v=2.9.106"><\/script>');
 })();
 
 // config.js 로드 후 실행
@@ -108,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // 갤러리 스크립트 로드 (document.write는 동기적)
 (function () {
     const basePath = 'assets/js/';
-    const version = '2.9.105';
+    const version = '2.9.106';
 
     const scripts = [
         // 0. 모듈 설정 (ASSET_VERSION 등)
