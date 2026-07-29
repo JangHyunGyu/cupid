@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.32';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.33';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function buildGalleryThirdPersonAdultCameraRule(lang = 'ko') {
@@ -179,7 +179,6 @@ function buildGalleryRecentExpressionRepetitionGuard(messages = [], lang = 'en')
     )?.content || '');
 
     const isKo = lang === 'ko';
-    const recentJoined = assistantTexts.join('\n');
     const formatList = (items, limit = 6) => items.filter(Boolean).slice(0, limit).join(', ');
     const normalizeOpening = (text = '') => {
         const firstSentence = String(text || '').replace(/\\n/g, ' ').split(/[.!?。！？\n]/u)[0] || '';
@@ -222,32 +221,15 @@ function buildGalleryRecentExpressionRepetitionGuard(messages = [], lang = 'en')
 
     const stockHits = stockPatterns
         .filter(item =>
-            galleryRecentPhraseMatches(item.pattern, recentJoined) &&
+            assistantTexts.reduce(
+                (count, text) => count + (galleryRecentPhraseMatches(item.pattern, text) ? 1 : 0),
+                0
+            ) >= 2 &&
             !galleryRecentPhraseMatches(item.pattern, latestUserText)
         )
         .map(item => isKo ? item.ko : item.en);
 
-    const gesturePatterns = [
-        { ko: '시선·눈동자·흘깃 보는 동작', en: 'gaze/eye/glance beats', pattern: /시선|눈동자|눈길|흘깃|쳐다|바라보|응시|gaze|glance|stare|eyes?/iu },
-        { ko: '손끝·손목·붙잡는 동작', en: 'hand/fingertip/grip beats', pattern: /손끝|손가락|손목|손을|붙잡|잡아|쥐었|감싸|fingertip|wrist|hand|grip|held/iu },
-        { ko: '입술·목소리 떨림', en: 'lip/voice trembling beats', pattern: /입술|목소리|떨림|떨리|lip|voice|trembl/iu },
-        { ko: '숨·호흡·심장', en: 'breath/heartbeat beats', pattern: /숨|호흡|숨결|심장|심박|breath|heartbeat/iu },
-        { ko: '정적·공기·긴장', en: 'silence/air/tension beats', pattern: /정적|공기|긴장|\bsilence\b|\bair\b|\btension\b/iu },
-        { ko: '어깨·허리·품에 머문 자세', en: 'shoulder/waist/static embrace beats', pattern: /어깨|허리|품|가슴팍|밀착|끌어안|shoulder|waist|embrace|chest|closeness/iu }
-    ];
-
-    const repeatedGestures = gesturePatterns
-        .map(item => ({
-            ...item,
-            count: assistantTexts.reduce((count, text) => count + (galleryRecentPhraseMatches(item.pattern, text) ? 1 : 0), 0)
-        }))
-        .filter(item =>
-            item.count >= 2 &&
-            !galleryRecentPhraseMatches(item.pattern, latestUserText)
-        )
-        .map(item => isKo ? item.ko : item.en);
-
-    if (repeatedOpenings.length === 0 && stockHits.length === 0 && repeatedGestures.length === 0) return '';
+    if (repeatedOpenings.length === 0 && stockHits.length === 0) return '';
 
     const guardLines = [];
     if (stockHits.length) {
@@ -260,12 +242,6 @@ function buildGalleryRecentExpressionRepetitionGuard(messages = [], lang = 'en')
             ? `- 되풀이한 문장 첫머리: ${formatList(repeatedOpenings, 4)}`
             : `- Repeated sentence openings: ${formatList(repeatedOpenings, 4)}`);
     }
-    if (repeatedGestures.length) {
-        guardLines.push(isKo
-            ? `- 되풀이한 몸짓·감각 단서: ${formatList(repeatedGestures)}`
-            : `- Repeated gesture/sensory cues: ${formatList(repeatedGestures)}`);
-    }
-
     const guardBody = guardLines.join('\n');
     return isKo
         ? `\n\n[표현 겹침]\n${guardBody}\n사용자가 방금 다시 꺼낸 표현이 아니라면 이번 답변에서 그대로 되풀이하지 말고, 같은 캐릭터가 지금 할 법한 다른 말이나 행동으로 자연스럽게 이어가세요.`
@@ -564,7 +540,6 @@ class GalleryFreeTalk {
         return `**[Target-Language Voice]**
 - Keep all visible segments[].text idiomatic in ${languageName} and consistent with the character's voice.
 - Read the user's typos, broken grammar, awkward punctuation, or code-switching for intent without copying them as the character's style.
-- Never open with assistant-like acknowledgement ("I understand", "Of course", "How can I help?") or restate the user's message. React as the in-world character immediately.
 - Keep dialect, pronouns, formality, and terms of address consistent inside the reply. Do not translate Korean/Japanese honorific habits literally unless the target language naturally uses them.
 - Keep JSON keys and enum values unchanged.
 

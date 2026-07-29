@@ -707,8 +707,8 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.104') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.104가 아님: ' + loaderVersion);
+    if (loaderVersion !== '2.9.105') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.105가 아님: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');
@@ -1761,6 +1761,12 @@ try {
     errors.push('[MULTILINGUAL_PROMPT_CHECK] 7언어 프리토킹 프롬프트 검증 실패: ' + e.message);
 }
 
+try {
+    require('./scripts/verify-repetition-guards.cjs');
+} catch (e) {
+    errors.push('[REPETITION_GUARD_CHECK] 조건부 표현 반복 감지 검증 실패: ' + e.message);
+}
+
 // FT-5: 프리토킹 턴 수 / maxTurns 설정 일관성
 try {
     const ftSysContent = fs.readFileSync(path.join(__dirname, 'assets/js/modules/FreeTalkSystem.js'), 'utf8');
@@ -1788,11 +1794,11 @@ try {
     const activePromptSources = [promptsContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
-    if (promptVersion !== '2.7.34') {
-        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.34가 아님: ' + promptVersion);
+    if (promptVersion !== '2.7.35') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.35가 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.32') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.32가 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.33') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.33이 아님: ' + galleryPromptVersion);
     }
     const completedActionCanonSignals = [
         '완료형으로 쓴 행동은 성적 접촉도 이미 일어난 사건이며',
@@ -1863,7 +1869,10 @@ try {
         'festen Quote',
         'cota fixa',
         'A dialogue-only reply is normal',
-        '대사만으로 자연스러우면 dialogue 하나면 충분하며'
+        '대사만으로 자연스러우면 dialogue 하나면 충분하며',
+        '설정을 요약하거나 상담원처럼 확인하지 말고',
+        'No premise recap',
+        'or restate the user\'s message'
     ];
     for (const phrase of removedAlwaysOnPromptBrakes) {
         if (activePromptSources.includes(phrase)) {
@@ -1873,6 +1882,12 @@ try {
     if (!ftSysContent.includes('function buildCupidRecentExpressionRepetitionGuard(')
         || !gftContent.includes('function buildGalleryRecentExpressionRepetitionGuard(')) {
         errors.push('[FREETALK_PROMPT] 실제 최근 표현 중복 감지기가 누락됨');
+    }
+    if (ftSysContent.includes('const gesturePatterns = [')
+        || gftContent.includes('const gesturePatterns = [')
+        || !ftSysContent.includes(') >= 2 &&')
+        || !gftContent.includes(') >= 2 &&')) {
+        errors.push('[FREETALK_PROMPT] 반복 감지가 실제 2회 이상 문구 중복보다 넓게 작동함');
     }
     if (!promptsContent.includes('function getCupidRoleplayQualityIssue(')
         || !promptsContent.includes('unicode_replacement_character')

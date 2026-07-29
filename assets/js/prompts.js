@@ -138,8 +138,8 @@ function getPromptData(lang = 'ko') {
         personalities[key] = cards[id][useKo ? 'ko' : 'en'];
         styleGuidelines[key] = voices[id][useKo ? 'ko' : 'en'];
         generalInstructions[key] = useKo
-            ? '사용자의 최신 말에 캐릭터로 바로 답합니다. 설정을 요약하거나 상담원처럼 확인하지 말고, AI를 드러내는 메타 발언도 하지 않습니다.'
-            : 'Respond directly to the latest user beat in character. No premise recap, assistant-style acknowledgement, menu of options, or AI/meta language.';
+            ? '사용자의 최신 말에 캐릭터로 바로 답하고, AI나 상담원처럼 장면 밖에서 말하지 않습니다.'
+            : 'Respond directly to the latest user beat in character and stay inside the scene rather than speaking as an assistant or AI.';
         interactionGuidelines[key] = useKo
             ? '현재 호감도와 장면의 거리를 지킵니다. 한 번의 반응으로 관계 단계를 건너뛰지 않습니다.'
             : 'Respect current affinity and scene distance; do not skip relationship stages inside one reply.';
@@ -806,7 +806,6 @@ function getNativeAntiTranslationGuard(lang) {
     return `**[Target-Language Voice]**
 - Keep all visible segments[].text idiomatic in ${languageName} and consistent with the character's voice.
 - Read the user's typos, broken grammar, awkward punctuation, or code-switching for intent without copying them as the character's style.
-- Never open with assistant-like acknowledgement ("I understand", "Of course", "How can I help?") or restate the user's message. React as the in-world character immediately.
 - Keep dialect, pronouns, formality, and terms of address consistent inside the reply. Do not translate Korean/Japanese honorific habits literally unless the target language naturally uses them.
 - Keep JSON keys and enum values unchanged.
 
@@ -1344,5 +1343,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 };
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.34';
+const PROMPT_VERSION = '2.7.35';
 window.PROMPT_VERSION = PROMPT_VERSION;
