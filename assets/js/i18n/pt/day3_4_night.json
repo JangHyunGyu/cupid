@@ -1,15 +1,15 @@
 {
     "night3_start": {
         "name": "{name}",
-        "text": "*Cheguei no quarto. Foi um dia pesado.*"
+        "text": "*Volto ao quarto e penduro a mochila na cadeira.*"
     },
     "night3_start_2": {
         "name": "{name}",
-        "text": "*Olho o celular.*"
+        "text": "*Ligo a tela do celular que deixei virado para baixo sobre a mesa.*"
     },
     "night3_faithful_check": {
         "name": "{name}",
-        "text": "*Chegaram mensagens.*"
+        "text": "*Há uma mensagem não lida.*"
     },
     "night3_faithful_msg_seo_1": {
         "name": "Seoyeon",
@@ -37,7 +37,7 @@
     },
     "night3_faithful_msg_dain_1": {
         "name": "Dain",
-        "text": "se quiser perguntar do meu joelho, vem perguntar pessoalmente kkkk"
+        "text": "se vai perguntar se meu tornozelo está bem, venha perguntar pessoalmente, haha"
     },
     "night3_faithful_msg_dain_2": {
         "name": "Dain",
@@ -53,7 +53,7 @@
     },
     "night3_dream_2_b": {
         "name": "{name}",
-        "text": "*Fechei o bloco de notas. Ainda não há frase para enviar amanhã. Mas decidi não deixar a tela em branco.*"
+        "text": "*Fecho o aplicativo de notas. Ainda não há nenhuma frase para enviar amanhã.*"
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
@@ -81,11 +81,11 @@
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*A galeria está vazia. Só o espaço onde ficava a foto de Sojeong continua aceso em branco.*"
+        "text": "*A foto de Sojeong desaparece da galeria, deixando apenas um espaço vazio.*"
     },
     "night3_faithful_reflect_4_b": {
         "name": "{name}",
-        "text": "*Deletar a foto foi fácil. Apenas um dedo. Fico olhando a miniatura do álbum vazio por um tempo.*"
+        "text": "*Esfrego o polegar sobre a miniatura do álbum vazio.*"
     },
     "night3_faithful_reflect_4_c": {
         "name": "{name}",
@@ -93,23 +93,23 @@
     },
     "night3_dream_3": {
         "name": "{name}",
-        "text": "*Foi um bom sonho.*"
+        "text": "*Acordo antes de o alarme tocar.*"
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",
-        "text": "*Quando fecho os olhos, a sensação de andar ao lado da Seoyeon ainda fica.*"
+        "text": "*Quando fecho os olhos, a primeira coisa que surge é a grade do terraço.*"
     },
     "night3_dream_yuna_bonus": {
         "name": "{name}",
-        "text": "*Quando fecho os olhos, o ar silencioso ao lado da Yuna ainda fica.*"
+        "text": "*Quando fecho os olhos, a primeira coisa que surge é a janela do anexo da biblioteca.*"
     },
     "night3_dream_dain_bonus": {
         "name": "{name}",
-        "text": "*Quando fecho os olhos, a risada da Dain volta com um segundo de atraso.*"
+        "text": "*Quando fecho os olhos, lembro o som da bola quicando no chão do ginásio.*"
     },
     "night3_cheat_msg_1": {
         "name": "{name}",
-        "text": "*Cheguei no quarto. Foi um dia pesado. Olho o celular.*"
+        "text": "*Assim que volto ao quarto, ligo a tela do celular.*"
     },
     "night3_cheat_msg_2": {
         "name": "Seoyeon",
@@ -133,7 +133,7 @@
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "*espero que você não trate essa escolha como se não fosse nada*"
+        "text": "*decida quem você vai ver amanhã*"
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
@@ -145,7 +145,7 @@
     },
     "night3_cheat_msg_7": {
         "name": "Yuna",
-        "text": "*Mandou três linhas. Alguém que normalmente não escreve nem uma.*"
+        "text": "*Três bolhas de mensagem de Yuna aparecem em sequência.*"
     },
     "night3_nightmare_1": {
         "name": "{name}",
@@ -153,7 +153,7 @@
     },
     "night3_nightmare_2_b": {
         "name": "{name}",
-        "text": "*Abro a conversa de Seoyeon. A última mensagem termina em 'Por favor'.*"
+        "text": "*Abro a conversa de Seoyeon. A última mensagem é «Por favor». Depois disso, não há nada novo.*"
     },
     "night3_nightmare_3": {
         "name": "Seoyeon",
@@ -190,15 +190,15 @@
     },
     "night3_nightmare_seo": {
         "name": "{name}",
-        "text": "*Escrevo na conversa de Seoyeon: 'Amanhã vou falar olhando para você.' Pouco antes de enviar, meu dedo para.*"
+        "text": "*Escrevo no campo de Seoyeon: «Amanhã vou falar com você pessoalmente» e deixo o polegar sobre o botão de enviar.*"
     },
     "night3_nightmare_yuna": {
         "name": "{name}",
-        "text": "*Escrevo na conversa de Yuna: 'Amanhã vou falar sem fugir.' Pouco antes de enviar, meu dedo para.*"
+        "text": "*Quando escrevo no campo de Yuna «Amanhã vou falar sem evitar você», o cursor pisca depois do ponto final.*"
     },
     "night3_nightmare_dain": {
         "name": "{name}",
-        "text": "*Escrevo na conversa de Dain: 'Desculpa por fazer você esperar. Amanhã a gente conversa.' Pouco antes de enviar, meu dedo para.*"
+        "text": "*Escrevo no campo de Dain: «Desculpe por fazer você esperar. Amanhã eu falo» e pressiono com o polegar a borda do ícone de enviar.*"
     },
     "night3_nightmare_end": {
         "name": "{name}",
@@ -238,6 +238,6 @@
     },
     "night3_end": {
         "name": "{name}",
-        "text": "*Apago a luz do quarto.*"
+        "text": "*Apago a luz do quarto e deixo o celular virado para baixo.*"
     }
 }

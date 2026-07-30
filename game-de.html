@@ -29,13 +29,13 @@
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="dns-prefetch" href="https://chatbot-api.yama5993.workers.dev">
     <link rel="preload" href="assets/css/style.css?v=2.9.7" as="style">
-<link rel="preload" href="assets/js/loaders/game-loader.js?v=2.9.106" as="script">
-<link rel="preload" href="assets/js/sound.js?v=2.9.106" as="script">
+<link rel="preload" href="assets/js/loaders/game-loader.js?v=2.9.107" as="script">
+<link rel="preload" href="assets/js/sound.js?v=2.9.107" as="script">
 
     <link rel="stylesheet" href="assets/css/style.css?v=2.9.7">
     <link rel="stylesheet" as="style" crossorigin
         href="assets/vendor/pretendard/pretendard.css" />
-    <script src="assets/js/browser-check.js?v=2.9.7" defer></script>
+    <script src="assets/js/browser-check.js?v=2.9.8" defer></script>
 <script src="assets/js/ga-engagement.js?v=20260618-engagement" defer></script>
 </head>
 
@@ -61,11 +61,11 @@
                 <!-- Name Input -->
                 <div id="name-input-container" style="display: none;">
                     <div id="name-input-wrapper">
-                        <input type="text" id="player-name-input" placeholder="Gib deinen Namen ein (1-12 Zeichen)"
+                        <input type="text" id="player-name-input" placeholder="Gib deinen Namen ein (1–12 Buchstaben)"
                             maxlength="12">
                         <button id="name-confirm-btn">Bestätigen</button>
                     </div>
-                    <div id="name-input-guide">1-12 Zeichen (Buchstaben, Umlaute erlaubt)</div>
+                    <div id="name-input-guide">1–12 Buchstaben (Umlaute erlaubt)</div>
                 </div>
             </div>
 
@@ -145,7 +145,7 @@
                 <div class="credits-subtitle">Wo Amors Pfeil trifft</div>
                 <div class="credits-divider">─ ─ ─</div>
                 <div class="credits-section">
-                    <div class="credits-role">Planung · Szenario</div>
+                    <div class="credits-role">Konzept · Szenario</div>
                     <div class="credits-name">Hyungyu Jang · Yujin Kim · Sanghun Lee</div>
                 </div>
                 <div class="credits-section">
@@ -164,11 +164,11 @@
                 <div class="credits-section">
                     <div class="credits-role">Charaktere</div>
                     <div class="credits-name">Seoyeon · Yuna · Dain</div>
-                    <div class="credits-name">Schulkrankenschwester · Klassenlehrer</div>
+                    <div class="credits-name">Schulkrankenschwester · Klassenlehrerin</div>
                 </div>
                 <div class="credits-divider">─ ─ ─</div>
                 <div class="credits-section">
-                    <div class="credits-role">Produziert von</div>
+                    <div class="credits-role">Produktion</div>
                     <div class="credits-name">Hyungyu Jang · Yujin Kim</div>
                 </div>
                 <div class="credits-divider">─ ─ ─</div>
@@ -188,7 +188,7 @@
         <div id="homeConfirmModal" class="modal-overlay" style="display: none;" onclick="closeHomeConfirm(event)">
             <div class="modal-container" onclick="event.stopPropagation()">
                 <h3 class="modal-title">Zurück zum Titel</h3>
-                <p style="color: #ccc; margin: 20px 0; line-height: 1.6;">Möchtest du wirklich zum Titelbildschirm zurückkehren?<br><span style="color: var(--c-accent); font-size: 0.9em;">(Der aktuelle Fortschritt wird nicht gespeichert)</span></p>
+                <p style="color: #ccc; margin: 20px 0; line-height: 1.6;">Möchtest du wirklich zum Titelbildschirm zurückkehren?<br><span style="color: var(--c-accent); font-size: 0.9em;">(Dein Fortschritt wird gespeichert)</span></p>
                 <div style="display: flex; gap: 10px; justify-content: center;">
                     <button class="modal-btn" onclick="closeHomeConfirm(event)"
                         style="background: var(--c-surface-light); border: 1px solid var(--c-border-soft); color: var(--c-text-soft);">Abbrechen</button>
@@ -252,7 +252,7 @@
     </div>
 
     <!-- Game Scripts (Dynamic Loader) -->
-<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.106"></script>
+<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.107"></script>
     <script>
         window.addEventListener('load', function () {
             var wcs_script = document.createElement('script');

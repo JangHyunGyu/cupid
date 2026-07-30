@@ -5,7 +5,7 @@
     },
     "date_seo_compliment_choice": {
         "name": "{name}",
-        "text": "*What do I say?*",
+        "text": "*Seoyeon winds the strap of her bag around one finger again.*",
         "choices": [
             "You look pretty today.",
             "You went all out today, huh."
@@ -17,11 +17,11 @@
     },
     "date_seo_pretty_high_b": {
         "name": "Seoyeon",
-        "text": "...Did you rehearse that line?"
+        "text": "Did you rehearse that line?"
     },
     "date_seo_pretty_high_2": {
         "name": "Seoyeon",
-        "text": "*She turns her gaze away, tucking a strand of hair behind her ear.* ...Let's walk."
+        "text": "*She turns her gaze toward the sound of the fountain.* Let's get some air."
     },
     "date_seo_pretty_high_3": {
         "name": "{name}",
@@ -29,15 +29,15 @@
     },
     "date_seo_pretty_high_3_b": {
         "name": "Seoyeon",
-        "text": "*She tucks her hair back.* ...Enough."
+        "text": "*She readjusts her grip on the bag strap.* Enough."
     },
     "date_seo_pretty_high_4": {
         "name": "Seoyeon",
-        "text": "*Instead of answering, she tucks her hair behind her ear. The same hand rises again almost immediately.*"
+        "text": "*The hair tucked behind her ear falls loose again. Her rising hand returns to the bag strap.*"
     },
     "date_seo_pretty_low": {
         "name": "Seoyeon",
-        "text": "...Where'd that come from. Warn me before you say things like that."
+        "text": "Where did that come from? Warn me before you say things like that."
     },
     "date_seo_bright": {
         "name": "Seoyeon",
@@ -65,11 +65,11 @@
     },
     "date_seo_flower_b": {
         "name": "Seoyeon",
-        "text": "*She stops walking.* ...Want to go in?"
+        "text": "*She turns her toes toward the flower shop's glass door.* Want to go in?"
     },
     "date_seo_flower_2": {
         "name": "Seoyeon",
-        "text": "*She pushes the flower shop door open. A bell chimes. She picks out a small pot. A succulent.*"
+        "text": "*A bell chimes when she pushes open the flower-shop door. Seoyeon circles the displays once and chooses a small potted succulent.*"
     },
     "date_seo_succulent_2": {
         "name": "Seoyeon",
@@ -93,7 +93,7 @@
     },
     "date_seo_end_c": {
         "name": "Seoyeon",
-        "text": "*She stops walking.* ...Today."
+        "text": "*The wrapping around the pot rustles softly in her hand.* Today."
     },
     "date_seo_end_d": {
         "name": "Seoyeon",
@@ -105,7 +105,7 @@
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
-        "text": "*What do I say?*",
+        "text": "*Yuna's eyes briefly rise over the rim of her cup.*",
         "choices": [
             "First time I'm seeing you out of uniform.",
             "You look a little different today."
@@ -113,11 +113,11 @@
     },
     "date_yuna_pretty_high": {
         "name": "Yuna",
-        "text": "*She lowers her head and keeps staring at the rim of her cup.*"
+        "text": "*She stares at the rim of the cup for a long time. Silver-white hair slips down beside her cheek.*"
     },
     "date_yuna_pretty_high_2": {
         "name": "Yuna",
-        "text": "...That."
+        "text": "That."
     },
     "date_yuna_pretty_high_3": {
         "name": "{name}",
@@ -137,15 +137,15 @@
     },
     "date_yuna_pretty_high_5_c": {
         "name": "Yuna",
-        "text": "*She lowers her eyes to her cup.* ...Enough."
+        "text": "*Her thumb sweeps the condensation from the cup lid.* Enough."
     },
     "date_yuna_pretty_low": {
         "name": "Yuna",
-        "text": "...I'm not used to hearing things like that."
+        "text": "I'm not used to hearing things like that."
     },
     "date_yuna_bright": {
         "name": "Yuna",
-        "text": "...What's different?"
+        "text": "What's different?"
     },
     "date_yuna_bookstore": {
         "name": "{name}",
@@ -161,7 +161,7 @@
     },
     "date_yuna_bookstore_3": {
         "name": "Yuna",
-        "text": "...Good. So I get to be the one who brought you here first."
+        "text": "Good. So I get to be the first one who showed you this place."
     },
     "date_yuna_earphone": {
         "name": "Yuna",
@@ -169,7 +169,7 @@
     },
     "date_yuna_earphone_2": {
         "name": "Yuna",
-        "text": "...Listen."
+        "text": "Listen."
     },
     "date_yuna_earphone_2_b": {
         "name": "{name}",
@@ -181,11 +181,11 @@
     },
     "date_yuna_oldbook": {
         "name": "{name}",
-        "text": "*We pass a secondhand bookshop. Yuna stops walking.*"
+        "text": "*Two steps past a secondhand bookshop, Yuna turns back.*"
     },
     "date_yuna_oldbook_b": {
         "name": "Yuna",
-        "text": "...Here."
+        "text": "Here."
     },
     "date_yuna_oldbook_c": {
         "name": "{name}",
@@ -201,15 +201,15 @@
     },
     "date_yuna_oldbook_4": {
         "name": "Yuna",
-        "text": "...Now it reads differently."
+        "text": "Now it reads differently."
     },
     "date_yuna_end": {
         "name": "Yuna",
-        "text": "*She looks at {name}. The page she was turning stops under her fingertips.*"
+        "text": "*She looks at {name}. The corner of the page folds beneath her fingers.*"
     },
     "date_yuna_end_b": {
         "name": "Yuna",
-        "text": "*Just before we step out of the bookstore, she hands over a note. Without a word.*"
+        "text": "*Just before we leave the bookstore, she hands me a note instead of speaking.*"
     },
     "date_yuna_end_c": {
         "name": "{name}",
@@ -233,7 +233,7 @@
     },
     "date_dain_compliment_choice": {
         "name": "{name}",
-        "text": "*What do I say?*",
+        "text": "*Dain presses down the brim of her cap once and waits.*",
         "choices": [
             "That cap looks good on you.",
             "Sportswear really suits you."
@@ -241,7 +241,7 @@
     },
     "date_dain_pretty_high": {
         "name": "Dain",
-        "text": "*She stops. She pulls her cap down so far it hides half her face.*"
+        "text": "*Dain pulls her cap low enough to hide half her face.*"
     },
     "date_dain_pretty_high_2": {
         "name": "Dain",
@@ -253,11 +253,11 @@
     },
     "date_dain_pretty_high_4": {
         "name": "Dain",
-        "text": "*She keeps holding the brim of her cap and cannot lower her hand for a while.*"
+        "text": "*The tips of her ears redden beneath the brim. Her fingers remain hooked over its edge.*"
     },
     "date_dain_pretty_low": {
         "name": "Dain",
-        "text": "What brought that on? ...Thanks, though."
+        "text": "What brought that on? Thanks, though."
     },
     "date_dain_bright": {
         "name": "Dain",
@@ -293,11 +293,11 @@
     },
     "date_dain_rhythm": {
         "name": "Dain",
-        "text": "*She points at the screen.* This score is the second highest ever!"
+        "text": "*She points at the score on the screen.* That's my second-highest score ever."
     },
     "date_dain_rhythm_2": {
         "name": "{name}",
-        "text": "...That was amazing."
+        "text": "That was amazing."
     },
     "date_dain_rhythm_3": {
         "name": "Dain",
@@ -305,15 +305,15 @@
     },
     "date_dain_knee": {
         "name": "{name}",
-        "text": "*'Because I don't have to use my knees.' Dain says it with a smile, but glances once at her knee reflected in the glass.*"
+        "text": "*“Because I don't have to use my knees.” Dain laughs at the end, then glances once at her right knee reflected in the window.*"
     },
     "date_dain_knee_2": {
         "name": "{name}",
-        "text": "*We step out of the arcade and pass a sporting goods store. Dain stops at the display window, where a pair of volleyball shoes is on display.*"
+        "text": "*We leave the arcade and pass a sporting-goods store. Dain slows in front of a window displaying volleyball shoes.*"
     },
     "date_dain_shop": {
         "name": "Dain",
-        "text": "......"
+        "text": "*Her eyes trace the laces of the volleyball shoes behind the glass. Beneath her cap, her lips press together.*"
     },
     "date_dain_shop_2": {
         "name": "{name}",
@@ -321,15 +321,15 @@
     },
     "date_dain_shop_2_b": {
         "name": "Dain",
-        "text": "*She turns away.* It's nothing! Let's go!"
+        "text": "*She turns her chin toward the other side of the display.* It's nothing! Let's go!"
     },
     "date_dain_shop_3": {
         "name": "Dain",
-        "text": "*She pulls her cap lower.* ...Don't stare."
+        "text": "*She shoves both hands into her pockets and walks ahead.* Don't stare."
     },
     "date_dain_shop_3_b": {
         "name": "Dain",
-        "text": "*From beneath her cap* ...Say that one more time and I'll hit you."
+        "text": "*She lengthens her stride.* Ask me one more time and I'm seriously leaving without you."
     },
     "date_dain_end": {
         "name": "{name}",
@@ -341,7 +341,7 @@
     },
     "date_dain_end_c": {
         "name": "Dain",
-        "text": "I had fun today. ...I mean it."
+        "text": "I had fun today. I mean it."
     },
     "pre_confess_minsu": {
         "name": "Minsu",
@@ -353,6 +353,6 @@
     },
     "pre_confess_callback": {
         "name": "{name}",
-        "text": "*The phone in my pocket feels heavy. There are no notifications, only black glass on the screen.*"
+        "text": "*The corner of the phone in my pocket presses into my palm. There are no notifications, only black glass reflected on the screen.*"
     }
 }

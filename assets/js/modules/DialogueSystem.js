@@ -103,7 +103,11 @@ class DialogueSystem {
         const charSlots = this.uiManager.charSlots;
 
         // 주인공이나 시스템 메시지는 애니메이션 없음
-        if (!charName || charName === "나" || charName === "Me" || charName === "시스템" || charName === "System") {
+        const nonCharacterNames = new Set([
+            "나", "Me", "Yo", "Moi", "Ich", "Eu",
+            "시스템", "System", "Sistema", "Système", "システム"
+        ]);
+        if (!charName || nonCharacterNames.has(charName)) {
             // 모든 캐릭터의 말하기 애니메이션 제거
             Object.values(charSlots).forEach(slot => {
                 if (!slot) return;
@@ -149,7 +153,10 @@ class DialogueSystem {
         const isEn = lang === 'en';
 
         // 주인공/시스템 메시지인지 확인
-        const isPlayer = charName === "나" || charName === "Me" || charName === "시스템" || charName === "System";
+        const isPlayer = new Set([
+            "나", "Me", "Yo", "Moi", "Ich", "Eu",
+            "시스템", "System", "Sistema", "Système", "システム"
+        ]).has(charName);
         const charKey = charName && (this.charNameMap[charName] || charName);
 
         // 이 캐릭터가 플레이어 이름을 알고 있는지 확인
@@ -190,16 +197,17 @@ class DialogueSystem {
     generateAffinityList(isEn) {
         const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
         const charNamesByLang = {
-            en: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Teacher", Nurse: "Nurse" },
-            es: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Profesora", Nurse: "Enfermera" },
+            en: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Homeroom Teacher", Nurse: "School Nurse" },
+            es: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Profesora tutora", Nurse: "Enfermera escolar" },
             ja: { Seoyeon: "ソヨン", Yuna: "ユナ", Dain: "ダイン", Teacher: "担任の先生", Nurse: "保健室の先生" },
-            fr: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Professeur Principal", Nurse: "Infirmière Scolaire" },
-            de: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Homeroom", Nurse: "Health Room" },
+            fr: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Professeure principale", Nurse: "Infirmière scolaire" },
+            de: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Klassenlehrerin", Nurse: "Schulkrankenschwester" },
+            pt: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Professora da turma", Nurse: "Enfermeira escolar" },
             ko: { Seoyeon: "서연", Yuna: "유나", Dain: "다인", Teacher: "담임선생님", Nurse: "보건선생님" }
         };
         const charNames = charNamesByLang[lang] || charNamesByLang.ko;
 
-        let listStr = { es: "\n\n[Estado de Afinidad]\n", ja: "\n\n[好感度状況]\n", en: "\n\n[Affinity Status]\n", fr: "\n\n[État d'Affinité]\n", de: "\n\n[Zuneigungsstatus]\n", pt: "\n\n[Status de Afinidade]\n" }[lang] || "\n\n[호감도 현황]\n";
+        let listStr = { es: "\n\n[Estado de Afinidad]\n", ja: "\n\n[好感度状況]\n", en: "\n\n[Affinity Status]\n", fr: "\n\n[État de l’affinité]\n", de: "\n\n[Zuneigungsstatus]\n", pt: "\n\n[Status de Afinidade]\n" }[lang] || "\n\n[호감도 현황]\n";
 
         for (const [key, name] of Object.entries(charNames)) {
             // 만난 적 없는 캐릭터는 건너뛰기
@@ -446,7 +454,15 @@ class DialogueSystem {
                         const imageLang = String(window.GAME_LANG || document.documentElement.lang || 'ko')
                             .toLowerCase()
                             .split('-')[0];
-                        img.alt = imageLang === 'ja' ? '添付画像' : 'Attached image';
+                        img.alt = {
+                            ko: '첨부 이미지',
+                            en: 'Attached image',
+                            es: 'Imagen adjunta',
+                            ja: '添付画像',
+                            fr: 'Image jointe',
+                            de: 'Angehängtes Bild',
+                            pt: 'Imagem anexada'
+                        }[imageLang] || 'Attached image';
                         img.onclick = () => {
                             if (window.openImageModal) window.openImageModal(imagePart);
                         };

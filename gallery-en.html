@@ -43,25 +43,25 @@
                     <span class="lang-flag">🇺🇸</span> English
                 </div>
                 <div class="lang-combo-dropdown">
-                    <a href="gallery.html" class="lang-combo-option">
+                    <a href="gallery.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','ko')">
                         <span class="lang-flag">🇰🇷</span> 한국어
                     </a>
                     <div class="lang-combo-option active">
                         <span class="lang-flag">🇺🇸</span> English
                     </div>
-                    <a href="gallery-es.html" class="lang-combo-option">
+                    <a href="gallery-es.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','es')">
                         <span class="lang-flag">🇪🇸</span> Español
                     </a>
-                    <a href="gallery-ja.html" class="lang-combo-option">
+                    <a href="gallery-ja.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','ja')">
                         <span class="lang-flag">🇯🇵</span> 日本語
                     </a>
-                    <a href="gallery-fr.html" class="lang-combo-option">
+                    <a href="gallery-fr.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','fr')">
                         <span class="lang-flag">🇫🇷</span> Français
                     </a>
-                    <a href="gallery-de.html" class="lang-combo-option">
+                    <a href="gallery-de.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','de')">
                         <span class="lang-flag">🇩🇪</span> Deutsch
                     </a>
-                    <a href="gallery-pt.html" class="lang-combo-option">
+                    <a href="gallery-pt.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','pt')">
                         <span class="lang-flag">🇧🇷</span> Português
                     </a>
                 </div>
@@ -144,7 +144,7 @@
     </footer>
 
     <!-- Gallery Scripts (Dynamic Loader) -->
-<script data-cupid-entry-script="true" src="assets/js/loaders/gallery-loader.js?v=2.9.106"></script>
+<script data-cupid-entry-script="true" src="assets/js/loaders/gallery-loader.js?v=2.9.107"></script>
     <script>
         function toggleLangCombo() {
             document.getElementById('langCombo').classList.toggle('open');

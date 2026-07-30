@@ -22,15 +22,15 @@
     },
     "morning5_mood_mid": {
         "name": "{name}",
-        "text": "Last day. Still not sure. But I have to go."
+        "text": "The last day. I still haven't decided which way to go. Even so, I walk through the gate."
     },
     "morning5_mood_low": {
         "name": "{name}",
-        "text": "The last day. I tap each of the three names left on my lock screen. I can't bring myself to open any of the chat windows."
+        "text": "The last day. I tap each of the three names left on my lock screen, then turn it off without opening any of the chats."
     },
     "morning5_gate": {
         "name": "{name}",
-        "text": "*At the school gate, I tug at my sleeve once. It no longer leaves a mark on my wrist.*"
+        "text": "*At the school gate, I roll up my sleeve. The red mark that used to circle my wrist is gone.*"
     },
     "morning5_seo_note_1": {
         "name": "{name}",
@@ -38,11 +38,11 @@
     },
     "morning5_seo_note_1_b": {
         "name": "{name}",
-        "text": "*I pass by the literature club display in the hallway. My feet stop in front of the bulletin board.*"
+        "text": "*Passing the literature club display in the hall, I spot four empty thumbtacks on the bulletin board.*"
     },
     "morning5_yuna_story_gone": {
         "name": "{name}",
-        "text": "*Only the pinholes remain on the bulletin board. Where the story should have been. — She took it down. Or maybe she never put it up at all.*"
+        "text": "*Only pinholes remain on the bulletin board. I can't tell whether a story was posted and removed or the space was empty from the start.*"
     },
     "morning5_yuna_story_gone_2": {
         "name": "{name}",
@@ -62,7 +62,7 @@
     },
     "morning5_yuna_story_4": {
         "name": "{name}",
-        "text": "*In the bottom corner of the bulletin board, small text — 'This is fiction. It's not real.' Eraser marks remain.*"
+        "text": "*Small writing remains in a corner below the bulletin board: “This is fiction. It isn't real.” Eraser marks blur beneath it.*"
     },
     "morning5_return_class": {
         "name": "{name}",
@@ -74,7 +74,7 @@
     },
     "morning5_dain_1_b": {
         "name": "{name}",
-        "text": "...Without even asking?"
+        "text": "Without even asking?"
     },
     "morning5_dain_2": {
         "name": "Dain",
@@ -99,11 +99,11 @@
     },
     "hidden_homeroom_d5_1": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher is sitting at the desk. — Not a manuscript this time. She's holding an envelope. A brown envelope.*"
+        "text": "*My homeroom teacher sits at the lectern holding a brown envelope. The manuscript pages are nowhere in sight.*"
     },
     "hidden_homeroom_d5_1_b": {
         "name": "Homeroom Teacher",
-        "text": "...Oh."
+        "text": "Oh, you're here."
     },
     "hidden_homeroom_d5_1_c": {
         "name": "{name}",
@@ -111,7 +111,7 @@
     },
     "hidden_homeroom_d5_1_d": {
         "name": "Homeroom Teacher",
-        "text": "*Lifting the envelope* ...This."
+        "text": "*She holds up the brown envelope.* This."
     },
     "hidden_homeroom_d5_1_e": {
         "name": "{name}",
@@ -143,11 +143,11 @@
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher stops. Her expression returns quickly, but the envelope has crumpled a little in her hand.*"
+        "text": "*The corner of the envelope crumples slightly in her hand. She smooths the fold with her thumb.*"
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Homeroom Teacher",
-        "text": "...I haven't even finished it yet."
+        "text": "I haven't even finished it yet."
     },
     "hidden_homeroom_d5_praise_trap_3": {
         "name": "{name}",
@@ -155,7 +155,7 @@
     },
     "hidden_homeroom_d5_praise_trap_4": {
         "name": "Homeroom Teacher",
-        "text": "...Right."
+        "text": "Right."
     },
     "hidden_homeroom_d5_praise_trap_5": {
         "name": "Homeroom Teacher",
@@ -167,7 +167,7 @@
     },
     "hidden_homeroom_d5_praise_trap_7": {
         "name": "{name}",
-        "text": "Teacher—"
+        "text": "Ma'am."
     },
     "hidden_homeroom_d5_praise_trap_8": {
         "name": "Homeroom Teacher",
@@ -191,11 +191,11 @@
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher stops. The edge of the paper bends a little in her hand.*"
+        "text": "*The end of the paper bends slightly in her hand. Lips pressed together, she carefully smooths the folded edge.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Homeroom Teacher",
-        "text": "...Here?"
+        "text": "Here?"
     },
     "hidden_homeroom_d5_correct_3": {
         "name": "{name}",
@@ -203,7 +203,7 @@
     },
     "hidden_homeroom_d5_correct_4": {
         "name": "Homeroom Teacher",
-        "text": "All right. — Give me a second."
+        "text": "Okay. Give me a second."
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
@@ -211,7 +211,7 @@
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Homeroom Teacher",
-        "text": "...You read that far?"
+        "text": "You read that far?"
     },
     "hidden_homeroom_d5_correct_7": {
         "name": "Homeroom Teacher",
@@ -219,7 +219,7 @@
     },
     "hidden_homeroom_d5_correct_8": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher swallows the rest. The classroom goes quiet, as quiet as the empty last line.*"
+        "text": "*She points to the final line with one fingertip. When the event announcement outside ends, only the sound of turning pages remains.*"
     },
     "hidden_homeroom_d5_correct_9": {
         "name": "{name}",
@@ -235,7 +235,7 @@
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher smiles. The clipboard comes down onto the desk.*"
+        "text": "*She sets the clipboard on the desk and caps the red pen.*"
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Homeroom Teacher",
@@ -243,7 +243,7 @@
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "*She cradles the manuscript again. The teacher rubs the return-label mark with her thumb. The paper edge crumples slightly in her palm.*"
+        "text": "*She takes back the critique copy and rubs the old return-label mark on the envelope once with her thumb.*"
     },
     "hidden_homeroom_d5_6": {
         "name": "Homeroom Teacher",
@@ -255,7 +255,7 @@
     },
     "hidden_homeroom_d5_6_c": {
         "name": "{name}",
-        "text": "*The envelope bends slightly in my hands. Her hand still lingers at the edge of the desk.*"
+        "text": "*With one hand resting on the edge of the desk, she watches the envelope go into my bag.*"
     },
     "hidden_homeroom_d5_6_d": {
         "name": "Homeroom Teacher",
@@ -287,7 +287,7 @@
     },
     "hidden_homeroom_d5_6_k": {
         "name": "{name}",
-        "text": "*Before answering, I touch the corner of the envelope first.*"
+        "text": "*While I wait for her answer, the number tag on the corner of the envelope catches my eye.*"
     },
     "hidden_homeroom_d5_6_l": {
         "name": "{name}",
@@ -295,7 +295,7 @@
     },
     "hidden_homeroom_d5_6_m": {
         "name": "Homeroom Teacher",
-        "text": "*She tucks her hair back.* ...I don't accept book reports."
+        "text": "*She tucks a loose strand of hair behind her ear.* I don't accept book reports."
     },
     "hidden_homeroom_d5_6_n": {
         "name": "{name}",
@@ -303,11 +303,11 @@
     },
     "hidden_homeroom_d5_6_o": {
         "name": "Homeroom Teacher",
-        "text": "*She gives a small laugh.* ...Right. At least write one line."
+        "text": "*The corner of her mouth rises.* Right. Write at least one line."
     },
     "hidden_homeroom_d5_6_p": {
         "name": "Homeroom Teacher",
-        "text": "*She pauses at the door and checks the literature club schedule once.*"
+        "text": "*She shifts her gaze to the literature club schedule posted beside the door.*"
     },
     "hidden_homeroom_d5_6_q": {
         "name": "Homeroom Teacher",
@@ -411,11 +411,11 @@
     },
     "hidden_nurse_d5_3_h": {
         "name": "School Nurse",
-        "text": "*I start to step into the nurse's office — then stop.*"
+        "text": "*Before crossing the nurse's-office threshold, she opens the appointment list again.*"
     },
     "hidden_nurse_d5_3_i": {
         "name": "School Nurse",
-        "text": "...{name}."
+        "text": "{name}, wait."
     },
     "hidden_nurse_d5_4": {
         "name": "School Nurse",

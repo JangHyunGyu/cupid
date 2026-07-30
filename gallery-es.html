@@ -37,31 +37,31 @@
     <header class="gallery-header">
         <h1>📖 Galer&#237;a</h1>
         <div class="header-actions">
-            <a href="/index-es" class="back-btn" onclick="if(window.opener&&!window.opener.closed){window.close();return false;}">&#8592; Volver</a>
+            <a href="/index-es" class="back-btn" onclick="if(window.opener&&!window.opener.closed){window.close();return false;}">&#8592; Volver al título</a>
             <div class="lang-combo" id="langCombo">
                 <div class="lang-combo-selected" onclick="toggleLangCombo()">
                     <span class="lang-flag">🇪🇸</span> Espa&#241;ol
                 </div>
                 <div class="lang-combo-dropdown">
-                    <a href="gallery.html" class="lang-combo-option">
+                    <a href="gallery.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','ko')">
                         <span class="lang-flag">🇰🇷</span> 한국어
                     </a>
-                    <a href="gallery-en.html" class="lang-combo-option">
+                    <a href="gallery-en.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','en')">
                         <span class="lang-flag">🇺🇸</span> English
                     </a>
-                    <a href="gallery-ja.html" class="lang-combo-option">
+                    <a href="gallery-ja.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','ja')">
                         <span class="lang-flag">🇯🇵</span> 日本語
                     </a>
                     <div class="lang-combo-option active">
                         <span class="lang-flag">🇪🇸</span> Espa&#241;ol
                     </div>
-                    <a href="gallery-fr.html" class="lang-combo-option">
+                    <a href="gallery-fr.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','fr')">
                         <span class="lang-flag">🇫🇷</span> Français
                     </a>
-                    <a href="gallery-de.html" class="lang-combo-option">
+                    <a href="gallery-de.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','de')">
                         <span class="lang-flag">🇩🇪</span> Deutsch
                     </a>
-                    <a href="gallery-pt.html" class="lang-combo-option">
+                    <a href="gallery-pt.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','pt')">
                         <span class="lang-flag">🇧🇷</span> Português
                     </a>
                 </div>
@@ -74,8 +74,8 @@
         <!-- Tab Navigation -->
         <nav class="tab-nav">
             <button class="tab-btn active" data-tab="characters">👤 Personajes</button>
-            <button class="tab-btn" data-tab="cg">🖼️ CG de Eventos</button>
-            <button class="tab-btn" data-tab="music">🎵 Sala de M&#250;sica</button>
+            <button class="tab-btn" data-tab="cg">🖼️ CG de eventos</button>
+            <button class="tab-btn" data-tab="music">🎵 Sala de m&#250;sica</button>
         </nav>
 
         <!-- Tab Contents -->
@@ -103,19 +103,19 @@
         <div class="modal-content">
             <div class="modal-header">
                 <div>
-                    <h2 id="modal-char-name">Character Name</h2>
-                    <p id="modal-char-title" style="color: #aaa; font-size: 0.9rem; margin-top: 5px;">Title</p>
+                    <h2 id="modal-char-name">Nombre del personaje</h2>
+                    <p id="modal-char-title" style="color: #aaa; font-size: 0.9rem; margin-top: 5px;">Título</p>
                 </div>
                 <button class="modal-close" onclick="closeCharacterModal()">✕</button>
             </div>
             <div class="modal-body">
                 <div class="character-preview">
-                    <img id="modal-char-image" src="" alt="Character">
+                    <img id="modal-char-image" src="" alt="Personaje">
                 </div>
                 <div class="character-details">
                     <div class="detail-section">
                         <h4>Introducci&#243;n</h4>
-                        <p id="modal-char-desc">Character description</p>
+                        <p id="modal-char-desc">Descripción del personaje</p>
                     </div>
                     <div class="detail-section">
                         <h4>Expresiones</h4>
@@ -140,11 +140,11 @@
 
     <!-- Footer -->
     <footer class="gallery-footer">
-        <p>&#169; 2026 ArcherLab. All rights reserved.</p>
+        <p>&#169; 2026 ArcherLab. Todos los derechos reservados.</p>
     </footer>
 
     <!-- Gallery Scripts (Dynamic Loader) -->
-<script data-cupid-entry-script="true" src="assets/js/loaders/gallery-loader.js?v=2.9.106"></script>
+<script data-cupid-entry-script="true" src="assets/js/loaders/gallery-loader.js?v=2.9.107"></script>
     <script>
         function toggleLangCombo() {
             document.getElementById('langCombo').classList.toggle('open');

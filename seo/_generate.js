@@ -9,6 +9,24 @@ const LASTMOD = '2026-07-13';
 const SEO_IMAGE = `${SITE}/cupid_link.png?v=2.9.6`;
 const SOCIAL_IMAGE = `${SITE}/assets/images/screenshots/cupid-title.jpg?v=2.9.6`;
 const GAME_DESCRIPTION = 'Cupid is a free browser romance visual novel with a five-day school story, five character routes, multiple endings, and support for seven languages.';
+const SOCIAL_IMAGE_ALTS = {
+  ko: '브라우저 로맨스 비주얼 노벨 Cupid 타이틀 화면',
+  en: 'Cupid browser romance visual novel title screen',
+  ja: 'ブラウザ恋愛ビジュアルノベル「Cupid」のタイトル画面',
+  es: 'Pantalla de título de Cupid, novela visual romántica para navegador',
+  fr: 'Écran-titre du roman visuel romantique Cupid sur navigateur',
+  de: 'Titelbildschirm von Cupid, einer Romance-Visual-Novel für den Browser',
+  pt: 'Tela de título de Cupid, visual novel romântica para navegador'
+};
+const RELATED_NAV_LABELS = {
+  ko: 'Cupid 관련 페이지',
+  en: 'Related Cupid pages',
+  ja: 'Cupidの関連ページ',
+  es: 'Páginas relacionadas con Cupid',
+  fr: 'Pages associées à Cupid',
+  de: 'Weitere Seiten zu Cupid',
+  pt: 'Páginas relacionadas a Cupid'
+};
 const GA_MEASUREMENT_ID = 'G-05YM7K3VX9';
 const GA_LINKER_DOMAINS = [
   'latindance.kr',
@@ -24,7 +42,7 @@ const LOCALES = {
   ko: 'ko_KR',
   en: 'en_US',
   ja: 'ja_JP',
-  es: 'es_ES',
+  es: 'es_LA',
   fr: 'fr_FR',
   de: 'de_DE',
   pt: 'pt_BR'
@@ -56,12 +74,12 @@ const C = {
     why_title: '왜 무설치 웹 연애게임인가',
     why: [
       '설치·다운로드·가입 없이 링크만으로 시작',
-      'PC·태블릿·모바일 어디서나 같은 저장본으로 이어 플레이',
-      '저장공간 0MB — 끝나면 흔적 없이 닫기만',
+      '같은 기기·같은 브라우저에서 진행 상황 자동 저장',
+      '브라우저에서 바로 실행되어 별도 설치 파일 없음',
       '광고·결제 압박 없이 전체 시나리오 무료 공개'
     ],
     how_title: '30초만에 시작하는 법',
-    how: ['아래 [지금 플레이] 버튼 클릭', '원하는 캐릭터 선택', '선택지로 5일간 호감도 쌓고 엔딩 보기'],
+    how: ['아래 [지금 플레이] 버튼 클릭', '이름을 입력하고 이야기 시작', '선택지로 5일간 호감도 쌓고 엔딩 보기'],
     faq_title: '자주 묻는 질문',
     faqs: [
       ['정말 100% 무료인가요?', '네. 결제·구독·가입 없이 모든 캐릭터 루트와 엔딩을 끝까지 플레이할 수 있습니다.'],
@@ -73,23 +91,23 @@ const C = {
     cupid_name: 'Cupid — AI 큐피드의 5일',
     cupid_desc: '메신저 UI 기반 멀티 엔딩 로맨스 VN. 5일간의 대화로 캐릭터마다 진짜 같은 관계를 만들어갑니다. 한국어 완역, 모바일 최적화.',
     nevergrad_name: 'Nevergrad (출시 예정)',
-    nevergrad_label: '2026.04 출시',
-    nevergrad_desc: '더 깊은 캐릭터, 더 긴 시나리오. 같은 archerlab 팀의 차기작.',
+    nevergrad_label: '개발 중',
+    nevergrad_desc: '더 깊은 캐릭터, 더 긴 시나리오. 같은 ArcherLab 팀의 차기작.',
     cta: '지금 무료로 플레이 →',
     other_langs_label: '다른 언어',
-    footer: '© archerlab — 무설치 브라우저 로맨스 게임'
+    footer: '© ArcherLab — 무설치 브라우저 로맨스 게임'
   },
   en: {
     htmlLang: 'en',
     why_title: 'Why a browser dating sim?',
     why: [
       'No install, no download, no signup — just click and play',
-      'Same save file across PC, tablet, and mobile browsers',
-      'Zero storage footprint — close the tab and it leaves nothing behind',
+      'Runs in modern desktop, tablet, and mobile browsers',
+      'Progress saves automatically in the same browser on the same device',
       'Full story unlocked for free, no ads or paywalls mid-route'
     ],
     how_title: 'Start playing in 30 seconds',
-    how: ['Click the [Play Now] button below', 'Pick the character you want to romance', 'Make choices over 5 in-game days and reach an ending'],
+    how: ['Click the [Play Now] button below', 'Enter your name and start the story', 'Make choices over 5 in-game days and reach an ending'],
     faq_title: 'Frequently asked questions',
     faqs: [
       ['Is it really 100% free?', 'Yes. Every character route and ending is fully playable with no payment, no subscription, and no signup.'],
@@ -98,14 +116,14 @@ const C = {
       ['What genre is it?', 'A 5-day messenger-style romance visual novel. Your choices branch the story and unlock different endings.']
     ],
     picks_title: 'Recommended no-download dating sims',
-    cupid_name: 'Cupid — Five Days with the AI Cupid',
-    cupid_desc: 'A messenger-style romance VN with multiple endings. Build a real-feeling relationship across five days of chat. Mobile-optimized, fully translated.',
-    nevergrad_name: 'Nevergrad (Coming Soon)',
-    nevergrad_label: 'Launching Apr 2026',
-    nevergrad_desc: 'Deeper characters, longer routes. The next title from the same archerlab team.',
+    cupid_name: 'Cupid — Five Days of School Romance',
+    cupid_desc: 'A messenger-style romance visual novel with multiple endings. Your choices shape five days of conversations and relationships. Optimized for mobile play.',
+    nevergrad_name: 'Nevergrad',
+    nevergrad_label: 'In development',
+    nevergrad_desc: 'Deeper characters, longer routes. The next title from the same ArcherLab team.',
     cta: 'Play Free Now →',
     other_langs_label: 'Other languages',
-    footer: '© archerlab — browser-based romance games, no download'
+    footer: '© ArcherLab — browser-based romance games, no download'
   },
   ja: {
     htmlLang: 'ja',
@@ -133,119 +151,119 @@ const C = {
     nevergrad_desc: 'より深い人物描写と長編ルートを描く、ArcherLabの次回作です。',
     cta: '今すぐ無料でプレイ →',
     other_langs_label: '他の言語',
-    footer: '© archerlab — ダウンロード不要のブラウザ恋愛ゲーム'
+    footer: '© ArcherLab — ダウンロード不要のブラウザ恋愛ゲーム'
   },
   es: {
     htmlLang: 'es',
     why_title: '¿Por qué un simulador de citas en el navegador?',
     why: [
       'Sin instalación, sin descarga, sin registro — solo haz clic y juega',
-      'Misma partida guardada en PC, tableta y móvil',
-      'Cero espacio en disco — cierra la pestaña y no queda nada',
-      'Historia completa gratis, sin anuncios ni pagos a mitad de ruta'
+      'Funciona en navegadores modernos de computadora, tableta y celular',
+      'La partida se guarda automáticamente en este dispositivo y navegador',
+      'Historia completa gratis, sin anuncios ni pagos durante la historia'
     ],
     how_title: 'Empieza a jugar en 30 segundos',
-    how: ['Haz clic en el botón [Jugar ahora] de abajo', 'Elige el personaje que quieres conquistar', 'Toma decisiones durante 5 días y desbloquea un final'],
+    how: ['Haz clic en el botón [Jugar ahora] de abajo', 'Escribe tu nombre y empieza la historia', 'Toma decisiones durante 5 días y desbloquea un final'],
     faq_title: 'Preguntas frecuentes',
     faqs: [
       ['¿Es realmente 100% gratis?', 'Sí. Todas las rutas de personajes y finales son completamente jugables sin pagos, sin suscripción y sin registro.'],
-      ['¿Funciona en el móvil?', 'Sí, en cualquier navegador móvil moderno (Chrome, Safari, Edge). La interfaz está optimizada para vertical, ideal para jugar con una mano.'],
+      ['¿Funciona en el celular?', 'Sí, en cualquier navegador móvil moderno (Chrome, Safari, Edge). La interfaz está diseñada para pantalla vertical, así que puedes jugar cómodamente con una mano.'],
       ['¿Se guarda mi progreso?', 'Sí. El progreso se guarda automáticamente en tu navegador. En el mismo dispositivo y navegador puedes continuar donde lo dejaste.'],
-      ['¿De qué género es?', 'Una novela visual romántica de 5 días en formato mensajería. Tus decisiones ramifican la historia y desbloquean distintos finales.']
+      ['¿A qué género pertenece?', 'Es una novela visual romántica de 5 días con interfaz de mensajería. Tus decisiones cambian el rumbo de la historia y desbloquean distintos finales.']
     ],
     picks_title: 'Simuladores de citas sin descarga recomendados',
-    cupid_name: 'Cupid — Cinco días con el Cupido IA',
-    cupid_desc: 'Una VN romántica tipo mensajería con múltiples finales. Construye una relación realista a lo largo de cinco días de chat. Optimizada para móvil.',
-    nevergrad_name: 'Nevergrad (próximamente)',
-    nevergrad_label: 'Abril 2026',
-    nevergrad_desc: 'Personajes más profundos, rutas más largas. El próximo título del equipo archerlab.',
+    cupid_name: 'Cupid — Cinco días de romance escolar',
+    cupid_desc: 'Una novela visual romántica con interfaz de mensajería y múltiples finales. Tus decisiones dan forma a cinco días de conversaciones y relaciones. Optimizada para celulares.',
+    nevergrad_name: 'Nevergrad',
+    nevergrad_label: 'En desarrollo',
+    nevergrad_desc: 'Personajes más profundos, rutas más largas. El próximo título del equipo ArcherLab.',
     cta: 'Jugar gratis ahora →',
     other_langs_label: 'Otros idiomas',
-    footer: '© archerlab — juegos románticos en el navegador, sin descarga'
+    footer: '© ArcherLab — juegos románticos en el navegador, sin descarga'
   },
   fr: {
     htmlLang: 'fr',
-    why_title: 'Pourquoi un jeu de drague en navigateur ?',
+    why_title: 'Pourquoi jouer à un jeu de romance dans le navigateur ?',
     why: [
-      'Sans installation, sans téléchargement, sans inscription — un clic et c\'est parti',
-      'Même sauvegarde sur PC, tablette et mobile',
-      'Zéro espace disque — fermez l\'onglet, rien ne reste',
-      'Histoire complète gratuite, sans pub ni paywall en cours de route'
+      'Sans installation, sans téléchargement, sans inscription : un clic suffit',
+      'Compatible avec les navigateurs récents sur ordinateur, tablette et mobile',
+      'Progression sauvegardée automatiquement sur le même appareil et dans le même navigateur',
+      'Histoire complète gratuite, sans publicité ni paiement en cours de route'
     ],
     how_title: 'Commencez en 30 secondes',
-    how: ['Cliquez sur le bouton [Jouer maintenant] ci-dessous', 'Choisissez le personnage que vous voulez séduire', 'Faites des choix sur 5 jours et atteignez une fin'],
+    how: ['Cliquez sur le bouton [Jouer maintenant] ci-dessous', 'Entrez votre nom et commencez l’histoire', 'Faites des choix pendant cinq jours et découvrez la fin qui vous attend'],
     faq_title: 'Questions fréquentes',
     faqs: [
       ['Est-ce vraiment 100% gratuit ?', 'Oui. Toutes les routes de personnages et toutes les fins sont jouables intégralement, sans paiement, sans abonnement et sans inscription.'],
-      ['Ça marche sur mobile ?', 'Oui, sur tout navigateur mobile récent (Chrome, Safari, Edge). L\'interface est pensée vertical pour jouer à une main.'],
+      ['Est-ce compatible avec les mobiles ?', 'Oui, sur tout navigateur mobile récent (Chrome, Safari, Edge). L\'interface est conçue pour l\'affichage vertical et se joue facilement d\'une main.'],
       ['Ma progression est-elle sauvegardée ?', 'Oui. La progression est sauvegardée automatiquement dans votre navigateur. Sur le même appareil et navigateur, vous reprenez là où vous vous êtes arrêté.'],
-      ['Quel est le genre ?', 'Un visual novel romantique de 5 jours au format messagerie. Vos choix font bifurquer l\'histoire et débloquent différentes fins.']
+      ['De quel genre de jeu s\'agit-il ?', 'C\'est un visual novel romantique de cinq jours qui se joue sous forme de messagerie. Vos choix font bifurquer l\'histoire et débloquent différentes fins.']
     ],
-    picks_title: 'Jeux de drague sans téléchargement recommandés',
-    cupid_name: 'Cupid — Cinq jours avec le Cupidon IA',
-    cupid_desc: 'Un VN romantique au format messagerie avec plusieurs fins. Construisez une relation crédible sur cinq jours de chat. Optimisé mobile.',
-    nevergrad_name: 'Nevergrad (à venir)',
-    nevergrad_label: 'Avril 2026',
-    nevergrad_desc: 'Personnages plus profonds, routes plus longues. Le prochain titre de l\'équipe archerlab.',
+    picks_title: 'Jeux de romance sans téléchargement à découvrir',
+    cupid_name: 'Cupid — Cinq jours de romance au lycée',
+    cupid_desc: 'Un visual novel romantique qui se joue sous forme de messagerie, avec plusieurs fins. Vos choix façonnent cinq jours d\'échanges et de relations. Le jeu est optimisé pour les appareils mobiles.',
+    nevergrad_name: 'Nevergrad',
+    nevergrad_label: 'En développement',
+    nevergrad_desc: 'Des personnages plus fouillés et des intrigues plus longues. Le prochain titre de l\'équipe ArcherLab.',
     cta: 'Jouer gratuitement →',
     other_langs_label: 'Autres langues',
-    footer: '© archerlab — jeux romantiques en navigateur, sans téléchargement'
+    footer: '© ArcherLab — jeux romantiques sur navigateur, sans téléchargement'
   },
   pt: {
     htmlLang: 'pt',
     why_title: 'Por que um simulador de romance no navegador?',
     why: [
       'Sem instalar, sem baixar, sem cadastro — só clicar e jogar',
-      'Mesmo save em PC, tablet e celular',
-      'Zero espaço em disco — feche a aba e não fica nada',
-      'História completa grátis, sem anúncios nem paywalls no meio da rota'
+      'Funciona em navegadores atuais no computador, tablet e celular',
+      'O progresso fica salvo automaticamente neste aparelho e navegador',
+      'História completa grátis, sem anúncios nem cobranças durante a história'
     ],
     how_title: 'Comece a jogar em 30 segundos',
-    how: ['Clique no botão [Jogar agora] abaixo', 'Escolha o personagem que quer conquistar', 'Faça escolhas ao longo de 5 dias e alcance um final'],
+    how: ['Clique no botão [Jogar agora] abaixo', 'Digite seu nome e comece a história', 'Faça escolhas ao longo de 5 dias e descubra seu final'],
     faq_title: 'Perguntas frequentes',
     faqs: [
       ['É 100% grátis mesmo?', 'Sim. Todas as rotas de personagens e finais são totalmente jogáveis sem pagamento, sem assinatura e sem cadastro.'],
-      ['Funciona no celular?', 'Sim, em qualquer navegador móvel moderno (Chrome, Safari, Edge). A interface é pensada na vertical, dá pra jogar com uma mão.'],
+      ['Funciona no celular?', 'Sim, em qualquer navegador móvel moderno (Chrome, Safari, Edge). A interface foi pensada para uso na vertical, então dá para jogar com uma mão.'],
       ['Meu progresso é salvo?', 'Sim. O progresso é salvo automaticamente no seu navegador. No mesmo aparelho e navegador, você continua de onde parou.'],
-      ['Qual é o gênero?', 'Uma visual novel romântica de 5 dias em formato de mensageiro. Suas escolhas ramificam a história e desbloqueiam finais diferentes.']
+      ['Qual é o gênero?', 'É uma visual novel romântica de 5 dias com interface de conversa. Suas escolhas mudam os rumos da história e desbloqueiam finais diferentes.']
     ],
     picks_title: 'Simuladores de romance sem download recomendados',
-    cupid_name: 'Cupid — Cinco dias com o Cupido IA',
-    cupid_desc: 'Uma VN romântica em formato de mensageiro com múltiplos finais. Construa uma relação crível ao longo de cinco dias de chat. Otimizada para celular.',
-    nevergrad_name: 'Nevergrad (em breve)',
-    nevergrad_label: 'Abril 2026',
-    nevergrad_desc: 'Personagens mais profundos, rotas mais longas. O próximo título da equipe archerlab.',
+    cupid_name: 'Cupid — Cinco dias de romance escolar',
+    cupid_desc: 'Uma visual novel romântica com interface de conversa e vários finais. Suas escolhas moldam cinco dias de diálogos e relacionamentos. Otimizada para celular.',
+    nevergrad_name: 'Nevergrad',
+    nevergrad_label: 'Em desenvolvimento',
+    nevergrad_desc: 'Personagens mais profundos, rotas mais longas. O próximo título da equipe ArcherLab.',
     cta: 'Jogar grátis agora →',
     other_langs_label: 'Outros idiomas',
-    footer: '© archerlab — jogos românticos no navegador, sem download'
+    footer: '© ArcherLab — jogos românticos no navegador, sem download'
   },
   de: {
     htmlLang: 'de',
     why_title: 'Warum ein Browser-Dating-Sim?',
     why: [
       'Keine Installation, kein Download, keine Anmeldung — einfach anklicken und spielen',
-      'Gleicher Spielstand auf PC, Tablet und Handy',
-      'Null Speicherplatz — Tab schließen und nichts bleibt zurück',
-      'Komplette Story kostenlos, keine Werbung oder Paywalls mittendrin'
+      'Läuft in aktuellen Browsern auf PC, Tablet und Smartphone',
+      'Der Fortschritt wird auf demselben Gerät im selben Browser automatisch gespeichert',
+      'Die komplette Story ist kostenlos, ohne Werbung oder Bezahlschranken mitten in einer Route'
     ],
     how_title: 'In 30 Sekunden loslegen',
-    how: ['Unten auf [Jetzt spielen] klicken', 'Charakter auswählen, den du erobern willst', '5 Tage lang Entscheidungen treffen und ein Ending erreichen'],
+    how: ['Unten auf [Jetzt spielen] klicken', 'Gib deinen Namen ein und starte die Geschichte', '5 Tage lang Entscheidungen treffen und dein Ende entdecken'],
     faq_title: 'Häufige Fragen',
     faqs: [
-      ['Ist es wirklich 100% kostenlos?', 'Ja. Alle Charakterrouten und Endings sind komplett spielbar — ohne Bezahlung, ohne Abo, ohne Registrierung.'],
+      ['Ist es wirklich 100% kostenlos?', 'Ja. Alle Charakterrouten und Enden sind komplett spielbar — ohne Bezahlung, Abo oder Registrierung.'],
       ['Läuft es auf dem Handy?', 'Ja, in jedem modernen mobilen Browser (Chrome, Safari, Edge). Die Oberfläche ist hochkant gestaltet — bequem einhändig spielbar.'],
       ['Wird mein Fortschritt gespeichert?', 'Ja. Der Fortschritt wird automatisch im Browser gespeichert. Auf demselben Gerät und Browser kannst du jederzeit weiterspielen.'],
-      ['Welches Genre ist das?', 'Eine 5-Tage-Romance-Visual-Novel im Messenger-Format. Deine Entscheidungen verzweigen die Story und schalten verschiedene Endings frei.']
+      ['Welches Genre ist das?', 'Eine fünftägige Romance-Visual-Novel im Messenger-Stil. Deine Entscheidungen verändern den Verlauf der Handlung und schalten verschiedene Enden frei.']
     ],
     picks_title: 'Empfohlene Dating-Sims ohne Download',
-    cupid_name: 'Cupid — Fünf Tage mit dem KI-Cupid',
-    cupid_desc: 'Eine Messenger-Romance-VN mit mehreren Endings. Baue über fünf Chat-Tage eine echte Beziehung auf. Mobil optimiert, vollständig übersetzt.',
-    nevergrad_name: 'Nevergrad (demnächst)',
-    nevergrad_label: 'April 2026',
-    nevergrad_desc: 'Tiefere Charaktere, längere Routen. Der nächste Titel des archerlab-Teams.',
+    cupid_name: 'Cupid — Fünf Tage voller Schulromantik',
+    cupid_desc: 'Eine Romance-Visual-Novel im Messenger-Stil mit mehreren Enden. Deine Entscheidungen prägen fünf Tage voller Gespräche und Beziehungen. Für Smartphones optimiert.',
+    nevergrad_name: 'Nevergrad',
+    nevergrad_label: 'In Entwicklung',
+    nevergrad_desc: 'Vielschichtigere Figuren, längere Routen. Der nächste Titel des ArcherLab-Teams.',
     cta: 'Jetzt kostenlos spielen →',
     other_langs_label: 'Andere Sprachen',
-    footer: '© archerlab — Browser-Romance-Games ohne Download'
+    footer: '© ArcherLab — Browser-Romance-Games ohne Download'
   }
 };
 
@@ -328,10 +346,10 @@ const PAGES = {
     },
     {
       slug: 'browser-otome-game',
-      h1: 'Browser Otome Game — Play Free, No Install',
-      title: 'Browser Otome Game (Free, No Install) | Play Online 2026',
-      meta: 'A free browser otome game with multiple endings. No download, no signup. Plays on PC and mobile in the same save.',
-      intro: '"Browser otome game" used to mean clunky Flash games long since dead. Today you can play a fully voiced-style messenger romance VN with multiple endings in any modern browser — no install required.'
+      h1: 'Looking for a Browser Otome Game? Try Cupid Free',
+      title: 'Browser Otome Game Search | Free Romance VN Online',
+      meta: 'Looking for a free browser otome game? Cupid is a no-download school-romance visual novel with a male protagonist, five women, and multiple endings.',
+      intro: 'If you searched for a "browser otome game," one detail matters: Cupid is not a traditional otome game with a female protagonist and male love interests. You play as a male transfer student getting to know five women in a school-romance visual novel, free in your browser with no install or signup.'
     },
     {
       slug: 'play-dating-simulator-online',
@@ -414,21 +432,21 @@ const PAGES = {
       h1: 'Simulador de citas gratis — Sin descargar, en el navegador',
       title: 'Simulador de citas gratis sin descargar | Jugar en línea 2026',
       meta: 'Juega un simulador de citas gratis sin descargar, sin registro y sin pagos. Novela visual romántica con múltiples finales en el navegador.',
-      intro: '¿Buscas un "simulador de citas gratis sin descargar"? No necesitas Steam, ni app store, ni tarjeta. Una novela visual romántica completa con múltiples finales corre directamente en tu navegador, en escritorio o móvil.'
+      intro: '¿Buscas un "simulador de citas gratis sin descargar"? No necesitas Steam, una tienda de aplicaciones ni tarjeta. Esta novela visual romántica de 5 días, con múltiples finales, funciona directamente en tu navegador, tanto en computadora como en celular.'
     },
     {
       slug: 'otome-navegador',
-      h1: 'Otome game en el navegador — Gratis y en español',
-      title: 'Otome game español gratis en el navegador | Sin instalar',
-      meta: 'Otome game gratis en español jugable en el navegador. Sin instalación, sin registro, con múltiples finales.',
-      intro: 'Los "otome game en español" suelen ser difíciles de encontrar y muchos solo existen en inglés o japonés. Aquí tienes uno totalmente traducido al español, jugable en el navegador sin instalar nada.'
+      h1: '¿Buscas un otome game en el navegador? Prueba Cupid gratis',
+      title: 'Otome game en español | Romance visual gratis en navegador',
+      meta: '¿Buscas un otome game gratis en español? Cupid es una novela visual escolar sin descarga, con protagonista masculino, cinco mujeres y múltiples finales.',
+      intro: 'Si llegaste buscando un "otome game en español", hay algo que debes saber: Cupid no es un otome tradicional con protagonista femenina e intereses amorosos masculinos. Aquí juegas como un alumno nuevo que conoce a cinco mujeres en una novela visual de romance escolar, gratis y sin instalar nada.'
     },
     {
       slug: 'juego-citas-online',
       h1: 'Juego de citas online — Gratis y en el navegador',
       title: 'Juego de citas online gratis | Jugar en el navegador 2026',
       meta: 'Juego de citas online gratis para jugar en el navegador. Sin descarga, sin registro, historia completa desbloqueada.',
-      intro: 'La mayoría de resultados para "juego de citas online" llevan a páginas con descargas sospechosas. Este no: una VN romántica de 5 días que corre en tu navegador, gratis, con toda la historia desbloqueada desde el primer clic.'
+      intro: 'Muchos resultados para "juego de citas online" llevan a páginas de descarga poco confiables. Cupid funciona directamente en tu navegador: una novela visual romántica de 5 días, gratis y con la historia completa disponible desde el primer clic.'
     }
   ],
   fr: [
@@ -437,70 +455,70 @@ const PAGES = {
       group: 'free-browser-romance',
       h1: 'Simulation amoureuse gratuite — Sans téléchargement',
       title: 'Simulation amoureuse gratuite sans téléchargement | Jouer en ligne 2026',
-      meta: 'Jouez à une simulation amoureuse gratuite sans téléchargement, sans inscription, sans paiement. Visual novel romantique multi-fins en navigateur.',
-      intro: 'Vous cherchez une "simulation amoureuse gratuite sans téléchargement" ? Pas besoin de Steam, d\'app store ni de carte bancaire. Un visual novel romantique de 5 jours avec plusieurs fins tourne directement dans votre navigateur.'
+      meta: 'Jouez à une simulation amoureuse gratuite, sans téléchargement, sans inscription et sans paiement. Un visual novel romantique à fins multiples, directement dans votre navigateur.',
+      intro: 'Vous cherchez une « simulation amoureuse gratuite sans téléchargement » ? Pas besoin de Steam, d\'une boutique d\'applications ni de carte bancaire. Ce visual novel romantique de cinq jours, avec plusieurs fins, fonctionne directement dans votre navigateur.'
     },
     {
       slug: 'otome-navigateur',
-      h1: 'Otome game en navigateur — Gratuit et en français',
-      title: 'Otome game français gratuit en navigateur | Sans installation',
-      meta: 'Otome game gratuit en français jouable en navigateur. Sans installation, sans inscription, plusieurs fins.',
-      intro: 'Les "otome game en français" sont rares — la plupart n\'existent qu\'en anglais ou japonais. En voici un entièrement traduit, jouable en navigateur sans rien installer.'
+      h1: 'Vous cherchez un otome game sur navigateur ? Essayez Cupid',
+      title: 'Otome game en français | Visual novel romantique gratuit',
+      meta: 'Vous cherchez un otome game gratuit en français ? Cupid est un visual novel scolaire sans téléchargement, avec un héros, cinq personnages féminins et plusieurs fins.',
+      intro: 'Si vous cherchiez un « otome game en français », mieux vaut préciser que Cupid n\'est pas un otome traditionnel mettant en scène une héroïne et des prétendants masculins. Vous incarnez un nouvel élève qui apprend à connaître cinq personnages féminins dans un visual novel de romance scolaire, gratuit et sans installation.'
     },
     {
       slug: 'jeu-drague-en-ligne',
       h1: 'Jeu de drague en ligne — Gratuit, sans téléchargement',
       title: 'Jeu de drague en ligne gratuit | Jouer en navigateur 2026',
-      meta: 'Jeu de drague en ligne gratuit jouable en navigateur. Sans téléchargement, sans inscription, histoire complète débloquée.',
-      intro: 'La plupart des résultats pour "jeu de drague en ligne" mènent à des sites de téléchargement louches. Pas celui-ci : un VN romantique de 5 jours qui tourne dans votre navigateur, gratuitement, histoire complète dès le premier clic.'
+      meta: 'Jeu de drague en ligne gratuit, jouable directement dans votre navigateur. Sans téléchargement ni inscription, avec l\'intégralité de l\'histoire accessible.',
+      intro: 'De nombreux résultats pour « jeu de drague en ligne » renvoient vers des sites de téléchargement peu fiables. Cupid se lance directement dans votre navigateur : un visual novel romantique de 5 jours, gratuit, dont toute l\'histoire est accessible dès le premier clic.'
     }
   ],
   de: [
     {
       slug: 'dating-sim-kostenlos',
       group: 'free-browser-romance',
-      h1: 'Dating Sim kostenlos — Ohne Download im Browser',
-      title: 'Dating Sim kostenlos ohne Download | Im Browser spielen 2026',
-      meta: 'Spiele einen kostenlosen Dating Sim ohne Download, ohne Anmeldung und ohne Bezahlung. Romance-Visual-Novel mit mehreren Endings im Browser.',
-      intro: 'Du suchst einen "Dating Sim kostenlos ohne Download"? Du brauchst weder Steam noch App Store noch Kreditkarte. Eine komplette 5-Tage-Romance-VN mit mehreren Endings läuft direkt in deinem Browser — am PC oder Handy.'
+      h1: 'Dating-Sim kostenlos — Ohne Download im Browser',
+      title: 'Dating-Sim kostenlos ohne Download | Im Browser spielen 2026',
+      meta: 'Spiele einen kostenlosen Dating-Sim ohne Download, Anmeldung oder Bezahlung. Eine Romance-Visual-Novel mit mehreren Enden direkt im Browser.',
+      intro: 'Du suchst einen „Dating-Sim kostenlos ohne Download“? Du brauchst weder Steam noch einen App-Store noch eine Kreditkarte. Diese fünftägige Romance-Visual-Novel mit mehreren Enden läuft direkt in deinem Browser — am PC oder Smartphone.'
     },
     {
       slug: 'browser-otome',
-      h1: 'Browser Otome Game — Kostenlos, ohne Installation',
-      title: 'Browser Otome Game kostenlos | Ohne Installation 2026',
-      meta: 'Kostenloses Browser-Otome-Game mit mehreren Endings. Kein Download, keine Anmeldung. Läuft am PC und Handy mit demselben Spielstand.',
-      intro: '"Browser Otome Game" bedeutete früher abgestürzte Flash-Spiele. Heute kannst du eine vollwertige Messenger-Romance-VN mit mehreren Endings in jedem modernen Browser spielen — ganz ohne Installation.'
+      h1: 'Du suchst ein Browser-Otome-Game? Probiere Cupid',
+      title: 'Browser-Otome-Game gesucht | Kostenlose Romance-VN',
+      meta: 'Du suchst ein kostenloses Browser-Otome-Game? Cupid ist eine Visual Novel über eine Schulromanze – ohne Download, mit männlichem Protagonisten, fünf Frauen und mehreren Enden.',
+      intro: 'Wenn du nach einem „Browser-Otome-Game“ gesucht hast, ist ein Hinweis wichtig: Cupid ist kein klassisches Otome mit weiblicher Hauptfigur und männlichen Liebesinteressen. Du spielst einen neuen Schüler, der in einer Visual Novel über eine Schulromanze fünf Frauen kennenlernt – kostenlos, ohne Installation oder Anmeldung.'
     },
     {
       slug: 'dating-spiel-online',
-      h1: 'Dating Spiel online — Gratis im Browser',
-      title: 'Dating Spiel online gratis | Im Browser spielen ohne Download',
+      h1: 'Dating-Spiel online — Gratis im Browser',
+      title: 'Dating-Spiel online gratis | Im Browser spielen ohne Download',
       meta: 'Dating-Spiel online gratis im Browser spielen. Kein Download, keine Anmeldung, komplette Story freigeschaltet.',
-      intro: 'Die meisten Treffer für "Dating Spiel online" führen zu dubiosen Download-Seiten. Dieses nicht: eine 5-Tage-Romance-VN, die in deinem Browser läuft, gratis, mit kompletter Story ab dem ersten Klick.'
+      intro: 'Viele Treffer für „Dating-Spiel online“ führen zu fragwürdigen Download-Seiten. Cupid läuft direkt in deinem Browser: eine kostenlose, fünftägige Romance-Visual-Novel, deren komplette Handlung ab dem ersten Klick verfügbar ist.'
     }
   ],
   pt: [
     {
       slug: 'otome-navegador-gratis',
       group: 'free-browser-romance',
-      h1: 'Otome game no navegador — Grátis e em português',
-      title: 'Otome game português grátis no navegador | Sem instalar 2026',
-      meta: 'Otome game grátis em português jogável no navegador. Sem instalação, sem cadastro, com múltiplos finais.',
-      intro: 'Encontrar um "otome game em português" costuma ser difícil — a maioria só existe em inglês ou japonês. Aqui tem um totalmente traduzido, jogável no navegador sem instalar nada.'
+      h1: 'Procurando um otome game no navegador? Conheça Cupid',
+      title: 'Otome game em português | Romance visual grátis',
+      meta: 'Procurando um otome game grátis em português? Cupid é uma visual novel escolar sem download, com protagonista masculino, cinco mulheres e vários finais.',
+      intro: 'Se você chegou procurando um “otome game em português”, vale esclarecer: Cupid não é um otome tradicional com protagonista feminina e interesses amorosos masculinos. Você joga como um aluno transferido que conhece cinco mulheres em uma visual novel de romance escolar, grátis e sem instalar nada.'
     },
     {
       slug: 'jogo-namoro-online-gratis',
       h1: 'Jogo de namoro online grátis — No navegador, sem download',
       title: 'Jogo de namoro online grátis sem download | Jogar no navegador 2026',
       meta: 'Jogo de namoro online grátis para jogar no navegador. Sem download, sem cadastro, história completa desbloqueada.',
-      intro: 'A maioria dos resultados de "jogo de namoro online" leva a sites de download suspeitos. Este não: uma VN romântica de 5 dias que roda no seu navegador, grátis, com toda a história desbloqueada do primeiro clique.'
+      intro: 'Muitos resultados de “jogo de namoro online” levam a sites de download pouco confiáveis. Cupid roda direto no navegador: uma visual novel romântica de 5 dias, grátis, com a história completa disponível desde o primeiro clique.'
     },
     {
       slug: 'visual-novel-romance-gratis',
-      h1: 'Visual novel romance grátis — No navegador, sem baixar',
-      title: 'Visual novel romance grátis sem baixar | Jogar no navegador 2026',
+      h1: 'Visual novel de romance grátis — No navegador, sem baixar',
+      title: 'Visual novel de romance grátis | Jogar sem baixar 2026',
       meta: 'Visual novel romântica grátis para jogar no navegador, sem baixar nem instalar. Múltiplos finais, otimizada para celular.',
-      intro: 'Você procura uma "visual novel romance grátis"? Não precisa de Steam, nem app store, nem cartão. Uma VN romântica completa de 5 dias com múltiplos finais roda direto no seu navegador — PC ou celular.'
+      intro: 'Você procura uma “visual novel de romance grátis”? Não precisa de Steam, loja de aplicativos nem cartão. Esta visual novel romântica de 5 dias, com vários finais, roda direto no navegador — no computador ou celular.'
     }
   ]
 };
@@ -581,12 +599,8 @@ function renderPage(lang, page) {
   const c = C[lang];
   const url = seoUrl(page.slug);
   const homeUrl = HOME[lang];
-  const socialImageAlt = lang === 'ja'
-    ? 'ブラウザ恋愛ビジュアルノベル「Cupid」のタイトル画面'
-    : 'Cupid browser romance visual novel title screen';
-  const relatedNavLabel = lang === 'ja'
-    ? 'Cupidの関連ページ'
-    : 'Related Cupid search pages';
+  const socialImageAlt = SOCIAL_IMAGE_ALTS[lang] || SOCIAL_IMAGE_ALTS.en;
+  const relatedNavLabel = RELATED_NAV_LABELS[lang] || RELATED_NAV_LABELS.en;
   const alternateEntries = getAlternateEntries(lang, page);
   const defaultAlternate = getDefaultAlternate(alternateEntries);
 
@@ -651,7 +665,7 @@ function renderPage(lang, page) {
         "publisher": {
           "@type": "Organization",
           "@id": "https://archerlab.dev/#organization",
-          "name": "Archerlab",
+          "name": "ArcherLab",
           "url": "https://archerlab.dev/"
         }
       },
@@ -727,7 +741,7 @@ ${altLinks ? `  ${altLinks}\n` : ''}  <meta name="robots" content="index, follow
     ${relatedLinks ? `<nav class="related" aria-label="${relatedNavLabel}">${relatedLinks}</nav>` : ''}
 
     <div class="cta-box">
-      <a class="cta" href="${homeUrl}" data-seo-cta="top" onclick="window.sendGAEvent('seo_cta_click',{seo_slug:'${page.slug}',cta_placement:'top',link_url:'${siteUrl(homeUrl)}',transport_type:'beacon'})">${escapeHTML(c.cta)}</a>
+      <a class="cta" href="${homeUrl}" data-seo-cta="top" onclick="try{localStorage.setItem('cupid:language','${lang}')}catch(e){};window.sendGAEvent('seo_cta_click',{seo_slug:'${page.slug}',cta_placement:'top',link_url:'${siteUrl(homeUrl)}',transport_type:'beacon'})">${escapeHTML(c.cta)}</a>
     </div>
 
     <h2>${escapeHTML(c.why_title)}</h2>
@@ -751,7 +765,7 @@ ${altLinks ? `  ${altLinks}\n` : ''}  <meta name="robots" content="index, follow
     </ul>
 
     <div class="cta-box">
-      <a class="cta" href="${homeUrl}" data-seo-cta="bottom" onclick="window.sendGAEvent('seo_cta_click',{seo_slug:'${page.slug}',cta_placement:'bottom',link_url:'${siteUrl(homeUrl)}',transport_type:'beacon'})">${escapeHTML(c.cta)}</a>
+      <a class="cta" href="${homeUrl}" data-seo-cta="bottom" onclick="try{localStorage.setItem('cupid:language','${lang}')}catch(e){};window.sendGAEvent('seo_cta_click',{seo_slug:'${page.slug}',cta_placement:'bottom',link_url:'${siteUrl(homeUrl)}',transport_type:'beacon'})">${escapeHTML(c.cta)}</a>
     </div>
 
     <h2>${escapeHTML(c.faq_title)}</h2>

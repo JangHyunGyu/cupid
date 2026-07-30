@@ -341,8 +341,8 @@ function verifyMainAndGalleryPrompts(context) {
     assert(gallery.CHAR_PERSONALITIES.nurse.ko.includes('보라빛 칼단발'), 'nurse hair canon is missing');
     assert(gallery.CHAR_PERSONALITIES.nurse.ko.includes('3분'), 'nurse three-minute bandage detail is missing');
     assert(!gallery.CHAR_PERSONALITIES.nurse.ko.includes('갈색 긴 머리'), 'nurse has the old hair description');
-    assert(gallery.CHAR_PERSONALITIES.teacher.ko.includes('4~5년'), 'teacher adult reunion timing is missing');
-    assert(gallery.CHAR_PERSONALITIES.nurse.ko.includes('4~5년'), 'nurse adult reunion timing is missing');
+    assert(gallery.CHAR_PERSONALITIES.teacher.ko.includes('4년간'), 'teacher four-year adult reunion timing is missing');
+    assert(gallery.CHAR_PERSONALITIES.nurse.ko.includes('졸업 5년 뒤'), 'nurse five-year adult reunion timing is missing');
 }
 
 function verifyMemories(context) {
@@ -350,16 +350,16 @@ function verifyMemories(context) {
     const byFlag = flag => memories.filter(memory => memory.flag === flag);
     const one = (flag, char) => memories.find(memory => memory.flag === flag && (!char || memory.char === char));
 
-    assert(one('invited_nurse_home', '보건선생님')?.ko.includes('경계가 흐려진 일'),
-        'legacy nurse-home event is not retained with a professional boundary');
-    assert(one('invited_nurse_home', '보건선생님')?.ko.includes('주소가 오갔습니다'),
-        'legacy nurse-home event lost its established fact');
+    assert(one('invited_nurse_home', '보건선생님')?.ko.includes('개인적인 집 만남이나 주소 교환은 없었습니다'),
+        'nurse memory does not preserve the no-private-meeting canon');
+    assert(one('invited_nurse_home', '보건선생님')?.ko.includes('학교의 공식 절차'),
+        'nurse memory does not enforce the school support process');
 
     const teacherDating = one('isDating_Teacher', '담임선생님')?.ko || '';
     const nurseDating = one('isDating_Nurse', '보건선생님')?.ko || '';
-    assert(teacherDating.includes('4~5년') && teacherDating.includes('독립한 성인') && teacherDating.includes('교사와 학생 관계는 끝났습니다'),
+    assert(teacherDating.includes('4년') && teacherDating.includes('독립한 성인') && teacherDating.includes('교사와 학생 관계는 끝났습니다'),
         'teacher dating memory does not enforce the adult reunion canon');
-    assert(nurseDating.includes('4~5년') && nurseDating.includes('독립한 성인') && nurseDating.includes('비밀 연애가 아닙니다'),
+    assert(nurseDating.includes('5년') && nurseDating.includes('독립한 성인') && nurseDating.includes('비밀 연애가 아닙니다'),
         'nurse dating memory does not enforce the adult reunion canon');
 
     assert(one('homeroom_day4')?.ko.includes('공개 합평'), 'teacher day 4 lost its public critique boundary');

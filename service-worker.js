@@ -12,7 +12,7 @@
  * ============================================================================
  */
 
-const CACHE_VERSION = 'cupid-v3.3.53';
+const CACHE_VERSION = 'cupid-v3.3.54';
 const STATIC_CACHE = CACHE_VERSION + '-static';
 const MEDIA_CACHE = CACHE_VERSION + '-media';
 
@@ -312,14 +312,24 @@ async function networkFirst(request, cacheName) {
         if (request.mode === 'navigate') {
             const requestUrl = new URL(request.url);
             const acceptLanguage = request.headers.get('Accept-Language') || '';
-            const isJapanesePage = /\/(?:index|game|gallery)-ja(?:\.html)?$/i.test(requestUrl.pathname)
-                || /^ja(?:-|,|;|$)/i.test(acceptLanguage);
-            const offlineHtml = isJapanesePage
-                ? '<html lang="ja"><body style="background:#000;color:#fff;display:flex;align-items:center;justify-content:center;height:100vh;font-family:sans-serif"><div style="text-align:center"><h1>オフライン</h1><p>インターネット接続を確認してください。</p></div></body></html>'
-                : '<html lang="ko"><body style="background:#000;color:#fff;display:flex;align-items:center;justify-content:center;height:100vh;font-family:sans-serif"><div style="text-align:center"><h1>Offline</h1><p>인터넷 연결을 확인해주세요.</p></div></body></html>';
+            const pathLangMatch = requestUrl.pathname.match(/\/(?:index|game|gallery)-(en|es|ja|fr|de|pt)(?:\.html)?$/i);
+            const preferredLang = String(acceptLanguage).toLowerCase().match(/^[a-z]{2}/)?.[0] || 'ko';
+            const pageLang = pathLangMatch?.[1]?.toLowerCase()
+                || (['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt'].includes(preferredLang) ? preferredLang : 'ko');
+            const offlineCopies = {
+                ko: { title: '오프라인', message: '인터넷 연결을 확인해 주세요.' },
+                en: { title: 'Offline', message: 'Check your internet connection.' },
+                es: { title: 'Sin conexión', message: 'Revisa tu conexión a internet.' },
+                ja: { title: 'オフライン', message: 'インターネット接続を確認してください。' },
+                fr: { title: 'Hors connexion', message: 'Vérifiez votre connexion internet.' },
+                de: { title: 'Offline', message: 'Überprüfe deine Internetverbindung.' },
+                pt: { title: 'Sem conexão', message: 'Verifique sua conexão com a internet.' }
+            };
+            const copy = offlineCopies[pageLang] || offlineCopies.en;
+            const offlineHtml = `<html lang="${pageLang}"><body style="background:#000;color:#fff;display:flex;align-items:center;justify-content:center;height:100vh;font-family:sans-serif"><div style="text-align:center"><h1>${copy.title}</h1><p>${copy.message}</p></div></body></html>`;
             return new Response(
                 offlineHtml,
-                { status: 503, headers: { 'Content-Type': 'text/html' } }
+                { status: 503, headers: { 'Content-Type': 'text/html; charset=UTF-8' } }
             );
         }
         return new Response('Offline', { status: 503 });

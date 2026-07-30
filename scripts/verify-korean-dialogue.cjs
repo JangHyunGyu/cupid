@@ -41,8 +41,8 @@ for (const file of files) {
     }
 }
 
-assert(entryCount === 2453, `expected 2453 Korean entries, found ${entryCount}`);
-assert(textCount === 2412, `expected 2412 Korean text fields, found ${textCount}`);
+assert(entryCount === 2496, `expected 2496 Korean entries, found ${entryCount}`);
+assert(textCount === 2455, `expected 2455 Korean text fields, found ${textCount}`);
 assert(choiceCount === 141, `expected 141 Korean choices, found ${choiceCount}`);
 
 const banned = [

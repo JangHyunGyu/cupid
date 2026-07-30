@@ -41,7 +41,7 @@
             if (modal) modal.classList.remove('is-open');
         };
     </script>
-    <script src="assets/js/browser-check.js?v=2.9.7" defer></script>
+    <script src="assets/js/browser-check.js?v=2.9.8" defer></script>
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -53,7 +53,7 @@
     <title>Cupid - 무료 웹 미연시 | 5일간의 학원 로맨스 비주얼노벨</title>
     <meta name="description" content="무료 웹 미연시 · 연애 시뮬레이션 — 다운로드 없이 브라우저에서 바로 플레이. 전학 첫날 시작되는 5일간의 학원 로맨스 비주얼노벨. 5명의 히로인, 다양한 엔딩, 7개 언어 지원.">
     <meta name="keywords" content="무료 연애 시뮬레이션 브라우저, 학원 로맨스 게임 무료 플레이, 전학생 연애 게임 온라인, 오토메 게임 무료 다운 없이, 선택지 연애 게임 무료 브라우저, 멀티엔딩 연애 게임 추천, 히로인 공략 게임 무료, 다운로드 없는 연애 게임 온라인, 애니풍 연애 게임 무료 플레이, 브라우저 데이트 시뮬레이션 무료, 7개국어 미연시, 연애 시뮬레이션 브라우저, 학교 연애 게임 무료">
-    <meta name="author" content="Archerlab">
+    <meta name="author" content="ArcherLab">
     <meta name="naver-site-verification" content="d1b1d31619e3752f70e28ef54cb08b49698ccf66" />
     <link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/">
     <link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/index-en">
@@ -152,7 +152,7 @@
                 "publisher": {
                     "@type": "Organization",
                     "@id": "https://archerlab.dev/#organization",
-                    "name": "Archerlab",
+                    "name": "ArcherLab",
                     "url": "https://archerlab.dev/"
                 }
             },
@@ -675,6 +675,19 @@
             }
         }
 
+        @media (max-width: 480px) {
+            #landing-settings-btn {
+                width: 36px;
+                padding: 7px 8px;
+                font-size: 0;
+            }
+
+            #landing-settings-btn::before {
+                content: '⚙';
+                font-size: 0.9rem;
+            }
+        }
+
         /* ===== Title Heroines ===== */
         .title-heroines {
             position: absolute;
@@ -961,7 +974,7 @@
                 <a href="/seo/misinsi-muryo" style="color: #ffb6c1; margin: 0 6px;">미연시 무료</a>
             </nav>
             <p style="color: #ffb6c1;">Advisor: 김유진 프로, 이상훈 프로</p>
-            <p style="opacity: 0.7;"> 2026 ArcherLab. All rights reserved. (v1.2.5)</p>
+            <p style="opacity: 0.7;">© 2026 ArcherLab. All rights reserved. (v1.2.5)</p>
         </div>
     </div>
 
@@ -1215,7 +1228,7 @@
     </script>
 
     <!-- 게임 스크립트 (동적 로더) -->
-<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.106"></script>
+<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.107"></script>
 
     <script>
         // Initialize SoundManager + Enable Buttons (게임 스크립트 로드 완료 후)

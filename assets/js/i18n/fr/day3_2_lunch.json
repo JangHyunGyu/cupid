@@ -1,7 +1,7 @@
 {
     "lunch3_start": {
         "name": "{name}",
-        "text": "*Midi. Dès que j'ouvre mon bento, elles se rassemblent toutes les trois. Seoyeon s'assoit à côté de moi, Dain se laisse tomber sur la chaise d'en face et même Yuna quitte le coin où elle mangeait son pain pour nous rejoindre.*"
+        "text": "*Midi. Dès que j'ouvre mon bento, elles se retrouvent toutes les trois autour de la même table. Seoyeon s'assoit à côté de moi, Dain en face, et même Yuna, qui mangeait son pain dans un coin, tire une chaise libre jusqu'à nous.*"
     },
     "lunch3_start_2_b": {
         "name": "Dain",
@@ -37,31 +37,31 @@
     },
     "lunch3_meal_7_b": {
         "name": "Yuna",
-        "text": "*Elle mâche déjà.* ...C'est bon."
+        "text": "*Yuna mâche déjà la saucisse.* C’est bon."
     },
     "lunch3_meal_8": {
         "name": "{name}",
-        "text": "*Yuna reprend ses baguettes en silence, plus vite qu'avant.*"
+        "text": "*Cette fois, les baguettes de Yuna se dirigent droit vers le bento.*"
     },
     "lunch3_meal_10": {
         "name": "{name}",
-        "text": "*Il ne reste qu'un morceau d'omelette roulée. Je propose de le partager. Trois paires de baguettes s'immobilisent.*"
+        "text": "*Après ma proposition de partager, trois paires de baguettes manquent de se croiser au-dessus du dernier morceau d'omelette roulée.*"
     },
     "lunch3_meal_10_b": {
         "name": "{name}",
-        "text": "*Personne ne s'en va. Il reste un dernier accompagnement au milieu du bento.*"
+        "text": "*Il ne reste qu'un accompagnement au milieu du bento et les trois paires de baguettes reprennent leur place.*"
     },
     "lunch3_meal_10_c": {
         "name": "Seoyeon",
-        "text": "*Ses baguettes s'arrêtent un instant. Le morceau d'omelette roulée reste intact.*"
+        "text": "*Seoyeon retire le bout de ses baguettes de devant l'omelette roulée.*"
     },
     "lunch3_meal_10_d": {
         "name": "Dain",
-        "text": "*« Tous ensemble ? » répète-t-elle en riant. D'habitude, elle aurait déjà rapproché sa chaise, mais aujourd'hui elle ne bouge pas de sa place.*"
+        "text": "*« Tous ensemble ? » Dain sourit, mais ne rapproche pas sa chaise.*"
     },
     "lunch3_meal_10_e": {
         "name": "Yuna",
-        "text": "*Elle hoche simplement la tête. Elle écrit sur un mot, le plie et le glisse dans sa poche. Ne le donne pas. Seul un unique point violet pâle a traversé le bord du papier.*"
+        "text": "*Yuna hoche brièvement la tête, puis plie le mot qu'elle écrivait et le glisse dans sa poche. Un point d'encre lavande bave sur le bord du papier, mais elle ne le donne pas.*"
     },
     "lunch3_meal_11": {
         "name": "{name}",
@@ -92,7 +92,7 @@
     },
     "lunch3_seo_skin_3": {
         "name": "{name}",
-        "text": "*En retirant sa main, Seoyeon laisse tomber ses baguettes. Elle les ramasse aussitôt, mais le bout de ses doigts tremble légèrement.*"
+        "text": "*En retirant sa main, Seoyeon laisse tomber ses baguettes. Elle les ramasse aussitôt, mais leur pointe racle le bord de l'assiette.*"
     },
     "lunch3_give_seo_2": {
         "name": "Dain",
@@ -100,11 +100,11 @@
     },
     "lunch3_seo_witness_1": {
         "name": "{name}",
-        "text": "*Dain s'arrête à la porte de la classe. Elle voit Seoyeon recevoir le bento. ...Oh. Elle fait demi-tour.*"
+        "text": "*Depuis le seuil de la classe, Dain voit Seoyeon recevoir le bento. Ses lèvres remuent sans produire de son, puis elle repart dans le couloir.*"
     },
     "lunch3_seo_witness_choice": {
         "name": "{name}",
-        "text": "*Le dos de Dain disparaît dans le couloir.*",
+        "text": "*Le talon de la basket de Dain disparaît à l’angle du couloir.*",
         "choices": [
             "Dain !",
             "Se concentrer sur Seoyeon"
@@ -112,7 +112,7 @@
     },
     "lunch3_seo_chase_dain_1": {
         "name": "Seoyeon",
-        "text": "*Elle pose le bento. Son visage est inexpressif.*"
+        "text": "*Seoyeon pose le bento et en aligne les coins du couvercle.*"
     },
     "lunch3_seo_chase_dain_2": {
         "name": "Dain",
@@ -132,7 +132,7 @@
     },
     "lunch3_give_seo_3": {
         "name": "Yuna",
-        "text": "......"
+        "text": "*Yuna replie le sachet de son pain et le range dans son sac.*"
     },
     "lunch3_give_dain_1": {
         "name": "Dain",
@@ -141,7 +141,7 @@
     "lunch3_dain_skin_check": {},
     "lunch3_dain_skin_1": {
         "name": "{name}",
-        "text": "*Dain écarte les bras, ravie d'avoir gagné le pari du déjeuner. Une étreinte. Une seconde. Elle bondit en arrière, recule d'un pas et attrape sa bouteille d'eau.*"
+        "text": "*Ravie d'avoir gagné le pari du déjeuner, Dain ouvre les bras et demande : « Je peux te prendre dans mes bras ? » Après avoir obtenu mon accord, elle me serre brièvement, s'écarte au bout d'une seconde et attrape sa bouteille d'eau.*"
     },
     "lunch3_dain_skin_3": {
         "name": "Dain",
@@ -153,7 +153,7 @@
     },
     "lunch3_dain_witness_1": {
         "name": "{name}",
-        "text": "*Yuna regarde à l'intérieur de la salle de sport depuis le couloir. Dain sourit. Yuna s'éloigne sans rien dire. À la prochaine pause, le siège de Yuna est vide.*"
+        "text": "*Depuis le couloir, Yuna regarde dans le gymnase. Quand le rire de Dain lui parvient, elle serre son livre contre sa poitrine et repart dans l'autre direction. À la pause suivante, la place de Yuna est vide.*"
     },
     "lunch3_dain_witness_2b": {
         "name": "{name}",
@@ -161,7 +161,7 @@
     },
     "lunch3_give_dain_3": {
         "name": "Yuna",
-        "text": "......"
+        "text": "*Yuna regarde par la fenêtre en tenant l'ouverture de son sachet de pain enroulée dans sa main.*"
     },
     "lunch3_give_yuna_1": {
         "name": "Yuna",
@@ -170,7 +170,7 @@
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {
         "name": "{name}",
-        "text": "*Yuna me tend un mot, puis tarde un peu à retirer sa main.*"
+        "text": "*Yuna n'arrive pas à retirer tout de suite la main qui m'a tendu le mot ; nous en tenons encore ensemble le bord.*"
     },
     "lunch3_yuna_skin_2": {
         "name": "Yuna",
@@ -178,7 +178,7 @@
     },
     "lunch3_yuna_skin_3": {
         "name": "{name}",
-        "text": "*Elle ne retire sa main qu'une fois sa phrase terminée.*"
+        "text": "*Rien ne vient après « juste ». Ce n'est qu'alors que sa main lâche le bord du papier.*"
     },
     "lunch3_give_yuna_2": {
         "name": "Seoyeon",
@@ -190,7 +190,7 @@
     },
     "lunch3_yuna_witness_2": {
         "name": "{name}",
-        "text": "*Yuna ne cille même pas. Un doigt tapote le côté de son gobelet.*"
+        "text": "*Yuna tapote une fois le côté de son gobelet du doigt, puis regarde Seoyeon.*"
     },
     "lunch3_give_yuna_3": {
         "name": "Dain",
@@ -206,11 +206,11 @@
     },
     "lunch3_expose_3": {
         "name": "{name}",
-        "text": "*— Je me fige. Les mains des deux autres s'immobilisent.*"
+        "text": "*Pendant que je cherche quoi répondre, les baguettes des deux autres restent suspendues au-dessus du bento.*"
     },
     "lunch3_expose_4": {
         "name": "{name}",
-        "text": "*Les baguettes de Seoyeon s’arrêtent. La main de Yuna qui déchirait le pain s’arrête.*"
+        "text": "*La pointe des baguettes de Seoyeon appuie sur le bord du bento. Yuna, l'ouverture du sachet de pain encore entre les doigts, regarde Dain.*"
     },
     "lunch3_expose_5": {
         "name": "Seoyeon",
@@ -226,7 +226,7 @@
     },
     "lunch3_expose_7_b": {
         "name": "{name}",
-        "text": "*La dernière paire de baguettes se pose en silence. Yuna dépose son pain sur la table.*"
+        "text": "*Yuna pose son pain et replie l'ouverture du sachet.*"
     },
     "lunch3_expose_9": {
         "name": "Yuna",
@@ -234,7 +234,7 @@
     },
     "lunch3_expose_10": {
         "name": "{name}",
-        "text": "*Même le tintement des baguettes cesse.*"
+        "text": "*Une baguette heurte le couvercle du bento. Personne ne la ramasse.*"
     },
     "lunch3_expose_11": {
         "name": "Yuna",
@@ -242,7 +242,7 @@
     },
     "lunch3_expose_12": {
         "name": "{name}",
-        "text": "*Trois paires de baguettes se figent. Le bruit de la cafétéria semble soudain lointain. À la table d'à côté, Minsu nous regarde. Il secoue la tête.*"
+        "text": "*Trois paires de baguettes reposent sur le bento. À la table d'à côté, Minsu nous regarde, puis cache sa bouche du dos de la main.*"
     },
     "lunch3_expose_14": {
         "name": "Minsu",
@@ -250,7 +250,7 @@
     },
     "lunch3_expose_15": {
         "name": "{name}",
-        "text": "*Aucun mot ne sort. Minsu détourne la tête.*"
+        "text": "*Mes lèvres remuent sans qu'aucun mot n'en sorte. Minsu pose les baguettes qu'il tenait.*"
     },
     "lunch3_expose_choice": {
         "name": "{name}",
@@ -279,7 +279,7 @@
     },
     "lunch3_expose_honest_4_b": {
         "name": "{name}",
-        "text": "*Le sourire de Seoyeon se fige. Le bout de ses baguettes touche le couvercle de sa boîte à bento.*"
+        "text": "*Seoyeon referme ses lèvres qui souriaient, puis le couvercle du bento. La pointe de ses baguettes le heurte d'un claquement sec.*"
     },
     "lunch3_expose_honest_5": {
         "name": "Seoyeon",
@@ -291,7 +291,7 @@
     },
     "lunch3_expose_honest_7": {
         "name": "{name}",
-        "text": "*Il n'y a pas de point d'exclamation. La fin de la phrase de Dain est étrangement calme.*"
+        "text": "*La réponse de Dain est plus brève que d'habitude. Aucun point d'exclamation ne vient conclure sa phrase.*"
     },
     "lunch3_expose_excuse_1": {
         "name": "{name}",
@@ -303,7 +303,7 @@
     },
     "lunch3_expose_excuse_2_b": {
         "name": "Dain",
-        "text": "*Elle se lève.*"
+        "text": "*Dain repousse sa chaise et prend son sac.*"
     },
     "lunch3_expose_excuse_3": {
         "name": "Dain",
@@ -311,7 +311,7 @@
     },
     "lunch3_expose_excuse_4": {
         "name": "Dain",
-        "text": "*Elle détourne la tête. Elle n'a pas touché à son pain soboro.*"
+        "text": "*Dain fourre dans son sac le soboro dont elle n'a même pas ouvert l'emballage.*"
     },
     "lunch3_expose_run_1": {
         "name": "{name}",
@@ -319,11 +319,11 @@
     },
     "lunch3_expose_run_2": {
         "name": "{name}",
-        "text": "*Le silence de trois personnes derrière moi se plante dans mon dos. Tout au long du cours de l'après-midi, le bruit de la craie sonne lointain. Sous mon bureau, l'écran de mon téléphone s'allume et s'éteint sans cesse.*"
+        "text": "*Derrière moi, les chaises raclent l'une après l'autre. Personne ne me suit. Pendant tous les cours de l'après-midi, je ne vois même pas les traces de craie au tableau ; sous mon bureau, je ne fais qu'allumer et éteindre l'écran de mon téléphone.*"
     },
     "lunch3_share_1": {
         "name": "{name}",
-        "text": "*Je propose de le partager. Toutes les trois sourient, mais aucune ne tend la main la première.*"
+        "text": "*Quand je propose de le partager, elles sourient toutes les trois. Même une fois leurs rires retombés, aucune paire de baguettes ne touche la première l'omelette roulée.*"
     },
     "lunch3_share_solo": {
         "name": "{name}",
@@ -331,10 +331,10 @@
     },
     "lunch3_harem_1": {
         "name": "{name}",
-        "text": "*Elles en prennent chacune un peu. Seoyeon sourit poliment, Dain se montre trop enjouée et Yuna ne sort jamais le mot qu'elle a plié.*"
+        "text": "*Elles en prennent chacune un peu. Seoyeon ne relève que les coins des lèvres, le rire de Dain est plus fort que d'habitude et Yuna ne ressort finalement pas le mot qu'elle avait plié.*"
     },
     "lunch3_end": {
         "name": "{name}",
-        "text": "*La pause déjeuner est terminée. Mais rien n'est vraiment fini.*"
+        "text": "*La sonnerie retentit et je range le bento. Personne ne reparle des sorties prévues.*"
     }
 }

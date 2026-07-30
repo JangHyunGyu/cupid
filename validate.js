@@ -717,8 +717,8 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.106') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.106이 아님: ' + loaderVersion);
+    if (loaderVersion !== '2.9.107') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.107이 아님: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');
@@ -729,13 +729,13 @@ try {
             errors.push('[VERSION_SYNC] 진입 로더 캐시 버전 불일치: ' + file.name);
         }
         if (file.content.includes('assets/js/browser-check.js')
-            && !file.content.includes('assets/js/browser-check.js?v=2.9.7')) {
+            && !file.content.includes('assets/js/browser-check.js?v=2.9.8')) {
             errors.push('[VERSION_SYNC] browser-check.js 캐시 버전 불일치: ' + file.name);
         }
     }
     const swContent = fs.readFileSync(path.join(__dirname, 'service-worker.js'), 'utf8');
-    if (!swContent.includes("const CACHE_VERSION = 'cupid-v3.3.53'")) {
-        errors.push('[VERSION_SYNC] service-worker 캐시 버전이 cupid-v3.3.53이 아님');
+    if (!swContent.includes("const CACHE_VERSION = 'cupid-v3.3.54'")) {
+        errors.push('[VERSION_SYNC] service-worker 캐시 버전이 cupid-v3.3.54가 아님');
     }
     const soundContent = fs.readFileSync(path.join(__dirname, 'assets/js/sound.js'), 'utf8');
     if (!soundContent.includes('_isAudioDecodeError')
@@ -1808,11 +1808,11 @@ try {
     const activePromptSources = [promptsContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
-    if (promptVersion !== '2.7.36') {
-        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.36이 아님: ' + promptVersion);
+    if (promptVersion !== '2.7.38') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.38이 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.34') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.34가 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.36') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.36이 아님: ' + galleryPromptVersion);
     }
     const completedActionCanonSignals = [
         '완료형으로 쓴 행동은 성적 접촉도 이미 일어난 사건이며',
@@ -1842,7 +1842,7 @@ try {
             '너는·네가·너를·너의·당신은·당신이·당신을·당신의',
             '«Tú», «te», «ti», «tu/tus» y «usted»',
             '「あなた・君・お前」',
-            '« Tu », « te », « toi », « ton/ta/tes », « vous » et « votre »',
+            'Les pronoms et déterminants de deuxième personne (« tu », « te », « toi », « ton/ta/tes », « vous », « votre »)',
             '„Du“, „dir“, „dich“, „dein“, „Sie“ und „Ihr“',
             '“Você”, “te”, “ti”, “seu/sua/seus/suas”'
         ];

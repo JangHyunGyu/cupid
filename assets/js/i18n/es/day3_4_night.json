@@ -1,15 +1,15 @@
 {
     "night3_start": {
         "name": "{name}",
-        "text": "*Volví a mi habitación. Fue un día pesado.*"
+        "text": "*Regreso a mi habitación y cuelgo la mochila en la silla.*"
     },
     "night3_start_2": {
         "name": "{name}",
-        "text": "*Miro mi teléfono.*"
+        "text": "*Enciendo la pantalla del celular que dejé boca abajo sobre el escritorio.*"
     },
     "night3_faithful_check": {
         "name": "{name}",
-        "text": "*Tengo mensajes.*"
+        "text": "*Aparece un mensaje sin leer.*"
     },
     "night3_faithful_msg_seo_1": {
         "name": "Seoyeon",
@@ -37,7 +37,7 @@
     },
     "night3_faithful_msg_dain_1": {
         "name": "Dain",
-        "text": "si vas a preguntar por mi rodilla, ven a hacerlo en persona jaja"
+        "text": "si vas a preguntar por mi tobillo, ven a hacerlo en persona jaja"
     },
     "night3_faithful_msg_dain_2": {
         "name": "Dain",
@@ -53,7 +53,7 @@
     },
     "night3_dream_2_b": {
         "name": "{name}",
-        "text": "*Cerré el bloc de notas. Aún no hay frase para enviar mañana. Pero decidí no dejar la pantalla en blanco.*"
+        "text": "*Cierro la aplicación de notas. Todavía no hay ninguna frase que enviar mañana.*"
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
@@ -81,11 +81,11 @@
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*La galería está vacía. Solo el hueco donde estaba la foto de Sojeong permanece iluminado en blanco.*"
+        "text": "*La foto de Sojeong desaparece de la galería y solo queda un espacio vacío.*"
     },
     "night3_faithful_reflect_4_b": {
         "name": "{name}",
-        "text": "*Borrar la foto fue fácil. Solo un dedo. Me quedo mirando la miniatura del álbum vacío un rato.*"
+        "text": "*Froto con el pulgar la miniatura del álbum vacío.*"
     },
     "night3_faithful_reflect_4_c": {
         "name": "{name}",
@@ -93,23 +93,23 @@
     },
     "night3_dream_3": {
         "name": "{name}",
-        "text": "*Fue un buen sueño.*"
+        "text": "*Despierto antes de que suene la alarma.*"
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",
-        "text": "*Cuando cierro los ojos, todavía queda la sensación de haber caminado al lado de Seoyeon.*"
+        "text": "*Al cerrar los ojos, lo primero que aparece es la barandilla de la azotea.*"
     },
     "night3_dream_yuna_bonus": {
         "name": "{name}",
-        "text": "*Cuando cierro los ojos, aún queda el aire tranquilo que había al lado de Yuna.*"
+        "text": "*Al cerrar los ojos, lo primero que aparece es la ventana del anexo de la biblioteca.*"
     },
     "night3_dream_dain_bonus": {
         "name": "{name}",
-        "text": "*Cuando cierro los ojos, la risa de Dain me vuelve con un instante de retraso.*"
+        "text": "*Al cerrar los ojos, recuerdo el sonido del balón al rebotar en el suelo del gimnasio.*"
     },
     "night3_cheat_msg_1": {
         "name": "{name}",
-        "text": "*Volví a mi habitación. Fue un día pesado. Miro mi teléfono.*"
+        "text": "*En cuanto regreso a mi habitación, enciendo la pantalla del celular.*"
     },
     "night3_cheat_msg_2": {
         "name": "Seoyeon",
@@ -133,7 +133,7 @@
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "*a quién vas a elegir — espero que no te tomes esa decisión a la ligera*"
+        "text": "*decide a quién vas a ver mañana*"
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
@@ -145,15 +145,15 @@
     },
     "night3_cheat_msg_7": {
         "name": "Yuna",
-        "text": "*Mandó tres líneas. De alguien que normalmente no escribe ni una.*"
+        "text": "*De Yuna llegan tres burbujas de mensaje seguidas.*"
     },
     "night3_nightmare_1": {
         "name": "{name}",
-        "text": "*Apago la luz y me acuesto, pero no consigo dormir. Solo la pantalla del móvil brilla sobre mi palma.*"
+        "text": "*Apago la luz y me acuesto, pero no consigo dormir. Solo la pantalla del celular brilla sobre mi palma.*"
     },
     "night3_nightmare_2_b": {
         "name": "{name}",
-        "text": "*Abro el chat de Seoyeon. Su último mensaje termina en «Te lo pido».*"
+        "text": "*Abro el chat de Seoyeon. Su último mensaje es «Te lo pido». Después de eso no hay nada nuevo.*"
     },
     "night3_nightmare_3": {
         "name": "Seoyeon",
@@ -190,15 +190,15 @@
     },
     "night3_nightmare_seo": {
         "name": "{name}",
-        "text": "*Escribo en el chat de Seoyeon: «Mañana te lo diré en persona». Justo antes de enviarlo, detengo el dedo.*"
+        "text": "*Escribo en el campo de Seoyeon: «Mañana te lo diré en persona» y dejo el pulgar sobre el botón de enviar.*"
     },
     "night3_nightmare_yuna": {
         "name": "{name}",
-        "text": "*Escribo en el chat de Yuna: «Mañana te hablaré sin evitarte». Justo antes de enviarlo, detengo el dedo.*"
+        "text": "*Al escribir en el campo de Yuna «Mañana hablaré sin evitarte», el cursor parpadea después del punto final.*"
     },
     "night3_nightmare_dain": {
         "name": "{name}",
-        "text": "*Escribo en el chat de Dain: «Perdona por hacerte esperar. Mañana hablaremos». Justo antes de enviarlo, detengo el dedo.*"
+        "text": "*Escribo en el campo de Dain: «Perdón por hacerte esperar. Mañana te lo diré» y presiono con el pulgar el borde del icono de enviar.*"
     },
     "night3_nightmare_end": {
         "name": "{name}",
@@ -230,7 +230,7 @@
     },
     "night3_cheat_reflect_5": {
         "name": "{name}",
-        "text": "*Aparto la mano del botón de enviar y dejo el móvil boca abajo. Faltan tres horas para que suene la alarma.*"
+        "text": "*Aparto la mano del botón de enviar y dejo el celular boca abajo. Faltan tres horas para que suene la alarma.*"
     },
     "night3_nightmare_end_4": {
         "name": "{name}",
@@ -238,6 +238,6 @@
     },
     "night3_end": {
         "name": "{name}",
-        "text": "*Apago la luz de la habitación.*"
+        "text": "*Apago la luz de la habitación y dejo el celular boca abajo.*"
     }
 }

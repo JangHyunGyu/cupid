@@ -21,7 +21,7 @@
     },
     "after3_multi_choice": {
         "name": "{name}",
-        "text": "*The plans overlap. Seoyeon's message, Dain's missed call, and Yuna's folded note are all on one screen. Who do I go to first?*",
+        "text": "*My plans overlap. Seoyeon's message and Dain's missed call are on my phone, while Yuna's folded note is in my hand. Who do I go to first?*",
         "choices": [
             "Go to Seoyeon",
             "Go to Yuna",
@@ -40,19 +40,19 @@
     },
     "after3_reject_for_seo_1": {
         "name": "{name}",
-        "text": "*I run into Dain in the hallway. Her usual energy is gone. The smile doesn't come first today.*"
+        "text": "*When I run into Dain in the hall, she doesn't wave first. She only scuffs the floor with the toe of her sneaker.*"
     },
     "after3_reject_for_seo_2": {
         "name": "Dain",
-        "text": "...You're not coming to the gym today, are you?"
+        "text": "You're not coming to the gym today, are you?"
     },
     "after3_reject_for_seo_3": {
         "name": "{name}",
-        "text": "*I pass by the library. Yuna's seat is empty. A single note remains in lavender ink. — 'I waited for two hours. I'm leaving first.'*"
+        "text": "*When I pass the library, only a pale-purple note remains at Yuna's seat. “I waited for two hours. I'm going home.”*"
     },
     "after3_reject_for_seo_3b": {
         "name": "{name}",
-        "text": "*Yuna's book is gone. Volume 1 that always sat there. Volume 2 she promised to lend me. And — the bookmark too. The old bookmark she kept so carefully.*"
+        "text": "*Yuna's books are gone: the first volume she always kept on the desk and the second she promised to lend me. Even the old bookmark she used to hide beneath her hand is missing.*"
     },
     "after3_reject_for_seo_3c": {
         "name": "{name}",
@@ -72,7 +72,7 @@
     },
     "after3_seo_4": {
         "name": "Seoyeon",
-        "text": "......"
+        "text": "*Seoyeon uses the toe of her shoe to push the fallen clipboard beneath the desk.*"
     },
     "after3_seo_5": {
         "name": "{name}",
@@ -80,11 +80,11 @@
     },
     "after3_seo_5_b": {
         "name": "Seoyeon",
-        "text": "*She hurriedly fixes her hair.* ...Did you see?"
+        "text": "*Seoyeon combs her fingers through her hair.* Did you see?"
     },
     "after3_seo_6": {
         "name": "Seoyeon",
-        "text": "*She clears her throat.* ...It's nothing. Forget it."
+        "text": "*Seoyeon clears her throat once.* It's nothing. Forget it."
     },
     "after3_seo_7": {
         "name": "{name}",
@@ -92,31 +92,31 @@
     },
     "after3_seo_7_b": {
         "name": "Seoyeon",
-        "text": "*She looks down.* ...I really didn't want you to see this."
+        "text": "*Seoyeon covers the smeared makeup with the back of her hand.* I didn't want you to see this."
     },
     "after3_seo_8": {
         "name": "Seoyeon",
-        "text": "This side of me. — Keep it a secret."
+        "text": "This side of me. Keep it a secret."
     },
     "after3_seo_9": {
         "name": "Seoyeon",
-        "text": "*She straightens up. But — the smile doesn't come back.*"
+        "text": "*Seoyeon straightens her back and places the clipboard on her lap. Her lips remain pressed tight.*"
     },
     "after3_seo_choice": {
         "name": "Seoyeon",
-        "text": "Next time I ask you for a favor, you say yes. No questions. — Consider that the price.",
+        "text": "Let what you saw today end here. For now, just treat me like you usually do.",
         "choices": [
             "Want a wet wipe?",
-            "...Just now? I didn't see anything. I dropped my pen and came in to pick it up."
+            "Just now? I didn't see anything. I dropped my pen and came in to pick it up."
         ]
     },
     "after3_seo_pity_trap_1": {
         "name": "Seoyeon",
-        "text": "*She looks up and rubs at the makeup smear with the back of her hand.*"
+        "text": "*Seoyeon rubs hard at the makeup smear with the back of her hand.*"
     },
     "after3_seo_pity_trap_2": {
         "name": "Seoyeon",
-        "text": "...Anyone."
+        "text": "Anyone."
     },
     "after3_seo_pity_trap_3": {
         "name": "Seoyeon",
@@ -132,7 +132,7 @@
     },
     "after3_seo_pity_trap_6": {
         "name": "Seoyeon",
-        "text": "*She adjusts her glasses. The smudge remains on the back of her hand, and her voice drops lower.*"
+        "text": "*Seoyeon adjusts her glasses. A black smear remains on the back of her hand.*"
     },
     "after3_seo_pity_trap_7": {
         "name": "Seoyeon",
@@ -152,23 +152,23 @@
     },
     "after3_seo_correct_1": {
         "name": "Seoyeon",
-        "text": "*She freezes. In the silence, her grip tightens around the edge of the clipboard.*"
+        "text": "*The edge of the clipboard bends in her grip. Seoyeon waits for what I'll say next.*"
     },
     "after3_seo_correct_2": {
         "name": "{name}",
-        "text": "*I bend down, pretending to pick up a pen. Fumbling under the desk. Slowly, on purpose. — Not looking at her. The moment I look, the lie cracks.*"
+        "text": "*I bend down and feel beneath the desk, pretending to look for a pen. I deliberately take my time and avoid Seoyeon's eyes. If we make eye contact, she'll see through the lie.*"
     },
     "after3_seo_correct_3": {
         "name": "{name}",
-        "text": "Oh, here it is. — Pens really go missing a lot in the council room, huh?"
+        "text": "Oh, here it is. Pens really go missing a lot in the student council room, huh?"
     },
     "after3_seo_correct_4": {
         "name": "{name}",
-        "text": "*I look up. Seoyeon is wiping the smudged makeup away with the back of her hand, leaving a black streak on her skin.*"
+        "text": "*When I stand, a black streak marks the back of the hand Seoyeon used to wipe her makeup.*"
     },
     "after3_seo_correct_5": {
         "name": "Seoyeon",
-        "text": "...The disappearing pens are an actual mystery. Thirty a year."
+        "text": "The disappearing pens are a real mystery. Thirty vanish every year."
     },
     "after3_seo_correct_6": {
         "name": "{name}",
@@ -176,15 +176,15 @@
     },
     "after3_seo_correct_7": {
         "name": "Seoyeon",
-        "text": "*A small laugh.* If I caught them — students would start fearing the council."
+        "text": "*A short snort escapes her.* If I caught them, the students would start fearing the council."
     },
     "after3_seo_correct_8": {
         "name": "{name}",
-        "text": "*The conversation keeps going naturally. Seoyeon fixes her glasses again, and I keep pretending to look under the desk.*"
+        "text": "*I keep up the pointless talk about pens while Seoyeon adjusts her glasses. My eyes stay fixed beneath the desk.*"
     },
     "after3_seo_correct_9": {
         "name": "Seoyeon",
-        "text": "...{name}."
+        "text": "{name}."
     },
     "after3_seo_correct_10": {
         "name": "{name}",
@@ -192,7 +192,7 @@
     },
     "after3_seo_correct_11": {
         "name": "Seoyeon",
-        "text": "About picking up the pen. — Come pick it up again sometime."
+        "text": "The pen thing. Do it again sometime."
     },
     "after3_seo_correct_12": {
         "name": "{name}",
@@ -214,11 +214,11 @@
     },
     "after3_reject_for_yuna_2": {
         "name": "Seoyeon",
-        "text": "Busy with council work. I'll eat on my own. ...Just for today."
+        "text": "I'm busy with student council work. I'll eat on my own today."
     },
     "after3_reject_for_yuna_walk_gym": {
         "name": "{name}",
-        "text": "*My feet carry me toward the gym.*"
+        "text": "*I turn toward the hall leading to the gym.*"
     },
     "after3_reject_for_yuna_3": {
         "name": "Dain",
@@ -230,7 +230,7 @@
     },
     "after3_reject_for_yuna_3_react": {
         "name": "{name}",
-        "text": "*But she turns her face away, tightening her grip on her book.*"
+        "text": "*She raises only one hand in greeting and turns her face away. The corner of the book in her grip presses into her palm.*"
     },
     "after3_reject_for_yuna_4": {
         "name": "{name}",
@@ -238,7 +238,7 @@
     },
     "after3_yuna_1": {
         "name": "{name}",
-        "text": "*The library annex. Yuna’s secret reading nook. — The door is open.*"
+        "text": "*I arrive outside Yuna's secret reading space in the library annex. The door is open.*"
     },
     "after3_yuna_2": {
         "name": "{name}",
@@ -250,7 +250,7 @@
     },
     "after3_yuna_5_b": {
         "name": "{name}",
-        "text": "*...Isn't this about me?*"
+        "text": "*Beneath the first sentence, “classroom window” is underlined.*"
     },
     "after3_yuna_6": {
         "name": "Yuna",
@@ -258,15 +258,15 @@
     },
     "after3_yuna_7": {
         "name": "{name}",
-        "text": "*Yuna’s voice from behind. I turn around and she’s standing there holding two drinks. — She freezes when she sees me looking at the notebook.*"
+        "text": "*Yuna's voice comes from behind me. Holding two drinks, she stops in the doorway and looks from the open notebook to me.*"
     },
     "after3_yuna_8": {
         "name": "Yuna",
-        "text": "...That."
+        "text": "That."
     },
     "after3_yuna_8b": {
         "name": "Yuna",
-        "text": "*She rushes over and snatches the notebook away.* ...I didn't say you could read it."
+        "text": "*Yuna comes over and snatches the notebook away.* I didn't say you could read it."
     },
     "after3_yuna_9": {
         "name": "Yuna",
@@ -274,19 +274,19 @@
     },
     "after3_yuna_choice": {
         "name": "{name}",
-        "text": "I was enjoying the read.",
+        "text": "*I turn the notebook back toward Yuna.*",
         "choices": [
-            "This is about me, isn't it? 'A transfer student who sat down without a word' — that's me.",
-            "This author's really good. Got a sequel? I'd love to borrow it."
+            "I'm sorry. But this is about me, isn't it?",
+            "I'm sorry. I only saw the open first page. I won't read any more. But this writer's prose is really good."
         ]
     },
     "after3_yuna_decode_trap_1": {
         "name": "Yuna",
-        "text": "*She clutches the notebook tighter. Her knuckles go white.*"
+        "text": "*Yuna presses the notebook to her chest and grips it hard enough to bend the cover.*"
     },
     "after3_yuna_decode_trap_2": {
         "name": "Yuna",
-        "text": "...It's not."
+        "text": "It's not."
     },
     "after3_yuna_decode_trap_3": {
         "name": "{name}",
@@ -298,11 +298,11 @@
     },
     "after3_yuna_decode_trap_5": {
         "name": "Yuna",
-        "text": "*She shoves the notebook into her bag, moving much faster than usual.*"
+        "text": "*Yuna pushes the notebook deep into her bag and pulls the zipper all the way closed.*"
     },
     "after3_yuna_decode_trap_6": {
         "name": "Yuna",
-        "text": "...Because of people like you. I can't write a single line."
+        "text": "People like you are why I can't write a single line."
     },
     "after3_yuna_decode_trap_7": {
         "name": "{name}",
@@ -314,23 +314,23 @@
     },
     "after3_yuna_decode_trap_9": {
         "name": "Yuna",
-        "text": "*She shoulders her bag and heads for the ladder. Her foot pauses once, then continues down.*"
+        "text": "*With one foot on the first rung, Yuna hugs the notebook to herself once more, then climbs down.*"
     },
     "after3_yuna_decode_trap_10": {
         "name": "Yuna",
-        "text": "...This place. I'm locking it from now on."
+        "text": "I'm keeping this place locked from now on."
     },
     "after3_yuna_decode_trap_11": {
         "name": "{name}",
-        "text": "*Footsteps descending the ladder. I'm left alone in the loft. Only finger marks remain where the notebook was. My eyes catch the last sentence on the open page. 'No one was allowed in here.'*"
+        "text": "*Her footsteps recede down the ladder. In the loft, only fingerprints where the notebook lay and the open page remain. I read the final sentence: “This was a place no one else could enter.”*"
     },
     "after3_yuna_correct_1": {
         "name": "Yuna",
-        "text": "*Her grip on the notebook loosens — just slightly. For maybe one second.*"
+        "text": "*Her fingers loosen around the notebook for about a second.*"
     },
     "after3_yuna_correct_2": {
         "name": "Yuna",
-        "text": "...The author."
+        "text": "The writer."
     },
     "after3_yuna_correct_3": {
         "name": "{name}",
@@ -338,7 +338,7 @@
     },
     "after3_yuna_correct_4": {
         "name": "Yuna",
-        "text": "...I don't know. Probably not published."
+        "text": "I don't know. It probably wasn't published."
     },
     "after3_yuna_correct_5": {
         "name": "{name}",
@@ -346,11 +346,11 @@
     },
     "after3_yuna_correct_6": {
         "name": "Yuna",
-        "text": "*She puts the notebook back on the desk. The arms that had hugged it to her chest slowly relax.*"
+        "text": "*Yuna places the notebook on the desk and smooths the crumpled corner of the cover with her palm.*"
     },
     "after3_yuna_correct_7": {
         "name": "Yuna",
-        "text": "...Want to borrow it?"
+        "text": "Want to borrow it?"
     },
     "after3_yuna_correct_8": {
         "name": "{name}",
@@ -358,23 +358,23 @@
     },
     "after3_yuna_correct_9": {
         "name": "Yuna",
-        "text": "...Let's just say the author allows it."
+        "text": "Let's say the writer gave permission."
     },
     "after3_yuna_correct_10": {
         "name": "Yuna",
-        "text": "*She holds out the notebook with both hands. Her elbows are a little stiffer than when she lends me a book.*"
+        "text": "*Yuna holds the notebook out with both hands, but doesn't extend her arms all the way.*"
     },
     "after3_yuna_correct_11": {
         "name": "{name}",
-        "text": "*The paper lands in my palm. Yuna doesn’t take her eyes off the cover of the notebook.*"
+        "text": "*Even after the notebook passes into my hands, Yuna doesn't take her eyes off the cover.*"
     },
     "after3_yuna_correct_12": {
         "name": "Yuna",
-        "text": "When you're done — write one line for the author. Anonymously."
+        "text": "When you're done, write one line for the writer. Anonymously."
     },
     "after3_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*She folds and unfolds the bookmark, walking half a step behind.* ...There is something I want to check.",
+        "text": "*She folds and unfolds her bookmark as she walks half a step behind me.* There's something I want to check.",
         "context": "Day 3 after school, just after a conversation with Yuna. She is keeping the conversation going because she wants to understand what actually happened between the people involved.",
         "personality": "Yuna is a calm and observant reader. Rather than assume jealousy or hide behind an obscure metaphor, she asks directly when there is something she needs to know."
     },
@@ -388,7 +388,7 @@
     },
     "after3_reject_for_dain_2": {
         "name": "Seoyeon",
-        "text": "...Got things to do today. I'll head out first."
+        "text": "I have some things to do today. I'll head out first."
     },
     "after3_reject_for_dain_2b": {
         "name": "{name}",
@@ -404,7 +404,7 @@
     },
     "after3_dain_1": {
         "name": "{name}",
-        "text": "*In the gym, Dain stretches alone. She tries a light hop, twists her right leg, and winces.*"
+        "text": "*Dain is stretching alone in the gym. After a light hop, she leans to one side when she lands on her right leg, then immediately smooths out her expression.*"
     },
     "after3_dain_3": {
         "name": "{name}",
@@ -430,29 +430,29 @@
         "name": "Dain",
         "text": "*She sits on the bench. The hand rubbing her knee keeps circling the same spot.*",
         "choices": [
-            "...Are you okay? Don't push yourself. Maybe rest for today.",
+            "Are you okay? Don't push yourself. Why not rest today?",
             "Then I'll stay here. Talk when you're ready."
         ]
     },
     "after3_dain_pity_trap_1": {
         "name": "Dain",
-        "text": "*Her hand stops rubbing her knee. Slowly, she lifts her head.*"
+        "text": "*Dain looks up at me, her palm still pressed to her knee.*"
     },
     "after3_dain_pity_trap_2": {
         "name": "Dain",
-        "text": "...Pushing it."
+        "text": "Pushing it."
     },
     "after3_dain_pity_trap_3": {
         "name": "Dain",
-        "text": "Hey. I'm not pushing it. I just — landed wrong."
+        "text": "Hey. I'm not pushing it. I just landed wrong."
     },
     "after3_dain_pity_trap_4": {
         "name": "{name}",
-        "text": "*Dain stands. Her knee trembles slightly as she picks up her bag.*"
+        "text": "*Dain picks up her bag and rises, putting weight on her right leg again.*"
     },
     "after3_dain_pity_trap_5": {
         "name": "Dain",
-        "text": "...Don't look at me like that. Not you too."
+        "text": "Don't look at me like that. Not you too."
     },
     "after3_dain_pity_trap_6": {
         "name": "{name}",
@@ -468,7 +468,7 @@
     },
     "after3_dain_pity_trap_9": {
         "name": "Dain",
-        "text": "Coach does it. My parents do it. Everyone does it. — I thought you wouldn't."
+        "text": "My coach does it. My parents do it. Everyone does. I thought you wouldn't."
     },
     "after3_dain_pity_trap_10": {
         "name": "{name}",
@@ -476,11 +476,11 @@
     },
     "after3_dain_correct_1": {
         "name": "Dain",
-        "text": "*She stops. The hand that had been covering her knee hangs in the air.*"
+        "text": "*Dain looks at me, still unable to lift the hand cupping her knee.*"
     },
     "after3_dain_correct_2": {
         "name": "Dain",
-        "text": "...Hey."
+        "text": "Hey."
     },
     "after3_dain_correct_3": {
         "name": "{name}",
@@ -496,7 +496,7 @@
     },
     "after3_dain_correct_6": {
         "name": "Dain",
-        "text": "...I don't know. But stay here for a minute. I don't really want to be alone right now."
+        "text": "I don't know. But stay here for a minute. I don't really want to be alone right now."
     },
     "after3_dain_correct_7": {
         "name": "Dain",
@@ -504,19 +504,19 @@
     },
     "after3_dain_correct_8": {
         "name": "Dain",
-        "text": "...Let's just talk."
+        "text": "Let's just talk."
     },
     "after3_dain_correct_9": {
         "name": "{name}",
-        "text": "*I sit beside her. The ball stops at the boundary line. For a while, Dain only reties her shoelaces.*"
+        "text": "*When I sit beside her, Dain nudges the volleyball to the boundary line with her toe, then unties and reties her shoelace.*"
     },
     "after3_dain_correct_10": {
         "name": "Dain",
-        "text": "I don't usually talk about things like this. ...Where do I even start?"
+        "text": "I don't usually talk about things like this. Where do I even start?"
     },
     "after3_dain_correct_11": {
         "name": "Dain",
-        "text": "*She starts to straighten her right leg, stops, then bends it again. Her hand remains on her knee.*"
+        "text": "*Dain starts to extend her right leg, winces, and bends it again. Her palm never leaves her knee.*"
     },
     "after3_dain_correct_12": {
         "name": "{name}",
@@ -524,7 +524,7 @@
     },
     "after3_dain_dilemma_tell": {
         "name": "Dain",
-        "text": "...What?"
+        "text": "What?"
     },
     "after3_dain_dilemma_tell_2": {
         "name": "{name}",
@@ -532,11 +532,11 @@
     },
     "after3_dain_dilemma_tell_3": {
         "name": "{name}",
-        "text": "*Dain presses her lips together. Her voice, loud only a moment ago, cuts off.*"
+        "text": "*Dain closes her mouth and only curls and uncurls the fingers on her knee.*"
     },
     "after3_dain_dilemma_tell_4": {
         "name": "Dain",
-        "text": "...Why bring it up if you knew. You know the tournament is next week."
+        "text": "Why bring it up if you knew? You know the tournament is next week."
     },
     "after3_dain_dilemma_tell_5": {
         "name": "{name}",
@@ -548,23 +548,23 @@
     },
     "after3_dain_dilemma_tell_7": {
         "name": "Dain",
-        "text": "*She stands up. Her knee creaks. Her hand stops halfway to her shoelaces.*"
+        "text": "*Dain gets up and bends to tie her shoe, but her knee creaks. Her hand never reaches the laces.*"
     },
     "after3_dain_dilemma_tell_8": {
         "name": "Dain",
-        "text": "...Please. Just this. Don't tell anyone."
+        "text": "Please. Don't tell anyone about this."
     },
     "after3_dain_dilemma_final": {
         "name": "Dain",
-        "text": "*Her eyes are wet. Nothing follows the end of her sentence.*",
+        "text": "*Dain doesn't wipe her wet eyes. None of her usual laughter follows her final words.*",
         "choices": [
             "Sorry. But I'm telling.",
-            "...Okay. I won't say anything."
+            "Okay. I won't say anything."
         ]
     },
     "after3_dain_tell_confirm": {
         "name": "Dain",
-        "text": "...You're the worst."
+        "text": "You're the worst."
     },
     "after3_dain_tell_confirm_2": {
         "name": "Dain",
@@ -572,19 +572,19 @@
     },
     "after3_dain_tell_confirm_3": {
         "name": "{name}",
-        "text": "*I'm standing in the empty gym. Beyond the closed door, Dain's footsteps fade. There's sweat left on my palms.*"
+        "text": "*Dain's footsteps fade beyond the closed door. Alone in the empty gym, I feel the sweat cool on my palms.*"
     },
     "after3_dain_tell_retreat": {
         "name": "Dain",
-        "text": "*She lets out a relieved breath. Only the sound of a ball rolling across the gym floor remains.*"
+        "text": "*Dain lets out a long breath and stops the ball rolling toward her with her toe.*"
     },
     "after3_dain_choice1": {
         "name": "{name}",
-        "text": "*I sit beside her without a word. Dain glances my way.*"
+        "text": "*I sit beside her without speaking. Dain looks over while picking at her shoelace.*"
     },
     "after3_dain_choice1_2": {
         "name": "Dain",
-        "text": "...Why aren't you asking?"
+        "text": "Why aren't you asking?"
     },
     "after3_dain_choice1_3": {
         "name": "{name}",
@@ -592,11 +592,11 @@
     },
     "after3_dain_choice1_react": {
         "name": "Dain",
-        "text": "*She stops, then smiles a little. She rubs the corner of her eye once with the back of her hand.*"
+        "text": "*Dain bites her lip, lets out a small laugh, and rubs her eyes with the back of her hand.*"
     },
     "after3_dain_choice1_react2": {
         "name": "Dain",
-        "text": "...Yeah. I would've."
+        "text": "Yeah. I would have."
     },
     "after3_dain_choice1_react3": {
         "name": "Dain",
@@ -614,15 +614,15 @@
     },
     "after3_dain_end": {
         "name": "Dain",
-        "text": "*She lightly punches my shoulder with her fist. — Weaker than yesterday.*"
+        "text": "*Dain's fist touches my shoulder, but it doesn't push me back like yesterday.*"
     },
     "after3_dain_end_first": {
         "name": "Dain",
-        "text": "*She lightly punches my shoulder. — She seems embarrassed.*"
+        "text": "*Dain punches my shoulder, then immediately puts her hand in her pocket.*"
     },
     "after3_confront_1": {
         "name": "{name}",
-        "text": "*As I leave, I find Seoyeon waiting in the hall with her arms crossed. Her usual composure is gone.*"
+        "text": "*When I leave our meeting place, Seoyeon is waiting in the hall with her arms crossed. Her fingers tap a steady rhythm against her upper arm.*"
     },
     "after3_confront_2": {
         "name": "Seoyeon",
@@ -630,7 +630,7 @@
     },
     "after3_confront_3": {
         "name": "Seoyeon",
-        "text": "*She leads me to the deserted end of the hall.*"
+        "text": "*Seoyeon leads me to an empty landing at the end of the hall.*"
     },
     "after3_confront_4": {
         "name": "Seoyeon",
@@ -642,19 +642,19 @@
     },
     "after3_confront_5_b": {
         "name": "Dain",
-        "text": "*With her head lowered.* ...I didn't like it either."
+        "text": "Me too. I didn't like it."
     },
     "after3_confront_5_c": {
         "name": "Dain",
-        "text": "*Her head drops. The toe of one sneaker scrapes briefly against the hallway floor.*"
+        "text": "*The toe of Dain's sneaker briefly scrapes the hallway floor.*"
     },
     "after3_confront_6": {
         "name": "Seoyeon",
-        "text": "That mess at lunch... What were you even thinking, making plans with all three of us?"
+        "text": "That mess at lunch. What were you thinking, making plans with all three of us?"
     },
     "after3_confront_choice": {
         "name": "Seoyeon",
-        "text": "*She lowers the clipboard and waits for an answer without looking away.*",
+        "text": "*Seoyeon lowers the clipboard to her side and takes one step away, waiting for an answer.*",
         "choices": [
             "Admit it honestly",
             "The time slots are different, so I thought it would be fine",
@@ -663,11 +663,11 @@
     },
     "after3_confront_admit": {
         "name": "Seoyeon",
-        "text": "...Because I couldn't say no."
+        "text": "Because I couldn't say no."
     },
     "after3_confront_admit_b": {
         "name": "Seoyeon",
-        "text": "*I lower my head.*"
+        "text": "*Seoyeon looks down at the handle of her lunch bag.*"
     },
     "after3_confront_admit_2": {
         "name": "Seoyeon",
@@ -675,7 +675,7 @@
     },
     "after3_confront_admit_3": {
         "name": "Seoyeon",
-        "text": "*She picks up her lunch bag. Her hands are trembling.*"
+        "text": "*When Seoyeon picks up the lunch bag, the handle twists in her hand.*"
     },
     "after3_confront_admit_4": {
         "name": "Seoyeon",
@@ -683,23 +683,23 @@
     },
     "after3_confront_admit_4_b": {
         "name": "Seoyeon",
-        "text": "*She turns away. — Then stops.*"
+        "text": "*Seoyeon turns away and stops in front of a classroom door handle.*"
     },
     "after3_confront_admit_5": {
         "name": "Seoyeon",
-        "text": "...I won’t be leaving the rooftop open today."
+        "text": "I won't be leaving the rooftop open today."
     },
     "after3_confront_admit_6": {
         "name": "{name}",
-        "text": "*Her back is straight. Her fists are clenched. Her knuckles are white.*"
+        "text": "*Seoyeon keeps her back straight and hides one clenched fist in her coat pocket.*"
     },
     "after3_confront_excuse": {
         "name": "Seoyeon",
-        "text": "...You don’t see how that’s the problem?"
+        "text": "You don't see how that's the problem?"
     },
     "after3_confront_excuse_b": {
         "name": "Seoyeon",
-        "text": "*Her eyes are cold. The makeup stain on the back of her hand still hasn't come off.*"
+        "text": "*Seoyeon narrows her eyes. The makeup stain remains on the back of her hand.*"
     },
     "after3_confront_excuse_2": {
         "name": "Seoyeon",
@@ -707,27 +707,27 @@
     },
     "after3_confront_excuse_2_b": {
         "name": "Seoyeon",
-        "text": "*She pauses. Her eyes waver.*"
+        "text": "*Seoyeon opens her mouth, closes it, and pulls the clipboard toward her chest.*"
     },
     "after3_confront_lie_b": {
         "name": "Seoyeon",
-        "text": "*She pauses. Her eyes waver.*"
+        "text": "*The clipboard drops slightly in Seoyeon's hand. This time, she looks directly at {name}.*"
     },
     "after3_confront_lie": {
         "name": "Seoyeon",
-        "text": "...Really? Can I... believe that?"
+        "text": "Really? I can believe you, right?"
     },
     "after3_confront_lie_2": {
         "name": "Seoyeon",
-        "text": "*She turns around. The eyes that wanted to believe are the first to turn away.*"
+        "text": "*Without waiting for an answer, Seoyeon walks to the end of the hall. Her grip on the clipboard never loosens.*"
     },
     "after3_confront_lie_2_b": {
         "name": "{name}",
-        "text": "*Her back is straight. Her fists are clenched. Her knuckles are white.*"
+        "text": "*Seoyeon walks with her back straight, but the corner of the clipboard crumples against her palm.*"
     },
     "after3_confront_end": {
         "name": "Seoyeon",
-        "text": "*I stand alone in the empty hall. The image of her straight back and white-knuckled fists lingers.*"
+        "text": "*Seoyeon walks toward the far end of the empty hall. Beside her rigid back, all I can see is her clenched fist.*"
     },
     "after3_final": {
         "name": "{name}",
@@ -763,11 +763,11 @@
     },
     "minsu_d3_5b": {
         "name": "Minsu",
-        "text": "*He sighs and sets the straw wrapper he was folding on the table.*"
+        "text": "*Minsu folds the straw wrapper all the way down and sets it on the table.*"
     },
     "minsu_d3_6": {
         "name": "{name}",
-        "text": "......Yeah."
+        "text": "Yeah."
     },
     "minsu_d3_6b": {
         "name": "Minsu",
@@ -783,23 +783,23 @@
     },
     "minsu_d3_9": {
         "name": "Minsu",
-        "text": "*He didn't say more. The straw wrapper on the table is folded all the way to the end.*"
+        "text": "*Minsu says nothing else and pushes the tightly folded straw wrapper toward me.*"
     },
     "minsu_d3_10": {
         "name": "Minsu",
-        "text": "See you at school tomorrow. — Think about it seriously."
+        "text": "See you at school tomorrow. Think about it seriously."
     },
     "haeun_warn_1": {
         "name": "{name}",
-        "text": "*I step out of the student council room. The hall is empty. — Someone is waiting.*"
+        "text": "*When I leave the student council room, someone is waiting at the end of the empty hall.*"
     },
     "haeun_warn_1_b": {
         "name": "Haeun",
-        "text": "*She is leaning against the wall. She's fiddling with her student council bracelet.*"
+        "text": "*Haeun leans against the wall, fiddling with her student council bracelet.*"
     },
     "haeun_warn_2": {
         "name": "Haeun",
-        "text": "...{name}."
+        "text": "{name}."
     },
     "haeun_warn_2_b": {
         "name": "{name}",
@@ -815,15 +815,15 @@
     },
     "haeun_warn_3_b": {
         "name": "Haeun",
-        "text": "...She cried."
+        "text": "She was crying."
     },
     "haeun_warn_3_c": {
         "name": "{name}",
-        "text": "*— What?*"
+        "text": "*What?*"
     },
     "haeun_warn_4": {
         "name": "Haeun",
-        "text": "I saw her for a moment in the bathroom behind the student council room. She told me she was fine, but... she didn't look fine."
+        "text": "I saw her for a moment in the bathroom behind the student council room. She told me she was fine, but she didn't look fine."
     },
     "haeun_warn_4b": {
         "name": "{name}",
@@ -839,11 +839,11 @@
     },
     "haeun_warn_5c": {
         "name": "{name}",
-        "text": "......"
+        "text": "*I look back toward the bathroom at the end of the hall.*"
     },
     "haeun_warn_5c_b": {
         "name": "Seoyeon",
-        "text": "Watching you smile the same way at other people — I kind of hated it."
+        "text": "I kind of hated seeing you smile at other people the way you smile at me."
     },
     "haeun_warn_6": {
         "name": "Haeun",
@@ -851,7 +851,7 @@
     },
     "haeun_warn_6_b": {
         "name": "Haeun",
-        "text": "*She lowers her head.*"
+        "text": "*Haeun turns the student council bracelet toward the inside of her wrist.*"
     },
     "haeun_warn_7": {
         "name": "Haeun",
@@ -859,7 +859,7 @@
     },
     "haeun_warn_7_b": {
         "name": "Haeun",
-        "text": "*She stops, her gaze flicking briefly toward the faculty office.*"
+        "text": "*Haeun presses her lips together and checks toward the faculty office while fingering the clasp of her bracelet.*"
     },
     "haeun_warn_7_c": {
         "name": "Haeun",
@@ -867,7 +867,7 @@
     },
     "haeun_warn_7_d": {
         "name": "Haeun",
-        "text": "*She turns and leaves. Seoyeon's empty student council armband hangs at the end of the hallway.*"
+        "text": "*After Haeun disappears down the hall, only Seoyeon's student council armband remains on the wall rack.*"
     },
     "haeun_warn_8": {
         "name": "{name}",

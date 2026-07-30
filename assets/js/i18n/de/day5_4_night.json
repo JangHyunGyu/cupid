@@ -46,7 +46,7 @@
     },
     "hidden_perfect_homeroom_3c": {
         "name": "Klassenlehrerin",
-        "text": "...Was für ein Zufall. *Sie legt die Veranstaltungsunterlagen ab.* Wenn du Zeit hast, willst du dich setzen?"
+        "text": "Was für ein Zufall. *Sie legt die Veranstaltungsunterlagen ab.* Wenn du Zeit hast, möchtest du dich setzen?"
     },
     "hidden_perfect_homeroom_3e": {
         "name": "Klassenlehrerin",
@@ -70,19 +70,19 @@
     },
     "hidden_perfect_homeroom_4d": {
         "name": "Klassenlehrerin",
-        "text": "*Beim nächsten Treffen im Café rührt sie einmal im Kaffee und lässt den Löffel los.* ...Wie war es?"
+        "text": "*Bei unserem nächsten Treffen im Café rührt sie einmal ihren Kaffee um und lässt den Löffel los.* Wie fandest du es?"
     },
     "hidden_perfect_homeroom_4e": {
         "name": "{name}",
-        "text": "*Das dritte Treffen hat {name} vorgeschlagen. Nach der Arbeit wartet er auf einer Caféterrasse mit Blick auf die Kirschblüten und richtet noch einmal das Papier um den Blumenstrauß.*"
+        "text": "*Bei unserem dritten Treffen nach der Arbeit wartet meine ehemalige Klassenlehrerin bereits mit einem kleinen Blumenstrauß auf einer Caféterrasse mit Blick auf die Kirschblüten.*"
     },
     "hidden_perfect_homeroom_4f": {
         "name": "{name}",
-        "text": "*Ich reiche ihr den Blumenstrauß.* Er ist ein Glückwunsch zum Buch. Und er bedeutet auch, dass ich Sie wiedersehen möchte."
+        "text": "*Meine ehemalige Klassenlehrerin legt den Blumenstrauß in die Mitte des Tischs und richtet das Geschenkband.*"
     },
     "hidden_perfect_homeroom_4g": {
         "name": "Klassenlehrerin",
-        "text": "*Sie nimmt den Strauß und sieht {name} an.* Darf ich ihn in genau demselben Sinn annehmen?"
+        "text": "Das ist ein Geschenk zur Veröffentlichung. Und darf ich es als Zeichen verstehen, dass du mich wiedersehen möchtest?"
     },
     "hidden_perfect_homeroom_ending_title": {
         "name": "",
@@ -90,7 +90,7 @@
     },
     "hidden_perfect_homeroom_5": {
         "name": "{name}",
-        "text": "*Wir verlassen das Café und gehen im selben Tempo. Das Papier um den Strauß raschelt leicht im Abendwind.*"
+        "text": "*Vor der Cafétür stehen wir nebeneinander. Mit dem Blumenstrauß in der Hand geht sie nicht voraus, sondern wartet auf meine Antwort.*"
     },
     "hidden_perfect_homeroom_ep1": {
         "name": "{name}",
@@ -106,7 +106,7 @@
     },
     "hidden_perfect_homeroom_ep4": {
         "name": "{name}",
-        "text": "*Wir fragen nach der Arbeit des anderen und planen das nächste Wochenende. Unsere frühere Beziehung ist weder ein Geheimnis, das wir auslöschen müssen, noch ein Witz für später. Wir lassen sie als abgeschlossene Zeit zurück.*"
+        "text": "*In unserem gemeinsamen Kalender stehen nur unsere Arbeitstage und die Verabredung fürs nächste Wochenende. Die Anreden aus der Schulzeit gibt es nur noch in der Bildunterschrift eines vier Jahre alten Abschlussfotos.*"
     },
     "hidden_true_homeroom_1": {
         "name": "{name}",
@@ -134,7 +134,7 @@
     },
     "hidden_true_homeroom_4": {
         "name": "Klassenlehrerin",
-        "text": "*Sie sieht kurz auf den Firmenausweis und lächelt.* Du hast dir wirklich ein eigenes Leben aufgebaut."
+        "text": "*Sie prüft nacheinander den Namen und das Foto auf meinem Firmenausweis.* Du hast dir wirklich ein eigenes Leben aufgebaut."
     },
     "hidden_true_homeroom_4_b": {
         "name": "{name}",
@@ -202,7 +202,7 @@
     },
     "hidden_true_homeroom_8": {
         "name": "Klassenlehrerin",
-        "text": "*Über den Kuchenteller hinweg streckt {name} eine Hand aus. Sie sieht sie einen Moment lang an, nimmt sie vorsichtig und verdeckt mit der anderen Hand ihr unwillkürliches Lächeln.* Sehen wir uns nächste Woche wieder?"
+        "text": "*Über den Kuchenteller hinweg öffnet sie ihre Handfläche. Sie hält vor jeder Berührung inne und wartet auf {name}s Antwort.* Möchtest du dich nächste Woche wieder treffen?"
     },
     "hidden_true_homeroom_ending_title": {
         "name": "",
@@ -235,7 +235,7 @@
     },
     "hidden_perfect_nurse_2": {
         "name": "Schulkrankenschwester",
-        "text": "*Nach der Veranstaltung nimmt sie das Namensschild von ihrem Kittel.* ...{name}? Hier hätte ich dich nicht erwartet."
+        "text": "*Nach der Veranstaltung nimmt sie das Namensschild von ihrem Kittel.* {name}? Hier hätte ich dich nicht erwartet."
     },
     "hidden_perfect_nurse_3": {
         "name": "{name}",
@@ -267,11 +267,11 @@
     },
     "hidden_perfect_nurse_ep1": {
         "name": "{name}",
-        "text": "*Einige Monate später. Nach mehreren gemeinsamen Wochenenden wachen sie zum ersten Mal am selben Morgen auf. Unter der Decke sucht Juwon nach {name}s Hand und verschränkt ihre Finger damit. {name} lässt nicht los.*"
+        "text": "*Einige Monate später. Nachdem wir mehrere Wochenenden miteinander verbracht haben, wachen wir zum ersten Mal am selben Morgen auf. Unter der Decke streckt Juwon ihre Hand aus und wartet mit locker geöffneten Fingern.*"
     },
     "hidden_perfect_nurse_ep2": {
         "name": "{name}",
-        "text": "*Seit jenem Morgen fühlt es sich selbstverständlich an, am Wochenende zu Juwon zu gehen. Während wir allmählich mehr Zeit miteinander verbringen, wechselt Juwon in das Ausbildungsteam einer Universitätsklinik. Patienten und neue Pflegekräfte nennen sie nun Ausbilderin Lee Juwon.*"
+        "text": "*Seit jenem Morgen bei Juwon füllen sich die Wochenenden in unserem gemeinsamen Kalender einer nach dem anderen. Inzwischen wechselt Juwon in das Ausbildungsteam einer Universitätsklinik, und auch die neuen Pflegekräfte nennen sie nun ihre Ausbilderin. Ausbilderin Lee Juwon.*"
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
@@ -291,7 +291,7 @@
     },
     "hidden_true_nurse_2_b": {
         "name": "{name}",
-        "text": "*Auf dem Tisch liegen Mitarbeiterausweise von zwei verschiedenen Firmen. Wir sehen beide aus wie Menschen, die für ihren eigenen Tag Verantwortung tragen.*"
+        "text": "*Auf dem Tisch liegen zwei Dienstausweise von verschiedenen Arbeitsplätzen. Auf einem Handy steht die Genehmigung für Überstunden, auf dem anderen der Abschlussbericht der Gesundheitsveranstaltung.*"
     },
     "hidden_true_nurse_2_c": {
         "name": "Schulkrankenschwester",
@@ -335,7 +335,7 @@
     },
     "hidden_true_nurse_5_f": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie lacht trocken.* Genau. Und ein Pflaster muss in weniger als drei Minuten kleben."
+        "text": "*Mit einem Finger tippt sie zweimal gegen den Henkel der Kaffeetasse.* Genau. Und ein Pflaster muss in weniger als drei Minuten kleben."
     },
     "hidden_true_nurse_6": {
         "name": "Schulkrankenschwester",
@@ -567,7 +567,7 @@
     },
     "perfect_yuna_3": {
         "name": "Yuna",
-        "text": "...Sag mir, was du denkst, wenn du fertig bist. Das ist meine Antwort."
+        "text": "Sag mir, was du davon hältst, wenn du fertig bist. Das ist meine Antwort."
     },
     "perfect_yuna_4": {
         "name": "{name}",
@@ -575,7 +575,7 @@
     },
     "perfect_yuna_5": {
         "name": "Yuna",
-        "text": "*Sie steht auf und umarmt mich, ohne ein Wort. Das Licht durch das zerbrochene Fenster zieht sich lang über den Boden. Ihre Hand kommt erst spät auf meinem Rücken zur Ruhe.*"
+        "text": "*Sie steht auf und legt das Notizbuch ab.* Darf ich dich umarmen? *Mit leicht geöffneten Armen wartet sie einen Schritt entfernt auf meine Antwort.*"
     },
     "perfect_epilogue_1_yuna": {
         "name": "{name}",
@@ -604,11 +604,11 @@
     "bitter_yuna_2": {},
     "bitter_yuna_2_library": {
         "name": "Yuna",
-        "text": "...Manchmal muss ich daran denken, wenn ich eine Bibliothek rieche. Ich hätte damals mehr sagen sollen."
+        "text": "Manchmal denke ich daran, wenn ich eine Bibliothek rieche. Ich hätte damals mehr sagen sollen."
     },
     "bitter_yuna_2_book": {
         "name": "Yuna",
-        "text": "...Manchmal muss ich daran denken, wenn ich an einer Buchhandlung vorbeigehe. Ich hätte damals mehr sagen sollen."
+        "text": "Manchmal denke ich daran, wenn ich an einer Buchhandlung vorbeigehe. Ich hätte damals mehr sagen sollen."
     },
     "bitter_yuna_3": {
         "name": "{name}",
@@ -648,11 +648,11 @@
     },
     "true_yuna_5_b": {
         "name": "Yuna",
-        "text": "*Yuna hält kurz inne. Die Hand am Buchrücken lockert sich.*"
+        "text": "*Ihr Finger beim Scrollen durch die Playlist hält beim dritten Lied an. Die Hand um den Buchrücken lockert sich.*"
     },
     "true_yuna_6": {
         "name": "Yuna",
-        "text": "...Du hast dich erinnert."
+        "text": "Du hast dich erinnert."
     },
     "true_yuna_6b": {
         "name": "Yuna",
@@ -664,7 +664,7 @@
     },
     "true_yuna_bridge": {
         "name": "{name}",
-        "text": "*Als das letzte Lied endet, steht die Mondsichel am Himmel. Yuna fragt: ‚Darf ich mich an deinen Rücken lehnen?‘ {name} nickt. Sie lehnen sich Rücken an Rücken und spielen den nächsten Song ab.*"
+        "text": "*Als das letzte Lied endet, steht die Mondsichel am Himmel. Yuna fragt: »Darf ich mich an deinen Rücken lehnen?« und lässt einen Schritt Platz neben sich. Das nächste Lied läuft noch nicht.*"
     },
     "true_epilogue_1_yuna": {
         "name": "{name}",
@@ -800,7 +800,7 @@
     },
     "true_dain_bridge": {
         "name": "{name}",
-        "text": "*Nachdem das Versprechen besiegelt ist, fragt Dain: \"Darf ich mich kurz anlehnen?\" {name} nickt. Dain hält den Ball im Arm, lehnt sich an seine Schulter und schließt die Augen. Auf dem Handy ist weiterhin die Bestätigung des Reha-Termins zu sehen.*"
+        "text": "*Nachdem sie unser Versprechen bestätigt hat, fragt Dain: »Darf ich mich kurz anlehnen?« Sie drückt den Ball an die Brust und lässt eine Schulterbreite Abstand, während sie auf meine Antwort wartet. Auf ihrem Handy ist noch die Bestätigung des Krankenhaustermins zu sehen.*"
     },
     "true_epilogue_1_dain": {
         "name": "{name}",
@@ -812,7 +812,7 @@
     },
     "true_epilogue_3": {
         "name": "{name}",
-        "text": "*Im Rückblick ging alles ziemlich schnell. Ich brauchte nur fünf Tage, um es mir einzugestehen.*"
+        "text": "*Rückblickend kam der Anfang ziemlich schnell. Im Kalender waren erst fünf Kästchen vergangen.*"
     },
     "true_epilogue_4": {},
     "true_epilogue_4_seo": {
@@ -885,7 +885,7 @@
     },
     "confess_fail_cg_yuna": {
         "name": "Yuna",
-        "text": "*Sie gehen nebeneinander bis zum Parkausgang, ohne dass sich ihre Hände berühren. Yuna blickt geradeaus, als sie spricht.* ...Tut mir leid. Ich kann deine Gefühle nicht erwidern."
+        "text": "*Wir gehen bis zum Parkausgang nebeneinander, ohne dass sich unsere Hände berühren. Yuna blickt beim Sprechen geradeaus.* Tut mir leid. Ich kann deine Gefühle nicht erwidern."
     },
     "confess_fail_cg_dain": {
         "name": "Dain",
@@ -977,7 +977,7 @@
     },
     "good_1_yuna": {
         "name": "Yuna",
-        "text": "...Spät war's schon. Aber diesmal hab ich deinen Satz bis zum Ende gelesen."
+        "text": "Du warst spät dran. Trotzdem habe ich deinen Satz bis zum Ende gelesen."
     },
     "good_1_yuna_b": {
         "name": "Yuna",
@@ -993,7 +993,7 @@
     },
     "good_3_yuna": {
         "name": "{name}",
-        "text": "*Wir schauen in denselben Himmel. Wenig Worte, aber die Stille fühlt sich nicht mehr so kalt an wie früher.*"
+        "text": "*Selbst nachdem die Lautsprecher am Sportplatz verstummen, bleiben wir am selben Geländer stehen.*"
     },
     "good_4_yuna": {
         "name": "Yuna",
@@ -1013,7 +1013,7 @@
     },
     "good_epilogue_3_yuna": {
         "name": "{name}",
-        "text": "*Auf der Rückseite des Zettels, ganz klein: '...Das Ende lesen wir zusammen.' Die hellviolette Tinte ist verwischt.*"
+        "text": "*Auf der Rückseite des Zettels steht klein: »Lesen wir das Ende zusammen.« Die blassviolette Tinte ist verschmiert.*"
     },
     "good_5_cg_yuna": {
         "name": "System",
@@ -1037,7 +1037,7 @@
     },
     "good_5_dain": {
         "name": "{name}",
-        "text": "*Dain streckt zuerst die Faust aus. Als {name} sie leicht anstößt, lacht Dain. Sie gehen durch das Schultor und laufen langsam in dem Tempo weiter, das Dain vorgibt.*"
+        "text": "*Dain hält zuerst die Faust hin und wartet. Auf dem Reha-Merkblatt in ihrer anderen Hand stehen die Zeit unseres nächsten Spaziergangs und die Notiz »Ich bestimme das Tempo«.*"
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
@@ -1057,7 +1057,7 @@
     },
     "day5_ending_friend": {
         "name": "{name}",
-        "text": "*Ich beschließe, kein Geständnis zu machen. Aber ich will auch nicht wortlos verschwinden.*"
+        "text": "*Statt meine Gefühle zu gestehen, beschließe ich, »Danke« zu schreiben. Der erste Buchstabe bleibt im Eingabefeld stehen, und ich schließe den Bildschirm nicht.*"
     },
     "friend_1": {
         "name": "{name}",
@@ -1085,7 +1085,7 @@
     },
     "friend_4_yuna": {
         "name": "{name}",
-        "text": "*Yuna antwortet: ‚Gelesen. ...Bis morgen.‘*"
+        "text": "*Yuna antwortet: »Ich habe es gelesen. Bis morgen.«*"
     },
     "friend_4_dain": {
         "name": "{name}",
@@ -1097,7 +1097,7 @@
     },
     "friend_7": {
         "name": "{name}",
-        "text": "*Neben meiner Nachricht erscheint die Lesebestätigung. Diesmal lösche ich sie nicht.*"
+        "text": "*Neben meiner gesendeten Nachricht erscheint die Lesebestätigung. Das Eingabefeld ist leer.*"
     },
     "friend_8": {
         "name": "{name}",
@@ -1105,7 +1105,7 @@
     },
     "friend_9": {
         "name": "{name}",
-        "text": "*Auf dem Foto sind wir Freunde. Hinter diesem Wort muss ich keine andere Bedeutung verstecken.*"
+        "text": "*Die Datei heißt »Abschluss_Freunde«. Dasselbe Foto wird auch im Gruppenchat gepostet.*"
     },
     "friend_10": {
         "name": "{name}",
@@ -1129,7 +1129,7 @@
     },
     "mayhem_3": {
         "name": "Dain",
-        "text": "*Dain lächelt wie immer. ‚Mach's gut.‘ Ihre Stimme verliert am Satzende jede Kraft.*"
+        "text": "*Ihre Mundwinkel heben sich, doch sie sieht mir nicht in die Augen.* »Mach's gut.«"
     },
     "mayhem_4": {
         "name": "{name}",
@@ -1137,7 +1137,7 @@
     },
     "mayhem_5": {
         "name": "{name}",
-        "text": "*Der Frühling geht zu Ende. Die Kirschblüten fallen. Niemand ist an meiner Seite.*"
+        "text": "*Auf dem vom Frühlingsregen nassen Boden vor dem Schultor kleben Kirschblütenblätter. Der Platz, an dem wir einmal nebeneinandergingen, ist leer.*"
     },
     "mayhem_6": {
         "name": "{name}",
@@ -1153,7 +1153,7 @@
     },
     "day5_ending_harem": {
         "name": "{name}",
-        "text": "*Die Antwort bleibt mir im Hals stecken. Das Lächeln aller drei verstummt im selben Moment.*"
+        "text": "*Statt zu antworten, rufe ich nacheinander alle drei Namen. Das Lachen verstummt, und drei Handys bleiben unverändert auf dem Tisch liegen.*"
     },
     "harem_1": {
         "name": "Seoyeon",
@@ -1165,7 +1165,7 @@
     },
     "harem_2": {
         "name": "Yuna",
-        "text": "...Ich brauche Zeit."
+        "text": "Ich brauche etwas Zeit."
     },
     "harem_3": {
         "name": "Dain",
@@ -1197,7 +1197,7 @@
     },
     "day5_seo_ending_freetalk_intro": {
         "name": "{name}",
-        "text": "*Nach dem Ende führt ihre Zeit sie zurück auf das vertraute Schuldach. Diesmal gibt es weder vorgeschriebene Zeilen noch eine nächste Szene.*"
+        "text": "*Nach dem Ende führt die Zeit uns zurück auf das vertraute Schuldach. Diesmal gibt es weder vorgeschriebene Zeilen noch eine nächste Szene.*"
     },
     "day5_yuna_ending_freetalk_intro": {
         "name": "{name}",
@@ -1205,7 +1205,7 @@
     },
     "day5_dain_ending_freetalk_intro": {
         "name": "{name}",
-        "text": "*Nach der letzten Szene springt im vertrauten Sportraum einmal ein Ball auf.*"
+        "text": "*Nach der letzten Szene springt in der vertrauten Turnhalle einmal ein Ball auf.*"
     },
     "day5_teacher_ending_freetalk_intro": {
         "name": "{name}",
@@ -1213,7 +1213,7 @@
     },
     "day5_nurse_ending_freetalk_intro": {
         "name": "{name}",
-        "text": "*Das Leben nach dem Abschluss geht weiter. Zu Hause räumt sie fertig auf und lässt den Platz gegenüber frei.*"
+        "text": "*Nach dem Abschluss geht das Leben weiter. Zu Hause beendet sie das Aufräumen und lässt den Platz gegenüber frei.*"
     },
     "day5_credits": {
         "name": "",
@@ -1232,7 +1232,7 @@
     },
     "day5_seo_ending_freetalk_perfect": {
         "name": "Seoyeon",
-        "text": "*Neben der ein Jahr später noch offenen Dachgartentür zeigt sie auf Platz für einen neuen Topf.* Wollen wir auch diesen zusammen aussuchen?",
+        "text": "*Neben der auch ein Jahr später noch offenen Dachtür zeigt sie auf den freien Platz für einen neuen Topf.* Wollen wir auch diesen gemeinsam aussuchen? Wir haben ja Zeit.",
         "context": "Bonusgespräch ein Jahr nach Seoyeons PERFECT END. Ihre Beziehung blieb nach dem Abschluss bestehen; sie schickte ein Foto mit zwei neuen Töpfen und einem freien Platz. Bewahre diese feste Beziehung.",
         "personality": "Seoyeon ist verantwortungsvoll und ehrlich; in der sicheren Beziehung zeigt sie Verletzlichkeit und sanften Humor und denkt selbstverständlich an eine gemeinsame Zukunft."
     },
@@ -1244,7 +1244,7 @@
     },
     "day5_seo_ending_freetalk_good": {
         "name": "Seoyeon",
-        "text": "*Sie öffnet das ordnungsgemäß reservierte Dach und prüft das Buch.* Wir wollten es langsam angehen. Reden wir heute erst einmal richtig.",
+        "text": "*Sie öffnet die offiziell reservierte Dachtür und prüft das Nutzungsbuch.* Wir wollten es langsam angehen. Reden wir heute erst einmal in Ruhe.",
         "context": "Bonusgespräch nach Seoyeons GOOD END. Das Geständnis an Tag 4 wurde angenommen, aber beide passen ihr Tempo an und reservierten ein Mittagessen auf dem Dach. Kein Sprung zu Trennung oder vollendeter Beziehung.",
         "personality": "Seoyeon zeigt Fürsorge durch Absprachen und kleine Tempowechsel und wahrt die passende Distanz einer neuen Beziehung."
     },
@@ -1266,7 +1266,7 @@
     },
     "day5_yuna_ending_freetalk_perfect": {
         "name": "Yuna",
-        "text": "*Sie schließt ihren veröffentlichten ersten Roman und öffnet die Widmung.* Nach dem dritten Lied erzählst du zuerst die nächste Geschichte.",
+        "text": "*Sie schließt ihren veröffentlichten ersten Roman und öffnet ihn bei der Widmung.* Nach dem dritten Lied erzählst du zuerst die nächste Geschichte.",
         "context": "Bonusgespräch ein Jahr nach Yunas PERFECT END. Ihr erster Roman erschien mit einer Widmung an die Person, die mit ihr das dritte Lied hörte. Bewahre ihre tiefe, fortbestehende Beziehung.",
         "personality": "Yuna ist still und nachdenklich, bietet einer vertrauten Person aber zuerst Worte und Zuneigung an; Bücher und Musik tragen die sichere Nähe."
     },
@@ -1278,7 +1278,7 @@
     },
     "day5_yuna_ending_freetalk_good": {
         "name": "Yuna",
-        "text": "*Sie schreibt einen neuen Satz auf die Rückseite der gefalteten Notiz.* Nächstes Mal sprich zuerst. Heute kannst du jetzt anfangen.",
+        "text": "*Sie schreibt einen neuen Satz auf die Rückseite des gefalteten Zettels und zeigt ihn mir.* Sprich nächstes Mal zuerst. Heute kannst du jetzt anfangen.",
         "context": "Bonusgespräch nach Yunas GOOD END. Nach dem Geständnis an Tag 4 blieben sie unsicher, versprachen aber Band zwei, morgen und ein gemeinsames Ende. Bewahre diesen vorsichtigen Anfang.",
         "personality": "Yuna trägt die Beziehung mit kleinen Sätzen und Gesten und lässt die nächste Seite klar offen, ohne sie zu überstürzen."
     },
@@ -1306,19 +1306,19 @@
     },
     "day5_dain_ending_freetalk_true_love": {
         "name": "Dain",
-        "text": "*Sie zeigt Reha-Termin und Bewerbung beim Übertragungsclub nebeneinander.* Ich wollte beides versuchen. Jetzt sag du alles, was du sagen wolltest.",
+        "text": "*Sie zeigt abwechselnd die Reha-Terminbestätigung und die Bewerbung für den Medienclub.* Ich hab doch gesagt, ich versuche beides. Jetzt sag du alles, was du sagen wolltest.",
         "context": "Bonusgespräch direkt nach Dains TRUE LOVE END. Sie buchte die Reha und will Sportübertragung ausprobieren; beide versprachen, ihre erste Sendung anzusehen. Bestätige die PERFECT-Zukunft noch nicht.",
         "personality": "Dain ist energisch und ehrlich, verdeckt Schmerzen nicht mehr mit „alles gut“ und führt ihre Entscheidungen in der neuen Beziehung selbst."
     },
     "day5_dain_ending_freetalk_good": {
         "name": "Dain",
-        "text": "*Sie tippt auf „Ich bestimme das Tempo“ auf dem Reha-Spazierzettel.* Wir haben noch nicht alles gelöst, also reden wir heute auch langsam.",
+        "text": "*Sie tippt auf „Ich bestimme das Tempo“ auf dem Reha-Spazierplan.* Wir haben noch nicht alles gelöst, also lassen wir uns auch heute Zeit beim Reden.",
         "context": "Bonusgespräch nach Dains GOOD END. Das Geständnis an Tag 4 wurde angenommen, doch Probleme bleiben; sie bestimmt das Tempo von Reha und nächstem Spaziergang.",
         "personality": "Dain benennt Unbehagen statt es mit Fröhlichkeit zu verdecken und behält bei Genesung und Beziehung das eigene Tempo."
     },
     "day5_dain_ending_freetalk_bittersweet": {
         "name": "Dain",
-        "text": "*An die geschlossene Turnhallentür gelehnt hört sie einen fernen Ball.* Der Spaß war echt. Das Bedauern auch. Reden wir mit beidem hier.",
+        "text": "*An die geschlossene Turnhallentür gelehnt lauscht sie eine Weile dem fernen Aufprallen eines Balls.* Der Spaß war echt. Das Bedauern auch. Reden wir über beides.",
         "context": "Bonusgespräch nach Dains BITTERSWEET END. Einen Monat später sagte sie, es sei nur lustig gewesen, und nach dem Abschluss nahm der Kontakt ab. Die Beziehung startet nicht automatisch neu.",
         "personality": "Dain spricht offen über Erinnerungen und Bedauern, ohne Schuld oder Druck zur Versöhnung, und respektiert die heutige Distanz."
     },
@@ -1340,7 +1340,7 @@
     },
     "day5_teacher_ending_freetalk_true_love": {
         "name": "Klassenlehrerin",
-        "text": "*Nach der Lesung öffnet sie einen neuen Kontakt.* Darf ich langsam kennenlernen, wer du heute bist, statt meinen früheren Schüler?",
+        "text": "*Nach der Lesung öffnet sie auf ihrem Handy einen neuen Kontakt.* Darf ich dich langsam so kennenlernen, wie du heute bist – nicht mehr als meinen früheren Schüler?",
         "context": "Bonusgespräch direkt nach ihrem TRUE LOVE END. Vier Jahre später trafen sich zwei Erwachsene wieder, tauschten Kontakte und planten ein weiteres Treffen. Sie sind noch kein langjähriges Paar.",
         "personality": "Sie lässt das frühere Machtverhältnis zurück, zeigt Interesse und prüft die freie Entscheidung in diesem vorsichtigen Neubeginn."
     },
@@ -1362,13 +1362,13 @@
     },
     "day5_nurse_ending_freetalk_true_love": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie räumt die Pflaster der Gesundheitsaktion weg und zeigt das nächste Wochenende.* Diesmal weder Beratung noch Behandlung. Worüber reden wir beim Treffen?",
+        "text": "*Sie steckt die Pflaster von der Gesundheitsveranstaltung in ihre Tasche und zeigt den Plan fürs nächste Wochenende.* Diesmal geht es weder um Beratung noch um Behandlung. Worüber wollen wir bei unserem Treffen reden?",
         "context": "Bonusgespräch direkt nach ihrem TRUE LOVE END. Vier Jahre später trafen zwei Erwachsene wieder zusammen, sahen sich drei Monate lang und begannen eine Beziehung. Kein Vorgriff auf Zusammenleben.",
         "personality": "Juwon erkennt frühere berufliche Grenzen an, prüft die Wahl des anderen und äußert ihr heutiges Interesse klar."
     },
     "day5_nurse_ending_freetalk_good": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie schreibt „Abschluss, alles in Ordnung“ ins grüne Heft und schließt es.* Die Behandlung endet heute. Deinen Abschied höre ich mir in Ruhe an.",
+        "text": "*Sie schreibt „Abschluss, alles in Ordnung“ ins hellgrüne Heft und schließt es.* Die Behandlung endet heute. Deinen Abschiedsgruß höre ich mir in Ruhe an.",
         "context": "Bonusgespräch nach dem Abschlussabschied ihres GOOD END. Es gab weder privaten Kontakt noch erwachsenes Wiedersehen oder Romanze; bewahre die nichtromantische Grenze zwischen Schulkrankenschwester und Schüler.",
         "personality": "Juwon hört freundlich zu, hält klare berufliche Grenzen und unterstützt Gesundheit und Selbstständigkeit des Absolventen."
     }

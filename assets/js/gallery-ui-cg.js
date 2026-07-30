@@ -79,13 +79,13 @@ class CGRenderer {
         if (cgList.length === 0) {
             const emptyMsg = {
                 ko: { title: '아직 이벤트 CG가 없습니다', desc: '게임을 진행하며 특별한 순간을 수집하세요!' },
-                en: { title: 'No Event CG yet', desc: 'Collect special moments as you play!' },
-                es: { title: 'Aún no hay CG registrados', desc: '¡Colecciona momentos especiales mientras juegas!' },
+                en: { title: 'No event CGs yet', desc: 'Collect special moments as you play!' },
+                es: { title: 'Aún no hay CG de eventos', desc: '¡Colecciona momentos especiales mientras juegas!' },
                 ja: { title: '登録されているCGはまだありません', desc: 'ゲームを進めて、特別なシーンを集めましょう！' },
-                fr: { title: "Pas encore de CG d'événement", desc: 'Collectionnez des moments spéciaux en jouant !' },
+                fr: { title: "Aucun CG d'événement pour le moment", desc: 'Collectionnez les scènes marquantes au fil de votre partie !' },
                 de: { title: 'Noch keine Event-CGs', desc: 'Sammle besondere Momente beim Spielen!' },
-                pt: { title: 'Nenhum CG de Evento ainda', desc: 'Colete momentos especiais enquanto joga!' }
-            }[this.ui.lang] || { title: 'No Event CG yet', desc: 'Collect special moments as you play!' };
+                pt: { title: 'Ainda não há CGs de eventos', desc: 'Colecione momentos especiais enquanto joga!' }
+            }[this.ui.lang] || { title: 'No event CGs yet', desc: 'Collect special moments as you play!' };
 
             this.gridEl.innerHTML = `
                 <div class="empty-state" style="grid-column: 1/-1;">

@@ -1,7 +1,7 @@
 {
     "night_start": {
         "name": "{name}",
-        "text": "*Voltei pro quarto. Deitei na cama. Pro primeiro dia — tô moído. Mas não foi ruim.*"
+        "text": "*De volta ao quarto, deito na cama, e o aroma de flores de cerejeira que ficou na camisa do uniforme passa para o cobertor. Foi um primeiro dia especialmente longo.*"
     },
     "night_start_3": {
         "name": "{name}",
@@ -21,11 +21,11 @@
     },
     "night_msg_seo_4": {
         "name": "Seoyeon",
-        "text": "*...cortesia da casa*"
+        "text": "*é cortesia*"
     },
     "night_msg_seo_5": {
         "name": "{name}",
-        "text": "*Ela quebrou o 'Cortesia da casa' numa mensagem separada. De propósito.*"
+        "text": "*Ela enviou «é cortesia» em uma linha separada de propósito.*"
     },
     "night_msg_yuna_1": {
         "name": "Yuna",
@@ -37,15 +37,15 @@
     },
     "night_msg_yuna_3": {
         "name": "{name}",
-        "text": "*'Guardo um lugar pra você.' — A mão que larga o celular se move mais devagar do que o esperado.*"
+        "text": "*Enquanto releio «vou guardar um lugar para você», a tela escurece primeiro.*"
     },
     "night_msg_dain_1": {
         "name": "Dain",
-        "text": "*Revanche de pedra, papel, tesoura é AMANHÃ!!*"
+        "text": "*a revanche de pedra, papel ou tesoura é amanhã*"
     },
     "night_msg_dain_2": {
         "name": "Dain",
-        "text": "*Não vai amarelar kkkk*"
+        "text": "*amanhã tem revanche, haha*"
     },
     "night_msg_dain_3": {
         "name": "Dain",
@@ -53,7 +53,7 @@
     },
     "night_msg_dain_4": {
         "name": "{name}",
-        "text": "*Três mensagens seguidas. Ela não respira entre uma e outra não?*"
+        "text": "*As três mensagens chegam quase ao mesmo tempo. No campo de resposta já aparece um «haha».*"
     },
     "night_hidden_check": {
         "name": "{name}",
@@ -65,7 +65,7 @@
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Leio o aviso mais uma vez. O canto da boca sobe, então viro o celular para baixo.*"
+        "text": "*Leio o aviso mais uma vez e deixo o celular virado para baixo. Meu rosto se reflete por um instante na tela escura.*"
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
@@ -93,27 +93,27 @@
     },
     "night_seo_late_3": {
         "name": "{name}",
-        "text": "*A mão que ia largar o celular trava no meio do caminho.*"
+        "text": "*Quando deixo o celular de lado, a hora de entrada de amanhã permanece na tela de bloqueio.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
-        "text": "*...*"
+        "text": "*Uma bolha cinza aparece: «Esta mensagem foi apagada».*"
     },
     "night_yuna_late_2": {
         "name": "{name}",
-        "text": "*O indicador de digitação acende e apaga. A única coisa que chega é «...».*"
+        "text": "*O indicador de digitação acende e apaga logo depois, mas nenhuma mensagem nova chega.*"
     },
     "night_yuna_late_3": {
         "name": "{name}",
-        "text": "*— Fico em dúvida se respondo ou não, e a tela apaga.*"
+        "text": "*Enquanto abro e fecho o campo de resposta, a tela entra no modo de repouso.*"
     },
     "night_yuna_late_4": {
         "name": "{name}",
-        "text": "*Mesmo com a tela apagada, fiquei segurando o celular por um tempão.*"
+        "text": "*Na tela escura, resta apenas a marca do meu polegar.*"
     },
     "night_dain_late_1": {
         "name": "Dain",
-        "text": "*aí você ainda tá acordado né?!*"
+        "text": "*ei, você ainda está acordado, né?*"
     },
     "night_dain_late_2": {
         "name": "Dain",
@@ -133,7 +133,7 @@
     },
     "night_end_1": {
         "name": "{name}",
-        "text": "*Largo o celular. Olho pro teto. O cheiro de cerejeira ainda tá no uniforme.*"
+        "text": "*Deixo o celular de lado e olho para o teto. O aroma de flores de cerejeira ainda está no uniforme.*"
     },
     "night_end_3": {
         "name": "{name}",

@@ -53,7 +53,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-        const version = '2.9.106';
+        const version = '2.9.107';
     const LOAD_RETRIES = 3;
 
     // =========================================================================
@@ -370,17 +370,44 @@
         var pageLang = String(window.GAME_LANG || document.documentElement.lang || 'ko')
             .toLowerCase()
             .split('-')[0];
-        var copy = pageLang === 'ja'
-            ? {
-                title: 'ゲームを読み込めませんでした',
-                message: '通信環境を確認して、もう一度お試しください。',
-                retry: '再読み込み'
-            }
-            : {
+        var copies = {
+            ko: {
+                title: '게임을 불러오지 못했습니다',
+                message: '인터넷 연결을 확인한 뒤 다시 시도해 주세요.',
+                retry: '다시 불러오기'
+            },
+            en: {
                 title: 'Game failed to load',
                 message: 'Check your connection and try again.',
                 retry: 'Reload'
-            };
+            },
+            es: {
+                title: 'No se pudo cargar el juego',
+                message: 'Revisa tu conexión a internet e inténtalo de nuevo.',
+                retry: 'Volver a cargar'
+            },
+            ja: {
+                title: 'ゲームを読み込めませんでした',
+                message: '通信環境を確認して、もう一度お試しください。',
+                retry: '再読み込み'
+            },
+            fr: {
+                title: 'Impossible de charger le jeu',
+                message: 'Vérifiez votre connexion internet, puis réessayez.',
+                retry: 'Réessayer'
+            },
+            de: {
+                title: 'Das Spiel konnte nicht geladen werden',
+                message: 'Überprüfe deine Internetverbindung und versuche es erneut.',
+                retry: 'Neu laden'
+            },
+            pt: {
+                title: 'Não foi possível carregar o jogo',
+                message: 'Verifique sua conexão com a internet e tente novamente.',
+                retry: 'Recarregar'
+            }
+        };
+        var copy = copies[pageLang] || copies.en;
         var overlay = document.createElement('div');
         overlay.id = 'cupid-load-error';
         overlay.setAttribute('data-cupid-load-error', 'true');

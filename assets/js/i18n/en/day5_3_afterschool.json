@@ -13,11 +13,11 @@
     },
     "after5_farewell_seo_2": {
         "name": "Seoyeon",
-        "text": "...Hah."
+        "text": "*Seoyeon lets out a long breath.*"
     },
     "after5_farewell_seo_3": {
         "name": "Seoyeon",
-        "text": "*She brushes her hair back.*"
+        "text": "*She tucks loose hair behind her ear and readjusts her grip on her bag strap.*"
     },
     "after5_farewell_seo_4": {
         "name": "Seoyeon",
@@ -25,7 +25,7 @@
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
-        "text": "Seoyeon..."
+        "text": "Seoyeon—"
     },
     "after5_farewell_seo_6": {
         "name": "Seoyeon",
@@ -54,7 +54,7 @@
     },
     "after5_farewell_yuna_4": {
         "name": "Yuna",
-        "text": "*She turns away. She doesn't stop.*"
+        "text": "*She turns down the hall toward the library. The sound of her shoes disappears around the corner.*"
     },
     "after5_farewell_yuna_5": {
         "name": "{name}",
@@ -75,7 +75,7 @@
     },
     "after5_farewell_dain_3": {
         "name": "{name}",
-        "text": "Dain..."
+        "text": "Dain—"
     },
     "after5_farewell_dain_4": {
         "name": "Dain",
@@ -87,7 +87,7 @@
     },
     "after5_farewell_dain_4_c": {
         "name": "Dain",
-        "text": "But if you handle it badly, I'll really be mad. ...Do it right."
+        "text": "But if you handle it badly, I'll really be mad. Do it right."
     },
     "after5_farewell_dain_4_d": {
         "name": "Dain",
@@ -95,7 +95,7 @@
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
-        "text": "*Dain turns and walks slowly back into the gym.*"
+        "text": "*Dain tightens the strap of her knee brace once more and goes into the gym.*"
     },
     "after5_farewell_dain_5b": {
         "name": "{name}",
@@ -103,7 +103,7 @@
     },
     "after5_hidden_farewell_1": {
         "name": "{name}",
-        "text": "*At the school gate, I see three figures in the distance. Seoyeon walks with Haeun, Dain carries a volleyball under one arm and moves slowly, and Yuna reads as she walks. None of them look this way.*"
+        "text": "*At the school gate, Seoyeon checks the event roster with Haeun, Dain shortens her stride with a volleyball under one arm, and Yuna lowers her eyes to an open book. Each heads for a different exit.*"
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
@@ -128,17 +128,17 @@
     },
     "after5_last_chance_1": {
         "name": "{name}",
-        "text": "*My feet stop. The setting sun casts a long shadow behind me.*"
+        "text": "*The event speakers power down. Beneath the fork-in-the-road sign, the toes of my shoes remain unable to choose a direction.*"
     },
     "after5_last_chance_2": {
         "name": "{name}",
-        "text": "*I grip the phone in my pocket. The screen stays dark.*"
+        "text": "*I take the phone from my pocket. Only the event banner is reflected in its black screen.*"
     },
     "after5_last_chance_route_check": {},
     "after5_last_chance_seo_aff_check": {},
     "after5_last_chance_2_b": {
         "name": "{name}",
-        "text": "*I grip the phone in my pocket, then put it away without turning on the screen. My legs move first, and her name slips out.*"
+        "text": "*Without turning on the phone, I put it back in my pocket. I take two steps toward the other side of the fork and call her name.*"
     },
     "after5_last_chance_2_c": {
         "name": "{name}",
@@ -146,15 +146,15 @@
     },
     "after5_last_chance_2_d": {
         "name": "Seoyeon",
-        "text": "*She turns around. The sunset at her back.*"
+        "text": "*Seoyeon turns around. The event banner behind her folds once in the wind.*"
     },
     "after5_last_chance_2_e": {
         "name": "Seoyeon",
-        "text": "...You're late."
+        "text": "You're late."
     },
     "after5_last_chance_2_f": {
         "name": "{name}",
-        "text": "*The wind blows her hair across her face. This time, Seoyeon does not tuck it away.*"
+        "text": "*Seoyeon winds the end of her student council ribbon around one finger, then lets it go.*"
     },
     "after5_last_chance_2_g": {
         "name": "Seoyeon",
@@ -170,7 +170,7 @@
     },
     "after5_last_chance_2_j": {
         "name": "Seoyeon",
-        "text": "*Seoyeon's hand stops in front of {name}.*"
+        "text": "*Seoyeon waits with one palm open.*"
     },
     "after5_last_chance_seo_low_1": {
         "name": "{name}",
@@ -178,7 +178,7 @@
     },
     "after5_last_chance_seo_low_2": {
         "name": "Seoyeon",
-        "text": "*She turns around. Her feet are half-turned away, ready to leave at any moment.* ...What."
+        "text": "*She looks back, one foot still half pointed toward the exit.* Why?"
     },
     "after5_last_chance_dain_aff_check": {},
     "after5_last_chance_2_k": {
@@ -187,23 +187,23 @@
     },
     "after5_last_chance_2_l": {
         "name": "Dain",
-        "text": "*She hurries over, then stops in front of {name}.*"
+        "text": "*She takes one step past me, then pins the floor with the volleyball and stops.*"
     },
     "after5_last_chance_2_m": {
         "name": "Dain",
-        "text": "Hey, you..."
+        "text": "Hey, you—"
     },
     "after5_last_chance_2_n": {
         "name": "Dain",
-        "text": "*She freezes where she stands. The ball in her hand slowly lowers.*"
+        "text": "*The arm holding the ball drops from her side. The toe of her sneaker turns back toward {name}.*"
     },
     "after5_last_chance_2_o": {
         "name": "Dain",
-        "text": "...You came back?"
+        "text": "You came back?"
     },
     "after5_last_chance_2_p": {
         "name": "Dain",
-        "text": "*Her lips tremble. She has to swallow a breath before she can answer.*"
+        "text": "*She bites her lip once and takes a short breath.*"
     },
     "after5_last_chance_2_q": {
         "name": "Dain",
@@ -215,7 +215,7 @@
     },
     "after5_last_chance_2_s": {
         "name": "Dain",
-        "text": "...Say it. I'll listen to the end."
+        "text": "Say it. I'll listen to the end."
     },
     "after5_last_chance_dain_low_1": {
         "name": "{name}",
@@ -223,7 +223,7 @@
     },
     "after5_last_chance_dain_low_2": {
         "name": "Dain",
-        "text": "*She stops, but she can't bring herself to smile.* ...What."
+        "text": "*She comes back after taking one step too far. Holding the volleyball against her chest, she keeps her distance.* Why?"
     },
     "after5_last_chance_yuna_aff_check": {},
     "after5_last_chance_yuna_1": {
@@ -236,19 +236,19 @@
     },
     "after5_last_chance_yuna_3": {
         "name": "Yuna",
-        "text": "...You came back."
+        "text": "You came back."
     },
     "after5_last_chance_yuna_4": {
         "name": "{name}",
-        "text": "*My feet don't retreat. Yuna doesn't rush me.*"
+        "text": "*Two steps remain between us. Yuna waits with the book against her chest.*"
     },
     "after5_last_chance_yuna_5": {
         "name": "Yuna",
-        "text": "...I'll listen this time. Even if I can't say it's okay."
+        "text": "I'll listen before I go. Even if I can't say it's okay."
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
-        "text": "*Yuna doesn't look away. {name} takes one step forward.*"
+        "text": "*Yuna doesn't look away. The distance between us has narrowed by one step.*"
     },
     "after5_last_chance_yuna_7": {
         "name": "Yuna",
@@ -260,19 +260,19 @@
     },
     "after5_last_chance_yuna_low_2": {
         "name": "Yuna",
-        "text": "*She slowly turns around. Her arms tighten around the book she's holding.* ...What."
+        "text": "*She looks back between the shelves, her arms tightening around the book.* Why?"
     },
     "after5_last_chance_choice": {
         "name": "{name}",
         "text": "*My phone presses into my palm.*",
         "choices": [
             "Say it now",
-            "...I couldn't say anything"
+            "Don't say it yet"
         ]
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*I stop and call her name.*"
+        "text": "*I put the phone in my pocket and call her name.*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",
@@ -281,25 +281,25 @@
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "Seoyeon",
-        "text": "*We walk side by side.* ...You're late. But I'll listen."
+        "text": "*We start walking side by side toward the park.* You're late. But I'll listen."
     },
     "after5_confess_react_seo_low": {
         "name": "Seoyeon",
-        "text": "*She's silent for a long time.* ...I heard you. That's enough for now."
+        "text": "*She says nothing until the crosswalk signal changes once.* I heard you. That's enough for now."
     },
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*As we leave the school* Hey, you... I did wait. Say everything you came to say."
+        "text": "*As we leave school, she glances once at her shoelaces.* Hey, you. I did wait. Say everything you came to say."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",
-        "text": "*She takes a breath.* ...I heard you. But I can't smile right away yet."
+        "text": "*Her thumb traces a groove in the volleyball.* I heard you. But I can't smile right away yet."
     },
     "after5_confess_aff_yuna": {},
     "after5_confess_react_yuna": {
         "name": "Yuna",
-        "text": "*We walk side by side.* ...I already knew. But I'll listen."
+        "text": "*We walk side by side.* I already knew. But I'll listen."
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",
@@ -311,7 +311,7 @@
     },
     "after5_confess_react_yuna_c": {
         "name": "Yuna",
-        "text": "...I still wanted to hear you say it."
+        "text": "I still wanted to hear you say it."
     },
     "after5_confess_react_yuna_d": {
         "name": "Yuna",
@@ -327,7 +327,7 @@
     },
     "after5_confess_react_yuna_g": {
         "name": "Yuna",
-        "text": "...If you read it, that's enough."
+        "text": "If you read it, that's enough."
     },
     "after5_confess_react_yuna_h": {
         "name": "{name}",
@@ -339,7 +339,7 @@
     },
     "after5_confess_react_yuna_low": {
         "name": "Yuna",
-        "text": "*She folds the note in her hand.* ...I read it. But I still can't decide on the ending."
+        "text": "*She folds the note in her hand.* I read it. But I still can't decide on the ending."
     },
     "after5_confess_fail_walk_1": {
         "name": "{name}",
@@ -351,11 +351,11 @@
     },
     "after5_confess_no": {
         "name": "{name}",
-        "text": "*My throat closes. No words come out.*"
+        "text": "*I turn off the phone screen and press my lips together.*"
     },
     "after5_confess_no_2": {
         "name": "{name}",
-        "text": "*The evening breeze blows in. The shadow behind me lengthens.*"
+        "text": "*The evening breeze rolls an event flyer to my feet. I pick it up and tuck it beneath the bulletin board.*"
     },
     "after5_confess_no_2b": {
         "name": "{name}",
@@ -367,7 +367,7 @@
     },
     "after5_harem_commit": {
         "name": "{name}",
-        "text": "*I force out the words caught in my throat: I can't choose just one. All three faces go still.*"
+        "text": "*After switching among all three chats, I lower the phone. “I couldn't choose one person.” All three gazes move from the screen to {name}.*"
     },
     "after5_harem_walk_1": {
         "name": "{name}",

@@ -29,11 +29,11 @@
     },
     "night2_msg_yuna_specific": {
         "name": "Yuna",
-        "text": "...That song today. It was good."
+        "text": "I liked that song today."
     },
     "night2_msg_yuna_specific_2": {
         "name": "Yuna",
-        "text": "...Play it again for me sometime."
+        "text": "Play it for me again sometime."
     },
     "night2_msg_dain_general": {
         "name": "Dain",
@@ -49,7 +49,7 @@
     },
     "night2_msg_yuna_general": {
         "name": "Yuna",
-        "text": "...are you coming to the annex tomorrow?"
+        "text": "Are you coming to the annex tomorrow?"
     },
     "night2_msg_generic": {
         "name": "Dain",
@@ -61,7 +61,7 @@
     },
     "night2_msg_generic_3": {
         "name": "Yuna",
-        "text": "...Did you finish that book?"
+        "text": "Did you finish that book?"
     },
     "night2_msg_7": {
         "name": "{name}",
@@ -126,7 +126,7 @@
     },
     "night2_reply_seo_react_high": {
         "name": "Seoyeon",
-        "text": "...You're more interesting than I expected. Roof for lunch tomorrow?"
+        "text": "You're pretty interesting. Want to meet on the rooftop for lunch tomorrow?"
     },
     "night2_reply_seo_react_default": {
         "name": "Seoyeon",
@@ -138,7 +138,7 @@
     },
     "night2_reply_yuna_2": {
         "name": "Yuna",
-        "text": "...Glad."
+        "text": "Glad to hear it."
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
@@ -162,7 +162,7 @@
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
-        "text": "*Even after the song ends, I leave the player open for a while.*"
+        "text": "*The song ends, and the progress bar stops in its final segment.*"
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
@@ -170,11 +170,11 @@
     },
     "night2_reply_yuna_react_high": {
         "name": "Yuna",
-        "text": "...If you listened to the whole thing, tell me what you thought tomorrow. Want to come to the annex?"
+        "text": "If you listened to the whole thing, tell me what you thought tomorrow. Want to come to the annex?"
     },
     "night2_reply_yuna_react_default": {
         "name": "Yuna",
-        "text": "...Yeah. Good night."
+        "text": "Yeah. Good night."
     },
     "night2_dain_freetalk": {
         "name": "Dain",
@@ -190,7 +190,7 @@
     },
     "night2_yuna_freetalk": {
         "name": "Yuna",
-        "text": "Wait. If you're still awake... want to talk a little longer?",
+        "text": "Wait. If you're still awake, want to talk a little longer?",
         "context": "It is the night of Day 2, and Yuna is quietly continuing a messenger conversation. Today's memories of the annex and books, along with the messages already exchanged, have happened. They are not dating and are carefully building trust. This is a phone chat, so do not turn it into a scene where they see or touch each other in person.",
         "personality": "Yuna is thoughtful and observant. She chooses her words before sending them, and as she grows comfortable she volunteers more of her tastes and questions. She does not treat silence as rejection and respects the other person's pace."
     },
@@ -236,7 +236,7 @@
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*There is nothing beneath the thirty-eighth note. Only the title of the thirty-ninth is blank. The next day, Sojeong's seat stayed empty. Our homeroom teacher only said that she had transferred.*"
+        "text": "*The thirty-eighth memo is the last. Beneath it, the thirty-ninth has no title at all. The next day, Sojeong's seat stayed empty until the final bell. Our homeroom teacher only said she had transferred.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
@@ -256,7 +256,7 @@
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*The second day is over. Names that felt unfamiliar on the first day now sit on my lock screen. Even after the notifications go dark, I keep turning the screen back on.*"
+        "text": "*The three names stack up on my lock screen. I read every notification, turn off the display, then turn it on again.*"
     },
     "night2_end_2_b": {
         "name": "{name}",

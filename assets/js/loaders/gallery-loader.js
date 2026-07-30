@@ -104,17 +104,44 @@
 window.__cupidShowGalleryLoadError = function() {
     if (document.querySelector('[data-cupid-gallery-load-error]')) return;
     var pageLang = String(document.documentElement.lang || 'ko').toLowerCase().split('-')[0];
-    var copy = pageLang === 'ja'
-        ? {
-            title: 'ギャラリーを読み込めませんでした',
-            message: '通信環境を確認して、ページを再読み込みしてください。',
-            retry: '再読み込み'
-        }
-        : {
+    var copies = {
+        ko: {
+            title: '갤러리를 불러오지 못했습니다',
+            message: '인터넷 연결을 확인한 뒤 페이지를 다시 불러와 주세요.',
+            retry: '다시 불러오기'
+        },
+        en: {
             title: 'Gallery failed to load',
             message: 'Check your connection and reload the page.',
             retry: 'Reload'
-        };
+        },
+        es: {
+            title: 'No se pudo cargar la galería',
+            message: 'Revisa tu conexión a internet y vuelve a cargar la página.',
+            retry: 'Volver a cargar'
+        },
+        ja: {
+            title: 'ギャラリーを読み込めませんでした',
+            message: '通信環境を確認して、ページを再読み込みしてください。',
+            retry: '再読み込み'
+        },
+        fr: {
+            title: 'Impossible de charger la galerie',
+            message: 'Vérifiez votre connexion internet, puis rechargez la page.',
+            retry: 'Recharger'
+        },
+        de: {
+            title: 'Die Galerie konnte nicht geladen werden',
+            message: 'Überprüfe deine Internetverbindung und lade die Seite neu.',
+            retry: 'Neu laden'
+        },
+        pt: {
+            title: 'Não foi possível carregar a galeria',
+            message: 'Verifique sua conexão com a internet e recarregue a página.',
+            retry: 'Recarregar'
+        }
+    };
+    var copy = copies[pageLang] || copies.en;
     var overlay = document.createElement('div');
     overlay.id = 'cupid-gallery-load-error';
     overlay.setAttribute('data-cupid-gallery-load-error', 'true');
@@ -144,7 +171,7 @@ window.__cupidShowGalleryLoadError = function() {
 
 (function () {
     // 로더 설정 로드 (동기)
-    document.write('<script src="assets/js/loaders/config.js?v=2.9.106" onerror="window.__cupidShowGalleryLoadError && window.__cupidShowGalleryLoadError()"><\/script>');
+    document.write('<script src="assets/js/loaders/config.js?v=2.9.107" onerror="window.__cupidShowGalleryLoadError && window.__cupidShowGalleryLoadError()"><\/script>');
 })();
 
 // config.js 로드 후 실행
@@ -155,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // 갤러리 스크립트 로드 (document.write는 동기적)
 (function () {
     const basePath = 'assets/js/';
-    const version = '2.9.106';
+    const version = '2.9.107';
 
     const scripts = [
         // 0. 모듈 설정 (ASSET_VERSION 등)

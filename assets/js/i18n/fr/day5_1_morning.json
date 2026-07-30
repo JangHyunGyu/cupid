@@ -22,15 +22,15 @@
     },
     "morning5_mood_mid": {
         "name": "{name}",
-        "text": "Dernier jour. Je ne suis toujours sûr de rien. Pourtant, je dois y aller."
+        "text": "Dernier jour. Je n’ai pas encore décidé quelle direction prendre. Je franchis quand même le portail."
     },
     "morning5_mood_low": {
         "name": "{name}",
-        "text": "Dernier jour. Je touche tour à tour les trois noms affichés sur l'écran de verrouillage, sans parvenir à ouvrir la moindre conversation."
+        "text": "Dernier jour. Je touche tour à tour les trois noms restés sur l’écran de verrouillage, puis j’éteins l’écran sans ouvrir les conversations."
     },
     "morning5_gate": {
         "name": "{name}",
-        "text": "*Devant le portail, je tire une fois sur ma manche. Elle ne laisse plus de trace au poignet.*"
+        "text": "*Devant le portail, je remonte mes manches. Il ne reste plus aucune marque rouge sur mes poignets.*"
     },
     "morning5_seo_note_1": {
         "name": "{name}",
@@ -38,11 +38,11 @@
     },
     "morning5_seo_note_1_b": {
         "name": "{name}",
-        "text": "*Dans le couloir, je passe devant l'espace d'exposition du club littéraire. Mes pas s'arrêtent devant le panneau d'affichage.*"
+        "text": "*En passant devant l’espace d’exposition du club littéraire dans le couloir, je remarque quatre punaises qui ne retiennent plus rien sur le panneau.*"
     },
     "morning5_yuna_story_gone": {
         "name": "{name}",
-        "text": "*Sur le panneau, il ne reste que les trous des punaises, là où la nouvelle aurait dû être. — Elle l'a retirée. À moins qu'elle ne l'ait jamais affichée.*"
+        "text": "*Il ne reste sur le panneau que les trous des punaises. Impossible de savoir si la nouvelle a été affichée puis retirée, ou si l’emplacement est resté vide depuis le début.*"
     },
     "morning5_yuna_story_gone_2": {
         "name": "{name}",
@@ -103,7 +103,7 @@
     },
     "hidden_homeroom_d5_1_b": {
         "name": "Professeure principale",
-        "text": "...Oh."
+        "text": "Ah, te voilà."
     },
     "hidden_homeroom_d5_1_c": {
         "name": "{name}",
@@ -111,7 +111,7 @@
     },
     "hidden_homeroom_d5_1_d": {
         "name": "Professeure principale",
-        "text": "*Elle lève légèrement l'enveloppe.* ...Ça."
+        "text": "*Elle montre l’enveloppe brune.* Ça."
     },
     "hidden_homeroom_d5_1_e": {
         "name": "{name}",
@@ -123,7 +123,7 @@
     },
     "hidden_homeroom_d5_3": {
         "name": "Professeure principale",
-        "text": "Je l'ai laissé dormir pendant sept ans. Cette fois, je vais aussi le faire lire au club littéraire et aux autres professeurs de lettres."
+        "text": "Je l’ai laissé de côté pendant sept ans. Cette fois, je vais aussi le faire lire au club littéraire et aux professeurs de coréen."
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",
@@ -143,7 +143,7 @@
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "Professeure principale",
-        "text": "*La professeure principale marque un temps d'arrêt. Son expression redevient vite impassible, mais l'enveloppe se froisse légèrement dans sa main.*"
+        "text": "*Le coin de l’enveloppe se froisse légèrement dans sa main. Du pouce, la professeure principale en lisse le pli.*"
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Professeure principale",
@@ -191,7 +191,7 @@
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "Professeure principale",
-        "text": "*La professeure principale s'interrompt. Le bord de la feuille se courbe légèrement dans sa main.*"
+        "text": "*Le bord de la feuille se courbe légèrement dans sa main. Les lèvres serrées, la professeure principale en redresse soigneusement le coin plié.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Professeure principale",
@@ -207,7 +207,7 @@
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*Quand j'ouvre l'enveloppe, une odeur de papier monte. La fin de la dernière page est vide. Sous une phrase barrée en rouge, des traces de recommencements interrompus se superposent.*"
+        "text": "*Quand j’ouvre l’enveloppe, une odeur de papier s’en dégage. La fin de la dernière page est vide. Sous une phrase barrée au stylo rouge, les traces de plusieurs reprises interrompues se superposent.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Professeure principale",
@@ -219,7 +219,7 @@
     },
     "hidden_homeroom_d5_correct_8": {
         "name": "Professeure principale",
-        "text": "*La prof avale la suite. La classe devient aussi silencieuse que cette dernière ligne vide.*"
+        "text": "*Elle pose le bout du doigt sur la dernière ligne. Lorsque l’annonce de l’événement prend fin dehors, il ne reste plus que le bruit des pages que l’on tourne.*"
     },
     "hidden_homeroom_d5_correct_9": {
         "name": "{name}",
@@ -235,7 +235,7 @@
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Professeure principale",
-        "text": "*La professeure sourit. Le porte-bloc se pose sur le bureau.*"
+        "text": "*Elle pose son porte-bloc sur le bureau et remet le capuchon de son stylo rouge.*"
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Professeure principale",
@@ -243,7 +243,7 @@
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "*Je serre de nouveau le manuscrit contre moi. La professeure frotte du pouce la trace laissée par l'étiquette de retour. Le bord du papier se froisse légèrement dans sa paume.*"
+        "text": "*Je reprends l’exemplaire destiné à la critique. La professeure principale frotte une fois du pouce la trace laissée par l’étiquette de retour sur l’enveloppe.*"
     },
     "hidden_homeroom_d5_6": {
         "name": "Professeure principale",
@@ -255,7 +255,7 @@
     },
     "hidden_homeroom_d5_6_c": {
         "name": "{name}",
-        "text": "*L'enveloppe se plie légèrement dans mes mains. La main de la prof reste encore au bord du bureau.*"
+        "text": "*La main posée sur le bord du bureau, la professeure principale regarde l’enveloppe disparaître dans mon sac.*"
     },
     "hidden_homeroom_d5_6_d": {
         "name": "Professeure principale",
@@ -287,7 +287,7 @@
     },
     "hidden_homeroom_d5_6_k": {
         "name": "{name}",
-        "text": "*Avant de répondre, je touche d'abord le coin de l'enveloppe.*"
+        "text": "*Pendant qu’elle attend ma réponse, le numéro collé au coin de l’enveloppe entre dans mon champ de vision.*"
     },
     "hidden_homeroom_d5_6_l": {
         "name": "{name}",
@@ -295,7 +295,7 @@
     },
     "hidden_homeroom_d5_6_m": {
         "name": "Professeure principale",
-        "text": "*Repoussant ses cheveux* ...Je n'accepte pas les comptes rendus."
+        "text": "*Elle remet derrière son oreille une mèche qui lui est tombée devant le visage.* Je ne veux pas de compte rendu de lecture."
     },
     "hidden_homeroom_d5_6_n": {
         "name": "{name}",
@@ -303,11 +303,11 @@
     },
     "hidden_homeroom_d5_6_o": {
         "name": "Professeure principale",
-        "text": "*Elle rit doucement.* ...C'est vrai. Écris-moi au moins une ligne."
+        "text": "*Le coin de ses lèvres se soulève.* C’est vrai. Écris-moi au moins une ligne."
     },
     "hidden_homeroom_d5_6_p": {
         "name": "Professeure principale",
-        "text": "*Elle s'arrête devant la porte et vérifie une fois le planning du club littéraire.*"
+        "text": "*Elle tourne le regard vers le planning du club littéraire affiché près de la porte.*"
     },
     "hidden_homeroom_d5_6_q": {
         "name": "Professeure principale",
@@ -411,11 +411,11 @@
     },
     "hidden_nurse_d5_3_h": {
         "name": "Infirmière",
-        "text": "*L'infirmière se retourne pour rentrer — et s'arrête.*"
+        "text": "*Avant de franchir le seuil de l’infirmerie, elle rouvre la liste des rendez-vous.*"
     },
     "hidden_nurse_d5_3_i": {
         "name": "Infirmière",
-        "text": "...{name}."
+        "text": "{name}, attends un instant."
     },
     "hidden_nurse_d5_4": {
         "name": "Infirmière",

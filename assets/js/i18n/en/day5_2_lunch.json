@@ -13,7 +13,7 @@
     },
     "tour_seo_4": {
         "name": "Seoyeon",
-        "text": "I didn't actually scold you, did I? — I've been watching you since then."
+        "text": "I didn't scold you, did I? I've been watching you since then."
     },
     "tour_seo_5": {
         "name": "{name}",
@@ -21,7 +21,7 @@
     },
     "tour_seo_6": {
         "name": "Seoyeon",
-        "text": "...It might've been a trick of the wind."
+        "text": "You might have misheard because of the wind."
     },
     "tour_seo_7": {
         "name": "{name}",
@@ -37,7 +37,7 @@
     },
     "tour_seo_10": {
         "name": "{name}",
-        "text": "The rooftop key... No, it isn't."
+        "text": "The rooftop key—no, it isn't."
     },
     "tour_seo_11": {
         "name": "Seoyeon",
@@ -69,11 +69,11 @@
     },
     "tour_yuna_1": {
         "name": "{name}",
-        "text": "*The library annex. An old sofa, afternoon sunlight through the window, and the same dusty smell as when I first walked in.*"
+        "text": "*In the library annex, afternoon light through the window falls across one side of the old sofa. It smells as dusty as it did the first time I came in.*"
     },
     "tour_yuna_1b": {
         "name": "{name}",
-        "text": "*The library annex. Our secret reading spot. An old sofa, with afternoon sunlight streaming through the window.*"
+        "text": "*In the library annex, afternoon light through the window falls across the old sofa where Yuna and I used to read.*"
     },
     "tour_yuna_2": {
         "name": "Yuna",
@@ -85,7 +85,7 @@
     },
     "tour_yuna_4": {
         "name": "Yuna",
-        "text": "...In a good way?"
+        "text": "In a good way?"
     },
     "tour_yuna_5": {
         "name": "{name}",
@@ -97,7 +97,7 @@
     },
     "tour_yuna_7": {
         "name": "Yuna",
-        "text": "...I wrote the ending."
+        "text": "I wrote the ending."
     },
     "tour_yuna_8": {
         "name": "{name}",
@@ -109,7 +109,7 @@
     },
     "tour_yuna_10": {
         "name": "{name}",
-        "text": "*She holds out the notebook, her hand trembling slightly. Yuna can't quite let go of the corner of the cover.*"
+        "text": "*Yuna holds out the notebook. Its cover catches on the sofa fabric once, and she waits for my answer with one hand still gripping the corner.*"
     },
     "tour_yuna_11": {
         "name": "{name}",
@@ -121,7 +121,7 @@
     },
     "tour_yuna_end": {
         "name": "Yuna",
-        "text": "...Only reader. For now."
+        "text": "My only reader. For now."
     },
     "tour_yuna_end_2": {
         "name": "{name}",
@@ -141,7 +141,7 @@
     },
     "tour_dain_2": {
         "name": "Dain",
-        "text": "*She stands in the middle of the court, holding a volleyball.*"
+        "text": "*Dain stands in the middle of the court with a volleyball tucked against her side.*"
     },
     "tour_dain_3": {
         "name": "Dain",
@@ -161,19 +161,19 @@
     },
     "tour_dain_7": {
         "name": "Dain",
-        "text": "...Why did I lose again?"
+        "text": "Why did I lose again?"
     },
     "tour_dain_8": {
         "name": "{name}",
-        "text": "*Even while she fumes, she's smiling. Dain sets the volleyball on the court, one beat late.*"
+        "text": "*Dain's brow furrows, but she can't suppress the corners of her mouth. One beat late, she sets the volleyball on the court.*"
     },
     "tour_dain_10": {
         "name": "Dain",
-        "text": "Going pro... I don't know about that anymore."
+        "text": "I don't know about going pro yet."
     },
     "tour_dain_11": {
         "name": "{name}",
-        "text": "......"
+        "text": "*The ball rolls along the court line. Dain doesn't touch it until she speaks again.*"
     },
     "tour_dain_11_b": {
         "name": "Dain",
@@ -181,7 +181,7 @@
     },
     "tour_dain_12": {
         "name": "Dain",
-        "text": "I don't know what changed. ...But I have things I want to say off the court now, too."
+        "text": "I don't know what changed. But now I have things I want to say off the court too."
     },
     "tour_dain_13": {
         "name": "{name}",
@@ -189,11 +189,11 @@
     },
     "tour_dain_end": {
         "name": "Dain",
-        "text": "...I'm not alone."
+        "text": "I'm not alone, am I?"
     },
     "tour_dain_freetalk": {
         "name": "Dain",
-        "text": "*She stops the volleyball with her toe and grins.* Even if it's the last lunch, I can't just let it pass."
+        "text": "*She pins the rolling volleyball beneath her sneaker.* I can't let our last lunch pass without doing something."
     },
     "tour_dain_end_2": {
         "name": "{name}",

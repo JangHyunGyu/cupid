@@ -29,11 +29,11 @@
     },
     "night2_msg_yuna_specific": {
         "name": "Yuna",
-        "text": "...Das Lied heute. War schön"
+        "text": "Das Lied heute hat mir gefallen."
     },
     "night2_msg_yuna_specific_2": {
         "name": "Yuna",
-        "text": "...Lass es mich nächstes Mal noch einmal hören"
+        "text": "Spiel es mir irgendwann noch einmal vor."
     },
     "night2_msg_dain_general": {
         "name": "Dain",
@@ -49,7 +49,7 @@
     },
     "night2_msg_yuna_general": {
         "name": "Yuna",
-        "text": "...Kommst du morgen in den Bibliotheksanbau?"
+        "text": "Kommst du morgen in den Bibliotheksanbau?"
     },
     "night2_msg_generic": {
         "name": "Dain",
@@ -61,7 +61,7 @@
     },
     "night2_msg_generic_3": {
         "name": "Yuna",
-        "text": "...Hast du das Buch schon zu Ende gelesen?"
+        "text": "Hast du das Buch schon zu Ende gelesen?"
     },
     "night2_msg_7": {
         "name": "{name}",
@@ -126,7 +126,7 @@
     },
     "night2_reply_seo_react_high": {
         "name": "Seoyeon",
-        "text": "...Du bist interessanter als erwartet. Willst du morgen auf dem Dach zu Mittag essen?"
+        "text": "Du bist ziemlich interessant. Willst du morgen Mittag aufs Dach kommen?"
     },
     "night2_reply_seo_react_default": {
         "name": "Seoyeon",
@@ -138,7 +138,7 @@
     },
     "night2_reply_yuna_2": {
         "name": "Yuna",
-        "text": "...Schön zu hören"
+        "text": "Das freut mich."
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
@@ -162,7 +162,7 @@
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
-        "text": "*Auch nachdem der Song endet, kann ich den Wiedergabebildschirm eine Weile nicht schließen.*"
+        "text": "*Das Lied endet, und der Fortschrittsbalken bleibt im letzten Abschnitt stehen.*"
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
@@ -170,27 +170,27 @@
     },
     "night2_reply_yuna_react_high": {
         "name": "Yuna",
-        "text": "...Wenn du alles gehört hast, sag mir morgen, wie du es fandest. Kommst du in den Bibliotheksanbau?"
+        "text": "Wenn du alles gehört hast, sag mir morgen, wie du es fandest. Kommst du in den Bibliotheksanbau?"
     },
     "night2_reply_yuna_react_default": {
         "name": "Yuna",
-        "text": "...Ja. Gute Nacht."
+        "text": "Ja. Gute Nacht."
     },
     "night2_dain_freetalk": {
         "name": "Dain",
-        "text": "*Die drei Tipp-Punkte erscheinen sofort.* Noch wach? Dann reden wir noch ein bisschen.",
+        "text": "Warte, bevor du wirklich schlafen gehst: Was hat dir heute am meisten Spaß gemacht?",
         "context": "Es ist die Nacht von Tag 2. Dain und der Protagonist schreiben einander, direkt nachdem er auf ihre Unterhaltung über die heutige Wette und eine neue Runde morgen geantwortet hat. Sie sind an verschiedenen Orten; Handlungen erscheinen nur als Text, Emoji, gesendetes Foto oder Audio. Unterstelle keine Nachricht, die der Protagonist noch nicht geschrieben hat.",
         "personality": "Dain schreibt energiegeladen, offen und mit spielerischem Ehrgeiz. Sie bemerkt Stimmungswechsel schnell, fragt aber nach, bevor sie Schlüsse zieht, und erzwingt im Chat keine Nähe."
     },
     "night2_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Die Tipp-Anzeige erscheint, verschwindet und kommt wieder.* Wenn du noch nicht schlafen gehst, kann ich dir kurz zuhören.",
+        "text": "Ach, warte. Du schläfst noch nicht, oder?",
         "context": "Es ist die Nacht von Tag 2. Seoyeon und der Protagonist schreiben nach ihrem Gespräch über das Mittagessen und das morgige Treffen auf dem Dach. Sie sind an verschiedenen Orten; Handlungen werden nur als Text, Emoji, gesendetes Foto oder Audio dargestellt. Erfinde weder körperlichen Kontakt noch eine ungesendete Nachricht des Protagonisten.",
         "personality": "Seoyeon schreibt knapp und direkt und verbirgt ihre Aufmerksamkeit manchmal hinter praktischen Hinweisen. Sie wird nicht plötzlich süßlich; Pausen und bewusst gewählte Worte zeigen ihr Interesse."
     },
     "night2_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Nach einer kurzen Pause kommt noch eine Nachricht.* Falls du noch etwas sagen willst ... ich lese noch mit.",
+        "text": "Warte. Wenn du noch wach bist ... willst du noch ein bisschen reden?",
         "context": "Es ist die Nacht von Tag 2. Yuna und der Protagonist schreiben nach ihrem Austausch über die Bibliothek und das Buch. Sie sind an verschiedenen Orten; Handlungen erscheinen nur als Text, Emoji, gesendetes Foto oder Audio. Deute Schweigen nicht als Ablehnung und erfinde keine Nachricht des Protagonisten.",
         "personality": "Yuna schreibt sorgfältig und manchmal in literarischen Bildern, antwortet aber auf das tatsächlich Gesagte. Ihr Interesse zeigt sich in kleinen, ehrlichen Fragen, ohne Überinterpretation oder übereilte Nähe."
     },
@@ -236,7 +236,7 @@
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*Unter der 38. Notiz steht nichts mehr. Nur der Titel der 39. ist leer. Am nächsten Tag bleibt Sojeongs Platz bis zum Schluss leer. Die Klassenlehrerin sagt lediglich, Sojeong habe die Schule gewechselt.*"
+        "text": "*Die 38. Notiz ist die letzte. Darunter hat die 39. nicht einmal einen Titel. Am nächsten Tag bleibt Sojeongs Platz bis zum Schulschluss leer. Die Klassenlehrerin sagt nur, sie habe die Schule gewechselt.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
@@ -256,7 +256,7 @@
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*Der zweite Tag ist vorbei. Namen, die am ersten Tag noch fremd waren, stehen jetzt auf meinem Sperrbildschirm. Auch nachdem die Benachrichtigungen verschwinden, schalte ich den Bildschirm immer wieder ein.*"
+        "text": "*Die drei Namen stapeln sich auf meinem Sperrbildschirm. Ich lese jede Benachrichtigung, schalte das Display aus und gleich wieder ein.*"
     },
     "night2_end_2_b": {
         "name": "{name}",

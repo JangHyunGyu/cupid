@@ -5,15 +5,15 @@
     },
     "tour_seo_2": {
         "name": "Seoyeon",
-        "text": "Aquí nos conocimos."
+        "text": "Aquí nos conocimos por primera vez."
     },
     "tour_seo_3": {
         "name": "{name}",
-        "text": "Aquella vez dije 'es demasiado' — y casi me regaña."
+        "text": "Cuando dije que era demasiado para mí, casi me regañas."
     },
     "tour_seo_4": {
         "name": "Seoyeon",
-        "text": "Pero no te regañé, ¿no? — Desde entonces ya me gustabas."
+        "text": "Pero no te regañé. Llevo observándote desde entonces."
     },
     "tour_seo_5": {
         "name": "{name}",
@@ -21,7 +21,7 @@
     },
     "tour_seo_6": {
         "name": "Seoyeon",
-        "text": "...Tal vez fue el viento y lo oíste mal."
+        "text": "Tal vez lo oíste mal por el viento."
     },
     "tour_seo_7": {
         "name": "{name}",
@@ -33,7 +33,7 @@
     },
     "tour_seo_9": {
         "name": "Seoyeon",
-        "text": "Toma."
+        "text": "Esto es para ti."
     },
     "tour_seo_10": {
         "name": "{name}",
@@ -53,11 +53,11 @@
     },
     "tour_seo_14": {
         "name": "Seoyeon",
-        "text": "Dímelo. Podemos pedir la llave como corresponde y abrirla juntos."
+        "text": "Dímelo. Podemos pedirla prestada oficialmente y abrir la azotea juntos."
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Apoya una mano en la baranda de la azotea y mira la escuela desde arriba.* No pensé que también pasaríamos aquí el último almuerzo."
+        "text": "*Apoya una mano en la baranda de la azotea y contempla la escuela.* No pensé que pasaríamos aquí hasta la última hora del almuerzo."
     },
     "tour_seo_end": {
         "name": "{name}",
@@ -69,23 +69,23 @@
     },
     "tour_yuna_1": {
         "name": "{name}",
-        "text": "*El anexo de la biblioteca. Un sofá viejo, luz de tarde por la ventana. El mismo olor a polvo de cuando entré por primera vez.*"
+        "text": "*El anexo de la biblioteca. La luz de la tarde se cuela por una rendija de la ventana y cae sobre un extremo del viejo sofá. Huele al mismo polvo que la primera vez que entré.*"
     },
     "tour_yuna_1b": {
         "name": "{name}",
-        "text": "*El anexo de la biblioteca. El rincón de lectura secreto con Yuna. Un sofá viejo y la luz de la tarde entrando por la ventana.*"
+        "text": "*El anexo de la biblioteca. La luz de la tarde se cuela por una rendija de la ventana y cae sobre el viejo sofá donde leía con Yuna.*"
     },
     "tour_yuna_2": {
         "name": "Yuna",
-        "text": "*Se sienta en el sofá. Deja vacío el asiento junto a ella. Un lugar donde no se ha acumulado polvo.*"
+        "text": "*Se sienta en el sofá y deja libre el lugar a su lado. Es un asiento sin polvo acumulado.*"
     },
     "tour_yuna_3": {
         "name": "{name}",
-        "text": "Cuando vengo aquí, los sonidos exteriores parecen un poco distantes."
+        "text": "Cuando vengo aquí, el ruido de afuera se escucha más bajo."
     },
     "tour_yuna_4": {
         "name": "Yuna",
-        "text": "...¿En el buen sentido?"
+        "text": "¿En el buen sentido?"
     },
     "tour_yuna_5": {
         "name": "{name}",
@@ -93,15 +93,15 @@
     },
     "tour_yuna_6": {
         "name": "Yuna",
-        "text": "*Saca un cuaderno de su bolso. El mismo que cubrió apresuradamente en el ático.*"
+        "text": "*Saca de la mochila el mismo cuaderno que cerró de prisa en el ático.*"
     },
     "tour_yuna_7": {
         "name": "Yuna",
-        "text": "...Escribí el final."
+        "text": "Escribí el final."
     },
     "tour_yuna_8": {
         "name": "{name}",
-        "text": "Lo dijiste aquella vez. 'Escribir el final es terminarlo.'"
+        "text": "Lo dijiste aquella vez: «Cuando escribes el final, se acaba»."
     },
     "tour_yuna_9": {
         "name": "Yuna",
@@ -109,7 +109,7 @@
     },
     "tour_yuna_10": {
         "name": "{name}",
-        "text": "*Me ofrece el cuaderno. Le tiembla un poco la mano. Yuna no consigue soltar del todo la esquina de la cubierta.*"
+        "text": "*Yuna me extiende el cuaderno. La portada se engancha una vez en la tela del sofá y ella espera mis siguientes palabras sin soltar la esquina.*"
     },
     "tour_yuna_11": {
         "name": "{name}",
@@ -121,7 +121,7 @@
     },
     "tour_yuna_end": {
         "name": "Yuna",
-        "text": "...El único. Por ahora."
+        "text": "El único lector. Por ahora."
     },
     "tour_yuna_end_2": {
         "name": "{name}",
@@ -141,19 +141,19 @@
     },
     "tour_dain_2": {
         "name": "Dain",
-        "text": "*Está parada en el centro de la cancha. Con un balón de voleibol en las manos.*"
+        "text": "*Dain está de pie en medio de la cancha con un balón de voleibol bajo el brazo.*"
     },
     "tour_dain_3": {
         "name": "Dain",
-        "text": "¡Oye! ¿Una última de piedra, papel o tijera?"
+        "text": "Oye, ¿jugamos una última ronda de piedra, papel o tijera?"
     },
     "tour_dain_4": {
         "name": "{name}",
-        "text": "Si vas a volver a perder..."
+        "text": "Si igual vas a volver a perder."
     },
     "tour_dain_5": {
         "name": "Dain",
-        "text": "¡¡Esta vez te gano!!"
+        "text": "Esta vez voy a ganar."
     },
     "tour_dain_6": {
         "name": "{name}",
@@ -161,19 +161,19 @@
     },
     "tour_dain_7": {
         "name": "Dain",
-        "text": "...¡¡Aaaah!! ¡¡¿Por qué?!! ¡¡Otra vez perdí!!"
+        "text": "¿Por qué volví a perder?"
     },
     "tour_dain_8": {
         "name": "{name}",
-        "text": "*Incluso mientras protesta, Dain sonríe. Deja la pelota de voleibol en la cancha, un instante tarde.*"
+        "text": "*Dain frunce el ceño, pero no puede contener la sonrisa. Un instante después, deja el balón de voleibol sobre la cancha.*"
     },
     "tour_dain_10": {
         "name": "Dain",
-        "text": "Lo de ser profesional... ya no lo tengo tan claro."
+        "text": "Aunque todavía no sé si llegaré a ser profesional."
     },
     "tour_dain_11": {
         "name": "{name}",
-        "text": "......"
+        "text": "*El balón rueda siguiendo la línea de la cancha. No lo tocamos hasta que Dain vuelve a hablar.*"
     },
     "tour_dain_11_b": {
         "name": "Dain",
@@ -181,7 +181,7 @@
     },
     "tour_dain_12": {
         "name": "Dain",
-        "text": "No sé qué cambió. ...Pero ahora me veo hasta fuera de la cancha."
+        "text": "No sé qué cambió. Pero también tengo cosas que decir fuera de la cancha."
     },
     "tour_dain_13": {
         "name": "{name}",
@@ -189,14 +189,14 @@
     },
     "tour_dain_end": {
         "name": "Dain",
-        "text": "...Que ahora tengo a alguien al lado."
+        "text": "Ya no estoy sola."
     },
     "tour_dain_freetalk": {
         "name": "Dain",
-        "text": "*Detiene la pelota de voleibol con la punta del pie y sonríe.* Aunque sea el último almuerzo, no puedo dejarlo pasar sin más."
+        "text": "*Detiene el balón de voleibol bajo la suela de su tenis.* Aunque sea la última hora del almuerzo, no puedo dejar que pase sin más."
     },
     "tour_dain_end_2": {
         "name": "{name}",
-        "text": "*La mano de Dain descansa sobre el balón, no sobre su rodilla.*"
+        "text": "*Dain hace rodar bajo la palma la superficie del balón, en lugar de tocarse la rodilla.*"
     }
 }
