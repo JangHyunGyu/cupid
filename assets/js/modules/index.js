@@ -133,6 +133,7 @@ function setupLandscapeFullscreen() {
 }
 
 window.initGame = async () => {
+    if (window._i18nReady) await window._i18nReady;
     setupLandscapeFullscreen();
     gameEngine = new GameEngine();  // 게임 엔진 인스턴스 생성
     window.gameEngine = gameEngine; // 개발자 도구에서 접근 가능
@@ -147,6 +148,7 @@ window.initGame = async () => {
  * <button onclick="initGameFromSave()">이어하기</button>
  */
 window.initGameFromSave = async (saveData) => {
+    if (window._i18nReady) await window._i18nReady;
     setupLandscapeFullscreen();
     gameEngine = new GameEngine();  // 게임 엔진 인스턴스 생성
     window.gameEngine = gameEngine; // 개발자 도구에서 접근 가능
@@ -212,6 +214,9 @@ if (!window.preventAutoStart) {
             if (window.sendGAGameStart) window.sendGAGameStart('auto');
         } catch (e) {
             console.error('[Cupid Engine] 초기화 오류:', e);
+            if (typeof window.__cupidShowGameLoadError === 'function') {
+                window.__cupidShowGameLoadError(e);
+            }
             if (typeof window.reportCupidCaughtError === 'function') {
                 window.reportCupidCaughtError(e, {
                     source: 'cupid-index',

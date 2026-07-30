@@ -365,6 +365,50 @@
         return true;
     }
 
+    function showGameLoadError() {
+        if (document.querySelector('[data-cupid-load-error]')) return;
+        var pageLang = String(window.GAME_LANG || document.documentElement.lang || 'ko')
+            .toLowerCase()
+            .split('-')[0];
+        var copy = pageLang === 'ja'
+            ? {
+                title: 'ゲームを読み込めませんでした',
+                message: '通信環境を確認して、もう一度お試しください。',
+                retry: '再読み込み'
+            }
+            : {
+                title: 'Game failed to load',
+                message: 'Check your connection and try again.',
+                retry: 'Reload'
+            };
+        var overlay = document.createElement('div');
+        overlay.id = 'cupid-load-error';
+        overlay.setAttribute('data-cupid-load-error', 'true');
+        overlay.setAttribute('role', 'alert');
+        overlay.style.cssText = 'position:fixed;inset:0;z-index:100000;background:#09070d;color:#fff;display:flex;align-items:center;justify-content:center;padding:24px;font-family:sans-serif;text-align:center;';
+
+        var panel = document.createElement('div');
+        var title = document.createElement('h1');
+        title.textContent = copy.title;
+        title.style.cssText = 'font-size:1.35rem;margin:0 0 12px;';
+        var message = document.createElement('p');
+        message.textContent = copy.message;
+        message.style.cssText = 'margin:0 0 20px;color:#ddd;line-height:1.6;';
+        var retry = document.createElement('button');
+        retry.type = 'button';
+        retry.textContent = copy.retry;
+        retry.style.cssText = 'border:1px solid #ff8fab;border-radius:999px;background:#2a1824;color:#fff;padding:10px 20px;font:inherit;cursor:pointer;';
+        function reloadGamePage() { window.location.reload(); }
+        retry.addEventListener('click', reloadGamePage);
+
+        panel.appendChild(title);
+        panel.appendChild(message);
+        panel.appendChild(retry);
+        overlay.appendChild(panel);
+        document.body.appendChild(overlay);
+    }
+    window.__cupidShowGameLoadError = showGameLoadError;
+
     loadAllScripts().then(clearLoadRecoveryMarker).catch(function(error) {
         if (scheduleOneTimeLoadRecovery()) return;
         window.gameScriptsLoadError = error;
@@ -377,6 +421,7 @@
             window.__cupidLogRuntimeError('ScriptLoadError', error && error.message, error && error.stack, 'game-loader');
         }
         console.error(error);
+        showGameLoadError();
         window.dispatchEvent(createEvent('gameScriptsLoadError', { error: error }));
     });
 

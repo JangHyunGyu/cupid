@@ -791,10 +791,10 @@ class GameEngine {
 
         if (hasMixed && lang === 'ko') {
             // 한영 혼합 입력
-            msg = { es: "Por favor, usa solo coreano o solo inglés. No se permite mezclar.", ja: "韓国語のみ、または英語のみで入力してください。混合は不可です。", en: "Please use only Korean or only English. Mixing is not allowed.", fr: "Veuillez utiliser uniquement le coréen ou uniquement l'anglais. Le mélange n'est pas autorisé.", de: "Bitte verwende nur Koreanisch oder nur Englisch. Mischen ist nicht erlaubt.", pt: "Use apenas coreano ou apenas inglês. Não é permitido misturar." }[lang] || "한글과 영문을 섞어서 사용할 수 없습니다.";
+            msg = { es: "Por favor, usa solo coreano o solo inglés. No se permite mezclar.", ja: "名前は日本語（ひらがな・カタカナ・漢字）1〜8文字、または英字1〜12文字で入力してください。", en: "Please use only Korean or only English. Mixing is not allowed.", fr: "Veuillez utiliser uniquement le coréen ou uniquement l'anglais. Le mélange n'est pas autorisé.", de: "Bitte verwende nur Koreanisch oder nur Englisch. Mischen ist nicht erlaubt.", pt: "Use apenas coreano ou apenas inglês. Não é permitido misturar." }[lang] || "한글과 영문을 섞어서 사용할 수 없습니다.";
         } else if (hasJamo) {
             // 한글 자모만 입력 (ㄱ, ㅏ 등)
-            msg = { es: "Por favor, ingresa caracteres coreanos completos (ej: 가, no ㄱ).", ja: "完成した韓国語を入力してください。（例：ㄱ → 가）", en: "Please enter complete Korean characters (e.g., 가, not ㄱ).", fr: "Veuillez entrer des caractères coréens complets (ex : 가, pas ㄱ).", de: "Bitte gib vollständige koreanische Zeichen ein (z.B. 가, nicht ㄱ).", pt: "Insira caracteres coreanos completos (ex.: 가, não ㄱ)." }[lang] || "완성된 한글을 입력해주세요. (예: ㄱ → 가)";
+            msg = { es: "Por favor, ingresa caracteres coreanos completos (ej: 가, no ㄱ).", ja: "名前は日本語（ひらがな・カタカナ・漢字）1〜8文字、または英字1〜12文字で入力してください。", en: "Please enter complete Korean characters (e.g., 가, not ㄱ).", fr: "Veuillez entrer des caractères coréens complets (ex : 가, pas ㄱ).", de: "Bitte gib vollständige koreanische Zeichen ein (z.B. 가, nicht ㄱ).", pt: "Insira caracteres coreanos completos (ex.: 가, não ㄱ)." }[lang] || "완성된 한글을 입력해주세요. (예: ㄱ → 가)";
         } else if (lang === 'ko') {
             // KO 페이지: 한글 1-6자 또는 영문 1-12자
             const nameRegex = hasKorean ? /^[가-힣]{1,6}$/ : /^[a-zA-Z]{1,12}$/;
@@ -803,10 +803,10 @@ class GameEngine {
             }
         } else if (lang === 'ja') {
             // JA 페이지: 히라가나/카타카나/한자 1-8자 또는 영문 1-12자
-            const jaRegex = /^[\u3040-\u309F\u30A0-\u30FFー\u4E00-\u9FFF]{1,8}$/;
+            const jaRegex = /^[\u3040-\u309F\u30A0-\u30FFー\u3005\u4E00-\u9FFF]{1,8}$/;
             const enRegex = /^[a-zA-Z]{1,12}$/;
             if (!jaRegex.test(name) && !enRegex.test(name)) {
-                msg = "名前は日本語(ひらがな/カタカナ/漢字)1〜8文字、または英字1〜12文字で入力してください。";
+                msg = "名前は日本語（ひらがな・カタカナ・漢字）1〜8文字、または英字1〜12文字で入力してください。";
             }
         } else {
             // en/es/fr/de/pt 페이지: Latin + 악센트 1-12자
@@ -911,6 +911,33 @@ class GameEngine {
                 }
             }
             return;
+        }
+
+        // 분기 전용 씬은 배경·캐릭터·번역문을 그리지 않고 최종 장면까지 먼저 해석한다.
+        // 엔딩 보너스처럼 결과별 장소가 다른 경우, 공통 중간 장면이 잠깐 노출되는 것을 막는다.
+        const preRenderVisited = new Set();
+        while (scene?.routeBeforeRender === true) {
+            if (preRenderVisited.has(sceneId)) {
+                console.error(`[GameEngine] 사전 분기 순환 감지: ${sceneId}`);
+                this._isRendering = false;
+                return;
+            }
+            preRenderVisited.add(sceneId);
+
+            const nextId = this.sceneRenderer.resolveNextScene(scene);
+            if (!nextId || nextId === sceneId) {
+                console.error(`[GameEngine] 사전 분기 대상이 올바르지 않음: ${sceneId}`);
+                this._isRendering = false;
+                return;
+            }
+
+            sceneId = nextId;
+            scene = this.sceneRenderer.getScene(sceneId);
+            if (!scene) {
+                console.error(`[GameEngine] 사전 분기 대상 씬을 찾을 수 없음: ${sceneId}`);
+                this._isRendering = false;
+                return;
+            }
         }
 
         // 현재 씬 ID 저장 (다른 곳에서 참조용)
@@ -1251,7 +1278,7 @@ class GameEngine {
                         <div class="credits-section">
                             <div class="credits-role">${ct({ es: 'Personajes', ja: '登場人物', en: 'Characters', fr: 'Personnages', de: 'Charaktere', pt: 'Personagens', ko: '등장인물' })}</div>
                             <div class="credits-name">${ct({ es: 'Seoyeon · Yuna · Dain', ja: 'ソヨン · ユナ · ダイン', en: 'Seoyeon · Yuna · Dain', fr: 'Seoyeon · Yuna · Dain', de: 'Seoyeon · Yuna · Dain', pt: 'Seoyeon · Yuna · Dain', ko: '서연 · 유나 · 다인' })}</div>
-                            <div class="credits-name">${ct({ es: 'Enfermera · Profesora', ja: '保健先生 · 担任先生', en: 'School Nurse · Homeroom Teacher', fr: 'Infirmière Scolaire · Professeur Principal', de: 'Schulkrankenschwester · Lehrerin', pt: 'Enfermeira · Professora', ko: '보건선생님 · 담임선생님' })}</div>
+                            <div class="credits-name">${ct({ es: 'Enfermera · Profesora', ja: '保健室の先生・担任の先生', en: 'School Nurse · Homeroom Teacher', fr: 'Infirmière Scolaire · Professeur Principal', de: 'Schulkrankenschwester · Lehrerin', pt: 'Enfermeira · Professora', ko: '보건선생님 · 담임선생님' })}</div>
                         </div>
                         <div class="credits-divider">─ ─ ─</div>
                         <div class="credits-section">
@@ -1261,7 +1288,7 @@ class GameEngine {
                         <div class="credits-divider">─ ─ ─</div>
                         <div class="credits-section">
                             <div class="credits-role">${ct({ es: 'Agradecimientos Especiales', ja: 'スペシャルサンクス', en: 'Special Thanks', fr: 'Remerciements Spéciaux', de: 'Besonderer Dank', pt: 'Agradecimentos Especiais', ko: 'Special Thanks' })}</div>
-                            <div class="credits-name">${ct({ es: '¡Gracias por jugar!', ja: 'プレイしていただきありがとうございます！', en: 'Thank you for playing!', fr: 'Merci d\'avoir joué !', de: 'Vielen Dank fürs Spielen!', pt: 'Obrigado por jogar!', ko: '플레이해 주신 여러분께' })}</div>
+                            <div class="credits-name">${ct({ es: '¡Gracias por jugar!', ja: 'プレイしていただき、ありがとうございました。', en: 'Thank you for playing!', fr: 'Merci d\'avoir joué !', de: 'Vielen Dank fürs Spielen!', pt: 'Obrigado por jogar!', ko: '플레이해 주신 여러분께' })}</div>
                             <div class="credits-name">${ct({ es: 'Lo apreciamos sinceramente.', ja: '心より感謝申し上げます。', en: 'We sincerely appreciate it.', fr: 'Nous vous en sommes sincèrement reconnaissants.', de: 'Wir schätzen es aufrichtig.', pt: 'Agradecemos sinceramente.', ko: '진심으로 감사드립니다' })}</div>
                         </div>
                         <div class="credits-spacer"></div>
@@ -1303,7 +1330,10 @@ class GameEngine {
             if (!skipBtn) {
                 skipBtn = document.createElement('button');
                 skipBtn.id = 'credits-skip-btn';
-                skipBtn.textContent = 'SKIP ▶';
+                const creditsLang = String(window.GAME_LANG || document.documentElement.lang || 'ko')
+                    .toLowerCase()
+                    .split('-')[0];
+                skipBtn.textContent = creditsLang === 'ja' ? 'スキップ ▶' : 'SKIP ▶';
                 creditsLayer.appendChild(skipBtn);
             }
 
@@ -1528,7 +1558,8 @@ class GameEngine {
                         // 저장된 이미지 URL로 캐릭터 표시 (XSS 방지)
                         const img = document.createElement('img');
                         img.src = src;
-                        img.alt = 'character';
+                        img.alt = '';
+                        img.setAttribute('aria-hidden', 'true');
                         this.uiManager.charSlots[slot].innerHTML = '';
                         this.uiManager.charSlots[slot].appendChild(img);
                     }

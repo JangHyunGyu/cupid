@@ -491,6 +491,8 @@ class SceneRenderer {
             .map(([pos, charUrl]) => {
                 return new Promise((resolve) => {
                     const img = document.createElement('img');
+                    img.alt = '';
+                    img.setAttribute('aria-hidden', 'true');
                     loadImageWithFallback(img, charUrl, () => {
                         img.dataset.rawSrc = charUrl;
                         const options = charOptions[pos] || { opacity: 1 };

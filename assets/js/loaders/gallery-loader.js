@@ -101,9 +101,50 @@
     });
 })();
 
+window.__cupidShowGalleryLoadError = function() {
+    if (document.querySelector('[data-cupid-gallery-load-error]')) return;
+    var pageLang = String(document.documentElement.lang || 'ko').toLowerCase().split('-')[0];
+    var copy = pageLang === 'ja'
+        ? {
+            title: 'ギャラリーを読み込めませんでした',
+            message: '通信環境を確認して、ページを再読み込みしてください。',
+            retry: '再読み込み'
+        }
+        : {
+            title: 'Gallery failed to load',
+            message: 'Check your connection and reload the page.',
+            retry: 'Reload'
+        };
+    var overlay = document.createElement('div');
+    overlay.id = 'cupid-gallery-load-error';
+    overlay.setAttribute('data-cupid-gallery-load-error', 'true');
+    overlay.setAttribute('role', 'alert');
+    overlay.style.cssText = 'position:fixed;inset:0;z-index:100000;background:#09070d;color:#fff;display:flex;align-items:center;justify-content:center;padding:24px;font-family:sans-serif;text-align:center;';
+
+    var panel = document.createElement('div');
+    var title = document.createElement('h1');
+    title.textContent = copy.title;
+    title.style.cssText = 'font-size:1.35rem;margin:0 0 12px;';
+    var message = document.createElement('p');
+    message.textContent = copy.message;
+    message.style.cssText = 'margin:0 0 20px;color:#ddd;line-height:1.6;';
+    var retry = document.createElement('button');
+    retry.type = 'button';
+    retry.textContent = copy.retry;
+    retry.style.cssText = 'border:1px solid #ff8fab;border-radius:999px;background:#2a1824;color:#fff;padding:10px 20px;font:inherit;cursor:pointer;';
+    function reloadGalleryPage() { window.location.reload(); }
+    retry.addEventListener('click', reloadGalleryPage);
+
+    panel.appendChild(title);
+    panel.appendChild(message);
+    panel.appendChild(retry);
+    overlay.appendChild(panel);
+    document.body.appendChild(overlay);
+};
+
 (function () {
     // 로더 설정 로드 (동기)
-    document.write('<script src="assets/js/loaders/config.js?v=2.9.106"><\/script>');
+    document.write('<script src="assets/js/loaders/config.js?v=2.9.106" onerror="window.__cupidShowGalleryLoadError && window.__cupidShowGalleryLoadError()"><\/script>');
 })();
 
 // config.js 로드 후 실행
@@ -142,6 +183,6 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
 
     scripts.forEach(function (src) {
-        document.write('<script src="' + basePath + src + '?v=' + version + '"><\/script>');
+        document.write('<script src="' + basePath + src + '?v=' + version + '" onerror="window.__cupidShowGalleryLoadError && window.__cupidShowGalleryLoadError()"><\/script>');
     });
 })();

@@ -9,12 +9,12 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>ギャラリー - Cupid</title>
     <meta name="description"
-        content="Cupidのキャラクタープロフィール、イベントCG、ミュージックルーム。ゲームのキャラクターと特別なシーンを振り返ろう。">
+        content="CupidのキャラクタープロフィールやイベントCG、楽曲をいつでも振り返れます。">
     <meta name="robots" content="noindex, follow">
 
     <!-- Open Graph -->
     <meta property="og:title" content="ギャラリー - Cupid">
-    <meta property="og:description" content="CupidのキャラクタープロフィールとイベントCGを探索しよう。">
+    <meta property="og:description" content="CupidのキャラクタープロフィールやイベントCGを振り返れます。">
     <meta property="og:type" content="website">
 
     <!-- Fonts -->
@@ -37,7 +37,7 @@
     <header class="gallery-header">
         <h1>📖 ギャラリー</h1>
         <div class="header-actions">
-            <a href="/index-ja" class="back-btn" onclick="if(window.opener&&!window.opener.closed){window.close();return false;}">← 戻る</a>
+            <a href="/index-ja" class="back-btn" onclick="if(window.opener&&!window.opener.closed){window.close();return false;}">← タイトルへ</a>
             <div class="lang-combo" id="langCombo">
                 <div class="lang-combo-selected" onclick="toggleLangCombo()">
                     <span class="lang-flag">🇯🇵</span> 日本語
@@ -103,19 +103,19 @@
         <div class="modal-content">
             <div class="modal-header">
                 <div>
-                    <h2 id="modal-char-name">Character Name</h2>
-                    <p id="modal-char-title" style="color: #aaa; font-size: 0.9rem; margin-top: 5px;">Title</p>
+                    <h2 id="modal-char-name">キャラクター名</h2>
+                    <p id="modal-char-title" style="color: #aaa; font-size: 0.9rem; margin-top: 5px;">肩書き</p>
                 </div>
-                <button class="modal-close" onclick="closeCharacterModal()">✕</button>
+                <button class="modal-close" onclick="closeCharacterModal()" aria-label="閉じる" title="閉じる">✕</button>
             </div>
             <div class="modal-body">
                 <div class="character-preview">
-                    <img id="modal-char-image" src="" alt="Character">
+                    <img id="modal-char-image" src="" alt="キャラクター">
                 </div>
                 <div class="character-details">
                     <div class="detail-section">
                         <h4>紹介</h4>
-                        <p id="modal-char-desc">Character description</p>
+                        <p id="modal-char-desc">キャラクター紹介</p>
                     </div>
                     <div class="detail-section">
                         <h4>表情</h4>

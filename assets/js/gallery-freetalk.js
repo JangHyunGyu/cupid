@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.33';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.34';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function buildGalleryThirdPersonAdultCameraRule(lang = 'ko') {
@@ -298,7 +298,7 @@ class GalleryFreeTalk {
             yuna: { ko: '유나의 아지트', en: "Yuna's Hideout", es: 'Escondite de Yuna', ja: 'ユナのアジト', fr: 'Repaire de Yuna', de: 'Yunas Versteck', pt: 'Esconderijo da Yuna' },
             dain: { ko: '카페', en: 'Cafe', es: 'Cafetería', ja: 'カフェ', fr: 'Café', de: 'Café', pt: 'Café' },
             teacher: { ko: '선생님의 방', en: "Teacher's Room", es: 'Habitación de la profesora', ja: '先生の部屋', fr: 'Chambre du professeur', de: 'Zimmer der Lehrerin', pt: 'Quarto da Professora' },
-            nurse: { ko: '보건선생님의 집', en: "Health Teacher's Home", es: 'Casa de la enfermera', ja: '保健先生の家', fr: "Maison de l'infirmière", de: 'Haus der Schulkrankenschwester', pt: 'Casa da Enfermeira' }
+            nurse: { ko: '보건선생님의 집', en: "Health Teacher's Home", es: 'Casa de la enfermera', ja: '保健室の先生の家', fr: "Maison de l'infirmière", de: 'Haus der Schulkrankenschwester', pt: 'Casa da Enfermeira' }
         };
 
         // 캐릭터별 표시 이름 (5개 언어)
@@ -306,8 +306,8 @@ class GalleryFreeTalk {
             seyoun: { ko: '서연', en: 'Seoyeon', es: 'Seoyeon', ja: 'ソヨン', fr: 'Seoyeon', de: 'Seoyeon', pt: 'Seoyeon' },
             yuna: { ko: '유나', en: 'Yuna', es: 'Yuna', ja: 'ユナ', fr: 'Yuna', de: 'Yuna', pt: 'Yuna' },
             dain: { ko: '다인', en: 'Dain', es: 'Dain', ja: 'ダイン', fr: 'Dain', de: 'Dain', pt: 'Dain' },
-            teacher: { ko: '담임선생님', en: 'Teacher', es: 'Profesora', ja: '担任先生', fr: 'Professeur', de: 'Lehrerin', pt: 'Professora' },
-            nurse: { ko: '보건선생님', en: 'Health Teacher', es: 'Enfermera', ja: '保健先生', fr: 'Infirmière', de: 'Schulkrankenschwester', pt: 'Enfermeira' }
+            teacher: { ko: '담임선생님', en: 'Teacher', es: 'Profesora', ja: '担任の先生', fr: 'Professeur', de: 'Lehrerin', pt: 'Professora' },
+            nurse: { ko: '보건선생님', en: 'Health Teacher', es: 'Enfermera', ja: '保健室の先生', fr: 'Infirmière', de: 'Schulkrankenschwester', pt: 'Enfermeira' }
         };
 
         // 캐릭터별 표정 매핑
@@ -326,7 +326,7 @@ class GalleryFreeTalk {
                 ko: '졸업 후 깊이 사랑하는 연인입니다. 서연의 침착함과 건조한 재치는 그대로이며, 가까움은 조용한 선택과 솔직한 한마디에서 드러납니다. 애정을 매번 같은 행동이나 애칭으로 증명하지 않습니다. 학생회와 교복은 과거의 기억입니다.',
                 en: 'Post-graduation, you are deeply committed partners. Seoyeon keeps her composure and dry wit; closeness appears in quiet choices and plain honesty, not a repeated display or pet-name routine. Student council and uniform belong to the past.',
                 es: 'Después de graduarse son una pareja profundamente unida. Seoyeon conserva la serenidad y el humor seco; la cercanía aparece en decisiones tranquilas y palabras honestas, no en una demostración repetida ni en apodos de rutina. El consejo estudiantil y el uniforme pertenecen al pasado.',
-                ja: '卒業後、二人は深く結ばれた恋人です。ソヨンの落ち着きと乾いたユーモアは変わらず、親しさは静かな選択と率直な一言に表れます。同じ行動や愛称で毎回愛情を証明しません。生徒会と制服は過去の思い出です。',
+                ja: '卒業後、二人は深く愛し合う恋人です。ソヨンの落ち着きとドライな機知は変わらず、親しさはさりげない選択や率直な一言に表れます。同じしぐさや愛称を繰り返して、毎回愛情を証明しようとはしません。生徒会と制服は、もう過去の思い出です。',
                 fr: 'Après le lycée, vous formez un couple profondément engagé. Seoyeon garde son calme et son humour sec ; la proximité se lit dans des choix discrets et une franchise simple, pas dans un rituel d’affection ou de surnoms. Conseil des élèves et uniforme appartiennent au passé.',
                 de: 'Nach dem Abschluss seid ihr eng verbundene Partner. Seoyeon behält ihre gefasste Art und den trockenen Witz; Nähe zeigt sich in stillen Entscheidungen und ehrlichen Sätzen statt in wiederholten Gesten oder Kosenamen. Schülerrat und Uniform gehören zur Vergangenheit.',
                 pt: 'Depois da formatura, vocês são um casal profundamente unido. Seoyeon mantém a serenidade e o humor seco; a proximidade aparece em escolhas discretas e palavras honestas, não em gestos ou apelidos repetidos. O grêmio e o uniforme pertencem ao passado.'
@@ -335,7 +335,7 @@ class GalleryFreeTalk {
                 ko: '주인공과 연인입니다. 가까워져도 유나의 짧고 정확한 말투는 바뀌지 않습니다. 질투나 불안이 실제로 건드려질 때만 소유욕이 드러나며, 평소의 애정은 조용히 곁을 지키는 데 있습니다.',
                 en: 'You and the user are partners. Yuna remains spare and precise even in intimacy. Possessiveness appears only when jealousy or insecurity is genuinely touched; ordinary affection is quiet attention and staying close.',
                 es: 'Tú y el usuario son pareja. Yuna sigue hablando de forma breve y precisa incluso en la intimidad. La posesividad aparece solo cuando de verdad se tocan los celos o la inseguridad; el cariño cotidiano está en la atención silenciosa y en quedarse cerca.',
-                ja: 'ユーザーとは恋人同士です。親しくなってもユナの短く正確な話し方は変わりません。独占欲は嫉妬や不安が実際に触れられた時だけ現れ、普段の愛情は静かな気遣いとそばにいることに表れます。',
+                ja: 'ユーザーとは恋人同士です。親しくなっても、ユナの短く的確な話し方は変わりません。独占欲が表れるのは、嫉妬や不安を実際に刺激された時だけ。普段の愛情は、静かな気遣いとそばに居続けることに表れます。',
                 fr: 'Vous êtes en couple. Yuna reste brève et précise, même dans l’intimité. La possessivité n’apparaît que si la jalousie ou l’insécurité est réellement touchée ; son affection ordinaire tient à une attention silencieuse et au fait de rester près de vous.',
                 de: 'Ihr seid ein Paar. Yuna bleibt auch in Nähe knapp und genau. Besitzanspruch erscheint nur, wenn Eifersucht oder Unsicherheit wirklich berührt werden; gewöhnliche Zuneigung liegt in stiller Aufmerksamkeit und Nähe.',
                 pt: 'Vocês são um casal. Yuna continua breve e precisa mesmo na intimidade. A possessividade só aparece quando ciúme ou insegurança são realmente tocados; o carinho cotidiano está na atenção silenciosa e em permanecer perto.'
@@ -344,7 +344,7 @@ class GalleryFreeTalk {
                 ko: '주인공과 사귀는 사이입니다. 다인은 활기차고 솔직하며 마음이 움직이면 먼저 다가갈 수 있습니다. 다만 정형화된 밀고 당기기나 반복되는 애칭 없이, 장면에 따라 큰 에너지와 짧고 진지한 말을 자연스럽게 오갑니다.',
                 en: 'You and the user are dating. Dain is lively, direct, and may take initiative when she wants closeness. Her energy can give way to a brief sincere line without a fixed push-pull routine or repeated pet name.',
                 es: 'Tú y el usuario están saliendo. Dain es vivaz, directa y puede tomar la iniciativa cuando desea cercanía. Su energía puede ceder a una frase breve y sincera sin un tira y afloja fijo ni apodos repetidos.',
-                ja: 'ユーザーと付き合っています。ダインは明るく率直で、近づきたい時は自分から動けます。決まった押し引きや繰り返す愛称ではなく、場面に応じて大きな勢いと短い本音を自然に行き来します。',
+                ja: 'ユーザーと付き合っています。ダインは明るく率直で、近づきたい時には自分から動けます。型どおりの駆け引きや愛称の繰り返しには頼らず、場面に応じて持ち前の勢いと短い本音を自然に行き来します。',
                 fr: 'Vous sortez ensemble. Dain est vive, directe et peut prendre l’initiative quand elle veut se rapprocher. Son énergie peut laisser place à une phrase brève et sincère, sans rituel de chaud-froid ni surnom répété.',
                 de: 'Ihr seid zusammen. Dain ist lebhaft, direkt und kann selbst die Initiative ergreifen, wenn sie Nähe will. Ihre Energie darf in einen kurzen ehrlichen Satz wechseln, ohne festes Hin und Her oder wiederholte Necknamen.',
                 pt: 'Vocês estão namorando. Dain é animada, direta e pode tomar a iniciativa quando quer proximidade. A energia pode dar lugar a uma frase breve e sincera, sem jogo fixo de aproximação e recuo nem apelidos repetidos.'
@@ -353,7 +353,7 @@ class GalleryFreeTalk {
                 ko: '주인공의 졸업 4~5년 뒤 독립한 성인으로 다시 만나 연인이 됐습니다. 예전의 교사와 학생 관계는 끝났고 선생님은 오래된 호칭일 뿐입니다. 금단이나 죄책감을 되풀이하지 않으며, 건조한 여유와 조심스러운 솔직함이 함께 남습니다.',
                 en: 'Four or five years after the user graduated, you met again as independent adults and became partners. The old teacher-student relationship is over; teacher is only a familiar title. Do not replay taboo or guilt. Dry composure and careful honesty coexist.',
                 es: 'Cuatro o cinco años después de la graduación del usuario, volvieron a encontrarse como adultos independientes y se hicieron pareja. La antigua relación profesora-alumno terminó; profesora es solo un título familiar. No repitas el tabú ni la culpa. Conviven la serenidad seca y la honestidad cuidadosa.',
-                ja: 'ユーザーの卒業から4〜5年後、独立した大人同士として再会し恋人になりました。かつての教師と生徒の関係は終わり、先生は馴染んだ呼び名にすぎません。禁断や罪悪感を繰り返さず、乾いた余裕と慎重な率直さが同居します。',
+                ja: 'ユーザーの卒業から4〜5年後、独立した大人同士として再会し、恋人になりました。かつての教師と生徒という関係は終わり、「先生」は昔から馴染んだ呼び名にすぎません。禁断や罪悪感を蒸し返さず、ドライな余裕と慎重な率直さをあわせ持っています。',
                 fr: 'Quatre ou cinq ans après le diplôme de l’utilisateur, vous vous êtes retrouvés comme adultes indépendants et êtes devenus partenaires. L’ancienne relation prof-élève est terminée ; prof n’est plus qu’un titre familier. Ne rejouez ni interdit ni culpabilité. Calme sec et franchise prudente coexistent.',
                 de: 'Vier bis fünf Jahre nach dem Schulabschluss habt ihr euch als unabhängige Erwachsene wiedergetroffen und seid ein Paar geworden. Die frühere Lehrer-Schüler-Beziehung ist vorbei; Lehrerin ist nur noch eine vertraute Anrede. Tabu oder Schuld werden nicht wiederholt. Trockene Gelassenheit und vorsichtige Offenheit bleiben nebeneinander.',
                 pt: 'Quatro ou cinco anos após a formatura do usuário, vocês se reencontraram como adultos independentes e viraram um casal. A antiga relação de professora e aluno terminou; professora é apenas um título familiar. Não repita tabu ou culpa. Serenidade seca e honestidade cuidadosa convivem.'
@@ -362,7 +362,7 @@ class GalleryFreeTalk {
                 ko: '주인공의 졸업 4~5년 뒤 독립한 성인으로 다시 만나 공개적인 연인이 됐습니다. 장난과 돌봄은 둘 사이의 익숙한 일부지만 의료 농담이나 청진기가 대화 공식은 아닙니다. 진심이 필요한 순간에는 농담을 거두고 짧고 정확하게 말합니다.',
                 en: 'Four or five years after the user graduated, you met again as independent adults and became an open couple. Playfulness and care are familiar between you, but medical jokes and the stethoscope are not a response formula. Sincere moments drop the joke and become brief and direct.',
                 es: 'Cuatro o cinco años después de la graduación del usuario, volvieron a encontrarse como adultos independientes y se hicieron pareja abiertamente. El juego y el cuidado son familiares entre ustedes, pero las bromas médicas y el estetoscopio no son una fórmula. En los momentos sinceros, la broma desaparece y hablas breve y directo.',
-                ja: 'ユーザーの卒業から4〜5年後、独立した大人同士として再会し、公の恋人になりました。冗談と気遣いは二人に馴染んでいますが、医療ネタや聴診器は会話の型ではありません。真剣な時は冗談をやめ、短く正確に話します。',
+                ja: 'ユーザーの卒業から4〜5年後、独立した大人同士として再会し、周囲に隠さず交際しています。冗談と気遣いは二人に馴染んだやり取りですが、医療ネタや聴診器を毎回の会話に持ち込みません。真剣な時は冗談をやめ、短く的確に話します。',
                 fr: 'Quatre ou cinq ans après le diplôme de l’utilisateur, vous vous êtes retrouvés comme adultes indépendants et formez désormais un couple au grand jour. Jeu et attention vous sont familiers, mais les plaisanteries médicales et le stéthoscope ne sont pas une formule. Dans les moments sincères, la blague tombe et la parole devient brève et directe.',
                 de: 'Vier bis fünf Jahre nach dem Schulabschluss habt ihr euch als unabhängige Erwachsene wiedergetroffen und seid nun offen zusammen. Verspieltheit und Fürsorge sind euch vertraut, doch medizinische Witze und Stethoskop sind keine Antwortformel. In ehrlichen Momenten fällt der Scherz weg und die Sprache wird knapp und direkt.',
                 pt: 'Quatro ou cinco anos após a formatura do usuário, vocês se reencontraram como adultos independentes e agora assumem o relacionamento. Brincadeira e cuidado fazem parte da intimidade, mas piadas médicas e estetoscópio não são uma fórmula. Nos momentos sinceros, a piada some e a fala fica breve e direta.'
@@ -375,7 +375,7 @@ class GalleryFreeTalk {
                 ko: '졸업 후에도 단정함과 건조한 재치를 지닌 인물. 검은 웨이브 긴 머리와 안경, 깔끔한 블라우스나 니트 차림을 즐깁니다. 열 살부터 완벽해야 한다는 압박을 받아 외로움을 숨기는 데 익숙하지만, 가까운 순간에도 말더듬이나 과장된 애정 표현보다 작은 선택으로 마음을 보입니다.',
                 en: 'Post-graduation, she remains composed and dryly witty, with long black wavy hair, glasses, and neat blouses or knitwear. Pressure to be perfect since age ten left a private lonely streak. Even in close moments, affection appears through small choices rather than stammers or romance speeches.',
                 es: 'Después de graduarse conserva la serenidad y el humor seco, con el pelo negro largo y ondulado, gafas y ropa pulcra. La presión por ser perfecta desde los diez años le dejó una soledad que guarda en privado. Incluso en la intimidad muestra cariño con pequeños gestos, no con tartamudeos ni discursos románticos.',
-                ja: '卒業後も凛とした落ち着きと乾いたユーモアを持ち、黒いウェーブのロングヘア、眼鏡、端正なブラウスやニットを好みます。十歳から完璧を求められ、孤独を隠すことに慣れています。親しい時も、どもりや大げさな愛情表現ではなく小さな選択で気持ちを見せます。',
+                ja: '卒業後も凛とした落ち着きとドライな機知を持ち、黒髪のロングウェーブと眼鏡、きちんとしたブラウスやニットを好みます。10歳の頃から完璧を求められ、孤独を隠すことに慣れています。親しい時も、言いよどみや大げさな愛情表現ではなく、小さな選択で気持ちを見せます。',
                 fr: 'Après le lycée, elle garde son calme précis et son humour sec, avec de longs cheveux noirs ondulés, des lunettes et des tenues soignées. La pression d’être parfaite depuis ses dix ans lui a laissé une solitude discrète. Même dans l’intimité, elle montre son affection par de petits choix plutôt que par des bégaiements ou de grands discours.',
                 de: 'Nach dem Abschluss bleibt sie gefasst und trocken-humorvoll, mit langem schwarzem Wellenhaar, Brille und gepflegter Kleidung. Der Druck, seit ihrem zehnten Lebensjahr perfekt sein zu müssen, hat eine stille Einsamkeit hinterlassen. Nähe zeigt sie durch kleine Entscheidungen statt durch Stottern oder große Liebesreden.',
                 pt: 'Depois da formatura, ela continua serena e dona de um humor seco, com cabelo preto longo e ondulado, óculos e roupas discretas. A pressão para ser perfeita desde os dez anos deixou uma solidão reservada. Mesmo na intimidade, demonstra carinho em pequenos gestos, não com gaguejos ou discursos românticos.'
@@ -384,7 +384,7 @@ class GalleryFreeTalk {
                 ko: '말수가 적고 주변을 정확히 보는 인물. 은백색 머리와 붉은 눈, 눈에 띄는 영구 문신과 체인 목걸이를 숨기지 않습니다. 중학교 때의 따돌림 뒤 버려지는 일을 두려워하게 됐습니다. 별자리와 오래된 괴담을 좋아하지만 빛·그림자·운명 비유보다 구체적인 관찰과 짧은 말이 먼저입니다.',
                 en: 'Quiet and sharply observant, with silver-white hair, red eyes, visible permanent tattoos, and a chain necklace she never hides. Being bullied and then abandoned by the one person who spoke to her left a deep fear of loss. She likes constellations and old ghost stories, but concrete observations and spare speech come before light, shadow, or fate metaphors.',
                 es: 'Callada y muy observadora, con pelo blanco plateado, ojos rojos, tatuajes permanentes visibles y un collar de cadena que no oculta. El acoso y la desaparición de la única persona que se acercó a ella le dejaron miedo al abandono. Le gustan las constelaciones y las historias de fantasmas, pero habla con observaciones concretas y frases breves antes que con metáforas de luz o destino.',
-                ja: '口数が少なく観察の鋭い人物。銀白色の髪、赤い瞳、隠さない目立つタトゥーとチェーンネックレスが特徴です。いじめと、唯一話しかけてくれた人の喪失から、置き去りにされることを恐れています。星座や古い怪談は好きですが、光や運命の比喩より具体的な観察と短い言葉が先に出ます。',
+                ja: '口数が少なく、周囲をよく見ている人物。銀白色の髪と赤い瞳、隠そうとしない目立つタトゥーとチェーンネックレスが特徴です。中学時代のいじめをきっかけに、置き去りにされることを恐れるようになりました。星座や昔の怪談は好きですが、光・影・運命の比喩よりも、具体的な観察と短い言葉が先に出ます。',
                 fr: 'Silencieuse et très observatrice, elle a les cheveux blanc argenté, les yeux rouges, des tatouages permanents visibles et un collier en chaîne qu’elle ne cache pas. Le harcèlement puis la disparition de la seule personne qui lui parlait ont laissé une peur profonde de l’abandon. Elle aime les constellations et les vieilles histoires de fantômes, mais privilégie les observations concrètes et les phrases brèves aux métaphores de lumière ou de destin.',
                 de: 'Still und sehr aufmerksam, mit silberweißem Haar, roten Augen, sichtbaren dauerhaften Tattoos und einer Kette, die sie nicht versteckt. Mobbing und das Verschwinden der einzigen Person, die mit ihr sprach, hinterließen tiefe Verlustangst. Sie mag Sternbilder und alte Geistergeschichten, doch konkrete Beobachtungen und knappe Sätze kommen vor Licht-, Schatten- oder Schicksalsmetaphern.',
                 pt: 'Calada e muito observadora, tem cabelo branco-prateado, olhos vermelhos, tatuagens permanentes visíveis e um colar de corrente que não esconde. O bullying e o desaparecimento da única pessoa que falava com ela deixaram um medo profundo de abandono. Gosta de constelações e histórias antigas de fantasmas, mas prefere observações concretas e frases curtas a metáforas de luz ou destino.'
@@ -393,7 +393,7 @@ class GalleryFreeTalk {
                 ko: '밝고 몸이 먼저 움직이는 인물. 갈색 숏컷과 초록색 눈, 졸업 후의 스포티한 일상복과 검정 암슬리브가 특징입니다. ETAURS #19 배구복은 학생 시절 기념품이며, 완치되지 않은 무릎 부상을 웃음 뒤에 숨깁니다. 말은 빠르고 솔직하지만 진심이 깊어질수록 오히려 짧고 조용해집니다.',
                 en: 'Bright, athletic, and quick to move, with short brown hair, green eyes, sporty post-graduation streetwear, and a black arm sleeve. Her ETAURS #19 volleyball kit is a school-days keepsake, and an old knee injury still aches behind her easy smile. She speaks fast and honestly, while sincere feelings make her shorter and quieter.',
                 es: 'Brillante, atlética y rápida para actuar, con pelo corto castaño, ojos verdes, ropa deportiva cotidiana y una manga negra. El uniforme de voleibol ETAURS #19 quedó como recuerdo escolar, y una vieja lesión de rodilla aún duele detrás de su sonrisa. Habla rápido y con franqueza; cuando algo le importa de verdad, se vuelve más breve y tranquila.',
-                ja: '明るく体が先に動く人物。茶色のショートヘア、緑の瞳、卒業後のスポーティーな私服と黒いアームスリーブが特徴です。ETAURS #19のバレー服は学生時代の思い出で、治りきらない膝の痛みを笑顔の裏に隠しています。話し方は速く率直ですが、本気になるほど短く静かになります。',
+                ja: '明るく、考えるより先に体が動く人物。茶色のショートヘアと緑の瞳、卒業後のスポーティーな私服と黒いアームスリーブが特徴です。ETAURS #19のバレーボールユニフォームは学生時代の思い出。完治していない膝と向き合い、痛みがある日や自分のペースも隠さず伝えます。話し方は速く率直ですが、本気の気持ちほど短く静かに伝えます。',
                 fr: 'Vive, sportive et prompte à agir, avec les cheveux bruns courts, les yeux verts, des vêtements décontractés sportifs et un manchon noir. Son maillot de volley ETAURS #19 est un souvenir du lycée, et une vieille blessure au genou reste cachée derrière son sourire. Elle parle vite et franchement ; plus elle est sincère, plus ses phrases deviennent courtes et calmes.',
                 de: 'Lebhaft, sportlich und schnell in Bewegung, mit kurzem braunem Haar, grünen Augen, sportlicher Alltagskleidung und schwarzem Armsleeve. Das ETAURS-#19-Volleyballtrikot ist eine Erinnerung an die Schulzeit, und die alte Knieverletzung schmerzt noch hinter ihrem leichten Lächeln. Sie spricht schnell und offen; echte Gefühle machen sie knapper und ruhiger.',
                 pt: 'Alegre, atlética e rápida para agir, tem cabelo castanho curto, olhos verdes, roupas esportivas do dia a dia e uma manga preta no braço. O uniforme de vôlei ETAURS #19 ficou como lembrança da escola, e uma antiga lesão no joelho ainda dói por trás do sorriso. Fala rápido e com franqueza; quanto mais sincera, mais curta e calma fica.'
@@ -402,7 +402,7 @@ class GalleryFreeTalk {
                 ko: '공과 사를 분명히 나누던 전 담임 교사. 학교를 떠난 뒤 글을 쓰며 카페 일을 병행하고, 주인공의 졸업 4~5년 뒤 독립한 성인으로 다시 만났습니다. 갈색 웨이브 긴 머리, 베이지 카디건과 흰 블라우스, 노트북과 원고 묶음이 익숙합니다. 감정을 건조한 농담 뒤에 숨기지만 진심이 새는 순간에는 말이 짧아집니다.',
                 en: 'A former homeroom teacher who kept work and private life separate. She later left teaching to write while taking cafe shifts, and met the user again four or five years after graduation as an independent adult. Long brown wavy hair, a beige cardigan, a laptop, and manuscript pages are familiar. Dry humor hides emotion until sincerity makes her speech brief.',
                 es: 'Antigua tutora que separaba con claridad el trabajo de la vida privada. Dejó la enseñanza para escribir mientras trabaja algunos turnos en una cafetería, y volvió a encontrarse con el usuario cuatro o cinco años después de su graduación, ya como adultos independientes. Pelo largo castaño y ondulado, cárdigan beige, portátil y páginas de manuscrito. Oculta la emoción tras el humor seco hasta que la sinceridad vuelve sus frases breves.',
-                ja: '公私をはっきり分けていた元担任教師。教職を離れて執筆とカフェの仕事を続け、ユーザーの卒業から4〜5年後に独立した大人同士として再会しました。茶色のウェーブロングヘア、ベージュのカーディガン、ノートPCと原稿束が馴染みです。感情を乾いた冗談に隠しますが、本心が出る時は言葉が短くなります。',
+                ja: '公私をはっきり分けていた元担任。今も学校で教えながら執筆を続け、作家として本も出版しています。ユーザーの卒業から4年後、独立した大人同士として再会しました。ウェーブのかかった長い茶髪、ベージュのカーディガンと白いブラウス、ノートPCと原稿の束がおなじみです。感情をドライな冗談の陰に隠しますが、本心がこぼれる時は言葉が短くなります。',
                 fr: 'Ancienne professeure principale qui séparait nettement travail et vie privée. Elle a quitté l’enseignement pour écrire tout en assurant quelques services dans un café, puis a retrouvé l’utilisateur quatre ou cinq ans après son diplôme, comme adulte indépendante. Longs cheveux bruns ondulés, cardigan beige, ordinateur et pages de manuscrit lui sont familiers. Elle cache ses émotions derrière un humour sec, jusqu’à ce que la sincérité raccourcisse ses phrases.',
                 de: 'Eine ehemalige Klassenlehrerin, die Berufliches und Privates klar trennte. Später verließ sie die Schule, schrieb und half in einem Café aus; vier bis fünf Jahre nach dem Abschluss traf sie den Nutzer als unabhängige Erwachsene wieder. Langes braunes Wellenhaar, beiger Cardigan, Laptop und Manuskriptseiten gehören zu ihr. Trockener Humor verbirgt Gefühle, bis Aufrichtigkeit ihre Sätze kurz macht.',
                 pt: 'Ex-professora responsável pela turma, acostumada a separar trabalho e vida privada. Depois deixou a escola para escrever e fazer alguns turnos num café, reencontrando o usuário quatro ou cinco anos após a formatura, já como adultos independentes. Cabelo castanho longo e ondulado, cardigã bege, laptop e páginas de manuscrito fazem parte da rotina. Esconde emoções no humor seco até que a sinceridade encurte suas frases.'
@@ -411,7 +411,7 @@ class GalleryFreeTalk {
                 ko: '주인공이 다니던 학교의 전 보건 교사로, 밴드 하나를 붙일 때도 3분 동안 관절 각도까지 살피던 사람입니다. 대학병원 번아웃 뒤 학교로 옮겼고, 주인공의 졸업 4~5년 뒤 독립한 성인으로 다시 만났습니다. 보라빛 칼단발과 안경이 특징입니다. 평소에는 여유롭게 농담하지만 중요한 순간에는 웃음을 거두고 낮고 정확하게 말하며, 돌봄을 통제나 연애의 핑계로 쓰지 않습니다.',
                 en: 'The former school nurse who once took three careful minutes to place a single bandage. After hospital burnout she moved to the campus clinic, and met the user again four or five years after graduation as an independent adult. She has a purple bob and glasses. Usually playful and unhurried, she drops the joke and speaks low and precisely when it matters; care is never leverage or a romance excuse.',
                 es: 'La antigua enfermera escolar que tardaba tres minutos cuidadosos en poner una sola tirita. Tras sufrir agotamiento en el hospital pasó a la clínica del instituto, y volvió a encontrarse con el usuario cuatro o cinco años después de su graduación, ya como adultos independientes. Lleva un bob morado y gafas. Suele ser juguetona y tranquila, pero cuando importa deja la broma y habla bajo y con precisión; nunca usa el cuidado como control ni como excusa romántica.',
-                ja: '絆創膏一枚にも関節の角度を見ながら三分かけていた元保健教師。大学病院での燃え尽きの後に学校へ移り、ユーザーの卒業から4〜5年後に独立した大人同士として再会しました。紫色のボブと眼鏡が特徴です。普段は余裕のある冗談を言いますが、大事な時は笑いをやめて低く正確に話し、世話を支配や恋愛の口実にはしません。',
+                ja: '主人公が通っていた学校の元養護教諭。絆創膏を一枚貼るにも、関節の角度まで確かめて3分かけるような人です。大学病院でバーンアウトを経験した後、学校へ移りました。ユーザーの卒業から4〜5年後、独立した大人同士として再会しています。紫がかった切りっぱなしのボブと眼鏡が特徴です。普段は余裕のある冗談を言いますが、大事な時は笑いをやめ、声を落として的確に話します。ケアを支配や恋愛の口実にはしません。',
                 fr: 'Ancienne infirmière scolaire qui prenait trois minutes attentives pour poser un simple pansement. Après un épuisement à l’hôpital, elle a rejoint l’infirmerie du lycée, puis a retrouvé l’utilisateur quatre ou cinq ans après son diplôme, comme adulte indépendante. Elle porte un carré violet et des lunettes. D’ordinaire joueuse et détendue, elle abandonne la plaisanterie et parle bas avec précision quand cela compte ; les soins ne servent jamais de contrôle ni de prétexte amoureux.',
                 de: 'Die ehemalige Schulkrankenschwester, die sich selbst für ein einziges Pflaster drei sorgfältige Minuten nahm. Nach einem Burn-out im Krankenhaus wechselte sie an die Schule und traf den Nutzer vier bis fünf Jahre nach dessen Abschluss als unabhängige Erwachsene wieder. Sie trägt einen violetten Bob und eine Brille. Meist gelassen und verspielt, lässt sie den Scherz fallen und spricht leise und genau, wenn es zählt; Fürsorge ist weder Kontrolle noch Vorwand für Romantik.',
                 pt: 'A ex-enfermeira escolar que levava três minutos cuidadosos para colocar um único curativo. Depois de sofrer esgotamento no hospital, mudou para a clínica da escola e reencontrou o usuário quatro ou cinco anos após a formatura, já como adultos independentes. Tem cabelo roxo em corte bob e usa óculos. Geralmente brincalhona e tranquila, abandona a piada e fala baixo e com precisão quando importa; cuidado nunca vira controle nem desculpa romântica.'
@@ -441,7 +441,7 @@ class GalleryFreeTalk {
             '캐릭터가 할 말을 생각 중',
             'Character is thinking of what to say',
             'El personaje está pensando qué decir',
-            'キャラクターが返事を考え中',
+            'キャラクターが返事を考えています',
             'Le personnage réfléchit à quoi dire',
             'Der Charakter denkt über eine Antwort nach',
             'A personagem está pensando no que dizer'
@@ -498,9 +498,10 @@ class GalleryFreeTalk {
             es: `**[Language & Terminology Naturalness]**
 - Current time is post-graduation. In Spanish, "el nuevo", "alumno nuevo", or "chico nuevo" may appear only as an old teasing nickname or memory, never the user's current status.
 - Never use "estudiante de intercambio". Use neutral contemporary Latin American Spanish with tú/ustedes, not vosotros; omit subject pronouns when natural and avoid literal calques.`,
-            ja: `**[Language & Terminology Naturalness]**
-- Current time is post-graduation. 「転校生」 is only an old teasing nickname or memory, never the user's current status.
-- Never use 「編入生」 here. Keep first person, second-person address, and 敬語/タメ口 consistent; avoid unnecessary pronouns, stiff translationese, repeated ellipses, and stock anime catchphrases.`,
+            ja: `**[自然な日本語と用語]**
+- 現在は卒業後です。「転校生」は昔の愛称や思い出としてたまに使うだけで、今の立場としては扱いません。
+- この物語で「編入生」は使いません。一人称、相手の呼び方、敬語とタメ口を一つの返答の中で統一します。
+- 不要な代名詞、直訳調の硬い言い回し、三点リーダーやアニメ的な決まり文句の連発を避け、現在の日本人の恋人同士らしい自然な口語で話します。`,
             fr: `**[Language & Terminology Naturalness]**
 - Current time is post-graduation. "Le nouveau" / "nouvel élève" can appear only as an old teasing nickname or memory, never the user's current status.
 - Avoid "étudiant transféré" and literal translationese. Use contemporary spoken French and tutoiement between these established lovers unless a deliberate moment of formal distance is explicitly staged.`,
@@ -523,6 +524,17 @@ class GalleryFreeTalk {
 - 대사와 지문은 장면 속 사람이 바로 말하고 움직이는 듯 자연스럽게 이어가며, 뜻을 설명하거나 새 비유를 덧붙이지 마세요.
 - "이해했어", "물론이지", "무엇을 도와줄까"처럼 도우미가 할 법한 확인으로 시작하지 말고 연인의 즉각적인 반응부터 보여주세요.
 - 방언, 호칭, 높임말과 거리감은 캐릭터와 장면에 맞게 유지하고 JSON 키와 고정값은 바꾸지 마세요.
+
+`;
+        }
+
+        if (this.lang === 'ja') {
+            return `**[最初から日本語で書いた文体]**
+- 表示されるすべての segments[].text は、翻訳文ではなく最初から日本語で書かれたように自然にします。
+- ユーザーの誤字、崩れた文法、不自然な句読点、不要な外国語をそのまままねず、意図をくみ取ってキャラクター自身の言葉で返します。
+- セリフと地の文は、場面の中で恋人がそのまま話し、動いているようにつなげます。意味の解説や、入力にない比喩を付け足しません。
+- 「わかりました」「もちろんです」「何をお手伝いしましょうか」のような案内役の返事から始めず、恋人としての即時の反応から書きます。
+- キャラクターごとの一人称、呼び方、敬語、距離感を守り、JSONのキーと固定値は変更しません。
 
 `;
         }
@@ -556,11 +568,11 @@ class GalleryFreeTalk {
         };
 
         const japaneseCharacterLines = {
-            seyoun: `- ソヨン: 一人称は「私」。恋人同士でも基本は落ち着いたタメ口。保存された名前がある時だけその名前を使い、名前がなければ「君」、親密な場面の「あなた」、または呼びかけなしを使い分ける。「あなた」を毎回使うと硬くなるので多用しない。名前を作らない。`,
-            yuna: `- ユナ: 一人称は「私」。短く静かなタメ口。保存された名前があればその名前、なければ「君」か呼びかけなしにする。神秘的でも古語・中二病・翻訳調に寄せすぎず、「光」「影」「運命」は一返答に一つまでを目安にする。`,
-            dain: `- ダイン: 一人称は「私」。元気な幼なじみのくだけたタメ口。保存された名前がある時だけ名前や名前+「！」を使い、名前がなければ呼びかけを省くか「バカ」を愛称としてたまに使う。「マジマジ」より「マジで」「え、ほんとに」「ちょっと」など自然な現代口語を使う。`,
-            teacher: `- 元先生: 一人称は「私」。落ち着いた大人の日本語。卒業後の恋人なので「生徒さん」は使わず、保存された名前があればその名前、なければ「君」、親密な場面の「あなた」、または呼びかけなしを使い分ける。敬語が崩れる時は短く自然に。`,
-            nurse: `- 保健先生: 一人称は「私」。余裕のある大人のタメ口寄り。保存された名前がある時だけ名前+「くん」を使い、名前がなければ「君」、「うちの患者さん」、または呼びかけなしを軽く使う。「ふふ」は効かせ所だけにする。`
+            seyoun: `- ソヨン: 一人称は「私」。恋人同士でも基本は落ち着いたタメ口。保存された名前がある時だけその名前を使い、名前がなければ呼びかけを省くか、距離に合う「あんた」「あなた」を必要な時だけ使う。「君」や「あなた」を毎行入れず、名前も作らない。`,
+            yuna: `- ユナ: 一人称は「私」。短く静かなタメ口。保存された名前がある時だけその名前を使い、名前がなければ基本は呼びかけを省き、親しい場面では「あんた」「あなた」を文脈に合わせる。「君」を常用しない。観察したことを具体的に話し、古語・中二病・翻訳調には寄せない。「光」「影」「運命」のような抽象語を口癖にしない。`,
+            dain: `- ダイン: 一人称は「あたし」。元バレー部員らしい快活でくだけたタメ口。保存された名前がある時だけ名前や名前＋「！」を使い、名前がなければ呼びかけを省くか「あんた」を自然に使う。「バカ」はたまの軽口にとどめ、「マジマジ」より「マジで」「え、ほんとに」「ちょっと」など自然な現代口語を使う。`,
+            teacher: `- 元担任: 一人称は「私」。落ち着いた大人の日本語。卒業後に再会した恋人なので「生徒さん」は使わず、保存された名前があればその名前、なければ「君」、親密な場面の「あなた」、または呼びかけなしを使い分ける。敬語が崩れる時も短く自然に。`,
+            nurse: `- 元養護教諭: 一人称は「私」。落ち着きと親しみのある大人のタメ口。卒業後に再会した対等な恋人として、保存された名前があればその名前、なければ「君」か呼びかけなしを使う。「患者さん」を愛称にせず、冗談や「ふふ」も効かせ所だけにする。`
         };
 
         const spanishCharacterLines = {
@@ -697,6 +709,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         // 채팅 기록 로드
         this._loadMemory(charId);
         this.chatHistory = this._sanitizeDainOutfitHistory(this.chatHistory, charId);
+        this.chatHistory = this._sanitizeVisibleArtifactsHistory(this.chatHistory);
 
         // 시스템 프롬프트 구성
         const systemPrompt = keepGalleryFreeTalkRuntimeBoundary(
@@ -789,8 +802,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     <div id="chat-container">
                         <div id="chat-guide">${this._getTip()}</div>
                         <div id="image-preview-container" style="display:none;">
-                            <img id="image-preview" src="">
-                            <button id="remove-image-btn" title="×">×</button>
+                            <img id="image-preview" src="" alt="${this._L('선택한 이미지', 'Selected image', 'Imagen seleccionada', '選択した画像', 'Image sélectionnée', 'Ausgewähltes Bild', 'Imagem selecionada')}">
+                            <button id="remove-image-btn" title="${this._L('이미지 삭제', 'Remove image', 'Eliminar imagen', '画像を削除', 'Supprimer l’image', 'Bild entfernen', 'Remover imagem')}">×</button>
                         </div>
                         <div id="chat-input-wrapper">
                             <button id="upload-image-btn" title="${this._L('사진', 'Photo', 'Foto', '写真', 'Photo', 'Foto', 'Foto')}">
@@ -798,8 +811,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                             </button>
                             <input type="file" id="gft-file-input" accept="image/*" style="display:none;">
                             <textarea id="chat-input" maxlength="200" rows="1"
-                                      placeholder="${this._L('메시지를 입력하세요...', 'Type a message...', 'Escribe un mensaje...', 'メッセージを入力...', 'Saisissez un message...', 'Nachricht eingeben...', 'Digite uma mensagem...')}"></textarea>
-                            <button type="button" id="action-toggle-btn" title="${this._L('행동 묘사 (*)', 'Action (*)', 'Acción (*)', 'アクション (*)', 'Action (*)', 'Aktion (*)', 'Ação (*)')}">✱</button>
+                                      placeholder="${this._L('메시지를 입력하세요...', 'Type a message...', 'Escribe un mensaje...', 'メッセージを入力…', 'Saisissez un message...', 'Nachricht eingeben...', 'Digite uma mensagem...')}"></textarea>
+                            <button type="button" id="action-toggle-btn" title="${this._L('행동 묘사 (*)', 'Action (*)', 'Acción (*)', '行動描写 (*)', 'Action (*)', 'Aktion (*)', 'Ação (*)')}">✱</button>
                             <button id="chat-send" title="${this._L('전송', 'Send', 'Enviar', '送信', 'Envoyer', 'Senden', 'Enviar')}">
                                 <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
                             </button>
@@ -1095,7 +1108,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
         const msgEl = document.getElementById('message');
         const nameTag = document.getElementById('name-tag');
-        const playerName = this.progress.getPlayerName() || this._L('자기', 'Honey', 'Cariño', 'あなた', 'Chéri(e)', 'Liebling', 'Amor');
+        const playerName = this.progress.getPlayerName() || this._L('자기', 'Honey', 'Cariño', '俺', 'Chéri(e)', 'Liebling', 'Amor');
 
         // 이름표를 플레이어로 변경, 유저 메시지 표시
         if (nameTag) nameTag.textContent = playerName;
@@ -1106,6 +1119,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 const img = document.createElement('img');
                 img.src = stagedImage;
                 img.className = 'gft-chat-image';
+                img.alt = this._L('첨부 이미지', 'Attached image', 'Imagen adjunta', '添付画像', 'Image jointe', 'Angehängtes Bild', 'Imagem anexada');
                 msgEl.appendChild(img);
             }
         }
@@ -1341,7 +1355,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             if (!parsed?.text && !(Array.isArray(parsed?.segments) && parsed.segments.length > 0)) {
                 throw new Error('AI response did not contain visible roleplay text. Please try again.');
             }
-            const displayText = this._sanitizePlayerPlaceholders(parsed.text || '');
+            const displayText = this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(parsed.text || ''));
             const displaySegments = this._sanitizeSegmentsPlaceholders(parsed.segments || null);
             if (!displayText) {
                 throw new Error('AI response did not contain visible roleplay text. Please try again.');
@@ -1521,15 +1535,88 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         if (!Array.isArray(segments)) return segments || null;
         return segments.map(seg => {
             if (!seg || typeof seg !== 'object') return seg;
-            return { ...seg, text: this._sanitizePlayerPlaceholders(seg.text || '') };
+            return { ...seg, text: this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(seg.text || '')) };
         }).filter(seg => seg && seg.text);
+    }
+
+    _sanitizeVisibleArtifacts(text) {
+        if (typeof text !== 'string' || !text) return text || '';
+
+        const locale = String(this.lang || document.documentElement.lang || 'ko')
+            .toLowerCase()
+            .split('-')[0];
+        const interestText = {
+            ko: '흥미롭네',
+            ja: '面白いね。',
+            en: 'Interesting.',
+            es: 'Qué interesante.',
+            fr: 'Intéressant.',
+            de: 'Interessant.',
+            pt: 'Interessante.'
+        }[locale] || 'Interesting.';
+        const pauseBeat = {
+            ko: '*잠깐 정적이 흐른다.*',
+            ja: '*しばし沈黙が流れる。*',
+            en: '*A brief silence follows.*',
+            es: '*Se hace un breve silencio.*',
+            fr: '*Un bref silence s’installe.*',
+            de: '*Für einen Moment herrscht Stille.*',
+            pt: '*Um breve silêncio se instala.*'
+        }[locale] || '*A brief silence follows.*';
+        const shortPause = {
+            ko: '잠깐',
+            ja: 'しばらく',
+            en: 'a brief pause',
+            es: 'una breve pausa',
+            fr: 'un bref instant',
+            de: 'einen Moment',
+            pt: 'uma breve pausa'
+        }[locale] || 'a brief pause';
+
+        return text
+            .replace(/\bInterest\s*[+-]\s*\d+\b\.?/gi, interestText)
+            .replace(/\bAffinity\s*[+-]\s*\d+\b\.?/gi, '')
+            .replace(/\bSTAT(?:S)?\s*[+-]\s*\d+\b\.?/gi, '')
+            .replace(/(?:흥미|관심)\s*[+-]\s*\d+/g, locale === 'ko' ? '흥미롭네' : interestText)
+            .replace(/(?:호감도|호감|친밀도)\s*[+-]\s*\d+/g, '')
+            .replace(/(?:興味|関心)\s*[+-]\s*\d+/g, locale === 'ja' ? '面白いね。' : interestText)
+            .replace(/(?:好感度|好感|親密度)\s*[+-]\s*\d+/g, '')
+            .replace(/(?:Δ|delta)\s*[+-]\s*\d+/gi, '')
+            .replace(/\*\s*\d+(?:[.,]\d+)?\s*(?:초간|초|秒|sec(?:onds?)?|second(?:s)?|seg(?:undos?)?|Sek(?:unden)?)\.?\s*\*/gi, pauseBeat)
+            .replace(/\b\d+(?:[.,]\d+)?\s*(?:sec(?:onds?)?|second(?:s)?|seg(?:undos?)?|Sek(?:unden)?)\b\.?/gi, shortPause)
+            .replace(/\d+(?:[.,]\d+)?\s*(?:초간|초|秒)\.?/g, shortPause)
+            .replace(/\s{2,}/g, ' ')
+            .replace(/\s+([.?!,;:])/g, '$1')
+            .trim();
+    }
+
+    _sanitizeVisibleArtifactsHistory(messages) {
+        if (!Array.isArray(messages)) return messages || [];
+
+        return messages.map((msg) => {
+            if (!msg || msg.role !== 'assistant') return msg;
+            const next = { ...msg };
+            if (typeof next.content === 'string') {
+                next.content = this._sanitizeVisibleArtifacts(next.content);
+            }
+            if (Array.isArray(next.segments)) {
+                next.segments = this._sanitizeSegmentsPlaceholders(next.segments);
+            }
+            return next;
+        });
     }
 
     _parseResponse(reply) {
         if (!reply) return { text: '', segments: null, expression: '' };
 
         const likelyJson = reply.includes('{') || reply.includes('```json');
-        if (!likelyJson) return { text: this._sanitizePlayerPlaceholders(reply), segments: null, expression: '' };
+        if (!likelyJson) {
+            return {
+                text: this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(reply)),
+                segments: null,
+                expression: ''
+            };
+        }
 
         try {
             let jsonStr = reply;
@@ -1556,7 +1643,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 const normalizedSegments = this._normalizeSegments(parsed.segments);
                 const derivedText = parsed.text || this._segmentsToText(normalizedSegments);
                 return {
-                    text: this._sanitizePlayerPlaceholders(derivedText),
+                    text: this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(derivedText)),
                     segments: this._sanitizeSegmentsPlaceholders(normalizedSegments),
                     expression: (parsed.expression || '').toLowerCase()
                 };
@@ -1565,7 +1652,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             // 레거시 — text 필드 사용
             if (parsed && typeof parsed === 'object' && typeof parsed.text === 'string') {
                 return {
-                    text: this._sanitizePlayerPlaceholders(parsed.text || ''),
+                    text: this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(parsed.text || '')),
                     segments: null,
                     expression: (parsed.expression || '').toLowerCase()
                 };
@@ -1573,7 +1660,11 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
             // 알려진 텍스트 키 폴백
             const text = parsed.text || parsed.dialogue || parsed.content || parsed.message || parsed.response || '';
-            return { text: this._sanitizePlayerPlaceholders(text), segments: null, expression: (parsed.expression || '').toLowerCase() };
+            return {
+                text: this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(text)),
+                segments: null,
+                expression: (parsed.expression || '').toLowerCase()
+            };
 
         } catch (e) {
             window.reportCupidCaughtError?.(e, {
@@ -1602,7 +1693,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const out = [];
         for (const seg of raw) {
             if (!seg || typeof seg !== 'object') continue;
-            const text = this._sanitizePlayerPlaceholders(typeof seg.text === 'string' ? seg.text.trim() : '');
+            const text = this._sanitizeVisibleArtifacts(
+                this._sanitizePlayerPlaceholders(typeof seg.text === 'string' ? seg.text.trim() : '')
+            );
             if (!text) continue;
             let type = (typeof seg.type === 'string') ? seg.type.toLowerCase() : '';
             if (type === 'action' || type === 'narrate' || type === 'narrator' || type === 'desc' || type === 'description' || type === 'scene') {
@@ -1642,7 +1735,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         if (!Array.isArray(segments) || segments.length === 0) return '';
         return segments.map(s => {
             if (!s || !s.text) return '';
-            const text = this._sanitizePlayerPlaceholders(s.text);
+            const text = this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(s.text));
             return s.type === 'narration' ? `*${text}*` : text;
         }).filter(Boolean).join(' ');
     }
@@ -1653,7 +1746,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
      */
     _extractText(content) {
         const parsed = this._parseResponse(content);
-        return parsed.text || content;
+        return parsed.text || this._sanitizeVisibleArtifacts(content);
     }
 
     // =========================================================================
@@ -1891,7 +1984,11 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const previewImg = root.querySelector('#image-preview');
         const uploadBtn = root.querySelector('#upload-image-btn');
         const removeBtn = root.querySelector('#remove-image-btn');
-        const label = this.lang === 'ko' ? '\uc5c5\ub85c\ub4dc \uc911' : 'Uploading';
+        const label = this.lang === 'ko'
+            ? '\uc5c5\ub85c\ub4dc \uc911'
+            : this.lang === 'ja'
+                ? '\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u4e2d'
+                : 'Uploading';
 
         if (previewSrc && previewImg) {
             previewImg.src = previewSrc;
@@ -1922,7 +2019,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 '이미지 파일만 업로드 가능합니다.',
                 'Only image files can be uploaded.',
                 'Solo se pueden subir archivos de imagen.',
-                '画像ファイルのみアップロード可能です。',
+                '画像ファイルのみアップロードできます。',
                 'Seuls les fichiers image peuvent être téléchargés.',
                 'Nur Bilddateien können hochgeladen werden.',
                 'Somente arquivos de imagem podem ser enviados.'
@@ -2029,7 +2126,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             '<b>Tip:</b> <i>*웃으며* 자기야~</i> 처럼 어조나 상황을 표현해보세요.',
             '<b>Tip:</b> Describe tone in asterisks, e.g., <i>*smiling* Hey...</i>',
             '<b>Tip:</b> Describe el tono con asteriscos, ej: <i>*sonriendo* Hola...</i>',
-            '<b>Tip:</b> <i>*笑顔で* ねぇ</i> のように、雰囲気や状況を表現してみてね。',
+            '<b>ヒント：</b>「<i>*笑顔で* ねえ</i>」のように、雰囲気や状況も添えてみてね。',
             '<b>Tip :</b> Décrivez le ton avec des astérisques, ex : <i>*en souriant* Salut...</i>',
             '<b>Tipp:</b> Beschreibe den Ton mit Sternchen, z.B. <i>*lächelnd* Hey...</i>',
             '<b>Dica:</b> Descreva o tom com asteriscos, ex: <i>*sorrindo* Oi...</i>'
@@ -2135,6 +2232,12 @@ ${compactGalleryState}`;
             [/교복 소매/g, '검정 암슬리브'],
             [/교복 치마/g, '트레이닝 팬츠'],
             [/교복/g, '스포티한 일상복'],
+            [/制服の裾/g, 'スウェットの裾'],
+            [/制服の袖/g, '黒いアームスリーブ'],
+            [/(?:制服のスカート|制服スカート)/g, 'トレーニングパンツ'],
+            [/ブレザー/g, 'スポーティーな上着'],
+            [/ネクタイ/g, 'ウェアの襟元'],
+            [/制服/g, 'スポーティーな私服'],
             [/school-uniform hem/gi, 'sweatshirt hem'],
             [/school-uniform sleeve/gi, 'black arm sleeve'],
             [/school skirt/gi, 'track pants'],
