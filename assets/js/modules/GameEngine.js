@@ -410,7 +410,7 @@ class GameEngine {
                 } else {
                     // 다음 씬이 없으면 오류 메시지
                     const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
-                    const errorMsg = { es: "No hay opciones disponibles y la siguiente escena no está definida.", ja: "選択肢がなく、次のシーンが定義されていません。シナリオデータを確認してください。", en: "No available choices and next scene not defined. Please check the scenario data.", fr: "Aucun choix disponible et la scène suivante n'est pas définie.", de: "Keine verfügbaren Auswahlmöglichkeiten und nächste Szene nicht definiert.", pt: "Nenhuma escolha disponível e próxima cena não definida. Verifique os dados do cenário." }[lang] || "선택지가 없고 다음 씬이 정의되지 않았습니다. 시나리오 데이터를 확인하세요.";
+                    const errorMsg = { es: "No hay opciones disponibles y no se ha definido la siguiente escena. Revisa los datos del escenario.", ja: "選択肢がなく、次のシーンが定義されていません。シナリオデータを確認してください。", en: "No choices are available, and the next scene is not defined. Please check the scenario data.", fr: "Aucun choix n'est disponible et la scène suivante n'est pas définie. Vérifiez les données du scénario.", de: "Es sind keine Auswahlmöglichkeiten verfügbar, und die nächste Szene ist nicht definiert. Überprüfe die Szenariodaten.", pt: "Não há opções disponíveis, e a próxima cena não foi definida. Verifique os dados do cenário." }[lang] || "선택지가 없고 다음 씬이 정의되지 않았습니다. 시나리오 데이터를 확인하세요.";
                     await this.uiManager.showModal(errorMsg, true);
                 }
                 return;
@@ -812,7 +812,7 @@ class GameEngine {
             // en/es/fr/de/pt 페이지: Latin + 악센트 1-12자
             const latinRegex = /^[a-zA-ZÀ-ÖØ-öø-ÿĀ-ſ]{1,12}$/;
             if (!latinRegex.test(name)) {
-                msg = { en: "Please enter 1-12 letters (accents allowed).", es: "Ingresa 1-12 letras (se permiten acentos).", fr: "Veuillez entrer 1-12 lettres (accents autorisés).", de: "Bitte gib 1-12 Buchstaben ein (Umlaute erlaubt).", pt: "Insira 1-12 letras (acentos permitidos)." }[lang] || "Please enter 1-12 letters.";
+                msg = { en: "Please enter 1–12 letters (accents are allowed).", es: "Ingresa entre 1 y 12 letras (se permiten acentos).", fr: "Veuillez saisir entre 1 et 12 lettres (accents autorisés).", de: "Gib 1 bis 12 Buchstaben ein (Umlaute sind erlaubt).", pt: "Digite de 1 a 12 letras (acentos são permitidos)." }[lang] || "Please enter 1–12 letters.";
             }
         }
 
@@ -1256,10 +1256,10 @@ class GameEngine {
                 creditsLayer.innerHTML = `
                     <div id="credits-content">
                         <div class="credits-title">CUPID</div>
-                        <div class="credits-subtitle">${ct({ es: 'Donde cae la flecha de Cupido', ja: 'キューピッドの矢が届く場所', en: 'Where Cupid\'s Arrow Lands', fr: 'Là où la flèche de Cupidon se pose', de: 'Wo Amors Pfeil trifft', pt: 'Onde a Flecha de Cupido Pousa', ko: '사랑의 화살이 닿는 곳' })}</div>
+                        <div class="credits-subtitle">${ct({ es: 'Donde cae la flecha de Cupido', ja: 'キューピッドの矢が届く場所', en: 'Where Cupid\'s Arrow Lands', fr: 'Là où la flèche de Cupidon se pose', de: 'Wo Amors Pfeil trifft', pt: 'Onde pousa a flecha de Cupido', ko: '사랑의 화살이 닿는 곳' })}</div>
                         <div class="credits-divider">─ ─ ─</div>
                         <div class="credits-section">
-                            <div class="credits-role">${ct({ es: 'Planificación · Guión', ja: '企画・シナリオ', en: 'Planning · Scenario', fr: 'Planification · Scénario', de: 'Planung · Szenario', pt: 'Planejamento · Cenário', ko: '기획 · 시나리오' })}</div>
+                            <div class="credits-role">${ct({ es: 'Planificación · Guion', ja: '企画・シナリオ', en: 'Planning · Writing', fr: 'Conception · Scénario', de: 'Konzept · Szenario', pt: 'Planejamento · Roteiro', ko: '기획 · 시나리오' })}</div>
                             <div class="credits-name">${ct({ es: 'Hyungyu Jang · Yujin Kim · Sanghun Lee', ja: 'Hyungyu Jang · Yujin Kim · Sanghun Lee', en: 'Hyungyu Jang · Yujin Kim · Sanghun Lee', fr: 'Hyungyu Jang · Yujin Kim · Sanghun Lee', de: 'Hyungyu Jang · Yujin Kim · Sanghun Lee', pt: 'Hyungyu Jang · Yujin Kim · Sanghun Lee', ko: '장현규 · 김유진 · 이상훈' })}</div>
                         </div>
                         <div class="credits-section">
@@ -1278,22 +1278,22 @@ class GameEngine {
                         <div class="credits-section">
                             <div class="credits-role">${ct({ es: 'Personajes', ja: '登場人物', en: 'Characters', fr: 'Personnages', de: 'Charaktere', pt: 'Personagens', ko: '등장인물' })}</div>
                             <div class="credits-name">${ct({ es: 'Seoyeon · Yuna · Dain', ja: 'ソヨン · ユナ · ダイン', en: 'Seoyeon · Yuna · Dain', fr: 'Seoyeon · Yuna · Dain', de: 'Seoyeon · Yuna · Dain', pt: 'Seoyeon · Yuna · Dain', ko: '서연 · 유나 · 다인' })}</div>
-                            <div class="credits-name">${ct({ es: 'Enfermera · Profesora', ja: '保健室の先生・担任の先生', en: 'School Nurse · Homeroom Teacher', fr: 'Infirmière Scolaire · Professeur Principal', de: 'Schulkrankenschwester · Lehrerin', pt: 'Enfermeira · Professora', ko: '보건선생님 · 담임선생님' })}</div>
+                            <div class="credits-name">${ct({ es: 'Enfermera escolar · Profesora tutora', ja: '保健室の先生・担任の先生', en: 'School Nurse · Homeroom Teacher', fr: 'Infirmière scolaire · Professeure principale', de: 'Schulkrankenschwester · Klassenlehrerin', pt: 'Enfermeira escolar · Professora da turma', ko: '보건선생님 · 담임선생님' })}</div>
                         </div>
                         <div class="credits-divider">─ ─ ─</div>
                         <div class="credits-section">
-                            <div class="credits-role">${ct({ es: 'Producción', ja: '制作', en: 'Production', fr: 'Produit par', de: 'Produktion', pt: 'Produção', ko: '제작' })}</div>
+                            <div class="credits-role">${ct({ es: 'Producción', ja: '制作', en: 'Production', fr: 'Production', de: 'Produktion', pt: 'Produção', ko: '제작' })}</div>
                             <div class="credits-name">${ct({ es: 'Hyungyu Jang · Yujin Kim', ja: 'Hyungyu Jang · Yujin Kim', en: 'Hyungyu Jang · Yujin Kim', fr: 'Hyungyu Jang · Yujin Kim', de: 'Hyungyu Jang · Yujin Kim', pt: 'Hyungyu Jang · Yujin Kim', ko: '장현규 · 김유진' })}</div>
                         </div>
                         <div class="credits-divider">─ ─ ─</div>
                         <div class="credits-section">
-                            <div class="credits-role">${ct({ es: 'Agradecimientos Especiales', ja: 'スペシャルサンクス', en: 'Special Thanks', fr: 'Remerciements Spéciaux', de: 'Besonderer Dank', pt: 'Agradecimentos Especiais', ko: 'Special Thanks' })}</div>
+                            <div class="credits-role">${ct({ es: 'Agradecimientos especiales', ja: 'スペシャルサンクス', en: 'Special Thanks', fr: 'Remerciements', de: 'Besonderer Dank', pt: 'Agradecimentos especiais', ko: 'Special Thanks' })}</div>
                             <div class="credits-name">${ct({ es: '¡Gracias por jugar!', ja: 'プレイしていただき、ありがとうございました。', en: 'Thank you for playing!', fr: 'Merci d\'avoir joué !', de: 'Vielen Dank fürs Spielen!', pt: 'Obrigado por jogar!', ko: '플레이해 주신 여러분께' })}</div>
-                            <div class="credits-name">${ct({ es: 'Lo apreciamos sinceramente.', ja: '心より感謝申し上げます。', en: 'We sincerely appreciate it.', fr: 'Nous vous en sommes sincèrement reconnaissants.', de: 'Wir schätzen es aufrichtig.', pt: 'Agradecemos sinceramente.', ko: '진심으로 감사드립니다' })}</div>
+                            <div class="credits-name">${ct({ es: 'Te lo agradecemos de corazón.', ja: '心より感謝申し上げます。', en: 'We truly appreciate your support.', fr: 'Merci du fond du cœur.', de: 'Wir danken dir von Herzen.', pt: 'Agradecemos de coração.', ko: '진심으로 감사드립니다' })}</div>
                         </div>
                         <div class="credits-spacer"></div>
                         <div class="credits-final">Cupid © 2026 ArcherLab</div>
-                        <div class="credits-final">Thank you for playing</div>
+                        <div class="credits-final">${ct({ es: 'Gracias por jugar', ja: 'プレイしていただき、ありがとうございました', en: 'Thank you for playing', fr: 'Merci d\'avoir joué', de: 'Vielen Dank fürs Spielen', pt: 'Obrigado por jogar', ko: '플레이해 주셔서 감사합니다' })}</div>
                         <div class="credits-spacer"></div>
                     </div>`;
                 document.getElementById('game-container').appendChild(creditsLayer);
@@ -1333,7 +1333,15 @@ class GameEngine {
                 const creditsLang = String(window.GAME_LANG || document.documentElement.lang || 'ko')
                     .toLowerCase()
                     .split('-')[0];
-                skipBtn.textContent = creditsLang === 'ja' ? 'スキップ ▶' : 'SKIP ▶';
+                skipBtn.textContent = {
+                    ko: '건너뛰기 ▶',
+                    en: 'Skip ▶',
+                    es: 'Saltar ▶',
+                    ja: 'スキップ ▶',
+                    fr: 'Passer ▶',
+                    de: 'Überspringen ▶',
+                    pt: 'Pular ▶'
+                }[creditsLang] || 'Skip ▶';
                 creditsLayer.appendChild(skipBtn);
             }
 

@@ -29,9 +29,16 @@
                     
                     var text = document.createElement('p');
                     const pageLang = String(document.documentElement.lang || 'ko').toLowerCase().split('-')[0];
-                    text.innerHTML = pageLang === 'ja'
-                        ? '<b>Chromeブラウザ</b>に移動しました。<br>新しく開いた画面でゲームを続けてください。<br><br><span style="font-size:14px;color:#aaa;">この画面は閉じてもかまいません。</span>'
-                        : '<b>Chrome 브라우저</b>로 이동했습니다.<br>새로 열린 창에서 게임을 이어가세요.<br><br><span style="font-size:14px;color:#aaa;">이 창은 닫으셔도 됩니다.</span>';
+                    const androidChromeMessages = {
+                        ko: '<b>Chrome 브라우저</b>로 이동했습니다.<br>새로 열린 창에서 게임을 이어가세요.<br><br><span style="font-size:14px;color:#aaa;">이 창은 닫으셔도 됩니다.</span>',
+                        en: 'You have been redirected to <b>Chrome</b>.<br>Continue playing in the new window.<br><br><span style="font-size:14px;color:#aaa;">You can close this window.</span>',
+                        es: 'Te hemos redirigido a <b>Chrome</b>.<br>Continúa jugando en la nueva ventana.<br><br><span style="font-size:14px;color:#aaa;">Puedes cerrar esta ventana.</span>',
+                        ja: '<b>Chromeブラウザ</b>に移動しました。<br>新しく開いた画面でゲームを続けてください。<br><br><span style="font-size:14px;color:#aaa;">この画面は閉じてもかまいません。</span>',
+                        fr: 'Vous avez été redirigé vers <b>Chrome</b>.<br>Poursuivez la partie dans la nouvelle fenêtre.<br><br><span style="font-size:14px;color:#aaa;">Vous pouvez fermer cette fenêtre.</span>',
+                        de: 'Du wurdest zu <b>Chrome</b> weitergeleitet.<br>Spiele im neuen Fenster weiter.<br><br><span style="font-size:14px;color:#aaa;">Dieses Fenster kannst du schließen.</span>',
+                        pt: 'Você foi redirecionado para o <b>Chrome</b>.<br>Continue jogando na nova janela.<br><br><span style="font-size:14px;color:#aaa;">Você pode fechar esta janela.</span>'
+                    };
+                    text.innerHTML = androidChromeMessages[pageLang] || androidChromeMessages.en;
                     text.style.lineHeight = '1.6';
                     
                     container.appendChild(icon);
@@ -58,7 +65,7 @@
                     },
                     es: {
                         btn: "Compartir",
-                        msg: "Este juego funciona mejor en Safari.<br><br>Por favor, toque el botón <b>[ {btn} ]</b><br>en la parte inferior derecha y seleccione<br><b>[Abrir en Safari]</b>."
+                        msg: "Este juego funciona mejor en Safari.<br><br>Toca <b>[ {btn} ]</b> en la esquina inferior derecha<br>y selecciona <b>[Abrir en Safari]</b>."
                     },
                     fr: {
                         btn: "Partager",
@@ -70,7 +77,7 @@
                     },
                     pt: {
                         btn: "Compartilhar",
-                        msg: "Este jogo funciona melhor no Safari.<br><br>Toque no botão <b>[ {btn} ]</b> no canto inferior direito<br>e selecione <b>[Abrir no Safari]</b>."
+                        msg: "Este jogo funciona melhor no Safari.<br><br>Toque em <b>[ {btn} ]</b> no canto inferior direito<br>e selecione <b>[Abrir no Safari]</b>."
                     }
                 };
 

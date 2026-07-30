@@ -65,7 +65,7 @@
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",
-        "text": "*Elle dit que c'est un secret en riant — mais ses yeux ne rient pas.*",
+        "text": "*Elle parle de secret, mais les jointures de la main qui serre la poignée du tiroir ont blanchi.*",
         "choices": [
             "Vous avez beaucoup de secrets. Vous pouvez m'en dire un seul ?",
             "Oui, j'ai rien vu"
@@ -73,11 +73,11 @@
     },
     "hidden_nurse_d2_choice2_a": {
         "name": "Infirmière",
-        "text": "*Elle plisse les yeux.* Un seul ? ...Bon, d'accord. Je préfère le chocolat chaud au café. Voilà le secret."
+        "text": "*Elle tapote le tiroir fermé de l'index.* Un seul ? Bon, d'accord. Je préfère le chocolat chaud au café. Voilà le secret."
     },
     "hidden_nurse_d2_choice2_b": {
         "name": "Infirmière",
-        "text": "*Elle rit doucement.* Un secret. Ça te suffit, non ?"
+        "text": "*Elle lâche la poignée du tiroir.* Un secret. Ça te suffit, non ?"
     },
     "hidden_nurse_d2_8": {
         "name": "Infirmière",
@@ -134,7 +134,7 @@
     },
     "after2_dain_9_b": {
         "name": "Dain",
-        "text": "*Les yeux écarquillés* Hein ? J'allais y aller doucement, mais tant pis."
+        "text": "*Elle récupère des deux mains le ballon qui a rebondi.* Hein ? J'allais y aller doucement, mais tant pis."
     },
     "after2_dain_9_c": {
         "name": "Dain",
@@ -146,11 +146,11 @@
     },
     "after2_dain_9_e": {
         "name": "{name}",
-        "text": "*L'échange continue. Rapide et précise — mais à chaque atterrissage, plus de poids sur la jambe gauche. Elle évite le côté droit.*"
+        "text": "*L'échange s'accélère. À chaque réception, Dain pose d'abord le pied gauche ; le droit ne touche le sol qu'une demi-seconde plus tard.*"
     },
     "after2_dain_9_f": {
         "name": "{name}",
-        "text": "*Le tableau affiche 3–2. Je l'emporte de justesse. En se relevant, Dain se frotte une fois le genou droit. Elle sourit toujours.*"
+        "text": "*Le tableau affiche 3–2. En se relevant, Dain se frotte une fois le genou droit, puis retourne le score de la même main.*"
     },
     "after2_dain_11b": {
         "name": "{name}",
@@ -166,7 +166,7 @@
     },
     "after2_dain_14": {
         "name": "Dain",
-        "text": "*Elle sursaute.* Quoi ? Tu m'as roulée ?"
+        "text": "*Elle lâche le ballon qu'elle tenait.* Quoi ? Tu m'as roulée ?"
     },
     "after2_dain_15": {
         "name": "{name}",
@@ -174,11 +174,11 @@
     },
     "after2_dain_16": {
         "name": "Dain",
-        "text": "*Elle me donne un coup dans l'épaule.* Escroc. — Mais c'était vraiment marrant !"
+        "text": "*Elle lève le poing à hauteur d'épaule, puis le ramène contre son flanc.* Escroc. Mais c'était vraiment marrant !"
     },
     "after2_dain_skinship_1": {
         "name": "Dain",
-        "text": "*Nos paumes se rencontrent. Dain rit, puis retire sa main avec un temps de retard.*"
+        "text": "*Nos paumes se rencontrent. Dain ne retire sa main qu'après avoir lancé : « Bien joué ! »*"
     },
     "after2_dain_skinship_2": {
         "name": "Dain",
@@ -186,7 +186,7 @@
     },
     "after2_dain_skinship_3": {
         "name": "{name}",
-        "text": "*Dain passe dans ses cheveux la main qui vient de toucher la mienne.*"
+        "text": "*Dain frotte contre la couture de son survêtement la paume qui vient de heurter la mienne.*"
     },
     "after2_dain_freetalk": {
         "name": "Dain",
@@ -194,11 +194,11 @@
     },
     "after2_dain_end": {
         "name": "{name}",
-        "text": "*Ses yeux ont la forme de demi-lunes. Les mêmes yeux qu'hier.*"
+        "text": "*Dain pousse le gobelet de tteokbokki vers moi avant de déballer ses propres baguettes.*"
     },
     "after2_dain_end_first": {
         "name": "{name}",
-        "text": "*Ses yeux deviennent des demi-lunes.*"
+        "text": "*Dain pose sèchement deux gobelets de tteokbokki et ouvre l'emballage de ses baguettes.*"
     },
     "after2_dain_end_b": {
         "name": "{name}",
@@ -230,7 +230,7 @@
     },
     "after2_dain_end_3c": {
         "name": "{name}",
-        "text": "*'J'étais.' Au passé. — Vaut mieux pas demander maintenant.*"
+        "text": "*À peine « j'étais » prononcé, les baguettes de Dain quittent le gobelet en carton pour se diriger vers le verre d'eau.*"
     },
     "after2_dain_end_3d": {
         "name": "Dain",
@@ -238,7 +238,7 @@
     },
     "after2_dain_end_3e": {
         "name": "Dain",
-        "text": "*Elle pousse la barquette vers {name}, puis réclame volontairement de l'eau à voix haute.*"
+        "text": "*Elle pousse le gobelet de tteokbokki vers {name}, puis agite sa bouteille vide à l'envers.*"
     },
     "after2_dain_return": {
         "name": "{name}",
@@ -258,7 +258,7 @@
     },
     "after2_seo_4": {
         "name": "Seoyeon",
-        "text": "*Elle sourit légèrement.* Obéissant."
+        "text": "*Elle désigne une chaise vide avec le coin de son porte-bloc.* Obéissant."
     },
     "after2_seo_4_b": {
         "name": "Seoyeon",
@@ -314,11 +314,11 @@
     },
     "after2_seo_8b4_b": {
         "name": "Seoyeon",
-        "text": "*Elle dit que c'est un compliment, puis retourne directement à ses papiers. Au moment où elle tourne la tête, ses épaules se raidissent—à peine.*"
+        "text": "*Elle dit que c'est un compliment, puis retourne aussitôt à ses papiers. En roulant la nuque, elle tire une fois sur le col de sa chemise.*"
     },
     "after2_seo_choice1": {
         "name": "{name}",
-        "text": "*Le soleil couchant entre par la fenêtre. Seoyeon aligne les bords des documents.*",
+        "text": "*Une bande orange traverse les stores et coupe en deux la pile de documents. Seoyeon en aligne les coins.*",
         "choices": [
             "C'est un beau coucher de soleil. Je parle de la vue.",
             "Tu as mal au cou ? Fais des pauses."
@@ -326,11 +326,11 @@
     },
     "after2_seo_sunset_joke": {
         "name": "Seoyeon",
-        "text": "*Elle hésite. Derrière ses lunettes, son regard s'adoucit en premier.*"
+        "text": "*Ses lunettes glissent légèrement vers le bout de son nez et la pointe de son stylo dérape hors de la case réservée à la date.*"
     },
     "after2_seo_sunset_joke_b": {
         "name": "Seoyeon",
-        "text": "*Même en cachant le coin de ses lèvres derrière les papiers, on voit qu'elle sourit.*"
+        "text": "*Tandis qu'elle cache sa bouche derrière le bord des documents, le capuchon de son stylo roule sous le bureau.*"
     },
     "after2_seo_sunset_react": {
         "name": "Seoyeon",
@@ -338,7 +338,7 @@
     },
     "after2_seo_sunset_react_b": {
         "name": "Seoyeon",
-        "text": "*Elle cache sa bouche derrière le bord des papiers et regarde dehors un moment.*"
+        "text": "*La bouche toujours cachée derrière les documents, elle suit de la pointe de son stylo la bande orange sur le cadre de la fenêtre.*"
     },
     "after2_seo_neck_worry": {
         "name": "Seoyeon",
@@ -382,7 +382,7 @@
     },
     "after2_seo_neck_low": {
         "name": "{name}",
-        "text": "*Je commence à lui tendre la boîte, puis je m'arrête.*"
+        "text": "*Je pose la boîte à dossiers au bord du bureau, entre nous deux.*"
     },
     "after2_seo_neck_low_b": {
         "name": "{name}",
@@ -398,7 +398,7 @@
     },
     "after2_seo_9": {
         "name": "{name}",
-        "text": "*Le soleil couchant baigne la salle du conseil. Le tri est presque terminé.*"
+        "text": "*Quand l'ombre des stores atteint enfin le bord du bureau, le tri est presque terminé.*"
     },
     "after2_seo_choice2": {
         "name": "{name}",
@@ -410,7 +410,7 @@
     },
     "after2_seo_stay": {
         "name": "Seoyeon",
-        "text": "*Elle pose les documents et regarde par la fenêtre. La lumière du couchant touche son visage.*"
+        "text": "*Elle pose les documents et relève les stores d'un cran.*"
     },
     "after2_seo_stay_2": {
         "name": "Seoyeon",
@@ -426,23 +426,23 @@
     },
     "after2_seo_stay_3c": {
         "name": "{name}",
-        "text": "*Le porte-bloc de Seoyeon repose face contre le bureau. La lumière du couchant s'y attarde longtemps.*"
+        "text": "*Le porte-bloc de Seoyeon repose face contre le bureau, avec la dernière feuille posée à côté.*"
     },
     "after2_seo_leave": {
         "name": "Seoyeon",
-        "text": "*Elle hoche la tête.*"
+        "text": "*Des deux mains, elle appuie une fois sur la pile terminée pour en aligner les bords.*"
     },
     "after2_seo_end": {
         "name": "{name}",
-        "text": "*Je sors de la salle du conseil. Le couchant peint le couloir.*"
+        "text": "*Quand je quitte la salle du conseil, les éclairages automatiques du couloir s'allument un à un devant moi.*"
     },
     "after2_seo_skinship_1": {
         "name": "Seoyeon",
-        "text": "*Elle tend la main et retire un grain de poussière de mon col. Ses doigts effleurent mon cou.*"
+        "text": "*Au moment où Seoyeon tend la main pour retirer une poussière de mon col, le dos de sa main effleure mon cou.*"
     },
     "after2_seo_skinship_2": {
         "name": "Seoyeon",
-        "text": "*Ses doigts s'arrêtent. Elle détourne la tête sans un mot. Le bruit du couloir paraît soudain beaucoup plus fort.*"
+        "text": "*Ses doigts restent posés sur le col de ma chemise. Elle ne retire sa main qu'après le passage du chariot de ménage dans le couloir.*"
     },
     "after2_seo_skinship_3": {
         "name": "Seoyeon",
@@ -458,15 +458,15 @@
     },
     "after2_yuna_1_b": {
         "name": "{name}",
-        "text": "*Le couloir de l'annexe. Pas âme qui vive. — La porte de la salle de lecture secrète est entrouverte.*"
+        "text": "*Le couloir de l'annexe est désert. Seule la porte de la salle de lecture secrète est entrouverte de la largeur de deux phalanges.*"
     },
     "after2_yuna_2": {
         "name": "{name}",
-        "text": "*J'entre discrètement. Yuna est sur le canapé, en train de lire. Le soleil couchant entre par la fenêtre.*"
+        "text": "*Quand je pousse la porte, les vieilles charnières grincent brièvement. Yuna lit sur le canapé ; l'ombre du cadre de la fenêtre atteint désormais le dos de son livre.*"
     },
     "after2_yuna_2_b": {
         "name": "Yuna",
-        "text": "*Elle lève les yeux. Pas surprise.*"
+        "text": "*Elle pousse sur le côté l'un des écouteurs posé sur son livre.*"
     },
     "after2_yuna_3": {
         "name": "Yuna",
@@ -482,7 +482,7 @@
     },
     "after2_yuna_6": {
         "name": "Yuna",
-        "text": "*Elle ne tourne pas la page. Seuls ses doigts bougent.*"
+        "text": "*Son index suit deux fois la même phrase.*"
     },
     "after2_yuna_7": {
         "name": "{name}",
@@ -494,7 +494,7 @@
     },
     "after2_yuna_8b": {
         "name": "{name}",
-        "text": "*La porte est ouverte, comme par hasard. Sur la chaise au fond, une oreillette est déjà posée. Yuna désigne silencieusement la place à côté d'elle d'un mouvement du menton.*"
+        "text": "*Un écouteur est déjà posé sur la chaise au fond. Yuna désigne d'un mouvement du menton le coussin à côté d'elle.*"
     },
     "after2_yuna_8c": {
         "name": "Yuna",
@@ -502,11 +502,11 @@
     },
     "after2_yuna_8d": {
         "name": "{name}",
-        "text": "*Un morceau de piano paisible joue. Le soleil couchant colore la pièce. Yuna lit tandis que j'écoute. Aucun mot. Seule la musique résonne doucement.*"
+        "text": "*Un morceau de piano feutré s'échappe des écouteurs. Yuna lit ; de mon côté, le fil passe dans la fente du canapé et reste tendu entre nous.*"
     },
     "after2_yuna_choice_pre1": {
         "name": "Yuna",
-        "text": "*Après un long moment* ...Quelqu'un qui vient ici après les cours."
+        "text": "*Elle démêle une fois le fil des écouteurs avant de parler.* Quelqu'un qui vient ici après les cours..."
     },
     "after2_yuna_choice_pre2": {
         "name": "{name}",
@@ -530,7 +530,7 @@
     },
     "after2_yuna_everyday": {
         "name": "Yuna",
-        "text": "*Elle tripote le fil de l'écouteur.*"
+        "text": "*Elle défait le nœud du fil, puis l'enroule de nouveau autour de son index.*"
     },
     "after2_yuna_everyday_b": {
         "name": "Yuna",
@@ -550,7 +550,7 @@
     },
     "after2_yuna_quiet_react": {
         "name": "Yuna",
-        "text": "*Elle rit très doucement. La page suivante se tourne tranquillement.*"
+        "text": "*Elle recule son marque-page d'une page. L'écouteur posé au bout du canapé reste à sa place.*"
     },
     "after2_yuna_end": {
         "name": "{name}",
@@ -562,15 +562,15 @@
     },
     "after2_yuna_skinship_2": {
         "name": "Yuna",
-        "text": "*Elle ne retire pas sa main en premier. Trois secondes. Elle baisse les yeux.*"
+        "text": "*Le coin du livre appuie sur nos mains superposées. Trois secondes passent avant que Yuna retire enfin la sienne.*"
     },
     "after2_yuna_skinship_3": {
         "name": "{name}",
-        "text": "*Je retire ma main. Yuna prend le livre et me le tend sans un mot.*"
+        "text": "*Après avoir retiré sa main, Yuna tourne le livre pour orienter le dos vers moi, puis me le tend.*"
     },
     "after2_yuna_return": {
         "name": "{name}",
-        "text": "*Je quitte l'annexe de la bibliothèque. Le soleil se couche.*"
+        "text": "*Quand je quitte l'annexe de la bibliothèque, l'éclairage automatique du couloir s'allume.*"
     },
     "minsu_warn_gate": {},
     "minsu_warn_1": {
@@ -595,7 +595,7 @@
     },
     "minsu_warn_4_b": {
         "name": "{name}",
-        "text": "*Dit sur le ton de la blague, mais les yeux de Minsu ne rient pas vraiment.*"
+        "text": "*Le ton est taquin, mais Minsu ne quitte pas des yeux le feu du passage piéton, de l'autre côté du portail.*"
     },
     "minsu_warn_5": {
         "name": "{name}",

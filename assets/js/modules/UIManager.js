@@ -175,7 +175,7 @@ class UIManager {
                             const btn = document.createElement('button');
                             btn.type = 'button';
                             btn.id = 'upload-image-btn';
-                            btn.title = { es: 'Subir imagen', ja: '画像をアップロード', en: 'Upload image', fr: 'Télécharger une image', de: 'Bild hochladen', pt: 'Enviar imagem' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 업로드';
+                            btn.title = { es: 'Subir imagen', ja: '画像をアップロード', en: 'Upload image', fr: 'Ajouter une image', de: 'Bild hochladen', pt: 'Enviar imagem' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 업로드';
                             btn.innerHTML = '<span aria-hidden="true">📸</span>';
                             container.appendChild(btn);
                             this.imageUploadBtn = btn;
@@ -355,11 +355,15 @@ class UIManager {
      */
     _setImageUploadState(isUploading, previewSrc = null) {
         const lang = window.GAME_LANG || document.documentElement.lang;
-        const label = lang === 'ko'
-            ? '\uc5c5\ub85c\ub4dc \uc911'
-            : lang === 'ja'
-                ? '\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u4e2d'
-                : 'Uploading';
+        const label = {
+            ko: '\uc5c5\ub85c\ub4dc \uc911',
+            en: 'Uploading',
+            es: 'Subiendo',
+            ja: '\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u4e2d',
+            fr: 'Téléversement en cours',
+            de: 'Wird hochgeladen',
+            pt: 'Enviando'
+        }[String(lang).toLowerCase().split('-')[0]] || 'Uploading';
 
         if (previewSrc && this.imagePreview) {
             this.imagePreview.src = previewSrc;
@@ -387,7 +391,7 @@ class UIManager {
 
     handleImageUpload(file) {
         if (!file.type.startsWith('image/')) {
-            alert({ es: 'Solo se pueden subir archivos de imagen.', ja: '画像ファイルのみアップロードできます。', en: 'Only image files can be uploaded.', fr: 'Seuls les fichiers image peuvent être téléchargés.', de: 'Nur Bilddateien können hochgeladen werden.', pt: 'Apenas arquivos de imagem podem ser enviados.' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 파일만 업로드 가능합니다.');
+            alert({ es: 'Solo se pueden subir archivos de imagen.', ja: '画像ファイルのみアップロードできます。', en: 'Only image files can be uploaded.', fr: 'Seuls les fichiers image peuvent être ajoutés.', de: 'Nur Bilddateien können hochgeladen werden.', pt: 'Apenas arquivos de imagem podem ser enviados.' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 파일만 업로드 가능합니다.');
             return;
         }
         if (file.size > 50 * 1024 * 1024) {
@@ -470,7 +474,15 @@ class UIManager {
                 const previewLang = String(window.GAME_LANG || document.documentElement.lang || 'ko')
                     .toLowerCase()
                     .split('-')[0];
-                this.imagePreview.alt = previewLang === 'ja' ? '選択した画像' : 'Selected image';
+                this.imagePreview.alt = {
+                    ko: '선택한 이미지',
+                    en: 'Selected image',
+                    es: 'Imagen seleccionada',
+                    ja: '選択した画像',
+                    fr: 'Image sélectionnée',
+                    de: 'Ausgewähltes Bild',
+                    pt: 'Imagem selecionada'
+                }[previewLang] || 'Selected image';
             }
             if (this.imagePreviewContainer) {
                 this.imagePreviewContainer.style.display = 'inline-flex';
@@ -660,11 +672,11 @@ class UIManager {
         const nameMapByLang = {
             ko: { Seoyeon: '서연', Yuna: '유나', Dain: '다인', Teacher: '담임', Nurse: '보건' },
             ja: { Seoyeon: 'ソヨン', Yuna: 'ユナ', Dain: 'ダイン', Teacher: '担任の先生', Nurse: '保健室の先生' },
-            en: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Teacher', Nurse: 'Nurse' },
-            es: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Profesora', Nurse: 'Enfermera' },
+            en: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Homeroom Teacher', Nurse: 'School Nurse' },
+            es: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Profesora tutora', Nurse: 'Enfermera escolar' },
             fr: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Professeure', Nurse: 'Infirmière' },
-            de: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Lehrerin', Nurse: 'Krankenschwester' },
-            pt: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Professora', Nurse: 'Enfermeira' }
+            de: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Klassenlehrerin', Nurse: 'Schulkrankenschwester' },
+            pt: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Professora da turma', Nurse: 'Enfermeira escolar' }
         };
         const nameMap = nameMapByLang[lang] || nameMapByLang['ko'];
 

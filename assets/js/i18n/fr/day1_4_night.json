@@ -21,11 +21,11 @@
     },
     "night_msg_seo_4": {
         "name": "Seoyeon",
-        "text": "*...C’est offert*"
+        "text": "*C'est cadeau*"
     },
     "night_msg_seo_5": {
         "name": "{name}",
-        "text": "*Elle a envoyé « C'est offert » sur une ligne séparée exprès.*"
+        "text": "*Elle a envoyé « C'est cadeau » sur une ligne séparée exprès.*"
     },
     "night_msg_yuna_1": {
         "name": "Yuna",
@@ -37,11 +37,11 @@
     },
     "night_msg_yuna_3": {
         "name": "{name}",
-        "text": "*« Je te garderai ta place. » — Ma main s'attarde avant de reposer le téléphone.*"
+        "text": "*Pendant que je relis « Je te garderai ta place », l'écran s'assombrit de lui-même.*"
     },
     "night_msg_dain_1": {
         "name": "Dain",
-        "text": "*La revanche de pierre-feuille-ciseaux c’est DEMAIN !!*"
+        "text": "*La revanche de pierre-feuille-ciseaux, c'est demain*"
     },
     "night_msg_dain_2": {
         "name": "Dain",
@@ -53,7 +53,7 @@
     },
     "night_msg_dain_4": {
         "name": "{name}",
-        "text": "*Les trois messages arrivent presque en même temps. Un rire m'échappe avant même que j'ouvre la zone de réponse.*"
+        "text": "*Les trois messages arrivent presque en même temps. « mdr » est déjà écrit dans la zone de réponse.*"
     },
     "night_hidden_check": {
         "name": "{name}",
@@ -93,23 +93,23 @@
     },
     "night_seo_late_3": {
         "name": "{name}",
-        "text": "*Ma main se fige avant même d'avoir reposé le téléphone.*"
+        "text": "*Quand je repose mon téléphone, l'heure à laquelle je dois arriver demain reste affichée sur l'écran verrouillé.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
-        "text": "*...*"
+        "text": "*Une bulle grise indique : « Ce message a été supprimé. »*"
     },
     "night_yuna_late_2": {
         "name": "{name}",
-        "text": "*L'indicateur de saisie apparaît, puis disparaît. Le seul message qui arrive est « ... ».*"
+        "text": "*L'indicateur de saisie apparaît, puis disparaît peu après. Aucun nouveau message n'arrive.*"
     },
     "night_yuna_late_3": {
         "name": "{name}",
-        "text": "*— J’hésite à répondre, et l’écran s’éteint.*"
+        "text": "*Pendant que j'ouvre puis referme la zone de réponse, l'écran passe en veille.*"
     },
     "night_yuna_late_4": {
         "name": "{name}",
-        "text": "*Même après que l’écran s’est éteint, j’ai gardé le téléphone en main un long moment.*"
+        "text": "*Seule l'empreinte de mon pouce reste sur l'écran noir.*"
     },
     "night_dain_late_1": {
         "name": "Dain",

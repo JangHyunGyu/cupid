@@ -51,15 +51,15 @@
     },
     "minsu_cheer_4_c": {
         "name": "{name}",
-        "text": "*Ich schaue auf den Kalender meines Handys. Morgens Seoyeon, nachmittags Yuna, abends Dain. Ich habe letzte Nacht nicht geschlafen, weil ich versucht habe, alle drei an einem Tag unterzubringen. Wenn sich auch nur ein Termin überschneidet, ist es vorbei.*"
+        "text": "*Ich öffne den Kalender auf meinem Handy. Morgens Seoyeon, nachmittags Yuna, abends Dain. Letzte Nacht habe ich kaum geschlafen, weil ich die Fahrtzeiten zwischen den drei Verabredungen berechnet habe. Wenn sich auch nur zwei überschneiden, fliegt alles auf.*"
     },
     "minsu_cheer_4_d": {
         "name": "{name}",
-        "text": "*...Was mache ich hier eigentlich?*"
+        "text": "*Alle drei Namen stehen auf demselben Bildschirm. Ich sperre den Kalender und öffne ihn gleich wieder.*"
     },
     "minsu_cheer_4_e": {
         "name": "{name}",
-        "text": "*Ich atme tief durch und schaue mir die Date-Nachrichten noch mal an.*"
+        "text": "*Ich berechne die Fahrtzeiten zwischen den drei Verabredungen erneut und schalte sämtliche Kalenderbenachrichtigungen ein.*"
     },
     "morning4_start_2": {
         "name": "{name}",
@@ -83,7 +83,7 @@
     },
     "morning4_yuna_msg_1_b": {
         "name": "{name}",
-        "text": "*Kurz. Typisch Yuna. Hinter ‚Wenn du zu spät kommst, gehe ich‘ fehlt sogar der Punkt.*"
+        "text": "*Nur zwei Sätze. Hinter »Wenn du zu spät kommst, gehe ich« fehlt sogar der Punkt.*"
     },
     "morning4_yuna_msg_single": {
         "name": "{name}",
@@ -95,28 +95,28 @@
     },
     "morning4_fallback_msg": {
         "name": "{name}",
-        "text": "*Wochenendmorgen. Ein paar Benachrichtigungen warten. — Ich dachte, es wird ein gewöhnlicher Tag. Ich lege das Handy weg und strecke mich. Wie auch immer — der Tag fängt an.*"
+        "text": "*Wochenendmorgen. Ich prüfe ein paar Benachrichtigungen und lege das Handy weg. Draußen fährt die Kehrmaschine der Wohnanlage vorbei.*"
     },
     "morning4_hidden_check": {
         "name": "{name}",
-        "text": "*Wochenende. Ich komme an der Schule vorbei.*"
+        "text": "*An einem Wochenendmorgen warte ich an der Kreuzung vor der Schule.*"
     },
     "morning4_manuscript_check": {},
     "hidden_homeroom_d4_skip": {
         "name": "{name}",
-        "text": "*Meine Schritte stocken kurz, dann gehe ich einfach weiter daran vorbei.*"
+        "text": "*Hinter dem Haupttor fällt irgendwo eine Tür zu. Währenddessen schaltet die Fußgängerampel auf Grün.*"
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "*Das Schultor steht einen Spalt offen. Drinnen ist jemand zu hören. Die Klassenlehrerin kommt mit einem Papierumschlag in der Hand zum Tor.*"
+        "text": "*Eine Seite des Haupttors steht offen. Meine Klassenlehrerin kommt mit einer Papiertüte in der Hand heraus.*"
     },
     "hidden_homeroom_d4_1_b": {
         "name": "{name}",
-        "text": "*Vor dem Schultor bleibe ich stehen. Einen Herzschlag zu spät versteckt die Klassenlehrerin den Papierumschlag hinter ihrem Rücken.*"
+        "text": "*Als sich unsere Blicke treffen, nimmt meine Klassenlehrerin die Papiertüte hinter den Rücken. Das Manuskript darin raschelt.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Klassenlehrerin",
-        "text": "...Oh? {name}?"
+        "text": "Hm? {name}?"
     },
     "hidden_homeroom_d4_3": {
         "name": "{name}",
@@ -140,7 +140,7 @@
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
-        "text": "*Die Klassenlehrerin hält den Papierumschlag noch immer in der Hand.*"
+        "text": "*Nur ein Henkel der Papiertüte ist straff gespannt. Die gefaltete Ecke des Manuskripts schimmert durch das Papier.*"
     },
     "hidden_homeroom_d4_4_b": {
         "name": "Klassenlehrerin",
@@ -156,7 +156,7 @@
     },
     "hidden_homeroom_d4_4_e": {
         "name": "{name}",
-        "text": "*Mir fällt nichts mehr ein.*"
+        "text": "*Nur das Radio aus dem Pförtnerhäuschen füllt die Stille zwischen uns.*"
     },
     "hidden_homeroom_d4_5": {
         "name": "Klassenlehrerin",
@@ -172,11 +172,11 @@
     },
     "hidden_homeroom_d4_5_d": {
         "name": "Klassenlehrerin",
-        "text": "*Auch nachdem sie ausgesprochen hat, faltet sie weiter an der Ecke des Becherhalters.*"
+        "text": "*Nachdem sie ausgesprochen hat, faltet sie die Henkel der Papiertüte zweimal in ihrer Hand.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
-        "text": "*Die Ecke des Papierumschlags ist unter den Becherhalter gedrückt.*",
+        "text": "*In der Papiertüte stoßen die Ecken des Manuskripts gegeneinander.*",
         "choices": [
             "Gern. Darf ich mir die Besprechung ansehen?",
             "Ich habe heute schon etwas vor."
@@ -232,7 +232,7 @@
     },
     "hidden_homeroom_d4_cafe_choice": {
         "name": "Klassenlehrerin",
-        "text": "*Sie stellt ihre Kaffeetasse ab. Ihr Körper neigt sich leicht zum Fenster.*",
+        "text": "*Sie stellt ihren Kaffee ab und deutet mit dem Kinn auf die Kritikexemplare am Tisch weiter innen.*",
         "choices": [
             "Haben Sie das Ende noch nicht festgelegt?",
             "Sie zeigen den anderen aus dem Literaturklub aber auch alles, oder?"
@@ -260,7 +260,7 @@
     },
     "hidden_homeroom_d4_cafe_5_b": {
         "name": "Klassenlehrerin",
-        "text": "*Sie lächelt kurz. Die Hand am Becherhalter hält inne.*"
+        "text": "*Die Hand, die die Bechermanschette gefaltet hat, öffnet sich. Die Knicke im Papier bleiben.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Klassenlehrerin",
@@ -376,7 +376,7 @@
     },
     "hidden_nurse_d4_1": {
         "name": "{name}",
-        "text": "*An einer Seite des Schreibtischs stapeln sich Erste-Hilfe-Kästen und Untersuchungsgeräte für das Schulfest. Die Krankenschwester blickt von den Etiketten auf, die sie gerade aufklebt.*"
+        "text": "*Auf einer Seite des Schreibtischs stapeln sich der Erste-Hilfe-Kasten für die Veranstaltung und Untersuchungsgeräte. Die Schulkrankenschwester blickt beim Beschriften über ihre Brille zur Tür.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "Schulkrankenschwester",
@@ -408,7 +408,7 @@
     },
     "hidden_nurse_d4_2_g": {
         "name": "Schulkrankenschwester",
-        "text": "...Im Universitätskrankenhaus habe ich das alles alleine gemacht."
+        "text": "In der Universitätsklinik gab es viele Tage, an denen ich solche Vorbereitungen allein erledigen musste."
     },
     "hidden_nurse_d4_2_h": {
         "name": "{name}",
@@ -420,19 +420,19 @@
     },
     "hidden_nurse_d4_4": {
         "name": "Schulkrankenschwester",
-        "text": "...Im Krankenhaus habe ich das alles allein gemacht. In manchen Nachtschichten musste ich die Arbeit von drei Pflegekräften übernehmen."
+        "text": "In manchen Nachtschichten habe ich allein die Arbeit von drei Pflegekräften gemacht."
     },
     "hidden_nurse_d4_4_b": {
         "name": "{name}",
-        "text": "Also das Burnout..."
+        "text": "Deshalb also der Burnout ..."
     },
     "hidden_nurse_d4_4_c": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie hält kurz inne und legt die Unterlagen ab.*"
+        "text": "*Sie klappt die Akte zu. Die Spitze ihres Kugelschreibers rutscht einmal über den Umschlag.*"
     },
     "hidden_nurse_d4_4_d": {
         "name": "Schulkrankenschwester",
-        "text": "...Das Schlimmste damals war nicht die Arbeitsmenge."
+        "text": "Das Schlimmste damals war nicht die Arbeitsmenge."
     },
     "hidden_nurse_d4_4_e": {
         "name": "{name}",
@@ -444,7 +444,7 @@
     },
     "hidden_nurse_d4_4_g": {
         "name": "{name}",
-        "text": "*Die Hand auf dem Dokument bewegt sich nicht mehr.*"
+        "text": "*Im Feld für die Bettnummer oben auf dem Formular bleibt ein Punkt von der Stiftspitze zurück.*"
     },
     "hidden_nurse_d4_4_h": {
         "name": "Schulkrankenschwester",
@@ -484,7 +484,7 @@
     },
     "hidden_nurse_d4_6": {
         "name": "Schulkrankenschwester",
-        "text": "Danke. Dank dir war es schnell erledigt. ...War nichts Besonderes."
+        "text": "Danke. Dank dir war ich viel schneller fertig. Es ist nichts Besonderes."
     },
     "hidden_nurse_d4_6_b": {
         "name": "{name}",
@@ -532,7 +532,7 @@
     },
     "hidden_nurse_d4_meal_2_b": {
         "name": "Schulkrankenschwester",
-        "text": "*Ihre Hand hält beim Aufkleben eines Etiketts kurz inne.*"
+        "text": "*Ein Etikett klebt schief über der Ecke eines Kartons.*"
     },
     "hidden_nurse_d4_meal_3": {
         "name": "Schulkrankenschwester",
@@ -552,7 +552,7 @@
     },
     "hidden_nurse_d4_meal_3_e": {
         "name": "Schulkrankenschwester",
-        "text": "{name}."
+        "text": "{name}, du lässt die Checkliste liegen."
     },
     "hidden_nurse_d4_meal_4": {
         "name": "Schulkrankenschwester",
@@ -580,6 +580,6 @@
     },
     "morning4_end": {
         "name": "{name}",
-        "text": "*Noch ein Blick in den Spiegel. — Passt. Los geht's.*"
+        "text": "*Wieder zu Hause prüfe ich die Uhr neben dem Spiegel, gehe zurück in den Flur und binde meine Schuhe noch einmal.*"
     }
 }

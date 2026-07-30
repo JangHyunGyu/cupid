@@ -41,7 +41,7 @@
             if (modal) modal.classList.remove('is-open');
         };
     </script>
-    <script src="assets/js/browser-check.js?v=2.9.7" defer></script>
+    <script src="assets/js/browser-check.js?v=2.9.8" defer></script>
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -53,7 +53,7 @@
     <title>Cupid - Kostenlose Visual Novel im Browser | 5-tägige Schulromanze</title>
     <meta name="description" content="Kostenlose Visual Novel, direkt im Browser spielbar — ohne Download oder Installation. Eine 5-tägige Schulromanze ab deinem ersten Tag als neuer Schüler. 5 Heldinnen, mehrere Enden, 7 Sprachen verfügbar.">
     <meta name="keywords" content="anime dating spiel kostenlos ohne download, schulromanze spiel kostenlos im browser, otome game kostenlos auf deutsch spielen, romantische visual novel kostenlos online, interaktives liebesspiel kostenlos browser, dating simulation mehrere enden kostenlos, anime romantisches spiel ohne installation, visual novel romantisch kostenlos deutsch, entscheidungsspiel romantik kostenlos, dating simulator browser kostenlos 2026, dating sim gratis ohne anmeldung, schulromanze anime spiel kostenlos">
-    <meta name="author" content="Archerlab">
+    <meta name="author" content="ArcherLab">
     <meta name="naver-site-verification" content="d1b1d31619e3752f70e28ef54cb08b49698ccf66" />
     <link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/">
     <link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/index-en">
@@ -75,7 +75,7 @@
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1920">
     <meta property="og:image:height" content="1080">
-    <meta property="og:image:alt" content="Cupid browser romance visual novel title screen">
+    <meta property="og:image:alt" content="Titelbildschirm von Cupid, einer Romance-Visual-Novel für den Browser">
     <meta property="og:site_name" content="Cupid">
     <meta property="og:locale" content="de_DE">
 
@@ -84,7 +84,7 @@
     <meta name="twitter:title" content="Cupid - Kostenlose Visual Novel im Browser | 5-tägige Schulromanze">
     <meta name="twitter:description" content="Kostenlose Visual Novel, direkt im Browser spielbar — ohne Download oder Installation. Eine 5-tägige Schulromanze ab deinem ersten Tag als neuer Schüler. 5 Heldinnen, mehrere Enden, 7 Sprachen verfügbar.">
     <meta name="twitter:image" content="https://cupid.archerlab.dev/assets/images/screenshots/cupid-title.jpg?v=2.9.6">
-    <meta name="twitter:image:alt" content="Cupid browser romance visual novel title screen">
+    <meta name="twitter:image:alt" content="Titelbildschirm von Cupid, einer Romance-Visual-Novel für den Browser">
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -152,7 +152,7 @@
                 "publisher": {
                     "@type": "Organization",
                     "@id": "https://archerlab.dev/#organization",
-                    "name": "Archerlab",
+                    "name": "ArcherLab",
                     "url": "https://archerlab.dev/"
                 }
             },
@@ -675,6 +675,19 @@
             }
         }
 
+        @media (max-width: 480px) {
+            #landing-settings-btn {
+                width: 36px;
+                padding: 7px 8px;
+                font-size: 0;
+            }
+
+            #landing-settings-btn::before {
+                content: '⚙';
+                font-size: 0.9rem;
+            }
+        }
+
         /* ===== Title Heroines ===== */
         .title-heroines {
             position: absolute;
@@ -890,7 +903,7 @@
         }
     </script>
     <div class="lang-switch">
-        <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="ArcherLab Home" title="ArcherLab">🏹 ArcherLab</a>
+        <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="ArcherLab-Startseite" title="ArcherLab">🏹 ArcherLab</a>
         <button id="landing-settings-btn" class="lang-btn"
             style="border: none;">
             Einstellungen</button>
@@ -939,7 +952,7 @@
                 <span class="vp-badge">✓ Kostenlos</span>
                 <span class="vp-badge">✓ Keine Anmeldung</span>
                 <span class="vp-badge">✓ Kein Download</span>
-                <span class="vp-badge">✓ Mehrere KI-Enden</span>
+                <span class="vp-badge">✓ KI-Chat &amp; mehrere Enden</span>
             </div>
             <div style="display: flex; flex-direction: column; align-items: center; gap: clamp(6px, 1.2vh, 12px);">
                 <button id="start-btn" onclick="startGame()" class="start-btn" style="cursor:pointer; opacity: 0.5;" disabled>Neues Spiel</button>
@@ -960,8 +973,8 @@
                 <a href="/seo/browser-otome" style="color: #ffb6c1; margin: 0 6px;">Browser Otome Game</a>
                 <a href="/seo/dating-spiel-online" style="color: #ffb6c1; margin: 0 6px;">Dating Spiel online</a>
             </nav>
-            <p style="color: #ffb6c1;">Advisor: Yujin Kim, Sanghun Lee</p>
-            <p style="opacity: 0.7;"> 2026 ArcherLab. All rights reserved. (v1.2.5)</p>
+            <p style="color: #ffb6c1;">Beratung: Yujin Kim, Sanghun Lee</p>
+            <p style="opacity: 0.7;">© 2026 ArcherLab. Alle Rechte vorbehalten. (v1.2.5)</p>
         </div>
     </div>
 
@@ -1000,10 +1013,10 @@
                 <!-- Name Input -->
                 <div id="name-input-container" style="display: none;">
                     <div id="name-input-wrapper">
-                        <input type="text" id="player-name-input" placeholder="Gib deinen Namen ein (1-12 Zeichen)" maxlength="12">
+                        <input type="text" id="player-name-input" placeholder="Gib deinen Namen ein (1–12 Buchstaben)" maxlength="12">
                         <button id="name-confirm-btn">Bestätigen</button>
                     </div>
-                    <div id="name-input-guide">1-12 Zeichen, nur Buchstaben (keine Zahlen/Sonderzeichen)</div>
+                    <div id="name-input-guide">1–12 Buchstaben (keine Zahlen oder Sonderzeichen)</div>
                 </div>
             </div>
 
@@ -1077,7 +1090,7 @@
                 <div class="credits-subtitle">Wo Amors Pfeil trifft</div>
                 <div class="credits-divider">─ ─ ─</div>
                 <div class="credits-section">
-                    <div class="credits-role">Planung · Szenario</div>
+                    <div class="credits-role">Konzept · Szenario</div>
                     <div class="credits-name">Hyungyu Jang · Yujin Kim · Sanghun Lee</div>
                 </div>
                 <div class="credits-section">
@@ -1100,7 +1113,7 @@
                 </div>
                 <div class="credits-divider">─ ─ ─</div>
                 <div class="credits-section">
-                    <div class="credits-role">Produziert von</div>
+                    <div class="credits-role">Produktion</div>
                     <div class="credits-name">Hyungyu Jang · Yujin Kim</div>
                 </div>
                 <div class="credits-divider">─ ─ ─</div>
@@ -1210,7 +1223,7 @@
     <script>window.preventAutoStart = true;</script>
 
     <!-- Game Scripts (Dynamic Loader) -->
-<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.106"></script>
+<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.107"></script>
 
     <script>
         // Initialize SoundManager + Enable Buttons (게임 스크립트 로드 완료 후)
@@ -1390,7 +1403,7 @@
             } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
                 alert('Tippe auf iOS auf [Teilen] und dann auf [Zum Startbildschirm hinzufügen].');
             } else {
-                alert('Bereits installiert oder Browser wird nicht unterstützt.');
+                alert('Die App ist bereits installiert oder dein Browser unterstützt die Installation nicht.');
             }
         }
 

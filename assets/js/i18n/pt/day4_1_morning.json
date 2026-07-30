@@ -6,15 +6,15 @@
     "morning4_nightmare_check": {},
     "morning4_nightmare_seo": {
         "name": "{name}",
-        "text": "*...Tive um sonho estranho. O sorriso da Seoyeon — ainda não saiu da minha frente.*"
+        "text": "*O alarme toca. Uma mensagem de Seoyeon aparece na tela do celular.*"
     },
     "morning4_nightmare_yuna": {
         "name": "{name}",
-        "text": "*...Tive um sonho estranho. Tentava alcançar Yuna, e as pontas dos meus dedos ainda parecem vazias.*"
+        "text": "*O alarme toca. Uma mensagem de Yuna aparece na tela do celular.*"
     },
     "morning4_nightmare_dain": {
         "name": "{name}",
-        "text": "*...Tive um sonho estranho. Achei que tinha segurado Dain, mas minhas mãos continuam vazias.*"
+        "text": "*O alarme toca. Uma mensagem de Dain aparece na tela do celular.*"
     },
     "morning4_nightmare_after": {
         "name": "{name}",
@@ -34,7 +34,7 @@
     },
     "minsu_cheer_1_d": {
         "name": "Minsu",
-        "text": "*A Dain postou no grupo kkkk tipo: Tenho compromisso amanhã!!*"
+        "text": "*Dain publicou no grupo. Escreveu: «Tenho compromisso amanhã».*"
     },
     "minsu_cheer_2": {
         "name": "Minsu",
@@ -47,7 +47,7 @@
     "minsu_cheer_4_branch": {},
     "minsu_cheer_4_ins_single": {
         "name": "{name}",
-        "text": "*Olho o calendário do celular. Só tenho um compromisso hoje. — Dessa vez, decidi não adiar.*"
+        "text": "*Olho o calendário do celular. Hoje só tenho um compromisso.*"
     },
     "minsu_cheer_4_c": {
         "name": "{name}",
@@ -55,11 +55,11 @@
     },
     "minsu_cheer_4_d": {
         "name": "{name}",
-        "text": "*...Mas o que eu estou fazendo?*"
+        "text": "*Os nomes das três aparecem na mesma tela. Bloqueio o calendário e volto a abri-lo.*"
     },
     "minsu_cheer_4_e": {
         "name": "{name}",
-        "text": "*Respiro fundo e confiro as mensagens dos encontros de novo.*"
+        "text": "*Recalculo o tempo de deslocamento entre os três compromissos e ativo todos os alertas do calendário.*"
     },
     "morning4_start_2": {
         "name": "{name}",
@@ -75,7 +75,7 @@
     },
     "morning4_seo_msg_1_c": {
         "name": "{name}",
-        "text": "*Estou no ponto de encontro. — Será que vem? Ela estava tão brava na sexta.*"
+        "text": "*Paro diante da fonte. O relógio marca 9h58.*"
     },
     "morning4_yuna_msg_1": {
         "name": "Yuna",
@@ -95,16 +95,16 @@
     },
     "morning4_fallback_msg": {
         "name": "{name}",
-        "text": "*Manhã de fim de semana. Algumas notificações esperando. — Achei que seria um dia normal. Largo o celular e me espreguiço. De qualquer forma, mais um dia começando.*"
+        "text": "*Manhã de fim de semana. Confiro algumas notificações e deixo o celular de lado. Lá fora, passa o som do caminhão de limpeza do condomínio.*"
     },
     "morning4_hidden_check": {
         "name": "{name}",
-        "text": "*Fim de semana. Acabei passando perto da escola.*"
+        "text": "*Manhã de fim de semana. Espero o sinal abrir no cruzamento diante da escola.*"
     },
     "morning4_manuscript_check": {},
     "hidden_homeroom_d4_skip": {
         "name": "{name}",
-        "text": "*Meus passos param por um instante, e então sigo em frente.*"
+        "text": "*Ouve-se uma porta se fechar do lado de dentro da entrada principal. Enquanto isso, o sinal de pedestres abre.*"
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
@@ -112,7 +112,7 @@
     },
     "hidden_homeroom_d4_1_b": {
         "name": "{name}",
-        "text": "*Paro diante do portão. Um segundo depois, a professora esconde o envelope de papel atrás das costas.*"
+        "text": "*Quando nossos olhos se encontram, a professora leva a sacola de papel para trás das costas. O manuscrito farfalha dentro.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Professora",
@@ -140,7 +140,7 @@
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
-        "text": "*A professora continua com a sacola de papel em uma das mãos.*"
+        "text": "*Apenas um lado da alça da sacola de papel está esticado. A ponta dobrada do manuscrito aparece através do papel.*"
     },
     "hidden_homeroom_d4_4_b": {
         "name": "Professora",
@@ -156,7 +156,7 @@
     },
     "hidden_homeroom_d4_4_e": {
         "name": "{name}",
-        "text": "*A conversa se apaga.*"
+        "text": "*Só o som do rádio da guarita preenche o espaço entre nós.*"
     },
     "hidden_homeroom_d4_5": {
         "name": "Professora",
@@ -172,11 +172,11 @@
     },
     "hidden_homeroom_d4_5_d": {
         "name": "Professora",
-        "text": "*Mesmo depois de terminar a frase, a professora continua dobrando a ponta do porta-copo.*"
+        "text": "*Depois de terminar de falar, ela dobra duas vezes a alça da sacola de papel dentro da mão.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
-        "text": "*A ponta do envelope de papel fica presa sob o porta-copo.*",
+        "text": "*Dentro da sacola de papel, as pontas do manuscrito se chocam.*",
         "choices": [
             "Tudo bem. Posso assistir à sessão?",
             "Hoje eu já tenho compromisso."
@@ -204,7 +204,7 @@
     },
     "hidden_homeroom_d4_cafe_1_f": {
         "name": "Professora",
-        "text": "*Ela pousa a xícara. Para, como se pensasse.*"
+        "text": "*Ela deixa a xícara. Os dedos permanecem na alça.*"
     },
     "hidden_homeroom_d4_cafe_2": {
         "name": "Professora",
@@ -232,7 +232,7 @@
     },
     "hidden_homeroom_d4_cafe_choice": {
         "name": "Professora",
-        "text": "*A professora pousa a xícara de café. O corpo se inclina um pouco para a janela.*",
+        "text": "*A professora deixa a xícara e aponta com o queixo para as cópias de avaliação na mesa ao fundo.*",
         "choices": [
             "A senhora ainda não decidiu o final?",
             "Vai mostrar tudo aos outros membros também, não vai?"
@@ -260,7 +260,7 @@
     },
     "hidden_homeroom_d4_cafe_5_b": {
         "name": "Professora",
-        "text": "*A professora sorri por um instante. A mão que dobrava o porta-copo para.*"
+        "text": "*A mão que dobrava o porta-copo se abre. As rugas do papel permanecem.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Professora",
@@ -400,7 +400,7 @@
     },
     "hidden_nurse_d4_2_e": {
         "name": "Enfermeira",
-        "text": "*Entregando uma bolsa vazia* Duas gazes e três algodões com álcool em cada uma. Eu cuido dos documentos com dados pessoais."
+        "text": "*Ela me entrega uma bolsa vazia.* Duas gazes e três algodões com álcool em cada uma. Eu cuido dos documentos com dados pessoais."
     },
     "hidden_nurse_d4_2_f": {
         "name": "{name}",
@@ -408,7 +408,7 @@
     },
     "hidden_nurse_d4_2_g": {
         "name": "Enfermeira",
-        "text": "...No hospital universitário, eu fazia tudo isso sozinha."
+        "text": "No hospital universitário, havia muitos dias em que eu cuidava sozinha desse preparo."
     },
     "hidden_nurse_d4_2_h": {
         "name": "{name}",
@@ -420,7 +420,7 @@
     },
     "hidden_nurse_d4_4": {
         "name": "Enfermeira",
-        "text": "...No hospital universitário, eu fazia tudo isso sozinha. Nos plantões noturnos — tinha dias em que uma enfermeira fazia o trabalho de três."
+        "text": "Nos plantões noturnos, havia dias em que eu fazia sozinha o trabalho de três enfermeiras."
     },
     "hidden_nurse_d4_4_b": {
         "name": "{name}",
@@ -428,7 +428,7 @@
     },
     "hidden_nurse_d4_4_c": {
         "name": "Enfermeira",
-        "text": "*Ela para por um instante e pousa os papéis.*"
+        "text": "*Ela fecha a pasta. A ponta da caneta desliza uma vez sobre a capa.*"
     },
     "hidden_nurse_d4_4_d": {
         "name": "Enfermeira",
@@ -444,7 +444,7 @@
     },
     "hidden_nurse_d4_4_g": {
         "name": "{name}",
-        "text": "*A mão no documento não se move mais.*"
+        "text": "*Na área do número do leito do primeiro documento, fica uma marca da ponta da caneta.*"
     },
     "hidden_nurse_d4_4_h": {
         "name": "Enfermeira",
@@ -532,7 +532,7 @@
     },
     "hidden_nurse_d4_meal_2_b": {
         "name": "Enfermeira",
-        "text": "*A mão que colava uma etiqueta para por um instante.*"
+        "text": "*Uma etiqueta fica torta na ponta de uma caixa.*"
     },
     "hidden_nurse_d4_meal_3": {
         "name": "Enfermeira",
@@ -552,7 +552,7 @@
     },
     "hidden_nurse_d4_meal_3_e": {
         "name": "Enfermeira",
-        "text": "{name}."
+        "text": "{name}, você esqueceu a folha de confirmação."
     },
     "hidden_nurse_d4_meal_4": {
         "name": "Enfermeira",
@@ -580,6 +580,6 @@
     },
     "morning4_end": {
         "name": "{name}",
-        "text": "*Olho o espelho mais uma vez. — Tá bom. Bora.*"
+        "text": "*Volto para casa, confiro o relógio ao lado do espelho e amarro novamente os cadarços na entrada.*"
     }
 }

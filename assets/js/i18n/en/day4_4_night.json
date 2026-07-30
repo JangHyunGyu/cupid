@@ -13,7 +13,7 @@
     },
     "wall_seo_pre_high_1": {
         "name": "Seoyeon",
-        "text": "...Can I be honest with you tonight?"
+        "text": "Can I be honest with you tonight?"
     },
     "wall_seo_pre_high_2": {
         "name": "{name}",
@@ -21,19 +21,19 @@
     },
     "wall_seo_pre_low_1": {
         "name": "{name}",
-        "text": "*Seoyeon is silent.*"
+        "text": "*There have been no new notifications in Seoyeon's chat since her last message.*"
     },
     "wall_seo_pre_low_1b": {
         "name": "{name}",
-        "text": "*I send a text: 'Seoyeon, are you okay?' — One minute. A read receipt appears. No reply. Then my phone rings.*"
+        "text": "*I text, “Seoyeon, are you okay right now?” A read receipt appears one minute later, but no reply follows. Then my phone rings.*"
     },
     "wall_seo_pre_low_2": {
         "name": "Seoyeon",
-        "text": "...I saw your text. Can you come out now? The park. — Sorry, it's sudden."
+        "text": "I saw your text. Can we talk for a minute?"
     },
     "wall_seo_2": {
         "name": "Seoyeon",
-        "text": "Can you come out right now? The park. — Sorry, it's sudden."
+        "text": "Can you come out now? The park. Sorry it's so sudden."
     },
     "wall_seo_to_park": {
         "name": "{name}",
@@ -49,11 +49,11 @@
     },
     "wall_seo_5": {
         "name": "Seoyeon",
-        "text": "...Sit down."
+        "text": "Sit down."
     },
     "wall_seo_6": {
         "name": "{name}",
-        "text": "*I sit beside her. Seoyeon looks straight ahead, the streetlight stretching across her lenses.*"
+        "text": "*I sit beside her. Seoyeon stares at the ground in front of the bench through lenses streaked with streetlight.*"
     },
     "wall_seo_7": {
         "name": "Seoyeon",
@@ -61,7 +61,7 @@
     },
     "wall_seo_7_b": {
         "name": "{name}",
-        "text": "......"
+        "text": "*A car passes along the park road. Seoyeon interlaces her fingers in her lap.*"
     },
     "wall_seo_8": {
         "name": "Seoyeon",
@@ -81,7 +81,7 @@
     },
     "wall_seo_9_d": {
         "name": "{name}",
-        "text": "......"
+        "text": "*A dry leaf rolls beneath the bench and stops in front of Seoyeon's sneaker.*"
     },
     "wall_seo_10": {
         "name": "Seoyeon",
@@ -109,19 +109,19 @@
     },
     "wall_seo_14_b": {
         "name": "Seoyeon",
-        "text": "...But you."
+        "text": "But you..."
     },
     "wall_seo_14_c": {
         "name": "Seoyeon",
-        "text": "*She stops speaking. Her hands clench on her knees. Before the moisture at the edge of her glasses can fall, she lowers her head.*"
+        "text": "*Her words cut off as her fingers dig into one another in her lap. A drop at the edge of her glasses falls onto the back of her hand.*"
     },
     "wall_seo_14_d": {
         "name": "{name}",
-        "text": "*Tears slide down her face without a sound. Seoyeon starts to wipe them with the back of her hand, then stops and simply looks up.*"
+        "text": "*Tears run down without a sound. Makeup smears across the back of her hand as Seoyeon looks at {name} through her glasses.*"
     },
     "wall_seo_hug_choice": {
         "name": "Seoyeon",
-        "text": "*She's crying. The makeup on the back of her hand smears.*",
+        "text": "*Smeared makeup remains on the back of her hand, and Seoyeon's shoulders lift in short motions with every breath.*",
         "choices": [
             "Hold her",
             "Hold out a hand"
@@ -133,7 +133,7 @@
     },
     "wall_seo_hug_2_b": {
         "name": "Seoyeon",
-        "text": "...It's been a really long time since I cried in front of someone."
+        "text": "It's been a long time since I cried in front of anyone."
     },
     "wall_seo_hug_2_c": {
         "name": "Seoyeon",
@@ -157,7 +157,7 @@
     },
     "wall_seo_pinky_4": {
         "name": "Seoyeon",
-        "text": "...Don't say things like that so easily."
+        "text": "Don't say things like that so easily."
     },
     "wall_seo_pinky_5": {
         "name": "Seoyeon",
@@ -169,7 +169,7 @@
     },
     "wall_seo_line_choice": {
         "name": "Seoyeon",
-        "text": "*She is wiping her tears, looking up at me with trembling eyes.*",
+        "text": "*She wipes her eyes with the back of her hand, spreading the makeup stain wider.*",
         "choices": [
             "Want a wet wipe?",
             "Let's sit here for a minute.",
@@ -178,15 +178,15 @@
     },
     "wall_seo_line_react_1": {
         "name": "Seoyeon",
-        "text": "...You have one?"
+        "text": "*She looks down at the makeup stain on the back of her hand.*"
     },
     "wall_seo_line_react_2": {
         "name": "Seoyeon",
-        "text": "...Yeah."
+        "text": "Yeah."
     },
     "wall_seo_line_react_3": {
         "name": "Seoyeon",
-        "text": "...Okay."
+        "text": "Okay."
     },
     "wall_seo_line_react_3_b": {
         "name": "Seoyeon",
@@ -194,7 +194,7 @@
     },
     "wall_seo_after_line": {
         "name": "Seoyeon",
-        "text": "Do you have a wet wipe?"
+        "text": "Wait. Do you have a wet wipe?"
     },
     "wall_seo_after_line_2": {
         "name": "Seoyeon",
@@ -214,36 +214,36 @@
     },
     "wall_seo_after_line_5": {
         "name": "Seoyeon",
-        "text": "Give me one if you have one."
+        "text": "That's better. I'll have to remember to bring some tomorrow."
     },
     "wall_seo_skin_check": {},
     "wall_seo_skin70_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon takes my hand. Our hands remain between us on the bench.*"
+        "text": "*After making sure she has permission, Seoyeon takes my hand. Our joined hands rest between us on the bench.*"
     },
     "wall_seo_skin70_3": {
         "name": "Seoyeon",
-        "text": "...This is a first. Really."
+        "text": "This is a first."
     },
     "wall_seo_skin60_1": {
         "name": "{name}",
-        "text": "*We sit side by side on the bench. Seoyeon quietly leans against my shoulder.*"
+        "text": "*We sit side by side on the bench. Leaving a shoulder's width between us, Seoyeon looks toward {name}.*"
     },
     "wall_seo_skin60_2": {
         "name": "Seoyeon",
-        "text": "...Let's just stay like this a little longer."
+        "text": "Let's stay like this a little longer."
     },
     "wall_seo_glimpse_1": {
         "name": "{name}",
-        "text": "*On my way home after walking Seoyeon to her door, I pass the school. An emergency light glows in the gym window.*"
+        "text": "*After walking Seoyeon home, I follow the school wall back. An emergency light glows in one pane of the gym window.*"
     },
     "wall_seo_glimpse_2": {
         "name": "{name}",
-        "text": "*The emergency light is on in the gym window. Someone is bouncing a ball alone. Jersey number 19 moves faintly in the darkness.*"
+        "text": "*Jersey number 19 crosses behind the window. The steady sound of a bouncing ball carries over the wall.*"
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
-        "text": "*After standing behind the school for a while, I returned home. The gym lights linger inside my eyelids.*"
+        "text": "*After counting a few more bounces, I turn away. The gym window is still lit when I reach home.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -251,7 +251,7 @@
     },
     "wall_dain_pre_high_1": {
         "name": "Dain",
-        "text": "...Can we talk about something other than sports today?"
+        "text": "Can we talk about something other than sports today?"
     },
     "wall_dain_pre_high_2": {
         "name": "Dain",
@@ -275,11 +275,11 @@
     },
     "wall_dain_3": {
         "name": "Dain",
-        "text": "...Just come. I left the gym's back door open."
+        "text": "Just come. I left the gym's back door open."
     },
     "wall_dain_4": {
         "name": "{name}",
-        "text": "*Emergency lights only in the gym. Dain is bouncing a volleyball alone. Her mouth is smiling, but her shoulders are tense.*"
+        "text": "*Only the emergency lights are on in the gym. Dain bounces a volleyball by herself. The corners of her mouth are raised, but her shoulders are rigid near her ears.*"
     },
     "wall_dain_5": {
         "name": "Dain",
@@ -327,7 +327,7 @@
     },
     "wall_dain_12_c": {
         "name": "{name}",
-        "text": "......"
+        "text": "*The ball rolling across the floor hits the wall with a low thud.*"
     },
     "wall_dain_13": {
         "name": "{name}",
@@ -335,7 +335,7 @@
     },
     "wall_dain_14": {
         "name": "Dain",
-        "text": "...ACL."
+        "text": "My ACL."
     },
     "wall_dain_14_b": {
         "name": "Dain",
@@ -347,7 +347,7 @@
     },
     "wall_dain_16": {
         "name": "Dain",
-        "text": "*Dain doesn't smile.*"
+        "text": "*The corners of her mouth fall. Her eyes stay on a white line across the court.*"
     },
     "wall_dain_16_b": {
         "name": "Dain",
@@ -367,11 +367,11 @@
     },
     "wall_dain_18_c": {
         "name": "{name}",
-        "text": "......"
+        "text": "*The gym's emergency light flickers once. Dain's nail traces a groove in the ball.*"
     },
     "wall_dain_18_d": {
         "name": "Dain",
-        "text": "*Clenches and unclenches her fists.* ...So."
+        "text": "*Her thumb rubs a groove in the ball.* So."
     },
     "wall_dain_19": {
         "name": "Dain",
@@ -383,11 +383,11 @@
     },
     "wall_dain_20": {
         "name": "Dain",
-        "text": "Every time someone at school said 'You've got so much energy!' — right here. ...I couldn't breathe."
+        "text": "Every time someone at school said, “You've got so much energy!” my chest tightened first."
     },
     "wall_dain_20_b": {
         "name": "Dain",
-        "text": "...I couldn't draw a full breath."
+        "text": "Even when I breathed, it never went all the way in."
     },
     "wall_dain_21": {
         "name": "Dain",
@@ -395,32 +395,32 @@
     },
     "wall_dain_22": {
         "name": "Dain",
-        "text": "— But if I show you I'm hurting too, then I've got nothing left."
+        "text": "But if I let you see me hurting too, then I've got nothing left."
     },
     "wall_dain_22_b": {
         "name": "{name}",
-        "text": "*I sat down next to Dain. The court floor is cold. I said nothing.*"
+        "text": "*I sit outside the court line beside Dain. The volleyball on the floor rolls once between us and stops.*"
     },
     "wall_dain_choice": {
         "name": "Dain",
-        "text": "*She is clutching the volleyball, head down. Her shoulders are trembling.*",
+        "text": "*The rubber ball caves in against her chest. Her shoulders jerk in short motions.*",
         "choices": [
-            "...I won't say anything. I'll just be here.",
+            "I won't say anything. I'll just stay here.",
             "You can cry. You don't have to pretend to be cheerful. Not with me.",
             "Let's put the balls away first. And book a hospital visit tomorrow."
         ]
     },
     "wall_dain_newdream_1": {
         "name": "{name}",
-        "text": "*I stay seated beside her. Neither of us speaks. Only the toe of Dain's sneaker sways slowly.*"
+        "text": "*The rubber sole of her sneaker briefly scrapes the floor. Dain's toe moves side to side along the court line.*"
     },
     "wall_dain_newdream_2_b": {
         "name": "Dain",
-        "text": "*She speaks first.*"
+        "text": "*Her sneaker stops, and Dain looks to the side.*"
     },
     "wall_dain_newdream_3": {
         "name": "Dain",
-        "text": "...Why aren't you saying anything?"
+        "text": "Why aren't you saying anything?"
     },
     "wall_dain_newdream_4": {
         "name": "{name}",
@@ -428,7 +428,7 @@
     },
     "wall_dain_newdream_5": {
         "name": "Dain",
-        "text": "*She looks at her hands resting on her knees. She clenches and unclenches her fists.*"
+        "text": "*She uncurls the fingers resting on her knee one by one.*"
     },
     "wall_dain_newdream_6": {
         "name": "Dain",
@@ -436,7 +436,7 @@
     },
     "wall_dain_newdream_7": {
         "name": "Dain",
-        "text": "While I'm looking... will you sit beside me like this sometimes?"
+        "text": "While I'm figuring it out, will you sit beside me like this sometimes?"
     },
     "wall_dain_newdream_8": {
         "name": "{name}",
@@ -448,19 +448,19 @@
     },
     "wall_dain_cry_2": {
         "name": "Dain",
-        "text": "*She lowers her head. Droplets fall one by one onto the empty gym floor. The ball sits still outside the line.*"
+        "text": "*She folds herself over the volleyball. One drop, then another, falls onto its rubber surface, and her sob echoes briefly from the empty gym walls.*"
     },
     "wall_dain_cry_3": {
         "name": "Dain",
-        "text": "Alone, bandaging my knee every morning..."
+        "text": "I bandaged my knee alone every morning."
     },
     "wall_dain_cry_4": {
         "name": "Dain",
-        "text": "I put it in my phone alarm. 'Smile today,' it says..."
+        "text": "I even put it in my phone alarm: “Smile today.”"
     },
     "wall_dain_cry_5": {
         "name": "Dain",
-        "text": "Every morning, I looked at that alarm and forced myself to smile in front of the mirror..."
+        "text": "I looked at it and raised the corners of my mouth in the mirror. Every day."
     },
     "wall_dain_cry_6": {
         "name": "Dain",
@@ -472,7 +472,7 @@
     },
     "wall_dain_lastspike_2": {
         "name": "Dain",
-        "text": "*She watches each ball go into the rack.* ...I thought putting them away would make it really feel over."
+        "text": "*She watches each ball go into the rack.* I thought putting them away would make it really feel over."
     },
     "wall_dain_lastspike_3": {
         "name": "{name}",
@@ -480,7 +480,7 @@
     },
     "wall_dain_lastspike_3_b": {
         "name": "Dain",
-        "text": "*She loosens her knee brace, then refastens it without putting pressure on the joint.* ...I should go back to the hospital, shouldn't I?"
+        "text": "*She loosens her knee brace, then refastens it without putting pressure on the joint.* I should go back to the hospital, shouldn't I?"
     },
     "wall_dain_lastspike_3_c": {
         "name": "{name}",
@@ -500,7 +500,7 @@
     },
     "wall_dain_lastspike_6": {
         "name": "Dain",
-        "text": "...Will you come with me on the day of the appointment?"
+        "text": "Will you come with me when I go to the hospital?"
     },
     "wall_dain_farewell_1": {
         "name": "Dain",
@@ -512,7 +512,7 @@
     },
     "wall_dain_mention_1": {
         "name": "Dain",
-        "text": "You know what Seoyeon said to me? ...She didn't say anything. She just looked at me."
+        "text": "You know what Seoyeon said to me? Nothing. She just looked at me."
     },
     "wall_dain_mention_2": {
         "name": "Dain",
@@ -520,12 +520,12 @@
     },
     "wall_dain_mention_3": {
         "name": "Dain",
-        "text": "*Dain pauses briefly. — Then starts walking again. With lighter steps.*"
+        "text": "*One step breaks short. When she starts walking again, she shortens her stride to match {name} beside her.*"
     },
     "wall_dain_skin_check": {},
     "wall_dain_skin70_1": {
         "name": "Dain",
-        "text": "*She cries and falls into my arms.*"
+        "text": "*Dain opens her arms and waits for {name}'s answer.*"
     },
     "wall_dain_skin70_2": {
         "name": "Dain",
@@ -533,11 +533,11 @@
     },
     "wall_dain_skin70_3": {
         "name": "{name}",
-        "text": "*My shirt is getting wet. Dain's hands grip my back tightly. She won't loosen her grip.*"
+        "text": "*After making sure she has permission, Dain steps closer. Tears spread across my shirt, and the arms around my back don't loosen for a long time.*"
     },
     "wall_dain_skin60_1": {
         "name": "{name}",
-        "text": "*We sit on the bench by the school's back gate. Dain lies down on my lap without any warning.*"
+        "text": "*We sit side by side on a bench by the school's back gate. Dain looks pointedly at the empty space on my lap.*"
     },
     "wall_dain_skin60_2": {
         "name": "Dain",
@@ -549,11 +549,11 @@
     },
     "wall_dain_glimpse_2": {
         "name": "{name}",
-        "text": "*It's Yuna, sitting alone. My feet stop. She hasn't sent me a single message today.*"
+        "text": "*Yuna sits alone before the window. The shadow of her open book doesn't move, and she hasn't sent a message today.*"
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*I walk past, pretending not to see. I make it all the way to the back gate, but the note in my hand stays folded.*"
+        "text": "*The lamp in the annex remains on until I pass the back gate. The folded corner of the note in my pocket presses into my palm.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -569,11 +569,11 @@
     },
     "wall_yuna_pre_high_1": {
         "name": "Yuna",
-        "text": "...I'll talk without notes today."
+        "text": "I'll talk without notes today."
     },
     "wall_yuna_pre_high_2": {
         "name": "Yuna",
-        "text": "*She speaks directly instead of using a note. There is no paper in her hands.*"
+        "text": "*She opens one empty hand. There is no note or bookmark.*"
     },
     "wall_yuna_pre_low_1": {
         "name": "Yuna",
@@ -593,7 +593,7 @@
     },
     "wall_yuna_4": {
         "name": "Yuna",
-        "text": "*She walks toward the library annex. Past her secret reading spot — deeper in. The basement archives. Between dusty shelves. She pulls out an old envelope.*"
+        "text": "*We pass her secret reading space in the library annex and head deeper into the basement archives. Between dusty shelves, she takes out an old envelope.*"
     },
     "wall_yuna_6": {
         "name": "Yuna",
@@ -605,7 +605,7 @@
     },
     "wall_yuna_8": {
         "name": "{name}",
-        "text": "...Junho Lee?"
+        "text": "Lee Junho?"
     },
     "wall_yuna_9": {
         "name": "Yuna",
@@ -641,7 +641,7 @@
     },
     "wall_yuna_14_c": {
         "name": "Yuna",
-        "text": "...There was nothing."
+        "text": "There was nothing."
     },
     "wall_yuna_14_d": {
         "name": "Yuna",
@@ -661,11 +661,11 @@
     },
     "wall_yuna_14_h": {
         "name": "{name}",
-        "text": "......"
+        "text": "*Dust falls along the envelope's fold. Yuna doesn't press me for an answer.*"
     },
     "wall_yuna_15": {
         "name": "Yuna",
-        "text": "*Lowering her head* ...That's why I deliberately acted cold. I thought if I pushed everyone away first, it would hurt less."
+        "text": "*Her eyes stay fixed on the date of the letter.* That's why I acted cold on purpose. I thought it would hurt less if I pushed people away first."
     },
     "wall_yuna_16": {
         "name": "Yuna",
@@ -673,7 +673,7 @@
     },
     "wall_yuna_16_b": {
         "name": "Yuna",
-        "text": "*She grips her sleeve tightly. As she steadies her breathing, the book's spine presses into her palm.*"
+        "text": "*The fluorescent light trembles once. Yuna bites the inside of her lip, then releases it.*"
     },
     "wall_yuna_choice": {
         "name": "Yuna",
@@ -681,16 +681,16 @@
         "choices": [
             "I can't replace him. But I'm here now.",
             "I'm listening to you right now.",
-            "...Is that why you approached me? As a substitute for him?"
+            "Is that why you approached me? As a substitute for him?"
         ]
     },
     "wall_yuna_moved_1": {
         "name": "Yuna",
-        "text": "...At first, maybe. Maybe I was chasing his shadow."
+        "text": "At first, maybe you caught my eye because you were like him."
     },
     "wall_yuna_moved_2": {
         "name": "Yuna",
-        "text": "But now..."
+        "text": "But now it's different."
     },
     "wall_yuna_moved_3": {
         "name": "Yuna",
@@ -702,20 +702,20 @@
     },
     "wall_yuna_moved_5": {
         "name": "Yuna",
-        "text": "*She lets out a slow breath. The corner of the letter crumples a little under her fingertips.*"
+        "text": "*She puts the letter back in its envelope and smooths the folded corner with her thumb.*"
     },
     "wall_yuna_moved_5_b": {
         "name": "Yuna",
-        "text": "*She lets out a slow breath. The fingertips clutching her sleeve tremble a little.*"
+        "text": "*Her hand releases her sleeve. She closes the one step between {name} and the shelves.*"
     },
     "wall_yuna_skin_check": {},
     "wall_yuna_skin70_1": {
         "name": "Yuna",
-        "text": "Can I come closer?"
+        "text": "Can I come closer and hold your hand?"
     },
     "wall_yuna_skin70_2": {
         "name": "{name}",
-        "text": "*She leans on my shoulder. She grips my hand tightly.*"
+        "text": "*After hearing my answer, Yuna leans against my shoulder and clasps my hand.*"
     },
     "wall_yuna_skin70_3": {
         "name": "{name}",
@@ -723,23 +723,23 @@
     },
     "wall_yuna_skin60_1": {
         "name": "{name}",
-        "text": "*Between the shelves of the underground archive. Yuna presses her forehead against my back from behind.*"
+        "text": "*Between the shelves of the basement archive, Yuna stands one step behind me.*"
     },
     "wall_yuna_skin60_2": {
         "name": "Yuna",
-        "text": "...Because you're warm."
+        "text": "Can I rest my forehead against your back? Just for a minute."
     },
     "wall_yuna_sub_1": {
         "name": "Yuna",
-        "text": "...Yeah. The senior is the senior. And you're you."
+        "text": "Right. I shouldn't confuse the two of you."
     },
     "wall_yuna_sub_2": {
         "name": "Yuna",
-        "text": "*She smiles faintly. Her fingertip presses the corner of the letter once more.*"
+        "text": "*Only one corner of her mouth rises. The letter goes back into the envelope.*"
     },
     "wall_yuna_reject_1": {
         "name": "Yuna",
-        "text": "......You think so?"
+        "text": "You think so?"
     },
     "wall_yuna_reject_1_b": {
         "name": "Yuna",
@@ -747,7 +747,7 @@
     },
     "wall_yuna_reject_2": {
         "name": "Yuna",
-        "text": "...Yeah. Maybe I did."
+        "text": "Yeah. Maybe I did."
     },
     "wall_yuna_reject_3": {
         "name": "Yuna",
@@ -755,7 +755,7 @@
     },
     "wall_yuna_glimpse_1": {
         "name": "{name}",
-        "text": "*I leave Yuna behind and head out of the school. As I pass the front gate—*"
+        "text": "*I leave Yuna behind and walk along the wall toward the main gate.*"
     },
     "wall_yuna_glimpse_2": {
         "name": "{name}",
@@ -763,7 +763,7 @@
     },
     "wall_yuna_glimpse_3_b": {
         "name": "Seoyeon",
-        "text": "*She puts the phone in her pocket and turns away. Her back is straight. Only the shadow beneath the streetlight wavers briefly.*"
+        "text": "*She puts the phone in her pocket and walks beyond the streetlight. The sound of her heels recedes along the school wall.*"
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
@@ -779,15 +779,15 @@
     },
     "day4_night_regret_msg_seo": {
         "name": "Seoyeon",
-        "text": "The wind was nice today. So... I waited a little."
+        "text": "The wind was nice today. I waited for a while."
     },
     "day4_night_regret_msg_dain": {
         "name": "Dain",
-        "text": "Hey, today was fun haha ...I just hoped I wasn't the only one who got excited."
+        "text": "Hey, today was fun. I wasn't the only one excited, right?"
     },
     "day4_night_regret_msg_yuna": {
         "name": "Yuna",
-        "text": "...Today. I kind of hoped for something. That's why I ended up even quieter."
+        "text": "Today, I was looking forward to it too. Even if I talked less."
     },
     "day4_night_regret_msg": {
         "name": "{name}",
@@ -799,7 +799,7 @@
     },
     "day4_night_reflect": {
         "name": "{name}",
-        "text": "*Saturday just flew by. Tomorrow's the school event. — Yeah, on a Sunday.*"
+        "text": "*I scroll back through today's messages in chronological order. Tomorrow is the Sunday school event.*"
     },
     "day4_hidden_msg_branch": {
         "name": "System",
@@ -841,7 +841,7 @@
     },
     "wall_dain_freetalk": {
         "name": "Dain",
-        "text": "*She exhales slowly and matches the protagonist's pace.* Tonight... let's just walk together. We can talk too.",
+        "text": "*She exhales slowly and matches the protagonist's pace.* Tonight, let's just walk together. We can talk too.",
         "context": "It is the night of Day 4, after Dain revealed the truth about her knee injury and the dream that stalled with it. Whether the protagonist accepted or postponed her confession, and the comfort just shared, are fixed facts. Do not suddenly heal the injury, decide her future for her, or change the current relationship status.",
         "personality": "Dain is candid and physical, and she is trying not to hide her feelings either. She is quieter than usual without losing her spark, acknowledging uncertainty while finding the next words together."
     },
@@ -857,10 +857,10 @@
     },
     "day4_night_sleep": {
         "name": "{name}",
-        "text": "*I close my eyes. Tomorrow is the last day. — There are still things left to say.*"
+        "text": "*I set the alarm for Sunday morning and turn off the light. One unsent sentence remains in the text box.*"
     },
     "day4_final": {
         "name": "{name}",
-        "text": "*Saturday night is drawing to a close. Tomorrow's Sunday — the final day of the school event.*"
+        "text": "*The clock in my room passes toward midnight. The phone screen also goes dark, leaving only one alarm.*"
     }
 }

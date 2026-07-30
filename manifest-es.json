@@ -1,7 +1,7 @@
 {
-    "name": "Cupid: Novela Visual Web Gratis",
+    "name": "Cupid: Novela visual gratis en navegador",
     "short_name": "Cupid",
-    "description": "Juega una novela visual web gratis sin instalación. Conviértete en el protagonista de un romance escolar.",
+    "description": "Juega gratis una novela visual de romance escolar en tu navegador, sin descargas ni registro.",
     "start_url": "/index-es.html",
     "display": "standalone",
     "background_color": "#1a1a2e",

@@ -55,11 +55,11 @@
     },
     "minsu_cheer_4_d": {
         "name": "{name}",
-        "text": "*...Mais qu'est-ce que je suis en train de faire ?*"
+        "text": "*Les trois noms s'affichent sur le même écran. Je verrouille le calendrier, puis le rouvre.*"
     },
     "minsu_cheer_4_e": {
         "name": "{name}",
-        "text": "*Je prends une grande inspiration et je revérifie les messages des rendez-vous.*"
+        "text": "*Je recalcule le temps de trajet entre les trois rendez-vous et active toutes les alertes du calendrier.*"
     },
     "morning4_start_2": {
         "name": "{name}",
@@ -95,16 +95,16 @@
     },
     "morning4_fallback_msg": {
         "name": "{name}",
-        "text": "*Un matin de week-end. J'ai reçu quelques notifications. — Je pensais passer une journée ordinaire. Je pose mon téléphone et m'étire. Une nouvelle journée commence malgré tout.*"
+        "text": "*Un matin de week-end. Après avoir consulté quelques notifications, je repose mon téléphone. Dehors, le camion de nettoyage de la résidence passe dans un grondement.*"
     },
     "morning4_hidden_check": {
         "name": "{name}",
-        "text": "*Week-end. Je passe devant l'école.*"
+        "text": "*Un matin de week-end, j'attends que le feu passe au vert au carrefour devant l'école.*"
     },
     "morning4_manuscript_check": {},
     "hidden_homeroom_d4_skip": {
         "name": "{name}",
-        "text": "*Mes pas s'arrêtent un instant, puis je continue simplement mon chemin.*"
+        "text": "*Une porte se referme derrière le portail principal. Entre-temps, le feu piéton passe au vert.*"
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
@@ -112,7 +112,7 @@
     },
     "hidden_homeroom_d4_1_b": {
         "name": "{name}",
-        "text": "*Je m'arrête devant le portail. Avec un temps de retard, la prof principale cache l'enveloppe derrière son dos.*"
+        "text": "*Quand nos regards se croisent, la professeure principale passe l'enveloppe derrière son dos. Le manuscrit qu'elle contient bruisse.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Professeure principale",
@@ -140,7 +140,7 @@
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
-        "text": "*La professeure principale tient toujours l'enveloppe en papier à la main.*"
+        "text": "*Une seule des poignées de l'enveloppe est tendue. Le coin plié du manuscrit se devine à travers le papier.*"
     },
     "hidden_homeroom_d4_4_b": {
         "name": "Professeure principale",
@@ -156,7 +156,7 @@
     },
     "hidden_homeroom_d4_4_e": {
         "name": "{name}",
-        "text": "*Les mots ne viennent pas.*"
+        "text": "*Seule la radio du poste de garde remplit le silence entre nous.*"
     },
     "hidden_homeroom_d4_5": {
         "name": "Professeure principale",
@@ -172,11 +172,11 @@
     },
     "hidden_homeroom_d4_5_d": {
         "name": "Professeure principale",
-        "text": "*Même après avoir fini sa phrase, la prof principale continue de plier le coin du porte-gobelet.*"
+        "text": "*Après avoir fini sa phrase, elle plie deux fois les poignées de l'enveloppe dans sa main.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
-        "text": "*Le coin de l'enveloppe en papier est coincé sous le porte-gobelet.*",
+        "text": "*Dans l'enveloppe, les coins des pages du manuscrit s'entrechoquent.*",
         "choices": [
             "D'accord. Je peux assister à la critique ?",
             "J'ai déjà quelque chose de prévu aujourd'hui."
@@ -232,7 +232,7 @@
     },
     "hidden_homeroom_d4_cafe_choice": {
         "name": "Professeure principale",
-        "text": "*La professeure principale repose sa tasse et se penche légèrement vers la fenêtre.*",
+        "text": "*La professeure principale repose sa tasse et désigne du menton les exemplaires de travail sur la table du fond.*",
         "choices": [
             "Vous n'avez toujours pas choisi la fin ?",
             "Vous allez aussi montrer tout le manuscrit au club, n'est-ce pas ?"
@@ -260,7 +260,7 @@
     },
     "hidden_homeroom_d4_cafe_5_b": {
         "name": "Professeure principale",
-        "text": "*La professeure principale laisse échapper un petit rire. Sa main cesse de plier le porte-gobelet.*"
+        "text": "*La main qui pliait le porte-gobelet se déploie. Les plis restent marqués dans le papier.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Professeure principale",
@@ -420,7 +420,7 @@
     },
     "hidden_nurse_d4_4": {
         "name": "Infirmière",
-        "text": "...À l'hôpital, je faisais tout ça toute seule. Pendant les gardes de nuit — il y avait des jours où je faisais le travail de trois infirmières."
+        "text": "Pendant les gardes de nuit, il y avait des jours où je faisais à moi seule le travail de trois infirmières."
     },
     "hidden_nurse_d4_4_b": {
         "name": "{name}",
@@ -428,7 +428,7 @@
     },
     "hidden_nurse_d4_4_c": {
         "name": "Infirmière",
-        "text": "*Elle s'arrête un instant et pose les documents.*"
+        "text": "*Elle referme le classeur. La pointe de son stylo glisse une fois sur la couverture.*"
     },
     "hidden_nurse_d4_4_d": {
         "name": "Infirmière",
@@ -444,7 +444,7 @@
     },
     "hidden_nurse_d4_4_g": {
         "name": "{name}",
-        "text": "*La main sur le document ne bouge plus.*"
+        "text": "*La pointe de son stylo a laissé une marque dans la case du numéro de lit, en haut du document.*"
     },
     "hidden_nurse_d4_4_h": {
         "name": "Infirmière",
@@ -532,7 +532,7 @@
     },
     "hidden_nurse_d4_meal_2_b": {
         "name": "Infirmière",
-        "text": "*Sa main s'immobilise un instant au milieu d'une étiquette.*"
+        "text": "*Une étiquette se colle de travers sur le coin du carton.*"
     },
     "hidden_nurse_d4_meal_3": {
         "name": "Infirmière",
@@ -552,7 +552,7 @@
     },
     "hidden_nurse_d4_meal_3_e": {
         "name": "Infirmière",
-        "text": "{name}."
+        "text": "{name}, tu oublies ta fiche."
     },
     "hidden_nurse_d4_meal_4": {
         "name": "Infirmière",
@@ -580,6 +580,6 @@
     },
     "morning4_end": {
         "name": "{name}",
-        "text": "*Un dernier regard dans le miroir. — C'est bon. On y va.*"
+        "text": "*De retour chez moi, je vérifie l'horloge près du miroir, puis retourne dans l'entrée pour renouer mes lacets.*"
     }
 }

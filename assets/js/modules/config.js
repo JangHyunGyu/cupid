@@ -51,7 +51,7 @@ const AI_MODEL_ID = "deepseek-v4-flash";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.106";
+const ASSET_VERSION = "2.9.107";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -864,9 +864,16 @@ function reportCupidCaughtError(error, options = {}) {
 function optimizeImageHistory(messages, recentCount = 5) {
     const r2ImageRegex = /https?:\/\/[^\s]+\.(?:jpg|jpeg|png|gif|webp)(?:\?[^\s]*)?/i;
     const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
-    const placeholder = lang === 'ko'
-        ? '[첨부 이미지: 현재 DeepSeek 텍스트 API는 이미지 픽셀을 직접 읽을 수 없습니다. 유저의 텍스트와 대화 맥락에만 근거해 반응하세요.]'
-        : '[Image attachment: the current DeepSeek text API cannot inspect image pixels directly. Respond using only the user text and conversation context.]';
+    const placeholder = {
+        ko: '[첨부 이미지: 현재 DeepSeek 텍스트 API는 이미지 픽셀을 직접 읽을 수 없습니다. 유저의 텍스트와 대화 맥락에만 근거해 반응하세요.]',
+        en: '[Image attachment: the current DeepSeek text API cannot inspect image pixels directly. Respond using only the user text and conversation context.]',
+        es: '[Imagen adjunta: la API de texto de DeepSeek no puede analizar directamente los píxeles de la imagen. Responde basándote únicamente en el texto del usuario y el contexto de la conversación.]',
+        ja: '[画像添付：現在のDeepSeekテキストAPIは画像そのものを読み取れません。ユーザーの文章と会話の文脈だけをもとに返答してください。]',
+        fr: '[Image jointe : l’API texte actuelle de DeepSeek ne peut pas analyser directement l’image. Répondez uniquement à partir du texte de l’utilisateur et du contexte de la conversation.]',
+        de: '[Bildanhang: Die aktuelle Text-API von DeepSeek kann den Bildinhalt nicht direkt auswerten. Antworte ausschließlich anhand des Benutzertexts und des Gesprächskontexts.]',
+        pt: '[Imagem anexada: a API de texto atual da DeepSeek não consegue analisar diretamente o conteúdo da imagem. Responda apenas com base no texto do usuário e no contexto da conversa.]'
+    }[String(lang).toLowerCase().split('-')[0]]
+        || '[Image attachment: the current DeepSeek text API cannot inspect image pixels directly. Respond using only the user text and conversation context.]';
 
     return messages.map((msg, idx) => {
         const isRecent = idx >= messages.length - recentCount;

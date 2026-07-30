@@ -9,11 +9,11 @@
     },
     "night2_msg_dain_specific": {
         "name": "Dain",
-        "text": "¡¡oye!! ¡¡qué rico estaba el tteokbokki hoy!!"
+        "text": "Oye, el tteokbokki de hoy estaba delicioso."
     },
     "night2_msg_dain_specific_2": {
         "name": "Dain",
-        "text": "¡¡mañana otra apuesta!! ¡¡cambiemos de reto!!"
+        "text": "Mañana volvemos a apostar. Cambiemos de deporte."
     },
     "night2_msg_seo_general": {
         "name": "Seoyeon",
@@ -33,7 +33,7 @@
     },
     "night2_msg_yuna_specific_2": {
         "name": "Yuna",
-        "text": "...tócala otro día"
+        "text": "Escuchémosla otra vez la próxima vez."
     },
     "night2_msg_dain_general": {
         "name": "Dain",
@@ -41,7 +41,7 @@
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
-        "text": "¿Subes a la azotea a la hora del almuerzo? Correrá buen aire"
+        "text": "¿Quieres subir a la azotea a la hora del almuerzo? Habrá buena brisa."
     },
     "night2_msg_seo_general_alt": {
         "name": "Seoyeon",
@@ -53,7 +53,7 @@
     },
     "night2_msg_generic": {
         "name": "Dain",
-        "text": "oye, ¿mañana vamos a la tienda?!"
+        "text": "Oye, mañana iremos a la tienda, ¿verdad?"
     },
     "night2_msg_generic_2": {
         "name": "Seoyeon",
@@ -86,11 +86,11 @@
     },
     "night2_reply_dain_3": {
         "name": "Dain",
-        "text": "¡¡mañana pidamos el suave!!"
+        "text": "Mañana pidamos el menos picante."
     },
     "night2_reply_dain_4": {
         "name": "Dain",
-        "text": "ah pero bueno el tteokbokki suave ya no es tteokbokki jaja"
+        "text": "Ah, pero un tteokbokki suave ya no es tteokbokki, jaja."
     },
     "night2_reply_dain_5": {
         "name": "{name}",
@@ -98,7 +98,7 @@
     },
     "night2_reply_dain_react_high": {
         "name": "Dain",
-        "text": "jajaja estás loco. ¡Mañana te quiero en el gimnasio sí o sí!!"
+        "text": "Oye, en serio, ¿qué eres tú? Mañana ven al gimnasio sin falta."
     },
     "night2_reply_dain_react_default": {
         "name": "Dain",
@@ -110,15 +110,15 @@
     },
     "night2_reply_seo_2": {
         "name": "Seoyeon",
-        "text": "Prometes muy rápido"
+        "text": "Lo dices muy fácil."
     },
     "night2_reply_seo_3": {
         "name": "{name}",
-        "text": "Es una promesa fácil de cumplir"
+        "text": "Porque es fácil decirlo."
     },
     "night2_reply_seo_4": {
         "name": "Seoyeon",
-        "text": "A la hora del almuerzo dejo la azotea abierta. Esta vez ven de verdad"
+        "text": "A la hora del almuerzo dejaré abierta la azotea. No llegues tarde."
     },
     "night2_reply_seo_5": {
         "name": "{name}",
@@ -162,7 +162,7 @@
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
-    "text": "*Incluso cuando termina la canción, tardo un poco en cerrar la pantalla de reproducción.*"
+        "text": "*La canción termina y la barra de progreso se detiene en el último tramo de la pantalla de reproducción.*"
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
@@ -178,21 +178,21 @@
     },
     "night2_dain_freetalk": {
         "name": "Dain",
-        "text": "*Aparecen enseguida los tres puntos de escritura.* ¿Sigues despierto? Entonces hablemos un poco más.",
-        "context": "Es la noche del día 2. Dain y el protagonista conversan por mensajes justo después de que él respondiera a su charla sobre la apuesta de hoy y jugar otra vez mañana. Están en lugares distintos; todo gesto debe describirse mediante texto, emoji, foto o sonido enviado. No des por enviados mensajes que el protagonista aún no haya escrito.",
-        "personality": "Dain escribe con energía, franqueza y bromas competitivas. También nota con rapidez los cambios de ánimo, pero pregunta antes de sacar conclusiones y no fuerza intimidad por chat."
+        "text": "Espera, antes de que te duermas. ¿Qué fue lo más divertido de hoy?",
+        "context": "Es la noche del segundo día desde la transferencia y Dain y el protagonista repasan el día por mensajes. El tiempo que pasaron juntos hoy y los mensajes que acaban de intercambiar son hechos consumados. Todavía no son pareja y hablan por celular, no en persona. No describas que Dain aparece de pronto ni que están en la misma habitación.",
+        "personality": "Dain es una jugadora de voleibol franca y de reacciones rápidas. Su energía se siente incluso en los mensajes, pero no presiona al otro para que responda. Cuando alguien le interesa, lo demuestra de forma natural mediante bromas y preguntas directas."
     },
     "night2_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*El indicador de escritura aparece, desaparece y vuelve.* Si todavía no vas a dormir, puedo escucharte un momento.",
-        "context": "Es la noche del día 2. Seoyeon y el protagonista conversan por mensajes después de hablar del almuerzo y del encuentro de mañana en la azotea. Están en lugares distintos; expresa cualquier acción solo mediante mensajes, emoji, fotos o sonidos enviados. No inventes contacto físico ni mensajes que el protagonista no haya enviado.",
-        "personality": "Seoyeon escribe de forma concisa y directa, con una atención que a veces se esconde detrás de indicaciones prácticas. No se vuelve repentinamente melosa; deja que las pausas y las palabras elegidas muestren su interés."
+        "text": "Ah, espera. Todavía no te dormiste, ¿verdad?",
+        "context": "Es la noche del segundo día desde la transferencia y la conversación con Seoyeon continúa un poco más por mensajes. Lo que ocurrió hoy en la escuela y los mensajes que acaban de intercambiar son hechos consumados. Todavía no son pareja; apenas están conociéndose mejor. Como hablan por celular, no inventes contacto físico ni acciones en el mismo espacio.",
+        "personality": "Seoyeon es una presidenta del consejo estudiantil serena y con criterios muy claros. Aunque le interese alguien, no exagera: muestra su curiosidad entre bromas breves y preguntas sinceras. No intenta controlar lo que dice la otra persona ni actúa como si la relación ya estuviera definida."
     },
     "night2_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Llega otro mensaje tras una breve pausa.* Si te queda algo por decir... todavía estoy leyendo.",
-        "context": "Es la noche del día 2. Yuna y el protagonista conversan por mensajes después de intercambiar impresiones sobre la biblioteca y el libro. Están en lugares distintos; las acciones solo pueden aparecer como texto, emoji, foto o sonido enviado. No conviertas un silencio en rechazo ni inventes un mensaje del protagonista.",
-        "personality": "Yuna escribe con cuidado y a veces usa imágenes literarias, pero responde a lo que realmente se dijo. Su interés se muestra en preguntas pequeñas y sinceras, sin interpretar en exceso ni apresurar la cercanía."
+        "text": "Espera. Si todavía estás despierto... ¿quieres que hablemos un poco más?",
+        "context": "Es la noche del segundo día desde la transferencia y la conversación tranquila con Yuna continúa por mensajes. Lo que ocurrió hoy en el anexo y con el libro, además de los mensajes que acaban de intercambiar, son hechos consumados. Todavía no son pareja y están construyendo confianza con cautela. Como hablan por celular, no conviertas la escena en una situación donde se ven o se tocan en persona.",
+        "personality": "Yuna es una lectora prudente y observadora. Piensa bien las palabras antes de enviar un mensaje y, a medida que se siente cómoda, empieza a compartir poco a poco sus gustos y preguntas. No interpreta el silencio como ansiedad y respeta el ritmo de la otra persona."
     },
     "night2_hidden_check": {
         "name": "{name}",
@@ -224,7 +224,7 @@
     },
     "night2_flashback_1": {
         "name": "{name}",
-        "text": "*Lo que me dijo Minsu se me repite en la cabeza. 'Seoyeon, Dain, Yuna. Las tres te sonríen.'*"
+        "text": "*No dejo de recordar lo que dijo Minsu: «Seoyeon, Dain y Yuna. Las tres te sonrieron».*"
     },
     "night2_flashback_2": {
         "name": "{name}",
@@ -236,15 +236,15 @@
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*Después de la nota número 38 no hay nada. La 39 solo tiene el título en blanco. Al día siguiente, el asiento de Sojeong permaneció vacío todo el día. La tutora se limitó a decir que se había cambiado de colegio.*"
+        "text": "*La nota número 38 es la última. Debajo, la número 39 ni siquiera tiene título. Al día siguiente, el asiento de Sojeong permaneció vacío hasta el final y la profesora solo dijo que se había cambiado de escuela.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*Cerré la galería. Mi dedo se detiene sobre el botón de eliminar foto. Al final, apago la pantalla. Solo queda mi cara en la pantalla negra.*"
+        "text": "*Cierro la galería y dejo el dedo sobre el botón para borrar la foto, pero al final apago la pantalla.*"
     },
     "night2_flashback_8": {
         "name": "{name}",
-    "text": "*Vuelvo a coger el móvil. Debajo del chat al que acabo de responder aún quedan, uno junto al otro, los nombres de las otras dos personas a las que no he contestado.*"
+        "text": "*Vuelvo a tomar el celular. Debajo del chat al que acabo de responder aún quedan, uno junto al otro, los dos nombres a los que no he contestado.*"
     },
     "night2_flashback_9": {
         "name": "{name}",
@@ -256,7 +256,7 @@
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*El segundo día terminó. Los nombres que eran extraños el primer día ahora están en mi pantalla de bloqueo. Incluso después de que las notificaciones se apagan, sigo encendiendo la pantalla de nuevo.*"
+        "text": "*En la pantalla de bloqueo se acumulan los tres nombres, uno tras otro. Leo todas las notificaciones, apago la pantalla y vuelvo a encenderla.*"
     },
     "night2_end_2_b": {
         "name": "{name}",
@@ -264,7 +264,7 @@
     },
     "night2_end_3_b": {
         "name": "{name}",
-    "text": "*Incluso después de que se apaga la pantalla, sigo sujetando el móvil de la misma manera.*"
+    "text": "*Incluso después de que se apaga la pantalla, sigo sujetando el celular de la misma manera.*"
     },
     "night2_end_4_b": {
         "name": "{name}",

@@ -1,15 +1,15 @@
 {
     "night3_start": {
         "name": "{name}",
-        "text": "*Je rentre dans ma chambre et pose mon sac.*"
+        "text": "*De retour dans ma chambre, j'accroche mon sac au dossier de la chaise.*"
     },
     "night3_start_2": {
         "name": "{name}",
-        "text": "*Je regarde mon téléphone.*"
+        "text": "*J'allume l'écran du téléphone posé face contre le bureau.*"
     },
     "night3_faithful_check": {
         "name": "{name}",
-        "text": "*Il y a des messages.*"
+        "text": "*Un message non lu s'affiche.*"
     },
     "night3_faithful_msg_seo_1": {
         "name": "Seoyeon",
@@ -45,11 +45,11 @@
     },
     "night3_faithful_msg_dain_3": {
         "name": "{name}",
-        "text": "*Long espace vide après 'lol'. Le prochain message de Dain n'arrive pas.*"
+        "text": "*Un long blanc sépare « mdr » de la phrase suivante. Aucun nouveau message de Dain n'arrive.*"
     },
     "night3_dream_1": {
         "name": "{name}",
-        "text": "*Je rêve que je marche à côté de quelqu'un. Seuls nos pas continuent au même rythme.*"
+        "text": "*Dans mon rêve, je marche à côté de quelqu'un. Je ne vois pas son visage ; seuls nos pas continuent au même rythme.*"
     },
     "night3_dream_2_b": {
         "name": "{name}",
@@ -81,11 +81,11 @@
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*La galerie est vide. Seul l'emplacement où se trouvait la photo de Sojeong reste éclairé en blanc.*"
+        "text": "*La photo de Sojeong a disparu de la galerie. Il ne reste qu'un emplacement vide.*"
     },
     "night3_faithful_reflect_4_b": {
         "name": "{name}",
-        "text": "*Je fixe longtemps la vignette vide de l'album.*"
+        "text": "*Je frotte du pouce la vignette vide de l'album.*"
     },
     "night3_faithful_reflect_4_c": {
         "name": "{name}",
@@ -145,7 +145,7 @@
     },
     "night3_cheat_msg_7": {
         "name": "Yuna",
-        "text": "*Elle a envoyé trois lignes, elle qui d'habitude n'en écrit même pas une.*"
+        "text": "*Trois bulles de message de Yuna apparaissent à la suite.*"
     },
     "night3_nightmare_1": {
         "name": "{name}",
@@ -153,7 +153,7 @@
     },
     "night3_nightmare_2_b": {
         "name": "{name}",
-        "text": "*J'ouvre la conversation de Seoyeon. Son dernier message s'arrête sur « S'il te plaît. »*"
+        "text": "*J'ouvre la conversation de Seoyeon. Son dernier message est « S'il te plaît. » Rien de nouveau ne suit.*"
     },
     "night3_nightmare_3": {
         "name": "Seoyeon",
@@ -194,11 +194,11 @@
     },
     "night3_nightmare_yuna": {
         "name": "{name}",
-        "text": "*Dans la zone de saisie de Yuna, j'écris : « Demain, je ne t'éviterai pas. Je te parlerai. » Mon doigt s'arrête juste avant Envoyer.*"
+        "text": "*Dans la zone de saisie de Yuna, j'écris : « Demain, je te parlerai sans t'éviter. » Le curseur clignote après le point final.*"
     },
     "night3_nightmare_dain": {
         "name": "{name}",
-        "text": "*Dans la zone de saisie de Dain, j'écris : « Pardon de t'avoir fait attendre. Je te parlerai demain. » Mon doigt s'arrête juste avant Envoyer.*"
+        "text": "*Dans la zone de saisie de Dain, j'écris : « Pardon de t'avoir fait attendre. Je te parlerai demain. » Du pouce, j'appuie sur le contour de l'icône Envoyer.*"
     },
     "night3_nightmare_end": {
         "name": "{name}",
@@ -238,6 +238,6 @@
     },
     "night3_end": {
         "name": "{name}",
-        "text": "*J'éteins la lumière.*"
+        "text": "*J'éteins la lumière et pose mon téléphone face contre le bureau.*"
     }
 }

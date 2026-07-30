@@ -1,7 +1,7 @@
 {
     "night_start": {
         "name": "{name}",
-        "text": "*De vuelta en mi cuarto. Acostado en la cama. Para ser el primer día — estoy agotado. Pero no estuvo mal.*"
+        "text": "*De regreso en mi cuarto, me recuesto en la cama y el aroma a flores de cerezo que quedó en la camisa del uniforme se impregna en las cobijas. Fue un primer día especialmente largo.*"
     },
     "night_start_3": {
         "name": "{name}",
@@ -13,7 +13,7 @@
     },
     "night_msg_seo_2": {
         "name": "{name}",
-        "text": "*se estaba bien con esa brisa*"
+        "text": "*la brisa estaba muy agradable*"
     },
     "night_msg_seo_3": {
         "name": "Seoyeon",
@@ -21,11 +21,11 @@
     },
     "night_msg_seo_4": {
         "name": "Seoyeon",
-        "text": "*...invita la casa*"
+        "text": "*cortesía de la casa*"
     },
     "night_msg_seo_5": {
         "name": "{name}",
-        "text": "*Mandó 'invita la casa' en una línea aparte a propósito.*"
+        "text": "*Envió «cortesía de la casa» en una línea aparte a propósito.*"
     },
     "night_msg_yuna_1": {
         "name": "Yuna",
@@ -37,15 +37,15 @@
     },
     "night_msg_yuna_3": {
         "name": "{name}",
-        "text": "*'Te guardo el lugar'. — La mano que deja el celular se mueve despacio.*"
+        "text": "*Mientras vuelvo a leer «te guardaré el lugar», la pantalla se oscurece primero.*"
     },
     "night_msg_dain_1": {
         "name": "Dain",
-        "text": "*¡¡La revancha de piedra, papel o tijera es MAÑANA!!*"
+        "text": "*mañana es la revancha de piedra, papel o tijera*"
     },
     "night_msg_dain_2": {
         "name": "Dain",
-        "text": "*¡ni se te ocurra zafarte jaja!*"
+        "text": "*mañana habrá revancha jaja*"
     },
     "night_msg_dain_3": {
         "name": "Dain",
@@ -53,7 +53,7 @@
     },
     "night_msg_dain_4": {
         "name": "{name}",
-        "text": "*Tres mensajes seguidos. ¿No puede respirar entre uno y otro?*"
+        "text": "*Los tres mensajes llegan casi al mismo tiempo. En el campo de respuesta ya aparece un «jaja».*"
     },
     "night_hidden_check": {
         "name": "{name}",
@@ -61,11 +61,11 @@
     },
     "night_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Hay un aviso de la tutora en la app de la escuela. 'Aviso clase 3-2: mañana traigan el material de matemáticas para la primera hora. — Y al estudiante transferido le basta con seguir adaptándose bien.'*"
+        "text": "*En la aplicación de avisos escolares aparece una publicación de la profesora: «Aviso para tercer año, grupo 2: mañana traigan el material de Matemáticas para la primera clase. Y el alumno transferido solo tiene que seguir adaptándose bien».*"
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Leo el aviso una vez más. Se me levanta la comisura, así que pongo el móvil boca abajo.*"
+        "text": "*Leo el aviso una vez más y dejo el celular boca abajo. Mi rostro se refleja un instante en la pantalla oscura.*"
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
@@ -93,27 +93,27 @@
     },
     "night_seo_late_3": {
         "name": "{name}",
-        "text": "*La mano se me queda quieta sobre el celular.*"
+        "text": "*Al dejar el celular, la hora de entrada de mañana queda visible en la pantalla de bloqueo.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
-        "text": "*...*"
+        "text": "*Aparece una burbuja gris: «Este mensaje fue eliminado».*"
     },
     "night_yuna_late_2": {
         "name": "{name}",
-        "text": "*El indicador de escritura se enciende y se apaga. Lo único que llega es «...».*"
+        "text": "*El indicador de escritura aparece y desaparece enseguida, pero no llega ningún mensaje nuevo.*"
     },
     "night_yuna_late_3": {
         "name": "{name}",
-        "text": "*— Dudo entre contestar o no, y la pantalla se apaga.*"
+        "text": "*Mientras abro y cierro el campo de respuesta, la pantalla entra en reposo.*"
     },
     "night_yuna_late_4": {
         "name": "{name}",
-        "text": "*Incluso con la pantalla apagada, me quedé con el celular en la mano un buen rato.*"
+        "text": "*En la pantalla negra solo queda la marca de mi pulgar.*"
     },
     "night_dain_late_1": {
         "name": "Dain",
-        "text": "*¡hey! aún no estás dormido, ¿no?*"
+        "text": "*oye, todavía no te dormiste, ¿verdad?*"
     },
     "night_dain_late_2": {
         "name": "Dain",
@@ -133,7 +133,7 @@
     },
     "night_end_1": {
         "name": "{name}",
-        "text": "*Dejo el celular. Miro al techo. El olor a cerezos aún sigue en mi uniforme.*"
+        "text": "*Dejo el celular y miro el techo. El aroma a flores de cerezo aún sigue en mi uniforme.*"
     },
     "night_end_3": {
         "name": "{name}",

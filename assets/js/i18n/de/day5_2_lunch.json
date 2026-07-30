@@ -13,7 +13,7 @@
     },
     "tour_seo_4": {
         "name": "Seoyeon",
-        "text": "Ich habe dich doch gar nicht ausgeschimpft. — Seitdem habe ich dich im Blick."
+        "text": "Ich hab dich doch nicht ausgeschimpft. Seit damals beobachte ich dich."
     },
     "tour_seo_5": {
         "name": "{name}",
@@ -21,7 +21,7 @@
     },
     "tour_seo_6": {
         "name": "Seoyeon",
-        "text": "...Vielleicht hast du dich wegen des Winds verhört."
+        "text": "Vielleicht hast du dich wegen des Winds verhört."
     },
     "tour_seo_7": {
         "name": "{name}",
@@ -37,7 +37,7 @@
     },
     "tour_seo_10": {
         "name": "{name}",
-        "text": "Der Dachschlüssel... nein, doch nicht."
+        "text": "Der Dachschlüssel—nein, der ist es nicht."
     },
     "tour_seo_11": {
         "name": "Seoyeon",
@@ -69,11 +69,11 @@
     },
     "tour_yuna_1": {
         "name": "{name}",
-        "text": "*Der Bibliotheksanbau. Ein altes Sofa, Nachmittagslicht durchs Fenster. Derselbe staubige Geruch wie beim ersten Betreten.*"
+        "text": "*Im Bibliotheksanbau fällt Nachmittagslicht durch den Fensterspalt auf eine Seite des alten Sofas. Es riecht noch genauso staubig wie bei meinem ersten Besuch.*"
     },
     "tour_yuna_1b": {
         "name": "{name}",
-        "text": "*Der Bibliotheksanbau. Der geheime Leseraum mit Yuna. Ein altes Sofa, Nachmittagslicht fällt durch das Fenster.*"
+        "text": "*Im Bibliotheksanbau fällt Nachmittagslicht durch den Fensterspalt auf das alte Sofa, auf dem Yuna und ich gelesen haben.*"
     },
     "tour_yuna_2": {
         "name": "Yuna",
@@ -85,7 +85,7 @@
     },
     "tour_yuna_4": {
         "name": "Yuna",
-        "text": "...Im guten Sinne?"
+        "text": "Im guten Sinne?"
     },
     "tour_yuna_5": {
         "name": "{name}",
@@ -97,7 +97,7 @@
     },
     "tour_yuna_7": {
         "name": "Yuna",
-        "text": "...Ich habe das Ende geschrieben."
+        "text": "Ich habe das Ende geschrieben."
     },
     "tour_yuna_8": {
         "name": "{name}",
@@ -109,7 +109,7 @@
     },
     "tour_yuna_10": {
         "name": "{name}",
-        "text": "*Sie hält mir das Notizbuch hin. Ihre Hand zittert leicht, und bis zuletzt kann Yuna die Ecke des Umschlags nicht loslassen.*"
+        "text": "*Yuna hält mir das Notizbuch hin. Der Umschlag bleibt einmal am Sofastoff hängen, und sie wartet auf meine Antwort, während sie noch eine Ecke festhält.*"
     },
     "tour_yuna_11": {
         "name": "{name}",
@@ -121,7 +121,7 @@
     },
     "tour_yuna_end": {
         "name": "Yuna",
-        "text": "...Der einzige Leser. Vorerst."
+        "text": "Mein einziger Leser. Vorerst."
     },
     "tour_yuna_end_2": {
         "name": "{name}",
@@ -141,7 +141,7 @@
     },
     "tour_dain_2": {
         "name": "Dain",
-        "text": "*Sie steht mitten auf dem Spielfeld. Mit einem Volleyball in der Hand.*"
+        "text": "*Dain steht mitten auf dem Spielfeld und hat einen Volleyball an die Seite geklemmt.*"
     },
     "tour_dain_3": {
         "name": "Dain",
@@ -149,7 +149,7 @@
     },
     "tour_dain_4": {
         "name": "{name}",
-        "text": "Wenn du eh wieder verlierst..."
+        "text": "Du verlierst doch sowieso wieder."
     },
     "tour_dain_5": {
         "name": "Dain",
@@ -161,19 +161,19 @@
     },
     "tour_dain_7": {
         "name": "Dain",
-        "text": "...Warum hab ich schon wieder verloren?"
+        "text": "Warum hab ich schon wieder verloren?"
     },
     "tour_dain_8": {
         "name": "{name}",
-        "text": "*Obwohl sie sich ärgert, lächelt sie. Einen Moment später legt Dain den Volleyball auf dem Spielfeld ab.*"
+        "text": "*Dain zieht die Brauen zusammen, kann ihre Mundwinkel aber nicht unterdrücken. Einen Takt zu spät legt sie den Volleyball aufs Spielfeld.*"
     },
     "tour_dain_10": {
         "name": "Dain",
-        "text": "Ob's für Profi reicht... keine Ahnung."
+        "text": "Ob ich Profi werde, weiß ich noch nicht."
     },
     "tour_dain_11": {
         "name": "{name}",
-        "text": "......"
+        "text": "*Der Ball rollt an der Spielfeldlinie entlang. Dain rührt ihn nicht an, bis sie weiterspricht.*"
     },
     "tour_dain_11_b": {
         "name": "Dain",
@@ -181,7 +181,7 @@
     },
     "tour_dain_12": {
         "name": "Dain",
-        "text": "Ich weiß nicht, was sich verändert hat. ...Aber inzwischen habe ich auch außerhalb des Spielfelds etwas zu sagen."
+        "text": "Ich weiß nicht, was sich verändert hat. Aber inzwischen habe ich auch außerhalb des Spielfelds etwas zu sagen."
     },
     "tour_dain_13": {
         "name": "{name}",
@@ -189,11 +189,11 @@
     },
     "tour_dain_end": {
         "name": "Dain",
-        "text": "...Ich bin ja nicht allein."
+        "text": "Ich bin ja nicht allein."
     },
     "tour_dain_freetalk": {
         "name": "Dain",
-        "text": "*Sie stoppt den Volleyball mit der Fußspitze und grinst.* Auch die letzte Mittagspause lasse ich nicht einfach so vorbeigehen."
+        "text": "*Sie hält den heranrollenden Volleyball unter ihrem Turnschuh fest.* Unsere letzte Mittagspause kann ich nicht einfach so vorbeiziehen lassen."
     },
     "tour_dain_end_2": {
         "name": "{name}",

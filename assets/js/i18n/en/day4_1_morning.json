@@ -51,15 +51,15 @@
     },
     "minsu_cheer_4_c": {
         "name": "{name}",
-        "text": "*I check my phone calendar. Seoyeon in the morning, Yuna in the afternoon, Dain in the evening. I didn't sleep last night trying to fit all three into one day. If even one schedule overlaps, it's over.*"
+        "text": "*I open my phone calendar. Seoyeon in the morning, Yuna in the afternoon, Dain in the evening. I barely slept last night working out the travel time between all three. If even one overlaps, they'll find out.*"
     },
     "minsu_cheer_4_d": {
         "name": "{name}",
-        "text": "*...What am I even doing.*"
+        "text": "*All three names share one screen. I lock the calendar, then open it again.*"
     },
     "minsu_cheer_4_e": {
         "name": "{name}",
-        "text": "*I take a deep breath and check the date messages again.*"
+        "text": "*I recalculate the travel time between the three dates and turn on every calendar alert.*"
     },
     "morning4_start_2": {
         "name": "{name}",
@@ -83,7 +83,7 @@
     },
     "morning4_yuna_msg_1_b": {
         "name": "{name}",
-        "text": "*Short. Very Yuna. There's no period after 'If you're late, I'm leaving.'*"
+        "text": "*Only two sentences. There isn't even a period after “If you're late, I'm leaving.”*"
     },
     "morning4_yuna_msg_single": {
         "name": "{name}",
@@ -95,28 +95,28 @@
     },
     "morning4_fallback_msg": {
         "name": "{name}",
-        "text": "*Weekend morning. A few notifications are waiting. — I thought it would be an ordinary day. I set down my phone and stretch. Either way, another day begins.*"
+        "text": "*Weekend morning. I check a few notifications and set down my phone. Outside, an apartment-complex street sweeper passes by.*"
     },
     "morning4_hidden_check": {
         "name": "{name}",
-        "text": "*Weekend. I end up passing by the school.*"
+        "text": "*On a weekend morning, I wait at the intersection outside school.*"
     },
     "morning4_manuscript_check": {},
     "hidden_homeroom_d4_skip": {
         "name": "{name}",
-        "text": "*My steps stop for a moment, and then I keep walking past.*"
+        "text": "*A door closes somewhere inside the main gate. Meanwhile, the walk signal comes on.*"
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "*The school gate is slightly open, and someone is moving inside. The homeroom teacher comes out carrying a paper bag.*"
+        "text": "*One side of the main gate is open. My homeroom teacher comes out carrying a paper bag.*"
     },
     "hidden_homeroom_d4_1_b": {
         "name": "{name}",
-        "text": "*My feet stop at the front gate. A beat late, the teacher hides the paper envelope behind her back.*"
+        "text": "*When our eyes meet, she moves the paper bag behind her back. The manuscript inside rustles.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Homeroom Teacher",
-        "text": "...Huh? {name}?"
+        "text": "Huh? {name}?"
     },
     "hidden_homeroom_d4_3": {
         "name": "{name}",
@@ -140,7 +140,7 @@
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
-        "text": "*The homeroom teacher keeps the paper bag in one hand.*"
+        "text": "*Only one handle of the paper bag is pulled taut. The folded corner of the manuscript shows through.*"
     },
     "hidden_homeroom_d4_4_b": {
         "name": "Homeroom Teacher",
@@ -156,7 +156,7 @@
     },
     "hidden_homeroom_d4_4_e": {
         "name": "{name}",
-        "text": "*The conversation trails off.*"
+        "text": "*Only the radio from the gatehouse fills the silence between us.*"
     },
     "hidden_homeroom_d4_5": {
         "name": "Homeroom Teacher",
@@ -172,11 +172,11 @@
     },
     "hidden_homeroom_d4_5_d": {
         "name": "Homeroom Teacher",
-        "text": "*Even after finishing, the teacher keeps folding the corner of the cup holder.*"
+        "text": "*After she finishes speaking, she folds the paper-bag handles twice in her grip.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
-        "text": "*The corner of the paper envelope is pressed under the cup holder.*",
+        "text": "*The corners of the manuscript knock together inside the paper bag.*",
         "choices": [
             "Sure. May I sit in on the critique?",
             "I already have plans today."
@@ -232,7 +232,7 @@
     },
     "hidden_homeroom_d4_cafe_choice": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher sets down her coffee cup. Her body leans slightly toward the window.*",
+        "text": "*She sets down her coffee and tips her chin toward the critique copies on an inside table.*",
         "choices": [
             "You still haven't decided on the ending?",
             "You'll show the whole thing to the club too, right?"
@@ -260,7 +260,7 @@
     },
     "hidden_homeroom_d4_cafe_5_b": {
         "name": "Homeroom Teacher",
-        "text": "*She lets out a quiet laugh. Her hand stops folding the cup sleeve.*"
+        "text": "*The hand folding the cup sleeve opens. The creases remain in the paper.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Homeroom Teacher",
@@ -376,7 +376,7 @@
     },
     "hidden_nurse_d4_1": {
         "name": "{name}",
-        "text": "*An event first-aid kit and examination supplies are stacked on one side of the desk. The nurse looks up from labeling them.*"
+        "text": "*An event first-aid kit and examination supplies are stacked on one side of the desk. While applying labels, the nurse looks toward the door over her glasses.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "School Nurse",
@@ -408,7 +408,7 @@
     },
     "hidden_nurse_d4_2_g": {
         "name": "School Nurse",
-        "text": "...At the university hospital, I used to do all this by myself."
+        "text": "At the university hospital, there were plenty of days I had to handle this kind of prep alone."
     },
     "hidden_nurse_d4_2_h": {
         "name": "{name}",
@@ -420,19 +420,19 @@
     },
     "hidden_nurse_d4_4": {
         "name": "School Nurse",
-        "text": "...At the university hospital, I used to do all this alone. On some night shifts, I did the work of three nurses by myself."
+        "text": "On night shifts, there were days I did the work of three nurses by myself."
     },
     "hidden_nurse_d4_4_b": {
         "name": "{name}",
-        "text": "So the burnout..."
+        "text": "So the burnout was..."
     },
     "hidden_nurse_d4_4_c": {
         "name": "School Nurse",
-        "text": "*She pauses and sets down the papers.*"
+        "text": "*She closes the file. The tip of her pen slips once across the cover.*"
     },
     "hidden_nurse_d4_4_d": {
         "name": "School Nurse",
-        "text": "...The hardest part back then wasn't the workload."
+        "text": "The hardest part back then wasn't the workload."
     },
     "hidden_nurse_d4_4_e": {
         "name": "{name}",
@@ -444,7 +444,7 @@
     },
     "hidden_nurse_d4_4_g": {
         "name": "{name}",
-        "text": "*The hand on the document no longer moves.*"
+        "text": "*A dot from the pen tip remains in the bed-number box at the top of the form.*"
     },
     "hidden_nurse_d4_4_h": {
         "name": "School Nurse",
@@ -484,7 +484,7 @@
     },
     "hidden_nurse_d4_6": {
         "name": "School Nurse",
-        "text": "Thanks. I finished much faster because of you. ...It's nothing special."
+        "text": "Thanks. I finished much faster because of you. It's nothing special."
     },
     "hidden_nurse_d4_6_b": {
         "name": "{name}",
@@ -532,7 +532,7 @@
     },
     "hidden_nurse_d4_meal_2_b": {
         "name": "School Nurse",
-        "text": "*Her hand pauses midway through applying a label.*"
+        "text": "*One label goes on crooked over the corner of a box.*"
     },
     "hidden_nurse_d4_meal_3": {
         "name": "School Nurse",
@@ -552,7 +552,7 @@
     },
     "hidden_nurse_d4_meal_3_e": {
         "name": "School Nurse",
-        "text": "{name}."
+        "text": "{name}, you're leaving the checklist behind."
     },
     "hidden_nurse_d4_meal_4": {
         "name": "School Nurse",
@@ -580,6 +580,6 @@
     },
     "morning4_end": {
         "name": "{name}",
-        "text": "*One more glance in the mirror. — Good enough. Let's go.*"
+        "text": "*Back home, I check the clock beside the mirror, then return to the entryway and tie my shoes again.*"
     }
 }

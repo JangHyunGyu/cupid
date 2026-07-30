@@ -22,15 +22,15 @@
     },
     "morning5_mood_mid": {
         "name": "{name}",
-        "text": "Letzter Tag. Ich bin mir noch immer nicht sicher. Aber ich muss gehen."
+        "text": "Der letzte Tag. Ich habe mich noch immer nicht entschieden, welchen Weg ich einschlage. Trotzdem gehe ich durch das Schultor."
     },
     "morning5_mood_low": {
         "name": "{name}",
-        "text": "Der letzte Tag. Ich tippe nacheinander auf die drei Namen auf meinem Sperrbildschirm. Ich kann keines der Chat-Fenster öffnen."
+        "text": "Der letzte Tag. Ich tippe nacheinander auf die drei Namen auf meinem Sperrbildschirm und schalte ihn aus, ohne einen der Chats zu öffnen."
     },
     "morning5_gate": {
         "name": "{name}",
-        "text": "*Am Schultor ziehe ich einmal an meinem Ärmel. Er hinterlässt keine Spur mehr am Handgelenk.*"
+        "text": "*Am Schultor kremple ich meinen Ärmel hoch. Der rote Abdruck, der sonst um mein Handgelenk lag, ist verschwunden.*"
     },
     "morning5_seo_note_1": {
         "name": "{name}",
@@ -38,11 +38,11 @@
     },
     "morning5_seo_note_1_b": {
         "name": "{name}",
-        "text": "*Ich gehe an der Ausstellung des Literaturklubs im Flur vorbei. Vor dem Schwarzen Brett bleiben meine Füße stehen.*"
+        "text": "*Als ich an der Ausstellung des Literaturklubs im Flur vorbeigehe, entdecke ich vier leere Reißzwecken am Schwarzen Brett.*"
     },
     "morning5_yuna_story_gone": {
         "name": "{name}",
-        "text": "*Am Brett bleiben nur die Pinnadellöcher. Wo die Kurzgeschichte hätte hängen sollen. — Sie hat sie abgenommen. Oder vielleicht hat sie sie nie aufgehängt.*"
+        "text": "*Am Schwarzen Brett sind nur noch die Löcher der Reißzwecken zu sehen. Ich weiß nicht, ob dort eine Geschichte hing und wieder abgenommen wurde oder ob die Stelle von Anfang an leer war.*"
     },
     "morning5_yuna_story_gone_2": {
         "name": "{name}",
@@ -62,7 +62,7 @@
     },
     "morning5_yuna_story_4": {
         "name": "{name}",
-        "text": "*Unten in der Ecke der Pinnwand steht klein: ‚Das ist eine Geschichte. Sie ist nicht wahr.‘ Daneben sind noch Spuren eines Radiergummis zu sehen.*"
+        "text": "*Unten in einer Ecke des Schwarzen Bretts steht klein: »Das ist eine Geschichte. Sie ist nicht wahr.« Darunter sind verwischte Radiergummispuren zu sehen.*"
     },
     "morning5_return_class": {
         "name": "{name}",
@@ -74,7 +74,7 @@
     },
     "morning5_dain_1_b": {
         "name": "{name}",
-        "text": "...Ohne zu fragen?"
+        "text": "Ohne überhaupt zu fragen?"
     },
     "morning5_dain_2": {
         "name": "Dain",
@@ -99,11 +99,11 @@
     },
     "hidden_homeroom_d5_1": {
         "name": "Klassenlehrerin",
-        "text": "*Die Lehrerin sitzt am Pult. — Kein Manuskript diesmal. Ein Umschlag. Ein brauner Umschlag.*"
+        "text": "*Meine Klassenlehrerin sitzt mit einem braunen Umschlag am Pult. Das Manuskript ist nirgends zu sehen.*"
     },
     "hidden_homeroom_d5_1_b": {
         "name": "Klassenlehrerin",
-        "text": "...Oh."
+        "text": "Ah, da bist du ja."
     },
     "hidden_homeroom_d5_1_c": {
         "name": "{name}",
@@ -111,7 +111,7 @@
     },
     "hidden_homeroom_d5_1_d": {
         "name": "Klassenlehrerin",
-        "text": "*Sie hebt den Umschlag hoch.* ...Das hier."
+        "text": "*Sie hält den braunen Umschlag hoch.* Das hier."
     },
     "hidden_homeroom_d5_1_e": {
         "name": "{name}",
@@ -143,11 +143,11 @@
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin hält einen Moment inne. Ihr gewohnt trockener Gesichtsausdruck kehrt rasch zurück, doch der Umschlag knittert leicht in ihrer Hand.*"
+        "text": "*Die Ecke des Umschlags knittert leicht in ihrer Hand. Mit dem Daumen streicht sie die Falte glatt.*"
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Klassenlehrerin",
-        "text": "...Ich habe es noch nicht zu Ende geschrieben."
+        "text": "Ich habe es noch nicht einmal zu Ende geschrieben."
     },
     "hidden_homeroom_d5_praise_trap_3": {
         "name": "{name}",
@@ -155,7 +155,7 @@
     },
     "hidden_homeroom_d5_praise_trap_4": {
         "name": "Klassenlehrerin",
-        "text": "...Schon."
+        "text": "Stimmt."
     },
     "hidden_homeroom_d5_praise_trap_5": {
         "name": "Klassenlehrerin",
@@ -167,7 +167,7 @@
     },
     "hidden_homeroom_d5_praise_trap_7": {
         "name": "{name}",
-        "text": "Frau Lehrerin—"
+        "text": "Frau Lehrerin."
     },
     "hidden_homeroom_d5_praise_trap_8": {
         "name": "Klassenlehrerin",
@@ -191,11 +191,11 @@
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin hält inne. Das Ende des Blattes biegt sich leicht in ihrer Hand.*"
+        "text": "*Das Ende des Papiers biegt sich leicht in ihrer Hand. Mit fest geschlossenen Lippen streicht sie die gefaltete Kante sorgfältig glatt.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Klassenlehrerin",
-        "text": "...Hier drin?"
+        "text": "Hier?"
     },
     "hidden_homeroom_d5_correct_3": {
         "name": "{name}",
@@ -203,7 +203,7 @@
     },
     "hidden_homeroom_d5_correct_4": {
         "name": "Klassenlehrerin",
-        "text": "Gut. — Einen Moment."
+        "text": "Gut. Einen Moment."
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
@@ -211,7 +211,7 @@
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Klassenlehrerin",
-        "text": "...Du hast bis dorthin gelesen?"
+        "text": "Du hast bis dahin gelesen?"
     },
     "hidden_homeroom_d5_correct_7": {
         "name": "Klassenlehrerin",
@@ -219,7 +219,7 @@
     },
     "hidden_homeroom_d5_correct_8": {
         "name": "Klassenlehrerin",
-        "text": "*Die Lehrerin schluckt den Rest hinunter. Das Klassenzimmer wird so still wie die leere letzte Zeile.*"
+        "text": "*Sie deutet mit der Fingerspitze auf die letzte Zeile. Als die Veranstaltungsdurchsage draußen endet, ist nur noch das Umblättern der Seiten zu hören.*"
     },
     "hidden_homeroom_d5_correct_9": {
         "name": "{name}",
@@ -235,7 +235,7 @@
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Klassenlehrerin",
-        "text": "*Sie lächelt. Das Klemmbrett sinkt auf den Tisch.*"
+        "text": "*Sie legt das Klemmbrett auf den Tisch und steckt die Kappe auf den roten Stift.*"
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Klassenlehrerin",
@@ -243,7 +243,7 @@
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "*Ich nehme das Manuskript wieder an mich. Die Lehrerin reibt mit dem Daumen über die Spur des Rücksendeaufklebers; die Papierecke knittert leicht in ihrer Hand.*"
+        "text": "*Sie nimmt die Kritikfassung zurück und reibt einmal mit dem Daumen über die Spur des alten Rücksendeaufklebers auf dem Umschlag.*"
     },
     "hidden_homeroom_d5_6": {
         "name": "Klassenlehrerin",
@@ -255,7 +255,7 @@
     },
     "hidden_homeroom_d5_6_c": {
         "name": "{name}",
-        "text": "*Der Umschlag biegt sich leicht in meinen Händen. Ihre Hand bleibt noch an der Tischkante liegen.*"
+        "text": "*Eine Hand auf der Tischkante, beobachtet meine Klassenlehrerin, wie der Umschlag in meiner Tasche verschwindet.*"
     },
     "hidden_homeroom_d5_6_d": {
         "name": "Klassenlehrerin",
@@ -287,7 +287,7 @@
     },
     "hidden_homeroom_d5_6_k": {
         "name": "{name}",
-        "text": "*Vor der Antwort berühre ich zuerst die Ecke des Umschlags.*"
+        "text": "*Während ich auf ihre Antwort warte, fällt mir die Nummernmarke an der Ecke des Umschlags ins Auge.*"
     },
     "hidden_homeroom_d5_6_l": {
         "name": "{name}",
@@ -295,7 +295,7 @@
     },
     "hidden_homeroom_d5_6_m": {
         "name": "Klassenlehrerin",
-        "text": "*Sie streicht sich die Haare zurück.* ...Einen Aufsatz will ich aber nicht."
+        "text": "*Sie schiebt eine lose Haarsträhne hinters Ohr.* Einen Aufsatz nehme ich nicht an."
     },
     "hidden_homeroom_d5_6_n": {
         "name": "{name}",
@@ -303,11 +303,11 @@
     },
     "hidden_homeroom_d5_6_o": {
         "name": "Klassenlehrerin",
-        "text": "*Sie lacht leise.* ...Stimmt. Schreib wenigstens eine Zeile."
+        "text": "*Ein Mundwinkel hebt sich.* Stimmt. Schreib wenigstens eine Zeile."
     },
     "hidden_homeroom_d5_6_p": {
         "name": "Klassenlehrerin",
-        "text": "*An der Tür bleibt sie stehen und prüft noch einmal den Zeitplan des Literaturklubs.*"
+        "text": "*Ihr Blick wandert zum Terminplan des Literaturklubs neben der Tür.*"
     },
     "hidden_homeroom_d5_6_q": {
         "name": "Klassenlehrerin",
@@ -411,11 +411,11 @@
     },
     "hidden_nurse_d5_3_h": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie dreht sich um, um reinzugehen — und bleibt stehen.*"
+        "text": "*Bevor sie über die Schwelle des Krankenzimmers tritt, klappt sie die Terminliste noch einmal auf.*"
     },
     "hidden_nurse_d5_3_i": {
         "name": "Schulkrankenschwester",
-        "text": "...{name}."
+        "text": "{name}, warte kurz."
     },
     "hidden_nurse_d5_4": {
         "name": "Schulkrankenschwester",
@@ -423,7 +423,7 @@
     },
     "hidden_nurse_d5_4_b": {
         "name": "{name}",
-        "text": "Entschuldigen Sie..."
+        "text": "Entschuldigen Sie."
     },
     "hidden_nurse_d5_4_c": {
         "name": "{name}",

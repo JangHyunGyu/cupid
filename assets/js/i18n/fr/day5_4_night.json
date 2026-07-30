@@ -9,7 +9,7 @@
     },
     "hidden_dual_route_choice": {
         "name": "{name}",
-        "text": "*Je sors d'abord l'un des deux documents. Aucune de ces relations n'a besoin d'être décidée aujourd'hui.*",
+        "text": "*Je sors d’abord l’un des deux documents. Aucune relation n’a à être définie aujourd’hui.*",
         "choices": [
             "Ouvrir l'exemplaire du club littéraire",
             "Sortir la carte de premiers secours"
@@ -74,23 +74,23 @@
     },
     "hidden_perfect_homeroom_4e": {
         "name": "{name}",
-        "text": "*C'est {name} qui fixe le troisième rendez-vous. Après le travail, il attend sur la terrasse d'un café donnant sur les cerisiers en fleurs et réajuste le papier du bouquet.*"
+        "text": "*Troisième rencontre. Après le travail, sur la terrasse d’un café qui donne sur les cerisiers en fleurs, la professeure principale est arrivée la première avec un petit bouquet.*"
     },
     "hidden_perfect_homeroom_4f": {
         "name": "{name}",
-        "text": "*Je lui tends le bouquet.* C'est pour fêter le livre, et aussi pour dire que j'ai envie de vous revoir."
+        "text": "*La professeure principale pose le bouquet au milieu de la table et remet en ordre le ruban de l’emballage.*"
     },
     "hidden_perfect_homeroom_4g": {
         "name": "Professeure principale",
-        "text": "*Le bouquet dans les bras, elle regarde {name}.* Je peux comprendre que c'est réciproque ?"
+        "text": "C’est un cadeau pour fêter la publication. Et puis… est-ce que je peux le prendre comme le signe que tu as envie de me revoir ?"
     },
     "hidden_perfect_homeroom_ending_title": {
         "name": "",
-        "text": "─── Professeure PERFECT END ───"
+        "text": "─── Professeure principale PERFECT END ───"
     },
     "hidden_perfect_homeroom_5": {
         "name": "{name}",
-        "text": "*Nous quittons le café et marchons au même rythme. Le papier du bouquet bruisse doucement dans le vent du soir.*"
+        "text": "*Nous nous tenons côte à côte près de la porte du café. Le bouquet à la main, la professeure principale ne part pas la première et attend ma réponse.*"
     },
     "hidden_perfect_homeroom_ep1": {
         "name": "{name}",
@@ -106,7 +106,7 @@
     },
     "hidden_perfect_homeroom_ep4": {
         "name": "{name}",
-        "text": "*Nous parlons de nos métiers et choisissons le week-end suivant. Nos anciens rôles ne sont ni un secret à effacer ni une plaisanterie à ressortir ; nous les laissons à cette époque désormais révolue.*"
+        "text": "*Notre calendrier partagé n’indique que nos jours de travail et notre rendez-vous du week-end suivant. Les titres que nous employions au lycée ne subsistent plus que dans la légende d’une photo de remise des diplômes prise quatre ans plus tôt.*"
     },
     "hidden_true_homeroom_1": {
         "name": "{name}",
@@ -134,7 +134,7 @@
     },
     "hidden_true_homeroom_4": {
         "name": "Professeure principale",
-        "text": "*Elle regarde mon badge et sourit.* Tu as vraiment construit ta propre vie."
+        "text": "*Elle vérifie tour à tour le nom et la photo sur mon badge d’entreprise.* Tu as vraiment construit ta propre vie."
     },
     "hidden_true_homeroom_4_b": {
         "name": "{name}",
@@ -202,11 +202,11 @@
     },
     "hidden_true_homeroom_8": {
         "name": "Professeure principale",
-        "text": "*De l'autre côté de l'assiette de gâteau, {name} lui tend la main. Elle l'observe un instant, la prend avec précaution, puis cache de son autre main le sourire qui lui échappe.* Tu veux qu'on se revoie la semaine prochaine ?"
+        "text": "*De l’autre côté de l’assiette de gâteau, elle ouvre la paume. Elle s’arrête avant de me toucher et attend la réponse de {name}.* Tu veux qu’on se revoie la semaine prochaine ?"
     },
     "hidden_true_homeroom_ending_title": {
         "name": "",
-        "text": "─── Professeure TRUE LOVE END ───"
+        "text": "─── Professeure principale TRUE LOVE END ───"
     },
     "hidden_good_homeroom_1": {
         "name": "Professeure principale",
@@ -267,11 +267,11 @@
     },
     "hidden_perfect_nurse_ep1": {
         "name": "{name}",
-        "text": "*Quelques mois plus tard. Après plusieurs week-ends passés ensemble, ils partagent leur premier réveil. Sous la couette, Juwon cherche la main de {name} et la serre. {name} ne la lâche pas non plus.*"
+        "text": "*Quelques mois plus tard. Après plusieurs week-ends passés ensemble, nous nous réveillons ensemble pour la première fois. Juwon tend une main sous la couette et attend, les doigts légèrement ouverts.*"
     },
     "hidden_perfect_nurse_ep2": {
         "name": "{name}",
-        "text": "*Après ce matin-là, aller chez Juwon le week-end devient naturel. Tandis que le temps passé ensemble s'allonge peu à peu, elle rejoint l'équipe de formation d'un hôpital universitaire. Patients et nouvelles recrues l'appellent désormais formatrice Lee Juwon.*"
+        "text": "*Après ce matin chez Juwon, les cases du week-end se remplissent une à une dans notre calendrier partagé. Entre-temps, Juwon rejoint l’équipe de formation d’un hôpital universitaire. Les nouvelles infirmières l’appellent elles aussi Madame Lee Juwon.*"
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
@@ -291,7 +291,7 @@
     },
     "hidden_true_nurse_2_b": {
         "name": "{name}",
-        "text": "*Deux badges d'entreprise différents sont posés sur la table. Nous avons tous les deux le visage d'adultes qui viennent de mener leur journée jusqu'au bout.*"
+        "text": "*Deux badges d’entreprise différents sont posés sur la table. D’un côté s’affiche une notification d’heures supplémentaires approuvées, de l’autre le rapport de clôture de l’événement de santé.*"
     },
     "hidden_true_nurse_2_c": {
         "name": "Infirmière",
@@ -335,7 +335,7 @@
     },
     "hidden_true_nurse_5_f": {
         "name": "Infirmière",
-        "text": "*Elle laisse échapper un petit rire sec.* Oui. Il faut moins de trois minutes pour poser un pansement."
+        "text": "*Elle tapote deux fois du doigt l’anse de sa tasse.* Oui. Il faut poser un pansement en moins de trois minutes."
     },
     "hidden_true_nurse_6": {
         "name": "Infirmière",
@@ -367,7 +367,7 @@
     },
     "hidden_true_nurse_8_b": {
         "name": "{name}",
-        "text": "*Pendant trois mois, nous nous retrouvons chaque week-end dans un café différent. Ce jour-là, elle m'invite chez elle pour la première fois.*"
+        "text": "*Pendant trois mois, nous nous sommes retrouvés chaque week-end dans un café différent. Ce jour-là, elle m’invite chez elle pour la première fois.*"
     },
     "hidden_true_nurse_8_c": {
         "name": "{name}",
@@ -451,7 +451,7 @@
     },
     "perfect_seo_3": {
         "name": "Seoyeon",
-        "text": "Je ne rangerai que ça aujourd'hui."
+        "text": "Je vais m’arrêter là pour aujourd’hui."
     },
     "perfect_seo_4": {
         "name": "Seoyeon",
@@ -475,7 +475,7 @@
     },
     "perfect_epilogue_2_seo": {
         "name": "{name}",
-        "text": "*Le jour de ma rentrée à l'université, Seoyeon m'envoie une photo : deux nouvelles plantes et une place vide.*"
+        "text": "*Le jour de la cérémonie d’entrée à l’université, Seoyeon m’envoie une photo : deux nouveaux pots et une place vide.*"
     },
     "perfect_epilogue_3_seo": {
         "name": "Seoyeon",
@@ -499,7 +499,7 @@
     },
     "bitter_seo_3": {
         "name": "{name}",
-        "text": "*Je sors du café. Il pleut. Nous n'avons qu'un parapluie, mais nos arrêts de bus sont dans des directions opposées.*"
+        "text": "*Je sors du café. Il pleut. Nous n’avons qu’un parapluie et l’arrêt de bus se trouve de l’autre côté de la rue.*"
     },
     "true_seo_1": {
         "name": "{name}",
@@ -563,7 +563,7 @@
     },
     "perfect_yuna_2": {
         "name": "{name}",
-        "text": "*Le titre est le nom du protagoniste.*"
+        "text": "*Le titre porte mon nom.*"
     },
     "perfect_yuna_3": {
         "name": "Yuna",
@@ -575,7 +575,7 @@
     },
     "perfect_yuna_5": {
         "name": "Yuna",
-        "text": "*Elle se lève et me serre dans ses bras sans un mot. La lumière qui passe par la vitre fendue s'étire sur le sol. Sa main s'immobilise dans mon dos avec un temps de retard.*"
+        "text": "*Elle se lève et pose son carnet.* Je peux te prendre dans mes bras ? *Les bras légèrement ouverts, elle attend ma réponse à une vingtaine de centimètres de moi.*"
     },
     "perfect_epilogue_1_yuna": {
         "name": "{name}",
@@ -599,7 +599,7 @@
     },
     "bitter_yuna_1": {
         "name": "{name}",
-        "text": "*J'ai avoué. Yuna hocha la tête, mais ses doigts continuèrent de frotter le bout du marque-page. Environ un mois plus tard, une note a été placée dans mon casier. ‘Parlons.’*"
+        "text": "*Je lui ai avoué mes sentiments. Yuna a hoché la tête, mais ses doigts ont continué de frotter le bout du marque-page. Environ un mois plus tard, j’ai trouvé un mot dans mon casier : « Il faut qu’on parle. »*"
     },
     "bitter_yuna_2": {},
     "bitter_yuna_2_library": {
@@ -648,7 +648,7 @@
     },
     "true_yuna_5_b": {
         "name": "Yuna",
-        "text": "*Yuna s’arrête un instant. Sa main se desserre sur le dos du livre.*"
+        "text": "*Son doigt s’arrête sur le troisième morceau en faisant défiler la playlist. Sa main se desserre sur le dos du livre.*"
     },
     "true_yuna_6": {
         "name": "Yuna",
@@ -664,11 +664,11 @@
     },
     "true_yuna_bridge": {
         "name": "{name}",
-        "text": "*Alors que la dernière chanson touche à sa fin, un croissant de lune apparaît. Yuna demande : \"Je peux m'appuyer contre ton dos ?\" {name} hoche la tête ; ils s'adossent l'un à l'autre et lancent la chanson suivante.*"
+        "text": "*Alors que le dernier morceau touche à sa fin, un croissant de lune apparaît. Yuna demande : « Je peux appuyer mon dos contre le tien ? » et laisse une vingtaine de centimètres libres à côté d’elle. Le morceau suivant n’a pas encore commencé.*"
     },
     "true_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*Cinq jours. Le temps qu'il a fallu pour entendre la voix de Yuna au-delà des notes.*"
+        "text": "*Cinq jours. Le temps qu’il a fallu à Yuna pour parler autrement que par petits mots.*"
     },
     "ending_aff_check_dain": {
         "name": "Système",
@@ -736,7 +736,7 @@
     },
     "bitter_dain_2": {
         "name": "Dain",
-        "text": "C'était sympa ! ...Mais je crois que c'était seulement sympa. C'est ça qui me laisse un goût bizarre."
+        "text": "Je me suis bien amusée ! …Mais ça n’a été que ça. Et je trouve ça dommage."
     },
     "bitter_dain_3": {
         "name": "{name}",
@@ -800,7 +800,7 @@
     },
     "true_dain_bridge": {
         "name": "{name}",
-        "text": "*Une fois la promesse confirmée, Dain demande : \"Je peux m'appuyer un instant ?\" {name} hoche la tête. Sans lâcher le ballon, Dain s'appuie contre son épaule et ferme les yeux. L'écran de confirmation du rendez-vous médical reste affiché sur le téléphone.*"
+        "text": "*Une fois la promesse confirmée, Dain demande : « Je peux m’appuyer un instant ? » Le ballon serré contre elle, elle laisse entre nous la largeur d’une épaule et attend ma réponse. L’écran de confirmation du rendez-vous médical reste affiché sur son téléphone.*"
     },
     "true_epilogue_1_dain": {
         "name": "{name}",
@@ -812,7 +812,7 @@
     },
     "true_epilogue_3": {
         "name": "{name}",
-        "text": "*Mais avec le recul, tout a commencé assez vite. Il m'a seulement fallu cinq jours pour l'admettre.*"
+        "text": "*Avec le recul, tout a commencé assez vite. Le calendrier n’avait avancé que de cinq cases.*"
     },
     "true_epilogue_4": {},
     "true_epilogue_4_seo": {
@@ -933,7 +933,7 @@
     },
     "good_1_seo_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon retire un pétale accroché au poignet de {name}.*"
+        "text": "*Seoyeon retire un pétale accroché au bout de la manche de {name}.*"
     },
     "good_1_seo_c": {
         "name": "Seoyeon",
@@ -981,7 +981,7 @@
     },
     "good_1_yuna_b": {
         "name": "Yuna",
-        "text": "*Elle me tend un mot plié. Quand je l'ouvre, il n'y a qu'une ligne : « La prochaine fois, parle la première. »*"
+        "text": "*Elle me tend un mot plié. Quand je l’ouvre, il n’y a qu’une ligne : « La prochaine fois, parle avant moi. »*"
     },
     "good_1_yuna_b_b": {
         "name": "{name}",
@@ -993,7 +993,7 @@
     },
     "good_3_yuna": {
         "name": "{name}",
-        "text": "*On regarde le même ciel. Elle parle peu, mais le silence n'est plus aussi froid qu'avant.*"
+        "text": "*Même après la fin du signal diffusé par les haut-parleurs du terrain, nous restons tous les deux devant la même rambarde.*"
     },
     "good_4_yuna": {
         "name": "Yuna",
@@ -1037,7 +1037,7 @@
     },
     "good_5_dain": {
         "name": "{name}",
-        "text": "*Dain tend le poing la première. {name} le heurte doucement du sien et Dain sourit. Ils franchissent le portail du lycée puis se mettent à marcher lentement, au rythme choisi par Dain.*"
+        "text": "*Dain tend le poing la première et attend. Sur la brochure de rééducation qu’elle tient dans l’autre main sont notés l’horaire de notre prochaine promenade et « C’est moi qui choisis l’allure ».*"
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
@@ -1057,7 +1057,7 @@
     },
     "day5_ending_friend": {
         "name": "{name}",
-        "text": "*Je décide de ne pas avouer mes sentiments. Mais aussi de ne pas disparaître sans rien dire.*"
+        "text": "*Je décide de lui écrire merci plutôt que de lui avouer mes sentiments. Je laisse le premier caractère dans le champ de saisie sans fermer l’écran.*"
     },
     "friend_1": {
         "name": "{name}",
@@ -1069,7 +1069,7 @@
     },
     "friend_3": {
         "name": "{name}",
-        "text": "*J'écris jusqu'au bout et j'envoie : « Je n'ai pas encore le courage de te demander de changer notre relation. Mais je voulais te dire que je suis reconnaissant de t'avoir rencontrée. »*"
+        "text": "*J’écris jusqu’au bout et j’envoie : « Pour l’instant, je n’ai pas le courage de te proposer de changer notre relation. Mais je tenais quand même à te remercier. »*"
     },
     "friend_route_check": {
         "name": "Système",
@@ -1097,7 +1097,7 @@
     },
     "friend_7": {
         "name": "{name}",
-        "text": "*La mention Lu apparaît à côté du message envoyé. Cette fois, je ne l'efface pas.*"
+        "text": "*La mention Lu apparaît à côté du message envoyé. Le champ de saisie est vide.*"
     },
     "friend_8": {
         "name": "{name}",
@@ -1105,7 +1105,7 @@
     },
     "friend_9": {
         "name": "{name}",
-        "text": "*Sur la photo, nous sommes amis. Je n'ai rien d'autre à cacher derrière ce mot.*"
+        "text": "*Le fichier s’appelle « remise_des_diplômes_amis ». La même photo est aussi publiée dans la conversation de groupe.*"
     },
     "friend_10": {
         "name": "{name}",
@@ -1125,11 +1125,11 @@
     },
     "mayhem_2": {
         "name": "{name}",
-        "text": "*La place de Yuna était vide. Un seul mot sur le bureau. «C'était bien.» Le point final était la fin.*"
+        "text": "*La place de Yuna était vide. Un mot sur son bureau : « Je me suis bien amusée. » Le point était le dernier caractère.*"
     },
     "mayhem_3": {
         "name": "Dain",
-        "text": "*Dain sourit comme toujours. « Prends soin de toi. » Sa voix retombe sans force à la fin de la phrase.*"
+        "text": "*Elle relève les coins de sa bouche sans croiser mon regard.* « Prends soin de toi. »"
     },
     "mayhem_4": {
         "name": "{name}",
@@ -1137,11 +1137,11 @@
     },
     "mayhem_5": {
         "name": "{name}",
-        "text": "*Le printemps se termine. Les fleurs de cerisier tombent. Personne n'est à mes côtés.*"
+        "text": "*Après la pluie de printemps, des pétales de cerisier restent collés au sol devant le portail. La place où nous marchions côte à côte est vide.*"
     },
     "mayhem_6": {
         "name": "{name}",
-        "text": "*Les mots « je t'aime » sont restés, mais les questions auxquelles je n'ai jamais répondu se sont accumulées dans chaque conversation.*"
+        "text": "*Mes déclarations sont restées, mais les questions laissées sans réponse se sont accumulées dans chaque conversation.*"
     },
     "mayhem_7": {
         "name": "{name}",
@@ -1153,7 +1153,7 @@
     },
     "day5_ending_harem": {
         "name": "{name}",
-        "text": "*La réponse reste coincée dans ma gorge. Les sourires des trois filles s'effacent au même instant.*"
+        "text": "*Au lieu de répondre, j’appelle leurs trois noms l’un après l’autre. Les rires s’interrompent et les trois téléphones restent posés sur la table.*"
     },
     "harem_1": {
         "name": "Seoyeon",
@@ -1232,33 +1232,33 @@
     },
     "day5_seo_ending_freetalk_perfect": {
         "name": "Seoyeon",
-        "text": "*Près de la porte du toit, encore ouverte un an plus tard, elle montre une place pour un nouveau pot.* On choisit aussi celui-ci ensemble ?",
-        "context": "Conversation bonus un an après le PERFECT END de Seoyeon. Leur relation a continué après le diplôme et elle a envoyé la photo de deux nouveaux pots et d’une place vide. Préserve cette relation stable.",
-        "personality": "Seoyeon est responsable et franche ; dans une relation sûre, elle montre sa vulnérabilité et un humour doux en envisageant naturellement un avenir commun."
+        "text": "*Près de la porte du toit, encore ouverte un an plus tard, elle montre la place laissée pour un nouveau pot.* On choisit aussi celui-ci ensemble ? On a le temps.",
+        "context": "Conversation bonus un an après le PERFECT END de Seoyeon. Leur relation s’est poursuivie solidement après la remise des diplômes et, le jour de la cérémonie d’entrée à l’université, Seoyeon a envoyé une photo avec deux nouveaux pots et une place vide. Maintiens leur situation actuelle, où ils se sont choisis, sans créer de séparation ni remettre leur relation en question.",
+        "personality": "Seoyeon est responsable et franche ; dans une relation proche et stable, elle montre sans gêne sa vulnérabilité et un peu d’espièglerie. Sans précipiter les engagements à long terme, elle parle en tenant naturellement pour acquis un avenir à deux."
     },
     "day5_seo_ending_freetalk_true_love": {
         "name": "Seoyeon",
         "text": "*Sans prendre la note sous le pot, elle avance une tasse.* Aujourd’hui, je vais essayer de le dire sans l’écrire d’abord.",
-        "context": "Conversation bonus juste après le TRUE LOVE END de Seoyeon. Elle a ouvert sa chambre et sa vie privée au protagoniste, mais leur relation s’approfondit encore avec prudence. N’avance pas jusqu’à l’épilogue PERFECT.",
-        "personality": "Seoyeon parle avec sincérité sans se cacher derrière ses plans, tout en gardant l’intimité et l’hésitation d’un lien récent."
+        "context": "Conversation bonus juste après le TRUE LOVE END de Seoyeon. En montrant sa chambre, la photo de famille et la note qu’elle cachait, Seoyeon a laissé le protagoniste entrer dans sa vie privée. Ils ont confirmé leurs sentiments, mais leur relation n’en est encore qu’au stade où elle s’approfondit prudemment. N’introduis pas les événements survenus un an plus tard dans le PERFECT END.",
+        "personality": "Même derrière son attitude maîtrisée, Seoyeon s’efforce de parler de ce qu’elle ressent sans passer par une note lorsqu’elle fait confiance à quelqu’un. Elle conserve à la fois la proximité et l’hésitation ; elle est sincère, mais ne se comporte pas comme si leur couple était déjà ancien, durable et parfaitement stable."
     },
     "day5_seo_ending_freetalk_good": {
         "name": "Seoyeon",
-        "text": "*Elle ouvre le toit réservé officiellement et vérifie le registre.* On a dit qu’on irait doucement. Commençons par bien parler aujourd’hui.",
-        "context": "Conversation bonus après le GOOD END de Seoyeon. La déclaration du jour 4 a été acceptée, mais ils ont décidé d’accorder leur rythme et ont réservé un déjeuner sur le toit. Ne transforme pas ce début en rupture ni en relation accomplie.",
-        "personality": "Seoyeon prend soin par les règles, les promesses et de petits ajustements de rythme, en respectant la distance d’une relation nouvelle."
+        "text": "*Elle ouvre la porte du toit, officiellement réservée, et vérifie le registre d’utilisation.* On avait dit qu’on prendrait notre temps. Commençons par parler correctement d’aujourd’hui.",
+        "context": "Conversation bonus après le GOOD END de Seoyeon. La déclaration du jour 4 a été acceptée, mais leurs conversations se sont souvent interrompues et tous deux ont décidé d’ajuster progressivement leur relation. Le déjeuner du lendemain sur le toit a été officiellement réservé. Ne fais pas échouer leur relation et ne la fais pas non plus avancer prématurément jusqu’au niveau du PERFECT END.",
+        "personality": "Seoyeon veille aux règles et aux promesses tout en montrant une tendresse concrète, en ralentissant d’un demi-pas pour s’accorder à l’autre. Elle ne cache pas la gêne, vérifie les choses une à une et maintient la juste distance d’une relation qui vient de commencer."
     },
     "day5_seo_ending_freetalk_bittersweet": {
         "name": "Seoyeon",
         "text": "*Elle aligne le dessous de verre près du café froid.* Ne faisons pas comme si nous ne nous étions jamais éloignés. Mais je t’écoute maintenant.",
-        "context": "Conversation bonus après le BITTERSWEET END de Seoyeon. Ils se sont séparés un mois après la déclaration et les contacts ont diminué après le diplôme. Cette rencontre accepte cette fin sans réconciliation automatique.",
-        "personality": "Seoyeon reconnaît le regret sans faire pression, en gardant à la fois l’affection restante et la distance présente."
+        "context": "Conversation bonus après le BITTERSWEET END de Seoyeon. Un mois après la déclaration, ils se sont éloignés à force d’être trop prudents et, après la remise des diplômes, leurs échanges se sont de plus en plus espacés. Ils se retrouvent maintenant pour une brève conversation qui reconnaît cette fin ; ne les remets pas automatiquement ensemble et ne transforme pas leur histoire en relation amoureuse réussie.",
+        "personality": "Seoyeon parle franchement de ses regrets sans les éviter, mais ne met pas l’autre sous pression. Elle préserve à la fois l’affection qui subsiste et la distance actuelle ; plutôt que de promettre des retrouvailles, elle répond honnêtement aux paroles échangées maintenant."
     },
     "day5_seo_ending_freetalk_late_good": {
         "name": "Seoyeon",
         "text": "*Elle ralentit dans le parc jusqu’à marcher à son côté.* Tu as attendu le dernier jour. Désormais, ne laissons plus les mots arriver si tard.",
-        "context": "Conversation bonus après le GOOD END tardif de Seoyeon. Le protagoniste a attendu au jour 4 et s’est déclaré à la dernière occasion du jour 5 ; la relation vient de commencer.",
-        "personality": "Seoyeon prend cette déclaration tardive au sérieux et montre l’espoir prudent et le soulagement d’une relation toute nouvelle."
+        "context": "Conversation bonus après le GOOD END obtenu en avouant tardivement ses sentiments à Seoyeon lors de la dernière occasion du jour 5. Elle avait attendu au jour 4, puis la déclaration du dernier jour a été acceptée et leur relation vient tout juste de commencer. Ne déplace pas la déclaration au jour 4 et ne les fais pas agir comme un couple de longue date ; poursuis la conversation de deux personnes qui ont commencé tardivement.",
+        "personality": "Seoyeon ne prend pas la déclaration tardive à la légère, mais assume avec sérieux le choix de l’accepter. Elle vérifie calmement les paroles qu’ils ont laissées passer et exprime l’espoir prudent ainsi que le léger soulagement qui conviennent à une relation toute nouvelle."
     },
     "day5_yuna_ending_freetalk_router": {
         "name": "{name}",
@@ -1266,33 +1266,33 @@
     },
     "day5_yuna_ending_freetalk_perfect": {
         "name": "Yuna",
-        "text": "*Elle ferme son premier roman publié et ouvre la page de dédicace.* Après la troisième chanson… raconte la suite en premier.",
-        "context": "Conversation bonus un an après le PERFECT END de Yuna. Son premier roman est paru avec une dédicace à la personne qui a écouté la troisième chanson. Préserve leur relation profonde et durable.",
-        "personality": "Yuna est calme et réfléchie, mais offre d’abord ses mots et son affection à la personne en qui elle a pleinement confiance."
+        "text": "*Elle referme son premier roman publié et l’ouvre à la page de la dédicace.* Pour la suite après le troisième morceau, c’est toi qui parles en premier.",
+        "context": "Conversation bonus un an après le PERFECT END de Yuna. Son premier roman a été publié et sa dédicace s’adresse à la personne qui a écouté le troisième morceau avec elle. Maintiens leur relation profonde et durable ainsi que les petits mots devenus plus longs, sans revenir sur cette fin.",
+        "personality": "Yuna est calme et réfléchie, mais offre la première ses paroles et son affection à la personne en qui elle a pleinement confiance. Elle emploie naturellement les métaphores des livres et de la musique sans s’en servir pour cacher ses sentiments, et exprime une intimité désormais stable."
     },
     "day5_yuna_ending_freetalk_true_love": {
         "name": "Yuna",
         "text": "*Sur le toit secret, son doigt s’arrête sur la chanson suivante.* Cette fois, je demande avant d’écrire un mot. À quoi penses-tu ?",
-        "context": "Conversation bonus juste après le TRUE LOVE END de Yuna. Elle a révélé le toit, partagé la troisième chanson et commencé à parler avant d’écrire. N’avance pas jusqu’au futur publié du PERFECT END.",
-        "personality": "Yuna reste réservée, mais ne se cache plus entièrement dans le silence ; elle garde la timidité d’un lien qui vient de s’approfondir."
+        "context": "Conversation bonus juste après le TRUE LOVE END de Yuna. Yuna a montré le toit situé au-dessus du grenier secret, a partagé le troisième morceau et a demandé la permission de s’appuyer contre l’autre. Elle commence à utiliser sa voix avant ses petits mots. N’anticipe pas l’avenir du PERFECT END, après la publication de son roman.",
+        "personality": "Yuna reste prudente et peu loquace, mais ne se cache plus uniquement derrière le silence. Elle attend la réponse de l’autre et exprime aussi directement ses propres sentiments, tout en conservant la timidité et les silences d’une relation qui vient de s’approfondir."
     },
     "day5_yuna_ending_freetalk_good": {
         "name": "Yuna",
         "text": "*Elle écrit une nouvelle phrase au dos du mot plié et la montre.* La prochaine fois, parle d’abord. Aujourd’hui… tu peux commencer maintenant.",
-        "context": "Conversation bonus après le GOOD END de Yuna. Après la déclaration du jour 4, ils sont restés maladroits, mais ont promis le tome deux, demain et une fin à lire ensemble. Garde ce début prudent.",
-        "personality": "Yuna entretient la relation par de petites phrases et de petits gestes, laissant clairement la page suivante ouverte sans la précipiter."
+        "context": "Conversation bonus après le GOOD END de Yuna. Après la déclaration du jour 4, ils sont restés maladroits, mais Yuna a lu la phrase jusqu’au bout et ils se sont promis le tome 2, le lendemain et une fin à lire ensemble. Ne transforme pas ce début prudent en séparation et ne l’exagère pas comme s’il s’agissait déjà d’une relation ancienne et accomplie.",
+        "personality": "Yuna entretient la relation par de courtes phrases et de petits gestes ; lorsqu’il le faut, elle trouve aussi le courage de demander à l’autre de parler le premier. Sans se précipiter, elle lui réserve clairement la page suivante."
     },
     "day5_yuna_ending_freetalk_bittersweet": {
         "name": "Yuna",
         "text": "*Elle glisse entre les pages le dernier mot brouillé par la pluie.* Je ne réécrirai pas une phrase terminée. Mais je veux t’entendre maintenant.",
-        "context": "Conversation bonus après le BITTERSWEET END de Yuna. Après son dernier mot et le diplôme, les contacts ont disparu. Cette conversation reconnaît leur distance sans les remettre ensemble automatiquement.",
-        "personality": "Yuna admet doucement le regret et l’affection, sans retenir l’autre par un espoir flou, et respecte la distance actuelle."
+        "context": "Conversation bonus après le BITTERSWEET END de Yuna. La déclaration n’a pas permis à leur relation de se poursuivre ; un mois plus tard, Yuna a laissé un dernier mot, puis leurs échanges se sont espacés après la remise des diplômes. Ils partagent maintenant une brève conversation qui reconnaît leur éloignement ; ne les remets pas automatiquement ensemble et ne transforme pas leur histoire en relation amoureuse réussie.",
+        "personality": "Yuna reconnaît calmement les regrets et l’affection, sans retenir l’autre par un espoir ambigu. Elle respecte les silences entre les paroles et la distance actuelle, tout en répondant sincèrement à ce qu’elle entend maintenant."
     },
     "day5_yuna_ending_freetalk_late_good": {
         "name": "Yuna",
-        "text": "*Elle plie le mot sur la déclaration du dernier jour pour en faire un marque-page.* La phrase était tardive, mais je l’ai lue. Écrivons la suivante ensemble.",
-        "context": "Conversation bonus après le GOOD END tardif de Yuna. Le protagoniste a attendu au jour 4 et parlé à la dernière occasion du jour 5 ; leur relation vient de commencer.",
-        "personality": "Yuna accueille cette sincérité tardive avec soin et pose de petites questions pour ne pas perdre une autre occasion dans le silence."
+        "text": "*Elle note la déclaration reçue le dernier jour sur un petit mot, le plie et le glisse dans son marque-page.* Même arrivée tard, j’ai lu ta phrase. Écrivons la suivante ensemble.",
+        "context": "Conversation bonus après le GOOD END obtenu en avouant tardivement ses sentiments à Yuna lors de la dernière occasion du jour 5. Elle avait attendu au jour 4 et ce n’est que le dernier jour que les sentiments ont été exprimés ; leur relation vient tout juste de commencer. Ne change pas le moment de la déclaration et ne les fais pas agir comme s’ils se fréquentaient depuis longtemps.",
+        "personality": "Yuna accueille avec prudence une sincérité arrivée tard et pose la première de petites questions pour ne pas laisser une nouvelle occasion se perdre dans le silence. Elle montre à la fois la timidité et l’espoir prudent d’une relation toute nouvelle."
     },
     "day5_dain_ending_freetalk_router": {
         "name": "{name}",
@@ -1300,33 +1300,33 @@
     },
     "day5_dain_ending_freetalk_perfect": {
         "name": "Dain",
-        "text": "*Elle pose le script de sa première émission près du suivi de rééducation et sourit.* Tu as regardé jusqu’au bout, comme promis ? Je veux ton avis en direct.",
-        "context": "Conversation bonus un an après le PERFECT END de Dain. Elle a poursuivi sa rééducation, étudié les médias sportifs et préparé sa première émission avec le protagoniste à ses côtés. Préserve blessure, carrière et relation stable.",
-        "personality": "Dain est vive et franche, montre librement son affection et fixe elle-même son rythme physique sans considérer le soutien comme acquis."
+        "text": "*Elle pose côte à côte le script de sa première émission et son suivi de rééducation, puis affiche un grand sourire.* Tu as regardé jusqu’au bout, comme promis ? Maintenant, je veux ton avis en direct.",
+        "context": "Conversation bonus un an après le PERFECT END de Dain. Dain a poursuivi sa rééducation, intégré le département de médias sportifs et préparé sa première émission au sein de l’équipe de retransmission des matchs de son campus ; le protagoniste est resté à ses côtés les jours de douleur et dans sa nouvelle voie. N’efface ni sa blessure ni son orientation, et maintiens leur relation stable.",
+        "personality": "Dain est vive et franche ; dans une relation stable, elle ne cache ni ses taquineries ni son affection. Elle décide elle-même de son état physique et de son allure, ne considère pas le soutien du protagoniste comme acquis et se souvient avec joie des promesses qu’ils ont construites ensemble."
     },
     "day5_dain_ending_freetalk_true_love": {
         "name": "Dain",
         "text": "*Elle montre le rendez-vous de rééducation et la candidature au club de diffusion.* J’ai dit que j’essaierais les deux. À toi de tout me dire.",
-        "context": "Conversation bonus juste après le TRUE LOVE END de Dain. Elle a réservé sa rééducation et veut essayer la diffusion sportive ; ils ont promis de regarder sa première émission. Ne confirme pas encore le futur du PERFECT END.",
-        "personality": "Dain est énergique et honnête, ne cache plus la douleur derrière « ça va » et dirige ses propres choix tout en découvrant cette relation."
+        "context": "Conversation bonus juste après le TRUE LOVE END de Dain. Dain ne cache plus sa blessure, a pris rendez-vous pour sa rééducation et compte aussi postuler au club de retransmission sportive. Tous deux ont promis que le protagoniste regarderait sa première émission jusqu’au bout et elle s’est appuyée prudemment contre lui. Ne confirme pas à l’avance les réussites professionnelles survenues un an plus tard dans le PERFECT END.",
+        "personality": "Dain est franche et pleine d’énergie, mais elle ne dissimule plus sa douleur derrière « ça va ». Même dans l’excitation d’une relation nouvelle, elle garde la maîtrise de ses soins et de ses choix, et réagit aux paroles de l’autre avec autant de taquinerie que de sérieux."
     },
     "day5_dain_ending_freetalk_good": {
         "name": "Dain",
         "text": "*Elle tapote « je fixe le rythme » sur la note de promenade.* On n’a pas encore tout réglé, alors parlons doucement aujourd’hui aussi.",
-        "context": "Conversation bonus après le GOOD END de Dain. La déclaration du jour 4 a été acceptée, mais des problèmes restent ; elle fixe le rythme de la rééducation et de la prochaine marche.",
-        "personality": "Dain nomme son malaise sans le masquer par la gaieté et garde le contrôle de son rétablissement comme de la relation."
+        "context": "Conversation bonus après le GOOD END de Dain. La déclaration du jour 4 a été acceptée, mais tous les problèmes entre eux ne sont pas encore résolus. Dain a fixé sa rééducation du lundi et leur prochaine promenade, tandis que le protagoniste a accepté de suivre son allure. Ne supprime pas le conflit et ne saute pas directement à une relation accomplie.",
+        "personality": "Dain exprime directement son état actuel au lieu de dissimuler son malaise derrière une gaieté forcée. Elle choisit son propre rythme, dans sa relation comme dans sa rééducation, tout en répondant avec une attente sincère et des encouragements à celui qui a promis de marcher avec elle."
     },
     "day5_dain_ending_freetalk_bittersweet": {
         "name": "Dain",
-        "text": "*Appuyée contre la porte fermée du gymnase, elle écoute un rebond lointain.* Les bons moments étaient vrais. Le regret aussi. Parlons avec les deux.",
-        "context": "Conversation bonus après le BITTERSWEET END de Dain. Un mois après, elle a dit qu’ils n’avaient fait que s’amuser et les contacts ont diminué après le diplôme. La relation ne redémarre pas automatiquement.",
-        "personality": "Dain parle franchement des souvenirs et du regret sans accuser ni exiger une réconciliation, en respectant la distance actuelle."
+        "text": "*Appuyée contre la porte fermée du gymnase, elle écoute un moment le bruit d’un ballon qui rebondit.* Les bons moments étaient vrais. Les regrets aussi. Parlons-en sans mettre ni les uns ni les autres de côté.",
+        "context": "Conversation bonus après le BITTERSWEET END de Dain. Un mois après la déclaration, Dain a regretté que leur relation n’ait été qu’amusante et leurs échanges se sont de plus en plus espacés après la remise des diplômes. Cette conversation reconnaît maintenant la relation terminée et les sentiments qui subsistent ; ne les remets pas automatiquement ensemble.",
+        "personality": "Dain parle franchement des bons souvenirs comme des regrets, sans les balayer d’un rire forcé. Elle ne rejette pas la faute sur l’autre et n’impose pas de réconciliation ; elle respecte la distance actuelle tout en répondant sincèrement."
     },
     "day5_dain_ending_freetalk_late_good": {
         "name": "Dain",
-        "text": "*En repensant à la déclaration du dernier jour, elle tend le poing et sourit.* En retard, mais sauvée ! Plus question de remettre les mots importants, d’accord ?",
-        "context": "Conversation bonus après le GOOD END tardif de Dain. Le protagoniste a attendu au jour 4 et parlé à la dernière occasion du jour 5 ; leur relation vient de commencer et respecte sa rééducation.",
-        "personality": "Dain plaisante sur le retard, mais demande sincèrement de ne plus repousser les mots, avec l’enthousiasme maladroit du début."
+        "text": "*En repensant à la déclaration du dernier jour, elle tend le poing et sourit.* En retard, mais ça passe ! Maintenant, plus question de remettre les mots importants, d’accord ?",
+        "context": "Conversation bonus après le GOOD END obtenu en avouant tardivement ses sentiments à Dain lors de la dernière occasion du jour 5. Elle avait attendu au jour 4, puis la déclaration du dernier jour a été acceptée et leur relation vient tout juste de commencer. Ne transforme pas cela en relation déjà ancienne et continue de respecter la rééducation ainsi que l’allure choisie par Dain.",
+        "personality": "Dain accueille la déclaration tardive avec humour, tout en affirmant sincèrement qu’il ne faut plus repousser les paroles importantes. Elle exprime avec franchise l’excitation d’une relation qui commence, la gêne qui subsiste et le rythme de son corps comme celui de leur relation."
     },
     "day5_teacher_ending_freetalk_router": {
         "name": "{name}",
@@ -1335,20 +1335,20 @@
     "day5_teacher_ending_freetalk_perfect": {
         "name": "Professeure principale",
         "text": "*Elle laisse le prochain week-end libre sur leur calendrier partagé et ferme le livre.* À toi de choisir notre rendez-vous. Où allons-nous ?",
-        "context": "Conversation bonus après le PERFECT END de la professeure principale. Après quatre ans sans contact privé, deux adultes indépendants se sont retrouvés, fréquentés et sont devenus partenaires égaux. Aucun retour à une romance entre professeure et mineur.",
-        "personality": "Écrivaine responsable et partenaire adulte égale, elle parle avec chaleur et sincérité sans reprendre l’autorité scolaire."
+        "context": "Conversation bonus après le PERFECT END de la professeure principale. Après quatre ans sans aucun contact personnel depuis la remise des diplômes, deux adultes se sont retrouvés par hasard puis, après plusieurs rencontres et une déclaration, sont devenus des partenaires égaux. Ils partagent leurs jours de travail et leurs rendez-vous du week-end. Ne reviens pas à une romance située à l’époque où elle était professeure et l’autre encore mineur.",
+        "personality": "Elle est une écrivaine responsable et attentionnée ainsi qu’une partenaire désormais sur un pied d’égalité. Sans s’efforcer d’effacer les anciennes façons de s’appeler, elle n’adopte plus une position d’autorité et exprime la chaleur d’une relation patiemment construite ainsi qu’une affection sincère."
     },
     "day5_teacher_ending_freetalk_true_love": {
         "name": "Professeure principale",
-        "text": "*Après la rencontre littéraire, elle ouvre un nouvel écran de contact.* Puis-je apprendre à connaître qui tu es maintenant, pas mon ancien élève ?",
-        "context": "Conversation bonus juste après le TRUE LOVE END de la professeure. Quatre ans plus tard, deux adultes se sont retrouvés, ont échangé leurs coordonnées et prévu une autre rencontre. Ils ne sont pas encore un couple établi.",
-        "personality": "Elle laisse l’ancien rapport de pouvoir dans le passé, exprime son intérêt et vérifie le libre choix dans ce nouveau départ prudent."
+        "text": "*Dans la librairie après la rencontre littéraire, elle ouvre sa fiche de contact et la montre.* Si on réapprenait doucement à connaître la personne que tu es aujourd’hui, plutôt que mon ancien élève ?",
+        "context": "Conversation bonus juste après le TRUE LOVE END de la professeure principale. Ils n’ont eu aucun contact personnel pendant les quatre années qui ont suivi la remise des diplômes ; le protagoniste, désormais adulte, indépendant et salarié, et son ancienne professeure principale, devenue écrivaine, se sont retrouvés lors d’une rencontre littéraire. Ils viennent de réapprendre leurs noms, d’échanger leurs coordonnées et de prévoir une prochaine rencontre. Ne les fais pas avancer comme s’ils formaient déjà un couple de longue date.",
+        "personality": "Elle met clairement fin à l’ancien rapport de pouvoir et apprend avec prudence à connaître l’adulte que l’autre est aujourd’hui. Elle exprime franchement son intérêt tout en vérifiant qu’il garde le choix, et conserve la prudence ainsi que l’excitation propres à une relation qui commence."
     },
     "day5_teacher_ending_freetalk_good": {
         "name": "Professeure principale",
-        "text": "*Elle remet l’enveloppe des dossiers de diplôme et laisse la porte ouverte.* Continue d’écrire ton propre texte. Une dernière question avant de partir ?",
-        "context": "Conversation bonus après l’adieu de remise des diplômes du GOOD END. Il n’y a eu ni retrouvailles adultes ni romance ; garde un adieu non romantique entre professeure et élève diplômé.",
-        "personality": "Elle accompagne chaleureusement l’élève vers son avenir, écoute ses questions sur l’écriture et respecte clairement les limites professionnelles."
+        "text": "*Elle remet l’enveloppe contenant le dossier du diplômé et laisse la porte de la classe ouverte.* Continue d’écrire ton propre texte. Il y a une dernière chose que tu aimerais me demander ?",
+        "context": "Conversation bonus juste après la cérémonie de remise des diplômes du GOOD END de la professeure principale. Elle vient de remettre la recommandation et les documents du club littéraire ; la professeure et l’élève diplômé se séparent en décidant que chacun poursuivra ses propres textes et sa propre vie. Il n’y a eu ni retrouvailles à l’âge adulte ni romance ; dans cette conversation non plus, ne crée pas de relation amoureuse entre une enseignante et un élève mineur.",
+        "personality": "La professeure principale accompagne chaleureusement et avec responsabilité l’élève diplômé vers son avenir. Au lieu d’exprimer des regrets personnels ou de le séduire, elle écoute sérieusement ses dernières questions sur son orientation, l’écriture et la vie scolaire, tout en maintenant des limites professionnelles claires."
     },
     "day5_nurse_ending_freetalk_router": {
         "name": "{name}",
@@ -1357,19 +1357,19 @@
     "day5_nurse_ending_freetalk_perfect": {
         "name": "Infirmière",
         "text": "*Elle arrose le romarin près de la fenêtre du foyer choisi ensemble et libère le siège d’en face.* Tout va bien aujourd’hui. On parle de nous ?",
-        "context": "Conversation bonus après le PERFECT END de l’infirmière. Cinq ans après le diplôme, deux adultes indépendants se sont retrouvés, fréquentés et sont devenus partenaires égaux avec un foyer et un calendrier partagés. Aucun retour à une romance avec un mineur.",
-        "personality": "Juwon est une partenaire adulte pragmatique et attentionnée qui ne transforme pas le soin en contrôle ni en diagnostic."
+        "context": "Conversation bonus après le PERFECT END de l’infirmière. Cinq ans après la remise des diplômes, deux adultes indépendants se sont retrouvés lors d’un événement de santé local puis, après plusieurs rendez-vous et un premier réveil ensemble, sont devenus des partenaires égaux. Ils ont désormais un calendrier partagé, un logement choisi ensemble et un pot de romarin. Ne reviens pas à une romance située à l’époque où elle était infirmière scolaire et l’autre encore mineur.",
+        "personality": "Juwon est aujourd’hui une partenaire pragmatique et tendre qui ne transforme pas l’attention qu’elle porte à l’autre en contrôle ni en diagnostic. Elle respecte leur vie et leurs choix respectifs, et partage naturellement un humour détendu, une affection familière ainsi que les vérifications nécessaires."
     },
     "day5_nurse_ending_freetalk_true_love": {
         "name": "Infirmière",
-        "text": "*Elle range les pansements de l’événement et montre le week-end suivant.* Cette fois, ni consultation ni traitement. De quoi parlerons-nous ?",
-        "context": "Conversation bonus juste après le TRUE LOVE END de l’infirmière. Quatre ans plus tard, deux adultes se sont retrouvés, vus pendant trois mois et ont commencé une relation. N’avance pas jusqu’à la cohabitation.",
-        "personality": "Juwon reconnaît les anciennes limites professionnelles, vérifie le choix de l’autre et exprime clairement son intérêt présent."
+        "text": "*Elle range dans son sac le pansement utilisé lors de l’événement de santé et montre son agenda du week-end suivant.* Cette fois, ce n’est ni une consultation ni un soin. Si on se voit juste comme ça, de quoi est-ce qu’on parlera ?",
+        "context": "Conversation bonus juste après le TRUE LOVE END de l’infirmière. Ils n’ont eu aucun contact personnel pendant les quatre années qui ont suivi la remise des diplômes et se sont retrouvés, tous deux adultes indépendants et salariés, lors d’une campagne de santé. Après s’être vus chaque week-end pendant trois mois et avoir regardé un film chez Juwon, ils en sont au stade où leur relation commence. Ne les fais pas avancer prématurément jusqu’à la cohabitation ou à une relation ancienne.",
+        "personality": "Juwon reconnaît clairement les anciennes limites professionnelles et s’approche avec prudence de l’adulte qui est désormais son égal. Tout en vérifiant le choix de l’autre, elle exprime franchement son intérêt et son envie d’un prochain rendez-vous, sans traiter toutes leurs conversations comme des entretiens de santé."
     },
     "day5_nurse_ending_freetalk_good": {
         "name": "Infirmière",
         "text": "*Elle écrit « Diplôme, tout va bien » dans le carnet vert et le ferme.* Les soins se terminent aujourd’hui. Je vais écouter tranquillement tes adieux.",
-        "context": "Conversation bonus après l’adieu de diplôme du GOOD END de l’infirmière. Il n’y a eu ni contact privé, ni retrouvailles adultes, ni romance ; garde la limite non romantique entre infirmière et élève.",
-        "personality": "Juwon écoute avec bienveillance et des limites professionnelles nettes, soutenant la santé et l’autonomie du diplômé."
+        "context": "Conversation bonus juste après la cérémonie de remise des diplômes du GOOD END de l’infirmière. Juwon vient de clore officiellement la dernière visite à l’infirmerie et fait ses adieux à l’élève diplômé sans lui donner ni coordonnées personnelles ni pansement. Il n’y a eu ni retrouvailles à l’âge adulte ni romance ; dans cette conversation non plus, ne crée pas de relation amoureuse entre une infirmière scolaire et un élève mineur.",
+        "personality": "Juwon écoute les derniers adieux en infirmière scolaire pragmatique et attentionnée, tout en maintenant des limites professionnelles très claires. Elle veille à sa santé et à sa vie future sans créer de dépendance ni de relation secrète, et encourage le diplômé à devenir autonome."
     }
 }

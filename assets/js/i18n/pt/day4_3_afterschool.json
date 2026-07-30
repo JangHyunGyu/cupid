@@ -13,7 +13,7 @@
     },
     "confess_seo_3b": {
         "name": "{name}",
-        "text": "*O terraço. As luzes do campo brilham abaixo do parapeito. Subimos aqui várias vezes em apenas alguns dias.*"
+        "text": "*Quando a porta do terraço se fecha, o som dos passos na escada cessa. Sob a grade onde ficamos lado a lado tantas vezes, as luzes da quadra se acendem uma a uma.*"
     },
     "confess_seo_4": {
         "name": "Seoyeon",
@@ -29,7 +29,7 @@
     },
     "confess_seo_choice": {
         "name": "{name}",
-        "text": "*Seoyeon não diz nada primeiro.*",
+        "text": "*Apenas o chaveiro tilinta brevemente na mão de Seoyeon.*",
         "choices": [
             "Falar.",
             "Ficar mais um pouco."
@@ -37,7 +37,7 @@
     },
     "confess_seo_yes_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon levanta a cabeça.*"
+        "text": "*O tilintar do chaveiro para de repente. Seoyeon cruza o olhar comigo.*"
     },
     "confess_seo_yes_2": {
         "name": "{name}",
@@ -61,7 +61,7 @@
     },
     "confess_seo_yes_7": {
         "name": "{name}",
-        "text": "*Seoyeon olha para baixo, além do parapeito.*"
+        "text": "*Outra fileira de luzes se acende na quadra, abaixo da grade. Seoyeon permanece de pé, segurando o chaveiro.*"
     },
     "confess_seo_yes_8": {
         "name": "Seoyeon",
@@ -93,7 +93,7 @@
     },
     "confess_seo_no_2": {
         "name": "{name}",
-        "text": "*Seoyeon assente.*"
+        "text": "*Seoyeon dá meio passo para o lado da grade e abre espaço para mim.*"
     },
     "confess_seo_no_3": {
         "name": "Seoyeon",
@@ -109,7 +109,7 @@
     },
     "confess_yuna_1": {
         "name": "{name}",
-        "text": "*O encontro está acabando. Yuna para.*"
+        "text": "*Quando o letreiro da cafeteria se acende, Yuna vira o queixo na direção do anexo.*"
     },
     "confess_yuna_2": {
         "name": "Yuna",
@@ -117,11 +117,11 @@
     },
     "confess_yuna_3": {
         "name": "{name}",
-        "text": "*Anexo da biblioteca. O canto secreto de leitura. O pôr do sol se infiltra pela janela. O marcador de Yuna está ao lado do sofá velho.*"
+        "text": "*O espaço secreto de leitura no anexo da biblioteca. A luz laranja entra pela fresta da janela e chega até o braço do sofá velho. No lugar ao lado está o marcador de Yuna.*"
     },
     "confess_yuna_3b": {
         "name": "{name}",
-        "text": "*Anexo da biblioteca. O pôr do sol entra pela janela. Há um marcador ao lado do sofá.*"
+        "text": "*Quando a porta do anexo se fecha, o ruído do corredor cessa. O livro sobre o sofá continua aberto, e o marcador está colocado antes da última página.*"
     },
     "confess_yuna_4": {
         "name": "Yuna",
@@ -133,7 +133,7 @@
     },
     "confess_yuna_choice": {
         "name": "{name}",
-        "text": "*Yuna espera enquanto mexe no marcador.*",
+        "text": "*Yuna alisa com o polegar a ponta dobrada do marcador e deixa vazio o lugar à frente.*",
         "choices": [
             "Yuna. Deixa eu te perguntar uma coisa.",
             "...Esse lugar é muito bom mesmo."
@@ -145,7 +145,7 @@
     },
     "confess_yuna_yes_2": {
         "name": "{name}",
-        "text": "*O som das páginas sendo viradas cessa.*"
+        "text": "*O polegar de Yuna se afasta da ponta do marcador.*"
     },
     "confess_yuna_yes_3": {
         "name": "{name}",
@@ -169,15 +169,15 @@
     },
     "confess_yuna_yes_6_b": {
         "name": "{name}",
-        "text": "*Quando termino de falar, o som das páginas sendo viradas cessa.*"
+        "text": "*O tecido do sofá range baixinho. Yuna endireita o corpo.*"
     },
     "confess_yuna_yes_7": {
         "name": "{name}",
-        "text": "*Yuna não responde de imediato.*"
+        "text": "*O marcador permanece sobre o sofá.*"
     },
     "confess_yuna_yes_8": {
         "name": "Yuna",
-        "text": "*Não consegue olhar para {name} e aperta a manga com força.*"
+        "text": "*Ela mantém os olhos voltados para a estante e aperta com força a manga da roupa.*"
     },
     "confess_yuna_yes_8_b": {
         "name": "{name}",
@@ -201,7 +201,7 @@
     },
     "confess_yuna_no_2": {
         "name": "Yuna",
-        "text": "*Acena. Coloca o marcador entre as páginas e o empurra mais fundo.*"
+        "text": "*Ela coloca o marcador entre as páginas, empurra-o até o fundo e abaixa uma vez o queixo.*"
     },
     "confess_yuna_no_3": {
         "name": "Yuna",
@@ -217,7 +217,7 @@
     },
     "confess_dain_1": {
         "name": "{name}",
-        "text": "*O encontro está acabando. Dain sai correndo em direção à escola.*"
+        "text": "*Quando o encontro termina, Dain segue a passos largos na direção da escola.*"
     },
     "confess_dain_2": {
         "name": "Dain",
@@ -225,11 +225,11 @@
     },
     "confess_dain_3": {
         "name": "{name}",
-        "text": "*O ginásio. Vazio. O pôr do sol tinge a quadra através das janelas. A linha da aposta do primeiro dia ainda está visível.*"
+        "text": "*Ginásio vazio. A luz da janela oeste cruza na diagonal a linha da quadra onde fizemos a aposta do primeiro dia.*"
     },
     "confess_dain_3b": {
         "name": "{name}",
-        "text": "*O ginásio está vazio. O pôr do sol entra pelas janelas e tinge a quadra.*"
+        "text": "*O placar está apagado. A sombra do batente da janela se estende até o fim da quadra, e Dain para diante da linha onde trocamos a bola tantas vezes.*"
     },
     "confess_dain_4": {
         "name": "Dain",
@@ -249,7 +249,7 @@
     },
     "confess_dain_yes_1": {
         "name": "{name}",
-        "text": "*Minha voz sai baixa.*"
+        "text": "*A primeira sílaba retorna baixinho das paredes do ginásio vazio.*"
     },
     "confess_dain_yes_2": {
         "name": "{name}",
@@ -281,11 +281,11 @@
     },
     "confess_dain_yes_8": {
         "name": "Dain",
-        "text": "*Dain fica parada e cobre o rosto com as duas mãos.*"
+        "text": "*Os tênis de Dain ficam lado a lado sobre a linha da quadra. Ela cobre o rosto com as duas mãos.*"
     },
     "confess_dain_yes_8_b": {
         "name": "{name}",
-        "text": "*Cobre o rosto com as duas mãos. A bola encosta na ponta do pé, mas ela não a pega.*"
+        "text": "*A bola de vôlei bate na ponta do pé e rola para o lado, mas Dain não vai atrás.*"
     },
     "confess_dain_yes_9": {
         "name": "Dain",
@@ -293,7 +293,7 @@
     },
     "confess_dain_yes_9_b": {
         "name": "{name}",
-        "text": "*Abaixa as mãos e sorri. Esfrega os olhos com a manga, sem cuidado.*"
+        "text": "*Dain esfrega com força os olhos usando o dorso da mão. Os cantos da boca se erguem, mas sua voz não sai.*"
     },
     "confess_dain_yes_10": {
         "name": "Dain",
@@ -313,7 +313,7 @@
     },
     "confess_dain_no_3": {
         "name": "Dain",
-        "text": "*Quica a bola de vôlei. Uma vez. Duas vezes. — Na terceira, para.*"
+        "text": "*Dain quica a bola de vôlei duas vezes. No terceiro quique, ela cruza a linha da quadra e continua rolando.*"
     },
     "confess_dain_no_4": {
         "name": "Dain",
@@ -321,6 +321,6 @@
     },
     "confess_dain_no_4_b": {
         "name": "{name}",
-        "text": "*Sem ponto de exclamação. Dain ajusta a munhequeira.*"
+        "text": "*A voz de Dain se dispersa baixinho até o teto do ginásio. Apenas o velcro da munhequeira se abre com um som longo.*"
     }
 }

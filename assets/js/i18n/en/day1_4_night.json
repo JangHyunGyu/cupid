@@ -1,7 +1,7 @@
 {
     "night_start": {
         "name": "{name}",
-        "text": "*Back in my room, I lie down on the bed. The scent of cherry blossoms still clinging to my uniform rubs off on the blankets. It was a long first day.*"
+        "text": "*Back in my room, I lie down on the bed. The cherry-blossom scent clinging to my uniform shirt settles into the blankets. It has been an unusually long first day.*"
     },
     "night_start_3": {
         "name": "{name}",
@@ -21,7 +21,7 @@
     },
     "night_msg_seo_4": {
         "name": "Seoyeon",
-        "text": "*...It's on the house*"
+        "text": "*It's on the house*"
     },
     "night_msg_seo_5": {
         "name": "{name}",
@@ -29,7 +29,7 @@
     },
     "night_msg_yuna_1": {
         "name": "Yuna",
-        "text": "*...It was nice having you sit quietly with me today*"
+        "text": "*It was nice having you sit quietly with me today*"
     },
     "night_msg_yuna_2": {
         "name": "Yuna",
@@ -37,7 +37,7 @@
     },
     "night_msg_yuna_3": {
         "name": "{name}",
-        "text": "*'I'll save your seat.' — My hand lingers as I set the phone down.*"
+        "text": "*While I reread “I'll save your seat,” the screen dims on its own.*"
     },
     "night_msg_dain_1": {
         "name": "Dain",
@@ -53,7 +53,7 @@
     },
     "night_msg_dain_4": {
         "name": "{name}",
-        "text": "*All three messages arrive almost at once. A laugh slips out before I even open the reply box.*"
+        "text": "*All three lines arrive almost at once. There's already a “lol” waiting in the reply box.*"
     },
     "night_hidden_check": {
         "name": "{name}",
@@ -89,27 +89,27 @@
     },
     "night_seo_late_2": {
         "name": "Seoyeon",
-        "text": "*— If you don't show up, I'll come find you*"
+        "text": "*If you don't show up, I'll come find you*"
     },
     "night_seo_late_3": {
         "name": "{name}",
-        "text": "*My hand freezes halfway to setting the phone down.*"
+        "text": "*When I set the phone down, tomorrow's arrival time remains on the lock screen.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
-        "text": "*...*"
+        "text": "*A gray bubble reads “This message was deleted.”*"
     },
     "night_yuna_late_2": {
         "name": "{name}",
-        "text": "*The typing indicator flickers on and off. All that arrives is '...'.*"
+        "text": "*The typing indicator appears, then vanishes, but no new message arrives.*"
     },
     "night_yuna_late_3": {
         "name": "{name}",
-        "text": "*— I'm still debating whether to reply when the screen goes dark.*"
+        "text": "*I open and close the reply box until the screen goes dark in sleep mode.*"
     },
     "night_yuna_late_4": {
         "name": "{name}",
-        "text": "*Even after the screen went dark, I couldn't put the phone down.*"
+        "text": "*Only my thumbprint remains on the black screen.*"
     },
     "night_dain_late_1": {
         "name": "Dain",

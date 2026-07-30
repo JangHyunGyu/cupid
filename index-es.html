@@ -41,7 +41,7 @@
             if (modal) modal.classList.remove('is-open');
         };
     </script>
-    <script src="assets/js/browser-check.js?v=2.9.7" defer></script>
+    <script src="assets/js/browser-check.js?v=2.9.8" defer></script>
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -51,9 +51,9 @@
     <link rel="apple-touch-icon" href="favicon-192.png">
     <link rel="manifest" href="manifest-es.json">
     <title>Cupid - Novela Visual Gratuita Online | Romance Escolar de 5 Días</title>
-    <meta name="description" content="Novela visual gratuita para jugar en el navegador sin descargas ni instalación. Un romance escolar de 5 días que comienza tu primer día como estudiante de intercambio. 5 heroínas, múltiples finales, 7 idiomas disponibles.">
+    <meta name="description" content="Novela visual gratuita para jugar en el navegador, sin descargas ni instalación. Un romance escolar de cinco días que comienza en tu primer día como alumno nuevo. Cinco heroínas, múltiples finales y siete idiomas disponibles.">
     <meta name="keywords" content="juego de citas anime gratis sin descargar, simulador de romance escolar gratis online, otome game gratis en español navegador, novela visual romántica gratis jugar ahora, juego de amor interactivo gratis online, simulador de citas con finales múltiples gratis, juego anime romántico sin instalar, novela visual escolar gratis en español, juego de decisiones románticas navegador, simulador de citas navegador gratis 2026, visual novel romance gratis online, dating sim gratis sin registro">
-    <meta name="author" content="Archerlab">
+    <meta name="author" content="ArcherLab">
     <meta name="naver-site-verification" content="d1b1d31619e3752f70e28ef54cb08b49698ccf66" />
     <link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/">
     <link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/index-en">
@@ -69,22 +69,22 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Cupid - Novela Visual Gratuita Online | Romance Escolar de 5 Días">
-    <meta property="og:description" content="Novela visual gratuita para jugar en el navegador sin descargas ni instalación. Un romance escolar de 5 días que comienza tu primer día como estudiante de intercambio. 5 heroínas, múltiples finales, 7 idiomas disponibles.">
+    <meta property="og:description" content="Novela visual gratuita para jugar en el navegador, sin descargas ni instalación. Un romance escolar de cinco días que comienza en tu primer día como alumno nuevo. Cinco heroínas, múltiples finales y siete idiomas disponibles.">
     <meta property="og:url" content="https://cupid.archerlab.dev/index-es">
     <meta property="og:image" content="https://cupid.archerlab.dev/assets/images/screenshots/cupid-title.jpg?v=2.9.6">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1920">
     <meta property="og:image:height" content="1080">
-    <meta property="og:image:alt" content="Cupid browser romance visual novel title screen">
+    <meta property="og:image:alt" content="Pantalla de título de Cupid, novela visual romántica para navegador">
     <meta property="og:site_name" content="Cupid">
-    <meta property="og:locale" content="es_ES">
+    <meta property="og:locale" content="es_LA">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Cupid - Novela Visual Gratuita Online | Romance Escolar de 5 Días">
-    <meta name="twitter:description" content="Novela visual gratuita para jugar en el navegador sin descargas ni instalación. Un romance escolar de 5 días que comienza tu primer día como estudiante de intercambio. 5 heroínas, múltiples finales, 7 idiomas disponibles.">
+    <meta name="twitter:description" content="Novela visual gratuita para jugar en el navegador, sin descargas ni instalación. Un romance escolar de cinco días que comienza en tu primer día como alumno nuevo. Cinco heroínas, múltiples finales y siete idiomas disponibles.">
     <meta name="twitter:image" content="https://cupid.archerlab.dev/assets/images/screenshots/cupid-title.jpg?v=2.9.6">
-    <meta name="twitter:image:alt" content="Cupid browser romance visual novel title screen">
+    <meta name="twitter:image:alt" content="Pantalla de título de Cupid, novela visual romántica para navegador">
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -96,7 +96,7 @@
                 "@id": "https://cupid.archerlab.dev/index-es#webpage",
                 "url": "https://cupid.archerlab.dev/index-es",
                 "name": "Cupid - Novela Visual Gratuita Online | Romance Escolar de 5 Días",
-                "description": "Novela visual gratuita para jugar en el navegador sin descargas ni instalación. Un romance escolar de 5 días que comienza tu primer día como estudiante de intercambio. 5 heroínas, múltiples finales, 7 idiomas disponibles.",
+                "description": "Novela visual gratuita para jugar en el navegador, sin descargas ni instalación. Un romance escolar de cinco días que comienza en tu primer día como alumno nuevo. Cinco heroínas, múltiples finales y siete idiomas disponibles.",
                 "inLanguage": "es",
                 "mainEntity": {
                     "@id": "https://cupid.archerlab.dev/#videogame"
@@ -152,7 +152,7 @@
                 "publisher": {
                     "@type": "Organization",
                     "@id": "https://archerlab.dev/#organization",
-                    "name": "Archerlab",
+                    "name": "ArcherLab",
                     "url": "https://archerlab.dev/"
                 }
             },
@@ -675,6 +675,19 @@
             }
         }
 
+        @media (max-width: 480px) {
+            #landing-settings-btn {
+                width: 36px;
+                padding: 7px 8px;
+                font-size: 0;
+            }
+
+            #landing-settings-btn::before {
+                content: '⚙';
+                font-size: 0.9rem;
+            }
+        }
+
         /* ===== Title Heroines ===== */
         .title-heroines {
             position: absolute;
@@ -880,7 +893,7 @@
     <noscript>
         <div style="padding: 20px; text-align: center; color: #fff; background: #1a1a2e;">
             <h1>Cupid - Novela Visual Gratuita Online | Romance Escolar de 5 Días</h1>
-            <p>Novela visual gratuita para jugar en el navegador sin descargas ni instalación. Un romance escolar de 5 días que comienza tu primer día como estudiante de intercambio. 5 heroínas, múltiples finales, 7 idiomas disponibles.</p>
+            <p>Novela visual gratuita para jugar en el navegador, sin descargas ni instalación. Un romance escolar de cinco días que comienza en tu primer día como alumno nuevo. Cinco heroínas, múltiples finales y siete idiomas disponibles.</p>
             <p>Habilita JavaScript para jugar este juego.</p>
         </div>
     </noscript>
@@ -890,7 +903,7 @@
         }
     </script>
     <div class="lang-switch">
-        <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="ArcherLab Home" title="ArcherLab">🏹 ArcherLab</a>
+        <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="Inicio de ArcherLab" title="ArcherLab">🏹 ArcherLab</a>
         <button id="landing-settings-btn" class="lang-btn"
             style="border: none;">
             Configuraci&#243;n</button>
@@ -939,7 +952,7 @@
                 <span class="vp-badge">✓ Gratis</span>
                 <span class="vp-badge">✓ Sin registro</span>
                 <span class="vp-badge">✓ Sin instalaci&#243;n</span>
-                <span class="vp-badge">✓ M&#250;ltiples finales IA</span>
+                <span class="vp-badge">✓ Chat con IA y m&#250;ltiples finales</span>
             </div>
             <div style="display: flex; flex-direction: column; align-items: center; gap: clamp(6px, 1.2vh, 12px);">
                 <button id="start-btn" onclick="startGame()" class="start-btn" style="cursor:pointer; opacity: 0.5;" disabled>Nuevo Juego</button>
@@ -953,15 +966,15 @@
             <div class="contact-links">
                 <a href="gallery-es.html" class="contact-link" style="text-decoration: none;">📖 Galer&#237;a</a>
                 <button class="contact-link" onclick="openContactModal()"> Cont&#225;ctanos</button>
-                <button class="contact-link" onclick="installApp()"> Instalar App</button>
+                <button class="contact-link" onclick="installApp()"> Instalar app</button>
             </div>
             <nav aria-label="Búsquedas populares" style="margin-top: 8px; font-size: 0.78rem; opacity: 0.78;">
                 <a href="/seo/simulador-citas-gratis" style="color: #ffb6c1; margin: 0 6px;">Simulador de citas gratis</a>
                 <a href="/seo/otome-navegador" style="color: #ffb6c1; margin: 0 6px;">Otome en navegador</a>
                 <a href="/seo/juego-citas-online" style="color: #ffb6c1; margin: 0 6px;">Juego de citas online</a>
             </nav>
-            <p style="color: #ffb6c1;">Advisor: Yujin Kim, Sanghun Lee</p>
-            <p style="opacity: 0.7;"> 2026 ArcherLab. All rights reserved. (v1.2.5)</p>
+            <p style="color: #ffb6c1;">Asesores: Yujin Kim, Sanghun Lee</p>
+            <p style="opacity: 0.7;">© 2026 ArcherLab. Todos los derechos reservados. (v1.2.5)</p>
         </div>
     </div>
 
@@ -1077,7 +1090,7 @@
                 <div class="credits-subtitle">Donde cae la flecha de Cupido</div>
                 <div class="credits-divider">─ ─ ─</div>
                 <div class="credits-section">
-                    <div class="credits-role">Planificaci&#243;n · Gui&#243;n</div>
+                    <div class="credits-role">Planificaci&#243;n · Guion</div>
                     <div class="credits-name">Hyungyu Jang · Yujin Kim · Sanghun Lee</div>
                 </div>
                 <div class="credits-section">
@@ -1096,7 +1109,7 @@
                 <div class="credits-section">
                     <div class="credits-role">Personajes</div>
                     <div class="credits-name">Seoyeon · Yuna · Dain</div>
-                    <div class="credits-name">School Nurse · Homeroom Teacher</div>
+                    <div class="credits-name">Enfermera escolar · Profesora tutora</div>
                 </div>
                 <div class="credits-divider">─ ─ ─</div>
                 <div class="credits-section">
@@ -1105,9 +1118,9 @@
                 </div>
                 <div class="credits-divider">─ ─ ─</div>
                 <div class="credits-section">
-                    <div class="credits-role">Agradecimientos Especiales</div>
-                    <div class="credits-name">Gracias por jugar</div>
-                    <div class="credits-name">Estamos sinceramente agradecidos.</div>
+                    <div class="credits-role">Agradecimientos especiales</div>
+                    <div class="credits-name">¡Gracias por jugar!</div>
+                    <div class="credits-name">Te lo agradecemos de corazón.</div>
                 </div>
                 <div class="credits-spacer"></div>
                 <div class="credits-final">Cupid &#169; 2026 ArcherLab</div>
@@ -1118,7 +1131,7 @@
 
         <!-- Image Zoom Modal -->
         <div id="image-modal" class="modal-overlay" style="display: none;" onclick="this.style.display='none'">
-            <img id="image-modal-img" src="" alt="CUPID game image"
+            <img id="image-modal-img" src="" alt="Imagen ampliada del juego CUPID"
                 style="max-width: 90%; max-height: 90%; border-radius: 10px; box-shadow: 0 0 30px rgba(0,0,0,0.5);">
         </div>
 
@@ -1211,7 +1224,7 @@
     <script>window.preventAutoStart = true;</script>
 
     <!-- Game Scripts (Dynamic Loader) -->
-<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.106"></script>
+<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.107"></script>
 
     <script>
         // Initialize SoundManager + Enable Buttons (게임 스크립트 로드 완료 후)
@@ -1399,7 +1412,7 @@
             } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
                 alert('En iOS, toca [Compartir] y [A\u00f1adir a pantalla de inicio].');
             } else {
-                alert('Ya est\u00e1 instalado o el navegador no es compatible.');
+                alert('La aplicaci\u00f3n ya est\u00e1 instalada o tu navegador no permite instalarla.');
             }
         }
 

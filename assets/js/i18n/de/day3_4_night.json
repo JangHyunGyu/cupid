@@ -1,15 +1,15 @@
 {
     "night3_start": {
         "name": "{name}",
-        "text": "*Zurück in meinem Zimmer stelle ich die Tasche ab.*"
+        "text": "*Zurück in meinem Zimmer hänge ich meine Tasche über den Stuhl.*"
     },
     "night3_start_2": {
         "name": "{name}",
-        "text": "*Ich schaue auf mein Handy.*"
+        "text": "*Ich schalte das Handy ein, das mit dem Display nach unten auf meinem Schreibtisch liegt.*"
     },
     "night3_faithful_check": {
         "name": "{name}",
-        "text": "*Es sind Nachrichten da.*"
+        "text": "*Eine ungelesene Nachricht wartet auf mich.*"
     },
     "night3_faithful_msg_seo_1": {
         "name": "Seoyeon",
@@ -17,15 +17,15 @@
     },
     "night3_faithful_msg_seo_2": {
         "name": "Seoyeon",
-        "text": "...Aber du darfst wiederkommen"
+        "text": "Aber du darfst wiederkommen."
     },
     "night3_faithful_msg_seo_3": {
         "name": "{name}",
-        "text": "*Ich starre lange auf die Nachricht und schalte dann den Bildschirm aus. Das Zimmer wird etwas dunkler.*"
+        "text": "*Ich lese die Nachricht bis zum Ende und schalte das Display aus. Das Licht des Handys verschwindet aus dem Zimmer.*"
     },
     "night3_faithful_msg_yuna_1": {
         "name": "Yuna",
-        "text": "*Sie hat ein Foto einer Notiz geschickt. Eine einzige Zeile in ihrem Notizbuch.*"
+        "text": "*Yuna schickt ein Foto von einer einzigen Zeile in ihrem Notizbuch.*"
     },
     "night3_faithful_msg_yuna_2": {
         "name": "Yuna",
@@ -45,11 +45,11 @@
     },
     "night3_faithful_msg_dain_3": {
         "name": "{name}",
-        "text": "*Lange Lücke nach 'haha'. Dains nächste Nachricht kommt nicht.*"
+        "text": "*Zwischen »haha« und dem nächsten Satz liegt eine lange Pause. Eine weitere Nachricht von Dain kommt nicht.*"
     },
     "night3_dream_1": {
         "name": "{name}",
-        "text": "*Ich träume. Ich gehe Seite an Seite mit jemandem. Nur unsere Schritte setzen sich im gleichen Rhythmus fort.*"
+        "text": "*Im Traum gehe ich neben jemandem her, dessen Gesicht ich nicht sehen kann. Nur unsere Schritte laufen im selben Rhythmus weiter.*"
     },
     "night3_dream_2_b": {
         "name": "{name}",
@@ -57,7 +57,7 @@
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*Ich öffne die Augen. Morgensonne fällt durch den Vorhang, meine Handfläche ist noch warm. Ich nehme das Handy, öffne die Galerie und scrolle zu Sojeongs Foto. — Dann halte ich den Finger darauf gedrückt.*"
+        "text": "*Morgensonne fällt durch die Vorhänge und weckt mich. In meiner Handfläche ist noch die Wärme aus dem Traum. Ich öffne die Galerie auf meinem Handy, scrolle zu Sojeongs Foto und halte es gedrückt.*"
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
@@ -65,11 +65,11 @@
     },
     "night3_faithful_reflect_2_c": {
         "name": "{name}",
-        "text": "*Eine Sekunde lang sehe ich nur auf den Bildschirm. — Das Gekritzel auf Sojeongs Tisch. Achtunddreißig Morgen, an denen ich weggesehen habe.*"
+        "text": "*Eine Sekunde lang starre ich auf den Bildschirm. Sojeongs beschmierter Tisch und die achtunddreißig Morgen, an denen ich weggesehen habe, kehren einer nach dem anderen zurück.*"
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
-        "text": "*...Gut. Mein Finger liegt auf der Schaltfläche ‚Löschen‘. — Ich drücke darauf.*"
+        "text": "*Gut. Mit dem Finger, der über »Löschen« liegt, drücke ich auf den Bildschirm.*"
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
@@ -77,19 +77,19 @@
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*Minsu hat gesagt: ‚Auch das Ablehnen ist deine Aufgabe.‘ Sojeong lächelt in der Galerie noch immer. Die 38. Notiz ist nach wie vor ungesendet; nur die Senden-Schaltfläche leuchtet blau.*"
+        "text": "*»Nein zu sagen gehört auch zu deinen Aufgaben.« Minsus Worte kommen mir wieder in den Sinn. Sojeong lächelt in der Galerie, und der Senden-Button der noch ungesendeten 38. Notiz leuchtet weiterhin blau.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*Die Galerie ist leer. Nur die Stelle, an der Sojeongs Foto war, leuchtet weiß.*"
+        "text": "*Sojeongs Foto verschwindet aus der Galerie und hinterlässt eine leere Stelle.*"
     },
     "night3_faithful_reflect_4_b": {
         "name": "{name}",
-        "text": "*Lange sehe ich auf die leere Vorschau des Albums.*"
+        "text": "*Ich reibe mit dem Daumen über die leere Albumvorschau.*"
     },
     "night3_faithful_reflect_4_c": {
         "name": "{name}",
-        "text": "*Ich sperre das Handy. Auf dem schwarzen Display spiegelt sich der leere Platz in der Galerie.*"
+        "text": "*Als ich das Handy zuklappe, scheint sich die leere Stelle in der Galerie über das schwarze Display zu legen.*"
     },
     "night3_dream_3": {
         "name": "{name}",
@@ -109,7 +109,7 @@
     },
     "night3_cheat_msg_1": {
         "name": "{name}",
-        "text": "*Zurück in meinem Zimmer sehe ich auf mein Handy.*"
+        "text": "*Sobald ich wieder in meinem Zimmer bin, schalte ich das Handy ein.*"
     },
     "night3_cheat_msg_2": {
         "name": "Seoyeon",
@@ -117,7 +117,7 @@
     },
     "night3_cheat_msg_3": {
         "name": "Seoyeon",
-        "text": "...Bitte"
+        "text": "Bitte."
     },
     "night3_cheat_msg_3_b": {
         "name": "Seoyeon",
@@ -125,7 +125,7 @@
     },
     "night3_cheat_msg_4": {
         "name": "Yuna",
-        "text": "...Ich wusste alles"
+        "text": "Ich wusste die ganze Zeit Bescheid."
     },
     "night3_cheat_msg_4_b": {
         "name": "Yuna",
@@ -137,15 +137,15 @@
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
-        "text": "...Lauf nicht weg. Das ist alles"
+        "text": "Geh mir nicht aus dem Weg. Mehr nicht."
     },
     "night3_cheat_msg_dain_1": {
         "name": "Dain",
-        "text": "...haha. Ich wünschte, das wäre nur ein Witz"
+        "text": "haha, ich wünschte, das wäre nur ein Witz."
     },
     "night3_cheat_msg_7": {
         "name": "Yuna",
-        "text": "*Sie hat drei Zeilen geschickt. Sie, die sonst nicht mal eine schreibt.*"
+        "text": "*Von Yuna erscheinen drei Sprechblasen direkt hintereinander.*"
     },
     "night3_nightmare_1": {
         "name": "{name}",
@@ -153,7 +153,7 @@
     },
     "night3_nightmare_2_b": {
         "name": "{name}",
-        "text": "*Ich öffne den Chat mit Seoyeon. Ihre letzte Nachricht endet mit: ‚Bitte.‘*"
+        "text": "*Ich öffne den Chat mit Seoyeon. Ihre letzte Nachricht lautet »Bitte«. Danach kam nichts mehr.*"
     },
     "night3_nightmare_3": {
         "name": "Seoyeon",
@@ -161,7 +161,7 @@
     },
     "night3_nightmare_3_b": {
         "name": "{name}",
-        "text": "*In Yunas Chat steht drei Zeilen darunter nur die Lesebestätigung.*"
+        "text": "*Unter den drei Zeilen von Yuna steht nur die Lesebestätigung.*"
     },
     "night3_nightmare_4": {
         "name": "{name}",
@@ -190,15 +190,15 @@
     },
     "night3_nightmare_seo": {
         "name": "{name}",
-        "text": "*Ich schreibe in Seoyeons Eingabefeld: ‚Morgen sage ich es dir persönlich.‘ Kurz vor dem Senden halte ich inne.*"
+        "text": "*In Seoyeons Eingabefeld schreibe ich: »Morgen sage ich es dir persönlich.« Dann lege ich den Daumen auf den Senden-Button.*"
     },
     "night3_nightmare_yuna": {
         "name": "{name}",
-        "text": "*Ich schreibe in Yunas Eingabefeld: ‚Morgen laufe ich nicht weg. Ich rede mit dir.‘ Kurz vor dem Senden halte ich inne.*"
+        "text": "*In Yunas Eingabefeld schreibe ich: »Morgen gehe ich dir nicht aus dem Weg. Ich rede mit dir.« Hinter dem letzten Punkt blinkt der Cursor.*"
     },
     "night3_nightmare_dain": {
         "name": "{name}",
-        "text": "*Ich schreibe in Dains Eingabefeld: ‚Tut mir leid, dass du warten musstest. Morgen rede ich mit dir.‘ Kurz vor dem Senden halte ich inne.*"
+        "text": "*In Dains Eingabefeld schreibe ich: »Tut mir leid, dass ich dich habe warten lassen. Morgen rede ich mit dir.« Mit dem Daumen drücke ich auf den Rand des Senden-Symbols.*"
     },
     "night3_nightmare_end": {
         "name": "{name}",
@@ -206,7 +206,7 @@
     },
     "night3_nightmare_end_3": {
         "name": "{name}",
-        "text": "*Drei Uhr morgens. Ich bin immer noch wach. Ich schließe die Nachrichten und öffne die Galerie. Bei Sojeongs Foto bleibt mein Finger stehen.*"
+        "text": "*Um drei Uhr morgens bin ich noch immer wach. Ich schließe die Nachrichten, öffne die Galerie und lege den Daumen auf Sojeongs Foto.*"
     },
     "night3_cheat_reflect_2": {
         "name": "{name}",
@@ -238,6 +238,6 @@
     },
     "night3_end": {
         "name": "{name}",
-        "text": "*Ich schalte das Licht im Zimmer aus.*"
+        "text": "*Ich schalte das Licht aus und lege das Handy mit dem Display nach unten hin.*"
     }
 }

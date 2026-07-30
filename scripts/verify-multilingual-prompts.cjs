@@ -31,7 +31,7 @@ const unnamedPlayerGuardByLanguage = {
     en: 'saved name when present',
     es: 'nombre solo si aparece guardado',
     ja: '保存された名前がある時だけ',
-    fr: "prénom seulement s'il est enregistré",
+    fr: 'prénom seulement s’il est enregistré',
     de: 'Namen nur, wenn er im Status gespeichert ist',
     pt: 'nome apenas se estiver salvo'
 };

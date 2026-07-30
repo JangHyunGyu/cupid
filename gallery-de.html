@@ -37,31 +37,31 @@
     <header class="gallery-header">
         <h1>📖 Galerie</h1>
         <div class="header-actions">
-            <a href="/index-de" class="back-btn" onclick="if(window.opener&&!window.opener.closed){window.close();return false;}">← Zurück</a>
+            <a href="/index-de" class="back-btn" onclick="if(window.opener&&!window.opener.closed){window.close();return false;}">← Zurück zum Titel</a>
             <div class="lang-combo" id="langCombo">
                 <div class="lang-combo-selected" onclick="toggleLangCombo()">
                     <span class="lang-flag">🇩🇪</span> Deutsch
                 </div>
                 <div class="lang-combo-dropdown">
-                    <a href="gallery.html" class="lang-combo-option">
+                    <a href="gallery.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','ko')">
                         <span class="lang-flag">🇰🇷</span> 한국어
                     </a>
-                    <a href="gallery-en.html" class="lang-combo-option">
+                    <a href="gallery-en.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','en')">
                         <span class="lang-flag">🇺🇸</span> English
                     </a>
-                    <a href="gallery-es.html" class="lang-combo-option">
+                    <a href="gallery-es.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','es')">
                         <span class="lang-flag">🇪🇸</span> Español
                     </a>
-                    <a href="gallery-ja.html" class="lang-combo-option">
+                    <a href="gallery-ja.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','ja')">
                         <span class="lang-flag">🇯🇵</span> 日本語
                     </a>
-                    <a href="gallery-fr.html" class="lang-combo-option">
+                    <a href="gallery-fr.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','fr')">
                         <span class="lang-flag">🇫🇷</span> Français
                     </a>
                     <div class="lang-combo-option active">
                         <span class="lang-flag">🇩🇪</span> Deutsch
                     </div>
-                    <a href="gallery-pt.html" class="lang-combo-option">
+                    <a href="gallery-pt.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','pt')">
                         <span class="lang-flag">🇧🇷</span> Português
                     </a>
                 </div>
@@ -103,19 +103,19 @@
         <div class="modal-content">
             <div class="modal-header">
                 <div>
-                    <h2 id="modal-char-name">Character Name</h2>
-                    <p id="modal-char-title" style="color: #aaa; font-size: 0.9rem; margin-top: 5px;">Title</p>
+                    <h2 id="modal-char-name">Charaktername</h2>
+                    <p id="modal-char-title" style="color: #aaa; font-size: 0.9rem; margin-top: 5px;">Titel</p>
                 </div>
                 <button class="modal-close" onclick="closeCharacterModal()">✕</button>
             </div>
             <div class="modal-body">
                 <div class="character-preview">
-                    <img id="modal-char-image" src="" alt="Character">
+                    <img id="modal-char-image" src="" alt="Charakter">
                 </div>
                 <div class="character-details">
                     <div class="detail-section">
                         <h4>Einführung</h4>
-                        <p id="modal-char-desc">Character description</p>
+                        <p id="modal-char-desc">Charakterbeschreibung</p>
                     </div>
                     <div class="detail-section">
                         <h4>Ausdrücke</h4>
@@ -140,11 +140,11 @@
 
     <!-- Footer -->
     <footer class="gallery-footer">
-        <p>© 2026 ArcherLab. All rights reserved.</p>
+        <p>© 2026 ArcherLab. Alle Rechte vorbehalten.</p>
     </footer>
 
     <!-- Gallery Scripts (Dynamic Loader) -->
-<script data-cupid-entry-script="true" src="assets/js/loaders/gallery-loader.js?v=2.9.106"></script>
+<script data-cupid-entry-script="true" src="assets/js/loaders/gallery-loader.js?v=2.9.107"></script>
     <script>
         function toggleLangCombo() {
             document.getElementById('langCombo').classList.toggle('open');

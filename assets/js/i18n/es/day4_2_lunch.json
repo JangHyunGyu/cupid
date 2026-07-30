@@ -1,14 +1,14 @@
 {
     "date_seo_1": {
         "name": "{name}",
-        "text": "*Frente a la fuente. Seoyeon ya está aquí. Hoy no hay carpeta. En cambio, sus dedos doblan y desdoblan la correa de su bolso dos veces.*"
+        "text": "*Seoyeon ya está frente a la fuente. No lleva el portapapeles; solo tiene la correa del bolso enrollada en los dedos.*"
     },
     "date_seo_compliment_choice": {
         "name": "{name}",
-        "text": "*¿Qué le digo?*",
+        "text": "*La correa del bolso de Seoyeon se enrolla una vez más alrededor de sus dedos.*",
         "choices": [
-            "Hoy estás guapísima, en serio.",
-            "Te arreglaste un montón hoy."
+            "Hoy te ves bonita.",
+            "Hoy te esforzaste mucho en arreglarte."
         ]
     },
     "date_seo_pretty_high": {
@@ -21,7 +21,7 @@
     },
     "date_seo_pretty_high_2": {
         "name": "Seoyeon",
-        "text": "*Aparta la mirada y se coloca el pelo detrás de la oreja.* ...Vamos a tomar aire."
+        "text": "*Desvía la mirada hacia el sonido del agua de la fuente.* Vamos a tomar aire."
     },
     "date_seo_pretty_high_3": {
         "name": "{name}",
@@ -29,11 +29,11 @@
     },
     "date_seo_pretty_high_3_b": {
         "name": "Seoyeon",
-        "text": "*Se aparta el pelo.* ...No te hagas ilusiones."
+        "text": "*Vuelve a sujetar bien la correa del bolso.* Está bien."
     },
     "date_seo_pretty_high_4": {
         "name": "Seoyeon",
-        "text": "*'No te hagas ilusiones.' — Pero no para de acomodarse el pelo.*"
+        "text": "*El cabello que había colocado detrás de la oreja vuelve a caer. La mano que subía regresa a la correa del bolso.*"
     },
     "date_seo_pretty_low": {
         "name": "Seoyeon",
@@ -41,7 +41,7 @@
     },
     "date_seo_bright": {
         "name": "Seoyeon",
-        "text": "Claro. Hoy me esmeré con el look."
+        "text": "Claro. Hoy me esforcé un poco en arreglarme."
     },
     "date_seo_walk": {
         "name": "{name}",
@@ -61,15 +61,15 @@
     },
     "date_seo_duck_4": {
         "name": "Seoyeon",
-        "text": "*Palabras casuales — pero de alguien que ya lo vivió. Pasamos frente a una floristería.*"
+        "text": "*Observa las migas de pan que se hunden junto a la orilla. Al pasar frente a una florería, reduce el paso.*"
     },
     "date_seo_flower_b": {
         "name": "Seoyeon",
-        "text": "*Se detiene.* ...¿Entramos?"
+        "text": "*Gira la punta del pie hacia la puerta de vidrio de la florería.* ¿Entramos?"
     },
     "date_seo_flower_2": {
         "name": "Seoyeon",
-        "text": "*Empuja la puerta de la floristería y suena una campanilla. Elige una maceta pequeña: una suculenta.*"
+        "text": "*Al empujar la puerta de la florería suena una campanilla. Seoyeon recorre una vez los exhibidores y elige una pequeña maceta con una suculenta.*"
     },
     "date_seo_succulent_2": {
         "name": "Seoyeon",
@@ -85,7 +85,7 @@
     },
     "date_seo_end": {
         "name": "Seoyeon",
-        "text": "*Lo que Seoyeon me tiende. — Me tiembla la mano al agarrarlo.*"
+        "text": "*Me extiende la maceta. La pequeña maceta llena de tierra toca mi palma.*"
     },
     "date_seo_end_b": {
         "name": "{name}",
@@ -93,7 +93,7 @@
     },
     "date_seo_end_c": {
         "name": "Seoyeon",
-        "text": "*Se detiene.* ...Hoy."
+        "text": "*El envoltorio de la maceta cruje suavemente en mi mano.* Hoy."
     },
     "date_seo_end_d": {
         "name": "Seoyeon",
@@ -105,15 +105,15 @@
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
-        "text": "*¿Qué le digo?*",
+        "text": "*La mirada de Yuna se alza un instante por encima del vaso.*",
         "choices": [
             "Es la primera vez que te veo sin el uniforme.",
-            "Hoy tienes otra mirada."
+            "Hoy te ves un poco diferente."
         ]
     },
     "date_yuna_pretty_high": {
         "name": "Yuna",
-        "text": "*Baja la cabeza y se queda mirando el borde de la taza.*"
+        "text": "*Observa durante un largo rato solo el borde del vaso. El cabello plateado le cae junto a la mejilla.*"
     },
     "date_yuna_pretty_high_2": {
         "name": "Yuna",
@@ -137,11 +137,11 @@
     },
     "date_yuna_pretty_high_5_c": {
         "name": "Yuna",
-        "text": "*Se le ponen las orejas rojas.* ...Déjalo."
+        "text": "*Recorre con el pulgar las gotas de agua de la tapa del vaso.* Está bien."
     },
     "date_yuna_pretty_low": {
         "name": "Yuna",
-        "text": "...Es la primera vez que me dicen algo así."
+        "text": "No estoy acostumbrada a que me digan esas cosas."
     },
     "date_yuna_bright": {
         "name": "Yuna",
@@ -181,7 +181,7 @@
     },
     "date_yuna_oldbook": {
         "name": "{name}",
-        "text": "*Pasamos por una librería de segunda mano. Yuna se detuvo.*"
+        "text": "*Yuna avanza dos pasos más allá de una librería de usados y regresa.*"
     },
     "date_yuna_oldbook_b": {
         "name": "Yuna",
@@ -189,7 +189,7 @@
     },
     "date_yuna_oldbook_c": {
         "name": "{name}",
-        "text": "*Sacó un libro viejo. Va pasando las páginas.*"
+        "text": "*Saca un libro viejo y pasa las páginas.*"
     },
     "date_yuna_oldbook_2": {
         "name": "Yuna",
@@ -205,7 +205,7 @@
     },
     "date_yuna_end": {
         "name": "Yuna",
-        "text": "*Mira a {name}. La página que estaba pasando se detiene bajo sus dedos.*"
+        "text": "*Mira a {name}. La esquina de la página se dobla bajo sus dedos.*"
     },
     "date_yuna_end_b": {
         "name": "Yuna",
@@ -213,7 +213,7 @@
     },
     "date_yuna_end_c": {
         "name": "{name}",
-        "text": "*\"Hoy me salieron muchas frases. Solo delante de ti.\" — La letra de Yuna tiembla.*"
+        "text": "*«Hoy hablé mucho. Porque estaba frente a ti». La tinta lavanda se corre un poco en la última letra.*"
     },
     "date_dain_1": {
         "name": "{name}",
@@ -221,7 +221,7 @@
     },
     "date_dain_2": {
         "name": "Dain",
-        "text": "¡¡Ya llegaste!! ¡Casi llegas tarde, ¿eh?!"
+        "text": "Llegaste. Por poco llegas tarde, ¿no?"
     },
     "date_dain_3": {
         "name": "{name}",
@@ -229,14 +229,14 @@
     },
     "date_dain_4": {
         "name": "Dain",
-        "text": "¡¡Pues yo llegué hace veinte!!"
+        "text": "Yo llegué veinte minutos antes."
     },
     "date_dain_compliment_choice": {
         "name": "{name}",
-        "text": "*Esto ya es un patrón.*",
+        "text": "*Dain se ajusta una vez la visera de la gorra y espera.*",
         "choices": [
-            "Genial esa gorra.",
-            "¿Cómo te queda tan bien la ropa deportiva?"
+            "Esa gorra está muy bien.",
+            "La ropa deportiva te queda bien."
         ]
     },
     "date_dain_pretty_high": {
@@ -245,7 +245,7 @@
     },
     "date_dain_pretty_high_2": {
         "name": "Dain",
-        "text": "¡¡Oye!! ¡¡Sin avisar!! ¡¡No se dicen esas cosas así!!"
+        "text": "Oye, no digas esas cosas de repente."
     },
     "date_dain_pretty_high_3": {
         "name": "{name}",
@@ -257,11 +257,11 @@
     },
     "date_dain_pretty_low": {
         "name": "Dain",
-        "text": "¡¡Pero qué dices, así de repente!! ...Jaja, gracias, pero ya, que me da vergüenza."
+        "text": "¿Qué dices de repente? ...Gracias, aunque me da vergüenza."
     },
     "date_dain_bright": {
         "name": "Dain",
-        "text": "¡¡Pues claro!! ¡¡Hoy estoy a tope!!"
+        "text": "Claro. Hoy estoy en muy buena forma."
     },
     "date_dain_to_arcade": {
         "name": "{name}",
@@ -273,7 +273,7 @@
     },
     "date_dain_arcade_2": {
         "name": "Dain",
-        "text": "¡Dale, una apuesta!! ¡El que pierda paga las bebidas!!"
+        "text": "Vamos, una apuesta. Quien pierda paga las bebidas."
     },
     "date_dain_arcade_2_b": {
         "name": "{name}",
@@ -281,7 +281,7 @@
     },
     "date_dain_arcade_3": {
         "name": "Dain",
-        "text": "¡¡Sin apuesta no tiene gracia!!"
+        "text": "Sin apuesta no es divertido."
     },
     "date_dain_arcade_3_b": {
         "name": "{name}",
@@ -289,7 +289,7 @@
     },
     "date_dain_arcade_3_c": {
         "name": "Dain",
-        "text": "*Pega un grito de emoción.* ¡¡Combo perfecto!! ¿¡Lo viste!?"
+        "text": "*Se levanta de un salto.* Combo perfecto. ¿Lo viste?"
     },
     "date_dain_rhythm": {
         "name": "Dain",
@@ -305,15 +305,15 @@
     },
     "date_dain_knee": {
         "name": "{name}",
-        "text": "*'Porque no tengo que usar mis rodillas.' Dain dice con una sonrisa, pero mira sus rodillas reflejadas en el cristal de la ventana.*"
+        "text": "*«Porque no tengo que usar la rodilla». Dain sonríe al final, pero mira una vez el reflejo de su rodilla derecha en el vidrio del escaparate.*"
     },
     "date_dain_knee_2": {
         "name": "{name}",
-        "text": "*Salimos de la sala de juegos a la calle. Pasamos por una tienda de deportes. Dain se para delante del aparador. Hay zapatillas de voleibol.*"
+        "text": "*Salimos del arcade y pasamos frente a una tienda de artículos deportivos. Dain reduce el paso ante el escaparate donde exhiben tenis de voleibol.*"
     },
     "date_dain_shop": {
         "name": "Dain",
-        "text": "......"
+        "text": "*Sigue con la mirada las agujetas de los tenis de voleibol del escaparate. Bajo la visera de la gorra, aprieta los labios.*"
     },
     "date_dain_shop_2": {
         "name": "{name}",
@@ -321,15 +321,15 @@
     },
     "date_dain_shop_2_b": {
         "name": "Dain",
-        "text": "*Gira la cara.* ¡Nada, nada! ¡Vamos!"
+        "text": "*Gira la barbilla hacia el lado opuesto del exhibidor.* ¡No es nada! ¡Vamos!"
     },
     "date_dain_shop_3": {
         "name": "Dain",
-        "text": "*Se baja la gorra.* ...No me mires."
+        "text": "*Mete ambas manos en los bolsillos y camina delante de mí.* No me mires."
     },
     "date_dain_shop_3_b": {
         "name": "Dain",
-        "text": "*Desde debajo de la gorra.* ...Dilo una vez más y te pego, de verdad."
+        "text": "*Alarga todavía más la zancada.* Si vuelves a preguntar, de verdad me iré primero."
     },
     "date_dain_end": {
         "name": "{name}",
@@ -353,6 +353,6 @@
     },
     "pre_confess_callback": {
         "name": "{name}",
-        "text": "*El teléfono en el bolsillo pesa. No hay notificaciones; en la pantalla solo se refleja el vidrio negro.*"
+        "text": "*La esquina del celular dentro del bolsillo me presiona la palma. No hay notificaciones y la pantalla solo refleja un vidrio negro.*"
     }
 }
