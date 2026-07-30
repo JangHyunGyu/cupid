@@ -1,7 +1,7 @@
 {
     "after5_start": {
         "name": "{name}",
-        "text": "*行事が終わりに近づいている。選ばなかった二人と自然にすれ違う。*"
+        "text": "*行事も終わりに近づく。廊下で、選ばなかった二人と顔を合わせる。*"
     },
     "after5_waited_start_branch": {
         "name": "システム",
@@ -9,15 +9,15 @@
     },
     "after5_farewell_seo_1": {
         "name": "{name}",
-        "text": "*廊下でソヨンと出くわす。*"
+        "text": "*廊下でソヨンと顔を合わせる。*"
     },
     "after5_farewell_seo_2": {
         "name": "ソヨン",
-        "text": "……ふう。"
+        "text": "*ソヨンが長く息を吐く。*"
     },
     "after5_farewell_seo_3": {
         "name": "ソヨン",
-        "text": "*髪をかき上げながら。*"
+        "text": "*顔にかかった髪を耳にかけ、鞄のストラップを握り直す。*"
     },
     "after5_farewell_seo_4": {
         "name": "ソヨン",
@@ -25,15 +25,15 @@
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
-        "text": "ソヨン…"
+        "text": "ソヨン……"
     },
     "after5_farewell_seo_6": {
         "name": "ソヨン",
-        "text": "君が決めたなら、それでいい。もう曖昧な態度だけは取らないで。"
+        "text": "あなたが決めたなら、それでいい。もう曖昧な態度だけは取らないで。"
     },
     "after5_farewell_seo_6_b": {
         "name": "ソヨン",
-        "text": "*ソヨンが振り向きながら手を振る。振り返らない。手首のリボンだけが廊下の端でしばらく揺れる。*"
+        "text": "*ソヨンは背を向けたまま手を振る。振り返らない。手首のリボンだけが、廊下の端でしばらく揺れる。*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
@@ -50,15 +50,15 @@
     },
     "after5_farewell_yuna_3": {
         "name": "ユナ",
-        "text": "君が選んだ人のところには、遅れないで。"
+        "text": "選んだ人を、待たせないで。"
     },
     "after5_farewell_yuna_4": {
         "name": "ユナ",
-        "text": "*背を向ける。立ち止まらない。*"
+        "text": "*図書館へ続く廊下を戻っていく。靴音が角の向こうへ消える。*"
     },
     "after5_farewell_yuna_5": {
         "name": "{name}",
-        "text": "*しおりには一行だけ書かれている。『楽しかった』。最後には句点がある。*"
+        "text": "*しおりには一行だけ書かれている。『楽しかった。』最後には、きちんと句点が打たれている。*"
     },
     "after5_farewell_yuna_5b": {
         "name": "{name}",
@@ -67,35 +67,35 @@
     "after5_farewell_dain_check": {},
     "after5_farewell_dain_1": {
         "name": "{name}",
-        "text": "*体育館の前からダインが歩いてくる。いつもより歩幅が小さい。*"
+        "text": "*体育館のほうからダインが歩いてくる。いつもより歩幅が小さい。*"
     },
     "after5_farewell_dain_2": {
         "name": "ダイン",
-        "text": "ちっ、残念！"
+        "text": "ちぇっ、残念！"
     },
     "after5_farewell_dain_3": {
         "name": "{name}",
-        "text": "ダイン…"
+        "text": "ダイン……"
     },
     "after5_farewell_dain_4": {
         "name": "ダイン",
-        "text": "あんたが選んだんだから、あたしからは何も言わない。"
+        "text": "あんたが選んだんだから、あたしから文句は言わない。"
     },
     "after5_farewell_dain_4_b": {
         "name": "{name}",
-        "text": "*ニッと笑って拳で肩を叩く。——初日と同じ力だ。*"
+        "text": "*ダインが拳で肩を軽く小突く。*"
     },
     "after5_farewell_dain_4_c": {
         "name": "ダイン",
-        "text": "でも中途半端なことしたら、本気で怒るから。……うまくやりなよ。"
+        "text": "ただし、中途半端なことしたら本気で怒るから。……ちゃんとやりなよ。"
     },
     "after5_farewell_dain_4_d": {
         "name": "ダイン",
-        "text": "*バレーボールを置き場へ押し込み、膝のサポーターのベルトを締め直す。*"
+        "text": "*バレーボールをラックへ押し込み、膝のサポーターを締め直す。*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
-        "text": "*ダインは背を向け、ゆっくり体育館の中へ入っていく。*"
+        "text": "*ダインは膝のサポーターをもう一度締め直し、体育館へ戻っていく。*"
     },
     "after5_farewell_dain_5b": {
         "name": "{name}",
@@ -103,7 +103,7 @@
     },
     "after5_hidden_farewell_1": {
         "name": "{name}",
-        "text": "*校門前。遠くに三人が見える。ソヨンはハウンと歩き、ダインはバレーボールを脇に抱えてゆっくり歩き、ユナは本を読みながら進んでいる。誰もこちらを見ない。*"
+        "text": "*校門前。ソヨンはハウンと行事の名簿を確認し、ダインはバレーボールを脇に抱えたまま歩幅を狭め、ユナは開いた本へ視線を落としている。三人はそれぞれ別の出口へ向かう。*"
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
@@ -128,17 +128,17 @@
     },
     "after5_last_chance_1": {
         "name": "{name}",
-        "text": "*足が止まる。夕日が背中の後ろに長い影を作る。*"
+        "text": "*会場のスピーカーの電源が落ちる。分かれ道の案内板の下で、つま先の向きを変えられないまま立ち尽くす。*"
     },
     "after5_last_chance_2": {
         "name": "{name}",
-        "text": "*ポケットの中でスマホを握る。画面はつかない。*"
+        "text": "*ポケットからスマホを取り出す。黒い画面には、行事の横断幕だけが映っている。*"
     },
     "after5_last_chance_route_check": {},
     "after5_last_chance_seo_aff_check": {},
     "after5_last_chance_2_b": {
         "name": "{name}",
-        "text": "*ポケットの中のスマホを握った。画面を点けずにそのまま入れる。足が先に動き、名前が口の外に出る。*"
+        "text": "*スマホの画面をつけないままポケットへ戻す。分かれ道の反対側へ二歩踏み出し、名前を呼ぶ。*"
     },
     "after5_last_chance_2_c": {
         "name": "{name}",
@@ -146,7 +146,7 @@
     },
     "after5_last_chance_2_d": {
         "name": "ソヨン",
-        "text": "*振り返る。夕日を背にしている。*"
+        "text": "*ソヨンが振り返る。背後の行事用横断幕が、風を受けて一度折れる。*"
     },
     "after5_last_chance_2_e": {
         "name": "ソヨン",
@@ -154,11 +154,11 @@
     },
     "after5_last_chance_2_f": {
         "name": "{name}",
-        "text": "*風が髪を揺らす。ソヨンはそのまま立っている。*"
+        "text": "*ソヨンは生徒会のリボンの端を指にひと巻きして、放す。*"
     },
     "after5_last_chance_2_g": {
         "name": "ソヨン",
-        "text": "私から話す。少しだけ、ここにいて。"
+        "text": "私が話すから。少しだけ、ここにいて。"
     },
     "after5_last_chance_2_h": {
         "name": "{name}",
@@ -166,11 +166,11 @@
     },
     "after5_last_chance_2_i": {
         "name": "ソヨン",
-        "text": "握って。"
+        "text": "手、取って。"
     },
     "after5_last_chance_2_j": {
         "name": "ソヨン",
-        "text": "*差し出した指先が{name}の前で止まる。答えを待つ手だ。*"
+        "text": "*ソヨンは手のひらを開いたまま待つ。*"
     },
     "after5_last_chance_seo_low_1": {
         "name": "{name}",
@@ -178,7 +178,7 @@
     },
     "after5_last_chance_seo_low_2": {
         "name": "ソヨン",
-        "text": "*振り返る。つま先は半分だけこちらを向き、いつでも立ち去れる形だ。* ……なに。"
+        "text": "*振り返る。つま先はまだ半分、出口のほうを向いたままだ。* ……何。"
     },
     "after5_last_chance_dain_aff_check": {},
     "after5_last_chance_2_k": {
@@ -187,15 +187,15 @@
     },
     "after5_last_chance_2_l": {
         "name": "ダイン",
-        "text": "*足を速め、{name}の前で立ち止まる。*"
+        "text": "*一歩通り過ぎてから、バレーボールを床に押しつけるようにして立ち止まる。*"
     },
     "after5_last_chance_2_m": {
         "name": "ダイン",
-        "text": "ねえ、あんた……。"
+        "text": "ねえ、あんた……"
     },
     "after5_last_chance_2_n": {
         "name": "ダイン",
-        "text": "*そのまま固まる。手に持ったボールがゆっくり下がる。*"
+        "text": "*脇に抱えていたボールを下ろし、シューズのつま先を{name}のほうへ向け直す。*"
     },
     "after5_last_chance_2_o": {
         "name": "ダイン",
@@ -203,19 +203,19 @@
     },
     "after5_last_chance_2_p": {
         "name": "ダイン",
-        "text": "*唇が震える。答える前に、息をのみ込んだ。*"
+        "text": "*唇を一度かみ、短く息を吸う。*"
     },
     "after5_last_chance_2_q": {
         "name": "ダイン",
-        "text": "昨日から待ってた。でも、すぐには笑えない。"
+        "text": "昨日から待ってた。でも、今すぐ笑うのは無理。"
     },
     "after5_last_chance_2_r": {
         "name": "ダイン",
-        "text": "*目元を擦る。笑顔はそのままだが、手の甲に水気が付く。*"
+        "text": "*目元をこする。笑みは消えないのに、手の甲には涙がつく。*"
     },
     "after5_last_chance_2_s": {
         "name": "ダイン",
-        "text": "…話して。今度は最後まで聞くから。"
+        "text": "……話して。最後まで聞くから。"
     },
     "after5_last_chance_dain_low_1": {
         "name": "{name}",
@@ -223,7 +223,7 @@
     },
     "after5_last_chance_dain_low_2": {
         "name": "ダイン",
-        "text": "*立ち止まる。でもすぐには笑えない。* ……なに。"
+        "text": "*一歩通り過ぎてから戻ってくる。バレーボールを胸に抱え、距離を置いたまま。* ……何。"
     },
     "after5_last_chance_yuna_aff_check": {},
     "after5_last_chance_yuna_1": {
@@ -232,15 +232,15 @@
     },
     "after5_last_chance_yuna_2": {
         "name": "ユナ",
-        "text": "*立ち止まる。本を胸に抱き寄せる。振り返るのに2秒ほどかかった。*"
+        "text": "*足音があと二歩進んで途切れる。本を胸元へ抱き寄せ、二秒ほどしてから振り返る。*"
     },
     "after5_last_chance_yuna_3": {
         "name": "ユナ",
-        "text": "……戻ってきたんだ。"
+        "text": "……戻ってきたんだね。"
     },
     "after5_last_chance_yuna_4": {
         "name": "{name}",
-        "text": "*足は後ろへ下がらない。ユナも急かさない。*"
+        "text": "*二人のあいだには二歩分の距離が残っている。ユナは本を抱いたまま待つ。*"
     },
     "after5_last_chance_yuna_5": {
         "name": "ユナ",
@@ -248,7 +248,7 @@
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
-        "text": "*ユナは目を逸らさない。{name}が一歩前へ出る。*"
+        "text": "*ユナは目をそらさない。二人の距離は、あと一歩分まで縮まっている。*"
     },
     "after5_last_chance_yuna_7": {
         "name": "ユナ",
@@ -260,19 +260,19 @@
     },
     "after5_last_chance_yuna_low_2": {
         "name": "ユナ",
-        "text": "*ゆっくり振り返る。本を抱えた腕に力が入る。* ……なに。"
+        "text": "*本棚のあいだから振り返る。本を抱く腕に力が入る。* ……何。"
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*手のひらの中で携帯の角が食い込む。*",
+        "text": "*手のひらにスマホが食い込む。*",
         "choices": [
             "今、言う",
-            "……何も言えなかった"
+            "まだ言わない"
         ]
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*足を止め、名前を呼ぶ。*"
+        "text": "*スマホをポケットにしまい、名前を呼ぶ。*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",
@@ -281,20 +281,20 @@
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "ソヨン",
-        "text": "*並んで歩きながら* ……遅いよ。でも、聞くから。"
+        "text": "*公園のほうへ並んで歩き出す。* 遅かった。でも、聞く。"
     },
     "after5_confess_react_seo_low": {
         "name": "ソヨン",
-        "text": "*しばらく黙ったまま* ……聞いた。今は、それでいい。"
+        "text": "*横断歩道の信号が一度変わるまで、何も言わない。* 聞いた。今は、それでいい。"
     },
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "ダイン",
-        "text": "*学校を出ながら* ねえ、あんた……待ってはいたよ。最後まで言って。"
+        "text": "*学校を出ながら、シューズの紐に一度視線を落とす。* ねえ、あんた。待ってはいたよ。最後まで話して。"
     },
     "after5_confess_react_dain_low": {
         "name": "ダイン",
-        "text": "*息を整える。* ……聞いた。でも、まだすぐには笑えない。"
+        "text": "*バレーボールの溝を親指でなぞる。* 聞いた。でも、今すぐ笑うのは無理。"
     },
     "after5_confess_aff_yuna": {},
     "after5_confess_react_yuna": {
@@ -319,11 +319,11 @@
     },
     "after5_confess_react_yuna_e": {
         "name": "{name}",
-        "text": "*『ずっと待ってた』*"
+        "text": "*『長いこと待ってた』*"
     },
     "after5_confess_react_yuna_f": {
         "name": "{name}",
-        "text": "*文字の一か所が強く押されている。紙には何度も折って開いた跡が残っている。*"
+        "text": "*一文字だけ筆圧が強い。紙には何度も折っては開いた跡が残っている。*"
     },
     "after5_confess_react_yuna_g": {
         "name": "ユナ",
@@ -335,11 +335,11 @@
     },
     "after5_confess_react_yuna_i": {
         "name": "{name}",
-        "text": "*そうして——学校を出て歩いた。*"
+        "text": "*そうして――学校を出て、歩き続けた。*"
     },
     "after5_confess_react_yuna_low": {
         "name": "ユナ",
-        "text": "*折りたたんだメモを握る。* ……読んだ。でも、まだ結末は決められない。"
+        "text": "*メモを折って握る。* ……読んだ。でも、まだ結末は決められない。"
     },
     "after5_confess_fail_walk_1": {
         "name": "{name}",
@@ -347,19 +347,19 @@
     },
     "after5_confess_fail_walk_2": {
         "name": "{name}",
-        "text": "*結論の出ない気持ちを抱えたまま、足は公園へ続いていった。*"
+        "text": "*答えを出せないまま、公園のほうへ歩いていった。*"
     },
     "after5_confess_no": {
         "name": "{name}",
-        "text": "*喉が詰まり、何も言葉が出てこない。*"
+        "text": "*スマホの画面を消し、口を閉ざす。*"
     },
     "after5_confess_no_2": {
         "name": "{name}",
-        "text": "*夕方の風が吹く。背後の影が長く伸びていく。*"
+        "text": "*夕方の風に、行事の案内チラシが足元まで転がってくる。拾い上げ、掲示板の下に挟んでおく。*"
     },
     "after5_confess_no_2b": {
         "name": "{name}",
-        "text": "*家に帰った。*"
+        "text": "*とうとう背を向け、家へ帰った。*"
     },
     "after5_set_harem": {
         "name": "{name}",
@@ -367,7 +367,7 @@
     },
     "after5_harem_commit": {
         "name": "{name}",
-        "text": "*喉に引っかかっていた言葉が出る。一人を選べないと。三人の表情が同時に止まる。*"
+        "text": "*三つのトークを見比べてから、スマホを下ろし、『一人に決められなかった』と告げる。三人の視線が画面から{name}へ移る。*"
     },
     "after5_harem_walk_1": {
         "name": "{name}",
@@ -375,6 +375,6 @@
     },
     "after5_harem_walk_2": {
         "name": "{name}",
-        "text": "*返信していないメッセージがロック画面に残っている。足は公園の方へ向かった。*"
+        "text": "*返信していないメッセージがロック画面に残っている。そのまま公園のほうへ歩いていった。*"
     }
 }

@@ -79,7 +79,8 @@ class DialogueSystem {
             "Professora": "teacher", "Enfermeira": "nurse",
             // Japanese
             "ソヨン": "seyoun", "ユナ": "yuna", "ダイン": "dain",
-            "担任先生": "teacher", "保健先生": "nurse",
+            "担任先生": "teacher", "担任の先生": "teacher",
+            "保健先生": "nurse", "保健室の先生": "nurse",
             // French
             "Professeur Principal": "teacher", "Professeure principale": "teacher", "Professeure": "teacher",
             "Infirmière Scolaire": "nurse", "Infirmière scolaire": "nurse", "Infirmière": "nurse",
@@ -191,7 +192,7 @@ class DialogueSystem {
         const charNamesByLang = {
             en: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Teacher", Nurse: "Nurse" },
             es: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Profesora", Nurse: "Enfermera" },
-            ja: { Seoyeon: "ソヨン", Yuna: "ユナ", Dain: "ダイン", Teacher: "担任先生", Nurse: "保健先生" },
+            ja: { Seoyeon: "ソヨン", Yuna: "ユナ", Dain: "ダイン", Teacher: "担任の先生", Nurse: "保健室の先生" },
             fr: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Professeur Principal", Nurse: "Infirmière Scolaire" },
             de: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Homeroom", Nurse: "Health Room" },
             ko: { Seoyeon: "서연", Yuna: "유나", Dain: "다인", Teacher: "담임선생님", Nurse: "보건선생님" }
@@ -442,6 +443,10 @@ class DialogueSystem {
                         const img = document.createElement('img');
                         img.src = imagePart;
                         img.className = 'chat-image';
+                        const imageLang = String(window.GAME_LANG || document.documentElement.lang || 'ko')
+                            .toLowerCase()
+                            .split('-')[0];
+                        img.alt = imageLang === 'ja' ? '添付画像' : 'Attached image';
                         img.onclick = () => {
                             if (window.openImageModal) window.openImageModal(imagePart);
                         };

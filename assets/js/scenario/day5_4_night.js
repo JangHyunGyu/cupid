@@ -1610,6 +1610,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "day5_main_ending_freetalk_router": {
         "background": "assets/images/background/park.png",
         "character": null,
+        "routeBeforeRender": true,
         "branches": [
             { "condition": "route_seoyeon", "next": "day5_seo_ending_freetalk_intro" },
             { "condition": "route_yuna", "next": "day5_yuna_ending_freetalk_intro" },
@@ -1620,11 +1621,13 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "day5_seo_ending_freetalk_intro": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
+        "routeBeforeRender": true,
         "next": "day5_seo_ending_freetalk_router"
     },
     "day5_seo_ending_freetalk_router": {
         "background": "assets/images/background/top_school.png",
         "character": null,
+        "routeBeforeRender": true,
         "branches": [
             { "condition": "ending_perfect", "next": "day5_seo_ending_freetalk_perfect" },
             { "condition": "ending_true_love", "next": "day5_seo_ending_freetalk_true_love" },
@@ -1671,11 +1674,13 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "day5_yuna_ending_freetalk_intro": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_smile.png",
+        "routeBeforeRender": true,
         "next": "day5_yuna_ending_freetalk_router"
     },
     "day5_yuna_ending_freetalk_router": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": null,
+        "routeBeforeRender": true,
         "branches": [
             { "condition": "ending_perfect", "next": "day5_yuna_ending_freetalk_perfect" },
             { "condition": "ending_true_love", "next": "day5_yuna_ending_freetalk_true_love" },
@@ -1722,11 +1727,13 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "day5_dain_ending_freetalk_intro": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_laugh.png",
+        "routeBeforeRender": true,
         "next": "day5_dain_ending_freetalk_router"
     },
     "day5_dain_ending_freetalk_router": {
         "background": "assets/images/background/gym.png",
         "character": null,
+        "routeBeforeRender": true,
         "branches": [
             { "condition": "ending_perfect", "next": "day5_dain_ending_freetalk_perfect" },
             { "condition": "ending_true_love", "next": "day5_dain_ending_freetalk_true_love" },
@@ -1773,11 +1780,13 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "day5_teacher_ending_freetalk_intro": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/teacher_smile.png",
+        "routeBeforeRender": true,
         "next": "day5_teacher_ending_freetalk_router"
     },
     "day5_teacher_ending_freetalk_router": {
         "background": "assets/images/background/cafe.png",
         "character": null,
+        "routeBeforeRender": true,
         "branches": [
             { "condition": "ending_perfect", "next": "day5_teacher_ending_freetalk_perfect" },
             { "condition": "ending_true_love", "next": "day5_teacher_ending_freetalk_true_love" },
@@ -1808,11 +1817,13 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "day5_nurse_ending_freetalk_intro": {
         "background": "assets/images/background/nurse_house.png",
         "character": "assets/images/characters/nurse_normal.png",
+        "routeBeforeRender": true,
         "next": "day5_nurse_ending_freetalk_router"
     },
     "day5_nurse_ending_freetalk_router": {
         "background": "assets/images/background/nurse_house.png",
         "character": null,
+        "routeBeforeRender": true,
         "branches": [
             { "condition": "ending_perfect", "next": "day5_nurse_ending_freetalk_perfect" },
             { "condition": "ending_true_love", "next": "day5_nurse_ending_freetalk_true_love" },

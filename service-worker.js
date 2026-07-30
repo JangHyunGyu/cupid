@@ -12,7 +12,7 @@
  * ============================================================================
  */
 
-const CACHE_VERSION = 'cupid-v3.3.52';
+const CACHE_VERSION = 'cupid-v3.3.53';
 const STATIC_CACHE = CACHE_VERSION + '-static';
 const MEDIA_CACHE = CACHE_VERSION + '-media';
 
@@ -310,8 +310,15 @@ async function networkFirst(request, cacheName) {
         if (cached) return cached;
 
         if (request.mode === 'navigate') {
+            const requestUrl = new URL(request.url);
+            const acceptLanguage = request.headers.get('Accept-Language') || '';
+            const isJapanesePage = /\/(?:index|game|gallery)-ja(?:\.html)?$/i.test(requestUrl.pathname)
+                || /^ja(?:-|,|;|$)/i.test(acceptLanguage);
+            const offlineHtml = isJapanesePage
+                ? '<html lang="ja"><body style="background:#000;color:#fff;display:flex;align-items:center;justify-content:center;height:100vh;font-family:sans-serif"><div style="text-align:center"><h1>オフライン</h1><p>インターネット接続を確認してください。</p></div></body></html>'
+                : '<html lang="ko"><body style="background:#000;color:#fff;display:flex;align-items:center;justify-content:center;height:100vh;font-family:sans-serif"><div style="text-align:center"><h1>Offline</h1><p>인터넷 연결을 확인해주세요.</p></div></body></html>';
             return new Response(
-                '<html><body style="background:#000;color:#fff;display:flex;align-items:center;justify-content:center;height:100vh;font-family:sans-serif"><div style="text-align:center"><h1>Offline</h1><p>인터넷 연결을 확인해주세요.</p></div></body></html>',
+                offlineHtml,
                 { status: 503, headers: { 'Content-Type': 'text/html' } }
             );
         }

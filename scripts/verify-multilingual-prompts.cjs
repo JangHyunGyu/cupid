@@ -222,6 +222,12 @@ for (const lang of languages) {
     galleryPlayerName = 'Alex';
     const data = context.window.getPromptData(lang, 'Alex');
     assert(data && typeof data === 'object', `[${lang}] getPromptData returned no data`);
+    if (lang === 'ja') {
+        assert(data.personalities['Homeroom Teacher'].includes('卒業後'),
+            '[ja/Teacher] main personality is missing the post-graduation continuity guard');
+        assert(data.personalities.Nurse.includes('卒業後'),
+            '[ja/Nurse] main personality is missing the post-graduation continuity guard');
+    }
     const canonSource = JSON.stringify([{ role: 'user', content: '*I kissed her.*' }]);
     const mainCanonBlock = vm.runInContext(`buildCupidLatestUserCanonBlock(${canonSource}, '${lang}', '')`, context);
     const galleryCanonBlock = vm.runInContext(`buildGalleryLatestUserCanonBlock(${canonSource}, '${lang}', '')`, context);
@@ -449,6 +455,18 @@ assert(issueCodes({
     text: '彼女は学校の医者だった。',
     segments: [{ type: 'narration', text: '彼女は学校の医者だった。' }]
 }, 'ja', 'Nurse').includes('nurse_profession_canon'), 'Japanese nurse-as-doctor hallucination was not rejected');
+assert(!issueCodes({
+    text: '体温は36.5度。念のため医師に診てもらって。',
+    segments: [{ type: 'dialogue', text: '体温は36.5度。念のため医師に診てもらって。' }]
+}, 'ja', 'Nurse').includes('nurse_age_canon'), 'Japanese body temperature was incorrectly treated as age 36');
+assert(!issueCodes({
+    text: '体温は36.5度。念のため医師に診てもらって。',
+    segments: [{ type: 'dialogue', text: '体温は36.5度。念のため医師に診てもらって。' }]
+}, 'ja', 'Nurse').includes('nurse_profession_canon'), 'Japanese referral to a doctor was incorrectly treated as a profession claim');
+assert(!issueCodes({
+    text: 'あの子は黒髪だった。',
+    segments: [{ type: 'dialogue', text: 'あの子は黒髪だった。' }]
+}, 'ja', 'Yuna').includes('yuna_hair_canon'), 'Another character’s black hair was incorrectly assigned to Yuna');
 assert(issueCodes({
     text: 'Sie hält deinem stand.',
     segments: [{ type: 'narration', text: 'Sie hält deinem stand.' }]

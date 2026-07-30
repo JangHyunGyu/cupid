@@ -81,7 +81,7 @@ class CGRenderer {
                 ko: { title: '아직 이벤트 CG가 없습니다', desc: '게임을 진행하며 특별한 순간을 수집하세요!' },
                 en: { title: 'No Event CG yet', desc: 'Collect special moments as you play!' },
                 es: { title: 'Aún no hay CG registrados', desc: '¡Colecciona momentos especiales mientras juegas!' },
-                ja: { title: 'まだ登録されたCGはありません', desc: 'ゲームを進めて特別な瞬間を集めましょう！' },
+                ja: { title: '登録されているCGはまだありません', desc: 'ゲームを進めて、特別なシーンを集めましょう！' },
                 fr: { title: "Pas encore de CG d'événement", desc: 'Collectionnez des moments spéciaux en jouant !' },
                 de: { title: 'Noch keine Event-CGs', desc: 'Sammle besondere Momente beim Spielen!' },
                 pt: { title: 'Nenhum CG de Evento ainda', desc: 'Colete momentos especiais enquanto joga!' }
@@ -135,19 +135,19 @@ class CGRenderer {
             '게임에서 해당 이벤트를 경험하세요!',
             'Experience this event in the game!',
             '¡Experimenta este evento en el juego!',
-            'ゲームでこのイベントを体験しましょう！',
+            'ゲーム本編でこのイベントを迎えると解放されます。',
             'Vivez cet événement dans le jeu !',
             'Erlebe dieses Event im Spiel!',
             'Experimente este evento no jogo!'
         );
 
         this.ui.showUnlockPopup({
-            title: L('CG 미해금', 'CG Locked', 'CG bloqueado', 'CG未解放', 'CG verrouillé', 'CG gesperrt', 'CG bloqueado'),
+            title: L('CG 미해금', 'CG Locked', 'CG bloqueado', '未解放のCG', 'CG verrouillé', 'CG gesperrt', 'CG bloqueado'),
             message: L(
                 `이 이벤트 CG는 아직 해금되지 않았습니다.<br><br><span class="condition-line">💕 해금 조건: ${hint}</span>`,
                 `This event CG is not yet unlocked.<br><br><span class="condition-line">💕 Condition: ${hint}</span>`,
                 `Este CG de evento aún no está desbloqueado.<br><br><span class="condition-line">💕 Condición: ${hint}</span>`,
-                `このイベントCGはまだ解放されていません。<br><br><span class="condition-line">💕 解放条件: ${hint}</span>`,
+                `このイベントCGはまだ解放されていません。<br><br><span class="condition-line">💕 解放条件：${hint}</span>`,
                 `Ce CG d'événement n'est pas encore débloqué.<br><br><span class="condition-line">💕 Condition : ${hint}</span>`,
                 `Dieses Event-CG ist noch nicht freigeschaltet.<br><br><span class="condition-line">💕 Bedingung: ${hint}</span>`,
                 `Este CG de evento ainda não foi desbloqueado.<br><br><span class="condition-line">💕 Condição: ${hint}</span>`
@@ -200,6 +200,15 @@ class CGRenderer {
         const modal = document.createElement('div');
         modal.id = 'cg-modal';
         modal.className = 'modal-overlay cg-modal-overlay';
+        const closeText = {
+            ko: '닫기',
+            en: 'Close',
+            es: 'Cerrar',
+            ja: '閉じる',
+            fr: 'Fermer',
+            de: 'Schließen',
+            pt: 'Fechar'
+        }[this.ui.lang] || 'Close';
 
         // 모달 외부 클릭 시 닫기
         modal.addEventListener('click', (e) => {
@@ -210,7 +219,7 @@ class CGRenderer {
             <div class="cg-particles"></div>
             <div class="cg-glow-effect"></div>
             <div class="modal-content cg-modal-content">
-                <button class="modal-close cg-close-btn" id="cg-close-btn">×</button>
+                <button class="modal-close cg-close-btn" id="cg-close-btn" aria-label="${closeText}" title="${closeText}">×</button>
                 <div class="cg-viewer">
                     <img id="cg-modal-image" src="" alt="CG">
                 </div>

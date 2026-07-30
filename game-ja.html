@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="assets/css/style.css?v=2.9.7">
     <link rel="stylesheet" as="style" crossorigin
         href="assets/vendor/pretendard/pretendard.css" />
-    <script src="assets/js/browser-check.js?v=2.9.6" defer></script>
+    <script src="assets/js/browser-check.js?v=2.9.7" defer></script>
 <script src="assets/js/ga-engagement.js?v=20260618-engagement" defer></script>
 </head>
 
@@ -61,11 +61,11 @@
                 <!-- Name Input -->
                 <div id="name-input-container" style="display: none;">
                     <div id="name-input-wrapper">
-                        <input type="text" id="player-name-input" placeholder="名前を入力（1〜8文字）"
-                            maxlength="8">
+                        <input type="text" id="player-name-input" placeholder="名前を入力"
+                            maxlength="12">
                         <button id="name-confirm-btn">確認</button>
                     </div>
-                    <div id="name-input-guide">1〜8文字（ひらがな/カタカナ/漢字/英字）</div>
+                    <div id="name-input-guide">日本語1〜8文字／英字1〜12文字（数字・記号不可）</div>
                 </div>
             </div>
 
@@ -90,9 +90,9 @@
                             <polyline points="21 15 16 10 5 21"></polyline>
                         </svg>
                     </button>
-                    <textarea id="chat-input" placeholder="メッセージを入力..." maxlength="160" rows="1"></textarea>
+                    <textarea id="chat-input" placeholder="メッセージを入力…" maxlength="160" rows="1"></textarea>
                     <input type="file" id="upload-image-input" accept="image/*" style="display: none;">
-                    <button type="button" id="action-toggle-btn" title="アクション記述 (*)">✱</button>
+                    <button type="button" id="action-toggle-btn" title="行動描写 (*)">✱</button>
                     <button id="chat-send" title="送信">
                         <svg viewBox="0 0 24 24">
                             <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
@@ -163,8 +163,8 @@
                 <div class="credits-divider">─ ─ ─</div>
                 <div class="credits-section">
                     <div class="credits-role">登場人物</div>
-                    <div class="credits-name">Seoyeon · Yuna · Dain</div>
-                    <div class="credits-name">保健先生 · 担任先生</div>
+                    <div class="credits-name">ソヨン・ユナ・ダイン</div>
+                    <div class="credits-name">保健室の先生・担任の先生</div>
                 </div>
                 <div class="credits-divider">─ ─ ─</div>
                 <div class="credits-section">
@@ -174,12 +174,12 @@
                 <div class="credits-divider">─ ─ ─</div>
                 <div class="credits-section">
                     <div class="credits-role">スペシャルサンクス</div>
-                    <div class="credits-name">プレイしていただきありがとうございます</div>
-                    <div class="credits-name">心より感謝申し上げます</div>
+                    <div class="credits-name">プレイしていただき、ありがとうございました。</div>
+                    <div class="credits-name">心より感謝申し上げます。</div>
                 </div>
                 <div class="credits-spacer"></div>
                 <div class="credits-final">Cupid © 2026 ArcherLab</div>
-                <div class="credits-final">プレイしていただきありがとうございます</div>
+                <div class="credits-final">プレイしていただき、ありがとうございました。</div>
                 <div class="credits-spacer"></div>
             </div>
         </div>
@@ -188,7 +188,7 @@
         <div id="homeConfirmModal" class="modal-overlay" style="display: none;" onclick="closeHomeConfirm(event)">
             <div class="modal-container" onclick="event.stopPropagation()">
                 <h3 class="modal-title">タイトルに戻る</h3>
-                <p style="color: #ccc; margin: 20px 0; line-height: 1.6;">タイトル画面に戻りますか？<br><span style="color: var(--c-accent); font-size: 0.9em;">現在の進行状況は保存されません</span></p>
+                <p style="color: #ccc; margin: 20px 0; line-height: 1.6;">タイトル画面に戻りますか？<br><span style="color: var(--c-accent); font-size: 0.9em;">現在の進行状況は保存されています</span></p>
                 <div style="display: flex; gap: 10px; justify-content: center;">
                     <button class="modal-btn" onclick="closeHomeConfirm(event)"
                         style="background: var(--c-surface-light); border: 1px solid var(--c-border-soft); color: var(--c-text-soft);">キャンセル</button>

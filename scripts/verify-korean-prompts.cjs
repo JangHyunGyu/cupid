@@ -530,7 +530,13 @@ function verifyWiringAndScenePrompts() {
         const introId = `day5_${character}_ending_freetalk_intro`;
         const routerId = `day5_${character}_ending_freetalk_router`;
         assert(day5[introId]?.next === routerId, `${introId} does not enter ${routerId}`);
+        assert(day5[introId]?.routeBeforeRender === true,
+            `${introId} must skip its shared presentation before resolving the ending variant`);
+        assert(day5[routerId]?.routeBeforeRender === true,
+            `${routerId} must resolve before rendering an intermediate background`);
     }
+    assert(day5.day5_main_ending_freetalk_router?.routeBeforeRender === true,
+        'day5_main_ending_freetalk_router must resolve before rendering an intermediate background');
     const endingVariants = {
         seo: ['perfect', 'true_love', 'good', 'bittersweet', 'late_good'],
         yuna: ['perfect', 'true_love', 'good', 'bittersweet', 'late_good'],

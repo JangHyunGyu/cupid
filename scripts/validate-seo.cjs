@@ -150,7 +150,7 @@ for (const page of indexable) {
 const homepageSeoLinks = [
   ['index.html', '웹 미연시', '/seo/web-misinsi'],
   ['index.html', '미연시 무료', '/seo/misinsi-muryo'],
-  ['index-ja.html', 'ブラウザ乙女ゲーム', '/seo/browser-otome-game-ja'],
+  ['index-ja.html', 'ブラウザ恋愛ゲーム', '/seo/browser-otome-game-ja'],
   ['index-es.html', 'Simulador de citas gratis', '/seo/simulador-citas-gratis'],
   ['index-es.html', 'Otome en navegador', '/seo/otome-navegador'],
   ['index-es.html', 'Juego de citas online', '/seo/juego-citas-online'],

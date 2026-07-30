@@ -307,76 +307,76 @@ class GalleryData {
             seyoun: {
                 id: 'seyoun',
                 name: 'ソヨン',
-                title: '完璧な生徒会長',
-                shortDescription: '誰にでも優しい完璧な生徒会長。',
-                description: '誰にでも優しい完璧な生徒会長。実は寂しがり屋で、二人きりになるととても恥ずかしがる。規則を大切にするが、あなたのためなら時々破りたいと思っている。',
+                title: '空欄を残さない生徒会長',
+                shortDescription: 'スケジュールと鍵の使用記録を欠かさず確認する生徒会長。',
+                description: '行事の進行表も使用記録も、空欄を残さずきっちりまとめる生徒会長。何かを頼む時も、まず理由と時間を伝える。一人で抱えてきた仕事を分担するようになり、正式に借りた屋上の鍵の使用記録をつけながら、次の約束も一緒に残していく。',
                 age: '18歳',
                 birthday: '3月14日',
                 height: '165cm',
                 weight: '52kg',
                 bust: '36-23-35 70E',
                 hobby: '音楽鑑賞、読書',
-                personality: 'メガデレ、恥ずかしがり',
+                personality: '責任感が強い、慎重',
                 expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
             },
             yuna: {
                 id: 'yuna',
                 name: 'ユナ',
-                title: '神秘的なクーデレ',
-                shortDescription: '無表情で冷たいクーデレの典型。',
-                description: '無表情で冷たいクーデレの典型。あなたの「特別な光」に深く執着的な関心を示す。時折放つ神秘的でときめく言葉が特徴。あなたを守ろうとする不思議な雰囲気を漂わせる。',
+                title: 'しおりに言葉を綴る読書家',
+                shortDescription: '口にする前に、しおりやメモに思いを綴る読書家。',
+                description: '図書館別館の静かな席を気に入っている読書家。答えを急がず、口にしにくい言葉は淡い紫のインクで書き留める。一人で書いていた小説を手渡し、相手が読んで返事をするまでの時間も大切にする。',
                 age: '18歳',
                 birthday: '7月22日',
                 height: '162cm',
                 weight: '49kg',
                 bust: '34-21-34 65E',
-                hobby: '星を見ること、詩を書くこと',
-                personality: 'クーデレ、神秘的',
+                hobby: '音楽鑑賞、小説を書くこと',
+                personality: '観察力が鋭い、慎重',
                 expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'bikini']
             },
             dain: {
                 id: 'dain',
                 name: 'ダイン',
-                title: '太陽のような幼なじみ',
-                shortDescription: '明るく活発な世話焼きツンデレ。',
-                description: '明るく活発な世話焼きツンデレ。あなたを気軽な友達として接するが、ロマンチックな雰囲気になるとすぐ顔が真っ赤になって慌てる。気持ちに正直だが表現が下手な可愛い魅力がある。',
+                title: 'コートの外にも進路を探すバレー部員',
+                shortDescription: '勝負にはすぐ挑み、痛む膝のことはようやく認めたバレー部員。',
+                description: 'じゃんけんにもバレーと同じくらい全力で挑むバレー部員。「平気」と痛みをごまかしていたが、コーチと両親にきちんと伝え、リハビリを予約した。選手だけでなく、スポーツ中継という次の道にも自分の力で挑もうとしている。',
                 age: '18歳',
                 birthday: '12月25日',
                 height: '158cm',
                 weight: '54kg',
                 bust: '37-22-35 65H',
-                hobby: '料理、スポーツ',
-                personality: 'ツンデレ、活発',
+                hobby: 'バレーボール、スポーツ中継',
+                personality: 'まっすぐ、負けず嫌い',
                 expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
             },
             teacher: {
                 id: 'teacher',
-                name: '担任先生',
-                title: '意外とドジな先生',
-                shortDescription: '公私をきちんと分ける専門的な教師。',
-                description: '公私をきちんと分ける専門的な教師だが、実はドジな一面がある。あなたの予想外に大人びた姿にときめき、密かにあなたに頼りたいと思っているギャップ萌えがある。',
+                name: '担任の先生',
+                title: '原稿を書き直す担任教師',
+                shortDescription: '答えではなく、読んだ跡を残してほしいと生徒に頼む国語教師。',
+                description: '授業・評価と個人の創作を明確に切り分ける国語教師。7年間しまい込んでいた原稿を文芸部の公開合評会に出し、番号だけが付いた感想を受けて最終章を書き直す。教師と生徒としての関係には、卒業式で正式に区切りをつける。',
                 age: '28歳',
                 birthday: '5月5日',
                 height: '170cm',
                 weight: '58kg',
                 bust: '38-24-38 70G',
                 hobby: '読書、映画鑑賞',
-                personality: '専門的、ドジ',
+                personality: '原則を重んじる、内省的',
                 expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'worried', 'bikini']
             },
             nurse: {
                 id: 'nurse',
-                name: '保健先生',
-                title: 'いたずら好きな保健教師',
-                shortDescription: '成熟していたずら好きな保健教師。',
-                description: '成熟していたずら好きな保健教師。挑発的な言葉であなたをからかうことを楽しむが、実は誰よりも生徒たちを大切に思い守ろうとする。あなたが慌てる姿を可愛いと感じている。',
+                name: '保健室の先生',
+                title: '支援につなぐ養護教諭',
+                shortDescription: '症状と記録を確認し、必要な大人へつなぐ養護教諭。',
+                description: '冗談より先に体調と予約時間を確認する養護教諭。保健室、教育相談室、保護者、担当教員へつなぐ具体的な方法を教えてくれる。相談が終われば記録も正式に終了し、卒業生をそれぞれの生活へ送り出す。',
                 age: '26歳',
                 birthday: '9月12日',
                 height: '168cm',
                 weight: '60kg',
                 bust: '38-24-38 70H',
                 hobby: '園芸、瞑想',
-                personality: 'いたずら好き、成熟',
+                personality: '実務的、冷静',
                 expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'bikini']
             }
         },
@@ -688,19 +688,19 @@ class GalleryData {
 
         // 일본어 표정 이름
         ja: {
-            normal: '通常',
+            normal: '普段',
             shy: '照れ',
-            shy2: '照れ2',
+            shy2: '照れ（強）',
             angry: '怒り',
             sad: '悲しみ',
             laugh: '笑い',
-            cry: '泣き',
-            pout: 'すねる',
+            cry: '泣き顔',
+            pout: 'ふくれっ面',
             worried: '心配',
             back: '後ろ姿',
             smile: '微笑み',
             bored: '退屈',
-            active: '活発',
+            active: '元気',
             sweat: '汗',
             flushed: '火照り',
             bikini: '???'
@@ -1096,17 +1096,17 @@ class GalleryData {
         ja: [
             {
                 id: 'nurse_home_event1',
-                name: '保健先生との特別な出会い',
-                character: '保健先生',
-                description: '保健先生の家で起きた特別なイベント',
+                name: 'ジュウォンの家で迎えた朝',
+                character: '保健室の先生',
+                description: '卒業から5年後に再会し、数か月にわたって週末を共にしてきた二人の大人が迎えた朝',
                 file: 'assets/images/background/nurse_home_event1.png',
                 thumbnail: 'assets/images/background/nurse_home_event1.png'
             },
             {
                 id: 'dain_hurt_event1',
-                name: 'ダインの怪我',
+                name: 'ダインの負傷',
                 character: 'ダイン',
-                description: '体育館で膝を怪我したダイン',
+                description: '体育館で膝を負傷したダイン',
                 file: 'assets/images/background/dain_hurt_event1.png',
                 thumbnail: 'assets/images/background/dain_hurt_event1.png'
             },
@@ -1118,56 +1118,74 @@ class GalleryData {
                 file: 'assets/images/background/dain_depression_event1.png',
                 thumbnail: 'assets/images/background/dain_depression_event1.png'
             },
-            { id: 'ending_perfect_seoyeon', name: 'ソヨンとの約束', character: 'ソヨン', description: '夕焼けの屋上で、ソヨンが胸に飛び込んで見上げる瞬間', file: 'assets/images/background/ending_perfect_seoyeon.png', thumbnail: 'assets/images/background/ending_perfect_seoyeon.png',
-                unlockHint: "ソヨンのパーフェクトエンディングに到達"
+            { id: 'ending_perfect_seoyeon', name: 'ソヨンとの約束', character: 'ソヨン', description: '屋上の鉢植えの手入れを終え、開いたままの扉の前で「残りは明日見よう」と次の約束をした瞬間', file: 'assets/images/background/ending_perfect_seoyeon.png', thumbnail: 'assets/images/background/ending_perfect_seoyeon.png',
+                unlockHint: "ソヨンのパーフェクトエンドに到達"
             },
-            { id: 'ending_perfect_yuna', name: 'ユナの温もり', character: 'ユナ', description: '月明かりの隠れ家で、ユナが初めて胸に飛び込んだ夜', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png',
-                unlockHint: "ユナのパーフェクトエンディングに到達"
+            { id: 'ending_perfect_yuna', name: 'ユナの答え', character: 'ユナ', description: '図書館別館の秘密の屋根裏部屋で小説を手渡したユナが、「抱きしめてもいい？」と少し距離を空けたまま返事を待つ瞬間', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png',
+                unlockHint: "ユナのパーフェクトエンドに到達"
             },
-            { id: 'ending_perfect_dain', name: 'ダインの勝利', character: 'ダイン', description: '夕暮れの体育館で、ダインが痛めた膝に体重をかけずに抱きついた瞬間', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png',
-                unlockHint: "ダインのパーフェクトエンディングに到達"
+            { id: 'ending_perfect_dain', name: 'ダインの勝利', character: 'ダイン', description: '体育館で「ちょっとだけ、抱きしめてもいい？」と確かめ、傷めた右膝に体重をかけないように抱きしめた瞬間', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png',
+                unlockHint: "ダインのパーフェクトエンドに到達"
             },
-            { id: 'ending_bittersweet', name: '雨の中の別れ', character: null, description: '傘の下で一人、遠ざかる影を見つめる', file: 'assets/images/background/ending_bittersweet.png', thumbnail: 'assets/images/background/ending_bittersweet.png',
-                unlockHint: "ビタースイートエンディングに到達"
+            { id: 'ending_bittersweet', name: '雨の中の別れ', character: null, description: '雨の降る校門で、一人きりで傘を差し、遠ざかる後ろ姿を見つめる', file: 'assets/images/background/ending_bittersweet.png', thumbnail: 'assets/images/background/ending_bittersweet.png',
+                unlockHint: "ビタースイートエンドに到達"
             },
-            { id: 'ending_true_teacher', name: '来週の約束', character: '担任先生', description: '大人になって再会したカフェで手を取り、次の約束を決めた瞬間', file: 'assets/images/background/ending_true_teacher.png', thumbnail: 'assets/images/background/ending_true_teacher.png',
-                unlockHint: "担任トゥルーラブエンディングに到達"
+            { id: 'ending_true_teacher', name: '来週の約束', character: '担任の先生', description: '卒業から4年後に偶然再会し、元担任がカフェで「来週も会う？」と返事を待つ瞬間', file: 'assets/images/background/ending_true_teacher.png', thumbnail: 'assets/images/background/ending_true_teacher.png',
+                unlockHint: "担任の先生のトゥルーエンドに到達"
             },
-            { id: 'ending_true_nurse', name: '安全な場所', character: '保健先生', description: '保健先生の家のソファで、肩にもたれて眠った静かな夜', file: 'assets/images/background/ending_true_nurse.png', thumbnail: 'assets/images/background/ending_true_nurse.png',
-                unlockHint: "保健先生トゥルーラブに到達"
+            { id: 'ending_true_nurse', name: '安心できる場所', character: '保健室の先生', description: '卒業から4年後に再会し、3か月にわたって会ってきた二人の大人。映画が終わる前にジュウォンが相手の肩にもたれて眠った夜', file: 'assets/images/background/ending_true_nurse.png', thumbnail: 'assets/images/background/ending_true_nurse.png',
+                unlockHint: "保健室の先生のトゥルーエンドに到達"
             },
-            { id: 'ending_harem', name: 'すれ違う答え', character: null, description: '三人を前に、それぞれが本音と境界線を確かめた瞬間', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png',
-                unlockHint: "ハーレムエンディングに到達"
+            { id: 'ending_harem', name: '食い違う答え', character: null, description: '三人を前に、率直な答えとそれぞれの境界線を確かめた瞬間', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png',
+                unlockHint: "「食い違う答え」エンドに到達"
             },
-            { id: 'ending_alone', name: '一人きりの部屋', character: null, description: '暗い部屋、消えたスマホ、カーテン越しの街の灯り', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png',
-                unlockHint: "一人エンディングに到達"
+            { id: 'ending_alone', name: 'ひとりきりの部屋', character: null, description: '静かな部屋、充電器につないで画面を消したスマートフォン。秒針の音だけが残る', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png',
+                unlockHint: "ひとりエンドに到達"
             },
-            { id: 'ending_friend', name: '僕たちの卒業写真', character: null, description: '卒業式の日、教室で撮った五人の集合セルフィー', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png',
-                unlockHint: "友達エンディングに到達"
+            { id: 'ending_friend', name: '俺たちの卒業写真', character: null, description: '卒業式の日、学校の友人たちと撮った集合写真', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png',
+                unlockHint: "友達エンドに到達"
             },
-            { id: 'ending_confess_fail_seoyeon', name: 'ソヨンの沈黙', character: 'ソヨン', description: '夕暮れの公園で、ソヨンは静かに眼鏡を直して目をそらす', file: 'assets/images/background/ending_confess_fail_seoyeon.png', thumbnail: 'assets/images/background/ending_confess_fail_seoyeon.png',
+            { id: 'ending_true_seoyeon', name: 'ソヨンの部屋', character: 'ソヨン', description: 'ソヨンの部屋で二つのカップを挟み、植木鉢の受け皿の下にある折りたたんだメモを見せ、また元に戻した夜', file: 'assets/images/background/ending_true_seoyeon.png', thumbnail: 'assets/images/background/ending_true_seoyeon.png',
+                unlockHint: "ソヨンのトゥルーエンドに到達"
+            },
+            { id: 'ending_true_yuna', name: '屋上の星', character: 'ユナ', description: '図書館別館の秘密の屋上で三曲目を聴き、ユナがこぶし一つ分の間を空けて「寄りかかってもいい？」と返事を待つ夜', file: 'assets/images/background/ending_true_yuna.png', thumbnail: 'assets/images/background/ending_true_yuna.png',
+                unlockHint: "ユナのトゥルーエンドに到達"
+            },
+            { id: 'ending_true_dain', name: 'ダインとの次の約束', character: 'ダイン', description: '病院の予約を入れたダインが、体育館でボールを抱え、肩幅ほどの隙間を空けて「ちょっと寄りかかってもいい？」と返事を待つ瞬間', file: 'assets/images/background/ending_true_dain.png', thumbnail: 'assets/images/background/ending_true_dain.png',
+                unlockHint: "ダインのトゥルーエンドに到達"
+            },
+            { id: 'ending_good_seoyeon', name: '桜の道を歩く二人', character: 'ソヨン', description: '桜の散る道で歩幅を合わせ、道の向こう側で次の予定の時間と場所を決めた瞬間', file: 'assets/images/background/ending_good_seoyeon.png', thumbnail: 'assets/images/background/ending_good_seoyeon.png',
+                unlockHint: "ソヨンのグッドエンドに到達"
+            },
+            { id: 'ending_good_yuna', name: '屋上の次のページ', character: 'ユナ', description: '校庭のスピーカーが静まったあとも同じ手すりのそばに残り、新しいページにしおりを挟んだ瞬間', file: 'assets/images/background/ending_good_yuna.png', thumbnail: 'assets/images/background/ending_good_yuna.png',
+                unlockHint: "ユナのグッドエンドに到達"
+            },
+            { id: 'ending_good_dain', name: '校門前の挨拶', character: 'ダイン', description: '夕暮れの校門前で、ダインが拳を差し出して答えを待つ瞬間', file: 'assets/images/background/ending_good_dain.png', thumbnail: 'assets/images/background/ending_good_dain.png',
+                unlockHint: "ダインのグッドエンドに到達"
+            },
+            { id: 'ending_confess_fail_seoyeon', name: 'ソヨンの答え', character: 'ソヨン', description: '夕暮れの公園で最後まで話を聞き、今は応えられないとはっきり伝えるソヨン', file: 'assets/images/background/ending_confess_fail_seoyeon.png', thumbnail: 'assets/images/background/ending_confess_fail_seoyeon.png',
                 unlockHint: "ソヨンに告白を断られる"
             },
-            { id: 'ending_confess_fail_yuna', name: 'ユナの背中', character: 'ユナ', description: '暗い公園で、ユナは一言もなく振り向いて去っていく', file: 'assets/images/background/ending_confess_fail_yuna.png', thumbnail: 'assets/images/background/ending_confess_fail_yuna.png',
+            { id: 'ending_confess_fail_yuna', name: 'ユナの答え', character: 'ユナ', description: '公園の出口まで並んで歩いたあと、その気持ちには応えられないと伝えるユナ', file: 'assets/images/background/ending_confess_fail_yuna.png', thumbnail: 'assets/images/background/ending_confess_fail_yuna.png',
                 unlockHint: "ユナに告白を断られる"
             },
-            { id: 'ending_confess_fail_dain', name: 'ダインの作り笑い', character: 'ダイン', description: 'ダインは涙を拭きながら無理に笑って手を振る', file: 'assets/images/background/ending_confess_fail_dain.png', thumbnail: 'assets/images/background/ending_confess_fail_dain.png',
+            { id: 'ending_confess_fail_dain', name: 'ダインの答え', character: 'ダイン', description: '目元を拭ったあと、友達のままでいたいとはっきり伝えるダイン', file: 'assets/images/background/ending_confess_fail_dain.png', thumbnail: 'assets/images/background/ending_confess_fail_dain.png',
                 unlockHint: "ダインに告白を断られる"
             },
-            { id: 'ending_mayhem', name: 'バレた瞬間', character: null, description: 'ソヨンの氷のような視線とダインの震える拳', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png',
-                unlockHint: "二股がバレる"
+            { id: 'ending_mayhem', name: '既読のあとの距離', character: null, description: '好きだという言葉だけが残った三つのトークルームと、振り返らずに離れていく三人', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png',
+                unlockHint: "複数人への告白が発覚する"
             },
-            { id: 'ending_good_teacher', name: '窓辺の先生', character: '担任先生', description: '担任の先生が廊下の窓から生徒たちを見送る', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png',
-                unlockHint: "担任グッドエンディングに到達"
+            { id: 'ending_good_teacher', name: '卒業式の別れ', character: '担任の先生', description: '卒業式の日、推薦状の控えと文芸部の合評用冊子を渡し、廊下の窓辺から卒業生を見送る担任の先生', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png',
+                unlockHint: "担任の先生のグッドエンドに到達"
             },
-            { id: 'ending_good_nurse', name: '保健室のひととき', character: '保健先生', description: '保健先生がコーヒーを片手に意味深な笑みを浮かべる', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png',
-                unlockHint: "保健先生グッドエンディングに到達"
+            { id: 'ending_good_nurse', name: '最後の確認', character: '保健室の先生', description: '卒業式の日、相談記録を終了し、卒業生と軽く挨拶を交わす保健室の先生', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png',
+                unlockHint: "保健室の先生のグッドエンドに到達"
             },
-            { id: 'ending_perfect_teacher', name: '桜の下の花束', character: '担任先生', description: '卒業後、夕日のテラスで花束を渡す瞬間', file: 'assets/images/background/ending_perfect_teacher.png', thumbnail: 'assets/images/background/ending_perfect_teacher.png',
-                unlockHint: "担任パーフェクトエンディングに到達"
+            { id: 'ending_perfect_teacher', name: '桜を見下ろすテラスの花束', character: '担任の先生', description: '卒業から4年後に再会した二人の大人。桜を見下ろすカフェテラスで、出版を祝う花束を手渡す瞬間', file: 'assets/images/background/ending_perfect_teacher.png', thumbnail: 'assets/images/background/ending_perfect_teacher.png',
+                unlockHint: "担任の先生のパーフェクトエンドに到達"
             },
-            { id: 'ending_perfect_nurse', name: '二人の朝', character: '保健先生', description: '卒業後、朝日の中で布団の下の二人きりの時間', file: 'assets/images/background/ending_perfect_nurse.png', thumbnail: 'assets/images/background/ending_perfect_nurse.png',
-                unlockHint: "保健先生パーフェクトエンディングに到達"
+            { id: 'ending_perfect_nurse', name: '一緒に迎えた朝', character: '保健室の先生', description: '卒業から5年後に再会し、数か月にわたって会う約束を重ねてきた二人の大人が、一緒に迎えた朝', file: 'assets/images/background/ending_perfect_nurse.png', thumbnail: 'assets/images/background/ending_perfect_nurse.png',
+                unlockHint: "保健室の先生のパーフェクトエンドに到達"
             }
         ],
         fr: [

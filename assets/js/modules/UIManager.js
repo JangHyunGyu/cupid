@@ -354,7 +354,12 @@ class UIManager {
      * @param {File} file - 선택된 파일 객체
      */
     _setImageUploadState(isUploading, previewSrc = null) {
-        const label = (window.GAME_LANG || document.documentElement.lang) === 'ko' ? '\uc5c5\ub85c\ub4dc \uc911' : 'Uploading';
+        const lang = window.GAME_LANG || document.documentElement.lang;
+        const label = lang === 'ko'
+            ? '\uc5c5\ub85c\ub4dc \uc911'
+            : lang === 'ja'
+                ? '\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u4e2d'
+                : 'Uploading';
 
         if (previewSrc && this.imagePreview) {
             this.imagePreview.src = previewSrc;
@@ -382,7 +387,7 @@ class UIManager {
 
     handleImageUpload(file) {
         if (!file.type.startsWith('image/')) {
-            alert({ es: 'Solo se pueden subir archivos de imagen.', ja: '画像ファイルのみアップロード可能です。', en: 'Only image files can be uploaded.', fr: 'Seuls les fichiers image peuvent être téléchargés.', de: 'Nur Bilddateien können hochgeladen werden.', pt: 'Apenas arquivos de imagem podem ser enviados.' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 파일만 업로드 가능합니다.');
+            alert({ es: 'Solo se pueden subir archivos de imagen.', ja: '画像ファイルのみアップロードできます。', en: 'Only image files can be uploaded.', fr: 'Seuls les fichiers image peuvent être téléchargés.', de: 'Nur Bilddateien können hochgeladen werden.', pt: 'Apenas arquivos de imagem podem ser enviados.' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 파일만 업로드 가능합니다.');
             return;
         }
         if (file.size > 50 * 1024 * 1024) {
@@ -462,7 +467,10 @@ class UIManager {
             this.stagedImage = base64Data;
             if (this.imagePreview) {
                 this.imagePreview.src = base64Data;
-                this.imagePreview.alt = 'Selected image';
+                const previewLang = String(window.GAME_LANG || document.documentElement.lang || 'ko')
+                    .toLowerCase()
+                    .split('-')[0];
+                this.imagePreview.alt = previewLang === 'ja' ? '選択した画像' : 'Selected image';
             }
             if (this.imagePreviewContainer) {
                 this.imagePreviewContainer.style.display = 'inline-flex';
@@ -520,12 +528,14 @@ class UIManager {
         nameSpan.textContent = name;
         this.nameTagEl.appendChild(nameSpan);
 
+        const charKey = this.charNameMap[name];  // 예: "서연" → "Seoyeon"
+
         // 🔧 갤러리에 캐릭터 만남 기록 (최초 1회만 기록됨)
-        this.galleryManager.markCharacterMet(name);
+        // 다국어 표시 이름은 공용 내부 키로 정규화한 뒤 전달한다.
+        this.galleryManager.markCharacterMet(charKey || name);
 
         // 호감도 게이지 표시 여부 확인 (설정에서 끌 수 있음)
         const showAffinity = localStorage.getItem('showAffinity') !== 'false';
-        const charKey = this.charNameMap[name];  // 예: "서연" → "Seoyeon"
 
         // 캐릭터가 호감도 대상이고 설정이 켜져있으면 게이지 표시
         if (showAffinity && charKey && this.stateManager.stats[charKey]) {
@@ -649,7 +659,7 @@ class UIManager {
         const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
         const nameMapByLang = {
             ko: { Seoyeon: '서연', Yuna: '유나', Dain: '다인', Teacher: '담임', Nurse: '보건' },
-            ja: { Seoyeon: 'ソヨン', Yuna: 'ユナ', Dain: 'ダイン', Teacher: '担任', Nurse: '保健' },
+            ja: { Seoyeon: 'ソヨン', Yuna: 'ユナ', Dain: 'ダイン', Teacher: '担任の先生', Nurse: '保健室の先生' },
             en: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Teacher', Nurse: 'Nurse' },
             es: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Profesora', Nurse: 'Enfermera' },
             fr: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Professeure', Nurse: 'Infirmière' },

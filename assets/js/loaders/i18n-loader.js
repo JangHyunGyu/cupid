@@ -56,6 +56,11 @@
                     .then(data => {
                         Object.assign(localeData[locale], data);
                         return { locale, file, ok: true };
+                    })
+                    .catch(error => {
+                        error.cupidI18nLocale = locale;
+                        error.cupidI18nFile = file;
+                        throw error;
                     });
 
                 fetchPromises.push(promise);
@@ -71,6 +76,9 @@
     // This avoids the race condition where window.initGame is not yet defined when this script runs.
     window._i18nReady = Promise.allSettled(fetchPromises).then(results => {
         const failures = results.filter(r => r.status === 'rejected');
+        const targetSuccessCount = results.filter(r => (
+            r.status === 'fulfilled' && r.value && r.value.locale === lang
+        )).length;
         if (failures.length > 0) {
             failures.forEach(f => console.error('[i18n-loader] Failed after retries:', f.reason));
             if (typeof window.__cupidLogRuntimeError === 'function') {
@@ -86,6 +94,19 @@
             if (Object.keys(localeData[baseLocale] || {}).length === 0) {
                 throw new Error(`i18n base locale '${baseLocale}' empty after ${failures.length} failures`);
             }
+        }
+        // 대상 언어 파일 하나라도 빠지면 영어 폴백을 섞어 화면에 내보내지 않는다.
+        // 서비스 워커 캐시까지 실패한 상태이므로, 호출부에서 현지어 재시도 안내를 표시한다.
+        if (targetSuccessCount !== days.length * slots.length) {
+            const missingTargetFiles = failures
+                .map(f => f.reason)
+                .filter(reason => reason && reason.cupidI18nLocale === lang)
+                .map(reason => reason.cupidI18nFile)
+                .join(', ');
+            throw new Error(
+                `i18n target locale '${lang}' incomplete: ${targetSuccessCount}/${days.length * slots.length}`
+                + (missingTargetFiles ? `; missing=${missingTargetFiles}` : '')
+            );
         }
         window.I18N_DATA = {};
         // 베이스 언어 먼저 적용: ko → ko, en → en, 그 외 → en (한국어 유출 방지)
@@ -110,23 +131,4 @@
         }
     });
 
-    // Patch initGame/initGameFromSave after all scripts have loaded (deferred).
-    // By the time DOMContentLoaded fires, index.js has already defined window.initGame.
-    document.addEventListener('DOMContentLoaded', function() {
-        const originalInitGame = window.initGame;
-        if (typeof originalInitGame === 'function') {
-            window.initGame = async function(...args) {
-                await window._i18nReady;
-                await originalInitGame(...args);
-            };
-        }
-
-        const originalInitGameFromSave = window.initGameFromSave;
-        if (typeof originalInitGameFromSave === 'function') {
-            window.initGameFromSave = async function(...args) {
-                await window._i18nReady;
-                await originalInitGameFromSave(...args);
-            };
-        }
-    });
 })();

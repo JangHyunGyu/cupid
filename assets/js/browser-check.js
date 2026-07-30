@@ -28,7 +28,10 @@
                     icon.style.marginBottom = '20px';
                     
                     var text = document.createElement('p');
-                    text.innerHTML = '<b>Chrome 브라우저</b>로 이동했습니다.<br>새로 열린 창에서 게임을 이어가세요.<br><br><span style="font-size:14px;color:#aaa;">이 창은 닫으셔도 됩니다.</span>';
+                    const pageLang = String(document.documentElement.lang || 'ko').toLowerCase().split('-')[0];
+                    text.innerHTML = pageLang === 'ja'
+                        ? '<b>Chromeブラウザ</b>に移動しました。<br>新しく開いた画面でゲームを続けてください。<br><br><span style="font-size:14px;color:#aaa;">この画面は閉じてもかまいません。</span>'
+                        : '<b>Chrome 브라우저</b>로 이동했습니다.<br>새로 열린 창에서 게임을 이어가세요.<br><br><span style="font-size:14px;color:#aaa;">이 창은 닫으셔도 됩니다.</span>';
                     text.style.lineHeight = '1.6';
                     
                     container.appendChild(icon);
@@ -50,8 +53,8 @@
                         msg: "This game works best in Safari.<br><br>Tap the <b>[ {btn} ]</b> button at the bottom right<br>and select <b>[Open in Safari]</b>."
                     },
                     ja: {
-                        btn: "シェア",
-                        msg: "このゲームはSafariブラウザで<br>正常に動作します。<br><br>右下の <b>[ {btn} ]</b> ボタンを押して<br><b>[Safariで開く]</b>を選択してください。"
+                        btn: "共有",
+                        msg: "このゲームはSafariで快適に遊べます。<br><br>右下の <b>［{btn}］</b> をタップして、<br><b>［Safariで開く］</b>を選んでください。"
                     },
                     es: {
                         btn: "Compartir",

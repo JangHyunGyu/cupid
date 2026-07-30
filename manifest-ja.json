@@ -1,7 +1,7 @@
 {
-    "name": "Cupid: 無料ウェブビジュアルノベル",
+    "name": "Cupid：無料ブラウザ恋愛ゲーム",
     "short_name": "Cupid",
-    "description": "インストール不要の無料ウェブビジュアルノベル。学園恋愛の主人公になろう。",
+    "description": "インストール不要ですぐ遊べる、無料の学園恋愛ゲーム。選択肢で物語と結末が変わります。",
     "start_url": "/index-ja.html",
     "display": "standalone",
     "background_color": "#1a1a2e",

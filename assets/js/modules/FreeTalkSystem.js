@@ -338,7 +338,7 @@ class FreeTalkSystem {
             ko: '캐릭터가 할 말을 생각 중',
             en: 'Character is thinking of what to say',
             es: 'El personaje está pensando qué decir',
-            ja: 'キャラクターが返事を考え中',
+            ja: 'キャラクターが返事を考えています',
             fr: 'Le personnage réfléchit à quoi dire',
             de: 'Der Charakter denkt über eine Antwort nach',
             pt: 'A personagem está pensando no que dizer'
@@ -424,8 +424,8 @@ class FreeTalkSystem {
                 (charName === "Profesora" && (m.char === "담임선생님" || m.char === "Teacher")) ||
                 (charName === "Enfermera" && (m.char === "보건선생님" || m.char === "Nurse")) ||
                 // Japanese name matching
-                (charName === "担任先生" && (m.char === "담임선생님" || m.char === "Teacher")) ||
-                (charName === "保健先生" && (m.char === "보건선생님" || m.char === "Nurse")) ||
+                ((charName === "担任先生" || charName === "担任の先生") && (m.char === "담임선생님" || m.char === "Teacher")) ||
+                ((charName === "保健先生" || charName === "保健室の先生") && (m.char === "보건선생님" || m.char === "Nurse")) ||
                 // French name matching
                 (charName === "Professeur Principal" && (m.char === "담임선생님" || m.char === "Teacher")) ||
                 (charName === "Infirmière Scolaire" && (m.char === "보건선생님" || m.char === "Nurse")) ||
@@ -443,7 +443,7 @@ class FreeTalkSystem {
         if (memories.length === 0) return "";
 
         // 기억들을 리스트 형태로 포맷팅
-        const header = { es: "\n\n[Eventos y Recuerdos Recientes]:\n", ja: "\n\n[最近の出来事と記憶]:\n", en: "\n\n[Recent Events & Memories]:\n", fr: "\n\n[Événements et Souvenirs Récents] :\n", de: "\n\n[Aktuelle Ereignisse & Erinnerungen]:\n", pt: "\n\n[Eventos e Memórias Recentes]:\n" }[lang] || "\n\n[최근 사건과 기억]\n";
+        const header = { es: "\n\n[Eventos y Recuerdos Recientes]:\n", ja: "\n\n[直近の出来事と記憶]\n", en: "\n\n[Recent Events & Memories]:\n", fr: "\n\n[Événements et Souvenirs Récents] :\n", de: "\n\n[Aktuelle Ereignisse & Erinnerungen]:\n", pt: "\n\n[Eventos e Memórias Recentes]:\n" }[lang] || "\n\n[최근 사건과 기억]\n";
         return header + memories.map(m => {
             let text = { es: m.es, ja: m.ja, en: m.en, fr: m.fr, de: m.de, pt: m.pt }[lang] || m.ko;
             if (!text) text = m.en || m.ko;
@@ -545,7 +545,7 @@ class FreeTalkSystem {
                 ko: `\n- 현재 사용자와 사귀는 사이입니다. 장면과 캐릭터 말투에 어울릴 때만 애칭을 쓰고, 그 밖에는 가까운 호칭을 자연스럽게 고르세요.`,
                 en: `\n- Dating context: You are currently dating the user. Keep the relationship intimate, but use pet names only when the scene and character voice naturally call for them.`,
                 es: `\n- Contexto de pareja: Actualmente estás saliendo con el usuario. Mantén la cercanía, pero usa apodos cariñosos solo cuando la escena y la voz del personaje lo pidan.`,
-                ja: `\n- 恋人関係の文脈: あなたは現在ユーザーと付き合っています。親密さは保ちつつ、愛称は場面とキャラの声に自然に合う時だけ使ってください。`,
+                ja: `\n- 恋人関係の文脈: あなたは現在ユーザーと付き合っています。親密さは保ちつつ、愛称は場面とそのキャラクターらしさに自然に合う時だけ使ってください。`,
                 fr: `\n- Contexte amoureux : Vous sortez actuellement avec l'utilisateur. Gardez l'intimité, mais utilisez les surnoms tendres seulement quand la scène et la voix du personnage les appellent.`,
                 de: `\n- Beziehungskontext: Du bist mit dem Nutzer zusammen. Bewahre die Vertrautheit, aber nutze Kosenamen nur, wenn Szene und Charakterstimme wirklich dazu passen.`,
                 pt: `\n- Contexto de namoro: Você está atualmente namorando o usuário. Mantenha a intimidade, mas use apelidos carinhosos só quando a cena e a voz da personagem pedirem.`
@@ -563,8 +563,8 @@ class FreeTalkSystem {
         this._isRemote = isRemote;
 
         const mediumInstruction = isRemote
-            ? ({ es: "\n- MEDIO: Conversación por TELÉFONO o MENSAJES.", ja: "\n- メディア: 電話またはメッセージで会話中。", en: "\n- MEDIUM: Communicating via PHONE/MESSENGER.", fr: "\n- MOYEN : Échange par TÉLÉPHONE ou MESSAGERIE.", de: "\n- MEDIUM: Gespräch per TELEFON oder CHAT.", pt: "\n- MEIO: Conversa por TELEFONE ou MENSAGENS." }[lang] || "\n- 현재 전화나 메시지로 연락하고 있습니다.")
-            : ({ es: "\n- MEDIO: Conversación CARA A CARA.", ja: "\n- メディア: 対面で会話中。", en: "\n- MEDIUM: Talking FACE-TO-FACE.", fr: "\n- MOYEN : Conversation EN FACE À FACE.", de: "\n- MEDIUM: Persönliches Gespräch VOR ORT.", pt: "\n- MEIO: Conversa PRESENCIAL." }[lang] || "\n- 현재 서로 마주 보고 이야기하고 있습니다.");
+            ? ({ es: "\n- MEDIO: Conversación por TELÉFONO o MENSAJES.", ja: "\n- 会話形式: 電話またはメッセージでやり取りしている。", en: "\n- MEDIUM: Communicating via PHONE/MESSENGER.", fr: "\n- MOYEN : Échange par TÉLÉPHONE ou MESSAGERIE.", de: "\n- MEDIUM: Gespräch per TELEFON oder CHAT.", pt: "\n- MEIO: Conversa por TELEFONE ou MENSAGENS." }[lang] || "\n- 현재 전화나 메시지로 연락하고 있습니다.")
+            : ({ es: "\n- MEDIO: Conversación CARA A CARA.", ja: "\n- 会話形式: 対面で話している。", en: "\n- MEDIUM: Talking FACE-TO-FACE.", fr: "\n- MOYEN : Conversation EN FACE À FACE.", de: "\n- MEDIUM: Persönliches Gespräch VOR ORT.", pt: "\n- MEIO: Conversa PRESENCIAL." }[lang] || "\n- 현재 서로 마주 보고 이야기하고 있습니다.");
 
         // 시스템 프롬프트 생성
         const rawSystemPrompt = window.buildSystemPrompt ? window.buildSystemPrompt({
@@ -573,7 +573,7 @@ class FreeTalkSystem {
             sceneName: charKey,
             displayName: scene.name,
             locationName,
-            context: scene.context || ({ es: "La escena continúa a partir de la última intervención del protagonista.", ja: "主人公の直前の発言や行動から場面を続けています。", en: "Continuing the scene from the protagonist's latest line or action.", fr: "La scène reprend après la dernière parole ou action du protagoniste.", de: "Die Szene wird nach der letzten Äußerung oder Handlung des Protagonisten fortgesetzt.", pt: "A cena continua a partir da última fala ou ação do protagonista." }[lang] || "주인공이 방금 한 말이나 행동에서 장면을 이어갑니다."),
+            context: scene.context || ({ es: "La escena continúa a partir de la última intervención del protagonista.", ja: "主人公が直前に発した言葉や取った行動を受けて、場面を続けます。", en: "Continuing the scene from the protagonist's latest line or action.", fr: "La scène reprend après la dernière parole ou action du protagoniste.", de: "Die Szene wird nach der letzten Äußerung oder Handlung des Protagonisten fortgesetzt.", pt: "A cena continua a partir da última fala ou ação do protagonista." }[lang] || "주인공이 방금 한 말이나 행동에서 장면을 이어갑니다."),
             affinity: charStats.affinity,
             extraGuideline: [scene.personality, scene.extra_guideline].filter(Boolean).join("\n"),
             gameContext,
@@ -599,8 +599,8 @@ class FreeTalkSystem {
                     ? "<b>Tip:</b> Describe el tono con asteriscos, ej: <i>*sonriendo* Hola...</i>"
                     : "<b>Tip:</b> Describe la escena o acciones, ej: <i>*toma la mano* Vamos.</i>",
                 ja: isRemote
-                    ? "<b>Tip:</b> <i>*笑顔で* ねぇ</i> のように、雰囲気や状況を表現してみてね。"
-                    : "<b>Tip:</b> <i>*手を握って* 行こう。</i> のように話してみてね。",
+                    ? "<b>ヒント：</b>「<i>*笑顔で* ねえ</i>」のように、雰囲気や状況も添えてみてね。"
+                    : "<b>ヒント：</b>「<i>*手を握って* 行こう</i>」のように、動作も添えて話してみてね。",
                 en: isRemote
                     ? "<b>Tip:</b> Describe tone in asterisks, e.g., <i>*smiling* Hey...</i>"
                     : "<b>Tip:</b> Describe scene or actions, e.g., <i>*holds hand* Let's go.</i>",
@@ -688,7 +688,7 @@ class FreeTalkSystem {
         const skipHistory = this.freeTalkHistory;
 
         const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
-        const confirmMsg = { es: "¿Cerrar esta inserción de escena y continuar?", ja: "この場面挿入を終了して次のシーンに進みますか？", en: "Close this scene insert and proceed?", fr: "Terminer cette insertion de scène et continuer ?", de: "Diesen Szeneneinsatz beenden und fortfahren?", pt: "Encerrar esta inserção de cena e continuar?" }[lang] || "이 장면 삽입을 끝내고 다음 장면으로 넘어가시겠습니까?";
+        const confirmMsg = { es: "¿Cerrar esta inserción de escena y continuar?", ja: "この会話を終えて、次のシーンへ進みますか？", en: "Close this scene insert and proceed?", fr: "Terminer cette insertion de scène et continuer ?", de: "Diesen Szeneneinsatz beenden und fortfahren?", pt: "Encerrar esta inserção de cena e continuar?" }[lang] || "이 장면 삽입을 끝내고 다음 장면으로 넘어가시겠습니까?";
 
         const confirmed = await this.uiManager.showModal(confirmMsg);
         if (confirmed) {
@@ -709,7 +709,7 @@ class FreeTalkSystem {
             this.isFreeTalking = false;
             this.isProcessingChat = false;
 
-            const endMsg = { es: "<br><br>(La inserción de escena ha terminado.)", ja: "<br><br>（場面挿入が終了しました。）", en: "<br><br>(Scene insert ended. Click to continue.)", fr: "<br><br>(L'insertion de scène est terminée.)", de: "<br><br>(Szeneneinsatz beendet. Klicke, um fortzufahren.)", pt: "<br><br>(A inserção de cena terminou. Clique para continuar.)" }[lang] || "<br><br>(장면 삽입이 종료되었습니다. 화면을 클릭하여 계속하세요.)";
+            const endMsg = { es: "<br><br>(La inserción de escena ha terminado.)", ja: "<br><br>（会話が終了しました。画面をクリックして先へ進んでください。）", en: "<br><br>(Scene insert ended. Click to continue.)", fr: "<br><br>(L'insertion de scène est terminée.)", de: "<br><br>(Szeneneinsatz beendet. Klicke, um fortzufahren.)", pt: "<br><br>(A inserção de cena terminou. Clique para continuar.)" }[lang] || "<br><br>(장면 삽입이 종료되었습니다. 화면을 클릭하여 계속하세요.)";
             this.uiManager.messageEl.innerHTML += endMsg;
         }
     }
@@ -840,7 +840,7 @@ class FreeTalkSystem {
         if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
 
         // 사용자 메시지 표시
-        const playerLabelByLang = { en: "Me", es: "Yo", ja: "僕", fr: "Moi", de: "Ich", pt: "Eu" };
+        const playerLabelByLang = { en: "Me", es: "Yo", ja: "俺", fr: "Moi", de: "Ich", pt: "Eu" };
         const playerLabel = playerLabelByLang[window.GAME_LANG || document.documentElement.lang] || "나";
         this.uiManager.updateNameTag(playerLabel);
 
@@ -856,6 +856,10 @@ class FreeTalkSystem {
             const img = document.createElement('img');
             img.src = stagedImage;
             img.className = 'chat-image';
+            const imageLang = String(window.GAME_LANG || document.documentElement.lang || 'ko')
+                .toLowerCase()
+                .split('-')[0];
+            img.alt = imageLang === 'ja' ? '添付画像' : 'Attached image';
             this.uiManager.messageEl.appendChild(img);
         }
         // 유저 메시지 표시 후 대화창 최하단으로 스크롤
@@ -1290,6 +1294,12 @@ class FreeTalkSystem {
             [/교복 소매/g, '검정 암슬리브'],
             [/교복 치마/g, '스포츠 하의'],
             [/교복/g, '배구 유니폼'],
+            [/制服の裾/g, 'スポーティーな服の裾'],
+            [/制服の袖/g, '黒いアームスリーブ'],
+            [/(?:制服のスカート|制服スカート)/g, 'スポーツ用のボトムス'],
+            [/ブレザー/g, 'スポーティーな上着'],
+            [/ネクタイ/g, 'ウェアの襟元'],
+            [/制服/g, 'スポーティーな服'],
             [/school-uniform hem/gi, 'volleyball-jersey hem'],
             [/school-uniform sleeve/gi, 'black arm sleeve'],
             [/school skirt/gi, 'sports shorts'],
@@ -1459,11 +1469,23 @@ class FreeTalkSystem {
     _sanitizeVisibleArtifacts(text) {
         if (typeof text !== 'string' || !text) return text || '';
 
+        const locale = String(window.GAME_LANG || document.documentElement.lang || 'ko')
+            .toLowerCase()
+            .split('-')[0];
+        const interestText = {
+            ko: '흥미롭네',
+            ja: '面白いね。',
+            en: 'Interesting.',
+            es: 'Qué interesante.',
+            fr: 'Intéressant.',
+            de: 'Interessant.',
+            pt: 'Interessante.'
+        }[locale] || 'Interesting.';
         let out = text;
 
         // Keep stat changes internal to JSON fields. Never let them appear as character dialogue.
         out = out
-            .replace(/\bInterest\s*[+-]\s*\d+\b\.?/gi, 'Interesting.')
+            .replace(/\bInterest\s*[+-]\s*\d+\b\.?/gi, interestText)
             .replace(/\bAffinity\s*[+-]\s*\d+\b\.?/gi, '')
             .replace(/\bSTAT(?:S)?\s*[+-]\s*\d+\b\.?/gi, '')
             .replace(/(?:흥미|관심)\s*[+-]\s*\d+\s*(?:이니까|이라서|라고|이라며|이라니까)?/g, (match) => (
@@ -1472,15 +1494,33 @@ class FreeTalkSystem {
                 '흥미롭네'
             ))
             .replace(/(?:호감도|호감|친밀도)\s*[+-]\s*\d+\s*(?:이니까|이라서|라고|이라며|이라니까)?/g, '')
+            .replace(/(?:興味|関心)\s*[+-]\s*\d+/g, locale === 'ja' ? '面白いね。' : interestText)
+            .replace(/(?:好感度|好感|親密度)\s*[+-]\s*\d+/g, '')
             .replace(/(?:Δ|delta)\s*[+-]\s*\d+/gi, '')
             .replace(/\s{2,}/g, ' ')
             .trim();
 
-        // Replace exact measured pauses with qualitative beats.
+        // Replace exact measured pauses with qualitative beats in the active locale.
+        const pauseBeat = {
+            ja: '*しばし沈黙が流れる。*',
+            en: '*A brief silence follows.*',
+            es: '*Se hace un breve silencio.*',
+            fr: '*Un bref silence s’installe.*',
+            de: '*Für einen Moment herrscht Stille.*',
+            pt: '*Um breve silêncio se instala.*'
+        }[locale] || '*잠깐 정적이 흐른다.*';
+        const shortPause = {
+            ja: 'しばらく',
+            en: 'a brief pause',
+            es: 'una breve pausa',
+            fr: 'un bref instant',
+            de: 'einen Moment',
+            pt: 'uma breve pausa'
+        }[locale] || '잠깐';
         out = out
-            .replace(/\*\s*\d+(?:[.,]\d+)?\s*(?:초간|초|秒|sec(?:onds?)?|second(?:s)?|seg(?:undos?)?|Sek(?:unden)?)\.?\s*\*/gi, '*잠깐 정적이 흐른다.*')
-            .replace(/\b\d+(?:[.,]\d+)?\s*(?:sec(?:onds?)?|second(?:s)?|seg(?:undos?)?|Sek(?:unden)?)\b\.?/gi, 'a brief pause')
-            .replace(/\d+(?:[.,]\d+)?\s*(?:초간|초|秒)\.?/g, '잠깐');
+            .replace(/\*\s*\d+(?:[.,]\d+)?\s*(?:초간|초|秒|sec(?:onds?)?|second(?:s)?|seg(?:undos?)?|Sek(?:unden)?)\.?\s*\*/gi, pauseBeat)
+            .replace(/\b\d+(?:[.,]\d+)?\s*(?:sec(?:onds?)?|second(?:s)?|seg(?:undos?)?|Sek(?:unden)?)\b\.?/gi, shortPause)
+            .replace(/\d+(?:[.,]\d+)?\s*(?:초간|초|秒)\.?/g, shortPause);
 
         return out.replace(/\s+([.?!,;:])/g, '$1').trim();
     }
@@ -1687,6 +1727,8 @@ class FreeTalkSystem {
         } else {
             const img = document.createElement('img');
             img.src = exprUrl;
+            img.alt = '';
+            img.setAttribute('aria-hidden', 'true');
             centerSlot.appendChild(img);
         }
     }
@@ -1767,6 +1809,8 @@ class FreeTalkSystem {
                     } else {
                         const img = document.createElement('img');
                         img.src = exprUrl;
+                        img.alt = '';
+                        img.setAttribute('aria-hidden', 'true');
                         centerSlot.appendChild(img);
                     }
                 }
@@ -1832,7 +1876,7 @@ class FreeTalkSystem {
 
             // 종료 안내 메시지
             const langEnd = window.GAME_LANG || document.documentElement.lang || 'ko';
-            const endMsg = { es: "<br><br>(La inserción de escena ha terminado.)", ja: "<br><br>（場面挿入が終了しました。）", en: "<br><br>(Scene insert ended. Click to continue.)", fr: "<br><br>(L'insertion de scène est terminée.)", de: "<br><br>(Szeneneinsatz beendet. Klicke, um fortzufahren.)", pt: "<br><br>(A inserção de cena terminou. Clique para continuar.)" }[langEnd] || "<br><br>(장면 삽입이 종료되었습니다. 화면을 클릭하여 계속하세요.)";
+            const endMsg = { es: "<br><br>(La inserción de escena ha terminado.)", ja: "<br><br>（会話が終了しました。画面をクリックして先へ進んでください。）", en: "<br><br>(Scene insert ended. Click to continue.)", fr: "<br><br>(L'insertion de scène est terminée.)", de: "<br><br>(Szeneneinsatz beendet. Klicke, um fortzufahren.)", pt: "<br><br>(A inserção de cena terminou. Clique para continuar.)" }[langEnd] || "<br><br>(장면 삽입이 종료되었습니다. 화면을 클릭하여 계속하세요.)";
             this.uiManager.messageEl.innerHTML += endMsg;
         }, 500);
     }
