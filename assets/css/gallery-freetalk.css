@@ -123,6 +123,52 @@
     margin-bottom: 0;
 }
 
+/* 캐릭터별 갤러리 프리토킹 현재 호감도 */
+.gft-affinity-display {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 64px;
+    padding: 5px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 999px;
+    background: rgba(20, 16, 24, 0.88);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(8px);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.gft-affinity-display.positive {
+    color: #ff9eb8;
+}
+
+.gft-affinity-display.negative {
+    color: #91a9ff;
+}
+
+.gft-affinity-display.neutral {
+    color: #f1edf2;
+}
+
+.gft-affinity-icon {
+    font-size: 1.05em;
+}
+
+.gft-affinity-value {
+    min-width: 2.7ch;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
 /* 입력 컨테이너: 오버레이 안에서 pointer-events 활성화 + 여백 제거 */
 .gallery-freetalk-overlay #chat-container {
     display: block;
@@ -227,6 +273,12 @@
         font-size: 0.95rem;
         padding: 4px 12px;
     }
+
+    .gft-affinity-display {
+        right: 12px;
+        padding: 4px 10px;
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -242,6 +294,14 @@
 
     .gallery-freetalk-overlay #message {
         font-size: 0.95rem;
+    }
+
+    .gft-affinity-display {
+        right: 10px;
+        gap: 4px;
+        min-width: 58px;
+        padding: 4px 8px;
+        font-size: 0.85rem;
     }
 
     .gallery-freetalk-overlay #chat-input {

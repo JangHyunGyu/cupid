@@ -717,8 +717,8 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.108') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.108이 아님: ' + loaderVersion);
+    if (loaderVersion !== '2.9.109') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.109이 아님: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');
@@ -1811,18 +1811,35 @@ try {
     if (promptVersion !== '2.7.38') {
         errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.38이 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.37') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.37이 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.38') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.38이 아님: ' + galleryPromptVersion);
     }
     const galleryProgressContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-progress.js'), 'utf8');
+    const galleryLoaderAffinityContent = fs.readFileSync(path.join(__dirname, 'assets/js/loaders/gallery-loader.js'), 'utf8');
+    const galleryControllerContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery.js'), 'utf8');
+    const galleryFreeTalkCss = fs.readFileSync(path.join(__dirname, 'assets/css/gallery-freetalk.css'), 'utf8');
+    const galleryAffinityRuntime = [
+        gftContent,
+        galleryProgressContent,
+        galleryLoaderAffinityContent,
+        galleryControllerContent,
+        galleryFreeTalkCss
+    ].join('\n');
     const galleryAffinitySignals = [
         'currentAffinity',
         'changeCurrentAffinity',
+        'requestedChange',
+        'gft-affinity-display',
+        '.gft-affinity-display',
+        'affinity_up.mp3',
+        "'sound.js'",
+        'soundManager?.init?.()',
+        'Math.max(-100',
         '"affinity":0',
         '이미 PERFECT 엔딩 이후의 성인 연인',
         'current_affinity='
     ];
-    if (galleryAffinitySignals.some(signal => !(`${gftContent}\n${galleryProgressContent}`).includes(signal))) {
+    if (galleryAffinitySignals.some(signal => !galleryAffinityRuntime.includes(signal))) {
         errors.push('[FREETALK_AFFINITY] 갤러리 현재 호감도·연인 관계 온도 계약 누락');
     }
     const completedActionCanonSignals = [
