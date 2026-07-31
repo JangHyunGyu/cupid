@@ -12,7 +12,7 @@
  *     seyoun: { 
  *       met: true,                 // 만남 여부
  *       maxAffinity: 75,           // 최대 호감도
- *       currentAffinity: 72,       // 갤러리 프리토킹 현재 호감도
+ *       currentAffinity: 72,       // 갤러리 프리토킹 현재 호감도 (-100~100)
  *       freeTalkCount: 50          // 프리토킹 횟수
  *     },
  *     ...
@@ -161,7 +161,7 @@ class GalleryProgress {
                 && charData.currentAffinity !== '';
             const savedCurrent = Number(charData.currentAffinity);
             const currentAffinity = hasSavedCurrent && Number.isFinite(savedCurrent)
-                ? Math.max(0, Math.min(100, Math.round(savedCurrent)))
+                ? Math.max(-100, Math.min(100, Math.round(savedCurrent)))
                 : maxAffinity;
 
             if (charData.currentAffinity !== currentAffinity) {
@@ -289,13 +289,12 @@ class GalleryProgress {
 
     /**
      * 갤러리 프리토킹의 현재 호감도 가져오기
-     * 해금용 최고 호감도와 별개이며 대화에 따라 0~100 범위에서 변합니다.
+     * 해금용 최고 호감도와 별개이며 대화에 따라 -100~100 범위에서 변합니다.
      *
      * @param {string} charId - 캐릭터 ID
-     * @returns {number} 현재 호감도 (0 ~ 100)
+     * @returns {number} 현재 호감도 (-100 ~ 100)
      */
     getCurrentAffinity(charId) {
-        if (this.isAdmin) return 100;
         this.refresh();
         const charData = this.data.characters?.[charId];
         if (!charData) return 0;
@@ -305,7 +304,7 @@ class GalleryProgress {
             && charData.currentAffinity !== '';
         const savedCurrent = Number(charData.currentAffinity);
         if (hasSavedCurrent && Number.isFinite(savedCurrent)) {
-            return Math.max(0, Math.min(100, Math.round(savedCurrent)));
+            return Math.max(-100, Math.min(100, Math.round(savedCurrent)));
         }
         return Math.max(0, Math.min(100, Number(charData.maxAffinity) || 0));
     }
@@ -316,14 +315,15 @@ class GalleryProgress {
      *
      * @param {string} charId - 캐릭터 ID
      * @param {number} amount - 요청 변화량
-     * @returns {{value:number, change:number, maxAffinity:number}}
+     * 실제 값은 -100~100에서 멈추지만 requestedChange는 상·하한에서도 유지되어
+     * 변동 이펙트와 효과음을 표시할 수 있습니다.
+     *
+     * @returns {{value:number, change:number, requestedChange:number, maxAffinity:number}}
      */
     changeCurrentAffinity(charId, amount) {
-        if (this.isAdmin) return { value: 100, change: 0, maxAffinity: 100 };
-
         this.refresh();
         const charData = this.data.characters?.[charId];
-        if (!charData) return { value: 0, change: 0, maxAffinity: 0 };
+        if (!charData) return { value: 0, change: 0, requestedChange: 0, maxAffinity: 0 };
 
         const requestedChange = Number(amount);
         const safeChange = Number.isFinite(requestedChange)
@@ -331,9 +331,9 @@ class GalleryProgress {
             : 0;
         const savedCurrent = Number(charData.currentAffinity);
         const current = Number.isFinite(savedCurrent)
-            ? Math.max(0, Math.min(100, Math.round(savedCurrent)))
+            ? Math.max(-100, Math.min(100, Math.round(savedCurrent)))
             : Math.max(0, Math.min(100, Number(charData.maxAffinity) || 0));
-        const value = Math.max(0, Math.min(100, current + safeChange));
+        const value = Math.max(-100, Math.min(100, current + safeChange));
         const actualChange = value - current;
         const previousMax = Math.max(0, Math.min(100, Number(charData.maxAffinity) || 0));
         const maxAffinity = Math.max(previousMax, value);
@@ -342,7 +342,7 @@ class GalleryProgress {
         charData.maxAffinity = maxAffinity;
         this.save();
 
-        return { value, change: actualChange, maxAffinity };
+        return { value, change: actualChange, requestedChange: safeChange, maxAffinity };
     }
 
     /**

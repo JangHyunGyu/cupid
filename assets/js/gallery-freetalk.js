@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.37';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.38';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function buildGalleryThirdPersonAdultCameraRule(lang = 'ko') {
@@ -785,6 +785,18 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
     _createOverlay(charId) {
         const charName = this.CHAR_NAMES[charId]?.[this.lang] || charId;
         const bgUrl = this.CHAR_BACKGROUNDS[charId];
+        const currentAffinity = this.progress?.getCurrentAffinity?.(charId) || 0;
+        const affinityTone = this._getAffinityTone(currentAffinity);
+        const affinityValue = this._formatAffinityValue(currentAffinity);
+        const affinityLabel = this._L(
+            '현재 호감도',
+            'Current affinity',
+            'Afinidad actual',
+            '現在の好感度',
+            'Affinité actuelle',
+            'Aktuelle Zuneigung',
+            'Afinidade atual'
+        );
 
         this.overlayEl.innerHTML = `
             <div class="gft-background" style="background-image: url('${bgUrl}')"></div>
@@ -794,6 +806,11 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             <div class="gft-ui-layer">
                 <div id="dialogue-box">
                     <div id="name-tag">${charName}</div>
+                    <div id="gft-affinity-display" class="gft-affinity-display ${affinityTone}"
+                         role="status" aria-live="polite" aria-label="${affinityLabel}: ${affinityValue}">
+                        <span class="gft-affinity-icon" aria-hidden="true">${this._getAffinityIcon(currentAffinity)}</span>
+                        <span class="gft-affinity-value">${affinityValue}</span>
+                    </div>
                     <div id="message"></div>
                 </div>
                 <div class="gft-bottom-row">
@@ -1975,18 +1992,76 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
     _applyAffinityChange(change, charId = this.currentCharId) {
         if (!charId || !this.progress?.changeCurrentAffinity) return null;
 
+        const requestedChange = this._normalizeAffinityChange(change);
         const result = this.progress.changeCurrentAffinity(
             charId,
-            this._normalizeAffinityChange(change)
+            requestedChange
         );
-        if (result?.change) {
-            this._showAffinityChange(result.change);
+        this._updateAffinityDisplay(result?.value, charId);
+
+        const effectChange = result?.requestedChange ?? requestedChange;
+        if (effectChange) {
+            this._showAffinityChange(effectChange);
         }
         return result;
     }
 
+    _formatAffinityValue(value) {
+        const score = Math.max(-100, Math.min(100, Math.round(Number(value) || 0)));
+        return score > 0 ? `+${score}` : String(score);
+    }
+
+    _getAffinityTone(value) {
+        const score = Number(value) || 0;
+        if (score > 0) return 'positive';
+        if (score < 0) return 'negative';
+        return 'neutral';
+    }
+
+    _getAffinityIcon(value) {
+        const score = Number(value) || 0;
+        if (score > 0) return '💕';
+        if (score < 0) return '💔';
+        return '🤍';
+    }
+
+    _updateAffinityDisplay(value, charId = this.currentCharId) {
+        if (charId !== this.currentCharId) return;
+
+        const display = this.overlayEl?.querySelector('#gft-affinity-display');
+        if (!display) return;
+
+        const score = Math.max(-100, Math.min(100, Math.round(Number(value) || 0)));
+        const formatted = this._formatAffinityValue(score);
+        const affinityLabel = this._L(
+            '현재 호감도',
+            'Current affinity',
+            'Afinidad actual',
+            '現在の好感度',
+            'Affinité actuelle',
+            'Aktuelle Zuneigung',
+            'Afinidade atual'
+        );
+
+        display.classList.remove('positive', 'negative', 'neutral');
+        display.classList.add(this._getAffinityTone(score));
+        display.setAttribute('aria-label', `${affinityLabel}: ${formatted}`);
+
+        const icon = display.querySelector('.gft-affinity-icon');
+        const valueEl = display.querySelector('.gft-affinity-value');
+        if (icon) icon.textContent = this._getAffinityIcon(score);
+        if (valueEl) valueEl.textContent = formatted;
+    }
+
     _showAffinityChange(amount) {
         if (!amount) return;
+
+        const sfxPath = amount > 0
+            ? 'assets/audio/sfx/affinity_up.mp3'
+            : 'assets/audio/sfx/affinity_down.mp3';
+        if (window.soundManager?.playSfx) {
+            Promise.resolve(window.soundManager.playSfx(sfxPath)).catch(() => {});
+        }
 
         const popup = document.createElement('div');
         popup.className = `affinity-popup ${amount > 0 ? 'positive' : 'negative'}`;
@@ -2202,34 +2277,52 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
     }
 
     _getGalleryRelationshipState(affinity) {
-        const score = Math.max(0, Math.min(100, Number(affinity) || 0));
+        const score = Math.max(-100, Math.min(100, Number(affinity) || 0));
         if (score >= 90) {
             return {
                 ko: '깊이 결속된 연인: 신뢰와 친밀감이 매우 높고 솔직한 애정·욕망·돌봄이 자연스럽다',
                 en: 'deeply bonded lovers: secure trust and intimacy; candid affection, desire, and care come naturally'
             };
         }
-        if (score >= 75) {
+        if (score >= 70) {
             return {
                 ko: '가까운 연인: 신뢰가 높고 애정 표현과 약한 모습, 스킨십이 비교적 자연스럽다',
                 en: 'close lovers: high trust; affection, vulnerability, and touch come relatively easily'
             };
         }
-        if (score >= 50) {
+        if (score >= 40) {
             return {
                 ko: '편안한 연인: 함께 쌓은 일상과 익숙함이 있고 캐릭터다운 장난·배려·애정을 보인다',
                 en: 'comfortable lovers: shared routines and familiarity shape character-specific teasing, care, and affection'
             };
         }
-        if (score >= 25) {
+        if (score >= 10) {
             return {
-                ko: '서먹해진 연인: 최근 긴장이나 경계가 있지만 서로의 습관과 추억을 잘 아는 연인이다',
-                en: 'uneasy lovers: recent tension or caution, while both still know each other’s habits and shared history'
+                ko: '조심스러운 연인: 약간의 긴장이나 경계가 있지만 익숙함과 애정이 아직 분명하다',
+                en: 'cautious lovers: some tension or reserve, while familiarity and affection remain clear'
+            };
+        }
+        if (score >= -9) {
+            return {
+                ko: '흔들리는 연인: 애정과 갈등이 팽팽하며 서로를 잘 알기에 반응도 더 복잡하다',
+                en: 'conflicted lovers: affection and tension are balanced, made more complex by how well they know each other'
+            };
+        }
+        if (score >= -39) {
+            return {
+                ko: '상처받은 연인: 현재 서운하고 경계하지만 연인 관계와 함께한 기억은 사라지지 않았다',
+                en: 'hurt lovers: currently wounded and guarded, but the established romance and shared memories remain real'
+            };
+        }
+        if (score >= -69) {
+            return {
+                ko: '멀어진 연인: 깊이 상처받아 차갑고 거리를 두지만 두 사람이 쌓아 온 역사는 남아 있다',
+                en: 'distant lovers: deeply hurt, cold, and keeping distance, while their shared history still remains'
             };
         }
         return {
-            ko: '상처받은 연인: 현재 크게 서운하거나 경계하지만 연인 관계와 함께한 기억은 사라지지 않았다',
-            en: 'hurt lovers: currently wounded or guarded, but the established romance and shared memories remain real'
+            ko: '위기의 연인: 관계가 무너질 듯한 상태라 강한 거리 두기나 거절이 자연스럽지만 자동으로 결별한 사이는 아니다',
+            en: 'lovers in crisis: the relationship is near collapse, so strong distance or refusal is natural, but they have not automatically broken up'
         };
     }
 
@@ -2289,11 +2382,11 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const affinityRelationshipGuard = isEn
             ? `Established romance and affinity:
 - They are already post-PERFECT-ending adult lovers at every score. Never rewrite them as strangers, new acquaintances, an unconfessed crush, or automatically broken up.
-- Current affinity changes only the emotional temperature inside that established relationship: 0-24 hurt/guarded, 25-49 uneasy/cautious, 50-74 comfortable/familiar, 75-89 close/trusting, 90-100 deeply bonded/intimate. Express the current band through this character's own speech, initiative, touch, restraint, and emotional openness without mechanically naming the score.
+- Current affinity changes only the emotional temperature inside that established relationship: -100 to -70 in crisis, -69 to -40 deeply hurt/distant, -39 to -10 hurt/guarded, -9 to 9 conflicted/fragile, 10 to 39 cautious but affectionate, 40 to 69 comfortable/familiar, 70 to 89 close/trusting, 90 to 100 deeply bonded/intimate. Express the current band through this character's own speech, initiative, touch, restraint, refusal, and emotional openness without mechanically naming the score.
 - Return affinity as an integer from -3 to 3 based only on the user's latest contribution and the interaction completed in this turn. Most ordinary turns are 0; ±1 is a small but earned shift, ±2 requires a clearly meaningful moment, and ±3 is exceptional. Do not award points for every generic greeting or replace roleplay with score commentary.`
             : `확정된 연인 관계와 호감도:
 - 두 사람은 점수와 무관하게 이미 PERFECT 엔딩 이후의 성인 연인입니다. 낯선 사이, 이제 막 알게 된 사이, 고백 전 짝사랑으로 되돌리거나 자동으로 결별시키지 마세요.
-- 현재 호감도는 확정된 연인 관계 안의 감정 온도만 바꿉니다. 0~24는 상처받고 경계하는 상태, 25~49는 서먹하고 조심스러운 상태, 50~74는 편안하고 익숙한 상태, 75~89는 가깝고 신뢰하는 상태, 90~100은 깊이 결속되고 친밀한 상태입니다. 점수를 입 밖에 내지 말고, 해당 단계가 이 캐릭터다운 말투·주도성·스킨십·거리 두기·감정 개방으로 자연스럽게 드러나게 하세요.
+- 현재 호감도는 확정된 연인 관계 안의 감정 온도만 바꿉니다. -100~-70은 관계 위기, -69~-40은 깊이 상처받고 멀어진 상태, -39~-10은 상처받고 경계하는 상태, -9~9는 애정과 갈등이 팽팽한 상태, 10~39는 조심스럽지만 애정이 남은 상태, 40~69는 편안하고 익숙한 상태, 70~89는 가깝고 신뢰하는 상태, 90~100은 깊이 결속되고 친밀한 상태입니다. 점수를 입 밖에 내지 말고, 해당 단계가 이 캐릭터다운 말투·주도성·스킨십·거리 두기·거절·감정 개방으로 자연스럽게 드러나게 하세요.
 - affinity에는 이번 사용자 입력과 이번 턴에 실제로 완결된 상호작용만 평가해 -3~3의 정수를 넣으세요. 평범한 턴은 대부분 0, 작지만 납득되는 변화는 ±1, 뚜렷하게 의미 있는 순간은 ±2, 예외적으로 강한 순간만 ±3입니다. 단순 인사나 일상적인 예의마다 점수를 주거나 호감도 설명으로 연기를 대신하지 마세요.`;
         const compactGalleryState = isEn
             ? `State: user=${playerName || 'the user'}; current_affinity=${currentAffinity}/100; relationship=${relationshipState.en}`

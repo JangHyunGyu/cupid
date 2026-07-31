@@ -65,6 +65,7 @@ class Gallery {
         // 2. 진행도 관리 인스턴스 생성 및 로드
         this.progress = new GalleryProgress();
         window.galleryProgressInstance = this.progress;
+        window.soundManager?.init?.();
 
         // 3. UI 인스턴스 생성
         this.ui = new GalleryUI(this.progress, this.lang);
