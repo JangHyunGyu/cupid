@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.36';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.37';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function buildGalleryThirdPersonAdultCameraRule(lang = 'ko') {
@@ -712,9 +712,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         this.chatHistory = this._sanitizeVisibleArtifactsHistory(this.chatHistory);
 
         // 시스템 프롬프트 구성
-        const systemPrompt = keepGalleryFreeTalkRuntimeBoundary(
-            normalizeGalleryPromptBlockForCache(this._buildSystemPrompt(charId))
-        );
+        const systemPrompt = this._buildCachedSystemPrompt(charId);
         if (this.chatHistory.length > 0 && this.chatHistory[0].role === 'system') {
             this.chatHistory[0].content = systemPrompt;
         } else {
@@ -1127,6 +1125,14 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         // 이미지 미리보기 제거
         this._removeStagedImage();
 
+        // 직전 턴에서 바뀐 현재 호감도와 관계 온도를 시스템 상태에 반영
+        const currentSystemPrompt = this._buildCachedSystemPrompt(requestCharId);
+        if (requestHistory[0]?.role === 'system') {
+            requestHistory[0].content = currentSystemPrompt;
+        } else {
+            requestHistory.unshift({ role: 'system', content: currentSystemPrompt });
+        }
+
         const historyLengthBeforeTurn = requestHistory.length;
         requestContext.historyLengthBeforeTurn = historyLengthBeforeTurn;
         requestHistory.push({ role: 'user', content: finalContent });
@@ -1378,6 +1384,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 this._updateExpression(parsed.expression, requestCharId);
             }
             this._assertRequestContext(requestContext, data);
+            this._applyAffinityChange(parsed.affinity, requestCharId);
             requestHistory.push({ role: 'assistant', content: displayText });
 
             // 프리토킹 횟수 증가
@@ -1607,14 +1614,15 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
     }
 
     _parseResponse(reply) {
-        if (!reply) return { text: '', segments: null, expression: '' };
+        if (!reply) return { text: '', segments: null, expression: '', affinity: 0 };
 
         const likelyJson = reply.includes('{') || reply.includes('```json');
         if (!likelyJson) {
             return {
                 text: this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(reply)),
                 segments: null,
-                expression: ''
+                expression: '',
+                affinity: 0
             };
         }
 
@@ -1645,7 +1653,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 return {
                     text: this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(derivedText)),
                     segments: this._sanitizeSegmentsPlaceholders(normalizedSegments),
-                    expression: (parsed.expression || '').toLowerCase()
+                    expression: (parsed.expression || '').toLowerCase(),
+                    affinity: this._normalizeAffinityChange(parsed.affinity)
                 };
             }
 
@@ -1654,7 +1663,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 return {
                     text: this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(parsed.text || '')),
                     segments: null,
-                    expression: (parsed.expression || '').toLowerCase()
+                    expression: (parsed.expression || '').toLowerCase(),
+                    affinity: this._normalizeAffinityChange(parsed.affinity)
                 };
             }
 
@@ -1663,7 +1673,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             return {
                 text: this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(text)),
                 segments: null,
-                expression: (parsed.expression || '').toLowerCase()
+                expression: (parsed.expression || '').toLowerCase(),
+                affinity: this._normalizeAffinityChange(parsed.affinity)
             };
 
         } catch (e) {
@@ -1679,8 +1690,14 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     replyHash: window.hashCupidLogText ? window.hashCupidLogText(reply || '') : ''
                 }
             });
-            return { text: '', segments: null, expression: '' };
+            return { text: '', segments: null, expression: '', affinity: 0 };
         }
+    }
+
+    _normalizeAffinityChange(value) {
+        const numeric = Number(value);
+        if (!Number.isFinite(numeric)) return 0;
+        return Math.max(-3, Math.min(3, Math.round(numeric)));
     }
 
     /**
@@ -1955,6 +1972,39 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         }
     }
 
+    _applyAffinityChange(change, charId = this.currentCharId) {
+        if (!charId || !this.progress?.changeCurrentAffinity) return null;
+
+        const result = this.progress.changeCurrentAffinity(
+            charId,
+            this._normalizeAffinityChange(change)
+        );
+        if (result?.change) {
+            this._showAffinityChange(result.change);
+        }
+        return result;
+    }
+
+    _showAffinityChange(amount) {
+        if (!amount) return;
+
+        const popup = document.createElement('div');
+        popup.className = `affinity-popup ${amount > 0 ? 'positive' : 'negative'}`;
+
+        const emoji = document.createElement('span');
+        emoji.className = 'emoji';
+        emoji.textContent = amount > 0 ? '💕' : '💔';
+
+        const value = document.createElement('span');
+        value.className = 'value';
+        value.textContent = amount > 0 ? `+${amount}` : String(amount);
+
+        popup.appendChild(emoji);
+        popup.appendChild(value);
+        document.body.appendChild(popup);
+        window.setTimeout(() => popup.remove(), 4000);
+    }
+
     _incrementFreeTalkCount(charId = this.currentCharId) {
         if (!charId || !this.progress) return;
         try {
@@ -2145,6 +2195,44 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
      * 연인 모드 시스템 프롬프트 생성
      * @private
      */
+    _buildCachedSystemPrompt(charId) {
+        return keepGalleryFreeTalkRuntimeBoundary(
+            normalizeGalleryPromptBlockForCache(this._buildSystemPrompt(charId))
+        );
+    }
+
+    _getGalleryRelationshipState(affinity) {
+        const score = Math.max(0, Math.min(100, Number(affinity) || 0));
+        if (score >= 90) {
+            return {
+                ko: '깊이 결속된 연인: 신뢰와 친밀감이 매우 높고 솔직한 애정·욕망·돌봄이 자연스럽다',
+                en: 'deeply bonded lovers: secure trust and intimacy; candid affection, desire, and care come naturally'
+            };
+        }
+        if (score >= 75) {
+            return {
+                ko: '가까운 연인: 신뢰가 높고 애정 표현과 약한 모습, 스킨십이 비교적 자연스럽다',
+                en: 'close lovers: high trust; affection, vulnerability, and touch come relatively easily'
+            };
+        }
+        if (score >= 50) {
+            return {
+                ko: '편안한 연인: 함께 쌓은 일상과 익숙함이 있고 캐릭터다운 장난·배려·애정을 보인다',
+                en: 'comfortable lovers: shared routines and familiarity shape character-specific teasing, care, and affection'
+            };
+        }
+        if (score >= 25) {
+            return {
+                ko: '서먹해진 연인: 최근 긴장이나 경계가 있지만 서로의 습관과 추억을 잘 아는 연인이다',
+                en: 'uneasy lovers: recent tension or caution, while both still know each other’s habits and shared history'
+            };
+        }
+        return {
+            ko: '상처받은 연인: 현재 크게 서운하거나 경계하지만 연인 관계와 함께한 기억은 사라지지 않았다',
+            en: 'hurt lovers: currently wounded or guarded, but the established romance and shared memories remain real'
+        };
+    }
+
     _buildSystemPrompt(charId) {
         const isEn = this.lang !== 'ko';
 
@@ -2194,9 +2282,22 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             location && `기본 장소: ${location}`
         ]).filter(Boolean).join("\n");
         const compactGalleryExpressions = validExprs.join(', ') || 'normal';
+        const currentAffinity = this.progress?.getCurrentAffinity
+            ? this.progress.getCurrentAffinity(charId)
+            : (this.progress?.getAffinity?.(charId) || 0);
+        const relationshipState = this._getGalleryRelationshipState(currentAffinity);
+        const affinityRelationshipGuard = isEn
+            ? `Established romance and affinity:
+- They are already post-PERFECT-ending adult lovers at every score. Never rewrite them as strangers, new acquaintances, an unconfessed crush, or automatically broken up.
+- Current affinity changes only the emotional temperature inside that established relationship: 0-24 hurt/guarded, 25-49 uneasy/cautious, 50-74 comfortable/familiar, 75-89 close/trusting, 90-100 deeply bonded/intimate. Express the current band through this character's own speech, initiative, touch, restraint, and emotional openness without mechanically naming the score.
+- Return affinity as an integer from -3 to 3 based only on the user's latest contribution and the interaction completed in this turn. Most ordinary turns are 0; ±1 is a small but earned shift, ±2 requires a clearly meaningful moment, and ±3 is exceptional. Do not award points for every generic greeting or replace roleplay with score commentary.`
+            : `확정된 연인 관계와 호감도:
+- 두 사람은 점수와 무관하게 이미 PERFECT 엔딩 이후의 성인 연인입니다. 낯선 사이, 이제 막 알게 된 사이, 고백 전 짝사랑으로 되돌리거나 자동으로 결별시키지 마세요.
+- 현재 호감도는 확정된 연인 관계 안의 감정 온도만 바꿉니다. 0~24는 상처받고 경계하는 상태, 25~49는 서먹하고 조심스러운 상태, 50~74는 편안하고 익숙한 상태, 75~89는 가깝고 신뢰하는 상태, 90~100은 깊이 결속되고 친밀한 상태입니다. 점수를 입 밖에 내지 말고, 해당 단계가 이 캐릭터다운 말투·주도성·스킨십·거리 두기·감정 개방으로 자연스럽게 드러나게 하세요.
+- affinity에는 이번 사용자 입력과 이번 턴에 실제로 완결된 상호작용만 평가해 -3~3의 정수를 넣으세요. 평범한 턴은 대부분 0, 작지만 납득되는 변화는 ±1, 뚜렷하게 의미 있는 순간은 ±2, 예외적으로 강한 순간만 ±3입니다. 단순 인사나 일상적인 예의마다 점수를 주거나 호감도 설명으로 연기를 대신하지 마세요.`;
         const compactGalleryState = isEn
-            ? `State: user=${playerName || 'the user'}`
-            : `현재 상태: 사용자=${playerName || '상대'}`;
+            ? `State: user=${playerName || 'the user'}; current_affinity=${currentAffinity}/100; relationship=${relationshipState.en}`
+            : `현재 상태: 사용자=${playerName || '상대'}; 현재 호감도=${currentAffinity}/100; 관계 온도=${relationshipState.ko}`;
         const thirdPersonAdultCameraRule = buildGalleryThirdPersonAdultCameraRule(this.lang);
         if (isEn) {
             return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Cupid gallery free-talk: ${charName} with their post-graduation adult partner; not a current school scene.
@@ -2207,7 +2308,8 @@ ${characterCanonGuard}
 Scene: Keep this 1:1; other people remain offstage except through ${charName}'s reaction to a mention. Treat the user's latest explicit in-world facts and completed outcomes as current without reversal; only the character-specific canon locks above remain exceptions. Let ${charName} act, sense, desire, think, and take initiative from their own personality and the immediate moment. The user's response, emotion, or inner thought may be inferred naturally from their words, actions, and the scene, but must remain compatible with any state, choice, consent, or refusal they explicitly state. On brief or passive input, ${charName} chooses and carries out the next fitting response, question, action, or decision. Do not end on only a proposal, preview, or permission question when ${charName} can naturally advance the beat. Use natural present-day speech.
 ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}
-JSON only: {"segments":[{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal"}
+${affinityRelationshipGuard}
+JSON only: {"segments":[{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":0}
 Types: narration/dialogue. segments must contain at least one item with non-empty text. Expressions: ${compactGalleryExpressions}. No single text field.
 ===CACHE_BOUNDARY===
 ${compactGalleryState}`;
@@ -2220,7 +2322,8 @@ ${characterCanonGuard}
 장면: 두 사람만 장면에 두고, 다른 인물은 언급을 들은 ${charName}의 반응으로만 남깁니다. 사용자가 방금 확정해 쓴 극중 사실과 끝난 사건은 되돌리지 않고 현재 장면으로 받습니다. 위의 캐릭터별 사실 잠금만 예외입니다. ${charName}는 자기 성격과 바로 앞 순간에서 행동·감각·욕망·생각·주도권을 스스로 정합니다. 사용자의 말·행동·장면 맥락에서 반응·감정·속마음을 자연스럽게 추론할 수 있지만, 사용자가 명시한 상태·선택·동의·거절과 충돌시키지는 않습니다. 짧거나 수동적인 입력에도 ${charName}가 어울리는 다음 반응·질문·행동·결정을 골라 실제로 진행합니다. 자연스럽게 장면을 진행할 수 있는데 제안·예고·허락 질문만 남기고 끝내지 않습니다. 자연스러운 현재 한국어를 쓰세요.
 ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}
-JSON만 출력: {"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal"}
+${affinityRelationshipGuard}
+JSON만 출력: {"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":0}
 허용 type: narration, dialogue. segments에는 빈 문자열이 아닌 항목을 하나 이상 넣습니다. 허용 expression: ${compactGalleryExpressions}. text 단일 필드는 쓰지 마세요.
 ===CACHE_BOUNDARY===
 ${compactGalleryState}`;

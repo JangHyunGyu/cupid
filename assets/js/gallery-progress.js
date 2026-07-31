@@ -12,6 +12,7 @@
  *     seyoun: { 
  *       met: true,                 // 만남 여부
  *       maxAffinity: 75,           // 최대 호감도
+ *       currentAffinity: 72,       // 갤러리 프리토킹 현재 호감도
  *       freeTalkCount: 50          // 프리토킹 횟수
  *     },
  *     ...
@@ -95,6 +96,8 @@ class GalleryProgress {
                     this.data = parsed;
                     // trueEndingCleared → perfectEndingCleared 마이그레이션
                     this._migratePerfectEndingKey();
+                    // 기존 최고 호감도를 갤러리 프리토킹의 최초 현재값으로 사용
+                    this._migrateCurrentAffinity();
                     return this.data;
                 }
             } catch (e) {
@@ -141,6 +144,40 @@ class GalleryProgress {
     }
 
     /**
+     * 갤러리 프리토킹 현재 호감도 필드 마이그레이션
+     * 기존 이용자는 달성한 최고 호감도에서 시작하며, 이후 현재값만 오르내립니다.
+     * @private
+     */
+    _migrateCurrentAffinity() {
+        if (!this.data?.characters) return false;
+
+        let migrated = false;
+        for (const charData of Object.values(this.data.characters)) {
+            if (!charData || typeof charData !== 'object') continue;
+
+            const maxAffinity = Math.max(0, Math.min(100, Number(charData.maxAffinity) || 0));
+            const hasSavedCurrent = charData.currentAffinity !== undefined
+                && charData.currentAffinity !== null
+                && charData.currentAffinity !== '';
+            const savedCurrent = Number(charData.currentAffinity);
+            const currentAffinity = hasSavedCurrent && Number.isFinite(savedCurrent)
+                ? Math.max(0, Math.min(100, Math.round(savedCurrent)))
+                : maxAffinity;
+
+            if (charData.currentAffinity !== currentAffinity) {
+                charData.currentAffinity = currentAffinity;
+                migrated = true;
+            }
+        }
+
+        if (migrated) {
+            this.save();
+            console.log('[GalleryProgress] 갤러리 현재 호감도 필드 마이그레이션 완료');
+        }
+        return migrated;
+    }
+
+    /**
      * 기본 진행 데이터 생성
      * 
      * 기본 상태:
@@ -155,11 +192,11 @@ class GalleryProgress {
         return {
             version: GalleryData.VERSION,
             characters: {
-                seyoun: { met: false, maxAffinity: 0, freeTalkCount: 0 },
-                yuna: { met: false, maxAffinity: 0, freeTalkCount: 0 },
-                dain: { met: false, maxAffinity: 0, freeTalkCount: 0 },
-                teacher: { met: false, maxAffinity: 0, freeTalkCount: 0 },
-                nurse: { met: false, maxAffinity: 0, freeTalkCount: 0 }
+                seyoun: { met: false, maxAffinity: 0, currentAffinity: 0, freeTalkCount: 0 },
+                yuna: { met: false, maxAffinity: 0, currentAffinity: 0, freeTalkCount: 0 },
+                dain: { met: false, maxAffinity: 0, currentAffinity: 0, freeTalkCount: 0 },
+                teacher: { met: false, maxAffinity: 0, currentAffinity: 0, freeTalkCount: 0 },
+                nurse: { met: false, maxAffinity: 0, currentAffinity: 0, freeTalkCount: 0 }
             },
             cg: {},                           // CG는 기본적으로 없음 (게임 진행 시 추가)
             bgm: {
@@ -195,6 +232,7 @@ class GalleryProgress {
         if (saved) {
             try {
                 this.data = JSON.parse(saved);
+                this._migrateCurrentAffinity();
             } catch (e) {
                 // 파싱 실패 시 현재 데이터 유지
                 window.reportCupidCaughtError?.(e, {
@@ -247,6 +285,64 @@ class GalleryProgress {
         if (this.isAdmin) return 100;
         this.refresh();
         return this.data.characters?.[charId]?.maxAffinity || 0;
+    }
+
+    /**
+     * 갤러리 프리토킹의 현재 호감도 가져오기
+     * 해금용 최고 호감도와 별개이며 대화에 따라 0~100 범위에서 변합니다.
+     *
+     * @param {string} charId - 캐릭터 ID
+     * @returns {number} 현재 호감도 (0 ~ 100)
+     */
+    getCurrentAffinity(charId) {
+        if (this.isAdmin) return 100;
+        this.refresh();
+        const charData = this.data.characters?.[charId];
+        if (!charData) return 0;
+
+        const hasSavedCurrent = charData.currentAffinity !== undefined
+            && charData.currentAffinity !== null
+            && charData.currentAffinity !== '';
+        const savedCurrent = Number(charData.currentAffinity);
+        if (hasSavedCurrent && Number.isFinite(savedCurrent)) {
+            return Math.max(0, Math.min(100, Math.round(savedCurrent)));
+        }
+        return Math.max(0, Math.min(100, Number(charData.maxAffinity) || 0));
+    }
+
+    /**
+     * 갤러리 프리토킹 현재 호감도 변경
+     * 변화량은 방어적으로 -3~+3으로 제한하고, 최고 기록은 상승할 때만 갱신합니다.
+     *
+     * @param {string} charId - 캐릭터 ID
+     * @param {number} amount - 요청 변화량
+     * @returns {{value:number, change:number, maxAffinity:number}}
+     */
+    changeCurrentAffinity(charId, amount) {
+        if (this.isAdmin) return { value: 100, change: 0, maxAffinity: 100 };
+
+        this.refresh();
+        const charData = this.data.characters?.[charId];
+        if (!charData) return { value: 0, change: 0, maxAffinity: 0 };
+
+        const requestedChange = Number(amount);
+        const safeChange = Number.isFinite(requestedChange)
+            ? Math.max(-3, Math.min(3, Math.round(requestedChange)))
+            : 0;
+        const savedCurrent = Number(charData.currentAffinity);
+        const current = Number.isFinite(savedCurrent)
+            ? Math.max(0, Math.min(100, Math.round(savedCurrent)))
+            : Math.max(0, Math.min(100, Number(charData.maxAffinity) || 0));
+        const value = Math.max(0, Math.min(100, current + safeChange));
+        const actualChange = value - current;
+        const previousMax = Math.max(0, Math.min(100, Number(charData.maxAffinity) || 0));
+        const maxAffinity = Math.max(previousMax, value);
+
+        charData.currentAffinity = value;
+        charData.maxAffinity = maxAffinity;
+        this.save();
+
+        return { value, change: actualChange, maxAffinity };
     }
 
     /**
