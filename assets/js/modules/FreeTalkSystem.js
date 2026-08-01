@@ -44,10 +44,18 @@ function normalizeFreeTalkPromptBlockForCache(content) {
 
 const FREE_TALK_CACHE_BOUNDARY_MARKER = '===CACHE_BOUNDARY===';
 const FREE_TALK_AI_FAILOVER_HTTP_STATUSES = new Set([408, 422, 425, 429]);
+const FREE_TALK_AI_RETRY_HTTP_STATUSES = new Set([408, 425, 429]);
 
 function shouldFailOverFreeTalkAiResponse(response) {
     return !!response && (
         FREE_TALK_AI_FAILOVER_HTTP_STATUSES.has(response.status)
+        || response.status >= 500
+    );
+}
+
+function shouldRetryFreeTalkAiResponse(response) {
+    return !!response && !response.ok && (
+        FREE_TALK_AI_RETRY_HTTP_STATUSES.has(response.status)
         || response.status >= 500
     );
 }
@@ -998,16 +1006,24 @@ class FreeTalkSystem {
                 };
                 const fetchWithTransientRetry = async (endpoint) => {
                     let lastError = null;
-                    for (let attempt = 0; attempt < 2; attempt += 1) {
+                    for (let attempt = 0; attempt < 3; attempt += 1) {
                         try {
-                            return await fetch(endpoint, requestInit);
+                            const response = await fetch(endpoint, requestInit);
+                            if (!shouldRetryFreeTalkAiResponse(response)
+                                || navigator.onLine === false
+                                || attempt >= 2) {
+                                return response;
+                            }
+                            try { await response.body?.cancel?.(); } catch (_) { /* best-effort cleanup */ }
                         } catch (error) {
                             lastError = error;
                             this._assertRequestContext(requestContext);
-                            if (!(error instanceof TypeError) || navigator.onLine === false || attempt >= 1) throw error;
-                            await new Promise(resolve => window.setTimeout(resolve, 400));
-                            this._assertRequestContext(requestContext);
+                            const isTransientFetchError = error instanceof TypeError
+                                || /^(?:Failed to fetch|Load failed|NetworkError)$/i.test(error?.message || '');
+                            if (!isTransientFetchError || navigator.onLine === false || attempt >= 2) throw error;
                         }
+                        await new Promise(resolve => window.setTimeout(resolve, 400 * (attempt + 1)));
+                        this._assertRequestContext(requestContext);
                     }
                     throw lastError;
                 };
@@ -1227,12 +1243,14 @@ class FreeTalkSystem {
                 console.warn('[Cupid FreeTalk] Ignored stale chat response');
                 return;
             }
-            console.error("AI Chat Error:", error);
-
             const langErr = window.GAME_LANG || document.documentElement.lang || 'ko';
 
+            const isTransientTransportFailure = error instanceof TypeError
+                || /^(?:Failed to fetch|Load failed|NetworkError|HTTP (?:408|425|429|5\d\d))$/i.test(error?.message || '');
             const isOfflineTransportFailure = navigator.onLine === false
                 && (error instanceof TypeError || /^(?:Failed to fetch|Load failed|NetworkError)$/i.test(error?.message || ''));
+            if (isTransientTransportFailure) console.warn("AI Chat transport interruption:", error?.message || error);
+            else console.error("AI Chat Error:", error);
             if (typeof window.logCupidError === 'function' && !isOfflineTransportFailure) {
                 window.logCupidError(error, {
                     source: 'cupid-freetalk',

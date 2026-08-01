@@ -717,8 +717,8 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.110') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.110이 아님: ' + loaderVersion);
+    if (loaderVersion !== '2.9.111') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.111이 아님: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');
@@ -742,6 +742,9 @@ try {
         || !soundContent.includes('audio-recovery=')
         || !soundContent.includes('{ bypassCache: true }')) {
         errors.push('[AUDIO_RECOVERY] 디코딩 실패 후 캐시 우회 재다운로드 경로가 없음');
+    }
+    if (!soundContent.includes('optional SFX skipped')) {
+        errors.push('[AUDIO_RECOVERY] transient one-shot SFX failures must remain non-fatal and out of D1');
     }
     if (!swContent.includes("url.searchParams.has('audio-recovery')")
         || !swContent.includes('refreshMediaFromNetwork')
@@ -1706,6 +1709,16 @@ try {
     if (!ftSysContent.includes('fetchWithTransientRetry')
         || !gftContent.includes('fetchWithTransientRetry')) {
         errors.push('[FREETALK_API] game and gallery chat requests must retry transient fetch failures before failover');
+    }
+    if (!ftSysContent.includes('shouldRetryFreeTalkAiResponse')
+        || !gftContent.includes('shouldRetryGalleryAiResponse')
+        || !ftSysContent.includes('attempt < 3')
+        || !gftContent.includes('attempt < 3')) {
+        errors.push('[FREETALK_API] game and gallery chat requests must retry transient HTTP and fetch failures three times');
+    }
+    if (!ftSysContent.includes('AI Chat transport interruption:')
+        || !gftContent.includes('[GalleryFreeTalk] transport interruption:')) {
+        errors.push('[FREETALK_API] transient transport failures must not create duplicate console-error reports');
     }
     if (!ftSysContent.includes('isOfflineTransportFailure')
         || !gftContent.includes('isOfflineTransportFailure')) {
