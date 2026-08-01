@@ -43,6 +43,13 @@ const promptKeys = {
     Teacher: 'Homeroom Teacher',
     Nurse: 'Nurse'
 };
+const sharedCastLabels = {
+    Seoyeon: 'Seoyeon',
+    Yuna: 'Yuna',
+    Dain: 'Dain',
+    Teacher: 'Homeroom Teacher',
+    Nurse: 'School Nurse'
+};
 const galleryIds = {
     Seoyeon: 'seyoun',
     Yuna: 'yuna',
@@ -278,6 +285,17 @@ for (const lang of languages) {
         assertNoEditorPressure(systemPrompt, `[${lang}/${char}] main prompt`);
         assert(!systemPrompt.includes('[CURRENT_PROGRESS]') && !systemPrompt.includes('; turns='),
             `[${lang}/${char}] main prompt still exposes a turn budget`);
+        assert(systemPrompt.includes('[Shared cast knowledge]'),
+            `[${lang}/${char}] main prompt is missing shared cast knowledge`);
+        const sharedCastKnowledge = context.window.getCupidSharedCastKnowledge(lang, char, data);
+        assert(systemPrompt.includes(sharedCastKnowledge),
+            `[${lang}/${char}] main prompt does not contain the complete shared cast block`);
+        assert(!sharedCastKnowledge.includes(`- ${sharedCastLabels[char]}: `),
+            `[${lang}/${char}] main shared cast block redundantly includes the current character`);
+        for (const other of characters.filter(candidate => candidate !== char)) {
+            assert(sharedCastKnowledge.includes(`- ${sharedCastLabels[other]}: `),
+                `[${lang}/${char}] main shared cast block is missing ${sharedCastLabels[other]}`);
+        }
         if (char === 'Seoyeon') mainCacheBaseline = systemPrompt;
     }
 
@@ -377,6 +395,17 @@ for (const lang of languages) {
             `[${lang}/${char}] gallery prompt changed the structural output contract`);
         assertNoEditorPressure(systemPrompt, `[${lang}/${char}] gallery prompt`);
         assert(languageSignals[lang].test(systemPrompt), `[${lang}/${char}] gallery prompt lacks target-language anchors`);
+        assert(systemPrompt.includes('[Shared cast knowledge]'),
+            `[${lang}/${char}] gallery prompt is missing shared cast knowledge`);
+        const gallerySharedCastKnowledge = context.window.getCupidSharedCastKnowledge(lang, id, data);
+        assert(systemPrompt.includes(gallerySharedCastKnowledge),
+            `[${lang}/${char}] gallery prompt does not contain the complete shared cast block`);
+        assert(!gallerySharedCastKnowledge.includes(`- ${sharedCastLabels[char]}: `),
+            `[${lang}/${char}] gallery shared cast block redundantly includes the current character`);
+        for (const other of characters.filter(candidate => candidate !== char)) {
+            assert(gallerySharedCastKnowledge.includes(`- ${sharedCastLabels[other]}: `),
+                `[${lang}/${char}] gallery shared cast block is missing ${sharedCastLabels[other]}`);
+        }
         if (char === 'Seoyeon') galleryCacheBaseline = systemPrompt;
     }
 

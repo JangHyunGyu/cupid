@@ -205,7 +205,12 @@ function normalizePromptCharacterKey(name) {
         "Infirmière": "Nurse",
         "Klassenlehrerin": "Teacher",
         "Lehrerin": "Teacher",
-        "Schulkrankenschwester": "Nurse"
+        "Schulkrankenschwester": "Nurse",
+        "seyoun": "Seoyeon",
+        "yuna": "Yuna",
+        "dain": "Dain",
+        "teacher": "Teacher",
+        "nurse": "Nurse"
     })[name] || name;
 }
 
@@ -241,6 +246,53 @@ function getPromptLookupKeys(effectiveLang, sceneName, displayName, useEnTemplat
     add(internalKey);
     return keys;
 }
+
+const CUPID_SHARED_CAST = Object.freeze([
+    Object.freeze({ id: 'Seoyeon', ko: '서연', en: 'Seoyeon', promptKeys: Object.freeze(['서연', 'Seoyeon']) }),
+    Object.freeze({ id: 'Yuna', ko: '유나', en: 'Yuna', promptKeys: Object.freeze(['유나', 'Yuna']) }),
+    Object.freeze({ id: 'Dain', ko: '다인', en: 'Dain', promptKeys: Object.freeze(['다인', 'Dain']) }),
+    Object.freeze({ id: 'Teacher', ko: '담임선생님', en: 'Homeroom Teacher', promptKeys: Object.freeze(['담임선생님', 'Homeroom Teacher', 'Teacher']) }),
+    Object.freeze({ id: 'Nurse', ko: '보건선생님', en: 'School Nurse', promptKeys: Object.freeze(['보건선생님', 'School Nurse', 'Nurse']) })
+]);
+
+/**
+ * 모든 프리토킹 캐릭터가 공유하는 기본 등장인물 지식.
+ *
+ * 각 엔딩 루트의 연애 결과는 서로 양립하지 않으므로 여기에는 넣지 않는다.
+ * 이름, 역할, 외형, 성격처럼 어느 루트에서도 유지되는 카드만 공유한다.
+ */
+function getCupidSharedCastKnowledge(lang = 'ko', currentName = '', promptData = null) {
+    const effectiveLang = String(lang || 'ko').toLowerCase();
+    const useKo = effectiveLang === 'ko';
+    const data = promptData || getPromptData(effectiveLang);
+    const personalities = data?.personalities || {};
+    const currentId = normalizePromptCharacterKey(currentName);
+    const lines = CUPID_SHARED_CAST
+        .filter(character => character.id !== currentId)
+        .map(character => {
+            const personality = character.promptKeys
+                .map(key => personalities[key])
+                .find(Boolean);
+            if (!personality) return '';
+            const label = useKo ? character.ko : character.en;
+            return `- ${label}: ${personality}`;
+        })
+        .filter(Boolean);
+
+    if (!lines.length) return '';
+    if (useKo) {
+        return `[공유 등장인물 정보]
+- 아래 인물들은 현재 캐릭터와 서로의 기본 정체와 특징을 알고 지내는 같은 학교의 주요 인물입니다.
+- 1:1 장면은 그대로 유지하되, 사용자가 다른 인물을 언급하면 처음 듣는 사람처럼 굴거나 새 정보를 지어내지 말고 아래 사실에 맞춰 자연스럽게 반응합니다.
+${lines.join('\n')}`;
+    }
+    return `[Shared cast knowledge]
+- These people and the current character already know one another's basic identity and traits as members of the same school community.
+- Keep the scene 1:1, but when the user mentions another character, react from these facts instead of treating them as a stranger or inventing new biographical details.
+${lines.join('\n')}`;
+}
+
+window.getCupidSharedCastKnowledge = getCupidSharedCastKnowledge;
 
 const CHARACTER_EXPRESSION_PATHS = Object.freeze({
     Seoyeon: Object.freeze({
@@ -1259,6 +1311,11 @@ function buildSystemPrompt(params) {
     );
     const characterOutfitGuard = getCharacterOutfitGuard(effectiveLang, sceneName, displayName);
     const characterCanonGuard = getCupidCharacterCanonGuard(effectiveLang, sceneName, displayName);
+    const sharedCastKnowledge = getCupidSharedCastKnowledge(
+        effectiveLang,
+        sceneName || displayName,
+        data
+    );
 
     // Language instruction prefix — 모든 비-한국어 언어에 강제 적용
     // 사용자가 어떤 언어로 입력하든 무조건 effectiveLang으로 답해야 함 (이전 대화 히스토리에 한국어가 섞여 있어도 무시)
@@ -1324,6 +1381,7 @@ Voice: ${charStyleGuideline}
 In scene: ${charGeneralInstruction}
 ${characterOutfitGuard}
 ${characterCanonGuard}
+${sharedCastKnowledge}
 Scene: ${compactSceneMode} Treat the user's latest explicit in-world facts and completed outcomes as the current scene without reversal; only the character-specific canon locks above remain exceptions. Stay inside ${aiCharName}. The narration may naturally infer the user's response, emotion, or inner thought from the user's words, actions, and scene context while remaining compatible with any state, choice, consent, or refusal explicitly stated in the current input. Let action and speech follow this character, affinity, and the immediate moment instead of a generic romance pattern. Even when the input is brief or passive, let ${aiCharName} choose the next action, decision, or line that fits the moment; do not stop after only a proposal, preview, or permission check unless a question itself serves the character's purpose. Visible text has no stat/math markers; numeric change only in affinity. Use natural present-day speech.
 ${thirdPersonAdultCameraRule}
 JSON only: {"segments":[{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":0}
@@ -1339,6 +1397,7 @@ ${compactDynamicGuidance}`;
 연기 원칙: ${charGeneralInstruction}
 ${characterOutfitGuard}
 ${characterCanonGuard}
+${sharedCastKnowledge}
 장면: ${compactSceneMode} 사용자가 방금 확정해 쓴 극중 사실과 끝난 사건은 되돌리지 않고 현재 장면으로 받습니다. 위의 캐릭터별 사실 잠금만 예외입니다. 사용자의 말·행동·장면 맥락에서 사용자의 반응·감정·속마음을 자연스럽게 추론하거나 서술할 수 있지만, 이번 입력에서 명확히 밝힌 상태·선택·동의·거절과 충돌시키지는 않습니다. 공용 로맨스 공식보다 이 인물의 성격, 현재 호감도와 바로 앞 순간에 맞춰 행동과 말을 고릅니다. 입력이 짧거나 수동적이어도 ${aiCharName}가 순간에 맞는 다음 행동·결정·대사를 스스로 고르며, 질문 자체가 캐릭터의 목적에 맞는 경우가 아니라면 제안·예고·허락 확인만 남긴 채 멈추지 않습니다. 화면 문장에는 점수나 계산 표식을 쓰지 말고, 호감도 변화만 affinity에 숫자로 기록합니다. 자연스러운 현재 한국어를 쓰세요.
 ${thirdPersonAdultCameraRule}
 JSON만 출력: {"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":0}
@@ -1382,5 +1441,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 };
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.38';
+const PROMPT_VERSION = '2.7.39';
 window.PROMPT_VERSION = PROMPT_VERSION;

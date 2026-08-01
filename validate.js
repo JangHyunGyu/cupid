@@ -717,8 +717,8 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.109') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.109이 아님: ' + loaderVersion);
+    if (loaderVersion !== '2.9.110') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.110이 아님: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');
@@ -734,8 +734,8 @@ try {
         }
     }
     const swContent = fs.readFileSync(path.join(__dirname, 'service-worker.js'), 'utf8');
-    if (!swContent.includes("const CACHE_VERSION = 'cupid-v3.3.54'")) {
-        errors.push('[VERSION_SYNC] service-worker 캐시 버전이 cupid-v3.3.54가 아님');
+    if (!swContent.includes("const CACHE_VERSION = 'cupid-v3.3.55'")) {
+        errors.push('[VERSION_SYNC] service-worker 캐시 버전이 cupid-v3.3.55가 아님');
     }
     const soundContent = fs.readFileSync(path.join(__dirname, 'assets/js/sound.js'), 'utf8');
     if (!soundContent.includes('_isAudioDecodeError')
@@ -1808,11 +1808,11 @@ try {
     const activePromptSources = [promptsContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
-    if (promptVersion !== '2.7.38') {
-        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.38이 아님: ' + promptVersion);
+    if (promptVersion !== '2.7.39') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.39가 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.38') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.38이 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.39') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.39가 아님: ' + galleryPromptVersion);
     }
     const galleryProgressContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-progress.js'), 'utf8');
     const galleryLoaderAffinityContent = fs.readFileSync(path.join(__dirname, 'assets/js/loaders/gallery-loader.js'), 'utf8');
