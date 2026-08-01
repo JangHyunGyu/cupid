@@ -366,10 +366,10 @@ class SoundManager {
                             this._reportSoundLoadError(e, path, true);
                         }
                     } else if (!isBgm) {
-                        // One-shot SFX has no delayed recovery phase. Its three
-                        // fetch attempts are the complete budget, so report the
-                        // final failure once for this load request.
-                        this._reportSoundLoadError(e, path);
+                        // One-shot SFX is optional. After the bounded retry
+                        // budget, fail silently instead of persisting a
+                        // transient CDN/offline interruption as an app error.
+                        console.warn("SoundManager: optional SFX skipped ->", path);
                     }
                     return null;
                 }

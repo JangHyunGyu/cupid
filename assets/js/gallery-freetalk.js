@@ -50,10 +50,18 @@ function normalizeGalleryPromptBlockForCache(content) {
 
 const GALLERY_FREETALK_CACHE_BOUNDARY_MARKER = '===CACHE_BOUNDARY===';
 const GALLERY_AI_FAILOVER_HTTP_STATUSES = new Set([408, 422, 425, 429]);
+const GALLERY_AI_RETRY_HTTP_STATUSES = new Set([408, 425, 429]);
 
 function shouldFailOverGalleryAiResponse(response) {
     return !!response && (
         GALLERY_AI_FAILOVER_HTTP_STATUSES.has(response.status)
+        || response.status >= 500
+    );
+}
+
+function shouldRetryGalleryAiResponse(response) {
+    return !!response && !response.ok && (
+        GALLERY_AI_RETRY_HTTP_STATUSES.has(response.status)
         || response.status >= 500
     );
 }
@@ -1244,16 +1252,24 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 };
                 const fetchWithTransientRetry = async (endpoint) => {
                     let lastError = null;
-                    for (let attempt = 0; attempt < 2; attempt += 1) {
+                    for (let attempt = 0; attempt < 3; attempt += 1) {
                         try {
-                            return await fetch(endpoint, requestInit);
+                            const response = await fetch(endpoint, requestInit);
+                            if (!shouldRetryGalleryAiResponse(response)
+                                || navigator.onLine === false
+                                || attempt >= 2) {
+                                return response;
+                            }
+                            try { await response.body?.cancel?.(); } catch (_) { /* best-effort cleanup */ }
                         } catch (error) {
                             lastError = error;
                             this._assertRequestContext(requestContext);
-                            if (!(error instanceof TypeError) || navigator.onLine === false || attempt >= 1) throw error;
-                            await new Promise(resolve => window.setTimeout(resolve, 400));
-                            this._assertRequestContext(requestContext);
+                            const isTransientFetchError = error instanceof TypeError
+                                || /^(?:Failed to fetch|Load failed|NetworkError)$/i.test(error?.message || '');
+                            if (!isTransientFetchError || navigator.onLine === false || attempt >= 2) throw error;
                         }
+                        await new Promise(resolve => window.setTimeout(resolve, 400 * (attempt + 1)));
+                        this._assertRequestContext(requestContext);
                     }
                     throw lastError;
                 };
@@ -1434,9 +1450,12 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 err.__staleTurnHandled = true;
             }
             if (!err?.__staleTurnHandled) {
-                console.error('[GalleryFreeTalk] API 오류:', err);
+                const isTransientTransportFailure = err instanceof TypeError
+                    || /^(?:Failed to fetch|Load failed|NetworkError|HTTP (?:408|425|429|5\d\d))$/i.test(err?.message || '');
                 const isOfflineTransportFailure = navigator.onLine === false
                     && (err instanceof TypeError || /^(?:Failed to fetch|Load failed|NetworkError)$/i.test(err?.message || ''));
+                if (isTransientTransportFailure) console.warn('[GalleryFreeTalk] transport interruption:', err?.message || err);
+                else console.error('[GalleryFreeTalk] API 오류:', err);
                 if (typeof window.logCupidError === 'function' && !isOfflineTransportFailure) {
                     window.logCupidError(err, {
                         source: 'cupid-gallery-freetalk',
