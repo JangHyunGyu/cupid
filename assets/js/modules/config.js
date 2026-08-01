@@ -51,7 +51,7 @@ const AI_MODEL_ID = "deepseek-v4-flash";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.111";
+const ASSET_VERSION = "2.9.112";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -574,6 +574,12 @@ function enqueueCupidChatLog(entry) {
     return writeCupidChatLogQueue(queue);
 }
 
+function normalizeCupidChatLogAffinity(value) {
+    if (value === null || value === undefined || value === '') return null;
+    const number = Number(value);
+    return Number.isFinite(number) ? Math.round(number) : null;
+}
+
 function makeCupidChatLogEntry({
     userId,
     charId,
@@ -584,10 +590,12 @@ function makeCupidChatLogEntry({
     playerName,
     language,
     appId,
+    affinityChange = null,
+    affinityCurrent = null,
     clientMsgId = ''
 }) {
     const createdAt = new Date().toISOString();
-    return {
+    const entry = {
         userId,
         charId,
         sessionId,
@@ -601,6 +609,11 @@ function makeCupidChatLogEntry({
         clientMsgId: String(clientMsgId || '').trim()
             || `cupid-${Date.now().toString(36)}-${role.charAt(0)}-${Math.random().toString(36).slice(2, 10)}`
     };
+    const normalizedAffinityChange = normalizeCupidChatLogAffinity(affinityChange);
+    const normalizedAffinityCurrent = normalizeCupidChatLogAffinity(affinityCurrent);
+    if (normalizedAffinityChange !== null) entry.affinityChange = normalizedAffinityChange;
+    if (normalizedAffinityCurrent !== null) entry.affinityCurrent = normalizedAffinityCurrent;
+    return entry;
 }
 
 async function postCupidChatLogEntry(entry) {
@@ -720,7 +733,9 @@ async function saveCupidChatLog({
     sessionId = '',
     context = '1:1',
     playerName: _pn,
-    assistantRenderReceipt = null
+    assistantRenderReceipt = null,
+    affinityChange = null,
+    affinityCurrent = null
 }) {
     if (!charId) return;
     const shared = {
@@ -732,8 +747,8 @@ async function saveCupidChatLog({
         language: getCupidLanguage(),
         appId: getCupidAppId()
     };
-    const queueAndFlush = async (role, content) => {
-        const entry = makeCupidChatLogEntry({ ...shared, role, content });
+    const queueAndFlush = async (role, content, affinity = {}) => {
+        const entry = makeCupidChatLogEntry({ ...shared, role, content, ...affinity });
         if (enqueueCupidChatLog(entry)) {
             await flushCupidChatLogQueue();
             return entry;
@@ -757,7 +772,10 @@ async function saveCupidChatLog({
     // 순서 보장: user 먼저 저장 후 assistant 저장 (병렬 시 created_at/id 역전 방지)
     if (userContent) await queueAndFlush('user', userContent);
     if (assistantContent) {
-        const assistantEntry = await queueAndFlush('assistant', assistantContent);
+        const assistantEntry = await queueAndFlush('assistant', assistantContent, {
+            affinityChange,
+            affinityCurrent
+        });
         if (assistantEntry && assistantRenderReceipt) {
             await postCupidChatRenderAck(assistantEntry, assistantRenderReceipt);
         }

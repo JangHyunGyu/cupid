@@ -1197,9 +1197,7 @@ class FreeTalkSystem {
                 if (parsed.expression) {
                     this.applyExpression(parsed.expression, scene);
                 }
-                if (parsed.affinity !== 0) {
-                    this.applyAffinity(parsed.affinity, scene);
-                }
+                const affinityResult = this.applyAffinity(parsed.affinity, scene);
                 this._assertRequestContext(requestContext, data);
                 requestHistory.push({ role: "assistant", content: reply, segments: parsedSegments });
                 this.galleryManager.incrementFreeTalkCount(charKey);
@@ -1217,6 +1215,8 @@ class FreeTalkSystem {
                         assistantContent: reply,
                         sessionId: requestSceneId || '',
                         context: '1:1',
+                        affinityChange: affinityResult?.change,
+                        affinityCurrent: affinityResult?.value,
                         assistantRenderReceipt
                     });
                 }
@@ -1775,16 +1775,25 @@ class FreeTalkSystem {
      * @param {Object} scene - 현재 씬 데이터
      */
     applyAffinity(change, scene) {
-        if (!change || change === 0) return;
-        // 턴당 호감도 범위 제한: -5 ~ +5
-        change = Math.max(-5, Math.min(5, change));
         const charKey = this.charNameMap[scene.name] || scene.name;
-        if (this.stateManager.stats[charKey]) {
-            const newValue = this.stateManager.changeAffinity(charKey, change);
-            this.uiManager.showAffinityChange(change, charKey);
-            this.galleryManager.updateMaxAffinity(charKey, newValue);
-            this.galleryManager.checkAffinityUnlock(charKey, newValue);
+        if (!this.stateManager.stats[charKey]) return null;
+
+        const previousValue = this.stateManager.getAffinity(charKey);
+        const numericChange = Number(change);
+        // 턴당 호감도 범위 제한: -5 ~ +5
+        const requestedChange = Number.isFinite(numericChange)
+            ? Math.max(-5, Math.min(5, Math.round(numericChange)))
+            : 0;
+        if (requestedChange === 0) {
+            return { change: 0, value: previousValue, requestedChange: 0 };
         }
+
+        const newValue = this.stateManager.changeAffinity(charKey, requestedChange);
+        const actualChange = newValue - previousValue;
+        if (actualChange !== 0) this.uiManager.showAffinityChange(actualChange, charKey);
+        this.galleryManager.updateMaxAffinity(charKey, newValue);
+        this.galleryManager.checkAffinityUnlock(charKey, newValue);
+        return { change: actualChange, value: newValue, requestedChange };
     }
 
     /**
