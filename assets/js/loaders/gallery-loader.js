@@ -193,6 +193,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'gallery-data.js',
         'gallery-progress.js',
         // 한국어 대화 예시와 공통 프롬프트 규칙
+        'freetalk-core.js',
         'example-dialogues-ko.js',
         'prompts.js',
 

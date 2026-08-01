@@ -17,6 +17,7 @@ context.globalThis = context;
 vm.createContext(context);
 
 for (const relativePath of [
+    'assets/js/freetalk-core.js',
     'assets/js/prompts.js',
     'assets/js/gallery-freetalk.js',
     'assets/js/modules/FreeTalkSystem.js'

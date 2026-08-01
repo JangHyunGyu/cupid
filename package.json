@@ -1,0 +1,18 @@
+{
+  "name": "cupid-game",
+  "private": true,
+  "version": "2.9.112",
+  "scripts": {
+    "build": "node scripts/sync-build-metadata.cjs --write && node scripts/verify-project-structure.cjs",
+    "build:check": "node scripts/sync-build-metadata.cjs --check && node scripts/verify-project-structure.cjs",
+    "test": "node scripts/test-all.cjs",
+    "test:deterministic": "node validate.js --seed=cupid-ci --no-report && node test_endings.js && node test_i18n_full.js",
+    "test:freetalk": "node --test tests/freetalk-core.test.cjs",
+    "test:e2e": "playwright test",
+    "media:audit": "node scripts/audit-media.cjs",
+    "validate": "node validate.js --seed=cupid-ci --no-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.2"
+  }
+}
