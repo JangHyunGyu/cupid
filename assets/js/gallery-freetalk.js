@@ -1417,7 +1417,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 this._updateExpression(parsed.expression, requestCharId);
             }
             this._assertRequestContext(requestContext, data);
-            this._applyAffinityChange(parsed.affinity, requestCharId);
+            const affinityResult = this._applyAffinityChange(parsed.affinity, requestCharId);
             requestHistory.push({ role: 'assistant', content: displayText });
 
             // 프리토킹 횟수 증가
@@ -1438,6 +1438,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     sessionId: 'gallery-freetalk',
                     context: '1:1',
                     playerName: this.progress.getPlayerName() || '',
+                    affinityChange: affinityResult?.change,
+                    affinityCurrent: affinityResult?.value,
                     assistantRenderReceipt
                 });
             }

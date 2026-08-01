@@ -717,8 +717,8 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.111') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.111이 아님: ' + loaderVersion);
+    if (loaderVersion !== '2.9.112') {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.112가 아님: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');
@@ -1817,6 +1817,7 @@ try {
     const promptsContent = fs.readFileSync(path.join(__dirname, 'assets/js/prompts.js'), 'utf8');
     const ftSysContent = fs.readFileSync(path.join(__dirname, 'assets/js/modules/FreeTalkSystem.js'), 'utf8');
     const gftContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-freetalk.js'), 'utf8');
+    const configContent = fs.readFileSync(path.join(__dirname, 'assets/js/modules/config.js'), 'utf8');
     const dialogueContent = fs.readFileSync(path.join(__dirname, 'assets/js/modules/DialogueSystem.js'), 'utf8');
     const activePromptSources = [promptsContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
@@ -2050,6 +2051,18 @@ try {
     const gallerySendIndex = gftContent.indexOf('async _handleSend');
     const mainCatchIndex = ftSysContent.indexOf('} catch (error)', mainSendIndex);
     const galleryCatchIndex = gftContent.indexOf('} catch (err)', gallerySendIndex);
+    const affinityLogContracts = [
+        ['config', configContent, ['affinityChange = null', 'affinityCurrent = null', 'entry.affinityChange', 'entry.affinityCurrent']],
+        ['main', ftSysContent, ['const affinityResult = this.applyAffinity(parsed.affinity, scene)', 'affinityChange: affinityResult?.change', 'affinityCurrent: affinityResult?.value', 'const actualChange = newValue - previousValue']],
+        ['gallery', gftContent, ['const affinityResult = this._applyAffinityChange(parsed.affinity, requestCharId)', 'affinityChange: affinityResult?.change', 'affinityCurrent: affinityResult?.value']]
+    ];
+    for (const [label, source, required] of affinityLogContracts) {
+        for (const token of required) {
+            if (!source.includes(token)) {
+                errors.push(`[FREETALK_AFFINITY_LOG] ${label} missing Cupid affinity backup contract: ${token}`);
+            }
+        }
+    }
     for (const [label, source, required] of [
         ['main', ftSysContent, [
             '_freeTalkEpoch', '_invalidateFreeTalkContext', '_activeRequestOwner', '_activeRequestContext',
