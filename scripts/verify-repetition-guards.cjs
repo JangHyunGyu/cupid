@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const assert = require('assert');
+const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..');
 
@@ -87,14 +88,15 @@ function verifyGuard(label, guard) {
 
 const mainSource = read('assets/js/modules/FreeTalkSystem.js');
 const gallerySource = read('assets/js/gallery-freetalk.js');
+const context = { window: {}, Set, Object, String, Number, Array, Map, Math, encodeURIComponent };
+vm.createContext(context);
+vm.runInContext(read('assets/js/freetalk-core.js'), context);
+const sharedGuard = context.window.CupidFreeTalkCore.buildRecentExpressionRepetitionGuard;
 
-verifyGuard(
-    'main',
-    loadGuard(mainSource, 'cupidRecentPhraseMatches', 'buildCupidRecentExpressionRepetitionGuard')
-);
-verifyGuard(
-    'gallery',
-    loadGuard(gallerySource, 'galleryRecentPhraseMatches', 'buildGalleryRecentExpressionRepetitionGuard')
-);
+assert(mainSource.includes('CupidFreeTalkCore.buildRecentExpressionRepetitionGuard'),
+    'main free-talk is not wired to the shared repetition guard');
+assert(gallerySource.includes('GalleryFreeTalkCore.buildRecentExpressionRepetitionGuard'),
+    'gallery free-talk is not wired to the shared repetition guard');
+verifyGuard('shared main/gallery core', sharedGuard);
 
-console.log('Verified Cupid repetition guards: one-off and broad gesture reuse stay free; genuine repeats trigger.');
+console.log('Verified shared Cupid repetition guard: one-off and broad gesture reuse stay free; genuine repeats trigger.');

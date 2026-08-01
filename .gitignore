@@ -1,3 +1,8 @@
 # Windows reserved name files (created by PowerShell `> nul` mistake)
 nul
 .env
+node_modules/
+tmp/
+.wrangler/
+test-results/
+playwright-report/

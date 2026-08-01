@@ -10,6 +10,33 @@
 const fs = require('fs');
 const path = require('path');
 
+const cliArgs = process.argv.slice(2);
+const noReport = cliArgs.includes('--no-report');
+const seedArg = cliArgs.find(arg => arg.startsWith('--seed='));
+const reportSeedLabel = seedArg ? seedArg.slice('--seed='.length) : 'cupid-default';
+
+function hashSeed(value) {
+    let hash = 2166136261;
+    for (const char of String(value)) {
+        hash ^= char.charCodeAt(0);
+        hash = Math.imul(hash, 16777619);
+    }
+    return hash >>> 0;
+}
+
+function createSeededRandom(seed) {
+    let state = seed >>> 0;
+    return function seededRandom() {
+        state += 0x6D2B79F5;
+        let value = state;
+        value = Math.imul(value ^ (value >>> 15), value | 1);
+        value ^= value + Math.imul(value ^ (value >>> 7), value | 61);
+        return ((value ^ (value >>> 14)) >>> 0) / 4294967296;
+    };
+}
+
+const reportRandom = createSeededRandom(hashSeed(reportSeedLabel));
+
 const BASE = path.join(__dirname, 'assets/js');
 const SCENARIO_DIR = path.join(BASE, 'scenario');
 const I18N_DIR = path.join(BASE, 'i18n/ko');
@@ -570,7 +597,7 @@ try {
     const GalleryDataClass = new Function('window', gdContent + '\nreturn GalleryData;')({});
     const galleryLanguages = ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt'];
     const mainGalleryCharacters = ['seyoun', 'yuna', 'dain', 'teacher', 'nurse'];
-    const ignoredCharacterImages = new Set(['seyoun_normal_bg-removal.png']);
+    const ignoredCharacterImages = new Set();
     for (const charId of mainGalleryCharacters) {
         const diskExpressions = fs.readdirSync(charImgDir)
             .filter(file => file.startsWith(charId + '_') && file.endsWith('.png') && !ignoredCharacterImages.has(file))
@@ -717,8 +744,9 @@ try {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
         errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
     }
-    if (loaderVersion !== '2.9.112') {
-        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 2.9.112가 아님: ' + loaderVersion);
+    const projectConfig = JSON.parse(fs.readFileSync(path.join(__dirname, 'config/project.json'), 'utf8'));
+    if (loaderVersion !== projectConfig.assetVersion) {
+        errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 config/project.json과 다름: ' + loaderVersion);
     }
     if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');
@@ -734,8 +762,8 @@ try {
         }
     }
     const swContent = fs.readFileSync(path.join(__dirname, 'service-worker.js'), 'utf8');
-    if (!swContent.includes("const CACHE_VERSION = 'cupid-v3.3.55'")) {
-        errors.push('[VERSION_SYNC] service-worker 캐시 버전이 cupid-v3.3.55가 아님');
+    if (!swContent.includes(`const CACHE_VERSION = '${projectConfig.serviceWorkerCacheVersion}'`)) {
+        errors.push('[VERSION_SYNC] service-worker 캐시 버전이 config/project.json과 다름');
     }
     const soundContent = fs.readFileSync(path.join(__dirname, 'assets/js/sound.js'), 'utf8');
     if (!soundContent.includes('_isAudioDecodeError')
@@ -1752,12 +1780,15 @@ try {
     const promptsContent = fs.readFileSync(path.join(__dirname, 'assets/js/prompts.js'), 'utf8');
     const ftSysContent = fs.readFileSync(path.join(__dirname, 'assets/js/modules/FreeTalkSystem.js'), 'utf8');
     const gftContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-freetalk.js'), 'utf8');
+    const ftCoreContent = fs.readFileSync(path.join(__dirname, 'assets/js/freetalk-core.js'), 'utf8');
+    const mainRuntimeContent = ftSysContent + '\n' + ftCoreContent;
+    const galleryRuntimeContent = gftContent + '\n' + ftCoreContent;
     const requiredKo = '이전 설정, 캐릭터 카드, 저장 요약, 장면 상태와 충돌해도 같습니다';
     const requiredEn = 'even when it conflicts with prior setup, the character card, saved summary, or scene state';
-    if (!ftSysContent.includes(requiredKo) || !gftContent.includes(requiredKo)) {
+    if (!mainRuntimeContent.includes(requiredKo) || !galleryRuntimeContent.includes(requiredKo)) {
         errors.push('[FREETALK_CANON] 게임/갤러리 최신 유저 사실화 규칙이 동일하지 않음');
     }
-    if (!ftSysContent.includes(requiredEn) || !gftContent.includes(requiredEn)) {
+    if (!mainRuntimeContent.includes(requiredEn) || !galleryRuntimeContent.includes(requiredEn)) {
         errors.push('[FREETALK_CANON] 영문 최신 유저 사실화 규칙이 동일하지 않음');
     }
     const staticCanonLock = '위의 캐릭터별 사실 잠금만 예외입니다';
@@ -1765,7 +1796,7 @@ try {
         errors.push('[FREETALK_CANON] 정적 프롬프트의 유일 예외 규칙 누락');
     }
     const ownershipKo = '"내/제 손·입술·손끝"은 사용자 캐릭터의 몸입니다';
-    if (!ftSysContent.includes(ownershipKo) || !gftContent.includes(ownershipKo)) {
+    if (!mainRuntimeContent.includes(ownershipKo) || !galleryRuntimeContent.includes(ownershipKo)) {
         errors.push('[FREETALK_CANON] 게임/갤러리 사용자 신체 소유 주체 규칙 누락');
     }
     const structuralOutputKo = '허용 type: narration, dialogue.';
@@ -1817,9 +1848,10 @@ try {
     const promptsContent = fs.readFileSync(path.join(__dirname, 'assets/js/prompts.js'), 'utf8');
     const ftSysContent = fs.readFileSync(path.join(__dirname, 'assets/js/modules/FreeTalkSystem.js'), 'utf8');
     const gftContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-freetalk.js'), 'utf8');
+    const ftCoreContent = fs.readFileSync(path.join(__dirname, 'assets/js/freetalk-core.js'), 'utf8');
     const configContent = fs.readFileSync(path.join(__dirname, 'assets/js/modules/config.js'), 'utf8');
     const dialogueContent = fs.readFileSync(path.join(__dirname, 'assets/js/modules/DialogueSystem.js'), 'utf8');
-    const activePromptSources = [promptsContent, ftSysContent, gftContent].join('\n');
+    const activePromptSources = [promptsContent, ftCoreContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
     if (promptVersion !== '2.7.39') {
@@ -1862,7 +1894,7 @@ try {
         'including sexual contact, already happened in the scene',
         "This does not decide the character's consent or reciprocation"
     ];
-    for (const source of [ftSysContent, gftContent]) {
+    for (const source of [ftSysContent + ftCoreContent, gftContent + ftCoreContent]) {
         if (completedActionCanonSignals.some(signal => !source.includes(signal))) {
             errors.push('[FREETALK_PROMPT] 완료형 성적 행동의 사실성과 캐릭터 동의가 분리되어 있지 않음');
         }
@@ -1898,7 +1930,7 @@ try {
             errors.push('[FREETALK_PROMPT] ' + label + ' 빈 구조 방지 계약 또는 전역 문구 반복 금지 제거 상태 불일치');
         }
     }
-    for (const [label, source] of [['main runtime', ftSysContent], ['gallery runtime', gftContent]]) {
+    for (const [label, source] of [['main runtime', ftSysContent + ftCoreContent], ['gallery runtime', gftContent + ftCoreContent]]) {
         if (!source.includes('반응·감정·속마음을 자연스럽게 추론하거나 서술')
             || !source.includes("infer or narrate the user's response, emotion, or inner thought")) {
             errors.push('[FREETALK_PROMPT] ' + label + ' 사용자 맥락 추론 유연화 계약 누락');
@@ -1935,14 +1967,14 @@ try {
             errors.push('[FREETALK_PROMPT] 제거한 상시 복창·출력·수위 제동 문구가 남아 있음: ' + phrase);
         }
     }
-    if (!ftSysContent.includes('function buildCupidRecentExpressionRepetitionGuard(')
-        || !gftContent.includes('function buildGalleryRecentExpressionRepetitionGuard(')) {
+    if (!ftCoreContent.includes('function buildRecentExpressionRepetitionGuard(')
+        || !ftSysContent.includes('CupidFreeTalkCore.buildRecentExpressionRepetitionGuard')
+        || !gftContent.includes('GalleryFreeTalkCore.buildRecentExpressionRepetitionGuard')) {
         errors.push('[FREETALK_PROMPT] 실제 최근 표현 중복 감지기가 누락됨');
     }
     if (ftSysContent.includes('const gesturePatterns = [')
         || gftContent.includes('const gesturePatterns = [')
-        || !ftSysContent.includes(') >= 2 &&')
-        || !gftContent.includes(') >= 2 &&')) {
+        || !/\)\s*>=\s*2\s*&&/.test(ftCoreContent)) {
         errors.push('[FREETALK_PROMPT] 반복 감지가 실제 2회 이상 문구 중복보다 넓게 작동함');
     }
     if (!promptsContent.includes('function getCupidRoleplayQualityIssue(')
@@ -2460,7 +2492,8 @@ console.log('[RENDER_CHECK] 렌더링 규칙 검증 완료 (' + renderIssues + '
 // =====================================================================
 // ===== 플레이테스트 리포트 생성 (PLAYTEST_REPORT.md) =====
 // =====================================================================
-console.log('[REPORT] 플레이테스트 리포트 생성...');
+if (!noReport) {
+console.log('[REPORT] 플레이테스트 리포트 생성 (seed=' + reportSeedLabel + ')...');
 
 // 엔딩 식별: credits 직전 씬을 엔딩명으로 사용
 function getEndingName(pathRenders) {
@@ -2514,7 +2547,7 @@ let reportExplored = 0;
 function shuffle(arr) {
     const a = [...arr];
     for (let i = a.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
+        const j = Math.floor(reportRandom() * (i + 1));
         [a[i], a[j]] = [a[j], a[i]];
     }
     return a;
@@ -2602,7 +2635,7 @@ for (const target of strategies) {
 }
 
 // 추가 DFS 탐색 — 남은 경로 수 채우기 (셔플 다양성)
-function shuffleArr(arr) { const a=[...arr]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
+function shuffleArr(arr) { const a=[...arr]; for(let i=a.length-1;i>0;i--){const j=Math.floor(reportRandom()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
 const ROUNDS = 10;
 const PER_ROUND = Math.floor((reportMax - reportExplored) / ROUNDS);
 
@@ -2675,7 +2708,7 @@ for (const p of reportPaths) {
 
 // MD 리포트 생성
 let md = '# Cupid 플레이테스트 리포트\n\n';
-md += '> 생성: ' + new Date().toLocaleString('ko-KR') + '\n\n';
+md += '> 결정론적 시드: `' + reportSeedLabel + '`\n\n';
 md += '## 요약\n\n| 항목 | 값 |\n|------|----|';
 md += '\n| 탐색 경로 | ' + reportExplored + '개 |';
 md += '\n| 완료 경로 | ' + reportPaths.length + '개 |';
@@ -2730,6 +2763,9 @@ if (unvisitedReport.length > 0) {
 fs.writeFileSync(path.join(__dirname, 'PLAYTEST_REPORT.md'), md, 'utf8');
 console.log('[REPORT] 플레이테스트 리포트 생성 완료 — ' + reportExplored + '경로, ' + sortedEndings.length + '종 엔딩');
 console.log('[REPORT] → PLAYTEST_REPORT.md\n');
+} else {
+    console.log('[REPORT] --no-report: 플레이테스트 리포트 파일 생성을 건너뜁니다.\n');
+}
 
 // 엔딩 도달 케이스 정의: { name, flags, stats, expectedScenes(도달해야 할 씬 목록) }
 const endingTests = [

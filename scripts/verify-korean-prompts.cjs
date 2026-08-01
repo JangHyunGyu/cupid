@@ -102,6 +102,7 @@ function createPromptRuntime() {
     context.globalThis = context;
     vm.createContext(context);
     for (const relativePath of [
+        'assets/js/freetalk-core.js',
         'assets/js/example-dialogues-ko.js',
         'assets/js/prompts.js',
         'assets/js/gallery-freetalk.js',

@@ -188,6 +188,7 @@
         'loaders/i18n-loader.js',
 
         // AI 캐릭터 프롬프트
+        'freetalk-core.js',
         'example-dialogues-ko.js',
         'prompts.js',
 
