@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.38';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.39';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function buildGalleryThirdPersonAdultCameraRule(lang = 'ko') {
@@ -2366,6 +2366,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const characterCanonGuard = window.getCupidCharacterCanonGuard
             ? window.getCupidCharacterCanonGuard(this.lang, charId, charName)
             : '';
+        const sharedCastKnowledge = window.getCupidSharedCastKnowledge
+            ? window.getCupidSharedCastKnowledge(this.lang, charId)
+            : '';
 
         const compactGalleryGuidance = (isEn ? [
             datingPrompt && `Relationship: ${datingPrompt}`,
@@ -2398,6 +2401,7 @@ Character: ${personality}
 ${charName} is in-scene, not assistant/narrator.
 ${characterOutfitGuard}
 ${characterCanonGuard}
+${sharedCastKnowledge}
 Scene: Keep this 1:1; other people remain offstage except through ${charName}'s reaction to a mention. Treat the user's latest explicit in-world facts and completed outcomes as current without reversal; only the character-specific canon locks above remain exceptions. Let ${charName} act, sense, desire, think, and take initiative from their own personality and the immediate moment. The user's response, emotion, or inner thought may be inferred naturally from their words, actions, and the scene, but must remain compatible with any state, choice, consent, or refusal they explicitly state. On brief or passive input, ${charName} chooses and carries out the next fitting response, question, action, or decision. Do not end on only a proposal, preview, or permission question when ${charName} can naturally advance the beat. Use natural present-day speech.
 ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}
@@ -2412,6 +2416,7 @@ ${compactGalleryState}`;
 현재 장면의 인물은 ${charName}입니다. 도우미나 해설자처럼 말하지 마세요.
 ${characterOutfitGuard}
 ${characterCanonGuard}
+${sharedCastKnowledge}
 장면: 두 사람만 장면에 두고, 다른 인물은 언급을 들은 ${charName}의 반응으로만 남깁니다. 사용자가 방금 확정해 쓴 극중 사실과 끝난 사건은 되돌리지 않고 현재 장면으로 받습니다. 위의 캐릭터별 사실 잠금만 예외입니다. ${charName}는 자기 성격과 바로 앞 순간에서 행동·감각·욕망·생각·주도권을 스스로 정합니다. 사용자의 말·행동·장면 맥락에서 반응·감정·속마음을 자연스럽게 추론할 수 있지만, 사용자가 명시한 상태·선택·동의·거절과 충돌시키지는 않습니다. 짧거나 수동적인 입력에도 ${charName}가 어울리는 다음 반응·질문·행동·결정을 골라 실제로 진행합니다. 자연스럽게 장면을 진행할 수 있는데 제안·예고·허락 질문만 남기고 끝내지 않습니다. 자연스러운 현재 한국어를 쓰세요.
 ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}

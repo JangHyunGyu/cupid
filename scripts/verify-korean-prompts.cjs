@@ -4,11 +4,11 @@ const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..');
 const CHARACTERS = [
-    { key: 'Seoyeon', mainName: '서연', galleryId: 'seyoun', cardSignal: '학생회장' },
-    { key: 'Yuna', mainName: '유나', galleryId: 'yuna', cardSignal: '영구 문신' },
-    { key: 'Dain', mainName: '다인', galleryId: 'dain', cardSignal: '배구부 선수' },
-    { key: 'Teacher', mainName: '담임', galleryId: 'teacher', cardSignal: '담임 교사' },
-    { key: 'Nurse', mainName: '보건', galleryId: 'nurse', cardSignal: '보건 교사' }
+    { key: 'Seoyeon', mainName: '서연', sharedName: '서연', galleryId: 'seyoun', cardSignal: '학생회장' },
+    { key: 'Yuna', mainName: '유나', sharedName: '유나', galleryId: 'yuna', cardSignal: '영구 문신' },
+    { key: 'Dain', mainName: '다인', sharedName: '다인', galleryId: 'dain', cardSignal: '배구부 선수' },
+    { key: 'Teacher', mainName: '담임', sharedName: '담임선생님', galleryId: 'teacher', cardSignal: '담임 교사' },
+    { key: 'Nurse', mainName: '보건', sharedName: '보건선생님', galleryId: 'nurse', cardSignal: '보건 교사' }
 ];
 const REQUIRED_BLOCKS = [
     '[한국어 원문체]',
@@ -200,6 +200,26 @@ function verifyMainAndGalleryPrompts(context) {
         assert(!galleryPrompt.includes('[성적]'), `[gallery/${character.key}] injected the adult example`);
         assert(galleryPrompt.includes('현재 장면의 인물은'), `[gallery/${character.key}] missing the in-world role rule`);
         assert(galleryPrompt.includes('연인 관계:'), `[gallery/${character.key}] missing the relationship label`);
+
+        const sharedCastKnowledge = context.window.getCupidSharedCastKnowledge(
+            'ko',
+            character.galleryId,
+            promptData
+        );
+        for (const prompt of [mainPrompt, galleryPrompt]) {
+            assert(prompt.includes('[공유 등장인물 정보]'),
+                `[${character.key}] missing shared cast knowledge`);
+            assert(prompt.includes(sharedCastKnowledge),
+                `[${character.key}] prompt does not contain the complete shared cast block`);
+            assert(!sharedCastKnowledge.includes(`- ${character.sharedName}: `),
+                `[${character.key}] shared cast block redundantly includes the current character`);
+            for (const other of CHARACTERS.filter(candidate => candidate.key !== character.key)) {
+                assert(sharedCastKnowledge.includes(`- ${other.sharedName}: `),
+                    `[${character.key}] shared cast block is missing ${other.sharedName}`);
+                assert(sharedCastKnowledge.includes(other.cardSignal),
+                    `[${character.key}] shared cast block is missing ${other.sharedName}'s character facts`);
+            }
+        }
     }
 
     const mainDynamicVariant = context.window.buildSystemPrompt({
