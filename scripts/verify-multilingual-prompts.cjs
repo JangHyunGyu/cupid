@@ -74,6 +74,14 @@ const adultVocalizationSignals = {
     de: '[Stimme in einer Erwachsenenszene]',
     pt: '[Voz em uma cena adulta]'
 };
+const emotionalRangeSignals = {
+    en: '[Emotional Range and Aftermath]',
+    es: '[Amplitud y huella emocional]',
+    ja: '[感情の振れ幅と余韻]',
+    fr: '[Amplitude et retombée émotionnelles]',
+    de: '[Emotionale Spannweite und Nachwirkung]',
+    pt: '[Amplitude e consequência emocional]'
+};
 const removedEditorPressure = [
     'answer in polished target-language prose',
     'silently rewrite every dialogue and narration line',
@@ -294,6 +302,8 @@ for (const lang of languages) {
         assertNoEditorPressure(systemPrompt, `[${lang}/${char}] main prompt`);
         assert(systemPrompt.includes(adultVocalizationSignals[lang]),
             `[${lang}/${char}] main prompt is missing the conditional adult vocalization rule`);
+        assert(systemPrompt.includes(emotionalRangeSignals[lang]),
+            `[${lang}/${char}] main prompt is missing the emotional-range rule`);
         assert(!systemPrompt.includes('[CURRENT_PROGRESS]') && !systemPrompt.includes('; turns='),
             `[${lang}/${char}] main prompt still exposes a turn budget`);
         assert(systemPrompt.includes('[Shared cast knowledge]'),
@@ -407,6 +417,8 @@ for (const lang of languages) {
         assertNoEditorPressure(systemPrompt, `[${lang}/${char}] gallery prompt`);
         assert(systemPrompt.includes(adultVocalizationSignals[lang]),
             `[${lang}/${char}] gallery prompt is missing the conditional adult vocalization rule`);
+        assert(systemPrompt.includes(emotionalRangeSignals[lang]),
+            `[${lang}/${char}] gallery prompt is missing the emotional-range rule`);
         assert(languageSignals[lang].test(systemPrompt), `[${lang}/${char}] gallery prompt lacks target-language anchors`);
         assert(systemPrompt.includes('[Shared cast knowledge]'),
             `[${lang}/${char}] gallery prompt is missing shared cast knowledge`);

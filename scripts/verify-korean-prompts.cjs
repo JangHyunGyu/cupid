@@ -146,6 +146,13 @@ function assertCommonKoreanPrompt(prompt, label) {
         `${label} still contains an always-on input recap prohibition`);
     assert(prompt.includes('===CACHE_BOUNDARY==='), `${label} is missing the cache boundary`);
     assert(prompt.includes('현재 상태:'), `${label} is missing the Korean state label`);
+    assert(stablePrompt.includes('[감정의 파동]'), `${label} stable prefix is missing the emotional-range rule`);
+    assert(stablePrompt.includes('감정은 캐릭터다운 말투와 행동, 표정·호흡·몸의 긴장뿐 아니라 판단과 다음 선택까지 바꿉니다.'),
+        `${label} still allows emotional events to pass without changing behavior or choices`);
+    assert(stablePrompt.includes('과묵한 인물의 긴 침묵과 짧아진 말, 냉정한 인물에게 생긴 통제의 균열도 강한 감정입니다.'),
+        `${label} emotional intensity no longer preserves reserved character voices`);
+    assert(stablePrompt.includes('매 답변을 감정의 절정으로 만들지는 않습니다.'),
+        `${label} emotional-range rule can still force constant melodrama`);
     assert(prompt.includes('[성인 장면의 목소리]'), `${label} is missing the conditional adult vocalization rule`);
     assert(prompt.includes('몸이 통제를 놓는 순간에는 과장될 만큼 크고 거친 신음도 허용합니다.'),
         `${label} still suppresses strong character vocalization at high stimulation`);

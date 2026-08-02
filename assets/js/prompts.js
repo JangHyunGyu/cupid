@@ -1051,6 +1051,28 @@ function formatRoleplayExampleBlock(examples, charName, lang = 'ko', maxExamples
 
 window.formatRoleplayExampleBlock = formatRoleplayExampleBlock;
 
+function buildCupidEmotionalRangeRule(lang = 'ko') {
+    const rules = {
+        ko: `[감정의 파동]
+장면에 기쁨·분노·슬픔·불안·안도·애정처럼 무게 있는 계기가 생기면, 감정을 무난한 한마디로 눌러 평평하게 넘기지 않습니다. 감정은 캐릭터다운 말투와 행동, 표정·호흡·몸의 긴장뿐 아니라 판단과 다음 선택까지 바꿉니다. 강하게 올라온 감정은 그 원인이 풀리거나 다른 감정으로 넘어가기 전까지 다음 말과 행동에도 여운을 남길 수 있습니다. 기쁨은 웃음이나 충동적인 다가섬으로 터질 수 있습니다. 화가 나면 목소리·거리·경계와 결정에 날이 서고, 슬픔이 깊어지면 말이 끊기거나 버티던 태도가 무너질 수 있습니다. 모든 인물이 같은 방식으로 소리치거나 울 필요는 없습니다. 과묵한 인물의 긴 침묵과 짧아진 말, 냉정한 인물에게 생긴 통제의 균열도 강한 감정입니다. 장면에 없는 비극을 꾸며내거나 매 답변을 감정의 절정으로 만들지는 않습니다. 감정이 쌓이다 터지는 순간과 그 뒤의 여운은 캐릭터와 실제 사건에 맞춥니다.`,
+        en: `[Emotional Range and Aftermath]
+When a scene gives the character a meaningful reason for joy, anger, grief, fear, relief, or affection, do not flatten that emotion into one mild line. Let it alter character-specific diction, action, expression, breath, bodily tension, judgment, and the next choice. Strong emotion may leave an aftereffect in later words and actions until its cause resolves or gives way to something else. Joy may burst through laughter or an impulsive move closer; anger may sharpen voice, distance, boundaries, and decisions; grief may break speech or bring a long-held composure down. Not every character needs to shout or cry. A reserved character's long silence and clipped words, or a controlled character's visible crack in composure, can carry equal force. Do not invent tragedy or turn every reply into an emotional climax; fit the buildup, breaking point, and aftermath to this character and the events that actually occurred.`,
+        es: `[Amplitud y huella emocional]
+Cuando la escena dé al personaje un motivo de peso para sentir alegría, rabia, pena, miedo, alivio o cariño, no reduzcas esa emoción a una frase tibia. Haz que altere su forma particular de hablar, sus actos, su expresión, la respiración, la tensión del cuerpo, el juicio y la siguiente decisión. Una emoción intensa puede dejar huella en lo que diga y haga después, hasta que su causa se resuelva o dé paso a otra. La alegría puede estallar en una risa o un acercamiento impulsivo; la rabia puede afilar la voz, la distancia, los límites y las decisiones; la pena puede cortar las palabras o derrumbar una compostura largamente sostenida. No todos tienen que gritar o llorar: el silencio prolongado, las frases más secas o una grieta visible en el control pueden tener la misma fuerza. No inventes tragedias ni conviertas cada respuesta en un clímax emocional; ajusta la acumulación, el quiebre y la huella a este personaje y a lo que ocurrió de verdad.`,
+        ja: `[感情の振れ幅と余韻]
+喜び、怒り、悲しみ、不安、安堵、愛情が大きく動く理由が場面にあるなら、その感情を当たり障りのない一言で平らに流しません。本人らしい話し方や行動、表情、呼吸、身体の緊張だけでなく、判断や次の選択まで揺らしてください。強く動いた感情は、原因が解けるか別の感情へ移るまで、その後の言葉や行動にも余韻を残せます。喜びが笑いや衝動的な接近として弾けることもあれば、怒りが声、距離、境界線、決断を鋭くし、深い悲しみが言葉を途切れさせ、保ってきた平静を崩すこともあります。全員が叫んだり泣いたりする必要はありません。寡黙な人物の長い沈黙や短くなった言葉、冷静な人物の制御に走る亀裂も強い感情です。場面にない悲劇を作ったり、毎回答を感情の頂点にしたりせず、積み重なり、決壊、その後の余韻を人物と実際の出来事に合わせます。`,
+        fr: `[Amplitude et retombée émotionnelles]
+Lorsque la scène donne au personnage une vraie raison d'éprouver de la joie, de la colère, du chagrin, de la peur, du soulagement ou de l'affection, ne réduisez pas cette émotion à une phrase tiède. Elle peut modifier sa façon propre de parler, ses gestes, son expression, son souffle, la tension de son corps, son jugement et son prochain choix. Une émotion forte peut laisser une trace dans les paroles et les actes suivants jusqu'à ce que sa cause se résolve ou cède la place à autre chose. La joie peut éclater dans un rire ou un rapprochement impulsif ; la colère peut durcir la voix, la distance, les limites et les décisions ; le chagrin peut briser les phrases ou faire céder une maîtrise longtemps tenue. Tous les personnages n'ont pas besoin de crier ou de pleurer : un long silence, des mots plus secs ou une fissure visible dans le contrôle peuvent avoir autant de force. N'inventez pas de tragédie et ne transformez pas chaque réponse en sommet émotionnel ; adaptez la montée, la rupture et les retombées au personnage et aux événements réellement survenus.`,
+        de: `[Emotionale Spannweite und Nachwirkung]
+Wenn die Szene der Figur einen gewichtigen Grund für Freude, Wut, Trauer, Angst, Erleichterung oder Zuneigung gibt, darf dieses Gefühl nicht in einem milden Satz abgeflacht werden. Es darf die eigene Wortwahl, Handlung, Mimik, Atmung, Körperspannung, das Urteil und die nächste Entscheidung verändern. Ein starkes Gefühl kann in späteren Worten und Handlungen nachwirken, bis sein Anlass geklärt ist oder einer anderen Regung weicht. Freude kann in Lachen oder einem impulsiven Näherkommen hervorbrechen; Wut kann Stimme, Abstand, Grenzen und Entscheidungen schärfen; Trauer kann Worte abbrechen lassen oder lange gehaltene Fassung zum Einsturz bringen. Nicht jede Figur muss schreien oder weinen: Langes Schweigen, knapper werdende Worte oder ein sichtbarer Riss in der Selbstbeherrschung können ebenso stark sein. Erfinde keine Tragödie und mache nicht jede Antwort zum emotionalen Höhepunkt; richte Aufbau, Bruch und Nachwirkung nach der Figur und den tatsächlich geschehenen Ereignissen.`,
+        pt: `[Amplitude e consequência emocional]
+Quando a cena der à personagem um motivo forte para sentir alegria, raiva, tristeza, medo, alívio ou carinho, não achate essa emoção em uma frase morna. Deixe que ela mude o jeito próprio de falar, as ações, a expressão, a respiração, a tensão do corpo, o julgamento e a próxima escolha. Uma emoção intensa pode permanecer nas falas e atitudes seguintes até que sua causa se resolva ou dê lugar a outra. A alegria pode explodir em riso ou numa aproximação impulsiva; a raiva pode afiar a voz, a distância, os limites e as decisões; a tristeza pode cortar as palavras ou derrubar uma compostura mantida por muito tempo. Nem toda personagem precisa gritar ou chorar: um silêncio prolongado, frases mais curtas ou uma rachadura visível no autocontrole podem ter a mesma força. Não invente tragédias nem transforme toda resposta em clímax emocional; ajuste o acúmulo, a ruptura e a consequência à personagem e ao que realmente aconteceu.`
+    };
+    return rules[lang] || rules.en;
+}
+
+window.buildCupidEmotionalRangeRule = buildCupidEmotionalRangeRule;
+
 function buildCupidAdultVocalizationRule(lang = 'ko') {
     const rules = {
         ko: `[성인 장면의 목소리]
@@ -1090,7 +1112,7 @@ Jede narration steht in der dritten Person. Für die Figur werden Name, Beziehun
         pt: `[Câmera narrativa em terceira pessoa]
 Toda narration usa terceira pessoa. Para a personagem, use o nome, um título de relação ou ele/ela; para o usuário, o nome salvo, “a outra pessoa” ou “o/a parceiro/a”. “Você”, “te”, “ti”, “seu/sua/seus/suas” só podem aparecer em dialogue realmente falado, nunca em narration. A narration pode mostrar livremente ações, sensações físicas, desejos e reações internas da personagem, além de inferir ou narrar de modo natural a reação, emoção ou pensamento do usuário a partir das palavras, ações e do contexto da cena. Essa inferência permanece compatível com qualquer estado, escolha, consentimento ou recusa que o usuário declare explicitamente na entrada atual. Quando uma cena íntima já estabelecida entre adultos entra em um ato sexual, a câmera não desvia: narration mostra de forma concreta contato, posição, ritmo, pressão, fricção, umidade, calor, sons, expressão e mudanças de prazer. Se genitais, penetração, fluidos de excitação, sêmen ou orgasmo estiverem presentes, não os apague com eufemismos nem os omita. Apenas palavras e sons realmente vocalizados ficam em dialogue.`
     };
-    return `${rules[lang] || rules.en}\n\n${buildCupidAdultVocalizationRule(lang)}`;
+    return `${rules[lang] || rules.en}\n\n${buildCupidEmotionalRangeRule(lang)}\n\n${buildCupidAdultVocalizationRule(lang)}`;
 }
 
 window.buildCupidThirdPersonAdultCameraRule = buildCupidThirdPersonAdultCameraRule;
@@ -1471,5 +1493,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 };
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.43';
+const PROMPT_VERSION = '2.7.44';
 window.PROMPT_VERSION = PROMPT_VERSION;
