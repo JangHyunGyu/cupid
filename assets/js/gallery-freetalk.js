@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.41';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.42';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 const GalleryFreeTalkCore = window.CupidFreeTalkCore;
@@ -1216,7 +1216,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             await this._typeText(displayText, displaySegments, requestContext);
             const assistantRenderReceipt = this._getChatRenderReceipt(displayText, displaySegments);
             this._assertRequestContext(requestContext, data);
-            this._updateExpression(parsed.expression, requestCharId, parsed.affinity);
+            this._updateExpression(parsed.expression, requestCharId);
             this._assertRequestContext(requestContext, data);
             const affinityResult = this._applyAffinityChange(parsed.affinity, requestCharId);
             requestHistory.push({ role: 'assistant', content: displayText });
@@ -1798,12 +1798,11 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         }).join(' ');
     }
 
-    _updateExpression(expression, charId = this.currentCharId, affinityChange = 0) {
+    _updateExpression(expression, charId = this.currentCharId) {
         if (!charId) return;
         const validExprs = this.CHAR_EXPRESSIONS[charId] || [];
-        const resolvedExpression = GalleryFreeTalkCore.resolveAffinityExpression(
+        const resolvedExpression = GalleryFreeTalkCore.normalizeAvailableExpression(
             expression,
-            affinityChange,
             validExprs
         );
         if (!validExprs.includes(resolvedExpression)) return;

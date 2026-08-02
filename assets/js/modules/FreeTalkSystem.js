@@ -1004,7 +1004,7 @@ class FreeTalkSystem {
 
                 // 화면 렌더가 성공한 응답에만 표정과 호감도를 적용한다.
                 this._assertRequestContext(requestContext, data);
-                this.applyExpression(parsed.expression, scene, parsed.affinity);
+                this.applyExpression(parsed.expression, scene);
                 const affinityResult = this.applyAffinity(parsed.affinity, scene);
                 this._assertRequestContext(requestContext, data);
                 requestHistory.push({ role: "assistant", content: reply, segments: parsedSegments });
@@ -1552,16 +1552,14 @@ class FreeTalkSystem {
      * 😊 applyExpression - JSON 필드에서 받은 표정을 캐릭터 이미지에 적용
      * @param {string} exprName - 표정 이름 (예: shy, angry, laugh)
      * @param {Object} scene - 현재 씬 데이터
-     * @param {number} affinityChange - 같은 응답의 호감도 변화량
      */
-    applyExpression(exprName, scene, affinityChange = 0) {
+    applyExpression(exprName, scene) {
         if (!window.CHARACTER_EXPRESSIONS) return;
         const charExprs = typeof getCharacterExpressionSet === 'function'
             ? getCharacterExpressionSet(scene.name)
             : window.CHARACTER_EXPRESSIONS[scene.name];
-        const name = CupidFreeTalkCore.resolveAffinityExpression(
+        const name = CupidFreeTalkCore.normalizeAvailableExpression(
             exprName,
-            affinityChange,
             Object.keys(charExprs || {})
         );
         if (!charExprs || !charExprs[name]) return;

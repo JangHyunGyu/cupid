@@ -42,24 +42,23 @@ test('affinity changes use the shared asymmetric -50 to +5 range', () => {
     assert.match(core.buildAffinityChangeGuidance('ko'), /-21~-50/);
 });
 
-test('expression and affinity direction stay visually consistent', () => {
+test('outward expression remains independent from affinity direction', () => {
     const expressions = ['normal', 'smile', 'shy', 'angry', 'sad', 'worried'];
-    assert.equal(core.resolveAffinityExpression('smile', -3, expressions), 'worried');
-    assert.equal(core.resolveAffinityExpression('smile', -40, expressions), 'angry');
-    assert.equal(core.resolveAffinityExpression('angry', 3, expressions), 'smile');
-    assert.equal(core.resolveAffinityExpression('shy', 2, expressions), 'shy');
-    assert.equal(core.resolveAffinityExpression('worried', -8, expressions), 'worried');
-    assert.equal(core.resolveAffinityExpression('normal', 0, expressions), 'normal');
-    assert.equal(core.resolveAffinityExpression('', -2, ['normal', 'sad']), 'sad');
-    assert.match(core.buildExpressionAffinityGuidance('ko'), /expression/);
+    assert.equal(core.normalizeAvailableExpression('smile', expressions), 'smile');
+    assert.equal(core.normalizeAvailableExpression('sad', expressions), 'sad');
+    assert.equal(core.normalizeAvailableExpression('ANGRY', expressions), 'angry');
+    assert.equal(core.normalizeAvailableExpression('laugh', expressions), '');
+    assert.equal(core.normalizeAvailableExpression('', expressions), '');
+    assert.match(core.buildExpressionAffinityGuidance('ko'), /기계적으로 같은 방향에 맞추지 마세요/);
+    assert.match(core.buildExpressionAffinityGuidance('en'), /Do not mechanically force them in the same direction/);
 });
 
 test('game and gallery affinity paths share the core normalizer', () => {
     assert.match(read('assets/js/modules/FreeTalkSystem.js'), /CupidFreeTalkCore\.normalizeAffinityChange\(change\)/);
     assert.match(read('assets/js/gallery-freetalk.js'), /GalleryFreeTalkCore\.normalizeAffinityChange\(value\)/);
     assert.match(read('assets/js/gallery-progress.js'), /CupidFreeTalkCore\.normalizeAffinityChange\(amount\)/);
-    assert.match(read('assets/js/modules/FreeTalkSystem.js'), /resolveAffinityExpression/);
-    assert.match(read('assets/js/gallery-freetalk.js'), /resolveAffinityExpression/);
+    assert.match(read('assets/js/modules/FreeTalkSystem.js'), /normalizeAvailableExpression/);
+    assert.match(read('assets/js/gallery-freetalk.js'), /normalizeAvailableExpression/);
 });
 
 test('latest-user canon strips URLs and preserves the newest user turn', () => {

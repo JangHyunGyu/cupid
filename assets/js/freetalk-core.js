@@ -34,41 +34,19 @@
     function buildExpressionAffinityGuidance(lang = 'ko') {
         const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
         if (isKo) {
-            return 'expression은 이번 응답에서 실제로 드러난 캐릭터의 감정과 affinity 변화 방향에 맞는 허용 표정 하나를 고르세요. 감점인데 웃음·미소처럼 명백히 밝은 표정을 쓰거나, 가점인데 분노·슬픔처럼 명백히 부정적인 표정을 쓰지 마세요. 0이면 장면의 감정에 가장 자연스러운 표정을 고르세요.';
+            return 'expression은 이번 응답에서 겉으로 실제 드러난 표정, affinity는 관계에 생긴 내적 변화입니다. 둘을 기계적으로 같은 방향에 맞추지 마세요. 감동해서 우는 가점, 상처를 감추려고 웃는 감점처럼 서술과 대사로 납득되는 불일치를 허용하며, 이번 장면에 맞는 허용 표정 하나를 고르세요.';
         }
-        return 'Choose one allowed expression that matches both the emotion visibly shown in this reply and the direction of the affinity change. Do not use an obviously cheerful expression such as laugh or smile for a negative change, or an obviously hostile or sad expression for a positive change. At 0, choose the expression that best fits the scene.';
+        return 'expression is the outward face visibly shown in this reply, while affinity is the internal change in the relationship. Do not mechanically force them in the same direction. Allow a narratively supported mismatch, such as crying from gratitude with positive affinity or smiling to hide hurt with negative affinity, and choose one allowed expression that fits the scene.';
     }
 
-    function resolveAffinityExpression(expression, affinityChange, validExpressions = []) {
+    function normalizeAvailableExpression(expression, validExpressions = []) {
         const valid = new Set(
             (Array.isArray(validExpressions) ? validExpressions : Object.keys(validExpressions || {}))
                 .map(value => String(value || '').toLowerCase())
                 .filter(Boolean)
         );
-        if (valid.size === 0) return '';
-
         const requested = String(expression || '').toLowerCase();
-        const change = normalizeAffinityChange(affinityChange);
-        const positiveExpressions = ['laugh', 'smile', 'shy', 'shy2', 'flushed', 'active'];
-        const negativeExpressions = ['angry', 'sad', 'cry', 'worried', 'pout', 'bored', 'sweat'];
-        const requestedIsValid = valid.has(requested);
-        const requestedIsPositive = positiveExpressions.includes(requested);
-        const requestedIsNegative = negativeExpressions.includes(requested);
-
-        if (requestedIsValid
-            && !(change < 0 && requestedIsPositive)
-            && !(change > 0 && requestedIsNegative)) {
-            return requested;
-        }
-
-        const preferences = change > 0
-            ? [...positiveExpressions, 'normal']
-            : change < 0
-                ? (change <= -21
-                    ? ['angry', 'sad', 'cry', 'worried', 'pout', 'bored', 'sweat', 'normal']
-                    : ['worried', 'pout', 'sad', 'bored', 'sweat', 'angry', 'cry', 'normal'])
-                : ['normal'];
-        return preferences.find(name => valid.has(name)) || requested || [...valid][0];
+        return requested && valid.has(requested) ? requested : '';
     }
 
     function normalizePromptBlockForCache(content) {
@@ -300,7 +278,7 @@ Latest user: """${excerpt}"""
         normalizeAffinityChange,
         buildAffinityChangeGuidance,
         buildExpressionAffinityGuidance,
-        resolveAffinityExpression,
+        normalizeAvailableExpression,
         normalizePromptBlockForCache,
         shouldFailOverAiResponse,
         shouldRetryAiResponse,

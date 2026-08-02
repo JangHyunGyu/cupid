@@ -1445,5 +1445,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 };
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.41';
+const PROMPT_VERSION = '2.7.42';
 window.PROMPT_VERSION = PROMPT_VERSION;

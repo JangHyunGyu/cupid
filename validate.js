@@ -1854,11 +1854,11 @@ try {
     const activePromptSources = [promptsContent, ftCoreContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
-    if (promptVersion !== '2.7.41') {
-        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.41이 아님: ' + promptVersion);
+    if (promptVersion !== '2.7.42') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.42가 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.41') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.41이 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.42') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.42가 아님: ' + galleryPromptVersion);
     }
     const galleryProgressContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-progress.js'), 'utf8');
     const galleryLoaderAffinityContent = fs.readFileSync(path.join(__dirname, 'assets/js/loaders/gallery-loader.js'), 'utf8');
@@ -2154,11 +2154,12 @@ try {
         || !(galleryRenderIndex >= 0 && galleryExpressionIndex > galleryRenderIndex)) {
         errors.push('[FREETALK_ERROR] 렌더 실패 전에 표정 또는 호감도를 적용하는 경로가 남아 있음');
     }
-    if (!ftCoreContent.includes('resolveAffinityExpression')
+    if (!ftCoreContent.includes('normalizeAvailableExpression')
         || !ftCoreContent.includes('buildExpressionAffinityGuidance')
-        || !ftSysContent.includes('CupidFreeTalkCore.resolveAffinityExpression')
-        || !gftContent.includes('GalleryFreeTalkCore.resolveAffinityExpression')) {
-        errors.push('[FREETALK_EXPRESSION] 호감도 증감과 표정의 공용 일관성 계약이 누락됨');
+        || !ftCoreContent.includes('기계적으로 같은 방향에 맞추지 마세요')
+        || !ftSysContent.includes('CupidFreeTalkCore.normalizeAvailableExpression')
+        || !gftContent.includes('GalleryFreeTalkCore.normalizeAvailableExpression')) {
+        errors.push('[FREETALK_EXPRESSION] 표정 유효성 또는 호감도와의 독립 판정 계약이 누락됨');
     }
     if (ftSysContent.includes('reply = this.processExpressionTags(reply, scene)')
         || ftSysContent.includes('reply = this.processStatsTags(reply, scene)')) {

@@ -57,7 +57,7 @@ test('gallery runtime includes the shared free-talk core', async ({ page }) => {
     await expect(page.locator('#gallery-freetalk-overlay')).toHaveCount(1);
 });
 
-test('game and gallery avatars stay coherent with affinity direction', async ({ page }) => {
+test('game and gallery preserve valid outward expressions independently of affinity', async ({ page }) => {
     await page.goto('/game.html');
     await waitForRuntime(page);
     const gameAvatar = await page.evaluate(() => {
@@ -67,12 +67,11 @@ test('game and gallery avatars stay coherent with affinity direction', async ({ 
         window.FreeTalkSystem.prototype.applyExpression.call(
             { uiManager: { charSlots: { center: slot } } },
             'smile',
-            { name: 'Yuna' },
-            -40
+            { name: 'Yuna' }
         );
         return image.getAttribute('src');
     });
-    expect(gameAvatar).toContain('yuna_angry.png');
+    expect(gameAvatar).toContain('yuna_smile.png');
 
     await page.goto('/gallery.html');
     await page.waitForFunction(() => window.GalleryFreeTalk && window.CupidFreeTalkCore);
@@ -88,10 +87,9 @@ test('game and gallery avatars stay coherent with affinity direction', async ({ 
                 }
             },
             'angry',
-            'yuna',
-            4
+            'yuna'
         );
         return image.getAttribute('src');
     });
-    expect(galleryAvatar).toContain('yuna_smile.png');
+    expect(galleryAvatar).toContain('yuna_angry.png');
 });
