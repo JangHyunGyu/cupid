@@ -8,6 +8,7 @@
     "scenario:sync": "node generate-scenario.js",
     "scenario:check": "node generate-scenario.js --check",
     "test": "node scripts/test-all.cjs",
+    "cache:check": "node scripts/verify-korean-prompts.cjs && node scripts/verify-multilingual-prompts.cjs",
     "test:deterministic": "node validate.js --seed=cupid-ci --no-report && node test_endings.js && node test_i18n_full.js",
     "test:choices": "node --test tests/choice-affinity-balance.test.cjs",
     "test:freetalk": "node --test tests/freetalk-core.test.cjs",
