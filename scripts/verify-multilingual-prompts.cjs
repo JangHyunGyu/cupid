@@ -82,6 +82,22 @@ const emotionalRangeSignals = {
     de: '[Emotionale Spannweite und Nachwirkung]',
     pt: '[Amplitude e consequência emocional]'
 };
+const livingInitiativeSignals = {
+    en: '[Living Initiative]',
+    es: '[Iniciativa de una persona viva]',
+    ja: '[生きた人物としての主体性]',
+    fr: '[Initiative d’un personnage vivant]',
+    de: '[Eigeninitiative einer lebendigen Figur]',
+    pt: '[Iniciativa de uma pessoa viva]'
+};
+const briefContinuationSignals = {
+    en: '[The Latest Input Is a Brief Continue Signal]',
+    es: '[La última entrada es una señal breve para continuar]',
+    ja: '[最新の入力は短い続行の合図]',
+    fr: '[Le dernier message est un bref signal pour continuer]',
+    de: '[Die letzte Eingabe ist ein kurzes Weitersignal]',
+    pt: '[A última entrada é um breve sinal para continuar]'
+};
 const removedEditorPressure = [
     'answer in polished target-language prose',
     'silently rewrite every dialogue and narration line',
@@ -243,6 +259,11 @@ const progress = {
 };
 
 for (const lang of languages) {
+    const briefContinuationRule = context.window.buildCupidLowInformationContinuationRule('...', lang);
+    assert(briefContinuationRule.includes(briefContinuationSignals[lang]),
+        `[${lang}] brief continuation input is missing its localized runtime rule`);
+    assert(context.window.buildCupidLowInformationContinuationRule('This message contains a concrete new request.', lang) === '',
+        `[${lang}] substantive input incorrectly receives the brief continuation runtime rule`);
     galleryPlayerName = 'Alex';
     const data = context.window.getPromptData(lang, 'Alex');
     assert(data && typeof data === 'object', `[${lang}] getPromptData returned no data`);
@@ -304,6 +325,8 @@ for (const lang of languages) {
             `[${lang}/${char}] main prompt is missing the conditional adult vocalization rule`);
         assert(systemPrompt.includes(emotionalRangeSignals[lang]),
             `[${lang}/${char}] main prompt is missing the emotional-range rule`);
+        assert(systemPrompt.includes(livingInitiativeSignals[lang]),
+            `[${lang}/${char}] main prompt is missing living initiative`);
         assert(!systemPrompt.includes('[CURRENT_PROGRESS]') && !systemPrompt.includes('; turns='),
             `[${lang}/${char}] main prompt still exposes a turn budget`);
         assert(systemPrompt.includes('[Shared cast knowledge]'),
@@ -419,6 +442,8 @@ for (const lang of languages) {
             `[${lang}/${char}] gallery prompt is missing the conditional adult vocalization rule`);
         assert(systemPrompt.includes(emotionalRangeSignals[lang]),
             `[${lang}/${char}] gallery prompt is missing the emotional-range rule`);
+        assert(systemPrompt.includes(livingInitiativeSignals[lang]),
+            `[${lang}/${char}] gallery prompt is missing living initiative`);
         assert(languageSignals[lang].test(systemPrompt), `[${lang}/${char}] gallery prompt lacks target-language anchors`);
         assert(systemPrompt.includes('[Shared cast knowledge]'),
             `[${lang}/${char}] gallery prompt is missing shared cast knowledge`);

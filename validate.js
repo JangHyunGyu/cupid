@@ -1855,11 +1855,11 @@ try {
     const activePromptSources = [promptsContent, ftCoreContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
-    if (promptVersion !== '2.7.45') {
-        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.45가 아님: ' + promptVersion);
+    if (promptVersion !== '2.7.46') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.46이 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.48') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.48이 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.49') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.49가 아님: ' + galleryPromptVersion);
     }
     const galleryProgressContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-progress.js'), 'utf8');
     const galleryLoaderAffinityContent = fs.readFileSync(path.join(__dirname, 'assets/js/loaders/gallery-loader.js'), 'utf8');
@@ -1944,6 +1944,19 @@ try {
             || !source.includes('proposal, preview, or permission')) {
             errors.push('[FREETALK_PROMPT] ' + label + ' 짧은 입력 선제 진행 계약 누락');
         }
+    }
+    if (!promptsContent.includes('function buildCupidLivingInitiativeRule(')
+        || !promptsContent.includes('[살아 있는 인물의 주도성]')
+        || !promptsContent.includes('능동성은 매 답변에 억지 사건을 넣거나 정해진 수의 행동을 채우라는 뜻이 아닙니다')
+        || !promptsContent.includes('function buildCupidLowInformationContinuationRule(')
+        || !promptsContent.includes('[이번 입력은 짧은 계속 신호]')
+        || !promptsContent.includes('이 짧은 입력 자체를 새로운 동의로 해석하지 않습니다')
+        || !ftSysContent.includes('_lowInformationContinuationRule')
+        || !gftContent.includes('_lowInformationContinuationRule')
+        || !ftSysContent.includes('${_lowInformationContinuationRule}')
+        || !gftContent.includes('${_lowInformationContinuationRule}')
+        || !gftContent.includes('${livingInitiativeRule}')) {
+        errors.push('[FREETALK_PROMPT] 평상시 주도성 또는 짧은 계속 신호의 동적 진행 규칙 누락');
     }
     const removedAlwaysOnPromptBrakes = [
         '입력을 복창하지 말고',

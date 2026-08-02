@@ -147,6 +147,13 @@ function assertCommonKoreanPrompt(prompt, label) {
     assert(prompt.includes('===CACHE_BOUNDARY==='), `${label} is missing the cache boundary`);
     assert(prompt.includes('현재 상태:'), `${label} is missing the Korean state label`);
     assert(stablePrompt.includes('[감정의 파동]'), `${label} stable prefix is missing the emotional-range rule`);
+    assert(stablePrompt.includes('[살아 있는 인물의 주도성]'), `${label} stable prefix is missing living initiative`);
+    assert(stablePrompt.includes('캐릭터는 사용자의 말과 행동에 답만 돌려주는 챗봇이 아닙니다.'),
+        `${label} still frames the character as purely reactive`);
+    assert(stablePrompt.includes('능동성은 매 답변에 억지 사건을 넣거나 정해진 수의 행동을 채우라는 뜻이 아닙니다.'),
+        `${label} living initiative can still become a rigid action quota`);
+    assert(stablePrompt.includes('사용자만 내릴 수 있는 중대한 선택을 대신 만들지는 않습니다.'),
+        `${label} living initiative no longer preserves user-owned choices`);
     assert(stablePrompt.includes('감정은 캐릭터다운 말투와 행동, 표정·호흡·몸의 긴장뿐 아니라 판단과 다음 선택까지 바꿉니다.'),
         `${label} still allows emotional events to pass without changing behavior or choices`);
     assert(stablePrompt.includes('과묵한 인물의 긴 침묵과 짧아진 말, 냉정한 인물에게 생긴 통제의 균열도 강한 감정입니다.'),
@@ -247,6 +254,14 @@ function verifyMainAndGalleryPrompts(context) {
             }
         }
     }
+
+    const briefContinuationRule = context.window.buildCupidLowInformationContinuationRule('...', 'ko');
+    assert(briefContinuationRule.includes('[이번 입력은 짧은 계속 신호]'),
+        'brief Korean continuation input is missing its turn-specific initiative rule');
+    assert(briefContinuationRule.includes('이 짧은 입력 자체를 새로운 동의로 해석하지 않습니다.'),
+        'brief Korean continuation input can still be misread as new consent');
+    assert(context.window.buildCupidLowInformationContinuationRule('오늘 있었던 일을 말해 줘.', 'ko') === '',
+        'substantive Korean input incorrectly receives the brief continuation rule');
 
     const mainDynamicVariant = context.window.buildSystemPrompt({
         isEn: false,

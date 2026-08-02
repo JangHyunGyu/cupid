@@ -765,7 +765,10 @@ class FreeTalkSystem {
                 : (this.stateManager.stats?.[charKey]?.affinity || 0);
             const _isDatingCurrentForBoundary = this.stateManager.getFlag(`isDating_${charKey}`) || this.stateManager.getFlag(`isDating_${scene.name}`);
             const _affinityIntimacyProgressionPatch = buildCupidAffinityIntimacyProgressionPatch(_lang, _currentAffinity, _isDatingCurrentForBoundary);
-            const _runtimePromptPatch = `${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_affinityIntimacyProgressionPatch}${_recentRepetitionGuard}`;
+            const _lowInformationContinuationRule = typeof window.buildCupidLowInformationContinuationRule === 'function'
+                ? window.buildCupidLowInformationContinuationRule(finalContent, _lang)
+                : '';
+            const _runtimePromptPatch = `${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_affinityIntimacyProgressionPatch}${_recentRepetitionGuard}${_lowInformationContinuationRule}`;
             if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
                 _optimized = [
                     { ..._optimized[0], content: appendFreeTalkDynamicContext(_optimized[0].content, _runtimePromptPatch) },
