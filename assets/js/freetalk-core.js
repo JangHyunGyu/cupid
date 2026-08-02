@@ -11,6 +11,25 @@
     const CACHE_BOUNDARY_MARKER = '===CACHE_BOUNDARY===';
     const FAILOVER_HTTP_STATUSES = new Set([408, 422, 425, 429]);
     const RETRY_HTTP_STATUSES = new Set([408, 425, 429]);
+    const AFFINITY_CHANGE_MIN = -50;
+    const AFFINITY_CHANGE_MAX = 5;
+
+    function normalizeAffinityChange(value) {
+        const numeric = Number(value);
+        if (!Number.isFinite(numeric)) return 0;
+        return Math.max(
+            AFFINITY_CHANGE_MIN,
+            Math.min(AFFINITY_CHANGE_MAX, Math.round(numeric))
+        );
+    }
+
+    function buildAffinityChangeGuidance(lang = 'ko') {
+        const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
+        if (isKo) {
+            return `affinity에는 이번 사용자 입력과 이번 턴에 실제로 완결된 상호작용만 평가해 ${AFFINITY_CHANGE_MIN}~+${AFFINITY_CHANGE_MAX}의 정수를 넣으세요. 평범한 턴은 대부분 0입니다. 긍정 변화는 +1~+5, 가벼운 불편은 -1~-5, 명백한 무례나 신뢰 훼손은 -6~-15, 심각한 배신·경계 침해는 -16~-30, 극단적이거나 반복적인 폭언·강요·위협은 -31~-50만 사용하세요. 단순 인사나 일상적인 예의마다 점수를 주거나 호감도 설명으로 연기를 대신하지 마세요.`;
+        }
+        return `Set affinity to an integer from ${AFFINITY_CHANGE_MIN} to +${AFFINITY_CHANGE_MAX}, judging only the user's latest contribution and the interaction completed in this turn. Most ordinary turns are 0. Use +1 to +5 for earned positive change, -1 to -5 for mild discomfort, -6 to -15 for clear disrespect or damaged trust, -16 to -30 for a serious betrayal or boundary violation, and -31 to -50 only for extreme or repeated abuse, coercion, or threats. Do not award points for every generic greeting or replace roleplay with score commentary.`;
+    }
 
     function normalizePromptBlockForCache(content) {
         if (!content) return '';
@@ -236,6 +255,10 @@ Latest user: """${excerpt}"""
         CACHE_BOUNDARY_MARKER,
         FAILOVER_HTTP_STATUSES,
         RETRY_HTTP_STATUSES,
+        AFFINITY_CHANGE_MIN,
+        AFFINITY_CHANGE_MAX,
+        normalizeAffinityChange,
+        buildAffinityChangeGuidance,
         normalizePromptBlockForCache,
         shouldFailOverAiResponse,
         shouldRetryAiResponse,

@@ -311,7 +311,7 @@ class GalleryProgress {
 
     /**
      * 갤러리 프리토킹 현재 호감도 변경
-     * 변화량은 방어적으로 -3~+3으로 제한하고, 최고 기록은 상승할 때만 갱신합니다.
+     * 변화량은 공용 정책에 따라 -50~+5로 제한하고, 최고 기록은 상승할 때만 갱신합니다.
      *
      * @param {string} charId - 캐릭터 ID
      * @param {number} amount - 요청 변화량
@@ -325,10 +325,7 @@ class GalleryProgress {
         const charData = this.data.characters?.[charId];
         if (!charData) return { value: 0, change: 0, requestedChange: 0, maxAffinity: 0 };
 
-        const requestedChange = Number(amount);
-        const safeChange = Number.isFinite(requestedChange)
-            ? Math.max(-3, Math.min(3, Math.round(requestedChange)))
-            : 0;
+        const safeChange = window.CupidFreeTalkCore.normalizeAffinityChange(amount);
         const savedCurrent = Number(charData.currentAffinity);
         const current = Number.isFinite(savedCurrent)
             ? Math.max(-100, Math.min(100, Math.round(savedCurrent)))

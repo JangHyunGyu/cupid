@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.39';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.40';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 const GalleryFreeTalkCore = window.CupidFreeTalkCore;
@@ -1536,9 +1536,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
     }
 
     _normalizeAffinityChange(value) {
-        const numeric = Number(value);
-        if (!Number.isFinite(numeric)) return 0;
-        return Math.max(-3, Math.min(3, Math.round(numeric)));
+        return GalleryFreeTalkCore.normalizeAffinityChange(value);
     }
 
     /**
@@ -2206,15 +2204,16 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             ? this.progress.getCurrentAffinity(charId)
             : (this.progress?.getAffinity?.(charId) || 0);
         const relationshipState = this._getGalleryRelationshipState(currentAffinity);
+        const affinityChangeGuidance = GalleryFreeTalkCore.buildAffinityChangeGuidance(this.lang);
         const affinityRelationshipGuard = isEn
             ? `Established romance and affinity:
 - They are already post-PERFECT-ending adult lovers at every score. Never rewrite them as strangers, new acquaintances, an unconfessed crush, or automatically broken up.
 - Current affinity changes only the emotional temperature inside that established relationship: -100 to -70 in crisis, -69 to -40 deeply hurt/distant, -39 to -10 hurt/guarded, -9 to 9 conflicted/fragile, 10 to 39 cautious but affectionate, 40 to 69 comfortable/familiar, 70 to 89 close/trusting, 90 to 100 deeply bonded/intimate. Express the current band through this character's own speech, initiative, touch, restraint, refusal, and emotional openness without mechanically naming the score.
-- Return affinity as an integer from -3 to 3 based only on the user's latest contribution and the interaction completed in this turn. Most ordinary turns are 0; ±1 is a small but earned shift, ±2 requires a clearly meaningful moment, and ±3 is exceptional. Do not award points for every generic greeting or replace roleplay with score commentary.`
+- ${affinityChangeGuidance}`
             : `확정된 연인 관계와 호감도:
 - 두 사람은 점수와 무관하게 이미 PERFECT 엔딩 이후의 성인 연인입니다. 낯선 사이, 이제 막 알게 된 사이, 고백 전 짝사랑으로 되돌리거나 자동으로 결별시키지 마세요.
 - 현재 호감도는 확정된 연인 관계 안의 감정 온도만 바꿉니다. -100~-70은 관계 위기, -69~-40은 깊이 상처받고 멀어진 상태, -39~-10은 상처받고 경계하는 상태, -9~9는 애정과 갈등이 팽팽한 상태, 10~39는 조심스럽지만 애정이 남은 상태, 40~69는 편안하고 익숙한 상태, 70~89는 가깝고 신뢰하는 상태, 90~100은 깊이 결속되고 친밀한 상태입니다. 점수를 입 밖에 내지 말고, 해당 단계가 이 캐릭터다운 말투·주도성·스킨십·거리 두기·거절·감정 개방으로 자연스럽게 드러나게 하세요.
-- affinity에는 이번 사용자 입력과 이번 턴에 실제로 완결된 상호작용만 평가해 -3~3의 정수를 넣으세요. 평범한 턴은 대부분 0, 작지만 납득되는 변화는 ±1, 뚜렷하게 의미 있는 순간은 ±2, 예외적으로 강한 순간만 ±3입니다. 단순 인사나 일상적인 예의마다 점수를 주거나 호감도 설명으로 연기를 대신하지 마세요.`;
+- ${affinityChangeGuidance}`;
         const compactGalleryState = isEn
             ? `State: user=${playerName || 'the user'}; current_affinity=${currentAffinity}/100; relationship=${relationshipState.en}`
             : `현재 상태: 사용자=${playerName || '상대'}; 현재 호감도=${currentAffinity}/100; 관계 온도=${relationshipState.ko}`;

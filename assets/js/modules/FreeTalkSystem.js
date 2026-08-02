@@ -1589,11 +1589,8 @@ class FreeTalkSystem {
         if (!this.stateManager.stats[charKey]) return null;
 
         const previousValue = this.stateManager.getAffinity(charKey);
-        const numericChange = Number(change);
-        // 턴당 호감도 범위 제한: -5 ~ +5
-        const requestedChange = Number.isFinite(numericChange)
-            ? Math.max(-5, Math.min(5, Math.round(numericChange)))
-            : 0;
+        // 게임·갤러리 공용 턴당 호감도 범위: -50 ~ +5
+        const requestedChange = CupidFreeTalkCore.normalizeAffinityChange(change);
         if (requestedChange === 0) {
             return { change: 0, value: previousValue, requestedChange: 0 };
         }

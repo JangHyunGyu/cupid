@@ -11,6 +11,10 @@ const window = {};
 vm.runInNewContext(source, { window, Set, Object, String, Number, Array, Map, Math, encodeURIComponent });
 const core = window.CupidFreeTalkCore;
 
+function read(relativePath) {
+    return fs.readFileSync(path.join(__dirname, '..', relativePath), 'utf8');
+}
+
 test('cache fingerprint ignores dynamic context after the boundary', () => {
     const first = core.appendDynamicContext('stable prompt', 'turn one');
     const second = core.appendDynamicContext('stable prompt', 'turn two');
@@ -22,6 +26,24 @@ test('retry and failover status contracts remain distinct', () => {
     assert.equal(core.shouldFailOverAiResponse({ ok: false, status: 422 }), true);
     assert.equal(core.shouldRetryAiResponse({ ok: false, status: 422 }), false);
     assert.equal(core.shouldFailOverAiResponse({ ok: false, status: 400 }), false);
+});
+
+test('affinity changes use the shared asymmetric -50 to +5 range', () => {
+    assert.equal(core.AFFINITY_CHANGE_MIN, -50);
+    assert.equal(core.AFFINITY_CHANGE_MAX, 5);
+    assert.equal(core.normalizeAffinityChange(-999), -50);
+    assert.equal(core.normalizeAffinityChange(-49.6), -50);
+    assert.equal(core.normalizeAffinityChange(4.6), 5);
+    assert.equal(core.normalizeAffinityChange(999), 5);
+    assert.equal(core.normalizeAffinityChange('invalid'), 0);
+    assert.match(core.buildAffinityChangeGuidance('ko'), /-50~\+5/);
+    assert.match(core.buildAffinityChangeGuidance('en'), /-50 to \+5/);
+});
+
+test('game and gallery affinity paths share the core normalizer', () => {
+    assert.match(read('assets/js/modules/FreeTalkSystem.js'), /CupidFreeTalkCore\.normalizeAffinityChange\(change\)/);
+    assert.match(read('assets/js/gallery-freetalk.js'), /GalleryFreeTalkCore\.normalizeAffinityChange\(value\)/);
+    assert.match(read('assets/js/gallery-progress.js'), /CupidFreeTalkCore\.normalizeAffinityChange\(amount\)/);
 });
 
 test('latest-user canon strips URLs and preserves the newest user turn', () => {
