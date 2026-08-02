@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.42';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.43';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 const GalleryFreeTalkCore = window.CupidFreeTalkCore;
@@ -908,7 +908,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             charKey: this.currentCharKey,
             history: this.chatHistory,
             historyLengthBeforeTurn: null,
-            turnMeta: null
+            turnMeta: null,
+            incidentRuntime: null
         };
         const requestHistory = requestContext.history;
         const requestCharId = requestContext.charId;
@@ -1006,7 +1007,15 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             const _latestUserCanonBlock = buildGalleryLatestUserCanonBlock(_optimized, this.lang || 'en', finalContent);
             const _inWorldUserRoleBlock = this._buildInWorldUserRoleBlock(_optimized);
             const _recentRepetitionGuard = buildGalleryRecentExpressionRepetitionGuard(_optimized, this.lang || 'en');
-            const _runtimePromptPatch = `${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_recentRepetitionGuard}`;
+            const _incidentRuntime = this._prepareGalleryIncidentRuntime(requestCharId);
+            requestContext.incidentRuntime = _incidentRuntime;
+            const _incidentRuntimeBlock = GalleryFreeTalkCore.buildGalleryIncidentRuntimeBlock({
+                lang: this.lang || 'en',
+                characterName: this.CHAR_NAMES[requestCharId]?.[this.lang] || requestCharId,
+                state: _incidentRuntime.state,
+                plan: _incidentRuntime.plan
+            });
+            const _runtimePromptPatch = `${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_recentRepetitionGuard}${_incidentRuntimeBlock}`;
             if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
                 _optimized = [
                     { ..._optimized[0], content: appendGalleryFreeTalkDynamicContext(_optimized[0].content, _runtimePromptPatch) },
@@ -1218,7 +1227,15 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             this._assertRequestContext(requestContext, data);
             this._updateExpression(parsed.expression, requestCharId);
             this._assertRequestContext(requestContext, data);
-            const affinityResult = this._applyAffinityChange(parsed.affinity, requestCharId);
+            const incidentResult = this._commitGalleryIncidentTurn({
+                charId: requestCharId,
+                runtime: requestContext.incidentRuntime,
+                payload: parsed.incident,
+                visibleText: displayText,
+                latestUserText: finalContent,
+                turnAffinity: parsed.affinity
+            });
+            const affinityResult = this._applyAffinityChange(incidentResult.affinityChange, requestCharId);
             requestHistory.push({ role: 'assistant', content: displayText });
 
             // 프리토킹 횟수 증가
@@ -1453,7 +1470,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
     }
 
     _parseResponse(reply) {
-        if (!reply) return { text: '', segments: null, expression: '', affinity: 0 };
+        if (!reply) return { text: '', segments: null, expression: '', affinity: 0, incident: null };
 
         const likelyJson = reply.includes('{') || reply.includes('```json');
         if (!likelyJson) {
@@ -1461,7 +1478,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 text: this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(reply)),
                 segments: null,
                 expression: '',
-                affinity: 0
+                affinity: 0,
+                incident: null
             };
         }
 
@@ -1493,7 +1511,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     text: this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(derivedText)),
                     segments: this._sanitizeSegmentsPlaceholders(normalizedSegments),
                     expression: (parsed.expression || '').toLowerCase(),
-                    affinity: this._normalizeAffinityChange(parsed.affinity)
+                    affinity: this._normalizeAffinityChange(parsed.affinity),
+                    incident: GalleryFreeTalkCore.normalizeGalleryIncidentPayload(parsed.incident)
                 };
             }
 
@@ -1503,7 +1522,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     text: this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(parsed.text || '')),
                     segments: null,
                     expression: (parsed.expression || '').toLowerCase(),
-                    affinity: this._normalizeAffinityChange(parsed.affinity)
+                    affinity: this._normalizeAffinityChange(parsed.affinity),
+                    incident: GalleryFreeTalkCore.normalizeGalleryIncidentPayload(parsed.incident)
                 };
             }
 
@@ -1513,7 +1533,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 text: this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(text)),
                 segments: null,
                 expression: (parsed.expression || '').toLowerCase(),
-                affinity: this._normalizeAffinityChange(parsed.affinity)
+                affinity: this._normalizeAffinityChange(parsed.affinity),
+                incident: GalleryFreeTalkCore.normalizeGalleryIncidentPayload(parsed.incident)
             };
 
         } catch (e) {
@@ -1529,7 +1550,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     replyHash: window.hashCupidLogText ? window.hashCupidLogText(reply || '') : ''
                 }
             });
-            return { text: '', segments: null, expression: '', affinity: 0 };
+            return { text: '', segments: null, expression: '', affinity: 0, incident: null };
         }
     }
 
@@ -1916,6 +1937,101 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         } catch (e) {
             // 무시
         }
+    }
+
+    _prepareGalleryIncidentRuntime(charId = this.currentCharId) {
+        const state = this.progress?.getGalleryIncidentState
+            ? this.progress.getGalleryIncidentState(charId)
+            : GalleryFreeTalkCore.normalizeGalleryIncidentState();
+        const plan = GalleryFreeTalkCore.planGalleryIncident(
+            state,
+            Math.random(),
+            Math.random()
+        );
+        return { state, plan };
+    }
+
+    _commitGalleryIncidentTurn({
+        charId = this.currentCharId,
+        runtime = null,
+        payload = null,
+        visibleText = '',
+        latestUserText = '',
+        turnAffinity = 0
+    } = {}) {
+        let state = GalleryFreeTalkCore.normalizeGalleryIncidentState(
+            runtime?.state || this.progress?.getGalleryIncidentState?.(charId)
+        );
+        const plan = runtime?.plan || null;
+        const incidentPayload = GalleryFreeTalkCore.normalizeGalleryIncidentPayload(payload);
+        state.completedTurns += 1;
+
+        let affinityChange = this._normalizeAffinityChange(turnAffinity);
+        let startedCategory = '';
+        const startsPlannedIncident = Boolean(
+            plan?.category
+            && incidentPayload?.status === 'started'
+            && incidentPayload.summary
+        );
+
+        if (startsPlannedIncident && !state.activeIncident) {
+            const category = GalleryFreeTalkCore.normalizeGalleryIncidentCategory(plan.category);
+            const summary = incidentPayload?.summary
+                || GalleryFreeTalkCore.truncateLatestUserText(visibleText, 240)
+                || `${category} incident`;
+            affinityChange = GalleryFreeTalkCore.normalizeGalleryIncidentImpact(
+                category,
+                incidentPayload?.impact
+            );
+            state.activeIncident = {
+                category,
+                summary,
+                startedAtTurn: state.completedTurns,
+                turns: 1
+            };
+            state.quietTurns = 0;
+            startedCategory = category;
+            if (category === 'crisis') {
+                state.lastCrisisTurn = state.completedTurns;
+                state.negativeSignals = [];
+            }
+        } else if (state.activeIncident) {
+            state.activeIncident.turns += 1;
+            if (incidentPayload?.summary) state.activeIncident.summary = incidentPayload.summary;
+            if (incidentPayload?.status === 'resolved') {
+                state.recentIncidents.push({
+                    category: state.activeIncident.category,
+                    summary: state.activeIncident.summary,
+                    endedAtTurn: state.completedTurns
+                });
+                state.recentIncidents = state.recentIncidents.slice(
+                    -GalleryFreeTalkCore.GALLERY_INCIDENT_POLICY.recentIncidentLimit
+                );
+                state.activeIncident = null;
+                state.quietTurns = 0;
+            }
+        } else {
+            state.quietTurns += 1;
+        }
+
+        if (!startedCategory) {
+            state = GalleryFreeTalkCore.updateGalleryIncidentEvidence(
+                state,
+                affinityChange,
+                latestUserText
+            );
+        }
+        const savedState = this.progress?.setGalleryIncidentState
+            ? this.progress.setGalleryIncidentState(charId, state)
+            : GalleryFreeTalkCore.normalizeGalleryIncidentState(state);
+
+        return {
+            affinityChange,
+            startedCategory,
+            activeIncident: savedState.activeIncident,
+            completedTurns: savedState.completedTurns,
+            quietTurns: savedState.quietTurns
+        };
     }
 
     // =========================================================================

@@ -13,7 +13,12 @@
  *       met: true,                 // 만남 여부
  *       maxAffinity: 75,           // 최대 호감도
  *       currentAffinity: 72,       // 갤러리 프리토킹 현재 호감도 (-100~100)
- *       freeTalkCount: 50          // 프리토킹 횟수
+ *       freeTalkCount: 50,         // 프리토킹 횟수
+ *       galleryIncident: {         // 갤러리 프리토킹 관계 사건 상태
+ *         completedTurns: 120,
+ *         quietTurns: 20,
+ *         activeIncident: null
+ *       }
  *     },
  *     ...
  *   },
@@ -192,11 +197,11 @@ class GalleryProgress {
         return {
             version: GalleryData.VERSION,
             characters: {
-                seyoun: { met: false, maxAffinity: 0, currentAffinity: 0, freeTalkCount: 0 },
-                yuna: { met: false, maxAffinity: 0, currentAffinity: 0, freeTalkCount: 0 },
-                dain: { met: false, maxAffinity: 0, currentAffinity: 0, freeTalkCount: 0 },
-                teacher: { met: false, maxAffinity: 0, currentAffinity: 0, freeTalkCount: 0 },
-                nurse: { met: false, maxAffinity: 0, currentAffinity: 0, freeTalkCount: 0 }
+                seyoun: { met: false, maxAffinity: 0, currentAffinity: 0, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState() },
+                yuna: { met: false, maxAffinity: 0, currentAffinity: 0, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState() },
+                dain: { met: false, maxAffinity: 0, currentAffinity: 0, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState() },
+                teacher: { met: false, maxAffinity: 0, currentAffinity: 0, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState() },
+                nurse: { met: false, maxAffinity: 0, currentAffinity: 0, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState() }
             },
             cg: {},                           // CG는 기본적으로 없음 (게임 진행 시 추가)
             bgm: {
@@ -351,6 +356,68 @@ class GalleryProgress {
     getFreeTalkCount(charId) {
         this.refresh();
         return this.data.characters?.[charId]?.freeTalkCount || 0;
+    }
+
+    /**
+     * 갤러리 프리토킹 관계 사건 기본 상태
+     * 사건 빈도는 세션이 아니라 캐릭터별 정상 완료 턴으로 계산합니다.
+     *
+     * @private
+     * @returns {Object}
+     */
+    _createDefaultGalleryIncidentState() {
+        return {
+            version: 1,
+            completedTurns: 0,
+            quietTurns: 0,
+            lastCrisisTurn: null,
+            activeIncident: null,
+            recentIncidents: [],
+            negativeSignals: []
+        };
+    }
+
+    /**
+     * 캐릭터별 갤러리 관계 사건 상태를 정규화해 가져옵니다.
+     * 기존 저장 데이터에는 필드가 없으므로 읽는 시점에 무손실로 추가합니다.
+     *
+     * @param {string} charId
+     * @returns {Object}
+     */
+    getGalleryIncidentState(charId) {
+        this.refresh();
+        const charData = this.data.characters?.[charId];
+        if (!charData) return this._createDefaultGalleryIncidentState();
+
+        const rawState = charData.galleryIncident || this._createDefaultGalleryIncidentState();
+        const normalized = window.CupidFreeTalkCore?.normalizeGalleryIncidentState
+            ? window.CupidFreeTalkCore.normalizeGalleryIncidentState(rawState)
+            : rawState;
+        if (JSON.stringify(charData.galleryIncident || null) !== JSON.stringify(normalized)) {
+            charData.galleryIncident = normalized;
+            this.save();
+        }
+        return normalized;
+    }
+
+    /**
+     * 캐릭터별 갤러리 관계 사건 상태를 저장합니다.
+     *
+     * @param {string} charId
+     * @param {Object} state
+     * @returns {Object}
+     */
+    setGalleryIncidentState(charId, state) {
+        this.refresh();
+        const charData = this.data.characters?.[charId];
+        if (!charData) return this._createDefaultGalleryIncidentState();
+
+        const normalized = window.CupidFreeTalkCore?.normalizeGalleryIncidentState
+            ? window.CupidFreeTalkCore.normalizeGalleryIncidentState(state)
+            : state;
+        charData.galleryIncident = normalized;
+        this.save();
+        return normalized;
     }
 
     // =========================================================================

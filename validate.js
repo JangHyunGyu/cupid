@@ -1858,8 +1858,8 @@ try {
     if (promptVersion !== '2.7.42') {
         errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.42가 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.42') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.42가 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.43') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.43이 아님: ' + galleryPromptVersion);
     }
     const galleryProgressContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-progress.js'), 'utf8');
     const galleryLoaderAffinityContent = fs.readFileSync(path.join(__dirname, 'assets/js/loaders/gallery-loader.js'), 'utf8');
@@ -2087,7 +2087,7 @@ try {
     const affinityLogContracts = [
         ['config', configContent, ['affinityChange = null', 'affinityCurrent = null', 'entry.affinityChange', 'entry.affinityCurrent']],
         ['main', ftSysContent, ['const affinityResult = this.applyAffinity(parsed.affinity, scene)', 'affinityChange: affinityResult?.change', 'affinityCurrent: affinityResult?.value', 'const actualChange = newValue - previousValue']],
-        ['gallery', gftContent, ['const affinityResult = this._applyAffinityChange(parsed.affinity, requestCharId)', 'affinityChange: affinityResult?.change', 'affinityCurrent: affinityResult?.value']]
+        ['gallery', gftContent, ['const affinityResult = this._applyAffinityChange(incidentResult.affinityChange, requestCharId)', 'affinityChange: affinityResult?.change', 'affinityCurrent: affinityResult?.value']]
     ];
     for (const [label, source, required] of affinityLogContracts) {
         for (const token of required) {

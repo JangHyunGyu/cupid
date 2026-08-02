@@ -93,3 +93,129 @@ test('game and gallery preserve valid outward expressions independently of affin
     });
     expect(galleryAvatar).toContain('yuna_angry.png');
 });
+
+test('gallery trust incident commits one completed turn and an immediate -50 impact', async ({ page }) => {
+    await page.goto('/gallery.html');
+    await page.waitForFunction(() => window.GalleryFreeTalk && window.CupidFreeTalkCore);
+
+    const result = await page.evaluate(() => {
+        let savedState = null;
+        const talk = Object.create(window.GalleryFreeTalk.prototype);
+        talk.currentCharId = 'yuna';
+        talk.progress = {
+            setGalleryIncidentState(_charId, state) {
+                savedState = window.CupidFreeTalkCore.normalizeGalleryIncidentState(state);
+                return savedState;
+            }
+        };
+
+        const state = window.CupidFreeTalkCore.normalizeGalleryIncidentState({
+            completedTurns: 399,
+            quietTurns: 99,
+            negativeSignals: [{
+                turn: 398,
+                weight: 6,
+                excerpt: '싫다고 해도 계속 강요할 거야.'
+            }]
+        });
+        const committed = talk._commitGalleryIncidentTurn({
+            charId: 'yuna',
+            runtime: { state, plan: { category: 'crisis' } },
+            payload: {
+                status: 'started',
+                summary: '반복된 강요 때문에 유나가 신뢰 문제를 꺼냈다.',
+                impact: -1
+            },
+            visibleText: '유나는 더는 넘길 수 없다고 말했다.',
+            latestUserText: '무슨 일이야?',
+            turnAffinity: 5
+        });
+        return { committed, savedState };
+    });
+
+    expect(result.committed.affinityChange).toBe(-50);
+    expect(result.committed.completedTurns).toBe(400);
+    expect(result.savedState.activeIncident.category).toBe('crisis');
+    expect(result.savedState.lastCrisisTurn).toBe(400);
+    expect(result.savedState.negativeSignals).toEqual([]);
+});
+
+test('gallery does not penalize a planned incident that the AI failed to establish', async ({ page }) => {
+    await page.goto('/gallery.html');
+    await page.waitForFunction(() => window.GalleryFreeTalk && window.CupidFreeTalkCore);
+
+    const result = await page.evaluate(() => {
+        let savedState = null;
+        const talk = Object.create(window.GalleryFreeTalk.prototype);
+        talk.currentCharId = 'yuna';
+        talk.progress = {
+            setGalleryIncidentState(_charId, state) {
+                savedState = window.CupidFreeTalkCore.normalizeGalleryIncidentState(state);
+                return savedState;
+            }
+        };
+        const committed = talk._commitGalleryIncidentTurn({
+            charId: 'yuna',
+            runtime: {
+                state: window.CupidFreeTalkCore.normalizeGalleryIncidentState({
+                    completedTurns: 99,
+                    quietTurns: 99
+                }),
+                plan: { category: 'crisis' }
+            },
+            payload: null,
+            visibleText: '유나는 평소처럼 책장을 넘겼다.',
+            latestUserText: '오늘은 어땠어?',
+            turnAffinity: 2
+        });
+        return { committed, savedState };
+    });
+
+    expect(result.committed.affinityChange).toBe(2);
+    expect(result.committed.startedCategory).toBe('');
+    expect(result.savedState.activeIncident).toBeNull();
+    expect(result.savedState.quietTurns).toBe(100);
+});
+
+test('legacy gallery progress gains incident state without relocking earned content', async ({ page }) => {
+    await page.goto('/gallery.html');
+    await page.waitForFunction(() => window.GalleryProgress && window.GalleryData && window.CupidFreeTalkCore);
+
+    const result = await page.evaluate(() => {
+        localStorage.setItem('cupid_gallery', JSON.stringify({
+            version: window.GalleryData.VERSION,
+            playerName: '테스터',
+            characters: {
+                seyoun: {
+                    met: true,
+                    maxAffinity: 100,
+                    currentAffinity: 100,
+                    freeTalkCount: 30,
+                    perfectEndingCleared: true
+                }
+            },
+            cg: { ending_perfect_seoyeon: { unlocked: true } },
+            bgm: { intro: { unlocked: true } }
+        }));
+
+        const progress = new window.GalleryProgress();
+        const incidentState = progress.getGalleryIncidentState('seyoun');
+        const unlockedBefore = progress.isFreeTalkUnlocked('seyoun');
+        progress.changeCurrentAffinity('seyoun', -50);
+        return {
+            incidentState,
+            unlockedBefore,
+            unlockedAfter: progress.isFreeTalkUnlocked('seyoun'),
+            currentAffinity: progress.getCurrentAffinity('seyoun'),
+            maxAffinity: progress.getAffinity('seyoun'),
+            cgStillUnlocked: progress.isUnlocked('cg', 'ending_perfect_seoyeon')
+        };
+    });
+
+    expect(result.incidentState.completedTurns).toBe(0);
+    expect(result.unlockedBefore).toBe(true);
+    expect(result.unlockedAfter).toBe(true);
+    expect(result.currentAffinity).toBe(50);
+    expect(result.maxAffinity).toBe(100);
+    expect(result.cgStillUnlocked).toBe(true);
+});
