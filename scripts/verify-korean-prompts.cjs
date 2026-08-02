@@ -15,6 +15,13 @@ const REQUIRED_BLOCKS = [
     '[자연스러운 한국어 말투]',
     '[캐릭터 문체]'
 ];
+const REQUIRED_NATURAL_KOREAN_RULES = [
+    '한국어에서 문맥상 분명한 주어·대명사·호칭은 자연스럽게 생략하세요.',
+    '사용자의 말을 안내문처럼 요약하거나 해설한 뒤 답을 시작하지 마세요.',
+    '같은 문장 시작·접속사·종결과 대사-지문 배열의 반복을 화면 문장에 남기지 마세요.',
+    '명사화·피동·이중 완곡을 습관적으로 늘이지 말고, 뜻이 분명하면 능동 동사로 바로 연결하세요.',
+    '비유·감탄·말줄임표·의성어는 캐릭터와 순간에 맞을 때만 쓰고, 모든 캐릭터가 공유하는 말버릇으로 만들지 마세요.'
+];
 const REMOVED_PRESSURE_BLOCKS = [
     '[필수 규칙]',
     '[역할 연기 기준]',
@@ -117,6 +124,10 @@ function createPromptRuntime() {
 function assertCommonKoreanPrompt(prompt, label) {
     for (const block of REQUIRED_BLOCKS) {
         assert(prompt.includes(block), `${label} is missing ${block}`);
+    }
+    const stablePrompt = splitCacheBoundary(prompt, label).stable;
+    for (const rule of REQUIRED_NATURAL_KOREAN_RULES) {
+        assert(stablePrompt.includes(rule), `${label} stable prefix is missing natural Korean rule: ${rule}`);
     }
     for (const block of REMOVED_PRESSURE_BLOCKS) {
         assert(!prompt.includes(block), `${label} still injects removed pressure block ${block}`);
