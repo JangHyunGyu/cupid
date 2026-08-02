@@ -26,9 +26,49 @@
     function buildAffinityChangeGuidance(lang = 'ko') {
         const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
         if (isKo) {
-            return `affinity에는 이번 사용자 입력과 이번 턴에 실제로 완결된 상호작용만 평가해 ${AFFINITY_CHANGE_MIN}~+${AFFINITY_CHANGE_MAX}의 정수를 넣으세요. 평범한 턴은 대부분 0입니다. 긍정 변화는 +1~+5, 가벼운 불편은 -1~-5, 명백한 무례나 신뢰 훼손은 -6~-15, 심각한 배신·경계 침해는 -16~-30, 극단적이거나 반복적인 폭언·강요·위협은 -31~-50만 사용하세요. 단순 인사나 일상적인 예의마다 점수를 주거나 호감도 설명으로 연기를 대신하지 마세요.`;
+            return `affinity에는 이번 사용자 입력과 이번 턴에 실제로 완결된 상호작용만 평가해 ${AFFINITY_CHANGE_MIN}~+${AFFINITY_CHANGE_MAX}의 정수를 넣으세요. 일반적인 어색함·실수는 -1~-5, 심한 무례·거짓말·경계 침해는 -6~-20, 반복적인 폭언·강요·위협은 -21~-50, 중립은 0, 긍정적인 대화는 +1~+5입니다. 평범한 턴은 대부분 0이며, 단순 인사나 일상적인 예의마다 점수를 주거나 호감도 설명으로 연기를 대신하지 마세요.`;
         }
-        return `Set affinity to an integer from ${AFFINITY_CHANGE_MIN} to +${AFFINITY_CHANGE_MAX}, judging only the user's latest contribution and the interaction completed in this turn. Most ordinary turns are 0. Use +1 to +5 for earned positive change, -1 to -5 for mild discomfort, -6 to -15 for clear disrespect or damaged trust, -16 to -30 for a serious betrayal or boundary violation, and -31 to -50 only for extreme or repeated abuse, coercion, or threats. Do not award points for every generic greeting or replace roleplay with score commentary.`;
+        return `Set affinity to an integer from ${AFFINITY_CHANGE_MIN} to +${AFFINITY_CHANGE_MAX}, judging only the user's latest contribution and the interaction completed in this turn. Use -1 to -5 for ordinary awkwardness or mistakes, -6 to -20 for serious disrespect, lies, or boundary violations, -21 to -50 for repeated abuse, coercion, or threats, 0 for a neutral turn, and +1 to +5 for a positive interaction. Most ordinary turns are 0; do not award points for every generic greeting or replace roleplay with score commentary.`;
+    }
+
+    function buildExpressionAffinityGuidance(lang = 'ko') {
+        const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
+        if (isKo) {
+            return 'expression은 이번 응답에서 실제로 드러난 캐릭터의 감정과 affinity 변화 방향에 맞는 허용 표정 하나를 고르세요. 감점인데 웃음·미소처럼 명백히 밝은 표정을 쓰거나, 가점인데 분노·슬픔처럼 명백히 부정적인 표정을 쓰지 마세요. 0이면 장면의 감정에 가장 자연스러운 표정을 고르세요.';
+        }
+        return 'Choose one allowed expression that matches both the emotion visibly shown in this reply and the direction of the affinity change. Do not use an obviously cheerful expression such as laugh or smile for a negative change, or an obviously hostile or sad expression for a positive change. At 0, choose the expression that best fits the scene.';
+    }
+
+    function resolveAffinityExpression(expression, affinityChange, validExpressions = []) {
+        const valid = new Set(
+            (Array.isArray(validExpressions) ? validExpressions : Object.keys(validExpressions || {}))
+                .map(value => String(value || '').toLowerCase())
+                .filter(Boolean)
+        );
+        if (valid.size === 0) return '';
+
+        const requested = String(expression || '').toLowerCase();
+        const change = normalizeAffinityChange(affinityChange);
+        const positiveExpressions = ['laugh', 'smile', 'shy', 'shy2', 'flushed', 'active'];
+        const negativeExpressions = ['angry', 'sad', 'cry', 'worried', 'pout', 'bored', 'sweat'];
+        const requestedIsValid = valid.has(requested);
+        const requestedIsPositive = positiveExpressions.includes(requested);
+        const requestedIsNegative = negativeExpressions.includes(requested);
+
+        if (requestedIsValid
+            && !(change < 0 && requestedIsPositive)
+            && !(change > 0 && requestedIsNegative)) {
+            return requested;
+        }
+
+        const preferences = change > 0
+            ? [...positiveExpressions, 'normal']
+            : change < 0
+                ? (change <= -21
+                    ? ['angry', 'sad', 'cry', 'worried', 'pout', 'bored', 'sweat', 'normal']
+                    : ['worried', 'pout', 'sad', 'bored', 'sweat', 'angry', 'cry', 'normal'])
+                : ['normal'];
+        return preferences.find(name => valid.has(name)) || requested || [...valid][0];
     }
 
     function normalizePromptBlockForCache(content) {
@@ -259,6 +299,8 @@ Latest user: """${excerpt}"""
         AFFINITY_CHANGE_MAX,
         normalizeAffinityChange,
         buildAffinityChangeGuidance,
+        buildExpressionAffinityGuidance,
+        resolveAffinityExpression,
         normalizePromptBlockForCache,
         shouldFailOverAiResponse,
         shouldRetryAiResponse,

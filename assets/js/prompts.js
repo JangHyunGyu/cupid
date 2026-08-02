@@ -1372,6 +1372,7 @@ function buildSystemPrompt(params) {
             : "대면 입력은 이미 장면 안에서 나온 말, 행동, 침묵, 정정, 단서 가운데 하나입니다.");
     const thirdPersonAdultCameraRule = buildCupidThirdPersonAdultCameraRule(effectiveLang);
     const affinityChangeGuidance = window.CupidFreeTalkCore.buildAffinityChangeGuidance(effectiveLang);
+    const expressionAffinityGuidance = window.CupidFreeTalkCore.buildExpressionAffinityGuidance(effectiveLang);
     const compactLiveState = useEnTemplate
         ? `State: place=${locationName || 'current scene'}; user=${playerName || 'the user'}; knowsName=${knowsName ? 'yes' : 'no'}; affinity=${affinity}\nContext: ${context}`
         : `현재 상태: 장소=${locationName || '현재 장면'}; 사용자=${playerName || '주인공'}; 이름 인지=${knowsName ? '예' : '아니요'}; 호감도=${affinity}\n장면 맥락: ${context}`;
@@ -1387,7 +1388,7 @@ Scene: ${compactSceneMode} Treat the user's latest explicit in-world facts and c
 Affinity scoring: ${affinityChangeGuidance}
 ${thirdPersonAdultCameraRule}
 JSON only: {"segments":[{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":0}
-Types: narration/dialogue. segments must contain at least one item with non-empty text. Expressions: ${expressionNames}. No single text field.
+Types: narration/dialogue. segments must contain at least one item with non-empty text. Expressions: ${expressionNames}. ${expressionAffinityGuidance} No single text field.
 ${compactStableGuidance}
 ===CACHE_BOUNDARY===
 ${compactLiveState}
@@ -1404,7 +1405,7 @@ ${sharedCastKnowledge}
 호감도 판정: ${affinityChangeGuidance}
 ${thirdPersonAdultCameraRule}
 JSON만 출력: {"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":0}
-허용 type: narration, dialogue. segments에는 빈 문자열이 아닌 항목을 하나 이상 넣습니다. 허용 expression: ${expressionNames}. text 단일 필드는 쓰지 마세요.
+허용 type: narration, dialogue. segments에는 빈 문자열이 아닌 항목을 하나 이상 넣습니다. 허용 expression: ${expressionNames}. ${expressionAffinityGuidance} text 단일 필드는 쓰지 마세요.
 ${compactStableGuidance}
 ===CACHE_BOUNDARY===
 ${compactLiveState}
@@ -1444,5 +1445,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 };
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.40';
+const PROMPT_VERSION = '2.7.41';
 window.PROMPT_VERSION = PROMPT_VERSION;

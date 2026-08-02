@@ -56,3 +56,42 @@ test('gallery runtime includes the shared free-talk core', async ({ page }) => {
     await page.waitForFunction(() => window.GalleryFreeTalk && window.CupidFreeTalkCore);
     await expect(page.locator('#gallery-freetalk-overlay')).toHaveCount(1);
 });
+
+test('game and gallery avatars stay coherent with affinity direction', async ({ page }) => {
+    await page.goto('/game.html');
+    await waitForRuntime(page);
+    const gameAvatar = await page.evaluate(() => {
+        const slot = document.createElement('div');
+        const image = document.createElement('img');
+        slot.appendChild(image);
+        window.FreeTalkSystem.prototype.applyExpression.call(
+            { uiManager: { charSlots: { center: slot } } },
+            'smile',
+            { name: 'Yuna' },
+            -40
+        );
+        return image.getAttribute('src');
+    });
+    expect(gameAvatar).toContain('yuna_angry.png');
+
+    await page.goto('/gallery.html');
+    await page.waitForFunction(() => window.GalleryFreeTalk && window.CupidFreeTalkCore);
+    const galleryAvatar = await page.evaluate(() => {
+        const image = document.createElement('img');
+        image.id = 'gft-char-img';
+        document.body.appendChild(image);
+        window.GalleryFreeTalk.prototype._updateExpression.call(
+            {
+                currentCharId: 'yuna',
+                CHAR_EXPRESSIONS: {
+                    yuna: ['normal', 'smile', 'shy', 'angry', 'sad', 'worried']
+                }
+            },
+            'angry',
+            'yuna',
+            4
+        );
+        return image.getAttribute('src');
+    });
+    expect(galleryAvatar).toContain('yuna_smile.png');
+});

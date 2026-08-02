@@ -38,12 +38,28 @@ test('affinity changes use the shared asymmetric -50 to +5 range', () => {
     assert.equal(core.normalizeAffinityChange('invalid'), 0);
     assert.match(core.buildAffinityChangeGuidance('ko'), /-50~\+5/);
     assert.match(core.buildAffinityChangeGuidance('en'), /-50 to \+5/);
+    assert.match(core.buildAffinityChangeGuidance('ko'), /-6~-20/);
+    assert.match(core.buildAffinityChangeGuidance('ko'), /-21~-50/);
+});
+
+test('expression and affinity direction stay visually consistent', () => {
+    const expressions = ['normal', 'smile', 'shy', 'angry', 'sad', 'worried'];
+    assert.equal(core.resolveAffinityExpression('smile', -3, expressions), 'worried');
+    assert.equal(core.resolveAffinityExpression('smile', -40, expressions), 'angry');
+    assert.equal(core.resolveAffinityExpression('angry', 3, expressions), 'smile');
+    assert.equal(core.resolveAffinityExpression('shy', 2, expressions), 'shy');
+    assert.equal(core.resolveAffinityExpression('worried', -8, expressions), 'worried');
+    assert.equal(core.resolveAffinityExpression('normal', 0, expressions), 'normal');
+    assert.equal(core.resolveAffinityExpression('', -2, ['normal', 'sad']), 'sad');
+    assert.match(core.buildExpressionAffinityGuidance('ko'), /expression/);
 });
 
 test('game and gallery affinity paths share the core normalizer', () => {
     assert.match(read('assets/js/modules/FreeTalkSystem.js'), /CupidFreeTalkCore\.normalizeAffinityChange\(change\)/);
     assert.match(read('assets/js/gallery-freetalk.js'), /GalleryFreeTalkCore\.normalizeAffinityChange\(value\)/);
     assert.match(read('assets/js/gallery-progress.js'), /CupidFreeTalkCore\.normalizeAffinityChange\(amount\)/);
+    assert.match(read('assets/js/modules/FreeTalkSystem.js'), /resolveAffinityExpression/);
+    assert.match(read('assets/js/gallery-freetalk.js'), /resolveAffinityExpression/);
 });
 
 test('latest-user canon strips URLs and preserves the newest user turn', () => {

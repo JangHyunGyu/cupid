@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.40';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.41';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 const GalleryFreeTalkCore = window.CupidFreeTalkCore;
@@ -1216,9 +1216,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             await this._typeText(displayText, displaySegments, requestContext);
             const assistantRenderReceipt = this._getChatRenderReceipt(displayText, displaySegments);
             this._assertRequestContext(requestContext, data);
-            if (parsed.expression) {
-                this._updateExpression(parsed.expression, requestCharId);
-            }
+            this._updateExpression(parsed.expression, requestCharId, parsed.affinity);
             this._assertRequestContext(requestContext, data);
             const affinityResult = this._applyAffinityChange(parsed.affinity, requestCharId);
             requestHistory.push({ role: 'assistant', content: displayText });
@@ -1800,14 +1798,19 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         }).join(' ');
     }
 
-    _updateExpression(expression, charId = this.currentCharId) {
+    _updateExpression(expression, charId = this.currentCharId, affinityChange = 0) {
         if (!charId) return;
         const validExprs = this.CHAR_EXPRESSIONS[charId] || [];
-        if (!validExprs.includes(expression)) return;
+        const resolvedExpression = GalleryFreeTalkCore.resolveAffinityExpression(
+            expression,
+            affinityChange,
+            validExprs
+        );
+        if (!validExprs.includes(resolvedExpression)) return;
 
         const img = document.getElementById('gft-char-img');
         if (img) {
-            img.src = `assets/images/characters/${charId}_${expression}.png?v=${window.ASSET_VERSION || ''}`;
+            img.src = `assets/images/characters/${charId}_${resolvedExpression}.png?v=${window.ASSET_VERSION || ''}`;
         }
     }
 
@@ -2205,6 +2208,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             : (this.progress?.getAffinity?.(charId) || 0);
         const relationshipState = this._getGalleryRelationshipState(currentAffinity);
         const affinityChangeGuidance = GalleryFreeTalkCore.buildAffinityChangeGuidance(this.lang);
+        const expressionAffinityGuidance = GalleryFreeTalkCore.buildExpressionAffinityGuidance(this.lang);
         const affinityRelationshipGuard = isEn
             ? `Established romance and affinity:
 - They are already post-PERFECT-ending adult lovers at every score. Never rewrite them as strangers, new acquaintances, an unconfessed crush, or automatically broken up.
@@ -2230,7 +2234,7 @@ ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}
 ${affinityRelationshipGuard}
 JSON only: {"segments":[{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":0}
-Types: narration/dialogue. segments must contain at least one item with non-empty text. Expressions: ${compactGalleryExpressions}. No single text field.
+Types: narration/dialogue. segments must contain at least one item with non-empty text. Expressions: ${compactGalleryExpressions}. ${expressionAffinityGuidance} No single text field.
 ===CACHE_BOUNDARY===
 ${compactGalleryState}`;
         }
@@ -2245,7 +2249,7 @@ ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}
 ${affinityRelationshipGuard}
 JSON만 출력: {"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":0}
-허용 type: narration, dialogue. segments에는 빈 문자열이 아닌 항목을 하나 이상 넣습니다. 허용 expression: ${compactGalleryExpressions}. text 단일 필드는 쓰지 마세요.
+허용 type: narration, dialogue. segments에는 빈 문자열이 아닌 항목을 하나 이상 넣습니다. 허용 expression: ${compactGalleryExpressions}. ${expressionAffinityGuidance} text 단일 필드는 쓰지 마세요.
 ===CACHE_BOUNDARY===
 ${compactGalleryState}`;
     }
