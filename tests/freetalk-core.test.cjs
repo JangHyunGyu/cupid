@@ -40,6 +40,10 @@ test('affinity changes use the shared asymmetric -50 to +5 range', () => {
     assert.match(core.buildAffinityChangeGuidance('en'), /-50 to \+5/);
     assert.match(core.buildAffinityChangeGuidance('ko'), /-6~-20/);
     assert.match(core.buildAffinityChangeGuidance('ko'), /-21~-50/);
+    assert.match(core.buildAffinityChangeGuidance('ko'), /0을 기본값으로 삼지 말고/);
+    assert.match(core.buildAffinityChangeGuidance('ko'), /겉으로 웃거나 태연하게 넘겨도/);
+    assert.match(core.buildAffinityChangeGuidance('en'), /Do not treat 0 as the default/);
+    assert.match(core.buildAffinityChangeGuidance('en'), /outwardly laughs it off or stays composed/);
 });
 
 test('outward expression remains independent from affinity direction', () => {
@@ -61,18 +65,34 @@ test('game and gallery affinity paths share the core normalizer', () => {
     assert.match(read('assets/js/gallery-freetalk.js'), /normalizeAvailableExpression/);
 });
 
-test('gallery incident timing is turn-based with a 60-turn guard and 100-turn ceiling', () => {
-    assert.equal(core.getGalleryIncidentTriggerChance(59), 0);
-    assert.equal(core.getGalleryIncidentTriggerChance(60), 0.02);
-    assert.equal(core.getGalleryIncidentTriggerChance(79), 0.02);
-    assert.equal(core.getGalleryIncidentTriggerChance(80), 0.05);
-    assert.equal(core.getGalleryIncidentTriggerChance(98), 0.05);
-    assert.equal(core.getGalleryIncidentTriggerChance(99), 1);
+test('gallery incident timing is turn-based with a 15-turn guard and 40-turn ceiling', () => {
+    assert.equal(core.getGalleryIncidentTriggerChance(14), 0);
+    assert.equal(core.getGalleryIncidentTriggerChance(15), 0.05);
+    assert.equal(core.getGalleryIncidentTriggerChance(24), 0.05);
+    assert.equal(core.getGalleryIncidentTriggerChance(25), 0.12);
+    assert.equal(core.getGalleryIncidentTriggerChance(38), 0.12);
+    assert.equal(core.getGalleryIncidentTriggerChance(39), 1);
 
-    const beforeCeiling = core.normalizeGalleryIncidentState({ completedTurns: 98, quietTurns: 98 });
+    const beforeCeiling = core.normalizeGalleryIncidentState({ completedTurns: 38, quietTurns: 38 });
     assert.equal(core.planGalleryIncident(beforeCeiling, 0.99, 0.1), null);
-    const atCeiling = core.normalizeGalleryIncidentState({ completedTurns: 99, quietTurns: 99 });
+    const atCeiling = core.normalizeGalleryIncidentState({ completedTurns: 39, quietTurns: 39 });
     assert.equal(core.planGalleryIncident(atCeiling, 0.99, 0.1).category, 'daily');
+
+    let survival = 1;
+    let expectedTurn = 0;
+    for (let quietTurns = 0; quietTurns < core.GALLERY_INCIDENT_POLICY.guaranteedTurn; quietTurns++) {
+        const chance = core.getGalleryIncidentTriggerChance(quietTurns);
+        expectedTurn += (quietTurns + 1) * survival * chance;
+        survival *= (1 - chance);
+    }
+    assert.ok(expectedTurn >= 25 && expectedTurn <= 29, `unexpected incident cadence: ${expectedTurn}`);
+});
+
+test('main and gallery prompts tell the model not to default affinity to zero', () => {
+    const prompts = read('assets/js/prompts.js');
+    const gallery = read('assets/js/gallery-freetalk.js');
+    assert.match(prompts, /0을 관성적으로 넣지 말고 위 판정 기준에 따라 고르세요/);
+    assert.match(gallery, /0을 관성적으로 넣지 말고 위 판정 기준에 따라 고르세요/);
 });
 
 test('gallery incident categories preserve 60/30/10 weighting when crisis is eligible', () => {

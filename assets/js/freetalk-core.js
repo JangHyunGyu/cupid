@@ -14,12 +14,12 @@
     const AFFINITY_CHANGE_MIN = -50;
     const AFFINITY_CHANGE_MAX = 5;
     const GALLERY_INCIDENT_POLICY = Object.freeze({
-        version: 2,
-        quietTurns: 60,
-        elevatedChanceTurn: 80,
-        guaranteedTurn: 100,
-        earlyChance: 0.02,
-        lateChance: 0.05,
+        version: 3,
+        quietTurns: 15,
+        elevatedChanceTurn: 25,
+        guaranteedTurn: 40,
+        earlyChance: 0.05,
+        lateChance: 0.12,
         crisisCooldownTurns: 300,
         crisisEvidenceThreshold: 6,
         recentIncidentLimit: 12,
@@ -45,9 +45,9 @@
     function buildAffinityChangeGuidance(lang = 'ko') {
         const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
         if (isKo) {
-            return `affinity에는 이번 사용자 입력과 이번 턴에 실제로 완결된 상호작용만 평가해 ${AFFINITY_CHANGE_MIN}~+${AFFINITY_CHANGE_MAX}의 정수를 넣으세요. 일반적인 어색함·실수는 -1~-5, 심한 무례·거짓말·경계 침해는 -6~-20, 반복적인 폭언·강요·위협은 -21~-50, 중립은 0, 긍정적인 대화는 +1~+5입니다. 평범한 턴은 대부분 0이며, 단순 인사나 일상적인 예의마다 점수를 주거나 호감도 설명으로 연기를 대신하지 마세요.`;
+            return `affinity에는 이번 사용자 입력과 이번 턴에 실제로 끝난 상호작용이 관계에 남긴 변화를 ${AFFINITY_CHANGE_MIN}~+${AFFINITY_CHANGE_MAX}의 정수로 넣으세요. 0을 기본값으로 삼지 말고 현재 호감도·장면·캐릭터 성격을 기준으로 이번 턴 뒤에 어떤 감정이 남았는지 판정하세요. 무심하게 말을 피하거나, 배려 없는 농담을 던지거나, 질투를 건드리거나, 싫다고 한 행동을 반복해 실제로 서운함·불편함·짜증·거리감이 남으면 -1~-5입니다. 명백한 무례·거짓말, 약속 위반이나 경계 침해는 -6~-20, 반복적인 폭언·강요·위협은 -21~-50입니다. 캐릭터가 겉으로 웃거나 태연하게 넘겨도 속으로 신뢰가 줄었다면 감점하세요. 배려·솔직함·관심으로 관계가 실제로 좋아졌다면 +1~+5, 관계 온도가 달라지지 않았을 때만 0입니다. 입력이 짧거나 수동적이라는 이유만으로 감점하지 마세요. 단순 인사나 일상적인 예의마다 점수를 주거나 호감도 설명으로 연기를 대신해서도 안 됩니다.`;
         }
-        return `Set affinity to an integer from ${AFFINITY_CHANGE_MIN} to +${AFFINITY_CHANGE_MAX}, judging only the user's latest contribution and the interaction completed in this turn. Use -1 to -5 for ordinary awkwardness or mistakes, -6 to -20 for serious disrespect, lies, or boundary violations, -21 to -50 for repeated abuse, coercion, or threats, 0 for a neutral turn, and +1 to +5 for a positive interaction. Most ordinary turns are 0; do not award points for every generic greeting or replace roleplay with score commentary.`;
+        return `Set affinity to an integer from ${AFFINITY_CHANGE_MIN} to +${AFFINITY_CHANGE_MAX} for the change this latest user contribution and completed interaction leave in the relationship. Do not treat 0 as the default; judge what feeling remains after the turn against the current affinity, immediate scene, and this character's own personality. Use -1 to -5 when the turn genuinely leaves hurt, discomfort, irritation, or distance, such as dismissive evasion, an inconsiderate joke, provoking jealousy, or repeating something the character said they dislike. Use -6 to -20 for clear disrespect, lies, broken promises, or boundary violations, and -21 to -50 for repeated abuse, coercion, or threats. Score a loss even when the character outwardly laughs it off or stays composed if trust actually falls. Use +1 to +5 when care, honesty, or attention genuinely improves the relationship, and 0 only when its emotional temperature does not change. Do not penalize an input merely for being short or passive, award points for routine greetings or ordinary courtesy, or replace roleplay with score commentary.`;
     }
 
     function buildExpressionAffinityGuidance(lang = 'ko') {
