@@ -51,6 +51,88 @@ test('new game reaches the name input scene without changing UI contracts', asyn
     await expect(page.locator('#name-input-container')).toBeVisible();
 });
 
+test('new game clears main chat context but preserves separate gallery memory', async ({ page }) => {
+    await page.goto('/game.html');
+    await waitForRuntime(page);
+    await page.waitForFunction(() => window.gameEngine?.freeTalkSystem);
+
+    const result = await page.evaluate(async () => {
+        const galleryMemory = {
+            seyoun: [{ role: 'user', content: 'gallery conversation stays' }]
+        };
+        localStorage.setItem('cupid_freetalk_memory', JSON.stringify(galleryMemory));
+        localStorage.setItem('cupid_freetalk_prompt_epochs_v1', JSON.stringify({
+            seyoun: { version: 1, carryover: 'gallery checkpoint' }
+        }));
+
+        const engine = window.gameEngine;
+        engine.stateManager.playerName = 'Previous Player';
+        engine.stateManager.currentDay = 5;
+        engine.stateManager.stats.Seoyeon.affinity = 87;
+        engine.stateManager.flags.ending_perfect_seoyeon = true;
+        engine.stateManager.chatMemories.Seoyeon = [{ role: 'user', content: 'old main run' }];
+        engine.stateManager.chatPromptEpochs.Seoyeon = { version: 1, carryover: 'old main run' };
+        engine.freeTalkSystem.freeTalkHistory = [{ role: 'user', content: 'in-flight old run' }];
+
+        await engine.startNewGame();
+
+        return {
+            playerName: engine.stateManager.playerName,
+            day: engine.stateManager.currentDay,
+            affinity: engine.stateManager.stats.Seoyeon.affinity,
+            flags: engine.stateManager.flags,
+            chatMemories: engine.stateManager.chatMemories,
+            promptEpochs: engine.stateManager.chatPromptEpochs,
+            runtimeHistory: engine.freeTalkSystem.freeTalkHistory,
+            galleryMemory: JSON.parse(localStorage.getItem('cupid_freetalk_memory') || '{}'),
+            galleryEpochs: JSON.parse(localStorage.getItem('cupid_freetalk_prompt_epochs_v1') || '{}')
+        };
+    });
+
+    expect(result.playerName).toBe('주인공');
+    expect(result.day).toBe(1);
+    expect(result.affinity).toBe(0);
+    expect(result.flags).toEqual({});
+    expect(result.chatMemories).toEqual({});
+    expect(result.promptEpochs).toEqual({});
+    expect(result.runtimeHistory).toEqual([]);
+    expect(result.galleryMemory.seyoun[0].content).toBe('gallery conversation stays');
+    expect(result.galleryEpochs.seyoun.carryover).toBe('gallery checkpoint');
+});
+
+test('main free-talk request keeps the complete per-character run history', async ({ page }) => {
+    await page.goto('/game.html');
+    await waitForRuntime(page);
+    await page.waitForFunction(() => window.FreeTalkSystem);
+
+    const result = await page.evaluate(() => {
+        const history = [{ role: 'system', content: 'current scene prompt' }];
+        for (let i = 0; i < 18; i += 1) {
+            history.push({ role: 'user', content: `user-${i}` });
+            history.push({ role: 'assistant', content: `assistant-${i}` });
+        }
+        const cleared = [];
+        const complete = window.FreeTalkSystem.prototype._buildWindowedHistory.call({
+            freeTalkHistory: history,
+            currentCharKey: 'Seoyeon',
+            stateManager: { clearChatPromptEpoch: charKey => cleared.push(charKey) }
+        }, history, 'Seoyeon');
+        return {
+            length: complete.length,
+            first: complete[0].content,
+            firstUser: complete[1].content,
+            last: complete[complete.length - 1].content,
+            cleared
+        };
+    });
+
+    expect(result.length).toBe(37);
+    expect(result.first).toBe('current scene prompt');
+    expect(result.firstUser).toBe('user-0');
+    expect(result.last).toBe('assistant-17');
+    expect(result.cleared).toEqual(['Seoyeon']);
+});
+
 test('gallery runtime includes the shared free-talk core', async ({ page }) => {
     await page.goto('/gallery.html');
     await page.waitForFunction(() => window.GalleryFreeTalk && window.CupidFreeTalkCore);

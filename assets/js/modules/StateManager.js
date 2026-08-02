@@ -68,6 +68,29 @@ class StateManager {
     }
 
     /**
+     * 새 회차를 위한 본편 상태 초기화
+     * - 같은 StateManager 인스턴스를 참조하는 하위 시스템을 유지하면서
+     *   이름, 날짜, 호감도, 플래그, 본편 AI 대화 문맥만 초기화합니다.
+     * - 갤러리 localStorage와 D1 대화 로그는 이 클래스의 소유가 아니므로 건드리지 않습니다.
+     */
+    resetForNewGame() {
+        const lang = window.GAME_LANG || 'ko';
+        this.playerName = { en: "Protagonist", es: "Protagonista", ja: "主人公", fr: "Protagoniste", de: "Protagonist", pt: "Protagonista" }[lang] || "주인공";
+        this.currentDay = 1;
+        this.stats = {
+            Seoyeon: { affinity: 0 },
+            Yuna: { affinity: 0 },
+            Dain: { affinity: 0 },
+            Teacher: { affinity: 0 },
+            Nurse: { affinity: 0 }
+        };
+        this.currentCharacter = null;
+        this.chatMemories = {};
+        this.chatPromptEpochs = {};
+        this.flags = {};
+    }
+
+    /**
      * 플레이어 이름 설정
      * @param {string} name - 새로운 이름 (한글 1~6글자 / 영문 1~12글자)
      */
@@ -157,16 +180,16 @@ class StateManager {
 
     /**
      * AI 대화 기록 저장
-     * - 최근 20개 대화를 유지해 현재 prompt epoch anchor를 보존
+     * - 현재 회차에서 캐릭터와 나눈 전체 대화를 엔딩까지 누적
      * - 시스템 프롬프트는 제외하고 저장
      *
      * @param {string} charName - 캐릭터 이름
      * @param {Array} history - 대화 기록 배열 [{role, content}, ...]
      */
     setChatMemory(charName, history) {
-        // 시스템 메시지 제외, 최근 20개 저장
-        const chatOnly = history.filter(m => m.role !== "system");
-        this.chatMemories[charName] = chatOnly.slice(-20);
+        // 시스템 메시지를 제외한 본편 원문 로그는 자르지 않습니다.
+        const chatOnly = (Array.isArray(history) ? history : []).filter(m => m.role !== "system");
+        this.chatMemories[charName] = chatOnly.slice();
         if (chatOnly.length === 0) delete this.chatPromptEpochs[charName];
     }
 

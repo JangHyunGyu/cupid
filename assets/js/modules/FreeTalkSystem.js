@@ -130,9 +130,6 @@ class FreeTalkSystem {
          */
         this.freeTalkHistory = [];
 
-        /** 슬라이딩 윈도우: 시스템 메시지 외 최근 N개만 fetch에 전송 (토큰 폭증 방지) */
-        this.HISTORY_WINDOW = 10;
-
         /** 현재 프리토킹 씬의 ID */
         this.currentSceneId = null;
 
@@ -499,6 +496,7 @@ class FreeTalkSystem {
                 return;
             }
             startHistory.push({ role: "assistant", content: scene.text });
+            this.stateManager.setChatMemory(charKey, startHistory);
         }
 
         // 초기 대사 출력 후 입력창에 포커스 (모바일 키보드 활성화)
@@ -554,6 +552,24 @@ class FreeTalkSystem {
             this._activeRequestOwner = null;
             this._activeRequestContext = null;
         }
+    }
+
+    /**
+     * 새 게임 시작 시 본편 프리토킹의 실행 중 상태와 로컬 문맥만 초기화합니다.
+     * 원격 D1 로그와 별도 갤러리 메모리는 이 시스템에서 삭제하지 않습니다.
+     */
+    resetForNewGame() {
+        this._invalidateFreeTalkContext();
+        this.isFreeTalking = false;
+        this.isProcessingChat = false;
+        this.freeTalkTurns = 0;
+        this.currentMaxTurns = DEFAULT_MAX_FREE_TALK_TURNS;
+        this.freeTalkHistory = [];
+        this.currentSceneId = null;
+        this.currentCharKey = null;
+        this._isRemote = false;
+        this._activeChatTurnId = null;
+        this.uiManager?.removeStagedImage?.();
     }
 
     _isRequestContextCurrent(requestContext) {
@@ -624,8 +640,10 @@ class FreeTalkSystem {
     _forceLatestUserMessageLast(messages = [], latestContent = '') {
         const text = String(latestContent || '');
         if (!text) return Array.isArray(messages) ? messages : [];
-        const withoutDuplicate = (Array.isArray(messages) ? messages : []).filter(msg => !(msg?.role === 'user' && msg.content === text));
-        return [...withoutDuplicate, { role: 'user', content: text }];
+        const completeHistory = Array.isArray(messages) ? messages.slice() : [];
+        const lastMessage = completeHistory[completeHistory.length - 1];
+        if (lastMessage?.role === 'user' && lastMessage.content === text) return completeHistory;
+        return [...completeHistory, { role: 'user', content: text }];
     }
 
     async sendChatMessage(getSceneFn) {
@@ -750,13 +768,13 @@ class FreeTalkSystem {
             // - messages: 대화 기록 전체 (시스템 프롬프트 + 대화 내용)
             // [Explicit Caching] 캐시 키 — static 영역이 유저 중립(placeholder 유지)이라 전체 유저 공유 캐시 가능
             const _lang = window.GAME_LANG || document.documentElement.lang || 'ko';
-            // [Prompt epoch] 구간 안에서는 append-only, 초과 시 고정 체크포인트와 최근 tail로 롤오버
+            // 같은 회차에서 이 캐릭터와 나눈 본편 대화 전체를 순서대로 전달합니다.
             this._assertRequestContext(requestContext);
-            const _windowed = this._sanitizeDainOutfitHistory(this._buildWindowedHistory(requestHistory, charKey), charKey);
+            const _completeHistory = this._sanitizeDainOutfitHistory(this._buildWindowedHistory(requestHistory, charKey), charKey);
             // 토큰 절감: 최근 5개 메시지 외의 이미지는 [이전 사진]으로 치환
             let _optimized = (typeof window.optimizeImageHistory === 'function')
-                ? window.optimizeImageHistory(_windowed, 5)
-                : _windowed;
+                ? window.optimizeImageHistory(_completeHistory, 5)
+                : _completeHistory;
             const _latestUserCanonBlock = buildCupidLatestUserCanonBlock(_optimized, _lang, finalContent);
             const _inWorldUserRoleBlock = this._buildInWorldUserRoleBlock(_optimized);
             const _recentRepetitionGuard = buildCupidRecentExpressionRepetitionGuard(_optimized, _lang);
@@ -1165,28 +1183,11 @@ class FreeTalkSystem {
         });
     }
 
-    /**
-     * Builds append-only request history inside a cacheable prompt epoch.
-     */
+    /** 같은 회차의 캐릭터별 본편 대화 전체를 원래 순서대로 반환합니다. */
     _buildWindowedHistory(history = this.freeTalkHistory, charKey = this.currentCharKey) {
         if (!Array.isArray(history) || history.length === 0) return [];
-        if (typeof window.buildCupidPromptEpoch !== 'function') {
-            const sysMsg = history[0];
-            if (!sysMsg || sysMsg.role !== 'system') return history.slice(-this.HISTORY_WINDOW);
-            const rest = history.slice(1);
-            return rest.length <= this.HISTORY_WINDOW
-                ? history
-                : [sysMsg, ...rest.slice(-this.HISTORY_WINDOW)];
-        }
-
-        const result = window.buildCupidPromptEpoch(history, {
-            state: this.stateManager.getChatPromptEpoch?.(charKey),
-            maxMessages: this.HISTORY_WINDOW,
-            retainMessages: 2,
-            carryoverChars: 1800
-        });
-        this.stateManager.setChatPromptEpoch?.(charKey, result.state);
-        return result.messages;
+        this.stateManager.clearChatPromptEpoch?.(charKey);
+        return history.slice();
     }
 
     _buildInWorldUserRoleBlock(messages) {

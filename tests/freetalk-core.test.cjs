@@ -204,3 +204,73 @@ test('repetition guard is deterministic for equivalent history', () => {
         core.buildRecentExpressionRepetitionGuard(structuredClone(history), 'ko')
     );
 });
+
+test('main story keeps every character message for the current run', () => {
+    const stateWindow = { GAME_LANG: 'ko' };
+    vm.runInNewContext(read('assets/js/modules/StateManager.js'), {
+        window: stateWindow,
+        console: { log() {}, error() {} }
+    });
+    const state = new stateWindow.StateManager();
+    const fullHistory = [{ role: 'system', content: 'current scene prompt' }];
+    for (let i = 0; i < 18; i++) {
+        fullHistory.push({ role: 'user', content: `user-${i}` });
+        fullHistory.push({ role: 'assistant', content: `assistant-${i}` });
+    }
+
+    state.setChatMemory('Seoyeon', fullHistory);
+
+    assert.equal(state.getChatMemory('Seoyeon').length, 36);
+    assert.equal(state.getChatMemory('Seoyeon')[0].content, 'user-0');
+    assert.equal(state.getChatMemory('Seoyeon')[35].content, 'assistant-17');
+
+    const freeTalk = read('assets/js/modules/FreeTalkSystem.js');
+    const builderStart = freeTalk.indexOf('    _buildWindowedHistory(');
+    const builderEnd = freeTalk.indexOf('    _buildInWorldUserRoleBlock(', builderStart);
+    const builder = freeTalk.slice(builderStart, builderEnd);
+    assert.match(builder, /return history\.slice\(\);/);
+    assert.doesNotMatch(builder, /HISTORY_WINDOW|buildCupidPromptEpoch|slice\(-/);
+
+    const latestStart = freeTalk.indexOf('    _forceLatestUserMessageLast(');
+    const latestEnd = freeTalk.indexOf('    async sendChatMessage(', latestStart);
+    const latest = freeTalk.slice(latestStart, latestEnd);
+    assert.doesNotMatch(latest, /\.filter\(/);
+    assert.match(latest, /lastMessage\?\.role === 'user'/);
+});
+
+test('new game clears only main-run state while gallery and D1 remain separate', () => {
+    const stateWindow = { GAME_LANG: 'en' };
+    vm.runInNewContext(read('assets/js/modules/StateManager.js'), {
+        window: stateWindow,
+        console: { log() {}, error() {} }
+    });
+    const state = new stateWindow.StateManager();
+    state.playerName = 'Previous Player';
+    state.currentDay = 5;
+    state.stats.Seoyeon.affinity = 87;
+    state.flags.ending_perfect_seoyeon = true;
+    state.chatMemories.Seoyeon = [{ role: 'user', content: 'old run' }];
+    state.chatPromptEpochs.Seoyeon = { version: 1, carryover: 'old run' };
+
+    state.resetForNewGame();
+
+    assert.equal(state.playerName, 'Protagonist');
+    assert.equal(state.currentDay, 1);
+    assert.equal(state.stats.Seoyeon.affinity, 0);
+    assert.equal(Object.keys(state.flags).length, 0);
+    assert.equal(Object.keys(state.chatMemories).length, 0);
+    assert.equal(Object.keys(state.chatPromptEpochs).length, 0);
+
+    const gameEngine = read('assets/js/modules/GameEngine.js');
+    const start = gameEngine.indexOf('    async startNewGame()');
+    const end = gameEngine.indexOf('    async continueGame()', start);
+    const newGame = gameEngine.slice(start, end);
+    assert.match(newGame, /this\.freeTalkSystem\.resetForNewGame\(\)/);
+    assert.match(newGame, /this\.stateManager\.resetForNewGame\(\)/);
+    assert.match(newGame, /this\.saveManager\.clear\(\)/);
+    assert.doesNotMatch(newGame, /cupid_freetalk_memory|chat-logs|fetch\(/);
+
+    const gallery = read('assets/js/gallery-freetalk.js');
+    assert.match(gallery, /this\.MEMORY_KEY = 'cupid_freetalk_memory'/);
+    assert.match(gallery, /all\[charId\] = chatOnly\.slice\(-20\)/);
+});

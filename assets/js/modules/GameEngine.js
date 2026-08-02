@@ -1500,15 +1500,24 @@ class GameEngine {
      *
      * ▶ 처리 순서:
      * 1. 사운드 매니저 초기화 (사용자 인터랙션 필요)
-     * 2. 기존 세이브 데이터 삭제
-     * 3. "start" 씬부터 렌더링 시작
+     * 2. 실행 중인 본편 대화 문맥 무효화
+     * 3. 본편 상태와 로컬 세이브 초기화
+     * 4. "start" 씬부터 렌더링 시작
+     *
+     * 갤러리 메모리와 원격 D1 대화 로그는 새 회차에서도 보존합니다.
      */
     async startNewGame() {
         // 🔊 사운드 매니저 초기화
         // 브라우저 정책상 사용자 클릭 후에만 오디오 재생 가능
         if (typeof soundManager !== 'undefined') soundManager.init();
 
-        // 🗑️ 기존 저장 데이터 모두 삭제
+        // 진행 중인 응답이 초기화 뒤 이전 대화를 다시 저장하지 못하게 먼저 무효화
+        this.freeTalkSystem.resetForNewGame();
+
+        // 본편의 이름, 호감도, 플래그, 캐릭터별 대화 문맥을 새 회차 기본값으로 초기화
+        this.stateManager.resetForNewGame();
+
+        // 🗑️ 본편 로컬 세이브만 삭제 (갤러리와 D1 로그는 별도 보존)
         this.saveManager.clear();
 
         // 🎬 "start" 씬부터 게임 시작
