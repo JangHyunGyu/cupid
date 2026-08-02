@@ -2321,6 +2321,7 @@ const BANNED_PATTERNS = [
     { pattern: /\([^)]*웃으며\)/g, desc: '(괄호) 지문 형식 사용 — *이탤릭* 형식으로 변경 필요' },
     { pattern: /\([^)]*하며\)/g, desc: '(괄호) 지문 형식 사용 — *이탤릭* 형식으로 변경 필요' },
     { pattern: /\([^)]*치며\)/g, desc: '(괄호) 지문 형식 사용 — *이탤릭* 형식으로 변경 필요' },
+    { pattern: /(?:고|며|지만|면서|아서|어서|는데),/g, desc: '연결어미 바로 뒤 쉼표 사용 — 한국어 호흡에 맞게 쉼표 제거 필요' },
     { pattern: /심장이 미친 듯이|심장이 뛴다|심장이 빨리/g, desc: '과도한 감정 서술 — 행동/디테일로 대체' },
     { pattern: /바, 바보|후훗|쿡쿡/g, desc: '일본식 번역체' },
     { pattern: /콩닥콩닥|두근두근/g, desc: '올드 미연시 클리셰' },
@@ -2331,7 +2332,7 @@ let styleIssues = 0;
 for (const [sceneId, entry] of Object.entries(i18nData)) {
     const text = entry.text || '';
     const choices = entry.choices || [];
-    const allTexts = [text, ...choices];
+    const allTexts = [text, ...choices, entry.context || '', entry.personality || ''];
     for (const t of allTexts) {
         for (const { pattern, desc } of BANNED_PATTERNS) {
             pattern.lastIndex = 0;

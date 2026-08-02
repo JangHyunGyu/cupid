@@ -77,7 +77,7 @@
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*'거절도 네가 해야 할 일이야.' 민수의 말이 떠오른다. 갤러리 속 소정이는 웃고 있고, 메모장 38번의 보내기 버튼은 아직 파랗다.*"
+        "text": "*'거절도 네가 해야 할 일이야.' 민수의 말이 떠오른다. 갤러리 속 소정이는 웃고 있고 메모장 38번의 보내기 버튼은 아직 파랗다.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
@@ -97,15 +97,15 @@
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",
-        "text": "*눈을 감자, 옥상 난간이 먼저 떠오른다.*"
+        "text": "*눈을 감자 옥상 난간이 먼저 떠오른다.*"
     },
     "night3_dream_yuna_bonus": {
         "name": "{name}",
-        "text": "*눈을 감자, 도서관 별관 창문이 먼저 떠오른다.*"
+        "text": "*눈을 감자 도서관 별관 창문이 먼저 떠오른다.*"
     },
     "night3_dream_dain_bonus": {
         "name": "{name}",
-        "text": "*눈을 감자, 체육관 바닥에 공 튀는 소리가 떠오른다.*"
+        "text": "*눈을 감자 체육관 바닥에 공 튀는 소리가 떠오른다.*"
     },
     "night3_cheat_msg_1": {
         "name": "{name}",
@@ -202,7 +202,7 @@
     },
     "night3_nightmare_end": {
         "name": "{name}",
-        "text": "*입력창 하나에 문장이 남고, 나머지 두 대화방은 닫힌다. 아직 보내지는 않았다.*"
+        "text": "*입력창 하나에 문장이 남고 나머지 두 대화방은 닫힌다. 아직 보내지는 않았다.*"
     },
     "night3_nightmare_end_3": {
         "name": "{name}",
