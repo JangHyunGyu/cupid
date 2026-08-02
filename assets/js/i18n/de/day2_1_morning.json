@@ -218,6 +218,7 @@
         "text": "*Meine Klassenlehrerin hört auf, die Schublade schließen zu wollen, und wartet auf meine Antwort.*",
         "choices": [
             "Und Sie? Was lesen Sie?",
+            "Ja, ich lese gern",
             "Sie lesen doch bestimmt nur schwierige Bücher, oder?"
         ]
     },
@@ -227,7 +228,7 @@
     },
     "hidden_homeroom_d2_choice1_b": {
         "name": "Klassenlehrerin",
-        "text": "Nur weil ich Lehrerin bin, muss mein Geschmack nicht auch kompliziert sein."
+        "text": "*Sie dreht den Henkel ihrer Kaffeetasse einmal ganz herum.* Wirklich? Schönes Hobby."
     },
     "hidden_homeroom_d2_5": {
         "name": "Klassenlehrerin",
@@ -362,5 +363,9 @@
     "morning2_end": {
         "name": "{name}",
         "text": "*Laut Minsu hat Seoyeon ein ganzes Jahr lang niemanden zuerst gegrüßt. Heute ist sie bis vor mein Klassenzimmer gekommen.*"
+    },
+    "hidden_homeroom_d2_choice1_trap": {
+        "name": "Klassenlehrerin",
+        "text": "Nur weil ich Lehrerin bin, muss mein Geschmack nicht auch kompliziert sein."
     }
 }

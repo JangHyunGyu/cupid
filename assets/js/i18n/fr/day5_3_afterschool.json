@@ -267,7 +267,8 @@
         "text": "*Le coin du téléphone appuie dans ma paume.*",
         "choices": [
             "Le dire maintenant",
-            "Ne pas gâcher l'ambiance maintenant."
+            "Ne pas encore le dire",
+            "Prenons tous les deux le temps de réfléchir."
         ]
     },
     "after5_confess_yes": {
@@ -376,5 +377,18 @@
     "after5_harem_walk_2": {
         "name": "{name}",
         "text": "*Les messages auxquels je n'ai pas répondu restent sur l'écran de verrouillage. Mes pas prennent la direction du parc.*"
+    },
+    "after5_defer_route_check": {},
+    "after5_defer_seo": {
+        "name": "Seoyeon",
+        "text": "*Elle baisse lentement la main qu'elle tendait.* D'accord. Si c'est ce que tu as décidé."
+    },
+    "after5_defer_dain": {
+        "name": "Dain",
+        "text": "*Elle serre de nouveau le ballon contre elle.* ...D'accord. Même si c'est moi qui attendais."
+    },
+    "after5_defer_yuna": {
+        "name": "Yuna",
+        "text": "*Elle ramène le livre contre elle.* D'accord. Même si c'est toi qui m'as demandé d'attendre."
     }
 }

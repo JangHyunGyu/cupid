@@ -150,6 +150,7 @@
         "text": "*Um dedo envolto em um lenço umedecido se aproxima da minha boca.*",
         "choices": [
             "Ficar parado",
+            "Eu mesmo limpo",
             "Isso eu consigo fazer sozinho."
         ]
     },
@@ -682,5 +683,9 @@
     "lunch2_yuna_end": {
         "name": "{name}",
         "text": "*Antes de fechar a porta, olho para trás. Yuna voltou a abrir o livro na página em que parou ao dizer «vinha».*"
+    },
+    "lunch2_seo_trap_1": {
+        "name": "Seoyeon",
+        "text": "*Ela recolhe o lenço umedecido.* Claro. Você se vira muito bem sozinho."
     }
 }

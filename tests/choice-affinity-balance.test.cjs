@@ -59,8 +59,34 @@ test('direct choice affinity distribution keeps subtle penalties meaningful but 
         }
     }
 
-    assert.equal(total, 141);
-    assert.deepEqual(counts, { positive: 48, negative: 42, neutral: 50, mixed: 1 });
+    assert.equal(total, 153);
+    assert.deepEqual(counts, { positive: 59, negative: 42, neutral: 51, mixed: 1 });
+});
+
+test('two-option screens retain their original response and add the trap as a third choice', () => {
+    const restoredOptions = [
+        ['lunch_dain_choice', { Dain: 3 }, '아는 척한 거야.'],
+        ['after_nurse_enter_choice', { Nurse: 3 }, '보건실은 조용하네요'],
+        ['hidden_homeroom_d2_choice1', { Teacher: 3 }, '읽는 건 좋아해요'],
+        ['lunch2_seo_choice', { Seoyeon: 3 }, '직접 닦을게'],
+        ['after2_yuna_choice', { Yuna: 5 }, '조용해서 좋다'],
+        ['hidden_homeroom_d4_cafe_choice', { Teacher: 5 }, '문예부 애들한테도 전부 보여주실 거죠?'],
+        ['hidden_nurse_d4_name_choice', { Nurse: 3 }, '병원과 학교는 뭐가 제일 달라요?'],
+        ['hidden_nurse_d4_choice', { Nurse: 3 }, '괜찮아요, 저 이만 갈게요'],
+        ['date_seo_compliment_choice', { Seoyeon: 5 }, '신경 많이 썼다, 오늘.'],
+        ['date_yuna_compliment_choice', { Yuna: 5 }, '오늘은 좀 달라 보이네.'],
+        ['hidden_nurse_d5_choice', { Nurse: 5 }, '카드보다 상담실 예약 방법을 알려주세요.'],
+        ['after5_last_chance_choice', {}, '아직 말하지 않는다']
+    ];
+
+    for (const [sceneId, effects, text] of restoredOptions) {
+        assert.equal(scenes[sceneId]?.choices?.length, 3, `${sceneId} must expose the added trap separately`);
+        const choice = scenes[sceneId].choices[1];
+        for (const [character, affinity] of Object.entries(effects)) {
+            assert.equal(choice.stats?.[character]?.affinity, affinity, `${sceneId} restored affinity drifted`);
+        }
+        assert.equal(korean[sceneId]?.choices?.[1], text, `${sceneId} restored Korean copy drifted`);
+    }
 });
 
 test('negative-choice screens stay distributed across every story day', () => {
@@ -89,28 +115,28 @@ test('negative-choice screens stay distributed across every story day', () => {
 test('character-specific trap choices retain their understated Korean wording and penalties', () => {
     const traps = [
         ['lunch_seo_choice', 1, { Seoyeon: -2 }, '직접 먹는 게 더 맛있을걸'],
-        ['lunch_dain_choice', 1, { Dain: -3 }, '그냥 분위기 맞춰 본 거야.'],
+        ['lunch_dain_choice', 2, { Dain: -3 }, '그냥 분위기 맞춰 본 거야.'],
         ['lunch_yuna_choice', 1, { Yuna: -2 }, '조용히 책만 읽는 거 좋아하나 봐.'],
         ['after_homeroom_honest_choice2', 1, { Teacher: -2 }, '그럼 다음에도 주스로 부탁드릴게요, 선생님.'],
-        ['after_nurse_enter_choice', 1, { Nurse: -3 }, '여긴 선생님 혼자 계셔서 편하시겠어요.'],
-        ['hidden_homeroom_d2_choice1', 1, { Teacher: -3 }, '선생님은 어려운 책만 읽으시죠?'],
-        ['lunch2_seo_choice', 1, { Seoyeon: -2 }, '이 정도는 혼자 할 수 있어.'],
+        ['after_nurse_enter_choice', 2, { Nurse: -3 }, '여긴 선생님 혼자 계셔서 편하시겠어요.'],
+        ['hidden_homeroom_d2_choice1', 2, { Teacher: -3 }, '선생님은 어려운 책만 읽으시죠?'],
+        ['lunch2_seo_choice', 2, { Seoyeon: -2 }, '이 정도는 혼자 할 수 있어.'],
         ['lunch2_yuna_choice', 0, { Yuna: -3 }, '그 사람, 지금은?'],
         ['hidden_nurse_d2_choice1', 1, { Nurse: -2 }, '밴드 하나도 꼼꼼하시네요.'],
         ['hidden_nurse_d2_choice2', 1, { Nurse: -3 }, '네, 안 봤어요'],
         ['after2_seo_choice1', 1, { Seoyeon: -3 }, '매일 하는 거면 익숙하겠네.'],
-        ['after2_yuna_choice', 1, { Yuna: -3 }, '너랑 있으면 굳이 말 안 해도 돼서 편해.'],
+        ['after2_yuna_choice', 2, { Yuna: -3 }, '너랑 있으면 굳이 말 안 해도 돼서 편해.'],
         ['hidden_homeroom_d3_choice', 1, { Teacher: -3 }, '죄송합니다, 안 봤어요.'],
-        ['hidden_homeroom_d4_cafe_choice', 1, { Teacher: -4 }, '선생님 글이면 애들도 좋다고 하겠네요.'],
-        ['hidden_nurse_d4_name_choice', 1, { Nurse: -3 }, '학교에선 크게 다칠 일도 드물어서 마음은 좀 편하시겠어요.'],
-        ['hidden_nurse_d4_choice', 1, { Nurse: -4 }, '선생님이 하시는 게 더 빠르겠어요.'],
-        ['date_seo_compliment_choice', 1, { Seoyeon: -4 }, '역시 학생회장은 데이트도 빈틈없네.'],
-        ['date_yuna_compliment_choice', 1, { Yuna: -3 }, '오늘은 좀 달라 보이네.'],
+        ['hidden_homeroom_d4_cafe_choice', 2, { Teacher: -4 }, '선생님 글이면 애들도 좋다고 하겠네요.'],
+        ['hidden_nurse_d4_name_choice', 2, { Nurse: -3 }, '학교에선 크게 다칠 일도 드물어서 마음은 좀 편하시겠어요.'],
+        ['hidden_nurse_d4_choice', 2, { Nurse: -4 }, '선생님이 하시는 게 더 빠르겠어요.'],
+        ['date_seo_compliment_choice', 2, { Seoyeon: -4 }, '역시 학생회장은 데이트도 빈틈없네.'],
+        ['date_yuna_compliment_choice', 2, { Yuna: -3 }, '평소보다 훨씬 말 걸기 편해 보여.'],
         ['date_dain_compliment_choice', 1, { Dain: -3 }, '역시 운동복이 제일 너답다.'],
         ['wall_seo_line_choice', 2, { Seoyeon: -4 }, '굳이 설명 안 해도 알 것 같아.'],
         ['wall_dain_choice', 2, { Dain: -4 }, '공부터 정리하자. 내일 병원도 예약하고.'],
-        ['hidden_nurse_d5_choice', 1, { Nurse: -6 }, '이 카드만 있으면 상담실까지는 안 가도 되겠네요.'],
-        ['after5_last_chance_choice', 1, { '#{current_character}': -4 }, '지금은 분위기를 깨지 않는다.']
+        ['hidden_nurse_d5_choice', 2, { Nurse: -6 }, '이 카드만 있으면 상담실까지는 안 가도 되겠네요.'],
+        ['after5_last_chance_choice', 2, { '#{current_character}': -4 }, '오늘은 서로 생각할 시간을 갖자.']
     ];
 
     for (const [sceneId, choiceIndex, effects, text] of traps) {
@@ -123,18 +149,23 @@ test('character-specific trap choices retain their understated Korean wording an
     }
 
     const reactions = {
-        lunch_dain_c2_1: '관심 없으면 없다고 해. 맞춰주는 건 더 싫어.',
-        after_nurse_enter_choice_b: '편해 보였구나. 여긴 조용할수록 긴장하는 곳인데.',
-        hidden_homeroom_d2_choice1_b: '선생님이라고 취향까지 어려울 필요는 없지.',
-        after2_yuna_quiet: '…여기가 아니라, 내 얘기인 줄 알았는데.',
-        date_seo_bright: '*가방끈에서 손을 뗀다.* 오늘은 학생회장으로 나온 거 아닌데.',
+        lunch_dain_trap_1: '관심 없으면 없다고 해. 맞춰주는 건 더 싫어.',
+        after_nurse_enter_trap: '편해 보였구나. 여긴 조용할수록 긴장하는 곳인데.',
+        hidden_homeroom_d2_choice1_trap: '선생님이라고 취향까지 어려울 필요는 없지.',
+        lunch2_seo_trap_1: '*물티슈를 거둔다.* 그래. 혼자서 잘하니까.',
+        after2_yuna_trap: '…여기가 아니라, 내 얘기인 줄 알았는데.',
+        date_seo_role_trap: '*가방끈에서 손을 뗀다.* 오늘은 학생회장으로 나온 거 아닌데.',
+        date_yuna_trap: '평소에는 말 걸기 불편했나 보네.',
         date_dain_bright: '*웃던 다인이 모자챙을 한 번 더 눌러쓴다.* ...그렇지. 운동복이 편하니까.',
-        hidden_homeroom_d4_cafe_choice_b: '그런 합평이면 받을 이유가 없지. 선생님 글이라고 봐주는 건 싫어.',
-        hidden_nurse_d4_name_choice_b: '크게 다치는 일만 일이면 좋겠네. 말 못 하고 버티는 애들이 더 많아.',
-        hidden_nurse_d4_pass: '빠르긴 하겠지. 그래도 같이 하자고 물은 건 속도 때문이 아니었는데.',
+        hidden_homeroom_d4_cafe_trap: '그런 합평이면 받을 이유가 없지. 선생님 글이라고 봐주는 건 싫어.',
+        hidden_nurse_d4_name_trap: '크게 다치는 일만 일이면 좋겠네. 말 못 하고 버티는 애들이 더 많아.',
+        hidden_nurse_d4_trap: '빠르긴 하겠지. 그래도 같이 하자고 물은 건 속도 때문이 아니었는데.',
         wall_seo_line_react_3: '아는 척하지 마.',
         wall_dain_lastspike_2: '*공 보관함을 보다가 다인이 고개를 든다.* 잠깐. 왜 네가 다 정해.',
-        hidden_nurse_d5_choice_b: '반대야. 혼자 버티라고 만든 카드가 아니야.'
+        hidden_nurse_d5_choice_trap: '반대야. 혼자 버티라고 만든 카드가 아니야.',
+        after5_defer_seo: '*펴고 있던 손을 천천히 거둔다.* 그래. 네가 정했으면.',
+        after5_defer_dain: '*배구공을 다시 끌어안는다.* ...그래. 기다린 쪽은 나였지만.',
+        after5_defer_yuna: '*책을 다시 품에 안는다.* 알겠어. 기다리라고 한 건 너였지만.'
     };
 
     for (const [sceneId, text] of Object.entries(reactions)) {
@@ -142,11 +173,11 @@ test('character-specific trap choices retain their understated Korean wording an
     }
 
     const authoredReactionAvatars = {
-        lunch_dain_c2_1: 'dain_normal.png',
-        after2_yuna_quiet: 'yuna_normal.png',
-        after2_yuna_quiet_react: 'yuna_normal.png',
-        date_seo_bright: 'seyoun_normal.png',
-        date_yuna_bright: 'yuna_normal.png'
+        lunch_dain_trap_1: 'dain_normal.png',
+        after2_yuna_trap: 'yuna_normal.png',
+        after2_yuna_trap_react: 'yuna_normal.png',
+        date_seo_role_trap: 'seyoun_normal.png',
+        date_yuna_trap: 'yuna_normal.png'
     };
     for (const [sceneId, filename] of Object.entries(authoredReactionAvatars)) {
         assert.ok(

@@ -150,6 +150,7 @@
         "text": "*Ein in ein Feuchttuch gewickelter Finger nähert sich meinem Mund.*",
         "choices": [
             "Still halten",
+            "Ich wisch das selbst ab",
             "Das schaffe ich schon allein."
         ]
     },
@@ -682,5 +683,9 @@
     "lunch2_yuna_end": {
         "name": "{name}",
         "text": "*Bevor ich die Tür schließe, blicke ich zurück. Yuna hat wieder die Seite aufgeschlagen, bei der sie nach »Früher war hier noch jemand« aufgehört hatte.*"
+    },
+    "lunch2_seo_trap_1": {
+        "name": "Seoyeon",
+        "text": "*Sie zieht das Feuchttuch zurück.* Klar. Du kommst ja allein zurecht."
     }
 }

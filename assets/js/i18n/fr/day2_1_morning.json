@@ -218,6 +218,7 @@
         "text": "*Alors qu'elle allait refermer le tiroir, la professeure retire sa main et attend ma réponse.*",
         "choices": [
             "Et vous ? Vous lisez quoi ?",
+            "Oui, j'aime lire",
             "Vous ne lisez que des livres difficiles, non ?"
         ]
     },
@@ -227,7 +228,7 @@
     },
     "hidden_homeroom_d2_choice1_b": {
         "name": "Professeure principale",
-        "text": "Ce n'est pas parce que je suis prof que mes goûts doivent être compliqués."
+        "text": "*Elle fait faire un tour complet à l'anse de sa tasse.* Ah oui ? C'est un joli passe-temps."
     },
     "hidden_homeroom_d2_5": {
         "name": "Professeure principale",
@@ -362,5 +363,9 @@
     "morning2_end": {
         "name": "{name}",
         "text": "*D'après Minsu, Seoyeon ne l'avait pas salué une seule fois en un an. Aujourd'hui, elle est venue jusque devant ma classe.*"
+    },
+    "hidden_homeroom_d2_choice1_trap": {
+        "name": "Professeure principale",
+        "text": "Ce n'est pas parce que je suis prof que mes goûts doivent être compliqués."
     }
 }

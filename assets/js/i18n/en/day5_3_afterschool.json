@@ -267,7 +267,8 @@
         "text": "*My phone presses into my palm.*",
         "choices": [
             "Say it now",
-            "Don't break the mood right now."
+            "Don't say it yet",
+            "Let us both take some time to think."
         ]
     },
     "after5_confess_yes": {
@@ -376,5 +377,18 @@
     "after5_harem_walk_2": {
         "name": "{name}",
         "text": "*Unanswered messages remain on my lock screen. My feet turn toward the park.*"
+    },
+    "after5_defer_route_check": {},
+    "after5_defer_seo": {
+        "name": "Seoyeon",
+        "text": "*She slowly lowers her open hand.* Fine. If that is what you decided."
+    },
+    "after5_defer_dain": {
+        "name": "Dain",
+        "text": "*She hugs the volleyball to her chest again.* ...Fine. Even though I was the one waiting."
+    },
+    "after5_defer_yuna": {
+        "name": "Yuna",
+        "text": "*She pulls the book back to her chest.* Okay. Even though you were the one who asked me to wait."
     }
 }

@@ -295,6 +295,7 @@
         "text": "*Noch immer auf dem Strohhalm kauend, beugt sie sich näher zu mir.*",
         "choices": [
             "Ein bisschen. Kannst du mir etwas beibringen?",
+            "Hab nur so getan.",
             "Ich habe einfach nur mitgeredet."
         ]
     },
@@ -308,7 +309,7 @@
     },
     "lunch_dain_c2_1": {
         "name": "Dain",
-        "text": "Wenn es dich nicht interessiert, sag es. So zu tun, als ob, finde ich schlimmer."
+        "text": "Aber interessieren tut es dich doch. Komm heute nach der Schule in die Turnhalle. Du kannst auch nur kurz zuschauen."
     },
     "lunch_dain_after": {
         "name": "{name}",
@@ -461,5 +462,9 @@
     "lunch_end": {
         "name": "{name}",
         "text": "*Die Glocke läutet. Die Mittagspause ist vorbei.*"
+    },
+    "lunch_dain_trap_1": {
+        "name": "Dain",
+        "text": "Wenn es dich nicht interessiert, sag es. So zu tun, als ob, finde ich schlimmer."
     }
 }

@@ -525,6 +525,7 @@
         "text": "*O fio do fone se enrola mais uma vez entre os dedos de Yuna.*",
         "choices": [
             "Quer que eu venha todo dia?",
+            "É bom porque é silencioso.",
             "Com você é confortável porque a gente nem precisa conversar."
         ]
     },
@@ -546,11 +547,11 @@
     },
     "after2_yuna_quiet": {
         "name": "Yuna",
-        "text": "…Achei que você estivesse falando de mim, não deste lugar."
+        "text": "...É por isso que eu gosto daqui."
     },
     "after2_yuna_quiet_react": {
         "name": "Yuna",
-        "text": "*O marcador avança uma página. Ela guarda na bolsa o fone que estava na ponta do sofá.*"
+        "text": "*Ela move o marcador uma página para trás. Não retira o fone da ponta do sofá.*"
     },
     "after2_yuna_end": {
         "name": "{name}",
@@ -622,5 +623,13 @@
     "minsu_warn_15_c": {
         "name": "Seoyeon",
         "text": "Vou deixar o terraço aberto amanhã no almoço. Aparece."
+    },
+    "after2_yuna_trap": {
+        "name": "Yuna",
+        "text": "…Achei que você estivesse falando de mim, não deste lugar."
+    },
+    "after2_yuna_trap_react": {
+        "name": "Yuna",
+        "text": "*O marcador avança uma página. Ela guarda na bolsa o fone que estava na ponta do sofá.*"
     }
 }

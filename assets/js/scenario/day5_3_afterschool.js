@@ -418,8 +418,34 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": null,
         "choices": [
             { "next": "after5_confess_yes", "setFlags": ["day5_confessed"] },
-            { "next": "after5_confess_no", "stats": {"#{current_character}":{"affinity":-4}} }
+            { "next": "after5_confess_no" },
+            { "next": "after5_defer_route_check", "stats": {"#{current_character}":{"affinity":-4}} }
         ]
+    },
+    "after5_defer_route_check": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "branches": [
+            { "condition": "route_seoyeon", "next": "after5_defer_seo" },
+            { "condition": "route_dain", "next": "after5_defer_dain" },
+            { "condition": "route_yuna", "next": "after5_defer_yuna" },
+            { "next": "after5_confess_no" }
+        ]
+    },
+    "after5_defer_seo": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "next": "after5_confess_no_2"
+    },
+    "after5_defer_dain": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "next": "after5_confess_no_2"
+    },
+    "after5_defer_yuna": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_sad.png",
+        "next": "after5_confess_no_2"
     },
     "after5_confess_yes": {
         "background": "assets/images/background/school_back.png",

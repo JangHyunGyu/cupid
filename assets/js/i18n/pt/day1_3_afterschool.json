@@ -401,6 +401,7 @@
         "text": "*Deito na cama. Do outro lado da cortina, vejo as costas da enfermeira.*",
         "choices": [
             "A senhora parece mais cansada do que eu",
+            "A enfermaria é bem silenciosa.",
             "Deve ser tranquilo ter esta sala só para a senhora."
         ]
     },
@@ -410,7 +411,7 @@
     },
     "after_nurse_enter_choice_b": {
         "name": "Enfermeira",
-        "text": "Pareceu tranquilo? Quanto mais silencioso fica aqui, mais alerta eu preciso estar."
+        "text": "Né? Eu adoro. — Silencioso, e tirando o cheiro de desinfetante, é perfeito."
     },
     "after_nurse_enter_8": {
         "name": "Enfermeira",
@@ -525,5 +526,9 @@
     "after_nurse_skip": {
         "name": "{name}",
         "text": "*Já andei bastante por hoje. Melhor ir pra casa descansar.*"
+    },
+    "after_nurse_enter_trap": {
+        "name": "Enfermeira",
+        "text": "Pareceu tranquilo? Quanto mais silencioso fica aqui, mais alerta eu preciso estar."
     }
 }

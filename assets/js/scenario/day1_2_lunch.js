@@ -380,7 +380,8 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "character": "assets/images/characters/dain_laugh.png",
         "choices": [
             { "next": "lunch_dain_c1_1", "stats": {"Dain":{"affinity":7}} },
-            { "next": "lunch_dain_c2_1", "stats": {"Dain":{"affinity":-3}} }
+            { "next": "lunch_dain_c2_1", "stats": {"Dain":{"affinity":3}} },
+            { "next": "lunch_dain_trap_1", "stats": {"Dain":{"affinity":-3}} }
         ]
     },
     "lunch_dain_c1_1": {
@@ -394,6 +395,11 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "lunch_dain_after"
     },
     "lunch_dain_c2_1": {
+        "background": "assets/images/background/store.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "next": "lunch_dain_after"
+    },
+    "lunch_dain_trap_1": {
         "background": "assets/images/background/store.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "lunch_dain_after"

@@ -267,7 +267,8 @@
         "text": "*Die Ecke des Handys drückt in meine Handfläche.*",
         "choices": [
             "Es jetzt sagen",
-            "Jetzt nicht die Stimmung kaputt machen."
+            "Noch nichts sagen",
+            "Lass uns beide erst einmal darüber nachdenken."
         ]
     },
     "after5_confess_yes": {
@@ -376,5 +377,18 @@
     "after5_harem_walk_2": {
         "name": "{name}",
         "text": "*Die unbeantworteten Nachrichten bleiben auf dem Sperrbildschirm. Meine Schritte führen zum Park.*"
+    },
+    "after5_defer_route_check": {},
+    "after5_defer_seo": {
+        "name": "Seoyeon",
+        "text": "*Langsam senkt sie die ausgestreckte Hand.* Gut. Wenn du das so entschieden hast."
+    },
+    "after5_defer_dain": {
+        "name": "Dain",
+        "text": "*Sie drückt den Volleyball wieder an die Brust.* ...Gut. Obwohl ich diejenige war, die gewartet hat."
+    },
+    "after5_defer_yuna": {
+        "name": "Yuna",
+        "text": "*Sie zieht das Buch wieder an die Brust.* Verstanden. Obwohl du mich gebeten hast zu warten."
     }
 }

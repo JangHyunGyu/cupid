@@ -8,6 +8,7 @@
         "text": "*La bandoulière du sac de Seoyeon fait un tour de plus autour de son doigt.*",
         "choices": [
             "Tu es vraiment belle aujourd'hui.",
+            "Tu t'es donné du mal aujourd'hui.",
             "Évidemment, la présidente du conseil organise aussi ses rendez-vous à la perfection."
         ]
     },
@@ -41,7 +42,7 @@
     },
     "date_seo_bright": {
         "name": "Seoyeon",
-        "text": "*Sa main quitte la lanière de son sac.* Aujourd'hui, je ne suis pas venue en tant que présidente du conseil."
+        "text": "Évidemment. Aujourd’hui, j’ai fait un effort."
     },
     "date_seo_walk": {
         "name": "{name}",
@@ -108,7 +109,8 @@
         "text": "*Le regard de Yuna se lève brièvement au-dessus de son gobelet.*",
         "choices": [
             "Première fois que je te vois sans uniforme.",
-            "Tu as l'air un peu différente aujourd'hui."
+            "Tu as l'air un peu différente aujourd'hui.",
+            "Aujourd'hui, tu as l'air beaucoup plus facile à aborder."
         ]
     },
     "date_yuna_pretty_high": {
@@ -354,5 +356,13 @@
     "pre_confess_callback": {
         "name": "{name}",
         "text": "*Le coin du téléphone dans ma poche appuie contre ma paume. Aucune notification ; l'écran ne reflète que son verre noir.*"
+    },
+    "date_seo_role_trap": {
+        "name": "Seoyeon",
+        "text": "*Sa main quitte la lanière de son sac.* Aujourd'hui, je ne suis pas venue en tant que présidente du conseil."
+    },
+    "date_yuna_trap": {
+        "name": "Yuna",
+        "text": "D'habitude, j'ai donc l'air difficile à aborder."
     }
 }

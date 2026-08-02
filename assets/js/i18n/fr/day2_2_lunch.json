@@ -150,6 +150,7 @@
         "text": "*Son doigt enveloppé dans une lingette s'approche de mes lèvres.*",
         "choices": [
             "Rester immobile",
+            "Je m'essuie moi-même",
             "Je peux me débrouiller tout seul."
         ]
     },
@@ -682,5 +683,9 @@
     "lunch2_yuna_end": {
         "name": "{name}",
         "text": "*Avant de refermer la porte, je me retourne : Yuna a rouvert la page où elle s'était interrompue après « il y avait ».*"
+    },
+    "lunch2_seo_trap_1": {
+        "name": "Seoyeon",
+        "text": "*Elle retire la lingette.* Bien sûr. Tu te débrouilles très bien tout seul."
     }
 }

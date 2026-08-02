@@ -150,6 +150,7 @@
         "text": "*A finger wrapped in a wet wipe moves toward my mouth.*",
         "choices": [
             "Stay still",
+            "I'll wipe it myself",
             "I can handle this much myself."
         ]
     },
@@ -682,5 +683,9 @@
     "lunch2_yuna_end": {
         "name": "{name}",
         "text": "*Before closing the door, I look back. Yuna has reopened the page where she stopped at “used to.”*"
+    },
+    "lunch2_seo_trap_1": {
+        "name": "Seoyeon",
+        "text": "*She pulls the wet wipe back.* Right. You are good on your own."
     }
 }

@@ -401,6 +401,7 @@
         "text": "*Ich lege mich aufs Bett. Durch den Vorhang sehe ich den Rücken der Krankenschwester.*",
         "choices": [
             "Sie sehen müder aus als ich, ehrlich gesagt",
+            "Das Krankenzimmer ist ruhiger, als ich dachte.",
             "Sie haben den Raum für sich allein. Das muss angenehm sein."
         ]
     },
@@ -410,7 +411,7 @@
     },
     "after_nurse_enter_choice_b": {
         "name": "Schulkrankenschwester",
-        "text": "Sah wohl gemütlich aus. Je stiller es hier ist, desto aufmerksamer muss ich sein."
+        "text": "Oder? Hier ist es schön. — Ruhig, und wenn man vom Desinfektionsgeruch absieht, perfekt."
     },
     "after_nurse_enter_8": {
         "name": "Schulkrankenschwester",
@@ -525,5 +526,9 @@
     "after_nurse_skip": {
         "name": "{name}",
         "text": "*Für heute bin ich genug herumgelaufen. Ich gehe nach Hause und ruhe mich aus.*"
+    },
+    "after_nurse_enter_trap": {
+        "name": "Schulkrankenschwester",
+        "text": "Sah wohl gemütlich aus. Je stiller es hier ist, desto aufmerksamer muss ich sein."
     }
 }

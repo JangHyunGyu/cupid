@@ -401,6 +401,7 @@
         "text": "*I lie down on the bed. Through the curtain, I can see the nurse's back.*",
         "choices": [
             "You look more tired than I do, honestly.",
+            "The nurse's office is quieter than I expected.",
             "It must be nice having this room to yourself."
         ]
     },
@@ -410,7 +411,7 @@
     },
     "after_nurse_enter_choice_b": {
         "name": "School Nurse",
-        "text": "It looked easy, huh? The quieter it is in here, the more alert I have to be."
+        "text": "Right? I like it here. — It's quiet, and if you ignore the smell of disinfectant, it's perfect."
     },
     "after_nurse_enter_8": {
         "name": "School Nurse",
@@ -525,5 +526,9 @@
     "after_nurse_skip": {
         "name": "{name}",
         "text": "*I've wandered around enough today. Let's go home and rest.*"
+    },
+    "after_nurse_enter_trap": {
+        "name": "School Nurse",
+        "text": "It looked easy, huh? The quieter it is in here, the more alert I have to be."
     }
 }

@@ -442,6 +442,7 @@
         "text": "*The front lists basic first-aid steps; the back lists the school's counseling channels.*",
         "choices": [
             "Yes. I'll keep it in my bag.",
+            "I'd rather know how to book the counseling center.",
             "With this card, I won't need to go all the way to the counseling office."
         ]
     },
@@ -455,7 +456,7 @@
     },
     "hidden_nurse_d5_choice_b": {
         "name": "School Nurse",
-        "text": "Other way around. This card isn't for handling everything alone."
+        "text": "Good. If you book through the school app, a counselor can follow up even if I can't respond right away."
     },
     "hidden_nurse_d5_choice_b_b": {
         "name": "School Nurse",
@@ -508,5 +509,9 @@
     "morning5_committed_end": {
         "name": "{name}",
         "text": "*I organize the notes on my desk and check the event schedule for the direction I've already chosen.*"
+    },
+    "hidden_nurse_d5_choice_trap": {
+        "name": "School Nurse",
+        "text": "Other way around. This card isn't for handling everything alone."
     }
 }

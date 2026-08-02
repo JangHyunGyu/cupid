@@ -525,6 +525,7 @@
         "text": "*Le fil de l'écouteur s'enroule encore entre les doigts de Yuna.*",
         "choices": [
             "Je devrais venir tous les jours ?",
+            "C'est agréable parce que c'est calme",
             "Avec toi, c'est agréable parce qu'on n'est pas obligés de parler."
         ]
     },
@@ -546,11 +547,11 @@
     },
     "after2_yuna_quiet": {
         "name": "Yuna",
-        "text": "…Je croyais que tu parlais de moi, pas de cet endroit."
+        "text": "...C'est pour ça que j'aime cet endroit."
     },
     "after2_yuna_quiet_react": {
         "name": "Yuna",
-        "text": "*Le marque-page avance d'une page. Elle range dans son sac l'écouteur posé au bout du canapé.*"
+        "text": "*Elle recule son marque-page d'une page. L'écouteur posé au bout du canapé reste à sa place.*"
     },
     "after2_yuna_end": {
         "name": "{name}",
@@ -622,5 +623,13 @@
     "minsu_warn_15_c": {
         "name": "Seoyeon",
         "text": "Demain midi, je laisserai le toit ouvert. Viens."
+    },
+    "after2_yuna_trap": {
+        "name": "Yuna",
+        "text": "…Je croyais que tu parlais de moi, pas de cet endroit."
+    },
+    "after2_yuna_trap_react": {
+        "name": "Yuna",
+        "text": "*Le marque-page avance d'une page. Elle range dans son sac l'écouteur posé au bout du canapé.*"
     }
 }

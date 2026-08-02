@@ -525,6 +525,7 @@
         "text": "*Das Kopfhörerkabel schlingt sich noch einmal um Yunas Finger.*",
         "choices": [
             "Soll ich jeden Tag kommen?",
+            "Es ist schön, weil es ruhig ist",
             "Mit dir ist es angenehm, weil wir nicht unbedingt reden müssen."
         ]
     },
@@ -546,11 +547,11 @@
     },
     "after2_yuna_quiet": {
         "name": "Yuna",
-        "text": "…Ich dachte, du meinst mich, nicht diesen Ort."
+        "text": "Deshalb mag ich es hier."
     },
     "after2_yuna_quiet_react": {
         "name": "Yuna",
-        "text": "*Das Lesezeichen wandert eine Seite weiter. Den Ohrhörer vom Sofarand steckt sie in ihre Tasche.*"
+        "text": "*Ihr Lesezeichen wandert eine Seite zurück. Den Ohrhörer am Ende des Sofas räumt sie nicht weg.*"
     },
     "after2_yuna_end": {
         "name": "{name}",
@@ -622,5 +623,13 @@
     "minsu_warn_15_c": {
         "name": "Seoyeon",
         "text": "Morgen Mittag lasse ich das Dach offen. Komm."
+    },
+    "after2_yuna_trap": {
+        "name": "Yuna",
+        "text": "…Ich dachte, du meinst mich, nicht diesen Ort."
+    },
+    "after2_yuna_trap_react": {
+        "name": "Yuna",
+        "text": "*Das Lesezeichen wandert eine Seite weiter. Den Ohrhörer vom Sofarand steckt sie in ihre Tasche.*"
     }
 }

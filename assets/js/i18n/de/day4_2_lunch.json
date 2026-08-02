@@ -8,6 +8,7 @@
         "text": "*Seoyeon wickelt den Riemen ihrer Tasche noch einmal um einen Finger.*",
         "choices": [
             "Du siehst heute wirklich schön aus.",
+            "Du hast dir heute echt Mühe gegeben.",
             "Klar, als Schülersprecherin planst du sogar ein Date perfekt."
         ]
     },
@@ -41,7 +42,7 @@
     },
     "date_seo_bright": {
         "name": "Seoyeon",
-        "text": "*Ihre Hand löst sich vom Taschenriemen.* Heute bin ich nicht als Schülersprecherin hier."
+        "text": "Klar. Hab mir heute extra Mühe gegeben."
     },
     "date_seo_walk": {
         "name": "{name}",
@@ -108,7 +109,8 @@
         "text": "*Yunas Blick hebt sich kurz über den Rand ihres Bechers.*",
         "choices": [
             "Ich seh dich zum ersten Mal ohne Uniform.",
-            "Du siehst heute irgendwie anders aus."
+            "Du siehst heute irgendwie anders aus.",
+            "Du wirkst viel leichter anzusprechen als sonst."
         ]
     },
     "date_yuna_pretty_high": {
@@ -354,5 +356,13 @@
     "pre_confess_callback": {
         "name": "{name}",
         "text": "*Die Ecke des Handys in meiner Tasche drückt in meine Handfläche. Keine Benachrichtigung – im Display spiegelt sich nur schwarzes Glas.*"
+    },
+    "date_seo_role_trap": {
+        "name": "Seoyeon",
+        "text": "*Ihre Hand löst sich vom Taschenriemen.* Heute bin ich nicht als Schülersprecherin hier."
+    },
+    "date_yuna_trap": {
+        "name": "Yuna",
+        "text": "Sonst war ich also schwer anzusprechen."
     }
 }

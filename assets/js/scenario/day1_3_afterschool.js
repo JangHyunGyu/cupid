@@ -551,7 +551,8 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "character": "assets/images/characters/nurse_normal.png",
         "choices": [
             { "next": "after_nurse_enter_choice_a", "stats": {"Nurse":{"affinity":10}}, "setFlags": ["nurse_choice_a"] },
-            { "next": "after_nurse_enter_choice_b", "stats": {"Nurse":{"affinity":-3}}, "setFlags": ["nurse_choice_b"] }
+            { "next": "after_nurse_enter_choice_b", "stats": {"Nurse":{"affinity":3}}, "setFlags": ["nurse_choice_b"] },
+            { "next": "after_nurse_enter_trap", "stats": {"Nurse":{"affinity":-3}}, "setFlags": ["nurse_choice_trap"] }
         ]
     },
     "after_nurse_enter_choice_a": {
@@ -560,6 +561,11 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "after_nurse_enter_8"
     },
     "after_nurse_enter_choice_b": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "after_nurse_enter_8"
+    },
+    "after_nurse_enter_trap": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_8"

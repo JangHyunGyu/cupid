@@ -295,6 +295,7 @@
         "text": "*Con el popote entre los labios, inclina el torso hacia mí.*",
         "choices": [
             "Un poco. ¿Me enseñarías?",
+            "Solo fingí.",
             "Solo te seguía la corriente."
         ]
     },
@@ -308,7 +309,7 @@
     },
     "lunch_dain_c2_1": {
         "name": "Dain",
-        "text": "Si no te interesa, dilo. Me molesta más que finjas."
+        "text": "Pero algo de interés tienes. Ven al gimnasio después de clase. Basta con que mires un rato."
     },
     "lunch_dain_after": {
         "name": "{name}",
@@ -461,5 +462,9 @@
     "lunch_end": {
         "name": "{name}",
         "text": "*Suena la campana. El almuerzo terminó.*"
+    },
+    "lunch_dain_trap_1": {
+        "name": "Dain",
+        "text": "Si no te interesa, dilo. Me molesta más que finjas."
     }
 }

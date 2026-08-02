@@ -401,6 +401,7 @@
         "text": "*Me acuesto en la cama. A través de la cortina, puedo ver la espalda de la enfermera.*",
         "choices": [
             "Usted parece más cansada que yo",
+            "La enfermería es muy tranquila.",
             "Debe de ser cómodo tener esta sala para usted sola."
         ]
     },
@@ -410,7 +411,7 @@
     },
     "after_nurse_enter_choice_b": {
         "name": "Enfermera",
-        "text": "Parecía cómodo, ¿eh? Cuanto más silencioso está esto, más alerta tengo que estar."
+        "text": "¿Verdad? Me gusta aquí. — Es tranquilo, y si ignoras el olor a desinfectante, es perfecto."
     },
     "after_nurse_enter_8": {
         "name": "Enfermera",
@@ -525,5 +526,9 @@
     "after_nurse_skip": {
         "name": "{name}",
         "text": "*Por hoy ya caminé bastante. A casa a descansar.*"
+    },
+    "after_nurse_enter_trap": {
+        "name": "Enfermera",
+        "text": "Parecía cómodo, ¿eh? Cuanto más silencioso está esto, más alerta tengo que estar."
     }
 }

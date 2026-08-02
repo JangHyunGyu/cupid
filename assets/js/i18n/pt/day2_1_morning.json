@@ -218,6 +218,7 @@
         "text": "*A professora retira a mão com que ia fechar a gaveta e espera minha resposta.*",
         "choices": [
             "E a senhora? Lê o quê?",
+            "Eu gosto de ler, sim.",
             "A senhora só lê livros difíceis, não é?"
         ]
     },
@@ -227,7 +228,7 @@
     },
     "hidden_homeroom_d2_choice1_b": {
         "name": "Professora",
-        "text": "Só porque sou professora não quer dizer que meu gosto também precise ser complicado."
+        "text": "*Ela gira uma volta a alça da xícara de café.* É? Um bom passatempo."
     },
     "hidden_homeroom_d2_5": {
         "name": "Professora",
@@ -362,5 +363,9 @@
     "morning2_end": {
         "name": "{name}",
         "text": "*Segundo Minsu, Seoyeon não cumprimentou ninguém primeiro durante um ano inteiro. Hoje, veio até a porta da minha sala.*"
+    },
+    "hidden_homeroom_d2_choice1_trap": {
+        "name": "Professora",
+        "text": "Só porque sou professora não quer dizer que meu gosto também precise ser complicado."
     }
 }

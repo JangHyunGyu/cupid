@@ -218,6 +218,7 @@
         "text": "*My homeroom teacher stops trying to close the drawer and waits for my answer.*",
         "choices": [
             "What about you? What do you read?",
+            "I do like reading.",
             "You only read difficult books, right?"
         ]
     },
@@ -227,7 +228,7 @@
     },
     "hidden_homeroom_d2_choice1_b": {
         "name": "Homeroom Teacher",
-        "text": "Being a teacher doesn't mean my tastes have to be difficult too."
+        "text": "*She turns the coffee-cup handle in a full circle.* Really? That's a good hobby."
     },
     "hidden_homeroom_d2_5": {
         "name": "Homeroom Teacher",
@@ -362,5 +363,9 @@
     "morning2_end": {
         "name": "{name}",
         "text": "*According to Minsu, Seoyeon hasn't greeted anyone first in a whole year. Today, she came all the way to my classroom.*"
+    },
+    "hidden_homeroom_d2_choice1_trap": {
+        "name": "Homeroom Teacher",
+        "text": "Being a teacher doesn't mean my tastes have to be difficult too."
     }
 }

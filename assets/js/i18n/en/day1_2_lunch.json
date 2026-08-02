@@ -295,6 +295,7 @@
         "text": "*Still biting the straw, she leans closer.*",
         "choices": [
             "A little. Would you teach me?",
+            "I was just faking it.",
             "I was just going along with it."
         ]
     },
@@ -308,7 +309,7 @@
     },
     "lunch_dain_c2_1": {
         "name": "Dain",
-        "text": "If you're not interested, just say so. I hate it more when people fake it."
+        "text": "You're at least curious, right? Come by the gym after school. You can just watch for a little while."
     },
     "lunch_dain_after": {
         "name": "{name}",
@@ -461,5 +462,9 @@
     "lunch_end": {
         "name": "{name}",
         "text": "*The bell rings. Lunch is over.*"
+    },
+    "lunch_dain_trap_1": {
+        "name": "Dain",
+        "text": "If you're not interested, just say so. I hate it more when people fake it."
     }
 }

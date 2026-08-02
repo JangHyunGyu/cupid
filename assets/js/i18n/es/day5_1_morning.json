@@ -442,6 +442,7 @@
         "text": "*En el anverso de la tarjeta figuran los pasos básicos de primeros auxilios; en el reverso, los canales de orientación de la escuela.*",
         "choices": [
             "Sí. La guardaré en la mochila.",
+            "Explíqueme cómo reservar una consulta.",
             "Con esta tarjeta ya no tendré que ir hasta orientación."
         ]
     },
@@ -455,7 +456,7 @@
     },
     "hidden_nurse_d5_choice_b": {
         "name": "Enfermera",
-        "text": "Al contrario. La tarjeta no es para que lo aguantes todo a solas."
+        "text": "Bien. Si reservas mediante la aplicación escolar, un orientador podrá atenderte aunque yo no pueda hacerlo de inmediato."
     },
     "hidden_nurse_d5_choice_b_b": {
         "name": "Enfermera",
@@ -508,5 +509,9 @@
     "morning5_committed_end": {
         "name": "{name}",
         "text": "*Organizo las notas en mi escritorio y reviso el horario del evento para la dirección que ya elegí.*"
+    },
+    "hidden_nurse_d5_choice_trap": {
+        "name": "Enfermera",
+        "text": "Al contrario. La tarjeta no es para que lo aguantes todo a solas."
     }
 }

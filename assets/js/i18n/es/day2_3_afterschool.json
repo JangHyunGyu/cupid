@@ -17,23 +17,23 @@
     },
     "after2_nurse_transition": {
         "name": "{name}",
-    "text": "*Después de Educación Física en quinta hora, el borde del apósito del codo se engancha en la manga. Lo aprieto una vez, pero vuelve a levantarse.*"
+        "text": "*Después de Educación Física en quinta hora, el borde del apósito del codo se engancha en la manga. Lo aprieto una vez, pero vuelve a levantarse.*"
     },
     "hidden_nurse_d2_1": {
         "name": "{name}",
-    "text": "*Al subirme la manga, veo que uno de los lados del apósito se ha levantado. La herida ya no sangra.*"
+        "text": "*Al subirme la manga, veo que uno de los lados del apósito se ha levantado. La herida ya no sangra.*"
     },
     "hidden_nurse_d2_2": {
         "name": "Enfermera",
-    "text": "No ha pasado ni un día y ya me devuelves el apósito. Siéntate."
+        "text": "No ha pasado ni un día y ya me devuelves el apósito. Siéntate."
     },
     "hidden_nurse_d2_3": {
         "name": "{name}",
-    "text": "El borde se engancha todo el rato en la manga."
+        "text": "El borde se engancha todo el rato en la manga."
     },
     "hidden_nurse_d2_4": {
         "name": "Enfermera",
-    "text": "A ver."
+        "text": "A ver."
     },
     "hidden_nurse_d2_5": {
         "name": "Enfermera",
@@ -41,23 +41,23 @@
     },
     "hidden_nurse_d2_choice1": {
         "name": "{name}",
-    "text": "*La enfermera dobla y estira mi codo para calcular la longitud del apósito.*",
+        "text": "*La enfermera dobla y estira mi codo para calcular la longitud del apósito.*",
         "choices": [
-      "¿Esto también se aprende en el hospital?",
+            "¿Esto también se aprende en el hospital?",
             "Es meticulosa hasta con una venda."
         ]
     },
     "hidden_nurse_d2_choice1_a": {
         "name": "Enfermera",
-    "text": "Sí. En una articulación hay que ponerlo de modo que no se despegue al moverla."
+        "text": "Sí. En una articulación hay que ponerlo de modo que no se despegue al moverla."
     },
     "hidden_nurse_d2_choice1_b": {
         "name": "Enfermera",
-    "text": "Es mi trabajo. Si lo pongo de cualquier manera y se cae en plena clase, sería un problema."
+        "text": "Es mi trabajo. Si lo pongo de cualquier manera y se cae en plena clase, sería un problema."
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-    "text": "*Mientras reviso el apósito, veo un cuaderno verde claro que sobresale del cajón del escritorio. En la primera línea de la página abierta pone: «Para ti, aquel día—». La enfermera cierra el cajón.*"
+        "text": "*Mientras reviso el apósito, veo un cuaderno verde claro que sobresale del cajón del escritorio. En la primera línea de la página abierta pone: «Para ti, aquel día—». La enfermera cierra el cajón.*"
     },
     "hidden_nurse_d2_7": {
         "name": "Enfermera",
@@ -81,11 +81,11 @@
     },
     "hidden_nurse_d2_8": {
         "name": "Enfermera",
-    "text": "Ya está. Procura que hoy no se moje."
+        "text": "Ya está. Procura que hoy no se moje."
     },
     "hidden_nurse_d2_9": {
-    "name": "{name}",
-    "text": "*Me dice que vuelva si el apósito se levanta o se mancha de sangre, y salgo de la enfermería.*"
+        "name": "{name}",
+        "text": "*Me dice que vuelva si el apósito se levanta o se mancha de sangre, y salgo de la enfermería.*"
     },
     "after2_choice": {
         "name": "{name}",
@@ -182,7 +182,7 @@
     },
     "after2_dain_skinship_2": {
         "name": "Dain",
-    "text": "...Ah, ¡perdón! A veces me pasa al terminar un partido."
+        "text": "...Ah, ¡perdón! A veces me pasa al terminar un partido."
     },
     "after2_dain_skinship_3": {
         "name": "{name}",
@@ -346,15 +346,15 @@
     },
     "after2_seo_neck_react": {
         "name": "Seoyeon",
-    "text": "*Al girar un hombro, toma aire con un leve sobresalto.*"
+        "text": "*Al girar un hombro, toma aire con un leve sobresalto.*"
     },
     "after2_seo_neck_react_b": {
-    "name": "{name}",
-    "text": "Espera. Prueba a apoyar esto debajo."
+        "name": "{name}",
+        "text": "Espera. Prueba a apoyar esto debajo."
     },
     "after2_seo_neck_react_c": {
-    "name": "{name}",
-    "text": "*Le acerco a Seoyeon una caja de archivadores vacía que estaba apilada a un lado.*"
+        "name": "{name}",
+        "text": "*Le acerco a Seoyeon una caja de archivadores vacía que estaba apilada a un lado.*"
     },
     "after2_seo_neck_touch": {
         "name": "Seoyeon",
@@ -366,19 +366,19 @@
     },
     "after2_seo_neck_high_b": {
         "name": "Seoyeon",
-    "text": "...Qué bien hablas."
+        "text": "...Qué bien hablas."
     },
     "after2_seo_neck_high_c": {
         "name": "{name}",
-    "text": "*Seoyeon coloca los documentos sobre la caja. Ahora tiene que inclinar un poco menos la cabeza.*"
+        "text": "*Seoyeon coloca los documentos sobre la caja. Ahora tiene que inclinar un poco menos la cabeza.*"
     },
     "after2_seo_neck_high_2": {
         "name": "Seoyeon",
-    "text": "Por hoy, te lo acepto."
+        "text": "Por hoy, te lo acepto."
     },
     "after2_seo_neck_high_2_b": {
         "name": "{name}",
-    "text": "*Seoyeon no aparta la caja. Los dos vuelven a ordenar los documentos por fecha.*"
+        "text": "*Seoyeon no aparta la caja. Los dos vuelven a ordenar los documentos por fecha.*"
     },
     "after2_seo_neck_low": {
         "name": "{name}",
@@ -386,15 +386,15 @@
     },
     "after2_seo_neck_low_b": {
         "name": "{name}",
-    "text": "Si no quieres, da igual."
+        "text": "Si no quieres, da igual."
     },
     "after2_seo_neck_low_c": {
         "name": "Seoyeon",
-    "text": "*Acepta la caja y la deja junto a los documentos.*"
+        "text": "*Acepta la caja y la deja junto a los documentos.*"
     },
     "after2_seo_neck_low_2": {
         "name": "Seoyeon",
-    "text": "La probaré cuando terminemos."
+        "text": "La probaré cuando terminemos."
     },
     "after2_seo_9": {
         "name": "{name}",
@@ -525,6 +525,7 @@
         "text": "*El cable del auricular se enreda una vez más entre los dedos de Yuna.*",
         "choices": [
             "¿Vengo todos los días?",
+            "Me gusta que sea tranquilo",
             "Contigo estoy cómodo porque no hace falta hablar."
         ]
     },
@@ -546,11 +547,11 @@
     },
     "after2_yuna_quiet": {
         "name": "Yuna",
-        "text": "…Pensé que hablabas de mí, no de este sitio."
+        "text": "...Por eso me gusta este sitio."
     },
     "after2_yuna_quiet_react": {
         "name": "Yuna",
-        "text": "*El marcapáginas avanza una página. Guarda en su bolso el auricular que estaba en el borde del sofá.*"
+        "text": "*Mueve el separador una página hacia atrás. No retira el audífono del extremo del sofá.*"
     },
     "after2_yuna_end": {
         "name": "{name}",
@@ -622,5 +623,13 @@
     "minsu_warn_15_c": {
         "name": "Seoyeon",
         "text": "Mañana a la hora del almuerzo te dejo la azotea abierta. Ven"
+    },
+    "after2_yuna_trap": {
+        "name": "Yuna",
+        "text": "…Pensé que hablabas de mí, no de este sitio."
+    },
+    "after2_yuna_trap_react": {
+        "name": "Yuna",
+        "text": "*El marcapáginas avanza una página. Guarda en su bolso el auricular que estaba en el borde del sofá.*"
     }
 }

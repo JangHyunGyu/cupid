@@ -8,6 +8,7 @@
         "text": "*A alça da bolsa de Seoyeon se enrola mais uma vez em seus dedos.*",
         "choices": [
             "Você está bonita hoje.",
+            "Você se arrumou bastante hoje.",
             "Como esperado da presidente do conselho, até o encontro foi planejado sem falhas."
         ]
     },
@@ -41,7 +42,7 @@
     },
     "date_seo_bright": {
         "name": "Seoyeon",
-        "text": "*Ela solta a alça da bolsa.* Hoje eu não vim como presidente do conselho."
+        "text": "Óbvio. Caprichei um pouco hoje."
     },
     "date_seo_walk": {
         "name": "{name}",
@@ -108,7 +109,8 @@
         "text": "*O olhar de Yuna se ergue por um instante acima do copo.*",
         "choices": [
             "Primeira vez que te vejo sem uniforme.",
-            "Você parece um pouco diferente hoje."
+            "Você parece um pouco diferente hoje.",
+            "Hoje você parece muito mais fácil de abordar."
         ]
     },
     "date_yuna_pretty_high": {
@@ -354,5 +356,13 @@
     "pre_confess_callback": {
         "name": "{name}",
         "text": "*O celular no bolso pesa. Não há notificações, só o vidro preto da tela.*"
+    },
+    "date_seo_role_trap": {
+        "name": "Seoyeon",
+        "text": "*Ela solta a alça da bolsa.* Hoje eu não vim como presidente do conselho."
+    },
+    "date_yuna_trap": {
+        "name": "Yuna",
+        "text": "Então normalmente não é fácil falar comigo."
     }
 }

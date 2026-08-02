@@ -267,7 +267,8 @@
         "text": "*Aperto o celular na palma da mão.*",
         "choices": [
             "Dizer agora",
-            "Não estragar o clima agora."
+            "Não dizer ainda",
+            "É melhor nós dois tirarmos um tempo para pensar."
         ]
     },
     "after5_confess_yes": {
@@ -376,5 +377,18 @@
     "after5_harem_walk_2": {
         "name": "{name}",
         "text": "*As mensagens que não respondi continuam na tela de bloqueio. Meus passos me levam em direção ao parque.*"
+    },
+    "after5_defer_route_check": {},
+    "after5_defer_seo": {
+        "name": "Seoyeon",
+        "text": "*Ela abaixa devagar a mão que estava estendida.* Tudo bem. Se foi isso que você decidiu."
+    },
+    "after5_defer_dain": {
+        "name": "Dain",
+        "text": "*Ela volta a apertar a bola contra o peito.* ...Tudo bem. Mesmo que quem estivesse esperando fosse eu."
+    },
+    "after5_defer_yuna": {
+        "name": "Yuna",
+        "text": "*Ela volta a abraçar o livro.* Entendi. Mesmo que tenha sido você quem pediu para eu esperar."
     }
 }
