@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.43';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.44';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 const GalleryFreeTalkCore = window.CupidFreeTalkCore;
@@ -1968,6 +1968,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
         let affinityChange = this._normalizeAffinityChange(turnAffinity);
         let startedCategory = '';
+        let startedSeverity = '';
         const startsPlannedIncident = Boolean(
             plan?.category
             && incidentPayload?.status === 'started'
@@ -1976,21 +1977,33 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
         if (startsPlannedIncident && !state.activeIncident) {
             const category = GalleryFreeTalkCore.normalizeGalleryIncidentCategory(plan.category);
+            const severity = category === 'crisis'
+                ? GalleryFreeTalkCore.limitGalleryCrisisSeverity(
+                    incidentPayload?.severity,
+                    plan.crisisSeverityCap || 'low'
+                )
+                : '';
             const summary = incidentPayload?.summary
                 || GalleryFreeTalkCore.truncateLatestUserText(visibleText, 240)
                 || `${category} incident`;
             affinityChange = GalleryFreeTalkCore.normalizeGalleryIncidentImpact(
                 category,
-                incidentPayload?.impact
+                incidentPayload?.impact,
+                {
+                    severity,
+                    severityCap: plan.crisisSeverityCap || 'low'
+                }
             );
             state.activeIncident = {
                 category,
+                severity,
                 summary,
                 startedAtTurn: state.completedTurns,
                 turns: 1
             };
             state.quietTurns = 0;
             startedCategory = category;
+            startedSeverity = severity;
             if (category === 'crisis') {
                 state.lastCrisisTurn = state.completedTurns;
                 state.negativeSignals = [];
@@ -2001,6 +2014,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             if (incidentPayload?.status === 'resolved') {
                 state.recentIncidents.push({
                     category: state.activeIncident.category,
+                    severity: state.activeIncident.severity || '',
                     summary: state.activeIncident.summary,
                     endedAtTurn: state.completedTurns
                 });
@@ -2028,6 +2042,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         return {
             affinityChange,
             startedCategory,
+            startedSeverity,
             activeIncident: savedState.activeIncident,
             completedTurns: savedState.completedTurns,
             quietTurns: savedState.quietTurns

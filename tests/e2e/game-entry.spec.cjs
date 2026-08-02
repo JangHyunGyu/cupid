@@ -94,7 +94,35 @@ test('game and gallery preserve valid outward expressions independently of affin
     expect(galleryAvatar).toContain('yuna_angry.png');
 });
 
-test('gallery trust incident commits one completed turn and an immediate -50 impact', async ({ page }) => {
+test('gallery free-talk injects all eight affinity temperature bands into every turn prompt', async ({ page }) => {
+    await page.goto('/gallery.html');
+    await page.waitForFunction(() => window.GalleryFreeTalk && window.CupidFreeTalkCore);
+
+    const result = await page.evaluate(() => {
+        let currentAffinity = 0;
+        const talk = new window.GalleryFreeTalk('en', {
+            getPlayerName: () => 'Tester',
+            getCurrentAffinity: () => currentAffinity
+        });
+        const scores = [95, 75, 50, 20, 0, -20, -50, -80];
+        return scores.map(score => {
+            currentAffinity = score;
+            const label = talk._getGalleryRelationshipState(score).en;
+            const prompt = talk._buildSystemPrompt('yuna');
+            return {
+                label,
+                hasScore: prompt.includes(`current_affinity=${score}/100`),
+                hasLabel: prompt.includes(`relationship=${label}`),
+                hasBehaviorAxes: prompt.includes('speech, initiative, touch, restraint, refusal, and emotional openness')
+            };
+        });
+    });
+
+    expect(new Set(result.map(item => item.label)).size).toBe(8);
+    expect(result.every(item => item.hasScore && item.hasLabel && item.hasBehaviorAxes)).toBe(true);
+});
+
+test('gallery high-severity trust incident commits one completed turn and an immediate -50 impact', async ({ page }) => {
     await page.goto('/gallery.html');
     await page.waitForFunction(() => window.GalleryFreeTalk && window.CupidFreeTalkCore);
 
@@ -120,11 +148,12 @@ test('gallery trust incident commits one completed turn and an immediate -50 imp
         });
         const committed = talk._commitGalleryIncidentTurn({
             charId: 'yuna',
-            runtime: { state, plan: { category: 'crisis' } },
+            runtime: { state, plan: { category: 'crisis', crisisSeverityCap: 'high' } },
             payload: {
                 status: 'started',
                 summary: '반복된 강요 때문에 유나가 신뢰 문제를 꺼냈다.',
-                impact: -1
+                severity: 'high',
+                impact: -50
             },
             visibleText: '유나는 더는 넘길 수 없다고 말했다.',
             latestUserText: '무슨 일이야?',
@@ -136,8 +165,48 @@ test('gallery trust incident commits one completed turn and an immediate -50 imp
     expect(result.committed.affinityChange).toBe(-50);
     expect(result.committed.completedTurns).toBe(400);
     expect(result.savedState.activeIncident.category).toBe('crisis');
+    expect(result.savedState.activeIncident.severity).toBe('high');
     expect(result.savedState.lastCrisisTurn).toBe(400);
     expect(result.savedState.negativeSignals).toEqual([]);
+});
+
+test('gallery crisis impact cannot exceed the evidence-backed severity cap', async ({ page }) => {
+    await page.goto('/gallery.html');
+    await page.waitForFunction(() => window.GalleryFreeTalk && window.CupidFreeTalkCore);
+
+    const result = await page.evaluate(() => {
+        let savedState = null;
+        const talk = Object.create(window.GalleryFreeTalk.prototype);
+        talk.currentCharId = 'yuna';
+        talk.progress = {
+            setGalleryIncidentState(_charId, state) {
+                savedState = window.CupidFreeTalkCore.normalizeGalleryIncidentState(state);
+                return savedState;
+            }
+        };
+        const state = window.CupidFreeTalkCore.normalizeGalleryIncidentState({
+            completedTurns: 399,
+            quietTurns: 99,
+            negativeSignals: [{ turn: 398, weight: 6, excerpt: 'single severe signal' }]
+        });
+        const committed = talk._commitGalleryIncidentTurn({
+            charId: 'yuna',
+            runtime: { state, plan: { category: 'crisis', crisisSeverityCap: 'low' } },
+            payload: {
+                status: 'started',
+                summary: 'A serious misunderstanding damages trust.',
+                severity: 'high',
+                impact: -50
+            },
+            latestUserText: 'What happened?',
+            turnAffinity: 5
+        });
+        return { committed, savedState };
+    });
+
+    expect(result.committed.affinityChange).toBe(-29);
+    expect(result.committed.startedSeverity).toBe('low');
+    expect(result.savedState.activeIncident.severity).toBe('low');
 });
 
 test('gallery does not penalize a planned incident that the AI failed to establish', async ({ page }) => {

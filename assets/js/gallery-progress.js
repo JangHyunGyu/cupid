@@ -367,7 +367,7 @@ class GalleryProgress {
      */
     _createDefaultGalleryIncidentState() {
         return {
-            version: 1,
+            version: 2,
             completedTurns: 0,
             quietTurns: 0,
             lastCrisisTurn: null,
