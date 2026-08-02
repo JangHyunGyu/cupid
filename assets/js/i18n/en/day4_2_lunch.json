@@ -8,7 +8,7 @@
         "text": "*Seoyeon winds the strap of her bag around one finger again.*",
         "choices": [
             "You look pretty today.",
-            "You went all out today, huh."
+            "Of course the student council president plans a flawless date, too."
         ]
     },
     "date_seo_pretty_high": {
@@ -41,7 +41,7 @@
     },
     "date_seo_bright": {
         "name": "Seoyeon",
-        "text": "Of course. I put in a little effort today."
+        "text": "*Her hand leaves the bag strap.* I'm not here as the student council president today."
     },
     "date_seo_walk": {
         "name": "{name}",

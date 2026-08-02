@@ -295,7 +295,7 @@
         "text": "*Still biting the straw, she leans closer.*",
         "choices": [
             "A little. Would you teach me?",
-            "I was just faking it."
+            "I was just going along with it."
         ]
     },
     "lunch_dain_c1_1": {
@@ -308,7 +308,7 @@
     },
     "lunch_dain_c2_1": {
         "name": "Dain",
-        "text": "You're at least curious, right? Come by the gym after school. You can just watch for a little while."
+        "text": "If you're not interested, just say so. I hate it more when people fake it."
     },
     "lunch_dain_after": {
         "name": "{name}",

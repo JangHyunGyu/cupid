@@ -551,7 +551,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "character": "assets/images/characters/nurse_normal.png",
         "choices": [
             { "next": "after_nurse_enter_choice_a", "stats": {"Nurse":{"affinity":10}}, "setFlags": ["nurse_choice_a"] },
-            { "next": "after_nurse_enter_choice_b", "stats": {"Nurse":{"affinity":3}}, "setFlags": ["nurse_choice_b"] }
+            { "next": "after_nurse_enter_choice_b", "stats": {"Nurse":{"affinity":-3}}, "setFlags": ["nurse_choice_b"] }
         ]
     },
     "after_nurse_enter_choice_a": {

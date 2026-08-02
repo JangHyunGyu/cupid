@@ -442,7 +442,7 @@
         "text": "*Na frente do cartão estão os passos básicos de primeiros socorros; no verso, os canais de orientação da escola.*",
         "choices": [
             "Sim. Vou guardar na mochila.",
-            "Explique como agendar uma consulta."
+            "Com este cartão, não vou precisar ir até a sala de orientação."
         ]
     },
     "hidden_nurse_d5_choice_a": {
@@ -455,7 +455,7 @@
     },
     "hidden_nurse_d5_choice_b": {
         "name": "Enfermeira",
-        "text": "Ótimo. Se você agendar pelo aplicativo da escola, um orientador poderá atender mesmo que eu não possa na hora."
+        "text": "É o contrário. Este cartão não é para você aguentar tudo sozinho."
     },
     "hidden_nurse_d5_choice_b_b": {
         "name": "Enfermeira",

@@ -295,7 +295,7 @@
         "text": "*Con el popote entre los labios, inclina el torso hacia mí.*",
         "choices": [
             "Un poco. ¿Me enseñarías?",
-            "Solo fingí."
+            "Solo te seguía la corriente."
         ]
     },
     "lunch_dain_c1_1": {
@@ -308,7 +308,7 @@
     },
     "lunch_dain_c2_1": {
         "name": "Dain",
-        "text": "Pero algo de interés tienes. Ven al gimnasio después de clase. Basta con que mires un rato."
+        "text": "Si no te interesa, dilo. Me molesta más que finjas."
     },
     "lunch_dain_after": {
         "name": "{name}",

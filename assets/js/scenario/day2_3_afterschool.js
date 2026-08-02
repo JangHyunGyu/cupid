@@ -695,7 +695,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "character": "assets/images/characters/yuna_normal.png",
         "choices": [
             { "next": "after2_yuna_everyday", "stats": {"Yuna":{"affinity":8}} },
-            { "next": "after2_yuna_quiet", "stats": {"Yuna":{"affinity":5}} }
+            { "next": "after2_yuna_quiet", "stats": {"Yuna":{"affinity":-3}} }
         ]
     },
     "after2_yuna_everyday": {
@@ -720,12 +720,12 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "after2_yuna_quiet": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_smile.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "next": "after2_yuna_quiet_react"
     },
     "after2_yuna_quiet_react": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_smile.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "next": "after2_yuna_end"
     },
     "after2_yuna_end": {

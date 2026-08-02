@@ -213,7 +213,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "character": "assets/images/characters/seyoun_normal.png",
         "choices": [
             { "next": "lunch2_seo_c1_1", "stats": {"Seoyeon":{"affinity":5}} },
-            { "next": "lunch2_seo_c2_1", "stats": {"Seoyeon":{"affinity":3}} }
+            { "next": "lunch2_seo_c2_1", "stats": {"Seoyeon":{"affinity":-2}} }
         ]
     },
     "lunch2_seo_c1_1": {

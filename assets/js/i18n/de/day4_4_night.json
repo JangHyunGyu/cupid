@@ -173,7 +173,7 @@
         "choices": [
             "Soll ich dir ein Feuchttuch geben?",
             "Lass uns noch ein wenig sitzen bleiben.",
-            "Du musst nichts sagen."
+            "Ich glaube, ich verstehe es. Du musst nichts erklären."
         ]
     },
     "wall_seo_line_react_1": {
@@ -186,7 +186,7 @@
     },
     "wall_seo_line_react_3": {
         "name": "Seoyeon",
-        "text": "Gut."
+        "text": "Tu nicht so, als wüsstest du es."
     },
     "wall_seo_line_react_3_b": {
         "name": "Seoyeon",
@@ -472,11 +472,11 @@
     },
     "wall_dain_lastspike_2": {
         "name": "Dain",
-        "text": "*Sie sieht zu, wie ein Ball nach dem anderen im Wagen verschwindet.* Ich dachte, wenn wir aufräumen, fühlt es sich wirklich beendet an."
+        "text": "*Dain blickt vom Ballwagen auf.* Moment. Warum entscheidest du alles?"
     },
     "wall_dain_lastspike_3": {
         "name": "{name}",
-        "text": "Ich sage nicht, dass du alles wegwerfen sollst. Heute räumen wir nur die Bälle weg."
+        "text": "Ich höre auf. Sag du mir, was du gerade brauchst."
     },
     "wall_dain_lastspike_3_b": {
         "name": "Dain",

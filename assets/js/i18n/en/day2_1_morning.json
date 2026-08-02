@@ -218,7 +218,7 @@
         "text": "*My homeroom teacher stops trying to close the drawer and waits for my answer.*",
         "choices": [
             "What about you? What do you read?",
-            "I do like reading."
+            "You only read difficult books, right?"
         ]
     },
     "hidden_homeroom_d2_choice1_a": {
@@ -227,7 +227,7 @@
     },
     "hidden_homeroom_d2_choice1_b": {
         "name": "Homeroom Teacher",
-        "text": "*She turns the coffee-cup handle in a full circle.* Really? That's a good hobby."
+        "text": "Being a teacher doesn't mean my tastes have to be difficult too."
     },
     "hidden_homeroom_d2_5": {
         "name": "Homeroom Teacher",

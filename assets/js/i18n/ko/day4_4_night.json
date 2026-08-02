@@ -173,7 +173,7 @@
         "choices": [
             "물티슈 줄까.",
             "잠깐 앉아 있자.",
-            "말 안 해도 돼."
+            "굳이 설명 안 해도 알 것 같아."
         ]
     },
     "wall_seo_line_react_1": {
@@ -186,7 +186,7 @@
     },
     "wall_seo_line_react_3": {
         "name": "서연",
-        "text": "그래."
+        "text": "아는 척하지 마."
     },
     "wall_seo_line_react_3_b": {
         "name": "서연",
@@ -472,11 +472,11 @@
     },
     "wall_dain_lastspike_2": {
         "name": "다인",
-        "text": "*공이 하나씩 보관함에 들어가는 걸 지켜본다.* 정리하면 진짜 끝나는 줄 알았는데."
+        "text": "*공 보관함을 보다가 다인이 고개를 든다.* 잠깐. 왜 네가 다 정해."
     },
     "wall_dain_lastspike_3": {
         "name": "{name}",
-        "text": "다 버리자는 거 아니야. 오늘은 공만 넣자."
+        "text": "멈출게. 지금 필요한 게 뭔지 네가 말해줘."
     },
     "wall_dain_lastspike_3_b": {
         "name": "다인",

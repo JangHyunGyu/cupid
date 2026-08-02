@@ -173,7 +173,7 @@
         "choices": [
             "Je te donne une lingette ?",
             "Restons assis un moment.",
-            "Tu n'es pas obligée de parler."
+            "Je crois comprendre. Tu n'as pas besoin d'expliquer."
         ]
     },
     "wall_seo_line_react_1": {
@@ -186,7 +186,7 @@
     },
     "wall_seo_line_react_3": {
         "name": "Seoyeon",
-        "text": "...Très bien."
+        "text": "Ne fais pas comme si tu savais."
     },
     "wall_seo_line_react_3_b": {
         "name": "Seoyeon",
@@ -472,11 +472,11 @@
     },
     "wall_dain_lastspike_2": {
         "name": "Dain",
-        "text": "*Elle regarde les ballons rejoindre le chariot un par un.* ...Je croyais qu'en les rangeant, ce serait vraiment fini."
+        "text": "*Dain relève la tête du chariot à ballons.* Attends. Pourquoi tu décides de tout ?"
     },
     "wall_dain_lastspike_3": {
         "name": "{name}",
-        "text": "On ne jette pas tout. Aujourd'hui, on range seulement les ballons."
+        "text": "J'arrête. Dis-moi ce dont tu as besoin maintenant."
     },
     "wall_dain_lastspike_3_b": {
         "name": "Dain",

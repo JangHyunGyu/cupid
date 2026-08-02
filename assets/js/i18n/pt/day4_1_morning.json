@@ -235,7 +235,7 @@
         "text": "*A professora deixa a xícara e aponta com o queixo para as cópias de avaliação na mesa ao fundo.*",
         "choices": [
             "A senhora ainda não decidiu o final?",
-            "Vai mostrar tudo aos outros membros também, não vai?"
+            "Como o texto é seu, o pessoal do clube vai dizer que gostou."
         ]
     },
     "hidden_homeroom_d4_cafe_choice_a": {
@@ -244,7 +244,7 @@
     },
     "hidden_homeroom_d4_cafe_choice_b": {
         "name": "Professora",
-        "text": "Claro. É a cópia que vamos distribuir hoje. Não existe um manuscrito só para você ler."
+        "text": "Então a crítica não serviria para nada. Não quero que peguem leve só porque sou professora deles."
     },
     "hidden_homeroom_d4_cafe_4": {
         "name": "Professora",
@@ -471,7 +471,7 @@
         "text": "*A enfermeira anota a quantidade de kits prontos.*",
         "choices": [
             "Quando sente que valeu a pena virar enfermeira escolar?",
-            "Qual é a maior diferença entre o hospital e a escola?"
+            "Na escola quase não deve haver ferimentos graves, então deve ser mais tranquilo."
         ]
     },
     "hidden_nurse_d4_name_choice_a": {
@@ -480,7 +480,7 @@
     },
     "hidden_nurse_d4_name_choice_b": {
         "name": "Enfermeira",
-        "text": "Aqui posso conversar com alguém antes que se machuque. Essa é a maior diferença."
+        "text": "Quem dera ferimentos graves fossem a única preocupação. Tem muito mais aluno calado, aguentando sozinho."
     },
     "hidden_nurse_d4_6": {
         "name": "Enfermeira",
@@ -503,7 +503,7 @@
         "text": "Só falta colar as etiquetas. A equipe do evento vai comprar alguma coisa para comer. Quem fica comigo para terminar?",
         "choices": [
             "Vou ficar e colar as etiquetas dos kits.",
-            "Tudo bem, eu já vou."
+            "Se a senhora fizer, vai ser mais rápido."
         ]
     },
     "hidden_nurse_d4_meal_walk": {
@@ -564,7 +564,7 @@
     },
     "hidden_nurse_d4_pass": {
         "name": "Enfermeira",
-        "text": "Tudo bem. Só de ter vindo no fim de semana já foi suficiente. Vá com cuidado."
+        "text": "Provavelmente. Mas não pedi ajuda por causa da rapidez."
     },
     "hidden_homeroom_d4_freetalk": {
         "name": "Professora",

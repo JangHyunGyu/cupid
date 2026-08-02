@@ -235,7 +235,7 @@
         "text": "*La professeure principale repose sa tasse et désigne du menton les exemplaires de travail sur la table du fond.*",
         "choices": [
             "Vous n'avez toujours pas choisi la fin ?",
-            "Vous allez aussi montrer tout le manuscrit au club, n'est-ce pas ?"
+            "Puisque c'est votre texte, les membres du club vont sûrement l'aimer."
         ]
     },
     "hidden_homeroom_d4_cafe_choice_a": {
@@ -244,7 +244,7 @@
     },
     "hidden_homeroom_d4_cafe_choice_b": {
         "name": "Professeure principale",
-        "text": "Bien sûr. Ce sont les exemplaires que je distribue aujourd'hui. Il n'y en a pas un à part, rien que pour toi."
+        "text": "Dans ce cas, leur critique ne servirait à rien. Je ne veux pas qu'ils m'épargnent parce que je suis leur prof."
     },
     "hidden_homeroom_d4_cafe_4": {
         "name": "Professeure principale",
@@ -471,7 +471,7 @@
         "text": "*L'infirmière note le nombre de trousses de secours terminées.*",
         "choices": [
             "À quel moment vous dites-vous que vous avez bien fait de devenir infirmière scolaire ?",
-            "Quelle est la plus grande différence entre l'hôpital et le lycée ?"
+            "Les blessures graves doivent être rares à l'école. C'est sûrement moins stressant qu'à l'hôpital."
         ]
     },
     "hidden_nurse_d4_name_choice_a": {
@@ -480,7 +480,7 @@
     },
     "hidden_nurse_d4_name_choice_b": {
         "name": "Infirmière",
-        "text": "Ici, je peux parler à quelqu'un avant qu'il ne se blesse. C'est ça, la plus grande différence."
+        "text": "Si seulement les blessures graves étaient le seul problème. Bien plus d'élèves se taisent et encaissent."
     },
     "hidden_nurse_d4_6": {
         "name": "Infirmière",
@@ -503,7 +503,7 @@
         "text": "Il ne reste plus qu'à coller les étiquettes. Le personnel va acheter de quoi grignoter : quelqu'un veut m'aider à finir ?",
         "choices": [
             "Je vais aussi rester pour étiqueter les trousses.",
-            "Ça ira, je vais y aller."
+            "Ce sera plus rapide si vous le faites vous-même."
         ]
     },
     "hidden_nurse_d4_meal_walk": {
@@ -564,7 +564,7 @@
     },
     "hidden_nurse_d4_pass": {
         "name": "Infirmière",
-        "text": "D'accord. Rien que d'être venu ce week-end, c'est déjà beaucoup. Rentre bien."
+        "text": "Sans doute. Mais ce n'est pas pour aller plus vite que j'ai demandé de l'aide."
     },
     "hidden_homeroom_d4_freetalk": {
         "name": "Professeure principale",

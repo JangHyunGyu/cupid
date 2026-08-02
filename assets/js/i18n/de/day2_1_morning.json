@@ -218,7 +218,7 @@
         "text": "*Meine Klassenlehrerin hört auf, die Schublade schließen zu wollen, und wartet auf meine Antwort.*",
         "choices": [
             "Und Sie? Was lesen Sie?",
-            "Ja, ich lese gern"
+            "Sie lesen doch bestimmt nur schwierige Bücher, oder?"
         ]
     },
     "hidden_homeroom_d2_choice1_a": {
@@ -227,7 +227,7 @@
     },
     "hidden_homeroom_d2_choice1_b": {
         "name": "Klassenlehrerin",
-        "text": "*Sie dreht den Henkel ihrer Kaffeetasse einmal ganz herum.* Wirklich? Schönes Hobby."
+        "text": "Nur weil ich Lehrerin bin, muss mein Geschmack nicht auch kompliziert sein."
     },
     "hidden_homeroom_d2_5": {
         "name": "Klassenlehrerin",

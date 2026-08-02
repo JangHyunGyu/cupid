@@ -401,7 +401,7 @@
         "text": "*Je m'allonge sur le lit. À travers le rideau, j'aperçois le dos de l'infirmière.*",
         "choices": [
             "Vous avez l'air plus fatiguée que moi, en fait",
-            "L'infirmerie est plus calme que je pensais."
+            "Vous devez être tranquille, seule dans cette salle."
         ]
     },
     "after_nurse_enter_choice_a": {
@@ -410,7 +410,7 @@
     },
     "after_nurse_enter_choice_b": {
         "name": "Infirmière",
-        "text": "Hein ? J'aime bien ici. — C'est calme, et si on oublie l'odeur de désinfectant, c'est parfait."
+        "text": "Ça avait l'air tranquille ? Plus c'est calme ici, plus je dois rester vigilante."
     },
     "after_nurse_enter_8": {
         "name": "Infirmière",

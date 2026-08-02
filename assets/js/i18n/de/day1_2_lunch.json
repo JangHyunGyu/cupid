@@ -295,7 +295,7 @@
         "text": "*Noch immer auf dem Strohhalm kauend, beugt sie sich näher zu mir.*",
         "choices": [
             "Ein bisschen. Kannst du mir etwas beibringen?",
-            "Hab nur so getan."
+            "Ich habe einfach nur mitgeredet."
         ]
     },
     "lunch_dain_c1_1": {
@@ -308,7 +308,7 @@
     },
     "lunch_dain_c2_1": {
         "name": "Dain",
-        "text": "Aber interessieren tut es dich doch. Komm heute nach der Schule in die Turnhalle. Du kannst auch nur kurz zuschauen."
+        "text": "Wenn es dich nicht interessiert, sag es. So zu tun, als ob, finde ich schlimmer."
     },
     "lunch_dain_after": {
         "name": "{name}",

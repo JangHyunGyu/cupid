@@ -442,7 +442,7 @@
         "text": "*Le recto indique les gestes de premiers secours ; le verso, les services d'accompagnement du lycée.*",
         "choices": [
             "Oui. Je la garderai dans mon sac.",
-            "Je préfère savoir comment prendre rendez-vous au service d'écoute."
+            "Avec cette carte, je n'aurai pas besoin d'aller jusqu'au bureau d'orientation."
         ]
     },
     "hidden_nurse_d5_choice_a": {
@@ -455,7 +455,7 @@
     },
     "hidden_nurse_d5_choice_b": {
         "name": "Infirmière",
-        "text": "Bien. Si tu réserves par l'application du lycée, une conseillère pourra prendre le relais même si je ne réponds pas tout de suite."
+        "text": "C'est l'inverse. Cette carte n'est pas faite pour que tu gères tout seul."
     },
     "hidden_nurse_d5_choice_b_b": {
         "name": "Infirmière",

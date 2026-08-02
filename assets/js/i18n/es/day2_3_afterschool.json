@@ -525,7 +525,7 @@
         "text": "*El cable del auricular se enreda una vez más entre los dedos de Yuna.*",
         "choices": [
             "¿Vengo todos los días?",
-            "Me gusta que sea tranquilo"
+            "Contigo estoy cómodo porque no hace falta hablar."
         ]
     },
     "after2_yuna_everyday": {
@@ -546,11 +546,11 @@
     },
     "after2_yuna_quiet": {
         "name": "Yuna",
-        "text": "...Por eso me gusta este sitio."
+        "text": "…Pensé que hablabas de mí, no de este sitio."
     },
     "after2_yuna_quiet_react": {
         "name": "Yuna",
-        "text": "*Mueve el separador una página hacia atrás. No retira el audífono del extremo del sofá.*"
+        "text": "*El marcapáginas avanza una página. Guarda en su bolso el auricular que estaba en el borde del sofá.*"
     },
     "after2_yuna_end": {
         "name": "{name}",

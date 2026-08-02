@@ -8,7 +8,7 @@
         "text": "*Seoyeon wickelt den Riemen ihrer Tasche noch einmal um einen Finger.*",
         "choices": [
             "Du siehst heute wirklich schön aus.",
-            "Du hast dir heute echt Mühe gegeben."
+            "Klar, als Schülersprecherin planst du sogar ein Date perfekt."
         ]
     },
     "date_seo_pretty_high": {
@@ -41,7 +41,7 @@
     },
     "date_seo_bright": {
         "name": "Seoyeon",
-        "text": "Klar. Hab mir heute extra Mühe gegeben."
+        "text": "*Ihre Hand löst sich vom Taschenriemen.* Heute bin ich nicht als Schülersprecherin hier."
     },
     "date_seo_walk": {
         "name": "{name}",

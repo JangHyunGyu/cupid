@@ -442,7 +442,7 @@
         "text": "*Auf der Vorderseite stehen die grundlegenden Erste-Hilfe-Schritte, auf der Rückseite die schulischen Beratungsangebote.*",
         "choices": [
             "Ja. Ich stecke sie in meine Tasche.",
-            "Erklären Sie mir lieber, wie ich einen Beratungstermin buche."
+            "Mit dieser Karte muss ich wohl nicht extra zur Beratung."
         ]
     },
     "hidden_nurse_d5_choice_a": {
@@ -455,7 +455,7 @@
     },
     "hidden_nurse_d5_choice_b": {
         "name": "Schulkrankenschwester",
-        "text": "Gut. Wenn du über die Schul-App buchst, kann die Beratungskraft übernehmen, selbst wenn ich es nicht sofort sehe."
+        "text": "Im Gegenteil. Die Karte ist nicht dafür da, dass du alles allein aushältst."
     },
     "hidden_nurse_d5_choice_b_b": {
         "name": "Schulkrankenschwester",

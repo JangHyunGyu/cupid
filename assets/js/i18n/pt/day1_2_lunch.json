@@ -295,7 +295,7 @@
         "text": "*Com o canudo entre os lábios, ela inclina o tronco para perto.*",
         "choices": [
             "Um pouquinho. Me ensina?",
-            "Tava só fingindo."
+            "Eu só estava entrando no clima."
         ]
     },
     "lunch_dain_c1_1": {
@@ -308,7 +308,7 @@
     },
     "lunch_dain_c2_1": {
         "name": "Dain",
-        "text": "Mas você tem algum interesse. Venha ao ginásio depois da aula. Pode só assistir um pouco."
+        "text": "Se você não tem interesse, é só falar. Fingir é pior."
     },
     "lunch_dain_after": {
         "name": "{name}",

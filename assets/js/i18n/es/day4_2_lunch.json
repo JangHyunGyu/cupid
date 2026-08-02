@@ -8,7 +8,7 @@
         "text": "*La correa del bolso de Seoyeon se enrolla una vez más alrededor de sus dedos.*",
         "choices": [
             "Hoy te ves bonita.",
-            "Hoy te esforzaste mucho en arreglarte."
+            "Como era de esperar de la presidenta del consejo, hasta una cita te sale perfecta."
         ]
     },
     "date_seo_pretty_high": {
@@ -41,7 +41,7 @@
     },
     "date_seo_bright": {
         "name": "Seoyeon",
-        "text": "Claro. Hoy me esforcé un poco en arreglarme."
+        "text": "*Suelta la correa del bolso.* Hoy no he venido como presidenta del consejo."
     },
     "date_seo_walk": {
         "name": "{name}",

@@ -525,7 +525,7 @@
         "text": "*The earbud cord winds once more between Yuna's fingers.*",
         "choices": [
             "Should I come every day?",
-            "It's nice because it's quiet."
+            "It's nice being with you because we don't really have to talk."
         ]
     },
     "after2_yuna_everyday": {
@@ -546,11 +546,11 @@
     },
     "after2_yuna_quiet": {
         "name": "Yuna",
-        "text": "That's why I like it here."
+        "text": "…I thought you meant me, not this place."
     },
     "after2_yuna_quiet_react": {
         "name": "Yuna",
-        "text": "*Her bookmark moves back one page. She doesn't clear away the earbud at the end of the sofa.*"
+        "text": "*The bookmark moves one page forward. She puts the earbud from the end of the sofa into her bag.*"
     },
     "after2_yuna_end": {
         "name": "{name}",

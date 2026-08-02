@@ -267,7 +267,7 @@
         "text": "*My phone presses into my palm.*",
         "choices": [
             "Say it now",
-            "Don't say it yet"
+            "Don't break the mood right now."
         ]
     },
     "after5_confess_yes": {

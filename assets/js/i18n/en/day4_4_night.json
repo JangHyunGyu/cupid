@@ -173,7 +173,7 @@
         "choices": [
             "Want a wet wipe?",
             "Let's sit here for a minute.",
-            "You don't have to say anything."
+            "I think I get it. You don't have to explain."
         ]
     },
     "wall_seo_line_react_1": {
@@ -186,7 +186,7 @@
     },
     "wall_seo_line_react_3": {
         "name": "Seoyeon",
-        "text": "Okay."
+        "text": "Don't act like you know."
     },
     "wall_seo_line_react_3_b": {
         "name": "Seoyeon",
@@ -472,11 +472,11 @@
     },
     "wall_dain_lastspike_2": {
         "name": "Dain",
-        "text": "*She watches each ball go into the rack.* I thought putting them away would make it really feel over."
+        "text": "*Dain looks up from the ball rack.* Wait. Why are you deciding everything?"
     },
     "wall_dain_lastspike_3": {
         "name": "{name}",
-        "text": "We're not throwing everything away. Today, we're just putting the balls back."
+        "text": "I'll stop. Tell me what you need right now."
     },
     "wall_dain_lastspike_3_b": {
         "name": "Dain",

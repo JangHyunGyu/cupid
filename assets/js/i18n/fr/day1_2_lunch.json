@@ -295,7 +295,7 @@
         "text": "*La paille entre les lèvres, elle se penche vers moi.*",
         "choices": [
             "Un peu. Tu m’apprendrais ?",
-            "Je bluffais."
+            "Je faisais juste semblant de m'y connaître."
         ]
     },
     "lunch_dain_c1_1": {
@@ -308,7 +308,7 @@
     },
     "lunch_dain_c2_1": {
         "name": "Dain",
-        "text": "Ça t'intéresse quand même. Viens au gymnase après les cours. Tu peux te contenter de regarder un peu."
+        "text": "Si ça ne t'intéresse pas, dis-le. Je déteste encore plus qu'on fasse semblant."
     },
     "lunch_dain_after": {
         "name": "{name}",

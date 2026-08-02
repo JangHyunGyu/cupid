@@ -1221,10 +1221,11 @@ for (const [sceneId, { scene }] of Object.entries(allScenes)) {
 }
 
 // ===== TEST 7: stats 캐릭터 키 검증 =====
+const validStatsCharKeys = [...validCharKeys, '#{current_character}'];
 for (const [sceneId, { scene }] of Object.entries(allScenes)) {
     if (scene.stats) {
         for (const charKey of Object.keys(scene.stats)) {
-            if (!validCharKeys.includes(charKey)) {
+            if (!validStatsCharKeys.includes(charKey)) {
                 errors.push('[PLAYTEST_STATS] "' + sceneId + '" stats: "' + charKey + '" 유효하지 않은 캐릭터 키');
             }
         }
@@ -1233,7 +1234,7 @@ for (const [sceneId, { scene }] of Object.entries(allScenes)) {
         scene.choices.forEach((c, ci) => {
             if (c.stats) {
                 for (const charKey of Object.keys(c.stats)) {
-                    if (!validCharKeys.includes(charKey)) {
+                    if (!validStatsCharKeys.includes(charKey)) {
                         errors.push('[PLAYTEST_STATS] "' + sceneId + '" choices[' + ci + '].stats: "' + charKey + '" 유효하지 않은 캐릭터 키');
                     }
                 }

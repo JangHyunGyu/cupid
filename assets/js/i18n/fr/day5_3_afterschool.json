@@ -267,7 +267,7 @@
         "text": "*Le coin du téléphone appuie dans ma paume.*",
         "choices": [
             "Le dire maintenant",
-            "Ne pas encore le dire"
+            "Ne pas gâcher l'ambiance maintenant."
         ]
     },
     "after5_confess_yes": {

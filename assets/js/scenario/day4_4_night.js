@@ -265,7 +265,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "choices": [
             { "next": "wall_seo_line_react_1", "stats": {"Seoyeon":{"affinity":7}} },
             { "next": "wall_seo_line_react_2", "stats": {"Seoyeon":{"affinity":7}} },
-            { "next": "wall_seo_line_react_3", "stats": {"Seoyeon":{"affinity":4}} }
+            { "next": "wall_seo_line_react_3", "stats": {"Seoyeon":{"affinity":-4}} }
         ]
     },
     "wall_seo_line_react_1": {
@@ -620,7 +620,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "choices": [
             { "next": "wall_dain_newdream_1", "stats": {"Dain":{"affinity":3}} },
             { "next": "wall_dain_cry_1", "stats": {"Dain":{"affinity":5}} },
-            { "next": "wall_dain_lastspike_1", "stats": {"Dain":{"affinity":4}} }
+            { "next": "wall_dain_lastspike_1", "stats": {"Dain":{"affinity":-4}} }
         ]
     },
     "wall_dain_newdream_1": {

@@ -218,7 +218,7 @@
         "text": "*La profesora retira la mano con la que iba a cerrar el cajón y espera mi respuesta.*",
         "choices": [
             "¿Y usted? ¿Qué lee?",
-            "Sí, me gusta leer"
+            "Usted solo lee libros difíciles, ¿verdad?"
         ]
     },
     "hidden_homeroom_d2_choice1_a": {
@@ -227,7 +227,7 @@
     },
     "hidden_homeroom_d2_choice1_b": {
         "name": "Profesora",
-        "text": "*Gira una vuelta el asa de la taza de café.* ¿Sí? Es un buen pasatiempo."
+        "text": "Ser profesora no significa que mis gustos también tengan que ser difíciles."
     },
     "hidden_homeroom_d2_5": {
         "name": "Profesora",

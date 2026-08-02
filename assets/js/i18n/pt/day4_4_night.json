@@ -173,7 +173,7 @@
         "choices": [
             "Quer um lenço umedecido?",
             "Vamos ficar sentados um pouco.",
-            "Você não precisa falar."
+            "Acho que entendi. Você não precisa explicar."
         ]
     },
     "wall_seo_line_react_1": {
@@ -186,7 +186,7 @@
     },
     "wall_seo_line_react_3": {
         "name": "Seoyeon",
-        "text": "Está bem."
+        "text": "Não finja que sabe."
     },
     "wall_seo_line_react_3_b": {
         "name": "Seoyeon",
@@ -472,11 +472,11 @@
     },
     "wall_dain_lastspike_2": {
         "name": "Dain",
-        "text": "*Observa as bolas entrarem uma a uma no armário.* ...Achei que, quando guardasse tudo, seria o fim de verdade."
+        "text": "*Dain ergue os olhos do carrinho de bolas.* Espera. Por que você está decidindo tudo?"
     },
     "wall_dain_lastspike_3": {
         "name": "{name}",
-        "text": "Não estou dizendo para jogar tudo fora. Hoje vamos guardar só as bolas."
+        "text": "Eu paro. Me diz do que você precisa agora."
     },
     "wall_dain_lastspike_3_b": {
         "name": "Dain",

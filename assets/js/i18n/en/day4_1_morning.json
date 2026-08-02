@@ -235,7 +235,7 @@
         "text": "*She sets down her coffee and tips her chin toward the critique copies on an inside table.*",
         "choices": [
             "You still haven't decided on the ending?",
-            "You'll show the whole thing to the club too, right?"
+            "The club members will probably say they like it because it's yours."
         ]
     },
     "hidden_homeroom_d4_cafe_choice_a": {
@@ -244,7 +244,7 @@
     },
     "hidden_homeroom_d4_cafe_choice_b": {
         "name": "Homeroom Teacher",
-        "text": "Of course. These are the copies I'm handing out today. There isn't a separate version just for you."
+        "text": "Then there'd be no point in getting feedback. I don't want them going easy on me because I'm their teacher."
     },
     "hidden_homeroom_d4_cafe_4": {
         "name": "Homeroom Teacher",
@@ -471,7 +471,7 @@
         "text": "*The nurse writes down the number of completed first-aid kits.*",
         "choices": [
             "When are you glad you became a school nurse?",
-            "What's the biggest difference between a hospital and a school?"
+            "Serious injuries must be rare at school, so it must be less stressful."
         ]
     },
     "hidden_nurse_d4_name_choice_a": {
@@ -480,7 +480,7 @@
     },
     "hidden_nurse_d4_name_choice_b": {
         "name": "School Nurse",
-        "text": "Here, I can talk to someone before they get hurt. That's the biggest difference."
+        "text": "I wish serious injuries were the only thing that counted. More students keep quiet and tough it out."
     },
     "hidden_nurse_d4_6": {
         "name": "School Nurse",
@@ -503,7 +503,7 @@
         "text": "All that's left is labeling them. The event staff are going to buy snacks—anyone want to help finish up?",
         "choices": [
             "I'll stay and label the first-aid kits too.",
-            "That's okay, I should get going"
+            "It'll be faster if you do it yourself."
         ]
     },
     "hidden_nurse_d4_meal_walk": {
@@ -564,7 +564,7 @@
     },
     "hidden_nurse_d4_pass": {
         "name": "School Nurse",
-        "text": "All right. Coming in on a weekend was more than enough. Get home safe."
+        "text": "Probably. But speed isn't why I asked someone to stay and help."
     },
     "hidden_homeroom_d4_freetalk": {
         "name": "Homeroom Teacher",

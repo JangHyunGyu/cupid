@@ -235,7 +235,7 @@
         "text": "*Sie stellt ihren Kaffee ab und deutet mit dem Kinn auf die Kritikexemplare am Tisch weiter innen.*",
         "choices": [
             "Haben Sie das Ende noch nicht festgelegt?",
-            "Sie zeigen den anderen aus dem Literaturklub aber auch alles, oder?"
+            "Weil es Ihr Text ist, werden die anderen ihn bestimmt gut finden."
         ]
     },
     "hidden_homeroom_d4_cafe_choice_a": {
@@ -244,7 +244,7 @@
     },
     "hidden_homeroom_d4_cafe_choice_b": {
         "name": "Klassenlehrerin",
-        "text": "Natürlich. Das sind die Kopien für die heutige Besprechung. Es gibt kein Manuskript, das nur du lesen darfst."
+        "text": "Dann wäre die Kritik wertlos. Ich will nicht, dass sie mich schonen, nur weil ich ihre Lehrerin bin."
     },
     "hidden_homeroom_d4_cafe_4": {
         "name": "Klassenlehrerin",
@@ -471,7 +471,7 @@
         "text": "*Die Krankenschwester notiert die Anzahl der fertigen Erste-Hilfe-Sets.*",
         "choices": [
             "Wann sind Sie froh, Schulkrankenschwester geworden zu sein?",
-            "Was ist der größte Unterschied zwischen Krankenhaus und Schule?"
+            "An einer Schule gibt es kaum schwere Verletzungen. Das ist bestimmt entspannter als im Krankenhaus."
         ]
     },
     "hidden_nurse_d4_name_choice_a": {
@@ -480,7 +480,7 @@
     },
     "hidden_nurse_d4_name_choice_b": {
         "name": "Schulkrankenschwester",
-        "text": "Hier kann ich mit jemandem reden, bevor er sich verletzt. Das ist der größte Unterschied."
+        "text": "Schön wäre es, wenn nur schwere Verletzungen zählen würden. Viel mehr Schüler sagen nichts und halten einfach durch."
     },
     "hidden_nurse_d4_6": {
         "name": "Schulkrankenschwester",
@@ -503,7 +503,7 @@
         "text": "Jetzt fehlen nur noch die Etiketten. Die Helfer holen gerade Snacks. Wer hilft mir noch beim Fertigmachen?",
         "choices": [
             "Ich klebe die Etiketten auf die Erste-Hilfe-Sets und gehe dann.",
-            "Nein danke, ich gehe jetzt."
+            "Wenn Sie es selbst machen, geht es schneller."
         ]
     },
     "hidden_nurse_d4_meal_walk": {
@@ -564,7 +564,7 @@
     },
     "hidden_nurse_d4_pass": {
         "name": "Schulkrankenschwester",
-        "text": "Gut. Dass du am Wochenende gekommen bist, reicht völlig. Komm gut nach Hause."
+        "text": "Wahrscheinlich. Aber ich habe nicht wegen der Geschwindigkeit gefragt, ob jemand bleibt."
     },
     "hidden_homeroom_d4_freetalk": {
         "name": "Klassenlehrerin",

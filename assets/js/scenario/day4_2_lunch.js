@@ -21,7 +21,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/seyoun_normal.png",
         "choices": [
             { "affinityChar": "Seoyeon", "affinityBranches": [{"minAffinity":50,"next":"date_seo_pretty_high"},{"minAffinity":-100,"next":"date_seo_pretty_low"}] },
-            { "next": "date_seo_bright", "stats": {"Seoyeon":{"affinity":5}} }
+            { "next": "date_seo_bright", "stats": {"Seoyeon":{"affinity":-4}} }
         ]
     },
     "date_seo_pretty_high": {
@@ -63,7 +63,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "date_seo_bright": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_laugh.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "date_seo_walk"
     },
     "date_seo_walk": {
@@ -148,7 +148,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/yuna_normal.png",
         "choices": [
             { "affinityChar": "Yuna", "affinityBranches": [{"minAffinity":50,"next":"date_yuna_pretty_high"},{"minAffinity":-100,"next":"date_yuna_pretty_low"}] },
-            { "next": "date_yuna_bright", "stats": {"Yuna":{"affinity":5}} }
+            { "next": "date_yuna_bright", "stats": {"Yuna":{"affinity":-3}} }
         ]
     },
     "date_yuna_pretty_high": {
@@ -195,7 +195,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "date_yuna_bright": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/yuna_smile.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "next": "date_yuna_bookstore"
     },
     "date_yuna_bookstore": {

@@ -173,7 +173,7 @@
         "choices": [
             "¿Quieres una toallita húmeda?",
             "Sentémonos un momento.",
-            "No tienes que hablar."
+            "Creo que lo entiendo. No hace falta que me lo expliques."
         ]
     },
     "wall_seo_line_react_1": {
@@ -186,7 +186,7 @@
     },
     "wall_seo_line_react_3": {
         "name": "Seoyeon",
-        "text": "Está bien."
+        "text": "No finjas que lo sabes."
     },
     "wall_seo_line_react_3_b": {
         "name": "Seoyeon",
@@ -472,11 +472,11 @@
     },
     "wall_dain_lastspike_2": {
         "name": "Dain",
-        "text": "*Observa cómo los balones entran uno a uno en el armario.* ...Pensaba que al recogerlos se acabaría de verdad."
+        "text": "*Dain alza la vista del carrito de balones.* Espera. ¿Por qué lo decides todo tú?"
     },
     "wall_dain_lastspike_3": {
         "name": "{name}",
-        "text": "No te estoy diciendo que lo tires todo. Hoy guardemos solo los balones."
+        "text": "Paro. Dime qué necesitas ahora."
     },
     "wall_dain_lastspike_3_b": {
         "name": "Dain",

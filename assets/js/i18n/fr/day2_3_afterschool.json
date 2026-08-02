@@ -525,7 +525,7 @@
         "text": "*Le fil de l'écouteur s'enroule encore entre les doigts de Yuna.*",
         "choices": [
             "Je devrais venir tous les jours ?",
-            "C'est agréable parce que c'est calme"
+            "Avec toi, c'est agréable parce qu'on n'est pas obligés de parler."
         ]
     },
     "after2_yuna_everyday": {
@@ -546,11 +546,11 @@
     },
     "after2_yuna_quiet": {
         "name": "Yuna",
-        "text": "...C'est pour ça que j'aime cet endroit."
+        "text": "…Je croyais que tu parlais de moi, pas de cet endroit."
     },
     "after2_yuna_quiet_react": {
         "name": "Yuna",
-        "text": "*Elle recule son marque-page d'une page. L'écouteur posé au bout du canapé reste à sa place.*"
+        "text": "*Le marque-page avance d'une page. Elle range dans son sac l'écouteur posé au bout du canapé.*"
     },
     "after2_yuna_end": {
         "name": "{name}",

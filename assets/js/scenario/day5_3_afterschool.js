@@ -418,7 +418,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": null,
         "choices": [
             { "next": "after5_confess_yes", "setFlags": ["day5_confessed"] },
-            { "next": "after5_confess_no" }
+            { "next": "after5_confess_no", "stats": {"#{current_character}":{"affinity":-4}} }
         ]
     },
     "after5_confess_yes": {

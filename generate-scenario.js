@@ -163,12 +163,13 @@ function img(fullPath) {
 function formatStats(stats) {
     const parts = [];
     for (const [char, val] of Object.entries(stats)) {
+        const label = char === '#{current_character}' ? '현재 대화 캐릭터' : char;
         if (typeof val === 'object' && val !== null && val.affinity !== undefined) {
             const sign = val.affinity >= 0 ? '+' : '';
-            parts.push(`${char} ${sign}${val.affinity}`);
+            parts.push(`${label} ${sign}${val.affinity}`);
         } else if (typeof val === 'number') {
             const sign = val >= 0 ? '+' : '';
-            parts.push(`${char} ${sign}${val}`);
+            parts.push(`${label} ${sign}${val}`);
         }
     }
     return parts.join(', ');

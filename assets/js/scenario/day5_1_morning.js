@@ -653,7 +653,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": "assets/images/characters/nurse_normal.png",
         "choices": [
             { "next": "hidden_nurse_d5_choice_a", "stats": {"Nurse":{"affinity":11}} },
-            { "next": "hidden_nurse_d5_choice_b", "stats": {"Nurse":{"affinity":5}} }
+            { "next": "hidden_nurse_d5_choice_b", "stats": {"Nurse":{"affinity":-6}} }
         ]
     },
     "hidden_nurse_d5_choice_a": {

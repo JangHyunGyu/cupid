@@ -8,7 +8,7 @@
         "text": "*La bandoulière du sac de Seoyeon fait un tour de plus autour de son doigt.*",
         "choices": [
             "Tu es vraiment belle aujourd'hui.",
-            "Tu t'es donné du mal aujourd'hui."
+            "Évidemment, la présidente du conseil organise aussi ses rendez-vous à la perfection."
         ]
     },
     "date_seo_pretty_high": {
@@ -41,7 +41,7 @@
     },
     "date_seo_bright": {
         "name": "Seoyeon",
-        "text": "Évidemment. Aujourd’hui, j’ai fait un effort."
+        "text": "*Sa main quitte la lanière de son sac.* Aujourd'hui, je ne suis pas venue en tant que présidente du conseil."
     },
     "date_seo_walk": {
         "name": "{name}",
