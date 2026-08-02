@@ -1051,6 +1051,28 @@ function formatRoleplayExampleBlock(examples, charName, lang = 'ko', maxExamples
 
 window.formatRoleplayExampleBlock = formatRoleplayExampleBlock;
 
+function buildCupidAdultVocalizationRule(lang = 'ko') {
+    const rules = {
+        ko: `[성인 장면의 목소리]
+성행위가 진행 중이고 자극이 강해지면 캐릭터를 별다른 이유 없이 침묵시키거나 짧은 숨만 내게 하지 않습니다. 숨소리, 억눌린 소리, 끊어진 말, 통제되지 않는 강한 신음 가운데 실제 자극과 절정의 흐름에 맞는 반응을 고릅니다. 몸이 통제를 놓는 순간에는 과장될 만큼 크고 거친 신음도 허용합니다. 성별은 음역과 신체 반응을 잡는 참고값일 뿐입니다. 표현 방식과 빈도는 성격·성향·주도권·수치심·현재 감정·자극 부위가 더 크게 좌우합니다. 과묵한 인물은 참다가 무너지고, 지배적인 인물은 명령 사이로 거친 숨이나 새는 소리가 섞이는 식으로 각자의 말투와 힘 관계를 지킵니다. 실제로 낸 숨·신음·끊어진 말은 dialogue에, 그 소리 때문에 흐트러진 호흡·목소리·몸의 반응은 narration에 둡니다. 같은 의성어를 기계적으로 되풀이하거나 답변마다 횟수와 단계를 채우지 않습니다.`,
+        en: `[Voice in an Adult Scene]
+Once a sex act is underway and stimulation grows stronger, do not mute the character without a character-specific reason or reduce every response to a brief breath. Choose among audible breath, restrained sounds, broken speech, and uncontrolled powerful moans according to the actual stimulation and approach to climax; when the body loses control, even exaggeratedly loud or rough vocalization is valid. Sex only informs physical register and pitch. Personality, disposition, control, shame, present emotion, and the area being stimulated should matter more to wording and frequency. A reserved character may hold back until they break; a dominant character may let rough breaths or involuntary sounds cut through commands. Put audible breaths, moans, and broken words in dialogue; put the resulting disruption of breath, voice, and body in narration. Do not loop one stock sound mechanically or satisfy a per-reply count or stage checklist.`,
+        es: `[Voz en una escena adulta]
+Cuando ya hay un acto sexual y aumenta la estimulación, no silencies al personaje sin una razón propia ni reduzcas cada respuesta a una respiración breve. Elige entre respiración audible, sonidos contenidos, palabras entrecortadas y gemidos fuertes e incontrolados según la estimulación real y el avance hacia el orgasmo; cuando el cuerpo pierde el control, también valen sonidos exageradamente fuertes o ásperos. El sexo del personaje solo orienta el registro físico y el tono. La personalidad, la disposición, el control, la vergüenza, la emoción presente y la zona estimulada pesan más en la forma y la frecuencia. Un personaje reservado puede contenerse hasta quebrarse; uno dominante puede dejar escapar respiraciones ásperas o sonidos involuntarios entre sus órdenes. Pon las respiraciones, los gemidos y las palabras entrecortadas que realmente se oyen en dialogue; deja en narration cómo alteran la respiración, la voz y el cuerpo. No repitas mecánicamente un mismo sonido ni cumplas cuotas o etapas por respuesta.`,
+        ja: `[成人向け場面の声]
+性行為が進行中で刺激が強まったら、キャラクターらしい理由もなく黙らせたり、短い息だけに縮めたりしません。実際の刺激と絶頂への流れに合わせ、息遣い、押し殺した声、途切れる言葉、抑えきれない強い喘ぎから反応を選びます。身体が制御を失う瞬間は、大げさなほど大きく荒い声も許容します。性別は声域や身体反応の参考にすぎません。表し方と頻度は、性格、気質、主導権、羞恥心、今の感情、刺激されている部位をより重く見て決めます。寡黙な人物なら耐えた末に崩れ、支配的な人物なら命令の合間に荒い息や漏れた声が混じるなど、本人の口調と力関係を保ってください。実際に発した息、喘ぎ、途切れた言葉は dialogue に、その音で乱れた呼吸、声、身体の反応は narration に置きます。同じ擬声語を機械的に繰り返したり、一回答ごとの回数や段階を埋めたりしません。`,
+        fr: `[Voix dans une scène adulte]
+Une fois l'acte sexuel engagé, si la stimulation s'intensifie, ne réduisez pas le personnage au silence sans raison qui lui soit propre ni chaque réaction à un souffle bref. Choisissez entre respiration audible, sons retenus, paroles hachées et gémissements puissants et incontrôlés selon la stimulation réelle et l'approche de l'orgasme ; quand le corps perd le contrôle, une voix exagérément forte ou rauque est aussi légitime. Le sexe ne sert qu'à orienter le registre physique et la hauteur de voix. La personnalité, le tempérament, le contrôle, la pudeur, l'émotion présente et la zone stimulée comptent davantage dans la forme et la fréquence. Un personnage réservé peut se contenir jusqu'à céder ; un personnage dominant peut laisser des souffles rauques ou des sons involontaires traverser ses ordres. Placez les souffles, gémissements et mots brisés réellement audibles dans dialogue ; décrivez dans narration la façon dont ils dérèglent la respiration, la voix et le corps. Ne répétez pas mécaniquement le même son et ne remplissez aucun quota ni aucune suite d'étapes par réponse.`,
+        de: `[Stimme in einer Erwachsenenszene]
+Wenn eine sexuelle Handlung im Gang ist und der Reiz stärker wird, darf die Figur nicht ohne charaktereigenen Grund verstummen oder jede Reaktion auf einen kurzen Atemzug beschränken. Wähle hörbaren Atem, unterdrückte Laute, abgebrochene Worte oder unkontrolliert heftiges Stöhnen passend zum tatsächlichen Reiz und zur Annäherung an den Höhepunkt; verliert der Körper die Kontrolle, sind auch übertrieben laute oder raue Laute stimmig. Das Geschlecht dient nur als Anhaltspunkt für körperliches Register und Stimmlage. Persönlichkeit, Veranlagung, Kontrolle, Scham, gegenwärtige Gefühle und die gereizte Körperstelle bestimmen Ausdruck und Häufigkeit stärker. Eine schweigsame Figur hält vielleicht zurück, bis die Kontrolle bricht; bei einer dominanten Figur können raue Atemzüge oder unwillkürliche Laute Befehle durchschneiden. Tatsächlich hörbare Atemzüge, Laute und abgebrochene Worte gehören in dialogue; ihre Wirkung auf Atem, Stimme und Körper in narration. Wiederhole keinen Standardlaut mechanisch und erfülle weder eine Quote noch eine feste Stufenfolge pro Antwort.`,
+        pt: `[Voz em uma cena adulta]
+Quando o ato sexual já está acontecendo e o estímulo aumenta, não silencie a personagem sem um motivo próprio dela nem reduza toda reação a uma respiração curta. Escolha entre respiração audível, sons contidos, palavras entrecortadas e gemidos fortes e incontroláveis conforme o estímulo real e a aproximação do orgasmo; quando o corpo perde o controle, sons exageradamente altos ou ásperos também são válidos. O sexo da personagem serve apenas como referência para o registro físico e o tom da voz. Personalidade, disposição, controle, vergonha, emoção do momento e região estimulada pesam mais na forma e na frequência. Uma personagem reservada pode se conter até desabar; uma dominante pode deixar respirações ásperas ou sons involuntários atravessarem as ordens. Coloque em dialogue a respiração, os gemidos e as palavras entrecortadas que forem realmente audíveis; deixe em narration o efeito disso sobre a respiração, a voz e o corpo. Não repita mecanicamente um som pronto nem cumpra cotas ou etapas por resposta.`
+    };
+    return rules[lang] || rules.en;
+}
+
+window.buildCupidAdultVocalizationRule = buildCupidAdultVocalizationRule;
+
 function buildCupidThirdPersonAdultCameraRule(lang = 'ko') {
     const rules = {
         ko: `[3인칭 서술 카메라]
@@ -1068,7 +1090,7 @@ Jede narration steht in der dritten Person. Für die Figur werden Name, Beziehun
         pt: `[Câmera narrativa em terceira pessoa]
 Toda narration usa terceira pessoa. Para a personagem, use o nome, um título de relação ou ele/ela; para o usuário, o nome salvo, “a outra pessoa” ou “o/a parceiro/a”. “Você”, “te”, “ti”, “seu/sua/seus/suas” só podem aparecer em dialogue realmente falado, nunca em narration. A narration pode mostrar livremente ações, sensações físicas, desejos e reações internas da personagem, além de inferir ou narrar de modo natural a reação, emoção ou pensamento do usuário a partir das palavras, ações e do contexto da cena. Essa inferência permanece compatível com qualquer estado, escolha, consentimento ou recusa que o usuário declare explicitamente na entrada atual. Quando uma cena íntima já estabelecida entre adultos entra em um ato sexual, a câmera não desvia: narration mostra de forma concreta contato, posição, ritmo, pressão, fricção, umidade, calor, sons, expressão e mudanças de prazer. Se genitais, penetração, fluidos de excitação, sêmen ou orgasmo estiverem presentes, não os apague com eufemismos nem os omita. Apenas palavras e sons realmente vocalizados ficam em dialogue.`
     };
-    return rules[lang] || rules.en;
+    return `${rules[lang] || rules.en}\n\n${buildCupidAdultVocalizationRule(lang)}`;
 }
 
 window.buildCupidThirdPersonAdultCameraRule = buildCupidThirdPersonAdultCameraRule;
@@ -1449,5 +1471,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 };
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.42';
+const PROMPT_VERSION = '2.7.43';
 window.PROMPT_VERSION = PROMPT_VERSION;

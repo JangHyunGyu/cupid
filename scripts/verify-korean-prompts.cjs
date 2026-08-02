@@ -146,6 +146,13 @@ function assertCommonKoreanPrompt(prompt, label) {
         `${label} still contains an always-on input recap prohibition`);
     assert(prompt.includes('===CACHE_BOUNDARY==='), `${label} is missing the cache boundary`);
     assert(prompt.includes('현재 상태:'), `${label} is missing the Korean state label`);
+    assert(prompt.includes('[성인 장면의 목소리]'), `${label} is missing the conditional adult vocalization rule`);
+    assert(prompt.includes('몸이 통제를 놓는 순간에는 과장될 만큼 크고 거친 신음도 허용합니다.'),
+        `${label} still suppresses strong character vocalization at high stimulation`);
+    assert(prompt.includes('성격·성향·주도권·수치심·현재 감정·자극 부위가 더 크게 좌우합니다.'),
+        `${label} does not let character identity control vocalization`);
+    assert(prompt.includes('같은 의성어를 기계적으로 되풀이하거나 답변마다 횟수와 단계를 채우지 않습니다.'),
+        `${label} can still impose stock sounds or a per-reply quota`);
     assert(!prompt.includes('[현재 진행 상황]') && !prompt.includes('; 턴='),
         `${label} still exposes a turn budget to the roleplay model`);
     assert(!prompt.includes('유저'), `${label} still mixes the loanword 유저 into Korean instructions`);

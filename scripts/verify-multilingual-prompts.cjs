@@ -66,6 +66,14 @@ const languageSignals = {
     de: /[äöüß]|\b(?:ich|du|dein|heute)\b/i,
     pt: /[ãõáéíóúçêô]/i
 };
+const adultVocalizationSignals = {
+    en: '[Voice in an Adult Scene]',
+    es: '[Voz en una escena adulta]',
+    ja: '[成人向け場面の声]',
+    fr: '[Voix dans une scène adulte]',
+    de: '[Stimme in einer Erwachsenenszene]',
+    pt: '[Voz em uma cena adulta]'
+};
 const removedEditorPressure = [
     'answer in polished target-language prose',
     'silently rewrite every dialogue and narration line',
@@ -284,6 +292,8 @@ for (const lang of languages) {
             && systemPrompt.includes('Types: narration/dialogue.'),
             `[${lang}/${char}] main prompt changed the structural output contract`);
         assertNoEditorPressure(systemPrompt, `[${lang}/${char}] main prompt`);
+        assert(systemPrompt.includes(adultVocalizationSignals[lang]),
+            `[${lang}/${char}] main prompt is missing the conditional adult vocalization rule`);
         assert(!systemPrompt.includes('[CURRENT_PROGRESS]') && !systemPrompt.includes('; turns='),
             `[${lang}/${char}] main prompt still exposes a turn budget`);
         assert(systemPrompt.includes('[Shared cast knowledge]'),
@@ -395,6 +405,8 @@ for (const lang of languages) {
             && systemPrompt.includes('Types: narration/dialogue.'),
             `[${lang}/${char}] gallery prompt changed the structural output contract`);
         assertNoEditorPressure(systemPrompt, `[${lang}/${char}] gallery prompt`);
+        assert(systemPrompt.includes(adultVocalizationSignals[lang]),
+            `[${lang}/${char}] gallery prompt is missing the conditional adult vocalization rule`);
         assert(languageSignals[lang].test(systemPrompt), `[${lang}/${char}] gallery prompt lacks target-language anchors`);
         assert(systemPrompt.includes('[Shared cast knowledge]'),
             `[${lang}/${char}] gallery prompt is missing shared cast knowledge`);
