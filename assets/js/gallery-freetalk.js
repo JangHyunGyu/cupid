@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.44';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.45';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 const GalleryFreeTalkCore = window.CupidFreeTalkCore;
@@ -1969,19 +1969,18 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         let affinityChange = this._normalizeAffinityChange(turnAffinity);
         let startedCategory = '';
         let startedSeverity = '';
+        const plannedCategory = GalleryFreeTalkCore.normalizeGalleryIncidentCategory(plan?.category);
         const startsPlannedIncident = Boolean(
-            plan?.category
+            plannedCategory
             && incidentPayload?.status === 'started'
             && incidentPayload.summary
+            && (plannedCategory !== 'crisis' || incidentPayload.severity)
         );
 
         if (startsPlannedIncident && !state.activeIncident) {
-            const category = GalleryFreeTalkCore.normalizeGalleryIncidentCategory(plan.category);
+            const category = plannedCategory;
             const severity = category === 'crisis'
-                ? GalleryFreeTalkCore.limitGalleryCrisisSeverity(
-                    incidentPayload?.severity,
-                    plan.crisisSeverityCap || 'low'
-                )
+                ? GalleryFreeTalkCore.normalizeGalleryCrisisSeverity(incidentPayload?.severity)
                 : '';
             const summary = incidentPayload?.summary
                 || GalleryFreeTalkCore.truncateLatestUserText(visibleText, 240)
@@ -1990,8 +1989,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 category,
                 incidentPayload?.impact,
                 {
-                    severity,
-                    severityCap: plan.crisisSeverityCap || 'low'
+                    severity
                 }
             );
             state.activeIncident = {

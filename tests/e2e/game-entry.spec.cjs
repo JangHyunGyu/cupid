@@ -148,7 +148,7 @@ test('gallery high-severity trust incident commits one completed turn and an imm
         });
         const committed = talk._commitGalleryIncidentTurn({
             charId: 'yuna',
-            runtime: { state, plan: { category: 'crisis', crisisSeverityCap: 'high' } },
+            runtime: { state, plan: { category: 'crisis' } },
             payload: {
                 status: 'started',
                 summary: '반복된 강요 때문에 유나가 신뢰 문제를 꺼냈다.',
@@ -170,7 +170,7 @@ test('gallery high-severity trust incident commits one completed turn and an imm
     expect(result.savedState.negativeSignals).toEqual([]);
 });
 
-test('gallery crisis impact cannot exceed the evidence-backed severity cap', async ({ page }) => {
+test('gallery preserves the AI-selected crisis severity without an evidence-based override', async ({ page }) => {
     await page.goto('/gallery.html');
     await page.waitForFunction(() => window.GalleryFreeTalk && window.CupidFreeTalkCore);
 
@@ -191,12 +191,12 @@ test('gallery crisis impact cannot exceed the evidence-backed severity cap', asy
         });
         const committed = talk._commitGalleryIncidentTurn({
             charId: 'yuna',
-            runtime: { state, plan: { category: 'crisis', crisisSeverityCap: 'low' } },
+            runtime: { state, plan: { category: 'crisis' } },
             payload: {
                 status: 'started',
                 summary: 'A serious misunderstanding damages trust.',
-                severity: 'high',
-                impact: -50
+                severity: 'medium',
+                impact: -35
             },
             latestUserText: 'What happened?',
             turnAffinity: 5
@@ -204,9 +204,49 @@ test('gallery crisis impact cannot exceed the evidence-backed severity cap', asy
         return { committed, savedState };
     });
 
-    expect(result.committed.affinityChange).toBe(-29);
-    expect(result.committed.startedSeverity).toBe('low');
-    expect(result.savedState.activeIncident.severity).toBe('low');
+    expect(result.committed.affinityChange).toBe(-35);
+    expect(result.committed.startedSeverity).toBe('medium');
+    expect(result.savedState.activeIncident.severity).toBe('medium');
+});
+
+test('gallery rejects a crisis payload with no AI-selected severity instead of inferring one', async ({ page }) => {
+    await page.goto('/gallery.html');
+    await page.waitForFunction(() => window.GalleryFreeTalk && window.CupidFreeTalkCore);
+
+    const result = await page.evaluate(() => {
+        let savedState = null;
+        const talk = Object.create(window.GalleryFreeTalk.prototype);
+        talk.currentCharId = 'yuna';
+        talk.progress = {
+            setGalleryIncidentState(_charId, state) {
+                savedState = window.CupidFreeTalkCore.normalizeGalleryIncidentState(state);
+                return savedState;
+            }
+        };
+        const committed = talk._commitGalleryIncidentTurn({
+            charId: 'yuna',
+            runtime: {
+                state: window.CupidFreeTalkCore.normalizeGalleryIncidentState({
+                    completedTurns: 399,
+                    quietTurns: 99,
+                    negativeSignals: [{ turn: 398, weight: 6, excerpt: 'actual evidence' }]
+                }),
+                plan: { category: 'crisis' }
+            },
+            payload: {
+                status: 'started',
+                summary: 'The payload omitted severity.',
+                impact: -50
+            },
+            latestUserText: 'What happened?',
+            turnAffinity: 2
+        });
+        return { committed, savedState };
+    });
+
+    expect(result.committed.affinityChange).toBe(2);
+    expect(result.committed.startedCategory).toBe('');
+    expect(result.savedState.activeIncident).toBeNull();
 });
 
 test('gallery does not penalize a planned incident that the AI failed to establish', async ({ page }) => {

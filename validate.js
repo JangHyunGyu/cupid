@@ -1858,8 +1858,8 @@ try {
     if (promptVersion !== '2.7.42') {
         errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.42가 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.44') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.44가 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.45') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.45가 아님: ' + galleryPromptVersion);
     }
     const galleryProgressContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-progress.js'), 'utf8');
     const galleryLoaderAffinityContent = fs.readFileSync(path.join(__dirname, 'assets/js/loaders/gallery-loader.js'), 'utf8');

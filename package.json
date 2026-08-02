@@ -1,7 +1,7 @@
 {
   "name": "cupid-game",
   "private": true,
-  "version": "2.9.121",
+  "version": "2.9.122",
   "scripts": {
     "build": "node scripts/sync-build-metadata.cjs --write && node scripts/verify-project-structure.cjs",
     "build:check": "node scripts/sync-build-metadata.cjs --check && node scripts/verify-project-structure.cjs",

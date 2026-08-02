@@ -95,17 +95,7 @@ test('trust crises require actual negative evidence and enforce the 300-turn coo
     assert.equal(core.isGalleryCrisisEligible(eligible), true);
     const eligiblePlan = core.planGalleryIncident(eligible, 0, 0.95);
     assert.equal(eligiblePlan.category, 'crisis');
-    assert.equal(eligiblePlan.crisisSeverityCap, 'low');
-
-    const highEvidence = core.normalizeGalleryIncidentState({
-        completedTurns: 500,
-        quietTurns: 99,
-        negativeSignals: [
-            { turn: 470, weight: 6, excerpt: 'first severe signal' },
-            { turn: 480, weight: 6, excerpt: 'second severe signal' }
-        ]
-    });
-    assert.equal(core.planGalleryIncident(highEvidence, 0, 0.95).crisisSeverityCap, 'high');
+    assert.equal(Object.hasOwn(eligiblePlan, 'crisisSeverityCap'), false);
 
     const coolingDown = { ...eligible, lastCrisisTurn: 250 };
     assert.equal(core.isGalleryCrisisEligible(coolingDown), false);
@@ -118,22 +108,15 @@ test('incident impact is clamped by category and crisis severity', () => {
     assert.equal(core.normalizeGalleryIncidentImpact('conflict', -999), -5);
     assert.equal(core.normalizeGalleryIncidentImpact('conflict', 999), -2);
     assert.equal(core.normalizeGalleryIncidentImpact('crisis', -50, {
-        severity: 'low',
-        severityCap: 'high'
+        severity: 'low'
     }), -29);
     assert.equal(core.normalizeGalleryIncidentImpact('crisis', -35, {
-        severity: 'medium',
-        severityCap: 'high'
+        severity: 'medium'
     }), -35);
     assert.equal(core.normalizeGalleryIncidentImpact('crisis', -999, {
-        severity: 'high',
-        severityCap: 'high'
+        severity: 'high'
     }), -50);
-    assert.equal(core.normalizeGalleryIncidentImpact('crisis', -50, {
-        severity: 'high',
-        severityCap: 'low'
-    }), -29);
-    assert.equal(core.limitGalleryCrisisSeverity('high', 'medium'), 'medium');
+    assert.equal(core.normalizeGalleryIncidentImpact('crisis', -50, { severity: '' }), 0);
 });
 
 test('incident evidence stores real user excerpts and positive turns reduce it', () => {
@@ -164,7 +147,8 @@ test('gallery incident prompt delegates specifics to AI without inventing user a
     assert.match(block, /사용자가 하지 않은 말·행동·약속 위반을 사실로 지어내지 마세요/);
     assert.match(block, /"severity":"low 또는 medium 또는 high"/);
     assert.match(block, /"impact":-25/);
-    assert.match(block, /허용되는 최대 위기 강도: low/);
+    assert.match(block, /코드는 AI가 고른 강도를 다른 단계로 바꾸지 않는다|앱에서 다시 낮추거나 높이지 않으므로/);
+    assert.doesNotMatch(block, /허용되는 최대 위기 강도/);
     assert.match(block, /강요할 거야/);
 });
 
