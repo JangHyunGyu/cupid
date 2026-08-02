@@ -173,7 +173,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "character": "assets/images/characters/seyoun_normal.png",
         "choices": [
             { "next": "lunch_seo_c1_1", "stats": {"Seoyeon":{"affinity":5}} },
-            { "next": "lunch_seo_c2_1", "stats": {"Seoyeon":{"affinity":3}} }
+            { "next": "lunch_seo_c2_1", "stats": {"Seoyeon":{"affinity":-2}} }
         ]
     },
     "lunch_seo_c1_1": {
@@ -553,7 +553,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "character": "assets/images/characters/yuna_normal.png",
         "choices": [
             { "next": "lunch_yuna_c1_1", "stats": {"Yuna":{"affinity":5}} },
-            { "next": "lunch_yuna_c2_1", "stats": {"Yuna":{"affinity":3}} }
+            { "next": "lunch_yuna_c2_1", "stats": {"Yuna":{"affinity":-2}} }
         ]
     },
     "lunch_yuna_c1_1": {

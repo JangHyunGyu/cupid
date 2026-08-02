@@ -350,23 +350,23 @@ function generate() {
     // 기존 SCENARIO.md에서 게임 설정 부분 보존
     let header = '';
     let footer = '';
+    const existingContent = fs.existsSync(OUTPUT) ? fs.readFileSync(OUTPUT, 'utf-8') : '';
 
-    if (fs.existsSync(OUTPUT)) {
-        const existing = fs.readFileSync(OUTPUT, 'utf-8');
-        const startIdx = existing.indexOf(MARKER_START);
-        const endIdx = existing.indexOf(MARKER_END);
+    if (existingContent) {
+        const startIdx = existingContent.indexOf(MARKER_START);
+        const endIdx = existingContent.indexOf(MARKER_END);
 
         if (startIdx !== -1 && endIdx !== -1) {
             // 마커가 있으면 마커 사이만 교체
-            header = existing.slice(0, startIdx);
-            footer = existing.slice(endIdx + MARKER_END.length);
+            header = existingContent.slice(0, startIdx);
+            footer = existingContent.slice(endIdx + MARKER_END.length);
         } else {
             // 마커가 없으면 "# 1일차" 이전까지 보존
-            const dayMatch = existing.match(/^# 1일차$/m);
+            const dayMatch = existingContent.match(/^# 1일차$/m);
             if (dayMatch) {
-                header = existing.slice(0, dayMatch.index);
+                header = existingContent.slice(0, dayMatch.index);
             } else {
-                header = existing + '\n\n';
+                header = existingContent + '\n\n';
             }
         }
     }
@@ -408,6 +408,16 @@ function generate() {
     output.push(MARKER_END);
 
     const finalContent = header + output.join('\n') + footer;
+    if (process.argv.includes('--check')) {
+        if (existingContent !== finalContent) {
+            console.error('❌ SCENARIO.md가 시나리오 JS 및 한국어 i18n과 동기화되지 않았습니다. `node generate-scenario.js`를 실행하세요.');
+            process.exitCode = 1;
+            return;
+        }
+        console.log(`✅ SCENARIO.md 동기화 확인 — ${totalScenes}개 씬`);
+        return;
+    }
+
     fs.writeFileSync(OUTPUT, finalContent, 'utf-8');
     const sizeKB = (Buffer.byteLength(finalContent, 'utf-8') / 1024).toFixed(1);
     console.log(`✅ SCENARIO.md 시나리오 섹션 갱신 — ${totalScenes}개 씬, ${sizeKB}KB (게임 설정 보존)`);

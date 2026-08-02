@@ -236,7 +236,7 @@
         "text": "*Dain se ajusta una vez la visera de la gorra y espera.*",
         "choices": [
             "Esa gorra está muy bien.",
-            "La ropa deportiva te queda bien."
+            "La ropa deportiva es definitivamente lo tuyo."
         ]
     },
     "date_dain_pretty_high": {
@@ -261,7 +261,7 @@
     },
     "date_dain_bright": {
         "name": "Dain",
-        "text": "Claro. Hoy estoy en muy buena forma."
+        "text": "*La sonrisa de Dain se detiene mientras se baja un poco más la visera.* ...Claro. La ropa deportiva es cómoda."
     },
     "date_dain_to_arcade": {
         "name": "{name}",

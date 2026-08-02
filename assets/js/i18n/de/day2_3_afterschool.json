@@ -44,7 +44,7 @@
         "text": "*Die Krankenschwester beugt und streckt meinen Ellbogen und schätzt dabei die nötige Pflasterlänge ab.*",
         "choices": [
             "Lernt man so etwas auch im Krankenhaus?",
-            "Sie achten sogar auf den Winkel."
+            "Sie sind sogar bei einem Pflaster gründlich."
         ]
     },
     "hidden_nurse_d2_choice1_a": {
@@ -321,7 +321,7 @@
         "text": "*Ein orangefarbener Lichtstreifen fällt durch den Spalt der Jalousie und teilt die Unterlagen. Seoyeon richtet die Ecken der Blätter sauber aneinander aus.*",
         "choices": [
             "Der Sonnenuntergang ist schön. Ich meine den da draußen.",
-            "Tut dir der Nacken weh? Mach mal eine Pause."
+            "Wenn du das jeden Tag machst, bist du es bestimmt gewohnt."
         ]
     },
     "after2_seo_sunset_joke": {

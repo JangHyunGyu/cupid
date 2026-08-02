@@ -980,7 +980,7 @@
 - 배경: `top_school.png`
 - 선택지:
   1. "받아먹는다" → `lunch_seo_c1_1` | Seoyeon +5
-  2. "직접 먹는 게 더 맛있을걸" → `lunch_seo_c2_1` | Seoyeon +3
+  2. "직접 먹는 게 더 맛있을걸" → `lunch_seo_c2_1` | Seoyeon -2
 
 - 캐릭터: `seyoun_normal.png`
 **서연**: *계란말이를 내밀고 있다.*
@@ -1652,7 +1652,7 @@
 - 배경: `library_old.png`
 - 선택지:
   1. "그 책 재미있어? 나도 읽어볼까" → `lunch_yuna_c1_1` | Yuna +5
-  2. "독서를 좋아하는구나" → `lunch_yuna_c2_1` | Yuna +3
+  2. "조용히 책만 읽는 거 좋아하나 봐." → `lunch_yuna_c2_1` | Yuna -2
 
 - 캐릭터: `yuna_normal.png`
 **{name}**: *유나는 아직 몇 발자국 앞이다. 두고 간 책을 들고 뒤를 쫓는다.*
@@ -2359,7 +2359,7 @@
 - 배경: `teacher_office.png`
 - 선택지:
   1. "걱정이면 걱정이라고 하시면 되잖아요" → `after_homeroom_honest_choice2a` | Teacher +10
-  2. "주스 기대할게요, 선생님" → `after_homeroom_honest_choice2b` | Teacher +3
+  2. "그럼 다음에도 주스로 부탁드릴게요, 선생님." → `after_homeroom_honest_choice2b` | Teacher -2
 
 - 캐릭터: `teacher_normal.png`
 **{name}**: *출석부 모서리가 책상에 닿아 있다.*
@@ -5446,7 +5446,7 @@
 ### `lunch2_yuna_choice`
 - 배경: `yuna_hideout.png`
 - 선택지:
-  1. "그 사람, 지금은?" → `lunch2_yuna_c1_1` | Yuna +3
+  1. "그 사람, 지금은?" → `lunch2_yuna_c1_1` | Yuna -3
   2. "묻지 않고 옆에 앉는다" → `lunch2_yuna_c2_1` | Yuna +5
 
 - 캐릭터: `yuna_normal.png`
@@ -5743,7 +5743,7 @@
 - 배경: `nurse_room.png`
 - 선택지:
   1. "병원에서는 이런 것도 배워요?" → `hidden_nurse_d2_choice1_a` | Nurse +10
-  2. "각도까지 신경 쓰시네요" → `hidden_nurse_d2_choice1_b` | Nurse +3
+  2. "밴드 하나도 꼼꼼하시네요." → `hidden_nurse_d2_choice1_b` | Nurse -2
 
 - 캐릭터: `nurse_normal.png`
 **{name}**: *보건선생님이 팔꿈치를 접었다 펴 보며 밴드 길이를 가늠한다.*
@@ -5790,7 +5790,7 @@
 - 배경: `nurse_room.png`
 - 선택지:
   1. "비밀 많으시네요. 하나만 알려주면 안 돼요?" → `hidden_nurse_d2_choice2_a` | Nurse +7
-  2. "네, 안 봤어요" → `hidden_nurse_d2_choice2_b` | Nurse +0
+  2. "네, 안 봤어요" → `hidden_nurse_d2_choice2_b` | Nurse -3
 
 - 캐릭터: `nurse_shy.png`
 **{name}**: *비밀이라고 말하면서도 서랍 손잡이를 쥔 손마디는 희다.*
@@ -6380,7 +6380,7 @@
 - 배경: `student_room.png`
 - 선택지:
   1. "석양이 예쁜데. 창밖 얘기야." → `after2_seo_sunset_joke` | Seoyeon +5
-  2. "목 아파? 쉬면서 해." → `after2_seo_neck_worry` | Seoyeon +3
+  2. "매일 하는 거면 익숙하겠네." → `after2_seo_neck_worry` | Seoyeon -3
 
 - 캐릭터: `seyoun_normal.png`
 **{name}**: *블라인드 틈으로 들어온 주황색 줄이 서류 위를 가른다. 서연은 종이 모서리를 맞춘다.*
@@ -8324,7 +8324,7 @@
 - 배경: `room_school.png`
 - 선택지:
   1. "원고지인 거 봤어요. 소설 쓰시는 거예요?" → `hidden_homeroom_d3_reveal_1` | Teacher +12
-  2. "죄송합니다, 안 봤어요." → `hidden_homeroom_d3_hide_1` | Teacher +3
+  2. "죄송합니다, 안 봤어요." → `hidden_homeroom_d3_hide_1` | Teacher -3
 
 - 캐릭터: `teacher_normal.png`
 **{name}**: *원고지다. 담임이 종이 끝을 손바닥으로 덮는다.*
@@ -14698,7 +14698,7 @@
   1. "그 캡모자 좋은데." → 호감분기: Dain
     - [50+] → `date_dain_pretty_high`
     - [기본] → `date_dain_pretty_low`
-  2. "운동복 잘 어울린다." → `date_dain_bright` | Dain +5
+  2. "역시 운동복이 제일 너답다." → `date_dain_bright` | Dain -3
 
 - 캐릭터: `dain_normal.png`
 **{name}**: *다인이 모자챙을 한 번 눌러 쓰고 기다린다.*
@@ -14757,7 +14757,7 @@
 - 다음: `date_dain_to_arcade`
 
 - 캐릭터: `dain_laugh.png`
-**다인**: 당연하지. 오늘 컨디션 좋거든.
+**다인**: *웃던 다인이 모자챙을 한 번 더 눌러쓴다.* ...그렇지. 운동복이 편하니까.
 
 ---
 

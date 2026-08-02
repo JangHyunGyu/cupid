@@ -7,9 +7,11 @@ const root = path.resolve(__dirname, '..');
 const commands = [
     ['node', ['scripts/sync-build-metadata.cjs', '--check']],
     ['node', ['scripts/verify-project-structure.cjs']],
+    ['node', ['generate-scenario.js', '--check']],
     ['node', ['validate.js', '--seed=cupid-ci', '--no-report']],
     ['node', ['test_endings.js']],
     ['node', ['test_i18n_full.js']],
+    ['node', ['--test', 'tests/choice-affinity-balance.test.cjs']],
     ['node', ['--test', 'tests/freetalk-core.test.cjs']],
     ['node', ['scripts/audit-media.cjs']]
 ];

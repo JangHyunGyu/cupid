@@ -275,7 +275,7 @@
         "text": "*Le coin du registre d'appel touche le bureau.*",
         "choices": [
             "Si vous êtes inquiète, dites juste que vous êtes inquiète",
-            "J'attendrai ce jus avec impatience, madame"
+            "Alors, ce sera encore un jus la prochaine fois, madame."
         ]
     },
     "after_homeroom_honest_choice2a": {

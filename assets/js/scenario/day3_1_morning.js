@@ -367,7 +367,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/teacher_normal.png",
         "choices": [
             { "next": "hidden_homeroom_d3_reveal_1", "stats": {"Teacher":{"affinity":12}} },
-            { "next": "hidden_homeroom_d3_hide_1", "stats": {"Teacher":{"affinity":3}} }
+            { "next": "hidden_homeroom_d3_hide_1", "stats": {"Teacher":{"affinity":-3}} }
         ]
     },
     "hidden_homeroom_d3_reveal_1": {

@@ -804,7 +804,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "choices": [
-            { "next": "lunch2_yuna_c1_1", "stats": {"Yuna":{"affinity":3}} },
+            { "next": "lunch2_yuna_c1_1", "stats": {"Yuna":{"affinity":-3}} },
             { "next": "lunch2_yuna_c2_1", "stats": {"Yuna":{"affinity":5}} }
         ]
     },

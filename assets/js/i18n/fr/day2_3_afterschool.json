@@ -44,7 +44,7 @@
         "text": "*L'infirmière plie et déplie mon coude pour mesurer la longueur nécessaire.*",
         "choices": [
             "On apprend aussi ce genre de chose à l'hôpital ?",
-            "Vous faites même attention à l'angle."
+            "Vous êtes minutieuse, même pour un simple pansement."
         ]
     },
     "hidden_nurse_d2_choice1_a": {
@@ -321,7 +321,7 @@
         "text": "*Une bande orange traverse les stores et coupe en deux la pile de documents. Seoyeon en aligne les coins.*",
         "choices": [
             "C'est un beau coucher de soleil. Je parle de la vue.",
-            "Tu as mal au cou ? Fais des pauses."
+            "Si tu fais ça tous les jours, tu dois avoir l'habitude."
         ]
     },
     "after2_seo_sunset_joke": {

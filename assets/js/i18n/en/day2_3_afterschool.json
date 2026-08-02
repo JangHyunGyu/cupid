@@ -44,7 +44,7 @@
         "text": "*The nurse bends and straightens my elbow, measuring how long the bandage should be.*",
         "choices": [
             "Did you learn things like this at the hospital?",
-            "You even pay attention to the angle."
+            "You're meticulous even with a bandage."
         ]
     },
     "hidden_nurse_d2_choice1_a": {
@@ -321,7 +321,7 @@
         "text": "*An orange stripe of light slips through the blind and cuts across the documents. Seoyeon squares the corners of the pages.*",
         "choices": [
             "The sunset's nice. — I mean the view, of course.",
-            "Does your neck hurt? Take a break."
+            "If you do this every day, you must be used to it."
         ]
     },
     "after2_seo_sunset_joke": {

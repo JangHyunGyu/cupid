@@ -44,7 +44,7 @@
     "text": "*La enfermera dobla y estira mi codo para calcular la longitud del apósito.*",
         "choices": [
       "¿Esto también se aprende en el hospital?",
-      "¿También importa el ángulo?"
+            "Es meticulosa hasta con una venda."
         ]
     },
     "hidden_nurse_d2_choice1_a": {
@@ -321,7 +321,7 @@
         "text": "*Una franja naranja entra por las persianas y divide los documentos. Seoyeon alinea las esquinas de las hojas.*",
         "choices": [
             "Qué atardecer. Lo de fuera, digo.",
-            "¿Te duele el cuello? Descansa un poco."
+            "Si haces esto todos los días, ya estarás acostumbrada."
         ]
     },
     "after2_seo_sunset_joke": {

@@ -236,7 +236,7 @@
         "text": "*Dain drückt einmal den Schirm ihrer Kappe nach unten und wartet.*",
         "choices": [
             "Die Kappe ist cool.",
-            "Die Sportkleidung steht dir gut."
+            "Sportkleidung ist einfach total dein Ding."
         ]
     },
     "date_dain_pretty_high": {
@@ -261,7 +261,7 @@
     },
     "date_dain_bright": {
         "name": "Dain",
-        "text": "Natürlich. Heute bin ich in Topform!"
+        "text": "*Dains Lächeln stockt, als sie den Schirm ihrer Kappe tiefer zieht.* ...Stimmt. Sportkleidung ist bequem."
     },
     "date_dain_to_arcade": {
         "name": "{name}",

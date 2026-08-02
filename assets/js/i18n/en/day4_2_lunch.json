@@ -236,7 +236,7 @@
         "text": "*Dain presses down the brim of her cap once and waits.*",
         "choices": [
             "That cap looks good on you.",
-            "Sportswear really suits you."
+            "Sportswear is definitely your look."
         ]
     },
     "date_dain_pretty_high": {
@@ -261,7 +261,7 @@
     },
     "date_dain_bright": {
         "name": "Dain",
-        "text": "Of course. I'm feeling great today!"
+        "text": "*Dain's smile pauses as she tugs the brim lower.* ...Right. Sportswear is comfortable."
     },
     "date_dain_to_arcade": {
         "name": "{name}",

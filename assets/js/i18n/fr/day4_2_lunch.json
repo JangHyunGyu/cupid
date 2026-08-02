@@ -236,7 +236,7 @@
         "text": "*Dain enfonce une fois la visière de sa casquette et attend.*",
         "choices": [
             "Cette casquette te va bien.",
-            "Cette tenue de sport te va bien."
+            "La tenue de sport, c'est vraiment tout toi."
         ]
     },
     "date_dain_pretty_high": {
@@ -261,7 +261,7 @@
     },
     "date_dain_bright": {
         "name": "Dain",
-        "text": "Évidemment. Je suis en forme aujourd'hui !"
+        "text": "*Le sourire de Dain se fige une seconde tandis qu'elle rabaisse la visière de sa casquette.* ...C'est vrai. Une tenue de sport, c'est confortable."
     },
     "date_dain_to_arcade": {
         "name": "{name}",

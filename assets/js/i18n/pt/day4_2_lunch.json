@@ -236,7 +236,7 @@
         "text": "*Dain abaixa uma vez a aba do boné e espera.*",
         "choices": [
             "Curti esse boné.",
-            "A roupa de treino combina com você."
+            "Roupa esportiva é mesmo a sua cara."
         ]
     },
     "date_dain_pretty_high": {
@@ -261,7 +261,7 @@
     },
     "date_dain_bright": {
         "name": "Dain",
-        "text": "Claro. Hoje estou me sentindo muito bem."
+        "text": "*O sorriso de Dain para por um instante enquanto ela abaixa mais a aba do boné.* ...É. Roupa esportiva é confortável."
     },
     "date_dain_to_arcade": {
         "name": "{name}",
