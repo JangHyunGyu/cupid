@@ -197,11 +197,11 @@ class GalleryProgress {
         return {
             version: GalleryData.VERSION,
             characters: {
-                seyoun: { met: false, maxAffinity: 0, currentAffinity: 0, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState() },
-                yuna: { met: false, maxAffinity: 0, currentAffinity: 0, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState() },
-                dain: { met: false, maxAffinity: 0, currentAffinity: 0, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState() },
-                teacher: { met: false, maxAffinity: 0, currentAffinity: 0, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState() },
-                nurse: { met: false, maxAffinity: 0, currentAffinity: 0, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState() }
+                seyoun: { met: false, maxAffinity: 0, currentAffinity: 0, galleryFreeTalkAffinityInitialized: false, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState() },
+                yuna: { met: false, maxAffinity: 0, currentAffinity: 0, galleryFreeTalkAffinityInitialized: false, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState() },
+                dain: { met: false, maxAffinity: 0, currentAffinity: 0, galleryFreeTalkAffinityInitialized: false, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState() },
+                teacher: { met: false, maxAffinity: 0, currentAffinity: 0, galleryFreeTalkAffinityInitialized: false, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState() },
+                nurse: { met: false, maxAffinity: 0, currentAffinity: 0, galleryFreeTalkAffinityInitialized: false, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState() }
             },
             cg: {},                           // CG는 기본적으로 없음 (게임 진행 시 추가)
             bgm: {
@@ -315,6 +315,43 @@ class GalleryProgress {
     }
 
     /**
+     * 갤러리 프리토킹을 처음 열 때 현재 호감도를 달성한 최고 호감도로 초기화합니다.
+     * 이미 대화를 진행한 기존 이용자는 실제로 변한 현재값을 그대로 보존합니다.
+     *
+     * @param {string} charId - 캐릭터 ID
+     * @param {{hasConversation?: boolean}} options - 저장된 갤러리 대화 존재 여부
+     * @returns {number} 초기화 또는 보존된 현재 호감도
+     */
+    initializeCurrentAffinityForFreeTalk(charId, { hasConversation = false } = {}) {
+        this.refresh();
+        const charData = this.data.characters?.[charId];
+        if (!charData) return 0;
+
+        const maxAffinity = Math.max(0, Math.min(100, Number(charData.maxAffinity) || 0));
+        const savedCurrent = Number(charData.currentAffinity);
+        const currentAffinity = Number.isFinite(savedCurrent)
+            ? Math.max(-100, Math.min(100, Math.round(savedCurrent)))
+            : maxAffinity;
+
+        if (charData.galleryFreeTalkAffinityInitialized === true) {
+            return currentAffinity;
+        }
+
+        const completedTurns = Math.max(0, Number(charData.galleryIncident?.completedTurns) || 0);
+        const hasChangedCurrentAffinity = Number.isFinite(savedCurrent) && currentAffinity !== 0;
+        const hasPriorGalleryTalk = Boolean(hasConversation)
+            || completedTurns > 0
+            || hasChangedCurrentAffinity;
+        const initializedAffinity = hasPriorGalleryTalk ? currentAffinity : maxAffinity;
+
+        charData.currentAffinity = initializedAffinity;
+        charData.galleryFreeTalkAffinityInitialized = true;
+        this.save();
+
+        return initializedAffinity;
+    }
+
+    /**
      * 갤러리 프리토킹 현재 호감도 변경
      * 변화량은 공용 정책에 따라 -50~+5로 제한하고, 최고 기록은 상승할 때만 갱신합니다.
      *
@@ -341,6 +378,7 @@ class GalleryProgress {
         const maxAffinity = Math.max(previousMax, value);
 
         charData.currentAffinity = value;
+        charData.galleryFreeTalkAffinityInitialized = true;
         charData.maxAffinity = maxAffinity;
         this.save();
 

@@ -410,3 +410,78 @@ test('legacy gallery progress gains incident state without relocking earned cont
     expect(result.maxAffinity).toBe(100);
     expect(result.cgStillUnlocked).toBe(true);
 });
+
+test('first gallery free-talk starts at max affinity and never resets a played relationship', async ({ page }) => {
+    await page.goto('/gallery.html');
+    await page.waitForFunction(() => window.galleryFreeTalk?.progress && window.GalleryData && window.CupidFreeTalkCore);
+
+    const result = await page.evaluate(() => {
+        localStorage.setItem('cupid_freetalk_memory', JSON.stringify({
+            yuna: [{ role: 'user', content: '이미 이어 온 갤러리 대화' }]
+        }));
+        localStorage.setItem('cupid_gallery', JSON.stringify({
+            version: window.GalleryData.VERSION,
+            characters: {
+                seyoun: {
+                    met: true,
+                    maxAffinity: 100,
+                    currentAffinity: 0,
+                    freeTalkCount: 30,
+                    perfectEndingCleared: true
+                },
+                yuna: {
+                    met: true,
+                    maxAffinity: 100,
+                    currentAffinity: 0,
+                    freeTalkCount: 30,
+                    perfectEndingCleared: true,
+                    galleryIncident: { completedTurns: 3 }
+                },
+                dain: {
+                    met: true,
+                    maxAffinity: 100,
+                    currentAffinity: 45,
+                    freeTalkCount: 30,
+                    perfectEndingCleared: true
+                }
+            },
+            cg: {},
+            bgm: { intro: { unlocked: true } }
+        }));
+
+        const talk = window.galleryFreeTalk;
+        const progress = talk.progress;
+        talk.open('seyoun');
+        const firstStart = progress.getCurrentAffinity('seyoun');
+        talk.close();
+        progress.changeCurrentAffinity('seyoun', -50);
+        talk.open('seyoun');
+        const reopened = progress.getCurrentAffinity('seyoun');
+        talk.close();
+        talk.open('yuna');
+        const legacyPlayed = progress.getCurrentAffinity('yuna');
+        talk.close();
+        talk.open('dain');
+        const legacyChangedAffinity = progress.getCurrentAffinity('dain');
+        talk.close();
+        const saved = JSON.parse(localStorage.getItem('cupid_gallery'));
+
+        return {
+            firstStart,
+            reopened,
+            legacyPlayed,
+            legacyChangedAffinity,
+            seyounInitialized: saved.characters.seyoun.galleryFreeTalkAffinityInitialized,
+            yunaInitialized: saved.characters.yuna.galleryFreeTalkAffinityInitialized,
+            dainInitialized: saved.characters.dain.galleryFreeTalkAffinityInitialized
+        };
+    });
+
+    expect(result.firstStart).toBe(100);
+    expect(result.reopened).toBe(50);
+    expect(result.legacyPlayed).toBe(0);
+    expect(result.legacyChangedAffinity).toBe(45);
+    expect(result.seyounInitialized).toBe(true);
+    expect(result.yunaInitialized).toBe(true);
+    expect(result.dainInitialized).toBe(true);
+});

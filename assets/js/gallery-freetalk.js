@@ -525,6 +525,12 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         this._loadMemory(charId);
         this.chatHistory = this._sanitizeDainOutfitHistory(this.chatHistory, charId);
         this.chatHistory = this._sanitizeVisibleArtifactsHistory(this.chatHistory);
+        const hasSavedConversation = this.chatHistory.some(message =>
+            message?.role === 'user' || message?.role === 'assistant'
+        );
+        this.progress?.initializeCurrentAffinityForFreeTalk?.(charId, {
+            hasConversation: hasSavedConversation
+        });
 
         // 시스템 프롬프트 구성
         const systemPrompt = this._buildCachedSystemPrompt(charId);
