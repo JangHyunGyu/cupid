@@ -1246,7 +1246,33 @@ function getCupidNarrationPointOfViewPattern(lang = 'ko') {
     return patterns[lang] || patterns.en;
 }
 
-function getCupidRoleplayQualityIssue(parsed = {}, { lang = 'ko', charKey = '' } = {}) {
+function didCupidUserRequestRepetition(text = '') {
+    return /(?:다시\s*(?:말|해|써|반복)|그대로\s*(?:말|해|써)|もう一度|繰り返|同じ(?:こと|言葉)|\b(?:repeat|say\s+that\s+again|same\s+(?:reply|words?))\b|\b(?:wiederhol|noch\s+einmal)\b|\b(?:repite|otra\s+vez)\b|\b(?:répète|encore\s+une\s+fois)\b|\b(?:repita|de\s+novo)\b)/iu.test(String(text || ''));
+}
+
+function isCupidUserExplicitlyAwake(text = '') {
+    return /(?:일어났|일어난다|깨어났|깨어난다|눈을\s*떴|눈을\s*뜬|目を覚ま|目が覚め|起きた|起きる|\b(?:i\s+)?(?:wake|woke|awaken(?:ed)?|am\s+awake|get\s+up|got\s+up)\b|\b(?:desperté|me\s+despierto|me\s+levanté)\b|\b(?:réveill(?:é|ée)|je\s+me\s+réveille|levé|levée)\b|\b(?:aufgewacht|ich\s+wache\s+auf|aufgestanden)\b|\b(?:acordei|me\s+levanto|me\s+levantei)\b)/iu.test(String(text || ''));
+}
+
+function doesCupidReplyKeepUserAsleep(text = '', lang = 'ko') {
+    const patterns = {
+        ko: /(?:그(?!녀)|사용자|상대)(?:는|가|도)[^.!?。！？\n]{0,24}(?:아직(?:도)?\s*(?:잠들|자는|자고)|계속\s*(?:잠들|자는|자고)|깨어나(?:면|겠|길)|일어나(?:면|겠|길))/u,
+        ja: /(?:彼(?!女)|ユーザー|相手)(?:は|が|も)[^。！？\n]{0,24}(?:まだ\s*(?:眠|寝)|眠ったまま|目を覚ますまで|起きるまで)/u,
+        en: /\b(?:he|the user|the player|his partner)\b[^.!?\n]{0,36}\b(?:is\s+still\s+(?:asleep|sleeping)|remains?\s+asleep|keeps?\s+sleeping|when\s+he\s+wakes?)\b/iu,
+        de: /\b(?:er|der\s+Nutzer|der\s+Spieler)\b[^.!?\n]{0,36}\b(?:schläft\s+noch|ist\s+noch\s+eingeschlafen|wenn\s+er\s+aufwacht)\b/iu,
+        es: /\b(?:él|el\s+usuario|el\s+jugador)\b[^.!?\n]{0,36}\b(?:sigue\s+dormido|todavía\s+duerme|cuando\s+despierte)\b/iu,
+        fr: /\b(?:il|l['’]utilisateur|le\s+joueur)\b[^.!?\n]{0,36}\b(?:dort\s+encore|est\s+toujours\s+endormi|quand\s+il\s+se\s+réveillera)\b/iu,
+        pt: /\b(?:ele|o\s+usuário|o\s+jogador)\b[^.!?\n]{0,36}\b(?:ainda\s+dorme|continua\s+dormindo|quando\s+acordar)\b/iu
+    };
+    return (patterns[lang] || patterns.en).test(String(text || ''));
+}
+
+function getCupidRoleplayQualityIssue(parsed = {}, {
+    lang = 'ko',
+    charKey = '',
+    recentMessages = [],
+    latestUserText = ''
+} = {}) {
     const text = String(parsed?.text || '');
     const segments = Array.isArray(parsed?.segments) ? parsed.segments : [];
     const visibleTexts = segments.length > 0
@@ -1257,6 +1283,16 @@ function getCupidRoleplayQualityIssue(parsed = {}, { lang = 'ko', charKey = '' }
 
     if (combinedText.includes('\uFFFD')) {
         issues.push('unicode_replacement_character');
+    }
+
+    if (!didCupidUserRequestRepetition(latestUserText)
+        && window.CupidFreeTalkCore?.isNearDuplicateReply?.(combinedText, recentMessages, 0.72)) {
+        issues.push('recent_response_near_duplicate');
+    }
+
+    if (isCupidUserExplicitlyAwake(latestUserText)
+        && doesCupidReplyKeepUserAsleep(combinedText, lang)) {
+        issues.push('latest_user_awake_state_contradiction');
     }
 
     const narrationTexts = segments.length > 0
@@ -1308,8 +1344,9 @@ function getCupidRoleplayQualityIssue(parsed = {}, { lang = 'ko', charKey = '' }
     };
 }
 
-function recoverCupidRoleplayQualityFallback(parsed = {}, { lang = 'ko', charKey = '' } = {}) {
-    const initialIssue = getCupidRoleplayQualityIssue(parsed, { lang, charKey });
+function recoverCupidRoleplayQualityFallback(parsed = {}, options = {}) {
+    const { lang = 'ko', charKey = '' } = options;
+    const initialIssue = getCupidRoleplayQualityIssue(parsed, options);
     const recoverableIssues = new Set([
         'narration_player_point_of_view',
         'unicode_replacement_character'
@@ -1353,7 +1390,7 @@ function recoverCupidRoleplayQualityFallback(parsed = {}, { lang = 'ko', charKey
         }
     };
     if (!recovered.text
-        || getCupidRoleplayQualityIssue(recovered, { lang, charKey }).shouldRetry) {
+        || getCupidRoleplayQualityIssue(recovered, options).shouldRetry) {
         return null;
     }
     return recovered;
@@ -1370,6 +1407,7 @@ function buildCupidRoleplayQualityRepairBlock(issue = {}, lang = 'ko', charKey =
         pt: 'Brazilian Portuguese'
     };
     const characterCanon = getCupidCharacterCanonGuard(lang, charKey, charKey).trim();
+    const issueSet = new Set(Array.isArray(issue?.issues) ? issue.issues : []);
     return [
         '[System Notice: rejected roleplay draft]',
         `Rejected reasons: ${issue.reason || 'invalid output'}.`,
@@ -1377,6 +1415,12 @@ function buildCupidRoleplayQualityRepairBlock(issue = {}, lang = 'ko', charKey =
         `Write every segments[].text in ${languageNames[lang] || languageNames.en}.`,
         'Keep the required JSON schema. Use strict external third-person narration; second-person and first-person player references belong only in spoken dialogue.',
         'Never emit U+FFFD. Use fresh, grammatical wording.',
+        issueSet.has('recent_response_near_duplicate')
+            ? 'Discard the rejected draft’s repeated wording and choreography. React to the newest user turn with a genuinely different line, judgment, or action instead of paraphrasing a recent response.'
+            : '',
+        issueSet.has('latest_user_awake_state_contradiction')
+            ? 'The user character is already awake in the latest turn. Do not describe them as still sleeping or waiting to wake; continue from their awake state.'
+            : '',
         characterCanon,
         lang === 'de' ? 'Use the idiom “jemandem standhalten”; when gaze is meant, write “hält seinem/deinem Blick stand”, never “hält deinem stand”.' : '',
         'Return JSON only.'

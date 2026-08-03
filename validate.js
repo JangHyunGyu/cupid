@@ -728,7 +728,9 @@ try {
         'assistantRenderReceipt',
         'getChatRenderReceipt',
         '_getChatRenderReceipt',
-        'renderedContent'
+        'renderedContent',
+        'CUPID_RENDER_ACK_QUEUE_KEY',
+        'flushCupidChatRenderAckQueue'
     ]) {
         if (!chatRenderReceiptContent.includes(marker)) {
             errors.push('[CHAT_RENDER_ACK] 실제 화면 렌더 영수증 마커 누락: ' + marker);
@@ -1994,10 +1996,24 @@ try {
     if (!promptsContent.includes('function getCupidRoleplayQualityIssue(')
         || !promptsContent.includes('unicode_replacement_character')
         || !promptsContent.includes('narration_player_point_of_view')
+        || !promptsContent.includes('recent_response_near_duplicate')
+        || !promptsContent.includes('latest_user_awake_state_contradiction')
         || !promptsContent.includes('yuna_hair_canon')
         || !promptsContent.includes('nurse_profession_canon')
         || !promptsContent.includes('german_blick_grammar')) {
         errors.push('[FREETALK_OUTPUT_QUALITY] 다국어 시점·문자·캐릭터 설정 검증기 누락');
+    }
+    if (!ftSysContent.includes('recentMessages: _optimized')
+        || !gftContent.includes('recentMessages: _optimized')
+        || !ftSysContent.includes('latestUserText: finalContent')
+        || !gftContent.includes('latestUserText: finalContent')) {
+        errors.push('[FREETALK_OUTPUT_QUALITY] 최근 답변 중복 또는 최신 사용자 상태 검증 연결 누락');
+    }
+    if (!ftSysContent.includes("throw new Error('Unsupported Cupid response JSON schema')")
+        || !gftContent.includes("throw new Error('Unsupported Cupid response JSON schema')")
+        || ftSysContent.includes('obj.dialogue || obj.content || obj.message || obj.response')
+        || gftContent.includes('parsed.dialogue || parsed.content || parsed.message || parsed.response')) {
+        errors.push('[FREETALK_OUTPUT_SCHEMA] 미지원 JSON 객체의 내부 사유가 대사로 노출될 수 있음');
     }
     if (!ftSysContent.includes('requestCupidReplyData(repairMessages)')
         || !gftContent.includes('requestCupidGalleryReplyData(repairMessages)')

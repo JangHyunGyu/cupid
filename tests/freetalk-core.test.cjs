@@ -28,6 +28,21 @@ test('retry and failover status contracts remain distinct', () => {
     assert.equal(core.shouldFailOverAiResponse({ ok: false, status: 400 }), false);
 });
 
+test('near-duplicate roleplay replies are rejected without blocking a new reaction', () => {
+    const recentMessages = [{
+        role: 'assistant',
+        content: '유나는 그가 아직 잠든 것을 확인하고 이불을 다시 덮어 주었다. 따뜻한 물은 그가 깨어난 뒤 건네기로 했다.'
+    }];
+    assert.equal(core.isNearDuplicateReply(
+        '유나는 그가 아직 잠든 것을 확인하고 이불을 다시 덮어 주었다. 따뜻한 물은 그가 깨어난 뒤 건네기로 했다.',
+        recentMessages
+    ), true);
+    assert.equal(core.isNearDuplicateReply(
+        '유나는 눈이 마주치자 물잔을 내밀며 밤새 기다렸다고 솔직하게 말했다.',
+        recentMessages
+    ), false);
+});
+
 test('affinity changes use the shared asymmetric -50 to +5 range', () => {
     assert.equal(core.AFFINITY_CHANGE_MIN, -50);
     assert.equal(core.AFFINITY_CHANGE_MAX, 5);

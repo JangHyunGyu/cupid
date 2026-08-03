@@ -51,7 +51,7 @@ const AI_MODEL_ID = "deepseek-v4-flash";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.127";
+const ASSET_VERSION = "2.9.128";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -546,7 +546,10 @@ async function migrateCupidChatHistoryToD1() {
 
 const CUPID_CHAT_LOG_QUEUE_KEY = 'cupid_pending_chat_logs_v1';
 const CUPID_CHAT_LOG_QUEUE_LIMIT = 80;
+const CUPID_RENDER_ACK_QUEUE_KEY = 'cupid_pending_render_acks_v1';
+const CUPID_RENDER_ACK_QUEUE_LIMIT = 120;
 let cupidChatLogFlushPromise = null;
+let cupidRenderAckFlushPromise = null;
 
 function readCupidChatLogQueue() {
     try {
@@ -683,44 +686,132 @@ function normalizeCupidRenderedText(value) {
     return String(value || '').replace(/\s+/g, ' ').trim();
 }
 
-async function postCupidChatRenderAck(entry, receipt = {}) {
-    try {
-        if (!entry?.clientMsgId || entry.role !== 'assistant') return false;
-        const expectedContent = String(receipt.expectedContent || '').substring(0, 8000);
-        const renderedContent = String(receipt.renderedContent || '').substring(0, 8000);
-        const expectedComparable = normalizeCupidRenderedText(expectedContent);
-        const renderedComparable = normalizeCupidRenderedText(renderedContent);
-        const requestedStatus = String(receipt.status || '').toLowerCase();
-        const status = ['rendered', 'mismatch', 'failed'].includes(requestedStatus)
-            ? requestedStatus
-            : (!renderedComparable
-                ? 'failed'
-                : (expectedComparable === renderedComparable ? 'rendered' : 'mismatch'));
+function getCupidRenderAckQueueId(payload = {}) {
+    return `${payload.appId || ''}|${payload.userId || ''}|${payload.clientMsgId || ''}`;
+}
 
-        const res = await fetch(API_ENDPOINT + 'chat-logs/render-ack', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'x-app-id': entry.appId || getCupidAppId() },
-            body: JSON.stringify({
-                appId: entry.appId || getCupidAppId(),
-                userId: entry.userId,
-                clientMsgId: entry.clientMsgId,
-                charId: entry.charId,
-                sessionId: entry.sessionId,
-                speakerId: entry.charId,
-                context: entry.context || '1:1',
-                expectedContent,
-                renderedContent,
-                status,
-                renderedAt: receipt.renderedAt || Date.now()
-            }),
-            credentials: 'omit',
-            cache: 'no-store',
-            keepalive: true
-        });
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+function readCupidRenderAckQueue() {
+    try {
+        const parsed = JSON.parse(localStorage.getItem(CUPID_RENDER_ACK_QUEUE_KEY) || '[]');
+        return Array.isArray(parsed) ? parsed.filter(entry => entry && entry.clientMsgId) : [];
+    } catch (_) {
+        try { localStorage.removeItem(CUPID_RENDER_ACK_QUEUE_KEY); } catch (_) {}
+        return [];
+    }
+}
+
+function writeCupidRenderAckQueue(queue) {
+    try {
+        if (!queue.length) localStorage.removeItem(CUPID_RENDER_ACK_QUEUE_KEY);
+        else localStorage.setItem(CUPID_RENDER_ACK_QUEUE_KEY, JSON.stringify(queue.slice(-CUPID_RENDER_ACK_QUEUE_LIMIT)));
+        return true;
+    } catch (_) {
+        return false;
+    }
+}
+
+function enqueueCupidRenderAck(payload) {
+    const queue = readCupidRenderAckQueue();
+    const queueId = getCupidRenderAckQueueId(payload);
+    if (!queue.some(item => getCupidRenderAckQueueId(item) === queueId)) queue.push(payload);
+    return writeCupidRenderAckQueue(queue);
+}
+
+function makeCupidChatRenderAckPayload(entry, receipt = {}) {
+    const expectedContent = String(receipt.expectedContent || '').substring(0, 8000);
+    const renderedContent = String(receipt.renderedContent || '').substring(0, 8000);
+    const expectedComparable = normalizeCupidRenderedText(expectedContent);
+    const renderedComparable = normalizeCupidRenderedText(renderedContent);
+    const requestedStatus = String(receipt.status || '').toLowerCase();
+    const status = ['rendered', 'mismatch', 'failed'].includes(requestedStatus)
+        ? requestedStatus
+        : (!renderedComparable
+            ? 'failed'
+            : (expectedComparable === renderedComparable ? 'rendered' : 'mismatch'));
+    return {
+        appId: entry.appId || getCupidAppId(),
+        userId: entry.userId,
+        clientMsgId: entry.clientMsgId,
+        charId: entry.charId,
+        sessionId: entry.sessionId,
+        speakerId: entry.charId,
+        context: entry.context || '1:1',
+        expectedContent,
+        renderedContent,
+        status,
+        renderedAt: receipt.renderedAt || Date.now()
+    };
+}
+
+async function postCupidChatRenderAckPayload(payload) {
+    const res = await fetch(API_ENDPOINT + 'chat-logs/render-ack', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'x-app-id': payload.appId || getCupidAppId() },
+        body: JSON.stringify(payload),
+        credentials: 'omit',
+        cache: 'no-store',
+        keepalive: true
+    });
+    if (!res.ok) {
+        const error = new Error(`HTTP ${res.status}`);
+        error.cupidStatus = res.status;
+        throw error;
+    }
+    return res;
+}
+
+async function flushCupidChatRenderAckQueue() {
+    if (typeof navigator !== 'undefined' && navigator.onLine === false) return false;
+    if (cupidRenderAckFlushPromise) return cupidRenderAckFlushPromise;
+
+    cupidRenderAckFlushPromise = (async () => {
+        let sent = 0;
+        while (typeof navigator === 'undefined' || navigator.onLine !== false) {
+            const queue = readCupidRenderAckQueue();
+            const payload = queue[0];
+            if (!payload) break;
+            if (readCupidChatLogQueue().some(entry => entry.clientMsgId === payload.clientMsgId)) break;
+            const queueId = getCupidRenderAckQueueId(payload);
+            try {
+                await postCupidChatRenderAckPayload(payload);
+                const latestQueue = readCupidRenderAckQueue();
+                writeCupidRenderAckQueue(latestQueue.filter(item => getCupidRenderAckQueueId(item) !== queueId));
+                sent += 1;
+            } catch (error) {
+                if (isTransientCupidChatLogError(error)) {
+                    console.warn('[ChatLog] cupid render acknowledgement queue retained:', error.message);
+                    break;
+                }
+                writeCupidRenderAckQueue(queue.slice(1));
+                logCupidError(error, {
+                    source: 'flushCupidChatRenderAckQueue',
+                    errorType: 'chat_render_ack_queue_rejected',
+                    sessionId: payload.sessionId,
+                    context: { charId: payload.charId, logContext: payload.context },
+                    extra: { clientMsgId: payload.clientMsgId, status: payload.status }
+                });
+            }
+        }
+        return sent;
+    })().finally(() => {
+        cupidRenderAckFlushPromise = null;
+    });
+    return cupidRenderAckFlushPromise;
+}
+
+async function postCupidChatRenderAck(entry, receipt = {}) {
+    if (!entry?.clientMsgId || entry.role !== 'assistant') return false;
+    const payload = makeCupidChatRenderAckPayload(entry, receipt);
+    if (enqueueCupidRenderAck(payload)) {
+        await flushCupidChatRenderAckQueue();
+        return true;
+    }
+    if (typeof navigator !== 'undefined' && navigator.onLine === false) return false;
+    try {
+        await postCupidChatRenderAckPayload(payload);
         return true;
     } catch (error) {
-        console.warn('[ChatLog] cupid render acknowledgement skipped:', error?.message || error);
+        console.warn('[ChatLog] cupid render acknowledgement could not be persisted:', error?.message || error);
         return false;
     }
 }
@@ -950,6 +1041,7 @@ window.uploadImageToR2 = uploadImageToR2;
 window.optimizeImageHistory = optimizeImageHistory;
 window.saveCupidChatLog = saveCupidChatLog;
 window.flushCupidChatLogQueue = flushCupidChatLogQueue;
+window.flushCupidChatRenderAckQueue = flushCupidChatRenderAckQueue;
 window.logCupidError = logCupidError;
 window.reportCupidCaughtError = reportCupidCaughtError;
 window.hashCupidLogText = hashCupidLogText;
@@ -959,14 +1051,20 @@ window.migrateCupidChatHistoryToD1 = migrateCupidChatHistoryToD1;
 function _cupidMigrateOnLoad() {
     window.removeEventListener('load', _cupidMigrateOnLoad);
     setTimeout(() => {
-        try { flushCupidChatLogQueue(); } catch (_) {}
+        Promise.resolve(flushCupidChatLogQueue())
+            .then(() => flushCupidChatRenderAckQueue())
+            .catch(() => {});
     }, 1000);
     setTimeout(() => {
         try { migrateCupidChatHistoryToD1(); } catch (_) {}
     }, 3000);
 }
 function _cupidFlushChatLogsOnOnline() {
-    try { flushCupidChatLogQueue(); } catch (_) {}
+    try {
+        Promise.resolve(flushCupidChatLogQueue())
+            .then(() => flushCupidChatRenderAckQueue())
+            .catch(() => {});
+    } catch (_) {}
 }
 if (typeof window !== 'undefined') {
     window.addEventListener('online', _cupidFlushChatLogsOnOnline);

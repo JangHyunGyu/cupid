@@ -1163,7 +1163,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             for (let repairAttempt = 0; repairAttempt < 2; repairAttempt += 1) {
                 const qualityIssue = window.getCupidRoleplayQualityIssue?.(parsed, {
                     lang: this.lang,
-                    charKey: requestCharKey || requestCharId
+                    charKey: requestCharKey || requestCharId,
+                    recentMessages: _optimized,
+                    latestUserText: finalContent
                 });
                 if (!qualityIssue?.shouldRetry) break;
 
@@ -1193,19 +1195,25 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
             let finalQualityIssue = window.getCupidRoleplayQualityIssue?.(parsed, {
                 lang: this.lang,
-                charKey: requestCharKey || requestCharId
+                charKey: requestCharKey || requestCharId,
+                recentMessages: _optimized,
+                latestUserText: finalContent
             });
             if (finalQualityIssue?.shouldRetry) {
                 const recovered = window.recoverCupidRoleplayQualityFallback?.(parsed, {
                     lang: this.lang,
-                    charKey: requestCharKey || requestCharId
+                    charKey: requestCharKey || requestCharId,
+                    recentMessages: _optimized,
+                    latestUserText: finalContent
                 });
                 if (recovered) {
                     console.warn('[Cupid GalleryFreeTalk] Kept the valid response segments after quality retries were exhausted', recovered.qualityRecovery);
                     parsed = recovered;
                     finalQualityIssue = window.getCupidRoleplayQualityIssue?.(parsed, {
                         lang: this.lang,
-                        charKey: requestCharKey || requestCharId
+                        charKey: requestCharKey || requestCharId,
+                        recentMessages: _optimized,
+                        latestUserText: finalContent
                     });
                 }
             }
@@ -1540,15 +1548,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 };
             }
 
-            // 알려진 텍스트 키 폴백
-            const text = parsed.text || parsed.dialogue || parsed.content || parsed.message || parsed.response || '';
-            return {
-                text: this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(text)),
-                segments: null,
-                expression: (parsed.expression || '').toLowerCase(),
-                affinity: this._normalizeAffinityChange(parsed.affinity),
-                incident: GalleryFreeTalkCore.normalizeGalleryIncidentPayload(parsed.incident)
-            };
+            throw new Error('Unsupported Cupid response JSON schema');
 
         } catch (e) {
             window.reportCupidCaughtError?.(e, {

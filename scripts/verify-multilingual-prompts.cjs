@@ -554,11 +554,51 @@ assert(!getQualityIssue({
     text: 'Yuna hält dem Blick ihres Partners stand.',
     segments: [{ type: 'narration', text: 'Yuna hält dem Blick ihres Partners stand.' }]
 }, { lang: 'de', charKey: 'Yuna' }).shouldRetry, 'Clean German third-person output was incorrectly rejected');
+const repeatedRoleplayReply = '유나는 그가 아직 잠든 것을 확인하고 이불을 다시 덮어 주었다. 따뜻한 물은 그가 깨어난 뒤 건네기로 했다.';
+assert(getQualityIssue({
+    text: repeatedRoleplayReply,
+    segments: [{ type: 'dialogue', text: repeatedRoleplayReply }]
+}, {
+    lang: 'ko',
+    charKey: 'Yuna',
+    recentMessages: [{ role: 'assistant', content: repeatedRoleplayReply }],
+    latestUserText: '*깨어난다*'
+}).issues.includes('recent_response_near_duplicate'), 'A near-identical recent roleplay response was not rejected');
+assert(!getQualityIssue({
+    text: repeatedRoleplayReply,
+    segments: [{ type: 'dialogue', text: repeatedRoleplayReply }]
+}, {
+    lang: 'ko',
+    charKey: 'Yuna',
+    recentMessages: [{ role: 'assistant', content: repeatedRoleplayReply }],
+    latestUserText: '방금 말 그대로 다시 말해 줘.'
+}).issues.includes('recent_response_near_duplicate'), 'An explicit user request to repeat was incorrectly rejected');
+const awakeStateIssue = getQualityIssue({
+    text: '그는 아직도 잠들어 있었다. 유나는 그가 깨어나면 물을 건네려고 기다렸다.',
+    segments: [{ type: 'narration', text: '그는 아직도 잠들어 있었다. 유나는 그가 깨어나면 물을 건네려고 기다렸다.' }]
+}, {
+    lang: 'ko',
+    charKey: 'Yuna',
+    latestUserText: '*깨어난다*'
+});
+assert(awakeStateIssue.issues.includes('latest_user_awake_state_contradiction'), 'Latest user awake state could still be rolled back to sleeping');
+assert(!getQualityIssue({
+    text: '그녀는 아직도 잠들어 있었다. 그는 침대 곁에서 조용히 기다렸다.',
+    segments: [{ type: 'narration', text: '그녀는 아직도 잠들어 있었다. 그는 침대 곁에서 조용히 기다렸다.' }]
+}, {
+    lang: 'ko',
+    charKey: 'Yuna',
+    latestUserText: '*깨어난다*'
+}).issues.includes('latest_user_awake_state_contradiction'), 'An asleep character was incorrectly treated as the awake user');
 assert(context.window.buildCupidRoleplayQualityRepairBlock(
     { reason: 'narration_player_point_of_view' },
     'de',
     'Nurse'
 ).includes('hält seinem/deinem Blick stand'), 'German repair block lost the correct standhalten form');
+assert(context.window.buildCupidRoleplayQualityRepairBlock({
+    reason: awakeStateIssue.reason,
+    issues: awakeStateIssue.issues
+}, 'ko', 'Yuna').includes('already awake'), 'Awake-state repair instruction is missing');
 const recoverQualityFallback = context.window.recoverCupidRoleplayQualityFallback;
 assert(typeof recoverQualityFallback === 'function', 'Cupid roleplay quality fallback recovery is missing');
 const recoveredKoreanReply = recoverQualityFallback({

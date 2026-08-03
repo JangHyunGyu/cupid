@@ -368,6 +368,67 @@
         return pattern.test(text || '');
     }
 
+    function normalizeRepetitionText(text = '') {
+        return String(text || '')
+            .normalize('NFKC')
+            .toLocaleLowerCase()
+            .replace(/[^\p{L}\p{N}]+/gu, '');
+    }
+
+    function createRepetitionShingles(text = '', size = 6) {
+        const normalized = normalizeRepetitionText(text);
+        const shingles = new Set();
+        if (normalized.length < size) return shingles;
+        for (let index = 0; index <= normalized.length - size; index += 1) {
+            shingles.add(normalized.slice(index, index + size));
+        }
+        return shingles;
+    }
+
+    function getRepetitionContainment(left = '', right = '', size = 6) {
+        const leftShingles = createRepetitionShingles(left, size);
+        const rightShingles = createRepetitionShingles(right, size);
+        const smaller = leftShingles.size <= rightShingles.size ? leftShingles : rightShingles;
+        const larger = smaller === leftShingles ? rightShingles : leftShingles;
+        if (smaller.size === 0) return 0;
+        let shared = 0;
+        smaller.forEach(shingle => {
+            if (larger.has(shingle)) shared += 1;
+        });
+        return shared / smaller.size;
+    }
+
+    function isNearDuplicateReply(reply = '', messages = [], threshold = 0.72) {
+        const candidate = String(reply || '').trim();
+        if (normalizeRepetitionText(candidate).length < 40) return false;
+        return (Array.isArray(messages) ? messages : [])
+            .filter(message => message?.role === 'assistant' && typeof message.content === 'string')
+            .slice(-6)
+            .some(message => {
+                const previous = String(message.content || '').trim();
+                return normalizeRepetitionText(previous).length >= 40
+                    && getRepetitionContainment(candidate, previous) >= threshold;
+            });
+    }
+
+    function findRepeatedReplyFragments(assistantTexts = [], latestUserText = '') {
+        const normalizedLatestUser = normalizeRepetitionText(latestUserText);
+        const documentCounts = new Map();
+        assistantTexts.forEach(text => {
+            createRepetitionShingles(text, 6).forEach(fragment => {
+                documentCounts.set(fragment, (documentCounts.get(fragment) || 0) + 1);
+            });
+        });
+        return [...documentCounts.entries()]
+            .filter(([fragment, count]) => count >= 4 && !normalizedLatestUser.includes(fragment))
+            .sort((left, right) => right[1] - left[1])
+            .map(([fragment]) => fragment)
+            .filter((fragment, index, all) => !all.slice(0, index).some(kept => (
+                kept.includes(fragment) || fragment.includes(kept)
+            )))
+            .slice(0, 4);
+    }
+
     function buildRecentExpressionRepetitionGuard(messages = [], lang = 'ko') {
         const allMessages = Array.isArray(messages) ? messages : [];
         const assistantTexts = allMessages
@@ -377,7 +438,7 @@
                 && typeof message.content === 'string'
                 && String(message.content || '').trim()
             )
-            .slice(-6)
+            .slice(-8)
             .map(message => String(message.content || '').replace(/\s+/g, ' ').trim())
             .filter(Boolean);
 
@@ -440,7 +501,19 @@
             )
             .map(item => isKo ? item.ko : item.en);
 
-        if (repeatedOpenings.length === 0 && stockHits.length === 0) return '';
+        const hasNearDuplicateBodies = assistantTexts.some((text, index) => (
+            assistantTexts.slice(index + 1).some(other => (
+                normalizeRepetitionText(text).length >= 40
+                && normalizeRepetitionText(other).length >= 40
+                && getRepetitionContainment(text, other) >= 0.58
+            ))
+        ));
+        const repeatedFragments = findRepeatedReplyFragments(assistantTexts, latestUserText);
+
+        if (repeatedOpenings.length === 0
+            && stockHits.length === 0
+            && !hasNearDuplicateBodies
+            && repeatedFragments.length === 0) return '';
 
         const guardLines = [];
         if (stockHits.length) {
@@ -453,10 +526,20 @@
                 ? `- 되풀이한 문장 첫머리: ${formatList(repeatedOpenings, 4)}`
                 : `- Repeated sentence openings: ${formatList(repeatedOpenings, 4)}`);
         }
+        if (hasNearDuplicateBodies) {
+            guardLines.push(isKo
+                ? '- 최근 답변끼리 말과 행동의 전개가 거의 같습니다.'
+                : '- Recent replies reuse nearly the same sequence of words and actions.');
+        }
+        if (repeatedFragments.length) {
+            guardLines.push(isKo
+                ? `- 여러 답변에 겹친 짧은 표현: ${formatList(repeatedFragments.map(fragment => `"${fragment}"`), 4)}`
+                : `- Short fragments shared across several replies: ${formatList(repeatedFragments.map(fragment => `"${fragment}"`), 4)}`);
+        }
         const guardBody = guardLines.join('\n');
         return isKo
-            ? `\n\n[표현 겹침]\n${guardBody}\n사용자가 방금 다시 꺼낸 표현이 아니라면 이번 답변에서 그대로 되풀이하지 말고, 같은 캐릭터가 지금 할 법한 다른 말이나 행동으로 자연스럽게 이어가세요.`
-            : `\n\n[Repeated wording]\n${guardBody}\nUnless the user just brought one of these back, avoid repeating it verbatim and continue with a different line or action that still feels like this character.`;
+            ? `\n\n[표현 겹침]\n${guardBody}\n사용자가 방금 다시 꺼낸 표현이 아니라면 이번 답변에서 되풀이하지 마세요. 같은 문장을 동의어로 바꾸는 데 그치지 말고, 최신 사용자 입력을 우선해 이전과 다른 말·판단·행동 중 적어도 하나로 장면을 실제로 전진시키세요.`
+            : `\n\n[Repeated wording]\n${guardBody}\nUnless the user just brought it back, do not repeat this material. Do more than swap synonyms: prioritize the latest user turn and genuinely advance the scene with a different line, judgment, or action.`;
     }
 
     function sanitizeLatestUserText(text) {
@@ -532,6 +615,7 @@ Latest user: """${excerpt}"""
         encodeCacheKeyPart,
         keepRuntimeBoundary,
         buildRecentExpressionRepetitionGuard,
+        isNearDuplicateReply,
         sanitizeLatestUserText,
         truncateLatestUserText,
         findLatestUserText,

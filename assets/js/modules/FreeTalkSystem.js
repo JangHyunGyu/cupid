@@ -927,7 +927,9 @@ class FreeTalkSystem {
             for (let repairAttempt = 0; repairAttempt < 2; repairAttempt += 1) {
                 const qualityIssue = window.getCupidRoleplayQualityIssue?.(parsed, {
                     lang: _lang,
-                    charKey
+                    charKey,
+                    recentMessages: _optimized,
+                    latestUserText: finalContent
                 });
                 if (!qualityIssue?.shouldRetry) break;
 
@@ -957,19 +959,25 @@ class FreeTalkSystem {
 
             let finalQualityIssue = window.getCupidRoleplayQualityIssue?.(parsed, {
                 lang: _lang,
-                charKey
+                charKey,
+                recentMessages: _optimized,
+                latestUserText: finalContent
             });
             if (finalQualityIssue?.shouldRetry) {
                 const recovered = window.recoverCupidRoleplayQualityFallback?.(parsed, {
                     lang: _lang,
-                    charKey
+                    charKey,
+                    recentMessages: _optimized,
+                    latestUserText: finalContent
                 });
                 if (recovered) {
                     console.warn('[Cupid FreeTalk] Kept the valid response segments after quality retries were exhausted', recovered.qualityRecovery);
                     parsed = recovered;
                     finalQualityIssue = window.getCupidRoleplayQualityIssue?.(parsed, {
                         lang: _lang,
-                        charKey
+                        charKey,
+                        recentMessages: _optimized,
+                        latestUserText: finalContent
                     });
                 }
             }
@@ -1459,41 +1467,7 @@ class FreeTalkSystem {
                 };
             }
 
-            /**
-             * 📌 레거시: 객체에서 텍스트 추출 (구 형식 호환)
-             * 여러 가능한 키 이름을 순서대로 시도
-             */
-            const getTextFromObj = (obj) => {
-                // 문자열이면 그대로 반환
-                if (typeof obj === 'string') return obj;
-
-                // 알려진 텍스트 키들 확인 (우선순위순)
-                let text = obj.text || obj.dialogue || obj.content || obj.message || obj.response || obj.msg || obj.result;
-
-                // 위 키들이 없으면 가장 긴 문자열 값 찾기
-                if (!text) {
-                    let longestStr = "";
-                    for (const key in obj) {
-                        if (typeof obj[key] === 'string' && obj[key].length > longestStr.length) {
-                            longestStr = obj[key];
-                        }
-                    }
-                    // 5자 이상이면 유효한 텍스트로 간주
-                    if (longestStr.length > 5) text = longestStr;
-                }
-                return text;
-            };
-
-            // 📌 배열인 경우 첫 번째 요소에서 추출
-            let fallbackText;
-            if (Array.isArray(parsed) && parsed.length > 0) {
-                fallbackText = getTextFromObj(parsed[0]);
-            } else {
-                fallbackText = getTextFromObj(parsed);
-            }
-            if (fallbackText && typeof fallbackText === 'string') {
-                return { text: this._sanitizePlayerPlaceholders(fallbackText), segments: null, expression: "", affinity: 0 };
-            }
+            throw new Error('Unsupported Cupid response JSON schema');
         } catch (e) {
             // 📌 JSON 파싱 실패 시 경고 로그
             console.warn("JSON parsing failed:", e);
