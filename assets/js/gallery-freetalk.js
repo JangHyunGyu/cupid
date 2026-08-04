@@ -1066,7 +1066,6 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     },
                     body: JSON.stringify({
                         messages,
-                        model: window.AI_MODEL_ID || (typeof AI_MODEL_ID !== 'undefined' ? AI_MODEL_ID : undefined),
                         characterId: requestCharId || '',
                         requestType: 'character',
                         chatMode: 'single',

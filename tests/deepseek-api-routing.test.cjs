@@ -5,8 +5,12 @@ const assert = require('node:assert/strict');
 const {
     callDeepSeek,
     normalizeOpenRouterModel,
+    parseTextModelRoutes,
     OPENROUTER_ENDPOINT,
     OFFICIAL_DEEPSEEK_ENDPOINT,
+    OPENROUTER_MODEL,
+    OPENROUTER_DEEPSEEK_MODEL,
+    JSON_TOOL_NAME,
 } = require('../deepseek_api');
 
 function jsonResponse(status, body) {
@@ -17,13 +21,12 @@ function jsonResponse(status, body) {
     };
 }
 
-test('Cupid tools pin DeepSeek V4 Flash to DeepInfra through OpenRouter', async () => {
+test('Cupid tools use free Nemotron 3 Ultra as the primary route', async () => {
     const calls = [];
     const text = await callDeepSeek('hello', {
         openRouterApiKey: 'or-test',
-        deepSeekApiKey: 'ds-test',
         fetchImpl: async (url, init) => {
-            calls.push({ url, init, body: JSON.parse(init.body) });
+            calls.push({ url, body: JSON.parse(init.body) });
             return jsonResponse(200, { choices: [{ message: { content: 'ok' } }] });
         },
     });
@@ -31,31 +34,82 @@ test('Cupid tools pin DeepSeek V4 Flash to DeepInfra through OpenRouter', async 
     assert.equal(text, 'ok');
     assert.equal(calls.length, 1);
     assert.equal(calls[0].url, OPENROUTER_ENDPOINT);
-    assert.equal(calls[0].body.model, 'deepseek/deepseek-v4-flash-0731');
-    assert.deepEqual(calls[0].body.provider, {
+    assert.equal(calls[0].body.model, OPENROUTER_MODEL);
+    assert.deepEqual(calls[0].body.provider, { allow_fallbacks: true });
+    assert.deepEqual(calls[0].body.reasoning, { effort: 'none', exclude: true });
+    assert.equal(calls[0].body.include_reasoning, false);
+    assert.equal('thinking' in calls[0].body, false);
+    assert.equal(normalizeOpenRouterModel('deepseek-v4-flash'), OPENROUTER_DEEPSEEK_MODEL);
+});
+
+test('Cupid JSON tools use Nemotron strict tool calling instead of unsupported JSON mode', async () => {
+    const calls = [];
+    const text = await callDeepSeek('hello', {
+        openRouterApiKey: 'or-test',
+        json: true,
+        fetchImpl: async (url, init) => {
+            const body = JSON.parse(init.body);
+            calls.push({ url, body });
+            return jsonResponse(200, {
+                choices: [{
+                    message: {
+                        tool_calls: [{
+                            function: {
+                                name: JSON_TOOL_NAME,
+                                arguments: JSON.stringify({ json: JSON.stringify({ ok: true }) }),
+                            },
+                        }],
+                    },
+                }],
+            });
+        },
+    });
+
+    assert.equal(text, '{"ok":true}');
+    assert.equal('response_format' in calls[0].body, false);
+    assert.equal(calls[0].body.tools[0].function.name, JSON_TOOL_NAME);
+    assert.equal(calls[0].body.tools[0].function.strict, true);
+});
+
+test('Cupid tools fall back to OpenRouter DeepSeek V4 0731', async () => {
+    const calls = [];
+    const text = await callDeepSeek('hello', {
+        openRouterApiKey: 'or-test',
+        fetchImpl: async (url, init) => {
+            const body = JSON.parse(init.body);
+            calls.push({ url, body });
+            if (body.model === OPENROUTER_MODEL) return jsonResponse(503, { error: { message: 'temporary' } });
+            return jsonResponse(200, { choices: [{ message: { content: 'fallback-ok' } }] });
+        },
+    });
+
+    assert.equal(text, 'fallback-ok');
+    assert.deepEqual(calls.map(call => call.url), [OPENROUTER_ENDPOINT, OPENROUTER_ENDPOINT]);
+    assert.deepEqual(calls.map(call => call.body.model), [OPENROUTER_MODEL, OPENROUTER_DEEPSEEK_MODEL]);
+    assert.deepEqual(calls[1].body.provider, {
         order: ['deepinfra'],
         only: ['deepinfra'],
         allow_fallbacks: false,
     });
-    assert.deepEqual(calls[0].body.thinking, { type: 'disabled' });
-    assert.equal(normalizeOpenRouterModel('deepseek-v4-flash'), 'deepseek/deepseek-v4-flash-0731');
 });
 
-test('Cupid tools fall back to the official DeepSeek API after OpenRouter failure', async () => {
+test('Cupid route configuration can switch to official DeepSeek or any OpenRouter model', async () => {
+    assert.deepEqual(parseTextModelRoutes('official:deepseek-v4-flash,openrouter:mistralai/mistral-small'), [
+        { provider: 'official', model: 'deepseek-v4-flash' },
+        { provider: 'openrouter', model: 'mistralai/mistral-small' },
+    ]);
+
     const calls = [];
     const text = await callDeepSeek('hello', {
-        openRouterApiKey: 'or-test',
+        textModelRoutes: 'official:deepseek-v4-flash',
         deepSeekApiKey: 'ds-test',
         fetchImpl: async (url, init) => {
-            const body = JSON.parse(init.body);
-            calls.push({ url, body });
-            if (url === OPENROUTER_ENDPOINT) return jsonResponse(503, { error: { message: 'temporary' } });
+            calls.push({ url, body: JSON.parse(init.body) });
             return jsonResponse(200, { choices: [{ message: { content: 'official-ok' } }] });
         },
     });
-
     assert.equal(text, 'official-ok');
-    assert.deepEqual(calls.map((call) => call.url), [OPENROUTER_ENDPOINT, OFFICIAL_DEEPSEEK_ENDPOINT]);
-    assert.equal(calls[1].body.model, 'deepseek-v4-flash');
-    assert.equal('provider' in calls[1].body, false);
+    assert.equal(calls[0].url, OFFICIAL_DEEPSEEK_ENDPOINT);
+    assert.equal(calls[0].body.model, 'deepseek-v4-flash');
+    assert.equal('provider' in calls[0].body, false);
 });

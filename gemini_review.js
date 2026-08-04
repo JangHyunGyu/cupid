@@ -57,7 +57,7 @@ JSON만 출력하세요. 마크다운 코드블록 없이 순수 JSON만.`;
     try {
         return JSON.parse(cleaned);
     } catch (e) {
-        console.error('Failed to parse DeepSeek response:', text.substring(0, 500));
+        console.error('Failed to parse Nemotron response:', text.substring(0, 500));
         return { pass: false, issues: [], summary: 'Parse error: ' + text.substring(0, 200) };
     }
 }

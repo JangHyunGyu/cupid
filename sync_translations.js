@@ -2,7 +2,7 @@
 /**
  * sync_translations.js
  * SCENARIO.md 수정 후 변경된 ko 텍스트를 5개 언어로 번역 동기화
- * 공식 DeepSeek API 사용
+ * OpenRouter 무료 Nemotron 3 Ultra 사용
  */
 const fs = require('fs');
 const path = require('path');

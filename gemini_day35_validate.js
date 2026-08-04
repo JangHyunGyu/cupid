@@ -37,7 +37,7 @@ SCENARIO.md (Day 3 후반~끝):
 ${truncated}`;
 
     console.log(`Prompt length: ${prompt.length} chars`);
-    console.log('Sending to official DeepSeek API...');
+    console.log('Sending to OpenRouter free Nemotron 3 Ultra...');
     const text = await callDeepSeek(prompt, { temperature: 0.2, maxTokens: 8192, json: true });
 
     console.log('Response received. Parsing...');

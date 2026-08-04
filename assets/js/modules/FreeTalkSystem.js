@@ -826,7 +826,6 @@ class FreeTalkSystem {
                     },
                     body: JSON.stringify({
                         messages,
-                        model: (typeof AI_MODEL_ID !== 'undefined' && AI_MODEL_ID) ? AI_MODEL_ID : (window.AI_MODEL_ID || undefined),
                         characterId: charKey,
                         requestType: "character",
                         chatMode: "single",
