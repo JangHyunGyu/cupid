@@ -1,6 +1,6 @@
 {
-  "assetVersion": "2.9.129",
-  "serviceWorkerCacheVersion": "cupid-v3.3.66",
+  "assetVersion": "2.9.130",
+  "serviceWorkerCacheVersion": "cupid-v3.3.67",
   "languages": ["ko", "en", "es", "ja", "fr", "de", "pt"],
   "localizedPages": ["index", "game", "gallery"],
   "defaultLanguage": "ko"

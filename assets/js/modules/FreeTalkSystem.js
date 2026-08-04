@@ -972,12 +972,14 @@ class FreeTalkSystem {
                 if (recovered) {
                     console.warn('[Cupid FreeTalk] Kept the valid response segments after quality retries were exhausted', recovered.qualityRecovery);
                     parsed = recovered;
-                    finalQualityIssue = window.getCupidRoleplayQualityIssue?.(parsed, {
-                        lang: _lang,
-                        charKey,
-                        recentMessages: _optimized,
-                        latestUserText: finalContent
-                    });
+                    finalQualityIssue = recovered.qualityRecovery?.acceptedAfterRetries
+                        ? null
+                        : window.getCupidRoleplayQualityIssue?.(parsed, {
+                            lang: _lang,
+                            charKey,
+                            recentMessages: _optimized,
+                            latestUserText: finalContent
+                        });
                 }
             }
             if (finalQualityIssue?.shouldRetry) {
@@ -1442,7 +1444,8 @@ class FreeTalkSystem {
             }
 
             // 📌 JSON 파싱 시도
-            const parsed = JSON.parse(jsonStr);
+            const rawParsed = JSON.parse(jsonStr);
+            const parsed = window.CupidFreeTalkCore?.normalizeCupidResponsePayload?.(rawParsed) || rawParsed;
 
             // 📌 신규 — segments 배열 우선 처리 {segments, expression, affinity}
             if (parsed && typeof parsed === 'object' && !Array.isArray(parsed) && Array.isArray(parsed.segments) && parsed.segments.length > 0) {

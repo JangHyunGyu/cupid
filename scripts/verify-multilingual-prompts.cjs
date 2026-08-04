@@ -573,6 +573,29 @@ assert(!getQualityIssue({
     recentMessages: [{ role: 'assistant', content: repeatedRoleplayReply }],
     latestUserText: '방금 말 그대로 다시 말해 줘.'
 }).issues.includes('recent_response_near_duplicate'), 'An explicit user request to repeat was incorrectly rejected');
+const normalizeCupidResponsePayload = context.window.CupidFreeTalkCore.normalizeCupidResponsePayload;
+assert(typeof normalizeCupidResponsePayload === 'function', 'Cupid response compatibility normalizer is missing');
+const normalizedCupidEnvelope = normalizeCupidResponsePayload({
+    '': {
+        sceneMessages: [{
+            name: 'Yuna',
+            segments: [{ type: 'dialogue', text: 'I am here.' }]
+        }],
+        expression: 'soft',
+        affinity: 1
+    }
+});
+assert(normalizedCupidEnvelope.segments[0].text === 'I am here.'
+    && normalizedCupidEnvelope.expression === 'soft'
+    && normalizedCupidEnvelope.affinity === 1,
+'Nested provider envelopes must normalize into the Cupid display contract');
+const normalizedCupidSegmentArray = normalizeCupidResponsePayload([
+    { type: 'narration', content: 'She raises her head.' },
+    { type: 'dialogue', text: 'Still here.' }
+]);
+assert(normalizedCupidSegmentArray.segments.length === 2
+    && normalizedCupidSegmentArray.segments[0].text === 'She raises her head.',
+'Legacy root segment arrays must normalize into the Cupid display contract');
 const awakeStateIssue = getQualityIssue({
     text: '그는 아직도 잠들어 있었다. 유나는 그가 깨어나면 물을 건네려고 기다렸다.',
     segments: [{ type: 'narration', text: '그는 아직도 잠들어 있었다. 유나는 그가 깨어나면 물을 건네려고 기다렸다.' }]
@@ -601,6 +624,17 @@ assert(context.window.buildCupidRoleplayQualityRepairBlock({
 }, 'ko', 'Yuna').includes('already awake'), 'Awake-state repair instruction is missing');
 const recoverQualityFallback = context.window.recoverCupidRoleplayQualityFallback;
 assert(typeof recoverQualityFallback === 'function', 'Cupid roleplay quality fallback recovery is missing');
+const recoveredRepeatedReply = recoverQualityFallback({
+    text: repeatedRoleplayReply,
+    segments: [{ type: 'dialogue', text: repeatedRoleplayReply }]
+}, {
+    lang: 'ko',
+    charKey: 'Yuna',
+    recentMessages: [{ role: 'assistant', content: repeatedRoleplayReply }],
+    latestUserText: '*continue*'
+});
+assert(recoveredRepeatedReply?.qualityRecovery?.acceptedAfterRetries === true,
+'A valid response must remain displayable after duplicate-regeneration attempts are exhausted');
 const recoveredKoreanReply = recoverQualityFallback({
     text: '*당신을 바라본다.* 괜찮아?',
     segments: [

@@ -1347,6 +1347,19 @@ function getCupidRoleplayQualityIssue(parsed = {}, {
 function recoverCupidRoleplayQualityFallback(parsed = {}, options = {}) {
     const { lang = 'ko', charKey = '' } = options;
     const initialIssue = getCupidRoleplayQualityIssue(parsed, options);
+    if (initialIssue.shouldRetry
+        && initialIssue.issues.length > 0
+        && initialIssue.issues.every(issue => issue === 'recent_response_near_duplicate')
+        && (String(parsed?.text || '').trim()
+            || (Array.isArray(parsed?.segments) && parsed.segments.some(segment => String(segment?.text || '').trim())))) {
+        return {
+            ...parsed,
+            qualityRecovery: {
+                reason: initialIssue.reason,
+                acceptedAfterRetries: true,
+            },
+        };
+    }
     const recoverableIssues = new Set([
         'narration_player_point_of_view',
         'unicode_replacement_character'

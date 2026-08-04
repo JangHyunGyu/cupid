@@ -411,6 +411,82 @@
             });
     }
 
+    function normalizeCupidResponsePayload(value, depth = 0) {
+        if (depth > 4 || value === null || value === undefined) return null;
+        if (typeof value === 'string') {
+            const source = value.trim();
+            if (!source) return null;
+            if (/^[\[{]/.test(source)) {
+                try {
+                    return normalizeCupidResponsePayload(JSON.parse(source), depth + 1);
+                } catch {
+                    // Preserve non-JSON prose as visible text.
+                }
+            }
+            return { text: source };
+        }
+        if (Array.isArray(value)) {
+            if (value.length === 1) return normalizeCupidResponsePayload(value[0], depth + 1);
+            const segments = value.map(segment => {
+                if (!segment || typeof segment !== 'object') return null;
+                const text = String(segment.text || segment.content || segment.message || '').trim();
+                if (!text) return null;
+                return { ...segment, text };
+            }).filter(Boolean);
+            return segments.length > 0 ? { segments } : null;
+        }
+        if (typeof value !== 'object') return null;
+        if ((Array.isArray(value.segments) && value.segments.length > 0)
+            || typeof value.text === 'string') {
+            return value;
+        }
+
+        for (const collectionName of ['sceneMessages', 'conversations']) {
+            const collection = value[collectionName];
+            if (!Array.isArray(collection)) continue;
+            for (const entry of collection) {
+                const normalized = normalizeCupidResponsePayload(entry, depth + 1);
+                if (!normalized) continue;
+                return {
+                    ...value,
+                    ...normalized,
+                    expression: normalized.expression ?? value.expression,
+                    affinity: normalized.affinity ?? value.affinity,
+                    incident: normalized.incident ?? value.incident,
+                };
+            }
+        }
+
+        const legacySegments = [];
+        for (const [key, type] of [
+            ['narration', 'narration'],
+            ['action', 'narration'],
+            ['scene', 'narration'],
+            ['dialogue', 'dialogue'],
+            ['speech', 'dialogue'],
+        ]) {
+            const entries = Array.isArray(value[key]) ? value[key] : [value[key]];
+            for (const entry of entries) {
+                const text = typeof entry === 'object' && entry !== null
+                    ? String(entry.text || entry.content || entry.message || '').trim()
+                    : String(entry || '').trim();
+                if (text) legacySegments.push({ type, text });
+            }
+        }
+        if (legacySegments.length > 0) return { ...value, segments: legacySegments };
+
+        for (const key of ['', 'data', 'result', 'output', 'response', 'message', 'content', 'reply']) {
+            if (!Object.prototype.hasOwnProperty.call(value, key)) continue;
+            const normalized = normalizeCupidResponsePayload(value[key], depth + 1);
+            if (normalized) return { ...value, ...normalized };
+        }
+        const entries = Object.entries(value);
+        if (entries.length === 1) {
+            return normalizeCupidResponsePayload(entries[0][1], depth + 1);
+        }
+        return null;
+    }
+
     function findRepeatedReplyFragments(assistantTexts = [], latestUserText = '') {
         const normalizedLatestUser = normalizeRepetitionText(latestUserText);
         const documentCounts = new Map();
@@ -616,6 +692,7 @@ Latest user: """${excerpt}"""
         keepRuntimeBoundary,
         buildRecentExpressionRepetitionGuard,
         isNearDuplicateReply,
+        normalizeCupidResponsePayload,
         sanitizeLatestUserText,
         truncateLatestUserText,
         findLatestUserText,

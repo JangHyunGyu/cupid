@@ -738,11 +738,11 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
     _showLastAssistantMessage() {
         for (let i = this.chatHistory.length - 1; i >= 0; i--) {
             if (this.chatHistory[i].role === 'assistant') {
-                const text = this._extractText(this.chatHistory[i].content);
+                const parsed = this._parseResponse(this.chatHistory[i].content);
+                const text = parsed.text || this._sanitizeVisibleArtifacts(this.chatHistory[i].content);
                 const msgEl = document.getElementById('message');
                 if (msgEl) msgEl.innerHTML = this._formatAction(text);
                 // 마지막 표정도 복원
-                const parsed = this._parseResponse(this.chatHistory[i].content);
                 if (parsed.expression) this._updateExpression(parsed.expression);
                 return;
             }
@@ -1208,12 +1208,14 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 if (recovered) {
                     console.warn('[Cupid GalleryFreeTalk] Kept the valid response segments after quality retries were exhausted', recovered.qualityRecovery);
                     parsed = recovered;
-                    finalQualityIssue = window.getCupidRoleplayQualityIssue?.(parsed, {
-                        lang: this.lang,
-                        charKey: requestCharKey || requestCharId,
-                        recentMessages: _optimized,
-                        latestUserText: finalContent
-                    });
+                    finalQualityIssue = recovered.qualityRecovery?.acceptedAfterRetries
+                        ? null
+                        : window.getCupidRoleplayQualityIssue?.(parsed, {
+                            lang: this.lang,
+                            charKey: requestCharKey || requestCharId,
+                            recentMessages: _optimized,
+                            latestUserText: finalContent
+                        });
                 }
             }
             if (finalQualityIssue?.shouldRetry) {
@@ -1513,15 +1515,19 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             }
 
             // JSON 시작점 찾기
-            if (!jsonStr.trim().startsWith('{')) {
-                const start = jsonStr.indexOf('{');
-                const end = jsonStr.lastIndexOf('}');
+            if (!jsonStr.trim().startsWith('{') && !jsonStr.trim().startsWith('[')) {
+                const objectStart = jsonStr.indexOf('{');
+                const arrayStart = jsonStr.indexOf('[');
+                const starts = [objectStart, arrayStart].filter(index => index >= 0);
+                const start = starts.length > 0 ? Math.min(...starts) : -1;
+                const end = Math.max(jsonStr.lastIndexOf('}'), jsonStr.lastIndexOf(']'));
                 if (start !== -1 && end > start) {
                     jsonStr = jsonStr.substring(start, end + 1);
                 }
             }
 
-            const parsed = JSON.parse(jsonStr);
+            const rawParsed = JSON.parse(jsonStr);
+            const parsed = window.CupidFreeTalkCore?.normalizeCupidResponsePayload?.(rawParsed) || rawParsed;
 
             // 신규 — segments 배열 우선 처리
             if (parsed && typeof parsed === 'object' && Array.isArray(parsed.segments) && parsed.segments.length > 0) {
