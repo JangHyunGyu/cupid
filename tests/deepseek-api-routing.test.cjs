@@ -2,6 +2,8 @@
 
 const test = require('node:test');
 const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
 const {
     callDeepSeek,
     normalizeOpenRouterModel,
@@ -12,6 +14,7 @@ const {
     OPENROUTER_DEEPSEEK_MODEL,
     JSON_TOOL_NAME,
 } = require('../deepseek_api');
+const { resolveTextModelAdapter } = require('../model_adapters/index.cjs');
 
 function jsonResponse(status, body) {
     return {
@@ -112,4 +115,30 @@ test('Cupid route configuration can switch to official DeepSeek or any OpenRoute
     assert.equal(calls[0].url, OFFICIAL_DEEPSEEK_ENDPOINT);
     assert.equal(calls[0].body.model, 'deepseek-v4-flash');
     assert.equal('provider' in calls[0].body, false);
+});
+
+test('Cupid direct tools keep model-native protocols behind isolated adapters', () => {
+    const nemotron = resolveTextModelAdapter({ provider: 'openrouter', model: OPENROUTER_MODEL });
+    const openRouterDeepSeek = resolveTextModelAdapter({ provider: 'openrouter', model: OPENROUTER_DEEPSEEK_MODEL });
+    const officialDeepSeek = resolveTextModelAdapter({ provider: 'official', model: 'deepseek-v4-flash' });
+    assert.equal(nemotron.id, 'openrouter-nemotron');
+    assert.equal(openRouterDeepSeek.id, 'openrouter-deepseek');
+    assert.equal(officialDeepSeek.id, 'official-deepseek');
+
+    const nemotronPayload = {};
+    nemotron.applyPayload(nemotronPayload, { wantsJson: true });
+    assert('tools' in nemotronPayload);
+    assert(!('response_format' in nemotronPayload));
+    assert(!('thinking' in nemotronPayload));
+
+    const deepSeekPayload = {};
+    openRouterDeepSeek.applyPayload(deepSeekPayload, { wantsJson: true });
+    assert('response_format' in deepSeekPayload);
+    assert('thinking' in deepSeekPayload);
+    assert(!('tools' in deepSeekPayload));
+
+    const transportSource = fs.readFileSync(path.join(__dirname, '..', 'deepseek_api.js'), 'utf8');
+    assert.doesNotMatch(transportSource, /response_format|tool_calls|tool_choice/);
+    assert.match(transportSource, /adapter\.applyPayload/);
+    assert.match(transportSource, /adapter\.extractText/);
 });
