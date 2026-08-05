@@ -59,6 +59,9 @@ class StateManager {
         /** Character-specific API prompt epoch checkpoints. */
         this.chatPromptEpochs = {};
 
+        /** 캐릭터별로 아직 풀리지 않은 상처와 감정의 여운 */
+        this.relationshipAftermaths = {};
+
         /**
          * 게임 플래그들 (이벤트 발생 여부 기록)
          * - 예: { metSeoyeon: true, knowsName_Seoyeon: true, ... }
@@ -87,6 +90,7 @@ class StateManager {
         this.currentCharacter = null;
         this.chatMemories = {};
         this.chatPromptEpochs = {};
+        this.relationshipAftermaths = {};
         this.flags = {};
     }
 
@@ -217,6 +221,33 @@ class StateManager {
         delete this.chatPromptEpochs[charName];
     }
 
+    setRelationshipAftermath(charName, state) {
+        if (!charName) return null;
+        const normalized = window.CupidFreeTalkCore?.normalizeRelationshipAftermath
+            ? window.CupidFreeTalkCore.normalizeRelationshipAftermath(state)
+            : (state || null);
+        if (!normalized) {
+            delete this.relationshipAftermaths[charName];
+            return null;
+        }
+        this.relationshipAftermaths[charName] = JSON.parse(JSON.stringify(normalized));
+        return this.relationshipAftermaths[charName];
+    }
+
+    getRelationshipAftermath(charName) {
+        if (!charName) return null;
+        const rawState = this.relationshipAftermaths[charName] || null;
+        const normalized = window.CupidFreeTalkCore?.normalizeRelationshipAftermath
+            ? window.CupidFreeTalkCore.normalizeRelationshipAftermath(rawState)
+            : rawState;
+        if (!normalized) {
+            delete this.relationshipAftermaths[charName];
+            return null;
+        }
+        this.relationshipAftermaths[charName] = JSON.parse(JSON.stringify(normalized));
+        return this.relationshipAftermaths[charName];
+    }
+
     /**
      * 전체 게임 상태를 객체로 내보내기 (저장용)
      *
@@ -232,6 +263,7 @@ class StateManager {
             stats: JSON.parse(JSON.stringify(this.stats)),
             chatMemories: JSON.parse(JSON.stringify(this.chatMemories)),
             chatPromptEpochs: JSON.parse(JSON.stringify(this.chatPromptEpochs)),
+            relationshipAftermaths: JSON.parse(JSON.stringify(this.relationshipAftermaths)),
             flags: { ...this.flags }
         };
     }
@@ -250,6 +282,9 @@ class StateManager {
         if (data.stats) this.stats = data.stats;
         if (data.chatMemories) this.chatMemories = data.chatMemories;
         if (data.chatPromptEpochs) this.chatPromptEpochs = data.chatPromptEpochs;
+        this.relationshipAftermaths = data.relationshipAftermaths && typeof data.relationshipAftermaths === 'object'
+            ? data.relationshipAftermaths
+            : {};
         if (data.flags) this.flags = data.flags;
 
         console.log('[StateManager] 상태 복원 완료');
@@ -265,6 +300,7 @@ class StateManager {
         if (key === 'stats') return this.stats;
         if (key === 'chatMemories') return this.chatMemories;
         if (key === 'chatPromptEpochs') return this.chatPromptEpochs;
+        if (key === 'relationshipAftermaths') return this.relationshipAftermaths;
         return this.flags[key];
     }
 

@@ -783,10 +783,14 @@ class FreeTalkSystem {
                 : (this.stateManager.stats?.[charKey]?.affinity || 0);
             const _isDatingCurrentForBoundary = this.stateManager.getFlag(`isDating_${charKey}`) || this.stateManager.getFlag(`isDating_${scene.name}`);
             const _affinityIntimacyProgressionPatch = buildCupidAffinityIntimacyProgressionPatch(_lang, _currentAffinity, _isDatingCurrentForBoundary);
+            const _relationshipAftermathBlock = CupidFreeTalkCore.buildRelationshipAftermathBlock({
+                lang: _lang,
+                state: this.stateManager.getRelationshipAftermath?.(charKey)
+            });
             const _lowInformationContinuationRule = typeof window.buildCupidLowInformationContinuationRule === 'function'
                 ? window.buildCupidLowInformationContinuationRule(finalContent, _lang)
                 : '';
-            const _runtimePromptPatch = `${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_affinityIntimacyProgressionPatch}${_recentRepetitionGuard}${_lowInformationContinuationRule}`;
+            const _runtimePromptPatch = `${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_affinityIntimacyProgressionPatch}${_relationshipAftermathBlock}${_recentRepetitionGuard}${_lowInformationContinuationRule}`;
             if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
                 _optimized = [
                     { ..._optimized[0], content: appendFreeTalkDynamicContext(_optimized[0].content, _runtimePromptPatch) },
@@ -1037,12 +1041,29 @@ class FreeTalkSystem {
                 this.applyExpression(parsed.expression, scene);
                 const affinityResult = this.applyAffinity(parsed.affinity, scene);
                 this._assertRequestContext(requestContext, data);
+                const nextAftermath = CupidFreeTalkCore.updateRelationshipAftermath(
+                    this.stateManager.getRelationshipAftermath?.(charKey),
+                    affinityResult?.requestedChange ?? 0,
+                    finalContent,
+                    {
+                        source: 'user',
+                        fallbackCause: _lang === 'ko'
+                            ? '사용자가 직전에 남긴 말이나 행동'
+                            : 'the user\'s preceding words or action'
+                    }
+                );
+                this.stateManager.setRelationshipAftermath?.(charKey, nextAftermath);
                 requestHistory.push({ role: "assistant", content: reply, segments: parsedSegments });
                 this.galleryManager.incrementFreeTalkCount(charKey);
 
                 // 대화 기록 저장 (로컬)
                 this._assertRequestContext(requestContext, data);
                 this.stateManager.setChatMemory(charKey, requestHistory);
+                try {
+                    window.saveGameState?.();
+                } catch (saveError) {
+                    console.warn('[Cupid FreeTalk] Could not persist the completed chat turn', saveError);
+                }
 
                 // D1 chat-logs 저장 (백업 뷰어용, 비동기 fire-and-forget)
                 if (typeof window.saveCupidChatLog === 'function') {

@@ -197,11 +197,11 @@ class GalleryProgress {
         return {
             version: GalleryData.VERSION,
             characters: {
-                seyoun: { met: false, maxAffinity: 0, currentAffinity: 0, galleryFreeTalkAffinityInitialized: false, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState() },
-                yuna: { met: false, maxAffinity: 0, currentAffinity: 0, galleryFreeTalkAffinityInitialized: false, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState() },
-                dain: { met: false, maxAffinity: 0, currentAffinity: 0, galleryFreeTalkAffinityInitialized: false, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState() },
-                teacher: { met: false, maxAffinity: 0, currentAffinity: 0, galleryFreeTalkAffinityInitialized: false, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState() },
-                nurse: { met: false, maxAffinity: 0, currentAffinity: 0, galleryFreeTalkAffinityInitialized: false, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState() }
+                seyoun: { met: false, maxAffinity: 0, currentAffinity: 0, galleryFreeTalkAffinityInitialized: false, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState(), relationshipAftermath: null },
+                yuna: { met: false, maxAffinity: 0, currentAffinity: 0, galleryFreeTalkAffinityInitialized: false, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState(), relationshipAftermath: null },
+                dain: { met: false, maxAffinity: 0, currentAffinity: 0, galleryFreeTalkAffinityInitialized: false, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState(), relationshipAftermath: null },
+                teacher: { met: false, maxAffinity: 0, currentAffinity: 0, galleryFreeTalkAffinityInitialized: false, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState(), relationshipAftermath: null },
+                nurse: { met: false, maxAffinity: 0, currentAffinity: 0, galleryFreeTalkAffinityInitialized: false, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState(), relationshipAftermath: null }
             },
             cg: {},                           // CG는 기본적으로 없음 (게임 진행 시 추가)
             bgm: {
@@ -454,6 +454,48 @@ class GalleryProgress {
             ? window.CupidFreeTalkCore.normalizeGalleryIncidentState(state)
             : state;
         charData.galleryIncident = normalized;
+        this.save();
+        return normalized;
+    }
+
+    /**
+     * 캐릭터별로 아직 풀리지 않은 감정의 여운을 가져옵니다.
+     * 기존 저장 데이터는 필드가 없어도 그대로 호환됩니다.
+     *
+     * @param {string} charId
+     * @returns {Object|null}
+     */
+    getRelationshipAftermath(charId) {
+        this.refresh();
+        const charData = this.data.characters?.[charId];
+        if (!charData) return null;
+
+        const normalized = window.CupidFreeTalkCore?.normalizeRelationshipAftermath
+            ? window.CupidFreeTalkCore.normalizeRelationshipAftermath(charData.relationshipAftermath)
+            : (charData.relationshipAftermath || null);
+        if (JSON.stringify(charData.relationshipAftermath || null) !== JSON.stringify(normalized)) {
+            charData.relationshipAftermath = normalized;
+            this.save();
+        }
+        return normalized;
+    }
+
+    /**
+     * 캐릭터별 감정의 여운을 저장합니다.
+     *
+     * @param {string} charId
+     * @param {Object|null} state
+     * @returns {Object|null}
+     */
+    setRelationshipAftermath(charId, state) {
+        this.refresh();
+        const charData = this.data.characters?.[charId];
+        if (!charData) return null;
+
+        const normalized = window.CupidFreeTalkCore?.normalizeRelationshipAftermath
+            ? window.CupidFreeTalkCore.normalizeRelationshipAftermath(state)
+            : (state || null);
+        charData.relationshipAftermath = normalized;
         this.save();
         return normalized;
     }

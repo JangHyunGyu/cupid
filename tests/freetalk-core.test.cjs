@@ -66,6 +66,73 @@ test('affinity changes use the shared asymmetric -50 to +5 range', () => {
     assert.match(core.buildAffinityChangeGuidance('en'), /outwardly laughs it off or stays composed/);
 });
 
+test('relationship hurt lingers across topic changes and softens without an instant reset', () => {
+    const hurt = core.updateRelationshipAftermath(
+        null,
+        -8,
+        '싫다고 했는데도 또 그런 농담을 했어.'
+    );
+    assert.equal(hurt.intensity, 8);
+    assert.equal(hurt.remainingTurns, 5);
+    assert.equal(hurt.causes.length, 1);
+
+    const afterTopicChange = core.updateRelationshipAftermath(hurt, 0, '그런데 오늘 저녁은 뭐 먹을까?');
+    assert.ok(afterTopicChange);
+    assert.equal(afterTopicChange.intensity, 7);
+    assert.equal(afterTopicChange.remainingTurns, 4);
+    assert.match(afterTopicChange.causes[0].excerpt, /그런 농담/);
+    assert.doesNotMatch(afterTopicChange.causes[0].excerpt, /저녁/);
+
+    const afterRepair = core.updateRelationshipAftermath(afterTopicChange, 5, '미안해. 다시는 안 할게.');
+    assert.ok(afterRepair, 'one positive repair must not erase the prior hurt immediately');
+    assert.equal(afterRepair.intensity, 2);
+    assert.equal(afterRepair.remainingTurns, 2);
+
+    const block = core.buildRelationshipAftermathBlock({ lang: 'ko', state: afterRepair });
+    assert.match(block, /아직 풀리지 않은 감정의 여운/);
+    assert.match(block, /화제가 바뀌거나/);
+    assert.match(block, /한 번의 수습만으로 자동 초기화하지 마세요/);
+    assert.match(block, /이 여운 자체를 새 감점 사유로 삼지는 마세요/);
+
+    let expired = afterRepair;
+    for (let turn = 0; turn < 10 && expired; turn++) {
+        expired = core.updateRelationshipAftermath(expired, 0, '평범한 다음 대화');
+    }
+    assert.equal(expired, null);
+});
+
+test('repeated harm accumulates causes and emotional aftermath stays outside the cache fingerprint', () => {
+    const first = core.updateRelationshipAftermath(null, -6, '약속을 또 잊었어.');
+    const repeated = core.updateRelationshipAftermath(first, -12, '거짓말로 들키지 않으려 했어.');
+    assert.ok(repeated.intensity > first.intensity);
+    assert.ok(repeated.remainingTurns > first.remainingTurns);
+    assert.equal(repeated.causes.length, 2);
+    assert.match(repeated.causes[0].excerpt, /거짓말/);
+    assert.match(repeated.causes[1].excerpt, /약속/);
+
+    const incident = core.updateRelationshipAftermath(
+        null,
+        -25,
+        '서로의 신뢰를 흔든 관계 사건',
+        { source: 'incident' }
+    );
+    const incidentBlock = core.buildRelationshipAftermathBlock({ lang: 'ko', state: incident });
+    assert.match(incidentBlock, /관계 사건/);
+
+    const firstPrompt = core.appendDynamicContext('stable prompt', core.buildRelationshipAftermathBlock({
+        lang: 'ko',
+        state: first
+    }));
+    const repeatedPrompt = core.appendDynamicContext('stable prompt', core.buildRelationshipAftermathBlock({
+        lang: 'ko',
+        state: repeated
+    }));
+    assert.equal(
+        core.getStablePromptFingerprint(firstPrompt),
+        core.getStablePromptFingerprint(repeatedPrompt)
+    );
+});
+
 test('outward expression remains independent from affinity direction', () => {
     const expressions = ['normal', 'smile', 'shy', 'angry', 'sad', 'worried'];
     assert.equal(core.normalizeAvailableExpression('smile', expressions), 'smile');
@@ -247,6 +314,10 @@ test('gallery runtime wires incident planning, persistence, and AI payload parsi
     assert.match(gallery, /normalizeGalleryIncidentPayload\(parsed\.incident\)/);
     assert.match(progress, /getGalleryIncidentState\(charId\)/);
     assert.match(progress, /setGalleryIncidentState\(charId, state\)/);
+    assert.match(gallery, /buildRelationshipAftermathBlock/);
+    assert.match(gallery, /updateRelationshipAftermath/);
+    assert.match(progress, /getRelationshipAftermath\(charId\)/);
+    assert.match(progress, /setRelationshipAftermath\(charId, state\)/);
 });
 
 test('latest-user canon strips URLs and preserves the newest user turn', () => {
@@ -305,6 +376,58 @@ test('main story keeps every character message for the current run', () => {
     assert.match(latest, /lastMessage\?\.role === 'user'/);
 });
 
+test('main relationship aftermath survives save import and is isolated per character', () => {
+    const stateWindow = { GAME_LANG: 'ko', CupidFreeTalkCore: core };
+    vm.runInNewContext(read('assets/js/modules/StateManager.js'), {
+        window: stateWindow,
+        console: { log() {}, error() {} }
+    });
+    const state = new stateWindow.StateManager();
+    const aftermath = core.updateRelationshipAftermath(null, -15, '경계를 분명히 무시했다.');
+    state.setRelationshipAftermath('Yuna', aftermath);
+
+    const exported = state.exportState();
+    const restored = new stateWindow.StateManager();
+    restored.importState(exported);
+
+    assert.equal(restored.getRelationshipAftermath('Seoyeon'), null);
+    assert.equal(restored.getRelationshipAftermath('Yuna').intensity, 15);
+    assert.match(restored.getRelationshipAftermath('Yuna').causes[0].excerpt, /경계/);
+    assert.match(read('assets/js/modules/FreeTalkSystem.js'), /buildRelationshipAftermathBlock/);
+    assert.match(read('assets/js/modules/FreeTalkSystem.js'), /updateRelationshipAftermath/);
+    assert.match(read('assets/js/modules/FreeTalkSystem.js'), /window\.saveGameState\?\.\(\)/);
+});
+
+test('gallery relationship aftermath persists through its local save store', () => {
+    const saved = new Map();
+    const localStorage = {
+        getItem(key) { return saved.has(key) ? saved.get(key) : null; },
+        setItem(key, value) { saved.set(key, String(value)); }
+    };
+    const galleryWindow = {
+        location: { search: '' },
+        CupidFreeTalkCore: core
+    };
+    vm.runInNewContext(read('assets/js/gallery-progress.js'), {
+        window: galleryWindow,
+        localStorage,
+        GalleryData: { VERSION: 2 },
+        URLSearchParams,
+        console: { log() {}, warn() {}, error() {} }
+    });
+
+    const progress = new galleryWindow.GalleryProgress();
+    const aftermath = core.updateRelationshipAftermath(null, -22, '서로의 신뢰가 흔들린 사건', {
+        source: 'incident'
+    });
+    progress.setRelationshipAftermath('seyoun', aftermath);
+
+    const restored = new galleryWindow.GalleryProgress();
+    assert.equal(restored.getRelationshipAftermath('yuna'), null);
+    assert.equal(restored.getRelationshipAftermath('seyoun').intensity, 22);
+    assert.equal(restored.getRelationshipAftermath('seyoun').causes[0].source, 'incident');
+});
+
 test('new game clears only main-run state while gallery and D1 remain separate', () => {
     const stateWindow = { GAME_LANG: 'en' };
     vm.runInNewContext(read('assets/js/modules/StateManager.js'), {
@@ -318,6 +441,7 @@ test('new game clears only main-run state while gallery and D1 remain separate',
     state.flags.ending_perfect_seoyeon = true;
     state.chatMemories.Seoyeon = [{ role: 'user', content: 'old run' }];
     state.chatPromptEpochs.Seoyeon = { version: 1, carryover: 'old run' };
+    state.relationshipAftermaths.Seoyeon = core.updateRelationshipAftermath(null, -10, 'old hurt');
 
     state.resetForNewGame();
 
@@ -327,6 +451,7 @@ test('new game clears only main-run state while gallery and D1 remain separate',
     assert.equal(Object.keys(state.flags).length, 0);
     assert.equal(Object.keys(state.chatMemories).length, 0);
     assert.equal(Object.keys(state.chatPromptEpochs).length, 0);
+    assert.equal(Object.keys(state.relationshipAftermaths).length, 0);
 
     const gameEngine = read('assets/js/modules/GameEngine.js');
     const start = gameEngine.indexOf('    async startNewGame()');

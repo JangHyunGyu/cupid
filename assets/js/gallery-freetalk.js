@@ -1025,10 +1025,14 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 state: _incidentRuntime.state,
                 plan: _incidentRuntime.plan
             });
+            const _relationshipAftermathBlock = GalleryFreeTalkCore.buildRelationshipAftermathBlock({
+                lang: this.lang || 'en',
+                state: this.progress?.getRelationshipAftermath?.(requestCharId)
+            });
             const _lowInformationContinuationRule = typeof window.buildCupidLowInformationContinuationRule === 'function'
                 ? window.buildCupidLowInformationContinuationRule(finalContent, this.lang || 'en')
                 : '';
-            const _runtimePromptPatch = `${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_recentRepetitionGuard}${_incidentRuntimeBlock}${_lowInformationContinuationRule}`;
+            const _runtimePromptPatch = `${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_relationshipAftermathBlock}${_recentRepetitionGuard}${_incidentRuntimeBlock}${_lowInformationContinuationRule}`;
             if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
                 _optimized = [
                     { ..._optimized[0], content: appendGalleryFreeTalkDynamicContext(_optimized[0].content, _runtimePromptPatch) },
@@ -1258,6 +1262,19 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 turnAffinity: parsed.affinity
             });
             const affinityResult = this._applyAffinityChange(incidentResult.affinityChange, requestCharId);
+            const aftermathFromIncident = Boolean(incidentResult.startedCategory && incidentResult.activeIncident?.summary);
+            const nextAftermath = GalleryFreeTalkCore.updateRelationshipAftermath(
+                this.progress?.getRelationshipAftermath?.(requestCharId),
+                affinityResult?.requestedChange ?? 0,
+                aftermathFromIncident ? incidentResult.activeIncident.summary : finalContent,
+                {
+                    source: aftermathFromIncident ? 'incident' : 'user',
+                    fallbackCause: this.lang === 'ko'
+                        ? (aftermathFromIncident ? '두 사람 사이에 생긴 관계 사건' : '사용자가 직전에 남긴 말이나 행동')
+                        : (aftermathFromIncident ? 'a relationship event between them' : 'the user\'s preceding words or action')
+                }
+            );
+            this.progress?.setRelationshipAftermath?.(requestCharId, nextAftermath);
             requestHistory.push({ role: 'assistant', content: displayText });
 
             // 프리토킹 횟수 증가
