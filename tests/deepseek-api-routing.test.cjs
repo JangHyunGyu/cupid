@@ -12,7 +12,8 @@ const {
     OFFICIAL_DEEPSEEK_ENDPOINT,
     OPENROUTER_MODEL,
     OPENROUTER_DEEPSEEK_MODEL,
-    JSON_TOOL_NAME,
+    OPENROUTER_NEMOTRON_MODEL,
+    OPENROUTER_QWEN_MODEL,
 } = require('../deepseek_api');
 const { resolveTextModelAdapter } = require('../model_adapters/index.cjs');
 
@@ -24,7 +25,7 @@ function jsonResponse(status, body) {
     };
 }
 
-test('Cupid tools use free Nemotron 3 Ultra as the primary route', async () => {
+test('Cupid tools use Qwen 3.7 Flash as the primary route', async () => {
     const calls = [];
     const text = await callDeepSeek('hello', {
         openRouterApiKey: 'or-test',
@@ -38,14 +39,19 @@ test('Cupid tools use free Nemotron 3 Ultra as the primary route', async () => {
     assert.equal(calls.length, 1);
     assert.equal(calls[0].url, OPENROUTER_ENDPOINT);
     assert.equal(calls[0].body.model, OPENROUTER_MODEL);
-    assert.deepEqual(calls[0].body.provider, { allow_fallbacks: true });
+    assert.equal(calls[0].body.model, OPENROUTER_QWEN_MODEL);
+    assert.deepEqual(calls[0].body.provider, {
+        order: ['alibaba'],
+        only: ['alibaba'],
+        allow_fallbacks: false,
+    });
     assert.deepEqual(calls[0].body.reasoning, { effort: 'none', exclude: true });
     assert.equal(calls[0].body.include_reasoning, false);
     assert.equal('thinking' in calls[0].body, false);
     assert.equal(normalizeOpenRouterModel('deepseek-v4-flash'), OPENROUTER_DEEPSEEK_MODEL);
 });
 
-test('Cupid JSON tools use Nemotron strict tool calling instead of unsupported JSON mode', async () => {
+test('Cupid JSON tools use Qwen JSON mode', async () => {
     const calls = [];
     const text = await callDeepSeek('hello', {
         openRouterApiKey: 'or-test',
@@ -53,25 +59,13 @@ test('Cupid JSON tools use Nemotron strict tool calling instead of unsupported J
         fetchImpl: async (url, init) => {
             const body = JSON.parse(init.body);
             calls.push({ url, body });
-            return jsonResponse(200, {
-                choices: [{
-                    message: {
-                        tool_calls: [{
-                            function: {
-                                name: JSON_TOOL_NAME,
-                                arguments: JSON.stringify({ json: JSON.stringify({ ok: true }) }),
-                            },
-                        }],
-                    },
-                }],
-            });
+            return jsonResponse(200, { choices: [{ message: { content: '{"ok":true}' } }] });
         },
     });
 
     assert.equal(text, '{"ok":true}');
-    assert.equal('response_format' in calls[0].body, false);
-    assert.equal(calls[0].body.tools[0].function.name, JSON_TOOL_NAME);
-    assert.equal(calls[0].body.tools[0].function.strict, true);
+    assert.deepEqual(calls[0].body.response_format, { type: 'json_object' });
+    assert.equal('tools' in calls[0].body, false);
 });
 
 test('Cupid tools fall back to OpenRouter DeepSeek V4 0731', async () => {
@@ -118,12 +112,21 @@ test('Cupid route configuration can switch to official DeepSeek or any OpenRoute
 });
 
 test('Cupid direct tools keep model-native protocols behind isolated adapters', () => {
-    const nemotron = resolveTextModelAdapter({ provider: 'openrouter', model: OPENROUTER_MODEL });
+    const qwen = resolveTextModelAdapter({ provider: 'openrouter', model: OPENROUTER_QWEN_MODEL });
+    const nemotron = resolveTextModelAdapter({ provider: 'openrouter', model: OPENROUTER_NEMOTRON_MODEL });
     const openRouterDeepSeek = resolveTextModelAdapter({ provider: 'openrouter', model: OPENROUTER_DEEPSEEK_MODEL });
     const officialDeepSeek = resolveTextModelAdapter({ provider: 'official', model: 'deepseek-v4-flash' });
+    assert.equal(qwen.id, 'openrouter-qwen');
     assert.equal(nemotron.id, 'openrouter-nemotron');
     assert.equal(openRouterDeepSeek.id, 'openrouter-deepseek');
     assert.equal(officialDeepSeek.id, 'official-deepseek');
+
+    const qwenPayload = {};
+    qwen.applyPayload(qwenPayload, { wantsJson: true });
+    assert.deepEqual(qwenPayload.response_format, { type: 'json_object' });
+    assert.deepEqual(qwenPayload.reasoning, { effort: 'none', exclude: true });
+    assert.deepEqual(qwenPayload.provider.only, ['alibaba']);
+    assert(!('tools' in qwenPayload));
 
     const nemotronPayload = {};
     nemotron.applyPayload(nemotronPayload, { wantsJson: true });
