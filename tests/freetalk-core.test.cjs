@@ -96,11 +96,28 @@ test('visible payload guard blocks nested or malformed JSON protocol text', () =
         'malformed_json_protocol'
     );
     assert.equal(
+        core.getVisibleProtocolIssue({ text: '{"Yuna pauses.": .}' }).reason,
+        'malformed_json_protocol'
+    );
+    assert.equal(
         core.getVisibleProtocolIssue({
             text: 'Yuna pauses, then looks up.',
             segments: [{ type: 'narration', text: 'Yuna pauses, then looks up.' }]
         }),
         null
+    );
+});
+
+test('chat log content follows the text that actually rendered on screen', () => {
+    assert.equal(
+        core.resolveCupidAssistantLogContent('Expected structured response', {
+            renderedContent: 'Actually visible response'
+        }),
+        'Actually visible response'
+    );
+    assert.equal(
+        core.resolveCupidAssistantLogContent('Expected structured response', { renderedContent: '   ' }),
+        'Expected structured response'
     );
 });
 

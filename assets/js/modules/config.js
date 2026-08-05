@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "https://openrouter-api.yama5993.workers.dev/";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.131";
+const ASSET_VERSION = "2.9.132";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -838,22 +838,6 @@ async function saveCupidChatLog({
         appId: getCupidAppId()
     };
     const queueAndFlush = async (role, content, affinity = {}) => {
-        if (role === 'assistant') {
-            const protocolIssue = window.CupidFreeTalkCore?.getVisibleProtocolIssue?.({ text: content });
-            if (protocolIssue) {
-                reportCupidCaughtError(new Error('Blocked protocol JSON from Cupid assistant chat log'), {
-                    source: 'saveCupidChatLog',
-                    errorType: 'chat_log_protocol_content_blocked',
-                    sessionId,
-                    context: { charId, role, logContext: context, protocolReason: protocolIssue.reason },
-                    extra: {
-                        contentLength: String(content || '').length,
-                        contentHash: hashCupidLogText(content)
-                    }
-                });
-                return null;
-            }
-        }
         const entry = makeCupidChatLogEntry({ ...shared, role, content, ...affinity });
         if (enqueueCupidChatLog(entry)) {
             await flushCupidChatLogQueue();
@@ -877,8 +861,12 @@ async function saveCupidChatLog({
 
     // 순서 보장: user 먼저 저장 후 assistant 저장 (병렬 시 created_at/id 역전 방지)
     if (userContent) await queueAndFlush('user', userContent);
-    if (assistantContent) {
-        const assistantEntry = await queueAndFlush('assistant', assistantContent, {
+    const assistantLogContent = window.CupidFreeTalkCore?.resolveCupidAssistantLogContent?.(
+        assistantContent,
+        assistantRenderReceipt
+    ) ?? String(assistantContent || '');
+    if (assistantLogContent) {
+        const assistantEntry = await queueAndFlush('assistant', assistantLogContent, {
             affinityChange,
             affinityCurrent
         });

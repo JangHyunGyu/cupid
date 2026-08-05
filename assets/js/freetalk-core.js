@@ -530,13 +530,21 @@
                         return { reason: 'embedded_json_value', path: item.path };
                     }
                 } catch {
-                    if (/\\?"(?:segments|sceneMessages|conversations|text|expression|affinity|dialogue|narration|content)\\?"\s*:/i.test(source)) {
+                    if (source.startsWith('{')
+                        || /^\[\s*(?:[\[{"'\d-]|true\b|false\b|null\b)/i.test(source)) {
                         return { reason: 'malformed_json_protocol', path: item.path };
                     }
                 }
             }
         }
         return null;
+    }
+
+    function resolveCupidAssistantLogContent(assistantContent, renderReceipt = null) {
+        const renderedContent = typeof renderReceipt?.renderedContent === 'string'
+            ? renderReceipt.renderedContent
+            : '';
+        return renderedContent.trim() ? renderedContent : String(assistantContent || '');
     }
 
     function findRepeatedReplyFragments(assistantTexts = [], latestUserText = '') {
@@ -746,6 +754,7 @@ Latest user: """${excerpt}"""
         isNearDuplicateReply,
         normalizeCupidResponsePayload,
         getVisibleProtocolIssue,
+        resolveCupidAssistantLogContent,
         sanitizeLatestUserText,
         truncateLatestUserText,
         findLatestUserText,
