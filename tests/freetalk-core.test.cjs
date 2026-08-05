@@ -53,11 +53,16 @@ test('affinity changes use the shared asymmetric -50 to +5 range', () => {
     assert.equal(core.normalizeAffinityChange('invalid'), 0);
     assert.match(core.buildAffinityChangeGuidance('ko'), /-50~\+5/);
     assert.match(core.buildAffinityChangeGuidance('en'), /-50 to \+5/);
-    assert.match(core.buildAffinityChangeGuidance('ko'), /-6~-20/);
-    assert.match(core.buildAffinityChangeGuidance('ko'), /-21~-50/);
-    assert.match(core.buildAffinityChangeGuidance('ko'), /0을 기본값으로 삼지 말고/);
+    assert.match(core.buildAffinityChangeGuidance('ko'), /-5~-9/);
+    assert.match(core.buildAffinityChangeGuidance('ko'), /-10~-20/);
+    assert.match(core.buildAffinityChangeGuidance('ko'), /-21~-35/);
+    assert.match(core.buildAffinityChangeGuidance('ko'), /-36~-50/);
+    assert.match(core.buildAffinityChangeGuidance('ko'), /사용자가 이번 턴 안에서 실제로 사과·해명·수습한 경우만/);
+    assert.match(core.buildAffinityChangeGuidance('ko'), /실제 감점이라면 -1로 축소하지 마세요/);
     assert.match(core.buildAffinityChangeGuidance('ko'), /겉으로 웃거나 태연하게 넘겨도/);
-    assert.match(core.buildAffinityChangeGuidance('en'), /Do not treat 0 as the default/);
+    assert.match(core.buildAffinityChangeGuidance('en'), /-36 to -50/);
+    assert.match(core.buildAffinityChangeGuidance('en'), /count recovery only when the user actually apologizes/);
+    assert.match(core.buildAffinityChangeGuidance('en'), /do not shrink it to -1/);
     assert.match(core.buildAffinityChangeGuidance('en'), /outwardly laughs it off or stays composed/);
 });
 
@@ -121,17 +126,17 @@ test('chat log content follows the text that actually rendered on screen', () =>
     );
 });
 
-test('gallery incident timing is turn-based with a 15-turn guard and 40-turn ceiling', () => {
-    assert.equal(core.getGalleryIncidentTriggerChance(14), 0);
-    assert.equal(core.getGalleryIncidentTriggerChance(15), 0.05);
-    assert.equal(core.getGalleryIncidentTriggerChance(24), 0.05);
-    assert.equal(core.getGalleryIncidentTriggerChance(25), 0.12);
-    assert.equal(core.getGalleryIncidentTriggerChance(38), 0.12);
-    assert.equal(core.getGalleryIncidentTriggerChance(39), 1);
+test('gallery incident timing is turn-based with a 10-turn guard and 30-turn ceiling', () => {
+    assert.equal(core.getGalleryIncidentTriggerChance(9), 0);
+    assert.equal(core.getGalleryIncidentTriggerChance(10), 0.08);
+    assert.equal(core.getGalleryIncidentTriggerChance(17), 0.08);
+    assert.equal(core.getGalleryIncidentTriggerChance(18), 0.18);
+    assert.equal(core.getGalleryIncidentTriggerChance(28), 0.18);
+    assert.equal(core.getGalleryIncidentTriggerChance(29), 1);
 
-    const beforeCeiling = core.normalizeGalleryIncidentState({ completedTurns: 38, quietTurns: 38 });
+    const beforeCeiling = core.normalizeGalleryIncidentState({ completedTurns: 28, quietTurns: 28 });
     assert.equal(core.planGalleryIncident(beforeCeiling, 0.99, 0.1), null);
-    const atCeiling = core.normalizeGalleryIncidentState({ completedTurns: 39, quietTurns: 39 });
+    const atCeiling = core.normalizeGalleryIncidentState({ completedTurns: 29, quietTurns: 29 });
     assert.equal(core.planGalleryIncident(atCeiling, 0.99, 0.1).category, 'daily');
 
     let survival = 1;
@@ -141,19 +146,23 @@ test('gallery incident timing is turn-based with a 15-turn guard and 40-turn cei
         expectedTurn += (quietTurns + 1) * survival * chance;
         survival *= (1 - chance);
     }
-    assert.ok(expectedTurn >= 25 && expectedTurn <= 29, `unexpected incident cadence: ${expectedTurn}`);
+    assert.ok(expectedTurn >= 18 && expectedTurn <= 22, `unexpected incident cadence: ${expectedTurn}`);
 });
 
-test('main and gallery prompts tell the model not to default affinity to zero', () => {
+test('main and gallery prompts avoid a single numeric affinity anchor', () => {
     const prompts = read('assets/js/prompts.js');
     const gallery = read('assets/js/gallery-freetalk.js');
-    assert.match(prompts, /0을 관성적으로 넣지 말고 위 판정 기준에 따라 고르세요/);
-    assert.match(gallery, /0을 관성적으로 넣지 말고 위 판정 기준에 따라 고르세요/);
+    assert.match(prompts, /<판정한 정수>/);
+    assert.match(gallery, /<판정한 정수>/);
+    assert.match(prompts, /예시 점수를 복사하거나 0을 관성적으로 넣지 마세요/);
+    assert.match(gallery, /예시 점수를 복사하거나 0을 관성적으로 넣지 마세요/);
+    assert.doesNotMatch(prompts, /"affinity":-1/);
+    assert.doesNotMatch(gallery, /"affinity":-1/);
 });
 
-test('gallery incident categories preserve 60/30/10 weighting when crisis is eligible', () => {
-    assert.equal(core.selectGalleryIncidentCategory(0.59, true), 'daily');
-    assert.equal(core.selectGalleryIncidentCategory(0.6, true), 'conflict');
+test('gallery incident categories preserve 45/45/10 weighting when crisis is eligible', () => {
+    assert.equal(core.selectGalleryIncidentCategory(0.4499, true), 'daily');
+    assert.equal(core.selectGalleryIncidentCategory(0.45, true), 'conflict');
     assert.equal(core.selectGalleryIncidentCategory(0.8999, true), 'conflict');
     assert.equal(core.selectGalleryIncidentCategory(0.9, true), 'crisis');
     assert.equal(core.selectGalleryIncidentCategory(0.99, false), 'conflict');
@@ -179,10 +188,12 @@ test('trust crises require actual negative evidence and enforce the 300-turn coo
 });
 
 test('incident impact is clamped by category and crisis severity', () => {
-    assert.equal(core.normalizeGalleryIncidentImpact('daily', -999), -2);
-    assert.equal(core.normalizeGalleryIncidentImpact('daily', 999), 0);
-    assert.equal(core.normalizeGalleryIncidentImpact('conflict', -999), -5);
-    assert.equal(core.normalizeGalleryIncidentImpact('conflict', 999), -2);
+    assert.equal(core.normalizeGalleryIncidentImpact('daily', -999), -3);
+    assert.equal(core.normalizeGalleryIncidentImpact('daily', 999), -1);
+    assert.equal(core.normalizeGalleryIncidentImpact('daily', undefined), -2);
+    assert.equal(core.normalizeGalleryIncidentImpact('conflict', -999), -10);
+    assert.equal(core.normalizeGalleryIncidentImpact('conflict', 999), -5);
+    assert.equal(core.normalizeGalleryIncidentImpact('conflict', undefined), -7);
     assert.equal(core.normalizeGalleryIncidentImpact('crisis', -50, {
         severity: 'low'
     }), -29);

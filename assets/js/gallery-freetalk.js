@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.49';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.50';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 const GalleryFreeTalkCore = window.CupidFreeTalkCore;
@@ -2381,8 +2381,8 @@ ${livingInitiativeRule}
 ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}
 ${affinityRelationshipGuard}
-JSON only: {"segments":[{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":-1}
-Include all three fields. affinity must be an integer from -50 to +5; choose it from the scoring rule above instead of defaulting to 0.
+JSON only: use this shape with no prose outside it: {"segments":[{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":<scored integer>}
+Include all three fields. Replace <scored integer> with one integer from -50 to +5 selected from the scoring rule above; never copy a sample score or default to 0.
 Types: narration/dialogue. segments must contain at least one item with non-empty text. Expressions: ${compactGalleryExpressions}. ${expressionAffinityGuidance} No single text field.
 ===CACHE_BOUNDARY===
 ${compactGalleryState}`;
@@ -2398,8 +2398,8 @@ ${livingInitiativeRule}
 ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}
 ${affinityRelationshipGuard}
-JSON만 출력: {"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":-1}
-세 필드를 모두 넣으세요. affinity는 -50~+5의 정수이며, 0을 관성적으로 넣지 말고 위 판정 기준에 따라 고르세요.
+다음 형태의 JSON만 출력: {"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":<판정한 정수>}
+세 필드를 모두 넣고 <판정한 정수>를 위 기준으로 고른 -50~+5의 정수 하나로 바꾸세요. 예시 점수를 복사하거나 0을 관성적으로 넣지 마세요.
 허용 type: narration, dialogue. segments에는 빈 문자열이 아닌 항목을 하나 이상 넣습니다. 허용 expression: ${compactGalleryExpressions}. ${expressionAffinityGuidance} text 단일 필드는 쓰지 마세요.
 ===CACHE_BOUNDARY===
 ${compactGalleryState}`;
