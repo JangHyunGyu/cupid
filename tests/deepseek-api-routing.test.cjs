@@ -25,7 +25,7 @@ function jsonResponse(status, body) {
     };
 }
 
-test('Cupid tools use Qwen 3.7 Flash as the primary route', async () => {
+test('Cupid tools use OpenRouter DeepSeek V4 Flash 0731 as the primary route', async () => {
     const calls = [];
     const text = await callDeepSeek('hello', {
         openRouterApiKey: 'or-test',
@@ -39,19 +39,19 @@ test('Cupid tools use Qwen 3.7 Flash as the primary route', async () => {
     assert.equal(calls.length, 1);
     assert.equal(calls[0].url, OPENROUTER_ENDPOINT);
     assert.equal(calls[0].body.model, OPENROUTER_MODEL);
-    assert.equal(calls[0].body.model, OPENROUTER_QWEN_MODEL);
+    assert.equal(calls[0].body.model, OPENROUTER_DEEPSEEK_MODEL);
     assert.deepEqual(calls[0].body.provider, {
-        order: ['alibaba'],
-        only: ['alibaba'],
+        order: ['deepinfra'],
+        only: ['deepinfra'],
         allow_fallbacks: false,
     });
     assert.deepEqual(calls[0].body.reasoning, { effort: 'none', exclude: true });
     assert.equal(calls[0].body.include_reasoning, false);
-    assert.equal('thinking' in calls[0].body, false);
+    assert.deepEqual(calls[0].body.thinking, { type: 'disabled' });
     assert.equal(normalizeOpenRouterModel('deepseek-v4-flash'), OPENROUTER_DEEPSEEK_MODEL);
 });
 
-test('Cupid JSON tools use Qwen JSON mode', async () => {
+test('Cupid JSON tools use DeepSeek JSON mode', async () => {
     const calls = [];
     const text = await callDeepSeek('hello', {
         openRouterApiKey: 'or-test',
@@ -66,9 +66,10 @@ test('Cupid JSON tools use Qwen JSON mode', async () => {
     assert.equal(text, '{"ok":true}');
     assert.deepEqual(calls[0].body.response_format, { type: 'json_object' });
     assert.equal('tools' in calls[0].body, false);
+    assert.deepEqual(calls[0].body.thinking, { type: 'disabled' });
 });
 
-test('Cupid tools fall back to OpenRouter DeepSeek V4 0731', async () => {
+test('Cupid tools fall back to OpenRouter Qwen 3.7 Flash', async () => {
     const calls = [];
     const text = await callDeepSeek('hello', {
         openRouterApiKey: 'or-test',
@@ -82,10 +83,10 @@ test('Cupid tools fall back to OpenRouter DeepSeek V4 0731', async () => {
 
     assert.equal(text, 'fallback-ok');
     assert.deepEqual(calls.map(call => call.url), [OPENROUTER_ENDPOINT, OPENROUTER_ENDPOINT]);
-    assert.deepEqual(calls.map(call => call.body.model), [OPENROUTER_MODEL, OPENROUTER_DEEPSEEK_MODEL]);
+    assert.deepEqual(calls.map(call => call.body.model), [OPENROUTER_MODEL, OPENROUTER_QWEN_MODEL]);
     assert.deepEqual(calls[1].body.provider, {
-        order: ['deepinfra'],
-        only: ['deepinfra'],
+        order: ['alibaba'],
+        only: ['alibaba'],
         allow_fallbacks: false,
     });
 });
