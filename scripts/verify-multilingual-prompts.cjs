@@ -499,6 +499,14 @@ assert(typeof getQualityIssue === 'function', 'Cupid roleplay output validator i
 
 const issueCodes = (parsed, lang, charKey) => getQualityIssue(parsed, { lang, charKey }).issues;
 assert(issueCodes({
+    text: '{"Yuna pauses.":""}',
+    segments: [{ type: 'dialogue', text: '{"Yuna pauses.":""}' }]
+}, 'en', 'Yuna').includes('visible_json_protocol_artifact'), 'Nested JSON visible text was not rejected');
+assert(issueCodes({
+    text: '{"segments":[{"type":"dialogue","text":"cut off"}',
+    segments: [{ type: 'dialogue', text: '{"segments":[{"type":"dialogue","text":"cut off"}' }]
+}, 'en', 'Yuna').includes('visible_json_protocol_artifact'), 'Malformed JSON protocol text was not rejected');
+assert(issueCodes({
     text: 'Looking past you, Yuna closes the door.',
     segments: [{ type: 'narration', text: 'Looking past you, Yuna closes the door.' }]
 }, 'en', 'Yuna').includes('narration_player_point_of_view'), 'English narration second person was not rejected');
@@ -622,6 +630,10 @@ assert(context.window.buildCupidRoleplayQualityRepairBlock({
     reason: awakeStateIssue.reason,
     issues: awakeStateIssue.issues
 }, 'ko', 'Yuna').includes('already awake'), 'Awake-state repair instruction is missing');
+assert(context.window.buildCupidRoleplayQualityRepairBlock({
+    reason: 'visible_json_protocol_artifact',
+    issues: ['visible_json_protocol_artifact']
+}, 'en', 'Yuna').includes('Never place another JSON object'), 'Nested JSON repair instruction is missing');
 const recoverQualityFallback = context.window.recoverCupidRoleplayQualityFallback;
 assert(typeof recoverQualityFallback === 'function', 'Cupid roleplay quality fallback recovery is missing');
 const recoveredRepeatedReply = recoverQualityFallback({

@@ -487,6 +487,58 @@
         return null;
     }
 
+    function normalizeVisibleProtocolSource(value, depth = 0) {
+        if (depth > 2) return String(value || '').trim();
+        let source = String(value || '').trim();
+        if (!source) return '';
+        const fenced = source.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/i);
+        if (fenced) source = fenced[1].trim();
+        if (/^"[\s\S]*"$/.test(source)) {
+            try {
+                const decoded = JSON.parse(source);
+                if (typeof decoded === 'string') return normalizeVisibleProtocolSource(decoded, depth + 1);
+            } catch {
+                // Keep the original source for malformed-protocol detection.
+            }
+        }
+        return source;
+    }
+
+    function getVisibleProtocolIssue(payload = {}) {
+        const visibleTexts = [];
+        if (typeof payload?.text === 'string') visibleTexts.push({ path: 'text', value: payload.text });
+        if (Array.isArray(payload?.segments)) {
+            payload.segments.forEach((segment, index) => {
+                if (typeof segment?.text === 'string') {
+                    visibleTexts.push({ path: `segments[${index}].text`, value: segment.text });
+                }
+            });
+        }
+
+        for (const item of visibleTexts) {
+            const original = String(item.value || '').trim();
+            if (!original) continue;
+            const source = normalizeVisibleProtocolSource(original);
+            if (!source) continue;
+            if (/^```(?:json)?\b/i.test(original)) {
+                return { reason: 'json_code_fence', path: item.path };
+            }
+            if (/^[\[{]/.test(source)) {
+                try {
+                    const parsed = JSON.parse(source);
+                    if (parsed && typeof parsed === 'object') {
+                        return { reason: 'embedded_json_value', path: item.path };
+                    }
+                } catch {
+                    if (/\\?"(?:segments|sceneMessages|conversations|text|expression|affinity|dialogue|narration|content)\\?"\s*:/i.test(source)) {
+                        return { reason: 'malformed_json_protocol', path: item.path };
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
     function findRepeatedReplyFragments(assistantTexts = [], latestUserText = '') {
         const normalizedLatestUser = normalizeRepetitionText(latestUserText);
         const documentCounts = new Map();
@@ -693,6 +745,7 @@ Latest user: """${excerpt}"""
         buildRecentExpressionRepetitionGuard,
         isNearDuplicateReply,
         normalizeCupidResponsePayload,
+        getVisibleProtocolIssue,
         sanitizeLatestUserText,
         truncateLatestUserText,
         findLatestUserText,

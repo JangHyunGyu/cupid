@@ -80,6 +80,30 @@ test('game and gallery affinity paths share the core normalizer', () => {
     assert.match(read('assets/js/gallery-freetalk.js'), /normalizeAvailableExpression/);
 });
 
+test('visible payload guard blocks nested or malformed JSON protocol text', () => {
+    assert.equal(
+        core.getVisibleProtocolIssue({
+            segments: [{ type: 'dialogue', text: '{"segments":[{"type":"dialogue","text":"Still here."}]}' }]
+        }).reason,
+        'embedded_json_value'
+    );
+    assert.equal(
+        core.getVisibleProtocolIssue({ text: '{"Yuna pauses.":""}' }).reason,
+        'embedded_json_value'
+    );
+    assert.equal(
+        core.getVisibleProtocolIssue({ text: '{"segments":[{"type":"dialogue","text":"cut off"}' }).reason,
+        'malformed_json_protocol'
+    );
+    assert.equal(
+        core.getVisibleProtocolIssue({
+            text: 'Yuna pauses, then looks up.',
+            segments: [{ type: 'narration', text: 'Yuna pauses, then looks up.' }]
+        }),
+        null
+    );
+});
+
 test('gallery incident timing is turn-based with a 15-turn guard and 40-turn ceiling', () => {
     assert.equal(core.getGalleryIncidentTriggerChance(14), 0);
     assert.equal(core.getGalleryIncidentTriggerChance(15), 0.05);

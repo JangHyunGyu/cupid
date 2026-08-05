@@ -1281,6 +1281,10 @@ function getCupidRoleplayQualityIssue(parsed = {}, {
     const combinedText = visibleTexts.join('\n');
     const issues = [];
 
+    if (window.CupidFreeTalkCore?.getVisibleProtocolIssue?.(parsed)) {
+        issues.push('visible_json_protocol_artifact');
+    }
+
     if (combinedText.includes('\uFFFD')) {
         issues.push('unicode_replacement_character');
     }
@@ -1433,6 +1437,9 @@ function buildCupidRoleplayQualityRepairBlock(issue = {}, lang = 'ko', charKey =
             : '',
         issueSet.has('latest_user_awake_state_contradiction')
             ? 'The user character is already awake in the latest turn. Do not describe them as still sleeping or waiting to wake; continue from their awake state.'
+            : '',
+        issueSet.has('visible_json_protocol_artifact')
+            ? 'Put roleplay prose directly inside segments[].text. Never place another JSON object, array, schema, code fence, or key/value wrapper inside a visible text field.'
             : '',
         characterCanon,
         lang === 'de' ? 'Use the idiom “jemandem standhalten”; when gaze is meant, write “hält seinem/deinem Blick stand”, never “hält deinem stand”.' : '',
