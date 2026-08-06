@@ -315,12 +315,50 @@ test('gallery incident prompt delegates specifics to AI without inventing user a
     assert.match(block, /강요할 거야/);
 });
 
+test('scheduled and active gallery incidents cannot commit without their required payload', () => {
+    const state = core.normalizeGalleryIncidentState({ completedTurns: 29, quietTurns: 29 });
+    const plan = core.planGalleryIncident(state, 0.99, 0.5);
+    assert.equal(plan.category, 'conflict');
+    assert.deepEqual(
+        Array.from(core.getGalleryIncidentContractIssue({ state, plan, payload: null }).issues),
+        ['scheduled_gallery_incident_payload_missing']
+    );
+    assert.equal(core.getGalleryIncidentContractIssue({
+        state,
+        plan,
+        payload: { status: 'started', summary: '약속의 해석을 두고 충돌이 시작됐다.', impact: -7 }
+    }).shouldRetry, false);
+
+    const activeState = core.normalizeGalleryIncidentState({
+        completedTurns: 30,
+        quietTurns: 0,
+        activeIncident: {
+            category: 'conflict',
+            summary: '해결되지 않은 약속 갈등',
+            startedAtTurn: 30,
+            turns: 1
+        }
+    });
+    assert.deepEqual(
+        Array.from(core.getGalleryIncidentContractIssue({ state: activeState, payload: { status: 'started' } }).issues),
+        ['active_gallery_incident_payload_missing']
+    );
+    assert.equal(core.getGalleryIncidentContractIssue({
+        state: activeState,
+        payload: { status: 'ongoing', summary: '두 사람이 조건을 좁혔지만 아직 합의하지 못했다.' }
+    }).shouldRetry, false);
+});
+
 test('gallery runtime wires incident planning, persistence, and AI payload parsing', () => {
     const gallery = read('assets/js/gallery-freetalk.js');
+    const prompts = read('assets/js/prompts.js');
     const progress = read('assets/js/gallery-progress.js');
     assert.match(gallery, /_prepareGalleryIncidentRuntime/);
     assert.match(gallery, /_commitGalleryIncidentTurn/);
     assert.match(gallery, /normalizeGalleryIncidentPayload\(parsed\.incident\)/);
+    assert.match(gallery, /incidentState: requestContext\.incidentRuntime\?\.state/);
+    assert.match(prompts, /scheduled_gallery_incident_payload_missing/);
+    assert.match(prompts, /active_gallery_incident_payload_missing/);
     assert.match(progress, /getGalleryIncidentState\(charId\)/);
     assert.match(progress, /setGalleryIncidentState\(charId, state\)/);
     assert.match(gallery, /buildRelationshipAftermathBlock/);

@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.52';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.53';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 const GalleryFreeTalkCore = window.CupidFreeTalkCore;
@@ -1162,14 +1162,20 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
             this._assertRequestContext(requestContext, data);
             let parsed = this._parseResponse(reply);
+            const roleplayQualityOptions = {
+                lang: this.lang,
+                charKey: requestCharKey || requestCharId,
+                recentMessages: _optimized,
+                latestUserText: finalContent,
+                incidentState: requestContext.incidentRuntime?.state || null,
+                incidentPlan: requestContext.incidentRuntime?.plan || null
+            };
 
             for (let repairAttempt = 0; repairAttempt < 2; repairAttempt += 1) {
-                const qualityIssue = window.getCupidRoleplayQualityIssue?.(parsed, {
-                    lang: this.lang,
-                    charKey: requestCharKey || requestCharId,
-                    recentMessages: _optimized,
-                    latestUserText: finalContent
-                });
+                const qualityIssue = window.getCupidRoleplayQualityIssue?.(
+                    parsed,
+                    roleplayQualityOptions
+                );
                 if (!qualityIssue?.shouldRetry) break;
 
                 console.warn('[Cupid GalleryFreeTalk] Rejected roleplay draft; regenerating before display', qualityIssue);
@@ -1196,30 +1202,24 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 parsed = this._parseResponse(reply);
             }
 
-            let finalQualityIssue = window.getCupidRoleplayQualityIssue?.(parsed, {
-                lang: this.lang,
-                charKey: requestCharKey || requestCharId,
-                recentMessages: _optimized,
-                latestUserText: finalContent
-            });
+            let finalQualityIssue = window.getCupidRoleplayQualityIssue?.(
+                parsed,
+                roleplayQualityOptions
+            );
             if (finalQualityIssue?.shouldRetry) {
-                const recovered = window.recoverCupidRoleplayQualityFallback?.(parsed, {
-                    lang: this.lang,
-                    charKey: requestCharKey || requestCharId,
-                    recentMessages: _optimized,
-                    latestUserText: finalContent
-                });
+                const recovered = window.recoverCupidRoleplayQualityFallback?.(
+                    parsed,
+                    roleplayQualityOptions
+                );
                 if (recovered) {
                     console.warn('[Cupid GalleryFreeTalk] Kept the valid response segments after quality retries were exhausted', recovered.qualityRecovery);
                     parsed = recovered;
                     finalQualityIssue = recovered.qualityRecovery?.acceptedAfterRetries
                         ? null
-                        : window.getCupidRoleplayQualityIssue?.(parsed, {
-                            lang: this.lang,
-                            charKey: requestCharKey || requestCharId,
-                            recentMessages: _optimized,
-                            latestUserText: finalContent
-                        });
+                        : window.getCupidRoleplayQualityIssue?.(
+                            parsed,
+                            roleplayQualityOptions
+                        );
                 }
             }
             if (finalQualityIssue?.shouldRetry) {

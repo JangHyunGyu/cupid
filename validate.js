@@ -1857,11 +1857,11 @@ try {
     const activePromptSources = [promptsContent, ftCoreContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
-    if (promptVersion !== '2.7.49') {
-        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.49가 아님: ' + promptVersion);
+    if (promptVersion !== '2.7.50') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.50이 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.52') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.52가 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.53') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.53이 아님: ' + galleryPromptVersion);
     }
     const galleryProgressContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-progress.js'), 'utf8');
     const galleryLoaderAffinityContent = fs.readFileSync(path.join(__dirname, 'assets/js/loaders/gallery-loader.js'), 'utf8');

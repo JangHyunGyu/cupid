@@ -1307,7 +1307,9 @@ function getCupidRoleplayQualityIssue(parsed = {}, {
     lang = 'ko',
     charKey = '',
     recentMessages = [],
-    latestUserText = ''
+    latestUserText = '',
+    incidentState = null,
+    incidentPlan = null
 } = {}) {
     const text = String(parsed?.text || '');
     const segments = Array.isArray(parsed?.segments) ? parsed.segments : [];
@@ -1319,6 +1321,15 @@ function getCupidRoleplayQualityIssue(parsed = {}, {
 
     if (window.CupidFreeTalkCore?.getVisibleProtocolIssue?.(parsed)) {
         issues.push('visible_json_protocol_artifact');
+    }
+
+    const incidentContractIssue = window.CupidFreeTalkCore?.getGalleryIncidentContractIssue?.({
+        state: incidentState || {},
+        plan: incidentPlan,
+        payload: parsed?.incident
+    });
+    if (incidentContractIssue?.shouldRetry) {
+        issues.push(...incidentContractIssue.issues);
     }
 
     if (combinedText.includes('\uFFFD')) {
@@ -1476,6 +1487,12 @@ function buildCupidRoleplayQualityRepairBlock(issue = {}, lang = 'ko', charKey =
             : '',
         issueSet.has('visible_json_protocol_artifact')
             ? 'Put roleplay prose directly inside segments[].text. Never place another JSON object, array, schema, code fence, or key/value wrapper inside a visible text field.'
+            : '',
+        issueSet.has('scheduled_gallery_incident_payload_missing')
+            ? 'A gallery relationship incident is scheduled for this response. Begin the concrete scheduled incident now, do not resolve it immediately, and include the exact required top-level incident object with status="started", a factual summary, impact, and severity when the scheduled category is crisis.'
+            : '',
+        issueSet.has('active_gallery_incident_payload_missing')
+            ? 'A gallery relationship incident is already active. Continue that same incident and include the exact required top-level incident object with status="ongoing" or "resolved" plus an updated factual summary.'
             : '',
         characterCanon,
         lang === 'de' ? 'Use the idiom “jemandem standhalten”; when gaze is meant, write “hält seinem/deinem Blick stand”, never “hält deinem stand”.' : '',
@@ -1681,5 +1698,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 };
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.49';
+const PROMPT_VERSION = '2.7.50';
 window.PROMPT_VERSION = PROMPT_VERSION;

@@ -371,6 +371,30 @@
         };
     }
 
+    function getGalleryIncidentContractIssue({ state: rawState = {}, plan = null, payload = null } = {}) {
+        const state = normalizeGalleryIncidentState(rawState);
+        const incidentPayload = normalizeGalleryIncidentPayload(payload);
+        const plannedCategory = normalizeGalleryIncidentCategory(plan?.category);
+        const issues = [];
+
+        if (state.activeIncident) {
+            const hasContinuationPayload = incidentPayload?.summary
+                && ['ongoing', 'resolved'].includes(incidentPayload.status);
+            if (!hasContinuationPayload) issues.push('active_gallery_incident_payload_missing');
+        } else if (plannedCategory) {
+            const hasStartPayload = incidentPayload?.status === 'started'
+                && incidentPayload.summary
+                && (plannedCategory !== 'crisis' || incidentPayload.severity);
+            if (!hasStartPayload) issues.push('scheduled_gallery_incident_payload_missing');
+        }
+
+        return {
+            shouldRetry: issues.length > 0,
+            reason: issues.join(','),
+            issues
+        };
+    }
+
     function updateGalleryIncidentEvidence(value, affinityChange, latestUserText = '') {
         const state = normalizeGalleryIncidentState(value);
         const amount = normalizeAffinityChange(affinityChange);
@@ -917,6 +941,7 @@ Latest user: """${excerpt}"""
         planGalleryIncident,
         normalizeGalleryIncidentImpact,
         normalizeGalleryIncidentPayload,
+        getGalleryIncidentContractIssue,
         updateGalleryIncidentEvidence,
         buildGalleryIncidentRuntimeBlock
     });
