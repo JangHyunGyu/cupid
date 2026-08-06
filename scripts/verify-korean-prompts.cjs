@@ -13,7 +13,8 @@ const CHARACTERS = [
 const REQUIRED_BLOCKS = [
     '[한국어 원문체]',
     '[자연스러운 한국어 말투]',
-    '[캐릭터 문체]'
+    '[캐릭터 문체]',
+    '[합의된 성인 역할극]'
 ];
 const REQUIRED_NATURAL_KOREAN_RULES = [
     '한국어에서 문맥상 분명한 주어·대명사·호칭은 자연스럽게 생략하세요.',
@@ -160,6 +161,12 @@ function assertCommonKoreanPrompt(prompt, label) {
         `${label} emotional intensity no longer preserves reserved character voices`);
     assert(stablePrompt.includes('매 답변을 감정의 절정으로 만들지는 않습니다.'),
         `${label} emotional-range rule can still force constant melodrama`);
+    assert(stablePrompt.includes('그 합의 안에서 연출하는 저항·강압적 말투·힘의 차이·전투·폭력은 장면 안의 연기로 받습니다.'),
+        `${label} consensual adult roleplay no longer preserves agreed in-scene resistance`);
+    assert(stablePrompt.includes('OOC 중단, 합의된 안전어, 명시적인 동의 철회, 의식 상실, 합의 범위를 벗어난 실제 위험은 우선 반영해 즉시 장면을 바꾸거나 멈춥니다.'),
+        `${label} consensual adult roleplay no longer preserves real stop and safety signals`);
+    assert(stablePrompt.includes('모든 행동에 포괄적으로 동의했다고 여기지 않습니다.'),
+        `${label} consensual adult roleplay can still become blanket consent`);
     assert(prompt.includes('[성인 장면의 목소리]'), `${label} is missing the conditional adult vocalization rule`);
     assert(prompt.includes('몸이 통제를 놓는 순간에는 과장될 만큼 크고 거친 신음도 허용합니다.'),
         `${label} still suppresses strong character vocalization at high stimulation`);

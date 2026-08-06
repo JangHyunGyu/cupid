@@ -90,6 +90,22 @@ const livingInitiativeSignals = {
     de: '[Eigeninitiative einer lebendigen Figur]',
     pt: '[Iniciativa de uma pessoa viva]'
 };
+const consensualAdultRoleplaySignals = {
+    en: '[Consensual Adult Roleplay]',
+    es: '[Roleplay consensuado entre adultos]',
+    ja: '[成人同士で合意したロールプレイ]',
+    fr: '[Jeu de rôle consensuel entre adultes]',
+    de: '[Einvernehmliches Rollenspiel unter Erwachsenen]',
+    pt: '[Roleplay consensual entre adultos]'
+};
+const consensualAdultSafetySignals = {
+    en: ['agreed safeword', 'never create blanket consent'],
+    es: ['palabra de seguridad acordada', 'nunca constituyen consentimiento general'],
+    ja: ['合意したセーフワード', '包括的な同意にはなりません'],
+    fr: ['mot de sécurité convenu', 'ne constituent jamais un consentement général'],
+    de: ['vereinbartes Safeword', 'begründen niemals eine pauschale Zustimmung'],
+    pt: ['palavra de segurança combinada', 'nunca constituem consentimento geral']
+};
 const briefContinuationSignals = {
     en: '[The Latest Input Is a Brief Continue Signal]',
     es: '[La última entrada es una señal breve para continuar]',
@@ -327,6 +343,9 @@ for (const lang of languages) {
             `[${lang}/${char}] main prompt is missing the emotional-range rule`);
         assert(systemPrompt.includes(livingInitiativeSignals[lang]),
             `[${lang}/${char}] main prompt is missing living initiative`);
+        assert(systemPrompt.includes(consensualAdultRoleplaySignals[lang])
+            && consensualAdultSafetySignals[lang].every(signal => systemPrompt.includes(signal)),
+            `[${lang}/${char}] main prompt is missing consensual-roleplay safety distinctions`);
         assert(!systemPrompt.includes('[CURRENT_PROGRESS]') && !systemPrompt.includes('; turns='),
             `[${lang}/${char}] main prompt still exposes a turn budget`);
         assert(systemPrompt.includes('[Shared cast knowledge]'),
@@ -385,6 +404,8 @@ for (const lang of languages) {
         `[${lang}] main stable cache prefix changes with per-turn state`);
     assert(mainBaseParts.stable.includes('Addressing:') && mainBaseParts.stable.includes('Distance/interaction:'),
         `[${lang}] main static character guidance is not ahead of the cache boundary`);
+    assert(mainBaseParts.stable.includes(consensualAdultRoleplaySignals[lang]),
+        `[${lang}] main consensual-roleplay guidance is not in the stable prefix`);
     for (const signal of [
         'CACHE_DYNAMIC_ROOM', 'CACHE_DYNAMIC_CONTEXT', 'CACHE_DYNAMIC_MEMORY',
         'CACHE_DYNAMIC_SOCIAL', 'CACHE_DYNAMIC_USER', '-77'
@@ -444,6 +465,9 @@ for (const lang of languages) {
             `[${lang}/${char}] gallery prompt is missing the emotional-range rule`);
         assert(systemPrompt.includes(livingInitiativeSignals[lang]),
             `[${lang}/${char}] gallery prompt is missing living initiative`);
+        assert(systemPrompt.includes(consensualAdultRoleplaySignals[lang])
+            && consensualAdultSafetySignals[lang].every(signal => systemPrompt.includes(signal)),
+            `[${lang}/${char}] gallery prompt is missing consensual-roleplay safety distinctions`);
         assert(languageSignals[lang].test(systemPrompt), `[${lang}/${char}] gallery prompt lacks target-language anchors`);
         assert(systemPrompt.includes('[Shared cast knowledge]'),
             `[${lang}/${char}] gallery prompt is missing shared cast knowledge`);
@@ -463,6 +487,8 @@ for (const lang of languages) {
     const galleryDynamicVariant = gallery._buildSystemPrompt('seyoun');
     const galleryBaseParts = splitCacheBoundary(galleryCacheBaseline, `[${lang}] gallery cache baseline`);
     const galleryVariantParts = splitCacheBoundary(galleryDynamicVariant, `[${lang}] gallery cache dynamic variant`);
+    assert(galleryBaseParts.stable.includes(consensualAdultRoleplaySignals[lang]),
+        `[${lang}] gallery consensual-roleplay guidance is not in the stable prefix`);
     assert(galleryBaseParts.stable === galleryVariantParts.stable,
         `[${lang}] gallery stable cache prefix changes with the player name`);
     assert(!galleryBaseParts.stable.includes('Alex')

@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.50';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.51';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 const GalleryFreeTalkCore = window.CupidFreeTalkCore;
@@ -41,7 +41,7 @@ Jedes narration-Segment steht in der dritten Person. Für die Figur werden Name,
         pt: `[Câmera narrativa em terceira pessoa]
 Toda narration usa terceira pessoa. Para a personagem, use o nome, um título de relação ou ele/ela; para o usuário, o nome salvo, “a outra pessoa” ou “o/a parceiro/a”. “Você”, “te”, “ti”, “seu/sua/seus/suas” só podem aparecer em dialogue realmente falado, nunca em narration. A narration pode mostrar livremente ações, sensações físicas, desejos e reações internas da personagem, além de inferir ou narrar de modo natural a reação, emoção ou pensamento do usuário a partir das palavras, ações e do contexto da cena. Essa inferência permanece compatível com qualquer estado, escolha, consentimento ou recusa que o usuário declare explicitamente na entrada atual. Quando uma cena íntima já estabelecida entre adultos entra em um ato sexual, a câmera não desvia: narration mostra de forma concreta contato, posição, ritmo, pressão, fricção, umidade, calor, sons, expressão e mudanças de prazer. Se genitais, penetração, fluidos de excitação, sêmen ou orgasmo estiverem presentes, não os apague com eufemismos nem os omita. Apenas palavras e sons realmente vocalizados ficam em dialogue.`
     };
-    return `${rules[lang] || rules.en}\n\n${window.buildCupidEmotionalRangeRule(lang)}\n\n${window.buildCupidAdultVocalizationRule(lang)}`;
+    return `${rules[lang] || rules.en}\n\n${window.buildCupidConsensualAdultRoleplayRule(lang)}\n\n${window.buildCupidEmotionalRangeRule(lang)}\n\n${window.buildCupidAdultVocalizationRule(lang)}`;
 }
 
 const normalizeGalleryPromptBlockForCache = GalleryFreeTalkCore.normalizePromptBlockForCache;
