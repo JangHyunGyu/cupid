@@ -1857,11 +1857,11 @@ try {
     const activePromptSources = [promptsContent, ftCoreContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
-    if (promptVersion !== '2.7.48') {
-        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.48이 아님: ' + promptVersion);
+    if (promptVersion !== '2.7.49') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.49가 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.51') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.51이 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.52') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.52가 아님: ' + galleryPromptVersion);
     }
     const galleryProgressContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-progress.js'), 'utf8');
     const galleryLoaderAffinityContent = fs.readFileSync(path.join(__dirname, 'assets/js/loaders/gallery-loader.js'), 'utf8');
@@ -1940,11 +1940,17 @@ try {
         }
     }
     for (const [label, source] of [['main', promptsContent], ['gallery', gftContent]]) {
-        if (!source.includes('짧거나 수동적')
-            || !source.includes('brief or passive')
-            || !source.includes('제안·예고·허락')
-            || !source.includes('proposal, preview, or permission')) {
-            errors.push('[FREETALK_PROMPT] ' + label + ' 짧은 입력 선제 진행 계약 누락');
+        if (!source.includes('Scene facts:')
+            || !source.includes('장면 사실:')
+            || !source.includes('Perspective:')
+            || !source.includes('시점:')) {
+            errors.push('[FREETALK_PROMPT] ' + label + ' 장면 사실·시점 구획 누락');
+        }
+        if (source.includes('Even when the input is brief or passive')
+            || source.includes('On brief or passive input')
+            || source.includes('입력이 짧거나 수동적이어도')
+            || source.includes('짧거나 수동적인 입력에도')) {
+            errors.push('[FREETALK_PROMPT] ' + label + ' 평상시 장면 블록이 동적 짧은 입력 규칙과 중복됨');
         }
     }
     if (!promptsContent.includes('function buildCupidLivingInitiativeRule(')

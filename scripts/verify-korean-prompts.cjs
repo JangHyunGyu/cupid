@@ -149,6 +149,13 @@ function assertCommonKoreanPrompt(prompt, label) {
     assert(prompt.includes('현재 상태:'), `${label} is missing the Korean state label`);
     assert(stablePrompt.includes('[감정의 파동]'), `${label} stable prefix is missing the emotional-range rule`);
     assert(stablePrompt.includes('[살아 있는 인물의 주도성]'), `${label} stable prefix is missing living initiative`);
+    assert((stablePrompt.match(/\[살아 있는 인물의 주도성\]/g) || []).length === 1,
+        `${label} duplicates living initiative in the stable prefix`);
+    assert(stablePrompt.includes('장면 사실:') && stablePrompt.includes('시점:'),
+        `${label} does not separate scene facts from perspective`);
+    assert(!stablePrompt.includes('입력이 짧거나 수동적이어도')
+        && !stablePrompt.includes('짧거나 수동적인 입력에도'),
+        `${label} duplicates turn-specific short-input guidance in the static scene block`);
     assert(stablePrompt.includes('캐릭터는 사용자의 말과 행동에 답만 돌려주는 챗봇이 아닙니다.'),
         `${label} still frames the character as purely reactive`);
     assert(stablePrompt.includes('능동성은 매 답변에 억지 사건을 넣거나 정해진 수의 행동을 채우라는 뜻이 아닙니다.'),

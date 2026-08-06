@@ -343,6 +343,13 @@ for (const lang of languages) {
             `[${lang}/${char}] main prompt is missing the emotional-range rule`);
         assert(systemPrompt.includes(livingInitiativeSignals[lang]),
             `[${lang}/${char}] main prompt is missing living initiative`);
+        assert((systemPrompt.match(/\[Living Initiative\]|\[Iniciativa de una persona viva\]|\[生きた人物としての主体性\]|\[Initiative d’un personnage vivant\]|\[Eigeninitiative einer lebendigen Figur\]|\[Iniciativa de uma pessoa viva\]/g) || []).length === 1,
+            `[${lang}/${char}] main prompt duplicates living initiative`);
+        assert(systemPrompt.includes('Scene facts:') && systemPrompt.includes('Perspective:'),
+            `[${lang}/${char}] main prompt does not separate scene facts from perspective`);
+        assert(!systemPrompt.includes('Even when the input is brief or passive')
+            && !systemPrompt.includes('On brief or passive input'),
+            `[${lang}/${char}] main prompt duplicates turn-specific short-input guidance`);
         assert(systemPrompt.includes(consensualAdultRoleplaySignals[lang])
             && consensualAdultSafetySignals[lang].every(signal => systemPrompt.includes(signal)),
             `[${lang}/${char}] main prompt is missing consensual-roleplay safety distinctions`);
