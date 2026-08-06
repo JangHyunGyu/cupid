@@ -267,7 +267,7 @@ const C = {
   }
 };
 
-// 페이지 정의: { slug, h1, title, meta, intro }
+// 페이지 정의: { slug, h1, title, meta, intro, intentSection?, faqs? }
 const PAGES = {
   ko: [
     {
@@ -280,10 +280,10 @@ const PAGES = {
     },
     {
       slug: 'web-misinsi',
-      h1: '웹 미연시 — 설치 없이 바로 즐기는 Cupid',
-      title: '웹 미연시 무료 플레이 | 브라우저 미연시 Cupid',
-      meta: '웹 미연시를 찾는다면 Cupid를 브라우저에서 바로 플레이하세요. 설치·다운로드 없이 한국어 학원 로맨스, 선택지, 멀티 엔딩을 무료로 즐길 수 있습니다.',
-      intro: '"웹 미연시"는 앱 설치보다 빠르게 시작할 수 있어야 합니다. Cupid는 링크를 열면 바로 시작되는 브라우저 미연시로, 전학 첫날부터 5일간 이어지는 학원 로맨스와 선택지 분기를 제공합니다.'
+      h1: '미연시 사이트 — 설치 없이 바로 즐기는 Cupid',
+      title: '미연시 사이트 | 웹 미연시 Cupid 무료 플레이',
+      meta: '미연시 사이트를 찾는다면 웹 미연시 Cupid를 바로 플레이하세요. 설치·다운로드 없이 한국어 학원 로맨스, 선택지, 멀티 엔딩을 무료로 즐길 수 있습니다.',
+      intro: '"미연시 사이트"에서 바로 플레이하고 싶다면 앱이나 설치 파일을 거칠 필요가 없습니다. Cupid는 링크를 열면 시작되는 웹 미연시로, 전학 첫날부터 5일간 이어지는 학원 로맨스와 선택지 분기를 제공합니다.'
     },
     {
       slug: 'muryo-misinsi',
@@ -309,9 +309,17 @@ const PAGES = {
     {
       slug: 'browser-misinsi',
       h1: '브라우저 미연시 — 설치 없이 PC·모바일에서 바로',
-      title: '브라우저 미연시 추천 | 무설치 한글 미연시 모음 2026',
-      meta: '브라우저에서 바로 돌아가는 한글 미연시 추천 모음. 다운로드/설치 없이 PC와 모바일에서 동일하게 진행되는 무료 멀티 엔딩 로맨스 VN.',
-      intro: '"브라우저 미연시"는 더 이상 영어 게임만의 영역이 아닙니다. 한국어 완역, 모바일 세로 모드 최적화, 멀티 엔딩까지 — 설치 없이 링크만으로 시작하는 한글 미연시를 소개합니다.'
+      title: '브라우저 미연시 추천 | 설치 없는 Cupid 무료 플레이',
+      meta: '브라우저 야겜이나 웹 미연시를 찾는다면 Cupid를 바로 플레이하세요. 다운로드·설치 없이 PC와 모바일에서 즐기는 무료 멀티 엔딩 로맨스 VN입니다.',
+      intro: '"브라우저 야겜"이나 "웹 미연시"를 찾는 이용자에게 Cupid는 설치 없이 시작할 수 있는 스토리 중심 선택지 게임입니다. 한국어 완역, 모바일 세로 모드 최적화, 캐릭터별 멀티 엔딩을 제공합니다.',
+      intentSection: {
+        title: '무료 야겜·에로게 사이트를 찾는다면',
+        body: 'Cupid는 별도 설치 파일을 배포하는 미연시 다운로드 사이트가 아닙니다. 흔히 "미연시 다운 사이트"에서 파일을 받을 때처럼 설치 과정을 거치지 않고, 링크에서 바로 5일간의 학원 로맨스와 선택지 기반 멀티 엔딩을 즐길 수 있습니다.'
+      },
+      faqs: [
+        ['Cupid는 야겜 또는 에로게인가요?', '설치 없이 즐기는 성인 취향 연애게임을 뜻한다면 가깝지만, Cupid는 노골적인 장면만을 목적으로 한 게임이 아닙니다. 5일간의 학원 로맨스와 선택지, 멀티 엔딩이 중심인 웹 미연시입니다.'],
+        ['미연시 다운로드 사이트인가요?', '아니요. 게임 파일을 내려받는 사이트가 아니라 브라우저에서 즉시 실행하는 웹 미연시입니다. PC와 모바일 모두 별도 설치 없이 플레이할 수 있습니다.']
+      ]
     },
     {
       slug: 'mu-seolchi-yeonae-game',
@@ -601,6 +609,7 @@ function renderPage(lang, page) {
   const homeUrl = HOME[lang];
   const socialImageAlt = SOCIAL_IMAGE_ALTS[lang] || SOCIAL_IMAGE_ALTS.en;
   const relatedNavLabel = RELATED_NAV_LABELS[lang] || RELATED_NAV_LABELS.en;
+  const faqs = [...c.faqs, ...(page.faqs || [])];
   const alternateEntries = getAlternateEntries(lang, page);
   const defaultAlternate = getDefaultAlternate(alternateEntries);
 
@@ -672,7 +681,7 @@ function renderPage(lang, page) {
       {
         "@type": "FAQPage",
         "@id": `${url}#faq`,
-        "mainEntity": c.faqs.map(([q, a]) => ({
+        "mainEntity": faqs.map(([q, a]) => ({
           "@type": "Question",
           "name": q,
           "acceptedAnswer": { "@type": "Answer", "text": a }
@@ -737,8 +746,10 @@ ${altLinks ? `  ${altLinks}\n` : ''}  <meta name="robots" content="index, follow
     </header>
 
     <p class="intro">${escapeHTML(page.intro)}</p>
-
-    ${relatedLinks ? `<nav class="related" aria-label="${relatedNavLabel}">${relatedLinks}</nav>` : ''}
+${page.intentSection ? `
+    <h2>${escapeHTML(page.intentSection.title)}</h2>
+    <p>${escapeHTML(page.intentSection.body)}</p>
+` : '\n'}    ${relatedLinks ? `<nav class="related" aria-label="${relatedNavLabel}">${relatedLinks}</nav>` : ''}
 
     <div class="cta-box">
       <a class="cta" href="${homeUrl}" data-seo-cta="top" onclick="try{localStorage.setItem('cupid:language','${lang}')}catch(e){};window.sendGAEvent('seo_cta_click',{seo_slug:'${page.slug}',cta_placement:'top',link_url:'${siteUrl(homeUrl)}',transport_type:'beacon'})">${escapeHTML(c.cta)}</a>
@@ -769,7 +780,7 @@ ${altLinks ? `  ${altLinks}\n` : ''}  <meta name="robots" content="index, follow
     </div>
 
     <h2>${escapeHTML(c.faq_title)}</h2>
-    ${c.faqs.map(([q, a]) => `<details class="faq"><summary>${escapeHTML(q)}</summary><p>${escapeHTML(a)}</p></details>`).join('\n    ')}
+    ${faqs.map(([q, a]) => `<details class="faq"><summary>${escapeHTML(q)}</summary><p>${escapeHTML(a)}</p></details>`).join('\n    ')}
 
     <footer>
       <div>${escapeHTML(c.footer)}</div>
