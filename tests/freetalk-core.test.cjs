@@ -180,10 +180,19 @@ test('visible payload guard blocks nested or malformed JSON protocol text', () =
     );
 });
 
-test('chat log content follows the text that actually rendered on screen', () => {
+test('chat log preserves narration formatting after the source renders successfully', () => {
+    assert.equal(
+        core.resolveCupidAssistantLogContent('*서연이 잠시 걸음을 멈췄다.* 그래. 같이 가자.', {
+            expectedContent: '서연이 잠시 걸음을 멈췄다. 그래. 같이 가자.',
+            renderedContent: '서연이 잠시 걸음을 멈췄다.그래.같이 가자.',
+            status: 'rendered'
+        }),
+        '*서연이 잠시 걸음을 멈췄다.* 그래. 같이 가자.'
+    );
     assert.equal(
         core.resolveCupidAssistantLogContent('Expected structured response', {
-            renderedContent: 'Actually visible response'
+            renderedContent: 'Actually visible response',
+            status: 'mismatch'
         }),
         'Actually visible response'
     );

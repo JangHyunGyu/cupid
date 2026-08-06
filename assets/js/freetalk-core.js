@@ -676,10 +676,17 @@
     }
 
     function resolveCupidAssistantLogContent(assistantContent, renderReceipt = null) {
+        const formattedContent = String(assistantContent || '');
         const renderedContent = typeof renderReceipt?.renderedContent === 'string'
             ? renderReceipt.renderedContent
             : '';
-        return renderedContent.trim() ? renderedContent : String(assistantContent || '');
+        // A successful receipt proves that the formatted source reached the screen.
+        // Keep that source in D1 so narration markers and segment boundaries survive;
+        // renderedContent is DOM textContent and intentionally contains neither.
+        if (formattedContent.trim() && renderReceipt?.status === 'rendered') {
+            return formattedContent;
+        }
+        return renderedContent.trim() ? renderedContent : formattedContent;
     }
 
     function findRepeatedReplyFragments(assistantTexts = [], latestUserText = '') {
