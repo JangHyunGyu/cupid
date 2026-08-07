@@ -11,6 +11,9 @@ const {
     OPENROUTER_ENDPOINT,
     OFFICIAL_DEEPSEEK_ENDPOINT,
     OPENROUTER_MODEL,
+    OPENROUTER_GEMMA_MAX_TOKENS,
+    OPENROUTER_GEMMA_MODEL,
+    OPENROUTER_GEMMA_PROVIDER,
     OPENROUTER_DEEPSEEK_MODEL,
     OPENROUTER_NEMOTRON_MODEL,
     OPENROUTER_QWEN_MODEL,
@@ -25,7 +28,7 @@ function jsonResponse(status, body) {
     };
 }
 
-test('Cupid tools use OpenRouter DeepSeek V4 Flash 0731 as the primary route', async () => {
+test('Cupid tools use Gemma 4 31B through Venice without fallback', async () => {
     const calls = [];
     const text = await callDeepSeek('hello', {
         openRouterApiKey: 'or-test',
@@ -39,19 +42,21 @@ test('Cupid tools use OpenRouter DeepSeek V4 Flash 0731 as the primary route', a
     assert.equal(calls.length, 1);
     assert.equal(calls[0].url, OPENROUTER_ENDPOINT);
     assert.equal(calls[0].body.model, OPENROUTER_MODEL);
-    assert.equal(calls[0].body.model, OPENROUTER_DEEPSEEK_MODEL);
+    assert.equal(calls[0].body.model, OPENROUTER_GEMMA_MODEL);
     assert.deepEqual(calls[0].body.provider, {
-        order: ['deepinfra'],
-        only: ['deepinfra'],
+        order: [OPENROUTER_GEMMA_PROVIDER],
+        only: [OPENROUTER_GEMMA_PROVIDER],
         allow_fallbacks: false,
+        require_parameters: true,
     });
     assert.deepEqual(calls[0].body.reasoning, { effort: 'none', exclude: true });
     assert.equal(calls[0].body.include_reasoning, false);
-    assert.deepEqual(calls[0].body.thinking, { type: 'disabled' });
+    assert.equal('thinking' in calls[0].body, false);
+    assert.equal(calls[0].body.max_tokens, OPENROUTER_GEMMA_MAX_TOKENS);
     assert.equal(normalizeOpenRouterModel('deepseek-v4-flash'), OPENROUTER_DEEPSEEK_MODEL);
 });
 
-test('Cupid JSON tools use DeepSeek JSON mode', async () => {
+test('Cupid JSON tools use Gemma JSON mode', async () => {
     const calls = [];
     const text = await callDeepSeek('hello', {
         openRouterApiKey: 'or-test',
@@ -66,29 +71,20 @@ test('Cupid JSON tools use DeepSeek JSON mode', async () => {
     assert.equal(text, '{"ok":true}');
     assert.deepEqual(calls[0].body.response_format, { type: 'json_object' });
     assert.equal('tools' in calls[0].body, false);
-    assert.deepEqual(calls[0].body.thinking, { type: 'disabled' });
+    assert.equal('thinking' in calls[0].body, false);
 });
 
-test('Cupid tools fall back to OpenRouter Qwen 3.7 Flash', async () => {
+test('Cupid default route does not fall back to another model or provider', async () => {
     const calls = [];
-    const text = await callDeepSeek('hello', {
+    await assert.rejects(callDeepSeek('hello', {
         openRouterApiKey: 'or-test',
         fetchImpl: async (url, init) => {
-            const body = JSON.parse(init.body);
-            calls.push({ url, body });
-            if (body.model === OPENROUTER_MODEL) return jsonResponse(503, { error: { message: 'temporary' } });
-            return jsonResponse(200, { choices: [{ message: { content: 'fallback-ok' } }] });
+            calls.push({ url, body: JSON.parse(init.body) });
+            return jsonResponse(503, { error: { message: 'temporary' } });
         },
-    });
-
-    assert.equal(text, 'fallback-ok');
-    assert.deepEqual(calls.map(call => call.url), [OPENROUTER_ENDPOINT, OPENROUTER_ENDPOINT]);
-    assert.deepEqual(calls.map(call => call.body.model), [OPENROUTER_MODEL, OPENROUTER_QWEN_MODEL]);
-    assert.deepEqual(calls[1].body.provider, {
-        order: ['alibaba'],
-        only: ['alibaba'],
-        allow_fallbacks: false,
-    });
+    }), /Text model routes exhausted/);
+    assert.equal(calls.length, 1);
+    assert.equal(calls[0].body.model, OPENROUTER_GEMMA_MODEL);
 });
 
 test('Cupid route configuration can switch to official DeepSeek or any OpenRouter model', async () => {
@@ -114,10 +110,12 @@ test('Cupid route configuration can switch to official DeepSeek or any OpenRoute
 
 test('Cupid direct tools keep model-native protocols behind isolated adapters', () => {
     const qwen = resolveTextModelAdapter({ provider: 'openrouter', model: OPENROUTER_QWEN_MODEL });
+    const gemma = resolveTextModelAdapter({ provider: 'openrouter', model: OPENROUTER_GEMMA_MODEL });
     const nemotron = resolveTextModelAdapter({ provider: 'openrouter', model: OPENROUTER_NEMOTRON_MODEL });
     const openRouterDeepSeek = resolveTextModelAdapter({ provider: 'openrouter', model: OPENROUTER_DEEPSEEK_MODEL });
     const officialDeepSeek = resolveTextModelAdapter({ provider: 'official', model: 'deepseek-v4-flash' });
     assert.equal(qwen.id, 'openrouter-qwen');
+    assert.equal(gemma.id, 'openrouter-generic');
     assert.equal(nemotron.id, 'openrouter-nemotron');
     assert.equal(openRouterDeepSeek.id, 'openrouter-deepseek');
     assert.equal(officialDeepSeek.id, 'official-deepseek');
@@ -128,6 +126,13 @@ test('Cupid direct tools keep model-native protocols behind isolated adapters', 
     assert.deepEqual(qwenPayload.reasoning, { effort: 'none', exclude: true });
     assert.deepEqual(qwenPayload.provider.only, ['alibaba']);
     assert(!('tools' in qwenPayload));
+
+    const gemmaPayload = { model: OPENROUTER_GEMMA_MODEL };
+    gemma.applyPayload(gemmaPayload, { wantsJson: true });
+    assert.deepEqual(gemmaPayload.provider.only, [OPENROUTER_GEMMA_PROVIDER]);
+    assert.equal(gemmaPayload.provider.allow_fallbacks, false);
+    assert.deepEqual(gemmaPayload.response_format, { type: 'json_object' });
+    assert.deepEqual(gemmaPayload.reasoning, { effort: 'none', exclude: true });
 
     const nemotronPayload = {};
     nemotron.applyPayload(nemotronPayload, { wantsJson: true });

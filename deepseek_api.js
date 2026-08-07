@@ -3,6 +3,9 @@ const path = require('path');
 const {
     JSON_TOOL_NAME,
     OPENROUTER_DEEPSEEK_MODEL,
+    OPENROUTER_GEMMA_MAX_TOKENS,
+    OPENROUTER_GEMMA_MODEL,
+    OPENROUTER_GEMMA_PROVIDER,
     OPENROUTER_MODEL,
     OPENROUTER_NEMOTRON_MODEL,
     OPENROUTER_QWEN_MODEL,
@@ -11,7 +14,7 @@ const {
 
 const OPENROUTER_ENDPOINT = 'https://openrouter.ai/api/v1/chat/completions';
 const OFFICIAL_DEEPSEEK_ENDPOINT = 'https://api.deepseek.com/chat/completions';
-const DEFAULT_TEXT_MODEL_ROUTES = `openrouter:${OPENROUTER_MODEL},openrouter:${OPENROUTER_QWEN_MODEL}`;
+const DEFAULT_TEXT_MODEL_ROUTES = `openrouter:${OPENROUTER_MODEL}`;
 
 const ENV_FILES = [
     path.join(__dirname, '.env'),
@@ -65,9 +68,7 @@ function resolveTextModelRoutes(options = {}) {
     const legacyModel = options.openRouterModel || process.env.OPENROUTER_MODEL;
     const configured = options.textModelRoutes
         || process.env.TEXT_MODEL_ROUTES
-        || (legacyModel
-            ? `openrouter:${legacyModel},openrouter:${OPENROUTER_DEEPSEEK_MODEL}`
-            : DEFAULT_TEXT_MODEL_ROUTES);
+        || (legacyModel ? `openrouter:${legacyModel}` : DEFAULT_TEXT_MODEL_ROUTES);
     const openRouterApiKey = options.openRouterApiKey ?? readOptionalApiKey('OPENROUTER_API_KEY');
     const deepSeekApiKey = options.deepSeekApiKey ?? readOptionalApiKey('DEEPSEEK_API_KEY');
     return parseTextModelRoutes(configured).map(route => ({
@@ -84,7 +85,9 @@ async function requestDeepSeekRoute(route, prompt, options) {
         model: route.model,
         messages: [{ role: 'user', content: prompt }],
         temperature: Number.isFinite(options.temperature) ? options.temperature : 0.2,
-        max_tokens: Number.isFinite(options.maxTokens) ? options.maxTokens : 8192,
+        max_tokens: route.model === OPENROUTER_GEMMA_MODEL
+            ? Math.min(Number.isFinite(options.maxTokens) ? options.maxTokens : OPENROUTER_GEMMA_MAX_TOKENS, OPENROUTER_GEMMA_MAX_TOKENS)
+            : (Number.isFinite(options.maxTokens) ? options.maxTokens : 8192),
     };
     adapter.applyPayload(payload, { wantsJson });
 
@@ -140,6 +143,9 @@ module.exports = {
     OPENROUTER_ENDPOINT,
     OFFICIAL_DEEPSEEK_ENDPOINT,
     OPENROUTER_MODEL,
+    OPENROUTER_GEMMA_MAX_TOKENS,
+    OPENROUTER_GEMMA_MODEL,
+    OPENROUTER_GEMMA_PROVIDER,
     OPENROUTER_NEMOTRON_MODEL,
     OPENROUTER_QWEN_MODEL,
     OPENROUTER_DEEPSEEK_MODEL,
