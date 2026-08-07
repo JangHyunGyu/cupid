@@ -3,12 +3,20 @@
 
     if (window.__cupidErrorReporterInstalled) return;
 
-    var VERSION = '20260727-offline-analytics-filter';
+    var VERSION = '20260808-legacy-browser-filter';
     var ERROR_ENDPOINT = 'https://chatbot-api.yama5993.workers.dev/error-logs';
     var QUEUE_KEY = 'cupid-error-queue-v2';
     var SESSION_KEY = 'cupid-error-session-v2';
     var MAX_QUEUE_SIZE = 100;
     var RETRY_DELAY_MS = 15000;
+    var unsupportedLegacyBrowser = /(?:MSIE\s|Trident\/|Edge\/(?:1[0-8])\.)/i.test(navigator.userAgent || '');
+    if (unsupportedLegacyBrowser) {
+        try { window.localStorage.removeItem(QUEUE_KEY); } catch (_) { /* ignore */ }
+        window.__cupidUnsupportedLegacyBrowser = true;
+        window.__cupidErrorReporterVersion = VERSION;
+        window.__cupidErrorReporterInstalled = true;
+        return;
+    }
     var pagePath = window.location.pathname || '/';
     var queue = readQueue();
     var flushing = false;
@@ -285,7 +293,7 @@
             return true;
         }
         if (tagName === 'SCRIPT'
-            && /\/assets\/js\/ga-engagement\.js(?:[?#]|$)/i.test(resource || '')) {
+            && /\/assets\/js\/(?:ga|ga-engagement)\.js(?:[?#]|$)/i.test(resource || '')) {
             return true;
         }
         return false;

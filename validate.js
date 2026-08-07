@@ -685,8 +685,12 @@ try {
         || !errorReporterContent.includes('optional, same-origin font stylesheet')) {
         errors.push('[ERROR_REPORTER] optional local Pretendard stylesheet filter missing');
     }
-    if (!errorReporterContent.includes('ga-engagement\\.js')) {
-        errors.push('[ERROR_REPORTER] optional engagement analytics script filter missing');
+    if (!errorReporterContent.includes('(?:ga|ga-engagement)\\.js')) {
+        errors.push('[ERROR_REPORTER] optional same-origin GA scripts filter missing');
+    }
+    if (!errorReporterContent.includes('unsupportedLegacyBrowser')
+        || !errorReporterContent.includes('Edge\\/(?:1[0-8])\\.')) {
+        errors.push('[ERROR_REPORTER] unsupported EdgeHTML telemetry filter missing');
     }
     const seoDir = path.join(__dirname, 'seo');
     const seoHtmlFiles = fs.readdirSync(seoDir).filter(file => file.endsWith('.html')).map(file => ({
