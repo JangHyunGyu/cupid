@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "https://openrouter-api.yama5993.workers.dev/";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.139";
+const ASSET_VERSION = "2.9.140";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -367,6 +367,46 @@ function getCupidLanguage() {
 function getCupidAppId() {
     const lang = getCupidLanguage();
     return lang === 'ko' ? 'cupid' : `cupid-${lang}`;
+}
+
+async function prepareCupidPromptMemoryRecall({ charId = '', value = '', messages = [] } = {}) {
+    const core = window.CupidFreeTalkCore;
+    if (!charId || typeof fetch !== 'function' || !core?.getPromptMemoryRetrievalDecision) return [];
+    const decision = core.getPromptMemoryRetrievalDecision(value, messages);
+    if (!decision.retrieve) return [];
+    const query = core.buildPromptMemoryQuery(value, messages);
+    if (!query) return [];
+
+    const controller = typeof AbortController === 'function' ? new AbortController() : null;
+    let timer = null;
+    try {
+        const request = fetch(`${API_ENDPOINT}search-memory`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'x-app-id': getCupidAppId()
+            },
+            body: JSON.stringify({
+                userId: getCupidDeviceId(),
+                charId,
+                query,
+                topK: 6
+            }),
+            ...(controller ? { signal: controller.signal } : {})
+        }).then(async response => response.ok ? response.json() : null);
+        const timeout = new Promise(resolve => {
+            timer = setTimeout(() => {
+                controller?.abort();
+                resolve(null);
+            }, 900);
+        });
+        const data = await Promise.race([request, timeout]);
+        return core.filterPromptMemoryHits(data?.hits, query, messages);
+    } catch (_) {
+        return [];
+    } finally {
+        if (timer) clearTimeout(timer);
+    }
 }
 
 // ============================================================================
@@ -1039,6 +1079,7 @@ window.updateCupidKeyboardBaseline = updateCupidKeyboardBaseline;
 window.getCupidDeviceId = getCupidDeviceId;
 window.getCupidLanguage = getCupidLanguage;
 window.getCupidAppId = getCupidAppId;
+window.prepareCupidPromptMemoryRecall = prepareCupidPromptMemoryRecall;
 window.uploadImageToR2 = uploadImageToR2;
 window.optimizeImageHistory = optimizeImageHistory;
 window.saveCupidChatLog = saveCupidChatLog;

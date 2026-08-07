@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.54';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.55';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 const GalleryFreeTalkCore = window.CupidFreeTalkCore;
@@ -1029,6 +1029,19 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 lang: this.lang || 'en',
                 state: this.progress?.getRelationshipAftermath?.(requestCharId)
             });
+            const _memoryRecall = typeof window.prepareCupidPromptMemoryRecall === 'function'
+                ? await window.prepareCupidPromptMemoryRecall({
+                    charId: requestCharKey,
+                    value: finalContent,
+                    messages: _optimized
+                })
+                : [];
+            this._assertRequestContext(requestContext);
+            const _dataBankRecallBlock = GalleryFreeTalkCore.buildDataBankRecallBlock(_memoryRecall, {
+                lang: this.lang || 'en',
+                playerName: this.progress.getPlayerName() || '',
+                characterName: this.CHAR_NAMES[requestCharId]?.[this.lang] || requestCharId
+            });
             const _lowInformationContinuationRule = typeof window.buildCupidLowInformationContinuationRule === 'function'
                 ? window.buildCupidLowInformationContinuationRule(finalContent, this.lang || 'en')
                 : '';
@@ -1036,7 +1049,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 repetitionGuard: _recentRepetitionGuard,
                 lowInformationRule: _lowInformationContinuationRule
             });
-            const _runtimePromptPatch = `${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_relationshipAftermathBlock}${_incidentRuntimeBlock}${_postHistoryGuidance}`;
+            const _runtimePromptPatch = `${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_relationshipAftermathBlock}${_dataBankRecallBlock}${_incidentRuntimeBlock}${_postHistoryGuidance}`;
             if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
                 _optimized = [
                     { ..._optimized[0], content: appendGalleryFreeTalkDynamicContext(_optimized[0].content, _runtimePromptPatch) },

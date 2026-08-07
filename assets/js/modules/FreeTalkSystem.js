@@ -787,6 +787,19 @@ class FreeTalkSystem {
                 lang: _lang,
                 state: this.stateManager.getRelationshipAftermath?.(charKey)
             });
+            const _memoryRecall = typeof window.prepareCupidPromptMemoryRecall === 'function'
+                ? await window.prepareCupidPromptMemoryRecall({
+                    charId: charKey,
+                    value: finalContent,
+                    messages: _optimized
+                })
+                : [];
+            this._assertRequestContext(requestContext);
+            const _dataBankRecallBlock = CupidFreeTalkCore.buildDataBankRecallBlock(_memoryRecall, {
+                lang: _lang,
+                playerName: this.stateManager.playerName || '',
+                characterName: scene.name || charKey
+            });
             const _lowInformationContinuationRule = typeof window.buildCupidLowInformationContinuationRule === 'function'
                 ? window.buildCupidLowInformationContinuationRule(finalContent, _lang)
                 : '';
@@ -794,7 +807,7 @@ class FreeTalkSystem {
                 repetitionGuard: _recentRepetitionGuard,
                 lowInformationRule: _lowInformationContinuationRule
             });
-            const _runtimePromptPatch = `${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_affinityIntimacyProgressionPatch}${_relationshipAftermathBlock}${_postHistoryGuidance}`;
+            const _runtimePromptPatch = `${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_affinityIntimacyProgressionPatch}${_relationshipAftermathBlock}${_dataBankRecallBlock}${_postHistoryGuidance}`;
             if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
                 _optimized = [
                     { ..._optimized[0], content: appendFreeTalkDynamicContext(_optimized[0].content, _runtimePromptPatch) },

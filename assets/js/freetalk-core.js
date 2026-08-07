@@ -920,6 +920,210 @@
             + (output ? `\n\n[${lang === 'ko' ? '후단 출력 지침 — 이번 응답' : 'Post-History Output Contract — This Response'}]\n${output}` : '');
     }
 
+    function getPromptMemoryText(value = '') {
+        if (!Array.isArray(value)) return String(value || '');
+        return value.map(part => {
+            if (typeof part === 'string') return part;
+            if (part?.type === 'text') return part.text || '';
+            if (part?.type === 'image_url' || part?.image_url) return '[image attachment]';
+            return '';
+        }).filter(Boolean).join(' ');
+    }
+
+    function normalizePromptMemoryText(value = '') {
+        return getPromptMemoryText(value)
+            .replace(/data:image\/[^;]+;base64,[a-zA-Z0-9+/=\s]+/g, '[image attachment]')
+            .replace(/===CACHE_BOUNDARY===/g, '')
+            .replace(/["'`“”‘’「」『』()[\]{}<>]/g, '')
+            .replace(/[.,!?;:~…。，、！？；：]/g, '')
+            .replace(/\s+/g, ' ')
+            .trim()
+            .toLowerCase();
+    }
+
+    function isLowInformationPromptMemoryInput(value = '') {
+        const normalized = normalizePromptMemoryText(value);
+        if (!normalized) return true;
+        return /^(?:계속|응|어|그래|좋아|알겠어|네|예|ㅇㅇ|음|흠|continue|go on|okay|ok|yes|yeah|mhm|hmm|続けて|うん|はい|そう|continúa|vale|sí|d'accord|oui|weiter|ja|sim)$/iu.test(normalized);
+    }
+
+    function getPromptMemoryRecallAnchors(value = '') {
+        const normalized = normalizePromptMemoryText(value);
+        if (!normalized) return [];
+
+        const durableConcepts = normalized.match(/(?:약속|비밀|선물|편지|사진|반지|열쇠|노트|기록|계약|암호|장소|사건|계획|결정|대화|約束|秘密|贈り物|手紙|写真|指輪|鍵|記録|契約|場所|事件|計画|決定|会話|\b(?:promise|secret|gift|letter|photo|ring|key|notebook|record|contract|password|place|incident|event|plan|decision|conversation|promesa|secreto|regalo|carta|foto|anillo|llave|lugar|evento|plan|decisión|conversación|promesse|cadeau|lettre|bague|clé|endroit|événement|décision|versprechen|geheimnis|geschenk|brief|schlüssel|ort|ereignis|entscheidung|promessa|segredo|presente|anel|chave|decisão|conversa)\b)/giu) || [];
+        const stopWords = new Set([
+            '기억', '기억해', '기억나', '잊었어', '떠올라', '회상', '예전', '예전에', '그때', '그날',
+            '지난번', '저번', '과거', '처음', '우리', '내가', '네가', '너가', '당신', '그거', '그것',
+            '무슨', '무엇', '뭐였지', '어디', '언제', '누구', '어떻게', '어땠어', '왜', '말해', '알려',
+            'remember', 'recall', 'forgot', 'forget', 'previously', 'earlier', 'before', 'then', 'when',
+            'where', 'what', 'which', 'who', 'whose', 'why', 'how', 'tell', 'about', 'that', 'this',
+            'last', 'time', 'back', 'used', 'once', 'from', 'with', 'were', 'was', 'did', 'have', 'had'
+        ]);
+        const tokens = normalized.match(/[가-힣]{2,}|[a-z0-9]{3,}/giu) || [];
+        const generic = tokens
+            .map(token => /[가-힣]/u.test(token)
+                ? token.replace(/(?:에게|한테|에서|으로|와|과|은|는|이|가|을|를|에|도|만|의)$/u, '')
+                : token)
+            .filter(token => token.length >= 2 && !stopWords.has(token));
+        return [...new Set([...durableConcepts, ...generic].map(token => token.toLowerCase()))];
+    }
+
+    function promptMemoryTextContainsAnchor(text = '', anchor = '') {
+        if (!anchor) return false;
+        if (/^[a-z0-9]+$/iu.test(anchor)) {
+            const escaped = anchor.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            return new RegExp(`(?:^|[^a-z0-9])${escaped}(?:$|[^a-z0-9])`, 'iu').test(text);
+        }
+        return text.includes(anchor);
+    }
+
+    function hasRecentPromptMemoryCoverage(value = '', messages = []) {
+        const normalizedInput = normalizePromptMemoryText(value);
+        if (!normalizedInput) return false;
+
+        const priorTexts = [];
+        let skippedCurrentInput = false;
+        const history = Array.isArray(messages) ? messages : [];
+        for (let index = history.length - 1; index >= 0 && priorTexts.length < 12; index--) {
+            const message = history[index];
+            if (!message || message.role === 'system' || message.internalSync || message._timeSeparator) continue;
+            const normalizedMessage = normalizePromptMemoryText(message.content || '');
+            if (!normalizedMessage) continue;
+            if (!skippedCurrentInput && message.role === 'user' && normalizedMessage === normalizedInput) {
+                skippedCurrentInput = true;
+                continue;
+            }
+            priorTexts.push(normalizedMessage);
+        }
+        if (!priorTexts.length) return false;
+
+        const recentContext = priorTexts.join('\n');
+        const anchors = getPromptMemoryRecallAnchors(value);
+        if (!anchors.length) return false;
+        const durableAnchor = /^(?:약속|비밀|선물|편지|사진|반지|열쇠|노트|기록|계약|암호|장소|사건|계획|결정|대화|約束|秘密|贈り物|手紙|写真|指輪|鍵|記録|契約|場所|事件|計画|決定|会話|promise|secret|gift|letter|photo|ring|key|notebook|record|contract|password|place|incident|event|plan|decision|conversation|promesa|secreto|regalo|carta|foto|anillo|llave|lugar|evento|plan|decisión|conversación|promesse|cadeau|lettre|bague|clé|endroit|événement|décision|versprechen|geheimnis|geschenk|brief|schlüssel|ort|ereignis|entscheidung|promessa|segredo|presente|anel|chave|decisão|conversa)$/iu;
+        if (anchors.some(anchor => durableAnchor.test(anchor) && promptMemoryTextContainsAnchor(recentContext, anchor))) return true;
+        const matched = anchors.filter(anchor => promptMemoryTextContainsAnchor(recentContext, anchor));
+        return matched.length >= 2 || matched.some(anchor => anchor.length >= 4);
+    }
+
+    function getPromptMemoryRetrievalDecision(value = '', messages = []) {
+        const searchText = getPromptMemoryText(value).trim();
+        if (!searchText) return { retrieve: false, reason: 'empty' };
+
+        const explicitRecallCue = /(?:기억(?:나|해|하|했|나는|나요|니)?|잊(?:었|어|었니|고)|떠올(?:라|려|렸)|회상|예전에?|그때|그날|지난번|저번|과거|처음\s*(?:만났|봤|보았|키스|말했|갔|왔|했|느꼈)|remember|recall|forgot|previously|earlier|last\s+time|back\s+then|used\s+to|覚えて|覚え|思い出|あの時|前に|recuerd|olvid|la\s+vez\s+pasada|souviens|rappel|oubli|derni[eè]re\s+fois|erinner|vergess|damals|letztes\s+mal|lembr|esquec|da\s+[uú]ltima\s+vez)/iu;
+        const pastTimeCue = /(?:지난\s*(?:겨울|여름|봄|가을|주|달|해|밤|아침|생일)|작년|몇\s*(?:일|주|달|년)\s*전|\d+\s*(?:일|주|달|년)\s*전|last\s+(?:winter|summer|spring|fall|autumn|week|month|year|night|morning|birthday)|(?:days?|weeks?|months?|years?)\s+ago|去年|先週|先月|昨年|el\s+año\s+pasado|la\s+semana\s+pasada|l'ann[eé]e\s+derni[eè]re|la\s+semaine\s+derni[eè]re|letztes\s+(?:jahr|woche)|ano\s+passado|semana\s+passada)/iu;
+        const historicalActionCue = /(?:말했던|얘기했던|약속했던|정했던|만났던|주었던|줬던|받았던|숨겨\s*둔|감춰\s*둔|맡겼던|남겼던|보았던|봤던|들었던|갔던|왔던|(?:what|where|when|why|how)[^?.!\n]{0,48}\b(?:we|you|i)\s+(?:promised|agreed|met|gave|received|hid|left|decided|said|discussed|saw|heard)\b)/iu;
+        const durableSubjectCue = /(?:약속|비밀|선물|편지|사진|반지|열쇠|노트|기록|계약|암호|장소|사건|계획|결정|대화|約束|秘密|贈り物|手紙|写真|指輪|鍵|記録|契約|場所|事件|計画|決定|会話|\b(?:promise|secret|gift|letter|photo|ring|key|notebook|record|contract|password|place|incident|event|plan|decision|conversation|promesa|secreto|regalo|carta|foto|anillo|llave|lugar|evento|plan|decisión|conversación|promesse|cadeau|lettre|bague|clé|endroit|événement|décision|versprechen|geheimnis|geschenk|brief|schlüssel|ort|ereignis|entscheidung|promessa|segredo|presente|anel|chave|decisão|conversa)\b)/iu;
+        const lookupCue = /(?:무슨|무엇|뭐(?:였|였지)?|어디|언제|누구|어떻게|어땠|왜|맞(?:지|아)|였(?:지|어)|했(?:지|어)|됐(?:지|어)|알아|알고|말해|알려|何|どこ|いつ|誰|どう|なぜ|what|which|where|when|who|whose|why|how|do\s+you\s+know|tell\s+me|qu[eé]|d[oó]nde|cu[aá]ndo|qui[eé]n|c[oó]mo|por\s+qu[eé]|quoi|o[uù]|quand|qui|comment|pourquoi|was|welch|wo|wann|wer|wie|warum|qual|onde|quando|quem|como|por\s+qu[eê])/iu;
+        const hasRecallIntent = explicitRecallCue.test(searchText)
+            || pastTimeCue.test(searchText)
+            || historicalActionCue.test(searchText)
+            || (durableSubjectCue.test(searchText) && lookupCue.test(searchText));
+
+        if (!hasRecallIntent) return { retrieve: false, reason: 'live_scene' };
+        if (isLowInformationPromptMemoryInput(searchText)) return { retrieve: false, reason: 'brief_continue' };
+        if (hasRecentPromptMemoryCoverage(searchText, messages)) {
+            return { retrieve: false, reason: 'covered_by_recent_context' };
+        }
+        return { retrieve: true, reason: 'older_memory_needed' };
+    }
+
+    function buildPromptMemoryQuery(value = '', messages = []) {
+        const latest = getPromptMemoryText(value)
+            .replace(/data:image\/[^;]+;base64,[a-zA-Z0-9+/=\s]+/g, '[image attachment]')
+            .replace(/\s+/g, ' ')
+            .trim();
+        if (!latest) return '';
+
+        const recentMessages = (Array.isArray(messages) ? messages : [])
+            .filter(message => message && message.role !== 'system' && !message.internalSync)
+            .slice(-6);
+        const recent = recentMessages.map(message => {
+            const text = getPromptMemoryText(message.content)
+                .replace(/data:image\/[^;]+;base64,[a-zA-Z0-9+/=\s]+/g, '[image attachment]')
+                .replace(/\s+/g, ' ')
+                .trim();
+            if (!text) return null;
+            return {
+                role: message.role === 'assistant' ? 'character' : 'user',
+                text: text.length > 320 ? `${text.slice(0, 320)}...` : text
+            };
+        }).filter(Boolean);
+        const compactLatest = latest.length > 320 ? `${latest.slice(0, 320)}...` : latest;
+        if (!recent.length || normalizePromptMemoryText(recent[recent.length - 1].text) !== normalizePromptMemoryText(compactLatest)) {
+            recent.push({ role: 'user', text: compactLatest });
+        }
+        return recent.slice(-3).map(item => `${item.role}: ${item.text}`).join('\n').slice(0, 900);
+    }
+
+    function filterPromptMemoryHits(hits = [], query = '', messages = []) {
+        if (!Array.isArray(hits)) return [];
+        const normalizedQuery = normalizePromptMemoryText(query);
+        const recentTexts = new Set(
+            (Array.isArray(messages) ? messages : [])
+                .slice(-24)
+                .map(message => normalizePromptMemoryText(message?.content || ''))
+                .filter(Boolean)
+        );
+        const seen = new Set();
+        const selected = [];
+        let totalChars = 0;
+
+        const ranked = [...hits].sort((left, right) => Number(right?.score || 0) - Number(left?.score || 0));
+        for (const hit of ranked) {
+            const score = Number(hit?.score || 0);
+            const role = hit?.role === 'assistant' ? 'assistant' : (hit?.role === 'user' ? 'user' : '');
+            const rawContent = getPromptMemoryText(hit?.content).trim();
+            if (!role || !rawContent || score < 0.62) continue;
+
+            const normalized = normalizePromptMemoryText(rawContent);
+            if (normalized.length < 12 || seen.has(normalized) || recentTexts.has(normalized)) continue;
+            if (normalizedQuery && (
+                normalized === normalizedQuery
+                || (normalizedQuery.length >= 12 && normalized.includes(normalizedQuery))
+                || (normalized.length >= 12 && normalizedQuery.includes(normalized))
+            )) continue;
+
+            const cleanContent = sanitizeLatestUserText(rawContent).slice(0, 360);
+            if (!cleanContent) continue;
+            if (totalChars + cleanContent.length > 1000) break;
+            seen.add(normalized);
+            totalChars += cleanContent.length;
+            selected.push({
+                id: hit.id,
+                score,
+                role,
+                content: cleanContent,
+                created_at: hit.created_at || ''
+            });
+            if (selected.length >= 3) break;
+        }
+        return selected;
+    }
+
+    function buildDataBankRecallBlock(hits = [], {
+        lang = 'ko',
+        playerName = '',
+        characterName = ''
+    } = {}) {
+        if (!Array.isArray(hits) || !hits.length) return '';
+        const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
+        const sorted = [...hits].sort((left, right) =>
+            String(left?.created_at || '').localeCompare(String(right?.created_at || ''))
+        );
+        const lines = sorted.map(hit => {
+            const speaker = hit.role === 'user'
+                ? (playerName || (isKo ? '플레이어' : 'Player'))
+                : (characterName || (isKo ? '캐릭터' : 'Character'));
+            const date = String(hit.created_at || '').split(/[ T]/u)[0];
+            return `- ${date ? `[${date}] ` : ''}${speaker}: ${hit.content}`;
+        }).join('\n');
+        return isKo
+            ? `\n\n[Data Bank 회상 후보 — 비정본]\n${lines}\n이 항목은 현재 입력과 의미가 비슷한 과거 발췌일 뿐입니다. 캐릭터 핵심·최근 원문 대화·현재 장면·최신 정정과 일치할 때만 조용히 참고하고, 충돌하거나 관련이 약하면 버립니다. 과거 발화는 현재 행동·현재 신체 상태·현재 동의로 간주하지 않으며, 회상문 자체를 복창하지 않습니다.`
+            : `\n\n[Data Bank Recall Candidates — Non-Canonical]\n${lines}\nThese are past excerpts with semantic similarity to the current input, not authoritative facts. Use them quietly only when they agree with the character core, recent verbatim chat, live scene, and latest correction; discard weak or conflicting matches. A past utterance is not a current action, body state, or consent, and the recall block itself must not be recited.`;
+    }
+
     function sanitizeLatestUserText(text) {
         return String(text || '')
             .replace(/data:image\/[a-zA-Z0-9.+-]+;base64,[A-Za-z0-9+/=\s]+/g, ' ')
@@ -1003,6 +1207,11 @@ Latest user: """${excerpt}"""
         classifyResponseBeat,
         buildResponsePaceBlock,
         buildPostHistoryGuidance,
+        normalizePromptMemoryText,
+        getPromptMemoryRetrievalDecision,
+        buildPromptMemoryQuery,
+        filterPromptMemoryHits,
+        buildDataBankRecallBlock,
         isNearDuplicateReply,
         normalizeCupidResponsePayload,
         getVisibleProtocolIssue,

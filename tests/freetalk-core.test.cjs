@@ -28,6 +28,56 @@ test('retry and failover status contracts remain distinct', () => {
     assert.equal(core.shouldFailOverAiResponse({ ok: false, status: 400 }), false);
 });
 
+test('selective memory retrieval searches old recall needs but skips live or recently covered context', () => {
+    assert.equal(core.getPromptMemoryRetrievalDecision('오늘은 같이 옥상에 갈까?', []).reason, 'live_scene');
+    assert.equal(core.getPromptMemoryRetrievalDecision('지난번에 내가 준 열쇠를 기억해?', [
+        { role: 'user', content: '지난번에 내가 준 열쇠를 기억해?' }
+    ]).reason, 'older_memory_needed');
+    assert.equal(core.getPromptMemoryRetrievalDecision('그 열쇠를 어디에 뒀는지 기억해?', [
+        { role: 'assistant', content: '네가 준 열쇠는 책상 서랍 안에 넣어 뒀어.' },
+        { role: 'user', content: '그 열쇠를 어디에 뒀는지 기억해?' }
+    ]).reason, 'covered_by_recent_context');
+    assert.equal(core.getPromptMemoryRetrievalDecision('What key did I give you last time?', [
+        { role: 'assistant', content: 'A monkey climbed past the window.' },
+        { role: 'user', content: 'What key did I give you last time?' }
+    ]).retrieve, true, 'key must not match as a substring of monkey');
+});
+
+test('memory recall query and candidates stay compact, relevant, and explicitly non-canonical', () => {
+    const messages = [
+        { role: 'assistant', content: '오늘은 비가 많이 오네.' },
+        { role: 'user', content: '그러게. 우산을 가져오길 잘했어.' },
+        { role: 'user', content: '지난번 약속을 기억해?' }
+    ];
+    const query = core.buildPromptMemoryQuery('지난번 약속을 기억해?', messages);
+    assert.match(query, /character: 오늘은 비가 많이 오네/);
+    assert.match(query, /user: 지난번 약속을 기억해\?/);
+    assert.ok(query.length <= 900);
+
+    const hits = core.filterPromptMemoryHits([
+        { id: 1, score: 0.61, role: 'assistant', content: '점수가 낮아서 제외되어야 하는 오래된 답변입니다.' },
+        { id: 2, score: 0.91, role: 'user', content: '졸업식 날 옥상에서 다시 만나자고 약속했어.', created_at: '2026-01-01 10:00:00' },
+        { id: 3, score: 0.88, role: 'assistant', content: '그 약속은 분홍색 리본과 함께 기억하고 있어.', created_at: '2026-01-01 10:01:00' },
+        { id: 4, score: 0.87, role: 'assistant', content: '오늘은 비가 많이 오네.' },
+        { id: 5, score: 0.86, role: 'assistant', content: '세 번째로 남겨 둘 충분히 구체적인 과거 기억이야.', created_at: '2026-01-02 10:00:00' },
+        { id: 6, score: 0.85, role: 'assistant', content: '네 번째 후보는 최대 세 개 제한 때문에 제외되어야 해.', created_at: '2026-01-03 10:00:00' }
+    ], query, messages);
+    assert.equal(hits.length, 3);
+    assert.equal(hits[0].id, 2);
+    assert.equal(hits[1].id, 3);
+    assert.equal(hits[2].id, 5);
+
+    const block = core.buildDataBankRecallBlock(hits, {
+        lang: 'ko',
+        playerName: '민준',
+        characterName: '유나'
+    });
+    assert.match(block, /Data Bank 회상 후보 — 비정본/);
+    assert.match(block, /민준: 졸업식 날/);
+    assert.match(block, /유나: 그 약속은/);
+    assert.match(block, /현재 동의로 간주하지 않으며/);
+});
+
 test('near-duplicate roleplay replies are rejected without blocking a new reaction', () => {
     const recentMessages = [{
         role: 'assistant',
