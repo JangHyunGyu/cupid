@@ -790,7 +790,11 @@ class FreeTalkSystem {
             const _lowInformationContinuationRule = typeof window.buildCupidLowInformationContinuationRule === 'function'
                 ? window.buildCupidLowInformationContinuationRule(finalContent, _lang)
                 : '';
-            const _runtimePromptPatch = `${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_affinityIntimacyProgressionPatch}${_relationshipAftermathBlock}${_recentRepetitionGuard}${_lowInformationContinuationRule}`;
+            const _postHistoryGuidance = CupidFreeTalkCore.buildPostHistoryGuidance(_optimized, _lang, {
+                repetitionGuard: _recentRepetitionGuard,
+                lowInformationRule: _lowInformationContinuationRule
+            });
+            const _runtimePromptPatch = `${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_affinityIntimacyProgressionPatch}${_relationshipAftermathBlock}${_postHistoryGuidance}`;
             if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
                 _optimized = [
                     { ..._optimized[0], content: appendFreeTalkDynamicContext(_optimized[0].content, _runtimePromptPatch) },

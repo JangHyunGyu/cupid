@@ -1857,11 +1857,11 @@ try {
     const activePromptSources = [promptsContent, ftCoreContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
-    if (promptVersion !== '2.7.50') {
-        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.50이 아님: ' + promptVersion);
+    if (promptVersion !== '2.7.51') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.51이 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.53') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.53이 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.54') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.54가 아님: ' + galleryPromptVersion);
     }
     const galleryProgressContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-progress.js'), 'utf8');
     const galleryLoaderAffinityContent = fs.readFileSync(path.join(__dirname, 'assets/js/loaders/gallery-loader.js'), 'utf8');
@@ -1961,8 +1961,8 @@ try {
         || !promptsContent.includes('이 짧은 입력 자체를 새로운 동의로 해석하지 않습니다')
         || !ftSysContent.includes('_lowInformationContinuationRule')
         || !gftContent.includes('_lowInformationContinuationRule')
-        || !ftSysContent.includes('${_lowInformationContinuationRule}')
-        || !gftContent.includes('${_lowInformationContinuationRule}')
+        || !ftSysContent.includes('lowInformationRule: _lowInformationContinuationRule')
+        || !gftContent.includes('lowInformationRule: _lowInformationContinuationRule')
         || !gftContent.includes('${livingInitiativeRule}')) {
         errors.push('[FREETALK_PROMPT] 평상시 주도성 또는 짧은 계속 신호의 동적 진행 규칙 누락');
     }
@@ -1990,9 +1990,14 @@ try {
         }
     }
     if (!ftCoreContent.includes('function buildRecentExpressionRepetitionGuard(')
+        || !ftCoreContent.includes('function buildResponseShapeRepetitionGuard(')
+        || !ftCoreContent.includes('function buildResponsePaceBlock(')
+        || !ftCoreContent.includes('function buildPostHistoryGuidance(')
         || !ftSysContent.includes('CupidFreeTalkCore.buildRecentExpressionRepetitionGuard')
-        || !gftContent.includes('GalleryFreeTalkCore.buildRecentExpressionRepetitionGuard')) {
-        errors.push('[FREETALK_PROMPT] 실제 최근 표현 중복 감지기가 누락됨');
+        || !gftContent.includes('GalleryFreeTalkCore.buildRecentExpressionRepetitionGuard')
+        || !ftSysContent.includes('CupidFreeTalkCore.buildPostHistoryGuidance')
+        || !gftContent.includes('GalleryFreeTalkCore.buildPostHistoryGuidance')) {
+        errors.push('[FREETALK_PROMPT] 최근 표현·형태 반복 또는 후단 응답 호흡 지침이 누락됨');
     }
     if (ftSysContent.includes('const gesturePatterns = [')
         || gftContent.includes('const gesturePatterns = [')

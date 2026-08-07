@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.53';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.54';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 const GalleryFreeTalkCore = window.CupidFreeTalkCore;
@@ -1032,7 +1032,11 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             const _lowInformationContinuationRule = typeof window.buildCupidLowInformationContinuationRule === 'function'
                 ? window.buildCupidLowInformationContinuationRule(finalContent, this.lang || 'en')
                 : '';
-            const _runtimePromptPatch = `${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_relationshipAftermathBlock}${_recentRepetitionGuard}${_incidentRuntimeBlock}${_lowInformationContinuationRule}`;
+            const _postHistoryGuidance = GalleryFreeTalkCore.buildPostHistoryGuidance(_optimized, this.lang || 'en', {
+                repetitionGuard: _recentRepetitionGuard,
+                lowInformationRule: _lowInformationContinuationRule
+            });
+            const _runtimePromptPatch = `${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_relationshipAftermathBlock}${_incidentRuntimeBlock}${_postHistoryGuidance}`;
             if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
                 _optimized = [
                     { ..._optimized[0], content: appendGalleryFreeTalkDynamicContext(_optimized[0].content, _runtimePromptPatch) },

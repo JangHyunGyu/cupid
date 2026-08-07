@@ -844,6 +844,82 @@
             : `\n\n[Repeated wording]\n${guardBody}\nUnless the user just brought it back, do not repeat this material. Do more than swap synonyms: prioritize the latest user turn and genuinely advance the scene with a different line, judgment, or action.`;
     }
 
+    function buildResponseShapeRepetitionGuard(messages = [], lang = 'ko') {
+        const assistantTexts = (Array.isArray(messages) ? messages : [])
+            .filter(message => message?.role === 'assistant' && typeof message.content === 'string')
+            .slice(-3)
+            .map(message => String(message.content || '').trim())
+            .filter(Boolean);
+        if (assistantTexts.length < 3) return '';
+
+        const getShapeSignature = (value = '') => {
+            const text = String(value || '')
+                .replace(/^```(?:json)?\s*|\s*```$/giu, '')
+                .replace(/^\s*\[[^\]\n]{1,48}\]:?\s*/u, '')
+                .trim();
+            const opening = /^["'“”‘’「『]/u.test(text)
+                ? 'dialogue'
+                : (/^\*/u.test(text) ? 'action' : 'narration');
+            const paragraphCount = text.split(/\n{2,}/u).filter(Boolean).length;
+            const paragraphShape = paragraphCount <= 1 ? 'one' : (paragraphCount === 2 ? 'two' : 'many');
+            const ending = /\?\s*["'”’」』*]*\s*$/u.test(text)
+                ? 'question'
+                : (/[*]\s*$/u.test(text) ? 'action' : 'statement');
+            return `${opening}:${paragraphShape}:${ending}`;
+        };
+
+        const signatures = assistantTexts.map(getShapeSignature);
+        if (!signatures.every(signature => signature === signatures[0])) return '';
+
+        return lang === 'ko'
+            ? `\n\n[최근 응답 형태 반복]\n최근 세 답변의 시작 방식·문단 수·마무리 박자가 같았습니다. 이번에는 그중 하나만 현재 장면에 맞게 바꾸되, 캐릭터 말투·의도적인 말버릇·필요한 감각·현재 강도는 유지합니다. 동의어만 억지로 바꾸거나 진행을 줄이는 방식으로 해결하지 않습니다.`
+            : `\n\n[Recent response-shape repetition]\nThe last three replies used the same opening mode, paragraph count, and closing beat. Change only one of those when it fits the current scene, while preserving the character's voice, intentional verbal habits, necessary sensory detail, and current intensity. Do not solve this with forced synonym swaps or reduced progression.`;
+    }
+
+    function classifyResponseBeat(messages = []) {
+        const recent = (Array.isArray(messages) ? messages : [])
+            .filter(message => ['user', 'assistant'].includes(message?.role) && String(message.content || '').trim())
+            .slice(-4);
+        const latestUserText = String([...recent].reverse().find(message => message.role === 'user')?.content || '');
+        const latestAssistantText = String([...recent].reverse().find(message => message.role === 'assistant')?.content || '');
+        const transitionCue = /(?:장면\s*전환|시간(?:이|을)?\s*(?:흐르|건너|넘기)|다음\s*(?:날|아침|밤)|며칠\s*뒤|잠시\s*뒤|도착(?:했|한|하)|떠나(?:고|며|자)|들어가(?:고|며|자)|scene\s+(?:change|transition)|time\s+(?:passes|skip)|the\s+next\s+(?:day|morning|night)|days?\s+later|arriv(?:e|es|ed|ing)|leav(?:e|es|ing)|enter(?:s|ed|ing))/iu;
+        if (transitionCue.test(latestUserText)) return 'transition';
+        const actionCue = /(?:\*[^*]{2,}\*|움직|다가가|밀어|당겨|붙잡|놓아|열어|닫아|앉아|일어나|돌아서|달려|싸우|공격|피하|만지|입맞|키스|벗|껴안|move|approach|push|pull|grab|release|open|close|sit|stand|turn|run|fight|attack|dodge|touch|kiss|undress|embrace)/iu;
+        return actionCue.test(`${latestAssistantText}\n${latestUserText}`) ? 'action' : 'dialogue';
+    }
+
+    function buildResponsePaceBlock(messages = [], lang = 'ko') {
+        const beat = classifyResponseBeat(messages);
+        const ko = {
+            dialogue: '현재는 대화 박자입니다. 한 줄 대사나 짧은 행동만으로 충분하면 거기서 자연스럽게 마치고, 분량을 채우려고 설명을 늘리지 않습니다. 이미 진행 중인 행동이나 갈등의 즉각적인 결과가 있다면 함께 보여 줍니다.',
+            action: '현재는 행동 박자입니다. 중요한 움직임의 다음 단계와 즉각적인 결과가 보일 만큼 쓰되, 사용자가 아직 정하지 않은 다음 선택까지 대신 완결하지 않습니다.',
+            transition: '현재는 장면 전환 또는 전개 박자입니다. 새 시간·공간·등장 상태를 한 번 분명히 잡고 구체적인 사건이나 선택까지 이어 가며, 필요한 경우 대화 장면보다 길게 써도 됩니다.'
+        };
+        const en = {
+            dialogue: 'This is a conversational beat. If one spoken line or a brief action is enough, end there naturally instead of padding the scene. Include an immediate consequence when an ongoing action or conflict requires it.',
+            action: "This is an action beat. Show enough of the next meaningful movement and its immediate consequence to make progress, without completing the user's still-unchosen next decision.",
+            transition: 'This is a transition or development beat. Establish the new time, place, and presence once, then reach a concrete event or choice; it may run longer than a conversational exchange when needed.'
+        };
+        return `\n\n[${lang === 'ko' ? '응답 호흡' : 'Response Pace'} — ${beat}]\n${(lang === 'ko' ? ko : en)[beat]}`;
+    }
+
+    function buildPostHistoryGuidance(messages = [], lang = 'ko', {
+        repetitionGuard = '',
+        lowInformationRule = ''
+    } = {}) {
+        const task = lang === 'ko'
+            ? '최신 사용자 입력의 마지막 유효 줄에서 새 내용으로 직접 이어갑니다. 현재 캐릭터의 목표·지식·감정에 따라 그 인물이 지금 실제로 하는 반응을 만들고, 사용자가 명시하지 않은 중대한 선택·동의·거절은 대신 쓰지 않습니다.'
+            : "Continue directly from the latest user's last valid line with new content. Let the current character act now from their goal, knowledge, and emotion, and never supply a major choice, consent, or refusal the user did not state.";
+        const output = [
+            buildResponsePaceBlock(messages, lang),
+            repetitionGuard || buildRecentExpressionRepetitionGuard(messages, lang),
+            buildResponseShapeRepetitionGuard(messages, lang),
+            lowInformationRule
+        ].filter(Boolean).join('\n\n').trim();
+        return `\n\n[${lang === 'ko' ? '후단 과업 — 이번 응답' : 'Post-History Task — This Response'}]\n${task}`
+            + (output ? `\n\n[${lang === 'ko' ? '후단 출력 지침 — 이번 응답' : 'Post-History Output Contract — This Response'}]\n${output}` : '');
+    }
+
     function sanitizeLatestUserText(text) {
         return String(text || '')
             .replace(/data:image\/[a-zA-Z0-9.+-]+;base64,[A-Za-z0-9+/=\s]+/g, ' ')
@@ -923,6 +999,10 @@ Latest user: """${excerpt}"""
         encodeCacheKeyPart,
         keepRuntimeBoundary,
         buildRecentExpressionRepetitionGuard,
+        buildResponseShapeRepetitionGuard,
+        classifyResponseBeat,
+        buildResponsePaceBlock,
+        buildPostHistoryGuidance,
         isNearDuplicateReply,
         normalizeCupidResponsePayload,
         getVisibleProtocolIssue,
