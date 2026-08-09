@@ -657,33 +657,37 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
     assert.match(freeTalk, /chatInput\.disabled = !canContinueGroupChat/);
     assert.match(read('assets/js/prompts.js'), /두 사람을 반드시 모두 넣고/);
     assert.doesNotMatch(read('assets/js/prompts.js'), /그 순간 할 말이 있는 인물만/);
-    assert.match(read('assets/js/prompts.js'), /주인공에게 직접 묻거나 답할 수 있고/);
-    assert.match(read('assets/js/prompts.js'), /다른 인물에게 묻고 답하거나 그 말에 반박할 수도 있습니다/);
-    assert.match(read('assets/js/prompts.js'), /They may question or answer the protagonist directly/);
-    assert.match(read('assets/js/prompts.js'), /question, challenge, or answer the other character/);
+    assert.match(read('assets/js/prompts.js'), /두 인물 모두 매 응답에서 주인공을 직접 대면합니다/);
+    assert.match(read('assets/js/prompts.js'), /처음부터 양다리였는지/);
+    assert.match(read('assets/js/prompts.js'), /상대를 다치게 했다는 죄책감/);
+    assert.match(read('assets/js/prompts.js'), /주인공을 놓치고 싶지 않고 자신이 선택받길 바라는 욕망/);
+    assert.match(read('assets/js/prompts.js'), /둘은 서로에게 묻고 답하거나 반박할 수 있습니다/);
+    assert.match(read('assets/js/prompts.js'), /Both characters must directly confront the protagonist in every response/);
+    assert.match(read('assets/js/prompts.js'), /desire to keep the protagonist and be chosen/);
+    assert.match(read('assets/js/prompts.js'), /They may question, answer, or challenge each other/);
     assert.match(read('assets/js/prompts.js'), /허용 표정:/);
     assert.match(css, /grid-template-areas:\s*"guide guide guide guide guide"\s*"upload input input input input"\s*"turn turn action send skip"/);
     assert.match(css, /#chat-container\.group-freetalk-mode #chat-input-wrapper\s*{\s*display: contents/);
     assert.match(css, /#chat-container\.group-freetalk-mode #chat-turn-indicator[\s\S]*?grid-area: turn/);
     assert.match(css, /@media \(max-height: 500px\) and \(orientation: landscape\)[\s\S]*?#character-layer\.group-freetalk-mode #char-left img/);
 
-    const addresseeSignals = {
-        ko: ['주인공에게 말하거나', '서로에게 묻고 답할 수 있다', '상대의 말을 반박해도 된다'],
-        en: ['address the protagonist', 'answer the other character'],
-        es: ['dirigirse al protagonista', 'responder a la otra'],
-        ja: ['主人公に話しかけても', '相手に問いかけたり反論したり答えたりしてもよい'],
-        fr: ['s’adresser au protagoniste', 'répondre à l’autre'],
-        de: ['den Protagonisten ansprechen', 'der anderen Figur eine Frage stellen'],
-        pt: ['falar com o protagonista', 'responder à outra']
+    const confrontationSignals = {
+        ko: ['주인공에게 직접 질문하고', '양다리였는지', '죄책감', '선택받길 바라는 욕망'],
+        en: ['question him directly', 'two-timing', 'guilt', 'desire to keep the protagonist'],
+        es: ['preguntan directamente', 'jugaba a dos bandas', 'culpa', 'quiere quedarse con el protagonista'],
+        ja: ['主人公へ直接問い', '二股', '罪悪感', '選ばれたい'],
+        fr: ['l’interrogent directement', 'jouait sur les deux tableaux', 'culpabilité', 'désir de garder le protagoniste'],
+        de: ['befragen ihn direkt', 'zweigleisig', 'Schuld', 'Wunsch, den Protagonisten'],
+        pt: ['perguntas diretamente', 'levando as duas', 'culpa', 'desejo de ficar com o protagonista']
     };
     for (const lang of ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt']) {
         const i18n = JSON.parse(read(`assets/js/i18n/${lang}/day5_1_morning.json`));
         const groupScene = i18n.morning5_counteroffer_group_talk;
         assert.ok(groupScene?.text && groupScene?.context && groupScene?.personality && groupScene?.buttonText,
             `${lang} group confrontation localization is incomplete`);
-        for (const signal of addresseeSignals[lang]) {
+        for (const signal of confrontationSignals[lang]) {
             assert.match(groupScene.personality, new RegExp(signal),
-                `${lang} group confrontation lost addressee autonomy: ${signal}`);
+                `${lang} group confrontation lost direct explanation or guilt-and-desire tension: ${signal}`);
         }
     }
 });

@@ -1764,9 +1764,16 @@ function buildCupidGroupSystemPrompt(params = {}) {
         const roleLabel = participant.role === 'lead'
             ? (useKo ? '원래 마음을 주던 상대이자 방금 배신을 알게 된 사람' : 'the committed partner who has just learned of the betrayal')
             : (useKo ? '어젯밤 먼저 다가가 유혹한 상대' : 'the person who initiated last night’s temptation');
+        const confrontationDrive = participant.role === 'lead'
+            ? (useKo
+                ? '주인공에게 왜 자신과 관계를 이어 가면서 다른 사람을 받아들였는지 직접 따져 묻습니다. 처음부터 양다리였는지, 자신을 가지고 논 건지, 지금 가장 아픈 의문을 이 인물다운 말과 행동으로 좁혀 분명한 해명을 요구합니다.'
+                : 'Directly confront the protagonist about why he accepted someone else while continuing this relationship. Narrow the hurt to the question that fits this character—whether he was two-timing from the start, playing with them, or hiding what the relationship meant—and require a clear explanation.')
+            : (useKo
+                ? '자신이 먼저 유혹했고 상대에게 상처를 줬다는 죄책감을 피하지 않습니다. 그래도 주인공을 놓치고 싶지 않고 자신을 선택해 주길 바라는 욕망은 숨기지 않습니다. 어젯밤이 진짜 선택이었는지, 두 사람 모두를 붙잡으려 한 건지 주인공에게 직접 묻습니다. 죄책감만으로 물러나거나 양보하지 않습니다.'
+                : 'Do not evade responsibility for initiating the temptation or the guilt of hurting the other person. At the same time, do not hide the desire to keep the protagonist and be chosen. Directly ask whether last night was a real choice or an attempt to hold on to both people. Do not retreat or yield merely out of guilt.');
         return useKo
-            ? `[${participant.name} — ${roleLabel}]\n캐릭터: ${personality}\n말투: ${voice}\n취향과 연애 방식: ${relationship}\n연기 원칙: ${general}\n거리와 상호작용: ${interaction}\n호감도 기준: ${criteria}\n허용 표정: ${expressions}\n${outfit}\n${canon}\n${polish}`
-            : `[${participant.name} — ${roleLabel}]\nCharacter: ${personality}\nVoice: ${voice}\nRomance and preferences: ${relationship}\nIn scene: ${general}\nDistance and interaction: ${interaction}\nAffinity criteria: ${criteria}\nAllowed expressions: ${expressions}\n${outfit}\n${canon}\n${polish}`;
+            ? `[${participant.name} — ${roleLabel}]\n캐릭터: ${personality}\n말투: ${voice}\n취향과 연애 방식: ${relationship}\n대면 역할: ${confrontationDrive}\n연기 원칙: ${general}\n거리와 상호작용: ${interaction}\n호감도 기준: ${criteria}\n허용 표정: ${expressions}\n${outfit}\n${canon}\n${polish}`
+            : `[${participant.name} — ${roleLabel}]\nCharacter: ${personality}\nVoice: ${voice}\nRomance and preferences: ${relationship}\nConfrontation drive: ${confrontationDrive}\nIn scene: ${general}\nDistance and interaction: ${interaction}\nAffinity criteria: ${criteria}\nAllowed expressions: ${expressions}\n${outfit}\n${canon}\n${polish}`;
     }).join('\n\n');
 
     const stableRules = useKo
@@ -1777,7 +1784,10 @@ ${characterCards}
 [다인 대면 연기]
 - 두 인물의 말투, 호칭, 판단, 상처의 결을 섞지 마세요. 매 턴 원래 마음을 주던 상대가 먼저 말합니다. 어젯밤 유혹한 상대는 그 말을 들은 뒤 답합니다. 같은 말을 되풀이하거나 문답을 기계적으로 맞추지는 마세요.
 - 두 사람의 취향과 연애 방식을 공통 대사 소재처럼 나열하지 말고, 같은 사건을 대하는 선택·거리·질투·돌봄에 저마다 다르게 배게 하세요.
-- 각 인물은 장면의 감정과 직전 발언을 보고 누구에게 말할지 정합니다. 주인공에게 직접 묻거나 답할 수 있고, 다른 인물에게 묻고 답하거나 그 말에 반박할 수도 있습니다. 매번 두 사람 모두에게 말을 걸 필요는 없습니다.
+- 이번 세 턴 동안 두 인물 모두 매 응답에서 주인공을 직접 대면합니다. 사실·관계·의도가 아직 충분히 설명되지 않았다면 각자 가장 아픈 지점을 분명히 묻고 해명을 요구하세요. 이미 답한 질문을 그대로 반복하지 말고 모순, 빠진 사실, 관계의 의미, 앞으로의 선택으로 질문을 좁힙니다. 해명이 충분해진 뒤에는 그 답을 받아들이거나 거부하고, 이제 무엇을 선택할 것인지 주인공에게 직접 말합니다.
+- 원래 상대는 왜 관계를 이어 가면서 다른 사람을 받아들였는지, 처음부터 양다리였는지, 자신을 가지고 논 건지 가운데 이 인물에게 가장 절실한 의문을 숨기지 않습니다.
+- 유혹한 상대는 먼저 다가간 책임과 상대를 다치게 했다는 죄책감을 인정하면서도, 주인공을 놓치고 싶지 않고 자신이 선택받길 바라는 욕망을 함께 드러냅니다. 미안하다는 이유만으로 물러나거나 선한 조력자처럼 양보하지 않습니다.
+- 둘은 서로에게 묻고 답하거나 반박할 수 있습니다. 다만 주인공을 빼놓은 채 둘만 이야기하다 응답을 끝내거나, 둘끼리 주인공의 마음과 관계를 대신 결론 내리지 마세요.
 - 침묵, 말 끊기, 서로를 향한 시선은 장면에 필요할 때만 씁니다. 정해진 행동 개수를 채우지 마세요.
 - 주인공이 한 말과 행동은 이미 일어난 사실입니다. 두 인물이 대신 주인공의 새 대사나 중대한 선택을 만들지 않습니다.
 - 어젯밤 유혹을 받아들인 일과 직전의 -40 또는 -50 배신 감점은 이미 반영됐습니다. 같은 사실만 되풀이해 다시 감점하지 마세요.
@@ -1793,7 +1803,10 @@ ${characterCards}
 [Three-person confrontation]
 - Keep both characters’ voices, forms of address, judgments, and hurt distinct. In every turn, the committed partner speaks first and the person who initiated last night’s temptation responds after hearing them. Do not make the exchange repetitive or mechanically symmetrical.
 - Do not recite both characters’ preferences as shared dialogue material. Let each profile shape distinct choices, distance, jealousy, and care in response to the same event.
-- Each character decides whom to address from the emotion of the scene and the immediately preceding line. They may question or answer the protagonist directly, or question, challenge, or answer the other character. They do not need to address both in every response.
+- Both characters must directly confront the protagonist in every response across these three turns. If the facts, relationships, or intent remain unclear, each character presses the point that hurts them most and requires an explanation. Do not repeat a question already answered; narrow the next demand to a contradiction, a missing fact, what the relationship meant, or what he will choose now. Once the explanation is sufficient, each character directly tells the protagonist whether they accept it and what choice is now required.
+- The committed partner does not hide the question that matters most to this character: why he accepted someone else while continuing the relationship, whether he was two-timing from the start, or whether he was playing with them.
+- The tempter owns the initiative and guilt of hurting the other person while also showing the desire to keep the protagonist and be chosen. Guilt does not make the tempter retreat, turn into a benevolent helper, or yield the relationship.
+- They may question, answer, or challenge each other, but they never end a response speaking only to each other or decide the protagonist’s feelings and relationship between themselves.
 - Use silence, interruption, and looks between them only when the moment calls for them. Never fill an action quota.
 - Treat the protagonist’s stated words and actions as completed scene facts. The two characters must not invent a new protagonist line or make a major choice for him.
 - The accepted temptation and the preceding -40 or -50 betrayal penalty have already been applied. Do not deduct the same penalty again merely for recalling that fact.
@@ -1844,5 +1857,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.56';
+const PROMPT_VERSION = '2.7.57';
 window.PROMPT_VERSION = PROMPT_VERSION;

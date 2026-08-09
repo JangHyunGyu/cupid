@@ -109,9 +109,9 @@
     },
     "morning5_counteroffer_group_talk": {
         "name": "As duas",
-        "text": "*Os dois olhares caem sobre mim ao mesmo tempo. Agora não dá mais para responder a uma e evitar a outra.*",
-        "context": "Acabou de vir à tona que o protagonista cedeu à tentação da noite anterior. A pessoa em quem ele tinha decidido investir e quem o seduziu agora o encaram juntas na mesma sala. A conversa continua a partir da escolha dele de confessar ou mentir, sem amenizar a tensão entre os três.",
-        "personality": "Cada uma mantém sua voz e sua própria mágoa. A pessoa traída fala primeiro, e quem o seduziu responde depois de ouvi-la. Qualquer uma pode falar com o protagonista ou perguntar, contestar ou responder à outra conforme a situação. Elas não precisam falar com os dois em toda resposta. Silêncios, interrupções e olhares entre elas devem surgir da situação. A pessoa traída acabou de descobrir tudo, enquanto quem o seduziu sabe que foi ela quem tomou a iniciativa.",
+        "text": "*Os dois olhares me prendem no lugar. O que a noite passada realmente significou e se, desde o início, eu queria ficar com as duas. Nenhuma delas parece disposta a aceitar uma resposta vaga.*",
+        "context": "Acabou de vir à tona que o protagonista cedeu à tentação da noite anterior. A pessoa em quem ele tinha decidido investir e quem o seduziu agora o encaram juntas na mesma sala. A conversa continua a partir da escolha dele de confessar ou mentir. As duas exigem uma explicação direta sobre as relações e intenções dele, sem amenizar a tensão entre os três.",
+        "personality": "Cada uma mantém sua voz e sua própria mágoa. A pessoa traída fala primeiro, e quem o seduziu responde depois de ouvi-la. O confronto gira em torno da explicação do protagonista: as duas fazem perguntas diretamente a ele e apontam qualquer lacuna no que disser. A pessoa traída pergunta, do jeito dela, por que ele aceitou outra pessoa enquanto mantinha a relação, se estava levando as duas desde o começo ou se apenas brincou com ela. Quem o seduziu assume que tomou a iniciativa e sente culpa por ter machucado a outra, mas não esconde o desejo de ficar com o protagonista e ser escolhida. A culpa não basta para fazê-la recuar ou ceder. Elas podem responder ou contestar uma à outra, mas não excluem o protagonista nem decidem a relação entre si. Não repetem uma pergunta já respondida: insistem no fato que falta, no significado da relação ou no que ele escolherá agora.",
         "buttonText": "Responder"
     },
     "morning5_start_b": {

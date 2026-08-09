@@ -194,6 +194,15 @@ const freeTalkPressureByLanguage = {
     de: /kurzen Wechseln|viele Ausrufezeichen|Sätze länger|kürzeren Sätzen|lenkt mit Handlungen ab|Antworten werden kürzer|Klemmbrett|falten und aufzufalten|Handgelenkbandage|Weniger Ausrufezeichen bedeuten|\bTon:/i,
     pt: /trocas curtas|usa muitas exclamações|frases ficam mais longas|frases mais curtas|evita com ações|respostas ficam mais curtas|prancheta|dobrar e desdobrar|munhequeira|Menos exclamações significam|\bTom:/i
 };
+const groupConfrontationSignals = {
+    ko: ['직접 해명', '양다리', '가지고 논 건지', '죄책감', '선택받길 바라는 욕망', '물러나거나 양보하지 않는다'],
+    en: ['direct explanation', 'two-timing', 'playing with her', 'guilt', 'desire to keep the protagonist', 'retreat or yield'],
+    es: ['explicación directa', 'jugaba a dos bandas', 'jugando con ella', 'culpa', 'quiere quedarse con el protagonista', 'retire o ceda'],
+    ja: ['直接説明', '二股', 'もてあそんだ', '罪悪感', '選ばれたい', '身を引いたり譲ったりしない'],
+    fr: ['explication directe', 'jouait sur les deux tableaux', 'joué d’elle', 'culpabilité', 'désir de garder le protagoniste', 'reculer ou céder'],
+    de: ['direkte Erklärung', 'zweigleisig', 'mit ihr gespielt', 'Schuld', 'Wunsch, den Protagonisten', 'zieht sie sich nicht zurück'],
+    pt: ['explicação direta', 'levando as duas', 'brincou com ela', 'culpa', 'desejo de ficar com o protagonista', 'recuar ou ceder']
+};
 
 function assert(condition, message) {
     if (!condition) throw new Error(message);
@@ -261,6 +270,12 @@ function verifyLocalizedFreeTalkInventory() {
             const pressureMatch = injectedPrompt.match(freeTalkPressureByLanguage[lang]);
             assert(!pressureMatch,
                 `[${lang}/${id}] robotic scene pressure remains in ${entry.file}: ${pressureMatch?.[0]}`);
+        }
+        const confrontation = entries.get('morning5_counteroffer_group_talk')?.value;
+        const confrontationPrompt = `${confrontation?.text || ''}\n${confrontation?.context || ''}\n${confrontation?.personality || ''}`;
+        for (const signal of groupConfrontationSignals[lang]) {
+            assert(confrontationPrompt.includes(signal),
+                `[${lang}/morning5_counteroffer_group_talk] missing confrontation signal: ${signal}`);
         }
         const endingSignatures = new Map();
         for (const id of day5EndingFreeTalkIds) {
@@ -759,10 +774,18 @@ for (const lang of languages) {
     assert(parts.stable.includes('the committed partner speaks first')
         && parts.stable.includes('Include both characters exactly once'),
     `group/${lang} no longer guarantees the harmed-partner then tempter response order`);
-    assert(parts.stable.includes('They may question or answer the protagonist directly')
-        && parts.stable.includes('question, challenge, or answer the other character')
-        && parts.stable.includes('They do not need to address both in every response'),
-    `group/${lang} fixes the addressee instead of allowing protagonist-directed and character-to-character dialogue`);
+    assert(parts.stable.includes('Both characters must directly confront the protagonist in every response')
+        && parts.stable.includes('whether he was two-timing from the start')
+        && parts.stable.includes('whether he was playing with them')
+        && parts.stable.includes('requires an explanation'),
+    `group/${lang} does not make both characters directly demand an explanation from the protagonist`);
+    assert(parts.stable.includes('guilt of hurting the other person')
+        && parts.stable.includes('desire to keep the protagonist and be chosen')
+        && parts.stable.includes('Do not retreat or yield merely out of guilt'),
+    `group/${lang} tempter does not hold guilt and possessive desire at the same time`);
+    assert(parts.stable.includes('They may question, answer, or challenge each other')
+        && parts.stable.includes('never end a response speaking only to each other'),
+    `group/${lang} lost character-to-character dialogue or allows it to displace the protagonist confrontation`);
     assert(parts.stable.includes('Allowed expressions:'),
         `group/${lang} does not expose each participant expression asset contract`);
     assert(parts.stable.includes('small succulents')

@@ -798,10 +798,18 @@ function verifyGroupPromptCacheContract(context) {
         assert(splitCacheBoundary(characterGroupPrompt, `main/group/${character.key}`).stable.includes(character.relationshipSignal),
             `group prompt lost ${character.key}'s relationship profile`);
     }
-    assert(firstParts.stable.includes('주인공에게 직접 묻거나 답할 수 있고')
-        && firstParts.stable.includes('다른 인물에게 묻고 답하거나 그 말에 반박할 수도 있습니다')
-        && firstParts.stable.includes('매번 두 사람 모두에게 말을 걸 필요는 없습니다'),
-    'group prompt fixes the addressee instead of letting each character address the protagonist or the other character naturally');
+    assert(firstParts.stable.includes('두 인물 모두 매 응답에서 주인공을 직접 대면합니다')
+        && firstParts.stable.includes('처음부터 양다리였는지')
+        && firstParts.stable.includes('자신을 가지고 논 건지')
+        && firstParts.stable.includes('분명한 해명을 요구합니다'),
+    'group prompt does not make both characters directly demand an explanation from the protagonist');
+    assert(firstParts.stable.includes('상대를 다치게 했다는 죄책감')
+        && firstParts.stable.includes('주인공을 놓치고 싶지 않고 자신이 선택받길 바라는 욕망')
+        && firstParts.stable.includes('죄책감만으로 물러나거나 양보하지 않습니다'),
+    'group tempter does not hold guilt and possessive desire at the same time');
+    assert(firstParts.stable.includes('둘은 서로에게 묻고 답하거나 반박할 수 있습니다')
+        && firstParts.stable.includes('주인공을 빼놓은 채 둘만 이야기하다 응답을 끝내거나'),
+    'group prompt lost character-to-character dialogue or allows it to displace the protagonist confrontation');
     assert(firstParts.stable.includes('허용 표정:'),
         'group prompt does not expose each participant expression asset contract');
 }
