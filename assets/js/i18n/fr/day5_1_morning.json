@@ -6,6 +6,32 @@
     "morning5_start_branch": {},
     "morning5_temptation_discovery_branch": {},
     "morning5_temptation_counteroffer_branch": {},
+    "morning5_caught_teacher_counteroffer": {
+        "name": "Professeure principale",
+        "text": "*Le matin, dans la salle de classe, je pose mon téléphone pour montrer une photo de mon brouillon à ma professeure principale. L'écran s'allume sur un message de la fille avec qui j'étais hier soir : 'Ce qui s'est passé hier reste entre nous, d'accord ?' La professeure le lit jusqu'au bout et retire sa main du téléphone.* Tu as ignoré mon message hier soir pour retrouver cette fille ?",
+        "choices": ["Lui raconter sans rien cacher ce qui s'est passé hier soir", "Prétendre que ce n'était rien d'important"]
+    },
+    "morning5_caught_nurse_counteroffer": {
+        "name": "Infirmière",
+        "text": "*Au moment où je pose mon téléphone sur la table d'examen, l'écran s'allume. Un message de la fille avec qui j'étais hier soir apparaît : 'Ce qui s'est passé hier reste entre nous, d'accord ?' L'infirmière commence à sourire comme d'habitude, puis son expression s'efface lentement.* Alors tu n'as pas raté mon message hier. Tu étais avec cette fille ?",
+        "choices": ["Lui raconter sans rien cacher ce qui s'est passé hier soir", "Prétendre que ce n'était rien d'important"]
+    },
+    "morning5_caught_teacher_honest": {
+        "name": "Professeure principale",
+        "text": "*Ma professeure principale écoute tout en silence, puis referme le registre d'appel.* Je comprends que tu me dises la vérité maintenant. Mais ça n'efface pas la confiance que j'ai accordée à tes paroles hier soir. Rentre chez toi pour aujourd'hui."
+    },
+    "morning5_caught_teacher_lie": {
+        "name": "Professeure principale",
+        "text": "*Ma professeure principale regarde la nouvelle notification, puis mon visage. Sa voix devient plus froide qu'en plein cours.* Le mensonge que tu viens de me dire me déçoit davantage que ce qui s'est passé hier soir. Sors."
+    },
+    "morning5_caught_nurse_honest": {
+        "name": "Infirmière",
+        "text": "*L'infirmière écoute tout sans me dire que ce n'est rien. À la place, elle referme soigneusement le registre médical.* Tu te sentirais mieux si je disais que tout va bien. Mais je n'en suis pas capable maintenant. Rentre chez toi pour aujourd'hui. *Je quitte l'infirmerie et retourne en classe.*"
+    },
+    "morning5_caught_nurse_lie": {
+        "name": "Infirmière",
+        "text": "*L'infirmière vérifie la nouvelle notification et retire ses lunettes. Son regard croise le mien sans la moindre trace de son sourire habituel.* Ce n'était donc pas une douleur que tu cachais. Je ne peux pas soigner aussi tes mensonges. *Je quitte l'infirmerie et retourne en classe.*"
+    },
     "morning5_caught_by_seoyeon_route": {},
     "morning5_caught_by_yuna_route": {},
     "morning5_caught_by_dain_route": {},

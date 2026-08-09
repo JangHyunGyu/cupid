@@ -6,6 +6,32 @@
     "morning5_start_branch": {},
     "morning5_temptation_discovery_branch": {},
     "morning5_temptation_counteroffer_branch": {},
+    "morning5_caught_teacher_counteroffer": {
+        "name": "Homeroom Teacher",
+        "text": "*In the morning classroom, I set my phone down to show my homeroom teacher a photo of my draft. The screen lights up with a message from the girl I was with last night: 'What happened yesterday stays between us, right?' My teacher reads it to the end and takes her hand off the phone.* You ignored my message last night to meet this girl?",
+        "choices": ["Tell her what happened last night without hiding it", "Brush it off as nothing important"]
+    },
+    "morning5_caught_nurse_counteroffer": {
+        "name": "School Nurse",
+        "text": "*The moment I set my phone on the infirmary counter, the screen lights up. A message from the girl I was with last night reads, 'What happened yesterday stays between us, right?' The school nurse starts to give her usual smile, then slowly lets it fade.* So you didn't miss my message yesterday. You were with this girl?",
+        "choices": ["Tell her what happened last night without hiding it", "Brush it off as nothing important"]
+    },
+    "morning5_caught_teacher_honest": {
+        "name": "Homeroom Teacher",
+        "text": "*My homeroom teacher listens in silence, then closes the attendance book.* I understand that you're telling me the truth now. But that doesn't erase the trust I placed in your words last night. Go home for today."
+    },
+    "morning5_caught_teacher_lie": {
+        "name": "Homeroom Teacher",
+        "text": "*My homeroom teacher looks from the new notification to my face. Her voice turns colder than it ever does in class.* The lie you just told disappoints me more than what happened last night. Leave."
+    },
+    "morning5_caught_nurse_honest": {
+        "name": "School Nurse",
+        "text": "*The school nurse hears everything without telling me it's all right. Instead, she neatly closes the medical log.* You'd feel better if I said it was fine. But I can't say that right now. Please go for today. *I leave the nurse's office and return to the classroom.*"
+    },
+    "morning5_caught_nurse_lie": {
+        "name": "School Nurse",
+        "text": "*The school nurse checks the new notification and removes her glasses. Her eyes meet mine without a trace of their usual smile.* So it wasn't an ache you were hiding. I can't take care of your lies too. *I leave the nurse's office and return to the classroom.*"
+    },
     "morning5_caught_by_seoyeon_route": {},
     "morning5_caught_by_yuna_route": {},
     "morning5_caught_by_dain_route": {},

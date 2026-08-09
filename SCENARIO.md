@@ -15900,6 +15900,48 @@
 ### `day4_night_branch`
 - 배경: `room_my.png`
 - 분기:
+  - [`homeroom_day4`] → `day4_adult_teacher_overall_rank`
+  - [`nurse_day4`] → `day4_adult_nurse_overall_rank`
+  - [기본] → `day4_student_night_branch`
+
+- 캐릭터: `없음`
+**시스템**: ‹빈›
+
+---
+
+### `day4_adult_teacher_overall_rank`
+- 배경: `room_my.png`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `day4_adult_nurse_flag_check`
+- 배경: `room_my.png`
+- 분기:
+  - [`nurse_day4`] → `day4_adult_nurse_overall_rank`
+  - [기본] → `day4_student_night_branch`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `day4_adult_nurse_overall_rank`
+- 배경: `room_my.png`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `day4_student_night_branch`
+- 배경: `room_my.png`
+- 분기:
   - [`day4_waited`] → `day4_night_regret`
   - [`route_seoyeon`] → `wall_seo_1`
   - [`route_dain`] → `wall_dain_1`
@@ -15907,7 +15949,8 @@
   - [기본] → `day4_night_reflect`
 
 - 캐릭터: `없음`
-**시스템**: ‹빈›
+
+<!-- i18n -->
 
 ---
 
@@ -17760,6 +17803,150 @@
 
 ---
 
+### `day4_adult_teacher_student_rank`
+- 배경: `room_my.png`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `day4_adult_nurse_student_rank`
+- 배경: `room_my.png`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `day4_teacher_seoyeon_counteroffer`
+- 배경: `school_back.png`
+- 선택지:
+  1. "담임과 한 약속을 지키고 돌아간다" → `day4_hidden_msg_branch` | Teacher +4, Seoyeon -6 | 플래그: `day4_held_route_teacher`
+  2. "서연을 따라 옥상에 올라가 손을 잡는다" → `day4_adult_counteroffer_accept_seoyeon` | Seoyeon +8, Teacher -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
+
+- 캐릭터: `seyoun_sad.png`
+**서연**: *담임과 헤어져 학교를 나서려는데 서연이 옥상 계단 앞에서 기다리고 있다. 웃고는 있지만 교복 소매를 쥔 손에 힘이 들어가 있다.* 요즘 선생님만 보고 있잖아. 오늘만은 학생회장도 모범생도 아닌 나를 봐주면 안 돼?
+
+---
+
+### `day4_teacher_dain_counteroffer`
+- 배경: `gym.png`
+- 배경톤: `lights-off`
+- 선택지:
+  1. "담임에게 돌아간다고 답장한다" → `day4_hidden_msg_branch` | Teacher +4, Dain -6 | 플래그: `day4_held_route_teacher`
+  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `day4_adult_counteroffer_accept_dain` | Dain +8, Teacher -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
+
+- 캐릭터: `dain_sad.png`
+**다인**: *담임에게 도착하면 연락하겠다고 한 뒤, 체육관 앞을 지난다. 불 꺼진 비상문에 기대 있던 다인이 무릎 테이프를 만지작거린다.* 요즘 선생님한테만 가잖아. 열 번만 받아줘. 끝나면… 오늘은 나 좀 안아주라.
+
+---
+
+### `day4_teacher_yuna_counteroffer`
+- 배경: `yuna_hideout.png`
+- 선택지:
+  1. "담임에게 답장하고 집으로 돌아간다" → `day4_hidden_msg_branch` | Teacher +4, Yuna -6 | 플래그: `day4_held_route_teacher`
+  2. "별관으로 가서 유나 곁에 남는다" → `day4_adult_counteroffer_accept_yuna` | Yuna +8, Teacher -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
+
+- 캐릭터: `yuna_sad.png`
+**유나**: *담임과 헤어진 직후 유나에게서 별관 사진이 온다. 빈 의자 두 개가 나란히 놓여 있고 한쪽에 유나의 재킷이 걸려 있다.* 선생님 옆이 더 편한가 봐. 그래도 오늘 네가 그냥 가면, 또 혼자 남겨진 기분일 것 같아.
+
+---
+
+### `day4_nurse_seoyeon_counteroffer`
+- 배경: `school_back.png`
+- 선택지:
+  1. "보건선생님에게 답장하고 돌아간다" → `day4_hidden_msg_branch` | Nurse +4, Seoyeon -6 | 플래그: `day4_held_route_nurse`
+  2. "서연을 따라 옥상에 올라가 손을 잡는다" → `day4_adult_counteroffer_accept_seoyeon` | Seoyeon +8, Nurse -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
+
+- 캐릭터: `seyoun_sad.png`
+**서연**: *보건실을 나와 정문으로 향하는데 서연이 옥상 계단 앞을 막아선다. 애써 웃는 입술과 달리 손끝은 교복 소매를 구기고 있다.* 요즘 보건선생님만 찾아가잖아. 오늘만은 학생회장도 모범생도 아닌 나를 봐주면 안 돼?
+
+---
+
+### `day4_adult_counteroffer_accept_seoyeon`
+- 배경: `event_temptation_seoyeon.png`
+- 다음: `day4_adult_night_regret_target_branch`
+
+- 캐릭터: `없음`
+**{name}**: *옥상 문이 닫히자 서연은 {name}의 손목을 잡아 자기 가슴 위에 손을 얹는다. 느슨하게 푼 리본 아래로 셔츠 깃이 벌어지고 떨리는 숨이 손등에 닿는다. 주머니 속 휴대폰이 연달아 울리지만 서연은 손을 놓지 않는다. 한참 뒤 학교를 나와 집으로 돌아간다.*
+
+---
+
+### `day4_nurse_dain_counteroffer`
+- 배경: `gym.png`
+- 배경톤: `lights-off`
+- 선택지:
+  1. "보건선생님에게 돌아간다고 답장한다" → `day4_hidden_msg_branch` | Nurse +4, Dain -6 | 플래그: `day4_held_route_nurse`
+  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `day4_adult_counteroffer_accept_dain` | Dain +8, Nurse -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
+
+- 캐릭터: `dain_sad.png`
+**다인**: *보건실 문을 닫고 나오자 체육관 비상문 앞에 다인이 서 있다. 다인은 무릎 테이프를 뜯었다 붙이며 시선을 피한다.* 요즘 보건선생님한테만 가잖아. 열 번만 받아줘. 끝나면… 오늘은 나 좀 안아주라.
+
+---
+
+### `day4_adult_counteroffer_accept_dain`
+- 배경: `event_temptation_dain.png`
+- 다음: `day4_adult_night_regret_target_branch`
+
+- 캐릭터: `없음`
+**{name}**: *마지막 공이 바닥을 굴러간다. 다인은 거친 숨을 고르며 유니폼 앞자락을 움켜쥐고 아래로 당긴다. 그대로 {name} 바로 앞까지 몸을 깊이 숙이자 땀에 젖은 숨이 코앞에 닿는다. 주머니 속 휴대폰이 연달아 울린다. 한참 뒤 학교를 나와 집으로 돌아간다.*
+
+---
+
+### `day4_nurse_yuna_counteroffer`
+- 배경: `yuna_hideout.png`
+- 선택지:
+  1. "보건선생님에게 답장하고 집으로 돌아간다" → `day4_hidden_msg_branch` | Nurse +4, Yuna -6 | 플래그: `day4_held_route_nurse`
+  2. "별관으로 가서 유나 곁에 남는다" → `day4_adult_counteroffer_accept_yuna` | Yuna +8, Nurse -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
+
+- 캐릭터: `yuna_sad.png`
+**유나**: *보건실을 나선 뒤 유나에게서 별관 사진 한 장이 도착한다. 빈 의자 두 개 중 하나에 유나의 재킷이 놓여 있다.* 선생님 옆이 더 편한가 봐. 그래도 오늘 네가 그냥 가면, 또 혼자 남겨진 기분일 것 같아.
+
+---
+
+### `day4_adult_counteroffer_accept_yuna`
+- 배경: `event_temptation_yuna.png`
+- 다음: `day4_adult_night_regret_target_branch`
+
+- 캐릭터: `없음`
+**{name}**: *유나는 {name} 바로 앞까지 다가와 한 손으로 책장을 짚는다. 재킷을 한쪽 어깨 아래로 흘려 내리고 다른 손으로 안쪽 상의의 목깃까지 끌어내린다. 드러난 맨어깨와 타투 사이로 붉은 눈만은 한 번도 피하지 않는다. 책상 위 휴대폰이 다시 울린다. 한참 뒤 별관을 나와 집으로 돌아간다.*
+
+---
+
+### `day4_adult_night_regret_target_branch`
+- 배경: `room_my.png`
+- 분기:
+  - [`day4_counteroffer_target_teacher`] → `day4_adult_night_regret_teacher`
+  - [`day4_counteroffer_target_nurse`] → `day4_adult_night_regret_nurse`
+  - [기본] → `day4_night_regret`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `day4_adult_night_regret_teacher`
+- 배경: `room_my.png`
+- 다음: `day4_hidden_msg_branch`
+
+- 캐릭터: `teacher_sad.png` @ 0.35
+**{name}**: *집에 돌아와 휴대폰을 켜자 담임이 보낸 '도착하면 알려 달랬는데 무슨 일 있니?'가 떠 있다. 답장을 쓰려던 손이 입력창 위에서 멎는다.*
+
+---
+
+### `day4_adult_night_regret_nurse`
+- 배경: `room_my.png`
+- 다음: `day4_hidden_msg_branch`
+
+- 캐릭터: `nurse_worried.png` @ 0.35
+**{name}**: *집에 돌아와 휴대폰을 켜자 보건선생님의 '아까 표정이 안 좋아 보였는데 집에는 잘 갔어?'가 떠 있다. 괜찮다고 쓰려던 손이 입력창 위에서 멎는다.*
+
+---
+
 ### `wall_seo_glimpse_1`
 - 배경: `school_back.png`
 - 다음: `wall_seo_glimpse_2`
@@ -18154,6 +18341,7 @@
 ### `morning5_start_branch`
 - 배경: `room_school.png`
 - 분기:
+  - [`day4_counteroffer_penalty_deferred`] → `morning5_temptation_counteroffer_branch`
   - [`day4_confession_accepted`] → `morning5_temptation_discovery_branch`
   - [기본] → `morning5_start_b`
 
@@ -18178,6 +18366,8 @@
 ### `morning5_temptation_counteroffer_branch`
 - 배경: `room_school.png`
 - 분기:
+  - [`day4_counteroffer_target_teacher`] → `morning5_caught_teacher_counteroffer`
+  - [`day4_counteroffer_target_nurse`] → `morning5_caught_nurse_counteroffer`
   - [`day4_took_seoyeon_counteroffer`] → `morning5_caught_by_seoyeon_route`
   - [`day4_took_yuna_counteroffer`] → `morning5_caught_by_yuna_route`
   - [`day4_took_dain_counteroffer`] → `morning5_caught_by_dain_route`
@@ -18186,6 +18376,67 @@
 - 캐릭터: `없음`
 
 <!-- i18n -->
+
+---
+
+### `morning5_caught_teacher_counteroffer`
+- 배경: `room_school.png`
+- 배경톤: `empty`
+- 선택지:
+  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_teacher_honest` | Teacher -40 | 플래그: `day5_confessed_counteroffer`
+  2. "별일 아니었다고 둘러댄다" → `morning5_caught_teacher_lie` | Teacher -50 | 플래그: `day5_lied_about_counteroffer`
+
+- 캐릭터: `teacher_sad.png`
+**담임선생님**: *아침 교실. 담임에게 원고 사진을 보여주려고 휴대폰을 내려놓는 순간 화면이 켜진다. 어젯밤 함께 있던 아이에게서 '어제 일, 우리 둘만 아는 거지?'라는 알림이 뜬다. 담임은 화면을 끝까지 읽고 휴대폰에서 손을 뗀다.* 어젯밤 내 연락에는 답하지 않고 이 아이를 만난 거니?
+
+---
+
+### `morning5_caught_teacher_honest`
+- 배경: `room_school.png`
+- 배경톤: `empty`
+- 다음: `morning5_committed_start`
+
+- 캐릭터: `teacher_sad.png`
+**담임선생님**: *담임은 말없이 전부 듣고 나서 출석부를 덮는다.* 솔직히 말한 건 알겠다. 하지만 어젯밤 내가 믿은 네 말까지 없던 일이 되진 않아. 오늘은 돌아가렴.
+
+---
+
+### `morning5_caught_teacher_lie`
+- 배경: `room_school.png`
+- 배경톤: `empty`
+- 다음: `morning5_committed_start`
+
+- 캐릭터: `teacher_angry.png`
+**담임선생님**: *담임은 다시 울린 알림과 맞은편 얼굴을 번갈아 본다. 목소리가 수업 시간보다 더 차갑게 가라앉는다.* 어젯밤 일보다 지금 네가 한 거짓말이 더 실망스럽구나. 나가렴.
+
+---
+
+### `morning5_caught_nurse_counteroffer`
+- 배경: `nurse_room.png`
+- 선택지:
+  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_nurse_honest` | Nurse -40 | 플래그: `day5_confessed_counteroffer`
+  2. "별일 아니었다고 둘러댄다" → `morning5_caught_nurse_lie` | Nurse -50 | 플래그: `day5_lied_about_counteroffer`
+
+- 캐릭터: `nurse_worried.png`
+**보건선생님**: *보건실 진료대에 휴대폰을 내려놓는 순간 화면이 켜진다. 어젯밤 함께 있던 아이에게서 '어제 일, 우리 둘만 아는 거지?'라는 알림이 뜬다. 보건선생님은 평소처럼 웃으려다 입꼬리를 천천히 내린다.* 어제 내 연락을 못 본 게 아니라, 이 아이와 함께 있었던 거야?
+
+---
+
+### `morning5_caught_nurse_honest`
+- 배경: `nurse_room.png`
+- 다음: `morning5_committed_start`
+
+- 캐릭터: `nurse_worried.png`
+**보건선생님**: *보건선생님은 끝까지 듣고도 괜찮다는 말은 하지 않는다. 대신 진료 기록을 가지런히 덮는다.* 괜찮다고 해주면 네 마음은 편하겠지. 그런데 나는 지금 그럴 수가 없네. 오늘은 가 줘. *보건실을 나와 교실로 돌아간다.*
+
+---
+
+### `morning5_caught_nurse_lie`
+- 배경: `nurse_room.png`
+- 다음: `morning5_committed_start`
+
+- 캐릭터: `nurse_angry.png`
+**보건선생님**: *보건선생님은 다시 뜬 알림을 확인하고 안경을 벗는다. 웃음기 없는 눈이 곧장 마주친다.* 아픈 데가 아니라 숨기는 게 있었네. 거짓말까지 돌봐줄 자신은 없어. *보건실을 나와 교실로 돌아간다.*
 
 ---
 

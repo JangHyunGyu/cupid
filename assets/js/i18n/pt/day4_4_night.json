@@ -7,6 +7,63 @@
         "name": "Sistema",
         "text": ""
     },
+    "day4_adult_teacher_overall_rank": {},
+    "day4_adult_nurse_flag_check": {},
+    "day4_adult_nurse_overall_rank": {},
+    "day4_adult_teacher_student_rank": {},
+    "day4_adult_nurse_student_rank": {},
+    "day4_teacher_seoyeon_counteroffer": {
+        "name": "Seoyeon",
+        "text": "*Quando vou sair da escola depois de me despedir da professora, Seoyeon está esperando perto da escada do terraço. Ela sorri, mas aperta com força a manga do uniforme.* Ultimamente você só olha para a professora. Só por hoje, não pode olhar para mim sem ver a presidente do grêmio nem a aluna exemplar?",
+        "choices": ["Cumprir a promessa feita à professora e ir embora", "Seguir Seoyeon até o terraço e segurar sua mão"]
+    },
+    "day4_teacher_dain_counteroffer": {
+        "name": "Dain",
+        "text": "*Depois de prometer à professora que mandaria uma mensagem ao chegar, passo pelo ginásio. Dain está encostada na saída de emergência escura, mexendo na fita do joelho.* Ultimamente você só vai atrás da professora. Recebe dez saques meus. Quando acabarmos... me abraça hoje.",
+        "choices": ["Escrever à professora que estou voltando", "Entrar no ginásio e aceitar o pedido de Dain"]
+    },
+    "day4_teacher_yuna_counteroffer": {
+        "name": "Yuna",
+        "text": "*Logo depois de me despedir da professora, Yuna manda uma foto do anexo. Duas cadeiras vazias estão lado a lado, com a jaqueta dela sobre uma delas.* Parece que você fica mais à vontade ao lado da professora. Mas, se for embora hoje, vou me sentir abandonada de novo.",
+        "choices": ["Responder à professora e voltar para casa", "Ir ao anexo e ficar com Yuna"]
+    },
+    "day4_nurse_seoyeon_counteroffer": {
+        "name": "Seoyeon",
+        "text": "*No caminho da enfermaria até o portão, Seoyeon bloqueia a escada do terraço. Os lábios forçam um sorriso enquanto os dedos amassam a manga do uniforme.* Ultimamente você só visita a enfermeira. Só por hoje, não pode olhar para mim sem ver a presidente do grêmio nem a aluna exemplar?",
+        "choices": ["Responder à enfermeira e ir embora", "Seguir Seoyeon até o terraço e segurar sua mão"]
+    },
+    "day4_nurse_dain_counteroffer": {
+        "name": "Dain",
+        "text": "*Quando fecho a porta da enfermaria, Dain está junto à saída de emergência do ginásio. Ela descola e cola novamente a fita do joelho sem olhar para mim.* Ultimamente você só vai atrás da enfermeira. Recebe dez saques meus. Quando acabarmos... me abraça hoje.",
+        "choices": ["Escrever à enfermeira que estou voltando", "Entrar no ginásio e aceitar o pedido de Dain"]
+    },
+    "day4_nurse_yuna_counteroffer": {
+        "name": "Yuna",
+        "text": "*Depois que saio da enfermaria, Yuna manda uma foto do anexo. A jaqueta dela está sobre uma das duas cadeiras vazias.* Parece que você fica mais à vontade ao lado da enfermeira. Mas, se for embora hoje, vou me sentir abandonada de novo.",
+        "choices": ["Responder à enfermeira e voltar para casa", "Ir ao anexo e ficar com Yuna"]
+    },
+    "day4_adult_counteroffer_accept_seoyeon": {
+        "name": "{name}",
+        "text": "*Quando a porta do terraço se fecha, Seoyeon segura o pulso de {name} e coloca aquela mão sobre o próprio peito. O laço frouxo deixa o colarinho da camisa aberto, e sua respiração trêmula toca o dorso da mão. O celular vibra sem parar no bolso, mas Seoyeon não solta. Muito tempo depois, eles saem da escola e voltam para casa.*"
+    },
+    "day4_adult_counteroffer_accept_dain": {
+        "name": "{name}",
+        "text": "*A última bola rola pelo chão. Tentando recuperar o fôlego, Dain agarra a frente do uniforme e puxa para baixo. Ela se inclina até ficar diante de {name}, e sua respiração quente e úmida chega ao rosto. O celular continua vibrando no bolso. Muito tempo depois, eles saem da escola e voltam para casa.*"
+    },
+    "day4_adult_counteroffer_accept_yuna": {
+        "name": "{name}",
+        "text": "*Yuna se aproxima até ficar diante de {name} e apoia uma mão na estante. Deixa a jaqueta cair abaixo de um ombro e, com a outra mão, puxa o decote da blusa por baixo. Entre o ombro nu e a tatuagem, seus olhos vermelhos não desviam uma única vez. O celular vibra de novo sobre a mesa. Muito tempo depois, eles saem do anexo e voltam para casa.*"
+    },
+    "day4_adult_night_regret_target_branch": {},
+    "day4_adult_night_regret_teacher": {
+        "name": "{name}",
+        "text": "*Em casa, ligo o celular e vejo a mensagem da professora: 'Pedi para me avisar quando chegasse. Aconteceu alguma coisa?'. Minha mão para sobre o campo de resposta.*"
+    },
+    "day4_adult_night_regret_nurse": {
+        "name": "{name}",
+        "text": "*Em casa, ligo o celular e vejo a mensagem da enfermeira: 'Você não parecia bem antes. Chegou em casa em segurança?'. Minha mão para sobre o campo de resposta antes de eu conseguir escrever que estou bem.*"
+    },
+    "day4_student_night_branch": {},
     "wall_seo_1": {
         "name": "{name}",
         "text": "*22h. Seoyeon me liga. Não há traço de sorriso na voz dela.*"

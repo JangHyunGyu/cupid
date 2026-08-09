@@ -6,6 +6,32 @@
     "morning5_start_branch": {},
     "morning5_temptation_discovery_branch": {},
     "morning5_temptation_counteroffer_branch": {},
+    "morning5_caught_teacher_counteroffer": {
+        "name": "Professora",
+        "text": "*De manhã, na sala de aula, coloco o celular sobre a mesa para mostrar à professora uma foto do rascunho. A tela acende com uma mensagem da garota com quem estive ontem: 'O que aconteceu ontem fica só entre nós, certo?'. A professora lê até o fim e tira a mão do celular.* Você ignorou minha mensagem ontem para encontrar essa garota?",
+        "choices": ["Contar sem esconder o que aconteceu ontem à noite", "Dizer que não foi nada importante"]
+    },
+    "morning5_caught_nurse_counteroffer": {
+        "name": "Enfermeira",
+        "text": "*Assim que coloco o celular sobre a maca da enfermaria, a tela acende. Uma mensagem da garota com quem estive ontem diz: 'O que aconteceu ontem fica só entre nós, certo?'. A enfermeira tenta sorrir como sempre, mas a expressão desaparece devagar.* Então você não deixou de ver minha mensagem. Estava com essa garota?",
+        "choices": ["Contar sem esconder o que aconteceu ontem à noite", "Dizer que não foi nada importante"]
+    },
+    "morning5_caught_teacher_honest": {
+        "name": "Professora",
+        "text": "*A professora ouve tudo em silêncio e fecha o livro de chamada.* Eu entendo que está me dizendo a verdade agora. Mas isso não apaga a confiança que depositei nas suas palavras ontem. Vá para casa hoje."
+    },
+    "morning5_caught_teacher_lie": {
+        "name": "Professora",
+        "text": "*A professora olha para a nova notificação e depois para meu rosto. Sua voz fica mais fria do que durante qualquer aula.* A mentira que acabou de contar me decepciona mais do que o que aconteceu ontem. Saia."
+    },
+    "morning5_caught_nurse_honest": {
+        "name": "Enfermeira",
+        "text": "*A enfermeira ouve tudo sem dizer que está tudo bem. Em vez disso, fecha com cuidado o prontuário.* Você se sentiria melhor se eu dissesse que não tem problema. Mas agora não consigo dizer isso. Por favor, vá embora hoje. *Saio da enfermaria e volto para a sala de aula.*"
+    },
+    "morning5_caught_nurse_lie": {
+        "name": "Enfermeira",
+        "text": "*A enfermeira verifica a nova notificação e tira os óculos. Seus olhos encontram os meus sem nenhum sinal do sorriso de sempre.* Então não era uma dor que você estava escondendo. Não consigo cuidar também das suas mentiras. *Saio da enfermaria e volto para a sala de aula.*"
+    },
     "morning5_caught_by_seoyeon_route": {},
     "morning5_caught_by_yuna_route": {},
     "morning5_caught_by_dain_route": {},

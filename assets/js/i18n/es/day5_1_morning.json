@@ -6,6 +6,32 @@
     "morning5_start_branch": {},
     "morning5_temptation_discovery_branch": {},
     "morning5_temptation_counteroffer_branch": {},
+    "morning5_caught_teacher_counteroffer": {
+        "name": "Profesora",
+        "text": "*En el aula por la mañana, dejo el teléfono sobre la mesa para enseñarle a la profesora una foto del borrador. La pantalla se ilumina con un mensaje de la chica con la que estuve anoche: 'Lo de ayer queda entre nosotros, ¿verdad?'. La profesora lo lee entero y aparta la mano del teléfono.* ¿Anoche ignoraste mi mensaje para verte con esta chica?",
+        "choices": ["Contarle lo que pasó anoche sin ocultarlo", "Restarle importancia y decir que no fue nada"]
+    },
+    "morning5_caught_nurse_counteroffer": {
+        "name": "Enfermera",
+        "text": "*En cuanto dejo el teléfono sobre la camilla de la enfermería, la pantalla se ilumina. Un mensaje de la chica con la que estuve anoche dice: 'Lo de ayer queda entre nosotros, ¿verdad?'. La enfermera intenta sonreír como siempre, pero deja caer lentamente las comisuras de los labios.* Así que no es que no vieras mi mensaje. ¿Estabas con esta chica?",
+        "choices": ["Contarle lo que pasó anoche sin ocultarlo", "Restarle importancia y decir que no fue nada"]
+    },
+    "morning5_caught_teacher_honest": {
+        "name": "Profesora",
+        "text": "*La profesora escucha todo en silencio y cierra el libro de asistencia.* Entiendo que ahora me estés diciendo la verdad. Pero eso no borra la confianza que puse anoche en tus palabras. Vete a casa por hoy."
+    },
+    "morning5_caught_teacher_lie": {
+        "name": "Profesora",
+        "text": "*La profesora mira la nueva notificación y luego mi rostro. Su voz se vuelve más fría que durante cualquier clase.* La mentira que acabas de contarme me decepciona más que lo de anoche. Sal."
+    },
+    "morning5_caught_nurse_honest": {
+        "name": "Enfermera",
+        "text": "*La enfermera lo escucha todo sin decir que no pasa nada. En su lugar, cierra con cuidado el registro médico.* Te sentirías mejor si dijera que está bien. Pero ahora mismo no puedo decirlo. Por favor, vete por hoy. *Salgo de la enfermería y vuelvo al aula.*"
+    },
+    "morning5_caught_nurse_lie": {
+        "name": "Enfermera",
+        "text": "*La enfermera comprueba la nueva notificación y se quita las gafas. Sus ojos se clavan en los míos sin rastro de la sonrisa habitual.* Así que no era un dolor lo que escondías. No puedo cuidar también de tus mentiras. *Salgo de la enfermería y vuelvo al aula.*"
+    },
     "morning5_caught_by_seoyeon_route": {},
     "morning5_caught_by_yuna_route": {},
     "morning5_caught_by_dain_route": {},

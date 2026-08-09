@@ -7,6 +7,63 @@
         "name": "System",
         "text": ""
     },
+    "day4_adult_teacher_overall_rank": {},
+    "day4_adult_nurse_flag_check": {},
+    "day4_adult_nurse_overall_rank": {},
+    "day4_adult_teacher_student_rank": {},
+    "day4_adult_nurse_student_rank": {},
+    "day4_teacher_seoyeon_counteroffer": {
+        "name": "Seoyeon",
+        "text": "*As I leave school after parting with my homeroom teacher, Seoyeon is waiting by the rooftop stairs. She's smiling, but her grip tightens around her uniform sleeve.* You've only had eyes for the teacher lately. Just tonight, can't you look at me—not the student council president or the model student, just me?",
+        "choices": ["Keep my promise to my homeroom teacher and leave", "Follow Seoyeon to the rooftop and take her hand"]
+    },
+    "day4_teacher_dain_counteroffer": {
+        "name": "Dain",
+        "text": "*After promising my homeroom teacher I'd message when I arrived, I pass the gym. Dain leans against the dark emergency door, picking at the tape on her knee.* You only go to the teacher these days. Return ten serves for me. When we're done... hold me tonight.",
+        "choices": ["Message my homeroom teacher that I'm coming back", "Enter the gym and accept Dain's request"]
+    },
+    "day4_teacher_yuna_counteroffer": {
+        "name": "Yuna",
+        "text": "*Right after I part with my homeroom teacher, Yuna sends a photo of the annex. Two empty chairs sit side by side, her jacket draped over one.* I guess you're more comfortable beside the teacher. But if you leave tonight, I think I'll feel abandoned all over again.",
+        "choices": ["Reply to my homeroom teacher and go home", "Go to the annex and stay with Yuna"]
+    },
+    "day4_nurse_seoyeon_counteroffer": {
+        "name": "Seoyeon",
+        "text": "*On my way from the nurse's office to the front gate, Seoyeon blocks the rooftop stairs. Her lips force a smile while her fingers crumple her uniform sleeve.* You only visit the school nurse lately. Just tonight, can't you look at me—not the student council president or the model student, just me?",
+        "choices": ["Reply to the school nurse and leave", "Follow Seoyeon to the rooftop and take her hand"]
+    },
+    "day4_nurse_dain_counteroffer": {
+        "name": "Dain",
+        "text": "*When I close the nurse's office door behind me, Dain is standing by the gym's emergency exit. She peels the tape from her knee and presses it back down without meeting my eyes.* You only go to the school nurse these days. Return ten serves for me. When we're done... hold me tonight.",
+        "choices": ["Message the school nurse that I'm coming back", "Enter the gym and accept Dain's request"]
+    },
+    "day4_nurse_yuna_counteroffer": {
+        "name": "Yuna",
+        "text": "*After I leave the nurse's office, Yuna sends a photo of the annex. Her jacket rests on one of two empty chairs.* I guess you're more comfortable beside the nurse. But if you leave tonight, I think I'll feel abandoned all over again.",
+        "choices": ["Reply to the school nurse and go home", "Go to the annex and stay with Yuna"]
+    },
+    "day4_adult_counteroffer_accept_seoyeon": {
+        "name": "{name}",
+        "text": "*As the rooftop door closes, Seoyeon catches {name}'s wrist and places their hand over her chest. Her loosened ribbon leaves her shirt collar open, and her trembling breath brushes the back of their hand. The phone in their pocket buzzes again and again, but Seoyeon doesn't let go. Much later, they leave the school and return home.*"
+    },
+    "day4_adult_counteroffer_accept_dain": {
+        "name": "{name}",
+        "text": "*The last ball rolls across the floor. Catching her ragged breath, Dain grips the front of her uniform and pulls it down. She leans in until her sweat-warmed breath reaches {name}'s face. The phone in their pocket keeps buzzing. Much later, they leave the school and return home.*"
+    },
+    "day4_adult_counteroffer_accept_yuna": {
+        "name": "{name}",
+        "text": "*Yuna steps right up to {name}, bracing one hand on the bookcase. She lets her jacket slip below one shoulder and uses her other hand to tug down the neckline beneath it. Between her bare shoulder and tattoo, her red eyes never look away. The phone on the desk buzzes again. Much later, they leave the annex and return home.*"
+    },
+    "day4_adult_night_regret_target_branch": {},
+    "day4_adult_night_regret_teacher": {
+        "name": "{name}",
+        "text": "*Back home, I turn on my phone and see my homeroom teacher's message: 'I asked you to let me know when you arrived. Is something wrong?' My hand stops over the reply box.*"
+    },
+    "day4_adult_night_regret_nurse": {
+        "name": "{name}",
+        "text": "*Back home, I turn on my phone and see the school nurse's message: 'You looked a little unwell earlier. Did you get home safely?' My hand stops over the reply box before I can type that I'm fine.*"
+    },
+    "day4_student_night_branch": {},
     "wall_seo_1": {
         "name": "{name}",
         "text": "*10 PM. A call from Seoyeon. There's no laughter in her voice.*"

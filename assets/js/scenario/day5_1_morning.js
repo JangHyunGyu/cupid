@@ -19,6 +19,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/room_school.png",
         "character": null,
         "branches": [
+            { "condition": "day4_counteroffer_penalty_deferred", "next": "morning5_temptation_counteroffer_branch" },
             { "condition": "day4_confession_accepted", "next": "morning5_temptation_discovery_branch" },
             { "next": "morning5_start_b" }
         ]
@@ -35,11 +36,52 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/room_school.png",
         "character": null,
         "branches": [
+            { "condition": "day4_counteroffer_target_teacher", "next": "morning5_caught_teacher_counteroffer" },
+            { "condition": "day4_counteroffer_target_nurse", "next": "morning5_caught_nurse_counteroffer" },
             { "condition": "day4_took_seoyeon_counteroffer", "next": "morning5_caught_by_seoyeon_route" },
             { "condition": "day4_took_yuna_counteroffer", "next": "morning5_caught_by_yuna_route" },
             { "condition": "day4_took_dain_counteroffer", "next": "morning5_caught_by_dain_route" },
             { "next": "morning5_committed_start" }
         ]
+    },
+    "morning5_caught_teacher_counteroffer": {
+        "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "empty",
+        "character": "assets/images/characters/teacher_sad.png",
+        "choices": [
+            { "next": "morning5_caught_teacher_honest", "stats": {"Teacher":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer"] },
+            { "next": "morning5_caught_teacher_lie", "stats": {"Teacher":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer"] }
+        ]
+    },
+    "morning5_caught_nurse_counteroffer": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_worried.png",
+        "choices": [
+            { "next": "morning5_caught_nurse_honest", "stats": {"Nurse":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer"] },
+            { "next": "morning5_caught_nurse_lie", "stats": {"Nurse":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer"] }
+        ]
+    },
+    "morning5_caught_teacher_honest": {
+        "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "empty",
+        "character": "assets/images/characters/teacher_sad.png",
+        "next": "morning5_committed_start"
+    },
+    "morning5_caught_teacher_lie": {
+        "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "empty",
+        "character": "assets/images/characters/teacher_angry.png",
+        "next": "morning5_committed_start"
+    },
+    "morning5_caught_nurse_honest": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_worried.png",
+        "next": "morning5_committed_start"
+    },
+    "morning5_caught_nurse_lie": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_angry.png",
+        "next": "morning5_committed_start"
     },
     "morning5_caught_by_seoyeon_route": {
         "background": "assets/images/background/room_school.png",

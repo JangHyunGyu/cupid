@@ -97,8 +97,8 @@ test('direct choice affinity distribution keeps subtle penalties meaningful but 
         }
     }
 
-    assert.equal(total, 177);
-    assert.deepEqual(counts, { positive: 59, negative: 54, neutral: 51, mixed: 13 });
+    assert.equal(total, 193);
+    assert.deepEqual(counts, { positive: 59, negative: 58, neutral: 51, mixed: 25 });
 });
 
 test('two-option screens retain their original response and add the trap as a third choice', () => {
@@ -132,8 +132,8 @@ test('negative-choice screens stay distributed across every story day', () => {
         1: { choiceScreens: 11, negativeScreens: 7 },
         2: { choiceScreens: 13, negativeScreens: 8 },
         3: { choiceScreens: 18, negativeScreens: 11 },
-        4: { choiceScreens: 21, negativeScreens: 15 },
-        5: { choiceScreens: 11, negativeScreens: 9 }
+        4: { choiceScreens: 27, negativeScreens: 21 },
+        5: { choiceScreens: 13, negativeScreens: 11 }
     };
 
     for (const [day, expectedCounts] of Object.entries(expected)) {
@@ -240,7 +240,10 @@ test('rival temptation CG rewards appear only after accepting the rival offer', 
         wall_dain_glimpse_4: 'event_temptation_yuna',
         wall_dain_seo_tempt_accept: 'event_temptation_seoyeon',
         wall_yuna_glimpse_4: 'event_temptation_seoyeon',
-        wall_yuna_dain_tempt_accept: 'event_temptation_dain'
+        wall_yuna_dain_tempt_accept: 'event_temptation_dain',
+        day4_adult_counteroffer_accept_seoyeon: 'event_temptation_seoyeon',
+        day4_adult_counteroffer_accept_dain: 'event_temptation_dain',
+        day4_adult_counteroffer_accept_yuna: 'event_temptation_yuna'
     };
     const temptationCgIds = new Set(Object.values(acceptanceScenes));
     const actualUses = [];
@@ -258,11 +261,14 @@ test('rival temptation CG rewards appear only after accepting the rival offer', 
         const incomingChoices = Object.values(scenes)
             .flatMap(scene => scene.choices || [])
             .filter(choice => choice.next === sceneId);
-        assert.equal(incomingChoices.length, 1, `${sceneId} must have one authored acceptance entry`);
-        assert.ok(
-            incomingChoices[0].setFlags?.some(flag => /^day4_took_.+_counteroffer$/.test(flag)),
-            `${sceneId} must be gated by an accepted counteroffer`
-        );
+        const expectedIncoming = sceneId.startsWith('day4_adult_counteroffer_accept_') ? 2 : 1;
+        assert.equal(incomingChoices.length, expectedIncoming, `${sceneId} acceptance entry count drifted`);
+        for (const incomingChoice of incomingChoices) {
+            assert.ok(
+                incomingChoice.setFlags?.some(flag => /^day4_took_.+_counteroffer$/.test(flag)),
+                `${sceneId} must be gated by an accepted counteroffer`
+            );
+        }
     }
 });
 
@@ -279,7 +285,7 @@ test('accepted temptations damage trust in two causal stages when the lead sees 
 
     assert.deepEqual(
         scenes.morning5_temptation_counteroffer_branch.branches.map(branch => branch.condition || 'fallback'),
-        ['day4_took_seoyeon_counteroffer', 'day4_took_yuna_counteroffer', 'day4_took_dain_counteroffer', 'fallback']
+        ['day4_counteroffer_target_teacher', 'day4_counteroffer_target_nurse', 'day4_took_seoyeon_counteroffer', 'day4_took_yuna_counteroffer', 'day4_took_dain_counteroffer', 'fallback']
     );
     assert.deepEqual(scenes.morning5_temptation_discovery_branch.branches, [
         { condition: 'day4_counteroffer_penalty_deferred', next: 'morning5_temptation_counteroffer_branch' },
@@ -299,6 +305,30 @@ test('accepted temptations damage trust in two causal stages when the lead sees 
         assert.equal(acceptance.stats[lead].affinity + caught.choices[1].stats[lead].affinity, -60);
 
         for (const copy of localizedCopies) {
+            assert.equal(copy[caughtSceneId]?.choices?.length, 2, `${caughtSceneId} choices must exist in every locale`);
+            assert.ok(copy[honestNext]?.text, `${honestNext} text must exist in every locale`);
+            assert.ok(copy[lieNext]?.text, `${lieNext} text must exist in every locale`);
+        }
+    }
+
+    const adultCases = [
+        ['day4_teacher_seoyeon_counteroffer', 'Teacher', 'morning5_caught_teacher_counteroffer', 'morning5_caught_teacher_honest', 'morning5_caught_teacher_lie'],
+        ['day4_teacher_dain_counteroffer', 'Teacher', 'morning5_caught_teacher_counteroffer', 'morning5_caught_teacher_honest', 'morning5_caught_teacher_lie'],
+        ['day4_teacher_yuna_counteroffer', 'Teacher', 'morning5_caught_teacher_counteroffer', 'morning5_caught_teacher_honest', 'morning5_caught_teacher_lie'],
+        ['day4_nurse_seoyeon_counteroffer', 'Nurse', 'morning5_caught_nurse_counteroffer', 'morning5_caught_nurse_honest', 'morning5_caught_nurse_lie'],
+        ['day4_nurse_dain_counteroffer', 'Nurse', 'morning5_caught_nurse_counteroffer', 'morning5_caught_nurse_honest', 'morning5_caught_nurse_lie'],
+        ['day4_nurse_yuna_counteroffer', 'Nurse', 'morning5_caught_nurse_counteroffer', 'morning5_caught_nurse_honest', 'morning5_caught_nurse_lie']
+    ];
+    for (const [acceptSceneId, lead, caughtSceneId, honestNext, lieNext] of adultCases) {
+        const acceptance = scenes[acceptSceneId].choices[1];
+        const caught = scenes[caughtSceneId];
+        assert.equal(acceptance.stats[lead].affinity, -10);
+        assert.equal(caught.choices[0].stats[lead].affinity, -40);
+        assert.equal(caught.choices[1].stats[lead].affinity, -50);
+        assert.equal(acceptance.stats[lead].affinity + caught.choices[0].stats[lead].affinity, -50);
+        assert.equal(acceptance.stats[lead].affinity + caught.choices[1].stats[lead].affinity, -60);
+        for (const copy of localizedCopies) {
+            assert.equal(copy[acceptSceneId]?.choices?.length, 2, `${acceptSceneId} choices must exist in every locale`);
             assert.equal(copy[caughtSceneId]?.choices?.length, 2, `${caughtSceneId} choices must exist in every locale`);
             assert.ok(copy[honestNext]?.text, `${honestNext} text must exist in every locale`);
             assert.ok(copy[lieNext]?.text, `${lieNext} text must exist in every locale`);
@@ -448,6 +478,27 @@ test('ranked rival routing uses the live second-highest affinity with determinis
     assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'day4_hidden_msg_branch', 'low-affinity routes must skip the temptation');
     Object.assign(affinities, { Seoyeon: 70, Dain: 80, Yuna: 30 });
     assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'day4_hidden_msg_branch', 'a route that is not the live leader must not claim to be one');
+});
+
+test('an adult day-four lead who is highest overall is tempted by the highest-affinity student', () => {
+    const affinities = { Teacher: 80, Nurse: 70, Seoyeon: 55, Dain: 65, Yuna: 60 };
+    const renderer = createSceneRenderer(affinities);
+
+    assert.deepEqual(scenes.day4_night_branch.branches, [
+        { condition: 'homeroom_day4', next: 'day4_adult_teacher_overall_rank' },
+        { condition: 'nurse_day4', next: 'day4_adult_nurse_overall_rank' },
+        { next: 'day4_student_night_branch' }
+    ]);
+    assert.equal(renderer.resolveNextScene(scenes.day4_adult_teacher_overall_rank), 'day4_adult_teacher_student_rank');
+    assert.equal(renderer.resolveNextScene(scenes.day4_adult_teacher_student_rank), 'day4_teacher_dain_counteroffer');
+
+    Object.assign(affinities, { Teacher: 75, Nurse: 85, Seoyeon: 70, Dain: 60, Yuna: 65 });
+    assert.equal(renderer.resolveNextScene(scenes.day4_adult_teacher_overall_rank), 'day4_adult_nurse_flag_check');
+    assert.equal(renderer.resolveNextScene(scenes.day4_adult_nurse_overall_rank), 'day4_adult_nurse_student_rank');
+    assert.equal(renderer.resolveNextScene(scenes.day4_adult_nurse_student_rank), 'day4_nurse_seoyeon_counteroffer');
+
+    Object.assign(affinities, { Teacher: 59, Nurse: 30, Seoyeon: 20, Dain: 15, Yuna: 10 });
+    assert.equal(renderer.resolveNextScene(scenes.day4_adult_teacher_overall_rank), 'day4_adult_nurse_flag_check', 'adult leads below 60 must skip the temptation');
 });
 
 test('prior-lunch dialogue is reachable only through the flag that proves the lunch happened', () => {

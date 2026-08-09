@@ -7,6 +7,63 @@
         "name": "System",
         "text": ""
     },
+    "day4_adult_teacher_overall_rank": {},
+    "day4_adult_nurse_flag_check": {},
+    "day4_adult_nurse_overall_rank": {},
+    "day4_adult_teacher_student_rank": {},
+    "day4_adult_nurse_student_rank": {},
+    "day4_teacher_seoyeon_counteroffer": {
+        "name": "Seoyeon",
+        "text": "*Als ich mich von meiner Klassenlehrerin verabschiedet habe und die Schule verlassen will, wartet Seoyeon an der Treppe zum Dach. Sie lächelt, doch ihre Finger krallen sich in den Ärmel ihrer Uniform.* In letzter Zeit hast du nur noch Augen für die Lehrerin. Kannst du heute nicht einfach mich ansehen, ohne die Schülersprecherin oder die Musterschülerin zu sehen?",
+        "choices": ["Mein Versprechen gegenüber der Klassenlehrerin halten und gehen", "Seoyeon aufs Dach folgen und ihre Hand nehmen"]
+    },
+    "day4_teacher_dain_counteroffer": {
+        "name": "Dain",
+        "text": "*Nachdem ich meiner Klassenlehrerin versprochen habe, mich bei meiner Ankunft zu melden, komme ich an der Turnhalle vorbei. Dain lehnt am dunklen Notausgang und zupft am Tape auf ihrem Knie.* Du gehst in letzter Zeit nur noch zur Lehrerin. Nimm zehn Aufschläge von mir an. Danach ... halt mich heute im Arm.",
+        "choices": ["Der Klassenlehrerin schreiben, dass ich zurückkomme", "Die Turnhalle betreten und Dains Bitte annehmen"]
+    },
+    "day4_teacher_yuna_counteroffer": {
+        "name": "Yuna",
+        "text": "*Direkt nachdem ich mich von meiner Klassenlehrerin getrennt habe, schickt Yuna ein Foto vom Nebengebäude. Zwei leere Stühle stehen nebeneinander, über einem hängt ihre Jacke.* Bei der Lehrerin fühlst du dich wohl wohler. Aber wenn du heute gehst, fühle ich mich wieder allein gelassen.",
+        "choices": ["Der Klassenlehrerin antworten und nach Hause gehen", "Zum Nebengebäude gehen und bei Yuna bleiben"]
+    },
+    "day4_nurse_seoyeon_counteroffer": {
+        "name": "Seoyeon",
+        "text": "*Auf dem Weg vom Krankenzimmer zum Schultor stellt sich Seoyeon vor die Treppe zum Dach. Ihre Lippen zwingen sich zu einem Lächeln, während ihre Finger den Uniformärmel zerknittern.* In letzter Zeit besuchst du nur noch die Schulkrankenschwester. Kannst du heute nicht einfach mich ansehen, ohne die Schülersprecherin oder die Musterschülerin zu sehen?",
+        "choices": ["Der Schulkrankenschwester antworten und gehen", "Seoyeon aufs Dach folgen und ihre Hand nehmen"]
+    },
+    "day4_nurse_dain_counteroffer": {
+        "name": "Dain",
+        "text": "*Als ich die Tür des Krankenzimmers hinter mir schließe, steht Dain am Notausgang der Turnhalle. Ohne mich anzusehen, zieht sie das Tape von ihrem Knie und drückt es wieder fest.* Du gehst in letzter Zeit nur noch zur Schulkrankenschwester. Nimm zehn Aufschläge von mir an. Danach ... halt mich heute im Arm.",
+        "choices": ["Der Schulkrankenschwester schreiben, dass ich zurückkomme", "Die Turnhalle betreten und Dains Bitte annehmen"]
+    },
+    "day4_nurse_yuna_counteroffer": {
+        "name": "Yuna",
+        "text": "*Nachdem ich das Krankenzimmer verlassen habe, schickt Yuna ein Foto vom Nebengebäude. Ihre Jacke liegt auf einem von zwei leeren Stühlen.* Bei der Schulkrankenschwester fühlst du dich wohl wohler. Aber wenn du heute gehst, fühle ich mich wieder allein gelassen.",
+        "choices": ["Der Schulkrankenschwester antworten und nach Hause gehen", "Zum Nebengebäude gehen und bei Yuna bleiben"]
+    },
+    "day4_adult_counteroffer_accept_seoyeon": {
+        "name": "{name}",
+        "text": "*Als die Dachtür zufällt, greift Seoyeon nach {name}s Handgelenk und legt die Hand auf ihre Brust. Unter der gelockerten Schleife steht der Hemdkragen offen, und ihr zitternder Atem streift den Handrücken. Das Handy in der Tasche vibriert immer wieder, doch Seoyeon lässt nicht los. Viel später verlassen sie die Schule und kehren nach Hause zurück.*"
+    },
+    "day4_adult_counteroffer_accept_dain": {
+        "name": "{name}",
+        "text": "*Der letzte Ball rollt über den Boden. Dain ringt nach Luft, packt die Vorderseite ihrer Uniform und zieht sie nach unten. Sie beugt sich bis direkt vor {name}, sodass ihr warmer, schweißfeuchter Atem das Gesicht erreicht. Das Handy in der Tasche vibriert weiter. Viel später verlassen sie die Schule und kehren nach Hause zurück.*"
+    },
+    "day4_adult_counteroffer_accept_yuna": {
+        "name": "{name}",
+        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand am Bücherregal ab. Sie lässt die Jacke unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres Oberteils hinunter. Zwischen nackter Schulter und Tattoo weichen ihre roten Augen kein einziges Mal aus. Das Handy auf dem Tisch vibriert erneut. Viel später verlassen sie das Nebengebäude und kehren nach Hause zurück.*"
+    },
+    "day4_adult_night_regret_target_branch": {},
+    "day4_adult_night_regret_teacher": {
+        "name": "{name}",
+        "text": "*Zu Hause schalte ich mein Handy ein und sehe die Nachricht meiner Klassenlehrerin: 'Du solltest mir doch Bescheid sagen, wenn du angekommen bist. Ist etwas passiert?' Meine Hand bleibt über dem Antwortfeld stehen.*"
+    },
+    "day4_adult_night_regret_nurse": {
+        "name": "{name}",
+        "text": "*Zu Hause schalte ich mein Handy ein und sehe die Nachricht der Schulkrankenschwester: 'Du sahst vorhin nicht gut aus. Bist du sicher nach Hause gekommen?' Meine Hand bleibt über dem Antwortfeld stehen, bevor ich schreiben kann, dass alles in Ordnung ist.*"
+    },
+    "day4_student_night_branch": {},
     "wall_seo_1": {
         "name": "{name}",
         "text": "*22 Uhr. Ein Anruf von Seoyeon. Kein Lachen in ihrer Stimme.*"

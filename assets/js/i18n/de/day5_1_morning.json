@@ -6,6 +6,32 @@
     "morning5_start_branch": {},
     "morning5_temptation_discovery_branch": {},
     "morning5_temptation_counteroffer_branch": {},
+    "morning5_caught_teacher_counteroffer": {
+        "name": "Klassenlehrerin",
+        "text": "*Morgens im Klassenzimmer lege ich mein Handy hin, um meiner Klassenlehrerin ein Foto meines Entwurfs zu zeigen. Der Bildschirm leuchtet mit einer Nachricht des Mädchens auf, bei dem ich gestern war: 'Was gestern passiert ist, bleibt unter uns, oder?' Die Lehrerin liest sie zu Ende und nimmt ihre Hand vom Handy.* Du hast meine Nachricht gestern ignoriert, um dieses Mädchen zu treffen?",
+        "choices": ["Ihr offen erzählen, was gestern Nacht passiert ist", "Es als unwichtig abtun"]
+    },
+    "morning5_caught_nurse_counteroffer": {
+        "name": "Schulkrankenschwester",
+        "text": "*Sobald ich mein Handy auf die Untersuchungsliege lege, leuchtet der Bildschirm auf. Eine Nachricht des Mädchens, bei dem ich gestern war, lautet: 'Was gestern passiert ist, bleibt unter uns, oder?' Die Schulkrankenschwester will wie immer lächeln, doch dann verschwindet ihr Lächeln langsam.* Du hast meine Nachricht also nicht übersehen. Du warst bei diesem Mädchen?",
+        "choices": ["Ihr offen erzählen, was gestern Nacht passiert ist", "Es als unwichtig abtun"]
+    },
+    "morning5_caught_teacher_honest": {
+        "name": "Klassenlehrerin",
+        "text": "*Meine Klassenlehrerin hört schweigend zu und schließt dann das Klassenbuch.* Ich verstehe, dass du mir jetzt die Wahrheit sagst. Aber das macht mein Vertrauen in deine Worte von gestern nicht ungeschehen. Geh für heute nach Hause."
+    },
+    "morning5_caught_teacher_lie": {
+        "name": "Klassenlehrerin",
+        "text": "*Meine Klassenlehrerin blickt von der neuen Nachricht zu meinem Gesicht. Ihre Stimme wird kälter als im Unterricht.* Die Lüge, die du mir gerade erzählt hast, enttäuscht mich mehr als das, was gestern passiert ist. Geh."
+    },
+    "morning5_caught_nurse_honest": {
+        "name": "Schulkrankenschwester",
+        "text": "*Die Schulkrankenschwester hört alles an, ohne zu sagen, dass es schon gut sei. Stattdessen schließt sie sorgfältig die Krankenakte.* Du würdest dich besser fühlen, wenn ich sagte, es sei in Ordnung. Aber das kann ich gerade nicht. Bitte geh für heute. *Ich verlasse das Krankenzimmer und kehre ins Klassenzimmer zurück.*"
+    },
+    "morning5_caught_nurse_lie": {
+        "name": "Schulkrankenschwester",
+        "text": "*Die Schulkrankenschwester prüft die neue Nachricht und nimmt ihre Brille ab. Ihr Blick trifft meinen ohne eine Spur des gewohnten Lächelns.* Es waren also keine Schmerzen, die du verborgen hast. Um deine Lügen kann ich mich nicht auch noch kümmern. *Ich verlasse das Krankenzimmer und kehre ins Klassenzimmer zurück.*"
+    },
     "morning5_caught_by_seoyeon_route": {},
     "morning5_caught_by_yuna_route": {},
     "morning5_caught_by_dain_route": {},

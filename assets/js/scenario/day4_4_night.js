@@ -19,6 +19,163 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "branches": [
+            { "condition": "homeroom_day4", "next": "day4_adult_teacher_overall_rank" },
+            { "condition": "nurse_day4", "next": "day4_adult_nurse_overall_rank" },
+            { "next": "day4_student_night_branch" }
+        ]
+    },
+    "day4_adult_teacher_overall_rank": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "leadCharacter": "Teacher",
+        "minLeadAffinity": 60,
+        "rankedRivalBranches": [
+            { "character": "Nurse", "next": "day4_adult_teacher_student_rank" },
+            { "character": "Seoyeon", "next": "day4_adult_teacher_student_rank" },
+            { "character": "Dain", "next": "day4_adult_teacher_student_rank" },
+            { "character": "Yuna", "next": "day4_adult_teacher_student_rank" }
+        ],
+        "rankedRivalFallback": "day4_adult_nurse_flag_check"
+    },
+    "day4_adult_nurse_flag_check": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "branches": [
+            { "condition": "nurse_day4", "next": "day4_adult_nurse_overall_rank" },
+            { "next": "day4_student_night_branch" }
+        ]
+    },
+    "day4_adult_nurse_overall_rank": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "leadCharacter": "Nurse",
+        "minLeadAffinity": 60,
+        "rankedRivalBranches": [
+            { "character": "Teacher", "next": "day4_adult_nurse_student_rank" },
+            { "character": "Seoyeon", "next": "day4_adult_nurse_student_rank" },
+            { "character": "Dain", "next": "day4_adult_nurse_student_rank" },
+            { "character": "Yuna", "next": "day4_adult_nurse_student_rank" }
+        ],
+        "rankedRivalFallback": "day4_student_night_branch"
+    },
+    "day4_adult_teacher_student_rank": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "leadCharacter": "Teacher",
+        "minLeadAffinity": 60,
+        "rankedRivalBranches": [
+            { "character": "Seoyeon", "next": "day4_teacher_seoyeon_counteroffer" },
+            { "character": "Dain", "next": "day4_teacher_dain_counteroffer" },
+            { "character": "Yuna", "next": "day4_teacher_yuna_counteroffer" }
+        ],
+        "rankedRivalFallback": "day4_student_night_branch"
+    },
+    "day4_adult_nurse_student_rank": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "leadCharacter": "Nurse",
+        "minLeadAffinity": 60,
+        "rankedRivalBranches": [
+            { "character": "Seoyeon", "next": "day4_nurse_seoyeon_counteroffer" },
+            { "character": "Dain", "next": "day4_nurse_dain_counteroffer" },
+            { "character": "Yuna", "next": "day4_nurse_yuna_counteroffer" }
+        ],
+        "rankedRivalFallback": "day4_student_night_branch"
+    },
+    "day4_teacher_seoyeon_counteroffer": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "competitiveAffinity": true,
+        "choices": [
+            { "next": "day4_hidden_msg_branch", "stats": {"Teacher":{"affinity":4},"Seoyeon":{"affinity":-6}}, "setFlags": ["day4_held_route_teacher"] },
+            { "next": "day4_adult_counteroffer_accept_seoyeon", "stats": {"Seoyeon":{"affinity":8},"Teacher":{"affinity":-10}}, "setFlags": ["day4_took_seoyeon_counteroffer","day4_counteroffer_target_teacher","day4_counteroffer_penalty_deferred"] }
+        ]
+    },
+    "day4_teacher_dain_counteroffer": {
+        "background": "assets/images/background/gym.png",
+        "backgroundVariant": "lights-off",
+        "character": "assets/images/characters/dain_sad.png",
+        "competitiveAffinity": true,
+        "choices": [
+            { "next": "day4_hidden_msg_branch", "stats": {"Teacher":{"affinity":4},"Dain":{"affinity":-6}}, "setFlags": ["day4_held_route_teacher"] },
+            { "next": "day4_adult_counteroffer_accept_dain", "stats": {"Dain":{"affinity":8},"Teacher":{"affinity":-10}}, "setFlags": ["day4_took_dain_counteroffer","day4_counteroffer_target_teacher","day4_counteroffer_penalty_deferred"] }
+        ]
+    },
+    "day4_teacher_yuna_counteroffer": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_sad.png",
+        "competitiveAffinity": true,
+        "choices": [
+            { "next": "day4_hidden_msg_branch", "stats": {"Teacher":{"affinity":4},"Yuna":{"affinity":-6}}, "setFlags": ["day4_held_route_teacher"] },
+            { "next": "day4_adult_counteroffer_accept_yuna", "stats": {"Yuna":{"affinity":8},"Teacher":{"affinity":-10}}, "setFlags": ["day4_took_yuna_counteroffer","day4_counteroffer_target_teacher","day4_counteroffer_penalty_deferred"] }
+        ]
+    },
+    "day4_nurse_seoyeon_counteroffer": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "competitiveAffinity": true,
+        "choices": [
+            { "next": "day4_hidden_msg_branch", "stats": {"Nurse":{"affinity":4},"Seoyeon":{"affinity":-6}}, "setFlags": ["day4_held_route_nurse"] },
+            { "next": "day4_adult_counteroffer_accept_seoyeon", "stats": {"Seoyeon":{"affinity":8},"Nurse":{"affinity":-10}}, "setFlags": ["day4_took_seoyeon_counteroffer","day4_counteroffer_target_nurse","day4_counteroffer_penalty_deferred"] }
+        ]
+    },
+    "day4_nurse_dain_counteroffer": {
+        "background": "assets/images/background/gym.png",
+        "backgroundVariant": "lights-off",
+        "character": "assets/images/characters/dain_sad.png",
+        "competitiveAffinity": true,
+        "choices": [
+            { "next": "day4_hidden_msg_branch", "stats": {"Nurse":{"affinity":4},"Dain":{"affinity":-6}}, "setFlags": ["day4_held_route_nurse"] },
+            { "next": "day4_adult_counteroffer_accept_dain", "stats": {"Dain":{"affinity":8},"Nurse":{"affinity":-10}}, "setFlags": ["day4_took_dain_counteroffer","day4_counteroffer_target_nurse","day4_counteroffer_penalty_deferred"] }
+        ]
+    },
+    "day4_nurse_yuna_counteroffer": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_sad.png",
+        "competitiveAffinity": true,
+        "choices": [
+            { "next": "day4_hidden_msg_branch", "stats": {"Nurse":{"affinity":4},"Yuna":{"affinity":-6}}, "setFlags": ["day4_held_route_nurse"] },
+            { "next": "day4_adult_counteroffer_accept_yuna", "stats": {"Yuna":{"affinity":8},"Nurse":{"affinity":-10}}, "setFlags": ["day4_took_yuna_counteroffer","day4_counteroffer_target_nurse","day4_counteroffer_penalty_deferred"] }
+        ]
+    },
+    "day4_adult_counteroffer_accept_seoyeon": {
+        "background": "assets/images/background/event_temptation_seoyeon.png",
+        "character": null,
+        "next": "day4_adult_night_regret_target_branch"
+    },
+    "day4_adult_counteroffer_accept_dain": {
+        "background": "assets/images/background/event_temptation_dain.png",
+        "character": null,
+        "next": "day4_adult_night_regret_target_branch"
+    },
+    "day4_adult_counteroffer_accept_yuna": {
+        "background": "assets/images/background/event_temptation_yuna.png",
+        "character": null,
+        "next": "day4_adult_night_regret_target_branch"
+    },
+    "day4_adult_night_regret_target_branch": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "branches": [
+            { "condition": "day4_counteroffer_target_teacher", "next": "day4_adult_night_regret_teacher" },
+            { "condition": "day4_counteroffer_target_nurse", "next": "day4_adult_night_regret_nurse" },
+            { "next": "day4_night_regret" }
+        ]
+    },
+    "day4_adult_night_regret_teacher": {
+        "background": "assets/images/background/room_my.png",
+        "characters": {"center":{"src":"assets/images/characters/teacher_sad.png","opacity":0.35}},
+        "next": "day4_hidden_msg_branch"
+    },
+    "day4_adult_night_regret_nurse": {
+        "background": "assets/images/background/room_my.png",
+        "characters": {"center":{"src":"assets/images/characters/nurse_worried.png","opacity":0.35}},
+        "next": "day4_hidden_msg_branch"
+    },
+    "day4_student_night_branch": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "branches": [
             { "condition": "day4_waited", "next": "day4_night_regret" },
             { "condition": "route_seoyeon", "next": "wall_seo_1" },
             { "condition": "route_dain", "next": "wall_dain_1" },

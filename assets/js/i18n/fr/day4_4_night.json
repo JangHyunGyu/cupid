@@ -7,6 +7,63 @@
         "name": "Système",
         "text": ""
     },
+    "day4_adult_teacher_overall_rank": {},
+    "day4_adult_nurse_flag_check": {},
+    "day4_adult_nurse_overall_rank": {},
+    "day4_adult_teacher_student_rank": {},
+    "day4_adult_nurse_student_rank": {},
+    "day4_teacher_seoyeon_counteroffer": {
+        "name": "Seoyeon",
+        "text": "*Alors que je quitte l'école après avoir salué ma professeure principale, Seoyeon m'attend près de l'escalier du toit. Elle sourit, mais ses doigts serrent la manche de son uniforme.* Ces derniers temps, tu n'as d'yeux que pour la prof. Rien que ce soir, tu ne peux pas regarder la fille que je suis, sans voir la présidente du conseil ni l'élève modèle ?",
+        "choices": ["Tenir ma promesse envers ma professeure principale et partir", "Suivre Seoyeon sur le toit et lui prendre la main"]
+    },
+    "day4_teacher_dain_counteroffer": {
+        "name": "Dain",
+        "text": "*Après avoir promis à ma professeure principale de lui écrire en arrivant, je passe devant le gymnase. Dain est adossée à la sortie de secours plongée dans le noir et tripote le bandage de son genou.* Tu ne vas plus voir que la prof. Renvoie-moi dix services. Après... serre-moi dans tes bras, ce soir.",
+        "choices": ["Écrire à ma professeure principale que je reviens", "Entrer dans le gymnase et accepter la demande de Dain"]
+    },
+    "day4_teacher_yuna_counteroffer": {
+        "name": "Yuna",
+        "text": "*Juste après avoir quitté ma professeure principale, je reçois une photo de l'annexe envoyée par Yuna. Deux chaises vides sont côte à côte, sa veste posée sur l'une d'elles.* On dirait que tu es mieux auprès de la prof. Mais si tu pars ce soir, j'aurai encore l'impression qu'on m'abandonne.",
+        "choices": ["Répondre à ma professeure principale et rentrer", "Aller à l'annexe et rester avec Yuna"]
+    },
+    "day4_nurse_seoyeon_counteroffer": {
+        "name": "Seoyeon",
+        "text": "*En allant de l'infirmerie au portail, je trouve Seoyeon devant l'escalier du toit. Ses lèvres forcent un sourire tandis que ses doigts froissent la manche de son uniforme.* Ces derniers temps, tu ne vas plus voir que l'infirmière. Rien que ce soir, tu ne peux pas regarder la fille que je suis, sans voir la présidente du conseil ni l'élève modèle ?",
+        "choices": ["Répondre à l'infirmière et partir", "Suivre Seoyeon sur le toit et lui prendre la main"]
+    },
+    "day4_nurse_dain_counteroffer": {
+        "name": "Dain",
+        "text": "*En refermant la porte de l'infirmerie, je trouve Dain près de la sortie de secours du gymnase. Elle décolle puis remet le bandage de son genou sans croiser mon regard.* Tu ne vas plus voir que l'infirmière. Renvoie-moi dix services. Après... serre-moi dans tes bras, ce soir.",
+        "choices": ["Écrire à l'infirmière que je reviens", "Entrer dans le gymnase et accepter la demande de Dain"]
+    },
+    "day4_nurse_yuna_counteroffer": {
+        "name": "Yuna",
+        "text": "*Après avoir quitté l'infirmerie, je reçois une photo de l'annexe envoyée par Yuna. Sa veste est posée sur l'une des deux chaises vides.* On dirait que tu es mieux auprès de l'infirmière. Mais si tu pars ce soir, j'aurai encore l'impression qu'on m'abandonne.",
+        "choices": ["Répondre à l'infirmière et rentrer", "Aller à l'annexe et rester avec Yuna"]
+    },
+    "day4_adult_counteroffer_accept_seoyeon": {
+        "name": "{name}",
+        "text": "*Quand la porte du toit se referme, Seoyeon saisit le poignet de {name} et pose cette main sur sa poitrine. Son ruban desserré laisse le col de sa chemise entrouvert, et son souffle tremblant effleure le dos de la main. Le téléphone vibre sans arrêt dans la poche, mais Seoyeon ne lâche pas prise. Bien plus tard, ils quittent l'école et rentrent chez eux.*"
+    },
+    "day4_adult_counteroffer_accept_dain": {
+        "name": "{name}",
+        "text": "*Le dernier ballon roule sur le sol. Dain reprend son souffle, agrippe le devant de son uniforme et le tire vers le bas. Elle se penche jusqu'à se retrouver tout près de {name}, son souffle chaud et humide atteignant son visage. Le téléphone continue de vibrer dans la poche. Bien plus tard, ils quittent l'école et rentrent chez eux.*"
+    },
+    "day4_adult_counteroffer_accept_yuna": {
+        "name": "{name}",
+        "text": "*Yuna s'avance tout près de {name} et pose une main sur la bibliothèque. Elle laisse glisser sa veste sous une épaule et tire de l'autre main sur l'encolure du haut qu'elle porte dessous. Entre son épaule nue et son tatouage, ses yeux rouges ne se détournent pas une seule fois. Le téléphone vibre de nouveau sur le bureau. Bien plus tard, ils quittent l'annexe et rentrent chez eux.*"
+    },
+    "day4_adult_night_regret_target_branch": {},
+    "day4_adult_night_regret_teacher": {
+        "name": "{name}",
+        "text": "*Une fois à la maison, j'allume mon téléphone et découvre le message de ma professeure principale : 'Je t'avais demandé de me prévenir en arrivant. Il y a un problème ?' Ma main s'immobilise au-dessus du champ de réponse.*"
+    },
+    "day4_adult_night_regret_nurse": {
+        "name": "{name}",
+        "text": "*Une fois à la maison, j'allume mon téléphone et découvre le message de l'infirmière : 'Tu n'avais pas l'air bien tout à l'heure. Tu es bien rentré ?' Ma main s'immobilise avant de pouvoir écrire que tout va bien.*"
+    },
+    "day4_student_night_branch": {},
     "wall_seo_1": {
         "name": "{name}",
         "text": "*22 heures. Un appel de Seoyeon. Aucun rire dans sa voix.*"

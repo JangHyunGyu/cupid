@@ -6,6 +6,32 @@
     "morning5_start_branch": {},
     "morning5_temptation_discovery_branch": {},
     "morning5_temptation_counteroffer_branch": {},
+    "morning5_caught_teacher_counteroffer": {
+        "name": "담임선생님",
+        "text": "*아침 교실. 담임에게 원고 사진을 보여주려고 휴대폰을 내려놓는 순간 화면이 켜진다. 어젯밤 함께 있던 아이에게서 '어제 일, 우리 둘만 아는 거지?'라는 알림이 뜬다. 담임은 화면을 끝까지 읽고 휴대폰에서 손을 뗀다.* 어젯밤 내 연락에는 답하지 않고 이 아이를 만난 거니?",
+        "choices": ["숨기지 않고 어젯밤 일을 말한다", "별일 아니었다고 둘러댄다"]
+    },
+    "morning5_caught_nurse_counteroffer": {
+        "name": "보건선생님",
+        "text": "*보건실 진료대에 휴대폰을 내려놓는 순간 화면이 켜진다. 어젯밤 함께 있던 아이에게서 '어제 일, 우리 둘만 아는 거지?'라는 알림이 뜬다. 보건선생님은 평소처럼 웃으려다 입꼬리를 천천히 내린다.* 어제 내 연락을 못 본 게 아니라, 이 아이와 함께 있었던 거야?",
+        "choices": ["숨기지 않고 어젯밤 일을 말한다", "별일 아니었다고 둘러댄다"]
+    },
+    "morning5_caught_teacher_honest": {
+        "name": "담임선생님",
+        "text": "*담임은 말없이 전부 듣고 나서 출석부를 덮는다.* 솔직히 말한 건 알겠다. 하지만 어젯밤 내가 믿은 네 말까지 없던 일이 되진 않아. 오늘은 돌아가렴."
+    },
+    "morning5_caught_teacher_lie": {
+        "name": "담임선생님",
+        "text": "*담임은 다시 울린 알림과 맞은편 얼굴을 번갈아 본다. 목소리가 수업 시간보다 더 차갑게 가라앉는다.* 어젯밤 일보다 지금 네가 한 거짓말이 더 실망스럽구나. 나가렴."
+    },
+    "morning5_caught_nurse_honest": {
+        "name": "보건선생님",
+        "text": "*보건선생님은 끝까지 듣고도 괜찮다는 말은 하지 않는다. 대신 진료 기록을 가지런히 덮는다.* 괜찮다고 해주면 네 마음은 편하겠지. 그런데 나는 지금 그럴 수가 없네. 오늘은 가 줘. *보건실을 나와 교실로 돌아간다.*"
+    },
+    "morning5_caught_nurse_lie": {
+        "name": "보건선생님",
+        "text": "*보건선생님은 다시 뜬 알림을 확인하고 안경을 벗는다. 웃음기 없는 눈이 곧장 마주친다.* 아픈 데가 아니라 숨기는 게 있었네. 거짓말까지 돌봐줄 자신은 없어. *보건실을 나와 교실로 돌아간다.*"
+    },
     "morning5_caught_by_seoyeon_route": {},
     "morning5_caught_by_yuna_route": {},
     "morning5_caught_by_dain_route": {},
