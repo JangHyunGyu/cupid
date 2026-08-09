@@ -1729,12 +1729,13 @@ function buildCupidGroupSystemPrompt(params = {}) {
         const outfit = getCharacterOutfitGuard(effectiveLang, participant.id, participant.name);
         const canon = getCupidCharacterCanonGuard(effectiveLang, participant.id, participant.name);
         const polish = getNativeStylePolishGuard(effectiveLang, participant.id, participant.name);
+        const expressions = Object.keys(getCharacterExpressionSet(participant.id, participant.name) || { normal: true }).join(', ') || 'normal';
         const roleLabel = participant.role === 'lead'
             ? (useKo ? '원래 마음을 주던 상대이자 방금 배신을 알게 된 사람' : 'the committed partner who has just learned of the betrayal')
             : (useKo ? '어젯밤 먼저 다가가 유혹한 상대' : 'the person who initiated last night’s temptation');
         return useKo
-            ? `[${participant.name} — ${roleLabel}]\n캐릭터: ${personality}\n말투: ${voice}\n연기 원칙: ${general}\n거리와 상호작용: ${interaction}\n호감도 기준: ${criteria}\n${outfit}\n${canon}\n${polish}`
-            : `[${participant.name} — ${roleLabel}]\nCharacter: ${personality}\nVoice: ${voice}\nIn scene: ${general}\nDistance and interaction: ${interaction}\nAffinity criteria: ${criteria}\n${outfit}\n${canon}\n${polish}`;
+            ? `[${participant.name} — ${roleLabel}]\n캐릭터: ${personality}\n말투: ${voice}\n연기 원칙: ${general}\n거리와 상호작용: ${interaction}\n호감도 기준: ${criteria}\n허용 표정: ${expressions}\n${outfit}\n${canon}\n${polish}`
+            : `[${participant.name} — ${roleLabel}]\nCharacter: ${personality}\nVoice: ${voice}\nIn scene: ${general}\nDistance and interaction: ${interaction}\nAffinity criteria: ${criteria}\nAllowed expressions: ${expressions}\n${outfit}\n${canon}\n${polish}`;
     }).join('\n\n');
 
     const stableRules = useKo
@@ -1743,7 +1744,7 @@ ${getLanguageQualityGuard('ko')}${getNativeAntiTranslationGuard('ko')}
 ${characterCards}
 
 [다인 대면 연기]
-- 두 인물의 말투, 호칭, 판단, 상처의 결을 섞지 마세요. 억지로 한 번씩 번갈아 말하게 하지 말고, 그 순간 할 말이 있는 인물만 자연스러운 순서로 반응시킵니다.
+- 두 인물의 말투, 호칭, 판단, 상처의 결을 섞지 마세요. 매 턴 원래 마음을 주던 상대가 먼저 말합니다. 어젯밤 유혹한 상대는 그 말을 들은 뒤 답합니다. 같은 말을 되풀이하거나 문답을 기계적으로 맞추지는 마세요.
 - 침묵, 말 끊기, 서로를 향한 질문과 시선은 장면에 필요할 때만 씁니다. 정해진 대사 순서나 행동 개수를 채우지 마세요.
 - 주인공이 한 말과 행동은 이미 일어난 사실입니다. 두 인물이 대신 주인공의 새 대사나 중대한 선택을 만들지 않습니다.
 - 어젯밤 유혹을 받아들인 일과 직전의 -40 또는 -50 배신 감점은 이미 반영됐습니다. 같은 사실만 되풀이해 다시 감점하지 마세요.
@@ -1751,13 +1752,13 @@ ${characterCards}
 - 사과·책임 인정·구체적인 수습이 실제로 있을 때만 회복을 줍니다. 한 인물의 이번 턴 회복은 최대 +3, 두 인물의 회복 합계도 최대 +3입니다. 세 턴을 잘 수습해도 이미 받은 -40/-50을 대부분 되돌리지 못해야 합니다.
 
 다음 형태의 JSON만 출력하세요: {"conversations":[{"name":${normalizedParticipants[0].name ? JSON.stringify(normalizedParticipants[0].name) : '""'},"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":0}]}
-conversations에는 실제로 반응한 인물을 장면 순서대로 넣고 name은 반드시 ${exactNames} 가운데 하나만 씁니다. 각 인물은 한 항목에 그 인물의 흐름을 모읍니다. 허용 type은 narration, dialogue이며 narration은 해당 인물의 행동·표정·감각만 3인칭으로 씁니다. expression과 affinity를 모든 항목에 넣으세요. affinity는 -50~+3의 정수이며 양수 합계는 +3을 넘지 않습니다. 주인공이나 서술자를 화자로 넣지 마세요.`
+conversations에는 두 사람을 반드시 모두 넣고, 위에 적힌 원래 상대 → 유혹한 상대 순서를 지킵니다. name은 반드시 ${exactNames} 가운데 하나만 쓰고, 각 인물은 한 항목에 그 인물의 흐름을 모읍니다. 허용 type은 narration, dialogue이며 narration은 해당 인물의 행동·표정·감각만 3인칭으로 씁니다. expression은 그 인물의 허용 표정 중 현재 반응에 맞는 하나를 고르고 affinity와 함께 모든 항목에 넣으세요. affinity는 -50~+3의 정수이며 양수 합계는 +3을 넘지 않습니다. 주인공이나 서술자를 화자로 넣지 마세요.`
         : `Reply only in fluent, natural ${languageName}. Every conversations[].segments[].text value must stay in that language.
 ${getLanguageQualityGuard(effectiveLang)}${getNativeAntiTranslationGuard(effectiveLang)}
 ${characterCards}
 
 [Three-person confrontation]
-- Keep both characters’ voices, forms of address, judgments, and hurt distinct. Do not force mechanical alternation; let only the character who has something to say respond in a natural order.
+- Keep both characters’ voices, forms of address, judgments, and hurt distinct. In every turn, the committed partner speaks first and the person who initiated last night’s temptation responds after hearing them. Do not make the exchange repetitive or mechanically symmetrical.
 - Use silence, interruption, questions, and looks between them only when the moment calls for them. Never fill a fixed dialogue order or action quota.
 - Treat the protagonist’s stated words and actions as completed scene facts. The two characters must not invent a new protagonist line or make a major choice for him.
 - The accepted temptation and the preceding -40 or -50 betrayal penalty have already been applied. Do not deduct the same penalty again merely for recalling that fact.
@@ -1765,7 +1766,7 @@ ${characterCards}
 - Award recovery only for an actual apology, ownership, or concrete attempt to repair the damage. Recovery is capped at +3 for either character and +3 total across both characters in one user turn. Even three excellent turns must not undo most of the earlier -40/-50 loss.
 
 Return JSON only in this shape: {"conversations":[{"name":${JSON.stringify(normalizedParticipants[0].name)},"segments":[{"type":"dialogue","text":"spoken line"}],"expression":"normal","affinity":0}]}
-List only characters who actually respond, in scene order. name must be exactly one of ${exactNames}. Keep each speaker’s chronological beats in one item. Allowed segment types are narration and dialogue; narration stays in third person and inside that speaker’s action, expression, or sensation. Include expression and an integer affinity from -50 to +3 on every item. The sum of positive affinity values must not exceed +3. Never use the protagonist or a narrator as a speaker.`;
+Include both characters exactly once, in the committed-partner then tempter order defined above. name must be exactly one of ${exactNames}. Keep each speaker’s chronological beats in one item. Allowed segment types are narration and dialogue; narration stays in third person and inside that speaker’s action, expression, or sensation. Choose expression from that character’s allowed expressions to match the current reaction, and include it with an integer affinity from -50 to +3 on every item. The sum of positive affinity values must not exceed +3. Never use the protagonist or a narrator as a speaker.`;
 
     const dynamicState = useKo
         ? `[현재 대면 상태]\n장소=${locationName || '교실'}; 주인공=${playerName || '주인공'}; 직전 선택=${choiceState || '확인되지 않음'}\n장면 맥락: ${context}\n추가 연기 맥락: ${extraGuideline}\n${normalizedParticipants.map(participant => `${participant.name}: 현재 호감도=${Number(affinities[participant.id] ?? 0)}\n최근 사건과 기억=${gameContexts[participant.id] || '없음'}`).join('\n')}`
@@ -1808,5 +1809,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.53';
+const PROMPT_VERSION = '2.7.54';
 window.PROMPT_VERSION = PROMPT_VERSION;

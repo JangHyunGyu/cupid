@@ -1794,14 +1794,20 @@ class FreeTalkSystem {
                 this._activeRequestContext = null;
                 this._activeChatTurnId = null;
                 this.isProcessingChat = false;
-                this.uiManager.chatSendBtn.disabled = false;
-                this.uiManager.chatInput.disabled = false;
-                if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;
+                const canContinueGroupChat = this.isFreeTalking
+                    && this.isGroupMode
+                    && this.freeTalkTurns < this.currentMaxTurns;
+                this.uiManager.chatSendBtn.disabled = !canContinueGroupChat;
+                this.uiManager.chatInput.disabled = !canContinueGroupChat;
+                if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = !canContinueGroupChat;
                 this.uiManager.chatSendBtn.innerHTML = originalBtnContent;
                 document.querySelectorAll('.group-freetalk-participant img').forEach(img => img.classList.remove('thinking'));
                 this.uiManager.dialogueBox.classList.remove('thinking-box');
                 this._clearThinkingMessage();
-                if (!window.isCupidDesktopPointer || window.isCupidDesktopPointer()) this.uiManager.chatInput.focus();
+                if (canContinueGroupChat
+                    && (!window.isCupidDesktopPointer || window.isCupidDesktopPointer())) {
+                    this.uiManager.chatInput.focus();
+                }
             }
         }
     }

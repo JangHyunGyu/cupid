@@ -739,8 +739,11 @@ for (const lang of languages) {
     assert(parts.stable.includes('Recovery is capped at +3 for either character')
         && parts.stable.includes('+3 total across both characters'),
         `group/${lang} lost the recovery distribution rule`);
-    assert(parts.stable.includes('Do not force mechanical alternation'),
-        `group/${lang} forces alternating speakers`);
+    assert(parts.stable.includes('the committed partner speaks first')
+        && parts.stable.includes('Include both characters exactly once'),
+    `group/${lang} no longer guarantees the harmed-partner then tempter response order`);
+    assert(parts.stable.includes('Allowed expressions:'),
+        `group/${lang} does not expose each participant expression asset contract`);
     assert(parts.dynamic.includes('current affinity=12') && parts.dynamic.includes('current affinity=34'),
         `group/${lang} lost dynamic affinity state`);
 }

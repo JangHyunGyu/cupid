@@ -111,7 +111,7 @@
         "name": "Both of Them",
         "text": "*Both of them look at me at once. There is no way to answer one while avoiding the other now.*",
         "context": "The truth about accepting last night's temptation has just come out. The person the protagonist had committed to and the person who tempted him now face him together in the same classroom. Continue from his choice to confess or lie, without smoothing over the tension among all three.",
-        "personality": "Both characters keep their distinct voices and their own hurt. They do not have to alternate mechanically; silence, interruptions, and questions directed at each other should follow the moment. The committed partner has just learned of the betrayal, while the tempter knows that she was the one who approached him.",
+        "personality": "Both characters keep their distinct voices and their own hurt. The committed partner speaks first, and the tempter responds after hearing her. Silence, interruptions, questions, and exchanged looks should follow the moment. The committed partner has just learned of the betrayal, while the tempter knows that she was the one who approached him.",
         "buttonText": "Answer"
     },
     "morning5_start_b": {

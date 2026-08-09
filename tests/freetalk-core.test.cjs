@@ -549,6 +549,11 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
     assert.match(freeTalk, /chatContainer\?\.classList\.remove\('group-freetalk-mode'\)/);
     assert.match(freeTalk, /this\.groupParticipants\s*\.map\(participant => normalized\.find\(conversation => conversation\.speakerId === participant\.id\)\)/);
     assert.match(freeTalk, /ordered\.length !== this\.groupParticipants\.length/);
+    assert.match(freeTalk, /const canContinueGroupChat = this\.isFreeTalking[\s\S]*?this\.freeTalkTurns < this\.currentMaxTurns/);
+    assert.match(freeTalk, /chatInput\.disabled = !canContinueGroupChat/);
+    assert.match(read('assets/js/prompts.js'), /두 사람을 반드시 모두 넣고/);
+    assert.doesNotMatch(read('assets/js/prompts.js'), /그 순간 할 말이 있는 인물만/);
+    assert.match(read('assets/js/prompts.js'), /허용 표정:/);
     assert.match(css, /grid-template-areas:\s*"guide guide guide guide guide"\s*"upload input input input input"\s*"turn turn action send skip"/);
     assert.match(css, /#chat-container\.group-freetalk-mode #chat-input-wrapper\s*{\s*display: contents/);
     assert.match(css, /#chat-container\.group-freetalk-mode #chat-turn-indicator[\s\S]*?grid-area: turn/);
@@ -560,6 +565,170 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
         assert.ok(groupScene?.text && groupScene?.context && groupScene?.personality && groupScene?.buttonText,
             `${lang} group confrontation localization is incomplete`);
     }
+});
+
+test('group reply order, per-speaker affinity, and Dain expression assets follow the active speaker', async () => {
+    const freeTalkWindow = {
+        CupidFreeTalkCore: core,
+        CHARACTER_EXPRESSIONS: {
+            Dain: {
+                sad: 'assets/images/characters/dain_sad.png',
+                angry: 'assets/images/characters/dain_angry.png'
+            }
+        }
+    };
+    const sandbox = {
+        window: freeTalkWindow,
+        document: { documentElement: { lang: 'ko' } },
+        navigator: { onLine: true },
+        console: { log() {}, info() {}, warn() {}, error() {} },
+        DEFAULT_MAX_FREE_TALK_TURNS: 3,
+        CHAR_NAME_MAP: {},
+        getAssetUrl: value => `${value}?v=test`,
+        setTimeout,
+        clearTimeout,
+        URL,
+        URLSearchParams,
+        Math,
+        Date,
+        Object,
+        Array,
+        String,
+        Number,
+        Set,
+        Map,
+        Promise
+    };
+    vm.runInNewContext(read('assets/js/modules/FreeTalkSystem.js'), sandbox);
+
+    const dainImage = { src: '', dataset: {} };
+    const leftSlot = { dataset: { groupCharId: 'Teacher' }, querySelector: () => ({ src: '', dataset: {} }) };
+    const rightSlot = { dataset: { groupCharId: 'Dain' }, querySelector: () => dainImage };
+    const system = new freeTalkWindow.FreeTalkSystem(
+        {},
+        {},
+        { charSlots: { left: leftSlot, right: rightSlot } },
+        {}
+    );
+    system.groupParticipants = [
+        { id: 'Teacher', name: '담임선생님', side: 'left' },
+        { id: 'Dain', name: '다인', side: 'right' }
+    ];
+    system.normalizeSegments = value => value;
+    system._sanitizeSegmentsPlaceholders = value => value;
+    system.segmentsToText = value => value.map(segment => segment.text).join(' ');
+    system._sanitizeVisibleArtifacts = value => value;
+
+    const ordered = system.parseGroupJsonResponse(JSON.stringify({
+        conversations: [
+            { name: '다인', segments: [{ type: 'dialogue', text: '제가 먼저 불렀어요.' }], expression: 'angry', affinity: -2 },
+            { name: '담임선생님', segments: [{ type: 'dialogue', text: '내 말을 먼저 들어.' }], expression: 'sad', affinity: -3 }
+        ]
+    }));
+    assert.deepEqual(Array.from(ordered, item => item.speakerId), ['Teacher', 'Dain']);
+
+    system._applyGroupExpression('angry', 'Dain');
+    assert.equal(dainImage.src, 'assets/images/characters/dain_angry.png?v=test');
+    assert.equal(dainImage.dataset.rawSrc, 'assets/images/characters/dain_angry.png?v=test');
+    system._applyGroupExpression('sad', 'Dain');
+    assert.equal(dainImage.src, 'assets/images/characters/dain_sad.png?v=test');
+
+    const events = [];
+    system.stateManager = {
+        getRelationshipAftermath: () => null,
+        setRelationshipAftermath() {}
+    };
+    system.galleryManager = { incrementFreeTalkCount() {} };
+    system.uiManager = {
+        updateNameTag: name => events.push(`name:${name}`),
+        showNextIndicator() {}
+    };
+    system.dialogueSystem = {
+        async typeText(_text, name) { events.push(`text:${name}`); },
+        getChatRenderReceipt: () => null
+    };
+    system._assertRequestContext = () => {};
+    system._setGroupActiveSpeaker = speakerId => events.push(`active:${speakerId}`);
+    system._applyGroupExpression = (_expression, speakerId) => events.push(`expression:${speakerId}`);
+    system._applyGroupAffinity = (_change, speakerId) => {
+        events.push(`affinity:${speakerId}`);
+        return { change: 0, value: 0, requestedChange: 0, positiveUsed: 0 };
+    };
+    system._waitForGroupMessageAdvance = async () => { events.push('advance'); };
+    await system._renderGroupConversations(ordered, {}, '내가 책임질게.', 'ko');
+    assert.deepEqual(events, [
+        'active:Teacher',
+        'name:담임선생님',
+        'expression:Teacher',
+        'text:담임선생님',
+        'affinity:Teacher',
+        'advance',
+        'active:Dain',
+        'name:다인',
+        'expression:Dain',
+        'text:다인',
+        'affinity:Dain'
+    ]);
+});
+
+test('group backup logs save one player row then one row per character with canonical speaker ids', async () => {
+    const config = read('assets/js/modules/config.js');
+    const start = config.indexOf('async function saveCupidGroupChatLog');
+    const end = config.indexOf('// ============================================================================', start);
+    assert.ok(start >= 0 && end > start, 'group log writer must remain extractable');
+
+    const queued = [];
+    const logWindow = {
+        CupidFreeTalkCore: { resolveCupidAssistantLogContent: value => value },
+        gameEngine: { stateManager: { playerName: '민준' } }
+    };
+    const logSandbox = {
+        window: logWindow,
+        navigator: { onLine: true },
+        getCupidDeviceId: () => 'cupid-test-user',
+        getCupidLanguage: () => 'ko',
+        getCupidAppId: () => 'cupid',
+        makeCupidChatLogEntry: value => ({ ...value, clientMsgId: `test-${queued.length}` }),
+        enqueueCupidChatLog: entry => { queued.push(entry); return true; },
+        flushCupidChatLogQueue: async () => {},
+        postCupidChatLogEntry: async () => {},
+        postCupidChatRenderAck: async () => {},
+        isTransientCupidChatLogError: () => true,
+        logCupidError: () => {},
+        String,
+        Object,
+        Array,
+        Promise
+    };
+    vm.runInNewContext(
+        `${config.slice(start, end)}\nglobalThis.__saveCupidGroupChatLog = saveCupidGroupChatLog;`,
+        logSandbox
+    );
+    await logSandbox.__saveCupidGroupChatLog({
+        userContent: '내가 책임질게.',
+        assistantMessages: [
+            { speakerId: 'Teacher', speakerName: '담임선생님', content: '먼저 내 말을 들어.', affinityChange: -2, affinityCurrent: 18 },
+            { speakerId: 'Dain', speakerName: '다인', content: '저도 들을게요.', affinityChange: -1, affinityCurrent: 27 }
+        ],
+        participants: [{ id: 'Teacher' }, { id: 'Dain' }],
+        sessionId: 'morning5_counteroffer_group_talk',
+        playerName: '민준'
+    });
+
+    assert.equal(queued.length, 3);
+    assert.deepEqual(Array.from(queued, entry => `${entry.role}:${entry.speakerId}`), [
+        'user:__player__',
+        'assistant:Teacher',
+        'assistant:Dain'
+    ]);
+    for (const entry of queued) {
+        assert.equal(entry.charId, 'group');
+        assert.equal(entry.context, 'group');
+        assert.deepEqual(Array.from(entry.groupParticipants), ['Teacher', 'Dain']);
+        assert.equal(entry.groupPairId, 'cupid:Teacher:Dain');
+    }
+    assert.equal(queued[1].affinityCurrent, 18);
+    assert.equal(queued[2].affinityCurrent, 27);
 });
 
 test('gallery relationship aftermath persists through its local save store', () => {

@@ -767,8 +767,11 @@ function verifyGroupPromptCacheContract(context) {
     'group prompt does not allow new misconduct to hurt both characters');
     assert(firstParts.stable.includes('같은 사실만 되풀이해 다시 감점하지 마세요'),
         'group prompt can repeat the original betrayal penalty mechanically');
-    assert(firstParts.stable.includes('억지로 한 번씩 번갈아 말하게 하지 말고'),
-        'group prompt forces mechanical alternation');
+    assert(firstParts.stable.includes('매 턴 원래 마음을 주던 상대가 먼저 말합니다')
+        && firstParts.stable.includes('두 사람을 반드시 모두 넣고'),
+    'group prompt no longer guarantees the harmed-partner then tempter response order');
+    assert(firstParts.stable.includes('허용 표정:'),
+        'group prompt does not expose each participant expression asset contract');
 }
 
 function verifyTypingOwnerIsolation(context) {
