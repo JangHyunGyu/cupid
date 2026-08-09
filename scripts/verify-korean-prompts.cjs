@@ -725,6 +725,52 @@ function verifyCacheKeyWiring() {
     }
 }
 
+function verifyGroupPromptCacheContract(context) {
+    const promptData = context.window.getPromptData('ko', '민준');
+    const makePrompt = ({ affinity = 24, choiceState = '숨기지 않고 말했다', secondId = 'Dain', secondName = '다인' } = {}) => (
+        context.window.buildCupidGroupSystemPrompt({
+            lang: 'ko',
+            participants: [
+                { id: 'Seoyeon', name: '서연', role: 'lead' },
+                { id: secondId, name: secondName, role: 'tempter' }
+            ],
+            locationName: '교실',
+            context: '두 사람이 함께 주인공을 마주하고 있다.',
+            extraGuideline: '각자의 말투와 상처를 지킨다.',
+            playerName: '민준',
+            choiceState,
+            gameContexts: { Seoyeon: '어젯밤 일을 알게 됐다.', [secondId]: '먼저 다가갔다.' },
+            affinities: { Seoyeon: affinity, [secondId]: 32 },
+            promptData
+        })
+    );
+    const first = makePrompt();
+    const dynamicVariant = makePrompt({ affinity: -18, choiceState: '알림을 보고도 다시 거짓말했다' });
+    const pairVariant = makePrompt({ secondId: 'Yuna', secondName: '유나' });
+    const firstParts = splitCacheBoundary(first, 'main/group/Seoyeon-Dain');
+    const dynamicParts = splitCacheBoundary(dynamicVariant, 'main/group/Seoyeon-Dain/dynamic');
+    assert(firstParts.stable === dynamicParts.stable,
+        'group stable prefix changed when only choice or affinity changed');
+    assert(firstParts.dynamic !== dynamicParts.dynamic,
+        'group dynamic tail did not change with current choice or affinity');
+    assert(context.window.CupidFreeTalkCore.getStablePromptFingerprint(first)
+        === context.window.CupidFreeTalkCore.getStablePromptFingerprint(dynamicVariant),
+    'group cache fingerprint includes turn-varying state');
+    assert(context.window.CupidFreeTalkCore.getStablePromptFingerprint(first)
+        !== context.window.CupidFreeTalkCore.getStablePromptFingerprint(pairVariant),
+    'different group participant pairs share one cache fingerprint');
+    assert(firstParts.stable.includes('한 인물의 이번 턴 회복은 최대 +3')
+        && firstParts.stable.includes('두 인물의 회복 합계도 최대 +3'),
+    'group prompt lost per-speaker or combined recovery caps');
+    assert(firstParts.stable.includes('책임을 피하거나')
+        && firstParts.stable.includes('두 사람 모두 호감도가 떨어질 수 있습니다'),
+    'group prompt does not allow new misconduct to hurt both characters');
+    assert(firstParts.stable.includes('같은 사실만 되풀이해 다시 감점하지 마세요'),
+        'group prompt can repeat the original betrayal penalty mechanically');
+    assert(firstParts.stable.includes('억지로 한 번씩 번갈아 말하게 하지 말고'),
+        'group prompt forces mechanical alternation');
+}
+
 function verifyTypingOwnerIsolation(context) {
     const frames = [];
     context.requestAnimationFrame = callback => {
@@ -817,6 +863,7 @@ verifyWiringAndScenePrompts();
 verifyAdultExamplesOwnUserActions();
 verifyRequestOwnershipGuards();
 verifyCacheKeyWiring();
+verifyGroupPromptCacheContract(context);
 verifyTypingOwnerIsolation(context);
 
 console.log(`Verified Korean runtime prompts for ${CHARACTERS.length} characters, 43 scene prompts, daily turn limits, loader order, memories, user agency, and stale-turn ownership.`);

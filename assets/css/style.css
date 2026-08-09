@@ -520,6 +520,52 @@ html {
     /* 겹치는 부분에서 밝은 색이 보임 */
 }
 
+/* 2인 대면 프리토킹: 기존 비주얼노벨 대화창은 유지하고 현재 화자만 강조 */
+#character-layer.group-freetalk-mode #char-left {
+    transform: translateX(-78%);
+    z-index: 3;
+}
+
+#character-layer.group-freetalk-mode #char-right {
+    transform: translateX(-22%);
+    z-index: 3;
+}
+
+#character-layer.group-freetalk-mode .group-freetalk-participant img {
+    mix-blend-mode: normal;
+    transition: opacity 0.24s ease, filter 0.24s ease, transform 0.24s ease;
+}
+
+#character-layer.group-freetalk-mode .group-freetalk-inactive img {
+    opacity: 0.48;
+    filter: saturate(0.58) brightness(0.72);
+}
+
+#character-layer.group-freetalk-mode .group-freetalk-active img {
+    opacity: 1;
+    filter: saturate(1) brightness(1.04);
+}
+
+#dialogue-box.group-freetalk-dialogue {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#dialogue-box.group-freetalk-dialogue[data-group-speaker-side="left"] {
+    border-color: var(--c-accent);
+    box-shadow: 0 0 22px rgba(232, 138, 160, 0.18);
+}
+
+#dialogue-box.group-freetalk-dialogue[data-group-speaker-side="right"] {
+    border-color: #9d7cff;
+    box-shadow: 0 0 22px rgba(157, 124, 255, 0.2);
+}
+
+#dialogue-box.group-freetalk-dialogue[data-group-speaker-side="right"] #name-tag {
+    left: auto;
+    right: 20px;
+    background: #8363d9;
+}
+
 /* ==========================================================================
    UI Layer: Conversation & Choice (UI 레이어: 대화창 및 선택지)
    ========================================================================== */

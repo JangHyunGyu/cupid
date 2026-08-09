@@ -107,6 +107,13 @@
         "name": "Yuna",
         "text": "*Em vez de responder, Yuna acende a tela outra vez. A notificação permanece entre nós.* Eu dei a você a chance de me contar, e você escondeu de novo."
     },
+    "morning5_counteroffer_group_talk": {
+        "name": "As duas",
+        "text": "*Os dois olhares caem sobre mim ao mesmo tempo. Agora não dá mais para responder a uma e evitar a outra.*",
+        "context": "Acabou de vir à tona que o protagonista cedeu à tentação da noite anterior. A pessoa em quem ele tinha decidido investir e quem o seduziu agora o encaram juntas na mesma sala. A conversa continua a partir da escolha dele de confessar ou mentir, sem amenizar a tensão entre os três.",
+        "personality": "Cada uma mantém sua voz e sua própria mágoa. Elas não precisam falar em alternância mecânica; silêncios, interrupções e perguntas entre si devem surgir da situação. A pessoa traída acabou de descobrir tudo, enquanto quem o seduziu sabe que foi ela quem tomou a iniciativa.",
+        "buttonText": "Responder"
+    },
     "morning5_start_b": {
         "name": "{name}",
         "text": "*Assim que entro na sala, três coisas chamam minha atenção ao mesmo tempo: um bilhete sobre a carteira, uma fita amarrada ao cordão do uniforme de educação física e uma notificação na tela de bloqueio.*"

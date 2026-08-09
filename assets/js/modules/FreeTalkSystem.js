@@ -140,6 +140,12 @@ class FreeTalkSystem {
         this._activeChatTurnId = null;
         this.currentCharKey = null;
 
+        /** 2인 대면 프리토킹 상태 */
+        this.isGroupMode = false;
+        this.groupParticipants = [];
+        this._groupAdvanceResolver = null;
+        this._groupMessagesRemaining = 0;
+
         /** 현재 씬의 통신 매체 (대면 vs 원격) — 캐시 키 분기용 */
         this._isRemote = false;
 
@@ -290,10 +296,16 @@ class FreeTalkSystem {
      * @param {string} sceneId - 씬 ID
      */
     async startFreeTalk(scene, sceneId) {
+        if (scene?.type === 'group_free_talk') {
+            return this.startGroupFreeTalk(scene, sceneId);
+        }
         // 이미 프리토킹 중이면 무시 (중복 호출 방지)
         if (this.isFreeTalking) return;
 
         this._invalidateFreeTalkContext();
+        this._clearGroupPresentation();
+        this.isGroupMode = false;
+        this.groupParticipants = [];
         const startEpoch = this._freeTalkEpoch;
         this.isFreeTalking = true;
         this.isProcessingChat = false;
@@ -505,6 +517,193 @@ class FreeTalkSystem {
         }
     }
 
+    _getLocalizedGroupCharacterName(charId, lang = 'ko') {
+        const names = {
+            Seoyeon: { ko: '서연', en: 'Seoyeon', es: 'Seoyeon', ja: 'ソヨン', fr: 'Seoyeon', de: 'Seoyeon', pt: 'Seoyeon' },
+            Yuna: { ko: '유나', en: 'Yuna', es: 'Yuna', ja: 'ユナ', fr: 'Yuna', de: 'Yuna', pt: 'Yuna' },
+            Dain: { ko: '다인', en: 'Dain', es: 'Dain', ja: 'ダイン', fr: 'Dain', de: 'Dain', pt: 'Dain' },
+            Teacher: { ko: '담임선생님', en: 'Homeroom Teacher', es: 'Profesora', ja: '担任先生', fr: 'Professeure principale', de: 'Klassenlehrerin', pt: 'Professora' },
+            Nurse: { ko: '보건선생님', en: 'School Nurse', es: 'Enfermera', ja: '保健室の先生', fr: 'Infirmière scolaire', de: 'Schulkrankenschwester', pt: 'Enfermeira' }
+        };
+        const language = String(lang || 'ko').toLowerCase().split('-')[0];
+        return names[charId]?.[language] || names[charId]?.ko || charId;
+    }
+
+    _resolveCounterofferGroupParticipants(lang = 'ko') {
+        const getFlag = flag => this.stateManager.getFlag?.(flag);
+        let leadId = '';
+        if (getFlag('day4_counteroffer_target_teacher')) leadId = 'Teacher';
+        else if (getFlag('day4_counteroffer_target_nurse')) leadId = 'Nurse';
+        else if (getFlag('route_seoyeon')) leadId = 'Seoyeon';
+        else if (getFlag('route_yuna')) leadId = 'Yuna';
+        else if (getFlag('route_dain')) leadId = 'Dain';
+
+        let tempterId = '';
+        if (getFlag('day4_took_seoyeon_counteroffer')) tempterId = 'Seoyeon';
+        else if (getFlag('day4_took_yuna_counteroffer')) tempterId = 'Yuna';
+        else if (getFlag('day4_took_dain_counteroffer')) tempterId = 'Dain';
+
+        if (!leadId || !tempterId || leadId === tempterId) return [];
+        return [
+            { id: leadId, name: this._getLocalizedGroupCharacterName(leadId, lang), role: 'lead', side: 'left' },
+            { id: tempterId, name: this._getLocalizedGroupCharacterName(tempterId, lang), role: 'tempter', side: 'right' }
+        ];
+    }
+
+    _getGroupChoiceState(lang = 'ko') {
+        const lied = this.stateManager.getFlag?.('day5_lied_about_counteroffer');
+        const states = lied
+            ? { ko: '알림을 보고도 별일 아니라고 다시 거짓말했다', en: 'he lied again and dismissed the notification', es: 'volvió a mentir y restó importancia a la notificación', ja: '通知を見られても、たいしたことではないと再び嘘をついた', fr: 'il a de nouveau menti en minimisant la notification', de: 'er hat erneut gelogen und die Nachricht heruntergespielt', pt: 'ele mentiu de novo e tentou minimizar a notificação' }
+            : { ko: '숨기지 않고 어젯밤 일을 털어놓았다', en: 'he admitted what happened last night without hiding it', es: 'contó sin ocultarlo lo que ocurrió la noche anterior', ja: '昨夜のことを隠さず打ち明けた', fr: 'il a raconté sans rien cacher ce qui s’était passé la veille', de: 'er hat ohne Ausflüchte erzählt, was in der Nacht geschehen ist', pt: 'ele contou sem esconder o que aconteceu na noite anterior' };
+        const language = String(lang || 'ko').toLowerCase().split('-')[0];
+        return states[language] || states.en;
+    }
+
+    _setGroupStandingCharacters(participants = []) {
+        const fallbackImages = {
+            Seoyeon: 'assets/images/characters/seyoun_sad.png',
+            Yuna: 'assets/images/characters/yuna_sad.png',
+            Dain: 'assets/images/characters/dain_sad.png',
+            Teacher: 'assets/images/characters/teacher_sad.png',
+            Nurse: 'assets/images/characters/nurse_worried.png'
+        };
+        const slots = this.uiManager?.charSlots || {};
+        for (const [side, slot] of Object.entries(slots)) {
+            if (!slot) continue;
+            slot.replaceChildren();
+            slot.dataset.groupCharId = '';
+            slot.classList.remove('group-freetalk-participant', 'group-freetalk-active', 'group-freetalk-inactive');
+            if (side === 'center') continue;
+            const participant = participants.find(item => item.side === side);
+            if (!participant) continue;
+            const rawSrc = fallbackImages[participant.id];
+            const img = document.createElement('img');
+            img.src = getAssetUrl(rawSrc);
+            img.dataset.rawSrc = getAssetUrl(rawSrc);
+            img.alt = '';
+            img.setAttribute('aria-hidden', 'true');
+            slot.dataset.groupCharId = participant.id;
+            slot.classList.add('group-freetalk-participant', 'group-freetalk-inactive');
+            slot.appendChild(img);
+        }
+        document.getElementById('character-layer')?.classList.add('group-freetalk-mode');
+        this.uiManager?.dialogueBox?.classList.add('group-freetalk-dialogue');
+    }
+
+    _setGroupActiveSpeaker(charId = '') {
+        const slots = this.uiManager?.charSlots || {};
+        for (const slot of Object.values(slots)) {
+            if (!slot?.classList.contains('group-freetalk-participant')) continue;
+            const active = slot.dataset.groupCharId === charId;
+            slot.classList.toggle('group-freetalk-active', active);
+            slot.classList.toggle('group-freetalk-inactive', !active);
+        }
+        const participant = this.groupParticipants.find(item => item.id === charId);
+        this.uiManager?.dialogueBox?.setAttribute('data-group-speaker-side', participant?.side || 'left');
+    }
+
+    _clearGroupPresentation() {
+        document.getElementById('character-layer')?.classList.remove('group-freetalk-mode');
+        this.uiManager?.dialogueBox?.classList.remove('group-freetalk-dialogue');
+        this.uiManager?.dialogueBox?.removeAttribute('data-group-speaker-side');
+        for (const slot of Object.values(this.uiManager?.charSlots || {})) {
+            slot?.classList.remove('group-freetalk-participant', 'group-freetalk-active', 'group-freetalk-inactive');
+            if (slot?.dataset) delete slot.dataset.groupCharId;
+        }
+    }
+
+    _buildCurrentGroupSystemPrompt(scene, lang) {
+        const participants = this.groupParticipants;
+        const promptData = window.getPromptData ? window.getPromptData(lang, this.stateManager.playerName) : {};
+        const gameContexts = Object.fromEntries(participants.map(participant => [
+            participant.id,
+            this.getGameContext(participant.id, lang)
+        ]));
+        const affinities = Object.fromEntries(participants.map(participant => [
+            participant.id,
+            this.stateManager.getAffinity?.(participant.id) ?? this.stateManager.stats?.[participant.id]?.affinity ?? 0
+        ]));
+        return window.buildCupidGroupSystemPrompt?.({
+            lang,
+            participants,
+            locationName: this._getLocalizedGroupLocation(lang),
+            context: scene.context || '',
+            extraGuideline: scene.personality || scene.extra_guideline || '',
+            playerName: this.stateManager.playerName || '',
+            choiceState: this._getGroupChoiceState(lang),
+            gameContexts,
+            affinities,
+            promptData
+        }) || '';
+    }
+
+    _getLocalizedGroupLocation(lang = 'ko') {
+        const locations = { ko: '교실', en: 'Classroom', es: 'Salón de clases', ja: '教室', fr: 'Salle de classe', de: 'Klassenzimmer', pt: 'Sala de aula' };
+        const language = String(lang || 'ko').toLowerCase().split('-')[0];
+        return locations[language] || locations.en;
+    }
+
+    async startGroupFreeTalk(scene, sceneId) {
+        if (this.isFreeTalking) return;
+        const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
+        const participants = scene.groupParticipants === 'counteroffer_confrontation'
+            ? this._resolveCounterofferGroupParticipants(lang)
+            : [];
+        if (participants.length !== 2) {
+            throw new Error('Could not resolve the two participants for Cupid group free talk');
+        }
+
+        this._invalidateFreeTalkContext();
+        this.isFreeTalking = true;
+        this.isProcessingChat = false;
+        this.isGroupMode = true;
+        this.freeTalkTurns = 0;
+        this.currentMaxTurns = scene.maxTurns || 3;
+        this.currentSceneId = sceneId;
+        this.groupParticipants = participants;
+        this.currentCharKey = `group:${participants.map(item => item.id).join(':')}`;
+
+        const existingHistory = this.stateManager.getChatMemory(this.currentCharKey) || [];
+        const systemPrompt = normalizeFreeTalkPromptBlockForCache(this._buildCurrentGroupSystemPrompt(scene, lang));
+        this.freeTalkHistory = [
+            { role: 'system', content: systemPrompt },
+            ...existingHistory.filter(message => message?.role !== 'system')
+        ];
+
+        this._setGroupStandingCharacters(participants);
+        this._setGroupActiveSpeaker(participants[0].id);
+        this.uiManager.chatContainer.style.display = 'block';
+        const chatGuideEl = document.getElementById('chat-guide');
+        if (chatGuideEl) {
+            const guides = {
+                ko: '<b>대면 대화:</b> 두 사람의 발언은 한 명씩 표시됩니다. 다음 사람의 말을 보려면 대화창을 누르세요.',
+                en: '<b>Group conversation:</b> Each character speaks in turn on screen. Tap the dialogue box to see the next speaker.',
+                es: '<b>Conversación en grupo:</b> Cada personaje aparecerá por separado. Toca el cuadro de diálogo para ver a quien sigue.',
+                ja: '<b>三人での対話：</b>二人の発言は一人ずつ表示されます。次の発言を見るには会話欄を押してください。',
+                fr: '<b>Conversation de groupe :</b> Chaque personnage s’affiche séparément. Touchez la boîte de dialogue pour passer au suivant.',
+                de: '<b>Gruppengespräch:</b> Die Figuren werden nacheinander angezeigt. Tippe auf das Dialogfeld, um die nächste Person zu sehen.',
+                pt: '<b>Conversa em grupo:</b> Cada personagem aparece separadamente. Toque na caixa de diálogo para ver a próxima fala.'
+            };
+            chatGuideEl.innerHTML = guides[lang] || guides.en;
+        }
+
+        if (scene.buttonText) {
+            this.uiManager.chatSendBtn.textContent = scene.buttonText;
+            this.uiManager.chatSendBtn.style.cssText = 'border-radius:8px;width:auto;padding:0 20px;';
+        } else {
+            this.uiManager.chatSendBtn.innerHTML = SEND_ICON;
+            this.uiManager.chatSendBtn.style.cssText = 'border-radius:50%;width:45px;padding:0;';
+        }
+        if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns;
+        if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;
+        this.uiManager.chatInput.disabled = false;
+        this.uiManager.chatInput.readOnly = false;
+        this.uiManager.chatSendBtn.disabled = false;
+        this.uiManager.updateNameTag(participants[0].name);
+        if (scene.text) await this.dialogueSystem.typeText(scene.text, scene.name || participants[0].name);
+        if (!window.isCupidDesktopPointer || window.isCupidDesktopPointer()) this.uiManager.chatInput.focus();
+    }
+
     /** 프리토킹 스킵 */
     async skipFreeTalk() {
         if (!this.isFreeTalking) return;
@@ -534,6 +733,9 @@ class FreeTalkSystem {
             this.uiManager.chatContainer.style.display = 'none';
             this.isFreeTalking = false;
             this.isProcessingChat = false;
+            this.isGroupMode = false;
+            this.groupParticipants = [];
+            this._clearGroupPresentation();
 
             const endMsg = { es: "<br><br>(La conversación ha terminado. Haz clic para continuar.)", ja: "<br><br>（会話が終了しました。画面をクリックして先へ進んでください。）", en: "<br><br>(The conversation has ended. Click to continue.)", fr: "<br><br>(La conversation est terminée. Cliquez pour continuer.)", de: "<br><br>(Das Gespräch ist beendet. Klicke, um fortzufahren.)", pt: "<br><br>(A conversa terminou. Clique para continuar.)" }[lang] || "<br><br>(장면 삽입이 종료되었습니다. 화면을 클릭하여 계속하세요.)";
             this.uiManager.messageEl.innerHTML += endMsg;
@@ -542,6 +744,12 @@ class FreeTalkSystem {
 
     /** 채팅 메시지 전송 */
     _invalidateFreeTalkContext({ preserveRequestOwner = false } = {}) {
+        if (this._groupAdvanceResolver) {
+            const resolve = this._groupAdvanceResolver;
+            this._groupAdvanceResolver = null;
+            this._groupMessagesRemaining = 0;
+            resolve(false);
+        }
         if (!preserveRequestOwner && this._activeRequestContext) {
             this._rollbackRequestHistory(this._activeRequestContext);
             if (this.uiManager?.messageEl) this.uiManager.messageEl.innerHTML = '';
@@ -567,6 +775,9 @@ class FreeTalkSystem {
         this.freeTalkHistory = [];
         this.currentSceneId = null;
         this.currentCharKey = null;
+        this.isGroupMode = false;
+        this.groupParticipants = [];
+        this._groupMessagesRemaining = 0;
         this._isRemote = false;
         this._activeChatTurnId = null;
         this.uiManager?.removeStagedImage?.();
@@ -647,6 +858,10 @@ class FreeTalkSystem {
     }
 
     async sendChatMessage(getSceneFn) {
+        const activeScene = getSceneFn?.(this.currentSceneId);
+        if (activeScene?.type === 'group_free_talk') {
+            return this.sendGroupChatMessage(getSceneFn);
+        }
         // 이미 처리 중이면 무시 (중복 호출 방지)
         if (this.isProcessingChat) return;
         if (!this.uiManager?.chatInput || !this.uiManager?.chatSendBtn || !this.uiManager?.dialogueBox) return;
@@ -1190,6 +1405,396 @@ class FreeTalkSystem {
                 if (!window.isCupidDesktopPointer || window.isCupidDesktopPointer()) {
                     this.uiManager.chatInput.focus();
                 }
+            }
+        }
+    }
+
+    advanceGroupMessageQueue() {
+        if (!this.isGroupMode || !this._groupAdvanceResolver) return false;
+        const resolve = this._groupAdvanceResolver;
+        this._groupAdvanceResolver = null;
+        this.uiManager.showNextIndicator?.(false);
+        resolve(true);
+        return true;
+    }
+
+    _waitForGroupMessageAdvance(requestContext, remaining) {
+        this._groupMessagesRemaining = remaining;
+        this.uiManager.showNextIndicator?.(remaining > 0);
+        if (remaining <= 0) return Promise.resolve(true);
+        return new Promise((resolve) => {
+            this._groupAdvanceResolver = resolve;
+        }).then((advanced) => {
+            this._groupMessagesRemaining = Math.max(0, remaining - 1);
+            this._assertRequestContext(requestContext);
+            return advanced;
+        });
+    }
+
+    parseGroupJsonResponse(reply) {
+        if (!reply) throw new Error('AI group response was empty. Please try again.');
+        let jsonText = String(reply).trim();
+        if (jsonText.includes('```')) {
+            const fenced = jsonText.match(/```(?:json)?\s*([\s\S]*?)\s*```/i);
+            if (fenced) jsonText = fenced[1];
+        }
+        if (!jsonText.startsWith('{')) {
+            const start = jsonText.indexOf('{');
+            const end = jsonText.lastIndexOf('}');
+            if (start >= 0 && end > start) jsonText = jsonText.slice(start, end + 1);
+        }
+        const parsed = JSON.parse(jsonText);
+        if (!Array.isArray(parsed?.conversations)) {
+            throw new Error('Cupid group response is missing conversations');
+        }
+
+        const byName = new Map(this.groupParticipants.flatMap(participant => [
+            [participant.name.toLowerCase(), participant],
+            [participant.id.toLowerCase(), participant]
+        ]));
+        const normalized = [];
+        const seen = new Set();
+        for (const conversation of parsed.conversations) {
+            const rawName = String(conversation?.name || '').trim();
+            const participant = byName.get(rawName.toLowerCase())
+                || this.groupParticipants.find(item => (this.charNameMap[rawName] || rawName) === item.id);
+            if (!participant || seen.has(participant.id)) continue;
+            const segments = this._sanitizeSegmentsPlaceholders(this.normalizeSegments(conversation.segments));
+            if (!segments?.length) continue;
+            seen.add(participant.id);
+            normalized.push({
+                speakerId: participant.id,
+                speakerName: participant.name,
+                side: participant.side,
+                segments,
+                text: this._sanitizeVisibleArtifacts(this.segmentsToText(segments)),
+                expression: String(conversation.expression || 'normal').toLowerCase(),
+                affinity: Number.isFinite(Number(conversation.affinity)) ? Math.trunc(Number(conversation.affinity)) : 0
+            });
+        }
+        if (normalized.length === 0) throw new Error('Cupid group response did not contain a valid speaker message');
+        return normalized;
+    }
+
+    _applyGroupExpression(expression, speakerId) {
+        const expressions = window.CHARACTER_EXPRESSIONS?.[speakerId];
+        const normalized = CupidFreeTalkCore.normalizeAvailableExpression(
+            expression,
+            Object.keys(expressions || {})
+        );
+        const src = expressions?.[normalized];
+        const slot = Object.values(this.uiManager?.charSlots || {})
+            .find(candidate => candidate?.dataset?.groupCharId === speakerId);
+        const img = slot?.querySelector('img');
+        if (src && img) {
+            img.src = getAssetUrl(src);
+            img.dataset.rawSrc = getAssetUrl(src);
+        }
+    }
+
+    _applyGroupAffinity(change, speakerId, positiveBudget) {
+        if (!this.stateManager.stats?.[speakerId]) return null;
+        const previousValue = this.stateManager.getAffinity(speakerId);
+        let requestedChange = CupidFreeTalkCore.normalizeAffinityChange(change);
+        if (requestedChange > 0) requestedChange = Math.min(3, positiveBudget);
+        if (requestedChange === 0) {
+            return { change: 0, value: previousValue, requestedChange: 0, positiveUsed: 0 };
+        }
+        const earnedStoryGain = this.stateManager.getStoryFreeTalkGain(speakerId);
+        const appliedChange = CupidFreeTalkCore.normalizeStoryFreeTalkAffinityChange(
+            requestedChange,
+            previousValue,
+            earnedStoryGain
+        );
+        if (appliedChange === 0) {
+            return { change: 0, value: previousValue, requestedChange, appliedChange: 0, positiveUsed: 0 };
+        }
+        const newValue = this.stateManager.changeAffinity(speakerId, appliedChange);
+        const actualChange = newValue - previousValue;
+        if (actualChange > 0) this.stateManager.addStoryFreeTalkGain(speakerId, actualChange);
+        if (actualChange !== 0) this.uiManager.showAffinityChange(actualChange, speakerId);
+        this.galleryManager.updateMaxAffinity(speakerId, newValue);
+        this.galleryManager.checkAffinityUnlock(speakerId, newValue);
+        return {
+            change: actualChange,
+            value: newValue,
+            requestedChange,
+            appliedChange,
+            positiveUsed: Math.max(0, actualChange)
+        };
+    }
+
+    async _renderGroupConversations(conversations, requestContext, latestUserText, lang) {
+        let positiveBudget = 3;
+        const rendered = [];
+        for (let index = 0; index < conversations.length; index += 1) {
+            this._assertRequestContext(requestContext);
+            const conversation = conversations[index];
+            this._setGroupActiveSpeaker(conversation.speakerId);
+            this.uiManager.updateNameTag(conversation.speakerName);
+            this._applyGroupExpression(conversation.expression, conversation.speakerId);
+            await this.dialogueSystem.typeText(
+                conversation.text,
+                conversation.speakerName,
+                conversation.segments,
+                () => this._isRequestContextCurrent(requestContext)
+            );
+            const renderReceipt = this.dialogueSystem.getChatRenderReceipt(
+                conversation.text,
+                conversation.speakerName,
+                conversation.segments
+            );
+            const affinityResult = this._applyGroupAffinity(
+                conversation.affinity,
+                conversation.speakerId,
+                positiveBudget
+            );
+            positiveBudget = Math.max(0, positiveBudget - (affinityResult?.positiveUsed || 0));
+            const nextAftermath = CupidFreeTalkCore.updateRelationshipAftermath(
+                this.stateManager.getRelationshipAftermath?.(conversation.speakerId),
+                affinityResult?.requestedChange ?? 0,
+                latestUserText,
+                {
+                    source: 'user',
+                    fallbackCause: lang === 'ko'
+                        ? '셋이 마주한 자리에서 사용자가 남긴 말이나 행동'
+                        : 'the user’s words or actions during the confrontation'
+                }
+            );
+            this.stateManager.setRelationshipAftermath?.(conversation.speakerId, nextAftermath);
+            this.galleryManager.incrementFreeTalkCount(conversation.speakerId);
+            rendered.push({ ...conversation, affinityResult, renderReceipt });
+
+            const remaining = conversations.length - index - 1;
+            if (remaining > 0) await this._waitForGroupMessageAdvance(requestContext, remaining);
+        }
+        this.uiManager.showNextIndicator?.(false);
+        this._groupMessagesRemaining = 0;
+        return rendered;
+    }
+
+    async sendGroupChatMessage(getSceneFn) {
+        if (this.isProcessingChat || !this.isGroupMode) return;
+        if (!this.uiManager?.chatInput || !this.uiManager?.chatSendBtn || !this.uiManager?.dialogueBox) return;
+        const text = this.uiManager.chatInput.value.trim();
+        const stagedImage = this.uiManager.stagedImage;
+        if ((!text && !stagedImage) || this.freeTalkTurns >= this.currentMaxTurns || this.dialogueSystem.isCurrentlyTyping()) return;
+
+        const requestSceneId = this.currentSceneId;
+        const scene = getSceneFn(requestSceneId);
+        const requestHistory = this.freeTalkHistory;
+        const requestEpoch = this._freeTalkEpoch;
+        const groupKey = this.currentCharKey;
+        if (!scene || scene.type !== 'group_free_talk' || !groupKey?.startsWith('group:')) return;
+
+        const requestOwner = {};
+        const requestContext = {
+            owner: requestOwner,
+            epoch: requestEpoch,
+            sceneId: requestSceneId,
+            charKey: groupKey,
+            history: requestHistory,
+            historyLengthBeforeTurn: requestHistory.length,
+            freeTalkTurnsBefore: this.freeTalkTurns,
+            turnMeta: null
+        };
+        this._activeRequestOwner = requestOwner;
+        this._activeRequestContext = requestContext;
+        this.isProcessingChat = true;
+        this.freeTalkTurns += 1;
+        if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
+
+        const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
+        const playerLabels = { ko: '나', en: 'Me', es: 'Yo', ja: '俺', fr: 'Moi', de: 'Ich', pt: 'Eu' };
+        this.uiManager.updateNameTag(playerLabels[lang] || playerLabels.en);
+        const finalContent = stagedImage ? (text ? `${text}\n\n${stagedImage}` : stagedImage) : text;
+        this.uiManager.messageEl.innerHTML = text ? this.dialogueSystem.parseNarration(text) : '';
+        if (stagedImage) {
+            const img = document.createElement('img');
+            img.src = stagedImage;
+            img.className = 'chat-image';
+            img.alt = { ko: '첨부 이미지', en: 'Attached image', es: 'Imagen adjunta', ja: '添付画像', fr: 'Image jointe', de: 'Angehängtes Bild', pt: 'Imagem anexada' }[lang] || 'Attached image';
+            this.uiManager.messageEl.appendChild(img);
+        }
+        this.uiManager.chatInput.value = '';
+        this.uiManager.resizeChatInput?.();
+        this.uiManager.removeStagedImage();
+        requestHistory.push({ role: 'user', content: finalContent });
+
+        const originalBtnContent = this.uiManager.chatSendBtn.innerHTML;
+        this.uiManager.chatSendBtn.disabled = true;
+        this.uiManager.chatInput.disabled = true;
+        if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = true;
+        this.uiManager.chatSendBtn.innerHTML = '<span class="loading-dots">...</span>';
+        document.querySelectorAll('.group-freetalk-participant img').forEach(img => img.classList.add('thinking'));
+        this.uiManager.dialogueBox.classList.add('thinking-box');
+        this._showThinkingMessage(this.groupParticipants.map(item => item.name).join(' · '));
+
+        let lastCacheKey = '';
+        let lastTurnMeta = null;
+        try {
+            this._assertRequestContext(requestContext);
+            requestHistory[0] = {
+                role: 'system',
+                content: normalizeFreeTalkPromptBlockForCache(this._buildCurrentGroupSystemPrompt(scene, lang))
+            };
+            let optimized = this._buildWindowedHistory(requestHistory, groupKey);
+            if (typeof window.optimizeImageHistory === 'function') optimized = window.optimizeImageHistory(optimized, 5);
+            const latestUserCanon = buildCupidLatestUserCanonBlock(optimized, lang, finalContent);
+            const repetitionGuard = buildCupidRecentExpressionRepetitionGuard(optimized, lang);
+            const postHistoryGuidance = CupidFreeTalkCore.buildPostHistoryGuidance(optimized, lang, { repetitionGuard });
+            if (optimized[0]?.role === 'system') {
+                optimized = [
+                    { ...optimized[0], content: appendFreeTalkDynamicContext(optimized[0].content, `${latestUserCanon}${postHistoryGuidance}`) },
+                    ...optimized.slice(1)
+                ];
+            }
+            optimized = this._forceLatestUserMessageLast(optimized, finalContent);
+            const stableFingerprint = getFreeTalkStablePromptFingerprint(optimized[0]?.content || '');
+            lastCacheKey = stableFingerprint
+                ? `cupid:ctx:${encodeFreeTalkCacheKeyPart(lang)}:group:${this.groupParticipants.map(item => encodeFreeTalkCacheKeyPart(item.id)).join(':')}:f:s${stableFingerprint}`
+                : '';
+            lastTurnMeta = this._createTurnMeta(finalContent);
+            requestContext.turnMeta = lastTurnMeta;
+            this._activeChatTurnId = lastTurnMeta?.turnId || null;
+
+            const endpoint = (typeof AI_API_ENDPOINT !== 'undefined' && AI_API_ENDPOINT)
+                ? AI_API_ENDPOINT
+                : 'https://openrouter-api.yama5993.workers.dev/';
+            const requestInit = {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'x-app-type': 'cupid',
+                    'x-request-type': 'character',
+                    'x-chat-mode': 'group',
+                    'x-response-schema': 'cupid-group-conversations',
+                    'x-output-language': lang,
+                    ...(lastCacheKey && { 'x-cache-key': lastCacheKey })
+                },
+                body: JSON.stringify({
+                    messages: optimized,
+                    characterId: 'group',
+                    requestType: 'character',
+                    chatMode: 'group',
+                    responseSchema: 'cupid-group-conversations',
+                    responseSpeakers: this.groupParticipants.map(item => ({ id: item.id, key: item.id, name: item.name })),
+                    outputLanguage: lang,
+                    cacheKey: lastCacheKey,
+                    ...(lastTurnMeta || {})
+                })
+            };
+            let response = null;
+            for (let attempt = 0; attempt < 3; attempt += 1) {
+                response = await fetch(endpoint, requestInit);
+                this._assertRequestContext(requestContext);
+                if (!shouldRetryFreeTalkAiResponse(response) || attempt >= 2 || navigator.onLine === false) break;
+                try { await response.body?.cancel?.(); } catch (_) { /* best effort */ }
+                await new Promise(resolve => window.setTimeout(resolve, 400 * (attempt + 1)));
+            }
+            if (!response?.ok) throw new Error(`HTTP ${response?.status || 0}`);
+            const data = await response.json();
+            this._assertRequestContext(requestContext, data);
+            if (data?.provider === 'deepseek' && data?.usage) {
+                const usage = data.usage;
+                const cache = data.cache || {};
+                const hitTokens = Number(cache.prompt_cache_hit_tokens ?? usage.prompt_cache_hit_tokens ?? 0);
+                const missTokens = Number(cache.prompt_cache_miss_tokens ?? usage.prompt_cache_miss_tokens ?? 0);
+                const hitRatio = hitTokens + missTokens > 0 ? hitTokens / (hitTokens + missTokens) : 0;
+                console.info('[DeepSeek Cache]', {
+                    app: 'cupid-group-freetalk',
+                    character: 'group',
+                    cacheKey: lastCacheKey || '',
+                    hitTokens,
+                    missTokens,
+                    hitRatio: Number(hitRatio.toFixed(4)),
+                    promptTokens: Number(usage.prompt_tokens || hitTokens + missTokens || 0),
+                    completionTokens: Number(usage.completion_tokens || 0),
+                    totalTokens: Number(usage.total_tokens || 0)
+                });
+            }
+            const reply = String(data?.choices?.[0]?.message?.content || '').trim();
+            const conversations = this.parseGroupJsonResponse(reply);
+
+            this._clearThinkingMessage();
+            document.querySelectorAll('.group-freetalk-participant img').forEach(img => img.classList.remove('thinking'));
+            this.uiManager.dialogueBox.classList.remove('thinking-box');
+            const rendered = await this._renderGroupConversations(conversations, requestContext, finalContent, lang);
+            this._assertRequestContext(requestContext, data);
+
+            const transcript = rendered
+                .map(item => `${item.speakerName}: ${item.text}`)
+                .join('\n\n');
+            requestHistory.push({ role: 'assistant', content: transcript });
+            this.stateManager.setChatMemory(groupKey, requestHistory);
+            window.saveGameState?.();
+
+            if (typeof window.saveCupidGroupChatLog === 'function') {
+                window.saveCupidGroupChatLog({
+                    userContent: finalContent,
+                    assistantMessages: rendered.map(item => ({
+                        speakerId: item.speakerId,
+                        speakerName: item.speakerName,
+                        content: item.text,
+                        affinityChange: item.affinityResult?.change,
+                        affinityCurrent: item.affinityResult?.value,
+                        renderReceipt: item.renderReceipt
+                    })),
+                    participants: this.groupParticipants,
+                    sessionId: requestSceneId || '',
+                    playerName: this.stateManager.playerName || ''
+                });
+            }
+
+            if (this.freeTalkTurns >= this.currentMaxTurns) {
+                this._assertRequestContext(requestContext, data);
+                this.endFreeTalk(requestOwner);
+            }
+        } catch (error) {
+            const ownsCurrentContext = this._isRequestContextCurrent(requestContext);
+            this._rollbackRequestHistory(requestContext);
+            if (ownsCurrentContext) {
+                this.freeTalkTurns = requestContext.freeTalkTurnsBefore;
+                if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
+            }
+            if (!ownsCurrentContext || error?.isStaleTurn || error?.reason === 'STALE_TURN') return;
+            window.logCupidError?.(error, {
+                source: 'cupid-group-freetalk',
+                errorType: /^HTTP\s+\d+/.test(error?.message || '') ? 'group_freetalk_http_error' : 'group_freetalk_request_failed',
+                sessionId: requestSceneId || '',
+                context: {
+                    charId: 'group',
+                    participants: this.groupParticipants.map(item => item.id),
+                    sceneId: requestSceneId || '',
+                    language: lang,
+                    chatMode: 'group'
+                },
+                extra: { cacheKey: lastCacheKey, turnId: lastTurnMeta?.turnId || '' }
+            });
+            const message = {
+                ko: '연결이 잠시 원활하지 않습니다. 방금 입력은 대화 기록에 저장되지 않았습니다. 다시 시도해 주세요.',
+                en: 'The connection was interrupted. Your last input was not saved. Please try again.',
+                es: 'La conexión se interrumpió. Tu último mensaje no se guardó. Inténtalo de nuevo.',
+                ja: '接続が一時的に中断されました。直前の入力は保存されていません。もう一度お試しください。',
+                fr: 'La connexion a été interrompue. Votre dernier message n’a pas été enregistré. Réessayez.',
+                de: 'Die Verbindung wurde unterbrochen. Deine letzte Eingabe wurde nicht gespeichert. Bitte versuche es erneut.',
+                pt: 'A conexão foi interrompida. Sua última mensagem não foi salva. Tente novamente.'
+            }[lang] || 'The connection was interrupted. Please try again.';
+            await this.uiManager.showModal?.(message, true);
+        } finally {
+            if (this._activeRequestOwner === requestOwner) {
+                this._activeRequestOwner = null;
+                this._activeRequestContext = null;
+                this._activeChatTurnId = null;
+                this.isProcessingChat = false;
+                this.uiManager.chatSendBtn.disabled = false;
+                this.uiManager.chatInput.disabled = false;
+                if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;
+                this.uiManager.chatSendBtn.innerHTML = originalBtnContent;
+                document.querySelectorAll('.group-freetalk-participant img').forEach(img => img.classList.remove('thinking'));
+                this.uiManager.dialogueBox.classList.remove('thinking-box');
+                this._clearThinkingMessage();
+                if (!window.isCupidDesktopPointer || window.isCupidDesktopPointer()) this.uiManager.chatInput.focus();
             }
         }
     }
@@ -1755,6 +2360,9 @@ class FreeTalkSystem {
             if (this._freeTalkEpoch !== endingEpoch || this.currentSceneId !== endingSceneId) return;
             this.uiManager.chatContainer.style.display = 'none';
             this.isFreeTalking = false;
+            this.isGroupMode = false;
+            this.groupParticipants = [];
+            this._clearGroupPresentation();
 
             // 종료 안내 메시지
             const langEnd = window.GAME_LANG || document.documentElement.lang || 'ko';

@@ -175,6 +175,7 @@ const activeFreeTalkIds = [
     'wall_seo_freetalk',
     'wall_dain_freetalk',
     'wall_yuna_freetalk',
+    'morning5_counteroffer_group_talk',
     ...day5EndingFreeTalkIds
 ];
 const freeTalkPressureByLanguage = {
@@ -223,7 +224,7 @@ function verifyLocalizedFreeTalkInventory() {
     }
     const runtimeIds = Object.values(scenarioContext.SCENARIO)
         .flatMap(day => Object.entries(day || {}))
-        .filter(([, scene]) => scene?.type === 'free_talk')
+        .filter(([, scene]) => scene?.type === 'free_talk' || scene?.type === 'group_free_talk')
         .map(([id]) => id)
         .sort();
     assert(JSON.stringify(runtimeIds) === JSON.stringify([...activeFreeTalkIds].sort()),
@@ -705,6 +706,44 @@ assert(recoverQualityFallback({
     segments: [{ type: 'dialogue', text: 'Ihr langes schwarzes Haar fällt über die Schulter.' }]
 }, { lang: 'de', charKey: 'Yuna' }) === null,
 'Quality fallback must not bypass character canon failures');
+
+const groupNamesByLanguage = {
+    en: ['Seoyeon', 'Dain'],
+    es: ['Seoyeon', 'Dain'],
+    ja: ['ソヨン', 'ダイン'],
+    fr: ['Seoyeon', 'Dain'],
+    de: ['Seoyeon', 'Dain'],
+    pt: ['Seoyeon', 'Dain']
+};
+for (const lang of languages) {
+    const [leadName, tempterName] = groupNamesByLanguage[lang];
+    const promptData = context.window.getPromptData(lang, 'Alex');
+    const groupPrompt = context.window.buildCupidGroupSystemPrompt({
+        lang,
+        participants: [
+            { id: 'Seoyeon', name: leadName, role: 'lead' },
+            { id: 'Dain', name: tempterName, role: 'tempter' }
+        ],
+        locationName: 'Classroom',
+        context: 'Both characters face the protagonist together.',
+        extraGuideline: 'Keep both voices distinct.',
+        playerName: 'Alex',
+        choiceState: 'The protagonist told the truth.',
+        gameContexts: { Seoyeon: 'She discovered the message.', Dain: 'She approached first.' },
+        affinities: { Seoyeon: 12, Dain: 34 },
+        promptData
+    });
+    const parts = splitCacheBoundary(groupPrompt, `group/${lang}`);
+    assert(parts.stable.includes(leadName) && parts.stable.includes(tempterName),
+        `group/${lang} lost exact localized speaker names`);
+    assert(parts.stable.includes('Recovery is capped at +3 for either character')
+        && parts.stable.includes('+3 total across both characters'),
+        `group/${lang} lost the recovery distribution rule`);
+    assert(parts.stable.includes('Do not force mechanical alternation'),
+        `group/${lang} forces alternating speakers`);
+    assert(parts.dynamic.includes('current affinity=12') && parts.dynamic.includes('current affinity=34'),
+        `group/${lang} lost dynamic affinity state`);
+}
 
 verifyLocalizedFreeTalkInventory();
 

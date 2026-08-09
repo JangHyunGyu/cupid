@@ -65,23 +65,23 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/room_school.png",
         "backgroundVariant": "empty",
         "character": "assets/images/characters/teacher_sad.png",
-        "next": "morning5_committed_start"
+        "next": "morning5_counteroffer_group_talk"
     },
     "morning5_caught_teacher_lie": {
         "background": "assets/images/background/room_school.png",
         "backgroundVariant": "empty",
         "character": "assets/images/characters/teacher_angry.png",
-        "next": "morning5_committed_start"
+        "next": "morning5_counteroffer_group_talk"
     },
     "morning5_caught_nurse_honest": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_worried.png",
-        "next": "morning5_committed_start"
+        "next": "morning5_counteroffer_group_talk"
     },
     "morning5_caught_nurse_lie": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_angry.png",
-        "next": "morning5_committed_start"
+        "next": "morning5_counteroffer_group_talk"
     },
     "morning5_caught_by_seoyeon_route": {
         "background": "assets/images/background/room_school.png",
@@ -163,33 +163,40 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "morning5_caught_seoyeon_honest": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/seyoun_sad.png",
-        "next": "morning5_committed_start"
+        "next": "morning5_counteroffer_group_talk"
     },
     "morning5_caught_seoyeon_lie": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/seyoun_pout.png",
-        "next": "morning5_committed_start"
+        "next": "morning5_counteroffer_group_talk"
     },
     "morning5_caught_dain_honest": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_sad.png",
-        "next": "morning5_committed_start"
+        "next": "morning5_counteroffer_group_talk"
     },
     "morning5_caught_dain_lie": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_angry.png",
-        "next": "morning5_committed_start"
+        "next": "morning5_counteroffer_group_talk"
     },
     "morning5_caught_yuna_honest": {
         "background": "assets/images/background/room_school.png",
         "backgroundVariant": "cold",
         "character": "assets/images/characters/yuna_sad.png",
-        "next": "morning5_committed_start"
+        "next": "morning5_counteroffer_group_talk"
     },
     "morning5_caught_yuna_lie": {
         "background": "assets/images/background/room_school.png",
         "backgroundVariant": "cold",
         "character": "assets/images/characters/yuna_angry.png",
+        "next": "morning5_counteroffer_group_talk"
+    },
+    "morning5_counteroffer_group_talk": {
+        "background": "assets/images/background/room_school.png",
+        "type": "group_free_talk",
+        "groupParticipants": "counteroffer_confrontation",
+        "maxTurns": 3,
         "next": "morning5_committed_start"
     },
     "morning5_start_b": {

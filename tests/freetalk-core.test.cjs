@@ -524,6 +524,36 @@ test('main relationship aftermath survives save import and is isolated per chara
     assert.match(read('assets/js/modules/FreeTalkSystem.js'), /window\.saveGameState\?\.\(\)/);
 });
 
+test('day-five confrontation uses two-speaker rendering, bounded recovery, and canonical group logs', () => {
+    const scenario = read('assets/js/scenario/day5_1_morning.js');
+    const freeTalk = read('assets/js/modules/FreeTalkSystem.js');
+    const gameEngine = read('assets/js/modules/GameEngine.js');
+    const config = read('assets/js/modules/config.js');
+    const css = read('assets/css/style.css');
+
+    assert.match(scenario, /"type": "group_free_talk"/);
+    assert.equal((scenario.match(/"next": "morning5_counteroffer_group_talk"/g) || []).length, 10);
+    assert.match(freeTalk, /'x-chat-mode': 'group'/);
+    assert.match(freeTalk, /responseSpeakers: this\.groupParticipants/);
+    assert.match(freeTalk, /let positiveBudget = 3/);
+    assert.match(freeTalk, /requestedChange = Math\.min\(3, positiveBudget\)/);
+    assert.match(freeTalk, /advanceGroupMessageQueue\(\)/);
+    assert.match(gameEngine, /scene\.type === 'group_free_talk'/);
+    assert.match(config, /charId: 'group'/);
+    assert.match(config, /context: 'group'/);
+    assert.match(config, /speakerId: '__player__'/);
+    assert.match(config, /window\.saveCupidGroupChatLog = saveCupidGroupChatLog/);
+    assert.match(css, /group-freetalk-active/);
+    assert.match(css, /data-group-speaker-side="right"/);
+
+    for (const lang of ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt']) {
+        const i18n = JSON.parse(read(`assets/js/i18n/${lang}/day5_1_morning.json`));
+        const groupScene = i18n.morning5_counteroffer_group_talk;
+        assert.ok(groupScene?.text && groupScene?.context && groupScene?.personality && groupScene?.buttonText,
+            `${lang} group confrontation localization is incomplete`);
+    }
+});
+
 test('gallery relationship aftermath persists through its local save store', () => {
     const saved = new Map();
     const localStorage = {

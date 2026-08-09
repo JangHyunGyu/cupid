@@ -18394,7 +18394,7 @@
 ### `morning5_caught_teacher_honest`
 - 배경: `room_school.png`
 - 배경톤: `empty`
-- 다음: `morning5_committed_start`
+- 다음: `morning5_counteroffer_group_talk`
 
 - 캐릭터: `teacher_sad.png`
 **담임선생님**: *담임은 말없이 전부 듣고 나서 출석부를 덮는다.* 솔직히 말한 건 알겠다. 하지만 어젯밤 내가 믿은 네 말까지 없던 일이 되진 않아. 오늘은 돌아가렴.
@@ -18404,7 +18404,7 @@
 ### `morning5_caught_teacher_lie`
 - 배경: `room_school.png`
 - 배경톤: `empty`
-- 다음: `morning5_committed_start`
+- 다음: `morning5_counteroffer_group_talk`
 
 - 캐릭터: `teacher_angry.png`
 **담임선생님**: *담임은 다시 울린 알림과 맞은편 얼굴을 번갈아 본다. 목소리가 수업 시간보다 더 차갑게 가라앉는다.* 어젯밤 일보다 지금 네가 한 거짓말이 더 실망스럽구나. 나가렴.
@@ -18424,7 +18424,7 @@
 
 ### `morning5_caught_nurse_honest`
 - 배경: `nurse_room.png`
-- 다음: `morning5_committed_start`
+- 다음: `morning5_counteroffer_group_talk`
 
 - 캐릭터: `nurse_worried.png`
 **보건선생님**: *보건선생님은 끝까지 듣고도 괜찮다는 말은 하지 않는다. 대신 진료 기록을 가지런히 덮는다.* 괜찮다고 해주면 네 마음은 편하겠지. 그런데 나는 지금 그럴 수가 없네. 오늘은 가 줘. *보건실을 나와 교실로 돌아간다.*
@@ -18433,7 +18433,7 @@
 
 ### `morning5_caught_nurse_lie`
 - 배경: `nurse_room.png`
-- 다음: `morning5_committed_start`
+- 다음: `morning5_counteroffer_group_talk`
 
 - 캐릭터: `nurse_angry.png`
 **보건선생님**: *보건선생님은 다시 뜬 알림을 확인하고 안경을 벗는다. 웃음기 없는 눈이 곧장 마주친다.* 아픈 데가 아니라 숨기는 게 있었네. 거짓말까지 돌봐줄 자신은 없어. *보건실을 나와 교실로 돌아간다.*
@@ -18513,7 +18513,7 @@
 
 ### `morning5_caught_dain_honest`
 - 배경: `room_school.png`
-- 다음: `morning5_committed_start`
+- 다음: `morning5_counteroffer_group_talk`
 
 - 캐릭터: `dain_sad.png`
 **다인**: *다인은 손목 보호대를 끝까지 잡아당겼다가 놓는다.* 그럼 내가 혼자 들뜬 거 아니었냐고 물었을 때, 넌 이미 거기 있었던 거네.
@@ -18522,7 +18522,7 @@
 
 ### `morning5_caught_dain_lie`
 - 배경: `room_school.png`
-- 다음: `morning5_committed_start`
+- 다음: `morning5_counteroffer_group_talk`
 
 - 캐릭터: `dain_angry.png`
 **다인**: *다인의 눈썹이 올라가지만 웃음은 돌아오지 않는다.* 나 운동만 해서 바보인 줄 알았어?
@@ -18555,7 +18555,7 @@
 
 ### `morning5_caught_seoyeon_honest`
 - 배경: `room_school.png`
-- 다음: `morning5_committed_start`
+- 다음: `morning5_counteroffer_group_talk`
 
 - 캐릭터: `seyoun_sad.png`
 **서연**: *전부 듣고도 서연은 안경을 벗지 않는다. 렌즈 너머의 눈빛만 천천히 식는다.* 솔직히 말해 줘서 고맙다는 말은 못 하겠어. 지금은 네 얼굴 보기 힘들어.
@@ -18564,7 +18564,7 @@
 
 ### `morning5_caught_seoyeon_lie`
 - 배경: `room_school.png`
-- 다음: `morning5_committed_start`
+- 다음: `morning5_counteroffer_group_talk`
 
 - 캐릭터: `seyoun_pout.png`
 **서연**: *서연은 다시 켜진 알림 화면과 맞은편 얼굴을 번갈아 본다. 입가에 남아 있던 미소가 사라진다.* 어제 일보다 지금 한 거짓말이 더 선명하네.
@@ -18586,7 +18586,7 @@
 ### `morning5_caught_yuna_honest`
 - 배경: `room_school.png`
 - 배경톤: `cold`
-- 다음: `morning5_committed_start`
+- 다음: `morning5_counteroffer_group_talk`
 
 - 캐릭터: `yuna_sad.png`
 **유나**: *유나는 화면을 끄고 휴대폰을 맞은편으로 밀어 놓는다.* 이번에는 어디로 갔는지 알아서 더 아프네.
@@ -18596,10 +18596,19 @@
 ### `morning5_caught_yuna_lie`
 - 배경: `room_school.png`
 - 배경톤: `cold`
-- 다음: `morning5_committed_start`
+- 다음: `morning5_counteroffer_group_talk`
 
 - 캐릭터: `yuna_angry.png`
 **유나**: *유나는 대답 대신 화면을 한 번 더 켠다. 알림 문장이 두 사람 사이에 그대로 남는다.* 확인할 기회까지 줬는데 또 숨기네.
+
+---
+
+### `morning5_counteroffer_group_talk`
+- 배경: `room_school.png`
+- 타입: `group_free_talk`
+- 다음: `morning5_committed_start`
+
+**두 사람**: *두 사람의 시선이 한꺼번에 닿는다. 이제는 어느 쪽도 피해서 말할 수 없다.*
 
 ---
 

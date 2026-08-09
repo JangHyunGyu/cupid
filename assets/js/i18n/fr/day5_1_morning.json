@@ -107,6 +107,13 @@
         "name": "Yuna",
         "text": "*Au lieu de répondre, Yuna rallume l'écran. La notification reste entre nous.* Je t'ai laissé l'occasion de me le dire, et tu l'as encore caché."
     },
+    "morning5_counteroffer_group_talk": {
+        "name": "Toutes les deux",
+        "text": "*Leurs deux regards se posent sur moi. Impossible, désormais, de répondre à l’une en évitant l’autre.*",
+        "context": "Le fait que le protagoniste ait cédé à la tentation de la veille vient d’être découvert. La personne à qui il avait choisi de se consacrer et celle qui l’a tenté lui font maintenant face ensemble dans la même salle de classe. La conversation reprend après son choix d’avouer ou de mentir, sans atténuer la tension entre eux trois.",
+        "personality": "Chacune garde sa voix et sa propre blessure. Elles ne sont pas obligées de parler à tour de rôle de façon mécanique ; les silences, les interruptions et les questions qu’elles s’adressent suivent la situation. La personne trahie vient de tout apprendre, tandis que celle qui l’a tenté sait que c’est elle qui a fait le premier pas.",
+        "buttonText": "Répondre"
+    },
     "morning5_start_b": {
         "name": "{name}",
         "text": "*Dès que j'entre dans la classe, trois choses me sautent aux yeux : un mot sur mon bureau, un ruban noué au cordon d'une tenue de sport et une notification sur mon écran de verrouillage.*"

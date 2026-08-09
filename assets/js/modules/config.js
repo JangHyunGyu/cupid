@@ -637,6 +637,10 @@ function makeCupidChatLogEntry({
     playerName,
     language,
     appId,
+    speakerId = null,
+    groupParticipants = null,
+    groupJoinIndices = null,
+    groupPairId = '',
     affinityChange = null,
     affinityCurrent = null,
     clientMsgId = ''
@@ -656,6 +660,12 @@ function makeCupidChatLogEntry({
         clientMsgId: String(clientMsgId || '').trim()
             || `cupid-${Date.now().toString(36)}-${role.charAt(0)}-${Math.random().toString(36).slice(2, 10)}`
     };
+    if (speakerId) entry.speakerId = String(speakerId);
+    if (Array.isArray(groupParticipants) && groupParticipants.length > 0) {
+        entry.groupParticipants = groupParticipants.map(value => String(value)).filter(Boolean);
+    }
+    if (groupJoinIndices && typeof groupJoinIndices === 'object') entry.groupJoinIndices = groupJoinIndices;
+    if (groupPairId) entry.groupPairId = String(groupPairId);
     const normalizedAffinityChange = normalizeCupidChatLogAffinity(affinityChange);
     const normalizedAffinityCurrent = normalizeCupidChatLogAffinity(affinityCurrent);
     if (normalizedAffinityChange !== null) entry.affinityChange = normalizedAffinityChange;
@@ -778,7 +788,7 @@ function makeCupidChatRenderAckPayload(entry, receipt = {}) {
         clientMsgId: entry.clientMsgId,
         charId: entry.charId,
         sessionId: entry.sessionId,
-        speakerId: entry.charId,
+        speakerId: entry.speakerId || entry.charId,
         context: entry.context || '1:1',
         expectedContent,
         renderedContent,
@@ -918,6 +928,72 @@ async function saveCupidChatLog({
         if (assistantEntry && assistantRenderReceipt) {
             await postCupidChatRenderAck(assistantEntry, assistantRenderReceipt);
         }
+    }
+}
+
+// 2인 대면 프리토킹을 Harem 백업 뷰어의 canonical group 형식으로 저장한다.
+// user는 한 번, assistant는 실제 화자별로 분리해 같은 sessionId에 순서대로 기록한다.
+async function saveCupidGroupChatLog({
+    userContent,
+    assistantMessages = [],
+    participants = [],
+    sessionId = '',
+    playerName: _pn = ''
+}) {
+    const participantIds = participants.map(item => String(item?.id || item || '')).filter(Boolean);
+    if (participantIds.length < 2) return;
+    const groupJoinIndices = Object.fromEntries(participantIds.map((id, index) => [id, index]));
+    const shared = {
+        userId: getCupidDeviceId(),
+        charId: 'group',
+        sessionId,
+        context: 'group',
+        playerName: _pn || window.gameEngine?.stateManager?.playerName || '',
+        language: getCupidLanguage(),
+        appId: getCupidAppId(),
+        groupParticipants: participantIds,
+        groupJoinIndices,
+        groupPairId: `cupid:${participantIds.join(':')}`
+    };
+    const queueAndFlush = async (role, content, details = {}) => {
+        if (!String(content || '').trim()) return null;
+        const entry = makeCupidChatLogEntry({ ...shared, role, content, ...details });
+        if (enqueueCupidChatLog(entry)) {
+            await flushCupidChatLogQueue();
+            return entry;
+        }
+        if (navigator.onLine === false) return entry;
+        try {
+            await postCupidChatLogEntry(entry);
+        } catch (error) {
+            if (!isTransientCupidChatLogError(error)) {
+                logCupidError(error, {
+                    source: 'saveCupidGroupChatLog',
+                    errorType: 'group_chat_log_direct_rejected',
+                    sessionId,
+                    context: { charId: 'group', role, speakerId: details.speakerId || '', logContext: 'group' }
+                });
+            }
+        }
+        return entry;
+    };
+
+    if (userContent) {
+        await queueAndFlush('user', userContent, { speakerId: '__player__' });
+    }
+    for (const message of assistantMessages) {
+        const speakerId = String(message?.speakerId || '');
+        if (!participantIds.includes(speakerId)) continue;
+        const assistantContent = window.CupidFreeTalkCore?.resolveCupidAssistantLogContent?.(
+            message.content,
+            message.renderReceipt
+        ) ?? String(message.content || '');
+        const entry = await queueAndFlush('assistant', assistantContent, {
+            speakerId,
+            affinityChange: message.affinityChange,
+            affinityCurrent: message.affinityCurrent
+        });
+        if (entry && message.renderReceipt) await postCupidChatRenderAck(entry, message.renderReceipt);
     }
 }
 
@@ -1088,6 +1164,7 @@ window.prepareCupidPromptMemoryRecall = prepareCupidPromptMemoryRecall;
 window.uploadImageToR2 = uploadImageToR2;
 window.optimizeImageHistory = optimizeImageHistory;
 window.saveCupidChatLog = saveCupidChatLog;
+window.saveCupidGroupChatLog = saveCupidGroupChatLog;
 window.flushCupidChatLogQueue = flushCupidChatLogQueue;
 window.flushCupidChatRenderAckQueue = flushCupidChatRenderAckQueue;
 window.logCupidError = logCupidError;

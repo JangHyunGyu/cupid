@@ -1665,6 +1665,115 @@ ${compactLiveState}
 ${compactDynamicGuidance}`;
 }
 
+/**
+ * 두 명의 캐릭터가 같은 장면에서 주인공과 대면하는 그룹 프리토킹 프롬프트.
+ * 캐릭터 카드와 출력 계약은 안정 영역에, 현재 호감도·선택·기억은 경계 뒤에 둔다.
+ */
+function buildCupidGroupSystemPrompt(params = {}) {
+    const {
+        lang = 'ko',
+        participants = [],
+        locationName = '',
+        context = '',
+        extraGuideline = '',
+        playerName = '',
+        choiceState = '',
+        gameContexts = {},
+        affinities = {}
+    } = params;
+    const effectiveLang = String(lang || 'ko').toLowerCase().split('-')[0];
+    const useKo = effectiveLang === 'ko';
+    const data = params.promptData || {};
+    const normalizedParticipants = participants
+        .map((participant, index) => ({
+            id: normalizePromptCharacterKey(participant?.id || participant?.key || participant?.name) || String(participant?.id || ''),
+            name: String(participant?.name || participant?.displayName || participant?.id || '').trim(),
+            role: participant?.role === 'tempter' ? 'tempter' : (index === 0 ? 'lead' : 'tempter')
+        }))
+        .filter(participant => participant.id && participant.name)
+        .slice(0, 2);
+
+    if (normalizedParticipants.length !== 2) {
+        throw new Error('Cupid group free talk requires exactly two participants');
+    }
+
+    const findPromptValue = (bucket, participant, fallback = '') => {
+        if (!bucket) return fallback;
+        const keys = getPromptLookupKeys(
+            effectiveLang,
+            participant.id,
+            participant.name,
+            effectiveLang !== 'ko'
+        );
+        for (const key of keys) {
+            if (bucket[key]) return bucket[key];
+        }
+        return fallback;
+    };
+
+    const languageName = {
+        en: 'English',
+        es: 'Latin American Spanish',
+        ja: 'Japanese',
+        fr: 'French',
+        de: 'German',
+        pt: 'Brazilian Portuguese'
+    }[effectiveLang] || 'Korean';
+    const exactNames = normalizedParticipants.map(participant => JSON.stringify(participant.name)).join(', ');
+    const characterCards = normalizedParticipants.map((participant) => {
+        const personality = findPromptValue(data.personalities, participant, useKo ? '학교에서 살아가는 인물' : 'A person at the school');
+        const voice = findPromptValue(data.styleGuidelines, participant, useKo ? '이 인물다운 자연스러운 말투' : 'The character’s own natural voice');
+        const interaction = findPromptValue(data.interactionGuidelines, participant, '');
+        const criteria = findPromptValue(data.statCriteria, participant, '');
+        const general = findPromptValue(data.generalInstructions, participant, '');
+        const outfit = getCharacterOutfitGuard(effectiveLang, participant.id, participant.name);
+        const canon = getCupidCharacterCanonGuard(effectiveLang, participant.id, participant.name);
+        const polish = getNativeStylePolishGuard(effectiveLang, participant.id, participant.name);
+        const roleLabel = participant.role === 'lead'
+            ? (useKo ? '원래 마음을 주던 상대이자 방금 배신을 알게 된 사람' : 'the committed partner who has just learned of the betrayal')
+            : (useKo ? '어젯밤 먼저 다가가 유혹한 상대' : 'the person who initiated last night’s temptation');
+        return useKo
+            ? `[${participant.name} — ${roleLabel}]\n캐릭터: ${personality}\n말투: ${voice}\n연기 원칙: ${general}\n거리와 상호작용: ${interaction}\n호감도 기준: ${criteria}\n${outfit}\n${canon}\n${polish}`
+            : `[${participant.name} — ${roleLabel}]\nCharacter: ${personality}\nVoice: ${voice}\nIn scene: ${general}\nDistance and interaction: ${interaction}\nAffinity criteria: ${criteria}\n${outfit}\n${canon}\n${polish}`;
+    }).join('\n\n');
+
+    const stableRules = useKo
+        ? `한국어로만 답하세요. 지금은 주인공과 두 인물이 같은 공간에 있는 대면 장면입니다.
+${getLanguageQualityGuard('ko')}${getNativeAntiTranslationGuard('ko')}
+${characterCards}
+
+[다인 대면 연기]
+- 두 인물의 말투, 호칭, 판단, 상처의 결을 섞지 마세요. 억지로 한 번씩 번갈아 말하게 하지 말고, 그 순간 할 말이 있는 인물만 자연스러운 순서로 반응시킵니다.
+- 침묵, 말 끊기, 서로를 향한 질문과 시선은 장면에 필요할 때만 씁니다. 정해진 대사 순서나 행동 개수를 채우지 마세요.
+- 주인공이 한 말과 행동은 이미 일어난 사실입니다. 두 인물이 대신 주인공의 새 대사나 중대한 선택을 만들지 않습니다.
+- 어젯밤 유혹을 받아들인 일과 직전의 -40 또는 -50 배신 감점은 이미 반영됐습니다. 같은 사실만 되풀이해 다시 감점하지 마세요.
+- 다만 이번 대화에서 책임을 피하거나, 한쪽을 탓하거나, 사실을 새로 숨기거나, 추가 거짓말을 하면 그 행동에 상처받은 두 사람 모두 호감도가 떨어질 수 있습니다. 새 잘못의 강도에 맞춰 실제 감점을 주고 -1로 축소하지 마세요.
+- 사과·책임 인정·구체적인 수습이 실제로 있을 때만 회복을 줍니다. 한 인물의 이번 턴 회복은 최대 +3, 두 인물의 회복 합계도 최대 +3입니다. 세 턴을 잘 수습해도 이미 받은 -40/-50을 대부분 되돌리지 못해야 합니다.
+
+다음 형태의 JSON만 출력하세요: {"conversations":[{"name":${normalizedParticipants[0].name ? JSON.stringify(normalizedParticipants[0].name) : '""'},"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":0}]}
+conversations에는 실제로 반응한 인물을 장면 순서대로 넣고 name은 반드시 ${exactNames} 가운데 하나만 씁니다. 각 인물은 한 항목에 그 인물의 흐름을 모읍니다. 허용 type은 narration, dialogue이며 narration은 해당 인물의 행동·표정·감각만 3인칭으로 씁니다. expression과 affinity를 모든 항목에 넣으세요. affinity는 -50~+3의 정수이며 양수 합계는 +3을 넘지 않습니다. 주인공이나 서술자를 화자로 넣지 마세요.`
+        : `Reply only in fluent, natural ${languageName}. Every conversations[].segments[].text value must stay in that language.
+${getLanguageQualityGuard(effectiveLang)}${getNativeAntiTranslationGuard(effectiveLang)}
+${characterCards}
+
+[Three-person confrontation]
+- Keep both characters’ voices, forms of address, judgments, and hurt distinct. Do not force mechanical alternation; let only the character who has something to say respond in a natural order.
+- Use silence, interruption, questions, and looks between them only when the moment calls for them. Never fill a fixed dialogue order or action quota.
+- Treat the protagonist’s stated words and actions as completed scene facts. The two characters must not invent a new protagonist line or make a major choice for him.
+- The accepted temptation and the preceding -40 or -50 betrayal penalty have already been applied. Do not deduct the same penalty again merely for recalling that fact.
+- New evasion, blame, concealment, or another lie in this conversation may lower affinity for both characters when each is hurt by that new conduct. Score the new harm at its real intensity; do not shrink it to -1.
+- Award recovery only for an actual apology, ownership, or concrete attempt to repair the damage. Recovery is capped at +3 for either character and +3 total across both characters in one user turn. Even three excellent turns must not undo most of the earlier -40/-50 loss.
+
+Return JSON only in this shape: {"conversations":[{"name":${JSON.stringify(normalizedParticipants[0].name)},"segments":[{"type":"dialogue","text":"spoken line"}],"expression":"normal","affinity":0}]}
+List only characters who actually respond, in scene order. name must be exactly one of ${exactNames}. Keep each speaker’s chronological beats in one item. Allowed segment types are narration and dialogue; narration stays in third person and inside that speaker’s action, expression, or sensation. Include expression and an integer affinity from -50 to +3 on every item. The sum of positive affinity values must not exceed +3. Never use the protagonist or a narrator as a speaker.`;
+
+    const dynamicState = useKo
+        ? `[현재 대면 상태]\n장소=${locationName || '교실'}; 주인공=${playerName || '주인공'}; 직전 선택=${choiceState || '확인되지 않음'}\n장면 맥락: ${context}\n추가 연기 맥락: ${extraGuideline}\n${normalizedParticipants.map(participant => `${participant.name}: 현재 호감도=${Number(affinities[participant.id] ?? 0)}\n최근 사건과 기억=${gameContexts[participant.id] || '없음'}`).join('\n')}`
+        : `[Current confrontation state]\nPlace=${locationName || 'classroom'}; protagonist=${playerName || 'the protagonist'}; preceding choice=${choiceState || 'unknown'}\nScene context: ${context}\nAdditional scene direction: ${extraGuideline}\n${normalizedParticipants.map(participant => `${participant.name}: current affinity=${Number(affinities[participant.id] ?? 0)}\nRecent events and memory=${gameContexts[participant.id] || 'none'}`).join('\n')}`;
+
+    return keepCupidRuntimePromptBoundary(`${stableRules}\n===CACHE_BOUNDARY===\n${dynamicState}`);
+}
+
 // 전역 함수로 노출
 const CUPID_PROMPT_CACHE_BOUNDARY_MARKER = '===CACHE_BOUNDARY===';
 
@@ -1696,7 +1805,8 @@ const buildSystemPromptWithoutCacheBoundary = buildSystemPrompt;
 window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
     return keepCupidRuntimePromptBoundary(buildSystemPromptWithoutCacheBoundary(params));
 };
+window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.52';
+const PROMPT_VERSION = '2.7.53';
 window.PROMPT_VERSION = PROMPT_VERSION;

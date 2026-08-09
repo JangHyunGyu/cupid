@@ -107,6 +107,13 @@
         "name": "Yuna",
         "text": "*Statt zu antworten, schaltet Yuna den Bildschirm noch einmal ein. Die Nachricht bleibt zwischen uns liegen.* Ich habe dir die Gelegenheit gegeben, es mir zu sagen, und du hast es wieder verschwiegen."
     },
+    "morning5_counteroffer_group_talk": {
+        "name": "Die beiden",
+        "text": "*Beide Blicke treffen mich zugleich. Jetzt kann ich nicht mehr der einen antworten und der anderen ausweichen.*",
+        "context": "Soeben ist herausgekommen, dass der Protagonist der Versuchung der letzten Nacht nachgegeben hat. Die Person, für die er sich entschieden hatte, und diejenige, die ihn verführt hat, stellen ihn nun gemeinsam im selben Klassenzimmer zur Rede. Das Gespräch setzt bei seiner Entscheidung an, die Wahrheit zu sagen oder zu lügen, und überspielt die Spannung zwischen den dreien nicht.",
+        "personality": "Beide behalten ihre eigene Stimme und ihren eigenen Schmerz. Sie müssen nicht mechanisch abwechselnd sprechen; Schweigen, Unterbrechungen und Fragen aneinander ergeben sich aus dem Moment. Die betrogene Person hat gerade erst davon erfahren, während die Verführerin weiß, dass sie selbst den ersten Schritt gemacht hat.",
+        "buttonText": "Antworten"
+    },
     "morning5_start_b": {
         "name": "{name}",
         "text": "*Beim Betreten des Klassenzimmers fallen mir drei Dinge gleichzeitig ins Auge: ein Zettel auf meinem Tisch, eine Schleife am Band einer Trainingshose und eine Benachrichtigung auf dem Sperrbildschirm.*"

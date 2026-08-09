@@ -375,7 +375,14 @@ class GameEngine {
 
         // ✅ 케이스 1: 프리토킹이 방금 끝났을 때
         // - 프리토킹 종료 후 대화창을 클릭하면 다음 씬으로 넘어감
-        if (scene.type === 'free_talk' && !this.freeTalkSystem.isFreeTalking) {
+        if (scene.type === 'group_free_talk'
+            && this.freeTalkSystem.isFreeTalking
+            && this.freeTalkSystem.advanceGroupMessageQueue?.()) {
+            return;
+        }
+
+        if ((scene.type === 'free_talk' || scene.type === 'group_free_talk')
+            && !this.freeTalkSystem.isFreeTalking) {
             const nextId = this.sceneRenderer.resolveNextScene(scene);
             if (nextId) {
                 await this.renderScene(nextId);
@@ -1140,7 +1147,7 @@ class GameEngine {
         // ═══════════════════════════════════════════════════════
         // 🗣️ 타입 A: 프리토킹 (AI와 자유 대화)
         // ═══════════════════════════════════════════════════════
-        if (scene.type === 'free_talk') {
+        if (scene.type === 'free_talk' || scene.type === 'group_free_talk') {
             // AI 채팅 모드 시작 - 플레이어가 자유롭게 대화 가능
             try {
                 await this.freeTalkSystem.startFreeTalk(scene, sceneId);
