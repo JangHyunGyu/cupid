@@ -34,15 +34,15 @@
 
 | 구분 | 호감도 범위 | 설명 |
 |------|-----------|------|
-| 학생 3인(서연/유나/다인) | 프리토킹 제외 최적 루트 최대 **100** | 프리토킹 포함 시 ~130 |
-| 담임/보건 | 프리토킹 제외 최적 루트 최대 **80** | 프리토킹 포함 시 ~110 |
-| 최적 플레이 (한 캐릭터 집중 + 프리토킹) | ~100~130 | 모든 선택지 최적 + 프리토킹 적극 활용 |
+| 학생 3인(서연/유나/다인) | 프리토킹 제외 최적 루트 최대 **80** | 프리토킹 포함 시 최대 100(코드 캡) |
+| 담임/보건 | 프리토킹 제외 최적 루트 최대 **90** | 프리토킹 포함 시 최대 100(코드 캡) |
+| 최적 플레이 (한 캐릭터 집중 + 프리토킹) | ~90~100 | 모든 선택지 최적 + 프리토킹 적극 활용 |
 | 중간 플레이 | ~50~70 | 대체로 한 캐릭터 위주, 일부 산만한 선택 |
 | 산만 플레이 | ~25~45 | 여러 캐릭터에 호감 분산 |
 
 ### 호감도 적립 구조
 
-**선택지 기반 적립 (학생 최적 ~100, 담임/보건 최적 ~100):**
+**선택지 기반 적립 (학생 최적 80, 담임/보건 최적 90):**
 
 선택지 문구만 보고 정답과 오답이 드러나지 않도록 캐릭터별 함정 선택지를 둔다. 노골적인 모욕이나 거절이 아니라 배려·칭찬·관심·농담처럼도 읽히지만, 상대의 핵심 상처나 경계를 잘못 짚은 말에 `-2~-3`의 가벼운 감점을 준다. 서연은 작은 호의를 밀어내거나 힘듦을 대수롭지 않게 보는 말, 다인은 운동선수라는 역할로만 규정하는 칭찬, 유나는 조용한 성격으로 단정하거나 과거를 캐묻는 관심, 담임·보건은 친근함으로 포장된 경계 침해와 거짓말이 대상이다.
 
@@ -103,7 +103,7 @@ AI가 반환한 표정은 해당 캐릭터가 실제 보유한 이미지로만 �
 **호감도 최대치**: 100 (코드 캡, 선택지 + 프리토킹 합산 후 100 초과 불가)
 
 **도달 예시:**
-- 올인 플레이: 선택지만으로 100 도달 가능 (프리토킹은 보험)
+- 올인 플레이: 학생은 선택지 80 + 프리토킹 10 이상, 담임·보건은 선택지만으로 90 도달 가능
 - 중간 플레이: 선택지 ~50~65 + 프리토킹으로 보충 → **~60~80**
 - 산만 플레이: 선택지 ~20~35 + 프리토킹으로 보충 → **~25~45**
 
@@ -113,8 +113,8 @@ AI가 반환한 표정은 해당 캐릭터가 실제 보유한 이미지로만 �
 
 | 엔딩 | 호감도 조건 | 기타 조건 |
 |------|-----------|----------|
-| **PERFECT END** | 80+ | `day4_confession_accepted` + `!day3_caught_multiple_dates` + `!ending_harem` |
-| **TRUE END** | 60~79 | `day4_confession_accepted` + `!day3_caught_multiple_dates` + `!ending_harem` |
+| **PERFECT END** | 90+ | `day4_confession_accepted` + `!day3_caught_multiple_dates` + `!ending_harem` |
+| **TRUE END** | 60~89 | `day4_confession_accepted` + `!day3_caught_multiple_dates` + `!ending_harem` |
 | **GOOD END** | 40~59 | `day4_confession_accepted` + `!day3_caught_multiple_dates` + `!ending_harem` |
 | **BITTERSWEET END** | 40 미만 | `day4_confession_accepted` + `!day3_caught_multiple_dates` + `!ending_harem` |
 | **GOOD END (뒤늦은 고백)** | 50+ | `day5_confessed` |
@@ -125,8 +125,8 @@ AI가 반환한 표정은 해당 캐릭터가 실제 보유한 이미지로만 �
 
 | 엔딩 | 호감도 조건 | 기타 조건 |
 |------|-----------|----------|
-| **PERFECT END** | 80+ | `homeroom_day5` 또는 `nurse_day5` |
-| **TRUE LOVE END** | 60~79 | `homeroom_day5` 또는 `nurse_day5` |
+| **PERFECT END** | 90+ | `homeroom_day5` 또는 `nurse_day5` |
+| **TRUE LOVE END** | 60~89 | `homeroom_day5` 또는 `nurse_day5` |
 | **GOOD END** | 60 미만 | `homeroom_day5` 또는 `nurse_day5` |
 
 ### 갤러리 해금 조건
@@ -157,23 +157,23 @@ AI가 반환한 표정은 해당 캐릭터가 실제 보유한 이미지로만 �
 
 | # | 엔딩 이름 | 대상 | 호감도 조건 | 플래그 조건 |
 |---|----------|------|-----------|------------|
-| 1 | **서연 PERFECT END** | 서연 | 80+ | `day4_confession_accepted` + `route_seoyeon` + `!day3_caught_multiple_dates` + `!ending_harem` |
-| 2 | **서연 TRUE END** | 서연 | 60~79 | `day4_confession_accepted` + `route_seoyeon` + `!day3_caught_multiple_dates` + `!ending_harem` |
+| 1 | **서연 PERFECT END** | 서연 | 90+ | `day4_confession_accepted` + `route_seoyeon` + `!day3_caught_multiple_dates` + `!ending_harem` |
+| 2 | **서연 TRUE END** | 서연 | 60~89 | `day4_confession_accepted` + `route_seoyeon` + `!day3_caught_multiple_dates` + `!ending_harem` |
 | 3 | **서연 GOOD END** | 서연 | 40~59 | `day4_confession_accepted` + `route_seoyeon` + `!day3_caught_multiple_dates` + `!ending_harem` |
 | 4 | **서연 BITTERSWEET END** | 서연 | 40 미만 | `day4_confession_accepted` + `route_seoyeon` + `!day3_caught_multiple_dates` + `!ending_harem` |
-| 5 | **유나 PERFECT END** | 유나 | 80+ | `day4_confession_accepted` + `route_yuna` + `!day3_caught_multiple_dates` + `!ending_harem` |
-| 6 | **유나 TRUE END** | 유나 | 60~79 | `day4_confession_accepted` + `route_yuna` + `!day3_caught_multiple_dates` + `!ending_harem` |
+| 5 | **유나 PERFECT END** | 유나 | 90+ | `day4_confession_accepted` + `route_yuna` + `!day3_caught_multiple_dates` + `!ending_harem` |
+| 6 | **유나 TRUE END** | 유나 | 60~89 | `day4_confession_accepted` + `route_yuna` + `!day3_caught_multiple_dates` + `!ending_harem` |
 | 7 | **유나 GOOD END** | 유나 | 40~59 | `day4_confession_accepted` + `route_yuna` + `!day3_caught_multiple_dates` + `!ending_harem` |
 | 8 | **유나 BITTERSWEET END** | 유나 | 40 미만 | `day4_confession_accepted` + `route_yuna` + `!day3_caught_multiple_dates` + `!ending_harem` |
-| 9 | **다인 PERFECT END** | 다인 | 80+ | `day4_confession_accepted` + `route_dain` + `!day3_caught_multiple_dates` + `!ending_harem` |
-| 10 | **다인 TRUE END** | 다인 | 60~79 | `day4_confession_accepted` + `route_dain` + `!day3_caught_multiple_dates` + `!ending_harem` |
+| 9 | **다인 PERFECT END** | 다인 | 90+ | `day4_confession_accepted` + `route_dain` + `!day3_caught_multiple_dates` + `!ending_harem` |
+| 10 | **다인 TRUE END** | 다인 | 60~89 | `day4_confession_accepted` + `route_dain` + `!day3_caught_multiple_dates` + `!ending_harem` |
 | 11 | **다인 GOOD END** | 다인 | 40~59 | `day4_confession_accepted` + `route_dain` + `!day3_caught_multiple_dates` + `!ending_harem` |
 | 12 | **다인 BITTERSWEET END** | 다인 | 40 미만 | `day4_confession_accepted` + `route_dain` + `!day3_caught_multiple_dates` + `!ending_harem` |
-| 13 | **담임 PERFECT END** | 담임 | 80+ | `homeroom_day5` |
-| 14 | **담임 TRUE LOVE END** | 담임 | 60~79 | `homeroom_day5` |
+| 13 | **담임 PERFECT END** | 담임 | 90+ | `homeroom_day5` |
+| 14 | **담임 TRUE LOVE END** | 담임 | 60~89 | `homeroom_day5` |
 | 15 | **담임 GOOD END** | 담임 | 60 미만 | `homeroom_day5` |
-| 16 | **보건 PERFECT END** | 보건 | 80+ | `nurse_day5` |
-| 17 | **보건 TRUE LOVE END** | 보건 | 60~79 | `nurse_day5` |
+| 16 | **보건 PERFECT END** | 보건 | 90+ | `nurse_day5` |
+| 17 | **보건 TRUE LOVE END** | 보건 | 60~89 | `nurse_day5` |
 | 18 | **보건 GOOD END** | 보건 | 60 미만 | `nurse_day5` |
 | 19 | **HAREM END** | - | - | `ending_harem` (양다리 + lunch3 나눠 먹기로 발각 회피) |
 | 20 | **MAYHEM END** | - | - | `day3_caught_multiple_dates` |
@@ -587,16 +587,16 @@ AI가 반환한 표정은 해당 캐릭터가 실제 보유한 이미지로만 �
 ### 엔딩 분기 우선순위 (코드 구현 기준, 호감도 반영)
 | 우선순위 | 조건 | 결과 |
 |---|---|---|
-| 1 | `homeroom_day5` + 담임 호감도 80+ | **담임 PERFECT END** |
-| 2 | `homeroom_day5` + 담임 호감도 60~79 | **담임 TRUE LOVE END** |
+| 1 | `homeroom_day5` + 담임 호감도 90+ | **담임 PERFECT END** |
+| 2 | `homeroom_day5` + 담임 호감도 60~89 | **담임 TRUE LOVE END** |
 | 3 | `homeroom_day5` (위 조건 미충족) | **담임 GOOD END** |
-| 4 | `nurse_day5` + 보건 호감도 80+ | **보건 PERFECT END** |
-| 5 | `nurse_day5` + 보건 호감도 60~79 | **보건 TRUE LOVE END** |
+| 4 | `nurse_day5` + 보건 호감도 90+ | **보건 PERFECT END** |
+| 5 | `nurse_day5` + 보건 호감도 60~89 | **보건 TRUE LOVE END** |
 | 6 | `nurse_day5` (위 조건 미충족) | **보건 GOOD END** |
 | 7 | `day3_caught_multiple_dates` | **MAYHEM END** (수라장) |
 | 8 | `ending_harem` (양다리 + lunch3 나눠 먹기, 발각 안 됨) | **HAREM END** |
-| 9 | `day4_confession_accepted` + 호감도 80+ | **PERFECT END** (학생) |
-| 10 | `day4_confession_accepted` + 호감도 60~79 | **TRUE LOVE END** |
+| 9 | `day4_confession_accepted` + 호감도 90+ | **PERFECT END** (학생) |
+| 10 | `day4_confession_accepted` + 호감도 60~89 | **TRUE LOVE END** |
 | 11 | `day4_confession_accepted` + 호감도 40~59 | **GOOD END** |
 | 12 | `day4_confession_accepted` + 호감도 40 미만 | **BITTERSWEET END** |
 | 13 | `day5_confessed` + 호감도 50+ | **GOOD END** (뒤늦은 고백) |

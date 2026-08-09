@@ -2863,11 +2863,11 @@ console.log('[REPORT] → PLAYTEST_REPORT.md\n');
 
 // 엔딩 도달 케이스 정의: { name, flags, stats, expectedScenes(도달해야 할 씬 목록) }
 const endingTests = [
-    // 메인 3인 PERFECT (80+)
-    { name: '서연 PERFECT', flags: { day4_confession_accepted: true, route_seoyeon: true, met_seoyeon: true }, stats: { Seoyeon: 85 }, expect: ['perfect_epilogue_4_seo'] },
-    { name: '유나 PERFECT', flags: { day4_confession_accepted: true, route_yuna: true, met_yuna: true }, stats: { Yuna: 85 }, expect: ['perfect_epilogue_4_yuna'] },
-    { name: '다인 PERFECT', flags: { day4_confession_accepted: true, route_dain: true, met_dain: true }, stats: { Dain: 85 }, expect: ['perfect_epilogue_4_dain'] },
-    // 메인 3인 TRUE (60~79)
+    // 메인 3인 PERFECT (90+)
+    { name: '서연 PERFECT', flags: { day4_confession_accepted: true, route_seoyeon: true, met_seoyeon: true }, stats: { Seoyeon: 95 }, expect: ['perfect_epilogue_4_seo'] },
+    { name: '유나 PERFECT', flags: { day4_confession_accepted: true, route_yuna: true, met_yuna: true }, stats: { Yuna: 95 }, expect: ['perfect_epilogue_4_yuna'] },
+    { name: '다인 PERFECT', flags: { day4_confession_accepted: true, route_dain: true, met_dain: true }, stats: { Dain: 95 }, expect: ['perfect_epilogue_4_dain'] },
+    // 메인 3인 TRUE (60~89)
     { name: '서연 TRUE', flags: { day4_confession_accepted: true, route_seoyeon: true, met_seoyeon: true }, stats: { Seoyeon: 70 }, expect: ['true_epilogue_7'] },
     { name: '유나 TRUE', flags: { day4_confession_accepted: true, route_yuna: true, met_yuna: true }, stats: { Yuna: 70 }, expect: ['true_epilogue_7'] },
     { name: '다인 TRUE', flags: { day4_confession_accepted: true, route_dain: true, met_dain: true }, stats: { Dain: 70 }, expect: ['true_epilogue_7'] },
@@ -2880,12 +2880,12 @@ const endingTests = [
     { name: '유나 BITTERSWEET', flags: { day4_confession_accepted: true, route_yuna: true, met_yuna: true }, stats: { Yuna: 20 }, expect: ['bitter_epilogue_3'] },
     { name: '다인 BITTERSWEET', flags: { day4_confession_accepted: true, route_dain: true, met_dain: true }, stats: { Dain: 20 }, expect: ['bitter_epilogue_3'] },
     // 담임 4종
-    { name: '담임 PERFECT', flags: { homeroom_day5: true }, stats: { Teacher: 85 }, expect: ['hidden_perfect_homeroom_ep4'] },
+    { name: '담임 PERFECT', flags: { homeroom_day5: true }, stats: { Teacher: 95 }, expect: ['hidden_perfect_homeroom_ep4'] },
     { name: '담임 TRUE LOVE', flags: { homeroom_day5: true }, stats: { Teacher: 70 }, expect: ['hidden_true_homeroom_8'] },
     { name: '담임 GOOD', flags: { homeroom_day5: true }, stats: { Teacher: 40 }, expect: ['hidden_good_homeroom_4'] },
     { name: '담임 BITTERSWEET', flags: { homeroom_day5: true }, stats: { Teacher: 20 }, expect: ['hidden_bitter_homeroom_6'] },
     // 보건 4종
-    { name: '보건 PERFECT', flags: { nurse_day5: true }, stats: { Nurse: 85 }, expect: ['hidden_perfect_nurse_ep4'] },
+    { name: '보건 PERFECT', flags: { nurse_day5: true }, stats: { Nurse: 95 }, expect: ['hidden_perfect_nurse_ep4'] },
     { name: '보건 TRUE LOVE', flags: { nurse_day5: true }, stats: { Nurse: 70 }, expect: ['hidden_true_nurse_8'] },
     { name: '보건 GOOD', flags: { nurse_day5: true }, stats: { Nurse: 40 }, expect: ['hidden_good_nurse_4'] },
     { name: '보건 BITTERSWEET', flags: { nurse_day5: true }, stats: { Nurse: 20 }, expect: ['hidden_bitter_nurse_7'] },

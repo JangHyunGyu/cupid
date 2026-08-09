@@ -382,7 +382,7 @@ test('every competitive scene remains a non-positive relationship tradeoff', () 
     }
 });
 
-test('optimal authored routes give every character the same 80-point choice budget', () => {
+test('optimal authored routes give students 80 points and hidden routes 90 points before free talk', () => {
     const optimalRouteEffects = {
         Seoyeon: [
             ['seoyeon_choice', 0], ['lunch_seo_3'], ['lunch_seo_choice', 0],
@@ -429,6 +429,7 @@ test('optimal authored routes give every character the same 80-point choice budg
         ]
     };
 
+    const expectedTotals = { Seoyeon: 80, Yuna: 80, Dain: 80, Teacher: 90, Nurse: 90 };
     for (const [character, effects] of Object.entries(optimalRouteEffects)) {
         const total = effects.reduce((sum, [sceneId, choiceIndex]) => {
             const source = Number.isInteger(choiceIndex) ? scenes[sceneId]?.choices?.[choiceIndex] : scenes[sceneId];
@@ -436,11 +437,15 @@ test('optimal authored routes give every character the same 80-point choice budg
             assert.ok(Number.isFinite(affinity) && affinity > 0, `${sceneId} must grant ${character} positive affinity`);
             return sum + affinity;
         }, 0);
-        assert.equal(total, 80, `${character} optimal authored route must total 80 before free talk`);
+        assert.equal(total, expectedTotals[character], `${character} optimal authored route budget drifted`);
     }
+
+    assert.equal(scenes.hidden_homeroom_d5_8.stats.Teacher.affinity, 15);
+    assert.equal(scenes.hidden_nurse_d5_7.stats.Nurse.affinity, 15);
+    assert.equal(scenes.hidden_nurse_d5_7_both.stats.Nurse.affinity, 15);
 });
 
-test('all five character routes share the 80/60/40/bittersweet ending tiers', () => {
+test('all five character routes share the 90/60/40/bittersweet ending tiers', () => {
     const routeChecks = [
         ['ending_aff_check_seo', 'Seoyeon', ['perfect_seo_1', 'true_seo_1', 'day5_ending_good', 'bitter_seo_1']],
         ['ending_aff_check_yuna', 'Yuna', ['perfect_yuna_1', 'true_yuna_1', 'day5_ending_good', 'bitter_yuna_1']],
@@ -454,7 +459,7 @@ test('all five character routes share the 80/60/40/bittersweet ending tiers', ()
         assert.equal(scene?.affinityChar, character, `${sceneId} must evaluate ${character}`);
         assert.deepEqual(
             scene.affinityBranches.map(branch => [branch.minAffinity, branch.next]),
-            [[80, targets[0]], [60, targets[1]], [40, targets[2]], [-100, targets[3]]],
+            [[90, targets[0]], [60, targets[1]], [40, targets[2]], [-100, targets[3]]],
             `${sceneId} ending thresholds drifted`
         );
         assert.equal(scene.next, targets[3], `${sceneId} must default to the bittersweet route`);

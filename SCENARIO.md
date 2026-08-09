@@ -19440,7 +19440,7 @@
 - 배경: `room_school.png`
 - 배경톤: `empty`
 - 플래그: `homeroom_day5`
-- 스탯: Teacher +5
+- 스탯: Teacher +15
 - 다음: `hidden_homeroom_d5_freetalk`
 
 - 캐릭터: `teacher_normal.png`
@@ -19809,7 +19809,7 @@
 ### `hidden_nurse_d5_7`
 - 배경: `school_hallway.png`
 - 플래그: `nurse_day5`
-- 스탯: Nurse +5
+- 스탯: Nurse +15
 - 다음: `hidden_nurse_d5_freetalk`
 
 <!-- i18n -->
@@ -19819,7 +19819,7 @@
 ### `hidden_nurse_d5_7_both`
 - 배경: `school_hallway.png`
 - 플래그: `nurse_day5`, `both_hidden_day5`
-- 스탯: Nurse +5
+- 스탯: Nurse +15
 - 다음: `hidden_nurse_d5_freetalk`
 
 <!-- i18n -->
@@ -21858,7 +21858,7 @@
 ### `hidden_perfect_homeroom_check`
 - 배경: `room_school.png`
 - 호감분기: Teacher
-  - [80+] → `hidden_perfect_homeroom_1`
+  - [90+] → `hidden_perfect_homeroom_1`
   - [60+] → `hidden_true_homeroom_1`
   - [40+] → `hidden_good_homeroom_1`
   - [기본] → `hidden_bitter_homeroom_1`
@@ -22492,7 +22492,7 @@
 ### `hidden_perfect_nurse_check`
 - 배경: `nurse_room.png`
 - 호감분기: Nurse
-  - [80+] → `hidden_perfect_nurse_1`
+  - [90+] → `hidden_perfect_nurse_1`
   - [60+] → `hidden_true_nurse_1`
   - [40+] → `hidden_good_nurse_1`
   - [기본] → `hidden_bitter_nurse_1`
@@ -23118,7 +23118,7 @@
 ### `ending_aff_check_seo`
 - 배경: `top_school.png`
 - 호감분기: Seoyeon
-  - [80+] → `perfect_seo_1`
+  - [90+] → `perfect_seo_1`
   - [60+] → `true_seo_1`
   - [40+] → `day5_ending_good`
   - [기본] → `bitter_seo_1`
@@ -23399,7 +23399,7 @@
 ### `ending_aff_check_yuna`
 - 배경: `yuna_hideout.png`
 - 호감분기: Yuna
-  - [80+] → `perfect_yuna_1`
+  - [90+] → `perfect_yuna_1`
   - [60+] → `true_yuna_1`
   - [40+] → `day5_ending_good`
   - [기본] → `bitter_yuna_1`
@@ -23680,7 +23680,7 @@
 ### `ending_aff_check_dain`
 - 배경: `gym.png`
 - 호감분기: Dain
-  - [80+] → `perfect_dain_1`
+  - [90+] → `perfect_dain_1`
   - [60+] → `true_dain_1`
   - [40+] → `day5_ending_good`
   - [기본] → `bitter_dain_1`

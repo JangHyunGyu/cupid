@@ -697,7 +697,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "backgroundVariant": "empty",
         "character": "assets/images/characters/teacher_normal.png",
         "setFlags": ["homeroom_day5"],
-        "stats": {"Teacher":{"affinity":5}},
+        "stats": {"Teacher":{"affinity":15}},
         "next": "hidden_homeroom_d5_freetalk"
     },
     "hidden_homeroom_d5_freetalk": {
@@ -908,13 +908,13 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "hidden_nurse_d5_7": {
         "background": "assets/images/background/school_hallway.png",
         "setFlags": ["nurse_day5"],
-        "stats": {"Nurse":{"affinity":5}},
+        "stats": {"Nurse":{"affinity":15}},
         "next": "hidden_nurse_d5_freetalk"
     },
     "hidden_nurse_d5_7_both": {
         "background": "assets/images/background/school_hallway.png",
         "setFlags": ["nurse_day5","both_hidden_day5"],
-        "stats": {"Nurse":{"affinity":5}},
+        "stats": {"Nurse":{"affinity":15}},
         "next": "hidden_nurse_d5_freetalk"
     },
     "hidden_nurse_d5_freetalk": {

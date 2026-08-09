@@ -36,7 +36,7 @@ gameEngine.stateManager.setDay(5)
 
 ## 2. 엔딩 프리셋 (복사-붙여넣기용)
 
-### PERFECT END — 서연 (호감도 80+, 고백 수락, 단독 루트)
+### PERFECT END — 서연 (호감도 90+, 고백 수락, 단독 루트)
 ```js
 gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Seoyeon.affinity = 90;
@@ -46,7 +46,7 @@ gameEngine.stateManager.setDay(5);
 gameEngine.renderScene("perfect_seo_1");
 ```
 
-### PERFECT END — 유나 (호감도 80+)
+### PERFECT END — 유나 (호감도 90+)
 ```js
 gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Yuna.affinity = 90;
@@ -56,7 +56,7 @@ gameEngine.stateManager.setDay(5);
 gameEngine.renderScene("perfect_yuna_1");
 ```
 
-### PERFECT END — 다인 (호감도 80+)
+### PERFECT END — 다인 (호감도 90+)
 ```js
 gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Dain.affinity = 90;
@@ -217,7 +217,7 @@ gameEngine.stateManager.setDay(5);
 gameEngine.renderScene("ending_start");
 ```
 
-### TEACHER PERFECT END (호감도 80+)
+### TEACHER PERFECT END (호감도 90+)
 ```js
 gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Teacher.affinity = 90;
@@ -244,7 +244,7 @@ gameEngine.stateManager.setDay(5);
 gameEngine.renderScene("hidden_good_homeroom_1");
 ```
 
-### NURSE PERFECT END (호감도 80+)
+### NURSE PERFECT END (호감도 90+)
 ```js
 gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Nurse.affinity = 90;
