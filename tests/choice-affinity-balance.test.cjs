@@ -59,8 +59,8 @@ test('direct choice affinity distribution keeps subtle penalties meaningful but 
         }
     }
 
-    assert.equal(total, 153);
-    assert.deepEqual(counts, { positive: 59, negative: 42, neutral: 51, mixed: 1 });
+    assert.equal(total, 159);
+    assert.deepEqual(counts, { positive: 62, negative: 42, neutral: 51, mixed: 4 });
 });
 
 test('two-option screens retain their original response and add the trap as a third choice', () => {
@@ -94,7 +94,7 @@ test('negative-choice screens stay distributed across every story day', () => {
         1: { choiceScreens: 11, negativeScreens: 7 },
         2: { choiceScreens: 13, negativeScreens: 8 },
         3: { choiceScreens: 18, negativeScreens: 11 },
-        4: { choiceScreens: 15, negativeScreens: 9 },
+        4: { choiceScreens: 18, negativeScreens: 12 },
         5: { choiceScreens: 5, negativeScreens: 3 }
     };
 
@@ -109,6 +109,46 @@ test('negative-choice screens stay distributed across every story day', () => {
             expectedCounts,
             `day ${day} negative-choice coverage drifted`
         );
+    }
+});
+
+test('day 4 rival counteroffers force an explicit route choice with consequences', () => {
+    const counteroffers = [
+        {
+            sceneId: 'wall_seo_glimpse_2',
+            routeCharacter: 'Seoyeon',
+            rivalCharacter: 'Dain',
+            heldFlag: 'day4_held_route_seoyeon',
+            temptedFlag: 'day4_took_dain_counteroffer',
+            choices: ['서연에게 바로 답장하고 돌아간다', '체육관으로 들어가 다인의 공을 받는다']
+        },
+        {
+            sceneId: 'wall_dain_glimpse_4_c',
+            routeCharacter: 'Dain',
+            rivalCharacter: 'Yuna',
+            heldFlag: 'day4_held_route_dain',
+            temptedFlag: 'day4_took_yuna_counteroffer',
+            choices: ['다인에게 집에 도착했다고 답장한다', '학교 후문으로 돌아가 유나를 만난다']
+        },
+        {
+            sceneId: 'wall_yuna_glimpse_3_b',
+            routeCharacter: 'Yuna',
+            rivalCharacter: 'Seoyeon',
+            heldFlag: 'day4_held_route_yuna',
+            temptedFlag: 'day4_took_seoyeon_counteroffer',
+            choices: ['유나에게 집에 간다고 답장한다', '서연을 따라 옥상으로 올라간다']
+        }
+    ];
+
+    for (const counteroffer of counteroffers) {
+        const scene = scenes[counteroffer.sceneId];
+        assert.equal(scene?.choices?.length, 2, `${counteroffer.sceneId} must present the route and rival`);
+        assert.equal(scene.choices[0].stats?.[counteroffer.routeCharacter]?.affinity, 2);
+        assert.ok(scene.choices[0].setFlags?.includes(counteroffer.heldFlag));
+        assert.equal(scene.choices[1].stats?.[counteroffer.rivalCharacter]?.affinity, 3);
+        assert.equal(scene.choices[1].stats?.[counteroffer.routeCharacter]?.affinity, -4);
+        assert.ok(scene.choices[1].setFlags?.includes(counteroffer.temptedFlag));
+        assert.deepEqual(korean[counteroffer.sceneId]?.choices, counteroffer.choices);
     }
 });
 

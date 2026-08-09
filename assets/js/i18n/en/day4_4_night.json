@@ -238,12 +238,16 @@
         "text": "*After walking Seoyeon home, I follow the school wall back. An emergency light glows in one pane of the gym window.*"
     },
     "wall_seo_glimpse_2": {
-        "name": "{name}",
-        "text": "*Jersey number 19 crosses behind the window. The steady sound of a bouncing ball carries over the wall.*"
+        "name": "Dain",
+        "text": "Since you came this far, come in. I don't care if you're on your way back from seeing Seoyeon. Just return ten passes.",
+        "choices": [
+            "Text Seoyeon back and head home",
+            "Go into the gym and return Dain's passes"
+        ]
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
-        "text": "*After counting a few more bounces, I turn away. The gym window is still lit when I reach home.*"
+        "text": "*A message from Seoyeon says, 'I'm home.' Instead of replying, I lock the screen and step into the gym. Dain tosses me the ball without a word.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -553,7 +557,7 @@
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*The lamp in the annex remains on until I pass the back gate. The folded corner of the note in my pocket presses into my palm.*"
+        "text": "*I slip the wrist brace Dain gave me into my pocket and turn back toward the school gate. Yuna switches off the lamp and comes downstairs.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -561,7 +565,11 @@
     },
     "wall_dain_glimpse_4_c": {
         "name": "Yuna",
-        "text": "*School back gate. Come now.*"
+        "text": "School back gate. Come now. Even if you were with Dain, I want you here now.",
+        "choices": [
+            "Tell Dain I made it home",
+            "Go back to the school gate and meet Yuna"
+        ]
     },
     "wall_yuna_1": {
         "name": "{name}",
@@ -763,11 +771,15 @@
     },
     "wall_yuna_glimpse_3_b": {
         "name": "Seoyeon",
-        "text": "*She puts the phone in her pocket and walks beyond the streetlight. The sound of her heels recedes along the school wall.*"
+        "text": "You were with Yuna. I know. But will you come up to the roof now? I'm the one who waited.",
+        "choices": [
+            "Tell Yuna I'm heading home",
+            "Follow Seoyeon up to the roof"
+        ]
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*I linger behind the school for a while before going home. The phone in my pocket stays silent.*"
+        "text": "*I tuck Yuna's note into my pocket and follow Seoyeon up the rooftop stairs. Yuna's name lights up once on the locked screen, then disappears.*"
     },
     "day4_night_regret": {
         "name": "{name}",

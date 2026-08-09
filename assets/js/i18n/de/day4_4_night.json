@@ -238,12 +238,16 @@
         "text": "*Nachdem ich Seoyeon nach Hause begleitet habe, gehe ich an der Schulmauer entlang zurück. In einem Fenster der Turnhalle brennt das Notlicht.*"
     },
     "wall_seo_glimpse_2": {
-        "name": "{name}",
-        "text": "*Trikotnummer 19 zieht hinter dem Fenster vorbei. Das gleichmäßige Aufprallen eines Balls ist bis über die Mauer zu hören.*"
+        "name": "Dain",
+        "text": "Wenn du schon so weit gekommen bist, dann komm rein. Mir ist egal, ob du gerade von Seoyeon kommst. Nur zehn Pässe.",
+        "choices": [
+            "Seoyeon antworten und nach Hause gehen",
+            "In die Turnhalle gehen und Dains Pässe annehmen"
+        ]
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
-        "text": "*Ich zähle noch ein paar weitere Ballkontakte und drehe mich dann um. Als ich zu Hause ankomme, ist das Turnhallenfenster noch immer erleuchtet.*"
+        "text": "*Eine Nachricht von Seoyeon erscheint: „Bin zu Hause.“ Statt zu antworten, sperre ich den Bildschirm und gehe in die Turnhalle. Dain wirft mir wortlos den Ball zu.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -553,7 +557,7 @@
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*Bis ich am Hintertor vorbeigehe, brennt die Lampe im Nebengebäude weiter. Die gefaltete Ecke des Zettels in meiner Tasche drückt in meine Handfläche.*"
+        "text": "*Ich stecke die Handgelenkbandage von Dain ein und gehe zum Hintertor der Schule zurück. Yuna schaltet die Lampe aus und kommt die Treppe herunter.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -561,7 +565,11 @@
     },
     "wall_dain_glimpse_4_c": {
         "name": "Yuna",
-        "text": "*Hintereingang der Schule. Komm jetzt.*"
+        "text": "Hintereingang der Schule. Komm jetzt. Auch wenn du bei Dain warst, will ich, dass du jetzt hierherkommst.",
+        "choices": [
+            "Dain schreiben, dass ich zu Hause bin",
+            "Zum Hintertor zurückgehen und Yuna treffen"
+        ]
     },
     "wall_yuna_1": {
         "name": "{name}",
@@ -763,11 +771,15 @@
     },
     "wall_yuna_glimpse_3_b": {
         "name": "Seoyeon",
-        "text": "*Sie steckt das Handy in die Tasche und geht aus dem Licht der Straßenlaterne. Das Klacken ihrer Absätze entfernt sich an der Schulmauer entlang.*"
+        "text": "Du kommst gerade von Yuna. Ich weiß. Willst du trotzdem jetzt mit aufs Dach kommen? Ich habe schließlich gewartet.",
+        "choices": [
+            "Yuna schreiben, dass ich nach Hause gehe",
+            "Seoyeon aufs Dach folgen"
+        ]
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*Ich kehre von der Rückseite der Schule nach Hause zurück. Das Handy in meiner Tasche bleibt still.*"
+        "text": "*Ich stecke Yunas Zettel ein und folge Seoyeon die Treppe zum Dach hinauf. Yunas Name leuchtet einmal auf dem gesperrten Bildschirm auf und verschwindet wieder.*"
     },
     "day4_night_regret": {
         "name": "{name}",

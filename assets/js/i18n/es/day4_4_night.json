@@ -238,12 +238,16 @@
         "text": "*De vuelta a casa después de acompañar a Seoyeon, paso frente a la escuela. Hay una luz de emergencia encendida en la ventana del gimnasio.*"
     },
     "wall_seo_glimpse_2": {
-        "name": "{name}",
-        "text": "*El uniforme con el número 19 cruza por dentro de la ventana. El sonido constante del balón al rebotar llega más allá del muro.*"
+        "name": "Dain",
+        "text": "Ya que has llegado hasta aquí, entra. No me importa que vengas de ver a la presidenta. Devuélveme solo diez pases.",
+        "choices": [
+            "Responderle a Seoyeon y volver a casa",
+            "Entrar al gimnasio y devolverle los pases a Dain"
+        ]
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
-        "text": "*Cuento unos rebotes más y me doy la vuelta. La ventana del gimnasio sigue encendida hasta que llego a casa.*"
+        "text": "*Llega un mensaje de Seoyeon: «Ya llegué». En vez de responder, bloqueo la pantalla y entro al gimnasio. Dain me lanza el balón sin decir nada.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -553,7 +557,7 @@
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*La lámpara del anexo sigue encendida hasta que paso la puerta trasera. La esquina doblada de la nota dentro del bolsillo me presiona la palma.*"
+        "text": "*Guardo en el bolsillo la muñequera que me dio Dain y regreso hacia la puerta trasera de la escuela. Yuna apaga la lámpara y baja las escaleras.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -561,7 +565,11 @@
     },
     "wall_dain_glimpse_4_c": {
         "name": "Yuna",
-        "text": "*Puerta trasera de la escuela. Ven ahora.*"
+        "text": "Puerta trasera de la escuela. Ven ahora. Aunque hayas estado con Dain, ahora quiero que vengas tú.",
+        "choices": [
+            "Decirle a Dain que ya llegué a casa",
+            "Volver a la puerta trasera para ver a Yuna"
+        ]
     },
     "wall_yuna_1": {
         "name": "{name}",
@@ -763,11 +771,15 @@
     },
     "wall_yuna_glimpse_3_b": {
         "name": "Seoyeon",
-        "text": "*Guarda el celular en el bolsillo y camina fuera de la luz de la farola. El sonido de sus tacones se aleja junto al muro de la escuela.*"
+        "text": "Vienes de estar con Yuna. Lo sé. Aun así, ¿quieres subir ahora a la azotea? Yo fui quien esperó.",
+        "choices": [
+            "Decirle a Yuna que me voy a casa",
+            "Seguir a Seoyeon hasta la azotea"
+        ]
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*Me quedo un rato detrás de la escuela antes de volver a casa. El celular permanece en silencio dentro del bolsillo.*"
+        "text": "*Guardo la nota de Yuna en el bolsillo y sigo a Seoyeon por las escaleras de la azotea. El nombre de Yuna se enciende una vez en la pantalla bloqueada y desaparece.*"
     },
     "day4_night_regret": {
         "name": "{name}",

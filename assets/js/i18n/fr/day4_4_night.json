@@ -238,12 +238,16 @@
         "text": "*Sur le chemin du retour après avoir raccompagné Seoyeon chez elle, je passe devant le lycée. Une lumière est allumée à une fenêtre du gymnase : l'éclairage de secours.*"
     },
     "wall_seo_glimpse_2": {
-        "name": "{name}",
-        "text": "*Le numéro 19 traverse l’intérieur de la fenêtre. Le bruit régulier d’un ballon qui rebondit résonne jusque de l’autre côté du mur.*"
+        "name": "Dain",
+        "text": "Puisque tu es venu jusque-là, entre. Même si tu reviens de chez Seoyeon, ça m'est égal. Renvoie-moi juste dix passes.",
+        "choices": [
+            "Répondre à Seoyeon et rentrer",
+            "Entrer dans le gymnase et faire dix passes avec Dain"
+        ]
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
-        "text": "*Je compte encore quelques rebonds avant de repartir. La fenêtre du gymnase reste allumée jusqu’à mon arrivée chez moi.*"
+        "text": "*Un message de Seoyeon s’affiche : « Je suis rentrée. » Au lieu de répondre, je verrouille l’écran et j’entre dans le gymnase. Dain me lance le ballon sans un mot.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -553,7 +557,7 @@
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*La lampe de l’annexe reste allumée jusqu’à ce que je passe la porte arrière. Le coin plié du mot dans ma poche appuie contre ma paume.*"
+        "text": "*Je range le protège-poignet donné par Dain dans ma poche et retourne vers la porte arrière du lycée. Yuna éteint la lampe et descend.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -561,7 +565,11 @@
     },
     "wall_dain_glimpse_4_c": {
         "name": "Yuna",
-        "text": "*Porte arrière du lycée. Viens maintenant.*"
+        "text": "Porte arrière du lycée. Viens maintenant. Même si tu étais avec Dain, c’est toi que je veux voir ici.",
+        "choices": [
+            "Dire à Dain que je suis bien rentré",
+            "Retourner à la porte arrière pour voir Yuna"
+        ]
     },
     "wall_yuna_1": {
         "name": "{name}",
@@ -763,11 +771,15 @@
     },
     "wall_yuna_glimpse_3_b": {
         "name": "Seoyeon",
-        "text": "*Elle range son téléphone dans sa poche et sort du halo du lampadaire. Le bruit de ses talons s’éloigne le long du mur du lycée.*"
+        "text": "Tu reviens de chez Yuna. Je sais. Mais tu veux quand même monter sur le toit maintenant ? C’est moi qui ai attendu.",
+        "choices": [
+            "Dire à Yuna que je rentre chez moi",
+            "Suivre Seoyeon sur le toit"
+        ]
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*Je rentre chez moi depuis l’arrière du lycée. Dans ma poche, mon téléphone reste silencieux.*"
+        "text": "*Je glisse le mot de Yuna dans ma poche et suis Seoyeon dans l’escalier du toit. Le nom de Yuna s’allume une fois sur l’écran verrouillé, puis disparaît.*"
     },
     "day4_night_regret": {
         "name": "{name}",
