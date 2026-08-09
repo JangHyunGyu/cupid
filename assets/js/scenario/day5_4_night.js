@@ -613,12 +613,12 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "hidden_bitter_homeroom_6"
     },
     "hidden_bitter_homeroom_6": {
-        "background": "assets/images/background/ending_good_teacher.png",
+        "background": "assets/images/background/ending_bittersweet_teacher.png",
         "character": null,
         "next": "hidden_bitter_homeroom_ending_title"
     },
     "hidden_bitter_homeroom_ending_title": {
-        "background": "assets/images/background/ending_good_teacher.png",
+        "background": "assets/images/background/ending_bittersweet_teacher.png",
         "character": null,
         "next": "day5_teacher_ending_freetalk_intro"
     },
@@ -917,12 +917,12 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "hidden_bitter_nurse_7"
     },
     "hidden_bitter_nurse_7": {
-        "background": "assets/images/background/ending_good_nurse.png",
+        "background": "assets/images/background/ending_bittersweet_nurse.png",
         "character": null,
         "next": "hidden_bitter_nurse_ending_title"
     },
     "hidden_bitter_nurse_ending_title": {
-        "background": "assets/images/background/ending_good_nurse.png",
+        "background": "assets/images/background/ending_bittersweet_nurse.png",
         "character": null,
         "next": "day5_nurse_ending_freetalk_intro"
     },

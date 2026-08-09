@@ -17781,11 +17781,10 @@
 ---
 
 ### `wall_seo_glimpse_4`
-- 배경: `gym.png`
-- 배경톤: `lights-off`
+- 배경: `event_temptation_dain.png`
 - 다음: `day4_night_regret`
 
-- 캐릭터: `dain_sad.png`
+- 캐릭터: `없음`
 **{name}**: *마지막 공이 바닥을 굴러간다. 다인은 숨도 고르지 못한 채 {name}의 품으로 파고든다. 주머니 속 휴대폰에서 서연의 메시지가 연달아 울린다.*
 
 ---
@@ -17811,10 +17810,10 @@
 ---
 
 ### `wall_seo_yuna_tempt_accept`
-- 배경: `yuna_hideout.png`
+- 배경: `event_temptation_yuna.png`
 - 다음: `day4_night_regret`
 
-- 캐릭터: `yuna_sad.png`
+- 캐릭터: `없음`
 **{name}**: *유나 옆 의자에 앉자 소매 끝을 잡은 손에 힘이 들어간다. 서연의 '너도 도착했어?'라는 메시지가 화면 위에서 사라지지 않는다.*
 
 ---
@@ -17858,7 +17857,7 @@
 ---
 
 ### `wall_dain_glimpse_4`
-- 배경: `school_back.png`
+- 배경: `event_temptation_yuna.png`
 - 다음: `day4_night_regret`
 
 - 캐릭터: `없음`
@@ -17887,10 +17886,10 @@
 ---
 
 ### `wall_dain_seo_tempt_accept`
-- 배경: `yuna_secret_rooftop.png`
+- 배경: `event_temptation_seoyeon.png`
 - 다음: `day4_night_regret`
 
-- 캐릭터: `seyoun_shy.png`
+- 캐릭터: `없음`
 **{name}**: *옥상문이 닫히자 서연이 먼저 손을 잡는다. 다인의 '잘 들어갔냐?'라는 메시지가 진동과 함께 화면을 밝힌다.*
 
 ---
@@ -17928,8 +17927,7 @@
 ---
 
 ### `wall_yuna_glimpse_4`
-- 배경: `yuna_secret_rooftop.png`
-- 배경톤: `dream`
+- 배경: `event_temptation_seoyeon.png`
 - 다음: `day4_night_regret`
 
 - 캐릭터: `없음`
@@ -17960,11 +17958,10 @@
 ---
 
 ### `wall_yuna_dain_tempt_accept`
-- 배경: `gym.png`
-- 배경톤: `lights-off`
+- 배경: `event_temptation_dain.png`
 - 다음: `day4_night_regret`
 
-- 캐릭터: `dain_shy.png`
+- 캐릭터: `없음`
 **{name}**: *마지막 공이 바닥을 굴러간다. 다인은 숨도 고르지 못한 채 {name}의 품으로 파고든다. 유나의 이름이 휴대폰 화면에 연달아 뜬다.*
 
 ---
@@ -21955,7 +21952,7 @@
 ---
 
 ### `hidden_bitter_homeroom_6`
-- 배경: `ending_good_teacher.png`
+- 배경: `ending_bittersweet_teacher.png`
 - 다음: `hidden_bitter_homeroom_ending_title`
 
 - 캐릭터: `없음`
@@ -21964,7 +21961,7 @@
 ---
 
 ### `hidden_bitter_homeroom_ending_title`
-- 배경: `ending_good_teacher.png`
+- 배경: `ending_bittersweet_teacher.png`
 - 다음: `day5_teacher_ending_freetalk_intro`
 
 - 캐릭터: `없음`
@@ -22569,7 +22566,7 @@
 ---
 
 ### `hidden_bitter_nurse_7`
-- 배경: `ending_good_nurse.png`
+- 배경: `ending_bittersweet_nurse.png`
 - 다음: `hidden_bitter_nurse_ending_title`
 
 - 캐릭터: `없음`
@@ -22578,7 +22575,7 @@
 ---
 
 ### `hidden_bitter_nurse_ending_title`
-- 배경: `ending_good_nurse.png`
+- 배경: `ending_bittersweet_nurse.png`
 - 다음: `day5_nurse_ending_freetalk_intro`
 
 - 캐릭터: `없음`

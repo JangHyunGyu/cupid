@@ -926,6 +926,21 @@ class GalleryData {
             { id: 'ending_mayhem', name: '읽음 뒤의 거리', character: null, description: '답하지 못한 세 대화방과 각자 다른 방향으로 멀어진 세 사람', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png',
                 unlockHint: "양다리가 들통나기"
             },
+            { id: 'event_temptation_seoyeon', name: '돌아갈 틈', character: '서연', description: '밤바람이 부는 옥상에서 서연이 망설임 없이 손을 내밀며 대답을 기다린 순간', file: 'assets/images/background/event_temptation_seoyeon.png', thumbnail: 'assets/images/background/event_temptation_seoyeon.png',
+                unlockHint: "4일차에 라이벌 서연의 제안을 받아들이기"
+            },
+            { id: 'event_temptation_yuna', name: '숨을 곳 없는 거리', character: '유나', description: '낡은 도서관 은신처에서 유나가 책장에 손을 짚고, 물러서지 않은 채 대답을 기다린 순간', file: 'assets/images/background/event_temptation_yuna.png', thumbnail: 'assets/images/background/event_temptation_yuna.png',
+                unlockHint: "4일차에 라이벌 유나의 제안을 받아들이기"
+            },
+            { id: 'event_temptation_dain', name: '불 꺼진 체육관', character: '다인', description: '훈련이 끝난 어두운 체육관에서 다인이 장난기 없는 눈으로 한 걸음 다가온 순간', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
+                unlockHint: "4일차에 라이벌 다인의 제안을 받아들이기"
+            },
+            { id: 'ending_bittersweet_teacher', name: '돌아온 편지', character: '담임선생님', description: '졸업식 뒤 빈 교실, 담임이 추천서와 편지를 책상 위에 돌려놓고 작별을 택한 순간', file: 'assets/images/background/ending_bittersweet_teacher.png', thumbnail: 'assets/images/background/ending_bittersweet_teacher.png',
+                unlockHint: "담임 Bittersweet 엔딩 도달"
+            },
+            { id: 'ending_bittersweet_nurse', name: '상담 종료', character: '보건선생님', description: '상담 기록과 연락처 쪽지가 책상 위로 돌아오고, 보건실 문이 닫히기 직전 남은 마지막 인사', file: 'assets/images/background/ending_bittersweet_nurse.png', thumbnail: 'assets/images/background/ending_bittersweet_nurse.png',
+                unlockHint: "보건 Bittersweet 엔딩 도달"
+            },
             { id: 'ending_good_teacher', name: '졸업식의 작별', character: '담임선생님', description: '졸업식 날 추천서와 합평본을 건넨 뒤, 복도 창가에서 졸업생들을 배웅하는 담임선생님', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png',
                 unlockHint: "담임 굿 엔딩 도달"
             },
@@ -1020,6 +1035,21 @@ class GalleryData {
             },
             { id: 'ending_mayhem', name: 'Distance After the Read Receipts', character: null, description: 'Three unanswered chats and three people walking away in different directions', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png',
                 unlockHint: "Get caught two-timing"
+            },
+            { id: 'event_temptation_seoyeon', name: 'No Way Back', character: 'Seoyeon', description: 'On the windy rooftop at night, Seoyeon extends her hand without hesitation and waits for an answer', file: 'assets/images/background/event_temptation_seoyeon.png', thumbnail: 'assets/images/background/event_temptation_seoyeon.png',
+                unlockHint: "Accept rival Seoyeon\'s offer on Day 4"
+            },
+            { id: 'event_temptation_yuna', name: 'Nowhere Left to Hide', character: 'Yuna', description: 'In the old library hideout, Yuna braces a hand against the shelf and waits for an answer without backing away', file: 'assets/images/background/event_temptation_yuna.png', thumbnail: 'assets/images/background/event_temptation_yuna.png',
+                unlockHint: "Accept rival Yuna\'s offer on Day 4"
+            },
+            { id: 'event_temptation_dain', name: 'The Darkened Gym', character: 'Dain', description: 'After practice, Dain steps closer in the darkened gym with none of her usual playfulness in her eyes', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
+                unlockHint: "Accept rival Dain\'s offer on Day 4"
+            },
+            { id: 'ending_bittersweet_teacher', name: 'The Returned Letter', character: 'Homeroom Teacher', description: 'After graduation in an empty classroom, the homeroom teacher leaves the recommendation and letter on the desk and chooses goodbye', file: 'assets/images/background/ending_bittersweet_teacher.png', thumbnail: 'assets/images/background/ending_bittersweet_teacher.png',
+                unlockHint: "Reach the Homeroom Teacher\'s Bittersweet Ending"
+            },
+            { id: 'ending_bittersweet_nurse', name: 'Closing the File', character: 'School Nurse', description: 'The counseling record and contact note are returned to the desk, leaving one last goodbye before the nurse\'s office door closes', file: 'assets/images/background/ending_bittersweet_nurse.png', thumbnail: 'assets/images/background/ending_bittersweet_nurse.png',
+                unlockHint: "Reach the School Nurse\'s Bittersweet Ending"
             },
             { id: 'ending_good_teacher', name: 'A Graduation Farewell', character: 'Homeroom Teacher', description: 'After handing over a recommendation and the critique copy on graduation day, the homeroom teacher sees the graduates off from the hallway window', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png',
                 unlockHint: "Reach the Homeroom Teacher's Good Ending"
@@ -1116,6 +1146,21 @@ class GalleryData {
             { id: 'ending_mayhem', name: 'La distancia tras el visto', character: null, description: 'Tres chats sin respuesta y tres personas alejándose en direcciones distintas', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png',
                 unlockHint: "Deja que descubran tu doble juego"
             },
+            { id: 'event_temptation_seoyeon', name: 'Sin vuelta atrás', character: 'Seoyeon', description: 'En la azotea azotada por el viento nocturno, Seoyeon tiende la mano sin vacilar y espera una respuesta', file: 'assets/images/background/event_temptation_seoyeon.png', thumbnail: 'assets/images/background/event_temptation_seoyeon.png',
+                unlockHint: "Acepta la propuesta de la rival Seoyeon el día 4"
+            },
+            { id: 'event_temptation_yuna', name: 'Sin lugar donde esconderse', character: 'Yuna', description: 'En el escondite de la vieja biblioteca, Yuna apoya una mano en la estantería y espera una respuesta sin retroceder', file: 'assets/images/background/event_temptation_yuna.png', thumbnail: 'assets/images/background/event_temptation_yuna.png',
+                unlockHint: "Acepta la propuesta de la rival Yuna el día 4"
+            },
+            { id: 'event_temptation_dain', name: 'El gimnasio a oscuras', character: 'Dain', description: 'Tras el entrenamiento, Dain da un paso hacia ti en el gimnasio a oscuras sin una pizca de broma en la mirada', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
+                unlockHint: "Acepta la propuesta de la rival Dain el día 4"
+            },
+            { id: 'ending_bittersweet_teacher', name: 'La carta devuelta', character: 'Profesora', description: 'Tras la graduación, en un aula vacía, la profesora deja la recomendación y la carta sobre el escritorio y elige despedirse', file: 'assets/images/background/ending_bittersweet_teacher.png', thumbnail: 'assets/images/background/ending_bittersweet_teacher.png',
+                unlockHint: "Alcanza el final Bittersweet de la profesora"
+            },
+            { id: 'ending_bittersweet_nurse', name: 'Consulta cerrada', character: 'Enfermera', description: 'El expediente y la nota de contacto vuelven al escritorio, dejando una última despedida antes de que se cierre la puerta de la enfermería', file: 'assets/images/background/ending_bittersweet_nurse.png', thumbnail: 'assets/images/background/ending_bittersweet_nurse.png',
+                unlockHint: "Alcanza el final Bittersweet de la enfermera"
+            },
             { id: 'ending_good_teacher', name: 'La despedida de la graduación', character: 'Profesora', description: 'Después de entregar la recomendación y la copia de la crítica el día de la graduación, la profesora despide a los graduados desde la ventana del pasillo', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png',
                 unlockHint: "Alcanza el buen final de la profesora"
             },
@@ -1210,6 +1255,21 @@ class GalleryData {
             },
             { id: 'ending_mayhem', name: '既読のあとの距離', character: null, description: '好きだという言葉だけが残った三つのトークルームと、振り返らずに離れていく三人', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png',
                 unlockHint: "複数人への告白が発覚する"
+            },
+            { id: 'event_temptation_seoyeon', name: '戻れない距離', character: 'ソヨン', description: '夜風の吹く屋上で、ソヨンが迷わず手を差し出し、答えを待った瞬間', file: 'assets/images/background/event_temptation_seoyeon.png', thumbnail: 'assets/images/background/event_temptation_seoyeon.png',
+                unlockHint: "4日目にライバルのソヨンの誘いを受け入れる"
+            },
+            { id: 'event_temptation_yuna', name: '隠れられない距離', character: 'ユナ', description: '古い図書館の隠れ家で、ユナが本棚に手をつき、一歩も引かずに答えを待った瞬間', file: 'assets/images/background/event_temptation_yuna.png', thumbnail: 'assets/images/background/event_temptation_yuna.png',
+                unlockHint: "4日目にライバルのユナの誘いを受け入れる"
+            },
+            { id: 'event_temptation_dain', name: '消灯後の体育館', character: 'ダイン', description: '練習後の暗い体育館で、ダインが冗談の消えた目のまま一歩近づいた瞬間', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
+                unlockHint: "4日目にライバルのダインの誘いを受け入れる"
+            },
+            { id: 'ending_bittersweet_teacher', name: '返された手紙', character: '担任の先生', description: '卒業式後の誰もいない教室で、担任の先生が推薦状と手紙を机に戻し、別れを選んだ瞬間', file: 'assets/images/background/ending_bittersweet_teacher.png', thumbnail: 'assets/images/background/ending_bittersweet_teacher.png',
+                unlockHint: "担任の先生のBittersweetエンドに到達"
+            },
+            { id: 'ending_bittersweet_nurse', name: '相談終了', character: '保健室の先生', description: '相談記録と連絡先のメモが机に戻され、保健室の扉が閉じる前に最後の挨拶だけが残った瞬間', file: 'assets/images/background/ending_bittersweet_nurse.png', thumbnail: 'assets/images/background/ending_bittersweet_nurse.png',
+                unlockHint: "保健室の先生のBittersweetエンドに到達"
             },
             { id: 'ending_good_teacher', name: '卒業式の別れ', character: '担任の先生', description: '卒業式の日、推薦状の控えと文芸部の合評用冊子を渡し、廊下の窓辺から卒業生を見送る担任の先生', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png',
                 unlockHint: "担任の先生のグッドエンドに到達"
@@ -1306,6 +1366,21 @@ class GalleryData {
             { id: 'ending_mayhem', name: 'La distance après les messages lus', character: null, description: 'Trois conversations restées sans réponse et trois personnes parties dans des directions différentes', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png',
                 unlockHint: "Faire découvrir son double jeu"
             },
+            { id: 'event_temptation_seoyeon', name: 'Plus de retour possible', character: 'Seoyeon', description: 'Sur le toit balayé par le vent nocturne, Seoyeon tend la main sans hésiter et attend une réponse', file: 'assets/images/background/event_temptation_seoyeon.png', thumbnail: 'assets/images/background/event_temptation_seoyeon.png',
+                unlockHint: "Accepter la proposition de la rivale Seoyeon au jour 4"
+            },
+            { id: 'event_temptation_yuna', name: 'Nulle part où se cacher', character: 'Yuna', description: 'Dans la cachette de la vieille bibliothèque, Yuna pose une main sur l’étagère et attend une réponse sans reculer', file: 'assets/images/background/event_temptation_yuna.png', thumbnail: 'assets/images/background/event_temptation_yuna.png',
+                unlockHint: "Accepter la proposition de la rivale Yuna au jour 4"
+            },
+            { id: 'event_temptation_dain', name: 'Le gymnase dans le noir', character: 'Dain', description: 'Après l’entraînement, Dain fait un pas de plus dans le gymnase assombri, le regard dénué de toute plaisanterie', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
+                unlockHint: "Accepter la proposition de la rivale Dain au jour 4"
+            },
+            { id: 'ending_bittersweet_teacher', name: 'La lettre rendue', character: 'Professeure principale', description: 'Après la remise des diplômes, dans une salle vide, la professeure pose la recommandation et la lettre sur le bureau et choisit les adieux', file: 'assets/images/background/ending_bittersweet_teacher.png', thumbnail: 'assets/images/background/ending_bittersweet_teacher.png',
+                unlockHint: "Atteindre la fin Bittersweet de la professeure principale"
+            },
+            { id: 'ending_bittersweet_nurse', name: 'Dossier clos', character: 'Infirmière', description: 'Le dossier de suivi et le mot avec les coordonnées reviennent sur le bureau, laissant un dernier adieu avant que la porte de l’infirmerie ne se ferme', file: 'assets/images/background/ending_bittersweet_nurse.png', thumbnail: 'assets/images/background/ending_bittersweet_nurse.png',
+                unlockHint: "Atteindre la fin Bittersweet de l’infirmière"
+            },
             { id: 'ending_good_teacher', name: 'Les adieux de la remise des diplômes', character: 'Professeure principale', description: 'Après avoir remis la recommandation et le dossier de critique le jour de la remise des diplômes, la professeure principale salue les diplômés depuis la fenêtre du couloir', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png',
                 unlockHint: "Atteindre la bonne fin de la professeure principale"
             },
@@ -1401,6 +1476,21 @@ class GalleryData {
             { id: 'ending_mayhem', name: 'Distanz nach der Lesebestätigung', character: null, description: 'Drei unbeantwortete Chats und drei Menschen, die in verschiedene Richtungen davongehen', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png',
                 unlockHint: "Beim zweigleisigen Dating auffliegen"
             },
+            { id: 'event_temptation_seoyeon', name: 'Kein Weg zurück', character: 'Seoyeon', description: 'Auf dem windigen Dach bei Nacht streckt Seoyeon ohne Zögern die Hand aus und wartet auf eine Antwort', file: 'assets/images/background/event_temptation_seoyeon.png', thumbnail: 'assets/images/background/event_temptation_seoyeon.png',
+                unlockHint: "Am 4. Tag das Angebot der Rivalin Seoyeon annehmen"
+            },
+            { id: 'event_temptation_yuna', name: 'Kein Versteck mehr', character: 'Yuna', description: 'Im Versteck der alten Bibliothek stützt Yuna eine Hand am Regal ab und wartet, ohne zurückzuweichen', file: 'assets/images/background/event_temptation_yuna.png', thumbnail: 'assets/images/background/event_temptation_yuna.png',
+                unlockHint: "Am 4. Tag das Angebot der Rivalin Yuna annehmen"
+            },
+            { id: 'event_temptation_dain', name: 'Die dunkle Turnhalle', character: 'Dain', description: 'Nach dem Training kommt Dain in der dunklen Turnhalle einen Schritt näher, ohne den üblichen Schalk im Blick', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
+                unlockHint: "Am 4. Tag das Angebot der Rivalin Dain annehmen"
+            },
+            { id: 'ending_bittersweet_teacher', name: 'Der zurückgegebene Brief', character: 'Klassenlehrerin', description: 'Nach der Abschlussfeier legt die Klassenlehrerin im leeren Klassenzimmer Empfehlung und Brief auf den Tisch zurück und entscheidet sich für den Abschied', file: 'assets/images/background/ending_bittersweet_teacher.png', thumbnail: 'assets/images/background/ending_bittersweet_teacher.png',
+                unlockHint: "Das Bittersweet-Ende der Klassenlehrerin erreichen"
+            },
+            { id: 'ending_bittersweet_nurse', name: 'Akte geschlossen', character: 'Schulkrankenschwester', description: 'Beratungsakte und Kontaktnotiz liegen wieder auf dem Tisch, und vor dem Schließen der Krankenzimmertür bleibt nur ein letzter Abschied', file: 'assets/images/background/ending_bittersweet_nurse.png', thumbnail: 'assets/images/background/ending_bittersweet_nurse.png',
+                unlockHint: "Das Bittersweet-Ende der Schulkrankenschwester erreichen"
+            },
             { id: 'ending_good_teacher', name: 'Abschied bei der Abschlussfeier', character: 'Klassenlehrerin', description: 'Nachdem sie am Tag der Abschlussfeier die Empfehlung und die Kritikfassung überreicht hat, verabschiedet die Klassenlehrerin die Absolventen am Flurfenster', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png',
                 unlockHint: "Das gute Ende der Klassenlehrerin erreichen"
             },
@@ -1495,6 +1585,21 @@ class GalleryData {
             },
             { id: 'ending_mayhem', name: 'A distância depois do visto', character: null, description: 'Três conversas sem resposta e três pessoas se afastando em direções diferentes', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png',
                 unlockHint: "Deixe que descubram seu jogo duplo"
+            },
+            { id: 'event_temptation_seoyeon', name: 'Sem volta', character: 'Seoyeon', description: 'No terraço varrido pelo vento noturno, Seoyeon estende a mão sem hesitar e espera uma resposta', file: 'assets/images/background/event_temptation_seoyeon.png', thumbnail: 'assets/images/background/event_temptation_seoyeon.png',
+                unlockHint: "Aceite a proposta da rival Seoyeon no dia 4"
+            },
+            { id: 'event_temptation_yuna', name: 'Sem lugar para se esconder', character: 'Yuna', description: 'No esconderijo da biblioteca antiga, Yuna apoia a mão na estante e espera uma resposta sem recuar', file: 'assets/images/background/event_temptation_yuna.png', thumbnail: 'assets/images/background/event_temptation_yuna.png',
+                unlockHint: "Aceite a proposta da rival Yuna no dia 4"
+            },
+            { id: 'event_temptation_dain', name: 'O ginásio às escuras', character: 'Dain', description: 'Depois do treino, Dain dá um passo à frente no ginásio escuro, sem qualquer brincadeira no olhar', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
+                unlockHint: "Aceite a proposta da rival Dain no dia 4"
+            },
+            { id: 'ending_bittersweet_teacher', name: 'A carta devolvida', character: 'Professora', description: 'Depois da formatura, numa sala vazia, a professora deixa a recomendação e a carta sobre a mesa e escolhe se despedir', file: 'assets/images/background/ending_bittersweet_teacher.png', thumbnail: 'assets/images/background/ending_bittersweet_teacher.png',
+                unlockHint: "Alcance o final Bittersweet da professora"
+            },
+            { id: 'ending_bittersweet_nurse', name: 'Atendimento encerrado', character: 'Enfermeira', description: 'O registro e o bilhete com o contato voltam para a mesa, deixando apenas uma última despedida antes de a porta da enfermaria se fechar', file: 'assets/images/background/ending_bittersweet_nurse.png', thumbnail: 'assets/images/background/ending_bittersweet_nurse.png',
+                unlockHint: "Alcance o final Bittersweet da enfermeira"
             },
             { id: 'ending_good_teacher', name: 'A despedida da formatura', character: 'Professora', description: 'Depois de entregar a recomendação e a cópia da crítica no dia da formatura, a professora se despede dos formandos junto à janela do corredor', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png',
                 unlockHint: "Alcance o bom final da professora"

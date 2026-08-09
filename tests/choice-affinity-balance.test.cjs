@@ -232,6 +232,61 @@ test('day 4 rival temptations use asymmetric relationship costs and stay localiz
     }
 });
 
+test('rival temptation CG rewards appear only after accepting the rival offer', () => {
+    const acceptanceScenes = {
+        wall_seo_glimpse_4: 'event_temptation_dain',
+        wall_seo_yuna_tempt_accept: 'event_temptation_yuna',
+        wall_dain_glimpse_4: 'event_temptation_yuna',
+        wall_dain_seo_tempt_accept: 'event_temptation_seoyeon',
+        wall_yuna_glimpse_4: 'event_temptation_seoyeon',
+        wall_yuna_dain_tempt_accept: 'event_temptation_dain'
+    };
+    const temptationCgIds = new Set(Object.values(acceptanceScenes));
+    const actualUses = [];
+
+    for (const [sceneId, scene] of Object.entries(scenes)) {
+        const cgId = path.basename(scene.background || '', path.extname(scene.background || ''));
+        if (temptationCgIds.has(cgId)) actualUses.push(sceneId);
+    }
+
+    assert.deepEqual(actualUses.sort(), Object.keys(acceptanceScenes).sort());
+    for (const [sceneId, cgId] of Object.entries(acceptanceScenes)) {
+        assert.equal(scenes[sceneId].background, `assets/images/background/${cgId}.png`);
+        assert.equal(scenes[sceneId].character, null, `${sceneId} must display the CG without a sprite overlay`);
+
+        const incomingChoices = Object.values(scenes)
+            .flatMap(scene => scene.choices || [])
+            .filter(choice => choice.next === sceneId);
+        assert.equal(incomingChoices.length, 1, `${sceneId} must have one authored acceptance entry`);
+        assert.ok(
+            incomingChoices[0].setFlags?.some(flag => /^day4_took_.+_counteroffer$/.test(flag)),
+            `${sceneId} must be gated by an accepted counteroffer`
+        );
+    }
+});
+
+test('new temptation and bittersweet CGs are registered and localized in every gallery', () => {
+    const source = fs.readFileSync(path.join(ROOT, 'assets', 'js', 'gallery-data.js'), 'utf8');
+    const context = { window: {} };
+    vm.runInNewContext(source, context, { filename: 'gallery-data.js' });
+    const cgIds = [
+        'event_temptation_seoyeon',
+        'event_temptation_yuna',
+        'event_temptation_dain',
+        'ending_bittersweet_teacher',
+        'ending_bittersweet_nurse'
+    ];
+
+    for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+        for (const cgId of cgIds) {
+            const entry = context.window.GalleryData.getCG(locale, cgId);
+            assert.ok(entry, `${locale}:${cgId} must be present in the gallery`);
+            assert.ok(entry.name && entry.description && entry.unlockHint, `${locale}:${cgId} copy must be complete`);
+            assert.equal(fs.existsSync(path.join(ROOT, entry.file)), true, `${cgId} image must exist`);
+        }
+    }
+});
+
 test('every competitive scene remains a non-positive relationship tradeoff', () => {
     const competitiveScenes = Object.entries(scenes).filter(([, scene]) => scene.competitiveAffinity);
     assert.ok(competitiveScenes.length > 0, 'at least one competitive choice scene must exist');

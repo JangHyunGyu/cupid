@@ -397,9 +397,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         ]
     },
     "wall_seo_glimpse_4": {
-        "background": "assets/images/background/gym.png",
-        "backgroundVariant": "lights-off",
-        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/event_temptation_dain.png",
+        "character": null,
         "next": "day4_night_regret"
     },
     "wall_seo_yuna_tempt_1": {
@@ -417,8 +416,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         ]
     },
     "wall_seo_yuna_tempt_accept": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_sad.png",
+        "background": "assets/images/background/event_temptation_yuna.png",
+        "character": null,
         "next": "day4_night_regret"
     },
     "wall_dain_1": {
@@ -885,7 +884,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "wall_dain_glimpse_4_b"
     },
     "wall_dain_glimpse_4": {
-        "background": "assets/images/background/school_back.png",
+        "background": "assets/images/background/event_temptation_yuna.png",
         "character": null,
         "next": "day4_night_regret"
     },
@@ -918,8 +917,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         ]
     },
     "wall_dain_seo_tempt_accept": {
-        "background": "assets/images/background/yuna_secret_rooftop.png",
-        "character": "assets/images/characters/seyoun_shy.png",
+        "background": "assets/images/background/event_temptation_seoyeon.png",
+        "character": null,
         "next": "day4_night_regret"
     },
     "wall_yuna_1": {
@@ -1258,8 +1257,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         ]
     },
     "wall_yuna_glimpse_4": {
-        "background": "assets/images/background/yuna_secret_rooftop.png",
-        "backgroundVariant": "dream",
+        "background": "assets/images/background/event_temptation_seoyeon.png",
         "character": null,
         "next": "day4_night_regret"
     },
@@ -1280,9 +1278,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         ]
     },
     "wall_yuna_dain_tempt_accept": {
-        "background": "assets/images/background/gym.png",
-        "backgroundVariant": "lights-off",
-        "character": "assets/images/characters/dain_shy.png",
+        "background": "assets/images/background/event_temptation_dain.png",
+        "character": null,
         "next": "day4_night_regret"
     },
     "day4_night_regret": {
