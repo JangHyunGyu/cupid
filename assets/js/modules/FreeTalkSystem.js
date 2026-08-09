@@ -588,6 +588,7 @@ class FreeTalkSystem {
         }
         document.getElementById('character-layer')?.classList.add('group-freetalk-mode');
         this.uiManager?.dialogueBox?.classList.add('group-freetalk-dialogue');
+        this.uiManager?.chatContainer?.classList.add('group-freetalk-mode');
     }
 
     _setGroupActiveSpeaker(charId = '') {
@@ -605,6 +606,7 @@ class FreeTalkSystem {
     _clearGroupPresentation() {
         document.getElementById('character-layer')?.classList.remove('group-freetalk-mode');
         this.uiManager?.dialogueBox?.classList.remove('group-freetalk-dialogue');
+        this.uiManager?.chatContainer?.classList.remove('group-freetalk-mode');
         this.uiManager?.dialogueBox?.removeAttribute('data-group-speaker-side');
         for (const slot of Object.values(this.uiManager?.charSlots || {})) {
             slot?.classList.remove('group-freetalk-participant', 'group-freetalk-active', 'group-freetalk-inactive');

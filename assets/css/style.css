@@ -566,6 +566,67 @@ html {
     background: #8363d9;
 }
 
+/* 그룹 대화 모바일 세로: 입력은 첫 줄, 행동·전송·닫기는 둘째 줄 오른쪽에 배치 */
+@media (max-width: 600px) and (orientation: portrait) {
+    #chat-container.group-freetalk-mode #chat-input-wrapper {
+        display: grid;
+        grid-template-columns: 42px minmax(0, 1fr) 42px 42px 42px;
+        grid-template-areas:
+            "upload input input input input"
+            ". . action send skip";
+        gap: 8px;
+        align-items: end;
+    }
+
+    #chat-container.group-freetalk-mode #upload-image-btn {
+        grid-area: upload;
+    }
+
+    #chat-container.group-freetalk-mode #chat-input {
+        grid-area: input;
+        width: 100%;
+        min-height: 42px;
+    }
+
+    #chat-container.group-freetalk-mode #action-toggle-btn {
+        grid-area: action;
+        margin-left: 0;
+    }
+
+    #chat-container.group-freetalk-mode #chat-send {
+        grid-area: send;
+    }
+
+    #chat-container.group-freetalk-mode #chat-skip-btn {
+        grid-area: skip;
+    }
+
+    #chat-container.group-freetalk-mode #upload-image-btn,
+    #chat-container.group-freetalk-mode #action-toggle-btn,
+    #chat-container.group-freetalk-mode #chat-send,
+    #chat-container.group-freetalk-mode #chat-skip-btn {
+        width: 42px;
+        height: 42px;
+    }
+}
+
+/* 그룹 대화 모바일 가로: 낮은 화면에서도 두 화자의 표정이 대화창 위로 드러나게 확대 */
+@media (max-height: 500px) and (orientation: landscape) {
+    #character-layer.group-freetalk-mode #char-left {
+        transform: translateX(-82%);
+    }
+
+    #character-layer.group-freetalk-mode #char-right {
+        transform: translateX(-18%);
+    }
+
+    #character-layer.group-freetalk-mode #char-left img,
+    #character-layer.group-freetalk-mode #char-right img {
+        transform: scale(0.95);
+        transform-origin: bottom center;
+    }
+}
+
 /* ==========================================================================
    UI Layer: Conversation & Choice (UI 레이어: 대화창 및 선택지)
    ========================================================================== */

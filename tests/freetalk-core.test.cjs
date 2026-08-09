@@ -545,6 +545,10 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
     assert.match(config, /window\.saveCupidGroupChatLog = saveCupidGroupChatLog/);
     assert.match(css, /group-freetalk-active/);
     assert.match(css, /data-group-speaker-side="right"/);
+    assert.match(freeTalk, /chatContainer\?\.classList\.add\('group-freetalk-mode'\)/);
+    assert.match(freeTalk, /chatContainer\?\.classList\.remove\('group-freetalk-mode'\)/);
+    assert.match(css, /grid-template-areas:\s*"upload input input input input"\s*"\. \. action send skip"/);
+    assert.match(css, /@media \(max-height: 500px\) and \(orientation: landscape\)[\s\S]*?#character-layer\.group-freetalk-mode #char-left img/);
 
     for (const lang of ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt']) {
         const i18n = JSON.parse(read(`assets/js/i18n/${lang}/day5_1_morning.json`));
