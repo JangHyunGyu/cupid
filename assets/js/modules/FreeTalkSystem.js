@@ -1376,15 +1376,16 @@ class FreeTalkSystem {
                     console.warn('[Cupid FreeTalk] Could not persist the completed chat turn', saveError);
                 }
 
-                // D1 chat-logs 저장 (백업 뷰어용, 비동기 fire-and-forget)
+                // D1 chat-logs 저장 (백업 뷰어용). 큐 반영까지 기다려 장면 전환 중 유실을 막는다.
                 if (typeof window.saveCupidChatLog === 'function') {
                     this._assertRequestContext(requestContext, data);
-                    window.saveCupidChatLog({
+                    await window.saveCupidChatLog({
                         charId: charKey,
                         userContent: finalContent,
                         assistantContent: reply,
                         sessionId: requestSceneId || '',
                         context: '1:1',
+                        conversationDay: this.stateManager.currentDay,
                         affinityChange: affinityResult?.change,
                         affinityCurrent: affinityResult?.value,
                         assistantRenderReceipt
@@ -1831,12 +1832,13 @@ class FreeTalkSystem {
             window.saveGameState?.();
 
             if (typeof window.saveCupidGroupChatLog === 'function') {
-                window.saveCupidGroupChatLog({
+                await window.saveCupidGroupChatLog({
                     userContent: finalContent,
                     assistantMessages,
                     participants: this.groupParticipants,
                     sessionId: requestSceneId || '',
-                    playerName: this.stateManager.playerName || ''
+                    playerName: this.stateManager.playerName || '',
+                    conversationDay: this.stateManager.currentDay
                 });
             }
 

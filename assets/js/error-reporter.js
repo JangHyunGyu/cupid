@@ -3,7 +3,7 @@
 
     if (window.__cupidErrorReporterInstalled) return;
 
-    var VERSION = '20260808-legacy-browser-filter';
+    var VERSION = '20260810-first-party-complete';
     var ERROR_ENDPOINT = 'https://chatbot-api.yama5993.workers.dev/error-logs';
     var QUEUE_KEY = 'cupid-error-queue-v2';
     var SESSION_KEY = 'cupid-error-session-v2';
@@ -285,9 +285,8 @@
     }
 
     function isIgnorableResourceError(tagName, resource) {
-        // Pretendard is an optional, same-origin font stylesheet. If a browser
-        // cancels it during navigation, the CSS font stack safely falls back to
-        // the system sans-serif font and the app remains fully functional.
+        // Pretendard is an optional, same-origin font stylesheet; GA is optional too.
+        // 둘 다 게임 오류가 아니며 로드가 취소되어도 핵심 기능을 중단시키지 않는다.
         if (tagName === 'LINK'
             && /\/assets\/vendor\/pretendard\/pretendard\.css(?:[?#]|$)/i.test(resource || '')) {
             return true;

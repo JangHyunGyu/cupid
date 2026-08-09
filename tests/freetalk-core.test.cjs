@@ -646,6 +646,12 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
     assert.match(config, /charId: 'group'/);
     assert.match(config, /context: 'group'/);
     assert.match(config, /speakerId: '__player__'/);
+    assert.match(config, /conversationDay/);
+    assert.match(config, /groupConversationMemories/);
+    assert.match(config, /local-recovery/);
+    assert.match(config, /chat_log_queue_transient_failure/);
+    assert.match(config, /group_chat_log_direct_transient_failure/);
+    assert.match(freeTalk, /await window\.saveCupidGroupChatLog\(\{/);
     assert.match(config, /window\.saveCupidGroupChatLog = saveCupidGroupChatLog/);
     assert.match(css, /group-freetalk-active/);
     assert.match(css, /data-group-speaker-side="right"/);
@@ -837,7 +843,8 @@ test('group backup logs save one player row then one row per character with cano
         ],
         participants: [{ id: 'Teacher' }, { id: 'Dain' }],
         sessionId: 'morning5_counteroffer_group_talk',
-        playerName: '민준'
+        playerName: '민준',
+        conversationDay: 5
     });
 
     assert.equal(queued.length, 3);
@@ -851,9 +858,82 @@ test('group backup logs save one player row then one row per character with cano
         assert.equal(entry.context, 'group');
         assert.deepEqual(Array.from(entry.groupParticipants), ['Teacher', 'Dain']);
         assert.equal(entry.groupPairId, 'cupid:Teacher:Dain');
+        assert.equal(entry.conversationDay, 5);
     }
     assert.equal(queued[1].affinityCurrent, 18);
     assert.equal(queued[2].affinityCurrent, 27);
+});
+
+test('existing local group turns are recovered even when the legacy migration flag is already set', async () => {
+    const config = read('assets/js/modules/config.js');
+    const start = config.indexOf('async function migrateCupidChatHistoryToD1');
+    const end = config.indexOf('const CUPID_CHAT_LOG_QUEUE_KEY', start);
+    assert.ok(start >= 0 && end > start, 'migration must remain extractable');
+
+    const stored = new Map([
+        ['cupid_chat_migrated_v1', '2026-04-09T00:00:00.000Z'],
+        ['cupid_save', JSON.stringify({
+            gameState: {
+                groupConversationMemories: [{
+                    turnId: 'group-turn-1',
+                    sessionId: 'morning5_counteroffer_group_talk',
+                    day: 5,
+                    participants: [{ id: 'Teacher' }, { id: 'Dain' }],
+                    playerName: '민준',
+                    userContent: '둘 다 내 말을 들어줘.',
+                    assistantMessages: [
+                        { speakerId: 'Teacher', content: '먼저 설명해 봐.', affinityCurrent: 20 },
+                        { speakerId: 'Dain', content: '저도 듣고 있어요.', affinityCurrent: 28 }
+                    ]
+                }]
+            }
+        })]
+    ]);
+    const posted = [];
+    const migrationSandbox = {
+        window: {},
+        localStorage: {
+            getItem: key => stored.get(key) || null,
+            setItem: (key, value) => stored.set(key, String(value))
+        },
+        getCupidDeviceId: () => 'cupid-existing-user',
+        getCupidLanguage: () => 'ko',
+        getCupidAppId: () => 'cupid',
+        normalizeCupidConversationDay: value => Number(value) || null,
+        hashCupidLogText: value => `hash-${String(value).length}:1`,
+        makeCupidChatLogEntry: value => ({ ...value }),
+        postCupidChatLogEntry: async entry => { posted.push(entry); },
+        uploadImageToR2: async () => '',
+        reportCupidCaughtError: () => {},
+        CHAR_NAME_MAP: {},
+        console: { info() {}, warn() {} },
+        String,
+        Number,
+        Object,
+        Array,
+        JSON,
+        Date,
+        Promise
+    };
+    vm.runInNewContext(
+        `${config.slice(start, end)}\nglobalThis.__migrateCupidChatHistoryToD1 = migrateCupidChatHistoryToD1;`,
+        migrationSandbox
+    );
+
+    await migrationSandbox.__migrateCupidChatHistoryToD1();
+    const firstIds = posted.map(entry => entry.clientMsgId);
+    assert.equal(posted.length, 3);
+    assert.deepEqual(Array.from(posted, entry => `${entry.role}:${entry.speakerId}`), [
+        'user:__player__',
+        'assistant:Teacher',
+        'assistant:Dain'
+    ]);
+    assert.ok(posted.every(entry => entry.conversationDay === 5));
+    assert.ok(posted.every(entry => entry.logSource === 'local-recovery'));
+
+    posted.length = 0;
+    await migrationSandbox.__migrateCupidChatHistoryToD1();
+    assert.deepEqual(posted.map(entry => entry.clientMsgId), firstIds, 'recovery ids must be stable for D1 upsert');
 });
 
 test('gallery relationship aftermath persists through its local save store', () => {

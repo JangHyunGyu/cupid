@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "https://openrouter-api.yama5993.workers.dev/";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.140";
+const ASSET_VERSION = "2.9.141";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -374,6 +374,16 @@ function getCupidAppId() {
     return lang === 'ko' ? 'cupid' : `cupid-${lang}`;
 }
 
+function normalizeCupidConversationDay(value) {
+    if (value === undefined || value === null || value === '') return null;
+    const day = Number(value);
+    return Number.isInteger(day) && day >= 1 && day <= 5 ? day : null;
+}
+
+function getCurrentCupidConversationDay() {
+    return normalizeCupidConversationDay(window.gameEngine?.stateManager?.currentDay);
+}
+
 async function prepareCupidPromptMemoryRecall({ charId = '', value = '', messages = [] } = {}) {
     const core = window.CupidFreeTalkCore;
     if (!charId || typeof fetch !== 'function' || !core?.getPromptMemoryRetrievalDecision) return [];
@@ -447,20 +457,53 @@ async function uploadImageToR2(base64Image, subPath = 'upload_image', retries = 
 // Gallery: cupid_freetalk_memory = { [charId]: [...] }
 async function migrateCupidChatHistoryToD1() {
     const FLAG = 'cupid_chat_migrated_v1';
-    if (localStorage.getItem(FLAG)) return;
-
     const userId = getCupidDeviceId();
     const language = getCupidLanguage();
-    const headers = { 'Content-Type': 'application/json', 'x-app-id': getCupidAppId() };
+    const appId = getCupidAppId();
     let totalSaved = 0;
 
-    async function postOne(charId, role, content, sessionId, context) {
+    function migratedClientMsgId(parts) {
+        return `cupid-migrated-${hashCupidLogText(parts.join('|')).replace(':', '-')}`;
+    }
+
+    async function postOne({
+        charId,
+        role,
+        content,
+        sessionId,
+        context,
+        conversationDay = null,
+        speakerId = null,
+        playerName = '',
+        groupParticipants = null,
+        groupJoinIndices = null,
+        groupPairId = '',
+        affinityChange = null,
+        affinityCurrent = null,
+        clientMsgId
+    }) {
         try {
-            await fetch(API_ENDPOINT + 'chat-logs', {
-                method: 'POST',
-                headers,
-                body: JSON.stringify({ userId, charId, sessionId, role, content, context, language })
+            const entry = makeCupidChatLogEntry({
+                userId,
+                charId,
+                sessionId,
+                role,
+                content,
+                context,
+                conversationDay,
+                playerName,
+                language,
+                appId,
+                speakerId,
+                groupParticipants,
+                groupJoinIndices,
+                groupPairId,
+                affinityChange,
+                affinityCurrent,
+                clientMsgId
             });
+            entry.logSource = 'local-recovery';
+            await postCupidChatLogEntry(entry);
             totalSaved++;
         } catch (e) {
             console.warn('[Migrate] post 실패:', e.message);
@@ -474,6 +517,7 @@ async function migrateCupidChatHistoryToD1() {
                     contentHash: hashCupidLogText(content)
                 }
             });
+            throw e;
         }
     }
 
@@ -529,49 +573,122 @@ async function migrateCupidChatHistoryToD1() {
     async function migrateChatArray(charId, history, sessionId, context) {
         if (!Array.isArray(history)) return;
         const normalizedCharId = _normalizeCharId(charId);
-        for (const msg of history) {
+        for (let index = 0; index < history.length; index++) {
+            const msg = history[index];
             if (!msg || msg.role === 'system' || !msg.content) continue;
             let content = _unwrapAssistantJson(msg.content, msg.role);
             content = await convertBase64ToR2(content);
-            await postOne(normalizedCharId, msg.role, content, sessionId, context);
+            await postOne({
+                charId: normalizedCharId,
+                role: msg.role,
+                content,
+                sessionId,
+                context,
+                clientMsgId: migratedClientMsgId([
+                    'legacy', normalizedCharId, sessionId, context, msg.role, String(index), hashCupidLogText(content)
+                ])
+            });
         }
+    }
+
+    let parsedSave = null;
+    const saveRaw = localStorage.getItem('cupid_save');
+    if (saveRaw) {
+        try {
+            parsedSave = JSON.parse(saveRaw);
+        } catch (e) {
+            console.warn('[Migrate] cupid_save 파싱 실패:', e.message);
+            reportCupidCaughtError(e, {
+                source: 'cupid-migration',
+                errorType: 'migration_save_parse_failed',
+                context: { storageKey: 'cupid_save', savedLength: saveRaw.length }
+            });
+        }
+    }
+
+    // v1 플래그가 이미 있어도 그룹 턴은 매 로드마다 결정적 clientMsgId로 재확인한다.
+    // D1에는 upsert되므로 중복되지 않으며, 과거 배포에서 빠진 그룹 로그도 복구된다.
+    try {
+        const groupMemories = parsedSave?.gameState?.groupConversationMemories;
+        if (Array.isArray(groupMemories)) {
+            for (let turnIndex = 0; turnIndex < groupMemories.length; turnIndex++) {
+                const memory = groupMemories[turnIndex];
+                if (!memory || typeof memory !== 'object') continue;
+                const participants = Array.isArray(memory.participants)
+                    ? memory.participants.map(item => String(item?.id || item || '')).filter(Boolean)
+                    : [];
+                if (participants.length < 2) continue;
+                const sessionId = String(memory.sessionId || 'migrated-group');
+                const turnId = String(memory.turnId || `${sessionId}-${turnIndex}`);
+                const conversationDay = normalizeCupidConversationDay(memory.day);
+                const groupJoinIndices = Object.fromEntries(participants.map((id, index) => [id, index]));
+                const groupPairId = `cupid:${participants.join(':')}`;
+                const shared = {
+                    charId: 'group',
+                    sessionId,
+                    context: 'group',
+                    conversationDay,
+                    playerName: String(memory.playerName || ''),
+                    groupParticipants: participants,
+                    groupJoinIndices,
+                    groupPairId
+                };
+                if (String(memory.userContent || '').trim()) {
+                    await postOne({
+                        ...shared,
+                        role: 'user',
+                        content: memory.userContent,
+                        speakerId: '__player__',
+                        clientMsgId: migratedClientMsgId(['group', turnId, 'user', hashCupidLogText(memory.userContent)])
+                    });
+                }
+                const assistantMessages = Array.isArray(memory.assistantMessages) ? memory.assistantMessages : [];
+                for (let messageIndex = 0; messageIndex < assistantMessages.length; messageIndex++) {
+                    const message = assistantMessages[messageIndex];
+                    const speakerId = String(message?.speakerId || '');
+                    if (!participants.includes(speakerId) || !String(message?.content || '').trim()) continue;
+                    await postOne({
+                        ...shared,
+                        role: 'assistant',
+                        content: message.content,
+                        speakerId,
+                        affinityChange: message.affinityChange,
+                        affinityCurrent: message.affinityCurrent,
+                        clientMsgId: migratedClientMsgId([
+                            'group', turnId, 'assistant', speakerId, String(messageIndex), hashCupidLogText(message.content)
+                        ])
+                    });
+                }
+            }
+        }
+    } catch (e) {
+        console.warn('[Migrate] 그룹 대화 복구 오류:', e.message);
+        reportCupidCaughtError(e, {
+            source: 'cupid-migration',
+            errorType: 'migration_group_recovery_failed'
+        });
+    }
+
+    if (localStorage.getItem(FLAG)) {
+        if (totalSaved > 0) console.info(`[Migrate] cupid 그룹 대화 ${totalSaved}건 D1 복구 확인 완료`);
+        return;
     }
 
     try {
         // 1. 본편 cupid_save
-        const saveRaw = localStorage.getItem('cupid_save');
-        if (saveRaw) {
-            try {
-                const save = JSON.parse(saveRaw);
-                const memories = save?.gameState?.chatMemories || {};
-                for (const charName of Object.keys(memories)) {
-                    await migrateChatArray(charName, memories[charName], 'migrated-main', '1:1');
-                }
-            } catch (e) {
-                console.warn('[Migrate] cupid_save 파싱 실패:', e.message);
-                reportCupidCaughtError(e, {
-                    source: 'cupid-migration',
-                    errorType: 'migration_save_parse_failed',
-                    context: { storageKey: 'cupid_save', savedLength: saveRaw.length }
-                });
+        if (parsedSave) {
+            const memories = parsedSave?.gameState?.chatMemories || {};
+            for (const charName of Object.keys(memories)) {
+                await migrateChatArray(charName, memories[charName], 'migrated-main', '1:1');
             }
         }
 
         // 2. Gallery cupid_freetalk_memory
         const gftRaw = localStorage.getItem('cupid_freetalk_memory');
         if (gftRaw) {
-            try {
-                const gft = JSON.parse(gftRaw);
-                for (const charId of Object.keys(gft)) {
-                    await migrateChatArray(charId, gft[charId], 'migrated-gallery', '1:1');
-                }
-            } catch (e) {
-                console.warn('[Migrate] cupid_freetalk_memory 파싱 실패:', e.message);
-                reportCupidCaughtError(e, {
-                    source: 'cupid-migration',
-                    errorType: 'migration_gallery_memory_parse_failed',
-                    context: { storageKey: 'cupid_freetalk_memory', savedLength: gftRaw.length }
-                });
+            const gft = JSON.parse(gftRaw);
+            for (const charId of Object.keys(gft)) {
+                await migrateChatArray(charId, gft[charId], 'migrated-gallery', '1:1');
             }
         }
 
@@ -641,6 +758,7 @@ function makeCupidChatLogEntry({
     groupParticipants = null,
     groupJoinIndices = null,
     groupPairId = '',
+    conversationDay = null,
     affinityChange = null,
     affinityCurrent = null,
     clientMsgId = ''
@@ -666,6 +784,8 @@ function makeCupidChatLogEntry({
     }
     if (groupJoinIndices && typeof groupJoinIndices === 'object') entry.groupJoinIndices = groupJoinIndices;
     if (groupPairId) entry.groupPairId = String(groupPairId);
+    const normalizedConversationDay = normalizeCupidConversationDay(conversationDay);
+    if (normalizedConversationDay !== null) entry.conversationDay = normalizedConversationDay;
     const normalizedAffinityChange = normalizeCupidChatLogAffinity(affinityChange);
     const normalizedAffinityCurrent = normalizeCupidChatLogAffinity(affinityCurrent);
     if (normalizedAffinityChange !== null) entry.affinityChange = normalizedAffinityChange;
@@ -713,6 +833,18 @@ async function flushCupidChatLogQueue() {
             } catch (error) {
                 if (isTransientCupidChatLogError(error)) {
                     console.warn('[ChatLog] cupid pending queue retained:', error.message);
+                    logCupidError(error, {
+                        source: 'flushCupidChatLogQueue',
+                        errorType: 'chat_log_queue_transient_failure',
+                        sessionId: entry.sessionId,
+                        context: {
+                            charId: entry.charId,
+                            role: entry.role,
+                            logContext: entry.context,
+                            conversationDay: entry.conversationDay ?? null
+                        },
+                        extra: { clientMsgId: entry.clientMsgId }
+                    });
                     break;
                 }
                 writeCupidChatLogQueue(queue.slice(1));
@@ -866,6 +998,17 @@ async function postCupidChatRenderAck(entry, receipt = {}) {
         return true;
     } catch (error) {
         console.warn('[ChatLog] cupid render acknowledgement could not be persisted:', error?.message || error);
+        logCupidError(error, {
+            source: 'postCupidChatRenderAck',
+            errorType: 'chat_render_ack_save_failed',
+            sessionId: entry.sessionId,
+            context: {
+                charId: entry.charId,
+                logContext: entry.context,
+                conversationDay: entry.conversationDay ?? null
+            },
+            extra: { clientMsgId: entry.clientMsgId }
+        });
         return false;
     }
 }
@@ -879,6 +1022,7 @@ async function saveCupidChatLog({
     context = '1:1',
     playerName: _pn,
     assistantRenderReceipt = null,
+    conversationDay = getCurrentCupidConversationDay(),
     affinityChange = null,
     affinityCurrent = null
 }) {
@@ -890,7 +1034,8 @@ async function saveCupidChatLog({
         context,
         playerName: _pn || window.gameEngine?.stateManager?.playerName || '',
         language: getCupidLanguage(),
-        appId: getCupidAppId()
+        appId: getCupidAppId(),
+        conversationDay
     };
     const queueAndFlush = async (role, content, affinity = {}) => {
         const entry = makeCupidChatLogEntry({ ...shared, role, content, ...affinity });
@@ -902,14 +1047,14 @@ async function saveCupidChatLog({
         try {
             await postCupidChatLogEntry(entry);
         } catch (error) {
-            if (!isTransientCupidChatLogError(error)) {
-                logCupidError(error, {
-                    source: 'saveCupidChatLog',
-                    errorType: 'chat_log_direct_rejected',
-                    sessionId,
-                    context: { charId, role, logContext: context }
-                });
-            }
+            logCupidError(error, {
+                source: 'saveCupidChatLog',
+                errorType: isTransientCupidChatLogError(error)
+                    ? 'chat_log_direct_transient_failure'
+                    : 'chat_log_direct_rejected',
+                sessionId,
+                context: { charId, role, logContext: context, conversationDay }
+            });
         }
         return entry;
     };
@@ -938,7 +1083,8 @@ async function saveCupidGroupChatLog({
     assistantMessages = [],
     participants = [],
     sessionId = '',
-    playerName: _pn = ''
+    playerName: _pn = '',
+    conversationDay = getCurrentCupidConversationDay()
 }) {
     const participantIds = participants.map(item => String(item?.id || item || '')).filter(Boolean);
     if (participantIds.length < 2) return;
@@ -953,7 +1099,8 @@ async function saveCupidGroupChatLog({
         appId: getCupidAppId(),
         groupParticipants: participantIds,
         groupJoinIndices,
-        groupPairId: `cupid:${participantIds.join(':')}`
+        groupPairId: `cupid:${participantIds.join(':')}`,
+        conversationDay
     };
     const queueAndFlush = async (role, content, details = {}) => {
         if (!String(content || '').trim()) return null;
@@ -966,14 +1113,20 @@ async function saveCupidGroupChatLog({
         try {
             await postCupidChatLogEntry(entry);
         } catch (error) {
-            if (!isTransientCupidChatLogError(error)) {
-                logCupidError(error, {
-                    source: 'saveCupidGroupChatLog',
-                    errorType: 'group_chat_log_direct_rejected',
-                    sessionId,
-                    context: { charId: 'group', role, speakerId: details.speakerId || '', logContext: 'group' }
-                });
-            }
+            logCupidError(error, {
+                source: 'saveCupidGroupChatLog',
+                errorType: isTransientCupidChatLogError(error)
+                    ? 'group_chat_log_direct_transient_failure'
+                    : 'group_chat_log_direct_rejected',
+                sessionId,
+                context: {
+                    charId: 'group',
+                    role,
+                    speakerId: details.speakerId || '',
+                    logContext: 'group',
+                    conversationDay
+                }
+            });
         }
         return entry;
     };
