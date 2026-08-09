@@ -309,8 +309,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "hidden_perfect_homeroom_check": {
         "background": "assets/images/background/room_school.png",
         "affinityChar": "Teacher",
-        "affinityBranches": [{"minAffinity":80,"next":"hidden_perfect_homeroom_1"},{"minAffinity":60,"next":"hidden_true_homeroom_1"},{"minAffinity":-100,"next":"hidden_good_homeroom_1"}],
-        "next": "hidden_good_homeroom_1"
+        "affinityBranches": [{"minAffinity":80,"next":"hidden_perfect_homeroom_1"},{"minAffinity":60,"next":"hidden_true_homeroom_1"},{"minAffinity":40,"next":"hidden_good_homeroom_1"},{"minAffinity":-100,"next":"hidden_bitter_homeroom_1"}],
+        "next": "hidden_bitter_homeroom_1"
     },
     "hidden_perfect_homeroom_1": {
         "background": "assets/images/background/room_school.png",
@@ -584,11 +584,49 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": null,
         "next": "day5_teacher_ending_freetalk_intro"
     },
+    "hidden_bitter_homeroom_1": {
+        "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "empty",
+        "character": "assets/images/characters/teacher_normal.png",
+        "bgm": "night2.mp3",
+        "setFlags": ["ending_bittersweet"],
+        "next": "hidden_bitter_homeroom_2"
+    },
+    "hidden_bitter_homeroom_2": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_bitter_homeroom_3"
+    },
+    "hidden_bitter_homeroom_3": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_sad.png",
+        "next": "hidden_bitter_homeroom_4"
+    },
+    "hidden_bitter_homeroom_4": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_bitter_homeroom_5"
+    },
+    "hidden_bitter_homeroom_5": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_sad.png",
+        "next": "hidden_bitter_homeroom_6"
+    },
+    "hidden_bitter_homeroom_6": {
+        "background": "assets/images/background/ending_good_teacher.png",
+        "character": null,
+        "next": "hidden_bitter_homeroom_ending_title"
+    },
+    "hidden_bitter_homeroom_ending_title": {
+        "background": "assets/images/background/ending_good_teacher.png",
+        "character": null,
+        "next": "day5_teacher_ending_freetalk_intro"
+    },
     "hidden_perfect_nurse_check": {
         "background": "assets/images/background/nurse_room.png",
         "affinityChar": "Nurse",
-        "affinityBranches": [{"minAffinity":80,"next":"hidden_perfect_nurse_1"},{"minAffinity":60,"next":"hidden_true_nurse_1"},{"minAffinity":-100,"next":"hidden_good_nurse_1"}],
-        "next": "hidden_good_nurse_1"
+        "affinityBranches": [{"minAffinity":80,"next":"hidden_perfect_nurse_1"},{"minAffinity":60,"next":"hidden_true_nurse_1"},{"minAffinity":40,"next":"hidden_good_nurse_1"},{"minAffinity":-100,"next":"hidden_bitter_nurse_1"}],
+        "next": "hidden_bitter_nurse_1"
     },
     "hidden_perfect_nurse_1": {
         "background": "assets/images/background/street.png",
@@ -842,6 +880,48 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "hidden_good_nurse_ending_title"
     },
     "hidden_good_nurse_ending_title": {
+        "background": "assets/images/background/ending_good_nurse.png",
+        "character": null,
+        "next": "day5_nurse_ending_freetalk_intro"
+    },
+    "hidden_bitter_nurse_1": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "bgm": "night2.mp3",
+        "setFlags": ["ending_bittersweet"],
+        "next": "hidden_bitter_nurse_2"
+    },
+    "hidden_bitter_nurse_2": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_bitter_nurse_3"
+    },
+    "hidden_bitter_nurse_3": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_bitter_nurse_4"
+    },
+    "hidden_bitter_nurse_4": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_bitter_nurse_5"
+    },
+    "hidden_bitter_nurse_5": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_bitter_nurse_6"
+    },
+    "hidden_bitter_nurse_6": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_bitter_nurse_7"
+    },
+    "hidden_bitter_nurse_7": {
+        "background": "assets/images/background/ending_good_nurse.png",
+        "character": null,
+        "next": "hidden_bitter_nurse_ending_title"
+    },
+    "hidden_bitter_nurse_ending_title": {
         "background": "assets/images/background/ending_good_nurse.png",
         "character": null,
         "next": "day5_nurse_ending_freetalk_intro"
@@ -1790,6 +1870,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "branches": [
             { "condition": "ending_perfect", "next": "day5_teacher_ending_freetalk_perfect" },
             { "condition": "ending_true_love", "next": "day5_teacher_ending_freetalk_true_love" },
+            { "condition": "ending_bittersweet", "next": "day5_teacher_ending_freetalk_bittersweet" },
             { "next": "day5_teacher_ending_freetalk_good" }
         ]
     },
@@ -1814,6 +1895,14 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "maxTurns": 5,
         "next": "day5_credits"
     },
+    "day5_teacher_ending_freetalk_bittersweet": {
+        "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "empty",
+        "character": "assets/images/characters/teacher_sad.png",
+        "type": "free_talk",
+        "maxTurns": 5,
+        "next": "day5_credits"
+    },
     "day5_nurse_ending_freetalk_intro": {
         "background": "assets/images/background/nurse_house.png",
         "character": "assets/images/characters/nurse_normal.png",
@@ -1827,6 +1916,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "branches": [
             { "condition": "ending_perfect", "next": "day5_nurse_ending_freetalk_perfect" },
             { "condition": "ending_true_love", "next": "day5_nurse_ending_freetalk_true_love" },
+            { "condition": "ending_bittersweet", "next": "day5_nurse_ending_freetalk_bittersweet" },
             { "next": "day5_nurse_ending_freetalk_good" }
         ]
     },
@@ -1845,6 +1935,13 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "day5_credits"
     },
     "day5_nurse_ending_freetalk_good": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "type": "free_talk",
+        "maxTurns": 5,
+        "next": "day5_credits"
+    },
+    "day5_nurse_ending_freetalk_bittersweet": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "type": "free_talk",

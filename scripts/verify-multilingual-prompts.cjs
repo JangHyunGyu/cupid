@@ -148,9 +148,11 @@ const day5EndingFreeTalkIds = [
     'day5_teacher_ending_freetalk_perfect',
     'day5_teacher_ending_freetalk_true_love',
     'day5_teacher_ending_freetalk_good',
+    'day5_teacher_ending_freetalk_bittersweet',
     'day5_nurse_ending_freetalk_perfect',
     'day5_nurse_ending_freetalk_true_love',
-    'day5_nurse_ending_freetalk_good'
+    'day5_nurse_ending_freetalk_good',
+    'day5_nurse_ending_freetalk_bittersweet'
 ];
 const activeFreeTalkIds = [
     'lunch_seo_freetalk',

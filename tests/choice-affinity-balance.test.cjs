@@ -306,6 +306,27 @@ test('optimal authored routes give every character the same 80-point choice budg
     }
 });
 
+test('all five character routes share the 80/60/40/bittersweet ending tiers', () => {
+    const routeChecks = [
+        ['ending_aff_check_seo', 'Seoyeon', ['perfect_seo_1', 'true_seo_1', 'day5_ending_good', 'bitter_seo_1']],
+        ['ending_aff_check_yuna', 'Yuna', ['perfect_yuna_1', 'true_yuna_1', 'day5_ending_good', 'bitter_yuna_1']],
+        ['ending_aff_check_dain', 'Dain', ['perfect_dain_1', 'true_dain_1', 'day5_ending_good', 'bitter_dain_1']],
+        ['hidden_perfect_homeroom_check', 'Teacher', ['hidden_perfect_homeroom_1', 'hidden_true_homeroom_1', 'hidden_good_homeroom_1', 'hidden_bitter_homeroom_1']],
+        ['hidden_perfect_nurse_check', 'Nurse', ['hidden_perfect_nurse_1', 'hidden_true_nurse_1', 'hidden_good_nurse_1', 'hidden_bitter_nurse_1']]
+    ];
+
+    for (const [sceneId, character, targets] of routeChecks) {
+        const scene = scenes[sceneId];
+        assert.equal(scene?.affinityChar, character, `${sceneId} must evaluate ${character}`);
+        assert.deepEqual(
+            scene.affinityBranches.map(branch => [branch.minAffinity, branch.next]),
+            [[80, targets[0]], [60, targets[1]], [40, targets[2]], [-100, targets[3]]],
+            `${sceneId} ending thresholds drifted`
+        );
+        assert.equal(scene.next, targets[3], `${sceneId} must default to the bittersweet route`);
+    }
+});
+
 test('ranked rival routing uses the live second-highest affinity with deterministic ties', () => {
     const affinities = { Seoyeon: 80, Dain: 50, Yuna: 70 };
     const renderer = createSceneRenderer(affinities);

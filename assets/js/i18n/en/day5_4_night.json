@@ -228,6 +228,34 @@
         "name": "",
         "text": "─── Homeroom Teacher GOOD END ───"
     },
+    "hidden_bitter_homeroom_1": {
+        "name": "Homeroom Teacher",
+        "text": "*After the graduation ceremony, she reads the letter {name} handed her in the empty classroom, then carefully sets it on the desk.* I can't keep this."
+    },
+    "hidden_bitter_homeroom_2": {
+        "name": "{name}",
+        "text": "*The letter comes back with its corners smoothed flat. A question follows: did all the manuscript reading and late counseling sessions mean something more?*"
+    },
+    "hidden_bitter_homeroom_3": {
+        "name": "Homeroom Teacher",
+        "text": "I believed in your writing, and I did care about you as my student. But I can't answer you in the way you want."
+    },
+    "hidden_bitter_homeroom_4": {
+        "name": "{name}",
+        "text": "*She places the letter on top of the recommendation envelope and returns both. The classroom door stands open to the hall.*"
+    },
+    "hidden_bitter_homeroom_5": {
+        "name": "Homeroom Teacher",
+        "text": "Congratulations on graduating. I do wonder what you'll write next, but I can't promise to be there beside you."
+    },
+    "hidden_bitter_homeroom_6": {
+        "name": "{name}",
+        "text": "*The letter and recommendation are gathered up before the classroom is left behind without a backward glance. No voice calls from behind.*"
+    },
+    "hidden_bitter_homeroom_ending_title": {
+        "name": "",
+        "text": "─── Homeroom Teacher BITTERSWEET END ───"
+    },
     "hidden_perfect_nurse_check": {},
     "hidden_perfect_nurse_1": {
         "name": "{name}",
@@ -428,6 +456,38 @@
     "hidden_good_nurse_ending_title": {
         "name": "",
         "text": "─── School Nurse GOOD END ───"
+    },
+    "hidden_bitter_nurse_1": {
+        "name": "{name}",
+        "text": "*After the graduation ceremony, the nurse's office is visited one last time. The green health record is handed over with a note bearing contact information tucked underneath.*"
+    },
+    "hidden_bitter_nurse_2": {
+        "name": "School Nurse",
+        "text": "*Juwon reads the note in silence. Then she folds it neatly along the crease and slides it back.* I shouldn't accept this."
+    },
+    "hidden_bitter_nurse_3": {
+        "name": "{name}",
+        "text": "Was I a nuisance, coming here so often?"
+    },
+    "hidden_bitter_nurse_4": {
+        "name": "School Nurse",
+        "text": "You were never a nuisance. That's why I can't leave you confused. I looked after you because you were a student and you were hurt."
+    },
+    "hidden_bitter_nurse_5": {
+        "name": "{name}",
+        "text": "*Juwon writes ‘Graduation, counseling concluded’ on the final line of the green record. She places the note with the contact information on top.*"
+    },
+    "hidden_bitter_nurse_6": {
+        "name": "School Nurse",
+        "text": "The best ending is that you don't need to come here anymore. Take care."
+    },
+    "hidden_bitter_nurse_7": {
+        "name": "{name}",
+        "text": "*The note and record are collected, then the infirmary door closes. From inside comes only the sound of a coffee cup settling back onto its saucer.*"
+    },
+    "hidden_bitter_nurse_ending_title": {
+        "name": "",
+        "text": "─── School Nurse BITTERSWEET END ───"
     },
     "ending_affinity_check": {
         "name": "System",
@@ -1350,6 +1410,12 @@
         "context": "Bonus conversation just after the Homeroom Teacher’s GOOD END graduation farewell. She gave the recommendation and club records, and teacher and graduate parted to continue their own work. No adult reunion or romance occurred; keep this non-romantic teacher-student boundary.",
         "personality": "She warmly and responsibly sees a graduating student off. She listens to final questions about writing, school, and the future without turning regret into flirtation or crossing professional boundaries."
     },
+    "day5_teacher_ending_freetalk_bittersweet": {
+        "name": "Homeroom Teacher",
+        "text": "*She takes her hand from the returned letter and looks toward the open classroom door.* I'll hear your last goodbye. I still can't give you the answer you hoped for.",
+        "context": "Bonus conversation just after the Homeroom Teacher’s BITTERSWEET END. The protagonist mistook manuscript guidance and attention for personal affection and confessed in a letter. She returned it and clearly restored the teacher-student boundary. No adult reunion or romance occurred; do not reverse the rejection or create a secret relationship.",
+        "personality": "She does not leave false hope out of guilt. She hears the student's feelings without ridicule, but firmly separates encouragement about writing from any personal promise and says goodbye responsibly."
+    },
     "day5_nurse_ending_freetalk_router": {
         "name": "{name}",
         "text": ""
@@ -1371,5 +1437,11 @@
         "text": "*She writes “Graduation, all clear” in the green notebook and closes it.* Your treatment ends today. I’ll take my time hearing your graduation goodbye.",
         "context": "Bonus conversation just after the School Nurse’s GOOD END graduation farewell. Juwon formally closed the final infirmary visit and offered neither contact information nor a private relationship. No adult reunion or romance occurred; keep this non-romantic nurse-student boundary.",
         "personality": "Juwon is a practical, caring school nurse who hears the final goodbye while keeping professional limits clear. She supports the graduate’s health and independence without creating dependency or secrecy."
+    },
+    "day5_nurse_ending_freetalk_bittersweet": {
+        "name": "School Nurse",
+        "text": "*She places the returned note on the green health record.* If you still have something hurt or angry to say, I'll listen. My answer won't change.",
+        "context": "Bonus conversation just after the School Nurse’s BITTERSWEET END. The protagonist mistook care received in the infirmary for personal affection and offered contact information. Juwon returned the note and ended the counseling relationship. No adult reunion or romance occurred; do not reverse the rejection or create dependency or secrecy.",
+        "personality": "Juwon is practical and caring, but she does not soften the answer into false hope. She hears the hurt and the goodbye while plainly stating that professional care was not a romantic signal."
     }
 }

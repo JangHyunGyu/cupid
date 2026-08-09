@@ -228,6 +228,34 @@
         "name": "",
         "text": "─── Profesora GOOD END ───"
     },
+    "hidden_bitter_homeroom_1": {
+        "name": "Profesora",
+        "text": "*Después de la ceremonia de graduación, lee en el aula vacía la carta que le entregó {name} y la deja con cuidado sobre el escritorio.* No puedo quedarme con esto."
+    },
+    "hidden_bitter_homeroom_2": {
+        "name": "{name}",
+        "text": "*La carta regresa con las esquinas bien alisadas. Queda una pregunta: ¿leer los manuscritos y aquellas consultas hasta tarde no significaron algo más?*"
+    },
+    "hidden_bitter_homeroom_3": {
+        "name": "Profesora",
+        "text": "Confié en lo que escribías y te tuve cariño como estudiante. Eso es verdad. Pero no puedo darte la respuesta que esperas."
+    },
+    "hidden_bitter_homeroom_4": {
+        "name": "{name}",
+        "text": "*Coloca la carta sobre el sobre de recomendación y devuelve ambos. La puerta del aula permanece abierta hacia el pasillo.*"
+    },
+    "hidden_bitter_homeroom_5": {
+        "name": "Profesora",
+        "text": "Felicidades por graduarte. Me interesa saber qué escribirás después, pero no puedo prometer estar a tu lado."
+    },
+    "hidden_bitter_homeroom_6": {
+        "name": "{name}",
+        "text": "*Recoge la carta y la recomendación y sale del aula sin mirar atrás. Nadie pronuncia su nombre a sus espaldas.*"
+    },
+    "hidden_bitter_homeroom_ending_title": {
+        "name": "",
+        "text": "─── Profesora BITTERSWEET END ───"
+    },
     "hidden_perfect_nurse_check": {},
     "hidden_perfect_nurse_1": {
         "name": "{name}",
@@ -428,6 +456,38 @@
     "hidden_good_nurse_ending_title": {
         "name": "",
         "text": "─── Enfermera GOOD END ───"
+    },
+    "hidden_bitter_nurse_1": {
+        "name": "{name}",
+        "text": "*Después de la ceremonia de graduación, visita por última vez la enfermería y entrega la tarjeta verde de salud con una nota de contacto debajo.*"
+    },
+    "hidden_bitter_nurse_2": {
+        "name": "Enfermera",
+        "text": "*Juwon lee la nota en silencio. Después la dobla con cuidado por el mismo pliegue y la devuelve.* No debería aceptar esto."
+    },
+    "hidden_bitter_nurse_3": {
+        "name": "{name}",
+        "text": "¿Le molestaba que viniera tan seguido?"
+    },
+    "hidden_bitter_nurse_4": {
+        "name": "Enfermera",
+        "text": "Nunca fuiste una molestia. Precisamente por eso no puedo dejar que te confundas. Te cuidé porque eras estudiante y estabas herido."
+    },
+    "hidden_bitter_nurse_5": {
+        "name": "{name}",
+        "text": "*Juwon escribe «Graduación, fin de las consultas» en la última línea de la tarjeta verde. Deja encima la nota con el contacto.*"
+    },
+    "hidden_bitter_nurse_6": {
+        "name": "Enfermera",
+        "text": "El mejor final es que ya no necesites venir aquí. Cuídate."
+    },
+    "hidden_bitter_nurse_7": {
+        "name": "{name}",
+        "text": "*Recoge la nota y la tarjeta y cierra la puerta de la enfermería. Dentro solo se oye una taza de café al posarse de nuevo en su plato.*"
+    },
+    "hidden_bitter_nurse_ending_title": {
+        "name": "",
+        "text": "─── Enfermera BITTERSWEET END ───"
     },
     "ending_affinity_check": {
         "name": "Sistema",
@@ -1350,6 +1410,12 @@
         "context": "Conversación extra inmediatamente después de la ceremonia de graduación del GOOD END de la profesora. Ella entregó la carta de recomendación y los registros del club de literatura, y ambos se despiden como profesora y estudiante graduado, decididos a continuar cada uno con sus propios escritos y su propia vida. No hubo reencuentro en la adultez ni romance; tampoco crees aquí un romance entre una profesora y un estudiante menor de edad.",
         "personality": "Como profesora, despide al estudiante graduado con calidez y responsabilidad. En lugar de insinuar sentimientos personales o tentarlo, escucha con seriedad sus últimas palabras sobre la vocación, la escritura y la vida escolar, y mantiene límites claros."
     },
+    "day5_teacher_ending_freetalk_bittersweet": {
+        "name": "Profesora",
+        "text": "*Aparta la mano de la carta devuelta y mira la puerta abierta del aula.* Escucharé tu despedida. Pero no puedo darte la respuesta que esperabas.",
+        "context": "Conversación extra justo después del BITTERSWEET END de la profesora. El protagonista confundió la orientación sobre sus manuscritos y la atención recibida con afecto personal y confesó sus sentimientos en una carta. Ella la devolvió y restableció con claridad el límite entre profesora y estudiante. No hubo reencuentro adulto ni romance; no reviertas el rechazo ni crees una relación secreta.",
+        "personality": "No deja falsas esperanzas por culpa. Escucha los sentimientos del estudiante sin burlarse, pero separa con firmeza el apoyo a su escritura de cualquier promesa personal y se despide con responsabilidad."
+    },
     "day5_nurse_ending_freetalk_router": {
         "name": "{name}",
         "text": ""
@@ -1371,5 +1437,11 @@
         "text": "*Escribe «Graduación, sin incidencias» en el cuaderno verde claro y lo cierra.* A partir de hoy terminan las consultas. Escucharé con calma tu despedida antes de dejarte ir.",
         "context": "Conversación extra inmediatamente después de la ceremonia de graduación del GOOD END de la enfermera. Juwon cerró oficialmente la última visita a la enfermería y se despidió como docente del estudiante graduado, sin entregarle información de contacto ni vendas. No hubo reencuentro en la adultez ni romance; tampoco crees aquí un romance entre una enfermera escolar y un estudiante menor de edad.",
         "personality": "Como enfermera escolar práctica y cariñosa, Juwon escucha la despedida final sin dejar de mantener límites profesionales claros. Se preocupa por la salud y la vida futura del estudiante, pero no crea dependencia ni una relación secreta, y alienta su independencia tras la graduación."
+    },
+    "day5_nurse_ending_freetalk_bittersweet": {
+        "name": "Enfermera",
+        "text": "*Deja la nota devuelta sobre la tarjeta verde de salud.* Si aún te queda algo doloroso o enfadado que decir, te escucharé. Mi respuesta no va a cambiar.",
+        "context": "Conversación extra justo después del BITTERSWEET END de la enfermera. El protagonista confundió los cuidados de la enfermería con afecto personal y entregó sus datos de contacto. Juwon devolvió la nota y cerró la relación de consulta. No hubo reencuentro adulto ni romance; no reviertas el rechazo ni crees dependencia o secretos.",
+        "personality": "Juwon es práctica y cariñosa, pero no convierte su respuesta en falsas esperanzas. Escucha el dolor y la despedida mientras deja claro que los cuidados profesionales no fueron una señal romántica."
     }
 }

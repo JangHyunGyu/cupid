@@ -21414,8 +21414,9 @@
 - 호감분기: Teacher
   - [80+] → `hidden_perfect_homeroom_1`
   - [60+] → `hidden_true_homeroom_1`
-  - [기본] → `hidden_good_homeroom_1`
-- 다음: `hidden_good_homeroom_1`
+  - [40+] → `hidden_good_homeroom_1`
+  - [기본] → `hidden_bitter_homeroom_1`
+- 다음: `hidden_bitter_homeroom_1`
 
 <!-- i18n -->
 
@@ -21905,6 +21906,72 @@
 
 ---
 
+### `hidden_bitter_homeroom_1`
+- 배경: `room_school.png`
+- 배경톤: `empty`
+- BGM: `night2.mp3`
+- 플래그: `ending_bittersweet`
+- 다음: `hidden_bitter_homeroom_2`
+
+- 캐릭터: `teacher_normal.png`
+**담임선생님**: *졸업식이 끝난 뒤, 빈 교실에서 {name}이 건넨 편지를 읽다가 책상 위에 조심스레 내려놓는다.* 이건 내가 받아 둘 수 없어.
+
+---
+
+### `hidden_bitter_homeroom_2`
+- 배경: `room_school.png`
+- 다음: `hidden_bitter_homeroom_3`
+
+- 캐릭터: `teacher_normal.png`
+**{name}**: *편지 모서리가 반듯하게 펴진 채 다시 돌아온다. 원고를 읽어 준 일과 늦은 상담들이 다른 뜻은 아니었냐고 묻는다.*
+
+---
+
+### `hidden_bitter_homeroom_3`
+- 배경: `room_school.png`
+- 다음: `hidden_bitter_homeroom_4`
+
+- 캐릭터: `teacher_sad.png`
+**담임선생님**: 네 글을 믿었고 학생으로서 아낀 건 맞아. 하지만 네가 바라는 답으로 돌려주면 안 돼.
+
+---
+
+### `hidden_bitter_homeroom_4`
+- 배경: `room_school.png`
+- 다음: `hidden_bitter_homeroom_5`
+
+- 캐릭터: `teacher_normal.png`
+**{name}**: *담임은 추천서 봉투 위에 편지를 올려 돌려준다. 교실 문은 복도를 향해 열려 있다.*
+
+---
+
+### `hidden_bitter_homeroom_5`
+- 배경: `room_school.png`
+- 다음: `hidden_bitter_homeroom_6`
+
+- 캐릭터: `teacher_sad.png`
+**담임선생님**: 졸업을 축하해. 앞으로 네가 쓸 글은 궁금해도, 그 옆자리를 약속할 수는 없어.
+
+---
+
+### `hidden_bitter_homeroom_6`
+- 배경: `ending_good_teacher.png`
+- 다음: `hidden_bitter_homeroom_ending_title`
+
+- 캐릭터: `없음`
+**{name}**: *편지와 추천서를 함께 챙겨 교실을 나선다. 돌아보지 않았고 뒤에서도 이름을 부르는 소리는 들리지 않는다.*
+
+---
+
+### `hidden_bitter_homeroom_ending_title`
+- 배경: `ending_good_teacher.png`
+- 다음: `day5_teacher_ending_freetalk_intro`
+
+- 캐릭터: `없음`
+**—**: ─── 담임선생님 BITTERSWEET END ───
+
+---
+
 ### `day5_teacher_ending_freetalk_intro`
 - 배경: `cafe.png`
 - 다음: `day5_teacher_ending_freetalk_router`
@@ -21919,6 +21986,7 @@
 - 분기:
   - [`ending_perfect`] → `day5_teacher_ending_freetalk_perfect`
   - [`ending_true_love`] → `day5_teacher_ending_freetalk_true_love`
+  - [`ending_bittersweet`] → `day5_teacher_ending_freetalk_bittersweet`
   - [기본] → `day5_teacher_ending_freetalk_good`
 
 - 캐릭터: `없음`
@@ -21962,13 +22030,27 @@
 
 ---
 
+### `day5_teacher_ending_freetalk_bittersweet`
+- 배경: `room_school.png`
+- 배경톤: `empty`
+- 타입: `free_talk`
+- 다음: `day5_credits`
+- 컨텍스트: "담임선생님 BITTERSWEET END의 졸업식 직후 보너스 대화다. 주인공은 원고 상담과 관심을 개인적인 호감으로 받아들여 편지로 마음을 전했지만 담임은 편지를 돌려주고 교사와 학생의 경계를 분명히 했다. 성인 재회나 연애는 없으며 이 대화에서도 거절을 번복하거나 비밀 관계를 만들지 않는다."
+- 성격: "담임은 미안함 때문에 여지를 주지 않는다. 학생의 감정을 비웃지 않고 차분히 듣되 글을 향한 격려와 개인적인 약속을 분리해 단호하고 책임감 있게 작별한다."
+
+- 캐릭터: `teacher_sad.png`
+**담임선생님**: *책상 위에 돌려놓은 편지에서 손을 떼고 열린 교실 문을 바라본다.* 마지막 인사는 들을게. 다만 네가 기대한 답을 줄 수는 없어.
+
+---
+
 ### `hidden_perfect_nurse_check`
 - 배경: `nurse_room.png`
 - 호감분기: Nurse
   - [80+] → `hidden_perfect_nurse_1`
   - [60+] → `hidden_true_nurse_1`
-  - [기본] → `hidden_good_nurse_1`
-- 다음: `hidden_good_nurse_1`
+  - [40+] → `hidden_good_nurse_1`
+  - [기본] → `hidden_bitter_nurse_1`
+- 다음: `hidden_bitter_nurse_1`
 
 <!-- i18n -->
 
@@ -22430,6 +22512,80 @@
 
 ---
 
+### `hidden_bitter_nurse_1`
+- 배경: `nurse_room.png`
+- BGM: `night2.mp3`
+- 플래그: `ending_bittersweet`
+- 다음: `hidden_bitter_nurse_2`
+
+- 캐릭터: `nurse_normal.png`
+**{name}**: *졸업식이 끝난 뒤, 마지막으로 보건실에 들러 연두색 기록 카드 밑에 연락처를 적은 쪽지를 끼워 건넨다.*
+
+---
+
+### `hidden_bitter_nurse_2`
+- 배경: `nurse_room.png`
+- 다음: `hidden_bitter_nurse_3`
+
+- 캐릭터: `nurse_normal.png`
+**보건선생님**: *주원은 쪽지를 읽고 한동안 말이 없다. 이내 접힌 자국을 따라 반듯하게 접어 돌려준다.* 이건 받으면 안 되겠다.
+
+---
+
+### `hidden_bitter_nurse_3`
+- 배경: `nurse_room.png`
+- 다음: `hidden_bitter_nurse_4`
+
+- 캐릭터: `nurse_normal.png`
+**{name}**: 제가 자주 온 게 귀찮으셨어요?
+
+---
+
+### `hidden_bitter_nurse_4`
+- 배경: `nurse_room.png`
+- 다음: `hidden_bitter_nurse_5`
+
+- 캐릭터: `nurse_normal.png`
+**보건선생님**: 귀찮은 적은 없었어. 그래서 더 헷갈리게 보내면 안 돼. 내가 챙긴 건 네가 학생이었고 아픈 데가 있었기 때문이야.
+
+---
+
+### `hidden_bitter_nurse_5`
+- 배경: `nurse_room.png`
+- 다음: `hidden_bitter_nurse_6`
+
+- 캐릭터: `nurse_normal.png`
+**{name}**: *주원은 연두색 기록 카드 마지막 줄에 ‘졸업, 상담 종료’라고 적는다. 연락처가 적힌 쪽지는 그 위에 놓인다.*
+
+---
+
+### `hidden_bitter_nurse_6`
+- 배경: `nurse_room.png`
+- 다음: `hidden_bitter_nurse_7`
+
+- 캐릭터: `nurse_normal.png`
+**보건선생님**: 이제 여기 오지 않아도 되는 게 제일 좋은 결말이야. 잘 지내.
+
+---
+
+### `hidden_bitter_nurse_7`
+- 배경: `ending_good_nurse.png`
+- 다음: `hidden_bitter_nurse_ending_title`
+
+- 캐릭터: `없음`
+**{name}**: *쪽지와 카드를 챙겨 보건실 문을 닫는다. 안에서는 다시 커피잔이 받침에 놓이는 소리만 난다.*
+
+---
+
+### `hidden_bitter_nurse_ending_title`
+- 배경: `ending_good_nurse.png`
+- 다음: `day5_nurse_ending_freetalk_intro`
+
+- 캐릭터: `없음`
+**—**: ─── 보건선생님 BITTERSWEET END ───
+
+---
+
 ### `day5_nurse_ending_freetalk_intro`
 - 배경: `nurse_house.png`
 - 다음: `day5_nurse_ending_freetalk_router`
@@ -22444,6 +22600,7 @@
 - 분기:
   - [`ending_perfect`] → `day5_nurse_ending_freetalk_perfect`
   - [`ending_true_love`] → `day5_nurse_ending_freetalk_true_love`
+  - [`ending_bittersweet`] → `day5_nurse_ending_freetalk_bittersweet`
   - [기본] → `day5_nurse_ending_freetalk_good`
 
 - 캐릭터: `없음`
@@ -22484,6 +22641,18 @@
 
 - 캐릭터: `nurse_normal.png`
 **보건선생님**: *연두색 노트에 '졸업, 이상 없음'을 적고 덮는다.* 오늘부로 진료는 끝. 졸업 인사는 천천히 듣고 보내 줄게.
+
+---
+
+### `day5_nurse_ending_freetalk_bittersweet`
+- 배경: `nurse_room.png`
+- 타입: `free_talk`
+- 다음: `day5_credits`
+- 컨텍스트: "보건선생님 BITTERSWEET END의 졸업식 직후 보너스 대화다. 주인공은 보건실에서 받은 돌봄을 개인적인 호감으로 받아들여 연락처를 건넸지만 주원은 쪽지를 돌려주고 상담 관계를 끝냈다. 성인 재회나 연애는 없으며 이 대화에서도 거절을 번복하거나 의존과 비밀 관계를 만들지 않는다."
+- 성격: "주원은 현실적이고 다정하지만 애매한 위로로 기대를 남기지 않는다. 서운함과 작별 인사는 들어 주되 돌봄이 연애의 신호는 아니었다는 사실을 솔직하고 분명하게 말한다."
+
+- 캐릭터: `nurse_normal.png`
+**보건선생님**: *돌려준 쪽지를 연두색 기록 카드 위에 놓는다.* 서운한 말이 남았으면 들을게. 그래도 내 답은 바뀌지 않아.
 
 ---
 

@@ -2879,14 +2879,16 @@ const endingTests = [
     { name: '서연 BITTERSWEET', flags: { day4_confession_accepted: true, route_seoyeon: true, met_seoyeon: true }, stats: { Seoyeon: 20 }, expect: ['bitter_epilogue_3'] },
     { name: '유나 BITTERSWEET', flags: { day4_confession_accepted: true, route_yuna: true, met_yuna: true }, stats: { Yuna: 20 }, expect: ['bitter_epilogue_3'] },
     { name: '다인 BITTERSWEET', flags: { day4_confession_accepted: true, route_dain: true, met_dain: true }, stats: { Dain: 20 }, expect: ['bitter_epilogue_3'] },
-    // 담임 3종
+    // 담임 4종
     { name: '담임 PERFECT', flags: { homeroom_day5: true }, stats: { Teacher: 85 }, expect: ['hidden_perfect_homeroom_ep4'] },
     { name: '담임 TRUE LOVE', flags: { homeroom_day5: true }, stats: { Teacher: 70 }, expect: ['hidden_true_homeroom_8'] },
     { name: '담임 GOOD', flags: { homeroom_day5: true }, stats: { Teacher: 40 }, expect: ['hidden_good_homeroom_4'] },
-    // 보건 3종
+    { name: '담임 BITTERSWEET', flags: { homeroom_day5: true }, stats: { Teacher: 20 }, expect: ['hidden_bitter_homeroom_6'] },
+    // 보건 4종
     { name: '보건 PERFECT', flags: { nurse_day5: true }, stats: { Nurse: 85 }, expect: ['hidden_perfect_nurse_ep4'] },
     { name: '보건 TRUE LOVE', flags: { nurse_day5: true }, stats: { Nurse: 70 }, expect: ['hidden_true_nurse_8'] },
     { name: '보건 GOOD', flags: { nurse_day5: true }, stats: { Nurse: 40 }, expect: ['hidden_good_nurse_4'] },
+    { name: '보건 BITTERSWEET', flags: { nurse_day5: true }, stats: { Nurse: 20 }, expect: ['hidden_bitter_nurse_7'] },
     // 특수 엔딩
     { name: 'HAREM END', flags: { ending_harem: true }, stats: {}, expect: ['harem_8'] },
     { name: 'GOOD END (고백 수락)', flags: { day4_confession_accepted: true, route_seoyeon: true, met_seoyeon: true }, stats: { Seoyeon: 50 }, expect: ['good_5_cg_seo'] },

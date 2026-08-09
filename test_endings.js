@@ -269,11 +269,13 @@ const tests = [
 
   { name: 'Hidden Perfect(Teacher)', expected: 'day5_teacher_ending_freetalk_perfect', affinities: { Teacher: 90 }, flags: ['homeroom_day5'], required: ['hidden_perfect_homeroom_1'] },
   { name: 'Hidden True(Teacher)', expected: 'day5_teacher_ending_freetalk_true_love', affinities: { Teacher: 60 }, flags: ['homeroom_day5'], required: ['hidden_true_homeroom_1'] },
-  { name: 'Hidden Good(Teacher)', expected: 'day5_teacher_ending_freetalk_good', affinities: { Teacher: 20 }, flags: ['homeroom_day5'], required: ['hidden_good_homeroom_1'] },
+  { name: 'Hidden Good(Teacher)', expected: 'day5_teacher_ending_freetalk_good', affinities: { Teacher: 40 }, flags: ['homeroom_day5'], required: ['hidden_good_homeroom_1'] },
+  { name: 'Hidden Bittersweet(Teacher)', expected: 'day5_teacher_ending_freetalk_bittersweet', affinities: { Teacher: 20 }, flags: ['homeroom_day5'], required: ['hidden_bitter_homeroom_1'] },
 
   { name: 'Hidden Perfect(Nurse)', expected: 'day5_nurse_ending_freetalk_perfect', affinities: { Nurse: 90 }, flags: ['nurse_day5'], required: ['hidden_perfect_nurse_1'] },
   { name: 'Hidden True(Nurse)', expected: 'day5_nurse_ending_freetalk_true_love', affinities: { Nurse: 60 }, flags: ['nurse_day5'], required: ['hidden_true_nurse_1'] },
-  { name: 'Hidden Good(Nurse)', expected: 'day5_nurse_ending_freetalk_good', affinities: { Nurse: 20 }, flags: ['nurse_day5'], required: ['hidden_good_nurse_1'] }
+  { name: 'Hidden Good(Nurse)', expected: 'day5_nurse_ending_freetalk_good', affinities: { Nurse: 40 }, flags: ['nurse_day5'], required: ['hidden_good_nurse_1'] },
+  { name: 'Hidden Bittersweet(Nurse)', expected: 'day5_nurse_ending_freetalk_bittersweet', affinities: { Nurse: 20 }, flags: ['nurse_day5'], required: ['hidden_bitter_nurse_1'] }
 ];
 
 let passed = 0;

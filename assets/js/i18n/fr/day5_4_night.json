@@ -228,6 +228,34 @@
         "name": "",
         "text": "─── Professeure principale GOOD END ───"
     },
+    "hidden_bitter_homeroom_1": {
+        "name": "Professeure principale",
+        "text": "*Après la cérémonie de remise des diplômes, elle lit dans la salle vide la lettre que {name} lui a donnée, puis la pose délicatement sur le bureau.* Je ne peux pas la garder."
+    },
+    "hidden_bitter_homeroom_2": {
+        "name": "{name}",
+        "text": "*La lettre revient, les coins soigneusement lissés. Une question demeure : les lectures de manuscrits et les entretiens tardifs ne voulaient-ils vraiment rien dire d'autre ?*"
+    },
+    "hidden_bitter_homeroom_3": {
+        "name": "Professeure principale",
+        "text": "J'ai cru en tes textes et je tenais à toi comme à mon élève. C'est vrai. Mais je ne peux pas te répondre comme tu le souhaites."
+    },
+    "hidden_bitter_homeroom_4": {
+        "name": "{name}",
+        "text": "*Elle pose la lettre sur l'enveloppe de recommandation et rend les deux. La porte de la classe reste ouverte sur le couloir.*"
+    },
+    "hidden_bitter_homeroom_5": {
+        "name": "Professeure principale",
+        "text": "Félicitations pour ton diplôme. J'aimerais savoir ce que tu écriras ensuite, mais je ne peux pas promettre de rester à tes côtés."
+    },
+    "hidden_bitter_homeroom_6": {
+        "name": "{name}",
+        "text": "*La lettre et la recommandation en main, la classe est quittée sans un regard en arrière. Personne n'appelle depuis le couloir.*"
+    },
+    "hidden_bitter_homeroom_ending_title": {
+        "name": "",
+        "text": "─── Professeure principale BITTERSWEET END ───"
+    },
     "hidden_perfect_nurse_check": {},
     "hidden_perfect_nurse_1": {
         "name": "{name}",
@@ -428,6 +456,38 @@
     "hidden_good_nurse_ending_title": {
         "name": "",
         "text": "─── Infirmière GOOD END ───"
+    },
+    "hidden_bitter_nurse_1": {
+        "name": "{name}",
+        "text": "*Après la cérémonie de remise des diplômes, un dernier passage à l'infirmerie se termine par la fiche médicale verte tendue avec un mot contenant les coordonnées glissé dessous.*"
+    },
+    "hidden_bitter_nurse_2": {
+        "name": "Infirmière",
+        "text": "*Juwon lit le mot en silence. Puis elle le replie soigneusement et le rend.* Je ne devrais pas accepter ça."
+    },
+    "hidden_bitter_nurse_3": {
+        "name": "{name}",
+        "text": "Ça vous ennuyait que je vienne si souvent ?"
+    },
+    "hidden_bitter_nurse_4": {
+        "name": "Infirmière",
+        "text": "Tu ne m'as jamais ennuyée. C'est justement pour ça que je ne peux pas te laisser repartir dans le doute. Je me suis occupée de toi parce que tu étais un élève blessé."
+    },
+    "hidden_bitter_nurse_5": {
+        "name": "{name}",
+        "text": "*Juwon écrit « Diplôme, fin des consultations » sur la dernière ligne de la fiche verte. Elle pose le mot avec les coordonnées par-dessus.*"
+    },
+    "hidden_bitter_nurse_6": {
+        "name": "Infirmière",
+        "text": "La meilleure fin, c'est que tu n'aies plus besoin de venir ici. Prends soin de toi."
+    },
+    "hidden_bitter_nurse_7": {
+        "name": "{name}",
+        "text": "*Le mot et la fiche sont repris, puis la porte de l'infirmerie se ferme. À l'intérieur, seule une tasse de café se repose sur sa soucoupe.*"
+    },
+    "hidden_bitter_nurse_ending_title": {
+        "name": "",
+        "text": "─── Infirmière BITTERSWEET END ───"
     },
     "ending_affinity_check": {
         "name": "Système",
@@ -1350,6 +1410,12 @@
         "context": "Conversation bonus juste après la cérémonie de remise des diplômes du GOOD END de la professeure principale. Elle vient de remettre la recommandation et les documents du club littéraire ; la professeure et l’élève diplômé se séparent en décidant que chacun poursuivra ses propres textes et sa propre vie. Il n’y a eu ni retrouvailles à l’âge adulte ni romance ; dans cette conversation non plus, ne crée pas de relation amoureuse entre une enseignante et un élève mineur.",
         "personality": "La professeure principale accompagne chaleureusement et avec responsabilité l’élève diplômé vers son avenir. Au lieu d’exprimer des regrets personnels ou de le séduire, elle écoute sérieusement ses dernières questions sur son orientation, l’écriture et la vie scolaire, tout en maintenant des limites professionnelles claires."
     },
+    "day5_teacher_ending_freetalk_bittersweet": {
+        "name": "Professeure principale",
+        "text": "*Elle retire sa main de la lettre rendue et regarde la porte ouverte.* J'écouterai tes derniers mots. Mais je ne peux pas te donner la réponse que tu espérais.",
+        "context": "Conversation bonus juste après le BITTERSWEET END de la professeure principale. Le protagoniste a pris ses conseils sur les manuscrits et son attention pour une affection personnelle et s'est déclaré par lettre. Elle l'a rendue et a clairement rétabli la limite entre professeure et élève. Il n'y a eu ni retrouvailles adultes ni romance ; ne reviens pas sur le refus et ne crée pas de relation secrète.",
+        "personality": "Elle ne laisse pas de faux espoir par culpabilité. Elle écoute les sentiments de l'élève sans moquerie, mais distingue fermement l'encouragement littéraire de toute promesse personnelle et fait ses adieux avec responsabilité."
+    },
     "day5_nurse_ending_freetalk_router": {
         "name": "{name}",
         "text": ""
@@ -1371,5 +1437,11 @@
         "text": "*Elle écrit « Diplôme, tout va bien » dans le carnet vert et le ferme.* Les soins se terminent aujourd’hui. Je vais écouter tranquillement tes adieux.",
         "context": "Conversation bonus juste après la cérémonie de remise des diplômes du GOOD END de l’infirmière. Juwon vient de clore officiellement la dernière visite à l’infirmerie et fait ses adieux à l’élève diplômé sans lui donner ni coordonnées personnelles ni pansement. Il n’y a eu ni retrouvailles à l’âge adulte ni romance ; dans cette conversation non plus, ne crée pas de relation amoureuse entre une infirmière scolaire et un élève mineur.",
         "personality": "Juwon écoute les derniers adieux en infirmière scolaire pragmatique et attentionnée, tout en maintenant des limites professionnelles très claires. Elle veille à sa santé et à sa vie future sans créer de dépendance ni de relation secrète, et encourage le diplômé à devenir autonome."
+    },
+    "day5_nurse_ending_freetalk_bittersweet": {
+        "name": "Infirmière",
+        "text": "*Elle pose le mot rendu sur la fiche médicale verte.* S'il te reste de la peine ou de la colère à exprimer, je t'écoute. Ma réponse ne changera pas.",
+        "context": "Conversation bonus juste après le BITTERSWEET END de l'infirmière. Le protagoniste a pris les soins reçus à l'infirmerie pour une affection personnelle et a donné ses coordonnées. Juwon a rendu le mot et clos la relation de consultation. Il n'y a eu ni retrouvailles adultes ni romance ; ne reviens pas sur le refus et ne crée ni dépendance ni secret.",
+        "personality": "Juwon est pragmatique et attentionnée, mais n'adoucit pas sa réponse au point de donner de faux espoirs. Elle écoute la peine et les adieux tout en disant clairement que les soins professionnels n'étaient pas un signe romantique."
     }
 }

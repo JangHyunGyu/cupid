@@ -228,6 +228,34 @@
         "name": "",
         "text": "─── Klassenlehrerin GOOD END ───"
     },
+    "hidden_bitter_homeroom_1": {
+        "name": "Klassenlehrerin",
+        "text": "*Nach der Abschlussfeier liest sie im leeren Klassenzimmer den Brief, den {name} ihr gegeben hat, und legt ihn behutsam auf den Tisch.* Den kann ich nicht behalten."
+    },
+    "hidden_bitter_homeroom_2": {
+        "name": "{name}",
+        "text": "*Der Brief kommt mit glatt gestrichenen Ecken zurück. Eine Frage bleibt: Haben das Lesen der Manuskripte und die späten Gespräche nicht doch mehr bedeutet?*"
+    },
+    "hidden_bitter_homeroom_3": {
+        "name": "Klassenlehrerin",
+        "text": "Ich habe an deine Texte geglaubt und dich als Schüler gerngehabt. Das stimmt. Aber ich darf dir nicht die Antwort geben, die du dir wünschst."
+    },
+    "hidden_bitter_homeroom_4": {
+        "name": "{name}",
+        "text": "*Sie legt den Brief auf den Umschlag mit der Empfehlung und gibt beides zurück. Die Klassenzimmertür steht zum Flur offen.*"
+    },
+    "hidden_bitter_homeroom_5": {
+        "name": "Klassenlehrerin",
+        "text": "Herzlichen Glückwunsch zum Abschluss. Ich bin neugierig, was du als Nächstes schreibst, aber ich kann dir keinen Platz an deiner Seite versprechen."
+    },
+    "hidden_bitter_homeroom_6": {
+        "name": "{name}",
+        "text": "*Brief und Empfehlung werden eingesteckt, dann bleibt das Klassenzimmer ohne einen Blick zurück. Niemand ruft hinterher.*"
+    },
+    "hidden_bitter_homeroom_ending_title": {
+        "name": "",
+        "text": "─── Klassenlehrerin BITTERSWEET END ───"
+    },
     "hidden_perfect_nurse_check": {},
     "hidden_perfect_nurse_1": {
         "name": "{name}",
@@ -428,6 +456,38 @@
     "hidden_good_nurse_ending_title": {
         "name": "",
         "text": "─── Schulkrankenschwester GOOD END ───"
+    },
+    "hidden_bitter_nurse_1": {
+        "name": "{name}",
+        "text": "*Nach der Abschlussfeier folgt ein letzter Besuch im Krankenzimmer. Die grüne Gesundheitskarte wird mit einem Zettel samt Kontaktdaten darunter überreicht.*"
+    },
+    "hidden_bitter_nurse_2": {
+        "name": "Schulkrankenschwester",
+        "text": "*Juwon liest den Zettel schweigend. Dann faltet sie ihn sauber entlang der Kante und gibt ihn zurück.* Das darf ich nicht annehmen."
+    },
+    "hidden_bitter_nurse_3": {
+        "name": "{name}",
+        "text": "War es lästig, dass ich so oft herkam?"
+    },
+    "hidden_bitter_nurse_4": {
+        "name": "Schulkrankenschwester",
+        "text": "Du warst nie lästig. Gerade deshalb darf ich dich nicht im Unklaren lassen. Ich habe mich um dich gekümmert, weil du Schüler und verletzt warst."
+    },
+    "hidden_bitter_nurse_5": {
+        "name": "{name}",
+        "text": "*Juwon schreibt „Abschluss, Beratung beendet“ in die letzte Zeile der grünen Karte. Den Zettel mit den Kontaktdaten legt sie darauf.*"
+    },
+    "hidden_bitter_nurse_6": {
+        "name": "Schulkrankenschwester",
+        "text": "Das beste Ende ist, dass du nicht mehr hierherkommen musst. Mach es gut."
+    },
+    "hidden_bitter_nurse_7": {
+        "name": "{name}",
+        "text": "*Zettel und Karte werden eingesteckt, dann schließt sich die Tür. Drinnen ist nur noch zu hören, wie eine Kaffeetasse auf der Untertasse abgesetzt wird.*"
+    },
+    "hidden_bitter_nurse_ending_title": {
+        "name": "",
+        "text": "─── Schulkrankenschwester BITTERSWEET END ───"
     },
     "ending_affinity_check": {
         "name": "System",
@@ -1350,6 +1410,12 @@
         "context": "Bonusgespräch nach dem Abschlussabschied ihres GOOD END. Es gab weder erwachsenes Wiedersehen noch Romanze; bewahre den nichtromantischen Abschied zwischen Lehrerin und Absolvent.",
         "personality": "Sie verabschiedet den Schüler warm und verantwortungsvoll, hört Fragen zu Schreiben und Zukunft und wahrt klare berufliche Grenzen."
     },
+    "day5_teacher_ending_freetalk_bittersweet": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie nimmt die Hand vom zurückgegebenen Brief und blickt zur offenen Klassenzimmertür.* Deinen letzten Abschied höre ich mir an. Die erhoffte Antwort kann ich dir trotzdem nicht geben.",
+        "context": "Bonusgespräch direkt nach dem BITTERSWEET END der Klassenlehrerin. Der Protagonist deutete Manuskriptberatung und Aufmerksamkeit als persönliche Zuneigung und gestand seine Gefühle in einem Brief. Sie gab ihn zurück und stellte die Grenze zwischen Lehrerin und Schüler klar. Es gab weder ein erwachsenes Wiedersehen noch eine Romanze; nimm die Ablehnung nicht zurück und erschaffe keine geheime Beziehung.",
+        "personality": "Aus Schuldgefühl macht sie keine falschen Hoffnungen. Sie hört die Gefühle des Schülers ohne Spott an, trennt Ermutigung beim Schreiben aber klar von jedem persönlichen Versprechen und verabschiedet sich verantwortungsvoll."
+    },
     "day5_nurse_ending_freetalk_router": {
         "name": "{name}",
         "text": ""
@@ -1371,5 +1437,11 @@
         "text": "*Sie schreibt „Abschluss, alles in Ordnung“ ins hellgrüne Heft und schließt es.* Die Behandlung endet heute. Deinen Abschiedsgruß höre ich mir in Ruhe an.",
         "context": "Bonusgespräch nach dem Abschlussabschied ihres GOOD END. Es gab weder privaten Kontakt noch erwachsenes Wiedersehen oder Romanze; bewahre die nichtromantische Grenze zwischen Schulkrankenschwester und Schüler.",
         "personality": "Juwon hört freundlich zu, hält klare berufliche Grenzen und unterstützt Gesundheit und Selbstständigkeit des Absolventen."
+    },
+    "day5_nurse_ending_freetalk_bittersweet": {
+        "name": "Schulkrankenschwester",
+        "text": "*Sie legt den zurückgegebenen Zettel auf die grüne Gesundheitskarte.* Wenn du noch verletzt oder wütend bist, höre ich zu. Meine Antwort ändert sich trotzdem nicht.",
+        "context": "Bonusgespräch direkt nach dem BITTERSWEET END der Schulkrankenschwester. Der Protagonist deutete die Fürsorge im Krankenzimmer als persönliche Zuneigung und gab ihr Kontaktdaten. Juwon gab den Zettel zurück und beendete die Beratung. Es gab weder ein erwachsenes Wiedersehen noch eine Romanze; nimm die Ablehnung nicht zurück und erschaffe weder Abhängigkeit noch Geheimnisse.",
+        "personality": "Juwon ist praktisch und fürsorglich, macht aus ihrer Antwort aber keine falsche Hoffnung. Sie hört Verletzung und Abschied an und sagt deutlich, dass berufliche Fürsorge kein romantisches Signal war."
     }
 }

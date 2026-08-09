@@ -548,7 +548,7 @@ function verifyWiringAndScenePrompts() {
         Object.values(value).forEach(collect);
     }
     sceneFiles.forEach(file => collect(JSON.parse(read(file))));
-    assert(scenePrompts.length === 41, `expected 41 active Korean scene prompts, found ${scenePrompts.length}`);
+    assert(scenePrompts.length === 43, `expected 43 active Korean scene prompts, found ${scenePrompts.length}`);
     const joined = scenePrompts.join('\n');
     for (const stalePhrase of ['Day 1', 'Day 3', '톤:', '티키타카', '쿨뷰티', '신비주의 문학소녀', '체육계']) {
         assert(!joined.includes(stalePhrase), `active Korean scene prompt still contains: ${stalePhrase}`);
@@ -565,7 +565,7 @@ function verifyWiringAndScenePrompts() {
     for (let day = 1; day <= 5; day += 1) {
         const freeTalks = Object.entries(scenarioContext.SCENARIO[day] || {})
             .filter(([, scene]) => scene?.type === 'free_talk');
-        const expectedCount = day === 5 ? 21 : 5;
+        const expectedCount = day === 5 ? 23 : 5;
         assert(freeTalks.length === expectedCount,
             `day ${day} must contain exactly ${expectedCount} free-talk scenes, found ${freeTalks.length}`);
         const expectedTurns = day === 5 ? 5 : 3;
@@ -819,4 +819,4 @@ verifyRequestOwnershipGuards();
 verifyCacheKeyWiring();
 verifyTypingOwnerIsolation(context);
 
-console.log(`Verified Korean runtime prompts for ${CHARACTERS.length} characters, 41 scene prompts, daily turn limits, loader order, memories, user agency, and stale-turn ownership.`);
+console.log(`Verified Korean runtime prompts for ${CHARACTERS.length} characters, 43 scene prompts, daily turn limits, loader order, memories, user agency, and stale-turn ownership.`);
