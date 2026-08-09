@@ -420,8 +420,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "backgroundVariant": "cold",
         "character": "assets/images/characters/seyoun_cry.png",
         "choices": [
-            { "next": "wall_seo_line_react_1", "stats": {"Seoyeon":{"affinity":5}} },
-            { "next": "wall_seo_line_react_2", "stats": {"Seoyeon":{"affinity":5}} },
+            { "next": "wall_seo_line_react_1", "stats": {"Seoyeon":{"affinity":10}} },
+            { "next": "wall_seo_line_react_2", "stats": {"Seoyeon":{"affinity":10}} },
             { "next": "wall_seo_line_react_3", "stats": {"Seoyeon":{"affinity":-4}} }
         ]
     },
@@ -811,7 +811,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/dain_sad.png",
         "choices": [
             { "next": "wall_dain_newdream_1", "stats": {"Dain":{"affinity":2}} },
-            { "next": "wall_dain_cry_1", "stats": {"Dain":{"affinity":4}} },
+            { "next": "wall_dain_cry_1", "stats": {"Dain":{"affinity":9}} },
             { "next": "wall_dain_lastspike_1", "stats": {"Dain":{"affinity":-4}} }
         ]
     },
@@ -1253,7 +1253,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_sad.png",
         "choices": [
-            { "next": "wall_yuna_moved_1", "stats": {"Yuna":{"affinity":3}} },
+            { "next": "wall_yuna_moved_1", "stats": {"Yuna":{"affinity":8}} },
             { "next": "wall_yuna_sub_1", "stats": {"Yuna":{"affinity":2}} },
             { "next": "wall_yuna_reject_1", "stats": {"Yuna":{"affinity":-10}} }
         ]

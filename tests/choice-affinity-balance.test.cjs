@@ -382,7 +382,7 @@ test('every competitive scene remains a non-positive relationship tradeoff', () 
     }
 });
 
-test('optimal authored routes give students 80 points and hidden routes 90 points before free talk', () => {
+test('optimal authored routes give every character 90 points before free talk', () => {
     const optimalRouteEffects = {
         Seoyeon: [
             ['seoyeon_choice', 0], ['lunch_seo_3'], ['lunch_seo_choice', 0],
@@ -429,7 +429,7 @@ test('optimal authored routes give students 80 points and hidden routes 90 point
         ]
     };
 
-    const expectedTotals = { Seoyeon: 80, Yuna: 80, Dain: 80, Teacher: 90, Nurse: 90 };
+    const expectedTotals = { Seoyeon: 90, Yuna: 90, Dain: 90, Teacher: 90, Nurse: 90 };
     for (const [character, effects] of Object.entries(optimalRouteEffects)) {
         const total = effects.reduce((sum, [sceneId, choiceIndex]) => {
             const source = Number.isInteger(choiceIndex) ? scenes[sceneId]?.choices?.[choiceIndex] : scenes[sceneId];
@@ -440,6 +440,13 @@ test('optimal authored routes give students 80 points and hidden routes 90 point
         assert.equal(total, expectedTotals[character], `${character} optimal authored route budget drifted`);
     }
 
+    assert.equal(scenes.after3_seo_choice.choices[1].stats.Seoyeon.affinity, 18);
+    assert.equal(scenes.wall_seo_line_choice.choices[0].stats.Seoyeon.affinity, 10);
+    assert.equal(scenes.wall_seo_line_choice.choices[1].stats.Seoyeon.affinity, 10);
+    assert.equal(scenes.after3_yuna_choice.choices[1].stats.Yuna.affinity, 19);
+    assert.equal(scenes.wall_yuna_choice.choices[0].stats.Yuna.affinity, 8);
+    assert.equal(scenes.after3_dain_choice.choices[1].stats.Dain.affinity, 19);
+    assert.equal(scenes.wall_dain_choice.choices[1].stats.Dain.affinity, 9);
     assert.equal(scenes.hidden_homeroom_d5_8.stats.Teacher.affinity, 15);
     assert.equal(scenes.hidden_nurse_d5_7.stats.Nurse.affinity, 15);
     assert.equal(scenes.hidden_nurse_d5_7_both.stats.Nurse.affinity, 15);

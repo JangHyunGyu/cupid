@@ -10579,7 +10579,7 @@
 - 배경: `student_room.png`
 - 선택지:
   1. "물티슈 줄까." → `after3_seo_pity_trap_1` | Seoyeon -18 | 플래그: `seo_pity_broken`
-  2. "방금? 아무것도 못 봤는데. 펜 떨어뜨려서 주우러 들어왔어." → `after3_seo_correct_1` | Seoyeon +13
+  2. "방금? 아무것도 못 봤는데. 펜 떨어뜨려서 주우러 들어왔어." → `after3_seo_correct_1` | Seoyeon +18
 
 - 캐릭터: `seyoun_sad.png`
 **서연**: 오늘 본 건 여기까지만 해줘. 대신 지금은 평소처럼 대해.
@@ -10959,7 +10959,7 @@
 - 배경: `yuna_hideout.png`
 - 선택지:
   1. "미안. 그래도 이거 내 이야기 맞지?" → `after3_yuna_decode_trap_1` | Yuna -22 | 플래그: `yuna_safe_zone_broken`
-  2. "미안. 펼쳐진 첫 장만 봤어. 더 읽지는 않을게. 그런데 이 작가, 문장이 정말 좋다." → `after3_yuna_correct_1` | Yuna +14
+  2. "미안. 펼쳐진 첫 장만 봤어. 더 읽지는 않을게. 그런데 이 작가, 문장이 정말 좋다." → `after3_yuna_correct_1` | Yuna +19
 
 - 캐릭터: `yuna_shy.png`
 **{name}**: *노트를 유나 쪽으로 돌려놓는다.*
@@ -11303,7 +11303,7 @@
 - 배경: `gym.png`
 - 선택지:
   1. "괜찮아? 무리하지 마. 오늘은 쉬는 게 어때." → `after3_dain_pity_trap_1` | Dain -20 | 플래그: `pitied_dain`
-  2. "그럼 여기 있을게. 말하고 싶을 때 말해." → `after3_dain_correct_1` | Dain +14
+  2. "그럼 여기 있을게. 말하고 싶을 때 말해." → `after3_dain_correct_1` | Dain +19
 
 - 캐릭터: `dain_sad.png`
 **다인**: *다인이 벤치에 앉아 무릎 한곳만 계속 문지른다.*
@@ -16346,8 +16346,8 @@
 - 배경: `park.png`
 - 배경톤: `cold`
 - 선택지:
-  1. "물티슈 줄까." → `wall_seo_line_react_1` | Seoyeon +5
-  2. "잠깐 앉아 있자." → `wall_seo_line_react_2` | Seoyeon +5
+  1. "물티슈 줄까." → `wall_seo_line_react_1` | Seoyeon +10
+  2. "잠깐 앉아 있자." → `wall_seo_line_react_2` | Seoyeon +10
   3. "굳이 설명 안 해도 알 것 같아." → `wall_seo_line_react_3` | Seoyeon -4
 
 - 캐릭터: `seyoun_cry.png`
@@ -16924,7 +16924,7 @@
 - 배경톤: `lights-off`
 - 선택지:
   1. "아무 말 안 할게. 그냥 여기 있을게." → `wall_dain_newdream_1` | Dain +2
-  2. "울어도 돼. 밝은 척 안 해도 돼. 나한테는." → `wall_dain_cry_1` | Dain +4
+  2. "울어도 돼. 밝은 척 안 해도 돼. 나한테는." → `wall_dain_cry_1` | Dain +9
   3. "공부터 정리하자. 내일 병원도 예약하고." → `wall_dain_lastspike_1` | Dain -4
 
 - 캐릭터: `dain_sad.png`
@@ -17575,7 +17575,7 @@
 - 배경: `yuna_hideout.png`
 - 배경톤: `dream`
 - 선택지:
-  1. "그 사람 대신은 못 해. 그래도 지금은 여기 있어." → `wall_yuna_moved_1` | Yuna +3
+  1. "그 사람 대신은 못 해. 그래도 지금은 여기 있어." → `wall_yuna_moved_1` | Yuna +8
   2. "지금은 네 말을 듣고 있어." → `wall_yuna_sub_1` | Yuna +2
   3. "...그래서 나한테 접근한 거야? 선배 대신?" → `wall_yuna_reject_1` | Yuna -10
 
