@@ -547,7 +547,11 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
     assert.match(css, /data-group-speaker-side="right"/);
     assert.match(freeTalk, /chatContainer\?\.classList\.add\('group-freetalk-mode'\)/);
     assert.match(freeTalk, /chatContainer\?\.classList\.remove\('group-freetalk-mode'\)/);
-    assert.match(css, /grid-template-areas:\s*"upload input input input input"\s*"\. \. action send skip"/);
+    assert.match(freeTalk, /this\.groupParticipants\s*\.map\(participant => normalized\.find\(conversation => conversation\.speakerId === participant\.id\)\)/);
+    assert.match(freeTalk, /ordered\.length !== this\.groupParticipants\.length/);
+    assert.match(css, /grid-template-areas:\s*"guide guide guide guide guide"\s*"upload input input input input"\s*"turn turn action send skip"/);
+    assert.match(css, /#chat-container\.group-freetalk-mode #chat-input-wrapper\s*{\s*display: contents/);
+    assert.match(css, /#chat-container\.group-freetalk-mode #chat-turn-indicator[\s\S]*?grid-area: turn/);
     assert.match(css, /@media \(max-height: 500px\) and \(orientation: landscape\)[\s\S]*?#character-layer\.group-freetalk-mode #char-left img/);
 
     for (const lang of ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt']) {

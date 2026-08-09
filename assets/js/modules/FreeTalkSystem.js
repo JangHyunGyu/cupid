@@ -1474,8 +1474,13 @@ class FreeTalkSystem {
                 affinity: Number.isFinite(Number(conversation.affinity)) ? Math.trunc(Number(conversation.affinity)) : 0
             });
         }
-        if (normalized.length === 0) throw new Error('Cupid group response did not contain a valid speaker message');
-        return normalized;
+        const ordered = this.groupParticipants
+            .map(participant => normalized.find(conversation => conversation.speakerId === participant.id))
+            .filter(Boolean);
+        if (ordered.length !== this.groupParticipants.length) {
+            throw new Error('Cupid group response did not contain every required speaker message');
+        }
+        return ordered;
     }
 
     _applyGroupExpression(expression, speakerId) {

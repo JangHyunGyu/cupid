@@ -566,16 +566,26 @@ html {
     background: #8363d9;
 }
 
-/* 그룹 대화 모바일 세로: 입력은 첫 줄, 행동·전송·닫기는 둘째 줄 오른쪽에 배치 */
+/* 그룹 대화 모바일 세로: 입력은 첫 줄, 남은 횟수와 세 버튼은 둘째 줄에 배치 */
 @media (max-width: 600px) and (orientation: portrait) {
-    #chat-container.group-freetalk-mode #chat-input-wrapper {
-        display: grid;
+    #chat-container.group-freetalk-mode {
+        display: grid !important;
         grid-template-columns: 42px minmax(0, 1fr) 42px 42px 42px;
         grid-template-areas:
+            "guide guide guide guide guide"
             "upload input input input input"
-            ". . action send skip";
+            "turn turn action send skip";
         gap: 8px;
         align-items: end;
+    }
+
+    #chat-container.group-freetalk-mode #chat-guide {
+        grid-area: guide;
+        margin-bottom: 0;
+    }
+
+    #chat-container.group-freetalk-mode #chat-input-wrapper {
+        display: contents;
     }
 
     #chat-container.group-freetalk-mode #upload-image-btn {
@@ -599,6 +609,13 @@ html {
 
     #chat-container.group-freetalk-mode #chat-skip-btn {
         grid-area: skip;
+    }
+
+    #chat-container.group-freetalk-mode #chat-turn-indicator {
+        grid-area: turn;
+        align-self: center;
+        justify-self: start;
+        text-align: left;
     }
 
     #chat-container.group-freetalk-mode #upload-image-btn,
