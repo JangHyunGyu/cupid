@@ -201,6 +201,79 @@ class FreeTalkSystem {
         this.uiManager?.messageEl?.querySelectorAll('.ai-thinking-message').forEach(el => el.remove());
     }
 
+    _buildGroupConversationMemoryContext(charName, lang = 'ko') {
+        const memories = this.stateManager.getGroupConversationMemories?.(charName) || [];
+        if (memories.length === 0) return '';
+
+        const language = String(lang || 'ko').toLowerCase().split('-')[0];
+        const copy = {
+            ko: {
+                header: '[함께 있었던 대면 대화]',
+                guard: '아래 기록은 이 캐릭터와 주인공, 다른 인물이 한자리에서 실제로 나눈 지난 대화입니다. 누가 한 말인지 구분해 기억하세요. 다른 인물의 말을 이 캐릭터 자신의 말이나 생각으로 바꾸지 말고, 지금 장면에는 현재 함께 있는 인물만 등장시킵니다.',
+                player: '주인공', image: '[첨부 이미지]'
+            },
+            en: {
+                header: '[Past Face-to-Face Group Conversation]',
+                guard: 'The record below is a past conversation that this character, the protagonist, and another character actually had together. Keep each speaker distinct. Do not turn the other character\'s words into this character\'s dialogue or thoughts, and include only people who are present in the current scene now.',
+                player: 'Protagonist', image: '[image attachment]'
+            },
+            es: {
+                header: '[Conversación grupal presencial anterior]',
+                guard: 'El siguiente registro es una conversación pasada que este personaje, el protagonista y otro personaje mantuvieron juntos. Distingue siempre a cada hablante. No conviertas las palabras del otro personaje en palabras o pensamientos de este personaje, y haz que en la escena actual solo aparezcan quienes están presentes ahora.',
+                player: 'Protagonista', image: '[imagen adjunta]'
+            },
+            ja: {
+                header: '[以前の対面グループ会話]',
+                guard: '以下は、このキャラクターと主人公、もう一人の人物が同じ場で実際に交わした過去の会話です。誰の発言かを区別して記憶してください。別の人物の言葉をこのキャラクター自身の台詞や考えに変えず、今の場面には現在その場にいる人物だけを登場させてください。',
+                player: '主人公', image: '[添付画像]'
+            },
+            fr: {
+                header: '[Ancienne conversation de groupe en face à face]',
+                guard: 'Le relevé ci-dessous est une conversation passée que ce personnage, le protagoniste et un autre personnage ont réellement eue ensemble. Distinguez clairement chaque personne qui parle. N’attribuez pas les paroles de l’autre personnage à ce personnage comme s’il s’agissait de ses répliques ou de ses pensées, et ne faites apparaître dans la scène actuelle que les personnes qui y sont présentes.',
+                player: 'Protagoniste', image: '[image jointe]'
+            },
+            de: {
+                header: '[Früheres Gruppengespräch vor Ort]',
+                guard: 'Der folgende Verlauf ist ein vergangenes Gespräch, das diese Figur, der Protagonist und eine weitere Figur tatsächlich gemeinsam geführt haben. Unterscheide klar, wer gesprochen hat. Mache die Worte der anderen Figur nicht zu Äußerungen oder Gedanken dieser Figur und lasse in der aktuellen Szene nur Personen auftreten, die jetzt anwesend sind.',
+                player: 'Protagonist', image: '[angehängtes Bild]'
+            },
+            pt: {
+                header: '[Conversa presencial em grupo anterior]',
+                guard: 'O registro abaixo é de uma conversa passada que esta personagem, o protagonista e outra personagem realmente tiveram juntas. Diferencie com clareza quem falou. Não transforme as palavras da outra personagem em falas ou pensamentos desta personagem e inclua na cena atual apenas quem está presente agora.',
+                player: 'Protagonista', image: '[imagem anexada]'
+            }
+        }[language] || null;
+        const localized = copy || {
+            header: '[Past Face-to-Face Group Conversation]',
+            guard: 'Keep every past speaker distinct and include only people present in the current scene.',
+            player: 'Protagonist', image: '[image attachment]'
+        };
+        const compact = (value) => {
+            const raw = String(value || '').replace(/===CACHE_BOUNDARY===/g, ' ');
+            const hadImage = /data:image\//i.test(raw);
+            const cleaned = cupidSanitizeLatestUserText(raw);
+            const withImage = hadImage
+                ? [cleaned, localized.image].filter(Boolean).join(' ')
+                : cleaned;
+            return withImage.length > 1200 ? `${withImage.slice(0, 1200)}...` : withImage;
+        };
+        const turns = memories.map(memory => {
+            const lines = [];
+            const playerName = compact(memory.playerName) || localized.player;
+            const userText = compact(memory.userContent);
+            if (userText) lines.push(`${playerName}: ${userText}`);
+            for (const message of memory.assistantMessages || []) {
+                const content = compact(message.content);
+                if (!content) continue;
+                const speakerName = this._getLocalizedGroupCharacterName(message.speakerId, language);
+                lines.push(`${speakerName}: ${content}`);
+            }
+            return lines.join('\n');
+        }).filter(Boolean);
+        if (turns.length === 0) return '';
+        return `\n\n${localized.header}\n${localized.guard}\n${turns.join('\n\n')}`;
+    }
+
     /**
      * 게임 내 플래그 기반으로 캐릭터의 "기억"을 생성
      *
@@ -212,17 +285,15 @@ class FreeTalkSystem {
      * @param {boolean} isEn - 영어 버전 여부
      * @returns {string} AI에게 전달할 기억 텍스트
      */
-    getGameContext(charName, lang) {
+    getGameContext(charName, lang, options = {}) {
         // lang 파라미터가 boolean(이전 isEn)으로 전달되는 경우 하위 호환
         if (lang === true) lang = 'en';
         else if (lang === false) lang = 'ko';
         if (!lang) lang = window.GAME_LANG || document.documentElement.lang || 'ko';
 
-        // FLAG_MEMORIES가 없으면 빈 문자열 반환
-        if (!window.FLAG_MEMORIES) return "";
-
         // 이 캐릭터와 관련된 기억 중 플래그가 true인 것만 필터링
-        const memories = FLAG_MEMORIES.filter(m => {
+        const flagMemories = Array.isArray(window.FLAG_MEMORIES) ? window.FLAG_MEMORIES : [];
+        const memories = flagMemories.filter(m => {
             // 캐릭터 매칭 (한/영 모두 체크)
             // 다국어 지원: 한국어↔영어 모드 전환 시에도 플래그 기억이 정상 로드되도록
             // 캐릭터 이름을 양방향으로 매칭
@@ -260,16 +331,22 @@ class FreeTalkSystem {
             return charMatch && this.stateManager.getFlag(m.flag);
         });
 
-        // 기억이 없으면 빈 문자열
-        if (memories.length === 0) return "";
-
-        // 기억들을 리스트 형태로 포맷팅
-        const header = { es: "\n\n[Eventos y Recuerdos Recientes]:\n", ja: "\n\n[直近の出来事と記憶]\n", en: "\n\n[Recent Events & Memories]:\n", fr: "\n\n[Événements et souvenirs récents] :\n", de: "\n\n[Aktuelle Ereignisse & Erinnerungen]:\n", pt: "\n\n[Eventos e Memórias Recentes]:\n" }[lang] || "\n\n[최근 사건과 기억]\n";
-        return header + memories.map(m => {
-            let text = { es: m.es, ja: m.ja, en: m.en, fr: m.fr, de: m.de, pt: m.pt }[lang] || m.ko;
-            if (!text) text = m.en || m.ko;
-            return `- ${text.replace(/{name}/g, this.stateManager.playerName)}`;
-        }).join("\n");
+        const sections = [];
+        if (memories.length > 0) {
+            const header = { es: "\n\n[Eventos y Recuerdos Recientes]:\n", ja: "\n\n[直近の出来事と記憶]\n", en: "\n\n[Recent Events & Memories]:\n", fr: "\n\n[Événements et souvenirs récents] :\n", de: "\n\n[Aktuelle Ereignisse & Erinnerungen]:\n", pt: "\n\n[Eventos e Memórias Recentes]:\n" }[lang] || "\n\n[최근 사건과 기억]\n";
+            sections.push(header + memories.map(m => {
+                let text = { es: m.es, ja: m.ja, en: m.en, fr: m.fr, de: m.de, pt: m.pt }[lang] || m.ko;
+                if (!text) text = m.en || m.ko;
+                return `- ${text.replace(/{name}/g, this.stateManager.playerName)}`;
+            }).join("\n"));
+        }
+        if (options.includeGroupConversations !== false) {
+            const groupConversationContext = typeof this._buildGroupConversationMemoryContext === 'function'
+                ? this._buildGroupConversationMemoryContext(charName, lang)
+                : '';
+            sections.push(groupConversationContext);
+        }
+        return sections.filter(Boolean).join('');
     }
 
     /**
@@ -619,7 +696,7 @@ class FreeTalkSystem {
         const promptData = window.getPromptData ? window.getPromptData(lang, this.stateManager.playerName) : {};
         const gameContexts = Object.fromEntries(participants.map(participant => [
             participant.id,
-            this.getGameContext(participant.id, lang)
+            this.getGameContext(participant.id, lang, { includeGroupConversations: false })
         ]));
         const affinities = Object.fromEntries(participants.map(participant => [
             participant.id,
@@ -1734,19 +1811,29 @@ class FreeTalkSystem {
                 .join('\n\n');
             requestHistory.push({ role: 'assistant', content: transcript });
             this.stateManager.setChatMemory(groupKey, requestHistory);
+            const assistantMessages = rendered.map(item => ({
+                speakerId: item.speakerId,
+                speakerName: item.speakerName,
+                content: item.text,
+                affinityChange: item.affinityResult?.change,
+                affinityCurrent: item.affinityResult?.value,
+                renderReceipt: item.renderReceipt
+            }));
+            this.stateManager.addGroupConversationMemory?.({
+                turnId: lastTurnMeta?.turnId || '',
+                sessionId: requestSceneId || '',
+                day: this.stateManager.currentDay,
+                participants: this.groupParticipants,
+                playerName: this.stateManager.playerName || '',
+                userContent: finalContent,
+                assistantMessages
+            });
             window.saveGameState?.();
 
             if (typeof window.saveCupidGroupChatLog === 'function') {
                 window.saveCupidGroupChatLog({
                     userContent: finalContent,
-                    assistantMessages: rendered.map(item => ({
-                        speakerId: item.speakerId,
-                        speakerName: item.speakerName,
-                        content: item.text,
-                        affinityChange: item.affinityResult?.change,
-                        affinityCurrent: item.affinityResult?.value,
-                        renderReceipt: item.renderReceipt
-                    })),
+                    assistantMessages,
                     participants: this.groupParticipants,
                     sessionId: requestSceneId || '',
                     playerName: this.stateManager.playerName || ''

@@ -56,6 +56,9 @@ class StateManager {
          */
         this.chatMemories = {};
 
+        /** 화자 정보가 보존된 본편 그룹 대화 기록 */
+        this.groupConversationMemories = [];
+
         /** Character-specific API prompt epoch checkpoints. */
         this.chatPromptEpochs = {};
 
@@ -92,6 +95,7 @@ class StateManager {
         };
         this.currentCharacter = null;
         this.chatMemories = {};
+        this.groupConversationMemories = [];
         this.chatPromptEpochs = {};
         this.relationshipAftermaths = {};
         this.storyFreeTalkGains = {};
@@ -221,6 +225,58 @@ class StateManager {
      */
     getChatMemory(charName) { return this.chatMemories[charName] || []; }
 
+    /**
+     * 그룹 프리토킹 한 턴을 화자별 공동 사건 기억으로 저장합니다.
+     * 1:1 role 히스토리에 다른 캐릭터의 대사를 섞지 않고 별도 구조로 보존합니다.
+     */
+    addGroupConversationMemory(memory = {}) {
+        const normalizeContent = value => String(value || '')
+            .replace(/data:image\/[a-zA-Z0-9.+-]+;base64,[A-Za-z0-9+/=\s]+/g, '[image attachment]')
+            .trim();
+        const knownCharacters = new Set(Object.keys(this.stats || {}));
+        const participants = [...new Set((Array.isArray(memory.participants) ? memory.participants : [])
+            .map(value => String(value?.id || value || '').trim())
+            .filter(value => knownCharacters.has(value)))];
+        if (participants.length < 2) return null;
+
+        const assistantMessages = (Array.isArray(memory.assistantMessages) ? memory.assistantMessages : [])
+            .map(message => ({
+                speakerId: String(message?.speakerId || '').trim(),
+                speakerName: String(message?.speakerName || '').trim(),
+                content: normalizeContent(message?.content)
+            }))
+            .filter(message => participants.includes(message.speakerId) && message.content);
+        const userContent = normalizeContent(memory.userContent);
+        if (!userContent && assistantMessages.length === 0) return null;
+
+        const turnId = String(memory.turnId || '').trim();
+        if (turnId) {
+            const existing = this.groupConversationMemories.find(item => item.turnId === turnId);
+            if (existing) return JSON.parse(JSON.stringify(existing));
+        }
+
+        const entry = {
+            version: 1,
+            turnId,
+            sessionId: String(memory.sessionId || '').trim(),
+            day: Number.isFinite(Number(memory.day)) ? Math.max(0, Math.trunc(Number(memory.day))) : this.currentDay,
+            participants,
+            playerName: String(memory.playerName || this.playerName || '').trim(),
+            userContent,
+            assistantMessages
+        };
+        this.groupConversationMemories.push(entry);
+        return JSON.parse(JSON.stringify(entry));
+    }
+
+    getGroupConversationMemories(charName) {
+        const characterId = String(charName || '').trim();
+        if (!characterId) return [];
+        return this.groupConversationMemories
+            .filter(memory => memory.participants.includes(characterId))
+            .map(memory => JSON.parse(JSON.stringify(memory)));
+    }
+
     setChatPromptEpoch(charName, state) {
         if (!charName) return;
         if (!state || state.version !== 1) {
@@ -279,6 +335,7 @@ class StateManager {
             currentDay: this.currentDay,
             stats: JSON.parse(JSON.stringify(this.stats)),
             chatMemories: JSON.parse(JSON.stringify(this.chatMemories)),
+            groupConversationMemories: JSON.parse(JSON.stringify(this.groupConversationMemories)),
             chatPromptEpochs: JSON.parse(JSON.stringify(this.chatPromptEpochs)),
             relationshipAftermaths: JSON.parse(JSON.stringify(this.relationshipAftermaths)),
             storyFreeTalkGains: { ...this.storyFreeTalkGains },
@@ -299,6 +356,10 @@ class StateManager {
         if (data.currentDay !== undefined) this.currentDay = data.currentDay;
         if (data.stats) this.stats = data.stats;
         if (data.chatMemories) this.chatMemories = data.chatMemories;
+        this.groupConversationMemories = [];
+        if (Array.isArray(data.groupConversationMemories)) {
+            for (const memory of data.groupConversationMemories) this.addGroupConversationMemory(memory);
+        }
         if (data.chatPromptEpochs) this.chatPromptEpochs = data.chatPromptEpochs;
         this.relationshipAftermaths = data.relationshipAftermaths && typeof data.relationshipAftermaths === 'object'
             ? data.relationshipAftermaths
@@ -320,6 +381,7 @@ class StateManager {
         if (key === 'currentDay') return this.currentDay;
         if (key === 'stats') return this.stats;
         if (key === 'chatMemories') return this.chatMemories;
+        if (key === 'groupConversationMemories') return this.groupConversationMemories;
         if (key === 'chatPromptEpochs') return this.chatPromptEpochs;
         if (key === 'relationshipAftermaths') return this.relationshipAftermaths;
         if (key === 'storyFreeTalkGains') return this.storyFreeTalkGains;

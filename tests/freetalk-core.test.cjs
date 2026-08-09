@@ -524,6 +524,107 @@ test('main relationship aftermath survives save import and is isolated per chara
     assert.match(read('assets/js/modules/FreeTalkSystem.js'), /window\.saveGameState\?\.\(\)/);
 });
 
+test('group conversation memory persists once, stays linked to both participants, and does not pollute 1:1 roles', () => {
+    const stateWindow = { GAME_LANG: 'ko', CupidFreeTalkCore: core };
+    vm.runInNewContext(read('assets/js/modules/StateManager.js'), {
+        window: stateWindow,
+        console: { log() {}, error() {} }
+    });
+    const state = new stateWindow.StateManager();
+    const memory = {
+        turnId: 'group-turn-1',
+        sessionId: 'morning5_counteroffer_group_talk',
+        day: 5,
+        participants: [{ id: 'Teacher' }, { id: 'Dain' }],
+        playerName: '민준',
+        userContent: '내가 두 사람에게 전부 설명할게.\n\ndata:image/png;base64,AAAA',
+        assistantMessages: [
+            { speakerId: 'Teacher', speakerName: '담임선생님', content: '그럼 숨기지 말고 말해.' },
+            { speakerId: 'Dain', speakerName: '다인', content: '저도 끝까지 들을게요.' }
+        ]
+    };
+
+    state.addGroupConversationMemory(memory);
+    state.addGroupConversationMemory(memory);
+    assert.equal(state.getGroupConversationMemories('Teacher').length, 1);
+    assert.equal(state.getGroupConversationMemories('Dain').length, 1);
+    assert.equal(state.getGroupConversationMemories('Seoyeon').length, 0);
+    assert.equal(state.getChatMemory('Teacher').length, 0);
+
+    const restored = new stateWindow.StateManager();
+    restored.importState(state.exportState());
+    assert.equal(restored.getGroupConversationMemories('Teacher')[0].assistantMessages[1].speakerId, 'Dain');
+    assert.match(restored.getGroupConversationMemories('Dain')[0].userContent, /전부 설명/);
+    assert.match(restored.getGroupConversationMemories('Dain')[0].userContent, /\[image attachment\]/);
+    assert.doesNotMatch(restored.getGroupConversationMemories('Dain')[0].userContent, /data:image/);
+    restored.resetForNewGame();
+    assert.equal(restored.getGroupConversationMemories('Teacher').length, 0);
+});
+
+test('later 1:1 prompts receive labeled group history in every language without duplicating it inside group requests', () => {
+    const stateWindow = { GAME_LANG: 'ko', CupidFreeTalkCore: core };
+    vm.runInNewContext(read('assets/js/modules/StateManager.js'), {
+        window: stateWindow,
+        console: { log() {}, error() {} }
+    });
+    const state = new stateWindow.StateManager();
+    state.addGroupConversationMemory({
+        turnId: 'group-turn-context',
+        sessionId: 'morning5_counteroffer_group_talk',
+        participants: ['Teacher', 'Dain'],
+        playerName: '민준',
+        userContent: '내가 책임질게.',
+        assistantMessages: [
+            { speakerId: 'Teacher', speakerName: '담임선생님', content: '먼저 사실대로 말해.' },
+            { speakerId: 'Dain', speakerName: '다인', content: '저도 듣고 있어요.' }
+        ]
+    });
+
+    const freeTalkWindow = { CupidFreeTalkCore: core, GAME_LANG: 'ko', FLAG_MEMORIES: [] };
+    const sandbox = {
+        window: freeTalkWindow,
+        document: { documentElement: { lang: 'ko' } },
+        navigator: { onLine: true },
+        console: { log() {}, info() {}, warn() {}, error() {} },
+        DEFAULT_MAX_FREE_TALK_TURNS: 3,
+        CHAR_NAME_MAP: {},
+        setTimeout,
+        clearTimeout,
+        URL,
+        URLSearchParams,
+        Math,
+        Date,
+        Object,
+        Array,
+        String,
+        Number,
+        Set,
+        Map,
+        Promise
+    };
+    vm.runInNewContext(read('assets/js/modules/FreeTalkSystem.js'), sandbox);
+    const system = new freeTalkWindow.FreeTalkSystem(state, {}, {}, {});
+    const signals = {
+        ko: ['[함께 있었던 대면 대화]', '누가 한 말인지 구분해 기억하세요'],
+        en: ['[Past Face-to-Face Group Conversation]', 'Keep each speaker distinct'],
+        es: ['[Conversación grupal presencial anterior]', 'Distingue siempre a cada hablante'],
+        ja: ['[以前の対面グループ会話]', '誰の発言かを区別して記憶してください'],
+        fr: ['[Ancienne conversation de groupe en face à face]', 'Distinguez clairement chaque personne qui parle'],
+        de: ['[Früheres Gruppengespräch vor Ort]', 'Unterscheide klar, wer gesprochen hat'],
+        pt: ['[Conversa presencial em grupo anterior]', 'Diferencie com clareza quem falou']
+    };
+    for (const [lang, expected] of Object.entries(signals)) {
+        const context = system.getGameContext('Teacher', lang);
+        for (const signal of expected) assert.ok(context.includes(signal), `${lang} group memory lost: ${signal}`);
+    }
+    const korean = system.getGameContext('Teacher', 'ko');
+    assert.match(korean, /민준: 내가 책임질게/);
+    assert.match(korean, /담임선생님: 먼저 사실대로 말해/);
+    assert.match(korean, /다인: 저도 듣고 있어요/);
+    assert.equal(system.getGameContext('Seoyeon', 'ko'), '');
+    assert.equal(system.getGameContext('Teacher', 'ko', { includeGroupConversations: false }), '');
+});
+
 test('day-five confrontation uses two-speaker rendering, bounded recovery, and canonical group logs', () => {
     const scenario = read('assets/js/scenario/day5_1_morning.js');
     const freeTalk = read('assets/js/modules/FreeTalkSystem.js');
@@ -535,6 +636,9 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
     assert.equal((scenario.match(/"next": "morning5_counteroffer_group_talk"/g) || []).length, 10);
     assert.match(freeTalk, /'x-chat-mode': 'group'/);
     assert.match(freeTalk, /responseSpeakers: this\.groupParticipants/);
+    assert.match(freeTalk, /setChatMemory\(groupKey, requestHistory\)/);
+    assert.match(freeTalk, /addGroupConversationMemory\?\.\(\{/);
+    assert.match(freeTalk, /includeGroupConversations: false/);
     assert.match(freeTalk, /let positiveBudget = 3/);
     assert.match(freeTalk, /requestedChange = Math\.min\(3, positiveBudget\)/);
     assert.match(freeTalk, /advanceGroupMessageQueue\(\)/);
