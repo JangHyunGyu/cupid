@@ -251,7 +251,7 @@
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
-        "text": "*El último balón rueda por el suelo. Dain sujeta la muñeca de {name} y presiona la palma abierta contra su corazón, por encima de la camiseta. El pulso acelerado golpea la mano justo cuando los mensajes de Seoyeon hacen vibrar el teléfono una y otra vez.*"
+        "text": "*El último balón rueda por el suelo. Dain recupera el aliento, agarra el borde delantero del uniforme y tira de él hacia abajo. Se inclina hasta quedar justo frente a {name}; su respiración entrecortada se siente a pocos centímetros. Los mensajes de Seoyeon hacen vibrar sin parar el teléfono en el bolsillo.*"
     },
     "wall_seo_yuna_tempt_1": {
         "name": "{name}",
@@ -267,7 +267,7 @@
     },
     "wall_seo_yuna_tempt_accept": {
         "name": "{name}",
-        "text": "*Yuna apoya una mano en la estantería y bloquea la salida. Sin subirse el blazer que le ha caído de un hombro, sostiene la mirada de {name} a pocos centímetros. El mensaje de Seoyeon —«¿Tú también llegaste?»— no desaparece de la pantalla.*"
+        "text": "*Yuna se acerca hasta quedar frente a {name} y apoya una mano en la estantería. Deja que el blazer caiga por debajo de un hombro y, con la otra mano, baja el escote de la prenda oscura que lleva debajo. Con el hombro desnudo y los tatuajes a la vista, sus ojos rojos no se apartan ni un instante. El mensaje de Seoyeon —«¿Tú también llegaste?»— no desaparece de la pantalla.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -581,7 +581,7 @@
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*Yuna no suelta la manga de {name} y lo lleva al interior del anexo. Frente a las estanterías, bloquea la salida y deja el blazer caído de un hombro. El «¡Ya llegué!» de Dain no desaparece de la pantalla.*"
+        "text": "*Yuna se acerca hasta quedar frente a {name} y apoya una mano en la estantería. Deja que el blazer caiga por debajo de un hombro y, con la otra mano, baja el escote de la prenda oscura que lleva debajo. Con el hombro desnudo y los tatuajes a la vista, sus ojos rojos no se apartan ni un instante. El «¡Ya llegué!» de Dain no desaparece de la pantalla.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -609,7 +609,7 @@
     },
     "wall_dain_seo_tempt_accept": {
         "name": "{name}",
-        "text": "*La puerta de la azotea se cierra. Seoyeon toma mi mano y la lleva hasta los latidos de su corazón, por encima de la blusa abotonada y el blazer. Su pulso se acelera bajo mi palma cuando el mensaje de Dain —«¿Llegaste bien?»— ilumina la pantalla.*"
+        "text": "*La puerta de la azotea se cierra. Sin decir nada, Seoyeon desabrocha la blusa, sujeta la muñeca de {name} y atrae la mano hacia ella. La palma toca su pecho desnudo entre la blusa abierta, y la mano de Seoyeon se posa encima. El mensaje de Dain —«¿Llegaste bien?»— ilumina la pantalla.*"
     },
     "wall_yuna_1": {
         "name": "{name}",
@@ -823,7 +823,7 @@
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*La puerta de la azotea se cierra. Seoyeon toma mi mano y la lleva hasta los latidos de su corazón, por encima de la blusa abotonada y el blazer. Su pulso se acelera bajo mi palma cuando el mensaje de Yuna hace vibrar el teléfono una vez y luego otra.*"
+        "text": "*La puerta de la azotea se cierra. Sin decir nada, Seoyeon desabrocha la blusa, sujeta la muñeca de {name} y atrae la mano hacia ella. La palma toca su pecho desnudo entre la blusa abierta, y la mano de Seoyeon se posa encima. El mensaje de Yuna hace vibrar el teléfono una vez y luego otra.*"
     },
     "wall_yuna_dain_tempt_1": {
         "name": "{name}",
@@ -839,7 +839,7 @@
     },
     "wall_yuna_dain_tempt_accept": {
         "name": "{name}",
-        "text": "*El último balón rueda por el suelo. Dain sujeta la muñeca de {name} y presiona la palma abierta contra su corazón, por encima de la camiseta. El pulso acelerado golpea la mano justo cuando el nombre de Yuna aparece una y otra vez en la pantalla.*"
+        "text": "*El último balón rueda por el suelo. Dain recupera el aliento, agarra el borde delantero del uniforme y tira de él hacia abajo. Se inclina hasta quedar justo frente a {name}; su respiración entrecortada se siente a pocos centímetros. El nombre de Yuna aparece una y otra vez en la pantalla.*"
     },
     "day4_night_regret": {
         "name": "{name}",

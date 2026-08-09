@@ -251,7 +251,7 @@
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
-        "text": "*Le dernier ballon roule sur le sol. Dain saisit le poignet de {name} et plaque la paume ouverte contre son cœur, par-dessus son maillot. Son pouls affolé frappe la main au moment où les messages de Seoyeon font vibrer le téléphone sans arrêt.*"
+        "text": "*Le dernier ballon roule sur le sol. Dain reprend son souffle, agrippe le devant de son maillot et le tire vers le bas. Elle se penche jusqu'à se retrouver tout près de {name}, son souffle encore chaud d'effort à quelques centimètres. Les messages de Seoyeon font vibrer sans arrêt le téléphone dans la poche.*"
     },
     "wall_seo_yuna_tempt_1": {
         "name": "{name}",
@@ -267,7 +267,7 @@
     },
     "wall_seo_yuna_tempt_accept": {
         "name": "{name}",
-        "text": "*Yuna pose une main sur l'étagère et barre le passage. Sans remonter le blazer tombé d'une épaule, elle soutient le regard de {name} à quelques centimètres. Le message de Seoyeon — « Tu es bien rentré aussi ? » — reste affiché en haut de l'écran.*"
+        "text": "*Yuna s'avance tout contre {name} et pose une main sur l'étagère. Elle laisse son blazer glisser sous une épaule et, de l'autre main, abaisse l'encolure du haut sombre qu'elle porte dessous. L'épaule nue et les tatouages exposés, ses yeux rouges ne dévient pas un instant. Le message de Seoyeon — « Tu es bien rentré aussi ? » — reste affiché en haut de l'écran.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -581,7 +581,7 @@
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*Yuna ne lâche pas la manche de {name} et l'entraîne dans l'annexe. Devant les étagères, elle bloque le passage et laisse son blazer glissé d'une épaule. Le « Je suis rentrée ! » de Dain reste affiché en haut de l'écran.*"
+        "text": "*Yuna s'avance tout contre {name} et pose une main sur l'étagère. Elle laisse son blazer glisser sous une épaule et, de l'autre main, abaisse l'encolure du haut sombre qu'elle porte dessous. L'épaule nue et les tatouages exposés, ses yeux rouges ne dévient pas un instant. Le « Je suis rentrée ! » de Dain reste affiché en haut de l'écran.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -609,7 +609,7 @@
     },
     "wall_dain_seo_tempt_accept": {
         "name": "{name}",
-        "text": "*La porte du toit se referme. Seoyeon prend ma main et l'attire contre les battements de son cœur, par-dessus sa blouse boutonnée et son blazer. Son pouls s'emballe sous ma paume quand le message de Dain — « Tu es bien rentré ? » — éclaire l'écran.*"
+        "text": "*La porte du toit se referme. Sans un mot, Seoyeon déboutonne sa blouse, saisit le poignet de {name} et attire la main vers elle. La paume rencontre la peau nue de sa poitrine entre les pans ouverts, puis la main de Seoyeon vient la recouvrir. Le message de Dain — « Tu es bien rentré ? » — éclaire l'écran.*"
     },
     "wall_yuna_1": {
         "name": "{name}",
@@ -823,7 +823,7 @@
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*La porte du toit se referme. Seoyeon prend ma main et l'attire contre les battements de son cœur, par-dessus sa blouse boutonnée et son blazer. Son pouls s'emballe sous ma paume quand le message de Yuna fait vibrer le téléphone une fois, puis une seconde.*"
+        "text": "*La porte du toit se referme. Sans un mot, Seoyeon déboutonne sa blouse, saisit le poignet de {name} et attire la main vers elle. La paume rencontre la peau nue de sa poitrine entre les pans ouverts, puis la main de Seoyeon vient la recouvrir. Le message de Yuna fait vibrer le téléphone une fois, puis une seconde.*"
     },
     "wall_yuna_dain_tempt_1": {
         "name": "{name}",
@@ -839,7 +839,7 @@
     },
     "wall_yuna_dain_tempt_accept": {
         "name": "{name}",
-        "text": "*Le dernier ballon roule sur le sol. Dain saisit le poignet de {name} et plaque la paume ouverte contre son cœur, par-dessus son maillot. Son pouls affolé frappe la main au moment où le nom de Yuna réapparaît sans cesse sur l'écran.*"
+        "text": "*Le dernier ballon roule sur le sol. Dain reprend son souffle, agrippe le devant de son maillot et le tire vers le bas. Elle se penche jusqu'à se retrouver tout près de {name}, son souffle encore chaud d'effort à quelques centimètres. Le nom de Yuna réapparaît sans cesse sur l'écran.*"
     },
     "day4_night_regret": {
         "name": "{name}",

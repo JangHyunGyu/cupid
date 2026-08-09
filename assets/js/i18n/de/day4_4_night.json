@@ -251,7 +251,7 @@
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
-        "text": "*Der letzte Ball rollt über den Boden. Dain packt {name} am Handgelenk und drückt die offene Hand durch ihr Trikot auf ihr Herz. Als ihr rasender Puls die Hand trifft, lassen Seoyeons Nachrichten das Handy immer wieder vibrieren.*"
+        "text": "*Der letzte Ball rollt über den Boden. Dain ringt nach Luft, packt den vorderen Saum ihres Trikots und zieht ihn straff nach unten. Dann beugt sie sich so tief zu {name} hinab, dass ihr warmer Atem nach dem Training nur Zentimeter entfernt ist. Seoyeons Nachrichten lassen das Handy in der Tasche immer wieder vibrieren.*"
     },
     "wall_seo_yuna_tempt_1": {
         "name": "{name}",
@@ -267,7 +267,7 @@
     },
     "wall_seo_yuna_tempt_accept": {
         "name": "{name}",
-        "text": "*Yuna stützt eine Hand ans Regal und versperrt den Rückweg. Ohne den von einer Schulter gerutschten Blazer hochzuziehen, hält sie {name}s Blick aus nächster Nähe fest. Seoyeons Nachricht — „Bist du auch gut angekommen?“ — bleibt oben auf dem Bildschirm stehen.*"
+        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand gegen das Regal. Sie lässt den Blazer unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres dunklen Oberteils hinab. Schulter und Tattoos liegen frei, doch ihre roten Augen weichen keinen Moment aus. Seoyeons Nachricht — „Bist du auch gut angekommen?“ — bleibt oben auf dem Bildschirm stehen.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -581,7 +581,7 @@
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*Yuna lässt {name}s Ärmel nicht los und zieht ihn mit ins Nebengebäude. Vor den Regalen versperrt sie den Rückweg und lässt den Blazer von einer Schulter hängen. Dains „Bin zu Hause!“ bleibt oben auf dem Bildschirm stehen.*"
+        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand gegen das Regal. Sie lässt den Blazer unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres dunklen Oberteils hinab. Schulter und Tattoos liegen frei, doch ihre roten Augen weichen keinen Moment aus. Dains „Bin zu Hause!“ bleibt oben auf dem Bildschirm stehen.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -609,7 +609,7 @@
     },
     "wall_dain_seo_tempt_accept": {
         "name": "{name}",
-        "text": "*Die Dachtür fällt zu. Seoyeon nimmt meine Hand und zieht sie durch die geschlossene Bluse und den Blazer an ihr Herz. Ihr schneller Puls schlägt gegen meine Handfläche, als Dains Nachricht — „Gut nach Hause gekommen?“ — den Bildschirm aufleuchten lässt.*"
+        "text": "*Die Dachtür fällt zu. Wortlos öffnet Seoyeon die Knöpfe ihrer Bluse, umfasst {name}s Handgelenk und zieht die Hand an sich. Zwischen den geöffneten Blusenrändern berührt die Handfläche ihre nackte Brust, dann legt Seoyeon ihre Hand darüber. Dains Nachricht — „Gut nach Hause gekommen?“ — lässt den Bildschirm aufleuchten.*"
     },
     "wall_yuna_1": {
         "name": "{name}",
@@ -823,7 +823,7 @@
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*Die Dachtür fällt zu. Seoyeon nimmt meine Hand und zieht sie durch die geschlossene Bluse und den Blazer an ihr Herz. Ihr schneller Puls schlägt gegen meine Handfläche, als Yunas Nachricht das Handy einmal und dann noch einmal vibrieren lässt.*"
+        "text": "*Die Dachtür fällt zu. Wortlos öffnet Seoyeon die Knöpfe ihrer Bluse, umfasst {name}s Handgelenk und zieht die Hand an sich. Zwischen den geöffneten Blusenrändern berührt die Handfläche ihre nackte Brust, dann legt Seoyeon ihre Hand darüber. Yunas Nachricht lässt das Handy einmal und dann noch einmal vibrieren.*"
     },
     "wall_yuna_dain_tempt_1": {
         "name": "{name}",
@@ -839,7 +839,7 @@
     },
     "wall_yuna_dain_tempt_accept": {
         "name": "{name}",
-        "text": "*Der letzte Ball rollt über den Boden. Dain packt {name} am Handgelenk und drückt die offene Hand durch ihr Trikot auf ihr Herz. Als ihr rasender Puls die Hand trifft, erscheint Yunas Name immer wieder auf dem Display.*"
+        "text": "*Der letzte Ball rollt über den Boden. Dain ringt nach Luft, packt den vorderen Saum ihres Trikots und zieht ihn straff nach unten. Dann beugt sie sich so tief zu {name} hinab, dass ihr warmer Atem nach dem Training nur Zentimeter entfernt ist. Yunas Name erscheint immer wieder auf dem Display.*"
     },
     "day4_night_regret": {
         "name": "{name}",
