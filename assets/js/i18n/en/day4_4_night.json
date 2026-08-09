@@ -251,7 +251,7 @@
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
-        "text": "*The last ball rolls across the floor. Before she can catch her breath, Dain folds into {name}'s arms. Seoyeon's messages keep vibrating in my pocket.*"
+        "text": "*The last ball rolls across the floor. Dain catches {name}'s wrist and presses the open palm over her heart through her jersey. Her racing pulse hits the hand just as Seoyeon's messages keep buzzing in my pocket.*"
     },
     "wall_seo_yuna_tempt_1": {
         "name": "{name}",
@@ -267,7 +267,7 @@
     },
     "wall_seo_yuna_tempt_accept": {
         "name": "{name}",
-        "text": "*When I sit beside Yuna, her grip tightens around the end of my sleeve. Seoyeon's message—'Did you make it home too?'—stays at the top of the screen.*"
+        "text": "*Yuna braces a hand against the shelf and seals off the way back. She makes no move to pull up the blazer slipped from one shoulder, holding {name}'s gaze from inches away. Seoyeon's message—'Did you make it home too?'—stays at the top of the screen.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -581,7 +581,7 @@
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*I tuck Dain's wrist brace into my pocket and turn back toward the school gate. The moment Yuna comes downstairs, she catches hold of {name}'s sleeve.*"
+        "text": "*Yuna keeps hold of {name}'s sleeve and leads the way inside the annex. At the shelves, she blocks the way back and leaves the blazer fallen from one shoulder. Dain's 'I'm home!' stays at the top of the screen.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -609,7 +609,7 @@
     },
     "wall_dain_seo_tempt_accept": {
         "name": "{name}",
-        "text": "*The rooftop door closes and Seoyeon takes my hand first. Dain's 'You get home okay?' lights the screen with a buzz.*"
+        "text": "*The rooftop door closes. Seoyeon takes my hand and draws it against her heartbeat through her buttoned blouse and blazer. Her pulse races under my palm as Dain's 'You get home okay?' lights the screen.*"
     },
     "wall_yuna_1": {
         "name": "{name}",
@@ -823,7 +823,7 @@
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*The rooftop door closes and Seoyeon takes my hand first. Yuna's message buzzes once in my pocket, then a second time.*"
+        "text": "*The rooftop door closes. Seoyeon takes my hand and draws it against her heartbeat through her buttoned blouse and blazer. Her pulse races under my palm as Yuna's message buzzes once in my pocket, then a second time.*"
     },
     "wall_yuna_dain_tempt_1": {
         "name": "{name}",
@@ -839,7 +839,7 @@
     },
     "wall_yuna_dain_tempt_accept": {
         "name": "{name}",
-        "text": "*The last ball rolls across the floor. Before she can catch her breath, Dain folds into {name}'s arms. Yuna's name keeps appearing on the phone screen.*"
+        "text": "*The last ball rolls across the floor. Dain catches {name}'s wrist and presses the open palm over her heart through her jersey. Her racing pulse hits the hand just as Yuna's name keeps appearing on the phone screen.*"
     },
     "day4_night_regret": {
         "name": "{name}",

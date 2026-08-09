@@ -251,7 +251,7 @@
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
-        "text": "*Der letzte Ball rollt über den Boden. Noch ehe sie wieder zu Atem kommt, sinkt Dain in {name}s Arme. Seoyeons Nachrichten lassen das Handy immer wieder vibrieren.*"
+        "text": "*Der letzte Ball rollt über den Boden. Dain packt {name} am Handgelenk und drückt die offene Hand durch ihr Trikot auf ihr Herz. Als ihr rasender Puls die Hand trifft, lassen Seoyeons Nachrichten das Handy immer wieder vibrieren.*"
     },
     "wall_seo_yuna_tempt_1": {
         "name": "{name}",
@@ -267,7 +267,7 @@
     },
     "wall_seo_yuna_tempt_accept": {
         "name": "{name}",
-        "text": "*Als ich mich neben Yuna setze, greifen ihre Finger fester um meinen Ärmel. Seoyeons Nachricht — „Bist du auch gut angekommen?“ — bleibt oben auf dem Bildschirm stehen.*"
+        "text": "*Yuna stützt eine Hand ans Regal und versperrt den Rückweg. Ohne den von einer Schulter gerutschten Blazer hochzuziehen, hält sie {name}s Blick aus nächster Nähe fest. Seoyeons Nachricht — „Bist du auch gut angekommen?“ — bleibt oben auf dem Bildschirm stehen.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -581,7 +581,7 @@
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*Ich stecke Dains Handgelenkbandage ein und gehe zum Hintertor zurück. Kaum ist Yuna die Treppe heruntergekommen, hält sie {name} am Ärmel fest.*"
+        "text": "*Yuna lässt {name}s Ärmel nicht los und zieht ihn mit ins Nebengebäude. Vor den Regalen versperrt sie den Rückweg und lässt den Blazer von einer Schulter hängen. Dains „Bin zu Hause!“ bleibt oben auf dem Bildschirm stehen.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -609,7 +609,7 @@
     },
     "wall_dain_seo_tempt_accept": {
         "name": "{name}",
-        "text": "*Die Dachtür fällt zu, und Seoyeon nimmt als Erste meine Hand. Dains Nachricht — „Gut nach Hause gekommen?“ — lässt den Bildschirm aufleuchten.*"
+        "text": "*Die Dachtür fällt zu. Seoyeon nimmt meine Hand und zieht sie durch die geschlossene Bluse und den Blazer an ihr Herz. Ihr schneller Puls schlägt gegen meine Handfläche, als Dains Nachricht — „Gut nach Hause gekommen?“ — den Bildschirm aufleuchten lässt.*"
     },
     "wall_yuna_1": {
         "name": "{name}",
@@ -823,7 +823,7 @@
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*Die Dachtür fällt zu, und Seoyeon nimmt als Erste meine Hand. Yunas Nachricht lässt das Handy einmal und dann noch einmal vibrieren.*"
+        "text": "*Die Dachtür fällt zu. Seoyeon nimmt meine Hand und zieht sie durch die geschlossene Bluse und den Blazer an ihr Herz. Ihr schneller Puls schlägt gegen meine Handfläche, als Yunas Nachricht das Handy einmal und dann noch einmal vibrieren lässt.*"
     },
     "wall_yuna_dain_tempt_1": {
         "name": "{name}",
@@ -839,7 +839,7 @@
     },
     "wall_yuna_dain_tempt_accept": {
         "name": "{name}",
-        "text": "*Der letzte Ball rollt über den Boden. Noch ehe sie wieder zu Atem kommt, sinkt Dain in {name}s Arme. Yunas Name erscheint immer wieder auf dem Display.*"
+        "text": "*Der letzte Ball rollt über den Boden. Dain packt {name} am Handgelenk und drückt die offene Hand durch ihr Trikot auf ihr Herz. Als ihr rasender Puls die Hand trifft, erscheint Yunas Name immer wieder auf dem Display.*"
     },
     "day4_night_regret": {
         "name": "{name}",

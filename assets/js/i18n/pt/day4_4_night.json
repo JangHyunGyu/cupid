@@ -251,7 +251,7 @@
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
-        "text": "*A última bola rola pelo chão. Sem recuperar o fôlego, Dain se abriga nos braços de {name}. As mensagens de Seoyeon fazem o celular vibrar sem parar.*"
+        "text": "*A última bola rola pelo chão. Dain segura o pulso de {name} e pressiona a palma aberta contra o coração, por cima do uniforme. A pulsação acelerada bate na mão no instante em que as mensagens de Seoyeon fazem o celular vibrar sem parar.*"
     },
     "wall_seo_yuna_tempt_1": {
         "name": "{name}",
@@ -267,7 +267,7 @@
     },
     "wall_seo_yuna_tempt_accept": {
         "name": "{name}",
-        "text": "*Quando me sento ao lado de Yuna, os dedos dela apertam a ponta da minha manga. A mensagem de Seoyeon — 'Você também chegou?' — não sai do topo da tela.*"
+        "text": "*Yuna apoia uma mão na estante e bloqueia a saída. Sem erguer o blazer que caiu de um dos ombros, ela sustenta o olhar de {name} a poucos centímetros. A mensagem de Seoyeon — 'Você também chegou?' — não sai do topo da tela.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -581,7 +581,7 @@
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*Guardo no bolso a munhequeira que Dain me deu e volto ao portão dos fundos. Assim que desce as escadas, Yuna segura a manga de {name}.*"
+        "text": "*Yuna não solta a manga de {name} e o leva para dentro do anexo. Diante das estantes, ela bloqueia a saída e deixa o blazer caído de um ombro. O 'Cheguei em casa!' de Dain não sai do topo da tela.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -609,7 +609,7 @@
     },
     "wall_dain_seo_tempt_accept": {
         "name": "{name}",
-        "text": "*A porta do terraço se fecha e Seoyeon é a primeira a segurar minha mão. A mensagem de Dain — 'Chegou bem?' — acende a tela com uma vibração.*"
+        "text": "*A porta do terraço se fecha. Seoyeon segura minha mão e a leva até as batidas do coração, por cima da blusa abotoada e do blazer. O pulso acelera sob minha palma quando a mensagem de Dain — 'Chegou bem?' — acende a tela.*"
     },
     "wall_yuna_1": {
         "name": "{name}",
@@ -823,7 +823,7 @@
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*A porta do terraço se fecha e Seoyeon é a primeira a segurar minha mão. A mensagem de Yuna faz o celular vibrar uma vez e depois outra.*"
+        "text": "*A porta do terraço se fecha. Seoyeon segura minha mão e a leva até as batidas do coração, por cima da blusa abotoada e do blazer. O pulso acelera sob minha palma quando a mensagem de Yuna faz o celular vibrar uma vez e depois outra.*"
     },
     "wall_yuna_dain_tempt_1": {
         "name": "{name}",
@@ -839,7 +839,7 @@
     },
     "wall_yuna_dain_tempt_accept": {
         "name": "{name}",
-        "text": "*A última bola rola pelo chão. Sem recuperar o fôlego, Dain se abriga nos braços de {name}. O nome de Yuna aparece várias vezes na tela do celular.*"
+        "text": "*A última bola rola pelo chão. Dain segura o pulso de {name} e pressiona a palma aberta contra o coração, por cima do uniforme. A pulsação acelerada bate na mão no instante em que o nome de Yuna aparece várias vezes na tela do celular.*"
     },
     "day4_night_regret": {
         "name": "{name}",
