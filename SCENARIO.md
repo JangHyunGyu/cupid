@@ -17773,7 +17773,7 @@
 - 배경: `school_back.png`
 - 선택지:
   1. "서연과 한 약속을 지키고 돌아간다" → `day4_hidden_msg_branch` | Seoyeon +6, Dain -6 | 플래그: `day4_held_route_seoyeon`
-  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `wall_seo_glimpse_4` | Dain +15, Seoyeon -15 | 플래그: `day4_took_dain_counteroffer`, `day4_betrayed_route_seoyeon`
+  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `wall_seo_glimpse_4` | Dain +50, Seoyeon -50 | 플래그: `day4_took_dain_counteroffer`
 
 - 캐릭터: `dain_sad.png`
 **다인**: 열 번만 받아줘. 끝나면… 나 좀 안아주라. 오늘은 혼자 괜찮은 척 못 하겠어.
@@ -17803,7 +17803,7 @@
 - 배경: `yuna_hideout.png`
 - 선택지:
   1. "서연에게 답장하고 약속대로 돌아간다" → `day4_hidden_msg_branch` | Seoyeon +6, Yuna -6 | 플래그: `day4_held_route_seoyeon`
-  2. "별관으로 가서 유나 곁에 남는다" → `wall_seo_yuna_tempt_accept` | Yuna +15, Seoyeon -15 | 플래그: `day4_took_yuna_counteroffer`, `day4_betrayed_route_seoyeon`
+  2. "별관으로 가서 유나 곁에 남는다" → `wall_seo_yuna_tempt_accept` | Yuna +50, Seoyeon -50 | 플래그: `day4_took_yuna_counteroffer`
 
 - 캐릭터: `yuna_sad.png`
 **유나**: 전에 나를 봐주던 사람이 말도 없이 사라졌어. 오늘 네가 그냥 가면 또 그날 같을 것 같아. 딱 오늘만, 여기 있어 줘.
@@ -17850,7 +17850,7 @@
 - 배경: `school_back.png`
 - 선택지:
   1. "다인에게 답장하고 약속대로 돌아간다" → `day4_hidden_msg_branch` | Dain +6, Yuna -6 | 플래그: `day4_held_route_dain`
-  2. "학교 후문으로 돌아가 유나 곁에 남는다" → `wall_dain_glimpse_4` | Yuna +15, Dain -15 | 플래그: `day4_took_yuna_counteroffer`, `day4_betrayed_route_dain`
+  2. "학교 후문으로 돌아가 유나 곁에 남는다" → `wall_dain_glimpse_4` | Yuna +50, Dain -50 | 플래그: `day4_took_yuna_counteroffer`
 
 - 캐릭터: `yuna_normal.png` @ 0.35
 **유나**: 전에 나를 봐주던 사람이 말도 없이 사라졌어. 오늘 또 혼자 남으면 그때로 돌아갈 것 같아. 다인과 있었어도 괜찮아. 지금은 네가 와줘.
@@ -17879,7 +17879,7 @@
 - 배경: `school_back.png`
 - 선택지:
   1. "다인에게 답장하고 약속대로 돌아간다" → `day4_hidden_msg_branch` | Dain +6, Seoyeon -6 | 플래그: `day4_held_route_dain`
-  2. "서연을 따라 옥상에 올라가 손을 잡는다" → `wall_dain_seo_tempt_accept` | Seoyeon +15, Dain -15 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_betrayed_route_dain`
+  2. "서연을 따라 옥상에 올라가 손을 잡는다" → `wall_dain_seo_tempt_accept` | Seoyeon +50, Dain -50 | 플래그: `day4_took_seoyeon_counteroffer`
 
 - 캐릭터: `seyoun_sad.png`
 **서연**: 오늘 집에 들어가면 또 웃는 얼굴부터 맞춰야 해. 딱 오늘만 학생회장 말고 그냥 서연으로 있게 해줘. 올라오면, 네 손 안 놓을게.
@@ -17920,7 +17920,7 @@
 - 배경톤: `dream`
 - 선택지:
   1. "유나에게 답장하고 약속대로 돌아간다" → `day4_hidden_msg_branch` | Yuna +6, Seoyeon -6 | 플래그: `day4_held_route_yuna`
-  2. "서연을 따라 옥상으로 올라가 손을 잡는다" → `wall_yuna_glimpse_4` | Seoyeon +15, Yuna -15 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_betrayed_route_yuna`
+  2. "서연을 따라 옥상으로 올라가 손을 잡는다" → `wall_yuna_glimpse_4` | Seoyeon +50, Yuna -50 | 플래그: `day4_took_seoyeon_counteroffer`
 
 - 캐릭터: `seyoun_normal.png`
 **서연**: 오늘 집에 들어가면 또 웃는 얼굴부터 맞춰야 해. 딱 오늘만 학생회장 말고 그냥 서연으로 있게 해줘. 올라오면, 네 손 안 놓을게.
@@ -17952,7 +17952,7 @@
 - 배경톤: `lights-off`
 - 선택지:
   1. "유나에게 답장하고 약속대로 돌아간다" → `day4_hidden_msg_branch` | Yuna +6, Dain -6 | 플래그: `day4_held_route_yuna`
-  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `wall_yuna_dain_tempt_accept` | Dain +15, Yuna -15 | 플래그: `day4_took_dain_counteroffer`, `day4_betrayed_route_yuna`
+  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `wall_yuna_dain_tempt_accept` | Dain +50, Yuna -50 | 플래그: `day4_took_dain_counteroffer`
 
 - 캐릭터: `dain_sad.png`
 **다인**: 열 번만 받아줘. 끝나면… 나 좀 안아주라. 오늘은 혼자 괜찮은 척 못 하겠어.
@@ -20919,9 +20919,6 @@
 - 분기:
   - [`day3_caught_multiple_dates`] → `day5_ending_mayhem`
   - [`ending_harem`] → `day5_ending_harem`
-  - [`day4_betrayed_route_seoyeon`] → `day5_betrayal_break_seo`
-  - [`day4_betrayed_route_dain`] → `day5_betrayal_break_dain`
-  - [`day4_betrayed_route_yuna`] → `day5_betrayal_break_yuna`
   - [`day5_last_chance_path`] → `ending_last_chance_resolve`
   - [`both_hidden_day5`] → `hidden_dual_route_1`
   - [`homeroom_day5`] → `hidden_perfect_homeroom_check`
@@ -20933,36 +20930,6 @@
 
 - 캐릭터: `없음`
 **시스템**: ‹빈›
-
----
-
-### `day5_betrayal_break_seo`
-- 배경: `ending_confess_fail_seoyeon.png`
-- BGM: `night2.mp3`
-- 다음: `confess_fail_1`
-
-- 캐릭터: `없음`
-**서연**: *약속 장소에서 어젯밤 다른 사람에게 돌아섰다고 숨김없이 말한다. 서연은 끝까지 듣고 안경을 고쳐 쓴다.* 솔직히 말해줘서 고맙다는 말은 못 하겠네. 여기서 끝내자.
-
----
-
-### `day5_betrayal_break_dain`
-- 배경: `ending_confess_fail_dain.png`
-- BGM: `night2.mp3`
-- 다음: `confess_fail_1`
-
-- 캐릭터: `없음`
-**다인**: *어젯밤 다른 사람에게 흔들렸다고 털어놓자 다인이 입술을 깨문 채 한참 바닥만 본다.* 야, 차라리 숨기지. 아니, 그러면 더 싫었겠다. 나 오늘은 웃어줄 자신 없어. 우리 여기까지 하자.
-
----
-
-### `day5_betrayal_break_yuna`
-- 배경: `ending_confess_fail_yuna.png`
-- BGM: `night2.mp3`
-- 다음: `confess_fail_1`
-
-- 캐릭터: `없음`
-**유나**: *어젯밤 다른 사람에게 돌아섰다고 말하자 유나는 책을 덮고 손을 뗀다.* 내 앞에 있으면서 마음은 먼저 다른 데 갔네. 알겠어. 이제 기다리지 않을게.
 
 ---
 

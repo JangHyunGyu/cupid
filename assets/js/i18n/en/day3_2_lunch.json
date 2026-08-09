@@ -1,15 +1,15 @@
 {
     "lunch3_start": {
         "name": "{name}",
-        "text": "*At lunch, all three gather when I open my lunchbox. Seoyeon sits beside me, Dain across from me, and even Yuna drags over an empty chair from the corner where she was eating bread.*"
+        "text": "*At lunch, all three gather when I open my lunchbox. Everyone knows about the weekend invitations from this morning. Seoyeon sits beside me, Dain across from me, and even Yuna drags over an empty chair from the corner where she was eating bread.*"
     },
     "lunch3_start_2_b": {
         "name": "Dain",
-        "text": "*She takes a big bite of the rolled omelette without hesitation.*"
+        "text": "*Dain picks up the rolled omelette before Yuna can. Before lifting her chopsticks, Seoyeon looks across the table.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
-        "text": "Oh, this is good!"
+        "text": "Oh, this is good. Have some too, President. Getting here first doesn't mean you get all of it today."
     },
     "lunch3_meal_2": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "lunch3_meal_3": {
         "name": "Seoyeon",
-        "text": "The rolled omelette's a touch salty. Six out of ten."
+        "text": "I have no intention of monopolizing someone else's lunchbox. The rolled omelette gets a six."
     },
     "lunch3_meal_4": {
         "name": "{name}",
@@ -37,7 +37,7 @@
     },
     "lunch3_meal_7_b": {
         "name": "Yuna",
-        "text": "*Yuna is already chewing the sausage.* It's good."
+        "text": "*Yuna looks at Dain while chewing the sausage.* So the first person to grab it doesn't get to keep it."
     },
     "lunch3_meal_8": {
         "name": "{name}",

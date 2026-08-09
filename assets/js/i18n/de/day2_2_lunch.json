@@ -95,15 +95,15 @@
     },
     "lunch2_seo_9": {
         "name": "Dain",
-        "text": "Da seid ihr ja! Gefunden!"
+        "text": "Da bist du ja. Gefunden. Wolltest du heute schon wieder ohne mich essen?"
     },
     "lunch2_seo_10": {
         "name": "Seoyeon",
-        "text": "Für das Dach braucht man eine Genehmigung."
+        "text": "Für das Dach braucht man eine Genehmigung. Und fürs heutige Mittagessen war ich zuerst verabredet."
     },
     "lunch2_seo_11": {
         "name": "Dain",
-        "text": "Ach was, zum Essen braucht man doch keine Erlaubnis! Oh, eine Bento-Box! Sieht mega lecker aus!"
+        "text": "Dann kann ich mich eben ab jetzt dazusetzen. Ich setze mich auch, ja?"
     },
     "lunch2_seo_12": {
         "name": "{name}",
@@ -111,19 +111,19 @@
     },
     "lunch2_seo_13": {
         "name": "Dain",
-        "text": "Wir haben uns gestern kennengelernt! Er ist echt gut drauf, Frau Präsidentin!"
+        "text": "Gestern hast du noch mit mir gegessen. Bist du innerhalb eines Tages auf das Bento der Schülersprecherin umgestiegen?"
     },
     "lunch2_seo_13b": {
         "name": "Dain",
-        "text": "Oh! Frau Präsidentin? Freut mich!"
+        "text": "Freut mich, Frau Schülersprecherin. Der Platz daneben ist doch frei, oder?"
     },
     "lunch2_seo_13b_b": {
         "name": "Seoyeon",
-        "text": "*Sie dreht ein Fach der Lunchbox zu {name}.* Lebhaft ist sie jedenfalls."
+        "text": "*Seoyeon schiebt das Bento näher zu {name}.* Der Platz mag frei sein, aber die Verabredung nicht."
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "*Als Dain sich zur Lunchbox beugt, zieht sie sie ein Stück zu sich heran.* Du scheinst dich mit Dain ja schon gut zu verstehen."
+        "text": "*Als Dain sich setzen will, zieht sie den freien Stuhl mit der Fußspitze zu sich heran.* Du scheinst dich mit Dain ja schon gut zu verstehen."
     },
     "lunch2_seo_15": {
         "name": "{name}",
@@ -131,19 +131,19 @@
     },
     "lunch2_seo_16": {
         "name": "Seoyeon",
-        "text": "Das entscheide immer noch ich."
+        "text": "Sich näherzukommen und jemandem den Platz zu überlassen, sind zwei verschiedene Dinge."
     },
     "lunch2_seo_17": {
-        "name": "{name}",
-        "text": "*Dains Hand hält über einer Wurst inne, und Seoyeons Stäbchen tippen zweimal gegen den Rand der Lunchbox.*"
+        "name": "Dain",
+        "text": "Dann gebe ich auch nicht nach. Komm in der nächsten Pause in die Sporthalle."
     },
     "lunch2_seo_19": {
         "name": "Seoyeon",
-        "text": "*Sie sieht auf {name}s Mundwinkel.*"
+        "text": "{name}, machst du direkt vor meinen Augen schon die nächste Verabredung aus?"
     },
     "lunch2_seo_20": {
         "name": "Seoyeon",
-        "text": "Du hast da was an der Lippe. Halt still."
+        "text": "Antworte später. Du hast erst mal etwas am Mundwinkel. Halt still."
     },
     "lunch2_seo_choice": {
         "name": "Seoyeon",

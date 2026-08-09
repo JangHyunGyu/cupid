@@ -21,7 +21,7 @@
     },
     "after5_farewell_seo_4": {
         "name": "ソヨン",
-        "text": "まあ、予想はしてた。"
+        "text": "まあ、予想はしてた。それでも、私が先に諦めたようには見られたくない。"
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
@@ -29,7 +29,7 @@
     },
     "after5_farewell_seo_6": {
         "name": "ソヨン",
-        "text": "あなたが決めたなら、それでいい。もう曖昧な態度だけは取らないで。"
+        "text": "あなたが決めたことなら尊重する。でも、私の気持ちまで整理できたわけじゃない。"
     },
     "after5_farewell_seo_6_b": {
         "name": "ソヨン",
@@ -50,7 +50,7 @@
     },
     "after5_farewell_yuna_3": {
         "name": "ユナ",
-        "text": "選んだ人を、待たせないで。"
+        "text": "選んだ人を待たせないで。……それでも、私はまだあなたが好き。"
     },
     "after5_farewell_yuna_4": {
         "name": "ユナ",
@@ -71,7 +71,7 @@
     },
     "after5_farewell_dain_2": {
         "name": "ダイン",
-        "text": "ちぇっ、残念！"
+        "text": "ちぇっ、残念！　でも残念だからって、このまま引き下がる気はないよ。"
     },
     "after5_farewell_dain_3": {
         "name": "{name}",
@@ -79,7 +79,7 @@
     },
     "after5_farewell_dain_4": {
         "name": "ダイン",
-        "text": "あんたが選んだんだから、あたしから文句は言わない。"
+        "text": "誰を選んだかは分かってる。それでも、私はまだあんたが好き。それくらい言ってもいいでしょ。"
     },
     "after5_farewell_dain_4_b": {
         "name": "{name}",
@@ -87,7 +87,7 @@
     },
     "after5_farewell_dain_4_c": {
         "name": "ダイン",
-        "text": "ただし、中途半端なことしたら本気で怒るから。……ちゃんとやりなよ。"
+        "text": "ちゃんとやりなよ。じゃないと、私がまた連れていくから。"
     },
     "after5_farewell_dain_4_d": {
         "name": "ダイン",

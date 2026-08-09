@@ -678,11 +678,11 @@
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",
-        "text": "Tu es libre ce week-end ? J'ai un endroit où j'aimerais aller."
+        "text": "Tu es libre ce week-end ? Allons au parc ensemble."
     },
     "morning3_date_seo_choice": {
         "name": "Seoyeon",
-        "text": "*Elle me croise dans le couloir, puis revient sur ses pas au bout de deux foulées.*",
+        "text": "*Seoyeon pose la question devant la porte de la classe. Dain ne tourne plus le bouchon de sa bouteille.*",
         "choices": [
             "Oui. Où ça ?",
             "Je crois que je serai un peu occupé"
@@ -690,7 +690,7 @@
     },
     "morning3_date_seo_accept": {
         "name": "{name}",
-        "text": "*J'ai accepté la sortie du week-end avec Seoyeon.*"
+        "text": "*J’ai pris rendez-vous avec Seoyeon pour le week-end. Avant même qu’elle ait refermé la porte de la classe, Dain s’approche de mon bureau.*"
     },
     "morning3_date_seo_accept_b": {
         "name": "{name}",
@@ -698,7 +698,7 @@
     },
     "morning3_date_seo_decline": {
         "name": "{name}",
-        "text": "*J’ai décliné la proposition de Seoyeon.*"
+        "text": "*Quand je refuse la proposition de Seoyeon, Dain recommence à tourner le bouchon de sa bouteille.*"
     },
     "morning3_date_seo_decline_b": {
         "name": "{name}",
@@ -706,15 +706,15 @@
     },
     "morning3_date_dain_1": {
         "name": "Dain",
-        "text": "Hé ! Tu fais quoi ce week-end ?! On va à la salle d’arcade ensemble ?!"
+        "text": "Alors, à mon tour. Ça te dit d’aller à la salle d’arcade ce week-end ? La présidente n’est pas la seule à pouvoir te le demander."
     },
     "morning3_date_dain_2": {
         "name": "Dain",
-        "text": "*Ses doigts tapotent le bord du bureau, plus vite que d'habitude. Les pieds de sa chaise raclent le sol par petits à-coups.*"
+        "text": "*Seoyeon est encore devant la porte de la classe. Dain ne détourne pas le regard et tapote le coin du bureau.*"
     },
     "morning3_date_dain_choice": {
         "name": "Dain",
-        "text": "*À la pause suivante, elle vient jusqu'à ma place pour me demander.*",
+        "text": "*Les pas de Seoyeon s’arrêtent. Dain attend ma réponse.*",
         "choices": [
             "OK, c’est parti",
             "Ce week-end, c’est compliqué..."
@@ -722,11 +722,11 @@
     },
     "morning3_date_dain_accept": {
         "name": "{name}",
-        "text": "*J'ai accepté la sortie du week-end avec Dain.*"
+        "text": "*J’ai pris rendez-vous avec Dain pour le week-end. Quand elle sourit, le porte-bloc de Seoyeon se referme une fois dans le couloir.*"
     },
     "morning3_date_dain_decline": {
         "name": "Dain",
-        "text": "Ah bon ? Ben, si t’es occupé, tant pis !"
+        "text": "Ah, vraiment ? Si tu es occupé, tant pis ! Ce n’est pas parce que la présidente t’a demandé en premier, hein ?"
     },
     "morning3_date_dain_decline_narr": {
         "name": "Dain",
@@ -738,19 +738,19 @@
     },
     "morning3_date_yuna_1": {
         "name": "{name}",
-        "text": "*Juste avant le déjeuner, un mot de Yuna m'attend sur mon bureau.*"
+        "text": "*Juste avant le déjeuner, Yuna pose un mot plié sur mon bureau. Seoyeon et Dain regardent sa main au même instant.*"
     },
     "morning3_date_yuna_1_b": {
         "name": "Seoyeon",
-        "text": "Aujourd'hui, c'est omelette roulée."
+        "text": "Yuna. Si tu le demandes par écrit, les autres ne peuvent pas entendre."
     },
     "morning3_date_yuna_2": {
         "name": "{name}",
-        "text": "*'Week-end. Je vais à la librairie d’occasion. Viens si tu veux. — Yuna'*"
+        "text": "*« Ce week-end. Bouquinerie. Même si tu as déjà quelque chose de prévu, viens si tu en as envie. — Yuna »*"
     },
     "morning3_date_yuna_choice": {
         "name": "{name}",
-        "text": "*Je lis le mot de Yuna.*",
+        "text": "*Pendant que je lis le mot, Yuna regarde tour à tour Seoyeon et Dain. Cette fois, elle ne se cache pas derrière son livre.*",
         "choices": [
             "Écrire « Je viendrai » au dos du mot",
             "Écrire « Ce week-end, ça va être difficile » au dos du mot"
@@ -758,7 +758,7 @@
     },
     "morning3_date_yuna_accept": {
         "name": "{name}",
-        "text": "*J'ai accepté la sortie du week-end avec Yuna.*"
+        "text": "*J’écris « Je viendrai » au dos du mot. Tandis que Yuna replie le papier, les doigts de Dain s’immobilisent sur le bureau.*"
     },
     "morning3_date_yuna_decline": {
         "name": "{name}",

@@ -1,15 +1,15 @@
 {
     "lunch3_start": {
         "name": "{name}",
-        "text": "*Hora do almoço. Quando abro a marmita, as três se reúnem no mesmo lugar. Seoyeon se senta ao meu lado, Dain à frente, e Yuna, que comia pão em um canto, puxa uma cadeira vazia.*"
+        "text": "*Hora do almoço. Quando abro a marmita, as três se reúnem no mesmo lugar. Ninguém ali desconhece os convites para o fim de semana feitos de manhã. Seoyeon se senta ao meu lado, Dain à frente, e Yuna, que comia pão em um canto, puxa uma cadeira vazia.*"
     },
     "lunch3_start_2_b": {
         "name": "Dain",
-        "text": "*Dá uma mordida na omelete sem cerimônia nenhuma.*"
+        "text": "*Dain pega a omelete antes de Yuna. Seoyeon olha para o outro lado da mesa antes de erguer os hashis.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
-        "text": "Uau! Tá muito bom!!"
+        "text": "Uau, tá muito bom. Presidente, prova também. Não dá para ficar com tudo só porque chegou primeiro."
     },
     "lunch3_meal_2": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "lunch3_meal_3": {
         "name": "Seoyeon",
-        "text": "A omelete tá um pouco salgada. Seis."
+        "text": "Não pretendo monopolizar a marmita de outra pessoa. A omelete merece nota seis."
     },
     "lunch3_meal_4": {
         "name": "{name}",
@@ -37,7 +37,7 @@
     },
     "lunch3_meal_7_b": {
         "name": "Yuna",
-        "text": "*Já mastigando* ...Tá boa."
+        "text": "*Olha para Dain enquanto mastiga a salsicha.* Então não é de quem pega primeiro."
     },
     "lunch3_meal_8": {
         "name": "{name}",

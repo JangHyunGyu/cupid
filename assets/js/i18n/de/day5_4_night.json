@@ -3,18 +3,6 @@
         "name": "System",
         "text": ""
     },
-    "day5_betrayal_break_seo": {
-        "name": "Seoyeon",
-        "text": "*Am Treffpunkt sage ich ihr offen, dass ich mich gestern Abend jemand anderem zugewandt habe. Seoyeon hört bis zum Ende zu und richtet ihre Brille.* Dafür, dass du ehrlich warst, kann ich dir nicht danken. Beenden wir es hier."
-    },
-    "day5_betrayal_break_dain": {
-        "name": "Dain",
-        "text": "*Als ich gestehe, dass mich gestern Abend jemand anderes ins Wanken gebracht hat, beißt Dain sich auf die Lippe und starrt lange auf den Boden.* Vielleicht hättest du es lieber verheimlichen sollen. Nein, das wäre schlimmer gewesen. Heute kann ich das nicht weglächeln. Mit uns ist es vorbei."
-    },
-    "day5_betrayal_break_yuna": {
-        "name": "Yuna",
-        "text": "*Als ich ihr sage, dass ich mich gestern Abend jemand anderem zugewandt habe, schließt Yuna ihr Buch und zieht ihre Hand zurück.* Du standest vor mir, aber dein Herz war schon woanders. Verstanden. Ich werde nicht mehr warten."
-    },
     "hidden_dual_route_1": {
         "name": "{name}",
         "text": "*Nach dem Aufräumen stecke ich die Kopie aus dem Literaturklub und die Erste-Hilfe-Karte in meine Tasche. Ich weiß noch nicht, an welche Erinnerung ich in ein paar Jahren zurückdenken werde.*"

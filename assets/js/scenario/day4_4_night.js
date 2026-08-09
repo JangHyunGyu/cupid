@@ -393,7 +393,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "competitiveAffinity": true,
         "choices": [
             { "next": "day4_hidden_msg_branch", "stats": {"Seoyeon":{"affinity":6},"Dain":{"affinity":-6}}, "setFlags": ["day4_held_route_seoyeon"] },
-            { "next": "wall_seo_glimpse_4", "stats": {"Dain":{"affinity":15},"Seoyeon":{"affinity":-15}}, "setFlags": ["day4_took_dain_counteroffer","day4_betrayed_route_seoyeon"] }
+            { "next": "wall_seo_glimpse_4", "stats": {"Dain":{"affinity":50},"Seoyeon":{"affinity":-50}}, "setFlags": ["day4_took_dain_counteroffer"] }
         ]
     },
     "wall_seo_glimpse_4": {
@@ -413,7 +413,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "competitiveAffinity": true,
         "choices": [
             { "next": "day4_hidden_msg_branch", "stats": {"Seoyeon":{"affinity":6},"Yuna":{"affinity":-6}}, "setFlags": ["day4_held_route_seoyeon"] },
-            { "next": "wall_seo_yuna_tempt_accept", "stats": {"Yuna":{"affinity":15},"Seoyeon":{"affinity":-15}}, "setFlags": ["day4_took_yuna_counteroffer","day4_betrayed_route_seoyeon"] }
+            { "next": "wall_seo_yuna_tempt_accept", "stats": {"Yuna":{"affinity":50},"Seoyeon":{"affinity":-50}}, "setFlags": ["day4_took_yuna_counteroffer"] }
         ]
     },
     "wall_seo_yuna_tempt_accept": {
@@ -900,7 +900,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "competitiveAffinity": true,
         "choices": [
             { "next": "day4_hidden_msg_branch", "stats": {"Dain":{"affinity":6},"Yuna":{"affinity":-6}}, "setFlags": ["day4_held_route_dain"] },
-            { "next": "wall_dain_glimpse_4", "stats": {"Yuna":{"affinity":15},"Dain":{"affinity":-15}}, "setFlags": ["day4_took_yuna_counteroffer","day4_betrayed_route_dain"] }
+            { "next": "wall_dain_glimpse_4", "stats": {"Yuna":{"affinity":50},"Dain":{"affinity":-50}}, "setFlags": ["day4_took_yuna_counteroffer"] }
         ]
     },
     "wall_dain_seo_tempt_1": {
@@ -914,7 +914,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "competitiveAffinity": true,
         "choices": [
             { "next": "day4_hidden_msg_branch", "stats": {"Dain":{"affinity":6},"Seoyeon":{"affinity":-6}}, "setFlags": ["day4_held_route_dain"] },
-            { "next": "wall_dain_seo_tempt_accept", "stats": {"Seoyeon":{"affinity":15},"Dain":{"affinity":-15}}, "setFlags": ["day4_took_seoyeon_counteroffer","day4_betrayed_route_dain"] }
+            { "next": "wall_dain_seo_tempt_accept", "stats": {"Seoyeon":{"affinity":50},"Dain":{"affinity":-50}}, "setFlags": ["day4_took_seoyeon_counteroffer"] }
         ]
     },
     "wall_dain_seo_tempt_accept": {
@@ -1254,7 +1254,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "competitiveAffinity": true,
         "choices": [
             { "next": "day4_hidden_msg_branch", "stats": {"Yuna":{"affinity":6},"Seoyeon":{"affinity":-6}}, "setFlags": ["day4_held_route_yuna"] },
-            { "next": "wall_yuna_glimpse_4", "stats": {"Seoyeon":{"affinity":15},"Yuna":{"affinity":-15}}, "setFlags": ["day4_took_seoyeon_counteroffer","day4_betrayed_route_yuna"] }
+            { "next": "wall_yuna_glimpse_4", "stats": {"Seoyeon":{"affinity":50},"Yuna":{"affinity":-50}}, "setFlags": ["day4_took_seoyeon_counteroffer"] }
         ]
     },
     "wall_yuna_glimpse_4": {
@@ -1276,7 +1276,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "competitiveAffinity": true,
         "choices": [
             { "next": "day4_hidden_msg_branch", "stats": {"Yuna":{"affinity":6},"Dain":{"affinity":-6}}, "setFlags": ["day4_held_route_yuna"] },
-            { "next": "wall_yuna_dain_tempt_accept", "stats": {"Dain":{"affinity":15},"Yuna":{"affinity":-15}}, "setFlags": ["day4_took_dain_counteroffer","day4_betrayed_route_yuna"] }
+            { "next": "wall_yuna_dain_tempt_accept", "stats": {"Dain":{"affinity":50},"Yuna":{"affinity":-50}}, "setFlags": ["day4_took_dain_counteroffer"] }
         ]
     },
     "wall_yuna_dain_tempt_accept": {

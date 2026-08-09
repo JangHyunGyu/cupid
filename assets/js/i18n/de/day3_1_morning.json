@@ -678,11 +678,11 @@
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",
-        "text": "Hast du am Wochenende Zeit? Es gibt einen Ort, zu dem ich gern möchte."
+        "text": "Hast du am Wochenende Zeit? Lass uns zusammen in den Park gehen."
     },
     "morning3_date_seo_choice": {
         "name": "Seoyeon",
-        "text": "*Auf dem Flur geht sie an mir vorbei und dreht sich nach zwei Schritten wieder um.*",
+        "text": "*Seoyeon fragt vor der Klassenzimmertür. Dain hört auf, den Deckel ihrer Flasche zu drehen.*",
         "choices": [
             "Ja. Wohin?",
             "Ich glaube, ich bin etwas beschäftigt"
@@ -690,7 +690,7 @@
     },
     "morning3_date_seo_accept": {
         "name": "{name}",
-        "text": "*Ich habe mich für das Wochenende mit Seoyeon verabredet.*"
+        "text": "*Ich verabrede mich fürs Wochenende mit Seoyeon. Noch bevor sie die Klassenzimmertür schließen kann, kommt Dain zu meinem Tisch.*"
     },
     "morning3_date_seo_accept_b": {
         "name": "{name}",
@@ -698,7 +698,7 @@
     },
     "morning3_date_seo_decline": {
         "name": "{name}",
-        "text": "*Ich lehne Seoyeons Einladung ab.*"
+        "text": "*Als ich Seoyeons Einladung ablehne, beginnt Dain wieder, den Deckel ihrer Flasche zu drehen.*"
     },
     "morning3_date_seo_decline_b": {
         "name": "{name}",
@@ -706,15 +706,15 @@
     },
     "morning3_date_dain_1": {
         "name": "Dain",
-        "text": "Hey, was machst du am Wochenende? Wollen wir zusammen in die Arcade gehen?"
+        "text": "Dann bin ich dran. Wollen wir am Wochenende in die Spielhalle? Die Schülersprecherin darf schließlich nicht als Einzige fragen."
     },
     "morning3_date_dain_2": {
         "name": "Dain",
-        "text": "*Ihre Finger klopfen schneller als sonst auf die Tischkante. Auch die Stuhlbeine scharren kurz über den Boden.*"
+        "text": "*Seoyeon steht noch vor der Klassenzimmertür. Dain weicht ihrem Blick nicht aus und klopft gegen die Tischecke.*"
     },
     "morning3_date_dain_choice": {
         "name": "Dain",
-        "text": "*In der nächsten Pause tippt Dain gegen die Ecke meines Tischs.*",
+        "text": "*Seoyeons Schritte verstummen. Dain wartet auf meine Antwort.*",
         "choices": [
             "Klar, abgemacht",
             "Dieses Wochenende wird schwierig."
@@ -722,11 +722,11 @@
     },
     "morning3_date_dain_accept": {
         "name": "{name}",
-        "text": "*Ich habe mich für das Wochenende mit Dain verabredet.*"
+        "text": "*Ich verabrede mich fürs Wochenende mit Dain. Als sie lächelt, klappt Seoyeon draußen auf dem Flur einmal ihr Klemmbrett zu.*"
     },
     "morning3_date_dain_decline": {
         "name": "Dain",
-        "text": "Ach so? Na, wenn du keine Zeit hast, kann man nix machen!"
+        "text": "Ach, echt? Wenn du keine Zeit hast, kann man nichts machen! Aber nicht, weil die Schülersprecherin zuerst gefragt hat, oder?"
     },
     "morning3_date_dain_decline_narr": {
         "name": "Dain",
@@ -738,19 +738,19 @@
     },
     "morning3_date_yuna_1": {
         "name": "{name}",
-        "text": "*Kurz vor der Mittagspause liegt ein Zettel von Yuna auf meinem Tisch.*"
+        "text": "*Kurz vor der Mittagspause legt Yuna einen gefalteten Zettel auf meinen Tisch. Seoyeon und Dain sehen gleichzeitig auf ihre Hand.*"
     },
     "morning3_date_yuna_1_b": {
         "name": "Seoyeon",
-        "text": "Heute gibt's also gerolltes Omelett."
+        "text": "Yuna. Wenn du auf einem Zettel fragst, kann es sonst niemand hören."
     },
     "morning3_date_yuna_2": {
         "name": "{name}",
-        "text": "*'Wochenende. Ich gehe zum Antiquariat. Komm, wenn du willst. — Yuna'*"
+        "text": "*‚Wochenende. Antiquariat. Auch wenn du schon etwas vorhast: Komm, wenn du willst. — Yuna‘*"
     },
     "morning3_date_yuna_choice": {
         "name": "{name}",
-        "text": "*Ich lese Yunas Zettel.*",
+        "text": "*Während ich den Zettel lese, sieht Yuna erst Seoyeon und dann Dain an. Diesmal versteckt sie ihr Gesicht nicht hinter einem Buch.*",
         "choices": [
             "Auf die Rückseite »Ich komme« schreiben",
             "Auf die Rückseite »Dieses Wochenende kann ich nicht« schreiben"
@@ -758,7 +758,7 @@
     },
     "morning3_date_yuna_accept": {
         "name": "{name}",
-        "text": "*Ich nehme Yunas Einladung fürs Wochenende an.*"
+        "text": "*Ich schreibe ‚Ich komme‘ auf die Rückseite. Während Yuna den Zettel faltet, halten Dains Finger auf dem Tisch inne.*"
     },
     "morning3_date_yuna_decline": {
         "name": "{name}",

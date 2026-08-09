@@ -95,15 +95,15 @@
     },
     "lunch2_seo_9": {
         "name": "Dain",
-        "text": "There you are. Found you!"
+        "text": "There you are. Found you. Were you going to eat without me again today?"
     },
     "lunch2_seo_10": {
         "name": "Seoyeon",
-        "text": "The rooftop is permit-only."
+        "text": "The rooftop requires permission. And I made lunch plans first today."
     },
     "lunch2_seo_11": {
         "name": "Dain",
-        "text": "Come on, you don't need a permit to eat lunch! — Oh, is that a lunchbox? That looks good!"
+        "text": "Then I can join from now on. I'm sitting too, okay?"
     },
     "lunch2_seo_12": {
         "name": "{name}",
@@ -111,19 +111,19 @@
     },
     "lunch2_seo_13": {
         "name": "Dain",
-        "text": "We met yesterday! He's a lively one, isn't he, President?"
+        "text": "You ate with me yesterday. Did you switch to the president's lunchbox in a single day?"
     },
     "lunch2_seo_13b": {
         "name": "Dain",
-        "text": "Oh! You're the council president? Nice to meet you!"
+        "text": "Nice to meet you, President. The seat beside you is open, right?"
     },
     "lunch2_seo_13b_b": {
         "name": "Seoyeon",
-        "text": "*She turns the lunchbox compartment toward {name}.* She is lively."
+        "text": "*Seoyeon nudges the lunchbox closer to {name}.* The seat may be open, but the promise isn't."
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "*When Dain leans toward the lunchbox, Seoyeon pulls it a little closer to herself.* Looks like you two are already close."
+        "text": "*As Dain starts to sit, Seoyeon hooks the empty chair toward herself with her toe.* Looks like you and Dain are already close."
     },
     "lunch2_seo_15": {
         "name": "{name}",
@@ -131,19 +131,19 @@
     },
     "lunch2_seo_16": {
         "name": "Seoyeon",
-        "text": "I'll decide that."
+        "text": "Getting close and giving way are two different things."
     },
     "lunch2_seo_17": {
-        "name": "{name}",
-        "text": "*Dain's hand stops over a sausage, and Seoyeon's chopsticks tap the edge of the lunchbox twice.*"
+        "name": "Dain",
+        "text": "Then I'm not giving way either. Come to the gym next break."
     },
     "lunch2_seo_19": {
         "name": "Seoyeon",
-        "text": "*She looks at the corner of {name}'s mouth.*"
+        "text": "{name}, are you making your next plans right in front of me?"
     },
     "lunch2_seo_20": {
         "name": "Seoyeon",
-        "text": "You have something on your lip. Hold still."
+        "text": "Answer later. You've got something at the corner of your mouth. Hold still."
     },
     "lunch2_seo_choice": {
         "name": "Seoyeon",

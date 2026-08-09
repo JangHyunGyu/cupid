@@ -3,18 +3,6 @@
         "name": "System",
         "text": ""
     },
-    "day5_betrayal_break_seo": {
-        "name": "Seoyeon",
-        "text": "*At our meeting place, I tell her plainly that I turned to someone else last night. Seoyeon listens to the end and adjusts her glasses.* I can't thank you for being honest. Let's end this here."
-    },
-    "day5_betrayal_break_dain": {
-        "name": "Dain",
-        "text": "*When I admit that someone else swayed me last night, Dain bites her lip and stares at the floor for a long time.* You know, maybe you should've hidden it. No—that would've been worse. I can't smile this off today. We're done."
-    },
-    "day5_betrayal_break_yuna": {
-        "name": "Yuna",
-        "text": "*When I tell her I turned to someone else last night, Yuna closes her book and pulls her hand away.* You were standing in front of me, but your heart had already gone somewhere else. I understand. I won't wait anymore."
-    },
     "hidden_dual_route_1": {
         "name": "{name}",
         "text": "*As I finish cleaning up after the event, I put the literature club critique copy and first-aid card in my bag. I don't yet know what these memories will mean years from now.*"

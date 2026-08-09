@@ -21,7 +21,7 @@
     },
     "after5_farewell_seo_4": {
         "name": "Seoyeon",
-        "text": "Nun, ich habe es erwartet."
+        "text": "Nun, ich habe es erwartet. Trotzdem soll es nicht so aussehen, als hätte ich zuerst aufgegeben."
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
@@ -29,7 +29,7 @@
     },
     "after5_farewell_seo_6": {
         "name": "Seoyeon",
-        "text": "Wenn du dich entschieden hast, reicht mir das. Sei ab jetzt nur nicht mehr so unentschlossen."
+        "text": "Wenn das deine Entscheidung ist, respektiere ich sie. Das heißt aber nicht, dass meine Gefühle schon geklärt sind."
     },
     "after5_farewell_seo_6_b": {
         "name": "Seoyeon",
@@ -50,7 +50,7 @@
     },
     "after5_farewell_yuna_3": {
         "name": "Yuna",
-        "text": "Lass die Person, für die du dich entschieden hast, nicht warten."
+        "text": "Lass die Person, für die du dich entschieden hast, nicht warten. ...Ich mag dich trotzdem noch."
     },
     "after5_farewell_yuna_4": {
         "name": "Yuna",
@@ -71,7 +71,7 @@
     },
     "after5_farewell_dain_2": {
         "name": "Dain",
-        "text": "Mann, schade!"
+        "text": "Mann, schade! Aber ich werde mich nicht einfach zurückziehen und es nur schade finden."
     },
     "after5_farewell_dain_3": {
         "name": "{name}",
@@ -79,7 +79,7 @@
     },
     "after5_farewell_dain_4": {
         "name": "Dain",
-        "text": "Du hast dich entschieden, also sage ich nichts dazu."
+        "text": "Ich weiß, dass du dich entschieden hast. Aber ich mag dich immer noch. Das darf ich doch sagen."
     },
     "after5_farewell_dain_4_b": {
         "name": "{name}",
@@ -87,7 +87,7 @@
     },
     "after5_farewell_dain_4_c": {
         "name": "Dain",
-        "text": "Aber wenn du es halbherzig angehst, werde ich wirklich sauer. Mach es richtig."
+        "text": "Mach es gut. Sonst hole ich dich mir zurück."
     },
     "after5_farewell_dain_4_d": {
         "name": "Dain",

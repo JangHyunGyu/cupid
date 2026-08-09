@@ -1,15 +1,15 @@
 {
     "lunch3_start": {
         "name": "{name}",
-        "text": "*Midi. Dès que j'ouvre mon bento, elles se retrouvent toutes les trois autour de la même table. Seoyeon s'assoit à côté de moi, Dain en face, et même Yuna, qui mangeait son pain dans un coin, tire une chaise libre jusqu'à nous.*"
+        "text": "*Midi. Dès que j’ouvre mon bento, elles se retrouvent toutes les trois autour de la même table. Personne n’ignore les invitations échangées ce matin pour le week-end. Seoyeon s’assoit à côté de moi, Dain en face, et même Yuna, qui mangeait son pain dans un coin, tire une chaise libre jusqu’à nous.*"
     },
     "lunch3_start_2_b": {
         "name": "Dain",
-        "text": "*Elle croque sans hésiter une grosse bouchée d'omelette roulée.*"
+        "text": "*Dain prend l’omelette roulée avant Yuna. Seoyeon regarde en face avant de lever ses baguettes.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
-        "text": "Oh ! C’est bon !!"
+        "text": "Oh, c’est bon. Goûtez aussi, madame la présidente. Ce n’est pas parce qu’on arrive la première qu’on peut tout garder."
     },
     "lunch3_meal_2": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "lunch3_meal_3": {
         "name": "Seoyeon",
-        "text": "L'omelette roulée est un peu salée. Six sur dix."
+        "text": "Je n’ai pas l’intention de monopoliser le bento de quelqu’un d’autre. L’omelette roulée vaut six sur dix."
     },
     "lunch3_meal_4": {
         "name": "{name}",
@@ -37,7 +37,7 @@
     },
     "lunch3_meal_7_b": {
         "name": "Yuna",
-        "text": "*Yuna mâche déjà la saucisse.* C’est bon."
+        "text": "*Elle regarde Dain en mâchant la saucisse.* Ce n’est donc pas la première arrivée qui l’emporte."
     },
     "lunch3_meal_8": {
         "name": "{name}",

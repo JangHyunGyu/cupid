@@ -678,11 +678,11 @@
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",
-        "text": "Free this weekend? There's somewhere I want to go."
+        "text": "Are you free this weekend? Let's go to the park together."
     },
     "morning3_date_seo_choice": {
         "name": "Seoyeon",
-        "text": "*She passes me in the hall, then turns back after two steps.*",
+        "text": "*Seoyeon asks from the classroom doorway. The cap on Dain's water bottle stops turning.*",
         "choices": [
             "Sure. Where?",
             "I might be kind of busy."
@@ -690,7 +690,7 @@
     },
     "morning3_date_seo_accept": {
         "name": "{name}",
-        "text": "*I made weekend plans with Seoyeon.*"
+        "text": "*I make weekend plans with Seoyeon. Before she can even close the classroom door, Dain walks up to my desk.*"
     },
     "morning3_date_seo_accept_b": {
         "name": "{name}",
@@ -698,7 +698,7 @@
     },
     "morning3_date_seo_decline": {
         "name": "{name}",
-        "text": "*I turned down Seoyeon's offer.*"
+        "text": "*When I turn down Seoyeon's offer, Dain starts twisting the water-bottle cap again.*"
     },
     "morning3_date_seo_decline_b": {
         "name": "{name}",
@@ -706,15 +706,15 @@
     },
     "morning3_date_dain_1": {
         "name": "Dain",
-        "text": "Hey! What are you doing this weekend? Want to hit the arcade?"
+        "text": "Then it's my turn. Want to hit the arcade this weekend? The president isn't the only one allowed to ask."
     },
     "morning3_date_dain_2": {
         "name": "Dain",
-        "text": "*Her fingers are tapping the edge of the desk. Faster than usual. The chair legs scrape the floor in short bursts.*"
+        "text": "*Seoyeon is still standing in the classroom doorway. Dain holds her gaze and taps the corner of the desk.*"
     },
     "morning3_date_dain_choice": {
         "name": "Dain",
-        "text": "*During the next break, Dain taps the corner of my desk.*",
+        "text": "*Seoyeon's footsteps stop. Dain waits for my answer.*",
         "choices": [
             "Sure, let's do it",
             "This weekend might be tough."
@@ -722,11 +722,11 @@
     },
     "morning3_date_dain_accept": {
         "name": "{name}",
-        "text": "*I made weekend plans with Dain.*"
+        "text": "*I make weekend plans with Dain. When Dain smiles, Seoyeon's clipboard snaps shut in the hall.*"
     },
     "morning3_date_dain_decline": {
         "name": "Dain",
-        "text": "Oh? Yeah, no, if you're busy, no biggie!"
+        "text": "Oh, yeah? Can't help it if you're busy! It's not because the president asked first, is it?"
     },
     "morning3_date_dain_decline_narr": {
         "name": "Dain",
@@ -738,19 +738,19 @@
     },
     "morning3_date_yuna_1": {
         "name": "{name}",
-        "text": "*Just before lunch, a note from Yuna is waiting on my desk.*"
+        "text": "*Just before lunch, Yuna sets a folded note on my desk. Seoyeon and Dain look at her hand at the same time.*"
     },
     "morning3_date_yuna_1_b": {
         "name": "Seoyeon",
-        "text": "Rolled omelette today, huh."
+        "text": "Yuna. If you ask by note, nobody else can hear you."
     },
     "morning3_date_yuna_2": {
         "name": "{name}",
-        "text": "*'Weekend. Going to the used bookstore. Come if you want. — Yuna'*"
+        "text": "*'Weekend. Used bookstore. Even if you already have plans, come if you want to. — Yuna'*"
     },
     "morning3_date_yuna_choice": {
         "name": "{name}",
-        "text": "*I read Yuna's note.*",
+        "text": "*While I read the note, Yuna looks from Seoyeon to Dain. This time, she doesn't hide behind her book.*",
         "choices": [
             "Write “I'll go” on the back of the note",
             "Write “I can't this weekend” on the back of the note"
@@ -758,7 +758,7 @@
     },
     "morning3_date_yuna_accept": {
         "name": "{name}",
-        "text": "*I accepted the weekend plans with Yuna.*"
+        "text": "*I write 'I'll go' on the back of the note. As Yuna folds the paper, Dain's fingers go still on the desk.*"
     },
     "morning3_date_yuna_decline": {
         "name": "{name}",

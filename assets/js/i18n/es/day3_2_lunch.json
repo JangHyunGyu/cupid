@@ -1,15 +1,15 @@
 {
     "lunch3_start": {
         "name": "{name}",
-        "text": "*Hora del almuerzo. Al abrir la lonchera, las tres se reúnen en el mismo lugar. Seoyeon se sienta a mi lado, Dain enfrente y Yuna, que comía pan en un rincón, acerca una silla vacía.*"
+        "text": "*A la hora del almuerzo, las tres se reúnen cuando abro la lonchera. Todas conocen las invitaciones del fin de semana que se hicieron esta mañana. Seoyeon se sienta a mi lado, Dain enfrente y Yuna, que comía pan en un rincón, acerca una silla vacía.*"
     },
     "lunch3_start_2_b": {
         "name": "Dain",
-        "text": "*Le da un buen mordisco al rollito de huevo sin pensarlo.*"
+        "text": "*Dain toma el rollito de huevo antes que Yuna. Seoyeon mira al otro lado de la mesa antes de levantar los palillos.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
-        "text": "¡Uy, qué rico!"
+        "text": "Uy, qué rico. Coma también, presidenta. Haber llegado primero no significa que hoy pueda quedarse con todo."
     },
     "lunch3_meal_2": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "lunch3_meal_3": {
         "name": "Seoyeon",
-        "text": "El rollito de huevo tiene demasiada sal. Un 6."
+        "text": "No pienso monopolizar la lonchera de otra persona. El rollito de huevo tiene un seis."
     },
     "lunch3_meal_4": {
         "name": "{name}",
@@ -37,7 +37,7 @@
     },
     "lunch3_meal_7_b": {
         "name": "Yuna",
-        "text": "*Masticando ya.* ...Qué rico."
+        "text": "*Yuna mira a Dain mientras mastica la salchicha.* Así que no se lo queda quien lo toma primero."
     },
     "lunch3_meal_8": {
         "name": "{name}",

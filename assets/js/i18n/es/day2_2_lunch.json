@@ -95,15 +95,15 @@
     },
     "lunch2_seo_9": {
         "name": "Dain",
-        "text": "¡Aquí estaban! Los encontré."
+        "text": "Aquí estabas. Te encontré. ¿Hoy también pensabas comer sin mí?"
     },
     "lunch2_seo_10": {
         "name": "Seoyeon",
-        "text": "...La azotea requiere permiso."
+        "text": "La azotea requiere permiso. Y hoy yo hice primero los planes para el almuerzo."
     },
     "lunch2_seo_11": {
         "name": "Dain",
-        "text": "¡Ya, por favor! ¿Desde cuándo hace falta permiso para comer? ¡Vaya, una lonchera! ¡Qué rica se ve!"
+        "text": "Entonces puedo sumarme desde ahora. Me siento también, ¿sí?"
     },
     "lunch2_seo_12": {
         "name": "{name}",
@@ -111,19 +111,19 @@
     },
     "lunch2_seo_13": {
         "name": "Dain",
-        "text": "¡Nos conocimos ayer! ¡Tiene muy buena onda, la presidenta!"
+        "text": "Ayer comiste conmigo. ¿En un solo día me cambiaste por la lonchera de la presidenta?"
     },
     "lunch2_seo_13b": {
         "name": "Dain",
-        "text": "¡Oh! ¿Tú eres la presidenta? ¡Mucho gusto!"
+        "text": "Mucho gusto, presidenta. Pero el asiento de al lado está libre, ¿verdad?"
     },
     "lunch2_seo_13b_b": {
         "name": "Seoyeon",
-        "text": "*Gira hacia {name} el compartimento de la lonchera.* Sí que eres alegre."
+        "text": "*Seoyeon acerca la lonchera hacia {name}.* El asiento estará libre, pero el compromiso no."
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "*Cuando Dain se inclina hacia la lonchera, Seoyeon la acerca un poco hacia sí.* Parece que ya hay confianza entre Dain y tú."
+        "text": "*Cuando Dain intenta sentarse, Seoyeon arrastra la silla vacía hacia sí con la punta del pie.* Parece que Dain y tú ya tienen confianza."
     },
     "lunch2_seo_15": {
         "name": "{name}",
@@ -131,19 +131,19 @@
     },
     "lunch2_seo_16": {
         "name": "Seoyeon",
-        "text": "Eso lo decido yo."
+        "text": "Llevarse bien y ceder son cosas distintas."
     },
     "lunch2_seo_17": {
-        "name": "{name}",
-        "text": "*La mano de Dain se detiene sobre la salchicha y los palillos de Seoyeon golpean dos veces el borde de la lonchera.*"
+        "name": "Dain",
+        "text": "Entonces yo tampoco voy a ceder. Ven al gimnasio en el próximo descanso."
     },
     "lunch2_seo_19": {
         "name": "Seoyeon",
-        "text": "*Mira la comisura de los labios de {name}.*"
+        "text": "{name}, ¿estás haciendo tus próximos planes delante de mí?"
     },
     "lunch2_seo_20": {
         "name": "Seoyeon",
-        "text": "Tienes algo en la boca. Quieto."
+        "text": "Responde después. Primero, tienes algo en la comisura de los labios. Quieto."
     },
     "lunch2_seo_choice": {
         "name": "Seoyeon",

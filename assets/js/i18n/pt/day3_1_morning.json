@@ -678,11 +678,11 @@
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",
-        "text": "Tá livre no fim de semana? Tem um lugar que eu quero ir."
+        "text": "Tá livre no fim de semana? Vamos ao parque juntos."
     },
     "morning3_date_seo_choice": {
         "name": "Seoyeon",
-        "text": "*Ao passar por mim no corredor, ela volta depois de dois passos.*",
+        "text": "*Seoyeon pergunta na porta da sala. Dain para de girar a tampa da garrafa.*",
         "choices": [
             "Tô. Pra onde?",
             "Acho que vou tá meio ocupado"
@@ -690,7 +690,7 @@
     },
     "morning3_date_seo_accept": {
         "name": "{name}",
-        "text": "*Aceitei o rolê de fim de semana com Seoyeon.*"
+        "text": "*Marquei de sair com Seoyeon no fim de semana. Antes mesmo que ela feche a porta da sala, Dain vem até a minha carteira.*"
     },
     "morning3_date_seo_accept_b": {
         "name": "{name}",
@@ -698,7 +698,7 @@
     },
     "morning3_date_seo_decline": {
         "name": "{name}",
-        "text": "*Recusei o convite de Seoyeon.*"
+        "text": "*Quando recuso o convite de Seoyeon, Dain volta a girar a tampa da garrafa.*"
     },
     "morning3_date_seo_decline_b": {
         "name": "{name}",
@@ -706,15 +706,15 @@
     },
     "morning3_date_dain_1": {
         "name": "Dain",
-        "text": "Ei, o que você vai fazer no fim de semana? Quer ir ao fliperama comigo?"
+        "text": "Agora é a minha vez. Quer ir ao fliperama no fim de semana? A presidente não é a única que pode perguntar."
     },
     "morning3_date_dain_2": {
         "name": "Dain",
-        "text": "*Seus dedos estão batendo na borda da mesa. Mais rápido que o normal. As pernas da cadeira raspam o chão em rajadas curtas.*"
+        "text": "*Seoyeon ainda está na porta da sala. Dain não desvia o olhar e tamborila no canto da carteira.*"
     },
     "morning3_date_dain_choice": {
         "name": "Dain",
-        "text": "*No intervalo seguinte, Dain tamborila a ponta da minha carteira.*",
+        "text": "*Os passos de Seoyeon param. Dain espera a minha resposta.*",
         "choices": [
             "Fechou, bora",
             "Fim de semana tá meio corrido..."
@@ -722,11 +722,11 @@
     },
     "morning3_date_dain_accept": {
         "name": "{name}",
-        "text": "*Aceitei o rolê de fim de semana com Dain.*"
+        "text": "*Marquei de sair com Dain no fim de semana. Quando ela sorri, a prancheta de Seoyeon se fecha uma vez no corredor.*"
     },
     "morning3_date_dain_decline": {
         "name": "Dain",
-        "text": "Ah é? Beleza, se você está ocupado, tranquilo!"
+        "text": "Ah, é? Se você está ocupado, fazer o quê! Não é porque a presidente perguntou primeiro, né?"
     },
     "morning3_date_dain_decline_narr": {
         "name": "Dain",
@@ -738,19 +738,19 @@
     },
     "morning3_date_yuna_1": {
         "name": "{name}",
-        "text": "*Pouco antes do almoço, um bilhete de Yuna aparece em cima da minha carteira.*"
+        "text": "*Pouco antes do almoço, Yuna coloca um bilhete dobrado em cima da minha carteira. Seoyeon e Dain olham para a mão dela ao mesmo tempo.*"
     },
     "morning3_date_yuna_1_b": {
         "name": "Seoyeon",
-        "text": "A marmita de hoje tem omelete."
+        "text": "Yuna. Se você pergunta por bilhete, ninguém mais consegue ouvir."
     },
     "morning3_date_yuna_2": {
         "name": "{name}",
-        "text": "*'Fim de semana. Vou num sebo. Vem se quiser. — Yuna'*"
+        "text": "*'Fim de semana. Sebo. Mesmo que já tenha outro compromisso, venha se quiser. — Yuna'*"
     },
     "morning3_date_yuna_choice": {
         "name": "{name}",
-        "text": "*Depois de ler o bilhete de Yuna...*",
+        "text": "*Enquanto leio o bilhete, Yuna olha para Seoyeon e depois para Dain. Desta vez, não esconde o rosto atrás do livro.*",
         "choices": [
             "Escrever «Eu vou» no verso do bilhete",
             "Escrever «Este fim de semana não dá» no verso do bilhete"
@@ -758,7 +758,7 @@
     },
     "morning3_date_yuna_accept": {
         "name": "{name}",
-        "text": "*Aceitei o rolê de fim de semana com Yuna.*"
+        "text": "*Escrevo 'Eu vou' no verso do bilhete. Enquanto Yuna dobra o papel, os dedos de Dain param sobre a carteira.*"
     },
     "morning3_date_yuna_decline": {
         "name": "{name}",

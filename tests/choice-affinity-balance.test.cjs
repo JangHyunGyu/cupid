@@ -1,6 +1,7 @@
 'use strict';
 
 const assert = require('node:assert/strict');
+const crypto = require('node:crypto');
 const fs = require('node:fs');
 const path = require('node:path');
 const test = require('node:test');
@@ -157,7 +158,6 @@ test('day 4 rival temptations are explicit, strictly zero-sum, and localized', (
             rivalCharacter: 'Dain',
             heldFlag: 'day4_held_route_seoyeon',
             temptedFlag: 'day4_took_dain_counteroffer',
-            betrayedFlag: 'day4_betrayed_route_seoyeon',
             choices: ['서연과 한 약속을 지키고 돌아간다', '체육관으로 들어가 다인의 부탁을 받아준다']
         },
         {
@@ -166,7 +166,6 @@ test('day 4 rival temptations are explicit, strictly zero-sum, and localized', (
             rivalCharacter: 'Yuna',
             heldFlag: 'day4_held_route_seoyeon',
             temptedFlag: 'day4_took_yuna_counteroffer',
-            betrayedFlag: 'day4_betrayed_route_seoyeon',
             choices: ['서연에게 답장하고 약속대로 돌아간다', '별관으로 가서 유나 곁에 남는다']
         },
         {
@@ -175,7 +174,6 @@ test('day 4 rival temptations are explicit, strictly zero-sum, and localized', (
             rivalCharacter: 'Seoyeon',
             heldFlag: 'day4_held_route_dain',
             temptedFlag: 'day4_took_seoyeon_counteroffer',
-            betrayedFlag: 'day4_betrayed_route_dain',
             choices: ['다인에게 답장하고 약속대로 돌아간다', '서연을 따라 옥상에 올라가 손을 잡는다']
         },
         {
@@ -184,7 +182,6 @@ test('day 4 rival temptations are explicit, strictly zero-sum, and localized', (
             rivalCharacter: 'Yuna',
             heldFlag: 'day4_held_route_dain',
             temptedFlag: 'day4_took_yuna_counteroffer',
-            betrayedFlag: 'day4_betrayed_route_dain',
             choices: ['다인에게 답장하고 약속대로 돌아간다', '학교 후문으로 돌아가 유나 곁에 남는다']
         },
         {
@@ -193,7 +190,6 @@ test('day 4 rival temptations are explicit, strictly zero-sum, and localized', (
             rivalCharacter: 'Seoyeon',
             heldFlag: 'day4_held_route_yuna',
             temptedFlag: 'day4_took_seoyeon_counteroffer',
-            betrayedFlag: 'day4_betrayed_route_yuna',
             choices: ['유나에게 답장하고 약속대로 돌아간다', '서연을 따라 옥상으로 올라가 손을 잡는다']
         },
         {
@@ -202,7 +198,6 @@ test('day 4 rival temptations are explicit, strictly zero-sum, and localized', (
             rivalCharacter: 'Dain',
             heldFlag: 'day4_held_route_yuna',
             temptedFlag: 'day4_took_dain_counteroffer',
-            betrayedFlag: 'day4_betrayed_route_yuna',
             choices: ['유나에게 답장하고 약속대로 돌아간다', '체육관으로 들어가 다인의 부탁을 받아준다']
         }
     ];
@@ -215,10 +210,9 @@ test('day 4 rival temptations are explicit, strictly zero-sum, and localized', (
         assert.equal(scene.choices[0].stats?.[counteroffer.routeCharacter]?.affinity, 6);
         assert.equal(scene.choices[0].stats?.[counteroffer.rivalCharacter]?.affinity, -6);
         assert.ok(scene.choices[0].setFlags?.includes(counteroffer.heldFlag));
-        assert.equal(scene.choices[1].stats?.[counteroffer.rivalCharacter]?.affinity, 15);
-        assert.equal(scene.choices[1].stats?.[counteroffer.routeCharacter]?.affinity, -15);
+        assert.equal(scene.choices[1].stats?.[counteroffer.rivalCharacter]?.affinity, 50);
+        assert.equal(scene.choices[1].stats?.[counteroffer.routeCharacter]?.affinity, -50);
         assert.ok(scene.choices[1].setFlags?.includes(counteroffer.temptedFlag));
-        assert.ok(scene.choices[1].setFlags?.includes(counteroffer.betrayedFlag));
         assert.deepEqual(korean[counteroffer.sceneId]?.choices, counteroffer.choices);
 
         for (const choice of scene.choices) {
@@ -283,16 +277,51 @@ test('prior-lunch dialogue is reachable only through the flag that proves the lu
     assert.equal(flagProducers[0].next, 'lunch_dain_1');
 });
 
-test('accepting a ranked temptation forces the selected route into a day 5 breakup', () => {
-    const breakupRoutes = [
-        ['day4_betrayed_route_seoyeon', 'day5_betrayal_break_seo'],
-        ['day4_betrayed_route_dain', 'day5_betrayal_break_dain'],
-        ['day4_betrayed_route_yuna', 'day5_betrayal_break_yuna']
+test('day 2 through 5 rivalry copy stays synchronized across every supported locale', () => {
+    const nodeIds = [
+        'lunch2_seo_9', 'lunch2_seo_10', 'lunch2_seo_11', 'lunch2_seo_13',
+        'lunch2_seo_13b', 'lunch2_seo_13b_b', 'lunch2_seo_14', 'lunch2_seo_16',
+        'lunch2_seo_17', 'lunch2_seo_19', 'lunch2_seo_20',
+        'morning3_date_seo_1', 'morning3_date_seo_choice', 'morning3_date_seo_accept',
+        'morning3_date_seo_decline', 'morning3_date_dain_1', 'morning3_date_dain_2',
+        'morning3_date_dain_choice', 'morning3_date_dain_accept', 'morning3_date_dain_decline',
+        'morning3_date_yuna_1', 'morning3_date_yuna_1_b', 'morning3_date_yuna_2',
+        'morning3_date_yuna_choice', 'morning3_date_yuna_accept',
+        'lunch3_start', 'lunch3_start_2_b', 'lunch3_meal_1', 'lunch3_meal_3',
+        'lunch3_meal_7_b',
+        'after5_farewell_seo_4', 'after5_farewell_seo_6', 'after5_farewell_yuna_3',
+        'after5_farewell_dain_2', 'after5_farewell_dain_4', 'after5_farewell_dain_4_c'
     ];
-    for (const [condition, next] of breakupRoutes) {
-        assert.ok(scenes.ending_start.branches.some(branch => branch.condition === condition && branch.next === next));
-        assert.equal(scenes[next].next, 'confess_fail_1');
+    const expectedDigests = {
+        ko: 'c587a4fc2015c57a185c304f896a2d786da4662ac0e762750f160c50ce2f0db4',
+        en: '8aa3130f5948743aafdf57ed9ec319114c88423b669c55feea1565c27d2a8ff8',
+        ja: '1045385342d5e447144c90e10b58cc3b593e5be826ed529da051fa7b85e3eaf1',
+        es: '6f45193071890e9da98339a5b10726674dda09c15e0120185d05999fd09bc631',
+        fr: '7da7185c5c4aa343a6b7b33b2fa4819c4aa47b9e4e770864863e9de1f16f838d',
+        de: 'ac70d4a43ae3646935bbb9e3f93f196735461593eeb77042675cc18b3a471fe7',
+        pt: '6e5b9e97c3e6a41fb1d9a443b41c186f0720c21bdd3c7f97654aff0f2cf2a939'
+    };
+
+    for (const [locale, expectedDigest] of Object.entries(expectedDigests)) {
+        const copy = loadLocaleCopy(locale);
+        const projection = nodeIds.map(nodeId => {
+            const node = copy[nodeId];
+            assert.ok(node, `${locale}:${nodeId} must exist`);
+            return [nodeId, node.name, node.text, node.choices ?? null];
+        });
+        const digest = crypto.createHash('sha256')
+            .update(JSON.stringify(projection))
+            .digest('hex');
+        assert.equal(digest, expectedDigest, `${locale} rivalry copy changed without synchronizing the locale set`);
     }
+});
+
+test('ranked temptation outcomes stay affinity-driven without a forced breakup flag', () => {
+    const allSetFlags = Object.values(scenes)
+        .flatMap(scene => [scene, ...(scene.choices || [])])
+        .flatMap(item => item.setFlags || []);
+    assert.equal(allSetFlags.some(flag => flag.startsWith('day4_betrayed_route_')), false);
+    assert.equal(scenes.ending_start.branches.some(branch => branch.condition?.startsWith('day4_betrayed_route_')), false);
 });
 
 test('character-specific trap choices retain their understated Korean wording and penalties', () => {

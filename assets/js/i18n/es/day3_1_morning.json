@@ -678,11 +678,11 @@
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",
-        "text": "¿Tienes plan este fin de semana? Hay un lugar al que quiero ir."
+        "text": "¿Tienes tiempo este fin de semana? Vamos juntos al parque."
     },
     "morning3_date_seo_choice": {
         "name": "Seoyeon",
-        "text": "*Nos cruzamos en el pasillo y, después de avanzar dos pasos, regresa.*",
+        "text": "*Seoyeon pregunta desde la puerta del salón. La tapa de la botella que Dain estaba girando se detiene.*",
         "choices": [
             "Claro. ¿Dónde?",
             "Creo que voy a estar ocupado"
@@ -690,7 +690,7 @@
     },
     "morning3_date_seo_accept": {
         "name": "{name}",
-        "text": "*Acepté los planes del fin de semana con Seoyeon.*"
+        "text": "*Hago planes para el fin de semana con Seoyeon. Antes de que cierre la puerta del salón, Dain ya está frente a mi pupitre.*"
     },
     "morning3_date_seo_accept_b": {
         "name": "{name}",
@@ -698,7 +698,7 @@
     },
     "morning3_date_seo_decline": {
         "name": "{name}",
-        "text": "*Rechacé la propuesta de Seoyeon.*"
+        "text": "*Cuando rechazo la invitación de Seoyeon, Dain vuelve a girar la tapa de su botella.*"
     },
     "morning3_date_seo_decline_b": {
         "name": "{name}",
@@ -706,15 +706,15 @@
     },
     "morning3_date_dain_1": {
         "name": "Dain",
-        "text": "Oye, ¿qué harás el fin de semana? ¿Quieres ir al arcade conmigo?"
+        "text": "Entonces es mi turno. ¿Quieres ir al arcade este fin de semana? La presidenta no es la única que puede invitarte."
     },
     "morning3_date_dain_2": {
         "name": "Dain",
-        "text": "*Sus dedos están golpeando el borde del escritorio. Más rápido de lo normal. Las patas de la silla raspan el suelo en ráfagas cortas.*"
+        "text": "*Seoyeon sigue en la puerta del salón. Dain no aparta la mirada y tamborilea la esquina del pupitre.*"
     },
     "morning3_date_dain_choice": {
         "name": "Dain",
-        "text": "*En el siguiente descanso, Dain tamborilea la esquina de mi pupitre.*",
+        "text": "*Los pasos de Seoyeon se detienen. Dain espera mi respuesta.*",
         "choices": [
             "Bueno, hecho",
             "El fin de semana no puedo..."
@@ -722,11 +722,11 @@
     },
     "morning3_date_dain_accept": {
         "name": "{name}",
-        "text": "*Acepté los planes del fin de semana con Dain.*"
+        "text": "*Hago planes para el fin de semana con Dain. Cuando ella sonríe, el portapapeles de Seoyeon se cierra de golpe en el pasillo.*"
     },
     "morning3_date_dain_decline": {
         "name": "Dain",
-        "text": "¿Ah, sí? ¡Bueno, si estás ocupado, qué le vamos a hacer!"
+        "text": "¿Ah, sí? ¡Bueno, si estás ocupado, qué le vamos a hacer! No será porque la presidenta preguntó primero, ¿verdad?"
     },
     "morning3_date_dain_decline_narr": {
         "name": "Dain",
@@ -738,19 +738,19 @@
     },
     "morning3_date_yuna_1": {
         "name": "{name}",
-        "text": "*Justo antes del almuerzo, encuentro una nota de Yuna sobre el pupitre.*"
+        "text": "*Justo antes del almuerzo, Yuna deja una nota doblada sobre mi pupitre. Seoyeon y Dain miran su mano al mismo tiempo.*"
     },
     "morning3_date_yuna_1_b": {
         "name": "Seoyeon",
-        "text": "Así que hoy toca tortilla enrollada en la lonchera."
+        "text": "Yuna. Si preguntas con una nota, nadie más puede oírte."
     },
     "morning3_date_yuna_2": {
         "name": "{name}",
-        "text": "*'El fin de semana voy a la librería de usados. Si tienes ganas, vente. — Yuna'*"
+        "text": "*'Fin de semana. Librería de usados. Aunque ya tengas planes, ven si quieres. — Yuna'*"
     },
     "morning3_date_yuna_choice": {
         "name": "{name}",
-        "text": "*Después de leer la nota de Yuna...*",
+        "text": "*Mientras leo la nota, Yuna mira primero a Seoyeon y luego a Dain. Esta vez no se cubre la cara con el libro.*",
         "choices": [
             "Escribir «Iré» al dorso de la nota",
             "Escribir «Este fin de semana no puedo» al dorso de la nota"
@@ -758,7 +758,7 @@
     },
     "morning3_date_yuna_accept": {
         "name": "{name}",
-        "text": "*Acepté los planes del fin de semana con Yuna.*"
+        "text": "*Escribo «Iré» al dorso de la nota. Mientras Yuna dobla el papel, los dedos de Dain se quedan inmóviles sobre el pupitre.*"
     },
     "morning3_date_yuna_decline": {
         "name": "{name}",

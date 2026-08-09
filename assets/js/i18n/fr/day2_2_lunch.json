@@ -95,15 +95,15 @@
     },
     "lunch2_seo_9": {
         "name": "Dain",
-        "text": "Ah, vous voilà ! Je vous ai trouvés !"
+        "text": "Te voilà. Je t’ai trouvé. Tu comptais encore manger sans moi aujourd’hui ?"
     },
     "lunch2_seo_10": {
         "name": "Seoyeon",
-        "text": "...Le toit est réservé aux personnes autorisées."
+        "text": "L’accès au toit est soumis à autorisation. Et c’est moi qui avais prévu ce déjeuner en premier."
     },
     "lunch2_seo_11": {
         "name": "Dain",
-        "text": "Mais n'importe quoi, on n'a pas besoin d'autorisation pour manger ! Oh, un bento ! Ça a l'air trop bon !"
+        "text": "Alors je peux me joindre à vous maintenant. Je m’assois aussi, d’accord ?"
     },
     "lunch2_seo_12": {
         "name": "{name}",
@@ -111,19 +111,19 @@
     },
     "lunch2_seo_13": {
         "name": "Dain",
-        "text": "On s'est rencontrés hier ! Il est plein d'énergie, pas vrai, présidente ?"
+        "text": "Hier, tu as mangé avec moi. En une journée, tu m’as remplacée par le bento de la présidente ?"
     },
     "lunch2_seo_13b": {
         "name": "Dain",
-        "text": "Oh ! C'est toi, la présidente du conseil ? Enchantée !"
+        "text": "Enchantée, madame la présidente. Mais la place à côté est libre, non ?"
     },
     "lunch2_seo_13b_b": {
         "name": "Seoyeon",
-        "text": "*Elle fait pivoter un compartiment du bento vers {name}.* C'est vrai que tu ne manques pas d'énergie."
+        "text": "*Seoyeon rapproche le bento de {name}.* La place est peut-être libre, mais pas la promesse."
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "*Quand Dain se penche vers le bento, Seoyeon le ramène légèrement vers elle.* On dirait que vous êtes déjà proches, tous les deux."
+        "text": "*Alors que Dain s’apprête à s’asseoir, elle ramène la chaise vide vers elle du bout du pied.* On dirait que Dain et toi êtes déjà proches."
     },
     "lunch2_seo_15": {
         "name": "{name}",
@@ -131,19 +131,19 @@
     },
     "lunch2_seo_16": {
         "name": "Seoyeon",
-        "text": "C'est à moi d'en décider."
+        "text": "Se rapprocher et céder sa place, ce n’est pas la même chose."
     },
     "lunch2_seo_17": {
-        "name": "{name}",
-        "text": "*La main de Dain s'immobilise au-dessus d'une saucisse. Les baguettes de Seoyeon tapotent deux fois le bord du bento.*"
+        "name": "Dain",
+        "text": "Alors moi non plus, je ne céderai pas. Viens au gymnase à la prochaine pause."
     },
     "lunch2_seo_19": {
         "name": "Seoyeon",
-        "text": "*Elle regarde le coin de la bouche de {name}.*"
+        "text": "{name}, tu prends déjà ton prochain rendez-vous juste devant moi ?"
     },
     "lunch2_seo_20": {
         "name": "Seoyeon",
-        "text": "T'as un truc sur la lèvre. Bouge pas."
+        "text": "Tu répondras plus tard. D’abord, tu as quelque chose au coin des lèvres. Ne bouge pas."
     },
     "lunch2_seo_choice": {
         "name": "Seoyeon",

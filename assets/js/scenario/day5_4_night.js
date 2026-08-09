@@ -15,9 +15,6 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "branches": [
             { "condition": "day3_caught_multiple_dates", "next": "day5_ending_mayhem" },
             { "condition": "ending_harem", "next": "day5_ending_harem" },
-            { "condition": "day4_betrayed_route_seoyeon", "next": "day5_betrayal_break_seo" },
-            { "condition": "day4_betrayed_route_dain", "next": "day5_betrayal_break_dain" },
-            { "condition": "day4_betrayed_route_yuna", "next": "day5_betrayal_break_yuna" },
             { "condition": "day5_last_chance_path", "next": "ending_last_chance_resolve" },
             { "condition": "both_hidden_day5", "next": "hidden_dual_route_1" },
             { "condition": "homeroom_day5", "next": "hidden_perfect_homeroom_check" },
@@ -27,24 +24,6 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
             { "condition": "day4_waited", "next": "day5_ending_friend" },
             { "next": "day5_ending_alone" }
         ]
-    },
-    "day5_betrayal_break_seo": {
-        "background": "assets/images/background/ending_confess_fail_seoyeon.png",
-        "character": null,
-        "bgm": "night2.mp3",
-        "next": "confess_fail_1"
-    },
-    "day5_betrayal_break_dain": {
-        "background": "assets/images/background/ending_confess_fail_dain.png",
-        "character": null,
-        "bgm": "night2.mp3",
-        "next": "confess_fail_1"
-    },
-    "day5_betrayal_break_yuna": {
-        "background": "assets/images/background/ending_confess_fail_yuna.png",
-        "character": null,
-        "bgm": "night2.mp3",
-        "next": "confess_fail_1"
     },
     "ending_last_chance_resolve": {
         "background": "assets/images/background/park.png",

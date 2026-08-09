@@ -95,15 +95,15 @@
     },
     "lunch2_seo_9": {
         "name": "Dain",
-        "text": "Então vocês estavam aqui. Encontrei."
+        "text": "Aí está você. Te achei. Hoje você ia comer sem mim de novo?"
     },
     "lunch2_seo_10": {
         "name": "Seoyeon",
-        "text": "...O terraço é área autorizada."
+        "text": "O terraço exige autorização. E fui eu que combinei o almoço de hoje primeiro."
     },
     "lunch2_seo_11": {
         "name": "Dain",
-        "text": "Qual é, comer não precisa de autorização. Peraí — marmita caseira?! Que chique!"
+        "text": "Então é só eu entrar agora. Vou sentar também, tá?"
     },
     "lunch2_seo_12": {
         "name": "{name}",
@@ -111,19 +111,19 @@
     },
     "lunch2_seo_13": {
         "name": "Dain",
-        "text": "A gente se conheceu ontem! Gente boa, né, presidente?!"
+        "text": "Ontem você almoçou comigo. Em um dia já me trocou pela marmita da presidente?"
     },
     "lunch2_seo_13b": {
         "name": "Dain",
-        "text": "Opa! A presidente? Prazer!"
+        "text": "Prazer, presidente. Mas o lugar do lado está vazio, não está?"
     },
     "lunch2_seo_13b_b": {
         "name": "Seoyeon",
-        "text": "*Ela gira o compartimento da marmita na direção de {name}.* Você é mesmo animada."
+        "text": "*Seoyeon aproxima a marmita de {name}.* O lugar pode estar vazio, mas o compromisso não."
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "*Quando Dain se inclina para a marmita, Seoyeon a puxa um pouco para perto de si.* Parece que você e Dain já ficaram bem próximos."
+        "text": "*Quando Dain vai se sentar, ela puxa a cadeira vazia para perto com a ponta do pé.* Parece que você e Dain já ficaram bem próximos."
     },
     "lunch2_seo_15": {
         "name": "{name}",
@@ -131,19 +131,19 @@
     },
     "lunch2_seo_16": {
         "name": "Seoyeon",
-        "text": "Isso quem decide sou eu."
+        "text": "Ficar próximo e ceder o lugar são coisas diferentes."
     },
     "lunch2_seo_17": {
-        "name": "{name}",
-        "text": "*A mão de Dain para sobre a salsicha, e os hashis de Seoyeon batem duas vezes na borda da marmita.*"
+        "name": "Dain",
+        "text": "Então eu também não vou ceder. Vem ao ginásio no próximo intervalo."
     },
     "lunch2_seo_19": {
         "name": "Seoyeon",
-        "text": "*Olha para o canto da boca de {name}.*"
+        "text": "{name}, você já está marcando o próximo encontro bem na minha frente?"
     },
     "lunch2_seo_20": {
         "name": "Seoyeon",
-        "text": "Tem alguma coisa no canto da sua boca. Fica parado."
+        "text": "Responde depois. Primeiro, tem alguma coisa no canto da sua boca. Fica parado."
     },
     "lunch2_seo_choice": {
         "name": "Seoyeon",
