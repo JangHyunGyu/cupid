@@ -97,8 +97,8 @@ test('direct choice affinity distribution keeps subtle penalties meaningful but 
         }
     }
 
-    assert.equal(total, 165);
-    assert.deepEqual(counts, { positive: 59, negative: 42, neutral: 51, mixed: 13 });
+    assert.equal(total, 177);
+    assert.deepEqual(counts, { positive: 59, negative: 54, neutral: 51, mixed: 13 });
 });
 
 test('two-option screens retain their original response and add the trap as a third choice', () => {
@@ -133,7 +133,7 @@ test('negative-choice screens stay distributed across every story day', () => {
         2: { choiceScreens: 13, negativeScreens: 8 },
         3: { choiceScreens: 18, negativeScreens: 11 },
         4: { choiceScreens: 21, negativeScreens: 15 },
-        5: { choiceScreens: 5, negativeScreens: 3 }
+        5: { choiceScreens: 11, negativeScreens: 9 }
     };
 
     for (const [day, expectedCounts] of Object.entries(expected)) {
@@ -217,8 +217,9 @@ test('day 4 rival temptations use asymmetric relationship costs and stay localiz
         assert.equal(scene.choices[0].stats?.[counteroffer.rivalCharacter]?.affinity, -6);
         assert.ok(scene.choices[0].setFlags?.includes(counteroffer.heldFlag));
         assert.equal(scene.choices[1].stats?.[counteroffer.rivalCharacter]?.affinity, 8);
-        assert.equal(scene.choices[1].stats?.[counteroffer.routeCharacter]?.affinity, -50);
+        assert.equal(scene.choices[1].stats?.[counteroffer.routeCharacter]?.affinity, -10);
         assert.ok(scene.choices[1].setFlags?.includes(counteroffer.temptedFlag));
+        assert.ok(scene.choices[1].setFlags?.includes('day4_counteroffer_penalty_deferred'));
         assert.deepEqual(korean[counteroffer.sceneId]?.choices, counteroffer.choices);
 
         for (const choice of scene.choices) {
@@ -263,6 +264,54 @@ test('rival temptation CG rewards appear only after accepting the rival offer', 
             `${sceneId} must be gated by an accepted counteroffer`
         );
     }
+});
+
+test('accepted temptations damage trust in two causal stages when the lead sees the notification', () => {
+    const cases = [
+        ['wall_seo_glimpse_2', 'Seoyeon', 'morning5_caught_seoyeon_by_dain', 'morning5_caught_seoyeon_honest', 'morning5_caught_seoyeon_lie'],
+        ['wall_seo_yuna_tempt_2', 'Seoyeon', 'morning5_caught_seoyeon_by_yuna', 'morning5_caught_seoyeon_honest', 'morning5_caught_seoyeon_lie'],
+        ['wall_dain_seo_tempt_2', 'Dain', 'morning5_caught_dain_by_seoyeon', 'morning5_caught_dain_honest', 'morning5_caught_dain_lie'],
+        ['wall_dain_glimpse_4_c', 'Dain', 'morning5_caught_dain_by_yuna', 'morning5_caught_dain_honest', 'morning5_caught_dain_lie'],
+        ['wall_yuna_glimpse_3_b', 'Yuna', 'morning5_caught_yuna_by_seoyeon', 'morning5_caught_yuna_honest', 'morning5_caught_yuna_lie'],
+        ['wall_yuna_dain_tempt_2', 'Yuna', 'morning5_caught_yuna_by_dain', 'morning5_caught_yuna_honest', 'morning5_caught_yuna_lie']
+    ];
+    const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy);
+
+    assert.deepEqual(
+        scenes.morning5_temptation_counteroffer_branch.branches.map(branch => branch.condition || 'fallback'),
+        ['day4_took_seoyeon_counteroffer', 'day4_took_yuna_counteroffer', 'day4_took_dain_counteroffer', 'fallback']
+    );
+    assert.deepEqual(scenes.morning5_temptation_discovery_branch.branches, [
+        { condition: 'day4_counteroffer_penalty_deferred', next: 'morning5_temptation_counteroffer_branch' },
+        { next: 'morning5_committed_start' }
+    ]);
+
+    for (const [acceptSceneId, lead, caughtSceneId, honestNext, lieNext] of cases) {
+        const acceptance = scenes[acceptSceneId].choices[1];
+        const caught = scenes[caughtSceneId];
+        assert.equal(acceptance.stats[lead].affinity, -10, `${acceptSceneId} must apply only the unanswered-message hurt`);
+        assert.equal(caught.choices.length, 2, `${caughtSceneId} must allow honesty or another lie`);
+        assert.equal(caught.choices[0].next, honestNext);
+        assert.equal(caught.choices[0].stats[lead].affinity, -40);
+        assert.equal(caught.choices[1].next, lieNext);
+        assert.equal(caught.choices[1].stats[lead].affinity, -50);
+        assert.equal(acceptance.stats[lead].affinity + caught.choices[0].stats[lead].affinity, -50);
+        assert.equal(acceptance.stats[lead].affinity + caught.choices[1].stats[lead].affinity, -60);
+
+        for (const copy of localizedCopies) {
+            assert.equal(copy[caughtSceneId]?.choices?.length, 2, `${caughtSceneId} choices must exist in every locale`);
+            assert.ok(copy[honestNext]?.text, `${honestNext} text must exist in every locale`);
+            assert.ok(copy[lieNext]?.text, `${lieNext} text must exist in every locale`);
+        }
+    }
+
+    const rankedRivals = [
+        ...scenes.wall_seo_rival_rank.rankedRivalBranches,
+        ...scenes.wall_dain_rival_rank.rankedRivalBranches,
+        ...scenes.wall_yuna_rival_rank.rankedRivalBranches
+    ].map(branch => branch.character);
+    assert.equal(rankedRivals.includes('Teacher'), false);
+    assert.equal(rankedRivals.includes('Nurse'), false);
 });
 
 test('new temptation and bittersweet CGs are registered and localized in every gallery', () => {

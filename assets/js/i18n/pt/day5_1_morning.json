@@ -4,6 +4,83 @@
         "text": "*Quinto dia. É domingo, mas há um evento na escola. As pontas das mangas do uniforme já não arranham meus pulsos.*"
     },
     "morning5_start_branch": {},
+    "morning5_temptation_discovery_branch": {},
+    "morning5_temptation_counteroffer_branch": {},
+    "morning5_caught_by_seoyeon_route": {},
+    "morning5_caught_by_yuna_route": {},
+    "morning5_caught_by_dain_route": {},
+    "morning5_caught_seoyeon_by_dain": {
+        "name": "Seoyeon",
+        "text": "*De manhã, na sala de aula. Assim que coloco o celular diante de Seoyeon, a tela se acende. Uma notificação de Dain diz: “Não esquece o que prometemos ontem à noite no ginásio.” O olhar de Seoyeon para na tela.* Você me levou para casa e depois foi ao ginásio?",
+        "choices": [
+            "Contar sem esconder nada sobre a noite passada",
+            "Desconversar, dizendo que não foi nada importante"
+        ]
+    },
+    "morning5_caught_seoyeon_by_yuna": {
+        "name": "Seoyeon",
+        "text": "*O celular vibra sobre a mesa entre Seoyeon e eu. Uma notificação de Yuna diz: “Obrigada por ter ficado comigo ontem à noite no anexo.” Seoyeon lê até o fim e levanta a cabeça devagar.* Você foi ao anexo sem nem me responder?",
+        "choices": [
+            "Contar sem esconder nada sobre a noite passada",
+            "Desconversar, dizendo que não foi nada importante"
+        ]
+    },
+    "morning5_caught_dain_by_seoyeon": {
+        "name": "Dain",
+        "text": "*O celular vibra enquanto Dain está ao lado da mesa. Uma notificação de Seoyeon diz: “Ainda lembro da mão que segurei ontem à noite no terraço.” O sorriso de Dain congela.* Você perguntou se eu tinha chegado bem e depois voltou ao terraço?",
+        "choices": [
+            "Contar sem esconder nada sobre a noite passada",
+            "Desconversar, dizendo que não foi nada importante"
+        ]
+    },
+    "morning5_caught_dain_by_yuna": {
+        "name": "Dain",
+        "text": "*Quando Dain puxa a cadeira da frente, uma notificação de Yuna ilumina a tela. “Obrigada por ter ficado comigo ontem à noite no anexo.” A mão de Dain para no encosto.* Você foi ao anexo depois que eu mandei mensagem dizendo que tinha chegado em casa?",
+        "choices": [
+            "Contar sem esconder nada sobre a noite passada",
+            "Desconversar, dizendo que não foi nada importante"
+        ]
+    },
+    "morning5_caught_yuna_by_seoyeon": {
+        "name": "Yuna",
+        "text": "*O celular vibra sobre a mesa entre Yuna e eu. Uma notificação de Seoyeon diz: “Ainda lembro da mão que segurei ontem à noite no terraço.” Yuna lê cada palavra antes de tirar os olhos da tela.* Você deixou minhas mensagens sem resposta e foi ao terraço.",
+        "choices": [
+            "Contar sem esconder nada sobre a noite passada",
+            "Desconversar, dizendo que não foi nada importante"
+        ]
+    },
+    "morning5_caught_yuna_by_dain": {
+        "name": "Yuna",
+        "text": "*Quando Yuna abre o livro, uma notificação de Dain aparece na tela. “Não esquece o que prometemos ontem à noite no ginásio.” A mão de Yuna para sobre a capa.* Meu nome ainda estava na sua tela, e mesmo assim você ficou no ginásio.",
+        "choices": [
+            "Contar sem esconder nada sobre a noite passada",
+            "Desconversar, dizendo que não foi nada importante"
+        ]
+    },
+    "morning5_caught_seoyeon_honest": {
+        "name": "Seoyeon",
+        "text": "*Mesmo depois de ouvir tudo, Seoyeon não tira os óculos. Apenas o olhar por trás das lentes esfria devagar.* Não consigo agradecer por você ter sido sincero. Agora eu não consigo olhar para você."
+    },
+    "morning5_caught_seoyeon_lie": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon olha da notificação acesa para o rosto à sua frente. O último vestígio do sorriso desaparece.* A mentira que você acabou de contar está mais clara do que o que aconteceu ontem à noite."
+    },
+    "morning5_caught_dain_honest": {
+        "name": "Dain",
+        "text": "*Dain aperta a munhequeira até o fim e depois solta.* Então, quando perguntei se só eu estava animada, você já estava lá com ela."
+    },
+    "morning5_caught_dain_lie": {
+        "name": "Dain",
+        "text": "*Dain ergue as sobrancelhas, mas o sorriso não volta.* Você achou que praticar esporte me deixava burra?"
+    },
+    "morning5_caught_yuna_honest": {
+        "name": "Yuna",
+        "text": "*Yuna apaga a tela e desliza o celular de volta pela mesa.* Desta vez dói mais porque eu sei aonde você foi."
+    },
+    "morning5_caught_yuna_lie": {
+        "name": "Yuna",
+        "text": "*Em vez de responder, Yuna acende a tela outra vez. A notificação permanece entre nós.* Eu dei a você a chance de me contar, e você escondeu de novo."
+    },
     "morning5_start_b": {
         "name": "{name}",
         "text": "*Assim que entro na sala, três coisas chamam minha atenção ao mesmo tempo: um bilhete sobre a carteira, uma fita amarrada ao cordão do uniforme de educação física e uma notificação na tela de bloqueio.*"

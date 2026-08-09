@@ -19,9 +19,136 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/room_school.png",
         "character": null,
         "branches": [
-            { "condition": "day4_confession_accepted", "next": "morning5_committed_start" },
+            { "condition": "day4_confession_accepted", "next": "morning5_temptation_discovery_branch" },
             { "next": "morning5_start_b" }
         ]
+    },
+    "morning5_temptation_discovery_branch": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "branches": [
+            { "condition": "day4_counteroffer_penalty_deferred", "next": "morning5_temptation_counteroffer_branch" },
+            { "next": "morning5_committed_start" }
+        ]
+    },
+    "morning5_temptation_counteroffer_branch": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "branches": [
+            { "condition": "day4_took_seoyeon_counteroffer", "next": "morning5_caught_by_seoyeon_route" },
+            { "condition": "day4_took_yuna_counteroffer", "next": "morning5_caught_by_yuna_route" },
+            { "condition": "day4_took_dain_counteroffer", "next": "morning5_caught_by_dain_route" },
+            { "next": "morning5_committed_start" }
+        ]
+    },
+    "morning5_caught_by_seoyeon_route": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "branches": [
+            { "condition": "route_dain", "next": "morning5_caught_dain_by_seoyeon" },
+            { "condition": "route_yuna", "next": "morning5_caught_yuna_by_seoyeon" },
+            { "next": "morning5_committed_start" }
+        ]
+    },
+    "morning5_caught_by_yuna_route": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "branches": [
+            { "condition": "route_seoyeon", "next": "morning5_caught_seoyeon_by_yuna" },
+            { "condition": "route_dain", "next": "morning5_caught_dain_by_yuna" },
+            { "next": "morning5_committed_start" }
+        ]
+    },
+    "morning5_caught_by_dain_route": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "branches": [
+            { "condition": "route_seoyeon", "next": "morning5_caught_seoyeon_by_dain" },
+            { "condition": "route_yuna", "next": "morning5_caught_yuna_by_dain" },
+            { "next": "morning5_committed_start" }
+        ]
+    },
+    "morning5_caught_seoyeon_by_dain": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "choices": [
+            { "next": "morning5_caught_seoyeon_honest", "stats": {"Seoyeon":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer"] },
+            { "next": "morning5_caught_seoyeon_lie", "stats": {"Seoyeon":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer"] }
+        ]
+    },
+    "morning5_caught_seoyeon_by_yuna": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "choices": [
+            { "next": "morning5_caught_seoyeon_honest", "stats": {"Seoyeon":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer"] },
+            { "next": "morning5_caught_seoyeon_lie", "stats": {"Seoyeon":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer"] }
+        ]
+    },
+    "morning5_caught_dain_by_seoyeon": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "choices": [
+            { "next": "morning5_caught_dain_honest", "stats": {"Dain":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer"] },
+            { "next": "morning5_caught_dain_lie", "stats": {"Dain":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer"] }
+        ]
+    },
+    "morning5_caught_dain_by_yuna": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "choices": [
+            { "next": "morning5_caught_dain_honest", "stats": {"Dain":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer"] },
+            { "next": "morning5_caught_dain_lie", "stats": {"Dain":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer"] }
+        ]
+    },
+    "morning5_caught_yuna_by_seoyeon": {
+        "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "cold",
+        "character": "assets/images/characters/yuna_sad.png",
+        "choices": [
+            { "next": "morning5_caught_yuna_honest", "stats": {"Yuna":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer"] },
+            { "next": "morning5_caught_yuna_lie", "stats": {"Yuna":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer"] }
+        ]
+    },
+    "morning5_caught_yuna_by_dain": {
+        "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "cold",
+        "character": "assets/images/characters/yuna_sad.png",
+        "choices": [
+            { "next": "morning5_caught_yuna_honest", "stats": {"Yuna":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer"] },
+            { "next": "morning5_caught_yuna_lie", "stats": {"Yuna":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer"] }
+        ]
+    },
+    "morning5_caught_seoyeon_honest": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "next": "morning5_committed_start"
+    },
+    "morning5_caught_seoyeon_lie": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_pout.png",
+        "next": "morning5_committed_start"
+    },
+    "morning5_caught_dain_honest": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "next": "morning5_committed_start"
+    },
+    "morning5_caught_dain_lie": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/dain_angry.png",
+        "next": "morning5_committed_start"
+    },
+    "morning5_caught_yuna_honest": {
+        "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "cold",
+        "character": "assets/images/characters/yuna_sad.png",
+        "next": "morning5_committed_start"
+    },
+    "morning5_caught_yuna_lie": {
+        "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "cold",
+        "character": "assets/images/characters/yuna_angry.png",
+        "next": "morning5_committed_start"
     },
     "morning5_start_b": {
         "background": "assets/images/background/room_school.png",
