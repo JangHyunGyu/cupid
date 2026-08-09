@@ -23,3 +23,9 @@
 - Prefer the smallest targeted instruction. Remove, shorten, or merge redundant and conflicting rules when they create stiffness, repetition, checklist writing, or flattened voices.
 - Do not impose a universal phrase list, fixed response template, mandatory dialogue/narration order, or per-reply quota. Shared rules may establish conditional capabilities and boundaries; character canon and the live scene control actual wording, frequency, rhythm, and intensity.
 - Treat a prompt change as incomplete if the result becomes less human, less character-specific, less spontaneous, or less intense than the established scene calls for.
+
+## Scenario Continuity, Rivalry Accounting, and Localization (Permanent)
+- 과거의 만남, 식사, 약속, 목격, 비밀 공유처럼 이전 선택이나 사건을 사실로 단정하는 대사는 그 사건을 증명하는 플래그 또는 도달 가능한 조건 분기 안에서만 출력한다. 해당 플래그가 없는 경로에는 모순되지 않는 대체 대사를 두고, 같은 변경에 회귀 테스트를 추가한다.
+- 메인 히로인 사이의 경쟁 선택지는 영향을 받는 두 사람의 호감도 변화량 합이 정확히 0이 되게 설계한다. 한 사람에게 준 만큼 다른 사람에게서 차감하고, 경쟁 선택지임을 시나리오 데이터에 표시해 자동 테스트가 계속 검증하게 한다.
+- 호감도 순위를 이용하는 라이벌 이벤트는 실행 시점의 실제 호감도로 선두와 2위를 계산한다. 동률 처리 순서는 시나리오 데이터에 명시된 순서로 결정해 재현 가능하게 유지하며, 선두가 아닌 루트 캐릭터를 선두라고 단정하는 대사를 출력하지 않는다.
+- 시나리오의 구조, 대사, 선택지, 이름, 문맥, 성격 지시를 변경할 때는 지원하는 모든 언어(`ko`, `en`, `ja`, `es`, `fr`, `de`, `pt`)를 같은 변경에서 갱신한다. 한 언어라도 누락되면 시나리오 변경은 미완료로 취급한다.

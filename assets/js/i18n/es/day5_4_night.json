@@ -3,6 +3,18 @@
         "name": "Sistema",
         "text": ""
     },
+    "day5_betrayal_break_seo": {
+        "name": "Seoyeon",
+        "text": "*En el lugar donde quedamos, le cuento sin ocultarlo que anoche elegí a otra persona. Seoyeon escucha hasta el final y se acomoda los lentes.* No puedo darte las gracias por ser sincero. Terminemos aquí."
+    },
+    "day5_betrayal_break_dain": {
+        "name": "Dain",
+        "text": "*Cuando confieso que anoche otra persona me hizo dudar, Dain se muerde el labio y mira el suelo durante un largo rato.* Oye, mejor lo hubieras ocultado. No, eso habría sido peor. Hoy no puedo fingir una sonrisa. Lo nuestro termina aquí."
+    },
+    "day5_betrayal_break_yuna": {
+        "name": "Yuna",
+        "text": "*Cuando le digo que anoche elegí a otra persona, Yuna cierra el libro y aparta la mano.* Estabas delante de mí, pero tu corazón ya se había ido a otro sitio. Entiendo. Ya no voy a esperar."
+    },
     "hidden_dual_route_1": {
         "name": "{name}",
         "text": "*Al terminar de recoger el evento, guardo en la mochila la copia para la sesión de crítica y la tarjeta de primeros auxilios. Aún no sé en qué clase de recuerdo se convertirán dentro de unos años.*"

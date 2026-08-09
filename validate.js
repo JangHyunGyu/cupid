@@ -127,6 +127,17 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
             }
         });
     }
+    // rankedRivalBranches
+    if (scene.rankedRivalBranches) {
+        scene.rankedRivalBranches.forEach((b, i) => {
+            if (b.next && !sceneExists(b.next)) {
+                errors.push('[SCENE_REF] ' + sceneId + ' rankedRivalBranches[' + i + '].next="' + b.next + '" not found');
+            }
+        });
+    }
+    if (scene.rankedRivalFallback && !sceneExists(scene.rankedRivalFallback)) {
+        errors.push('[SCENE_REF] ' + sceneId + ' rankedRivalFallback="' + scene.rankedRivalFallback + '" not found');
+    }
 }
 
 // ===== 2. Image File Existence =====
@@ -280,7 +291,7 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
         // 텍스트가 필요한 씬인데 i18n이 없으면 경고
         // (라우팅/브랜치 노드는 텍스트 없어도 됨)
         const isRoutingNode = !scene.text && !scene.choices &&
-            (scene.branches || scene.selectByHighestAffinity || scene.condition || scene.setFlag || scene.setFlags);
+            (scene.branches || scene.rankedRivalBranches || scene.selectByHighestAffinity || scene.condition || scene.setFlag || scene.setFlags);
         const hasText = scene.text;
         const needsText = !isRoutingNode && scene.choices;
         if (hasText || needsText) {
@@ -334,6 +345,8 @@ while (queue.length > 0) {
     });
     if (scene.branches) scene.branches.forEach(b => addTarget(b.next));
     if (scene.affinityBranches) scene.affinityBranches.forEach(b => addTarget(b.next));
+    if (scene.rankedRivalBranches) scene.rankedRivalBranches.forEach(b => addTarget(b.next));
+    addTarget(scene.rankedRivalFallback);
     if (scene.fallback) addTarget(scene.fallback);
 }
 const unreachable = Object.keys(allScenes).filter(id => !reachable.has(id));
@@ -923,7 +936,21 @@ class SimState {
 
 // 간이 resolveNextScene (SceneRenderer 로직 재현)
 function simResolveNext(scene, state) {
-    // 1. affinityBranches
+    // 1. rankedRivalBranches
+    if (scene.rankedRivalBranches && scene.rankedRivalBranches.length > 0) {
+        const leadAffinity = state.getAffinity(scene.leadCharacter);
+        const minLeadAffinity = Number(scene.minLeadAffinity ?? -100);
+        const rankedRivals = scene.rankedRivalBranches
+            .filter(branch => branch.character && branch.next)
+            .map((branch, index) => ({ ...branch, affinity: state.getAffinity(branch.character), _i: index }))
+            .sort((a, b) => b.affinity - a.affinity || a._i - b._i);
+        const strongestRival = rankedRivals[0];
+        if (strongestRival && leadAffinity >= strongestRival.affinity && leadAffinity >= minLeadAffinity) {
+            return strongestRival.next;
+        }
+        return scene.rankedRivalFallback || scene.next || null;
+    }
+    // 2. affinityBranches
     if (scene.affinityBranches && scene.affinityBranches.length > 0) {
         if (scene.affinityChar) {
             // 단일 캐릭터 호감도 분기 (affinityChar 지정)
@@ -948,7 +975,7 @@ function simResolveNext(scene, state) {
         // fallback
         return scene.next || scene.fallback || null;
     }
-    // 2. branches
+    // 3. branches
     if (scene.branches && scene.branches.length > 0) {
         if (scene.selectByHighestAffinity) {
             let best = null, bestAff = -Infinity;
@@ -972,7 +999,7 @@ function simResolveNext(scene, state) {
         }
         return scene.next || null;
     }
-    // 3. next
+    // 4. next
     return scene.next || null;
 }
 
@@ -1146,6 +1173,8 @@ for (let day = 1; day <= 4; day++) {
         if (s.choices) s.choices.forEach(c => { if (c.next) bfsQueue.push(c.next); });
         if (s.branches) s.branches.forEach(b => { if (b.next) bfsQueue.push(b.next); });
         if (s.affinityBranches) s.affinityBranches.forEach(b => { if (b.next) bfsQueue.push(b.next); });
+        if (s.rankedRivalBranches) s.rankedRivalBranches.forEach(b => { if (b.next) bfsQueue.push(b.next); });
+        if (s.rankedRivalFallback) bfsQueue.push(s.rankedRivalFallback);
     }
     if (!found) {
         errors.push('[PLAYTEST_DAY] Day' + day + ' ("' + startScene + '") → Day' + (day + 1) + ' ("' + nextDayStart + '") 도달 불가');
@@ -1169,6 +1198,8 @@ const reachableFromStart = new Set();
         if (s.choices) s.choices.forEach(c => { if (c.next) q.push(c.next); });
         if (s.branches) s.branches.forEach(b => { if (b.next) q.push(b.next); });
         if (s.affinityBranches) s.affinityBranches.forEach(b => { if (b.next) q.push(b.next); });
+        if (s.rankedRivalBranches) s.rankedRivalBranches.forEach(b => { if (b.next) q.push(b.next); });
+        if (s.rankedRivalFallback) q.push(s.rankedRivalFallback);
     }
 }
 for (const endId of endingScenes) {
@@ -1221,6 +1252,16 @@ for (const [sceneId, { scene }] of Object.entries(allScenes)) {
         scene.branches.forEach((b, i) => {
             if (b.character && !validCharKeys.includes(b.character)) {
                 errors.push('[PLAYTEST_AFFINITY] "' + sceneId + '" selectByHighestAffinity branches[' + i + ']: "' + b.character + '" 유효하지 않은 캐릭터 키');
+            }
+        });
+    }
+    if (scene.rankedRivalBranches) {
+        if (!validCharKeys.includes(scene.leadCharacter)) {
+            errors.push('[PLAYTEST_AFFINITY] "' + sceneId + '" rankedRivalBranches leadCharacter: "' + scene.leadCharacter + '" 유효하지 않은 캐릭터 키');
+        }
+        scene.rankedRivalBranches.forEach((branch, i) => {
+            if (!validCharKeys.includes(branch.character)) {
+                errors.push('[PLAYTEST_AFFINITY] "' + sceneId + '" rankedRivalBranches[' + i + ']: "' + branch.character + '" 유효하지 않은 캐릭터 키');
             }
         });
     }

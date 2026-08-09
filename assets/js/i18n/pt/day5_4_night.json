@@ -3,6 +3,18 @@
         "name": "Sistema",
         "text": ""
     },
+    "day5_betrayal_break_seo": {
+        "name": "Seoyeon",
+        "text": "*No lugar combinado, conto sem esconder que ontem à noite escolhi outra pessoa. Seoyeon escuta até o fim e ajeita os óculos.* Não consigo agradecer por você ter sido sincero. Vamos terminar aqui."
+    },
+    "day5_betrayal_break_dain": {
+        "name": "Dain",
+        "text": "*Quando confesso que outra pessoa mexeu comigo ontem à noite, Dain morde o lábio e fica muito tempo olhando para o chão.* Talvez fosse melhor esconder. Não, isso seria pior. Hoje eu não consigo fingir um sorriso. A gente termina aqui."
+    },
+    "day5_betrayal_break_yuna": {
+        "name": "Yuna",
+        "text": "*Quando conto que ontem à noite escolhi outra pessoa, Yuna fecha o livro e afasta a mão.* Você estava na minha frente, mas seu coração já tinha ido para outro lugar. Entendi. Não vou mais esperar."
+    },
     "hidden_dual_route_1": {
         "name": "{name}",
         "text": "*Ao terminar de desmontar o evento, guardo na mochila a cópia para a sessão de crítica e o cartão de primeiros socorros. Ainda não sei que tipo de lembrança eles serão daqui a alguns anos.*"

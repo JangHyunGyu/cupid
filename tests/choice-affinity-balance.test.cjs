@@ -4,6 +4,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const test = require('node:test');
+const vm = require('node:vm');
 
 const ROOT = path.resolve(__dirname, '..');
 const SCENARIO_DIR = path.join(ROOT, 'assets', 'js', 'scenario');
@@ -34,6 +35,42 @@ function loadKoreanCopy() {
     return copy;
 }
 
+function loadLocaleCopy(locale) {
+    const copy = {};
+    const localeDir = path.join(ROOT, 'assets', 'js', 'i18n', locale);
+    const files = fs.readdirSync(localeDir)
+        .filter(file => /^day\d.*\.json$/.test(file))
+        .sort();
+    for (const file of files) {
+        Object.assign(copy, JSON.parse(fs.readFileSync(path.join(localeDir, file), 'utf8')));
+    }
+    return copy;
+}
+
+function createSceneRenderer(affinities) {
+    const source = fs.readFileSync(path.join(ROOT, 'assets', 'js', 'modules', 'SceneRenderer.js'), 'utf8');
+    const context = {
+        CHAR_NAME_MAP: {},
+        console,
+        document: {
+            createElement() {
+                return { toDataURL: () => '' };
+            }
+        },
+        window: {}
+    };
+    vm.runInNewContext(source, context, { filename: 'SceneRenderer.js' });
+    const stateManager = {
+        getAffinity(character) {
+            return affinities[character] ?? 0;
+        },
+        getFlag() {
+            return false;
+        }
+    };
+    return new context.window.SceneRenderer(stateManager, null, null);
+}
+
 const scenario = loadScenario();
 const korean = loadKoreanCopy();
 const scenes = Object.assign({}, ...Object.values(scenario));
@@ -59,8 +96,8 @@ test('direct choice affinity distribution keeps subtle penalties meaningful but 
         }
     }
 
-    assert.equal(total, 159);
-    assert.deepEqual(counts, { positive: 62, negative: 42, neutral: 51, mixed: 4 });
+    assert.equal(total, 165);
+    assert.deepEqual(counts, { positive: 59, negative: 42, neutral: 51, mixed: 13 });
 });
 
 test('two-option screens retain their original response and add the trap as a third choice', () => {
@@ -94,7 +131,7 @@ test('negative-choice screens stay distributed across every story day', () => {
         1: { choiceScreens: 11, negativeScreens: 7 },
         2: { choiceScreens: 13, negativeScreens: 8 },
         3: { choiceScreens: 18, negativeScreens: 11 },
-        4: { choiceScreens: 18, negativeScreens: 12 },
+        4: { choiceScreens: 21, negativeScreens: 15 },
         5: { choiceScreens: 5, negativeScreens: 3 }
     };
 
@@ -112,7 +149,7 @@ test('negative-choice screens stay distributed across every story day', () => {
     }
 });
 
-test('day 4 rival counteroffers force an explicit route choice with consequences', () => {
+test('day 4 rival temptations are explicit, strictly zero-sum, and localized', () => {
     const counteroffers = [
         {
             sceneId: 'wall_seo_glimpse_2',
@@ -120,7 +157,26 @@ test('day 4 rival counteroffers force an explicit route choice with consequences
             rivalCharacter: 'Dain',
             heldFlag: 'day4_held_route_seoyeon',
             temptedFlag: 'day4_took_dain_counteroffer',
-            choices: ['서연에게 바로 답장하고 돌아간다', '체육관으로 들어가 다인의 공을 받는다']
+            betrayedFlag: 'day4_betrayed_route_seoyeon',
+            choices: ['서연과 한 약속을 지키고 돌아간다', '체육관으로 들어가 다인의 부탁을 받아준다']
+        },
+        {
+            sceneId: 'wall_seo_yuna_tempt_2',
+            routeCharacter: 'Seoyeon',
+            rivalCharacter: 'Yuna',
+            heldFlag: 'day4_held_route_seoyeon',
+            temptedFlag: 'day4_took_yuna_counteroffer',
+            betrayedFlag: 'day4_betrayed_route_seoyeon',
+            choices: ['서연에게 답장하고 약속대로 돌아간다', '별관으로 가서 유나 곁에 남는다']
+        },
+        {
+            sceneId: 'wall_dain_seo_tempt_2',
+            routeCharacter: 'Dain',
+            rivalCharacter: 'Seoyeon',
+            heldFlag: 'day4_held_route_dain',
+            temptedFlag: 'day4_took_seoyeon_counteroffer',
+            betrayedFlag: 'day4_betrayed_route_dain',
+            choices: ['다인에게 답장하고 약속대로 돌아간다', '서연을 따라 옥상에 올라가 손을 잡는다']
         },
         {
             sceneId: 'wall_dain_glimpse_4_c',
@@ -128,7 +184,8 @@ test('day 4 rival counteroffers force an explicit route choice with consequences
             rivalCharacter: 'Yuna',
             heldFlag: 'day4_held_route_dain',
             temptedFlag: 'day4_took_yuna_counteroffer',
-            choices: ['다인에게 집에 도착했다고 답장한다', '학교 후문으로 돌아가 유나를 만난다']
+            betrayedFlag: 'day4_betrayed_route_dain',
+            choices: ['다인에게 답장하고 약속대로 돌아간다', '학교 후문으로 돌아가 유나 곁에 남는다']
         },
         {
             sceneId: 'wall_yuna_glimpse_3_b',
@@ -136,19 +193,105 @@ test('day 4 rival counteroffers force an explicit route choice with consequences
             rivalCharacter: 'Seoyeon',
             heldFlag: 'day4_held_route_yuna',
             temptedFlag: 'day4_took_seoyeon_counteroffer',
-            choices: ['유나에게 집에 간다고 답장한다', '서연을 따라 옥상으로 올라간다']
+            betrayedFlag: 'day4_betrayed_route_yuna',
+            choices: ['유나에게 답장하고 약속대로 돌아간다', '서연을 따라 옥상으로 올라가 손을 잡는다']
+        },
+        {
+            sceneId: 'wall_yuna_dain_tempt_2',
+            routeCharacter: 'Yuna',
+            rivalCharacter: 'Dain',
+            heldFlag: 'day4_held_route_yuna',
+            temptedFlag: 'day4_took_dain_counteroffer',
+            betrayedFlag: 'day4_betrayed_route_yuna',
+            choices: ['유나에게 답장하고 약속대로 돌아간다', '체육관으로 들어가 다인의 부탁을 받아준다']
         }
     ];
+    const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy);
 
     for (const counteroffer of counteroffers) {
         const scene = scenes[counteroffer.sceneId];
+        assert.equal(scene?.competitiveAffinity, true, `${counteroffer.sceneId} must stay marked as competitive`);
         assert.equal(scene?.choices?.length, 2, `${counteroffer.sceneId} must present the route and rival`);
-        assert.equal(scene.choices[0].stats?.[counteroffer.routeCharacter]?.affinity, 2);
+        assert.equal(scene.choices[0].stats?.[counteroffer.routeCharacter]?.affinity, 6);
+        assert.equal(scene.choices[0].stats?.[counteroffer.rivalCharacter]?.affinity, -6);
         assert.ok(scene.choices[0].setFlags?.includes(counteroffer.heldFlag));
-        assert.equal(scene.choices[1].stats?.[counteroffer.rivalCharacter]?.affinity, 3);
-        assert.equal(scene.choices[1].stats?.[counteroffer.routeCharacter]?.affinity, -4);
+        assert.equal(scene.choices[1].stats?.[counteroffer.rivalCharacter]?.affinity, 15);
+        assert.equal(scene.choices[1].stats?.[counteroffer.routeCharacter]?.affinity, -15);
         assert.ok(scene.choices[1].setFlags?.includes(counteroffer.temptedFlag));
+        assert.ok(scene.choices[1].setFlags?.includes(counteroffer.betrayedFlag));
         assert.deepEqual(korean[counteroffer.sceneId]?.choices, counteroffer.choices);
+
+        for (const choice of scene.choices) {
+            const deltas = Object.values(choice.stats).map(stat => Number(stat.affinity));
+            assert.equal(deltas.length, 2, `${counteroffer.sceneId} must affect exactly two rivals`);
+            assert.equal(deltas.reduce((sum, value) => sum + value, 0), 0, `${counteroffer.sceneId} must stay zero-sum`);
+        }
+        for (const copy of localizedCopies) {
+            assert.equal(copy[counteroffer.sceneId]?.choices?.length, 2, `${counteroffer.sceneId} must exist in every locale`);
+        }
+    }
+});
+
+test('every scene marked as competitive remains exactly zero-sum', () => {
+    const competitiveScenes = Object.entries(scenes).filter(([, scene]) => scene.competitiveAffinity);
+    assert.ok(competitiveScenes.length > 0, 'at least one competitive choice scene must exist');
+
+    for (const [sceneId, scene] of competitiveScenes) {
+        for (const choice of scene.choices || []) {
+            const deltas = Object.values(choice.stats || {})
+                .map(stat => Number(stat?.affinity))
+                .filter(Number.isFinite);
+            assert.equal(deltas.length, 2, `${sceneId} must affect exactly two characters`);
+            assert.ok(deltas.some(value => value > 0) && deltas.some(value => value < 0), `${sceneId} must trade affinity between rivals`);
+            assert.equal(deltas.reduce((sum, value) => sum + value, 0), 0, `${sceneId} must remain zero-sum`);
+        }
+    }
+});
+
+test('ranked rival routing uses the live second-highest affinity with deterministic ties', () => {
+    const affinities = { Seoyeon: 80, Dain: 50, Yuna: 70 };
+    const renderer = createSceneRenderer(affinities);
+
+    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_yuna_tempt_1');
+    affinities.Dain = 70;
+    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_glimpse_1', 'authored order must break rival ties');
+
+    Object.assign(affinities, { Seoyeon: 70, Dain: 80, Yuna: 60 });
+    assert.equal(renderer.resolveNextScene(scenes.wall_dain_rival_rank), 'wall_dain_seo_tempt_1');
+    Object.assign(affinities, { Seoyeon: 60, Dain: 70, Yuna: 80 });
+    assert.equal(renderer.resolveNextScene(scenes.wall_yuna_rival_rank), 'wall_yuna_dain_tempt_1');
+
+    Object.assign(affinities, { Seoyeon: 59, Dain: 20, Yuna: 30 });
+    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'day4_hidden_msg_branch', 'low-affinity routes must skip the temptation');
+    Object.assign(affinities, { Seoyeon: 70, Dain: 80, Yuna: 30 });
+    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'day4_hidden_msg_branch', 'a route that is not the live leader must not claim to be one');
+});
+
+test('prior-lunch dialogue is reachable only through the flag that proves the lunch happened', () => {
+    const branchScene = scenes.lunch2_seo_12;
+    assert.deepEqual(branchScene.branches, [
+        { condition: 'chose_dain_lunch', next: 'lunch2_seo_13' },
+        { next: 'lunch2_seo_13b' }
+    ]);
+    assert.match(korean.lunch2_seo_13.text, /어제는 나랑 먹었잖아/);
+    assert.doesNotMatch(korean.lunch2_seo_13b.text, /어제|나랑 먹었/);
+
+    const flagProducers = Object.values(scenario[1])
+        .flatMap(scene => scene.choices || [])
+        .filter(choice => choice.setFlags?.includes('chose_dain_lunch'));
+    assert.equal(flagProducers.length, 1);
+    assert.equal(flagProducers[0].next, 'lunch_dain_1');
+});
+
+test('accepting a ranked temptation forces the selected route into a day 5 breakup', () => {
+    const breakupRoutes = [
+        ['day4_betrayed_route_seoyeon', 'day5_betrayal_break_seo'],
+        ['day4_betrayed_route_dain', 'day5_betrayal_break_dain'],
+        ['day4_betrayed_route_yuna', 'day5_betrayal_break_yuna']
+    ];
+    for (const [condition, next] of breakupRoutes) {
+        assert.ok(scenes.ending_start.branches.some(branch => branch.condition === condition && branch.next === next));
+        assert.equal(scenes[next].next, 'confess_fail_1');
     }
 });
 

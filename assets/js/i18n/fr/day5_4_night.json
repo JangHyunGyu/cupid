@@ -3,6 +3,18 @@
         "name": "Système",
         "text": ""
     },
+    "day5_betrayal_break_seo": {
+        "name": "Seoyeon",
+        "text": "*Au lieu du rendez-vous, je lui avoue sans rien cacher que je suis allé vers quelqu'un d'autre hier soir. Seoyeon écoute jusqu'au bout et remet ses lunettes en place.* Je n'arrive pas à te remercier d'avoir été honnête. Arrêtons-nous là."
+    },
+    "day5_betrayal_break_dain": {
+        "name": "Dain",
+        "text": "*Quand j'avoue avoir cédé à quelqu'un d'autre hier soir, Dain se mord la lèvre et fixe longtemps le sol.* Tu aurais presque mieux fait de le cacher. Non, ça aurait été pire. Aujourd'hui, je ne peux pas sourire comme si de rien n'était. C'est fini entre nous."
+    },
+    "day5_betrayal_break_yuna": {
+        "name": "Yuna",
+        "text": "*Quand je lui dis que je suis allé vers quelqu'un d'autre hier soir, Yuna ferme son livre et retire sa main.* Tu étais devant moi, mais ton cœur était déjà ailleurs. J'ai compris. Je n'attendrai plus."
+    },
     "hidden_dual_route_1": {
         "name": "{name}",
         "text": "*En terminant le rangement de l'événement, je glisse dans mon sac l'exemplaire du club littéraire et la carte de premiers secours. Je ne sais pas encore ce qu'ils représenteront pour moi dans quelques années.*"

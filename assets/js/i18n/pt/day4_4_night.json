@@ -233,21 +233,41 @@
         "name": "Seoyeon",
         "text": "...Vamos ficar mais um pouco assim."
     },
+    "wall_seo_rival_rank": {
+        "name": "Sistema",
+        "text": ""
+    },
     "wall_seo_glimpse_1": {
         "name": "{name}",
-        "text": "*Voltando pra casa depois de deixar a Seoyeon na porta. — Passo pela escola. A janela do ginásio tem luz acesa. Luz de emergência.*"
+        "text": "*Depois de acompanhar Seoyeon até em casa, volto pelo muro da escola. Dain está junto à saída de emergência do ginásio escuro, mexendo na fita do joelho.*"
     },
     "wall_seo_glimpse_2": {
         "name": "Dain",
-        "text": "Já que você veio até aqui, entra. Não me importa se está voltando de um encontro com Seoyeon. Só devolve dez passes.",
+        "text": "Só dez passes. Quando a gente terminar... me abraça um pouco. Hoje eu não consigo mais fingir que estou bem sozinha.",
         "choices": [
-            "Responder a Seoyeon e voltar para casa",
-            "Entrar no ginásio e devolver os passes de Dain"
+            "Cumprir minha promessa a Seoyeon e voltar para casa",
+            "Entrar no ginásio e ficar com Dain"
         ]
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
-        "text": "*Chega uma mensagem de Seoyeon: 'Cheguei em casa.' Em vez de responder, bloqueio a tela e entro no ginásio. Dain joga a bola para mim sem dizer nada.*"
+        "text": "*A última bola rola pelo chão. Sem recuperar o fôlego, Dain se abriga nos braços de {name}. As mensagens de Seoyeon fazem o celular vibrar sem parar.*"
+    },
+    "wall_seo_yuna_tempt_1": {
+        "name": "{name}",
+        "text": "*No caminho de casa, Yuna escreve: 'A luz do anexo ainda está acesa.' Em seguida chega uma foto de duas cadeiras vazias, lado a lado.*"
+    },
+    "wall_seo_yuna_tempt_2": {
+        "name": "Yuna",
+        "text": "Alguém que realmente me enxergava desapareceu sem dizer nada. Se você também for embora hoje, vai parecer que aquele dia está acontecendo de novo. Só esta noite, fica aqui.",
+        "choices": [
+            "Responder a Seoyeon e cumprir minha promessa",
+            "Ir ao anexo e ficar ao lado de Yuna"
+        ]
+    },
+    "wall_seo_yuna_tempt_accept": {
+        "name": "{name}",
+        "text": "*Quando me sento ao lado de Yuna, os dedos dela apertam a ponta da minha manga. A mensagem de Seoyeon — 'Você também chegou?' — não sai do topo da tela.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -547,29 +567,49 @@
         "name": "Dain",
         "text": "Cinco minutos. Recarregando a bateria."
     },
+    "wall_dain_rival_rank": {
+        "name": "Sistema",
+        "text": ""
+    },
     "wall_dain_glimpse_1": {
         "name": "{name}",
-        "text": "*Vejo uma luz na janela do anexo da biblioteca. Uma luminária pequena.*"
+        "text": "*Depois de me despedir de Dain, noto que só uma janela continua acesa no anexo da biblioteca.*"
     },
     "wall_dain_glimpse_2": {
         "name": "{name}",
-        "text": "*É Yuna, sentada sozinha. Meus pés param. Hoje ela não mandou uma única mensagem.*"
+        "text": "*Yuna está diante de um livro aberto, olhando pela janela. Ela não vira uma única página.*"
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*Guardo no bolso a munhequeira que Dain me deu e volto para o portão dos fundos da escola. Yuna apaga a luminária e desce as escadas.*"
+        "text": "*Guardo no bolso a munhequeira que Dain me deu e volto ao portão dos fundos. Assim que desce as escadas, Yuna segura a manga de {name}.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
-        "text": "*22h. Mensagem da Yuna.*"
+        "text": "*Às 22h, uma mensagem de Yuna aparece logo acima da notificação de Dain: 'Cheguei!'*"
     },
     "wall_dain_glimpse_4_c": {
         "name": "Yuna",
-        "text": "Portão dos fundos da escola. Vem agora. Mesmo que tenha estado com Dain, agora eu quero você aqui.",
+        "text": "Alguém que realmente me enxergava desapareceu sem dizer nada. Se eu ficar sozinha de novo esta noite, vai parecer que voltei àquele dia. Não importa que você estivesse com Dain. Eu preciso que você venha agora.",
         "choices": [
-            "Avisar Dain que cheguei em casa",
-            "Voltar ao portão dos fundos para encontrar Yuna"
+            "Responder a Dain e cumprir minha promessa",
+            "Voltar ao portão dos fundos e ficar com Yuna"
         ]
+    },
+    "wall_dain_seo_tempt_1": {
+        "name": "{name}",
+        "text": "*Depois de me despedir de Dain, sigo para o portão principal e encontro Seoyeon diante da escada do terraço. Ela sorri como sempre, mas os dedos amassam a manga do uniforme.*"
+    },
+    "wall_dain_seo_tempt_2": {
+        "name": "Seoyeon",
+        "text": "Quando eu chegar em casa, vou ter que começar colocando o sorriso de volta. Só por hoje, deixa eu ser Seoyeon em vez da presidente do conselho. Sobe comigo e eu não vou soltar sua mão.",
+        "choices": [
+            "Responder a Dain e cumprir minha promessa",
+            "Subir ao terraço com Seoyeon e segurar sua mão"
+        ]
+    },
+    "wall_dain_seo_tempt_accept": {
+        "name": "{name}",
+        "text": "*A porta do terraço se fecha e Seoyeon é a primeira a segurar minha mão. A mensagem de Dain — 'Chegou bem?' — acende a tela com uma vibração.*"
     },
     "wall_yuna_1": {
         "name": "{name}",
@@ -761,29 +801,49 @@
         "name": "Yuna",
         "text": "*Vira as costas. Está andando rápido. Um marcador escapa do bolso dela, mas ela não pega.*"
     },
+    "wall_yuna_rival_rank": {
+        "name": "Sistema",
+        "text": ""
+    },
     "wall_yuna_glimpse_1": {
         "name": "{name}",
-        "text": "*Saio da escola, deixando a Yuna pra trás. Passo pelo portão da frente.*"
+        "text": "*Depois de me despedir de Yuna, caminho junto ao muro até o portão principal. Seoyeon está sozinha sob o poste.*"
     },
     "wall_yuna_glimpse_2": {
         "name": "{name}",
-        "text": "*Seoyeon está de pé sob o poste diante do portão. Escreve algo no celular, apaga, escreve de novo e apaga outra vez. Só os óculos guardam o reflexo da tela.*"
+        "text": "*Seoyeon guarda o celular e volta a tirá-lo várias vezes. Quando me vê, sorri, mas os dedos amassam a manga do uniforme.*"
     },
     "wall_yuna_glimpse_3_b": {
         "name": "Seoyeon",
-        "text": "Você estava com Yuna. Eu sei. Mesmo assim, quer subir ao terraço agora? Eu fui quem esperou.",
+        "text": "Quando eu chegar em casa, vou ter que começar colocando o sorriso de volta. Só por hoje, deixa eu ser Seoyeon em vez da presidente do conselho. Sobe comigo e eu não vou soltar sua mão.",
         "choices": [
-            "Avisar Yuna que vou para casa",
-            "Seguir Seoyeon até o terraço"
+            "Responder a Yuna e cumprir minha promessa",
+            "Subir ao terraço com Seoyeon e segurar sua mão"
         ]
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*Guardo o bilhete de Yuna no bolso e sigo Seoyeon pela escada até o terraço. O nome de Yuna acende uma vez na tela bloqueada e desaparece.*"
+        "text": "*A porta do terraço se fecha e Seoyeon é a primeira a segurar minha mão. A mensagem de Yuna faz o celular vibrar uma vez e depois outra.*"
+    },
+    "wall_yuna_dain_tempt_1": {
+        "name": "{name}",
+        "text": "*No caminho de volta, depois de me despedir de Yuna, encontro Dain junto à saída de emergência do ginásio escuro, mexendo na fita do joelho.*"
+    },
+    "wall_yuna_dain_tempt_2": {
+        "name": "Dain",
+        "text": "Só dez passes. Quando a gente terminar... me abraça um pouco. Hoje eu não consigo mais fingir que estou bem sozinha.",
+        "choices": [
+            "Responder a Yuna e cumprir minha promessa",
+            "Entrar no ginásio e ficar com Dain"
+        ]
+    },
+    "wall_yuna_dain_tempt_accept": {
+        "name": "{name}",
+        "text": "*A última bola rola pelo chão. Sem recuperar o fôlego, Dain se abriga nos braços de {name}. O nome de Yuna aparece várias vezes na tela do celular.*"
     },
     "day4_night_regret": {
         "name": "{name}",
-        "text": "*A frase que você digitou permanece na janela de chat. O cursor pisca no final.*"
+        "text": "*Mesmo depois de voltar para casa, uma frase pela metade continua na janela de chat. O cursor pisca no final.*"
     },
     "day4_night_regret_msg_branch": {
         "name": "Sistema",

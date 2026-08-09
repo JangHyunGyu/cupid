@@ -183,16 +183,37 @@ class SceneRenderer {
      * 다음 씬 ID 결정 (분기 로직 처리)
      *
      * ▶ 분기 유형:
-     *   1. 호감도 분기 (affinityBranches): 호감도에 따라 다른 씬으로
-     *   2. 플래그 분기 (branches): 조건에 따라 다른 씬으로
-     *   3. 최고 호감도 분기 (selectByHighestAffinity): 가장 친한 캐릭터로
-     *   4. 단순 다음 씬 (next)
+     *   1. 2위 라이벌 분기 (rankedRivalBranches): 선택 루트가 선두일 때 실제 2위 캐릭터로
+     *   2. 호감도 분기 (affinityBranches): 호감도에 따라 다른 씬으로
+     *   3. 플래그 분기 (branches): 조건에 따라 다른 씬으로
+     *   4. 최고 호감도 분기 (selectByHighestAffinity): 가장 친한 캐릭터로
+     *   5. 단순 다음 씬 (next)
      *
      * @param {Object} scene - 현재 씬 데이터
      * @returns {string|null} 다음 씬 ID
      */
     resolveNextScene(scene) {
         if (!scene) return null;
+
+        // 🔀 실시간 2위 라이벌 분기: 선택 루트가 충분한 호감도로 선두일 때만 유혹 이벤트 진입
+        if (Array.isArray(scene.rankedRivalBranches) && scene.rankedRivalBranches.length > 0) {
+            const leadCharacter = scene.leadCharacter;
+            const leadAffinity = this.stateManager.getAffinity(leadCharacter);
+            const minLeadAffinity = Number(scene.minLeadAffinity ?? -100);
+            const rankedRivals = scene.rankedRivalBranches
+                .filter(branch => branch.character && branch.next)
+                .map((branch, index) => ({
+                    ...branch,
+                    affinity: this.stateManager.getAffinity(branch.character),
+                    _originalIndex: index
+                }))
+                .sort((a, b) => b.affinity - a.affinity || a._originalIndex - b._originalIndex);
+
+            const strongestRival = rankedRivals[0];
+            const leadIsHighest = strongestRival && leadAffinity >= strongestRival.affinity;
+            if (leadIsHighest && leadAffinity >= minLeadAffinity) return strongestRival.next;
+            if (scene.rankedRivalFallback) return scene.rankedRivalFallback;
+        }
 
         // 🔀 호감도 분기: 특정 캐릭터의 호감도에 따라 분기
         if (scene.affinityBranches) {
