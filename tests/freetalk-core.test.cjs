@@ -553,17 +553,34 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
     assert.match(freeTalk, /chatInput\.disabled = !canContinueGroupChat/);
     assert.match(read('assets/js/prompts.js'), /두 사람을 반드시 모두 넣고/);
     assert.doesNotMatch(read('assets/js/prompts.js'), /그 순간 할 말이 있는 인물만/);
+    assert.match(read('assets/js/prompts.js'), /주인공에게 직접 묻거나 답할 수 있고/);
+    assert.match(read('assets/js/prompts.js'), /다른 인물에게 묻고 답하거나 그 말에 반박할 수도 있습니다/);
+    assert.match(read('assets/js/prompts.js'), /They may question or answer the protagonist directly/);
+    assert.match(read('assets/js/prompts.js'), /question, challenge, or answer the other character/);
     assert.match(read('assets/js/prompts.js'), /허용 표정:/);
     assert.match(css, /grid-template-areas:\s*"guide guide guide guide guide"\s*"upload input input input input"\s*"turn turn action send skip"/);
     assert.match(css, /#chat-container\.group-freetalk-mode #chat-input-wrapper\s*{\s*display: contents/);
     assert.match(css, /#chat-container\.group-freetalk-mode #chat-turn-indicator[\s\S]*?grid-area: turn/);
     assert.match(css, /@media \(max-height: 500px\) and \(orientation: landscape\)[\s\S]*?#character-layer\.group-freetalk-mode #char-left img/);
 
+    const addresseeSignals = {
+        ko: ['주인공에게 말하거나', '서로에게 묻고 답할 수 있다', '상대의 말을 반박해도 된다'],
+        en: ['address the protagonist', 'answer the other character'],
+        es: ['dirigirse al protagonista', 'responder a la otra'],
+        ja: ['主人公に話しかけても', '相手に問いかけたり反論したり答えたりしてもよい'],
+        fr: ['s’adresser au protagoniste', 'répondre à l’autre'],
+        de: ['den Protagonisten ansprechen', 'der anderen Figur eine Frage stellen'],
+        pt: ['falar com o protagonista', 'responder à outra']
+    };
     for (const lang of ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt']) {
         const i18n = JSON.parse(read(`assets/js/i18n/${lang}/day5_1_morning.json`));
         const groupScene = i18n.morning5_counteroffer_group_talk;
         assert.ok(groupScene?.text && groupScene?.context && groupScene?.personality && groupScene?.buttonText,
             `${lang} group confrontation localization is incomplete`);
+        for (const signal of addresseeSignals[lang]) {
+            assert.match(groupScene.personality, new RegExp(signal),
+                `${lang} group confrontation lost addressee autonomy: ${signal}`);
+        }
     }
 });
 

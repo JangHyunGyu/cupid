@@ -742,6 +742,10 @@ for (const lang of languages) {
     assert(parts.stable.includes('the committed partner speaks first')
         && parts.stable.includes('Include both characters exactly once'),
     `group/${lang} no longer guarantees the harmed-partner then tempter response order`);
+    assert(parts.stable.includes('They may question or answer the protagonist directly')
+        && parts.stable.includes('question, challenge, or answer the other character')
+        && parts.stable.includes('They do not need to address both in every response'),
+    `group/${lang} fixes the addressee instead of allowing protagonist-directed and character-to-character dialogue`);
     assert(parts.stable.includes('Allowed expressions:'),
         `group/${lang} does not expose each participant expression asset contract`);
     assert(parts.dynamic.includes('current affinity=12') && parts.dynamic.includes('current affinity=34'),

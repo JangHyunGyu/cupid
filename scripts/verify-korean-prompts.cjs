@@ -770,6 +770,10 @@ function verifyGroupPromptCacheContract(context) {
     assert(firstParts.stable.includes('매 턴 원래 마음을 주던 상대가 먼저 말합니다')
         && firstParts.stable.includes('두 사람을 반드시 모두 넣고'),
     'group prompt no longer guarantees the harmed-partner then tempter response order');
+    assert(firstParts.stable.includes('주인공에게 직접 묻거나 답할 수 있고')
+        && firstParts.stable.includes('다른 인물에게 묻고 답하거나 그 말에 반박할 수도 있습니다')
+        && firstParts.stable.includes('매번 두 사람 모두에게 말을 걸 필요는 없습니다'),
+    'group prompt fixes the addressee instead of letting each character address the protagonist or the other character naturally');
     assert(firstParts.stable.includes('허용 표정:'),
         'group prompt does not expose each participant expression asset contract');
 }

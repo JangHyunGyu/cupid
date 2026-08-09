@@ -1745,7 +1745,8 @@ ${characterCards}
 
 [다인 대면 연기]
 - 두 인물의 말투, 호칭, 판단, 상처의 결을 섞지 마세요. 매 턴 원래 마음을 주던 상대가 먼저 말합니다. 어젯밤 유혹한 상대는 그 말을 들은 뒤 답합니다. 같은 말을 되풀이하거나 문답을 기계적으로 맞추지는 마세요.
-- 침묵, 말 끊기, 서로를 향한 질문과 시선은 장면에 필요할 때만 씁니다. 정해진 대사 순서나 행동 개수를 채우지 마세요.
+- 각 인물은 장면의 감정과 직전 발언을 보고 누구에게 말할지 정합니다. 주인공에게 직접 묻거나 답할 수 있고, 다른 인물에게 묻고 답하거나 그 말에 반박할 수도 있습니다. 매번 두 사람 모두에게 말을 걸 필요는 없습니다.
+- 침묵, 말 끊기, 서로를 향한 시선은 장면에 필요할 때만 씁니다. 정해진 행동 개수를 채우지 마세요.
 - 주인공이 한 말과 행동은 이미 일어난 사실입니다. 두 인물이 대신 주인공의 새 대사나 중대한 선택을 만들지 않습니다.
 - 어젯밤 유혹을 받아들인 일과 직전의 -40 또는 -50 배신 감점은 이미 반영됐습니다. 같은 사실만 되풀이해 다시 감점하지 마세요.
 - 다만 이번 대화에서 책임을 피하거나, 한쪽을 탓하거나, 사실을 새로 숨기거나, 추가 거짓말을 하면 그 행동에 상처받은 두 사람 모두 호감도가 떨어질 수 있습니다. 새 잘못의 강도에 맞춰 실제 감점을 주고 -1로 축소하지 마세요.
@@ -1759,7 +1760,8 @@ ${characterCards}
 
 [Three-person confrontation]
 - Keep both characters’ voices, forms of address, judgments, and hurt distinct. In every turn, the committed partner speaks first and the person who initiated last night’s temptation responds after hearing them. Do not make the exchange repetitive or mechanically symmetrical.
-- Use silence, interruption, questions, and looks between them only when the moment calls for them. Never fill a fixed dialogue order or action quota.
+- Each character decides whom to address from the emotion of the scene and the immediately preceding line. They may question or answer the protagonist directly, or question, challenge, or answer the other character. They do not need to address both in every response.
+- Use silence, interruption, and looks between them only when the moment calls for them. Never fill an action quota.
 - Treat the protagonist’s stated words and actions as completed scene facts. The two characters must not invent a new protagonist line or make a major choice for him.
 - The accepted temptation and the preceding -40 or -50 betrayal penalty have already been applied. Do not deduct the same penalty again merely for recalling that fact.
 - New evasion, blame, concealment, or another lie in this conversation may lower affinity for both characters when each is hurt by that new conduct. Score the new harm at its real intensity; do not shrink it to -1.
@@ -1809,5 +1811,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.54';
+const PROMPT_VERSION = '2.7.55';
 window.PROMPT_VERSION = PROMPT_VERSION;

@@ -111,7 +111,7 @@
         "name": "Las dos",
         "text": "*Las dos me miran al mismo tiempo. Ya no puedo responderle a una evitando a la otra.*",
         "context": "Acaba de descubrirse que el protagonista aceptó la tentación de anoche. La persona por la que había decidido apostar y quien lo tentó ahora lo enfrentan juntas en el mismo salón. La conversación continúa desde su decisión de confesar o mentir, sin disimular la tensión entre los tres.",
-        "personality": "Cada una conserva su propia voz y su propio dolor. La persona traicionada habla primero, y quien lo tentó responde después de escucharla. Los silencios, las interrupciones, las preguntas y las miradas entre ellas deben surgir de la situación. La persona traicionada acaba de enterarse, y quien lo tentó sabe que fue ella quien se acercó primero.",
+        "personality": "Cada una conserva su propia voz y su propio dolor. La persona traicionada habla primero, y quien lo tentó responde después de escucharla. Cualquiera de las dos puede dirigirse al protagonista o preguntar, contradecir o responder a la otra según lo pida el momento. No tienen que dirigirse a ambos cada vez. Los silencios, las interrupciones y las miradas entre ellas deben surgir de la situación. La persona traicionada acaba de enterarse, y quien lo tentó sabe que fue ella quien se acercó primero.",
         "buttonText": "Responder"
     },
     "morning5_start_b": {
