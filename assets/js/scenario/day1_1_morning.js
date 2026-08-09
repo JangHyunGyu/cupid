@@ -75,8 +75,8 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "choices": [
-            { "next": "choice_flirt_1", "stats": {"Seoyeon":{"affinity":5}} },
-            { "next": "choice_joke_1", "stats": {"Seoyeon":{"affinity":3}} },
+            { "next": "choice_flirt_1", "stats": {"Seoyeon":{"affinity":4}} },
+            { "next": "choice_joke_1", "stats": {"Seoyeon":{"affinity":2}} },
             { "next": "choice_dismiss_1", "stats": {"Seoyeon":{"affinity":-3}} }
         ]
     },

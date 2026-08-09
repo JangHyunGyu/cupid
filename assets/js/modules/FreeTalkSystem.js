@@ -1614,12 +1614,23 @@ class FreeTalkSystem {
             return { change: 0, value: previousValue, requestedChange: 0 };
         }
 
-        const newValue = this.stateManager.changeAffinity(charKey, requestedChange);
+        const earnedStoryGain = this.stateManager.getStoryFreeTalkGain(charKey);
+        const appliedChange = CupidFreeTalkCore.normalizeStoryFreeTalkAffinityChange(
+            requestedChange,
+            previousValue,
+            earnedStoryGain
+        );
+        if (appliedChange === 0) {
+            return { change: 0, value: previousValue, requestedChange, appliedChange: 0 };
+        }
+
+        const newValue = this.stateManager.changeAffinity(charKey, appliedChange);
         const actualChange = newValue - previousValue;
+        if (actualChange > 0) this.stateManager.addStoryFreeTalkGain(charKey, actualChange);
         if (actualChange !== 0) this.uiManager.showAffinityChange(actualChange, charKey);
         this.galleryManager.updateMaxAffinity(charKey, newValue);
         this.galleryManager.checkAffinityUnlock(charKey, newValue);
-        return { change: actualChange, value: newValue, requestedChange };
+        return { change: actualChange, value: newValue, requestedChange, appliedChange };
     }
 
     /**

@@ -62,6 +62,9 @@ class StateManager {
         /** 캐릭터별로 아직 풀리지 않은 상처와 감정의 여운 */
         this.relationshipAftermaths = {};
 
+        /** 캐릭터별 본편 프리토킹 누적 양수 보상 */
+        this.storyFreeTalkGains = {};
+
         /**
          * 게임 플래그들 (이벤트 발생 여부 기록)
          * - 예: { metSeoyeon: true, knowsName_Seoyeon: true, ... }
@@ -91,6 +94,7 @@ class StateManager {
         this.chatMemories = {};
         this.chatPromptEpochs = {};
         this.relationshipAftermaths = {};
+        this.storyFreeTalkGains = {};
         this.flags = {};
     }
 
@@ -139,6 +143,19 @@ class StateManager {
         // ?? 0 사용: 음수 호감도(-50 등)도 올바르게 반환
         // || 0은 falsy 값(-50, 0 등)을 모두 0으로 처리하는 버그 발생
         return this.stats[charKey]?.affinity ?? 0;
+    }
+
+    getStoryFreeTalkGain(charKey) {
+        const value = Number(this.storyFreeTalkGains[charKey]);
+        return Number.isFinite(value) ? Math.max(0, Math.round(value)) : 0;
+    }
+
+    addStoryFreeTalkGain(charKey, amount) {
+        const gain = Number(amount);
+        if (!charKey || !Number.isFinite(gain) || gain <= 0) return this.getStoryFreeTalkGain(charKey);
+        const nextValue = this.getStoryFreeTalkGain(charKey) + Math.round(gain);
+        this.storyFreeTalkGains[charKey] = nextValue;
+        return nextValue;
     }
 
     /**
@@ -264,6 +281,7 @@ class StateManager {
             chatMemories: JSON.parse(JSON.stringify(this.chatMemories)),
             chatPromptEpochs: JSON.parse(JSON.stringify(this.chatPromptEpochs)),
             relationshipAftermaths: JSON.parse(JSON.stringify(this.relationshipAftermaths)),
+            storyFreeTalkGains: { ...this.storyFreeTalkGains },
             flags: { ...this.flags }
         };
     }
@@ -285,6 +303,9 @@ class StateManager {
         this.relationshipAftermaths = data.relationshipAftermaths && typeof data.relationshipAftermaths === 'object'
             ? data.relationshipAftermaths
             : {};
+        this.storyFreeTalkGains = data.storyFreeTalkGains && typeof data.storyFreeTalkGains === 'object'
+            ? { ...data.storyFreeTalkGains }
+            : {};
         if (data.flags) this.flags = data.flags;
 
         console.log('[StateManager] 상태 복원 완료');
@@ -301,6 +322,7 @@ class StateManager {
         if (key === 'chatMemories') return this.chatMemories;
         if (key === 'chatPromptEpochs') return this.chatPromptEpochs;
         if (key === 'relationshipAftermaths') return this.relationshipAftermaths;
+        if (key === 'storyFreeTalkGains') return this.storyFreeTalkGains;
         return this.flags[key];
     }
 

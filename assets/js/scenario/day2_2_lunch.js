@@ -50,7 +50,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_seo_2b": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "stats": {"Seoyeon":{"affinity":8}},
+        "stats": {"Seoyeon":{"affinity":6}},
         "next": "lunch2_seo_3"
     },
     "lunch2_seo_2b_dain": {
@@ -112,7 +112,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_seo_2": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "stats": {"Seoyeon":{"affinity":8}},
+        "stats": {"Seoyeon":{"affinity":6}},
         "next": "lunch2_seo_3"
     },
     "lunch2_seo_3": {
@@ -212,8 +212,8 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "choices": [
-            { "next": "lunch2_seo_c1_1", "stats": {"Seoyeon":{"affinity":5}} },
-            { "next": "lunch2_seo_c2_1", "stats": {"Seoyeon":{"affinity":3}} },
+            { "next": "lunch2_seo_c1_1", "stats": {"Seoyeon":{"affinity":4}} },
+            { "next": "lunch2_seo_c2_1", "stats": {"Seoyeon":{"affinity":2}} },
             { "next": "lunch2_seo_trap_1", "stats": {"Seoyeon":{"affinity":-2}} }
         ]
     },
@@ -309,7 +309,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_dain_2b_seo": {
         "background": "assets/images/background/store.png",
         "character": "assets/images/characters/dain_normal.png",
-        "stats": {"Dain":{"affinity":8}},
+        "stats": {"Dain":{"affinity":6}},
         "next": "lunch2_dain_3b_seo"
     },
     "lunch2_dain_3b_seo": {
@@ -331,7 +331,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_dain_2b_yuna": {
         "background": "assets/images/background/store.png",
         "character": "assets/images/characters/dain_normal.png",
-        "stats": {"Dain":{"affinity":8}},
+        "stats": {"Dain":{"affinity":6}},
         "next": "lunch2_dain_3b_yuna"
     },
     "lunch2_dain_3b_yuna": {
@@ -353,7 +353,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_dain_2": {
         "background": "assets/images/background/store.png",
         "character": "assets/images/characters/dain_normal.png",
-        "stats": {"Dain":{"affinity":8}},
+        "stats": {"Dain":{"affinity":6}},
         "branches": [
             { "condition": "chose_dain_lunch", "next": "lunch2_dain_3" },
             { "next": "lunch2_dain_3b" }
@@ -440,7 +440,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "choices": [
             { "next": "lunch2_dain_c1_1", "stats": {"Dain":{"affinity":-3}} },
             { "next": "lunch2_dain_c2_1", "stats": {"Dain":{"affinity":0}} },
-            { "next": "lunch2_dain_c3_1", "stats": {"Dain":{"affinity":5}} }
+            { "next": "lunch2_dain_c3_1", "stats": {"Dain":{"affinity":4}} }
         ]
     },
     "lunch2_dain_c1_1": {
@@ -671,7 +671,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_yuna_3": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "stats": {"Yuna":{"affinity":8}},
+        "stats": {"Yuna":{"affinity":6}},
         "next": "lunch2_yuna_4"
     },
     "lunch2_yuna_4": {
@@ -702,7 +702,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_yuna_3_seo": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "stats": {"Yuna":{"affinity":8}},
+        "stats": {"Yuna":{"affinity":6}},
         "next": "lunch2_yuna_4_seo"
     },
     "lunch2_yuna_4_seo": {
@@ -733,7 +733,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_yuna_3_yuna": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "stats": {"Yuna":{"affinity":8}},
+        "stats": {"Yuna":{"affinity":6}},
         "next": "lunch2_yuna_4_yuna"
     },
     "lunch2_yuna_4_yuna": {
@@ -811,7 +811,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "character": "assets/images/characters/yuna_normal.png",
         "choices": [
             { "next": "lunch2_yuna_c1_1", "stats": {"Yuna":{"affinity":-3}} },
-            { "next": "lunch2_yuna_c2_1", "stats": {"Yuna":{"affinity":5}} }
+            { "next": "lunch2_yuna_c2_1", "stats": {"Yuna":{"affinity":4}} }
         ]
     },
     "lunch2_yuna_c1_1": {

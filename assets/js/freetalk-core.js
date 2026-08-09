@@ -13,6 +13,9 @@
     const RETRY_HTTP_STATUSES = new Set([408, 425, 429]);
     const AFFINITY_CHANGE_MIN = -50;
     const AFFINITY_CHANGE_MAX = 5;
+    const STORY_FREETALK_GAIN_BUDGET = 22;
+    const STORY_FREETALK_TURN_GAIN_MAX = 3;
+    const STORY_FREETALK_HIGH_AFFINITY_GAIN_MAX = 2;
     const RELATIONSHIP_AFTERMATH_VERSION = 1;
     const RELATIONSHIP_AFTERMATH_MAX_TURNS = 24;
     const RELATIONSHIP_AFTERMATH_MAX_CAUSES = 3;
@@ -43,6 +46,21 @@
             AFFINITY_CHANGE_MIN,
             Math.min(AFFINITY_CHANGE_MAX, Math.round(numeric))
         );
+    }
+
+    function normalizeStoryFreeTalkAffinityChange(value, currentAffinity = 0, earnedGain = 0) {
+        const normalized = normalizeAffinityChange(value);
+        if (normalized <= 0) return normalized;
+
+        const affinity = Number.isFinite(Number(currentAffinity)) ? Number(currentAffinity) : 0;
+        const earned = Number.isFinite(Number(earnedGain))
+            ? Math.max(0, Math.round(Number(earnedGain)))
+            : 0;
+        const remainingBudget = Math.max(0, STORY_FREETALK_GAIN_BUDGET - earned);
+        const turnCap = affinity >= 90
+            ? STORY_FREETALK_HIGH_AFFINITY_GAIN_MAX
+            : STORY_FREETALK_TURN_GAIN_MAX;
+        return Math.min(normalized, turnCap, remainingBudget);
     }
 
     function buildAffinityChangeGuidance(lang = 'ko') {
@@ -1180,6 +1198,9 @@ Latest user: """${excerpt}"""
         RETRY_HTTP_STATUSES,
         AFFINITY_CHANGE_MIN,
         AFFINITY_CHANGE_MAX,
+        STORY_FREETALK_GAIN_BUDGET,
+        STORY_FREETALK_TURN_GAIN_MAX,
+        STORY_FREETALK_HIGH_AFFINITY_GAIN_MAX,
         RELATIONSHIP_AFTERMATH_VERSION,
         RELATIONSHIP_AFTERMATH_MAX_TURNS,
         GALLERY_INCIDENT_POLICY,
@@ -1187,6 +1208,7 @@ Latest user: """${excerpt}"""
         GALLERY_CRISIS_SEVERITIES,
         GALLERY_CRISIS_IMPACT_RANGES,
         normalizeAffinityChange,
+        normalizeStoryFreeTalkAffinityChange,
         buildAffinityChangeGuidance,
         getRelationshipAftermathDuration,
         normalizeRelationshipAftermath,

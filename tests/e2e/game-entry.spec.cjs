@@ -70,6 +70,7 @@ test('new game clears main chat context but preserves separate gallery memory', 
         engine.stateManager.currentDay = 5;
         engine.stateManager.stats.Seoyeon.affinity = 87;
         engine.stateManager.flags.ending_perfect_seoyeon = true;
+        engine.stateManager.storyFreeTalkGains.Seoyeon = 22;
         engine.stateManager.chatMemories.Seoyeon = [{ role: 'user', content: 'old main run' }];
         engine.stateManager.chatPromptEpochs.Seoyeon = { version: 1, carryover: 'old main run' };
         engine.freeTalkSystem.freeTalkHistory = [{ role: 'user', content: 'in-flight old run' }];
@@ -81,6 +82,7 @@ test('new game clears main chat context but preserves separate gallery memory', 
             day: engine.stateManager.currentDay,
             affinity: engine.stateManager.stats.Seoyeon.affinity,
             flags: engine.stateManager.flags,
+            storyFreeTalkGains: engine.stateManager.storyFreeTalkGains,
             chatMemories: engine.stateManager.chatMemories,
             promptEpochs: engine.stateManager.chatPromptEpochs,
             runtimeHistory: engine.freeTalkSystem.freeTalkHistory,
@@ -93,6 +95,7 @@ test('new game clears main chat context but preserves separate gallery memory', 
     expect(result.day).toBe(1);
     expect(result.affinity).toBe(0);
     expect(result.flags).toEqual({});
+    expect(result.storyFreeTalkGains).toEqual({});
     expect(result.chatMemories).toEqual({});
     expect(result.promptEpochs).toEqual({});
     expect(result.runtimeHistory).toEqual([]);
@@ -131,6 +134,39 @@ test('main free-talk request keeps the complete per-character run history', asyn
     expect(result.firstUser).toBe('user-0');
     expect(result.last).toBe('assistant-17');
     expect(result.cleared).toEqual(['Seoyeon']);
+});
+
+test('main free-talk affinity pacing reaches 100 only after sustained strong turns', async ({ page }) => {
+    await page.goto('/game.html');
+    await waitForRuntime(page);
+    await page.waitForFunction(() => window.gameEngine?.freeTalkSystem);
+
+    const result = await page.evaluate(() => {
+        const engine = window.gameEngine;
+        const state = engine.stateManager;
+        state.stats.Seoyeon.affinity = 80;
+        state.storyFreeTalkGains.Seoyeon = 0;
+
+        const changes = [];
+        for (let turn = 0; turn < 8; turn += 1) {
+            changes.push(engine.freeTalkSystem.applyAffinity(5, { name: 'Seoyeon' }).change);
+        }
+
+        const saved = state.exportState();
+        const restored = new window.StateManager();
+        restored.importState(saved);
+        return {
+            changes,
+            affinity: state.getAffinity('Seoyeon'),
+            earnedGain: state.getStoryFreeTalkGain('Seoyeon'),
+            restoredGain: restored.getStoryFreeTalkGain('Seoyeon')
+        };
+    });
+
+    expect(result.changes).toEqual([3, 3, 3, 3, 2, 2, 2, 2]);
+    expect(result.affinity).toBe(100);
+    expect(result.earnedGain).toBe(20);
+    expect(result.restoredGain).toBe(20);
 });
 
 test('gallery runtime includes the shared free-talk core', async ({ page }) => {

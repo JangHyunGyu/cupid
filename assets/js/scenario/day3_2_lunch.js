@@ -114,7 +114,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "setFlags": ["lunch3_gave_seoyeon"],
-        "stats": {"Seoyeon":{"affinity":5}},
+        "stats": {"Seoyeon":{"affinity":4}},
         "next": "lunch3_seo_skin_check"
     },
     "lunch3_seo_skin_check": {
@@ -199,7 +199,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_laugh.png",
         "setFlags": ["lunch3_gave_dain"],
-        "stats": {"Dain":{"affinity":7}},
+        "stats": {"Dain":{"affinity":5}},
         "next": "lunch3_dain_skin_check"
     },
     "lunch3_dain_skin_check": {
@@ -249,7 +249,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_normal.png",
         "setFlags": ["lunch3_gave_yuna"],
-        "stats": {"Yuna":{"affinity":7}},
+        "stats": {"Yuna":{"affinity":5}},
         "next": "lunch3_yuna_skin_check"
     },
     "lunch3_yuna_skin_check": {

@@ -103,17 +103,17 @@ test('direct choice affinity distribution keeps subtle penalties meaningful but 
 
 test('two-option screens retain their original response and add the trap as a third choice', () => {
     const restoredOptions = [
-        ['lunch_dain_choice', { Dain: 3 }, '아는 척한 거야.'],
-        ['after_nurse_enter_choice', { Nurse: 3 }, '보건실은 조용하네요'],
-        ['hidden_homeroom_d2_choice1', { Teacher: 3 }, '읽는 건 좋아해요'],
-        ['lunch2_seo_choice', { Seoyeon: 3 }, '직접 닦을게'],
-        ['after2_yuna_choice', { Yuna: 5 }, '조용해서 좋다'],
-        ['hidden_homeroom_d4_cafe_choice', { Teacher: 5 }, '문예부 애들한테도 전부 보여주실 거죠?'],
-        ['hidden_nurse_d4_name_choice', { Nurse: 3 }, '병원과 학교는 뭐가 제일 달라요?'],
-        ['hidden_nurse_d4_choice', { Nurse: 3 }, '괜찮아요, 저 이만 갈게요'],
-        ['date_seo_compliment_choice', { Seoyeon: 5 }, '신경 많이 썼다, 오늘.'],
-        ['date_yuna_compliment_choice', { Yuna: 5 }, '오늘은 좀 달라 보이네.'],
-        ['hidden_nurse_d5_choice', { Nurse: 5 }, '카드보다 상담실 예약 방법을 알려주세요.'],
+        ['lunch_dain_choice', { Dain: 2 }, '아는 척한 거야.'],
+        ['after_nurse_enter_choice', { Nurse: 2 }, '보건실은 조용하네요'],
+        ['hidden_homeroom_d2_choice1', { Teacher: 2 }, '읽는 건 좋아해요'],
+        ['lunch2_seo_choice', { Seoyeon: 2 }, '직접 닦을게'],
+        ['after2_yuna_choice', { Yuna: 4 }, '조용해서 좋다'],
+        ['hidden_homeroom_d4_cafe_choice', { Teacher: 4 }, '문예부 애들한테도 전부 보여주실 거죠?'],
+        ['hidden_nurse_d4_name_choice', { Nurse: 2 }, '병원과 학교는 뭐가 제일 달라요?'],
+        ['hidden_nurse_d4_choice', { Nurse: 2 }, '괜찮아요, 저 이만 갈게요'],
+        ['date_seo_compliment_choice', { Seoyeon: 4 }, '신경 많이 썼다, 오늘.'],
+        ['date_yuna_compliment_choice', { Yuna: 4 }, '오늘은 좀 달라 보이네.'],
+        ['hidden_nurse_d5_choice', { Nurse: 4 }, '카드보다 상담실 예약 방법을 알려주세요.'],
         ['after5_last_chance_choice', {}, '아직 말하지 않는다']
     ];
 
@@ -150,12 +150,13 @@ test('negative-choice screens stay distributed across every story day', () => {
     }
 });
 
-test('day 4 rival temptations are explicit, strictly zero-sum, and localized', () => {
+test('day 4 rival temptations use asymmetric relationship costs and stay localized', () => {
     const counteroffers = [
         {
             sceneId: 'wall_seo_glimpse_2',
             routeCharacter: 'Seoyeon',
             rivalCharacter: 'Dain',
+            heldGain: 4,
             heldFlag: 'day4_held_route_seoyeon',
             temptedFlag: 'day4_took_dain_counteroffer',
             choices: ['서연과 한 약속을 지키고 돌아간다', '체육관으로 들어가 다인의 부탁을 받아준다']
@@ -164,6 +165,7 @@ test('day 4 rival temptations are explicit, strictly zero-sum, and localized', (
             sceneId: 'wall_seo_yuna_tempt_2',
             routeCharacter: 'Seoyeon',
             rivalCharacter: 'Yuna',
+            heldGain: 4,
             heldFlag: 'day4_held_route_seoyeon',
             temptedFlag: 'day4_took_yuna_counteroffer',
             choices: ['서연에게 답장하고 약속대로 돌아간다', '별관으로 가서 유나 곁에 남는다']
@@ -172,6 +174,7 @@ test('day 4 rival temptations are explicit, strictly zero-sum, and localized', (
             sceneId: 'wall_dain_seo_tempt_2',
             routeCharacter: 'Dain',
             rivalCharacter: 'Seoyeon',
+            heldGain: 5,
             heldFlag: 'day4_held_route_dain',
             temptedFlag: 'day4_took_seoyeon_counteroffer',
             choices: ['다인에게 답장하고 약속대로 돌아간다', '서연을 따라 옥상에 올라가 손을 잡는다']
@@ -180,6 +183,7 @@ test('day 4 rival temptations are explicit, strictly zero-sum, and localized', (
             sceneId: 'wall_dain_glimpse_4_c',
             routeCharacter: 'Dain',
             rivalCharacter: 'Yuna',
+            heldGain: 5,
             heldFlag: 'day4_held_route_dain',
             temptedFlag: 'day4_took_yuna_counteroffer',
             choices: ['다인에게 답장하고 약속대로 돌아간다', '학교 후문으로 돌아가 유나 곁에 남는다']
@@ -188,6 +192,7 @@ test('day 4 rival temptations are explicit, strictly zero-sum, and localized', (
             sceneId: 'wall_yuna_glimpse_3_b',
             routeCharacter: 'Yuna',
             rivalCharacter: 'Seoyeon',
+            heldGain: 4,
             heldFlag: 'day4_held_route_yuna',
             temptedFlag: 'day4_took_seoyeon_counteroffer',
             choices: ['유나에게 답장하고 약속대로 돌아간다', '서연을 따라 옥상으로 올라가 손을 잡는다']
@@ -196,6 +201,7 @@ test('day 4 rival temptations are explicit, strictly zero-sum, and localized', (
             sceneId: 'wall_yuna_dain_tempt_2',
             routeCharacter: 'Yuna',
             rivalCharacter: 'Dain',
+            heldGain: 4,
             heldFlag: 'day4_held_route_yuna',
             temptedFlag: 'day4_took_dain_counteroffer',
             choices: ['유나에게 답장하고 약속대로 돌아간다', '체육관으로 들어가 다인의 부탁을 받아준다']
@@ -207,10 +213,10 @@ test('day 4 rival temptations are explicit, strictly zero-sum, and localized', (
         const scene = scenes[counteroffer.sceneId];
         assert.equal(scene?.competitiveAffinity, true, `${counteroffer.sceneId} must stay marked as competitive`);
         assert.equal(scene?.choices?.length, 2, `${counteroffer.sceneId} must present the route and rival`);
-        assert.equal(scene.choices[0].stats?.[counteroffer.routeCharacter]?.affinity, 6);
+        assert.equal(scene.choices[0].stats?.[counteroffer.routeCharacter]?.affinity, counteroffer.heldGain);
         assert.equal(scene.choices[0].stats?.[counteroffer.rivalCharacter]?.affinity, -6);
         assert.ok(scene.choices[0].setFlags?.includes(counteroffer.heldFlag));
-        assert.equal(scene.choices[1].stats?.[counteroffer.rivalCharacter]?.affinity, 50);
+        assert.equal(scene.choices[1].stats?.[counteroffer.rivalCharacter]?.affinity, 8);
         assert.equal(scene.choices[1].stats?.[counteroffer.routeCharacter]?.affinity, -50);
         assert.ok(scene.choices[1].setFlags?.includes(counteroffer.temptedFlag));
         assert.deepEqual(korean[counteroffer.sceneId]?.choices, counteroffer.choices);
@@ -218,7 +224,7 @@ test('day 4 rival temptations are explicit, strictly zero-sum, and localized', (
         for (const choice of scene.choices) {
             const deltas = Object.values(choice.stats).map(stat => Number(stat.affinity));
             assert.equal(deltas.length, 2, `${counteroffer.sceneId} must affect exactly two rivals`);
-            assert.equal(deltas.reduce((sum, value) => sum + value, 0), 0, `${counteroffer.sceneId} must stay zero-sum`);
+            assert.ok(deltas.reduce((sum, value) => sum + value, 0) <= 0, `${counteroffer.sceneId} must not create net affinity`);
         }
         for (const copy of localizedCopies) {
             assert.equal(copy[counteroffer.sceneId]?.choices?.length, 2, `${counteroffer.sceneId} must exist in every locale`);
@@ -226,7 +232,7 @@ test('day 4 rival temptations are explicit, strictly zero-sum, and localized', (
     }
 });
 
-test('every scene marked as competitive remains exactly zero-sum', () => {
+test('every competitive scene remains a non-positive relationship tradeoff', () => {
     const competitiveScenes = Object.entries(scenes).filter(([, scene]) => scene.competitiveAffinity);
     assert.ok(competitiveScenes.length > 0, 'at least one competitive choice scene must exist');
 
@@ -237,8 +243,66 @@ test('every scene marked as competitive remains exactly zero-sum', () => {
                 .filter(Number.isFinite);
             assert.equal(deltas.length, 2, `${sceneId} must affect exactly two characters`);
             assert.ok(deltas.some(value => value > 0) && deltas.some(value => value < 0), `${sceneId} must trade affinity between rivals`);
-            assert.equal(deltas.reduce((sum, value) => sum + value, 0), 0, `${sceneId} must remain zero-sum`);
+            assert.ok(deltas.reduce((sum, value) => sum + value, 0) <= 0, `${sceneId} must not create net affinity`);
         }
+    }
+});
+
+test('optimal authored routes give every character the same 80-point choice budget', () => {
+    const optimalRouteEffects = {
+        Seoyeon: [
+            ['seoyeon_choice', 0], ['lunch_seo_3'], ['lunch_seo_choice', 0],
+            ['lunch2_seo_2b'], ['lunch2_seo_choice', 0], ['after2_seo_1'],
+            ['after2_seo_choice1', 0], ['after2_seo_choice2', 0], ['night2_reply_seo_1'],
+            ['night2_reply_seo_react_high'], ['morning3_date_seo_choice', 0],
+            ['lunch3_give_seo_1'], ['after3_seo_choice', 1], ['night3_dream_seo_bonus'],
+            ['date_seo_compliment_choice', 1], ['date_seo_pretty_high'],
+            ['wall_seo_hug_choice', 0], ['wall_seo_line_choice', 0],
+            ['wall_seo_glimpse_2', 0], ['tour_seo_14']
+        ],
+        Yuna: [
+            ['lunch_yuna_4'], ['lunch_yuna_choice', 0], ['lunch2_yuna_3_yuna'],
+            ['lunch2_yuna_choice', 1], ['after2_yuna_2'], ['after2_yuna_choice', 0],
+            ['night2_reply_yuna_1'], ['night2_reply_yuna_react_high'],
+            ['morning3_date_yuna_choice', 0], ['lunch3_give_yuna_1'],
+            ['after3_yuna_choice', 1], ['night3_dream_yuna_bonus'],
+            ['date_yuna_compliment_choice', 1], ['date_yuna_pretty_high'],
+            ['wall_yuna_choice', 0], ['wall_yuna_glimpse_3_b', 0], ['tour_yuna_11']
+        ],
+        Dain: [
+            ['lunch_dain_2'], ['lunch_dain_choice', 0], ['lunch2_dain_2'],
+            ['lunch2_dain_choice', 2], ['after2_dain_1'], ['night2_reply_dain_1'],
+            ['night2_reply_dain_react_high'], ['morning3_date_dain_choice', 0],
+            ['lunch3_give_dain_1'], ['after3_dain_choice', 1],
+            ['after3_dain_dilemma_final', 1], ['night3_dream_dain_bonus'],
+            ['date_dain_pretty_high'], ['wall_dain_choice', 1],
+            ['wall_dain_glimpse_4_c', 0], ['tour_dain_end']
+        ],
+        Teacher: [
+            ['after_hidden_homeroom_choice', 1], ['after_homeroom_honest_choice2', 0],
+            ['hidden_homeroom_d2_choice1', 0], ['hidden_homeroom_d2_choice2', 0],
+            ['hidden_homeroom_d3_choice', 0], ['hidden_homeroom_d3_reveal_choice', 0],
+            ['hidden_homeroom_d4_choice', 0], ['hidden_homeroom_d4_cafe_choice', 0],
+            ['hidden_homeroom_d5_choice', 1], ['hidden_homeroom_d5_8']
+        ],
+        Nurse: [
+            ['after_nurse_enter_2'], ['after_nurse_enter_choice', 0],
+            ['hidden_nurse_d2_choice1', 0], ['hidden_nurse_d2_choice2', 0],
+            ['hidden_nurse_d3_choice1', 0], ['hidden_nurse_d3_choice2', 0],
+            ['hidden_nurse_d4_morning_choice', 0], ['hidden_nurse_d4_name_choice', 0],
+            ['hidden_nurse_d4_choice', 0], ['hidden_nurse_d5_choice', 0],
+            ['hidden_nurse_d5_7']
+        ]
+    };
+
+    for (const [character, effects] of Object.entries(optimalRouteEffects)) {
+        const total = effects.reduce((sum, [sceneId, choiceIndex]) => {
+            const source = Number.isInteger(choiceIndex) ? scenes[sceneId]?.choices?.[choiceIndex] : scenes[sceneId];
+            const affinity = Number(source?.stats?.[character]?.affinity);
+            assert.ok(Number.isFinite(affinity) && affinity > 0, `${sceneId} must grant ${character} positive affinity`);
+            return sum + affinity;
+        }, 0);
+        assert.equal(total, 80, `${character} optimal authored route must total 80 before free talk`);
     }
 });
 

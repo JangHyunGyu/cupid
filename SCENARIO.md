@@ -125,8 +125,8 @@
 ### `seoyeon_choice`
 - 배경: `school.png`
 - 선택지:
-  1. "일부러 마중 나온 거야?" → `choice_flirt_1` | Seoyeon +5
-  2. "가이드비는 얼마야?" → `choice_joke_1` | Seoyeon +3
+  1. "일부러 마중 나온 거야?" → `choice_flirt_1` | Seoyeon +4
+  2. "가이드비는 얼마야?" → `choice_joke_1` | Seoyeon +2
   3. "괜찮아, 대충 둘러보면 되지 뭐." → `choice_dismiss_1` | Seoyeon -3
 
 - 캐릭터: `seyoun_normal.png`
@@ -806,7 +806,7 @@
 
 ### `lunch_seo_3`
 - 배경: `top_school.png`
-- 스탯: Seoyeon +3
+- 스탯: Seoyeon +2
 - 다음: `lunch_seo_4`
 
 - 캐릭터: `seyoun_normal.png`
@@ -979,7 +979,7 @@
 ### `lunch_seo_choice`
 - 배경: `top_school.png`
 - 선택지:
-  1. "받아먹는다" → `lunch_seo_c1_1` | Seoyeon +5
+  1. "받아먹는다" → `lunch_seo_c1_1` | Seoyeon +4
   2. "직접 먹는 게 더 맛있을걸" → `lunch_seo_c2_1` | Seoyeon -2
 
 - 캐릭터: `seyoun_normal.png`
@@ -1146,7 +1146,7 @@
 
 ### `lunch_dain_2`
 - 배경: `store.png`
-- 스탯: Dain +10
+- 스탯: Dain +8
 - 다음: `lunch_dain_3`
 
 - 캐릭터: `dain_normal.png`
@@ -1346,8 +1346,8 @@
 ### `lunch_dain_choice`
 - 배경: `store.png`
 - 선택지:
-  1. "조금은. 알려줄 수 있어?" → `lunch_dain_c1_1` | Dain +7
-  2. "아는 척한 거야." → `lunch_dain_c2_1` | Dain +3
+  1. "조금은. 알려줄 수 있어?" → `lunch_dain_c1_1` | Dain +5
+  2. "아는 척한 거야." → `lunch_dain_c2_1` | Dain +2
   3. "그냥 분위기 맞춰 본 거야." → `lunch_dain_trap_1` | Dain -3
 
 - 캐릭터: `dain_laugh.png`
@@ -1479,7 +1479,7 @@
 
 ### `lunch_yuna_4`
 - 배경: `library_old.png`
-- 스탯: Yuna +5
+- 스탯: Yuna +4
 - 다음: `lunch_yuna_5`
 
 - 캐릭터: `yuna_normal.png`
@@ -1661,7 +1661,7 @@
 ### `lunch_yuna_choice`
 - 배경: `library_old.png`
 - 선택지:
-  1. "그 책 재미있어? 나도 읽어볼까" → `lunch_yuna_c1_1` | Yuna +5
+  1. "그 책 재미있어? 나도 읽어볼까" → `lunch_yuna_c1_1` | Yuna +4
   2. "조용히 책만 읽는 거 좋아하나 봐." → `lunch_yuna_c2_1` | Yuna -2
 
 - 캐릭터: `yuna_normal.png`
@@ -2231,7 +2231,7 @@
 - 배경: `teacher_office.png`
 - 선택지:
   1. "괜찮습니다. 아직 낯설지만요." → `after_homeroom_ok` | Teacher +0
-  2. "솔직히 좀 정신없습니다." → `after_homeroom_honest_1` | Teacher +7
+  2. "솔직히 좀 정신없습니다." → `after_homeroom_honest_1` | Teacher +6
 
 - 캐릭터: `teacher_normal.png`
 **담임선생님**: *클립보드를 내리고 {name}의 얼굴을 본다.*
@@ -2368,7 +2368,7 @@
 ### `after_homeroom_honest_choice2`
 - 배경: `teacher_office.png`
 - 선택지:
-  1. "걱정이면 걱정이라고 하시면 되잖아요" → `after_homeroom_honest_choice2a` | Teacher +10
+  1. "걱정이면 걱정이라고 하시면 되잖아요" → `after_homeroom_honest_choice2a` | Teacher +8
   2. "그럼 다음에도 주스로 부탁드릴게요, 선생님." → `after_homeroom_honest_choice2b` | Teacher -2
 
 - 캐릭터: `teacher_normal.png`
@@ -2510,7 +2510,7 @@
 
 ### `after_nurse_enter_2`
 - 배경: `nurse_room.png`
-- 스탯: Nurse +7
+- 스탯: Nurse +6
 - 다음: `after_nurse_enter_2_b`
 
 - 캐릭터: `nurse_normal.png`
@@ -2638,8 +2638,8 @@
 ### `after_nurse_enter_choice`
 - 배경: `nurse_room.png`
 - 선택지:
-  1. "선생님이 더 피곤해 보이는데요" → `after_nurse_enter_choice_a` | Nurse +10 | 플래그: `nurse_choice_a`
-  2. "보건실은 조용하네요" → `after_nurse_enter_choice_b` | Nurse +3 | 플래그: `nurse_choice_b`
+  1. "선생님이 더 피곤해 보이는데요" → `after_nurse_enter_choice_a` | Nurse +8 | 플래그: `nurse_choice_a`
+  2. "보건실은 조용하네요" → `after_nurse_enter_choice_b` | Nurse +2 | 플래그: `nurse_choice_b`
   3. "여긴 선생님 혼자 계셔서 편하시겠어요." → `after_nurse_enter_trap` | Nurse -3 | 플래그: `nurse_choice_trap`
 
 - 캐릭터: `nurse_normal.png`
@@ -3776,8 +3776,8 @@
 ### `hidden_homeroom_d2_choice1`
 - 배경: `teacher_office.png`
 - 선택지:
-  1. "선생님은요? 뭐 읽으세요?" → `hidden_homeroom_d2_choice1_a` | Teacher +10
-  2. "읽는 건 좋아해요" → `hidden_homeroom_d2_choice1_b` | Teacher +3
+  1. "선생님은요? 뭐 읽으세요?" → `hidden_homeroom_d2_choice1_a` | Teacher +8
+  2. "읽는 건 좋아해요" → `hidden_homeroom_d2_choice1_b` | Teacher +2
   3. "선생님은 어려운 책만 읽으시죠?" → `hidden_homeroom_d2_choice1_trap` | Teacher -3
 
 - 캐릭터: `teacher_normal.png`
@@ -3923,7 +3923,7 @@
 ### `hidden_homeroom_d2_choice2`
 - 배경: `teacher_office.png`
 - 선택지:
-  1. "업무치고 표정이 좋으신데요" → `hidden_homeroom_d2_choice2_a` | Teacher +7
+  1. "업무치고 표정이 좋으신데요" → `hidden_homeroom_d2_choice2_a` | Teacher +6
   2. "챙겨주셔서 감사합니다" → `hidden_homeroom_d2_choice2_b` | Teacher +0
 
 - 캐릭터: `teacher_normal.png`
@@ -4166,7 +4166,7 @@
 
 ### `lunch2_seo_2b`
 - 배경: `top_school.png`
-- 스탯: Seoyeon +8
+- 스탯: Seoyeon +6
 - 다음: `lunch2_seo_3`
 
 - 캐릭터: `seyoun_normal.png`
@@ -4276,7 +4276,7 @@
 
 ### `lunch2_seo_2`
 - 배경: `top_school.png`
-- 스탯: Seoyeon +8
+- 스탯: Seoyeon +6
 - 다음: `lunch2_seo_3`
 
 - 캐릭터: `seyoun_normal.png`
@@ -4451,8 +4451,8 @@
 ### `lunch2_seo_choice`
 - 배경: `top_school.png`
 - 선택지:
-  1. "가만히 있는다" → `lunch2_seo_c1_1` | Seoyeon +5
-  2. "직접 닦을게" → `lunch2_seo_c2_1` | Seoyeon +3
+  1. "가만히 있는다" → `lunch2_seo_c1_1` | Seoyeon +4
+  2. "직접 닦을게" → `lunch2_seo_c2_1` | Seoyeon +2
   3. "이 정도는 혼자 할 수 있어." → `lunch2_seo_trap_1` | Seoyeon -2
 
 - 캐릭터: `seyoun_normal.png`
@@ -4614,7 +4614,7 @@
 
 ### `lunch2_dain_2b_seo`
 - 배경: `store.png`
-- 스탯: Dain +8
+- 스탯: Dain +6
 - 다음: `lunch2_dain_3b_seo`
 
 - 캐릭터: `dain_normal.png`
@@ -4652,7 +4652,7 @@
 
 ### `lunch2_dain_2b_yuna`
 - 배경: `store.png`
-- 스탯: Dain +8
+- 스탯: Dain +6
 - 다음: `lunch2_dain_3b_yuna`
 
 - 캐릭터: `dain_normal.png`
@@ -4690,7 +4690,7 @@
 
 ### `lunch2_dain_2`
 - 배경: `store.png`
-- 스탯: Dain +8
+- 스탯: Dain +6
 - 분기:
   - [`chose_dain_lunch`] → `lunch2_dain_3`
   - [기본] → `lunch2_dain_3b`
@@ -4840,7 +4840,7 @@
 - 선택지:
   1. "어제 좀 얘기했어" → `lunch2_dain_c1_1` | Dain -3
   2. "학교 안내 받은 정도?" → `lunch2_dain_c2_1` | Dain +0
-  3. "왜, 신경 쓰여?" → `lunch2_dain_c3_1` | Dain +5
+  3. "왜, 신경 쓰여?" → `lunch2_dain_c3_1` | Dain +4
 
 - 캐릭터: `dain_normal.png`
 **다인**: *{name}을 빤히 본다.*
@@ -5239,7 +5239,7 @@
 
 ### `lunch2_yuna_3`
 - 배경: `yuna_hideout.png`
-- 스탯: Yuna +8
+- 스탯: Yuna +6
 - 다음: `lunch2_yuna_4`
 
 - 캐릭터: `yuna_normal.png`
@@ -5294,7 +5294,7 @@
 
 ### `lunch2_yuna_3_seo`
 - 배경: `yuna_hideout.png`
-- 스탯: Yuna +8
+- 스탯: Yuna +6
 - 다음: `lunch2_yuna_4_seo`
 
 - 캐릭터: `yuna_normal.png`
@@ -5349,7 +5349,7 @@
 
 ### `lunch2_yuna_3_yuna`
 - 배경: `yuna_hideout.png`
-- 스탯: Yuna +8
+- 스탯: Yuna +6
 - 다음: `lunch2_yuna_4_yuna`
 
 - 캐릭터: `yuna_normal.png`
@@ -5487,7 +5487,7 @@
 - 배경: `yuna_hideout.png`
 - 선택지:
   1. "그 사람, 지금은?" → `lunch2_yuna_c1_1` | Yuna -3
-  2. "묻지 않고 옆에 앉는다" → `lunch2_yuna_c2_1` | Yuna +5
+  2. "묻지 않고 옆에 앉는다" → `lunch2_yuna_c2_1` | Yuna +4
 
 - 캐릭터: `yuna_normal.png`
 **{name}**: *'있었는데' 뒤에 말이 없다. 유나는 책갈피 끝을 책 안쪽으로 밀어 넣는다.*
@@ -5782,7 +5782,7 @@
 ### `hidden_nurse_d2_choice1`
 - 배경: `nurse_room.png`
 - 선택지:
-  1. "병원에서는 이런 것도 배워요?" → `hidden_nurse_d2_choice1_a` | Nurse +10
+  1. "병원에서는 이런 것도 배워요?" → `hidden_nurse_d2_choice1_a` | Nurse +8
   2. "밴드 하나도 꼼꼼하시네요." → `hidden_nurse_d2_choice1_b` | Nurse -2
 
 - 캐릭터: `nurse_normal.png`
@@ -5829,7 +5829,7 @@
 ### `hidden_nurse_d2_choice2`
 - 배경: `nurse_room.png`
 - 선택지:
-  1. "비밀 많으시네요. 하나만 알려주면 안 돼요?" → `hidden_nurse_d2_choice2_a` | Nurse +7
+  1. "비밀 많으시네요. 하나만 알려주면 안 돼요?" → `hidden_nurse_d2_choice2_a` | Nurse +6
   2. "네, 안 봤어요" → `hidden_nurse_d2_choice2_b` | Nurse -3
 
 - 캐릭터: `nurse_shy.png`
@@ -5912,7 +5912,7 @@
 - 배경: `gym.png`
 - BGM: `daily2.mp3`
 - 플래그: `chose_dain_after2`
-- 스탯: Dain +8
+- 스탯: Dain +6
 - 다음: `after2_dain_2`
 
 - 캐릭터: `dain_active.png`
@@ -6255,7 +6255,7 @@
 - 배경: `student_room.png`
 - BGM: `sunset1.mp3`
 - 플래그: `chose_seo_after2`
-- 스탯: Seoyeon +8
+- 스탯: Seoyeon +6
 - 다음: `after2_seo_2`
 
 - 캐릭터: `seyoun_sad.png`
@@ -6419,7 +6419,7 @@
 ### `after2_seo_choice1`
 - 배경: `student_room.png`
 - 선택지:
-  1. "석양이 예쁜데. 창밖 얘기야." → `after2_seo_sunset_joke` | Seoyeon +5
+  1. "석양이 예쁜데. 창밖 얘기야." → `after2_seo_sunset_joke` | Seoyeon +4
   2. "매일 하는 거면 익숙하겠네." → `after2_seo_neck_worry` | Seoyeon -3
 
 - 캐릭터: `seyoun_normal.png`
@@ -6604,7 +6604,7 @@
 ### `after2_seo_choice2`
 - 배경: `student_room.png`
 - 선택지:
-  1. "좀 더 있을까? 아직 남았지?" → `after2_seo_stay` | Seoyeon +5
+  1. "좀 더 있을까? 아직 남았지?" → `after2_seo_stay` | Seoyeon +4
   2. "끝났으면 갈게" → `after2_seo_leave` | Seoyeon +0
 
 - 캐릭터: `seyoun_normal.png`
@@ -6738,7 +6738,7 @@
 
 ### `after2_yuna_2`
 - 배경: `yuna_hideout.png`
-- 스탯: Yuna +8
+- 스탯: Yuna +6
 - 다음: `after2_yuna_2_b`
 
 - 캐릭터: `yuna_normal.png`
@@ -6875,8 +6875,8 @@
 ### `after2_yuna_choice`
 - 배경: `yuna_hideout.png`
 - 선택지:
-  1. "매일 올까?" → `after2_yuna_everyday` | Yuna +8
-  2. "조용해서 좋다" → `after2_yuna_quiet` | Yuna +5
+  1. "매일 올까?" → `after2_yuna_everyday` | Yuna +6
+  2. "조용해서 좋다" → `after2_yuna_quiet` | Yuna +4
   3. "너랑 있으면 굳이 말 안 해도 돼서 편해." → `after2_yuna_trap` | Yuna -3
 
 - 캐릭터: `yuna_normal.png`
@@ -7286,7 +7286,7 @@
 
 ### `night2_reply_dain_1`
 - 배경: `room_my.png`
-- 스탯: Dain +5
+- 스탯: Dain +4
 - 다음: `night2_reply_dain_2`
 
 - 캐릭터: `dain_normal.png` @ 0.35
@@ -7368,7 +7368,7 @@
 
 ### `night2_reply_seo_1`
 - 배경: `room_my.png`
-- 스탯: Seoyeon +3
+- 스탯: Seoyeon +2
 - 다음: `night2_reply_seo_2`
 
 - 캐릭터: `seyoun_normal.png` @ 0.35
@@ -7418,7 +7418,7 @@
 ### `night2_reply_seo_react_high`
 - 배경: `room_my.png`
 - 플래그: `night2_replied_seo`
-- 스탯: Seoyeon +2
+- 스탯: Seoyeon +1
 - 다음: `night2_seo_freetalk`
 
 - 캐릭터: `seyoun_normal.png` @ 0.35
@@ -7450,7 +7450,7 @@
 
 ### `night2_reply_yuna_1`
 - 배경: `room_my.png`
-- 스탯: Yuna +5
+- 스탯: Yuna +4
 - 다음: `night2_reply_yuna_2`
 
 - 캐릭터: `yuna_normal.png` @ 0.35
@@ -7536,7 +7536,7 @@
 ### `night2_reply_yuna_react_high`
 - 배경: `room_my.png`
 - 플래그: `night2_replied_yuna`
-- 스탯: Yuna +2
+- 스탯: Yuna +1
 - 다음: `night2_yuna_freetalk`
 
 - 캐릭터: `yuna_normal.png` @ 0.35
@@ -8382,7 +8382,7 @@
 ### `hidden_homeroom_d3_choice`
 - 배경: `room_school.png`
 - 선택지:
-  1. "원고지인 거 봤어요. 소설 쓰시는 거예요?" → `hidden_homeroom_d3_reveal_1` | Teacher +12
+  1. "원고지인 거 봤어요. 소설 쓰시는 거예요?" → `hidden_homeroom_d3_reveal_1` | Teacher +9
   2. "죄송합니다, 안 봤어요." → `hidden_homeroom_d3_hide_1` | Teacher -3
 
 - 캐릭터: `teacher_normal.png`
@@ -8593,8 +8593,8 @@
 ### `hidden_homeroom_d3_reveal_choice`
 - 배경: `room_school.png`
 - 선택지:
-  1. "7년이면 포기가 아니라 끈기 아니에요?" → `hidden_homeroom_d3_reveal_choice_a` | Teacher +9
-  2. "왜 꼭 여기서 쓰세요?" → `hidden_homeroom_d3_reveal_choice_b` | Teacher +3
+  1. "7년이면 포기가 아니라 끈기 아니에요?" → `hidden_homeroom_d3_reveal_choice_a` | Teacher +7
+  2. "왜 꼭 여기서 쓰세요?" → `hidden_homeroom_d3_reveal_choice_b` | Teacher +2
 
 - 캐릭터: `teacher_normal.png`
 **{name}**: *7년. 교탁 위의 원고지가 닳아 있다.*
@@ -9021,7 +9021,7 @@
 ### `hidden_nurse_d3_choice1`
 - 배경: `nurse_room.png`
 - 선택지:
-  1. "비슷해요." → `hidden_nurse_d3_choice1_a` | Nurse +7
+  1. "비슷해요." → `hidden_nurse_d3_choice1_a` | Nurse +6
   2. "아뇨, 그냥 좀 복잡해서요" → `hidden_nurse_d3_choice1_b` | Nurse +0
 
 - 캐릭터: `nurse_normal.png`
@@ -9194,8 +9194,8 @@
 ### `hidden_nurse_d3_choice2`
 - 배경: `nurse_room.png`
 - 선택지:
-  1. "그 일을 겪고 병원을 나오신 거예요?" → `hidden_nurse_d3_choice2_a` | Nurse +12
-  2. "그때 이야기, 더 해도 괜찮으세요?" → `hidden_nurse_d3_choice2_b` | Nurse +5
+  1. "그 일을 겪고 병원을 나오신 거예요?" → `hidden_nurse_d3_choice2_a` | Nurse +9
+  2. "그때 이야기, 더 해도 괜찮으세요?" → `hidden_nurse_d3_choice2_b` | Nurse +4
 
 - 캐릭터: `nurse_normal.png`
 **보건선생님**: *'한 명'에서 말을 멈췄다. 종이컵 가장자리가 손에 눌려 찌그러진다.*
@@ -9308,7 +9308,7 @@
 ### `morning3_date_seo_choice`
 - 배경: `school_hallway.png`
 - 선택지:
-  1. "있어. 어디?" → `morning3_date_seo_accept` | Seoyeon +5 | 플래그: `accepted_seoyeon_date`
+  1. "있어. 어디?" → `morning3_date_seo_accept` | Seoyeon +4 | 플래그: `accepted_seoyeon_date`
   2. "좀 바쁜데" → `morning3_date_seo_decline` | Seoyeon -3
 
 - 캐릭터: `seyoun_normal.png`
@@ -9373,7 +9373,7 @@
 ### `morning3_date_dain_choice`
 - 배경: `room_school.png`
 - 선택지:
-  1. "좋아, 콜" → `morning3_date_dain_accept` | Dain +5 | 플래그: `accepted_dain_date`
+  1. "좋아, 콜" → `morning3_date_dain_accept` | Dain +4 | 플래그: `accepted_dain_date`
   2. "주말은 좀..." → `morning3_date_dain_decline` | Dain -3
 
 - 캐릭터: `dain_normal.png`
@@ -9447,7 +9447,7 @@
 ### `morning3_date_yuna_choice`
 - 배경: `room_school.png`
 - 선택지:
-  1. "쪽지 뒷면에 '갈게'라고 적는다" → `morning3_date_yuna_accept` | Yuna +5 | 플래그: `accepted_yuna_date`
+  1. "쪽지 뒷면에 '갈게'라고 적는다" → `morning3_date_yuna_accept` | Yuna +4 | 플래그: `accepted_yuna_date`
   2. "쪽지 뒷면에 '이번 주말은 어려워'라고 적는다" → `morning3_date_yuna_decline` | Yuna -3
 
 - 캐릭터: `yuna_normal.png`
@@ -9720,7 +9720,7 @@
 ### `lunch3_give_seo_1`
 - 배경: `room_school.png`
 - 플래그: `lunch3_gave_seoyeon`
-- 스탯: Seoyeon +5
+- 스탯: Seoyeon +4
 - 다음: `lunch3_seo_skin_check`
 
 - 캐릭터: `seyoun_normal.png`
@@ -9860,7 +9860,7 @@
 ### `lunch3_give_dain_1`
 - 배경: `room_school.png`
 - 플래그: `lunch3_gave_dain`
-- 스탯: Dain +7
+- 스탯: Dain +5
 - 다음: `lunch3_dain_skin_check`
 
 - 캐릭터: `dain_laugh.png`
@@ -9943,7 +9943,7 @@
 ### `lunch3_give_yuna_1`
 - 배경: `room_school.png`
 - 플래그: `lunch3_gave_yuna`
-- 스탯: Yuna +7
+- 스탯: Yuna +5
 - 다음: `lunch3_yuna_skin_check`
 
 - 캐릭터: `yuna_normal.png`
@@ -10579,7 +10579,7 @@
 - 배경: `student_room.png`
 - 선택지:
   1. "물티슈 줄까." → `after3_seo_pity_trap_1` | Seoyeon -18 | 플래그: `seo_pity_broken`
-  2. "방금? 아무것도 못 봤는데. 펜 떨어뜨려서 주우러 들어왔어." → `after3_seo_correct_1` | Seoyeon +18
+  2. "방금? 아무것도 못 봤는데. 펜 떨어뜨려서 주우러 들어왔어." → `after3_seo_correct_1` | Seoyeon +13
 
 - 캐릭터: `seyoun_sad.png`
 **서연**: 오늘 본 건 여기까지만 해줘. 대신 지금은 평소처럼 대해.
@@ -10959,7 +10959,7 @@
 - 배경: `yuna_hideout.png`
 - 선택지:
   1. "미안. 그래도 이거 내 이야기 맞지?" → `after3_yuna_decode_trap_1` | Yuna -22 | 플래그: `yuna_safe_zone_broken`
-  2. "미안. 펼쳐진 첫 장만 봤어. 더 읽지는 않을게. 그런데 이 작가, 문장이 정말 좋다." → `after3_yuna_correct_1` | Yuna +20
+  2. "미안. 펼쳐진 첫 장만 봤어. 더 읽지는 않을게. 그런데 이 작가, 문장이 정말 좋다." → `after3_yuna_correct_1` | Yuna +14
 
 - 캐릭터: `yuna_shy.png`
 **{name}**: *노트를 유나 쪽으로 돌려놓는다.*
@@ -11303,7 +11303,7 @@
 - 배경: `gym.png`
 - 선택지:
   1. "괜찮아? 무리하지 마. 오늘은 쉬는 게 어때." → `after3_dain_pity_trap_1` | Dain -20 | 플래그: `pitied_dain`
-  2. "그럼 여기 있을게. 말하고 싶을 때 말해." → `after3_dain_correct_1` | Dain +18
+  2. "그럼 여기 있을게. 말하고 싶을 때 말해." → `after3_dain_correct_1` | Dain +14
 
 - 캐릭터: `dain_sad.png`
 **다인**: *다인이 벤치에 앉아 무릎 한곳만 계속 문지른다.*
@@ -11585,7 +11585,7 @@
 - 배경: `gym.png`
 - 선택지:
   1. "미안. 근데 말할 거야." → `after3_dain_tell_confirm` | Dain -20 | 플래그: `told_about_dain_knee`
-  2. "알겠어. 안 말할게." → `after3_dain_tell_retreat` | Dain +5 | 플래그: `ignored_dain_knee`
+  2. "알겠어. 안 말할게." → `after3_dain_tell_retreat` | Dain +4 | 플래그: `ignored_dain_knee`
 
 - 캐릭터: `dain_sad.png`
 **다인**: *다인은 젖은 눈가를 닦지 않는다. 마지막 말 뒤에 늘 붙던 웃음도 없다.*
@@ -12537,7 +12537,7 @@
 
 ### `night3_dream_seo_bonus`
 - 배경: `room_my.png`
-- 스탯: Seoyeon +2
+- 스탯: Seoyeon +1
 - 다음: `night3_end`
 
 - 캐릭터: `없음`
@@ -12547,7 +12547,7 @@
 
 ### `night3_dream_yuna_bonus`
 - 배경: `room_my.png`
-- 스탯: Yuna +6
+- 스탯: Yuna +4
 - 다음: `night3_end`
 
 - 캐릭터: `없음`
@@ -12557,7 +12557,7 @@
 
 ### `night3_dream_dain_bonus`
 - 배경: `room_my.png`
-- 스탯: Dain +3
+- 스탯: Dain +2
 - 다음: `night3_end`
 
 - 캐릭터: `없음`
@@ -13296,8 +13296,8 @@
 ### `hidden_homeroom_d4_choice`
 - 배경: `street.png`
 - 선택지:
-  1. "좋아요. 합평회 구경해도 돼요?" → `hidden_homeroom_d4_cafe_1` | Teacher +12
-  2. "오늘은 약속이 있어서요." → `hidden_homeroom_d4_decline` | Teacher +5
+  1. "좋아요. 합평회 구경해도 돼요?" → `hidden_homeroom_d4_cafe_1` | Teacher +9
+  2. "오늘은 약속이 있어서요." → `hidden_homeroom_d4_decline` | Teacher +4
 
 - 캐릭터: `teacher_normal.png`
 **{name}**: *종이봉투 안에서 원고 모서리끼리 부딪힌다.*
@@ -13429,8 +13429,8 @@
 - 배경: `cafe.png`
 - 배경톤: `warm`
 - 선택지:
-  1. "결말은 아직 못 정하셨어요?" → `hidden_homeroom_d4_cafe_choice_a` | Teacher +12
-  2. "문예부 애들한테도 전부 보여주실 거죠?" → `hidden_homeroom_d4_cafe_choice_b` | Teacher +5
+  1. "결말은 아직 못 정하셨어요?" → `hidden_homeroom_d4_cafe_choice_a` | Teacher +9
+  2. "문예부 애들한테도 전부 보여주실 거죠?" → `hidden_homeroom_d4_cafe_choice_b` | Teacher +4
   3. "선생님 글이면 애들도 좋다고 하겠네요." → `hidden_homeroom_d4_cafe_trap` | Teacher -4
 
 - 캐릭터: `teacher_normal.png`
@@ -13714,8 +13714,8 @@
 ### `hidden_nurse_d4_morning_choice`
 - 배경: `nurse_room.png`
 - 선택지:
-  1. "담임이랑 상담실에도 말해볼게요." → `hidden_nurse_d4_morning_choice_a` | Nurse +10
-  2. "아직은 잘 모르겠어요." → `hidden_nurse_d4_morning_choice_b` | Nurse +5
+  1. "담임이랑 상담실에도 말해볼게요." → `hidden_nurse_d4_morning_choice_a` | Nurse +8
+  2. "아직은 잘 모르겠어요." → `hidden_nurse_d4_morning_choice_b` | Nurse +4
 
 - 캐릭터: `nurse_normal.png`
 **{name}**: *안내문에는 담임 상담, 위클래스, 보호자 연락 순서가 적혀 있다.*
@@ -13997,8 +13997,8 @@
 - 배경: `nurse_room.png`
 - 배경톤: `cold`
 - 선택지:
-  1. "언제 보건교사가 되길 잘했다고 느껴요?" → `hidden_nurse_d4_name_choice_a` | Nurse +7
-  2. "병원과 학교는 뭐가 제일 달라요?" → `hidden_nurse_d4_name_choice_b` | Nurse +3
+  1. "언제 보건교사가 되길 잘했다고 느껴요?" → `hidden_nurse_d4_name_choice_a` | Nurse +6
+  2. "병원과 학교는 뭐가 제일 달라요?" → `hidden_nurse_d4_name_choice_b` | Nurse +2
   3. "학교에선 크게 다칠 일도 드물어서 마음은 좀 편하시겠어요." → `hidden_nurse_d4_name_trap` | Nurse -3
 
 - 캐릭터: `nurse_shy.png`
@@ -14072,8 +14072,8 @@
 ### `hidden_nurse_d4_choice`
 - 배경: `nurse_room.png`
 - 선택지:
-  1. "응급키트 라벨도 붙이고 갈게요." → `hidden_nurse_d4_meal_walk` | Nurse +12
-  2. "괜찮아요, 저 이만 갈게요" → `hidden_nurse_d4_pass` | Nurse +3
+  1. "응급키트 라벨도 붙이고 갈게요." → `hidden_nurse_d4_meal_walk` | Nurse +9
+  2. "괜찮아요, 저 이만 갈게요" → `hidden_nurse_d4_pass` | Nurse +2
   3. "선생님이 하시는 게 더 빠르겠어요." → `hidden_nurse_d4_trap` | Nurse -4
 
 - 캐릭터: `nurse_normal.png`
@@ -14277,7 +14277,7 @@
   1. "오늘 예쁘다." → 호감분기: Seoyeon
     - [50+] → `date_seo_pretty_high`
     - [기본] → `date_seo_pretty_low`
-  2. "신경 많이 썼다, 오늘." → `date_seo_bright` | Seoyeon +5
+  2. "신경 많이 썼다, 오늘." → `date_seo_bright` | Seoyeon +4
   3. "역시 학생회장은 데이트도 빈틈없네." → `date_seo_role_trap` | Seoyeon -4
 
 - 캐릭터: `seyoun_normal.png`
@@ -14287,7 +14287,7 @@
 
 ### `date_seo_pretty_high`
 - 배경: `park.png`
-- 스탯: Seoyeon +3
+- 스탯: Seoyeon +2
 - 다음: `date_seo_pretty_high_b`
 
 - 캐릭터: `seyoun_shy.png`
@@ -14342,7 +14342,7 @@
 
 ### `date_seo_pretty_low`
 - 배경: `park.png`
-- 스탯: Seoyeon +3
+- 스탯: Seoyeon +2
 - 다음: `date_seo_walk`
 
 - 캐릭터: `seyoun_shy.png`
@@ -14511,7 +14511,7 @@
   1. "사복 입은 유나는 처음 봐." → 호감분기: Yuna
     - [50+] → `date_yuna_pretty_high`
     - [기본] → `date_yuna_pretty_low`
-  2. "오늘은 좀 달라 보이네." → `date_yuna_bright` | Yuna +5
+  2. "오늘은 좀 달라 보이네." → `date_yuna_bright` | Yuna +4
   3. "평소보다 훨씬 말 걸기 편해 보여." → `date_yuna_trap` | Yuna -3
 
 - 캐릭터: `yuna_normal.png`
@@ -14521,7 +14521,7 @@
 
 ### `date_yuna_pretty_high`
 - 배경: `cafe.png`
-- 스탯: Yuna +4
+- 스탯: Yuna +3
 - 다음: `date_yuna_pretty_high_2`
 
 - 캐릭터: `yuna_shy.png`
@@ -14585,7 +14585,7 @@
 
 ### `date_yuna_pretty_low`
 - 배경: `cafe.png`
-- 스탯: Yuna +3
+- 스탯: Yuna +2
 - 다음: `date_yuna_bookstore`
 
 - 캐릭터: `yuna_shy.png`
@@ -14817,7 +14817,7 @@
 
 ### `date_dain_pretty_high`
 - 배경: `gym.png`
-- 스탯: Dain +3
+- 스탯: Dain +2
 - 다음: `date_dain_pretty_high_2`
 
 - 캐릭터: `dain_shy.png`
@@ -14854,7 +14854,7 @@
 
 ### `date_dain_pretty_low`
 - 배경: `gym.png`
-- 스탯: Dain +3
+- 스탯: Dain +2
 - 다음: `date_dain_to_arcade`
 
 - 캐릭터: `dain_shy.png`
@@ -16191,8 +16191,8 @@
 - 배경: `park.png`
 - 배경톤: `cold`
 - 선택지:
-  1. "안아준다" → `wall_seo_hug_1` | Seoyeon +4
-  2. "손을 내민다" → `wall_seo_pinky_1` | Seoyeon +4
+  1. "안아준다" → `wall_seo_hug_1` | Seoyeon +3
+  2. "손을 내민다" → `wall_seo_pinky_1` | Seoyeon +3
 
 - 캐릭터: `seyoun_cry.png`
 **서연**: *번진 화장이 손등에 남아 있고 서연의 어깨가 호흡마다 짧게 올라간다.*
@@ -16303,8 +16303,8 @@
 - 배경: `park.png`
 - 배경톤: `cold`
 - 선택지:
-  1. "물티슈 줄까." → `wall_seo_line_react_1` | Seoyeon +7
-  2. "잠깐 앉아 있자." → `wall_seo_line_react_2` | Seoyeon +7
+  1. "물티슈 줄까." → `wall_seo_line_react_1` | Seoyeon +5
+  2. "잠깐 앉아 있자." → `wall_seo_line_react_2` | Seoyeon +5
   3. "굳이 설명 안 해도 알 것 같아." → `wall_seo_line_react_3` | Seoyeon -4
 
 - 캐릭터: `seyoun_cry.png`
@@ -16880,8 +16880,8 @@
 - 배경: `gym.png`
 - 배경톤: `lights-off`
 - 선택지:
-  1. "아무 말 안 할게. 그냥 여기 있을게." → `wall_dain_newdream_1` | Dain +3
-  2. "울어도 돼. 밝은 척 안 해도 돼. 나한테는." → `wall_dain_cry_1` | Dain +5
+  1. "아무 말 안 할게. 그냥 여기 있을게." → `wall_dain_newdream_1` | Dain +2
+  2. "울어도 돼. 밝은 척 안 해도 돼. 나한테는." → `wall_dain_cry_1` | Dain +4
   3. "공부터 정리하자. 내일 병원도 예약하고." → `wall_dain_lastspike_1` | Dain -4
 
 - 캐릭터: `dain_sad.png`
@@ -17532,8 +17532,8 @@
 - 배경: `yuna_hideout.png`
 - 배경톤: `dream`
 - 선택지:
-  1. "그 사람 대신은 못 해. 그래도 지금은 여기 있어." → `wall_yuna_moved_1` | Yuna +4
-  2. "지금은 네 말을 듣고 있어." → `wall_yuna_sub_1` | Yuna +3
+  1. "그 사람 대신은 못 해. 그래도 지금은 여기 있어." → `wall_yuna_moved_1` | Yuna +3
+  2. "지금은 네 말을 듣고 있어." → `wall_yuna_sub_1` | Yuna +2
   3. "...그래서 나한테 접근한 거야? 선배 대신?" → `wall_yuna_reject_1` | Yuna -10
 
 - 캐릭터: `yuna_sad.png`
@@ -17772,8 +17772,8 @@
 ### `wall_seo_glimpse_2`
 - 배경: `school_back.png`
 - 선택지:
-  1. "서연과 한 약속을 지키고 돌아간다" → `day4_hidden_msg_branch` | Seoyeon +6, Dain -6 | 플래그: `day4_held_route_seoyeon`
-  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `wall_seo_glimpse_4` | Dain +50, Seoyeon -50 | 플래그: `day4_took_dain_counteroffer`
+  1. "서연과 한 약속을 지키고 돌아간다" → `day4_hidden_msg_branch` | Seoyeon +4, Dain -6 | 플래그: `day4_held_route_seoyeon`
+  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `wall_seo_glimpse_4` | Dain +8, Seoyeon -50 | 플래그: `day4_took_dain_counteroffer`
 
 - 캐릭터: `dain_sad.png`
 **다인**: 열 번만 받아줘. 끝나면… 나 좀 안아주라. 오늘은 혼자 괜찮은 척 못 하겠어.
@@ -17802,8 +17802,8 @@
 ### `wall_seo_yuna_tempt_2`
 - 배경: `yuna_hideout.png`
 - 선택지:
-  1. "서연에게 답장하고 약속대로 돌아간다" → `day4_hidden_msg_branch` | Seoyeon +6, Yuna -6 | 플래그: `day4_held_route_seoyeon`
-  2. "별관으로 가서 유나 곁에 남는다" → `wall_seo_yuna_tempt_accept` | Yuna +50, Seoyeon -50 | 플래그: `day4_took_yuna_counteroffer`
+  1. "서연에게 답장하고 약속대로 돌아간다" → `day4_hidden_msg_branch` | Seoyeon +4, Yuna -6 | 플래그: `day4_held_route_seoyeon`
+  2. "별관으로 가서 유나 곁에 남는다" → `wall_seo_yuna_tempt_accept` | Yuna +8, Seoyeon -50 | 플래그: `day4_took_yuna_counteroffer`
 
 - 캐릭터: `yuna_sad.png`
 **유나**: 전에 나를 봐주던 사람이 말도 없이 사라졌어. 오늘 네가 그냥 가면 또 그날 같을 것 같아. 딱 오늘만, 여기 있어 줘.
@@ -17849,8 +17849,8 @@
 ### `wall_dain_glimpse_4_c`
 - 배경: `school_back.png`
 - 선택지:
-  1. "다인에게 답장하고 약속대로 돌아간다" → `day4_hidden_msg_branch` | Dain +6, Yuna -6 | 플래그: `day4_held_route_dain`
-  2. "학교 후문으로 돌아가 유나 곁에 남는다" → `wall_dain_glimpse_4` | Yuna +50, Dain -50 | 플래그: `day4_took_yuna_counteroffer`
+  1. "다인에게 답장하고 약속대로 돌아간다" → `day4_hidden_msg_branch` | Dain +5, Yuna -6 | 플래그: `day4_held_route_dain`
+  2. "학교 후문으로 돌아가 유나 곁에 남는다" → `wall_dain_glimpse_4` | Yuna +8, Dain -50 | 플래그: `day4_took_yuna_counteroffer`
 
 - 캐릭터: `yuna_normal.png` @ 0.35
 **유나**: 전에 나를 봐주던 사람이 말도 없이 사라졌어. 오늘 또 혼자 남으면 그때로 돌아갈 것 같아. 다인과 있었어도 괜찮아. 지금은 네가 와줘.
@@ -17878,8 +17878,8 @@
 ### `wall_dain_seo_tempt_2`
 - 배경: `school_back.png`
 - 선택지:
-  1. "다인에게 답장하고 약속대로 돌아간다" → `day4_hidden_msg_branch` | Dain +6, Seoyeon -6 | 플래그: `day4_held_route_dain`
-  2. "서연을 따라 옥상에 올라가 손을 잡는다" → `wall_dain_seo_tempt_accept` | Seoyeon +50, Dain -50 | 플래그: `day4_took_seoyeon_counteroffer`
+  1. "다인에게 답장하고 약속대로 돌아간다" → `day4_hidden_msg_branch` | Dain +5, Seoyeon -6 | 플래그: `day4_held_route_dain`
+  2. "서연을 따라 옥상에 올라가 손을 잡는다" → `wall_dain_seo_tempt_accept` | Seoyeon +8, Dain -50 | 플래그: `day4_took_seoyeon_counteroffer`
 
 - 캐릭터: `seyoun_sad.png`
 **서연**: 오늘 집에 들어가면 또 웃는 얼굴부터 맞춰야 해. 딱 오늘만 학생회장 말고 그냥 서연으로 있게 해줘. 올라오면, 네 손 안 놓을게.
@@ -17919,8 +17919,8 @@
 - 배경: `school_back.png`
 - 배경톤: `dream`
 - 선택지:
-  1. "유나에게 답장하고 약속대로 돌아간다" → `day4_hidden_msg_branch` | Yuna +6, Seoyeon -6 | 플래그: `day4_held_route_yuna`
-  2. "서연을 따라 옥상으로 올라가 손을 잡는다" → `wall_yuna_glimpse_4` | Seoyeon +50, Yuna -50 | 플래그: `day4_took_seoyeon_counteroffer`
+  1. "유나에게 답장하고 약속대로 돌아간다" → `day4_hidden_msg_branch` | Yuna +4, Seoyeon -6 | 플래그: `day4_held_route_yuna`
+  2. "서연을 따라 옥상으로 올라가 손을 잡는다" → `wall_yuna_glimpse_4` | Seoyeon +8, Yuna -50 | 플래그: `day4_took_seoyeon_counteroffer`
 
 - 캐릭터: `seyoun_normal.png`
 **서연**: 오늘 집에 들어가면 또 웃는 얼굴부터 맞춰야 해. 딱 오늘만 학생회장 말고 그냥 서연으로 있게 해줘. 올라오면, 네 손 안 놓을게.
@@ -17951,8 +17951,8 @@
 - 배경: `gym.png`
 - 배경톤: `lights-off`
 - 선택지:
-  1. "유나에게 답장하고 약속대로 돌아간다" → `day4_hidden_msg_branch` | Yuna +6, Dain -6 | 플래그: `day4_held_route_yuna`
-  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `wall_yuna_dain_tempt_accept` | Dain +50, Yuna -50 | 플래그: `day4_took_dain_counteroffer`
+  1. "유나에게 답장하고 약속대로 돌아간다" → `day4_hidden_msg_branch` | Yuna +4, Dain -6 | 플래그: `day4_held_route_yuna`
+  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `wall_yuna_dain_tempt_accept` | Dain +8, Yuna -50 | 플래그: `day4_took_dain_counteroffer`
 
 - 캐릭터: `dain_sad.png`
 **다인**: 열 번만 받아줘. 끝나면… 나 좀 안아주라. 오늘은 혼자 괜찮은 척 못 하겠어.
@@ -18491,7 +18491,7 @@
 - 배경톤: `empty`
 - 선택지:
   1. "7년이나 붙잡으셨으니 분명 좋은 글일 거예요." → `hidden_homeroom_d5_praise_trap_1` | Teacher -25 | 플래그: `teacher_praise_broken`
-  2. "먼저 읽어볼게요. 표시해도 돼요?" → `hidden_homeroom_d5_correct_1` | Teacher +16
+  2. "먼저 읽어볼게요. 표시해도 돼요?" → `hidden_homeroom_d5_correct_1` | Teacher +13
 
 - 캐릭터: `teacher_sad.png`
 **{name}**: *원고를 안고 있다. 봉투가 팔 안쪽을 누른다.*
@@ -19224,8 +19224,8 @@
 ### `hidden_nurse_d5_choice`
 - 배경: `school_hallway.png`
 - 선택지:
-  1. "네. 가방에 넣어둘게요." → `hidden_nurse_d5_choice_a` | Nurse +11
-  2. "카드보다 상담실 예약 방법을 알려주세요." → `hidden_nurse_d5_choice_b` | Nurse +5
+  1. "네. 가방에 넣어둘게요." → `hidden_nurse_d5_choice_a` | Nurse +9
+  2. "카드보다 상담실 예약 방법을 알려주세요." → `hidden_nurse_d5_choice_b` | Nurse +4
   3. "이 카드만 있으면 상담실까지는 안 가도 되겠네요." → `hidden_nurse_d5_choice_trap` | Nurse -6
 
 - 캐릭터: `nurse_normal.png`
@@ -19363,7 +19363,7 @@
 ### `hidden_nurse_d5_7`
 - 배경: `school_hallway.png`
 - 플래그: `nurse_day5`
-- 스탯: Nurse +7
+- 스탯: Nurse +5
 - 다음: `hidden_nurse_d5_freetalk`
 
 <!-- i18n -->
@@ -19373,7 +19373,7 @@
 ### `hidden_nurse_d5_7_both`
 - 배경: `school_hallway.png`
 - 플래그: `nurse_day5`, `both_hidden_day5`
-- 스탯: Nurse +7
+- 스탯: Nurse +5
 - 다음: `hidden_nurse_d5_freetalk`
 
 <!-- i18n -->
@@ -19549,7 +19549,7 @@
 
 ### `tour_seo_14`
 - 배경: `school.png`
-- 스탯: Seoyeon +5
+- 스탯: Seoyeon +3
 - 다음: `tour_seo_freetalk`
 
 - 캐릭터: `seyoun_shy.png`
@@ -19688,7 +19688,7 @@
 
 ### `tour_yuna_11`
 - 배경: `yuna_hideout.png`
-- 스탯: Yuna +7
+- 스탯: Yuna +4
 - 다음: `tour_yuna_freetalk`
 
 - 캐릭터: `yuna_shy.png`
@@ -19865,7 +19865,7 @@
 
 ### `tour_dain_end`
 - 배경: `gym.png`
-- 스탯: Dain +7
+- 스탯: Dain +5
 - 다음: `tour_dain_freetalk`
 
 - 캐릭터: `dain_shy.png`

@@ -116,6 +116,34 @@ test('affinity changes use the shared asymmetric -50 to +5 range', () => {
     assert.match(core.buildAffinityChangeGuidance('en'), /outwardly laughs it off or stays composed/);
 });
 
+test('main-story free talk needs sustained strong turns to finish a near-perfect route', () => {
+    assert.equal(core.STORY_FREETALK_GAIN_BUDGET, 22);
+    assert.equal(core.STORY_FREETALK_TURN_GAIN_MAX, 3);
+    assert.equal(core.STORY_FREETALK_HIGH_AFFINITY_GAIN_MAX, 2);
+    assert.equal(core.normalizeStoryFreeTalkAffinityChange(5, 50, 0), 3);
+    assert.equal(core.normalizeStoryFreeTalkAffinityChange(5, 90, 0), 2);
+    assert.equal(core.normalizeStoryFreeTalkAffinityChange(5, 50, 21), 1);
+    assert.equal(core.normalizeStoryFreeTalkAffinityChange(5, 50, 22), 0);
+    assert.equal(core.normalizeStoryFreeTalkAffinityChange(-999, 99, 22), -50);
+
+    const turnsToReachOneHundred = startAffinity => {
+        let affinity = startAffinity;
+        let earned = 0;
+        let turns = 0;
+        while (affinity < 100 && turns < 30) {
+            const gain = core.normalizeStoryFreeTalkAffinityChange(5, affinity, earned);
+            affinity = Math.min(100, affinity + gain);
+            earned += gain;
+            turns++;
+        }
+        return { affinity, earned, turns };
+    };
+
+    assert.deepEqual(turnsToReachOneHundred(80), { affinity: 100, earned: 20, turns: 8 });
+    assert.deepEqual(turnsToReachOneHundred(78), { affinity: 100, earned: 22, turns: 9 });
+    assert.ok(turnsToReachOneHundred(77).affinity < 100, 'missing more than two authored points must block 100');
+});
+
 test('relationship hurt lingers across topic changes and softens without an instant reset', () => {
     const hurt = core.updateRelationshipAftermath(
         null,
@@ -196,6 +224,7 @@ test('outward expression remains independent from affinity direction', () => {
 
 test('game and gallery affinity paths share the core normalizer', () => {
     assert.match(read('assets/js/modules/FreeTalkSystem.js'), /CupidFreeTalkCore\.normalizeAffinityChange\(change\)/);
+    assert.match(read('assets/js/modules/FreeTalkSystem.js'), /CupidFreeTalkCore\.normalizeStoryFreeTalkAffinityChange/);
     assert.match(read('assets/js/gallery-freetalk.js'), /GalleryFreeTalkCore\.normalizeAffinityChange\(value\)/);
     assert.match(read('assets/js/gallery-progress.js'), /CupidFreeTalkCore\.normalizeAffinityChange\(amount\)/);
     assert.match(read('assets/js/modules/FreeTalkSystem.js'), /normalizeAvailableExpression/);

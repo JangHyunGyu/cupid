@@ -297,8 +297,8 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "choices": [
-            { "next": "hidden_homeroom_d2_choice1_a", "stats": {"Teacher":{"affinity":10}} },
-            { "next": "hidden_homeroom_d2_choice1_b", "stats": {"Teacher":{"affinity":3}} },
+            { "next": "hidden_homeroom_d2_choice1_a", "stats": {"Teacher":{"affinity":8}} },
+            { "next": "hidden_homeroom_d2_choice1_b", "stats": {"Teacher":{"affinity":2}} },
             { "next": "hidden_homeroom_d2_choice1_trap", "stats": {"Teacher":{"affinity":-3}} }
         ]
     },
@@ -381,7 +381,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "choices": [
-            { "next": "hidden_homeroom_d2_choice2_a", "stats": {"Teacher":{"affinity":7}} },
+            { "next": "hidden_homeroom_d2_choice2_a", "stats": {"Teacher":{"affinity":6}} },
             { "next": "hidden_homeroom_d2_choice2_b", "stats": {"Teacher":{"affinity":0}} }
         ]
     },

@@ -115,7 +115,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "night2_reply_dain_1": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
-        "stats": {"Dain":{"affinity":5}},
+        "stats": {"Dain":{"affinity":4}},
         "next": "night2_reply_dain_2"
     },
     "night2_reply_dain_2": {
@@ -164,7 +164,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "night2_reply_seo_1": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
-        "stats": {"Seoyeon":{"affinity":3}},
+        "stats": {"Seoyeon":{"affinity":2}},
         "next": "night2_reply_seo_2"
     },
     "night2_reply_seo_2": {
@@ -193,7 +193,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
         "setFlags": ["night2_replied_seo"],
-        "stats": {"Seoyeon":{"affinity":2}},
+        "stats": {"Seoyeon":{"affinity":1}},
         "next": "night2_seo_freetalk"
     },
     "night2_reply_seo_react_default": {
@@ -213,7 +213,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "night2_reply_yuna_1": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "stats": {"Yuna":{"affinity":5}},
+        "stats": {"Yuna":{"affinity":4}},
         "next": "night2_reply_yuna_2"
     },
     "night2_reply_yuna_2": {
@@ -262,7 +262,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
         "setFlags": ["night2_replied_yuna"],
-        "stats": {"Yuna":{"affinity":2}},
+        "stats": {"Yuna":{"affinity":1}},
         "next": "night2_yuna_freetalk"
     },
     "night2_reply_yuna_react_default": {

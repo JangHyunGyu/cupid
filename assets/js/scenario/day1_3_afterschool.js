@@ -317,7 +317,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "character": "assets/images/characters/teacher_normal.png",
         "choices": [
             { "next": "after_homeroom_ok", "stats": {"Teacher":{"affinity":0}} },
-            { "next": "after_homeroom_honest_1", "stats": {"Teacher":{"affinity":7}} }
+            { "next": "after_homeroom_honest_1", "stats": {"Teacher":{"affinity":6}} }
         ]
     },
     "after_homeroom_ok": {
@@ -395,7 +395,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "choices": [
-            { "next": "after_homeroom_honest_choice2a", "stats": {"Teacher":{"affinity":10}} },
+            { "next": "after_homeroom_honest_choice2a", "stats": {"Teacher":{"affinity":8}} },
             { "next": "after_homeroom_honest_choice2b", "stats": {"Teacher":{"affinity":-2}} }
         ]
     },
@@ -478,7 +478,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "after_nurse_enter_2": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "stats": {"Nurse":{"affinity":7}},
+        "stats": {"Nurse":{"affinity":6}},
         "next": "after_nurse_enter_2_b"
     },
     "after_nurse_enter_2_b": {
@@ -550,8 +550,8 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "choices": [
-            { "next": "after_nurse_enter_choice_a", "stats": {"Nurse":{"affinity":10}}, "setFlags": ["nurse_choice_a"] },
-            { "next": "after_nurse_enter_choice_b", "stats": {"Nurse":{"affinity":3}}, "setFlags": ["nurse_choice_b"] },
+            { "next": "after_nurse_enter_choice_a", "stats": {"Nurse":{"affinity":8}}, "setFlags": ["nurse_choice_a"] },
+            { "next": "after_nurse_enter_choice_b", "stats": {"Nurse":{"affinity":2}}, "setFlags": ["nurse_choice_b"] },
             { "next": "after_nurse_enter_trap", "stats": {"Nurse":{"affinity":-3}}, "setFlags": ["nurse_choice_trap"] }
         ]
     },
