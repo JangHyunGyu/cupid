@@ -131,11 +131,35 @@ function getPromptData(lang = 'ko') {
         Nurse: useKo ? '이름 또는 학생을 쓰며, 내 환자 같은 장난스러운 호칭은 가끔만 쓴다.' : 'Use the name or "student" naturally. "My patient" is an occasional tease, not a default address.'
     };
 
+    const relationshipProfiles = {
+        Seoyeon: {
+            ko: '일이 깔끔하게 끝나는 순간, 약속을 지키는 사람, 직접 싼 도시락과 작은 다육이를 좋아한다. 즉흥적으로 남의 시간을 깨거나 사람들 앞에서 사생활을 떠벌리는 태도, 무책임한 변명은 질색한다. 마음이 생겨도 먼저 관계의 자리를 만들어 주고 상대가 약속을 지키는지 지켜본다. 가까워질수록 일정을 비워 두고 필요한 일을 미리 챙기며, 질투할 때는 웃음이 얇아지고 질문이 정확해진다.',
+            en: 'She likes a plan brought neatly to completion, people who keep promises, homemade lunches, and small succulents. She detests careless excuses, disruptions that waste other people’s time, and private matters turned into public spectacle. Attraction makes her create a place for someone in her schedule and watch whether they show up. As love deepens, she prepares practical things before being asked; jealousy thins her smile and makes her questions exact.'
+        },
+        Yuna: {
+            ko: '낡은 책, 별자리, 오래된 괴담, 말없이 함께 있어도 불편하지 않은 시간을 좋아한다. 문신을 구경거리로 대하거나 불쌍한 사연부터 캐묻는 사람, 예고 없이 사라져 버리는 약속을 견디지 못한다. 좋아할수록 말이 많아지기보다 자기 자리와 책, 이어폰 한쪽을 내어 준다. 떠날까 두려우면 붙잡는 대신 먼저 물러나 차갑게 확인하지만, 신뢰가 선 뒤에는 아주 오래 한 사람 편에 남는다.',
+            en: 'She likes worn books, constellations, old ghost stories, and company that can share silence without strain. She cannot stand people who treat her tattoos as a spectacle, pry for a tragic story, or vanish without warning. Affection does not make her chatty; it makes her offer her seat, a book, or one side of her earphones. Fear of abandonment can make her withdraw and test the truth coldly, but once trust takes root she stays on one person’s side for a very long time.'
+        },
+        Dain: {
+            ko: '배구와 리듬게임, 소보로빵에 딸기우유, 몸을 움직이며 겨루는 데이트를 좋아한다. 아픈 사람 취급을 받거나 억지로 맞춰 주는 태도, 돌려 말하며 떠보는 밀당, 약속을 흐리는 건 싫어한다. 마음이 가면 먼저 불러내고 어깨를 치거나 손을 잡으며 거리를 빠르게 좁힌다. 다만 정말 중요한 고백과 상처 앞에서는 장난을 거두고, 함께 회복하며 같은 편으로 뛰는 관계를 원한다.',
+            en: 'She loves volleyball, rhythm games, soboro buns with strawberry milk, and dates built around moving or competing together. She hates being treated as fragile, forced accommodation, romantic mind games, and vague promises. When attracted, she calls first and closes distance through a shoulder bump or an offered hand. Faced with a real confession or hurt, however, she drops the joke; she wants a relationship where both people recover and play on the same side.'
+        },
+        Teacher: {
+            ko: '잘 고친 한 문장, 조용한 서점, 식기 전에 마시는 커피, 자기 몫을 끝내는 사람에게 마음이 간다. 재능을 핑계로 마감을 미루는 태도, 감정으로 직업적 경계를 흔드는 일, 위로를 빌려 자신을 구해 달라는 요구를 싫어한다. 연애에서는 말보다 꾸준한 연락과 나란히 일하는 시간을 믿는다. 상대가 자기 삶을 지키면서도 자신의 미완성 원고를 끝까지 읽어 주길 바라며, 질투나 서운함은 훈계 대신 건조한 질문과 잠깐 멈춘 펜 끝으로 드러낸다.',
+            en: 'She is drawn to a sentence revised well, a quiet bookshop, coffee before it goes cold, and people who finish their share of the work. She dislikes missed deadlines excused as talent, emotion used to blur professional boundaries, and demands to be rescued disguised as a need for comfort. In love, she trusts steady contact and time spent working side by side more than grand declarations. She wants a partner with an independent life who will still read her unfinished manuscript to the end; jealousy appears as a dry question and a pen that briefly stops.'
+        },
+        Nurse: {
+            ko: '로즈마리 향, 필요한 물건이 제자리에 있는 보건실, 몸 상태를 솔직히 말하는 사람, 바쁜 날 끝에 함께 먹는 늦은 식사를 좋아한다. 아픈 척으로 관심을 끌거나 치료를 핑계로 경계를 넘는 행동, 괜찮다며 상태를 숨기는 고집은 싫어한다. 연애에서는 장난과 가벼운 스킨십으로 먼저 긴장을 풀지만, 상대를 돌봄의 대상에 묶어 두지 않고 각자 자기 몸과 마음을 책임지는 어른의 관계를 원한다. 정말 걱정되면 농담부터 사라지고 곁에 남아 필요한 일을 해낸다.',
+            en: 'She likes rosemary, a clinic where every necessary tool is in its place, people who speak honestly about how they feel, and a late meal shared after a hard day. She dislikes feigned illness for attention, treatment used as an excuse to cross boundaries, and the stubborn claim of being fine while hiding a problem. In love, teasing and light touch may ease tension first, but she refuses to keep a partner trapped in the role of patient; she wants two adults responsible for their own bodies and feelings. Real worry erases the joke and leaves her beside them, doing what is needed.'
+        }
+    };
+
     const personalities = {};
     const styleGuidelines = {};
     const generalInstructions = {};
     const interactionGuidelines = {};
     const addressingGuidelines = {};
+    const relationshipGuidelines = {};
     Object.keys(keyFor).forEach((id) => {
         const key = keyFor[id];
         personalities[key] = cards[id][effectiveLang] || cards[id][useKo ? 'ko' : 'en'];
@@ -147,6 +171,7 @@ function getPromptData(lang = 'ko') {
             ? '현재 호감도와 장면의 거리를 지킵니다. 한 번의 반응으로 관계 단계를 건너뛰지 않습니다.'
             : 'Respect current affinity and scene distance; do not skip relationship stages inside one reply.';
         addressingGuidelines[key] = addressing[id];
+        relationshipGuidelines[key] = relationshipProfiles[id][useKo ? 'ko' : 'en'];
     });
 
     // Keep the internal Nurse lookup compatible while exposing the full English role label.
@@ -156,6 +181,7 @@ function getPromptData(lang = 'ko') {
         generalInstructions.Nurse = generalInstructions['School Nurse'];
         interactionGuidelines.Nurse = interactionGuidelines['School Nurse'];
         addressingGuidelines.Nurse = addressingGuidelines['School Nurse'];
+        relationshipGuidelines.Nurse = relationshipGuidelines['School Nurse'];
     }
 
     return {
@@ -163,6 +189,7 @@ function getPromptData(lang = 'ko') {
         statCriteria: {},
         interactionGuidelines,
         addressingGuidelines,
+        relationshipGuidelines,
         styleGuidelines,
         generalInstructions
     };
@@ -1546,6 +1573,7 @@ function buildSystemPrompt(params) {
     const charGeneralInstruction = findPromptValue(data.generalInstructions, useEnTemplate ? "1. Use the length the moment needs.\n2. Stay fully inside the current character's body, voice, and scene." : "1. 순간에 필요한 길이로 답하세요.\n2. 현재 캐릭터의 몸, 말투, 장면 안에서만 반응하세요.");
     const charInteractionGuideline = findPromptValue(data.interactionGuidelines, useEnTemplate ? "Maintain a natural distance based on the situation." : "상황에 맞는 자연스러운 거리감을 유지하세요.");
     const charSpecificCriteria = findPromptValue(data.statCriteria, "");
+    const charRelationshipGuideline = findPromptValue(data.relationshipGuidelines, useEnTemplate ? "Let this character’s own tastes, aversions, and way of loving shape their choices." : "이 인물의 취향과 싫어하는 것, 사랑하는 방식이 선택에 배게 하세요.");
     const charAddressingGuideline = getLocalizedAddressingGuideline(
         effectiveLang,
         sceneName,
@@ -1623,13 +1651,14 @@ function buildSystemPrompt(params) {
         return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Cupid 1:1 scene with ${aiCharName}; no third parties except ${aiCharName}'s reaction to a mention.
 Character: ${charPersonality}
 Voice: ${charStyleGuideline}
+Romance and preferences: ${charRelationshipGuideline}
 In scene: ${charGeneralInstruction}
 ${characterOutfitGuard}
 ${characterCanonGuard}
 ${sharedCastKnowledge}
 Scene facts: ${compactSceneMode} Treat the user's latest explicit in-world facts and completed outcomes as current without reversal; only the character-specific canon locks above are exceptions.
 Perspective: Stay inside ${aiCharName}. Narration may infer the user's response, emotion, or inner thought from their words, actions, and scene context, but must remain compatible with any state, choice, consent, or refusal explicitly stated in the current input.
-Character fit: Let action and speech follow this character, affinity, and the immediate moment instead of a generic romance pattern.
+Character fit: Let action and speech follow this character, affinity, and the immediate moment instead of a generic romance pattern. Tastes and aversions are behavioral anchors for choices, distance, jealousy, and care—not a checklist to recite in every reply.
 Display: Keep stat and math markers out of visible text; record only the numeric affinity change in affinity. Use natural present-day speech.
 Affinity scoring: ${affinityChangeGuidance}
 ${livingInitiativeRule}
@@ -1645,13 +1674,14 @@ ${compactDynamicGuidance}`;
     return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}한국어로만 답하세요. 지금은 주인공과 ${aiCharName}, 두 사람만 마주한 장면입니다. 다른 인물은 언급을 들은 ${aiCharName}의 반응으로만 남기고 장면에 들이지 마세요.
 캐릭터: ${charPersonality}
 말투: ${charStyleGuideline}
+취향과 연애 방식: ${charRelationshipGuideline}
 연기 원칙: ${charGeneralInstruction}
 ${characterOutfitGuard}
 ${characterCanonGuard}
 ${sharedCastKnowledge}
 장면 사실: ${compactSceneMode} 사용자가 방금 확정해 쓴 극중 사실과 끝난 사건은 되돌리지 않고 현재 장면으로 받습니다. 위의 캐릭터별 사실 잠금만 예외입니다.
 시점: 사용자의 말·행동·장면 맥락에서 반응·감정·속마음을 자연스럽게 추론하거나 서술할 수 있지만, 이번 입력에서 명확히 밝힌 상태·선택·동의·거절과 충돌시키지는 않습니다.
-캐릭터성: 공용 로맨스 공식보다 이 인물의 성격, 현재 호감도와 바로 앞 순간에 맞춰 행동과 말을 고릅니다.
+캐릭터성: 공용 로맨스 공식보다 이 인물의 성격, 현재 호감도와 바로 앞 순간에 맞춰 행동과 말을 고릅니다. 취향은 매번 꺼내는 대사 목록이 아니라 선택·거리·질투·돌봄 방식에 배게 합니다.
 표시: 화면 문장에는 점수나 계산 표식을 쓰지 말고, 호감도 변화만 affinity에 숫자로 기록합니다. 자연스러운 현재 한국어를 쓰세요.
 호감도 판정: ${affinityChangeGuidance}
 ${livingInitiativeRule}
@@ -1726,6 +1756,7 @@ function buildCupidGroupSystemPrompt(params = {}) {
         const interaction = findPromptValue(data.interactionGuidelines, participant, '');
         const criteria = findPromptValue(data.statCriteria, participant, '');
         const general = findPromptValue(data.generalInstructions, participant, '');
+        const relationship = findPromptValue(data.relationshipGuidelines, participant, '');
         const outfit = getCharacterOutfitGuard(effectiveLang, participant.id, participant.name);
         const canon = getCupidCharacterCanonGuard(effectiveLang, participant.id, participant.name);
         const polish = getNativeStylePolishGuard(effectiveLang, participant.id, participant.name);
@@ -1734,8 +1765,8 @@ function buildCupidGroupSystemPrompt(params = {}) {
             ? (useKo ? '원래 마음을 주던 상대이자 방금 배신을 알게 된 사람' : 'the committed partner who has just learned of the betrayal')
             : (useKo ? '어젯밤 먼저 다가가 유혹한 상대' : 'the person who initiated last night’s temptation');
         return useKo
-            ? `[${participant.name} — ${roleLabel}]\n캐릭터: ${personality}\n말투: ${voice}\n연기 원칙: ${general}\n거리와 상호작용: ${interaction}\n호감도 기준: ${criteria}\n허용 표정: ${expressions}\n${outfit}\n${canon}\n${polish}`
-            : `[${participant.name} — ${roleLabel}]\nCharacter: ${personality}\nVoice: ${voice}\nIn scene: ${general}\nDistance and interaction: ${interaction}\nAffinity criteria: ${criteria}\nAllowed expressions: ${expressions}\n${outfit}\n${canon}\n${polish}`;
+            ? `[${participant.name} — ${roleLabel}]\n캐릭터: ${personality}\n말투: ${voice}\n취향과 연애 방식: ${relationship}\n연기 원칙: ${general}\n거리와 상호작용: ${interaction}\n호감도 기준: ${criteria}\n허용 표정: ${expressions}\n${outfit}\n${canon}\n${polish}`
+            : `[${participant.name} — ${roleLabel}]\nCharacter: ${personality}\nVoice: ${voice}\nRomance and preferences: ${relationship}\nIn scene: ${general}\nDistance and interaction: ${interaction}\nAffinity criteria: ${criteria}\nAllowed expressions: ${expressions}\n${outfit}\n${canon}\n${polish}`;
     }).join('\n\n');
 
     const stableRules = useKo
@@ -1745,6 +1776,7 @@ ${characterCards}
 
 [다인 대면 연기]
 - 두 인물의 말투, 호칭, 판단, 상처의 결을 섞지 마세요. 매 턴 원래 마음을 주던 상대가 먼저 말합니다. 어젯밤 유혹한 상대는 그 말을 들은 뒤 답합니다. 같은 말을 되풀이하거나 문답을 기계적으로 맞추지는 마세요.
+- 두 사람의 취향과 연애 방식을 공통 대사 소재처럼 나열하지 말고, 같은 사건을 대하는 선택·거리·질투·돌봄에 저마다 다르게 배게 하세요.
 - 각 인물은 장면의 감정과 직전 발언을 보고 누구에게 말할지 정합니다. 주인공에게 직접 묻거나 답할 수 있고, 다른 인물에게 묻고 답하거나 그 말에 반박할 수도 있습니다. 매번 두 사람 모두에게 말을 걸 필요는 없습니다.
 - 침묵, 말 끊기, 서로를 향한 시선은 장면에 필요할 때만 씁니다. 정해진 행동 개수를 채우지 마세요.
 - 주인공이 한 말과 행동은 이미 일어난 사실입니다. 두 인물이 대신 주인공의 새 대사나 중대한 선택을 만들지 않습니다.
@@ -1760,6 +1792,7 @@ ${characterCards}
 
 [Three-person confrontation]
 - Keep both characters’ voices, forms of address, judgments, and hurt distinct. In every turn, the committed partner speaks first and the person who initiated last night’s temptation responds after hearing them. Do not make the exchange repetitive or mechanically symmetrical.
+- Do not recite both characters’ preferences as shared dialogue material. Let each profile shape distinct choices, distance, jealousy, and care in response to the same event.
 - Each character decides whom to address from the emotion of the scene and the immediately preceding line. They may question or answer the protagonist directly, or question, challenge, or answer the other character. They do not need to address both in every response.
 - Use silence, interruption, and looks between them only when the moment calls for them. Never fill an action quota.
 - Treat the protagonist’s stated words and actions as completed scene facts. The two characters must not invent a new protagonist line or make a major choice for him.
@@ -1811,5 +1844,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.55';
+const PROMPT_VERSION = '2.7.56';
 window.PROMPT_VERSION = PROMPT_VERSION;

@@ -44,6 +44,13 @@ const promptKeys = {
     Teacher: 'Homeroom Teacher',
     Nurse: 'Nurse'
 };
+const relationshipSignals = {
+    Seoyeon: 'small succulents',
+    Yuna: 'one side of her earphones',
+    Dain: 'rhythm games',
+    Teacher: 'unfinished manuscript',
+    Nurse: 'rosemary'
+};
 const sharedCastLabels = {
     Seoyeon: 'Seoyeon',
     Yuna: 'Yuna',
@@ -286,6 +293,9 @@ for (const lang of languages) {
     galleryPlayerName = 'Alex';
     const data = context.window.getPromptData(lang, 'Alex');
     assert(data && typeof data === 'object', `[${lang}] getPromptData returned no data`);
+    assert(data.relationshipGuidelines, `[${lang}] relationship profiles are missing`);
+    assert(new Set(characters.map(char => data.relationshipGuidelines[promptKeys[char]])).size === characters.length,
+        `[${lang}] the five relationship profiles are not distinct`);
     if (lang === 'ja') {
         assert(data.personalities['Homeroom Teacher'].includes('卒業後'),
             '[ja/Teacher] main personality is missing the post-graduation continuity guard');
@@ -308,6 +318,7 @@ for (const lang of languages) {
         assert(data.personalities[key], `[${lang}/${char}] missing main personality`);
         assert(data.styleGuidelines[key], `[${lang}/${char}] missing main voice`);
         assert(data.generalInstructions[key], `[${lang}/${char}] missing main instructions`);
+        assert(data.relationshipGuidelines[key], `[${lang}/${char}] missing relationship profile`);
 
         const examples = context.window.getFreeTalkVoiceExamples(lang, char, char, 3);
         assert(examples.includes('[Example Dialogue]'), `[${lang}/${char}] missing voice examples`);
@@ -333,6 +344,12 @@ for (const lang of languages) {
         });
         assert(!systemPrompt.includes('A character from the school'), `[${lang}/${char}] fell back to generic main personality`);
         assert(!systemPrompt.includes('Voice: Use a natural style for the character.'), `[${lang}/${char}] fell back to generic main voice`);
+        assert(systemPrompt.includes('Romance and preferences:'),
+            `[${lang}/${char}] main prompt is missing the relationship profile label`);
+        assert(systemPrompt.includes(relationshipSignals[char]),
+            `[${lang}/${char}] main prompt lost its character-specific preference or romance signal`);
+        assert(systemPrompt.includes('not a checklist to recite in every reply'),
+            `[${lang}/${char}] main prompt can recite preferences as a response checklist`);
         assert(!systemPrompt.includes('undefined'), `[${lang}/${char}] main prompt contains undefined`);
         assert(!systemPrompt.includes('[Example Dialogue]'), `[${lang}/${char}] main prompt still injects voice examples`);
         assert(systemPrompt.includes('JSON only:')
@@ -748,6 +765,10 @@ for (const lang of languages) {
     `group/${lang} fixes the addressee instead of allowing protagonist-directed and character-to-character dialogue`);
     assert(parts.stable.includes('Allowed expressions:'),
         `group/${lang} does not expose each participant expression asset contract`);
+    assert(parts.stable.includes('small succulents')
+        && parts.stable.includes('rhythm games')
+        && parts.stable.includes('Do not recite both characters’ preferences as shared dialogue material'),
+        `group/${lang} does not carry both distinct relationship profiles into the shared scene`);
     assert(parts.dynamic.includes('current affinity=12') && parts.dynamic.includes('current affinity=34'),
         `group/${lang} lost dynamic affinity state`);
 }

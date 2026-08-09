@@ -4,11 +4,11 @@ const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..');
 const CHARACTERS = [
-    { key: 'Seoyeon', mainName: '서연', sharedName: '서연', galleryId: 'seyoun', cardSignal: '학생회장' },
-    { key: 'Yuna', mainName: '유나', sharedName: '유나', galleryId: 'yuna', cardSignal: '영구 문신' },
-    { key: 'Dain', mainName: '다인', sharedName: '다인', galleryId: 'dain', cardSignal: '배구부 선수' },
-    { key: 'Teacher', mainName: '담임', sharedName: '담임선생님', galleryId: 'teacher', cardSignal: '담임 교사' },
-    { key: 'Nurse', mainName: '보건', sharedName: '보건선생님', galleryId: 'nurse', cardSignal: '보건 교사' }
+    { key: 'Seoyeon', mainName: '서연', sharedName: '서연', galleryId: 'seyoun', cardSignal: '학생회장', relationshipSignal: '작은 다육이' },
+    { key: 'Yuna', mainName: '유나', sharedName: '유나', galleryId: 'yuna', cardSignal: '영구 문신', relationshipSignal: '이어폰 한쪽' },
+    { key: 'Dain', mainName: '다인', sharedName: '다인', galleryId: 'dain', cardSignal: '배구부 선수', relationshipSignal: '리듬게임' },
+    { key: 'Teacher', mainName: '담임', sharedName: '담임선생님', galleryId: 'teacher', cardSignal: '담임 교사', relationshipSignal: '미완성 원고' },
+    { key: 'Nurse', mainName: '보건', sharedName: '보건선생님', galleryId: 'nurse', cardSignal: '보건 교사', relationshipSignal: '로즈마리 향' }
 ];
 const REQUIRED_BLOCKS = [
     '[한국어 원문체]',
@@ -195,6 +195,9 @@ function assertCommonKoreanPrompt(prompt, label) {
 
 function verifyMainAndGalleryPrompts(context) {
     const promptData = context.window.getPromptData('ko', '민준');
+    assert(promptData.relationshipGuidelines, 'main prompt data is missing relationship profiles');
+    assert(new Set(Object.values(promptData.relationshipGuidelines)).size === CHARACTERS.length,
+        'the five Korean relationship profiles are not distinct');
     let galleryPlayerName = '민준';
     const progress = {
         getPlayerName: () => galleryPlayerName,
@@ -232,6 +235,11 @@ function verifyMainAndGalleryPrompts(context) {
         mainPrompts[character.key] = mainPrompt;
         assertCommonKoreanPrompt(mainPrompt, `main/${character.key}`);
         assert(mainPrompt.includes(character.cardSignal), `[main/${character.key}] used the generic card`);
+        assert(mainPrompt.includes('취향과 연애 방식:'), `[main/${character.key}] missing the relationship profile label`);
+        assert(mainPrompt.includes(character.relationshipSignal),
+            `[main/${character.key}] missing the character-specific preference or romance signal`);
+        assert(mainPrompt.includes('취향은 매번 꺼내는 대사 목록이 아니라'),
+            `[main/${character.key}] can recite preferences as a dialogue checklist`);
         assert(!mainPrompt.includes('[성적]'), `[main/${character.key}] injected an adult sexual example`);
         assert(mainPrompt.includes('캐릭터:'), `[main/${character.key}] missing the Korean character label`);
         assert(mainPrompt.includes('장면 맥락:'), `[main/${character.key}] missing the Korean context label`);
@@ -770,6 +778,26 @@ function verifyGroupPromptCacheContract(context) {
     assert(firstParts.stable.includes('매 턴 원래 마음을 주던 상대가 먼저 말합니다')
         && firstParts.stable.includes('두 사람을 반드시 모두 넣고'),
     'group prompt no longer guarantees the harmed-partner then tempter response order');
+    assert(firstParts.stable.includes('작은 다육이')
+        && firstParts.stable.includes('리듬게임')
+        && firstParts.stable.includes('취향과 연애 방식을 공통 대사 소재처럼 나열하지 말고'),
+    'group prompt does not carry both distinct relationship profiles into the shared scene');
+    for (const character of CHARACTERS) {
+        const partner = character.key === 'Dain'
+            ? { id: 'Seoyeon', name: '서연' }
+            : { id: 'Dain', name: '다인' };
+        const characterGroupPrompt = context.window.buildCupidGroupSystemPrompt({
+            lang: 'ko',
+            participants: [
+                { id: character.key, name: character.sharedName, role: 'lead' },
+                { ...partner, role: 'tempter' }
+            ],
+            promptData,
+            affinities: { [character.key]: 20, [partner.id]: 18 }
+        });
+        assert(splitCacheBoundary(characterGroupPrompt, `main/group/${character.key}`).stable.includes(character.relationshipSignal),
+            `group prompt lost ${character.key}'s relationship profile`);
+    }
     assert(firstParts.stable.includes('주인공에게 직접 묻거나 답할 수 있고')
         && firstParts.stable.includes('다른 인물에게 묻고 답하거나 그 말에 반박할 수도 있습니다')
         && firstParts.stable.includes('매번 두 사람 모두에게 말을 걸 필요는 없습니다'),
