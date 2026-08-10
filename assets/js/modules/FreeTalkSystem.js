@@ -1385,7 +1385,10 @@ class FreeTalkSystem {
                         assistantContent: reply,
                         sessionId: requestSceneId || '',
                         context: '1:1',
-                        conversationDay: this.stateManager.currentDay,
+                        conversationDay: window.resolveCupidConversationDay?.(
+                            this.stateManager.currentDay,
+                            requestSceneId
+                        ) ?? this.stateManager.currentDay,
                         affinityChange: affinityResult?.change,
                         affinityCurrent: affinityResult?.value,
                         assistantRenderReceipt
@@ -1812,6 +1815,10 @@ class FreeTalkSystem {
                 .join('\n\n');
             requestHistory.push({ role: 'assistant', content: transcript });
             this.stateManager.setChatMemory(groupKey, requestHistory);
+            const conversationDay = window.resolveCupidConversationDay?.(
+                this.stateManager.currentDay,
+                requestSceneId
+            ) ?? this.stateManager.currentDay;
             const assistantMessages = rendered.map(item => ({
                 speakerId: item.speakerId,
                 speakerName: item.speakerName,
@@ -1823,7 +1830,7 @@ class FreeTalkSystem {
             this.stateManager.addGroupConversationMemory?.({
                 turnId: lastTurnMeta?.turnId || '',
                 sessionId: requestSceneId || '',
-                day: this.stateManager.currentDay,
+                day: conversationDay,
                 participants: this.groupParticipants,
                 playerName: this.stateManager.playerName || '',
                 userContent: finalContent,
@@ -1838,7 +1845,7 @@ class FreeTalkSystem {
                     participants: this.groupParticipants,
                     sessionId: requestSceneId || '',
                     playerName: this.stateManager.playerName || '',
-                    conversationDay: this.stateManager.currentDay
+                    conversationDay
                 });
             }
 

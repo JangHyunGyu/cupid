@@ -819,6 +819,7 @@ test('group backup logs save one player row then one row per character with cano
         getCupidDeviceId: () => 'cupid-test-user',
         getCupidLanguage: () => 'ko',
         getCupidAppId: () => 'cupid',
+        resolveCupidConversationDay: (value, sessionId) => sessionId.startsWith('morning5_') ? 5 : value,
         makeCupidChatLogEntry: value => ({ ...value, clientMsgId: `test-${queued.length}` }),
         enqueueCupidChatLog: entry => { queued.push(entry); return true; },
         flushCupidChatLogQueue: async () => {},
@@ -877,7 +878,7 @@ test('existing local group turns are recovered even when the legacy migration fl
                 groupConversationMemories: [{
                     turnId: 'group-turn-1',
                     sessionId: 'morning5_counteroffer_group_talk',
-                    day: 5,
+                    day: 1,
                     participants: [{ id: 'Teacher' }, { id: 'Dain' }],
                     playerName: '민준',
                     userContent: '둘 다 내 말을 들어줘.',
@@ -900,6 +901,7 @@ test('existing local group turns are recovered even when the legacy migration fl
         getCupidLanguage: () => 'ko',
         getCupidAppId: () => 'cupid',
         normalizeCupidConversationDay: value => Number(value) || null,
+        resolveCupidConversationDay: (value, sessionId) => sessionId.startsWith('morning5_') ? 5 : Number(value) || null,
         hashCupidLogText: value => `hash-${String(value).length}:1`,
         makeCupidChatLogEntry: value => ({ ...value }),
         postCupidChatLogEntry: async entry => { posted.push(entry); },
@@ -934,6 +936,33 @@ test('existing local group turns are recovered even when the legacy migration fl
     posted.length = 0;
     await migrationSandbox.__migrateCupidChatHistoryToD1();
     assert.deepEqual(posted.map(entry => entry.clientMsgId), firstIds, 'recovery ids must be stable for D1 upsert');
+});
+
+test('conversation log day prefers the scene session over stale runtime day state', () => {
+    const config = read('assets/js/modules/config.js');
+    const start = config.indexOf('function normalizeCupidConversationDay');
+    const end = config.indexOf('async function prepareCupidPromptMemoryRecall', start);
+    assert.ok(start >= 0 && end > start, 'conversation day helpers must remain extractable');
+
+    const daySandbox = {
+        window: { gameEngine: { stateManager: { currentDay: 1 } } },
+        String,
+        Number
+    };
+    vm.runInNewContext(
+        `${config.slice(start, end)}\nglobalThis.__resolveCupidConversationDay = resolveCupidConversationDay;`,
+        daySandbox
+    );
+
+    assert.equal(daySandbox.window.gameEngine.stateManager.currentDay, 1);
+    assert.equal(daySandbox.__resolveCupidConversationDay(1, 'lunch_seoyeon_freetalk'), 1);
+    assert.equal(daySandbox.__resolveCupidConversationDay(1, 'after2_dain_freetalk'), 2);
+    assert.equal(daySandbox.__resolveCupidConversationDay(1, 'hidden_yuna_d2_freetalk'), 2);
+    assert.equal(daySandbox.__resolveCupidConversationDay(1, 'after3_dain_freetalk'), 3);
+    assert.equal(daySandbox.__resolveCupidConversationDay(1, 'wall_teacher_freetalk'), 4);
+    assert.equal(daySandbox.__resolveCupidConversationDay(1, 'tour_yuna_freetalk'), 5);
+    assert.equal(daySandbox.__resolveCupidConversationDay(1, 'day5_yuna_ending_freetalk_perfect'), 5);
+    assert.equal(daySandbox.__resolveCupidConversationDay(4, 'gallery-freetalk'), 4);
 });
 
 test('gallery relationship aftermath persists through its local save store', () => {
