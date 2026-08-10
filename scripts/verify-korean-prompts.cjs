@@ -17,11 +17,11 @@ const REQUIRED_BLOCKS = [
     '[합의된 성인 역할극]'
 ];
 const REQUIRED_NATURAL_KOREAN_RULES = [
-    'segments[].text는 처음부터 한국어로 쓴 듯 자연스럽게 씁니다.',
-    '요약·해설·도우미식 확인 대신 캐릭터의 즉각적인 말·행동·감각으로 시작합니다.',
-    '문맥상 분명한 주어·호칭은 생략하고',
-    '명사화·피동·반복을 줄입니다.',
-    '비유·감탄·말줄임표·의성어는 인물과 순간에 맞을 때만 쓹니다.'
+    '처음부터 한국어로 쓴 듯 인물의 즉각적인 말·행동·감각으로 시작합니다.',
+    '요약·해설·도우미 말투를 피합니다.',
+    '분명한 주어·호칭은 생략하고',
+    '명사화·피동·상투적 비유·감탄·말줄임표·의성어 반복을 줄이며',
+    'JSON 키는 유지합니다.'
 ];
 const REMOVED_PRESSURE_BLOCKS = [
     '[필수 규칙]',
@@ -127,7 +127,7 @@ function assertCommonKoreanPrompt(prompt, label) {
         assert(prompt.includes(block), `${label} is missing ${block}`);
     }
     const stablePrompt = splitCacheBoundary(prompt, label).stable;
-    const stableBudget = label.startsWith('main/') ? 4400 : 4700;
+    const stableBudget = label.startsWith('main/') ? 4100 : 4300;
     assert(stablePrompt.length <= stableBudget,
         `${label} stable prompt exceeded the ${stableBudget}-character input budget (${stablePrompt.length})`);
     for (const rule of REQUIRED_NATURAL_KOREAN_RULES) {
@@ -159,17 +159,17 @@ function assertCommonKoreanPrompt(prompt, label) {
     assert(!stablePrompt.includes('입력이 짧거나 수동적이어도')
         && !stablePrompt.includes('짧거나 수동적인 입력에도'),
         `${label} duplicates turn-specific short-input guidance in the static scene block`);
-    assert(stablePrompt.includes('캐릭터는 답만 돌려주는 챗봇이 아니며'),
+    assert(stablePrompt.includes('자기 욕구·감정·판단으로 말하고 움직여 장면을 잇습니다.'),
         `${label} still frames the character as purely reactive`);
-    assert(stablePrompt.includes('억지 사건이나 행동 할당량은 없으며'),
+    assert(stablePrompt.includes('사건·행동 할당량 없이'),
         `${label} living initiative can still become a rigid action quota`);
     assert(stablePrompt.includes('중대한 선택은 대신 정하지 않습니다.'),
         `${label} living initiative no longer preserves user-owned choices`);
-    assert(stablePrompt.includes('말·행동·표정·호흡·판단·다음 선택과 여운으로 반영합니다.'),
+    assert(stablePrompt.includes('말·행동·표정·호흡·판단·다음 선택과 여운을 바꿉니다.'),
         `${label} still allows emotional events to pass without changing behavior or choices`);
-    assert(stablePrompt.includes('과묵한 인물의 침묵이나 냉정한 인물의 통제 균열도 강한 감정입니다.'),
+    assert(stablePrompt.includes('침묵이나 통제의 균열도 강한 반응이며'),
         `${label} emotional intensity no longer preserves reserved character voices`);
-    assert(stablePrompt.includes('매 답변을 절정으로 만들지 않습니다.'),
+    assert(stablePrompt.includes('매 답변의 절정은 만들지 않습니다.'),
         `${label} emotional-range rule can still force constant melodrama`);
     assert(stablePrompt.includes('연출된 저항·강압·권력차·전투는 장면 안에서 이어 갑니다.'),
         `${label} consensual adult roleplay no longer preserves agreed in-scene resistance`);

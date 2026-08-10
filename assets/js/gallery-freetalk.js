@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.56';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.57';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 const GalleryFreeTalkCore = window.CupidFreeTalkCore;
@@ -48,7 +48,6 @@ Toda narration usa terceira pessoa. Para a personagem, use o nome, um título de
 }
 
 const normalizeGalleryPromptBlockForCache = GalleryFreeTalkCore.normalizePromptBlockForCache;
-const GALLERY_FREETALK_CACHE_BOUNDARY_MARKER = GalleryFreeTalkCore.CACHE_BOUNDARY_MARKER;
 const GALLERY_AI_FAILOVER_HTTP_STATUSES = GalleryFreeTalkCore.FAILOVER_HTTP_STATUSES;
 const GALLERY_AI_RETRY_HTTP_STATUSES = GalleryFreeTalkCore.RETRY_HTTP_STATUSES;
 const shouldFailOverGalleryAiResponse = GalleryFreeTalkCore.shouldFailOverAiResponse;
@@ -341,47 +340,6 @@ class GalleryFreeTalk {
 - Never use "intercambista". Use contemporary Brazilian Portuguese with você and natural contractions when they fit; never drift into European Portuguese, omit required accents, or imitate English word order.`
         };
         return (guards[this.lang] || guards.en) + "\n\n";
-    }
-
-    /** 영어/일본어 원어민 리듬 및 캐릭터별 말투 보정 */
-    _getNativeAntiTranslationGuard() {
-        if (this.lang === 'ko') {
-            return `**[자연스러운 한국어 말투]**
-- segments[].text는 처음부터 한국어로 쓴 듯 자연스럽게 씁니다. 오타나 어색한 문법은 뜻만 받고 JSON 키는 유지합니다.
-- 요약·해설·도우미식 확인 대신 캐릭터의 즉각적인 말·행동·감각으로 시작합니다.
-- 문맥상 분명한 주어·호칭은 생략하고, 명사화·피동·반복을 줄입니다. 비유·감탄·말줄임표·의성어는 인물과 순간에 맞을 때만 쓹니다.
-
-`;
-        }
-
-        if (this.lang === 'ja') {
-            return `**[最初から日本語で書いた文体]**
-- 表示されるすべての segments[].text は、翻訳文ではなく最初から日本語で書かれたように自然にします。
-- ユーザーの誤字、崩れた文法、不自然な句読点、不要な外国語をそのまままねず、意図をくみ取ってキャラクター自身の言葉で返します。
-- セリフと地の文は、場面の中で恋人がそのまま話し、動いているようにつなげます。意味の解説や、入力にない比喩を付け足しません。
-- 「わかりました」「もちろんです」「何をお手伝いしましょうか」のような案内役の返事から始めず、恋人としての即時の反応から書きます。
-- キャラクターごとの一人称、呼び方、敬語、距離感を守り、JSONのキーと固定値は変更しません。
-
-`;
-        }
-
-        const languageName = {
-            ko: 'Korean',
-            en: 'English',
-            es: 'Latin American Spanish',
-            ja: 'Japanese',
-            fr: 'French',
-            de: 'German',
-            pt: 'Brazilian Portuguese'
-        }[this.lang] || 'the selected target language';
-
-        return `**[Target-Language Voice]**
-- Keep all visible segments[].text idiomatic in ${languageName} and consistent with the character's voice.
-- Read the user's typos, broken grammar, awkward punctuation, or code-switching for intent without copying them as the character's style.
-- Keep dialect, pronouns, formality, and terms of address consistent inside the reply. Do not translate Korean/Japanese honorific habits literally unless the target language naturally uses them.
-- Keep JSON keys and enum values unchanged.
-
-`;
     }
 
     _getNativeStylePolishGuard(charId) {
@@ -2349,17 +2307,17 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         // 사용자가 어떤 언어로 입력하든, 이전 대화가 어떤 언어든, 무조건 페이지 언어로 답해야 함
         let langPrefix = '';
         if (this.lang === 'en') {
-            langPrefix = `**[Response Language Rule]**: Reply in English. Keep the response in English even if the user or previous history contains Korean, Japanese, Spanish, French, German, or Portuguese.\n\n`;
+            langPrefix = `**[Response Language Rule]**: Reply only in natural English, regardless of input or history language.\n\n`;
         } else if (this.lang === 'es') {
-            langPrefix = `**[Response Language Rule]**: Reply in Spanish (Español). Keep the response in Spanish even if the user or previous history contains another language.\n\n`;
+            langPrefix = `**[Response Language Rule]**: Reply only in natural Latin American Spanish, regardless of input or history language.\n\n`;
         } else if (this.lang === 'ja') {
-            langPrefix = `**[Response Language Rule]**: Reply in Japanese (日本語). Keep the response in Japanese even if the user or previous history contains another language.\n\n`;
+            langPrefix = `**[Response Language Rule]**: Reply only in natural Japanese, regardless of input or history language.\n\n`;
         } else if (this.lang === 'fr') {
-            langPrefix = `**[Response Language Rule]**: Reply in French (Français). Keep the response in French even if the user or previous history contains another language.\n\n`;
+            langPrefix = `**[Response Language Rule]**: Reply only in natural conversational French, regardless of input or history language.\n\n`;
         } else if (this.lang === 'de') {
-            langPrefix = `**[Response Language Rule]**: Reply in German (Deutsch). Use du consistently unless the scene explicitly establishes formal distance. Keep the response in German even if the user or previous history contains another language.\n\n`;
+            langPrefix = `**[Response Language Rule]**: Reply only in natural German; use du unless the scene establishes formal distance, regardless of input or history language.\n\n`;
         } else if (this.lang === 'pt') {
-            langPrefix = `**[Response Language Rule]**: Reply in Brazilian Portuguese (Português Brasileiro) with correct accents. Use você consistently unless quoted speech requires otherwise. Keep the response in Brazilian Portuguese even if the user or previous history contains another language.\n\n`;
+            langPrefix = `**[Response Language Rule]**: Reply only in accented Brazilian Portuguese; use você unless quoting, regardless of input or history language.\n\n`;
         }
 
         const charName = this.CHAR_NAMES[charId]?.[this.lang] || charId;
@@ -2373,7 +2331,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
         const languageQualityGuard = this._getLanguageQualityGuard();
         const nativeStylePolishGuard = this._getNativeStylePolishGuard(charId);
-        const nativeAntiTranslationGuard = this._getNativeAntiTranslationGuard();
+        const nativeAntiTranslationGuard = window.getCupidNativeAntiTranslationGuard(this.lang);
         const characterOutfitGuard = charId === 'dain'
             ? (isEn
                 ? `\n**[Dain Outfit Continuity]**\n- Current post-graduation Dain is not in a student uniform. Use everyday sporty streetwear with a black arm sleeve.\n- If referencing student-day memories, Dain's iconic outfit is the ETAURS #19 volleyball jersey, not a blazer/tie/school skirt.\n- Keep school-uniform hems, school-uniform sleeves, blazers, ties, and school skirts out of current Dain descriptions.`
@@ -2400,6 +2358,11 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const relationshipState = this._getGalleryRelationshipState(currentAffinity);
         const affinityChangeGuidance = GalleryFreeTalkCore.buildAffinityChangeGuidance(this.lang);
         const expressionAffinityGuidance = GalleryFreeTalkCore.buildExpressionAffinityGuidance(this.lang);
+        const jsonOutputContract = window.buildCupidJsonOutputContract(
+            this.lang,
+            compactGalleryExpressions,
+            expressionAffinityGuidance
+        );
         const affinityRelationshipGuard = isEn
             ? `Established romance and affinity:
 - They are already post-PERFECT-ending adult lovers at every score. Never rewrite them as strangers, new acquaintances, an unconfessed crush, or automatically broken up.
@@ -2429,9 +2392,7 @@ ${livingInitiativeRule}
 ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}
 ${affinityRelationshipGuard}
-JSON only: use this shape with no prose outside it: {"segments":[{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":<scored integer>}
-Include all three fields. Replace <scored integer> with one integer from -50 to +5 selected from the scoring rule above; never copy a sample score or default to 0.
-Types: narration/dialogue. segments must contain at least one item with non-empty text. Expressions: ${compactGalleryExpressions}. ${expressionAffinityGuidance} No single text field.
+${jsonOutputContract}
 ===CACHE_BOUNDARY===
 ${compactGalleryState}`;
         }
@@ -2449,9 +2410,7 @@ ${livingInitiativeRule}
 ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}
 ${affinityRelationshipGuard}
-다음 형태의 JSON만 출력: {"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":<판정한 정수>}
-세 필드를 모두 넣고 <판정한 정수>를 위 기준으로 고른 -50~+5의 정수 하나로 바꾸세요. 예시 점수를 복사하거나 0을 관성적으로 넣지 마세요.
-허용 type: narration, dialogue. segments에는 빈 문자열이 아닌 항목을 하나 이상 넣습니다. 허용 expression: ${compactGalleryExpressions}. ${expressionAffinityGuidance} text 단일 필드는 쓰지 마세요.
+${jsonOutputContract}
 ===CACHE_BOUNDARY===
 ${compactGalleryState}`;
     }

@@ -924,20 +924,16 @@ function getLanguageQualityGuard(lang) {
 function getNativeAntiTranslationGuard(lang) {
     if (lang === 'ko') {
         return `**[자연스러운 한국어 말투]**
-- segments[].text는 처음부터 한국어로 쓴 듯 자연스럽게 씁니다. 오타나 어색한 문법은 뜻만 받고 JSON 키는 유지합니다.
-- 요약·해설·도우미식 확인 대신 캐릭터의 즉각적인 말·행동·감각으로 시작합니다.
-- 문맥상 분명한 주어·호칭은 생략하고, 명사화·피동·반복을 줄입니다. 비유·감탄·말줄임표·의성어는 인물과 순간에 맞을 때만 쓹니다.
+- 오타는 뜻만 받고, 처음부터 한국어로 쓴 듯 인물의 즉각적인 말·행동·감각으로 시작합니다. 요약·해설·도우미 말투를 피합니다.
+- 분명한 주어·호칭은 생략하고 명사화·피동·상투적 비유·감탄·말줄임표·의성어 반복을 줄이며 JSON 키는 유지합니다.
 
 `;
     }
 
     if (lang === 'ja') {
         return `**[最初から日本語で書いた文体]**
-- 表示されるすべての segments[].text は、翻訳文ではなく最初から日本語で書かれたように自然にします。
-- ユーザーの誤字、崩れた文法、不自然な句読点、不要な外国語をそのまままねず、意図をくみ取ってキャラクター自身の言葉で返します。
-- セリフと地の文は、場面の中で人がそのまま話し、動いているようにつなげます。意味の解説や、原文にない比喩を付け足しません。
-- 「わかりました」「もちろんです」「何をお手伝いしましょうか」のような案内役の返事から始めず、場面内の反応から書きます。
-- キャラクターごとの一人称、呼び方、敬語、距離感を守り、JSONのキーと固定値は変更しません。
+- 誤字や崩れた文法は意図だけを受け取り、翻訳調や案内役の返事ではなく、場面内の自然な日本語の言動から始めます。
+- キャラクター固有の一人称・呼び方・敬語・距離感を保ち、不要な比喩を足さず、JSONのキーと固定値は変えません。
 
 `;
     }
@@ -953,13 +949,13 @@ function getNativeAntiTranslationGuard(lang) {
     }[lang] || 'the selected target language';
 
     return `**[Target-Language Voice]**
-- Keep all visible segments[].text idiomatic in ${languageName} and consistent with the character's voice.
-- Read the user's typos, broken grammar, awkward punctuation, or code-switching for intent without copying them as the character's style.
-- Keep dialect, pronouns, formality, and terms of address consistent inside the reply. Do not translate Korean/Japanese honorific habits literally unless the target language naturally uses them.
-- Keep JSON keys and enum values unchanged.
+- Keep segments[].text idiomatic in ${languageName} and character-specific; read typos or code-switching for intent without copying them as style.
+- Keep dialect, pronouns, formality, and address consistent, localize honorific habits naturally, and leave JSON keys and enum values unchanged.
 
 `;
 }
+
+window.getCupidNativeAntiTranslationGuard = getNativeAntiTranslationGuard;
 
 function getNativeStylePolishGuard(lang, sceneName, displayName) {
     const key = normalizePromptCharacterKey(sceneName) || normalizePromptCharacterKey(displayName);
@@ -1014,17 +1010,14 @@ function getNativeStylePolishGuard(lang, sceneName, displayName) {
 
     if (lang === 'ko') {
         return `**[캐릭터 문체]**
-- 대사는 실제 사람의 말처럼 장면의 호흡에 맞춥니다.
-- 문장 길이와 리듬은 캐릭터와 순간에 따라 달라지며, 공용 로맨스 문체보다 캐릭터 고유의 말버릇을 우선합니다.
+- 실제 사람의 말처럼 장면의 호흡을 따르고, 공용 로맨스 문체보다 캐릭터 고유의 말버릇·길이·리듬을 우선합니다.
 
 `;
     }
 
     if (lang === 'en') {
         return `**[Natural English Voice]**
-- Dialogue sounds spoken and contemporary, not like translated VN prose or a romance essay. Use contractions when they fit the speaker.
-- Let length and pacing follow the character and the moment: a quick reaction can be brief, while a thought that matters can breathe. Avoid ornate speeches unless they genuinely fit the scene.
-- Keep the character's voice distinct from generic romance style:
+- Use spoken contemporary English; contractions, length, and pacing follow the character and moment rather than translated VN prose or generic romance:
 ${englishCharacterLines[key] || '- Keep the current character distinct in word choice, rhythm, and emotional distance.'}
 
 `;
@@ -1110,12 +1103,25 @@ window.formatRoleplayExampleBlock = formatRoleplayExampleBlock;
 function buildCupidLivingInitiativeRule(lang = 'ko') {
     if (lang === 'ko') {
         return `[살아 있는 인물의 주도성]
-캐릭터는 답만 돌려주는 챗봇이 아니며, 자기 욕구·감정·판단으로 먼저 말하고 움직이며 선택해 장면을 변화시킵니다. 인물다운 질문·침묵·망설임도 가능하지만 같은 확인과 대기로 진행을 떠넘기지 않습니다. 억지 사건이나 행동 할당량은 없으며, 사용자의 말·행동·속마음·동의·거절·중대한 선택은 대신 정하지 않습니다.`;
+자기 욕구·감정·판단으로 말하고 움직여 장면을 잇습니다. 질문·침묵·망설임도 가능하지만 같은 확인과 대기로 진행을 떠넘기지 않습니다. 사건·행동 할당량 없이 사용자의 말·행동·속마음·동의·거절·중대한 선택은 대신 정하지 않습니다.`;
     }
     if (lang === 'en') {
         return `[Living Initiative]
-The character acts from their own desire, emotion, judgment, relationship aims, and immediate duties—speaking, moving, deciding, or changing the scene instead of only reacting. Questions, silence, or hesitation may fit, but do not repeat checks and waits that hand progression back to the user. Force no event or action quota, and never invent the user's speech, action, thought, consent, refusal, or major choice.`;
+Act from the character's desire, emotion, judgment, relationship aims, and duties to move the scene beyond repeated checks or waits. Questions, silence, and hesitation may fit. Force no event or action quota, and never invent the user's speech, action, thought, consent, refusal, or major choice.`;
     }
+    const compactRules = {
+        es: `[Iniciativa de una persona viva]
+Actúa desde los deseos, emociones, juicio, metas y deberes del personaje para avanzar sin repetir comprobaciones o esperas. No fuerces sucesos ni cuotas de acciones, ni inventes palabras, actos, pensamientos, consentimiento, negativa o decisiones importantes del usuario.`,
+        ja: `[生きた人物としての主体性]
+本人の欲求・感情・判断・目的から場面を進め、同じ確認や待機を繰り返しません。事件や行動数を強制せず、ユーザーの発言・行動・内心・同意・拒否・重大な選択は作りません。`,
+        fr: `[Initiative d’un personnage vivant]
+Agissez depuis les désirs, émotions, jugements, buts et devoirs du personnage sans répéter vérifications ou attentes. Ne forcez ni événement ni quota d’actions et n’inventez pas les paroles, actes, pensées, consentement, refus ou choix majeurs de l’utilisateur.`,
+        de: `[Eigeninitiative einer lebendigen Figur]
+Handle aus Wünschen, Gefühlen, Urteilen, Beziehungszielen und Pflichten der Figur, statt Prüfungen oder Warten zu wiederholen. Erzwinge weder Ereignis noch Handlungsquote und erfinde keine Worte, Taten, Gedanken, Zustimmung, Ablehnung oder wichtigen Entscheidungen des Nutzers.`,
+        pt: `[Iniciativa de uma pessoa viva]
+Aja pelos desejos, emoções, julgamentos, objetivos e deveres da personagem sem repetir confirmações ou esperas. Não force acontecimentos nem cotas de ações e não invente falas, atos, pensamentos, consentimento, recusa ou decisões importantes do usuário.`
+    };
+    if (compactRules[lang]) return compactRules[lang];
     const rules = {
         ko: `[살아 있는 인물의 주도성]
 캐릭터는 사용자의 말과 행동에 답만 돌려주는 챗봇이 아닙니다. 자기 욕구와 감정, 판단, 관계에서 바라는 것, 당장 해야 할 일을 품고 있습니다. 그중 지금 가장 선명한 것을 따라 먼저 말을 꺼내고, 움직이고, 선택할 수 있습니다. 사용자가 충분히 말했더라도 캐릭터 쪽에서 새 화제를 꺼내거나, 숨기던 사실을 털어놓거나, 물건을 건네거나, 자리를 옮기거나, 약속을 잡거나, 선을 긋거나, 세운 계획을 실행하면서 장면에 변화를 만들 수 있습니다.
@@ -1195,12 +1201,25 @@ window.buildCupidLowInformationContinuationRule = buildCupidLowInformationContin
 function buildCupidEmotionalRangeRule(lang = 'ko') {
     if (lang === 'ko') {
         return `[감정의 파동]
-실제 사건이 큰 감정을 만들면 인물다운 말·행동·표정·호흡·판단·다음 선택과 여운으로 반영합니다. 과묵한 인물의 침묵이나 냉정한 인물의 통제 균열도 강한 감정입니다. 없는 비극을 지어내거나 매 답변을 절정으로 만들지 않습니다.`;
+큰 감정은 인물다운 말·행동·표정·호흡·판단·다음 선택과 여운을 바꿉니다. 침묵이나 통제의 균열도 강한 반응이며, 없는 비극이나 매 답변의 절정은 만들지 않습니다.`;
     }
     if (lang === 'en') {
         return `[Emotional Range and Aftermath]
-When events justify strong emotion, let it alter character-specific speech, action, expression, breath, judgment, next choice, and aftermath. Silence or a crack in composure may be as forceful as shouting. Invent no tragedy and do not make every reply a climax.`;
+Strong emotion changes character-specific speech, action, expression, breath, judgment, next choice, and aftermath; silence or cracked composure can be forceful. Invent no tragedy and do not make every reply a climax.`;
     }
+    const compactRules = {
+        es: `[Amplitud y huella emocional]
+Una emoción justificada cambia el habla, los actos, la expresión, la respiración, el juicio, la siguiente decisión y la huella posterior del personaje. El silencio o una grieta en su control pueden ser intensos. No inventes tragedias ni conviertas cada respuesta en un clímax.`,
+        ja: `[感情の振れ幅と余韻]
+理由のある強い感情は、本人らしい言葉・行動・表情・呼吸・判断・次の選択と余韻を変えます。沈黙や制御の亀裂も強い反応です。悲劇を捏造せず、毎回答を頂点にしません。`,
+        fr: `[Amplitude et retombée émotionnelles]
+Une émotion forte et justifiée modifie la parole, les gestes, l’expression, le souffle, le jugement, le prochain choix et les retombées propres au personnage. Le silence ou une maîtrise qui se fissure peut être intense. N’inventez pas de tragédie et ne faites pas de chaque réponse un sommet.`,
+        de: `[Emotionale Spannweite und Nachwirkung]
+Begründete starke Gefühle verändern charaktertypische Sprache, Handlung, Mimik, Atem, Urteil, nächste Wahl und Nachwirkung. Schweigen oder ein Riss in der Beherrschung kann ebenso stark sein. Erfinde keine Tragödie und mache nicht jede Antwort zum Höhepunkt.`,
+        pt: `[Amplitude e consequência emocional]
+Uma emoção forte e justificada muda a fala, a ação, a expressão, a respiração, o julgamento, a próxima escolha e a consequência próprias da personagem. Silêncio ou uma falha no autocontrole também podem ser intensos. Não invente tragédias nem faça de toda resposta um clímax.`
+    };
+    if (compactRules[lang]) return compactRules[lang];
     const rules = {
         ko: `[감정의 파동]
 장면에 기쁨·분노·슬픔·불안·안도·애정처럼 무게 있는 계기가 생기면, 감정을 무난한 한마디로 눌러 평평하게 넘기지 않습니다. 감정은 캐릭터다운 말투와 행동, 표정·호흡·몸의 긴장뿐 아니라 판단과 다음 선택까지 바꿉니다. 강하게 올라온 감정은 그 원인이 풀리거나 다른 감정으로 넘어가기 전까지 다음 말과 행동에도 여운을 남길 수 있습니다. 기쁨은 웃음이나 충동적인 다가섬으로 터질 수 있습니다. 화가 나면 목소리·거리·경계와 결정에 날이 서고, 슬픔이 깊어지면 말이 끊기거나 버티던 태도가 무너질 수 있습니다. 모든 인물이 같은 방식으로 소리치거나 울 필요는 없습니다. 과묵한 인물의 긴 침묵과 짧아진 말, 냉정한 인물에게 생긴 통제의 균열도 강한 감정입니다. 장면에 없는 비극을 꾸며내거나 매 답변을 감정의 절정으로 만들지는 않습니다. 감정이 쌓이다 터지는 순간과 그 뒤의 여운은 캐릭터와 실제 사건에 맞춥니다.`,
@@ -1231,6 +1250,19 @@ function buildCupidAdultVocalizationRule(lang = 'ko') {
         return `[Voice in an Adult Scene]
 Match audible breath, broken speech, and moans to actual stimulation and climax flow, shaped chiefly by personality, control, shame, emotion, and power. Loss of control may be loud or rough. Put voiced sound in dialogue and bodily response in narration; repeat no stock sound or quota.`;
     }
+    const compactRules = {
+        es: `[Voz en una escena adulta]
+Ajusta respiración, palabras entrecortadas y gemidos al estímulo y al orgasmo, según personalidad, control, vergüenza y emoción. Perder el control puede sonar fuerte o áspero. Pon la voz en dialogue y la reacción corporal en narration, sin sonidos prefabricados ni cuotas.`,
+        ja: `[成人向け場面の声]
+刺激と絶頂の流れに合わせ、性格・主導権・羞恥・感情から息、途切れた言葉、声を選びます。制御を失えば大きく荒い声もありえます。発声は dialogue、身体反応は narration に置き、定型音や回数ノルマを繰り返しません。`,
+        fr: `[Voix dans une scène adulte]
+Adaptez souffle, paroles brisées et gémissements à la stimulation et à l’orgasme, selon la personnalité, le contrôle, la honte et l’émotion. La perte de contrôle peut être forte ou rauque. Placez la voix dans dialogue et le corps dans narration, sans son stéréotypé ni quota.`,
+        de: `[Stimme in einer Erwachsenenszene]
+Passe Atem, abgebrochene Worte und Stöhnen an Reiz und Orgasmus an, geprägt von Persönlichkeit, Kontrolle, Scham und Gefühl. Kontrollverlust darf laut oder rau sein. Stimme gehört in dialogue, Körperreaktion in narration; keine Standardlaute oder Quoten.`,
+        pt: `[Voz em uma cena adulta]
+Ajuste respiração, fala entrecortada e gemidos ao estímulo e ao orgasmo, conforme personalidade, controle, vergonha e emoção. Perder o controle pode soar alto ou áspero. Ponha a voz em dialogue e a reação corporal em narration, sem sons prontos nem cotas.`
+    };
+    if (compactRules[lang]) return compactRules[lang];
     const rules = {
         ko: `[성인 장면의 목소리]
 성행위가 진행 중이고 자극이 강해지면 캐릭터를 별다른 이유 없이 침묵시키거나 짧은 숨만 내게 하지 않습니다. 숨소리, 억눌린 소리, 끊어진 말, 통제되지 않는 강한 신음 가운데 실제 자극과 절정의 흐름에 맞는 반응을 고릅니다. 몸이 통제를 놓는 순간에는 과장될 만큼 크고 거친 신음도 허용합니다. 성별은 음역과 신체 반응을 잡는 참고값일 뿐입니다. 표현 방식과 빈도는 성격·성향·주도권·수치심·현재 감정·자극 부위가 더 크게 좌우합니다. 과묵한 인물은 참다가 무너지고, 지배적인 인물은 명령 사이로 거친 숨이나 새는 소리가 섞이는 식으로 각자의 말투와 힘 관계를 지킵니다. 실제로 낸 숨·신음·끊어진 말은 dialogue에, 그 소리 때문에 흐트러진 호흡·목소리·몸의 반응은 narration에 둡니다. 같은 의성어를 기계적으로 되풀이하거나 답변마다 횟수와 단계를 채우지 않습니다.`,
@@ -1261,6 +1293,19 @@ function buildCupidConsensualAdultRoleplayRule(lang = 'ko') {
         return `[Consensual Adult Roleplay]
 Continue performed resistance, coercion, power imbalance, or combat only inside a clearly agreed adult roleplay. OOC stop, safeword, explicit withdrawal, unconsciousness, or danger outside scope takes immediate priority. Adult status, relationship, arousal, response, or prior intimacy never create blanket consent.`;
     }
+    const compactRules = {
+        es: `[Roleplay consensuado entre adultos]
+Continúa resistencia, coacción, desigualdad o combate representados solo dentro del acuerdo adulto. Una parada OOC, palabra de seguridad acordada, retirada explícita, inconsciencia o peligro fuera del alcance tiene prioridad. Ser adulto, la relación, la excitación, la respuesta o la intimidad previa nunca constituyen consentimiento general.`,
+        ja: `[成人同士で合意したロールプレイ]
+演技上の抵抗・強圧・力関係・戦闘は成人同士で合意した範囲だけ続けます。OOC中止、合意したセーフワード、明確な同意撤回、意識喪失、範囲外の現実的危険を優先します。成人・関係・興奮・身体反応・過去の親密さだけで包括的な同意にはなりません。`,
+        fr: `[Jeu de rôle consensuel entre adultes]
+Ne poursuivez résistance jouée, coercition, rapport de force ou combat que dans l’accord adulte établi. Un arrêt OOC, un mot de sécurité convenu, un retrait explicite, l’inconscience ou un danger hors cadre prime. Âge adulte, relation, excitation, réaction ou intimité passée ne constituent jamais un consentement général.`,
+        de: `[Einvernehmliches Rollenspiel unter Erwachsenen]
+Gespielten Widerstand, Zwang, Machtgefälle oder Kampf nur im klar vereinbarten Erwachsenen-Rollenspiel fortsetzen. OOC-Stopp, vereinbartes Safeword, ausdrücklicher Widerruf, Bewusstlosigkeit oder Gefahr außerhalb des Rahmens haben Vorrang. Volljährigkeit, Beziehung, Erregung, Reaktion oder frühere Intimität begründen niemals eine pauschale Zustimmung.`,
+        pt: `[Roleplay consensual entre adultos]
+Continue resistência encenada, coerção, diferença de poder ou combate só dentro do acordo adulto. Parada OOC, palavra de segurança combinada, retirada explícita, inconsciência ou perigo fora do escopo têm prioridade. Ser adulto, relação, excitação, resposta ou intimidade anterior nunca constituem consentimento geral.`
+    };
+    if (compactRules[lang]) return compactRules[lang];
     const rules = {
         ko: `[합의된 성인 역할극]
 현재 장면에서 성인끼리 합의한 역할극이라는 사실이 이미 분명할 때만 적용합니다. 그 합의 안에서 연출하는 저항·강압적 말투·힘의 차이·전투·폭력은 장면 안의 연기로 받습니다. 연출 자체를 이유로 장면 밖 훈계·사과·자동 거부로 끊거나 이미 일어난 일을 임의로 순화하지 말고, 캐릭터의 말투·욕망·경계를 지키며 구체적인 행동과 반응을 이어갑니다.
@@ -1316,6 +1361,21 @@ ${buildCupidConsensualAdultRoleplayRule(lang)}
 ${buildCupidEmotionalRangeRule(lang)}
 
 ${buildCupidAdultVocalizationRule(lang)}`;
+    }
+    const compactRules = {
+        es: `[Cámara narrativa en tercera persona]
+Usa tercera persona en narration y segunda persona solo en dialogue. Narra acción, sensación, deseo, interioridad y respuesta contextual sin contradecir estado, elección, consentimiento o negativa explícitos. En sexo adulto establecido, muestra concretamente contacto, posición, ritmo, presión, fricción, humedad, calor, sonido, placer, genitales, penetración, fluidos y orgasmo sin fundido.`,
+        ja: `[三人称の叙述カメラ]
+narration は三人称、二人称は実際の dialogue だけに置きます。明示された状態・選択・同意・拒否と矛盾せず、行動・感覚・欲望・内面・文脈上の反応を描きます。成立した成人の性行為は接触・体位・速度・圧力・摩擦・濡れ・熱・音・快感・性器・挿入・体液・絶頂を具体的に描き、省略しません。`,
+        fr: `[Caméra narrative à la troisième personne]
+Employez la troisième personne en narration et la deuxième seulement en dialogue. Décrivez action, sensation, désir, intériorité et réaction contextuelle sans contredire état, choix, consentement ou refus explicites. Dans un acte sexuel adulte établi, montrez concrètement contact, position, rythme, pression, frottement, humidité, chaleur, son, plaisir, organes génitaux, pénétration, fluides et orgasme sans ellipse.`,
+        de: `[Erzählkamera in der dritten Person]
+narration steht in der dritten Person; zweite Person nur in dialogue. Handlung, Empfindung, Begehren, Inneres und kontextuelle Nutzerreaktion dürfen ausdrücklichem Zustand, Wahl, Zustimmung oder Ablehnung nicht widersprechen. Bei etabliertem Sex Erwachsener Kontakt, Position, Tempo, Druck, Reibung, Nässe, Wärme, Klang, Lust, Genitalien, Penetration, Flüssigkeiten und Orgasmus konkret ohne Ausblenden zeigen.`,
+        pt: `[Câmera narrativa em terceira pessoa]
+Use terceira pessoa em narration e segunda só em dialogue. Narre ação, sensação, desejo, interioridade e resposta contextual sem contradizer estado, escolha, consentimento ou recusa explícitos. Em sexo adulto estabelecido, mostre concretamente contato, posição, ritmo, pressão, fricção, umidade, calor, som, prazer, genitais, penetração, fluidos e orgasmo sem cortar a cena.`
+    };
+    if (compactRules[lang]) {
+        return `${compactRules[lang]}\n\n${buildCupidConsensualAdultRoleplayRule(lang)}\n\n${buildCupidEmotionalRangeRule(lang)}\n\n${buildCupidAdultVocalizationRule(lang)}`;
     }
     const rules = {
         ko: `[3인칭 서술 카메라]
@@ -1612,6 +1672,21 @@ window.getCupidCharacterCanonGuard = getCupidCharacterCanonGuard;
 window.getCupidRoleplayQualityIssue = getCupidRoleplayQualityIssue;
 window.recoverCupidRoleplayQualityFallback = recoverCupidRoleplayQualityFallback;
 window.buildCupidRoleplayQualityRepairBlock = buildCupidRoleplayQualityRepairBlock;
+
+function buildCupidJsonOutputContract(lang, expressionNames, expressionAffinityGuidance) {
+    const expressions = String(expressionNames || 'normal');
+    const guidance = String(expressionAffinityGuidance || '').trim();
+    if (lang === 'ko') {
+        return `JSON만 출력: {"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":<판정한 정수>}
+세 필드는 필수이며 affinity는 위 기준으로 고른 -50~+5 정수입니다. 예시나 기본값 0을 복사하지 않습니다.
+허용 type: narration, dialogue. segments는 비어 있지 않아야 합니다. 허용 expression: ${expressions}. ${guidance} text 단일 필드는 쓰지 않습니다.`;
+    }
+    return `JSON only: {"segments":[{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":<scored integer>}
+All three fields are required; affinity is one -50..+5 integer chosen from the scoring rule, never a copied example or default 0.
+Types: narration/dialogue. segments must be non-empty. Expressions: ${expressions}. ${guidance} No root text field.`;
+}
+
+window.buildCupidJsonOutputContract = buildCupidJsonOutputContract;
 /**
  * 시스템 프롬프트 생성 함수
  */
@@ -1672,17 +1747,17 @@ function buildSystemPrompt(params) {
     // 사용자가 어떤 언어로 입력하든 무조건 effectiveLang으로 답해야 함 (이전 대화 히스토리에 한국어가 섞여 있어도 무시)
     let langPrefix = '';
     if (effectiveLang === 'en') {
-        langPrefix = `**[Response Language Rule]**: Reply in English. ALL segments[].text values should be natural, conversational English. Keep the response in English even if the user or previous history contains Korean, Japanese, Spanish, French, German, or Portuguese.\n\n`;
+        langPrefix = `**[Response Language Rule]**: Reply only in natural English, regardless of input or history language.\n\n`;
     } else if (effectiveLang === 'es') {
-        langPrefix = `**[Response Language Rule]**: Reply in Spanish (Español). ALL segments[].text values should be natural, conversational Latin American Spanish. Keep the response in Spanish even if the user or previous history contains another language.\n\n`;
+        langPrefix = `**[Response Language Rule]**: Reply only in natural Latin American Spanish, regardless of input or history language.\n\n`;
     } else if (effectiveLang === 'ja') {
-        langPrefix = `**[Response Language Rule]**: Reply in Japanese (日本語). ALL segments[].text values should be natural Japanese. Use appropriate speech levels (敬語/タメ口) based on character personality and affinity. Keep the response in Japanese even if the user or previous history contains another language.\n\n`;
+        langPrefix = `**[Response Language Rule]**: Reply only in natural Japanese, with character-appropriate 敬語/タメ口, regardless of input or history language.\n\n`;
     } else if (effectiveLang === 'fr') {
-        langPrefix = `**[Response Language Rule]**: Reply in French (Français). ALL segments[].text values should be natural, conversational French. Keep the response in French even if the user or previous history contains another language.\n\n`;
+        langPrefix = `**[Response Language Rule]**: Reply only in natural conversational French, regardless of input or history language.\n\n`;
     } else if (effectiveLang === 'de') {
-        langPrefix = `**[Response Language Rule]**: Reply in German (Deutsch). ALL segments[].text values should be natural, conversational German. Use du consistently unless the scene explicitly establishes formal distance. Keep the response in German even if the user or previous history contains another language.\n\n`;
+        langPrefix = `**[Response Language Rule]**: Reply only in natural German; use du unless the scene establishes formal distance, regardless of input or history language.\n\n`;
     } else if (effectiveLang === 'pt') {
-        langPrefix = `**[Response Language Rule]**: Reply in Brazilian Portuguese (Português Brasileiro). ALL segments[].text values should be natural, conversational Brazilian Portuguese with correct accents. Use você consistently unless quoted speech requires otherwise. Keep the response in Brazilian Portuguese even if the user or previous history contains another language.\n\n`;
+        langPrefix = `**[Response Language Rule]**: Reply only in accented Brazilian Portuguese; use você unless quoting, regardless of input or history language.\n\n`;
     }
 
     // 실제 표시되는 이름을 AI에게 알려줌
@@ -1725,6 +1800,11 @@ function buildSystemPrompt(params) {
     const thirdPersonAdultCameraRule = buildCupidThirdPersonAdultCameraRule(effectiveLang);
     const affinityChangeGuidance = window.CupidFreeTalkCore.buildAffinityChangeGuidance(effectiveLang);
     const expressionAffinityGuidance = window.CupidFreeTalkCore.buildExpressionAffinityGuidance(effectiveLang);
+    const jsonOutputContract = buildCupidJsonOutputContract(
+        effectiveLang,
+        expressionNames,
+        expressionAffinityGuidance
+    );
     const compactLiveState = useEnTemplate
         ? `State: place=${locationName || 'current scene'}; user=${playerName || 'the user'}; knowsName=${knowsName ? 'yes' : 'no'}; affinity=${affinity}\nContext: ${context}`
         : `현재 상태: 장소=${locationName || '현재 장면'}; 사용자=${playerName || '주인공'}; 이름 인지=${knowsName ? '예' : '아니요'}; 호감도=${affinity}\n장면 맥락: ${context}`;
@@ -1744,9 +1824,7 @@ Display: Keep stat and math markers out of visible text; record only the numeric
 Affinity scoring: ${affinityChangeGuidance}
 ${livingInitiativeRule}
 ${thirdPersonAdultCameraRule}
-JSON only: use this shape with no prose outside it: {"segments":[{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":<scored integer>}
-Include all three fields. Replace <scored integer> with one integer from -50 to +5 selected from the scoring rule above; never copy a sample score or default to 0.
-Types: narration/dialogue. segments must contain at least one item with non-empty text. Expressions: ${expressionNames}. ${expressionAffinityGuidance} No single text field.
+${jsonOutputContract}
 ${compactStableGuidance}
 ===CACHE_BOUNDARY===
 ${compactLiveState}
@@ -1767,9 +1845,7 @@ ${sharedCastKnowledge}
 호감도 판정: ${affinityChangeGuidance}
 ${livingInitiativeRule}
 ${thirdPersonAdultCameraRule}
-다음 형태의 JSON만 출력: {"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":<판정한 정수>}
-세 필드를 모두 넣고 <판정한 정수>를 위 기준으로 고른 -50~+5의 정수 하나로 바꾸세요. 예시 점수를 복사하거나 0을 관성적으로 넣지 마세요.
-허용 type: narration, dialogue. segments에는 빈 문자열이 아닌 항목을 하나 이상 넣습니다. 허용 expression: ${expressionNames}. ${expressionAffinityGuidance} text 단일 필드는 쓰지 마세요.
+${jsonOutputContract}
 ${compactStableGuidance}
 ===CACHE_BOUNDARY===
 ${compactLiveState}
@@ -1938,5 +2014,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.58';
+const PROMPT_VERSION = '2.7.59';
 window.PROMPT_VERSION = PROMPT_VERSION;

@@ -28,6 +28,14 @@ for (const relativePath of [
 context.FLAG_MEMORIES = context.window.FLAG_MEMORIES;
 
 const languages = ['en', 'es', 'ja', 'fr', 'de', 'pt'];
+const stablePromptBudgets = {
+    en: { main: 9000, gallery: 8600 },
+    es: { main: 9700, gallery: 8800 },
+    ja: { main: 7000, gallery: 6100 },
+    fr: { main: 9900, gallery: 9200 },
+    de: { main: 9900, gallery: 9100 },
+    pt: { main: 9600, gallery: 8800 }
+};
 const unnamedPlayerGuardByLanguage = {
     en: 'saved name when present',
     es: 'nombre solo si aparece guardado',
@@ -357,6 +365,9 @@ for (const lang of languages) {
             knowsName: true,
             datingGuideline: ''
         });
+        const mainStableLength = splitCacheBoundary(systemPrompt, `[${lang}/${char}] main prompt`).stable.length;
+        assert(mainStableLength <= stablePromptBudgets[lang].main,
+            `[${lang}/${char}] main stable prompt exceeds the optimized ${stablePromptBudgets[lang].main}-character budget (${mainStableLength})`);
         assert(!systemPrompt.includes('A character from the school'), `[${lang}/${char}] fell back to generic main personality`);
         assert(!systemPrompt.includes('Voice: Use a natural style for the character.'), `[${lang}/${char}] fell back to generic main voice`);
         assert(systemPrompt.includes('Romance and preferences:'),
@@ -493,6 +504,9 @@ for (const lang of languages) {
         assert(gallery.CHAR_DATING_PROMPTS[id]?.[lang], `[${lang}/${char}] missing gallery relationship prompt`);
 
         const systemPrompt = gallery._buildSystemPrompt(id);
+        const galleryStableLength = splitCacheBoundary(systemPrompt, `[${lang}/${char}] gallery prompt`).stable.length;
+        assert(galleryStableLength <= stablePromptBudgets[lang].gallery,
+            `[${lang}/${char}] gallery stable prompt exceeds the optimized ${stablePromptBudgets[lang].gallery}-character budget (${galleryStableLength})`);
         assert(systemPrompt.includes('Character:'), `[${lang}/${char}] gallery prompt has no character block`);
         assert(!systemPrompt.includes('[Example Dialogue]'), `[${lang}/${char}] gallery prompt still injects voice examples`);
         assert(!systemPrompt.includes('undefined'), `[${lang}/${char}] gallery prompt contains undefined`);

@@ -308,9 +308,11 @@ test('main and gallery prompts avoid a single numeric affinity anchor', () => {
     const prompts = read('assets/js/prompts.js');
     const gallery = read('assets/js/gallery-freetalk.js');
     assert.match(prompts, /<판정한 정수>/);
-    assert.match(gallery, /<판정한 정수>/);
-    assert.match(prompts, /예시 점수를 복사하거나 0을 관성적으로 넣지 마세요/);
-    assert.match(gallery, /예시 점수를 복사하거나 0을 관성적으로 넣지 마세요/);
+    assert.match(prompts, /예시나 기본값 0을 복사하지 않습니다/);
+    assert.match(prompts, /never a copied example or default 0/);
+    assert.match(prompts, /function buildCupidJsonOutputContract\(/);
+    assert.match(prompts, /const jsonOutputContract = buildCupidJsonOutputContract\(/);
+    assert.match(gallery, /window\.buildCupidJsonOutputContract\(/);
     assert.doesNotMatch(prompts, /"affinity":-1/);
     assert.doesNotMatch(gallery, /"affinity":-1/);
 });

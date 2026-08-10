@@ -1848,7 +1848,10 @@ try {
         errors.push('[FREETALK_CANON] 게임/갤러리 사용자 신체 소유 주체 규칙 누락');
     }
     const structuralOutputKo = '허용 type: narration, dialogue.';
-    if (!promptsContent.includes(structuralOutputKo) || !gftContent.includes(structuralOutputKo)) {
+    if (!promptsContent.includes(structuralOutputKo)
+        || !promptsContent.includes('function buildCupidJsonOutputContract(')
+        || !promptsContent.includes('const jsonOutputContract = buildCupidJsonOutputContract(')
+        || !gftContent.includes('window.buildCupidJsonOutputContract(')) {
         errors.push('[FREETALK_SCHEMA] 구조적 출력 type 계약이 게임/갤러리에 동일하게 유지되지 않음');
     }
 } catch (e) {
@@ -1902,17 +1905,18 @@ try {
     const activePromptSources = [promptsContent, ftCoreContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
-    if (promptVersion !== '2.7.58') {
-        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.58이 아님: ' + promptVersion);
+    if (promptVersion !== '2.7.59') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.59가 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.56') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.56이 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.57') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.57이 아님: ' + galleryPromptVersion);
     }
     const galleryProgressContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-progress.js'), 'utf8');
     const galleryLoaderAffinityContent = fs.readFileSync(path.join(__dirname, 'assets/js/loaders/gallery-loader.js'), 'utf8');
     const galleryControllerContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery.js'), 'utf8');
     const galleryFreeTalkCss = fs.readFileSync(path.join(__dirname, 'assets/css/gallery-freetalk.css'), 'utf8');
     const galleryAffinityRuntime = [
+        promptsContent,
         gftContent,
         galleryProgressContent,
         galleryLoaderAffinityContent,
@@ -1971,8 +1975,9 @@ try {
         if (localizedThirdPersonSignals.some(signal => !source.includes(signal))) {
             errors.push('[FREETALK_PROMPT] ' + label + ' 언어별 narration 2인칭 금지 계약 누락');
         }
-        if (!source.includes('segments must contain at least one item with non-empty text')
-            || !source.includes('segments에는 빈 문자열이 아닌 항목을 하나 이상 넣습니다')
+        const outputContractSource = source + '\n' + promptsContent;
+        if (!outputContractSource.includes('segments must be non-empty')
+            || !outputContractSource.includes('segments는 비어 있지 않아야 합니다')
             || source.includes('Never repeat the same sentence or segment twice in one reply')
             || source.includes('한 답변 안에서 같은 문장이나 segment를 두 번 쓰지 않고')) {
             errors.push('[FREETALK_PROMPT] ' + label + ' 빈 구조 방지 계약 또는 전역 문구 반복 금지 제거 상태 불일치');
@@ -2266,8 +2271,13 @@ try {
     if (ftSysContent.includes('parsed.text || "..."') || gftContent.includes("parsed.text || '...'")) {
         errors.push('[FREETALK_ERROR] 빈 AI 응답을 캐릭터의 말줄임표 대사로 저장하는 경로가 남아 있음');
     }
-    for (const [label, source] of [['main', promptsContent], ['gallery', gftContent]]) {
-        if (!source.includes('"segments"') || !source.includes('"expression"')) {
+    for (const [label, source, builderCall] of [
+        ['main', promptsContent, 'const jsonOutputContract = buildCupidJsonOutputContract('],
+        ['gallery', gftContent, 'window.buildCupidJsonOutputContract(']
+    ]) {
+        if (!promptsContent.includes('"segments"')
+            || !promptsContent.includes('"expression"')
+            || !source.includes(builderCall)) {
             errors.push('[FREETALK_PROMPT] ' + label + ' segments/expression 계약 누락');
         }
     }
