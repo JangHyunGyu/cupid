@@ -106,7 +106,7 @@ const consensualAdultRoleplaySignals = {
     pt: '[Roleplay consensual entre adultos]'
 };
 const consensualAdultSafetySignals = {
-    en: ['agreed safeword', 'never create blanket consent'],
+    en: ['safeword', 'never create blanket consent'],
     es: ['palabra de seguridad acordada', 'nunca constituyen consentimiento general'],
     ja: ['合意したセーフワード', '包括的な同意にはなりません'],
     fr: ['mot de sécurité convenu', 'ne constituent jamais un consentement général'],

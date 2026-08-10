@@ -17,11 +17,11 @@ const REQUIRED_BLOCKS = [
     '[합의된 성인 역할극]'
 ];
 const REQUIRED_NATURAL_KOREAN_RULES = [
-    '한국어에서 문맥상 분명한 주어·대명사·호칭은 자연스럽게 생략하세요.',
-    '사용자의 말을 안내문처럼 요약하거나 해설한 뒤 답을 시작하지 마세요.',
-    '같은 문장 시작·접속사·종결과 대사-지문 배열의 반복을 화면 문장에 남기지 마세요.',
-    '명사화·피동·이중 완곡을 습관적으로 늘이지 말고, 뜻이 분명하면 능동 동사로 바로 연결하세요.',
-    '비유·감탄·말줄임표·의성어는 캐릭터와 순간에 맞을 때만 쓰고, 모든 캐릭터가 공유하는 말버릇으로 만들지 마세요.'
+    'segments[].text는 처음부터 한국어로 쓴 듯 자연스럽게 씁니다.',
+    '요약·해설·도우미식 확인 대신 캐릭터의 즉각적인 말·행동·감각으로 시작합니다.',
+    '문맥상 분명한 주어·호칭은 생략하고',
+    '명사화·피동·반복을 줄입니다.',
+    '비유·감탄·말줄임표·의성어는 인물과 순간에 맞을 때만 쓹니다.'
 ];
 const REMOVED_PRESSURE_BLOCKS = [
     '[필수 규칙]',
@@ -127,6 +127,9 @@ function assertCommonKoreanPrompt(prompt, label) {
         assert(prompt.includes(block), `${label} is missing ${block}`);
     }
     const stablePrompt = splitCacheBoundary(prompt, label).stable;
+    const stableBudget = label.startsWith('main/') ? 4400 : 4700;
+    assert(stablePrompt.length <= stableBudget,
+        `${label} stable prompt exceeded the ${stableBudget}-character input budget (${stablePrompt.length})`);
     for (const rule of REQUIRED_NATURAL_KOREAN_RULES) {
         assert(stablePrompt.includes(rule), `${label} stable prefix is missing natural Korean rule: ${rule}`);
     }
@@ -156,30 +159,30 @@ function assertCommonKoreanPrompt(prompt, label) {
     assert(!stablePrompt.includes('입력이 짧거나 수동적이어도')
         && !stablePrompt.includes('짧거나 수동적인 입력에도'),
         `${label} duplicates turn-specific short-input guidance in the static scene block`);
-    assert(stablePrompt.includes('캐릭터는 사용자의 말과 행동에 답만 돌려주는 챗봇이 아닙니다.'),
+    assert(stablePrompt.includes('캐릭터는 답만 돌려주는 챗봇이 아니며'),
         `${label} still frames the character as purely reactive`);
-    assert(stablePrompt.includes('능동성은 매 답변에 억지 사건을 넣거나 정해진 수의 행동을 채우라는 뜻이 아닙니다.'),
+    assert(stablePrompt.includes('억지 사건이나 행동 할당량은 없으며'),
         `${label} living initiative can still become a rigid action quota`);
-    assert(stablePrompt.includes('사용자만 내릴 수 있는 중대한 선택을 대신 만들지는 않습니다.'),
+    assert(stablePrompt.includes('중대한 선택은 대신 정하지 않습니다.'),
         `${label} living initiative no longer preserves user-owned choices`);
-    assert(stablePrompt.includes('감정은 캐릭터다운 말투와 행동, 표정·호흡·몸의 긴장뿐 아니라 판단과 다음 선택까지 바꿉니다.'),
+    assert(stablePrompt.includes('말·행동·표정·호흡·판단·다음 선택과 여운으로 반영합니다.'),
         `${label} still allows emotional events to pass without changing behavior or choices`);
-    assert(stablePrompt.includes('과묵한 인물의 긴 침묵과 짧아진 말, 냉정한 인물에게 생긴 통제의 균열도 강한 감정입니다.'),
+    assert(stablePrompt.includes('과묵한 인물의 침묵이나 냉정한 인물의 통제 균열도 강한 감정입니다.'),
         `${label} emotional intensity no longer preserves reserved character voices`);
-    assert(stablePrompt.includes('매 답변을 감정의 절정으로 만들지는 않습니다.'),
+    assert(stablePrompt.includes('매 답변을 절정으로 만들지 않습니다.'),
         `${label} emotional-range rule can still force constant melodrama`);
-    assert(stablePrompt.includes('그 합의 안에서 연출하는 저항·강압적 말투·힘의 차이·전투·폭력은 장면 안의 연기로 받습니다.'),
+    assert(stablePrompt.includes('연출된 저항·강압·권력차·전투는 장면 안에서 이어 갑니다.'),
         `${label} consensual adult roleplay no longer preserves agreed in-scene resistance`);
-    assert(stablePrompt.includes('OOC 중단, 합의된 안전어, 명시적인 동의 철회, 의식 상실, 합의 범위를 벗어난 실제 위험은 우선 반영해 즉시 장면을 바꾸거나 멈춥니다.'),
+    assert(stablePrompt.includes('OOC 중단·안전어·명시적 동의 철회·의식 상실·합의 밖 실제 위험은 즉시 우선합니다.'),
         `${label} consensual adult roleplay no longer preserves real stop and safety signals`);
-    assert(stablePrompt.includes('모든 행동에 포괄적으로 동의했다고 여기지 않습니다.'),
+    assert(stablePrompt.includes('포괄 동의가 아닙니다.'),
         `${label} consensual adult roleplay can still become blanket consent`);
     assert(prompt.includes('[성인 장면의 목소리]'), `${label} is missing the conditional adult vocalization rule`);
-    assert(prompt.includes('몸이 통제를 놓는 순간에는 과장될 만큼 크고 거친 신음도 허용합니다.'),
+    assert(prompt.includes('몸이 통제를 놓으면 크고 거친 소리도 가능합니다.'),
         `${label} still suppresses strong character vocalization at high stimulation`);
-    assert(prompt.includes('성격·성향·주도권·수치심·현재 감정·자극 부위가 더 크게 좌우합니다.'),
+    assert(prompt.includes('성격·주도권·수치심·감정에 맞춰 크기와 형태를 고릅니다.'),
         `${label} does not let character identity control vocalization`);
-    assert(prompt.includes('같은 의성어를 기계적으로 되풀이하거나 답변마다 횟수와 단계를 채우지 않습니다.'),
+    assert(prompt.includes('같은 의성어나 횟수·단계 할당량을 반복하지 않습니다.'),
         `${label} can still impose stock sounds or a per-reply quota`);
     assert(!prompt.includes('[현재 진행 상황]') && !prompt.includes('; 턴='),
         `${label} still exposes a turn budget to the roleplay model`);

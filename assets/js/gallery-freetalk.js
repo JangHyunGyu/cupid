@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.55';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.56';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 const GalleryFreeTalkCore = window.CupidFreeTalkCore;
@@ -25,6 +25,9 @@ if (!GalleryFreeTalkCore) {
 }
 
 function buildGalleryThirdPersonAdultCameraRule(lang = 'ko') {
+    if (typeof window.buildCupidThirdPersonAdultCameraRule === 'function') {
+        return window.buildCupidThirdPersonAdultCameraRule(lang);
+    }
     const rules = {
         ko: `[3인칭 서술 카메라]
 모든 narration은 3인칭 시점입니다. 캐릭터는 이름이나 관계 호칭, 사용자는 저장된 이름이나 '상대·그 사람'처럼 장면에 맞는 3인칭 표현으로 가리킵니다. '너는·네가·너를·너의·당신은·당신이·당신을·당신의' 같은 2인칭 표현은 실제 발화인 dialogue 안에서만 쓸 수 있고 narration에는 쓰지 않습니다. narration은 캐릭터의 행동·신체 감각·욕망·내면 반응을 자유롭게 담고, 사용자의 말·행동·장면 맥락에서 사용자의 반응·감정·속마음을 자연스럽게 추론하거나 서술할 수 있습니다. 다만 사용자가 이번 입력에서 명확히 밝힌 상태·선택·동의·거절과 충돌시키지는 않습니다. 이미 성립한 성인끼리의 친밀 장면이 성행위로 들어가면 카메라는 몸을 피하지 않습니다. 지금 실제로 벌어지는 접촉과 몸의 움직임, 자세, 속도·압력·마찰, 젖음·열감·소리, 표정과 쾌감의 변화를 narration에서 구체적으로 보여주고, 성기·삽입·애액·정액·절정이 장면에 있다면 에둘러 지우거나 생략하지 않습니다. 실제 발화와 목소리로 난 소리만 dialogue에 둡니다.`,
@@ -296,6 +299,20 @@ class GalleryFreeTalk {
 
     /** 언어별 자연스러움/호칭 가드 */
     _getLanguageQualityGuard() {
+        if (this.lang === 'ko') {
+            return `**[한국어 원문체]**
+- 현재는 졸업 후이며, 전학생은 과거의 애칭·추억으로만 쓰고 편입생은 쓰지 않습니다.
+- 현대 한국 연인의 자연스러운 구어체로 쓰고, 번역투·상담원 말투·정리 문구·기계적 열거를 피합니다. 호칭과 말투는 일관되게 유지합니다.
+
+`;
+        }
+        if (this.lang === 'en') {
+            return `**[Language & Terminology Naturalness]**
+- This is post-graduation; transfer student/new kid is only an old nickname or memory, never current status. Never use exchange student or college transfer.
+- Use contemporary spoken English with contractions, natural rhythm, and consistent address; avoid repeated names, pet names, and translated prose.
+
+`;
+        }
         const guards = {
             ko: `**[한국어 원문체]**
 - 현재 시점은 졸업 이후입니다. 전학생은 과거의 별명이나 추억으로만 가끔 쓰세요. 대학 입학 전형을 떠올리게 하는 "편입생"은 쓰지 않습니다.
@@ -330,15 +347,9 @@ class GalleryFreeTalk {
     _getNativeAntiTranslationGuard() {
         if (this.lang === 'ko') {
             return `**[자연스러운 한국어 말투]**
-- 모든 segments[].text는 번역문이 아니라 처음부터 한국어로 쓴 문장처럼 읽혀야 합니다.
-- 사용자의 오타, 어색한 조사, 끊긴 문법, 불필요한 외국어를 흉내 내지 말고 뜻만 받아 캐릭터 말투로 답하세요.
-- 대사와 지문은 장면 속 사람이 바로 말하고 움직이는 듯 자연스럽게 이어가며, 뜻을 설명하거나 새 비유를 덧붙이지 마세요.
-- "이해했어", "물론이지", "무엇을 도와줄까"처럼 도우미가 할 법한 확인으로 시작하지 말고 연인의 즉각적인 반응부터 보여주세요.
-- 방언, 호칭, 높임말과 거리감은 캐릭터와 장면에 맞게 유지하고 JSON 키와 고정값은 바꾸지 마세요.
-- 한국어에서 문맥상 분명한 주어·대명사·호칭은 자연스럽게 생략하세요. 사용자 이름이나 같은 호칭을 문장마다 되풀이하지 마세요.
-- 사용자의 말을 안내문처럼 요약하거나 해설한 뒤 답을 시작하지 마세요. 장면에 자연스러운 되묻기·인용·반복은 허용하되, 캐릭터의 즉각적인 말·행동·감각부터 이어가세요.
-- 명사화·피동·이중 완곡을 습관적으로 늘이지 말고, 뜻이 분명하면 능동 동사로 바로 연결하세요.
-- 비유·감탄·말줄임표·의성어는 캐릭터와 순간에 맞을 때만 쓰고, 모든 캐릭터가 공유하는 말버릇으로 만들지 마세요.
+- segments[].text는 처음부터 한국어로 쓴 듯 자연스럽게 씁니다. 오타나 어색한 문법은 뜻만 받고 JSON 키는 유지합니다.
+- 요약·해설·도우미식 확인 대신 캐릭터의 즉각적인 말·행동·감각으로 시작합니다.
+- 문맥상 분명한 주어·호칭은 생략하고, 명사화·피동·반복을 줄입니다. 비유·감탄·말줄임표·의성어는 인물과 순간에 맞을 때만 쓹니다.
 
 `;
         }
@@ -2392,11 +2403,11 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const affinityRelationshipGuard = isEn
             ? `Established romance and affinity:
 - They are already post-PERFECT-ending adult lovers at every score. Never rewrite them as strangers, new acquaintances, an unconfessed crush, or automatically broken up.
-- Current affinity changes only the emotional temperature inside that established relationship: -100 to -70 in crisis, -69 to -40 deeply hurt/distant, -39 to -10 hurt/guarded, -9 to 9 conflicted/fragile, 10 to 39 cautious but affectionate, 40 to 69 comfortable/familiar, 70 to 89 close/trusting, 90 to 100 deeply bonded/intimate. Express the current band through this character's own speech, initiative, touch, restraint, refusal, and emotional openness without mechanically naming the score.
+- Current affinity changes only the emotional temperature described in the dynamic relationship state. Express it through character-specific speech, initiative, touch, restraint, refusal, and openness without naming the score.
 - ${affinityChangeGuidance}`
             : `확정된 연인 관계와 호감도:
 - 두 사람은 점수와 무관하게 이미 PERFECT 엔딩 이후의 성인 연인입니다. 낯선 사이, 이제 막 알게 된 사이, 고백 전 짝사랑으로 되돌리거나 자동으로 결별시키지 마세요.
-- 현재 호감도는 확정된 연인 관계 안의 감정 온도만 바꿉니다. -100~-70은 관계 위기, -69~-40은 깊이 상처받고 멀어진 상태, -39~-10은 상처받고 경계하는 상태, -9~9는 애정과 갈등이 팽팽한 상태, 10~39는 조심스럽지만 애정이 남은 상태, 40~69는 편안하고 익숙한 상태, 70~89는 가깝고 신뢰하는 상태, 90~100은 깊이 결속되고 친밀한 상태입니다. 점수를 입 밖에 내지 말고, 해당 단계가 이 캐릭터다운 말투·주도성·스킨십·거리 두기·거절·감정 개방으로 자연스럽게 드러나게 하세요.
+- 현재 호감도는 아래 동적 관계 상태에 적힌 감정 온도만 바꿉니다. 점수를 말하지 말고 캐릭터다운 말투·주도성·스킨십·거리·거절·감정 개방으로 드러냅니다.
 - ${affinityChangeGuidance}`;
         const compactGalleryState = isEn
             ? `State: user=${playerName || 'the user'}; current_affinity=${currentAffinity}/100; relationship=${relationshipState.en}`
