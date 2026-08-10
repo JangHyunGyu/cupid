@@ -28,7 +28,7 @@ function jsonResponse(status, body) {
     };
 }
 
-test('Cupid tools use Gemma 4 31B through OpenInference without fallback', async () => {
+test('Cupid tools use Gemma 4 31B text through Venice without fallback', async () => {
     const calls = [];
     const text = await callDeepSeek('hello', {
         openRouterApiKey: 'or-test',
