@@ -1952,29 +1952,25 @@ try {
         }
     }
     const thirdPersonAdultCameraSignals = [
-        '모든 narration은 3인칭 시점입니다',
-        '성기·삽입·애액·정액·절정이 장면에 있다면',
-        'All narration uses third person',
-        'genitals, penetration, arousal fluid, semen, or climax',
-        '캐릭터의 행동·신체 감각·욕망·내면 반응',
-        "character's action, physical sensation, desire, and inner response",
-        "infer or narrate the user's response, emotion, or inner thought"
+        'function buildCupidThirdPersonAdultCameraRule(',
+        'narration은 모두 3인칭으로 쓰고',
+        '성기·삽입·액체·절정을 에둘러 지우지 않습니다',
+        'Use third person for all narration',
+        'genitals, penetration, fluids, and climax concretely',
+        'Usa tercera persona en narration y segunda persona solo en dialogue',
+        'narration は三人称、二人称は実際の dialogue だけ',
+        'Employez la troisième personne en narration et la deuxième seulement en dialogue',
+        'narration steht in der dritten Person; zweite Person nur in dialogue',
+        'Use terceira pessoa em narration e segunda só em dialogue'
     ];
+    if (thirdPersonAdultCameraSignals.some(signal => !promptsContent.includes(signal))) {
+        errors.push('[FREETALK_PROMPT] 공용 7언어 3인칭 성인 친밀 장면 카메라 계약 누락');
+    }
+    if (!gftContent.includes('window.buildCupidThirdPersonAdultCameraRule(lang)')
+        || !gftContent.includes('buildGalleryThirdPersonAdultCameraRule(this.lang)')) {
+        errors.push('[FREETALK_PROMPT] gallery가 공용 3인칭 카메라 계약을 사용하지 않음');
+    }
     for (const [label, source] of [['main', promptsContent], ['gallery', gftContent]]) {
-        if (thirdPersonAdultCameraSignals.some(signal => !source.includes(signal))) {
-            errors.push('[FREETALK_PROMPT] ' + label + ' 3인칭 성인 친밀 장면 카메라 계약 누락');
-        }
-        const localizedThirdPersonSignals = [
-            '너는·네가·너를·너의·당신은·당신이·당신을·당신의',
-            '«Tú», «te», «ti», «tu/tus» y «usted»',
-            '「あなた・君・お前」',
-            'Les pronoms et déterminants de deuxième personne (« tu », « te », « toi », « ton/ta/tes », « vous », « votre »)',
-            '„Du“, „dir“, „dich“, „dein“, „Sie“ und „Ihr“',
-            '“Você”, “te”, “ti”, “seu/sua/seus/suas”'
-        ];
-        if (localizedThirdPersonSignals.some(signal => !source.includes(signal))) {
-            errors.push('[FREETALK_PROMPT] ' + label + ' 언어별 narration 2인칭 금지 계약 누락');
-        }
         const outputContractSource = source + '\n' + promptsContent;
         if (!outputContractSource.includes('segments must be non-empty')
             || !outputContractSource.includes('segments는 비어 있지 않아야 합니다')
@@ -2005,7 +2001,7 @@ try {
     }
     if (!promptsContent.includes('function buildCupidLivingInitiativeRule(')
         || !promptsContent.includes('[살아 있는 인물의 주도성]')
-        || !promptsContent.includes('능동성은 매 답변에 억지 사건을 넣거나 정해진 수의 행동을 채우라는 뜻이 아닙니다')
+        || !promptsContent.includes('사건·행동 할당량 없이')
         || !promptsContent.includes('function buildCupidLowInformationContinuationRule(')
         || !promptsContent.includes('[이번 입력은 짧은 계속 신호]')
         || !promptsContent.includes('이 짧은 입력 자체를 새로운 동의로 해석하지 않습니다')
