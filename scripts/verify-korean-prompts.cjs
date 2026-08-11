@@ -154,8 +154,17 @@ function assertCommonKoreanPrompt(prompt, label) {
     assert(stablePrompt.includes('[살아 있는 인물의 주도성]'), `${label} stable prefix is missing living initiative`);
     assert((stablePrompt.match(/\[살아 있는 인물의 주도성\]/g) || []).length === 1,
         `${label} duplicates living initiative in the stable prefix`);
-    assert(stablePrompt.includes('장면 사실:') && stablePrompt.includes('시점:'),
-        `${label} does not separate scene facts from perspective`);
+    const sceneInputLabel = label.startsWith('main/') ? '장면 입력:' : '장면 사실:';
+    assert(stablePrompt.includes(sceneInputLabel) && stablePrompt.includes('시점:'),
+        `${label} does not separate scene input from perspective`);
+    if (label.startsWith('main/')) {
+        assert(stablePrompt.includes('자동 사실이 아닙니다')
+            && stablePrompt.includes('행동·주장은 시도로 보고')
+            && stablePrompt.includes('타인 상태·감정·동의·완료 결과는 확정하지 않습니다'),
+        `${label} still turns the user's latest message into automatic objective fact`);
+        assert(!stablePrompt.includes('끝난 사건은 되돌리지 않고 현재 장면으로 받습니다'),
+        `${label} still contains the removed completed-event canon rule`);
+    }
     assert(!stablePrompt.includes('입력이 짧거나 수동적이어도')
         && !stablePrompt.includes('짧거나 수동적인 입력에도'),
         `${label} duplicates turn-specific short-input guidance in the static scene block`);
@@ -483,9 +492,8 @@ function verifyMemories(context) {
 
 function verifyLatestUserCanon(context) {
     const source = JSON.stringify([{ role: 'user', content: '내 손을 탁자 위에 올려 둔다.' }]);
-    const cupid = vm.runInContext(`buildCupidLatestUserCanonBlock(${source}, 'ko', '')`, context);
     const gallery = vm.runInContext(`buildGalleryLatestUserCanonBlock(${source}, 'ko', '')`, context);
-    for (const [label, block] of [['main', cupid], ['gallery', gallery]]) {
+    for (const [label, block] of [['gallery', gallery]]) {
         assert(block.includes('[이번 턴 사용자 입력]'), `${label} canon block has the old heading`);
         assert(block.includes('최신 사용자 입력:'), `${label} canon block has the old user label`);
         assert(block.includes('이전 설정, 캐릭터 카드, 저장 요약, 장면 상태와 충돌해도 같습니다'),
@@ -510,6 +518,8 @@ function verifyLatestUserCanon(context) {
         'affinity guidance still treats score as consent');
     assert(negativeAffinity.includes('affinity를 올리지 말고 유지하거나 낮추세요'),
         'negative affinity still rewards an unwanted physical approach');
+    assert(negativeAffinity.includes('성립 여부와 결과는 현재 장면, 실제 가능성, 캐릭터의 인지와 경계를 함께 판단합니다'),
+        'affinity guidance still treats completed user wording as automatic fact');
 }
 
 function verifyWiringAndScenePrompts() {
@@ -524,6 +534,9 @@ function verifyWiringAndScenePrompts() {
         'chat history does not read the canonical character key');
     assert(freeTalkSource.includes('this.stateManager.setChatMemory(charKey, requestHistory);'),
         'chat history does not save the canonical character key');
+    assert(!freeTalkSource.includes('buildCupidLatestUserCanonBlock')
+        && !freeTalkSource.includes('latestUserCanon'),
+        'game free talk still appends the gallery-style latest-user canon block');
     assert(freeTalkSource.includes('[scene.personality, scene.extra_guideline].filter(Boolean).join("\\n")'),
         'scene personality is not passed into the system prompt');
     assert(freeTalkSource.includes('scene.isRemote === true || remoteKeywords.some'),

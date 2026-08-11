@@ -326,9 +326,8 @@ for (const lang of languages) {
             '[ja/Nurse] main personality is missing the post-graduation continuity guard');
     }
     const canonSource = JSON.stringify([{ role: 'user', content: '*I kissed her.*' }]);
-    const mainCanonBlock = vm.runInContext(`buildCupidLatestUserCanonBlock(${canonSource}, '${lang}', '')`, context);
     const galleryCanonBlock = vm.runInContext(`buildGalleryLatestUserCanonBlock(${canonSource}, '${lang}', '')`, context);
-    for (const [label, block] of [['main', mainCanonBlock], ['gallery', galleryCanonBlock]]) {
+    for (const [label, block] of [['gallery', galleryCanonBlock]]) {
         assert(block.includes('including sexual contact, already happened in the scene'),
             `[${lang}/${label}] canon block can still erase a completed sexual action`);
         assert(block.includes("This does not decide the character's consent or reciprocation"),
@@ -391,8 +390,14 @@ for (const lang of languages) {
             `[${lang}/${char}] main prompt is missing living initiative`);
         assert((systemPrompt.match(/\[Living Initiative\]|\[Iniciativa de una persona viva\]|\[生きた人物としての主体性\]|\[Initiative d’un personnage vivant\]|\[Eigeninitiative einer lebendigen Figur\]|\[Iniciativa de uma pessoa viva\]/g) || []).length === 1,
             `[${lang}/${char}] main prompt duplicates living initiative`);
-        assert(systemPrompt.includes('Scene facts:') && systemPrompt.includes('Perspective:'),
-            `[${lang}/${char}] main prompt does not separate scene facts from perspective`);
+        assert(systemPrompt.includes('Scene input:') && systemPrompt.includes('Perspective:'),
+            `[${lang}/${char}] main prompt does not separate scene input from perspective`);
+        assert(systemPrompt.includes('not automatic fact')
+            && systemPrompt.includes('Treat user action or claims as attempts')
+            && systemPrompt.includes("others' state, feelings, consent, or completed outcomes"),
+            `[${lang}/${char}] main prompt still turns the user's message into automatic objective fact`);
+        assert(!systemPrompt.includes('completed outcomes as current without reversal'),
+            `[${lang}/${char}] main prompt still contains the removed completed-event canon rule`);
         assert(!systemPrompt.includes('Even when the input is brief or passive')
             && !systemPrompt.includes('On brief or passive input'),
             `[${lang}/${char}] main prompt duplicates turn-specific short-input guidance`);
@@ -802,6 +807,10 @@ for (const lang of languages) {
     `group/${lang} lost character-to-character dialogue or allows it to displace the protagonist confrontation`);
     assert(parts.stable.includes('Allowed expressions:'),
         `group/${lang} does not expose each participant expression asset contract`);
+    assert(parts.stable.includes('not automatic objective fact')
+        && parts.stable.includes('Treat feasible user-owned action as an attempt')
+        && parts.stable.includes("another character's state, feelings, consent, or completed outcomes"),
+        `group/${lang} still turns the protagonist's latest message into automatic objective fact`);
     assert(parts.stable.includes('small succulents')
         && parts.stable.includes('rhythm games')
         && parts.stable.includes('Do not recite both characters’ preferences as shared dialogue material'),

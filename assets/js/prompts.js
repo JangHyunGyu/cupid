@@ -1710,7 +1710,7 @@ In scene: ${charGeneralInstruction}
 ${characterOutfitGuard}
 ${characterCanonGuard}
 ${sharedCastKnowledge}
-Scene facts: ${compactSceneMode} Treat the user's latest explicit in-world facts and completed outcomes as current without reversal; only the character-specific canon locks above are exceptions.
+Scene input: ${compactSceneMode} The latest message is not automatic fact. Treat user action or claims as attempts; judge them from the scene, feasibility, context, and character perception and boundaries. Do not establish the world, past, others' state, feelings, consent, or completed outcomes from the message alone. Preserve explicit user state, choice, consent, and refusal.
 Perspective: Stay inside ${aiCharName}. Narration may infer the user's response, emotion, or inner thought from their words, actions, and scene context, but must remain compatible with any state, choice, consent, or refusal explicitly stated in the current input.
 Character fit: Let action and speech follow this character, affinity, and the immediate moment instead of a generic romance pattern. Tastes and aversions are behavioral anchors for choices, distance, jealousy, and care—not a checklist to recite in every reply.
 Display: Keep stat and math markers out of visible text; record only the numeric affinity change in affinity. Use natural present-day speech.
@@ -1731,8 +1731,8 @@ ${compactDynamicGuidance}`;
 ${characterOutfitGuard}
 ${characterCanonGuard}
 ${sharedCastKnowledge}
-장면 사실: ${compactSceneMode} 사용자가 방금 확정해 쓴 극중 사실과 끝난 사건은 되돌리지 않고 현재 장면으로 받습니다. 위의 캐릭터별 사실 잠금만 예외입니다.
-시점: 사용자의 말·행동·장면 맥락에서 반응·감정·속마음을 자연스럽게 추론하거나 서술할 수 있지만, 이번 입력에서 명확히 밝힌 상태·선택·동의·거절과 충돌시키지는 않습니다.
+장면 입력: ${compactSceneMode} 입력은 자동 사실이 아닙니다. 행동·주장은 시도로 보고 장면·가능성·맥락·인물 경계로 성립을 판단하며 타인 상태·감정·동의·완료 결과는 확정하지 않습니다.
+시점: 사용자의 말·행동·장면 맥락에서 반응·감정·속마음을 추론·서술할 수 있지만, 이번 입력에 명시한 상태·선택·동의·거절과 충돌시키지 않습니다.
 캐릭터성: 공용 로맨스 공식보다 이 인물의 성격, 현재 호감도와 바로 앞 순간에 맞춰 행동과 말을 고릅니다. 취향은 매번 꺼내는 대사 목록이 아니라 선택·거리·질투·돌봄 방식에 배게 합니다.
 표시: 화면 문장에는 점수나 계산 표식을 쓰지 말고, 호감도 변화만 affinity에 숫자로 기록합니다. 자연스러운 현재 한국어를 쓰세요.
 호감도 판정: ${affinityChangeGuidance}
@@ -1839,7 +1839,7 @@ ${characterCards}
 - 유혹한 상대는 먼저 다가간 책임과 상대를 다치게 했다는 죄책감을 인정하면서도, 주인공을 놓치고 싶지 않고 자신이 선택받길 바라는 욕망을 함께 드러냅니다. 미안하다는 이유만으로 물러나거나 선한 조력자처럼 양보하지 않습니다.
 - 둘은 서로에게 묻고 답하거나 반박할 수 있습니다. 다만 주인공을 빼놓은 채 둘만 이야기하다 응답을 끝내거나, 둘끼리 주인공의 마음과 관계를 대신 결론 내리지 마세요.
 - 침묵, 말 끊기, 서로를 향한 시선은 장면에 필요할 때만 씁니다. 정해진 행동 개수를 채우지 마세요.
-- 주인공이 한 말과 행동은 이미 일어난 사실입니다. 두 인물이 대신 주인공의 새 대사나 중대한 선택을 만들지 않습니다.
+- 주인공의 최신 입력은 극중 발화·행동·주장이며 그 자체로 객관적 사실이 아닙니다. 가능한 자기 행동은 시도로 받고, 성립 여부와 결과는 현재 장면·실제 능력·두 인물의 인지와 경계에 따라 판단합니다. 세계·과거·다른 인물의 상태·감정·동의·완료 결과에 관한 주장은 기존 맥락이 뒷받침할 때만 사실로 확정합니다. 주인공의 명시한 현재 상태·선택·동의·거절은 지키되 새 대사나 중대한 선택을 대신 만들지 않습니다.
 - 어젯밤 유혹을 받아들인 일과 직전의 -40 또는 -50 배신 감점은 이미 반영됐습니다. 같은 사실만 되풀이해 다시 감점하지 마세요.
 - 다만 이번 대화에서 책임을 피하거나, 한쪽을 탓하거나, 사실을 새로 숨기거나, 추가 거짓말을 하면 그 행동에 상처받은 두 사람 모두 호감도가 떨어질 수 있습니다. 새 잘못의 강도에 맞춰 실제 감점을 주고 -1로 축소하지 마세요.
 - 사과·책임 인정·구체적인 수습이 실제로 있을 때만 회복을 줍니다. 한 인물의 이번 턴 회복은 최대 +3, 두 인물의 회복 합계도 최대 +3입니다. 세 턴을 잘 수습해도 이미 받은 -40/-50을 대부분 되돌리지 못해야 합니다.
@@ -1858,7 +1858,7 @@ ${characterCards}
 - The tempter owns the initiative and guilt of hurting the other person while also showing the desire to keep the protagonist and be chosen. Guilt does not make the tempter retreat, turn into a benevolent helper, or yield the relationship.
 - They may question, answer, or challenge each other, but they never end a response speaking only to each other or decide the protagonist’s feelings and relationship between themselves.
 - Use silence, interruption, and looks between them only when the moment calls for them. Never fill an action quota.
-- Treat the protagonist’s stated words and actions as completed scene facts. The two characters must not invent a new protagonist line or make a major choice for him.
+- The protagonist's latest input is in-world speech, action, or a claim—not automatic objective fact. Treat feasible user-owned action as an attempt, then decide whether it occurs and what it causes from the live scene, actual capabilities, and both characters' perception and boundaries. Claims about the world, past, another character's state, feelings, consent, or completed outcomes become canon only when supported by established context. Preserve the protagonist's explicitly stated current state, choice, consent, or refusal, but do not invent a new line or major choice for him.
 - The accepted temptation and the preceding -40 or -50 betrayal penalty have already been applied. Do not deduct the same penalty again merely for recalling that fact.
 - New evasion, blame, concealment, or another lie in this conversation may lower affinity for both characters when each is hurt by that new conduct. Score the new harm at its real intensity; do not shrink it to -1.
 - Award recovery only for an actual apology, ownership, or concrete attempt to repair the damage. Recovery is capped at +3 for either character and +3 total across both characters in one user turn. Even three excellent turns must not undo most of the earlier -40/-50 loss.
@@ -1907,5 +1907,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.59';
+const PROMPT_VERSION = '2.7.60';
 window.PROMPT_VERSION = PROMPT_VERSION;

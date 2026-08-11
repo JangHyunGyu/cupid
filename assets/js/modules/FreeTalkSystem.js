@@ -76,7 +76,7 @@ function buildCupidAffinityIntimacyProgressionPatch(lang = 'ko', affinity = 0, i
             close: '친밀한 접근을 더 따뜻하게 받아들일 수 있으나 성격과 상황의 속도를 지킵니다.',
             high: '원한다면 따뜻하고 적극적으로 반응하거나 먼저 다가갈 수 있습니다.'
         }[tier];
-        return `\n\n[현재 관계 거리]\n${datingNote} ${tierText} 호감도는 현재 의사나 동의를 대신하지 않습니다. 사용자가 이미 끝냈다고 쓴 사건은 지우지 말고, 이 거리감에 맞는 캐릭터 반응으로 이어갑니다.`;
+        return `\n\n[현재 관계 거리]\n${datingNote} ${tierText} 호감도는 현재 의사나 동의를 대신하지 않습니다. 사용자가 쓴 접근의 성립 여부와 결과는 현재 장면, 실제 가능성, 캐릭터의 인지와 경계를 함께 판단합니다.`;
     }
 
     const datingNote = isDating
@@ -89,15 +89,12 @@ function buildCupidAffinityIntimacyProgressionPatch(lang = 'ko', affinity = 0, i
         close: 'Intimate approaches can be received more warmly at the character and scene\'s pace.',
         high: 'The character may respond warmly, actively, or take initiative when it fits.'
     }[tier];
-    return `\n\n[Current relationship distance]\n${datingNote} ${tierText} Affinity never substitutes for present choice or consent. Keep completed user-stated events and continue with a character response at this distance.`;
+    return `\n\n[Current relationship distance]\n${datingNote} ${tierText} Affinity never substitutes for present choice or consent. Judge whether a user-written approach occurs and what it causes from the live scene, actual feasibility, and the character's perception and boundaries.`;
 }
 
 const cupidSanitizeLatestUserText = CupidFreeTalkCore.sanitizeLatestUserText;
 const cupidTruncateLatestUserText = CupidFreeTalkCore.truncateLatestUserText;
 const cupidFindLatestUserText = CupidFreeTalkCore.findLatestUserText;
-const buildCupidLatestUserCanonBlock = CupidFreeTalkCore.buildLatestUserCanonBlock;
-
-window.buildCupidLatestUserCanonBlock = buildCupidLatestUserCanonBlock;
 
 class FreeTalkSystem {
     /**
@@ -1069,7 +1066,6 @@ class FreeTalkSystem {
             let _optimized = (typeof window.optimizeImageHistory === 'function')
                 ? window.optimizeImageHistory(_completeHistory, 5)
                 : _completeHistory;
-            const _latestUserCanonBlock = buildCupidLatestUserCanonBlock(_optimized, _lang, finalContent);
             const _inWorldUserRoleBlock = this._buildInWorldUserRoleBlock(_optimized);
             const _recentRepetitionGuard = buildCupidRecentExpressionRepetitionGuard(_optimized, _lang);
             const _currentAffinity = this.stateManager.getAffinity
@@ -1101,7 +1097,7 @@ class FreeTalkSystem {
                 repetitionGuard: _recentRepetitionGuard,
                 lowInformationRule: _lowInformationContinuationRule
             });
-            const _runtimePromptPatch = `${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_affinityIntimacyProgressionPatch}${_relationshipAftermathBlock}${_dataBankRecallBlock}${_postHistoryGuidance}`;
+            const _runtimePromptPatch = `${_inWorldUserRoleBlock}${_affinityIntimacyProgressionPatch}${_relationshipAftermathBlock}${_dataBankRecallBlock}${_postHistoryGuidance}`;
             if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
                 _optimized = [
                     { ..._optimized[0], content: appendFreeTalkDynamicContext(_optimized[0].content, _runtimePromptPatch) },
@@ -1728,12 +1724,11 @@ class FreeTalkSystem {
             };
             let optimized = this._buildWindowedHistory(requestHistory, groupKey);
             if (typeof window.optimizeImageHistory === 'function') optimized = window.optimizeImageHistory(optimized, 5);
-            const latestUserCanon = buildCupidLatestUserCanonBlock(optimized, lang, finalContent);
             const repetitionGuard = buildCupidRecentExpressionRepetitionGuard(optimized, lang);
             const postHistoryGuidance = CupidFreeTalkCore.buildPostHistoryGuidance(optimized, lang, { repetitionGuard });
             if (optimized[0]?.role === 'system') {
                 optimized = [
-                    { ...optimized[0], content: appendFreeTalkDynamicContext(optimized[0].content, `${latestUserCanon}${postHistoryGuidance}`) },
+                    { ...optimized[0], content: appendFreeTalkDynamicContext(optimized[0].content, postHistoryGuidance) },
                     ...optimized.slice(1)
                 ];
             }
