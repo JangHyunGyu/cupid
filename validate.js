@@ -1823,29 +1823,46 @@ try {
     }
 } catch (e) {}
 
-// FT-4B: 최신 유저 사실은 캐릭터별 잠금만 제외하고 항상 정사 우선
+// FT-4B: 게임 입력은 자동 사실화하지 않고, 갤러리의 기존 독립 계약만 유지
 try {
     const promptsContent = fs.readFileSync(path.join(__dirname, 'assets/js/prompts.js'), 'utf8');
     const ftSysContent = fs.readFileSync(path.join(__dirname, 'assets/js/modules/FreeTalkSystem.js'), 'utf8');
     const gftContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-freetalk.js'), 'utf8');
     const ftCoreContent = fs.readFileSync(path.join(__dirname, 'assets/js/freetalk-core.js'), 'utf8');
-    const mainRuntimeContent = ftSysContent + '\n' + ftCoreContent;
     const galleryRuntimeContent = gftContent + '\n' + ftCoreContent;
     const requiredKo = '이전 설정, 캐릭터 카드, 저장 요약, 장면 상태와 충돌해도 같습니다';
     const requiredEn = 'even when it conflicts with prior setup, the character card, saved summary, or scene state';
-    if (!mainRuntimeContent.includes(requiredKo) || !galleryRuntimeContent.includes(requiredKo)) {
-        errors.push('[FREETALK_CANON] 게임/갤러리 최신 유저 사실화 규칙이 동일하지 않음');
+    if (!galleryRuntimeContent.includes(requiredKo) || !galleryRuntimeContent.includes(requiredEn)) {
+        errors.push('[FREETALK_CANON] 갤러리의 기존 최신 유저 사실화 계약 누락');
     }
-    if (!mainRuntimeContent.includes(requiredEn) || !galleryRuntimeContent.includes(requiredEn)) {
-        errors.push('[FREETALK_CANON] 영문 최신 유저 사실화 규칙이 동일하지 않음');
+    if (ftSysContent.includes('buildCupidLatestUserCanonBlock')
+        || ftSysContent.includes('latestUserCanon')
+        || ftSysContent.includes('already performed by the user side')
+        || ftSysContent.includes('이미 일어난 사용자 쪽 장면으로 받습니다')) {
+        errors.push('[FREETALK_CANON] 게임 프리토킹이 최신 유저 입력을 다시 자동 사실화함');
     }
-    const staticCanonLock = '위의 캐릭터별 사실 잠금만 예외입니다';
-    if (!promptsContent.includes(staticCanonLock) || !gftContent.includes(staticCanonLock)) {
-        errors.push('[FREETALK_CANON] 정적 프롬프트의 유일 예외 규칙 누락');
+    const mainInputSignals = [
+        '입력은 자동 사실이 아닙니다',
+        '행동·주장은 시도로 보고',
+        '타인 상태·감정·동의·완료 결과는 확정하지 않습니다',
+        'The latest message is not automatic fact',
+        'Treat user action or claims as attempts',
+        "others' state, feelings, consent, or completed outcomes"
+    ];
+    if (mainInputSignals.some(signal => !promptsContent.includes(signal))) {
+        errors.push('[FREETALK_CANON] 게임 프리토킹의 유저 입력 비사실화 계약 누락');
+    }
+    if (promptsContent.includes('끝난 사건은 되돌리지 않고 현재 장면으로 받습니다')
+        || promptsContent.includes('completed outcomes as current without reversal')) {
+        errors.push('[FREETALK_CANON] 게임 정적 프롬프트에 제거한 완료 사건 사실화 규칙이 남아 있음');
+    }
+    const galleryStaticCanonLock = '위의 캐릭터별 사실 잠금만 예외입니다';
+    if (!gftContent.includes(galleryStaticCanonLock)) {
+        errors.push('[FREETALK_CANON] 갤러리 정적 프롬프트의 기존 사실 잠금 예외 누락');
     }
     const ownershipKo = '"내/제 손·입술·손끝"은 사용자 캐릭터의 몸입니다';
-    if (!mainRuntimeContent.includes(ownershipKo) || !galleryRuntimeContent.includes(ownershipKo)) {
-        errors.push('[FREETALK_CANON] 게임/갤러리 사용자 신체 소유 주체 규칙 누락');
+    if (!galleryRuntimeContent.includes(ownershipKo)) {
+        errors.push('[FREETALK_CANON] 갤러리 사용자 신체 소유 주체 규칙 누락');
     }
     const structuralOutputKo = '허용 type: narration, dialogue.';
     if (!promptsContent.includes(structuralOutputKo)
@@ -1905,8 +1922,8 @@ try {
     const activePromptSources = [promptsContent, ftCoreContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
-    if (promptVersion !== '2.7.59') {
-        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.59가 아님: ' + promptVersion);
+    if (promptVersion !== '2.7.60') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.60이 아님: ' + promptVersion);
     }
     if (galleryPromptVersion !== '2.7.57') {
         errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.57이 아님: ' + galleryPromptVersion);
@@ -1946,10 +1963,8 @@ try {
         'including sexual contact, already happened in the scene',
         "This does not decide the character's consent or reciprocation"
     ];
-    for (const source of [ftSysContent + ftCoreContent, gftContent + ftCoreContent]) {
-        if (completedActionCanonSignals.some(signal => !source.includes(signal))) {
-            errors.push('[FREETALK_PROMPT] 완료형 성적 행동의 사실성과 캐릭터 동의가 분리되어 있지 않음');
-        }
+    if (completedActionCanonSignals.some(signal => !(gftContent + ftCoreContent).includes(signal))) {
+        errors.push('[FREETALK_PROMPT] 갤러리 완료형 성적 행동의 사실성과 캐릭터 동의가 분리되어 있지 않음');
     }
     const thirdPersonAdultCameraSignals = [
         'function buildCupidThirdPersonAdultCameraRule(',
@@ -1979,15 +1994,18 @@ try {
             errors.push('[FREETALK_PROMPT] ' + label + ' 빈 구조 방지 계약 또는 전역 문구 반복 금지 제거 상태 불일치');
         }
     }
-    for (const [label, source] of [['main runtime', ftSysContent + ftCoreContent], ['gallery runtime', gftContent + ftCoreContent]]) {
+    for (const [label, source] of [['main runtime', promptsContent], ['gallery runtime', gftContent + ftCoreContent]]) {
         if (!source.includes('반응·감정·속마음을 자연스럽게 추론하거나 서술')
             || !source.includes("infer or narrate the user's response, emotion, or inner thought")) {
             errors.push('[FREETALK_PROMPT] ' + label + ' 사용자 맥락 추론 유연화 계약 누락');
         }
     }
-    for (const [label, source] of [['main', promptsContent], ['gallery', gftContent]]) {
-        if (!source.includes('Scene facts:')
-            || !source.includes('장면 사실:')
+    for (const [label, source, sceneEn, sceneKo] of [
+        ['main', promptsContent, 'Scene input:', '장면 입력:'],
+        ['gallery', gftContent, 'Scene facts:', '장면 사실:']
+    ]) {
+        if (!source.includes(sceneEn)
+            || !source.includes(sceneKo)
             || !source.includes('Perspective:')
             || !source.includes('시점:')) {
             errors.push('[FREETALK_PROMPT] ' + label + ' 장면 사실·시점 구획 누락');
