@@ -1988,10 +1988,10 @@ class FreeTalkSystem {
             ).toLowerCase();
 
             if (lang.startsWith('ko')) {
-                return `\n\n[사용자 배역]\n사용자 캐릭터는 "${roleName}"입니다. ${roleName} 이름표로 적힌 말·행동·침묵은 이미 일어난 사용자 쪽 장면으로 받습니다. 그 맥락에서 ${roleName}의 자연스러운 반응·감정·속마음을 추론해 서술할 수 있지만, 사용자가 명시한 상태·선택·동의·거절과 충돌시키지는 마세요.`;
+                return `\n\n[사용자 배역]\n사용자 캐릭터는 "${roleName}"입니다. ${roleName} 이름표는 사용자 쪽 입력의 주체만 나타내며 내용의 성립이나 결과를 확정하지 않습니다. 행동·침묵은 시도로 보고 현재 장면과 인물의 인지·경계에 따라 반응하되, 사용자가 명시한 상태·선택·동의·거절과 충돌시키지는 마세요.`;
             }
 
-            return `\n\n[User character]\nThe user character is "${roleName}". Treat lines, actions, and silences labeled ${roleName} as already performed by the user side. You may infer and narrate a natural response, emotion, or inner thought for ${roleName} from that context, but keep it compatible with any state, choice, consent, or refusal the user explicitly states.`;
+            return `\n\n[User character]\nThe user character is "${roleName}". A ${roleName} label identifies only the user-side speaker; it does not establish that the content occurs or causes its claimed result. Treat actions and silences as attempts, respond from the live scene and character perception and boundaries, and preserve any user-stated state, choice, consent, or refusal.`;
         }
 
         return '';
