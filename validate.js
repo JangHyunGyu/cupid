@@ -1994,9 +1994,11 @@ try {
             errors.push('[FREETALK_PROMPT] ' + label + ' 빈 구조 방지 계약 또는 전역 문구 반복 금지 제거 상태 불일치');
         }
     }
-    for (const [label, source] of [['main runtime', promptsContent], ['gallery runtime', gftContent + ftCoreContent]]) {
-        if (!source.includes('반응·감정·속마음을 자연스럽게 추론하거나 서술')
-            || !source.includes("infer or narrate the user's response, emotion, or inner thought")) {
+    for (const [label, source, inferenceKo, inferenceEn] of [
+        ['main runtime', promptsContent, '반응·감정·속마음을 추론·서술', "infer the user's response, emotion, or inner thought"],
+        ['gallery runtime', gftContent + ftCoreContent, '반응·감정·속마음을 자연스럽게 추론하거나 서술', "infer or narrate the user's response, emotion, or inner thought"]
+    ]) {
+        if (!source.includes(inferenceKo) || !source.includes(inferenceEn)) {
             errors.push('[FREETALK_PROMPT] ' + label + ' 사용자 맥락 추론 유연화 계약 누락');
         }
     }
