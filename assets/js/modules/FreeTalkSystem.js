@@ -1387,7 +1387,8 @@ class FreeTalkSystem {
                         ) ?? this.stateManager.currentDay,
                         affinityChange: affinityResult?.change,
                         affinityCurrent: affinityResult?.value,
-                        assistantRenderReceipt
+                        assistantRenderReceipt,
+                        responseMetadata: data
                     });
                 }
             }
@@ -1841,7 +1842,8 @@ class FreeTalkSystem {
                     sessionId: requestSceneId || '',
                     turnId: lastTurnMeta?.turnId || '',
                     playerName: this.stateManager.playerName || '',
-                    conversationDay
+                    conversationDay,
+                    responseMetadata: data
                 });
             }
 

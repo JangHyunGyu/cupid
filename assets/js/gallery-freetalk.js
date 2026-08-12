@@ -1267,7 +1267,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     playerName: this.progress.getPlayerName() || '',
                     affinityChange: affinityResult?.change,
                     affinityCurrent: affinityResult?.value,
-                    assistantRenderReceipt
+                    assistantRenderReceipt,
+                    responseMetadata: data
                 });
             }
 

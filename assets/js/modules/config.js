@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "https://openrouter-api.yama5993.workers.dev/";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.145";
+const ASSET_VERSION = "2.9.146";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -799,6 +799,16 @@ function normalizeCupidChatLogAffinity(value) {
     return Number.isFinite(number) ? Math.round(number) : null;
 }
 
+function getCupidResponseLogMetadata(payload = {}, fallbackOutputLanguage = '') {
+    const source = payload && typeof payload === 'object' ? payload : {};
+    return {
+        requestId: String(source.turnId || source.requestId || source.request_id || '').substring(0, 128),
+        model: String(source.model || '').substring(0, 160),
+        providerRoute: String(source.providerRoute || source.provider || '').substring(0, 200),
+        outputLanguage: String(source.outputLanguage || fallbackOutputLanguage || '').substring(0, 35)
+    };
+}
+
 function makeCupidChatLogEntry({
     userId,
     charId,
@@ -817,7 +827,12 @@ function makeCupidChatLogEntry({
     affinityChange = null,
     affinityCurrent = null,
     clientMsgId = '',
-    recoveryOccurrence = null
+    recoveryOccurrence = null,
+    requestId = '',
+    model = '',
+    providerRoute = '',
+    outputLanguage = '',
+    logSource = ''
 }) {
     const createdAt = new Date().toISOString();
     const entry = {
@@ -846,6 +861,11 @@ function makeCupidChatLogEntry({
     const normalizedAffinityCurrent = normalizeCupidChatLogAffinity(affinityCurrent);
     if (normalizedAffinityChange !== null) entry.affinityChange = normalizedAffinityChange;
     if (normalizedAffinityCurrent !== null) entry.affinityCurrent = normalizedAffinityCurrent;
+    if (requestId) entry.requestId = String(requestId).substring(0, 128);
+    if (model) entry.model = String(model).substring(0, 160);
+    if (providerRoute) entry.providerRoute = String(providerRoute).substring(0, 200);
+    if (outputLanguage) entry.outputLanguage = String(outputLanguage).substring(0, 35);
+    if (logSource) entry.logSource = String(logSource).substring(0, 32);
     const normalizedRecoveryOccurrence = Number(recoveryOccurrence);
     if (Number.isInteger(normalizedRecoveryOccurrence) && normalizedRecoveryOccurrence > 0) {
         entry.recoveryOccurrence = normalizedRecoveryOccurrence;
@@ -1084,7 +1104,8 @@ async function saveCupidChatLog({
     assistantRenderReceipt = null,
     conversationDay = getCurrentCupidConversationDay(),
     affinityChange = null,
-    affinityCurrent = null
+    affinityCurrent = null,
+    responseMetadata = null
 }) {
     if (!charId) return;
     const shared = {
@@ -1095,7 +1116,9 @@ async function saveCupidChatLog({
         playerName: _pn || window.gameEngine?.stateManager?.playerName || '',
         language: getCupidLanguage(),
         appId: getCupidAppId(),
-        conversationDay: resolveCupidConversationDay(conversationDay, sessionId)
+        conversationDay: resolveCupidConversationDay(conversationDay, sessionId),
+        ...getCupidResponseLogMetadata(responseMetadata, getCupidLanguage()),
+        logSource: 'realtime'
     };
     const queueAndFlush = async (role, content, affinity = {}) => {
         const entry = makeCupidChatLogEntry({ ...shared, role, content, ...affinity });
@@ -1145,7 +1168,8 @@ async function saveCupidGroupChatLog({
     sessionId = '',
     turnId = '',
     playerName: _pn = '',
-    conversationDay = getCurrentCupidConversationDay()
+    conversationDay = getCurrentCupidConversationDay(),
+    responseMetadata = null
 }) {
     const participantIds = participants.map(item => String(item?.id || item || '')).filter(Boolean);
     if (participantIds.length < 2) return;
@@ -1161,7 +1185,9 @@ async function saveCupidGroupChatLog({
         groupParticipants: participantIds,
         groupJoinIndices,
         groupPairId: `cupid:${participantIds.join(':')}`,
-        conversationDay: resolveCupidConversationDay(conversationDay, sessionId)
+        conversationDay: resolveCupidConversationDay(conversationDay, sessionId),
+        ...getCupidResponseLogMetadata(responseMetadata, getCupidLanguage()),
+        logSource: 'realtime'
     };
     const queueAndFlush = async (role, content, details = {}) => {
         if (!String(content || '').trim()) return null;
@@ -1387,6 +1413,7 @@ window.getCupidLanguage = getCupidLanguage;
 window.getCupidAppId = getCupidAppId;
 window.inferCupidConversationDay = inferCupidConversationDay;
 window.resolveCupidConversationDay = resolveCupidConversationDay;
+window.getCupidResponseLogMetadata = getCupidResponseLogMetadata;
 window.prepareCupidPromptMemoryRecall = prepareCupidPromptMemoryRecall;
 window.uploadImageToR2 = uploadImageToR2;
 window.optimizeImageHistory = optimizeImageHistory;

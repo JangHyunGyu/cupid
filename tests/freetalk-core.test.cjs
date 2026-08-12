@@ -825,6 +825,12 @@ test('group backup logs save one player row then one row per character with cano
         getCupidLanguage: () => 'ko',
         getCupidAppId: () => 'cupid',
         resolveCupidConversationDay: (value, sessionId) => sessionId.startsWith('morning5_') ? 5 : value,
+        getCupidResponseLogMetadata: (payload, fallbackOutputLanguage) => ({
+            requestId: payload?.turnId || '',
+            model: payload?.model || '',
+            providerRoute: payload?.providerRoute || payload?.provider || '',
+            outputLanguage: payload?.outputLanguage || fallbackOutputLanguage || ''
+        }),
         hashCupidLogText: value => `hash-${String(value).length}:1`,
         makeCupidChatLogEntry: value => ({ ...value, clientMsgId: value.clientMsgId || `test-${queued.length}` }),
         enqueueCupidChatLog: entry => { queued.push(entry); return true; },
@@ -854,7 +860,13 @@ test('group backup logs save one player row then one row per character with cano
         sessionId: 'morning5_counteroffer_group_talk',
         turnId: 'group-turn-1',
         playerName: '민준',
-        conversationDay: 5
+        conversationDay: 5,
+        responseMetadata: {
+            turnId: 'turn-group-request',
+            model: 'actual/provider-model',
+            providerRoute: 'openrouter:provider:actual/provider-model',
+            outputLanguage: 'ko'
+        }
     });
 
     assert.equal(queued.length, 3);
@@ -869,6 +881,11 @@ test('group backup logs save one player row then one row per character with cano
         assert.deepEqual(Array.from(entry.groupParticipants), ['Teacher', 'Dain']);
         assert.equal(entry.groupPairId, 'cupid:Teacher:Dain');
         assert.equal(entry.conversationDay, 5);
+        assert.equal(entry.requestId, 'turn-group-request');
+        assert.equal(entry.model, 'actual/provider-model');
+        assert.equal(entry.providerRoute, 'openrouter:provider:actual/provider-model');
+        assert.equal(entry.outputLanguage, 'ko');
+        assert.equal(entry.logSource, 'realtime');
     }
     assert.equal(queued[1].affinityCurrent, 18);
     assert.equal(queued[2].affinityCurrent, 27);
@@ -881,6 +898,56 @@ test('group backup logs save one player row then one row per character with cano
     assert.equal(queued[2].clientMsgId, logSandbox.__makeCupidGroupChatLogClientId({
         turnId: 'group-turn-1', role: 'assistant', speakerId: 'Dain', messageIndex: 1, content: '저도 들을게요.'
     }));
+});
+
+test('Cupid chat entries and every free-talk path preserve actual AI routing metadata', () => {
+    const config = read('assets/js/modules/config.js');
+    const freeTalk = read('assets/js/modules/FreeTalkSystem.js');
+    const gallery = read('assets/js/gallery-freetalk.js');
+    const start = config.indexOf('function getCupidResponseLogMetadata');
+    const end = config.indexOf('async function postCupidChatLogEntry', start);
+    assert.ok(start >= 0 && end > start, 'Cupid chat metadata helpers must remain extractable');
+
+    const sandbox = {
+        Date,
+        Math,
+        String,
+        Number,
+        Array,
+        normalizeCupidConversationDay: value => Number(value) || null,
+        normalizeCupidChatLogAffinity: value => Number.isFinite(Number(value)) ? Math.round(Number(value)) : null
+    };
+    vm.runInNewContext(
+        `${config.slice(start, end)}\n` +
+        'globalThis.__getCupidResponseLogMetadata = getCupidResponseLogMetadata;\n' +
+        'globalThis.__makeCupidChatLogEntry = makeCupidChatLogEntry;',
+        sandbox
+    );
+    const metadata = sandbox.__getCupidResponseLogMetadata({
+        turnId: 'turn-cupid-request',
+        model: 'actual/provider-model',
+        providerRoute: 'openrouter:provider:actual/provider-model'
+    }, 'ja');
+    const entry = sandbox.__makeCupidChatLogEntry({
+        userId: 'cupid-test-user',
+        charId: 'Yuna',
+        sessionId: 'session-test',
+        role: 'assistant',
+        content: 'response',
+        context: '1:1',
+        playerName: 'player',
+        language: 'ja',
+        appId: 'cupid-ja',
+        ...metadata,
+        logSource: 'realtime'
+    });
+    assert.equal(entry.requestId, 'turn-cupid-request');
+    assert.equal(entry.model, 'actual/provider-model');
+    assert.equal(entry.providerRoute, 'openrouter:provider:actual/provider-model');
+    assert.equal(entry.outputLanguage, 'ja');
+    assert.equal(entry.logSource, 'realtime');
+    assert.equal((freeTalk.match(/responseMetadata: data/g) || []).length, 2);
+    assert.equal((gallery.match(/responseMetadata: data/g) || []).length, 1);
 });
 
 test('existing local group turns are recovered even when the legacy migration flag is already set', async () => {
