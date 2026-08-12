@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "https://openrouter-api.yama5993.workers.dev/";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.144";
+const ASSET_VERSION = "2.9.145";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -465,6 +465,20 @@ async function uploadImageToR2(base64Image, subPath = 'upload_image', retries = 
     throw lastError;
 }
 
+function makeCupidMigratedClientMsgId(parts) {
+    return `cupid-migrated-${hashCupidLogText(parts.join('|')).replace(':', '-')}`;
+}
+
+function makeCupidGroupChatLogClientId({ turnId, role, speakerId = '', messageIndex = -1, content }) {
+    const normalizedTurnId = String(turnId || '').trim();
+    const normalizedRole = String(role || '').trim();
+    if (!normalizedTurnId || !['user', 'assistant'].includes(normalizedRole)) return '';
+    const parts = ['group', normalizedTurnId, normalizedRole];
+    if (normalizedRole === 'assistant') parts.push(String(speakerId || ''), String(messageIndex));
+    parts.push(hashCupidLogText(content));
+    return makeCupidMigratedClientMsgId(parts);
+}
+
 // ============================================================================
 // 기존 localStorage 대화 → D1 일괄 마이그레이션 (소급 적용)
 // ============================================================================
@@ -477,10 +491,6 @@ async function migrateCupidChatHistoryToD1() {
     const language = getCupidLanguage();
     const appId = getCupidAppId();
     let totalSaved = 0;
-
-    function migratedClientMsgId(parts) {
-        return `cupid-migrated-${hashCupidLogText(parts.join('|')).replace(':', '-')}`;
-    }
 
     async function postOne({
         charId,
@@ -496,7 +506,8 @@ async function migrateCupidChatHistoryToD1() {
         groupPairId = '',
         affinityChange = null,
         affinityCurrent = null,
-        clientMsgId
+        clientMsgId,
+        recoveryOccurrence = null
     }) {
         try {
             const entry = makeCupidChatLogEntry({
@@ -516,7 +527,8 @@ async function migrateCupidChatHistoryToD1() {
                 groupPairId,
                 affinityChange,
                 affinityCurrent,
-                clientMsgId
+                clientMsgId,
+                recoveryOccurrence
             });
             entry.logSource = 'local-recovery';
             await postCupidChatLogEntry(entry);
@@ -600,7 +612,7 @@ async function migrateCupidChatHistoryToD1() {
                 content,
                 sessionId,
                 context,
-                clientMsgId: migratedClientMsgId([
+                clientMsgId: makeCupidMigratedClientMsgId([
                     'legacy', normalizedCharId, sessionId, context, msg.role, String(index), hashCupidLogText(content)
                 ])
             });
@@ -627,6 +639,13 @@ async function migrateCupidChatHistoryToD1() {
     try {
         const groupMemories = parsedSave?.gameState?.groupConversationMemories;
         if (Array.isArray(groupMemories)) {
+            const recoveryOccurrences = new Map();
+            const nextRecoveryOccurrence = ({ sessionId, role, speakerId, content }) => {
+                const key = JSON.stringify([sessionId, role, speakerId || '', String(content || '')]);
+                const occurrence = (recoveryOccurrences.get(key) || 0) + 1;
+                recoveryOccurrences.set(key, occurrence);
+                return occurrence;
+            };
             for (let turnIndex = 0; turnIndex < groupMemories.length; turnIndex++) {
                 const memory = groupMemories[turnIndex];
                 if (!memory || typeof memory !== 'object') continue;
@@ -655,7 +674,17 @@ async function migrateCupidChatHistoryToD1() {
                         role: 'user',
                         content: memory.userContent,
                         speakerId: '__player__',
-                        clientMsgId: migratedClientMsgId(['group', turnId, 'user', hashCupidLogText(memory.userContent)])
+                        clientMsgId: makeCupidGroupChatLogClientId({
+                            turnId,
+                            role: 'user',
+                            content: memory.userContent
+                        }),
+                        recoveryOccurrence: nextRecoveryOccurrence({
+                            sessionId,
+                            role: 'user',
+                            speakerId: '__player__',
+                            content: memory.userContent
+                        })
                     });
                 }
                 const assistantMessages = Array.isArray(memory.assistantMessages) ? memory.assistantMessages : [];
@@ -670,9 +699,19 @@ async function migrateCupidChatHistoryToD1() {
                         speakerId,
                         affinityChange: message.affinityChange,
                         affinityCurrent: message.affinityCurrent,
-                        clientMsgId: migratedClientMsgId([
-                            'group', turnId, 'assistant', speakerId, String(messageIndex), hashCupidLogText(message.content)
-                        ])
+                        clientMsgId: makeCupidGroupChatLogClientId({
+                            turnId,
+                            role: 'assistant',
+                            speakerId,
+                            messageIndex,
+                            content: message.content
+                        }),
+                        recoveryOccurrence: nextRecoveryOccurrence({
+                            sessionId,
+                            role: 'assistant',
+                            speakerId,
+                            content: message.content
+                        })
                     });
                 }
             }
@@ -777,7 +816,8 @@ function makeCupidChatLogEntry({
     conversationDay = null,
     affinityChange = null,
     affinityCurrent = null,
-    clientMsgId = ''
+    clientMsgId = '',
+    recoveryOccurrence = null
 }) {
     const createdAt = new Date().toISOString();
     const entry = {
@@ -806,6 +846,10 @@ function makeCupidChatLogEntry({
     const normalizedAffinityCurrent = normalizeCupidChatLogAffinity(affinityCurrent);
     if (normalizedAffinityChange !== null) entry.affinityChange = normalizedAffinityChange;
     if (normalizedAffinityCurrent !== null) entry.affinityCurrent = normalizedAffinityCurrent;
+    const normalizedRecoveryOccurrence = Number(recoveryOccurrence);
+    if (Number.isInteger(normalizedRecoveryOccurrence) && normalizedRecoveryOccurrence > 0) {
+        entry.recoveryOccurrence = normalizedRecoveryOccurrence;
+    }
     return entry;
 }
 
@@ -1099,6 +1143,7 @@ async function saveCupidGroupChatLog({
     assistantMessages = [],
     participants = [],
     sessionId = '',
+    turnId = '',
     playerName: _pn = '',
     conversationDay = getCurrentCupidConversationDay()
 }) {
@@ -1148,9 +1193,13 @@ async function saveCupidGroupChatLog({
     };
 
     if (userContent) {
-        await queueAndFlush('user', userContent, { speakerId: '__player__' });
+        await queueAndFlush('user', userContent, {
+            speakerId: '__player__',
+            clientMsgId: makeCupidGroupChatLogClientId({ turnId, role: 'user', content: userContent })
+        });
     }
-    for (const message of assistantMessages) {
+    for (let messageIndex = 0; messageIndex < assistantMessages.length; messageIndex++) {
+        const message = assistantMessages[messageIndex];
         const speakerId = String(message?.speakerId || '');
         if (!participantIds.includes(speakerId)) continue;
         const assistantContent = window.CupidFreeTalkCore?.resolveCupidAssistantLogContent?.(
@@ -1160,7 +1209,14 @@ async function saveCupidGroupChatLog({
         const entry = await queueAndFlush('assistant', assistantContent, {
             speakerId,
             affinityChange: message.affinityChange,
-            affinityCurrent: message.affinityCurrent
+            affinityCurrent: message.affinityCurrent,
+            clientMsgId: makeCupidGroupChatLogClientId({
+                turnId,
+                role: 'assistant',
+                speakerId,
+                messageIndex,
+                content: assistantContent
+            })
         });
         if (entry && message.renderReceipt) await postCupidChatRenderAck(entry, message.renderReceipt);
     }

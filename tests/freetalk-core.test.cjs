@@ -806,8 +806,11 @@ test('group reply order, per-speaker affinity, and Dain expression assets follow
 
 test('group backup logs save one player row then one row per character with canonical speaker ids', async () => {
     const config = read('assets/js/modules/config.js');
+    const helperStart = config.indexOf('function makeCupidMigratedClientMsgId');
+    const helperEnd = config.indexOf('// ============================================================================', helperStart);
     const start = config.indexOf('async function saveCupidGroupChatLog');
     const end = config.indexOf('// ============================================================================', start);
+    assert.ok(helperStart >= 0 && helperEnd > helperStart, 'group client id helper must remain extractable');
     assert.ok(start >= 0 && end > start, 'group log writer must remain extractable');
 
     const queued = [];
@@ -822,7 +825,8 @@ test('group backup logs save one player row then one row per character with cano
         getCupidLanguage: () => 'ko',
         getCupidAppId: () => 'cupid',
         resolveCupidConversationDay: (value, sessionId) => sessionId.startsWith('morning5_') ? 5 : value,
-        makeCupidChatLogEntry: value => ({ ...value, clientMsgId: `test-${queued.length}` }),
+        hashCupidLogText: value => `hash-${String(value).length}:1`,
+        makeCupidChatLogEntry: value => ({ ...value, clientMsgId: value.clientMsgId || `test-${queued.length}` }),
         enqueueCupidChatLog: entry => { queued.push(entry); return true; },
         flushCupidChatLogQueue: async () => {},
         postCupidChatLogEntry: async () => {},
@@ -835,7 +839,9 @@ test('group backup logs save one player row then one row per character with cano
         Promise
     };
     vm.runInNewContext(
-        `${config.slice(start, end)}\nglobalThis.__saveCupidGroupChatLog = saveCupidGroupChatLog;`,
+        `${config.slice(helperStart, helperEnd)}\n${config.slice(start, end)}\n` +
+        'globalThis.__saveCupidGroupChatLog = saveCupidGroupChatLog;\n' +
+        'globalThis.__makeCupidGroupChatLogClientId = makeCupidGroupChatLogClientId;',
         logSandbox
     );
     await logSandbox.__saveCupidGroupChatLog({
@@ -846,6 +852,7 @@ test('group backup logs save one player row then one row per character with cano
         ],
         participants: [{ id: 'Teacher' }, { id: 'Dain' }],
         sessionId: 'morning5_counteroffer_group_talk',
+        turnId: 'group-turn-1',
         playerName: '민준',
         conversationDay: 5
     });
@@ -865,12 +872,24 @@ test('group backup logs save one player row then one row per character with cano
     }
     assert.equal(queued[1].affinityCurrent, 18);
     assert.equal(queued[2].affinityCurrent, 27);
+    assert.equal(queued[0].clientMsgId, logSandbox.__makeCupidGroupChatLogClientId({
+        turnId: 'group-turn-1', role: 'user', content: '내가 책임질게.'
+    }));
+    assert.equal(queued[1].clientMsgId, logSandbox.__makeCupidGroupChatLogClientId({
+        turnId: 'group-turn-1', role: 'assistant', speakerId: 'Teacher', messageIndex: 0, content: '먼저 내 말을 들어.'
+    }));
+    assert.equal(queued[2].clientMsgId, logSandbox.__makeCupidGroupChatLogClientId({
+        turnId: 'group-turn-1', role: 'assistant', speakerId: 'Dain', messageIndex: 1, content: '저도 들을게요.'
+    }));
 });
 
 test('existing local group turns are recovered even when the legacy migration flag is already set', async () => {
     const config = read('assets/js/modules/config.js');
+    const helperStart = config.indexOf('function makeCupidMigratedClientMsgId');
+    const helperEnd = config.indexOf('// ============================================================================', helperStart);
     const start = config.indexOf('async function migrateCupidChatHistoryToD1');
     const end = config.indexOf('const CUPID_CHAT_LOG_QUEUE_KEY', start);
+    assert.ok(helperStart >= 0 && helperEnd > helperStart, 'group client id helper must remain extractable');
     assert.ok(start >= 0 && end > start, 'migration must remain extractable');
 
     const stored = new Map([
@@ -888,6 +907,14 @@ test('existing local group turns are recovered even when the legacy migration fl
                         { speakerId: 'Teacher', content: '먼저 설명해 봐.', affinityCurrent: 20 },
                         { speakerId: 'Dain', content: '저도 듣고 있어요.', affinityCurrent: 28 }
                     ]
+                }, {
+                    turnId: 'group-turn-2',
+                    sessionId: 'morning5_counteroffer_group_talk',
+                    day: 5,
+                    participants: [{ id: 'Teacher' }, { id: 'Dain' }],
+                    playerName: '민준',
+                    userContent: '둘 다 내 말을 들어줘.',
+                    assistantMessages: []
                 }]
             }
         })]
@@ -920,20 +947,23 @@ test('existing local group turns are recovered even when the legacy migration fl
         Promise
     };
     vm.runInNewContext(
-        `${config.slice(start, end)}\nglobalThis.__migrateCupidChatHistoryToD1 = migrateCupidChatHistoryToD1;`,
+        `${config.slice(helperStart, helperEnd)}\n${config.slice(start, end)}\n` +
+        'globalThis.__migrateCupidChatHistoryToD1 = migrateCupidChatHistoryToD1;',
         migrationSandbox
     );
 
     await migrationSandbox.__migrateCupidChatHistoryToD1();
     const firstIds = posted.map(entry => entry.clientMsgId);
-    assert.equal(posted.length, 3);
+    assert.equal(posted.length, 4);
     assert.deepEqual(Array.from(posted, entry => `${entry.role}:${entry.speakerId}`), [
         'user:__player__',
         'assistant:Teacher',
-        'assistant:Dain'
+        'assistant:Dain',
+        'user:__player__'
     ]);
     assert.ok(posted.every(entry => entry.conversationDay === 5));
     assert.ok(posted.every(entry => entry.logSource === 'local-recovery'));
+    assert.deepEqual(Array.from(posted, entry => entry.recoveryOccurrence), [1, 1, 1, 2]);
 
     posted.length = 0;
     await migrationSandbox.__migrateCupidChatHistoryToD1();

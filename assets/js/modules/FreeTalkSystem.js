@@ -1839,6 +1839,7 @@ class FreeTalkSystem {
                     assistantMessages,
                     participants: this.groupParticipants,
                     sessionId: requestSceneId || '',
+                    turnId: lastTurnMeta?.turnId || '',
                     playerName: this.stateManager.playerName || '',
                     conversationDay
                 });
