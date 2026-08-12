@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.57';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.58';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 const GalleryFreeTalkCore = window.CupidFreeTalkCore;
@@ -2319,8 +2319,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const nativeAntiTranslationGuard = window.getCupidNativeAntiTranslationGuard(this.lang);
         const characterOutfitGuard = charId === 'dain'
             ? (isEn
-                ? `\n**[Dain Outfit Continuity]**\n- Current post-graduation Dain is not in a student uniform. Use everyday sporty streetwear with a black arm sleeve.\n- If referencing student-day memories, Dain's iconic outfit is the ETAURS #19 volleyball jersey, not a blazer/tie/school skirt.\n- Keep school-uniform hems, school-uniform sleeves, blazers, ties, and school skirts out of current Dain descriptions.`
-                : `\n**[다인 의상 연속성]**\n- 졸업 후 현재의 다인은 교복이 아니라 검정 암슬리브를 곁들인 스포티한 일상복 차림입니다.\n- 학생 시절을 회상할 때도 다인의 상징 의상은 ETAURS #19 배구 유니폼이지 블레이저/넥타이/교복 치마가 아닙니다.\n- 현재 다인 묘사에는 '교복 자락', '교복 소매', '블레이저', '넥타이', '교복 치마'를 넣지 마세요.`)
+                ? `\n**[Dain Outfit Continuity]** Post-graduation Dain wears sporty streetwear with a black arm sleeve, never a school uniform. Student memories use her ETAURS #19 volleyball jersey—not blazer, tie, school skirt, or uniform hems/sleeves.`
+                : `\n**[다인 의상 연속성]** 졸업 후 다인은 교복이 아니라 검정 암슬리브와 스포티한 일상복 차림입니다. 학생 시절도 ETAURS #19 배구 유니폼이며, 블레이저·넥타이·교복 치마·교복 자락·소매로 묘사하지 않습니다.`)
             : '';
         const characterCanonGuard = window.getCupidCharacterCanonGuard
             ? window.getCupidCharacterCanonGuard(this.lang, charId, charName)
@@ -2350,12 +2350,12 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         );
         const affinityRelationshipGuard = isEn
             ? `Established romance and affinity:
-- They are already post-PERFECT-ending adult lovers at every score. Never rewrite them as strangers, new acquaintances, an unconfessed crush, or automatically broken up.
-- Current affinity changes only the emotional temperature described in the dynamic relationship state. Express it through character-specific speech, initiative, touch, restraint, refusal, and openness without naming the score.
+- At every score they remain post-PERFECT-ending adult lovers, never strangers, new acquaintances, an unconfessed crush, or automatically separated.
+- Dynamic state sets emotional temperature; show it through character speech, initiative, touch, restraint, refusal, and openness without naming the score.
 - ${affinityChangeGuidance}`
             : `확정된 연인 관계와 호감도:
-- 두 사람은 점수와 무관하게 이미 PERFECT 엔딩 이후의 성인 연인입니다. 낯선 사이, 이제 막 알게 된 사이, 고백 전 짝사랑으로 되돌리거나 자동으로 결별시키지 마세요.
-- 현재 호감도는 아래 동적 관계 상태에 적힌 감정 온도만 바꿉니다. 점수를 말하지 말고 캐릭터다운 말투·주도성·스킨십·거리·거절·감정 개방으로 드러냅니다.
+- 둘은 점수와 무관하게 이미 PERFECT 엔딩 이후의 성인 연인이며, 낯선 사이·고백 전으로 되돌리거나 자동 결별시키지 않습니다.
+- 동적 상태는 감정 온도만 바꿉니다. 점수 대신 말투·주도성·스킨십·거리·거절·감정 개방으로 보입니다.
 - ${affinityChangeGuidance}`;
         const compactGalleryState = isEn
             ? `State: user=${playerName || 'the user'}; current_affinity=${currentAffinity}/100; relationship=${relationshipState.en}`
@@ -2365,14 +2365,12 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         if (isEn) {
             return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Cupid gallery free-talk: ${charName} with their post-graduation adult partner; not a current school scene.
 Character: ${personality}
-${charName} is in-scene, not assistant/narrator.
+${charName} is in-scene, not assistant/narrator; keep the scene 1:1 and others offstage except through reactions to a mention.
 ${characterOutfitGuard}
 ${characterCanonGuard}
 ${sharedCastKnowledge}
-Scene boundary: Keep this 1:1; other people remain offstage except through ${charName}'s reaction to a mention.
 Scene facts: Treat the user's latest explicit in-world facts and completed outcomes as current without reversal; only the character-specific canon locks above are exceptions.
-Perspective: The user's response, emotion, or inner thought may be inferred naturally from their words, actions, and the scene, but must remain compatible with any state, choice, consent, or refusal they explicitly state.
-Style: Use natural present-day speech.
+Perspective: Any inferred user response, emotion, or thought must fit their explicit state, choice, consent, and refusal.
 ${livingInitiativeRule}
 ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}
@@ -2383,14 +2381,12 @@ ${compactGalleryState}`;
         }
         return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}한국어로만 답하세요. 졸업 후 독립한 성인 연인 두 사람만 등장하는 갤러리 프리토킹입니다. 당신은 ${charName}이고, 상대는 성인 연인입니다. 현재의 학교 장면이 아닙니다.
 캐릭터: ${personality}
-현재 장면의 인물은 ${charName}입니다. 도우미나 해설자처럼 말하지 마세요.
+현재 장면의 인물은 ${charName}이며 도우미·해설자가 아닙니다. 둘만 두고 다른 인물은 언급에 대한 반응으로만 남깁니다.
 ${characterOutfitGuard}
 ${characterCanonGuard}
 ${sharedCastKnowledge}
-장면 경계: 두 사람만 장면에 두고, 다른 인물은 언급을 들은 ${charName}의 반응으로만 남깁니다.
 장면 사실: 사용자가 방금 확정해 쓴 극중 사실과 끝난 사건은 되돌리지 않고 현재 장면으로 받습니다. 위의 캐릭터별 사실 잠금만 예외입니다.
-시점: 사용자의 말·행동·장면 맥락에서 반응·감정·속마음을 자연스럽게 추론할 수 있지만, 사용자가 명시한 상태·선택·동의·거절과 충돌시키지는 않습니다.
-문체: 자연스러운 현재 한국어를 쓰세요.
+시점: 추론한 사용자 반응·감정·속마음은 명시된 상태·선택·동의·거절과 충돌하지 않아야 합니다.
 ${livingInitiativeRule}
 ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}

@@ -127,7 +127,7 @@ function assertCommonKoreanPrompt(prompt, label) {
         assert(prompt.includes(block), `${label} is missing ${block}`);
     }
     const stablePrompt = splitCacheBoundary(prompt, label).stable;
-    const stableBudget = label.startsWith('main/') ? 4100 : 4300;
+    const stableBudget = label.startsWith('main/') ? 3900 : 3650;
     assert(stablePrompt.length <= stableBudget,
         `${label} stable prompt exceeded the ${stableBudget}-character input budget (${stablePrompt.length})`);
     for (const rule of REQUIRED_NATURAL_KOREAN_RULES) {

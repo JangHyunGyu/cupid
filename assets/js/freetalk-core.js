@@ -66,9 +66,9 @@
     function buildAffinityChangeGuidance(lang = 'ko') {
         const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
         if (isKo) {
-            return `affinity에는 이번 사용자 입력과 이번 입력이 마무리한 사용자의 행동이 관계에 남긴 변화를 ${AFFINITY_CHANGE_MIN}~+${AFFINITY_CHANGE_MAX}의 정수로 넣으세요. 캐릭터가 이번 답변에서 스스로 친절하게 수습하거나 분위기를 풀었다는 이유로 사용자가 만든 손상을 상쇄하지 말고, 사용자가 이번 턴 안에서 실제로 사과·해명·수습한 경우만 회복으로 반영하세요. 현재 호감도는 상처를 표현하고 회복하는 방식에는 영향을 주지만, 명백한 잘못을 0이나 작은 감점으로 지우는 근거가 아닙니다. 관계 온도가 실제로 달라지지 않았을 때만 0입니다. 잠깐 거슬린 정도를 넘어 작은 서운함·불편함·거리감이 남으면 -2~-4, 무심한 회피·배려 없는 농담·질투 자극·싫다고 한 행동의 반복은 -5~-9, 명백한 무례·모욕·거짓말·약속 위반·경계 침해는 -10~-20, 반복적인 폭언·조종·강요는 -21~-35, 반복적인 심각한 강요·위협·관계를 무너뜨릴 배신은 -36~-50입니다. 실제 감점이라면 -1로 축소하지 마세요. 캐릭터가 겉으로 웃거나 태연하게 넘겨도 속으로 신뢰가 줄었다면 해당 강도로 감점하세요. 배려·솔직함·관심으로 관계가 실제로 좋아졌다면 +1~+5입니다. 긍정과 부정이 섞였어도 사용자가 직접 수습하지 않은 명백한 침해를 거의 0으로 평균내지 마세요. 입력이 짧거나 수동적이라는 이유만으로 감점하지 말고, 단순 인사나 일상적인 예의마다 점수를 주거나 호감도 설명으로 연기를 대신해서도 안 됩니다.`;
+            return `affinity는 이번 사용자 입력과 이 입력으로 완료된 사용자 행동이 남긴 관계 변화(${AFFINITY_CHANGE_MIN}~+${AFFINITY_CHANGE_MAX} 정수)입니다. 캐릭터가 스스로 분위기를 수습해도 사용자 원인 손상을 상쇄하지 말고, 사용자가 이번 턴 안에서 실제로 사과·해명·수습한 경우만 회복으로 반영하세요. 현재 호감도는 상처의 표현·회복 방식만 바꾸며 명백한 잘못을 0이나 작은 감점으로 지우지 않습니다. 실제 변화가 없을 때만 0입니다. 기준: 작은 서운함·불편·거리감 -2~-4; 무심한 회피·배려 없는 농담·질투 자극·싫다는 행동 반복 -5~-9; 무례·모욕·거짓말·약속 위반·경계 침해 -10~-20; 반복 폭언·조종·강요 -21~-35; 반복적인 심각한 강요·위협·관계를 무너뜨릴 배신 -36~-50. 실제 감점이라면 -1로 축소하지 마세요. 겉으로 웃거나 태연하게 넘겨도 신뢰가 줄면 맞는 강도로 감점합니다. 배려·솔직함·관심으로 실제 좋아지면 +1~+5입니다. 사용자가 수습하지 않은 명백한 침해를 긍정 요소와 평균내 거의 0으로 만들지 마세요. 짧거나 수동적인 입력은 감점 사유가 아니며, 단순 인사·일상 예의에 점수를 주거나 점수 설명으로 연기를 대신하지 않습니다.`;
         }
-        return `Set affinity to an integer from ${AFFINITY_CHANGE_MIN} to +${AFFINITY_CHANGE_MAX} for the relationship change left by the latest user contribution and any user action it completes. Do not cancel user-caused harm merely because the character graciously repairs the mood in this reply; count recovery only when the user actually apologizes, explains, or makes amends in this turn. Current affinity may shape how hurt is expressed and how quickly it can heal, but it must not erase a clear wrong into 0 or a token loss. Use 0 only when the relationship temperature truly does not change. Use -2 to -4 for small but lingering hurt, discomfort, or distance; -5 to -9 for dismissive evasion, inconsiderate jokes, provoking jealousy, or repeating something the character said they dislike; -10 to -20 for clear disrespect, insults, lies, broken promises, or boundary violations; -21 to -35 for repeated verbal abuse, manipulation, or coercion; and -36 to -50 for repeated severe coercion, threats, or relationship-breaking betrayal. When a real loss occurred, do not shrink it to -1. Score the fitting loss even when the character outwardly laughs it off or stays composed. Use +1 to +5 when the user's care, honesty, or attention genuinely improves the relationship. When positive and negative elements mix, do not average an unrepaired clear violation back toward zero. Do not penalize an input merely for being short or passive, award points for routine greetings or ordinary courtesy, or replace roleplay with score commentary.`;
+        return `Set affinity to the ${AFFINITY_CHANGE_MIN} to +${AFFINITY_CHANGE_MAX} integer change caused by the latest user contribution and completed user action. Character-led repair does not cancel user-caused harm; count recovery only when the user actually apologizes, explains, or makes amends this turn. Current affinity shapes expression and recovery, not whether a clear wrong counts; use 0 only for no real relationship change. Bands: -2 to -4 lingering hurt/discomfort/distance; -5 to -9 dismissive evasion, careless jokes, provoked jealousy, or repeating a disliked act; -10 to -20 disrespect, insult, lie, broken promise, or boundary violation; -21 to -35 repeated abuse, manipulation, or coercion; -36 to -50 repeated severe coercion, threat, or relationship-breaking betrayal. For a real loss, do not shrink it to -1, even if the character outwardly laughs it off or stays composed. Use +1 to +5 only when care, honesty, or attention truly improves the relationship. Do not average an unrepaired clear violation toward zero, penalize short/passive input, reward routine greetings/courtesy, or replace roleplay with score commentary.`;
     }
 
     function getRelationshipAftermathDuration(change) {
@@ -206,9 +206,9 @@
     function buildExpressionAffinityGuidance(lang = 'ko') {
         const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
         if (isKo) {
-            return 'expression은 이번 응답에서 겉으로 실제 드러난 표정, affinity는 관계에 생긴 내적 변화입니다. 둘을 기계적으로 같은 방향에 맞추지 마세요. 감동해서 우는 가점, 상처를 감추려고 웃는 감점처럼 서술과 대사로 납득되는 불일치를 허용하며, 이번 장면에 맞는 허용 표정 하나를 고르세요.';
+            return 'expression은 이번 응답에 드러난 표정, affinity는 관계의 내적 변화입니다. 둘을 기계적으로 같은 방향에 맞추지 마세요. 감동의 눈물이나 상처를 감춘 웃음처럼 장면상 타당한 불일치를 허용하고, 맞는 허용 표정 하나를 고르세요.';
         }
-        return 'expression is the outward face visibly shown in this reply, while affinity is the internal change in the relationship. Do not mechanically force them in the same direction. Allow a narratively supported mismatch, such as crying from gratitude with positive affinity or smiling to hide hurt with negative affinity, and choose one allowed expression that fits the scene.';
+        return 'expression is the visible face; affinity is the relationship’s internal change. Do not mechanically force them in the same direction. Allow scene-supported mismatch (grateful tears, a smile hiding hurt) and choose one fitting allowed expression.';
     }
 
     function normalizeAvailableExpression(expression, validExpressions = []) {
@@ -909,14 +909,14 @@
     function buildResponsePaceBlock(messages = [], lang = 'ko') {
         const beat = classifyResponseBeat(messages);
         const ko = {
-            dialogue: '현재는 대화 박자입니다. 한 줄 대사나 짧은 행동만으로 충분하면 거기서 자연스럽게 마치고, 분량을 채우려고 설명을 늘리지 않습니다. 이미 진행 중인 행동이나 갈등의 즉각적인 결과가 있다면 함께 보여 줍니다.',
-            action: '현재는 행동 박자입니다. 중요한 움직임의 다음 단계와 즉각적인 결과가 보일 만큼 쓰되, 사용자가 아직 정하지 않은 다음 선택까지 대신 완결하지 않습니다.',
-            transition: '현재는 장면 전환 또는 전개 박자입니다. 새 시간·공간·등장 상태를 한 번 분명히 잡고 구체적인 사건이나 선택까지 이어 가며, 필요한 경우 대화 장면보다 길게 써도 됩니다.'
+            dialogue: '대화 박자입니다. 한 줄 대사나 짧은 행동이면 충분할 때 설명을 늘리지 말고, 진행 중인 행동·갈등의 즉각적 결과만 함께 보입니다.',
+            action: '행동 박자입니다. 중요한 움직임의 다음 단계와 즉각적 결과까지 쓰되, 사용자의 미정 선택은 완결하지 않습니다.',
+            transition: '전환·전개 박자입니다. 새 시간·공간·등장 상태를 한 번 잡고 구체적 사건이나 선택까지 이으며, 필요하면 길게 씁니다.'
         };
         const en = {
-            dialogue: 'This is a conversational beat. If one spoken line or a brief action is enough, end there naturally instead of padding the scene. Include an immediate consequence when an ongoing action or conflict requires it.',
-            action: "This is an action beat. Show enough of the next meaningful movement and its immediate consequence to make progress, without completing the user's still-unchosen next decision.",
-            transition: 'This is a transition or development beat. Establish the new time, place, and presence once, then reach a concrete event or choice; it may run longer than a conversational exchange when needed.'
+            dialogue: 'Conversational beat: do not pad one sufficient line or brief action; include an immediate result only when ongoing action or conflict needs it.',
+            action: "Action beat: show the next meaningful movement and immediate result without completing the user's unchosen decision.",
+            transition: 'Transition/development beat: establish new time, place, and presence once, then reach a concrete event or choice; use more length only as needed.'
         };
         return `\n\n[${lang === 'ko' ? '응답 호흡' : 'Response Pace'} — ${beat}]\n${(lang === 'ko' ? ko : en)[beat]}`;
     }
@@ -926,8 +926,8 @@
         lowInformationRule = ''
     } = {}) {
         const task = lang === 'ko'
-            ? '최신 사용자 입력의 마지막 유효 줄에서 새 내용으로 직접 이어갑니다. 현재 캐릭터의 목표·지식·감정에 따라 그 인물이 지금 실제로 하는 반응을 만들고, 사용자가 명시하지 않은 중대한 선택·동의·거절은 대신 쓰지 않습니다.'
-            : "Continue directly from the latest user's last valid line with new content. Let the current character act now from their goal, knowledge, and emotion, and never supply a major choice, consent, or refusal the user did not state.";
+            ? '최신 사용자 입력의 마지막 유효 줄에서 캐릭터의 목표·지식·감정에 따른 새 반응을 바로 잇고, 사용자가 명시하지 않은 중대한 선택·동의·거절은 쓰지 않습니다.'
+            : "Continue from the latest user's last valid line with a new response driven by character goal, knowledge, and emotion; never supply an unstated user choice, consent, or refusal.";
         const output = [
             buildResponsePaceBlock(messages, lang),
             repetitionGuard || buildRecentExpressionRepetitionGuard(messages, lang),

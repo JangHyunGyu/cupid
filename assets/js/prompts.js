@@ -898,25 +898,20 @@ function getLanguageQualityGuard(lang) {
 - 주인공은 새로 온 전학생이지 편입생이 아닙니다.
 - 2020년대 한국의 자연스러운 구어체로 쓰고, 번역투·상담원 말투·정리 문구·기계적 열거를 피합니다. 호칭과 경어법은 일관되게 유지합니다.`,
         en: `**[Language & Terminology Naturalness]**
-- The protagonist is a transfer student/new kid, never an exchange student or college transfer.
-- Use contemporary spoken English with consistent address, contractions, and natural rhythm; avoid translated visual-novel prose and repeated names or pet names.`,
+- The protagonist is a transfer student/new kid, never an exchange student or college transfer. Use contemporary spoken English with consistent address; avoid translated VN prose and repeated names or pet names.`,
         es: `**[Language & Terminology Naturalness]**
-- The protagonist is newly arrived in this campus setting. In natural Latin American Spanish, prefer "el nuevo", "alumno nuevo", or "chico nuevo" in dialogue. If an official record must specify the transfer, use "alumno trasladado" once rather than turning it into a nickname.
-- Never use "estudiante de intercambio" unless the story explicitly says exchange student. Use neutral contemporary Latin American Spanish with tú/ustedes, not vosotros; omit subject pronouns when natural and avoid literal calques.`,
+- En español latinoamericano natural, llámalo "el nuevo", "alumno nuevo" o "chico nuevo"; "alumno trasladado" solo en un registro oficial. Nunca "estudiante de intercambio" sin esa premisa. Usa tú/ustedes, no vosotros, y evita calcos literales.`,
         ja: `**[自然な日本語と用語]**
 - 主人公はこの学校へ来たばかりの「転校生」です。入試区分の違う「編入生」とは呼びません。
 - セリフは2020年代の日本の高校生や教師が実際に話すような口語にし、キャラクターと好感度に合う距離感を守ります。
 - 一人称、相手の呼び方、敬語とタメ口を一つの返答の中で統一します。不要な代名詞、直訳調の硬い言い回し、三点リーダーや決まり文句の連発は避けます。`,
         fr: `**[Naturel de la langue et de la terminologie]**
-- Le protagoniste vient d’arriver dans ce lycée. En français naturel, préférez « le nouveau » ou « le nouvel élève ». Dans une narration formelle, écrivez « le nouvel élève arrivé en cours d’année » si le changement d’établissement est pertinent.
-- N’utilisez jamais « étudiant transféré » dans ce contexte scolaire. Employez un français oral contemporain et le tutoiement dans cette relation établie, sauf si la scène exige explicitement une distance formelle ; évitez les calques de l’anglais et la répétition d’un mot tendre à chaque réplique.`,
+- Dans ce lycée, dites « le nouveau » ou « le nouvel élève », jamais « étudiant transféré ». Employez un français oral actuel et le tutoiement dans la relation établie, sauf distance formelle explicite ; évitez calques et mots tendres répétés.`,
         de: `**[Language & Terminology Naturalness]**
-- The protagonist is newly arrived in this campus setting. In natural German dialogue, prefer "der Neue" or "neuer Schüler". Never use "Austauschschüler"; that means exchange student and is wrong for this premise.
-- Dialogue should sound like contemporary spoken German, not a literal translation from English/Korean/Japanese. Use du consistently in the established relationship; Sie appears only when the scene explicitly creates formal distance or a deliberate emotional slip.
-- Use “jemandem standhalten” correctly. If a gaze is the object, write “hält seinem/deinem Blick stand”; never write “hält deinem stand”.`,
+- Im Dialog heißt er „der Neue“ oder „neuer Schüler“, nie „Austauschschüler“. Schreibe modernes gesprochenes Deutsch, in der bestehenden Beziehung durchgehend du; Sie nur bei ausdrücklicher Distanz.
+- Richtig: „jemandem standhalten“ bzw. „hält seinem/deinem Blick stand“, nie „hält deinem stand“.`,
         pt: `**[Language & Terminology Naturalness]**
-- The protagonist is newly arrived in this campus setting. In Brazilian Portuguese, prefer "aluno novo" or "novato" in casual dialogue. Use "aluno transferido" only for official records when needed; do not use "transferido" by itself as a routine nickname.
-- Never use "intercambista" unless the story explicitly says exchange student. Use contemporary Brazilian Portuguese with você and natural contractions when they fit the character; never drift into European Portuguese, omit required accents, or imitate English word order.`
+- Em português brasileiro, use "aluno novo" ou "novato"; "aluno transferido" só em registro oficial e nunca "intercambista" sem essa premissa. Use você, contrações naturais e acentos corretos; evite português europeu e ordem inglesa.`
     };
     return (guards[lang] || guards.en) + "\n\n";
 }
@@ -1017,7 +1012,6 @@ function getNativeStylePolishGuard(lang, sceneName, displayName) {
 
     if (lang === 'en') {
         return `**[Natural English Voice]**
-- Use spoken contemporary English; contractions, length, and pacing follow the character and moment rather than translated VN prose or generic romance:
 ${englishCharacterLines[key] || '- Keep the current character distinct in word choice, rhythm, and emotional distance.'}
 
 `;
@@ -1025,19 +1019,13 @@ ${englishCharacterLines[key] || '- Keep the current character distinct in word c
 
     if (lang === 'ja') {
         return `**[自然な日本語の話し方]**
-- セリフは現代日本語の自然な口語にし、直訳調、硬すぎる説明口調、英語的な比喩の持ち込みを避ける。
-- 長さと間は話者と場面に合わせる。即座の反応は短くてもよく、必要な思いは不自然に切らず最後まで話してよい。
-- キャラ別の呼び方・一人称・距離感を守る:
-${japaneseCharacterLines[key] || '- 現在のキャラの一人称、呼び方、距離感を保ち、誰が話しても同じ恋愛ADV口調にしない。'}
+${japaneseCharacterLines[key] || '- 現在のキャラの一人称、呼び方、距離感を保ち、現代の自然な口語で話す。'}
 
 `;
     }
 
     if (lang === 'es') {
         return `**[Voz natural en español latinoamericano]**
-- El diálogo suena hablado, actual y natural, no como traducción literal del inglés, coreano o japonés.
-- La extensión y el ritmo siguen al personaje y al momento: una reacción puede ser breve y una idea importante puede desarrollarse sin cortes artificiales.
-- La voz del personaje manda sobre el romance genérico:
 ${spanishCharacterLines[key] || '- Mantén una voz distintiva para este personaje en vocabulario, ritmo y distancia emocional.'}
 
 `;
@@ -1045,9 +1033,6 @@ ${spanishCharacterLines[key] || '- Mantén una voz distintiva para este personaj
 
     if (lang === 'fr') {
         return `**[Voix française naturelle]**
-- Le dialogue sonne parlé, actuel et naturel, pas comme une traduction de l'anglais, du coréen ou du japonais.
-- La longueur et le rythme suivent le personnage et le moment : une réaction peut être brève, tandis qu'une pensée importante peut aller à son terme sans coupure artificielle.
-- La voix du personnage prime sur le romantisme générique :
 ${frenchCharacterLines[key] || "- Garde une voix distincte pour ce personnage dans le vocabulaire, le rythme et la distance émotionnelle."}
 
 `;
@@ -1055,9 +1040,6 @@ ${frenchCharacterLines[key] || "- Garde une voix distincte pour ce personnage da
 
     if (lang === 'de') {
         return `**[Natürliche deutsche Stimme]**
-- Dialoge klingen gesprochen, modern und natürlich, nicht wie aus dem Englischen, Koreanischen oder Japanischen übersetzt.
-- Länge und Rhythmus folgen Figur und Augenblick: Eine spontane Reaktion darf kurz sein, ein wichtiger Gedanke darf sich ohne künstliche Kürzung entfalten.
-- Charakterstimme steht über generischer Romantik:
 ${germanCharacterLines[key] || '- Gib diesem Charakter eine eigene Stimme in Wortwahl, Rhythmus und emotionaler Distanz.'}
 
 `;
@@ -1065,9 +1047,6 @@ ${germanCharacterLines[key] || '- Gib diesem Charakter eine eigene Stimme in Wor
 
     if (lang === 'pt') {
         return `**[Voz natural em português brasileiro]**
-- O diálogo soa falado, atual e natural, não como tradução literal do inglês, coreano ou japonês.
-- A extensão e o ritmo seguem a personagem e o momento: uma reação pode ser breve, e uma ideia importante pode se desenvolver sem cortes artificiais.
-- A voz da personagem vem antes do romance genérico:
 ${portugueseCharacterLines[key] || '- Mantenha uma voz distinta para esta personagem no vocabulário, no ritmo e na distância emocional.'}
 
 `;
@@ -1711,9 +1690,9 @@ ${characterOutfitGuard}
 ${characterCanonGuard}
 ${sharedCastKnowledge}
 Scene input: ${compactSceneMode} The latest message is not automatic fact. Treat user action or claims as attempts; judge them from the scene, feasibility, context, and character perception and boundaries. Do not establish the world, past, others' state, feelings, consent, or completed outcomes from the message alone. Preserve explicit user state, choice, consent, and refusal.
-Perspective: Stay inside ${aiCharName}. Narration may infer the user's response, emotion, or inner thought from their words, actions, and scene context, but must remain compatible with any state, choice, consent, or refusal explicitly stated in the current input.
-Character fit: Let action and speech follow this character, affinity, and the immediate moment instead of a generic romance pattern. Tastes and aversions are behavioral anchors for choices, distance, jealousy, and care—not a checklist to recite in every reply.
-Display: Keep stat and math markers out of visible text; record only the numeric affinity change in affinity. Use natural present-day speech.
+Perspective: Stay inside ${aiCharName}; infer the user's response, emotion, or inner thought only when compatible with explicit state, choice, consent, and refusal.
+Character fit: Let this character, affinity, and moment—not generic romance—shape action and speech. Tastes guide choices, distance, jealousy, and care, not a checklist to recite in every reply.
+Display: No stat/math markers in visible text; put only the numeric change in affinity.
 Affinity scoring: ${affinityChangeGuidance}
 ${livingInitiativeRule}
 ${thirdPersonAdultCameraRule}
@@ -1732,9 +1711,9 @@ ${characterOutfitGuard}
 ${characterCanonGuard}
 ${sharedCastKnowledge}
 장면 입력: ${compactSceneMode} 입력은 자동 사실이 아닙니다. 행동·주장은 시도로 보고 장면·가능성·맥락·인물 경계로 성립을 판단하며 타인 상태·감정·동의·완료 결과는 확정하지 않습니다.
-시점: 사용자의 말·행동·장면 맥락에서 반응·감정·속마음을 추론·서술할 수 있지만, 이번 입력에 명시한 상태·선택·동의·거절과 충돌시키지 않습니다.
-캐릭터성: 공용 로맨스 공식보다 이 인물의 성격, 현재 호감도와 바로 앞 순간에 맞춰 행동과 말을 고릅니다. 취향은 매번 꺼내는 대사 목록이 아니라 선택·거리·질투·돌봄 방식에 배게 합니다.
-표시: 화면 문장에는 점수나 계산 표식을 쓰지 말고, 호감도 변화만 affinity에 숫자로 기록합니다. 자연스러운 현재 한국어를 쓰세요.
+시점: 반응·감정·속마음을 추론·서술할 수 있지만 이번 입력에 명시한 상태·선택·동의·거절과 충돌하지 않아야 합니다.
+캐릭터성: 공용 로맨스 공식이 아니라 이 인물·호감도·바로 앞 순간에 맞춰 말하고 행동합니다. 취향은 매번 꺼내는 대사 목록이 아니라 선택·거리·질투·돌봄에 배게 합니다.
+표시: 화면에 점수·계산을 쓰지 말고 변화만 affinity에 기록합니다.
 호감도 판정: ${affinityChangeGuidance}
 ${livingInitiativeRule}
 ${thirdPersonAdultCameraRule}
@@ -1907,5 +1886,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.61';
+const PROMPT_VERSION = '2.7.62';
 window.PROMPT_VERSION = PROMPT_VERSION;
