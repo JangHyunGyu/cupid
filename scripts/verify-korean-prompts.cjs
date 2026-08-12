@@ -345,8 +345,8 @@ function verifyMainAndGalleryPrompts(context) {
         assert(mainVariantParts.dynamic.includes(signal), `main dynamic cache suffix lost value: ${signal}`);
     }
     for (const signal of ['CACHE_DYNAMIC_SCENE', 'CACHE_DYNAMIC_RELATIONSHIP']) {
-        assert(mainVariantParts.stable.includes(signal), `main stable cache prefix lost session-stable value: ${signal}`);
-        assert(!mainVariantParts.dynamic.includes(signal), `main dynamic cache suffix retained session-stable value: ${signal}`);
+        assert(!mainVariantParts.stable.includes(signal), `main stable cache prefix leaked per-turn value: ${signal}`);
+        assert(mainVariantParts.dynamic.includes(signal), `main dynamic cache suffix lost per-turn value: ${signal}`);
     }
     assert(!mainDynamicVariant.includes('턴=') && !mainDynamicVariant.includes('[현재 진행 상황]'),
         'main prompt still exposes a turn budget to the roleplay model');

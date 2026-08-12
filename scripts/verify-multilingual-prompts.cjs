@@ -472,8 +472,8 @@ for (const lang of languages) {
         assert(mainVariantParts.dynamic.includes(signal), `[${lang}] main dynamic suffix lost: ${signal}`);
     }
     for (const signal of ['CACHE_DYNAMIC_SCENE', 'CACHE_DYNAMIC_RELATIONSHIP']) {
-        assert(mainVariantParts.stable.includes(signal), `[${lang}] main stable prefix lost: ${signal}`);
-        assert(!mainVariantParts.dynamic.includes(signal), `[${lang}] main dynamic suffix retained: ${signal}`);
+        assert(!mainVariantParts.stable.includes(signal), `[${lang}] main stable prefix leaked: ${signal}`);
+        assert(mainVariantParts.dynamic.includes(signal), `[${lang}] main dynamic suffix lost: ${signal}`);
     }
     assert(getRuntimeStableHash('getFreeTalkStablePromptHash', mainStableStateBaseline)
         === getRuntimeStableHash('getFreeTalkStablePromptHash', mainDynamicVariant),
