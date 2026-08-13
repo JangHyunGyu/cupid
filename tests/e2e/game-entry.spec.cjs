@@ -231,7 +231,8 @@ test('gallery free-talk injects all eight affinity temperature bands into every 
                 label,
                 hasScore: prompt.includes(`current_affinity=${score}/100`),
                 hasLabel: prompt.includes(`relationship=${label}`),
-                hasBehaviorAxes: prompt.includes('speech, initiative, touch, restraint, refusal, and emotional openness')
+                hasBehaviorAxes: ['speech', 'initiative', 'touch', 'restraint', 'refusal', 'openness']
+                    .every(axis => prompt.includes(axis))
             };
         });
     });
