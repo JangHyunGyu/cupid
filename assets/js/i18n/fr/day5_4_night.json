@@ -1443,5 +1443,289 @@
         "text": "*Elle pose le mot rendu sur la fiche médicale verte.* S'il te reste de la peine ou de la colère à exprimer, je t'écoute. Ma réponse ne changera pas.",
         "context": "Conversation bonus juste après le BITTERSWEET END de l'infirmière. Le protagoniste a pris les soins reçus à l'infirmerie pour une affection personnelle et a donné ses coordonnées. Juwon a rendu le mot et clos la relation de consultation. Il n'y a eu ni retrouvailles adultes ni romance ; ne reviens pas sur le refus et ne crée ni dépendance ni secret.",
         "personality": "Juwon est pragmatique et attentionnée, mais n'adoucit pas sa réponse au point de donner de faux espoirs. Elle écoute la peine et les adieux tout en disant clairement que les soins professionnels n'étaient pas un signe romantique."
+    },
+    "date_choice_perfect_seo": {
+        "name": "Seoyeon",
+        "text": "I said the rest can wait until tomorrow. Before that, where are we going today.",
+        "choices": [
+            "The rooftop.",
+            "The cafe."
+        ]
+    },
+    "date_perfect_seo_roof_1": {
+        "name": "{name}",
+        "text": "*The soil is still wet. Seoyeon sets the watering can down.*"
+    },
+    "date_perfect_seo_roof_2": {
+        "name": "Seoyeon",
+        "text": "You pick the empty pot. I already picked mine."
+    },
+    "date_perfect_seo_roof_3": {
+        "name": "{name}",
+        "text": "*Wind comes through the open door. She does not fold the schedule.*"
+    },
+    "date_perfect_seo_cafe_1": {
+        "name": "{name}",
+        "text": "*Window seat. She squares the coaster first, then speaks.*"
+    },
+    "date_perfect_seo_cafe_2": {
+        "name": "Seoyeon",
+        "text": "Here again next week. You pick the time."
+    },
+    "date_perfect_seo_cafe_3": {
+        "name": "{name}",
+        "text": "*A number on the back of the receipt. Not a phone number. The next watering day.*"
+    },
+    "date_choice_perfect_yuna": {
+        "name": "Yuna",
+        "text": "There are seats outside too. Choose.",
+        "choices": [
+            "The used bookstore.",
+            "The roof."
+        ]
+    },
+    "date_perfect_yuna_book_1": {
+        "name": "{name}",
+        "text": "*Between the shelves. Yuna stops on a spine.*"
+    },
+    "date_perfect_yuna_book_2": {
+        "name": "Homme",
+        "text": "...Yuna? I did not know you still came here."
+    },
+    "date_perfect_yuna_book_3": {
+        "name": "Lee Junho",
+        "text": "It was a long time ago. I thought I did not have to say anything. ...I will get out of the way."
+    },
+    "date_perfect_yuna_book_4": {
+        "name": "Yuna",
+        "text": "*Her finger stays in the bookmark.* I am with {name} now. That is enough."
+    },
+    "date_perfect_yuna_roof_1": {
+        "name": "{name}",
+        "text": "*The secret roof. One earphone crosses the gap.*"
+    },
+    "date_perfect_yuna_roof_2": {
+        "name": "Yuna",
+        "text": "The third track. From the start this time."
+    },
+    "date_perfect_yuna_roof_3": {
+        "name": "{name}",
+        "text": "*The song ends. She does not take the earphone out. Her hand is closer.*"
+    },
+    "date_choice_perfect_dain": {
+        "name": "Dain",
+        "text": "I do not have to get on the court today. I still have places I want.",
+        "choices": [
+            "The gym.",
+            "The booth."
+        ]
+    },
+    "date_perfect_dain_gym_1": {
+        "name": "{name}",
+        "text": "*She has a ball. She does not jump. She takes the bench first.*"
+    },
+    "date_perfect_dain_gym_2": {
+        "name": "Dain",
+        "text": "Five minutes. Real five. ...If it turns into ten, do not wake me."
+    },
+    "date_perfect_dain_gym_3": {
+        "name": "{name}",
+        "text": "*Her right knee sits off the bench. The weight is on the left.*"
+    },
+    "date_perfect_dain_booth_1": {
+        "name": "{name}",
+        "text": "*The headset is huge. She touches the switch and leaves it off.*"
+    },
+    "date_perfect_dain_booth_2": {
+        "name": "Dain",
+        "text": "Following a match with words takes more air than I thought. It is still fine."
+    },
+    "date_perfect_dain_booth_3": {
+        "name": "{name}",
+        "text": "*The scoreboard is dark. She is still in the chair.*"
+    },
+    "date_choice_perfect_teacher": {
+        "name": "Professeure",
+        "text": "There is a way to walk without a title. Pick one.",
+        "choices": [
+            "The cafe.",
+            "The exhibition."
+        ]
+    },
+    "date_perfect_teacher_cafe_1": {
+        "name": "{name}",
+        "text": "*She turns the cup. There is no teacher desk here.*"
+    },
+    "date_perfect_teacher_cafe_2": {
+        "name": "Professeure",
+        "text": "If we meet next week, you say so. I already left the slot open."
+    },
+    "date_perfect_teacher_cafe_3": {
+        "name": "{name}",
+        "text": "*A note under the receipt. The time is blank. Only the place is written.*"
+    },
+    "date_perfect_teacher_museum_1": {
+        "name": "{name}",
+        "text": "*She does not stop at the plaques. She only matches your side.*"
+    },
+    "date_perfect_teacher_museum_2": {
+        "name": "Professeure",
+        "text": "You can read the labels. I will stay next to you."
+    },
+    "date_perfect_teacher_museum_3": {
+        "name": "{name}",
+        "text": "*At the exit she fixes a bag strap. No lecture.*"
+    },
+    "date_choice_perfect_nurse": {
+        "name": "Infirmière",
+        "text": "There is time with no chart. Home or out.",
+        "choices": [
+            "Home.",
+            "The park."
+        ]
+    },
+    "date_perfect_nurse_home_1": {
+        "name": "{name}",
+        "text": "*Weekend morning. The coat is on a hook. Two water glasses.*"
+    },
+    "date_perfect_nurse_home_2": {
+        "name": "Infirmière",
+        "text": "I am not opening a chart today. Just sit."
+    },
+    "date_perfect_nurse_home_3": {
+        "name": "{name}",
+        "text": "*The window is cracked. Only the second hand is loud.*"
+    },
+    "date_perfect_nurse_park_1": {
+        "name": "{name}",
+        "text": "*You skipped the hospital road. The bench came first.*"
+    },
+    "date_perfect_nurse_park_2": {
+        "name": "Infirmière",
+        "text": "I left the jokes at home. This is enough."
+    },
+    "date_perfect_nurse_park_3": {
+        "name": "{name}",
+        "text": "*Weight lands on a shoulder and stays.*"
+    },
+    "date_choice_true_seo": {
+        "name": "Seoyeon",
+        "text": "Before we go. Short.",
+        "choices": [
+            "Cafe.",
+            "Rooftop."
+        ]
+    },
+    "date_true_seo_1": {
+        "name": "Seoyeon",
+        "text": "You move the cups. I will square the coasters."
+    },
+    "date_true_seo_2": {
+        "name": "{name}",
+        "text": "*A bus passes the window. She does not check the clock.*"
+    },
+    "date_true_seo_alt_1": {
+        "name": "Seoyeon",
+        "text": "Water them and go down. If we stay long, someone will see."
+    },
+    "date_true_seo_alt_2": {
+        "name": "{name}",
+        "text": "*One pot is empty. That means bring one later.*"
+    },
+    "date_choice_true_yuna": {
+        "name": "Yuna",
+        "text": "Outside, or up.",
+        "choices": [
+            "Bookstore.",
+            "Roof."
+        ]
+    },
+    "date_true_yuna_book_1": {
+        "name": "Lee Junho",
+        "text": "...It has been a while. I did not expect to see you here."
+    },
+    "date_true_yuna_book_2": {
+        "name": "Yuna",
+        "text": "*She holds {name}'s sleeve once and lets go.* We are leaving."
+    },
+    "date_true_yuna_roof_1": {
+        "name": "Yuna",
+        "text": "You can listen without talking. The track is short."
+    },
+    "date_true_yuna_roof_2": {
+        "name": "{name}",
+        "text": "*Wind moves the cord. She does not come down from the rail.*"
+    },
+    "date_choice_true_dain": {
+        "name": "Dain",
+        "text": "Stay close a minute. Where is easier.",
+        "choices": [
+            "The bench.",
+            "The booth."
+        ]
+    },
+    "date_true_dain_1": {
+        "name": "Dain",
+        "text": "No jumps. I am just sitting."
+    },
+    "date_true_dain_2": {
+        "name": "{name}",
+        "text": "*The ball rolls to her foot and stops. She does not pick it up.*"
+    },
+    "date_true_dain_alt_1": {
+        "name": "Dain",
+        "text": "I will only touch the switch. It is not on."
+    },
+    "date_true_dain_alt_2": {
+        "name": "{name}",
+        "text": "*The headset lies upside down on the table.*"
+    },
+    "date_choice_true_teacher": {
+        "name": "Professeure",
+        "text": "Class is over. What is left is this side.",
+        "choices": [
+            "A table.",
+            "The exhibition."
+        ]
+    },
+    "date_true_teacher_1": {
+        "name": "Professeure",
+        "text": "You set next week. I will not start with no."
+    },
+    "date_true_teacher_2": {
+        "name": "{name}",
+        "text": "*The coffee cools. Neither of you checks the time.*"
+    },
+    "date_true_teacher_alt_1": {
+        "name": "Professeure",
+        "text": "Skip the labels. Stay next to me."
+    },
+    "date_true_teacher_alt_2": {
+        "name": "{name}",
+        "text": "*Under the exit lights, a strap gets fixed.*"
+    },
+    "date_choice_true_nurse": {
+        "name": "Infirmière",
+        "text": "No chart. Where.",
+        "choices": [
+            "Home.",
+            "A bench."
+        ]
+    },
+    "date_true_nurse_1": {
+        "name": "Infirmière",
+        "text": "I will pour water. It is not medicine."
+    },
+    "date_true_nurse_2": {
+        "name": "{name}",
+        "text": "*The tap runs once and stops.*"
+    },
+    "date_true_nurse_alt_1": {
+        "name": "Infirmière",
+        "text": "Let us skip the hospital side."
+    },
+    "date_true_nurse_alt_2": {
+        "name": "{name}",
+        "text": "*A hand rests on the peeled paint of the bench.*"
     }
 }

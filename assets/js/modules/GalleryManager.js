@@ -51,7 +51,10 @@ class GalleryManager {
             'Seoyeon': 'seyoun', 'Yuna': 'yuna', 'Dain': 'dain',
             'Teacher': 'teacher', 'Nurse': 'nurse',
             '서연': 'seyoun', '유나': 'yuna', '다인': 'dain',
-            '담임선생님': 'teacher', '보건선생님': 'nurse'
+            '담임선생님': 'teacher', '보건선생님': 'nurse',
+            'Minsu': 'minsu', '민수': 'minsu',
+            'Haeun': 'haeun', '하은': 'haeun',
+            'Lee Junho': 'junho', '이준호': 'junho', 'イ・ジュンホ': 'junho'
         };
     }
 

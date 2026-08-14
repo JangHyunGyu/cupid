@@ -396,6 +396,18 @@ class GalleryProgress {
         return this.data.characters?.[charId]?.freeTalkCount || 0;
     }
 
+    getLastOuting(charId) {
+        this.refresh();
+        return this.data.characters?.[charId]?.lastOuting || '';
+    }
+
+    setLastOuting(charId, placeId) {
+        this.refresh();
+        if (!this.data.characters[charId]) return;
+        this.data.characters[charId].lastOuting = String(placeId || '');
+        this.save();
+    }
+
     /**
      * 갤러리 프리토킹 관계 사건 기본 상태
      * 사건 빈도는 세션이 아니라 캐릭터별 정상 완료 턴으로 계산합니다.

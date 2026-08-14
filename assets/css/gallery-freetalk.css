@@ -39,6 +39,70 @@
     cursor: pointer;
 }
 
+.gft-outing-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 80;
+    background: rgba(8, 6, 10, 0.72);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gft-outing-card {
+    width: min(520px, 100%);
+    background: #1b1418;
+    border: 1px solid rgba(232, 138, 160, 0.28);
+    border-radius: 18px;
+    padding: 22px 20px 18px;
+    color: #f4e9ed;
+}
+
+.gft-outing-card h3 {
+    margin: 0 0 12px;
+    font-size: 1.15rem;
+}
+
+.gft-outing-birthday {
+    margin: 0 0 14px;
+    color: #f0b7c4;
+    font-size: 0.92rem;
+}
+
+.gft-outing-grid {
+    display: grid;
+    gap: 10px;
+}
+
+.gft-outing-place {
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.04);
+    color: inherit;
+    border-radius: 12px;
+    padding: 12px 14px;
+    cursor: pointer;
+}
+
+.gft-outing-place.selected,
+.gft-outing-place:hover {
+    border-color: rgba(232, 138, 160, 0.55);
+    background: rgba(232, 138, 160, 0.12);
+}
+
+.gft-outing-name {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.gft-outing-hint {
+    display: block;
+    font-size: 0.85rem;
+    color: #cbb6bc;
+}
+
 .freetalk-btn.locked:hover {
     background: rgba(100, 100, 100, 0.5);
     color: #aaa;

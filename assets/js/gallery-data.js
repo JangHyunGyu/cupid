@@ -79,7 +79,7 @@ class GalleryData {
                 bust: '34-21-34 65E',
                 hobby: '음악 감상, 소설 쓰기',
                 personality: '관찰형, 신중함',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'laugh', 'pout', 'bikini']
             },
 
             // 다인 - 코트 밖의 진로를 찾는 배구부원
@@ -130,7 +130,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: '원예, 명상',
                 personality: '실무적, 침착함',
-                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'smile', 'sad', 'bikini']
             }
         },
 
@@ -168,7 +168,7 @@ class GalleryData {
                 bust: '34-21-34 65E',
                 hobby: 'Music, Writing Fiction',
                 personality: 'Observant, Cautious',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'laugh', 'pout', 'bikini']
             },
 
             // Dain - 코트 밖의 진로를 찾는 배구부원
@@ -219,7 +219,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: 'Gardening, Meditation',
                 personality: 'Practical, Calm',
-                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'smile', 'sad', 'bikini']
             }
         },
 
@@ -253,7 +253,7 @@ class GalleryData {
                 bust: '34-21-34 65E',
                 hobby: 'Música, Escribir novelas',
                 personality: 'Observadora, Prudente',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'laugh', 'pout', 'bikini']
             },
             dain: {
                 id: 'dain',
@@ -298,7 +298,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: 'Jardinería, Meditación',
                 personality: 'Práctica, Serena',
-                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'smile', 'sad', 'bikini']
             }
         },
 
@@ -332,7 +332,7 @@ class GalleryData {
                 bust: '34-21-34 65E',
                 hobby: '音楽鑑賞、小説を書くこと',
                 personality: '観察力が鋭い、慎重',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'laugh', 'pout', 'bikini']
             },
             dain: {
                 id: 'dain',
@@ -377,7 +377,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: '園芸、瞑想',
                 personality: '実務的、冷静',
-                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'smile', 'sad', 'bikini']
             }
         },
 
@@ -411,7 +411,7 @@ class GalleryData {
                 bust: '34-21-34 65E',
                 hobby: 'Musique, Écriture de romans',
                 personality: 'Observatrice, Prudente',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'laugh', 'pout', 'bikini']
             },
             dain: {
                 id: 'dain',
@@ -456,7 +456,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: 'Jardinage, Méditation',
                 personality: 'Pragmatique, Calme',
-                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'smile', 'sad', 'bikini']
             }
         },
 
@@ -490,7 +490,7 @@ class GalleryData {
                 bust: '34-21-34 65E',
                 hobby: 'Musik, Romane schreiben',
                 personality: 'Aufmerksam, Bedacht',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'laugh', 'pout', 'bikini']
             },
             dain: {
                 id: 'dain',
@@ -535,7 +535,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: 'Gartenarbeit, Meditation',
                 personality: 'Praktisch, Ruhig',
-                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'smile', 'sad', 'bikini']
             }
         },
 
@@ -569,7 +569,7 @@ class GalleryData {
                 bust: '34-21-34 65E',
                 hobby: 'Música, Escrever romances',
                 personality: 'Observadora, Cautelosa',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'laugh', 'pout', 'bikini']
             },
             dain: {
                 id: 'dain',
@@ -614,7 +614,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: 'Jardinagem, Meditação',
                 personality: 'Prática, Tranquila',
-                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'smile', 'sad', 'bikini']
             }
         }
     };

@@ -173,7 +173,7 @@ window.__cupidShowGalleryLoadError = function() {
 
 (function () {
     // 로더 설정 로드 (동기)
-    document.write('<script src="assets/js/loaders/config.js?v=2.9.150" onerror="window.__cupidShowGalleryLoadError && window.__cupidShowGalleryLoadError()"><\/script>');
+    document.write('<script src="assets/js/loaders/config.js?v=2.9.151" onerror="window.__cupidShowGalleryLoadError && window.__cupidShowGalleryLoadError()"><\/script>');
 })();
 
 // config.js 로드 후 실행
@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // 갤러리 스크립트 로드 (document.write는 동기적)
 (function () {
     const basePath = 'assets/js/';
-    const version = '2.9.150';
+    const version = '2.9.151';
 
     const scripts = [
         // 0. 모듈 설정 (ASSET_VERSION 등)
@@ -196,6 +196,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'gallery-progress.js',
         // 한국어 대화 예시와 공통 프롬프트 규칙
         'freetalk-core.js',
+        'gallery-outings.js',
         'example-dialogues-ko.js',
         'prompts.js',
 

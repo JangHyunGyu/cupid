@@ -15,6 +15,34 @@ function read(relativePath) {
     return fs.readFileSync(path.join(__dirname, '..', relativePath), 'utf8');
 }
 
+test('gallery outings stay after the cache boundary and birthdays are calendar-only', () => {
+    const outingSource = read('assets/js/gallery-outings.js');
+    const sandbox = { window: {}, Object, String, Date };
+    vm.runInNewContext(outingSource, sandbox);
+    const outings = sandbox.window.CupidGalleryOutings;
+    assert.equal(outings.isBirthday('seyoun', new Date(2026, 2, 14)), true);
+    assert.equal(outings.isBirthday('seyoun', new Date(2026, 2, 15)), false);
+    const rooftop = outings.getPlace('seyoun', 'rooftop');
+    const block = outings.buildOutingRuntimeBlock({
+        lang: 'ko',
+        characterName: '서연',
+        place: rooftop,
+        birthday: true
+    });
+    assert.match(block, /오늘 외출/);
+    assert.match(block, /생일/);
+    const freetalk = read('assets/js/gallery-freetalk.js');
+    const boundary = freetalk.indexOf('===CACHE_BOUNDARY===');
+    const tailHelper = freetalk.indexOf('_buildOutingDynamicTail');
+    assert.ok(boundary !== -1 && tailHelper !== -1);
+    assert.match(freetalk, /currentOuting/);
+    assert.match(read('assets/js/gallery-ui-character.js'), /_showOutingPicker/);
+    assert.match(read('assets/js/gallery-progress.js'), /perfectEndingCleared/);
+    assert.doesNotMatch(read('assets/js/gallery-progress.js'), /trueEndingCleared && this\.isFreeTalkUnlocked/);
+    assert.match(read('assets/js/scenario/day5_4_night.js'), /date_choice_perfect_yuna/);
+    assert.equal(require('node:fs').existsSync(require('node:path').join(__dirname, '../assets/images/characters/junho_normal.png')), true);
+});
+
 test('cache fingerprint ignores dynamic context after the boundary', () => {
     const first = core.appendDynamicContext('stable prompt', 'turn one');
     const second = core.appendDynamicContext('stable prompt', 'turn two');

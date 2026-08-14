@@ -105,7 +105,7 @@ class CharacterRenderer {
                 this._showFreeTalkLockPopup(charId, charName);
             } else if (charId && window.galleryFreeTalk) {
                 this.closeModal();
-                window.galleryFreeTalk.open(charId);
+                this._showOutingPicker(charId);
             }
             return;
         }
@@ -416,6 +416,49 @@ class CharacterRenderer {
      * @param {string} charId - 캐릭터 ID
      * @param {string} charName - 캐릭터 이름
      */
+    _showOutingPicker(charId) {
+        const outings = window.CupidGalleryOutings;
+        const talk = window.galleryFreeTalk;
+        if (!outings || !talk) {
+            window.galleryFreeTalk?.open(charId);
+            return;
+        }
+        const places = outings.getPlaces(charId);
+        if (!places.length) {
+            talk.open(charId);
+            return;
+        }
+        const lang = this.ui.lang;
+        const lastId = this.ui.progress.getLastOuting?.(charId) || places[0].id;
+        const birthday = outings.isBirthday(charId);
+        const overlay = document.createElement('div');
+        overlay.className = 'gft-outing-overlay';
+        overlay.innerHTML = `
+            <div class="gft-outing-card" role="dialog" aria-modal="true">
+                <h3>${outings.t(outings.pickerCopy.title, lang)}</h3>
+                ${birthday ? `<p class="gft-outing-birthday">${outings.t(outings.pickerCopy.birthday, lang)}</p>` : ''}
+                <div class="gft-outing-grid">
+                    ${places.map(place => `
+                        <button type="button" class="gft-outing-place${place.id === lastId ? ' selected' : ''}" data-place-id="${place.id}">
+                            <span class="gft-outing-name">${outings.t(place.names, lang)}</span>
+                            <span class="gft-outing-hint">${outings.t(place.hints, lang)}</span>
+                        </button>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+        const start = (placeId) => {
+            overlay.remove();
+            talk.open(charId, placeId);
+        };
+        overlay.addEventListener('click', (event) => {
+            if (event.target === overlay) overlay.remove();
+            const btn = event.target.closest('.gft-outing-place');
+            if (btn) start(btn.dataset.placeId);
+        });
+        document.body.appendChild(overlay);
+    }
+
     _showFreeTalkLockPopup(charId, charName) {
         const L = (ko, en, es, ja, fr, de, pt) => ({ ko, en, es, ja, fr, de, pt })[this.ui.lang] || en;
 

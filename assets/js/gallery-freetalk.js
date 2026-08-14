@@ -56,6 +56,7 @@ class GalleryFreeTalk {
 
         this.currentCharId = null;
         this.currentCharKey = null;
+        this.currentOuting = null;
         this.chatHistory = [];
         this.isProcessing = false;
         this.isTyping = false;
@@ -110,10 +111,10 @@ class GalleryFreeTalk {
         // 캐릭터별 표정 매핑
         this.CHAR_EXPRESSIONS = {
             seyoun: ['normal', 'shy', 'shy2', 'pout', 'angry', 'cry', 'laugh', 'worried', 'sad', 'flushed'],
-            yuna: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried'],
+            yuna: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'laugh', 'pout'],
             dain: ['normal', 'shy', 'angry', 'laugh', 'sad', 'pout', 'flushed'],
             teacher: ['normal', 'angry', 'shy', 'sad', 'smile', 'flushed', 'worried'],
-            nurse: ['normal', 'angry', 'shy', 'flushed', 'worried']
+            nurse: ['normal', 'angry', 'shy', 'flushed', 'worried', 'smile', 'sad']
         };
 
         // 캐릭터별 연인 모드 성격 프롬프트 (7개 언어)
@@ -459,12 +460,17 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
      * 프리토킹 오버레이 열기
      * @param {string} charId - 캐릭터 ID (예: 'seyoun')
      */
-    open(charId) {
+    open(charId, outingId = '') {
         this._invalidateGalleryTalkContext();
         const openEpoch = this._galleryTalkEpoch;
         this.currentCharId = charId;
         this.currentCharKey = this.CHAR_ID_TO_KEY[charId];
         if (!this.currentCharKey) return;
+        const outings = window.CupidGalleryOutings;
+        this.currentOuting = outings?.getPlace?.(charId, outingId) || null;
+        if (outings && this.progress) {
+            this.progress.setLastOuting?.(charId, this.currentOuting?.id || outingId || '');
+        }
 
         this.overlayEl = document.getElementById('gallery-freetalk-overlay');
         if (!this.overlayEl) return;
@@ -558,7 +564,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
      */
     _createOverlay(charId) {
         const charName = this.CHAR_NAMES[charId]?.[this.lang] || charId;
-        const bgUrl = this.CHAR_BACKGROUNDS[charId];
+        const bgUrl = this.currentOuting?.background || this.CHAR_BACKGROUNDS[charId];
         const currentAffinity = this.progress?.getCurrentAffinity?.(charId) || 0;
         const affinityTone = this._getAffinityTone(currentAffinity);
         const affinityValue = this._formatAffinityValue(currentAffinity);
@@ -2377,7 +2383,7 @@ ${compactGalleryGuidance}
 ${affinityRelationshipGuard}
 ${jsonOutputContract}
 ===CACHE_BOUNDARY===
-${compactGalleryState}`;
+${compactGalleryState}${this._buildOutingDynamicTail(charId, charName)}`;
         }
         return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}한국어로만 답하세요. 졸업 후 독립한 성인 연인 두 사람만 등장하는 갤러리 프리토킹입니다. 당신은 ${charName}이고, 상대는 성인 연인입니다. 현재의 학교 장면이 아닙니다.
 캐릭터: ${personality}
@@ -2393,7 +2399,18 @@ ${compactGalleryGuidance}
 ${affinityRelationshipGuard}
 ${jsonOutputContract}
 ===CACHE_BOUNDARY===
-${compactGalleryState}`;
+${compactGalleryState}${this._buildOutingDynamicTail(charId, charName)}`;
+    }
+
+    _buildOutingDynamicTail(charId, charName) {
+        const outings = window.CupidGalleryOutings;
+        if (!outings) return '';
+        return outings.buildOutingRuntimeBlock({
+            lang: this.lang,
+            characterName: charName,
+            place: this.currentOuting || outings.getPlace(charId),
+            birthday: outings.isBirthday(charId)
+        });
     }
 
     // =========================================================================
