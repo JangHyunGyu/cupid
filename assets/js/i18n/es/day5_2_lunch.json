@@ -198,5 +198,50 @@
     "tour_dain_end_2": {
         "name": "{name}",
         "text": "*Dain hace rodar bajo la palma la superficie del balón, en lugar de tocarse la rodilla.*"
+    },
+    "tour_co_branch": {},
+    "tour_co_event_1": {
+        "name": "{name}",
+        "text": "*Suena el timbre del almuerzo, pero la fila es corta. En el pasillo se oyen tapas que se abren y se cierran.*"
+    },
+    "tour_co_event_2": {
+        "name": "{name}",
+        "text": "*Un chaleco del evento cuelga de una silla. Nadie pregunta quién lo llevó.*"
+    },
+    "tour_co_seo_1": {
+        "name": "{name}",
+        "text": "*La puerta de la azotea está abierta. Seoyeon se apoya en el marco, no en la baranda.*"
+    },
+    "tour_co_seo_2": {
+        "name": "Seoyeon",
+        "text": "Ya devolví la llave. Por hoy, hasta aquí."
+    },
+    "tour_co_seo_3": {
+        "name": "{name}",
+        "text": "*La esquina del portapapeles golpea el marco. No lo acomoda.*"
+    },
+    "tour_co_yuna_1": {
+        "name": "{name}",
+        "text": "*El sofá del anexo. Yuna enrolla la correa del bolso en vez de abrir un libro.*"
+    },
+    "tour_co_yuna_2": {
+        "name": "Yuna",
+        "text": "No voy a enseñarte el final. Hoy no."
+    },
+    "tour_co_yuna_3": {
+        "name": "{name}",
+        "text": "*La luz de la ventana llega al asiento vacío. Yuna no se sienta ahí.*"
+    },
+    "tour_co_dain_1": {
+        "name": "{name}",
+        "text": "*Las luces del gimnasio están encendidas. El balón sigue en el cajón.*"
+    },
+    "tour_co_dain_2": {
+        "name": "Dain",
+        "text": "Piedra, papel o tijera, mañana. Hoy me quedo de pie."
+    },
+    "tour_co_dain_3": {
+        "name": "{name}",
+        "text": "*Dain tira una vez de la muñequera y la suelta.*"
     }
 }

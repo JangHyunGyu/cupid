@@ -9,12 +9,18 @@
     "morning5_caught_teacher_counteroffer": {
         "name": "Professeure principale",
         "text": "*Le matin, dans la salle de classe, je pose mon téléphone pour montrer une photo de mon brouillon à ma professeure principale. L'écran s'allume sur un message de la fille avec qui j'étais hier soir : 'Ce qui s'est passé hier reste entre nous, d'accord ?' La professeure le lit jusqu'au bout et retire sa main du téléphone.* Tu as ignoré mon message hier soir pour retrouver cette fille ?",
-        "choices": ["Lui raconter sans rien cacher ce qui s'est passé hier soir", "Prétendre que ce n'était rien d'important"]
+        "choices": [
+            "Lui raconter sans rien cacher ce qui s'est passé hier soir",
+            "Prétendre que ce n'était rien d'important"
+        ]
     },
     "morning5_caught_nurse_counteroffer": {
         "name": "Infirmière",
         "text": "*Au moment où je pose mon téléphone sur la table d'examen, l'écran s'allume. Un message de la fille avec qui j'étais hier soir apparaît : 'Ce qui s'est passé hier reste entre nous, d'accord ?' L'infirmière commence à sourire comme d'habitude, puis son expression s'efface lentement.* Alors tu n'as pas raté mon message hier. Tu étais avec cette fille ?",
-        "choices": ["Lui raconter sans rien cacher ce qui s'est passé hier soir", "Prétendre que ce n'était rien d'important"]
+        "choices": [
+            "Lui raconter sans rien cacher ce qui s'est passé hier soir",
+            "Prétendre que ce n'était rien d'important"
+        ]
     },
     "morning5_caught_teacher_honest": {
         "name": "Professeure principale",
@@ -623,5 +629,11 @@
     "hidden_nurse_d5_choice_trap": {
         "name": "Infirmière",
         "text": "C'est l'inverse. Cette carte n'est pas faite pour que tu gères tout seul."
+    },
+    "morning5_after_counteroffer_hidden_check": {},
+    "hidden_nurse_d5_after_co_check": {},
+    "morning5_after_counteroffer": {
+        "name": "{name}",
+        "text": "*Une feuille d’appel glisse du bureau. Personne ne la ramasse. L’annonce de la fête passe d’abord.*"
     }
 }

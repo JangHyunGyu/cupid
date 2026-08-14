@@ -129,7 +129,8 @@ function follow(startSceneId, state, options = {}) {
     applyScene(scene, state);
 
     if (scene.choices?.length > 0) {
-      const choiceIndex = choiceSelections[sceneId];
+      let choiceIndex = choiceSelections[sceneId];
+      if (choiceIndex === undefined && String(sceneId).startsWith('date_choice_')) choiceIndex = 0;
       if (choiceIndex === undefined) break;
 
       const choice = scene.choices[choiceIndex];
@@ -198,6 +199,22 @@ const tests = [
     forbidden: ['after5_last_chance_1', 'after5_last_chance_choice']
   },
 
+  {
+    name: 'Counteroffer blocks Perfect(Seoyeon)',
+    expected: 'day5_seo_ending_freetalk_bittersweet',
+    affinities: { Seoyeon: 95 },
+    flags: ['route_seoyeon', 'day4_confession_accepted', 'day4_took_yuna_counteroffer', 'day4_counteroffer_penalty_deferred', 'day5_confessed_counteroffer', 'day5_abandoned_seoyeon'],
+    required: ['co_bitter_seo_1', 'bitter_epilogue_1'],
+    forbidden: ['perfect_seo_1', 'true_seo_1', 'day5_ending_good', 'bitter_seo_2']
+  },
+  {
+    name: 'Counteroffer blocks hidden teacher Perfect',
+    expected: 'day5_teacher_ending_freetalk_bittersweet',
+    affinities: { Teacher: 95, Seoyeon: 80 },
+    flags: ['day4_took_seoyeon_counteroffer', 'day4_counteroffer_target_teacher', 'day4_counteroffer_penalty_deferred', 'homeroom_day5', 'day5_abandoned_teacher'],
+    required: ['co_bitter_teacher_1', 'hidden_bitter_homeroom_ending_title'],
+    forbidden: ['hidden_perfect_homeroom_1', 'hidden_true_homeroom_1', 'hidden_good_homeroom_1']
+  },
   { name: 'Bittersweet(Seoyeon)', expected: 'day5_seo_ending_freetalk_bittersweet', affinities: { Seoyeon: 20 }, flags: ['route_seoyeon', 'day4_confession_accepted'], required: ['bitter_seo_1'] },
   { name: 'Bittersweet(Yuna)', expected: 'day5_yuna_ending_freetalk_bittersweet', affinities: { Yuna: 20 }, flags: ['route_yuna', 'day4_confession_accepted'], required: ['bitter_yuna_1'] },
   { name: 'Bittersweet(Dain)', expected: 'day5_dain_ending_freetalk_bittersweet', affinities: { Dain: 20 }, flags: ['route_dain', 'day4_confession_accepted'], required: ['bitter_dain_1'] },

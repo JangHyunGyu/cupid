@@ -1,8 +1,5 @@
 {
-    "after5_start": {
-        "name": "{name}",
-        "text": "*The event is winding down. In the hall, I run into the two people I didn't choose.*"
-    },
+    "after5_start": {},
     "after5_waited_start_branch": {
         "name": "System",
         "text": ""
@@ -390,5 +387,79 @@
     "after5_defer_yuna": {
         "name": "Yuna",
         "text": "*She pulls the book back to her chest.* Okay. Even though you were the one who asked me to wait."
+    },
+    "after5_co_abandoned_branch": {},
+    "after5_co_tempter_branch": {},
+    "after5_co_start": {
+        "name": "{name}",
+        "text": "*The event winds down. The faces left in the hallway are the same ones from this morning.*"
+    },
+    "after5_co_seo_1": {
+        "name": "Seoyeon",
+        "text": "*She pushes her glasses up, then down.* I already handed out the schedule."
+    },
+    "after5_co_seo_2": {
+        "name": "Seoyeon",
+        "text": "There is no room left to talk today. Go."
+    },
+    "after5_co_yuna_1": {
+        "name": "Yuna",
+        "text": "*She puts the bookmark in her bag.* I left the board empty."
+    },
+    "after5_co_yuna_2": {
+        "name": "Yuna",
+        "text": "Do not follow me. Not today."
+    },
+    "after5_co_dain_1": {
+        "name": "Dain",
+        "text": "*She shoves the ball into the bin.* I took your name off the partner list."
+    },
+    "after5_co_dain_2": {
+        "name": "Dain",
+        "text": "See you. Laughing right now is a bit much."
+    },
+    "after5_co_teacher_1": {
+        "name": "Homeroom Teacher",
+        "text": "*She closes the attendance book.* Another teacher has the event."
+    },
+    "after5_co_teacher_2": {
+        "name": "Homeroom Teacher",
+        "text": "Do not come to the staff room today."
+    },
+    "after5_co_nurse_1": {
+        "name": "School Nurse",
+        "text": "*She puts the chart in a drawer.* That is all for counseling."
+    },
+    "after5_co_nurse_2": {
+        "name": "School Nurse",
+        "text": "If you are hurt, go to someone else. Not me today."
+    },
+    "after5_co_tempter_seo_1": {
+        "name": "Seoyeon",
+        "text": "*She pockets the rooftop keychain.* I went first yesterday."
+    },
+    "after5_co_tempter_seo_2": {
+        "name": "Seoyeon",
+        "text": "I still will not hold you here today."
+    },
+    "after5_co_tempter_yuna_1": {
+        "name": "Yuna",
+        "text": "*The annex photo is still on her lock screen.* I called you."
+    },
+    "after5_co_tempter_yuna_2": {
+        "name": "Yuna",
+        "text": "Do not come with me now. That is enough."
+    },
+    "after5_co_tempter_dain_1": {
+        "name": "Dain",
+        "text": "*She presses the tape on her knee.* I was the one who told you to stay yesterday."
+    },
+    "after5_co_tempter_dain_2": {
+        "name": "Dain",
+        "text": "I will not call first today."
+    },
+    "after5_normal_start": {
+        "name": "{name}",
+        "text": "*The event is winding down. In the hall, I run into the two people I didn't choose.*"
     }
 }

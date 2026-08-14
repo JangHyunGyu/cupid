@@ -15,6 +15,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "branches": [
             { "condition": "day3_caught_multiple_dates", "next": "day5_ending_mayhem" },
             { "condition": "ending_harem", "next": "day5_ending_harem" },
+            { "condition": "day4_counteroffer_penalty_deferred", "next": "ending_counteroffer_bitter" },
             { "condition": "day5_last_chance_path", "next": "ending_last_chance_resolve" },
             { "condition": "both_hidden_day5", "next": "hidden_dual_route_1" },
             { "condition": "homeroom_day5", "next": "hidden_perfect_homeroom_check" },
@@ -24,6 +25,98 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
             { "condition": "day4_waited", "next": "day5_ending_friend" },
             { "next": "day5_ending_alone" }
         ]
+    },
+    "ending_counteroffer_bitter": {
+        "background": "assets/images/background/park.png",
+        "character": null,
+        "bgm": "night2.mp3",
+        "setFlags": ["ending_bittersweet"],
+        "routeBeforeRender": true,
+        "branches": [
+            { "condition": "day4_counteroffer_target_teacher", "next": "co_bitter_teacher_1" },
+            { "condition": "day4_counteroffer_target_nurse", "next": "co_bitter_nurse_1" },
+            { "condition": "route_seoyeon", "next": "co_bitter_seo_1" },
+            { "condition": "route_yuna", "next": "co_bitter_yuna_1" },
+            { "condition": "route_dain", "next": "co_bitter_dain_1" },
+            { "next": "co_bitter_seo_1" }
+        ]
+    },
+    "co_bitter_seo_1": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "next": "co_bitter_seo_2"
+    },
+    "co_bitter_seo_2": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "next": "co_bitter_seo_3"
+    },
+    "co_bitter_seo_3": {
+        "background": "assets/images/background/ending_bittersweet.png",
+        "character": null,
+        "next": "bitter_epilogue_1"
+    },
+    "co_bitter_yuna_1": {
+        "background": "assets/images/background/bookstore.png",
+        "character": "assets/images/characters/yuna_sad.png",
+        "next": "co_bitter_yuna_2"
+    },
+    "co_bitter_yuna_2": {
+        "background": "assets/images/background/bookstore.png",
+        "character": "assets/images/characters/yuna_sad.png",
+        "next": "co_bitter_yuna_3"
+    },
+    "co_bitter_yuna_3": {
+        "background": "assets/images/background/ending_bittersweet.png",
+        "character": null,
+        "next": "bitter_epilogue_1"
+    },
+    "co_bitter_dain_1": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "next": "co_bitter_dain_2"
+    },
+    "co_bitter_dain_2": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "next": "co_bitter_dain_3"
+    },
+    "co_bitter_dain_3": {
+        "background": "assets/images/background/ending_bittersweet.png",
+        "character": null,
+        "next": "bitter_epilogue_1"
+    },
+    "co_bitter_teacher_1": {
+        "background": "assets/images/background/school_hallway.png",
+        "backgroundVariant": "empty",
+        "character": "assets/images/characters/teacher_sad.png",
+        "next": "co_bitter_teacher_2"
+    },
+    "co_bitter_teacher_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "backgroundVariant": "empty",
+        "character": "assets/images/characters/teacher_sad.png",
+        "next": "co_bitter_teacher_3"
+    },
+    "co_bitter_teacher_3": {
+        "background": "assets/images/background/ending_bittersweet_teacher.png",
+        "character": null,
+        "next": "hidden_bitter_homeroom_ending_title"
+    },
+    "co_bitter_nurse_1": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_worried.png",
+        "next": "co_bitter_nurse_2"
+    },
+    "co_bitter_nurse_2": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_worried.png",
+        "next": "co_bitter_nurse_3"
+    },
+    "co_bitter_nurse_3": {
+        "background": "assets/images/background/ending_bittersweet_nurse.png",
+        "character": null,
+        "next": "hidden_bitter_nurse_ending_title"
     },
     "ending_last_chance_resolve": {
         "background": "assets/images/background/park.png",

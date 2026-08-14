@@ -9,6 +9,78 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
 
 (() => {
     const scenes = {
+    "tour_co_branch": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "routeBeforeRender": true,
+        "branches": [
+            { "condition": "day4_counteroffer_target_teacher", "next": "tour_co_event_1" },
+            { "condition": "day4_counteroffer_target_nurse", "next": "tour_co_event_1" },
+            { "condition": "route_seoyeon", "next": "tour_co_seo_1" },
+            { "condition": "route_yuna", "next": "tour_co_yuna_1" },
+            { "condition": "route_dain", "next": "tour_co_dain_1" },
+            { "next": "tour_co_event_1" }
+        ]
+    },
+    "tour_co_event_1": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "bgm": "sunset1.mp3",
+        "next": "tour_co_event_2"
+    },
+    "tour_co_event_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "after5_start"
+    },
+    "tour_co_seo_1": {
+        "background": "assets/images/background/top_school.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "bgm": "sunset1.mp3",
+        "next": "tour_co_seo_2"
+    },
+    "tour_co_seo_2": {
+        "background": "assets/images/background/top_school.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "next": "tour_co_seo_3"
+    },
+    "tour_co_seo_3": {
+        "background": "assets/images/background/top_school.png",
+        "character": "assets/images/characters/seyoun_pout.png",
+        "next": "after5_start"
+    },
+    "tour_co_yuna_1": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_sad.png",
+        "bgm": "sunset1.mp3",
+        "next": "tour_co_yuna_2"
+    },
+    "tour_co_yuna_2": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_sad.png",
+        "next": "tour_co_yuna_3"
+    },
+    "tour_co_yuna_3": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_pout.png",
+        "next": "after5_start"
+    },
+    "tour_co_dain_1": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "bgm": "sunset1.mp3",
+        "next": "tour_co_dain_2"
+    },
+    "tour_co_dain_2": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "next": "tour_co_dain_3"
+    },
+    "tour_co_dain_3": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_angry.png",
+        "next": "after5_start"
+    },
     "tour_seo_1": {
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/seyoun_normal.png",

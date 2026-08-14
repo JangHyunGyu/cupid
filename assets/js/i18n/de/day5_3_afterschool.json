@@ -1,8 +1,5 @@
 {
-    "after5_start": {
-        "name": "{name}",
-        "text": "*Die Veranstaltung neigt sich dem Ende zu. Auf dem Flur begegne ich den beiden, für die ich mich nicht entschieden habe.*"
-    },
+    "after5_start": {},
     "after5_waited_start_branch": {
         "name": "System",
         "text": ""
@@ -390,5 +387,79 @@
     "after5_defer_yuna": {
         "name": "Yuna",
         "text": "*Sie zieht das Buch wieder an die Brust.* Verstanden. Obwohl du mich gebeten hast zu warten."
+    },
+    "after5_co_abandoned_branch": {},
+    "after5_co_tempter_branch": {},
+    "after5_co_start": {
+        "name": "{name}",
+        "text": "*Die Veranstaltung endet. Im Flur stehen dieselben Gesichter wie heute Morgen.*"
+    },
+    "after5_co_seo_1": {
+        "name": "Seoyeon",
+        "text": "*Sie schiebt die Brille hoch und wieder runter.* Den Plan habe ich schon verteilt."
+    },
+    "after5_co_seo_2": {
+        "name": "Seoyeon",
+        "text": "Heute ist kein Platz mehr zum Reden. Geh."
+    },
+    "after5_co_yuna_1": {
+        "name": "Yuna",
+        "text": "*Sie steckt das Lesezeichen in die Tasche.* Das Brett habe ich leer gelassen."
+    },
+    "after5_co_yuna_2": {
+        "name": "Yuna",
+        "text": "Komm nicht hinterher. Heute nicht."
+    },
+    "after5_co_dain_1": {
+        "name": "Dain",
+        "text": "*Sie schiebt den Ball in die Kiste.* Den Partner habe ich gestrichen."
+    },
+    "after5_co_dain_2": {
+        "name": "Dain",
+        "text": "Tschüss. Lachen ist gerade schwierig."
+    },
+    "after5_co_teacher_1": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie klappt das Klassenbuch zu.* Die Veranstaltung übernimmt eine andere Lehrkraft."
+    },
+    "after5_co_teacher_2": {
+        "name": "Klassenlehrerin",
+        "text": "Komm heute nicht ins Lehrerzimmer."
+    },
+    "after5_co_nurse_1": {
+        "name": "Schulkrankenschwester",
+        "text": "*Sie legt die Kartei in die Schublade.* Die Beratung ist hier zu Ende."
+    },
+    "after5_co_nurse_2": {
+        "name": "Schulkrankenschwester",
+        "text": "Wenn dir etwas fehlt, geh zu jemand anderem. Heute nicht zu mir."
+    },
+    "after5_co_tempter_seo_1": {
+        "name": "Seoyeon",
+        "text": "*Sie steckt den Dach-Anhänger ein.* Gestern war ich zuerst dran."
+    },
+    "after5_co_tempter_seo_2": {
+        "name": "Seoyeon",
+        "text": "Trotzdem halte ich dich heute nicht fest."
+    },
+    "after5_co_tempter_yuna_1": {
+        "name": "Yuna",
+        "text": "*Das Foto vom Anbau steht noch auf dem Sperrbildschirm.* Ich habe dich gerufen."
+    },
+    "after5_co_tempter_yuna_2": {
+        "name": "Yuna",
+        "text": "Komm jetzt nicht mit. Das reicht."
+    },
+    "after5_co_tempter_dain_1": {
+        "name": "Dain",
+        "text": "*Sie drückt das Tape am Knie fest.* Ich habe gestern gesagt, du sollst bleiben."
+    },
+    "after5_co_tempter_dain_2": {
+        "name": "Dain",
+        "text": "Heute rufe ich nicht zuerst."
+    },
+    "after5_normal_start": {
+        "name": "{name}",
+        "text": "*Die Veranstaltung neigt sich dem Ende zu. Auf dem Flur begegne ich den beiden, für die ich mich nicht entschieden habe.*"
     }
 }

@@ -49,16 +49,16 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "backgroundVariant": "empty",
         "character": "assets/images/characters/teacher_sad.png",
         "choices": [
-            { "next": "morning5_caught_teacher_honest", "stats": {"Teacher":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer"] },
-            { "next": "morning5_caught_teacher_lie", "stats": {"Teacher":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer"] }
+            { "next": "morning5_caught_teacher_honest", "stats": {"Teacher":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer", "day5_abandoned_teacher"] },
+            { "next": "morning5_caught_teacher_lie", "stats": {"Teacher":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_teacher"] }
         ]
     },
     "morning5_caught_nurse_counteroffer": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_worried.png",
         "choices": [
-            { "next": "morning5_caught_nurse_honest", "stats": {"Nurse":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer"] },
-            { "next": "morning5_caught_nurse_lie", "stats": {"Nurse":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer"] }
+            { "next": "morning5_caught_nurse_honest", "stats": {"Nurse":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer", "day5_abandoned_nurse"] },
+            { "next": "morning5_caught_nurse_lie", "stats": {"Nurse":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_nurse"] }
         ]
     },
     "morning5_caught_teacher_honest": {
@@ -114,32 +114,32 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/seyoun_sad.png",
         "choices": [
-            { "next": "morning5_caught_seoyeon_honest", "stats": {"Seoyeon":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer"] },
-            { "next": "morning5_caught_seoyeon_lie", "stats": {"Seoyeon":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer"] }
+            { "next": "morning5_caught_seoyeon_honest", "stats": {"Seoyeon":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer", "day5_abandoned_seoyeon"] },
+            { "next": "morning5_caught_seoyeon_lie", "stats": {"Seoyeon":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_seoyeon"] }
         ]
     },
     "morning5_caught_seoyeon_by_yuna": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/seyoun_sad.png",
         "choices": [
-            { "next": "morning5_caught_seoyeon_honest", "stats": {"Seoyeon":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer"] },
-            { "next": "morning5_caught_seoyeon_lie", "stats": {"Seoyeon":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer"] }
+            { "next": "morning5_caught_seoyeon_honest", "stats": {"Seoyeon":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer", "day5_abandoned_seoyeon"] },
+            { "next": "morning5_caught_seoyeon_lie", "stats": {"Seoyeon":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_seoyeon"] }
         ]
     },
     "morning5_caught_dain_by_seoyeon": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_sad.png",
         "choices": [
-            { "next": "morning5_caught_dain_honest", "stats": {"Dain":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer"] },
-            { "next": "morning5_caught_dain_lie", "stats": {"Dain":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer"] }
+            { "next": "morning5_caught_dain_honest", "stats": {"Dain":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer", "day5_abandoned_dain"] },
+            { "next": "morning5_caught_dain_lie", "stats": {"Dain":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_dain"] }
         ]
     },
     "morning5_caught_dain_by_yuna": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_sad.png",
         "choices": [
-            { "next": "morning5_caught_dain_honest", "stats": {"Dain":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer"] },
-            { "next": "morning5_caught_dain_lie", "stats": {"Dain":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer"] }
+            { "next": "morning5_caught_dain_honest", "stats": {"Dain":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer", "day5_abandoned_dain"] },
+            { "next": "morning5_caught_dain_lie", "stats": {"Dain":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_dain"] }
         ]
     },
     "morning5_caught_yuna_by_seoyeon": {
@@ -147,8 +147,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "backgroundVariant": "cold",
         "character": "assets/images/characters/yuna_sad.png",
         "choices": [
-            { "next": "morning5_caught_yuna_honest", "stats": {"Yuna":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer"] },
-            { "next": "morning5_caught_yuna_lie", "stats": {"Yuna":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer"] }
+            { "next": "morning5_caught_yuna_honest", "stats": {"Yuna":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer", "day5_abandoned_yuna"] },
+            { "next": "morning5_caught_yuna_lie", "stats": {"Yuna":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_yuna"] }
         ]
     },
     "morning5_caught_yuna_by_dain": {
@@ -156,8 +156,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "backgroundVariant": "cold",
         "character": "assets/images/characters/yuna_sad.png",
         "choices": [
-            { "next": "morning5_caught_yuna_honest", "stats": {"Yuna":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer"] },
-            { "next": "morning5_caught_yuna_lie", "stats": {"Yuna":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer"] }
+            { "next": "morning5_caught_yuna_honest", "stats": {"Yuna":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer", "day5_abandoned_yuna"] },
+            { "next": "morning5_caught_yuna_lie", "stats": {"Yuna":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_yuna"] }
         ]
     },
     "morning5_caught_seoyeon_honest": {
@@ -197,7 +197,32 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "group_free_talk",
         "groupParticipants": "counteroffer_confrontation",
         "maxTurns": 3,
-        "next": "morning5_committed_start"
+        "next": "morning5_after_counteroffer"
+    },
+    "morning5_after_counteroffer": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "next": "morning5_after_counteroffer_hidden_check"
+    },
+    "morning5_after_counteroffer_hidden_check": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "routeBeforeRender": true,
+        "branches": [
+            { "condition": "day4_counteroffer_target_teacher", "next": "hidden_nurse_d5_after_co_check" },
+            { "condition": "homeroom_day4", "next": "hidden_homeroom_d5_1" },
+            { "next": "hidden_nurse_d5_after_co_check" }
+        ]
+    },
+    "hidden_nurse_d5_after_co_check": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "routeBeforeRender": true,
+        "branches": [
+            { "condition": "day4_counteroffer_target_nurse", "next": "morning5_end_branch" },
+            { "condition": "nurse_day4", "next": "hidden_nurse_d5_1" },
+            { "next": "morning5_end_branch" }
+        ]
     },
     "morning5_start_b": {
         "background": "assets/images/background/room_school.png",
@@ -925,7 +950,9 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "morning5_end_branch": {
         "background": "assets/images/background/room_school.png",
         "character": null,
+        "routeBeforeRender": true,
         "branches": [
+            { "condition": "day4_counteroffer_penalty_deferred", "next": "tour_co_branch" },
             { "condition": "day4_confession_accepted", "next": "morning5_committed_end" },
             { "next": "morning5_end" }
         ]
@@ -934,6 +961,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/room_school.png",
         "character": null,
         "branches": [
+            { "condition": "day4_counteroffer_penalty_deferred", "next": "tour_co_branch" },
             { "condition": "route_dain", "next": "tour_dain_1_check" },
             { "condition": "route_yuna", "next": "tour_yuna_1_check" },
             { "condition": "route_seoyeon", "next": "tour_seo_1" },
@@ -944,6 +972,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/room_school.png",
         "character": null,
         "branches": [
+            { "condition": "day4_counteroffer_penalty_deferred", "next": "tour_co_branch" },
             { "condition": "route_dain", "next": "tour_dain_1_check" },
             { "condition": "route_yuna", "next": "tour_yuna_1_check" },
             { "condition": "route_seoyeon", "next": "tour_seo_1" },

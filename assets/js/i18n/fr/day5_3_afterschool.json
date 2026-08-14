@@ -1,8 +1,5 @@
 {
-    "after5_start": {
-        "name": "{name}",
-        "text": "*L'événement touche à sa fin. Dans le couloir, je croise les deux personnes que je n'ai pas choisies.*"
-    },
+    "after5_start": {},
     "after5_waited_start_branch": {
         "name": "Système",
         "text": ""
@@ -390,5 +387,79 @@
     "after5_defer_yuna": {
         "name": "Yuna",
         "text": "*Elle ramène le livre contre elle.* D'accord. Même si c'est toi qui m'as demandé d'attendre."
+    },
+    "after5_co_abandoned_branch": {},
+    "after5_co_tempter_branch": {},
+    "after5_co_start": {
+        "name": "{name}",
+        "text": "*La fête se termine. Dans le couloir, ce sont les mêmes visages que ce matin.*"
+    },
+    "after5_co_seo_1": {
+        "name": "Seoyeon",
+        "text": "*Elle relève ses lunettes, puis les redescend.* J’ai déjà fait passer le planning."
+    },
+    "after5_co_seo_2": {
+        "name": "Seoyeon",
+        "text": "Aujourd’hui, il n’y a plus de place pour parler. Va."
+    },
+    "after5_co_yuna_1": {
+        "name": "Yuna",
+        "text": "*Elle range le signet dans son sac.* J’ai laissé le panneau vide."
+    },
+    "after5_co_yuna_2": {
+        "name": "Yuna",
+        "text": "Ne me suis pas. Pas aujourd’hui."
+    },
+    "after5_co_dain_1": {
+        "name": "Dain",
+        "text": "*Elle pousse le ballon dans le coffre.* J’ai rayé ton nom de partenaire."
+    },
+    "after5_co_dain_2": {
+        "name": "Dain",
+        "text": "Va. Là, rire, c’est un peu trop."
+    },
+    "after5_co_teacher_1": {
+        "name": "Professeure principale",
+        "text": "*Elle referme le registre.* Un autre professeur s’occupe de la fête."
+    },
+    "after5_co_teacher_2": {
+        "name": "Professeure principale",
+        "text": "Ne viens pas en salle des professeurs aujourd’hui."
+    },
+    "after5_co_nurse_1": {
+        "name": "Infirmière",
+        "text": "*Elle range le dossier dans un tiroir.* L’entretien s’arrête là."
+    },
+    "after5_co_nurse_2": {
+        "name": "Infirmière",
+        "text": "Si tu as mal, va voir quelqu’un d’autre. Pas moi aujourd’hui."
+    },
+    "after5_co_tempter_seo_1": {
+        "name": "Seoyeon",
+        "text": "*Elle glisse le porte-clés du toit dans sa poche.* Hier, c’est moi qui ai commencé."
+    },
+    "after5_co_tempter_seo_2": {
+        "name": "Seoyeon",
+        "text": "Même comme ça, je ne te retiendrai pas aujourd’hui."
+    },
+    "after5_co_tempter_yuna_1": {
+        "name": "Yuna",
+        "text": "*La photo de l’annexe est encore sur l’écran de verrouillage.* C’est moi qui t’ai appelé."
+    },
+    "after5_co_tempter_yuna_2": {
+        "name": "Yuna",
+        "text": "Ne me suis pas maintenant. Ça suffit."
+    },
+    "after5_co_tempter_dain_1": {
+        "name": "Dain",
+        "text": "*Elle appuie sur le sparadrap du genou.* C’est moi qui t’ai demandé de rester hier."
+    },
+    "after5_co_tempter_dain_2": {
+        "name": "Dain",
+        "text": "Aujourd’hui, je n’appellerai pas la première."
+    },
+    "after5_normal_start": {
+        "name": "{name}",
+        "text": "*L'événement touche à sa fin. Dans le couloir, je croise les deux personnes que je n'ai pas choisies.*"
     }
 }

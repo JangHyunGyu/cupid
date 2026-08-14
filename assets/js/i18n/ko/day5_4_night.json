@@ -1522,7 +1522,7 @@
     },
     "date_perfect_dain_gym_1": {
         "name": "{name}",
-        "text": "*공은 잡혀 있고, 점프는 없다. 다인이 벤치에 먼저 앉는다.*"
+        "text": "*공은 잡혀 있다. 점프는 없다. 다인이 벤치에 먼저 앉는다.*"
     },
     "date_perfect_dain_gym_2": {
         "name": "다인",
@@ -1586,7 +1586,7 @@
     },
     "date_perfect_nurse_home_1": {
         "name": "{name}",
-        "text": "*주말 오전. 가운은 걸려 있고, 물컵만 두 개다.*"
+        "text": "*주말 오전. 가운은 걸려 있다. 물컵만 두 개다.*"
     },
     "date_perfect_nurse_home_2": {
         "name": "보건선생님",
@@ -1727,5 +1727,66 @@
     "date_true_nurse_alt_2": {
         "name": "{name}",
         "text": "*벤치 페인트가 벗겨진 자리에 손이 얹힌다.*"
+    },
+    "ending_counteroffer_bitter": {},
+    "co_bitter_seo_1": {
+        "name": "{name}",
+        "text": "*한 달쯤 지나 카페. 서연은 컵받침을 맞추지 않는다.*"
+    },
+    "co_bitter_seo_2": {
+        "name": "서연",
+        "text": "그날 알림, 아직도 남아 있어. 지웠는데도."
+    },
+    "co_bitter_seo_3": {
+        "name": "{name}",
+        "text": "*서연은 일어선 뒤 가방끈만 고쳐 잡는다. 우산은 각자다.*"
+    },
+    "co_bitter_yuna_1": {
+        "name": "{name}",
+        "text": "*헌책방 앞에서 유나가 먼저 와 있다. 책은 안 들고 있다.*"
+    },
+    "co_bitter_yuna_2": {
+        "name": "유나",
+        "text": "별관은 안 가. 그날 이후로."
+    },
+    "co_bitter_yuna_3": {
+        "name": "{name}",
+        "text": "*유나는 고개만 끄덕이고 반대편 골목으로 들어간다.*"
+    },
+    "co_bitter_dain_1": {
+        "name": "{name}",
+        "text": "*체육관 바깥. 다인은 공을 들고 있지 않다.*"
+    },
+    "co_bitter_dain_2": {
+        "name": "다인",
+        "text": "그날 파트너, 내가 지운 거 맞지."
+    },
+    "co_bitter_dain_3": {
+        "name": "{name}",
+        "text": "*다인이 어깨를 치고 지나간다. 이번엔 주먹이 아니다.*"
+    },
+    "co_bitter_teacher_1": {
+        "name": "{name}",
+        "text": "*졸업 후 복도. 담임은 원고 봉투 없이 서 있다.*"
+    },
+    "co_bitter_teacher_2": {
+        "name": "담임선생님",
+        "text": "그날 화면, 아직도 생각나. 합평 얘기는 여기까지 하자."
+    },
+    "co_bitter_teacher_3": {
+        "name": "{name}",
+        "text": "*출석부 대신 서류 뭉치가 팔 안에 있다. 담임은 교무실 쪽으로 먼저 걷는다.*"
+    },
+    "co_bitter_nurse_1": {
+        "name": "{name}",
+        "text": "*보건실 앞. 문은 열려 있고 안은 비어 있다.*"
+    },
+    "co_bitter_nurse_2": {
+        "name": "보건선생님",
+        "text": "차트는 넘겼어. 그날 일은 기록에 안 남겼고."
+    },
+    "co_bitter_nurse_3": {
+        "name": "{name}",
+        "text": "*안내 카드 대신 빈 컵이 창가에 있다. 보건선생님은 복도 끝에서 손을 내리지 않는다.*"
     }
 }

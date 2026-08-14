@@ -41,9 +41,9 @@ for (const file of files) {
     }
 }
 
-assert(entryCount === 2496, `expected 2496 Korean entries, found ${entryCount}`);
-assert(textCount === 2455, `expected 2455 Korean text fields, found ${textCount}`);
-assert(choiceCount === 141, `expected 141 Korean choices, found ${choiceCount}`);
+assert(entryCount === 2695, `expected 2695 Korean entries, found ${entryCount}`);
+assert(textCount === 2634, `expected 2634 Korean text fields, found ${textCount}`);
+assert(choiceCount === 213, `expected 213 Korean choices, found ${choiceCount}`);
 
 const banned = [
     ['six-dot placeholder', /^\s*\.{6}\s*$/u],

@@ -1,8 +1,5 @@
 {
-    "after5_start": {
-        "name": "{name}",
-        "text": "*O evento está chegando ao fim. Encontro no corredor as duas pessoas que não escolhi.*"
-    },
+    "after5_start": {},
     "after5_waited_start_branch": {
         "name": "Sistema",
         "text": ""
@@ -390,5 +387,79 @@
     "after5_defer_yuna": {
         "name": "Yuna",
         "text": "*Ela volta a abraçar o livro.* Entendi. Mesmo que tenha sido você quem pediu para eu esperar."
+    },
+    "after5_co_abandoned_branch": {},
+    "after5_co_tempter_branch": {},
+    "after5_co_start": {
+        "name": "{name}",
+        "text": "*O evento acaba. No corredor ficam as mesmas caras da manhã.*"
+    },
+    "after5_co_seo_1": {
+        "name": "Seoyeon",
+        "text": "*Sobe os óculos e torna a baixá-los.* Já entreguei o horário."
+    },
+    "after5_co_seo_2": {
+        "name": "Seoyeon",
+        "text": "Hoje não há sítio para falar mais. Vai."
+    },
+    "after5_co_yuna_1": {
+        "name": "Yuna",
+        "text": "*Mete o marcador na mala.* Deixei o quadro vazio."
+    },
+    "after5_co_yuna_2": {
+        "name": "Yuna",
+        "text": "Não me sigas. Hoje não."
+    },
+    "after5_co_dain_1": {
+        "name": "Dain",
+        "text": "*Empurra a bola para o caixote.* Risquei o teu nome de par."
+    },
+    "after5_co_dain_2": {
+        "name": "Dain",
+        "text": "Vai. Rir agora é demais."
+    },
+    "after5_co_teacher_1": {
+        "name": "Professora",
+        "text": "*Fecha o livro de presenças.* Outro professor ficou com o evento."
+    },
+    "after5_co_teacher_2": {
+        "name": "Professora",
+        "text": "Hoje não venhas à sala dos professores."
+    },
+    "after5_co_nurse_1": {
+        "name": "Enfermeira",
+        "text": "*Mete o registo na gaveta.* A conversa fica por aqui."
+    },
+    "after5_co_nurse_2": {
+        "name": "Enfermeira",
+        "text": "Se estiveres mal, vai ter com outro professor. Hoje não sou eu."
+    },
+    "after5_co_tempter_seo_1": {
+        "name": "Seoyeon",
+        "text": "*Mete o porta-chaves do terraço no bolso.* Ontem fui eu a começar."
+    },
+    "after5_co_tempter_seo_2": {
+        "name": "Seoyeon",
+        "text": "Mesmo assim, hoje não te seguro."
+    },
+    "after5_co_tempter_yuna_1": {
+        "name": "Yuna",
+        "text": "*A foto do anexo ainda está no ecrã de bloqueio.* Fui eu que te chamei."
+    },
+    "after5_co_tempter_yuna_2": {
+        "name": "Yuna",
+        "text": "Agora não venhas comigo. Chega."
+    },
+    "after5_co_tempter_dain_1": {
+        "name": "Dain",
+        "text": "*Carrega na fita do joelho.* Fui eu que ontem te pedi para ficares."
+    },
+    "after5_co_tempter_dain_2": {
+        "name": "Dain",
+        "text": "Hoje não chamo primeiro."
+    },
+    "after5_normal_start": {
+        "name": "{name}",
+        "text": "*O evento está chegando ao fim. Encontro no corredor as duas pessoas que não escolhi.*"
     }
 }

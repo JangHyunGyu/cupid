@@ -198,5 +198,50 @@
     "tour_dain_end_2": {
         "name": "{name}",
         "text": "*Au lieu de la poser sur son genou, Dain fait rouler la surface du ballon sous sa paume.*"
+    },
+    "tour_co_branch": {},
+    "tour_co_event_1": {
+        "name": "{name}",
+        "text": "*La sonnerie du déjeuner retentit, mais la file est courte. Dans le couloir, des couvercles s’ouvrent et se referment.*"
+    },
+    "tour_co_event_2": {
+        "name": "{name}",
+        "text": "*Un gilet de staff est posé sur un dossier. Personne ne demande qui l’a porté.*"
+    },
+    "tour_co_seo_1": {
+        "name": "{name}",
+        "text": "*La porte du toit est ouverte. Seoyeon s’appuie sur le chambranle, pas sur la rambarde.*"
+    },
+    "tour_co_seo_2": {
+        "name": "Seoyeon",
+        "text": "J’ai rendu la clé. Pour aujourd’hui, ça s’arrête là."
+    },
+    "tour_co_seo_3": {
+        "name": "{name}",
+        "text": "*Le coin du presse-papiers cogne le chambranle. Elle n’y touche pas.*"
+    },
+    "tour_co_yuna_1": {
+        "name": "{name}",
+        "text": "*Le canapé de l’annexe. Yuna enroule la sangle du sac au lieu d’ouvrir un livre.*"
+    },
+    "tour_co_yuna_2": {
+        "name": "Yuna",
+        "text": "Je ne montrerai pas la fin. Pas aujourd’hui."
+    },
+    "tour_co_yuna_3": {
+        "name": "{name}",
+        "text": "*La lumière de la fenêtre atteint la place vide. Yuna ne s’y assoit pas.*"
+    },
+    "tour_co_dain_1": {
+        "name": "{name}",
+        "text": "*Les lumières du gymnase sont allumées. Le ballon reste dans le coffre.*"
+    },
+    "tour_co_dain_2": {
+        "name": "Dain",
+        "text": "Pierre-feuille-ciseaux, demain. Aujourd’hui je reste debout."
+    },
+    "tour_co_dain_3": {
+        "name": "{name}",
+        "text": "*Dain tire une fois sur le bandeau de poignet, puis le lâche.*"
     }
 }

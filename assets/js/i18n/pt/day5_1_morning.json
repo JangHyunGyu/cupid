@@ -9,12 +9,18 @@
     "morning5_caught_teacher_counteroffer": {
         "name": "Professora",
         "text": "*De manhã, na sala de aula, coloco o celular sobre a mesa para mostrar à professora uma foto do rascunho. A tela acende com uma mensagem da garota com quem estive ontem: 'O que aconteceu ontem fica só entre nós, certo?'. A professora lê até o fim e tira a mão do celular.* Você ignorou minha mensagem ontem para encontrar essa garota?",
-        "choices": ["Contar sem esconder o que aconteceu ontem à noite", "Dizer que não foi nada importante"]
+        "choices": [
+            "Contar sem esconder o que aconteceu ontem à noite",
+            "Dizer que não foi nada importante"
+        ]
     },
     "morning5_caught_nurse_counteroffer": {
         "name": "Enfermeira",
         "text": "*Assim que coloco o celular sobre a maca da enfermaria, a tela acende. Uma mensagem da garota com quem estive ontem diz: 'O que aconteceu ontem fica só entre nós, certo?'. A enfermeira tenta sorrir como sempre, mas a expressão desaparece devagar.* Então você não deixou de ver minha mensagem. Estava com essa garota?",
-        "choices": ["Contar sem esconder o que aconteceu ontem à noite", "Dizer que não foi nada importante"]
+        "choices": [
+            "Contar sem esconder o que aconteceu ontem à noite",
+            "Dizer que não foi nada importante"
+        ]
     },
     "morning5_caught_teacher_honest": {
         "name": "Professora",
@@ -623,5 +629,11 @@
     "hidden_nurse_d5_choice_trap": {
         "name": "Enfermeira",
         "text": "É o contrário. Este cartão não é para você aguentar tudo sozinho."
+    },
+    "morning5_after_counteroffer_hidden_check": {},
+    "hidden_nurse_d5_after_co_check": {},
+    "morning5_after_counteroffer": {
+        "name": "{name}",
+        "text": "*Um aviso escorrega da mesa. Ninguém o apanha. O anúncio do evento soa primeiro.*"
     }
 }

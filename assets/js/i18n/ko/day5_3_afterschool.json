@@ -1,8 +1,5 @@
 {
-    "after5_start": {
-        "name": "{name}",
-        "text": "*행사가 끝나간다. 복도에서 선택하지 않은 두 사람과 마주친다.*"
-    },
+    "after5_start": {},
     "after5_waited_start_branch": {
         "name": "시스템",
         "text": ""
@@ -390,5 +387,79 @@
     "after5_defer_yuna": {
         "name": "유나",
         "text": "*책을 다시 품에 안는다.* 알겠어. 기다리라고 한 건 너였지만."
+    },
+    "after5_co_abandoned_branch": {},
+    "after5_co_tempter_branch": {},
+    "after5_co_start": {
+        "name": "{name}",
+        "text": "*행사가 끝난다. 복도에 남은 사람은 아침과 같은 얼굴들이다.*"
+    },
+    "after5_co_seo_1": {
+        "name": "서연",
+        "text": "*안경을 올렸다가 내린다.* 일정표는 다 돌렸어."
+    },
+    "after5_co_seo_2": {
+        "name": "서연",
+        "text": "오늘은 더 말할 자리 없어. 가."
+    },
+    "after5_co_yuna_1": {
+        "name": "유나",
+        "text": "*책갈피를 가방에 넣는다.* 게시판은 비워 뒀어."
+    },
+    "after5_co_yuna_2": {
+        "name": "유나",
+        "text": "따라오지 마. 오늘은."
+    },
+    "after5_co_dain_1": {
+        "name": "다인",
+        "text": "*공을 보관함에 밀어 넣는다.* 파트너는 지웠어."
+    },
+    "after5_co_dain_2": {
+        "name": "다인",
+        "text": "잘 가. 지금 웃기는 좀 그래."
+    },
+    "after5_co_teacher_1": {
+        "name": "담임선생님",
+        "text": "*출석부를 덮는다.* 행사는 다른 선생님이 맡으셨다."
+    },
+    "after5_co_teacher_2": {
+        "name": "담임선생님",
+        "text": "오늘은 교무실로 오지 마."
+    },
+    "after5_co_nurse_1": {
+        "name": "보건선생님",
+        "text": "*진료 기록을 서랍에 넣는다.* 상담은 여기까지야."
+    },
+    "after5_co_nurse_2": {
+        "name": "보건선생님",
+        "text": "아프면 다른 선생님한테 가. 오늘은 내가 아니야."
+    },
+    "after5_co_tempter_seo_1": {
+        "name": "서연",
+        "text": "*옥상 열쇠고리를 주머니에 넣는다.* 어제 일은 내가 먼저였어."
+    },
+    "after5_co_tempter_seo_2": {
+        "name": "서연",
+        "text": "그래도 오늘은 붙잡지 않을게."
+    },
+    "after5_co_tempter_yuna_1": {
+        "name": "유나",
+        "text": "*별관 사진이 잠금화면에 남아 있다.* 내가 불렀어."
+    },
+    "after5_co_tempter_yuna_2": {
+        "name": "유나",
+        "text": "지금은 따라가지 마. 그걸로 돼."
+    },
+    "after5_co_tempter_dain_1": {
+        "name": "다인",
+        "text": "*무릎 테이프를 한 번 눌러 붙인다.* 어제 남으라고 한 건 나야."
+    },
+    "after5_co_tempter_dain_2": {
+        "name": "다인",
+        "text": "오늘은 먼저 안 부를게."
+    },
+    "after5_normal_start": {
+        "name": "{name}",
+        "text": "*행사가 끝나간다. 복도에서 선택하지 않은 두 사람과 마주친다.*"
     }
 }

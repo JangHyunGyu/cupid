@@ -1,8 +1,5 @@
 {
-    "after5_start": {
-        "name": "{name}",
-        "text": "*行事も終わりに近づく。廊下で、選ばなかった二人と顔を合わせる。*"
-    },
+    "after5_start": {},
     "after5_waited_start_branch": {
         "name": "システム",
         "text": ""
@@ -390,5 +387,79 @@
     "after5_defer_yuna": {
         "name": "ユナ",
         "text": "*本を胸元に抱き直す。* 分かった。待っててって言ったのはあなたなのに。"
+    },
+    "after5_co_abandoned_branch": {},
+    "after5_co_tempter_branch": {},
+    "after5_co_start": {
+        "name": "{name}",
+        "text": "*行事が終わる。廊下に残っているのは、朝と同じ顔だ。*"
+    },
+    "after5_co_seo_1": {
+        "name": "ソヨン",
+        "text": "*眼鏡を上げて、下ろす。* 時間割は配り終わった。"
+    },
+    "after5_co_seo_2": {
+        "name": "ソヨン",
+        "text": "今日は、これ以上話す場所がない。行って。"
+    },
+    "after5_co_yuna_1": {
+        "name": "ユナ",
+        "text": "*しおりをバッグに入れる。* 掲示板は空けておいた。"
+    },
+    "after5_co_yuna_2": {
+        "name": "ユナ",
+        "text": "ついてこないで。今日は。"
+    },
+    "after5_co_dain_1": {
+        "name": "ダイン",
+        "text": "*ボールを棚に押し込む。* ペアの名前、消した。"
+    },
+    "after5_co_dain_2": {
+        "name": "ダイン",
+        "text": "じゃあな。今笑うのは、ちょっと無理。"
+    },
+    "after5_co_teacher_1": {
+        "name": "担任の先生",
+        "text": "*出席簿を閉じる。* 行事は、別の先生が見ている。"
+    },
+    "after5_co_teacher_2": {
+        "name": "担任の先生",
+        "text": "今日は職員室に来ないで。"
+    },
+    "after5_co_nurse_1": {
+        "name": "保健室の先生",
+        "text": "*診療記録を引き出しに入れる。* 相談はここまで。"
+    },
+    "after5_co_nurse_2": {
+        "name": "保健室の先生",
+        "text": "具合が悪ければ、別の先生のところへ。今日は私じゃない。"
+    },
+    "after5_co_tempter_seo_1": {
+        "name": "ソヨン",
+        "text": "*屋上のキーホルダーをポケットに入れる。* 昨日のことは、私からだった。"
+    },
+    "after5_co_tempter_seo_2": {
+        "name": "ソヨン",
+        "text": "それでも今日は、引き止めない。"
+    },
+    "after5_co_tempter_yuna_1": {
+        "name": "ユナ",
+        "text": "*別館の写真がロック画面に残っている。* 呼んだのは私。"
+    },
+    "after5_co_tempter_yuna_2": {
+        "name": "ユナ",
+        "text": "今はついてこないで。それでいい。"
+    },
+    "after5_co_tempter_dain_1": {
+        "name": "ダイン",
+        "text": "*膝のテープを一度押さえつける。* 昨日、残れって言ったの、私。"
+    },
+    "after5_co_tempter_dain_2": {
+        "name": "ダイン",
+        "text": "今日は先に呼ばない。"
+    },
+    "after5_normal_start": {
+        "name": "{name}",
+        "text": "*行事も終わりに近づく。廊下で、選ばなかった二人と顔を合わせる。*"
     }
 }

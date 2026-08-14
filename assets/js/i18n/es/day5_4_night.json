@@ -1446,286 +1446,347 @@
     },
     "date_choice_perfect_seo": {
         "name": "Seoyeon",
-        "text": "I said the rest can wait until tomorrow. Before that, where are we going today.",
+        "text": "Dije que lo demás podía esperar a mañana. Antes, ¿adónde vamos hoy?",
         "choices": [
-            "The rooftop.",
-            "The cafe."
+            "A la azotea.",
+            "Al café."
         ]
     },
     "date_perfect_seo_roof_1": {
         "name": "{name}",
-        "text": "*The soil is still wet. Seoyeon sets the watering can down.*"
+        "text": "*La tierra de la maceta sigue húmeda. Seoyeon deja la regadera.*"
     },
     "date_perfect_seo_roof_2": {
         "name": "Seoyeon",
-        "text": "You pick the empty pot. I already picked mine."
+        "text": "El hueco lo eliges tú. Yo ya elegí el mío."
     },
     "date_perfect_seo_roof_3": {
         "name": "{name}",
-        "text": "*Wind comes through the open door. She does not fold the schedule.*"
+        "text": "*El viento entra por la puerta abierta. No dobla el horario.*"
     },
     "date_perfect_seo_cafe_1": {
         "name": "{name}",
-        "text": "*Window seat. She squares the coaster first, then speaks.*"
+        "text": "*Junto a la ventana. Acomoda el posavasos y después habla.*"
     },
     "date_perfect_seo_cafe_2": {
         "name": "Seoyeon",
-        "text": "Here again next week. You pick the time."
+        "text": "La semana que viene, aquí. La hora la pones tú."
     },
     "date_perfect_seo_cafe_3": {
         "name": "{name}",
-        "text": "*A number on the back of the receipt. Not a phone number. The next watering day.*"
+        "text": "*Un número al dorso del ticket. No es un teléfono. El próximo día de riego.*"
     },
     "date_choice_perfect_yuna": {
         "name": "Yuna",
-        "text": "There are seats outside too. Choose.",
+        "text": "Fuera también hay sitio. Elige.",
         "choices": [
-            "The used bookstore.",
-            "The roof."
+            "La librería de viejo.",
+            "La azotea."
         ]
     },
     "date_perfect_yuna_book_1": {
         "name": "{name}",
-        "text": "*Between the shelves. Yuna stops on a spine.*"
+        "text": "*Entre las estanterías. Yuna se detiene en un lomo.*"
     },
     "date_perfect_yuna_book_2": {
         "name": "Hombre",
-        "text": "...Yuna? I did not know you still came here."
+        "text": "...¿Yuna? No sabía que todavía venías."
     },
     "date_perfect_yuna_book_3": {
         "name": "Lee Junho",
-        "text": "It was a long time ago. I thought I did not have to say anything. ...I will get out of the way."
+        "text": "Fue hace tiempo. Pensé que no hacía falta decir nada. ...Molesté."
     },
     "date_perfect_yuna_book_4": {
         "name": "Yuna",
-        "text": "*Her finger stays in the bookmark.* I am with {name} now. That is enough."
+        "text": "*El dedo se queda en el marcapáginas.* Ahora estoy con {name}. Con eso basta."
     },
     "date_perfect_yuna_roof_1": {
         "name": "{name}",
-        "text": "*The secret roof. One earphone crosses the gap.*"
+        "text": "*La azotea secreta. Cruza un auricular.*"
     },
     "date_perfect_yuna_roof_2": {
         "name": "Yuna",
-        "text": "The third track. From the start this time."
+        "text": "La tercera pista. Esta vez desde el principio."
     },
     "date_perfect_yuna_roof_3": {
         "name": "{name}",
-        "text": "*The song ends. She does not take the earphone out. Her hand is closer.*"
+        "text": "*La canción acaba. No se quita el auricular. La mano está más cerca.*"
     },
     "date_choice_perfect_dain": {
         "name": "Dain",
-        "text": "I do not have to get on the court today. I still have places I want.",
+        "text": "Hoy no hace falta subir a la pista. Sitios a los que ir, sí tengo.",
         "choices": [
-            "The gym.",
-            "The booth."
+            "El gimnasio.",
+            "La cabina."
         ]
     },
     "date_perfect_dain_gym_1": {
         "name": "{name}",
-        "text": "*She has a ball. She does not jump. She takes the bench first.*"
+        "text": "*Lleva un balón. No salta. Se sienta primero en el banco.*"
     },
     "date_perfect_dain_gym_2": {
         "name": "Dain",
-        "text": "Five minutes. Real five. ...If it turns into ten, do not wake me."
+        "text": "Cinco minutos. De verdad cinco. ...Si se van a diez, no me despiertes."
     },
     "date_perfect_dain_gym_3": {
         "name": "{name}",
-        "text": "*Her right knee sits off the bench. The weight is on the left.*"
+        "text": "*La rodilla derecha se sale del banco. El peso está a la izquierda.*"
     },
     "date_perfect_dain_booth_1": {
         "name": "{name}",
-        "text": "*The headset is huge. She touches the switch and leaves it off.*"
+        "text": "*Los auriculares son enormes. Toca el interruptor y lo deja apagado.*"
     },
     "date_perfect_dain_booth_2": {
         "name": "Dain",
-        "text": "Following a match with words takes more air than I thought. It is still fine."
+        "text": "Seguir un partido con palabras cansa más de lo que pensaba. Pero estoy bien."
     },
     "date_perfect_dain_booth_3": {
         "name": "{name}",
-        "text": "*The scoreboard is dark. She is still in the chair.*"
+        "text": "*El marcador está apagado. Sigue en la silla.*"
     },
     "date_choice_perfect_teacher": {
         "name": "Profesora",
-        "text": "There is a way to walk without a title. Pick one.",
+        "text": "Hay un lado donde se puede caminar sin cargo. Elige.",
         "choices": [
-            "The cafe.",
-            "The exhibition."
+            "El café.",
+            "La exposición."
         ]
     },
     "date_perfect_teacher_cafe_1": {
         "name": "{name}",
-        "text": "*She turns the cup. There is no teacher desk here.*"
+        "text": "*Mira por la ventana y gira la taza. Aquí no hay pupitre.*"
     },
     "date_perfect_teacher_cafe_2": {
         "name": "Profesora",
-        "text": "If we meet next week, you say so. I already left the slot open."
+        "text": "Si nos vemos la semana que viene, lo dices tú. El hueco ya está libre."
     },
     "date_perfect_teacher_cafe_3": {
         "name": "{name}",
-        "text": "*A note under the receipt. The time is blank. Only the place is written.*"
+        "text": "*Una nota bajo el ticket. La hora está en blanco. Solo el sitio.*"
     },
     "date_perfect_teacher_museum_1": {
         "name": "{name}",
-        "text": "*She does not stop at the plaques. She only matches your side.*"
+        "text": "*No se para ante las cartelas. Solo iguala el paso.*"
     },
     "date_perfect_teacher_museum_2": {
         "name": "Profesora",
-        "text": "You can read the labels. I will stay next to you."
+        "text": "Las cartelas las puedes leer tú. Yo me quedo al lado."
     },
     "date_perfect_teacher_museum_3": {
         "name": "{name}",
-        "text": "*At the exit she fixes a bag strap. No lecture.*"
+        "text": "*En la salida te acomoda la correa. Sin discurso.*"
     },
     "date_choice_perfect_nurse": {
         "name": "Enfermera",
-        "text": "There is time with no chart. Home or out.",
+        "text": "Queda un rato sin ficha. ¿Casa o fuera?",
         "choices": [
-            "Home.",
-            "The park."
+            "Casa.",
+            "El parque."
         ]
     },
     "date_perfect_nurse_home_1": {
         "name": "{name}",
-        "text": "*Weekend morning. The coat is on a hook. Two water glasses.*"
+        "text": "*Mañana de fin de semana. La bata está colgada. Hay dos vasos.*"
     },
     "date_perfect_nurse_home_2": {
         "name": "Enfermera",
-        "text": "I am not opening a chart today. Just sit."
+        "text": "Hoy no abro ficha. Siéntate."
     },
     "date_perfect_nurse_home_3": {
         "name": "{name}",
-        "text": "*The window is cracked. Only the second hand is loud.*"
+        "text": "*La ventana está entornada. Solo se oye el segundero.*"
     },
     "date_perfect_nurse_park_1": {
         "name": "{name}",
-        "text": "*You skipped the hospital road. The bench came first.*"
+        "text": "*Os saltasteis la calle del hospital. Primero el banco.*"
     },
     "date_perfect_nurse_park_2": {
         "name": "Enfermera",
-        "text": "I left the jokes at home. This is enough."
+        "text": "Las bromas las dejé en casa. Con esto basta."
     },
     "date_perfect_nurse_park_3": {
         "name": "{name}",
-        "text": "*Weight lands on a shoulder and stays.*"
+        "text": "*Un peso se posa en el hombro y se queda.*"
     },
     "date_choice_true_seo": {
         "name": "Seoyeon",
-        "text": "Before we go. Short.",
+        "text": "Antes de salir. Corto.",
         "choices": [
-            "Cafe.",
-            "Rooftop."
+            "Café.",
+            "Azotea."
         ]
     },
     "date_true_seo_1": {
         "name": "Seoyeon",
-        "text": "You move the cups. I will square the coasters."
+        "text": "Tú mueves las tazas. Yo solo alineo los posavasos."
     },
     "date_true_seo_2": {
         "name": "{name}",
-        "text": "*A bus passes the window. She does not check the clock.*"
+        "text": "*Un autobús pasa por la ventana. No mira el reloj.*"
     },
     "date_true_seo_alt_1": {
         "name": "Seoyeon",
-        "text": "Water them and go down. If we stay long, someone will see."
+        "text": "Les echo agua y bajamos. Si nos quedamos, nos ven."
     },
     "date_true_seo_alt_2": {
         "name": "{name}",
-        "text": "*One pot is empty. That means bring one later.*"
+        "text": "*Hay una maceta vacía. Quiere decir que traigas una después.*"
     },
     "date_choice_true_yuna": {
         "name": "Yuna",
-        "text": "Outside, or up.",
+        "text": "Fuera, o arriba.",
         "choices": [
-            "Bookstore.",
-            "Roof."
+            "Librería.",
+            "Azotea."
         ]
     },
     "date_true_yuna_book_1": {
         "name": "Lee Junho",
-        "text": "...It has been a while. I did not expect to see you here."
+        "text": "...Hacía tiempo. No pensaba verte aquí."
     },
     "date_true_yuna_book_2": {
         "name": "Yuna",
-        "text": "*She holds {name}'s sleeve once and lets go.* We are leaving."
+        "text": "*Coge la manga de {name} un segundo y la suelta.* Nos vamos."
     },
     "date_true_yuna_roof_1": {
         "name": "Yuna",
-        "text": "You can listen without talking. The track is short."
+        "text": "Puedes escuchar sin hablar. El tema es corto."
     },
     "date_true_yuna_roof_2": {
         "name": "{name}",
-        "text": "*Wind moves the cord. She does not come down from the rail.*"
+        "text": "*El viento mueve el cable. No baja de la baranda.*"
     },
     "date_choice_true_dain": {
         "name": "Dain",
-        "text": "Stay close a minute. Where is easier.",
+        "text": "Quédate cerca un minuto. ¿Dónde te viene mejor?",
         "choices": [
-            "The bench.",
-            "The booth."
+            "El banco.",
+            "La cabina."
         ]
     },
     "date_true_dain_1": {
         "name": "Dain",
-        "text": "No jumps. I am just sitting."
+        "text": "No salto. Solo me siento."
     },
     "date_true_dain_2": {
         "name": "{name}",
-        "text": "*The ball rolls to her foot and stops. She does not pick it up.*"
+        "text": "*El balón rueda hasta el pie y se para. No lo recoge.*"
     },
     "date_true_dain_alt_1": {
         "name": "Dain",
-        "text": "I will only touch the switch. It is not on."
+        "text": "Solo toco el interruptor. No está encendido."
     },
     "date_true_dain_alt_2": {
         "name": "{name}",
-        "text": "*The headset lies upside down on the table.*"
+        "text": "*Los auriculares están boca abajo en la mesa.*"
     },
     "date_choice_true_teacher": {
         "name": "Profesora",
-        "text": "Class is over. What is left is this side.",
+        "text": "La clase se acabó. Lo que queda es esto.",
         "choices": [
-            "A table.",
-            "The exhibition."
+            "Una mesa.",
+            "La exposición."
         ]
     },
     "date_true_teacher_1": {
         "name": "Profesora",
-        "text": "You set next week. I will not start with no."
+        "text": "La semana que viene la pones tú. Yo no voy a empezar por no."
     },
     "date_true_teacher_2": {
         "name": "{name}",
-        "text": "*The coffee cools. Neither of you checks the time.*"
+        "text": "*El café se enfría. Ninguno mira la hora.*"
     },
     "date_true_teacher_alt_1": {
         "name": "Profesora",
-        "text": "Skip the labels. Stay next to me."
+        "text": "Pasa de las cartelas. Quédate al lado."
     },
     "date_true_teacher_alt_2": {
         "name": "{name}",
-        "text": "*Under the exit lights, a strap gets fixed.*"
+        "text": "*Bajo la luz de la salida, te acomodan la correa.*"
     },
     "date_choice_true_nurse": {
         "name": "Enfermera",
-        "text": "No chart. Where.",
+        "text": "Sin ficha. ¿Adónde?",
         "choices": [
-            "Home.",
-            "A bench."
+            "Casa.",
+            "Un banco."
         ]
     },
     "date_true_nurse_1": {
         "name": "Enfermera",
-        "text": "I will pour water. It is not medicine."
+        "text": "Te sirvo agua. No es medicina."
     },
     "date_true_nurse_2": {
         "name": "{name}",
-        "text": "*The tap runs once and stops.*"
+        "text": "*El grifo corre un momento y se corta.*"
     },
     "date_true_nurse_alt_1": {
         "name": "Enfermera",
-        "text": "Let us skip the hospital side."
+        "text": "Saltémonos el lado del hospital."
     },
     "date_true_nurse_alt_2": {
         "name": "{name}",
-        "text": "*A hand rests on the peeled paint of the bench.*"
+        "text": "*Una mano se posa en la pintura descascarillada del banco.*"
+    },
+    "ending_counteroffer_bitter": {},
+    "co_bitter_seo_1": {
+        "name": "{name}",
+        "text": "*Un mes después, en un café. Seoyeon no alinea el posavasos.*"
+    },
+    "co_bitter_seo_2": {
+        "name": "Seoyeon",
+        "text": "Aviso de aquel día. Sigue ahí, aunque lo borré."
+    },
+    "co_bitter_seo_3": {
+        "name": "{name}",
+        "text": "*Se levanta y solo acomoda la correa del bolso. Cada uno tiene su paraguas.*"
+    },
+    "co_bitter_yuna_1": {
+        "name": "{name}",
+        "text": "*Yuna ya está delante de la librería de viejo. No lleva ningún libro.*"
+    },
+    "co_bitter_yuna_2": {
+        "name": "Yuna",
+        "text": "No voy al anexo. Desde aquel día."
+    },
+    "co_bitter_yuna_3": {
+        "name": "{name}",
+        "text": "*Yuna solo asiente y se mete en el callejón de enfrente.*"
+    },
+    "co_bitter_dain_1": {
+        "name": "{name}",
+        "text": "*Fuera del gimnasio. Dain no lleva ningún balón.*"
+    },
+    "co_bitter_dain_2": {
+        "name": "Dain",
+        "text": "La pareja de aquel día. La borré yo, ¿no?"
+    },
+    "co_bitter_dain_3": {
+        "name": "{name}",
+        "text": "*Dain te roza el hombro al pasar. Esta vez no es un puño.*"
+    },
+    "co_bitter_teacher_1": {
+        "name": "{name}",
+        "text": "*Un pasillo después de la graduación. La profesora está sin el sobre del manuscrito.*"
+    },
+    "co_bitter_teacher_2": {
+        "name": "Profesora",
+        "text": "Sigo viendo aquella pantalla. Dejemos aquí lo de la crítica."
+    },
+    "co_bitter_teacher_3": {
+        "name": "{name}",
+        "text": "*Lleva un fajo de papeles en vez de la lista. Camina primero hacia la sala de profesores.*"
+    },
+    "co_bitter_nurse_1": {
+        "name": "{name}",
+        "text": "*Delante de la enfermería. La puerta está abierta y dentro no hay nadie.*"
+    },
+    "co_bitter_nurse_2": {
+        "name": "Enfermera",
+        "text": "Pasé la ficha. Aquel día no quedó en el registro."
+    },
+    "co_bitter_nurse_3": {
+        "name": "{name}",
+        "text": "*En el alféizar hay un vaso vacío en vez de una tarjeta. Al fondo del pasillo no levanta la mano.*"
     }
 }

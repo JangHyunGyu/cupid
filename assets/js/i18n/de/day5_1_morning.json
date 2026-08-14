@@ -9,12 +9,18 @@
     "morning5_caught_teacher_counteroffer": {
         "name": "Klassenlehrerin",
         "text": "*Morgens im Klassenzimmer lege ich mein Handy hin, um meiner Klassenlehrerin ein Foto meines Entwurfs zu zeigen. Der Bildschirm leuchtet mit einer Nachricht des Mädchens auf, bei dem ich gestern war: 'Was gestern passiert ist, bleibt unter uns, oder?' Die Lehrerin liest sie zu Ende und nimmt ihre Hand vom Handy.* Du hast meine Nachricht gestern ignoriert, um dieses Mädchen zu treffen?",
-        "choices": ["Ihr offen erzählen, was gestern Nacht passiert ist", "Es als unwichtig abtun"]
+        "choices": [
+            "Ihr offen erzählen, was gestern Nacht passiert ist",
+            "Es als unwichtig abtun"
+        ]
     },
     "morning5_caught_nurse_counteroffer": {
         "name": "Schulkrankenschwester",
         "text": "*Sobald ich mein Handy auf die Untersuchungsliege lege, leuchtet der Bildschirm auf. Eine Nachricht des Mädchens, bei dem ich gestern war, lautet: 'Was gestern passiert ist, bleibt unter uns, oder?' Die Schulkrankenschwester will wie immer lächeln, doch dann verschwindet ihr Lächeln langsam.* Du hast meine Nachricht also nicht übersehen. Du warst bei diesem Mädchen?",
-        "choices": ["Ihr offen erzählen, was gestern Nacht passiert ist", "Es als unwichtig abtun"]
+        "choices": [
+            "Ihr offen erzählen, was gestern Nacht passiert ist",
+            "Es als unwichtig abtun"
+        ]
     },
     "morning5_caught_teacher_honest": {
         "name": "Klassenlehrerin",
@@ -623,5 +629,11 @@
     "hidden_nurse_d5_choice_trap": {
         "name": "Schulkrankenschwester",
         "text": "Im Gegenteil. Die Karte ist nicht dafür da, dass du alles allein aushältst."
+    },
+    "morning5_after_counteroffer_hidden_check": {},
+    "hidden_nurse_d5_after_co_check": {},
+    "morning5_after_counteroffer": {
+        "name": "{name}",
+        "text": "*Ein Zettel rutscht vom Pult. Niemand hebt ihn auf. Die Ansage zur Veranstaltung kommt zuerst.*"
     }
 }

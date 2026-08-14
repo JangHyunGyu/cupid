@@ -1446,286 +1446,347 @@
     },
     "date_choice_perfect_seo": {
         "name": "ソヨン",
-        "text": "I said the rest can wait until tomorrow. Before that, where are we going today.",
+        "text": "残りは明日でいいって言った。その前に、今日はどこ行く。",
         "choices": [
-            "The rooftop.",
-            "The cafe."
+            "屋上。",
+            "カフェ。"
         ]
     },
     "date_perfect_seo_roof_1": {
         "name": "{name}",
-        "text": "*The soil is still wet. Seoyeon sets the watering can down.*"
+        "text": "*植木の土はまだ濡れている。ソヨンがジョウロを置く。*"
     },
     "date_perfect_seo_roof_2": {
         "name": "ソヨン",
-        "text": "You pick the empty pot. I already picked mine."
+        "text": "空きは、あなたが選んで。私はもう決めた。"
     },
     "date_perfect_seo_roof_3": {
         "name": "{name}",
-        "text": "*Wind comes through the open door. She does not fold the schedule.*"
+        "text": "*扉が開いたまま、風が入る。ソヨンは予定表を折らない。*"
     },
     "date_perfect_seo_cafe_1": {
         "name": "{name}",
-        "text": "*Window seat. She squares the coaster first, then speaks.*"
+        "text": "*窓際。コースターを揃えてから、ソヨンが口を開く。*"
     },
     "date_perfect_seo_cafe_2": {
         "name": "ソヨン",
-        "text": "Here again next week. You pick the time."
+        "text": "来週もここ。時間だけ、あなたが決めて。"
     },
     "date_perfect_seo_cafe_3": {
         "name": "{name}",
-        "text": "*A number on the back of the receipt. Not a phone number. The next watering day.*"
+        "text": "*レシートの裏に数字がある。電話番号じゃない。次に水をやる日だ。*"
     },
     "date_choice_perfect_yuna": {
         "name": "ユナ",
-        "text": "There are seats outside too. Choose.",
+        "text": "外にも席ある。選ぶ？",
         "choices": [
-            "The used bookstore.",
-            "The roof."
+            "古本屋。",
+            "屋上。"
         ]
     },
     "date_perfect_yuna_book_1": {
         "name": "{name}",
-        "text": "*Between the shelves. Yuna stops on a spine.*"
+        "text": "*書架のあいだ。ユナが背表紙だけなぞって、止まる。*"
     },
     "date_perfect_yuna_book_2": {
         "name": "男",
-        "text": "...Yuna? I did not know you still came here."
+        "text": "……ユナ？ ここに来るとは思わなかった。"
     },
     "date_perfect_yuna_book_3": {
         "name": "イ・ジュンホ",
-        "text": "It was a long time ago. I thought I did not have to say anything. ...I will get out of the way."
+        "text": "昔の話だ。言わなくていいと思って。……邪魔した。"
     },
     "date_perfect_yuna_book_4": {
         "name": "ユナ",
-        "text": "*Her finger stays in the bookmark.* I am with {name} now. That is enough."
+        "text": "*指がしおりに残っている。* 今は{name}といる。それでいい。"
     },
     "date_perfect_yuna_roof_1": {
         "name": "{name}",
-        "text": "*The secret roof. One earphone crosses the gap.*"
+        "text": "*秘密の屋上。イヤホンが一本、渡ってくる。*"
     },
     "date_perfect_yuna_roof_2": {
         "name": "ユナ",
-        "text": "The third track. From the start this time."
+        "text": "三曲目。今度は最初から。"
     },
     "date_perfect_yuna_roof_3": {
         "name": "{name}",
-        "text": "*The song ends. She does not take the earphone out. Her hand is closer.*"
+        "text": "*曲が終わっても、ユナはイヤホンを外さない。手が少し近い。*"
     },
     "date_choice_perfect_dain": {
         "name": "ダイン",
-        "text": "I do not have to get on the court today. I still have places I want.",
+        "text": "今日はコートに上がらなくていい。行きたいところは、あるけど。",
         "choices": [
-            "The gym.",
-            "The booth."
+            "体育館。",
+            "実況席。"
         ]
     },
     "date_perfect_dain_gym_1": {
         "name": "{name}",
-        "text": "*She has a ball. She does not jump. She takes the bench first.*"
+        "text": "*ボールは持っている。ジャンプはない。ダインが先にベンチに座る。*"
     },
     "date_perfect_dain_gym_2": {
         "name": "ダイン",
-        "text": "Five minutes. Real five. ...If it turns into ten, do not wake me."
+        "text": "五分だけ。本当に五分。……十分になっても起こすなよ。"
     },
     "date_perfect_dain_gym_3": {
         "name": "{name}",
-        "text": "*Her right knee sits off the bench. The weight is on the left.*"
+        "text": "*ダインの右膝がベンチの外に出ている。体重は左にある。*"
     },
     "date_perfect_dain_booth_1": {
         "name": "{name}",
-        "text": "*The headset is huge. She touches the switch and leaves it off.*"
+        "text": "*ヘッドセットが大きい。ダインはスイッチに触れて、切ったままにする。*"
     },
     "date_perfect_dain_booth_2": {
         "name": "ダイン",
-        "text": "Following a match with words takes more air than I thought. It is still fine."
+        "text": "言葉で試合を追うの、思ったより息が切れる。でも平気。"
     },
     "date_perfect_dain_booth_3": {
         "name": "{name}",
-        "text": "*The scoreboard is dark. She is still in the chair.*"
+        "text": "*スコアボードの明かりは消えている。ダインはまだ席にいる。*"
     },
     "date_choice_perfect_teacher": {
         "name": "担任の先生",
-        "text": "There is a way to walk without a title. Pick one.",
+        "text": "肩書きなしで歩ける方がある。選ぶなら、どうぞ。",
         "choices": [
-            "The cafe.",
-            "The exhibition."
+            "カフェ。",
+            "展示。"
         ]
     },
     "date_perfect_teacher_cafe_1": {
         "name": "{name}",
-        "text": "*She turns the cup. There is no teacher desk here.*"
+        "text": "*窓の外を見てから、カップを回す。教卓はない。*"
     },
     "date_perfect_teacher_cafe_2": {
         "name": "担任の先生",
-        "text": "If we meet next week, you say so. I already left the slot open."
+        "text": "来週も会うかは、あなたが言って。席は空けてある。"
     },
     "date_perfect_teacher_cafe_3": {
         "name": "{name}",
-        "text": "*A note under the receipt. The time is blank. Only the place is written.*"
+        "text": "*レシートの下にメモ。時間は空欄で、場所だけ書いてある。*"
     },
     "date_perfect_teacher_museum_1": {
         "name": "{name}",
-        "text": "*She does not stop at the plaques. She only matches your side.*"
+        "text": "*解説の前では止まらない。横だけ合わせる。*"
     },
     "date_perfect_teacher_museum_2": {
         "name": "担任の先生",
-        "text": "You can read the labels. I will stay next to you."
+        "text": "説明はあなたが読めばいい。私は隣にいる。"
     },
     "date_perfect_teacher_museum_3": {
         "name": "{name}",
-        "text": "*At the exit she fixes a bag strap. No lecture.*"
+        "text": "*出口の前でバッグの紐を直してくれる。言葉はない。*"
     },
     "date_choice_perfect_nurse": {
         "name": "保健室の先生",
-        "text": "There is time with no chart. Home or out.",
+        "text": "記録のない時間が残ってる。家？ 外？",
         "choices": [
-            "Home.",
-            "The park."
+            "家。",
+            "公園。"
         ]
     },
     "date_perfect_nurse_home_1": {
         "name": "{name}",
-        "text": "*Weekend morning. The coat is on a hook. Two water glasses.*"
+        "text": "*週末の午前。白衣は掛かっていて、コップだけが二つ。*"
     },
     "date_perfect_nurse_home_2": {
         "name": "保健室の先生",
-        "text": "I am not opening a chart today. Just sit."
+        "text": "今日はカルテ、開けない。座って。"
     },
     "date_perfect_nurse_home_3": {
         "name": "{name}",
-        "text": "*The window is cracked. Only the second hand is loud.*"
+        "text": "*窓が少し開いている。秒針だけが聞こえる。*"
     },
     "date_perfect_nurse_park_1": {
         "name": "{name}",
-        "text": "*You skipped the hospital road. The bench came first.*"
+        "text": "*病院側の道は飛ばした。ベンチが先だった。*"
     },
     "date_perfect_nurse_park_2": {
         "name": "保健室の先生",
-        "text": "I left the jokes at home. This is enough."
+        "text": "冗談は家に置いてきた。今はこれでいい。"
     },
     "date_perfect_nurse_park_3": {
         "name": "{name}",
-        "text": "*Weight lands on a shoulder and stays.*"
+        "text": "*肩に重みが一度乗って、そのまま残る。*"
     },
     "date_choice_true_seo": {
         "name": "ソヨン",
-        "text": "Before we go. Short.",
+        "text": "出る前に。短く。",
         "choices": [
-            "Cafe.",
-            "Rooftop."
+            "カフェ。",
+            "屋上。"
         ]
     },
     "date_true_seo_1": {
         "name": "ソヨン",
-        "text": "You move the cups. I will square the coasters."
+        "text": "カップはあなたが動かして。私は受け皿だけ揃える。"
     },
     "date_true_seo_2": {
         "name": "{name}",
-        "text": "*A bus passes the window. She does not check the clock.*"
+        "text": "*窓の外をバスが通る。ソヨンは時計を見ない。*"
     },
     "date_true_seo_alt_1": {
         "name": "ソヨン",
-        "text": "Water them and go down. If we stay long, someone will see."
+        "text": "水だけやって降りよう。長くいたら見つかる。"
     },
     "date_true_seo_alt_2": {
         "name": "{name}",
-        "text": "*One pot is empty. That means bring one later.*"
+        "text": "*植木が一つ空いている。次に買ってこい、という意味だ。*"
     },
     "date_choice_true_yuna": {
         "name": "ユナ",
-        "text": "Outside, or up.",
+        "text": "外か、上か。",
         "choices": [
-            "Bookstore.",
-            "Roof."
+            "古本屋。",
+            "屋上。"
         ]
     },
     "date_true_yuna_book_1": {
         "name": "イ・ジュンホ",
-        "text": "...It has been a while. I did not expect to see you here."
+        "text": "……久しぶり。ここで会うとは。"
     },
     "date_true_yuna_book_2": {
         "name": "ユナ",
-        "text": "*She holds {name}'s sleeve once and lets go.* We are leaving."
+        "text": "*{name}の袖を一度つかんで、放す。* 行く。"
     },
     "date_true_yuna_roof_1": {
         "name": "ユナ",
-        "text": "You can listen without talking. The track is short."
+        "text": "黙って聞いてていい。曲は短い。"
     },
     "date_true_yuna_roof_2": {
         "name": "{name}",
-        "text": "*Wind moves the cord. She does not come down from the rail.*"
+        "text": "*風がイヤホンの線を揺らす。ユナは手すりから降りない。*"
     },
     "date_choice_true_dain": {
         "name": "ダイン",
-        "text": "Stay close a minute. Where is easier.",
+        "text": "ちょっとくっついてて。どこが楽？",
         "choices": [
-            "The bench.",
-            "The booth."
+            "ベンチ。",
+            "実況席。"
         ]
     },
     "date_true_dain_1": {
         "name": "ダイン",
-        "text": "No jumps. I am just sitting."
+        "text": "ジャンプはしない。座ってるだけ。"
     },
     "date_true_dain_2": {
         "name": "{name}",
-        "text": "*The ball rolls to her foot and stops. She does not pick it up.*"
+        "text": "*ボールが足元まで転がって止まる。ダインは拾わない。*"
     },
     "date_true_dain_alt_1": {
         "name": "ダイン",
-        "text": "I will only touch the switch. It is not on."
+        "text": "スイッチはいじるだけ。ついてない。"
     },
     "date_true_dain_alt_2": {
         "name": "{name}",
-        "text": "*The headset lies upside down on the table.*"
+        "text": "*ヘッドセットがテーブルの上で裏返っている。*"
     },
     "date_choice_true_teacher": {
         "name": "担任の先生",
-        "text": "Class is over. What is left is this side.",
+        "text": "授業は終わった。残りはこっち。",
         "choices": [
-            "A table.",
-            "The exhibition."
+            "テーブル。",
+            "展示。"
         ]
     },
     "date_true_teacher_1": {
         "name": "担任の先生",
-        "text": "You set next week. I will not start with no."
+        "text": "来週はあなたが決めて。私は、最初から断らない。"
     },
     "date_true_teacher_2": {
         "name": "{name}",
-        "text": "*The coffee cools. Neither of you checks the time.*"
+        "text": "*コーヒーが冷めるまで、時計を見ない。*"
     },
     "date_true_teacher_alt_1": {
         "name": "担任の先生",
-        "text": "Skip the labels. Stay next to me."
+        "text": "説明はパス。隣にいて。"
     },
     "date_true_teacher_alt_2": {
         "name": "{name}",
-        "text": "*Under the exit lights, a strap gets fixed.*"
+        "text": "*出口の明かりの下で、バッグの紐が直される。*"
     },
     "date_choice_true_nurse": {
         "name": "保健室の先生",
-        "text": "No chart. Where.",
+        "text": "カルテなしで、どこ行く。",
         "choices": [
-            "Home.",
-            "A bench."
+            "家。",
+            "ベンチ。"
         ]
     },
     "date_true_nurse_1": {
         "name": "保健室の先生",
-        "text": "I will pour water. It is not medicine."
+        "text": "水、つぐよ。薬じゃない。"
     },
     "date_true_nurse_2": {
         "name": "{name}",
-        "text": "*The tap runs once and stops.*"
+        "text": "*シンクの水音が一度して、止まる。*"
     },
     "date_true_nurse_alt_1": {
         "name": "保健室の先生",
-        "text": "Let us skip the hospital side."
+        "text": "病院の方は飛ばそう。"
     },
     "date_true_nurse_alt_2": {
         "name": "{name}",
-        "text": "*A hand rests on the peeled paint of the bench.*"
+        "text": "*ベンチの剥げた塗りの上に、手が乗る。*"
+    },
+    "ending_counteroffer_bitter": {},
+    "co_bitter_seo_1": {
+        "name": "{name}",
+        "text": "*一か月ほどあと、カフェ。ソヨンはコースターを揃えない。*"
+    },
+    "co_bitter_seo_2": {
+        "name": "ソヨン",
+        "text": "あの日の通知、まだ残ってる。消したのに。"
+    },
+    "co_bitter_seo_3": {
+        "name": "{name}",
+        "text": "*ソヨンは立ち上がり、バッグの紐だけ直す。傘は別々だ。*"
+    },
+    "co_bitter_yuna_1": {
+        "name": "{name}",
+        "text": "*古本屋の前に、ユナが先にいる。本は持っていない。*"
+    },
+    "co_bitter_yuna_2": {
+        "name": "ユナ",
+        "text": "別館には行かない。あの日から。"
+    },
+    "co_bitter_yuna_3": {
+        "name": "{name}",
+        "text": "*ユナはうなずくだけで、向かいの路地に入る。*"
+    },
+    "co_bitter_dain_1": {
+        "name": "{name}",
+        "text": "*体育館の外。ダインはボールを持っていない。*"
+    },
+    "co_bitter_dain_2": {
+        "name": "ダイン",
+        "text": "あの日のペア、消したの私だよね。"
+    },
+    "co_bitter_dain_3": {
+        "name": "{name}",
+        "text": "*ダインが肩を当てて通り過ぎる。今度は拳じゃない。*"
+    },
+    "co_bitter_teacher_1": {
+        "name": "{name}",
+        "text": "*卒業後の廊下。先生は原稿の封筒を持っていない。*"
+    },
+    "co_bitter_teacher_2": {
+        "name": "担任の先生",
+        "text": "あの日の画面、まだ思い出す。合評の話は、ここまでにしよう。"
+    },
+    "co_bitter_teacher_3": {
+        "name": "{name}",
+        "text": "*出席簿の代わりに、書類の束が腕にある。先生は職員室の方へ先に歩く。*"
+    },
+    "co_bitter_nurse_1": {
+        "name": "{name}",
+        "text": "*保健室の前。扉は開いていて、中は空いている。*"
+    },
+    "co_bitter_nurse_2": {
+        "name": "保健室の先生",
+        "text": "カルテは回した。あの日のことは、記録に残してない。"
+    },
+    "co_bitter_nurse_3": {
+        "name": "{name}",
+        "text": "*案内カードの代わりに、空のコップが窓辺にある。保健室の先生は廊下の先で、手を上げない。*"
     }
 }

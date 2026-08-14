@@ -1727,5 +1727,66 @@
     "date_true_nurse_alt_2": {
         "name": "{name}",
         "text": "*A hand rests on the peeled paint of the bench.*"
+    },
+    "ending_counteroffer_bitter": {},
+    "co_bitter_seo_1": {
+        "name": "{name}",
+        "text": "*About a month later, a cafe. Seoyeon does not square the coaster.*"
+    },
+    "co_bitter_seo_2": {
+        "name": "Seoyeon",
+        "text": "That notification is still there. Even after I deleted it."
+    },
+    "co_bitter_seo_3": {
+        "name": "{name}",
+        "text": "*She stands and only fixes her bag strap. Each of you has your own umbrella.*"
+    },
+    "co_bitter_yuna_1": {
+        "name": "{name}",
+        "text": "*Yuna is already at the used bookstore. She is not holding a book.*"
+    },
+    "co_bitter_yuna_2": {
+        "name": "Yuna",
+        "text": "I do not go to the annex. Not since that day."
+    },
+    "co_bitter_yuna_3": {
+        "name": "{name}",
+        "text": "*Yuna only nods and turns into the alley across the street.*"
+    },
+    "co_bitter_dain_1": {
+        "name": "{name}",
+        "text": "*Outside the gym. Dain is not holding a ball.*"
+    },
+    "co_bitter_dain_2": {
+        "name": "Dain",
+        "text": "That partner slot. I was the one who crossed it out."
+    },
+    "co_bitter_dain_3": {
+        "name": "{name}",
+        "text": "*Dain knocks your shoulder on the way past. It is not a fist bump.*"
+    },
+    "co_bitter_teacher_1": {
+        "name": "{name}",
+        "text": "*A hallway after graduation. The teacher stands without a manuscript envelope.*"
+    },
+    "co_bitter_teacher_2": {
+        "name": "Homeroom Teacher",
+        "text": "I still remember that screen. Let us leave the critique talk here."
+    },
+    "co_bitter_teacher_3": {
+        "name": "{name}",
+        "text": "*A stack of papers sits in her arm instead of the roll book. She walks toward the staff room first.*"
+    },
+    "co_bitter_nurse_1": {
+        "name": "{name}",
+        "text": "*Outside the nurse’s office. The door is open. The room is empty.*"
+    },
+    "co_bitter_nurse_2": {
+        "name": "School Nurse",
+        "text": "I passed the chart on. That day is not in the record."
+    },
+    "co_bitter_nurse_3": {
+        "name": "{name}",
+        "text": "*An empty cup sits on the sill instead of a card. At the end of the hall she does not raise a hand.*"
     }
 }

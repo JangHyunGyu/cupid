@@ -18383,8 +18383,8 @@
 - 배경: `room_school.png`
 - 배경톤: `empty`
 - 선택지:
-  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_teacher_honest` | Teacher -40 | 플래그: `day5_confessed_counteroffer`
-  2. "별일 아니었다고 둘러댄다" → `morning5_caught_teacher_lie` | Teacher -50 | 플래그: `day5_lied_about_counteroffer`
+  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_teacher_honest` | Teacher -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_teacher`
+  2. "별일 아니었다고 둘러댄다" → `morning5_caught_teacher_lie` | Teacher -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_teacher`
 
 - 캐릭터: `teacher_sad.png`
 **담임선생님**: *아침 교실. 담임에게 원고 사진을 보여주려고 휴대폰을 내려놓는 순간 화면이 켜진다. 어젯밤 함께 있던 아이에게서 '어제 일, 우리 둘만 아는 거지?'라는 알림이 뜬다. 담임은 화면을 끝까지 읽고 휴대폰에서 손을 뗀다.* 어젯밤 내 연락에는 답하지 않고 이 아이를 만난 거니?
@@ -18414,8 +18414,8 @@
 ### `morning5_caught_nurse_counteroffer`
 - 배경: `nurse_room.png`
 - 선택지:
-  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_nurse_honest` | Nurse -40 | 플래그: `day5_confessed_counteroffer`
-  2. "별일 아니었다고 둘러댄다" → `morning5_caught_nurse_lie` | Nurse -50 | 플래그: `day5_lied_about_counteroffer`
+  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_nurse_honest` | Nurse -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_nurse`
+  2. "별일 아니었다고 둘러댄다" → `morning5_caught_nurse_lie` | Nurse -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_nurse`
 
 - 캐릭터: `nurse_worried.png`
 **보건선생님**: *보건실 진료대에 휴대폰을 내려놓는 순간 화면이 켜진다. 어젯밤 함께 있던 아이에게서 '어제 일, 우리 둘만 아는 거지?'라는 알림이 뜬다. 보건선생님은 평소처럼 웃으려다 입꼬리를 천천히 내린다.* 어제 내 연락을 못 본 게 아니라, 이 아이와 함께 있었던 거야?
@@ -18456,8 +18456,8 @@
 ### `morning5_caught_dain_by_seoyeon`
 - 배경: `room_school.png`
 - 선택지:
-  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_dain_honest` | Dain -40 | 플래그: `day5_confessed_counteroffer`
-  2. "별일 아니었다고 둘러댄다" → `morning5_caught_dain_lie` | Dain -50 | 플래그: `day5_lied_about_counteroffer`
+  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_dain_honest` | Dain -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_dain`
+  2. "별일 아니었다고 둘러댄다" → `morning5_caught_dain_lie` | Dain -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_dain`
 
 - 캐릭터: `dain_sad.png`
 **다인**: *다인이 책상 옆에 서 있을 때 휴대폰이 울린다. 서연의 알림에 '어젯밤 옥상에서 잡았던 손, 아직 기억나'가 뜬다. 다인의 웃음이 그대로 멎는다.* 나한테 잘 들어갔냐고 해 놓고 다시 옥상에 간 거야?
@@ -18468,8 +18468,8 @@
 - 배경: `room_school.png`
 - 배경톤: `cold`
 - 선택지:
-  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_yuna_honest` | Yuna -40 | 플래그: `day5_confessed_counteroffer`
-  2. "별일 아니었다고 둘러댄다" → `morning5_caught_yuna_lie` | Yuna -50 | 플래그: `day5_lied_about_counteroffer`
+  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_yuna_honest` | Yuna -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_yuna`
+  2. "별일 아니었다고 둘러댄다" → `morning5_caught_yuna_lie` | Yuna -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_yuna`
 
 - 캐릭터: `yuna_sad.png`
 **유나**: *유나와 마주 앉은 책상 위에서 휴대폰이 울린다. 서연의 알림에 '어젯밤 옥상에서 잡았던 손, 아직 기억나'가 뜬다. 유나는 문장을 끝까지 읽고 화면에서 눈을 뗀다.* 내 메시지는 놔두고 옥상에 갔네.
@@ -18492,8 +18492,8 @@
 ### `morning5_caught_seoyeon_by_yuna`
 - 배경: `room_school.png`
 - 선택지:
-  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_seoyeon_honest` | Seoyeon -40 | 플래그: `day5_confessed_counteroffer`
-  2. "별일 아니었다고 둘러댄다" → `morning5_caught_seoyeon_lie` | Seoyeon -50 | 플래그: `day5_lied_about_counteroffer`
+  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_seoyeon_honest` | Seoyeon -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_seoyeon`
+  2. "별일 아니었다고 둘러댄다" → `morning5_caught_seoyeon_lie` | Seoyeon -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_seoyeon`
 
 - 캐릭터: `seyoun_sad.png`
 **서연**: *서연과 마주 앉은 책상 위에서 휴대폰이 울린다. 유나에게서 온 알림에 '어제 별관에 남아 줘서 고마워'가 뜬다. 서연은 알림을 끝까지 읽은 뒤 천천히 고개를 든다.* 어제 나한테 답장도 안 하고 별관에 간 거야?
@@ -18503,8 +18503,8 @@
 ### `morning5_caught_dain_by_yuna`
 - 배경: `room_school.png`
 - 선택지:
-  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_dain_honest` | Dain -40 | 플래그: `day5_confessed_counteroffer`
-  2. "별일 아니었다고 둘러댄다" → `morning5_caught_dain_lie` | Dain -50 | 플래그: `day5_lied_about_counteroffer`
+  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_dain_honest` | Dain -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_dain`
+  2. "별일 아니었다고 둘러댄다" → `morning5_caught_dain_lie` | Dain -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_dain`
 
 - 캐릭터: `dain_sad.png`
 **다인**: *다인이 건너편 의자를 당기는 순간 유나의 알림이 화면을 밝힌다. '어제 별관에 남아 줘서 고마워.' 다인의 손이 의자 등받이에서 멎는다.* 내가 집 도착했다고 보낸 뒤에 별관으로 간 거야?
@@ -18545,8 +18545,8 @@
 ### `morning5_caught_seoyeon_by_dain`
 - 배경: `room_school.png`
 - 선택지:
-  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_seoyeon_honest` | Seoyeon -40 | 플래그: `day5_confessed_counteroffer`
-  2. "별일 아니었다고 둘러댄다" → `morning5_caught_seoyeon_lie` | Seoyeon -50 | 플래그: `day5_lied_about_counteroffer`
+  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_seoyeon_honest` | Seoyeon -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_seoyeon`
+  2. "별일 아니었다고 둘러댄다" → `morning5_caught_seoyeon_lie` | Seoyeon -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_seoyeon`
 
 - 캐릭터: `seyoun_sad.png`
 **서연**: *아침 교실. 서연 앞에 휴대폰을 내려놓는 순간 화면이 켜진다. 다인에게서 온 알림에 '어제 체육관에서 약속한 거, 잊지 마'가 그대로 뜬다. 서연의 시선이 화면에 멎는다.* 어제 나 바래다주고 체육관에 갔어?
@@ -18575,8 +18575,8 @@
 - 배경: `room_school.png`
 - 배경톤: `cold`
 - 선택지:
-  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_yuna_honest` | Yuna -40 | 플래그: `day5_confessed_counteroffer`
-  2. "별일 아니었다고 둘러댄다" → `morning5_caught_yuna_lie` | Yuna -50 | 플래그: `day5_lied_about_counteroffer`
+  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_yuna_honest` | Yuna -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_yuna`
+  2. "별일 아니었다고 둘러댄다" → `morning5_caught_yuna_lie` | Yuna -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_yuna`
 
 - 캐릭터: `yuna_sad.png`
 **유나**: *유나가 책을 펼치려는 순간 다인의 알림이 화면에 뜬다. '어제 체육관에서 약속한 거, 잊지 마.' 유나의 손이 책 표지 위에서 멎는다.* 내 이름이 화면에 떠 있는데도 체육관에 남았네.
@@ -18606,9 +18606,44 @@
 ### `morning5_counteroffer_group_talk`
 - 배경: `room_school.png`
 - 타입: `group_free_talk`
-- 다음: `morning5_committed_start`
+- 다음: `morning5_after_counteroffer`
 
 **두 사람**: *두 사람의 시선이 한꺼번에 닿는다. 어젯밤은 대체 뭐였는지, 처음부터 둘 다 붙잡아 둔 건지. 어느 쪽도 얼버무린 대답으로 물러날 얼굴이 아니다.*
+
+---
+
+### `morning5_after_counteroffer`
+- 배경: `room_school.png`
+- 다음: `morning5_after_counteroffer_hidden_check`
+
+- 캐릭터: `없음`
+**{name}**: *조회 종이 한 장이 교탁에서 미끄러진다. 집어 드는 손은 없다. 행사 안내 방송이 먼저 나온다.*
+
+---
+
+### `morning5_after_counteroffer_hidden_check`
+- 배경: `room_school.png`
+- 분기:
+  - [`day4_counteroffer_target_teacher`] → `hidden_nurse_d5_after_co_check`
+  - [`homeroom_day4`] → `hidden_homeroom_d5_1`
+  - [기본] → `hidden_nurse_d5_after_co_check`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `hidden_nurse_d5_after_co_check`
+- 배경: `school_hallway.png`
+- 분기:
+  - [`day4_counteroffer_target_nurse`] → `morning5_end_branch`
+  - [`nurse_day4`] → `hidden_nurse_d5_1`
+  - [기본] → `morning5_end_branch`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
 
 ---
 
@@ -19838,6 +19873,7 @@
 ### `morning5_end_branch`
 - 배경: `room_school.png`
 - 분기:
+  - [`day4_counteroffer_penalty_deferred`] → `tour_co_branch`
   - [`day4_confession_accepted`] → `morning5_committed_end`
   - [기본] → `morning5_end`
 
@@ -19850,6 +19886,7 @@
 ### `morning5_end`
 - 배경: `room_school.png`
 - 분기:
+  - [`day4_counteroffer_penalty_deferred`] → `tour_co_branch`
   - [`route_dain`] → `tour_dain_1_check`
   - [`route_yuna`] → `tour_yuna_1_check`
   - [`route_seoyeon`] → `tour_seo_1`
@@ -19863,6 +19900,7 @@
 ### `morning5_committed_end`
 - 배경: `room_school.png`
 - 분기:
+  - [`day4_counteroffer_penalty_deferred`] → `tour_co_branch`
   - [`route_dain`] → `tour_dain_1_check`
   - [`route_yuna`] → `tour_yuna_1_check`
   - [`route_seoyeon`] → `tour_seo_1`
@@ -19874,6 +19912,125 @@
 ---
 
 ## 5일차 — 점심 `day5_2_lunch`
+
+### `tour_co_branch`
+- 배경: `school.png`
+- 분기:
+  - [`day4_counteroffer_target_teacher`] → `tour_co_event_1`
+  - [`day4_counteroffer_target_nurse`] → `tour_co_event_1`
+  - [`route_seoyeon`] → `tour_co_seo_1`
+  - [`route_yuna`] → `tour_co_yuna_1`
+  - [`route_dain`] → `tour_co_dain_1`
+  - [기본] → `tour_co_event_1`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `tour_co_event_1`
+- 배경: `school_hallway.png`
+- BGM: `sunset1.mp3`
+- 다음: `tour_co_event_2`
+
+- 캐릭터: `없음`
+**{name}**: *점심 종은 울렸는데 줄은 짧다. 도시락 뚜껑을 열었다 닫는 소리가 복도에 남는다.*
+
+---
+
+### `tour_co_event_2`
+- 배경: `school_hallway.png`
+- 다음: `after5_start`
+
+- 캐릭터: `없음`
+**{name}**: *행사 조끼가 의자 등받이에 걸쳐 있다. 누가 입었는지는 묻지 않는다.*
+
+---
+
+### `tour_co_seo_1`
+- 배경: `top_school.png`
+- BGM: `sunset1.mp3`
+- 다음: `tour_co_seo_2`
+
+- 캐릭터: `seyoun_sad.png`
+**{name}**: *옥상 문은 열려 있다. 서연은 난간 대신 문틀에 기대 있다.*
+
+---
+
+### `tour_co_seo_2`
+- 배경: `top_school.png`
+- 다음: `tour_co_seo_3`
+
+- 캐릭터: `seyoun_sad.png`
+**서연**: 열쇠는 반납했어. 오늘은 여기까지만.
+
+---
+
+### `tour_co_seo_3`
+- 배경: `top_school.png`
+- 다음: `after5_start`
+
+- 캐릭터: `seyoun_pout.png`
+**{name}**: *클립보드 모서리가 문틀에 부딪힌다. 서연은 고치지 않는다.*
+
+---
+
+### `tour_co_yuna_1`
+- 배경: `yuna_hideout.png`
+- BGM: `sunset1.mp3`
+- 다음: `tour_co_yuna_2`
+
+- 캐릭터: `yuna_sad.png`
+**{name}**: *별관 소파. 유나는 책 대신 가방 끈을 감는다.*
+
+---
+
+### `tour_co_yuna_2`
+- 배경: `yuna_hideout.png`
+- 다음: `tour_co_yuna_3`
+
+- 캐릭터: `yuna_sad.png`
+**유나**: 결말은 안 보여 줄래. 오늘은.
+
+---
+
+### `tour_co_yuna_3`
+- 배경: `yuna_hideout.png`
+- 다음: `after5_start`
+
+- 캐릭터: `yuna_pout.png`
+**{name}**: *창틈 빛이 빈 자리까지 온다. 유나는 그쪽으로 앉지 않는다.*
+
+---
+
+### `tour_co_dain_1`
+- 배경: `gym.png`
+- BGM: `sunset1.mp3`
+- 다음: `tour_co_dain_2`
+
+- 캐릭터: `dain_sad.png`
+**{name}**: *체육관 불은 켜져 있다. 공은 보관함 안에 있다.*
+
+---
+
+### `tour_co_dain_2`
+- 배경: `gym.png`
+- 다음: `tour_co_dain_3`
+
+- 캐릭터: `dain_sad.png`
+**다인**: 가위바위보는 내일. 오늘은 그냥 서 있을게.
+
+---
+
+### `tour_co_dain_3`
+- 배경: `gym.png`
+- 다음: `after5_start`
+
+- 캐릭터: `dain_angry.png`
+**{name}**: *다인이 손목 보호대 끝을 한 번 잡아당겼다가 놓는다.*
+
+---
 
 ### `tour_seo_1`
 - 배경: `school.png`
@@ -20343,6 +20500,19 @@
 - 배경: `school_hallway.png`
 - BGM: `sunset1.mp3`
 - 분기:
+  - [`day4_counteroffer_penalty_deferred`] → `after5_co_start`
+  - [기본] → `after5_normal_start`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after5_normal_start`
+- 배경: `school_hallway.png`
+- BGM: `sunset1.mp3`
+- 분기:
   - [`homeroom_day5`] → `after5_hidden_farewell_1`
   - [`nurse_day5`] → `after5_hidden_farewell_1`
   - [`day4_waited`] → `after5_waited_start_branch`
@@ -20355,10 +20525,224 @@
 
 ---
 
+### `after5_hidden_farewell_1`
+- 배경: `school.png`
+- 다음: `after5_hidden_farewell_3`
+
+- 캐릭터: `없음`
+**{name}**: *교문 앞. 서연은 하은과 행사 명단을 확인하고 다인은 배구공을 옆구리에 낀 채 보폭을 줄이고 유나는 펼친 책 위로 시선을 내린다. 셋은 각자 다른 출구로 향한다.*
+
+---
+
+### `after5_hidden_farewell_3`
+- 배경: `school.png`
+- 다음: `after5_hidden_farewell_3b`
+
+- 캐릭터: `없음`
+**{name}**: *교문 앞에서 손만 한 번 들었다.*
+
+---
+
+### `after5_hidden_farewell_3b`
+- 배경: `school_back.png`
+- 다음: `after5_sunset_1`
+
+- 캐릭터: `없음`
+**{name}**: *학교 뒤편으로 걸어갔다.*
+
+---
+
+### `after5_co_start`
+- 배경: `school_hallway.png`
+- BGM: `sunset1.mp3`
+- 다음: `after5_co_abandoned_branch`
+
+- 캐릭터: `없음`
+**{name}**: *행사가 끝난다. 복도에 남은 사람은 아침과 같은 얼굴들이다.*
+
+---
+
+### `after5_co_abandoned_branch`
+- 배경: `school_hallway.png`
+- 분기:
+  - [`day4_counteroffer_target_teacher`] → `after5_co_teacher_1`
+  - [`day4_counteroffer_target_nurse`] → `after5_co_nurse_1`
+  - [`route_seoyeon`] → `after5_co_seo_1`
+  - [`route_yuna`] → `after5_co_yuna_1`
+  - [`route_dain`] → `after5_co_dain_1`
+  - [기본] → `after5_co_tempter_branch`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after5_co_seo_1`
+- 배경: `school_hallway.png`
+- 다음: `after5_co_seo_2`
+
+- 캐릭터: `seyoun_sad.png`
+**서연**: *안경을 올렸다가 내린다.* 일정표는 다 돌렸어.
+
+---
+
+### `after5_co_seo_2`
+- 배경: `school_hallway.png`
+- 다음: `after5_co_tempter_branch`
+
+- 캐릭터: `seyoun_pout.png`
+**서연**: 오늘은 더 말할 자리 없어. 가.
+
+---
+
+### `after5_co_yuna_1`
+- 배경: `library_old.png`
+- 다음: `after5_co_yuna_2`
+
+- 캐릭터: `yuna_sad.png`
+**유나**: *책갈피를 가방에 넣는다.* 게시판은 비워 뒀어.
+
+---
+
+### `after5_co_yuna_2`
+- 배경: `library_old.png`
+- 다음: `after5_co_tempter_branch`
+
+- 캐릭터: `yuna_angry.png`
+**유나**: 따라오지 마. 오늘은.
+
+---
+
+### `after5_co_dain_1`
+- 배경: `gym.png`
+- 다음: `after5_co_dain_2`
+
+- 캐릭터: `dain_sad.png`
+**다인**: *공을 보관함에 밀어 넣는다.* 파트너는 지웠어.
+
+---
+
+### `after5_co_dain_2`
+- 배경: `gym.png`
+- 다음: `after5_co_tempter_branch`
+
+- 캐릭터: `dain_angry.png`
+**다인**: 잘 가. 지금 웃기는 좀 그래.
+
+---
+
+### `after5_co_teacher_1`
+- 배경: `room_school.png`
+- 배경톤: `empty`
+- 다음: `after5_co_teacher_2`
+
+- 캐릭터: `teacher_sad.png`
+**담임선생님**: *출석부를 덮는다.* 행사는 다른 선생님이 맡으셨다.
+
+---
+
+### `after5_co_teacher_2`
+- 배경: `room_school.png`
+- 배경톤: `empty`
+- 다음: `after5_co_tempter_branch`
+
+- 캐릭터: `teacher_angry.png`
+**담임선생님**: 오늘은 교무실로 오지 마.
+
+---
+
+### `after5_co_nurse_1`
+- 배경: `nurse_room.png`
+- 다음: `after5_co_nurse_2`
+
+- 캐릭터: `nurse_worried.png`
+**보건선생님**: *진료 기록을 서랍에 넣는다.* 상담은 여기까지야.
+
+---
+
+### `after5_co_nurse_2`
+- 배경: `nurse_room.png`
+- 다음: `after5_co_tempter_branch`
+
+- 캐릭터: `nurse_angry.png`
+**보건선생님**: 아프면 다른 선생님한테 가. 오늘은 내가 아니야.
+
+---
+
+### `after5_co_tempter_branch`
+- 배경: `school_hallway.png`
+- 분기:
+  - [`day4_took_seoyeon_counteroffer`] → `after5_co_tempter_seo_1`
+  - [`day4_took_yuna_counteroffer`] → `after5_co_tempter_yuna_1`
+  - [`day4_took_dain_counteroffer`] → `after5_co_tempter_dain_1`
+  - [기본] → `after5_waited_start_branch`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after5_co_tempter_seo_1`
+- 배경: `school_hallway.png`
+- 다음: `after5_co_tempter_seo_2`
+
+- 캐릭터: `seyoun_sad.png`
+**서연**: *옥상 열쇠고리를 주머니에 넣는다.* 어제 일은 내가 먼저였어.
+
+---
+
+### `after5_co_tempter_seo_2`
+- 배경: `school_hallway.png`
+- 다음: `after5_waited_start_branch`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 그래도 오늘은 붙잡지 않을게.
+
+---
+
+### `after5_co_tempter_yuna_1`
+- 배경: `library_old.png`
+- 다음: `after5_co_tempter_yuna_2`
+
+- 캐릭터: `yuna_sad.png`
+**유나**: *별관 사진이 잠금화면에 남아 있다.* 내가 불렀어.
+
+---
+
+### `after5_co_tempter_yuna_2`
+- 배경: `library_old.png`
+- 다음: `after5_waited_start_branch`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: 지금은 따라가지 마. 그걸로 돼.
+
+---
+
+### `after5_co_tempter_dain_1`
+- 배경: `gym.png`
+- 다음: `after5_co_tempter_dain_2`
+
+- 캐릭터: `dain_sad.png`
+**다인**: *무릎 테이프를 한 번 눌러 붙인다.* 어제 남으라고 한 건 나야.
+
+---
+
+### `after5_co_tempter_dain_2`
+- 배경: `gym.png`
+- 다음: `after5_waited_start_branch`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 오늘은 먼저 안 부를게.
+
+---
+
 ### `after5_waited_start_branch`
 - 배경: `school_hallway.png`
 - 분기:
   - [`route_seoyeon`] → `after5_farewell_yuna_check`
+  - [`day4_took_seoyeon_counteroffer`] → `after5_farewell_yuna_check`
   - [기본] → `after5_farewell_seo_1`
 
 - 캐릭터: `없음`
@@ -20446,6 +20830,7 @@
 - 배경: `school_hallway.png`
 - 분기:
   - [`route_yuna`] → `after5_farewell_dain_check`
+  - [`day4_took_yuna_counteroffer`] → `after5_farewell_dain_check`
   - [기본] → `after5_farewell_yuna_1`
 
 <!-- i18n -->
@@ -20513,6 +20898,7 @@
 - 배경: `school_hallway.png`
 - 분기:
   - [`route_dain`] → `after5_sunset_1`
+  - [`day4_took_dain_counteroffer`] → `after5_sunset_1`
   - [기본] → `after5_farewell_dain_1`
 
 <!-- i18n -->
@@ -20604,33 +20990,6 @@
 
 ---
 
-### `after5_hidden_farewell_1`
-- 배경: `school.png`
-- 다음: `after5_hidden_farewell_3`
-
-- 캐릭터: `없음`
-**{name}**: *교문 앞. 서연은 하은과 행사 명단을 확인하고 다인은 배구공을 옆구리에 낀 채 보폭을 줄이고 유나는 펼친 책 위로 시선을 내린다. 셋은 각자 다른 출구로 향한다.*
-
----
-
-### `after5_hidden_farewell_3`
-- 배경: `school.png`
-- 다음: `after5_hidden_farewell_3b`
-
-- 캐릭터: `없음`
-**{name}**: *교문 앞에서 손만 한 번 들었다.*
-
----
-
-### `after5_hidden_farewell_3b`
-- 배경: `school_back.png`
-- 다음: `after5_sunset_1`
-
-- 캐릭터: `없음`
-**{name}**: *학교 뒤편으로 걸어갔다.*
-
----
-
 ### `after5_sunset_1`
 - 배경: `school_back.png`
 - BGM: `confession.mp3`
@@ -20645,6 +21004,7 @@
 - 분기:
   - [`day3_caught_multiple_dates`] → `ending_start`
   - [`harem_seed`] → `after5_set_harem`
+  - [`day4_counteroffer_penalty_deferred`] → `ending_start`
   - [`homeroom_day5`] → `after5_hidden_route_choice_check`
   - [`nurse_day5`] → `after5_hidden_route_choice_check`
   - [`day4_waited`] → `after5_last_chance_1`
@@ -21365,6 +21725,7 @@
 - 분기:
   - [`day3_caught_multiple_dates`] → `day5_ending_mayhem`
   - [`ending_harem`] → `day5_ending_harem`
+  - [`day4_counteroffer_penalty_deferred`] → `ending_counteroffer_bitter`
   - [`day5_last_chance_path`] → `ending_last_chance_resolve`
   - [`both_hidden_day5`] → `hidden_dual_route_1`
   - [`homeroom_day5`] → `hidden_perfect_homeroom_check`
@@ -21376,6 +21737,161 @@
 
 - 캐릭터: `없음`
 **시스템**: ‹빈›
+
+---
+
+### `ending_counteroffer_bitter`
+- 배경: `park.png`
+- BGM: `night2.mp3`
+- 플래그: `ending_bittersweet`
+- 분기:
+  - [`day4_counteroffer_target_teacher`] → `co_bitter_teacher_1`
+  - [`day4_counteroffer_target_nurse`] → `co_bitter_nurse_1`
+  - [`route_seoyeon`] → `co_bitter_seo_1`
+  - [`route_yuna`] → `co_bitter_yuna_1`
+  - [`route_dain`] → `co_bitter_dain_1`
+  - [기본] → `co_bitter_seo_1`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `co_bitter_seo_1`
+- 배경: `cafe.png`
+- 다음: `co_bitter_seo_2`
+
+- 캐릭터: `seyoun_sad.png`
+**{name}**: *한 달쯤 지나 카페. 서연은 컵받침을 맞추지 않는다.*
+
+---
+
+### `co_bitter_seo_2`
+- 배경: `cafe.png`
+- 다음: `co_bitter_seo_3`
+
+- 캐릭터: `seyoun_sad.png`
+**서연**: 그날 알림, 아직도 남아 있어. 지웠는데도.
+
+---
+
+### `co_bitter_seo_3`
+- 배경: `ending_bittersweet.png`
+- 다음: `bitter_epilogue_1`
+
+- 캐릭터: `없음`
+**{name}**: *서연은 일어선 뒤 가방끈만 고쳐 잡는다. 우산은 각자다.*
+
+---
+
+### `co_bitter_yuna_1`
+- 배경: `bookstore.png`
+- 다음: `co_bitter_yuna_2`
+
+- 캐릭터: `yuna_sad.png`
+**{name}**: *헌책방 앞에서 유나가 먼저 와 있다. 책은 안 들고 있다.*
+
+---
+
+### `co_bitter_yuna_2`
+- 배경: `bookstore.png`
+- 다음: `co_bitter_yuna_3`
+
+- 캐릭터: `yuna_sad.png`
+**유나**: 별관은 안 가. 그날 이후로.
+
+---
+
+### `co_bitter_yuna_3`
+- 배경: `ending_bittersweet.png`
+- 다음: `bitter_epilogue_1`
+
+- 캐릭터: `없음`
+**{name}**: *유나는 고개만 끄덕이고 반대편 골목으로 들어간다.*
+
+---
+
+### `co_bitter_dain_1`
+- 배경: `gym.png`
+- 다음: `co_bitter_dain_2`
+
+- 캐릭터: `dain_sad.png`
+**{name}**: *체육관 바깥. 다인은 공을 들고 있지 않다.*
+
+---
+
+### `co_bitter_dain_2`
+- 배경: `gym.png`
+- 다음: `co_bitter_dain_3`
+
+- 캐릭터: `dain_sad.png`
+**다인**: 그날 파트너, 내가 지운 거 맞지.
+
+---
+
+### `co_bitter_dain_3`
+- 배경: `ending_bittersweet.png`
+- 다음: `bitter_epilogue_1`
+
+- 캐릭터: `없음`
+**{name}**: *다인이 어깨를 치고 지나간다. 이번엔 주먹이 아니다.*
+
+---
+
+### `co_bitter_teacher_1`
+- 배경: `school_hallway.png`
+- 배경톤: `empty`
+- 다음: `co_bitter_teacher_2`
+
+- 캐릭터: `teacher_sad.png`
+**{name}**: *졸업 후 복도. 담임은 원고 봉투 없이 서 있다.*
+
+---
+
+### `co_bitter_teacher_2`
+- 배경: `school_hallway.png`
+- 배경톤: `empty`
+- 다음: `co_bitter_teacher_3`
+
+- 캐릭터: `teacher_sad.png`
+**담임선생님**: 그날 화면, 아직도 생각나. 합평 얘기는 여기까지 하자.
+
+---
+
+### `co_bitter_teacher_3`
+- 배경: `ending_bittersweet_teacher.png`
+- 다음: `hidden_bitter_homeroom_ending_title`
+
+- 캐릭터: `없음`
+**{name}**: *출석부 대신 서류 뭉치가 팔 안에 있다. 담임은 교무실 쪽으로 먼저 걷는다.*
+
+---
+
+### `co_bitter_nurse_1`
+- 배경: `nurse_room.png`
+- 다음: `co_bitter_nurse_2`
+
+- 캐릭터: `nurse_worried.png`
+**{name}**: *보건실 앞. 문은 열려 있고 안은 비어 있다.*
+
+---
+
+### `co_bitter_nurse_2`
+- 배경: `nurse_room.png`
+- 다음: `co_bitter_nurse_3`
+
+- 캐릭터: `nurse_worried.png`
+**보건선생님**: 차트는 넘겼어. 그날 일은 기록에 안 남겼고.
+
+---
+
+### `co_bitter_nurse_3`
+- 배경: `ending_bittersweet_nurse.png`
+- 다음: `hidden_bitter_nurse_ending_title`
+
+- 캐릭터: `없음`
+**{name}**: *안내 카드 대신 빈 컵이 창가에 있다. 보건선생님은 복도 끝에서 손을 내리지 않는다.*
 
 ---
 
@@ -22063,10 +22579,75 @@
 
 ### `hidden_perfect_homeroom_ep3`
 - 배경: `ending_perfect_teacher.png`
-- 다음: `hidden_perfect_homeroom_ep4`
+- 다음: `date_choice_perfect_teacher`
 
 - 캐릭터: `없음`
 **{name}**: *두 번째 책이 출간됐다. 헌정사에는 특정한 이름 대신 '끝까지 읽고 자기 말로 답해준 독자들에게'라고 적혀 있다.*
+
+---
+
+### `date_choice_perfect_teacher`
+- 배경: `cafe.png`
+- 선택지:
+  1. "카페." → `date_perfect_teacher_cafe_1`
+  2. "전시." → `date_perfect_teacher_museum_1`
+
+- 캐릭터: `teacher_smile.png`
+**담임선생님**: 직함 없이 걸을 수 있는 쪽이 있어. 고르든가.
+
+---
+
+### `date_perfect_teacher_cafe_1`
+- 배경: `cafe.png`
+- 다음: `date_perfect_teacher_cafe_2`
+
+- 캐릭터: `teacher_smile.png`
+**{name}**: *창밖을 보다가 컵을 돌린다. 교탁은 없다.*
+
+---
+
+### `date_perfect_teacher_cafe_2`
+- 배경: `cafe.png`
+- 다음: `date_perfect_teacher_cafe_3`
+
+- 캐릭터: `teacher_smile.png`
+**담임선생님**: 다음 주도 볼지, 네가 말해. 나는 이미 비워 뒀어.
+
+---
+
+### `date_perfect_teacher_cafe_3`
+- 배경: `cafe.png`
+- 다음: `hidden_perfect_homeroom_ep4`
+
+- 캐릭터: `teacher_smile.png`
+**{name}**: *영수증 아래 메모. 시간은 비어 있고 장소만 적혀 있다.*
+
+---
+
+### `date_perfect_teacher_museum_1`
+- 배경: `museum.png`
+- 다음: `date_perfect_teacher_museum_2`
+
+- 캐릭터: `teacher_smile.png`
+**{name}**: *설명문 앞에서 멈추지 않는다. 옆만 맞춘다.*
+
+---
+
+### `date_perfect_teacher_museum_2`
+- 배경: `museum.png`
+- 다음: `date_perfect_teacher_museum_3`
+
+- 캐릭터: `teacher_smile.png`
+**담임선생님**: 설명은 네가 읽으면 돼. 나는 옆에 있을게.
+
+---
+
+### `date_perfect_teacher_museum_3`
+- 배경: `museum.png`
+- 다음: `hidden_perfect_homeroom_ep4`
+
+- 캐릭터: `teacher_smile.png`
+**{name}**: *출구 앞에서 가방 끈을 고쳐 준다. 말은 없다.*
 
 ---
 
@@ -22290,10 +22871,57 @@
 
 ### `hidden_true_homeroom_8`
 - 배경: `ending_true_teacher.png`
-- 다음: `hidden_true_homeroom_ending_title`
+- 다음: `date_choice_true_teacher`
 
 - 캐릭터: `없음`
 **담임선생님**: *케이크 접시 너머로 손바닥을 펴 보인다. 닿기 전 멈춘 채 {name}의 대답을 기다린다.* 다음 주에도 만날래?
+
+---
+
+### `date_choice_true_teacher`
+- 배경: `cafe.png`
+- 선택지:
+  1. "테이블." → `date_true_teacher_1`
+  2. "전시." → `date_true_teacher_alt_1`
+
+- 캐릭터: `teacher_smile.png`
+**담임선생님**: 수업은 끝났어. 남은 건 이쪽이야.
+
+---
+
+### `date_true_teacher_1`
+- 배경: `cafe.png`
+- 다음: `date_true_teacher_2`
+
+- 캐릭터: `teacher_smile.png`
+**담임선생님**: 다음 주는 네가 정해. 나는 거절부터 안 할 테니까.
+
+---
+
+### `date_true_teacher_2`
+- 배경: `cafe.png`
+- 다음: `hidden_true_homeroom_ending_title`
+
+- 캐릭터: `teacher_smile.png`
+**{name}**: *커피가 식기 전에 시계를 보지 않는다.*
+
+---
+
+### `date_true_teacher_alt_1`
+- 배경: `museum.png`
+- 다음: `date_true_teacher_alt_2`
+
+- 캐릭터: `teacher_smile.png`
+**담임선생님**: 설명은 패스. 옆에만 있어.
+
+---
+
+### `date_true_teacher_alt_2`
+- 배경: `museum.png`
+- 다음: `hidden_true_homeroom_ending_title`
+
+- 캐릭터: `teacher_smile.png`
+**{name}**: *출구 조명 아래에서 가방 끈이 고쳐진다.*
 
 ---
 
@@ -22606,10 +23234,75 @@
 
 ### `hidden_perfect_nurse_ep3`
 - 배경: `nurse_house.png`
-- 다음: `hidden_perfect_nurse_ep4`
+- 다음: `date_choice_perfect_nurse`
 
 - 캐릭터: `없음`
 **{name}**: *로즈마리 화분은 둘이 고른 집 창가에 놓였다. 물 주는 날은 번갈아 맡는다.*
+
+---
+
+### `date_choice_perfect_nurse`
+- 배경: `nurse_house.png`
+- 선택지:
+  1. "집." → `date_perfect_nurse_home_1`
+  2. "공원." → `date_perfect_nurse_park_1`
+
+- 캐릭터: `nurse_smile.png`
+**보건선생님**: 기록 없는 시간이 남았어. 집일까, 밖일까.
+
+---
+
+### `date_perfect_nurse_home_1`
+- 배경: `nurse_house.png`
+- 다음: `date_perfect_nurse_home_2`
+
+- 캐릭터: `nurse_smile.png`
+**{name}**: *주말 오전. 가운은 걸려 있다. 물컵만 두 개다.*
+
+---
+
+### `date_perfect_nurse_home_2`
+- 배경: `nurse_house.png`
+- 다음: `date_perfect_nurse_home_3`
+
+- 캐릭터: `nurse_smile.png`
+**보건선생님**: 오늘은 차트 안 열어. 그냥 앉아.
+
+---
+
+### `date_perfect_nurse_home_3`
+- 배경: `nurse_house.png`
+- 다음: `hidden_perfect_nurse_ep4`
+
+- 캐릭터: `nurse_smile.png`
+**{name}**: *창문이 조금 열려 있다. 시계 초침만 들린다.*
+
+---
+
+### `date_perfect_nurse_park_1`
+- 배경: `park.png`
+- 다음: `date_perfect_nurse_park_2`
+
+- 캐릭터: `nurse_smile.png`
+**{name}**: *병원 쪽 길은 건너뛰었다. 벤치가 먼저다.*
+
+---
+
+### `date_perfect_nurse_park_2`
+- 배경: `park.png`
+- 다음: `date_perfect_nurse_park_3`
+
+- 캐릭터: `nurse_smile.png`
+**보건선생님**: 농담은 집에 두고 왔어. 지금은 이걸로 충분해.
+
+---
+
+### `date_perfect_nurse_park_3`
+- 배경: `park.png`
+- 다음: `hidden_perfect_nurse_ep4`
+
+- 캐릭터: `nurse_smile.png`
+**{name}**: *어깨에 무게가 잠시 올라왔다가 그대로 남는다.*
 
 ---
 
@@ -22860,10 +23553,57 @@
 
 ### `hidden_true_nurse_8_h`
 - 배경: `ending_true_nurse.png`
-- 다음: `hidden_true_nurse_ending_title`
+- 다음: `date_choice_true_nurse`
 
 - 캐릭터: `없음`
 **{name}**: 그럼 다음 주에도 올게요. 그것도 제가 정한 거예요. *영화가 끝나기 전, 주원은 {name}의 어깨에 기대 잠든다.*
+
+---
+
+### `date_choice_true_nurse`
+- 배경: `nurse_house.png`
+- 선택지:
+  1. "집." → `date_true_nurse_1`
+  2. "벤치." → `date_true_nurse_alt_1`
+
+- 캐릭터: `nurse_smile.png`
+**보건선생님**: 차트 없이 어디 갈래.
+
+---
+
+### `date_true_nurse_1`
+- 배경: `nurse_house.png`
+- 다음: `date_true_nurse_2`
+
+- 캐릭터: `nurse_smile.png`
+**보건선생님**: 물 따라 줄게. 약은 아니야.
+
+---
+
+### `date_true_nurse_2`
+- 배경: `nurse_house.png`
+- 다음: `hidden_true_nurse_ending_title`
+
+- 캐릭터: `nurse_smile.png`
+**{name}**: *싱크대 물소리가 잠깐 나고 끊긴다.*
+
+---
+
+### `date_true_nurse_alt_1`
+- 배경: `park.png`
+- 다음: `date_true_nurse_alt_2`
+
+- 캐릭터: `nurse_smile.png`
+**보건선생님**: 병원 쪽은 건너뛰자.
+
+---
+
+### `date_true_nurse_alt_2`
+- 배경: `park.png`
+- 다음: `hidden_true_nurse_ending_title`
+
+- 캐릭터: `nurse_smile.png`
+**{name}**: *벤치 페인트가 벗겨진 자리에 손이 얹힌다.*
 
 ---
 
@@ -23223,10 +23963,75 @@
 
 ### `perfect_epilogue_3_seo`
 - 배경: `ending_perfect_seoyeon.png`
-- 다음: `perfect_epilogue_4_seo`
+- 다음: `date_choice_perfect_seo`
 
 - 캐릭터: `없음`
 **서연**: 하나는 네가 골라.
+
+---
+
+### `date_choice_perfect_seo`
+- 배경: `top_school.png`
+- 선택지:
+  1. "옥상." → `date_perfect_seo_roof_1`
+  2. "카페." → `date_perfect_seo_cafe_1`
+
+- 캐릭터: `seyoun_laugh.png`
+**서연**: 남은 건 내일 보자고 했지. 그전에, 오늘 어디 갈래.
+
+---
+
+### `date_perfect_seo_roof_1`
+- 배경: `top_school.png`
+- 다음: `date_perfect_seo_roof_2`
+
+- 캐릭터: `seyoun_laugh.png`
+**{name}**: *화분 흙이 아직 젖어 있다. 서연이 물뿌리개를 내려놓는다.*
+
+---
+
+### `date_perfect_seo_roof_2`
+- 배경: `top_school.png`
+- 다음: `date_perfect_seo_roof_3`
+
+- 캐릭터: `seyoun_laugh.png`
+**서연**: 빈자리는 네가 골라. 나는 이미 골랐어.
+
+---
+
+### `date_perfect_seo_roof_3`
+- 배경: `top_school.png`
+- 다음: `perfect_epilogue_4_seo`
+
+- 캐릭터: `seyoun_laugh.png`
+**{name}**: *문이 열린 채로 바람이 들어온다. 서연은 일정표를 접지 않는다.*
+
+---
+
+### `date_perfect_seo_cafe_1`
+- 배경: `cafe.png`
+- 다음: `date_perfect_seo_cafe_2`
+
+- 캐릭터: `seyoun_laugh.png`
+**{name}**: *창가. 컵받침을 맞추고 나서야 서연이 입을 연다.*
+
+---
+
+### `date_perfect_seo_cafe_2`
+- 배경: `cafe.png`
+- 다음: `date_perfect_seo_cafe_3`
+
+- 캐릭터: `seyoun_laugh.png`
+**서연**: 다음 주도 여기. 시간만 네가 정해.
+
+---
+
+### `date_perfect_seo_cafe_3`
+- 배경: `cafe.png`
+- 다음: `perfect_epilogue_4_seo`
+
+- 캐릭터: `seyoun_laugh.png`
+**{name}**: *영수증 뒷면에 숫자가 적혀 있다. 전화번호가 아니다. 다음 화분 물 주는 날이다.*
 
 ---
 
@@ -23389,10 +24194,57 @@
 
 ### `true_epilogue_1_seo`
 - 배경: `ending_true_seoyeon.png`
-- 다음: `true_epilogue_2`
+- 다음: `date_choice_true_seo`
 
 - 캐릭터: `없음`
 **{name}**: *5일이었다. 서연의 책상 위 물건 위치를 외우기까지.*
+
+---
+
+### `date_choice_true_seo`
+- 배경: `cafe.png`
+- 선택지:
+  1. "카페." → `date_true_seo_1`
+  2. "옥상." → `date_true_seo_alt_1`
+
+- 캐릭터: `seyoun_shy.png`
+**서연**: 나가기 전에. 짧게.
+
+---
+
+### `date_true_seo_1`
+- 배경: `cafe.png`
+- 다음: `date_true_seo_2`
+
+- 캐릭터: `seyoun_shy.png`
+**서연**: 컵은 네가 옮겨. 나는 받침만 맞출게.
+
+---
+
+### `date_true_seo_2`
+- 배경: `cafe.png`
+- 다음: `true_epilogue_2`
+
+- 캐릭터: `seyoun_laugh.png`
+**{name}**: *창밖 버스가 지나간다. 서연은 시계를 보지 않는다.*
+
+---
+
+### `date_true_seo_alt_1`
+- 배경: `top_school.png`
+- 다음: `date_true_seo_alt_2`
+
+- 캐릭터: `seyoun_laugh.png`
+**서연**: 물만 주고 내려가자. 오래 있으면 들켜.
+
+---
+
+### `date_true_seo_alt_2`
+- 배경: `top_school.png`
+- 다음: `true_epilogue_2`
+
+- 캐릭터: `seyoun_laugh.png`
+**{name}**: *화분 하나가 비어 있다. 다음에 사 오라는 뜻이다.*
 
 ---
 
@@ -23486,10 +24338,84 @@
 
 ### `perfect_epilogue_3_yuna`
 - 배경: `ending_perfect_yuna.png`
-- 다음: `perfect_epilogue_4_yuna`
+- 다음: `date_choice_perfect_yuna`
 
 - 캐릭터: `없음`
 **유나**: *여전히 말이 적다. {name}에게 보내는 쪽지는 조금 길어졌다.*
+
+---
+
+### `date_choice_perfect_yuna`
+- 배경: `bookstore.png`
+- 선택지:
+  1. "헌책방." → `date_perfect_yuna_book_1`
+  2. "옥상." → `date_perfect_yuna_roof_1`
+
+- 캐릭터: `yuna_smile.png`
+**유나**: 밖에도 자리 있어. 고를래.
+
+---
+
+### `date_perfect_yuna_book_1`
+- 배경: `bookstore.png`
+- 다음: `date_perfect_yuna_book_2`
+
+- 캐릭터: `yuna_smile.png`
+**{name}**: *서가 사이. 유나가 책등만 훑다가 멈춘다.*
+
+---
+
+### `date_perfect_yuna_book_2`
+- 배경: `bookstore.png`
+- 다음: `date_perfect_yuna_book_3`
+
+- 캐릭터: `junho_normal.png`
+**남자**: ...유나? 여기 오는 줄은 몰랐다.
+
+---
+
+### `date_perfect_yuna_book_3`
+- 배경: `bookstore.png`
+- 다음: `date_perfect_yuna_book_4`
+
+- 캐릭터: `junho_awkward.png`
+**이준호**: 오래전 일이야. 말은 안 해도 될 것 같아서. ...방해했다.
+
+---
+
+### `date_perfect_yuna_book_4`
+- 배경: `bookstore.png`
+- 다음: `perfect_epilogue_4_yuna`
+
+- 캐릭터: `yuna_smile.png`
+**유나**: *손가락이 책갈피에 남아 있다.* 지금은 {name}이랑 있어. 그걸로 돼.
+
+---
+
+### `date_perfect_yuna_roof_1`
+- 배경: `yuna_secret_rooftop.png`
+- 다음: `date_perfect_yuna_roof_2`
+
+- 캐릭터: `yuna_smile.png`
+**{name}**: *비밀 옥상. 이어폰이 하나 건너온다.*
+
+---
+
+### `date_perfect_yuna_roof_2`
+- 배경: `yuna_secret_rooftop.png`
+- 다음: `date_perfect_yuna_roof_3`
+
+- 캐릭터: `yuna_smile.png`
+**유나**: 세 번째 곡. 이번엔 처음부터.
+
+---
+
+### `date_perfect_yuna_roof_3`
+- 배경: `yuna_secret_rooftop.png`
+- 다음: `perfect_epilogue_4_yuna`
+
+- 캐릭터: `yuna_smile.png`
+**{name}**: *곡이 끝나도 유나는 이어폰을 빼지 않는다. 손만 조금 더 가깝다.*
 
 ---
 
@@ -23670,10 +24596,57 @@
 
 ### `true_epilogue_1_yuna`
 - 배경: `ending_true_yuna.png`
-- 다음: `true_epilogue_2`
+- 다음: `date_choice_true_yuna`
 
 - 캐릭터: `없음`
 **{name}**: *5일이었다. 유나가 쪽지 밖에서 말하기까지.*
+
+---
+
+### `date_choice_true_yuna`
+- 배경: `bookstore.png`
+- 선택지:
+  1. "헌책방." → `date_true_yuna_book_1`
+  2. "옥상." → `date_true_yuna_roof_1`
+
+- 캐릭터: `yuna_smile.png`
+**유나**: 바깥, 아니면 위.
+
+---
+
+### `date_true_yuna_book_1`
+- 배경: `bookstore.png`
+- 다음: `date_true_yuna_book_2`
+
+- 캐릭터: `junho_normal.png`
+**이준호**: ...오래됐다. 여기서 볼 줄은.
+
+---
+
+### `date_true_yuna_book_2`
+- 배경: `bookstore.png`
+- 다음: `true_epilogue_2`
+
+- 캐릭터: `yuna_smile.png`
+**유나**: *{name} 소매를 한 번 잡았다 놓는다.* 갈게.
+
+---
+
+### `date_true_yuna_roof_1`
+- 배경: `yuna_secret_rooftop.png`
+- 다음: `date_true_yuna_roof_2`
+
+- 캐릭터: `yuna_smile.png`
+**유나**: 말 없이 들어도 돼. 곡은 짧아.
+
+---
+
+### `date_true_yuna_roof_2`
+- 배경: `yuna_secret_rooftop.png`
+- 다음: `true_epilogue_2`
+
+- 캐릭터: `yuna_smile.png`
+**{name}**: *바람이 이어폰 줄을 흔든다. 유나는 난간에서 내려오지 않는다.*
 
 ---
 
@@ -23803,10 +24776,75 @@
 
 ### `perfect_epilogue_3_dain`
 - 배경: `ending_perfect_dain.png`
-- 다음: `perfect_epilogue_4_dain`
+- 다음: `date_choice_perfect_dain`
 
 - 캐릭터: `없음`
 **{name}**: *통증이 있는 날에는 훈련 대신 재활 기록과 경기 영상을 함께 본다. 쉬어야 한다는 말도 이제 다인이 먼저 한다.*
+
+---
+
+### `date_choice_perfect_dain`
+- 배경: `gym.png`
+- 선택지:
+  1. "체육관." → `date_perfect_dain_gym_1`
+  2. "중계석." → `date_perfect_dain_booth_1`
+
+- 캐릭터: `dain_laugh.png`
+**다인**: 오늘은 코트에 안 올라가도 돼. 그래도 가고 싶은 데는 있어.
+
+---
+
+### `date_perfect_dain_gym_1`
+- 배경: `gym.png`
+- 다음: `date_perfect_dain_gym_2`
+
+- 캐릭터: `dain_laugh.png`
+**{name}**: *공은 잡혀 있다. 점프는 없다. 다인이 벤치에 먼저 앉는다.*
+
+---
+
+### `date_perfect_dain_gym_2`
+- 배경: `gym.png`
+- 다음: `date_perfect_dain_gym_3`
+
+- 캐릭터: `dain_laugh.png`
+**다인**: 5분만. 진짜 5분. ...10분 돼도 깨우지 마.
+
+---
+
+### `date_perfect_dain_gym_3`
+- 배경: `gym.png`
+- 다음: `perfect_epilogue_4_dain`
+
+- 캐릭터: `dain_laugh.png`
+**{name}**: *다인의 오른쪽 무릎이 벤치 밖으로 나와 있다. 무게는 왼쪽에 있다.*
+
+---
+
+### `date_perfect_dain_booth_1`
+- 배경: `dain_broadcast_booth.png`
+- 다음: `date_perfect_dain_booth_2`
+
+- 캐릭터: `dain_laugh.png`
+**{name}**: *헤드셋이 크다. 다인이 스위치만 만져 보고 끈다.*
+
+---
+
+### `date_perfect_dain_booth_2`
+- 배경: `dain_broadcast_booth.png`
+- 다음: `date_perfect_dain_booth_3`
+
+- 캐릭터: `dain_laugh.png`
+**다인**: 말로 따라가는 거, 생각보다 숨이 차. 근데 괜찮아.
+
+---
+
+### `date_perfect_dain_booth_3`
+- 배경: `dain_broadcast_booth.png`
+- 다음: `perfect_epilogue_4_dain`
+
+- 캐릭터: `dain_laugh.png`
+**{name}**: *점수판 불은 꺼져 있다. 다인은 아직 자리에 앉아 있다.*
 
 ---
 
@@ -23988,10 +25026,57 @@
 
 ### `true_epilogue_1_dain`
 - 배경: `ending_true_dain.png`
-- 다음: `true_epilogue_2`
+- 다음: `date_choice_true_dain`
 
 - 캐릭터: `없음`
 **{name}**: *다인은 그날 처음으로 '괜찮아' 대신 다음 진료 날짜를 말했다.*
+
+---
+
+### `date_choice_true_dain`
+- 배경: `gym.png`
+- 선택지:
+  1. "벤치." → `date_true_dain_1`
+  2. "중계석." → `date_true_dain_alt_1`
+
+- 캐릭터: `dain_laugh.png`
+**다인**: 잠깐만 붙어 있어. 어디가 편해.
+
+---
+
+### `date_true_dain_1`
+- 배경: `gym.png`
+- 다음: `date_true_dain_2`
+
+- 캐릭터: `dain_laugh.png`
+**다인**: 점프는 안 해. 앉아만 있을게.
+
+---
+
+### `date_true_dain_2`
+- 배경: `gym.png`
+- 다음: `true_epilogue_2`
+
+- 캐릭터: `dain_laugh.png`
+**{name}**: *공이 발옆에 굴러 멈춘다. 다인은 집어 들지 않는다.*
+
+---
+
+### `date_true_dain_alt_1`
+- 배경: `dain_broadcast_booth.png`
+- 다음: `date_true_dain_alt_2`
+
+- 캐릭터: `dain_laugh.png`
+**다인**: 스위치는 만지기만 할게. 켜진 건 아니야.
+
+---
+
+### `date_true_dain_alt_2`
+- 배경: `dain_broadcast_booth.png`
+- 다음: `true_epilogue_2`
+
+- 캐릭터: `dain_laugh.png`
+**{name}**: *헤드셋이 테이블 위에 뒤집혀 있다.*
 
 ---
 

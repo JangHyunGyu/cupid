@@ -9,12 +9,18 @@
     "morning5_caught_teacher_counteroffer": {
         "name": "Profesora",
         "text": "*En el aula por la mañana, dejo el teléfono sobre la mesa para enseñarle a la profesora una foto del borrador. La pantalla se ilumina con un mensaje de la chica con la que estuve anoche: 'Lo de ayer queda entre nosotros, ¿verdad?'. La profesora lo lee entero y aparta la mano del teléfono.* ¿Anoche ignoraste mi mensaje para verte con esta chica?",
-        "choices": ["Contarle lo que pasó anoche sin ocultarlo", "Restarle importancia y decir que no fue nada"]
+        "choices": [
+            "Contarle lo que pasó anoche sin ocultarlo",
+            "Restarle importancia y decir que no fue nada"
+        ]
     },
     "morning5_caught_nurse_counteroffer": {
         "name": "Enfermera",
         "text": "*En cuanto dejo el teléfono sobre la camilla de la enfermería, la pantalla se ilumina. Un mensaje de la chica con la que estuve anoche dice: 'Lo de ayer queda entre nosotros, ¿verdad?'. La enfermera intenta sonreír como siempre, pero deja caer lentamente las comisuras de los labios.* Así que no es que no vieras mi mensaje. ¿Estabas con esta chica?",
-        "choices": ["Contarle lo que pasó anoche sin ocultarlo", "Restarle importancia y decir que no fue nada"]
+        "choices": [
+            "Contarle lo que pasó anoche sin ocultarlo",
+            "Restarle importancia y decir que no fue nada"
+        ]
     },
     "morning5_caught_teacher_honest": {
         "name": "Profesora",
@@ -623,5 +629,11 @@
     "hidden_nurse_d5_choice_trap": {
         "name": "Enfermera",
         "text": "Al contrario. La tarjeta no es para que lo aguantes todo a solas."
+    },
+    "morning5_after_counteroffer_hidden_check": {},
+    "hidden_nurse_d5_after_co_check": {},
+    "morning5_after_counteroffer": {
+        "name": "{name}",
+        "text": "*Un aviso se resbala del escritorio. Nadie lo recoge. El anuncio del evento suena antes.*"
     }
 }

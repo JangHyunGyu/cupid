@@ -198,5 +198,50 @@
     "tour_dain_end_2": {
         "name": "{name}",
         "text": "*Dain faz a superfície da bola de vôlei girar sob a palma da mão, em vez de tocar o joelho.*"
+    },
+    "tour_co_branch": {},
+    "tour_co_event_1": {
+        "name": "{name}",
+        "text": "*O sinal do almoço toca, mas a fila é curta. Tampas abrem e fecham no corredor.*"
+    },
+    "tour_co_event_2": {
+        "name": "{name}",
+        "text": "*Um colete do evento está no encosto da cadeira. Ninguém pergunta quem o vestiu.*"
+    },
+    "tour_co_seo_1": {
+        "name": "{name}",
+        "text": "*A porta do terraço está aberta. A Seoyeon encosta-se à ombreira, não ao parapeito.*"
+    },
+    "tour_co_seo_2": {
+        "name": "Seoyeon",
+        "text": "Já entreguei a chave. Por hoje, fica por aqui."
+    },
+    "tour_co_seo_3": {
+        "name": "{name}",
+        "text": "*O canto da prancheta bate na ombreira. Ela não endireita.*"
+    },
+    "tour_co_yuna_1": {
+        "name": "{name}",
+        "text": "*O sofá do anexo. A Yuna enrola a alça da mala em vez de abrir um livro.*"
+    },
+    "tour_co_yuna_2": {
+        "name": "Yuna",
+        "text": "Não mostro o final. Hoje não."
+    },
+    "tour_co_yuna_3": {
+        "name": "{name}",
+        "text": "*A luz da janela chega ao lugar vazio. A Yuna não se senta ali.*"
+    },
+    "tour_co_dain_1": {
+        "name": "{name}",
+        "text": "*As luzes do pavilhão estão acesas. A bola fica no caixote.*"
+    },
+    "tour_co_dain_2": {
+        "name": "Dain",
+        "text": "Pedra, papel, tesoura fica para amanhã. Hoje fico só de pé."
+    },
+    "tour_co_dain_3": {
+        "name": "{name}",
+        "text": "*A Dain puxa a fita do pulso uma vez e larga.*"
     }
 }

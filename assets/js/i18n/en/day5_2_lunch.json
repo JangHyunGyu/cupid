@@ -198,5 +198,50 @@
     "tour_dain_end_2": {
         "name": "{name}",
         "text": "*Dain's hand rests on the volleyball, not on her knee.*"
+    },
+    "tour_co_branch": {},
+    "tour_co_event_1": {
+        "name": "{name}",
+        "text": "*The lunch bell rings, but the line is short. Lids open and close in the hallway.*"
+    },
+    "tour_co_event_2": {
+        "name": "{name}",
+        "text": "*A staff vest hangs on a chair. No one asks who wore it.*"
+    },
+    "tour_co_seo_1": {
+        "name": "{name}",
+        "text": "*The rooftop door is open. Seoyeon leans on the frame, not the rail.*"
+    },
+    "tour_co_seo_2": {
+        "name": "Seoyeon",
+        "text": "I turned the key in. This is as far as today goes."
+    },
+    "tour_co_seo_3": {
+        "name": "{name}",
+        "text": "*The clipboard knocks the doorframe. She leaves it.*"
+    },
+    "tour_co_yuna_1": {
+        "name": "{name}",
+        "text": "*The annex sofa. Yuna winds a bag strap instead of opening a book.*"
+    },
+    "tour_co_yuna_2": {
+        "name": "Yuna",
+        "text": "I am not showing the ending. Not today."
+    },
+    "tour_co_yuna_3": {
+        "name": "{name}",
+        "text": "*Light from the window reaches the empty seat. Yuna does not sit there.*"
+    },
+    "tour_co_dain_1": {
+        "name": "{name}",
+        "text": "*The gym lights are on. The ball stays in the bin.*"
+    },
+    "tour_co_dain_2": {
+        "name": "Dain",
+        "text": "Rock-paper-scissors can wait. I am just standing today."
+    },
+    "tour_co_dain_3": {
+        "name": "{name}",
+        "text": "*Dain tugs the wrist wrap once and lets it go.*"
     }
 }
