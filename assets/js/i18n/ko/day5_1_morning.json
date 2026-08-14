@@ -634,6 +634,6 @@
     "hidden_nurse_d5_after_co_check": {},
     "morning5_after_counteroffer": {
         "name": "{name}",
-        "text": "*조회 종이 한 장이 교탁에서 미끄러진다. 집어 드는 손은 없다. 행사 안내 방송이 먼저 나온다.*"
+        "text": "*조회 종이 한 장이 교탁 아래로 미끄러진다. 아무도 줍지 않는 사이, 행사 안내 방송이 교실을 채운다.*"
     }
 }
