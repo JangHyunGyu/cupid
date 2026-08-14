@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "https://openrouter-api.yama5993.workers.dev/";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.148";
+const ASSET_VERSION = "2.9.149";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 

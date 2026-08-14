@@ -516,10 +516,27 @@ function verifyLatestUserCanon(context) {
     );
     assert(negativeAffinity.includes('현재 의사나 동의를 대신하지 않습니다'),
         'affinity guidance still treats score as consent');
+    assert(negativeAffinity.includes('서운함이나 경계가 살짝 있습니다'),
+        'mild negative affinity lost its chilly-distance wording');
     assert(negativeAffinity.includes('affinity를 올리지 말고 유지하거나 낮추세요'),
         'negative affinity still rewards an unwanted physical approach');
     assert(negativeAffinity.includes('성립 여부와 결과는 현재 장면, 실제 가능성, 캐릭터의 인지와 경계를 함께 판단합니다'),
         'affinity guidance still treats completed user wording as automatic fact');
+    const hurtAffinity = vm.runInContext(
+        `buildCupidAffinityIntimacyProgressionPatch('ko', -20, false)`, context
+    );
+    const coldAffinity = vm.runInContext(
+        `buildCupidAffinityIntimacyProgressionPatch('ko', -50, false)`, context
+    );
+    const hostileAffinity = vm.runInContext(
+        `buildCupidAffinityIntimacyProgressionPatch('ko', -80, false)`, context
+    );
+    assert(hurtAffinity.includes('상처와 경계가 분명합니다'),
+        'hurt-band affinity must stay distinct from mild chill');
+    assert(coldAffinity.includes('차갑게 거리를 둡니다'),
+        'cold-band affinity must stay distinct from hurt');
+    assert(hostileAffinity.includes('강한 반감이 있습니다'),
+        'hostile-band affinity must stay distinct from ordinary coldness');
 }
 
 function verifyWiringAndScenePrompts() {
