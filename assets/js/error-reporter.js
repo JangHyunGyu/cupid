@@ -3,7 +3,7 @@
 
     if (window.__cupidErrorReporterInstalled) return;
 
-    var VERSION = '20260810-first-party-complete';
+    var VERSION = '20260814-opaque-rejection';
     var ERROR_ENDPOINT = 'https://chatbot-api.yama5993.workers.dev/error-logs';
     var QUEUE_KEY = 'cupid-error-queue-v2';
     var SESSION_KEY = 'cupid-error-session-v2';
@@ -141,6 +141,13 @@
         }
         if (/googletagmanager|google-analytics|gtag\/js|cdn\.jsdelivr\.net|wcs\.pstatic\.net\/wcslog\.js|ssl\.pstatic\.net\/melona\/libs\/gfp-nac-module\/synchronizer\.js|static\.cloudflareinsights\.com\/beacon\.min\.js/i.test(text)) {
             return 'external';
+        }
+        if (type === 'UnhandledRejection') {
+            var rejectionText = String(message || '').replace(/^\[app:UnhandledRejection\]\s*/i, '').trim();
+            if (/^[A-Za-z_$][\w$]{0,2}$/.test(rejectionText)
+                && !/\/assets\/js\//i.test(stack || '')) {
+                return 'external';
+            }
         }
         if (type === 'ResourceError' || /Loading chunk|dynamically imported module|Failed to fetch/i.test(message)) {
             return 'network';

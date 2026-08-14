@@ -428,6 +428,42 @@ test('scheduled and active gallery incidents cannot commit without their require
         state: activeState,
         payload: { status: 'ongoing', summary: '두 사람이 조건을 좁혔지만 아직 합의하지 못했다.' }
     }).shouldRetry, false);
+    const implicit = core.buildImplicitActiveGalleryIncidentPayload(activeState);
+    assert.equal(implicit.status, 'ongoing');
+    assert.equal(implicit.summary, '해결되지 않은 약속 갈등');
+});
+
+test('quality fallback keeps a valid gallery reply when only the active incident JSON is missing', () => {
+    const prompts = read('assets/js/prompts.js');
+    const sandbox = {
+        window: { CupidFreeTalkCore: core },
+        console: { log() {}, warn() {} }
+    };
+    vm.runInNewContext(`${prompts}\nthis.recoverCupidRoleplayQualityFallback = window.recoverCupidRoleplayQualityFallback;`, sandbox);
+    const parsed = {
+        text: '窓の外を見て、少し息を整えた。',
+        segments: [{ type: 'narration', text: '窓の外を見て、少し息を整えた。' }],
+        affinity: 0,
+        incident: null
+    };
+    const recovered = sandbox.recoverCupidRoleplayQualityFallback(parsed, {
+        lang: 'ja',
+        charKey: 'Seoyeon',
+        incidentState: {
+            completedTurns: 30,
+            quietTurns: 0,
+            activeIncident: {
+                category: 'conflict',
+                summary: '解決していない約束の食い違い',
+                startedAtTurn: 30,
+                turns: 1
+            }
+        }
+    });
+    assert.equal(recovered.incident.status, 'ongoing');
+    assert.equal(recovered.incident.summary, '解決していない約束の食い違い');
+    assert.equal(recovered.qualityRecovery.implicitIncident, 'ongoing');
+    assert.equal(recovered.text, parsed.text);
 });
 
 test('gallery runtime wires incident planning, persistence, and AI payload parsing', () => {
@@ -651,8 +687,9 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
     assert.match(config, /conversationDay/);
     assert.match(config, /groupConversationMemories/);
     assert.match(config, /local-recovery/);
-    assert.match(config, /chat_log_queue_transient_failure/);
-    assert.match(config, /group_chat_log_direct_transient_failure/);
+    assert.match(config, /pending queue retained/);
+    assert.doesNotMatch(config, /errorType: 'chat_log_queue_transient_failure'/);
+    assert.doesNotMatch(config, /group_chat_log_direct_transient_failure/);
     assert.match(freeTalk, /await window\.saveCupidGroupChatLog\(\{/);
     assert.match(config, /window\.saveCupidGroupChatLog = saveCupidGroupChatLog/);
     assert.match(css, /group-freetalk-active/);

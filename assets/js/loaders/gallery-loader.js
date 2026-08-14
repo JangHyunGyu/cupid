@@ -31,7 +31,9 @@
         if (msg === 'Script error.' && !stack) return 'noise';
         if (/ResizeObserver loop/.test(msg)) return 'noise';
         if (/googletagmanager|google-analytics|gtag\/js|cloudflare|chrome-extension|moz-extension|safari-extension/.test(src || '')) return 'external';
-        if (type === 'UnhandledRejection' && !_hasAppStack(stack) && /^[A-Za-z_$][\w$]{0,2}$/.test(String(msg || '').trim())) return 'external';
+        if (type === 'UnhandledRejection'
+            && /^[A-Za-z_$][\w$]{0,2}$/.test(String(msg || '').replace(/^\[app:UnhandledRejection\]\s*/i, '').trim())
+            && !/\/assets\/js\//i.test(stack || '')) return 'external';
         return 'app';
     }
 
@@ -171,7 +173,7 @@ window.__cupidShowGalleryLoadError = function() {
 
 (function () {
     // 로더 설정 로드 (동기)
-    document.write('<script src="assets/js/loaders/config.js?v=2.9.149" onerror="window.__cupidShowGalleryLoadError && window.__cupidShowGalleryLoadError()"><\/script>');
+    document.write('<script src="assets/js/loaders/config.js?v=2.9.150" onerror="window.__cupidShowGalleryLoadError && window.__cupidShowGalleryLoadError()"><\/script>');
 })();
 
 // config.js 로드 후 실행
@@ -182,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // 갤러리 스크립트 로드 (document.write는 동기적)
 (function () {
     const basePath = 'assets/js/';
-    const version = '2.9.149';
+    const version = '2.9.150';
 
     const scripts = [
         // 0. 모듈 설정 (ASSET_VERSION 등)

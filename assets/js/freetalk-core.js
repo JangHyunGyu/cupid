@@ -389,6 +389,16 @@
         };
     }
 
+    function buildImplicitActiveGalleryIncidentPayload(rawState = {}) {
+        const state = normalizeGalleryIncidentState(rawState);
+        const summary = String(state.activeIncident?.summary || '').replace(/\s+/g, ' ').trim().slice(0, 240);
+        if (!state.activeIncident || !summary) return null;
+        return {
+            status: 'ongoing',
+            summary
+        };
+    }
+
     function getGalleryIncidentContractIssue({ state: rawState = {}, plan = null, payload = null } = {}) {
         const state = normalizeGalleryIncidentState(rawState);
         const incidentPayload = normalizeGalleryIncidentPayload(payload);
@@ -1252,6 +1262,7 @@ Latest user: """${excerpt}"""
         planGalleryIncident,
         normalizeGalleryIncidentImpact,
         normalizeGalleryIncidentPayload,
+        buildImplicitActiveGalleryIncidentPayload,
         getGalleryIncidentContractIssue,
         updateGalleryIncidentEvidence,
         buildGalleryIncidentRuntimeBlock

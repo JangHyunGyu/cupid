@@ -1434,7 +1434,7 @@ class FreeTalkSystem {
                 && (error instanceof TypeError || /^(?:Failed to fetch|Load failed|NetworkError)$/i.test(error?.message || ''));
             if (isTransientTransportFailure) console.warn("AI Chat transport interruption:", error?.message || error);
             else console.error("AI Chat Error:", error);
-            if (typeof window.logCupidError === 'function' && !isOfflineTransportFailure) {
+            if (typeof window.logCupidError === 'function' && !isOfflineTransportFailure && !isTransientTransportFailure) {
                 window.logCupidError(error, {
                     source: 'cupid-freetalk',
                     errorType: error?.reason === 'ROLEPLAY_QUALITY_REJECTED'

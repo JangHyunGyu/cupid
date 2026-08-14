@@ -1437,14 +1437,33 @@ function getCupidRoleplayQualityIssue(parsed = {}, {
 
 function recoverCupidRoleplayQualityFallback(parsed = {}, options = {}) {
     const { lang = 'ko', charKey = '' } = options;
-    const initialIssue = getCupidRoleplayQualityIssue(parsed, options);
-    if (initialIssue.shouldRetry
-        && initialIssue.issues.length > 0
-        && initialIssue.issues.every(issue => issue === 'recent_response_near_duplicate')
-        && (String(parsed?.text || '').trim()
-            || (Array.isArray(parsed?.segments) && parsed.segments.some(segment => String(segment?.text || '').trim())))) {
-        return {
+    let working = parsed;
+    const implicitIncident = window.CupidFreeTalkCore?.buildImplicitActiveGalleryIncidentPayload?.(options.incidentState);
+    const incidentIssue = window.CupidFreeTalkCore?.getGalleryIncidentContractIssue?.({
+        state: options.incidentState || {},
+        plan: options.incidentPlan,
+        payload: parsed?.incident
+    });
+    if (implicitIncident && incidentIssue?.issues?.includes('active_gallery_incident_payload_missing')) {
+        working = {
             ...parsed,
+            incident: implicitIncident,
+            qualityRecovery: {
+                reason: incidentIssue.reason,
+                implicitIncident: 'ongoing'
+            }
+        };
+    }
+    const initialIssue = getCupidRoleplayQualityIssue(working, options);
+    if (!initialIssue.shouldRetry) {
+        return working === parsed ? null : working;
+    }
+    if (initialIssue.issues.length > 0
+        && initialIssue.issues.every(issue => issue === 'recent_response_near_duplicate')
+        && (String(working?.text || '').trim()
+            || (Array.isArray(working?.segments) && working.segments.some(segment => String(segment?.text || '').trim())))) {
+        return {
+            ...working,
             qualityRecovery: {
                 reason: initialIssue.reason,
                 acceptedAfterRetries: true,
@@ -1455,16 +1474,15 @@ function recoverCupidRoleplayQualityFallback(parsed = {}, options = {}) {
         'narration_player_point_of_view',
         'unicode_replacement_character'
     ]);
-    if (!initialIssue.shouldRetry
-        || !Array.isArray(parsed?.segments)
-        || parsed.segments.length === 0
+    if (!Array.isArray(working?.segments)
+        || working.segments.length === 0
         || initialIssue.issues.some(issue => !recoverableIssues.has(issue))) {
         return null;
     }
 
     const pointOfViewPattern = getCupidNarrationPointOfViewPattern(lang);
     let droppedSegments = 0;
-    const segments = parsed.segments.flatMap(segment => {
+    const segments = working.segments.flatMap(segment => {
         if (!segment || typeof segment !== 'object') return [];
         const text = String(segment.text || '').trim();
         if (!text) return [];
@@ -1483,14 +1501,15 @@ function recoverCupidRoleplayQualityFallback(parsed = {}, options = {}) {
     if (droppedSegments === 0 || segments.length === 0) return null;
 
     const recovered = {
-        ...parsed,
+        ...working,
         text: segments.map(segment => (
             segment.type === 'narration' ? `*${segment.text}*` : segment.text
         )).join(' ').trim(),
         segments,
         qualityRecovery: {
             reason: initialIssue.reason,
-            droppedSegments
+            droppedSegments,
+            implicitIncident: working?.qualityRecovery?.implicitIncident || undefined
         }
     };
     if (!recovered.text

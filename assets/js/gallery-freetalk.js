@@ -1286,7 +1286,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     && (err instanceof TypeError || /^(?:Failed to fetch|Load failed|NetworkError)$/i.test(err?.message || ''));
                 if (isTransientTransportFailure) console.warn('[GalleryFreeTalk] transport interruption:', err?.message || err);
                 else console.error('[GalleryFreeTalk] API 오류:', err);
-                if (typeof window.logCupidError === 'function' && !isOfflineTransportFailure) {
+                if (typeof window.logCupidError === 'function' && !isOfflineTransportFailure && !isTransientTransportFailure) {
                     window.logCupidError(err, {
                         source: 'cupid-gallery-freetalk',
                         errorType: err?.reason === 'ROLEPLAY_QUALITY_REJECTED'

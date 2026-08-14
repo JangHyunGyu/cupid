@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "https://openrouter-api.yama5993.workers.dev/";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.149";
+const ASSET_VERSION = "2.9.150";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -913,18 +913,6 @@ async function flushCupidChatLogQueue() {
             } catch (error) {
                 if (isTransientCupidChatLogError(error)) {
                     console.warn('[ChatLog] cupid pending queue retained:', error.message);
-                    logCupidError(error, {
-                        source: 'flushCupidChatLogQueue',
-                        errorType: 'chat_log_queue_transient_failure',
-                        sessionId: entry.sessionId,
-                        context: {
-                            charId: entry.charId,
-                            role: entry.role,
-                            logContext: entry.context,
-                            conversationDay: entry.conversationDay ?? null
-                        },
-                        extra: { clientMsgId: entry.clientMsgId }
-                    });
                     break;
                 }
                 writeCupidChatLogQueue(queue.slice(1));
@@ -1130,14 +1118,17 @@ async function saveCupidChatLog({
         try {
             await postCupidChatLogEntry(entry);
         } catch (error) {
-            logCupidError(error, {
-                source: 'saveCupidChatLog',
-                errorType: isTransientCupidChatLogError(error)
-                    ? 'chat_log_direct_transient_failure'
-                    : 'chat_log_direct_rejected',
-                sessionId,
-                context: { charId, role, logContext: context, conversationDay }
-            });
+            if (isTransientCupidChatLogError(error)) {
+                console.warn('[ChatLog] cupid direct save retained for retry:', error.message);
+                enqueueCupidChatLog(entry);
+            } else {
+                logCupidError(error, {
+                    source: 'saveCupidChatLog',
+                    errorType: 'chat_log_direct_rejected',
+                    sessionId,
+                    context: { charId, role, logContext: context, conversationDay }
+                });
+            }
         }
         return entry;
     };
@@ -1200,20 +1191,23 @@ async function saveCupidGroupChatLog({
         try {
             await postCupidChatLogEntry(entry);
         } catch (error) {
-            logCupidError(error, {
-                source: 'saveCupidGroupChatLog',
-                errorType: isTransientCupidChatLogError(error)
-                    ? 'group_chat_log_direct_transient_failure'
-                    : 'group_chat_log_direct_rejected',
-                sessionId,
-                context: {
-                    charId: 'group',
-                    role,
-                    speakerId: details.speakerId || '',
-                    logContext: 'group',
-                    conversationDay
-                }
-            });
+            if (isTransientCupidChatLogError(error)) {
+                console.warn('[ChatLog] cupid group direct save retained for retry:', error.message);
+                enqueueCupidChatLog(entry);
+            } else {
+                logCupidError(error, {
+                    source: 'saveCupidGroupChatLog',
+                    errorType: 'group_chat_log_direct_rejected',
+                    sessionId,
+                    context: {
+                        charId: 'group',
+                        role,
+                        speakerId: details.speakerId || '',
+                        logContext: 'group',
+                        conversationDay
+                    }
+                });
+            }
         }
         return entry;
     };

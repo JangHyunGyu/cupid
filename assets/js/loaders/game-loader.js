@@ -53,7 +53,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-        const version = '2.9.149';
+        const version = '2.9.150';
     const LOAD_RETRIES = 3;
 
     // =========================================================================
@@ -499,12 +499,12 @@
 
     function _isOpaqueExternalRejection(type, msg, stack) {
         if (type !== 'UnhandledRejection') return false;
-        if (_hasAppStack(stack)) return false;
 
-        var text = String(msg || '').trim();
+        var text = String(msg || '').replace(/^\[app:UnhandledRejection\]\s*/i, '').trim();
         // Google App / in-app browser injected scripts sometimes reject minified
-        // sentinel values such as "Yd" with stacks like "@" or "$i@".
-        if (/^[A-Za-z_$][\w$]{0,2}$/.test(text)) return true;
+        // sentinel values such as "Yd" or "Ba" and iOS attributes the stack to the page URL.
+        if (/^[A-Za-z_$][\w$]{0,2}$/.test(text) && !/\/assets\/js\//i.test(stack || '')) return true;
+        if (_hasAppStack(stack)) return false;
         if (/^(\s*@\s*){1,4}$/.test(stack || '')) return true;
         if (/^\s*(?:[A-Za-z_$][\w$]*@?\s*){1,4}$/.test(stack || '') && text.length <= 12) return true;
         return false;
