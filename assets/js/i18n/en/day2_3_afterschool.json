@@ -65,7 +65,7 @@
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",
-        "text": "*She calls it a secret, but the knuckles gripping the drawer handle are white.*",
+        "text": "*The knuckles gripping the drawer handle are white.*",
         "choices": [
             "You sure have a lot of secrets. Can't you tell me just one?",
             "Right, I didn't see anything"
@@ -262,7 +262,7 @@
     },
     "after2_seo_4_b": {
         "name": "Seoyeon",
-        "text": "*Instead of saying \"please,\" she turns the clipboard toward {name}. The top of the to-do list is blank.*"
+        "text": "*She turns the clipboard toward {name}. The top of the to-do list is blank.*"
     },
     "after2_seo_5": {
         "name": "{name}",
@@ -274,7 +274,7 @@
     },
     "after2_seo_6_b": {
         "name": "{name}",
-        "text": "*She has a gift for making requests sound like orders. We start sorting documents. Event budgets, club applications. Quite the pile.*"
+        "text": "*We start sorting documents. Event budgets, club applications. Quite the pile.*"
     },
     "after2_seo_7": {
         "name": "Seoyeon",
@@ -543,7 +543,7 @@
     },
     "after2_yuna_everyday_react_b": {
         "name": "{name}",
-        "text": "*This doesn't sound like permission, but Yuna doesn't remove the bookmark.*"
+        "text": "*Yuna keeps the bookmark in and stays on the same page.*"
     },
     "after2_yuna_quiet": {
         "name": "Yuna",
@@ -596,7 +596,7 @@
     },
     "minsu_warn_4_b": {
         "name": "{name}",
-        "text": "*His tone is teasing, but Minsu keeps his eyes on the crosswalk signal beyond the school gate.*"
+        "text": "*Minsu keeps his eyes on the crosswalk signal beyond the school gate.*"
     },
     "minsu_warn_5": {
         "name": "{name}",

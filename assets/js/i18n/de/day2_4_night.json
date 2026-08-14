@@ -220,7 +220,7 @@
     },
     "night2_end_1": {
         "name": "{name}",
-        "text": "*Ich habe die Antworten verschickt und das Handy abgelegt. Der zweite Tag ist vorbei.*"
+        "text": "*Ich habe die Antworten verschickt und das Handy abgelegt.*"
     },
     "night2_flashback_1": {
         "name": "{name}",
@@ -272,6 +272,6 @@
     },
     "night2_end_4_c": {
         "name": "{name}",
-        "text": "*Ich packe hastig eine Bentobox. Besonders gelungen ist sie nicht; von liebevoll zubereitet zu sprechen, wäre eher peinlich. — Aber besser als gar nichts.*"
+        "text": "*Ich fülle Reis, Ei und Seetang ein und schließe den Deckel. Mehr Beilage ist nicht drin.*"
     }
 }

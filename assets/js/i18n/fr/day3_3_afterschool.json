@@ -156,7 +156,7 @@
     },
     "after3_seo_correct_2": {
         "name": "{name}",
-        "text": "*Je me penche en faisant semblant de ramasser un stylo. Je tâtonne sous le bureau. Lentement, exprès. — Sans la regarder. À l'instant où je la regarde, le mensonge craque.*"
+        "text": "*Je me penche en faisant semblant de ramasser un stylo. Je tâtonne sous le bureau, lentement, exprès, sans la regarder.*"
     },
     "after3_seo_correct_3": {
         "name": "{name}",
@@ -604,7 +604,7 @@
     },
     "after3_dain_freetalk": {
         "name": "Dain",
-        "text": "*Elle resserre sa protection de poignet et force un sourire.* Aujourd'hui, je parle en premier.",
+        "text": "*Elle resserre sa protection de poignet ; le coin de sa bouche se relève avec un demi-temps de retard.* Aujourd'hui, je parle en premier.",
         "context": "Jour 3 après les cours, juste après une conversation avec Dain. Elle essaie d'aborder le protagoniste avec son énergie habituelle, mais la blessure et l'incertitude demeurent, et elle veut comprendre quelles relations le protagoniste a choisies.",
         "personality": "Dain est une volleyeuse énergique et directe. L'humour comme la sincérité peuvent apparaître naturellement lorsqu'elle exprime ce qu'elle ressent et ce qu'elle veut savoir sur leur relation."
     },

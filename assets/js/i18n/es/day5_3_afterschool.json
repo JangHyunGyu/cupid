@@ -208,7 +208,7 @@
     },
     "after5_last_chance_2_r": {
         "name": "Dain",
-        "text": "*Se frota el rabillo del ojo. Sigue sonriendo igual, pero el dorso de la mano queda húmedo.*"
+        "text": "*Se frota el rabillo del ojo. El dorso de la mano queda húmedo.*"
     },
     "after5_last_chance_2_s": {
         "name": "Dain",
@@ -305,7 +305,7 @@
     },
     "after5_confess_react_yuna_b": {
         "name": "Yuna",
-        "text": "*Baja el libro. Le tiemblan las manos.*"
+        "text": "*Baja el libro y vuelve a sujetar la esquina.*"
     },
     "after5_confess_react_yuna_c": {
         "name": "Yuna",
@@ -333,7 +333,7 @@
     },
     "after5_confess_react_yuna_i": {
         "name": "{name}",
-        "text": "*Y así salimos de la escuela caminando.*"
+        "text": "*Salimos por la puerta de la escuela.*"
     },
     "after5_confess_react_yuna_low": {
         "name": "Yuna",
@@ -341,7 +341,7 @@
     },
     "after5_confess_fail_walk_1": {
         "name": "{name}",
-        "text": "*No me salieron más palabras. Con el sol bajando más, solo caminamos un rato en la misma dirección.*"
+        "text": "*El sol baja más. Solo caminamos en la misma dirección.*"
     },
     "after5_confess_fail_walk_2": {
         "name": "{name}",
@@ -369,7 +369,7 @@
     },
     "after5_harem_walk_1": {
         "name": "{name}",
-        "text": "*Sin que nadie pudiera hablar primero, dejamos atrás la parte trasera de la escuela.*"
+        "text": "*Hasta la parte de atrás de la escuela, nadie habla primero.*"
     },
     "after5_harem_walk_2": {
         "name": "{name}",

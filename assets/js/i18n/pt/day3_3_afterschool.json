@@ -156,7 +156,7 @@
     },
     "after3_seo_correct_2": {
         "name": "{name}",
-        "text": "*Me abaixo, fingindo pegar uma caneta. Tateio debaixo da mesa. Devagar, de propósito. — Sem olhar pra ela. Na hora que eu olhar, a mentira desmorona.*"
+        "text": "*Me abaixo, fingindo pegar uma caneta. Tateio debaixo da mesa. Devagar, de propósito, sem olhar pra ela.*"
     },
     "after3_seo_correct_3": {
         "name": "{name}",
@@ -604,7 +604,7 @@
     },
     "after3_dain_freetalk": {
         "name": "Dain",
-        "text": "*Ela ajusta a munhequeira e força um sorriso.* Hoje eu falo primeiro.",
+        "text": "*Ela ajusta a munhequeira e o canto da boca sobe meio tempo atrasado.* Hoje eu falo primeiro.",
         "context": "Dia 3 depois da aula, logo após uma conversa com Dain. Ela tenta encontrar o protagonista com a energia de sempre, mas ainda há mágoa e incerteza, e quer entender quais relacionamentos o protagonista escolheu.",
         "personality": "Dain é uma jogadora de vôlei enérgica e direta. Humor e sinceridade podem surgir naturalmente enquanto ela expressa o que sente e o que quer saber sobre o relacionamento."
     },

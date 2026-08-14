@@ -65,7 +65,7 @@
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",
-        "text": "*Elle parle de secret, mais les jointures de la main qui serre la poignée du tiroir ont blanchi.*",
+        "text": "*Les jointures de la main qui serre la poignée du tiroir ont blanchi.*",
         "choices": [
             "Vous avez beaucoup de secrets. Vous pouvez m'en dire un seul ?",
             "Oui, j'ai rien vu"
@@ -262,7 +262,7 @@
     },
     "after2_seo_4_b": {
         "name": "Seoyeon",
-        "text": "*Au lieu de dire \"s'il te plaît\", elle tourne le porte-bloc vers {name}. La première ligne de la liste est vide.*"
+        "text": "*Elle tourne le porte-bloc vers {name}. La première ligne de la liste est vide.*"
     },
     "after2_seo_5": {
         "name": "{name}",
@@ -274,7 +274,7 @@
     },
     "after2_seo_6_b": {
         "name": "{name}",
-        "text": "*Elle a le don de faire passer des demandes pour des ordres. On commence à trier les documents. Budgets d'événements, demandes de clubs. Une bonne pile.*"
+        "text": "*On commence à trier les documents. Budgets d'événements, demandes de clubs. Une bonne pile.*"
     },
     "after2_seo_7": {
         "name": "Seoyeon",
@@ -543,7 +543,7 @@
     },
     "after2_yuna_everyday_react_b": {
         "name": "{name}",
-        "text": "*Cela ne ressemble pas vraiment à une permission, mais Yuna ne retire pas le marque-page.*"
+        "text": "*Yuna ne retire pas le marque-page et reste sur la même page.*"
     },
     "after2_yuna_quiet": {
         "name": "Yuna",
@@ -596,7 +596,7 @@
     },
     "minsu_warn_4_b": {
         "name": "{name}",
-        "text": "*Le ton est taquin, mais Minsu ne quitte pas des yeux le feu du passage piéton, de l'autre côté du portail.*"
+        "text": "*Minsu ne quitte pas des yeux le feu du passage piéton, de l'autre côté du portail.*"
     },
     "minsu_warn_5": {
         "name": "{name}",

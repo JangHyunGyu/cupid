@@ -524,7 +524,7 @@
     },
     "hidden_nurse_d3_5_l": {
         "name": "{name}",
-        "text": "*정곡이다.*"
+        "text": "*책상 위 종이컵만 본다.*"
     },
     "hidden_nurse_d3_5_m": {
         "name": "보건선생님",
@@ -548,7 +548,7 @@
     },
     "hidden_nurse_d3_choice1": {
         "name": "{name}",
-        "text": "*틀린 말은 아니다.*",
+        "text": "*입만 열었다가 다시 다문다.*",
         "choices": [
             "비슷해요.",
             "아뇨, 그냥 좀 복잡해서요"
@@ -710,7 +710,7 @@
     },
     "morning3_date_dain_2": {
         "name": "다인",
-        "text": "*서연이 아직 교실 문 앞에 서 있다. 다인은 시선을 피하지 않고 책상 모서리를 두드린다.*"
+        "text": "*서연이 아직 교실 문 앞에 서 있다. 다인은 이쪽을 본 채 책상 모서리를 두드린다.*"
     },
     "morning3_date_dain_choice": {
         "name": "다인",
@@ -734,7 +734,7 @@
     },
     "morning3_date_dain_decline_inner_2": {
         "name": "{name}",
-        "text": "*눈치가 빠르다고 자부했는데 중요한 순간에는 번번이 틀린다.*"
+        "text": "*다인이 자리로 돌아간 뒤, 종이 치기 직전의 교실만 남는다.*"
     },
     "morning3_date_yuna_1": {
         "name": "{name}",

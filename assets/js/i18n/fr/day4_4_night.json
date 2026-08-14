@@ -15,32 +15,50 @@
     "day4_teacher_seoyeon_counteroffer": {
         "name": "Seoyeon",
         "text": "*Alors que je quitte l'école après avoir salué ma professeure principale, Seoyeon m'attend près de l'escalier du toit. Elle sourit, mais ses doigts serrent la manche de son uniforme.* Ces derniers temps, tu n'as d'yeux que pour la prof. Rien que ce soir, tu ne peux pas regarder la fille que je suis, sans voir la présidente du conseil ni l'élève modèle ?",
-        "choices": ["Tenir ma promesse envers ma professeure principale et partir", "Suivre Seoyeon sur le toit et lui prendre la main"]
+        "choices": [
+            "Tenir ma promesse envers ma professeure principale et partir",
+            "Suivre Seoyeon sur le toit et lui prendre la main"
+        ]
     },
     "day4_teacher_dain_counteroffer": {
         "name": "Dain",
         "text": "*Après avoir promis à ma professeure principale de lui écrire en arrivant, je passe devant le gymnase. Dain est adossée à la sortie de secours plongée dans le noir et tripote le bandage de son genou.* Tu ne vas plus voir que la prof. Renvoie-moi dix services. Après... serre-moi dans tes bras, ce soir.",
-        "choices": ["Écrire à ma professeure principale que je reviens", "Entrer dans le gymnase et accepter la demande de Dain"]
+        "choices": [
+            "Écrire à ma professeure principale que je reviens",
+            "Entrer dans le gymnase et accepter la demande de Dain"
+        ]
     },
     "day4_teacher_yuna_counteroffer": {
         "name": "Yuna",
         "text": "*Juste après avoir quitté ma professeure principale, je reçois une photo de l'annexe envoyée par Yuna. Deux chaises vides sont côte à côte, sa veste posée sur l'une d'elles.* On dirait que tu es mieux auprès de la prof. Mais si tu pars ce soir, j'aurai encore l'impression qu'on m'abandonne.",
-        "choices": ["Répondre à ma professeure principale et rentrer", "Aller à l'annexe et rester avec Yuna"]
+        "choices": [
+            "Répondre à ma professeure principale et rentrer",
+            "Aller à l'annexe et rester avec Yuna"
+        ]
     },
     "day4_nurse_seoyeon_counteroffer": {
         "name": "Seoyeon",
         "text": "*En allant de l'infirmerie au portail, je trouve Seoyeon devant l'escalier du toit. Ses lèvres forcent un sourire tandis que ses doigts froissent la manche de son uniforme.* Ces derniers temps, tu ne vas plus voir que l'infirmière. Rien que ce soir, tu ne peux pas regarder la fille que je suis, sans voir la présidente du conseil ni l'élève modèle ?",
-        "choices": ["Répondre à l'infirmière et partir", "Suivre Seoyeon sur le toit et lui prendre la main"]
+        "choices": [
+            "Répondre à l'infirmière et partir",
+            "Suivre Seoyeon sur le toit et lui prendre la main"
+        ]
     },
     "day4_nurse_dain_counteroffer": {
         "name": "Dain",
         "text": "*En refermant la porte de l'infirmerie, je trouve Dain près de la sortie de secours du gymnase. Elle décolle puis remet le bandage de son genou sans croiser mon regard.* Tu ne vas plus voir que l'infirmière. Renvoie-moi dix services. Après... serre-moi dans tes bras, ce soir.",
-        "choices": ["Écrire à l'infirmière que je reviens", "Entrer dans le gymnase et accepter la demande de Dain"]
+        "choices": [
+            "Écrire à l'infirmière que je reviens",
+            "Entrer dans le gymnase et accepter la demande de Dain"
+        ]
     },
     "day4_nurse_yuna_counteroffer": {
         "name": "Yuna",
         "text": "*Après avoir quitté l'infirmerie, je reçois une photo de l'annexe envoyée par Yuna. Sa veste est posée sur l'une des deux chaises vides.* On dirait que tu es mieux auprès de l'infirmière. Mais si tu pars ce soir, j'aurai encore l'impression qu'on m'abandonne.",
-        "choices": ["Répondre à l'infirmière et rentrer", "Aller à l'annexe et rester avec Yuna"]
+        "choices": [
+            "Répondre à l'infirmière et rentrer",
+            "Aller à l'annexe et rester avec Yuna"
+        ]
     },
     "day4_adult_counteroffer_accept_seoyeon": {
         "name": "{name}",
@@ -52,7 +70,7 @@
     },
     "day4_adult_counteroffer_accept_yuna": {
         "name": "{name}",
-        "text": "*Yuna s'avance tout près de {name} et pose une main sur la bibliothèque. Elle laisse glisser sa veste sous une épaule et tire de l'autre main sur l'encolure du haut qu'elle porte dessous. Entre son épaule nue et son tatouage, ses yeux rouges ne se détournent pas une seule fois. Le téléphone vibre de nouveau sur le bureau. Bien plus tard, ils quittent l'annexe et rentrent chez eux.*"
+        "text": "*Yuna s'avance tout près de {name} et pose une main sur la bibliothèque. Elle laisse glisser sa veste sous une épaule et tire de l'autre main sur l'encolure du haut qu'elle porte dessous. Entre son épaule nue et son tatouage, ses yeux rouges restent à la hauteur de ceux de {name}. Le téléphone vibre de nouveau sur le bureau. Bien plus tard, ils quittent l'annexe et rentrent chez eux.*"
     },
     "day4_adult_night_regret_target_branch": {},
     "day4_adult_night_regret_teacher": {
@@ -324,7 +342,7 @@
     },
     "wall_seo_yuna_tempt_accept": {
         "name": "{name}",
-        "text": "*Yuna s'avance tout contre {name} et pose une main sur l'étagère. Elle laisse son blazer glisser sous une épaule et, de l'autre main, abaisse l'encolure du haut sombre qu'elle porte dessous. L'épaule nue et les tatouages exposés, ses yeux rouges ne dévient pas un instant. Le message de Seoyeon — « Tu es bien rentré aussi ? » — reste affiché en haut de l'écran.*"
+        "text": "*Yuna s'avance tout contre {name} et pose une main sur l'étagère. Elle laisse son blazer glisser sous une épaule et, de l'autre main, abaisse l'encolure du haut sombre qu'elle porte dessous. Entre son épaule nue et son tatouage, ses yeux rouges restent à la hauteur de ceux de {name}. Le message de Seoyeon — « Tu es bien rentré aussi ? » — reste affiché en haut de l'écran.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -638,7 +656,7 @@
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*Yuna s'avance tout contre {name} et pose une main sur l'étagère. Elle laisse son blazer glisser sous une épaule et, de l'autre main, abaisse l'encolure du haut sombre qu'elle porte dessous. L'épaule nue et les tatouages exposés, ses yeux rouges ne dévient pas un instant. Le « Je suis rentrée ! » de Dain reste affiché en haut de l'écran.*"
+        "text": "*Yuna s'avance tout contre {name} et pose une main sur l'étagère. Elle laisse son blazer glisser sous une épaule et, de l'autre main, abaisse l'encolure du haut sombre qu'elle porte dessous. Entre son épaule nue et son tatouage, ses yeux rouges restent à la hauteur de ceux de {name}. Le « Je suis rentrée ! » de Dain reste affiché en haut de l'écran.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -964,13 +982,13 @@
     },
     "wall_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Elle essuie ses yeux humides du revers de la main et paraît plus calme.* Ne pars pas encore. Parlons encore un peu.",
+        "text": "*Elle essuie ses yeux humides du revers de la main et regarde {name}.* Ne pars pas encore. Parlons encore un peu.",
         "context": "Nous sommes au soir du jour 4, juste après que Seoyeon a parlé du conflit familial et de la pression d'être parfaite. Le choix du protagoniste d'accepter ou de différer sa déclaration, ainsi que le réconfort partagé, sont des faits sauvegardés à respecter. Ne prétends pas qu'une conversation a guéri sa douleur et ne réévalue pas leur relation.",
         "personality": "Seoyeon est posée et responsable, mais elle a baissé sa garde pour l'instant. Elle parle avec sincérité sans charger l'autre de la réparer, mêlant sa franchise habituelle à une tendresse nouvelle et prudente."
     },
     "wall_dain_freetalk": {
         "name": "Dain",
-        "text": "*Elle expire lentement et accorde son pas au mien.* Ce soir… marchons simplement ensemble. On peut parler aussi.",
+        "text": "*Elle expire lentement et accorde son pas à celui de {name}.* Ce soir… marchons simplement ensemble. On peut parler aussi.",
         "context": "Nous sommes au soir du jour 4, après que Dain a révélé la vérité sur sa blessure au genou et le rêve interrompu avec elle. Le choix du protagoniste d'accepter ou de différer sa déclaration et le réconfort partagé sont acquis. Ne guéris pas soudainement sa blessure, ne décide pas de son avenir à sa place et ne change pas l'état actuel de leur relation.",
         "personality": "Dain est franche et physique, et elle essaie de ne plus cacher ses sentiments. Elle est plus calme que d'habitude sans perdre son éclat ; elle reconnaît l'incertitude tout en cherchant les prochains mots avec le protagoniste."
     },

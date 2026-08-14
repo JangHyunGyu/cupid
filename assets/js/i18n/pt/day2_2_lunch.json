@@ -107,7 +107,7 @@
     },
     "lunch2_seo_12": {
         "name": "{name}",
-        "text": "*Dain se senta sem cerimônia. Os hashis de Seoyeon giram em falso sobre a omelete enrolada e voltam ao lugar.*"
+        "text": "*Dain se senta no lugar vazio. Os hashis de Seoyeon giram em falso sobre a omelete enrolada e voltam ao lugar.*"
     },
     "lunch2_seo_13": {
         "name": "Dain",
@@ -292,7 +292,7 @@
     },
     "lunch2_dain_10": {
         "name": "{name}",
-        "text": "*Seoyeon olha uma vez para mim ao lado de Dain e segue em frente. Com o pão soboro entre os dentes, esqueço de mastigar.*"
+        "text": "*Seoyeon olha uma vez para mim ao lado de Dain e segue em frente. O pedaço de pão soboro fica parado na boca.*"
     },
     "lunch2_dain_11": {
         "name": "Dain",
@@ -373,7 +373,7 @@
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
-        "text": "*Embora brinque com as palavras, ela primeiro examina a poeira ao redor do cotovelo.*"
+        "text": "*A mão enluvada examina primeiro a poeira ao redor do cotovelo.*"
     },
     "lunch2_dain_end_ins7_first": {
         "name": "Enfermeira",

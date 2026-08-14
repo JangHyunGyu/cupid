@@ -334,7 +334,7 @@
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
-        "text": "*Me detengo frente a la puerta y respiro hondo. Solo un momento de descanso. Pongo la mano en la manija. El metal frío roza mi palma.*"
+        "text": "*Me detengo frente a la puerta, respiro hondo y pongo la mano en la manija. El metal frío roza mi palma.*"
     },
     "after_nurse_enter_1": {
         "name": "{name}",
@@ -525,7 +525,7 @@
     },
     "after_nurse_skip": {
         "name": "{name}",
-        "text": "*Por hoy ya caminé bastante. A casa a descansar.*"
+        "text": "*Camino hacia la puerta de la escuela.*"
     },
     "after_nurse_enter_trap": {
         "name": "Enfermera",

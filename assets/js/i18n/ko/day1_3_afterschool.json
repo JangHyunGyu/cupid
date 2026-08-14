@@ -334,7 +334,7 @@
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
-        "text": "*문 앞에 서서 한 번 숨을 고른다. 들어가서 조금만 쉬자. 손잡이에 손을 얹는다. 금속이 차갑다.*"
+        "text": "*문 앞에 서서 한 번 숨을 고르고 손잡이에 손을 얹는다. 금속이 차갑다.*"
     },
     "after_nurse_enter_1": {
         "name": "{name}",
@@ -525,7 +525,7 @@
     },
     "after_nurse_skip": {
         "name": "{name}",
-        "text": "*오늘은 충분히 돌아다녔다. 집에 가서 쉬자.*"
+        "text": "*교문 쪽으로 걷는다.*"
     },
     "after_nurse_enter_trap": {
         "name": "보건선생님",

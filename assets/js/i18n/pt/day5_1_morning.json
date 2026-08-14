@@ -10,7 +10,7 @@
         "name": "Professora",
         "text": "*De manhã, na sala de aula, coloco o celular sobre a mesa para mostrar à professora uma foto do rascunho. A tela acende com uma mensagem da garota com quem estive ontem: 'O que aconteceu ontem fica só entre nós, certo?'. A professora lê até o fim e tira a mão do celular.* Você ignorou minha mensagem ontem para encontrar essa garota?",
         "choices": [
-            "Contar sem esconder o que aconteceu ontem à noite",
+            "Contar o que aconteceu ontem à noite",
             "Dizer que não foi nada importante"
         ]
     },
@@ -18,7 +18,7 @@
         "name": "Enfermeira",
         "text": "*Assim que coloco o celular sobre a maca da enfermaria, a tela acende. Uma mensagem da garota com quem estive ontem diz: 'O que aconteceu ontem fica só entre nós, certo?'. A enfermeira tenta sorrir como sempre, mas a expressão desaparece devagar.* Então você não deixou de ver minha mensagem. Estava com essa garota?",
         "choices": [
-            "Contar sem esconder o que aconteceu ontem à noite",
+            "Contar o que aconteceu ontem à noite",
             "Dizer que não foi nada importante"
         ]
     },
@@ -45,7 +45,7 @@
         "name": "Seoyeon",
         "text": "*De manhã, na sala de aula. Assim que coloco o celular diante de Seoyeon, a tela se acende. Uma notificação de Dain diz: “Não esquece o que prometemos ontem à noite no ginásio.” O olhar de Seoyeon para na tela.* Você me levou para casa e depois foi ao ginásio?",
         "choices": [
-            "Contar sem esconder nada sobre a noite passada",
+            "Contar o que aconteceu na noite passada",
             "Desconversar, dizendo que não foi nada importante"
         ]
     },
@@ -53,7 +53,7 @@
         "name": "Seoyeon",
         "text": "*O celular vibra sobre a mesa entre Seoyeon e eu. Uma notificação de Yuna diz: “Obrigada por ter ficado comigo ontem à noite no anexo.” Seoyeon lê até o fim e levanta a cabeça devagar.* Você foi ao anexo sem nem me responder?",
         "choices": [
-            "Contar sem esconder nada sobre a noite passada",
+            "Contar o que aconteceu na noite passada",
             "Desconversar, dizendo que não foi nada importante"
         ]
     },
@@ -61,7 +61,7 @@
         "name": "Dain",
         "text": "*O celular vibra enquanto Dain está ao lado da mesa. Uma notificação de Seoyeon diz: “Ainda lembro da mão que segurei ontem à noite no terraço.” O sorriso de Dain congela.* Você perguntou se eu tinha chegado bem e depois voltou ao terraço?",
         "choices": [
-            "Contar sem esconder nada sobre a noite passada",
+            "Contar o que aconteceu na noite passada",
             "Desconversar, dizendo que não foi nada importante"
         ]
     },
@@ -69,7 +69,7 @@
         "name": "Dain",
         "text": "*Quando Dain puxa a cadeira da frente, uma notificação de Yuna ilumina a tela. “Obrigada por ter ficado comigo ontem à noite no anexo.” A mão de Dain para no encosto.* Você foi ao anexo depois que eu mandei mensagem dizendo que tinha chegado em casa?",
         "choices": [
-            "Contar sem esconder nada sobre a noite passada",
+            "Contar o que aconteceu na noite passada",
             "Desconversar, dizendo que não foi nada importante"
         ]
     },
@@ -77,7 +77,7 @@
         "name": "Yuna",
         "text": "*O celular vibra sobre a mesa entre Yuna e eu. Uma notificação de Seoyeon diz: “Ainda lembro da mão que segurei ontem à noite no terraço.” Yuna lê cada palavra antes de tirar os olhos da tela.* Você deixou minhas mensagens sem resposta e foi ao terraço.",
         "choices": [
-            "Contar sem esconder nada sobre a noite passada",
+            "Contar o que aconteceu na noite passada",
             "Desconversar, dizendo que não foi nada importante"
         ]
     },
@@ -85,17 +85,17 @@
         "name": "Yuna",
         "text": "*Quando Yuna abre o livro, uma notificação de Dain aparece na tela. “Não esquece o que prometemos ontem à noite no ginásio.” A mão de Yuna para sobre a capa.* Meu nome ainda estava na sua tela, e mesmo assim você ficou no ginásio.",
         "choices": [
-            "Contar sem esconder nada sobre a noite passada",
+            "Contar o que aconteceu na noite passada",
             "Desconversar, dizendo que não foi nada importante"
         ]
     },
     "morning5_caught_seoyeon_honest": {
         "name": "Seoyeon",
-        "text": "*Mesmo depois de ouvir tudo, Seoyeon não tira os óculos. Apenas o olhar por trás das lentes esfria devagar.* Não consigo agradecer por você ter sido sincero. Agora eu não consigo olhar para você."
+        "text": "*Mesmo depois de ouvir tudo, Seoyeon não tira os óculos. Por trás das lentes, ela devolve o olhar para a tela.* Não consigo agradecer por você ter sido sincero. Agora eu não consigo olhar para você."
     },
     "morning5_caught_seoyeon_lie": {
         "name": "Seoyeon",
-        "text": "*Seoyeon olha da notificação acesa para o rosto à sua frente. O último vestígio do sorriso desaparece.* A mentira que você acabou de contar está mais clara do que o que aconteceu ontem à noite."
+        "text": "*Seoyeon olha da notificação acesa para o rosto à sua frente. O último vestígio do sorriso desaparece.* O que você acabou de dizer me incomoda mais do que ontem à noite."
     },
     "morning5_caught_dain_honest": {
         "name": "Dain",
@@ -115,7 +115,7 @@
     },
     "morning5_counteroffer_group_talk": {
         "name": "As duas",
-        "text": "*Os dois olhares me prendem no lugar. O que a noite passada realmente significou e se, desde o início, eu queria ficar com as duas. Nenhuma delas parece disposta a aceitar uma resposta vaga.*",
+        "text": "*Os dois olhares me prendem no lugar. O que a noite passada realmente significou e se, desde o início, eu queria ficar com as duas.*",
         "context": "Acabou de vir à tona que o protagonista cedeu à tentação da noite anterior. A pessoa em quem ele tinha decidido investir e quem o seduziu agora o encaram juntas na mesma sala. A conversa continua a partir da escolha dele de confessar ou mentir. As duas exigem uma explicação direta sobre as relações e intenções dele, sem amenizar a tensão entre os três.",
         "personality": "Cada uma mantém sua voz e sua própria mágoa. A pessoa traída fala primeiro, e quem o seduziu responde depois de ouvi-la. O confronto gira em torno da explicação do protagonista: as duas fazem perguntas diretamente a ele e apontam qualquer lacuna no que disser. A pessoa traída pergunta, do jeito dela, por que ele aceitou outra pessoa enquanto mantinha a relação, se estava levando as duas desde o começo ou se apenas brincou com ela. Quem o seduziu assume que tomou a iniciativa e sente culpa por ter machucado a outra, mas não esconde o desejo de ficar com o protagonista e ser escolhida. A culpa não basta para fazê-la recuar ou ceder. Elas podem responder ou contestar uma à outra, mas não excluem o protagonista nem decidem a relação entre si. Não repetem uma pergunta já respondida: insistem no fato que falta, no significado da relação ou no que ele escolherá agora.",
         "buttonText": "Responder"

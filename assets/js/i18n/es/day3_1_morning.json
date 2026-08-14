@@ -524,7 +524,7 @@
     },
     "hidden_nurse_d3_5_l": {
         "name": "{name}",
-        "text": "*Ha dado en el clavo.*"
+        "text": "*Miro solo el vaso de papel sobre el escritorio.*"
     },
     "hidden_nurse_d3_5_m": {
         "name": "Enfermera",
@@ -548,7 +548,7 @@
     },
     "hidden_nurse_d3_choice1": {
         "name": "{name}",
-        "text": "*...En el fondo tiene razón.*",
+        "text": "*Abro la boca y la vuelvo a cerrar.*",
         "choices": [
             "Puede que se parezca, sí...",
             "No, es solo que estoy confundido"
@@ -710,7 +710,7 @@
     },
     "morning3_date_dain_2": {
         "name": "Dain",
-        "text": "*Seoyeon sigue en la puerta del salón. Dain no aparta la mirada y tamborilea la esquina del pupitre.*"
+        "text": "*Seoyeon sigue en la puerta del salón. Dain mira hacia aquí y tamborilea la esquina del pupitre.*"
     },
     "morning3_date_dain_choice": {
         "name": "Dain",
@@ -734,7 +734,7 @@
     },
     "morning3_date_dain_decline_inner_2": {
         "name": "{name}",
-        "text": "*Presumo de observador y, justo cuando importa, lo estropeo.*"
+        "text": "*Cuando Dain vuelve a su sitio, solo queda el aula justo antes del timbre.*"
     },
     "morning3_date_yuna_1": {
         "name": "{name}",

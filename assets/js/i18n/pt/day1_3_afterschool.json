@@ -334,7 +334,7 @@
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
-        "text": "*Paro na frente da porta e respiro fundo. Só vou descansar um pouco. Ponho a mão na maçaneta. O metal gelado encosta na palma.*"
+        "text": "*Paro na frente da porta, respiro fundo e ponho a mão na maçaneta. O metal gelado encosta na palma.*"
     },
     "after_nurse_enter_1": {
         "name": "{name}",
@@ -525,7 +525,7 @@
     },
     "after_nurse_skip": {
         "name": "{name}",
-        "text": "*Já andei bastante por hoje. Melhor ir pra casa descansar.*"
+        "text": "*Ando em direção ao portão.*"
     },
     "after_nurse_enter_trap": {
         "name": "Enfermeira",

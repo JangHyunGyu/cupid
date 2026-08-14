@@ -10,7 +10,7 @@
         "name": "Homeroom Teacher",
         "text": "*In the morning classroom, I set my phone down to show my homeroom teacher a photo of my draft. The screen lights up with a message from the girl I was with last night: 'What happened yesterday stays between us, right?' My teacher reads it to the end and takes her hand off the phone.* You ignored my message last night to meet this girl?",
         "choices": [
-            "Tell her what happened last night without hiding it",
+            "Tell her what happened last night",
             "Brush it off as nothing important"
         ]
     },
@@ -18,7 +18,7 @@
         "name": "School Nurse",
         "text": "*The moment I set my phone on the infirmary counter, the screen lights up. A message from the girl I was with last night reads, 'What happened yesterday stays between us, right?' The school nurse starts to give her usual smile, then slowly lets it fade.* So you didn't miss my message yesterday. You were with this girl?",
         "choices": [
-            "Tell her what happened last night without hiding it",
+            "Tell her what happened last night",
             "Brush it off as nothing important"
         ]
     },
@@ -45,7 +45,7 @@
         "name": "Seoyeon",
         "text": "*Morning in the classroom. The moment I set my phone down in front of Seoyeon, the screen lights up. A notification from Dain reads, 'Don't forget what we promised in the gym last night.' Seoyeon's gaze stops on the screen.* You walked me home, then went to the gym?",
         "choices": [
-            "Tell her what happened last night without hiding it",
+            "Tell her what happened last night",
             "Brush it off as nothing important"
         ]
     },
@@ -53,7 +53,7 @@
         "name": "Seoyeon",
         "text": "*My phone buzzes on the desk between Seoyeon and me. A notification from Yuna reads, 'Thank you for staying with me in the annex last night.' Seoyeon reads it to the end, then slowly looks up.* You went to the annex without even answering me?",
         "choices": [
-            "Tell her what happened last night without hiding it",
+            "Tell her what happened last night",
             "Brush it off as nothing important"
         ]
     },
@@ -61,7 +61,7 @@
         "name": "Dain",
         "text": "*My phone buzzes while Dain is standing beside the desk. A notification from Seoyeon reads, 'I still remember the hand I held on the rooftop last night.' Dain's smile stops cold.* You asked if I got home safely, then went back to the rooftop?",
         "choices": [
-            "Tell her what happened last night without hiding it",
+            "Tell her what happened last night",
             "Brush it off as nothing important"
         ]
     },
@@ -69,7 +69,7 @@
         "name": "Dain",
         "text": "*As Dain pulls out the chair across from me, a notification from Yuna lights up the screen. 'Thank you for staying with me in the annex last night.' Dain's hand freezes on the chair back.* You went to the annex after I texted you that I was home?",
         "choices": [
-            "Tell her what happened last night without hiding it",
+            "Tell her what happened last night",
             "Brush it off as nothing important"
         ]
     },
@@ -77,7 +77,7 @@
         "name": "Yuna",
         "text": "*My phone buzzes on the desk between Yuna and me. A notification from Seoyeon reads, 'I still remember the hand I held on the rooftop last night.' Yuna reads every word before lifting her eyes from the screen.* You left my messages unanswered and went to the rooftop.",
         "choices": [
-            "Tell her what happened last night without hiding it",
+            "Tell her what happened last night",
             "Brush it off as nothing important"
         ]
     },
@@ -85,17 +85,17 @@
         "name": "Yuna",
         "text": "*Just as Yuna opens her book, a notification from Dain appears on the screen. 'Don't forget what we promised in the gym last night.' Yuna's hand stops on the cover.* My name was still on your screen, and you stayed in the gym anyway.",
         "choices": [
-            "Tell her what happened last night without hiding it",
+            "Tell her what happened last night",
             "Brush it off as nothing important"
         ]
     },
     "morning5_caught_seoyeon_honest": {
         "name": "Seoyeon",
-        "text": "*Even after hearing everything, Seoyeon doesn't take off her glasses. Only the look behind the lenses slowly turns cold.* I can't thank you for being honest. I can't look at you right now."
+        "text": "*Even after hearing everything, Seoyeon doesn't take off her glasses. She turns the eyes behind the lenses back to the screen.* I can't thank you for being honest. I can't look at you right now."
     },
     "morning5_caught_seoyeon_lie": {
         "name": "Seoyeon",
-        "text": "*Seoyeon looks from the lit notification to the face across from her. The last trace of her smile disappears.* The lie you just told me is clearer than what happened last night."
+        "text": "*Seoyeon looks from the lit notification to the face across from her. The last trace of her smile disappears.* What you just said bothers me more than last night."
     },
     "morning5_caught_dain_honest": {
         "name": "Dain",
@@ -115,7 +115,7 @@
     },
     "morning5_counteroffer_group_talk": {
         "name": "Both of Them",
-        "text": "*Both looks pin me in place. What exactly was last night, and was I trying to keep both of them from the start? Neither looks willing to accept an evasive answer.*",
+        "text": "*Both looks pin me in place. What exactly was last night, and was I trying to keep both of them from the start?*",
         "context": "The truth about accepting last night's temptation has just come out. The person the protagonist had committed to and the person who tempted him now face him together in the same classroom. Continue from his choice to confess or lie. Both demand a direct explanation of his relationships and intent, without smoothing over the tension among all three.",
         "personality": "Both characters keep their distinct voices and their own hurt. The committed partner speaks first, and the tempter responds after hearing her. The confrontation centers on the protagonist's explanation: both question him directly and press any gap in what he has said. The committed partner asks, in character, why he accepted someone else while continuing their relationship, whether he was two-timing from the start, or whether he was playing with her. The tempter owns the initiative and guilt of hurting the other person, yet does not hide the desire to keep the protagonist and be chosen. Guilt alone does not make her retreat or yield. They may challenge or answer each other, but they never leave the protagonist out and decide the relationship between themselves. Do not repeat an answered question; press a missing fact, what the relationship meant, or what he will choose next.",
         "buttonText": "Answer"

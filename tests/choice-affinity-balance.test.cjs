@@ -545,13 +545,13 @@ test('day 2 through 5 rivalry copy stays synchronized across every supported loc
         'after5_farewell_dain_2', 'after5_farewell_dain_4', 'after5_farewell_dain_4_c'
     ];
     const expectedDigests = {
-        ko: 'c587a4fc2015c57a185c304f896a2d786da4662ac0e762750f160c50ce2f0db4',
-        en: '8aa3130f5948743aafdf57ed9ec319114c88423b669c55feea1565c27d2a8ff8',
-        ja: '1045385342d5e447144c90e10b58cc3b593e5be826ed529da051fa7b85e3eaf1',
-        es: '6f45193071890e9da98339a5b10726674dda09c15e0120185d05999fd09bc631',
-        fr: '7da7185c5c4aa343a6b7b33b2fa4819c4aa47b9e4e770864863e9de1f16f838d',
-        de: 'ac70d4a43ae3646935bbb9e3f93f196735461593eeb77042675cc18b3a471fe7',
-        pt: '6e5b9e97c3e6a41fb1d9a443b41c186f0720c21bdd3c7f97654aff0f2cf2a939'
+        ko: 'dce2dd2800036771e0ea9f8be4c78780c9123e66a06d4c6ef60504e9b084d447',
+        en: 'ed8f85e5336561aac8f1cce6db72f3e610701c5e2e692f69a5ea827f841bfd6d',
+        ja: '1798763fe5743f3b0b77b27f1c7c0737228a343861c91ae3735253a5cefb05c5',
+        es: 'e90e5fc8c28bfe916c9302d475b8fe898c0f547f0591b33d5b941b6cd421e18e',
+        fr: 'cc84b6d96545c7a1d37149f7231273fc37c4f3994a16c96c7bf1756a2d0ca20d',
+        de: '7cc4d4d6c4d342927abc9a25ac696627863137d738d200634e57af2a274110e3',
+        pt: '3bfa5c0b5032d443714c97ff19a50d1f2c67f5c945121c31dc6e93c20c4e45e7'
     };
 
     for (const [locale, expectedDigest] of Object.entries(expectedDigests)) {

@@ -334,7 +334,7 @@
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
-        "text": "*ドアの前で一度、息を整える。少しだけ休もう。取っ手に手をかける。金属が冷たい。*"
+        "text": "*ドアの前で一度、息を整えて取っ手に手をかける。金属が冷たい。*"
     },
     "after_nurse_enter_1": {
         "name": "{name}",
@@ -525,7 +525,7 @@
     },
     "after_nurse_skip": {
         "name": "{name}",
-        "text": "*今日はもう十分歩き回った。家に帰って休もう。*"
+        "text": "*校門の方へ歩く。*"
     },
     "after_nurse_enter_trap": {
         "name": "保健室の先生",

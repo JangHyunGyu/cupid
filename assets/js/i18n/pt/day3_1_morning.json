@@ -524,7 +524,7 @@
     },
     "hidden_nurse_d3_5_l": {
         "name": "{name}",
-        "text": "*Acertou em cheio.*"
+        "text": "*Olho só para o copo de papel em cima da mesa.*"
     },
     "hidden_nurse_d3_5_m": {
         "name": "Enfermeira",
@@ -548,7 +548,7 @@
     },
     "hidden_nurse_d3_choice1": {
         "name": "{name}",
-        "text": "*...Ela tem razão nisso.*",
+        "text": "*Abro a boca e fecho de novo.*",
         "choices": [
             "Talvez meio parecido...",
             "Não, só tá um pouco complicado"
@@ -710,7 +710,7 @@
     },
     "morning3_date_dain_2": {
         "name": "Dain",
-        "text": "*Seoyeon ainda está na porta da sala. Dain não desvia o olhar e tamborila no canto da carteira.*"
+        "text": "*Seoyeon ainda está na porta da sala. Dain olha para cá e tamborila no canto da carteira.*"
     },
     "morning3_date_dain_choice": {
         "name": "Dain",
@@ -734,7 +734,7 @@
     },
     "morning3_date_dain_decline_inner_2": {
         "name": "{name}",
-        "text": "*Sempre me achei atento. — Mas erro justo quando importa.*"
+        "text": "*Quando Dain volta para o lugar, sobra só a sala imediatamente antes do sinal.*"
     },
     "morning3_date_yuna_1": {
         "name": "{name}",

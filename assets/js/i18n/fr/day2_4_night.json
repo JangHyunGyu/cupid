@@ -220,7 +220,7 @@
     },
     "night2_end_1": {
         "name": "{name}",
-        "text": "*J'envoie mes réponses et pose le téléphone. Le deuxième jour est terminé.*"
+        "text": "*J'envoie mes réponses et pose le téléphone.*"
     },
     "night2_flashback_1": {
         "name": "{name}",
@@ -272,6 +272,6 @@
     },
     "night2_end_4_c": {
         "name": "{name}",
-        "text": "*J'ai préparé un bento à la va-vite. C'est pas terrible. Trop approximatif pour dire que c'est fait avec soin. — Mais c'est mieux que rien.*"
+        "text": "*Je mets le riz, l'œuf et les algues, puis je ferme le couvercle. C'est tout ce qu'il y a comme accompagnement.*"
     }
 }

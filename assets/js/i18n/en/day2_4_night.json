@@ -220,7 +220,7 @@
     },
     "night2_end_1": {
         "name": "{name}",
-        "text": "*I send my replies and set the phone down. Day two is over.*"
+        "text": "*I send my replies and set the phone down.*"
     },
     "night2_flashback_1": {
         "name": "{name}",
@@ -272,6 +272,6 @@
     },
     "night2_end_4_c": {
         "name": "{name}",
-        "text": "*I throw together a lunchbox. It's nothing special — too sloppy to claim I made it with care. But it beats showing up empty-handed.*"
+        "text": "*I put in rice, egg, and seaweed, then close the lid. That's all the side dishes.*"
     }
 }

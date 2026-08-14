@@ -524,7 +524,7 @@
     },
     "hidden_nurse_d3_5_l": {
         "name": "{name}",
-        "text": "*図星だ。*"
+        "text": "*机の上の紙コップだけを見る。*"
     },
     "hidden_nurse_d3_5_m": {
         "name": "保健室の先生",
@@ -548,7 +548,7 @@
     },
     "hidden_nurse_d3_choice1": {
         "name": "{name}",
-        "text": "*間違ってはいない。*",
+        "text": "*口を開けかけて、また閉じる。*",
         "choices": [
             "似てます。",
             "いえ、ただちょっと複雑で"
@@ -710,7 +710,7 @@
     },
     "morning3_date_dain_2": {
         "name": "ダイン",
-        "text": "*ソヨンはまだ教室の入口に立っている。ダインは目をそらさず、机の角を指で叩く。*"
+        "text": "*ソヨンはまだ教室の入口に立っている。ダインはこっちを見たまま、机の角を指で叩く。*"
     },
     "morning3_date_dain_choice": {
         "name": "ダイン",
@@ -734,7 +734,7 @@
     },
     "morning3_date_dain_decline_inner_2": {
         "name": "{name}",
-        "text": "*察しがいいと自負しているのに。――肝心な瞬間に間違える。*"
+        "text": "*ダインが席に戻ったあと、チャイム直前の教室だけが残る。*"
     },
     "morning3_date_yuna_1": {
         "name": "{name}",

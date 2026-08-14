@@ -5,7 +5,7 @@
     },
     "hidden_dual_route_1": {
         "name": "{name}",
-        "text": "*Nach dem Aufräumen stecke ich die Kopie aus dem Literaturklub und die Erste-Hilfe-Karte in meine Tasche. Ich weiß noch nicht, an welche Erinnerung ich in ein paar Jahren zurückdenken werde.*"
+        "text": "*Nach dem Aufräumen stecke ich die Kopie aus dem Literaturklub und die Erste-Hilfe-Karte in meine Tasche.*"
     },
     "hidden_dual_route_choice": {
         "name": "{name}",
@@ -18,7 +18,7 @@
     "hidden_perfect_homeroom_check": {},
     "hidden_perfect_homeroom_1": {
         "name": "{name}",
-        "text": "*Am Tag der Abschlussfeier gibt mir die Klassenlehrerin eine Kopie meines Empfehlungsschreibens und mein Leseprotokoll. Bis zuletzt ist es ein Abschied zwischen Lehrerin und Schüler.*"
+        "text": "*Am Tag der Abschlussfeier gibt mir die Klassenlehrerin eine Kopie meines Empfehlungsschreibens und mein Leseprotokoll.*"
     },
     "hidden_perfect_homeroom_1b": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "hidden_bitter_homeroom_2": {
         "name": "{name}",
-        "text": "*Der Brief kommt mit glatt gestrichenen Ecken zurück. Eine Frage bleibt: Haben das Lesen der Manuskripte und die späten Gespräche nicht doch mehr bedeutet?*"
+        "text": "*Der Brief kommt mit glatt gestrichenen Ecken zurück.*"
     },
     "hidden_bitter_homeroom_3": {
         "name": "Klassenlehrerin",
@@ -868,11 +868,11 @@
     },
     "true_epilogue_2": {
         "name": "{name}",
-        "text": "*Die Uniform war steif, die Kirschblüten ließen mich niesen, und ich wusste nicht, was ich vor dem Schultor tun sollte.*"
+        "text": "*Die Uniform war steif. Die Kirschblüten kitzelten nur in der Nase. Vor dem Schultor wanderten die Hände in die Taschen.*"
     },
     "true_epilogue_3": {
         "name": "{name}",
-        "text": "*Rückblickend kam der Anfang ziemlich schnell. Im Kalender waren erst fünf Kästchen vergangen.*"
+        "text": "*Im Kalender waren erst fünf Kästchen vergangen.*"
     },
     "true_epilogue_4": {},
     "true_epilogue_4_seo": {
@@ -1101,7 +1101,7 @@
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Eine Nachricht von Dain kommt: ‚Wer geht morgen früh mit mir auf einen Reha-Spaziergang?‘ Der Satz klingt vorsichtiger als sonst.*"
+        "text": "*Eine Nachricht von Dain kommt: ‚Wer geht morgen früh mit mir auf einen Reha-Spaziergang?‘*"
     },
     "good_epilogue_2_dain": {
         "name": "{name}",
@@ -1201,7 +1201,7 @@
     },
     "mayhem_6": {
         "name": "{name}",
-        "text": "*Die Worte ‚Ich mag dich‘ sind gefallen, doch in jedem Chat stapeln sich ungelesene Fragen.*"
+        "text": "*In jedem Chat stapeln sich ungelesene Fragen.*"
     },
     "mayhem_7": {
         "name": "{name}",
@@ -1241,7 +1241,7 @@
     },
     "harem_6": {
         "name": "{name}",
-        "text": "*Ich nicke. Die drei gehen in verschiedene Richtungen, und {name} bleibt allein zurück.*"
+        "text": "*Die drei gehen in verschiedene Richtungen, und {name} bleibt allein zurück.*"
     },
     "harem_7": {
         "name": "{name}",
@@ -1257,7 +1257,7 @@
     },
     "day5_seo_ending_freetalk_intro": {
         "name": "{name}",
-        "text": "*Nach dem Ende führt die Zeit uns zurück auf das vertraute Schuldach. Diesmal gibt es weder vorgeschriebene Zeilen noch eine nächste Szene.*"
+        "text": "*Das Dach. Neben der offenen Tür ist eine leere Stelle für einen Blumentopf.*"
     },
     "day5_yuna_ending_freetalk_intro": {
         "name": "{name}",
@@ -1269,11 +1269,11 @@
     },
     "day5_teacher_ending_freetalk_intro": {
         "name": "{name}",
-        "text": "*Das Leben nach dem Abschluss geht weiter. Auf dem Cafétisch liegen ein fertiges Manuskript und zwei Tassen Kaffee.*"
+        "text": "*Auf dem Cafétisch liegen ein fertiges Manuskript und zwei Tassen Kaffee.*"
     },
     "day5_nurse_ending_freetalk_intro": {
         "name": "{name}",
-        "text": "*Nach dem Abschluss geht das Leben weiter. Zu Hause beendet sie das Aufräumen und lässt den Platz gegenüber frei.*"
+        "text": "*Zu Hause beendet sie das Aufräumen und lässt den Platz gegenüber frei.*"
     },
     "day5_credits": {
         "name": "",

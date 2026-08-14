@@ -524,7 +524,7 @@
     },
     "hidden_nurse_d3_5_l": {
         "name": "{name}",
-        "text": "*Volltreffer.*"
+        "text": "*Ich sehe nur den Pappbecher auf dem Tisch an.*"
     },
     "hidden_nurse_d3_5_m": {
         "name": "Schulkrankenschwester",
@@ -548,7 +548,7 @@
     },
     "hidden_nurse_d3_choice1": {
         "name": "{name}",
-        "text": "*Da hat sie recht.*",
+        "text": "*Ich öffne den Mund und schließe ihn wieder.*",
         "choices": [
             "So ähnlich.",
             "Nein, es ist einfach kompliziert."
@@ -710,7 +710,7 @@
     },
     "morning3_date_dain_2": {
         "name": "Dain",
-        "text": "*Seoyeon steht noch vor der Klassenzimmertür. Dain weicht ihrem Blick nicht aus und klopft gegen die Tischecke.*"
+        "text": "*Seoyeon steht noch vor der Klassenzimmertür. Dain schaut herüber und klopft gegen die Tischecke.*"
     },
     "morning3_date_dain_choice": {
         "name": "Dain",
@@ -734,7 +734,7 @@
     },
     "morning3_date_dain_decline_inner_2": {
         "name": "{name}",
-        "text": "*Ich war immer stolz darauf, andere gut einschätzen zu können. Doch wenn es wirklich darauf ankommt, liege ich jedes Mal daneben.*"
+        "text": "*Als Dain zu ihrem Platz zurückgeht, bleibt nur das Klassenzimmer kurz vor dem Gong.*"
     },
     "morning3_date_yuna_1": {
         "name": "{name}",

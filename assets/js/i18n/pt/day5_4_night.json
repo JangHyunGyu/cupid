@@ -5,7 +5,7 @@
     },
     "hidden_dual_route_1": {
         "name": "{name}",
-        "text": "*Ao terminar de desmontar o evento, guardo na mochila a cópia para a sessão de crítica e o cartão de primeiros socorros. Ainda não sei que tipo de lembrança eles serão daqui a alguns anos.*"
+        "text": "*Ao terminar de desmontar o evento, guardo na mochila a cópia para a sessão de crítica e o cartão de primeiros socorros.*"
     },
     "hidden_dual_route_choice": {
         "name": "{name}",
@@ -18,7 +18,7 @@
     "hidden_perfect_homeroom_check": {},
     "hidden_perfect_homeroom_1": {
         "name": "{name}",
-        "text": "*No dia da formatura, a professora me entrega uma cópia da carta de recomendação e meu registro de leituras. Uma despedida de professora até o fim.*"
+        "text": "*No dia da formatura, a professora me entrega uma cópia da carta de recomendação e meu registro de leituras.*"
     },
     "hidden_perfect_homeroom_1b": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "hidden_bitter_homeroom_2": {
         "name": "{name}",
-        "text": "*A carta volta com os cantos bem alisados. Fica a pergunta: as leituras dos textos e as conversas até tarde não significavam algo mais?*"
+        "text": "*A carta volta com os cantos bem alisados.*"
     },
     "hidden_bitter_homeroom_3": {
         "name": "Professora",
@@ -868,11 +868,11 @@
     },
     "true_epilogue_2": {
         "name": "{name}",
-        "text": "*O uniforme era duro, as cerejeiras me faziam espirrar, e eu não sabia o que fazer na frente do portão da escola.*"
+        "text": "*O uniforme estava rígido. As cerejeiras só coçavam o nariz. Na frente do portão, as mãos foram para os bolsos.*"
     },
     "true_epilogue_3": {
         "name": "{name}",
-        "text": "*Olhando para trás, o começo chegou bem depressa. No calendário, haviam passado apenas cinco espaços.*"
+        "text": "*No calendário, só tinham passado cinco quadradinhos.*"
     },
     "true_epilogue_4": {},
     "true_epilogue_4_seo": {
@@ -1101,7 +1101,7 @@
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Chega uma mensagem de Dain: 'Alguém quer fazer uma caminhada de reabilitação amanhã de manhã?' É uma frase mais cautelosa do que o normal.*"
+        "text": "*Chega uma mensagem de Dain: 'Alguém quer ir comigo amanhã cedo no passeio de reabilitação?'*"
     },
     "good_epilogue_2_dain": {
         "name": "{name}",
@@ -1201,7 +1201,7 @@
     },
     "mayhem_6": {
         "name": "{name}",
-        "text": "*As palavras 'eu gosto de você' continuam ali, mas todas as conversas acumulam perguntas que nunca respondi.*"
+        "text": "*Em cada conversa se acumulam perguntas sem resposta.*"
     },
     "mayhem_7": {
         "name": "{name}",
@@ -1241,7 +1241,7 @@
     },
     "harem_6": {
         "name": "{name}",
-        "text": "*Concordo com a cabeça. As três seguem em direções diferentes, e {name} fica parado no mesmo lugar.*"
+        "text": "*As três seguem em direções diferentes, e {name} fica no mesmo lugar.*"
     },
     "harem_7": {
         "name": "{name}",
@@ -1257,7 +1257,7 @@
     },
     "day5_seo_ending_freetalk_intro": {
         "name": "{name}",
-        "text": "*Depois do final, o tempo leva os dois de volta ao terraço conhecido da escola. Desta vez não há falas escritas nem próxima cena.*"
+        "text": "*A cobertura. Ao lado da porta aberta há o vão de um vaso.*"
     },
     "day5_yuna_ending_freetalk_intro": {
         "name": "{name}",
@@ -1269,11 +1269,11 @@
     },
     "day5_teacher_ending_freetalk_intro": {
         "name": "{name}",
-        "text": "*A vida depois da formatura continua. Um manuscrito pronto e dois cafés estão sobre a mesa da cafeteria.*"
+        "text": "*Na mesa do café estão um manuscrito pronto e dois cafés.*"
     },
     "day5_nurse_ending_freetalk_intro": {
         "name": "{name}",
-        "text": "*A vida depois da formatura continua. Em casa, ela termina de organizar tudo e deixa livre o lugar em frente.*"
+        "text": "*Em casa, ela termina de arrumar e deixa vago o lugar da frente.*"
     },
     "day5_credits": {
         "name": "",

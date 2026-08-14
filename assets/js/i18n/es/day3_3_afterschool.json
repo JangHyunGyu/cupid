@@ -156,7 +156,7 @@
     },
     "after3_seo_correct_2": {
         "name": "{name}",
-        "text": "*Me agacho haciendo como que recojo una pluma. Tanteo por debajo de la mesa. Muy despacio, a propósito. — Sin mirarla. En cuanto la mire, se cae la mentira.*"
+        "text": "*Me agacho haciendo como que recojo una pluma. Tanteo por debajo de la mesa. Muy despacio, a propósito, sin mirarla.*"
     },
     "after3_seo_correct_3": {
         "name": "{name}",
@@ -604,7 +604,7 @@
     },
     "after3_dain_freetalk": {
         "name": "Dain",
-        "text": "*Se ajusta la muñequera y fuerza una sonrisa.* Hoy hablo yo primero.",
+        "text": "*Se ajusta la muñequera y la comisura de la boca sube medio tiempo tarde.* Hoy hablo yo primero.",
         "context": "Día 3 después de clases, justo después de una conversación con Dain. Intenta tratar al protagonista con su energía habitual, pero aún hay dolor e incertidumbre, y quiere comprender qué relaciones ha elegido el protagonista.",
         "personality": "Dain es una jugadora de voleibol enérgica y directa. El humor y la sinceridad pueden aparecer con naturalidad mientras expresa lo que siente y lo que quiere saber de la relación."
     },

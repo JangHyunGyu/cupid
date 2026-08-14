@@ -10,7 +10,7 @@
         "name": "Profesora",
         "text": "*En el aula por la mañana, dejo el teléfono sobre la mesa para enseñarle a la profesora una foto del borrador. La pantalla se ilumina con un mensaje de la chica con la que estuve anoche: 'Lo de ayer queda entre nosotros, ¿verdad?'. La profesora lo lee entero y aparta la mano del teléfono.* ¿Anoche ignoraste mi mensaje para verte con esta chica?",
         "choices": [
-            "Contarle lo que pasó anoche sin ocultarlo",
+            "Contarle lo que pasó anoche",
             "Restarle importancia y decir que no fue nada"
         ]
     },
@@ -18,7 +18,7 @@
         "name": "Enfermera",
         "text": "*En cuanto dejo el teléfono sobre la camilla de la enfermería, la pantalla se ilumina. Un mensaje de la chica con la que estuve anoche dice: 'Lo de ayer queda entre nosotros, ¿verdad?'. La enfermera intenta sonreír como siempre, pero deja caer lentamente las comisuras de los labios.* Así que no es que no vieras mi mensaje. ¿Estabas con esta chica?",
         "choices": [
-            "Contarle lo que pasó anoche sin ocultarlo",
+            "Contarle lo que pasó anoche",
             "Restarle importancia y decir que no fue nada"
         ]
     },
@@ -45,7 +45,7 @@
         "name": "Seoyeon",
         "text": "*Por la mañana, en el aula. En cuanto dejo el móvil delante de Seoyeon, la pantalla se enciende. Una notificación de Dain dice: «No olvides lo que prometimos anoche en el gimnasio». La mirada de Seoyeon se queda clavada en la pantalla.* ¿Me acompañaste a casa y después fuiste al gimnasio?",
         "choices": [
-            "Contarle sin ocultar nada de anoche",
+            "Contarle lo de anoche",
             "Restarle importancia y disimular"
         ]
     },
@@ -53,7 +53,7 @@
         "name": "Seoyeon",
         "text": "*El móvil vibra sobre la mesa entre Seoyeon y yo. Una notificación de Yuna dice: «Gracias por quedarte conmigo anoche en el anexo». Seoyeon la lee hasta el final y levanta la cabeza despacio.* ¿Fuiste al anexo sin siquiera responderme?",
         "choices": [
-            "Contarle sin ocultar nada de anoche",
+            "Contarle lo de anoche",
             "Restarle importancia y disimular"
         ]
     },
@@ -61,7 +61,7 @@
         "name": "Dain",
         "text": "*El móvil vibra mientras Dain está junto a la mesa. Una notificación de Seoyeon dice: «Todavía recuerdo la mano que sostuve anoche en la azotea». La sonrisa de Dain se congela.* ¿Me preguntaste si había llegado bien y luego volviste a la azotea?",
         "choices": [
-            "Contarle sin ocultar nada de anoche",
+            "Contarle lo de anoche",
             "Restarle importancia y disimular"
         ]
     },
@@ -69,7 +69,7 @@
         "name": "Dain",
         "text": "*Cuando Dain aparta la silla de enfrente, una notificación de Yuna ilumina la pantalla. «Gracias por quedarte conmigo anoche en el anexo». La mano de Dain se detiene en el respaldo.* ¿Fuiste al anexo después de que te escribiera que ya había llegado a casa?",
         "choices": [
-            "Contarle sin ocultar nada de anoche",
+            "Contarle lo de anoche",
             "Restarle importancia y disimular"
         ]
     },
@@ -77,7 +77,7 @@
         "name": "Yuna",
         "text": "*El móvil vibra sobre la mesa entre Yuna y yo. Una notificación de Seoyeon dice: «Todavía recuerdo la mano que sostuve anoche en la azotea». Yuna lee cada palabra antes de apartar los ojos de la pantalla.* Dejaste mis mensajes sin responder y fuiste a la azotea.",
         "choices": [
-            "Contarle sin ocultar nada de anoche",
+            "Contarle lo de anoche",
             "Restarle importancia y disimular"
         ]
     },
@@ -85,17 +85,17 @@
         "name": "Yuna",
         "text": "*Justo cuando Yuna abre el libro, aparece una notificación de Dain. «No olvides lo que prometimos anoche en el gimnasio». La mano de Yuna se detiene sobre la cubierta.* Mi nombre seguía en tu pantalla y aun así te quedaste en el gimnasio.",
         "choices": [
-            "Contarle sin ocultar nada de anoche",
+            "Contarle lo de anoche",
             "Restarle importancia y disimular"
         ]
     },
     "morning5_caught_seoyeon_honest": {
         "name": "Seoyeon",
-        "text": "*Incluso después de oírlo todo, Seoyeon no se quita las gafas. Solo se enfría lentamente su mirada tras los cristales.* No puedo darte las gracias por ser sincero. Ahora mismo no puedo mirarte."
+        "text": "*Incluso después de oírlo todo, Seoyeon no se quita las gafas. Devuelve a la pantalla los ojos que miraban por los cristales.* No puedo darte las gracias por ser sincero. Ahora mismo no puedo mirarte."
     },
     "morning5_caught_seoyeon_lie": {
         "name": "Seoyeon",
-        "text": "*Seoyeon mira la notificación encendida y luego el rostro frente a ella. El último rastro de su sonrisa desaparece.* La mentira que acabas de decir es más clara que lo que pasó anoche."
+        "text": "*Seoyeon mira la notificación encendida y luego el rostro frente a ella. El último rastro de su sonrisa desaparece.* Lo que acabas de decir me encaja peor que lo de anoche."
     },
     "morning5_caught_dain_honest": {
         "name": "Dain",
@@ -115,7 +115,7 @@
     },
     "morning5_counteroffer_group_talk": {
         "name": "Las dos",
-        "text": "*Las dos miradas me clavan en el sitio. Qué fue exactamente lo de anoche y si desde el principio intentaba quedarme con las dos. Ninguna parece dispuesta a aceptar evasivas.*",
+        "text": "*Las dos miradas me clavan en el sitio. Qué fue exactamente lo de anoche y si desde el principio intentaba quedarme con las dos.*",
         "context": "Acaba de descubrirse que el protagonista aceptó la tentación de anoche. La persona por la que había decidido apostar y quien lo tentó ahora lo enfrentan juntas en el mismo salón. La conversación continúa desde su decisión de confesar o mentir. Las dos exigen una explicación directa sobre sus relaciones y sus intenciones, sin disimular la tensión entre los tres.",
         "personality": "Cada una conserva su propia voz y su propio dolor. La persona traicionada habla primero, y quien lo tentó responde después de escucharla. El centro de la confrontación es la explicación del protagonista: ambas le preguntan directamente y señalan cualquier vacío en lo que diga. La persona traicionada pregunta, a su manera, por qué aceptó a otra mientras mantenía la relación, si jugaba a dos bandas desde el principio o si solo estaba jugando con ella. Quien lo tentó asume que tomó la iniciativa y siente culpa por haber herido a la otra, pero no oculta que quiere quedarse con el protagonista y ser la elegida. La culpa no basta para que se retire o ceda. Pueden contradecirse o responderse, pero no excluyen al protagonista ni deciden la relación entre ellas. No repiten una pregunta ya respondida: insisten en el dato que falta, en lo que significaba la relación o en qué elegirá ahora.",
         "buttonText": "Responder"

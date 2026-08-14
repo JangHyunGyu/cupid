@@ -316,7 +316,7 @@
     },
     "morning2_seo_dust_3": {
         "name": "Seoyeon",
-        "text": "*Ihre Hand berührt {name}s Schulter. Beim Abklopfen des Staubs zögert sie nicht.*"
+        "text": "*Ihre Hand berührt {name}s Schulter. Sie klopft den Staub zweimal ab und nimmt die Hand wieder weg.*"
     },
     "morning2_seo_dust_4": {
         "name": "Seoyeon",
@@ -336,7 +336,7 @@
     },
     "morning2_dain_react_2": {
         "name": "{name}",
-        "text": "*Seoyeon geht weiter, als wäre nichts gewesen. Dains Stimme kommt von hinten.*"
+        "text": "*Seoyeon rückt das Klemmbrett zurecht und geht den Flur entlang. Dains Stimme kommt von hinten.*"
     },
     "morning2_dain_react_3": {
         "name": "Dain",

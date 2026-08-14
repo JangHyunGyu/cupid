@@ -524,7 +524,7 @@
     },
     "hidden_nurse_d3_5_l": {
         "name": "{name}",
-        "text": "*Bull's-eye.*"
+        "text": "*I look only at the paper cup on the desk.*"
     },
     "hidden_nurse_d3_5_m": {
         "name": "School Nurse",
@@ -548,7 +548,7 @@
     },
     "hidden_nurse_d3_choice1": {
         "name": "{name}",
-        "text": "*She has a point.*",
+        "text": "*I open my mouth, then close it again.*",
         "choices": [
             "Something like that.",
             "No, it's just complicated."
@@ -710,7 +710,7 @@
     },
     "morning3_date_dain_2": {
         "name": "Dain",
-        "text": "*Seoyeon is still standing in the classroom doorway. Dain holds her gaze and taps the corner of the desk.*"
+        "text": "*Seoyeon is still standing in the classroom doorway. Dain looks this way and taps the corner of the desk.*"
     },
     "morning3_date_dain_choice": {
         "name": "Dain",
@@ -734,7 +734,7 @@
     },
     "morning3_date_dain_decline_inner_2": {
         "name": "{name}",
-        "text": "*I always thought I read people well, but I keep getting it wrong when it matters most.*"
+        "text": "*After Dain goes back to her seat, only the classroom just before the bell is left.*"
     },
     "morning3_date_yuna_1": {
         "name": "{name}",

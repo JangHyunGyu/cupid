@@ -65,7 +65,7 @@
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",
-        "text": "*Aunque lo llama un secreto, los nudillos de la mano que sujeta la manija del cajón están blancos.*",
+        "text": "*Los nudillos de la mano que sujeta la manija del cajón están blancos.*",
         "choices": [
             "Cuántos secretos. ¿No me cuenta uno al menos?",
             "Está bien, no vi nada"
@@ -262,7 +262,7 @@
     },
     "after2_seo_4_b": {
         "name": "Seoyeon",
-        "text": "*En lugar de decir \"por favor\", ella gira el portapapeles hacia {name}. La primera línea de la lista de tareas está vacía.*"
+        "text": "*Gira el portapapeles hacia {name}. La primera línea de la lista de tareas está vacía.*"
     },
     "after2_seo_5": {
         "name": "{name}",
@@ -274,7 +274,7 @@
     },
     "after2_seo_6_b": {
         "name": "{name}",
-        "text": "*Tiene un don para que las peticiones suenen a órdenes. Nos ponemos con los papeles: presupuestos de eventos, solicitudes de clubes. Hay una buena pila.*"
+        "text": "*Nos ponemos con los papeles: presupuestos de eventos, solicitudes de clubes. Hay una buena pila.*"
     },
     "after2_seo_7": {
         "name": "Seoyeon",
@@ -543,7 +543,7 @@
     },
     "after2_yuna_everyday_react_b": {
         "name": "{name}",
-        "text": "*No suena precisamente a permiso, pero Yuna no retira el marcapáginas.*"
+        "text": "*Yuna no retira el marcapáginas y sigue en la misma página.*"
     },
     "after2_yuna_quiet": {
         "name": "Yuna",
@@ -596,7 +596,7 @@
     },
     "minsu_warn_4_b": {
         "name": "{name}",
-        "text": "*Lo dice en tono de broma, pero Minsu mantiene la vista fija en el semáforo del cruce, fuera de la escuela.*"
+        "text": "*Minsu mantiene la vista fija en el semáforo del cruce, fuera de la escuela.*"
     },
     "minsu_warn_5": {
         "name": "{name}",

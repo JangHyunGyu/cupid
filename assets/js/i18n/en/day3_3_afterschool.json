@@ -156,7 +156,7 @@
     },
     "after3_seo_correct_2": {
         "name": "{name}",
-        "text": "*I bend down and feel beneath the desk, pretending to look for a pen. I deliberately take my time and avoid Seoyeon's eyes. If we make eye contact, she'll see through the lie.*"
+        "text": "*I bend down and feel beneath the desk, pretending to look for a pen. I take my time and keep my eyes off Seoyeon.*"
     },
     "after3_seo_correct_3": {
         "name": "{name}",
@@ -604,7 +604,7 @@
     },
     "after3_dain_freetalk": {
         "name": "Dain",
-        "text": "*She adjusts her wrist guard and forces a smile.* Today, I'll talk first.",
+        "text": "*She adjusts her wrist guard; her mouth turns up half a beat late.* Today, I'll talk first.",
         "context": "Day 3 after school, just after a conversation with Dain. She is trying to meet the protagonist with her usual brightness, but hurt and uncertainty remain, and she wants to understand which relationships the protagonist has chosen.",
         "personality": "Dain is an energetic and straightforward volleyball player. Humor and sincerity can both appear naturally as she expresses what she feels and what she wants to know about the relationship."
     },

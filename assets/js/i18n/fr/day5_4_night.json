@@ -5,7 +5,7 @@
     },
     "hidden_dual_route_1": {
         "name": "{name}",
-        "text": "*En terminant le rangement de l'événement, je glisse dans mon sac l'exemplaire du club littéraire et la carte de premiers secours. Je ne sais pas encore ce qu'ils représenteront pour moi dans quelques années.*"
+        "text": "*En terminant le rangement de l'événement, je glisse dans mon sac l'exemplaire du club littéraire et la carte de premiers secours.*"
     },
     "hidden_dual_route_choice": {
         "name": "{name}",
@@ -18,7 +18,7 @@
     "hidden_perfect_homeroom_check": {},
     "hidden_perfect_homeroom_1": {
         "name": "{name}",
-        "text": "*Le jour de la remise des diplômes, ma professeure principale me donne une copie de ma recommandation et de mon dossier de lecture. Jusqu'au bout, ses adieux restent ceux d'une enseignante.*"
+        "text": "*Le jour de la remise des diplômes, ma professeure principale me donne une copie de ma recommandation et de mon dossier de lecture.*"
     },
     "hidden_perfect_homeroom_1b": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "hidden_bitter_homeroom_2": {
         "name": "{name}",
-        "text": "*La lettre revient, les coins soigneusement lissés. Une question demeure : les lectures de manuscrits et les entretiens tardifs ne voulaient-ils vraiment rien dire d'autre ?*"
+        "text": "*La lettre revient, les coins soigneusement lissés.*"
     },
     "hidden_bitter_homeroom_3": {
         "name": "Professeure principale",
@@ -868,11 +868,11 @@
     },
     "true_epilogue_2": {
         "name": "{name}",
-        "text": "*L'uniforme était raide, les cerisiers me faisaient éternuer, et je ne savais pas quoi faire devant le portail.*"
+        "text": "*L'uniforme était raide. Les cerisiers ne me piquaient que le nez. Devant le portail, mes mains sont allées dans les poches.*"
     },
     "true_epilogue_3": {
         "name": "{name}",
-        "text": "*Avec le recul, tout a commencé assez vite. Le calendrier n’avait avancé que de cinq cases.*"
+        "text": "*Le calendrier n’avait avancé que de cinq cases.*"
     },
     "true_epilogue_4": {},
     "true_epilogue_4_seo": {
@@ -1101,7 +1101,7 @@
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Un message de Dain : « Quelqu'un veut m'accompagner pour ma marche de rééducation demain matin ? » La formulation est plus prudente que d'habitude.*"
+        "text": "*Un message de Dain : « Quelqu'un veut m'accompagner pour ma marche de rééducation demain matin ? »*"
     },
     "good_epilogue_2_dain": {
         "name": "{name}",
@@ -1201,7 +1201,7 @@
     },
     "mayhem_6": {
         "name": "{name}",
-        "text": "*Mes déclarations sont restées, mais les questions laissées sans réponse se sont accumulées dans chaque conversation.*"
+        "text": "*Dans chaque conversation, les questions laissées sans réponse se sont accumulées.*"
     },
     "mayhem_7": {
         "name": "{name}",
@@ -1241,7 +1241,7 @@
     },
     "harem_6": {
         "name": "{name}",
-        "text": "*Je hoche la tête. Toutes trois partent dans une direction différente, laissant {name} sur place.*"
+        "text": "*Toutes trois partent dans une direction différente, laissant {name} sur place.*"
     },
     "harem_7": {
         "name": "{name}",
@@ -1257,7 +1257,7 @@
     },
     "day5_seo_ending_freetalk_intro": {
         "name": "{name}",
-        "text": "*Après la fin, le temps les ramène sur le toit familier de l'école. Cette fois, il n'y a ni répliques écrites ni scène suivante.*"
+        "text": "*Le toit. À côté de la porte ouverte, il y a l'emplacement vide d'un pot.*"
     },
     "day5_yuna_ending_freetalk_intro": {
         "name": "{name}",
@@ -1269,11 +1269,11 @@
     },
     "day5_teacher_ending_freetalk_intro": {
         "name": "{name}",
-        "text": "*La vie après le diplôme continue. Un manuscrit achevé et deux cafés reposent sur la table du café.*"
+        "text": "*Un manuscrit achevé et deux cafés reposent sur la table du café.*"
     },
     "day5_nurse_ending_freetalk_intro": {
         "name": "{name}",
-        "text": "*La vie après le diplôme continue. Chez elle, elle finit de ranger et laisse libre la place en face.*"
+        "text": "*Chez elle, elle finit de ranger et laisse libre la place en face.*"
     },
     "day5_credits": {
         "name": "",

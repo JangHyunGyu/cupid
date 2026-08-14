@@ -107,7 +107,7 @@
     },
     "lunch2_seo_12": {
         "name": "{name}",
-        "text": "*Dain sits down without hesitation. Seoyeon's chopsticks circle above the rolled omelette, miss, then return to where they started.*"
+        "text": "*Dain sits down in the empty seat. Seoyeon's chopsticks circle above the rolled omelette, miss, then return to where they started.*"
     },
     "lunch2_seo_13": {
         "name": "Dain",
@@ -292,7 +292,7 @@
     },
     "lunch2_dain_10": {
         "name": "{name}",
-        "text": "*Seoyeon glances at me standing beside Dain, then walks on. With a bite of soboro in my mouth, I forget to chew.*"
+        "text": "*Seoyeon glances at me standing beside Dain, then walks on. The bite of soboro stays in my mouth.*"
     },
     "lunch2_dain_11": {
         "name": "Dain",
@@ -373,7 +373,7 @@
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
-        "text": "*She jokes as she talks, but checks the dirt around my elbow first.*"
+        "text": "*A gloved hand checks the dirt around my elbow first.*"
     },
     "lunch2_dain_end_ins7_first": {
         "name": "School Nurse",

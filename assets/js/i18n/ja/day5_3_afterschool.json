@@ -208,7 +208,7 @@
     },
     "after5_last_chance_2_r": {
         "name": "ダイン",
-        "text": "*目元をこする。笑みは消えないのに、手の甲には涙がつく。*"
+        "text": "*目元をこする。手の甲に水気がつく。*"
     },
     "after5_last_chance_2_s": {
         "name": "ダイン",
@@ -305,7 +305,7 @@
     },
     "after5_confess_react_yuna_b": {
         "name": "ユナ",
-        "text": "*本を置く。手が震えている。*"
+        "text": "*本を置こうとして、角をまた握る。*"
     },
     "after5_confess_react_yuna_c": {
         "name": "ユナ",
@@ -333,7 +333,7 @@
     },
     "after5_confess_react_yuna_i": {
         "name": "{name}",
-        "text": "*そうして――学校を出て、歩き続けた。*"
+        "text": "*校門の外へ出た。*"
     },
     "after5_confess_react_yuna_low": {
         "name": "ユナ",
@@ -341,7 +341,7 @@
     },
     "after5_confess_fail_walk_1": {
         "name": "{name}",
-        "text": "*これ以上言葉は出てこなかった。日がさらに傾いて、俺たちはしばらく同じ方向に歩くだけだった。*"
+        "text": "*日がさらに傾く。同じ方向に歩くだけだ。*"
     },
     "after5_confess_fail_walk_2": {
         "name": "{name}",
@@ -369,7 +369,7 @@
     },
     "after5_harem_walk_1": {
         "name": "{name}",
-        "text": "*誰も先に口を開けないまま、俺たちは校舎裏を離れた。*"
+        "text": "*校舎裏まで、誰も先に口を開けない。*"
     },
     "after5_harem_walk_2": {
         "name": "{name}",

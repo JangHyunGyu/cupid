@@ -524,7 +524,7 @@
     },
     "hidden_nurse_d3_5_l": {
         "name": "{name}",
-        "text": "*En plein dans le mille.*"
+        "text": "*Je ne regarde que le gobelet en papier sur le bureau.*"
     },
     "hidden_nurse_d3_5_m": {
         "name": "Infirmière",
@@ -548,7 +548,7 @@
     },
     "hidden_nurse_d3_choice1": {
         "name": "{name}",
-        "text": "*...Elle n'a pas tort.*",
+        "text": "*J'ouvre la bouche, puis la referme.*",
         "choices": [
             "C'est possible, oui...",
             "Non, c'est juste... compliqué"
@@ -710,7 +710,7 @@
     },
     "morning3_date_dain_2": {
         "name": "Dain",
-        "text": "*Seoyeon est encore devant la porte de la classe. Dain ne détourne pas le regard et tapote le coin du bureau.*"
+        "text": "*Seoyeon est encore devant la porte de la classe. Dain regarde par ici et tapote le coin du bureau.*"
     },
     "morning3_date_dain_choice": {
         "name": "Dain",
@@ -734,7 +734,7 @@
     },
     "morning3_date_dain_decline_inner_2": {
         "name": "{name}",
-        "text": "*Je me vante d’être perspicace. — Mais c’est justement aux moments importants que je me trompe.*"
+        "text": "*Quand Dain reprend sa place, il ne reste que la classe juste avant la sonnerie.*"
     },
     "morning3_date_yuna_1": {
         "name": "{name}",

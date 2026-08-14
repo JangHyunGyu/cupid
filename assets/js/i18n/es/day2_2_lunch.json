@@ -107,7 +107,7 @@
     },
     "lunch2_seo_12": {
         "name": "{name}",
-        "text": "*Dain se sienta sin ninguna reserva. Los palillos de Seoyeon dan una vuelta en falso sobre la tortilla enrollada y regresan a su sitio.*"
+        "text": "*Dain se sienta en el asiento vacío. Los palillos de Seoyeon dan una vuelta en falso sobre la tortilla enrollada y regresan a su sitio.*"
     },
     "lunch2_seo_13": {
         "name": "Dain",
@@ -292,7 +292,7 @@
     },
     "lunch2_dain_10": {
         "name": "{name}",
-        "text": "*Seoyeon me mira una vez junto a Dain y sigue de largo. Con el pan soboro entre los dientes, olvido masticar.*"
+        "text": "*Seoyeon me mira una vez junto a Dain y sigue de largo. El bocado de pan soboro se queda en la boca.*"
     },
     "lunch2_dain_11": {
         "name": "Dain",
@@ -373,7 +373,7 @@
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
-        "text": "*Aunque bromea, primero examina el polvo alrededor del codo.*"
+        "text": "*La mano enguantada examina primero el polvo alrededor del codo.*"
     },
     "lunch2_dain_end_ins7_first": {
         "name": "Enfermera",

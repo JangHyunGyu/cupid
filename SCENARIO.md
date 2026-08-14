@@ -592,7 +592,7 @@
 - 다음: `classroom_dain_talk_2`
 
 - 캐릭터: `minsu_normal.png`
-**{name}**: *앞자리 이름표에는 '민수'라고 적혀 있었다. 민수는 이미 모든 걸 겪어 본 표정이었다.*
+**{name}**: *앞자리 이름표에는 '민수'라고 적혀 있었다.*
 
 ---
 
@@ -1100,7 +1100,7 @@
 - 다음: `lunch_seo_after_7`
 
 - 캐릭터: `seyoun_normal.png`
-**서연**: *도시락 끈을 한 번 묶었다가 더 짧게 조인다. '허가'라는 말은 고치지 않는다.*
+**서연**: *도시락 끈을 한 번 묶었다가 더 짧게 조인다.*
 
 ---
 
@@ -2495,7 +2495,7 @@
 - 다음: `after_nurse_enter_1`
 
 - 캐릭터: `없음`
-**{name}**: *문 앞에 서서 한 번 숨을 고른다. 들어가서 조금만 쉬자. 손잡이에 손을 얹는다. 금속이 차갑다.*
+**{name}**: *문 앞에 서서 한 번 숨을 고르고 손잡이에 손을 얹는다. 금속이 차갑다.*
 
 ---
 
@@ -2929,7 +2929,7 @@
 - 다음: `night_start`
 
 - 캐릭터: `없음`
-**{name}**: *오늘은 충분히 돌아다녔다. 집에 가서 쉬자.*
+**{name}**: *교문 쪽으로 걷는다.*
 
 ---
 
@@ -2941,7 +2941,7 @@
 - 다음: `night_start_3`
 
 - 캐릭터: `없음`
-**{name}**: *방에 돌아와 침대에 누우니 교복 셔츠에 남은 벚꽃 냄새가 이불에 묻어난다. 유난히 긴 첫날이었다.*
+**{name}**: *방에 돌아와 침대에 누우니 교복 셔츠에 남은 벚꽃 냄새가 이불에 묻어난다.*
 
 ---
 
@@ -4012,7 +4012,7 @@
 - 다음: `morning2_seo_dust_4`
 
 - 캐릭터: `seyoun_normal.png`
-**서연**: *손이 {name}의 어깨에 닿는다. 묻은 먼지를 털어내는 손길에 망설임이 없다.*
+**서연**: *손이 {name}의 어깨에 닿는다. 먼지를 두 번 털고 바로 뗀다.*
 
 ---
 
@@ -4057,7 +4057,7 @@
 - 다음: `morning2_dain_react_3`
 
 - 캐릭터: `dain_angry.png`
-**{name}**: *서연이 아무렇지 않게 걸어간다. 뒤에서 다인의 목소리.*
+**{name}**: *서연이 클립보드를 고쳐 끼고 복도로 간다. 뒤에서 다인의 목소리.*
 
 ---
 
@@ -4363,7 +4363,7 @@
   - [기본] → `lunch2_seo_13b`
 
 - 캐릭터: `dain_normal.png`
-**{name}**: *다인이 거리낌 없이 앉는다. 서연의 젓가락이 계란말이 위에서 헛돌다 제자리로 돌아온다.*
+**{name}**: *다인이 빈자리에 바로 앉는다. 서연의 젓가락이 계란말이 위에서 헛돌다 제자리로 돌아온다.*
 
 ---
 
@@ -4795,7 +4795,7 @@
 - 다음: `lunch2_dain_11`
 
 - 캐릭터: `seyoun_pout.png`
-**{name}**: *서연이 다인 옆에 선 나를 한 번 보고 지나간다. 소보로를 베어 문 채 씹는 걸 잊는다.*
+**{name}**: *서연이 다인 옆에 선 나를 한 번 보고 지나간다. 베어 문 소보로가 입안에서 그대로다.*
 
 ---
 
@@ -4974,7 +4974,7 @@
 - 다음: `lunch2_dain_end_i`
 
 - 캐릭터: `nurse_normal.png`
-**{name}**: *입으로는 농담하면서도 팔꿈치 주변에 묻은 먼지부터 살핀다.*
+**{name}**: *장갑 낀 손이 팔꿈치 주변의 먼지부터 훑는다.*
 
 ---
 
@@ -5833,7 +5833,7 @@
   2. "네, 안 봤어요" → `hidden_nurse_d2_choice2_b` | Nurse -3
 
 - 캐릭터: `nurse_shy.png`
-**{name}**: *비밀이라고 말하면서도 서랍 손잡이를 쥔 손마디는 희다.*
+**{name}**: *서랍 손잡이를 쥔 손마디가 희다.*
 
 ---
 
@@ -6295,7 +6295,7 @@
 - 다음: `after2_seo_5`
 
 - 캐릭터: `seyoun_sad.png`
-**서연**: *'부탁' 대신 클립보드를 {name} 쪽으로 돌린다. 할 일 목록 맨 위가 비어 있다.*
+**서연**: *클립보드를 {name} 쪽으로 돌린다. 할 일 목록 맨 위가 비어 있다.*
 
 ---
 
@@ -6322,7 +6322,7 @@
 - 다음: `after2_seo_7`
 
 - 캐릭터: `seyoun_normal.png`
-**{name}**: *부탁도 지시처럼 들리게 만드는 재주가 있다. 서류 정리를 시작한다. 행사 예산안, 동아리 신청서. 양이 꽤 많다.*
+**{name}**: *서류 정리를 시작한다. 행사 예산안, 동아리 신청서. 양이 꽤 많다.*
 
 ---
 
@@ -6916,7 +6916,7 @@
 - 다음: `after2_yuna_end`
 
 - 캐릭터: `yuna_shy.png`
-**{name}**: *허락 같지 않은 말인데, 유나는 책갈피를 빼지 않는다.*
+**{name}**: *유나는 책갈피를 빼지 않은 채 같은 페이지를 보고 있다.*
 
 ---
 
@@ -7070,7 +7070,7 @@
 - 다음: `minsu_warn_5`
 
 - 캐릭터: `minsu_normal.png`
-**{name}**: *말끝은 장난스럽지만 민수는 교문 밖 횡단보도 신호만 보고 있다.*
+**{name}**: *민수는 교문 밖 횡단보도 신호만 보고 있다.*
 
 ---
 
@@ -7630,7 +7630,7 @@
 - 다음: `night2_flashback_1`
 
 - 캐릭터: `없음`
-**{name}**: *답장을 보내고 핸드폰을 내려놓았다. 둘째 날이 끝났다.*
+**{name}**: *답장을 보내고 핸드폰을 내려놓았다.*
 
 ---
 
@@ -7747,7 +7747,7 @@
 - 다음: `morning3_start`
 
 - 캐릭터: `없음`
-**{name}**: *대충 도시락을 쌌다. 잘 만든 건 아니다. 정성이라고 하기엔 좀 민망한 수준. — 근데 안 하는 것보다는 낫겠지.*
+**{name}**: *밥이랑 계란, 김을 넣고 뚜껑을 닫는다. 반찬은 그게 전부다.*
 
 ---
 
@@ -8969,7 +8969,7 @@
 - 다음: `hidden_nurse_d3_5_m`
 
 - 캐릭터: `nurse_normal.png`
-**{name}**: *정곡이다.*
+**{name}**: *책상 위 종이컵만 본다.*
 
 ---
 
@@ -9025,7 +9025,7 @@
   2. "아뇨, 그냥 좀 복잡해서요" → `hidden_nurse_d3_choice1_b` | Nurse +0
 
 - 캐릭터: `nurse_normal.png`
-**{name}**: *틀린 말은 아니다.*
+**{name}**: *입만 열었다가 다시 다문다.*
 
 ---
 
@@ -9366,7 +9366,7 @@
 - 다음: `morning3_date_dain_choice`
 
 - 캐릭터: `dain_normal.png`
-**다인**: *서연이 아직 교실 문 앞에 서 있다. 다인은 시선을 피하지 않고 책상 모서리를 두드린다.*
+**다인**: *서연이 아직 교실 문 앞에 서 있다. 다인은 이쪽을 본 채 책상 모서리를 두드린다.*
 
 ---
 
@@ -9413,7 +9413,7 @@
 - 다음: `morning3_date_yuna_1`
 
 - 캐릭터: `dain_laugh.png`
-**{name}**: *눈치가 빠르다고 자부했는데 중요한 순간에는 번번이 틀린다.*
+**{name}**: *다인이 자리로 돌아간 뒤, 종이 치기 직전의 교실만 남는다.*
 
 ---
 
@@ -9968,7 +9968,7 @@
 - 다음: `lunch3_yuna_skin_2`
 
 - 캐릭터: `yuna_shy.png`
-**{name}**: *유나는 쪽지를 건넨 손을 바로 거두지 못해 종이 끝을 함께 잡고 있다.*
+**{name}**: *쪽지 끝을 두 손이 같이 잡고 있다.*
 
 ---
 
@@ -10691,7 +10691,7 @@
 - 다음: `after3_seo_correct_3`
 
 - 캐릭터: `seyoun_worried.png`
-**{name}**: *허리를 굽혀 펜을 줍는 척 책상 밑을 더듬는다. 일부러 시간을 끌며 서연과 눈을 맞추지 않는다. 마주치면 거짓말이 들킬 것 같다.*
+**{name}**: *허리를 굽혀 펜을 줍는 척 책상 밑을 더듬는다. 일부러 시간을 끌며 서연과 눈을 맞추지 않는다.*
 
 ---
 
@@ -11692,7 +11692,7 @@
 - 성격: "다인은 에너지 넘치고 솔직한 배구부 선수다. 상처나 불안이 있어도 관계를 피하지 않으며 느끼는 감정과 궁금한 점을 자기 방식으로 드러낸다."
 
 - 캐릭터: `dain_normal.png`
-**다인**: *다인은 손목 보호대를 고쳐 매고 입꼬리를 억지로 올린다.* 오늘은 내가 먼저 말할게.
+**다인**: *다인은 손목 보호대를 고쳐 매다 입꼬리가 반 박자 늦게 올라간다.* 오늘은 내가 먼저 말할게.
 
 ---
 
@@ -12446,7 +12446,7 @@
 - 다음: `night3_faithful_reflect_2_b`
 
 - 캐릭터: `없음`
-**{name}**: *커튼 사이로 들어온 아침 햇살에 눈을 뜬다. 손바닥에는 꿈속의 온기가 남아 있다. 핸드폰 갤러리를 열어 소정이 사진까지 스크롤한 뒤 길게 누른다.*
+**{name}**: *커튼 사이로 들어온 아침 햇살에 눈을 뜬다. 핸드폰 갤러리를 열어 소정이 사진까지 스크롤한 뒤 길게 누른다.*
 
 ---
 
@@ -14561,7 +14561,7 @@
 - 다음: `date_yuna_pretty_high_5_b`
 
 - 캐릭터: `yuna_shy.png`
-**유나**: *눈을 들지 않는다. 기다리고 있다.*
+**유나**: *눈을 들지 않는다.*
 
 ---
 
@@ -16521,7 +16521,7 @@
 - 성격: "서연은 침착하고 책임감이 강하지만 지금은 가면을 조금 내려놓은 상태다. 감정을 숨기지 않되 상대에게 해결을 떠맡기지 않고 평소의 솔직함과 조심스러운 다정함으로 대화를 이어 간다."
 
 - 캐릭터: `seyoun_normal.png`
-**서연**: *젖은 눈가를 손등으로 닦고 한결 편해진 얼굴로 바라본다.* 아직 가지 마. 조금만 더 얘기하자.
+**서연**: *젖은 눈가를 손등으로 닦고 {name} 쪽을 본다.* 아직 가지 마. 조금만 더 얘기하자.
 
 ---
 
@@ -17276,7 +17276,7 @@
 - 성격: "다인은 솔직하고 몸이 먼저 움직이는 사람답게 감정도 숨기지 않으려 한다. 지금은 평소보다 차분하지만 활기를 잃은 사람이 아니며 불안을 인정하면서도 상대와 함께 다음 말을 찾아간다."
 
 - 캐릭터: `dain_normal.png`
-**다인**: *숨을 길게 내쉬고 주인공 곁에 보폭을 맞춘다.* 오늘은... 그냥 같이 좀 걷자. 말해도 좋고.
+**다인**: *숨을 길게 내쉬고 {name} 곁에 보폭을 맞춘다.* 오늘은... 그냥 같이 좀 걷자. 말해도 좋고.
 
 ---
 
@@ -17912,7 +17912,7 @@
 - 다음: `day4_adult_night_regret_target_branch`
 
 - 캐릭터: `없음`
-**{name}**: *유나는 {name} 바로 앞까지 다가와 한 손으로 책장을 짚는다. 재킷을 한쪽 어깨 아래로 흘려 내리고 다른 손으로 안쪽 상의의 목깃까지 끌어내린다. 드러난 맨어깨와 타투 사이로 붉은 눈만은 한 번도 피하지 않는다. 책상 위 휴대폰이 다시 울린다. 한참 뒤 별관을 나와 집으로 돌아간다.*
+**{name}**: *유나는 {name} 바로 앞까지 다가와 한 손으로 책장을 짚는다. 재킷을 한쪽 어깨 아래로 흘려 내리고 다른 손으로 안쪽 상의의 목깃까지 끌어내린다. 드러난 맨어깨와 타투 사이로 붉은 눈이 {name}의 눈높이에 그대로 있다. 책상 위 휴대폰이 다시 울린다. 한참 뒤 별관을 나와 집으로 돌아간다.*
 
 ---
 
@@ -18001,7 +18001,7 @@
 - 다음: `day4_night_regret`
 
 - 캐릭터: `없음`
-**{name}**: *유나는 {name} 바로 앞까지 다가와 한 손으로 책장을 짚는다. 재킷을 한쪽 어깨 아래로 흘려 내리고 다른 손으로 안쪽 상의의 목깃까지 끌어내린다. 드러난 맨어깨와 타투 사이로 붉은 눈만은 한 번도 피하지 않는다. 서연의 '너도 도착했어?'라는 메시지가 화면 위에서 사라지지 않는다.*
+**{name}**: *유나는 {name} 바로 앞까지 다가와 한 손으로 책장을 짚는다. 재킷을 한쪽 어깨 아래로 흘려 내리고 다른 손으로 안쪽 상의의 목깃까지 끌어내린다. 드러난 맨어깨와 타투 사이로 붉은 눈이 {name}의 눈높이에 그대로 있다. 서연의 '너도 도착했어?'라는 메시지가 화면 위에서 사라지지 않는다.*
 
 ---
 
@@ -18048,7 +18048,7 @@
 - 다음: `day4_night_regret`
 
 - 캐릭터: `없음`
-**{name}**: *유나는 {name} 바로 앞까지 다가와 한 손으로 책장을 짚는다. 재킷을 한쪽 어깨 아래로 흘려 내리고 다른 손으로 안쪽 상의의 목깃까지 끌어내린다. 드러난 맨어깨와 타투 사이로 붉은 눈만은 한 번도 피하지 않는다. 다인의 '집 도착!' 알림이 화면 위에서 사라지지 않는다.*
+**{name}**: *유나는 {name} 바로 앞까지 다가와 한 손으로 책장을 짚는다. 재킷을 한쪽 어깨 아래로 흘려 내리고 다른 손으로 안쪽 상의의 목깃까지 끌어내린다. 드러난 맨어깨와 타투 사이로 붉은 눈이 {name}의 눈높이에 그대로 있다. 다인의 '집 도착!' 알림이 화면 위에서 사라지지 않는다.*
 
 ---
 
@@ -18383,7 +18383,7 @@
 - 배경: `room_school.png`
 - 배경톤: `empty`
 - 선택지:
-  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_teacher_honest` | Teacher -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_teacher`
+  1. "어젯밤 일을 그대로 말한다" → `morning5_caught_teacher_honest` | Teacher -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_teacher`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_teacher_lie` | Teacher -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_teacher`
 
 - 캐릭터: `teacher_sad.png`
@@ -18414,7 +18414,7 @@
 ### `morning5_caught_nurse_counteroffer`
 - 배경: `nurse_room.png`
 - 선택지:
-  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_nurse_honest` | Nurse -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_nurse`
+  1. "어젯밤 일을 그대로 말한다" → `morning5_caught_nurse_honest` | Nurse -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_nurse`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_nurse_lie` | Nurse -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_nurse`
 
 - 캐릭터: `nurse_worried.png`
@@ -18456,7 +18456,7 @@
 ### `morning5_caught_dain_by_seoyeon`
 - 배경: `room_school.png`
 - 선택지:
-  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_dain_honest` | Dain -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_dain`
+  1. "어젯밤 일을 그대로 말한다" → `morning5_caught_dain_honest` | Dain -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_dain`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_dain_lie` | Dain -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_dain`
 
 - 캐릭터: `dain_sad.png`
@@ -18468,7 +18468,7 @@
 - 배경: `room_school.png`
 - 배경톤: `cold`
 - 선택지:
-  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_yuna_honest` | Yuna -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_yuna`
+  1. "어젯밤 일을 그대로 말한다" → `morning5_caught_yuna_honest` | Yuna -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_yuna`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_yuna_lie` | Yuna -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_yuna`
 
 - 캐릭터: `yuna_sad.png`
@@ -18492,7 +18492,7 @@
 ### `morning5_caught_seoyeon_by_yuna`
 - 배경: `room_school.png`
 - 선택지:
-  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_seoyeon_honest` | Seoyeon -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_seoyeon`
+  1. "어젯밤 일을 그대로 말한다" → `morning5_caught_seoyeon_honest` | Seoyeon -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_seoyeon`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_seoyeon_lie` | Seoyeon -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_seoyeon`
 
 - 캐릭터: `seyoun_sad.png`
@@ -18503,7 +18503,7 @@
 ### `morning5_caught_dain_by_yuna`
 - 배경: `room_school.png`
 - 선택지:
-  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_dain_honest` | Dain -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_dain`
+  1. "어젯밤 일을 그대로 말한다" → `morning5_caught_dain_honest` | Dain -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_dain`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_dain_lie` | Dain -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_dain`
 
 - 캐릭터: `dain_sad.png`
@@ -18545,7 +18545,7 @@
 ### `morning5_caught_seoyeon_by_dain`
 - 배경: `room_school.png`
 - 선택지:
-  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_seoyeon_honest` | Seoyeon -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_seoyeon`
+  1. "어젯밤 일을 그대로 말한다" → `morning5_caught_seoyeon_honest` | Seoyeon -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_seoyeon`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_seoyeon_lie` | Seoyeon -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_seoyeon`
 
 - 캐릭터: `seyoun_sad.png`
@@ -18558,7 +18558,7 @@
 - 다음: `morning5_counteroffer_group_talk`
 
 - 캐릭터: `seyoun_sad.png`
-**서연**: *전부 듣고도 서연은 안경을 벗지 않는다. 렌즈 너머의 눈빛만 천천히 식는다.* 솔직히 말해 줘서 고맙다는 말은 못 하겠어. 지금은 네 얼굴 보기 힘들어.
+**서연**: *전부 듣고도 서연은 안경을 벗지 않는다. 렌즈 너머로 보던 눈을 화면 쪽으로 되돌린다.* 솔직히 말해 줘서 고맙다는 말은 못 하겠어. 지금은 네 얼굴 보기 힘들어.
 
 ---
 
@@ -18567,7 +18567,7 @@
 - 다음: `morning5_counteroffer_group_talk`
 
 - 캐릭터: `seyoun_pout.png`
-**서연**: *서연은 다시 켜진 알림 화면과 맞은편 얼굴을 번갈아 본다. 입가에 남아 있던 미소가 사라진다.* 어제 일보다 지금 한 거짓말이 더 선명하네.
+**서연**: *서연은 다시 켜진 알림 화면과 맞은편 얼굴을 번갈아 본다. 입가에 남아 있던 미소가 사라진다.* 어제 일보다 지금 말이 더 걸려.
 
 ---
 
@@ -18575,7 +18575,7 @@
 - 배경: `room_school.png`
 - 배경톤: `cold`
 - 선택지:
-  1. "숨기지 않고 어젯밤 일을 말한다" → `morning5_caught_yuna_honest` | Yuna -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_yuna`
+  1. "어젯밤 일을 그대로 말한다" → `morning5_caught_yuna_honest` | Yuna -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_yuna`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_yuna_lie` | Yuna -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_yuna`
 
 - 캐릭터: `yuna_sad.png`
@@ -18608,7 +18608,7 @@
 - 타입: `group_free_talk`
 - 다음: `morning5_after_counteroffer`
 
-**두 사람**: *두 사람의 시선이 한꺼번에 닿는다. 어젯밤은 대체 뭐였는지, 처음부터 둘 다 붙잡아 둔 건지. 어느 쪽도 얼버무린 대답으로 물러날 얼굴이 아니다.*
+**두 사람**: *두 사람의 시선이 한꺼번에 닿는다. 어젯밤은 대체 뭐였는지, 처음부터 둘 다 붙잡아 둔 건지.*
 
 ---
 
@@ -21262,7 +21262,7 @@
 - 다음: `after5_last_chance_2_s`
 
 - 캐릭터: `dain_sad.png`
-**다인**: *눈가를 문지른다. 웃음은 그대로인데, 손등에 물기가 묻는다.*
+**다인**: *눈가를 문지른다. 손등에 물기가 묻는다.*
 
 ---
 
@@ -21587,7 +21587,7 @@
 - 다음: `after5_confess_react_yuna_c`
 
 - 캐릭터: `yuna_shy.png`
-**유나**: *책을 내려놓는다. 손이 떨린다.*
+**유나**: *책을 내려놓다 모서리를 다시 쥔다.*
 
 ---
 
@@ -21650,7 +21650,7 @@
 - 다음: `ending_start`
 
 - 캐릭터: `yuna_normal.png`
-**{name}**: *그렇게 — 학교를 벗어나 걸었다.*
+**{name}**: *교문 밖으로 나왔다.*
 
 ---
 
@@ -21668,7 +21668,7 @@
 - 다음: `after5_confess_fail_walk_2`
 
 - 캐릭터: `없음`
-**{name}**: *더 할 말은 떠오르지 않았다. 해가 더 내려앉고 우리는 잠시 같은 방향으로 걷기만 했다.*
+**{name}**: *해가 더 내려앉는다. 같은 쪽으로 걷기만 한다.*
 
 ---
 
@@ -21705,7 +21705,7 @@
 - 다음: `after5_harem_walk_2`
 
 - 캐릭터: `없음`
-**{name}**: *아무도 먼저 말을 꺼내지 못한 채, 우리는 학교 뒤편을 벗어났다.*
+**{name}**: *학교 뒤편까지 아무도 먼저 말하지 않는다.*
 
 ---
 
@@ -22238,7 +22238,7 @@
 - 다음: `mayhem_7`
 
 - 캐릭터: `없음`
-**{name}**: *좋다는 말은 남았지만 대화방마다 읽지 않은 질문이 쌓였다.*
+**{name}**: *대화방마다 읽지 않은 질문이 쌓여 있다.*
 
 ---
 
@@ -22329,7 +22329,7 @@
 - 다음: `harem_7`
 
 - 캐릭터: `없음`
-**{name}**: *고개를 끄덕인다. 세 사람은 각자 다른 방향으로 걸어가고 {name}은 그 자리에 남는다.*
+**{name}**: *세 사람은 각자 다른 방향으로 걸어가고 {name}은 그 자리에 남는다.*
 
 ---
 
@@ -22356,7 +22356,7 @@
 - 다음: `hidden_dual_route_choice`
 
 - 캐릭터: `없음`
-**{name}**: *행사 정리를 마치며 문예부 합평본과 응급처치 카드를 가방에 넣는다. 몇 년 뒤 어떤 기억으로 돌아올지는 아직 모른다.*
+**{name}**: *행사 정리를 마치며 문예부 합평본과 응급처치 카드를 가방에 넣는다.*
 
 ---
 
@@ -22392,7 +22392,7 @@
 - 다음: `hidden_perfect_homeroom_1b`
 
 - 캐릭터: `없음`
-**{name}**: *졸업식 날. 담임은 추천서 사본과 독서 기록을 건넸다. 마지막까지 교사다운 작별이었다.*
+**{name}**: *졸업식 날. 담임은 추천서 사본과 독서 기록을 건넸다.*
 
 ---
 
@@ -22997,7 +22997,7 @@
 - 다음: `hidden_bitter_homeroom_3`
 
 - 캐릭터: `teacher_normal.png`
-**{name}**: *편지 모서리가 반듯하게 펴진 채 다시 돌아온다. 원고를 읽어 준 일과 늦은 상담들이 다른 뜻은 아니었냐고 묻는다.*
+**{name}**: *편지 모서리가 반듯하게 펴진 채 다시 돌아온다.*
 
 ---
 
@@ -23051,7 +23051,7 @@
 - 다음: `day5_teacher_ending_freetalk_router`
 
 - 캐릭터: `teacher_smile.png`
-**{name}**: *졸업 후의 시간이 이어진다. 카페 테이블 위에는 완성된 원고와 커피 두 잔이 놓여 있다.*
+**{name}**: *카페 테이블 위에는 완성된 원고와 커피 두 잔이 놓여 있다.*
 
 ---
 
@@ -23777,7 +23777,7 @@
 - 다음: `day5_nurse_ending_freetalk_router`
 
 - 캐릭터: `nurse_normal.png`
-**{name}**: *졸업 후의 시간이 이어진다. 집에서 정리를 마친 그녀가 맞은편 자리를 비워 둔다.*
+**{name}**: *집에서 정리를 마친 그녀가 맞은편 자리를 비워 둔다.*
 
 ---
 
@@ -25085,7 +25085,7 @@
 - 다음: `true_epilogue_3`
 
 - 캐릭터: `없음`
-**{name}**: *교복은 뻣뻣했고 벚꽃은 재채기였고 교문 앞에서 뭘 해야 할지 몰랐다.*
+**{name}**: *교복은 뻣뻣했다. 벚꽃은 코만 자극했다. 교문 앞에서 손은 주머니에 들어갔다.*
 
 ---
 
@@ -25094,7 +25094,7 @@
 - 다음: `true_epilogue_4`
 
 - 캐릭터: `없음`
-**{name}**: *돌아보면 시작은 꽤 빨랐다. 달력에는 5칸만 지나 있었다.*
+**{name}**: *달력에는 5칸만 지나 있었다.*
 
 ---
 
@@ -25312,7 +25312,7 @@
 - 다음: `day5_seo_ending_freetalk_router`
 
 - 캐릭터: `seyoun_normal.png`
-**{name}**: *엔딩 뒤의 시간은 다시 익숙한 학교 옥상으로 이어진다. 이번에는 정해진 대사도, 다음 장면도 없다.*
+**{name}**: *옥상. 열린 문 옆에 화분 빈자리가 있다.*
 
 ---
 
@@ -25622,7 +25622,7 @@
 - 다음: `good_epilogue_2_dain`
 
 - 캐릭터: `없음`
-**{name}**: *다인에게서 메시지가 왔다. '내일 아침 재활 산책 같이 할 사람?' 평소보다 조심스러운 문장이다.*
+**{name}**: *다인에게서 메시지가 왔다. '내일 아침 재활 산책 같이 할 사람?'*
 
 ---
 

@@ -65,7 +65,7 @@
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",
-        "text": "*Sie nennt es ein Geheimnis, doch die Knöchel der Hand am Schubladengriff sind weiß.*",
+        "text": "*Die Knöchel der Hand am Schubladengriff sind weiß.*",
         "choices": [
             "Sie haben viele Geheimnisse. Können Sie mir nicht eins verraten?",
             "Ja, ich hab nichts gesehen"
@@ -262,7 +262,7 @@
     },
     "after2_seo_4_b": {
         "name": "Seoyeon",
-        "text": "*Statt \"bitte\" zu sagen, dreht sie das Klemmbrett zu {name}. Ganz oben auf der Aufgabenliste ist eine Zeile leer.*"
+        "text": "*Sie dreht das Klemmbrett zu {name}. Ganz oben auf der Aufgabenliste ist eine Zeile leer.*"
     },
     "after2_seo_5": {
         "name": "{name}",
@@ -274,7 +274,7 @@
     },
     "after2_seo_6_b": {
         "name": "{name}",
-        "text": "*Sie hat ein Talent dafür, Bitten wie Befehle klingen zu lassen. Wir fangen mit dem Sortieren an. Veranstaltungsbudgets, Clubanträge. Ein ordentlicher Stapel.*"
+        "text": "*Wir fangen mit dem Sortieren an. Veranstaltungsbudgets, Clubanträge. Ein ordentlicher Stapel.*"
     },
     "after2_seo_7": {
         "name": "Seoyeon",
@@ -543,7 +543,7 @@
     },
     "after2_yuna_everyday_react_b": {
         "name": "{name}",
-        "text": "*Das hört sich nicht nach einer Erlaubnis an, aber Yuna entfernt das Lesezeichen nicht.*"
+        "text": "*Yuna lässt das Lesezeichen stecken und bleibt auf derselben Seite.*"
     },
     "after2_yuna_quiet": {
         "name": "Yuna",
@@ -596,7 +596,7 @@
     },
     "minsu_warn_4_b": {
         "name": "{name}",
-        "text": "*Sein Ton ist scherzhaft, doch Minsu behält die Fußgängerampel vor dem Schultor im Blick.*"
+        "text": "*Minsu behält die Fußgängerampel vor dem Schultor im Blick.*"
     },
     "minsu_warn_5": {
         "name": "{name}",

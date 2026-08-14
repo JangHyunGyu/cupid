@@ -334,7 +334,7 @@
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
-        "text": "*Devant la porte, je reprends mon souffle. Entrons nous reposer un peu. Je pose la main sur la poignée ; le métal est froid.*"
+        "text": "*Devant la porte, je reprends mon souffle et pose la main sur la poignée. Le métal est froid.*"
     },
     "after_nurse_enter_1": {
         "name": "{name}",
@@ -525,7 +525,7 @@
     },
     "after_nurse_skip": {
         "name": "{name}",
-        "text": "*J'ai assez arpenté l'école pour aujourd'hui. Je ferais mieux de rentrer me reposer.*"
+        "text": "*Je marche vers le portail.*"
     },
     "after_nurse_enter_trap": {
         "name": "Infirmière",

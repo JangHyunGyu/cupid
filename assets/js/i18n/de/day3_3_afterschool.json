@@ -156,7 +156,7 @@
     },
     "after3_seo_correct_2": {
         "name": "{name}",
-        "text": "*Ich beuge mich hinunter und tue so, als suchte ich einen Stift. Absichtlich langsam taste ich unter dem Schreibtisch herum, ohne ihr in die Augen zu sehen. Sobald sich unsere Blicke treffen, fliegt die Lüge auf.*"
+        "text": "*Ich beuge mich hinunter und tue so, als suchte ich einen Stift. Absichtlich langsam taste ich unter dem Schreibtisch herum, ohne ihr in die Augen zu sehen.*"
     },
     "after3_seo_correct_3": {
         "name": "{name}",
@@ -604,7 +604,7 @@
     },
     "after3_dain_freetalk": {
         "name": "Dain",
-        "text": "*Sie zieht die Handgelenkbandage zurecht und zwingt sich zu einem Lächeln.* Heute rede ich zuerst.",
+        "text": "*Sie zieht die Handgelenkbandage zurecht; ihr Mundwinkel hebt sich einen halben Schlag zu spät.* Heute rede ich zuerst.",
         "context": "Tag 3 nach der Schule, direkt nach einem Gespräch mit Dain. Sie versucht, dem Protagonisten mit ihrer gewohnten Energie zu begegnen, doch Verletzung und Unsicherheit bleiben, und sie möchte verstehen, für welche Beziehungen der Protagonist sich entschieden hat.",
         "personality": "Dain ist eine energiegeladene und direkte Volleyballspielerin. Humor und Aufrichtigkeit können sich natürlich zeigen, wenn sie ausdrückt, was sie fühlt und was sie über die Beziehung wissen möchte."
     },

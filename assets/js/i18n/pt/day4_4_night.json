@@ -15,32 +15,50 @@
     "day4_teacher_seoyeon_counteroffer": {
         "name": "Seoyeon",
         "text": "*Quando vou sair da escola depois de me despedir da professora, Seoyeon está esperando perto da escada do terraço. Ela sorri, mas aperta com força a manga do uniforme.* Ultimamente você só olha para a professora. Só por hoje, não pode olhar para mim sem ver a presidente do grêmio nem a aluna exemplar?",
-        "choices": ["Cumprir a promessa feita à professora e ir embora", "Seguir Seoyeon até o terraço e segurar sua mão"]
+        "choices": [
+            "Cumprir a promessa feita à professora e ir embora",
+            "Seguir Seoyeon até o terraço e segurar sua mão"
+        ]
     },
     "day4_teacher_dain_counteroffer": {
         "name": "Dain",
         "text": "*Depois de prometer à professora que mandaria uma mensagem ao chegar, passo pelo ginásio. Dain está encostada na saída de emergência escura, mexendo na fita do joelho.* Ultimamente você só vai atrás da professora. Recebe dez saques meus. Quando acabarmos... me abraça hoje.",
-        "choices": ["Escrever à professora que estou voltando", "Entrar no ginásio e aceitar o pedido de Dain"]
+        "choices": [
+            "Escrever à professora que estou voltando",
+            "Entrar no ginásio e aceitar o pedido de Dain"
+        ]
     },
     "day4_teacher_yuna_counteroffer": {
         "name": "Yuna",
         "text": "*Logo depois de me despedir da professora, Yuna manda uma foto do anexo. Duas cadeiras vazias estão lado a lado, com a jaqueta dela sobre uma delas.* Parece que você fica mais à vontade ao lado da professora. Mas, se for embora hoje, vou me sentir abandonada de novo.",
-        "choices": ["Responder à professora e voltar para casa", "Ir ao anexo e ficar com Yuna"]
+        "choices": [
+            "Responder à professora e voltar para casa",
+            "Ir ao anexo e ficar com Yuna"
+        ]
     },
     "day4_nurse_seoyeon_counteroffer": {
         "name": "Seoyeon",
         "text": "*No caminho da enfermaria até o portão, Seoyeon bloqueia a escada do terraço. Os lábios forçam um sorriso enquanto os dedos amassam a manga do uniforme.* Ultimamente você só visita a enfermeira. Só por hoje, não pode olhar para mim sem ver a presidente do grêmio nem a aluna exemplar?",
-        "choices": ["Responder à enfermeira e ir embora", "Seguir Seoyeon até o terraço e segurar sua mão"]
+        "choices": [
+            "Responder à enfermeira e ir embora",
+            "Seguir Seoyeon até o terraço e segurar sua mão"
+        ]
     },
     "day4_nurse_dain_counteroffer": {
         "name": "Dain",
         "text": "*Quando fecho a porta da enfermaria, Dain está junto à saída de emergência do ginásio. Ela descola e cola novamente a fita do joelho sem olhar para mim.* Ultimamente você só vai atrás da enfermeira. Recebe dez saques meus. Quando acabarmos... me abraça hoje.",
-        "choices": ["Escrever à enfermeira que estou voltando", "Entrar no ginásio e aceitar o pedido de Dain"]
+        "choices": [
+            "Escrever à enfermeira que estou voltando",
+            "Entrar no ginásio e aceitar o pedido de Dain"
+        ]
     },
     "day4_nurse_yuna_counteroffer": {
         "name": "Yuna",
         "text": "*Depois que saio da enfermaria, Yuna manda uma foto do anexo. A jaqueta dela está sobre uma das duas cadeiras vazias.* Parece que você fica mais à vontade ao lado da enfermeira. Mas, se for embora hoje, vou me sentir abandonada de novo.",
-        "choices": ["Responder à enfermeira e voltar para casa", "Ir ao anexo e ficar com Yuna"]
+        "choices": [
+            "Responder à enfermeira e voltar para casa",
+            "Ir ao anexo e ficar com Yuna"
+        ]
     },
     "day4_adult_counteroffer_accept_seoyeon": {
         "name": "{name}",
@@ -52,7 +70,7 @@
     },
     "day4_adult_counteroffer_accept_yuna": {
         "name": "{name}",
-        "text": "*Yuna se aproxima até ficar diante de {name} e apoia uma mão na estante. Deixa a jaqueta cair abaixo de um ombro e, com a outra mão, puxa o decote da blusa por baixo. Entre o ombro nu e a tatuagem, seus olhos vermelhos não desviam uma única vez. O celular vibra de novo sobre a mesa. Muito tempo depois, eles saem do anexo e voltam para casa.*"
+        "text": "*Yuna se aproxima até ficar diante de {name} e apoia uma mão na estante. Deixa a jaqueta cair abaixo de um ombro e, com a outra mão, puxa o decote da blusa por baixo. Entre o ombro nu e a tatuagem, seus olhos vermelhos ficam na altura dos de {name}. O celular vibra de novo sobre a mesa. Muito tempo depois, eles saem do anexo e voltam para casa.*"
     },
     "day4_adult_night_regret_target_branch": {},
     "day4_adult_night_regret_teacher": {
@@ -324,7 +342,7 @@
     },
     "wall_seo_yuna_tempt_accept": {
         "name": "{name}",
-        "text": "*Yuna chega bem perto de {name} e apoia uma mão na estante. Deixa o blazer escorregar abaixo de um ombro e, com a outra mão, puxa para baixo o decote da blusa escura por baixo. Com o ombro nu e as tatuagens expostas, seus olhos vermelhos não se desviam nem por um instante. A mensagem de Seoyeon — 'Você também chegou?' — não sai do topo da tela.*"
+        "text": "*Yuna chega bem perto de {name} e apoia uma mão na estante. Deixa o blazer escorregar abaixo de um ombro e, com a outra mão, puxa para baixo o decote da blusa escura por baixo. Entre o ombro nu e a tatuagem, seus olhos vermelhos ficam na altura dos de {name}. A mensagem de Seoyeon — 'Você também chegou?' — não sai do topo da tela.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -638,7 +656,7 @@
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*Yuna chega bem perto de {name} e apoia uma mão na estante. Deixa o blazer escorregar abaixo de um ombro e, com a outra mão, puxa para baixo o decote da blusa escura por baixo. Com o ombro nu e as tatuagens expostas, seus olhos vermelhos não se desviam nem por um instante. O 'Cheguei em casa!' de Dain não sai do topo da tela.*"
+        "text": "*Yuna chega bem perto de {name} e apoia uma mão na estante. Deixa o blazer escorregar abaixo de um ombro e, com a outra mão, puxa para baixo o decote da blusa escura por baixo. Entre o ombro nu e a tatuagem, seus olhos vermelhos ficam na altura dos de {name}. O 'Cheguei em casa!' de Dain não sai do topo da tela.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -964,13 +982,13 @@
     },
     "wall_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Ela seca os olhos úmidos com as costas da mão e parece mais calma.* Não vá ainda. Vamos conversar um pouco mais.",
+        "text": "*Ela seca os olhos úmidos com as costas da mão e olha para {name}.* Não vá ainda. Vamos conversar um pouco mais.",
         "context": "É a noite do dia 4, logo depois de Seoyeon falar sobre o conflito familiar e a pressão para ser perfeita. Se o protagonista aceitou ou adiou a confissão e o consolo que compartilharam são fatos salvos; respeite-os. Não declare que uma conversa curou a dor dela nem reavalie o relacionamento.",
         "personality": "Seoyeon é serena e responsável, mas por enquanto baixou a guarda. Fala com sinceridade sem responsabilizar a outra pessoa por consertá-la, mantendo a franqueza habitual e uma ternura nova e cuidadosa."
     },
     "wall_dain_freetalk": {
         "name": "Dain",
-        "text": "*Ela solta o ar devagar e acompanha o passo do protagonista.* Hoje... vamos só caminhar juntos. Também podemos conversar.",
+        "text": "*Ela solta o ar devagar e acompanha o passo de {name}.* Hoje... vamos só caminhar juntos. Também podemos conversar.",
         "context": "É a noite do dia 4, depois de Dain revelar a verdade sobre a lesão no joelho e o sonho que ficou parado com ela. Se o protagonista aceitou ou adiou a confissão e o consolo compartilhado são fatos fixos. Não cure a lesão de repente, não decida o futuro por ela nem mude o estado atual do relacionamento.",
         "personality": "Dain é franca e física e está tentando não esconder os sentimentos. Está mais quieta que o normal sem perder o brilho, reconhecendo a incerteza enquanto encontra as próximas palavras junto do protagonista."
     },

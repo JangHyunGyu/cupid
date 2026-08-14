@@ -5,7 +5,7 @@
     },
     "hidden_dual_route_1": {
         "name": "{name}",
-        "text": "*Al terminar de recoger el evento, guardo en la mochila la copia para la sesión de crítica y la tarjeta de primeros auxilios. Aún no sé en qué clase de recuerdo se convertirán dentro de unos años.*"
+        "text": "*Al terminar de recoger el evento, guardo en la mochila la copia para la sesión de crítica y la tarjeta de primeros auxilios.*"
     },
     "hidden_dual_route_choice": {
         "name": "{name}",
@@ -18,7 +18,7 @@
     "hidden_perfect_homeroom_check": {},
     "hidden_perfect_homeroom_1": {
         "name": "{name}",
-        "text": "*El día de la graduación, la tutora me entrega una copia de la carta de recomendación y mi registro de lecturas. Hasta el final, se despide como profesora.*"
+        "text": "*El día de la graduación, la tutora me entrega una copia de la carta de recomendación y mi registro de lecturas.*"
     },
     "hidden_perfect_homeroom_1b": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "hidden_bitter_homeroom_2": {
         "name": "{name}",
-        "text": "*La carta regresa con las esquinas bien alisadas. Queda una pregunta: ¿leer los manuscritos y aquellas consultas hasta tarde no significaron algo más?*"
+        "text": "*La carta regresa con las esquinas bien alisadas.*"
     },
     "hidden_bitter_homeroom_3": {
         "name": "Profesora",
@@ -868,11 +868,11 @@
     },
     "true_epilogue_2": {
         "name": "{name}",
-        "text": "*El uniforme estaba rígido, los cerezos me hacían estornudar y, frente a la entrada de la escuela, no sabía qué hacer.*"
+        "text": "*El uniforme estaba rígido. Los cerezos solo me picaban la nariz. Frente a la entrada, las manos se metieron en los bolsillos.*"
     },
     "true_epilogue_3": {
         "name": "{name}",
-        "text": "*Al mirar atrás, el comienzo llegó bastante pronto. En el calendario solo habían pasado cinco casillas.*"
+        "text": "*En el calendario solo habían pasado cinco casillas.*"
     },
     "true_epilogue_4": {},
     "true_epilogue_4_seo": {
@@ -1101,7 +1101,7 @@
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Llega un mensaje de Dain: «¿Alguien se apunta mañana por la mañana a un paseo de rehabilitación?». La frase es más prudente de lo habitual.*"
+        "text": "*Llega un mensaje de Dain: «¿Alguien se apunta mañana por la mañana a un paseo de rehabilitación?»*"
     },
     "good_epilogue_2_dain": {
         "name": "{name}",
@@ -1201,7 +1201,7 @@
     },
     "mayhem_6": {
         "name": "{name}",
-        "text": "*Las palabras de afecto permanecen, pero en cada chat se acumulan preguntas sin responder.*"
+        "text": "*En cada chat se acumulan preguntas sin responder.*"
     },
     "mayhem_7": {
         "name": "{name}",
@@ -1241,7 +1241,7 @@
     },
     "harem_6": {
         "name": "{name}",
-        "text": "*Asiento. Las tres se alejan en direcciones distintas y {name} se queda en el mismo sitio.*"
+        "text": "*Las tres se alejan en direcciones distintas y {name} se queda en el mismo sitio.*"
     },
     "harem_7": {
         "name": "{name}",
@@ -1257,7 +1257,7 @@
     },
     "day5_seo_ending_freetalk_intro": {
         "name": "{name}",
-        "text": "*Después del final, el tiempo los lleva de nuevo a la conocida azotea de la escuela. Esta vez no hay diálogo escrito ni escena siguiente.*"
+        "text": "*La azotea. Junto a la puerta abierta queda el hueco de una maceta.*"
     },
     "day5_yuna_ending_freetalk_intro": {
         "name": "{name}",
@@ -1269,11 +1269,11 @@
     },
     "day5_teacher_ending_freetalk_intro": {
         "name": "{name}",
-        "text": "*La vida después de la graduación continúa. Sobre la mesa de la cafetería descansan un manuscrito terminado y dos cafés.*"
+        "text": "*Sobre la mesa de la cafetería descansan un manuscrito terminado y dos cafés.*"
     },
     "day5_nurse_ending_freetalk_intro": {
         "name": "{name}",
-        "text": "*La vida después de la graduación continúa. En casa, ella termina de ordenar y deja libre el asiento de enfrente.*"
+        "text": "*En casa, ella termina de ordenar y deja libre el asiento de enfrente.*"
     },
     "day5_credits": {
         "name": "",

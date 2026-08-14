@@ -889,7 +889,7 @@ class GalleryData {
             ,
                 name: '혼자 남은 방',
                 character: null,
-                description: '어두운 방, 꺼진 핸드폰, 창밖의 도시 불빛만이 유일한 빛',
+                description: '어두운 방. 꺼진 핸드폰. 창밖에 가로등.',
                 file: 'assets/images/background/ending_alone.png',
                 thumbnail: 'assets/images/background/ending_alone.png'
             },
@@ -939,7 +939,7 @@ class GalleryData {
             { id: 'event_temptation_yuna', name: '숨을 곳 없는 거리', character: '유나', description: '낡은 도서관 은신처에서 유나가 책장에 손을 짚고, 물러서지 않은 채 대답을 기다린 순간', file: 'assets/images/background/event_temptation_yuna.png', thumbnail: 'assets/images/background/event_temptation_yuna.png',
                 unlockHint: "4일차에 라이벌 유나의 제안을 받아들이기"
             },
-            { id: 'event_temptation_dain', name: '불 꺼진 체육관', character: '다인', description: '훈련이 끝난 어두운 체육관에서 다인이 장난기 없는 눈으로 한 걸음 다가온 순간', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
+            { id: 'event_temptation_dain', name: '불 꺼진 체육관', character: '다인', description: '훈련이 끝난 어두운 체육관에서 다인이 공을 내린 채 한 걸음 다가온 순간', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
                 unlockHint: "4일차에 라이벌 다인의 제안을 받아들이기"
             },
             { id: 'ending_bittersweet_teacher', name: '돌아온 편지', character: '담임선생님', description: '졸업식 뒤 빈 교실, 담임이 추천서와 편지를 책상 위에 돌려놓고 작별을 택한 순간', file: 'assets/images/background/ending_bittersweet_teacher.png', thumbnail: 'assets/images/background/ending_bittersweet_teacher.png',
@@ -1007,7 +1007,7 @@ class GalleryData {
             { id: 'ending_harem', name: 'Different Answers', character: null, description: 'The moment an honest answer is given in front of all three and everyone\'s boundaries become clear', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png',
                 unlockHint: "Reach the Different Answers Ending"
             },
-            { id: 'ending_alone', name: 'The Empty Room', character: null, description: 'A dark room, a switched-off phone, and the city lights outside as the only illumination', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png',
+            { id: 'ending_alone', name: 'The Empty Room', character: null, description: 'A dark room. A switched-off phone. A streetlight outside the window.', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png',
                 unlockHint: "Reach the Alone Ending"
             },
             { id: 'ending_friend', name: 'Our Graduation Photo', character: null, description: 'A five-person group selfie taken in the classroom on graduation day', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png',
@@ -1049,7 +1049,7 @@ class GalleryData {
             { id: 'event_temptation_yuna', name: 'Nowhere Left to Hide', character: 'Yuna', description: 'In the old library hideout, Yuna braces a hand against the shelf and waits for an answer without backing away', file: 'assets/images/background/event_temptation_yuna.png', thumbnail: 'assets/images/background/event_temptation_yuna.png',
                 unlockHint: "Accept rival Yuna\'s offer on Day 4"
             },
-            { id: 'event_temptation_dain', name: 'The Darkened Gym', character: 'Dain', description: 'After practice, Dain steps closer in the darkened gym with none of her usual playfulness in her eyes', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
+            { id: 'event_temptation_dain', name: 'The Darkened Gym', character: 'Dain', description: 'After practice, Dain steps closer in the darkened gym with the ball lowered', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
                 unlockHint: "Accept rival Dain\'s offer on Day 4"
             },
             { id: 'ending_bittersweet_teacher', name: 'The Returned Letter', character: 'Homeroom Teacher', description: 'After graduation in an empty classroom, the homeroom teacher leaves the recommendation and letter on the desk and chooses goodbye', file: 'assets/images/background/ending_bittersweet_teacher.png', thumbnail: 'assets/images/background/ending_bittersweet_teacher.png',
@@ -1117,7 +1117,7 @@ class GalleryData {
             { id: 'ending_harem', name: 'Respuestas distintas', character: null, description: 'El momento en que, frente a las tres, se expresa una respuesta sincera y quedan claros los límites de cada persona', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png',
                 unlockHint: "Alcanza el final de las respuestas distintas"
             },
-            { id: 'ending_alone', name: 'La habitación vacía', character: null, description: 'Una habitación oscura, un teléfono apagado y las luces de la ciudad al otro lado de la ventana como única iluminación', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png',
+            { id: 'ending_alone', name: 'La habitación vacía', character: null, description: 'Una habitación oscura. Un teléfono apagado. Una farola al otro lado de la ventana.', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png',
                 unlockHint: "Alcanza el final en solitario"
             },
             { id: 'ending_friend', name: 'Nuestra foto de graduación', character: null, description: 'Un selfi de cinco personas tomado en el aula el día de la graduación', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png',
@@ -1159,7 +1159,7 @@ class GalleryData {
             { id: 'event_temptation_yuna', name: 'Sin lugar donde esconderse', character: 'Yuna', description: 'En el escondite de la vieja biblioteca, Yuna apoya una mano en la estantería y espera una respuesta sin retroceder', file: 'assets/images/background/event_temptation_yuna.png', thumbnail: 'assets/images/background/event_temptation_yuna.png',
                 unlockHint: "Acepta la propuesta de la rival Yuna el día 4"
             },
-            { id: 'event_temptation_dain', name: 'El gimnasio a oscuras', character: 'Dain', description: 'Tras el entrenamiento, Dain da un paso hacia ti en el gimnasio a oscuras sin una pizca de broma en la mirada', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
+            { id: 'event_temptation_dain', name: 'El gimnasio a oscuras', character: 'Dain', description: 'Tras el entrenamiento, Dain da un paso hacia ti en el gimnasio a oscuras con el balón bajado', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
                 unlockHint: "Acepta la propuesta de la rival Dain el día 4"
             },
             { id: 'ending_bittersweet_teacher', name: 'La carta devuelta', character: 'Profesora', description: 'Tras la graduación, en un aula vacía, la profesora deja la recomendación y la carta sobre el escritorio y elige despedirse', file: 'assets/images/background/ending_bittersweet_teacher.png', thumbnail: 'assets/images/background/ending_bittersweet_teacher.png',
@@ -1227,7 +1227,7 @@ class GalleryData {
             { id: 'ending_harem', name: '食い違う答え', character: null, description: '三人を前に、率直な答えとそれぞれの境界線を確かめた瞬間', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png',
                 unlockHint: "「食い違う答え」エンドに到達"
             },
-            { id: 'ending_alone', name: 'ひとりきりの部屋', character: null, description: '静かな部屋、充電器につないで画面を消したスマートフォン。秒針の音だけが残る', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png',
+            { id: 'ending_alone', name: 'ひとりきりの部屋', character: null, description: '暗い部屋。消えたスマホ。窓の外の街灯。', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png',
                 unlockHint: "ひとりエンドに到達"
             },
             { id: 'ending_friend', name: '俺たちの卒業写真', character: null, description: '卒業式の日、学校の友人たちと撮った集合写真', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png',
@@ -1269,7 +1269,7 @@ class GalleryData {
             { id: 'event_temptation_yuna', name: '隠れられない距離', character: 'ユナ', description: '古い図書館の隠れ家で、ユナが本棚に手をつき、一歩も引かずに答えを待った瞬間', file: 'assets/images/background/event_temptation_yuna.png', thumbnail: 'assets/images/background/event_temptation_yuna.png',
                 unlockHint: "4日目にライバルのユナの誘いを受け入れる"
             },
-            { id: 'event_temptation_dain', name: '消灯後の体育館', character: 'ダイン', description: '練習後の暗い体育館で、ダインが冗談の消えた目のまま一歩近づいた瞬間', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
+            { id: 'event_temptation_dain', name: '消灯後の体育館', character: 'ダイン', description: '練習後の暗い体育館で、ダインがボールを下ろしたまま一歩近づいた瞬間', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
                 unlockHint: "4日目にライバルのダインの誘いを受け入れる"
             },
             { id: 'ending_bittersweet_teacher', name: '返された手紙', character: '担任の先生', description: '卒業式後の誰もいない教室で、担任の先生が推薦状と手紙を机に戻し、別れを選んだ瞬間', file: 'assets/images/background/ending_bittersweet_teacher.png', thumbnail: 'assets/images/background/ending_bittersweet_teacher.png',
@@ -1337,7 +1337,7 @@ class GalleryData {
             { id: 'ending_harem', name: 'Des réponses divergentes', character: null, description: 'Le moment où, face aux trois, une réponse sincère est donnée et les limites de chacun deviennent claires', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png',
                 unlockHint: "Atteindre la fin des réponses divergentes"
             },
-            { id: 'ending_alone', name: 'La chambre vide', character: null, description: 'Une chambre sombre, un téléphone éteint et, pour seule lumière, les lueurs de la ville derrière la fenêtre', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png',
+            { id: 'ending_alone', name: 'La chambre vide', character: null, description: 'Une chambre sombre. Un téléphone éteint. Un lampadaire derrière la fenêtre.', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png',
                 unlockHint: "Atteindre la fin en solitaire"
             },
             { id: 'ending_friend', name: 'Notre photo de remise des diplômes', character: null, description: 'Un selfie à cinq pris dans la salle de classe le jour de la remise des diplômes', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png',
@@ -1379,7 +1379,7 @@ class GalleryData {
             { id: 'event_temptation_yuna', name: 'Nulle part où se cacher', character: 'Yuna', description: 'Dans la cachette de la vieille bibliothèque, Yuna pose une main sur l’étagère et attend une réponse sans reculer', file: 'assets/images/background/event_temptation_yuna.png', thumbnail: 'assets/images/background/event_temptation_yuna.png',
                 unlockHint: "Accepter la proposition de la rivale Yuna au jour 4"
             },
-            { id: 'event_temptation_dain', name: 'Le gymnase dans le noir', character: 'Dain', description: 'Après l’entraînement, Dain fait un pas de plus dans le gymnase assombri, le regard dénué de toute plaisanterie', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
+            { id: 'event_temptation_dain', name: 'Le gymnase dans le noir', character: 'Dain', description: 'Après l’entraînement, Dain fait un pas de plus dans le gymnase assombri, le ballon baissé', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
                 unlockHint: "Accepter la proposition de la rivale Dain au jour 4"
             },
             { id: 'ending_bittersweet_teacher', name: 'La lettre rendue', character: 'Professeure principale', description: 'Après la remise des diplômes, dans une salle vide, la professeure pose la recommandation et la lettre sur le bureau et choisit les adieux', file: 'assets/images/background/ending_bittersweet_teacher.png', thumbnail: 'assets/images/background/ending_bittersweet_teacher.png',
@@ -1447,7 +1447,7 @@ class GalleryData {
             { id: 'ending_harem', name: 'Unterschiedliche Antworten', character: null, description: 'Der Moment, in dem vor allen dreien eine ehrliche Antwort gegeben wird und die Grenzen jedes Einzelnen klar werden', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png',
                 unlockHint: "Das Ende „Unterschiedliche Antworten“ erreichen"
             },
-            { id: 'ending_alone', name: 'Das leere Zimmer', character: null, description: 'Ein dunkles Zimmer, ein ausgeschaltetes Handy und die Lichter der Stadt vor dem Fenster als einzige Lichtquelle', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png',
+            { id: 'ending_alone', name: 'Das leere Zimmer', character: null, description: 'Ein dunkles Zimmer. Ein ausgeschaltetes Handy. Eine Straßenlaterne vor dem Fenster.', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png',
                 unlockHint: "Das Allein-Ende erreichen"
             },
             { id: 'ending_friend', name: 'Unser Abschlussfoto', character: null, description: 'Ein Gruppenselfie zu fünft, aufgenommen am Tag der Abschlussfeier im Klassenzimmer', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png',
@@ -1489,7 +1489,7 @@ class GalleryData {
             { id: 'event_temptation_yuna', name: 'Kein Versteck mehr', character: 'Yuna', description: 'Im Versteck der alten Bibliothek stützt Yuna eine Hand am Regal ab und wartet, ohne zurückzuweichen', file: 'assets/images/background/event_temptation_yuna.png', thumbnail: 'assets/images/background/event_temptation_yuna.png',
                 unlockHint: "Am 4. Tag das Angebot der Rivalin Yuna annehmen"
             },
-            { id: 'event_temptation_dain', name: 'Die dunkle Turnhalle', character: 'Dain', description: 'Nach dem Training kommt Dain in der dunklen Turnhalle einen Schritt näher, ohne den üblichen Schalk im Blick', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
+            { id: 'event_temptation_dain', name: 'Die dunkle Turnhalle', character: 'Dain', description: 'Nach dem Training kommt Dain in der dunklen Turnhalle einen Schritt näher, den Ball gesenkt', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
                 unlockHint: "Am 4. Tag das Angebot der Rivalin Dain annehmen"
             },
             { id: 'ending_bittersweet_teacher', name: 'Der zurückgegebene Brief', character: 'Klassenlehrerin', description: 'Nach der Abschlussfeier legt die Klassenlehrerin im leeren Klassenzimmer Empfehlung und Brief auf den Tisch zurück und entscheidet sich für den Abschied', file: 'assets/images/background/ending_bittersweet_teacher.png', thumbnail: 'assets/images/background/ending_bittersweet_teacher.png',
@@ -1557,7 +1557,7 @@ class GalleryData {
             { id: 'ending_harem', name: 'Respostas desencontradas', character: null, description: 'O momento em que, diante das três, uma resposta sincera é dada e os limites de cada pessoa ficam claros', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png',
                 unlockHint: "Alcance o final das respostas desencontradas"
             },
-            { id: 'ending_alone', name: 'O quarto vazio', character: null, description: 'Um quarto escuro, um celular desligado e as luzes da cidade do lado de fora como única iluminação', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png',
+            { id: 'ending_alone', name: 'O quarto vazio', character: null, description: 'Um quarto escuro. Um celular desligado. Um poste do lado de fora da janela.', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png',
                 unlockHint: "Alcance o final sozinho"
             },
             { id: 'ending_friend', name: 'Nossa foto de formatura', character: null, description: 'Uma selfie de cinco pessoas tirada na sala de aula no dia da formatura', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png',
@@ -1599,7 +1599,7 @@ class GalleryData {
             { id: 'event_temptation_yuna', name: 'Sem lugar para se esconder', character: 'Yuna', description: 'No esconderijo da biblioteca antiga, Yuna apoia a mão na estante e espera uma resposta sem recuar', file: 'assets/images/background/event_temptation_yuna.png', thumbnail: 'assets/images/background/event_temptation_yuna.png',
                 unlockHint: "Aceite a proposta da rival Yuna no dia 4"
             },
-            { id: 'event_temptation_dain', name: 'O ginásio às escuras', character: 'Dain', description: 'Depois do treino, Dain dá um passo à frente no ginásio escuro, sem qualquer brincadeira no olhar', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
+            { id: 'event_temptation_dain', name: 'O ginásio às escuras', character: 'Dain', description: 'Depois do treino, Dain dá um passo à frente no ginásio escuro, com a bola abaixada', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
                 unlockHint: "Aceite a proposta da rival Dain no dia 4"
             },
             { id: 'ending_bittersweet_teacher', name: 'A carta devolvida', character: 'Professora', description: 'Depois da formatura, numa sala vazia, a professora deixa a recomendação e a carta sobre a mesa e escolhe se despedir', file: 'assets/images/background/ending_bittersweet_teacher.png', thumbnail: 'assets/images/background/ending_bittersweet_teacher.png',
@@ -1643,8 +1643,8 @@ class GalleryData {
             { id: 'daily', name: '학교 일상', artist: 'Cupid OST', duration: '3:15', file: 'assets/audio/bgm/daily.mp3' },
             { id: 'daily2', name: '평화로운 오후', artist: 'Cupid OST', duration: '3:00', file: 'assets/audio/bgm/daily2.mp3' },
             { id: 'sunset1', name: '노을 지는 하교길', artist: 'Cupid OST', duration: '2:45', file: 'assets/audio/bgm/sunset1.mp3' },
-            { id: 'sunset2', name: '설레는 순간', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
-            { id: 'date', name: '두근두근 데이트', artist: 'Cupid OST', duration: '4:16', file: 'assets/audio/bgm/date.mp3' },
+            { id: 'sunset2', name: '노을 직전', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
+            { id: 'date', name: '약속 있는 오후', artist: 'Cupid OST', duration: '4:16', file: 'assets/audio/bgm/date.mp3' },
             { id: 'night1', name: '고요한 밤', artist: 'Cupid OST', duration: '3:20', file: 'assets/audio/bgm/night1.mp3' },
             { id: 'night2', name: '비밀스러운 밤', artist: 'Cupid OST', duration: '3:10', file: 'assets/audio/bgm/night2.mp3' },
             { id: 'mystery', name: '수상한 기운', artist: 'Cupid OST', duration: '5:16', file: 'assets/audio/bgm/mystery.mp3' },
@@ -1657,8 +1657,8 @@ class GalleryData {
             { id: 'daily', name: 'Everyday School Life', artist: 'Cupid OST', duration: '3:15', file: 'assets/audio/bgm/daily.mp3' },
             { id: 'daily2', name: 'Peaceful Afternoon', artist: 'Cupid OST', duration: '3:00', file: 'assets/audio/bgm/daily2.mp3' },
             { id: 'sunset1', name: 'The Walk Home at Sunset', artist: 'Cupid OST', duration: '2:45', file: 'assets/audio/bgm/sunset1.mp3' },
-            { id: 'sunset2', name: 'A Fluttering Moment', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
-            { id: 'date', name: 'Heart-Racing Date', artist: 'Cupid OST', duration: '4:16', file: 'assets/audio/bgm/date.mp3' },
+            { id: 'sunset2', name: 'Just Before Sunset', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
+            { id: 'date', name: 'An Afternoon With Plans', artist: 'Cupid OST', duration: '4:16', file: 'assets/audio/bgm/date.mp3' },
             { id: 'night1', name: 'Quiet Night', artist: 'Cupid OST', duration: '3:20', file: 'assets/audio/bgm/night1.mp3' },
             { id: 'night2', name: 'Secret Night', artist: 'Cupid OST', duration: '3:10', file: 'assets/audio/bgm/night2.mp3' },
             { id: 'mystery', name: 'Something in the Air', artist: 'Cupid OST', duration: '5:16', file: 'assets/audio/bgm/mystery.mp3' },
@@ -1671,8 +1671,8 @@ class GalleryData {
             { id: 'daily', name: 'Vida escolar', artist: 'Cupid OST', duration: '3:15', file: 'assets/audio/bgm/daily.mp3' },
             { id: 'daily2', name: 'Tarde tranquila', artist: 'Cupid OST', duration: '3:00', file: 'assets/audio/bgm/daily2.mp3' },
             { id: 'sunset1', name: 'Camino a casa al atardecer', artist: 'Cupid OST', duration: '2:45', file: 'assets/audio/bgm/sunset1.mp3' },
-            { id: 'sunset2', name: 'Un momento de emoción', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
-            { id: 'date', name: 'Una cita emocionante', artist: 'Cupid OST', duration: '4:16', file: 'assets/audio/bgm/date.mp3' },
+            { id: 'sunset2', name: 'Justo antes del atardecer', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
+            { id: 'date', name: 'Una tarde con cita', artist: 'Cupid OST', duration: '4:16', file: 'assets/audio/bgm/date.mp3' },
             { id: 'night1', name: 'Noche tranquila', artist: 'Cupid OST', duration: '3:20', file: 'assets/audio/bgm/night1.mp3' },
             { id: 'night2', name: 'Noche secreta', artist: 'Cupid OST', duration: '3:10', file: 'assets/audio/bgm/night2.mp3' },
             { id: 'mystery', name: 'Algo extraño en el aire', artist: 'Cupid OST', duration: '5:16', file: 'assets/audio/bgm/mystery.mp3' },
@@ -1685,8 +1685,8 @@ class GalleryData {
             { id: 'daily', name: '学校の日常', artist: 'Cupid OST', duration: '3:15', file: 'assets/audio/bgm/daily.mp3' },
             { id: 'daily2', name: '穏やかな午後', artist: 'Cupid OST', duration: '3:00', file: 'assets/audio/bgm/daily2.mp3' },
             { id: 'sunset1', name: '夕焼けの帰り道', artist: 'Cupid OST', duration: '2:45', file: 'assets/audio/bgm/sunset1.mp3' },
-            { id: 'sunset2', name: 'ときめきの瞬間', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
-            { id: 'date', name: 'ドキドキデート', artist: 'Cupid OST', duration: '4:16', file: 'assets/audio/bgm/date.mp3' },
+            { id: 'sunset2', name: '日没の直前', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
+            { id: 'date', name: '約束のある午後', artist: 'Cupid OST', duration: '4:16', file: 'assets/audio/bgm/date.mp3' },
             { id: 'night1', name: '静かな夜', artist: 'Cupid OST', duration: '3:20', file: 'assets/audio/bgm/night1.mp3' },
             { id: 'night2', name: '秘密の夜', artist: 'Cupid OST', duration: '3:10', file: 'assets/audio/bgm/night2.mp3' },
             { id: 'mystery', name: '怪しい気配', artist: 'Cupid OST', duration: '5:16', file: 'assets/audio/bgm/mystery.mp3' },
@@ -1699,8 +1699,8 @@ class GalleryData {
             { id: 'daily', name: 'Le quotidien au lycée', artist: 'Cupid OST', duration: '3:15', file: 'assets/audio/bgm/daily.mp3' },
             { id: 'daily2', name: 'Après-midi paisible', artist: 'Cupid OST', duration: '3:00', file: 'assets/audio/bgm/daily2.mp3' },
             { id: 'sunset1', name: 'Le chemin du retour au crépuscule', artist: 'Cupid OST', duration: '2:45', file: 'assets/audio/bgm/sunset1.mp3' },
-            { id: 'sunset2', name: 'Un instant d\'émoi', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
-            { id: 'date', name: 'Un rendez-vous palpitant', artist: 'Cupid OST', duration: '4:16', file: 'assets/audio/bgm/date.mp3' },
+            { id: 'sunset2', name: 'Juste avant le coucher du soleil', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
+            { id: 'date', name: 'Un après-midi avec un rendez-vous', artist: 'Cupid OST', duration: '4:16', file: 'assets/audio/bgm/date.mp3' },
             { id: 'night1', name: 'Nuit calme', artist: 'Cupid OST', duration: '3:20', file: 'assets/audio/bgm/night1.mp3' },
             { id: 'night2', name: 'Nuit secrète', artist: 'Cupid OST', duration: '3:10', file: 'assets/audio/bgm/night2.mp3' },
             { id: 'mystery', name: 'Une présence étrange', artist: 'Cupid OST', duration: '5:16', file: 'assets/audio/bgm/mystery.mp3' },
@@ -1713,8 +1713,8 @@ class GalleryData {
             { id: 'daily', name: 'Schulalltag', artist: 'Cupid OST', duration: '3:15', file: 'assets/audio/bgm/daily.mp3' },
             { id: 'daily2', name: 'Friedlicher Nachmittag', artist: 'Cupid OST', duration: '3:00', file: 'assets/audio/bgm/daily2.mp3' },
             { id: 'sunset1', name: 'Heimweg im Abendrot', artist: 'Cupid OST', duration: '2:45', file: 'assets/audio/bgm/sunset1.mp3' },
-            { id: 'sunset2', name: 'Ein Moment voller Herzklopfen', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
-            { id: 'date', name: 'Aufregendes Date', artist: 'Cupid OST', duration: '4:16', file: 'assets/audio/bgm/date.mp3' },
+            { id: 'sunset2', name: 'Kurz vor Sonnenuntergang', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
+            { id: 'date', name: 'Ein Nachmittag mit Verabredung', artist: 'Cupid OST', duration: '4:16', file: 'assets/audio/bgm/date.mp3' },
             { id: 'night1', name: 'Ruhige Nacht', artist: 'Cupid OST', duration: '3:20', file: 'assets/audio/bgm/night1.mp3' },
             { id: 'night2', name: 'Geheimnisvolle Nacht', artist: 'Cupid OST', duration: '3:10', file: 'assets/audio/bgm/night2.mp3' },
             { id: 'mystery', name: 'Eine seltsame Vorahnung', artist: 'Cupid OST', duration: '5:16', file: 'assets/audio/bgm/mystery.mp3' },
@@ -1727,8 +1727,8 @@ class GalleryData {
             { id: 'daily', name: 'Rotina escolar', artist: 'Cupid OST', duration: '3:15', file: 'assets/audio/bgm/daily.mp3' },
             { id: 'daily2', name: 'Tarde tranquila', artist: 'Cupid OST', duration: '3:00', file: 'assets/audio/bgm/daily2.mp3' },
             { id: 'sunset1', name: 'Volta para casa ao pôr do sol', artist: 'Cupid OST', duration: '2:45', file: 'assets/audio/bgm/sunset1.mp3' },
-            { id: 'sunset2', name: 'Um momento de emoção', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
-            { id: 'date', name: 'Encontro com o coração acelerado', artist: 'Cupid OST', duration: '4:16', file: 'assets/audio/bgm/date.mp3' },
+            { id: 'sunset2', name: 'Logo antes do pôr do sol', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
+            { id: 'date', name: 'Uma tarde com encontro', artist: 'Cupid OST', duration: '4:16', file: 'assets/audio/bgm/date.mp3' },
             { id: 'night1', name: 'Noite tranquila', artist: 'Cupid OST', duration: '3:20', file: 'assets/audio/bgm/night1.mp3' },
             { id: 'night2', name: 'Noite secreta', artist: 'Cupid OST', duration: '3:10', file: 'assets/audio/bgm/night2.mp3' },
             { id: 'mystery', name: 'Algo estranho no ar', artist: 'Cupid OST', duration: '5:16', file: 'assets/audio/bgm/mystery.mp3' },

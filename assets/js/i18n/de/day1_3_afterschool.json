@@ -334,7 +334,7 @@
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
-        "text": "*Vor der Tür bleibe ich stehen und atme einmal durch. Ich gehe nur kurz hinein und ruhe mich aus. Meine Hand legt sich auf die Klinke; das Metall ist kalt.*"
+        "text": "*Vor der Tür bleibe ich stehen, atme einmal durch und lege die Hand auf die Klinke. Das Metall ist kalt.*"
     },
     "after_nurse_enter_1": {
         "name": "{name}",
@@ -525,7 +525,7 @@
     },
     "after_nurse_skip": {
         "name": "{name}",
-        "text": "*Für heute bin ich genug herumgelaufen. Ich gehe nach Hause und ruhe mich aus.*"
+        "text": "*Ich gehe zum Schultor.*"
     },
     "after_nurse_enter_trap": {
         "name": "Schulkrankenschwester",

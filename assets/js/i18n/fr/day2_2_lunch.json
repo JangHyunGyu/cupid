@@ -107,7 +107,7 @@
     },
     "lunch2_seo_12": {
         "name": "{name}",
-        "text": "*Dain s'assoit sans la moindre gêne. Les baguettes de Seoyeon dévient au-dessus de l'omelette roulée, puis reviennent à leur place.*"
+        "text": "*Dain s'assoit tout de suite à la place libre. Les baguettes de Seoyeon dévient au-dessus de l'omelette roulée, puis reviennent à leur place.*"
     },
     "lunch2_seo_13": {
         "name": "Dain",
@@ -292,7 +292,7 @@
     },
     "lunch2_dain_10": {
         "name": "{name}",
-        "text": "*Seoyeon me regarde une fois, debout à côté de Dain, puis poursuit son chemin. Le soboro entre les dents, j'en oublie de mâcher.*"
+        "text": "*Seoyeon me regarde une fois, debout à côté de Dain, puis poursuit son chemin. La bouchée de soboro reste dans ma bouche.*"
     },
     "lunch2_dain_11": {
         "name": "Dain",
@@ -373,7 +373,7 @@
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
-        "text": "*Elle plaisante, mais commence par examiner la poussière autour de mon coude.*"
+        "text": "*La main gantée commence par examiner la poussière autour de mon coude.*"
     },
     "lunch2_dain_end_ins7_first": {
         "name": "Infirmière",

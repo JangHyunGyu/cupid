@@ -15,32 +15,50 @@
     "day4_teacher_seoyeon_counteroffer": {
         "name": "Seoyeon",
         "text": "*Als ich mich von meiner Klassenlehrerin verabschiedet habe und die Schule verlassen will, wartet Seoyeon an der Treppe zum Dach. Sie lächelt, doch ihre Finger krallen sich in den Ärmel ihrer Uniform.* In letzter Zeit hast du nur noch Augen für die Lehrerin. Kannst du heute nicht einfach mich ansehen, ohne die Schülersprecherin oder die Musterschülerin zu sehen?",
-        "choices": ["Mein Versprechen gegenüber der Klassenlehrerin halten und gehen", "Seoyeon aufs Dach folgen und ihre Hand nehmen"]
+        "choices": [
+            "Mein Versprechen gegenüber der Klassenlehrerin halten und gehen",
+            "Seoyeon aufs Dach folgen und ihre Hand nehmen"
+        ]
     },
     "day4_teacher_dain_counteroffer": {
         "name": "Dain",
         "text": "*Nachdem ich meiner Klassenlehrerin versprochen habe, mich bei meiner Ankunft zu melden, komme ich an der Turnhalle vorbei. Dain lehnt am dunklen Notausgang und zupft am Tape auf ihrem Knie.* Du gehst in letzter Zeit nur noch zur Lehrerin. Nimm zehn Aufschläge von mir an. Danach ... halt mich heute im Arm.",
-        "choices": ["Der Klassenlehrerin schreiben, dass ich zurückkomme", "Die Turnhalle betreten und Dains Bitte annehmen"]
+        "choices": [
+            "Der Klassenlehrerin schreiben, dass ich zurückkomme",
+            "Die Turnhalle betreten und Dains Bitte annehmen"
+        ]
     },
     "day4_teacher_yuna_counteroffer": {
         "name": "Yuna",
         "text": "*Direkt nachdem ich mich von meiner Klassenlehrerin getrennt habe, schickt Yuna ein Foto vom Nebengebäude. Zwei leere Stühle stehen nebeneinander, über einem hängt ihre Jacke.* Bei der Lehrerin fühlst du dich wohl wohler. Aber wenn du heute gehst, fühle ich mich wieder allein gelassen.",
-        "choices": ["Der Klassenlehrerin antworten und nach Hause gehen", "Zum Nebengebäude gehen und bei Yuna bleiben"]
+        "choices": [
+            "Der Klassenlehrerin antworten und nach Hause gehen",
+            "Zum Nebengebäude gehen und bei Yuna bleiben"
+        ]
     },
     "day4_nurse_seoyeon_counteroffer": {
         "name": "Seoyeon",
         "text": "*Auf dem Weg vom Krankenzimmer zum Schultor stellt sich Seoyeon vor die Treppe zum Dach. Ihre Lippen zwingen sich zu einem Lächeln, während ihre Finger den Uniformärmel zerknittern.* In letzter Zeit besuchst du nur noch die Schulkrankenschwester. Kannst du heute nicht einfach mich ansehen, ohne die Schülersprecherin oder die Musterschülerin zu sehen?",
-        "choices": ["Der Schulkrankenschwester antworten und gehen", "Seoyeon aufs Dach folgen und ihre Hand nehmen"]
+        "choices": [
+            "Der Schulkrankenschwester antworten und gehen",
+            "Seoyeon aufs Dach folgen und ihre Hand nehmen"
+        ]
     },
     "day4_nurse_dain_counteroffer": {
         "name": "Dain",
         "text": "*Als ich die Tür des Krankenzimmers hinter mir schließe, steht Dain am Notausgang der Turnhalle. Ohne mich anzusehen, zieht sie das Tape von ihrem Knie und drückt es wieder fest.* Du gehst in letzter Zeit nur noch zur Schulkrankenschwester. Nimm zehn Aufschläge von mir an. Danach ... halt mich heute im Arm.",
-        "choices": ["Der Schulkrankenschwester schreiben, dass ich zurückkomme", "Die Turnhalle betreten und Dains Bitte annehmen"]
+        "choices": [
+            "Der Schulkrankenschwester schreiben, dass ich zurückkomme",
+            "Die Turnhalle betreten und Dains Bitte annehmen"
+        ]
     },
     "day4_nurse_yuna_counteroffer": {
         "name": "Yuna",
         "text": "*Nachdem ich das Krankenzimmer verlassen habe, schickt Yuna ein Foto vom Nebengebäude. Ihre Jacke liegt auf einem von zwei leeren Stühlen.* Bei der Schulkrankenschwester fühlst du dich wohl wohler. Aber wenn du heute gehst, fühle ich mich wieder allein gelassen.",
-        "choices": ["Der Schulkrankenschwester antworten und nach Hause gehen", "Zum Nebengebäude gehen und bei Yuna bleiben"]
+        "choices": [
+            "Der Schulkrankenschwester antworten und nach Hause gehen",
+            "Zum Nebengebäude gehen und bei Yuna bleiben"
+        ]
     },
     "day4_adult_counteroffer_accept_seoyeon": {
         "name": "{name}",
@@ -52,7 +70,7 @@
     },
     "day4_adult_counteroffer_accept_yuna": {
         "name": "{name}",
-        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand am Bücherregal ab. Sie lässt die Jacke unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres Oberteils hinunter. Zwischen nackter Schulter und Tattoo weichen ihre roten Augen kein einziges Mal aus. Das Handy auf dem Tisch vibriert erneut. Viel später verlassen sie das Nebengebäude und kehren nach Hause zurück.*"
+        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand am Bücherregal ab. Sie lässt die Jacke unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres Oberteils hinunter. Zwischen nackter Schulter und Tattoo bleiben ihre roten Augen auf {name}s Augenhöhe. Das Handy auf dem Tisch vibriert erneut. Viel später verlassen sie das Nebengebäude und kehren nach Hause zurück.*"
     },
     "day4_adult_night_regret_target_branch": {},
     "day4_adult_night_regret_teacher": {
@@ -324,7 +342,7 @@
     },
     "wall_seo_yuna_tempt_accept": {
         "name": "{name}",
-        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand gegen das Regal. Sie lässt den Blazer unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres dunklen Oberteils hinab. Schulter und Tattoos liegen frei, doch ihre roten Augen weichen keinen Moment aus. Seoyeons Nachricht — „Bist du auch gut angekommen?“ — bleibt oben auf dem Bildschirm stehen.*"
+        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand gegen das Regal. Sie lässt den Blazer unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres dunklen Oberteils hinab. Zwischen nackter Schulter und Tattoo bleiben ihre roten Augen auf {name}s Augenhöhe. Seoyeons Nachricht — „Bist du auch gut angekommen?“ — bleibt oben auf dem Bildschirm stehen.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -638,7 +656,7 @@
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand gegen das Regal. Sie lässt den Blazer unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres dunklen Oberteils hinab. Schulter und Tattoos liegen frei, doch ihre roten Augen weichen keinen Moment aus. Dains „Bin zu Hause!“ bleibt oben auf dem Bildschirm stehen.*"
+        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand gegen das Regal. Sie lässt den Blazer unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres dunklen Oberteils hinab. Zwischen nackter Schulter und Tattoo bleiben ihre roten Augen auf {name}s Augenhöhe. Dains „Bin zu Hause!“ bleibt oben auf dem Bildschirm stehen.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -964,13 +982,13 @@
     },
     "wall_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Sie wischt sich mit dem Handrücken über die feuchten Augen und wirkt ruhiger.* Geh noch nicht. Lass uns noch etwas reden.",
+        "text": "*Sie wischt sich mit dem Handrücken über die feuchten Augen und sieht zu {name}.* Geh noch nicht. Lass uns noch etwas reden.",
         "context": "Es ist die Nacht von Tag 4, unmittelbar nachdem Seoyeon über den Familienkonflikt und den Druck, perfekt sein zu müssen, gesprochen hat. Ob der Protagonist ihr Geständnis angenommen oder vertagt hat, und der geteilte Trost sind gespeicherte Tatsachen. Erkläre ihren Schmerz nicht durch ein Gespräch für geheilt und bewerte die Beziehung nicht neu.",
         "personality": "Seoyeon ist gefasst und verantwortungsbewusst, hat ihre Deckung aber vorerst gesenkt. Sie spricht ehrlich, ohne den anderen für ihre Heilung verantwortlich zu machen, und verbindet ihre gewohnte Direktheit mit neuer, vorsichtiger Zärtlichkeit."
     },
     "wall_dain_freetalk": {
         "name": "Dain",
-        "text": "*Sie atmet langsam aus und passt ihre Schritte dem Protagonisten an.* Heute Abend gehen wir einfach ein Stück zusammen. Reden können wir auch.",
+        "text": "*Sie atmet langsam aus und passt ihre Schritte an {name} an.* Heute Abend gehen wir einfach ein Stück zusammen. Reden können wir auch.",
         "context": "Es ist die Nacht von Tag 4, nachdem Dain die Wahrheit über ihre Knieverletzung und den dadurch ins Stocken geratenen Traum erzählt hat. Ob der Protagonist ihr Geständnis angenommen oder vertagt hat, und der geteilte Trost stehen fest. Heile die Verletzung nicht plötzlich, entscheide nicht ihre Zukunft und ändere nicht den aktuellen Beziehungsstatus.",
         "personality": "Dain ist offen und körperlich und versucht, auch ihre Gefühle nicht länger zu verbergen. Sie ist stiller als sonst, ohne ihren Schwung zu verlieren, erkennt Unsicherheit an und findet gemeinsam mit dem Protagonisten die nächsten Worte."
     },

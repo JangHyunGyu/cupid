@@ -146,19 +146,19 @@
     },
     "night2_reply_yuna_4": {
         "name": "Yuna",
-    "text": "La lista de antes. Escucha también la tercera canción"
+        "text": "La lista de antes. Escucha también la tercera canción"
     },
     "night2_reply_yuna_5": {
         "name": "{name}",
-    "text": "*Vuelvo a abrir la lista que compartió Yuna. La tercera canción tiene un ritmo algo más rápido que la que escuchamos juntos.*"
+        "text": "*Vuelvo a abrir la lista que compartió Yuna. La tercera canción tiene un ritmo algo más rápido que la que escuchamos juntos.*"
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",
-    "text": "Escúchala hasta el final"
+        "text": "Escúchala hasta el final"
     },
     "night2_reply_yuna_6_b": {
         "name": "{name}",
-    "text": "*Me pongo los auriculares y pulso el botón de reproducción. A las notas del piano se suma el sonido grave de una batería.*"
+        "text": "*Me pongo los auriculares y pulso el botón de reproducción. A las notas del piano se suma el sonido grave de una batería.*"
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
@@ -166,11 +166,11 @@
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
-    "text": "*Bajo el título de la lista veo una breve nota de Yuna: «La tercera es la menos tranquila».*"
+        "text": "*Bajo el título de la lista veo una breve nota de Yuna: «La tercera es la menos tranquila».*"
     },
     "night2_reply_yuna_react_high": {
         "name": "Yuna",
-    "text": "...Cuando la acabes, mañana me cuentas qué te ha parecido. ¿Te pasas por el edificio anexo?"
+        "text": "...Cuando la acabes, mañana me cuentas qué te ha parecido. ¿Te pasas por el edificio anexo?"
     },
     "night2_reply_yuna_react_default": {
         "name": "Yuna",
@@ -200,27 +200,27 @@
     },
     "night2_hidden_homeroom_1": {
         "name": "{name}",
-    "text": "*Aparece una notificación en el sistema de orientación escolar: «Consulta de adaptación del estudiante transferido completada. Si necesita más ayuda, acuda al horario de tutoría de su tutora o reserve una cita en Wee Class».*"
+        "text": "*Aparece una notificación en el sistema de orientación escolar: «Consulta de adaptación del estudiante transferido completada. Si necesita más ayuda, acuda al horario de tutoría de su tutora o reserve una cita en Wee Class».*"
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
-    "text": "*Bajo el nombre de la tutora también figura su horario de atención.*"
+        "text": "*Bajo el nombre de la tutora también figura su horario de atención.*"
     },
     "night2_hidden_homeroom_3": {
         "name": "{name}",
-    "text": "*Compruebo el botón de reserva y cierro la notificación.*"
+        "text": "*Compruebo el botón de reserva y cierro la notificación.*"
     },
     "night2_hidden_nurse_1": {
         "name": "{name}",
-    "text": "*Notificación de la aplicación de salud: «Registro de enfermería: estudiante transferido — abrasión en el codo (leve). Mantener seco el apósito hasta mañana por la mañana. Si se levanta o se mancha de sangre, acudir a la enfermería para cambiarlo».*"
+        "text": "*Notificación de la aplicación de salud: «Registro de enfermería: estudiante transferido — abrasión en el codo (leve). Mantener seco el apósito hasta mañana por la mañana. Si se levanta o se mancha de sangre, acudir a la enfermería para cambiarlo».*"
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",
-    "text": "*Doblo el codo una vez. Las esquinas del apósito siguen bien adheridas.*"
+        "text": "*Doblo el codo una vez. Las esquinas del apósito siguen bien adheridas.*"
     },
     "night2_end_1": {
         "name": "{name}",
-        "text": "*Envié las respuestas y solté el celular. Fin del segundo día.*"
+        "text": "*Envié las respuestas y solté el celular.*"
     },
     "night2_flashback_1": {
         "name": "{name}",
@@ -252,7 +252,7 @@
     },
     "night2_flashback_10": {
         "name": "{name}",
-    "text": "*Abro y cierro el chat al que ya he respondido. En los otros dos aún no he conseguido escribir qué decir.*"
+        "text": "*Abro y cierro el chat al que ya he respondido. En los otros dos aún no he conseguido escribir qué decir.*"
     },
     "night2_end_2": {
         "name": "{name}",
@@ -260,11 +260,11 @@
     },
     "night2_end_2_b": {
         "name": "{name}",
-    "text": "*Sobre el mensaje de Minsu se acumulan dos notificaciones sin leer.*"
+        "text": "*Sobre el mensaje de Minsu se acumulan dos notificaciones sin leer.*"
     },
     "night2_end_3_b": {
         "name": "{name}",
-    "text": "*Incluso después de que se apaga la pantalla, sigo sujetando el celular de la misma manera.*"
+        "text": "*Incluso después de que se apaga la pantalla, sigo sujetando el celular de la misma manera.*"
     },
     "night2_end_4_b": {
         "name": "{name}",
@@ -272,6 +272,6 @@
     },
     "night2_end_4_c": {
         "name": "{name}",
-        "text": "*Preparé una lonchera a toda prisa. No me quedó nada del otro mundo. Demasiado simple para decir que lo hice con cariño. — Pero es mejor que no hacer nada.*"
+        "text": "*Meto arroz, huevo y alga y cierro la tapa. Eso es todo el acompañamiento.*"
     }
 }

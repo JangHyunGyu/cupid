@@ -65,7 +65,7 @@
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",
-        "text": "*Embora chame de segredo, os nós dos dedos da mão que segura a alça da gaveta estão brancos.*",
+        "text": "*Os nós dos dedos da mão que segura a alça da gaveta estão brancos.*",
         "choices": [
             "A senhora tem muito segredo. Não dá pra me contar um só?",
             "Claro, não vi nada."
@@ -262,7 +262,7 @@
     },
     "after2_seo_4_b": {
         "name": "Seoyeon",
-        "text": "*Em vez de dizer \"por favor\", ela vira a prancheta para {name}. O topo da lista de tarefas está em branco.*"
+        "text": "*Ela vira a prancheta para {name}. O topo da lista de tarefas está em branco.*"
     },
     "after2_seo_5": {
         "name": "{name}",
@@ -274,7 +274,7 @@
     },
     "after2_seo_6_b": {
         "name": "{name}",
-        "text": "*Ela tem o dom de transformar pedido em ordem. Começo a organizar os documentos. Orçamento de eventos, ficha de clubes. É bastante coisa.*"
+        "text": "*Começo a organizar os documentos. Orçamento de eventos, ficha de clubes. É bastante coisa.*"
     },
     "after2_seo_7": {
         "name": "Seoyeon",
@@ -543,7 +543,7 @@
     },
     "after2_yuna_everyday_react_b": {
         "name": "{name}",
-        "text": "*Não parece exatamente uma permissão, mas Yuna não tira o marcador do livro.*"
+        "text": "*Yuna não tira o marcador e continua na mesma página.*"
     },
     "after2_yuna_quiet": {
         "name": "Yuna",
@@ -596,7 +596,7 @@
     },
     "minsu_warn_4_b": {
         "name": "{name}",
-        "text": "*Ele termina em tom de brincadeira, mas Minsu mantém os olhos apenas no semáforo da faixa de pedestres, do lado de fora da escola.*"
+        "text": "*Minsu mantém os olhos apenas no semáforo da faixa de pedestres, do lado de fora da escola.*"
     },
     "minsu_warn_5": {
         "name": "{name}",

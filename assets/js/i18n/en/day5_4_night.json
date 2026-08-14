@@ -5,7 +5,7 @@
     },
     "hidden_dual_route_1": {
         "name": "{name}",
-        "text": "*As I finish cleaning up after the event, I put the literature club critique copy and first-aid card in my bag. I don't yet know what these memories will mean years from now.*"
+        "text": "*As I finish cleaning up after the event, I put the literature club critique copy and first-aid card in my bag.*"
     },
     "hidden_dual_route_choice": {
         "name": "{name}",
@@ -18,7 +18,7 @@
     "hidden_perfect_homeroom_check": {},
     "hidden_perfect_homeroom_1": {
         "name": "{name}",
-        "text": "*On graduation day, my homeroom teacher hands me a copy of my recommendation and my reading record. A teacherly farewell, right to the end.*"
+        "text": "*On graduation day, my homeroom teacher hands me a copy of my recommendation and my reading record.*"
     },
     "hidden_perfect_homeroom_1b": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "hidden_bitter_homeroom_2": {
         "name": "{name}",
-        "text": "*The letter comes back with its corners smoothed flat. A question follows: did all the manuscript reading and late counseling sessions mean something more?*"
+        "text": "*The letter comes back with its corners smoothed flat.*"
     },
     "hidden_bitter_homeroom_3": {
         "name": "Homeroom Teacher",
@@ -868,11 +868,11 @@
     },
     "true_epilogue_2": {
         "name": "{name}",
-        "text": "*The uniform was stiff, the cherry blossoms made me sneeze, and I had no idea what to do in front of the school gate.*"
+        "text": "*The uniform was stiff. The cherry blossoms only made my nose itch. In front of the school gate, my hands went into my pockets.*"
     },
     "true_epilogue_3": {
         "name": "{name}",
-        "text": "*Looking back, the beginning came quickly. Only five squares had passed on the calendar.*"
+        "text": "*Only five squares had passed on the calendar.*"
     },
     "true_epilogue_4": {},
     "true_epilogue_4_seo": {
@@ -1101,7 +1101,7 @@
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*A message from Dain: 'Anyone want to join me for a rehab walk tomorrow morning?' The wording is more careful than usual.*"
+        "text": "*A message from Dain: 'Anyone want to join me for a rehab walk tomorrow morning?'*"
     },
     "good_epilogue_2_dain": {
         "name": "{name}",
@@ -1201,7 +1201,7 @@
     },
     "mayhem_6": {
         "name": "{name}",
-        "text": "*The words 'I like you' remain, but every chat is piled with questions I never answered.*"
+        "text": "*Every chat is piled with questions I never answered.*"
     },
     "mayhem_7": {
         "name": "{name}",
@@ -1241,7 +1241,7 @@
     },
     "harem_6": {
         "name": "{name}",
-        "text": "*I nod. The three of them walk away in different directions, leaving {name} standing there.*"
+        "text": "*The three of them walk away in different directions, leaving {name} standing there.*"
     },
     "harem_7": {
         "name": "{name}",
@@ -1257,7 +1257,7 @@
     },
     "day5_seo_ending_freetalk_intro": {
         "name": "{name}",
-        "text": "*After the ending, time carries them back to the familiar school rooftop. This time there are no scripted lines and no next scene.*"
+        "text": "*The rooftop. Next to the open door is an empty pot space.*"
     },
     "day5_yuna_ending_freetalk_intro": {
         "name": "{name}",
@@ -1269,11 +1269,11 @@
     },
     "day5_teacher_ending_freetalk_intro": {
         "name": "{name}",
-        "text": "*Life after graduation continues. A finished manuscript and two coffees rest on the café table.*"
+        "text": "*A finished manuscript and two coffees rest on the café table.*"
     },
     "day5_nurse_ending_freetalk_intro": {
         "name": "{name}",
-        "text": "*Life after graduation continues. At home, she finishes tidying and leaves the seat across from her open.*"
+        "text": "*At home, she finishes tidying and leaves the seat across from her open.*"
     },
     "day5_credits": {
         "name": "",

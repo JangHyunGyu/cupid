@@ -334,7 +334,7 @@
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
-        "text": "*I stop in front of the door and take a breath. Just a short rest. I put my hand on the handle. Cold metal against my palm.*"
+        "text": "*I stop in front of the door, take a breath, and put my hand on the handle. Cold metal against my palm.*"
     },
     "after_nurse_enter_1": {
         "name": "{name}",
@@ -525,7 +525,7 @@
     },
     "after_nurse_skip": {
         "name": "{name}",
-        "text": "*I've wandered around enough today. Let's go home and rest.*"
+        "text": "*I walk toward the school gate.*"
     },
     "after_nurse_enter_trap": {
         "name": "School Nurse",

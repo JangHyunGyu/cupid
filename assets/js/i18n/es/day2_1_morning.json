@@ -316,7 +316,7 @@
     },
     "morning2_seo_dust_3": {
         "name": "Seoyeon",
-        "text": "*Su mano toca el hombro de {name}. No hay vacilación en el gesto con el que le quita el polvo.*"
+        "text": "*Su mano toca el hombro de {name}. Sacude el polvo dos veces y la retira.*"
     },
     "morning2_seo_dust_4": {
         "name": "Seoyeon",
@@ -336,7 +336,7 @@
     },
     "morning2_dain_react_2": {
         "name": "{name}",
-        "text": "*Seoyeon se aleja como si nada. Detrás, la voz de Dain.*"
+        "text": "*Seoyeon acomoda el portapapeles y se va por el pasillo. Detrás, la voz de Dain.*"
     },
     "morning2_dain_react_3": {
         "name": "Dain",

@@ -316,7 +316,7 @@
     },
     "morning2_seo_dust_3": {
         "name": "Seoyeon",
-        "text": "*Sa main se pose sur l'épaule de {name}. Elle enlève la poussière sans la moindre hésitation.*"
+        "text": "*Sa main se pose sur l'épaule de {name}. Elle chasse la poussière deux fois, puis retire la main.*"
     },
     "morning2_seo_dust_4": {
         "name": "Seoyeon",
@@ -336,7 +336,7 @@
     },
     "morning2_dain_react_2": {
         "name": "{name}",
-        "text": "*Seoyeon s'éloigne comme si de rien n'était. La voix de Dain retentit derrière moi.*"
+        "text": "*Seoyeon rattrape son porte-bloc et s'engage dans le couloir. La voix de Dain retentit derrière moi.*"
     },
     "morning2_dain_react_3": {
         "name": "Dain",

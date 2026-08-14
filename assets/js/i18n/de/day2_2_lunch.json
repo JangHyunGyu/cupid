@@ -107,7 +107,7 @@
     },
     "lunch2_seo_12": {
         "name": "{name}",
-        "text": "*Dain setzt sich ohne zu zögern. Seoyeons Stäbchen kreisen über der Eierrolle, greifen daneben und kehren an ihren Ausgangspunkt zurück.*"
+        "text": "*Dain setzt sich auf den leeren Platz. Seoyeons Stäbchen kreisen über der Eierrolle, greifen daneben und kehren an ihren Ausgangspunkt zurück.*"
     },
     "lunch2_seo_13": {
         "name": "Dain",
@@ -292,7 +292,7 @@
     },
     "lunch2_dain_10": {
         "name": "{name}",
-        "text": "*Seoyeon wirft mir neben Dain einen Blick zu und geht weiter. Mit einem Bissen Soboro im Mund vergesse ich zu kauen.*"
+        "text": "*Seoyeon wirft mir neben Dain einen Blick zu und geht weiter. Der Bissen Soboro bleibt im Mund liegen.*"
     },
     "lunch2_dain_11": {
         "name": "Dain",
@@ -373,7 +373,7 @@
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
-        "text": "*Während sie scherzt, prüft sie zuerst den Schmutz rund um meinen Ellbogen.*"
+        "text": "*Die behandschuhte Hand prüft zuerst den Schmutz rund um meinen Ellbogen.*"
     },
     "lunch2_dain_end_ins7_first": {
         "name": "Schulkrankenschwester",

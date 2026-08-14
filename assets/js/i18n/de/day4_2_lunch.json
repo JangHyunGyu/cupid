@@ -131,7 +131,7 @@
     },
     "date_yuna_pretty_high_5": {
         "name": "Yuna",
-        "text": "*Sie hebt den Blick nicht. Sie wartet.*"
+        "text": "*Sie hebt den Blick nicht.*"
     },
     "date_yuna_pretty_high_5_b": {
         "name": "{name}",
