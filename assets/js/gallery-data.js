@@ -643,7 +643,8 @@ class GalleryData {
             active: '활발',      // 활발한 표정
             sweat: '땀흘림',     // 땀에 젖은 표정
             flushed: '달아오름',
-            bikini: '???'        // 특별 표정 라벨 (호감도 100 + 프리토킹 30회 해금). 미스터리 연출 위해 '???' 사용 — 해금 전까지 무엇인지 숨김
+            bikini: '???',       // 특별 표정 라벨 (호감도 100 + 프리토킹 30회 해금). 미스터리 연출 위해 '???' 사용 — 해금 전까지 무엇인지 숨김
+            awkward: '어색함'
         },
 
         // 영어 표정 이름
@@ -663,7 +664,8 @@ class GalleryData {
             active: 'Active',
             sweat: 'Sweaty',
             flushed: 'Flushed',
-            bikini: '???'
+            bikini: '???',
+            awkward: 'Awkward'
         },
 
         // 스페인어 표정 이름
@@ -683,7 +685,8 @@ class GalleryData {
             active: 'Activa',
             sweat: 'Sudorosa',
             flushed: 'Sonrojada',
-            bikini: '???'
+            bikini: '???',
+            awkward: 'Incómoda'
         },
 
         // 일본어 표정 이름
@@ -703,7 +706,8 @@ class GalleryData {
             active: '元気',
             sweat: '汗',
             flushed: '火照り',
-            bikini: '???'
+            bikini: '???',
+            awkward: '気まずい'
         },
 
         // 프랑스어 표정 이름
@@ -723,7 +727,8 @@ class GalleryData {
             active: 'Dynamique',
             sweat: 'En sueur',
             flushed: 'Rougissante',
-            bikini: '???'
+            bikini: '???',
+            awkward: 'Gênée'
         },
 
         // 독일어 표정 이름
@@ -743,7 +748,8 @@ class GalleryData {
             active: 'Aktiv',
             sweat: 'Verschwitzt',
             flushed: 'Errötet',
-            bikini: '???'
+            bikini: '???',
+            awkward: 'Verlegen'
         },
 
         // 포르투갈어 표정 이름
@@ -763,7 +769,8 @@ class GalleryData {
             active: 'Animada',
             sweat: 'Suada',
             flushed: 'Corada',
-            bikini: '???'
+            bikini: '???',
+            awkward: 'Sem jeito'
         }
     };
 

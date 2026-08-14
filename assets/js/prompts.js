@@ -391,6 +391,8 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         worried: 'assets/images/characters/yuna_worried.png',
         bored: 'assets/images/characters/yuna_bored.png',
         flushed: 'assets/images/characters/yuna_flushed.png',
+        laugh: 'assets/images/characters/yuna_laugh.png',
+        pout: 'assets/images/characters/yuna_pout.png',
         bikini: 'assets/images/characters/yuna_bikini.png'
     }),
     Dain: Object.freeze({
@@ -421,6 +423,8 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         angry: 'assets/images/characters/nurse_angry.png',
         worried: 'assets/images/characters/nurse_worried.png',
         flushed: 'assets/images/characters/nurse_flushed.png',
+        smile: 'assets/images/characters/nurse_smile.png',
+        sad: 'assets/images/characters/nurse_sad.png',
         bikini: 'assets/images/characters/nurse_bikini.png'
     })
 });

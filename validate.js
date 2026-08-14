@@ -610,7 +610,9 @@ try {
     const GalleryDataClass = new Function('window', gdContent + '\nreturn GalleryData;')({});
     const galleryLanguages = ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt'];
     const mainGalleryCharacters = ['seyoun', 'yuna', 'dain', 'teacher', 'nurse'];
-    const ignoredCharacterImages = new Set();
+    const ignoredCharacterImages = new Set([
+        'yuna_gallery_bikini_sexy_20260813.png'
+    ]);
     for (const charId of mainGalleryCharacters) {
         const diskExpressions = fs.readdirSync(charImgDir)
             .filter(file => file.startsWith(charId + '_') && file.endsWith('.png') && !ignoredCharacterImages.has(file))
