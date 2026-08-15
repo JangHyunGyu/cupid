@@ -494,6 +494,35 @@ test('quality fallback keeps a valid gallery reply when only the active incident
     assert.equal(recovered.text, parsed.text);
 });
 
+test('quality fallback keeps a valid gallery reply and defers a scheduled incident with no payload', () => {
+    const prompts = read('assets/js/prompts.js');
+    const sandbox = {
+        window: { CupidFreeTalkCore: core },
+        console: { log() {}, warn() {} }
+    };
+    vm.runInNewContext(`${prompts}\nthis.recoverCupidRoleplayQualityFallback = window.recoverCupidRoleplayQualityFallback;`, sandbox);
+    const parsed = {
+        text: '窓の外を見て、少し息を整えた。',
+        segments: [{ type: 'narration', text: '窓の外を見て、少し息を整えた。' }],
+        affinity: 0,
+        incident: null
+    };
+    const recovered = sandbox.recoverCupidRoleplayQualityFallback(parsed, {
+        lang: 'ja',
+        charKey: 'Yuna',
+        incidentState: {
+            completedTurns: 30,
+            quietTurns: 30,
+            activeIncident: null
+        },
+        incidentPlan: { category: 'daily' }
+    });
+    assert.equal(recovered.incident, null);
+    assert.equal(recovered.qualityRecovery.acceptedAfterRetries, true);
+    assert.equal(recovered.qualityRecovery.deferredScheduledIncident, true);
+    assert.equal(recovered.text, parsed.text);
+});
+
 test('gallery runtime wires incident planning, persistence, and AI payload parsing', () => {
     const gallery = read('assets/js/gallery-freetalk.js');
     const prompts = read('assets/js/prompts.js');

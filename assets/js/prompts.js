@@ -1470,10 +1470,24 @@ function recoverCupidRoleplayQualityFallback(parsed = {}, options = {}) {
     if (!initialIssue.shouldRetry) {
         return working === parsed ? null : working;
     }
+    const hasVisibleRoleplay = String(working?.text || '').trim()
+        || (Array.isArray(working?.segments)
+            && working.segments.some(segment => String(segment?.text || '').trim()));
+    if (initialIssue.issues.length > 0
+        && initialIssue.issues.every(issue => issue === 'scheduled_gallery_incident_payload_missing')
+        && hasVisibleRoleplay) {
+        return {
+            ...working,
+            qualityRecovery: {
+                reason: initialIssue.reason,
+                acceptedAfterRetries: true,
+                deferredScheduledIncident: true,
+            },
+        };
+    }
     if (initialIssue.issues.length > 0
         && initialIssue.issues.every(issue => issue === 'recent_response_near_duplicate')
-        && (String(working?.text || '').trim()
-            || (Array.isArray(working?.segments) && working.segments.some(segment => String(segment?.text || '').trim())))) {
+        && hasVisibleRoleplay) {
         return {
             ...working,
             qualityRecovery: {
