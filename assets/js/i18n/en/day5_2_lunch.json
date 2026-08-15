@@ -1,4 +1,7 @@
 {
+    "tour_seo_low": {"name":"Seoyeon","text":"*You run into Seoyeon at the end of the hall. She adjusts her bag strap and steps half a pace aside.* Let's look around separately today. I still have things to finish."},
+    "tour_yuna_low": {"name":"Yuna","text":"*The annex door is locked. A short message from Yuna arrives a moment later.* I want to be alone today. *I turn back from the annex and head for the hallway.*"},
+    "tour_dain_low": {"name":"Dain","text":"*You meet Dain outside the gym. Holding a ball, she turns back toward the court.* I need to practice today. See you later."},
     "tour_seo_1": {
         "name": "{name}",
         "text": "*We stand side by side in front of the school gate. The very spot where Seoyeon was waiting on Day 1.*"

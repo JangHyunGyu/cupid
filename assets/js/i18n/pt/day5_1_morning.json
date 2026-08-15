@@ -1,4 +1,6 @@
 {
+    "hidden_homeroom_d5_low": {"name":"Professora","text":"*Sua professora guarda o manuscrito dobrado na pasta e a fecha.* Vamos deixar isso por aqui. Cuido do resto durante a aula."},
+    "hidden_nurse_d5_low": {"name":"Enfermeira","text":"*A enfermeira começa a entregar um cartão da sala de orientação, mas o devolve à gaveta.* Acho melhor não marcarmos um horário separado agora. Se precisar de ajuda, procure o atendimento oficial. *Saio da enfermaria e volto para a sala de aula.*"},
     "morning5_start": {
         "name": "{name}",
         "text": "*Quinto dia. É domingo, mas há um evento na escola. As pontas das mangas do uniforme já não arranham meus pulsos.*"

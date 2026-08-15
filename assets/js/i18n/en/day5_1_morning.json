@@ -1,4 +1,6 @@
 {
+    "hidden_homeroom_d5_low": {"name":"Homeroom Teacher","text":"*Your homeroom teacher puts the folded manuscript into her file and closes it.* Let's leave this here. I'll take care of the rest in class."},
+    "hidden_nurse_d5_low": {"name":"School Nurse","text":"*The school nurse starts to hand you a counseling-room card, then puts it back in the drawer.* I don't think we should make a separate appointment right now. If you need help, come through the official process. *I leave the nurse's office and return to the classroom.*"},
     "morning5_start": {
         "name": "{name}",
         "text": "*Day five. It's Sunday, but there's a school event. The cuff of my uniform no longer scratches my wrist.*"

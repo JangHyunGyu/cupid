@@ -1,4 +1,7 @@
 {
+    "after5_farewell_seo_low": {"name":"Seoyeon","text":"*Auf dem Flur begegnest du Seoyeon. Sie hält kurz inne und nickt dir einmal zu.* Ich weiß, wie du dich entschieden hast. Mehr habe ich nicht zu sagen."},
+    "after5_farewell_yuna_low": {"name":"Yuna","text":"*Vor der Bibliothek treffen sich eure Blicke. Yuna drückt ihr Buch an sich und nickt dir knapp zu.* Tschüss."},
+    "after5_farewell_dain_low": {"name":"Dain","text":"*Dain kommt vor der Sporthalle auf dich zu und bleibt zwei Schritte entfernt stehen.* Ich weiß, wie du dich entschieden hast. Ich gehe rein."},
     "after5_start": {},
     "after5_waited_start_branch": {
         "name": "System",

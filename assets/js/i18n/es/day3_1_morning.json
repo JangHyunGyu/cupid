@@ -1,4 +1,9 @@
 {
+    "hidden_homeroom_d3_low": {"name":"Profesora","text":"*La profesora se detiene ante el aula vacía y señala el pasillo en vez de los pupitres del interior.* Hoy hablemos solo de las clases."},
+    "hidden_nurse_d3_low": {"name":"Enfermera","text":"*La enfermera permanece junto a la puerta sin sacar la silla de consulta.* Ahora no creo que debamos seguir hablando a solas. Si necesitas algo, ven durante el horario oficial de consulta."},
+    "morning3_date_seo_low": {"name":"Seoyeon","text":"*Seoyeon enciende la pantalla del móvil y la apaga enseguida. Cuando vuestras miradas se cruzan, baja los ojos hacia el portapapeles.* Pondré los planes del fin de semana en el chat del grupo."},
+    "morning3_date_dain_low": {"name":"Dain","text":"*Dain sostiene el balón contra el costado, te mira un instante y vuelve la vista a la cancha.* Este fin de semana entrenaré sola."},
+    "morning3_date_yuna_low": {"name":"Yuna","text":"*Yuna empieza a sacar una nota doblada, pero vuelve a guardarla entre las páginas del libro.* Este fin de semana... prefiero estar sola."},
     "morning3_start": {
         "name": "{name}",
         "text": "*Tercer día. Se me pegaron las sábanas. Apagué el despertador tres veces. Anoche me quedé hasta tarde mandando mensajes.*"

@@ -1,4 +1,9 @@
 {
+    "hidden_homeroom_d3_low": {"name":"Klassenlehrerin","text":"*An der Tür zum leeren Klassenzimmer bleibt deine Klassenlehrerin stehen und weist den Flur entlang statt zu den Tischen.* Heute bleiben wir beim Unterricht."},
+    "hidden_nurse_d3_low": {"name":"Schulkrankenschwester","text":"*Die Schulkrankenschwester bleibt an der Tür stehen, ohne den Stuhl für Beratungsgespräche hervorzuholen.* Ich denke nicht, dass wir dieses Gespräch gerade allein fortsetzen sollten. Wenn du etwas brauchst, komm während der offiziellen Beratungszeiten."},
+    "morning3_date_seo_low": {"name":"Seoyeon","text":"*Seoyeon schaltet ihr Handy ein und gleich wieder aus. Als sich eure Blicke treffen, senkt sie den Blick auf ihr Klemmbrett.* Den Plan fürs Wochenende stelle ich in den Gruppenchat."},
+    "morning3_date_dain_low": {"name":"Dain","text":"*Dain klemmt einen Volleyball an ihre Seite, wirft dir einen Blick zu und sieht dann wieder zum Spielfeld.* Dieses Wochenende trainiere ich allein."},
+    "morning3_date_yuna_low": {"name":"Yuna","text":"*Yuna will einen gefalteten Zettel hervorholen, schiebt ihn dann aber wieder zwischen die Seiten ihres Buches.* Dieses Wochenende ... bin ich lieber allein."},
     "morning3_start": {
         "name": "{name}",
         "text": "*Dritter Tag. Ich habe verschlafen und den Wecker gleich dreimal ausgeschaltet. Gestern Nacht war ich zu lange mit den Nachrichten beschäftigt.*"

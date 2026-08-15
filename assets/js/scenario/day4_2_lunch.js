@@ -14,6 +14,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/seyoun_normal.png",
         "bgm": "date.mp3",
         "condition": "route_seoyeon",
+        "affinityGuard": {"character":"Seoyeon","minAffinity":15,"fallback":"date_seo_low"},
         "next": "date_seo_compliment_choice"
     },
     "date_seo_compliment_choice": {
@@ -147,6 +148,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/yuna_normal.png",
         "bgm": "night1.mp3",
         "condition": "route_yuna",
+        "affinityGuard": {"character":"Yuna","minAffinity":15,"fallback":"date_yuna_low"},
         "next": "date_yuna_compliment_choice"
     },
     "date_yuna_compliment_choice": {
@@ -300,6 +302,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/dain_laugh.png",
         "bgm": "daily2.mp3",
         "condition": "route_dain",
+        "affinityGuard": {"character":"Dain","minAffinity":15,"fallback":"date_dain_low"},
         "next": "date_dain_2"
     },
     "date_dain_2": {
@@ -471,6 +474,24 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/minsu_smirk.png",
         "next": "confess_seo_1"
+    },
+    "date_seo_low": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "setFlags": ["day4_waited"],
+        "next": "day4_night_start"
+    },
+    "date_yuna_low": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "setFlags": ["day4_waited"],
+        "next": "day4_night_start"
+    },
+    "date_dain_low": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "setFlags": ["day4_waited"],
+        "next": "day4_night_start"
     }
     };
     for (const scene of Object.values(scenes)) {

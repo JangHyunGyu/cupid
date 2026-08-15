@@ -1,4 +1,5 @@
 {
+    "hidden_homeroom_d2_low": {"name":"Professora","text":"*Na porta da sala dos professores, você encontra sua professora. Ela vira os papéis que tem nas mãos de volta para a mesa.* Hoje é melhor não conversarmos a sós. Vejo você na aula."},
     "morning2_start": {
         "name": "{name}",
         "text": "*Segundo dia. As marcas das dobras nas mangas do uniforme estão mais fracas do que ontem.*"

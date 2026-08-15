@@ -3989,6 +3989,15 @@
 
 ---
 
+### `hidden_homeroom_d2_low`
+- 배경: `teacher_office.png`
+- 다음: `morning2_seo_dust_1`
+
+- 캐릭터: `teacher_normal.png`
+**담임선생님**: *교무실 문 앞에서 담임과 마주친다. 담임은 들고 있던 서류를 책상 쪽으로 돌려놓는다.* 오늘은 따로 이야기하지 말자. 수업에서 보자.
+
+---
+
 ### `morning2_seo_dust_1`
 - 배경: `school_hallway.png`
 - 다음: `morning2_seo_dust_2`
@@ -5892,6 +5901,15 @@
 
 - 캐릭터: `없음`
 **{name}**: *보건실을 나와 교실로 돌아오니, 방과후 햇빛이 책상 위로 길게 누워 있다.*
+
+---
+
+### `hidden_nurse_d2_low`
+- 배경: `nurse_room.png`
+- 다음: `after2_choice`
+
+- 캐릭터: `nurse_normal.png`
+**보건선생님**: *보건실 문을 열자 보건선생님이 차트를 덮는다.* 지금은 필요한 처치가 아니면 오래 이야기하기 어렵겠네. 교실로 돌아가.
 
 ---
 
@@ -8726,6 +8744,16 @@
 
 ---
 
+### `hidden_homeroom_d3_low`
+- 배경: `room_school.png`
+- 배경톤: `empty`
+- 다음: `hidden_nurse_d3_check`
+
+- 캐릭터: `teacher_normal.png`
+**담임선생님**: *빈 교실 문 앞에서 담임이 걸음을 멈춘다. 안쪽 책상 대신 복도를 가리킨다.* 오늘은 수업 얘기만 하자.
+
+---
+
 ### `hidden_nurse_d3_check`
 - 배경: `room_school.png`
 - 분기:
@@ -9296,6 +9324,15 @@
 
 ---
 
+### `hidden_nurse_d3_low`
+- 배경: `nurse_room.png`
+- 다음: `morning3_date_seo_1`
+
+- 캐릭터: `nurse_normal.png`
+**보건선생님**: *보건선생님은 상담 의자를 꺼내지 않은 채 문 옆에 선다.* 지금은 따로 상담을 이어가기 어렵겠어. 필요한 일이 있으면 공식 상담 시간에 와.
+
+---
+
 ### `morning3_date_seo_1`
 - 배경: `school_hallway.png`
 - 다음: `morning3_date_seo_choice`
@@ -9349,6 +9386,15 @@
 
 - 캐릭터: `seyoun_normal.png`
 **{name}**: *교실로 돌아왔다. 수업 하나가 지나고 또 쉬는 시간이 온다.*
+
+---
+
+### `morning3_date_seo_low`
+- 배경: `school_hallway.png`
+- 다음: `morning3_date_dain_1`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: *서연은 휴대폰 화면을 켰다가 바로 끈다. 눈이 마주치자 클립보드 쪽으로 시선을 돌린다.* 주말 일정은 단체방에 올릴게.
 
 ---
 
@@ -9417,6 +9463,15 @@
 
 ---
 
+### `morning3_date_dain_low`
+- 배경: `room_school.png`
+- 다음: `morning3_date_yuna_1`
+
+- 캐릭터: `dain_normal.png`
+**다인**: *다인은 배구공을 옆구리에 낀 채 이쪽을 보다가 코트로 시선을 돌린다.* 이번 주말에는 혼자 연습할 거야.
+
+---
+
 ### `morning3_date_yuna_1`
 - 배경: `room_school.png`
 - 다음: `morning3_date_yuna_1_b`
@@ -9470,6 +9525,15 @@
 
 - 캐릭터: `yuna_sad.png`
 **{name}**: *쪽지 뒷면에 답을 적어 책 위에 놓는다. 유나는 책갈피를 끼운 뒤 그 문장을 읽는다.*
+
+---
+
+### `morning3_date_yuna_low`
+- 배경: `room_school.png`
+- 다음: `morning3_check_multiple`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: *유나는 접어 둔 쪽지를 꺼내려다 다시 책갈피 사이에 넣는다.* 주말엔... 그냥 혼자 있을래.
 
 ---
 
@@ -13768,6 +13832,15 @@
 
 ---
 
+### `hidden_homeroom_d4_low`
+- 배경: `street.png`
+- 다음: `hidden_nurse_d4_check`
+
+- 캐릭터: `teacher_normal.png`
+**담임선생님**: *약속 장소 앞에서 담임이 종이봉투를 품 쪽으로 당긴다.* 오늘은 원고를 보여주지 않을게. 학교에서 보자.
+
+---
+
 ### `hidden_nurse_d4_check`
 - 분기:
   - [`nurse_day3`] → `hidden_nurse_d4_1`
@@ -14239,6 +14312,15 @@
 
 - 캐릭터: `nurse_normal.png`
 **보건선생님**: *마지막 응급키트의 지퍼를 닫고 맞은편 의자를 가리킨다.* 수고했어. 이제 잠깐은 네 얘기 들어도 되겠네.
+
+---
+
+### `hidden_nurse_d4_low`
+- 배경: `nurse_room.png`
+- 다음: `morning4_end`
+
+- 캐릭터: `nurse_normal.png`
+**보건선생님**: *보건선생님이 정리 중인 응급키트 지퍼를 닫는다.* 오늘은 혼자 마칠게. 너도 네 일정으로 돌아가.
 
 ---
 
@@ -15078,6 +15160,36 @@
 
 ---
 
+### `date_seo_low`
+- 배경: `park.png`
+- 플래그: `day4_waited`
+- 다음: `day4_night_start`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: *분수대 앞 벤치는 비어 있다. 잠시 뒤 서연에게 메시지가 온다.* 오늘은 둘이 만나지 않는 게 좋을 것 같아. 다음 주 학교에서 보자.
+
+---
+
+### `date_yuna_low`
+- 배경: `cafe.png`
+- 플래그: `day4_waited`
+- 다음: `day4_night_start`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: *카페 앞에 먼저 와 있던 유나가 가방끈을 고쳐 메고 한 걸음 물러난다.* 지금은 둘이 오래 있지 않는 게 좋겠어. 오늘은 여기까지 하자.
+
+---
+
+### `date_dain_low`
+- 배경: `gym.png`
+- 플래그: `day4_waited`
+- 다음: `day4_night_start`
+
+- 캐릭터: `dain_normal.png`
+**다인**: *체육관 앞에서 다인이 공 가방 끈을 고쳐 멘다.* 오늘은 같이 놀 기분이 아니야. 학교에서 보자.
+
+---
+
 ## 4일차 — 방과후 `day4_3_afterschool`
 
 ### `confess_seo_1`
@@ -15882,6 +15994,39 @@
 
 - 캐릭터: `dain_sad.png`
 **{name}**: *다인의 목소리가 체육관 천장으로 작게 흩어진다. 손목 보호대의 벨크로만 길게 뜯긴다.*
+
+---
+
+### `confess_seo_low`
+- 배경: `top_school.png`
+- 배경톤: `warm`
+- 플래그: `day4_waited`
+- 다음: `day4_night_start`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: *서연은 옥상 열쇠를 꺼냈다가 다시 주머니에 넣는다.* 오늘은 여기까지 하자. 지금 더 가까워지는 건 아닌 것 같아.
+
+---
+
+### `confess_yuna_low`
+- 배경: `yuna_hideout.png`
+- 배경톤: `dream`
+- 플래그: `day4_waited`
+- 다음: `day4_night_start`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: *유나는 별관 쪽을 보다가 걸음을 돌린다.* 오늘은 여기까지. 지금은 더 가까워질 얘기, 못 하겠어.
+
+---
+
+### `confess_dain_low`
+- 배경: `gym.png`
+- 배경톤: `lights-off`
+- 플래그: `day4_waited`
+- 다음: `day4_night_start`
+
+- 캐릭터: `dain_normal.png`
+**다인**: *다인은 체육관 쪽으로 걷다가 멈춰 공 가방 끈을 고쳐 멘다.* 오늘은 여기까지. 더 얘기하면 서로 무리할 것 같아.
 
 ---
 
@@ -19493,6 +19638,16 @@
 
 ---
 
+### `hidden_homeroom_d5_low`
+- 배경: `room_school.png`
+- 배경톤: `empty`
+- 다음: `hidden_nurse_d5_check`
+
+- 캐릭터: `teacher_normal.png`
+**담임선생님**: *담임은 접힌 원고를 서류철 안에 넣고 덮개를 닫는다.* 이 이야기는 여기까지 하자. 남은 건 수업에서 정리할게.
+
+---
+
 ### `hidden_nurse_d5_check`
 - 배경: `school_hallway.png`
 - 분기:
@@ -19867,6 +20022,15 @@
 
 - 캐릭터: `nurse_normal.png`
 **보건선생님**: *상담 기록지를 파일에 넣는다.* 상담은 여기까지. 다음엔 필요한 말을 바로 해.
+
+---
+
+### `hidden_nurse_d5_low`
+- 배경: `school_hallway.png`
+- 다음: `morning5_end_branch`
+
+- 캐릭터: `nurse_normal.png`
+**보건선생님**: *보건선생님이 상담실 카드를 내밀려다 다시 서랍에 넣는다.* 지금은 따로 약속을 잡지 않는 게 좋겠어. 필요하면 정식 절차로 와. *나는 보건실을 나와 교실로 돌아간다.*
 
 ---
 
@@ -20494,6 +20658,33 @@
 
 ---
 
+### `tour_seo_low`
+- 배경: `school_hallway.png`
+- 다음: `after5_start`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: *복도 끝에서 서연과 마주친다. 서연은 가방끈을 고쳐 잡고 반 걸음 옆으로 비킨다.* 오늘은 각자 둘러보자. 정리할 게 남았어.
+
+---
+
+### `tour_yuna_low`
+- 배경: `yuna_hideout.png`
+- 다음: `after5_start`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: *별관 문은 잠겨 있다. 잠시 뒤 유나에게 짧은 메시지가 온다.* 오늘은 혼자 있고 싶어. *나는 별관에서 돌아나와 복도로 향한다.*
+
+---
+
+### `tour_dain_low`
+- 배경: `gym.png`
+- 다음: `after5_start`
+
+- 캐릭터: `dain_normal.png`
+**다인**: *체육관 문 앞에서 다인을 만난다. 다인은 공을 들고 코트 쪽으로 돌아선다.* 오늘은 연습해야 해. 나중에 보자.
+
+---
+
 ## 5일차 — 방과후 `day5_3_afterschool`
 
 ### `after5_start`
@@ -20826,6 +21017,15 @@
 
 ---
 
+### `after5_farewell_seo_low`
+- 배경: `school_hallway.png`
+- 다음: `after5_farewell_yuna_check`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: *복도에서 서연과 마주친다. 서연은 잠시 멈췄다가 고개만 한 번 숙인다.* 네가 정한 건 알아. 더 할 말은 없어.
+
+---
+
 ### `after5_farewell_yuna_check`
 - 배경: `school_hallway.png`
 - 분기:
@@ -20891,6 +21091,15 @@
 
 - 캐릭터: `없음`
 **{name}**: *복도로 돌아왔다.*
+
+---
+
+### `after5_farewell_yuna_low`
+- 배경: `library_old.png`
+- 다음: `after5_farewell_dain_check`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: *도서관 앞에서 유나와 눈이 마주친다. 유나는 들고 있던 책을 품에 붙인 채 짧게 고개를 끄덕인다.* 잘 가.
 
 ---
 
@@ -20987,6 +21196,15 @@
 
 - 캐릭터: `없음`
 **{name}**: *체육관을 나서 학교 뒤편으로 향했다.*
+
+---
+
+### `after5_farewell_dain_low`
+- 배경: `gym.png`
+- 다음: `after5_sunset_1`
+
+- 캐릭터: `dain_normal.png`
+**다인**: *체육관 앞에서 다인이 걸어오다 두 걸음 떨어진 곳에 멈춘다.* 네가 정한 건 알겠어. 나 먼저 들어갈게.
 
 ---
 

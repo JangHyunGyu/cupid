@@ -490,6 +490,90 @@ test('ranked rival routing uses the live second-highest affinity with determinis
     assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'day4_hidden_msg_branch', 'low-affinity routes must skip the temptation');
     Object.assign(affinities, { Seoyeon: 70, Dain: 80, Yuna: 30 });
     assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'day4_hidden_msg_branch', 'a route that is not the live leader must not claim to be one');
+
+    Object.assign(affinities, { Seoyeon: 80, Dain: 59, Yuna: 20 });
+    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'day4_hidden_msg_branch', 'rivals below 60 must not initiate an intimate counteroffer');
+});
+
+test('live affinity guards block personal scenes and provide localized low-affinity exits', () => {
+    const guardedEntries = [
+        ['hidden_homeroom_d2_1', 'Teacher', 15, 'hidden_homeroom_d2_low'],
+        ['hidden_nurse_d2_1', 'Nurse', 15, 'hidden_nurse_d2_low'],
+        ['hidden_homeroom_d3_1', 'Teacher', 15, 'hidden_homeroom_d3_low'],
+        ['hidden_nurse_d3_1', 'Nurse', 15, 'hidden_nurse_d3_low'],
+        ['morning3_date_seo_1', 'Seoyeon', 15, 'morning3_date_seo_low'],
+        ['morning3_date_dain_1', 'Dain', 15, 'morning3_date_dain_low'],
+        ['morning3_date_yuna_1', 'Yuna', 15, 'morning3_date_yuna_low'],
+        ['hidden_homeroom_d4_1', 'Teacher', 15, 'hidden_homeroom_d4_low'],
+        ['hidden_nurse_d4_morning_1', 'Nurse', 15, 'hidden_nurse_d4_low'],
+        ['hidden_nurse_d4_1', 'Nurse', 15, 'hidden_nurse_d4_low'],
+        ['date_seo_1', 'Seoyeon', 15, 'date_seo_low'],
+        ['date_yuna_1', 'Yuna', 15, 'date_yuna_low'],
+        ['date_dain_1', 'Dain', 15, 'date_dain_low'],
+        ['confess_seo_2', 'Seoyeon', 40, 'confess_seo_low'],
+        ['confess_yuna_1', 'Yuna', 40, 'confess_yuna_low'],
+        ['confess_dain_1', 'Dain', 40, 'confess_dain_low'],
+        ['hidden_homeroom_d5_1', 'Teacher', 15, 'hidden_homeroom_d5_low'],
+        ['hidden_nurse_d5_1', 'Nurse', 15, 'hidden_nurse_d5_low'],
+        ['tour_seo_1', 'Seoyeon', 40, 'tour_seo_low'],
+        ['tour_yuna_1_check', 'Yuna', 40, 'tour_yuna_low'],
+        ['tour_dain_1_check', 'Dain', 40, 'tour_dain_low'],
+        ['after5_farewell_seo_1', 'Seoyeon', 40, 'after5_farewell_seo_low'],
+        ['after5_farewell_yuna_1', 'Yuna', 40, 'after5_farewell_yuna_low'],
+        ['after5_farewell_dain_1', 'Dain', 40, 'after5_farewell_dain_low']
+    ];
+    const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy);
+    const affinities = { Seoyeon: 0, Yuna: 0, Dain: 0, Teacher: 0, Nurse: 0 };
+    const renderer = createSceneRenderer(affinities);
+
+    for (const [sceneId, character, minAffinity, fallback] of guardedEntries) {
+        const scene = scenes[sceneId];
+        assert.deepEqual(scene?.affinityGuard, { character, minAffinity, fallback }, `${sceneId} guard drifted`);
+
+        affinities[character] = minAffinity - 1;
+        assert.equal(renderer.resolveAffinityGuard(scene), fallback, `${sceneId} must reject affinity below ${minAffinity}`);
+        affinities[character] = minAffinity;
+        assert.equal(renderer.resolveAffinityGuard(scene), null, `${sceneId} must allow affinity at ${minAffinity}`);
+
+        for (const copy of localizedCopies) {
+            assert.ok(copy[fallback]?.name && copy[fallback]?.text, `${fallback} must have complete copy in every locale`);
+        }
+    }
+});
+
+test('free-talk exits re-check live affinity before later romance or temptation scenes', () => {
+    assert.equal(scenes.hidden_nurse_d3_freetalk.next, 'morning3_date_seo_1');
+    assert.equal(scenes.morning3_date_seo_1.affinityGuard.minAffinity, 15);
+
+    const studentRoutes = [
+        ['wall_seo_freetalk', 'wall_seo_rival_rank'],
+        ['wall_dain_freetalk', 'wall_dain_rival_rank'],
+        ['wall_yuna_freetalk', 'wall_yuna_rival_rank']
+    ];
+    for (const [freeTalkId, rankId] of studentRoutes) {
+        assert.equal(scenes[freeTalkId].next, rankId);
+        assert.equal(scenes[rankId].minLeadAffinity, 60);
+        assert.equal(scenes[rankId].minRivalAffinity, 60);
+        assert.ok(scenes[rankId].rankedRivalFallback);
+    }
+
+    for (const rankId of ['day4_adult_teacher_student_rank', 'day4_adult_nurse_student_rank']) {
+        assert.equal(scenes[rankId].minLeadAffinity, 60);
+        assert.equal(scenes[rankId].minRivalAffinity, 60);
+        assert.equal(scenes[rankId].rankedRivalFallback, 'day4_student_night_branch');
+    }
+});
+
+test('day-five mood uses the highest live affinity instead of a pseudo-character key', () => {
+    const affinities = { Seoyeon: 82, Yuna: 25, Dain: -40, Teacher: 10, Nurse: 15 };
+    const renderer = createSceneRenderer(affinities);
+
+    assert.deepEqual(scenes.morning5_mood_check.affinityCandidates, ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse']);
+    assert.equal(renderer.resolveNextScene(scenes.morning5_mood_check), 'morning5_mood_high');
+    affinities.Seoyeon = 55;
+    assert.equal(renderer.resolveNextScene(scenes.morning5_mood_check), 'morning5_mood_mid');
+    affinities.Seoyeon = 35;
+    assert.equal(renderer.resolveNextScene(scenes.morning5_mood_check), 'morning5_mood_low');
 });
 
 test('an adult day-four lead who is highest overall is tempted by the highest-affinity student', () => {
@@ -511,6 +595,9 @@ test('an adult day-four lead who is highest overall is tempted by the highest-af
 
     Object.assign(affinities, { Teacher: 59, Nurse: 30, Seoyeon: 20, Dain: 15, Yuna: 10 });
     assert.equal(renderer.resolveNextScene(scenes.day4_adult_teacher_overall_rank), 'day4_adult_nurse_flag_check', 'adult leads below 60 must skip the temptation');
+
+    Object.assign(affinities, { Teacher: 85, Nurse: 30, Seoyeon: 59, Dain: 20, Yuna: 10 });
+    assert.equal(renderer.resolveNextScene(scenes.day4_adult_teacher_student_rank), 'day4_student_night_branch', 'student rivals below 60 must not tempt an adult lead');
 });
 
 test('prior-lunch dialogue is reachable only through the flag that proves the lunch happened', () => {

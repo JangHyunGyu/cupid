@@ -157,6 +157,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "after5_farewell_seo_1": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_normal.png",
+        "affinityGuard": {"character":"Seoyeon","minAffinity":40,"fallback":"after5_farewell_seo_low"},
         "next": "after5_farewell_seo_2"
     },
     "after5_farewell_seo_2": {
@@ -210,6 +211,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "after5_farewell_yuna_1": {
         "background": "assets/images/background/library_old.png",
         "character": "assets/images/characters/yuna_normal.png",
+        "affinityGuard": {"character":"Yuna","minAffinity":40,"fallback":"after5_farewell_yuna_low"},
         "next": "after5_farewell_yuna_2"
     },
     "after5_farewell_yuna_2": {
@@ -252,6 +254,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "after5_farewell_dain_1": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
+        "affinityGuard": {"character":"Dain","minAffinity":40,"fallback":"after5_farewell_dain_low"},
         "next": "after5_farewell_dain_2"
     },
     "after5_farewell_dain_2": {
@@ -732,6 +735,21 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/park.png",
         "character": null,
         "next": "ending_start"
+    },
+    "after5_farewell_seo_low": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "after5_farewell_yuna_check"
+    },
+    "after5_farewell_yuna_low": {
+        "background": "assets/images/background/library_old.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "after5_farewell_dain_check"
+    },
+    "after5_farewell_dain_low": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "after5_sunset_1"
     }
     };
     for (const scene of Object.values(scenes)) {

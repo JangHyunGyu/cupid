@@ -1,4 +1,7 @@
 {
+    "confess_seo_low": {"name":"Seoyeon","text":"*Seoyeon holt den Schlüssel zum Schuldach hervor und steckt ihn dann wieder ein.* Lassen wir es für heute dabei. Ich glaube nicht, dass es richtig wäre, wenn wir uns jetzt noch näherkommen."},
+    "confess_yuna_low": {"name":"Yuna","text":"*Yuna blickt zum Nebengebäude und wendet sich dann ab.* Für heute reicht es. Ich kann gerade nicht darüber reden, dass wir uns näherkommen."},
+    "confess_dain_low": {"name":"Dain","text":"*Dain geht in Richtung Sporthalle, hält dann aber an und richtet den Riemen ihrer Balltasche.* Lassen wir es für heute gut sein. Wenn wir weiterreden, machen wir es uns nur schwerer."},
     "confess_seo_1": {
         "name": "{name}",
         "text": "*Das Date ist vorbei. Statt zum Schultor gehen wir hinauf aufs Dach.*"

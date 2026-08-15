@@ -63,6 +63,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": null,
         "leadCharacter": "Teacher",
         "minLeadAffinity": 60,
+        "minRivalAffinity": 60,
         "rankedRivalBranches": [
             { "character": "Seoyeon", "next": "day4_teacher_seoyeon_counteroffer" },
             { "character": "Dain", "next": "day4_teacher_dain_counteroffer" },
@@ -75,6 +76,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": null,
         "leadCharacter": "Nurse",
         "minLeadAffinity": 60,
+        "minRivalAffinity": 60,
         "rankedRivalBranches": [
             { "character": "Seoyeon", "next": "day4_nurse_seoyeon_counteroffer" },
             { "character": "Dain", "next": "day4_nurse_dain_counteroffer" },
@@ -533,6 +535,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": null,
         "leadCharacter": "Seoyeon",
         "minLeadAffinity": 60,
+        "minRivalAffinity": 60,
         "rankedRivalBranches": [
             { "character": "Dain", "next": "wall_seo_glimpse_1" },
             { "character": "Yuna", "next": "wall_seo_yuna_tempt_1" }
@@ -1024,6 +1027,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": null,
         "leadCharacter": "Dain",
         "minLeadAffinity": 60,
+        "minRivalAffinity": 60,
         "rankedRivalBranches": [
             { "character": "Seoyeon", "next": "wall_dain_seo_tempt_1" },
             { "character": "Yuna", "next": "wall_dain_glimpse_1" }
@@ -1385,6 +1389,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": null,
         "leadCharacter": "Yuna",
         "minLeadAffinity": 60,
+        "minRivalAffinity": 60,
         "rankedRivalBranches": [
             { "character": "Seoyeon", "next": "wall_yuna_glimpse_1" },
             { "character": "Dain", "next": "wall_yuna_dain_tempt_1" }

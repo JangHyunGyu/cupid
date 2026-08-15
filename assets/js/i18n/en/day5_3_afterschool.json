@@ -1,4 +1,7 @@
 {
+    "after5_farewell_seo_low": {"name":"Seoyeon","text":"*You run into Seoyeon in the hallway. She pauses, then gives you a single nod.* I know what you decided. I have nothing else to say."},
+    "after5_farewell_yuna_low": {"name":"Yuna","text":"*Your eyes meet outside the library. Yuna holds her book close and gives you a small nod.* Bye."},
+    "after5_farewell_dain_low": {"name":"Dain","text":"*Dain walks up outside the gym and stops two paces away.* I know what you decided. I'm going in."},
     "after5_start": {},
     "after5_waited_start_branch": {
         "name": "System",

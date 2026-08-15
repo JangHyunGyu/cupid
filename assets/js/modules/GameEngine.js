@@ -725,7 +725,10 @@ class GameEngine {
         // 특정 캐릭터의 현재 호감도에 따라 다른 씬으로 분기
         if (choice.affinityBranches && choice.affinityChar) {
             // 기준 캐릭터의 현재 호감도 가져오기
-            const currentAff = this.stateManager.getAffinity(choice.affinityChar);
+            const currentAff = this.sceneRenderer.getRoutingAffinity(
+                choice.affinityChar,
+                choice.affinityCandidates
+            );
 
             // 호감도 높은 순으로 정렬 (내림차순)
             // → 가장 높은 조건부터 체크해서 첫 번째로 만족하는 것 선택
@@ -920,10 +923,14 @@ class GameEngine {
             return;
         }
 
-        // 분기 전용 씬은 배경·캐릭터·번역문을 그리지 않고 최종 장면까지 먼저 해석한다.
-        // 엔딩 보너스처럼 결과별 장소가 다른 경우, 공통 중간 장면이 잠깐 노출되는 것을 막는다.
+        // 분기 전용 씬과 호감도 진입 가드는 배경·캐릭터·번역문을 그리기 전에 해석한다.
+        // 약속 플래그가 남아 있어도 현재 관계가 악화됐다면 높은 친밀도 장면을 노출하지 않는다.
         const preRenderVisited = new Set();
-        while (scene?.routeBeforeRender === true) {
+        while (scene) {
+            const guardedNext = this.sceneRenderer.resolveAffinityGuard(scene);
+            const shouldRoute = scene.routeBeforeRender === true;
+            if (!guardedNext && !shouldRoute) break;
+
             if (preRenderVisited.has(sceneId)) {
                 console.error(`[GameEngine] 사전 분기 순환 감지: ${sceneId}`);
                 this._isRendering = false;
@@ -931,7 +938,7 @@ class GameEngine {
             }
             preRenderVisited.add(sceneId);
 
-            const nextId = this.sceneRenderer.resolveNextScene(scene);
+            const nextId = guardedNext || this.sceneRenderer.resolveNextScene(scene);
             if (!nextId || nextId === sceneId) {
                 console.error(`[GameEngine] 사전 분기 대상이 올바르지 않음: ${sceneId}`);
                 this._isRendering = false;

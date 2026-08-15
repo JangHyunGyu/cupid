@@ -1,4 +1,7 @@
 {
+    "confess_seo_low": {"name":"Seoyeon","text":"*Seoyeon takes out the rooftop key, then puts it back in her pocket.* Let's stop here today. I don't think getting any closer is right for us now."},
+    "confess_yuna_low": {"name":"Yuna","text":"*Yuna looks toward the annex, then turns away.* This is it for today. I can't talk about us getting closer right now."},
+    "confess_dain_low": {"name":"Dain","text":"*Dain starts toward the gym, then stops to adjust the strap of her ball bag.* Let's call it here today. If we keep talking, we'll just make this harder for each other."},
     "confess_seo_1": {
         "name": "{name}",
         "text": "*The date is over. Instead of heading for the front gate, we go up to the rooftop.*"

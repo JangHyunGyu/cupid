@@ -1,4 +1,7 @@
 {
+    "date_seo_low": {"name":"Seoyeon","text":"*Le banc près de la fontaine est vide. Un message de Seoyeon arrive peu après.* Je pense qu'on ferait mieux de ne pas se voir seuls aujourd'hui. À la semaine prochaine au lycée."},
+    "date_yuna_low": {"name":"Yuna","text":"*Yuna est déjà devant le café. Elle réajuste la bandoulière de son sac et recule d'un pas.* Je pense qu'on ferait mieux de ne pas rester longtemps seuls pour le moment. Arrêtons-nous là aujourd'hui."},
+    "date_dain_low": {"name":"Dain","text":"*Devant le gymnase, Dain réajuste la sangle de son sac à ballons.* Je n'ai pas envie de traîner ensemble aujourd'hui. On se voit au lycée."},
     "date_seo_1": {
         "name": "{name}",
         "text": "*Seoyeon m'attend déjà devant la fontaine. Pas de porte-bloc cette fois ; seule la bandoulière de son sac s'enroule autour de son doigt.*"

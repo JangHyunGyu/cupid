@@ -138,6 +138,17 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
     if (scene.rankedRivalFallback && !sceneExists(scene.rankedRivalFallback)) {
         errors.push('[SCENE_REF] ' + sceneId + ' rankedRivalFallback="' + scene.rankedRivalFallback + '" not found');
     }
+    if (scene.affinityGuard) {
+        const guard = scene.affinityGuard;
+        if (!guard.character || !Number.isFinite(Number(guard.minAffinity)) || !guard.fallback) {
+            errors.push('[AFFINITY_GUARD] ' + sceneId + ': character, finite minAffinity, and fallback are required');
+        } else if (!sceneExists(guard.fallback)) {
+            errors.push('[AFFINITY_GUARD] ' + sceneId + ': fallback="' + guard.fallback + '" not found');
+        }
+    }
+    if (scene.minRivalAffinity !== undefined && !Number.isFinite(Number(scene.minRivalAffinity))) {
+        errors.push('[AFFINITY_RIVAL] ' + sceneId + ': minRivalAffinity must be finite');
+    }
 }
 
 // ===== 2. Image File Existence =====
@@ -347,6 +358,7 @@ while (queue.length > 0) {
     if (scene.affinityBranches) scene.affinityBranches.forEach(b => addTarget(b.next));
     if (scene.rankedRivalBranches) scene.rankedRivalBranches.forEach(b => addTarget(b.next));
     addTarget(scene.rankedRivalFallback);
+    addTarget(scene.affinityGuard?.fallback);
     if (scene.fallback) addTarget(scene.fallback);
 }
 const unreachable = Object.keys(allScenes).filter(id => !reachable.has(id));
@@ -938,16 +950,23 @@ class SimState {
 
 // 간이 resolveNextScene (SceneRenderer 로직 재현)
 function simResolveNext(scene, state) {
+    // 0. 현재 호감도가 장면 진입 기준 아래면 전용 거리 두기 장면으로 우회
+    if (scene.affinityGuard) {
+        const guard = scene.affinityGuard;
+        if (state.getAffinity(guard.character) < Number(guard.minAffinity)) return guard.fallback;
+    }
     // 1. rankedRivalBranches
     if (scene.rankedRivalBranches && scene.rankedRivalBranches.length > 0) {
         const leadAffinity = state.getAffinity(scene.leadCharacter);
         const minLeadAffinity = Number(scene.minLeadAffinity ?? -100);
+        const minRivalAffinity = Number(scene.minRivalAffinity ?? -100);
         const rankedRivals = scene.rankedRivalBranches
             .filter(branch => branch.character && branch.next)
             .map((branch, index) => ({ ...branch, affinity: state.getAffinity(branch.character), _i: index }))
             .sort((a, b) => b.affinity - a.affinity || a._i - b._i);
         const strongestRival = rankedRivals[0];
-        if (strongestRival && leadAffinity >= strongestRival.affinity && leadAffinity >= minLeadAffinity) {
+        if (strongestRival && strongestRival.affinity >= minRivalAffinity
+            && leadAffinity >= strongestRival.affinity && leadAffinity >= minLeadAffinity) {
             return strongestRival.next;
         }
         return scene.rankedRivalFallback || scene.next || null;
@@ -956,7 +975,10 @@ function simResolveNext(scene, state) {
     if (scene.affinityBranches && scene.affinityBranches.length > 0) {
         if (scene.affinityChar) {
             // 단일 캐릭터 호감도 분기 (affinityChar 지정)
-            const currentAff = state.getAffinity(scene.affinityChar);
+            const currentAff = scene.affinityChar === 'selectByHighestAffinity'
+                ? Math.max(...(scene.affinityCandidates || ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse'])
+                    .map(character => state.getAffinity(character)))
+                : state.getAffinity(scene.affinityChar);
             const sorted = [...scene.affinityBranches]
                 .map((b, i) => ({ ...b, _i: i }))
                 .sort((a, b) => (b.minAffinity || 0) - (a.minAffinity || 0) || a._i - b._i);

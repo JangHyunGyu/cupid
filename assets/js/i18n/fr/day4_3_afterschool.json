@@ -1,4 +1,7 @@
 {
+    "confess_seo_low": {"name":"Seoyeon","text":"*Seoyeon sort la clé du toit, puis la remet dans sa poche.* Arrêtons-nous là aujourd'hui. Je ne pense pas qu'on doive se rapprocher davantage maintenant."},
+    "confess_yuna_low": {"name":"Yuna","text":"*Yuna regarde vers l'annexe, puis fait demi-tour.* C'est tout pour aujourd'hui. Je ne peux pas parler de nous rapprocher davantage maintenant."},
+    "confess_dain_low": {"name":"Dain","text":"*Dain commence à marcher vers le gymnase, puis s'arrête pour réajuster la sangle de son sac à ballons.* On s'arrête là aujourd'hui. Si on continue, on ne fera que rendre les choses plus difficiles."},
     "confess_seo_1": {
         "name": "{name}",
         "text": "*Le rendez-vous est terminé. Au lieu de passer le portail, nous montons sur le toit.*"

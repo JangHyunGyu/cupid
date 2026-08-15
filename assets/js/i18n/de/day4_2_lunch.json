@@ -1,4 +1,7 @@
 {
+    "date_seo_low": {"name":"Seoyeon","text":"*Die Bank am Brunnen ist leer. Kurz darauf kommt eine Nachricht von Seoyeon.* Ich glaube nicht, dass wir uns heute allein treffen sollten. Wir sehen uns nächste Woche in der Schule."},
+    "date_yuna_low": {"name":"Yuna","text":"*Yuna wartet bereits vor dem Café. Sie richtet den Riemen ihrer Tasche und macht einen Schritt zurück.* Ich glaube nicht, dass wir gerade lange allein sein sollten. Lassen wir es für heute dabei."},
+    "date_dain_low": {"name":"Dain","text":"*Vor der Sporthalle richtet Dain den Riemen ihrer Balltasche.* Mir ist heute nicht danach, etwas zu unternehmen. Wir sehen uns in der Schule."},
     "date_seo_1": {
         "name": "{name}",
         "text": "*Seoyeon wartet schon am Brunnen. Kein Klemmbrett, nur der Taschenriemen, der sich um ihre Finger wickelt.*"

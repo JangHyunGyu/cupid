@@ -1,4 +1,7 @@
 {
+    "confess_seo_low": {"name":"Seoyeon","text":"*Seoyeon saca la llave de la azotea, pero vuelve a guardarla en el bolsillo.* Dejémoslo aquí por hoy. Ahora no creo que debamos acercarnos más."},
+    "confess_yuna_low": {"name":"Yuna","text":"*Yuna mira hacia el anexo y luego se da la vuelta.* Esto es todo por hoy. Ahora no puedo hablar de que nos acerquemos más."},
+    "confess_dain_low": {"name":"Dain","text":"*Dain echa a andar hacia el gimnasio, se detiene y se ajusta la correa de la bolsa de balones.* Dejémoslo aquí por hoy. Si seguimos hablando, solo nos lo pondremos más difícil."},
     "confess_seo_1": {
         "name": "{name}",
         "text": "*La cita está llegando a su fin. En vez de ir a la entrada, subimos a la azotea.*"

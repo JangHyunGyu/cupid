@@ -1,4 +1,7 @@
 {
+    "after5_farewell_seo_low": {"name":"Seoyeon","text":"*Tu croises Seoyeon dans le couloir. Elle s'arrête un instant et se contente d'incliner la tête.* Je sais ce que tu as décidé. Je n'ai rien d'autre à dire."},
+    "after5_farewell_yuna_low": {"name":"Yuna","text":"*Vos regards se croisent devant la bibliothèque. Yuna serre son livre contre elle et hoche brièvement la tête.* Salut."},
+    "after5_farewell_dain_low": {"name":"Dain","text":"*Dain s'approche devant le gymnase et s'arrête à deux pas de toi.* Je sais ce que tu as décidé. Je rentre."},
     "after5_start": {},
     "after5_waited_start_branch": {
         "name": "Système",

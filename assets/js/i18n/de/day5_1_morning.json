@@ -1,4 +1,6 @@
 {
+    "hidden_homeroom_d5_low": {"name":"Klassenlehrerin","text":"*Deine Klassenlehrerin legt das gefaltete Manuskript in ihre Mappe und schließt sie.* Lassen wir es dabei. Den Rest erledige ich im Unterricht."},
+    "hidden_nurse_d5_low": {"name":"Schulkrankenschwester","text":"*Die Schulkrankenschwester will dir eine Karte für das Beratungszimmer geben, legt sie dann aber zurück in die Schublade.* Ich glaube nicht, dass wir gerade einen eigenen Termin vereinbaren sollten. Wenn du Hilfe brauchst, nutze bitte den offiziellen Weg. *Ich verlasse das Krankenzimmer und gehe zurück ins Klassenzimmer.*"},
     "morning5_start": {
         "name": "{name}",
         "text": "*Fünfter Tag. Obwohl Sonntag ist, findet in der Schule eine Veranstaltung statt. Der Ärmel meiner Uniform kratzt nicht mehr am Handgelenk.*"

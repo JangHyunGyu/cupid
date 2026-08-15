@@ -180,6 +180,35 @@ class SceneRenderer {
     }
 
     /**
+     * 호감도 라우팅에서 사용할 현재 값을 계산한다.
+     * selectByHighestAffinity는 명시된 후보 중 가장 높은 실시간 호감도를 사용한다.
+     */
+    getRoutingAffinity(affinityChar, affinityCandidates = []) {
+        if (affinityChar !== 'selectByHighestAffinity') {
+            return this.stateManager.getAffinity(affinityChar);
+        }
+
+        const candidates = Array.isArray(affinityCandidates) && affinityCandidates.length > 0
+            ? affinityCandidates
+            : ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse'];
+        return Math.max(...candidates.map(character => this.stateManager.getAffinity(character)));
+    }
+
+    /**
+     * 장면 진입 전에 현재 호감도를 다시 확인한다.
+     * 약속/루트 플래그가 남아 있어도 관계가 기준 아래로 내려갔다면 전용 장면으로 보낸다.
+     */
+    resolveAffinityGuard(scene) {
+        const guard = scene?.affinityGuard;
+        if (!guard?.character || !guard?.fallback) return null;
+
+        const minAffinity = Number(guard.minAffinity);
+        if (!Number.isFinite(minAffinity)) return null;
+        const currentAffinity = this.stateManager.getAffinity(guard.character);
+        return currentAffinity < minAffinity ? guard.fallback : null;
+    }
+
+    /**
      * 다음 씬 ID 결정 (분기 로직 처리)
      *
      * ▶ 분기 유형:
@@ -200,6 +229,7 @@ class SceneRenderer {
             const leadCharacter = scene.leadCharacter;
             const leadAffinity = this.stateManager.getAffinity(leadCharacter);
             const minLeadAffinity = Number(scene.minLeadAffinity ?? -100);
+            const minRivalAffinity = Number(scene.minRivalAffinity ?? -100);
             const rankedRivals = scene.rankedRivalBranches
                 .filter(branch => branch.character && branch.next)
                 .map((branch, index) => ({
@@ -211,7 +241,8 @@ class SceneRenderer {
 
             const strongestRival = rankedRivals[0];
             const leadIsHighest = strongestRival && leadAffinity >= strongestRival.affinity;
-            if (leadIsHighest && leadAffinity >= minLeadAffinity) return strongestRival.next;
+            const rivalIsEligible = strongestRival && strongestRival.affinity >= minRivalAffinity;
+            if (leadIsHighest && rivalIsEligible && leadAffinity >= minLeadAffinity) return strongestRival.next;
             if (scene.rankedRivalFallback) return scene.rankedRivalFallback;
         }
 
@@ -219,7 +250,7 @@ class SceneRenderer {
         if (scene.affinityBranches) {
             if (scene.affinityChar) {
                 // 단일 캐릭터 호감도 분기
-                const currentAff = this.stateManager.getAffinity(scene.affinityChar);
+                const currentAff = this.getRoutingAffinity(scene.affinityChar, scene.affinityCandidates);
                 const sortedBranches = [...scene.affinityBranches]
                     .map((branch, index) => ({ ...branch, _originalIndex: index }))
                     .sort((a, b) => b.minAffinity - a.minAffinity || a._originalIndex - b._originalIndex);

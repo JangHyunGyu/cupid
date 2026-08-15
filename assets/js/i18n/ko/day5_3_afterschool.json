@@ -1,4 +1,7 @@
 {
+    "after5_farewell_seo_low": {"name":"서연","text":"*복도에서 서연과 마주친다. 서연은 잠시 멈췄다가 고개만 한 번 숙인다.* 네가 정한 건 알아. 더 할 말은 없어."},
+    "after5_farewell_yuna_low": {"name":"유나","text":"*도서관 앞에서 유나와 눈이 마주친다. 유나는 들고 있던 책을 품에 붙인 채 짧게 고개를 끄덕인다.* 잘 가."},
+    "after5_farewell_dain_low": {"name":"다인","text":"*체육관 앞에서 다인이 걸어오다 두 걸음 떨어진 곳에 멈춘다.* 네가 정한 건 알겠어. 나 먼저 들어갈게."},
     "after5_start": {},
     "after5_waited_start_branch": {
         "name": "시스템",

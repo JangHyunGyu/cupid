@@ -1,4 +1,6 @@
 {
+    "hidden_homeroom_d5_low": {"name":"Professeure principale","text":"*La professeure principale range le manuscrit plié dans son dossier et le referme.* Arrêtons cette histoire ici. Je réglerai le reste en cours."},
+    "hidden_nurse_d5_low": {"name":"Infirmière","text":"*L'infirmière commence à te tendre une carte du bureau d'entretien, puis la remet dans le tiroir.* Je pense qu'il vaut mieux ne pas prendre de rendez-vous séparé pour le moment. Si tu en as besoin, passe par la procédure officielle. *Je quitte l'infirmerie et retourne en classe.*"},
     "morning5_start": {
         "name": "{name}",
         "text": "*Cinquième jour. C'est dimanche, mais l'école organise une activité. Le bord de mes manches ne m'irrite plus le poignet.*"

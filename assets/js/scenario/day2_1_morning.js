@@ -236,6 +236,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "hidden_homeroom_d2_1": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/teacher_normal.png",
+        "affinityGuard": {"character":"Teacher","minAffinity":15,"fallback":"hidden_homeroom_d2_low"},
         "next": "hidden_homeroom_d2_1_b"
     },
     "hidden_homeroom_d2_1_b": {
@@ -416,6 +417,11 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "character": "assets/images/characters/teacher_normal.png",
         "type": "free_talk",
         "maxTurns": 3,
+        "next": "morning2_seo_dust_1"
+    },
+    "hidden_homeroom_d2_low": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "morning2_seo_dust_1"
     },
     "morning2_seo_dust_1": {

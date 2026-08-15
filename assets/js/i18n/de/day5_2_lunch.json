@@ -1,4 +1,7 @@
 {
+    "tour_seo_low": {"name":"Seoyeon","text":"*Am Ende des Flurs begegnest du Seoyeon. Sie richtet den Riemen ihrer Tasche und tritt einen halben Schritt zur Seite.* Sehen wir uns heute getrennt um. Ich muss noch etwas erledigen."},
+    "tour_yuna_low": {"name":"Yuna","text":"*Die Tür zum Nebengebäude ist abgeschlossen. Kurz darauf kommt eine knappe Nachricht von Yuna.* Ich möchte heute allein sein. *Ich kehre vom Nebengebäude um und gehe zurück auf den Flur.*"},
+    "tour_dain_low": {"name":"Dain","text":"*Vor der Sporthalle triffst du auf Dain. Mit einem Ball in den Händen dreht sie sich wieder zum Spielfeld.* Ich muss heute trainieren. Bis später."},
     "tour_seo_1": {
         "name": "{name}",
         "text": "*Wir stehen nebeneinander vor dem Schultor. Genau die Stelle, an der Seoyeon am ersten Tag gewartet hat.*"

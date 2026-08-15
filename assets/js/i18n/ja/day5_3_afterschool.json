@@ -1,4 +1,7 @@
 {
+    "after5_farewell_seo_low": {"name":"ソヨン","text":"*廊下でソヨンと鉢合わせる。ソヨンは少し立ち止まり、一度だけ頭を下げる。* あなたが決めたことは分かってる。もう話すことはないよ。"},
+    "after5_farewell_yuna_low": {"name":"ユナ","text":"*図書館の前でユナと目が合う。ユナは本を胸元に抱えたまま、小さくうなずく。* じゃあね。"},
+    "after5_farewell_dain_low": {"name":"ダイン","text":"*体育館の前でダインが歩いてきて、二歩分の距離を置いて止まる。* あんたが決めたことは分かった。先に入るね。"},
     "after5_start": {},
     "after5_waited_start_branch": {
         "name": "システム",

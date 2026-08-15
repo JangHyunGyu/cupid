@@ -1,4 +1,9 @@
 {
+    "hidden_homeroom_d3_low": {"name":"Homeroom Teacher","text":"*At the empty classroom door, your homeroom teacher stops and points down the hall instead of toward the desks.* Let's keep it to classwork today."},
+    "hidden_nurse_d3_low": {"name":"School Nurse","text":"*The school nurse stays by the door without pulling out the counseling chair.* I don't think we should continue this conversation alone right now. If you need something, come during official counseling hours."},
+    "morning3_date_seo_low": {"name":"Seoyeon","text":"*Seoyeon turns on her phone, then immediately switches it off. When your eyes meet, she looks down at her clipboard.* I'll post the weekend schedule in the group chat."},
+    "morning3_date_dain_low": {"name":"Dain","text":"*Dain holds a volleyball against her side, glances your way, then looks back toward the court.* I'm practicing alone this weekend."},
+    "morning3_date_yuna_low": {"name":"Yuna","text":"*Yuna starts to pull out a folded note, then slips it back between the pages of her book.* This weekend... I think I'd rather be alone."},
     "morning3_start": {
         "name": "{name}",
         "text": "*Day three. I overslept and shut off my alarm three times. I stayed up too late reading messages last night.*"
