@@ -21,25 +21,42 @@
     // Given Cupid's 5 days x 4 slots, they are:
     const slots = ['morning', 'lunch', 'afterschool', 'night'];
     const days = [1, 2, 3, 4, 5];
-    const fetchPromises = [];
+    const fetchTasks = [];
 
     // 개별 파일 fetch + 재시도 (네트워크 순간 실패로 name 필드가 비어있는 씬 방지)
-    async function fetchJsonWithRetry(url, retries = 3) {
+    async function fetchJsonWithRetry(url, retries = 5) {
         let lastErr;
         for (let attempt = 0; attempt < retries; attempt++) {
             try {
-                const res = await fetch(url, { cache: 'no-store' });
+                const res = await fetch(url, { cache: attempt === 0 ? 'default' : 'reload' });
                 if (!res.ok) throw new Error(`HTTP ${res.status}`);
                 return await res.json();
             } catch (e) {
                 lastErr = e;
-                // 지수 백오프: 200ms, 400ms, 800ms
                 if (attempt < retries - 1) {
-                    await new Promise(r => setTimeout(r, 200 * Math.pow(2, attempt)));
+                    await new Promise(r => setTimeout(r, Math.min(2000, 250 * Math.pow(2, attempt))));
                 }
             }
         }
         throw lastErr;
+    }
+
+    async function runFetchTasks(tasks, concurrency = 4) {
+        const results = new Array(tasks.length);
+        let nextIndex = 0;
+        async function worker() {
+            while (nextIndex < tasks.length) {
+                const index = nextIndex++;
+                try {
+                    results[index] = { status: 'fulfilled', value: await tasks[index]() };
+                } catch (reason) {
+                    results[index] = { status: 'rejected', reason };
+                }
+            }
+        }
+        const workerCount = Math.min(Math.max(1, concurrency), tasks.length);
+        await Promise.all(Array.from({ length: workerCount }, () => worker()));
+        return results;
     }
 
     for (const locale of locales) {
@@ -52,7 +69,7 @@
 
                 // Promise.allSettled로 수집하므로 개별 rejection은 상위로 전파되지 않음
                 // (bingbot 등 크롤러가 Cloudflare에 차단당해 403 받을 때 unhandled rejection 발생하던 문제 방지)
-                const promise = fetchJsonWithRetry(`${basePath}/${file}`)
+                const task = () => fetchJsonWithRetry(`${basePath}/${file}`)
                     .then(data => {
                         Object.assign(localeData[locale], data);
                         return { locale, file, ok: true };
@@ -63,7 +80,7 @@
                         throw error;
                     });
 
-                fetchPromises.push(promise);
+                fetchTasks.push(task);
             }
         }
     }
@@ -74,7 +91,7 @@
     // However, this script is loaded synchronously via document.write, while fetch is async.
     // Store the i18n ready promise globally so that initGame/initGameFromSave can await it.
     // This avoids the race condition where window.initGame is not yet defined when this script runs.
-    window._i18nReady = Promise.allSettled(fetchPromises).then(results => {
+    window._i18nReady = runFetchTasks(fetchTasks).then(results => {
         const failures = results.filter(r => r.status === 'rejected');
         const targetSuccessCount = results.filter(r => (
             r.status === 'fulfilled' && r.value && r.value.locale === lang

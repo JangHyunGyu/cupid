@@ -193,6 +193,7 @@ class SoundManager {
     }
 
     _isRetryableAudioError(error) {
+        if (this._isAudioDecodeError(error)) return true;
         const name = String(error?.name || '');
         const message = String(error?.message || error || '');
         if (name === 'AbortError' || name === 'NetworkError') return true;
