@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.62';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.63';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 const GalleryFreeTalkCore = window.CupidFreeTalkCore;
@@ -35,7 +35,7 @@ function getGalleryCharacterAdultIntimacy(charId, lang = 'ko') {
     if (typeof window.getCupidCharacterAdultIntimacy !== 'function') {
         throw new Error('getCupidCharacterAdultIntimacy must be loaded before GalleryFreeTalk');
     }
-    return window.getCupidCharacterAdultIntimacy(charId, charId, lang);
+    return window.getCupidCharacterAdultIntimacy(charId, charId, lang, 'gallery');
 }
 
 const normalizeGalleryPromptBlockForCache = GalleryFreeTalkCore.normalizePromptBlockForCache;

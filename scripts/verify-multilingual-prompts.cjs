@@ -73,6 +73,13 @@ const galleryIds = {
     Teacher: 'teacher',
     Nurse: 'nurse'
 };
+const mainAdultIntimacySignals = {
+    Seoyeon: 'moans are bitten-off, never a cute stammer',
+    Yuna: 'speech is more/here/don’t let go',
+    Dain: 'moans openly, and talks honestly',
+    Teacher: 'homeroom teacher now, not a graduated lover',
+    Nurse: 'school nurse now, not a graduated lover'
+};
 const galleryAdultIntimacySignals = {
     Seoyeon: 'moans are bitten-off, never a cute stammer',
     Yuna: 'speech is more/here/don’t let go',
@@ -393,7 +400,7 @@ for (const lang of languages) {
             `[${lang}/${char}] main prompt is missing the conditional adult vocalization rule`);
         if (lang === 'en') {
             assert(systemPrompt.includes('Adult sex stays')
-                && systemPrompt.includes(galleryAdultIntimacySignals[char]),
+                && systemPrompt.includes(mainAdultIntimacySignals[char]),
                 `[${lang}/${char}] main prompt is missing direct, character-owned adult intimacy guidance`);
         }
         assert(systemPrompt.includes('do not fade to a hug, afterglow, or metaphor')

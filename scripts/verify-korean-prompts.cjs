@@ -7,8 +7,8 @@ const CHARACTERS = [
     { key: 'Seoyeon', mainName: '서연', sharedName: '서연', galleryId: 'seyoun', cardSignal: '학생회장', relationshipSignal: '작은 다육이', voiceSignal: '시간·순서·약속', intimateSignal: '참다 새는 하·윽' },
     { key: 'Yuna', mainName: '유나', sharedName: '유나', galleryId: 'yuna', cardSignal: '영구 문신', relationshipSignal: '이어폰 한쪽', voiceSignal: '사라진 시간을 정확히 되묻고', intimateSignal: '더·여기·놓지 마' },
     { key: 'Dain', mainName: '다인', sharedName: '다인', galleryId: 'dain', cardSignal: '배구부 선수', relationshipSignal: '리듬게임', voiceSignal: '결론과 동사가 앞서고', intimateSignal: '야·같이·좋아' },
-    { key: 'Teacher', mainName: '담임', sharedName: '담임선생님', galleryId: 'teacher', cardSignal: '담임 교사', relationshipSignal: '미완성 원고', voiceSignal: '엉성한 전제', intimateSignal: '옛 사제 호칭에 죄책감과 흥분' },
-    { key: 'Nurse', mainName: '보건', sharedName: '보건선생님', galleryId: 'nurse', cardSignal: '보건 교사', relationshipSignal: '로즈마리 향', voiceSignal: '표정·호흡·몸 상태', intimateSignal: '옛 보건실 금기' }
+    { key: 'Teacher', mainName: '담임', sharedName: '담임선생님', galleryId: 'teacher', cardSignal: '담임 교사', relationshipSignal: '미완성 원고', voiceSignal: '엉성한 전제', intimateSignal: '지금 이 학생의 담임', intimateGallerySignal: '옛 사제 호칭에 죄책감과 흥분' },
+    { key: 'Nurse', mainName: '보건', sharedName: '보건선생님', galleryId: 'nurse', cardSignal: '보건 교사', relationshipSignal: '로즈마리 향', voiceSignal: '표정·호흡·몸 상태', intimateSignal: '지금 이 학교의 보건교사', intimateGallerySignal: '옛 보건실 금기' }
 ];
 const REQUIRED_BLOCKS = [
     '[한국어 원문체]',
@@ -275,13 +275,19 @@ function verifyMainAndGalleryPrompts(context) {
         assert(galleryPrompt.includes('연인 관계:'), `[gallery/${character.key}] missing the relationship label`);
         assert(galleryPrompt.includes('보지·자지·삽입·애액·정액·절정'),
             `[gallery/${character.key}] can still hide established adult sex behind indirect wording`);
-        assert(galleryPrompt.includes(character.intimateSignal),
+        assert(galleryPrompt.includes(character.intimateGallerySignal || character.intimateSignal),
             `[gallery/${character.key}] is missing its character-owned adult intimacy cadence`);
         if (character.key === 'Teacher' || character.key === 'Nurse') {
             assert(galleryPrompt.includes('죄책감') && galleryPrompt.includes('흥분'),
                 `[gallery/${character.key}] adult sex no longer mixes leftover teacher-student guilt with arousal`);
             assert(!galleryPrompt.includes('금단이나 죄책감을 되풀이하지 않습니다'),
                 `[gallery/${character.key}] still forbids leftover taboo during established adult sex`);
+            assert(!galleryPrompt.includes('졸업한 연인이 아닙니다'),
+                `[gallery/${character.key}] still treats post-graduation sex as a current school affair`);
+            assert(mainPrompt.includes('졸업한 연인이 아닙니다'),
+                `[main/${character.key}] school-era sex can still collapse into a graduated-lover frame`);
+            assert(!mainPrompt.includes('이미 성인 연인'),
+                `[main/${character.key}] school-era sex still assumes a post-graduation relationship`);
         }
         assert(mainPrompt.includes('보지·자지·삽입·애액·정액·절정'),
             `[main/${character.key}] can still hide established adult sex behind indirect wording`);
