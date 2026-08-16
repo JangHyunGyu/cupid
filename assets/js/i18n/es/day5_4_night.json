@@ -868,7 +868,7 @@
     },
     "true_epilogue_2": {
         "name": "{name}",
-        "text": "*El uniforme estaba rígido. Los cerezos solo me picaban la nariz. Frente a la entrada, las manos se metieron en los bolsillos.*"
+        "text": "*El día de la graduación, el uniforme estaba rígido. Los cerezos solo me picaban la nariz. Frente a la entrada del colegio, metí las manos en los bolsillos.*"
     },
     "true_epilogue_3": {
         "name": "{name}",
@@ -1446,7 +1446,7 @@
     },
     "date_choice_perfect_seo": {
         "name": "Seoyeon",
-        "text": "Dije que lo demás podía esperar a mañana. Antes, ¿adónde vamos hoy?",
+        "text": "*Al día siguiente de la ceremonia de ingreso, vuelvo a encontrarme con Seoyeon en la azotea.* Dijimos que el resto podía esperar hasta mañana. Antes de eso, ¿adónde quieres ir hoy?",
         "choices": [
             "A la azotea.",
             "Al café."
@@ -1478,7 +1478,7 @@
     },
     "date_choice_perfect_yuna": {
         "name": "Yuna",
-        "text": "Fuera también hay sitio. Elige.",
+        "text": "*El primer fin de semana tras publicarse su libro, Yuna y yo pasamos por una librería de segunda mano.* También podemos ir a otro sitio. Elige tú.",
         "choices": [
             "La librería de viejo.",
             "La azotea."
@@ -1546,7 +1546,7 @@
     },
     "date_choice_perfect_teacher": {
         "name": "Profesora",
-        "text": "Hay un lado donde se puede caminar sin cargo. Elige.",
+        "text": "*El primer fin de semana tras publicarse su segundo libro, la profesora cierra la carta en una cafetería.* Ya podemos dejar los cargos a un lado. ¿Adónde quieres ir?",
         "choices": [
             "El café.",
             "La exposición."
@@ -1658,7 +1658,7 @@
     },
     "date_choice_true_dain": {
         "name": "Dain",
-        "text": "Quédate cerca un minuto. ¿Dónde te viene mejor?",
+        "text": "*Sentada en un banco del gimnasio, Dain da unas palmadas en el sitio a su lado.* Quédate conmigo un momento. ¿Dónde te viene mejor?",
         "choices": [
             "El banco.",
             "La cabina."

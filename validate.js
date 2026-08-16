@@ -2540,6 +2540,10 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
     const nextId = scene.next;
     const lookaheadEntry = nextScene.next && allScenes[nextScene.next] ? allScenes[nextScene.next] : null;
 
+    // 사전 분기 노드는 화면에 그려지지 않으므로 그 노드의 임시 배경도 실제 전환이 아니다.
+    // 실제 렌더링은 GameEngine이 routeBeforeRender 체인을 해석한 뒤 시작한다.
+    if (nextScene.routeBeforeRender === true) continue;
+
     // 현재 씬과 다음 씬 모두 배경이 명시적으로 있고, 서로 다른 경우
     if (scene.background && nextScene.background && scene.background !== nextScene.background) {
         // Day 전환 / 타임슬롯 전환 패턴은 배경 변경이 정상이므로 제외

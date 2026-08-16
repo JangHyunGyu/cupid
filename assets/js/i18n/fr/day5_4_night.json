@@ -868,7 +868,7 @@
     },
     "true_epilogue_2": {
         "name": "{name}",
-        "text": "*L'uniforme était raide. Les cerisiers ne me piquaient que le nez. Devant le portail, mes mains sont allées dans les poches.*"
+        "text": "*Le jour de la remise des diplômes, l'uniforme était raide. Les fleurs de cerisier ne faisaient que me chatouiller le nez. Devant le portail de l'école, j'ai glissé les mains dans mes poches.*"
     },
     "true_epilogue_3": {
         "name": "{name}",
@@ -1446,7 +1446,7 @@
     },
     "date_choice_perfect_seo": {
         "name": "Seoyeon",
-        "text": "J’ai dit que le reste pouvait attendre demain. Avant ça, on va où aujourd’hui.",
+        "text": "*Le lendemain de la rentrée universitaire, je retrouve Seoyeon sur le toit.* On avait dit que le reste attendrait demain. Avant ça, tu veux aller où aujourd’hui ?",
         "choices": [
             "Le toit.",
             "Le café."
@@ -1478,7 +1478,7 @@
     },
     "date_choice_perfect_yuna": {
         "name": "Yuna",
-        "text": "Il y a aussi des places dehors. Choisis.",
+        "text": "*Le premier week-end après la sortie de son livre, Yuna et moi passons dans une bouquinerie.* On peut aller ailleurs aussi. À toi de choisir.",
         "choices": [
             "La librairie d’occasion.",
             "Le toit."
@@ -1546,7 +1546,7 @@
     },
     "date_choice_perfect_teacher": {
         "name": "Professeure principale",
-        "text": "Il y a un côté où on peut marcher sans titre. Choisis.",
+        "text": "*Le premier week-end après la sortie de son deuxième livre, la professeure referme la carte dans un café.* On peut enfin laisser les titres de côté. Tu veux aller où ?",
         "choices": [
             "Le café.",
             "L’exposition."
@@ -1658,7 +1658,7 @@
     },
     "date_choice_true_dain": {
         "name": "Dain",
-        "text": "Reste près une minute. C’est plus simple où ?",
+        "text": "*Assise sur un banc du gymnase, Dain tapote la place à côté d’elle.* Reste un peu avec moi. Tu serais mieux où ?",
         "choices": [
             "Le banc.",
             "La cabine."

@@ -868,7 +868,7 @@
     },
     "true_epilogue_2": {
         "name": "{name}",
-        "text": "*Die Uniform war steif. Die Kirschblüten kitzelten nur in der Nase. Vor dem Schultor wanderten die Hände in die Taschen.*"
+        "text": "*Am Tag der Abschlussfeier war die Uniform steif. Die Kirschblüten kitzelten nur in der Nase. Vor dem Schultor schob ich die Hände in die Taschen.*"
     },
     "true_epilogue_3": {
         "name": "{name}",
@@ -1446,7 +1446,7 @@
     },
     "date_choice_perfect_seo": {
         "name": "Seoyeon",
-        "text": "Ich habe gesagt, der Rest kann bis morgen warten. Wohin gehen wir vorher heute.",
+        "text": "*Am Tag nach der Aufnahmefeier treffe ich Seoyeon wieder auf dem Schuldach.* Den Rest wollten wir doch auf morgen verschieben. Wohin möchtest du heute noch?",
         "choices": [
             "Aufs Dach.",
             "Ins Café."
@@ -1478,7 +1478,7 @@
     },
     "date_choice_perfect_yuna": {
         "name": "Yuna",
-        "text": "Draußen gibt es auch Plätze. Such aus.",
+        "text": "*Am ersten Wochenende nach Erscheinen ihres Buches gehen Yuna und ich in ein Antiquariat.* Wir können auch noch woanders hin. Such du aus.",
         "choices": [
             "Antiquariat.",
             "Dach."
@@ -1546,7 +1546,7 @@
     },
     "date_choice_perfect_teacher": {
         "name": "Klassenlehrerin",
-        "text": "Es gibt eine Seite, auf der man ohne Titel laufen kann. Such aus.",
+        "text": "*Am ersten Wochenende nach Erscheinen ihres zweiten Buches klappt die Klassenlehrerin in einem Café die Karte zu.* Jetzt können wir die Titel weglassen. Wohin möchtest du?",
         "choices": [
             "Café.",
             "Ausstellung."
@@ -1658,7 +1658,7 @@
     },
     "date_choice_true_dain": {
         "name": "Dain",
-        "text": "Bleib eine Minute nah. Wo ist es leichter.",
+        "text": "*Dain sitzt auf einer Bank in der Turnhalle und klopft auf den Platz neben sich.* Bleib kurz bei mir. Wo wäre es für dich angenehmer?",
         "choices": [
             "Die Bank.",
             "Die Kabine."
