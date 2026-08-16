@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.58';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.59';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 const GalleryFreeTalkCore = window.CupidFreeTalkCore;
@@ -29,6 +29,35 @@ function buildGalleryThirdPersonAdultCameraRule(lang = 'ko') {
         throw new Error('buildCupidThirdPersonAdultCameraRule must be loaded before GalleryFreeTalk');
     }
     return window.buildCupidThirdPersonAdultCameraRule(lang);
+}
+
+const GALLERY_CHARACTER_ADULT_INTIMACY = Object.freeze({
+    seyoun: Object.freeze({
+        ko: '성인 장면: 보지·자지·삽입·애액·정액·절정을 포옹이나 여운으로 가리지 않습니다. 서연은 자세와 속도를 직접 고르고 쾌감이 커질수록 침착한 말끝이 흔들립니다.',
+        en: 'Adult sex stays anatomically direct; her precise control breaks as she chooses pace.'
+    }),
+    yuna: Object.freeze({
+        ko: '성인 장면: 보지·자지·삽입·애액·정액·절정을 비유로 가리지 않습니다. 유나는 붙드는 힘과 짧아지는 말, 먼저 고른 자세로 쾌감을 드러냅니다.',
+        en: "Adult sex stays direct; grip, short words, and chosen posture show Yuna's pleasure."
+    }),
+    dain: Object.freeze({
+        ko: '성인 장면: 보지·자지·삽입·애액·정액·절정을 직접 씁니다. 다인은 무릎의 한계를 지키면서 골반과 호흡으로 깊이·속도·마찰을 먼저 맞춥니다.',
+        en: 'Adult sex stays direct; Dain protects her knee while hips and breath set depth and pace.'
+    }),
+    teacher: Object.freeze({
+        ko: '성인 장면: 보지·자지·삽입·애액·정액·절정을 직접 씁니다. 쾌감이 커지면 건조한 농담이 끊기고 태연한 말끝과 자세가 함께 무너집니다.',
+        en: 'Adult sex stays direct; rising pleasure cuts off dry wit and practiced composure.'
+    }),
+    nurse: Object.freeze({
+        ko: '성인 장면: 보지·자지·삽입·애액·정액·절정을 가리지 않습니다. 농담이 끊긴 몸으로 원하는 속도와 마찰을 고릅니다.',
+        en: 'Adult sex stays direct; teasing drops as she chooses pace and friction.'
+    })
+});
+
+function getGalleryCharacterAdultIntimacy(charId, lang = 'ko') {
+    const profile = GALLERY_CHARACTER_ADULT_INTIMACY[charId];
+    if (!profile) return '';
+    return lang === 'ko' ? profile.ko : profile.en;
 }
 
 const normalizeGalleryPromptBlockForCache = GalleryFreeTalkCore.normalizePromptBlockForCache;
@@ -2315,6 +2344,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const location = this.CHAR_LOCATIONS[charId]?.[this.lang] || '';
         const personality = this.CHAR_PERSONALITIES[charId]?.[this.lang] || '';
         const datingPrompt = this.CHAR_DATING_PROMPTS[charId]?.[this.lang] || '';
+        const adultIntimacyProfile = getGalleryCharacterAdultIntimacy(charId, this.lang);
         // 이름이 비어 있을 때 애칭을 이름처럼 주입하지 않는다.
         const playerName = String(this.progress.getPlayerName() || '').trim();
 
@@ -2371,6 +2401,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         if (isEn) {
             return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Cupid gallery free-talk: ${charName} with their post-graduation adult partner; not a current school scene.
 Character: ${personality}
+${adultIntimacyProfile}
 ${charName} is in-scene, not assistant/narrator; keep the scene 1:1 and others offstage except through reactions to a mention.
 ${characterOutfitGuard}
 ${characterCanonGuard}
@@ -2387,6 +2418,7 @@ ${compactGalleryState}${this._buildOutingDynamicTail(charId, charName)}`;
         }
         return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}한국어로만 답하세요. 졸업 후 독립한 성인 연인 두 사람만 등장하는 갤러리 프리토킹입니다. 당신은 ${charName}이고, 상대는 성인 연인입니다. 현재의 학교 장면이 아닙니다.
 캐릭터: ${personality}
+${adultIntimacyProfile}
 현재 장면의 인물은 ${charName}이며 도우미·해설자가 아닙니다. 둘만 두고 다른 인물은 언급에 대한 반응으로만 남깁니다.
 ${characterOutfitGuard}
 ${characterCanonGuard}

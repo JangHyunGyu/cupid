@@ -73,6 +73,13 @@ const galleryIds = {
     Teacher: 'teacher',
     Nurse: 'nurse'
 };
+const galleryAdultIntimacySignals = {
+    Seoyeon: 'precise control breaks as she chooses pace',
+    Yuna: 'chosen posture show Yuna\'s pleasure',
+    Dain: 'protects her knee while hips and breath set depth and pace',
+    Teacher: 'rising pleasure cuts off dry wit',
+    Nurse: 'teasing drops as she chooses pace and friction'
+};
 const languageSignals = {
     en: /\b(?:you|your|the|today)\b/i,
     es: /[¿¡áéíóúñ]/i,
@@ -522,6 +529,9 @@ for (const lang of languages) {
         assertNoEditorPressure(systemPrompt, `[${lang}/${char}] gallery prompt`);
         assert(systemPrompt.includes(adultVocalizationSignals[lang]),
             `[${lang}/${char}] gallery prompt is missing the conditional adult vocalization rule`);
+        assert(systemPrompt.includes('Adult sex stays')
+            && systemPrompt.includes(galleryAdultIntimacySignals[char]),
+            `[${lang}/${char}] gallery prompt is missing direct, character-owned adult intimacy guidance`);
         assert(systemPrompt.includes(emotionalRangeSignals[lang]),
             `[${lang}/${char}] gallery prompt is missing the emotional-range rule`);
         assert(systemPrompt.includes(livingInitiativeSignals[lang]),
