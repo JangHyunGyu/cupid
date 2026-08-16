@@ -100,8 +100,8 @@ test('direct choice affinity distribution keeps subtle penalties meaningful but 
         }
     }
 
-    assert.equal(total, 263);
-    assert.deepEqual(counts, { positive: 59, negative: 58, neutral: 121, mixed: 25 });
+    assert.equal(total, 265);
+    assert.deepEqual(counts, { positive: 59, negative: 58, neutral: 123, mixed: 25 });
 });
 
 test('two-option screens retain their original response and add the trap as a third choice', () => {
@@ -134,7 +134,7 @@ test('negative-choice screens stay distributed across every story day', () => {
     const expected = {
         1: { choiceScreens: 16, negativeScreens: 7 },
         2: { choiceScreens: 18, negativeScreens: 8 },
-        3: { choiceScreens: 23, negativeScreens: 11 },
+        3: { choiceScreens: 24, negativeScreens: 11 },
         4: { choiceScreens: 32, negativeScreens: 21 },
         5: { choiceScreens: 28, negativeScreens: 11 }
     };

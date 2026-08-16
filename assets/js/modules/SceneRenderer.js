@@ -87,7 +87,8 @@ const FORCED_SEXUAL_VIOLATION_CHARACTER_IDS = Object.freeze({
     Yuna: 'yuna',
     Dain: 'dain',
     Teacher: 'teacher',
-    Nurse: 'nurse'
+    Nurse: 'nurse',
+    Haeun: 'haeun'
 });
 
 class SceneRenderer {
