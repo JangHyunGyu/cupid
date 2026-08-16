@@ -11,6 +11,16 @@ const ROOT = path.resolve(__dirname, '..');
 const SCENARIO_DIR = path.join(ROOT, 'assets', 'js', 'scenario');
 const KO_DIR = path.join(ROOT, 'assets', 'js', 'i18n', 'ko');
 
+function loadFreeTalkCore() {
+    const context = { window: {} };
+    vm.runInNewContext(
+        fs.readFileSync(path.join(ROOT, 'assets', 'js', 'freetalk-core.js'), 'utf8'),
+        context,
+        { filename: 'freetalk-core.js' }
+    );
+    return context.window.CupidFreeTalkCore;
+}
+
 function loadScenario() {
     const scenario = {};
     for (let day = 0; day <= 5; day++) scenario[day] = {};
@@ -78,6 +88,7 @@ function createSceneRenderer(affinities, flags = {}) {
 const scenario = loadScenario();
 const korean = loadKoreanCopy();
 const scenes = Object.assign({}, ...Object.values(scenario));
+const freeTalkCore = loadFreeTalkCore();
 
 test('direct choice affinity distribution keeps subtle penalties meaningful but secondary', () => {
     const counts = { positive: 0, negative: 0, neutral: 0, mixed: 0 };
@@ -492,6 +503,55 @@ test('optimal authored routes give every romance character 84 points before free
     assert.equal(scenes.hidden_homeroom_d5_8.stats.Teacher.affinity, 15);
     assert.equal(scenes.hidden_nurse_d5_7.stats.Nurse.affinity, 15);
     assert.equal(scenes.hidden_nurse_d5_7_both.stats.Nurse.affinity, 15);
+});
+
+test('playable free-talk capacity keeps the documented 84 + 22 = 106 balance', () => {
+    const personalFreeTalkRoutes = {
+        Seoyeon: ['lunch_seo_freetalk', 'night2_seo_freetalk', 'after3_seo_freetalk', 'wall_seo_freetalk', 'day5_seo_ending_freetalk_perfect'],
+        Yuna: ['lunch_yuna_freetalk', 'night2_yuna_freetalk', 'after3_yuna_freetalk', 'wall_yuna_freetalk', 'day5_yuna_ending_freetalk_perfect'],
+        Dain: ['lunch_dain_freetalk', 'night2_dain_freetalk', 'after3_dain_freetalk', 'wall_dain_freetalk', 'day5_dain_ending_freetalk_perfect'],
+        Teacher: ['after_homeroom_freetalk', 'hidden_homeroom_d2_freetalk', 'hidden_homeroom_d3_freetalk', 'hidden_homeroom_d4_freetalk', 'day5_teacher_ending_freetalk_perfect'],
+        Nurse: ['after_nurse_freetalk', 'hidden_nurse_d2_freetalk', 'hidden_nurse_d3_freetalk', 'hidden_nurse_d4_freetalk', 'day5_nurse_ending_freetalk_perfect'],
+        Haeun: ['haeun_freetalk']
+    };
+    const authoredMaximum = { Seoyeon: 84, Yuna: 84, Dain: 84, Teacher: 84, Nurse: 84, Haeun: 0 };
+    const expectedBalance = {
+        Seoyeon: { authored: 84, freeTalk: 22, theoretical: 106, stored: 100 },
+        Yuna: { authored: 84, freeTalk: 22, theoretical: 106, stored: 100 },
+        Dain: { authored: 84, freeTalk: 22, theoretical: 106, stored: 100 },
+        Teacher: { authored: 84, freeTalk: 22, theoretical: 106, stored: 100 },
+        Nurse: { authored: 84, freeTalk: 22, theoretical: 106, stored: 100 },
+        Haeun: { authored: 0, freeTalk: 9, theoretical: 9, stored: 9 }
+    };
+
+    const actualBalance = {};
+    for (const [character, sceneIds] of Object.entries(personalFreeTalkRoutes)) {
+        const turns = sceneIds.reduce((sum, sceneId) => {
+            const scene = scenes[sceneId];
+            assert.equal(scene?.type, 'free_talk', `${sceneId} must remain a personal free-talk scene`);
+            assert.ok(Number.isInteger(scene.maxTurns) && scene.maxTurns > 0, `${sceneId} must have a positive turn limit`);
+            return sum + scene.maxTurns;
+        }, 0);
+
+        let earned = 0;
+        let affinity = 0;
+        for (let turn = 0; turn < turns; turn += 1) {
+            const gain = freeTalkCore.normalizeStoryFreeTalkAffinityChange(5, affinity, earned);
+            affinity += gain;
+            earned += gain;
+        }
+
+        const authored = authoredMaximum[character];
+        const theoretical = authored + earned;
+        actualBalance[character] = {
+            authored,
+            freeTalk: earned,
+            theoretical,
+            stored: Math.min(100, theoretical)
+        };
+    }
+
+    assert.deepEqual(actualBalance, expectedBalance);
 });
 
 test('all five character routes share the 90/60/40/bittersweet ending tiers', () => {
