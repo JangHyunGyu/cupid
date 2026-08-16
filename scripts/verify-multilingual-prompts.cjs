@@ -77,8 +77,8 @@ const galleryAdultIntimacySignals = {
     Seoyeon: 'moans are bitten-off, never a cute stammer',
     Yuna: 'speech is more/here/don’t let go',
     Dain: 'moans openly, and talks honestly',
-    Teacher: 'moans stay swallowed, never literary or girlish',
-    Nurse: 'longer low moan; teasing drops'
+    Teacher: 'old teacher title spikes guilt and arousal',
+    Nurse: 'old nurse-student taboo breaks the joke'
 };
 const languageSignals = {
     en: /\b(?:you|your|the|today)\b/i,

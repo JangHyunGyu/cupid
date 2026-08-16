@@ -7,8 +7,8 @@ const CHARACTERS = [
     { key: 'Seoyeon', mainName: '서연', sharedName: '서연', galleryId: 'seyoun', cardSignal: '학생회장', relationshipSignal: '작은 다육이', voiceSignal: '시간·순서·약속', intimateSignal: '참다 새는 하·윽' },
     { key: 'Yuna', mainName: '유나', sharedName: '유나', galleryId: 'yuna', cardSignal: '영구 문신', relationshipSignal: '이어폰 한쪽', voiceSignal: '사라진 시간을 정확히 되묻고', intimateSignal: '더·여기·놓지 마' },
     { key: 'Dain', mainName: '다인', sharedName: '다인', galleryId: 'dain', cardSignal: '배구부 선수', relationshipSignal: '리듬게임', voiceSignal: '결론과 동사가 앞서고', intimateSignal: '야·같이·좋아' },
-    { key: 'Teacher', mainName: '담임', sharedName: '담임선생님', galleryId: 'teacher', cardSignal: '담임 교사', relationshipSignal: '미완성 원고', voiceSignal: '엉성한 전제', intimateSignal: '낮게 삼키는 하' },
-    { key: 'Nurse', mainName: '보건', sharedName: '보건선생님', galleryId: 'nurse', cardSignal: '보건 교사', relationshipSignal: '로즈마리 향', voiceSignal: '표정·호흡·몸 상태', intimateSignal: '낮고 긴 하아' }
+    { key: 'Teacher', mainName: '담임', sharedName: '담임선생님', galleryId: 'teacher', cardSignal: '담임 교사', relationshipSignal: '미완성 원고', voiceSignal: '엉성한 전제', intimateSignal: '옛 사제 호칭에 죄책감과 흥분' },
+    { key: 'Nurse', mainName: '보건', sharedName: '보건선생님', galleryId: 'nurse', cardSignal: '보건 교사', relationshipSignal: '로즈마리 향', voiceSignal: '표정·호흡·몸 상태', intimateSignal: '옛 보건실 금기' }
 ];
 const REQUIRED_BLOCKS = [
     '[한국어 원문체]',
@@ -277,6 +277,12 @@ function verifyMainAndGalleryPrompts(context) {
             `[gallery/${character.key}] can still hide established adult sex behind indirect wording`);
         assert(galleryPrompt.includes(character.intimateSignal),
             `[gallery/${character.key}] is missing its character-owned adult intimacy cadence`);
+        if (character.key === 'Teacher' || character.key === 'Nurse') {
+            assert(galleryPrompt.includes('죄책감') && galleryPrompt.includes('흥분'),
+                `[gallery/${character.key}] adult sex no longer mixes leftover teacher-student guilt with arousal`);
+            assert(!galleryPrompt.includes('금단이나 죄책감을 되풀이하지 않습니다'),
+                `[gallery/${character.key}] still forbids leftover taboo during established adult sex`);
+        }
         assert(mainPrompt.includes('보지·자지·삽입·애액·정액·절정'),
             `[main/${character.key}] can still hide established adult sex behind indirect wording`);
         assert(mainPrompt.includes(character.intimateSignal),
@@ -472,8 +478,12 @@ function verifyMemories(context) {
     const nurseDating = one('isDating_Nurse', '보건선생님')?.ko || '';
     assert(teacherDating.includes('4년') && teacherDating.includes('독립한 성인') && teacherDating.includes('교사와 학생 관계는 끝났습니다'),
         'teacher dating memory does not enforce the adult reunion canon');
+    assert(teacherDating.includes('성행위가 시작되면') && teacherDating.includes('죄책감이 흥분을 밀어 올리되'),
+        'teacher dating memory no longer lets leftover taboo sharpen adult sex');
     assert(nurseDating.includes('5년') && nurseDating.includes('독립한 성인') && nurseDating.includes('비밀 연애가 아닙니다'),
         'nurse dating memory does not enforce the adult reunion canon');
+    assert(nurseDating.includes('옛 보건교사와 학생이었다는 금기') && nurseDating.includes('죄책감과 흥분'),
+        'nurse dating memory no longer lets leftover taboo sharpen adult sex');
 
     assert(one('homeroom_day4')?.ko.includes('공개 합평'), 'teacher day 4 lost its public critique boundary');
     assert(one('homeroom_day5')?.ko.includes('문예부와 국어과 교사'), 'teacher day 5 lost its public review context');
