@@ -788,8 +788,14 @@ function writeCupidChatLogQueue(queue) {
 }
 
 function enqueueCupidChatLog(entry) {
+    return enqueueCupidChatLogs([entry]);
+}
+
+function enqueueCupidChatLogs(entries = []) {
     const queue = readCupidChatLogQueue();
-    if (!queue.some(item => item.clientMsgId === entry.clientMsgId)) queue.push(entry);
+    entries.filter(entry => entry?.clientMsgId).forEach(entry => {
+        if (!queue.some(item => item.clientMsgId === entry.clientMsgId)) queue.push(entry);
+    });
     return writeCupidChatLogQueue(queue);
 }
 
@@ -934,6 +940,49 @@ async function flushCupidChatLogQueue() {
         cupidChatLogFlushPromise = null;
     });
     return cupidChatLogFlushPromise;
+}
+
+async function persistCupidChatLogEntries(entries = [], {
+    source = 'persistCupidChatLogEntries',
+    errorType = 'chat_log_direct_rejected'
+} = {}) {
+    const pendingEntries = entries.filter(entry => entry?.clientMsgId && String(entry.content || '').trim());
+    if (pendingEntries.length === 0) return [];
+
+    // Persist the complete turn before the first network await. If the page is
+    // suspended after the user row reaches D1, every assistant row is still in
+    // localStorage and the normal queue flush can resume it on the next visit.
+    if (enqueueCupidChatLogs(pendingEntries)) {
+        await flushCupidChatLogQueue();
+        return pendingEntries;
+    }
+
+    if (typeof navigator !== 'undefined' && navigator.onLine === false) return pendingEntries;
+    for (const entry of pendingEntries) {
+        try {
+            await postCupidChatLogEntry(entry);
+        } catch (error) {
+            if (isTransientCupidChatLogError(error)) {
+                console.warn('[ChatLog] cupid direct save retained for retry:', error.message);
+                enqueueCupidChatLog(entry);
+                break;
+            }
+            logCupidError(error, {
+                source,
+                errorType,
+                sessionId: entry.sessionId,
+                context: {
+                    charId: entry.charId,
+                    role: entry.role,
+                    speakerId: entry.speakerId || '',
+                    logContext: entry.context,
+                    conversationDay: entry.conversationDay ?? null
+                },
+                extra: { clientMsgId: entry.clientMsgId }
+            });
+        }
+    }
+    return pendingEntries;
 }
 
 function normalizeCupidRenderedText(value) {
@@ -1108,45 +1157,30 @@ async function saveCupidChatLog({
         ...getCupidResponseLogMetadata(responseMetadata, getCupidLanguage()),
         logSource: 'realtime'
     };
-    const queueAndFlush = async (role, content, affinity = {}) => {
-        const entry = makeCupidChatLogEntry({ ...shared, role, content, ...affinity });
-        if (enqueueCupidChatLog(entry)) {
-            await flushCupidChatLogQueue();
-            return entry;
-        }
-        if (navigator.onLine === false) return entry;
-        try {
-            await postCupidChatLogEntry(entry);
-        } catch (error) {
-            if (isTransientCupidChatLogError(error)) {
-                console.warn('[ChatLog] cupid direct save retained for retry:', error.message);
-                enqueueCupidChatLog(entry);
-            } else {
-                logCupidError(error, {
-                    source: 'saveCupidChatLog',
-                    errorType: 'chat_log_direct_rejected',
-                    sessionId,
-                    context: { charId, role, logContext: context, conversationDay }
-                });
-            }
-        }
-        return entry;
-    };
-
-    // 순서 보장: user 먼저 저장 후 assistant 저장 (병렬 시 created_at/id 역전 방지)
-    if (userContent) await queueAndFlush('user', userContent);
+    const entries = [];
+    if (userContent) entries.push(makeCupidChatLogEntry({ ...shared, role: 'user', content: userContent }));
     const assistantLogContent = window.CupidFreeTalkCore?.resolveCupidAssistantLogContent?.(
         assistantContent,
         assistantRenderReceipt
     ) ?? String(assistantContent || '');
+    let assistantEntry = null;
     if (assistantLogContent) {
-        const assistantEntry = await queueAndFlush('assistant', assistantLogContent, {
+        assistantEntry = makeCupidChatLogEntry({
+            ...shared,
+            role: 'assistant',
+            content: assistantLogContent,
             affinityChange,
             affinityCurrent
         });
-        if (assistantEntry && assistantRenderReceipt) {
-            await postCupidChatRenderAck(assistantEntry, assistantRenderReceipt);
-        }
+        entries.push(assistantEntry);
+    }
+
+    const renderAckQueued = Boolean(assistantEntry && assistantRenderReceipt)
+        && enqueueCupidRenderAck(makeCupidChatRenderAckPayload(assistantEntry, assistantRenderReceipt));
+    await persistCupidChatLogEntries(entries, { source: 'saveCupidChatLog' });
+    if (assistantEntry && assistantRenderReceipt) {
+        if (renderAckQueued) await flushCupidChatRenderAckQueue();
+        else await postCupidChatRenderAck(assistantEntry, assistantRenderReceipt);
     }
 }
 
@@ -1180,43 +1214,16 @@ async function saveCupidGroupChatLog({
         ...getCupidResponseLogMetadata(responseMetadata, getCupidLanguage()),
         logSource: 'realtime'
     };
-    const queueAndFlush = async (role, content, details = {}) => {
-        if (!String(content || '').trim()) return null;
-        const entry = makeCupidChatLogEntry({ ...shared, role, content, ...details });
-        if (enqueueCupidChatLog(entry)) {
-            await flushCupidChatLogQueue();
-            return entry;
-        }
-        if (navigator.onLine === false) return entry;
-        try {
-            await postCupidChatLogEntry(entry);
-        } catch (error) {
-            if (isTransientCupidChatLogError(error)) {
-                console.warn('[ChatLog] cupid group direct save retained for retry:', error.message);
-                enqueueCupidChatLog(entry);
-            } else {
-                logCupidError(error, {
-                    source: 'saveCupidGroupChatLog',
-                    errorType: 'group_chat_log_direct_rejected',
-                    sessionId,
-                    context: {
-                        charId: 'group',
-                        role,
-                        speakerId: details.speakerId || '',
-                        logContext: 'group',
-                        conversationDay
-                    }
-                });
-            }
-        }
-        return entry;
-    };
-
+    const entries = [];
+    const renderAcks = [];
     if (userContent) {
-        await queueAndFlush('user', userContent, {
+        entries.push(makeCupidChatLogEntry({
+            ...shared,
+            role: 'user',
+            content: userContent,
             speakerId: '__player__',
             clientMsgId: makeCupidGroupChatLogClientId({ turnId, role: 'user', content: userContent })
-        });
+        }));
     }
     for (let messageIndex = 0; messageIndex < assistantMessages.length; messageIndex++) {
         const message = assistantMessages[messageIndex];
@@ -1226,7 +1233,11 @@ async function saveCupidGroupChatLog({
             message.content,
             message.renderReceipt
         ) ?? String(message.content || '');
-        const entry = await queueAndFlush('assistant', assistantContent, {
+        if (!String(assistantContent || '').trim()) continue;
+        const entry = makeCupidChatLogEntry({
+            ...shared,
+            role: 'assistant',
+            content: assistantContent,
             speakerId,
             affinityChange: message.affinityChange,
             affinityCurrent: message.affinityCurrent,
@@ -1238,7 +1249,23 @@ async function saveCupidGroupChatLog({
                 content: assistantContent
             })
         });
-        if (entry && message.renderReceipt) await postCupidChatRenderAck(entry, message.renderReceipt);
+        entries.push(entry);
+        if (message.renderReceipt) {
+            renderAcks.push({
+                entry,
+                receipt: message.renderReceipt,
+                queued: enqueueCupidRenderAck(makeCupidChatRenderAckPayload(entry, message.renderReceipt))
+            });
+        }
+    }
+
+    await persistCupidChatLogEntries(entries, {
+        source: 'saveCupidGroupChatLog',
+        errorType: 'group_chat_log_direct_rejected'
+    });
+    if (renderAcks.some(item => item.queued)) await flushCupidChatRenderAckQueue();
+    for (const item of renderAcks.filter(item => !item.queued)) {
+        await postCupidChatRenderAck(item.entry, item.receipt);
     }
 }
 

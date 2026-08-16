@@ -924,6 +924,7 @@ test('group backup logs save one player row then one row per character with cano
     assert.ok(start >= 0 && end > start, 'group log writer must remain extractable');
 
     const queued = [];
+    const queueEvents = [];
     const logWindow = {
         CupidFreeTalkCore: { resolveCupidAssistantLogContent: value => value },
         gameEngine: { stateManager: { playerName: '민준' } }
@@ -943,8 +944,15 @@ test('group backup logs save one player row then one row per character with cano
         }),
         hashCupidLogText: value => `hash-${String(value).length}:1`,
         makeCupidChatLogEntry: value => ({ ...value, clientMsgId: value.clientMsgId || `test-${queued.length}` }),
-        enqueueCupidChatLog: entry => { queued.push(entry); return true; },
-        flushCupidChatLogQueue: async () => {},
+        persistCupidChatLogEntries: async entries => {
+            queueEvents.push(`enqueue:${entries.map(entry => entry.role).join(',')}`);
+            queued.push(...entries);
+            queueEvents.push(`flush:${queued.length}`);
+            return entries;
+        },
+        enqueueCupidRenderAck: () => true,
+        makeCupidChatRenderAckPayload: () => ({}),
+        flushCupidChatRenderAckQueue: async () => {},
         postCupidChatLogEntry: async () => {},
         postCupidChatRenderAck: async () => {},
         isTransientCupidChatLogError: () => true,
@@ -985,6 +993,7 @@ test('group backup logs save one player row then one row per character with cano
         'assistant:Teacher',
         'assistant:Dain'
     ]);
+    assert.deepEqual(queueEvents, ['enqueue:user,assistant,assistant', 'flush:3']);
     for (const entry of queued) {
         assert.equal(entry.charId, 'group');
         assert.equal(entry.context, 'group');
@@ -1008,6 +1017,57 @@ test('group backup logs save one player row then one row per character with cano
     assert.equal(queued[2].clientMsgId, logSandbox.__makeCupidGroupChatLogClientId({
         turnId: 'group-turn-1', role: 'assistant', speakerId: 'Dain', messageIndex: 1, content: '저도 들을게요.'
     }));
+});
+
+test('single Cupid turns stage user, assistant, and render receipt before flushing', async () => {
+    const config = read('assets/js/modules/config.js');
+    const start = config.indexOf('async function saveCupidChatLog');
+    const end = config.indexOf('async function saveCupidGroupChatLog', start);
+    assert.ok(start >= 0 && end > start, 'single chat log writer must remain extractable');
+
+    const events = [];
+    const sandbox = {
+        window: {
+            CupidFreeTalkCore: { resolveCupidAssistantLogContent: value => value },
+            gameEngine: { stateManager: { playerName: 'player' } }
+        },
+        getCurrentCupidConversationDay: () => 5,
+        getCupidDeviceId: () => 'cupid-test-user',
+        getCupidLanguage: () => 'ko',
+        getCupidAppId: () => 'cupid',
+        resolveCupidConversationDay: value => value,
+        getCupidResponseLogMetadata: () => ({ requestId: 'turn-1' }),
+        makeCupidChatLogEntry: value => ({ ...value, clientMsgId: `${value.role}-1` }),
+        makeCupidChatRenderAckPayload: entry => ({ clientMsgId: entry.clientMsgId }),
+        enqueueCupidRenderAck: payload => { events.push(`ack:${payload.clientMsgId}`); return true; },
+        persistCupidChatLogEntries: async entries => {
+            events.push(`stage:${entries.map(entry => entry.role).join(',')}`);
+            events.push('flush');
+            return entries;
+        },
+        flushCupidChatRenderAckQueue: async () => { events.push('ack-flush'); },
+        postCupidChatRenderAck: async () => { events.push('ack-direct'); },
+        Boolean,
+        String
+    };
+    vm.runInNewContext(
+        `${config.slice(start, end)}\n` +
+        'globalThis.__saveCupidChatLog = saveCupidChatLog;',
+        sandbox
+    );
+    await sandbox.__saveCupidChatLog({
+        charId: 'Seoyeon',
+        userContent: 'user',
+        assistantContent: 'assistant',
+        assistantRenderReceipt: { status: 'rendered', renderedContent: 'assistant' }
+    });
+
+    assert.deepEqual(events, [
+        'ack:assistant-1',
+        'stage:user,assistant',
+        'flush',
+        'ack-flush'
+    ]);
 });
 
 test('Cupid chat entries and every free-talk path preserve actual AI routing metadata', () => {
