@@ -13,6 +13,7 @@
     const RETRY_HTTP_STATUSES = new Set([408, 425, 429]);
     const AFFINITY_CHANGE_MIN = -50;
     const AFFINITY_CHANGE_MAX = 5;
+    const FORCED_SEXUAL_VIOLATION_TYPES = Object.freeze(['none', 'molestation', 'rape']);
     const STORY_FREETALK_GAIN_BUDGET = 22;
     const STORY_FREETALK_TURN_GAIN_MAX = 3;
     const STORY_FREETALK_HIGH_AFFINITY_GAIN_MAX = 2;
@@ -46,6 +47,11 @@
             AFFINITY_CHANGE_MIN,
             Math.min(AFFINITY_CHANGE_MAX, Math.round(numeric))
         );
+    }
+
+    function normalizeForcedSexualViolation(value) {
+        const normalized = String(value || '').trim().toLowerCase();
+        return FORCED_SEXUAL_VIOLATION_TYPES.includes(normalized) ? normalized : '';
     }
 
     function normalizeStoryFreeTalkAffinityChange(value, currentAffinity = 0, earnedGain = 0) {
@@ -1208,6 +1214,7 @@ Latest user: """${excerpt}"""
         RETRY_HTTP_STATUSES,
         AFFINITY_CHANGE_MIN,
         AFFINITY_CHANGE_MAX,
+        FORCED_SEXUAL_VIOLATION_TYPES,
         STORY_FREETALK_GAIN_BUDGET,
         STORY_FREETALK_TURN_GAIN_MAX,
         STORY_FREETALK_HIGH_AFFINITY_GAIN_MAX,
@@ -1218,6 +1225,7 @@ Latest user: """${excerpt}"""
         GALLERY_CRISIS_SEVERITIES,
         GALLERY_CRISIS_IMPACT_RANGES,
         normalizeAffinityChange,
+        normalizeForcedSexualViolation,
         normalizeStoryFreeTalkAffinityChange,
         buildAffinityChangeGuidance,
         getRelationshipAftermathDuration,

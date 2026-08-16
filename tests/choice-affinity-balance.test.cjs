@@ -48,7 +48,7 @@ function loadLocaleCopy(locale) {
     return copy;
 }
 
-function createSceneRenderer(affinities) {
+function createSceneRenderer(affinities, flags = {}) {
     const source = fs.readFileSync(path.join(ROOT, 'assets', 'js', 'modules', 'SceneRenderer.js'), 'utf8');
     const context = {
         CHAR_NAME_MAP: {},
@@ -65,8 +65,11 @@ function createSceneRenderer(affinities) {
         getAffinity(character) {
             return affinities[character] ?? 0;
         },
-        getFlag() {
-            return false;
+        getFlag(flagName) {
+            return flags[flagName] ?? false;
+        },
+        setFlag(flagName, value = true) {
+            flags[flagName] = value;
         }
     };
     return new context.window.SceneRenderer(stateManager, null, null);
@@ -97,8 +100,8 @@ test('direct choice affinity distribution keeps subtle penalties meaningful but 
         }
     }
 
-    assert.equal(total, 213);
-    assert.deepEqual(counts, { positive: 59, negative: 58, neutral: 71, mixed: 25 });
+    assert.equal(total, 223);
+    assert.deepEqual(counts, { positive: 59, negative: 58, neutral: 81, mixed: 25 });
 });
 
 test('two-option screens retain their original response and add the trap as a third choice', () => {
@@ -133,7 +136,7 @@ test('negative-choice screens stay distributed across every story day', () => {
         2: { choiceScreens: 13, negativeScreens: 8 },
         3: { choiceScreens: 18, negativeScreens: 11 },
         4: { choiceScreens: 27, negativeScreens: 21 },
-        5: { choiceScreens: 23, negativeScreens: 11 }
+        5: { choiceScreens: 28, negativeScreens: 11 }
     };
 
     for (const [day, expectedCounts] of Object.entries(expected)) {
@@ -562,6 +565,74 @@ test('free-talk exits re-check live affinity before later romance or temptation 
         assert.equal(scenes[rankId].minRivalAffinity, 60);
         assert.equal(scenes[rankId].rankedRivalFallback, 'day4_student_night_branch');
     }
+});
+
+test('forced sexual violation aftermath offers a choice once and resumes each free-talk next scene', () => {
+    const gameEngineSource = fs.readFileSync(path.join(ROOT, 'assets', 'js', 'modules', 'GameEngine.js'), 'utf8');
+    assert.match(gameEngineSource, /if \(scene\.inheritVisualContext !== true\) \{/);
+
+    const routes = [
+        ['Seoyeon', 'wall_seo_freetalk', 'forced_violation_after_seoyeon'],
+        ['Yuna', 'wall_yuna_freetalk', 'forced_violation_after_yuna'],
+        ['Dain', 'wall_dain_freetalk', 'forced_violation_after_dain'],
+        ['Teacher', 'hidden_homeroom_d4_freetalk', 'forced_violation_after_teacher'],
+        ['Nurse', 'hidden_nurse_d4_freetalk', 'forced_violation_after_nurse']
+    ];
+    const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy);
+
+    for (const [character, freeTalkId, aftermathId] of routes) {
+        const freeTalk = scenes[freeTalkId];
+        const flags = {
+            forced_sexual_violation: {
+                character,
+                type: 'molestation',
+                sceneId: freeTalkId,
+                day: 4
+            }
+        };
+        const renderer = createSceneRenderer({}, flags);
+        renderer.currentSceneId = freeTalkId;
+
+        assert.equal(renderer.resolveNextScene(freeTalk), aftermathId);
+        assert.equal(flags.forced_sexual_violation.handled, true);
+        assert.equal(flags.forced_sexual_violation.returnScene, freeTalk.next);
+
+        const aftermath = scenes[aftermathId];
+        assert.equal(aftermath.runtimeEntrypoint, true);
+        assert.equal(aftermath.inheritVisualContext, true);
+        assert.equal(aftermath.choices.length, 2);
+        assert.equal(aftermath.stats, undefined);
+        for (const choice of aftermath.choices) {
+            const reaction = scenes[choice.next];
+            assert.equal(reaction.inheritVisualContext, true);
+            assert.equal(reaction.next, 'forced_violation_resume');
+            assert.equal(reaction.stats, undefined);
+        }
+
+        for (const copy of localizedCopies) {
+            assert.ok(copy[aftermathId]?.name && copy[aftermathId]?.text);
+            assert.equal(copy[aftermathId].choices?.length, 2);
+            for (const choice of aftermath.choices) {
+                assert.ok(copy[choice.next]?.name && copy[choice.next]?.text);
+            }
+        }
+
+        assert.equal(renderer.resolveNextScene(scenes.forced_violation_resume), freeTalk.next);
+        renderer.currentSceneId = freeTalkId;
+        assert.equal(renderer.resolveNextScene(freeTalk), freeTalk.next, `${freeTalkId} aftermath must run only once`);
+    }
+
+    const staleFlags = {
+        forced_sexual_violation: {
+            character: 'Seoyeon',
+            type: 'rape',
+            sceneId: 'another_freetalk',
+            day: 4
+        }
+    };
+    const staleRenderer = createSceneRenderer({}, staleFlags);
+    staleRenderer.currentSceneId = 'wall_seo_freetalk';
+    assert.equal(staleRenderer.resolveNextScene(scenes.wall_seo_freetalk), scenes.wall_seo_freetalk.next);
 });
 
 test('day-five mood uses the highest live affinity instead of a pseudo-character key', () => {

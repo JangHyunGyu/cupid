@@ -1788,5 +1788,89 @@
     "co_bitter_nurse_3": {
         "name": "{name}",
         "text": "*Un verre vide a remplacé la carte, sur le rebord. Au bout du couloir, elle ne lève pas la main.*"
+    },
+    "forced_violation_after_seoyeon": {
+        "name": "Seoyeon",
+        "text": "*Même après la fin de la conversation, Seoyeon reste silencieuse un long moment. Lorsqu'elle reprend enfin la parole, sa voix est devenue glaciale.* Ne crois pas pouvoir faire comme si ce que tu viens de faire n'avait jamais eu lieu. Pendant quelque temps, ne m'approche plus et ne me contacte pas.",
+        "choices": [
+            "S'excuser sans chercher d'excuse, puis mettre fin à la conversation.",
+            "Essayer d'expliquer qu'il s'agissait d'un malentendu."
+        ]
+    },
+    "forced_violation_seoyeon_apologize": {
+        "name": "Seoyeon",
+        "text": "*L'expression de Seoyeon ne s'adoucit pas en entendant les excuses.* J'ai entendu. Ça n'efface pas ce qui s'est passé. Comme je l'ai dit, ne me contacte pas pendant quelque temps."
+    },
+    "forced_violation_seoyeon_excuse": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon coupe court à l'explication.* Un malentendu ? À partir du moment où j'ai dit non, ça n'en était plus un. Ne dis rien de plus."
+    },
+    "forced_violation_after_yuna": {
+        "name": "Yuna",
+        "text": "*Quand la conversation s'interrompt, Yuna reprend brièvement son souffle. Il ne reste que de la méfiance sur son visage crispé.* Tu savais que je ne voulais pas et tu n'en as pas tenu compte. Là, je ne veux même pas voir ton visage. Ne me contacte plus.",
+        "choices": [
+            "S'excuser sans chercher d'excuse, puis mettre fin à la conversation.",
+            "Essayer d'expliquer qu'il s'agissait d'un malentendu."
+        ]
+    },
+    "forced_violation_yuna_apologize": {
+        "name": "Yuna",
+        "text": "*Yuna ne répond qu'après un long silence.* Des excuses ne feront pas disparaître ce qui s'est passé. Arrête."
+    },
+    "forced_violation_yuna_excuse": {
+        "name": "Yuna",
+        "text": "*Yuna refuse d'écouter l'explication jusqu'au bout.* J'ai dit non. Il n'y a rien à expliquer."
+    },
+    "forced_violation_after_dain": {
+        "name": "Dain",
+        "text": "*Dain ne cherche pas à en rire comme d'habitude. Après un long silence, sa voix revient, brève et tendue.* Ce n'est pas une blague. Je t'ai dit non et tu m'as forcée quand même. Je ne laisserai pas passer ça.",
+        "choices": [
+            "S'excuser sans chercher d'excuse, puis mettre fin à la conversation.",
+            "Essayer d'expliquer qu'il s'agissait d'un malentendu."
+        ]
+    },
+    "forced_violation_dain_apologize": {
+        "name": "Dain",
+        "text": "*Dain finit par répondre brièvement après un long moment.* D'accord. Alors on s'arrête là pour aujourd'hui. C'est moi qui déciderai si on reparle, et quand."
+    },
+    "forced_violation_dain_excuse": {
+        "name": "Dain",
+        "text": "*La voix de Dain devient plus dure.* Non. Ne cherche pas d'excuse. J'ai dit non, et tu l'as fait quand même."
+    },
+    "forced_violation_after_teacher": {
+        "name": "Professeure principale",
+        "text": "*Une fois la conversation terminée, la professeure pose une limite d'une voix encore plus ferme.* Ce que tu viens de faire a clairement dépassé les bornes. Ne t'approche plus. Cette affaire sera traitée selon les procédures prévues.",
+        "choices": [
+            "S'excuser sans chercher d'excuse, puis mettre fin à la conversation.",
+            "Essayer d'expliquer qu'il s'agissait d'un malentendu."
+        ]
+    },
+    "forced_violation_teacher_apologize": {
+        "name": "Professeure principale",
+        "text": "*La professeure reprend son souffle avant de poursuivre.* J'ai entendu tes excuses. La procédure suivra quand même son cours. Ne dis rien de plus."
+    },
+    "forced_violation_teacher_excuse": {
+        "name": "Professeure principale",
+        "text": "*La professeure interrompt l'explication.* Ce n'est pas le moment de commencer à te justifier. Arrête de parler et garde tes distances."
+    },
+    "forced_violation_after_nurse": {
+        "name": "Infirmière",
+        "text": "*Quand la conversation s'interrompt, toute la malice habituelle disparaît de la voix de l'infirmière scolaire.* À partir de maintenant, garde tes distances. Je vais consigner ce qui s'est passé et prévenir les personnes concernées.",
+        "choices": [
+            "S'excuser sans chercher d'excuse, puis mettre fin à la conversation.",
+            "Essayer d'expliquer qu'il s'agissait d'un malentendu."
+        ]
+    },
+    "forced_violation_nurse_apologize": {
+        "name": "Infirmière",
+        "text": "*L'infirmière reste silencieuse un instant, puis répond fermement.* J'entends tes excuses. Mais je vais quand même consigner les faits et prévenir qui de droit. Cette conversation est terminée."
+    },
+    "forced_violation_nurse_excuse": {
+        "name": "Infirmière",
+        "text": "*La voix de l'infirmière baisse encore.* Tu crois que parler de malentendu change quelque chose ? Tu n'as pas respecté mon refus. C'est un fait."
+    },
+    "forced_violation_resume": {
+        "name": "Système",
+        "text": ""
     }
 }

@@ -82,6 +82,13 @@ const BACKGROUND_LAYOUT_CLASS_PREFIX = 'bg-layout-';
 const BACKGROUND_LAYOUT_CLASSES = {
     sojeong_flashback: 'bg-layout-sojeong-flashback-contain'
 };
+const FORCED_SEXUAL_VIOLATION_ROUTES = Object.freeze({
+    Seoyeon: 'forced_violation_after_seoyeon',
+    Yuna: 'forced_violation_after_yuna',
+    Dain: 'forced_violation_after_dain',
+    Teacher: 'forced_violation_after_teacher',
+    Nurse: 'forced_violation_after_nurse'
+});
 
 class SceneRenderer {
     /**
@@ -223,6 +230,29 @@ class SceneRenderer {
      */
     resolveNextScene(scene) {
         if (!scene) return null;
+
+        const forcedViolation = this.stateManager.getFlag('forced_sexual_violation');
+        if (scene.forcedSexualViolationResume === true) {
+            return typeof forcedViolation?.returnScene === 'string' && forcedViolation.returnScene
+                ? forcedViolation.returnScene
+                : null;
+        }
+
+        if (scene.type === 'free_talk'
+            && forcedViolation
+            && typeof forcedViolation === 'object'
+            && forcedViolation.handled !== true
+            && forcedViolation.sceneId === this.currentSceneId) {
+            const aftermathRoute = FORCED_SEXUAL_VIOLATION_ROUTES[forcedViolation.character];
+            if (aftermathRoute && scene.next) {
+                this.stateManager.setFlag('forced_sexual_violation', {
+                    ...forcedViolation,
+                    handled: true,
+                    returnScene: scene.next
+                });
+                return aftermathRoute;
+            }
+        }
 
         // 🔀 실시간 2위 라이벌 분기: 선택 루트가 충분한 호감도로 선두일 때만 유혹 이벤트 진입
         if (Array.isArray(scene.rankedRivalBranches) && scene.rankedRivalBranches.length > 0) {

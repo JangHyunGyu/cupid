@@ -395,6 +395,10 @@ for (const lang of languages) {
             && systemPrompt.includes('"segments":[{"type":"dialogue"')
             && systemPrompt.includes('Types: narration/dialogue.'),
             `[${lang}/${char}] main prompt changed the structural output contract`);
+        assert(systemPrompt.includes('"forcedSexualViolation":"none"')
+            && systemPrompt.includes('"rape"(nonconsensual penetration)')
+            && systemPrompt.includes('"molestation"(other nonconsensual sexual contact)'),
+            `[${lang}/${char}] main prompt is missing the forced sexual violation output contract`);
         assertNoEditorPressure(systemPrompt, `[${lang}/${char}] main prompt`);
         assert(systemPrompt.includes(adultVocalizationSignals[lang]),
             `[${lang}/${char}] main prompt is missing the conditional adult vocalization rule`);
@@ -546,6 +550,8 @@ for (const lang of languages) {
             && systemPrompt.includes('"segments":[{"type":"dialogue"')
             && systemPrompt.includes('Types: narration/dialogue.'),
             `[${lang}/${char}] gallery prompt changed the structural output contract`);
+        assert(!systemPrompt.includes('forcedSexualViolation'),
+            `[${lang}/${char}] main-scenario violation routing leaked into gallery free talk`);
         assertNoEditorPressure(systemPrompt, `[${lang}/${char}] gallery prompt`);
         assert(systemPrompt.includes(adultVocalizationSignals[lang]),
             `[${lang}/${char}] gallery prompt is missing the conditional adult vocalization rule`);

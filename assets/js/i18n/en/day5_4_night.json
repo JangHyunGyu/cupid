@@ -1788,5 +1788,89 @@
     "co_bitter_nurse_3": {
         "name": "{name}",
         "text": "*An empty cup sits on the sill instead of a card. At the end of the hall she does not raise a hand.*"
+    },
+    "forced_violation_after_seoyeon": {
+        "name": "Seoyeon",
+        "text": "*Even after the conversation ends, Seoyeon remains silent for a while. When she finally speaks again, her voice has gone cold.* Don't think you can pretend what you just did never happened. Don't come near me or contact me for a while.",
+        "choices": [
+            "Apologize without making excuses, then end the conversation.",
+            "Try to explain that it was a misunderstanding."
+        ]
+    },
+    "forced_violation_seoyeon_apologize": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon's expression does not soften at the apology.* I heard you. That doesn't erase what happened. Like I said, don't contact me for a while."
+    },
+    "forced_violation_seoyeon_excuse": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon cuts the explanation short.* A misunderstanding? The moment I said no, it stopped being one. Don't say anything else."
+    },
+    "forced_violation_after_yuna": {
+        "name": "Yuna",
+        "text": "*After the conversation breaks off, Yuna takes a short breath. Only caution remains on her tense face.* You knew I didn't want it, and you ignored me. I don't even want to see your face right now. Don't contact me again.",
+        "choices": [
+            "Apologize without making excuses, then end the conversation.",
+            "Try to explain that it was a misunderstanding."
+        ]
+    },
+    "forced_violation_yuna_apologize": {
+        "name": "Yuna",
+        "text": "*Yuna answers only after a long pause.* An apology doesn't make it disappear. Stop now."
+    },
+    "forced_violation_yuna_excuse": {
+        "name": "Yuna",
+        "text": "*Yuna refuses to hear the explanation through.* I said no. There's nothing to explain."
+    },
+    "forced_violation_after_dain": {
+        "name": "Dain",
+        "text": "*Dain does not laugh it off the way she usually might. A long silence passes before her voice returns, short and rigid.* This isn't a joke. I said no and you forced it anyway. I'm not letting this go.",
+        "choices": [
+            "Apologize without making excuses, then end the conversation.",
+            "Try to explain that it was a misunderstanding."
+        ]
+    },
+    "forced_violation_dain_apologize": {
+        "name": "Dain",
+        "text": "*Dain finally gives a short answer after a long pause.* Fine. Then we're done for today. I decide if and when we talk again."
+    },
+    "forced_violation_dain_excuse": {
+        "name": "Dain",
+        "text": "*Dain's voice turns rough.* No. Don't make excuses. I said no, and you did it anyway."
+    },
+    "forced_violation_after_teacher": {
+        "name": "Homeroom Teacher",
+        "text": "*After the conversation ends, the homeroom teacher draws the line in an even firmer voice.* What you just did clearly crossed a line. Do not come any closer. I will handle this through the proper procedures.",
+        "choices": [
+            "Apologize without making excuses, then end the conversation.",
+            "Try to explain that it was a misunderstanding."
+        ]
+    },
+    "forced_violation_teacher_apologize": {
+        "name": "Homeroom Teacher",
+        "text": "*The homeroom teacher takes a short breath before continuing.* I heard your apology. The proper procedures will still go ahead. Don't say anything else."
+    },
+    "forced_violation_teacher_excuse": {
+        "name": "Homeroom Teacher",
+        "text": "*The homeroom teacher cuts off the explanation.* This is not the time to start explaining yourself. Stop talking and keep your distance."
+    },
+    "forced_violation_after_nurse": {
+        "name": "School Nurse",
+        "text": "*As the conversation cuts off, all the usual playfulness leaves the school nurse's voice.* Keep your distance from now on. I will document what happened and inform the people who need to know.",
+        "choices": [
+            "Apologize without making excuses, then end the conversation.",
+            "Try to explain that it was a misunderstanding."
+        ]
+    },
+    "forced_violation_nurse_apologize": {
+        "name": "School Nurse",
+        "text": "*The school nurse is silent for a moment, then answers firmly.* I'll hear your apology. The record and notifications still stand. This conversation is over."
+    },
+    "forced_violation_nurse_excuse": {
+        "name": "School Nurse",
+        "text": "*The school nurse's voice drops lower.* Do you think calling it a misunderstanding changes anything? The fact is that you ignored a refusal."
+    },
+    "forced_violation_resume": {
+        "name": "System",
+        "text": ""
     }
 }

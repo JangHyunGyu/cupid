@@ -1251,7 +1251,8 @@ class FreeTalkSystem {
                     lang: _lang,
                     charKey,
                     recentMessages: _optimized,
-                    latestUserText: finalContent
+                    latestUserText: finalContent,
+                    requireForcedSexualViolation: true
                 });
                 if (!qualityIssue?.shouldRetry) break;
 
@@ -1283,7 +1284,8 @@ class FreeTalkSystem {
                 lang: _lang,
                 charKey,
                 recentMessages: _optimized,
-                latestUserText: finalContent
+                latestUserText: finalContent,
+                requireForcedSexualViolation: true
             });
             if (finalQualityIssue?.shouldRetry) {
                 const recovered = window.recoverCupidRoleplayQualityFallback?.(parsed, {
@@ -1301,7 +1303,8 @@ class FreeTalkSystem {
                             lang: _lang,
                             charKey,
                             recentMessages: _optimized,
-                            latestUserText: finalContent
+                            latestUserText: finalContent,
+                            requireForcedSexualViolation: true
                         });
                 }
             }
@@ -1315,6 +1318,9 @@ class FreeTalkSystem {
             if (!parsed?.text && !(Array.isArray(parsed?.segments) && parsed.segments.length > 0)) {
                 throw new Error('AI response did not contain visible roleplay text. Please try again.');
             }
+            const forcedSexualViolation = CupidFreeTalkCore.normalizeForcedSexualViolation(
+                parsed?.forcedSexualViolation
+            );
 
             if (parsed) {
                 // NSFW 판단은 AI 프롬프트에 위임 (코드 레벨 강제 차단 없음)
@@ -1372,6 +1378,14 @@ class FreeTalkSystem {
                     }
                 );
                 this.stateManager.setRelationshipAftermath?.(charKey, nextAftermath);
+                if (forcedSexualViolation === 'rape' || forcedSexualViolation === 'molestation') {
+                    this.stateManager.setFlag('forced_sexual_violation', {
+                        character: charKey,
+                        type: forcedSexualViolation,
+                        sceneId: requestSceneId,
+                        day: Number(this.stateManager.currentDay) || 1
+                    });
+                }
                 requestHistory.push({ role: "assistant", content: reply, segments: parsedSegments });
                 this.galleryManager.incrementFreeTalkCount(charKey);
 
@@ -2179,7 +2193,7 @@ class FreeTalkSystem {
 
         // 📌 JSON일 가능성 체크 (중괄호, 대괄호, 또는 코드블록 포함 여부)
         const likelyJson = reply.includes('{') || reply.includes('[') || reply.includes('```json');
-        if (!likelyJson) return { text: this._sanitizePlayerPlaceholders(reply), segments: null, expression: "", affinity: 0 };  // 순수 텍스트면 그대로
+        if (!likelyJson) return { text: this._sanitizePlayerPlaceholders(reply), segments: null, expression: "", affinity: 0, forcedSexualViolation: '' };  // 순수 텍스트면 그대로
 
         try {
             let jsonStr = reply;
@@ -2218,6 +2232,7 @@ class FreeTalkSystem {
                     segments: this._sanitizeSegmentsPlaceholders(normalizedSegments),
                     expression: (parsed.expression || "").toLowerCase(),
                     affinity: parseInt(parsed.affinity) || 0,
+                    forcedSexualViolation: CupidFreeTalkCore.normalizeForcedSexualViolation(parsed.forcedSexualViolation),
                 };
             }
 
@@ -2228,6 +2243,7 @@ class FreeTalkSystem {
                     segments: null,
                     expression: (parsed.expression || "").toLowerCase(),
                     affinity: parseInt(parsed.affinity) || 0,
+                    forcedSexualViolation: CupidFreeTalkCore.normalizeForcedSexualViolation(parsed.forcedSexualViolation),
                 };
             }
 

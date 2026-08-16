@@ -1079,13 +1079,15 @@ class GameEngine {
                 variant: isRegisteredCG ? null : scene.backgroundVariant
             }
         });
-        this.sceneRenderer.setTimeFilter(
-            isRegisteredCG ? false : isNightScene,
-            isRegisteredCG ? false : isSunsetScene,
-            isRegisteredCG ? null : scene.backgroundVariant
-        );
-        // CG 씬은 contain (가로 화면에서 잘림 방지)
-        this.sceneRenderer.uiManager.bgLayer.classList.toggle('cg-fit', isRegisteredCG);
+        if (scene.inheritVisualContext !== true) {
+            this.sceneRenderer.setTimeFilter(
+                isRegisteredCG ? false : isNightScene,
+                isRegisteredCG ? false : isSunsetScene,
+                isRegisteredCG ? null : scene.backgroundVariant
+            );
+            // CG 씬은 contain (가로 화면에서 잘림 방지)
+            this.sceneRenderer.uiManager.bgLayer.classList.toggle('cg-fit', isRegisteredCG);
+        }
         console.log('[TimeFilter] bgLayer.classList after setTimeFilter:', this.sceneRenderer.uiManager.bgLayer.className);
 
         // ─────────────────────────────────────────────────────────────

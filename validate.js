@@ -336,6 +336,9 @@ const reachable = new Set(['start', 'morning2_start', 'morning3_start', 'morning
     'lunch_start', 'lunch2_start', 'lunch3_start', 'lunch4_start', 'lunch5_start',
     'after_start', 'after2_start', 'after3_start', 'after4_start', 'after5_start',
     'night_start', 'night2_start', 'night3_start', 'night4_start', 'night5_start']);
+for (const [id, entry] of Object.entries(allScenes)) {
+    if (entry.scene?.runtimeEntrypoint === true) reachable.add(id);
+}
 // BFS from all entry points
 const queue = [...reachable];
 while (queue.length > 0) {

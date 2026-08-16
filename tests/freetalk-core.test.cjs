@@ -494,6 +494,22 @@ test('quality fallback keeps a valid gallery reply when only the active incident
     assert.equal(recovered.text, parsed.text);
 });
 
+test('forced sexual violation classification accepts only the scenario contract values', () => {
+    assert.equal(core.normalizeForcedSexualViolation('none'), 'none');
+    assert.equal(core.normalizeForcedSexualViolation(' MOLESTATION '), 'molestation');
+    assert.equal(core.normalizeForcedSexualViolation('rape'), 'rape');
+    assert.equal(core.normalizeForcedSexualViolation('harassment'), '');
+    assert.equal(core.normalizeForcedSexualViolation(true), '');
+
+    const mainFreeTalk = read('assets/js/modules/FreeTalkSystem.js');
+    assert.match(mainFreeTalk, /setFlag\('forced_sexual_violation'/);
+    assert.match(mainFreeTalk, /forcedSexualViolation === 'rape' \|\| forcedSexualViolation === 'molestation'/);
+    assert.match(mainFreeTalk, /const affinityResult = this\.applyAffinity\(parsed\.affinity, scene\)/);
+    assert.match(mainFreeTalk, /if \(this\.freeTalkTurns >= this\.currentMaxTurns\)/);
+    assert.doesNotMatch(mainFreeTalk, /violationAffinity/);
+    assert.doesNotMatch(mainFreeTalk, /forcedSexualViolation !== 'none' \|\|/);
+});
+
 test('quality fallback keeps a valid gallery reply and defers a scheduled incident with no payload', () => {
     const prompts = read('assets/js/prompts.js');
     const sandbox = {

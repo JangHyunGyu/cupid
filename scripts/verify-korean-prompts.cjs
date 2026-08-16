@@ -261,6 +261,10 @@ function verifyMainAndGalleryPrompts(context) {
         assert(!mainPrompt.includes('[성적]'), `[main/${character.key}] injected an adult sexual example`);
         assert(mainPrompt.includes('캐릭터:'), `[main/${character.key}] missing the Korean character label`);
         assert(mainPrompt.includes('장면 맥락:'), `[main/${character.key}] missing the Korean context label`);
+        assert(mainPrompt.includes('"forcedSexualViolation":"none"')
+            && mainPrompt.includes('"molestation"(비동의 성접촉)')
+            && mainPrompt.includes('"rape"(비동의 삽입)'),
+            `[main/${character.key}] missing the forced sexual violation output contract`);
 
         const adultExamples = context.window.getFreeTalkVoiceExamples(
             'ko', character.key, character.key, 3, true
@@ -270,6 +274,8 @@ function verifyMainAndGalleryPrompts(context) {
         const galleryPrompt = gallery._buildSystemPrompt(character.galleryId);
         galleryPrompts[character.key] = galleryPrompt;
         assertCommonKoreanPrompt(galleryPrompt, `gallery/${character.key}`);
+        assert(!galleryPrompt.includes('forcedSexualViolation'),
+            `[gallery/${character.key}] main-scenario violation routing leaked into gallery free talk`);
         assert(!galleryPrompt.includes('[성적]'), `[gallery/${character.key}] injected the adult example`);
         assert(galleryPrompt.includes('현재 장면의 인물은'), `[gallery/${character.key}] missing the in-world role rule`);
         assert(galleryPrompt.includes('연인 관계:'), `[gallery/${character.key}] missing the relationship label`);

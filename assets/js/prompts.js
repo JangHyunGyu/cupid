@@ -1409,7 +1409,8 @@ function getCupidRoleplayQualityIssue(parsed = {}, {
     recentMessages = [],
     latestUserText = '',
     incidentState = null,
-    incidentPlan = null
+    incidentPlan = null,
+    requireForcedSexualViolation = false
 } = {}) {
     const text = String(parsed?.text || '');
     const segments = Array.isArray(parsed?.segments) ? parsed.segments : [];
@@ -1430,6 +1431,11 @@ function getCupidRoleplayQualityIssue(parsed = {}, {
     });
     if (incidentContractIssue?.shouldRetry) {
         issues.push(...incidentContractIssue.issues);
+    }
+
+    if (requireForcedSexualViolation
+        && !window.CupidFreeTalkCore?.normalizeForcedSexualViolation?.(parsed?.forcedSexualViolation)) {
+        issues.push('forced_sexual_violation_classification_missing');
     }
 
     if (combinedText.includes('\uFFFD')) {
@@ -1627,6 +1633,9 @@ function buildCupidRoleplayQualityRepairBlock(issue = {}, lang = 'ko', charKey =
         issueSet.has('active_gallery_incident_payload_missing')
             ? 'A gallery relationship incident is already active. Continue that same incident and include the exact required top-level incident object with status="ongoing" or "resolved" plus an updated factual summary.'
             : '',
+        issueSet.has('forced_sexual_violation_classification_missing')
+            ? 'Include the required top-level forcedSexualViolation field. Use only "none", "molestation", or "rape", following the original output contract and the latest in-world action.'
+            : '',
         characterCanon,
         lang === 'de' ? 'Use the idiom “jemandem standhalten”; when gaze is meant, write “hält seinem/deinem Blick stand”, never “hält deinem stand”.' : '',
         'Return JSON only.'
@@ -1638,17 +1647,31 @@ window.getCupidRoleplayQualityIssue = getCupidRoleplayQualityIssue;
 window.recoverCupidRoleplayQualityFallback = recoverCupidRoleplayQualityFallback;
 window.buildCupidRoleplayQualityRepairBlock = buildCupidRoleplayQualityRepairBlock;
 
-function buildCupidJsonOutputContract(lang, expressionNames, expressionAffinityGuidance) {
+function buildCupidJsonOutputContract(lang, expressionNames, expressionAffinityGuidance, {
+    includeForcedSexualViolation = false
+} = {}) {
     const expressions = String(expressionNames || 'normal');
     const guidance = String(expressionAffinityGuidance || '').trim();
-    if (lang === 'ko') {
+    if (!includeForcedSexualViolation && lang === 'ko') {
         return `JSON만 출력: {"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":<판정한 정수>}
 세 필드는 필수이며 affinity는 위 기준으로 고른 -50~+5 정수입니다. 예시나 기본값 0을 복사하지 않습니다.
 허용 type: narration, dialogue. segments는 비어 있지 않아야 합니다. 허용 expression: ${expressions}. ${guidance} text 단일 필드는 쓰지 않습니다.`;
     }
-    return `JSON only: {"segments":[{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":<scored integer>}
+    if (!includeForcedSexualViolation) {
+        return `JSON only: {"segments":[{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":<scored integer>}
 All three fields are required; affinity is one -50..+5 integer chosen from the scoring rule, never a copied example or default 0.
 Types: narration/dialogue. segments must be non-empty. Expressions: ${expressions}. ${guidance} No root text field.`;
+    }
+    if (lang === 'ko') {
+        return `JSON만 출력: {"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":<판정한 정수>,"forcedSexualViolation":"none"}
+affinity는 -50~+5 정수. 예시나 기본값 0을 복사하지 않습니다.
+forcedSexualViolation="rape"(비동의 삽입)|"molestation"(비동의 성접촉)|"none".
+허용 type: narration, dialogue. 표정: ${expressions}. ${guidance}`;
+    }
+    return `JSON only: {"segments":[{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":<scored integer>,"forcedSexualViolation":"none"}
+affinity is -50..+5; never copy an example or default 0.
+forcedSexualViolation="rape"(nonconsensual penetration)|"molestation"(other nonconsensual sexual contact)|"none".
+Types: narration/dialogue. Expressions: ${expressions}. ${guidance}`;
 }
 
 window.buildCupidJsonOutputContract = buildCupidJsonOutputContract;
@@ -1771,7 +1794,8 @@ function buildSystemPrompt(params) {
     const jsonOutputContract = buildCupidJsonOutputContract(
         effectiveLang,
         expressionNames,
-        expressionAffinityGuidance
+        expressionAffinityGuidance,
+        { includeForcedSexualViolation: true }
     );
     const compactLiveState = useEnTemplate
         ? `State: place=${locationName || 'current scene'}; user=${playerName || 'the user'}; knowsName=${knowsName ? 'yes' : 'no'}; affinity=${affinity}\nContext: ${context}`
