@@ -43,7 +43,8 @@ class StateManager {
             Yuna: { affinity: 0 },       // 유나 (신비로운 소녀)
             Dain: { affinity: 0 },       // 다인 (활기찬 소녀)
             Teacher: { affinity: 0 },    // 담임선생님
-            Nurse: { affinity: 0 }       // 보건선생님
+            Nurse: { affinity: 0 },      // 보건선생님
+            Haeun: { affinity: 0 }       // 하은 (비연애 조연)
         };
 
         /** 분기별 선택지에서 선택된 캐릭터를 추적 */
@@ -91,7 +92,8 @@ class StateManager {
             Yuna: { affinity: 0 },
             Dain: { affinity: 0 },
             Teacher: { affinity: 0 },
-            Nurse: { affinity: 0 }
+            Nurse: { affinity: 0 },
+            Haeun: { affinity: 0 }
         };
         this.currentCharacter = null;
         this.chatMemories = {};
@@ -354,7 +356,7 @@ class StateManager {
     importState(data) {
         if (data.playerName) this.playerName = data.playerName;
         if (data.currentDay !== undefined) this.currentDay = data.currentDay;
-        if (data.stats) this.stats = data.stats;
+        if (data.stats) this.stats = { ...this.stats, ...data.stats };
         if (data.chatMemories) this.chatMemories = data.chatMemories;
         this.groupConversationMemories = [];
         if (Array.isArray(data.groupConversationMemories)) {

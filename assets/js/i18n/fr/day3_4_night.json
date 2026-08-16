@@ -304,6 +304,22 @@
         "name": "Professeure principale",
         "text": "*La professeure interrompt l'explication.* Ce n'est pas le moment de commencer à te justifier. Arrête de parler et garde tes distances."
     },
+    "forced_violation_day3_after_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun recule d'un pas et serre son bracelet du conseil des élèves.* Ne vous approchez pas. Je vais appeler un professeur.",
+        "choices": [
+            "Reconnaître ce que j'ai fait et garder mes distances.",
+            "Prétendre qu'il s'agit d'un malentendu."
+        ]
+    },
+    "forced_violation_day3_haeun_apologize": {
+        "name": "Haeun",
+        "text": "*Sans répondre, Haeun recule vers la salle des professeurs. Elle vérifie jusqu'au bout que le protagoniste ne la suit pas.*"
+    },
+    "forced_violation_day3_haeun_excuse": {
+        "name": "Haeun",
+        "text": "Ce n'était pas un malentendu. Ne me suivez pas. *En gardant ses distances, Haeun ouvre la porte de la salle des professeurs.*"
+    },
     "forced_violation_day3_after_nurse": {
         "name": "Infirmière",
         "text": "*Quand la conversation s'interrompt, toute la malice habituelle disparaît de la voix de l'infirmière scolaire.* À partir de maintenant, garde tes distances. Je vais consigner ce qui s'est passé et prévenir les personnes concernées.",

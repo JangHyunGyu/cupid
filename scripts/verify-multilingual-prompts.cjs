@@ -199,11 +199,12 @@ const activeFreeTalkIds = [
     'after3_seo_freetalk',
     'after3_yuna_freetalk',
     'after3_dain_freetalk',
-    'after3_group_seoyeon_dain',
-    'after3_group_yuna_seoyeon',
-    'after3_group_dain_yuna',
-    'after3_group_teacher_seoyeon',
-    'after3_group_nurse_dain',
+    'after2_group_seoyeon_companion',
+    'after2_group_yuna_companion',
+    'after2_group_dain_companion',
+    'after3_group_teacher_companion',
+    'after3_group_nurse_companion',
+    'haeun_freetalk',
     'hidden_homeroom_d4_freetalk',
     'hidden_nurse_d4_freetalk',
     'wall_seo_freetalk',
@@ -338,6 +339,10 @@ for (const lang of languages) {
     assert(data.relationshipGuidelines, `[${lang}] relationship profiles are missing`);
     assert(new Set(characters.map(char => data.relationshipGuidelines[promptKeys[char]])).size === characters.length,
         `[${lang}] the five relationship profiles are not distinct`);
+    assert(data.relationshipGuidelines.Haeun?.includes('not romance or an ending condition'),
+        `[${lang}/Haeun] affinity is not separated from romance and endings`);
+    assert(data.generalInstructions.Haeun?.includes('non-romance supporting student'),
+        `[${lang}/Haeun] non-romance student boundary is missing`);
     if (lang === 'ja') {
         assert(data.personalities['Homeroom Teacher'].includes('卒業後'),
             '[ja/Teacher] main personality is missing the post-graduation continuity guard');
@@ -455,6 +460,43 @@ for (const lang of languages) {
         }
         if (char === 'Seoyeon') mainCacheBaseline = systemPrompt;
     }
+
+    const makeHaeunPrompt = ({ affinity = 0, sceneContext = 'Haeun is waiting in the hallway for an answer.' } = {}) => (
+        context.window.buildSystemPrompt({
+            isEn: true,
+            lang,
+            sceneName: 'Haeun',
+            displayName: 'Haeun',
+            locationName: 'School hallway',
+            context: sceneContext,
+            affinity,
+            extraGuideline: 'Keep this a brief, non-romantic conversation about Seoyeon.',
+            gameContext: '',
+            socialContext: '',
+            mediumInstruction: '',
+            isRemote: false,
+            promptData: data,
+            playerName: 'Alex',
+            knowsName: true,
+            datingGuideline: ''
+        })
+    );
+    const haeunPrompt = makeHaeunPrompt();
+    const haeunDynamicVariant = makeHaeunPrompt({
+        affinity: 9,
+        sceneContext: 'The protagonist promised to check on Seoyeon.'
+    });
+    const haeunParts = splitCacheBoundary(haeunPrompt, `[${lang}/Haeun] main prompt`);
+    const haeunVariantParts = splitCacheBoundary(haeunDynamicVariant, `[${lang}/Haeun] dynamic prompt`);
+    assert(haeunParts.stable.includes('non-romance supporting student')
+        && haeunParts.stable.includes('looks up to Seoyeon'),
+    `[${lang}/Haeun] character and relationship boundary is missing from the stable prompt`);
+    assert(haeunParts.stable === haeunVariantParts.stable
+        && haeunParts.dynamic !== haeunVariantParts.dynamic,
+    `[${lang}/Haeun] live affinity or hallway context leaked into the stable prompt prefix`);
+    assert(context.window.CupidFreeTalkCore.getStablePromptFingerprint(haeunPrompt)
+        === context.window.CupidFreeTalkCore.getStablePromptFingerprint(haeunDynamicVariant),
+    `[${lang}/Haeun] cache fingerprint changes with dynamic turn state`);
 
     const mainDynamicVariant = context.window.buildSystemPrompt({
         isEn: true,
@@ -904,6 +946,35 @@ for (const lang of languages) {
     `group-social/${lang} lost bounded, behavior-based affinity scoring`);
     assert(socialParts.dynamic.includes('current affinity=12') && socialParts.dynamic.includes('current affinity=34'),
         `group-social/${lang} lost dynamic affinity state`);
+
+    const rivalryPrompt = context.window.buildCupidGroupSystemPrompt({
+        lang,
+        groupMode: 'route_rivalry',
+        participants: [
+            { id: 'Seoyeon', name: leadName, role: 'focus' },
+            { id: 'Dain', name: tempterName, role: 'companion' }
+        ],
+        locationName: 'Student Council Room',
+        context: 'The protagonist must say whom to help first.',
+        extraGuideline: 'Keep the competition subtle and character-specific.',
+        playerName: 'Alex',
+        choiceState: 'Both characters are waiting for a concrete answer.',
+        gameContexts: { Seoyeon: 'She prepared the schedule.', Dain: 'She needs an extra practice slot.' },
+        affinities: { Seoyeon: 12, Dain: 34 },
+        promptData
+    });
+    const rivalryParts = splitCacheBoundary(rivalryPrompt, `group-rivalry/${lang}`);
+    assert(context.window.CupidFreeTalkCore.getStablePromptFingerprint(rivalryPrompt)
+        !== context.window.CupidFreeTalkCore.getStablePromptFingerprint(socialPrompt),
+    `group-rivalry/${lang} shares the social cache fingerprint`);
+    assert(rivalryParts.stable.includes('Subtle rivalry over a choice')
+        && rivalryParts.stable.includes('Do not let the two characters compromise it away')
+        && rivalryParts.stable.includes('does not instantly pretend to be fine or gracefully yield'),
+    `group-rivalry/${lang} lost the awkward choice and subtle competitive pressure`);
+    assert(rivalryParts.dynamic.includes('[Current choice rivalry]')
+        && rivalryParts.dynamic.includes('current affinity=12')
+        && rivalryParts.dynamic.includes('current affinity=34'),
+    `group-rivalry/${lang} lost dynamic state after the cache boundary`);
 }
 
 verifyLocalizedFreeTalkInventory();

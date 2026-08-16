@@ -635,6 +635,40 @@ test('main relationship aftermath survives save import and is isolated per chara
     assert.match(read('assets/js/modules/FreeTalkSystem.js'), /window\.saveGameState\?\.\(\)/);
 });
 
+test('Haeun affinity starts at zero, migrates into old saves, resets cleanly, and stays outside ending routes', () => {
+    const stateWindow = { GAME_LANG: 'ko', CupidFreeTalkCore: core };
+    vm.runInNewContext(read('assets/js/modules/StateManager.js'), {
+        window: stateWindow,
+        console: { log() {}, error() {} }
+    });
+    const state = new stateWindow.StateManager();
+    assert.equal(state.stats.Haeun.affinity, 0);
+
+    state.importState({
+        stats: {
+            Seoyeon: { affinity: 24 },
+            Yuna: { affinity: 11 },
+            Dain: { affinity: 7 },
+            Teacher: { affinity: 3 },
+            Nurse: { affinity: 5 }
+        }
+    });
+    assert.equal(state.stats.Seoyeon.affinity, 24);
+    assert.equal(state.stats.Haeun.affinity, 0, 'old saves must gain Haeun without losing existing affinity');
+    state.stats.Haeun.affinity = 9;
+    state.resetForNewGame();
+    assert.equal(state.stats.Haeun.affinity, 0);
+
+    const allScenarioSource = fs.readdirSync(path.join(ROOT, 'assets/js/scenario'))
+        .filter(name => /^day.*\.js$/.test(name))
+        .map(name => read(`assets/js/scenario/${name}`))
+        .join('\n');
+    assert.doesNotMatch(allScenarioSource, /"affinityChar"\s*:\s*"Haeun"/,
+        'Haeun must not become an ending affinity target');
+    assert.equal(core.normalizeStoryFreeTalkAffinityChange(5, 0, 0), 3);
+    assert.equal(core.normalizeStoryFreeTalkAffinityChange(5, 3, 3), 3);
+});
+
 test('group conversation memory persists once, stays linked to both participants, and does not pollute 1:1 roles', () => {
     const stateWindow = { GAME_LANG: 'ko', CupidFreeTalkCore: core };
     vm.runInNewContext(read('assets/js/modules/StateManager.js'), {
@@ -810,60 +844,137 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
     }
 });
 
-test('day-three routes select one localized two-turn social group conversation and rejoin the original flow', () => {
+test('day-two student rivalry and day-three adult social groups use the highest-affinity companion with deterministic ties', () => {
     const scenarioContext = { SCENARIO: {}, console };
+    vm.runInNewContext(read('assets/js/scenario/day2_3_afterschool.js'), scenarioContext);
     vm.runInNewContext(read('assets/js/scenario/day3_3_afterschool.js'), scenarioContext);
-    const day = scenarioContext.SCENARIO[3];
-    const expected = {
-        after3_group_seoyeon_dain: ['Seoyeon', 'Dain'],
-        after3_group_yuna_seoyeon: ['Yuna', 'Seoyeon'],
-        after3_group_dain_yuna: ['Dain', 'Yuna'],
-        after3_group_teacher_seoyeon: ['Teacher', 'Seoyeon'],
-        after3_group_nurse_dain: ['Nurse', 'Dain']
+    const day2 = scenarioContext.SCENARIO[2];
+    const day3 = scenarioContext.SCENARIO[3];
+    const studentGroups = {
+        after2_group_seoyeon_companion: { focus: 'Seoyeon', firstTie: 'Dain', entry: 'after2_seo_return' },
+        after2_group_yuna_companion: { focus: 'Yuna', firstTie: 'Seoyeon', entry: 'after2_yuna_return' },
+        after2_group_dain_companion: { focus: 'Dain', firstTie: 'Yuna', entry: 'after2_dain_return' }
+    };
+    const adultGroups = {
+        after3_group_teacher_companion: { focus: 'Teacher', firstTie: 'Seoyeon' },
+        after3_group_nurse_companion: { focus: 'Nurse', firstTie: 'Dain' }
     };
 
-    assert.equal(day.after3_final.next, 'after3_group_route_check');
-    assert.equal(day.after3_group_route_check.routeBeforeRender, true);
+    for (const [id, expected] of Object.entries(studentGroups)) {
+        const scene = day2[id];
+        assert.equal(day2[expected.entry].next, id, `${expected.entry} must enter its day-two group event`);
+        assert.equal(scene.type, 'group_free_talk');
+        assert.equal(scene.groupMode, 'route_rivalry');
+        assert.equal(scene.dynamicGroupName, true);
+        assert.equal(scene.groupParticipants.strategy, 'focus_with_highest_other_affinity');
+        assert.equal(scene.groupParticipants.focus, expected.focus);
+        assert.equal(scene.groupParticipants.tiePriority[0], expected.firstTie);
+        assert.equal(scene.maxTurns, 2);
+        assert.equal(scene.next, 'minsu_warn_gate');
+    }
+
+    assert.equal(day3.after3_final.next, 'after3_group_route_check');
+    assert.equal(day3.after3_group_route_check.routeBeforeRender, true);
     assert.deepEqual(
-        Array.from(day.after3_group_route_check.branches, branch => [branch.condition || '', branch.next]),
+        Array.from(day3.after3_group_route_check.branches, branch => [branch.condition || '', branch.next]),
         [
-            ['homeroom_route_unlocked', 'after3_group_teacher_seoyeon'],
-            ['nurse_route_unlocked', 'after3_group_nurse_dain'],
-            ['route_seoyeon', 'after3_group_seoyeon_dain'],
-            ['route_yuna', 'after3_group_yuna_seoyeon'],
-            ['route_dain', 'after3_group_dain_yuna'],
+            ['homeroom_route_unlocked', 'after3_group_teacher_companion'],
+            ['nurse_route_unlocked', 'after3_group_nurse_companion'],
             ['', 'haeun_check']
         ]
     );
-
-    for (const [id, participantIds] of Object.entries(expected)) {
-        const scene = day[id];
-        assert.equal(scene.type, 'group_free_talk', `${id} must use group free talk`);
-        assert.equal(scene.groupMode, 'route_social', `${id} must not inherit the day-five confrontation mode`);
-        assert.equal(scene.maxTurns, 2, `${id} must be limited to two player turns`);
-        assert.equal(scene.next, 'after3_group_return', `${id} must enter the shared return scene`);
-        assert.deepEqual(Array.from(scene.groupParticipants, participant => participant.id), participantIds);
-        assert.deepEqual(Array.from(scene.groupParticipants, participant => participant.role), ['focus', 'companion']);
-        assert.ok(scene.groupParticipants.every(participant => participant.initialExpression === 'normal'));
+    for (const [id, expected] of Object.entries(adultGroups)) {
+        const scene = day3[id];
+        assert.equal(scene.type, 'group_free_talk');
+        assert.equal(scene.groupMode, 'route_social');
+        assert.equal(scene.dynamicGroupName, true);
+        assert.equal(scene.groupParticipants.strategy, 'focus_with_highest_other_affinity');
+        assert.equal(scene.groupParticipants.focus, expected.focus);
+        assert.equal(scene.groupParticipants.tiePriority[0], expected.firstTie);
+        assert.equal(scene.maxTurns, 2);
+        assert.equal(scene.next, 'after3_group_return');
     }
-    assert.equal(day.after3_group_return.next, 'haeun_check');
+    assert.equal(day3.after3_group_return.next, 'haeun_check');
+    assert.equal(day3.haeun_warn_7_c.next, 'haeun_freetalk');
+    assert.equal(day3.haeun_freetalk.type, 'free_talk');
+    assert.equal(day3.haeun_freetalk.maxTurns, 3);
+    assert.equal(day3.haeun_freetalk.next, 'haeun_warn_7_d');
 
     for (const lang of ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt']) {
-        const i18n = JSON.parse(read(`assets/js/i18n/${lang}/day3_3_afterschool.json`));
-        for (const id of Object.keys(expected)) {
-            const localized = i18n[id];
-            for (const field of ['name', 'text', 'context', 'personality', 'buttonText', 'groupLocation', 'groupChoiceState', 'groupAftermathCause']) {
-                assert.ok(typeof localized?.[field] === 'string' && localized[field].trim(), `${lang}/${id} is missing ${field}`);
+        const day2I18n = JSON.parse(read(`assets/js/i18n/${lang}/day2_3_afterschool.json`));
+        const day3I18n = JSON.parse(read(`assets/js/i18n/${lang}/day3_3_afterschool.json`));
+        for (const id of Object.keys(studentGroups)) {
+            for (const field of ['name', 'text', 'context', 'personality', 'groupLocation', 'groupChoiceState', 'groupAftermathCause']) {
+                assert.ok(typeof day2I18n[id]?.[field] === 'string' && day2I18n[id][field].trim(), `${lang}/${id} is missing ${field}`);
             }
         }
+        for (const id of Object.keys(adultGroups)) {
+            for (const field of ['name', 'text', 'context', 'personality', 'buttonText', 'groupLocation', 'groupChoiceState', 'groupAftermathCause']) {
+                assert.ok(typeof day3I18n[id]?.[field] === 'string' && day3I18n[id][field].trim(), `${lang}/${id} is missing ${field}`);
+            }
+        }
+        for (const field of ['name', 'text', 'context', 'personality']) {
+            assert.ok(typeof day3I18n.haeun_freetalk?.[field] === 'string' && day3I18n.haeun_freetalk[field].trim(), `${lang}/haeun_freetalk is missing ${field}`);
+        }
     }
+
+    const freeTalkWindow = { CupidFreeTalkCore: core, GAME_LANG: 'ko', FLAG_MEMORIES: [] };
+    const sandbox = {
+        window: freeTalkWindow,
+        document: { documentElement: { lang: 'ko' } },
+        navigator: { onLine: true },
+        console: { log() {}, info() {}, warn() {}, error() {} },
+        DEFAULT_MAX_FREE_TALK_TURNS: 3,
+        CHAR_NAME_MAP: {},
+        setTimeout,
+        clearTimeout,
+        URL,
+        URLSearchParams,
+        Math,
+        Date,
+        Object,
+        Array,
+        String,
+        Number,
+        Set,
+        Map,
+        Promise
+    };
+    vm.runInNewContext(read('assets/js/modules/FreeTalkSystem.js'), sandbox);
+    const affinities = { Seoyeon: 0, Yuna: 0, Dain: 0, Teacher: 0, Nurse: 0 };
+    const system = new freeTalkWindow.FreeTalkSystem({
+        stats: Object.fromEntries(Object.entries(affinities).map(([id, affinity]) => [id, { affinity }])),
+        getAffinity: id => affinities[id] ?? 0
+    }, {}, {}, {});
+    assert.deepEqual(
+        Array.from(system._resolveGroupParticipants(day2.after2_group_seoyeon_companion, 'ko'), item => item.id),
+        ['Seoyeon', 'Dain'],
+        'Seoyeon tie must prefer Dain'
+    );
+    affinities.Yuna = 11;
+    assert.deepEqual(
+        Array.from(system._resolveGroupParticipants(day2.after2_group_seoyeon_companion, 'ko'), item => item.id),
+        ['Seoyeon', 'Yuna'],
+        'highest other affinity must override tie priority'
+    );
+    affinities.Yuna = 0;
+    assert.deepEqual(
+        Array.from(system._resolveGroupParticipants(day3.after3_group_teacher_companion, 'ko'), item => item.id),
+        ['Teacher', 'Seoyeon'],
+        'Teacher tie must prefer Seoyeon'
+    );
+    assert.deepEqual(
+        Array.from(system._resolveGroupParticipants(day3.after3_group_nurse_companion, 'ko'), item => item.id),
+        ['Nurse', 'Dain'],
+        'Nurse tie must prefer Dain'
+    );
 
     const freeTalk = read('assets/js/modules/FreeTalkSystem.js');
     const renderer = read('assets/js/modules/SceneRenderer.js');
     assert.match(freeTalk, /_resolveGroupParticipants\(scene, lang = 'ko'\)/);
-    assert.match(freeTalk, /scene\?\.groupParticipants === 'counteroffer_confrontation'/);
-    assert.match(freeTalk, /Array\.isArray\(scene\?\.groupParticipants\)/);
-    assert.match(freeTalk, /scene\.groupMode \|\| \(scene\.groupParticipants === 'counteroffer_confrontation'/);
+    assert.match(freeTalk, /focus_with_highest_other_affinity/);
+    assert.match(freeTalk, /right\.affinity - left\.affinity \|\| left\.priority - right\.priority/);
+    assert.match(freeTalk, /scene\.dynamicGroupName/);
     assert.match(freeTalk, /scene\?\.groupAftermathCause/);
     assert.match(renderer, /'groupLocation'/);
     assert.match(renderer, /'groupChoiceState'/);

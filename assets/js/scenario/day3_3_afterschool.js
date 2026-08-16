@@ -958,71 +958,36 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": null,
         "routeBeforeRender": true,
         "branches": [
-            { "condition": "homeroom_route_unlocked", "next": "after3_group_teacher_seoyeon" },
-            { "condition": "nurse_route_unlocked", "next": "after3_group_nurse_dain" },
-            { "condition": "route_seoyeon", "next": "after3_group_seoyeon_dain" },
-            { "condition": "route_yuna", "next": "after3_group_yuna_seoyeon" },
-            { "condition": "route_dain", "next": "after3_group_dain_yuna" },
+            { "condition": "homeroom_route_unlocked", "next": "after3_group_teacher_companion" },
+            { "condition": "nurse_route_unlocked", "next": "after3_group_nurse_companion" },
             { "next": "haeun_check" }
         ]
     },
-    "after3_group_seoyeon_dain": {
-        "background": "assets/images/background/student_room.png",
+    "after3_group_teacher_companion": {
+        "background": "assets/images/background/room_school.png",
         "character": null,
         "type": "group_free_talk",
         "groupMode": "route_social",
-        "groupParticipants": [
-            { "id": "Seoyeon", "role": "focus", "side": "left", "initialExpression": "normal" },
-            { "id": "Dain", "role": "companion", "side": "right", "initialExpression": "normal" }
-        ],
+        "dynamicGroupName": true,
+        "groupParticipants": {
+            "strategy": "focus_with_highest_other_affinity",
+            "focus": "Teacher",
+            "tiePriority": ["Seoyeon", "Yuna", "Dain", "Nurse"]
+        },
         "maxTurns": 2,
         "next": "after3_group_return"
     },
-    "after3_group_yuna_seoyeon": {
-        "background": "assets/images/background/library_old.png",
-        "character": null,
-        "type": "group_free_talk",
-        "groupMode": "route_social",
-        "groupParticipants": [
-            { "id": "Yuna", "role": "focus", "side": "left", "initialExpression": "normal" },
-            { "id": "Seoyeon", "role": "companion", "side": "right", "initialExpression": "normal" }
-        ],
-        "maxTurns": 2,
-        "next": "after3_group_return"
-    },
-    "after3_group_dain_yuna": {
-        "background": "assets/images/background/gym.png",
-        "character": null,
-        "type": "group_free_talk",
-        "groupMode": "route_social",
-        "groupParticipants": [
-            { "id": "Dain", "role": "focus", "side": "left", "initialExpression": "normal" },
-            { "id": "Yuna", "role": "companion", "side": "right", "initialExpression": "normal" }
-        ],
-        "maxTurns": 2,
-        "next": "after3_group_return"
-    },
-    "after3_group_teacher_seoyeon": {
-        "background": "assets/images/background/teacher_room.png",
-        "character": null,
-        "type": "group_free_talk",
-        "groupMode": "route_social",
-        "groupParticipants": [
-            { "id": "Teacher", "role": "focus", "side": "left", "initialExpression": "normal" },
-            { "id": "Seoyeon", "role": "companion", "side": "right", "initialExpression": "normal" }
-        ],
-        "maxTurns": 2,
-        "next": "after3_group_return"
-    },
-    "after3_group_nurse_dain": {
+    "after3_group_nurse_companion": {
         "background": "assets/images/background/nurse_room.png",
         "character": null,
         "type": "group_free_talk",
         "groupMode": "route_social",
-        "groupParticipants": [
-            { "id": "Nurse", "role": "focus", "side": "left", "initialExpression": "normal" },
-            { "id": "Dain", "role": "companion", "side": "right", "initialExpression": "normal" }
-        ],
+        "dynamicGroupName": true,
+        "groupParticipants": {
+            "strategy": "focus_with_highest_other_affinity",
+            "focus": "Nurse",
+            "tiePriority": ["Dain", "Seoyeon", "Yuna", "Teacher"]
+        },
         "maxTurns": 2,
         "next": "after3_group_return"
     },
@@ -1198,6 +1163,13 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "haeun_warn_7_c": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/haeun_normal.png",
+        "next": "haeun_freetalk"
+    },
+    "haeun_freetalk": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_worried.png",
+        "type": "free_talk",
+        "maxTurns": 3,
         "next": "haeun_warn_7_d"
     },
     "haeun_warn_7_d": {

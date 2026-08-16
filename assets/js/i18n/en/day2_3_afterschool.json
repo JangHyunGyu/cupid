@@ -574,6 +574,37 @@
         "name": "{name}",
         "text": "*When I leave the library annex, the hall's automatic lights come on.*"
     },
+    "after2_group_seoyeon_companion": {
+        "name": "Seoyeon and companion",
+        "text": "*Seoyeon taps two overlapping schedule blocks with one finger. The gaze across from her does not yield either.* \"You both need my help. Which one am I going with first?\"",
+        "context": "While the protagonist and Seoyeon are sorting the after-school schedule, the other character with the highest affinity arrives with a schedule or request of their own. Student-council work overlaps with another school activity, and the three of them must settle it. Seoyeon clearly asks whom the protagonist will help first.",
+        "personality": "It looks like a small scheduling issue, but both characters are conscious of the protagonist's priority. Keep it from turning into open hostility or humiliation. If the protagonist dodges, each presses for an answer in their own way. If one is chosen, the other does not force a cheerful shrug.",
+        "groupLocation": "Student Council Room",
+        "groupChoiceState": "Seoyeon's schedule overlaps with the companion's request, and the protagonist must say whom he will help first",
+        "groupAftermathCause": "whom the protagonist chose to help first in the student council room, and why"
+    },
+    "after2_group_yuna_companion": {
+        "name": "Yuna and companion",
+        "text": "*There are two stacks to sort, but barely enough time to finish one. Yuna removes one earbud and looks across the table.* \"If you can finish only one with us, whose side are you staying on?\"",
+        "context": "While the protagonist and Yuna sort material in the library annex, the other character with the highest affinity arrives with separate material or an urgent request. There is only enough time to finish one side properly. Yuna asks, briefly and directly, whom the protagonist will stay beside.",
+        "personality": "Yuna demands a short, exact choice, while the companion holds their ground in their own voice. Do not force a reconciliation or instantly invent a solution that satisfies both. Let the answer bring relief to one person and disappointment to the other when appropriate.",
+        "groupLocation": "Library Annex",
+        "groupChoiceState": "there is time to sort only one of two stacks, so the protagonist must say whose side he will stay on",
+        "groupAftermathCause": "whose side the protagonist chose in the library annex, and why"
+    },
+    "after2_group_dain_companion": {
+        "name": "Dain and companion",
+        "text": "*The accounts from the gym and the annex do not line up. Dain tucks a ball against her side and looks straight at the protagonist.* \"If our stories don't match, who are you believing first?\"",
+        "context": "While the protagonist and Dain clean the gym, the other character with the highest affinity arrives with a different account of a small incident near the annex. The two accounts conflict, and someone must decide which one to check first. Dain asks whose word the protagonist trusts first.",
+        "personality": "Do not invent a serious accident or malicious lie. The point is not a mystery's objective solution, but whose word the protagonist trusts first. Dain presses honestly, and the companion does not withdraw into a supporting role. Let one person be hurt by the answer when that fits.",
+        "groupLocation": "Gym",
+        "groupChoiceState": "the accounts from the gym and annex conflict, so the protagonist must say whom he believes first",
+        "groupAftermathCause": "whose account the protagonist believed first in the gym, and why"
+    },
+    "after2_group_return": {
+        "name": "{name}",
+        "text": "*After the conversation, I pick up my bag and head toward the school gate.*"
+    },
     "minsu_warn_gate": {},
     "minsu_warn_1": {
         "name": "{name}",

@@ -385,7 +385,7 @@ test('every competitive scene remains a non-positive relationship tradeoff', () 
     }
 });
 
-test('optimal authored routes give every character 86 points before free talk', () => {
+test('optimal authored routes give every romance character 84 points before free talk', () => {
     const optimalRouteEffects = {
         Seoyeon: [
             ['seoyeon_choice', 0], ['lunch_seo_3'], ['lunch_seo_choice', 0],
@@ -432,7 +432,7 @@ test('optimal authored routes give every character 86 points before free talk', 
         ]
     };
 
-    const expectedTotals = { Seoyeon: 86, Yuna: 86, Dain: 86, Teacher: 86, Nurse: 86 };
+    const expectedTotals = { Seoyeon: 84, Yuna: 84, Dain: 84, Teacher: 84, Nurse: 84 };
     for (const [character, effects] of Object.entries(optimalRouteEffects)) {
         const total = effects.reduce((sum, [sceneId, choiceIndex]) => {
             const source = Number.isInteger(choiceIndex) ? scenes[sceneId]?.choices?.[choiceIndex] : scenes[sceneId];
@@ -444,16 +444,18 @@ test('optimal authored routes give every character 86 points before free talk', 
     }
 
     assert.equal(scenes.after3_seo_choice.choices[1].stats.Seoyeon.affinity, 16);
-    assert.equal(scenes.wall_seo_line_choice.choices[0].stats.Seoyeon.affinity, 8);
-    assert.equal(scenes.wall_seo_line_choice.choices[1].stats.Seoyeon.affinity, 8);
+    assert.equal(scenes.wall_seo_line_choice.choices[0].stats.Seoyeon.affinity, 6);
+    assert.equal(scenes.wall_seo_line_choice.choices[1].stats.Seoyeon.affinity, 6);
     assert.equal(scenes.after3_yuna_choice.choices[1].stats.Yuna.affinity, 17);
-    assert.equal(scenes.wall_yuna_choice.choices[0].stats.Yuna.affinity, 6);
+    assert.equal(scenes.wall_yuna_choice.choices[0].stats.Yuna.affinity, 4);
     assert.equal(scenes.after3_dain_choice.choices[1].stats.Dain.affinity, 17);
-    assert.equal(scenes.wall_dain_choice.choices[1].stats.Dain.affinity, 7);
+    assert.equal(scenes.wall_dain_choice.choices[1].stats.Dain.affinity, 5);
     assert.equal(scenes.hidden_homeroom_d4_choice.choices[0].stats.Teacher.affinity, 7);
     assert.equal(scenes.hidden_homeroom_d4_cafe_choice.choices[0].stats.Teacher.affinity, 7);
+    assert.equal(scenes.hidden_homeroom_d5_choice.choices[1].stats.Teacher.affinity, 11);
     assert.equal(scenes.hidden_nurse_d4_name_choice.choices[0].stats.Nurse.affinity, 4);
     assert.equal(scenes.hidden_nurse_d4_choice.choices[0].stats.Nurse.affinity, 7);
+    assert.equal(scenes.hidden_nurse_d5_choice.choices[0].stats.Nurse.affinity, 7);
     assert.equal(scenes.hidden_homeroom_d5_8.stats.Teacher.affinity, 15);
     assert.equal(scenes.hidden_nurse_d5_7.stats.Nurse.affinity, 15);
     assert.equal(scenes.hidden_nurse_d5_7_both.stats.Nurse.affinity, 15);

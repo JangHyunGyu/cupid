@@ -574,6 +574,37 @@
         "name": "{name}",
         "text": "*Quand je quitte l'annexe de la bibliothèque, l'éclairage automatique du couloir s'allume.*"
     },
+    "after2_group_seoyeon_companion": {
+        "name": "Seoyeon et l'autre personne",
+        "text": "*Du bout du doigt, Seoyeon désigne deux créneaux qui se chevauchent. Le regard en face d'elle ne cède pas davantage.* « Vous avez tous les deux besoin de son aide. Alors, qui est-ce que tu aides d'abord ? »",
+        "context": "Pendant que le protagoniste et Seoyeon mettent au point le planning de l'après-midi, le personnage ayant la meilleure affinité hors Seoyeon arrive avec son propre horaire ou une demande. Le travail du conseil des élèves empiète sur une autre activité scolaire et tous trois doivent trancher. Seoyeon demande clairement qui le protagoniste aidera en premier.",
+        "personality": "Cela ressemble à un simple conflit d'horaires, mais les deux personnages surveillent la priorité que leur accorde le protagoniste. Ne transforme pas la scène en hostilité ouverte ni en humiliation. S'il esquive, chacun réclame une réponse à sa manière. Si l'un est choisi, l'autre ne fait pas semblant de le prendre avec le sourire.",
+        "groupLocation": "Salle du conseil des élèves",
+        "groupChoiceState": "le planning de Seoyeon chevauche la demande de l'autre personne et le protagoniste doit dire qui il aidera d'abord",
+        "groupAftermathCause": "qui le protagoniste a choisi d'aider en premier dans la salle du conseil, et pourquoi"
+    },
+    "after2_group_yuna_companion": {
+        "name": "Yuna et l'autre personne",
+        "text": "*Il reste deux piles à classer, mais à peine assez de temps pour en finir une. Yuna retire un écouteur et regarde de l'autre côté de la table.* « Si tu ne peux en terminer qu'une avec nous, auprès de qui tu restes ? »",
+        "context": "Pendant que le protagoniste et Yuna classent des documents dans l'annexe de la bibliothèque, le personnage ayant la meilleure affinité hors Yuna arrive avec d'autres dossiers ou une demande urgente. Il ne reste assez de temps que pour achever correctement l'une des deux tâches. Yuna demande, brièvement et sans détour, auprès de qui le protagoniste restera.",
+        "personality": "Yuna exige un choix bref et précis, tandis que l'autre personne tient sa position à sa façon. Ne force pas une réconciliation et n'invente pas aussitôt une solution qui satisfait tout le monde. La réponse peut rassurer l'un et blesser l'autre.",
+        "groupLocation": "Annexe de la bibliothèque",
+        "groupChoiceState": "il ne reste assez de temps que pour classer une pile et le protagoniste doit dire auprès de qui il restera",
+        "groupAftermathCause": "auprès de qui le protagoniste a choisi de rester dans l'annexe, et pourquoi"
+    },
+    "after2_group_dain_companion": {
+        "name": "Dain et l'autre personne",
+        "text": "*Les récits venus du gymnase et de l'annexe ne concordent pas. Dain cale un ballon contre sa hanche et regarde le protagoniste droit dans les yeux.* « Si nos versions diffèrent, qui est-ce que tu crois en premier ? »",
+        "context": "Pendant que le protagoniste et Dain rangent le gymnase, le personnage ayant la meilleure affinité hors Dain arrive avec une autre version d'un petit incident près de l'annexe. Les récits se contredisent et il faut décider lequel vérifier d'abord. Dain demande à qui le protagoniste accorde sa confiance en premier.",
+        "personality": "N'invente ni accident grave ni mensonge malveillant. L'enjeu n'est pas la solution objective d'un mystère, mais la personne que le protagoniste décide de croire d'abord. Dain réclame une réponse franche et l'autre personnage ne se retire pas dans un rôle secondaire. La réponse peut blesser l'un des deux.",
+        "groupLocation": "Gymnase",
+        "groupChoiceState": "les versions du gymnase et de l'annexe se contredisent et le protagoniste doit dire qui il croit d'abord",
+        "groupAftermathCause": "qui le protagoniste a cru en premier dans le gymnase, et pourquoi"
+    },
+    "after2_group_return": {
+        "name": "{name}",
+        "text": "*La conversation terminée, je reprends mon sac et me dirige vers le portail du lycée.*"
+    },
     "minsu_warn_gate": {},
     "minsu_warn_1": {
         "name": "{name}",

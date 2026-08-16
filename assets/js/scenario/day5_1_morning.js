@@ -420,7 +420,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": "assets/images/characters/teacher_sad.png",
         "choices": [
             { "next": "hidden_homeroom_d5_praise_trap_1", "stats": {"Teacher":{"affinity":-25}}, "setFlags": ["teacher_praise_broken"] },
-            { "next": "hidden_homeroom_d5_correct_1", "stats": {"Teacher":{"affinity":13}} }
+            { "next": "hidden_homeroom_d5_correct_1", "stats": {"Teacher":{"affinity":11}} }
         ]
     },
     "hidden_homeroom_d5_praise_trap_1": {
@@ -856,7 +856,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/nurse_normal.png",
         "choices": [
-            { "next": "hidden_nurse_d5_choice_a", "stats": {"Nurse":{"affinity":9}} },
+            { "next": "hidden_nurse_d5_choice_a", "stats": {"Nurse":{"affinity":7}} },
             { "next": "hidden_nurse_d5_choice_b", "stats": {"Nurse":{"affinity":4}} },
             { "next": "hidden_nurse_d5_choice_trap", "stats": {"Nurse":{"affinity":-6}} }
         ]

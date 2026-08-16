@@ -6381,10 +6381,20 @@
 
 ### `after2_dain_return`
 - 배경: `school.png`
-- 다음: `minsu_warn_gate`
+- 다음: `after2_group_dain_companion`
 
 - 캐릭터: `dain_shy.png`
 **{name}**: *학교로 돌아오는 길. 교문 앞에 다다랐다.*
+
+---
+
+### `after2_group_dain_companion`
+- 배경: `gym.png`
+- 타입: `group_free_talk`
+- 다음: `minsu_warn_gate`
+
+- 캐릭터: `없음`
+**다인과 동행**: *체육관과 별관에서 들은 설명이 서로 어긋난다. 다인이 공을 옆구리에 끼고 주인공을 똑바로 본다.* "우리 말이 다르면, 넌 누구부터 믿을 건데?"
 
 ---
 
@@ -6845,10 +6855,20 @@
 
 ### `after2_seo_return`
 - 배경: `school.png`
-- 다음: `minsu_warn_gate`
+- 다음: `after2_group_seoyeon_companion`
 
 - 캐릭터: `seyoun_normal.png`
 **{name}**: *학생회실을 나섰다. 교문 쪽으로 걸어간다.*
+
+---
+
+### `after2_group_seoyeon_companion`
+- 배경: `student_room.png`
+- 타입: `group_free_talk`
+- 다음: `minsu_warn_gate`
+
+- 캐릭터: `없음`
+**서연과 동행**: *서연이 겹쳐 적힌 일정 두 칸을 손끝으로 짚는다. 맞은편의 시선도 쉽게 물러서지 않는다.* "둘 다 네 도움이 필요해. 먼저 누구 쪽부터 갈 건데?"
 
 ---
 
@@ -7135,10 +7155,20 @@
 
 ### `after2_yuna_return`
 - 배경: `school.png`
-- 다음: `minsu_warn_gate`
+- 다음: `after2_group_yuna_companion`
 
 - 캐릭터: `yuna_smile.png`
 **{name}**: *도서관 별관을 나서자 복도 자동등이 켜진다.*
+
+---
+
+### `after2_group_yuna_companion`
+- 배경: `library_old.png`
+- 타입: `group_free_talk`
+- 다음: `minsu_warn_gate`
+
+- 캐릭터: `없음`
+**유나와 동행**: *정리할 자료는 두 묶음인데 남은 시간은 한쪽을 끝내기에도 빠듯하다. 유나가 이어폰 한쪽을 빼고 맞은편을 바라본다.* "하나만 같이 끝낼 수 있으면, 누구 옆에 남을 건데?"
 
 ---
 
@@ -12284,64 +12314,31 @@
 ### `after3_group_route_check`
 - 배경: `school_hallway.png`
 - 분기:
-  - [`homeroom_route_unlocked`] → `after3_group_teacher_seoyeon`
-  - [`nurse_route_unlocked`] → `after3_group_nurse_dain`
-  - [`route_seoyeon`] → `after3_group_seoyeon_dain`
-  - [`route_yuna`] → `after3_group_yuna_seoyeon`
-  - [`route_dain`] → `after3_group_dain_yuna`
+  - [`homeroom_route_unlocked`] → `after3_group_teacher_companion`
+  - [`nurse_route_unlocked`] → `after3_group_nurse_companion`
   - [기본] → `haeun_check`
 
 - 캐릭터: `없음`
 
 ---
 
-### `after3_group_seoyeon_dain`
-- 배경: `student_room.png`
+### `after3_group_teacher_companion`
+- 배경: `room_school.png`
 - 타입: `group_free_talk`
 - 다음: `after3_group_return`
 
 - 캐릭터: `없음`
-**서연 · 다인**: *학생회실 문을 닫으려는데 다인이 배구공을 옆구리에 낀 채 들어온다. 체육관 사용표 한 칸이 겹쳤다.*
+**담임선생님과 동행**: *수업이 끝난 공개 교실. 담임이 행사 원고 한 부를 펼치자, 함께 들어온 인물이 반대편 의자를 당겨 앉는다.*
 
 ---
 
-### `after3_group_yuna_seoyeon`
-- 배경: `library_old.png`
-- 타입: `group_free_talk`
-- 다음: `after3_group_return`
-
-- 캐릭터: `없음`
-**유나 · 서연**: *유나가 책 더미에서 낡은 장부를 빼내는 순간, 별관까지 찾아온 서연과 눈이 마주친다.*
-
----
-
-### `after3_group_dain_yuna`
-- 배경: `gym.png`
-- 타입: `group_free_talk`
-- 다음: `after3_group_return`
-
-- 캐릭터: `없음`
-**다인 · 유나**: *체육관 문이 다시 열리고 유나가 다인의 학생증을 두 손가락으로 집어 흔든다.*
-
----
-
-### `after3_group_teacher_seoyeon`
-- 배경: `teacher_room.png`
-- 타입: `group_free_talk`
-- 다음: `after3_group_return`
-
-- 캐릭터: `없음`
-**담임선생님 · 서연**: *서연이 결재 서류를 내려놓자, 담임의 원고 위로 삐져나온 메모 한 장이 함께 눈에 들어온다.*
-
----
-
-### `after3_group_nurse_dain`
+### `after3_group_nurse_companion`
 - 배경: `nurse_room.png`
 - 타입: `group_free_talk`
 - 다음: `after3_group_return`
 
 - 캐릭터: `없음`
-**보건선생님 · 다인**: *다인이 테이핑 상자를 안고 들어오자, 보건선생님이 빈 수납칸을 손끝으로 가리킨다.*
+**보건선생님과 동행**: *건강 점검표와 운동부 물품 상자가 나란히 놓인다. 보건선생님이 빈 칸 하나를 짚자, 함께 온 인물도 상자 안을 다시 들여다본다.*
 
 ---
 
@@ -12647,10 +12644,22 @@
 
 ### `haeun_warn_7_c`
 - 배경: `school_hallway.png`
-- 다음: `haeun_warn_7_d`
+- 다음: `haeun_freetalk`
 
 - 캐릭터: `haeun_normal.png`
 **하은**: 설득하라는 건 아니에요. 그냥 혼자 두지만 말아 주세요.
+
+---
+
+### `haeun_freetalk`
+- 배경: `school_hallway.png`
+- 타입: `free_talk`
+- 다음: `haeun_warn_7_d`
+- 컨텍스트: "하은은 방금 서연이 혼자 울고 있는 모습을 봤다고 알렸고, 설득하려 들지 말더라도 오늘만은 혼자 두지 말아 달라고 부탁했다. 아직 복도에 함께 서 있으며, 주인공이 어떻게 할 생각인지 대답을 기다린다."
+- 성격: "하은은 예의를 지키면서도 서연이 상처받은 일을 가볍게 넘기지 않는다. 변명보다 지금 할 행동을 듣고 싶어 한다. 주인공의 대답을 듣고 묻거나 반박할 수 있지만, 서연의 마음을 대신 단정하거나 주인공에게 특정 행동을 강제로 수행시키지 않는다. 연애나 성적인 분위기로 전환하지 않는다. 호감도는 하은의 개인적인 신뢰와 호의만 나타내며 어떤 엔딩에도 영향을 주지 않는다."
+
+- 캐릭터: `haeun_worried.png`
+**하은**: *하은은 돌아서지 않고 주인공을 똑바로 본다.* "…대답은 듣고 갈게요. 지금 어떻게 할 생각이에요?"
 
 ---
 
@@ -16921,8 +16930,8 @@
 - 배경: `park.png`
 - 배경톤: `cold`
 - 선택지:
-  1. "물티슈 줄까." → `wall_seo_line_react_1` | Seoyeon +8
-  2. "잠깐 앉아 있자." → `wall_seo_line_react_2` | Seoyeon +8
+  1. "물티슈 줄까." → `wall_seo_line_react_1` | Seoyeon +6
+  2. "잠깐 앉아 있자." → `wall_seo_line_react_2` | Seoyeon +6
   3. "굳이 설명 안 해도 알 것 같아." → `wall_seo_line_react_3` | Seoyeon -4
 
 - 캐릭터: `seyoun_cry.png`
@@ -17499,7 +17508,7 @@
 - 배경톤: `lights-off`
 - 선택지:
   1. "아무 말 안 할게. 그냥 여기 있을게." → `wall_dain_newdream_1` | Dain +2
-  2. "울어도 돼. 밝은 척 안 해도 돼. 나한테는." → `wall_dain_cry_1` | Dain +7
+  2. "울어도 돼. 밝은 척 안 해도 돼. 나한테는." → `wall_dain_cry_1` | Dain +5
   3. "공부터 정리하자. 내일 병원도 예약하고." → `wall_dain_lastspike_1` | Dain -4
 
 - 캐릭터: `dain_sad.png`
@@ -18150,7 +18159,7 @@
 - 배경: `yuna_hideout.png`
 - 배경톤: `dream`
 - 선택지:
-  1. "그 사람 대신은 못 해. 그래도 지금은 여기 있어." → `wall_yuna_moved_1` | Yuna +6
+  1. "그 사람 대신은 못 해. 그래도 지금은 여기 있어." → `wall_yuna_moved_1` | Yuna +4
   2. "지금은 네 말을 듣고 있어." → `wall_yuna_sub_1` | Yuna +2
   3. "...그래서 나한테 접근한 거야? 선배 대신?" → `wall_yuna_reject_1` | Yuna -10
 
@@ -19666,7 +19675,7 @@
 - 배경톤: `empty`
 - 선택지:
   1. "7년이나 붙잡으셨으니 분명 좋은 글일 거예요." → `hidden_homeroom_d5_praise_trap_1` | Teacher -25 | 플래그: `teacher_praise_broken`
-  2. "먼저 읽어볼게요. 표시해도 돼요?" → `hidden_homeroom_d5_correct_1` | Teacher +13
+  2. "먼저 읽어볼게요. 표시해도 돼요?" → `hidden_homeroom_d5_correct_1` | Teacher +11
 
 - 캐릭터: `teacher_sad.png`
 **{name}**: *원고를 안고 있다. 봉투가 팔 안쪽을 누른다.*
@@ -20409,7 +20418,7 @@
 ### `hidden_nurse_d5_choice`
 - 배경: `school_hallway.png`
 - 선택지:
-  1. "네. 가방에 넣어둘게요." → `hidden_nurse_d5_choice_a` | Nurse +9
+  1. "네. 가방에 넣어둘게요." → `hidden_nurse_d5_choice_a` | Nurse +7
   2. "카드보다 상담실 예약 방법을 알려주세요." → `hidden_nurse_d5_choice_b` | Nurse +4
   3. "이 카드만 있으면 상담실까지는 안 가도 되겠네요." → `hidden_nurse_d5_choice_trap` | Nurse -6
 

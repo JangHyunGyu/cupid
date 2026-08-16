@@ -574,6 +574,37 @@
         "name": "{name}",
         "text": "*Quando saio do anexo da biblioteca, as luzes automáticas do corredor se acendem.*"
     },
+    "after2_group_seoyeon_companion": {
+        "name": "Seoyeon e acompanhante",
+        "text": "*Seoyeon aponta com a ponta do dedo dois horários sobrepostos. O olhar do outro lado também não recua.* \"Os dois precisam da sua ajuda. Quem você vai ajudar primeiro?\"",
+        "context": "Enquanto o protagonista e Seoyeon organizam os horários da tarde, a outra personagem com maior afinidade chega com um compromisso ou pedido próprio. O trabalho do conselho estudantil coincide com outra atividade escolar, e os três precisam ajustar tudo. Seoyeon pergunta claramente quem o protagonista vai ajudar primeiro.",
+        "personality": "Parece um pequeno conflito de horários, mas as duas personagens percebem a prioridade do protagonista. Não transforme a cena em hostilidade aberta ou humilhação. Se ele fugir da resposta, cada uma insiste à sua maneira. Se uma for escolhida, a outra não finge que está tudo bem.",
+        "groupLocation": "Sala do conselho estudantil",
+        "groupChoiceState": "o horário de Seoyeon coincide com o pedido da acompanhante e o protagonista precisa dizer quem vai ajudar primeiro",
+        "groupAftermathCause": "quem o protagonista escolheu ajudar primeiro na sala do conselho e por quê"
+    },
+    "after2_group_yuna_companion": {
+        "name": "Yuna e acompanhante",
+        "text": "*Há duas pilhas para organizar, mas mal resta tempo para terminar uma. Yuna tira um lado do fone e olha para o outro lado da mesa.* \"Se só dá para terminar uma com a gente, do lado de quem você vai ficar?\"",
+        "context": "Enquanto o protagonista e Yuna organizam materiais no anexo da biblioteca, a outra personagem com maior afinidade chega com outros documentos ou um pedido urgente. Só há tempo para concluir direito um dos dois trabalhos. Yuna pergunta de forma curta e direta ao lado de quem o protagonista vai ficar.",
+        "personality": "Yuna exige uma escolha curta e precisa, e a acompanhante mantém sua posição do próprio jeito. Não force uma reconciliação nem invente logo uma solução que agrade às duas. A resposta pode aliviar uma e magoar a outra.",
+        "groupLocation": "Anexo da biblioteca",
+        "groupChoiceState": "só há tempo para organizar uma das duas pilhas e o protagonista precisa dizer ao lado de quem vai ficar",
+        "groupAftermathCause": "ao lado de quem o protagonista escolheu ficar no anexo e por quê"
+    },
+    "after2_group_dain_companion": {
+        "name": "Dain e acompanhante",
+        "text": "*Os relatos do ginásio e do anexo não batem. Dain prende uma bola junto ao corpo e encara o protagonista.* \"Se as nossas versões forem diferentes, em quem você vai acreditar primeiro?\"",
+        "context": "Enquanto o protagonista e Dain arrumam o ginásio, a outra personagem com maior afinidade chega com uma versão diferente de um pequeno incidente perto do anexo. Os relatos entram em conflito e é preciso decidir qual verificar primeiro. Dain pergunta em quem o protagonista confia primeiro.",
+        "personality": "Não invente um acidente grave nem uma mentira maldosa. O ponto não é a solução objetiva de um mistério, mas em quem o protagonista decide acreditar primeiro. Dain cobra uma resposta franca, e a acompanhante não recua para um papel secundário. A resposta pode magoar uma das duas.",
+        "groupLocation": "Ginásio",
+        "groupChoiceState": "os relatos do ginásio e do anexo entram em conflito e o protagonista precisa dizer em quem acredita primeiro",
+        "groupAftermathCause": "em quem o protagonista acreditou primeiro no ginásio e por quê"
+    },
+    "after2_group_return": {
+        "name": "{name}",
+        "text": "*Depois da conversa, pego minha bolsa e sigo em direção ao portão da escola.*"
+    },
     "minsu_warn_gate": {},
     "minsu_warn_1": {
         "name": "{name}",

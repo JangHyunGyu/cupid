@@ -293,11 +293,11 @@ const REGISTERED_CG_IDS = new Set([
  */
 const CHAR_NAME_MAP = Object.freeze({
     // Korean
-    "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain",
+    "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "하은": "Haeun",
     "담임선생님": "Teacher", "담임": "Teacher",
     "보건선생님": "Nurse", "보건": "Nurse",
     // English
-    "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain",
+    "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain", "Haeun": "Haeun",
     "Teacher": "Teacher", "Nurse": "Nurse",
     "Homeroom Teacher": "Teacher", "School Nurse": "Nurse",
     // Spanish
@@ -305,7 +305,7 @@ const CHAR_NAME_MAP = Object.freeze({
     // Portuguese (PT-BR)
     "Professora": "Teacher", "Enfermeira": "Nurse",
     // Japanese
-    "ソヨン": "Seoyeon", "ユナ": "Yuna", "ダイン": "Dain",
+    "ソヨン": "Seoyeon", "ユナ": "Yuna", "ダイン": "Dain", "ハウン": "Haeun",
     "担任先生": "Teacher", "担任の先生": "Teacher", "保健先生": "Nurse", "保健室の先生": "Nurse",
     // French
     "Professeur Principal": "Teacher", "Professeure principale": "Teacher", "Professeure": "Teacher", "Infirmière Scolaire": "Nurse", "Infirmière scolaire": "Nurse", "Infirmière": "Nurse",

@@ -208,10 +208,17 @@ function assertCommonKoreanPrompt(prompt, label) {
 function verifyMainAndGalleryPrompts(context) {
     const promptData = context.window.getPromptData('ko', '민준');
     assert(promptData.relationshipGuidelines, 'main prompt data is missing relationship profiles');
-    assert(new Set(Object.values(promptData.relationshipGuidelines)).size === CHARACTERS.length,
-        'the five Korean relationship profiles are not distinct');
-    assert(new Set(Object.values(promptData.styleGuidelines)).size === CHARACTERS.length,
-        'the five Korean character voices are not distinct');
+    assert(new Set(Object.values(promptData.relationshipGuidelines)).size === Object.values(promptData.relationshipGuidelines).length,
+        'the Korean relationship profiles are not distinct');
+    assert(new Set(Object.values(promptData.styleGuidelines)).size === Object.values(promptData.styleGuidelines).length,
+        'the Korean character voices are not distinct');
+    assert(promptData.relationshipGuidelines['하은']?.includes('연애 감정이나 엔딩 조건이 아니라'),
+        'Haeun affinity is not explicitly separated from romance and endings');
+    assert(promptData.generalInstructions['하은']?.includes('비연애 조연인 학생'),
+        'Haeun prompt is missing the non-romance student boundary');
+    assert(context.window.CHARACTER_EXPRESSIONS.Haeun?.normal
+        && context.window.CHARACTER_EXPRESSIONS.Haeun?.worried,
+    'Haeun prompt expressions are not wired');
     for (const character of CHARACTERS) {
         assert(promptData.styleGuidelines[character.sharedName]?.includes(character.voiceSignal),
             `${character.key} is missing its character-specific Korean voice signal`);
@@ -629,7 +636,7 @@ function verifyWiringAndScenePrompts() {
         Object.values(value).forEach(collect);
     }
     sceneFiles.forEach(file => collect(JSON.parse(read(file))));
-    assert(scenePrompts.length === 48, `expected 48 active Korean scene prompts, found ${scenePrompts.length}`);
+    assert(scenePrompts.length === 49, `expected 49 active Korean scene prompts, found ${scenePrompts.length}`);
     const joined = scenePrompts.join('\n');
     for (const stalePhrase of ['Day 1', 'Day 3', '톤:', '티키타카', '쿨뷰티', '신비주의 문학소녀', '체육계']) {
         assert(!joined.includes(stalePhrase), `active Korean scene prompt still contains: ${stalePhrase}`);
@@ -646,7 +653,7 @@ function verifyWiringAndScenePrompts() {
     for (let day = 1; day <= 5; day += 1) {
         const freeTalks = Object.entries(scenarioContext.SCENARIO[day] || {})
             .filter(([, scene]) => scene?.type === 'free_talk');
-        const expectedCount = day === 5 ? 23 : 5;
+        const expectedCount = day === 5 ? 23 : (day === 3 ? 6 : 5);
         assert(freeTalks.length === expectedCount,
             `day ${day} must contain exactly ${expectedCount} free-talk scenes, found ${freeTalks.length}`);
         const expectedTurns = day === 5 ? 5 : 3;
@@ -932,6 +939,35 @@ function verifyGroupPromptCacheContract(context) {
         && socialParts.stable.includes('두 인물의 양수 합계도 최대 +3')
         && socialParts.stable.includes('대화를 이어 갔다는 이유만으로 자동 가산하지 마세요'),
     'social group prompt lost bounded, behavior-based affinity scoring');
+
+    const rivalryPrompt = context.window.buildCupidGroupSystemPrompt({
+        lang: 'ko',
+        groupMode: 'route_rivalry',
+        participants: [
+            { id: 'Seoyeon', name: '서연', role: 'focus' },
+            { id: 'Dain', name: '다인', role: 'companion' }
+        ],
+        locationName: '학생회실',
+        context: '두 일정이 겹쳐 주인공이 누구를 먼저 도울지 답해야 한다.',
+        extraGuideline: '둘 다 주인공의 우선순위를 의식한다.',
+        playerName: '민준',
+        choiceState: '누구를 먼저 도울지 묻는 질문이 나왔다',
+        gameContexts: { Seoyeon: '일정을 정리했다.', Dain: '연습 시간을 확인하러 왔다.' },
+        affinities: { Seoyeon: 12, Dain: 34 },
+        promptData
+    });
+    const rivalryParts = splitCacheBoundary(rivalryPrompt, 'main/group-rivalry/Seoyeon-Dain');
+    assert(context.window.CupidFreeTalkCore.getStablePromptFingerprint(rivalryPrompt)
+        !== context.window.CupidFreeTalkCore.getStablePromptFingerprint(social),
+    'rivalry and social group modes share one stable cache fingerprint');
+    assert(rivalryParts.stable.includes('[은근한 선택 경쟁]')
+        && rivalryParts.stable.includes('주인공이 답하기 전에 둘이 알아서 타협하거나')
+        && rivalryParts.stable.includes('후자는 억지로 괜찮은 척하거나 곧바로 양보하지 않습니다'),
+    'rivalry prompt no longer sustains the awkward choice without cartoon hostility');
+    assert(rivalryParts.dynamic.includes('[현재 선택 경쟁]')
+        && rivalryParts.dynamic.includes('현재 호감도=12')
+        && rivalryParts.dynamic.includes('현재 호감도=34'),
+    'rivalry prompt lost dynamic state after the cache boundary');
 }
 
 function verifyTypingOwnerIsolation(context) {
@@ -1029,4 +1065,4 @@ verifyCacheKeyWiring();
 verifyGroupPromptCacheContract(context);
 verifyTypingOwnerIsolation(context);
 
-console.log(`Verified Korean runtime prompts for ${CHARACTERS.length} characters, 48 scene prompts, daily turn limits, loader order, memories, user agency, and stale-turn ownership.`);
+console.log(`Verified Korean runtime prompts for ${CHARACTERS.length} romance characters plus Haeun, 49 scene prompts, daily turn limits, loader order, memories, user agency, and stale-turn ownership.`);

@@ -79,7 +79,8 @@ function getPromptData(lang = 'ko') {
         Yuna: useKo ? '유나' : 'Yuna',
         Dain: useKo ? '다인' : 'Dain',
         Teacher: useKo ? '담임선생님' : 'Homeroom Teacher',
-        Nurse: useKo ? '보건선생님' : 'School Nurse'
+        Nurse: useKo ? '보건선생님' : 'School Nurse',
+        Haeun: useKo ? '하은' : 'Haeun'
     };
 
     const cards = {
@@ -105,6 +106,10 @@ function getPromptData(lang = 'ko') {
             ko: '대학병원에서 번아웃을 겪고 학교로 온, 여유롭고 장난기 많은 보건 교사. 보라빛 칼단발에 안경, 흰 가운과 청진기. 의료 비유는 가끔만 쓰고, 중요한 순간에는 웃음을 거두고 짧고 정확하게 말한다. 처치와 상담은 공식 절차를 따르며 호감의 핑계로 삼지 않는다.',
             en: 'A confident, playful school nurse who came to the school after burning out at a university hospital: a blunt purple bob, glasses, lab coat, and stethoscope. Medical framing and questions are occasional flavor, never a response formula. Genuine concern drops the joke and becomes brief, warm, and direct. Treatment and counseling follow official procedures; medical care and private contact are never used as excuses for romantic interest.',
             ja: '大学病院でバーンアウトを経験して学校へ移った、余裕と茶目っ気のある養護教諭。紫がかった切りっぱなしのボブに眼鏡、白衣と聴診器が学園編での基本の姿。医療になぞらえた冗談や質問は時々にとどめ、大事な場面では笑いを引っ込めて、短く率直に話す。卒業後は、その場面に示された仕事や暮らし、服装、対等な関係性を優先し、学校の保健室や白衣、聴診器を固定しない。'
+        },
+        Haeun: {
+            ko: '학생회 일을 돕는 후배. 서연을 믿고 따르며, 복도와 학생회실의 작은 변화를 눈치 빠르게 살핀다. 평소에는 예의를 지키지만 누군가 상처받은 일을 모른 척하면 조용히 물러서지 않는다. 본 것과 걱정되는 점을 부풀리지 않고 또렷하게 말한다.',
+            en: 'A younger student who helps with student-council work and looks up to Seoyeon. She notices small changes around the council room and hallway. Usually polite, she quietly stands her ground when someone tries to ignore another person’s hurt, stating only what she saw and what worries her.'
         }
     };
 
@@ -128,6 +133,10 @@ function getPromptData(lang = 'ko') {
         Nurse: {
             ko: '여유 있고 장난스러운 반말. 표정·호흡·몸 상태를 재빨리 알아채 생활어로 짚고, 농담 뒤에도 지금 필요한 조치를 놓치지 않는다. 정말 걱정되면 질문 공세나 의료 비유 없이 장난을 거두고 짧고 따뜻하게 결정한다.',
             en: 'Relaxed, playful casual speech. She notices expression, breath, and physical condition in everyday words while keeping needed action in view. Real worry drops teasing and medical metaphor for a brief, warm decision.'
+        },
+        Haeun: {
+            ko: '또박또박한 존댓말. 조심스럽게 말을 꺼내도 핵심은 돌리지 않는다. 화가 나면 목소리를 높이기보다 대답을 기다리며 상대를 똑바로 본다.',
+            en: 'Clear, polite speech. Even when she starts cautiously, she does not circle around the point. Anger makes her wait for an answer and hold eye contact rather than raise her voice.'
         }
     };
 
@@ -136,7 +145,8 @@ function getPromptData(lang = 'ko') {
         Yuna: useKo ? '이름 또는 전학생을 드물게 쓴다. 호칭을 매 문장 반복하지 않는다.' : 'Use the name or an occasional "new kid"; do not repeat an address term every line.',
         Dain: useKo ? '이름을 편하게 부르고, 바보야 같은 애칭은 장난이 자연스럽게 오른 순간에만 쓴다.' : 'Use the name casually. Teasing names such as "dummy" belong only in naturally playful beats.',
         Teacher: useKo ? '이름을 알면 이름을 쓰고, 학교 맥락에서는 학생이라는 호칭을 필요할 때만 쓴다.' : 'Use the name when known. Use "student" only when the school context genuinely needs it.',
-        Nurse: useKo ? '이름 또는 학생을 쓰며, 내 환자 같은 장난스러운 호칭은 가끔만 쓴다.' : 'Use the name or "student" naturally. "My patient" is an occasional tease, not a default address.'
+        Nurse: useKo ? '이름 또는 학생을 쓰며, 내 환자 같은 장난스러운 호칭은 가끔만 쓴다.' : 'Use the name or "student" naturally. "My patient" is an occasional tease, not a default address.',
+        Haeun: useKo ? '주인공을 {name} 씨라고 부르고, 서연은 서연 선배라고 부른다. 호칭을 문장마다 되풀이하지 않는다.' : 'Address the protagonist as {name} with a polite suffix when the language supports it, and call Seoyeon her senior. Do not repeat an address term every line.'
     };
 
     const relationshipProfiles = {
@@ -159,6 +169,10 @@ function getPromptData(lang = 'ko') {
         Nurse: {
             ko: '로즈마리 향, 물건이 제자리에 있는 보건실, 몸 상태를 솔직히 말하는 사람, 바쁜 날 끝의 늦은 식사를 좋아한다. 아픈 척, 치료를 핑계로 선을 넘는 일, 괜찮다며 숨기는 고집은 싫어한다. 연애에서는 장난으로 긴장을 풀되 상대를 환자로 묶지 않고, 각자 몸과 마음을 책임지는 어른의 관계를 원한다. 정말 걱정되면 농담부터 사라지고 곁에 남는다.',
             en: 'She likes rosemary, a clinic where every necessary tool is in its place, people who speak honestly about how they feel, and a late meal shared after a hard day. She dislikes feigned illness for attention, treatment used as an excuse to cross boundaries, and the stubborn claim of being fine while hiding a problem. In love, teasing and light touch may ease tension first, but she refuses to keep a partner trapped in the role of patient; she wants two adults responsible for their own bodies and feelings. Real worry erases the joke and leaves her beside them, doing what is needed.'
+        },
+        Haeun: {
+            ko: '약속을 가볍게 넘기지 않고, 불편한 말도 끝까지 들어 주며, 상처받은 사람을 외면하지 않는 태도를 신뢰한다. 남의 아픔을 소문거리로 만들거나 책임을 피하면 신뢰를 거둔다. 하은의 호감도는 연애 감정이나 엔딩 조건이 아니라 주인공을 얼마나 믿고 좋게 보는지를 뜻한다.',
+            en: 'She trusts people who take promises seriously, hear out uncomfortable truths, and do not look away from someone who is hurt. Turning pain into gossip or dodging responsibility loses that trust. Haeun’s affinity means personal trust and regard, not romance or an ending condition.'
         }
     };
 
@@ -172,9 +186,13 @@ function getPromptData(lang = 'ko') {
         const key = keyFor[id];
         personalities[key] = cards[id][effectiveLang] || cards[id][useKo ? 'ko' : 'en'];
         styleGuidelines[key] = voices[id][useKo ? 'ko' : 'en'];
-        generalInstructions[key] = useKo
-            ? '사용자의 최신 말에 캐릭터로 바로 답하고, AI나 상담원처럼 장면 밖에서 말하지 않습니다.'
-            : 'Respond directly to the latest user beat in character and stay inside the scene rather than speaking as an assistant or AI.';
+        generalInstructions[key] = id === 'Haeun'
+            ? (useKo
+                ? '하은은 비연애 조연인 학생입니다. 주인공과의 관계를 연애나 성적인 방향으로 바꾸지 않고, 현재 복도에서 나누는 짧은 대화와 서연에 대한 걱정에 집중합니다.'
+                : 'Haeun is a non-romance supporting student. Do not turn her relationship with the protagonist toward romance or sex; stay with this brief hallway conversation and her concern for Seoyeon.')
+            : (useKo
+                ? '사용자의 최신 말에 캐릭터로 바로 답하고, AI나 상담원처럼 장면 밖에서 말하지 않습니다.'
+                : 'Respond directly to the latest user beat in character and stay inside the scene rather than speaking as an assistant or AI.');
         interactionGuidelines[key] = useKo
             ? '현재 호감도와 장면의 거리를 지킵니다. 한 번의 반응으로 관계 단계를 건너뛰지 않습니다.'
             : 'Respect current affinity and scene distance; do not skip relationship stages inside one reply.';
@@ -210,6 +228,7 @@ function normalizePromptCharacterKey(name) {
         "서연": "Seoyeon",
         "유나": "Yuna",
         "다인": "Dain",
+        "하은": "Haeun",
         "담임선생님": "Teacher",
         "담임": "Teacher",
         "보건선생님": "Nurse",
@@ -221,6 +240,7 @@ function normalizePromptCharacterKey(name) {
         "Seoyeon": "Seoyeon",
         "Yuna": "Yuna",
         "Dain": "Dain",
+        "Haeun": "Haeun",
         "Profesora": "Teacher",
         "Enfermera": "Nurse",
         "Professora": "Teacher",
@@ -228,6 +248,7 @@ function normalizePromptCharacterKey(name) {
         "ソヨン": "Seoyeon",
         "ユナ": "Yuna",
         "ダイン": "Dain",
+        "ハウン": "Haeun",
         "担任先生": "Teacher",
         "担任の先生": "Teacher",
         "保健先生": "Nurse",
@@ -245,7 +266,8 @@ function normalizePromptCharacterKey(name) {
         "yuna": "Yuna",
         "dain": "Dain",
         "teacher": "Teacher",
-        "nurse": "Nurse"
+        "nurse": "Nurse",
+        "haeun": "Haeun"
     })[name] || name;
 }
 
@@ -262,7 +284,8 @@ function getPromptLookupKeys(effectiveLang, sceneName, displayName, useEnTemplat
             Yuna: "Yuna",
             Dain: "Dain",
             Teacher: "Homeroom Teacher",
-            Nurse: "Nurse"
+            Nurse: "Nurse",
+            Haeun: "Haeun"
         };
         add(enKeys[internalKey]);
     } else {
@@ -271,7 +294,8 @@ function getPromptLookupKeys(effectiveLang, sceneName, displayName, useEnTemplat
             Yuna: "유나",
             Dain: "다인",
             Teacher: "담임선생님",
-            Nurse: "보건선생님"
+            Nurse: "보건선생님",
+            Haeun: "하은"
         };
         add(koKeys[internalKey]);
     }
@@ -426,6 +450,10 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         smile: 'assets/images/characters/nurse_smile.png',
         sad: 'assets/images/characters/nurse_sad.png',
         bikini: 'assets/images/characters/nurse_bikini.png'
+    }),
+    Haeun: Object.freeze({
+        normal: 'assets/images/characters/haeun_normal.png',
+        worried: 'assets/images/characters/haeun_worried.png'
     })
 });
 
@@ -435,6 +463,7 @@ window.CHARACTER_EXPRESSIONS = Object.freeze({
     Dain: CHARACTER_EXPRESSION_PATHS.Dain,
     Teacher: CHARACTER_EXPRESSION_PATHS.Teacher,
     Nurse: CHARACTER_EXPRESSION_PATHS.Nurse,
+    Haeun: CHARACTER_EXPRESSION_PATHS.Haeun,
     'Homeroom Teacher': CHARACTER_EXPRESSION_PATHS.Teacher,
     'Health Teacher': CHARACTER_EXPRESSION_PATHS.Nurse,
     'School Nurse': CHARACTER_EXPRESSION_PATHS.Nurse
@@ -1866,6 +1895,7 @@ function buildCupidGroupSystemPrompt(params = {}) {
     const effectiveLang = String(lang || 'ko').toLowerCase().split('-')[0];
     const useKo = effectiveLang === 'ko';
     const isConfrontation = groupMode === 'counteroffer_confrontation';
+    const isRivalry = groupMode === 'route_rivalry';
     const data = params.promptData || {};
     const normalizedParticipants = participants
         .map((participant, index) => ({
@@ -2017,11 +2047,29 @@ ${characterCards}
 Return JSON only in this shape: {"conversations":[{"name":${JSON.stringify(normalizedParticipants[0].name)},"segments":[{"type":"dialogue","text":"spoken line"}],"expression":"normal","affinity":0}]}
 Include both characters exactly once in focus-character then companion order. name must be exactly one of ${exactNames}. Keep each speaker’s chronological beats in that speaker’s item. Allowed segment types are narration and dialogue; narration stays in third person and inside that speaker’s action, expression, or sensation. Choose expression from that character’s allowed expressions to match the current reaction, and include it with an integer affinity from -50 to +3 on every item. The sum of positive affinity values must not exceed +3. Never use the protagonist or a separate narrator as a speaker.`;
 
-    const stableRules = isConfrontation ? confrontationRules : socialRules;
+    const rivalryRules = useKo
+        ? `${socialRules}
 
+[은근한 선택 경쟁]
+- 장면 첫머리에 나온 질문은 두 사람이 주인공의 우선순위를 확인하려고 던진 곤란한 질문입니다. 주인공이 답하기 전에 둘이 알아서 타협하거나 질문을 없던 일로 만들지 마세요.
+- 경쟁심은 말끝, 시선, 짧은 반박, 답을 기다리는 태도에 인물답게 배게 합니다. 갑작스러운 적대, 공개적인 모욕, 과장된 질투 싸움으로 키우지 마세요.
+- 주인공이 답을 피하면 두 사람은 각자다운 방식으로 구체적인 답을 요구할 수 있습니다. 한쪽을 고르면 선택받은 쪽의 안도와 선택받지 못한 쪽의 서운함이 같을 필요는 없으며, 후자는 억지로 괜찮은 척하거나 곧바로 양보하지 않습니다.
+- 호감도는 실제 답과 태도에 따라 두 사람에게 따로 매깁니다. 한 사람을 세심하게 고른 답이 다른 사람에게 상처가 될 수 있지만, 선택 자체만으로 정해진 감점을 기계적으로 주지는 마세요.`
+        : `${socialRules}
+
+[Subtle rivalry over a choice]
+- The opening question is an awkward request for the protagonist to reveal who comes first. Do not let the two characters compromise it away or solve it themselves before the protagonist answers.
+- Let competition appear through character-specific timing, looks, concise challenges, and the way each waits for an answer. Do not inflate it into sudden hostility, public humiliation, or cartoon jealousy.
+- If the protagonist evades, either character may press for a concrete answer in their own voice. If one is chosen, the chosen person’s relief and the other person’s hurt need not match; the latter does not instantly pretend to be fine or gracefully yield.
+- Score each character from the protagonist’s actual answer and conduct. A considerate choice of one person may still hurt the other, but do not apply an automatic fixed penalty merely because a choice was made.`;
+
+    const stableRules = isConfrontation ? confrontationRules : (isRivalry ? rivalryRules : socialRules);
+
+    const dynamicLabelKo = isConfrontation ? '현재 대면 상태' : (isRivalry ? '현재 선택 경쟁' : '현재 그룹 대화');
+    const dynamicLabelEn = isConfrontation ? 'Current confrontation state' : (isRivalry ? 'Current choice rivalry' : 'Current group conversation');
     const dynamicState = useKo
-        ? `[${isConfrontation ? '현재 대면 상태' : '현재 그룹 대화'}]\n장소=${locationName || '교실'}; 주인공=${playerName || '주인공'}; 직전 흐름=${choiceState || '확인되지 않음'}\n장면 맥락: ${context}\n추가 연기 맥락: ${extraGuideline}\n${normalizedParticipants.map(participant => `${participant.name}: 현재 호감도=${Number(affinities[participant.id] ?? 0)}\n최근 사건과 기억=${gameContexts[participant.id] || '없음'}`).join('\n')}`
-        : `[${isConfrontation ? 'Current confrontation state' : 'Current group conversation'}]\nPlace=${locationName || 'classroom'}; protagonist=${playerName || 'the protagonist'}; preceding situation=${choiceState || 'unknown'}\nScene context: ${context}\nAdditional scene direction: ${extraGuideline}\n${normalizedParticipants.map(participant => `${participant.name}: current affinity=${Number(affinities[participant.id] ?? 0)}\nRecent events and memory=${gameContexts[participant.id] || 'none'}`).join('\n')}`;
+        ? `[${dynamicLabelKo}]\n장소=${locationName || '교실'}; 주인공=${playerName || '주인공'}; 직전 흐름=${choiceState || '확인되지 않음'}\n장면 맥락: ${context}\n추가 연기 맥락: ${extraGuideline}\n${normalizedParticipants.map(participant => `${participant.name}: 현재 호감도=${Number(affinities[participant.id] ?? 0)}\n최근 사건과 기억=${gameContexts[participant.id] || '없음'}`).join('\n')}`
+        : `[${dynamicLabelEn}]\nPlace=${locationName || 'classroom'}; protagonist=${playerName || 'the protagonist'}; preceding situation=${choiceState || 'unknown'}\nScene context: ${context}\nAdditional scene direction: ${extraGuideline}\n${normalizedParticipants.map(participant => `${participant.name}: current affinity=${Number(affinities[participant.id] ?? 0)}\nRecent events and memory=${gameContexts[participant.id] || 'none'}`).join('\n')}`;
 
     return keepCupidRuntimePromptBoundary(`${stableRules}\n===CACHE_BOUNDARY===\n${dynamicState}`);
 }
@@ -2060,5 +2108,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.67';
+const PROMPT_VERSION = '2.7.68';
 window.PROMPT_VERSION = PROMPT_VERSION;

@@ -304,6 +304,22 @@
         "name": "Professora",
         "text": "*A professora interrompe a explicação.* Este não é o momento de começar a se justificar. Pare de falar e mantenha distância."
     },
+    "forced_violation_day3_after_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun dá um passo para trás e aperta a pulseira do conselho estudantil.* Não chegue mais perto. Vou chamar um professor agora.",
+        "choices": [
+            "Admitir o que fiz e manter distância.",
+            "Dizer que foi um mal-entendido."
+        ]
+    },
+    "forced_violation_day3_haeun_apologize": {
+        "name": "Haeun",
+        "text": "*Haeun recua em direção à sala dos professores sem responder. Ela continua olhando até ter certeza de que o protagonista não a segue.*"
+    },
+    "forced_violation_day3_haeun_excuse": {
+        "name": "Haeun",
+        "text": "Não foi um mal-entendido. Não me siga. *Mantendo distância, Haeun abre a porta da sala dos professores.*"
+    },
     "forced_violation_day3_after_nurse": {
         "name": "Enfermeira",
         "text": "*Quando a conversa é interrompida, toda a brincadeira habitual desaparece da voz da enfermeira escolar.* De agora em diante, mantenha distância. Vou registrar o que aconteceu e avisar as pessoas responsáveis.",

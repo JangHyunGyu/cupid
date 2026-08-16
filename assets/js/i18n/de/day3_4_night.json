@@ -304,6 +304,22 @@
         "name": "Klassenlehrerin",
         "text": "*Die Klassenlehrerin unterbricht die Erklärung.* Jetzt ist nicht der Moment, dich zu rechtfertigen. Hör auf zu reden und halte Abstand."
     },
+    "forced_violation_day3_after_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun tritt einen Schritt zurück und umklammert ihr Schülerratsarmband.* Komm nicht näher. Ich hole jetzt eine Lehrkraft.",
+        "choices": [
+            "Mein Fehlverhalten eingestehen und Abstand halten.",
+            "Behaupten, es sei ein Missverständnis gewesen."
+        ]
+    },
+    "forced_violation_day3_haeun_apologize": {
+        "name": "Haeun",
+        "text": "*Ohne zu antworten, weicht Haeun zum Lehrerzimmer zurück. Sie achtet bis zuletzt darauf, dass der Protagonist ihr nicht folgt.*"
+    },
+    "forced_violation_day3_haeun_excuse": {
+        "name": "Haeun",
+        "text": "Das war kein Missverständnis. Folge mir nicht. *Haeun hält Abstand und öffnet die Tür zum Lehrerzimmer.*"
+    },
     "forced_violation_day3_after_nurse": {
         "name": "Schulkrankenschwester",
         "text": "*Als das Gespräch abbricht, verschwindet jeder spielerische Ton aus der Stimme der Schulkrankenschwester.* Halte von jetzt an Abstand. Ich werde den Vorfall dokumentieren und die zuständigen Personen informieren.",

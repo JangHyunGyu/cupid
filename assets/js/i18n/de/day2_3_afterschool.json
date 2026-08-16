@@ -574,6 +574,37 @@
         "name": "{name}",
         "text": "*Als ich den Bibliotheksanbau verlasse, schalten sich die automatischen Flurlichter ein.*"
     },
+    "after2_group_seoyeon_companion": {
+        "name": "Seoyeon und Begleitung",
+        "text": "*Seoyeon tippt mit dem Finger auf zwei überlappende Termine. Auch der Blick ihr gegenüber weicht nicht.* „Beide brauchen deine Hilfe. Wem hilfst du zuerst?“",
+        "context": "Während der Protagonist und Seoyeon den Nachmittagsplan ordnen, kommt die andere Figur mit der höchsten Zuneigung mit einem eigenen Termin oder einer Bitte dazu. Die Arbeit des Schülerrats überschneidet sich mit einer anderen Schulaktivität, und die drei müssen sich einigen. Seoyeon fragt klar, wem der Protagonist zuerst helfen wird.",
+        "personality": "Es wirkt wie ein kleines Terminproblem, doch beide achten darauf, wen der Protagonist bevorzugt. Lass daraus keine offene Feindseligkeit oder Demütigung werden. Weicht er aus, verlangt jede Figur auf ihre Art eine Antwort. Wird eine gewählt, tut die andere nicht gezwungen so, als mache es ihr nichts aus.",
+        "groupLocation": "Schülerratsraum",
+        "groupChoiceState": "Seoyeons Termin überschneidet sich mit der Bitte der Begleitung und der Protagonist muss sagen, wem er zuerst hilft",
+        "groupAftermathCause": "wem der Protagonist im Schülerratsraum zuerst helfen wollte und warum"
+    },
+    "after2_group_yuna_companion": {
+        "name": "Yuna und Begleitung",
+        "text": "*Zwei Stapel müssen sortiert werden, doch die Zeit reicht kaum für einen. Yuna nimmt einen Ohrhörer heraus und blickt über den Tisch.* „Wenn du nur einen mit uns fertig bekommst – bei wem bleibst du?“",
+        "context": "Während der Protagonist und Yuna Material im Bibliotheksanbau sortieren, kommt die andere Figur mit der höchsten Zuneigung mit weiteren Unterlagen oder einer dringenden Bitte dazu. Die Zeit reicht nur, um eine der beiden Aufgaben ordentlich zu beenden. Yuna fragt kurz und direkt, bei wem der Protagonist bleibt.",
+        "personality": "Yuna verlangt eine knappe, genaue Entscheidung, während die Begleitung auf ihre eigene Art nicht zurückweicht. Erzwinge keine Versöhnung und erfinde nicht sofort eine Lösung, die beide zufriedenstellt. Die Antwort darf eine Person erleichtern und die andere enttäuschen.",
+        "groupLocation": "Bibliotheksanbau",
+        "groupChoiceState": "es bleibt nur Zeit für einen von zwei Stapeln und der Protagonist muss sagen, bei wem er bleibt",
+        "groupAftermathCause": "bei wem der Protagonist im Bibliotheksanbau bleiben wollte und warum"
+    },
+    "after2_group_dain_companion": {
+        "name": "Dain und Begleitung",
+        "text": "*Die Berichte aus Turnhalle und Anbau passen nicht zusammen. Dain klemmt einen Ball an die Seite und sieht den Protagonisten direkt an.* „Wenn unsere Geschichten nicht übereinstimmen, wem glaubst du zuerst?“",
+        "context": "Während der Protagonist und Dain die Turnhalle aufräumen, kommt die andere Figur mit der höchsten Zuneigung mit einer abweichenden Schilderung eines kleinen Vorfalls am Anbau dazu. Die Aussagen widersprechen sich, und jemand muss entscheiden, welcher zuerst nachgegangen wird. Dain fragt, wessen Wort der Protagonist zuerst vertraut.",
+        "personality": "Erfinde weder einen schweren Unfall noch eine böswillige Lüge. Es geht nicht um die objektive Lösung eines Rätsels, sondern darum, wem der Protagonist zuerst glaubt. Dain verlangt offen eine Antwort, und die Begleitung zieht sich nicht in eine Nebenrolle zurück. Die Antwort darf eine der beiden verletzen.",
+        "groupLocation": "Turnhalle",
+        "groupChoiceState": "die Aussagen aus Turnhalle und Anbau widersprechen sich und der Protagonist muss sagen, wem er zuerst glaubt",
+        "groupAftermathCause": "wem der Protagonist in der Turnhalle zuerst geglaubt hat und warum"
+    },
+    "after2_group_return": {
+        "name": "{name}",
+        "text": "*Nach dem Gespräch nehme ich meine Tasche und gehe zum Schultor.*"
+    },
     "minsu_warn_gate": {},
     "minsu_warn_1": {
         "name": "{name}",

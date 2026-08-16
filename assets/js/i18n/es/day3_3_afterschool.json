@@ -729,55 +729,25 @@
         "name": "Seoyeon",
         "text": "*Seoyeon camina hasta el extremo del pasillo vacío. Junto a su espalda erguida solo se ve el puño apretado.*"
     },
-    "after3_group_seoyeon_dain": {
-        "name": "Seoyeon · Dain",
-        "text": "*Cuando están a punto de cerrar la sala del consejo estudiantil, Dain entra con un balón de voleibol bajo el brazo. Hay un horario duplicado para el gimnasio.*",
-        "context": "Acaba de terminar la tarde que el protagonista pasó con Seoyeon. Antes de cerrar la sala, Dain llega para revisar el uso del gimnasio y descubre que el horario de Seoyeon coincide con una práctica extra del equipo. Es un problema pequeño que los tres pueden resolver juntos.",
-        "personality": "Seoyeon revisa el horario y el plazo con orden, pero no aparta al protagonista si ofrece ayuda. Dain va directo a la conclusión e interviene cuando se impacienta, sin menospreciar el trabajo de Seoyeon. Haz que se escuchen de verdad. No fuerces rivalidad ni celos; deja que su consideración y afecto aparezcan mientras ajustan el horario.",
+    "after3_group_teacher_companion": {
+        "name": "Profesora y acompañante",
+        "text": "*Las clases han terminado en el aula abierta. La profesora despliega un borrador del evento escolar mientras quien llegó con ellos acerca la silla de enfrente.*",
+        "context": "Después de clase, el protagonista revisa con la profesora un borrador para un evento literario escolar en un aula abierta cuando el otro personaje con mayor afinidad se suma con materiales u opiniones. Los tres hablan solo del texto y de los detalles del evento que pueden compartirse públicamente.",
+        "personality": "La profesora mantiene la distancia profesional y guía la conversación con humor seco y observaciones precisas. Haz que el acompañante aporte opiniones reales desde su propia voz e intereses. No conviertas la escena en una relación privada entre profesora y alumno ni en una reunión a puerta cerrada.",
         "buttonText": "Hablar",
-        "groupLocation": "Sala del consejo estudiantil",
-        "groupChoiceState": "Al terminar la tarde con Seoyeon, Dain llega para resolver un horario duplicado del gimnasio",
-        "groupAftermathCause": "las palabras o acciones del protagonista hacia Seoyeon y Dain en la sala del consejo"
+        "groupLocation": "Aula abierta",
+        "groupChoiceState": "mientras la profesora y el protagonista revisan el borrador del evento literario, el acompañante llega con material u opiniones",
+        "groupAftermathCause": "lo que el protagonista dijo o hizo sobre el borrador y el evento con la profesora y el acompañante"
     },
-    "after3_group_yuna_seoyeon": {
-        "name": "Yuna · Seoyeon",
-        "text": "*Cuando Yuna saca un registro antiguo de una pila de libros, se encuentra con la mirada de Seoyeon en la entrada del anexo.*",
-        "context": "Acaba de terminar la tarde que el protagonista pasó con Yuna. Entre los libros escondidos de Yuna aparece un antiguo registro del consejo estudiantil, y Seoyeon llega al anexo de la biblioteca buscándolo. Antes de devolverlo, los tres revisan una nota vieja guardada dentro.",
-        "personality": "Yuna aparenta molestia porque alguien más entró en su espacio, pero se quita un auricular y se queda cuando siente curiosidad. Seoyeon se ocupa de recuperar el registro sin intentar ordenar el refugio de Yuna. No las limites a intercambiar cortesías a través del protagonista. Deja que hagan conjeturas, se contradigan y muestren curiosidades distintas sobre la nota.",
-        "buttonText": "Hablar",
-        "groupLocation": "Anexo de la biblioteca",
-        "groupChoiceState": "Apareció un antiguo registro del consejo entre los libros de Yuna y Seoyeon llegó buscándolo",
-        "groupAftermathCause": "las palabras o acciones del protagonista hacia Yuna y Seoyeon en el anexo de la biblioteca"
-    },
-    "after3_group_dain_yuna": {
-        "name": "Dain · Yuna",
-        "text": "*La puerta del gimnasio vuelve a abrirse. Yuna sostiene entre dos dedos la credencial estudiantil de Dain.*",
-        "context": "Acaba de terminar la tarde que el protagonista pasó con Dain. Mientras ordenan el gimnasio, Yuna llega para devolver la credencial de Dain, que encontró cerca del anexo. Dain llevaba buscándola desde la mañana y los tres se quedan un momento conversando.",
-        "personality": "Dain le da las gracias de inmediato y sin ocultarlo, aunque puede intentar tapar la vergüenza hablando más alto. Yuna finge que el favor no importa mientras disfruta en secreto de su reacción, y pregunta de forma directa si algo le llama la atención. Mantén sus ritmos distintos sin convertir a Yuna en espectadora ni a Dain en alivio cómico. Haz que sus respuestas mutuas cambien según lo que diga el protagonista.",
-        "buttonText": "Hablar",
-        "groupLocation": "Gimnasio",
-        "groupChoiceState": "Mientras el protagonista y Dain ordenan el gimnasio, Yuna llega con la credencial que encontró",
-        "groupAftermathCause": "las palabras o acciones del protagonista hacia Dain y Yuna en el gimnasio"
-    },
-    "after3_group_teacher_seoyeon": {
-        "name": "Profesora · Seoyeon",
-        "text": "*Cuando Seoyeon deja unos documentos para su aprobación, todos reparan en una nota que sobresale del manuscrito de la profesora.*",
-        "context": "Es después de clases, tras la conversación del protagonista con la profesora sobre su manuscrito. Seoyeon entra en la sala de profesores con documentos del consejo estudiantil y ve por casualidad una nota entre las páginas que estaban ordenando. Los tres hablan de escritura y del evento escolar solo dentro de lo que puede compartirse.",
-        "personality": "La profesora mantiene límites profesionales claros y protege las partes inéditas del manuscrito, aunque el tema de la escritura le provoca reacciones más sinceras. Seoyeon pregunta lo necesario como presidenta del consejo sin entrometerse en la vida privada de una adulta, y aporta su opinión sobre frases e ideas para el evento. No uses a Seoyeon solo para descubrir un secreto entre los otros dos. Conserva la tensión natural de un espacio escolar público compartido por profesora y estudiantes.",
-        "buttonText": "Hablar",
-        "groupLocation": "Sala de profesores",
-        "groupChoiceState": "Mientras el protagonista ayuda a ordenar el manuscrito, Seoyeon llega con documentos del consejo estudiantil",
-        "groupAftermathCause": "las palabras o acciones del protagonista hacia la profesora y Seoyeon en la sala de profesores"
-    },
-    "after3_group_nurse_dain": {
-        "name": "Enfermera · Dain",
-        "text": "*Dain entra cargando una caja de cinta deportiva y la enfermera señala un hueco vacío en el armario.*",
-        "context": "El protagonista está con la enfermera después de clases cuando Dain devuelve los materiales de vendaje prestados al equipo de voleibol. Falta una pieza, así que los tres revisan la caja. Es un momento cotidiano para ocuparse de los materiales y del estado físico de Dain.",
-        "personality": "Aunque empiece con humor, la enfermera revisa primero la rodilla y la muñeca de Dain y mantiene la distancia propia de una docente delante de una alumna. Dain responde con sinceridad cuando la descubren, en vez de insistir en que está bien, aunque rebate con energía una preocupación excesiva. No obligues al protagonista a ponerse de un lado. Deja que sus formas distintas de cuidar se encuentren mientras cuentan materiales y comprueban cómo está Dain.",
+    "after3_group_nurse_companion": {
+        "name": "Enfermera y acompañante",
+        "text": "*Una hoja de revisión médica queda junto a una caja de suministros deportivos. La enfermera señala una línea vacía y quien está a su lado vuelve a mirar dentro de la caja.*",
+        "context": "Después de clase, el protagonista ayuda a la enfermera a ordenar revisiones de los clubes deportivos y suministros cuando el otro personaje con mayor afinidad se suma por una revisión o un problema de inventario. Los tres comprueban lo que falta dentro del procedimiento escolar normal.",
+        "personality": "La enfermera puede aliviar la tensión con una broma, pero nunca usa el cuidado o el tratamiento como excusa afectiva. El acompañante reacciona según su personalidad y estado actual. No conviertas una tarea rutinaria en un accidente ni en una reunión secreta.",
         "buttonText": "Hablar",
         "groupLocation": "Enfermería",
-        "groupChoiceState": "Mientras el protagonista y la enfermera ordenan materiales, Dain llega para devolver la caja de cinta del equipo",
-        "groupAftermathCause": "las palabras o acciones del protagonista hacia la enfermera y Dain en la enfermería"
+        "groupChoiceState": "mientras la enfermera y el protagonista ordenan revisiones y suministros deportivos, el acompañante se suma con algo que comprobar",
+        "groupAftermathCause": "lo que el protagonista dijo o hizo sobre la revisión y los suministros con la enfermera y el acompañante"
     },
     "after3_group_return": {
         "name": "{name}",
@@ -918,6 +888,12 @@
     "haeun_warn_7_c": {
         "name": "Haeun",
         "text": "No te pido que la convenzas. Solo que no la dejes sola."
+    },
+    "haeun_freetalk": {
+        "name": "Haeun",
+        "text": "*Haeun no se da la vuelta. Mira directamente al protagonista.* \"...Quiero oír tu respuesta antes de irme. ¿Qué vas a hacer ahora?\"",
+        "context": "Haeun acaba de contar que vio a Seoyeon llorando sola y pidió al protagonista que hoy no la dejara sola, aunque no intentara convencerla. Siguen juntos en el pasillo y Haeun espera saber qué piensa hacer.",
+        "personality": "Haeun conserva la cortesía, pero no resta importancia al daño de Seoyeon. Quiere oír qué hará el protagonista ahora, no una excusa. Puede preguntar o cuestionar su respuesta, pero no decide por Seoyeon ni obliga al protagonista a realizar una acción. No conviertas el intercambio en algo romántico o sexual. Su afinidad representa solo confianza y aprecio personal y no afecta a ningún final."
     },
     "haeun_warn_7_d": {
         "name": "Haeun",

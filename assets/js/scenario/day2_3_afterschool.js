@@ -341,7 +341,21 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "after2_dain_return": {
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/dain_shy.png",
-        "next": "minsu_warn_gate"
+        "next": "after2_group_dain_companion"
+    },
+    "after2_group_dain_companion": {
+        "background": "assets/images/background/gym.png",
+        "character": null,
+        "type": "group_free_talk",
+        "groupMode": "route_rivalry",
+        "dynamicGroupName": true,
+        "groupParticipants": {
+            "strategy": "focus_with_highest_other_affinity",
+            "focus": "Dain",
+            "tiePriority": ["Yuna", "Seoyeon", "Teacher", "Nurse"]
+        },
+        "maxTurns": 2,
+        "next": "after2_group_return"
     },
     "after2_seo_1": {
         "background": "assets/images/background/student_room.png",
@@ -605,7 +619,21 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "after2_seo_return": {
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "minsu_warn_gate"
+        "next": "after2_group_seoyeon_companion"
+    },
+    "after2_group_seoyeon_companion": {
+        "background": "assets/images/background/student_room.png",
+        "character": null,
+        "type": "group_free_talk",
+        "groupMode": "route_rivalry",
+        "dynamicGroupName": true,
+        "groupParticipants": {
+            "strategy": "focus_with_highest_other_affinity",
+            "focus": "Seoyeon",
+            "tiePriority": ["Dain", "Yuna", "Teacher", "Nurse"]
+        },
+        "maxTurns": 2,
+        "next": "after2_group_return"
     },
     "after2_yuna_1": {
         "background": "assets/images/background/yuna_hideout.png",
@@ -771,6 +799,25 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "after2_yuna_return": {
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/yuna_smile.png",
+        "next": "after2_group_yuna_companion"
+    },
+    "after2_group_yuna_companion": {
+        "background": "assets/images/background/library_old.png",
+        "character": null,
+        "type": "group_free_talk",
+        "groupMode": "route_rivalry",
+        "dynamicGroupName": true,
+        "groupParticipants": {
+            "strategy": "focus_with_highest_other_affinity",
+            "focus": "Yuna",
+            "tiePriority": ["Seoyeon", "Dain", "Teacher", "Nurse"]
+        },
+        "maxTurns": 2,
+        "next": "after2_group_return"
+    },
+    "after2_group_return": {
+        "background": "assets/images/background/school.png",
+        "character": null,
         "next": "minsu_warn_gate"
     },
     "minsu_warn_gate": {

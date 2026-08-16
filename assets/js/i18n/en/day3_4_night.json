@@ -304,6 +304,22 @@
         "name": "Homeroom Teacher",
         "text": "*The homeroom teacher cuts off the explanation.* This is not the time to start explaining yourself. Stop talking and keep your distance."
     },
+    "forced_violation_day3_after_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun steps back and grips her student-council bracelet.* Don't come any closer. I'm calling a teacher now.",
+        "choices": [
+            "Admit the wrongdoing and keep my distance.",
+            "Claim it was a misunderstanding."
+        ]
+    },
+    "forced_violation_day3_haeun_apologize": {
+        "name": "Haeun",
+        "text": "*Haeun backs toward the faculty office without answering. She keeps watching until she is sure the protagonist is not following.*"
+    },
+    "forced_violation_day3_haeun_excuse": {
+        "name": "Haeun",
+        "text": "It wasn't a misunderstanding. Don't follow me. *Keeping her distance, Haeun opens the faculty-office door.*"
+    },
     "forced_violation_day3_after_nurse": {
         "name": "School Nurse",
         "text": "*As the conversation cuts off, all the usual playfulness leaves the school nurse's voice.* Keep your distance from now on. I will document what happened and inform the people who need to know.",

@@ -406,6 +406,22 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "inheritVisualContext": true,
         "next": "forced_violation_day3_resume"
     },
+    "forced_violation_day3_after_haeun": {
+        "runtimeEntrypoint": true,
+        "inheritVisualContext": true,
+        "choices": [
+            { "next": "forced_violation_day3_haeun_apologize" },
+            { "next": "forced_violation_day3_haeun_excuse" }
+        ]
+    },
+    "forced_violation_day3_haeun_apologize": {
+        "inheritVisualContext": true,
+        "next": "forced_violation_day3_resume"
+    },
+    "forced_violation_day3_haeun_excuse": {
+        "inheritVisualContext": true,
+        "next": "forced_violation_day3_resume"
+    },
     "forced_violation_day3_resume": {
         "routeBeforeRender": true,
         "forcedSexualViolationResume": true

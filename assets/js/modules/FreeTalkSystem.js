@@ -640,6 +640,46 @@ class FreeTalkSystem {
         if (scene?.groupParticipants === 'counteroffer_confrontation') {
             return this._resolveCounterofferGroupParticipants(lang);
         }
+        if (scene?.groupParticipants?.strategy === 'focus_with_highest_other_affinity') {
+            const knownIds = ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse'];
+            const focusId = String(scene.groupParticipants.focus || '').trim();
+            if (!knownIds.includes(focusId)) return [];
+
+            const requestedPriority = Array.isArray(scene.groupParticipants.tiePriority)
+                ? scene.groupParticipants.tiePriority.filter(id => knownIds.includes(id) && id !== focusId)
+                : [];
+            const tiePriority = [...new Set([
+                ...requestedPriority,
+                ...knownIds.filter(id => id !== focusId)
+            ])];
+            const affinityOf = id => {
+                const value = Number(this.stateManager.getAffinity?.(id)
+                    ?? this.stateManager.stats?.[id]?.affinity
+                    ?? 0);
+                return Number.isFinite(value) ? value : 0;
+            };
+            const companionId = tiePriority
+                .map((id, priority) => ({ id, priority, affinity: affinityOf(id) }))
+                .sort((left, right) => right.affinity - left.affinity || left.priority - right.priority)[0]?.id;
+            if (!companionId) return [];
+
+            return [
+                {
+                    id: focusId,
+                    name: this._getLocalizedGroupCharacterName(focusId, lang),
+                    role: 'focus',
+                    side: 'left',
+                    initialExpression: 'normal'
+                },
+                {
+                    id: companionId,
+                    name: this._getLocalizedGroupCharacterName(companionId, lang),
+                    role: 'companion',
+                    side: 'right',
+                    initialExpression: 'normal'
+                }
+            ];
+        }
         if (!Array.isArray(scene?.groupParticipants)) return [];
 
         const knownIds = new Set(['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse']);
@@ -821,7 +861,10 @@ class FreeTalkSystem {
         this.uiManager.chatInput.readOnly = false;
         this.uiManager.chatSendBtn.disabled = false;
         this.uiManager.updateNameTag(participants[0].name);
-        if (scene.text) await this.dialogueSystem.typeText(scene.text, scene.name || participants[0].name);
+        const openingName = scene.dynamicGroupName
+            ? participants.map(participant => participant.name).join(' · ')
+            : (scene.name || participants[0].name);
+        if (scene.text) await this.dialogueSystem.typeText(scene.text, openingName);
         if (!window.isCupidDesktopPointer || window.isCupidDesktopPointer()) this.uiManager.chatInput.focus();
     }
 

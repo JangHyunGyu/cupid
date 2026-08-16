@@ -729,55 +729,25 @@
         "name": "Seoyeon",
         "text": "*Seoyeon geht zum Ende des leeren Flurs. Neben ihrem steifen Rücken ist nur noch ihre geballte Faust zu sehen.*"
     },
-    "after3_group_seoyeon_dain": {
-        "name": "Seoyeon · Dain",
-        "text": "*Als der Schülerratsraum gerade geschlossen werden soll, kommt Dain mit einem Volleyball unter dem Arm herein. Ein Zeitfenster für die Sporthalle überschneidet sich.*",
-        "context": "Der Nachmittag, den der Protagonist mit Seoyeon verbracht hat, ist gerade vorbei. Vor dem Abschließen kommt Dain, um die Hallenbelegung zu prüfen, und entdeckt eine Überschneidung zwischen Seoyeons Plan und einem zusätzlichen Volleyballtraining. Es ist ein kleines Problem, das die drei gemeinsam lösen können.",
-        "personality": "Seoyeon prüft Plan und Frist der Reihe nach, weist den Protagonisten aber nicht ab, wenn er helfen will. Dain kommt sofort zum Ergebnis und fällt ihr bei Ungeduld ins Wort, ohne Seoyeons Arbeit geringzuschätzen. Lass beide einander über dem Blatt wirklich zuhören. Erzwinge weder Rivalität noch Eifersucht; ihre unterschiedliche Rücksicht und Zuneigung sollen beim Lösen des Terminproblems sichtbar werden.",
+    "after3_group_teacher_companion": {
+        "name": "Klassenlehrerin und Begleitung",
+        "text": "*Der Unterricht ist vorbei, das Klassenzimmer bleibt offen. Die Lehrerin breitet einen Entwurf für die Schulveranstaltung aus, während die mitgekommene Person den Stuhl gegenüber heranzieht.*",
+        "context": "Nach dem Unterricht prüft der Protagonist mit der Klassenlehrerin in einem offenen Klassenzimmer den Entwurf für eine schulische Literaturveranstaltung. Die andere Figur mit der höchsten Zuneigung kommt mit Unterlagen oder einer Meinung dazu. Die drei besprechen nur Text und Veranstaltungsdetails, die öffentlich geteilt werden dürfen.",
+        "personality": "Die Lehrerin wahrt professionelle Distanz und führt das Gespräch mit trockenem Humor und präzisen Anmerkungen. Lass die Begleitung mit ihrer eigenen Stimme und ihren Interessen echte Beiträge liefern. Mache daraus weder eine private Lehrer-Schüler-Beziehung noch ein Treffen hinter verschlossener Tür.",
         "buttonText": "Sprechen",
-        "groupLocation": "Schülerratsraum",
-        "groupChoiceState": "Am Ende des Nachmittags mit Seoyeon kommt Dain, um eine Überschneidung bei der Hallenbelegung zu klären",
-        "groupAftermathCause": "die Worte oder Handlungen des Protagonisten gegenüber Seoyeon und Dain im Schülerratsraum"
+        "groupLocation": "Offenes Klassenzimmer",
+        "groupChoiceState": "während Lehrerin und Protagonist den Entwurf der Literaturveranstaltung prüfen, kommt die Begleitung mit Unterlagen oder einer Meinung dazu",
+        "groupAftermathCause": "was der Protagonist mit Lehrerin und Begleitung über Entwurf und Veranstaltung gesagt oder getan hat"
     },
-    "after3_group_yuna_seoyeon": {
-        "name": "Yuna · Seoyeon",
-        "text": "*Als Yuna ein altes Verzeichnis aus einem Bücherstapel zieht, trifft ihr Blick auf Seoyeon am Eingang des Anbaus.*",
-        "context": "Der Nachmittag, den der Protagonist mit Yuna verbracht hat, ist gerade vorbei. In Yunas verstecktem Bücherstapel taucht ein altes Verzeichnis des Schülerrats auf, und Seoyeon kommt in den Bibliotheksanbau, um danach zu suchen. Vor der Rückgabe betrachten die drei einen alten Zettel, der darin lag.",
-        "personality": "Yuna tut verärgert darüber, dass jemand ihren Ort betreten hat, nimmt aber einen Ohrhörer heraus und bleibt, sobald ihre Neugier geweckt ist. Seoyeon kümmert sich ordentlich um die Rückgabe, ohne Yunas Rückzugsort ungefragt aufzuräumen. Lass sie nicht nur über den Protagonisten Höflichkeiten austauschen. Sie sollen Vermutungen äußern, einander widersprechen und unterschiedliche Neugier auf den Zettel zeigen.",
-        "buttonText": "Sprechen",
-        "groupLocation": "Bibliotheksanbau",
-        "groupChoiceState": "In Yunas Bücherstapel ist ein altes Schülerratsverzeichnis aufgetaucht und Seoyeon kam, um es zu suchen",
-        "groupAftermathCause": "die Worte oder Handlungen des Protagonisten gegenüber Yuna und Seoyeon im Bibliotheksanbau"
-    },
-    "after3_group_dain_yuna": {
-        "name": "Dain · Yuna",
-        "text": "*Die Hallentür geht erneut auf. Yuna hält Dains Schülerausweis zwischen zwei Fingern hoch.*",
-        "context": "Der Nachmittag, den der Protagonist mit Dain verbracht hat, ist gerade vorbei. Während sie die Sporthalle aufräumen, bringt Yuna Dains Ausweis zurück, den sie beim Anbau gefunden hat. Dain sucht ihn seit dem Morgen, und die drei bleiben noch kurz zum Reden in der Halle.",
-        "personality": "Dain bedankt sich sofort und offen, kann ihre Verlegenheit jedoch mit zusätzlicher Lautstärke überspielen. Yuna tut, als sei der Gefallen nichts Besonderes, genießt aber heimlich Dains Reaktion und fragt knapp nach, wenn sie an einem Wort hängen bleibt. Bewahre ihr unterschiedliches Tempo, ohne Yuna zur Zuschauerin oder Dain zur bloßen Unterhaltung zu machen. Ihre Reaktionen aufeinander sollen sich mit der Antwort des Protagonisten bewegen.",
-        "buttonText": "Sprechen",
-        "groupLocation": "Sporthalle",
-        "groupChoiceState": "Während der Protagonist und Dain die Halle aufräumen, kommt Yuna mit dem gefundenen Ausweis",
-        "groupAftermathCause": "die Worte oder Handlungen des Protagonisten gegenüber Dain und Yuna in der Sporthalle"
-    },
-    "after3_group_teacher_seoyeon": {
-        "name": "Klassenlehrerin · Seoyeon",
-        "text": "*Als Seoyeon Unterlagen zur Genehmigung ablegt, fällt allen ein Zettel auf, der aus dem Manuskript der Lehrerin ragt.*",
-        "context": "Nach dem Unterricht hat der Protagonist gerade mit der Klassenlehrerin über ihr Manuskript gesprochen. Seoyeon kommt mit Unterlagen des Schülerrats ins Lehrerzimmer und bemerkt zufällig einen Zettel zwischen den Seiten, die beide sortiert haben. Die drei sprechen nur im offen teilbaren Rahmen über das Schreiben und die Schulveranstaltung.",
-        "personality": "Die Klassenlehrerin hält klare berufliche Grenzen und schützt die unveröffentlichten Teile ihres Manuskripts, zeigt beim Thema Schreiben jedoch ehrlichere Reaktionen als sonst. Seoyeon fragt als Schülerratspräsidentin, was sie wissen muss, ohne in das Privatleben einer Erwachsenen einzudringen, und äußert ihre Meinung zu Sätzen oder Veranstaltungsideen. Benutze Seoyeon nicht nur, um ein Geheimnis zwischen den anderen beiden zu entdecken. Bewahre die natürliche Spannung eines öffentlichen Schulraums, den Lehrerin und Schüler teilen.",
-        "buttonText": "Sprechen",
-        "groupLocation": "Lehrerzimmer",
-        "groupChoiceState": "Während der Protagonist beim Sortieren des Manuskripts hilft, kommt Seoyeon mit Unterlagen des Schülerrats",
-        "groupAftermathCause": "die Worte oder Handlungen des Protagonisten gegenüber der Klassenlehrerin und Seoyeon im Lehrerzimmer"
-    },
-    "after3_group_nurse_dain": {
-        "name": "Schulkrankenschwester · Dain",
-        "text": "*Dain kommt mit einer Kiste Sporttape herein, und die Schulkrankenschwester zeigt auf ein leeres Fach.*",
-        "context": "Der Protagonist ist nach dem Unterricht bei der Schulkrankenschwester, als Dain das vom Volleyballteam geliehene Tape zurückbringt. Ein Teil fehlt, deshalb prüfen die drei die Kiste noch einmal. Es ist ein alltäglicher Moment, in dem sie sich gemeinsam um das Material und Dains Zustand kümmern können.",
-        "personality": "Auch wenn sie scherzhaft beginnt, prüft die Schulkrankenschwester zuerst Dains Knie und Handgelenk und wahrt vor einer Schülerin die professionelle Distanz. Dain antwortet ehrlich, sobald sie ertappt wurde, statt weiter zu behaupten, alles sei in Ordnung, wehrt übertriebene Sorge aber lebhaft ab. Dränge den Protagonisten nicht auf eine Seite. Lass ihre unterschiedlichen Arten der Fürsorge aufeinandertreffen, während alle drei Material zählen und Dains Zustand prüfen.",
+    "after3_group_nurse_companion": {
+        "name": "Schulkrankenschwester und Begleitung",
+        "text": "*Neben einer Gesundheitsliste steht eine Kiste mit Material für die Sportklubs. Die Schulkrankenschwester zeigt auf eine leere Zeile, und die Person neben ihr sieht noch einmal in die Kiste.*",
+        "context": "Nach dem Unterricht hilft der Protagonist der Schulkrankenschwester bei Gesundheitskontrollen der Sportklubs und beim Material, als die andere Figur mit der höchsten Zuneigung wegen einer Kontrolle oder eines Bestandsproblems dazukommt. Die drei prüfen den fehlenden Punkt im Rahmen des normalen Schulablaufs.",
+        "personality": "Die Schulkrankenschwester darf die Spannung mit einem leichten Scherz lösen, nutzt Pflege oder Behandlung aber nie als Vorwand für Zuneigung. Die Begleitung reagiert gemäß ihrer Persönlichkeit und ihrem aktuellen Zustand. Mache aus Routinearbeit keinen Unfall und kein geheimes Treffen.",
         "buttonText": "Sprechen",
         "groupLocation": "Krankenzimmer",
-        "groupChoiceState": "Während der Protagonist und die Schulkrankenschwester Material ordnen, bringt Dain die Tapekiste des Teams zurück",
-        "groupAftermathCause": "die Worte oder Handlungen des Protagonisten gegenüber der Schulkrankenschwester und Dain im Krankenzimmer"
+        "groupChoiceState": "während Schulkrankenschwester und Protagonist Kontrollen und Material der Sportklubs ordnen, kommt die Begleitung mit etwas zu Prüfendem dazu",
+        "groupAftermathCause": "was der Protagonist mit Schulkrankenschwester und Begleitung über Kontrolle und Material gesagt oder getan hat"
     },
     "after3_group_return": {
         "name": "{name}",
@@ -918,6 +888,12 @@
     "haeun_warn_7_c": {
         "name": "Haeun",
         "text": "Du musst sie nicht überzeugen. Lass sie nur nicht allein."
+    },
+    "haeun_freetalk": {
+        "name": "Haeun",
+        "text": "*Haeun wendet sich nicht ab, sondern sieht den Protagonisten direkt an.* „...Ich gehe erst, wenn ich eine Antwort habe. Was wirst du jetzt tun?“",
+        "context": "Haeun hat gerade erzählt, dass sie Seoyeon allein weinen sah, und den Protagonisten gebeten, sie heute nicht allein zu lassen, auch wenn er sie nicht zu überzeugen versucht. Sie stehen noch zusammen im Flur, und Haeun wartet darauf, was er vorhat.",
+        "personality": "Haeun bleibt höflich, spielt Seoyeons Verletzung aber nicht herunter. Sie will hören, was der Protagonist jetzt tun wird, keine Ausrede. Sie darf nachfragen oder seiner Antwort widersprechen, entscheidet aber nicht für Seoyeon und zwingt den Protagonisten zu keiner Handlung. Mache das Gespräch weder romantisch noch sexuell. Ihre Zuneigung steht nur für persönliches Vertrauen und Wohlwollen und beeinflusst kein Ende."
     },
     "haeun_warn_7_d": {
         "name": "Haeun",
