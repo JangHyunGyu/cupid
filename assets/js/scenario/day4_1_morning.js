@@ -266,8 +266,14 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/teacher_normal.png",
         "choices": [
             { "next": "hidden_homeroom_d4_cafe_1", "stats": {"Teacher":{"affinity":7}} },
-            { "next": "hidden_homeroom_d4_decline", "stats": {"Teacher":{"affinity":4}} }
+            { "next": "hidden_homeroom_d4_decline", "stats": {"Teacher":{"affinity":4}} },
+            { "next": "hidden_homeroom_d4_choice_trap", "stats": {"Teacher":{"affinity":-4}} }
         ]
+    },
+    "hidden_homeroom_d4_choice_trap": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/teacher_worried.png",
+        "next": "hidden_homeroom_d4_decline_b"
     },
     "hidden_homeroom_d4_cafe_1": {
         "background": "assets/images/background/cafe.png",
@@ -518,8 +524,14 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/nurse_normal.png",
         "choices": [
             { "next": "hidden_nurse_d4_morning_choice_a", "stats": {"Nurse":{"affinity":8}} },
-            { "next": "hidden_nurse_d4_morning_choice_b", "stats": {"Nurse":{"affinity":4}} }
+            { "next": "hidden_nurse_d4_morning_choice_b", "stats": {"Nurse":{"affinity":4}} },
+            { "next": "hidden_nurse_d4_morning_choice_trap", "stats": {"Nurse":{"affinity":-5}} }
         ]
+    },
+    "hidden_nurse_d4_morning_choice_trap": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_worried.png",
+        "next": "hidden_nurse_d4_morning_13"
     },
     "hidden_nurse_d4_morning_choice_a": {
         "background": "assets/images/background/nurse_room.png",

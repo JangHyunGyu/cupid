@@ -211,8 +211,13 @@
         "text": "*Sie senkt das Klemmbrett und sieht {name} ins Gesicht.*",
         "choices": [
             "Ganz gut. Es ist nur noch ungewohnt.",
-            "Ehrlich gesagt, ziemlich überwältigend."
+            "Ehrlich gesagt, ziemlich überwältigend.",
+            "Sie müssen sich nicht besonders um mich kümmern, nur weil ich neu bin."
         ]
+    },
+    "after_homeroom_choice_trap": {
+        "name": "Klassenlehrerin",
+        "text": "*Das Klemmbrett hebt sich wieder vor ihre Brust.* Das ist keine Sonderbehandlung, sondern meine Aufgabe als Klassenlehrerin. Verstanden. Lassen wir es dabei."
     },
     "after_homeroom_ok": {
         "name": "Klassenlehrerin",

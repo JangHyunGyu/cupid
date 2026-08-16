@@ -284,8 +284,13 @@
         "text": "*She turns the saucer twice in the same spot.*",
         "choices": [
             "For 'just work,' you look pretty happy about it.",
-            "Thanks for looking out for me."
+            "Thanks for looking out for me.",
+            "So was giving me coffee part of the job too?"
         ]
+    },
+    "hidden_homeroom_d2_choice2_trap": {
+        "name": "Homeroom Teacher",
+        "text": "*Her hand stops turning the saucer.* Don't read into it like that."
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Homeroom Teacher",

@@ -211,8 +211,13 @@
         "text": "*The homeroom teacher lowers the clipboard and looks at {name}'s face.*",
         "choices": [
             "I'm okay. It still feels unfamiliar, though.",
-            "Honestly? It's a lot."
+            "Honestly? It's a lot.",
+            "You don't need to go out of your way for me just because I'm the transfer student."
         ]
+    },
+    "after_homeroom_choice_trap": {
+        "name": "Homeroom Teacher",
+        "text": "*The clipboard rises in front of her chest again.* This isn't special treatment. It's part of my job as your teacher. Fine. We'll leave it there."
     },
     "after_homeroom_ok": {
         "name": "Homeroom Teacher",

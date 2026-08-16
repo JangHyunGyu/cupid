@@ -181,8 +181,13 @@
         "text": "*Dentro da sacola de papel, as pontas do manuscrito se chocam.*",
         "choices": [
             "Tudo bem. Posso assistir à sessão?",
-            "Hoje eu já tenho compromisso."
+            "Hoje eu já tenho compromisso.",
+            "A senhora poderia ter me chamado a sós."
         ]
+    },
+    "hidden_homeroom_d4_choice_trap": {
+        "name": "Professora",
+        "text": "*Ela puxa a sacola de papel para perto do corpo.* Convidei você para uma sessão aberta justamente para evitar esse tipo de mal-entendido."
     },
     "hidden_homeroom_d4_cafe_1": {
         "name": "Professora",
@@ -350,8 +355,13 @@
         "text": "*No folheto aparece esta ordem: consulta com a professora da turma, Wee Class e contato com o responsável.*",
         "choices": [
             "Também vou falar com minha professora e com a orientação.",
-            "Ainda não tenho certeza."
+            "Ainda não tenho certeza.",
+            "Não posso falar só com a senhora?"
         ]
+    },
+    "hidden_nurse_d4_morning_choice_trap": {
+        "name": "Enfermeira",
+        "text": "Não. Se eu for a única adulta em quem você pode se apoiar, você vai ficar sozinho de novo assim que eu não estiver aqui."
     },
     "hidden_nurse_d4_morning_choice_a": {
         "name": "{name}",

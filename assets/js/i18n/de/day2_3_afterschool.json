@@ -406,8 +406,13 @@
         "text": "*Die Papierarbeit ist fast fertig.*",
         "choices": [
             "Soll ich noch etwas bleiben? Es ist doch noch etwas übrig, oder?",
-            "Wenn wir fertig sind, geh ich"
+            "Wenn wir fertig sind, geh ich",
+            "Das bisschen schaffst du doch allein, oder?"
         ]
+    },
+    "after2_seo_choice2_trap": {
+        "name": "Seoyeon",
+        "text": "*Sie zieht den Papierstapel zu sich.* Klar. Es war ja von Anfang an meine Arbeit."
     },
     "after2_seo_stay": {
         "name": "Seoyeon",

@@ -366,8 +366,13 @@
         "text": "*Sept ans. Le papier de manuscrit sur le bureau est usé.*",
         "choices": [
             "Sept ans, c'est pas de l'abandon — c'est de la persévérance",
-            "Pourquoi vous écrivez toujours ici ?"
+            "Pourquoi vous écrivez toujours ici ?",
+            "Au bout de sept ans, il serait peut-être temps d'abandonner, non ?"
         ]
+    },
+    "hidden_homeroom_d3_reveal_choice_trap": {
+        "name": "Professeure principale",
+        "text": "*La professeure referme le manuscrit.* Ça, on me l'a déjà dit bien des fois."
     },
     "hidden_homeroom_d3_reveal_choice_a": {
         "name": "Professeure principale",
@@ -555,17 +560,22 @@
         "name": "{name}",
         "text": "*J'ouvre la bouche, puis la referme.*",
         "choices": [
-            "C'est possible, oui...",
-            "Non, c'est juste... compliqué"
+            "Qu'est-ce qui s'est passé, à l'époque ?",
+            "Si c'est difficile à raconter, vous n'êtes pas obligée.",
+            "Vous êtes venue travailler à l'école parce que vous détestiez l'hôpital ?"
         ]
     },
     "hidden_nurse_d3_choice1_a": {
         "name": "Infirmière",
-        "text": "...C'est similaire ? Alors t'as bien fait de venir ici."
+        "text": "Je peux bien le raconter une fois. C'est aussi une histoire que je dois mettre au clair."
     },
     "hidden_nurse_d3_choice1_b": {
         "name": "Infirmière",
-        "text": "*L'infirmière désigne la chaise derrière le rideau.* D'accord. Même si tout est compliqué, repose-toi un peu ici."
+        "text": "D'accord. Je n'entrerai pas dans les détails."
+    },
+    "hidden_nurse_d3_choice1_c": {
+        "name": "Infirmière",
+        "text": "Je ne me suis pas enfuie parce que je détestais ça. Ce n'est pas si simple."
     },
     "hidden_nurse_d3_6": {
         "name": "Infirmière",
@@ -636,7 +646,8 @@
         "text": "*L'infirmière s'est arrêtée sur 'une personne'. Le bord du gobelet en papier se froisse sous ses doigts.*",
         "choices": [
             "C'est pour ça que vous avez quitté l'hôpital ?",
-            "Ça ne vous dérange pas d'en parler davantage ?"
+            "Ça ne vous dérange pas d'en parler davantage ?",
+            "Vous ne vous sentiriez pas mieux après avoir tout raconté ?"
         ]
     },
     "hidden_nurse_d3_choice2_a": {
@@ -646,6 +657,10 @@
     "hidden_nurse_d3_choice2_b": {
         "name": "Infirmière",
         "text": "...Oui. Je ne raconterai que ce que je peux supporter."
+    },
+    "hidden_nurse_d3_choice2_c": {
+        "name": "Infirmière",
+        "text": "C'est à la personne qui parle de décider si ça lui fera du bien, pas à celle qui écoute de la pousser."
     },
     "hidden_nurse_d3_9": {
         "name": "Infirmière",

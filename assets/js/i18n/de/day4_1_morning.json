@@ -181,8 +181,13 @@
         "text": "*In der Papiertüte stoßen die Ecken des Manuskripts gegeneinander.*",
         "choices": [
             "Gern. Darf ich mir die Besprechung ansehen?",
-            "Ich habe heute schon etwas vor."
+            "Ich habe heute schon etwas vor.",
+            "Sie hätten mich auch allein herbestellen können."
         ]
+    },
+    "hidden_homeroom_d4_choice_trap": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie zieht die Papiertüte näher an sich.* Ich habe dich zu einer offenen Besprechung eingeladen, damit genau so ein Missverständnis nicht entsteht."
     },
     "hidden_homeroom_d4_cafe_1": {
         "name": "Klassenlehrerin",
@@ -350,8 +355,13 @@
         "text": "*Auf dem Blatt steht die Reihenfolge: Klassenleitung, Wee-Class-Beratung, Kontakt zu den Eltern.*",
         "choices": [
             "Ich werde auch mit meiner Klassenlehrerin und der Beratungsstelle sprechen.",
-            "Ich weiß es noch nicht."
+            "Ich weiß es noch nicht.",
+            "Kann ich nicht einfach nur mit Ihnen reden?"
         ]
+    },
+    "hidden_nurse_d4_morning_choice_trap": {
+        "name": "Schulkrankenschwester",
+        "text": "Nein. Wenn ich die einzige Erwachsene bin, auf die du dich verlassen kannst, bist du wieder allein, sobald ich nicht da bin."
     },
     "hidden_nurse_d4_morning_choice_a": {
         "name": "{name}",

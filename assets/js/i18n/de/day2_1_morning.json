@@ -284,8 +284,13 @@
         "text": "*Die Klassenlehrerin dreht die Untertasse zweimal auf derselben Stelle.*",
         "choices": [
             "Für Arbeit sehen Sie ziemlich zufrieden aus",
-            "Danke, dass Sie sich kümmern"
+            "Danke, dass Sie sich kümmern",
+            "War der Kaffee für mich dann auch nur Teil Ihrer Arbeit?"
         ]
+    },
+    "hidden_homeroom_d2_choice2_trap": {
+        "name": "Klassenlehrerin",
+        "text": "*Ihre Hand hält mitten in der Bewegung über der Untertasse inne.* So solltest du das nicht auffassen."
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Klassenlehrerin",

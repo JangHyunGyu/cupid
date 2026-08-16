@@ -284,8 +284,13 @@
         "text": "*A professora gira duas vezes o pires no mesmo lugar.*",
         "choices": [
             "Pra quem tá a trabalho, a senhora tá sorrindo demais.",
-            "Obrigado por cuidar."
+            "Obrigado por cuidar.",
+            "Então me dar café também fazia parte do trabalho?"
         ]
+    },
+    "hidden_homeroom_d2_choice2_trap": {
+        "name": "Professora",
+        "text": "*A mão que girava o pires para.* Não interprete desse jeito."
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Professora",

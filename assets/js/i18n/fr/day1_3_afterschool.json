@@ -211,8 +211,13 @@
         "text": "*La professeure principale baisse son porte-bloc et regarde le visage de {name}.*",
         "choices": [
             "Ça va. Tout me paraît encore nouveau, cela dit.",
-            "Franchement, c'est un peu intense."
+            "Franchement, c'est un peu intense.",
+            "Vous n'avez pas besoin de vous occuper autant de moi sous prétexte que je suis le nouvel élève."
         ]
+    },
+    "after_homeroom_choice_trap": {
+        "name": "Professeure principale",
+        "text": "*Le porte-bloc se redresse devant sa poitrine.* Ce n'est pas un traitement de faveur, c'est mon travail de professeure principale. D'accord. On va en rester là."
     },
     "after_homeroom_ok": {
         "name": "Professeure principale",

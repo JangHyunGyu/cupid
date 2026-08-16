@@ -366,8 +366,13 @@
         "text": "*Seven years. The manuscript paper on the desk is worn thin.*",
         "choices": [
             "Seven years isn't giving up — that's persistence",
-            "Why do you always write here?"
+            "Why do you always write here?",
+            "After seven years, isn't it time to let it go?"
         ]
+    },
+    "hidden_homeroom_d3_reveal_choice_trap": {
+        "name": "Homeroom Teacher",
+        "text": "*The teacher closes the manuscript.* I've heard that plenty of times already."
     },
     "hidden_homeroom_d3_reveal_choice_a": {
         "name": "Homeroom Teacher",
@@ -555,17 +560,22 @@
         "name": "{name}",
         "text": "*I open my mouth, then close it again.*",
         "choices": [
-            "Something like that.",
-            "No, it's just complicated."
+            "What happened back then?",
+            "You don't have to tell me if it's hard to talk about.",
+            "Did you come to the school because you hated the hospital?"
         ]
     },
     "hidden_nurse_d3_choice1_a": {
         "name": "School Nurse",
-        "text": "Similar? Then you did the right thing coming here."
+        "text": "I think I can tell it once. It's a story I should sort out for myself too."
     },
     "hidden_nurse_d3_choice1_b": {
         "name": "School Nurse",
-        "text": "*The nurse points to the chair inside the curtain.* Right. Let it be complicated. Just get some rest here."
+        "text": "It's okay. I won't go into the details."
+    },
+    "hidden_nurse_d3_choice1_c": {
+        "name": "School Nurse",
+        "text": "I didn't run away because I hated it. It isn't that simple."
     },
     "hidden_nurse_d3_6": {
         "name": "School Nurse",
@@ -636,7 +646,8 @@
         "text": "*The nurse stops at 'one person.' The rim of the paper cup buckles beneath her fingers.*",
         "choices": [
             "Is that why you left the hospital?",
-            "Are you okay talking more about it?"
+            "Are you okay talking more about it?",
+            "Wouldn't you feel better if you told me everything?"
         ]
     },
     "hidden_nurse_d3_choice2_a": {
@@ -646,6 +657,10 @@
     "hidden_nurse_d3_choice2_b": {
         "name": "School Nurse",
         "text": "Yeah. I'll only say as much as I can handle."
+    },
+    "hidden_nurse_d3_choice2_c": {
+        "name": "School Nurse",
+        "text": "Whether it feels better is up to the person telling it, not the person listening and pushing."
     },
     "hidden_nurse_d3_9": {
         "name": "School Nurse",

@@ -366,8 +366,13 @@
         "text": "*Siete años. El manuscrito sobre la mesa está sobado.*",
         "choices": [
             "Siete años no es rendirse, es constancia, ¿no?",
-            "¿Y por qué escribe siempre aquí?"
+            "¿Y por qué escribe siempre aquí?",
+            "Después de siete años, ¿no sería mejor dejarlo ya?"
         ]
+    },
+    "hidden_homeroom_d3_reveal_choice_trap": {
+        "name": "Profesora",
+        "text": "*La profesora cierra el manuscrito.* Eso ya me lo han dicho muchas veces."
     },
     "hidden_homeroom_d3_reveal_choice_a": {
         "name": "Profesora",
@@ -555,17 +560,22 @@
         "name": "{name}",
         "text": "*Abro la boca y la vuelvo a cerrar.*",
         "choices": [
-            "Puede que se parezca, sí...",
-            "No, es solo que estoy confundido"
+            "¿Qué pasó entonces?",
+            "Si le cuesta hablar, no tiene que contármelo.",
+            "¿Vino a la escuela porque odiaba el hospital?"
         ]
     },
     "hidden_nurse_d3_choice1_a": {
         "name": "Enfermera",
-        "text": "...¿Algo así? Entonces hiciste bien en venir."
+        "text": "Creo que puedo contarlo una vez. Yo también necesito ordenar esa historia."
     },
     "hidden_nurse_d3_choice1_b": {
         "name": "Enfermera",
-        "text": "*La enfermera señala la silla detrás de la cortina.* Está bien. Si las cosas son complicadas, deja que lo sean y descansa aquí un rato."
+        "text": "Está bien. No entraré en detalles."
+    },
+    "hidden_nurse_d3_choice1_c": {
+        "name": "Enfermera",
+        "text": "No huí porque lo odiara. Tampoco es una historia tan sencilla."
     },
     "hidden_nurse_d3_6": {
         "name": "Enfermera",
@@ -636,7 +646,8 @@
         "text": "*La enfermera se detuvo en 'una persona'. El borde del vaso de papel se arruga bajo sus dedos.*",
         "choices": [
             "¿Dejó el hospital después de aquello?",
-            "¿Le parece bien seguir hablando de aquello?"
+            "¿Le parece bien seguir hablando de aquello?",
+            "¿No se sentiría mejor si lo contara todo?"
         ]
     },
     "hidden_nurse_d3_choice2_a": {
@@ -646,6 +657,10 @@
     "hidden_nurse_d3_choice2_b": {
         "name": "Enfermera",
         "text": "...Sí. Solo te contaré lo que pueda manejar."
+    },
+    "hidden_nurse_d3_choice2_c": {
+        "name": "Enfermera",
+        "text": "Quien habla decide si contarlo le hará bien, no quien escucha y presiona."
     },
     "hidden_nurse_d3_9": {
         "name": "Enfermera",

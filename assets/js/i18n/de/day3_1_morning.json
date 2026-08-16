@@ -366,8 +366,13 @@
         "text": "*Sieben Jahre. Das Manuskriptpapier auf dem Pult ist abgegriffen.*",
         "choices": [
             "Sieben Jahre sind kein Aufgeben — das ist Durchhaltevermögen.",
-            "Warum schreiben Sie immer hier?"
+            "Warum schreiben Sie immer hier?",
+            "Nach sieben Jahren wäre es doch Zeit, damit aufzuhören, oder?"
         ]
+    },
+    "hidden_homeroom_d3_reveal_choice_trap": {
+        "name": "Klassenlehrerin",
+        "text": "*Die Klassenlehrerin klappt das Manuskript zu.* Das habe ich schon oft genug gehört."
     },
     "hidden_homeroom_d3_reveal_choice_a": {
         "name": "Klassenlehrerin",
@@ -555,17 +560,22 @@
         "name": "{name}",
         "text": "*Ich öffne den Mund und schließe ihn wieder.*",
         "choices": [
-            "So ähnlich.",
-            "Nein, es ist einfach kompliziert."
+            "Was ist damals passiert?",
+            "Wenn es schwer ist, müssen Sie es mir nicht erzählen.",
+            "Sind Sie an die Schule gekommen, weil Sie das Krankenhaus gehasst haben?"
         ]
     },
     "hidden_nurse_d3_choice1_a": {
         "name": "Schulkrankenschwester",
-        "text": "So ähnlich? Dann war es gut, dass du hergekommen bist."
+        "text": "Einmal kann ich es wohl erzählen. Ich muss diese Geschichte selbst noch ordnen."
     },
     "hidden_nurse_d3_choice1_b": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schulkrankenschwester deutet auf den Stuhl hinter dem Vorhang.* Gut. Dann lass es eben kompliziert sein und ruh dich hier etwas aus."
+        "text": "Schon gut. Ich werde nicht ins Detail gehen."
+    },
+    "hidden_nurse_d3_choice1_c": {
+        "name": "Schulkrankenschwester",
+        "text": "Ich bin nicht geflohen, weil ich es gehasst habe. So einfach ist die Geschichte nicht."
     },
     "hidden_nurse_d3_6": {
         "name": "Schulkrankenschwester",
@@ -636,7 +646,8 @@
         "text": "*Bei ‚einer Person‘ hält die Krankenschwester inne. Der Rand des Pappbechers knickt unter ihren Fingern ein.*",
         "choices": [
             "Sind Sie nach diesem Erlebnis aus dem Krankenhaus gegangen?",
-            "Ist es für Sie in Ordnung, noch mehr davon zu erzählen?"
+            "Ist es für Sie in Ordnung, noch mehr davon zu erzählen?",
+            "Würden Sie sich nicht besser fühlen, wenn Sie alles erzählen?"
         ]
     },
     "hidden_nurse_d3_choice2_a": {
@@ -646,6 +657,10 @@
     "hidden_nurse_d3_choice2_b": {
         "name": "Schulkrankenschwester",
         "text": "Ja. Ich erzähle nur so viel, wie ich verkrafte."
+    },
+    "hidden_nurse_d3_choice2_c": {
+        "name": "Schulkrankenschwester",
+        "text": "Ob das Erzählen guttut, entscheidet die Person, die spricht. Nicht jemand, der zuhört und drängt."
     },
     "hidden_nurse_d3_9": {
         "name": "Schulkrankenschwester",

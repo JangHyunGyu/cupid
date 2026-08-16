@@ -406,8 +406,13 @@
         "text": "*Le tri est presque terminé.*",
         "choices": [
             "Je reste encore un peu ? Il semble en rester",
-            "Si c'est fini, j'y vais"
+            "Si c'est fini, j'y vais",
+            "Tu peux bien finir ça toute seule, non ?"
         ]
+    },
+    "after2_seo_choice2_trap": {
+        "name": "Seoyeon",
+        "text": "*Elle ramène la pile de feuilles vers elle.* Oui. C'était mon travail, après tout."
     },
     "after2_seo_stay": {
         "name": "Seoyeon",

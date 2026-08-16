@@ -383,8 +383,14 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "character": "assets/images/characters/teacher_normal.png",
         "choices": [
             { "next": "hidden_homeroom_d2_choice2_a", "stats": {"Teacher":{"affinity":6}} },
-            { "next": "hidden_homeroom_d2_choice2_b", "stats": {"Teacher":{"affinity":0}} }
+            { "next": "hidden_homeroom_d2_choice2_b", "stats": {"Teacher":{"affinity":0}} },
+            { "next": "hidden_homeroom_d2_choice2_trap", "stats": {"Teacher":{"affinity":-3}} }
         ]
+    },
+    "hidden_homeroom_d2_choice2_trap": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/teacher_angry.png",
+        "next": "hidden_homeroom_d2_11"
     },
     "hidden_homeroom_d2_choice2_a": {
         "background": "assets/images/background/teacher_office.png",

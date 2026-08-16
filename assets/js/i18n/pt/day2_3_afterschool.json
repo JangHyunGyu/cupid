@@ -406,8 +406,13 @@
         "text": "*A papelada tá quase no fim.*",
         "choices": [
             "Fico mais um pouco? Acho que ainda tem coisa",
-            "Se acabou, tô indo"
+            "Se acabou, tô indo",
+            "Isso aqui você consegue terminar sozinha, né?"
         ]
+    },
+    "after2_seo_choice2_trap": {
+        "name": "Seoyeon",
+        "text": "*Ela puxa a pilha de papéis para perto de si.* Claro. Era meu trabalho desde o começo."
     },
     "after2_seo_stay": {
         "name": "Seoyeon",

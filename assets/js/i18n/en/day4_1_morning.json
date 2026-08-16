@@ -181,8 +181,13 @@
         "text": "*The corners of the manuscript knock together inside the paper bag.*",
         "choices": [
             "Sure. May I sit in on the critique?",
-            "I already have plans today."
+            "I already have plans today.",
+            "You could have just asked me to come alone."
         ]
+    },
+    "hidden_homeroom_d4_choice_trap": {
+        "name": "Homeroom Teacher",
+        "text": "*She draws the paper bag closer to herself.* I invited you to an open critique so there wouldn't be any misunderstanding like that."
     },
     "hidden_homeroom_d4_cafe_1": {
         "name": "Homeroom Teacher",
@@ -350,8 +355,13 @@
         "text": "*The sheet lists the order: homeroom teacher, school counseling center, then parent or guardian.*",
         "choices": [
             "I'll talk to my homeroom teacher and the counseling center too.",
-            "I'm still not sure."
+            "I'm still not sure.",
+            "Can't I just talk to you?"
         ]
+    },
+    "hidden_nurse_d4_morning_choice_trap": {
+        "name": "School Nurse",
+        "text": "No. If I'm the only adult you can rely on, you'll be alone again the moment I'm not here."
     },
     "hidden_nurse_d4_morning_choice_a": {
         "name": "{name}",

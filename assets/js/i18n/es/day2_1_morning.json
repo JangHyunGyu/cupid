@@ -284,8 +284,13 @@
         "text": "*La profesora gira dos veces el platillo en el mismo lugar.*",
         "choices": [
             "Para ser trabajo, tiene usted buena cara",
-            "Gracias por estar pendiente"
+            "Gracias por estar pendiente",
+            "Entonces, ¿darme café también era parte del trabajo?"
         ]
+    },
+    "hidden_homeroom_d2_choice2_trap": {
+        "name": "Profesora",
+        "text": "*La mano que hacía girar el platillo se detiene.* No conviene que lo interpretes así."
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Profesora",

@@ -406,8 +406,13 @@
         "text": "*El papeleo está casi listo.*",
         "choices": [
             "¿Me quedo un rato más? Aún queda algo",
-            "Si ya terminamos, me voy"
+            "Si ya terminamos, me voy",
+            "Esto puedes terminarlo tú sola, ¿no?"
         ]
+    },
+    "after2_seo_choice2_trap": {
+        "name": "Seoyeon",
+        "text": "*Acerca hacia sí el montón de papeles.* Claro. Al fin y al cabo, era mi trabajo."
     },
     "after2_seo_stay": {
         "name": "Seoyeon",

@@ -1189,6 +1189,37 @@ test('group backup logs save one player row then one row per character with cano
     assert.equal(queued[2].clientMsgId, logSandbox.__makeCupidGroupChatLogClientId({
         turnId: 'group-turn-1', role: 'assistant', speakerId: 'Dain', messageIndex: 1, content: '저도 들을게요.'
     }));
+
+    for (const routeGroup of [
+        { day: 2, sessionId: 'after2_seo_group_talk', turnId: 'group-day2', participants: ['Seoyeon', 'Dain'] },
+        { day: 3, sessionId: 'hidden_homeroom_d3_group_talk', turnId: 'group-day3', participants: ['Teacher', 'Seoyeon'] }
+    ]) {
+        queued.length = 0;
+        queueEvents.length = 0;
+        await logSandbox.__saveCupidGroupChatLog({
+            userContent: '둘 다 솔직하게 말해 줘.',
+            assistantMessages: routeGroup.participants.map((speakerId, index) => ({
+                speakerId,
+                content: `${routeGroup.day}일 차 답변 ${index + 1}`,
+                affinityChange: index === 0 ? 1 : -1,
+                affinityCurrent: 20 + index
+            })),
+            participants: routeGroup.participants.map(id => ({ id })),
+            sessionId: routeGroup.sessionId,
+            turnId: routeGroup.turnId,
+            playerName: '민준',
+            conversationDay: routeGroup.day
+        });
+
+        assert.deepEqual(Array.from(queued, entry => `${entry.role}:${entry.speakerId}`), [
+            'user:__player__',
+            `assistant:${routeGroup.participants[0]}`,
+            `assistant:${routeGroup.participants[1]}`
+        ]);
+        assert.ok(queued.every(entry => entry.charId === 'group' && entry.context === 'group'));
+        assert.ok(queued.every(entry => entry.conversationDay === routeGroup.day));
+        assert.ok(queued.every(entry => entry.groupPairId === `cupid:${routeGroup.participants.join(':')}`));
+    }
 });
 
 test('single Cupid turns stage user, assistant, and render receipt before flushing', async () => {

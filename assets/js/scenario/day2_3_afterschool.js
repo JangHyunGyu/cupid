@@ -560,8 +560,14 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "character": "assets/images/characters/seyoun_normal.png",
         "choices": [
             { "next": "after2_seo_stay", "stats": {"Seoyeon":{"affinity":4}} },
-            { "next": "after2_seo_leave", "stats": {"Seoyeon":{"affinity":0}} }
+            { "next": "after2_seo_leave", "stats": {"Seoyeon":{"affinity":0}} },
+            { "next": "after2_seo_choice2_trap", "stats": {"Seoyeon":{"affinity":-3}} }
         ]
+    },
+    "after2_seo_choice2_trap": {
+        "background": "assets/images/background/student_room.png",
+        "character": "assets/images/characters/seyoun_pout.png",
+        "next": "after2_seo_leave"
     },
     "after2_seo_stay": {
         "background": "assets/images/background/student_room.png",

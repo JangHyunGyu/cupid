@@ -2232,9 +2232,19 @@
 - 선택지:
   1. "괜찮습니다. 아직 낯설지만요." → `after_homeroom_ok` | Teacher +0
   2. "솔직히 좀 정신없습니다." → `after_homeroom_honest_1` | Teacher +6
+  3. "전학생이라고 특별히 챙기실 필요는 없는데요." → `after_homeroom_choice_trap` | Teacher -2
 
 - 캐릭터: `teacher_normal.png`
 **담임선생님**: *클립보드를 내리고 {name}의 얼굴을 본다.*
+
+---
+
+### `after_homeroom_choice_trap`
+- 배경: `teacher_office.png`
+- 다음: `after_homeroom_ok_6`
+
+- 캐릭터: `teacher_worried.png`
+**담임선생님**: *클립보드가 다시 가슴 앞에 선다.* 특별 취급이 아니라 담임 일인데. 알겠다. 여기까지 하자.
 
 ---
 
@@ -4044,9 +4054,19 @@
 - 선택지:
   1. "업무치고 표정이 좋으신데요" → `hidden_homeroom_d2_choice2_a` | Teacher +6
   2. "챙겨주셔서 감사합니다" → `hidden_homeroom_d2_choice2_b` | Teacher +0
+  3. "그럼 저한테 커피까지 주신 것도 업무예요?" → `hidden_homeroom_d2_choice2_trap` | Teacher -3
 
 - 캐릭터: `teacher_normal.png`
 **{name}**: *담임이 컵받침을 같은 자리에서 두 번 돌린다.*
+
+---
+
+### `hidden_homeroom_d2_choice2_trap`
+- 배경: `teacher_office.png`
+- 다음: `hidden_homeroom_d2_11`
+
+- 캐릭터: `teacher_angry.png`
+**담임선생님**: *컵받침을 돌리던 손이 멈춘다.* 그런 식으로 받아들이면 곤란해.
 
 ---
 
@@ -6753,9 +6773,28 @@
 - 선택지:
   1. "좀 더 있을까? 아직 남았지?" → `after2_seo_stay` | Seoyeon +4
   2. "끝났으면 갈게" → `after2_seo_leave` | Seoyeon +0
+  3. "이 정도는 혼자 마무리할 수 있지?" → `after2_seo_choice2_trap` | Seoyeon -3
 
 - 캐릭터: `seyoun_normal.png`
 **{name}**: *서류 정리가 거의 끝났다.*
+
+---
+
+### `after2_seo_choice2_trap`
+- 배경: `student_room.png`
+- 다음: `after2_seo_leave`
+
+- 캐릭터: `seyoun_pout.png`
+**서연**: *서류 더미를 자기 쪽으로 당긴다.* 그래. 원래 내 일이니까.
+
+---
+
+### `after2_seo_leave`
+- 배경: `student_room.png`
+- 다음: `after2_seo_end`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: *완성된 서류 더미를 양손으로 한 번 눌러 맞춘다.*
 
 ---
 
@@ -6801,15 +6840,6 @@
 
 - 캐릭터: `seyoun_shy.png`
 **{name}**: *서연의 클립보드는 책상 위에 엎어져 있고 마지막 서류 한 장만 나란히 놓여 있다.*
-
----
-
-### `after2_seo_leave`
-- 배경: `student_room.png`
-- 다음: `after2_seo_end`
-
-- 캐릭터: `seyoun_normal.png`
-**서연**: *완성된 서류 더미를 양손으로 한 번 눌러 맞춘다.*
 
 ---
 
@@ -8890,9 +8920,19 @@
 - 선택지:
   1. "7년이면 포기가 아니라 끈기 아니에요?" → `hidden_homeroom_d3_reveal_choice_a` | Teacher +7
   2. "왜 꼭 여기서 쓰세요?" → `hidden_homeroom_d3_reveal_choice_b` | Teacher +2
+  3. "7년이면 이제 접을 때도 되지 않았어요?" → `hidden_homeroom_d3_reveal_choice_trap` | Teacher -4
 
 - 캐릭터: `teacher_normal.png`
 **{name}**: *7년. 교탁 위의 원고지가 닳아 있다.*
+
+---
+
+### `hidden_homeroom_d3_reveal_choice_trap`
+- 배경: `room_school.png`
+- 다음: `hidden_homeroom_d3_reveal_5`
+
+- 캐릭터: `teacher_sad.png`
+**담임선생님**: *담임이 원고지를 덮는다.* 그 말은 이미 많이 들었어.
 
 ---
 
@@ -9326,8 +9366,9 @@
 ### `hidden_nurse_d3_choice1`
 - 배경: `nurse_room.png`
 - 선택지:
-  1. "비슷해요." → `hidden_nurse_d3_choice1_a` | Nurse +6
-  2. "아뇨, 그냥 좀 복잡해서요" → `hidden_nurse_d3_choice1_b` | Nurse +0
+  1. "그때 무슨 일이 있었어요?" → `hidden_nurse_d3_choice1_a` | Nurse +6
+  2. "말하기 힘드시면 안 하셔도 돼요." → `hidden_nurse_d3_choice1_b` | Nurse +0
+  3. "병원이 싫어서 학교로 오신 거예요?" → `hidden_nurse_d3_choice1_c` | Nurse -3
 
 - 캐릭터: `nurse_normal.png`
 **{name}**: *입만 열었다가 다시 다문다.*
@@ -9339,7 +9380,7 @@
 - 다음: `hidden_nurse_d3_6`
 
 - 캐릭터: `nurse_normal.png`
-**보건선생님**: 비슷해? 그럼 여기 온 건 잘했어.
+**보건선생님**: 한 번쯤은 말해도 괜찮아. 나도 정리해야 할 이야기니까.
 
 ---
 
@@ -9348,7 +9389,16 @@
 - 다음: `hidden_nurse_d3_6`
 
 - 캐릭터: `nurse_normal.png`
-**보건선생님**: *보건선생님이 커튼 안쪽 의자를 가리킨다.* 그래. 복잡하면 복잡한 대로, 여기서 좀 쉬어.
+**보건선생님**: 괜찮아. 자세히는 말하지 않을게.
+
+---
+
+### `hidden_nurse_d3_choice1_c`
+- 배경: `nurse_room.png`
+- 다음: `hidden_nurse_d3_6`
+
+- 캐릭터: `nurse_worried.png`
+**보건선생님**: 싫어서 도망친 건 아니야. 그렇게 간단한 얘기도 아니고.
 
 ---
 
@@ -9501,6 +9551,7 @@
 - 선택지:
   1. "그 일을 겪고 병원을 나오신 거예요?" → `hidden_nurse_d3_choice2_a` | Nurse +9
   2. "그때 이야기, 더 해도 괜찮으세요?" → `hidden_nurse_d3_choice2_b` | Nurse +4
+  3. "다 말하고 나면 오히려 편해지지 않아요?" → `hidden_nurse_d3_choice2_c` | Nurse -4
 
 - 캐릭터: `nurse_normal.png`
 **보건선생님**: *'한 명'에서 말을 멈췄다. 종이컵 가장자리가 손에 눌려 찌그러진다.*
@@ -9522,6 +9573,15 @@
 
 - 캐릭터: `nurse_normal.png`
 **보건선생님**: 응. 내가 감당할 수 있는 만큼만 말할게.
+
+---
+
+### `hidden_nurse_d3_choice2_c`
+- 배경: `nurse_room.png`
+- 다음: `hidden_nurse_d3_9`
+
+- 캐릭터: `nurse_worried.png`
+**보건선생님**: 편해지는지는 말하는 사람이 정해. 듣는 사람이 밀어붙이는 게 아니라.
 
 ---
 
@@ -13833,9 +13893,19 @@
 - 선택지:
   1. "좋아요. 합평회 구경해도 돼요?" → `hidden_homeroom_d4_cafe_1` | Teacher +7
   2. "오늘은 약속이 있어서요." → `hidden_homeroom_d4_decline` | Teacher +4
+  3. "저만 따로 불러내셔도 됐을 텐데요." → `hidden_homeroom_d4_choice_trap` | Teacher -4
 
 - 캐릭터: `teacher_normal.png`
 **{name}**: *종이봉투 안에서 원고 모서리끼리 부딪힌다.*
+
+---
+
+### `hidden_homeroom_d4_choice_trap`
+- 배경: `street.png`
+- 다음: `hidden_homeroom_d4_decline_b`
+
+- 캐릭터: `teacher_worried.png`
+**담임선생님**: *종이봉투를 몸 쪽으로 당긴다.* 그런 오해가 생기지 않게 공개 합평으로 부른 거야.
 
 ---
 
@@ -14251,9 +14321,19 @@
 - 선택지:
   1. "담임이랑 상담실에도 말해볼게요." → `hidden_nurse_d4_morning_choice_a` | Nurse +8
   2. "아직은 잘 모르겠어요." → `hidden_nurse_d4_morning_choice_b` | Nurse +4
+  3. "선생님한테만 말하면 안 돼요?" → `hidden_nurse_d4_morning_choice_trap` | Nurse -5
 
 - 캐릭터: `nurse_normal.png`
 **{name}**: *안내문에는 담임 상담, 위클래스, 보호자 연락 순서가 적혀 있다.*
+
+---
+
+### `hidden_nurse_d4_morning_choice_trap`
+- 배경: `nurse_room.png`
+- 다음: `hidden_nurse_d4_morning_13`
+
+- 캐릭터: `nurse_worried.png`
+**보건선생님**: 안 돼. 네가 기대는 어른이 나 하나뿐이면, 내가 없는 순간 다시 혼자가 돼.
 
 ---
 

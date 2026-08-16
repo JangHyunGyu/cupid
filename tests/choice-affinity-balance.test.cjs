@@ -100,8 +100,8 @@ test('direct choice affinity distribution keeps subtle penalties meaningful but 
         }
     }
 
-    assert.equal(total, 265);
-    assert.deepEqual(counts, { positive: 59, negative: 58, neutral: 123, mixed: 25 });
+    assert.equal(total, 273);
+    assert.deepEqual(counts, { positive: 59, negative: 66, neutral: 123, mixed: 25 });
 });
 
 test('two-option screens retain their original response and add the trap as a third choice', () => {
@@ -130,12 +130,45 @@ test('two-option screens retain their original response and add the trap as a th
     }
 });
 
+test('ordinary safe-only dialogue screens add a localized third trap without changing the best route', () => {
+    const traps = [
+        ['after_hidden_homeroom_choice', 'Teacher', -2, '전학생이라고 특별히 챙기실 필요는 없는데요.', 'after_homeroom_choice_trap', 'teacher_worried.png'],
+        ['hidden_homeroom_d2_choice2', 'Teacher', -3, '그럼 저한테 커피까지 주신 것도 업무예요?', 'hidden_homeroom_d2_choice2_trap', 'teacher_angry.png'],
+        ['after2_seo_choice2', 'Seoyeon', -3, '이 정도는 혼자 마무리할 수 있지?', 'after2_seo_choice2_trap', 'seyoun_pout.png'],
+        ['hidden_homeroom_d3_reveal_choice', 'Teacher', -4, '7년이면 이제 접을 때도 되지 않았어요?', 'hidden_homeroom_d3_reveal_choice_trap', 'teacher_sad.png'],
+        ['hidden_nurse_d3_choice1', 'Nurse', -3, '병원이 싫어서 학교로 오신 거예요?', 'hidden_nurse_d3_choice1_c', 'nurse_worried.png'],
+        ['hidden_nurse_d3_choice2', 'Nurse', -4, '다 말하고 나면 오히려 편해지지 않아요?', 'hidden_nurse_d3_choice2_c', 'nurse_worried.png'],
+        ['hidden_homeroom_d4_choice', 'Teacher', -4, '저만 따로 불러내셔도 됐을 텐데요.', 'hidden_homeroom_d4_choice_trap', 'teacher_worried.png'],
+        ['hidden_nurse_d4_morning_choice', 'Nurse', -5, '선생님한테만 말하면 안 돼요?', 'hidden_nurse_d4_morning_choice_trap', 'nurse_worried.png']
+    ];
+    const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy);
+
+    for (const [sceneId, character, penalty, text, reactionId, avatar] of traps) {
+        const scene = scenes[sceneId];
+        assert.equal(scene?.choices?.length, 3, `${sceneId} must offer three distinct tones`);
+        assert.equal(scene.choices[2].stats?.[character]?.affinity, penalty);
+        assert.equal(scene.choices[2].next, reactionId);
+        assert.equal(korean[sceneId]?.choices?.[2], text);
+        assert.ok(scenes[reactionId]?.character?.endsWith(avatar), `${reactionId} must use the matching reaction expression`);
+        for (const copy of localizedCopies) {
+            assert.equal(copy[sceneId]?.choices?.length, 3, `${sceneId} must have three choices in every locale`);
+            assert.ok(copy[reactionId]?.name && copy[reactionId]?.text, `${reactionId} must be localized`);
+        }
+    }
+
+    assert.deepEqual(korean.hidden_nurse_d3_choice1.choices, [
+        '그때 무슨 일이 있었어요?',
+        '말하기 힘드시면 안 하셔도 돼요.',
+        '병원이 싫어서 학교로 오신 거예요?'
+    ], 'the hospital follow-up must answer the preceding question coherently');
+});
+
 test('negative-choice screens stay distributed across every story day', () => {
     const expected = {
-        1: { choiceScreens: 16, negativeScreens: 7 },
-        2: { choiceScreens: 18, negativeScreens: 8 },
-        3: { choiceScreens: 24, negativeScreens: 11 },
-        4: { choiceScreens: 32, negativeScreens: 21 },
+        1: { choiceScreens: 16, negativeScreens: 8 },
+        2: { choiceScreens: 18, negativeScreens: 10 },
+        3: { choiceScreens: 24, negativeScreens: 14 },
+        4: { choiceScreens: 32, negativeScreens: 23 },
         5: { choiceScreens: 28, negativeScreens: 11 }
     };
 

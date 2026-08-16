@@ -211,8 +211,13 @@
         "text": "*La profesora baja el portapapeles y mira el rostro de {name}.*",
         "choices": [
             "Estoy bien. Aunque todavía se siente extraño.",
-            "Sinceramente, estoy un poco abrumado."
+            "Sinceramente, estoy un poco abrumado.",
+            "No hace falta que me cuide tanto solo porque soy el alumno nuevo."
         ]
+    },
+    "after_homeroom_choice_trap": {
+        "name": "Profesora",
+        "text": "*El portapapeles vuelve a alzarse ante su pecho.* No es trato especial, es mi trabajo como tutora. Entendido. Lo dejamos aquí."
     },
     "after_homeroom_ok": {
         "name": "Profesora",

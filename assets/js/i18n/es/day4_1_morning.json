@@ -181,8 +181,13 @@
         "text": "*Dentro de la bolsa de papel chocan las esquinas del manuscrito.*",
         "choices": [
             "De acuerdo. ¿Puedo asistir a la sesión?",
-            "Hoy ya tengo planes."
+            "Hoy ya tengo planes.",
+            "Podría haberme llamado a mí a solas."
         ]
+    },
+    "hidden_homeroom_d4_choice_trap": {
+        "name": "Profesora",
+        "text": "*Acerca la bolsa de papel hacia sí.* Te invité a una crítica abierta precisamente para evitar ese tipo de malentendido."
     },
     "hidden_homeroom_d4_cafe_1": {
         "name": "Profesora",
@@ -350,8 +355,13 @@
         "text": "*En el folleto figura este orden: consulta con la tutora, Wee Class y contacto con el tutor legal.*",
         "choices": [
             "También se lo contaré a mi tutora y a orientación.",
-            "Todavía no lo tengo claro."
+            "Todavía no lo tengo claro.",
+            "¿No puedo hablar solo con usted?"
         ]
+    },
+    "hidden_nurse_d4_morning_choice_trap": {
+        "name": "Enfermera",
+        "text": "No. Si soy la única adulta en quien puedes apoyarte, volverás a quedarte solo en cuanto yo no esté."
     },
     "hidden_nurse_d4_morning_choice_a": {
         "name": "{name}",

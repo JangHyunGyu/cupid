@@ -211,8 +211,13 @@
         "text": "*A professora abaixa a prancheta e olha para o rosto de {name}.*",
         "choices": [
             "Estou bem. Embora tudo ainda seja estranho.",
-            "Sinceramente, está tudo meio caótico."
+            "Sinceramente, está tudo meio caótico.",
+            "Não precisa cuidar tanto de mim só porque sou o aluno novo."
         ]
+    },
+    "after_homeroom_choice_trap": {
+        "name": "Professora",
+        "text": "*A prancheta volta a se erguer diante do peito dela.* Não é tratamento especial, é meu trabalho como professora da turma. Entendi. Vamos parar por aqui."
     },
     "after_homeroom_ok": {
         "name": "Professora",

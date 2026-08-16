@@ -284,8 +284,13 @@
         "text": "*Elle fait tourner deux fois la soucoupe au même endroit.*",
         "choices": [
             "Pour du boulot, vous avez l'air drôlement contente",
-            "Merci de prendre soin de moi"
+            "Merci de prendre soin de moi",
+            "Alors, le café aussi, ça faisait partie du travail ?"
         ]
+    },
+    "hidden_homeroom_d2_choice2_trap": {
+        "name": "Professeure principale",
+        "text": "*La main qui faisait tourner la soucoupe s'arrête.* Ne va pas interpréter ça comme ça."
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Professeure principale",

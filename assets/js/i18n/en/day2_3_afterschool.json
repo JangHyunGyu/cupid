@@ -406,8 +406,13 @@
         "text": "*The paperwork is almost done.*",
         "choices": [
             "Should I stay a bit longer? Seems like there's still some left",
-            "If we're done, I'll head out"
+            "If we're done, I'll head out",
+            "You can finish this much on your own, right?"
         ]
+    },
+    "after2_seo_choice2_trap": {
+        "name": "Seoyeon",
+        "text": "*She pulls the stack of papers toward herself.* Sure. It was my work to begin with."
     },
     "after2_seo_stay": {
         "name": "Seoyeon",
