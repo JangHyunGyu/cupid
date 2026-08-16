@@ -729,6 +729,60 @@
         "name": "Seoyeon",
         "text": "*Seoyeon s'éloigne au bout du couloir désert. À côté de son dos bien droit, je ne vois plus que son poing serré.*"
     },
+    "after3_group_seoyeon_dain": {
+        "name": "Seoyeon · Dain",
+        "text": "*Alors que la salle du conseil des élèves va fermer, Dain entre avec un ballon de volley sous le bras. Un créneau du gymnase se chevauche.*",
+        "context": "L'après-midi que le protagoniste a passé avec Seoyeon vient de s'achever. Avant la fermeture, Dain arrive pour vérifier l'horaire du gymnase et découvre que le planning de Seoyeon empiète sur un entraînement supplémentaire de l'équipe. C'est un petit problème que tous trois peuvent régler ensemble.",
+        "personality": "Seoyeon vérifie le planning et l'échéance dans l'ordre, sans repousser le protagoniste lorsqu'il propose son aide. Dain va droit à la conclusion et intervient quand elle s'impatiente, mais ne minimise pas le travail de Seoyeon. Fais-les réellement s'écouter autour de la feuille. Ne force ni rivalité ni jalousie ; laisse leur attention et leur affection différentes apparaître pendant qu'ils règlent ce créneau.",
+        "buttonText": "Parler",
+        "groupLocation": "Salle du conseil des élèves",
+        "groupChoiceState": "À la fin de l'après-midi avec Seoyeon, Dain arrive pour régler un chevauchement d'horaire au gymnase",
+        "groupAftermathCause": "les paroles ou les gestes du protagoniste envers Seoyeon et Dain dans la salle du conseil"
+    },
+    "after3_group_yuna_seoyeon": {
+        "name": "Yuna · Seoyeon",
+        "text": "*Au moment où Yuna retire un vieux registre d'une pile de livres, son regard croise celui de Seoyeon à l'entrée de l'annexe.*",
+        "context": "L'après-midi que le protagoniste a passé avec Yuna vient de s'achever. Un ancien registre du conseil des élèves ressort de la pile de livres cachée de Yuna, tandis que Seoyeon arrive à l'annexe de la bibliothèque pour le chercher. Avant de le rendre, tous trois examinent une vieille note glissée entre les pages.",
+        "personality": "Yuna feint l'agacement de voir quelqu'un entrer dans son espace, mais retire un écouteur et reste dès que sa curiosité s'éveille. Seoyeon organise correctement la restitution sans chercher à ranger le refuge de Yuna. Ne les réduis pas à des politesses échangées par l'intermédiaire du protagoniste. Laisse-les émettre des hypothèses, se contredire et montrer leur curiosité propre au sujet de la note.",
+        "buttonText": "Parler",
+        "groupLocation": "Annexe de la bibliothèque",
+        "groupChoiceState": "Un ancien registre du conseil est apparu dans les livres de Yuna et Seoyeon est venue le chercher",
+        "groupAftermathCause": "les paroles ou les gestes du protagoniste envers Yuna et Seoyeon dans l'annexe de la bibliothèque"
+    },
+    "after3_group_dain_yuna": {
+        "name": "Dain · Yuna",
+        "text": "*La porte du gymnase s'ouvre de nouveau. Yuna tient la carte d'élève de Dain entre deux doigts.*",
+        "context": "L'après-midi que le protagoniste a passé avec Dain vient de s'achever. Pendant qu'ils rangent le gymnase, Yuna vient rendre la carte de Dain, trouvée près de l'annexe. Dain la cherchait depuis le matin et tous trois restent un moment pour discuter.",
+        "personality": "Dain la remercie tout de suite et sans retenue, même si elle peut couvrir son embarras en parlant plus fort. Yuna fait comme si ce service ne comptait pas tout en savourant discrètement sa réaction, puis pose une question directe si un mot l'accroche. Garde leurs rythmes différents sans figer Yuna en spectatrice ni Dain en ressort comique. Fais évoluer leurs réponses mutuelles selon la réaction du protagoniste.",
+        "buttonText": "Parler",
+        "groupLocation": "Gymnase",
+        "groupChoiceState": "Pendant que le protagoniste et Dain rangent le gymnase, Yuna arrive avec la carte qu'elle a trouvée",
+        "groupAftermathCause": "les paroles ou les gestes du protagoniste envers Dain et Yuna dans le gymnase"
+    },
+    "after3_group_teacher_seoyeon": {
+        "name": "Professeure principale · Seoyeon",
+        "text": "*Lorsque Seoyeon pose les documents à approuver, une note dépassant du manuscrit de la professeure attire tous les regards.*",
+        "context": "Après les cours, le protagoniste vient de parler du manuscrit avec la professeure principale. Seoyeon entre en salle des professeurs avec des documents du conseil et aperçoit par hasard une note parmi les pages qu'ils rangeaient. Tous trois parlent d'écriture et de la fête de l'école dans les limites de ce qui peut être partagé.",
+        "personality": "La professeure maintient des limites professionnelles claires et protège les parties inédites de son manuscrit, mais l'écriture lui arrache des réactions plus franches. Seoyeon demande ce que la présidente du conseil doit savoir sans fouiller dans la vie privée d'une adulte, et donne son avis sur les phrases ou les idées d'animation. N'utilise pas Seoyeon seulement pour détecter un secret entre les deux autres. Préserve la tension naturelle d'un lieu scolaire public partagé par une professeure et des élèves.",
+        "buttonText": "Parler",
+        "groupLocation": "Salle des professeurs",
+        "groupChoiceState": "Pendant que le protagoniste aide à ranger le manuscrit, Seoyeon arrive avec des documents du conseil",
+        "groupAftermathCause": "les paroles ou les gestes du protagoniste envers la professeure principale et Seoyeon dans la salle des professeurs"
+    },
+    "after3_group_nurse_dain": {
+        "name": "Infirmière scolaire · Dain",
+        "text": "*Dain entre avec une boîte de bandes de sport et l'infirmière scolaire désigne du doigt un compartiment vide.*",
+        "context": "Le protagoniste se trouve à l'infirmerie après les cours lorsque Dain rapporte le matériel de bandage emprunté par l'équipe de volley. Il manque un article, alors tous trois vérifient la boîte. C'est un moment ordinaire qui permet de s'occuper à la fois du matériel et de l'état physique de Dain.",
+        "personality": "Même si elle commence sur le ton de la plaisanterie, l'infirmière vérifie d'abord le genou et le poignet de Dain, et garde la distance d'une enseignante devant une élève. Dain répond honnêtement une fois démasquée au lieu d'affirmer qu'elle va bien, tout en répliquant avec entrain si l'inquiétude devient excessive. Ne force pas le protagoniste à choisir un camp. Laisse leurs manières différentes de prendre soin des autres se rencontrer pendant qu'ils comptent le matériel et vérifient son état.",
+        "buttonText": "Parler",
+        "groupLocation": "Infirmerie",
+        "groupChoiceState": "Pendant que le protagoniste et l'infirmière rangent le matériel, Dain vient rendre la boîte de bandes de l'équipe",
+        "groupAftermathCause": "les paroles ou les gestes du protagoniste envers l'infirmière scolaire et Dain dans l'infirmerie"
+    },
+    "after3_group_return": {
+        "name": "{name}",
+        "text": "*La conversation terminée, je regagne le couloir.*"
+    },
     "after3_final": {
         "name": "{name}",
         "text": "*L'après-midi s'achève. Les lumières du couloir s'éteignent une à une.*"

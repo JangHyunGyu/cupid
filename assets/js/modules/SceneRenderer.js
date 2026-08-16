@@ -172,7 +172,17 @@ class SceneRenderer {
             Object.defineProperty(result, '__sourceFile', { value: scene.__sourceFile, enumerable: false });
         }
 
-        for (const key of ['name', 'text', 'context', 'personality', 'affinityText']) {
+        for (const key of [
+            'name',
+            'text',
+            'context',
+            'personality',
+            'affinityText',
+            'buttonText',
+            'groupLocation',
+            'groupChoiceState',
+            'groupAftermathCause'
+        ]) {
             if (i18n[key] !== undefined) result[key] = i18n[key];
         }
 

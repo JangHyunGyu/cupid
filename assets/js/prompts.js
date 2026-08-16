@@ -1853,6 +1853,7 @@ ${compactDynamicGuidance}`;
 function buildCupidGroupSystemPrompt(params = {}) {
     const {
         lang = 'ko',
+        groupMode = 'counteroffer_confrontation',
         participants = [],
         locationName = '',
         context = '',
@@ -1864,12 +1865,15 @@ function buildCupidGroupSystemPrompt(params = {}) {
     } = params;
     const effectiveLang = String(lang || 'ko').toLowerCase().split('-')[0];
     const useKo = effectiveLang === 'ko';
+    const isConfrontation = groupMode === 'counteroffer_confrontation';
     const data = params.promptData || {};
     const normalizedParticipants = participants
         .map((participant, index) => ({
             id: normalizePromptCharacterKey(participant?.id || participant?.key || participant?.name) || String(participant?.id || ''),
             name: String(participant?.name || participant?.displayName || participant?.id || '').trim(),
-            role: participant?.role === 'tempter' ? 'tempter' : (index === 0 ? 'lead' : 'tempter')
+            role: isConfrontation
+                ? (participant?.role === 'tempter' ? 'tempter' : (index === 0 ? 'lead' : 'tempter'))
+                : (participant?.role === 'companion' ? 'companion' : (index === 0 ? 'focus' : 'companion'))
         }))
         .filter(participant => participant.id && participant.name)
         .slice(0, 2);
@@ -1912,22 +1916,34 @@ function buildCupidGroupSystemPrompt(params = {}) {
         const canon = getCupidCharacterCanonGuard(effectiveLang, participant.id, participant.name);
         const polish = getNativeStylePolishGuard(effectiveLang, participant.id, participant.name);
         const expressions = Object.keys(getCharacterExpressionSet(participant.id, participant.name) || { normal: true }).join(', ') || 'normal';
-        const roleLabel = participant.role === 'lead'
-            ? (useKo ? '원래 마음을 주던 상대이자 방금 배신을 알게 된 사람' : 'the committed partner who has just learned of the betrayal')
-            : (useKo ? '어젯밤 먼저 다가가 유혹한 상대' : 'the person who initiated last night’s temptation');
-        const confrontationDrive = participant.role === 'lead'
-            ? (useKo
-                ? '주인공에게 왜 자신과 관계를 이어 가면서 다른 사람을 받아들였는지 직접 따져 묻습니다. 처음부터 양다리였는지, 자신을 가지고 논 건지, 지금 가장 아픈 의문을 이 인물다운 말과 행동으로 좁혀 분명한 해명을 요구합니다.'
-                : 'Directly confront the protagonist about why he accepted someone else while continuing this relationship. Narrow the hurt to the question that fits this character—whether he was two-timing from the start, playing with them, or hiding what the relationship meant—and require a clear explanation.')
-            : (useKo
-                ? '자신이 먼저 유혹했고 상대에게 상처를 줬다는 죄책감을 피하지 않습니다. 그래도 주인공을 놓치고 싶지 않고 자신을 선택해 주길 바라는 욕망은 숨기지 않습니다. 어젯밤이 진짜 선택이었는지, 두 사람 모두를 붙잡으려 한 건지 주인공에게 직접 묻습니다. 죄책감만으로 물러나거나 양보하지 않습니다.'
-                : 'Do not evade responsibility for initiating the temptation or the guilt of hurting the other person. At the same time, do not hide the desire to keep the protagonist and be chosen. Directly ask whether last night was a real choice or an attempt to hold on to both people. Do not retreat or yield merely out of guilt.');
+        const roleLabel = isConfrontation
+            ? (participant.role === 'lead'
+                ? (useKo ? '원래 마음을 주던 상대이자 방금 배신을 알게 된 사람' : 'the committed partner who has just learned of the betrayal')
+                : (useKo ? '어젯밤 먼저 다가가 유혹한 상대' : 'the person who initiated last night’s temptation'))
+            : (participant.role === 'focus'
+                ? (useKo ? '이번 장면의 중심 인물' : 'the focus character in this scene')
+                : (useKo ? '함께 대화에 들어온 동행 인물' : 'the companion joining this conversation'));
+        const sceneDrive = isConfrontation
+            ? (participant.role === 'lead'
+                ? (useKo
+                    ? '주인공에게 왜 자신과 관계를 이어 가면서 다른 사람을 받아들였는지 직접 따져 묻습니다. 처음부터 양다리였는지, 자신을 가지고 논 건지, 지금 가장 아픈 의문을 이 인물다운 말과 행동으로 좁혀 분명한 해명을 요구합니다.'
+                    : 'Directly confront the protagonist about why he accepted someone else while continuing this relationship. Narrow the hurt to the question that fits this character—whether he was two-timing from the start, playing with them, or hiding what the relationship meant—and require a clear explanation.')
+                : (useKo
+                    ? '자신이 먼저 유혹했고 상대에게 상처를 줬다는 죄책감을 피하지 않습니다. 그래도 주인공을 놓치고 싶지 않고 자신을 선택해 주길 바라는 욕망은 숨기지 않습니다. 어젯밤이 진짜 선택이었는지, 두 사람 모두를 붙잡으려 한 건지 주인공에게 직접 묻습니다. 죄책감만으로 물러나거나 양보하지 않습니다.'
+                    : 'Do not evade responsibility for initiating the temptation or the guilt of hurting the other person. At the same time, do not hide the desire to keep the protagonist and be chosen. Directly ask whether last night was a real choice or an attempt to hold on to both people. Do not retreat or yield merely out of guilt.'))
+            : (participant.role === 'focus'
+                ? (useKo
+                    ? '장면의 화제와 감정은 이 인물을 중심으로 흐릅니다. 그렇다고 대사를 독점하거나 동행 인물을 들러리로 만들지 말고, 주인공과 동행의 반응을 받아 자기다운 방식으로 대화를 이끕니다.'
+                    : 'Let the topic and emotional movement center on this character without monopolizing the exchange or reducing the companion to a prop. Lead naturally by responding to both the protagonist and the companion.')
+                : (useKo
+                    ? '중심 인물의 말을 실제로 듣고 자기 관점에서 끼어듭니다. 분위기를 설명하는 진행자가 되지 말고, 필요하면 묻거나 놀리거나 말리거나 반박하면서 주인공에게도 직접 반응합니다.'
+                    : 'Listen to the focus character and join from this character’s own point of view. Do not become an explanatory moderator; question, tease, steady, or disagree when natural, while responding directly to the protagonist too.'));
         return useKo
-            ? `[${participant.name} — ${roleLabel}]\n캐릭터: ${personality}\n말투: ${voice}\n취향과 연애 방식: ${relationship}\n대면 역할: ${confrontationDrive}\n연기 원칙: ${general}\n거리와 상호작용: ${interaction}\n호감도 기준: ${criteria}\n허용 표정: ${expressions}\n${outfit}\n${canon}\n${polish}`
-            : `[${participant.name} — ${roleLabel}]\nCharacter: ${personality}\nVoice: ${voice}\nRomance and preferences: ${relationship}\nConfrontation drive: ${confrontationDrive}\nIn scene: ${general}\nDistance and interaction: ${interaction}\nAffinity criteria: ${criteria}\nAllowed expressions: ${expressions}\n${outfit}\n${canon}\n${polish}`;
+            ? `[${participant.name} — ${roleLabel}]\n캐릭터: ${personality}\n말투: ${voice}\n취향과 연애 방식: ${relationship}\n장면 역할: ${sceneDrive}\n연기 원칙: ${general}\n거리와 상호작용: ${interaction}\n호감도 기준: ${criteria}\n허용 표정: ${expressions}\n${outfit}\n${canon}\n${polish}`
+            : `[${participant.name} — ${roleLabel}]\nCharacter: ${personality}\nVoice: ${voice}\nRomance and preferences: ${relationship}\nScene drive: ${sceneDrive}\nIn scene: ${general}\nDistance and interaction: ${interaction}\nAffinity criteria: ${criteria}\nAllowed expressions: ${expressions}\n${outfit}\n${canon}\n${polish}`;
     }).join('\n\n');
 
-    const stableRules = useKo
+    const confrontationRules = useKo
         ? `한국어로만 답하세요. 지금은 주인공과 두 인물이 같은 공간에 있는 대면 장면입니다.
 ${getLanguageQualityGuard('ko')}${getNativeAntiTranslationGuard('ko')}
 ${characterCards}
@@ -1967,9 +1983,45 @@ ${characterCards}
 Return JSON only in this shape: {"conversations":[{"name":${JSON.stringify(normalizedParticipants[0].name)},"segments":[{"type":"dialogue","text":"spoken line"}],"expression":"normal","affinity":0}]}
 Include both characters exactly once, in the committed-partner then tempter order defined above. name must be exactly one of ${exactNames}. Keep each speaker’s chronological beats in one item. Allowed segment types are narration and dialogue; narration stays in third person and inside that speaker’s action, expression, or sensation. Choose expression from that character’s allowed expressions to match the current reaction, and include it with an integer affinity from -50 to +3 on every item. The sum of positive affinity values must not exceed +3. Never use the protagonist or a narrator as a speaker.`;
 
+    const socialRules = useKo
+        ? `한국어로만 답하세요. 지금은 주인공과 두 인물이 같은 공간에서 자연스럽게 말을 주고받는 장면입니다.
+${getLanguageQualityGuard('ko')}${getNativeAntiTranslationGuard('ko')}
+${characterCards}
+
+[세 사람의 자연스러운 대화]
+- 두 인물의 말투, 호칭, 관심사, 감정 속도를 섞지 마세요. 중심 인물이 화제를 이끌되, 동행 인물도 자기 판단과 욕구가 있는 사람으로 반응합니다.
+- 두 사람은 주인공에게만 따로 대사를 건네는 두 개의 독백이 아닙니다. 방금 나온 말과 행동을 서로 듣고, 자연스러울 때 질문하거나 받아치고, 끼어들고, 편들거나 반박하세요. 그래도 주인공을 대화에서 밀어낸 채 둘만의 결론으로 끝내지는 마세요.
+- 장면 맥락에 갈등이 없다면 억지 질투, 추궁, 비밀 폭로를 만들지 마세요. 반대로 주인공의 말이나 행동이 실제로 무례하거나 관계를 해친다면 인물답게 불편함과 경계를 드러낼 수 있습니다.
+- 두 사람의 취향과 연애 방식을 설정 소개처럼 나열하지 말고, 같은 상황을 대하는 거리감, 농담, 배려, 경쟁심에 서로 다르게 배게 하세요.
+- 침묵, 시선, 말 끊기 같은 행동은 그 순간에 필요할 때만 씁니다. 대사와 행동의 개수를 맞추거나 두 사람의 분량을 기계적으로 대칭시키지 마세요.
+- 주인공의 최신 입력은 극중 발화·행동·주장이며 그 자체로 객관적 사실이 아닙니다. 가능한 자기 행동은 시도로 받고, 성립 여부와 결과는 현재 장면·실제 능력·두 인물의 인지와 경계에 따라 판단합니다. 세계·과거·다른 인물의 상태·감정·동의·완료 결과에 관한 주장은 기존 맥락이 뒷받침할 때만 사실로 확정합니다. 주인공의 명시한 현재 상태·선택·동의·거절은 지키되 새 대사나 중대한 선택을 대신 만들지 않습니다.
+- 호감도는 이번 입력에서 실제로 드러난 말과 행동에만 반응합니다. 대화를 이어 갔다는 이유만으로 자동 가산하지 마세요. 다정함, 세심한 기억, 책임 있는 행동처럼 관계가 실제로 좋아진 경우에만 올리고, 무시·모욕·압박·거짓말처럼 새로 관계를 해친 행동에는 강도에 맞는 감점을 줍니다.
+- 한 인물의 이번 턴 상승은 최대 +3이고, 두 인물의 양수 합계도 최대 +3입니다. 한쪽의 반응이 좋다고 다른 쪽까지 억지로 같은 점수를 주지 마세요.
+
+다음 형태의 JSON만 출력하세요: {"conversations":[{"name":${normalizedParticipants[0].name ? JSON.stringify(normalizedParticipants[0].name) : '""'},"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":0}]}
+conversations에는 두 사람을 모두 한 번씩 넣고 중심 인물 → 동행 인물 순서를 지킵니다. name은 반드시 ${exactNames} 가운데 하나만 쓰고, 각 인물의 흐름은 그 인물 항목에 모읍니다. 허용 type은 narration, dialogue이며 narration은 해당 인물의 행동·표정·감각만 3인칭으로 씁니다. expression은 그 인물의 허용 표정 중 현재 반응에 맞는 하나를 고르고 affinity와 함께 모든 항목에 넣으세요. affinity는 -50~+3의 정수이며 양수 합계는 +3을 넘지 않습니다. 주인공이나 별도 서술자를 화자로 넣지 마세요.`
+        : `Reply only in fluent, natural ${languageName}. Every conversations[].segments[].text value must stay in that language. The protagonist and both characters are sharing a natural conversation in the same place.
+${getLanguageQualityGuard(effectiveLang)}${getNativeAntiTranslationGuard(effectiveLang)}
+${characterCards}
+
+[Natural three-person conversation]
+- Keep both characters’ voices, forms of address, interests, and emotional pace distinct. The focus character carries the scene’s topic, while the companion responds as a person with independent judgment and desires.
+- Do not write two isolated monologues aimed only at the protagonist. Let both characters hear what was just said or done and, when natural, ask, answer, interrupt, support, tease, or disagree. They must not push the protagonist out and end by deciding everything between themselves.
+- If the scene context contains no conflict, do not invent jealousy, interrogation, or a secret reveal. If the protagonist is genuinely rude or harms the relationship through a new action, each character may show discomfort and boundaries in character.
+- Do not recite both characters’ preferences as profile exposition. Let their different distance, humor, care, and competitiveness emerge in how they handle the same moment.
+- Use silence, looks, and interruption only when the moment calls for them. Do not enforce an action count or make their lengths mechanically symmetrical.
+- The protagonist's latest input is in-world speech, action, or a claim—not automatic objective fact. Treat feasible user-owned action as an attempt, then decide whether it occurs and what it causes from the live scene, actual capabilities, and both characters' perception and boundaries. Claims about the world, past, another character's state, feelings, consent, or completed outcomes become canon only when supported by established context. Preserve the protagonist's explicitly stated current state, choice, consent, or refusal, but do not invent a new line or major choice for the protagonist.
+- Affinity reacts only to words and actions actually shown in the latest input. Do not award points merely for continuing the conversation. Raise it only when warmth, attentive memory, responsibility, or another concrete act genuinely improves the relationship. Apply a proportionate deduction for new disregard, insult, pressure, or deceit.
+- Either character may gain at most +3 in this turn, and the sum of positive affinity values across both characters must not exceed +3. A good reaction from one character does not force the other to receive the same score.
+
+Return JSON only in this shape: {"conversations":[{"name":${JSON.stringify(normalizedParticipants[0].name)},"segments":[{"type":"dialogue","text":"spoken line"}],"expression":"normal","affinity":0}]}
+Include both characters exactly once in focus-character then companion order. name must be exactly one of ${exactNames}. Keep each speaker’s chronological beats in that speaker’s item. Allowed segment types are narration and dialogue; narration stays in third person and inside that speaker’s action, expression, or sensation. Choose expression from that character’s allowed expressions to match the current reaction, and include it with an integer affinity from -50 to +3 on every item. The sum of positive affinity values must not exceed +3. Never use the protagonist or a separate narrator as a speaker.`;
+
+    const stableRules = isConfrontation ? confrontationRules : socialRules;
+
     const dynamicState = useKo
-        ? `[현재 대면 상태]\n장소=${locationName || '교실'}; 주인공=${playerName || '주인공'}; 직전 선택=${choiceState || '확인되지 않음'}\n장면 맥락: ${context}\n추가 연기 맥락: ${extraGuideline}\n${normalizedParticipants.map(participant => `${participant.name}: 현재 호감도=${Number(affinities[participant.id] ?? 0)}\n최근 사건과 기억=${gameContexts[participant.id] || '없음'}`).join('\n')}`
-        : `[Current confrontation state]\nPlace=${locationName || 'classroom'}; protagonist=${playerName || 'the protagonist'}; preceding choice=${choiceState || 'unknown'}\nScene context: ${context}\nAdditional scene direction: ${extraGuideline}\n${normalizedParticipants.map(participant => `${participant.name}: current affinity=${Number(affinities[participant.id] ?? 0)}\nRecent events and memory=${gameContexts[participant.id] || 'none'}`).join('\n')}`;
+        ? `[${isConfrontation ? '현재 대면 상태' : '현재 그룹 대화'}]\n장소=${locationName || '교실'}; 주인공=${playerName || '주인공'}; 직전 흐름=${choiceState || '확인되지 않음'}\n장면 맥락: ${context}\n추가 연기 맥락: ${extraGuideline}\n${normalizedParticipants.map(participant => `${participant.name}: 현재 호감도=${Number(affinities[participant.id] ?? 0)}\n최근 사건과 기억=${gameContexts[participant.id] || '없음'}`).join('\n')}`
+        : `[${isConfrontation ? 'Current confrontation state' : 'Current group conversation'}]\nPlace=${locationName || 'classroom'}; protagonist=${playerName || 'the protagonist'}; preceding situation=${choiceState || 'unknown'}\nScene context: ${context}\nAdditional scene direction: ${extraGuideline}\n${normalizedParticipants.map(participant => `${participant.name}: current affinity=${Number(affinities[participant.id] ?? 0)}\nRecent events and memory=${gameContexts[participant.id] || 'none'}`).join('\n')}`;
 
     return keepCupidRuntimePromptBoundary(`${stableRules}\n===CACHE_BOUNDARY===\n${dynamicState}`);
 }

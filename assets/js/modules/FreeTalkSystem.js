@@ -636,7 +636,35 @@ class FreeTalkSystem {
         ];
     }
 
-    _getGroupChoiceState(lang = 'ko') {
+    _resolveGroupParticipants(scene, lang = 'ko') {
+        if (scene?.groupParticipants === 'counteroffer_confrontation') {
+            return this._resolveCounterofferGroupParticipants(lang);
+        }
+        if (!Array.isArray(scene?.groupParticipants)) return [];
+
+        const knownIds = new Set(['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse']);
+        const participants = scene.groupParticipants.slice(0, 2).map((participant, index) => {
+            const id = String(participant?.id || '').trim();
+            if (!knownIds.has(id)) return null;
+            return {
+                id,
+                name: this._getLocalizedGroupCharacterName(id, lang),
+                role: participant?.role || (index === 0 ? 'focus' : 'companion'),
+                side: participant?.side === 'right' ? 'right' : (participant?.side === 'left' ? 'left' : (index === 0 ? 'left' : 'right')),
+                initialExpression: String(participant?.initialExpression || 'normal').toLowerCase()
+            };
+        }).filter(Boolean);
+
+        if (participants.length !== 2
+            || participants[0].id === participants[1].id
+            || participants[0].side === participants[1].side) {
+            return [];
+        }
+        return participants;
+    }
+
+    _getGroupChoiceState(scene, lang = 'ko') {
+        if (scene?.groupChoiceState) return scene.groupChoiceState;
         const lied = this.stateManager.getFlag?.('day5_lied_about_counteroffer');
         const states = lied
             ? { ko: '알림을 보고도 별일 아니라고 다시 거짓말했다', en: 'he lied again and dismissed the notification', es: 'volvió a mentir y restó importancia a la notificación', ja: '通知を見られても、たいしたことではないと再び嘘をついた', fr: 'il a de nouveau menti en minimisant la notification', de: 'er hat erneut gelogen und die Nachricht heruntergespielt', pt: 'ele mentiu de novo e tentou minimizar a notificação' }
@@ -662,7 +690,10 @@ class FreeTalkSystem {
             if (side === 'center') continue;
             const participant = participants.find(item => item.side === side);
             if (!participant) continue;
-            const rawSrc = fallbackImages[participant.id];
+            const expressions = window.CHARACTER_EXPRESSIONS?.[participant.id] || {};
+            const rawSrc = expressions[participant.initialExpression]
+                || expressions.normal
+                || fallbackImages[participant.id];
             const img = document.createElement('img');
             img.src = getAssetUrl(rawSrc);
             img.dataset.rawSrc = getAssetUrl(rawSrc);
@@ -713,19 +744,23 @@ class FreeTalkSystem {
         ]));
         return window.buildCupidGroupSystemPrompt?.({
             lang,
+            groupMode: scene.groupMode || (scene.groupParticipants === 'counteroffer_confrontation'
+                ? 'counteroffer_confrontation'
+                : 'route_social'),
             participants,
-            locationName: this._getLocalizedGroupLocation(lang),
+            locationName: this._getLocalizedGroupLocation(scene, lang),
             context: scene.context || '',
             extraGuideline: scene.personality || scene.extra_guideline || '',
             playerName: this.stateManager.playerName || '',
-            choiceState: this._getGroupChoiceState(lang),
+            choiceState: this._getGroupChoiceState(scene, lang),
             gameContexts,
             affinities,
             promptData
         }) || '';
     }
 
-    _getLocalizedGroupLocation(lang = 'ko') {
+    _getLocalizedGroupLocation(scene, lang = 'ko') {
+        if (scene?.groupLocation) return scene.groupLocation;
         const locations = { ko: '교실', en: 'Classroom', es: 'Salón de clases', ja: '教室', fr: 'Salle de classe', de: 'Klassenzimmer', pt: 'Sala de aula' };
         const language = String(lang || 'ko').toLowerCase().split('-')[0];
         return locations[language] || locations.en;
@@ -734,9 +769,7 @@ class FreeTalkSystem {
     async startGroupFreeTalk(scene, sceneId) {
         if (this.isFreeTalking) return;
         const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
-        const participants = scene.groupParticipants === 'counteroffer_confrontation'
-            ? this._resolveCounterofferGroupParticipants(lang)
-            : [];
+        const participants = this._resolveGroupParticipants(scene, lang);
         if (participants.length !== 2) {
             throw new Error('Could not resolve the two participants for Cupid group free talk');
         }
@@ -1635,7 +1668,7 @@ class FreeTalkSystem {
         };
     }
 
-    async _renderGroupConversations(conversations, requestContext, latestUserText, lang) {
+    async _renderGroupConversations(conversations, requestContext, latestUserText, lang, scene = null) {
         let positiveBudget = 3;
         const rendered = [];
         for (let index = 0; index < conversations.length; index += 1) {
@@ -1667,9 +1700,9 @@ class FreeTalkSystem {
                 latestUserText,
                 {
                     source: 'user',
-                    fallbackCause: lang === 'ko'
-                        ? '셋이 마주한 자리에서 사용자가 남긴 말이나 행동'
-                        : 'the user’s words or actions during the confrontation'
+                    fallbackCause: scene?.groupAftermathCause || (lang === 'ko'
+                        ? '함께 나눈 대화에서 사용자가 남긴 말이나 행동'
+                        : 'the user’s words or actions during the group conversation')
                 }
             );
             this.stateManager.setRelationshipAftermath?.(conversation.speakerId, nextAftermath);
@@ -1829,7 +1862,7 @@ class FreeTalkSystem {
             this._clearThinkingMessage();
             document.querySelectorAll('.group-freetalk-participant img').forEach(img => img.classList.remove('thinking'));
             this.uiManager.dialogueBox.classList.remove('thinking-box');
-            const rendered = await this._renderGroupConversations(conversations, requestContext, finalContent, lang);
+            const rendered = await this._renderGroupConversations(conversations, requestContext, finalContent, lang, scene);
             this._assertRequestContext(requestContext, data);
 
             const transcript = rendered

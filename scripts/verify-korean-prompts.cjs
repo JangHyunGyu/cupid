@@ -629,7 +629,7 @@ function verifyWiringAndScenePrompts() {
         Object.values(value).forEach(collect);
     }
     sceneFiles.forEach(file => collect(JSON.parse(read(file))));
-    assert(scenePrompts.length === 43, `expected 43 active Korean scene prompts, found ${scenePrompts.length}`);
+    assert(scenePrompts.length === 48, `expected 48 active Korean scene prompts, found ${scenePrompts.length}`);
     const joined = scenePrompts.join('\n');
     for (const stalePhrase of ['Day 1', 'Day 3', '톤:', '티키타카', '쿨뷰티', '신비주의 문학소녀', '체육계']) {
         assert(!joined.includes(stalePhrase), `active Korean scene prompt still contains: ${stalePhrase}`);
@@ -885,6 +885,53 @@ function verifyGroupPromptCacheContract(context) {
     'group prompt lost character-to-character dialogue or allows it to displace the protagonist confrontation');
     assert(firstParts.stable.includes('허용 표정:'),
         'group prompt does not expose each participant expression asset contract');
+
+    const makeSocialPrompt = ({ affinity = 24, choiceState = '겹친 사용 시간을 함께 확인한다' } = {}) => (
+        context.window.buildCupidGroupSystemPrompt({
+            lang: 'ko',
+            groupMode: 'route_social',
+            participants: [
+                { id: 'Seoyeon', name: '서연', role: 'focus' },
+                { id: 'Dain', name: '다인', role: 'companion' }
+            ],
+            locationName: '학생회실',
+            context: '체육관 사용 시간이 겹쳐 셋이 일정을 맞추고 있다.',
+            extraGuideline: '갈등을 억지로 만들지 않고 서로의 말을 실제로 듣는다.',
+            playerName: '민준',
+            choiceState,
+            gameContexts: { Seoyeon: '사용표를 정리했다.', Dain: '추가 연습 시간을 확인하러 왔다.' },
+            affinities: { Seoyeon: affinity, Dain: 32 },
+            promptData
+        })
+    );
+    const social = makeSocialPrompt();
+    const socialDynamicVariant = makeSocialPrompt({ affinity: -8, choiceState: '주인공이 새로운 조정안을 말했다' });
+    const socialParts = splitCacheBoundary(social, 'main/group-social/Seoyeon-Dain');
+    const socialDynamicParts = splitCacheBoundary(socialDynamicVariant, 'main/group-social/Seoyeon-Dain/dynamic');
+    assert(socialParts.stable === socialDynamicParts.stable
+        && socialParts.dynamic !== socialDynamicParts.dynamic,
+    'social group prompt does not keep live route state after the cache boundary');
+    assert(context.window.CupidFreeTalkCore.getStablePromptFingerprint(social)
+        === context.window.CupidFreeTalkCore.getStablePromptFingerprint(socialDynamicVariant),
+    'social group cache fingerprint includes turn-varying state');
+    assert(context.window.CupidFreeTalkCore.getStablePromptFingerprint(first)
+        !== context.window.CupidFreeTalkCore.getStablePromptFingerprint(social),
+    'confrontation and social group modes share one stable cache fingerprint');
+    assert(socialParts.stable.includes('[세 사람의 자연스러운 대화]')
+        && socialParts.stable.includes('중심 인물이 화제를 이끌되')
+        && socialParts.stable.includes('동행 인물도 자기 판단과 욕구가 있는 사람으로 반응합니다'),
+    'social group prompt lost focus-character and companion agency');
+    assert(socialParts.stable.includes('방금 나온 말과 행동을 서로 듣고')
+        && socialParts.stable.includes('주인공을 대화에서 밀어낸 채 둘만의 결론으로 끝내지는 마세요'),
+    'social group prompt does not support natural character-to-character exchange');
+    assert(socialParts.stable.includes('갈등이 없다면 억지 질투, 추궁, 비밀 폭로를 만들지 마세요')
+        && !socialParts.stable.includes('처음부터 양다리였는지')
+        && !socialParts.stable.includes('-40 또는 -50'),
+    'social group prompt leaks the day-five betrayal confrontation');
+    assert(socialParts.stable.includes('한 인물의 이번 턴 상승은 최대 +3')
+        && socialParts.stable.includes('두 인물의 양수 합계도 최대 +3')
+        && socialParts.stable.includes('대화를 이어 갔다는 이유만으로 자동 가산하지 마세요'),
+    'social group prompt lost bounded, behavior-based affinity scoring');
 }
 
 function verifyTypingOwnerIsolation(context) {
@@ -982,4 +1029,4 @@ verifyCacheKeyWiring();
 verifyGroupPromptCacheContract(context);
 verifyTypingOwnerIsolation(context);
 
-console.log(`Verified Korean runtime prompts for ${CHARACTERS.length} characters, 43 scene prompts, daily turn limits, loader order, memories, user agency, and stale-turn ownership.`);
+console.log(`Verified Korean runtime prompts for ${CHARACTERS.length} characters, 48 scene prompts, daily turn limits, loader order, memories, user agency, and stale-turn ownership.`);

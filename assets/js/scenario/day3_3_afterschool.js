@@ -151,7 +151,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/seyoun_sad.png",
         "choices": [
             { "next": "after3_seo_pity_trap_1", "stats": {"Seoyeon":{"affinity":-18}}, "setFlags": ["seo_pity_broken"] },
-            { "next": "after3_seo_correct_1", "stats": {"Seoyeon":{"affinity":18}} }
+            { "next": "after3_seo_correct_1", "stats": {"Seoyeon":{"affinity":16}} }
         ]
     },
     "after3_seo_pity_trap_1": {
@@ -368,7 +368,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/yuna_shy.png",
         "choices": [
             { "next": "after3_yuna_decode_trap_1", "stats": {"Yuna":{"affinity":-22}}, "setFlags": ["yuna_safe_zone_broken"] },
-            { "next": "after3_yuna_correct_1", "stats": {"Yuna":{"affinity":19}} }
+            { "next": "after3_yuna_correct_1", "stats": {"Yuna":{"affinity":17}} }
         ]
     },
     "after3_yuna_decode_trap_1": {
@@ -565,7 +565,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/dain_sad.png",
         "choices": [
             { "next": "after3_dain_pity_trap_1", "stats": {"Dain":{"affinity":-20}}, "setFlags": ["pitied_dain"] },
-            { "next": "after3_dain_correct_1", "stats": {"Dain":{"affinity":19}} }
+            { "next": "after3_dain_correct_1", "stats": {"Dain":{"affinity":17}} }
         ]
     },
     "after3_dain_pity_trap_1": {
@@ -949,6 +949,84 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "after3_final"
     },
     "after3_final": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "after3_group_route_check"
+    },
+    "after3_group_route_check": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "routeBeforeRender": true,
+        "branches": [
+            { "condition": "homeroom_route_unlocked", "next": "after3_group_teacher_seoyeon" },
+            { "condition": "nurse_route_unlocked", "next": "after3_group_nurse_dain" },
+            { "condition": "route_seoyeon", "next": "after3_group_seoyeon_dain" },
+            { "condition": "route_yuna", "next": "after3_group_yuna_seoyeon" },
+            { "condition": "route_dain", "next": "after3_group_dain_yuna" },
+            { "next": "haeun_check" }
+        ]
+    },
+    "after3_group_seoyeon_dain": {
+        "background": "assets/images/background/student_room.png",
+        "character": null,
+        "type": "group_free_talk",
+        "groupMode": "route_social",
+        "groupParticipants": [
+            { "id": "Seoyeon", "role": "focus", "side": "left", "initialExpression": "normal" },
+            { "id": "Dain", "role": "companion", "side": "right", "initialExpression": "normal" }
+        ],
+        "maxTurns": 2,
+        "next": "after3_group_return"
+    },
+    "after3_group_yuna_seoyeon": {
+        "background": "assets/images/background/library_old.png",
+        "character": null,
+        "type": "group_free_talk",
+        "groupMode": "route_social",
+        "groupParticipants": [
+            { "id": "Yuna", "role": "focus", "side": "left", "initialExpression": "normal" },
+            { "id": "Seoyeon", "role": "companion", "side": "right", "initialExpression": "normal" }
+        ],
+        "maxTurns": 2,
+        "next": "after3_group_return"
+    },
+    "after3_group_dain_yuna": {
+        "background": "assets/images/background/gym.png",
+        "character": null,
+        "type": "group_free_talk",
+        "groupMode": "route_social",
+        "groupParticipants": [
+            { "id": "Dain", "role": "focus", "side": "left", "initialExpression": "normal" },
+            { "id": "Yuna", "role": "companion", "side": "right", "initialExpression": "normal" }
+        ],
+        "maxTurns": 2,
+        "next": "after3_group_return"
+    },
+    "after3_group_teacher_seoyeon": {
+        "background": "assets/images/background/teacher_room.png",
+        "character": null,
+        "type": "group_free_talk",
+        "groupMode": "route_social",
+        "groupParticipants": [
+            { "id": "Teacher", "role": "focus", "side": "left", "initialExpression": "normal" },
+            { "id": "Seoyeon", "role": "companion", "side": "right", "initialExpression": "normal" }
+        ],
+        "maxTurns": 2,
+        "next": "after3_group_return"
+    },
+    "after3_group_nurse_dain": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": null,
+        "type": "group_free_talk",
+        "groupMode": "route_social",
+        "groupParticipants": [
+            { "id": "Nurse", "role": "focus", "side": "left", "initialExpression": "normal" },
+            { "id": "Dain", "role": "companion", "side": "right", "initialExpression": "normal" }
+        ],
+        "maxTurns": 2,
+        "next": "after3_group_return"
+    },
+    "after3_group_return": {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
         "next": "haeun_check"

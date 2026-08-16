@@ -810,6 +810,66 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
     }
 });
 
+test('day-three routes select one localized two-turn social group conversation and rejoin the original flow', () => {
+    const scenarioContext = { SCENARIO: {}, console };
+    vm.runInNewContext(read('assets/js/scenario/day3_3_afterschool.js'), scenarioContext);
+    const day = scenarioContext.SCENARIO[3];
+    const expected = {
+        after3_group_seoyeon_dain: ['Seoyeon', 'Dain'],
+        after3_group_yuna_seoyeon: ['Yuna', 'Seoyeon'],
+        after3_group_dain_yuna: ['Dain', 'Yuna'],
+        after3_group_teacher_seoyeon: ['Teacher', 'Seoyeon'],
+        after3_group_nurse_dain: ['Nurse', 'Dain']
+    };
+
+    assert.equal(day.after3_final.next, 'after3_group_route_check');
+    assert.equal(day.after3_group_route_check.routeBeforeRender, true);
+    assert.deepEqual(
+        Array.from(day.after3_group_route_check.branches, branch => [branch.condition || '', branch.next]),
+        [
+            ['homeroom_route_unlocked', 'after3_group_teacher_seoyeon'],
+            ['nurse_route_unlocked', 'after3_group_nurse_dain'],
+            ['route_seoyeon', 'after3_group_seoyeon_dain'],
+            ['route_yuna', 'after3_group_yuna_seoyeon'],
+            ['route_dain', 'after3_group_dain_yuna'],
+            ['', 'haeun_check']
+        ]
+    );
+
+    for (const [id, participantIds] of Object.entries(expected)) {
+        const scene = day[id];
+        assert.equal(scene.type, 'group_free_talk', `${id} must use group free talk`);
+        assert.equal(scene.groupMode, 'route_social', `${id} must not inherit the day-five confrontation mode`);
+        assert.equal(scene.maxTurns, 2, `${id} must be limited to two player turns`);
+        assert.equal(scene.next, 'after3_group_return', `${id} must enter the shared return scene`);
+        assert.deepEqual(Array.from(scene.groupParticipants, participant => participant.id), participantIds);
+        assert.deepEqual(Array.from(scene.groupParticipants, participant => participant.role), ['focus', 'companion']);
+        assert.ok(scene.groupParticipants.every(participant => participant.initialExpression === 'normal'));
+    }
+    assert.equal(day.after3_group_return.next, 'haeun_check');
+
+    for (const lang of ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt']) {
+        const i18n = JSON.parse(read(`assets/js/i18n/${lang}/day3_3_afterschool.json`));
+        for (const id of Object.keys(expected)) {
+            const localized = i18n[id];
+            for (const field of ['name', 'text', 'context', 'personality', 'buttonText', 'groupLocation', 'groupChoiceState', 'groupAftermathCause']) {
+                assert.ok(typeof localized?.[field] === 'string' && localized[field].trim(), `${lang}/${id} is missing ${field}`);
+            }
+        }
+    }
+
+    const freeTalk = read('assets/js/modules/FreeTalkSystem.js');
+    const renderer = read('assets/js/modules/SceneRenderer.js');
+    assert.match(freeTalk, /_resolveGroupParticipants\(scene, lang = 'ko'\)/);
+    assert.match(freeTalk, /scene\?\.groupParticipants === 'counteroffer_confrontation'/);
+    assert.match(freeTalk, /Array\.isArray\(scene\?\.groupParticipants\)/);
+    assert.match(freeTalk, /scene\.groupMode \|\| \(scene\.groupParticipants === 'counteroffer_confrontation'/);
+    assert.match(freeTalk, /scene\?\.groupAftermathCause/);
+    assert.match(renderer, /'groupLocation'/);
+    assert.match(renderer, /'groupChoiceState'/);
+    assert.match(renderer, /'groupAftermathCause'/);
+});
+
 test('group reply order, per-speaker affinity, and Dain expression assets follow the active speaker', async () => {
     const freeTalkWindow = {
         CupidFreeTalkCore: core,

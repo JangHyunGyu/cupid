@@ -729,6 +729,60 @@
         "name": "Seoyeon",
         "text": "*Seoyeon walks toward the far end of the empty hall. Beside her rigid back, all I can see is her clenched fist.*"
     },
+    "after3_group_seoyeon_dain": {
+        "name": "Seoyeon · Dain",
+        "text": "*Just as the student council room is about to close, Dain walks in with a volleyball tucked under one arm. One slot on the gym schedule overlaps.*",
+        "context": "It is just after the protagonist spent the afternoon with Seoyeon. Before the student council room closes, Dain arrives to check the gym schedule and finds that Seoyeon's booking overlaps with extra volleyball practice. It is a small problem the three of them can settle together.",
+        "personality": "Seoyeon checks the schedule and deadline in order, but she does not push the protagonist away when he offers to help. Dain jumps straight to the conclusion and cuts in when impatient, without dismissing Seoyeon's work. Let them actually listen across the sheet of paper. Do not force rivalry or jealousy; let their different consideration and affection surface while they solve one scheduling problem.",
+        "buttonText": "Speak",
+        "groupLocation": "Student Council Room",
+        "groupChoiceState": "As the afternoon with Seoyeon ends, Dain arrives to resolve an overlapping gym booking",
+        "groupAftermathCause": "the protagonist's words or actions toward Seoyeon and Dain in the student council room"
+    },
+    "after3_group_yuna_seoyeon": {
+        "name": "Yuna · Seoyeon",
+        "text": "*As Yuna pulls an old ledger from a stack of books, she meets Seoyeon's eyes at the entrance to the annex.*",
+        "context": "It is just after the protagonist spent the afternoon with Yuna. An old student council ledger turns up in Yuna's hidden stack of books, and Seoyeon arrives at the library annex looking for it. Before returning it, the three inspect an old note tucked inside.",
+        "personality": "Yuna acts annoyed that another person has entered her space, yet removes one earbud and stays once curiosity takes hold. Seoyeon handles the return properly without trying to reorganize Yuna's refuge. Do not make them exchange mere pleasantries through the protagonist. Let them guess, challenge each other, and show distinct curiosity about the note.",
+        "buttonText": "Speak",
+        "groupLocation": "Library Annex",
+        "groupChoiceState": "An old student council ledger surfaced in Yuna's book stack, and Seoyeon arrived looking for it",
+        "groupAftermathCause": "the protagonist's words or actions toward Yuna and Seoyeon in the library annex"
+    },
+    "after3_group_dain_yuna": {
+        "name": "Dain · Yuna",
+        "text": "*The gym door opens again. Yuna holds up Dain's student ID between two fingers.*",
+        "context": "It is just after the protagonist spent the afternoon with Dain. While the gym is being tidied, Yuna arrives to return Dain's student ID, which she found near the annex. Dain has searched for it since morning, and the three linger in the gym for a brief conversation.",
+        "personality": "Dain thanks her immediately and openly, though she may try to cover embarrassment with volume. Yuna pretends the favor means nothing while quietly enjoying Dain's reaction, and asks a pointed question when something catches her. Keep their different tempos without fixing Yuna as a spectator or Dain as comic relief. Let their replies to each other move with the protagonist's response.",
+        "buttonText": "Speak",
+        "groupLocation": "Gym",
+        "groupChoiceState": "While the protagonist and Dain tidy the gym, Yuna arrives with the student ID she found",
+        "groupAftermathCause": "the protagonist's words or actions toward Dain and Yuna in the gym"
+    },
+    "after3_group_teacher_seoyeon": {
+        "name": "Homeroom Teacher · Seoyeon",
+        "text": "*When Seoyeon sets down papers for approval, a note protruding from the teacher's manuscript catches everyone's eye.*",
+        "context": "It is after school, following the protagonist's conversation with the homeroom teacher about her manuscript. Seoyeon enters the faculty room with student council papers and happens to notice a note from the pages they were sorting. The three discuss writing and the school event only within what can be shared openly.",
+        "personality": "The homeroom teacher keeps clear professional boundaries and protects the unpublished parts of her manuscript, but writing draws out a more candid reaction. Seoyeon asks what the student council president needs to know without prying into an adult's private life, and offers her own view on sentences and event ideas. Do not use Seoyeon merely to detect a secret between the other two. Preserve the natural tension of a public school setting shared by teacher and students.",
+        "buttonText": "Speak",
+        "groupLocation": "Faculty Room",
+        "groupChoiceState": "While the protagonist helps sort the teacher's manuscript, Seoyeon arrives with student council papers",
+        "groupAftermathCause": "the protagonist's words or actions toward the homeroom teacher and Seoyeon in the faculty room"
+    },
+    "after3_group_nurse_dain": {
+        "name": "School Nurse · Dain",
+        "text": "*Dain walks in carrying a box of athletic tape, and the school nurse points to an empty storage slot.*",
+        "context": "The protagonist is with the school nurse after school when Dain returns taping supplies borrowed by the volleyball club. One item is missing, so the three check the box again. It is an ordinary moment where they can handle supplies and Dain's condition together.",
+        "personality": "Even when she opens playfully, the school nurse checks Dain's knee and wrist first and keeps a teacher's distance in front of a student. Dain answers honestly once caught instead of insisting she is fine, though she pushes back brightly against excessive worry. Do not force the protagonist to take one side. Let their different forms of care meet while all three count supplies and check her condition.",
+        "buttonText": "Speak",
+        "groupLocation": "Nurse's Office",
+        "groupChoiceState": "While the protagonist and school nurse organize supplies, Dain arrives to return the volleyball club's tape box",
+        "groupAftermathCause": "the protagonist's words or actions toward the school nurse and Dain in the nurse's office"
+    },
+    "after3_group_return": {
+        "name": "{name}",
+        "text": "*After the conversation, I step back into the hallway.*"
+    },
     "after3_final": {
         "name": "{name}",
         "text": "*The afternoon ends. One by one, the hallway lights switch off.*"

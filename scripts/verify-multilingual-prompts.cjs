@@ -199,6 +199,11 @@ const activeFreeTalkIds = [
     'after3_seo_freetalk',
     'after3_yuna_freetalk',
     'after3_dain_freetalk',
+    'after3_group_seoyeon_dain',
+    'after3_group_yuna_seoyeon',
+    'after3_group_dain_yuna',
+    'after3_group_teacher_seoyeon',
+    'after3_group_nurse_dain',
     'hidden_homeroom_d4_freetalk',
     'hidden_nurse_d4_freetalk',
     'wall_seo_freetalk',
@@ -861,6 +866,44 @@ for (const lang of languages) {
         `group/${lang} does not carry both distinct relationship profiles into the shared scene`);
     assert(parts.dynamic.includes('current affinity=12') && parts.dynamic.includes('current affinity=34'),
         `group/${lang} lost dynamic affinity state`);
+
+    const socialPrompt = context.window.buildCupidGroupSystemPrompt({
+        lang,
+        groupMode: 'route_social',
+        participants: [
+            { id: 'Seoyeon', name: leadName, role: 'focus' },
+            { id: 'Dain', name: tempterName, role: 'companion' }
+        ],
+        locationName: 'Student Council Room',
+        context: 'The gym schedule overlaps and all three are resolving it.',
+        extraGuideline: 'Keep the exchange casual and let both characters listen to each other.',
+        playerName: 'Alex',
+        choiceState: 'Dain arrived to check the schedule.',
+        gameContexts: { Seoyeon: 'She prepared the schedule.', Dain: 'She needs an extra practice slot.' },
+        affinities: { Seoyeon: 12, Dain: 34 },
+        promptData
+    });
+    const socialParts = splitCacheBoundary(socialPrompt, `group-social/${lang}`);
+    assert(context.window.CupidFreeTalkCore.getStablePromptFingerprint(groupPrompt)
+        !== context.window.CupidFreeTalkCore.getStablePromptFingerprint(socialPrompt),
+    `group-social/${lang} shares the confrontation cache fingerprint`);
+    assert(socialParts.stable.includes('Natural three-person conversation')
+        && socialParts.stable.includes('The focus character carries the scene’s topic')
+        && socialParts.stable.includes('companion responds as a person with independent judgment and desires'),
+    `group-social/${lang} lost focus and companion agency`);
+    assert(socialParts.stable.includes('Let both characters hear what was just said or done')
+        && socialParts.stable.includes('must not push the protagonist out'),
+    `group-social/${lang} lost natural character-to-character exchange`);
+    assert(socialParts.stable.includes('do not invent jealousy, interrogation, or a secret reveal')
+        && !socialParts.stable.includes('two-timing from the start')
+        && !socialParts.stable.includes('-40 or -50'),
+    `group-social/${lang} leaks the betrayal confrontation`);
+    assert(socialParts.stable.includes('Either character may gain at most +3')
+        && socialParts.stable.includes('must not exceed +3')
+        && socialParts.stable.includes('Do not award points merely for continuing the conversation'),
+    `group-social/${lang} lost bounded, behavior-based affinity scoring`);
+    assert(socialParts.dynamic.includes('current affinity=12') && socialParts.dynamic.includes('current affinity=34'),
+        `group-social/${lang} lost dynamic affinity state`);
 }
 
 verifyLocalizedFreeTalkInventory();

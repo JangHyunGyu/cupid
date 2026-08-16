@@ -729,6 +729,60 @@
         "name": "Seoyeon",
         "text": "*Seoyeon caminha até o fim do corredor vazio. Ao lado de suas costas retas, só se vê o punho cerrado.*"
     },
+    "after3_group_seoyeon_dain": {
+        "name": "Seoyeon · Dain",
+        "text": "*Quando a sala do conselho estudantil está prestes a fechar, Dain entra com uma bola de vôlei debaixo do braço. Um horário do ginásio está sobreposto.*",
+        "context": "A tarde que o protagonista passou com Seoyeon acabou há pouco. Antes de a sala fechar, Dain chega para conferir o uso do ginásio e descobre que o cronograma de Seoyeon coincide com um treino extra do time. É um problema pequeno que os três podem resolver juntos.",
+        "personality": "Seoyeon confere o cronograma e o prazo em ordem, mas não afasta o protagonista quando ele oferece ajuda. Dain vai direto à conclusão e interrompe quando fica impaciente, sem desmerecer o trabalho de Seoyeon. Faça com que elas realmente escutem uma à outra sobre a folha de horários. Não force rivalidade nem ciúme; deixe o cuidado e o afeto de cada uma aparecerem enquanto ajustam o horário.",
+        "buttonText": "Falar",
+        "groupLocation": "Sala do conselho estudantil",
+        "groupChoiceState": "No fim da tarde com Seoyeon, Dain chega para resolver um conflito no horário do ginásio",
+        "groupAftermathCause": "as palavras ou ações do protagonista com Seoyeon e Dain na sala do conselho"
+    },
+    "after3_group_yuna_seoyeon": {
+        "name": "Yuna · Seoyeon",
+        "text": "*Quando Yuna tira um livro de registros antigo de uma pilha, encontra o olhar de Seoyeon na entrada do anexo.*",
+        "context": "A tarde que o protagonista passou com Yuna acabou há pouco. Um registro antigo do conselho estudantil aparece entre os livros escondidos de Yuna, e Seoyeon chega ao anexo da biblioteca procurando por ele. Antes de devolvê-lo, os três examinam um bilhete velho guardado entre as páginas.",
+        "personality": "Yuna age como se estivesse incomodada com outra pessoa em seu espaço, mas tira um fone e fica quando a curiosidade desperta. Seoyeon cuida da devolução sem tentar organizar o refúgio de Yuna. Não as limite a trocar gentilezas por meio do protagonista. Deixe que levantem hipóteses, discordem e mostrem curiosidades diferentes sobre o bilhete.",
+        "buttonText": "Falar",
+        "groupLocation": "Anexo da biblioteca",
+        "groupChoiceState": "Um registro antigo do conselho apareceu entre os livros de Yuna e Seoyeon chegou procurando por ele",
+        "groupAftermathCause": "as palavras ou ações do protagonista com Yuna e Seoyeon no anexo da biblioteca"
+    },
+    "after3_group_dain_yuna": {
+        "name": "Dain · Yuna",
+        "text": "*A porta do ginásio se abre de novo. Yuna segura a carteira estudantil de Dain entre dois dedos.*",
+        "context": "A tarde que o protagonista passou com Dain acabou há pouco. Enquanto o ginásio é arrumado, Yuna chega para devolver a carteira de Dain, encontrada perto do anexo. Dain procurava por ela desde cedo, e os três ficam mais um pouco para conversar.",
+        "personality": "Dain agradece imediatamente e sem esconder a alegria, embora possa tentar cobrir o constrangimento falando mais alto. Yuna finge que o favor não foi nada enquanto aprecia em segredo a reação de Dain, e pergunta de forma direta quando alguma fala chama sua atenção. Preserve os ritmos diferentes sem prender Yuna ao papel de espectadora nem Dain ao de alívio cômico. Faça as respostas entre elas mudarem conforme a reação do protagonista.",
+        "buttonText": "Falar",
+        "groupLocation": "Ginásio",
+        "groupChoiceState": "Enquanto o protagonista e Dain arrumam o ginásio, Yuna chega com a carteira que encontrou",
+        "groupAftermathCause": "as palavras ou ações do protagonista com Dain e Yuna no ginásio"
+    },
+    "after3_group_teacher_seoyeon": {
+        "name": "Professora · Seoyeon",
+        "text": "*Quando Seoyeon coloca os documentos para aprovação sobre a mesa, um bilhete saindo do manuscrito da professora chama a atenção de todos.*",
+        "context": "É depois da aula, logo após o protagonista conversar com a professora sobre o manuscrito dela. Seoyeon entra na sala dos professores com documentos do conselho estudantil e vê por acaso um bilhete entre as páginas que eles organizavam. Os três falam sobre escrita e o evento escolar apenas dentro do que pode ser compartilhado.",
+        "personality": "A professora mantém limites profissionais claros e protege as partes inéditas do manuscrito, mas o assunto de escrita desperta reações mais sinceras. Seoyeon pergunta o que precisa saber como presidente do conselho sem invadir a vida privada de uma adulta, e dá sua opinião sobre frases ou ideias para o evento. Não use Seoyeon apenas para perceber um segredo entre os outros dois. Preserve a tensão natural de um espaço escolar público compartilhado por professora e alunos.",
+        "buttonText": "Falar",
+        "groupLocation": "Sala dos professores",
+        "groupChoiceState": "Enquanto o protagonista ajuda a organizar o manuscrito, Seoyeon chega com documentos do conselho estudantil",
+        "groupAftermathCause": "as palavras ou ações do protagonista com a professora e Seoyeon na sala dos professores"
+    },
+    "after3_group_nurse_dain": {
+        "name": "Enfermeira · Dain",
+        "text": "*Dain entra carregando uma caixa de fita esportiva, e a enfermeira aponta para um espaço vazio no armário.*",
+        "context": "O protagonista está com a enfermeira depois da aula quando Dain devolve os materiais de bandagem emprestados ao time de vôlei. Falta um item, então os três conferem a caixa. É um momento cotidiano para cuidar dos materiais e da condição física de Dain juntos.",
+        "personality": "Mesmo começando em tom de brincadeira, a enfermeira verifica primeiro o joelho e o pulso de Dain e mantém a distância de uma educadora diante de uma aluna. Dain responde com sinceridade quando é descoberta, em vez de insistir que está bem, mas rebate com energia a preocupação excessiva. Não force o protagonista a tomar partido. Deixe as formas diferentes de cuidado se encontrarem enquanto os três contam materiais e conferem como Dain está.",
+        "buttonText": "Falar",
+        "groupLocation": "Enfermaria",
+        "groupChoiceState": "Enquanto o protagonista e a enfermeira organizam materiais, Dain chega para devolver a caixa de fita do time",
+        "groupAftermathCause": "as palavras ou ações do protagonista com a enfermeira e Dain na enfermaria"
+    },
+    "after3_group_return": {
+        "name": "{name}",
+        "text": "*Quando a conversa termina, volto para o corredor.*"
+    },
     "after3_final": {
         "name": "{name}",
         "text": "*A tarde termina. As luzes do corredor se apagam uma a uma.*"
