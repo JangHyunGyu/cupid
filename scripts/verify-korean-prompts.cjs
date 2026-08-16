@@ -4,11 +4,11 @@ const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..');
 const CHARACTERS = [
-    { key: 'Seoyeon', mainName: '서연', sharedName: '서연', galleryId: 'seyoun', cardSignal: '학생회장', relationshipSignal: '작은 다육이' },
-    { key: 'Yuna', mainName: '유나', sharedName: '유나', galleryId: 'yuna', cardSignal: '영구 문신', relationshipSignal: '이어폰 한쪽' },
-    { key: 'Dain', mainName: '다인', sharedName: '다인', galleryId: 'dain', cardSignal: '배구부 선수', relationshipSignal: '리듬게임' },
-    { key: 'Teacher', mainName: '담임', sharedName: '담임선생님', galleryId: 'teacher', cardSignal: '담임 교사', relationshipSignal: '미완성 원고' },
-    { key: 'Nurse', mainName: '보건', sharedName: '보건선생님', galleryId: 'nurse', cardSignal: '보건 교사', relationshipSignal: '로즈마리 향' }
+    { key: 'Seoyeon', mainName: '서연', sharedName: '서연', galleryId: 'seyoun', cardSignal: '학생회장', relationshipSignal: '작은 다육이', voiceSignal: '시간·순서·약속' },
+    { key: 'Yuna', mainName: '유나', sharedName: '유나', galleryId: 'yuna', cardSignal: '영구 문신', relationshipSignal: '이어폰 한쪽', voiceSignal: '사라진 시간을 정확히 되묻고' },
+    { key: 'Dain', mainName: '다인', sharedName: '다인', galleryId: 'dain', cardSignal: '배구부 선수', relationshipSignal: '리듬게임', voiceSignal: '결론과 동사가 앞서고' },
+    { key: 'Teacher', mainName: '담임', sharedName: '담임선생님', galleryId: 'teacher', cardSignal: '담임 교사', relationshipSignal: '미완성 원고', voiceSignal: '엉성한 전제' },
+    { key: 'Nurse', mainName: '보건', sharedName: '보건선생님', galleryId: 'nurse', cardSignal: '보건 교사', relationshipSignal: '로즈마리 향', voiceSignal: '표정·호흡·몸 상태' }
 ];
 const REQUIRED_BLOCKS = [
     '[한국어 원문체]',
@@ -210,6 +210,12 @@ function verifyMainAndGalleryPrompts(context) {
     assert(promptData.relationshipGuidelines, 'main prompt data is missing relationship profiles');
     assert(new Set(Object.values(promptData.relationshipGuidelines)).size === CHARACTERS.length,
         'the five Korean relationship profiles are not distinct');
+    assert(new Set(Object.values(promptData.styleGuidelines)).size === CHARACTERS.length,
+        'the five Korean character voices are not distinct');
+    for (const character of CHARACTERS) {
+        assert(promptData.styleGuidelines[character.sharedName]?.includes(character.voiceSignal),
+            `${character.key} is missing its character-specific Korean voice signal`);
+    }
     let galleryPlayerName = '민준';
     const progress = {
         getPlayerName: () => galleryPlayerName,
