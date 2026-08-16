@@ -33,6 +33,37 @@ for (const pageName of ['index.html', 'index-en.html', 'game.html', 'game-en.htm
     });
 }
 
+test('mobile landing keeps its primary actions and footer inside the viewport', async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto('/index.html');
+    await waitForRuntime(page);
+
+    const layout = await page.evaluate(() => {
+        const footer = document.querySelector('.footer');
+        const landing = document.querySelector('#landing-container');
+        const continueButton = document.querySelector('#continue-btn');
+        const footerRect = footer.getBoundingClientRect();
+        const continueRect = continueButton.getBoundingClientRect();
+        const footerStyle = getComputedStyle(footer);
+        return {
+            viewportWidth: window.innerWidth,
+            viewportHeight: window.innerHeight,
+            scrollWidth: document.documentElement.scrollWidth,
+            footerTop: footerRect.top,
+            footerBottom: footerRect.bottom,
+            continueBottom: continueRect.bottom,
+            footerBackground: footerStyle.backgroundImage,
+            landingBackground: getComputedStyle(landing).backgroundImage
+        };
+    });
+
+    expect(layout.scrollWidth).toBeLessThanOrEqual(layout.viewportWidth);
+    expect(layout.continueBottom).toBeLessThan(layout.footerTop);
+    expect(layout.footerBottom).toBeLessThanOrEqual(layout.viewportHeight);
+    expect(layout.footerBackground).not.toBe('none');
+    expect(layout.landingBackground).toContain('title_portrait.webp');
+});
+
 test('new game reaches the name input scene without changing UI contracts', async ({ page }) => {
     await page.goto('/index.html');
     await waitForRuntime(page);

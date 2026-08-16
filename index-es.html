@@ -203,7 +203,7 @@
             position: relative;
             width: 100%;
             height: 100%;
-            background: url('assets/images/background/title_square.png?v=2.9.6') no-repeat center center;
+            background: url('assets/images/background/title_square.webp?v=2.9.6') no-repeat center center;
             background-size: cover;
             display: flex;
             flex-direction: column;
@@ -216,13 +216,13 @@
 
         @media (orientation: landscape) {
             #landing-container {
-                background-image: url('assets/images/background/title_landscape.png?v=2.9.6');
+                background-image: url('assets/images/background/title_landscape.webp?v=2.9.6');
             }
         }
 
         @media (orientation: portrait) and (max-width: 768px) {
             #landing-container {
-                background-image: url('assets/images/background/title_portrait.png?v=2.9.6');
+                background-image: url('assets/images/background/title_portrait.webp?v=2.9.6');
             }
         }
 
@@ -858,6 +858,38 @@
             .title-heroine.pos-4 { --hero-x: 93%; }
             .title-heroine.pos-1 { --hero-x: 24%; }
             .title-heroine.pos-5 { --hero-x: 76%; }
+
+            .footer {
+                width: calc(100% - 24px);
+                bottom: max(6px, env(safe-area-inset-bottom));
+                gap: 5px;
+                padding: 9px 10px 7px;
+                border: 1px solid rgba(255, 255, 255, 0.18);
+                border-radius: 12px;
+                background: linear-gradient(180deg, rgba(17, 11, 31, 0.12), rgba(17, 11, 31, 0.68));
+                box-shadow: 0 10px 30px rgba(8, 5, 20, 0.24);
+                backdrop-filter: blur(9px);
+                -webkit-backdrop-filter: blur(9px);
+            }
+
+            .footer .contact-links {
+                width: 100%;
+                justify-content: center;
+                gap: 6px;
+            }
+
+            .footer .contact-link {
+                padding: 6px 9px;
+            }
+
+            .footer nav {
+                margin-top: 0 !important;
+                line-height: 1.45;
+            }
+
+            .footer p {
+                text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+            }
         }
 
         /* Low-height landscape phones */
@@ -1224,7 +1256,7 @@
     <script>window.preventAutoStart = true;</script>
 
     <!-- Game Scripts (Dynamic Loader) -->
-<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.157"></script>
+<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.158"></script>
 
     <script>
         // Initialize SoundManager + Enable Buttons (게임 스크립트 로드 완료 후)
