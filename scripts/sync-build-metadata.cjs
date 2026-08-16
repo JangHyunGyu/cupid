@@ -58,6 +58,10 @@ for (const page of config.localizedPages) {
             content => content.replace(
                 /(assets\/js\/sound\.js\?v=)[0-9.]+/g,
                 `$1${version}`
+            ),
+            content => content.replace(
+                /(assets\/js\/modal-accessibility\.js\?v=)[0-9.]+/g,
+                `$1${version}`
             )
         ]);
     }

@@ -64,6 +64,46 @@ test('mobile landing keeps its primary actions and footer inside the viewport', 
     expect(layout.landingBackground).toContain('title_portrait.webp');
 });
 
+test('landing modals expose dialog semantics and keep keyboard focus contained', async ({ page }) => {
+    await page.goto('/index.html');
+    await waitForRuntime(page);
+
+    const settingsButton = page.getByRole('button', { name: '설정' });
+    await settingsButton.click();
+    const settingsModal = page.locator('#settingsModal');
+    await expect(settingsModal).toHaveAttribute('role', 'dialog');
+    await expect(settingsModal).toHaveAttribute('aria-modal', 'true');
+    await expect(settingsModal).toHaveAttribute('aria-hidden', 'false');
+    await expect.poll(() => page.evaluate(() => (
+        document.activeElement?.closest('#settingsModal')?.id || ''
+    ))).toBe('settingsModal');
+
+    await page.keyboard.press('Escape');
+    await expect(settingsModal).toHaveAttribute('aria-hidden', 'true');
+    await expect(settingsButton).toBeFocused();
+
+    await page.evaluate(() => {
+        const continueButton = document.getElementById('continue-btn');
+        continueButton.disabled = false;
+        continueButton.style.opacity = '1';
+    });
+    const startButton = page.getByRole('button', { name: '새게임' });
+    await startButton.click();
+    const newGameModal = page.locator('#newGameConfirmModal');
+    await expect(newGameModal).toHaveAttribute('role', 'alertdialog');
+    await expect(newGameModal).toHaveAttribute('aria-labelledby', 'newGameConfirmModal-title');
+    await expect(newGameModal).toHaveAttribute('aria-describedby', 'newGameConfirmModal-description');
+    await expect(newGameModal.locator('.modal-btn.cancel')).toBeFocused();
+
+    await page.keyboard.press('Shift+Tab');
+    await expect(newGameModal.locator('.modal-btn.confirm')).toBeFocused();
+    await page.keyboard.press('Tab');
+    await expect(newGameModal.locator('.modal-btn.cancel')).toBeFocused();
+    await page.keyboard.press('Escape');
+    await expect(newGameModal).toHaveAttribute('aria-hidden', 'true');
+    await expect(startButton).toBeFocused();
+});
+
 test('new game reaches the name input scene without changing UI contracts', async ({ page }) => {
     await page.goto('/index.html');
     await waitForRuntime(page);
