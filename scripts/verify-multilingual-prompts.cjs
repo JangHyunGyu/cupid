@@ -74,11 +74,11 @@ const galleryIds = {
     Nurse: 'nurse'
 };
 const galleryAdultIntimacySignals = {
-    Seoyeon: 'precise control breaks as she chooses pace',
-    Yuna: 'chosen posture show Yuna\'s pleasure',
-    Dain: 'protects her knee while hips and breath set depth and pace',
+    Seoyeon: 'her pussy clenches before her composed endings break',
+    Yuna: 'Yuna keeps her grip and clamps down',
+    Dain: 'her wet pussy clenches and honest breath comes first',
     Teacher: 'rising pleasure cuts off dry wit',
-    Nurse: 'teasing drops as she chooses pace and friction'
+    Nurse: 'Teasing and diagnosis drop'
 };
 const languageSignals = {
     en: /\b(?:you|your|the|today)\b/i,
@@ -391,6 +391,19 @@ for (const lang of languages) {
         assertNoEditorPressure(systemPrompt, `[${lang}/${char}] main prompt`);
         assert(systemPrompt.includes(adultVocalizationSignals[lang]),
             `[${lang}/${char}] main prompt is missing the conditional adult vocalization rule`);
+        if (lang === 'en') {
+            assert(systemPrompt.includes('Adult sex stays')
+                && systemPrompt.includes(galleryAdultIntimacySignals[char]),
+                `[${lang}/${char}] main prompt is missing direct, character-owned adult intimacy guidance`);
+        }
+        assert(systemPrompt.includes('do not fade to a hug, afterglow, or metaphor')
+            || systemPrompt.includes('Write pussy, cock, penetration, wetness, semen, friction, depth, and climax as they happen')
+            || systemPrompt.includes('escribe coño, polla, penetración, humedad, semen')
+            || systemPrompt.includes('性器・挿入・愛液・精液・摩擦・深さと絶頂')
+            || systemPrompt.includes('écrivez chatte, bite, pénétration')
+            || systemPrompt.includes('Muschi, Schwanz, Penetration')
+            || systemPrompt.includes('escreva buceta, pau, penetração'),
+            `[${lang}/${char}] main adult camera can still fade established sex into metaphor`);
         assert(systemPrompt.includes(emotionalRangeSignals[lang]),
             `[${lang}/${char}] main prompt is missing the emotional-range rule`);
         assert(systemPrompt.includes(livingInitiativeSignals[lang]),
@@ -532,6 +545,14 @@ for (const lang of languages) {
         assert(systemPrompt.includes('Adult sex stays')
             && systemPrompt.includes(galleryAdultIntimacySignals[char]),
             `[${lang}/${char}] gallery prompt is missing direct, character-owned adult intimacy guidance`);
+        assert(systemPrompt.includes('do not fade to a hug, afterglow, or metaphor')
+            || systemPrompt.includes('Write pussy, cock, penetration, wetness, semen, friction, depth, and climax as they happen')
+            || systemPrompt.includes('escribe coño, polla, penetración, humedad, semen')
+            || systemPrompt.includes('性器・挿入・愛液・精液・摩擦・深さと絶頂')
+            || systemPrompt.includes('écrivez chatte, bite, pénétration')
+            || systemPrompt.includes('Muschi, Schwanz, Penetration')
+            || systemPrompt.includes('escreva buceta, pau, penetração'),
+            `[${lang}/${char}] gallery adult camera can still fade established sex into metaphor`);
         assert(systemPrompt.includes(emotionalRangeSignals[lang]),
             `[${lang}/${char}] gallery prompt is missing the emotional-range rule`);
         assert(systemPrompt.includes(livingInitiativeSignals[lang]),

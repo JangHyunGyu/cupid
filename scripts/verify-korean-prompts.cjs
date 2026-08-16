@@ -4,11 +4,11 @@ const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..');
 const CHARACTERS = [
-    { key: 'Seoyeon', mainName: '서연', sharedName: '서연', galleryId: 'seyoun', cardSignal: '학생회장', relationshipSignal: '작은 다육이', voiceSignal: '시간·순서·약속', intimateSignal: '침착한 말끝이 흔들립니다' },
-    { key: 'Yuna', mainName: '유나', sharedName: '유나', galleryId: 'yuna', cardSignal: '영구 문신', relationshipSignal: '이어폰 한쪽', voiceSignal: '사라진 시간을 정확히 되묻고', intimateSignal: '먼저 고른 자세' },
-    { key: 'Dain', mainName: '다인', sharedName: '다인', galleryId: 'dain', cardSignal: '배구부 선수', relationshipSignal: '리듬게임', voiceSignal: '결론과 동사가 앞서고', intimateSignal: '깊이·속도·마찰을 먼저 맞춥니다' },
-    { key: 'Teacher', mainName: '담임', sharedName: '담임선생님', galleryId: 'teacher', cardSignal: '담임 교사', relationshipSignal: '미완성 원고', voiceSignal: '엉성한 전제', intimateSignal: '태연한 말끝과 자세' },
-    { key: 'Nurse', mainName: '보건', sharedName: '보건선생님', galleryId: 'nurse', cardSignal: '보건 교사', relationshipSignal: '로즈마리 향', voiceSignal: '표정·호흡·몸 상태', intimateSignal: '원하는 속도와 마찰' }
+    { key: 'Seoyeon', mainName: '서연', sharedName: '서연', galleryId: 'seyoun', cardSignal: '학생회장', relationshipSignal: '작은 다육이', voiceSignal: '시간·순서·약속', intimateSignal: '보지가 조여들수록 침착한 말끝이 끊깁니다' },
+    { key: 'Yuna', mainName: '유나', sharedName: '유나', galleryId: 'yuna', cardSignal: '영구 문신', relationshipSignal: '이어폰 한쪽', voiceSignal: '사라진 시간을 정확히 되묻고', intimateSignal: '보지로 세게 물며' },
+    { key: 'Dain', mainName: '다인', sharedName: '다인', galleryId: 'dain', cardSignal: '배구부 선수', relationshipSignal: '리듬게임', voiceSignal: '결론과 동사가 앞서고', intimateSignal: '젖은 보지가 자지를 조일 때 솔직한 숨이 먼저 납니다' },
+    { key: 'Teacher', mainName: '담임', sharedName: '담임선생님', galleryId: 'teacher', cardSignal: '담임 교사', relationshipSignal: '미완성 원고', voiceSignal: '엉성한 전제', intimateSignal: '문학 비유로 절정을 포장하지 않습니다' },
+    { key: 'Nurse', mainName: '보건', sharedName: '보건선생님', galleryId: 'nurse', cardSignal: '보건 교사', relationshipSignal: '로즈마리 향', voiceSignal: '표정·호흡·몸 상태', intimateSignal: '절정을 처방으로 포장하지 않습니다' }
 ];
 const REQUIRED_BLOCKS = [
     '[한국어 원문체]',
@@ -277,8 +277,14 @@ function verifyMainAndGalleryPrompts(context) {
             `[gallery/${character.key}] can still hide established adult sex behind indirect wording`);
         assert(galleryPrompt.includes(character.intimateSignal),
             `[gallery/${character.key}] is missing its character-owned adult intimacy cadence`);
-        assert(!mainPrompt.includes(character.intimateSignal),
-            `[main/${character.key}] received a post-graduation gallery intimacy profile`);
+        assert(mainPrompt.includes('보지·자지·삽입·애액·정액·절정'),
+            `[main/${character.key}] can still hide established adult sex behind indirect wording`);
+        assert(mainPrompt.includes(character.intimateSignal),
+            `[main/${character.key}] is missing its character-owned adult intimacy cadence`);
+        assert(mainPrompt.includes('포옹·여운·비유로 건너뛰지 않습니다'),
+            `[main/${character.key}] adult camera can still fade established sex into metaphor`);
+        assert(galleryPrompt.includes('포옹·여운·비유로 건너뛰지 않습니다'),
+            `[gallery/${character.key}] adult camera can still fade established sex into metaphor`);
 
         const sharedCastKnowledge = context.window.getCupidSharedCastKnowledge(
             'ko',

@@ -1946,11 +1946,11 @@ try {
     const activePromptSources = [promptsContent, ftCoreContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
-    if (promptVersion !== '2.7.63') {
-        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.63이 아님: ' + promptVersion);
+    if (promptVersion !== '2.7.64') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.64이 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.59') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.59가 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.60') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.60이 아님: ' + galleryPromptVersion);
     }
     const galleryProgressContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-progress.js'), 'utf8');
     const galleryLoaderAffinityContent = fs.readFileSync(path.join(__dirname, 'assets/js/loaders/gallery-loader.js'), 'utf8');
@@ -1993,14 +1993,14 @@ try {
     const thirdPersonAdultCameraSignals = [
         'function buildCupidThirdPersonAdultCameraRule(',
         'narration은 모두 3인칭으로 쓰고',
-        '성기·삽입·액체·절정을 에둘러 지우지 않습니다',
+        '보지·자지·삽입·애액·정액·마찰·깊이와 절정을 실제 접촉 그대로 쓰고',
         'Use third person for all narration',
-        'genitals, penetration, fluids, and climax concretely',
-        'Usa tercera persona en narration y segunda persona solo en dialogue',
-        'narration は三人称、二人称は実際の dialogue だけ',
-        'Employez la troisième personne en narration et la deuxième seulement en dialogue',
-        'narration steht in der dritten Person; zweite Person nur in dialogue',
-        'Use terceira pessoa em narration e segunda só em dialogue'
+        'Write pussy, cock, penetration, wetness, semen, friction, depth, and climax as they happen',
+        'escribe coño, polla, penetración, humedad, semen, fricción, profundidad y orgasmo',
+        '性器・挿入・愛液・精液・摩擦・深さと絶頂を実際の接触として描き',
+        'écrivez chatte, bite, pénétration, humidité, sperme, frottement, profondeur et orgasme',
+        'Muschi, Schwanz, Penetration, Nässe, Sperma, Reibung, Tiefe und Orgasmus',
+        'escreva buceta, pau, penetração, umidade, sêmen, fricção, profundidade e orgasmo'
     ];
     if (thirdPersonAdultCameraSignals.some(signal => !promptsContent.includes(signal))) {
         errors.push('[FREETALK_PROMPT] 공용 7언어 3인칭 성인 친밀 장면 카메라 계약 누락');
