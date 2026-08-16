@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.60';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.61';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 const GalleryFreeTalkCore = window.CupidFreeTalkCore;

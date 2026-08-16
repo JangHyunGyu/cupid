@@ -4,11 +4,11 @@ const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..');
 const CHARACTERS = [
-    { key: 'Seoyeon', mainName: '서연', sharedName: '서연', galleryId: 'seyoun', cardSignal: '학생회장', relationshipSignal: '작은 다육이', voiceSignal: '시간·순서·약속', intimateSignal: '보지가 조여들수록 침착한 말끝이 끊깁니다' },
-    { key: 'Yuna', mainName: '유나', sharedName: '유나', galleryId: 'yuna', cardSignal: '영구 문신', relationshipSignal: '이어폰 한쪽', voiceSignal: '사라진 시간을 정확히 되묻고', intimateSignal: '보지로 세게 물며' },
-    { key: 'Dain', mainName: '다인', sharedName: '다인', galleryId: 'dain', cardSignal: '배구부 선수', relationshipSignal: '리듬게임', voiceSignal: '결론과 동사가 앞서고', intimateSignal: '젖은 보지가 자지를 조일 때 솔직한 숨이 먼저 납니다' },
-    { key: 'Teacher', mainName: '담임', sharedName: '담임선생님', galleryId: 'teacher', cardSignal: '담임 교사', relationshipSignal: '미완성 원고', voiceSignal: '엉성한 전제', intimateSignal: '문학 비유로 절정을 포장하지 않습니다' },
-    { key: 'Nurse', mainName: '보건', sharedName: '보건선생님', galleryId: 'nurse', cardSignal: '보건 교사', relationshipSignal: '로즈마리 향', voiceSignal: '표정·호흡·몸 상태', intimateSignal: '절정을 처방으로 포장하지 않습니다' }
+    { key: 'Seoyeon', mainName: '서연', sharedName: '서연', galleryId: 'seyoun', cardSignal: '학생회장', relationshipSignal: '작은 다육이', voiceSignal: '시간·순서·약속', intimateSignal: '참다 새는 하·윽' },
+    { key: 'Yuna', mainName: '유나', sharedName: '유나', galleryId: 'yuna', cardSignal: '영구 문신', relationshipSignal: '이어폰 한쪽', voiceSignal: '사라진 시간을 정확히 되묻고', intimateSignal: '더·여기·놓지 마' },
+    { key: 'Dain', mainName: '다인', sharedName: '다인', galleryId: 'dain', cardSignal: '배구부 선수', relationshipSignal: '리듬게임', voiceSignal: '결론과 동사가 앞서고', intimateSignal: '야·같이·좋아' },
+    { key: 'Teacher', mainName: '담임', sharedName: '담임선생님', galleryId: 'teacher', cardSignal: '담임 교사', relationshipSignal: '미완성 원고', voiceSignal: '엉성한 전제', intimateSignal: '낮게 삼키는 하' },
+    { key: 'Nurse', mainName: '보건', sharedName: '보건선생님', galleryId: 'nurse', cardSignal: '보건 교사', relationshipSignal: '로즈마리 향', voiceSignal: '표정·호흡·몸 상태', intimateSignal: '낮고 긴 하아' }
 ];
 const REQUIRED_BLOCKS = [
     '[한국어 원문체]',

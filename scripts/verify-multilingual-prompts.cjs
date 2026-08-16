@@ -74,11 +74,11 @@ const galleryIds = {
     Nurse: 'nurse'
 };
 const galleryAdultIntimacySignals = {
-    Seoyeon: 'her pussy clenches before her composed endings break',
-    Yuna: 'Yuna keeps her grip and clamps down',
-    Dain: 'her wet pussy clenches and honest breath comes first',
-    Teacher: 'rising pleasure cuts off dry wit',
-    Nurse: 'Teasing and diagnosis drop'
+    Seoyeon: 'moans are bitten-off, never a cute stammer',
+    Yuna: 'speech is more/here/don’t let go',
+    Dain: 'moans openly, and talks honestly',
+    Teacher: 'moans stay swallowed, never literary or girlish',
+    Nurse: 'longer low moan; teasing drops'
 };
 const languageSignals = {
     en: /\b(?:you|your|the|today)\b/i,
