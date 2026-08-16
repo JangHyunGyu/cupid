@@ -659,7 +659,7 @@ test('Haeun affinity starts at zero, migrates into old saves, resets cleanly, an
     state.resetForNewGame();
     assert.equal(state.stats.Haeun.affinity, 0);
 
-    const allScenarioSource = fs.readdirSync(path.join(ROOT, 'assets/js/scenario'))
+    const allScenarioSource = fs.readdirSync(path.join(__dirname, '../assets/js/scenario'))
         .filter(name => /^day.*\.js$/.test(name))
         .map(name => read(`assets/js/scenario/${name}`))
         .join('\n');

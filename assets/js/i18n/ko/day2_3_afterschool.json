@@ -603,7 +603,7 @@
     },
     "after2_group_return": {
         "name": "{name}",
-        "text": "*대화를 마치고 가방을 챙겨 교문 쪽으로 향한다.*"
+        "text": "*대화를 마치고 가방을 챙겨 교문 쪽으로 걸어간다.*"
     },
     "minsu_warn_gate": {},
     "minsu_warn_1": {
