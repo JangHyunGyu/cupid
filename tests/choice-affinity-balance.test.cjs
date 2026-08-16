@@ -582,7 +582,8 @@ test('forced sexual violation aftermath covers every day and resumes every free-
         Yuna: 'yuna',
         Dain: 'dain',
         Teacher: 'teacher',
-        Nurse: 'nurse'
+        Nurse: 'nurse',
+        Haeun: 'haeun'
     };
     function inferFreeTalkCharacter(sceneId, scene) {
         const identity = `${sceneId} ${scene.character || ''}`.toLowerCase();
@@ -591,6 +592,7 @@ test('forced sexual violation aftermath covers every day and resumes every free-
         if (identity.includes('seo') || identity.includes('seyoun')) return 'Seoyeon';
         if (identity.includes('yuna')) return 'Yuna';
         if (identity.includes('dain')) return 'Dain';
+        if (identity.includes('haeun')) return 'Haeun';
         return null;
     }
 
@@ -604,13 +606,13 @@ test('forced sexual violation aftermath covers every day and resumes every free-
             dayCharacters.add(character);
             routes.push([day, character, freeTalkId]);
         }
-        assert.deepEqual(
-            [...dayCharacters].sort(),
-            Object.keys(characterSlugs).sort(),
-            `day ${day} must expose forced-violation coverage for all five characters`
-        );
+        const expectedCharacters = Object.keys(characterSlugs)
+            .filter(character => character !== 'Haeun' || day === 3)
+            .sort();
+        assert.deepEqual([...dayCharacters].sort(), expectedCharacters,
+            `day ${day} forced-violation coverage drifted`);
     }
-    assert.equal(routes.length, 43, 'every authored main-story free talk must be covered');
+    assert.equal(routes.length, 44, 'every authored main-story free talk must be covered');
 
     const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy);
 

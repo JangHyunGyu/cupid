@@ -870,8 +870,9 @@ test('day-two student rivalry and day-three adult social groups use the highest-
         assert.equal(scene.groupParticipants.focus, expected.focus);
         assert.equal(scene.groupParticipants.tiePriority[0], expected.firstTie);
         assert.equal(scene.maxTurns, 2);
-        assert.equal(scene.next, 'minsu_warn_gate');
+        assert.equal(scene.next, 'after2_group_return');
     }
+    assert.equal(day2.after2_group_return.next, 'minsu_warn_gate');
 
     assert.equal(day3.after3_final.next, 'after3_group_route_check');
     assert.equal(day3.after3_group_route_check.routeBeforeRender, true);
