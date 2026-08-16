@@ -100,8 +100,8 @@ test('direct choice affinity distribution keeps subtle penalties meaningful but 
         }
     }
 
-    assert.equal(total, 223);
-    assert.deepEqual(counts, { positive: 59, negative: 58, neutral: 81, mixed: 25 });
+    assert.equal(total, 263);
+    assert.deepEqual(counts, { positive: 59, negative: 58, neutral: 121, mixed: 25 });
 });
 
 test('two-option screens retain their original response and add the trap as a third choice', () => {
@@ -132,10 +132,10 @@ test('two-option screens retain their original response and add the trap as a th
 
 test('negative-choice screens stay distributed across every story day', () => {
     const expected = {
-        1: { choiceScreens: 11, negativeScreens: 7 },
-        2: { choiceScreens: 13, negativeScreens: 8 },
-        3: { choiceScreens: 18, negativeScreens: 11 },
-        4: { choiceScreens: 27, negativeScreens: 21 },
+        1: { choiceScreens: 16, negativeScreens: 7 },
+        2: { choiceScreens: 18, negativeScreens: 8 },
+        3: { choiceScreens: 23, negativeScreens: 11 },
+        4: { choiceScreens: 32, negativeScreens: 21 },
         5: { choiceScreens: 28, negativeScreens: 11 }
     };
 
@@ -567,27 +567,58 @@ test('free-talk exits re-check live affinity before later romance or temptation 
     }
 });
 
-test('forced sexual violation aftermath offers a choice once and resumes each free-talk next scene', () => {
+test('forced sexual violation aftermath covers every day and resumes every free-talk next scene', () => {
     const gameEngineSource = fs.readFileSync(path.join(ROOT, 'assets', 'js', 'modules', 'GameEngine.js'), 'utf8');
     assert.match(gameEngineSource, /if \(scene\.inheritVisualContext !== true\) \{/);
 
-    const routes = [
-        ['Seoyeon', 'wall_seo_freetalk', 'forced_violation_after_seoyeon'],
-        ['Yuna', 'wall_yuna_freetalk', 'forced_violation_after_yuna'],
-        ['Dain', 'wall_dain_freetalk', 'forced_violation_after_dain'],
-        ['Teacher', 'hidden_homeroom_d4_freetalk', 'forced_violation_after_teacher'],
-        ['Nurse', 'hidden_nurse_d4_freetalk', 'forced_violation_after_nurse']
-    ];
+    const characterSlugs = {
+        Seoyeon: 'seoyeon',
+        Yuna: 'yuna',
+        Dain: 'dain',
+        Teacher: 'teacher',
+        Nurse: 'nurse'
+    };
+    function inferFreeTalkCharacter(sceneId, scene) {
+        const identity = `${sceneId} ${scene.character || ''}`.toLowerCase();
+        if (identity.includes('homeroom') || identity.includes('teacher')) return 'Teacher';
+        if (identity.includes('nurse')) return 'Nurse';
+        if (identity.includes('seo') || identity.includes('seyoun')) return 'Seoyeon';
+        if (identity.includes('yuna')) return 'Yuna';
+        if (identity.includes('dain')) return 'Dain';
+        return null;
+    }
+
+    const routes = [];
+    for (let day = 1; day <= 5; day++) {
+        const dayCharacters = new Set();
+        for (const [freeTalkId, freeTalk] of Object.entries(scenario[day])) {
+            if (freeTalk.type !== 'free_talk') continue;
+            const character = inferFreeTalkCharacter(freeTalkId, freeTalk);
+            assert.ok(character, `unable to infer free-talk character for ${freeTalkId}`);
+            dayCharacters.add(character);
+            routes.push([day, character, freeTalkId]);
+        }
+        assert.deepEqual(
+            [...dayCharacters].sort(),
+            Object.keys(characterSlugs).sort(),
+            `day ${day} must expose forced-violation coverage for all five characters`
+        );
+    }
+    assert.equal(routes.length, 43, 'every authored main-story free talk must be covered');
+
     const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy);
 
-    for (const [character, freeTalkId, aftermathId] of routes) {
-        const freeTalk = scenes[freeTalkId];
+    for (const [day, character, freeTalkId] of routes) {
+        const characterSlug = characterSlugs[character];
+        const aftermathId = `forced_violation_day${day}_after_${characterSlug}`;
+        const resumeId = `forced_violation_day${day}_resume`;
+        const freeTalk = scenario[day][freeTalkId];
         const flags = {
             forced_sexual_violation: {
                 character,
                 type: 'molestation',
                 sceneId: freeTalkId,
-                day: 4
+                day
             }
         };
         const renderer = createSceneRenderer({}, flags);
@@ -597,15 +628,15 @@ test('forced sexual violation aftermath offers a choice once and resumes each fr
         assert.equal(flags.forced_sexual_violation.handled, true);
         assert.equal(flags.forced_sexual_violation.returnScene, freeTalk.next);
 
-        const aftermath = scenes[aftermathId];
+        const aftermath = scenario[day][aftermathId];
         assert.equal(aftermath.runtimeEntrypoint, true);
         assert.equal(aftermath.inheritVisualContext, true);
         assert.equal(aftermath.choices.length, 2);
         assert.equal(aftermath.stats, undefined);
         for (const choice of aftermath.choices) {
-            const reaction = scenes[choice.next];
+            const reaction = scenario[day][choice.next];
             assert.equal(reaction.inheritVisualContext, true);
-            assert.equal(reaction.next, 'forced_violation_resume');
+            assert.equal(reaction.next, resumeId);
             assert.equal(reaction.stats, undefined);
         }
 
@@ -617,7 +648,7 @@ test('forced sexual violation aftermath offers a choice once and resumes each fr
             }
         }
 
-        assert.equal(renderer.resolveNextScene(scenes.forced_violation_resume), freeTalk.next);
+        assert.equal(renderer.resolveNextScene(scenario[day][resumeId]), freeTalk.next);
         renderer.currentSceneId = freeTalkId;
         assert.equal(renderer.resolveNextScene(freeTalk), freeTalk.next, `${freeTalkId} aftermath must run only once`);
     }
@@ -633,6 +664,21 @@ test('forced sexual violation aftermath offers a choice once and resumes each fr
     const staleRenderer = createSceneRenderer({}, staleFlags);
     staleRenderer.currentSceneId = 'wall_seo_freetalk';
     assert.equal(staleRenderer.resolveNextScene(scenes.wall_seo_freetalk), scenes.wall_seo_freetalk.next);
+
+    const invalidDayFlags = {
+        forced_sexual_violation: {
+            character: 'Seoyeon',
+            type: 'rape',
+            sceneId: 'lunch_seo_freetalk',
+            day: 0
+        }
+    };
+    const invalidDayRenderer = createSceneRenderer({}, invalidDayFlags);
+    invalidDayRenderer.currentSceneId = 'lunch_seo_freetalk';
+    assert.equal(
+        invalidDayRenderer.resolveNextScene(scenes.lunch_seo_freetalk),
+        scenes.lunch_seo_freetalk.next
+    );
 });
 
 test('day-five mood uses the highest live affinity instead of a pseudo-character key', () => {

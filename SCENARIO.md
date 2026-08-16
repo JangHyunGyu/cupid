@@ -3264,6 +3264,125 @@
 
 ---
 
+### `forced_violation_day1_after_seoyeon`
+- 선택지:
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day1_seoyeon_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day1_seoyeon_excuse`
+
+**서연**: *대화가 끝난 뒤에도 서연은 한동안 말이 없다. 다시 입을 열었을 때는 목소리가 차갑게 가라앉아 있다.* 방금 네가 한 짓, 없던 일처럼 넘길 생각 하지 마. 당분간 나한테 다가오지도, 연락하지도 마.
+
+---
+
+### `forced_violation_day1_seoyeon_apologize`
+- 다음: `forced_violation_day1_resume`
+
+**서연**: *서연은 사과를 듣고도 표정을 풀지 않는다.* 사과는 들었어. 그렇다고 없던 일이 되진 않아. 말한 대로 당분간 연락하지 마.
+
+---
+
+### `forced_violation_day1_seoyeon_excuse`
+- 다음: `forced_violation_day1_resume`
+
+**서연**: *서연이 말을 끊는다.* 오해? 내가 싫다고 한 순간부터 오해일 수 없어. 더 말하지 마.
+
+---
+
+### `forced_violation_day1_after_yuna`
+- 선택지:
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day1_yuna_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day1_yuna_excuse`
+
+**유나**: *대화가 끊긴 뒤, 유나는 짧게 숨을 고른다. 굳은 얼굴에는 경계만 남았다.* 내가 싫다는 걸 알면서 무시했잖아. 지금은 네 얼굴도 보기 싫어. 더는 연락하지 마.
+
+---
+
+### `forced_violation_day1_yuna_apologize`
+- 다음: `forced_violation_day1_resume`
+
+**유나**: *유나는 한참 뒤에야 짧게 대답한다.* 사과했다고 없어지진 않아. 이제 그만해.
+
+---
+
+### `forced_violation_day1_yuna_excuse`
+- 다음: `forced_violation_day1_resume`
+
+**유나**: *유나는 해명을 끝까지 듣지 않는다.* 싫다고 했어. 설명할 일 아니야.
+
+---
+
+### `forced_violation_day1_after_dain`
+- 선택지:
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day1_dain_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day1_dain_excuse`
+
+**다인**: *다인은 평소처럼 웃어넘기지 않는다. 한참 뒤에야 짧고 굳은 목소리가 돌아온다.* 장난 아니야. 내가 싫다는데 억지로 한 거, 절대 그냥 안 넘어가.
+
+---
+
+### `forced_violation_day1_dain_apologize`
+- 다음: `forced_violation_day1_resume`
+
+**다인**: *다인은 한참 뒤에야 짧게 답한다.* 그래. 그럼 오늘은 여기까지야. 다음 얘기는 내가 정할게.
+
+---
+
+### `forced_violation_day1_dain_excuse`
+- 다음: `forced_violation_day1_resume`
+
+**다인**: *다인의 목소리가 거칠어진다.* 아니. 핑계 대지 마. 싫다고 했는데도 한 건 너야.
+
+---
+
+### `forced_violation_day1_after_teacher`
+- 선택지:
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day1_teacher_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day1_teacher_excuse`
+
+**담임선생님**: *대화가 끝난 뒤, 담임은 더 단호한 목소리로 선을 긋는다.* 방금 행동은 명백히 선을 넘었어. 더는 가까이 오지 마. 이 일은 필요한 절차대로 처리할 거야.
+
+---
+
+### `forced_violation_day1_teacher_apologize`
+- 다음: `forced_violation_day1_resume`
+
+**담임선생님**: *담임은 짧게 숨을 고르고 말을 잇는다.* 사과는 들었어. 그래도 절차는 그대로 진행할 거야. 더 말하지 마.
+
+---
+
+### `forced_violation_day1_teacher_excuse`
+- 다음: `forced_violation_day1_resume`
+
+**담임선생님**: *담임이 해명을 끊는다.* 지금은 해명부터 할 상황이 아니야. 더 말하지 말고 거리를 둬.
+
+---
+
+### `forced_violation_day1_after_nurse`
+- 선택지:
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day1_nurse_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day1_nurse_excuse`
+
+**보건선생님**: *대화가 끊기자 보건선생님의 목소리에서 평소의 장난기가 사라진다.* 지금부터는 거리를 지켜. 방금 일은 기록하고 필요한 사람에게 알릴 거야.
+
+---
+
+### `forced_violation_day1_nurse_apologize`
+- 다음: `forced_violation_day1_resume`
+
+**보건선생님**: *보건선생님은 잠시 말이 없다가 단호하게 답한다.* 사과는 들을게. 그래도 기록과 연락은 그대로 할 거야. 오늘 대화는 여기까지.
+
+---
+
+### `forced_violation_day1_nurse_excuse`
+- 다음: `forced_violation_day1_resume`
+
+**보건선생님**: *보건선생님의 목소리가 더 낮아진다.* 오해라고 부르면 달라질 것 같아? 싫다는 의사를 무시한 건 사실이야.
+
+---
+
+### `forced_violation_day1_resume`
+
+---
+
 # 2일차
 
 ## 2일차 — 아침 `day2_1_morning`
@@ -7766,6 +7885,125 @@
 
 - 캐릭터: `없음`
 **{name}**: *밥이랑 계란, 김을 넣고 뚜껑을 닫는다. 반찬은 그게 전부다.*
+
+---
+
+### `forced_violation_day2_after_seoyeon`
+- 선택지:
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day2_seoyeon_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day2_seoyeon_excuse`
+
+**서연**: *대화가 끝난 뒤에도 서연은 한동안 말이 없다. 다시 입을 열었을 때는 목소리가 차갑게 가라앉아 있다.* 방금 네가 한 짓, 없던 일처럼 넘길 생각 하지 마. 당분간 나한테 다가오지도, 연락하지도 마.
+
+---
+
+### `forced_violation_day2_seoyeon_apologize`
+- 다음: `forced_violation_day2_resume`
+
+**서연**: *서연은 사과를 듣고도 표정을 풀지 않는다.* 사과는 들었어. 그렇다고 없던 일이 되진 않아. 말한 대로 당분간 연락하지 마.
+
+---
+
+### `forced_violation_day2_seoyeon_excuse`
+- 다음: `forced_violation_day2_resume`
+
+**서연**: *서연이 말을 끊는다.* 오해? 내가 싫다고 한 순간부터 오해일 수 없어. 더 말하지 마.
+
+---
+
+### `forced_violation_day2_after_yuna`
+- 선택지:
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day2_yuna_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day2_yuna_excuse`
+
+**유나**: *대화가 끊긴 뒤, 유나는 짧게 숨을 고른다. 굳은 얼굴에는 경계만 남았다.* 내가 싫다는 걸 알면서 무시했잖아. 지금은 네 얼굴도 보기 싫어. 더는 연락하지 마.
+
+---
+
+### `forced_violation_day2_yuna_apologize`
+- 다음: `forced_violation_day2_resume`
+
+**유나**: *유나는 한참 뒤에야 짧게 대답한다.* 사과했다고 없어지진 않아. 이제 그만해.
+
+---
+
+### `forced_violation_day2_yuna_excuse`
+- 다음: `forced_violation_day2_resume`
+
+**유나**: *유나는 해명을 끝까지 듣지 않는다.* 싫다고 했어. 설명할 일 아니야.
+
+---
+
+### `forced_violation_day2_after_dain`
+- 선택지:
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day2_dain_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day2_dain_excuse`
+
+**다인**: *다인은 평소처럼 웃어넘기지 않는다. 한참 뒤에야 짧고 굳은 목소리가 돌아온다.* 장난 아니야. 내가 싫다는데 억지로 한 거, 절대 그냥 안 넘어가.
+
+---
+
+### `forced_violation_day2_dain_apologize`
+- 다음: `forced_violation_day2_resume`
+
+**다인**: *다인은 한참 뒤에야 짧게 답한다.* 그래. 그럼 오늘은 여기까지야. 다음 얘기는 내가 정할게.
+
+---
+
+### `forced_violation_day2_dain_excuse`
+- 다음: `forced_violation_day2_resume`
+
+**다인**: *다인의 목소리가 거칠어진다.* 아니. 핑계 대지 마. 싫다고 했는데도 한 건 너야.
+
+---
+
+### `forced_violation_day2_after_teacher`
+- 선택지:
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day2_teacher_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day2_teacher_excuse`
+
+**담임선생님**: *대화가 끝난 뒤, 담임은 더 단호한 목소리로 선을 긋는다.* 방금 행동은 명백히 선을 넘었어. 더는 가까이 오지 마. 이 일은 필요한 절차대로 처리할 거야.
+
+---
+
+### `forced_violation_day2_teacher_apologize`
+- 다음: `forced_violation_day2_resume`
+
+**담임선생님**: *담임은 짧게 숨을 고르고 말을 잇는다.* 사과는 들었어. 그래도 절차는 그대로 진행할 거야. 더 말하지 마.
+
+---
+
+### `forced_violation_day2_teacher_excuse`
+- 다음: `forced_violation_day2_resume`
+
+**담임선생님**: *담임이 해명을 끊는다.* 지금은 해명부터 할 상황이 아니야. 더 말하지 말고 거리를 둬.
+
+---
+
+### `forced_violation_day2_after_nurse`
+- 선택지:
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day2_nurse_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day2_nurse_excuse`
+
+**보건선생님**: *대화가 끊기자 보건선생님의 목소리에서 평소의 장난기가 사라진다.* 지금부터는 거리를 지켜. 방금 일은 기록하고 필요한 사람에게 알릴 거야.
+
+---
+
+### `forced_violation_day2_nurse_apologize`
+- 다음: `forced_violation_day2_resume`
+
+**보건선생님**: *보건선생님은 잠시 말이 없다가 단호하게 답한다.* 사과는 들을게. 그래도 기록과 연락은 그대로 할 거야. 오늘 대화는 여기까지.
+
+---
+
+### `forced_violation_day2_nurse_excuse`
+- 다음: `forced_violation_day2_resume`
+
+**보건선생님**: *보건선생님의 목소리가 더 낮아진다.* 오해라고 부르면 달라질 것 같아? 싫다는 의사를 무시한 건 사실이야.
+
+---
+
+### `forced_violation_day2_resume`
 
 ---
 
@@ -12918,6 +13156,125 @@
 
 - 캐릭터: `없음`
 **{name}**: *방 불을 끄고 핸드폰을 엎어 둔다.*
+
+---
+
+### `forced_violation_day3_after_seoyeon`
+- 선택지:
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day3_seoyeon_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day3_seoyeon_excuse`
+
+**서연**: *대화가 끝난 뒤에도 서연은 한동안 말이 없다. 다시 입을 열었을 때는 목소리가 차갑게 가라앉아 있다.* 방금 네가 한 짓, 없던 일처럼 넘길 생각 하지 마. 당분간 나한테 다가오지도, 연락하지도 마.
+
+---
+
+### `forced_violation_day3_seoyeon_apologize`
+- 다음: `forced_violation_day3_resume`
+
+**서연**: *서연은 사과를 듣고도 표정을 풀지 않는다.* 사과는 들었어. 그렇다고 없던 일이 되진 않아. 말한 대로 당분간 연락하지 마.
+
+---
+
+### `forced_violation_day3_seoyeon_excuse`
+- 다음: `forced_violation_day3_resume`
+
+**서연**: *서연이 말을 끊는다.* 오해? 내가 싫다고 한 순간부터 오해일 수 없어. 더 말하지 마.
+
+---
+
+### `forced_violation_day3_after_yuna`
+- 선택지:
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day3_yuna_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day3_yuna_excuse`
+
+**유나**: *대화가 끊긴 뒤, 유나는 짧게 숨을 고른다. 굳은 얼굴에는 경계만 남았다.* 내가 싫다는 걸 알면서 무시했잖아. 지금은 네 얼굴도 보기 싫어. 더는 연락하지 마.
+
+---
+
+### `forced_violation_day3_yuna_apologize`
+- 다음: `forced_violation_day3_resume`
+
+**유나**: *유나는 한참 뒤에야 짧게 대답한다.* 사과했다고 없어지진 않아. 이제 그만해.
+
+---
+
+### `forced_violation_day3_yuna_excuse`
+- 다음: `forced_violation_day3_resume`
+
+**유나**: *유나는 해명을 끝까지 듣지 않는다.* 싫다고 했어. 설명할 일 아니야.
+
+---
+
+### `forced_violation_day3_after_dain`
+- 선택지:
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day3_dain_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day3_dain_excuse`
+
+**다인**: *다인은 평소처럼 웃어넘기지 않는다. 한참 뒤에야 짧고 굳은 목소리가 돌아온다.* 장난 아니야. 내가 싫다는데 억지로 한 거, 절대 그냥 안 넘어가.
+
+---
+
+### `forced_violation_day3_dain_apologize`
+- 다음: `forced_violation_day3_resume`
+
+**다인**: *다인은 한참 뒤에야 짧게 답한다.* 그래. 그럼 오늘은 여기까지야. 다음 얘기는 내가 정할게.
+
+---
+
+### `forced_violation_day3_dain_excuse`
+- 다음: `forced_violation_day3_resume`
+
+**다인**: *다인의 목소리가 거칠어진다.* 아니. 핑계 대지 마. 싫다고 했는데도 한 건 너야.
+
+---
+
+### `forced_violation_day3_after_teacher`
+- 선택지:
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day3_teacher_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day3_teacher_excuse`
+
+**담임선생님**: *대화가 끝난 뒤, 담임은 더 단호한 목소리로 선을 긋는다.* 방금 행동은 명백히 선을 넘었어. 더는 가까이 오지 마. 이 일은 필요한 절차대로 처리할 거야.
+
+---
+
+### `forced_violation_day3_teacher_apologize`
+- 다음: `forced_violation_day3_resume`
+
+**담임선생님**: *담임은 짧게 숨을 고르고 말을 잇는다.* 사과는 들었어. 그래도 절차는 그대로 진행할 거야. 더 말하지 마.
+
+---
+
+### `forced_violation_day3_teacher_excuse`
+- 다음: `forced_violation_day3_resume`
+
+**담임선생님**: *담임이 해명을 끊는다.* 지금은 해명부터 할 상황이 아니야. 더 말하지 말고 거리를 둬.
+
+---
+
+### `forced_violation_day3_after_nurse`
+- 선택지:
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day3_nurse_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day3_nurse_excuse`
+
+**보건선생님**: *대화가 끊기자 보건선생님의 목소리에서 평소의 장난기가 사라진다.* 지금부터는 거리를 지켜. 방금 일은 기록하고 필요한 사람에게 알릴 거야.
+
+---
+
+### `forced_violation_day3_nurse_apologize`
+- 다음: `forced_violation_day3_resume`
+
+**보건선생님**: *보건선생님은 잠시 말이 없다가 단호하게 답한다.* 사과는 들을게. 그래도 기록과 연락은 그대로 할 거야. 오늘 대화는 여기까지.
+
+---
+
+### `forced_violation_day3_nurse_excuse`
+- 다음: `forced_violation_day3_resume`
+
+**보건선생님**: *보건선생님의 목소리가 더 낮아진다.* 오해라고 부르면 달라질 것 같아? 싫다는 의사를 무시한 건 사실이야.
+
+---
+
+### `forced_violation_day3_resume`
 
 ---
 
@@ -18466,6 +18823,125 @@
 
 - 캐릭터: `없음`
 **{name}**: *방 안 시계가 자정 쪽으로 넘어간다. 휴대폰 화면도 알람 한 줄만 남기고 어두워진다.*
+
+---
+
+### `forced_violation_day4_after_seoyeon`
+- 선택지:
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day4_seoyeon_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day4_seoyeon_excuse`
+
+**서연**: *대화가 끝난 뒤에도 서연은 한동안 말이 없다. 다시 입을 열었을 때는 목소리가 차갑게 가라앉아 있다.* 방금 네가 한 짓, 없던 일처럼 넘길 생각 하지 마. 당분간 나한테 다가오지도, 연락하지도 마.
+
+---
+
+### `forced_violation_day4_seoyeon_apologize`
+- 다음: `forced_violation_day4_resume`
+
+**서연**: *서연은 사과를 듣고도 표정을 풀지 않는다.* 사과는 들었어. 그렇다고 없던 일이 되진 않아. 말한 대로 당분간 연락하지 마.
+
+---
+
+### `forced_violation_day4_seoyeon_excuse`
+- 다음: `forced_violation_day4_resume`
+
+**서연**: *서연이 말을 끊는다.* 오해? 내가 싫다고 한 순간부터 오해일 수 없어. 더 말하지 마.
+
+---
+
+### `forced_violation_day4_after_yuna`
+- 선택지:
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day4_yuna_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day4_yuna_excuse`
+
+**유나**: *대화가 끊긴 뒤, 유나는 짧게 숨을 고른다. 굳은 얼굴에는 경계만 남았다.* 내가 싫다는 걸 알면서 무시했잖아. 지금은 네 얼굴도 보기 싫어. 더는 연락하지 마.
+
+---
+
+### `forced_violation_day4_yuna_apologize`
+- 다음: `forced_violation_day4_resume`
+
+**유나**: *유나는 한참 뒤에야 짧게 대답한다.* 사과했다고 없어지진 않아. 이제 그만해.
+
+---
+
+### `forced_violation_day4_yuna_excuse`
+- 다음: `forced_violation_day4_resume`
+
+**유나**: *유나는 해명을 끝까지 듣지 않는다.* 싫다고 했어. 설명할 일 아니야.
+
+---
+
+### `forced_violation_day4_after_dain`
+- 선택지:
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day4_dain_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day4_dain_excuse`
+
+**다인**: *다인은 평소처럼 웃어넘기지 않는다. 한참 뒤에야 짧고 굳은 목소리가 돌아온다.* 장난 아니야. 내가 싫다는데 억지로 한 거, 절대 그냥 안 넘어가.
+
+---
+
+### `forced_violation_day4_dain_apologize`
+- 다음: `forced_violation_day4_resume`
+
+**다인**: *다인은 한참 뒤에야 짧게 답한다.* 그래. 그럼 오늘은 여기까지야. 다음 얘기는 내가 정할게.
+
+---
+
+### `forced_violation_day4_dain_excuse`
+- 다음: `forced_violation_day4_resume`
+
+**다인**: *다인의 목소리가 거칠어진다.* 아니. 핑계 대지 마. 싫다고 했는데도 한 건 너야.
+
+---
+
+### `forced_violation_day4_after_teacher`
+- 선택지:
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day4_teacher_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day4_teacher_excuse`
+
+**담임선생님**: *대화가 끝난 뒤, 담임은 더 단호한 목소리로 선을 긋는다.* 방금 행동은 명백히 선을 넘었어. 더는 가까이 오지 마. 이 일은 필요한 절차대로 처리할 거야.
+
+---
+
+### `forced_violation_day4_teacher_apologize`
+- 다음: `forced_violation_day4_resume`
+
+**담임선생님**: *담임은 짧게 숨을 고르고 말을 잇는다.* 사과는 들었어. 그래도 절차는 그대로 진행할 거야. 더 말하지 마.
+
+---
+
+### `forced_violation_day4_teacher_excuse`
+- 다음: `forced_violation_day4_resume`
+
+**담임선생님**: *담임이 해명을 끊는다.* 지금은 해명부터 할 상황이 아니야. 더 말하지 말고 거리를 둬.
+
+---
+
+### `forced_violation_day4_after_nurse`
+- 선택지:
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day4_nurse_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day4_nurse_excuse`
+
+**보건선생님**: *대화가 끊기자 보건선생님의 목소리에서 평소의 장난기가 사라진다.* 지금부터는 거리를 지켜. 방금 일은 기록하고 필요한 사람에게 알릴 거야.
+
+---
+
+### `forced_violation_day4_nurse_apologize`
+- 다음: `forced_violation_day4_resume`
+
+**보건선생님**: *보건선생님은 잠시 말이 없다가 단호하게 답한다.* 사과는 들을게. 그래도 기록과 연락은 그대로 할 거야. 오늘 대화는 여기까지.
+
+---
+
+### `forced_violation_day4_nurse_excuse`
+- 다음: `forced_violation_day4_resume`
+
+**보건선생님**: *보건선생님의 목소리가 더 낮아진다.* 오해라고 부르면 달라질 것 같아? 싫다는 의사를 무시한 건 사실이야.
+
+---
+
+### `forced_violation_day4_resume`
 
 ---
 
@@ -26029,124 +26505,122 @@
 
 ---
 
-### `forced_violation_after_seoyeon`
+### `forced_violation_day5_after_seoyeon`
 - 선택지:
-  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_seoyeon_apologize`
-  2. "오해였다고 해명하려 든다." → `forced_violation_seoyeon_excuse`
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day5_seoyeon_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day5_seoyeon_excuse`
 
 **서연**: *대화가 끝난 뒤에도 서연은 한동안 말이 없다. 다시 입을 열었을 때는 목소리가 차갑게 가라앉아 있다.* 방금 네가 한 짓, 없던 일처럼 넘길 생각 하지 마. 당분간 나한테 다가오지도, 연락하지도 마.
 
 ---
 
-### `forced_violation_seoyeon_apologize`
-- 다음: `forced_violation_resume`
+### `forced_violation_day5_seoyeon_apologize`
+- 다음: `forced_violation_day5_resume`
 
 **서연**: *서연은 사과를 듣고도 표정을 풀지 않는다.* 사과는 들었어. 그렇다고 없던 일이 되진 않아. 말한 대로 당분간 연락하지 마.
 
 ---
 
-### `forced_violation_seoyeon_excuse`
-- 다음: `forced_violation_resume`
+### `forced_violation_day5_seoyeon_excuse`
+- 다음: `forced_violation_day5_resume`
 
 **서연**: *서연이 말을 끊는다.* 오해? 내가 싫다고 한 순간부터 오해일 수 없어. 더 말하지 마.
 
 ---
 
-### `forced_violation_after_yuna`
+### `forced_violation_day5_after_yuna`
 - 선택지:
-  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_yuna_apologize`
-  2. "오해였다고 해명하려 든다." → `forced_violation_yuna_excuse`
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day5_yuna_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day5_yuna_excuse`
 
 **유나**: *대화가 끊긴 뒤, 유나는 짧게 숨을 고른다. 굳은 얼굴에는 경계만 남았다.* 내가 싫다는 걸 알면서 무시했잖아. 지금은 네 얼굴도 보기 싫어. 더는 연락하지 마.
 
 ---
 
-### `forced_violation_yuna_apologize`
-- 다음: `forced_violation_resume`
+### `forced_violation_day5_yuna_apologize`
+- 다음: `forced_violation_day5_resume`
 
 **유나**: *유나는 한참 뒤에야 짧게 대답한다.* 사과했다고 없어지진 않아. 이제 그만해.
 
 ---
 
-### `forced_violation_yuna_excuse`
-- 다음: `forced_violation_resume`
+### `forced_violation_day5_yuna_excuse`
+- 다음: `forced_violation_day5_resume`
 
 **유나**: *유나는 해명을 끝까지 듣지 않는다.* 싫다고 했어. 설명할 일 아니야.
 
 ---
 
-### `forced_violation_after_dain`
+### `forced_violation_day5_after_dain`
 - 선택지:
-  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_dain_apologize`
-  2. "오해였다고 해명하려 든다." → `forced_violation_dain_excuse`
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day5_dain_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day5_dain_excuse`
 
 **다인**: *다인은 평소처럼 웃어넘기지 않는다. 한참 뒤에야 짧고 굳은 목소리가 돌아온다.* 장난 아니야. 내가 싫다는데 억지로 한 거, 절대 그냥 안 넘어가.
 
 ---
 
-### `forced_violation_dain_apologize`
-- 다음: `forced_violation_resume`
+### `forced_violation_day5_dain_apologize`
+- 다음: `forced_violation_day5_resume`
 
 **다인**: *다인은 한참 뒤에야 짧게 답한다.* 그래. 그럼 오늘은 여기까지야. 다음 얘기는 내가 정할게.
 
 ---
 
-### `forced_violation_dain_excuse`
-- 다음: `forced_violation_resume`
+### `forced_violation_day5_dain_excuse`
+- 다음: `forced_violation_day5_resume`
 
 **다인**: *다인의 목소리가 거칠어진다.* 아니. 핑계 대지 마. 싫다고 했는데도 한 건 너야.
 
 ---
 
-### `forced_violation_after_teacher`
+### `forced_violation_day5_after_teacher`
 - 선택지:
-  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_teacher_apologize`
-  2. "오해였다고 해명하려 든다." → `forced_violation_teacher_excuse`
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day5_teacher_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day5_teacher_excuse`
 
 **담임선생님**: *대화가 끝난 뒤, 담임은 더 단호한 목소리로 선을 긋는다.* 방금 행동은 명백히 선을 넘었어. 더는 가까이 오지 마. 이 일은 필요한 절차대로 처리할 거야.
 
 ---
 
-### `forced_violation_teacher_apologize`
-- 다음: `forced_violation_resume`
+### `forced_violation_day5_teacher_apologize`
+- 다음: `forced_violation_day5_resume`
 
 **담임선생님**: *담임은 짧게 숨을 고르고 말을 잇는다.* 사과는 들었어. 그래도 절차는 그대로 진행할 거야. 더 말하지 마.
 
 ---
 
-### `forced_violation_teacher_excuse`
-- 다음: `forced_violation_resume`
+### `forced_violation_day5_teacher_excuse`
+- 다음: `forced_violation_day5_resume`
 
 **담임선생님**: *담임이 해명을 끊는다.* 지금은 해명부터 할 상황이 아니야. 더 말하지 말고 거리를 둬.
 
 ---
 
-### `forced_violation_after_nurse`
+### `forced_violation_day5_after_nurse`
 - 선택지:
-  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_nurse_apologize`
-  2. "오해였다고 해명하려 든다." → `forced_violation_nurse_excuse`
+  1. "변명하지 않고 사과한 뒤 대화를 멈춘다." → `forced_violation_day5_nurse_apologize`
+  2. "오해였다고 해명하려 든다." → `forced_violation_day5_nurse_excuse`
 
 **보건선생님**: *대화가 끊기자 보건선생님의 목소리에서 평소의 장난기가 사라진다.* 지금부터는 거리를 지켜. 방금 일은 기록하고 필요한 사람에게 알릴 거야.
 
 ---
 
-### `forced_violation_nurse_apologize`
-- 다음: `forced_violation_resume`
+### `forced_violation_day5_nurse_apologize`
+- 다음: `forced_violation_day5_resume`
 
 **보건선생님**: *보건선생님은 잠시 말이 없다가 단호하게 답한다.* 사과는 들을게. 그래도 기록과 연락은 그대로 할 거야. 오늘 대화는 여기까지.
 
 ---
 
-### `forced_violation_nurse_excuse`
-- 다음: `forced_violation_resume`
+### `forced_violation_day5_nurse_excuse`
+- 다음: `forced_violation_day5_resume`
 
 **보건선생님**: *보건선생님의 목소리가 더 낮아진다.* 오해라고 부르면 달라질 것 같아? 싫다는 의사를 무시한 건 사실이야.
 
 ---
 
-### `forced_violation_resume`
-
-**시스템**: ‹빈›
+### `forced_violation_day5_resume`
 
 ---
 

@@ -82,12 +82,12 @@ const BACKGROUND_LAYOUT_CLASS_PREFIX = 'bg-layout-';
 const BACKGROUND_LAYOUT_CLASSES = {
     sojeong_flashback: 'bg-layout-sojeong-flashback-contain'
 };
-const FORCED_SEXUAL_VIOLATION_ROUTES = Object.freeze({
-    Seoyeon: 'forced_violation_after_seoyeon',
-    Yuna: 'forced_violation_after_yuna',
-    Dain: 'forced_violation_after_dain',
-    Teacher: 'forced_violation_after_teacher',
-    Nurse: 'forced_violation_after_nurse'
+const FORCED_SEXUAL_VIOLATION_CHARACTER_IDS = Object.freeze({
+    Seoyeon: 'seoyeon',
+    Yuna: 'yuna',
+    Dain: 'dain',
+    Teacher: 'teacher',
+    Nurse: 'nurse'
 });
 
 class SceneRenderer {
@@ -243,7 +243,14 @@ class SceneRenderer {
             && typeof forcedViolation === 'object'
             && forcedViolation.handled !== true
             && forcedViolation.sceneId === this.currentSceneId) {
-            const aftermathRoute = FORCED_SEXUAL_VIOLATION_ROUTES[forcedViolation.character];
+            const violationDay = Number(forcedViolation.day ?? this.stateManager.currentDay);
+            const characterId = FORCED_SEXUAL_VIOLATION_CHARACTER_IDS[forcedViolation.character];
+            const aftermathRoute = Number.isInteger(violationDay)
+                && violationDay >= 1
+                && violationDay <= 5
+                && characterId
+                ? `forced_violation_day${violationDay}_after_${characterId}`
+                : null;
             if (aftermathRoute && scene.next) {
                 this.stateManager.setFlag('forced_sexual_violation', {
                     ...forcedViolation,

@@ -2416,87 +2416,87 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "maxTurns": 5,
         "next": "day5_credits"
     },
-    "forced_violation_after_seoyeon": {
+    "forced_violation_day5_after_seoyeon": {
         "runtimeEntrypoint": true,
         "inheritVisualContext": true,
         "choices": [
-            { "next": "forced_violation_seoyeon_apologize" },
-            { "next": "forced_violation_seoyeon_excuse" }
+            { "next": "forced_violation_day5_seoyeon_apologize" },
+            { "next": "forced_violation_day5_seoyeon_excuse" }
         ]
     },
-    "forced_violation_seoyeon_apologize": {
+    "forced_violation_day5_seoyeon_apologize": {
         "inheritVisualContext": true,
-        "next": "forced_violation_resume"
+        "next": "forced_violation_day5_resume"
     },
-    "forced_violation_seoyeon_excuse": {
+    "forced_violation_day5_seoyeon_excuse": {
         "inheritVisualContext": true,
-        "next": "forced_violation_resume"
+        "next": "forced_violation_day5_resume"
     },
-    "forced_violation_after_yuna": {
+    "forced_violation_day5_after_yuna": {
         "runtimeEntrypoint": true,
         "inheritVisualContext": true,
         "choices": [
-            { "next": "forced_violation_yuna_apologize" },
-            { "next": "forced_violation_yuna_excuse" }
+            { "next": "forced_violation_day5_yuna_apologize" },
+            { "next": "forced_violation_day5_yuna_excuse" }
         ]
     },
-    "forced_violation_yuna_apologize": {
+    "forced_violation_day5_yuna_apologize": {
         "inheritVisualContext": true,
-        "next": "forced_violation_resume"
+        "next": "forced_violation_day5_resume"
     },
-    "forced_violation_yuna_excuse": {
+    "forced_violation_day5_yuna_excuse": {
         "inheritVisualContext": true,
-        "next": "forced_violation_resume"
+        "next": "forced_violation_day5_resume"
     },
-    "forced_violation_after_dain": {
+    "forced_violation_day5_after_dain": {
         "runtimeEntrypoint": true,
         "inheritVisualContext": true,
         "choices": [
-            { "next": "forced_violation_dain_apologize" },
-            { "next": "forced_violation_dain_excuse" }
+            { "next": "forced_violation_day5_dain_apologize" },
+            { "next": "forced_violation_day5_dain_excuse" }
         ]
     },
-    "forced_violation_dain_apologize": {
+    "forced_violation_day5_dain_apologize": {
         "inheritVisualContext": true,
-        "next": "forced_violation_resume"
+        "next": "forced_violation_day5_resume"
     },
-    "forced_violation_dain_excuse": {
+    "forced_violation_day5_dain_excuse": {
         "inheritVisualContext": true,
-        "next": "forced_violation_resume"
+        "next": "forced_violation_day5_resume"
     },
-    "forced_violation_after_teacher": {
+    "forced_violation_day5_after_teacher": {
         "runtimeEntrypoint": true,
         "inheritVisualContext": true,
         "choices": [
-            { "next": "forced_violation_teacher_apologize" },
-            { "next": "forced_violation_teacher_excuse" }
+            { "next": "forced_violation_day5_teacher_apologize" },
+            { "next": "forced_violation_day5_teacher_excuse" }
         ]
     },
-    "forced_violation_teacher_apologize": {
+    "forced_violation_day5_teacher_apologize": {
         "inheritVisualContext": true,
-        "next": "forced_violation_resume"
+        "next": "forced_violation_day5_resume"
     },
-    "forced_violation_teacher_excuse": {
+    "forced_violation_day5_teacher_excuse": {
         "inheritVisualContext": true,
-        "next": "forced_violation_resume"
+        "next": "forced_violation_day5_resume"
     },
-    "forced_violation_after_nurse": {
+    "forced_violation_day5_after_nurse": {
         "runtimeEntrypoint": true,
         "inheritVisualContext": true,
         "choices": [
-            { "next": "forced_violation_nurse_apologize" },
-            { "next": "forced_violation_nurse_excuse" }
+            { "next": "forced_violation_day5_nurse_apologize" },
+            { "next": "forced_violation_day5_nurse_excuse" }
         ]
     },
-    "forced_violation_nurse_apologize": {
+    "forced_violation_day5_nurse_apologize": {
         "inheritVisualContext": true,
-        "next": "forced_violation_resume"
+        "next": "forced_violation_day5_resume"
     },
-    "forced_violation_nurse_excuse": {
+    "forced_violation_day5_nurse_excuse": {
         "inheritVisualContext": true,
-        "next": "forced_violation_resume"
+        "next": "forced_violation_day5_resume"
     },
-    "forced_violation_resume": {
+    "forced_violation_day5_resume": {
         "routeBeforeRender": true,
         "forcedSexualViolationResume": true
     },

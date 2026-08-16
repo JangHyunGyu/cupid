@@ -273,5 +273,85 @@
     "night2_end_4_c": {
         "name": "{name}",
         "text": "*Ich fülle Reis, Ei und Seetang ein und schließe den Deckel. Mehr Beilage ist nicht drin.*"
+    },
+    "forced_violation_day2_after_seoyeon": {
+        "name": "Seoyeon",
+        "text": "*Auch nachdem das Gespräch endet, schweigt Seoyeon lange. Als sie wieder spricht, ist ihre Stimme kalt geworden.* Glaub nicht, du könntest so tun, als wäre das gerade nie passiert. Komm mir vorerst nicht nahe und melde dich nicht bei mir.",
+        "choices": [
+            "Sich ohne Ausreden entschuldigen und das Gespräch beenden.",
+            "Versuchen, es als Missverständnis zu erklären."
+        ]
+    },
+    "forced_violation_day2_seoyeon_apologize": {
+        "name": "Seoyeon",
+        "text": "*Seoyeons Gesicht bleibt trotz der Entschuldigung hart.* Ich habe dich gehört. Das macht nicht ungeschehen, was passiert ist. Wie gesagt: Melde dich vorerst nicht bei mir."
+    },
+    "forced_violation_day2_seoyeon_excuse": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon unterbricht die Erklärung.* Ein Missverständnis? In dem Moment, in dem ich Nein gesagt habe, war es keins mehr. Sag nichts weiter."
+    },
+    "forced_violation_day2_after_yuna": {
+        "name": "Yuna",
+        "text": "*Als das Gespräch abbricht, holt Yuna kurz Luft. In ihrem angespannten Gesicht ist nur noch Misstrauen.* Du wusstest, dass ich das nicht wollte, und hast es ignoriert. Ich will dein Gesicht gerade nicht einmal sehen. Melde dich nicht mehr bei mir.",
+        "choices": [
+            "Sich ohne Ausreden entschuldigen und das Gespräch beenden.",
+            "Versuchen, es als Missverständnis zu erklären."
+        ]
+    },
+    "forced_violation_day2_yuna_apologize": {
+        "name": "Yuna",
+        "text": "*Yuna antwortet erst nach langem Schweigen.* Eine Entschuldigung macht es nicht ungeschehen. Hör jetzt auf."
+    },
+    "forced_violation_day2_yuna_excuse": {
+        "name": "Yuna",
+        "text": "*Yuna hört sich die Erklärung nicht bis zum Ende an.* Ich habe Nein gesagt. Da gibt es nichts zu erklären."
+    },
+    "forced_violation_day2_after_dain": {
+        "name": "Dain",
+        "text": "*Dain lacht es nicht wie sonst weg. Nach langem Schweigen kommt ihre Stimme kurz und angespannt zurück.* Das ist kein Witz. Ich habe Nein gesagt, und du hast mich trotzdem gezwungen. Ich lasse das nicht einfach durchgehen.",
+        "choices": [
+            "Sich ohne Ausreden entschuldigen und das Gespräch beenden.",
+            "Versuchen, es als Missverständnis zu erklären."
+        ]
+    },
+    "forced_violation_day2_dain_apologize": {
+        "name": "Dain",
+        "text": "*Dain antwortet erst nach einer Weile knapp.* Gut. Dann ist für heute Schluss. Ich entscheide, ob und wann wir wieder reden."
+    },
+    "forced_violation_day2_dain_excuse": {
+        "name": "Dain",
+        "text": "*Dains Stimme wird rau.* Nein. Keine Ausreden. Ich habe Nein gesagt, und du hast es trotzdem getan."
+    },
+    "forced_violation_day2_after_teacher": {
+        "name": "Klassenlehrerin",
+        "text": "*Nach dem Gespräch zieht die Klassenlehrerin mit noch festerer Stimme eine klare Grenze.* Was du gerade getan hast, hat eindeutig eine Grenze überschritten. Komm nicht näher. Ich werde das nach den vorgesehenen Verfahren behandeln.",
+        "choices": [
+            "Sich ohne Ausreden entschuldigen und das Gespräch beenden.",
+            "Versuchen, es als Missverständnis zu erklären."
+        ]
+    },
+    "forced_violation_day2_teacher_apologize": {
+        "name": "Klassenlehrerin",
+        "text": "*Die Klassenlehrerin holt kurz Luft und spricht weiter.* Ich habe deine Entschuldigung gehört. Das Verfahren wird trotzdem fortgesetzt. Sag nichts weiter."
+    },
+    "forced_violation_day2_teacher_excuse": {
+        "name": "Klassenlehrerin",
+        "text": "*Die Klassenlehrerin unterbricht die Erklärung.* Jetzt ist nicht der Moment, dich zu rechtfertigen. Hör auf zu reden und halte Abstand."
+    },
+    "forced_violation_day2_after_nurse": {
+        "name": "Schulkrankenschwester",
+        "text": "*Als das Gespräch abbricht, verschwindet jeder spielerische Ton aus der Stimme der Schulkrankenschwester.* Halte von jetzt an Abstand. Ich werde den Vorfall dokumentieren und die zuständigen Personen informieren.",
+        "choices": [
+            "Sich ohne Ausreden entschuldigen und das Gespräch beenden.",
+            "Versuchen, es als Missverständnis zu erklären."
+        ]
+    },
+    "forced_violation_day2_nurse_apologize": {
+        "name": "Schulkrankenschwester",
+        "text": "*Die Schulkrankenschwester schweigt kurz und antwortet dann bestimmt.* Ich höre deine Entschuldigung. Dokumentation und Meldung erfolgen trotzdem. Dieses Gespräch ist beendet."
+    },
+    "forced_violation_day2_nurse_excuse": {
+        "name": "Schulkrankenschwester",
+        "text": "*Die Stimme der Schulkrankenschwester wird noch tiefer.* Glaubst du, das Wort Missverständnis ändert etwas? Du hast ein Nein ignoriert. Das ist eine Tatsache."
     }
 }

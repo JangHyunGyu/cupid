@@ -385,6 +385,90 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "morning3_start"
+    },
+    "forced_violation_day2_after_seoyeon": {
+        "runtimeEntrypoint": true,
+        "inheritVisualContext": true,
+        "choices": [
+            { "next": "forced_violation_day2_seoyeon_apologize" },
+            { "next": "forced_violation_day2_seoyeon_excuse" }
+        ]
+    },
+    "forced_violation_day2_seoyeon_apologize": {
+        "inheritVisualContext": true,
+        "next": "forced_violation_day2_resume"
+    },
+    "forced_violation_day2_seoyeon_excuse": {
+        "inheritVisualContext": true,
+        "next": "forced_violation_day2_resume"
+    },
+    "forced_violation_day2_after_yuna": {
+        "runtimeEntrypoint": true,
+        "inheritVisualContext": true,
+        "choices": [
+            { "next": "forced_violation_day2_yuna_apologize" },
+            { "next": "forced_violation_day2_yuna_excuse" }
+        ]
+    },
+    "forced_violation_day2_yuna_apologize": {
+        "inheritVisualContext": true,
+        "next": "forced_violation_day2_resume"
+    },
+    "forced_violation_day2_yuna_excuse": {
+        "inheritVisualContext": true,
+        "next": "forced_violation_day2_resume"
+    },
+    "forced_violation_day2_after_dain": {
+        "runtimeEntrypoint": true,
+        "inheritVisualContext": true,
+        "choices": [
+            { "next": "forced_violation_day2_dain_apologize" },
+            { "next": "forced_violation_day2_dain_excuse" }
+        ]
+    },
+    "forced_violation_day2_dain_apologize": {
+        "inheritVisualContext": true,
+        "next": "forced_violation_day2_resume"
+    },
+    "forced_violation_day2_dain_excuse": {
+        "inheritVisualContext": true,
+        "next": "forced_violation_day2_resume"
+    },
+    "forced_violation_day2_after_teacher": {
+        "runtimeEntrypoint": true,
+        "inheritVisualContext": true,
+        "choices": [
+            { "next": "forced_violation_day2_teacher_apologize" },
+            { "next": "forced_violation_day2_teacher_excuse" }
+        ]
+    },
+    "forced_violation_day2_teacher_apologize": {
+        "inheritVisualContext": true,
+        "next": "forced_violation_day2_resume"
+    },
+    "forced_violation_day2_teacher_excuse": {
+        "inheritVisualContext": true,
+        "next": "forced_violation_day2_resume"
+    },
+    "forced_violation_day2_after_nurse": {
+        "runtimeEntrypoint": true,
+        "inheritVisualContext": true,
+        "choices": [
+            { "next": "forced_violation_day2_nurse_apologize" },
+            { "next": "forced_violation_day2_nurse_excuse" }
+        ]
+    },
+    "forced_violation_day2_nurse_apologize": {
+        "inheritVisualContext": true,
+        "next": "forced_violation_day2_resume"
+    },
+    "forced_violation_day2_nurse_excuse": {
+        "inheritVisualContext": true,
+        "next": "forced_violation_day2_resume"
+    },
+    "forced_violation_day2_resume": {
+        "routeBeforeRender": true,
+        "forcedSexualViolationResume": true
     }
     };
     for (const scene of Object.values(scenes)) {

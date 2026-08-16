@@ -1009,5 +1009,85 @@
     "day4_final": {
         "name": "{name}",
         "text": "*El reloj del cuarto se acerca a la medianoche. La pantalla del celular también se oscurece hasta dejar solo una línea de la alarma.*"
+    },
+    "forced_violation_day4_after_seoyeon": {
+        "name": "Seoyeon",
+        "text": "*Incluso después de que termina la conversación, Seoyeon guarda silencio un buen rato. Cuando vuelve a hablar, su voz se ha vuelto fría.* No pienses que puedes fingir que lo que acabas de hacer nunca pasó. Durante un tiempo, no te acerques a mí ni me contactes.",
+        "choices": [
+            "Pedir perdón sin excusas y terminar la conversación.",
+            "Intentar explicar que fue un malentendido."
+        ]
+    },
+    "forced_violation_day4_seoyeon_apologize": {
+        "name": "Seoyeon",
+        "text": "*La expresión de Seoyeon no se suaviza al oír la disculpa.* Te escuché. Eso no borra lo que pasó. Como dije, no me contactes por un tiempo."
+    },
+    "forced_violation_day4_seoyeon_excuse": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon corta la explicación.* ¿Un malentendido? Desde el momento en que dije que no, dejó de serlo. No digas nada más."
+    },
+    "forced_violation_day4_after_yuna": {
+        "name": "Yuna",
+        "text": "*Cuando la conversación se corta, Yuna respira hondo una vez. En su rostro tenso solo queda desconfianza.* Sabías que no quería y aun así me ignoraste. Ahora mismo no quiero ni verte. No vuelvas a contactarme.",
+        "choices": [
+            "Pedir perdón sin excusas y terminar la conversación.",
+            "Intentar explicar que fue un malentendido."
+        ]
+    },
+    "forced_violation_day4_yuna_apologize": {
+        "name": "Yuna",
+        "text": "*Yuna tarda mucho en responder y, cuando lo hace, es breve.* Pedir perdón no hace que desaparezca. Basta."
+    },
+    "forced_violation_day4_yuna_excuse": {
+        "name": "Yuna",
+        "text": "*Yuna no escucha la explicación hasta el final.* Dije que no. No hay nada que explicar."
+    },
+    "forced_violation_day4_after_dain": {
+        "name": "Dain",
+        "text": "*Dain no intenta quitárselo de encima con una risa. Tras un largo silencio, responde con una voz breve y tensa.* Esto no es una broma. Dije que no y aun así me obligaste. No voy a dejarlo pasar.",
+        "choices": [
+            "Pedir perdón sin excusas y terminar la conversación.",
+            "Intentar explicar que fue un malentendido."
+        ]
+    },
+    "forced_violation_day4_dain_apologize": {
+        "name": "Dain",
+        "text": "*Dain tarda un rato en responder.* Bien. Entonces hoy se acabó. Yo decidiré si volvemos a hablar y cuándo."
+    },
+    "forced_violation_day4_dain_excuse": {
+        "name": "Dain",
+        "text": "*La voz de Dain se vuelve áspera.* No. No pongas excusas. Yo dije que no y tú lo hiciste de todos modos."
+    },
+    "forced_violation_day4_after_teacher": {
+        "name": "Profesora",
+        "text": "*Cuando termina la conversación, la profesora marca el límite con una voz aún más firme.* Lo que acabas de hacer cruzó claramente la línea. No te acerques más. Voy a tratar esto siguiendo el procedimiento correspondiente.",
+        "choices": [
+            "Pedir perdón sin excusas y terminar la conversación.",
+            "Intentar explicar que fue un malentendido."
+        ]
+    },
+    "forced_violation_day4_teacher_apologize": {
+        "name": "Profesora",
+        "text": "*La profesora respira brevemente antes de continuar.* Escuché tu disculpa. Aun así, el procedimiento seguirá adelante. No digas nada más."
+    },
+    "forced_violation_day4_teacher_excuse": {
+        "name": "Profesora",
+        "text": "*La profesora interrumpe la explicación.* Este no es el momento de empezar a justificarte. Deja de hablar y mantén la distancia."
+    },
+    "forced_violation_day4_after_nurse": {
+        "name": "Enfermera",
+        "text": "*Cuando la conversación se corta, toda la picardía habitual desaparece de la voz de la enfermera escolar.* A partir de ahora, mantén la distancia. Voy a dejar constancia de lo ocurrido y avisar a quien corresponda.",
+        "choices": [
+            "Pedir perdón sin excusas y terminar la conversación.",
+            "Intentar explicar que fue un malentendido."
+        ]
+    },
+    "forced_violation_day4_nurse_apologize": {
+        "name": "Enfermera",
+        "text": "*La enfermera guarda silencio un momento antes de responder con firmeza.* Escucharé tu disculpa. Aun así, lo registraré y haré los avisos necesarios. Esta conversación se acabó."
+    },
+    "forced_violation_day4_nurse_excuse": {
+        "name": "Enfermera",
+        "text": "*La voz de la enfermera baja aún más.* ¿Crees que llamarlo un malentendido cambia algo? Ignoraste que te dije que no. Eso es un hecho."
     }
 }
