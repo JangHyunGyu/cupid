@@ -10979,7 +10979,7 @@
 ### `after3_seo_choice`
 - 배경: `student_room.png`
 - 선택지:
-  1. "물티슈 줄까." → `after3_seo_pity_trap_1` | Seoyeon -18 | 플래그: `seo_pity_broken`
+  1. "누구나 그럴 때 있어. 너무 신경 쓰지 마." → `after3_seo_pity_trap_1` | Seoyeon -18 | 플래그: `seo_pity_broken`
   2. "방금? 아무것도 못 봤는데. 펜 떨어뜨려서 주우러 들어왔어." → `after3_seo_correct_1` | Seoyeon +16
 
 - 캐릭터: `seyoun_sad.png`
@@ -11703,7 +11703,7 @@
 ### `after3_dain_choice`
 - 배경: `gym.png`
 - 선택지:
-  1. "괜찮아? 무리하지 마. 오늘은 쉬는 게 어때." → `after3_dain_pity_trap_1` | Dain -20 | 플래그: `pitied_dain`
+  1. "역시 무리였네. 대회는 포기하고 오늘은 쉬어." → `after3_dain_pity_trap_1` | Dain -20 | 플래그: `pitied_dain`
   2. "그럼 여기 있을게. 말하고 싶을 때 말해." → `after3_dain_correct_1` | Dain +17
 
 - 캐릭터: `dain_sad.png`
@@ -16705,14 +16705,242 @@
 - 배경: `room_my.png`
 - 분기:
   - [`day4_waited`] → `day4_night_regret`
-  - [`route_seoyeon`] → `wall_seo_1`
-  - [`route_dain`] → `wall_dain_1`
-  - [`route_yuna`] → `wall_yuna_1`
+  - [`route_seoyeon`] → `wall_seo_rival_rank`
+  - [`route_dain`] → `wall_dain_rival_rank`
+  - [`route_yuna`] → `wall_yuna_rival_rank`
   - [기본] → `day4_night_reflect`
 
 - 캐릭터: `없음`
 
 <!-- i18n -->
+
+---
+
+### `wall_seo_rival_rank`
+- 배경: `park.png`
+- 배경톤: `cold`
+
+- 캐릭터: `없음`
+**시스템**: ‹빈›
+
+---
+
+### `wall_dain_rival_rank`
+- 배경: `school_back.png`
+
+- 캐릭터: `없음`
+**시스템**: ‹빈›
+
+---
+
+### `wall_yuna_rival_rank`
+- 배경: `yuna_hideout.png`
+- 배경톤: `dream`
+
+- 캐릭터: `없음`
+**시스템**: ‹빈›
+
+---
+
+### `day4_night_reflect`
+- 배경: `room_my.png`
+- 다음: `day4_hidden_msg_branch`
+
+- 캐릭터: `없음`
+**{name}**: *오늘 주고받은 메시지를 시간순으로 다시 올려 본다. 내일은 일요일 학교 행사다.*
+
+---
+
+### `day4_adult_teacher_student_rank`
+- 배경: `room_my.png`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `day4_adult_nurse_student_rank`
+- 배경: `room_my.png`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `day4_teacher_seoyeon_counteroffer`
+- 배경: `school_back.png`
+- 선택지:
+  1. "담임과 한 약속을 지키고 돌아간다" → `day4_hidden_msg_branch` | Teacher +4, Seoyeon -6 | 플래그: `day4_held_route_teacher`
+  2. "서연을 따라 옥상에 올라가 손을 잡는다" → `day4_adult_counteroffer_accept_seoyeon` | Seoyeon +8, Teacher -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
+
+- 캐릭터: `seyoun_sad.png`
+**서연**: *담임과 헤어져 학교를 나서려는데 서연이 옥상 계단 앞에서 기다리고 있다. 웃고는 있지만 교복 소매를 쥔 손에 힘이 들어가 있다.* 요즘 선생님만 보고 있잖아. 오늘만은 학생회장도 모범생도 아닌 나를 봐주면 안 돼?
+
+---
+
+### `day4_teacher_dain_counteroffer`
+- 배경: `gym.png`
+- 배경톤: `lights-off`
+- 선택지:
+  1. "담임에게 돌아간다고 답장한다" → `day4_hidden_msg_branch` | Teacher +4, Dain -6 | 플래그: `day4_held_route_teacher`
+  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `day4_adult_counteroffer_accept_dain` | Dain +8, Teacher -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
+
+- 캐릭터: `dain_sad.png`
+**다인**: *담임에게 도착하면 연락하겠다고 한 뒤, 체육관 앞을 지난다. 불 꺼진 비상문에 기대 있던 다인이 무릎 테이프를 만지작거린다.* 요즘 선생님한테만 가잖아. 열 번만 받아줘. 끝나면… 오늘은 나 좀 안아주라.
+
+---
+
+### `day4_teacher_yuna_counteroffer`
+- 배경: `yuna_hideout.png`
+- 선택지:
+  1. "담임에게 답장하고 집으로 돌아간다" → `day4_hidden_msg_branch` | Teacher +4, Yuna -6 | 플래그: `day4_held_route_teacher`
+  2. "별관으로 가서 유나 곁에 남는다" → `day4_adult_counteroffer_accept_yuna` | Yuna +8, Teacher -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
+
+- 캐릭터: `yuna_sad.png`
+**유나**: *담임과 헤어진 직후 유나에게서 별관 사진이 온다. 빈 의자 두 개가 나란히 놓여 있고 한쪽에 유나의 재킷이 걸려 있다.* 선생님 옆이 더 편한가 봐. 그래도 오늘 네가 그냥 가면, 또 혼자 남겨진 기분일 것 같아.
+
+---
+
+### `day4_nurse_seoyeon_counteroffer`
+- 배경: `school_back.png`
+- 선택지:
+  1. "보건선생님에게 답장하고 돌아간다" → `day4_hidden_msg_branch` | Nurse +4, Seoyeon -6 | 플래그: `day4_held_route_nurse`
+  2. "서연을 따라 옥상에 올라가 손을 잡는다" → `day4_adult_counteroffer_accept_seoyeon` | Seoyeon +8, Nurse -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
+
+- 캐릭터: `seyoun_sad.png`
+**서연**: *보건실을 나와 정문으로 향하는데 서연이 옥상 계단 앞을 막아선다. 애써 웃는 입술과 달리 손끝은 교복 소매를 구기고 있다.* 요즘 보건선생님만 찾아가잖아. 오늘만은 학생회장도 모범생도 아닌 나를 봐주면 안 돼?
+
+---
+
+### `day4_adult_counteroffer_accept_seoyeon`
+- 배경: `event_temptation_seoyeon.png`
+- 다음: `day4_adult_night_regret_target_branch`
+
+- 캐릭터: `없음`
+**{name}**: *옥상 문이 닫히자 서연은 {name}의 손목을 잡아 자기 가슴 위에 손을 얹는다. 느슨하게 푼 리본 아래로 셔츠 깃이 벌어지고 떨리는 숨이 손등에 닿는다. 주머니 속 휴대폰이 연달아 울리지만 서연은 손을 놓지 않는다. 한참 뒤 학교를 나와 집으로 돌아간다.*
+
+---
+
+### `day4_nurse_dain_counteroffer`
+- 배경: `gym.png`
+- 배경톤: `lights-off`
+- 선택지:
+  1. "보건선생님에게 돌아간다고 답장한다" → `day4_hidden_msg_branch` | Nurse +4, Dain -6 | 플래그: `day4_held_route_nurse`
+  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `day4_adult_counteroffer_accept_dain` | Dain +8, Nurse -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
+
+- 캐릭터: `dain_sad.png`
+**다인**: *보건실 문을 닫고 나오자 체육관 비상문 앞에 다인이 서 있다. 다인은 무릎 테이프를 뜯었다 붙이며 시선을 피한다.* 요즘 보건선생님한테만 가잖아. 열 번만 받아줘. 끝나면… 오늘은 나 좀 안아주라.
+
+---
+
+### `day4_adult_counteroffer_accept_dain`
+- 배경: `event_temptation_dain.png`
+- 다음: `day4_adult_night_regret_target_branch`
+
+- 캐릭터: `없음`
+**{name}**: *마지막 공이 바닥을 굴러간다. 다인은 거친 숨을 고르며 유니폼 앞자락을 움켜쥐고 아래로 당긴다. 그대로 {name} 바로 앞까지 몸을 깊이 숙이자 땀에 젖은 숨이 코앞에 닿는다. 주머니 속 휴대폰이 연달아 울린다. 한참 뒤 학교를 나와 집으로 돌아간다.*
+
+---
+
+### `day4_nurse_yuna_counteroffer`
+- 배경: `yuna_hideout.png`
+- 선택지:
+  1. "보건선생님에게 답장하고 집으로 돌아간다" → `day4_hidden_msg_branch` | Nurse +4, Yuna -6 | 플래그: `day4_held_route_nurse`
+  2. "별관으로 가서 유나 곁에 남는다" → `day4_adult_counteroffer_accept_yuna` | Yuna +8, Nurse -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
+
+- 캐릭터: `yuna_sad.png`
+**유나**: *보건실을 나선 뒤 유나에게서 별관 사진 한 장이 도착한다. 빈 의자 두 개 중 하나에 유나의 재킷이 놓여 있다.* 선생님 옆이 더 편한가 봐. 그래도 오늘 네가 그냥 가면, 또 혼자 남겨진 기분일 것 같아.
+
+---
+
+### `day4_adult_counteroffer_accept_yuna`
+- 배경: `event_temptation_yuna.png`
+- 다음: `day4_adult_night_regret_target_branch`
+
+- 캐릭터: `없음`
+**{name}**: *유나는 {name} 바로 앞까지 다가와 한 손으로 책장을 짚는다. 재킷을 한쪽 어깨 아래로 흘려 내리고 다른 손으로 안쪽 상의의 목깃까지 끌어내린다. 드러난 맨어깨와 타투 사이로 붉은 눈이 {name}의 눈높이에 그대로 있다. 책상 위 휴대폰이 다시 울린다. 한참 뒤 별관을 나와 집으로 돌아간다.*
+
+---
+
+### `day4_adult_night_regret_target_branch`
+- 배경: `room_my.png`
+- 분기:
+  - [`day4_counteroffer_target_teacher`] → `day4_adult_night_regret_teacher`
+  - [`day4_counteroffer_target_nurse`] → `day4_adult_night_regret_nurse`
+  - [기본] → `day4_night_regret`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `day4_adult_night_regret_teacher`
+- 배경: `room_my.png`
+- 다음: `day4_hidden_msg_branch`
+
+- 캐릭터: `teacher_sad.png` @ 0.35
+**{name}**: *집에 돌아와 휴대폰을 켜자 담임이 보낸 '도착하면 알려 달랬는데 무슨 일 있니?'가 떠 있다. 답장을 쓰려던 손이 입력창 위에서 멎는다.*
+
+---
+
+### `day4_adult_night_regret_nurse`
+- 배경: `room_my.png`
+- 다음: `day4_hidden_msg_branch`
+
+- 캐릭터: `nurse_worried.png` @ 0.35
+**{name}**: *집에 돌아와 휴대폰을 켜자 보건선생님의 '아까 표정이 안 좋아 보였는데 집에는 잘 갔어?'가 떠 있다. 괜찮다고 쓰려던 손이 입력창 위에서 멎는다.*
+
+---
+
+### `wall_seo_glimpse_1`
+- 배경: `school_back.png`
+- 다음: `wall_seo_glimpse_2`
+
+- 캐릭터: `없음`
+**{name}**: *밤 10시 약속에 맞춰 공원으로 가는 길. 불 꺼진 체육관 비상문 앞에 다인이 무릎 테이프를 만지며 서 있다.*
+
+---
+
+### `wall_seo_glimpse_2`
+- 배경: `school_back.png`
+- 선택지:
+  1. "공원으로 가서 서연과의 약속을 지킨다" → `wall_seo_1` | Seoyeon +4, Dain -6 | 플래그: `day4_held_route_seoyeon`
+  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `wall_seo_glimpse_4` | Dain +8, Seoyeon -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_penalty_deferred`
+
+- 캐릭터: `dain_sad.png`
+**다인**: 열 번만 받아줘. 끝나면… 나 좀 안아주라. 오늘은 혼자 괜찮은 척 못 하겠어.
+
+---
+
+### `wall_seo_glimpse_4`
+- 배경: `event_temptation_dain.png`
+- 다음: `day4_night_regret`
+
+- 캐릭터: `없음`
+**{name}**: *마지막 공이 바닥을 굴러간다. 다인은 거친 숨을 고르며 유니폼 앞자락을 움켜쥐고 아래로 당긴다. 그대로 {name} 바로 앞까지 몸을 깊이 숙이자 땀에 젖은 숨이 코앞에 닿는다. 주머니 속 휴대폰에서는 서연의 메시지가 연달아 울린다.*
+
+---
+
+### `wall_seo_yuna_tempt_1`
+- 배경: `yuna_hideout.png`
+- 다음: `wall_seo_yuna_tempt_2`
+
+- 캐릭터: `yuna_sad.png`
+**{name}**: *공원으로 가는 길, 유나에게서 '별관 불은 아직 켜져 있어'라는 메시지와 빈 의자 두 개를 찍은 사진이 온다.*
+
+---
+
+### `wall_seo_yuna_tempt_2`
+- 배경: `yuna_hideout.png`
+- 선택지:
+  1. "서연에게 답장하고 공원으로 간다" → `wall_seo_1` | Seoyeon +4, Yuna -6 | 플래그: `day4_held_route_seoyeon`
+  2. "별관으로 가서 유나 곁에 남는다" → `wall_seo_yuna_tempt_accept` | Yuna +8, Seoyeon -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_penalty_deferred`
+
+- 캐릭터: `yuna_sad.png`
+**유나**: 전에 나를 봐주던 사람이 말도 없이 사라졌어. 오늘 네가 그냥 가면 또 그날 같을 것 같아. 딱 오늘만, 여기 있어 줘.
 
 ---
 
@@ -17278,7 +17506,7 @@
 - 배경: `park.png`
 - 배경톤: `cold`
 - 타입: `free_talk`
-- 다음: `wall_seo_rival_rank`
+- 다음: `day4_student_return_home`
 - 컨텍스트: "4일차 밤, 서연이 오래 숨겨 온 가족 문제와 완벽해야 한다는 부담을 털어놓고 난 직후다. 주인공의 고백에 대한 수락 또는 보류 상태와 방금 나눈 위로는 이미 확정된 사실이므로 현재 플래그를 따른다. 상처가 한 번의 대화로 완치되었다고 단정하거나 관계를 새로 판정하지 않는다."
 - 성격: "서연은 침착하고 책임감이 강하지만 지금은 가면을 조금 내려놓은 상태다. 감정을 숨기지 않되 상대에게 해결을 떠맡기지 않고 평소의 솔직함과 조심스러운 다정함으로 대화를 이어 간다."
 
@@ -17287,12 +17515,79 @@
 
 ---
 
-### `wall_seo_rival_rank`
-- 배경: `park.png`
-- 배경톤: `cold`
+### `wall_seo_yuna_tempt_accept`
+- 배경: `event_temptation_yuna.png`
+- 다음: `day4_night_regret`
 
 - 캐릭터: `없음`
-**시스템**: ‹빈›
+**{name}**: *유나는 {name} 바로 앞까지 다가와 한 손으로 책장을 짚는다. 재킷을 한쪽 어깨 아래로 흘려 내리고 다른 손으로 안쪽 상의의 목깃까지 끌어내린다. 드러난 맨어깨와 타투 사이로 붉은 눈이 {name}의 눈높이에 그대로 있다. 서연의 '공원 벤치에 있어.'라는 메시지가 화면 위에서 사라지지 않는다.*
+
+---
+
+### `wall_dain_glimpse_1`
+- 배경: `school_back.png`
+- 다음: `wall_dain_glimpse_2`
+
+- 캐릭터: `없음`
+**{name}**: *밤 10시, 다인이 기다리는 체육관으로 가던 길. 도서관 별관 창문 한 칸에만 불이 남아 있다.*
+
+---
+
+### `wall_dain_glimpse_2`
+- 배경: `yuna_hideout.png`
+- 다음: `wall_dain_glimpse_4_b`
+
+- 캐릭터: `yuna_sad.png`
+**{name}**: *유나는 열린 책을 앞에 둔 채 창밖만 보고 있다. 책장은 한 장도 넘어가지 않는다.*
+
+---
+
+### `wall_dain_glimpse_4_b`
+- 배경: `school_back.png`
+- 다음: `wall_dain_glimpse_4_c`
+
+- 캐릭터: `yuna_sad.png` @ 0.35
+**{name}**: *밤 10시. 유나에게서 메시지가 온다. 바로 아래에는 다인의 '체육관 뒷문 열어놨어.' 알림이 떠 있다.*
+
+---
+
+### `wall_dain_glimpse_4_c`
+- 배경: `school_back.png`
+- 선택지:
+  1. "다인에게 답장하고 체육관으로 간다" → `wall_dain_1` | Dain +5, Yuna -6 | 플래그: `day4_held_route_dain`
+  2. "학교 후문으로 돌아가 유나 곁에 남는다" → `wall_dain_glimpse_4` | Yuna +8, Dain -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_penalty_deferred`
+
+- 캐릭터: `yuna_normal.png` @ 0.35
+**유나**: 전에 나를 봐주던 사람이 말도 없이 사라졌어. 오늘 또 혼자 남으면 그때로 돌아갈 것 같아. 다인과 있었어도 괜찮아. 지금은 네가 와줘.
+
+---
+
+### `wall_dain_glimpse_4`
+- 배경: `event_temptation_yuna.png`
+- 다음: `day4_night_regret`
+
+- 캐릭터: `없음`
+**{name}**: *유나는 {name} 바로 앞까지 다가와 한 손으로 책장을 짚는다. 재킷을 한쪽 어깨 아래로 흘려 내리고 다른 손으로 안쪽 상의의 목깃까지 끌어내린다. 드러난 맨어깨와 타투 사이로 붉은 눈이 {name}의 눈높이에 그대로 있다. 다인의 '체육관 뒷문 열어놨어.' 알림이 화면 위에서 사라지지 않는다.*
+
+---
+
+### `wall_dain_seo_tempt_1`
+- 배경: `school_back.png`
+- 다음: `wall_dain_seo_tempt_2`
+
+- 캐릭터: `seyoun_pout.png`
+**{name}**: *다인이 기다리는 체육관으로 향하는데 서연이 옥상 계단 앞에 서 있다. 웃고 있지만 손끝이 교복 소매를 구긴다.*
+
+---
+
+### `wall_dain_seo_tempt_2`
+- 배경: `school_back.png`
+- 선택지:
+  1. "다인에게 답장하고 체육관으로 간다" → `wall_dain_1` | Dain +5, Seoyeon -6 | 플래그: `day4_held_route_dain`
+  2. "서연을 따라 옥상에 올라가 손을 잡는다" → `wall_dain_seo_tempt_accept` | Seoyeon +8, Dain -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_penalty_deferred`
+
+- 캐릭터: `seyoun_sad.png`
+**서연**: 오늘 집에 들어가면 또 웃는 얼굴부터 맞춰야 해. 딱 오늘만 학생회장 말고 그냥 서연으로 있게 해줘. 올라오면, 네 손 안 놓을게.
 
 ---
 
@@ -17617,7 +17912,7 @@
 - 다음: `wall_dain_19_b`
 
 - 캐릭터: `dain_sad.png`
-**다인**: 아무한테도 말 안 했어. 부모님한테도. '다인이가 안 뛰면 다인이가 아니지!' — 그 말 듣고 싶지 않아서.
+**다인**: 재활이 끝난 척했어. 다시 아프기 시작한 것도 아무한테도 말 안 했고. 부모님한테도. '다인이가 안 뛰면 다인이가 아니지!' 그 말을 듣고 싶지 않았거든.
 
 ---
 
@@ -18033,7 +18328,7 @@
 ### `wall_dain_freetalk`
 - 배경: `school_back.png`
 - 타입: `free_talk`
-- 다음: `wall_dain_rival_rank`
+- 다음: `day4_student_return_home`
 - 컨텍스트: "4일차 밤, 다인이 무릎 부상과 멈춰 버린 꿈에 관한 속마음을 드러낸 뒤 학교 뒤편을 걷는 중이다. 주인공의 고백에 대한 수락 또는 보류 상태와 방금 있었던 위로는 확정된 사실이다. 부상이 갑자기 낫거나 진로가 이미 결정되었다고 만들지 않고 현재 관계 상태를 유지한다."
 - 성격: "다인은 솔직하고 몸이 먼저 움직이는 사람답게 감정도 숨기지 않으려 한다. 지금은 평소보다 차분하지만 활기를 잃은 사람이 아니며 불안을 인정하면서도 상대와 함께 다음 말을 찾아간다."
 
@@ -18042,11 +18337,75 @@
 
 ---
 
-### `wall_dain_rival_rank`
-- 배경: `school_back.png`
+### `wall_dain_seo_tempt_accept`
+- 배경: `event_temptation_seoyeon.png`
+- 다음: `day4_night_regret`
 
 - 캐릭터: `없음`
-**시스템**: ‹빈›
+**{name}**: *옥상문이 닫히자 서연은 말없이 블라우스 단추를 풀고 {name}의 손목을 잡아 제 쪽으로 끌어당긴다. 열린 옷깃 사이로 손바닥이 맨가슴에 닿는 순간, 서연의 손이 그 위를 덮는다. 다인의 '체육관 뒷문 열어놨어.'라는 메시지가 화면을 밝힌다.*
+
+---
+
+### `wall_yuna_glimpse_1`
+- 배경: `school_back.png`
+- 배경톤: `dream`
+- 다음: `wall_yuna_glimpse_2`
+
+- 캐릭터: `없음`
+**{name}**: *유나와 만나기로 한 학교 후문으로 가던 길. 교문 앞 가로등 아래 서연이 혼자 서 있다.*
+
+---
+
+### `wall_yuna_glimpse_2`
+- 배경: `school_back.png`
+- 배경톤: `dream`
+- 다음: `wall_yuna_glimpse_3_b`
+
+- 캐릭터: `seyoun_pout.png`
+**{name}**: *서연은 휴대폰을 넣었다 꺼내길 반복한다. 이쪽을 보자 웃어 보이지만 손끝이 교복 소매를 구긴다.*
+
+---
+
+### `wall_yuna_glimpse_3_b`
+- 배경: `school_back.png`
+- 배경톤: `dream`
+- 선택지:
+  1. "유나에게 답장하고 학교 후문으로 간다" → `wall_yuna_1` | Yuna +4, Seoyeon -6 | 플래그: `day4_held_route_yuna`
+  2. "서연을 따라 옥상으로 올라가 손을 잡는다" → `wall_yuna_glimpse_4` | Seoyeon +8, Yuna -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_penalty_deferred`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 오늘 집에 들어가면 또 웃는 얼굴부터 맞춰야 해. 딱 오늘만 학생회장 말고 그냥 서연으로 있게 해줘. 올라오면, 네 손 안 놓을게.
+
+---
+
+### `wall_yuna_glimpse_4`
+- 배경: `event_temptation_seoyeon.png`
+- 다음: `day4_night_regret`
+
+- 캐릭터: `없음`
+**{name}**: *옥상문이 닫히자 서연은 말없이 블라우스 단추를 풀고 {name}의 손목을 잡아 제 쪽으로 끌어당긴다. 열린 옷깃 사이로 손바닥이 맨가슴에 닿는 순간, 서연의 손이 그 위를 덮는다. 주머니 속에서 유나의 메시지가 한 번, 다시 한 번 울린다.*
+
+---
+
+### `wall_yuna_dain_tempt_1`
+- 배경: `gym.png`
+- 배경톤: `lights-off`
+- 다음: `wall_yuna_dain_tempt_2`
+
+- 캐릭터: `dain_sad.png`
+**{name}**: *유나가 기다리는 학교 후문으로 가던 길. 불 꺼진 체육관 비상문 앞에 다인이 무릎 테이프를 만지며 서 있다.*
+
+---
+
+### `wall_yuna_dain_tempt_2`
+- 배경: `gym.png`
+- 배경톤: `lights-off`
+- 선택지:
+  1. "유나에게 답장하고 학교 후문으로 간다" → `wall_yuna_1` | Yuna +4, Dain -6 | 플래그: `day4_held_route_yuna`
+  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `wall_yuna_dain_tempt_accept` | Dain +8, Yuna -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_penalty_deferred`
+
+- 캐릭터: `dain_sad.png`
+**다인**: 열 번만 받아줘. 끝나면… 나 좀 안아주라. 오늘은 혼자 괜찮은 척 못 하겠어.
 
 ---
 
@@ -18538,7 +18897,7 @@
 - 배경: `yuna_hideout.png`
 - 배경톤: `dream`
 - 타입: `free_talk`
-- 다음: `wall_yuna_rival_rank`
+- 다음: `day4_student_return_home`
 - 컨텍스트: "4일차 밤, 유나가 이준호 선배의 편지와 자신이 대신일지 모른다는 두려움을 마주한 직후다. 주인공의 고백에 대한 수락 또는 보류 상태와 방금 확인한 감정은 확정된 사실이다. 편지의 내용을 바꾸거나 불안을 즉시 없애지 말고 현재 관계를 다시 판정하지 않는다."
 - 성격: "유나는 조용하고 생각이 깊지만 이제 중요한 질문을 피하지 않는다. 비유 뒤에 숨기보다 필요한 순간에는 직접 말하며 상대의 대답을 자기 두려움에 맞춰 왜곡하지 않고 끝까지 듣는다."
 
@@ -18547,362 +18906,12 @@
 
 ---
 
-### `wall_yuna_rival_rank`
-- 배경: `yuna_hideout.png`
-- 배경톤: `dream`
-
-- 캐릭터: `없음`
-**시스템**: ‹빈›
-
----
-
-### `day4_night_reflect`
+### `day4_student_return_home`
 - 배경: `room_my.png`
 - 다음: `day4_hidden_msg_branch`
 
 - 캐릭터: `없음`
-**{name}**: *오늘 주고받은 메시지를 시간순으로 다시 올려 본다. 내일은 일요일 학교 행사다.*
-
----
-
-### `day4_adult_teacher_student_rank`
-- 배경: `room_my.png`
-
-- 캐릭터: `없음`
-
-<!-- i18n -->
-
----
-
-### `day4_adult_nurse_student_rank`
-- 배경: `room_my.png`
-
-- 캐릭터: `없음`
-
-<!-- i18n -->
-
----
-
-### `day4_teacher_seoyeon_counteroffer`
-- 배경: `school_back.png`
-- 선택지:
-  1. "담임과 한 약속을 지키고 돌아간다" → `day4_hidden_msg_branch` | Teacher +4, Seoyeon -6 | 플래그: `day4_held_route_teacher`
-  2. "서연을 따라 옥상에 올라가 손을 잡는다" → `day4_adult_counteroffer_accept_seoyeon` | Seoyeon +8, Teacher -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
-
-- 캐릭터: `seyoun_sad.png`
-**서연**: *담임과 헤어져 학교를 나서려는데 서연이 옥상 계단 앞에서 기다리고 있다. 웃고는 있지만 교복 소매를 쥔 손에 힘이 들어가 있다.* 요즘 선생님만 보고 있잖아. 오늘만은 학생회장도 모범생도 아닌 나를 봐주면 안 돼?
-
----
-
-### `day4_teacher_dain_counteroffer`
-- 배경: `gym.png`
-- 배경톤: `lights-off`
-- 선택지:
-  1. "담임에게 돌아간다고 답장한다" → `day4_hidden_msg_branch` | Teacher +4, Dain -6 | 플래그: `day4_held_route_teacher`
-  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `day4_adult_counteroffer_accept_dain` | Dain +8, Teacher -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
-
-- 캐릭터: `dain_sad.png`
-**다인**: *담임에게 도착하면 연락하겠다고 한 뒤, 체육관 앞을 지난다. 불 꺼진 비상문에 기대 있던 다인이 무릎 테이프를 만지작거린다.* 요즘 선생님한테만 가잖아. 열 번만 받아줘. 끝나면… 오늘은 나 좀 안아주라.
-
----
-
-### `day4_teacher_yuna_counteroffer`
-- 배경: `yuna_hideout.png`
-- 선택지:
-  1. "담임에게 답장하고 집으로 돌아간다" → `day4_hidden_msg_branch` | Teacher +4, Yuna -6 | 플래그: `day4_held_route_teacher`
-  2. "별관으로 가서 유나 곁에 남는다" → `day4_adult_counteroffer_accept_yuna` | Yuna +8, Teacher -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
-
-- 캐릭터: `yuna_sad.png`
-**유나**: *담임과 헤어진 직후 유나에게서 별관 사진이 온다. 빈 의자 두 개가 나란히 놓여 있고 한쪽에 유나의 재킷이 걸려 있다.* 선생님 옆이 더 편한가 봐. 그래도 오늘 네가 그냥 가면, 또 혼자 남겨진 기분일 것 같아.
-
----
-
-### `day4_nurse_seoyeon_counteroffer`
-- 배경: `school_back.png`
-- 선택지:
-  1. "보건선생님에게 답장하고 돌아간다" → `day4_hidden_msg_branch` | Nurse +4, Seoyeon -6 | 플래그: `day4_held_route_nurse`
-  2. "서연을 따라 옥상에 올라가 손을 잡는다" → `day4_adult_counteroffer_accept_seoyeon` | Seoyeon +8, Nurse -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
-
-- 캐릭터: `seyoun_sad.png`
-**서연**: *보건실을 나와 정문으로 향하는데 서연이 옥상 계단 앞을 막아선다. 애써 웃는 입술과 달리 손끝은 교복 소매를 구기고 있다.* 요즘 보건선생님만 찾아가잖아. 오늘만은 학생회장도 모범생도 아닌 나를 봐주면 안 돼?
-
----
-
-### `day4_adult_counteroffer_accept_seoyeon`
-- 배경: `event_temptation_seoyeon.png`
-- 다음: `day4_adult_night_regret_target_branch`
-
-- 캐릭터: `없음`
-**{name}**: *옥상 문이 닫히자 서연은 {name}의 손목을 잡아 자기 가슴 위에 손을 얹는다. 느슨하게 푼 리본 아래로 셔츠 깃이 벌어지고 떨리는 숨이 손등에 닿는다. 주머니 속 휴대폰이 연달아 울리지만 서연은 손을 놓지 않는다. 한참 뒤 학교를 나와 집으로 돌아간다.*
-
----
-
-### `day4_nurse_dain_counteroffer`
-- 배경: `gym.png`
-- 배경톤: `lights-off`
-- 선택지:
-  1. "보건선생님에게 돌아간다고 답장한다" → `day4_hidden_msg_branch` | Nurse +4, Dain -6 | 플래그: `day4_held_route_nurse`
-  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `day4_adult_counteroffer_accept_dain` | Dain +8, Nurse -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
-
-- 캐릭터: `dain_sad.png`
-**다인**: *보건실 문을 닫고 나오자 체육관 비상문 앞에 다인이 서 있다. 다인은 무릎 테이프를 뜯었다 붙이며 시선을 피한다.* 요즘 보건선생님한테만 가잖아. 열 번만 받아줘. 끝나면… 오늘은 나 좀 안아주라.
-
----
-
-### `day4_adult_counteroffer_accept_dain`
-- 배경: `event_temptation_dain.png`
-- 다음: `day4_adult_night_regret_target_branch`
-
-- 캐릭터: `없음`
-**{name}**: *마지막 공이 바닥을 굴러간다. 다인은 거친 숨을 고르며 유니폼 앞자락을 움켜쥐고 아래로 당긴다. 그대로 {name} 바로 앞까지 몸을 깊이 숙이자 땀에 젖은 숨이 코앞에 닿는다. 주머니 속 휴대폰이 연달아 울린다. 한참 뒤 학교를 나와 집으로 돌아간다.*
-
----
-
-### `day4_nurse_yuna_counteroffer`
-- 배경: `yuna_hideout.png`
-- 선택지:
-  1. "보건선생님에게 답장하고 집으로 돌아간다" → `day4_hidden_msg_branch` | Nurse +4, Yuna -6 | 플래그: `day4_held_route_nurse`
-  2. "별관으로 가서 유나 곁에 남는다" → `day4_adult_counteroffer_accept_yuna` | Yuna +8, Nurse -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
-
-- 캐릭터: `yuna_sad.png`
-**유나**: *보건실을 나선 뒤 유나에게서 별관 사진 한 장이 도착한다. 빈 의자 두 개 중 하나에 유나의 재킷이 놓여 있다.* 선생님 옆이 더 편한가 봐. 그래도 오늘 네가 그냥 가면, 또 혼자 남겨진 기분일 것 같아.
-
----
-
-### `day4_adult_counteroffer_accept_yuna`
-- 배경: `event_temptation_yuna.png`
-- 다음: `day4_adult_night_regret_target_branch`
-
-- 캐릭터: `없음`
-**{name}**: *유나는 {name} 바로 앞까지 다가와 한 손으로 책장을 짚는다. 재킷을 한쪽 어깨 아래로 흘려 내리고 다른 손으로 안쪽 상의의 목깃까지 끌어내린다. 드러난 맨어깨와 타투 사이로 붉은 눈이 {name}의 눈높이에 그대로 있다. 책상 위 휴대폰이 다시 울린다. 한참 뒤 별관을 나와 집으로 돌아간다.*
-
----
-
-### `day4_adult_night_regret_target_branch`
-- 배경: `room_my.png`
-- 분기:
-  - [`day4_counteroffer_target_teacher`] → `day4_adult_night_regret_teacher`
-  - [`day4_counteroffer_target_nurse`] → `day4_adult_night_regret_nurse`
-  - [기본] → `day4_night_regret`
-
-- 캐릭터: `없음`
-
-<!-- i18n -->
-
----
-
-### `day4_adult_night_regret_teacher`
-- 배경: `room_my.png`
-- 다음: `day4_hidden_msg_branch`
-
-- 캐릭터: `teacher_sad.png` @ 0.35
-**{name}**: *집에 돌아와 휴대폰을 켜자 담임이 보낸 '도착하면 알려 달랬는데 무슨 일 있니?'가 떠 있다. 답장을 쓰려던 손이 입력창 위에서 멎는다.*
-
----
-
-### `day4_adult_night_regret_nurse`
-- 배경: `room_my.png`
-- 다음: `day4_hidden_msg_branch`
-
-- 캐릭터: `nurse_worried.png` @ 0.35
-**{name}**: *집에 돌아와 휴대폰을 켜자 보건선생님의 '아까 표정이 안 좋아 보였는데 집에는 잘 갔어?'가 떠 있다. 괜찮다고 쓰려던 손이 입력창 위에서 멎는다.*
-
----
-
-### `wall_seo_glimpse_1`
-- 배경: `school_back.png`
-- 다음: `wall_seo_glimpse_2`
-
-- 캐릭터: `없음`
-**{name}**: *서연을 집까지 바래다주고 학교 담장을 따라 돌아간다. 불 꺼진 체육관 비상문 앞에 다인이 무릎 테이프를 만지며 서 있다.*
-
----
-
-### `wall_seo_glimpse_2`
-- 배경: `school_back.png`
-- 선택지:
-  1. "서연과 한 약속을 지키고 돌아간다" → `day4_hidden_msg_branch` | Seoyeon +4, Dain -6 | 플래그: `day4_held_route_seoyeon`
-  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `wall_seo_glimpse_4` | Dain +8, Seoyeon -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_penalty_deferred`
-
-- 캐릭터: `dain_sad.png`
-**다인**: 열 번만 받아줘. 끝나면… 나 좀 안아주라. 오늘은 혼자 괜찮은 척 못 하겠어.
-
----
-
-### `wall_seo_glimpse_4`
-- 배경: `event_temptation_dain.png`
-- 다음: `day4_night_regret`
-
-- 캐릭터: `없음`
-**{name}**: *마지막 공이 바닥을 굴러간다. 다인은 거친 숨을 고르며 유니폼 앞자락을 움켜쥐고 아래로 당긴다. 그대로 {name} 바로 앞까지 몸을 깊이 숙이자 땀에 젖은 숨이 코앞에 닿는다. 주머니 속 휴대폰에서는 서연의 메시지가 연달아 울린다.*
-
----
-
-### `wall_seo_yuna_tempt_1`
-- 배경: `yuna_hideout.png`
-- 다음: `wall_seo_yuna_tempt_2`
-
-- 캐릭터: `yuna_sad.png`
-**{name}**: *귀가길, 유나에게서 '별관 불은 아직 켜져 있어'라는 메시지가 온다. 뒤이어 사진 한 장이 도착한다. 빈 의자 두 개가 나란히 찍혀 있다.*
-
----
-
-### `wall_seo_yuna_tempt_2`
-- 배경: `yuna_hideout.png`
-- 선택지:
-  1. "서연에게 답장하고 약속대로 돌아간다" → `day4_hidden_msg_branch` | Seoyeon +4, Yuna -6 | 플래그: `day4_held_route_seoyeon`
-  2. "별관으로 가서 유나 곁에 남는다" → `wall_seo_yuna_tempt_accept` | Yuna +8, Seoyeon -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_penalty_deferred`
-
-- 캐릭터: `yuna_sad.png`
-**유나**: 전에 나를 봐주던 사람이 말도 없이 사라졌어. 오늘 네가 그냥 가면 또 그날 같을 것 같아. 딱 오늘만, 여기 있어 줘.
-
----
-
-### `wall_seo_yuna_tempt_accept`
-- 배경: `event_temptation_yuna.png`
-- 다음: `day4_night_regret`
-
-- 캐릭터: `없음`
-**{name}**: *유나는 {name} 바로 앞까지 다가와 한 손으로 책장을 짚는다. 재킷을 한쪽 어깨 아래로 흘려 내리고 다른 손으로 안쪽 상의의 목깃까지 끌어내린다. 드러난 맨어깨와 타투 사이로 붉은 눈이 {name}의 눈높이에 그대로 있다. 서연의 '너도 도착했어?'라는 메시지가 화면 위에서 사라지지 않는다.*
-
----
-
-### `wall_dain_glimpse_1`
-- 배경: `school_back.png`
-- 다음: `wall_dain_glimpse_2`
-
-- 캐릭터: `없음`
-**{name}**: *다인과 헤어진 뒤, 도서관 별관 창문 한 칸에만 불이 남아 있는 걸 본다.*
-
----
-
-### `wall_dain_glimpse_2`
-- 배경: `yuna_hideout.png`
-- 다음: `wall_dain_glimpse_4_b`
-
-- 캐릭터: `yuna_sad.png`
-**{name}**: *유나는 열린 책을 앞에 둔 채 창밖만 보고 있다. 책장은 한 장도 넘어가지 않는다.*
-
----
-
-### `wall_dain_glimpse_4_b`
-- 배경: `school_back.png`
-- 다음: `wall_dain_glimpse_4_c`
-
-- 캐릭터: `yuna_sad.png` @ 0.35
-**{name}**: *밤 10시. 유나에게서 메시지가 온다. 바로 아래에는 다인의 '집 도착!' 알림이 떠 있다.*
-
----
-
-### `wall_dain_glimpse_4_c`
-- 배경: `school_back.png`
-- 선택지:
-  1. "다인에게 답장하고 약속대로 돌아간다" → `day4_hidden_msg_branch` | Dain +5, Yuna -6 | 플래그: `day4_held_route_dain`
-  2. "학교 후문으로 돌아가 유나 곁에 남는다" → `wall_dain_glimpse_4` | Yuna +8, Dain -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_penalty_deferred`
-
-- 캐릭터: `yuna_normal.png` @ 0.35
-**유나**: 전에 나를 봐주던 사람이 말도 없이 사라졌어. 오늘 또 혼자 남으면 그때로 돌아갈 것 같아. 다인과 있었어도 괜찮아. 지금은 네가 와줘.
-
----
-
-### `wall_dain_glimpse_4`
-- 배경: `event_temptation_yuna.png`
-- 다음: `day4_night_regret`
-
-- 캐릭터: `없음`
-**{name}**: *유나는 {name} 바로 앞까지 다가와 한 손으로 책장을 짚는다. 재킷을 한쪽 어깨 아래로 흘려 내리고 다른 손으로 안쪽 상의의 목깃까지 끌어내린다. 드러난 맨어깨와 타투 사이로 붉은 눈이 {name}의 눈높이에 그대로 있다. 다인의 '집 도착!' 알림이 화면 위에서 사라지지 않는다.*
-
----
-
-### `wall_dain_seo_tempt_1`
-- 배경: `school_back.png`
-- 다음: `wall_dain_seo_tempt_2`
-
-- 캐릭터: `seyoun_pout.png`
-**{name}**: *다인과 헤어져 정문으로 향하는데 서연이 옥상 계단 앞에 서 있다. 평소처럼 웃고 있지만 손끝은 교복 소매를 구기고 있다.*
-
----
-
-### `wall_dain_seo_tempt_2`
-- 배경: `school_back.png`
-- 선택지:
-  1. "다인에게 답장하고 약속대로 돌아간다" → `day4_hidden_msg_branch` | Dain +5, Seoyeon -6 | 플래그: `day4_held_route_dain`
-  2. "서연을 따라 옥상에 올라가 손을 잡는다" → `wall_dain_seo_tempt_accept` | Seoyeon +8, Dain -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_penalty_deferred`
-
-- 캐릭터: `seyoun_sad.png`
-**서연**: 오늘 집에 들어가면 또 웃는 얼굴부터 맞춰야 해. 딱 오늘만 학생회장 말고 그냥 서연으로 있게 해줘. 올라오면, 네 손 안 놓을게.
-
----
-
-### `wall_dain_seo_tempt_accept`
-- 배경: `event_temptation_seoyeon.png`
-- 다음: `day4_night_regret`
-
-- 캐릭터: `없음`
-**{name}**: *옥상문이 닫히자 서연은 말없이 블라우스 단추를 풀고 {name}의 손목을 잡아 제 쪽으로 끌어당긴다. 열린 옷깃 사이로 손바닥이 맨가슴에 닿는 순간, 서연의 손이 그 위를 덮는다. 다인의 '잘 들어갔냐?'라는 메시지가 화면을 밝힌다.*
-
----
-
-### `wall_yuna_glimpse_1`
-- 배경: `school_back.png`
-- 배경톤: `dream`
-- 다음: `wall_yuna_glimpse_2`
-
-- 캐릭터: `없음`
-**{name}**: *유나와 헤어진 뒤 정문 쪽 담장을 따라 걷는다. 교문 앞 가로등 아래 서연이 혼자 서 있다.*
-
----
-
-### `wall_yuna_glimpse_2`
-- 배경: `school_back.png`
-- 배경톤: `dream`
-- 다음: `wall_yuna_glimpse_3_b`
-
-- 캐릭터: `seyoun_pout.png`
-**{name}**: *서연은 휴대폰을 넣었다 꺼내길 반복한다. 이쪽을 보자 웃어 보이지만 손끝이 교복 소매를 구긴다.*
-
----
-
-### `wall_yuna_glimpse_3_b`
-- 배경: `school_back.png`
-- 배경톤: `dream`
-- 선택지:
-  1. "유나에게 답장하고 약속대로 돌아간다" → `day4_hidden_msg_branch` | Yuna +4, Seoyeon -6 | 플래그: `day4_held_route_yuna`
-  2. "서연을 따라 옥상으로 올라가 손을 잡는다" → `wall_yuna_glimpse_4` | Seoyeon +8, Yuna -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_penalty_deferred`
-
-- 캐릭터: `seyoun_normal.png`
-**서연**: 오늘 집에 들어가면 또 웃는 얼굴부터 맞춰야 해. 딱 오늘만 학생회장 말고 그냥 서연으로 있게 해줘. 올라오면, 네 손 안 놓을게.
-
----
-
-### `wall_yuna_glimpse_4`
-- 배경: `event_temptation_seoyeon.png`
-- 다음: `day4_night_regret`
-
-- 캐릭터: `없음`
-**{name}**: *옥상문이 닫히자 서연은 말없이 블라우스 단추를 풀고 {name}의 손목을 잡아 제 쪽으로 끌어당긴다. 열린 옷깃 사이로 손바닥이 맨가슴에 닿는 순간, 서연의 손이 그 위를 덮는다. 주머니 속에서 유나의 메시지가 한 번, 다시 한 번 울린다.*
-
----
-
-### `wall_yuna_dain_tempt_1`
-- 배경: `gym.png`
-- 배경톤: `lights-off`
-- 다음: `wall_yuna_dain_tempt_2`
-
-- 캐릭터: `dain_sad.png`
-**{name}**: *유나와 헤어져 돌아가는 길, 불 꺼진 체육관 비상문 앞에 다인이 무릎 테이프를 만지며 서 있다.*
-
----
-
-### `wall_yuna_dain_tempt_2`
-- 배경: `gym.png`
-- 배경톤: `lights-off`
-- 선택지:
-  1. "유나에게 답장하고 약속대로 돌아간다" → `day4_hidden_msg_branch` | Yuna +4, Dain -6 | 플래그: `day4_held_route_yuna`
-  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `wall_yuna_dain_tempt_accept` | Dain +8, Yuna -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_penalty_deferred`
-
-- 캐릭터: `dain_sad.png`
-**다인**: 열 번만 받아줘. 끝나면… 나 좀 안아주라. 오늘은 혼자 괜찮은 척 못 하겠어.
+**{name}**: *약속을 마치고 집으로 돌아온다. 현관문이 닫히자 방 안에는 휴대폰 불빛만 남는다.*
 
 ---
 
@@ -19341,7 +19350,7 @@
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_dain_lie` | Dain -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_dain`
 
 - 캐릭터: `dain_sad.png`
-**다인**: *다인이 책상 옆에 서 있을 때 휴대폰이 울린다. 서연의 알림에 '어젯밤 옥상에서 잡았던 손, 아직 기억나'가 뜬다. 다인의 웃음이 그대로 멎는다.* 나한테 잘 들어갔냐고 해 놓고 다시 옥상에 간 거야?
+**다인**: *다인이 책상 옆에 서 있을 때 휴대폰이 울린다. 서연의 알림에 '어젯밤 옥상에서 잡았던 손, 아직 기억나'가 뜬다. 다인의 웃음이 그대로 멎는다.* 내가 기다리는 동안 옥상에 간 거야?
 
 ---
 
@@ -19388,7 +19397,7 @@
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_dain_lie` | Dain -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_dain`
 
 - 캐릭터: `dain_sad.png`
-**다인**: *다인이 건너편 의자를 당기는 순간 유나의 알림이 화면을 밝힌다. '어제 별관에 남아 줘서 고마워.' 다인의 손이 의자 등받이에서 멎는다.* 내가 집 도착했다고 보낸 뒤에 별관으로 간 거야?
+**다인**: *다인이 건너편 의자를 당기는 순간 유나의 알림이 화면을 밝힌다. '어제 별관에 남아 줘서 고마워.' 다인의 손이 의자 등받이에서 멎는다.* 내 메시지는 읽어 놓고 별관으로 간 거야?
 
 ---
 
@@ -19430,7 +19439,7 @@
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_seoyeon_lie` | Seoyeon -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_seoyeon`
 
 - 캐릭터: `seyoun_sad.png`
-**서연**: *아침 교실. 서연 앞에 휴대폰을 내려놓는 순간 화면이 켜진다. 다인에게서 온 알림에 '어제 체육관에서 약속한 거, 잊지 마'가 그대로 뜬다. 서연의 시선이 화면에 멎는다.* 어제 나 바래다주고 체육관에 갔어?
+**서연**: *아침 교실. 서연 앞에 휴대폰을 내려놓는 순간 화면이 켜진다. 다인에게서 온 알림에 '어제 체육관에서 약속한 거, 잊지 마'가 그대로 뜬다. 서연의 시선이 화면에 멎는다.* 어제 공원에는 오지 않고 체육관에 간 거야?
 
 ---
 
@@ -19852,7 +19861,7 @@
 - 배경: `room_school.png`
 - 배경톤: `empty`
 - 선택지:
-  1. "7년이나 붙잡으셨으니 분명 좋은 글일 거예요." → `hidden_homeroom_d5_praise_trap_1` | Teacher -25 | 플래그: `teacher_praise_broken`
+  1. "7년이나 쓰셨으면 거의 완성본이겠네요. 굳이 표시할 건 없을 것 같아요." → `hidden_homeroom_d5_praise_trap_1` | Teacher -25 | 플래그: `teacher_praise_broken`
   2. "먼저 읽어볼게요. 표시해도 돼요?" → `hidden_homeroom_d5_correct_1` | Teacher +11
 
 - 캐릭터: `teacher_sad.png`
@@ -20772,14 +20781,73 @@
 
 ### `morning5_end_branch`
 - 배경: `room_school.png`
+- 다음: `morning5_sojeong_1`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `morning5_sojeong_1`
+- 배경: `room_school.png`
+- 배경톤: `empty`
+- 다음: `morning5_sojeong_2`
+
+- 캐릭터: `없음`
+**{name}**: *휴대폰 메모 앱을 연다. '소정에게'로 시작하는 빈 초안이 서른아홉 개다.*
+
+---
+
+### `morning5_sojeong_2`
+- 배경: `room_school.png`
+- 배경톤: `empty`
+- 다음: `morning5_sojeong_3`
+
+- 캐릭터: `없음`
+**{name}**: *마흔 번째 초안은 쓰지 않는다. 가장 짧은 문장을 골라 그대로 보낸다.*
+
+---
+
+### `morning5_sojeong_3`
+- 배경: `room_school.png`
+- 배경톤: `empty`
+- 다음: `morning5_sojeong_4`
+
+- 캐릭터: `없음`
+**{name}**: 그때 네 책상과 낙서를 보고도 선생님께 말하지 않았어. 모른 척한 것도 내 선택이었어. 미안해. 답장은 안 해도 돼.
+
+---
+
+### `morning5_sojeong_4`
+- 배경: `room_school.png`
+- 배경톤: `empty`
+- 플래그: `sojeong_apology_sent`
+- 다음: `morning5_sojeong_5`
+
+- 캐릭터: `없음`
+**{name}**: *전송 표시가 뜬다. 읽음 표시는 기다리지 않고 대화방을 닫는다.*
+
+---
+
+### `morning5_sojeong_5`
+- 배경: `room_school.png`
+- 배경톤: `empty`
+- 다음: `morning5_route_branch`
+
+- 캐릭터: `없음`
+**{name}**: *지금 담임에게도 메시지를 보낸다. '전학 오기 전 학교에서 제가 모른 척한 일에 대해 상담받고 싶습니다.' 축제 안내 방송이 울릴 때까지 전송한 두 문장을 지우지 않는다.*
+
+---
+
+### `morning5_route_branch`
+- 배경: `room_school.png`
 - 분기:
   - [`day4_counteroffer_penalty_deferred`] → `tour_co_branch`
   - [`day4_confession_accepted`] → `morning5_committed_end`
   - [기본] → `morning5_end`
 
 - 캐릭터: `없음`
-
-<!-- i18n -->
 
 ---
 
@@ -20935,10 +21003,56 @@
 ### `tour_seo_1`
 - 배경: `school.png`
 - BGM: `sunset1.mp3`
-- 다음: `tour_seo_2`
+- 다음: `tour_seo_event_1`
 
 - 캐릭터: `seyoun_normal.png`
 **{name}**: *교문 앞에 나란히 선다. 첫날 서연이 기다리고 있던 바로 그 자리.*
+
+---
+
+### `tour_seo_event_1`
+- 배경: `school.png`
+- 다음: `tour_seo_event_2`
+
+- 캐릭터: `haeun_worried.png`
+**하은**: 회장님, 방송부 리허설이랑 부스 안전 점검이 겹쳤어요. 제가 방송실로 갈까요?
+
+---
+
+### `tour_seo_event_2`
+- 배경: `school.png`
+- 다음: `tour_seo_event_3`
+
+- 캐릭터: `seyoun_worried.png`
+**{name}**: *서연의 손이 클립보드로 갔다가 멈춘다. 펜 끝으로 '방송' 칸을 두 번 두드린다.*
+
+---
+
+### `tour_seo_event_3`
+- 배경: `school.png`
+- 다음: `tour_seo_event_4`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 방송실은 네가 맡아 줘. 끝나면 결과만 알려 줘.
+
+---
+
+### `tour_seo_event_4`
+- 배경: `school.png`
+- 다음: `tour_seo_event_5`
+
+- 캐릭터: `haeun_normal.png`
+**하은**: 네. 대신 중간에 확인하러 오시면 안 돼요.
+
+---
+
+### `tour_seo_event_5`
+- 배경: `school.png`
+- 플래그: `day5_seoyeon_delegated`
+- 다음: `tour_seo_2`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: *하은이 뛰어간다. 서연은 한 번도 뒤돌아보지 않는다.* 맞아. 하나쯤 내 손을 안 거쳐도 안 무너지겠지.
 
 ---
 
@@ -21092,7 +21206,7 @@
 
 ### `tour_yuna_1`
 - 배경: `yuna_hideout.png`
-- 다음: `tour_yuna_2`
+- 다음: `tour_yuna_event_1`
 
 - 캐릭터: `yuna_normal.png`
 **{name}**: *도서관 별관. 창문 틈의 오후 빛이 낡은 소파 한쪽에 걸려 있다. 처음 들어왔을 때와 같은 먼지 냄새가 난다.*
@@ -21101,10 +21215,56 @@
 
 ### `tour_yuna_1b`
 - 배경: `yuna_hideout.png`
-- 다음: `tour_yuna_2`
+- 다음: `tour_yuna_event_1`
 
 - 캐릭터: `yuna_normal.png`
 **{name}**: *도서관 별관. 유나와 책을 읽던 낡은 소파에 창문 틈의 오후 빛이 걸려 있다.*
+
+---
+
+### `tour_yuna_event_1`
+- 배경: `school_hallway.png`
+- 다음: `tour_yuna_event_2`
+
+- 캐릭터: `없음`
+**{name}**: *별관 복도로 나오자 전시판 앞에 후배 둘이 서 있다. 유나가 익명으로 붙인 단편을 읽고 다음 이야기가 있느냐고 묻는다.*
+
+---
+
+### `tour_yuna_event_2`
+- 배경: `school_hallway.png`
+- 다음: `tour_yuna_event_3`
+
+- 캐릭터: `yuna_worried.png`
+**{name}**: *유나는 종이 모서리에 손을 댄다. 떼어 내려던 손이 제목 아래에서 멈춘다.*
+
+---
+
+### `tour_yuna_event_3`
+- 배경: `school_hallway.png`
+- 다음: `tour_yuna_event_4`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: 다음 편은 아직 없어. 대신 이건 내가 썼어.
+
+---
+
+### `tour_yuna_event_4`
+- 배경: `school_hallway.png`
+- 다음: `tour_yuna_event_5`
+
+- 캐릭터: `yuna_shy.png`
+**{name}**: *유나가 주머니에서 펜을 꺼내 제목 밑에 이름을 쓴다. '최유나'. 글자가 조금 기울었다.*
+
+---
+
+### `tour_yuna_event_5`
+- 배경: `school_hallway.png`
+- 플래그: `day5_yuna_signed_story`
+- 다음: `tour_yuna_2`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: *전시판에서 몸을 돌려 별관 안으로 돌아간다.* 결말은 먼저 너한테 보여 줄 거니까.
 
 ---
 
@@ -21241,7 +21401,7 @@
 ### `tour_dain_1`
 - 배경: `gym.png`
 - 배경톤: `lights-off`
-- 다음: `tour_dain_2`
+- 다음: `tour_dain_event_1`
 
 - 캐릭터: `없음`
 **{name}**: *체육관. 첫 내기를 했던 라인 옆에 어젯밤 정리한 공 보관함이 있다. 오늘은 불이 켜져 있다.*
@@ -21251,10 +21411,56 @@
 ### `tour_dain_1b`
 - 배경: `gym.png`
 - 배경톤: `lights-off`
-- 다음: `tour_dain_2`
+- 다음: `tour_dain_event_1`
 
 - 캐릭터: `없음`
 **{name}**: *체육관. 오늘은 불이 켜져 있다.*
+
+---
+
+### `tour_dain_event_1`
+- 배경: `gym.png`
+- 다음: `tour_dain_event_2`
+
+- 캐릭터: `dain_sad.png`
+**{name}**: *코치에게 전화가 온다. 다인은 체육대회 시범 경기에 뛸 수 있느냐는 말을 끝까지 듣는다.*
+
+---
+
+### `tour_dain_event_2`
+- 배경: `gym.png`
+- 다음: `tour_dain_event_3`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 저 안 뛸게요. 엄마한테도 오늘 말했어요. 대신 중계석 비어 있으면 제가 할게요.
+
+---
+
+### `tour_dain_event_3`
+- 배경: `dain_broadcast_booth.png`
+- 다음: `tour_dain_event_4`
+
+- 캐릭터: `dain_sweat.png`
+**{name}**: *잠시 뒤 다인이 중계석 마이크를 두드린다. 코트가 한눈에 내려다보인다.*
+
+---
+
+### `tour_dain_event_4`
+- 배경: `dain_broadcast_booth.png`
+- 다음: `tour_dain_event_5`
+
+- 캐릭터: `dain_laugh.png`
+**다인**: 자, 서브 들어갑니다! 방금 건 라인 안쪽! 항의는 경기 끝나고 받겠습니다!
+
+---
+
+### `tour_dain_event_5`
+- 배경: `dain_broadcast_booth.png`
+- 플래그: `day5_dain_chose_commentary`
+- 다음: `tour_dain_2`
+
+- 캐릭터: `dain_normal.png`
+**다인**: *마이크를 끄고 체육관으로 내려가며 숨을 고른다.* 뛰지 않아도 할 말은 있네. 생각보다 많아.
 
 ---
 
@@ -22988,7 +23194,7 @@
 - 다음: `day5_credits`
 
 - 캐릭터: `없음`
-**시스템**: ─── FRIEND END (고백 실패) ───
+**시스템**: ─── CONFESSION REJECTED END ───
 
 ---
 
@@ -24917,10 +25123,37 @@
 
 ### `perfect_epilogue_3_seo`
 - 배경: `ending_perfect_seoyeon.png`
-- 다음: `date_choice_perfect_seo`
+- 다음: `perfect_seo_coda_1`
 
 - 캐릭터: `없음`
 **서연**: 하나는 네가 골라.
+
+---
+
+### `perfect_seo_coda_1`
+- 배경: `ending_perfect_seoyeon.png`
+- 다음: `perfect_seo_coda_2`
+
+- 캐릭터: `없음`
+**{name}**: *사진 아래에 새 학생회 운영 파일이 붙는다. 마지막 페이지 총괄란에는 하은의 이름이 있다. 서연은 수정 표시를 하나도 남기지 않았다.*
+
+---
+
+### `perfect_seo_coda_2`
+- 배경: `ending_perfect_seoyeon.png`
+- 다음: `perfect_seo_coda_3`
+
+- 캐릭터: `없음`
+**서연**: 화분은 네가 먼저 골라. 아니, 사진으로 고르지 말고 토요일에 같이 가자.
+
+---
+
+### `perfect_seo_coda_3`
+- 배경: `ending_perfect_seoyeon.png`
+- 다음: `date_choice_perfect_seo`
+
+- 캐릭터: `없음`
+**{name}**: *약속 시간은 비어 있다. 내가 오후 세 시를 적자 서연은 '확인' 대신 '좋아'라고 답한다.*
 
 ---
 
@@ -25292,10 +25525,37 @@
 
 ### `perfect_epilogue_3_yuna`
 - 배경: `ending_perfect_yuna.png`
-- 다음: `date_choice_perfect_yuna`
+- 다음: `perfect_yuna_coda_1`
 
 - 캐릭터: `없음`
 **유나**: *여전히 말이 적다. {name}에게 보내는 쪽지는 조금 길어졌다.*
+
+---
+
+### `perfect_yuna_coda_1`
+- 배경: `ending_perfect_yuna.png`
+- 다음: `perfect_yuna_coda_2`
+
+- 캐릭터: `없음`
+**{name}**: *서점 사인회 공지가 올라온다. 익명 대신 '최유나'가 표지보다 크게 적혀 있다.*
+
+---
+
+### `perfect_yuna_coda_2`
+- 배경: `ending_perfect_yuna.png`
+- 다음: `perfect_yuna_coda_3`
+
+- 캐릭터: `없음`
+**유나**: 끝나면 와. 이번엔 숨지 않을 거야.
+
+---
+
+### `perfect_yuna_coda_3`
+- 배경: `ending_perfect_yuna.png`
+- 다음: `date_choice_perfect_yuna`
+
+- 캐릭터: `없음`
+**{name}**: *뒤이어 사인 연습 사진이 온다. 이름이 한 페이지 가득하다. 맨 아래에만 내 이름이 작게 적혀 있다.*
 
 ---
 
@@ -25730,10 +25990,37 @@
 
 ### `perfect_epilogue_3_dain`
 - 배경: `ending_perfect_dain.png`
-- 다음: `date_choice_perfect_dain`
+- 다음: `perfect_dain_coda_1`
 
 - 캐릭터: `없음`
 **{name}**: *통증이 있는 날에는 훈련 대신 재활 기록과 경기 영상을 함께 본다. 쉬어야 한다는 말도 이제 다인이 먼저 한다.*
+
+---
+
+### `perfect_dain_coda_1`
+- 배경: `ending_perfect_dain.png`
+- 다음: `perfect_dain_coda_2`
+
+- 캐릭터: `없음`
+**다인**: 엄마가 재방송 세 번 봤대. 경기보다 내 해설이 더 시끄럽다고.
+
+---
+
+### `perfect_dain_coda_2`
+- 배경: `ending_perfect_dain.png`
+- 다음: `perfect_dain_coda_3`
+
+- 캐릭터: `없음`
+**{name}**: *다음 경기 대본 첫 줄에는 '아프면 멈춘다'가 굵게 적혀 있다. 지운 자국은 없다.*
+
+---
+
+### `perfect_dain_coda_3`
+- 배경: `ending_perfect_dain.png`
+- 다음: `date_choice_perfect_dain`
+
+- 캐릭터: `없음`
+**다인**: 끝나고 같이 걸어가자. 오늘 속도는 내가 정할게.
 
 ---
 

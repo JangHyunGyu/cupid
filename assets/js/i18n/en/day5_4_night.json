@@ -969,7 +969,7 @@
     },
     "confess_fail_5": {
         "name": "System",
-        "text": "─── FRIEND END (Confession Failed) ───"
+        "text": "─── CONFESSION REJECTED END ───"
     },
     "day5_ending_good": {
         "name": "{name}",
@@ -1872,5 +1872,41 @@
     "forced_violation_day5_nurse_excuse": {
         "name": "School Nurse",
         "text": "*The school nurse's voice drops lower.* Do you think calling it a misunderstanding changes anything? The fact is that you ignored a refusal."
+    },
+    "perfect_seo_coda_1": {
+        "name": "{name}",
+        "text": "*A new student-council operations file is attached below the photo. Haeun's name fills the lead coordinator field on the last page, with no corrections from Seoyeon.*"
+    },
+    "perfect_seo_coda_2": {
+        "name": "Seoyeon",
+        "text": "Pick the plant first. No—don't choose from a photo. Let's go together on Saturday."
+    },
+    "perfect_seo_coda_3": {
+        "name": "{name}",
+        "text": "*The appointment time is blank. When I enter three in the afternoon, Seoyeon replies 'Sounds good' instead of 'Confirmed.'*"
+    },
+    "perfect_yuna_coda_1": {
+        "name": "{name}",
+        "text": "*A bookstore posts an announcement for a signing. 'Choi Yuna' appears larger than the book cover, with no anonymous byline in sight.*"
+    },
+    "perfect_yuna_coda_2": {
+        "name": "Yuna",
+        "text": "Come when it's over. I won't hide this time."
+    },
+    "perfect_yuna_coda_3": {
+        "name": "{name}",
+        "text": "*A photo of signature practice follows. Her name fills the page; only at the bottom is mine written in small letters.*"
+    },
+    "perfect_dain_coda_1": {
+        "name": "Dain",
+        "text": "Mom watched the replay three times. She says my commentary was louder than the match."
+    },
+    "perfect_dain_coda_2": {
+        "name": "{name}",
+        "text": "*The first line of her next match script reads 'Stop when it hurts' in bold. There are no eraser marks.*"
+    },
+    "perfect_dain_coda_3": {
+        "name": "Dain",
+        "text": "Let's walk home after. I set the pace today."
     }
 }

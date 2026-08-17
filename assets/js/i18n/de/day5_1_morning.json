@@ -1,6 +1,12 @@
 {
-    "hidden_homeroom_d5_low": {"name":"Klassenlehrerin","text":"*Deine Klassenlehrerin legt das gefaltete Manuskript in ihre Mappe und schließt sie.* Lassen wir es dabei. Den Rest erledige ich im Unterricht."},
-    "hidden_nurse_d5_low": {"name":"Schulkrankenschwester","text":"*Die Schulkrankenschwester will dir eine Karte für das Beratungszimmer geben, legt sie dann aber zurück in die Schublade.* Ich glaube nicht, dass wir gerade einen eigenen Termin vereinbaren sollten. Wenn du Hilfe brauchst, nutze bitte den offiziellen Weg. *Ich verlasse das Krankenzimmer und gehe zurück ins Klassenzimmer.*"},
+    "hidden_homeroom_d5_low": {
+        "name": "Klassenlehrerin",
+        "text": "*Deine Klassenlehrerin legt das gefaltete Manuskript in ihre Mappe und schließt sie.* Lassen wir es dabei. Den Rest erledige ich im Unterricht."
+    },
+    "hidden_nurse_d5_low": {
+        "name": "Schulkrankenschwester",
+        "text": "*Die Schulkrankenschwester will dir eine Karte für das Beratungszimmer geben, legt sie dann aber zurück in die Schublade.* Ich glaube nicht, dass wir gerade einen eigenen Termin vereinbaren sollten. Wenn du Hilfe brauchst, nutze bitte den offiziellen Weg. *Ich verlasse das Krankenzimmer und gehe zurück ins Klassenzimmer.*"
+    },
     "morning5_start": {
         "name": "{name}",
         "text": "*Fünfter Tag. Obwohl Sonntag ist, findet in der Schule eine Veranstaltung statt. Der Ärmel meiner Uniform kratzt nicht mehr am Handgelenk.*"
@@ -45,7 +51,7 @@
     "morning5_caught_by_dain_route": {},
     "morning5_caught_seoyeon_by_dain": {
         "name": "Seoyeon",
-        "text": "*Am Morgen im Klassenzimmer. Sobald ich mein Handy vor Seoyeon ablege, leuchtet der Bildschirm auf. Eine Nachricht von Dain lautet: „Vergiss nicht, was wir gestern Abend in der Turnhalle versprochen haben.“ Seoyeons Blick bleibt am Bildschirm hängen.* Du hast mich nach Hause gebracht und bist danach in die Turnhalle gegangen?",
+        "text": "*Am Morgen im Klassenzimmer. Sobald ich mein Handy vor Seoyeon ablege, leuchtet der Bildschirm auf. Eine Nachricht von Dain lautet: „Vergiss nicht, was wir gestern Abend in der Turnhalle versprochen haben.“ Seoyeons Blick bleibt am Bildschirm hängen.* Du bist nicht in den Park gekommen, sondern in die Turnhalle gegangen?",
         "choices": [
             "Ihr ohne Ausflüchte von letzter Nacht erzählen",
             "So tun, als wäre es nichts Wichtiges gewesen"
@@ -61,7 +67,7 @@
     },
     "morning5_caught_dain_by_seoyeon": {
         "name": "Dain",
-        "text": "*Das Handy vibriert, während Dain neben dem Tisch steht. Eine Nachricht von Seoyeon lautet: „Ich erinnere mich noch an die Hand, die ich gestern Abend auf dem Dach gehalten habe.“ Dains Lächeln erstarrt.* Du hast mich gefragt, ob ich gut angekommen bin, und bist dann wieder aufs Dach gegangen?",
+        "text": "*Das Handy vibriert, während Dain neben dem Tisch steht. Eine Nachricht von Seoyeon lautet: „Ich erinnere mich noch an die Hand, die ich gestern Abend auf dem Dach gehalten habe.“ Dains Lächeln erstarrt.* Du warst auf dem Dach, während ich gewartet habe?",
         "choices": [
             "Ihr ohne Ausflüchte von letzter Nacht erzählen",
             "So tun, als wäre es nichts Wichtiges gewesen"
@@ -69,7 +75,7 @@
     },
     "morning5_caught_dain_by_yuna": {
         "name": "Dain",
-        "text": "*Als Dain den Stuhl gegenüber heranzieht, erhellt eine Nachricht von Yuna den Bildschirm. „Danke, dass du gestern Abend im Nebengebäude bei mir geblieben bist.“ Dains Hand hält an der Rückenlehne inne.* Du bist ins Nebengebäude gegangen, nachdem ich dir geschrieben hatte, dass ich zu Hause bin?",
+        "text": "*Als Dain den Stuhl gegenüber heranzieht, erhellt eine Nachricht von Yuna den Bildschirm. „Danke, dass du gestern Abend im Nebengebäude bei mir geblieben bist.“ Dains Hand hält an der Rückenlehne inne.* Du hast meine Nachricht gelesen und bist ins Nebengebäude gegangen?",
         "choices": [
             "Ihr ohne Ausflüchte von letzter Nacht erzählen",
             "So tun, als wäre es nichts Wichtiges gewesen"
@@ -255,7 +261,7 @@
         "name": "{name}",
         "text": "*Ich halte das Manuskript im Arm. Die Ecke des Umschlags drückt gegen meine Armbeuge.*",
         "choices": [
-            "Wenn Sie sieben Jahre daran gearbeitet haben, ist es bestimmt gut.",
+            "Nach sieben Jahren ist es bestimmt fast fertig. Ich muss wohl nichts mehr markieren.",
             "Ich lese erst einmal. Darf ich Stellen markieren?"
         ]
     },
@@ -637,5 +643,25 @@
     "morning5_after_counteroffer": {
         "name": "{name}",
         "text": "*Ein Zettel rutscht vom Pult. Niemand hebt ihn auf. Die Ansage zur Veranstaltung kommt zuerst.*"
+    },
+    "morning5_sojeong_1": {
+        "name": "{name}",
+        "text": "*Ich öffne die Notizen-App. Neununddreißig leere Entwürfe beginnen mit „An Sojeong“.*"
+    },
+    "morning5_sojeong_2": {
+        "name": "{name}",
+        "text": "*Einen vierzigsten schreibe ich nicht. Ich wähle den kürzesten Entwurf und sende ihn unverändert ab.*"
+    },
+    "morning5_sojeong_3": {
+        "name": "{name}",
+        "text": "Ich habe deinen Tisch und die Schmierereien gesehen, aber keiner Lehrkraft etwas gesagt. Wegzusehen war auch meine Entscheidung. Es tut mir leid. Du musst nicht antworten."
+    },
+    "morning5_sojeong_4": {
+        "name": "{name}",
+        "text": "*Die Nachricht wird gesendet. Ich schließe den Chat, ohne auf eine Lesebestätigung zu warten.*"
+    },
+    "morning5_sojeong_5": {
+        "name": "{name}",
+        "text": "*Auch meiner jetzigen Klassenleitung schreibe ich: „Ich möchte über etwas sprechen, das ich an meiner alten Schule absichtlich ignoriert habe.“ Bis die Festivalansage beginnt, lasse ich beide Nachrichten auf dem Bildschirm stehen.*"
     }
 }

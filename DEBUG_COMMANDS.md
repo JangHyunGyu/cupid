@@ -194,7 +194,7 @@ gameEngine.stateManager.setDay(5);
 gameEngine.renderScene("ending_start");
 ```
 
-### HAREM END (셋 다 고백 + 수락)
+### UNRESOLVED END (다중 관계의 균열을 해결하지 못함)
 ```js
 gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.setFlag("ending_harem");

@@ -1,7 +1,16 @@
 {
-    "tour_seo_low": {"name":"Seoyeon","text":"*Am Ende des Flurs begegnest du Seoyeon. Sie richtet den Riemen ihrer Tasche und tritt einen halben Schritt zur Seite.* Sehen wir uns heute getrennt um. Ich muss noch etwas erledigen."},
-    "tour_yuna_low": {"name":"Yuna","text":"*Die Tür zum Nebengebäude ist abgeschlossen. Kurz darauf kommt eine knappe Nachricht von Yuna.* Ich möchte heute allein sein. *Ich kehre vom Nebengebäude um und gehe zurück auf den Flur.*"},
-    "tour_dain_low": {"name":"Dain","text":"*Vor der Sporthalle triffst du auf Dain. Mit einem Ball in den Händen dreht sie sich wieder zum Spielfeld.* Ich muss heute trainieren. Bis später."},
+    "tour_seo_low": {
+        "name": "Seoyeon",
+        "text": "*Am Ende des Flurs begegnest du Seoyeon. Sie richtet den Riemen ihrer Tasche und tritt einen halben Schritt zur Seite.* Sehen wir uns heute getrennt um. Ich muss noch etwas erledigen."
+    },
+    "tour_yuna_low": {
+        "name": "Yuna",
+        "text": "*Die Tür zum Nebengebäude ist abgeschlossen. Kurz darauf kommt eine knappe Nachricht von Yuna.* Ich möchte heute allein sein. *Ich kehre vom Nebengebäude um und gehe zurück auf den Flur.*"
+    },
+    "tour_dain_low": {
+        "name": "Dain",
+        "text": "*Vor der Sporthalle triffst du auf Dain. Mit einem Ball in den Händen dreht sie sich wieder zum Spielfeld.* Ich muss heute trainieren. Bis später."
+    },
     "tour_seo_1": {
         "name": "{name}",
         "text": "*Wir stehen nebeneinander vor dem Schultor. Genau die Stelle, an der Seoyeon am ersten Tag gewartet hat.*"
@@ -246,5 +255,65 @@
     "tour_co_dain_3": {
         "name": "{name}",
         "text": "*Dain zieht einmal am Handgelenkband und lässt los.*"
+    },
+    "tour_seo_event_1": {
+        "name": "Haeun",
+        "text": "Präsidentin, die Probe der Rundfunk-AG überschneidet sich mit der Sicherheitsprüfung der Stände. Soll ich den Senderaum übernehmen?"
+    },
+    "tour_seo_event_2": {
+        "name": "{name}",
+        "text": "*Seoyeons Hand bewegt sich zum Klemmbrett und hält inne. Mit dem Stift tippt sie zweimal auf das Feld „Rundfunk“.*"
+    },
+    "tour_seo_event_3": {
+        "name": "Seoyeon",
+        "text": "Übernimm den Senderaum. Schick mir danach nur das Ergebnis."
+    },
+    "tour_seo_event_4": {
+        "name": "Haeun",
+        "text": "In Ordnung. Aber Sie dürfen nicht zwischendurch nachsehen kommen."
+    },
+    "tour_seo_event_5": {
+        "name": "Seoyeon",
+        "text": "*Haeun läuft davon. Seoyeon blickt kein einziges Mal zurück.* Stimmt. Eine Sache kann durch andere Hände gehen, ohne dass gleich das ganze Festival zusammenbricht."
+    },
+    "tour_yuna_event_1": {
+        "name": "{name}",
+        "text": "*Als wir in den Flur des Nebengebäudes treten, stehen zwei jüngere Schüler vor der Pinnwand. Sie lesen Yunas anonyme Kurzgeschichte und fragen, ob es eine Fortsetzung gibt.*"
+    },
+    "tour_yuna_event_2": {
+        "name": "{name}",
+        "text": "*Yuna berührt eine Ecke des Blatts. Die Hand, die es abreißen wollte, hält unter dem Titel inne.*"
+    },
+    "tour_yuna_event_3": {
+        "name": "Yuna",
+        "text": "Eine Fortsetzung gibt es noch nicht. Aber das hier habe ich geschrieben."
+    },
+    "tour_yuna_event_4": {
+        "name": "{name}",
+        "text": "*Yuna holt einen Stift aus der Tasche und schreibt unter den Titel: „Choi Yuna“. Die Buchstaben stehen etwas schief.*"
+    },
+    "tour_yuna_event_5": {
+        "name": "Yuna",
+        "text": "*Sie wendet sich von der Pinnwand ab und geht zurück ins Nebengebäude.* Das Ende zeige ich trotzdem zuerst dir."
+    },
+    "tour_dain_event_1": {
+        "name": "{name}",
+        "text": "*Der Trainer ruft an. Dain hört sich die Frage, ob sie beim Schaukampf des Sportfests spielen kann, bis zum Ende an.*"
+    },
+    "tour_dain_event_2": {
+        "name": "Dain",
+        "text": "Ich spiele nicht. Ich habe es heute auch Mama gesagt. Aber wenn die Kommentatorenkabine frei ist, übernehme ich."
+    },
+    "tour_dain_event_3": {
+        "name": "{name}",
+        "text": "*Kurz darauf tippt Dain gegen das Mikrofon in der Kabine. Von hier aus ist das ganze Feld zu sehen.*"
+    },
+    "tour_dain_event_4": {
+        "name": "Dain",
+        "text": "Und der Aufschlag kommt! Der war innerhalb der Linie! Beschwerden nehmen wir nach dem Spiel an!"
+    },
+    "tour_dain_event_5": {
+        "name": "Dain",
+        "text": "*Sie schaltet das Mikrofon aus und holt Luft, während wir zur Turnhalle hinuntergehen.* Offenbar habe ich auch ohne zu spielen etwas zu sagen. Mehr als gedacht."
     }
 }

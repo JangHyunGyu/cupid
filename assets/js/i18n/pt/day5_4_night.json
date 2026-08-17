@@ -969,7 +969,7 @@
     },
     "confess_fail_5": {
         "name": "Sistema",
-        "text": "─── FRIEND END (Declaração Falhou) ───"
+        "text": "─── CONFESSION REJECTED END ───"
     },
     "day5_ending_good": {
         "name": "{name}",
@@ -1872,5 +1872,41 @@
     "forced_violation_day5_nurse_excuse": {
         "name": "Enfermeira",
         "text": "*A voz da enfermeira fica ainda mais baixa.* Acha que chamar de mal-entendido muda alguma coisa? Você ignorou uma recusa. Isso é fato."
+    },
+    "perfect_seo_coda_1": {
+        "name": "{name}",
+        "text": "*Um novo arquivo de organização do conselho aparece anexado sob a foto. Na última página, Haeun consta como coordenadora-geral, sem uma única correção de Seoyeon.*"
+    },
+    "perfect_seo_coda_2": {
+        "name": "Seoyeon",
+        "text": "Escolhe o vaso primeiro. Não, não escolhe por foto. Vamos juntos no sábado."
+    },
+    "perfect_seo_coda_3": {
+        "name": "{name}",
+        "text": "*O horário está em branco. Quando escrevo três da tarde, Seoyeon responde “Gostei” em vez de “Confirmado”.*"
+    },
+    "perfect_yuna_coda_1": {
+        "name": "{name}",
+        "text": "*Uma livraria publica o anúncio de uma sessão de autógrafos. “Choi Yuna” aparece maior que a capa, sem nenhum crédito anônimo.*"
+    },
+    "perfect_yuna_coda_2": {
+        "name": "Yuna",
+        "text": "Vem quando acabar. Desta vez eu não vou me esconder."
+    },
+    "perfect_yuna_coda_3": {
+        "name": "{name}",
+        "text": "*Depois chega uma foto dos autógrafos que ela praticou. O nome ocupa a página inteira; só no fim o meu aparece em letras pequenas.*"
+    },
+    "perfect_dain_coda_1": {
+        "name": "Dain",
+        "text": "Minha mãe viu a reprise três vezes. Disse que meus comentários estavam mais altos que o jogo."
+    },
+    "perfect_dain_coda_2": {
+        "name": "{name}",
+        "text": "*A primeira linha do roteiro da próxima partida diz “Pare se doer” em negrito. Não há marcas de borracha.*"
+    },
+    "perfect_dain_coda_3": {
+        "name": "Dain",
+        "text": "Vamos voltar andando juntos depois. Hoje eu escolho o ritmo."
     }
 }

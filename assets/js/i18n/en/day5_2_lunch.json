@@ -1,7 +1,16 @@
 {
-    "tour_seo_low": {"name":"Seoyeon","text":"*You run into Seoyeon at the end of the hall. She adjusts her bag strap and steps half a pace aside.* Let's look around separately today. I still have things to finish."},
-    "tour_yuna_low": {"name":"Yuna","text":"*The annex door is locked. A short message from Yuna arrives a moment later.* I want to be alone today. *I turn back from the annex and head for the hallway.*"},
-    "tour_dain_low": {"name":"Dain","text":"*You meet Dain outside the gym. Holding a ball, she turns back toward the court.* I need to practice today. See you later."},
+    "tour_seo_low": {
+        "name": "Seoyeon",
+        "text": "*You run into Seoyeon at the end of the hall. She adjusts her bag strap and steps half a pace aside.* Let's look around separately today. I still have things to finish."
+    },
+    "tour_yuna_low": {
+        "name": "Yuna",
+        "text": "*The annex door is locked. A short message from Yuna arrives a moment later.* I want to be alone today. *I turn back from the annex and head for the hallway.*"
+    },
+    "tour_dain_low": {
+        "name": "Dain",
+        "text": "*You meet Dain outside the gym. Holding a ball, she turns back toward the court.* I need to practice today. See you later."
+    },
     "tour_seo_1": {
         "name": "{name}",
         "text": "*We stand side by side in front of the school gate. The very spot where Seoyeon was waiting on Day 1.*"
@@ -246,5 +255,65 @@
     "tour_co_dain_3": {
         "name": "{name}",
         "text": "*Dain tugs the wrist wrap once and lets it go.*"
+    },
+    "tour_seo_event_1": {
+        "name": "Haeun",
+        "text": "President, the broadcast rehearsal overlaps with the booth safety check. Should I take the broadcast room?"
+    },
+    "tour_seo_event_2": {
+        "name": "{name}",
+        "text": "*Seoyeon's hand moves toward the clipboard, then stops. She taps the box marked 'Broadcast' twice with her pen.*"
+    },
+    "tour_seo_event_3": {
+        "name": "Seoyeon",
+        "text": "Take the broadcast room. Just send me the result when you finish."
+    },
+    "tour_seo_event_4": {
+        "name": "Haeun",
+        "text": "All right. But you can't come check on me halfway through."
+    },
+    "tour_seo_event_5": {
+        "name": "Seoyeon",
+        "text": "*Haeun runs off. Seoyeon does not look back once.* Right. One thing can pass through someone else's hands without the festival collapsing."
+    },
+    "tour_yuna_event_1": {
+        "name": "{name}",
+        "text": "*When we step into the annex hallway, two younger students are at the display board. They are reading Yuna's anonymous story and asking whether there is more.*"
+    },
+    "tour_yuna_event_2": {
+        "name": "{name}",
+        "text": "*Yuna touches one corner of the page. The hand that meant to tear it down stops beneath the title.*"
+    },
+    "tour_yuna_event_3": {
+        "name": "Yuna",
+        "text": "There isn't a next part yet. But I wrote this."
+    },
+    "tour_yuna_event_4": {
+        "name": "{name}",
+        "text": "*Yuna takes a pen from her pocket and writes beneath the title: 'Choi Yuna.' The letters lean slightly.*"
+    },
+    "tour_yuna_event_5": {
+        "name": "Yuna",
+        "text": "*She turns from the display and walks back into the annex.* You still get to see the ending first."
+    },
+    "tour_dain_event_1": {
+        "name": "{name}",
+        "text": "*The coach calls. Dain listens all the way through the question of whether she can play in the sports-day exhibition match.*"
+    },
+    "tour_dain_event_2": {
+        "name": "Dain",
+        "text": "I won't play. I told Mom today too. But if the commentary booth is empty, I'll take it."
+    },
+    "tour_dain_event_3": {
+        "name": "{name}",
+        "text": "*A little later, Dain taps the microphone in the booth. The entire court lies below us.*"
+    },
+    "tour_dain_event_4": {
+        "name": "Dain",
+        "text": "Here comes the serve! That one was inside the line! Complaints accepted after the match!"
+    },
+    "tour_dain_event_5": {
+        "name": "Dain",
+        "text": "*She switches off the microphone and catches her breath as we head down to the gym.* Turns out I still have things to say when I am not playing. A lot of them."
     }
 }

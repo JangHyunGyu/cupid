@@ -314,13 +314,13 @@
     },
     "wall_seo_glimpse_1": {
         "name": "{name}",
-        "text": "*After walking Seoyeon home, I follow the school wall back. Dain stands by the dark gym's emergency door, picking at the tape around her knee.*"
+        "text": "*On the way to meet Seoyeon at the park at ten, I find Dain outside the dark gym, touching the tape on her knee.*"
     },
     "wall_seo_glimpse_2": {
         "name": "Dain",
         "text": "Just return ten. When we're done... hug me, okay? I can't keep pretending I'm fine by myself tonight.",
         "choices": [
-            "Keep my promise to Seoyeon and go home",
+            "Keep the promise and go to Seoyeon at the park",
             "Enter the gym and stay with Dain"
         ]
     },
@@ -330,19 +330,19 @@
     },
     "wall_seo_yuna_tempt_1": {
         "name": "{name}",
-        "text": "*On the way home, Yuna texts, 'The annex light is still on.' A photo follows: two empty chairs side by side.*"
+        "text": "*On the way to the park, Yuna sends a message: 'The annex lights are still on.' A photo follows, showing two empty chairs.*"
     },
     "wall_seo_yuna_tempt_2": {
         "name": "Yuna",
         "text": "Someone who once noticed me disappeared without a word. If you leave tonight, it feels like that day will happen all over again. Just for tonight, stay here.",
         "choices": [
-            "Reply to Seoyeon and keep my promise",
+            "Reply to Seoyeon and continue to the park",
             "Go to the annex and stay beside Yuna"
         ]
     },
     "wall_seo_yuna_tempt_accept": {
         "name": "{name}",
-        "text": "*Yuna steps right up to {name} and braces one hand against the shelf. She lets her blazer slip below one shoulder and uses the other hand to tug down the neckline of her dark top. Between her bare shoulder and tattoo, her red eyes stay level with {name}. Seoyeon's message—'Did you make it home too?'—stays at the top of the screen.*"
+        "text": "*Yuna steps right up to {name} and braces one hand against the shelf. She lets her blazer slip below one shoulder and uses the other hand to tug down the neckline of her dark top. Between her bare shoulder and tattoo, her red eyes stay level with {name}. Seoyeon's message—'I'm on the park bench.'—stays at the top of the screen.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -474,7 +474,7 @@
     },
     "wall_dain_19": {
         "name": "Dain",
-        "text": "I didn't tell anyone. Not even my parents. 'Dain wouldn't be Dain if she couldn't play!' — I didn't want to hear that."
+        "text": "I pretended rehab was over. I never told anyone when it started hurting again. Not even my parents. I didn't want to hear, 'Dain isn't Dain if she isn't playing!'"
     },
     "wall_dain_19_b": {
         "name": "Dain",
@@ -648,7 +648,7 @@
     },
     "wall_dain_glimpse_1": {
         "name": "{name}",
-        "text": "*After parting from Dain, I notice a single light still burning in the library annex.*"
+        "text": "*At ten, on the way to the gym where Dain is waiting, I notice a single lit window in the library annex.*"
     },
     "wall_dain_glimpse_2": {
         "name": "{name}",
@@ -656,35 +656,35 @@
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*Yuna steps right up to {name} and braces one hand against the shelf. She lets her blazer slip below one shoulder and uses the other hand to tug down the neckline of her dark top. Between her bare shoulder and tattoo, her red eyes stay level with {name}. Dain's 'I'm home!' stays at the top of the screen.*"
+        "text": "*Yuna steps right up to {name} and braces one hand against the shelf. She lets her blazer slip below one shoulder and uses the other hand to tug down the neckline of her dark top. Between her bare shoulder and tattoo, her red eyes stay level with {name}. Dain's 'Gym back door is open.' stays at the top of the screen.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
-        "text": "*10 PM. A message from Yuna appears just above Dain's 'Made it home!' notification.*"
+        "text": "*10 PM. A message from Yuna appears just above Dain's 'Gym back door is open.' notification.*"
     },
     "wall_dain_glimpse_4_c": {
         "name": "Yuna",
         "text": "Someone who once noticed me disappeared without a word. If I'm alone again tonight, I think I'll go back to that day. I don't care that you were with Dain. I need you to come now.",
         "choices": [
-            "Reply to Dain and keep my promise",
+            "Reply to Dain and continue to the gym",
             "Go back to the school gate and stay with Yuna"
         ]
     },
     "wall_dain_seo_tempt_1": {
         "name": "{name}",
-        "text": "*After parting from Dain, I head for the main gate and find Seoyeon waiting by the rooftop stairs. She is smiling as usual, but her fingers crumple the edge of her sleeve.*"
+        "text": "*On the way to the gym where Dain is waiting, I find Seoyeon by the rooftop stairs. She is smiling, but her fingers crush the cuff of her uniform.*"
     },
     "wall_dain_seo_tempt_2": {
         "name": "Seoyeon",
         "text": "When I go home tonight, I'll have to put my smile back on first. Just for tonight, let me be Seoyeon instead of the student council president. Come upstairs, and I won't let go of your hand.",
         "choices": [
-            "Reply to Dain and keep my promise",
+            "Reply to Dain and continue to the gym",
             "Follow Seoyeon to the roof and take her hand"
         ]
     },
     "wall_dain_seo_tempt_accept": {
         "name": "{name}",
-        "text": "*The rooftop door closes. Without a word, Seoyeon undoes her blouse and catches {name}'s wrist, drawing the hand toward her. The palm meets the bare skin of her chest through the open blouse, and Seoyeon's hand settles over it. Dain's 'You get home okay?' lights the screen.*"
+        "text": "*The rooftop door closes. Without a word, Seoyeon undoes her blouse and catches {name}'s wrist, drawing the hand toward her. The palm meets the bare skin of her chest through the open blouse, and Seoyeon's hand settles over it. Dain's 'Gym back door is open.' lights the screen.*"
     },
     "wall_yuna_1": {
         "name": "{name}",
@@ -882,7 +882,7 @@
     },
     "wall_yuna_glimpse_1": {
         "name": "{name}",
-        "text": "*After parting from Yuna, I follow the wall toward the main gate. Seoyeon is standing alone beneath the streetlight.*"
+        "text": "*On the way to the school back gate where Yuna asked to meet, I find Seoyeon alone beneath the lamp by the front gate.*"
     },
     "wall_yuna_glimpse_2": {
         "name": "{name}",
@@ -892,7 +892,7 @@
         "name": "Seoyeon",
         "text": "When I go home tonight, I'll have to put my smile back on first. Just for tonight, let me be Seoyeon instead of the student council president. Come upstairs, and I won't let go of your hand.",
         "choices": [
-            "Reply to Yuna and keep my promise",
+            "Reply to Yuna and continue to the school back gate",
             "Follow Seoyeon to the roof and take her hand"
         ]
     },
@@ -902,13 +902,13 @@
     },
     "wall_yuna_dain_tempt_1": {
         "name": "{name}",
-        "text": "*On the way back after parting from Yuna, I find Dain by the dark gym's emergency door, picking at the tape around her knee.*"
+        "text": "*On the way to the school back gate where Yuna is waiting, I find Dain outside the dark gym, touching the tape on her knee.*"
     },
     "wall_yuna_dain_tempt_2": {
         "name": "Dain",
         "text": "Just return ten. When we're done... hug me, okay? I can't keep pretending I'm fine by myself tonight.",
         "choices": [
-            "Reply to Yuna and keep my promise",
+            "Reply to Yuna and continue to the school back gate",
             "Enter the gym and stay with Dain"
         ]
     },
@@ -1089,5 +1089,9 @@
     "forced_violation_day4_nurse_excuse": {
         "name": "School Nurse",
         "text": "*The school nurse's voice drops lower.* Do you think calling it a misunderstanding changes anything? The fact is that you ignored a refusal."
+    },
+    "day4_student_return_home": {
+        "name": "{name}",
+        "text": "*I return home after the meeting. When the front door closes, the phone is the only light left in my room.*"
     }
 }

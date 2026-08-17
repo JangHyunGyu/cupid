@@ -106,7 +106,7 @@
         "name": "Seoyeon",
         "text": "Não conte a ninguém o que viu hoje. E, por enquanto, trate-me como sempre.",
         "choices": [
-            "Quer um lenço umedecido?",
+            "Todo mundo tem dias assim. Não leva tão a sério.",
             "O quê? Não vi nada. Minha caneta caiu e entrei para pegar."
         ]
     },
@@ -430,7 +430,7 @@
         "name": "Dain",
         "text": "*Se senta no banco. A mão que esfrega o joelho fica no mesmo lugar por tempo demais.*",
         "choices": [
-            "...Tá bem? Não força. Que tal descansar hoje?",
+            "Eu sabia que você estava se forçando. Desiste do torneio e descansa hoje.",
             "Então eu fico aqui. Fala quando tiver vontade."
         ]
     },

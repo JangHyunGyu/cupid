@@ -969,7 +969,7 @@
     },
     "confess_fail_5": {
         "name": "System",
-        "text": "─── FRIEND END (Geständnis gescheitert) ───"
+        "text": "─── CONFESSION REJECTED END ───"
     },
     "day5_ending_good": {
         "name": "{name}",
@@ -1872,5 +1872,41 @@
     "forced_violation_day5_nurse_excuse": {
         "name": "Schulkrankenschwester",
         "text": "*Die Stimme der Schulkrankenschwester wird noch tiefer.* Glaubst du, das Wort Missverständnis ändert etwas? Du hast ein Nein ignoriert. Das ist eine Tatsache."
+    },
+    "perfect_seo_coda_1": {
+        "name": "{name}",
+        "text": "*Unter dem Foto hängt eine neue Organisationsdatei des Schülerrats. Auf der letzten Seite steht Haeun als Gesamtleitung; von Seoyeon stammt keine einzige Korrektur.*"
+    },
+    "perfect_seo_coda_2": {
+        "name": "Seoyeon",
+        "text": "Such du zuerst den Blumentopf aus. Nein, nicht auf einem Foto. Lass uns am Samstag zusammen hingehen."
+    },
+    "perfect_seo_coda_3": {
+        "name": "{name}",
+        "text": "*Die Uhrzeit ist noch frei. Als ich fünfzehn Uhr eintrage, antwortet Seoyeon mit „Klingt gut“ statt mit „Bestätigt“.*"
+    },
+    "perfect_yuna_coda_1": {
+        "name": "{name}",
+        "text": "*Eine Buchhandlung veröffentlicht die Ankündigung einer Signierstunde. „Choi Yuna“ steht größer als das Buchcover darauf, ohne anonymen Vermerk.*"
+    },
+    "perfect_yuna_coda_2": {
+        "name": "Yuna",
+        "text": "Komm, wenn es vorbei ist. Diesmal verstecke ich mich nicht."
+    },
+    "perfect_yuna_coda_3": {
+        "name": "{name}",
+        "text": "*Danach folgt ein Foto ihrer geübten Unterschriften. Ihr Name füllt die Seite; nur ganz unten steht meiner in kleinen Buchstaben.*"
+    },
+    "perfect_dain_coda_1": {
+        "name": "Dain",
+        "text": "Mama hat die Wiederholung dreimal gesehen. Sie sagt, mein Kommentar war lauter als das Spiel."
+    },
+    "perfect_dain_coda_2": {
+        "name": "{name}",
+        "text": "*Die erste Zeile ihres Skripts für das nächste Spiel lautet fett: „Aufhören, wenn es weh tut.“ Es gibt keine Radierstellen.*"
+    },
+    "perfect_dain_coda_3": {
+        "name": "Dain",
+        "text": "Lass uns danach zusammen nach Hause laufen. Heute bestimme ich das Tempo."
     }
 }

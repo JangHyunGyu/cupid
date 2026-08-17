@@ -179,9 +179,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": null,
         "branches": [
             { "condition": "day4_waited", "next": "day4_night_regret" },
-            { "condition": "route_seoyeon", "next": "wall_seo_1" },
-            { "condition": "route_dain", "next": "wall_dain_1" },
-            { "condition": "route_yuna", "next": "wall_yuna_1" },
+            { "condition": "route_seoyeon", "next": "wall_seo_rival_rank" },
+            { "condition": "route_dain", "next": "wall_dain_rival_rank" },
+            { "condition": "route_yuna", "next": "wall_yuna_rival_rank" },
             { "next": "day4_night_reflect" }
         ]
     },
@@ -527,7 +527,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/seyoun_normal.png",
         "type": "free_talk",
         "maxTurns": 3,
-        "next": "wall_seo_rival_rank"
+        "next": "day4_student_return_home"
     },
     "wall_seo_rival_rank": {
         "background": "assets/images/background/park.png",
@@ -540,7 +540,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             { "character": "Dain", "next": "wall_seo_glimpse_1" },
             { "character": "Yuna", "next": "wall_seo_yuna_tempt_1" }
         ],
-        "rankedRivalFallback": "day4_hidden_msg_branch"
+        "rankedRivalFallback": "wall_seo_1"
     },
     "wall_seo_glimpse_1": {
         "background": "assets/images/background/school_back.png",
@@ -552,7 +552,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/dain_sad.png",
         "competitiveAffinity": true,
         "choices": [
-            { "next": "day4_hidden_msg_branch", "stats": {"Seoyeon":{"affinity":4},"Dain":{"affinity":-6}}, "setFlags": ["day4_held_route_seoyeon"] },
+            { "next": "wall_seo_1", "stats": {"Seoyeon":{"affinity":4},"Dain":{"affinity":-6}}, "setFlags": ["day4_held_route_seoyeon"] },
             { "next": "wall_seo_glimpse_4", "stats": {"Dain":{"affinity":8},"Seoyeon":{"affinity":-10}}, "setFlags": ["day4_took_dain_counteroffer","day4_counteroffer_penalty_deferred"] }
         ]
     },
@@ -571,7 +571,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/yuna_sad.png",
         "competitiveAffinity": true,
         "choices": [
-            { "next": "day4_hidden_msg_branch", "stats": {"Seoyeon":{"affinity":4},"Yuna":{"affinity":-6}}, "setFlags": ["day4_held_route_seoyeon"] },
+            { "next": "wall_seo_1", "stats": {"Seoyeon":{"affinity":4},"Yuna":{"affinity":-6}}, "setFlags": ["day4_held_route_seoyeon"] },
             { "next": "wall_seo_yuna_tempt_accept", "stats": {"Yuna":{"affinity":8},"Seoyeon":{"affinity":-10}}, "setFlags": ["day4_took_yuna_counteroffer","day4_counteroffer_penalty_deferred"] }
         ]
     },
@@ -1020,7 +1020,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/dain_normal.png",
         "type": "free_talk",
         "maxTurns": 3,
-        "next": "wall_dain_rival_rank"
+        "next": "day4_student_return_home"
     },
     "wall_dain_rival_rank": {
         "background": "assets/images/background/school_back.png",
@@ -1032,7 +1032,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             { "character": "Seoyeon", "next": "wall_dain_seo_tempt_1" },
             { "character": "Yuna", "next": "wall_dain_glimpse_1" }
         ],
-        "rankedRivalFallback": "day4_hidden_msg_branch"
+        "rankedRivalFallback": "wall_dain_1"
     },
     "wall_dain_glimpse_1": {
         "background": "assets/images/background/school_back.png",
@@ -1059,7 +1059,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
         "competitiveAffinity": true,
         "choices": [
-            { "next": "day4_hidden_msg_branch", "stats": {"Dain":{"affinity":5},"Yuna":{"affinity":-6}}, "setFlags": ["day4_held_route_dain"] },
+            { "next": "wall_dain_1", "stats": {"Dain":{"affinity":5},"Yuna":{"affinity":-6}}, "setFlags": ["day4_held_route_dain"] },
             { "next": "wall_dain_glimpse_4", "stats": {"Yuna":{"affinity":8},"Dain":{"affinity":-10}}, "setFlags": ["day4_took_yuna_counteroffer","day4_counteroffer_penalty_deferred"] }
         ]
     },
@@ -1073,7 +1073,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/seyoun_sad.png",
         "competitiveAffinity": true,
         "choices": [
-            { "next": "day4_hidden_msg_branch", "stats": {"Dain":{"affinity":5},"Seoyeon":{"affinity":-6}}, "setFlags": ["day4_held_route_dain"] },
+            { "next": "wall_dain_1", "stats": {"Dain":{"affinity":5},"Seoyeon":{"affinity":-6}}, "setFlags": ["day4_held_route_dain"] },
             { "next": "wall_dain_seo_tempt_accept", "stats": {"Seoyeon":{"affinity":8},"Dain":{"affinity":-10}}, "setFlags": ["day4_took_seoyeon_counteroffer","day4_counteroffer_penalty_deferred"] }
         ]
     },
@@ -1381,7 +1381,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/yuna_normal.png",
         "type": "free_talk",
         "maxTurns": 3,
-        "next": "wall_yuna_rival_rank"
+        "next": "day4_student_return_home"
     },
     "wall_yuna_rival_rank": {
         "background": "assets/images/background/yuna_hideout.png",
@@ -1394,7 +1394,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             { "character": "Seoyeon", "next": "wall_yuna_glimpse_1" },
             { "character": "Dain", "next": "wall_yuna_dain_tempt_1" }
         ],
-        "rankedRivalFallback": "day4_hidden_msg_branch"
+        "rankedRivalFallback": "wall_yuna_1"
     },
     "wall_yuna_glimpse_1": {
         "background": "assets/images/background/school_back.png",
@@ -1414,7 +1414,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/seyoun_normal.png",
         "competitiveAffinity": true,
         "choices": [
-            { "next": "day4_hidden_msg_branch", "stats": {"Yuna":{"affinity":4},"Seoyeon":{"affinity":-6}}, "setFlags": ["day4_held_route_yuna"] },
+            { "next": "wall_yuna_1", "stats": {"Yuna":{"affinity":4},"Seoyeon":{"affinity":-6}}, "setFlags": ["day4_held_route_yuna"] },
             { "next": "wall_yuna_glimpse_4", "stats": {"Seoyeon":{"affinity":8},"Yuna":{"affinity":-10}}, "setFlags": ["day4_took_seoyeon_counteroffer","day4_counteroffer_penalty_deferred"] }
         ]
     },
@@ -1435,7 +1435,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/dain_sad.png",
         "competitiveAffinity": true,
         "choices": [
-            { "next": "day4_hidden_msg_branch", "stats": {"Yuna":{"affinity":4},"Dain":{"affinity":-6}}, "setFlags": ["day4_held_route_yuna"] },
+            { "next": "wall_yuna_1", "stats": {"Yuna":{"affinity":4},"Dain":{"affinity":-6}}, "setFlags": ["day4_held_route_yuna"] },
             { "next": "wall_yuna_dain_tempt_accept", "stats": {"Dain":{"affinity":8},"Yuna":{"affinity":-10}}, "setFlags": ["day4_took_dain_counteroffer","day4_counteroffer_penalty_deferred"] }
         ]
     },
@@ -1448,6 +1448,11 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "day4_night_regret_msg_branch"
+    },
+    "day4_student_return_home": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "next": "day4_hidden_msg_branch"
     },
     "day4_night_regret_msg_branch": {
         "background": "assets/images/background/room_my.png",

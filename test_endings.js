@@ -276,7 +276,7 @@ const tests = [
     forbidden: ['day5_ending_harem']
   },
   {
-    name: 'Harem',
+    name: 'Unresolved',
     start: 'after5_ending_check',
     expected: 'day5_ending_harem',
     flags: ['day3_has_multiple_dates', 'ending_harem'],

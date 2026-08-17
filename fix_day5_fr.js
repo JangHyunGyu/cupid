@@ -909,8 +909,8 @@ const translations = {
     "*Mais le fait que j'apprécie même la tension — peut-être que j'ai déjà dépassé le point de non-retour.*",
   "*Tomorrow I'll be watched again. The day after, they'll tighten their grip even more. But these bloody days, I accept them.*":
     "*Demain je serai encore surveillé. Après-demain, elles resserreront leur emprise encore plus. Mais ces jours sanglants, je les accepte.*",
-  "─── HAREM END ───":
-    "─── FIN : HAREM ───",
+  "─── UNRESOLVED END ───":
+    "─── FIN NON RÉSOLUE ───",
 
   // Friend ending
   "*I couldn't say what I felt. No— I chose not to.*":

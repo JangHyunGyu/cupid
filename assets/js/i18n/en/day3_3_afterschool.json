@@ -106,7 +106,7 @@
         "name": "Seoyeon",
         "text": "Let what you saw today end here. For now, just treat me like you usually do.",
         "choices": [
-            "Want a wet wipe?",
+            "Everyone has days like this. Don't take it so hard.",
             "Just now? I didn't see anything. I dropped my pen and came in to pick it up."
         ]
     },
@@ -430,7 +430,7 @@
         "name": "Dain",
         "text": "*She sits on the bench. The hand rubbing her knee keeps circling the same spot.*",
         "choices": [
-            "Are you okay? Don't push yourself. Why not rest today?",
+            "I knew you were pushing it. Drop the tournament and rest today.",
             "Then I'll stay here. Talk when you're ready."
         ]
     },

@@ -953,6 +953,42 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "morning5_end_branch": {
         "background": "assets/images/background/room_school.png",
         "character": null,
+        "next": "morning5_sojeong_1"
+    },
+    "morning5_sojeong_1": {
+        "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "empty",
+        "character": null,
+        "next": "morning5_sojeong_2"
+    },
+    "morning5_sojeong_2": {
+        "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "empty",
+        "character": null,
+        "next": "morning5_sojeong_3"
+    },
+    "morning5_sojeong_3": {
+        "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "empty",
+        "character": null,
+        "next": "morning5_sojeong_4"
+    },
+    "morning5_sojeong_4": {
+        "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "empty",
+        "character": null,
+        "setFlags": ["sojeong_apology_sent"],
+        "next": "morning5_sojeong_5"
+    },
+    "morning5_sojeong_5": {
+        "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "empty",
+        "character": null,
+        "next": "morning5_route_branch"
+    },
+    "morning5_route_branch": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
         "routeBeforeRender": true,
         "branches": [
             { "condition": "day4_counteroffer_penalty_deferred", "next": "tour_co_branch" },

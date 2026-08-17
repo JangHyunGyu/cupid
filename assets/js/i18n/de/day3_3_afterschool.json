@@ -106,7 +106,7 @@
         "name": "Seoyeon",
         "text": "Lass das, was du heute gesehen hast, hier enden. Und behandel mich jetzt einfach wie sonst.",
         "choices": [
-            "Soll ich dir ein Feuchttuch geben?",
+            "Jeder hat mal so einen Tag. Nimm es nicht so schwer.",
             "Gerade eben? Ich habe nichts gesehen. Mein Stift ist runtergefallen, deshalb bin ich reingekommen."
         ]
     },
@@ -430,7 +430,7 @@
         "name": "Dain",
         "text": "*Sie setzt sich auf die Bank. Die Hand an ihrem Knie kreist lange über derselben Stelle.*",
         "choices": [
-            "Alles okay? Übertreib es nicht. Wie wäre es, wenn du dich heute ausruhst?",
+            "Ich wusste, dass du dich überforderst. Gib das Turnier auf und ruh dich heute aus.",
             "Dann bleibe ich hier. Erzähl es, wenn du reden willst."
         ]
     },

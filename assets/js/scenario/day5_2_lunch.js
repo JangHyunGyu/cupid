@@ -86,6 +86,32 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": "assets/images/characters/seyoun_normal.png",
         "bgm": "sunset1.mp3",
         "affinityGuard": {"character":"Seoyeon","minAffinity":40,"fallback":"tour_seo_low"},
+        "next": "tour_seo_event_1"
+    },
+    "tour_seo_event_1": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/haeun_worried.png",
+        "next": "tour_seo_event_2"
+    },
+    "tour_seo_event_2": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/seyoun_worried.png",
+        "next": "tour_seo_event_3"
+    },
+    "tour_seo_event_3": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "tour_seo_event_4"
+    },
+    "tour_seo_event_4": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/haeun_normal.png",
+        "next": "tour_seo_event_5"
+    },
+    "tour_seo_event_5": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "setFlags": ["day5_seoyeon_delegated"],
         "next": "tour_seo_2"
     },
     "tour_seo_2": {
@@ -177,11 +203,37 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "tour_yuna_1": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "tour_yuna_2"
+        "next": "tour_yuna_event_1"
     },
     "tour_yuna_1b": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
+        "next": "tour_yuna_event_1"
+    },
+    "tour_yuna_event_1": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "tour_yuna_event_2"
+    },
+    "tour_yuna_event_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/yuna_worried.png",
+        "next": "tour_yuna_event_3"
+    },
+    "tour_yuna_event_3": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "tour_yuna_event_4"
+    },
+    "tour_yuna_event_4": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/yuna_shy.png",
+        "next": "tour_yuna_event_5"
+    },
+    "tour_yuna_event_5": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "setFlags": ["day5_yuna_signed_story"],
         "next": "tour_yuna_2"
     },
     "tour_yuna_2": {
@@ -264,12 +316,38 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
         "character": null,
-        "next": "tour_dain_2"
+        "next": "tour_dain_event_1"
     },
     "tour_dain_1b": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
         "character": null,
+        "next": "tour_dain_event_1"
+    },
+    "tour_dain_event_1": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "next": "tour_dain_event_2"
+    },
+    "tour_dain_event_2": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "tour_dain_event_3"
+    },
+    "tour_dain_event_3": {
+        "background": "assets/images/background/dain_broadcast_booth.png",
+        "character": "assets/images/characters/dain_sweat.png",
+        "next": "tour_dain_event_4"
+    },
+    "tour_dain_event_4": {
+        "background": "assets/images/background/dain_broadcast_booth.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "next": "tour_dain_event_5"
+    },
+    "tour_dain_event_5": {
+        "background": "assets/images/background/dain_broadcast_booth.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "setFlags": ["day5_dain_chose_commentary"],
         "next": "tour_dain_2"
     },
     "tour_dain_2": {

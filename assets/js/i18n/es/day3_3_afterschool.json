@@ -106,7 +106,7 @@
         "name": "Seoyeon",
         "text": "No le cuentes a nadie lo que viste hoy. Y por ahora trátame como siempre.",
         "choices": [
-            "¿Quieres una toallita húmeda?",
+            "A todo el mundo le pasa alguna vez. No le des tanta importancia.",
             "...¿Lo de antes? No vi nada. Se me cayó la pluma y entré a recogerla."
         ]
     },
@@ -430,7 +430,7 @@
         "name": "Dain",
         "text": "*Se sienta en el banco. La mano que le frota la rodilla vuelve una y otra vez al mismo punto.*",
         "choices": [
-            "...¿Estás bien? No te fuerces. Hoy descansa.",
+            "Sabía que te estabas forzando. Renuncia al torneo y descansa hoy.",
             "Entonces me quedo aquí. Habla cuando te apetezca."
         ]
     },

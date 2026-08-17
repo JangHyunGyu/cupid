@@ -12,6 +12,7 @@ const commands = [
     ['node', ['test_endings.js']],
     ['node', ['test_i18n_full.js']],
     ['node', ['--test', 'tests/choice-affinity-balance.test.cjs']],
+    ['node', ['--test', 'tests/scenario-commercial-polish.test.cjs']],
     ['node', ['--test', 'tests/freetalk-core.test.cjs']],
     ['node', ['--test', 'tests/runtime-error-regressions.test.cjs']],
     ['node', ['scripts/verify-repetition-guards.cjs']],

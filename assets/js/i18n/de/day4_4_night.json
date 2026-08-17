@@ -314,13 +314,13 @@
     },
     "wall_seo_glimpse_1": {
         "name": "{name}",
-        "text": "*Nachdem ich Seoyeon nach Hause begleitet habe, gehe ich an der Schulmauer zurück. Dain steht am Notausgang der dunklen Turnhalle und zupft am Tape um ihr Knie.*"
+        "text": "*Auf dem Weg zum Park, wo ich Seoyeon um zehn treffen will, sehe ich Dain am Notausgang der dunklen Turnhalle. Sie berührt das Tape an ihrem Knie.*"
     },
     "wall_seo_glimpse_2": {
         "name": "Dain",
         "text": "Nur zehn Pässe. Wenn wir fertig sind ... nimm mich kurz in den Arm. Heute Abend schaffe ich es nicht mehr, allein so zu tun, als wäre alles in Ordnung.",
         "choices": [
-            "Mein Versprechen an Seoyeon halten und heimgehen",
+            "Das Versprechen halten und zu Seoyeon in den Park gehen",
             "In die Turnhalle gehen und bei Dain bleiben"
         ]
     },
@@ -330,19 +330,19 @@
     },
     "wall_seo_yuna_tempt_1": {
         "name": "{name}",
-        "text": "*Auf dem Heimweg schreibt Yuna: „Im Anbau brennt noch Licht.“ Danach kommt ein Foto von zwei leeren Stühlen nebeneinander.*"
+        "text": "*Auf dem Weg zum Park schreibt Yuna: „Im Nebengebäude brennt noch Licht.“ Danach folgt ein Foto von zwei leeren Stühlen.*"
     },
     "wall_seo_yuna_tempt_2": {
         "name": "Yuna",
         "text": "Jemand, der mich wirklich gesehen hat, ist ohne ein Wort verschwunden. Wenn du heute auch gehst, fühlt es sich an, als würde dieser Tag noch einmal passieren. Nur heute Nacht — bleib hier.",
         "choices": [
-            "Seoyeon antworten und mein Versprechen halten",
+            "Seoyeon antworten und weiter zum Park gehen",
             "Zum Anbau gehen und bei Yuna bleiben"
         ]
     },
     "wall_seo_yuna_tempt_accept": {
         "name": "{name}",
-        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand gegen das Regal. Sie lässt den Blazer unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres dunklen Oberteils hinab. Zwischen nackter Schulter und Tattoo bleiben ihre roten Augen auf {name}s Augenhöhe. Seoyeons Nachricht — „Bist du auch gut angekommen?“ — bleibt oben auf dem Bildschirm stehen.*"
+        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand gegen das Regal. Sie lässt den Blazer unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres dunklen Oberteils hinab. Zwischen nackter Schulter und Tattoo bleiben ihre roten Augen auf {name}s Augenhöhe. Seoyeons Nachricht — „Ich sitze auf der Bank im Park.“ — bleibt oben auf dem Bildschirm stehen.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -474,7 +474,7 @@
     },
     "wall_dain_19": {
         "name": "Dain",
-        "text": "Ich hab es niemandem gesagt. Nicht mal meinen Eltern. ‚Dain ist nicht Dain, wenn sie nicht rennt!‘ — Das wollte ich nicht hören."
+        "text": "Ich habe so getan, als wäre die Reha vorbei. Dass es wieder wehtat, habe ich niemandem gesagt. Nicht einmal meinen Eltern. Ich wollte nicht hören: „Dain ist nicht Dain, wenn sie nicht spielt!“"
     },
     "wall_dain_19_b": {
         "name": "Dain",
@@ -648,7 +648,7 @@
     },
     "wall_dain_glimpse_1": {
         "name": "{name}",
-        "text": "*Nachdem ich mich von Dain verabschiedet habe, bemerke ich im Bibliotheksanbau ein einziges erleuchtetes Fenster.*"
+        "text": "*Um zehn, auf dem Weg zur Turnhalle, wo Dain wartet, fällt mir ein einziges erleuchtetes Fenster im Bibliotheksanbau auf.*"
     },
     "wall_dain_glimpse_2": {
         "name": "{name}",
@@ -656,35 +656,35 @@
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand gegen das Regal. Sie lässt den Blazer unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres dunklen Oberteils hinab. Zwischen nackter Schulter und Tattoo bleiben ihre roten Augen auf {name}s Augenhöhe. Dains „Bin zu Hause!“ bleibt oben auf dem Bildschirm stehen.*"
+        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand gegen das Regal. Sie lässt den Blazer unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres dunklen Oberteils hinab. Zwischen nackter Schulter und Tattoo bleiben ihre roten Augen auf {name}s Augenhöhe. Dains „Die Hintertür der Turnhalle ist offen.“ bleibt oben auf dem Bildschirm stehen.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
-        "text": "*Um 22 Uhr erscheint eine Nachricht von Yuna direkt über Dains Mitteilung: „Bin zu Hause!“*"
+        "text": "*Um 22 Uhr erscheint eine Nachricht von Yuna direkt über Dains Mitteilung: „Die Hintertür der Turnhalle ist offen.“*"
     },
     "wall_dain_glimpse_4_c": {
         "name": "Yuna",
         "text": "Jemand, der mich wirklich gesehen hat, ist ohne ein Wort verschwunden. Wenn ich heute wieder allein bleibe, fühlt es sich an, als wäre ich wieder an diesem Tag. Es ist egal, dass du bei Dain warst. Ich brauche dich jetzt hier.",
         "choices": [
-            "Dain antworten und mein Versprechen halten",
+            "Dain antworten und weiter zur Turnhalle gehen",
             "Zum Hintertor zurückgehen und bei Yuna bleiben"
         ]
     },
     "wall_dain_seo_tempt_1": {
         "name": "{name}",
-        "text": "*Nachdem ich mich von Dain verabschiedet habe, gehe ich zum Haupttor und finde Seoyeon vor der Treppe zum Dach. Sie lächelt wie immer, doch ihre Finger zerknittern den Uniformärmel.*"
+        "text": "*Auf dem Weg zur Turnhalle, wo Dain wartet, steht Seoyeon an der Dachtreppe. Sie lächelt, doch ihre Finger zerknittern den Ärmel ihrer Uniform.*"
     },
     "wall_dain_seo_tempt_2": {
         "name": "Seoyeon",
         "text": "Wenn ich heute nach Hause komme, muss ich mir als Erstes wieder mein Lächeln aufsetzen. Lass mich nur heute Seoyeon sein und nicht die Schülersprecherin. Komm mit nach oben, dann lasse ich deine Hand nicht los.",
         "choices": [
-            "Dain antworten und mein Versprechen halten",
+            "Dain antworten und weiter zur Turnhalle gehen",
             "Mit Seoyeon aufs Dach gehen und ihre Hand nehmen"
         ]
     },
     "wall_dain_seo_tempt_accept": {
         "name": "{name}",
-        "text": "*Die Dachtür fällt zu. Wortlos öffnet Seoyeon die Knöpfe ihrer Bluse, umfasst {name}s Handgelenk und zieht die Hand an sich. Zwischen den geöffneten Blusenrändern berührt die Handfläche ihre nackte Brust, dann legt Seoyeon ihre Hand darüber. Dains Nachricht — „Gut nach Hause gekommen?“ — lässt den Bildschirm aufleuchten.*"
+        "text": "*Die Dachtür fällt zu. Wortlos öffnet Seoyeon die Knöpfe ihrer Bluse, umfasst {name}s Handgelenk und zieht die Hand an sich. Zwischen den geöffneten Blusenrändern berührt die Handfläche ihre nackte Brust, dann legt Seoyeon ihre Hand darüber. Dains Nachricht — „Die Hintertür der Turnhalle ist offen.“ — lässt den Bildschirm aufleuchten.*"
     },
     "wall_yuna_1": {
         "name": "{name}",
@@ -882,7 +882,7 @@
     },
     "wall_yuna_glimpse_1": {
         "name": "{name}",
-        "text": "*Nachdem ich mich von Yuna verabschiedet habe, gehe ich an der Mauer zum Haupttor. Seoyeon steht allein unter der Straßenlaterne.*"
+        "text": "*Auf dem Weg zum Hintertor, wo ich mit Yuna verabredet bin, steht Seoyeon allein unter der Lampe am Haupteingang.*"
     },
     "wall_yuna_glimpse_2": {
         "name": "{name}",
@@ -892,7 +892,7 @@
         "name": "Seoyeon",
         "text": "Wenn ich heute nach Hause komme, muss ich mir als Erstes wieder mein Lächeln aufsetzen. Lass mich nur heute Seoyeon sein und nicht die Schülersprecherin. Komm mit nach oben, dann lasse ich deine Hand nicht los.",
         "choices": [
-            "Yuna antworten und mein Versprechen halten",
+            "Yuna antworten und weiter zum Hintertor gehen",
             "Mit Seoyeon aufs Dach gehen und ihre Hand nehmen"
         ]
     },
@@ -902,13 +902,13 @@
     },
     "wall_yuna_dain_tempt_1": {
         "name": "{name}",
-        "text": "*Auf dem Rückweg nach dem Abschied von Yuna finde ich Dain am Notausgang der dunklen Turnhalle. Sie zupft am Tape um ihr Knie.*"
+        "text": "*Auf dem Weg zum Hintertor, wo Yuna wartet, sehe ich Dain am Notausgang der dunklen Turnhalle. Sie berührt das Tape an ihrem Knie.*"
     },
     "wall_yuna_dain_tempt_2": {
         "name": "Dain",
         "text": "Nur zehn Pässe. Wenn wir fertig sind ... nimm mich kurz in den Arm. Heute Abend schaffe ich es nicht mehr, allein so zu tun, als wäre alles in Ordnung.",
         "choices": [
-            "Yuna antworten und mein Versprechen halten",
+            "Yuna antworten und weiter zum Hintertor gehen",
             "In die Turnhalle gehen und bei Dain bleiben"
         ]
     },
@@ -1089,5 +1089,9 @@
     "forced_violation_day4_nurse_excuse": {
         "name": "Schulkrankenschwester",
         "text": "*Die Stimme der Schulkrankenschwester wird noch tiefer.* Glaubst du, das Wort Missverständnis ändert etwas? Du hast ein Nein ignoriert. Das ist eine Tatsache."
+    },
+    "day4_student_return_home": {
+        "name": "{name}",
+        "text": "*Nach dem Treffen kehre ich nach Hause zurück. Als die Haustür zufällt, bleibt das Handy das einzige Licht in meinem Zimmer.*"
     }
 }

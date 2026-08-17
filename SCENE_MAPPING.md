@@ -70,7 +70,7 @@
 | ending_confess_fail_dain.png | 다인 고백 실패 END |
 | ending_bittersweet.png | BITTERSWEET END (공통) |
 | ending_mayhem.png | MAYHEM END |
-| ending_harem.png | HAREM END |
+| ending_harem.png | UNRESOLVED END |
 | ending_friend.png | FRIEND END |
 | ending_alone.png | ALONE END |
 
@@ -727,7 +727,7 @@
 | 5 | `nurse_day5` + 호감 60~89 | **보건 TRUE LOVE END** |
 | 6 | `nurse_day5` (기타) | **보건 GOOD END** |
 | 7 | `day3_caught_multiple_dates` | **MAYHEM END** |
-| 8 | `ending_harem` | **HAREM END** |
+| 8 | `ending_harem` | **UNRESOLVED END** |
 | 9 | `day4_confession_accepted` + 호감 90+ | **PERFECT END** |
 | 10 | `day4_confession_accepted` + 호감 60~89 | **TRUE LOVE END** |
 | 11 | `day4_confession_accepted` + 호감 40~59 | **GOOD END** |
@@ -885,7 +885,7 @@
 
 ---
 
-### HAREM END — 양다리 들키지 않음
+### UNRESOLVED END — 다중 관계의 균열을 해결하지 못함
 
 | 씬 ID | 배경 | 장면 설명 |
 |--------|------|-----------|

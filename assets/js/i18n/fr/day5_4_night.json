@@ -969,7 +969,7 @@
     },
     "confess_fail_5": {
         "name": "Système",
-        "text": "─── FRIEND END (confession ratée) ───"
+        "text": "─── CONFESSION REJECTED END ───"
     },
     "day5_ending_good": {
         "name": "{name}",
@@ -1872,5 +1872,41 @@
     "forced_violation_day5_nurse_excuse": {
         "name": "Infirmière",
         "text": "*La voix de l'infirmière baisse encore.* Tu crois que parler de malentendu change quelque chose ? Tu n'as pas respecté mon refus. C'est un fait."
+    },
+    "perfect_seo_coda_1": {
+        "name": "{name}",
+        "text": "*Un nouveau fichier d'organisation du conseil est joint sous la photo. Sur la dernière page, Haeun est indiquée comme coordinatrice générale, sans la moindre correction de Seoyeon.*"
+    },
+    "perfect_seo_coda_2": {
+        "name": "Seoyeon",
+        "text": "Choisis d'abord le pot. Non, ne le choisis pas sur une photo. Allons-y ensemble samedi."
+    },
+    "perfect_seo_coda_3": {
+        "name": "{name}",
+        "text": "*L'heure du rendez-vous est vide. Quand j'inscris quinze heures, Seoyeon répond « Ça me va » au lieu de « Confirmé ».*"
+    },
+    "perfect_yuna_coda_1": {
+        "name": "{name}",
+        "text": "*Une librairie publie l'annonce d'une séance de dédicaces. « Choi Yuna » s'affiche plus grand que la couverture, sans aucune mention anonyme.*"
+    },
+    "perfect_yuna_coda_2": {
+        "name": "Yuna",
+        "text": "Viens quand ce sera fini. Cette fois, je ne me cacherai pas."
+    },
+    "perfect_yuna_coda_3": {
+        "name": "{name}",
+        "text": "*Une photo de ses essais de signature suit. Son nom remplit la page ; tout en bas seulement, le mien apparaît en petit.*"
+    },
+    "perfect_dain_coda_1": {
+        "name": "Dain",
+        "text": "Maman a regardé la rediffusion trois fois. Elle dit que mes commentaires étaient plus bruyants que le match."
+    },
+    "perfect_dain_coda_2": {
+        "name": "{name}",
+        "text": "*La première ligne du script du prochain match porte en gras : « Arrêter si ça fait mal. » Il n'y a aucune trace de gomme.*"
+    },
+    "perfect_dain_coda_3": {
+        "name": "Dain",
+        "text": "On rentre à pied ensemble après. Aujourd'hui, c'est moi qui choisis le rythme."
     }
 }

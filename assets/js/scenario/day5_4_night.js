@@ -1091,6 +1091,21 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "perfect_epilogue_3_seo": {
         "background": "assets/images/background/ending_perfect_seoyeon.png",
         "character": null,
+        "next": "perfect_seo_coda_1"
+    },
+    "perfect_seo_coda_1": {
+        "background": "assets/images/background/ending_perfect_seoyeon.png",
+        "character": null,
+        "next": "perfect_seo_coda_2"
+    },
+    "perfect_seo_coda_2": {
+        "background": "assets/images/background/ending_perfect_seoyeon.png",
+        "character": null,
+        "next": "perfect_seo_coda_3"
+    },
+    "perfect_seo_coda_3": {
+        "background": "assets/images/background/ending_perfect_seoyeon.png",
+        "character": null,
         "next": "date_choice_perfect_seo"
     },
     "perfect_epilogue_4_seo": {
@@ -1237,6 +1252,21 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "perfect_epilogue_3_yuna"
     },
     "perfect_epilogue_3_yuna": {
+        "background": "assets/images/background/ending_perfect_yuna.png",
+        "character": null,
+        "next": "perfect_yuna_coda_1"
+    },
+    "perfect_yuna_coda_1": {
+        "background": "assets/images/background/ending_perfect_yuna.png",
+        "character": null,
+        "next": "perfect_yuna_coda_2"
+    },
+    "perfect_yuna_coda_2": {
+        "background": "assets/images/background/ending_perfect_yuna.png",
+        "character": null,
+        "next": "perfect_yuna_coda_3"
+    },
+    "perfect_yuna_coda_3": {
         "background": "assets/images/background/ending_perfect_yuna.png",
         "character": null,
         "next": "date_choice_perfect_yuna"
@@ -1416,6 +1446,21 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "perfect_epilogue_3_dain"
     },
     "perfect_epilogue_3_dain": {
+        "background": "assets/images/background/ending_perfect_dain.png",
+        "character": null,
+        "next": "perfect_dain_coda_1"
+    },
+    "perfect_dain_coda_1": {
+        "background": "assets/images/background/ending_perfect_dain.png",
+        "character": null,
+        "next": "perfect_dain_coda_2"
+    },
+    "perfect_dain_coda_2": {
+        "background": "assets/images/background/ending_perfect_dain.png",
+        "character": null,
+        "next": "perfect_dain_coda_3"
+    },
+    "perfect_dain_coda_3": {
         "background": "assets/images/background/ending_perfect_dain.png",
         "character": null,
         "next": "date_choice_perfect_dain"

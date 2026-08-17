@@ -969,7 +969,7 @@
     },
     "confess_fail_5": {
         "name": "Sistema",
-        "text": "─── FRIEND END (confesión fallida) ───"
+        "text": "─── CONFESSION REJECTED END ───"
     },
     "day5_ending_good": {
         "name": "{name}",
@@ -1872,5 +1872,41 @@
     "forced_violation_day5_nurse_excuse": {
         "name": "Enfermera",
         "text": "*La voz de la enfermera baja aún más.* ¿Crees que llamarlo un malentendido cambia algo? Ignoraste que te dije que no. Eso es un hecho."
+    },
+    "perfect_seo_coda_1": {
+        "name": "{name}",
+        "text": "*Debajo de la foto aparece un nuevo archivo de organización del consejo. En la última página, Haeun figura como coordinadora general y no hay una sola corrección de Seoyeon.*"
+    },
+    "perfect_seo_coda_2": {
+        "name": "Seoyeon",
+        "text": "Elige tú la maceta primero. No, no la elijas por foto. Vamos juntos el sábado."
+    },
+    "perfect_seo_coda_3": {
+        "name": "{name}",
+        "text": "*La hora de la cita está en blanco. Cuando escribo las tres de la tarde, Seoyeon responde «Me gusta» en vez de «Confirmado».*"
+    },
+    "perfect_yuna_coda_1": {
+        "name": "{name}",
+        "text": "*Una librería publica el anuncio de una firma. «Choi Yuna» aparece más grande que la portada y no hay ningún seudónimo.*"
+    },
+    "perfect_yuna_coda_2": {
+        "name": "Yuna",
+        "text": "Ven cuando termine. Esta vez no voy a esconderme."
+    },
+    "perfect_yuna_coda_3": {
+        "name": "{name}",
+        "text": "*Después llega una foto de sus firmas de práctica. Su nombre llena la página; solo al final aparece el mío, en pequeño.*"
+    },
+    "perfect_dain_coda_1": {
+        "name": "Dain",
+        "text": "Mamá vio la repetición tres veces. Dice que mis comentarios sonaban más fuerte que el partido."
+    },
+    "perfect_dain_coda_2": {
+        "name": "{name}",
+        "text": "*La primera línea del guion para el siguiente partido dice «Parar si duele» en negrita. No hay marcas de haberlo borrado.*"
+    },
+    "perfect_dain_coda_3": {
+        "name": "Dain",
+        "text": "Volvamos andando juntos cuando termine. Hoy marco yo el ritmo."
     }
 }

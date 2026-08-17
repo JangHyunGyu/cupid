@@ -149,7 +149,7 @@ AI가 반환한 표정은 해당 캐릭터가 실제 보유한 이미지로만 �
 
 TRUE 엔딩은 본편 에필로그 데이트(1회)로 남긴다. 갤러리 연인모드·외출·생일 반응은 PERFECT 보상으로만 연다.
 
-### 24종 엔딩 전체 리스트
+### 28종 엔딩 전체 리스트
 
 | # | 엔딩 이름 | 대상 | 호감도 조건 | 플래그 조건 |
 |---|----------|------|-----------|------------|
@@ -167,16 +167,20 @@ TRUE 엔딩은 본편 에필로그 데이트(1회)로 남긴다. 갤러리 연�
 | 12 | **다인 BITTERSWEET END** | 다인 | 40 미만 | `day4_confession_accepted` + `route_dain` + `!day3_caught_multiple_dates` + `!ending_harem` |
 | 13 | **담임 PERFECT END** | 담임 | 90+ | `homeroom_day5` |
 | 14 | **담임 TRUE LOVE END** | 담임 | 60~89 | `homeroom_day5` |
-| 15 | **담임 GOOD END** | 담임 | 60 미만 | `homeroom_day5` |
-| 16 | **보건 PERFECT END** | 보건 | 90+ | `nurse_day5` |
-| 17 | **보건 TRUE LOVE END** | 보건 | 60~89 | `nurse_day5` |
-| 18 | **보건 GOOD END** | 보건 | 60 미만 | `nurse_day5` |
-| 19 | **HAREM END** | - | - | `ending_harem` (양다리 + lunch3 나눠 먹기로 발각 회피) |
-| 20 | **MAYHEM END** | - | - | `day3_caught_multiple_dates` |
-| 21 | **GOOD END (뒤늦은 고백)** | - | 50+ | `day5_confessed` |
-| 22 | **CONFESS FAIL END** | - | 50 미만 | `day5_confessed` |
-| 23 | **FRIEND END** | - | - | `day4_waited` |
-| 24 | **ALONE END** | - | - | 기본값 (위 조건 모두 미충족) |
+| 15 | **담임 GOOD END** | 담임 | 40~59 | `homeroom_day5` |
+| 16 | **담임 BITTERSWEET END** | 담임 | 40 미만 | `homeroom_day5` |
+| 17 | **보건 PERFECT END** | 보건 | 90+ | `nurse_day5` |
+| 18 | **보건 TRUE LOVE END** | 보건 | 60~89 | `nurse_day5` |
+| 19 | **보건 GOOD END** | 보건 | 40~59 | `nurse_day5` |
+| 20 | **보건 BITTERSWEET END** | 보건 | 40 미만 | `nurse_day5` |
+| 21 | **UNRESOLVED END** | - | - | `ending_harem` (다중 관계의 균열을 해결하지 못한 채 미룸) |
+| 22 | **MAYHEM END** | - | - | `day3_caught_multiple_dates` |
+| 23 | **서연 GOOD END (뒤늦은 고백)** | 서연 | 50+ | `day5_confessed` + `route_seoyeon` |
+| 24 | **유나 GOOD END (뒤늦은 고백)** | 유나 | 50+ | `day5_confessed` + `route_yuna` |
+| 25 | **다인 GOOD END (뒤늦은 고백)** | 다인 | 50+ | `day5_confessed` + `route_dain` |
+| 26 | **CONFESSION REJECTED END** | - | 50 미만 | `day5_confessed` |
+| 27 | **FRIEND END** | - | - | `day4_waited` |
+| 28 | **ALONE END** | - | - | 기본값 (위 조건 모두 미충족) |
 
 ---
 
@@ -585,22 +589,24 @@ TRUE 엔딩은 본편 에필로그 데이트(1회)로 남긴다. 갤러리 연�
 |---|---|---|
 | 1 | `homeroom_day5` + 담임 호감도 90+ | **담임 PERFECT END** |
 | 2 | `homeroom_day5` + 담임 호감도 60~89 | **담임 TRUE LOVE END** |
-| 3 | `homeroom_day5` (위 조건 미충족) | **담임 GOOD END** |
-| 4 | `nurse_day5` + 보건 호감도 90+ | **보건 PERFECT END** |
-| 5 | `nurse_day5` + 보건 호감도 60~89 | **보건 TRUE LOVE END** |
-| 6 | `nurse_day5` (위 조건 미충족) | **보건 GOOD END** |
-| 7 | `day3_caught_multiple_dates` | **MAYHEM END** (수라장) |
-| 8 | `ending_harem` (양다리 + lunch3 나눠 먹기, 발각 안 됨) | **HAREM END** |
-| 9 | `day4_confession_accepted` + 호감도 90+ | **PERFECT END** (학생) |
-| 10 | `day4_confession_accepted` + 호감도 60~89 | **TRUE LOVE END** |
-| 11 | `day4_confession_accepted` + 호감도 40~59 | **GOOD END** |
-| 12 | `day4_confession_accepted` + 호감도 40 미만 | **BITTERSWEET END** |
-| 13 | `day5_confessed` + 호감도 50+ | **GOOD END** (뒤늦은 고백) |
-| 14 | `day5_confessed` + 호감도 50 미만 | **CONFESS FAIL END** |
-| 15 | `day4_waited` | **FRIEND END** (고백 보류) |
-| 16 | 기본값 (위 조건 모두 미충족, 또는 last chance에서 침묵 선택) | **ALONE END** |
+| 3 | `homeroom_day5` + 담임 호감도 40~59 | **담임 GOOD END** |
+| 4 | `homeroom_day5` + 담임 호감도 40 미만 | **담임 BITTERSWEET END** |
+| 5 | `nurse_day5` + 보건 호감도 90+ | **보건 PERFECT END** |
+| 6 | `nurse_day5` + 보건 호감도 60~89 | **보건 TRUE LOVE END** |
+| 7 | `nurse_day5` + 보건 호감도 40~59 | **보건 GOOD END** |
+| 8 | `nurse_day5` + 보건 호감도 40 미만 | **보건 BITTERSWEET END** |
+| 9 | `day3_caught_multiple_dates` | **MAYHEM END** (수라장) |
+| 10 | `ending_harem` (다중 관계의 균열을 해결하지 못함) | **UNRESOLVED END** |
+| 11 | `day4_confession_accepted` + 호감도 90+ | **PERFECT END** (학생) |
+| 12 | `day4_confession_accepted` + 호감도 60~89 | **TRUE LOVE END** |
+| 13 | `day4_confession_accepted` + 호감도 40~59 | **GOOD END** |
+| 14 | `day4_confession_accepted` + 호감도 40 미만 | **BITTERSWEET END** |
+| 15 | `day5_confessed` + 호감도 50+ | **GOOD END** (뒤늦은 고백, 루트별 3종) |
+| 16 | `day5_confessed` + 호감도 50 미만 | **CONFESSION REJECTED END** |
+| 17 | `day4_waited` | **FRIEND END** (고백 보류) |
+| 18 | 기본값 (위 조건 모두 미충족, 또는 last chance에서 침묵 선택) | **ALONE END** |
 
-> **엔딩 총 수**: PERFECT(3) + TRUE LOVE(3) + GOOD(3) + BITTERSWEET(3) + 담임 PERFECT/TRUE/GOOD(3) + 보건 PERFECT/TRUE/GOOD(3) + HAREM + MAYHEM + GOOD(뒤늦은 고백) + CONFESS FAIL + FRIEND + ALONE = **총 24종**
+> **엔딩 총 수**: 학생 PERFECT/TRUE/GOOD/BITTERSWEET(12) + 담임 4종 + 보건 4종 + UNRESOLVED + MAYHEM + 루트별 뒤늦은 고백 GOOD(3) + CONFESSION REJECTED + FRIEND + ALONE = **총 28종**
 
 ### 히든 루트 해금 조건 요약
 | 캐릭터 | 해금 조건 | 해금 플래그 |

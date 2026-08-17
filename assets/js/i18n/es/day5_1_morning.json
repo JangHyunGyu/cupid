@@ -1,6 +1,12 @@
 {
-    "hidden_homeroom_d5_low": {"name":"Profesora","text":"*La profesora guarda el manuscrito doblado en la carpeta y la cierra.* Dejemos esta conversación aquí. Del resto me ocuparé en clase."},
-    "hidden_nurse_d5_low": {"name":"Enfermera","text":"*La enfermera empieza a tenderte una tarjeta de consulta, pero vuelve a guardarla en el cajón.* Ahora será mejor que no concertemos una cita aparte. Si necesitas ayuda, ven por el procedimiento oficial. *Salgo de la enfermería y regreso al aula.*"},
+    "hidden_homeroom_d5_low": {
+        "name": "Profesora",
+        "text": "*La profesora guarda el manuscrito doblado en la carpeta y la cierra.* Dejemos esta conversación aquí. Del resto me ocuparé en clase."
+    },
+    "hidden_nurse_d5_low": {
+        "name": "Enfermera",
+        "text": "*La enfermera empieza a tenderte una tarjeta de consulta, pero vuelve a guardarla en el cajón.* Ahora será mejor que no concertemos una cita aparte. Si necesitas ayuda, ven por el procedimiento oficial. *Salgo de la enfermería y regreso al aula.*"
+    },
     "morning5_start": {
         "name": "{name}",
         "text": "*Quinto día. Aunque es domingo, hay un evento escolar. El borde de las mangas del uniforme ya no me roza las muñecas.*"
@@ -45,7 +51,7 @@
     "morning5_caught_by_dain_route": {},
     "morning5_caught_seoyeon_by_dain": {
         "name": "Seoyeon",
-        "text": "*Por la mañana, en el aula. En cuanto dejo el móvil delante de Seoyeon, la pantalla se enciende. Una notificación de Dain dice: «No olvides lo que prometimos anoche en el gimnasio». La mirada de Seoyeon se queda clavada en la pantalla.* ¿Me acompañaste a casa y después fuiste al gimnasio?",
+        "text": "*Por la mañana, en el aula. En cuanto dejo el móvil delante de Seoyeon, la pantalla se enciende. Una notificación de Dain dice: «No olvides lo que prometimos anoche en el gimnasio». La mirada de Seoyeon se queda clavada en la pantalla.* ¿No fuiste al parque y te marchaste al gimnasio?",
         "choices": [
             "Contarle lo de anoche",
             "Restarle importancia y disimular"
@@ -61,7 +67,7 @@
     },
     "morning5_caught_dain_by_seoyeon": {
         "name": "Dain",
-        "text": "*El móvil vibra mientras Dain está junto a la mesa. Una notificación de Seoyeon dice: «Todavía recuerdo la mano que sostuve anoche en la azotea». La sonrisa de Dain se congela.* ¿Me preguntaste si había llegado bien y luego volviste a la azotea?",
+        "text": "*El móvil vibra mientras Dain está junto a la mesa. Una notificación de Seoyeon dice: «Todavía recuerdo la mano que sostuve anoche en la azotea». La sonrisa de Dain se congela.* ¿Fuiste a la azotea mientras yo esperaba?",
         "choices": [
             "Contarle lo de anoche",
             "Restarle importancia y disimular"
@@ -69,7 +75,7 @@
     },
     "morning5_caught_dain_by_yuna": {
         "name": "Dain",
-        "text": "*Cuando Dain aparta la silla de enfrente, una notificación de Yuna ilumina la pantalla. «Gracias por quedarte conmigo anoche en el anexo». La mano de Dain se detiene en el respaldo.* ¿Fuiste al anexo después de que te escribiera que ya había llegado a casa?",
+        "text": "*Cuando Dain aparta la silla de enfrente, una notificación de Yuna ilumina la pantalla. «Gracias por quedarte conmigo anoche en el anexo». La mano de Dain se detiene en el respaldo.* ¿Leíste mi mensaje y fuiste al anexo?",
         "choices": [
             "Contarle lo de anoche",
             "Restarle importancia y disimular"
@@ -255,7 +261,7 @@
         "name": "{name}",
         "text": "*Abrazo el manuscrito. El sobre presiona la parte interna de mi brazo.*",
         "choices": [
-            "Lleva siete años trabajando en él. Seguro que es un buen texto.",
+            "Después de siete años, ya estará casi terminado. No creo que haga falta marcar nada.",
             "Lo leeré primero. ¿Puedo hacer anotaciones?"
         ]
     },
@@ -637,5 +643,25 @@
     "morning5_after_counteroffer": {
         "name": "{name}",
         "text": "*Un aviso se resbala del escritorio. Nadie lo recoge. El anuncio del evento suena antes.*"
+    },
+    "morning5_sojeong_1": {
+        "name": "{name}",
+        "text": "*Abro la aplicación de notas. Hay treinta y nueve borradores vacíos que empiezan por «Para Sojeong».*"
+    },
+    "morning5_sojeong_2": {
+        "name": "{name}",
+        "text": "*No escribo un cuadragésimo. Elijo el más corto y lo envío tal cual.*"
+    },
+    "morning5_sojeong_3": {
+        "name": "{name}",
+        "text": "Vi tu pupitre y lo que habían escrito en él, pero no se lo dije a ningún profesor. Mirar hacia otro lado también fue decisión mía. Lo siento. No tienes que responder."
+    },
+    "morning5_sojeong_4": {
+        "name": "{name}",
+        "text": "*El mensaje se envía. Cierro el chat sin esperar a que aparezca como leído.*"
+    },
+    "morning5_sojeong_5": {
+        "name": "{name}",
+        "text": "*También escribo a mi tutor actual: «Quiero hablar de algo que decidí ignorar en mi antigua escuela». Dejo los dos mensajes en pantalla hasta que comienza el anuncio del festival.*"
     }
 }

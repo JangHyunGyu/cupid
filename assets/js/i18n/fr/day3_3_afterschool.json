@@ -106,7 +106,7 @@
         "name": "Seoyeon",
         "text": "Garde pour toi ce que tu as vu aujourd'hui. Et pour l'instant, traite-moi comme d'habitude.",
         "choices": [
-            "Tu veux une lingette ?",
+            "Tout le monde a des jours comme ça. N'y pense pas trop.",
             "...Tout à l'heure ? J'ai rien vu. J'ai fait tomber mon stylo, je suis venu le ramasser."
         ]
     },
@@ -430,7 +430,7 @@
         "name": "Dain",
         "text": "*Elle s’assoit sur le banc. Sa main reste à frotter longtemps le même endroit du genou.*",
         "choices": [
-            "...Ça va ? Ne force pas. Tu devrais te reposer aujourd'hui.",
+            "Je savais que tu forçais. Renonce au tournoi et repose-toi aujourd'hui.",
             "Alors je reste là. Tu parleras quand tu seras prête."
         ]
     },

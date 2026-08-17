@@ -206,7 +206,7 @@ test('day 4 rival temptations use asymmetric relationship costs and stay localiz
             heldGain: 4,
             heldFlag: 'day4_held_route_seoyeon',
             temptedFlag: 'day4_took_dain_counteroffer',
-            choices: ['서연과 한 약속을 지키고 돌아간다', '체육관으로 들어가 다인의 부탁을 받아준다']
+            choices: ['공원으로 가서 서연과의 약속을 지킨다', '체육관으로 들어가 다인의 부탁을 받아준다']
         },
         {
             sceneId: 'wall_seo_yuna_tempt_2',
@@ -215,7 +215,7 @@ test('day 4 rival temptations use asymmetric relationship costs and stay localiz
             heldGain: 4,
             heldFlag: 'day4_held_route_seoyeon',
             temptedFlag: 'day4_took_yuna_counteroffer',
-            choices: ['서연에게 답장하고 약속대로 돌아간다', '별관으로 가서 유나 곁에 남는다']
+            choices: ['서연에게 답장하고 공원으로 간다', '별관으로 가서 유나 곁에 남는다']
         },
         {
             sceneId: 'wall_dain_seo_tempt_2',
@@ -224,7 +224,7 @@ test('day 4 rival temptations use asymmetric relationship costs and stay localiz
             heldGain: 5,
             heldFlag: 'day4_held_route_dain',
             temptedFlag: 'day4_took_seoyeon_counteroffer',
-            choices: ['다인에게 답장하고 약속대로 돌아간다', '서연을 따라 옥상에 올라가 손을 잡는다']
+            choices: ['다인에게 답장하고 체육관으로 간다', '서연을 따라 옥상에 올라가 손을 잡는다']
         },
         {
             sceneId: 'wall_dain_glimpse_4_c',
@@ -233,7 +233,7 @@ test('day 4 rival temptations use asymmetric relationship costs and stay localiz
             heldGain: 5,
             heldFlag: 'day4_held_route_dain',
             temptedFlag: 'day4_took_yuna_counteroffer',
-            choices: ['다인에게 답장하고 약속대로 돌아간다', '학교 후문으로 돌아가 유나 곁에 남는다']
+            choices: ['다인에게 답장하고 체육관으로 간다', '학교 후문으로 돌아가 유나 곁에 남는다']
         },
         {
             sceneId: 'wall_yuna_glimpse_3_b',
@@ -242,7 +242,7 @@ test('day 4 rival temptations use asymmetric relationship costs and stay localiz
             heldGain: 4,
             heldFlag: 'day4_held_route_yuna',
             temptedFlag: 'day4_took_seoyeon_counteroffer',
-            choices: ['유나에게 답장하고 약속대로 돌아간다', '서연을 따라 옥상으로 올라가 손을 잡는다']
+            choices: ['유나에게 답장하고 학교 후문으로 간다', '서연을 따라 옥상으로 올라가 손을 잡는다']
         },
         {
             sceneId: 'wall_yuna_dain_tempt_2',
@@ -251,7 +251,7 @@ test('day 4 rival temptations use asymmetric relationship costs and stay localiz
             heldGain: 4,
             heldFlag: 'day4_held_route_yuna',
             temptedFlag: 'day4_took_dain_counteroffer',
-            choices: ['유나에게 답장하고 약속대로 돌아간다', '체육관으로 들어가 다인의 부탁을 받아준다']
+            choices: ['유나에게 답장하고 학교 후문으로 간다', '체육관으로 들어가 다인의 부탁을 받아준다']
         }
     ];
     const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy);
@@ -593,12 +593,12 @@ test('ranked rival routing uses the live second-highest affinity with determinis
     assert.equal(renderer.resolveNextScene(scenes.wall_yuna_rival_rank), 'wall_yuna_dain_tempt_1');
 
     Object.assign(affinities, { Seoyeon: 59, Dain: 20, Yuna: 30 });
-    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'day4_hidden_msg_branch', 'low-affinity routes must skip the temptation');
+    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_1', 'low-affinity routes must skip the temptation and continue the lead route');
     Object.assign(affinities, { Seoyeon: 70, Dain: 80, Yuna: 30 });
-    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'day4_hidden_msg_branch', 'a route that is not the live leader must not claim to be one');
+    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_1', 'a route that is not the live leader must skip the temptation');
 
     Object.assign(affinities, { Seoyeon: 80, Dain: 59, Yuna: 20 });
-    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'day4_hidden_msg_branch', 'rivals below 60 must not initiate an intimate counteroffer');
+    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_1', 'rivals below 60 must not initiate an intimate counteroffer');
 });
 
 test('live affinity guards block personal scenes and provide localized low-affinity exits', () => {
@@ -647,20 +647,24 @@ test('live affinity guards block personal scenes and provide localized low-affin
     }
 });
 
-test('free-talk exits re-check live affinity before later romance or temptation scenes', () => {
+test('rival affinity is checked before the wall scene and free talk exits cleanly', () => {
     assert.equal(scenes.hidden_nurse_d3_freetalk.next, 'morning3_date_seo_1');
     assert.equal(scenes.morning3_date_seo_1.affinityGuard.minAffinity, 15);
 
     const studentRoutes = [
-        ['wall_seo_freetalk', 'wall_seo_rival_rank'],
-        ['wall_dain_freetalk', 'wall_dain_rival_rank'],
-        ['wall_yuna_freetalk', 'wall_yuna_rival_rank']
+        ['seoyeon', 'seo'],
+        ['dain', 'dain'],
+        ['yuna', 'yuna']
     ];
-    for (const [freeTalkId, rankId] of studentRoutes) {
-        assert.equal(scenes[freeTalkId].next, rankId);
+    for (const [route, short] of studentRoutes) {
+        const rankId = `wall_${short}_rival_rank`;
+        const routeBranch = scenes.day4_student_night_branch.branches.find(branch => branch.condition === `route_${route}`);
+        assert.equal(routeBranch.next, rankId);
+        assert.equal(scenes[`wall_${short}_freetalk`].next, 'day4_student_return_home');
+        assert.equal(scenes.day4_student_return_home.next, 'day4_hidden_msg_branch');
         assert.equal(scenes[rankId].minLeadAffinity, 60);
         assert.equal(scenes[rankId].minRivalAffinity, 60);
-        assert.ok(scenes[rankId].rankedRivalFallback);
+        assert.equal(scenes[rankId].rankedRivalFallback, `wall_${short}_1`);
     }
 
     for (const rankId of ['day4_adult_teacher_student_rank', 'day4_adult_nurse_student_rank']) {

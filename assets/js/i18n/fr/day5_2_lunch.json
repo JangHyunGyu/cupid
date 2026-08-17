@@ -1,7 +1,16 @@
 {
-    "tour_seo_low": {"name":"Seoyeon","text":"*Tu croises Seoyeon au bout du couloir. Elle réajuste la bandoulière de son sac et s'écarte d'un demi-pas.* Faisons le tour chacun de notre côté aujourd'hui. Il me reste des choses à régler."},
-    "tour_yuna_low": {"name":"Yuna","text":"*La porte de l'annexe est fermée à clé. Un court message de Yuna arrive peu après.* J'ai envie d'être seule aujourd'hui. *Je fais demi-tour et regagne le couloir.*"},
-    "tour_dain_low": {"name":"Dain","text":"*Tu retrouves Dain devant le gymnase. Un ballon à la main, elle se retourne vers le terrain.* Je dois m'entraîner aujourd'hui. À plus tard."},
+    "tour_seo_low": {
+        "name": "Seoyeon",
+        "text": "*Tu croises Seoyeon au bout du couloir. Elle réajuste la bandoulière de son sac et s'écarte d'un demi-pas.* Faisons le tour chacun de notre côté aujourd'hui. Il me reste des choses à régler."
+    },
+    "tour_yuna_low": {
+        "name": "Yuna",
+        "text": "*La porte de l'annexe est fermée à clé. Un court message de Yuna arrive peu après.* J'ai envie d'être seule aujourd'hui. *Je fais demi-tour et regagne le couloir.*"
+    },
+    "tour_dain_low": {
+        "name": "Dain",
+        "text": "*Tu retrouves Dain devant le gymnase. Un ballon à la main, elle se retourne vers le terrain.* Je dois m'entraîner aujourd'hui. À plus tard."
+    },
     "tour_seo_1": {
         "name": "{name}",
         "text": "*Nous nous tenons côte à côte devant le portail de l'école. L'endroit exact où Seoyeon m'attendait le premier jour.*"
@@ -246,5 +255,65 @@
     "tour_co_dain_3": {
         "name": "{name}",
         "text": "*Dain tire une fois sur le bandeau de poignet, puis le lâche.*"
+    },
+    "tour_seo_event_1": {
+        "name": "Haeun",
+        "text": "Présidente, la répétition de la radio tombe en même temps que le contrôle de sécurité des stands. Je m'occupe du studio ?"
+    },
+    "tour_seo_event_2": {
+        "name": "{name}",
+        "text": "*La main de Seoyeon se dirige vers le bloc-notes, puis s'arrête. Elle tapote deux fois la case « Radio » avec son stylo.*"
+    },
+    "tour_seo_event_3": {
+        "name": "Seoyeon",
+        "text": "Occupe-toi du studio. Envoie-moi seulement le résultat quand tu auras fini."
+    },
+    "tour_seo_event_4": {
+        "name": "Haeun",
+        "text": "D'accord. Mais vous n'avez pas le droit de venir vérifier au milieu."
+    },
+    "tour_seo_event_5": {
+        "name": "Seoyeon",
+        "text": "*Haeun part en courant. Seoyeon ne se retourne pas une seule fois.* C'est vrai. Une chose peut m'échapper sans que tout le festival s'effondre."
+    },
+    "tour_yuna_event_1": {
+        "name": "{name}",
+        "text": "*Dans le couloir de l'annexe, deux élèves plus jeunes se tiennent devant le panneau. Ils lisent la nouvelle anonyme de Yuna et demandent s'il existe une suite.*"
+    },
+    "tour_yuna_event_2": {
+        "name": "{name}",
+        "text": "*Yuna touche le coin de la feuille. Sa main, prête à l'arracher, s'arrête sous le titre.*"
+    },
+    "tour_yuna_event_3": {
+        "name": "Yuna",
+        "text": "Il n'y a pas encore de suite. Mais c'est moi qui ai écrit ça."
+    },
+    "tour_yuna_event_4": {
+        "name": "{name}",
+        "text": "*Yuna sort un stylo de sa poche et écrit sous le titre : « Choi Yuna ». Les lettres penchent légèrement.*"
+    },
+    "tour_yuna_event_5": {
+        "name": "Yuna",
+        "text": "*Elle se détourne du panneau et rentre dans l'annexe.* La fin, c'est encore à toi que je la montrerai en premier."
+    },
+    "tour_dain_event_1": {
+        "name": "{name}",
+        "text": "*Le coach appelle. Dain écoute jusqu'au bout quand il lui demande si elle peut jouer le match d'exhibition de la journée sportive.*"
+    },
+    "tour_dain_event_2": {
+        "name": "Dain",
+        "text": "Je ne jouerai pas. Je l'ai dit à maman aujourd'hui aussi. Mais si la cabine des commentaires est libre, je la prends."
+    },
+    "tour_dain_event_3": {
+        "name": "{name}",
+        "text": "*Un peu plus tard, Dain tapote le micro de la cabine. Tout le terrain s'étend sous nos yeux.*"
+    },
+    "tour_dain_event_4": {
+        "name": "Dain",
+        "text": "Et voici le service ! Celle-là était bien sur la ligne ! Les réclamations, après le match !"
+    },
+    "tour_dain_event_5": {
+        "name": "Dain",
+        "text": "*Elle coupe le micro et reprend son souffle en redescendant vers le gymnase.* Même sans jouer, j'ai encore des choses à dire. Plus que je ne pensais."
     }
 }

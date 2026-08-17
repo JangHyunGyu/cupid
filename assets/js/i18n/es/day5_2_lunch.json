@@ -1,7 +1,16 @@
 {
-    "tour_seo_low": {"name":"Seoyeon","text":"*Te cruzas con Seoyeon al final del pasillo. Ella se ajusta la correa del bolso y se aparta medio paso.* Hoy recorrámoslo por separado. Aún me quedan cosas que terminar."},
-    "tour_yuna_low": {"name":"Yuna","text":"*La puerta del anexo está cerrada con llave. Poco después llega un mensaje breve de Yuna.* Hoy quiero estar sola. *Me alejo del anexo y vuelvo al pasillo.*"},
-    "tour_dain_low": {"name":"Dain","text":"*Te encuentras con Dain frente al gimnasio. Con un balón en las manos, se vuelve hacia la cancha.* Hoy tengo que entrenar. Nos vemos luego."},
+    "tour_seo_low": {
+        "name": "Seoyeon",
+        "text": "*Te cruzas con Seoyeon al final del pasillo. Ella se ajusta la correa del bolso y se aparta medio paso.* Hoy recorrámoslo por separado. Aún me quedan cosas que terminar."
+    },
+    "tour_yuna_low": {
+        "name": "Yuna",
+        "text": "*La puerta del anexo está cerrada con llave. Poco después llega un mensaje breve de Yuna.* Hoy quiero estar sola. *Me alejo del anexo y vuelvo al pasillo.*"
+    },
+    "tour_dain_low": {
+        "name": "Dain",
+        "text": "*Te encuentras con Dain frente al gimnasio. Con un balón en las manos, se vuelve hacia la cancha.* Hoy tengo que entrenar. Nos vemos luego."
+    },
     "tour_seo_1": {
         "name": "{name}",
         "text": "*Nos paramos, uno al lado del otro, frente a la entrada de la escuela. El mismo lugar donde Seoyeon esperaba el primer día.*"
@@ -246,5 +255,65 @@
     "tour_co_dain_3": {
         "name": "{name}",
         "text": "*Dain tira una vez de la muñequera y la suelta.*"
+    },
+    "tour_seo_event_1": {
+        "name": "Haeun",
+        "text": "Presidenta, el ensayo de la radio coincide con la revisión de seguridad de los puestos. ¿Me encargo yo de la cabina?"
+    },
+    "tour_seo_event_2": {
+        "name": "{name}",
+        "text": "*La mano de Seoyeon va hacia la carpeta y se detiene. Golpea dos veces con el bolígrafo la casilla «Radio».*"
+    },
+    "tour_seo_event_3": {
+        "name": "Seoyeon",
+        "text": "Encárgate de la cabina. Cuando termines, mándame solo el resultado."
+    },
+    "tour_seo_event_4": {
+        "name": "Haeun",
+        "text": "De acuerdo. Pero no puede venir a comprobarlo a mitad."
+    },
+    "tour_seo_event_5": {
+        "name": "Seoyeon",
+        "text": "*Haeun sale corriendo. Seoyeon no mira atrás ni una vez.* Es verdad. Una cosa puede pasar por otras manos sin que el festival se derrumbe."
+    },
+    "tour_yuna_event_1": {
+        "name": "{name}",
+        "text": "*Al salir al pasillo del anexo, vemos a dos estudiantes menores ante el tablón. Leen el relato anónimo de Yuna y preguntan si tiene continuación.*"
+    },
+    "tour_yuna_event_2": {
+        "name": "{name}",
+        "text": "*Yuna toca una esquina de la hoja. La mano que iba a arrancarla se detiene bajo el título.*"
+    },
+    "tour_yuna_event_3": {
+        "name": "Yuna",
+        "text": "Todavía no hay segunda parte. Pero esto lo escribí yo."
+    },
+    "tour_yuna_event_4": {
+        "name": "{name}",
+        "text": "*Yuna saca un bolígrafo del bolsillo y escribe bajo el título: «Choi Yuna». Las letras quedan un poco inclinadas.*"
+    },
+    "tour_yuna_event_5": {
+        "name": "Yuna",
+        "text": "*Se aparta del tablón y vuelve a entrar en el anexo.* El final te lo enseñaré primero a ti."
+    },
+    "tour_dain_event_1": {
+        "name": "{name}",
+        "text": "*Llama el entrenador. Dain escucha hasta el final la pregunta de si puede jugar el partido de exhibición del día deportivo.*"
+    },
+    "tour_dain_event_2": {
+        "name": "Dain",
+        "text": "No voy a jugar. Hoy también se lo dije a mamá. Pero si la cabina de comentaristas está libre, me encargo yo."
+    },
+    "tour_dain_event_3": {
+        "name": "{name}",
+        "text": "*Poco después, Dain da unos golpecitos al micrófono de la cabina. Desde allí se ve toda la cancha.*"
+    },
+    "tour_dain_event_4": {
+        "name": "Dain",
+        "text": "¡Ahí va el saque! ¡Esa cayó dentro de la línea! ¡Las protestas, después del partido!"
+    },
+    "tour_dain_event_5": {
+        "name": "Dain",
+        "text": "*Apaga el micrófono y recupera el aliento mientras bajamos al gimnasio.* Aunque no juegue, todavía tengo cosas que decir. Más de las que creía."
     }
 }

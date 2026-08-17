@@ -57,7 +57,7 @@
     },
     "confess_fail_5": {
         "name": "시스템",
-        "text": "─── FRIEND END (고백 실패) ───"
+        "text": "─── CONFESSION REJECTED END ───"
     },
     "day5_ending_friend": {
         "name": "{name}",
@@ -1872,5 +1872,41 @@
     "forced_violation_day5_nurse_excuse": {
         "name": "보건선생님",
         "text": "*보건선생님의 목소리가 더 낮아진다.* 오해라고 부르면 달라질 것 같아? 싫다는 의사를 무시한 건 사실이야."
+    },
+    "perfect_seo_coda_1": {
+        "name": "{name}",
+        "text": "*사진 아래에 새 학생회 운영 파일이 붙는다. 마지막 페이지 총괄란에는 하은의 이름이 있다. 서연은 수정 표시를 하나도 남기지 않았다.*"
+    },
+    "perfect_seo_coda_2": {
+        "name": "서연",
+        "text": "화분은 네가 먼저 골라. 아니, 사진으로 고르지 말고 토요일에 같이 가자."
+    },
+    "perfect_seo_coda_3": {
+        "name": "{name}",
+        "text": "*약속 시간은 비어 있다. 내가 오후 세 시를 적자 서연은 '확인' 대신 '좋아'라고 답한다.*"
+    },
+    "perfect_yuna_coda_1": {
+        "name": "{name}",
+        "text": "*서점 사인회 공지가 올라온다. 익명 대신 '최유나'가 표지보다 크게 적혀 있다.*"
+    },
+    "perfect_yuna_coda_2": {
+        "name": "유나",
+        "text": "끝나면 와. 이번엔 숨지 않을 거야."
+    },
+    "perfect_yuna_coda_3": {
+        "name": "{name}",
+        "text": "*뒤이어 사인 연습 사진이 온다. 이름이 한 페이지 가득하다. 맨 아래에만 내 이름이 작게 적혀 있다.*"
+    },
+    "perfect_dain_coda_1": {
+        "name": "다인",
+        "text": "엄마가 재방송 세 번 봤대. 경기보다 내 해설이 더 시끄럽다고."
+    },
+    "perfect_dain_coda_2": {
+        "name": "{name}",
+        "text": "*다음 경기 대본 첫 줄에는 '아프면 멈춘다'가 굵게 적혀 있다. 지운 자국은 없다.*"
+    },
+    "perfect_dain_coda_3": {
+        "name": "다인",
+        "text": "끝나고 같이 걸어가자. 오늘 속도는 내가 정할게."
     }
 }

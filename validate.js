@@ -2948,7 +2948,7 @@ const endingTests = [
     { name: '보건 GOOD', flags: { nurse_day5: true }, stats: { Nurse: 40 }, expect: ['hidden_good_nurse_4'] },
     { name: '보건 BITTERSWEET', flags: { nurse_day5: true }, stats: { Nurse: 20 }, expect: ['hidden_bitter_nurse_7'] },
     // 특수 엔딩
-    { name: 'HAREM END', flags: { ending_harem: true }, stats: {}, expect: ['harem_8'] },
+    { name: 'UNRESOLVED END', flags: { ending_harem: true }, stats: {}, expect: ['harem_8'] },
     { name: 'GOOD END (고백 수락)', flags: { day4_confession_accepted: true, route_seoyeon: true, met_seoyeon: true }, stats: { Seoyeon: 50 }, expect: ['good_5_cg_seo'] },
     { name: 'MAYHEM END', flags: { day3_has_multiple_dates: true, day3_caught_multiple_dates: true }, stats: {}, expect: ['mayhem_7'] },
     { name: 'GOOD END (뒤늦은 고백)', flags: { day5_confessed: true, route_seoyeon: true, met_seoyeon: true }, stats: { Seoyeon: 55 }, expect: ['good_5_cg_seo'] },

@@ -314,13 +314,13 @@
     },
     "wall_seo_glimpse_1": {
         "name": "{name}",
-        "text": "*Depois de acompanhar Seoyeon até em casa, volto pelo muro da escola. Dain está junto à saída de emergência do ginásio escuro, mexendo na fita do joelho.*"
+        "text": "*A caminho do parque para encontrar Seoyeon às dez, vejo Dain diante da saída de emergência do ginásio escuro, mexendo na fita do joelho.*"
     },
     "wall_seo_glimpse_2": {
         "name": "Dain",
         "text": "Só dez passes. Quando a gente terminar... me abraça um pouco. Hoje eu não consigo mais fingir que estou bem sozinha.",
         "choices": [
-            "Cumprir minha promessa a Seoyeon e voltar para casa",
+            "Cumprir a promessa e encontrar Seoyeon no parque",
             "Entrar no ginásio e ficar com Dain"
         ]
     },
@@ -330,19 +330,19 @@
     },
     "wall_seo_yuna_tempt_1": {
         "name": "{name}",
-        "text": "*No caminho de casa, Yuna escreve: 'A luz do anexo ainda está acesa.' Em seguida chega uma foto de duas cadeiras vazias, lado a lado.*"
+        "text": "*A caminho do parque, Yuna manda uma mensagem: 'As luzes do anexo ainda estão acesas.' Depois chega uma foto de duas cadeiras vazias.*"
     },
     "wall_seo_yuna_tempt_2": {
         "name": "Yuna",
         "text": "Alguém que realmente me enxergava desapareceu sem dizer nada. Se você também for embora hoje, vai parecer que aquele dia está acontecendo de novo. Só esta noite, fica aqui.",
         "choices": [
-            "Responder a Seoyeon e cumprir minha promessa",
+            "Responder a Seoyeon e seguir para o parque",
             "Ir ao anexo e ficar ao lado de Yuna"
         ]
     },
     "wall_seo_yuna_tempt_accept": {
         "name": "{name}",
-        "text": "*Yuna chega bem perto de {name} e apoia uma mão na estante. Deixa o blazer escorregar abaixo de um ombro e, com a outra mão, puxa para baixo o decote da blusa escura por baixo. Entre o ombro nu e a tatuagem, seus olhos vermelhos ficam na altura dos de {name}. A mensagem de Seoyeon — 'Você também chegou?' — não sai do topo da tela.*"
+        "text": "*Yuna chega bem perto de {name} e apoia uma mão na estante. Deixa o blazer escorregar abaixo de um ombro e, com a outra mão, puxa para baixo o decote da blusa escura por baixo. Entre o ombro nu e a tatuagem, seus olhos vermelhos ficam na altura dos de {name}. A mensagem de Seoyeon — 'Estou no banco do parque.' — não sai do topo da tela.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -474,7 +474,7 @@
     },
     "wall_dain_19": {
         "name": "Dain",
-        "text": "Não contei pra ninguém. Nem pros meus pais. 'A Dain sem jogar não é a Dain!' — Não queria ouvir isso."
+        "text": "Fingi que a reabilitação tinha acabado. Também não contei a ninguém quando voltou a doer. Nem aos meus pais. Eu não queria ouvir: 'Dain não é Dain se não estiver jogando!'"
     },
     "wall_dain_19_b": {
         "name": "Dain",
@@ -648,7 +648,7 @@
     },
     "wall_dain_glimpse_1": {
         "name": "{name}",
-        "text": "*Depois de me despedir de Dain, noto que só uma janela continua acesa no anexo da biblioteca.*"
+        "text": "*Às dez, a caminho do ginásio onde Dain espera, noto uma única janela acesa no anexo da biblioteca.*"
     },
     "wall_dain_glimpse_2": {
         "name": "{name}",
@@ -656,35 +656,35 @@
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*Yuna chega bem perto de {name} e apoia uma mão na estante. Deixa o blazer escorregar abaixo de um ombro e, com a outra mão, puxa para baixo o decote da blusa escura por baixo. Entre o ombro nu e a tatuagem, seus olhos vermelhos ficam na altura dos de {name}. O 'Cheguei em casa!' de Dain não sai do topo da tela.*"
+        "text": "*Yuna chega bem perto de {name} e apoia uma mão na estante. Deixa o blazer escorregar abaixo de um ombro e, com a outra mão, puxa para baixo o decote da blusa escura por baixo. Entre o ombro nu e a tatuagem, seus olhos vermelhos ficam na altura dos de {name}. O 'A porta dos fundos do ginásio está aberta.' de Dain não sai do topo da tela.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
-        "text": "*Às 22h, uma mensagem de Yuna aparece logo acima da notificação de Dain: 'Cheguei!'*"
+        "text": "*Às 22h, uma mensagem de Yuna aparece logo acima da notificação de Dain: 'A porta dos fundos do ginásio está aberta.'*"
     },
     "wall_dain_glimpse_4_c": {
         "name": "Yuna",
         "text": "Alguém que realmente me enxergava desapareceu sem dizer nada. Se eu ficar sozinha de novo esta noite, vai parecer que voltei àquele dia. Não importa que você estivesse com Dain. Eu preciso que você venha agora.",
         "choices": [
-            "Responder a Dain e cumprir minha promessa",
+            "Responder a Dain e seguir para o ginásio",
             "Voltar ao portão dos fundos e ficar com Yuna"
         ]
     },
     "wall_dain_seo_tempt_1": {
         "name": "{name}",
-        "text": "*Depois de me despedir de Dain, sigo para o portão principal e encontro Seoyeon diante da escada do terraço. Ela sorri como sempre, mas os dedos amassam a manga do uniforme.*"
+        "text": "*A caminho do ginásio onde Dain espera, encontro Seoyeon junto à escada do terraço. Ela sorri, mas os dedos amassam a manga do uniforme.*"
     },
     "wall_dain_seo_tempt_2": {
         "name": "Seoyeon",
         "text": "Quando eu chegar em casa, vou ter que começar colocando o sorriso de volta. Só por hoje, deixa eu ser Seoyeon em vez da presidente do conselho. Sobe comigo e eu não vou soltar sua mão.",
         "choices": [
-            "Responder a Dain e cumprir minha promessa",
+            "Responder a Dain e seguir para o ginásio",
             "Subir ao terraço com Seoyeon e segurar sua mão"
         ]
     },
     "wall_dain_seo_tempt_accept": {
         "name": "{name}",
-        "text": "*A porta do terraço se fecha. Sem dizer nada, Seoyeon desabotoa a blusa, segura o pulso de {name} e puxa a mão para si. A palma toca a pele nua do peito entre as abas abertas, e a mão de Seoyeon se fecha por cima. A mensagem de Dain — 'Chegou bem?' — acende a tela.*"
+        "text": "*A porta do terraço se fecha. Sem dizer nada, Seoyeon desabotoa a blusa, segura o pulso de {name} e puxa a mão para si. A palma toca a pele nua do peito entre as abas abertas, e a mão de Seoyeon se fecha por cima. A mensagem de Dain — 'A porta dos fundos do ginásio está aberta.' — acende a tela.*"
     },
     "wall_yuna_1": {
         "name": "{name}",
@@ -882,7 +882,7 @@
     },
     "wall_yuna_glimpse_1": {
         "name": "{name}",
-        "text": "*Depois de me despedir de Yuna, caminho junto ao muro até o portão principal. Seoyeon está sozinha sob o poste.*"
+        "text": "*A caminho do portão dos fundos onde marquei com Yuna, encontro Seoyeon sozinha sob a luz da entrada principal.*"
     },
     "wall_yuna_glimpse_2": {
         "name": "{name}",
@@ -892,7 +892,7 @@
         "name": "Seoyeon",
         "text": "Quando eu chegar em casa, vou ter que começar colocando o sorriso de volta. Só por hoje, deixa eu ser Seoyeon em vez da presidente do conselho. Sobe comigo e eu não vou soltar sua mão.",
         "choices": [
-            "Responder a Yuna e cumprir minha promessa",
+            "Responder a Yuna e seguir para o portão dos fundos",
             "Subir ao terraço com Seoyeon e segurar sua mão"
         ]
     },
@@ -902,13 +902,13 @@
     },
     "wall_yuna_dain_tempt_1": {
         "name": "{name}",
-        "text": "*No caminho de volta, depois de me despedir de Yuna, encontro Dain junto à saída de emergência do ginásio escuro, mexendo na fita do joelho.*"
+        "text": "*A caminho do portão dos fundos onde Yuna espera, vejo Dain diante da saída de emergência do ginásio escuro, mexendo na fita do joelho.*"
     },
     "wall_yuna_dain_tempt_2": {
         "name": "Dain",
         "text": "Só dez passes. Quando a gente terminar... me abraça um pouco. Hoje eu não consigo mais fingir que estou bem sozinha.",
         "choices": [
-            "Responder a Yuna e cumprir minha promessa",
+            "Responder a Yuna e seguir para o portão dos fundos",
             "Entrar no ginásio e ficar com Dain"
         ]
     },
@@ -1089,5 +1089,9 @@
     "forced_violation_day4_nurse_excuse": {
         "name": "Enfermeira",
         "text": "*A voz da enfermeira fica ainda mais baixa.* Acha que chamar de mal-entendido muda alguma coisa? Você ignorou uma recusa. Isso é fato."
+    },
+    "day4_student_return_home": {
+        "name": "{name}",
+        "text": "*Volto para casa depois do encontro. Quando a porta se fecha, a luz do celular é a única que resta no quarto.*"
     }
 }
