@@ -16,6 +16,13 @@
 - Any new character route, prompt builder, AI endpoint, retry/failover path, language, summary, or gallery mode must gain cache regression coverage in the same change.
 - Preserve cached/miss token reporting from the shared Harem OpenRouter Worker. Cache-check failures block completion and must not be bypassed or weakened.
 
+## Affinity Balance and Legacy Rebalance (Permanent)
+- 모든 연애 캐릭터의 PERFECT 엔딩 기준은 호감도 100이다.
+- 개인·그룹 프리토킹 양수 보상에는 회차 누적 상한을 두지 않는다. 본편 적용 상한은 캐릭터당 한 턴 +3, 현재 호감도 90 이상에서는 +2이며 실제 저장 호감도는 100에서 제한한다.
+- 최적 선택지와 엔딩 판정 전 개인·그룹 프리토킹을 모두 합친 이론 최대는 서연·유나·다인·담임·보건 모두 정확히 120으로 유지한다. 엔딩 뒤 프리토킹까지 포함한 이론 최대는 모두 130이다.
+- 최적 선택지 합계는 서연 77, 유나 77, 다인 78, 담임 75, 보건 75다. 시나리오 보상이나 프리토킹 기회를 바꾸면 위 120/130 불변 조건과 자동 회귀 테스트를 같은 변경에서 갱신한다.
+- `affinityRebalanceVersion` 일회성 마이그레이션은 기존 100점 본편·갤러리 기록을 99로 낮추고, 해당 캐릭터의 퍼펙트 완료 표식·퍼펙트 CG·100점 캐릭터 해금을 다시 잠근다. 이미 마이그레이션된 저장에서 새로 달성한 100점은 다시 내리지 않는다.
+
 ## Image Asset Generation (Permanent)
 - 새 배경, 이벤트 CG, 캐릭터 이미지 등 생성형 이미지 자산이 필요할 때는 반드시 Higgsfield MCP를 사용한다.
 - Higgsfield MCP를 사용할 수 없거나 생성이 실패하면 다른 이미지 생성기로 임의 대체하지 말고 사용자에게 상황을 알린다.

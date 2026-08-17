@@ -637,6 +637,40 @@ test('main relationship aftermath survives save import and is isolated per chara
     assert.match(read('assets/js/modules/FreeTalkSystem.js'), /window\.saveGameState\?\.\(\)/);
 });
 
+test('main state affinity rebalance lowers only legacy 100-point saves once', () => {
+    const stateWindow = { GAME_LANG: 'ko', CupidFreeTalkCore: core };
+    vm.runInNewContext(read('assets/js/modules/StateManager.js'), {
+        window: stateWindow,
+        console: { log() {}, error() {} }
+    });
+
+    const legacy = new stateWindow.StateManager();
+    const result = legacy.importState({
+        stats: {
+            Seoyeon: { affinity: 100 },
+            Yuna: { affinity: 99 },
+            Dain: { affinity: 100 },
+            Teacher: { affinity: 42 },
+            Nurse: { affinity: 100 }
+        }
+    });
+    assert.equal(result.affinityRebalanced, true);
+    assert.equal(legacy.getAffinity('Seoyeon'), 99);
+    assert.equal(legacy.getAffinity('Yuna'), 99);
+    assert.equal(legacy.getAffinity('Dain'), 99);
+    assert.equal(legacy.getAffinity('Teacher'), 42);
+    assert.equal(legacy.getAffinity('Nurse'), 99);
+    assert.equal(legacy.exportState().affinityRebalanceVersion, 1);
+
+    const current = new stateWindow.StateManager();
+    const currentResult = current.importState({
+        affinityRebalanceVersion: 1,
+        stats: { Seoyeon: { affinity: 100 } }
+    });
+    assert.equal(currentResult.affinityRebalanced, false);
+    assert.equal(current.getAffinity('Seoyeon'), 100);
+});
+
 test('Haeun affinity starts at zero, migrates into old saves, resets cleanly, and stays outside ending routes', () => {
     const stateWindow = { GAME_LANG: 'ko', CupidFreeTalkCore: core };
     vm.runInNewContext(read('assets/js/modules/StateManager.js'), {

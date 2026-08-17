@@ -16907,7 +16907,7 @@
 ### `wall_seo_glimpse_2`
 - 배경: `school_back.png`
 - 선택지:
-  1. "공원으로 가서 서연과의 약속을 지킨다" → `wall_seo_1` | Seoyeon +4, Dain -6 | 플래그: `day4_held_route_seoyeon`
+  1. "공원으로 가서 서연과의 약속을 지킨다" → `wall_seo_1` | Seoyeon +3, Dain -6 | 플래그: `day4_held_route_seoyeon`
   2. "체육관으로 들어가 다인의 부탁을 받아준다" → `wall_seo_glimpse_4` | Dain +8, Seoyeon -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_penalty_deferred`
 
 - 캐릭터: `dain_sad.png`
@@ -20365,7 +20365,7 @@
 - 배경: `room_school.png`
 - 배경톤: `empty`
 - 플래그: `homeroom_day5`
-- 스탯: Teacher +15
+- 스탯: Teacher +10
 - 다음: `hidden_homeroom_d5_freetalk`
 
 - 캐릭터: `teacher_normal.png`
@@ -20744,7 +20744,7 @@
 ### `hidden_nurse_d5_7`
 - 배경: `school_hallway.png`
 - 플래그: `nurse_day5`
-- 스탯: Nurse +15
+- 스탯: Nurse +10
 - 다음: `hidden_nurse_d5_freetalk`
 
 <!-- i18n -->
@@ -20754,7 +20754,7 @@
 ### `hidden_nurse_d5_7_both`
 - 배경: `school_hallway.png`
 - 플래그: `nurse_day5`, `both_hidden_day5`
-- 스탯: Nurse +15
+- 스탯: Nurse +10
 - 다음: `hidden_nurse_d5_freetalk`
 
 <!-- i18n -->
@@ -21166,7 +21166,7 @@
 
 ### `tour_seo_14`
 - 배경: `school.png`
-- 스탯: Seoyeon +3
+- 스탯: Seoyeon +1
 - 다음: `tour_seo_freetalk`
 
 - 캐릭터: `seyoun_shy.png`
@@ -21351,7 +21351,7 @@
 
 ### `tour_yuna_11`
 - 배경: `yuna_hideout.png`
-- 스탯: Yuna +4
+- 스탯: Yuna +1
 - 다음: `tour_yuna_freetalk`
 
 - 캐릭터: `yuna_shy.png`
@@ -21574,7 +21574,7 @@
 
 ### `tour_dain_end`
 - 배경: `gym.png`
-- 스탯: Dain +5
+- 스탯: Dain +3
 - 다음: `tour_dain_freetalk`
 
 - 캐릭터: `dain_shy.png`

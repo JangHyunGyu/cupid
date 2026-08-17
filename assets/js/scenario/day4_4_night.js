@@ -552,7 +552,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/dain_sad.png",
         "competitiveAffinity": true,
         "choices": [
-            { "next": "wall_seo_1", "stats": {"Seoyeon":{"affinity":4},"Dain":{"affinity":-6}}, "setFlags": ["day4_held_route_seoyeon"] },
+            { "next": "wall_seo_1", "stats": {"Seoyeon":{"affinity":3},"Dain":{"affinity":-6}}, "setFlags": ["day4_held_route_seoyeon"] },
             { "next": "wall_seo_glimpse_4", "stats": {"Dain":{"affinity":8},"Seoyeon":{"affinity":-10}}, "setFlags": ["day4_took_dain_counteroffer","day4_counteroffer_penalty_deferred"] }
         ]
     },

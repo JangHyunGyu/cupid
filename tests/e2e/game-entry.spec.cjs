@@ -520,7 +520,7 @@ test('gallery does not penalize a planned incident that the AI failed to establi
     expect(result.savedState.quietTurns).toBe(100);
 });
 
-test('legacy gallery progress gains incident state without relocking earned content', async ({ page }) => {
+test('legacy 100-point gallery progress drops to 99 and relocks perfect content once', async ({ page }) => {
     await page.goto('/gallery.html');
     await page.waitForFunction(() => window.GalleryProgress && window.GalleryData && window.CupidFreeTalkCore);
 
@@ -534,10 +534,21 @@ test('legacy gallery progress gains incident state without relocking earned cont
                     maxAffinity: 100,
                     currentAffinity: 100,
                     freeTalkCount: 30,
+                    unlocked: true,
                     perfectEndingCleared: true
-                }
+                },
+                yuna: { met: true, maxAffinity: 100, currentAffinity: 100, unlocked: true, perfectEndingCleared: true },
+                dain: { met: true, maxAffinity: 100, currentAffinity: 100, unlocked: true, perfectEndingCleared: true },
+                teacher: { met: true, maxAffinity: 100, currentAffinity: 100, unlocked: true, perfectEndingCleared: true },
+                nurse: { met: true, maxAffinity: 100, currentAffinity: 100, unlocked: true, perfectEndingCleared: true }
             },
-            cg: { ending_perfect_seoyeon: { unlocked: true } },
+            cg: {
+                ending_perfect_seoyeon: { unlocked: true },
+                ending_perfect_yuna: { unlocked: true },
+                ending_perfect_dain: { unlocked: true },
+                ending_perfect_teacher: { unlocked: true },
+                ending_perfect_nurse: { unlocked: true }
+            },
             bgm: { intro: { unlocked: true } }
         }));
 
@@ -545,22 +556,76 @@ test('legacy gallery progress gains incident state without relocking earned cont
         const incidentState = progress.getGalleryIncidentState('seyoun');
         const unlockedBefore = progress.isFreeTalkUnlocked('seyoun');
         progress.changeCurrentAffinity('seyoun', -50);
+        const saved = JSON.parse(localStorage.getItem('cupid_gallery'));
+        const ids = ['seyoun', 'yuna', 'dain', 'teacher', 'nurse'];
+        const perfectCgIds = ids.map(id => id === 'seyoun' ? 'ending_perfect_seoyeon' : `ending_perfect_${id}`);
         return {
             incidentState,
             unlockedBefore,
             unlockedAfter: progress.isFreeTalkUnlocked('seyoun'),
             currentAffinity: progress.getCurrentAffinity('seyoun'),
-            maxAffinity: progress.getAffinity('seyoun'),
-            cgStillUnlocked: progress.isUnlocked('cg', 'ending_perfect_seoyeon')
+            maxAffinities: ids.map(id => progress.getAffinity(id)),
+            allPerfectFlagsCleared: ids.every(id => !saved.characters[id].perfectEndingCleared),
+            allCharacterUnlocksCleared: ids.every(id => !saved.characters[id].unlocked),
+            allPerfectCgsRelocked: perfectCgIds.every(id => !progress.isUnlocked('cg', id)),
+            migrationVersion: saved.affinityRebalanceVersion
         };
     });
 
     expect(result.incidentState.completedTurns).toBe(0);
-    expect(result.unlockedBefore).toBe(true);
-    expect(result.unlockedAfter).toBe(true);
-    expect(result.currentAffinity).toBe(50);
-    expect(result.maxAffinity).toBe(100);
-    expect(result.cgStillUnlocked).toBe(true);
+    expect(result.unlockedBefore).toBe(false);
+    expect(result.unlockedAfter).toBe(false);
+    expect(result.currentAffinity).toBe(49);
+    expect(result.maxAffinities).toEqual([99, 99, 99, 99, 99]);
+    expect(result.allPerfectFlagsCleared).toBe(true);
+    expect(result.allCharacterUnlocksCleared).toBe(true);
+    expect(result.allPerfectCgsRelocked).toBe(true);
+    expect(result.migrationVersion).toBe(1);
+});
+
+test('legacy 100-point main save drops to 99, reroutes, and never downgrades twice', async ({ page }) => {
+    await page.goto('/game.html');
+    await page.waitForFunction(() => window.SaveManager && window.StateManager);
+
+    const result = await page.evaluate(() => {
+        localStorage.setItem('cupid_save', JSON.stringify({
+            currentSceneId: 'perfect_seo_5',
+            lastBgUrl: 'assets/images/background/ending_perfect_seoyeon.png',
+            currentCharacters: { center: 'assets/images/characters/seyoun_shy.png' },
+            gameState: {
+                stats: { Seoyeon: { affinity: 100 } },
+                flags: {
+                    route_seoyeon: true,
+                    ending_perfect: true,
+                    isDating_Seoyeon: true
+                }
+            }
+        }));
+
+        const manager = new window.SaveManager();
+        const migrated = manager.load();
+        const persisted = JSON.parse(localStorage.getItem('cupid_save'));
+        persisted.gameState.stats.Seoyeon.affinity = 100;
+        localStorage.setItem('cupid_save', JSON.stringify(persisted));
+        const loadedAgain = manager.load();
+        return {
+            firstAffinity: migrated.gameState.stats.Seoyeon.affinity,
+            firstScene: migrated.currentSceneId,
+            endingPerfect: migrated.gameState.flags.ending_perfect,
+            isDating: migrated.gameState.flags.isDating_Seoyeon,
+            migrationVersion: migrated.gameState.affinityRebalanceVersion,
+            persistedAffinity: persisted.gameState.stats.Seoyeon.affinity,
+            secondAffinity: loadedAgain.gameState.stats.Seoyeon.affinity
+        };
+    });
+
+    expect(result.firstAffinity).toBe(99);
+    expect(result.firstScene).toBe('ending_aff_check_seo');
+    expect(result.endingPerfect).toBe(false);
+    expect(result.isDating).toBe(false);
+    expect(result.migrationVersion).toBe(1);
+    expect(result.persistedAffinity).toBe(100);
+    expect(result.secondAffinity).toBe(100);
 });
 
 test('first gallery free-talk starts at max affinity and never resets a played relationship', async ({ page }) => {
@@ -573,6 +638,7 @@ test('first gallery free-talk starts at max affinity and never resets a played r
         }));
         localStorage.setItem('cupid_gallery', JSON.stringify({
             version: window.GalleryData.VERSION,
+            affinityRebalanceVersion: window.GalleryData.AFFINITY_REBALANCE_VERSION,
             characters: {
                 seyoun: {
                     met: true,

@@ -28,6 +28,8 @@
  */
 
 class SaveManager {
+    static AFFINITY_REBALANCE_VERSION = 1;
+
     /**
      * @param {string} storageKey - localStorage에 사용할 키 이름
      *                              기본값: 'cupid_save'
@@ -78,7 +80,9 @@ class SaveManager {
         if (!saved) return null;
 
         try {
-            return JSON.parse(saved);
+            const saveData = JSON.parse(saved);
+            this._migrateAffinityRebalance(saveData);
+            return saveData;
         } catch (e) {
             // JSON 파싱 실패 (데이터 손상)
             console.error('[SaveManager] 파싱 오류:', e);
@@ -89,6 +93,72 @@ class SaveManager {
             });
             return null;
         }
+    }
+
+    /**
+     * 기존 세이브의 100점을 99로 내리고, 퍼펙트 구간 저장은 엔딩 판정 지점으로 되돌립니다.
+     * 마이그레이션 버전을 세이브에 기록하므로 이후 새로 달성한 100점은 유지됩니다.
+     *
+     * @param {Object} saveData
+     * @returns {{changed:boolean, downgradedCharacters:string[], reroutedScene:string}}
+     * @private
+     */
+    _migrateAffinityRebalance(saveData) {
+        const gameState = saveData?.gameState;
+        if (!gameState || typeof gameState !== 'object') {
+            return { changed: false, downgradedCharacters: [], reroutedScene: '' };
+        }
+        if ((Number(gameState.affinityRebalanceVersion) || 0) >= SaveManager.AFFINITY_REBALANCE_VERSION) {
+            return { changed: false, downgradedCharacters: [], reroutedScene: '' };
+        }
+
+        const configs = [
+            { key: 'Teacher', routeFlag: 'homeroom_day5', check: 'hidden_perfect_homeroom_check', pattern: /^(hidden_perfect_homeroom_|date_choice_perfect_teacher|day5_teacher_ending_freetalk_)/ },
+            { key: 'Nurse', routeFlag: 'nurse_day5', check: 'hidden_perfect_nurse_check', pattern: /^(hidden_perfect_nurse_|date_choice_perfect_nurse|day5_nurse_ending_freetalk_)/ },
+            { key: 'Seoyeon', routeFlag: 'route_seoyeon', check: 'ending_aff_check_seo', pattern: /^(perfect_seo_|perfect_epilogue_.*_seo|date_choice_perfect_seo|day5_seo_ending_freetalk_)/ },
+            { key: 'Yuna', routeFlag: 'route_yuna', check: 'ending_aff_check_yuna', pattern: /^(perfect_yuna_|perfect_epilogue_.*_yuna|date_choice_perfect_yuna|day5_yuna_ending_freetalk_)/ },
+            { key: 'Dain', routeFlag: 'route_dain', check: 'ending_aff_check_dain', pattern: /^(perfect_dain_|perfect_epilogue_.*_dain|date_choice_perfect_dain|day5_dain_ending_freetalk_)/ }
+        ];
+        const stats = gameState.stats && typeof gameState.stats === 'object' ? gameState.stats : {};
+        const flags = gameState.flags && typeof gameState.flags === 'object' ? gameState.flags : {};
+        gameState.flags = flags;
+        const downgradedCharacters = [];
+        const datingBeforeMigration = new Set(
+            configs.filter(config => flags[`isDating_${config.key}`]).map(config => config.key)
+        );
+
+        for (const { key } of configs) {
+            if ((Number(stats[key]?.affinity) || 0) < 100) continue;
+            stats[key].affinity = 99;
+            flags[`isDating_${key}`] = false;
+            downgradedCharacters.push(key);
+        }
+
+        let reroutedScene = '';
+        if (downgradedCharacters.length > 0) {
+            const currentSceneId = String(saveData.currentSceneId || '');
+            const isAffected = config => downgradedCharacters.includes(config.key);
+            const activeConfig = configs.find(config => isAffected(config) && config.pattern.test(currentSceneId))
+                || configs.find(config => isAffected(config) && datingBeforeMigration.has(config.key))
+                || configs.find(config => isAffected(config) && flags[config.routeFlag]);
+            const isInsidePerfectEnding = Boolean(flags.ending_perfect)
+                || configs.some(config => config.pattern.test(currentSceneId));
+            flags.ending_perfect = false;
+            if (activeConfig && isInsidePerfectEnding) {
+                reroutedScene = activeConfig.check;
+                saveData.currentSceneId = reroutedScene;
+                saveData.lastBgUrl = '';
+                saveData.currentCharacters = {};
+            }
+        }
+
+        gameState.affinityRebalanceVersion = SaveManager.AFFINITY_REBALANCE_VERSION;
+        try {
+            localStorage.setItem(this.storageKey, JSON.stringify(saveData));
+        } catch (e) {
+            console.warn('[SaveManager] 호감도 재조정 저장 실패:', e);
+        }
+        return { changed: true, downgradedCharacters, reroutedScene };
     }
 
     /**

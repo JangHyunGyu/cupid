@@ -101,6 +101,8 @@ class GalleryProgress {
                     this.data = parsed;
                     // trueEndingCleared → perfectEndingCleared 마이그레이션
                     this._migratePerfectEndingKey();
+                    // 기존 100점 및 퍼펙트 전용 해금을 새 기준에 맞춰 1회 재조정
+                    this._migrateAffinityRebalance();
                     // 기존 최고 호감도를 갤러리 프리토킹의 최초 현재값으로 사용
                     this._migrateCurrentAffinity();
                     return this.data;
@@ -146,6 +148,19 @@ class GalleryProgress {
             this.save();
             console.log('[GalleryProgress] trueEndingCleared → perfectEndingCleared 마이그레이션 완료');
         }
+    }
+
+    /** @private */
+    _migrateAffinityRebalance() {
+        const result = GalleryData.migrateLegacyPerfectAffinity?.(this.data)
+            || { changed: false, downgradedCharacters: [] };
+        if (result.changed) {
+            this.save();
+            if (result.downgradedCharacters.length > 0) {
+                console.log(`[GalleryProgress] 기존 100점 기록 재조정 완료: ${result.downgradedCharacters.join(', ')}`);
+            }
+        }
+        return result;
     }
 
     /**
@@ -196,6 +211,7 @@ class GalleryProgress {
     _createDefaultData() {
         return {
             version: GalleryData.VERSION,
+            affinityRebalanceVersion: GalleryData.AFFINITY_REBALANCE_VERSION,
             characters: {
                 seyoun: { met: false, maxAffinity: 0, currentAffinity: 0, galleryFreeTalkAffinityInitialized: false, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState(), relationshipAftermath: null },
                 yuna: { met: false, maxAffinity: 0, currentAffinity: 0, galleryFreeTalkAffinityInitialized: false, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState(), relationshipAftermath: null },
@@ -237,6 +253,8 @@ class GalleryProgress {
         if (saved) {
             try {
                 this.data = JSON.parse(saved);
+                this._migratePerfectEndingKey();
+                this._migrateAffinityRebalance();
                 this._migrateCurrentAffinity();
             } catch (e) {
                 // 파싱 실패 시 현재 데이터 유지

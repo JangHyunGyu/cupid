@@ -27,6 +27,58 @@ class GalleryData {
      */
     static VERSION = 2;
 
+    /** 기존 100점 기록을 새 퍼펙트 기준에 맞춰 한 번만 재조정하는 버전 */
+    static AFFINITY_REBALANCE_VERSION = 1;
+
+    static PERFECT_CG_BY_CHARACTER = Object.freeze({
+        seyoun: 'ending_perfect_seoyeon',
+        yuna: 'ending_perfect_yuna',
+        dain: 'ending_perfect_dain',
+        teacher: 'ending_perfect_teacher',
+        nurse: 'ending_perfect_nurse'
+    });
+
+    /**
+     * 기존 최고 호감도 100 기록을 99로 낮추고 100점·퍼펙트 전용 해금을 회수합니다.
+     * 새 버전에서 다시 100과 퍼펙트 엔딩을 달성하면 기존 해금 흐름으로 복구됩니다.
+     *
+     * @param {Object} progress cupid_gallery 진행 데이터
+     * @returns {{changed:boolean, downgradedCharacters:string[]}}
+     */
+    static migrateLegacyPerfectAffinity(progress) {
+        if (!progress || typeof progress !== 'object') {
+            return { changed: false, downgradedCharacters: [] };
+        }
+        if ((Number(progress.affinityRebalanceVersion) || 0) >= this.AFFINITY_REBALANCE_VERSION) {
+            return { changed: false, downgradedCharacters: [] };
+        }
+
+        const downgradedCharacters = [];
+        const characters = progress.characters && typeof progress.characters === 'object'
+            ? progress.characters
+            : {};
+        if (progress.characters !== characters) progress.characters = characters;
+        if (!progress.cg || typeof progress.cg !== 'object') progress.cg = {};
+
+        for (const [charId, perfectCgId] of Object.entries(this.PERFECT_CG_BY_CHARACTER)) {
+            const charData = characters[charId];
+            if (!charData || typeof charData !== 'object') continue;
+            if ((Number(charData.maxAffinity) || 0) < 100) continue;
+
+            charData.maxAffinity = 99;
+            if ((Number(charData.currentAffinity) || 0) >= 100) charData.currentAffinity = 99;
+            delete charData.unlocked;
+            delete charData.unlockedAt;
+            delete charData.perfectEndingCleared;
+            delete charData.trueEndingCleared;
+            delete progress.cg[perfectCgId];
+            downgradedCharacters.push(charId);
+        }
+
+        progress.affinityRebalanceVersion = this.AFFINITY_REBALANCE_VERSION;
+        return { changed: true, downgradedCharacters };
+    }
+
     // =========================================================================
     // 캐릭터 데이터 (Character Data)
     // =========================================================================

@@ -76,6 +76,7 @@ class GalleryManager {
         if (!saved) {
             return {
                 version: this.dataVersion,
+                affinityRebalanceVersion: window.GalleryData?.AFFINITY_REBALANCE_VERSION || 1,
                 characters: {},
                 cg: {},
                 bgm: { intro: { unlocked: true } }  // 인트로 BGM은 기본 해금
@@ -89,6 +90,9 @@ class GalleryManager {
             // 구버전 데이터면 버전 정보 추가
             if (!data.version) data.version = this.dataVersion;
 
+            const migration = window.GalleryData?.migrateLegacyPerfectAffinity?.(data);
+            if (migration?.changed) this.saveProgress(data);
+
             return data;
         } catch (e) {
             console.error('[GalleryManager] 갤러리 데이터 파싱 오류:', e);
@@ -100,6 +104,7 @@ class GalleryManager {
             // 손상된 데이터는 무시하고 기본 구조 반환
             return {
                 version: this.dataVersion,
+                affinityRebalanceVersion: window.GalleryData?.AFFINITY_REBALANCE_VERSION || 1,
                 characters: {},
                 cg: {},
                 bgm: { intro: { unlocked: true } }

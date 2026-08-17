@@ -17,6 +17,9 @@
  */
 
 class StateManager {
+    static AFFINITY_REBALANCE_VERSION = 1;
+    static ROMANCE_CHARACTER_KEYS = Object.freeze(['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse']);
+
     constructor() {
         /**
          * 플레이어 이름
@@ -32,6 +35,9 @@ class StateManager {
          * - SCENARIO[currentDay]에서 해당 날짜의 씬을 검색
          */
         this.currentDay = 1;
+
+        /** 기존 100점 세이브를 99로 재조정한 저장 규칙 버전 */
+        this.affinityRebalanceVersion = StateManager.AFFINITY_REBALANCE_VERSION;
 
         /**
          * 캐릭터별 호감도 데이터
@@ -87,6 +93,7 @@ class StateManager {
         const lang = window.GAME_LANG || 'ko';
         this.playerName = { en: "Protagonist", es: "Protagonista", ja: "主人公", fr: "Protagoniste", de: "Protagonist", pt: "Protagonista" }[lang] || "주인공";
         this.currentDay = 1;
+        this.affinityRebalanceVersion = StateManager.AFFINITY_REBALANCE_VERSION;
         this.stats = {
             Seoyeon: { affinity: 0 },
             Yuna: { affinity: 0 },
@@ -335,6 +342,7 @@ class StateManager {
         return {
             playerName: this.playerName,
             currentDay: this.currentDay,
+            affinityRebalanceVersion: this.affinityRebalanceVersion,
             stats: JSON.parse(JSON.stringify(this.stats)),
             chatMemories: JSON.parse(JSON.stringify(this.chatMemories)),
             groupConversationMemories: JSON.parse(JSON.stringify(this.groupConversationMemories)),
@@ -354,9 +362,20 @@ class StateManager {
      * @param {Object} data - exportState()로 생성된 저장 데이터
      */
     importState(data) {
+        const savedAffinityRebalanceVersion = Number(data.affinityRebalanceVersion) || 0;
         if (data.playerName) this.playerName = data.playerName;
         if (data.currentDay !== undefined) this.currentDay = data.currentDay;
         if (data.stats) this.stats = { ...this.stats, ...data.stats };
+        let affinityRebalanced = false;
+        if (savedAffinityRebalanceVersion < StateManager.AFFINITY_REBALANCE_VERSION) {
+            for (const charKey of StateManager.ROMANCE_CHARACTER_KEYS) {
+                if ((Number(this.stats[charKey]?.affinity) || 0) >= 100) {
+                    this.stats[charKey].affinity = 99;
+                    affinityRebalanced = true;
+                }
+            }
+        }
+        this.affinityRebalanceVersion = StateManager.AFFINITY_REBALANCE_VERSION;
         if (data.chatMemories) this.chatMemories = data.chatMemories;
         this.groupConversationMemories = [];
         if (Array.isArray(data.groupConversationMemories)) {
@@ -372,6 +391,7 @@ class StateManager {
         if (data.flags) this.flags = data.flags;
 
         console.log('[StateManager] 상태 복원 완료');
+        return { affinityRebalanced };
     }
 
     /**

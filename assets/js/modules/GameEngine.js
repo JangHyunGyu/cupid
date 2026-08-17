@@ -1202,6 +1202,7 @@ class GameEngine {
                     if (this.stateManager.getFlag(`isDating_${key}`)) {
                         try {
                             const gallery = JSON.parse(localStorage.getItem('cupid_gallery') || '{}');
+                            gallery.affinityRebalanceVersion = window.GalleryData?.AFFINITY_REBALANCE_VERSION || 1;
                             if (!gallery.characters) gallery.characters = {};
                             if (!gallery.characters[id]) gallery.characters[id] = {};
                             gallery.characters[id].perfectEndingCleared = true;

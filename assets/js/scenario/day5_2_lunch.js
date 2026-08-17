@@ -177,7 +177,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "tour_seo_14": {
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/seyoun_shy.png",
-        "stats": {"Seoyeon":{"affinity":3}},
+        "stats": {"Seoyeon":{"affinity":1}},
         "next": "tour_seo_freetalk"
     },
     "tour_seo_freetalk": {
@@ -284,7 +284,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "tour_yuna_11": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_shy.png",
-        "stats": {"Yuna":{"affinity":4}},
+        "stats": {"Yuna":{"affinity":1}},
         "next": "tour_yuna_freetalk"
     },
     "tour_yuna_freetalk": {
@@ -413,7 +413,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "tour_dain_end": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_shy.png",
-        "stats": {"Dain":{"affinity":5}},
+        "stats": {"Dain":{"affinity":3}},
         "next": "tour_dain_freetalk"
     },
     "tour_dain_freetalk": {
