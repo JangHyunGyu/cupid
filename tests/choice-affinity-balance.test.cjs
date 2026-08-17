@@ -493,6 +493,10 @@ test('optimal authored routes give every romance character 84 points before free
     assert.equal(scenes.after3_yuna_choice.choices[1].stats.Yuna.affinity, 17);
     assert.equal(scenes.wall_yuna_choice.choices[0].stats.Yuna.affinity, 4);
     assert.equal(scenes.after3_dain_choice.choices[1].stats.Dain.affinity, 17);
+    assert.ok(scenes.after3_dain_dilemma_final.choices[1].setFlags.includes('dain_planned_nurse_visit'));
+    assert.equal(scenes.after3_dain_dilemma_final.choices[1].setFlags.includes('ignored_dain_knee'), false);
+    assert.equal(korean.after3_dain_dilemma_final.choices[1], '알겠어. 네가 직접 말해. 대신 보건실엔 같이 갈게.');
+    assert.equal(korean.after3_dain_choice1_react3.text, '고마워. 보건실 갈 때... 옆에 있어 줘.');
     assert.equal(scenes.wall_dain_choice.choices[1].stats.Dain.affinity, 5);
     assert.equal(scenes.hidden_homeroom_d4_choice.choices[0].stats.Teacher.affinity, 7);
     assert.equal(scenes.hidden_homeroom_d4_cafe_choice.choices[0].stats.Teacher.affinity, 7);

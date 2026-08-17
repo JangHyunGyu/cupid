@@ -17,7 +17,12 @@ async function waitForRuntime(page) {
     }
 }
 
-for (const pageName of ['index.html', 'index-en.html', 'game.html', 'game-en.html']) {
+const localizedGamePages = [
+    'game.html', 'game-en.html', 'game-ja.html', 'game-es.html',
+    'game-fr.html', 'game-de.html', 'game-pt.html'
+];
+
+for (const pageName of ['index.html', 'index-en.html', ...localizedGamePages]) {
     test(`${pageName} loads the complete game runtime`, async ({ page }) => {
         const errors = [];
         page.on('pageerror', error => errors.push(error.message));
@@ -28,10 +33,40 @@ for (const pageName of ['index.html', 'index-en.html', 'game.html', 'game-en.htm
             await expect(page.locator('#start-btn')).toBeEnabled();
         } else {
             await expect(page.locator('#game-container')).toHaveCount(1);
+            await expect(page.locator('#fade-layer')).toHaveAttribute('aria-hidden', 'true');
+            await expect(page.locator('#credits-layer')).toHaveAttribute('aria-hidden', 'true');
         }
         expect(errors).toEqual([]);
     });
 }
+
+test('cinematic overlays only enter the accessibility tree while active', async ({ page }) => {
+    await page.goto('/game.html');
+    await waitForRuntime(page);
+    await page.waitForFunction(() => window.gameEngine?.uiManager);
+
+    const fadeLayer = page.locator('#fade-layer');
+    const tbcText = page.locator('#tbc-text');
+    await page.evaluate(() => {
+        window.gameEngine.uiManager.setFade(true, true);
+        window.gameEngine.uiManager.setFade(false);
+    });
+    await expect(fadeLayer).toHaveAttribute('aria-hidden', 'true');
+    await page.waitForTimeout(1100);
+    await expect(tbcText).not.toHaveClass(/show/);
+
+    await page.evaluate(() => window.gameEngine.uiManager.setFade(true));
+    await expect(fadeLayer).toHaveAttribute('aria-hidden', 'false');
+    await page.evaluate(() => window.gameEngine.uiManager.setFade(false));
+    await expect(fadeLayer).toHaveAttribute('aria-hidden', 'true');
+
+    await page.evaluate(() => window.gameEngine.renderScene('day5_credits'));
+    const creditsLayer = page.locator('#credits-layer');
+    await expect(creditsLayer).toHaveClass(/active/);
+    await expect(creditsLayer).toHaveAttribute('aria-hidden', 'false');
+    await page.locator('#credits-skip-btn').click();
+    await expect(creditsLayer).toHaveAttribute('aria-hidden', 'true');
+});
 
 test('mobile landing keeps its primary actions and footer inside the viewport', async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 });

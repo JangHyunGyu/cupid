@@ -559,7 +559,7 @@
         "text": "*Dain doesn't wipe her wet eyes. None of her usual laughter follows her final words.*",
         "choices": [
             "Sorry. But I'm telling.",
-            "Okay. I won't say anything."
+            "Okay. You tell them yourself. But I'm going to the nurse's office with you."
         ]
     },
     "after3_dain_tell_confirm": {
@@ -576,11 +576,11 @@
     },
     "after3_dain_tell_retreat": {
         "name": "Dain",
-        "text": "*Dain lets out a long breath and stops the ball rolling toward her with her toe.*"
+        "text": "*Dain lets out a long breath and stops the ball rolling toward her with her toe.* ...You'll wait until I can say it myself?"
     },
     "after3_dain_choice1": {
         "name": "{name}",
-        "text": "*I sit beside her without speaking. Dain looks over while picking at her shoelace.*"
+        "text": "*I sit beside her without pressing for an answer. Dain looks over while picking at her shoelace.*"
     },
     "after3_dain_choice1_2": {
         "name": "Dain",
@@ -588,7 +588,7 @@
     },
     "after3_dain_choice1_3": {
         "name": "{name}",
-        "text": "Because you'd just say you're fine."
+        "text": "You said you'd tell them when you were ready."
     },
     "after3_dain_choice1_react": {
         "name": "Dain",
@@ -596,11 +596,11 @@
     },
     "after3_dain_choice1_react2": {
         "name": "Dain",
-        "text": "Yeah. I would have."
+        "text": "Yeah. If you'd asked now, I would've said I was fine again."
     },
     "after3_dain_choice1_react3": {
         "name": "Dain",
-        "text": "Thanks. For not asking anything."
+        "text": "Thanks. When I go to the nurse's office... stay with me."
     },
     "after3_dain_freetalk": {
         "name": "Dain",

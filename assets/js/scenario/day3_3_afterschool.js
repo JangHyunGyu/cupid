@@ -724,7 +724,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/dain_sad.png",
         "choices": [
             { "next": "after3_dain_tell_confirm", "stats": {"Dain":{"affinity":-20}}, "setFlags": ["told_about_dain_knee"] },
-            { "next": "after3_dain_tell_retreat", "stats": {"Dain":{"affinity":4}}, "setFlags": ["ignored_dain_knee"] }
+            { "next": "after3_dain_tell_retreat", "stats": {"Dain":{"affinity":4}}, "setFlags": ["dain_planned_nurse_visit"] }
         ]
     },
     "after3_dain_tell_confirm": {

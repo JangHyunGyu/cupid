@@ -559,7 +559,7 @@
         "text": "*Dain wischt ihre feuchten Augen nicht ab. Nach ihren letzten Worten folgt auch nicht ihr übliches Lachen.*",
         "choices": [
             "Tut mir leid. Aber ich werde jemandem davon erzählen.",
-            "Okay. Ich sage nichts."
+            "Okay. Du sagst es selbst. Aber ich komme mit ins Krankenzimmer."
         ]
     },
     "after3_dain_tell_confirm": {
@@ -576,11 +576,11 @@
     },
     "after3_dain_tell_retreat": {
         "name": "Dain",
-        "text": "*Dain atmet lang aus und stoppt den Ball, der auf sie zurollt, mit der Fußspitze.*"
+        "text": "*Dain atmet lang aus und stoppt den Ball, der auf sie zurollt, mit der Fußspitze.* ...Wartest du, bis ich es selbst sagen kann?"
     },
     "after3_dain_choice1": {
         "name": "{name}",
-        "text": "*Ich setze mich wortlos neben sie. Dain zupft an ihrem Schnürsenkel und blickt zu mir.*"
+        "text": "*Ich setze mich neben sie, ohne sie zu drängen. Dain zupft an ihrem Schnürsenkel und blickt zu mir.*"
     },
     "after3_dain_choice1_2": {
         "name": "Dain",
@@ -588,7 +588,7 @@
     },
     "after3_dain_choice1_3": {
         "name": "{name}",
-        "text": "Weil du doch nur sagen würdest, dass alles gut ist."
+        "text": "Du hast gesagt, du erzählst es, wenn du bereit bist."
     },
     "after3_dain_choice1_react": {
         "name": "Dain",
@@ -596,11 +596,11 @@
     },
     "after3_dain_choice1_react2": {
         "name": "Dain",
-        "text": "Stimmt. Das hätte ich gesagt."
+        "text": "Stimmt. Hättest du jetzt gefragt, hätte ich wieder gesagt, dass alles gut ist."
     },
     "after3_dain_choice1_react3": {
         "name": "Dain",
-        "text": "Danke, dass du nicht gefragt hast."
+        "text": "Danke. Wenn ich ins Krankenzimmer gehe ... bleib bei mir."
     },
     "after3_dain_freetalk": {
         "name": "Dain",

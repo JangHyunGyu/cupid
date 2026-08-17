@@ -559,7 +559,7 @@
         "text": "*Dain n'essuie pas le coin humide de ses yeux. Cette fois, aucun rire ne vient après ses derniers mots.*",
         "choices": [
             "Désolé. Mais je vais le dire.",
-            "...D’accord. Je ne dirai rien."
+            "D’accord. Dis-le toi-même. Mais je t’accompagnerai à l’infirmerie."
         ]
     },
     "after3_dain_tell_confirm": {
@@ -576,11 +576,11 @@
     },
     "after3_dain_tell_retreat": {
         "name": "Dain",
-        "text": "*Dain expire longuement et arrête du bout du pied le ballon qui roule vers elle.*"
+        "text": "*Dain expire longuement et arrête du bout du pied le ballon qui roule vers elle.* ...Tu attendras que je sois prête à le dire moi-même ?"
     },
     "after3_dain_choice1": {
         "name": "{name}",
-        "text": "*Je m'assois à côté d'elle sans rien dire. Dain lève les yeux vers moi en tripotant ses lacets.*"
+        "text": "*Je m’assois à côté d’elle sans la presser. Dain lève les yeux vers moi en tripotant ses lacets.*"
     },
     "after3_dain_choice1_2": {
         "name": "Dain",
@@ -588,7 +588,7 @@
     },
     "after3_dain_choice1_3": {
         "name": "{name}",
-        "text": "Parce que tu dirais que ça va."
+        "text": "Tu as dit que tu le dirais quand tu serais prête."
     },
     "after3_dain_choice1_react": {
         "name": "Dain",
@@ -596,11 +596,11 @@
     },
     "after3_dain_choice1_react2": {
         "name": "Dain",
-        "text": "...Ouais. J’aurais dit que ça va."
+        "text": "...Ouais. Si tu avais demandé maintenant, j’aurais encore dit que ça allait."
     },
     "after3_dain_choice1_react3": {
         "name": "Dain",
-        "text": "Merci. De ne rien avoir demandé."
+        "text": "Merci. Quand j’irai à l’infirmerie... reste avec moi."
     },
     "after3_dain_freetalk": {
         "name": "Dain",

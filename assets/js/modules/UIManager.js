@@ -843,10 +843,20 @@ class UIManager {
      * @param {boolean} showTbc - "To Be Continued" 텍스트 표시 여부
      */
     setFade(active, showTbc = false) {
+        if (this._tbcTimer) {
+            clearTimeout(this._tbcTimer);
+            this._tbcTimer = null;
+        }
+        this.fadeLayer.setAttribute('aria-hidden', active ? 'false' : 'true');
         if (active) {
             this.fadeLayer.classList.add('active');
             // TBC 텍스트는 1초 후 표시 (페이드 완료 후)
-            if (showTbc) setTimeout(() => this.tbcText.classList.add('show'), 1000);
+            if (showTbc) {
+                this._tbcTimer = setTimeout(() => {
+                    if (this.fadeLayer.classList.contains('active')) this.tbcText.classList.add('show');
+                    this._tbcTimer = null;
+                }, 1000);
+            }
         } else {
             this.fadeLayer.classList.remove('active');
             this.tbcText.classList.remove('show');

@@ -1269,6 +1269,7 @@ class GameEngine {
                 const ct = (obj) => obj[lang] || obj.ko;
                 creditsLayer = document.createElement('div');
                 creditsLayer.id = 'credits-layer';
+                creditsLayer.setAttribute('aria-hidden', 'true');
                 creditsLayer.innerHTML = `
                     <div id="credits-content">
                         <div class="credits-title">CUPID</div>
@@ -1318,6 +1319,7 @@ class GameEngine {
 
             // 이전 크레딧 상태 완전 초기화 (재진입 시 애니메이션 재시작 보장)
             creditsLayer.classList.remove('active');
+            creditsLayer.setAttribute('aria-hidden', 'true');
             const content = document.getElementById('credits-content');
             if (content) {
                 content.style.animation = 'none';
@@ -1337,6 +1339,7 @@ class GameEngine {
                 content.style.animation = '';
                 content.style.transform = '';
             }
+            creditsLayer.setAttribute('aria-hidden', 'false');
             creditsLayer.classList.add('active');
 
             console.log('[GameEngine] 크레딧 레이어 활성화됨');
@@ -1369,6 +1372,7 @@ class GameEngine {
                 clearTimeout(creditsTimer);
                 creditsLayer._creditsTimer = null;
                 creditsLayer.classList.remove('active');
+                creditsLayer.setAttribute('aria-hidden', 'true');
                 // 크레딧 스크롤 애니메이션 리셋
                 if (content) {
                     content.style.animation = 'none';

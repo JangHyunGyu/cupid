@@ -559,7 +559,7 @@
         "text": "*Dain não seca os olhos úmidos. Tampouco acrescenta a risada que costuma vir depois de suas últimas palavras.*",
         "choices": [
             "Desculpa. Mas vou falar.",
-            "...Tá. Não conto pra ninguém."
+            "Tá. Você mesma conta. Mas eu vou com você até a enfermaria."
         ]
     },
     "after3_dain_tell_confirm": {
@@ -576,11 +576,11 @@
     },
     "after3_dain_tell_retreat": {
         "name": "Dain",
-        "text": "*Dain solta o ar devagar e detém com a ponta do pé a bola que rola até ela.*"
+        "text": "*Dain solta o ar devagar e detém com a ponta do pé a bola que rola até ela.* ...Você espera até eu conseguir falar primeiro?"
     },
     "after3_dain_choice1": {
         "name": "{name}",
-        "text": "*Sento ao lado dela sem dizer nada. Dain mexe no cadarço e então olha para mim.*"
+        "text": "*Sento ao lado dela sem apressar a resposta. Dain mexe no cadarço e então olha para mim.*"
     },
     "after3_dain_choice1_2": {
         "name": "Dain",
@@ -588,7 +588,7 @@
     },
     "after3_dain_choice1_3": {
         "name": "{name}",
-        "text": "Porque você ia dizer que está tudo bem."
+        "text": "Você disse que ia contar quando estivesse pronta."
     },
     "after3_dain_choice1_react": {
         "name": "Dain",
@@ -596,11 +596,11 @@
     },
     "after3_dain_choice1_react2": {
         "name": "Dain",
-        "text": "...É. Eu ia mesmo."
+        "text": "...É. Se você perguntasse agora, eu ia dizer de novo que estava tudo bem."
     },
     "after3_dain_choice1_react3": {
         "name": "Dain",
-        "text": "Valeu. Por não ter perguntado nada."
+        "text": "Valeu. Quando eu for à enfermaria... fica comigo."
     },
     "after3_dain_freetalk": {
         "name": "Dain",

@@ -1066,10 +1066,10 @@ function simGetAvailableChoices(choices, state) {
     });
 }
 
-// ===== TEST 1: 전체 경로 탐색 (DFS) — 모든 선택지 조합으로 데드엔드 탐지 =====
-console.log('[PLAYTEST] 전체 경로 탐색 시작...');
+// ===== TEST 1: 경로 조합 탐색 (DFS) — 선택지 조합으로 데드엔드 탐지 =====
+console.log('[PLAYTEST] 경로 조합 탐색 시작...');
 const MAX_STEPS = 2000;      // 무한루프 방지
-const MAX_PATHS = 5000;      // 탐색 경로 수 제한
+const MAX_PATHS = 50000;     // 기본 회귀 검증 상한 (정확한 그래프 도달성 검사는 아래에서 별도 수행)
 const deadEnds = [];
 const completedPaths = [];
 let pathsExplored = 0;
@@ -1317,11 +1317,12 @@ for (const [sceneId, { scene }] of Object.entries(allScenes)) {
     }
 }
 
-console.log('[PLAYTEST] 탐색 완료: ' + pathsExplored + '개 경로, ' + completedPaths.length + '개 완료, ' + deadEnds.length + '개 데드엔드');
+const pathTraversalTruncated = dfsStack.length > 0;
+console.log('[PLAYTEST] 탐색 완료: ' + pathsExplored + '개 경로, ' + completedPaths.length + '개 완료, ' + deadEnds.length + '개 데드엔드' + (pathTraversalTruncated ? ' (상한 ' + MAX_PATHS + '개에서 중단)' : ' (전수 완료)'));
 
 // ===== TEST 8: 전 언어 i18n 완전 커버리지 — 모든 텍스트 씬이 모든 언어에 번역되어 있는지 =====
 console.log('[PLAYTEST] 전 언어 i18n 커버리지 검사...');
-const allLangs = ['ko', 'en', 'es', 'ja', 'fr', 'de'];
+const allLangs = ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt'];
 const allLangData = {};
 for (const lang of allLangs) {
     allLangData[lang] = {};
