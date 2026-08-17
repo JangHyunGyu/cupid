@@ -107,6 +107,7 @@ function buildCupidAffinityIntimacyProgressionPatch(lang = 'ko', affinity = 0, i
 const cupidSanitizeLatestUserText = CupidFreeTalkCore.sanitizeLatestUserText;
 const cupidTruncateLatestUserText = CupidFreeTalkCore.truncateLatestUserText;
 const cupidFindLatestUserText = CupidFreeTalkCore.findLatestUserText;
+const GROUP_FREE_TALK_SKIP_AFFINITY_PENALTY = -10;
 
 class FreeTalkSystem {
     /**
@@ -875,9 +876,14 @@ class FreeTalkSystem {
         const skipEpoch = this._freeTalkEpoch;
         const skipSceneId = this.currentSceneId;
         const skipHistory = this.freeTalkHistory;
+        const skippedGroupParticipants = this.isGroupMode
+            ? this.groupParticipants.slice()
+            : [];
 
         const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
-        const confirmMsg = { es: "¿Terminar esta conversación y continuar?", ja: "この会話を終えて、次のシーンへ進みますか？", en: "End this conversation and continue?", fr: "Terminer cette conversation et continuer ?", de: "Dieses Gespräch beenden und fortfahren?", pt: "Encerrar esta conversa e continuar?" }[lang] || "이 장면 삽입을 끝내고 다음 장면으로 넘어가시겠습니까?";
+        const confirmMsg = skippedGroupParticipants.length === 2
+            ? this._getGroupSkipConfirmMessage(skippedGroupParticipants, lang)
+            : ({ es: "¿Terminar esta conversación y continuar?", ja: "この会話を終えて、次のシーンへ進みますか？", en: "End this conversation and continue?", fr: "Terminer cette conversation et continuer ?", de: "Dieses Gespräch beenden und fortfahren?", pt: "Encerrar esta conversa e continuar?" }[lang] || "이 장면 삽입을 끝내고 다음 장면으로 넘어가시겠습니까?");
 
         const confirmed = await this.uiManager.showModal(confirmMsg);
         if (confirmed) {
@@ -886,6 +892,9 @@ class FreeTalkSystem {
                 || this.freeTalkHistory !== skipHistory
                 || !this.isFreeTalking) {
                 return;
+            }
+            if (skippedGroupParticipants.length === 2) {
+                this._applyGroupSkipPenalty(skippedGroupParticipants);
             }
             // 타이핑 중이면 중단
             if (this.dialogueSystem.isCurrentlyTyping()) {
@@ -900,10 +909,50 @@ class FreeTalkSystem {
             this.isGroupMode = false;
             this.groupParticipants = [];
             this._clearGroupPresentation();
+            try {
+                window.saveGameState?.();
+            } catch (saveError) {
+                console.warn('[Cupid FreeTalk] Could not persist the skipped conversation', saveError);
+            }
 
             const endMsg = { es: "<br><br>(La conversación ha terminado. Haz clic para continuar.)", ja: "<br><br>（会話が終了しました。画面をクリックして先へ進んでください。）", en: "<br><br>(The conversation has ended. Click to continue.)", fr: "<br><br>(La conversation est terminée. Cliquez pour continuer.)", de: "<br><br>(Das Gespräch ist beendet. Klicke, um fortzufahren.)", pt: "<br><br>(A conversa terminou. Clique para continuar.)" }[lang] || "<br><br>(장면 삽입이 종료되었습니다. 화면을 클릭하여 계속하세요.)";
             this.uiManager.messageEl.innerHTML += endMsg;
         }
+    }
+
+    _getGroupSkipConfirmMessage(participants, lang = 'ko') {
+        const language = String(lang || 'ko').toLowerCase().split('-')[0];
+        const names = participants.map(participant => participant.name || participant.id).join(' · ');
+        const penalty = Math.abs(GROUP_FREE_TALK_SKIP_AFFINITY_PENALTY);
+        const messages = {
+            ko: `그룹 채팅을 건너뛰면 ${names}의 호감도가 각각 ${penalty}씩 떨어집니다. 그래도 다음 장면으로 넘어갈까요?`,
+            en: `Skipping this group conversation will lower the affinity of ${names} by ${penalty} each. Continue to the next scene?`,
+            es: `Si omites esta conversación grupal, la afinidad de ${names} bajará ${penalty} puntos para cada personaje. ¿Quieres pasar a la siguiente escena?`,
+            ja: `グループ会話をスキップすると、${names}の好感度がそれぞれ${penalty}下がります。それでも次のシーンへ進みますか？`,
+            fr: `Si vous passez cette conversation de groupe, l’affinité de ${names} diminuera de ${penalty} points pour chacun. Passer quand même à la scène suivante ?`,
+            de: `Wenn du dieses Gruppengespräch überspringst, sinkt die Zuneigung von ${names} jeweils um ${penalty}. Trotzdem mit der nächsten Szene fortfahren?`,
+            pt: `Se você pular esta conversa em grupo, a afinidade de ${names} cairá ${penalty} pontos para cada personagem. Mesmo assim, avançar para a próxima cena?`
+        };
+        return messages[language] || messages.en;
+    }
+
+    _applyGroupSkipPenalty(participants) {
+        const changes = participants.flatMap(participant => {
+            if (!this.stateManager.stats?.[participant.id]) return [];
+            const previousValue = this.stateManager.getAffinity(participant.id);
+            const newValue = this.stateManager.changeAffinity(
+                participant.id,
+                GROUP_FREE_TALK_SKIP_AFFINITY_PENALTY
+            );
+            const actualChange = newValue - previousValue;
+            return actualChange === 0 ? [] : [{ charKey: participant.id, amount: actualChange }];
+        });
+        if (typeof this.uiManager.showAffinityChangeMulti === 'function') {
+            this.uiManager.showAffinityChangeMulti(changes);
+        } else {
+            changes.forEach(change => this.uiManager.showAffinityChange?.(change.amount, change.charKey));
+        }
+        return changes;
     }
 
     /** 채팅 메시지 전송 */

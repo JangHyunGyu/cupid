@@ -1086,6 +1086,93 @@ test('group reply order, per-speaker affinity, and Dain expression assets follow
     ]);
 });
 
+test('skipping a group chat warns first and lowers both participants by ten only after confirmation', async () => {
+    const freeTalkWindow = { CupidFreeTalkCore: core, GAME_LANG: 'ko' };
+    const sandbox = {
+        window: freeTalkWindow,
+        document: {
+            documentElement: { lang: 'ko' },
+            getElementById: () => null
+        },
+        navigator: { onLine: true },
+        console: { log() {}, info() {}, warn() {}, error() {} },
+        DEFAULT_MAX_FREE_TALK_TURNS: 3,
+        CHAR_NAME_MAP: {},
+        setTimeout,
+        clearTimeout,
+        URL,
+        URLSearchParams,
+        Math,
+        Date,
+        Object,
+        Array,
+        String,
+        Number,
+        Set,
+        Map,
+        Promise
+    };
+    vm.runInNewContext(read('assets/js/modules/FreeTalkSystem.js'), sandbox);
+
+    const affinities = { Teacher: 35, Dain: 22 };
+    const modalResults = [false, true];
+    const modalMessages = [];
+    const displayedChanges = [];
+    const state = {
+        stats: { Teacher: { affinity: 35 }, Dain: { affinity: 22 } },
+        getAffinity: id => affinities[id],
+        changeAffinity(id, amount) {
+            affinities[id] = Math.max(-100, Math.min(100, affinities[id] + amount));
+            this.stats[id].affinity = affinities[id];
+            return affinities[id];
+        },
+        setFlag() {}
+    };
+    const ui = {
+        async showModal(message) {
+            modalMessages.push(message);
+            return modalResults.shift();
+        },
+        showAffinityChangeMulti(changes) {
+            displayedChanges.push(changes.map(change => ({ ...change })));
+        },
+        chatContainer: { style: {}, classList: { remove() {} } },
+        messageEl: { innerHTML: '' }
+    };
+    const system = new freeTalkWindow.FreeTalkSystem(state, {}, ui, {
+        isCurrentlyTyping: () => false
+    });
+    const participants = [
+        { id: 'Teacher', name: '담임선생님' },
+        { id: 'Dain', name: '다인' }
+    ];
+    const beginGroupChat = () => {
+        system.isFreeTalking = true;
+        system.isGroupMode = true;
+        system.currentSceneId = 'group_scene';
+        system.freeTalkHistory = [];
+        system.groupParticipants = participants;
+    };
+
+    beginGroupChat();
+    await system.skipFreeTalk();
+    assert.deepEqual(affinities, { Teacher: 35, Dain: 22 });
+    assert.equal(system.isFreeTalking, true);
+    assert.equal(displayedChanges.length, 0);
+
+    beginGroupChat();
+    await system.skipFreeTalk();
+    assert.match(modalMessages[1], /담임선생님 · 다인/);
+    assert.match(modalMessages[1], /각각 10씩 떨어집니다/);
+    assert.deepEqual(affinities, { Teacher: 25, Dain: 12 });
+    assert.deepEqual(displayedChanges[0], [
+        { charKey: 'Teacher', amount: -10 },
+        { charKey: 'Dain', amount: -10 }
+    ]);
+    assert.equal(system.isFreeTalking, false);
+    assert.equal(system.isGroupMode, false);
+});
+
 test('group backup logs save one player row then one row per character with canonical speaker ids', async () => {
     const config = read('assets/js/modules/config.js');
     const helperStart = config.indexOf('function makeCupidMigratedClientMsgId');
