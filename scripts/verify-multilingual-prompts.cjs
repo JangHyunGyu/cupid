@@ -881,6 +881,11 @@ for (const lang of languages) {
     assert(parts.stable.includes('Recovery is capped at +3 for either character')
         && parts.stable.includes('+3 total across both characters'),
         `group/${lang} lost the recovery distribution rule`);
+    assert(parts.stable.includes('[Group choice mission]')
+        && parts.stable.includes("the unchosen character's affinity must be negative")
+        && parts.stable.includes('unavoidable loss to -3')
+        && parts.stable.includes('each of them an affinity of -3 or lower'),
+        `group/${lang} lost the shared group-choice loss rule`);
     assert(parts.stable.includes('the committed partner speaks first')
         && parts.stable.includes('Include both characters exactly once'),
     `group/${lang} no longer guarantees the harmed-partner then tempter response order`);
@@ -944,6 +949,11 @@ for (const lang of languages) {
         && socialParts.stable.includes('must not exceed +3')
         && socialParts.stable.includes('Do not award points merely for continuing the conversation'),
     `group-social/${lang} lost bounded, behavior-based affinity scoring`);
+    assert(socialParts.stable.includes('[Group choice mission]')
+        && socialParts.stable.includes("the unchosen character's affinity must be negative")
+        && socialParts.stable.includes('unavoidable loss to -3')
+        && socialParts.stable.includes('each of them an affinity of -3 or lower'),
+    `group-social/${lang} lost the shared group-choice loss rule`);
     assert(socialParts.dynamic.includes('current affinity=12') && socialParts.dynamic.includes('current affinity=34'),
         `group-social/${lang} lost dynamic affinity state`);
 
@@ -970,7 +980,7 @@ for (const lang of languages) {
     assert(rivalryParts.stable.includes('Subtle rivalry over a choice')
         && rivalryParts.stable.includes('Do not let the two characters compromise it away')
         && rivalryParts.stable.includes('does not instantly pretend to be fine or gracefully yield')
-        && rivalryParts.stable.includes('the unchosen character’s affinity must be negative')
+        && rivalryParts.stable.includes("the unchosen character's affinity must be negative")
         && rivalryParts.stable.includes('unavoidable loss to -3')
         && rivalryParts.stable.includes('each of them an affinity of -3 or lower')
         && !rivalryParts.stable.includes('do not apply an automatic fixed penalty merely because a choice was made'),

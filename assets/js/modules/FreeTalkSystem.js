@@ -1762,9 +1762,8 @@ class FreeTalkSystem {
         };
     }
 
-    _enforceRivalryOpeningLoss(conversations, scene) {
-        if (scene?.groupMode !== 'route_rivalry'
-            || this.freeTalkTurns !== 1
+    _enforceGroupOpeningLoss(conversations) {
+        if (this.freeTalkTurns !== 1
             || !Array.isArray(conversations)
             || conversations.length !== 2) {
             return conversations;
@@ -1982,7 +1981,7 @@ class FreeTalkSystem {
             }
             const reply = String(data?.choices?.[0]?.message?.content || '').trim();
             const parsedConversations = this.parseGroupJsonResponse(reply);
-            const conversations = this._enforceRivalryOpeningLoss(parsedConversations, scene);
+            const conversations = this._enforceGroupOpeningLoss(parsedConversations);
 
             this._clearThinkingMessage();
             document.querySelectorAll('.group-freetalk-participant img').forEach(img => img.classList.remove('thinking'));

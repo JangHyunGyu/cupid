@@ -1973,6 +1973,16 @@ function buildCupidGroupSystemPrompt(params = {}) {
             : `[${participant.name} — ${roleLabel}]\nCharacter: ${personality}\nVoice: ${voice}\nRomance and preferences: ${relationship}\nScene drive: ${sceneDrive}\nIn scene: ${general}\nDistance and interaction: ${interaction}\nAffinity criteria: ${criteria}\nAllowed expressions: ${expressions}\n${outfit}\n${canon}\n${polish}`;
     }).join('\n\n');
 
+    const competitiveMissionRules = useKo
+        ? `[그룹 선택 미션]
+- 이 대화에서는 두 인물의 요구가 겹쳐 주인공이 한쪽을 우선해야 합니다. 장면에 이미 나온 선택을 흐리거나 두 사람이 대신 타협하지 마세요. 경쟁심은 각자의 말투와 관계에 맞게 드러내되 맥락과 상관없는 싸움이나 과장된 질투는 만들지 않습니다.
+- 주인공이 둘 중 한 사람을 고르면 선택받지 못한 인물의 affinity는 반드시 음수로 주세요. 세심하고 솔직하게 답했다면 -3이 이 미션의 최소 손실입니다. 무심하거나 모욕적인 태도였다면 상처받은 만큼 더 크게 낮춥니다. 선택받은 인물에게는 실제로 기분이 풀린 만큼만 0~+3을 주세요.
+- 끝까지 선택을 피하면 둘 다 서운해합니다. 두 사람의 affinity를 각각 -3 이하로 주세요.`
+        : `[Group choice mission]
+- In this conversation, the two characters' needs conflict and the protagonist must give one of them priority. Do not blur the choice already established by the scene or let the characters compromise it away for him. Keep the competition true to their voices and relationships without inventing unrelated hostility or exaggerated jealousy.
+- If the protagonist chooses one character, the unchosen character's affinity must be negative. A considerate and honest answer may limit the unavoidable loss to -3; careless or insulting conduct causes a larger loss in proportion to the hurt. Give the chosen character only 0 to +3, and only when their reaction genuinely improves.
+- If the protagonist refuses to choose, both characters are hurt. Give each of them an affinity of -3 or lower.`;
+
     const confrontationRules = useKo
         ? `한국어로만 답하세요. 지금은 주인공과 두 인물이 같은 공간에 있는 대면 장면입니다.
 ${getLanguageQualityGuard('ko')}${getNativeAntiTranslationGuard('ko')}
@@ -1990,6 +2000,8 @@ ${characterCards}
 - 어젯밤 유혹을 받아들인 일과 직전의 -40 또는 -50 배신 감점은 이미 반영됐습니다. 같은 사실만 되풀이해 다시 감점하지 마세요.
 - 다만 이번 대화에서 책임을 피하거나, 한쪽을 탓하거나, 사실을 새로 숨기거나, 추가 거짓말을 하면 그 행동에 상처받은 두 사람 모두 호감도가 떨어질 수 있습니다. 새 잘못의 강도에 맞춰 실제 감점을 주고 -1로 축소하지 마세요.
 - 사과·책임 인정·구체적인 수습이 실제로 있을 때만 회복을 줍니다. 한 인물의 이번 턴 회복은 최대 +3, 두 인물의 회복 합계도 최대 +3입니다. 세 턴을 잘 수습해도 이미 받은 -40/-50을 대부분 되돌리지 못해야 합니다.
+
+${competitiveMissionRules}
 
 다음 형태의 JSON만 출력하세요: {"conversations":[{"name":${normalizedParticipants[0].name ? JSON.stringify(normalizedParticipants[0].name) : '""'},"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":0}]}
 conversations에는 두 사람을 반드시 모두 넣고, 위에 적힌 원래 상대 → 유혹한 상대 순서를 지킵니다. name은 반드시 ${exactNames} 가운데 하나만 쓰고, 각 인물은 한 항목에 그 인물의 흐름을 모읍니다. 허용 type은 narration, dialogue이며 narration은 해당 인물의 행동·표정·감각만 3인칭으로 씁니다. expression은 그 인물의 허용 표정 중 현재 반응에 맞는 하나를 고르고 affinity와 함께 모든 항목에 넣으세요. affinity는 -50~+3의 정수이며 양수 합계는 +3을 넘지 않습니다. 주인공이나 서술자를 화자로 넣지 마세요.`
@@ -2010,6 +2022,8 @@ ${characterCards}
 - New evasion, blame, concealment, or another lie in this conversation may lower affinity for both characters when each is hurt by that new conduct. Score the new harm at its real intensity; do not shrink it to -1.
 - Award recovery only for an actual apology, ownership, or concrete attempt to repair the damage. Recovery is capped at +3 for either character and +3 total across both characters in one user turn. Even three excellent turns must not undo most of the earlier -40/-50 loss.
 
+${competitiveMissionRules}
+
 Return JSON only in this shape: {"conversations":[{"name":${JSON.stringify(normalizedParticipants[0].name)},"segments":[{"type":"dialogue","text":"spoken line"}],"expression":"normal","affinity":0}]}
 Include both characters exactly once, in the committed-partner then tempter order defined above. name must be exactly one of ${exactNames}. Keep each speaker’s chronological beats in one item. Allowed segment types are narration and dialogue; narration stays in third person and inside that speaker’s action, expression, or sensation. Choose expression from that character’s allowed expressions to match the current reaction, and include it with an integer affinity from -50 to +3 on every item. The sum of positive affinity values must not exceed +3. Never use the protagonist or a narrator as a speaker.`;
 
@@ -2028,6 +2042,8 @@ ${characterCards}
 - 호감도는 이번 입력에서 실제로 드러난 말과 행동에만 반응합니다. 대화를 이어 갔다는 이유만으로 자동 가산하지 마세요. 다정함, 세심한 기억, 책임 있는 행동처럼 관계가 실제로 좋아진 경우에만 올리고, 무시·모욕·압박·거짓말처럼 새로 관계를 해친 행동에는 강도에 맞는 감점을 줍니다.
 - 한 인물의 이번 턴 상승은 최대 +3이고, 두 인물의 양수 합계도 최대 +3입니다. 한쪽의 반응이 좋다고 다른 쪽까지 억지로 같은 점수를 주지 마세요.
 
+${competitiveMissionRules}
+
 다음 형태의 JSON만 출력하세요: {"conversations":[{"name":${normalizedParticipants[0].name ? JSON.stringify(normalizedParticipants[0].name) : '""'},"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":0}]}
 conversations에는 두 사람을 모두 한 번씩 넣고 중심 인물 → 동행 인물 순서를 지킵니다. name은 반드시 ${exactNames} 가운데 하나만 쓰고, 각 인물의 흐름은 그 인물 항목에 모읍니다. 허용 type은 narration, dialogue이며 narration은 해당 인물의 행동·표정·감각만 3인칭으로 씁니다. expression은 그 인물의 허용 표정 중 현재 반응에 맞는 하나를 고르고 affinity와 함께 모든 항목에 넣으세요. affinity는 -50~+3의 정수이며 양수 합계는 +3을 넘지 않습니다. 주인공이나 별도 서술자를 화자로 넣지 마세요.`
         : `Reply only in fluent, natural ${languageName}. Every conversations[].segments[].text value must stay in that language. The protagonist and both characters are sharing a natural conversation in the same place.
@@ -2044,6 +2060,8 @@ ${characterCards}
 - Affinity reacts only to words and actions actually shown in the latest input. Do not award points merely for continuing the conversation. Raise it only when warmth, attentive memory, responsibility, or another concrete act genuinely improves the relationship. Apply a proportionate deduction for new disregard, insult, pressure, or deceit.
 - Either character may gain at most +3 in this turn, and the sum of positive affinity values across both characters must not exceed +3. A good reaction from one character does not force the other to receive the same score.
 
+${competitiveMissionRules}
+
 Return JSON only in this shape: {"conversations":[{"name":${JSON.stringify(normalizedParticipants[0].name)},"segments":[{"type":"dialogue","text":"spoken line"}],"expression":"normal","affinity":0}]}
 Include both characters exactly once in focus-character then companion order. name must be exactly one of ${exactNames}. Keep each speaker’s chronological beats in that speaker’s item. Allowed segment types are narration and dialogue; narration stays in third person and inside that speaker’s action, expression, or sensation. Choose expression from that character’s allowed expressions to match the current reaction, and include it with an integer affinity from -50 to +3 on every item. The sum of positive affinity values must not exceed +3. Never use the protagonist or a separate narrator as a speaker.`;
 
@@ -2053,17 +2071,13 @@ Include both characters exactly once in focus-character then companion order. na
 [은근한 선택 경쟁]
 - 장면 첫머리에 나온 질문은 두 사람이 주인공의 우선순위를 확인하려고 던진 곤란한 질문입니다. 주인공이 답하기 전에 둘이 알아서 타협하거나 질문을 없던 일로 만들지 마세요.
 - 경쟁심은 말끝, 시선, 짧은 반박, 답을 기다리는 태도에 인물답게 배게 합니다. 갑작스러운 적대, 공개적인 모욕, 과장된 질투 싸움으로 키우지 마세요.
-- 주인공이 답을 피하면 두 사람은 각자다운 방식으로 구체적인 답을 요구할 수 있습니다. 한쪽을 고르면 선택받은 쪽의 안도와 선택받지 못한 쪽의 서운함이 같을 필요는 없으며, 후자는 억지로 괜찮은 척하거나 곧바로 양보하지 않습니다.
-- 주인공이 둘 중 한 사람을 고르면 선택받지 못한 인물의 affinity는 반드시 음수로 주세요. 세심하고 솔직하게 답했다면 -3이 이 미션의 최소 손실입니다. 무심하거나 모욕적인 태도였다면 상처받은 만큼 더 크게 낮춥니다. 선택받은 인물에게는 실제로 기분이 풀린 만큼만 0~+3을 주세요.
-- 끝까지 선택을 피하면 둘 다 서운해합니다. 두 사람의 affinity를 각각 -3 이하로 주세요.`
+- 주인공이 답을 피하면 두 사람은 각자다운 방식으로 구체적인 답을 요구할 수 있습니다. 한쪽을 고르면 선택받은 쪽의 안도와 선택받지 못한 쪽의 서운함이 같을 필요는 없으며, 후자는 억지로 괜찮은 척하거나 곧바로 양보하지 않습니다.`
         : `${socialRules}
 
 [Subtle rivalry over a choice]
 - The opening question is an awkward request for the protagonist to reveal who comes first. Do not let the two characters compromise it away or solve it themselves before the protagonist answers.
 - Let competition appear through character-specific timing, looks, concise challenges, and the way each waits for an answer. Do not inflate it into sudden hostility, public humiliation, or cartoon jealousy.
-- If the protagonist evades, either character may press for a concrete answer in their own voice. If one is chosen, the chosen person’s relief and the other person’s hurt need not match; the latter does not instantly pretend to be fine or gracefully yield.
-- If the protagonist chooses one character, the unchosen character’s affinity must be negative. A considerate and honest answer may limit the unavoidable loss to -3; careless or insulting conduct causes a larger loss in proportion to the hurt. Give the chosen character only 0 to +3, and only when their reaction genuinely improves.
-- If the protagonist refuses to choose, both characters are hurt. Give each of them an affinity of -3 or lower.`;
+- If the protagonist evades, either character may press for a concrete answer in their own voice. If one is chosen, the chosen person’s relief and the other person’s hurt need not match; the latter does not instantly pretend to be fine or gracefully yield.`;
 
     const stableRules = isConfrontation ? confrontationRules : (isRivalry ? rivalryRules : socialRules);
 
@@ -2110,5 +2124,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.69';
+const PROMPT_VERSION = '2.7.70';
 window.PROMPT_VERSION = PROMPT_VERSION;

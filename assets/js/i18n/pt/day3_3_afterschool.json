@@ -731,23 +731,23 @@
     },
     "after3_group_teacher_companion": {
         "name": "Professora e acompanhante",
-        "text": "*As aulas terminaram na sala aberta. A professora estende um rascunho do evento escolar, enquanto a pessoa que veio junto puxa a cadeira do outro lado.*",
-        "context": "Depois da aula, o protagonista revisa com a professora um rascunho para um evento literário da escola em uma sala aberta quando a outra personagem com maior afinidade chega com material ou uma opinião. Os três discutem apenas o texto e os detalhes do evento que podem ser compartilhados publicamente.",
+        "text": "*As aulas terminaram na sala aberta. A professora abre o rascunho do evento, e a acompanhante coloca outros materiais do outro lado. Depois de olhar o relógio, a professora aponta para as duas tarefas.* \"Mal dá tempo de terminar uma delas. Quem você vai ajudar primeiro?\"",
+        "context": "Depois da aula, o protagonista revisa com a professora um rascunho para um evento literário da escola em uma sala aberta quando a outra personagem com maior afinidade chega com outros materiais ou um pedido. Só há tempo para concluir uma tarefa, então a professora pergunta quem o protagonista vai ajudar primeiro.",
         "personality": "A professora mantém a distância profissional e conduz a conversa com humor seco e observações precisas. Faça a acompanhante contribuir de verdade com sua própria voz e interesses. Não transforme a cena numa relação privada entre professora e aluno nem numa reunião a portas fechadas.",
         "buttonText": "Falar",
         "groupLocation": "Sala de aula aberta",
-        "groupChoiceState": "enquanto a professora e o protagonista revisam o rascunho do evento literário, a acompanhante chega com material ou uma opinião",
-        "groupAftermathCause": "o que o protagonista disse ou fez sobre o texto e o evento com a professora e a acompanhante"
+        "groupChoiceState": "o protagonista deve dizer se vai ajudar primeiro a professora com o rascunho ou a acompanhante com o pedido",
+        "groupAftermathCause": "quem o protagonista decidiu ajudar primeiro na sala aberta e por quê"
     },
     "after3_group_nurse_companion": {
         "name": "Enfermeira e acompanhante",
-        "text": "*Uma ficha de avaliação de saúde fica ao lado de uma caixa de materiais dos clubes esportivos. A enfermeira aponta uma linha vazia, e a pessoa ao lado olha dentro da caixa outra vez.*",
-        "context": "Depois da aula, o protagonista ajuda a enfermeira a organizar avaliações dos clubes esportivos e materiais quando a outra personagem com maior afinidade chega por causa de uma avaliação ou de um problema no estoque. Os três conferem o item que falta dentro do procedimento normal da escola.",
+        "text": "*Uma ficha de avaliação de saúde fica ao lado de uma caixa de materiais dos clubes esportivos. A enfermeira aponta uma linha vazia enquanto a acompanhante tira da caixa o material que falta.* \"Precisamos verificar os dois hoje, mas temos que começar por um. Quem ajudamos primeiro?\"",
+        "context": "Depois da aula, o protagonista ajuda a enfermeira com as avaliações dos clubes esportivos quando a outra personagem com maior afinidade chega com um problema urgente de materiais. Só há tempo para começar uma tarefa, então a enfermeira pergunta quem o protagonista vai ajudar primeiro.",
         "personality": "A enfermeira pode aliviar a tensão com uma brincadeira, mas nunca usa cuidado ou tratamento como desculpa para afeto. A acompanhante reage de acordo com sua personalidade e condição atual. Não transforme uma tarefa rotineira em acidente nem em encontro secreto.",
         "buttonText": "Falar",
         "groupLocation": "Enfermaria",
-        "groupChoiceState": "enquanto a enfermeira e o protagonista organizam avaliações esportivas e materiais, a acompanhante chega com algo para conferir",
-        "groupAftermathCause": "o que o protagonista disse ou fez sobre a avaliação e os materiais com a enfermeira e a acompanhante"
+        "groupChoiceState": "o protagonista deve dizer se vai cuidar primeiro da avaliação da enfermeira ou do problema de materiais da acompanhante",
+        "groupAftermathCause": "quem o protagonista decidiu ajudar primeiro na enfermaria e por quê"
     },
     "after3_group_return": {
         "name": "{name}",

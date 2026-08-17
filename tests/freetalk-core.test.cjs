@@ -805,6 +805,7 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
     assert.match(freeTalk, /chatContainer\?\.classList\.remove\('group-freetalk-mode'\)/);
     assert.match(freeTalk, /this\.groupParticipants\s*\.map\(participant => normalized\.find\(conversation => conversation\.speakerId === participant\.id\)\)/);
     assert.match(freeTalk, /ordered\.length !== this\.groupParticipants\.length/);
+    assert.match(freeTalk, /_enforceGroupOpeningLoss\(parsedConversations\)/);
     assert.match(freeTalk, /const canContinueGroupChat = this\.isFreeTalking[\s\S]*?this\.freeTalkTurns < this\.currentMaxTurns/);
     assert.match(freeTalk, /chatInput\.disabled = !canContinueGroupChat/);
     assert.match(read('assets/js/prompts.js'), /두 사람을 반드시 모두 넣고/);
@@ -837,6 +838,8 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
         const groupScene = i18n.morning5_counteroffer_group_talk;
         assert.ok(groupScene?.text && groupScene?.context && groupScene?.personality && groupScene?.buttonText,
             `${lang} group confrontation localization is incomplete`);
+        assert.match(groupScene.text, /[?？]/,
+            `${lang} day-five group confrontation must ask for the protagonist's choice before input`);
         for (const signal of confrontationSignals[lang]) {
             assert.match(groupScene.personality, new RegExp(signal),
                 `${lang} group confrontation lost direct explanation or guilt-and-desire tension: ${signal}`);
@@ -913,6 +916,8 @@ test('day-two student rivalry and day-three adult social groups use the highest-
             for (const field of ['name', 'text', 'context', 'personality', 'buttonText', 'groupLocation', 'groupChoiceState', 'groupAftermathCause']) {
                 assert.ok(typeof day3I18n[id]?.[field] === 'string' && day3I18n[id][field].trim(), `${lang}/${id} is missing ${field}`);
             }
+            assert.match(day3I18n[id].text, /[?？]/,
+                `${lang}/${id} must ask for the protagonist's priority before input`);
         }
         for (const field of ['name', 'text', 'context', 'personality']) {
             assert.ok(typeof day3I18n.haeun_freetalk?.[field] === 'string' && day3I18n.haeun_freetalk[field].trim(), `${lang}/haeun_freetalk is missing ${field}`);
@@ -1050,35 +1055,35 @@ test('group reply order, per-speaker affinity, and Dain expression assets follow
 
     system.freeTalkTurns = 1;
     assert.deepEqual(
-        Array.from(system._enforceRivalryOpeningLoss([
+        Array.from(system._enforceGroupOpeningLoss([
             { speakerId: 'Teacher', affinity: 3 },
             { speakerId: 'Dain', affinity: 0 }
-        ], { groupMode: 'route_rivalry' }), item => item.affinity),
+        ]), item => item.affinity),
         [3, -3],
-        'the lower-scored unchosen character must take the minimum rivalry loss'
+        'the lower-scored unchosen character must take the minimum group loss'
     );
     assert.deepEqual(
-        Array.from(system._enforceRivalryOpeningLoss([
+        Array.from(system._enforceGroupOpeningLoss([
             { speakerId: 'Teacher', affinity: 0 },
             { speakerId: 'Dain', affinity: 0 }
-        ], { groupMode: 'route_rivalry' }), item => item.affinity),
+        ]), item => item.affinity),
         [-3, -3],
         'an unresolved tie must count as evading both characters'
     );
     assert.deepEqual(
-        Array.from(system._enforceRivalryOpeningLoss([
+        Array.from(system._enforceGroupOpeningLoss([
             { speakerId: 'Teacher', affinity: 2 },
             { speakerId: 'Dain', affinity: -1 }
-        ], { groupMode: 'route_rivalry' }), item => item.affinity),
+        ]), item => item.affinity),
         [2, -3],
-        'a token negative score must not undercut the minimum rivalry loss'
+        'a token negative score must not undercut the minimum group loss'
     );
     system.freeTalkTurns = 2;
     assert.deepEqual(
-        Array.from(system._enforceRivalryOpeningLoss([
+        Array.from(system._enforceGroupOpeningLoss([
             { speakerId: 'Teacher', affinity: 1 },
             { speakerId: 'Dain', affinity: 0 }
-        ], { groupMode: 'route_rivalry' }), item => item.affinity),
+        ]), item => item.affinity),
         [1, 0],
         'later repair turns must remain behavior-based rather than repeat the opening penalty'
     );

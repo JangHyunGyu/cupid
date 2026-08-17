@@ -731,23 +731,23 @@
     },
     "after3_group_teacher_companion": {
         "name": "Professeure principale et accompagnant",
-        "text": "*Les cours sont terminés dans la salle restée ouverte. La professeure déplie le brouillon de la manifestation scolaire tandis que la personne venue avec eux tire la chaise d'en face.*",
-        "context": "Après les cours, le protagoniste relit avec la professeure principale le brouillon d'une manifestation littéraire dans une salle ouverte quand le personnage ayant la meilleure affinité hors professeure les rejoint avec des documents ou un avis. Tous trois ne discutent que du texte et des détails pouvant être rendus publics.",
+        "text": "*Les cours sont terminés dans la salle restée ouverte. La professeure étale le brouillon de la manifestation et l'autre personne pose des documents différents en face. Après avoir regardé l'heure, la professeure désigne les deux tâches.* « Il reste à peine assez de temps pour en finir une. Qui vas-tu aider d'abord ? »",
+        "context": "Après les cours, le protagoniste relit avec la professeure principale le brouillon d'une manifestation littéraire dans une salle ouverte quand le personnage ayant la meilleure affinité hors professeure les rejoint avec d'autres documents ou une demande. Il ne reste assez de temps que pour une tâche, alors la professeure demande qui le protagoniste aidera d'abord.",
         "personality": "La professeure garde une distance professionnelle tout en guidant l'échange avec son humour sec et des remarques précises. Laisse l'autre personnage apporter de vrais avis avec sa voix et ses centres d'intérêt. Ne transforme pas la scène en relation privée entre professeure et élève ni en rendez-vous à huis clos.",
         "buttonText": "Parler",
         "groupLocation": "Salle de classe ouverte",
-        "groupChoiceState": "pendant que la professeure et le protagoniste relisent le brouillon de la manifestation littéraire, l'autre personne les rejoint avec des documents ou un avis",
-        "groupAftermathCause": "ce que le protagoniste a dit ou fait au sujet du texte et de la manifestation avec la professeure et l'autre personne"
+        "groupChoiceState": "le protagoniste doit dire s'il aidera d'abord la professeure avec son brouillon ou l'autre personne avec sa demande",
+        "groupAftermathCause": "qui le protagoniste a choisi d'aider d'abord dans la salle ouverte, et pourquoi"
     },
     "after3_group_nurse_companion": {
         "name": "Infirmière scolaire et accompagnant",
-        "text": "*Une fiche de contrôle médical est posée à côté d'une caisse de matériel sportif. L'infirmière indique une ligne vide et la personne près d'elle fouille de nouveau la caisse.*",
-        "context": "Après les cours, le protagoniste aide l'infirmière scolaire à organiser les contrôles des clubs sportifs et le matériel quand le personnage ayant la meilleure affinité hors infirmière les rejoint pour une vérification ou un problème d'inventaire. Tous trois contrôlent l'élément manquant dans le cadre normal de l'école.",
+        "text": "*Une fiche de contrôle médical est posée à côté d'une caisse de matériel sportif. L'infirmière indique une ligne vide tandis que l'autre personne sort de la caisse le matériel manquant.* « Il faut vérifier les deux aujourd'hui, mais commençons par une chose. Qui aidons-nous d'abord ? »",
+        "context": "Après les cours, le protagoniste aide l'infirmière scolaire à organiser les contrôles des clubs sportifs quand le personnage ayant la meilleure affinité hors infirmière arrive avec un problème urgent de matériel. Il ne reste assez de temps que pour commencer une tâche, alors l'infirmière demande qui le protagoniste aidera d'abord.",
         "personality": "L'infirmière peut détendre l'atmosphère avec une plaisanterie, mais elle ne se sert jamais des soins comme prétexte affectif. L'autre personnage réagit selon sa personnalité et son état du moment. Ne transforme pas une tâche ordinaire en accident ni en rendez-vous secret.",
         "buttonText": "Parler",
         "groupLocation": "Infirmerie",
-        "groupChoiceState": "pendant que l'infirmière et le protagoniste organisent contrôles sportifs et matériel, l'autre personne les rejoint avec un point à vérifier",
-        "groupAftermathCause": "ce que le protagoniste a dit ou fait au sujet du contrôle et du matériel avec l'infirmière et l'autre personne"
+        "groupChoiceState": "le protagoniste doit dire s'il s'occupera d'abord du contrôle de l'infirmière ou du problème de matériel de l'autre personne",
+        "groupAftermathCause": "qui le protagoniste a choisi d'aider d'abord à l'infirmerie, et pourquoi"
     },
     "after3_group_return": {
         "name": "{name}",

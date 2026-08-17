@@ -731,23 +731,23 @@
     },
     "after3_group_teacher_companion": {
         "name": "Homeroom Teacher and companion",
-        "text": "*Classes are over in the open classroom. The teacher unfolds a draft for the school event as the person who came along pulls out the chair opposite her.*",
-        "context": "After school, the protagonist is reviewing a draft for a public school literature event with the homeroom teacher in an open classroom when the other character with the highest affinity joins them with event material or an opinion. The three discuss only the draft and event details that may be shared publicly.",
+        "text": "*Classes are over in the open classroom. The teacher spreads out the event draft, and the companion sets different materials across from her. After checking the clock, the teacher points to each task in turn.* \"There is barely time to finish one of these. Whose work will you help with first?\"",
+        "context": "After school, the protagonist is reviewing a draft for a public school literature event with the homeroom teacher in an open classroom when the other character with the highest affinity joins them with separate event materials or a request. There is only enough time to finish one task, so the teacher asks whose work the protagonist will help with first.",
         "personality": "The teacher keeps professional distance while guiding the discussion with dry humor and precise notes. Let the companion contribute real opinions through their own voice and interests. Do not turn this into a private teacher-student relationship or a closed-door meeting.",
         "buttonText": "Speak",
         "groupLocation": "Open Classroom",
-        "groupChoiceState": "while the teacher and protagonist review a literature-event draft, the companion joins them with material or an opinion",
-        "groupAftermathCause": "what the protagonist said or did about the draft and event with the teacher and companion in the open classroom"
+        "groupChoiceState": "the protagonist must say whether to help with the teacher's literature-event draft or the companion's request first",
+        "groupAftermathCause": "whom the protagonist chose to help first in the open classroom, and why"
     },
     "after3_group_nurse_companion": {
         "name": "School Nurse and companion",
-        "text": "*A health-check sheet lies beside a box of athletic-club supplies. The nurse points to one empty line, and the person beside her looks through the box again.*",
-        "context": "After school in the nurse's office, the protagonist is helping the school nurse organize athletic health checks and supplies when the other character with the highest affinity joins them because of a check or an inventory issue. The three verify the missing item within normal school procedure.",
+        "text": "*A health-check sheet lies beside a box of athletic-club supplies. The nurse points to an empty line while the companion takes a missing item from the box.* \"Both need checking today, but we have to start with one. Whose task should we handle first?\"",
+        "context": "After school in the nurse's office, the protagonist is helping the school nurse organize athletic health checks when the other character with the highest affinity arrives with an urgent supply problem. There is only time to begin with one task, so the nurse asks whose work the protagonist will handle first.",
         "personality": "The nurse may ease tension with a light joke, but she never uses care or treatment as an excuse for affection. The companion reacts to the health check or supplies according to their own personality and current condition. Do not inflate routine work into an accident or a secret meeting.",
         "buttonText": "Speak",
         "groupLocation": "Nurse's Office",
-        "groupChoiceState": "while the nurse and protagonist organize athletic checks and supplies, the companion joins them with something to verify",
-        "groupAftermathCause": "what the protagonist said or did about the health check and supplies with the nurse and companion"
+        "groupChoiceState": "the protagonist must say whether to handle the nurse's health check or the companion's supply problem first",
+        "groupAftermathCause": "whom the protagonist chose to help first in the nurse's office, and why"
     },
     "after3_group_return": {
         "name": "{name}",

@@ -850,6 +850,11 @@ function verifyGroupPromptCacheContract(context) {
     assert(firstParts.stable.includes('한 인물의 이번 턴 회복은 최대 +3')
         && firstParts.stable.includes('두 인물의 회복 합계도 최대 +3'),
     'group prompt lost per-speaker or combined recovery caps');
+    assert(firstParts.stable.includes('[그룹 선택 미션]')
+        && firstParts.stable.includes('선택받지 못한 인물의 affinity는 반드시 음수로 주세요')
+        && firstParts.stable.includes('-3이 이 미션의 최소 손실입니다')
+        && firstParts.stable.includes('두 사람의 affinity를 각각 -3 이하로 주세요'),
+    'day-five confrontation lost the shared group-choice loss rule');
     assert(firstParts.stable.includes('책임을 피하거나')
         && firstParts.stable.includes('두 사람 모두 호감도가 떨어질 수 있습니다'),
     'group prompt does not allow new misconduct to hurt both characters');
@@ -939,6 +944,11 @@ function verifyGroupPromptCacheContract(context) {
         && socialParts.stable.includes('두 인물의 양수 합계도 최대 +3')
         && socialParts.stable.includes('대화를 이어 갔다는 이유만으로 자동 가산하지 마세요'),
     'social group prompt lost bounded, behavior-based affinity scoring');
+    assert(socialParts.stable.includes('[그룹 선택 미션]')
+        && socialParts.stable.includes('선택받지 못한 인물의 affinity는 반드시 음수로 주세요')
+        && socialParts.stable.includes('-3이 이 미션의 최소 손실입니다')
+        && socialParts.stable.includes('두 사람의 affinity를 각각 -3 이하로 주세요'),
+    'later social group prompt lost the shared group-choice loss rule');
 
     const rivalryPrompt = context.window.buildCupidGroupSystemPrompt({
         lang: 'ko',

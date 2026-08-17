@@ -117,8 +117,8 @@
     },
     "morning5_counteroffer_group_talk": {
         "name": "Both of Them",
-        "text": "*Both looks pin me in place. What exactly was last night, and was I trying to keep both of them from the start?*",
-        "context": "The truth about accepting last night's temptation has just come out. The person the protagonist had committed to and the person who tempted him now face him together in the same classroom. Continue from his choice to confess or lie. Both demand a direct explanation of his relationships and intent, without smoothing over the tension among all three.",
+        "text": "*Both looks pin me in place. What exactly was last night, and was I trying to keep both of them from the start? Neither is willing to step back first.* \"So who are you choosing now?\"",
+        "context": "The truth about accepting last night's temptation has just come out. The person the protagonist had committed to and the person who tempted him now face him together in the same classroom. Continue from his choice to confess or lie. Both demand a direct explanation of his relationships and intent and a clear answer about whom he chooses now, without smoothing over the tension among all three.",
         "personality": "Both characters keep their distinct voices and their own hurt. The committed partner speaks first, and the tempter responds after hearing her. The confrontation centers on the protagonist's explanation: both question him directly and press any gap in what he has said. The committed partner asks, in character, why he accepted someone else while continuing their relationship, whether he was two-timing from the start, or whether he was playing with her. The tempter owns the initiative and guilt of hurting the other person, yet does not hide the desire to keep the protagonist and be chosen. Guilt alone does not make her retreat or yield. They may challenge or answer each other, but they never leave the protagonist out and decide the relationship between themselves. Do not repeat an answered question; press a missing fact, what the relationship meant, or what he will choose next.",
         "buttonText": "Answer"
     },
