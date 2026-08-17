@@ -14,7 +14,6 @@
     const AFFINITY_CHANGE_MIN = -50;
     const AFFINITY_CHANGE_MAX = 5;
     const FORCED_SEXUAL_VIOLATION_TYPES = Object.freeze(['none', 'molestation', 'rape']);
-    const STORY_FREETALK_GAIN_BUDGET = 22;
     const STORY_FREETALK_TURN_GAIN_MAX = 3;
     const STORY_FREETALK_HIGH_AFFINITY_GAIN_MAX = 2;
     const RELATIONSHIP_AFTERMATH_VERSION = 1;
@@ -54,19 +53,15 @@
         return FORCED_SEXUAL_VIOLATION_TYPES.includes(normalized) ? normalized : '';
     }
 
-    function normalizeStoryFreeTalkAffinityChange(value, currentAffinity = 0, earnedGain = 0) {
+    function normalizeStoryFreeTalkAffinityChange(value, currentAffinity = 0) {
         const normalized = normalizeAffinityChange(value);
         if (normalized <= 0) return normalized;
 
         const affinity = Number.isFinite(Number(currentAffinity)) ? Number(currentAffinity) : 0;
-        const earned = Number.isFinite(Number(earnedGain))
-            ? Math.max(0, Math.round(Number(earnedGain)))
-            : 0;
-        const remainingBudget = Math.max(0, STORY_FREETALK_GAIN_BUDGET - earned);
         const turnCap = affinity >= 90
             ? STORY_FREETALK_HIGH_AFFINITY_GAIN_MAX
             : STORY_FREETALK_TURN_GAIN_MAX;
-        return Math.min(normalized, turnCap, remainingBudget);
+        return Math.min(normalized, turnCap);
     }
 
     function buildAffinityChangeGuidance(lang = 'ko') {
@@ -1215,7 +1210,6 @@ Latest user: """${excerpt}"""
         AFFINITY_CHANGE_MIN,
         AFFINITY_CHANGE_MAX,
         FORCED_SEXUAL_VIOLATION_TYPES,
-        STORY_FREETALK_GAIN_BUDGET,
         STORY_FREETALK_TURN_GAIN_MAX,
         STORY_FREETALK_HIGH_AFFINITY_GAIN_MAX,
         RELATIONSHIP_AFTERMATH_VERSION,

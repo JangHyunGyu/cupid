@@ -429,7 +429,7 @@ test('every competitive scene remains a non-positive relationship tradeoff', () 
     }
 });
 
-test('optimal authored routes give every romance character 84 points before free talk', () => {
+test('optimal authored routes give every romance character 80 points before free talk', () => {
     const optimalRouteEffects = {
         Seoyeon: [
             ['seoyeon_choice', 0], ['lunch_seo_3'], ['lunch_seo_choice', 0],
@@ -476,7 +476,7 @@ test('optimal authored routes give every romance character 84 points before free
         ]
     };
 
-    const expectedTotals = { Seoyeon: 84, Yuna: 84, Dain: 84, Teacher: 84, Nurse: 84 };
+    const expectedTotals = { Seoyeon: 80, Yuna: 80, Dain: 80, Teacher: 80, Nurse: 80 };
     for (const [character, effects] of Object.entries(optimalRouteEffects)) {
         const total = effects.reduce((sum, [sceneId, choiceIndex]) => {
             const source = Number.isInteger(choiceIndex) ? scenes[sceneId]?.choices?.[choiceIndex] : scenes[sceneId];
@@ -487,29 +487,29 @@ test('optimal authored routes give every romance character 84 points before free
         assert.equal(total, expectedTotals[character], `${character} optimal authored route budget drifted`);
     }
 
-    assert.equal(scenes.after3_seo_choice.choices[1].stats.Seoyeon.affinity, 16);
+    assert.equal(scenes.after3_seo_choice.choices[1].stats.Seoyeon.affinity, 12);
     assert.equal(scenes.wall_seo_line_choice.choices[0].stats.Seoyeon.affinity, 6);
     assert.equal(scenes.wall_seo_line_choice.choices[1].stats.Seoyeon.affinity, 6);
-    assert.equal(scenes.after3_yuna_choice.choices[1].stats.Yuna.affinity, 17);
+    assert.equal(scenes.after3_yuna_choice.choices[1].stats.Yuna.affinity, 13);
     assert.equal(scenes.wall_yuna_choice.choices[0].stats.Yuna.affinity, 4);
-    assert.equal(scenes.after3_dain_choice.choices[1].stats.Dain.affinity, 17);
+    assert.equal(scenes.after3_dain_choice.choices[1].stats.Dain.affinity, 13);
     assert.ok(scenes.after3_dain_dilemma_final.choices[1].setFlags.includes('dain_planned_nurse_visit'));
     assert.equal(scenes.after3_dain_dilemma_final.choices[1].setFlags.includes('ignored_dain_knee'), false);
     assert.equal(korean.after3_dain_dilemma_final.choices[1], '알겠어. 네가 직접 말해. 대신 보건실엔 같이 갈게.');
     assert.equal(korean.after3_dain_choice1_react3.text, '고마워. 보건실 갈 때... 옆에 있어 줘.');
     assert.equal(scenes.wall_dain_choice.choices[1].stats.Dain.affinity, 5);
-    assert.equal(scenes.hidden_homeroom_d4_choice.choices[0].stats.Teacher.affinity, 7);
+    assert.equal(scenes.hidden_homeroom_d4_choice.choices[0].stats.Teacher.affinity, 5);
     assert.equal(scenes.hidden_homeroom_d4_cafe_choice.choices[0].stats.Teacher.affinity, 7);
-    assert.equal(scenes.hidden_homeroom_d5_choice.choices[1].stats.Teacher.affinity, 11);
+    assert.equal(scenes.hidden_homeroom_d5_choice.choices[1].stats.Teacher.affinity, 9);
     assert.equal(scenes.hidden_nurse_d4_name_choice.choices[0].stats.Nurse.affinity, 4);
-    assert.equal(scenes.hidden_nurse_d4_choice.choices[0].stats.Nurse.affinity, 7);
-    assert.equal(scenes.hidden_nurse_d5_choice.choices[0].stats.Nurse.affinity, 7);
+    assert.equal(scenes.hidden_nurse_d4_choice.choices[0].stats.Nurse.affinity, 5);
+    assert.equal(scenes.hidden_nurse_d5_choice.choices[0].stats.Nurse.affinity, 5);
     assert.equal(scenes.hidden_homeroom_d5_8.stats.Teacher.affinity, 15);
     assert.equal(scenes.hidden_nurse_d5_7.stats.Nurse.affinity, 15);
     assert.equal(scenes.hidden_nurse_d5_7_both.stats.Nurse.affinity, 15);
 });
 
-test('playable free-talk capacity keeps the documented 84 + 22 = 106 balance', () => {
+test('personal free-talk routes keep earning positive affinity without a lifetime cap', () => {
     const personalFreeTalkRoutes = {
         Seoyeon: ['lunch_seo_freetalk', 'night2_seo_freetalk', 'after3_seo_freetalk', 'wall_seo_freetalk', 'day5_seo_ending_freetalk_perfect'],
         Yuna: ['lunch_yuna_freetalk', 'night2_yuna_freetalk', 'after3_yuna_freetalk', 'wall_yuna_freetalk', 'day5_yuna_ending_freetalk_perfect'],
@@ -518,13 +518,13 @@ test('playable free-talk capacity keeps the documented 84 + 22 = 106 balance', (
         Nurse: ['after_nurse_freetalk', 'hidden_nurse_d2_freetalk', 'hidden_nurse_d3_freetalk', 'hidden_nurse_d4_freetalk', 'day5_nurse_ending_freetalk_perfect'],
         Haeun: ['haeun_freetalk']
     };
-    const authoredMaximum = { Seoyeon: 84, Yuna: 84, Dain: 84, Teacher: 84, Nurse: 84, Haeun: 0 };
+    const authoredMaximum = { Seoyeon: 80, Yuna: 80, Dain: 80, Teacher: 80, Nurse: 80, Haeun: 0 };
     const expectedBalance = {
-        Seoyeon: { authored: 84, freeTalk: 22, theoretical: 106, stored: 100 },
-        Yuna: { authored: 84, freeTalk: 22, theoretical: 106, stored: 100 },
-        Dain: { authored: 84, freeTalk: 22, theoretical: 106, stored: 100 },
-        Teacher: { authored: 84, freeTalk: 22, theoretical: 106, stored: 100 },
-        Nurse: { authored: 84, freeTalk: 22, theoretical: 106, stored: 100 },
+        Seoyeon: { authored: 80, freeTalk: 51, theoretical: 131, stored: 100 },
+        Yuna: { authored: 80, freeTalk: 51, theoretical: 131, stored: 100 },
+        Dain: { authored: 80, freeTalk: 51, theoretical: 131, stored: 100 },
+        Teacher: { authored: 80, freeTalk: 51, theoretical: 131, stored: 100 },
+        Nurse: { authored: 80, freeTalk: 51, theoretical: 131, stored: 100 },
         Haeun: { authored: 0, freeTalk: 15, theoretical: 15, stored: 15 }
     };
 
@@ -537,19 +537,17 @@ test('playable free-talk capacity keeps the documented 84 + 22 = 106 balance', (
             return sum + scene.maxTurns;
         }, 0);
 
-        let earned = 0;
         let affinity = 0;
         for (let turn = 0; turn < turns; turn += 1) {
-            const gain = freeTalkCore.normalizeStoryFreeTalkAffinityChange(5, affinity, earned);
+            const gain = freeTalkCore.normalizeStoryFreeTalkAffinityChange(5, affinity);
             affinity += gain;
-            earned += gain;
         }
 
         const authored = authoredMaximum[character];
-        const theoretical = authored + earned;
+        const theoretical = authored + affinity;
         actualBalance[character] = {
             authored,
-            freeTalk: earned,
+            freeTalk: affinity,
             theoretical,
             stored: Math.min(100, theoretical)
         };
@@ -558,7 +556,95 @@ test('playable free-talk capacity keeps the documented 84 + 22 = 106 balance', (
     assert.deepEqual(actualBalance, expectedBalance);
 });
 
-test('all five character routes share the 90/60/40/bittersweet ending tiers', () => {
+test('optimal routes reach 100 before the ending after all personal and group free-talk gains', () => {
+    const routes = {
+        Seoyeon: [
+            ['authored', 10], ['free', 'lunch_seo_freetalk'],
+            ['authored', 24], ['group', 'after2_group_seoyeon_companion'],
+            ['authored', 3], ['free', 'night2_seo_freetalk'],
+            ['authored', 20], ['free', 'after3_seo_freetalk'], ['group', 'after3_group_teacher_companion'],
+            ['authored', 1],
+            ['authored', 19], ['free', 'wall_seo_freetalk'],
+            ['authored', 3], ['ending'], ['free', 'day5_seo_ending_freetalk_perfect']
+        ],
+        Yuna: [
+            ['authored', 8], ['free', 'lunch_yuna_freetalk'],
+            ['authored', 22], ['group', 'after2_group_yuna_companion'],
+            ['authored', 5], ['free', 'night2_yuna_freetalk'],
+            ['authored', 22], ['free', 'after3_yuna_freetalk'], ['group', 'after3_group_teacher_companion'],
+            ['authored', 4],
+            ['authored', 15], ['free', 'wall_yuna_freetalk'],
+            ['authored', 4], ['ending'], ['free', 'day5_yuna_ending_freetalk_perfect']
+        ],
+        Dain: [
+            ['authored', 13], ['free', 'lunch_dain_freetalk'],
+            ['authored', 16], ['group', 'after2_group_dain_companion'],
+            ['authored', 6], ['free', 'night2_dain_freetalk'],
+            ['authored', 26], ['free', 'after3_dain_freetalk'], ['group', 'after3_group_teacher_companion'],
+            ['authored', 2],
+            ['authored', 12], ['free', 'wall_dain_freetalk'],
+            ['authored', 5], ['ending'], ['free', 'day5_dain_ending_freetalk_perfect']
+        ],
+        Teacher: [
+            ['authored', 14], ['free', 'after_homeroom_freetalk'],
+            ['authored', 14], ['free', 'hidden_homeroom_d2_freetalk'], ['group', 'after2_group_seoyeon_companion'],
+            ['authored', 16], ['free', 'hidden_homeroom_d3_freetalk'], ['group', 'after3_group_teacher_companion'],
+            ['authored', 12], ['free', 'hidden_homeroom_d4_freetalk'],
+            ['authored', 24], ['ending'], ['free', 'day5_teacher_ending_freetalk_perfect']
+        ],
+        Nurse: [
+            ['authored', 14], ['free', 'after_nurse_freetalk'],
+            ['authored', 14], ['free', 'hidden_nurse_d2_freetalk'], ['group', 'after2_group_seoyeon_companion'],
+            ['authored', 15], ['free', 'hidden_nurse_d3_freetalk'], ['group', 'after3_group_nurse_companion'],
+            ['authored', 17], ['free', 'hidden_nurse_d4_freetalk'],
+            ['authored', 20], ['ending'], ['free', 'day5_nurse_ending_freetalk_perfect']
+        ]
+    };
+    const expected = {
+        Seoyeon: { freeTalk: 53, preEnding: 123, theoretical: 133 },
+        Yuna: { freeTalk: 53, preEnding: 123, theoretical: 133 },
+        Dain: { freeTalk: 52, preEnding: 122, theoretical: 132 },
+        Teacher: { freeTalk: 55, preEnding: 125, theoretical: 135 },
+        Nurse: { freeTalk: 55, preEnding: 125, theoretical: 135 }
+    };
+
+    for (const [character, steps] of Object.entries(routes)) {
+        let affinity = 0;
+        let authored = 0;
+        let freeTalk = 0;
+        let preEnding = null;
+
+        for (const [type, value] of steps) {
+            if (type === 'authored') {
+                authored += value;
+                affinity += value;
+                continue;
+            }
+            if (type === 'ending') {
+                preEnding = affinity;
+                continue;
+            }
+
+            const scene = scenes[value];
+            assert.equal(scene?.type, type === 'group' ? 'group_free_talk' : 'free_talk', `${value} type drifted`);
+            assert.ok(Number.isInteger(scene.maxTurns) && scene.maxTurns > 0, `${value} must have a positive turn limit`);
+            for (let turn = 0; turn < scene.maxTurns; turn += 1) {
+                const gain = freeTalkCore.normalizeStoryFreeTalkAffinityChange(type === 'group' ? 3 : 5, affinity);
+                affinity += gain;
+                freeTalk += gain;
+            }
+        }
+
+        assert.equal(authored, 80, `${character} authored route must total 80`);
+        assert.equal(freeTalk, expected[character].freeTalk, `${character} combined free-talk maximum drifted`);
+        assert.equal(preEnding, expected[character].preEnding, `${character} pre-ending maximum drifted`);
+        assert.ok(preEnding >= 100, `${character} must be able to reach the perfect ending threshold`);
+        assert.equal(affinity, expected[character].theoretical, `${character} theoretical maximum drifted`);
+        assert.equal(Math.min(100, affinity), 100, `${character} stored affinity must cap at 100`);
+    }
+});
+
+test('all five character routes share the 100/60/40/bittersweet ending tiers', () => {
     const routeChecks = [
         ['ending_aff_check_seo', 'Seoyeon', ['perfect_seo_1', 'true_seo_1', 'day5_ending_good', 'bitter_seo_1']],
         ['ending_aff_check_yuna', 'Yuna', ['perfect_yuna_1', 'true_yuna_1', 'day5_ending_good', 'bitter_yuna_1']],
@@ -572,7 +658,7 @@ test('all five character routes share the 90/60/40/bittersweet ending tiers', ()
         assert.equal(scene?.affinityChar, character, `${sceneId} must evaluate ${character}`);
         assert.deepEqual(
             scene.affinityBranches.map(branch => [branch.minAffinity, branch.next]),
-            [[90, targets[0]], [60, targets[1]], [40, targets[2]], [-100, targets[3]]],
+            [[100, targets[0]], [60, targets[1]], [40, targets[2]], [-100, targets[3]]],
             `${sceneId} ending thresholds drifted`
         );
         assert.equal(scene.next, targets[3], `${sceneId} must default to the bittersweet route`);

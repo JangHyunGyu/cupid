@@ -1738,18 +1738,15 @@ class FreeTalkSystem {
         if (requestedChange === 0) {
             return { change: 0, value: previousValue, requestedChange: 0, positiveUsed: 0 };
         }
-        const earnedStoryGain = this.stateManager.getStoryFreeTalkGain(speakerId);
         const appliedChange = CupidFreeTalkCore.normalizeStoryFreeTalkAffinityChange(
             requestedChange,
-            previousValue,
-            earnedStoryGain
+            previousValue
         );
         if (appliedChange === 0) {
             return { change: 0, value: previousValue, requestedChange, appliedChange: 0, positiveUsed: 0 };
         }
         const newValue = this.stateManager.changeAffinity(speakerId, appliedChange);
         const actualChange = newValue - previousValue;
-        if (actualChange > 0) this.stateManager.addStoryFreeTalkGain(speakerId, actualChange);
         if (actualChange !== 0) this.uiManager.showAffinityChange(actualChange, speakerId);
         this.galleryManager.updateMaxAffinity(speakerId, newValue);
         this.galleryManager.checkAffinityUnlock(speakerId, newValue);
@@ -2481,11 +2478,9 @@ class FreeTalkSystem {
             return { change: 0, value: previousValue, requestedChange: 0 };
         }
 
-        const earnedStoryGain = this.stateManager.getStoryFreeTalkGain(charKey);
         const appliedChange = CupidFreeTalkCore.normalizeStoryFreeTalkAffinityChange(
             requestedChange,
-            previousValue,
-            earnedStoryGain
+            previousValue
         );
         if (appliedChange === 0) {
             return { change: 0, value: previousValue, requestedChange, appliedChange: 0 };
@@ -2493,7 +2488,6 @@ class FreeTalkSystem {
 
         const newValue = this.stateManager.changeAffinity(charKey, appliedChange);
         const actualChange = newValue - previousValue;
-        if (actualChange > 0) this.stateManager.addStoryFreeTalkGain(charKey, actualChange);
         if (actualChange !== 0) this.uiManager.showAffinityChange(actualChange, charKey);
         this.galleryManager.updateMaxAffinity(charKey, newValue);
         this.galleryManager.checkAffinityUnlock(charKey, newValue);

@@ -242,7 +242,7 @@ test('main free-talk request keeps the complete per-character run history', asyn
     expect(result.cleared).toEqual(['Seoyeon']);
 });
 
-test('main free-talk affinity pacing reaches 100 only after sustained strong turns', async ({ page }) => {
+test('main free-talk affinity pacing can recover after prior positive gains', async ({ page }) => {
     await page.goto('/game.html');
     await waitForRuntime(page);
     await page.waitForFunction(() => window.gameEngine?.freeTalkSystem);
@@ -258,21 +258,30 @@ test('main free-talk affinity pacing reaches 100 only after sustained strong tur
             changes.push(engine.freeTalkSystem.applyAffinity(5, { name: 'Seoyeon' }).change);
         }
 
+        state.storyFreeTalkGains.Seoyeon = 22;
+        state.changeAffinity('Seoyeon', -20);
+        const recoveryChanges = [];
+        for (let turn = 0; turn < 8; turn += 1) {
+            recoveryChanges.push(engine.freeTalkSystem.applyAffinity(5, { name: 'Seoyeon' }).change);
+        }
+
         const saved = state.exportState();
         const restored = new window.StateManager();
         restored.importState(saved);
         return {
             changes,
+            recoveryChanges,
             affinity: state.getAffinity('Seoyeon'),
-            earnedGain: state.getStoryFreeTalkGain('Seoyeon'),
-            restoredGain: restored.getStoryFreeTalkGain('Seoyeon')
+            legacyGain: state.getStoryFreeTalkGain('Seoyeon'),
+            restoredLegacyGain: restored.getStoryFreeTalkGain('Seoyeon')
         };
     });
 
     expect(result.changes).toEqual([3, 3, 3, 3, 2, 2, 2, 2]);
+    expect(result.recoveryChanges).toEqual([3, 3, 3, 3, 2, 2, 2, 2]);
     expect(result.affinity).toBe(100);
-    expect(result.earnedGain).toBe(20);
-    expect(result.restoredGain).toBe(20);
+    expect(result.legacyGain).toBe(22);
+    expect(result.restoredLegacyGain).toBe(22);
 });
 
 test('gallery runtime includes the shared free-talk core', async ({ page }) => {

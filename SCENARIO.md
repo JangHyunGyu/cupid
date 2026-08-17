@@ -10980,7 +10980,7 @@
 - 배경: `student_room.png`
 - 선택지:
   1. "누구나 그럴 때 있어. 너무 신경 쓰지 마." → `after3_seo_pity_trap_1` | Seoyeon -18 | 플래그: `seo_pity_broken`
-  2. "방금? 아무것도 못 봤는데. 펜 떨어뜨려서 주우러 들어왔어." → `after3_seo_correct_1` | Seoyeon +16
+  2. "방금? 아무것도 못 봤는데. 펜 떨어뜨려서 주우러 들어왔어." → `after3_seo_correct_1` | Seoyeon +12
 
 - 캐릭터: `seyoun_sad.png`
 **서연**: 오늘 본 건 여기까지만 해줘. 대신 지금은 평소처럼 대해.
@@ -11360,7 +11360,7 @@
 - 배경: `yuna_hideout.png`
 - 선택지:
   1. "미안. 그래도 이거 내 이야기 맞지?" → `after3_yuna_decode_trap_1` | Yuna -22 | 플래그: `yuna_safe_zone_broken`
-  2. "미안. 펼쳐진 첫 장만 봤어. 더 읽지는 않을게. 그런데 이 작가, 문장이 정말 좋다." → `after3_yuna_correct_1` | Yuna +17
+  2. "미안. 펼쳐진 첫 장만 봤어. 더 읽지는 않을게. 그런데 이 작가, 문장이 정말 좋다." → `after3_yuna_correct_1` | Yuna +13
 
 - 캐릭터: `yuna_shy.png`
 **{name}**: *노트를 유나 쪽으로 돌려놓는다.*
@@ -11704,7 +11704,7 @@
 - 배경: `gym.png`
 - 선택지:
   1. "역시 무리였네. 대회는 포기하고 오늘은 쉬어." → `after3_dain_pity_trap_1` | Dain -20 | 플래그: `pitied_dain`
-  2. "그럼 여기 있을게. 말하고 싶을 때 말해." → `after3_dain_correct_1` | Dain +17
+  2. "그럼 여기 있을게. 말하고 싶을 때 말해." → `after3_dain_correct_1` | Dain +13
 
 - 캐릭터: `dain_sad.png`
 **다인**: *다인이 벤치에 앉아 무릎 한곳만 계속 문지른다.*
@@ -13957,7 +13957,7 @@
 ### `hidden_homeroom_d4_choice`
 - 배경: `street.png`
 - 선택지:
-  1. "좋아요. 합평회 구경해도 돼요?" → `hidden_homeroom_d4_cafe_1` | Teacher +7
+  1. "좋아요. 합평회 구경해도 돼요?" → `hidden_homeroom_d4_cafe_1` | Teacher +5
   2. "오늘은 약속이 있어서요." → `hidden_homeroom_d4_decline` | Teacher +4
   3. "저만 따로 불러내셔도 됐을 텐데요." → `hidden_homeroom_d4_choice_trap` | Teacher -4
 
@@ -14762,7 +14762,7 @@
 ### `hidden_nurse_d4_choice`
 - 배경: `nurse_room.png`
 - 선택지:
-  1. "응급키트 라벨도 붙이고 갈게요." → `hidden_nurse_d4_meal_walk` | Nurse +7
+  1. "응급키트 라벨도 붙이고 갈게요." → `hidden_nurse_d4_meal_walk` | Nurse +5
   2. "괜찮아요, 저 이만 갈게요" → `hidden_nurse_d4_pass` | Nurse +2
   3. "선생님이 하시는 게 더 빠르겠어요." → `hidden_nurse_d4_trap` | Nurse -4
 
@@ -19862,7 +19862,7 @@
 - 배경톤: `empty`
 - 선택지:
   1. "7년이나 쓰셨으면 거의 완성본이겠네요. 굳이 표시할 건 없을 것 같아요." → `hidden_homeroom_d5_praise_trap_1` | Teacher -25 | 플래그: `teacher_praise_broken`
-  2. "먼저 읽어볼게요. 표시해도 돼요?" → `hidden_homeroom_d5_correct_1` | Teacher +11
+  2. "먼저 읽어볼게요. 표시해도 돼요?" → `hidden_homeroom_d5_correct_1` | Teacher +9
 
 - 캐릭터: `teacher_sad.png`
 **{name}**: *원고를 안고 있다. 봉투가 팔 안쪽을 누른다.*
@@ -20605,7 +20605,7 @@
 ### `hidden_nurse_d5_choice`
 - 배경: `school_hallway.png`
 - 선택지:
-  1. "네. 가방에 넣어둘게요." → `hidden_nurse_d5_choice_a` | Nurse +7
+  1. "네. 가방에 넣어둘게요." → `hidden_nurse_d5_choice_a` | Nurse +5
   2. "카드보다 상담실 예약 방법을 알려주세요." → `hidden_nurse_d5_choice_b` | Nurse +4
   3. "이 카드만 있으면 상담실까지는 안 가도 되겠네요." → `hidden_nurse_d5_choice_trap` | Nurse -6
 
@@ -23534,7 +23534,7 @@
 ### `hidden_perfect_homeroom_check`
 - 배경: `room_school.png`
 - 호감분기: Teacher
-  - [90+] → `hidden_perfect_homeroom_1`
+  - [100+] → `hidden_perfect_homeroom_1`
   - [60+] → `hidden_true_homeroom_1`
   - [40+] → `hidden_good_homeroom_1`
   - [기본] → `hidden_bitter_homeroom_1`
@@ -24280,7 +24280,7 @@
 ### `hidden_perfect_nurse_check`
 - 배경: `nurse_room.png`
 - 호감분기: Nurse
-  - [90+] → `hidden_perfect_nurse_1`
+  - [100+] → `hidden_perfect_nurse_1`
   - [60+] → `hidden_true_nurse_1`
   - [40+] → `hidden_good_nurse_1`
   - [기본] → `hidden_bitter_nurse_1`
@@ -25018,7 +25018,7 @@
 ### `ending_aff_check_seo`
 - 배경: `top_school.png`
 - 호감분기: Seoyeon
-  - [90+] → `perfect_seo_1`
+  - [100+] → `perfect_seo_1`
   - [60+] → `true_seo_1`
   - [40+] → `day5_ending_good`
   - [기본] → `bitter_seo_1`
@@ -25438,7 +25438,7 @@
 ### `ending_aff_check_yuna`
 - 배경: `yuna_hideout.png`
 - 호감분기: Yuna
-  - [90+] → `perfect_yuna_1`
+  - [100+] → `perfect_yuna_1`
   - [60+] → `true_yuna_1`
   - [40+] → `day5_ending_good`
   - [기본] → `bitter_yuna_1`
@@ -25867,7 +25867,7 @@
 ### `ending_aff_check_dain`
 - 배경: `gym.png`
 - 호감분기: Dain
-  - [90+] → `perfect_dain_1`
+  - [100+] → `perfect_dain_1`
   - [60+] → `true_dain_1`
   - [40+] → `day5_ending_good`
   - [기본] → `bitter_dain_1`

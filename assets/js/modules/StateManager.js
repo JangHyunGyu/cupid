@@ -66,7 +66,7 @@ class StateManager {
         /** 캐릭터별로 아직 풀리지 않은 상처와 감정의 여운 */
         this.relationshipAftermaths = {};
 
-        /** 캐릭터별 본편 프리토킹 누적 양수 보상 */
+        /** 이전 저장 데이터 호환용 본편 프리토킹 누적값 (현재는 양수 보상을 제한하지 않음) */
         this.storyFreeTalkGains = {};
 
         /**

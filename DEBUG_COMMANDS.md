@@ -36,37 +36,37 @@ gameEngine.stateManager.setDay(5)
 
 ## 2. 엔딩 프리셋 (복사-붙여넣기용)
 
-### PERFECT END — 서연 (호감도 90+, 고백 수락, 단독 루트)
+### PERFECT END — 서연 (호감도 100, 고백 수락, 단독 루트)
 ```js
 gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
-gameEngine.stateManager.stats.Seoyeon.affinity = 90;
+gameEngine.stateManager.stats.Seoyeon.affinity = 100;
 gameEngine.stateManager.setFlag("route_seoyeon");
 gameEngine.stateManager.setFlag("day4_confession_accepted");
 gameEngine.stateManager.setDay(5);
 gameEngine.renderScene("perfect_seo_1");
 ```
 
-### PERFECT END — 유나 (호감도 90+)
+### PERFECT END — 유나 (호감도 100)
 ```js
 gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
-gameEngine.stateManager.stats.Yuna.affinity = 90;
+gameEngine.stateManager.stats.Yuna.affinity = 100;
 gameEngine.stateManager.setFlag("route_yuna");
 gameEngine.stateManager.setFlag("day4_confession_accepted");
 gameEngine.stateManager.setDay(5);
 gameEngine.renderScene("perfect_yuna_1");
 ```
 
-### PERFECT END — 다인 (호감도 90+)
+### PERFECT END — 다인 (호감도 100)
 ```js
 gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
-gameEngine.stateManager.stats.Dain.affinity = 90;
+gameEngine.stateManager.stats.Dain.affinity = 100;
 gameEngine.stateManager.setFlag("route_dain");
 gameEngine.stateManager.setFlag("day4_confession_accepted");
 gameEngine.stateManager.setDay(5);
 gameEngine.renderScene("perfect_dain_1");
 ```
 
-### TRUE LOVE END — 서연 (호감도 60-79)
+### TRUE LOVE END — 서연 (호감도 60-99)
 ```js
 gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Seoyeon.affinity = 70;
@@ -217,16 +217,16 @@ gameEngine.stateManager.setDay(5);
 gameEngine.renderScene("ending_start");
 ```
 
-### TEACHER PERFECT END (호감도 90+)
+### TEACHER PERFECT END (호감도 100)
 ```js
 gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
-gameEngine.stateManager.stats.Teacher.affinity = 90;
+gameEngine.stateManager.stats.Teacher.affinity = 100;
 gameEngine.stateManager.setFlag("homeroom_day5");
 gameEngine.stateManager.setDay(5);
 gameEngine.renderScene("hidden_perfect_homeroom_1");
 ```
 
-### TEACHER TRUE LOVE END (호감도 40-79)
+### TEACHER TRUE LOVE END (호감도 60-99)
 ```js
 gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Teacher.affinity = 60;
@@ -235,25 +235,25 @@ gameEngine.stateManager.setDay(5);
 gameEngine.renderScene("hidden_true_homeroom_1");
 ```
 
-### TEACHER GOOD END (호감도 0-39)
+### TEACHER GOOD END (호감도 40-59)
 ```js
 gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
-gameEngine.stateManager.stats.Teacher.affinity = 20;
+gameEngine.stateManager.stats.Teacher.affinity = 50;
 gameEngine.stateManager.setFlag("homeroom_day5");
 gameEngine.stateManager.setDay(5);
 gameEngine.renderScene("hidden_good_homeroom_1");
 ```
 
-### NURSE PERFECT END (호감도 90+)
+### NURSE PERFECT END (호감도 100)
 ```js
 gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
-gameEngine.stateManager.stats.Nurse.affinity = 90;
+gameEngine.stateManager.stats.Nurse.affinity = 100;
 gameEngine.stateManager.setFlag("nurse_day5");
 gameEngine.stateManager.setDay(5);
 gameEngine.renderScene("hidden_perfect_nurse_1");
 ```
 
-### NURSE TRUE LOVE END (호감도 40-79)
+### NURSE TRUE LOVE END (호감도 60-99)
 ```js
 gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Nurse.affinity = 60;
