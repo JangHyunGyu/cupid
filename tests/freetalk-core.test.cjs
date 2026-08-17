@@ -898,7 +898,7 @@ test('day-two student rivalry and day-three adult social groups use the highest-
     assert.equal(day3.after3_group_return.next, 'haeun_check');
     assert.equal(day3.haeun_warn_7_c.next, 'haeun_freetalk');
     assert.equal(day3.haeun_freetalk.type, 'free_talk');
-    assert.equal(day3.haeun_freetalk.maxTurns, 3);
+    assert.equal(day3.haeun_freetalk.maxTurns, 5);
     assert.equal(day3.haeun_freetalk.next, 'haeun_warn_7_d');
 
     for (const lang of ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt']) {

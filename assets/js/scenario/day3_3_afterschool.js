@@ -1169,7 +1169,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/haeun_worried.png",
         "type": "free_talk",
-        "maxTurns": 3,
+        "maxTurns": 5,
         "next": "haeun_warn_7_d"
     },
     "haeun_warn_7_d": {

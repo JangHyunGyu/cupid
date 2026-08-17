@@ -656,8 +656,8 @@ function verifyWiringAndScenePrompts() {
         const expectedCount = day === 5 ? 23 : (day === 3 ? 6 : 5);
         assert(freeTalks.length === expectedCount,
             `day ${day} must contain exactly ${expectedCount} free-talk scenes, found ${freeTalks.length}`);
-        const expectedTurns = day === 5 ? 5 : 3;
         for (const [id, scene] of freeTalks) {
+            const expectedTurns = id === 'haeun_freetalk' || day === 5 ? 5 : 3;
             assert(scene.maxTurns === expectedTurns,
                 `${id} must use maxTurns ${expectedTurns}, found ${scene.maxTurns}`);
         }

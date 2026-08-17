@@ -525,7 +525,7 @@ test('playable free-talk capacity keeps the documented 84 + 22 = 106 balance', (
         Dain: { authored: 84, freeTalk: 22, theoretical: 106, stored: 100 },
         Teacher: { authored: 84, freeTalk: 22, theoretical: 106, stored: 100 },
         Nurse: { authored: 84, freeTalk: 22, theoretical: 106, stored: 100 },
-        Haeun: { authored: 0, freeTalk: 9, theoretical: 9, stored: 9 }
+        Haeun: { authored: 0, freeTalk: 15, theoretical: 15, stored: 15 }
     };
 
     const actualBalance = {};
