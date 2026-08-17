@@ -80,3 +80,85 @@ test('blocked localStorage migration cannot leak an unhandled rejection', () => 
         /Promise\.resolve\(migrateCupidChatHistoryToD1\(\)\)\.catch\(\(\) => \{\}\)/
     );
 });
+
+test('same-origin script failures retry twice before reporting a persistent failure', async () => {
+    const listeners = new Map();
+    const timers = [];
+    const reports = [];
+    const storage = new Map();
+    const window = {
+        location: {
+            href: 'https://cupid.archerlab.dev/index-en',
+            origin: 'https://cupid.archerlab.dev',
+            pathname: '/index-en'
+        },
+        innerWidth: 392,
+        innerHeight: 786,
+        crypto: { randomUUID: () => 'test-event-id' },
+        localStorage: {
+            getItem(key) { return storage.get(key) || null; },
+            setItem(key, value) { storage.set(key, value); },
+            removeItem(key) { storage.delete(key); }
+        },
+        sessionStorage: {
+            getItem() { return null; },
+            setItem() {}
+        },
+        console: { error() {}, warn() {}, log() {} },
+        addEventListener(type, listener) { listeners.set(type, listener); },
+        setTimeout(callback, delay) {
+            timers.push({ callback, delay });
+            return timers.length;
+        },
+        fetch: async (_url, options) => {
+            reports.push(JSON.parse(options.body));
+            return { ok: true };
+        }
+    };
+    const document = {
+        documentElement: { lang: 'en' },
+        visibilityState: 'visible',
+        referrer: '',
+        addEventListener() {}
+    };
+    const sandbox = {
+        window,
+        document,
+        navigator: { userAgent: 'Chrome/151', onLine: true, sendBeacon() { return false; } },
+        URL,
+        Date,
+        Math,
+        JSON,
+        String,
+        Error,
+        WeakSet,
+        Array,
+        Promise
+    };
+    vm.runInNewContext(read('assets/js/error-reporter.js'), sandbox, { filename: 'error-reporter.js' });
+
+    const attributes = new Map();
+    const target = {
+        tagName: 'SCRIPT',
+        src: 'https://cupid.archerlab.dev/assets/js/modal-accessibility.js?v=2.9.166',
+        getAttribute(name) { return attributes.get(name) || null; },
+        setAttribute(name, value) { attributes.set(name, value); }
+    };
+    const fireResourceError = () => listeners.get('error')({ target });
+
+    fireResourceError();
+    assert.equal(reports.length, 0);
+    assert.equal(attributes.get('data-cupid-script-retries'), '1');
+    timers.find(timer => timer.delay === 300).callback();
+    assert.match(target.src, /[?&]retry=/);
+
+    fireResourceError();
+    assert.equal(reports.length, 0);
+    assert.equal(attributes.get('data-cupid-script-retries'), '2');
+    timers.find(timer => timer.delay === 600).callback();
+
+    fireResourceError();
+    await Promise.resolve();
+    assert.equal(reports.length, 1);
+    assert.equal(reports[0].errorType, 'ResourceError');
+});

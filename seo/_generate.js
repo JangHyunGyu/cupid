@@ -712,7 +712,7 @@ function renderPage(lang, page) {
 <html lang="${c.htmlLang}">
 <head>
   <meta charset="UTF-8">
-  <script src="/assets/js/error-reporter.js?v=20260814-opaque-rejection"></script>
+  <script src="/assets/js/error-reporter.js?v=20260817-script-retry"></script>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>${escapeHTML(page.title)}</title>
   <meta name="description" content="${escapeHTML(page.meta)}">

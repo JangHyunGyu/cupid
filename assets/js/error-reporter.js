@@ -3,7 +3,7 @@
 
     if (window.__cupidErrorReporterInstalled) return;
 
-    var VERSION = '20260814-opaque-rejection';
+    var VERSION = '20260817-script-retry';
     var ERROR_ENDPOINT = 'https://chatbot-api.yama5993.workers.dev/error-logs';
     var QUEUE_KEY = 'cupid-error-queue-v2';
     var SESSION_KEY = 'cupid-error-session-v2';
@@ -270,17 +270,16 @@
         persistQueue();
     }
 
-    function tryRecoverEntryScript(target, resource) {
+    function tryRecoverSameOriginScript(target, resource) {
         if (!target || typeof target.getAttribute !== 'function') return false;
-        if (target.getAttribute('data-cupid-entry-script') !== 'true') return false;
 
-        var attempts = parseInt(target.getAttribute('data-cupid-entry-retries') || '0', 10);
+        var attempts = parseInt(target.getAttribute('data-cupid-script-retries') || '0', 10);
         if (attempts >= 2) return false;
 
         try {
             var retryUrl = new URL(resource, window.location.href);
             if (retryUrl.origin !== window.location.origin) return false;
-            target.setAttribute('data-cupid-entry-retries', String(attempts + 1));
+            target.setAttribute('data-cupid-script-retries', String(attempts + 1));
             retryUrl.searchParams.set('retry', Date.now() + '-' + (attempts + 1));
             window.setTimeout(function () {
                 target.src = retryUrl.href;
@@ -313,7 +312,7 @@
             var resource = target.src || target.href || '';
             if (isIgnorableResourceError(tagName, resource)) return;
             if (target.getAttribute && target.getAttribute('data-cupid-managed-script') === 'true') return;
-            if (tagName === 'SCRIPT' && tryRecoverEntryScript(target, resource)) return;
+            if (tagName === 'SCRIPT' && tryRecoverSameOriginScript(target, resource)) return;
             report(
                 'ResourceError',
                 'Failed to load resource: ' + (tagName || 'UNKNOWN'),

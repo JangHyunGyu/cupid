@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <script src="assets/js/error-reporter.js?v=20260814-opaque-rejection"></script>
+    <script src="assets/js/error-reporter.js?v=20260817-script-retry"></script>
     <meta charset="UTF-8">
     <script>
         if ('serviceWorker' in navigator && location.hostname !== '127.0.0.1' && location.hostname !== 'localhost') {
@@ -29,8 +29,8 @@
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="dns-prefetch" href="https://chatbot-api.yama5993.workers.dev">
     <link rel="preload" href="assets/css/style.css?v=2.9.7" as="style">
-<link rel="preload" href="assets/js/loaders/game-loader.js?v=2.9.166" as="script">
-<link rel="preload" href="assets/js/sound.js?v=2.9.166" as="script">
+<link rel="preload" href="assets/js/loaders/game-loader.js?v=2.9.167" as="script">
+<link rel="preload" href="assets/js/sound.js?v=2.9.167" as="script">
 
     <link rel="stylesheet" href="assets/css/style.css?v=2.9.7">
     <link rel="stylesheet" as="style" crossorigin
@@ -134,12 +134,12 @@
         </button>
 
         <!-- Fade Layer -->
-        <div id="fade-layer">
+        <div id="fade-layer" aria-hidden="true">
             <div id="tbc-text">À suivre</div>
         </div>
 
         <!-- Ending Credits Layer -->
-        <div id="credits-layer">
+        <div id="credits-layer" aria-hidden="true">
             <div id="credits-content">
                 <div class="credits-title">CUPID</div>
                 <div class="credits-subtitle">Là où la flèche de Cupidon se pose</div>
@@ -252,7 +252,7 @@
     </div>
 
     <!-- Game Scripts (Dynamic Loader) -->
-<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.166"></script>
+<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.167"></script>
     <script>
         window.addEventListener('load', function () {
             var wcs_script = document.createElement('script');

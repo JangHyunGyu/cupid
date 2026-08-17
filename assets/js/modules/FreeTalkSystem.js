@@ -1220,6 +1220,7 @@ class FreeTalkSystem {
                         "x-app-type": "cupid",
                         "x-request-type": "character",
                         "x-chat-mode": "single",
+                        "x-response-schema": "cupid-single-forced-sexual-violation",
                         "x-output-language": _lang,
                         ...(_cacheKey && { "x-cache-key": _cacheKey })
                     },
@@ -1228,6 +1229,7 @@ class FreeTalkSystem {
                         characterId: charKey,
                         requestType: "character",
                         chatMode: "single",
+                        responseSchema: "cupid-single-forced-sexual-violation",
                         outputLanguage: _lang,
                         cacheKey: _cacheKey,
                         ...(_turnMeta || {})
