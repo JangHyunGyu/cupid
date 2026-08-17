@@ -76,7 +76,10 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "night2_msg_seo_general_alt": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
-        "next": "night2_msg_yuna_general"
+        "branches": [
+            { "condition": "chose_yuna_after2", "next": "night2_msg_7" },
+            { "next": "night2_msg_yuna_general" }
+        ]
     },
     "night2_msg_yuna_general": {
         "background": "assets/images/background/room_my.png",

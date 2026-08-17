@@ -50,7 +50,7 @@ for (const page of config.localizedPages) {
     for (const lang of config.languages) {
         const suffix = lang === config.defaultLanguage ? '' : `-${lang}`;
         const relativePath = `${page}${suffix}.html`;
-        update(relativePath, [
+        const transforms = [
             content => content.replace(
                 /(assets\/js\/loaders\/(?:game|gallery)-loader\.js\?v=)[0-9.]+/g,
                 `$1${version}`
@@ -63,7 +63,15 @@ for (const page of config.localizedPages) {
                 /(assets\/js\/modal-accessibility\.js\?v=)[0-9.]+/g,
                 `$1${version}`
             )
-        ]);
+        ];
+        if (page === 'index') {
+            transforms.push(replaceRequired(
+                /\(v[0-9.]+\)<\/p>/,
+                `(v${version})</p>`,
+                `${relativePath} visible version`
+            ));
+        }
+        update(relativePath, transforms);
     }
 }
 

@@ -22,6 +22,24 @@ function locale(locale, file) {
     return JSON.parse(fs.readFileSync(path.join(root, 'assets', 'js', 'i18n', locale, `${file}.json`), 'utf8'));
 }
 
+test('Day 2 split-route warning matches the chosen path and message senders do not repeat', () => {
+    const day2 = loadScenario(['day2_3_afterschool.js', 'day2_4_night.js'])[2];
+    assert.equal(day2.minsu_warn_6.next, 'night2_start');
+    assert.equal(day2.minsu_warn_15_b, undefined);
+    assert.equal(day2.minsu_warn_15_c, undefined);
+    assert.equal(day2.night2_msg_seo_general_alt.branches[0].condition, 'chose_yuna_after2');
+    assert.equal(day2.night2_msg_seo_general_alt.branches[0].next, 'night2_msg_7');
+    assert.equal(day2.night2_msg_seo_general_alt.branches[1].next, 'night2_msg_yuna_general');
+
+    for (const code of locales) {
+        const copy = locale(code, 'day2_3_afterschool');
+        assert.ok(copy.minsu_warn_6?.text?.trim(), `${code}: missing split-route warning`);
+        assert.equal(copy.minsu_warn_15_b, undefined, `${code}: stale Dain teaser`);
+        assert.equal(copy.minsu_warn_15_c, undefined, `${code}: stale Seoyeon teaser`);
+    }
+    assert.match(locale('ko', 'day2_3_afterschool').minsu_warn_6.text, /점심엔 한 명, 방과후엔 또 한 명/);
+});
+
 test('Day 4 rival temptation resolves before the lead wall scene', () => {
     const day4 = loadScenario(['day4_4_night.js'])[4];
     const leads = [

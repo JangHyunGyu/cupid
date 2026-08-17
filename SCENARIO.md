@@ -7327,28 +7327,10 @@
 
 ### `minsu_warn_6`
 - 배경: `school.png`
-- 다음: `minsu_warn_15_b`
-
-- 캐릭터: `minsu_smirk.png`
-**민수**: 서연이, 다인이, 유나. 셋 다 너한테 웃더라. — 뭐, 그냥 그렇다고. *어깨를 으쓱하고 먼저 걸어간다.*
-
----
-
-### `minsu_warn_15_b`
-- 배경: `school.png`
-- 다음: `minsu_warn_15_c`
-
-- 캐릭터: `dain_normal.png` @ 0.35
-**다인**: 내일도 내기하자. 종목 바꿔서.
-
----
-
-### `minsu_warn_15_c`
-- 배경: `school.png`
 - 다음: `night2_start`
 
-- 캐릭터: `seyoun_normal.png` @ 0.35
-**서연**: 내일 점심에 옥상 열어놓을게. 와
+- 캐릭터: `minsu_smirk.png`
+**민수**: 점심엔 한 명, 방과후엔 또 한 명. 넌 재밌겠지. — 뭐, 그냥 그렇다고. *어깨를 으쓱하고 먼저 걸어간다.*
 
 ---
 
@@ -7462,7 +7444,9 @@
 
 ### `night2_msg_seo_general_alt`
 - 배경: `room_my.png`
-- 다음: `night2_msg_yuna_general`
+- 분기:
+  - [`chose_yuna_after2`] → `night2_msg_7`
+  - [기본] → `night2_msg_yuna_general`
 
 - 캐릭터: `seyoun_normal.png` @ 0.35
 **서연**: 내일 옥상 열어둘게. 시간 되면 와

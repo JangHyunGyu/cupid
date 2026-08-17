@@ -660,15 +660,7 @@
     },
     "minsu_warn_6": {
         "name": "Minsu",
-        "text": "Seoyeon, Dain, Yuna—all three of them smile at you. Just saying. *He shrugs and walks ahead.*"
-    },
-    "minsu_warn_15_b": {
-        "name": "Dain",
-        "text": "Let's have another bet tomorrow! Different game!"
-    },
-    "minsu_warn_15_c": {
-        "name": "Seoyeon",
-        "text": "I'll leave the rooftop open at lunch tomorrow. Come."
+        "text": "One person at lunch, another after school. Must be fun for you. — Just saying. *He shrugs and walks ahead.*"
     },
     "after2_yuna_trap": {
         "name": "Yuna",

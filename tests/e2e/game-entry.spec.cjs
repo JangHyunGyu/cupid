@@ -40,6 +40,20 @@ for (const pageName of ['index.html', 'index-en.html', ...localizedGamePages]) {
     });
 }
 
+test('explicit localized landing URL overrides a stale stored language', async ({ page }) => {
+    await page.goto('/index.html');
+    await page.evaluate(() => localStorage.setItem('cupid:language', 'ko'));
+
+    const response = await page.goto('/index-en.html', { waitUntil: 'domcontentloaded' });
+    expect(response?.status()).toBe(200);
+    await waitForRuntime(page);
+
+    expect(new URL(page.url()).pathname).toBe('/index-en.html');
+    await expect(page.locator('html')).toHaveAttribute('lang', 'en');
+    await expect(page.getByRole('button', { name: 'New Game' })).toBeEnabled();
+    await expect.poll(() => page.evaluate(() => localStorage.getItem('cupid:language'))).toBe('en');
+});
+
 test('four-choice affinity scene renders all options and applies a trap penalty', async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 });
     await page.goto('/game.html');

@@ -660,15 +660,7 @@
     },
     "minsu_warn_6": {
         "name": "Minsu",
-        "text": "Seoyeon, Dain, Yuna. Toutes les trois te sourient. — Je dis ça, je dis rien. *Il hausse les épaules et part devant.*"
-    },
-    "minsu_warn_15_b": {
-        "name": "Dain",
-        "text": "On parie encore demain !! Un autre jeu !!"
-    },
-    "minsu_warn_15_c": {
-        "name": "Seoyeon",
-        "text": "Demain midi, je laisserai le toit ouvert. Viens."
+        "text": "Une à midi, une autre après les cours. Toi, tu dois bien t’amuser. — Je dis ça comme ça. *Il hausse les épaules et prend les devants.*"
     },
     "after2_yuna_trap": {
         "name": "Yuna",

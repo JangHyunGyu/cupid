@@ -4,20 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <script src="assets/js/error-reporter.js?v=20260817-script-retry"></script>
-    <!-- Language auto-detect & redirect (must be first script) -->
+    <!-- Explicit localized entry point (must be first script) -->
     <script>
     (function () {
         try {
             if (/bot|crawl|spider|slurp|facebookexternalhit|mediapartners/i.test(navigator.userAgent)) return;
-            var K = 'cupid:language', P = 'es';
-            var M = { ko: '/', en: 'index-en', es: 'index-es', ja: 'index-ja', fr: 'index-fr', de: 'index-de', pt: 'index-pt' };
-            var s = localStorage.getItem(K);
-            if (!s) {
-                s = (navigator.language || '').split('-')[0].toLowerCase();
-                if (!M[s]) s = 'en';
-                localStorage.setItem(K, s);
-            }
-            if (s !== P && M[s]) location.replace(M[s]);
+            localStorage.setItem('cupid:language', 'es');
         } catch (e) { }
     })();
     </script>
@@ -42,7 +34,7 @@
         };
     </script>
     <script src="assets/js/browser-check.js?v=2.9.8" defer></script>
-    <script src="assets/js/modal-accessibility.js?v=2.9.171" defer></script>
+    <script src="assets/js/modal-accessibility.js?v=2.9.172" defer></script>
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -1007,7 +999,7 @@
                 <a href="/seo/juego-citas-online" style="color: #ffb6c1; margin: 0 6px;">Juego de citas online</a>
             </nav>
             <p style="color: #ffb6c1;">Asesores: Yujin Kim, Sanghun Lee</p>
-            <p style="opacity: 0.7;">© 2026 ArcherLab. Todos los derechos reservados. (v1.2.5)</p>
+            <p style="opacity: 0.7;">© 2026 ArcherLab. Todos los derechos reservados. (v2.9.172)</p>
         </div>
     </div>
 
@@ -1257,7 +1249,7 @@
     <script>window.preventAutoStart = true;</script>
 
     <!-- Game Scripts (Dynamic Loader) -->
-<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.171"></script>
+<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.172"></script>
 
     <script>
         // Initialize SoundManager + Enable Buttons (게임 스크립트 로드 완료 후)

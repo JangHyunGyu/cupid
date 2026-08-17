@@ -881,16 +881,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "minsu_warn_6": {
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/minsu_smirk.png",
-        "next": "minsu_warn_15_b"
-    },
-    "minsu_warn_15_b": {
-        "background": "assets/images/background/school.png",
-        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
-        "next": "minsu_warn_15_c"
-    },
-    "minsu_warn_15_c": {
-        "background": "assets/images/background/school.png",
-        "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
         "next": "night2_start"
     }
     };

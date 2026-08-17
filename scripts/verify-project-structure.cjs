@@ -11,7 +11,17 @@ for (const page of config.localizedPages) {
     for (const lang of config.languages) {
         const suffix = lang === config.defaultLanguage ? '' : `-${lang}`;
         const relativePath = `${page}${suffix}.html`;
-        if (!fs.existsSync(path.join(root, relativePath))) errors.push(`missing page: ${relativePath}`);
+        const fullPath = path.join(root, relativePath);
+        if (!fs.existsSync(fullPath)) {
+            errors.push(`missing page: ${relativePath}`);
+            continue;
+        }
+        if (page === 'index') {
+            const html = fs.readFileSync(fullPath, 'utf8');
+            if (!html.includes(`(v${config.assetVersion})</p>`)) {
+                errors.push(`${relativePath}: visible version does not match ${config.assetVersion}`);
+            }
+        }
     }
 }
 
