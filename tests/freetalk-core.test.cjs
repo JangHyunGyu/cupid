@@ -805,7 +805,7 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
     assert.match(freeTalk, /chatContainer\?\.classList\.remove\('group-freetalk-mode'\)/);
     assert.match(freeTalk, /this\.groupParticipants\s*\.map\(participant => normalized\.find\(conversation => conversation\.speakerId === participant\.id\)\)/);
     assert.match(freeTalk, /ordered\.length !== this\.groupParticipants\.length/);
-    assert.match(freeTalk, /_enforceGroupOpeningLoss\(parsedConversations\)/);
+    assert.doesNotMatch(freeTalk, /_enforceGroupOpeningLoss/);
     assert.match(freeTalk, /const canContinueGroupChat = this\.isFreeTalking[\s\S]*?this\.freeTalkTurns < this\.currentMaxTurns/);
     assert.match(freeTalk, /chatInput\.disabled = !canContinueGroupChat/);
     assert.match(read('assets/js/prompts.js'), /두 사람을 반드시 모두 넣고/);
@@ -1052,41 +1052,6 @@ test('group reply order, per-speaker affinity, and Dain expression assets follow
     assert.equal(dainImage.dataset.rawSrc, 'assets/images/characters/dain_angry.png?v=test');
     system._applyGroupExpression('sad', 'Dain');
     assert.equal(dainImage.src, 'assets/images/characters/dain_sad.png?v=test');
-
-    system.freeTalkTurns = 1;
-    assert.deepEqual(
-        Array.from(system._enforceGroupOpeningLoss([
-            { speakerId: 'Teacher', affinity: 3 },
-            { speakerId: 'Dain', affinity: 0 }
-        ]), item => item.affinity),
-        [3, -3],
-        'the lower-scored unchosen character must take the minimum group loss'
-    );
-    assert.deepEqual(
-        Array.from(system._enforceGroupOpeningLoss([
-            { speakerId: 'Teacher', affinity: 0 },
-            { speakerId: 'Dain', affinity: 0 }
-        ]), item => item.affinity),
-        [-3, -3],
-        'an unresolved tie must count as evading both characters'
-    );
-    assert.deepEqual(
-        Array.from(system._enforceGroupOpeningLoss([
-            { speakerId: 'Teacher', affinity: 2 },
-            { speakerId: 'Dain', affinity: -1 }
-        ]), item => item.affinity),
-        [2, -3],
-        'a token negative score must not undercut the minimum group loss'
-    );
-    system.freeTalkTurns = 2;
-    assert.deepEqual(
-        Array.from(system._enforceGroupOpeningLoss([
-            { speakerId: 'Teacher', affinity: 1 },
-            { speakerId: 'Dain', affinity: 0 }
-        ]), item => item.affinity),
-        [1, 0],
-        'later repair turns must remain behavior-based rather than repeat the opening penalty'
-    );
 
     const events = [];
     system.stateManager = {

@@ -1762,35 +1762,6 @@ class FreeTalkSystem {
         };
     }
 
-    _enforceGroupOpeningLoss(conversations) {
-        if (this.freeTalkTurns !== 1
-            || !Array.isArray(conversations)
-            || conversations.length !== 2) {
-            return conversations;
-        }
-
-        const affinityChanges = conversations.map(conversation => (
-            CupidFreeTalkCore.normalizeAffinityChange(conversation.affinity)
-        ));
-        const negativeIndexes = affinityChanges
-            .map((change, index) => change < 0 ? index : -1)
-            .filter(index => index >= 0);
-        const penalizedIndexes = negativeIndexes.length > 0
-            ? negativeIndexes
-            : (() => {
-                const lowestChange = Math.min(...affinityChanges);
-                return affinityChanges
-                    .map((change, index) => change === lowestChange ? index : -1)
-                    .filter(index => index >= 0);
-            })();
-
-        return conversations.map((conversation, index) => (
-            penalizedIndexes.includes(index)
-                ? { ...conversation, affinity: Math.min(affinityChanges[index], -3) }
-                : conversation
-        ));
-    }
-
     async _renderGroupConversations(conversations, requestContext, latestUserText, lang, scene = null) {
         let positiveBudget = 3;
         const rendered = [];
@@ -1980,8 +1951,7 @@ class FreeTalkSystem {
                 });
             }
             const reply = String(data?.choices?.[0]?.message?.content || '').trim();
-            const parsedConversations = this.parseGroupJsonResponse(reply);
-            const conversations = this._enforceGroupOpeningLoss(parsedConversations);
+            const conversations = this.parseGroupJsonResponse(reply);
 
             this._clearThinkingMessage();
             document.querySelectorAll('.group-freetalk-participant img').forEach(img => img.classList.remove('thinking'));
