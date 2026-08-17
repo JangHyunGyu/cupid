@@ -895,6 +895,30 @@
         "context": "Haeun acaba de contar que vio a Seoyeon llorando sola y pidió al protagonista que hoy no la dejara sola, aunque no intentara convencerla. Siguen juntos en el pasillo y Haeun espera saber qué piensa hacer.",
         "personality": "Haeun conserva la cortesía, pero no resta importancia al daño de Seoyeon. Quiere oír qué hará el protagonista ahora, no una excusa. Puede preguntar o cuestionar su respuesta, pero no decide por Seoyeon ni obliga al protagonista a realizar una acción. No conviertas el intercambio en algo romántico o sexual. Su afinidad representa solo confianza y aprecio personal y no afecta a ningún final."
     },
+    "haeun_affinity_high_1": {
+        "name": "Haeun",
+        "text": "*Haeun observa el rostro de {name} durante un momento y endereza la pulsera del consejo estudiantil que se había girado hacia dentro de su muñeca.* ...Voy a creerte."
+    },
+    "haeun_affinity_high_2": {
+        "name": "Haeun",
+        "text": "Aunque Seoyeon diga que está bien, pregúntale una vez más hoy. Ella también dice eso cuando no está bien."
+    },
+    "haeun_affinity_neutral_1": {
+        "name": "Haeun",
+        "text": "*Haeun no suelta el broche de la pulsera y asiente despacio.* Todavía no te creo del todo."
+    },
+    "haeun_affinity_neutral_2": {
+        "name": "Haeun",
+        "text": "Pero veré si cumples lo que acabas de decir. Hoy no dejes sola a Seoyeon."
+    },
+    "haeun_affinity_low_1": {
+        "name": "Haeun",
+        "text": "*Haeun aprieta la pulsera y retrocede medio paso.* Ahora mismo no puedo confiarte a Seoyeon, {name}."
+    },
+    "haeun_affinity_low_2": {
+        "name": "Haeun",
+        "text": "Yo también hablaré con el profesor encargado del consejo. Aunque vayas con Seoyeon, no digas nada que pueda herirla más."
+    },
     "haeun_warn_7_d": {
         "name": "Haeun",
         "text": "*Después de que Haeun desaparece al fondo del pasillo, en el perchero de la pared solo queda el brazalete del consejo estudiantil de Seoyeon.*"

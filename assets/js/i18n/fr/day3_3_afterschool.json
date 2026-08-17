@@ -895,6 +895,30 @@
         "context": "Haeun vient de dire qu'elle avait vu Seoyeon pleurer seule et a demandé au protagoniste de ne pas la laisser seule aujourd'hui, même sans essayer de la convaincre. Ils sont encore ensemble dans le couloir et Haeun attend de savoir ce qu'il compte faire.",
         "personality": "Haeun reste polie, mais refuse de minimiser la peine de Seoyeon. Elle veut savoir ce que le protagoniste fera maintenant, pas entendre une excuse. Elle peut interroger ou contester sa réponse, mais ne décide pas des sentiments de Seoyeon à sa place et ne force pas le protagoniste à accomplir une action. Ne donne pas à l'échange une tournure romantique ou sexuelle. Son affinité ne représente que sa confiance et son estime personnelles et n'influence aucune fin."
     },
+    "haeun_affinity_high_1": {
+        "name": "Haeun",
+        "text": "*Haeun observe un moment le visage de {name}, puis remet droit le bracelet du conseil qui avait tourné sur son poignet.* ...Je vais vous croire."
+    },
+    "haeun_affinity_high_2": {
+        "name": "Haeun",
+        "text": "Même si Seoyeon dit que tout va bien, demandez-le-lui encore une fois aujourd’hui. Elle le dit aussi quand ce n’est pas vrai."
+    },
+    "haeun_affinity_neutral_1": {
+        "name": "Haeun",
+        "text": "*Haeun garde les doigts sur l’attache du bracelet et hoche lentement la tête.* Je ne vous crois pas encore complètement."
+    },
+    "haeun_affinity_neutral_2": {
+        "name": "Haeun",
+        "text": "Mais je verrai si vous tenez parole. Aujourd’hui, ne laissez pas Seoyeon seule."
+    },
+    "haeun_affinity_low_1": {
+        "name": "Haeun",
+        "text": "*Haeun serre le bracelet et recule d’un demi-pas.* Pour l’instant, je ne peux pas vous confier Seoyeon, {name}."
+    },
+    "haeun_affinity_low_2": {
+        "name": "Haeun",
+        "text": "J’en parlerai aussi au professeur responsable du conseil. Même si vous allez voir Seoyeon, ne dites rien qui puisse la blesser davantage."
+    },
     "haeun_warn_7_d": {
         "name": "Haeun",
         "text": "*Elle se retourne et part. Le brassard vide du conseil étudiant de Seoyeon est suspendu au bout du couloir.*"

@@ -670,6 +670,40 @@ test('free-talk exits re-check live affinity before later romance or temptation 
     }
 });
 
+test('Haeun free talk branches by personal trust before rejoining the Seoyeon route', () => {
+    const router = scenes.haeun_affinity_check;
+    assert.equal(scenes.haeun_freetalk.next, 'haeun_affinity_check');
+    assert.equal(scenes.haeun_freetalk.forcedSexualViolationNext, 'haeun_warn_8b');
+    assert.equal(router.routeBeforeRender, true);
+    assert.equal(router.affinityChar, 'Haeun');
+    assert.deepEqual(
+        router.affinityBranches.map(branch => [branch.minAffinity, branch.next]),
+        [
+            [8, 'haeun_affinity_high_1'],
+            [0, 'haeun_affinity_neutral_1'],
+            [-100, 'haeun_affinity_low_1']
+        ]
+    );
+
+    const affinities = { Haeun: 8 };
+    const renderer = createSceneRenderer(affinities);
+    assert.equal(renderer.resolveNextScene(router), 'haeun_affinity_high_1');
+    affinities.Haeun = 0;
+    assert.equal(renderer.resolveNextScene(router), 'haeun_affinity_neutral_1');
+    affinities.Haeun = -1;
+    assert.equal(renderer.resolveNextScene(router), 'haeun_affinity_low_1');
+
+    for (const copy of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy)) {
+        for (const id of [
+            'haeun_affinity_high_1', 'haeun_affinity_high_2',
+            'haeun_affinity_neutral_1', 'haeun_affinity_neutral_2',
+            'haeun_affinity_low_1', 'haeun_affinity_low_2'
+        ]) {
+            assert.ok(copy[id]?.name && copy[id]?.text, `${id} must be localized in every language`);
+        }
+    }
+});
+
 test('forced sexual violation aftermath covers every day and resumes every free-talk next scene', () => {
     const gameEngineSource = fs.readFileSync(path.join(ROOT, 'assets', 'js', 'modules', 'GameEngine.js'), 'utf8');
     assert.match(gameEngineSource, /if \(scene\.inheritVisualContext !== true\) \{/);
@@ -731,7 +765,8 @@ test('forced sexual violation aftermath covers every day and resumes every free-
 
         assert.equal(renderer.resolveNextScene(freeTalk), aftermathId);
         assert.equal(flags.forced_sexual_violation.handled, true);
-        assert.equal(flags.forced_sexual_violation.returnScene, freeTalk.next);
+        const expectedReturnScene = freeTalk.forcedSexualViolationNext || freeTalk.next;
+        assert.equal(flags.forced_sexual_violation.returnScene, expectedReturnScene);
 
         const aftermath = scenario[day][aftermathId];
         assert.equal(aftermath.runtimeEntrypoint, true);
@@ -753,7 +788,7 @@ test('forced sexual violation aftermath covers every day and resumes every free-
             }
         }
 
-        assert.equal(renderer.resolveNextScene(scenario[day][resumeId]), freeTalk.next);
+        assert.equal(renderer.resolveNextScene(scenario[day][resumeId]), expectedReturnScene);
         renderer.currentSceneId = freeTalkId;
         assert.equal(renderer.resolveNextScene(freeTalk), freeTalk.next, `${freeTalkId} aftermath must run only once`);
     }

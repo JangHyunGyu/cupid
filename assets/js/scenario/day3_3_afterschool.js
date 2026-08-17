@@ -1170,6 +1170,49 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/haeun_worried.png",
         "type": "free_talk",
         "maxTurns": 5,
+        "next": "haeun_affinity_check",
+        "forcedSexualViolationNext": "haeun_warn_8b"
+    },
+    "haeun_affinity_check": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_worried.png",
+        "routeBeforeRender": true,
+        "affinityChar": "Haeun",
+        "affinityBranches": [
+            { "minAffinity": 8, "next": "haeun_affinity_high_1" },
+            { "minAffinity": 0, "next": "haeun_affinity_neutral_1" },
+            { "minAffinity": -100, "next": "haeun_affinity_low_1" }
+        ],
+        "next": "haeun_affinity_low_1"
+    },
+    "haeun_affinity_high_1": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_normal.png",
+        "next": "haeun_affinity_high_2"
+    },
+    "haeun_affinity_high_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_normal.png",
+        "next": "haeun_warn_7_d"
+    },
+    "haeun_affinity_neutral_1": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_worried.png",
+        "next": "haeun_affinity_neutral_2"
+    },
+    "haeun_affinity_neutral_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_worried.png",
+        "next": "haeun_warn_7_d"
+    },
+    "haeun_affinity_low_1": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_worried.png",
+        "next": "haeun_affinity_low_2"
+    },
+    "haeun_affinity_low_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_worried.png",
         "next": "haeun_warn_7_d"
     },
     "haeun_warn_7_d": {

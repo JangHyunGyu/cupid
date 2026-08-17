@@ -895,6 +895,30 @@
         "context": "Haeun acabou de contar que viu Seoyeon chorando sozinha e pediu ao protagonista que não a deixasse sozinha hoje, mesmo que ele não tentasse convencê-la. Os dois ainda estão no corredor, e Haeun espera ouvir o que ele pretende fazer.",
         "personality": "Haeun continua educada, mas não trata a dor de Seoyeon como algo pequeno. Ela quer ouvir o que o protagonista vai fazer agora, não uma desculpa. Pode questionar ou rebater a resposta dele, mas não decide os sentimentos de Seoyeon nem obriga o protagonista a executar uma ação. Não torne a conversa romântica ou sexual. A afinidade dela representa apenas confiança e consideração pessoal e não afeta nenhum final."
     },
+    "haeun_affinity_high_1": {
+        "name": "Haeun",
+        "text": "*Haeun observa o rosto de {name} por um instante e ajeita a pulseira do grêmio que tinha virado para dentro do pulso.* ...Vou acreditar em você."
+    },
+    "haeun_affinity_high_2": {
+        "name": "Haeun",
+        "text": "Mesmo que Seoyeon diga que está bem, pergunta mais uma vez hoje. Ela também diz isso quando não está bem."
+    },
+    "haeun_affinity_neutral_1": {
+        "name": "Haeun",
+        "text": "*Haeun continua segurando o fecho da pulseira e concorda devagar.* Ainda não acredito totalmente em você."
+    },
+    "haeun_affinity_neutral_2": {
+        "name": "Haeun",
+        "text": "Mas vou ver se você cumpre o que acabou de dizer. Hoje, só não deixe Seoyeon sozinha."
+    },
+    "haeun_affinity_low_1": {
+        "name": "Haeun",
+        "text": "*Haeun aperta a pulseira e recua meio passo.* Agora não consigo confiar Seoyeon a você, {name}."
+    },
+    "haeun_affinity_low_2": {
+        "name": "Haeun",
+        "text": "Eu também vou falar com o professor responsável pelo grêmio. Mesmo que vá até Seoyeon, não diga nada que machuque ela ainda mais."
+    },
     "haeun_warn_7_d": {
         "name": "Haeun",
         "text": "*Depois que Haeun desaparece no fim do corredor, resta no cabide da parede apenas a braçadeira do grêmio de Seoyeon.*"

@@ -262,11 +262,15 @@ class SceneRenderer {
                 && characterId
                 ? `forced_violation_day${violationDay}_after_${characterId}`
                 : null;
-            if (aftermathRoute && scene.next) {
+            const forcedReturnScene = typeof scene.forcedSexualViolationNext === 'string'
+                && scene.forcedSexualViolationNext
+                ? scene.forcedSexualViolationNext
+                : scene.next;
+            if (aftermathRoute && forcedReturnScene) {
                 this.stateManager.setFlag('forced_sexual_violation', {
                     ...forcedViolation,
                     handled: true,
-                    returnScene: scene.next
+                    returnScene: forcedReturnScene
                 });
                 return aftermathRoute;
             }

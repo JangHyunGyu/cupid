@@ -659,11 +659,8 @@ test('Haeun affinity starts at zero, migrates into old saves, resets cleanly, an
     state.resetForNewGame();
     assert.equal(state.stats.Haeun.affinity, 0);
 
-    const allScenarioSource = fs.readdirSync(path.join(__dirname, '../assets/js/scenario'))
-        .filter(name => /^day.*\.js$/.test(name))
-        .map(name => read(`assets/js/scenario/${name}`))
-        .join('\n');
-    assert.doesNotMatch(allScenarioSource, /"affinityChar"\s*:\s*"Haeun"/,
+    const endingScenarioSource = read('assets/js/scenario/day5_4_night.js');
+    assert.doesNotMatch(endingScenarioSource, /"affinityChar"\s*:\s*"Haeun"/,
         'Haeun must not become an ending affinity target');
     assert.equal(core.normalizeStoryFreeTalkAffinityChange(5, 0, 0), 3);
     assert.equal(core.normalizeStoryFreeTalkAffinityChange(5, 3, 3), 3);
@@ -902,7 +899,7 @@ test('day-two student rivalry and day-three adult social groups use the highest-
     assert.equal(day3.haeun_warn_7_c.next, 'haeun_freetalk');
     assert.equal(day3.haeun_freetalk.type, 'free_talk');
     assert.equal(day3.haeun_freetalk.maxTurns, 5);
-    assert.equal(day3.haeun_freetalk.next, 'haeun_warn_7_d');
+    assert.equal(day3.haeun_freetalk.next, 'haeun_affinity_check');
 
     for (const lang of ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt']) {
         const day2I18n = JSON.parse(read(`assets/js/i18n/${lang}/day2_3_afterschool.json`));

@@ -895,6 +895,30 @@
         "context": "Haeun hat gerade erzählt, dass sie Seoyeon allein weinen sah, und den Protagonisten gebeten, sie heute nicht allein zu lassen, auch wenn er sie nicht zu überzeugen versucht. Sie stehen noch zusammen im Flur, und Haeun wartet darauf, was er vorhat.",
         "personality": "Haeun bleibt höflich, spielt Seoyeons Verletzung aber nicht herunter. Sie will hören, was der Protagonist jetzt tun wird, keine Ausrede. Sie darf nachfragen oder seiner Antwort widersprechen, entscheidet aber nicht für Seoyeon und zwingt den Protagonisten zu keiner Handlung. Mache das Gespräch weder romantisch noch sexuell. Ihre Zuneigung steht nur für persönliches Vertrauen und Wohlwollen und beeinflusst kein Ende."
     },
+    "haeun_affinity_high_1": {
+        "name": "Haeun",
+        "text": "*Haeun mustert {name} einen Moment lang und richtet dann das Schülerratsarmband, das an die Innenseite ihres Handgelenks gerutscht ist.* ...Ich glaube dir."
+    },
+    "haeun_affinity_high_2": {
+        "name": "Haeun",
+        "text": "Auch wenn Seoyeon sagt, dass alles in Ordnung ist, frag sie heute noch einmal. Sie sagt das auch, wenn es ihr nicht gut geht."
+    },
+    "haeun_affinity_neutral_1": {
+        "name": "Haeun",
+        "text": "*Haeun lässt den Verschluss des Armbands nicht los und nickt langsam.* Ich glaube dir noch nicht ganz."
+    },
+    "haeun_affinity_neutral_2": {
+        "name": "Haeun",
+        "text": "Aber ich werde sehen, ob du dich an das hältst, was du gerade gesagt hast. Lass Seoyeon heute nur nicht allein."
+    },
+    "haeun_affinity_low_1": {
+        "name": "Haeun",
+        "text": "*Haeun umklammert das Armband und tritt einen halben Schritt zurück.* Im Moment kann ich dir Seoyeon nicht anvertrauen, {name}."
+    },
+    "haeun_affinity_low_2": {
+        "name": "Haeun",
+        "text": "Ich sage auch der Lehrkraft Bescheid, die den Schülerrat betreut. Selbst wenn du zu Seoyeon gehst, sag nichts, was sie noch mehr verletzt."
+    },
     "haeun_warn_7_d": {
         "name": "Haeun",
         "text": "*Nachdem Haeun am Ende des Flurs verschwunden ist, hängt nur noch Seoyeons Schülerratsarmbinde am Wandhaken.*"

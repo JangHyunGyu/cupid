@@ -12723,12 +12723,78 @@
 ### `haeun_freetalk`
 - 배경: `school_hallway.png`
 - 타입: `free_talk`
-- 다음: `haeun_warn_7_d`
+- 다음: `haeun_affinity_check`
 - 컨텍스트: "하은은 방금 서연이 혼자 울고 있는 모습을 봤다고 알렸고 설득하려 들지 말더라도 오늘만은 혼자 두지 말아 달라고 부탁했다. 아직 복도에 함께 서 있으며 주인공이 어떻게 할 생각인지 대답을 기다린다."
 - 성격: "하은은 예의를 지키면서도 서연이 상처받은 일을 가볍게 넘기지 않는다. 변명보다 지금 할 행동을 듣고 싶어 한다. 주인공의 대답을 듣고 묻거나 반박할 수 있지만 서연의 마음을 대신 단정하거나 주인공에게 특정 행동을 강제로 수행시키지 않는다. 연애나 성적인 분위기로 전환하지 않는다. 호감도는 하은의 개인적인 신뢰와 호의만 나타내며 어떤 엔딩에도 영향을 주지 않는다."
 
 - 캐릭터: `haeun_worried.png`
 **하은**: *하은은 돌아서지 않고 주인공을 똑바로 본다.* "…대답은 듣고 갈게요. 지금 어떻게 할 생각이에요?"
+
+---
+
+### `haeun_affinity_check`
+- 배경: `school_hallway.png`
+- 호감분기: Haeun
+  - [8+] → `haeun_affinity_high_1`
+  - [0+] → `haeun_affinity_neutral_1`
+  - [기본] → `haeun_affinity_low_1`
+- 다음: `haeun_affinity_low_1`
+
+- 캐릭터: `haeun_worried.png`
+
+---
+
+### `haeun_affinity_high_1`
+- 배경: `school_hallway.png`
+- 다음: `haeun_affinity_high_2`
+
+- 캐릭터: `haeun_normal.png`
+**하은**: *하은은 한동안 {name}의 얼굴을 살피다 손목 안쪽으로 돌아간 학생회 팔찌를 바로잡는다.* ...그 말은 믿을게요.
+
+---
+
+### `haeun_affinity_high_2`
+- 배경: `school_hallway.png`
+- 다음: `haeun_warn_7_d`
+
+- 캐릭터: `haeun_normal.png`
+**하은**: 서연 선배가 괜찮다고 해도 오늘은 한 번만 더 물어봐 주세요. 안 괜찮을 때도 그렇게 말하는 사람이니까.
+
+---
+
+### `haeun_affinity_neutral_1`
+- 배경: `school_hallway.png`
+- 다음: `haeun_affinity_neutral_2`
+
+- 캐릭터: `haeun_worried.png`
+**하은**: *하은은 팔찌 고리에서 손을 떼지 않은 채 천천히 고개를 끄덕인다.* 아직 다 믿는 건 아니에요.
+
+---
+
+### `haeun_affinity_neutral_2`
+- 배경: `school_hallway.png`
+- 다음: `haeun_warn_7_d`
+
+- 캐릭터: `haeun_worried.png`
+**하은**: 그래도 방금 한 말은 지키는지 볼게요. 오늘은 서연 선배를 혼자 두지만 마세요.
+
+---
+
+### `haeun_affinity_low_1`
+- 배경: `school_hallway.png`
+- 다음: `haeun_affinity_low_2`
+
+- 캐릭터: `haeun_worried.png`
+**하은**: *하은은 팔찌를 움켜쥔 채 반걸음 물러난다.* 지금은 {name} 씨한테 서연 선배를 맡기기 어렵겠네요.
+
+---
+
+### `haeun_affinity_low_2`
+- 배경: `school_hallway.png`
+- 다음: `haeun_warn_7_d`
+
+- 캐릭터: `haeun_worried.png`
+**하은**: 저도 학생회 담당 선생님께 말씀드릴게요. 서연 선배한테 가더라도 더 상처 주는 말은 하지 마세요.
 
 ---
 

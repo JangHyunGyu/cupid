@@ -895,6 +895,30 @@
         "context": "Haeun has just said that she saw Seoyeon crying alone and asked the protagonist not to leave her by herself today, even if he does not try to persuade her. They are still together in the hallway, and Haeun is waiting to hear what he plans to do.",
         "personality": "Haeun remains polite but will not brush aside the fact that Seoyeon was hurt. She wants to hear what the protagonist will do now rather than an excuse. She may question or challenge his answer, but she does not decide Seoyeon's feelings for her or force the protagonist to perform an action. Do not turn the exchange romantic or sexual. Her affinity represents only personal trust and regard and affects no ending."
     },
+    "haeun_affinity_high_1": {
+        "name": "Haeun",
+        "text": "*Haeun studies {name}'s face for a moment, then straightens the student council bracelet that had turned against the inside of her wrist.* ...I'll believe you."
+    },
+    "haeun_affinity_high_2": {
+        "name": "Haeun",
+        "text": "Even if Seoyeon says she's fine, ask her one more time today. She says that when she isn't fine, too."
+    },
+    "haeun_affinity_neutral_1": {
+        "name": "Haeun",
+        "text": "*Haeun keeps her fingers on the bracelet clasp and slowly nods.* I don't completely believe you yet."
+    },
+    "haeun_affinity_neutral_2": {
+        "name": "Haeun",
+        "text": "But I'll see whether you keep your word. Just don't leave Seoyeon alone today."
+    },
+    "haeun_affinity_low_1": {
+        "name": "Haeun",
+        "text": "*Haeun grips the bracelet and takes half a step back.* I don't think I can trust you with Seoyeon right now, {name}."
+    },
+    "haeun_affinity_low_2": {
+        "name": "Haeun",
+        "text": "I'll tell the faculty adviser, too. Even if you go to Seoyeon, don't say anything that hurts her more."
+    },
     "haeun_warn_7_d": {
         "name": "Haeun",
         "text": "*After Haeun disappears down the hall, only Seoyeon's student council armband remains on the wall rack.*"
