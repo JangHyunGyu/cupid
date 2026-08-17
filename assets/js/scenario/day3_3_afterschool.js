@@ -151,7 +151,9 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/seyoun_sad.png",
         "choices": [
             { "next": "after3_seo_pity_trap_1", "stats": {"Seoyeon":{"affinity":-18}}, "setFlags": ["seo_pity_broken"] },
-            { "next": "after3_seo_correct_1", "stats": {"Seoyeon":{"affinity":12}} }
+            { "next": "after3_seo_correct_1", "stats": {"Seoyeon":{"affinity":12}} },
+            { "next": "after3_seo_pity_trap_1", "stats": {"Seoyeon":{"affinity":-14}} },
+            { "next": "after3_seo_pity_trap_1", "stats": {"Seoyeon":{"affinity":-16}} }
         ]
     },
     "after3_seo_pity_trap_1": {
@@ -368,7 +370,9 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/yuna_shy.png",
         "choices": [
             { "next": "after3_yuna_decode_trap_1", "stats": {"Yuna":{"affinity":-22}}, "setFlags": ["yuna_safe_zone_broken"] },
-            { "next": "after3_yuna_correct_1", "stats": {"Yuna":{"affinity":13}} }
+            { "next": "after3_yuna_correct_1", "stats": {"Yuna":{"affinity":13}} },
+            { "next": "after3_yuna_decode_trap_1", "stats": {"Yuna":{"affinity":-15}} },
+            { "next": "after3_yuna_decode_trap_1", "stats": {"Yuna":{"affinity":-18}} }
         ]
     },
     "after3_yuna_decode_trap_1": {
@@ -565,7 +569,9 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/dain_sad.png",
         "choices": [
             { "next": "after3_dain_pity_trap_1", "stats": {"Dain":{"affinity":-20}}, "setFlags": ["pitied_dain"] },
-            { "next": "after3_dain_correct_1", "stats": {"Dain":{"affinity":13}} }
+            { "next": "after3_dain_correct_1", "stats": {"Dain":{"affinity":13}} },
+            { "next": "after3_dain_pity_trap_1", "stats": {"Dain":{"affinity":-15}} },
+            { "next": "after3_dain_pity_trap_1", "stats": {"Dain":{"affinity":-17}} }
         ]
     },
     "after3_dain_pity_trap_1": {
@@ -724,7 +730,9 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/dain_sad.png",
         "choices": [
             { "next": "after3_dain_tell_confirm", "stats": {"Dain":{"affinity":-20}}, "setFlags": ["told_about_dain_knee"] },
-            { "next": "after3_dain_tell_retreat", "stats": {"Dain":{"affinity":4}}, "setFlags": ["dain_planned_nurse_visit"] }
+            { "next": "after3_dain_tell_retreat", "stats": {"Dain":{"affinity":4}}, "setFlags": ["dain_planned_nurse_visit"] },
+            { "next": "after3_dain_tell_confirm", "stats": {"Dain":{"affinity":-12}} },
+            { "next": "after3_dain_tell_confirm", "stats": {"Dain":{"affinity":-15}} }
         ]
     },
     "after3_dain_tell_confirm": {

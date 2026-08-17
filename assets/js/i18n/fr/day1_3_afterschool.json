@@ -36,7 +36,9 @@
         "text": "*Je serre plus fort mon téléphone.*",
         "choices": [
             "J'ai mangé sur le toit avec la présidente. (Honnête)",
-            "J'ai juste traîné seul. (Mensonge)"
+            "J'ai juste traîné seul. (Mensonge)",
+            "Si j’avais su que tu me chercherais comme ça, je t’aurais proposé de manger avec nous.",
+            "Si j’avais su que tu serais jalouse, je te l’aurais dit avant."
         ]
     },
     "after1_jealousy_seo_honest": {
@@ -280,7 +282,9 @@
         "text": "*Le coin du registre d'appel touche le bureau.*",
         "choices": [
             "Si vous êtes inquiète, dites juste que vous êtes inquiète",
-            "Alors, ce sera encore un jus la prochaine fois, madame."
+            "Alors, ce sera encore un jus la prochaine fois, madame.",
+            "Vous ne pourriez pas vous occuper comme ça uniquement de moi, désormais ?",
+            "Si vous vous inquiétez tant, raccompagnez-moi chez moi aujourd’hui."
         ]
     },
     "after_homeroom_honest_choice2a": {

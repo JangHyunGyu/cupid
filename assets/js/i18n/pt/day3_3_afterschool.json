@@ -107,7 +107,9 @@
         "text": "Não conte a ninguém o que viu hoje. E, por enquanto, trate-me como sempre.",
         "choices": [
             "Todo mundo tem dias assim. Não leva tão a sério.",
-            "O quê? Não vi nada. Minha caneta caiu e entrei para pegar."
+            "O quê? Não vi nada. Minha caneta caiu e entrei para pegar.",
+            "Vou entender até o seu lado fraco.",
+            "Daqui para a frente, vou ficar ao seu lado e cuidar de tudo."
         ]
     },
     "after3_seo_pity_trap_1": {
@@ -277,7 +279,9 @@
         "text": "*Viro o caderno de volta na direção de Yuna.*",
         "choices": [
             "Desculpe. Mas esta história é sobre mim, não é?",
-            "Desculpe. Só vi a primeira página que estava aberta. Não vou ler mais. Mas esta autora escreve muito bem."
+            "Desculpe. Só vi a primeira página que estava aberta. Não vou ler mais. Mas esta autora escreve muito bem.",
+            "Não se preocupe. Vou guardar este caderno para você.",
+            "Daqui para a frente, mostre esse tipo de texto só para mim."
         ]
     },
     "after3_yuna_decode_trap_1": {
@@ -431,7 +435,9 @@
         "text": "*Se senta no banco. A mão que esfrega o joelho fica no mesmo lugar por tempo demais.*",
         "choices": [
             "Eu sabia que você estava se forçando. Desiste do torneio e descansa hoje.",
-            "Então eu fico aqui. Fala quando tiver vontade."
+            "Então eu fico aqui. Fala quando tiver vontade.",
+            "Vou decidir por você para que não se esforce demais.",
+            "Não se preocupe. Daqui para a frente, vou ficar de olho em você."
         ]
     },
     "after3_dain_pity_trap_1": {
@@ -559,7 +565,9 @@
         "text": "*Dain não seca os olhos úmidos. Tampouco acrescenta a risada que costuma vir depois de suas últimas palavras.*",
         "choices": [
             "Desculpa. Mas vou falar.",
-            "Tá. Você mesma conta. Mas eu vou com você até a enfermaria."
+            "Tá. Você mesma conta. Mas eu vou com você até a enfermaria.",
+            "Eu explico tudo ao professor. Você só precisa descansar.",
+            "Se continuar hesitando, é melhor eu contar primeiro."
         ]
     },
     "after3_dain_tell_confirm": {

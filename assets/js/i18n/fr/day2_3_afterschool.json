@@ -1,5 +1,8 @@
 {
-    "hidden_nurse_d2_low": {"name":"Infirmière","text":"*Quand tu ouvres la porte de l'infirmerie, l'infirmière referme le dossier.* Si tu n'as pas besoin de soins, je ne peux pas discuter longtemps pour le moment. Retourne en classe."},
+    "hidden_nurse_d2_low": {
+        "name": "Infirmière",
+        "text": "*Quand tu ouvres la porte de l'infirmerie, l'infirmière referme le dossier.* Si tu n'as pas besoin de soins, je ne peux pas discuter longtemps pour le moment. Retourne en classe."
+    },
     "after2_start": {
         "name": "{name}",
         "text": "*Après les cours. Deux notifications sur mon téléphone.*"
@@ -45,7 +48,9 @@
         "text": "*L'infirmière plie et déplie mon coude pour mesurer la longueur nécessaire.*",
         "choices": [
             "On apprend aussi ce genre de chose à l'hôpital ?",
-            "Vous êtes minutieuse, même pour un simple pansement."
+            "Vous êtes minutieuse, même pour un simple pansement.",
+            "Il n’y a qu’avec moi que vous êtes aussi attentionnée, pas vrai ?",
+            "Je pourrais faire semblant d’être malade pour vous voir plus souvent."
         ]
     },
     "hidden_nurse_d2_choice1_a": {
@@ -69,7 +74,9 @@
         "text": "*Les jointures de la main qui serre la poignée du tiroir ont blanchi.*",
         "choices": [
             "Vous avez beaucoup de secrets. Vous pouvez m'en dire un seul ?",
-            "Oui, j'ai rien vu"
+            "Oui, j'ai rien vu",
+            "Si c’est votre secret, je vous promets de le garder.",
+            "Vous pouvez tout me dire."
         ]
     },
     "hidden_nurse_d2_choice2_a": {
@@ -322,7 +329,9 @@
         "text": "*Une bande orange traverse les stores et coupe en deux la pile de documents. Seoyeon en aligne les coins.*",
         "choices": [
             "C'est un beau coucher de soleil. Je parle de la vue.",
-            "Si tu fais ça tous les jours, tu dois avoir l'habitude."
+            "Si tu fais ça tous les jours, tu dois avoir l'habitude.",
+            "Ne te démène pas toute seule. Tu veux que je termine à ta place ?",
+            "Ça suffit pour aujourd’hui. Tu feras le reste demain."
         ]
     },
     "after2_seo_sunset_joke": {

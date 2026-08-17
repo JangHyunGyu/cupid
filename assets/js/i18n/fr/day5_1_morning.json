@@ -19,7 +19,9 @@
         "text": "*Le matin, dans la salle de classe, je pose mon téléphone pour montrer une photo de mon brouillon à ma professeure principale. L'écran s'allume sur un message de la fille avec qui j'étais hier soir : 'Ce qui s'est passé hier reste entre nous, d'accord ?' La professeure le lit jusqu'au bout et retire sa main du téléphone.* Tu as ignoré mon message hier soir pour retrouver cette fille ?",
         "choices": [
             "Lui raconter ce qui s'est passé hier soir",
-            "Prétendre que ce n'était rien d'important"
+            "Prétendre que ce n'était rien d'important",
+            "Ne lui raconter que les bons côtés pour ne pas la blesser.",
+            "La rassurer pour l’instant et garder les détails pour plus tard."
         ]
     },
     "morning5_caught_nurse_counteroffer": {
@@ -27,7 +29,9 @@
         "text": "*Au moment où je pose mon téléphone sur la table d'examen, l'écran s'allume. Un message de la fille avec qui j'étais hier soir apparaît : 'Ce qui s'est passé hier reste entre nous, d'accord ?' L'infirmière commence à sourire comme d'habitude, puis son expression s'efface lentement.* Alors tu n'as pas raté mon message hier. Tu étais avec cette fille ?",
         "choices": [
             "Lui raconter ce qui s'est passé hier soir",
-            "Prétendre que ce n'était rien d'important"
+            "Prétendre que ce n'était rien d'important",
+            "Ne lui raconter que les bons côtés pour ne pas la blesser.",
+            "La rassurer pour l’instant et garder les détails pour plus tard."
         ]
     },
     "morning5_caught_teacher_honest": {
@@ -54,7 +58,9 @@
         "text": "*Le matin, en classe. À peine ai-je posé mon téléphone devant Seoyeon que l'écran s'allume. Une notification de Dain affiche : « N'oublie pas notre promesse d'hier soir au gymnase. » Le regard de Seoyeon se fige sur l'écran.* Tu n'es pas venu au parc et tu es allé au gymnase ?",
         "choices": [
             "Lui raconter ce qui s'est passé la veille",
-            "Prétendre que ce n'était rien d'important"
+            "Prétendre que ce n'était rien d'important",
+            "Ne lui raconter que les bons côtés pour ne pas la blesser.",
+            "La rassurer pour l’instant et garder les détails pour plus tard."
         ]
     },
     "morning5_caught_seoyeon_by_yuna": {
@@ -62,7 +68,9 @@
         "text": "*Le téléphone vibre sur la table entre Seoyeon et moi. Une notification de Yuna affiche : « Merci d'être resté avec moi hier soir dans l'annexe. » Seoyeon la lit jusqu'au bout, puis relève lentement la tête.* Tu es allé dans l'annexe sans même me répondre ?",
         "choices": [
             "Lui raconter ce qui s'est passé la veille",
-            "Prétendre que ce n'était rien d'important"
+            "Prétendre que ce n'était rien d'important",
+            "Ne lui raconter que les bons côtés pour ne pas la blesser.",
+            "La rassurer pour l’instant et garder les détails pour plus tard."
         ]
     },
     "morning5_caught_dain_by_seoyeon": {
@@ -70,7 +78,9 @@
         "text": "*Le téléphone vibre alors que Dain se tient près de la table. Une notification de Seoyeon affiche : « Je me souviens encore de la main que j'ai tenue hier soir sur le toit. » Le sourire de Dain se fige.* Tu es allé sur le toit pendant que je t'attendais ?",
         "choices": [
             "Lui raconter ce qui s'est passé la veille",
-            "Prétendre que ce n'était rien d'important"
+            "Prétendre que ce n'était rien d'important",
+            "Ne lui raconter que les bons côtés pour ne pas la blesser.",
+            "La rassurer pour l’instant et garder les détails pour plus tard."
         ]
     },
     "morning5_caught_dain_by_yuna": {
@@ -78,7 +88,9 @@
         "text": "*Au moment où Dain tire la chaise d'en face, une notification de Yuna éclaire l'écran. « Merci d'être resté avec moi hier soir dans l'annexe. » La main de Dain s'immobilise sur le dossier.* Tu as lu mon message et tu es allé dans l'annexe ?",
         "choices": [
             "Lui raconter ce qui s'est passé la veille",
-            "Prétendre que ce n'était rien d'important"
+            "Prétendre que ce n'était rien d'important",
+            "Ne lui raconter que les bons côtés pour ne pas la blesser.",
+            "La rassurer pour l’instant et garder les détails pour plus tard."
         ]
     },
     "morning5_caught_yuna_by_seoyeon": {
@@ -86,7 +98,9 @@
         "text": "*Le téléphone vibre sur la table entre Yuna et moi. Une notification de Seoyeon affiche : « Je me souviens encore de la main que j'ai tenue hier soir sur le toit. » Yuna lit chaque mot avant de quitter l'écran des yeux.* Tu as laissé mes messages sans réponse et tu es allé sur le toit.",
         "choices": [
             "Lui raconter ce qui s'est passé la veille",
-            "Prétendre que ce n'était rien d'important"
+            "Prétendre que ce n'était rien d'important",
+            "Ne lui raconter que les bons côtés pour ne pas la blesser.",
+            "La rassurer pour l’instant et garder les détails pour plus tard."
         ]
     },
     "morning5_caught_yuna_by_dain": {
@@ -94,7 +108,9 @@
         "text": "*Alors que Yuna ouvre son livre, une notification de Dain apparaît à l'écran. « N'oublie pas notre promesse d'hier soir au gymnase. » La main de Yuna s'arrête sur la couverture.* Mon nom était encore sur ton écran et tu es quand même resté au gymnase.",
         "choices": [
             "Lui raconter ce qui s'est passé la veille",
-            "Prétendre que ce n'était rien d'important"
+            "Prétendre que ce n'était rien d'important",
+            "Ne lui raconter que les bons côtés pour ne pas la blesser.",
+            "La rassurer pour l’instant et garder les détails pour plus tard."
         ]
     },
     "morning5_caught_seoyeon_honest": {
@@ -262,7 +278,9 @@
         "text": "*Je serre le manuscrit contre moi. Le coin de l'enveloppe appuie contre l'intérieur de mon bras.*",
         "choices": [
             "Après sept ans, ça doit être presque terminé. Je n'ai sans doute rien besoin de noter.",
-            "Je vais d'abord le lire. Je peux écrire dessus ?"
+            "Je vais d'abord le lire. Je peux écrire dessus ?",
+            "Comme je ne suis qu’un élève, je peux sauter les passages trop difficiles, pas vrai ?",
+            "Puisque c’est votre texte, je ne noterai que les bons côtés."
         ]
     },
     "hidden_homeroom_d5_praise_trap_1": {

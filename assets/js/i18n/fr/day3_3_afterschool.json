@@ -107,7 +107,9 @@
         "text": "Garde pour toi ce que tu as vu aujourd'hui. Et pour l'instant, traite-moi comme d'habitude.",
         "choices": [
             "Tout le monde a des jours comme ça. N'y pense pas trop.",
-            "...Tout à l'heure ? J'ai rien vu. J'ai fait tomber mon stylo, je suis venu le ramasser."
+            "...Tout à l'heure ? J'ai rien vu. J'ai fait tomber mon stylo, je suis venu le ramasser.",
+            "Je comprendrai même tes faiblesses.",
+            "Désormais, je resterai à tes côtés et je m’occuperai de tout."
         ]
     },
     "after3_seo_pity_trap_1": {
@@ -277,7 +279,9 @@
         "text": "*Je retourne le carnet vers Yuna.*",
         "choices": [
             "Pardon. Mais ça parle bien de moi, non ?",
-            "Pardon. Je n'ai vu que la première page ouverte. Je ne lirai pas plus loin. Mais l'auteur écrit vraiment bien."
+            "Pardon. Je n'ai vu que la première page ouverte. Je ne lirai pas plus loin. Mais l'auteur écrit vraiment bien.",
+            "Ne t’inquiète pas. Je vais garder ce carnet à ta place.",
+            "Désormais, ne montre ce genre de texte qu’à moi."
         ]
     },
     "after3_yuna_decode_trap_1": {
@@ -431,7 +435,9 @@
         "text": "*Elle s’assoit sur le banc. Sa main reste à frotter longtemps le même endroit du genou.*",
         "choices": [
             "Je savais que tu forçais. Renonce au tournoi et repose-toi aujourd'hui.",
-            "Alors je reste là. Tu parleras quand tu seras prête."
+            "Alors je reste là. Tu parleras quand tu seras prête.",
+            "Je déciderai à ta place pour t’empêcher d’en faire trop.",
+            "Ne t’inquiète pas. Désormais, je vais toujours te surveiller."
         ]
     },
     "after3_dain_pity_trap_1": {
@@ -559,7 +565,9 @@
         "text": "*Dain n'essuie pas le coin humide de ses yeux. Cette fois, aucun rire ne vient après ses derniers mots.*",
         "choices": [
             "Désolé. Mais je vais le dire.",
-            "D’accord. Dis-le toi-même. Mais je t’accompagnerai à l’infirmerie."
+            "D’accord. Dis-le toi-même. Mais je t’accompagnerai à l’infirmerie.",
+            "Je vais tout expliquer au professeur. Toi, contente-toi de te reposer.",
+            "Si tu hésites, il vaut mieux que je le dise en premier."
         ]
     },
     "after3_dain_tell_confirm": {

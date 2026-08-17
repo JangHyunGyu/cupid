@@ -129,7 +129,9 @@
         "text": "*Está estendendo a omelete enrolada.*",
         "choices": [
             "Abrir a boca",
-            "Fica mais gostoso se você mesma comer"
+            "Fica mais gostoso se você mesma comer",
+            "Já que você teve todo esse trabalho, vou comer só uma mordida.",
+            "Desse jeito, posso pedir que faça meu almoço daqui para a frente."
         ]
     },
     "lunch_seo_c1_1": {
@@ -434,7 +436,9 @@
         "text": "*Yuna ainda está alguns passos à frente. Pego o livro que ela deixou e corro atrás dela.*",
         "choices": [
             "Esse livro é bom? Vou ler também",
-            "Parece que você gosta mesmo é de ficar quieta, só lendo."
+            "Parece que você gosta mesmo é de ficar quieta, só lendo.",
+            "Eu consigo ser mais interessante que esse livro.",
+            "Como você é tão quieta, deve ser fácil andar com você."
         ]
     },
     "lunch_yuna_c1_1": {

@@ -36,7 +36,9 @@
         "text": "*My grip tightens around the phone.*",
         "choices": [
             "I ate on the rooftop with the president. (Honest)",
-            "I was just wandering around alone. (Lie)"
+            "I was just wandering around alone. (Lie)",
+            "If I’d known you’d look for me like that, I would’ve asked you to eat with us.",
+            "If I’d known you’d get jealous, I would’ve told you first."
         ]
     },
     "after1_jealousy_seo_honest": {
@@ -280,7 +282,9 @@
         "text": "*The corner of the attendance book rests against the desk.*",
         "choices": [
             "If you're worried, you can just say so.",
-            "Then I'll expect juice next time too."
+            "Then I'll expect juice next time too.",
+            "Could you take care of only me like this from now on?",
+            "If you’re that worried, take me home today."
         ]
     },
     "after_homeroom_honest_choice2a": {

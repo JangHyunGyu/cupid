@@ -1,9 +1,24 @@
 {
-    "hidden_homeroom_d3_low": {"name":"Klassenlehrerin","text":"*An der Tür zum leeren Klassenzimmer bleibt deine Klassenlehrerin stehen und weist den Flur entlang statt zu den Tischen.* Heute bleiben wir beim Unterricht."},
-    "hidden_nurse_d3_low": {"name":"Schulkrankenschwester","text":"*Die Schulkrankenschwester bleibt an der Tür stehen, ohne den Stuhl für Beratungsgespräche hervorzuholen.* Ich denke nicht, dass wir dieses Gespräch gerade allein fortsetzen sollten. Wenn du etwas brauchst, komm während der offiziellen Beratungszeiten."},
-    "morning3_date_seo_low": {"name":"Seoyeon","text":"*Seoyeon schaltet ihr Handy ein und gleich wieder aus. Als sich eure Blicke treffen, senkt sie den Blick auf ihr Klemmbrett.* Den Plan fürs Wochenende stelle ich in den Gruppenchat."},
-    "morning3_date_dain_low": {"name":"Dain","text":"*Dain klemmt einen Volleyball an ihre Seite, wirft dir einen Blick zu und sieht dann wieder zum Spielfeld.* Dieses Wochenende trainiere ich allein."},
-    "morning3_date_yuna_low": {"name":"Yuna","text":"*Yuna will einen gefalteten Zettel hervorholen, schiebt ihn dann aber wieder zwischen die Seiten ihres Buches.* Dieses Wochenende ... bin ich lieber allein."},
+    "hidden_homeroom_d3_low": {
+        "name": "Klassenlehrerin",
+        "text": "*An der Tür zum leeren Klassenzimmer bleibt deine Klassenlehrerin stehen und weist den Flur entlang statt zu den Tischen.* Heute bleiben wir beim Unterricht."
+    },
+    "hidden_nurse_d3_low": {
+        "name": "Schulkrankenschwester",
+        "text": "*Die Schulkrankenschwester bleibt an der Tür stehen, ohne den Stuhl für Beratungsgespräche hervorzuholen.* Ich denke nicht, dass wir dieses Gespräch gerade allein fortsetzen sollten. Wenn du etwas brauchst, komm während der offiziellen Beratungszeiten."
+    },
+    "morning3_date_seo_low": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon schaltet ihr Handy ein und gleich wieder aus. Als sich eure Blicke treffen, senkt sie den Blick auf ihr Klemmbrett.* Den Plan fürs Wochenende stelle ich in den Gruppenchat."
+    },
+    "morning3_date_dain_low": {
+        "name": "Dain",
+        "text": "*Dain klemmt einen Volleyball an ihre Seite, wirft dir einen Blick zu und sieht dann wieder zum Spielfeld.* Dieses Wochenende trainiere ich allein."
+    },
+    "morning3_date_yuna_low": {
+        "name": "Yuna",
+        "text": "*Yuna will einen gefalteten Zettel hervorholen, schiebt ihn dann aber wieder zwischen die Seiten ihres Buches.* Dieses Wochenende ... bin ich lieber allein."
+    },
     "morning3_start": {
         "name": "{name}",
         "text": "*Dritter Tag. Ich habe verschlafen und den Wecker gleich dreimal ausgeschaltet. Gestern Nacht war ich zu lange mit den Nachrichten beschäftigt.*"
@@ -270,7 +285,9 @@
         "text": "*Es ist Manuskriptpapier. Die Lehrerin bedeckt den Rand des Blattes mit ihrer Handfläche.*",
         "choices": [
             "Ich habe das Manuskriptpapier gesehen. Schreiben Sie einen Roman?",
-            "Entschuldigung, ich hab nichts gesehen."
+            "Entschuldigung, ich hab nichts gesehen.",
+            "Lassen Sie mich den Text als Ersten lesen, wenn er fertig ist.",
+            "Ich lese ihn und zeige Ihnen zuerst, was Sie verbessern müssen."
         ]
     },
     "hidden_homeroom_d3_reveal_1": {
@@ -705,7 +722,9 @@
         "text": "*Seoyeon fragt vor der Klassenzimmertür. Dain hört auf, den Deckel ihrer Flasche zu drehen.*",
         "choices": [
             "Ja. Wohin?",
-            "Ich glaube, ich bin etwas beschäftigt"
+            "Ich glaube, ich bin etwas beschäftigt",
+            "Wenn die Schülersprecherin darum bittet, nehme ich mir natürlich Zeit.",
+            "Ich halte mir die Zeit frei, wenn sonst niemand kommt."
         ]
     },
     "morning3_date_seo_accept": {
@@ -737,7 +756,9 @@
         "text": "*Seoyeons Schritte verstummen. Dain wartet auf meine Antwort.*",
         "choices": [
             "Klar, abgemacht",
-            "Dieses Wochenende wird schwierig."
+            "Dieses Wochenende wird schwierig.",
+            "Wenn du schon so sehr darum bittest, komme ich mit.",
+            "Wenn du für Spaß sorgst, bin ich dabei."
         ]
     },
     "morning3_date_dain_accept": {
@@ -773,7 +794,9 @@
         "text": "*Während ich den Zettel lese, sieht Yuna erst Seoyeon und dann Dain an. Diesmal versteckt sie ihr Gesicht nicht hinter einem Buch.*",
         "choices": [
             "Auf die Rückseite »Ich komme« schreiben",
-            "Auf die Rückseite »Dieses Wochenende kann ich nicht« schreiben"
+            "Auf die Rückseite »Dieses Wochenende kann ich nicht« schreiben",
+            "Auf den Zettel schreiben: „Wenn du nicht allein gehen willst, komme ich mit.“",
+            "Auf den Zettel schreiben: „Ich komme, wenn wir es vor allen anderen geheim halten.“"
         ]
     },
     "morning3_date_yuna_accept": {

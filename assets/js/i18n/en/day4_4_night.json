@@ -17,7 +17,9 @@
         "text": "*As I leave school after parting with my homeroom teacher, Seoyeon is waiting by the rooftop stairs. She's smiling, but her grip tightens around her uniform sleeve.* You've only had eyes for the teacher lately. Just tonight, can't you look at me—not the student council president or the model student, just me?",
         "choices": [
             "Keep my promise to my homeroom teacher and leave",
-            "Follow Seoyeon to the rooftop and take her hand"
+            "Follow Seoyeon to the rooftop and take her hand",
+            "I can meet both of them for a little while so neither feels hurt.",
+            "I’ll keep the promise I made first and give the other person a good excuse."
         ]
     },
     "day4_teacher_dain_counteroffer": {
@@ -25,7 +27,9 @@
         "text": "*After promising my homeroom teacher I'd message when I arrived, I pass the gym. Dain leans against the dark emergency door, picking at the tape on her knee.* You only go to the teacher these days. Return ten serves for me. When we're done... hold me tonight.",
         "choices": [
             "Message my homeroom teacher that I'm coming back",
-            "Enter the gym and accept Dain's request"
+            "Enter the gym and accept Dain's request",
+            "I can meet both of them for a little while so neither feels hurt.",
+            "I’ll keep the promise I made first and give the other person a good excuse."
         ]
     },
     "day4_teacher_yuna_counteroffer": {
@@ -33,7 +37,9 @@
         "text": "*Right after I part with my homeroom teacher, Yuna sends a photo of the annex. Two empty chairs sit side by side, her jacket draped over one.* I guess you're more comfortable beside the teacher. But if you leave tonight, I think I'll feel abandoned all over again.",
         "choices": [
             "Reply to my homeroom teacher and go home",
-            "Go to the annex and stay with Yuna"
+            "Go to the annex and stay with Yuna",
+            "I can meet both of them for a little while so neither feels hurt.",
+            "I’ll keep the promise I made first and give the other person a good excuse."
         ]
     },
     "day4_nurse_seoyeon_counteroffer": {
@@ -41,7 +47,9 @@
         "text": "*On my way from the nurse's office to the front gate, Seoyeon blocks the rooftop stairs. Her lips force a smile while her fingers crumple her uniform sleeve.* You only visit the school nurse lately. Just tonight, can't you look at me—not the student council president or the model student, just me?",
         "choices": [
             "Reply to the school nurse and leave",
-            "Follow Seoyeon to the rooftop and take her hand"
+            "Follow Seoyeon to the rooftop and take her hand",
+            "I can meet both of them for a little while so neither feels hurt.",
+            "I’ll keep the promise I made first and give the other person a good excuse."
         ]
     },
     "day4_nurse_dain_counteroffer": {
@@ -49,7 +57,9 @@
         "text": "*When I close the nurse's office door behind me, Dain is standing by the gym's emergency exit. She peels the tape from her knee and presses it back down without meeting my eyes.* You only go to the school nurse these days. Return ten serves for me. When we're done... hold me tonight.",
         "choices": [
             "Message the school nurse that I'm coming back",
-            "Enter the gym and accept Dain's request"
+            "Enter the gym and accept Dain's request",
+            "I can meet both of them for a little while so neither feels hurt.",
+            "I’ll keep the promise I made first and give the other person a good excuse."
         ]
     },
     "day4_nurse_yuna_counteroffer": {
@@ -57,7 +67,9 @@
         "text": "*After I leave the nurse's office, Yuna sends a photo of the annex. Her jacket rests on one of two empty chairs.* I guess you're more comfortable beside the nurse. But if you leave tonight, I think I'll feel abandoned all over again.",
         "choices": [
             "Reply to the school nurse and go home",
-            "Go to the annex and stay with Yuna"
+            "Go to the annex and stay with Yuna",
+            "I can meet both of them for a little while so neither feels hurt.",
+            "I’ll keep the promise I made first and give the other person a good excuse."
         ]
     },
     "day4_adult_counteroffer_accept_seoyeon": {
@@ -199,7 +211,9 @@
         "text": "*Smeared makeup remains on the back of her hand, and Seoyeon's shoulders lift in short motions with every breath.*",
         "choices": [
             "Hold her",
-            "Hold out a hand"
+            "Hold out a hand",
+            "It’s okay to cry. I’ll fix everything.",
+            "From now on, I’ll make sure nothing can hurt you."
         ]
     },
     "wall_seo_hug_1": {
@@ -321,7 +335,9 @@
         "text": "Just return ten. When we're done... hug me, okay? I can't keep pretending I'm fine by myself tonight.",
         "choices": [
             "Keep the promise and go to Seoyeon at the park",
-            "Enter the gym and stay with Dain"
+            "Enter the gym and stay with Dain",
+            "I can meet both of them for a little while so neither feels hurt.",
+            "I’ll keep the promise I made first and give the other person a good excuse."
         ]
     },
     "wall_seo_glimpse_4": {
@@ -337,7 +353,9 @@
         "text": "Someone who once noticed me disappeared without a word. If you leave tonight, it feels like that day will happen all over again. Just for tonight, stay here.",
         "choices": [
             "Reply to Seoyeon and continue to the park",
-            "Go to the annex and stay beside Yuna"
+            "Go to the annex and stay beside Yuna",
+            "I can meet both of them for a little while so neither feels hurt.",
+            "I’ll keep the promise I made first and give the other person a good excuse."
         ]
     },
     "wall_seo_yuna_tempt_accept": {
@@ -667,7 +685,9 @@
         "text": "Someone who once noticed me disappeared without a word. If I'm alone again tonight, I think I'll go back to that day. I don't care that you were with Dain. I need you to come now.",
         "choices": [
             "Reply to Dain and continue to the gym",
-            "Go back to the school gate and stay with Yuna"
+            "Go back to the school gate and stay with Yuna",
+            "I can meet both of them for a little while so neither feels hurt.",
+            "I’ll keep the promise I made first and give the other person a good excuse."
         ]
     },
     "wall_dain_seo_tempt_1": {
@@ -679,7 +699,9 @@
         "text": "When I go home tonight, I'll have to put my smile back on first. Just for tonight, let me be Seoyeon instead of the student council president. Come upstairs, and I won't let go of your hand.",
         "choices": [
             "Reply to Dain and continue to the gym",
-            "Follow Seoyeon to the roof and take her hand"
+            "Follow Seoyeon to the roof and take her hand",
+            "I can meet both of them for a little while so neither feels hurt.",
+            "I’ll keep the promise I made first and give the other person a good excuse."
         ]
     },
     "wall_dain_seo_tempt_accept": {
@@ -893,7 +915,9 @@
         "text": "When I go home tonight, I'll have to put my smile back on first. Just for tonight, let me be Seoyeon instead of the student council president. Come upstairs, and I won't let go of your hand.",
         "choices": [
             "Reply to Yuna and continue to the school back gate",
-            "Follow Seoyeon to the roof and take her hand"
+            "Follow Seoyeon to the roof and take her hand",
+            "I can meet both of them for a little while so neither feels hurt.",
+            "I’ll keep the promise I made first and give the other person a good excuse."
         ]
     },
     "wall_yuna_glimpse_4": {
@@ -909,7 +933,9 @@
         "text": "Just return ten. When we're done... hug me, okay? I can't keep pretending I'm fine by myself tonight.",
         "choices": [
             "Reply to Yuna and continue to the school back gate",
-            "Enter the gym and stay with Dain"
+            "Enter the gym and stay with Dain",
+            "I can meet both of them for a little while so neither feels hurt.",
+            "I’ll keep the promise I made first and give the other person a good excuse."
         ]
     },
     "wall_yuna_dain_tempt_accept": {

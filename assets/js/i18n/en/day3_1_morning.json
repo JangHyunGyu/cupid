@@ -1,9 +1,24 @@
 {
-    "hidden_homeroom_d3_low": {"name":"Homeroom Teacher","text":"*At the empty classroom door, your homeroom teacher stops and points down the hall instead of toward the desks.* Let's keep it to classwork today."},
-    "hidden_nurse_d3_low": {"name":"School Nurse","text":"*The school nurse stays by the door without pulling out the counseling chair.* I don't think we should continue this conversation alone right now. If you need something, come during official counseling hours."},
-    "morning3_date_seo_low": {"name":"Seoyeon","text":"*Seoyeon turns on her phone, then immediately switches it off. When your eyes meet, she looks down at her clipboard.* I'll post the weekend schedule in the group chat."},
-    "morning3_date_dain_low": {"name":"Dain","text":"*Dain holds a volleyball against her side, glances your way, then looks back toward the court.* I'm practicing alone this weekend."},
-    "morning3_date_yuna_low": {"name":"Yuna","text":"*Yuna starts to pull out a folded note, then slips it back between the pages of her book.* This weekend... I think I'd rather be alone."},
+    "hidden_homeroom_d3_low": {
+        "name": "Homeroom Teacher",
+        "text": "*At the empty classroom door, your homeroom teacher stops and points down the hall instead of toward the desks.* Let's keep it to classwork today."
+    },
+    "hidden_nurse_d3_low": {
+        "name": "School Nurse",
+        "text": "*The school nurse stays by the door without pulling out the counseling chair.* I don't think we should continue this conversation alone right now. If you need something, come during official counseling hours."
+    },
+    "morning3_date_seo_low": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon turns on her phone, then immediately switches it off. When your eyes meet, she looks down at her clipboard.* I'll post the weekend schedule in the group chat."
+    },
+    "morning3_date_dain_low": {
+        "name": "Dain",
+        "text": "*Dain holds a volleyball against her side, glances your way, then looks back toward the court.* I'm practicing alone this weekend."
+    },
+    "morning3_date_yuna_low": {
+        "name": "Yuna",
+        "text": "*Yuna starts to pull out a folded note, then slips it back between the pages of her book.* This weekend... I think I'd rather be alone."
+    },
     "morning3_start": {
         "name": "{name}",
         "text": "*Day three. I overslept and shut off my alarm three times. I stayed up too late reading messages last night.*"
@@ -270,7 +285,9 @@
         "text": "*It's manuscript paper. She covers the edge with her palm.*",
         "choices": [
             "I saw the manuscript paper. Are you writing a novel?",
-            "Sorry, I didn't see anything."
+            "Sorry, I didn't see anything.",
+            "Let me be the first to read it when it’s finished.",
+            "I’ll read it and point out what needs fixing first."
         ]
     },
     "hidden_homeroom_d3_reveal_1": {
@@ -705,7 +722,9 @@
         "text": "*Seoyeon asks from the classroom doorway. The cap on Dain's water bottle stops turning.*",
         "choices": [
             "Sure. Where?",
-            "I might be kind of busy."
+            "I might be kind of busy.",
+            "You’re the student council president. Of course I’ll make time for you.",
+            "I’ll clear my schedule if no one else is coming."
         ]
     },
     "morning3_date_seo_accept": {
@@ -737,7 +756,9 @@
         "text": "*Seoyeon's footsteps stop. Dain waits for my answer.*",
         "choices": [
             "Sure, let's do it",
-            "This weekend might be tough."
+            "This weekend might be tough.",
+            "Since you’re asking that hard, I’ll go.",
+            "Make it fun, and you’ve got a deal."
         ]
     },
     "morning3_date_dain_accept": {
@@ -773,7 +794,9 @@
         "text": "*While I read the note, Yuna looks from Seoyeon to Dain. This time, she doesn't hide behind her book.*",
         "choices": [
             "Write “I'll go” on the back of the note",
-            "Write “I can't this weekend” on the back of the note"
+            "Write “I can't this weekend” on the back of the note",
+            "Write on the note, “If you don’t want to go alone, I’ll come with you.”",
+            "Write on the note, “I’ll go if we keep it secret from everyone else.”"
         ]
     },
     "morning3_date_yuna_accept": {

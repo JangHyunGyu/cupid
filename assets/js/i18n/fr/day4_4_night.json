@@ -17,7 +17,9 @@
         "text": "*Alors que je quitte l'école après avoir salué ma professeure principale, Seoyeon m'attend près de l'escalier du toit. Elle sourit, mais ses doigts serrent la manche de son uniforme.* Ces derniers temps, tu n'as d'yeux que pour la prof. Rien que ce soir, tu ne peux pas regarder la fille que je suis, sans voir la présidente du conseil ni l'élève modèle ?",
         "choices": [
             "Tenir ma promesse envers ma professeure principale et partir",
-            "Suivre Seoyeon sur le toit et lui prendre la main"
+            "Suivre Seoyeon sur le toit et lui prendre la main",
+            "Je peux les voir toutes les deux un moment pour que personne ne soit déçu.",
+            "Je vais tenir ma première promesse et donner une bonne excuse à l’autre."
         ]
     },
     "day4_teacher_dain_counteroffer": {
@@ -25,7 +27,9 @@
         "text": "*Après avoir promis à ma professeure principale de lui écrire en arrivant, je passe devant le gymnase. Dain est adossée à la sortie de secours plongée dans le noir et tripote le bandage de son genou.* Tu ne vas plus voir que la prof. Renvoie-moi dix services. Après... serre-moi dans tes bras, ce soir.",
         "choices": [
             "Écrire à ma professeure principale que je reviens",
-            "Entrer dans le gymnase et accepter la demande de Dain"
+            "Entrer dans le gymnase et accepter la demande de Dain",
+            "Je peux les voir toutes les deux un moment pour que personne ne soit déçu.",
+            "Je vais tenir ma première promesse et donner une bonne excuse à l’autre."
         ]
     },
     "day4_teacher_yuna_counteroffer": {
@@ -33,7 +37,9 @@
         "text": "*Juste après avoir quitté ma professeure principale, je reçois une photo de l'annexe envoyée par Yuna. Deux chaises vides sont côte à côte, sa veste posée sur l'une d'elles.* On dirait que tu es mieux auprès de la prof. Mais si tu pars ce soir, j'aurai encore l'impression qu'on m'abandonne.",
         "choices": [
             "Répondre à ma professeure principale et rentrer",
-            "Aller à l'annexe et rester avec Yuna"
+            "Aller à l'annexe et rester avec Yuna",
+            "Je peux les voir toutes les deux un moment pour que personne ne soit déçu.",
+            "Je vais tenir ma première promesse et donner une bonne excuse à l’autre."
         ]
     },
     "day4_nurse_seoyeon_counteroffer": {
@@ -41,7 +47,9 @@
         "text": "*En allant de l'infirmerie au portail, je trouve Seoyeon devant l'escalier du toit. Ses lèvres forcent un sourire tandis que ses doigts froissent la manche de son uniforme.* Ces derniers temps, tu ne vas plus voir que l'infirmière. Rien que ce soir, tu ne peux pas regarder la fille que je suis, sans voir la présidente du conseil ni l'élève modèle ?",
         "choices": [
             "Répondre à l'infirmière et partir",
-            "Suivre Seoyeon sur le toit et lui prendre la main"
+            "Suivre Seoyeon sur le toit et lui prendre la main",
+            "Je peux les voir toutes les deux un moment pour que personne ne soit déçu.",
+            "Je vais tenir ma première promesse et donner une bonne excuse à l’autre."
         ]
     },
     "day4_nurse_dain_counteroffer": {
@@ -49,7 +57,9 @@
         "text": "*En refermant la porte de l'infirmerie, je trouve Dain près de la sortie de secours du gymnase. Elle décolle puis remet le bandage de son genou sans croiser mon regard.* Tu ne vas plus voir que l'infirmière. Renvoie-moi dix services. Après... serre-moi dans tes bras, ce soir.",
         "choices": [
             "Écrire à l'infirmière que je reviens",
-            "Entrer dans le gymnase et accepter la demande de Dain"
+            "Entrer dans le gymnase et accepter la demande de Dain",
+            "Je peux les voir toutes les deux un moment pour que personne ne soit déçu.",
+            "Je vais tenir ma première promesse et donner une bonne excuse à l’autre."
         ]
     },
     "day4_nurse_yuna_counteroffer": {
@@ -57,7 +67,9 @@
         "text": "*Après avoir quitté l'infirmerie, je reçois une photo de l'annexe envoyée par Yuna. Sa veste est posée sur l'une des deux chaises vides.* On dirait que tu es mieux auprès de l'infirmière. Mais si tu pars ce soir, j'aurai encore l'impression qu'on m'abandonne.",
         "choices": [
             "Répondre à l'infirmière et rentrer",
-            "Aller à l'annexe et rester avec Yuna"
+            "Aller à l'annexe et rester avec Yuna",
+            "Je peux les voir toutes les deux un moment pour que personne ne soit déçu.",
+            "Je vais tenir ma première promesse et donner une bonne excuse à l’autre."
         ]
     },
     "day4_adult_counteroffer_accept_seoyeon": {
@@ -199,7 +211,9 @@
         "text": "*La trace de maquillage reste sur le dos de sa main et les épaules de Seoyeon se soulèvent brièvement à chaque respiration.*",
         "choices": [
             "La prendre dans mes bras",
-            "Lui tendre la main"
+            "Lui tendre la main",
+            "Tu peux pleurer. Je vais tout arranger.",
+            "Désormais, je ferai en sorte que plus rien ne puisse te faire souffrir."
         ]
     },
     "wall_seo_hug_1": {
@@ -321,7 +335,9 @@
         "text": "Dix passes, c'est tout. Après... serre-moi un peu dans tes bras. Ce soir, je n'arrive plus à faire semblant d'aller bien toute seule.",
         "choices": [
             "Tenir ma promesse et rejoindre Seoyeon au parc",
-            "Entrer dans le gymnase et rester avec Dain"
+            "Entrer dans le gymnase et rester avec Dain",
+            "Je peux les voir toutes les deux un moment pour que personne ne soit déçu.",
+            "Je vais tenir ma première promesse et donner une bonne excuse à l’autre."
         ]
     },
     "wall_seo_glimpse_4": {
@@ -337,7 +353,9 @@
         "text": "Quelqu'un qui me voyait vraiment a disparu sans un mot. Si tu pars toi aussi ce soir, j'aurai l'impression de revivre ce jour-là. Rien que ce soir, reste ici.",
         "choices": [
             "Répondre à Seoyeon et continuer vers le parc",
-            "Aller à l'annexe et rester auprès de Yuna"
+            "Aller à l'annexe et rester auprès de Yuna",
+            "Je peux les voir toutes les deux un moment pour que personne ne soit déçu.",
+            "Je vais tenir ma première promesse et donner une bonne excuse à l’autre."
         ]
     },
     "wall_seo_yuna_tempt_accept": {
@@ -667,7 +685,9 @@
         "text": "Quelqu'un qui me voyait vraiment a disparu sans un mot. Si je reste seule encore ce soir, j'aurai l'impression de revenir à ce jour-là. Peu importe que tu aies été avec Dain. J'ai besoin que tu viennes maintenant.",
         "choices": [
             "Répondre à Dain et continuer vers le gymnase",
-            "Retourner à la porte arrière et rester avec Yuna"
+            "Retourner à la porte arrière et rester avec Yuna",
+            "Je peux les voir toutes les deux un moment pour que personne ne soit déçu.",
+            "Je vais tenir ma première promesse et donner une bonne excuse à l’autre."
         ]
     },
     "wall_dain_seo_tempt_1": {
@@ -679,7 +699,9 @@
         "text": "Quand je rentrerai, il faudra d'abord que je remette mon sourire. Rien que ce soir, laisse-moi être Seoyeon au lieu de la présidente du conseil. Monte avec moi et je ne lâcherai pas ta main.",
         "choices": [
             "Répondre à Dain et continuer vers le gymnase",
-            "Monter sur le toit avec Seoyeon et prendre sa main"
+            "Monter sur le toit avec Seoyeon et prendre sa main",
+            "Je peux les voir toutes les deux un moment pour que personne ne soit déçu.",
+            "Je vais tenir ma première promesse et donner une bonne excuse à l’autre."
         ]
     },
     "wall_dain_seo_tempt_accept": {
@@ -893,7 +915,9 @@
         "text": "Quand je rentrerai, il faudra d'abord que je remette mon sourire. Rien que ce soir, laisse-moi être Seoyeon au lieu de la présidente du conseil. Monte avec moi et je ne lâcherai pas ta main.",
         "choices": [
             "Répondre à Yuna et continuer vers la grille arrière",
-            "Monter sur le toit avec Seoyeon et prendre sa main"
+            "Monter sur le toit avec Seoyeon et prendre sa main",
+            "Je peux les voir toutes les deux un moment pour que personne ne soit déçu.",
+            "Je vais tenir ma première promesse et donner une bonne excuse à l’autre."
         ]
     },
     "wall_yuna_glimpse_4": {
@@ -909,7 +933,9 @@
         "text": "Dix passes, c'est tout. Après... serre-moi un peu dans tes bras. Ce soir, je n'arrive plus à faire semblant d'aller bien toute seule.",
         "choices": [
             "Répondre à Yuna et continuer vers la grille arrière",
-            "Entrer dans le gymnase et rester avec Dain"
+            "Entrer dans le gymnase et rester avec Dain",
+            "Je peux les voir toutes les deux un moment pour que personne ne soit déçu.",
+            "Je vais tenir ma première promesse et donner une bonne excuse à l’autre."
         ]
     },
     "wall_yuna_dain_tempt_accept": {

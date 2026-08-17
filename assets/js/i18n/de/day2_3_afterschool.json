@@ -1,5 +1,8 @@
 {
-    "hidden_nurse_d2_low": {"name":"Schulkrankenschwester","text":"*Als du die Tür zum Krankenzimmer öffnest, klappt die Schulkrankenschwester die Akte zu.* Wenn du keine Behandlung brauchst, kann ich gerade nicht lange mit dir reden. Geh zurück in den Unterricht."},
+    "hidden_nurse_d2_low": {
+        "name": "Schulkrankenschwester",
+        "text": "*Als du die Tür zum Krankenzimmer öffnest, klappt die Schulkrankenschwester die Akte zu.* Wenn du keine Behandlung brauchst, kann ich gerade nicht lange mit dir reden. Geh zurück in den Unterricht."
+    },
     "after2_start": {
         "name": "{name}",
         "text": "*Nach der Schule. Auf meinem Handy warten zwei Benachrichtigungen.*"
@@ -45,7 +48,9 @@
         "text": "*Die Krankenschwester beugt und streckt meinen Ellbogen und schätzt dabei die nötige Pflasterlänge ab.*",
         "choices": [
             "Lernt man so etwas auch im Krankenhaus?",
-            "Sie sind sogar bei einem Pflaster gründlich."
+            "Sie sind sogar bei einem Pflaster gründlich.",
+            "Nur bei mir geben Sie sich so viel Mühe, oder?",
+            "Ich könnte so tun, als wäre ich krank, um Sie öfter zu sehen."
         ]
     },
     "hidden_nurse_d2_choice1_a": {
@@ -69,7 +74,9 @@
         "text": "*Die Knöchel der Hand am Schubladengriff sind weiß.*",
         "choices": [
             "Sie haben viele Geheimnisse. Können Sie mir nicht eins verraten?",
-            "Ja, ich hab nichts gesehen"
+            "Ja, ich hab nichts gesehen",
+            "Wenn es Ihr Geheimnis ist, bewahre ich es ganz bestimmt.",
+            "Mir können Sie alles erzählen."
         ]
     },
     "hidden_nurse_d2_choice2_a": {
@@ -322,7 +329,9 @@
         "text": "*Ein orangefarbener Lichtstreifen fällt durch den Spalt der Jalousie und teilt die Unterlagen. Seoyeon richtet die Ecken der Blätter sauber aneinander aus.*",
         "choices": [
             "Der Sonnenuntergang ist schön. Ich meine den da draußen.",
-            "Wenn du das jeden Tag machst, bist du es bestimmt gewohnt."
+            "Wenn du das jeden Tag machst, bist du es bestimmt gewohnt.",
+            "Müh dich nicht allein ab. Soll ich es für dich fertig machen?",
+            "Das reicht. Den Rest machst du morgen."
         ]
     },
     "after2_seo_sunset_joke": {

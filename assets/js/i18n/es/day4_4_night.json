@@ -17,7 +17,9 @@
         "text": "*Cuando voy a salir del colegio tras despedirme de la profesora, Seoyeon espera junto a las escaleras de la azotea. Sonríe, pero aprieta con fuerza la manga del uniforme.* Últimamente solo tienes ojos para la profesora. Por una noche, ¿no puedes mirarme a mí, sin pensar en la presidenta del consejo ni en la alumna modelo?",
         "choices": [
             "Cumplir la promesa hecha a la profesora e irme",
-            "Seguir a Seoyeon a la azotea y tomarle la mano"
+            "Seguir a Seoyeon a la azotea y tomarle la mano",
+            "Puedo ver a las dos un rato para que ninguna se sienta mal.",
+            "Cumpliré la primera promesa y le daré una buena excusa a la otra."
         ]
     },
     "day4_teacher_dain_counteroffer": {
@@ -25,7 +27,9 @@
         "text": "*Después de prometerle a la profesora que le escribiré al llegar, paso frente al gimnasio. Dain está apoyada en la salida de emergencia a oscuras, jugueteando con la cinta de su rodilla.* Últimamente solo vas con la profesora. Devuélveme diez saques. Cuando terminemos... abrázame esta noche.",
         "choices": [
             "Escribirle a la profesora que voy a volver",
-            "Entrar al gimnasio y aceptar la petición de Dain"
+            "Entrar al gimnasio y aceptar la petición de Dain",
+            "Puedo ver a las dos un rato para que ninguna se sienta mal.",
+            "Cumpliré la primera promesa y le daré una buena excusa a la otra."
         ]
     },
     "day4_teacher_yuna_counteroffer": {
@@ -33,7 +37,9 @@
         "text": "*Justo después de despedirme de la profesora, Yuna envía una foto del anexo. Hay dos sillas vacías juntas y su chaqueta cuelga de una de ellas.* Supongo que estás más a gusto al lado de la profesora. Pero si te vas esta noche, volveré a sentir que me dejan sola.",
         "choices": [
             "Responderle a la profesora y volver a casa",
-            "Ir al anexo y quedarme con Yuna"
+            "Ir al anexo y quedarme con Yuna",
+            "Puedo ver a las dos un rato para que ninguna se sienta mal.",
+            "Cumpliré la primera promesa y le daré una buena excusa a la otra."
         ]
     },
     "day4_nurse_seoyeon_counteroffer": {
@@ -41,7 +47,9 @@
         "text": "*De camino de la enfermería a la entrada, Seoyeon me corta el paso junto a las escaleras de la azotea. Fuerza una sonrisa mientras sus dedos arrugan la manga del uniforme.* Últimamente solo visitas a la enfermera. Por una noche, ¿no puedes mirarme a mí, sin pensar en la presidenta del consejo ni en la alumna modelo?",
         "choices": [
             "Responderle a la enfermera e irme",
-            "Seguir a Seoyeon a la azotea y tomarle la mano"
+            "Seguir a Seoyeon a la azotea y tomarle la mano",
+            "Puedo ver a las dos un rato para que ninguna se sienta mal.",
+            "Cumpliré la primera promesa y le daré una buena excusa a la otra."
         ]
     },
     "day4_nurse_dain_counteroffer": {
@@ -49,7 +57,9 @@
         "text": "*Al cerrar la puerta de la enfermería, encuentro a Dain junto a la salida de emergencia del gimnasio. Despega y vuelve a pegar la cinta de su rodilla sin mirarme.* Últimamente solo vas con la enfermera. Devuélveme diez saques. Cuando terminemos... abrázame esta noche.",
         "choices": [
             "Escribirle a la enfermera que voy a volver",
-            "Entrar al gimnasio y aceptar la petición de Dain"
+            "Entrar al gimnasio y aceptar la petición de Dain",
+            "Puedo ver a las dos un rato para que ninguna se sienta mal.",
+            "Cumpliré la primera promesa y le daré una buena excusa a la otra."
         ]
     },
     "day4_nurse_yuna_counteroffer": {
@@ -57,7 +67,9 @@
         "text": "*Después de salir de la enfermería, Yuna envía una foto del anexo. Su chaqueta descansa sobre una de las dos sillas vacías.* Supongo que estás más a gusto al lado de la enfermera. Pero si te vas esta noche, volveré a sentir que me dejan sola.",
         "choices": [
             "Responderle a la enfermera y volver a casa",
-            "Ir al anexo y quedarme con Yuna"
+            "Ir al anexo y quedarme con Yuna",
+            "Puedo ver a las dos un rato para que ninguna se sienta mal.",
+            "Cumpliré la primera promesa y le daré una buena excusa a la otra."
         ]
     },
     "day4_adult_counteroffer_accept_seoyeon": {
@@ -199,7 +211,9 @@
         "text": "*El maquillaje corrido queda en el dorso de su mano y los hombros de Seoyeon se alzan brevemente con cada respiración.*",
         "choices": [
             "Abrazarla",
-            "Ofrecerle mi meñique"
+            "Ofrecerle mi meñique",
+            "Puedes llorar. Yo lo arreglaré todo.",
+            "A partir de ahora, impediré que vuelvas a pasarlo mal."
         ]
     },
     "wall_seo_hug_1": {
@@ -321,7 +335,9 @@
         "text": "Solo diez pases. Cuando terminemos... abrázame un rato. Esta noche no puedo seguir fingiendo que estoy bien sola.",
         "choices": [
             "Cumplir la promesa e ir con Seoyeon al parque",
-            "Entrar al gimnasio y quedarme con Dain"
+            "Entrar al gimnasio y quedarme con Dain",
+            "Puedo ver a las dos un rato para que ninguna se sienta mal.",
+            "Cumpliré la primera promesa y le daré una buena excusa a la otra."
         ]
     },
     "wall_seo_glimpse_4": {
@@ -337,7 +353,9 @@
         "text": "Hubo alguien que me vio de verdad y desapareció sin decir nada. Si tú también te vas hoy, sentiré que aquel día vuelve a repetirse. Solo esta noche, quédate aquí.",
         "choices": [
             "Responder a Seoyeon y seguir hacia el parque",
-            "Ir al anexo y quedarme junto a Yuna"
+            "Ir al anexo y quedarme junto a Yuna",
+            "Puedo ver a las dos un rato para que ninguna se sienta mal.",
+            "Cumpliré la primera promesa y le daré una buena excusa a la otra."
         ]
     },
     "wall_seo_yuna_tempt_accept": {
@@ -667,7 +685,9 @@
         "text": "Hubo alguien que me vio de verdad y desapareció sin decir nada. Si vuelvo a quedarme sola esta noche, sentiré que regreso a aquel día. No importa que estuvieras con Dain. Necesito que vengas ahora.",
         "choices": [
             "Responder a Dain y seguir hacia el gimnasio",
-            "Volver a la puerta trasera y quedarme con Yuna"
+            "Volver a la puerta trasera y quedarme con Yuna",
+            "Puedo ver a las dos un rato para que ninguna se sienta mal.",
+            "Cumpliré la primera promesa y le daré una buena excusa a la otra."
         ]
     },
     "wall_dain_seo_tempt_1": {
@@ -679,7 +699,9 @@
         "text": "Cuando vuelva a casa tendré que empezar por ponerme otra vez la sonrisa. Solo por hoy, déjame ser Seoyeon y no la presidenta del consejo. Sube conmigo y no soltaré tu mano.",
         "choices": [
             "Responder a Dain y seguir hacia el gimnasio",
-            "Subir a la azotea con Seoyeon y tomar su mano"
+            "Subir a la azotea con Seoyeon y tomar su mano",
+            "Puedo ver a las dos un rato para que ninguna se sienta mal.",
+            "Cumpliré la primera promesa y le daré una buena excusa a la otra."
         ]
     },
     "wall_dain_seo_tempt_accept": {
@@ -893,7 +915,9 @@
         "text": "Cuando vuelva a casa tendré que empezar por ponerme otra vez la sonrisa. Solo por hoy, déjame ser Seoyeon y no la presidenta del consejo. Sube conmigo y no soltaré tu mano.",
         "choices": [
             "Responder a Yuna y seguir hacia la puerta trasera",
-            "Subir a la azotea con Seoyeon y tomar su mano"
+            "Subir a la azotea con Seoyeon y tomar su mano",
+            "Puedo ver a las dos un rato para que ninguna se sienta mal.",
+            "Cumpliré la primera promesa y le daré una buena excusa a la otra."
         ]
     },
     "wall_yuna_glimpse_4": {
@@ -909,7 +933,9 @@
         "text": "Solo diez pases. Cuando terminemos... abrázame un rato. Esta noche no puedo seguir fingiendo que estoy bien sola.",
         "choices": [
             "Responder a Yuna y seguir hacia la puerta trasera",
-            "Entrar al gimnasio y quedarme con Dain"
+            "Entrar al gimnasio y quedarme con Dain",
+            "Puedo ver a las dos un rato para que ninguna se sienta mal.",
+            "Cumpliré la primera promesa y le daré una buena excusa a la otra."
         ]
     },
     "wall_yuna_dain_tempt_accept": {

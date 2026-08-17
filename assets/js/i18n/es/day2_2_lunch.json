@@ -597,7 +597,9 @@
         "text": "*No continúa después de «Antes venía...». Yuna empuja la punta del marcapáginas hacia el interior del libro.*",
         "choices": [
             "Esa persona, ¿dónde está ahora?",
-            "No preguntar y sentarme a su lado"
+            "No preguntar y sentarme a su lado",
+            "Yo puedo escucharte mejor que esa persona.",
+            "Entonces, a partir de ahora puedes contármelo todo solo a mí."
         ]
     },
     "lunch2_yuna_c1_1": {

@@ -107,7 +107,9 @@
         "text": "Let what you saw today end here. For now, just treat me like you usually do.",
         "choices": [
             "Everyone has days like this. Don't take it so hard.",
-            "Just now? I didn't see anything. I dropped my pen and came in to pick it up."
+            "Just now? I didn't see anything. I dropped my pen and came in to pick it up.",
+            "I’ll understand even the weak side of you.",
+            "From now on, I’ll stay beside you and take care of everything."
         ]
     },
     "after3_seo_pity_trap_1": {
@@ -277,7 +279,9 @@
         "text": "*I turn the notebook back toward Yuna.*",
         "choices": [
             "I'm sorry. But this is about me, isn't it?",
-            "I'm sorry. I only saw the open first page. I won't read any more. But this writer's prose is really good."
+            "I'm sorry. I only saw the open first page. I won't read any more. But this writer's prose is really good.",
+            "Don’t worry. I’ll keep this notebook safe for you.",
+            "From now on, show this kind of writing only to me."
         ]
     },
     "after3_yuna_decode_trap_1": {
@@ -431,7 +435,9 @@
         "text": "*She sits on the bench. The hand rubbing her knee keeps circling the same spot.*",
         "choices": [
             "I knew you were pushing it. Drop the tournament and rest today.",
-            "Then I'll stay here. Talk when you're ready."
+            "Then I'll stay here. Talk when you're ready.",
+            "I’ll decide for you so you don’t overdo it.",
+            "Don’t worry. I’ll keep an eye on you from now on."
         ]
     },
     "after3_dain_pity_trap_1": {
@@ -559,7 +565,9 @@
         "text": "*Dain doesn't wipe her wet eyes. None of her usual laughter follows her final words.*",
         "choices": [
             "Sorry. But I'm telling.",
-            "Okay. You tell them yourself. But I'm going to the nurse's office with you."
+            "Okay. You tell them yourself. But I'm going to the nurse's office with you.",
+            "I’ll explain it to the teacher. You just rest.",
+            "If you keep hesitating, it’d be better if I told them first."
         ]
     },
     "after3_dain_tell_confirm": {

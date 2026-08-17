@@ -19,7 +19,9 @@
         "text": "*In the morning classroom, I set my phone down to show my homeroom teacher a photo of my draft. The screen lights up with a message from the girl I was with last night: 'What happened yesterday stays between us, right?' My teacher reads it to the end and takes her hand off the phone.* You ignored my message last night to meet this girl?",
         "choices": [
             "Tell her what happened last night",
-            "Brush it off as nothing important"
+            "Brush it off as nothing important",
+            "Tell her only the good parts so she doesn’t get hurt.",
+            "Reassure her for now and save the details for later."
         ]
     },
     "morning5_caught_nurse_counteroffer": {
@@ -27,7 +29,9 @@
         "text": "*The moment I set my phone on the infirmary counter, the screen lights up. A message from the girl I was with last night reads, 'What happened yesterday stays between us, right?' The school nurse starts to give her usual smile, then slowly lets it fade.* So you didn't miss my message yesterday. You were with this girl?",
         "choices": [
             "Tell her what happened last night",
-            "Brush it off as nothing important"
+            "Brush it off as nothing important",
+            "Tell her only the good parts so she doesn’t get hurt.",
+            "Reassure her for now and save the details for later."
         ]
     },
     "morning5_caught_teacher_honest": {
@@ -54,7 +58,9 @@
         "text": "*Morning in the classroom. The moment I set my phone down in front of Seoyeon, the screen lights up. A notification from Dain reads, 'Don't forget what we promised in the gym last night.' Seoyeon's gaze stops on the screen.* You skipped the park and went to the gym?",
         "choices": [
             "Tell her what happened last night",
-            "Brush it off as nothing important"
+            "Brush it off as nothing important",
+            "Tell her only the good parts so she doesn’t get hurt.",
+            "Reassure her for now and save the details for later."
         ]
     },
     "morning5_caught_seoyeon_by_yuna": {
@@ -62,7 +68,9 @@
         "text": "*My phone buzzes on the desk between Seoyeon and me. A notification from Yuna reads, 'Thank you for staying with me in the annex last night.' Seoyeon reads it to the end, then slowly looks up.* You went to the annex without even answering me?",
         "choices": [
             "Tell her what happened last night",
-            "Brush it off as nothing important"
+            "Brush it off as nothing important",
+            "Tell her only the good parts so she doesn’t get hurt.",
+            "Reassure her for now and save the details for later."
         ]
     },
     "morning5_caught_dain_by_seoyeon": {
@@ -70,7 +78,9 @@
         "text": "*My phone buzzes while Dain is standing beside the desk. A notification from Seoyeon reads, 'I still remember the hand I held on the rooftop last night.' Dain's smile stops cold.* You went to the rooftop while I was waiting?",
         "choices": [
             "Tell her what happened last night",
-            "Brush it off as nothing important"
+            "Brush it off as nothing important",
+            "Tell her only the good parts so she doesn’t get hurt.",
+            "Reassure her for now and save the details for later."
         ]
     },
     "morning5_caught_dain_by_yuna": {
@@ -78,7 +88,9 @@
         "text": "*As Dain pulls out the chair across from me, a notification from Yuna lights up the screen. 'Thank you for staying with me in the annex last night.' Dain's hand freezes on the chair back.* You read my message and went to the annex?",
         "choices": [
             "Tell her what happened last night",
-            "Brush it off as nothing important"
+            "Brush it off as nothing important",
+            "Tell her only the good parts so she doesn’t get hurt.",
+            "Reassure her for now and save the details for later."
         ]
     },
     "morning5_caught_yuna_by_seoyeon": {
@@ -86,7 +98,9 @@
         "text": "*My phone buzzes on the desk between Yuna and me. A notification from Seoyeon reads, 'I still remember the hand I held on the rooftop last night.' Yuna reads every word before lifting her eyes from the screen.* You left my messages unanswered and went to the rooftop.",
         "choices": [
             "Tell her what happened last night",
-            "Brush it off as nothing important"
+            "Brush it off as nothing important",
+            "Tell her only the good parts so she doesn’t get hurt.",
+            "Reassure her for now and save the details for later."
         ]
     },
     "morning5_caught_yuna_by_dain": {
@@ -94,7 +108,9 @@
         "text": "*Just as Yuna opens her book, a notification from Dain appears on the screen. 'Don't forget what we promised in the gym last night.' Yuna's hand stops on the cover.* My name was still on your screen, and you stayed in the gym anyway.",
         "choices": [
             "Tell her what happened last night",
-            "Brush it off as nothing important"
+            "Brush it off as nothing important",
+            "Tell her only the good parts so she doesn’t get hurt.",
+            "Reassure her for now and save the details for later."
         ]
     },
     "morning5_caught_seoyeon_honest": {
@@ -262,7 +278,9 @@
         "text": "*I hold the manuscript. The envelope presses against the inside of my arm.*",
         "choices": [
             "After seven years, it must be almost finished. I probably don't need to mark anything.",
-            "I'll read it first. Is it okay if I mark it up?"
+            "I'll read it first. Is it okay if I mark it up?",
+            "I’m just a student, so I can skip the parts that are too hard, right?",
+            "Since it’s your writing, I’ll only mark the nice things."
         ]
     },
     "hidden_homeroom_d5_praise_trap_1": {

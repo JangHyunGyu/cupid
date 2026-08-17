@@ -50,7 +50,9 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": "assets/images/characters/teacher_sad.png",
         "choices": [
             { "next": "morning5_caught_teacher_honest", "stats": {"Teacher":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer", "day5_abandoned_teacher"] },
-            { "next": "morning5_caught_teacher_lie", "stats": {"Teacher":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_teacher"] }
+            { "next": "morning5_caught_teacher_lie", "stats": {"Teacher":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_teacher"] },
+            { "next": "morning5_caught_teacher_lie", "stats": {"Teacher":{"affinity":-45}} },
+            { "next": "morning5_caught_teacher_lie", "stats": {"Teacher":{"affinity":-55}} }
         ]
     },
     "morning5_caught_nurse_counteroffer": {
@@ -58,7 +60,9 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": "assets/images/characters/nurse_worried.png",
         "choices": [
             { "next": "morning5_caught_nurse_honest", "stats": {"Nurse":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer", "day5_abandoned_nurse"] },
-            { "next": "morning5_caught_nurse_lie", "stats": {"Nurse":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_nurse"] }
+            { "next": "morning5_caught_nurse_lie", "stats": {"Nurse":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_nurse"] },
+            { "next": "morning5_caught_nurse_lie", "stats": {"Nurse":{"affinity":-45}} },
+            { "next": "morning5_caught_nurse_lie", "stats": {"Nurse":{"affinity":-55}} }
         ]
     },
     "morning5_caught_teacher_honest": {
@@ -115,7 +119,9 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": "assets/images/characters/seyoun_sad.png",
         "choices": [
             { "next": "morning5_caught_seoyeon_honest", "stats": {"Seoyeon":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer", "day5_abandoned_seoyeon"] },
-            { "next": "morning5_caught_seoyeon_lie", "stats": {"Seoyeon":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_seoyeon"] }
+            { "next": "morning5_caught_seoyeon_lie", "stats": {"Seoyeon":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_seoyeon"] },
+            { "next": "morning5_caught_seoyeon_lie", "stats": {"Seoyeon":{"affinity":-45}} },
+            { "next": "morning5_caught_seoyeon_lie", "stats": {"Seoyeon":{"affinity":-55}} }
         ]
     },
     "morning5_caught_seoyeon_by_yuna": {
@@ -123,7 +129,9 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": "assets/images/characters/seyoun_sad.png",
         "choices": [
             { "next": "morning5_caught_seoyeon_honest", "stats": {"Seoyeon":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer", "day5_abandoned_seoyeon"] },
-            { "next": "morning5_caught_seoyeon_lie", "stats": {"Seoyeon":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_seoyeon"] }
+            { "next": "morning5_caught_seoyeon_lie", "stats": {"Seoyeon":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_seoyeon"] },
+            { "next": "morning5_caught_seoyeon_lie", "stats": {"Seoyeon":{"affinity":-45}} },
+            { "next": "morning5_caught_seoyeon_lie", "stats": {"Seoyeon":{"affinity":-55}} }
         ]
     },
     "morning5_caught_dain_by_seoyeon": {
@@ -131,7 +139,9 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": "assets/images/characters/dain_sad.png",
         "choices": [
             { "next": "morning5_caught_dain_honest", "stats": {"Dain":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer", "day5_abandoned_dain"] },
-            { "next": "morning5_caught_dain_lie", "stats": {"Dain":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_dain"] }
+            { "next": "morning5_caught_dain_lie", "stats": {"Dain":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_dain"] },
+            { "next": "morning5_caught_dain_lie", "stats": {"Dain":{"affinity":-45}} },
+            { "next": "morning5_caught_dain_lie", "stats": {"Dain":{"affinity":-55}} }
         ]
     },
     "morning5_caught_dain_by_yuna": {
@@ -139,7 +149,9 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": "assets/images/characters/dain_sad.png",
         "choices": [
             { "next": "morning5_caught_dain_honest", "stats": {"Dain":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer", "day5_abandoned_dain"] },
-            { "next": "morning5_caught_dain_lie", "stats": {"Dain":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_dain"] }
+            { "next": "morning5_caught_dain_lie", "stats": {"Dain":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_dain"] },
+            { "next": "morning5_caught_dain_lie", "stats": {"Dain":{"affinity":-45}} },
+            { "next": "morning5_caught_dain_lie", "stats": {"Dain":{"affinity":-55}} }
         ]
     },
     "morning5_caught_yuna_by_seoyeon": {
@@ -148,7 +160,9 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": "assets/images/characters/yuna_sad.png",
         "choices": [
             { "next": "morning5_caught_yuna_honest", "stats": {"Yuna":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer", "day5_abandoned_yuna"] },
-            { "next": "morning5_caught_yuna_lie", "stats": {"Yuna":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_yuna"] }
+            { "next": "morning5_caught_yuna_lie", "stats": {"Yuna":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_yuna"] },
+            { "next": "morning5_caught_yuna_lie", "stats": {"Yuna":{"affinity":-45}} },
+            { "next": "morning5_caught_yuna_lie", "stats": {"Yuna":{"affinity":-55}} }
         ]
     },
     "morning5_caught_yuna_by_dain": {
@@ -157,7 +171,9 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": "assets/images/characters/yuna_sad.png",
         "choices": [
             { "next": "morning5_caught_yuna_honest", "stats": {"Yuna":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer", "day5_abandoned_yuna"] },
-            { "next": "morning5_caught_yuna_lie", "stats": {"Yuna":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_yuna"] }
+            { "next": "morning5_caught_yuna_lie", "stats": {"Yuna":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_yuna"] },
+            { "next": "morning5_caught_yuna_lie", "stats": {"Yuna":{"affinity":-45}} },
+            { "next": "morning5_caught_yuna_lie", "stats": {"Yuna":{"affinity":-55}} }
         ]
     },
     "morning5_caught_seoyeon_honest": {
@@ -420,7 +436,9 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": "assets/images/characters/teacher_sad.png",
         "choices": [
             { "next": "hidden_homeroom_d5_praise_trap_1", "stats": {"Teacher":{"affinity":-25}}, "setFlags": ["teacher_praise_broken"] },
-            { "next": "hidden_homeroom_d5_correct_1", "stats": {"Teacher":{"affinity":9}} }
+            { "next": "hidden_homeroom_d5_correct_1", "stats": {"Teacher":{"affinity":9}} },
+            { "next": "hidden_homeroom_d5_praise_trap_1", "stats": {"Teacher":{"affinity":-18}} },
+            { "next": "hidden_homeroom_d5_praise_trap_1", "stats": {"Teacher":{"affinity":-20}} }
         ]
     },
     "hidden_homeroom_d5_praise_trap_1": {

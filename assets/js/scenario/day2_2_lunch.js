@@ -811,7 +811,9 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "character": "assets/images/characters/yuna_normal.png",
         "choices": [
             { "next": "lunch2_yuna_c1_1", "stats": {"Yuna":{"affinity":-3}} },
-            { "next": "lunch2_yuna_c2_1", "stats": {"Yuna":{"affinity":4}} }
+            { "next": "lunch2_yuna_c2_1", "stats": {"Yuna":{"affinity":4}} },
+            { "next": "lunch2_yuna_c1_1", "stats": {"Yuna":{"affinity":-4}} },
+            { "next": "lunch2_yuna_c1_1", "stats": {"Yuna":{"affinity":-5}} }
         ]
     },
     "lunch2_yuna_c1_1": {

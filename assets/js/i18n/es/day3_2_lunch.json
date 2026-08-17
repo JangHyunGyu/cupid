@@ -107,7 +107,9 @@
         "text": "*Los talones de los tenis de Dain desaparecen al doblar la esquina del pasillo.*",
         "choices": [
             "¡Dain!",
-            "Centrarse en Seoyeon"
+            "Centrarse en Seoyeon",
+            "Sería más divertido si invitáramos también a Dain.",
+            "Me sabe mal dejar sola a Dain. La llamaré para que coma con nosotros."
         ]
     },
     "lunch3_seo_chase_dain_1": {

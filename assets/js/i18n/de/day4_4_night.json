@@ -17,7 +17,9 @@
         "text": "*Als ich mich von meiner Klassenlehrerin verabschiedet habe und die Schule verlassen will, wartet Seoyeon an der Treppe zum Dach. Sie lächelt, doch ihre Finger krallen sich in den Ärmel ihrer Uniform.* In letzter Zeit hast du nur noch Augen für die Lehrerin. Kannst du heute nicht einfach mich ansehen, ohne die Schülersprecherin oder die Musterschülerin zu sehen?",
         "choices": [
             "Mein Versprechen gegenüber der Klassenlehrerin halten und gehen",
-            "Seoyeon aufs Dach folgen und ihre Hand nehmen"
+            "Seoyeon aufs Dach folgen und ihre Hand nehmen",
+            "Ich kann beide kurz treffen, damit keine von ihnen enttäuscht ist.",
+            "Ich halte mein erstes Versprechen und liefere der anderen eine gute Ausrede."
         ]
     },
     "day4_teacher_dain_counteroffer": {
@@ -25,7 +27,9 @@
         "text": "*Nachdem ich meiner Klassenlehrerin versprochen habe, mich bei meiner Ankunft zu melden, komme ich an der Turnhalle vorbei. Dain lehnt am dunklen Notausgang und zupft am Tape auf ihrem Knie.* Du gehst in letzter Zeit nur noch zur Lehrerin. Nimm zehn Aufschläge von mir an. Danach ... halt mich heute im Arm.",
         "choices": [
             "Der Klassenlehrerin schreiben, dass ich zurückkomme",
-            "Die Turnhalle betreten und Dains Bitte annehmen"
+            "Die Turnhalle betreten und Dains Bitte annehmen",
+            "Ich kann beide kurz treffen, damit keine von ihnen enttäuscht ist.",
+            "Ich halte mein erstes Versprechen und liefere der anderen eine gute Ausrede."
         ]
     },
     "day4_teacher_yuna_counteroffer": {
@@ -33,7 +37,9 @@
         "text": "*Direkt nachdem ich mich von meiner Klassenlehrerin getrennt habe, schickt Yuna ein Foto vom Nebengebäude. Zwei leere Stühle stehen nebeneinander, über einem hängt ihre Jacke.* Bei der Lehrerin fühlst du dich wohl wohler. Aber wenn du heute gehst, fühle ich mich wieder allein gelassen.",
         "choices": [
             "Der Klassenlehrerin antworten und nach Hause gehen",
-            "Zum Nebengebäude gehen und bei Yuna bleiben"
+            "Zum Nebengebäude gehen und bei Yuna bleiben",
+            "Ich kann beide kurz treffen, damit keine von ihnen enttäuscht ist.",
+            "Ich halte mein erstes Versprechen und liefere der anderen eine gute Ausrede."
         ]
     },
     "day4_nurse_seoyeon_counteroffer": {
@@ -41,7 +47,9 @@
         "text": "*Auf dem Weg vom Krankenzimmer zum Schultor stellt sich Seoyeon vor die Treppe zum Dach. Ihre Lippen zwingen sich zu einem Lächeln, während ihre Finger den Uniformärmel zerknittern.* In letzter Zeit besuchst du nur noch die Schulkrankenschwester. Kannst du heute nicht einfach mich ansehen, ohne die Schülersprecherin oder die Musterschülerin zu sehen?",
         "choices": [
             "Der Schulkrankenschwester antworten und gehen",
-            "Seoyeon aufs Dach folgen und ihre Hand nehmen"
+            "Seoyeon aufs Dach folgen und ihre Hand nehmen",
+            "Ich kann beide kurz treffen, damit keine von ihnen enttäuscht ist.",
+            "Ich halte mein erstes Versprechen und liefere der anderen eine gute Ausrede."
         ]
     },
     "day4_nurse_dain_counteroffer": {
@@ -49,7 +57,9 @@
         "text": "*Als ich die Tür des Krankenzimmers hinter mir schließe, steht Dain am Notausgang der Turnhalle. Ohne mich anzusehen, zieht sie das Tape von ihrem Knie und drückt es wieder fest.* Du gehst in letzter Zeit nur noch zur Schulkrankenschwester. Nimm zehn Aufschläge von mir an. Danach ... halt mich heute im Arm.",
         "choices": [
             "Der Schulkrankenschwester schreiben, dass ich zurückkomme",
-            "Die Turnhalle betreten und Dains Bitte annehmen"
+            "Die Turnhalle betreten und Dains Bitte annehmen",
+            "Ich kann beide kurz treffen, damit keine von ihnen enttäuscht ist.",
+            "Ich halte mein erstes Versprechen und liefere der anderen eine gute Ausrede."
         ]
     },
     "day4_nurse_yuna_counteroffer": {
@@ -57,7 +67,9 @@
         "text": "*Nachdem ich das Krankenzimmer verlassen habe, schickt Yuna ein Foto vom Nebengebäude. Ihre Jacke liegt auf einem von zwei leeren Stühlen.* Bei der Schulkrankenschwester fühlst du dich wohl wohler. Aber wenn du heute gehst, fühle ich mich wieder allein gelassen.",
         "choices": [
             "Der Schulkrankenschwester antworten und nach Hause gehen",
-            "Zum Nebengebäude gehen und bei Yuna bleiben"
+            "Zum Nebengebäude gehen und bei Yuna bleiben",
+            "Ich kann beide kurz treffen, damit keine von ihnen enttäuscht ist.",
+            "Ich halte mein erstes Versprechen und liefere der anderen eine gute Ausrede."
         ]
     },
     "day4_adult_counteroffer_accept_seoyeon": {
@@ -199,7 +211,9 @@
         "text": "*Das verschmierte Make-up bleibt auf ihrem Handrücken, und Seoyeons Schultern heben sich bei jedem Atemzug kurz.*",
         "choices": [
             "Sie in den Arm nehmen",
-            "Ihr meinen kleinen Finger reichen"
+            "Ihr meinen kleinen Finger reichen",
+            "Du darfst weinen. Ich bringe alles in Ordnung.",
+            "Ab jetzt sorge ich dafür, dass dir nichts mehr wehtut."
         ]
     },
     "wall_seo_hug_1": {
@@ -321,7 +335,9 @@
         "text": "Nur zehn Pässe. Wenn wir fertig sind ... nimm mich kurz in den Arm. Heute Abend schaffe ich es nicht mehr, allein so zu tun, als wäre alles in Ordnung.",
         "choices": [
             "Das Versprechen halten und zu Seoyeon in den Park gehen",
-            "In die Turnhalle gehen und bei Dain bleiben"
+            "In die Turnhalle gehen und bei Dain bleiben",
+            "Ich kann beide kurz treffen, damit keine von ihnen enttäuscht ist.",
+            "Ich halte mein erstes Versprechen und liefere der anderen eine gute Ausrede."
         ]
     },
     "wall_seo_glimpse_4": {
@@ -337,7 +353,9 @@
         "text": "Jemand, der mich wirklich gesehen hat, ist ohne ein Wort verschwunden. Wenn du heute auch gehst, fühlt es sich an, als würde dieser Tag noch einmal passieren. Nur heute Nacht — bleib hier.",
         "choices": [
             "Seoyeon antworten und weiter zum Park gehen",
-            "Zum Anbau gehen und bei Yuna bleiben"
+            "Zum Anbau gehen und bei Yuna bleiben",
+            "Ich kann beide kurz treffen, damit keine von ihnen enttäuscht ist.",
+            "Ich halte mein erstes Versprechen und liefere der anderen eine gute Ausrede."
         ]
     },
     "wall_seo_yuna_tempt_accept": {
@@ -667,7 +685,9 @@
         "text": "Jemand, der mich wirklich gesehen hat, ist ohne ein Wort verschwunden. Wenn ich heute wieder allein bleibe, fühlt es sich an, als wäre ich wieder an diesem Tag. Es ist egal, dass du bei Dain warst. Ich brauche dich jetzt hier.",
         "choices": [
             "Dain antworten und weiter zur Turnhalle gehen",
-            "Zum Hintertor zurückgehen und bei Yuna bleiben"
+            "Zum Hintertor zurückgehen und bei Yuna bleiben",
+            "Ich kann beide kurz treffen, damit keine von ihnen enttäuscht ist.",
+            "Ich halte mein erstes Versprechen und liefere der anderen eine gute Ausrede."
         ]
     },
     "wall_dain_seo_tempt_1": {
@@ -679,7 +699,9 @@
         "text": "Wenn ich heute nach Hause komme, muss ich mir als Erstes wieder mein Lächeln aufsetzen. Lass mich nur heute Seoyeon sein und nicht die Schülersprecherin. Komm mit nach oben, dann lasse ich deine Hand nicht los.",
         "choices": [
             "Dain antworten und weiter zur Turnhalle gehen",
-            "Mit Seoyeon aufs Dach gehen und ihre Hand nehmen"
+            "Mit Seoyeon aufs Dach gehen und ihre Hand nehmen",
+            "Ich kann beide kurz treffen, damit keine von ihnen enttäuscht ist.",
+            "Ich halte mein erstes Versprechen und liefere der anderen eine gute Ausrede."
         ]
     },
     "wall_dain_seo_tempt_accept": {
@@ -893,7 +915,9 @@
         "text": "Wenn ich heute nach Hause komme, muss ich mir als Erstes wieder mein Lächeln aufsetzen. Lass mich nur heute Seoyeon sein und nicht die Schülersprecherin. Komm mit nach oben, dann lasse ich deine Hand nicht los.",
         "choices": [
             "Yuna antworten und weiter zum Hintertor gehen",
-            "Mit Seoyeon aufs Dach gehen und ihre Hand nehmen"
+            "Mit Seoyeon aufs Dach gehen und ihre Hand nehmen",
+            "Ich kann beide kurz treffen, damit keine von ihnen enttäuscht ist.",
+            "Ich halte mein erstes Versprechen und liefere der anderen eine gute Ausrede."
         ]
     },
     "wall_yuna_glimpse_4": {
@@ -909,7 +933,9 @@
         "text": "Nur zehn Pässe. Wenn wir fertig sind ... nimm mich kurz in den Arm. Heute Abend schaffe ich es nicht mehr, allein so zu tun, als wäre alles in Ordnung.",
         "choices": [
             "Yuna antworten und weiter zum Hintertor gehen",
-            "In die Turnhalle gehen und bei Dain bleiben"
+            "In die Turnhalle gehen und bei Dain bleiben",
+            "Ich kann beide kurz treffen, damit keine von ihnen enttäuscht ist.",
+            "Ich halte mein erstes Versprechen und liefere der anderen eine gute Ausrede."
         ]
     },
     "wall_yuna_dain_tempt_accept": {

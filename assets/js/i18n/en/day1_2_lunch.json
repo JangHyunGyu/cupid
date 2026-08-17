@@ -129,7 +129,9 @@
         "text": "*She holds out the piece of rolled omelette.*",
         "choices": [
             "Accept it",
-            "It'd taste better if you ate it yourself"
+            "It'd taste better if you ate it yourself",
+            "You went to all that trouble, so I’ll have just one bite.",
+            "At this rate, I could ask you to make me lunch from now on."
         ]
     },
     "lunch_seo_c1_1": {
@@ -434,7 +436,9 @@
         "text": "*Yuna is only a few steps ahead. I pick up the book she left behind and hurry after her.*",
         "choices": [
             "Is that book good? Should I read it too?",
-            "I guess you like sitting quietly with a book."
+            "I guess you like sitting quietly with a book.",
+            "I’ll keep you more entertained than that book.",
+            "You’re so quiet, you’d be easy to hang out with."
         ]
     },
     "lunch_yuna_c1_1": {

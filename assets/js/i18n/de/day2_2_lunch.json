@@ -597,7 +597,9 @@
         "text": "*Nach ‚Früher war hier noch jemand‘ schweigt sie. Yuna schiebt das Ende des Lesezeichens tiefer ins Buch.*",
         "choices": [
             "Und wo ist diese Person jetzt?",
-            "Nicht fragen und sich neben sie setzen"
+            "Nicht fragen und sich neben sie setzen",
+            "Ich kann dir besser zuhören als diese Person.",
+            "Dann kannst du ab jetzt einfach nur mir alles erzählen."
         ]
     },
     "lunch2_yuna_c1_1": {

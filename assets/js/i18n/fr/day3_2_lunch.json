@@ -107,7 +107,9 @@
         "text": "*Le talon de la basket de Dain disparaît à l’angle du couloir.*",
         "choices": [
             "Dain !",
-            "Se concentrer sur Seoyeon"
+            "Se concentrer sur Seoyeon",
+            "Ce serait plus amusant si on invitait Dain aussi.",
+            "Ça me gêne de laisser Dain seule. Je vais lui proposer de manger avec nous."
         ]
     },
     "lunch3_seo_chase_dain_1": {

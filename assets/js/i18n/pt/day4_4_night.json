@@ -17,7 +17,9 @@
         "text": "*Quando vou sair da escola depois de me despedir da professora, Seoyeon está esperando perto da escada do terraço. Ela sorri, mas aperta com força a manga do uniforme.* Ultimamente você só olha para a professora. Só por hoje, não pode olhar para mim sem ver a presidente do grêmio nem a aluna exemplar?",
         "choices": [
             "Cumprir a promessa feita à professora e ir embora",
-            "Seguir Seoyeon até o terraço e segurar sua mão"
+            "Seguir Seoyeon até o terraço e segurar sua mão",
+            "Posso encontrar as duas por um tempo para nenhuma ficar magoada.",
+            "Vou cumprir a primeira promessa e dar uma boa desculpa para a outra."
         ]
     },
     "day4_teacher_dain_counteroffer": {
@@ -25,7 +27,9 @@
         "text": "*Depois de prometer à professora que mandaria uma mensagem ao chegar, passo pelo ginásio. Dain está encostada na saída de emergência escura, mexendo na fita do joelho.* Ultimamente você só vai atrás da professora. Recebe dez saques meus. Quando acabarmos... me abraça hoje.",
         "choices": [
             "Escrever à professora que estou voltando",
-            "Entrar no ginásio e aceitar o pedido de Dain"
+            "Entrar no ginásio e aceitar o pedido de Dain",
+            "Posso encontrar as duas por um tempo para nenhuma ficar magoada.",
+            "Vou cumprir a primeira promessa e dar uma boa desculpa para a outra."
         ]
     },
     "day4_teacher_yuna_counteroffer": {
@@ -33,7 +37,9 @@
         "text": "*Logo depois de me despedir da professora, Yuna manda uma foto do anexo. Duas cadeiras vazias estão lado a lado, com a jaqueta dela sobre uma delas.* Parece que você fica mais à vontade ao lado da professora. Mas, se for embora hoje, vou me sentir abandonada de novo.",
         "choices": [
             "Responder à professora e voltar para casa",
-            "Ir ao anexo e ficar com Yuna"
+            "Ir ao anexo e ficar com Yuna",
+            "Posso encontrar as duas por um tempo para nenhuma ficar magoada.",
+            "Vou cumprir a primeira promessa e dar uma boa desculpa para a outra."
         ]
     },
     "day4_nurse_seoyeon_counteroffer": {
@@ -41,7 +47,9 @@
         "text": "*No caminho da enfermaria até o portão, Seoyeon bloqueia a escada do terraço. Os lábios forçam um sorriso enquanto os dedos amassam a manga do uniforme.* Ultimamente você só visita a enfermeira. Só por hoje, não pode olhar para mim sem ver a presidente do grêmio nem a aluna exemplar?",
         "choices": [
             "Responder à enfermeira e ir embora",
-            "Seguir Seoyeon até o terraço e segurar sua mão"
+            "Seguir Seoyeon até o terraço e segurar sua mão",
+            "Posso encontrar as duas por um tempo para nenhuma ficar magoada.",
+            "Vou cumprir a primeira promessa e dar uma boa desculpa para a outra."
         ]
     },
     "day4_nurse_dain_counteroffer": {
@@ -49,7 +57,9 @@
         "text": "*Quando fecho a porta da enfermaria, Dain está junto à saída de emergência do ginásio. Ela descola e cola novamente a fita do joelho sem olhar para mim.* Ultimamente você só vai atrás da enfermeira. Recebe dez saques meus. Quando acabarmos... me abraça hoje.",
         "choices": [
             "Escrever à enfermeira que estou voltando",
-            "Entrar no ginásio e aceitar o pedido de Dain"
+            "Entrar no ginásio e aceitar o pedido de Dain",
+            "Posso encontrar as duas por um tempo para nenhuma ficar magoada.",
+            "Vou cumprir a primeira promessa e dar uma boa desculpa para a outra."
         ]
     },
     "day4_nurse_yuna_counteroffer": {
@@ -57,7 +67,9 @@
         "text": "*Depois que saio da enfermaria, Yuna manda uma foto do anexo. A jaqueta dela está sobre uma das duas cadeiras vazias.* Parece que você fica mais à vontade ao lado da enfermeira. Mas, se for embora hoje, vou me sentir abandonada de novo.",
         "choices": [
             "Responder à enfermeira e voltar para casa",
-            "Ir ao anexo e ficar com Yuna"
+            "Ir ao anexo e ficar com Yuna",
+            "Posso encontrar as duas por um tempo para nenhuma ficar magoada.",
+            "Vou cumprir a primeira promessa e dar uma boa desculpa para a outra."
         ]
     },
     "day4_adult_counteroffer_accept_seoyeon": {
@@ -199,7 +211,9 @@
         "text": "*A maquiagem borrada permanece no dorso da mão, e os ombros de Seoyeon se erguem brevemente a cada respiração.*",
         "choices": [
             "Abraço ela.",
-            "Estendo o mindinho."
+            "Estendo o mindinho.",
+            "Pode chorar. Eu vou resolver tudo.",
+            "Daqui para a frente, vou impedir que qualquer coisa faça você sofrer."
         ]
     },
     "wall_seo_hug_1": {
@@ -321,7 +335,9 @@
         "text": "Só dez passes. Quando a gente terminar... me abraça um pouco. Hoje eu não consigo mais fingir que estou bem sozinha.",
         "choices": [
             "Cumprir a promessa e encontrar Seoyeon no parque",
-            "Entrar no ginásio e ficar com Dain"
+            "Entrar no ginásio e ficar com Dain",
+            "Posso encontrar as duas por um tempo para nenhuma ficar magoada.",
+            "Vou cumprir a primeira promessa e dar uma boa desculpa para a outra."
         ]
     },
     "wall_seo_glimpse_4": {
@@ -337,7 +353,9 @@
         "text": "Alguém que realmente me enxergava desapareceu sem dizer nada. Se você também for embora hoje, vai parecer que aquele dia está acontecendo de novo. Só esta noite, fica aqui.",
         "choices": [
             "Responder a Seoyeon e seguir para o parque",
-            "Ir ao anexo e ficar ao lado de Yuna"
+            "Ir ao anexo e ficar ao lado de Yuna",
+            "Posso encontrar as duas por um tempo para nenhuma ficar magoada.",
+            "Vou cumprir a primeira promessa e dar uma boa desculpa para a outra."
         ]
     },
     "wall_seo_yuna_tempt_accept": {
@@ -667,7 +685,9 @@
         "text": "Alguém que realmente me enxergava desapareceu sem dizer nada. Se eu ficar sozinha de novo esta noite, vai parecer que voltei àquele dia. Não importa que você estivesse com Dain. Eu preciso que você venha agora.",
         "choices": [
             "Responder a Dain e seguir para o ginásio",
-            "Voltar ao portão dos fundos e ficar com Yuna"
+            "Voltar ao portão dos fundos e ficar com Yuna",
+            "Posso encontrar as duas por um tempo para nenhuma ficar magoada.",
+            "Vou cumprir a primeira promessa e dar uma boa desculpa para a outra."
         ]
     },
     "wall_dain_seo_tempt_1": {
@@ -679,7 +699,9 @@
         "text": "Quando eu chegar em casa, vou ter que começar colocando o sorriso de volta. Só por hoje, deixa eu ser Seoyeon em vez da presidente do conselho. Sobe comigo e eu não vou soltar sua mão.",
         "choices": [
             "Responder a Dain e seguir para o ginásio",
-            "Subir ao terraço com Seoyeon e segurar sua mão"
+            "Subir ao terraço com Seoyeon e segurar sua mão",
+            "Posso encontrar as duas por um tempo para nenhuma ficar magoada.",
+            "Vou cumprir a primeira promessa e dar uma boa desculpa para a outra."
         ]
     },
     "wall_dain_seo_tempt_accept": {
@@ -893,7 +915,9 @@
         "text": "Quando eu chegar em casa, vou ter que começar colocando o sorriso de volta. Só por hoje, deixa eu ser Seoyeon em vez da presidente do conselho. Sobe comigo e eu não vou soltar sua mão.",
         "choices": [
             "Responder a Yuna e seguir para o portão dos fundos",
-            "Subir ao terraço com Seoyeon e segurar sua mão"
+            "Subir ao terraço com Seoyeon e segurar sua mão",
+            "Posso encontrar as duas por um tempo para nenhuma ficar magoada.",
+            "Vou cumprir a primeira promessa e dar uma boa desculpa para a outra."
         ]
     },
     "wall_yuna_glimpse_4": {
@@ -909,7 +933,9 @@
         "text": "Só dez passes. Quando a gente terminar... me abraça um pouco. Hoje eu não consigo mais fingir que estou bem sozinha.",
         "choices": [
             "Responder a Yuna e seguir para o portão dos fundos",
-            "Entrar no ginásio e ficar com Dain"
+            "Entrar no ginásio e ficar com Dain",
+            "Posso encontrar as duas por um tempo para nenhuma ficar magoada.",
+            "Vou cumprir a primeira promessa e dar uma boa desculpa para a outra."
         ]
     },
     "wall_yuna_dain_tempt_accept": {

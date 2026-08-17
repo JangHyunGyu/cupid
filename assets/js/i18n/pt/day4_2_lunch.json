@@ -1,7 +1,16 @@
 {
-    "date_seo_low": {"name":"Seoyeon","text":"*O banco perto da fonte está vazio. Pouco depois, chega uma mensagem de Seoyeon.* Acho melhor não nos encontrarmos a sós hoje. Vejo você na escola na semana que vem."},
-    "date_yuna_low": {"name":"Yuna","text":"*Yuna já está do lado de fora do café. Ela ajeita a alça da bolsa e dá um passo para trás.* Acho melhor não passarmos muito tempo a sós agora. Vamos parar por aqui hoje."},
-    "date_dain_low": {"name":"Dain","text":"*Do lado de fora do ginásio, Dain ajeita a alça da bolsa de bolas.* Hoje não estou com vontade de sair. Vejo você na escola."},
+    "date_seo_low": {
+        "name": "Seoyeon",
+        "text": "*O banco perto da fonte está vazio. Pouco depois, chega uma mensagem de Seoyeon.* Acho melhor não nos encontrarmos a sós hoje. Vejo você na escola na semana que vem."
+    },
+    "date_yuna_low": {
+        "name": "Yuna",
+        "text": "*Yuna já está do lado de fora do café. Ela ajeita a alça da bolsa e dá um passo para trás.* Acho melhor não passarmos muito tempo a sós agora. Vamos parar por aqui hoje."
+    },
+    "date_dain_low": {
+        "name": "Dain",
+        "text": "*Do lado de fora do ginásio, Dain ajeita a alça da bolsa de bolas.* Hoje não estou com vontade de sair. Vejo você na escola."
+    },
     "date_seo_1": {
         "name": "{name}",
         "text": "*Seoyeon já está diante da fonte. Não há prancheta; apenas a alça da bolsa enrolada nos dedos.*"
@@ -241,7 +250,9 @@
         "text": "*Dain abaixa uma vez a aba do boné e espera.*",
         "choices": [
             "Curti esse boné.",
-            "Roupa esportiva é mesmo a sua cara."
+            "Roupa esportiva é mesmo a sua cara.",
+            "Hoje você está muito mais feminina do que com roupa esportiva.",
+            "Agora que se arrumou assim, finalmente parece um encontro."
         ]
     },
     "date_dain_pretty_high": {

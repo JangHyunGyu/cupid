@@ -36,7 +36,9 @@
         "text": "*Aperto o celular na mão.*",
         "choices": [
             "Comi no terraço com a presidente do grêmio. (Sincero)",
-            "Só fiquei andando por aí. (Mentira)"
+            "Só fiquei andando por aí. (Mentira)",
+            "Se eu soubesse que você ia me procurar assim, teria chamado você para comer com a gente.",
+            "Se eu soubesse que ficaria com ciúme, teria contado antes."
         ]
     },
     "after1_jealousy_seo_honest": {
@@ -280,7 +282,9 @@
         "text": "*O canto do livro de chamada encosta na mesa.*",
         "choices": [
             "Se é preocupação, basta dizer que é preocupação",
-            "Então, da próxima vez também vou querer suco, professora."
+            "Então, da próxima vez também vou querer suco, professora.",
+            "Não pode cuidar assim só de mim daqui para a frente?",
+            "Se está tão preocupada, me leve para casa hoje."
         ]
     },
     "after_homeroom_honest_choice2a": {

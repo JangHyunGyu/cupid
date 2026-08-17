@@ -129,7 +129,9 @@
         "text": "*Sie hält mir die Eierrolle hin.*",
         "choices": [
             "Die Eierrolle von ihren Stäbchen essen",
-            "Selbst gegessen schmeckt sie bestimmt besser"
+            "Selbst gegessen schmeckt sie bestimmt besser",
+            "Wenn du dir schon so viel Mühe gemacht hast, probiere ich wenigstens einen Bissen.",
+            "Dann kann ich dich ja ab jetzt immer um ein Lunchpaket bitten."
         ]
     },
     "lunch_seo_c1_1": {
@@ -434,7 +436,9 @@
         "text": "*Yuna ist erst ein paar Schritte voraus. Ich nehme das Buch, das sie liegen gelassen hat, und eile ihr hinterher.*",
         "choices": [
             "Ist das Buch gut? Soll ich es auch mal lesen?",
-            "Du sitzt wohl am liebsten still da und liest."
+            "Du sitzt wohl am liebsten still da und liest.",
+            "Ich unterhalte dich besser als das Buch.",
+            "Du bist so still, mit dir kann man sicher bequem Zeit verbringen."
         ]
     },
     "lunch_yuna_c1_1": {

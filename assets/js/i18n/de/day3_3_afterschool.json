@@ -107,7 +107,9 @@
         "text": "Lass das, was du heute gesehen hast, hier enden. Und behandel mich jetzt einfach wie sonst.",
         "choices": [
             "Jeder hat mal so einen Tag. Nimm es nicht so schwer.",
-            "Gerade eben? Ich habe nichts gesehen. Mein Stift ist runtergefallen, deshalb bin ich reingekommen."
+            "Gerade eben? Ich habe nichts gesehen. Mein Stift ist runtergefallen, deshalb bin ich reingekommen.",
+            "Ich werde sogar deine schwache Seite verstehen.",
+            "Ab jetzt bleibe ich bei dir und kümmere mich um alles."
         ]
     },
     "after3_seo_pity_trap_1": {
@@ -277,7 +279,9 @@
         "text": "*Ich drehe das Notizbuch wieder zu Yuna.*",
         "choices": [
             "Tut mir leid. Aber das handelt von mir, oder?",
-            "Tut mir leid. Ich habe nur die offene erste Seite gesehen und lese nicht weiter. Aber die Person schreibt wirklich gut."
+            "Tut mir leid. Ich habe nur die offene erste Seite gesehen und lese nicht weiter. Aber die Person schreibt wirklich gut.",
+            "Keine Sorge. Ich bewahre das Notizbuch für dich sicher auf.",
+            "Zeig solche Texte ab jetzt nur noch mir."
         ]
     },
     "after3_yuna_decode_trap_1": {
@@ -431,7 +435,9 @@
         "text": "*Sie setzt sich auf die Bank. Die Hand an ihrem Knie kreist lange über derselben Stelle.*",
         "choices": [
             "Ich wusste, dass du dich überforderst. Gib das Turnier auf und ruh dich heute aus.",
-            "Dann bleibe ich hier. Erzähl es, wenn du reden willst."
+            "Dann bleibe ich hier. Erzähl es, wenn du reden willst.",
+            "Ich entscheide für dich, damit du dich nicht überanstrengst.",
+            "Keine Sorge. Ab jetzt behalte ich dich immer im Auge."
         ]
     },
     "after3_dain_pity_trap_1": {
@@ -559,7 +565,9 @@
         "text": "*Dain wischt ihre feuchten Augen nicht ab. Nach ihren letzten Worten folgt auch nicht ihr übliches Lachen.*",
         "choices": [
             "Tut mir leid. Aber ich werde jemandem davon erzählen.",
-            "Okay. Du sagst es selbst. Aber ich komme mit ins Krankenzimmer."
+            "Okay. Du sagst es selbst. Aber ich komme mit ins Krankenzimmer.",
+            "Ich erkläre es der Lehrkraft. Du ruhst dich einfach aus.",
+            "Wenn du zögerst, ist es besser, wenn ich es zuerst sage."
         ]
     },
     "after3_dain_tell_confirm": {

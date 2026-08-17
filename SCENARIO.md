@@ -981,6 +981,8 @@
 - 선택지:
   1. "받아먹는다" → `lunch_seo_c1_1` | Seoyeon +4
   2. "직접 먹는 게 더 맛있을걸" → `lunch_seo_c2_1` | Seoyeon -2
+  3. "정성까지 들였는데 한 입만 먹어줄게" → `lunch_seo_c1_1` | Seoyeon -3
+  4. "이 정도면 앞으로도 도시락 부탁해도 되겠다" → `lunch_seo_c2_1` | Seoyeon -5
 
 - 캐릭터: `seyoun_normal.png`
 **서연**: *계란말이를 내밀고 있다.*
@@ -1663,6 +1665,8 @@
 - 선택지:
   1. "그 책 재미있어? 나도 읽어볼까" → `lunch_yuna_c1_1` | Yuna +4
   2. "조용히 책만 읽는 거 좋아하나 봐." → `lunch_yuna_c2_1` | Yuna -2
+  3. "책보다 내가 더 재밌게 해줄게" → `lunch_yuna_c2_1` | Yuna -3
+  4. "말이 없어서 같이 다니기 편하겠다" → `lunch_yuna_c2_1` | Yuna -4
 
 - 캐릭터: `yuna_normal.png`
 **{name}**: *유나는 아직 몇 발자국 앞이다. 두고 간 책을 들고 뒤를 쫓는다.*
@@ -1810,6 +1814,8 @@
 - 선택지:
   1. "학생회장이랑 옥상에서 먹었어. (솔직)" → `after1_jealousy_seo_honest` | Dain -2 | 플래그: `day1_honest_to_dain`
   2. "그냥 혼자 돌아다녔어. (거짓말)" → `after1_jealousy_seo_lie` | 플래그: `day1_lied_to_dain`
+  3. "네가 그렇게 찾을 줄 알았으면 같이 먹자고 할걸" → `after1_jealousy_seo_honest` | Dain -3
+  4. "질투할 줄 알았으면 미리 말해줬을 텐데" → `after1_jealousy_seo_honest` | Dain -4
 
 - 캐릭터: `dain_pout.png`
 **다인**: *휴대폰을 쥔 손에 힘을 준다.*
@@ -2380,6 +2386,8 @@
 - 선택지:
   1. "걱정이면 걱정이라고 하시면 되잖아요" → `after_homeroom_honest_choice2a` | Teacher +8
   2. "그럼 다음에도 주스로 부탁드릴게요, 선생님." → `after_homeroom_honest_choice2b` | Teacher -2
+  3. "앞으로 저만 이렇게 챙겨주시면 안 돼요?" → `after_homeroom_honest_choice2b` | Teacher -4
+  4. "걱정되시면 오늘 집까지 데려다주세요" → `after_homeroom_honest_choice2b` | Teacher -5
 
 - 캐릭터: `teacher_normal.png`
 **{name}**: *출석부 모서리가 책상에 닿아 있다.*
@@ -5636,6 +5644,8 @@
 - 선택지:
   1. "그 사람, 지금은?" → `lunch2_yuna_c1_1` | Yuna -3
   2. "묻지 않고 옆에 앉는다" → `lunch2_yuna_c2_1` | Yuna +4
+  3. "그 사람보다 내가 더 잘 들어줄 수 있어" → `lunch2_yuna_c1_1` | Yuna -4
+  4. "이제는 나한테만 얘기해도 되겠네" → `lunch2_yuna_c1_1` | Yuna -5
 
 - 캐릭터: `yuna_normal.png`
 **{name}**: *'있었는데' 뒤에 말이 없다. 유나는 책갈피 끝을 책 안쪽으로 밀어 넣는다.*
@@ -5932,6 +5942,8 @@
 - 선택지:
   1. "병원에서는 이런 것도 배워요?" → `hidden_nurse_d2_choice1_a` | Nurse +8
   2. "밴드 하나도 꼼꼼하시네요." → `hidden_nurse_d2_choice1_b` | Nurse -2
+  3. "저한테만 이렇게 정성껏 해주시는 거죠?" → `hidden_nurse_d2_choice1_b` | Nurse -4
+  4. "아픈 척하면 선생님을 더 자주 볼 수 있겠네요" → `hidden_nurse_d2_choice1_b` | Nurse -6
 
 - 캐릭터: `nurse_normal.png`
 **{name}**: *보건선생님이 팔꿈치를 접었다 펴 보며 밴드 길이를 가늠한다.*
@@ -5979,6 +5991,8 @@
 - 선택지:
   1. "비밀 많으시네요. 하나만 알려주면 안 돼요?" → `hidden_nurse_d2_choice2_a` | Nurse +6
   2. "네, 안 봤어요" → `hidden_nurse_d2_choice2_b` | Nurse -3
+  3. "선생님 비밀이면 제가 꼭 지켜드릴게요" → `hidden_nurse_d2_choice2_b` | Nurse -4
+  4. "저한테는 다 말씀하셔도 괜찮아요" → `hidden_nurse_d2_choice2_b` | Nurse -5
 
 - 캐릭터: `nurse_shy.png`
 **{name}**: *서랍 손잡이를 쥔 손마디가 희다.*
@@ -6588,6 +6602,8 @@
 - 선택지:
   1. "석양이 예쁜데. 창밖 얘기야." → `after2_seo_sunset_joke` | Seoyeon +4
   2. "매일 하는 거면 익숙하겠네." → `after2_seo_neck_worry` | Seoyeon -3
+  3. "혼자 애쓰지 말고 내가 대신 끝내줄까?" → `after2_seo_neck_worry` | Seoyeon -4
+  4. "이 정도면 됐어. 나머지는 내일 해" → `after2_seo_neck_worry` | Seoyeon -5
 
 - 캐릭터: `seyoun_normal.png`
 **{name}**: *블라인드 틈으로 들어온 주황색 줄이 서류 위를 가른다. 서연은 종이 모서리를 맞춘다.*
@@ -8709,6 +8725,8 @@
 - 선택지:
   1. "원고지인 거 봤어요. 소설 쓰시는 거예요?" → `hidden_homeroom_d3_reveal_1` | Teacher +9
   2. "죄송합니다, 안 봤어요." → `hidden_homeroom_d3_hide_1` | Teacher -3
+  3. "완성되면 제가 제일 먼저 읽게 해주세요" → `hidden_homeroom_d3_reveal_1` | Teacher -5
+  4. "제가 읽고 고칠 데를 먼저 찾아드릴게요" → `hidden_homeroom_d3_reveal_1` | Teacher -6
 
 - 캐릭터: `teacher_normal.png`
 **{name}**: *원고지다. 담임이 종이 끝을 손바닥으로 덮는다.*
@@ -9684,6 +9702,8 @@
 - 선택지:
   1. "있어. 어디?" → `morning3_date_seo_accept` | Seoyeon +4 | 플래그: `accepted_seoyeon_date`
   2. "좀 바쁜데" → `morning3_date_seo_decline` | Seoyeon -3
+  3. "학생회장 부탁인데 당연히 가야지" → `morning3_date_seo_accept` | Seoyeon -4
+  4. "다른 애들 안 오는 거면 시간 비워볼게" → `morning3_date_seo_accept` | Seoyeon -5
 
 - 캐릭터: `seyoun_normal.png`
 **서연**: *서연이 교실 문 앞에서 묻는다. 다인이 들고 있던 물병 뚜껑이 더는 돌아가지 않는다.*
@@ -9758,6 +9778,8 @@
 - 선택지:
   1. "좋아, 콜" → `morning3_date_dain_accept` | Dain +4 | 플래그: `accepted_dain_date`
   2. "주말은 좀..." → `morning3_date_dain_decline` | Dain -3
+  3. "네가 그렇게 부탁하니까 가줄게" → `morning3_date_dain_accept` | Dain -4
+  4. "재밌게 해주면 가는 걸로" → `morning3_date_dain_accept` | Dain -5
 
 - 캐릭터: `dain_normal.png`
 **다인**: *서연의 발소리가 멎는다. 다인은 대답을 기다린다.*
@@ -9841,6 +9863,8 @@
 - 선택지:
   1. "쪽지 뒷면에 '갈게'라고 적는다" → `morning3_date_yuna_accept` | Yuna +4 | 플래그: `accepted_yuna_date`
   2. "쪽지 뒷면에 '이번 주말은 어려워'라고 적는다" → `morning3_date_yuna_decline` | Yuna -3
+  3. "쪽지에 ‘혼자 가기 싫으면 같이 가줄게’라고 적는다" → `morning3_date_yuna_accept` | Yuna -4
+  4. "쪽지에 ‘다른 애들한텐 비밀이면 갈게’라고 적는다" → `morning3_date_yuna_accept` | Yuna -5
 
 - 캐릭터: `yuna_normal.png`
 **{name}**: *쪽지를 읽는 동안 유나는 서연과 다인을 차례로 본다. 이번에는 책으로 얼굴을 가리지 않는다.*
@@ -10195,6 +10219,8 @@
 - 선택지:
   1. "다인!" → `lunch3_seo_chase_dain_1` | Seoyeon -3, Dain +2
   2. "서연에게 집중한다" → `lunch3_seo_focus_1` | Dain -5
+  3. "다인도 부르면 셋이 더 즐겁겠다" → `lunch3_seo_chase_dain_1` | Seoyeon -4
+  4. "다인 혼자 두면 마음에 걸려. 같이 먹자고 불러볼게" → `lunch3_seo_chase_dain_1` | Seoyeon -6
 
 - 캐릭터: `dain_sad.png`
 **{name}**: *다인의 운동화 뒤축이 복도 모퉁이로 사라진다.*
@@ -10981,6 +11007,8 @@
 - 선택지:
   1. "누구나 그럴 때 있어. 너무 신경 쓰지 마." → `after3_seo_pity_trap_1` | Seoyeon -18 | 플래그: `seo_pity_broken`
   2. "방금? 아무것도 못 봤는데. 펜 떨어뜨려서 주우러 들어왔어." → `after3_seo_correct_1` | Seoyeon +12
+  3. "네 약한 모습까지 전부 이해해줄게" → `after3_seo_pity_trap_1` | Seoyeon -14
+  4. "이제부터는 내가 옆에서 다 챙겨줄게" → `after3_seo_pity_trap_1` | Seoyeon -16
 
 - 캐릭터: `seyoun_sad.png`
 **서연**: 오늘 본 건 여기까지만 해줘. 대신 지금은 평소처럼 대해.
@@ -11361,6 +11389,8 @@
 - 선택지:
   1. "미안. 그래도 이거 내 이야기 맞지?" → `after3_yuna_decode_trap_1` | Yuna -22 | 플래그: `yuna_safe_zone_broken`
   2. "미안. 펼쳐진 첫 장만 봤어. 더 읽지는 않을게. 그런데 이 작가, 문장이 정말 좋다." → `after3_yuna_correct_1` | Yuna +13
+  3. "걱정 마. 이 노트는 내가 대신 잘 보관할게" → `after3_yuna_decode_trap_1` | Yuna -15
+  4. "이런 글은 앞으로 나한테만 보여줘" → `after3_yuna_decode_trap_1` | Yuna -18
 
 - 캐릭터: `yuna_shy.png`
 **{name}**: *노트를 유나 쪽으로 돌려놓는다.*
@@ -11705,6 +11735,8 @@
 - 선택지:
   1. "역시 무리였네. 대회는 포기하고 오늘은 쉬어." → `after3_dain_pity_trap_1` | Dain -20 | 플래그: `pitied_dain`
   2. "그럼 여기 있을게. 말하고 싶을 때 말해." → `after3_dain_correct_1` | Dain +13
+  3. "네가 무리하지 않게 내가 대신 결정해줄게" → `after3_dain_pity_trap_1` | Dain -15
+  4. "걱정 마. 이제부터 내가 계속 지켜볼게" → `after3_dain_pity_trap_1` | Dain -17
 
 - 캐릭터: `dain_sad.png`
 **다인**: *다인이 벤치에 앉아 무릎 한곳만 계속 문지른다.*
@@ -11987,6 +12019,8 @@
 - 선택지:
   1. "미안. 근데 말할 거야." → `after3_dain_tell_confirm` | Dain -20 | 플래그: `told_about_dain_knee`
   2. "알겠어. 네가 직접 말해. 대신 보건실엔 같이 갈게." → `after3_dain_tell_retreat` | Dain +4 | 플래그: `dain_planned_nurse_visit`
+  3. "선생님께는 내가 잘 설명할게. 넌 쉬기만 해" → `after3_dain_tell_confirm` | Dain -12
+  4. "네가 망설이면 내가 먼저 말해주는 게 낫겠어" → `after3_dain_tell_confirm` | Dain -15
 
 - 캐릭터: `dain_sad.png`
 **다인**: *다인은 젖은 눈가를 닦지 않는다. 마지막 말 뒤에 늘 붙던 웃음도 없다.*
@@ -15508,6 +15542,8 @@
     - [50+] → `date_dain_pretty_high`
     - [기본] → `date_dain_pretty_low`
   2. "역시 운동복이 제일 너답다." → `date_dain_bright` | Dain -3
+  3. "오늘은 운동복보다 훨씬 여자답다" → `date_dain_bright` | Dain -4
+  4. "이렇게 꾸미니까 이제야 데이트 같네" → `date_dain_bright` | Dain -5
 
 - 캐릭터: `dain_normal.png`
 **{name}**: *다인이 모자챙을 한 번 눌러 쓰고 기다린다.*
@@ -16774,6 +16810,8 @@
 - 선택지:
   1. "담임과 한 약속을 지키고 돌아간다" → `day4_hidden_msg_branch` | Teacher +4, Seoyeon -6 | 플래그: `day4_held_route_teacher`
   2. "서연을 따라 옥상에 올라가 손을 잡는다" → `day4_adult_counteroffer_accept_seoyeon` | Seoyeon +8, Teacher -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
+  3. "둘 다 서운하지 않게 잠깐씩 만나면 되겠다" → `day4_hidden_msg_branch` | Teacher -8, Seoyeon -8 | 플래그: `day4_held_route_teacher`
+  4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `day4_hidden_msg_branch` | Teacher -5, Seoyeon -10 | 플래그: `day4_held_route_teacher`
 
 - 캐릭터: `seyoun_sad.png`
 **서연**: *담임과 헤어져 학교를 나서려는데 서연이 옥상 계단 앞에서 기다리고 있다. 웃고는 있지만 교복 소매를 쥔 손에 힘이 들어가 있다.* 요즘 선생님만 보고 있잖아. 오늘만은 학생회장도 모범생도 아닌 나를 봐주면 안 돼?
@@ -16786,6 +16824,8 @@
 - 선택지:
   1. "담임에게 돌아간다고 답장한다" → `day4_hidden_msg_branch` | Teacher +4, Dain -6 | 플래그: `day4_held_route_teacher`
   2. "체육관으로 들어가 다인의 부탁을 받아준다" → `day4_adult_counteroffer_accept_dain` | Dain +8, Teacher -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
+  3. "둘 다 서운하지 않게 잠깐씩 만나면 되겠다" → `day4_hidden_msg_branch` | Teacher -8, Dain -8 | 플래그: `day4_held_route_teacher`
+  4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `day4_hidden_msg_branch` | Teacher -5, Dain -10 | 플래그: `day4_held_route_teacher`
 
 - 캐릭터: `dain_sad.png`
 **다인**: *담임에게 도착하면 연락하겠다고 한 뒤, 체육관 앞을 지난다. 불 꺼진 비상문에 기대 있던 다인이 무릎 테이프를 만지작거린다.* 요즘 선생님한테만 가잖아. 열 번만 받아줘. 끝나면… 오늘은 나 좀 안아주라.
@@ -16797,6 +16837,8 @@
 - 선택지:
   1. "담임에게 답장하고 집으로 돌아간다" → `day4_hidden_msg_branch` | Teacher +4, Yuna -6 | 플래그: `day4_held_route_teacher`
   2. "별관으로 가서 유나 곁에 남는다" → `day4_adult_counteroffer_accept_yuna` | Yuna +8, Teacher -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
+  3. "둘 다 서운하지 않게 잠깐씩 만나면 되겠다" → `day4_hidden_msg_branch` | Teacher -8, Yuna -8 | 플래그: `day4_held_route_teacher`
+  4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `day4_hidden_msg_branch` | Teacher -5, Yuna -10 | 플래그: `day4_held_route_teacher`
 
 - 캐릭터: `yuna_sad.png`
 **유나**: *담임과 헤어진 직후 유나에게서 별관 사진이 온다. 빈 의자 두 개가 나란히 놓여 있고 한쪽에 유나의 재킷이 걸려 있다.* 선생님 옆이 더 편한가 봐. 그래도 오늘 네가 그냥 가면, 또 혼자 남겨진 기분일 것 같아.
@@ -16808,6 +16850,8 @@
 - 선택지:
   1. "보건선생님에게 답장하고 돌아간다" → `day4_hidden_msg_branch` | Nurse +4, Seoyeon -6 | 플래그: `day4_held_route_nurse`
   2. "서연을 따라 옥상에 올라가 손을 잡는다" → `day4_adult_counteroffer_accept_seoyeon` | Seoyeon +8, Nurse -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
+  3. "둘 다 서운하지 않게 잠깐씩 만나면 되겠다" → `day4_hidden_msg_branch` | Nurse -8, Seoyeon -8 | 플래그: `day4_held_route_nurse`
+  4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `day4_hidden_msg_branch` | Nurse -5, Seoyeon -10 | 플래그: `day4_held_route_nurse`
 
 - 캐릭터: `seyoun_sad.png`
 **서연**: *보건실을 나와 정문으로 향하는데 서연이 옥상 계단 앞을 막아선다. 애써 웃는 입술과 달리 손끝은 교복 소매를 구기고 있다.* 요즘 보건선생님만 찾아가잖아. 오늘만은 학생회장도 모범생도 아닌 나를 봐주면 안 돼?
@@ -16829,6 +16873,8 @@
 - 선택지:
   1. "보건선생님에게 돌아간다고 답장한다" → `day4_hidden_msg_branch` | Nurse +4, Dain -6 | 플래그: `day4_held_route_nurse`
   2. "체육관으로 들어가 다인의 부탁을 받아준다" → `day4_adult_counteroffer_accept_dain` | Dain +8, Nurse -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
+  3. "둘 다 서운하지 않게 잠깐씩 만나면 되겠다" → `day4_hidden_msg_branch` | Nurse -8, Dain -8 | 플래그: `day4_held_route_nurse`
+  4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `day4_hidden_msg_branch` | Nurse -5, Dain -10 | 플래그: `day4_held_route_nurse`
 
 - 캐릭터: `dain_sad.png`
 **다인**: *보건실 문을 닫고 나오자 체육관 비상문 앞에 다인이 서 있다. 다인은 무릎 테이프를 뜯었다 붙이며 시선을 피한다.* 요즘 보건선생님한테만 가잖아. 열 번만 받아줘. 끝나면… 오늘은 나 좀 안아주라.
@@ -16849,6 +16895,8 @@
 - 선택지:
   1. "보건선생님에게 답장하고 집으로 돌아간다" → `day4_hidden_msg_branch` | Nurse +4, Yuna -6 | 플래그: `day4_held_route_nurse`
   2. "별관으로 가서 유나 곁에 남는다" → `day4_adult_counteroffer_accept_yuna` | Yuna +8, Nurse -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
+  3. "둘 다 서운하지 않게 잠깐씩 만나면 되겠다" → `day4_hidden_msg_branch` | Nurse -8, Yuna -8 | 플래그: `day4_held_route_nurse`
+  4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `day4_hidden_msg_branch` | Nurse -5, Yuna -10 | 플래그: `day4_held_route_nurse`
 
 - 캐릭터: `yuna_sad.png`
 **유나**: *보건실을 나선 뒤 유나에게서 별관 사진 한 장이 도착한다. 빈 의자 두 개 중 하나에 유나의 재킷이 놓여 있다.* 선생님 옆이 더 편한가 봐. 그래도 오늘 네가 그냥 가면, 또 혼자 남겨진 기분일 것 같아.
@@ -16909,6 +16957,8 @@
 - 선택지:
   1. "공원으로 가서 서연과의 약속을 지킨다" → `wall_seo_1` | Seoyeon +3, Dain -6 | 플래그: `day4_held_route_seoyeon`
   2. "체육관으로 들어가 다인의 부탁을 받아준다" → `wall_seo_glimpse_4` | Dain +8, Seoyeon -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_penalty_deferred`
+  3. "둘 다 서운하지 않게 잠깐씩 만나면 되겠다" → `wall_seo_1` | Seoyeon -8, Dain -8 | 플래그: `day4_held_route_seoyeon`
+  4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `wall_seo_1` | Seoyeon -5, Dain -10 | 플래그: `day4_held_route_seoyeon`
 
 - 캐릭터: `dain_sad.png`
 **다인**: 열 번만 받아줘. 끝나면… 나 좀 안아주라. 오늘은 혼자 괜찮은 척 못 하겠어.
@@ -16938,6 +16988,8 @@
 - 선택지:
   1. "서연에게 답장하고 공원으로 간다" → `wall_seo_1` | Seoyeon +4, Yuna -6 | 플래그: `day4_held_route_seoyeon`
   2. "별관으로 가서 유나 곁에 남는다" → `wall_seo_yuna_tempt_accept` | Yuna +8, Seoyeon -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_penalty_deferred`
+  3. "둘 다 서운하지 않게 잠깐씩 만나면 되겠다" → `wall_seo_1` | Seoyeon -8, Yuna -8 | 플래그: `day4_held_route_seoyeon`
+  4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `wall_seo_1` | Seoyeon -5, Yuna -10 | 플래그: `day4_held_route_seoyeon`
 
 - 캐릭터: `yuna_sad.png`
 **유나**: 전에 나를 봐주던 사람이 말도 없이 사라졌어. 오늘 네가 그냥 가면 또 그날 같을 것 같아. 딱 오늘만, 여기 있어 줘.
@@ -17226,6 +17278,8 @@
 - 선택지:
   1. "안아준다" → `wall_seo_hug_1` | Seoyeon +3
   2. "손을 내민다" → `wall_seo_pinky_1` | Seoyeon +3
+  3. "울어도 돼. 내가 다 해결해줄게" → `wall_seo_hug_1` | Seoyeon -4
+  4. "이제부터 네가 힘들 일은 내가 알아서 막을게" → `wall_seo_hug_1` | Seoyeon -5
 
 - 캐릭터: `seyoun_cry.png`
 **서연**: *번진 화장이 손등에 남아 있고 서연의 어깨가 호흡마다 짧게 올라간다.*
@@ -17556,6 +17610,8 @@
 - 선택지:
   1. "다인에게 답장하고 체육관으로 간다" → `wall_dain_1` | Dain +5, Yuna -6 | 플래그: `day4_held_route_dain`
   2. "학교 후문으로 돌아가 유나 곁에 남는다" → `wall_dain_glimpse_4` | Yuna +8, Dain -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_penalty_deferred`
+  3. "둘 다 서운하지 않게 잠깐씩 만나면 되겠다" → `wall_dain_1` | Dain -8, Yuna -8 | 플래그: `day4_held_route_dain`
+  4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `wall_dain_1` | Dain -5, Yuna -10 | 플래그: `day4_held_route_dain`
 
 - 캐릭터: `yuna_normal.png` @ 0.35
 **유나**: 전에 나를 봐주던 사람이 말도 없이 사라졌어. 오늘 또 혼자 남으면 그때로 돌아갈 것 같아. 다인과 있었어도 괜찮아. 지금은 네가 와줘.
@@ -17585,6 +17641,8 @@
 - 선택지:
   1. "다인에게 답장하고 체육관으로 간다" → `wall_dain_1` | Dain +5, Seoyeon -6 | 플래그: `day4_held_route_dain`
   2. "서연을 따라 옥상에 올라가 손을 잡는다" → `wall_dain_seo_tempt_accept` | Seoyeon +8, Dain -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_penalty_deferred`
+  3. "둘 다 서운하지 않게 잠깐씩 만나면 되겠다" → `wall_dain_1` | Dain -8, Seoyeon -8 | 플래그: `day4_held_route_dain`
+  4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `wall_dain_1` | Dain -5, Seoyeon -10 | 플래그: `day4_held_route_dain`
 
 - 캐릭터: `seyoun_sad.png`
 **서연**: 오늘 집에 들어가면 또 웃는 얼굴부터 맞춰야 해. 딱 오늘만 학생회장 말고 그냥 서연으로 있게 해줘. 올라오면, 네 손 안 놓을게.
@@ -18372,6 +18430,8 @@
 - 선택지:
   1. "유나에게 답장하고 학교 후문으로 간다" → `wall_yuna_1` | Yuna +4, Seoyeon -6 | 플래그: `day4_held_route_yuna`
   2. "서연을 따라 옥상으로 올라가 손을 잡는다" → `wall_yuna_glimpse_4` | Seoyeon +8, Yuna -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_penalty_deferred`
+  3. "둘 다 서운하지 않게 잠깐씩 만나면 되겠다" → `wall_yuna_1` | Yuna -8, Seoyeon -8 | 플래그: `day4_held_route_yuna`
+  4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `wall_yuna_1` | Yuna -5, Seoyeon -10 | 플래그: `day4_held_route_yuna`
 
 - 캐릭터: `seyoun_normal.png`
 **서연**: 오늘 집에 들어가면 또 웃는 얼굴부터 맞춰야 해. 딱 오늘만 학생회장 말고 그냥 서연으로 있게 해줘. 올라오면, 네 손 안 놓을게.
@@ -18403,6 +18463,8 @@
 - 선택지:
   1. "유나에게 답장하고 학교 후문으로 간다" → `wall_yuna_1` | Yuna +4, Dain -6 | 플래그: `day4_held_route_yuna`
   2. "체육관으로 들어가 다인의 부탁을 받아준다" → `wall_yuna_dain_tempt_accept` | Dain +8, Yuna -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_penalty_deferred`
+  3. "둘 다 서운하지 않게 잠깐씩 만나면 되겠다" → `wall_yuna_1` | Yuna -8, Dain -8 | 플래그: `day4_held_route_yuna`
+  4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `wall_yuna_1` | Yuna -5, Dain -10 | 플래그: `day4_held_route_yuna`
 
 - 캐릭터: `dain_sad.png`
 **다인**: 열 번만 받아줘. 끝나면… 나 좀 안아주라. 오늘은 혼자 괜찮은 척 못 하겠어.
@@ -19275,6 +19337,8 @@
 - 선택지:
   1. "어젯밤 일을 그대로 말한다" → `morning5_caught_teacher_honest` | Teacher -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_teacher`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_teacher_lie` | Teacher -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_teacher`
+  3. "상처받지 않게 좋은 부분만 골라서 말한다" → `morning5_caught_teacher_lie` | Teacher -45
+  4. "일단 안심시키고 자세한 얘기는 나중으로 미룬다" → `morning5_caught_teacher_lie` | Teacher -55
 
 - 캐릭터: `teacher_sad.png`
 **담임선생님**: *아침 교실. 담임에게 원고 사진을 보여주려고 휴대폰을 내려놓는 순간 화면이 켜진다. 어젯밤 함께 있던 아이에게서 '어제 일, 우리 둘만 아는 거지?'라는 알림이 뜬다. 담임은 화면을 끝까지 읽고 휴대폰에서 손을 뗀다.* 어젯밤 내 연락에는 답하지 않고 이 아이를 만난 거니?
@@ -19306,6 +19370,8 @@
 - 선택지:
   1. "어젯밤 일을 그대로 말한다" → `morning5_caught_nurse_honest` | Nurse -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_nurse`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_nurse_lie` | Nurse -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_nurse`
+  3. "상처받지 않게 좋은 부분만 골라서 말한다" → `morning5_caught_nurse_lie` | Nurse -45
+  4. "일단 안심시키고 자세한 얘기는 나중으로 미룬다" → `morning5_caught_nurse_lie` | Nurse -55
 
 - 캐릭터: `nurse_worried.png`
 **보건선생님**: *보건실 진료대에 휴대폰을 내려놓는 순간 화면이 켜진다. 어젯밤 함께 있던 아이에게서 '어제 일, 우리 둘만 아는 거지?'라는 알림이 뜬다. 보건선생님은 평소처럼 웃으려다 입꼬리를 천천히 내린다.* 어제 내 연락을 못 본 게 아니라, 이 아이와 함께 있었던 거야?
@@ -19348,6 +19414,8 @@
 - 선택지:
   1. "어젯밤 일을 그대로 말한다" → `morning5_caught_dain_honest` | Dain -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_dain`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_dain_lie` | Dain -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_dain`
+  3. "상처받지 않게 좋은 부분만 골라서 말한다" → `morning5_caught_dain_lie` | Dain -45
+  4. "일단 안심시키고 자세한 얘기는 나중으로 미룬다" → `morning5_caught_dain_lie` | Dain -55
 
 - 캐릭터: `dain_sad.png`
 **다인**: *다인이 책상 옆에 서 있을 때 휴대폰이 울린다. 서연의 알림에 '어젯밤 옥상에서 잡았던 손, 아직 기억나'가 뜬다. 다인의 웃음이 그대로 멎는다.* 내가 기다리는 동안 옥상에 간 거야?
@@ -19360,6 +19428,8 @@
 - 선택지:
   1. "어젯밤 일을 그대로 말한다" → `morning5_caught_yuna_honest` | Yuna -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_yuna`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_yuna_lie` | Yuna -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_yuna`
+  3. "상처받지 않게 좋은 부분만 골라서 말한다" → `morning5_caught_yuna_lie` | Yuna -45
+  4. "일단 안심시키고 자세한 얘기는 나중으로 미룬다" → `morning5_caught_yuna_lie` | Yuna -55
 
 - 캐릭터: `yuna_sad.png`
 **유나**: *유나와 마주 앉은 책상 위에서 휴대폰이 울린다. 서연의 알림에 '어젯밤 옥상에서 잡았던 손, 아직 기억나'가 뜬다. 유나는 문장을 끝까지 읽고 화면에서 눈을 뗀다.* 내 메시지는 놔두고 옥상에 갔네.
@@ -19384,6 +19454,8 @@
 - 선택지:
   1. "어젯밤 일을 그대로 말한다" → `morning5_caught_seoyeon_honest` | Seoyeon -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_seoyeon`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_seoyeon_lie` | Seoyeon -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_seoyeon`
+  3. "상처받지 않게 좋은 부분만 골라서 말한다" → `morning5_caught_seoyeon_lie` | Seoyeon -45
+  4. "일단 안심시키고 자세한 얘기는 나중으로 미룬다" → `morning5_caught_seoyeon_lie` | Seoyeon -55
 
 - 캐릭터: `seyoun_sad.png`
 **서연**: *서연과 마주 앉은 책상 위에서 휴대폰이 울린다. 유나에게서 온 알림에 '어제 별관에 남아 줘서 고마워'가 뜬다. 서연은 알림을 끝까지 읽은 뒤 천천히 고개를 든다.* 어제 나한테 답장도 안 하고 별관에 간 거야?
@@ -19395,6 +19467,8 @@
 - 선택지:
   1. "어젯밤 일을 그대로 말한다" → `morning5_caught_dain_honest` | Dain -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_dain`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_dain_lie` | Dain -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_dain`
+  3. "상처받지 않게 좋은 부분만 골라서 말한다" → `morning5_caught_dain_lie` | Dain -45
+  4. "일단 안심시키고 자세한 얘기는 나중으로 미룬다" → `morning5_caught_dain_lie` | Dain -55
 
 - 캐릭터: `dain_sad.png`
 **다인**: *다인이 건너편 의자를 당기는 순간 유나의 알림이 화면을 밝힌다. '어제 별관에 남아 줘서 고마워.' 다인의 손이 의자 등받이에서 멎는다.* 내 메시지는 읽어 놓고 별관으로 간 거야?
@@ -19437,6 +19511,8 @@
 - 선택지:
   1. "어젯밤 일을 그대로 말한다" → `morning5_caught_seoyeon_honest` | Seoyeon -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_seoyeon`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_seoyeon_lie` | Seoyeon -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_seoyeon`
+  3. "상처받지 않게 좋은 부분만 골라서 말한다" → `morning5_caught_seoyeon_lie` | Seoyeon -45
+  4. "일단 안심시키고 자세한 얘기는 나중으로 미룬다" → `morning5_caught_seoyeon_lie` | Seoyeon -55
 
 - 캐릭터: `seyoun_sad.png`
 **서연**: *아침 교실. 서연 앞에 휴대폰을 내려놓는 순간 화면이 켜진다. 다인에게서 온 알림에 '어제 체육관에서 약속한 거, 잊지 마'가 그대로 뜬다. 서연의 시선이 화면에 멎는다.* 어제 공원에는 오지 않고 체육관에 간 거야?
@@ -19467,6 +19543,8 @@
 - 선택지:
   1. "어젯밤 일을 그대로 말한다" → `morning5_caught_yuna_honest` | Yuna -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_yuna`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_yuna_lie` | Yuna -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_yuna`
+  3. "상처받지 않게 좋은 부분만 골라서 말한다" → `morning5_caught_yuna_lie` | Yuna -45
+  4. "일단 안심시키고 자세한 얘기는 나중으로 미룬다" → `morning5_caught_yuna_lie` | Yuna -55
 
 - 캐릭터: `yuna_sad.png`
 **유나**: *유나가 책을 펼치려는 순간 다인의 알림이 화면에 뜬다. '어제 체육관에서 약속한 거, 잊지 마.' 유나의 손이 책 표지 위에서 멎는다.* 내 이름이 화면에 떠 있는데도 체육관에 남았네.
@@ -19863,6 +19941,8 @@
 - 선택지:
   1. "7년이나 쓰셨으면 거의 완성본이겠네요. 굳이 표시할 건 없을 것 같아요." → `hidden_homeroom_d5_praise_trap_1` | Teacher -25 | 플래그: `teacher_praise_broken`
   2. "먼저 읽어볼게요. 표시해도 돼요?" → `hidden_homeroom_d5_correct_1` | Teacher +9
+  3. "제가 학생이니까 어려운 부분은 그냥 넘겨도 되죠?" → `hidden_homeroom_d5_praise_trap_1` | Teacher -18
+  4. "선생님 글이니까 좋은 말만 골라 적어드릴게요" → `hidden_homeroom_d5_praise_trap_1` | Teacher -20
 
 - 캐릭터: `teacher_sad.png`
 **{name}**: *원고를 안고 있다. 봉투가 팔 안쪽을 누른다.*

@@ -597,7 +597,9 @@
         "text": "*Ela não continua depois de «Tinha outra pessoa...». Yuna empurra a ponta do marcador para dentro do livro.*",
         "choices": [
             "E essa pessoa, agora?",
-            "Não pergunto. Só sento do lado."
+            "Não pergunto. Só sento do lado.",
+            "Eu consigo ouvir você melhor do que essa pessoa.",
+            "Então agora pode contar tudo só para mim."
         ]
     },
     "lunch2_yuna_c1_1": {

@@ -111,8 +111,79 @@ test('direct choice affinity distribution keeps subtle penalties meaningful but 
         }
     }
 
-    assert.equal(total, 273);
-    assert.deepEqual(counts, { positive: 59, negative: 66, neutral: 123, mixed: 25 });
+    assert.equal(total, 353);
+    assert.deepEqual(counts, { positive: 59, negative: 146, neutral: 123, mixed: 25 });
+});
+
+test('every affinity screen that had only two options now adds two localized negative traps', () => {
+    const expandedSceneIds = [
+        'lunch_seo_choice',
+        'lunch_yuna_choice',
+        'after1_jealousy_seo_choice',
+        'after_homeroom_honest_choice2',
+        'lunch2_yuna_choice',
+        'hidden_nurse_d2_choice1',
+        'hidden_nurse_d2_choice2',
+        'after2_seo_choice1',
+        'hidden_homeroom_d3_choice',
+        'morning3_date_seo_choice',
+        'morning3_date_dain_choice',
+        'morning3_date_yuna_choice',
+        'lunch3_seo_witness_choice',
+        'after3_seo_choice',
+        'after3_yuna_choice',
+        'after3_dain_choice',
+        'after3_dain_dilemma_final',
+        'date_dain_compliment_choice',
+        'wall_seo_hug_choice',
+        'day4_teacher_seoyeon_counteroffer',
+        'day4_teacher_dain_counteroffer',
+        'day4_teacher_yuna_counteroffer',
+        'day4_nurse_seoyeon_counteroffer',
+        'day4_nurse_dain_counteroffer',
+        'day4_nurse_yuna_counteroffer',
+        'wall_seo_glimpse_2',
+        'wall_seo_yuna_tempt_2',
+        'wall_dain_glimpse_4_c',
+        'wall_dain_seo_tempt_2',
+        'wall_yuna_glimpse_3_b',
+        'wall_yuna_dain_tempt_2',
+        'morning5_caught_teacher_counteroffer',
+        'morning5_caught_nurse_counteroffer',
+        'morning5_caught_seoyeon_by_dain',
+        'morning5_caught_seoyeon_by_yuna',
+        'morning5_caught_dain_by_seoyeon',
+        'morning5_caught_dain_by_yuna',
+        'morning5_caught_yuna_by_seoyeon',
+        'morning5_caught_yuna_by_dain',
+        'hidden_homeroom_d5_choice'
+    ];
+    const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy);
+
+    assert.equal(expandedSceneIds.length, 40);
+    for (const sceneId of expandedSceneIds) {
+        const scene = scenes[sceneId];
+        assert.equal(scene?.choices?.length, 4, `${sceneId} must expose four choices`);
+        for (const trap of scene.choices.slice(2)) {
+            const deltas = Object.values(trap.stats || {})
+                .map(stat => Number(stat?.affinity))
+                .filter(Number.isFinite);
+            assert.ok(deltas.length > 0, `${sceneId} traps must change affinity`);
+            assert.ok(deltas.every(value => value < 0), `${sceneId} traps must be strictly negative`);
+        }
+        for (const copy of localizedCopies) {
+            assert.equal(copy[sceneId]?.choices?.length, 4, `${sceneId} must have four choices in every locale`);
+            assert.ok(copy[sceneId].choices.slice(2).every(choice => choice.trim().length > 0));
+        }
+    }
+
+    const remainingTwoChoiceAffinityScreens = Object.entries(scenes)
+        .filter(([, scene]) => scene.choices?.length === 2)
+        .filter(([, scene]) => scene.choices.some(choice =>
+            Object.values(choice.stats || {}).some(stat => Number(stat?.affinity) !== 0)
+        ))
+        .map(([sceneId]) => sceneId);
+    assert.deepEqual(remainingTwoChoiceAffinityScreens, []);
 });
 
 test('two-option screens retain their original response and add the trap as a third choice', () => {
@@ -179,7 +250,7 @@ test('negative-choice screens stay distributed across every story day', () => {
         1: { choiceScreens: 16, negativeScreens: 8 },
         2: { choiceScreens: 18, negativeScreens: 10 },
         3: { choiceScreens: 24, negativeScreens: 14 },
-        4: { choiceScreens: 32, negativeScreens: 23 },
+        4: { choiceScreens: 32, negativeScreens: 24 },
         5: { choiceScreens: 28, negativeScreens: 11 }
     };
 
@@ -259,7 +330,7 @@ test('day 4 rival temptations use asymmetric relationship costs and stay localiz
     for (const counteroffer of counteroffers) {
         const scene = scenes[counteroffer.sceneId];
         assert.equal(scene?.competitiveAffinity, true, `${counteroffer.sceneId} must stay marked as competitive`);
-        assert.equal(scene?.choices?.length, 2, `${counteroffer.sceneId} must present the route and rival`);
+        assert.equal(scene?.choices?.length, 4, `${counteroffer.sceneId} must present two routes and two traps`);
         assert.equal(scene.choices[0].stats?.[counteroffer.routeCharacter]?.affinity, counteroffer.heldGain);
         assert.equal(scene.choices[0].stats?.[counteroffer.rivalCharacter]?.affinity, -6);
         assert.ok(scene.choices[0].setFlags?.includes(counteroffer.heldFlag));
@@ -267,7 +338,7 @@ test('day 4 rival temptations use asymmetric relationship costs and stay localiz
         assert.equal(scene.choices[1].stats?.[counteroffer.routeCharacter]?.affinity, -10);
         assert.ok(scene.choices[1].setFlags?.includes(counteroffer.temptedFlag));
         assert.ok(scene.choices[1].setFlags?.includes('day4_counteroffer_penalty_deferred'));
-        assert.deepEqual(korean[counteroffer.sceneId]?.choices, counteroffer.choices);
+        assert.deepEqual(korean[counteroffer.sceneId]?.choices?.slice(0, 2), counteroffer.choices);
 
         for (const choice of scene.choices) {
             const deltas = Object.values(choice.stats).map(stat => Number(stat.affinity));
@@ -275,7 +346,7 @@ test('day 4 rival temptations use asymmetric relationship costs and stay localiz
             assert.ok(deltas.reduce((sum, value) => sum + value, 0) <= 0, `${counteroffer.sceneId} must not create net affinity`);
         }
         for (const copy of localizedCopies) {
-            assert.equal(copy[counteroffer.sceneId]?.choices?.length, 2, `${counteroffer.sceneId} must exist in every locale`);
+            assert.equal(copy[counteroffer.sceneId]?.choices?.length, 4, `${counteroffer.sceneId} must exist in every locale`);
         }
     }
 });
@@ -343,7 +414,7 @@ test('accepted temptations damage trust in two causal stages when the lead sees 
         const acceptance = scenes[acceptSceneId].choices[1];
         const caught = scenes[caughtSceneId];
         assert.equal(acceptance.stats[lead].affinity, -10, `${acceptSceneId} must apply only the unanswered-message hurt`);
-        assert.equal(caught.choices.length, 2, `${caughtSceneId} must allow honesty or another lie`);
+        assert.equal(caught.choices.length, 4, `${caughtSceneId} must allow honesty, a lie, and two deceptive traps`);
         assert.equal(caught.choices[0].next, honestNext);
         assert.equal(caught.choices[0].stats[lead].affinity, -40);
         assert.equal(caught.choices[1].next, lieNext);
@@ -352,7 +423,7 @@ test('accepted temptations damage trust in two causal stages when the lead sees 
         assert.equal(acceptance.stats[lead].affinity + caught.choices[1].stats[lead].affinity, -60);
 
         for (const copy of localizedCopies) {
-            assert.equal(copy[caughtSceneId]?.choices?.length, 2, `${caughtSceneId} choices must exist in every locale`);
+            assert.equal(copy[caughtSceneId]?.choices?.length, 4, `${caughtSceneId} choices must exist in every locale`);
             assert.ok(copy[honestNext]?.text, `${honestNext} text must exist in every locale`);
             assert.ok(copy[lieNext]?.text, `${lieNext} text must exist in every locale`);
         }
@@ -375,8 +446,8 @@ test('accepted temptations damage trust in two causal stages when the lead sees 
         assert.equal(acceptance.stats[lead].affinity + caught.choices[0].stats[lead].affinity, -50);
         assert.equal(acceptance.stats[lead].affinity + caught.choices[1].stats[lead].affinity, -60);
         for (const copy of localizedCopies) {
-            assert.equal(copy[acceptSceneId]?.choices?.length, 2, `${acceptSceneId} choices must exist in every locale`);
-            assert.equal(copy[caughtSceneId]?.choices?.length, 2, `${caughtSceneId} choices must exist in every locale`);
+            assert.equal(copy[acceptSceneId]?.choices?.length, 4, `${acceptSceneId} choices must exist in every locale`);
+            assert.equal(copy[caughtSceneId]?.choices?.length, 4, `${caughtSceneId} choices must exist in every locale`);
             assert.ok(copy[honestNext]?.text, `${honestNext} text must exist in every locale`);
             assert.ok(copy[lieNext]?.text, `${lieNext} text must exist in every locale`);
         }
@@ -413,18 +484,26 @@ test('new temptation and bittersweet CGs are registered and localized in every g
     }
 });
 
-test('every competitive scene remains a non-positive relationship tradeoff', () => {
+test('competitive scenes retain both relationship tradeoffs and add two all-negative traps', () => {
     const competitiveScenes = Object.entries(scenes).filter(([, scene]) => scene.competitiveAffinity);
     assert.ok(competitiveScenes.length > 0, 'at least one competitive choice scene must exist');
 
     for (const [sceneId, scene] of competitiveScenes) {
-        for (const choice of scene.choices || []) {
+        assert.equal(scene.choices?.length, 4, `${sceneId} must expose four choices`);
+        for (const choice of scene.choices.slice(0, 2)) {
             const deltas = Object.values(choice.stats || {})
                 .map(stat => Number(stat?.affinity))
                 .filter(Number.isFinite);
             assert.equal(deltas.length, 2, `${sceneId} must affect exactly two characters`);
             assert.ok(deltas.some(value => value > 0) && deltas.some(value => value < 0), `${sceneId} must trade affinity between rivals`);
             assert.ok(deltas.reduce((sum, value) => sum + value, 0) <= 0, `${sceneId} must not create net affinity`);
+        }
+        for (const choice of scene.choices.slice(2)) {
+            const deltas = Object.values(choice.stats || {})
+                .map(stat => Number(stat?.affinity))
+                .filter(Number.isFinite);
+            assert.equal(deltas.length, 2, `${sceneId} traps must affect both characters`);
+            assert.ok(deltas.every(value => value < 0), `${sceneId} traps must reduce both relationships`);
         }
     }
 });
@@ -983,13 +1062,13 @@ test('day 2 through 5 rivalry copy stays synchronized across every supported loc
         'after5_farewell_dain_2', 'after5_farewell_dain_4', 'after5_farewell_dain_4_c'
     ];
     const expectedDigests = {
-        ko: 'dce2dd2800036771e0ea9f8be4c78780c9123e66a06d4c6ef60504e9b084d447',
-        en: 'ed8f85e5336561aac8f1cce6db72f3e610701c5e2e692f69a5ea827f841bfd6d',
-        ja: '1798763fe5743f3b0b77b27f1c7c0737228a343861c91ae3735253a5cefb05c5',
-        es: 'e90e5fc8c28bfe916c9302d475b8fe898c0f547f0591b33d5b941b6cd421e18e',
-        fr: 'cc84b6d96545c7a1d37149f7231273fc37c4f3994a16c96c7bf1756a2d0ca20d',
-        de: '7cc4d4d6c4d342927abc9a25ac696627863137d738d200634e57af2a274110e3',
-        pt: '3bfa5c0b5032d443714c97ff19a50d1f2c67f5c945121c31dc6e93c20c4e45e7'
+        ko: 'c8eecf35afc0adcd0adcef705f1d300175c7b7f50c16cdb2b2527180fa3fd029',
+        en: 'c302bd4aee5e4aa867b75367251bc8ef01e1f0151bc4d170cea3df9d1f6c1374',
+        ja: 'ccbb381912fea9d7e3ecdf7d039f30d6a10e054a471582a242be988c6b39cacc',
+        es: 'aa13f742f060cd5dbbc5e3dff527b5d1de7d2371644de66aa334d94133828452',
+        fr: '2d36beacf0de49a215bd8e92cc1c35d5784a6eb0b5526dfda11087439a2cb3f0',
+        de: '6d8db666499762bb72aee2431fe2af1d5f8e9796c66a561b098dba71a78a3a7c',
+        pt: 'ad7afa76e2f5504db0a31f8d247b8624642140b5c1dc3d9c41ebc6fa2c17e11b'
     };
 
     for (const [locale, expectedDigest] of Object.entries(expectedDigests)) {

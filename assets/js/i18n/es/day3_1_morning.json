@@ -1,9 +1,24 @@
 {
-    "hidden_homeroom_d3_low": {"name":"Profesora","text":"*La profesora se detiene ante el aula vacía y señala el pasillo en vez de los pupitres del interior.* Hoy hablemos solo de las clases."},
-    "hidden_nurse_d3_low": {"name":"Enfermera","text":"*La enfermera permanece junto a la puerta sin sacar la silla de consulta.* Ahora no creo que debamos seguir hablando a solas. Si necesitas algo, ven durante el horario oficial de consulta."},
-    "morning3_date_seo_low": {"name":"Seoyeon","text":"*Seoyeon enciende la pantalla del móvil y la apaga enseguida. Cuando vuestras miradas se cruzan, baja los ojos hacia el portapapeles.* Pondré los planes del fin de semana en el chat del grupo."},
-    "morning3_date_dain_low": {"name":"Dain","text":"*Dain sostiene el balón contra el costado, te mira un instante y vuelve la vista a la cancha.* Este fin de semana entrenaré sola."},
-    "morning3_date_yuna_low": {"name":"Yuna","text":"*Yuna empieza a sacar una nota doblada, pero vuelve a guardarla entre las páginas del libro.* Este fin de semana... prefiero estar sola."},
+    "hidden_homeroom_d3_low": {
+        "name": "Profesora",
+        "text": "*La profesora se detiene ante el aula vacía y señala el pasillo en vez de los pupitres del interior.* Hoy hablemos solo de las clases."
+    },
+    "hidden_nurse_d3_low": {
+        "name": "Enfermera",
+        "text": "*La enfermera permanece junto a la puerta sin sacar la silla de consulta.* Ahora no creo que debamos seguir hablando a solas. Si necesitas algo, ven durante el horario oficial de consulta."
+    },
+    "morning3_date_seo_low": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon enciende la pantalla del móvil y la apaga enseguida. Cuando vuestras miradas se cruzan, baja los ojos hacia el portapapeles.* Pondré los planes del fin de semana en el chat del grupo."
+    },
+    "morning3_date_dain_low": {
+        "name": "Dain",
+        "text": "*Dain sostiene el balón contra el costado, te mira un instante y vuelve la vista a la cancha.* Este fin de semana entrenaré sola."
+    },
+    "morning3_date_yuna_low": {
+        "name": "Yuna",
+        "text": "*Yuna empieza a sacar una nota doblada, pero vuelve a guardarla entre las páginas del libro.* Este fin de semana... prefiero estar sola."
+    },
     "morning3_start": {
         "name": "{name}",
         "text": "*Tercer día. Se me pegaron las sábanas. Apagué el despertador tres veces. Anoche me quedé hasta tarde mandando mensajes.*"
@@ -270,7 +285,9 @@
         "text": "*Son hojas manuscritas. La profesora cubre la punta del papel con la palma.*",
         "choices": [
             "Vi el manuscrito. — ¿Está escribiendo una novela?",
-            "Perdón, no vi nada."
+            "Perdón, no vi nada.",
+            "Déjeme ser el primero en leerlo cuando esté terminado.",
+            "Lo leeré y le señalaré primero lo que haya que corregir."
         ]
     },
     "hidden_homeroom_d3_reveal_1": {
@@ -705,7 +722,9 @@
         "text": "*Seoyeon pregunta desde la puerta del salón. La tapa de la botella que Dain estaba girando se detiene.*",
         "choices": [
             "Claro. ¿Dónde?",
-            "Creo que voy a estar ocupado"
+            "Creo que voy a estar ocupado",
+            "Es una petición de la presidenta del consejo. Claro que sacaré tiempo.",
+            "Haré un hueco si no viene nadie más."
         ]
     },
     "morning3_date_seo_accept": {
@@ -737,7 +756,9 @@
         "text": "*Los pasos de Seoyeon se detienen. Dain espera mi respuesta.*",
         "choices": [
             "Bueno, hecho",
-            "El fin de semana no puedo..."
+            "El fin de semana no puedo...",
+            "Ya que insistes tanto, iré.",
+            "Si haces que sea divertido, trato hecho."
         ]
     },
     "morning3_date_dain_accept": {
@@ -773,7 +794,9 @@
         "text": "*Mientras leo la nota, Yuna mira primero a Seoyeon y luego a Dain. Esta vez no se cubre la cara con el libro.*",
         "choices": [
             "Escribir «Iré» al dorso de la nota",
-            "Escribir «Este fin de semana no puedo» al dorso de la nota"
+            "Escribir «Este fin de semana no puedo» al dorso de la nota",
+            "Escribe en la nota: «Si no quieres ir sola, te acompañaré».",
+            "Escribe en la nota: «Iré si se lo ocultamos a los demás»."
         ]
     },
     "morning3_date_yuna_accept": {

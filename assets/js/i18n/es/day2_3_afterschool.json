@@ -1,5 +1,8 @@
 {
-    "hidden_nurse_d2_low": {"name":"Enfermera","text":"*Cuando abres la puerta de la enfermería, la enfermera cierra el expediente.* Si no necesitas atención médica, ahora no puedo hablar mucho rato. Vuelve a clase."},
+    "hidden_nurse_d2_low": {
+        "name": "Enfermera",
+        "text": "*Cuando abres la puerta de la enfermería, la enfermera cierra el expediente.* Si no necesitas atención médica, ahora no puedo hablar mucho rato. Vuelve a clase."
+    },
     "after2_start": {
         "name": "{name}",
         "text": "*Después de clase. Dos notificaciones en el celular.*"
@@ -45,7 +48,9 @@
         "text": "*La enfermera dobla y estira mi codo para calcular la longitud del apósito.*",
         "choices": [
             "¿Esto también se aprende en el hospital?",
-            "Es meticulosa hasta con una venda."
+            "Es meticulosa hasta con una venda.",
+            "Solo me cuida con tanto esmero a mí, ¿verdad?",
+            "Podría fingir que estoy enfermo para verla más a menudo."
         ]
     },
     "hidden_nurse_d2_choice1_a": {
@@ -69,7 +74,9 @@
         "text": "*Los nudillos de la mano que sujeta la manija del cajón están blancos.*",
         "choices": [
             "Cuántos secretos. ¿No me cuenta uno al menos?",
-            "Está bien, no vi nada"
+            "Está bien, no vi nada",
+            "Si es su secreto, le prometo que lo guardaré.",
+            "Puede contármelo todo a mí."
         ]
     },
     "hidden_nurse_d2_choice2_a": {
@@ -322,7 +329,9 @@
         "text": "*Una franja naranja entra por las persianas y divide los documentos. Seoyeon alinea las esquinas de las hojas.*",
         "choices": [
             "Qué atardecer. Lo de fuera, digo.",
-            "Si haces esto todos los días, ya estarás acostumbrada."
+            "Si haces esto todos los días, ya estarás acostumbrada.",
+            "No te esfuerces sola. ¿Quieres que lo termine por ti?",
+            "Ya es suficiente. Haz el resto mañana."
         ]
     },
     "after2_seo_sunset_joke": {

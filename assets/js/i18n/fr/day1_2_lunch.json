@@ -129,7 +129,9 @@
         "text": "*Elle me tend l’omelette roulée.*",
         "choices": [
             "Manger le morceau qu'elle me tend",
-            "Ce serait meilleur si tu la mangeais toi-même"
+            "Ce serait meilleur si tu la mangeais toi-même",
+            "Puisque tu t’es donné tant de mal, je vais bien en goûter une bouchée.",
+            "À ce rythme-là, je pourrais te demander de me préparer mon déjeuner tous les jours."
         ]
     },
     "lunch_seo_c1_1": {
@@ -434,7 +436,9 @@
         "text": "*Je remarque le livre que Yuna a oublié. Elle n'est encore qu'à quelques pas. Je me lance à sa poursuite.*",
         "choices": [
             "Il est bien ce livre ? Je devrais le lire aussi ?",
-            "On dirait que tu aimes rester tranquille avec un livre."
+            "On dirait que tu aimes rester tranquille avec un livre.",
+            "Je saurai être plus intéressant que ce livre.",
+            "Comme tu es silencieuse, ce doit être facile de rester avec toi."
         ]
     },
     "lunch_yuna_c1_1": {

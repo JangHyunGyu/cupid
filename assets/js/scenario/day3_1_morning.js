@@ -368,7 +368,9 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/teacher_normal.png",
         "choices": [
             { "next": "hidden_homeroom_d3_reveal_1", "stats": {"Teacher":{"affinity":9}} },
-            { "next": "hidden_homeroom_d3_hide_1", "stats": {"Teacher":{"affinity":-3}} }
+            { "next": "hidden_homeroom_d3_hide_1", "stats": {"Teacher":{"affinity":-3}} },
+            { "next": "hidden_homeroom_d3_reveal_1", "stats": {"Teacher":{"affinity":-5}} },
+            { "next": "hidden_homeroom_d3_reveal_1", "stats": {"Teacher":{"affinity":-6}} }
         ]
     },
     "hidden_homeroom_d3_reveal_1": {
@@ -918,7 +920,9 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/seyoun_normal.png",
         "choices": [
             { "next": "morning3_date_seo_accept", "stats": {"Seoyeon":{"affinity":4}}, "setFlags": ["accepted_seoyeon_date"] },
-            { "next": "morning3_date_seo_decline", "stats": {"Seoyeon":{"affinity":-3}} }
+            { "next": "morning3_date_seo_decline", "stats": {"Seoyeon":{"affinity":-3}} },
+            { "next": "morning3_date_seo_accept", "stats": {"Seoyeon":{"affinity":-4}} },
+            { "next": "morning3_date_seo_accept", "stats": {"Seoyeon":{"affinity":-5}} }
         ]
     },
     "morning3_date_seo_accept": {
@@ -957,7 +961,9 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/dain_normal.png",
         "choices": [
             { "next": "morning3_date_dain_accept", "stats": {"Dain":{"affinity":4}}, "setFlags": ["accepted_dain_date"] },
-            { "next": "morning3_date_dain_decline", "stats": {"Dain":{"affinity":-3}} }
+            { "next": "morning3_date_dain_decline", "stats": {"Dain":{"affinity":-3}} },
+            { "next": "morning3_date_dain_accept", "stats": {"Dain":{"affinity":-4}} },
+            { "next": "morning3_date_dain_accept", "stats": {"Dain":{"affinity":-5}} }
         ]
     },
     "morning3_date_dain_accept": {
@@ -1001,7 +1007,9 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/yuna_normal.png",
         "choices": [
             { "next": "morning3_date_yuna_accept", "stats": {"Yuna":{"affinity":4}}, "setFlags": ["accepted_yuna_date"] },
-            { "next": "morning3_date_yuna_decline", "stats": {"Yuna":{"affinity":-3}} }
+            { "next": "morning3_date_yuna_decline", "stats": {"Yuna":{"affinity":-3}} },
+            { "next": "morning3_date_yuna_accept", "stats": {"Yuna":{"affinity":-4}} },
+            { "next": "morning3_date_yuna_accept", "stats": {"Yuna":{"affinity":-5}} }
         ]
     },
     "morning3_date_yuna_accept": {

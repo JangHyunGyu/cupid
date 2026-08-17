@@ -69,7 +69,9 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "character": "assets/images/characters/nurse_normal.png",
         "choices": [
             { "next": "hidden_nurse_d2_choice1_a", "stats": {"Nurse":{"affinity":8}} },
-            { "next": "hidden_nurse_d2_choice1_b", "stats": {"Nurse":{"affinity":-2}} }
+            { "next": "hidden_nurse_d2_choice1_b", "stats": {"Nurse":{"affinity":-2}} },
+            { "next": "hidden_nurse_d2_choice1_b", "stats": {"Nurse":{"affinity":-4}} },
+            { "next": "hidden_nurse_d2_choice1_b", "stats": {"Nurse":{"affinity":-6}} }
         ]
     },
     "hidden_nurse_d2_choice1_a": {
@@ -97,7 +99,9 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "character": "assets/images/characters/nurse_shy.png",
         "choices": [
             { "next": "hidden_nurse_d2_choice2_a", "stats": {"Nurse":{"affinity":6}} },
-            { "next": "hidden_nurse_d2_choice2_b", "stats": {"Nurse":{"affinity":-3}} }
+            { "next": "hidden_nurse_d2_choice2_b", "stats": {"Nurse":{"affinity":-3}} },
+            { "next": "hidden_nurse_d2_choice2_b", "stats": {"Nurse":{"affinity":-4}} },
+            { "next": "hidden_nurse_d2_choice2_b", "stats": {"Nurse":{"affinity":-5}} }
         ]
     },
     "hidden_nurse_d2_choice2_a": {
@@ -455,7 +459,9 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "character": "assets/images/characters/seyoun_normal.png",
         "choices": [
             { "next": "after2_seo_sunset_joke", "stats": {"Seoyeon":{"affinity":4}} },
-            { "next": "after2_seo_neck_worry", "stats": {"Seoyeon":{"affinity":-3}} }
+            { "next": "after2_seo_neck_worry", "stats": {"Seoyeon":{"affinity":-3}} },
+            { "next": "after2_seo_neck_worry", "stats": {"Seoyeon":{"affinity":-4}} },
+            { "next": "after2_seo_neck_worry", "stats": {"Seoyeon":{"affinity":-5}} }
         ]
     },
     "after2_seo_sunset_joke": {

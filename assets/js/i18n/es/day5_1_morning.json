@@ -19,7 +19,9 @@
         "text": "*En el aula por la mañana, dejo el teléfono sobre la mesa para enseñarle a la profesora una foto del borrador. La pantalla se ilumina con un mensaje de la chica con la que estuve anoche: 'Lo de ayer queda entre nosotros, ¿verdad?'. La profesora lo lee entero y aparta la mano del teléfono.* ¿Anoche ignoraste mi mensaje para verte con esta chica?",
         "choices": [
             "Contarle lo que pasó anoche",
-            "Restarle importancia y decir que no fue nada"
+            "Restarle importancia y decir que no fue nada",
+            "Contarle solo las partes buenas para no hacerle daño.",
+            "Tranquilizarla por ahora y dejar los detalles para más tarde."
         ]
     },
     "morning5_caught_nurse_counteroffer": {
@@ -27,7 +29,9 @@
         "text": "*En cuanto dejo el teléfono sobre la camilla de la enfermería, la pantalla se ilumina. Un mensaje de la chica con la que estuve anoche dice: 'Lo de ayer queda entre nosotros, ¿verdad?'. La enfermera intenta sonreír como siempre, pero deja caer lentamente las comisuras de los labios.* Así que no es que no vieras mi mensaje. ¿Estabas con esta chica?",
         "choices": [
             "Contarle lo que pasó anoche",
-            "Restarle importancia y decir que no fue nada"
+            "Restarle importancia y decir que no fue nada",
+            "Contarle solo las partes buenas para no hacerle daño.",
+            "Tranquilizarla por ahora y dejar los detalles para más tarde."
         ]
     },
     "morning5_caught_teacher_honest": {
@@ -54,7 +58,9 @@
         "text": "*Por la mañana, en el aula. En cuanto dejo el móvil delante de Seoyeon, la pantalla se enciende. Una notificación de Dain dice: «No olvides lo que prometimos anoche en el gimnasio». La mirada de Seoyeon se queda clavada en la pantalla.* ¿No fuiste al parque y te marchaste al gimnasio?",
         "choices": [
             "Contarle lo de anoche",
-            "Restarle importancia y disimular"
+            "Restarle importancia y disimular",
+            "Contarle solo las partes buenas para no hacerle daño.",
+            "Tranquilizarla por ahora y dejar los detalles para más tarde."
         ]
     },
     "morning5_caught_seoyeon_by_yuna": {
@@ -62,7 +68,9 @@
         "text": "*El móvil vibra sobre la mesa entre Seoyeon y yo. Una notificación de Yuna dice: «Gracias por quedarte conmigo anoche en el anexo». Seoyeon la lee hasta el final y levanta la cabeza despacio.* ¿Fuiste al anexo sin siquiera responderme?",
         "choices": [
             "Contarle lo de anoche",
-            "Restarle importancia y disimular"
+            "Restarle importancia y disimular",
+            "Contarle solo las partes buenas para no hacerle daño.",
+            "Tranquilizarla por ahora y dejar los detalles para más tarde."
         ]
     },
     "morning5_caught_dain_by_seoyeon": {
@@ -70,7 +78,9 @@
         "text": "*El móvil vibra mientras Dain está junto a la mesa. Una notificación de Seoyeon dice: «Todavía recuerdo la mano que sostuve anoche en la azotea». La sonrisa de Dain se congela.* ¿Fuiste a la azotea mientras yo esperaba?",
         "choices": [
             "Contarle lo de anoche",
-            "Restarle importancia y disimular"
+            "Restarle importancia y disimular",
+            "Contarle solo las partes buenas para no hacerle daño.",
+            "Tranquilizarla por ahora y dejar los detalles para más tarde."
         ]
     },
     "morning5_caught_dain_by_yuna": {
@@ -78,7 +88,9 @@
         "text": "*Cuando Dain aparta la silla de enfrente, una notificación de Yuna ilumina la pantalla. «Gracias por quedarte conmigo anoche en el anexo». La mano de Dain se detiene en el respaldo.* ¿Leíste mi mensaje y fuiste al anexo?",
         "choices": [
             "Contarle lo de anoche",
-            "Restarle importancia y disimular"
+            "Restarle importancia y disimular",
+            "Contarle solo las partes buenas para no hacerle daño.",
+            "Tranquilizarla por ahora y dejar los detalles para más tarde."
         ]
     },
     "morning5_caught_yuna_by_seoyeon": {
@@ -86,7 +98,9 @@
         "text": "*El móvil vibra sobre la mesa entre Yuna y yo. Una notificación de Seoyeon dice: «Todavía recuerdo la mano que sostuve anoche en la azotea». Yuna lee cada palabra antes de apartar los ojos de la pantalla.* Dejaste mis mensajes sin responder y fuiste a la azotea.",
         "choices": [
             "Contarle lo de anoche",
-            "Restarle importancia y disimular"
+            "Restarle importancia y disimular",
+            "Contarle solo las partes buenas para no hacerle daño.",
+            "Tranquilizarla por ahora y dejar los detalles para más tarde."
         ]
     },
     "morning5_caught_yuna_by_dain": {
@@ -94,7 +108,9 @@
         "text": "*Justo cuando Yuna abre el libro, aparece una notificación de Dain. «No olvides lo que prometimos anoche en el gimnasio». La mano de Yuna se detiene sobre la cubierta.* Mi nombre seguía en tu pantalla y aun así te quedaste en el gimnasio.",
         "choices": [
             "Contarle lo de anoche",
-            "Restarle importancia y disimular"
+            "Restarle importancia y disimular",
+            "Contarle solo las partes buenas para no hacerle daño.",
+            "Tranquilizarla por ahora y dejar los detalles para más tarde."
         ]
     },
     "morning5_caught_seoyeon_honest": {
@@ -262,7 +278,9 @@
         "text": "*Abrazo el manuscrito. El sobre presiona la parte interna de mi brazo.*",
         "choices": [
             "Después de siete años, ya estará casi terminado. No creo que haga falta marcar nada.",
-            "Lo leeré primero. ¿Puedo hacer anotaciones?"
+            "Lo leeré primero. ¿Puedo hacer anotaciones?",
+            "Como solo soy un alumno, puedo saltarme las partes difíciles, ¿verdad?",
+            "Como es su texto, solo señalaré las cosas buenas."
         ]
     },
     "hidden_homeroom_d5_praise_trap_1": {

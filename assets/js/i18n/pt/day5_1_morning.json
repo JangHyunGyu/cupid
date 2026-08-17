@@ -19,7 +19,9 @@
         "text": "*De manhã, na sala de aula, coloco o celular sobre a mesa para mostrar à professora uma foto do rascunho. A tela acende com uma mensagem da garota com quem estive ontem: 'O que aconteceu ontem fica só entre nós, certo?'. A professora lê até o fim e tira a mão do celular.* Você ignorou minha mensagem ontem para encontrar essa garota?",
         "choices": [
             "Contar o que aconteceu ontem à noite",
-            "Dizer que não foi nada importante"
+            "Dizer que não foi nada importante",
+            "Contar só as partes boas para não magoá-la.",
+            "Tranquilizá-la por enquanto e deixar os detalhes para depois."
         ]
     },
     "morning5_caught_nurse_counteroffer": {
@@ -27,7 +29,9 @@
         "text": "*Assim que coloco o celular sobre a maca da enfermaria, a tela acende. Uma mensagem da garota com quem estive ontem diz: 'O que aconteceu ontem fica só entre nós, certo?'. A enfermeira tenta sorrir como sempre, mas a expressão desaparece devagar.* Então você não deixou de ver minha mensagem. Estava com essa garota?",
         "choices": [
             "Contar o que aconteceu ontem à noite",
-            "Dizer que não foi nada importante"
+            "Dizer que não foi nada importante",
+            "Contar só as partes boas para não magoá-la.",
+            "Tranquilizá-la por enquanto e deixar os detalhes para depois."
         ]
     },
     "morning5_caught_teacher_honest": {
@@ -54,7 +58,9 @@
         "text": "*De manhã, na sala de aula. Assim que coloco o celular diante de Seoyeon, a tela se acende. Uma notificação de Dain diz: “Não esquece o que prometemos ontem à noite no ginásio.” O olhar de Seoyeon para na tela.* Você não foi ao parque e acabou indo ao ginásio?",
         "choices": [
             "Contar o que aconteceu na noite passada",
-            "Desconversar, dizendo que não foi nada importante"
+            "Desconversar, dizendo que não foi nada importante",
+            "Contar só as partes boas para não magoá-la.",
+            "Tranquilizá-la por enquanto e deixar os detalhes para depois."
         ]
     },
     "morning5_caught_seoyeon_by_yuna": {
@@ -62,7 +68,9 @@
         "text": "*O celular vibra sobre a mesa entre Seoyeon e eu. Uma notificação de Yuna diz: “Obrigada por ter ficado comigo ontem à noite no anexo.” Seoyeon lê até o fim e levanta a cabeça devagar.* Você foi ao anexo sem nem me responder?",
         "choices": [
             "Contar o que aconteceu na noite passada",
-            "Desconversar, dizendo que não foi nada importante"
+            "Desconversar, dizendo que não foi nada importante",
+            "Contar só as partes boas para não magoá-la.",
+            "Tranquilizá-la por enquanto e deixar os detalhes para depois."
         ]
     },
     "morning5_caught_dain_by_seoyeon": {
@@ -70,7 +78,9 @@
         "text": "*O celular vibra enquanto Dain está ao lado da mesa. Uma notificação de Seoyeon diz: “Ainda lembro da mão que segurei ontem à noite no terraço.” O sorriso de Dain congela.* Você foi ao terraço enquanto eu esperava?",
         "choices": [
             "Contar o que aconteceu na noite passada",
-            "Desconversar, dizendo que não foi nada importante"
+            "Desconversar, dizendo que não foi nada importante",
+            "Contar só as partes boas para não magoá-la.",
+            "Tranquilizá-la por enquanto e deixar os detalhes para depois."
         ]
     },
     "morning5_caught_dain_by_yuna": {
@@ -78,7 +88,9 @@
         "text": "*Quando Dain puxa a cadeira da frente, uma notificação de Yuna ilumina a tela. “Obrigada por ter ficado comigo ontem à noite no anexo.” A mão de Dain para no encosto.* Você leu minha mensagem e foi para o anexo?",
         "choices": [
             "Contar o que aconteceu na noite passada",
-            "Desconversar, dizendo que não foi nada importante"
+            "Desconversar, dizendo que não foi nada importante",
+            "Contar só as partes boas para não magoá-la.",
+            "Tranquilizá-la por enquanto e deixar os detalhes para depois."
         ]
     },
     "morning5_caught_yuna_by_seoyeon": {
@@ -86,7 +98,9 @@
         "text": "*O celular vibra sobre a mesa entre Yuna e eu. Uma notificação de Seoyeon diz: “Ainda lembro da mão que segurei ontem à noite no terraço.” Yuna lê cada palavra antes de tirar os olhos da tela.* Você deixou minhas mensagens sem resposta e foi ao terraço.",
         "choices": [
             "Contar o que aconteceu na noite passada",
-            "Desconversar, dizendo que não foi nada importante"
+            "Desconversar, dizendo que não foi nada importante",
+            "Contar só as partes boas para não magoá-la.",
+            "Tranquilizá-la por enquanto e deixar os detalhes para depois."
         ]
     },
     "morning5_caught_yuna_by_dain": {
@@ -94,7 +108,9 @@
         "text": "*Quando Yuna abre o livro, uma notificação de Dain aparece na tela. “Não esquece o que prometemos ontem à noite no ginásio.” A mão de Yuna para sobre a capa.* Meu nome ainda estava na sua tela, e mesmo assim você ficou no ginásio.",
         "choices": [
             "Contar o que aconteceu na noite passada",
-            "Desconversar, dizendo que não foi nada importante"
+            "Desconversar, dizendo que não foi nada importante",
+            "Contar só as partes boas para não magoá-la.",
+            "Tranquilizá-la por enquanto e deixar os detalhes para depois."
         ]
     },
     "morning5_caught_seoyeon_honest": {
@@ -262,7 +278,9 @@
         "text": "*Seguro o manuscrito. A ponta do envelope pressiona a parte de dentro do meu braço.*",
         "choices": [
             "Depois de sete anos, já deve estar quase pronto. Acho que nem preciso marcar nada.",
-            "Vou ler primeiro. Posso fazer anotações?"
+            "Vou ler primeiro. Posso fazer anotações?",
+            "Como sou apenas um aluno, posso pular as partes difíceis, certo?",
+            "Como é um texto seu, vou anotar só as coisas boas."
         ]
     },
     "hidden_homeroom_d5_praise_trap_1": {

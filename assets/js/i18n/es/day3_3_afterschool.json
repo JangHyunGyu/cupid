@@ -107,7 +107,9 @@
         "text": "No le cuentes a nadie lo que viste hoy. Y por ahora trátame como siempre.",
         "choices": [
             "A todo el mundo le pasa alguna vez. No le des tanta importancia.",
-            "...¿Lo de antes? No vi nada. Se me cayó la pluma y entré a recogerla."
+            "...¿Lo de antes? No vi nada. Se me cayó la pluma y entré a recogerla.",
+            "Entenderé incluso tu lado más débil.",
+            "A partir de ahora estaré a tu lado y me encargaré de todo."
         ]
     },
     "after3_seo_pity_trap_1": {
@@ -277,7 +279,9 @@
         "text": "*Vuelvo a girar el cuaderno hacia Yuna.*",
         "choices": [
             "Perdón. Pero esta historia sí es sobre mí, ¿verdad?",
-            "Perdón. Solo vi la primera página, que estaba abierta. No leeré más. Pero esta autora escribe muy bien."
+            "Perdón. Solo vi la primera página, que estaba abierta. No leeré más. Pero esta autora escribe muy bien.",
+            "No te preocupes. Guardaré bien este cuaderno por ti.",
+            "A partir de ahora, enséñame estos textos solo a mí."
         ]
     },
     "after3_yuna_decode_trap_1": {
@@ -431,7 +435,9 @@
         "text": "*Se sienta en el banco. La mano que le frota la rodilla vuelve una y otra vez al mismo punto.*",
         "choices": [
             "Sabía que te estabas forzando. Renuncia al torneo y descansa hoy.",
-            "Entonces me quedo aquí. Habla cuando te apetezca."
+            "Entonces me quedo aquí. Habla cuando te apetezca.",
+            "Decidiré por ti para que no te esfuerces demasiado.",
+            "No te preocupes. A partir de ahora estaré vigilándote."
         ]
     },
     "after3_dain_pity_trap_1": {
@@ -559,7 +565,9 @@
         "text": "*Dain no se seca los ojos húmedos. Tampoco añade la risa que suele seguir a sus últimas palabras.*",
         "choices": [
             "Lo siento. Pero voy a decirlo.",
-            "Está bien. Dilo tú misma. Pero iré contigo a la enfermería."
+            "Está bien. Dilo tú misma. Pero iré contigo a la enfermería.",
+            "Yo se lo explicaré al profesor. Tú limítate a descansar.",
+            "Si sigues dudando, será mejor que lo cuente yo primero."
         ]
     },
     "after3_dain_tell_confirm": {

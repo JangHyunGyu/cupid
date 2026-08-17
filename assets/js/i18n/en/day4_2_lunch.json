@@ -1,7 +1,16 @@
 {
-    "date_seo_low": {"name":"Seoyeon","text":"*The bench by the fountain is empty. A message from Seoyeon arrives a moment later.* I don't think we should meet alone today. I'll see you at school next week."},
-    "date_yuna_low": {"name":"Yuna","text":"*Yuna is already outside the café. She adjusts her bag strap and takes a step back.* I don't think we should spend a long time alone right now. Let's stop here for today."},
-    "date_dain_low": {"name":"Dain","text":"*Outside the gym, Dain adjusts the strap of her ball bag.* I'm not in the mood to hang out today. See you at school."},
+    "date_seo_low": {
+        "name": "Seoyeon",
+        "text": "*The bench by the fountain is empty. A message from Seoyeon arrives a moment later.* I don't think we should meet alone today. I'll see you at school next week."
+    },
+    "date_yuna_low": {
+        "name": "Yuna",
+        "text": "*Yuna is already outside the café. She adjusts her bag strap and takes a step back.* I don't think we should spend a long time alone right now. Let's stop here for today."
+    },
+    "date_dain_low": {
+        "name": "Dain",
+        "text": "*Outside the gym, Dain adjusts the strap of her ball bag.* I'm not in the mood to hang out today. See you at school."
+    },
     "date_seo_1": {
         "name": "{name}",
         "text": "*Seoyeon is already waiting by the fountain. There is no clipboard, only the bag strap wound around her fingers.*"
@@ -241,7 +250,9 @@
         "text": "*Dain presses down the brim of her cap once and waits.*",
         "choices": [
             "That cap looks good on you.",
-            "Sportswear is definitely your look."
+            "Sportswear is definitely your look.",
+            "You look much more feminine than you do in sportswear.",
+            "Now that you’ve dressed up, it finally feels like a date."
         ]
     },
     "date_dain_pretty_high": {

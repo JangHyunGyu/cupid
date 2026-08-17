@@ -129,7 +129,9 @@
         "text": "*Me ofrece el rollito de huevo.*",
         "choices": [
             "Aceptarlo",
-            "Sabría mejor si te lo comes tú"
+            "Sabría mejor si te lo comes tú",
+            "Ya que te has tomado tantas molestias, probaré solo un bocado.",
+            "A este paso, podría pedirte que me prepares el almuerzo siempre."
         ]
     },
     "lunch_seo_c1_1": {
@@ -434,7 +436,9 @@
         "text": "*Yuna aún está unos pasos adelante. Tomo el libro que dejó y corro tras ella.*",
         "choices": [
             "¿Es interesante ese libro? ¿Debería leerlo yo también?",
-            "Parece que te gusta quedarte callada, leyendo."
+            "Parece que te gusta quedarte callada, leyendo.",
+            "Yo te entretendré más que ese libro.",
+            "Como eres tan callada, debe de ser fácil estar contigo."
         ]
     },
     "lunch_yuna_c1_1": {

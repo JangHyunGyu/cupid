@@ -1,7 +1,16 @@
 {
-    "date_seo_low": {"name":"Seoyeon","text":"*El banco junto a la fuente está vacío. Poco después llega un mensaje de Seoyeon.* Creo que hoy será mejor que no quedemos a solas. Nos vemos en la escuela la semana que viene."},
-    "date_yuna_low": {"name":"Yuna","text":"*Yuna ya está frente a la cafetería. Se ajusta la correa del bolso y da un paso atrás.* Ahora será mejor que no pasemos mucho tiempo a solas. Dejémoslo aquí por hoy."},
-    "date_dain_low": {"name":"Dain","text":"*Frente al gimnasio, Dain se ajusta la correa de la bolsa de balones.* Hoy no me apetece quedar. Nos vemos en la escuela."},
+    "date_seo_low": {
+        "name": "Seoyeon",
+        "text": "*El banco junto a la fuente está vacío. Poco después llega un mensaje de Seoyeon.* Creo que hoy será mejor que no quedemos a solas. Nos vemos en la escuela la semana que viene."
+    },
+    "date_yuna_low": {
+        "name": "Yuna",
+        "text": "*Yuna ya está frente a la cafetería. Se ajusta la correa del bolso y da un paso atrás.* Ahora será mejor que no pasemos mucho tiempo a solas. Dejémoslo aquí por hoy."
+    },
+    "date_dain_low": {
+        "name": "Dain",
+        "text": "*Frente al gimnasio, Dain se ajusta la correa de la bolsa de balones.* Hoy no me apetece quedar. Nos vemos en la escuela."
+    },
     "date_seo_1": {
         "name": "{name}",
         "text": "*Seoyeon ya está frente a la fuente. No lleva el portapapeles; solo tiene la correa del bolso enrollada en los dedos.*"
@@ -241,7 +250,9 @@
         "text": "*Dain se ajusta una vez la visera de la gorra y espera.*",
         "choices": [
             "Esa gorra está muy bien.",
-            "La ropa deportiva es definitivamente lo tuyo."
+            "La ropa deportiva es definitivamente lo tuyo.",
+            "Hoy estás mucho más femenina que con la ropa deportiva.",
+            "Ahora que te has arreglado, por fin parece una cita."
         ]
     },
     "date_dain_pretty_high": {

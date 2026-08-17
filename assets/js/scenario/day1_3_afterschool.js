@@ -60,7 +60,9 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "character": "assets/images/characters/dain_pout.png",
         "choices": [
             { "next": "after1_jealousy_seo_honest", "stats": {"Dain":{"affinity":-2}}, "setFlags": ["day1_honest_to_dain"] },
-            { "next": "after1_jealousy_seo_lie", "setFlags": ["day1_lied_to_dain"] }
+            { "next": "after1_jealousy_seo_lie", "setFlags": ["day1_lied_to_dain"] },
+            { "next": "after1_jealousy_seo_honest", "stats": {"Dain":{"affinity":-3}} },
+            { "next": "after1_jealousy_seo_honest", "stats": {"Dain":{"affinity":-4}} }
         ]
     },
     "after1_jealousy_seo_honest": {
@@ -402,7 +404,9 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "character": "assets/images/characters/teacher_normal.png",
         "choices": [
             { "next": "after_homeroom_honest_choice2a", "stats": {"Teacher":{"affinity":8}} },
-            { "next": "after_homeroom_honest_choice2b", "stats": {"Teacher":{"affinity":-2}} }
+            { "next": "after_homeroom_honest_choice2b", "stats": {"Teacher":{"affinity":-2}} },
+            { "next": "after_homeroom_honest_choice2b", "stats": {"Teacher":{"affinity":-4}} },
+            { "next": "after_homeroom_honest_choice2b", "stats": {"Teacher":{"affinity":-5}} }
         ]
     },
     "after_homeroom_honest_choice2a": {

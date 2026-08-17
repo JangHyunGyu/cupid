@@ -1,5 +1,8 @@
 {
-    "hidden_nurse_d2_low": {"name":"School Nurse","text":"*When you open the nurse's office door, the school nurse closes the chart.* Unless you need treatment, I can't talk for long right now. Go back to class."},
+    "hidden_nurse_d2_low": {
+        "name": "School Nurse",
+        "text": "*When you open the nurse's office door, the school nurse closes the chart.* Unless you need treatment, I can't talk for long right now. Go back to class."
+    },
     "after2_start": {
         "name": "{name}",
         "text": "*After school. Two notifications are waiting on my phone.*"
@@ -45,7 +48,9 @@
         "text": "*The nurse bends and straightens my elbow, measuring how long the bandage should be.*",
         "choices": [
             "Did you learn things like this at the hospital?",
-            "You're meticulous even with a bandage."
+            "You're meticulous even with a bandage.",
+            "You only take this much care with me, right?",
+            "I could pretend to be sick and see you more often."
         ]
     },
     "hidden_nurse_d2_choice1_a": {
@@ -69,7 +74,9 @@
         "text": "*The knuckles gripping the drawer handle are white.*",
         "choices": [
             "You sure have a lot of secrets. Can't you tell me just one?",
-            "Right, I didn't see anything"
+            "Right, I didn't see anything",
+            "If it’s your secret, I promise I’ll keep it.",
+            "You can tell me everything."
         ]
     },
     "hidden_nurse_d2_choice2_a": {
@@ -322,7 +329,9 @@
         "text": "*An orange stripe of light slips through the blind and cuts across the documents. Seoyeon squares the corners of the pages.*",
         "choices": [
             "The sunset's nice. — I mean the view, of course.",
-            "If you do this every day, you must be used to it."
+            "If you do this every day, you must be used to it.",
+            "Don’t struggle on your own. Want me to finish it for you?",
+            "That’s enough. Do the rest tomorrow."
         ]
     },
     "after2_seo_sunset_joke": {

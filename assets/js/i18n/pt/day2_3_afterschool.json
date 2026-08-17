@@ -1,5 +1,8 @@
 {
-    "hidden_nurse_d2_low": {"name":"Enfermeira","text":"*Quando você abre a porta da enfermaria, a enfermeira fecha a ficha.* Se não precisa de atendimento, não posso ficar conversando agora. Volte para a aula."},
+    "hidden_nurse_d2_low": {
+        "name": "Enfermeira",
+        "text": "*Quando você abre a porta da enfermaria, a enfermeira fecha a ficha.* Se não precisa de atendimento, não posso ficar conversando agora. Volte para a aula."
+    },
     "after2_start": {
         "name": "{name}",
         "text": "*Depois da aula. Duas notificações no celular.*"
@@ -45,7 +48,9 @@
         "text": "*A enfermeira dobra e estica meu cotovelo para calcular o tamanho do curativo.*",
         "choices": [
             "Isso também se aprende no hospital?",
-            "A senhora é cuidadosa até com um curativo."
+            "A senhora é cuidadosa até com um curativo.",
+            "Só cuida de mim com tanto carinho assim, não é?",
+            "Eu poderia fingir que estou doente para ver a senhora mais vezes."
         ]
     },
     "hidden_nurse_d2_choice1_a": {
@@ -69,7 +74,9 @@
         "text": "*Os nós dos dedos da mão que segura a alça da gaveta estão brancos.*",
         "choices": [
             "A senhora tem muito segredo. Não dá pra me contar um só?",
-            "Claro, não vi nada."
+            "Claro, não vi nada.",
+            "Se é um segredo seu, prometo guardar.",
+            "Pode me contar tudo."
         ]
     },
     "hidden_nurse_d2_choice2_a": {
@@ -322,7 +329,9 @@
         "text": "*Uma faixa laranja entra pelas persianas e atravessa os documentos. Seoyeon alinha as pontas das folhas.*",
         "choices": [
             "O pôr do sol tá bonito. — Lá fora, digo.",
-            "Se faz isso todo dia, já deve estar acostumada."
+            "Se faz isso todo dia, já deve estar acostumada.",
+            "Não se esforce sozinha. Quer que eu termine por você?",
+            "Já chega. Faça o resto amanhã."
         ]
     },
     "after2_seo_sunset_joke": {

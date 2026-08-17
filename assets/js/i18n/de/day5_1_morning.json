@@ -19,7 +19,9 @@
         "text": "*Morgens im Klassenzimmer lege ich mein Handy hin, um meiner Klassenlehrerin ein Foto meines Entwurfs zu zeigen. Der Bildschirm leuchtet mit einer Nachricht des Mädchens auf, bei dem ich gestern war: 'Was gestern passiert ist, bleibt unter uns, oder?' Die Lehrerin liest sie zu Ende und nimmt ihre Hand vom Handy.* Du hast meine Nachricht gestern ignoriert, um dieses Mädchen zu treffen?",
         "choices": [
             "Ihr offen erzählen, was gestern Nacht passiert ist",
-            "Es als unwichtig abtun"
+            "Es als unwichtig abtun",
+            "Ihr nur die guten Teile erzählen, damit sie nicht verletzt wird.",
+            "Sie erst einmal beruhigen und die Einzelheiten auf später verschieben."
         ]
     },
     "morning5_caught_nurse_counteroffer": {
@@ -27,7 +29,9 @@
         "text": "*Sobald ich mein Handy auf die Untersuchungsliege lege, leuchtet der Bildschirm auf. Eine Nachricht des Mädchens, bei dem ich gestern war, lautet: 'Was gestern passiert ist, bleibt unter uns, oder?' Die Schulkrankenschwester will wie immer lächeln, doch dann verschwindet ihr Lächeln langsam.* Du hast meine Nachricht also nicht übersehen. Du warst bei diesem Mädchen?",
         "choices": [
             "Ihr offen erzählen, was gestern Nacht passiert ist",
-            "Es als unwichtig abtun"
+            "Es als unwichtig abtun",
+            "Ihr nur die guten Teile erzählen, damit sie nicht verletzt wird.",
+            "Sie erst einmal beruhigen und die Einzelheiten auf später verschieben."
         ]
     },
     "morning5_caught_teacher_honest": {
@@ -54,7 +58,9 @@
         "text": "*Am Morgen im Klassenzimmer. Sobald ich mein Handy vor Seoyeon ablege, leuchtet der Bildschirm auf. Eine Nachricht von Dain lautet: „Vergiss nicht, was wir gestern Abend in der Turnhalle versprochen haben.“ Seoyeons Blick bleibt am Bildschirm hängen.* Du bist nicht in den Park gekommen, sondern in die Turnhalle gegangen?",
         "choices": [
             "Ihr ohne Ausflüchte von letzter Nacht erzählen",
-            "So tun, als wäre es nichts Wichtiges gewesen"
+            "So tun, als wäre es nichts Wichtiges gewesen",
+            "Ihr nur die guten Teile erzählen, damit sie nicht verletzt wird.",
+            "Sie erst einmal beruhigen und die Einzelheiten auf später verschieben."
         ]
     },
     "morning5_caught_seoyeon_by_yuna": {
@@ -62,7 +68,9 @@
         "text": "*Das Handy vibriert auf dem Tisch zwischen Seoyeon und mir. Eine Nachricht von Yuna lautet: „Danke, dass du gestern Abend im Nebengebäude bei mir geblieben bist.“ Seoyeon liest sie zu Ende und hebt langsam den Kopf.* Du bist ins Nebengebäude gegangen, ohne mir überhaupt zu antworten?",
         "choices": [
             "Ihr ohne Ausflüchte von letzter Nacht erzählen",
-            "So tun, als wäre es nichts Wichtiges gewesen"
+            "So tun, als wäre es nichts Wichtiges gewesen",
+            "Ihr nur die guten Teile erzählen, damit sie nicht verletzt wird.",
+            "Sie erst einmal beruhigen und die Einzelheiten auf später verschieben."
         ]
     },
     "morning5_caught_dain_by_seoyeon": {
@@ -70,7 +78,9 @@
         "text": "*Das Handy vibriert, während Dain neben dem Tisch steht. Eine Nachricht von Seoyeon lautet: „Ich erinnere mich noch an die Hand, die ich gestern Abend auf dem Dach gehalten habe.“ Dains Lächeln erstarrt.* Du warst auf dem Dach, während ich gewartet habe?",
         "choices": [
             "Ihr ohne Ausflüchte von letzter Nacht erzählen",
-            "So tun, als wäre es nichts Wichtiges gewesen"
+            "So tun, als wäre es nichts Wichtiges gewesen",
+            "Ihr nur die guten Teile erzählen, damit sie nicht verletzt wird.",
+            "Sie erst einmal beruhigen und die Einzelheiten auf später verschieben."
         ]
     },
     "morning5_caught_dain_by_yuna": {
@@ -78,7 +88,9 @@
         "text": "*Als Dain den Stuhl gegenüber heranzieht, erhellt eine Nachricht von Yuna den Bildschirm. „Danke, dass du gestern Abend im Nebengebäude bei mir geblieben bist.“ Dains Hand hält an der Rückenlehne inne.* Du hast meine Nachricht gelesen und bist ins Nebengebäude gegangen?",
         "choices": [
             "Ihr ohne Ausflüchte von letzter Nacht erzählen",
-            "So tun, als wäre es nichts Wichtiges gewesen"
+            "So tun, als wäre es nichts Wichtiges gewesen",
+            "Ihr nur die guten Teile erzählen, damit sie nicht verletzt wird.",
+            "Sie erst einmal beruhigen und die Einzelheiten auf später verschieben."
         ]
     },
     "morning5_caught_yuna_by_seoyeon": {
@@ -86,7 +98,9 @@
         "text": "*Das Handy vibriert auf dem Tisch zwischen Yuna und mir. Eine Nachricht von Seoyeon lautet: „Ich erinnere mich noch an die Hand, die ich gestern Abend auf dem Dach gehalten habe.“ Yuna liest jedes Wort und löst dann den Blick vom Bildschirm.* Du hast meine Nachrichten unbeantwortet gelassen und bist aufs Dach gegangen.",
         "choices": [
             "Ihr ohne Ausflüchte von letzter Nacht erzählen",
-            "So tun, als wäre es nichts Wichtiges gewesen"
+            "So tun, als wäre es nichts Wichtiges gewesen",
+            "Ihr nur die guten Teile erzählen, damit sie nicht verletzt wird.",
+            "Sie erst einmal beruhigen und die Einzelheiten auf später verschieben."
         ]
     },
     "morning5_caught_yuna_by_dain": {
@@ -94,7 +108,9 @@
         "text": "*Gerade als Yuna ihr Buch öffnet, erscheint eine Nachricht von Dain auf dem Bildschirm. „Vergiss nicht, was wir gestern Abend in der Turnhalle versprochen haben.“ Yunas Hand bleibt auf dem Umschlag liegen.* Mein Name stand noch auf deinem Bildschirm und du bist trotzdem in der Turnhalle geblieben.",
         "choices": [
             "Ihr ohne Ausflüchte von letzter Nacht erzählen",
-            "So tun, als wäre es nichts Wichtiges gewesen"
+            "So tun, als wäre es nichts Wichtiges gewesen",
+            "Ihr nur die guten Teile erzählen, damit sie nicht verletzt wird.",
+            "Sie erst einmal beruhigen und die Einzelheiten auf später verschieben."
         ]
     },
     "morning5_caught_seoyeon_honest": {
@@ -262,7 +278,9 @@
         "text": "*Ich halte das Manuskript im Arm. Die Ecke des Umschlags drückt gegen meine Armbeuge.*",
         "choices": [
             "Nach sieben Jahren ist es bestimmt fast fertig. Ich muss wohl nichts mehr markieren.",
-            "Ich lese erst einmal. Darf ich Stellen markieren?"
+            "Ich lese erst einmal. Darf ich Stellen markieren?",
+            "Ich bin ja nur ein Schüler, also kann ich die schwierigen Stellen überspringen, oder?",
+            "Weil es Ihr Text ist, schreibe ich nur die netten Dinge auf."
         ]
     },
     "hidden_homeroom_d5_praise_trap_1": {

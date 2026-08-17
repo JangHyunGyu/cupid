@@ -158,7 +158,9 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/dain_sad.png",
         "choices": [
             { "next": "lunch3_seo_chase_dain_1", "stats": {"Seoyeon":{"affinity":-3},"Dain":{"affinity":2}} },
-            { "next": "lunch3_seo_focus_1", "stats": {"Dain":{"affinity":-5}} }
+            { "next": "lunch3_seo_focus_1", "stats": {"Dain":{"affinity":-5}} },
+            { "next": "lunch3_seo_chase_dain_1", "stats": {"Seoyeon":{"affinity":-4}} },
+            { "next": "lunch3_seo_chase_dain_1", "stats": {"Seoyeon":{"affinity":-6}} }
         ]
     },
     "lunch3_seo_chase_dain_1": {

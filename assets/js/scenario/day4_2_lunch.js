@@ -325,7 +325,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/dain_normal.png",
         "choices": [
             { "affinityChar": "Dain", "affinityBranches": [{"minAffinity":50,"next":"date_dain_pretty_high"},{"minAffinity":-100,"next":"date_dain_pretty_low"}] },
-            { "next": "date_dain_bright", "stats": {"Dain":{"affinity":-3}} }
+            { "next": "date_dain_bright", "stats": {"Dain":{"affinity":-3}} },
+            { "next": "date_dain_bright", "stats": {"Dain":{"affinity":-4}} },
+            { "next": "date_dain_bright", "stats": {"Dain":{"affinity":-5}} }
         ]
     },
     "date_dain_pretty_high": {
