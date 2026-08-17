@@ -283,8 +283,8 @@
         "choices": [
             "Wenn Sie sich Sorgen machen, können Sie das ruhig auch so sagen",
             "Dann bestelle ich nächstes Mal wieder Saft, Frau Lehrerin.",
-            "Könnten Sie sich ab jetzt nicht nur um mich so kümmern?",
-            "Wenn Sie sich solche Sorgen machen, bringen Sie mich heute nach Hause."
+            "Darf ich glauben, dass Sie sich nur um mich so besonders kümmern?",
+            "Nächstes Mal nehme ich wieder das, was Sie für mich aussuchen."
         ]
     },
     "after_homeroom_honest_choice2a": {
@@ -338,7 +338,9 @@
         "text": "*Seit dem Morgen bin ich ununterbrochen unter Menschen gewesen. Vor dem Krankenzimmer bleiben meine Schritte stehen.*",
         "choices": [
             "Ins Krankenzimmer gehen",
-            "Einfach nach Hause gehen"
+            "Einfach nach Hause gehen",
+            "Die Schulkrankenschwester langweilt sich bestimmt auch, also leiste ich ihr eine Weile Gesellschaft.",
+            "Eine Gesundheitsberatung könnte uns helfen, uns näherzukommen."
         ]
     },
     "after_hidden_nurse_intro_b": {

@@ -1,7 +1,16 @@
 {
-    "confess_seo_low": {"name":"Seoyeon","text":"*Seoyeon sort la clé du toit, puis la remet dans sa poche.* Arrêtons-nous là aujourd'hui. Je ne pense pas qu'on doive se rapprocher davantage maintenant."},
-    "confess_yuna_low": {"name":"Yuna","text":"*Yuna regarde vers l'annexe, puis fait demi-tour.* C'est tout pour aujourd'hui. Je ne peux pas parler de nous rapprocher davantage maintenant."},
-    "confess_dain_low": {"name":"Dain","text":"*Dain commence à marcher vers le gymnase, puis s'arrête pour réajuster la sangle de son sac à ballons.* On s'arrête là aujourd'hui. Si on continue, on ne fera que rendre les choses plus difficiles."},
+    "confess_seo_low": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon sort la clé du toit, puis la remet dans sa poche.* Arrêtons-nous là aujourd'hui. Je ne pense pas qu'on doive se rapprocher davantage maintenant."
+    },
+    "confess_yuna_low": {
+        "name": "Yuna",
+        "text": "*Yuna regarde vers l'annexe, puis fait demi-tour.* C'est tout pour aujourd'hui. Je ne peux pas parler de nous rapprocher davantage maintenant."
+    },
+    "confess_dain_low": {
+        "name": "Dain",
+        "text": "*Dain commence à marcher vers le gymnase, puis s'arrête pour réajuster la sangle de son sac à ballons.* On s'arrête là aujourd'hui. Si on continue, on ne fera que rendre les choses plus difficiles."
+    },
     "confess_seo_1": {
         "name": "{name}",
         "text": "*Le rendez-vous est terminé. Au lieu de passer le portail, nous montons sur le toit.*"
@@ -35,7 +44,9 @@
         "text": "*Seul le porte-clés tinte brièvement dans la main de Seoyeon.*",
         "choices": [
             "Lui dire.",
-            "Rester encore un peu."
+            "Rester encore un peu.",
+            "Je dirai ce que je ressens quand Seoyeon le dira la première.",
+            "Avec ce qu’il y a entre nous, on ne devrait pas avoir besoin de mots pour se comprendre."
         ]
     },
     "confess_seo_yes_1": {
@@ -139,7 +150,9 @@
         "text": "*Du pouce, Yuna redresse le bout plié du marque-page et laisse libre la place d'en face.*",
         "choices": [
             "Yuna. Je peux te poser une question ?",
-            "...Cet endroit est vraiment bien."
+            "...Cet endroit est vraiment bien.",
+            "Je répondrai si Yuna me pose la question la première.",
+            "Même sans le dire, Yuna devrait savoir ce que je ressens."
         ]
     },
     "confess_yuna_yes_1": {
@@ -247,7 +260,9 @@
         "text": "*Le ballon rebondit une fois. La main qui l'aurait normalement rattrapé s'arrête en l'air un temps trop tard.*",
         "choices": [
             "Dain. Pose le ballon.",
-            "...On en fait une autre ?"
+            "...On en fait une autre ?",
+            "Je dirai ce que je ressens quand Dain le dira la première.",
+            "Avec ce qu’il y a entre nous, on ne devrait pas avoir besoin de mots pour se comprendre."
         ]
     },
     "confess_dain_yes_1": {

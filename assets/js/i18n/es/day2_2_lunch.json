@@ -689,5 +689,13 @@
     "lunch2_seo_trap_1": {
         "name": "Seoyeon",
         "text": "*Retira la toallita.* Claro. Tú puedes con todo solo."
+    },
+    "lunch2_yuna_trap_compare": {
+        "name": "Yuna",
+        "text": "*Yuna empuja un poco más el extremo del marcapáginas.* Tú y esa persona no se pueden comparar."
+    },
+    "lunch2_yuna_trap_exclusive": {
+        "name": "Yuna",
+        "text": "*Atrae el libro hacia sí y luego lo suelta despacio.* Eso lo decido yo."
     }
 }

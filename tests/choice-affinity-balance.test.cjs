@@ -111,8 +111,8 @@ test('direct choice affinity distribution keeps subtle penalties meaningful but 
         }
     }
 
-    assert.equal(total, 353);
-    assert.deepEqual(counts, { positive: 59, negative: 146, neutral: 123, mixed: 25 });
+    assert.equal(total, 361);
+    assert.deepEqual(counts, { positive: 59, negative: 154, neutral: 123, mixed: 25 });
 });
 
 test('every affinity screen that had only two options now adds two localized negative traps', () => {
@@ -121,6 +121,7 @@ test('every affinity screen that had only two options now adds two localized neg
         'lunch_yuna_choice',
         'after1_jealousy_seo_choice',
         'after_homeroom_honest_choice2',
+        'after_hidden_nurse_choice',
         'lunch2_yuna_choice',
         'hidden_nurse_d2_choice1',
         'hidden_nurse_d2_choice2',
@@ -136,6 +137,9 @@ test('every affinity screen that had only two options now adds two localized neg
         'after3_dain_dilemma_final',
         'date_dain_compliment_choice',
         'wall_seo_hug_choice',
+        'confess_seo_choice',
+        'confess_yuna_choice',
+        'confess_dain_choice',
         'day4_teacher_seoyeon_counteroffer',
         'day4_teacher_dain_counteroffer',
         'day4_teacher_yuna_counteroffer',
@@ -160,7 +164,7 @@ test('every affinity screen that had only two options now adds two localized neg
     ];
     const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy);
 
-    assert.equal(expandedSceneIds.length, 40);
+    assert.equal(expandedSceneIds.length, 44);
     for (const sceneId of expandedSceneIds) {
         const scene = scenes[sceneId];
         assert.equal(scene?.choices?.length, 4, `${sceneId} must expose four choices`);
@@ -184,6 +188,61 @@ test('every affinity screen that had only two options now adds two localized neg
         ))
         .map(([sceneId]) => sceneId);
     assert.deepEqual(remainingTwoChoiceAffinityScreens, []);
+});
+
+test('the only remaining two-choice screens are deliberate structural binary decisions', () => {
+    const remaining = Object.entries(scenes)
+        .filter(([, scene]) => scene.choices?.length === 2);
+
+    assert.equal(remaining.length, 37);
+    for (const [sceneId, scene] of remaining) {
+        assert.ok(
+            /^forced_violation_day[1-5]_after_/.test(sceneId)
+                || /^date_choice_(perfect|true)_/.test(sceneId)
+                || sceneId === 'hidden_dual_route_choice',
+            `${sceneId} is not an approved structural two-choice screen`
+        );
+        assert.equal(
+            scene.choices.some(choice => Object.values(choice.stats || {})
+                .some(stat => Number(stat?.affinity) !== 0)),
+            false,
+            `${sceneId} must remain affinity-neutral`
+        );
+    }
+});
+
+test('audited trap copy follows the selected intent into a matching reaction', () => {
+    assert.deepEqual(korean.after_homeroom_honest_choice2.choices.slice(2), [
+        '저만 특별히 챙겨주시는 거라고 생각해도 돼요?',
+        '다음에도 선생님이 골라주신 걸로 부탁드릴게요'
+    ]);
+    assert.equal(korean.hidden_nurse_d2_choice1.choices[3], '선생님한테 치료받으면 다친 것도 나쁘진 않네요');
+    assert.equal(korean.hidden_homeroom_d5_choice.choices[2], '어려운 부분은 선생님 의도일 테니 그대로 둘게요');
+
+    assert.equal(scenes.lunch2_yuna_choice.choices[2].next, 'lunch2_yuna_trap_compare');
+    assert.equal(scenes.lunch2_yuna_choice.choices[3].next, 'lunch2_yuna_trap_exclusive');
+    assert.equal(scenes.lunch2_yuna_trap_compare.next, 'lunch2_yuna_c2_1');
+    assert.equal(scenes.lunch2_yuna_trap_exclusive.next, 'lunch2_yuna_c2_1');
+    assert.match(korean.lunch2_yuna_trap_compare.text, /비교할 일이 아니야/);
+    assert.match(korean.lunch2_yuna_trap_exclusive.text, /내가 정해/);
+
+    for (const [sceneId, character, flag] of [
+        ['confess_seo_choice', 'Seoyeon', 'postponed_seoyeon'],
+        ['confess_yuna_choice', 'Yuna', 'postponed_yuna'],
+        ['confess_dain_choice', 'Dain', 'postponed_dain']
+    ]) {
+        for (const [index, penalty] of [[2, -4], [3, -5]]) {
+            const choice = scenes[sceneId].choices[index];
+            assert.equal(choice.stats[character].affinity, penalty);
+            assert.equal(choice.next, `${sceneId.replace('_choice', '')}_no_2`);
+            assert.ok(choice.setFlags.includes(flag));
+        }
+    }
+
+    for (const copy of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy)) {
+        assert.ok(copy.lunch2_yuna_trap_compare?.name && copy.lunch2_yuna_trap_compare?.text);
+        assert.ok(copy.lunch2_yuna_trap_exclusive?.name && copy.lunch2_yuna_trap_exclusive?.text);
+    }
 });
 
 test('two-option screens retain their original response and add the trap as a third choice', () => {
@@ -247,10 +306,10 @@ test('ordinary safe-only dialogue screens add a localized third trap without cha
 
 test('negative-choice screens stay distributed across every story day', () => {
     const expected = {
-        1: { choiceScreens: 16, negativeScreens: 8 },
+        1: { choiceScreens: 16, negativeScreens: 9 },
         2: { choiceScreens: 18, negativeScreens: 10 },
         3: { choiceScreens: 24, negativeScreens: 14 },
-        4: { choiceScreens: 32, negativeScreens: 24 },
+        4: { choiceScreens: 32, negativeScreens: 27 },
         5: { choiceScreens: 28, negativeScreens: 11 }
     };
 

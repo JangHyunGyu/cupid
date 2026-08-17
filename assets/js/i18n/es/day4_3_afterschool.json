@@ -1,7 +1,16 @@
 {
-    "confess_seo_low": {"name":"Seoyeon","text":"*Seoyeon saca la llave de la azotea, pero vuelve a guardarla en el bolsillo.* Dejémoslo aquí por hoy. Ahora no creo que debamos acercarnos más."},
-    "confess_yuna_low": {"name":"Yuna","text":"*Yuna mira hacia el anexo y luego se da la vuelta.* Esto es todo por hoy. Ahora no puedo hablar de que nos acerquemos más."},
-    "confess_dain_low": {"name":"Dain","text":"*Dain echa a andar hacia el gimnasio, se detiene y se ajusta la correa de la bolsa de balones.* Dejémoslo aquí por hoy. Si seguimos hablando, solo nos lo pondremos más difícil."},
+    "confess_seo_low": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon saca la llave de la azotea, pero vuelve a guardarla en el bolsillo.* Dejémoslo aquí por hoy. Ahora no creo que debamos acercarnos más."
+    },
+    "confess_yuna_low": {
+        "name": "Yuna",
+        "text": "*Yuna mira hacia el anexo y luego se da la vuelta.* Esto es todo por hoy. Ahora no puedo hablar de que nos acerquemos más."
+    },
+    "confess_dain_low": {
+        "name": "Dain",
+        "text": "*Dain echa a andar hacia el gimnasio, se detiene y se ajusta la correa de la bolsa de balones.* Dejémoslo aquí por hoy. Si seguimos hablando, solo nos lo pondremos más difícil."
+    },
     "confess_seo_1": {
         "name": "{name}",
         "text": "*La cita está llegando a su fin. En vez de ir a la entrada, subimos a la azotea.*"
@@ -35,7 +44,9 @@
         "text": "*Solo el llavero tintinea brevemente en la mano de Seoyeon.*",
         "choices": [
             "Hablar.",
-            "Quedarme un poco más."
+            "Quedarme un poco más.",
+            "Diré lo que siento cuando Seoyeon lo diga primero.",
+            "A estas alturas, no deberíamos necesitar palabras para saber lo que sentimos."
         ]
     },
     "confess_seo_yes_1": {
@@ -139,7 +150,9 @@
         "text": "*Yuna alisa con el pulgar la punta doblada del separador y deja vacío el asiento de enfrente.*",
         "choices": [
             "Yuna. Déjame preguntarte una cosa.",
-            "...Este lugar está genial."
+            "...Este lugar está genial.",
+            "Responderé cuando Yuna pregunte primero.",
+            "Aunque no lo diga, Yuna debería saber lo que siento."
         ]
     },
     "confess_yuna_yes_1": {
@@ -247,7 +260,9 @@
         "text": "*Su pelota rebota una vez. La mano que normalmente la habría atrapado se detiene en el aire un segundo tarde.*",
         "choices": [
             "Dain. Suelta la pelota.",
-            "...¿Echamos otra?"
+            "...¿Echamos otra?",
+            "Diré lo que siento cuando Dain lo diga primero.",
+            "A estas alturas, no deberíamos necesitar palabras para saber lo que sentimos."
         ]
     },
     "confess_dain_yes_1": {

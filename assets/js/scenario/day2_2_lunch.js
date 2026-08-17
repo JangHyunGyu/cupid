@@ -812,9 +812,19 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "choices": [
             { "next": "lunch2_yuna_c1_1", "stats": {"Yuna":{"affinity":-3}} },
             { "next": "lunch2_yuna_c2_1", "stats": {"Yuna":{"affinity":4}} },
-            { "next": "lunch2_yuna_c1_1", "stats": {"Yuna":{"affinity":-4}} },
-            { "next": "lunch2_yuna_c1_1", "stats": {"Yuna":{"affinity":-5}} }
+            { "next": "lunch2_yuna_trap_compare", "stats": {"Yuna":{"affinity":-4}} },
+            { "next": "lunch2_yuna_trap_exclusive", "stats": {"Yuna":{"affinity":-5}} }
         ]
+    },
+    "lunch2_yuna_trap_compare": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_sad.png",
+        "next": "lunch2_yuna_c2_1"
+    },
+    "lunch2_yuna_trap_exclusive": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_sad.png",
+        "next": "lunch2_yuna_c2_1"
     },
     "lunch2_yuna_c1_1": {
         "background": "assets/images/background/yuna_hideout.png",

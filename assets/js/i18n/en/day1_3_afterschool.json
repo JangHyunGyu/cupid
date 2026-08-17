@@ -283,8 +283,8 @@
         "choices": [
             "If you're worried, you can just say so.",
             "Then I'll expect juice next time too.",
-            "Could you take care of only me like this from now on?",
-            "If you’re that worried, take me home today."
+            "Can I take that to mean I’m special to you?",
+            "Next time, I’d like whatever you pick for me again."
         ]
     },
     "after_homeroom_honest_choice2a": {
@@ -338,7 +338,9 @@
         "text": "*I've been surrounded by people since morning. My steps come to a stop outside the nurse's office.*",
         "choices": [
             "Go to the nurse's office",
-            "Just go home"
+            "Just go home",
+            "The nurse must be bored too, so I’ll keep her company for a while.",
+            "A health consultation could help us get closer."
         ]
     },
     "after_hidden_nurse_intro_b": {

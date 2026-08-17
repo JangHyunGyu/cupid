@@ -689,5 +689,13 @@
     "lunch2_seo_trap_1": {
         "name": "Seoyeon",
         "text": "*She pulls the wet wipe back.* Right. You are good on your own."
+    },
+    "lunch2_yuna_trap_compare": {
+        "name": "Yuna",
+        "text": "*Yuna pushes the tip of the bookmark one notch deeper.* You and that person aren’t something to compare."
+    },
+    "lunch2_yuna_trap_exclusive": {
+        "name": "Yuna",
+        "text": "*She pulls the book toward herself, then slowly lets it go.* That’s for me to decide."
     }
 }

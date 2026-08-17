@@ -689,5 +689,13 @@
     "lunch2_seo_trap_1": {
         "name": "Seoyeon",
         "text": "*Ela recolhe o lenço umedecido.* Claro. Você se vira muito bem sozinho."
+    },
+    "lunch2_yuna_trap_compare": {
+        "name": "Yuna",
+        "text": "*Yuna empurra a ponta do marcador um pouco mais para dentro.* Você e essa pessoa não são coisas que se comparem."
+    },
+    "lunch2_yuna_trap_exclusive": {
+        "name": "Yuna",
+        "text": "*Ela puxa o livro para si e depois o solta devagar.* Isso quem decide sou eu."
     }
 }

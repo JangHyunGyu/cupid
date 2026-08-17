@@ -472,7 +472,9 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "character": null,
         "choices": [
             { "next": "after_hidden_nurse_intro_b" },
-            { "next": "after_nurse_skip", "stats": {"Nurse":{"affinity":0}} }
+            { "next": "after_nurse_skip", "stats": {"Nurse":{"affinity":0}} },
+            { "next": "after_hidden_nurse_intro_b", "stats": {"Nurse":{"affinity":-3}} },
+            { "next": "after_hidden_nurse_intro_b", "stats": {"Nurse":{"affinity":-4}} }
         ]
     },
     "after_hidden_nurse_intro_b": {

@@ -283,8 +283,8 @@
         "choices": [
             "Si vous êtes inquiète, dites juste que vous êtes inquiète",
             "Alors, ce sera encore un jus la prochaine fois, madame.",
-            "Vous ne pourriez pas vous occuper comme ça uniquement de moi, désormais ?",
-            "Si vous vous inquiétez tant, raccompagnez-moi chez moi aujourd’hui."
+            "Je peux croire que j’ai droit à une attention particulière ?",
+            "La prochaine fois aussi, je prendrai ce que vous choisirez pour moi."
         ]
     },
     "after_homeroom_honest_choice2a": {
@@ -338,7 +338,9 @@
         "text": "*Depuis ce matin, je n'ai pas arrêté de voir du monde. Mes pas s'immobilisent devant l'infirmerie.*",
         "choices": [
             "Aller à l'infirmerie",
-            "Rentrer directement"
+            "Rentrer directement",
+            "L’infirmière doit s’ennuyer elle aussi, alors je vais lui tenir compagnie un moment.",
+            "Une consultation de santé pourrait nous rapprocher."
         ]
     },
     "after_hidden_nurse_intro_b": {

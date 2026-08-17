@@ -1,7 +1,16 @@
 {
-    "confess_seo_low": {"name":"Seoyeon","text":"*Seoyeon takes out the rooftop key, then puts it back in her pocket.* Let's stop here today. I don't think getting any closer is right for us now."},
-    "confess_yuna_low": {"name":"Yuna","text":"*Yuna looks toward the annex, then turns away.* This is it for today. I can't talk about us getting closer right now."},
-    "confess_dain_low": {"name":"Dain","text":"*Dain starts toward the gym, then stops to adjust the strap of her ball bag.* Let's call it here today. If we keep talking, we'll just make this harder for each other."},
+    "confess_seo_low": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon takes out the rooftop key, then puts it back in her pocket.* Let's stop here today. I don't think getting any closer is right for us now."
+    },
+    "confess_yuna_low": {
+        "name": "Yuna",
+        "text": "*Yuna looks toward the annex, then turns away.* This is it for today. I can't talk about us getting closer right now."
+    },
+    "confess_dain_low": {
+        "name": "Dain",
+        "text": "*Dain starts toward the gym, then stops to adjust the strap of her ball bag.* Let's call it here today. If we keep talking, we'll just make this harder for each other."
+    },
     "confess_seo_1": {
         "name": "{name}",
         "text": "*The date is over. Instead of heading for the front gate, we go up to the rooftop.*"
@@ -35,7 +44,9 @@
         "text": "*Only the key ring gives a brief jingle in Seoyeon's hand.*",
         "choices": [
             "Say it",
-            "Stay a little longer"
+            "Stay a little longer",
+            "I’ll say how I feel once Seoyeon says it first.",
+            "At this point, we shouldn’t need words to know how we feel."
         ]
     },
     "confess_seo_yes_1": {
@@ -139,7 +150,9 @@
         "text": "*Yuna smooths the folded end of the bookmark with her thumb and leaves the seat opposite her open.*",
         "choices": [
             "Yuna. Let me ask you one thing.",
-            "This place is really nice."
+            "This place is really nice.",
+            "I’ll answer if Yuna asks me first.",
+            "Yuna should know how I feel even if I don’t say it."
         ]
     },
     "confess_yuna_yes_1": {
@@ -247,7 +260,9 @@
         "text": "*The ball bounces once. Half a beat late, Dain's hand brushes past its side.*",
         "choices": [
             "Dain. Put the ball down.",
-            "Want to play one more round?"
+            "Want to play one more round?",
+            "I’ll say how I feel once Dain says it first.",
+            "At this point, we shouldn’t need words to know how we feel."
         ]
     },
     "confess_dain_yes_1": {

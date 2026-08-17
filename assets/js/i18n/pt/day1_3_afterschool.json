@@ -283,8 +283,8 @@
         "choices": [
             "Se é preocupação, basta dizer que é preocupação",
             "Então, da próxima vez também vou querer suco, professora.",
-            "Não pode cuidar assim só de mim daqui para a frente?",
-            "Se está tão preocupada, me leve para casa hoje."
+            "Posso achar que cuida assim de mim porque sou especial para a senhora?",
+            "Da próxima vez, quero de novo o que a senhora escolher."
         ]
     },
     "after_homeroom_honest_choice2a": {
@@ -338,7 +338,9 @@
         "text": "*Passei a manhã inteira no meio de outras pessoas. Meus passos param diante da enfermaria.*",
         "choices": [
             "Entrar na enfermaria",
-            "Ir direto pra casa"
+            "Ir direto pra casa",
+            "A enfermeira também deve estar entediada, então vou fazer companhia por um tempo.",
+            "Uma consulta de saúde pode ajudar a gente a se aproximar."
         ]
     },
     "after_hidden_nurse_intro_b": {

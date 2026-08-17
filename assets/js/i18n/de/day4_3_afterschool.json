@@ -1,7 +1,16 @@
 {
-    "confess_seo_low": {"name":"Seoyeon","text":"*Seoyeon holt den Schlüssel zum Schuldach hervor und steckt ihn dann wieder ein.* Lassen wir es für heute dabei. Ich glaube nicht, dass es richtig wäre, wenn wir uns jetzt noch näherkommen."},
-    "confess_yuna_low": {"name":"Yuna","text":"*Yuna blickt zum Nebengebäude und wendet sich dann ab.* Für heute reicht es. Ich kann gerade nicht darüber reden, dass wir uns näherkommen."},
-    "confess_dain_low": {"name":"Dain","text":"*Dain geht in Richtung Sporthalle, hält dann aber an und richtet den Riemen ihrer Balltasche.* Lassen wir es für heute gut sein. Wenn wir weiterreden, machen wir es uns nur schwerer."},
+    "confess_seo_low": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon holt den Schlüssel zum Schuldach hervor und steckt ihn dann wieder ein.* Lassen wir es für heute dabei. Ich glaube nicht, dass es richtig wäre, wenn wir uns jetzt noch näherkommen."
+    },
+    "confess_yuna_low": {
+        "name": "Yuna",
+        "text": "*Yuna blickt zum Nebengebäude und wendet sich dann ab.* Für heute reicht es. Ich kann gerade nicht darüber reden, dass wir uns näherkommen."
+    },
+    "confess_dain_low": {
+        "name": "Dain",
+        "text": "*Dain geht in Richtung Sporthalle, hält dann aber an und richtet den Riemen ihrer Balltasche.* Lassen wir es für heute gut sein. Wenn wir weiterreden, machen wir es uns nur schwerer."
+    },
     "confess_seo_1": {
         "name": "{name}",
         "text": "*Das Date ist vorbei. Statt zum Schultor gehen wir hinauf aufs Dach.*"
@@ -35,7 +44,9 @@
         "text": "*Nur der Schlüsselbund in Seoyeons Hand klimpert kurz.*",
         "choices": [
             "Es ihr sagen.",
-            "Noch ein wenig bleiben."
+            "Noch ein wenig bleiben.",
+            "Ich sage, was ich fühle, sobald Seoyeon es zuerst sagt.",
+            "So wie wir zueinanderstehen, sollten wir keine Worte brauchen, um es zu wissen."
         ]
     },
     "confess_seo_yes_1": {
@@ -139,7 +150,9 @@
         "text": "*Yuna streicht mit dem Daumen das umgeknickte Ende des Lesezeichens glatt und lässt den Platz gegenüber frei.*",
         "choices": [
             "Yuna. Ich muss dich was fragen.",
-            "Hier ist es wirklich schön."
+            "Hier ist es wirklich schön.",
+            "Ich antworte, wenn Yuna zuerst fragt.",
+            "Yuna sollte wissen, was ich fühle, auch wenn ich es nicht sage."
         ]
     },
     "confess_yuna_yes_1": {
@@ -247,7 +260,9 @@
         "text": "*Der Ball springt einmal auf. Eine halbe Sekunde zu spät streift Dains Hand an seiner Seite vorbei.*",
         "choices": [
             "Dain. Leg den Ball weg.",
-            "Spielen wir noch eine Runde?"
+            "Spielen wir noch eine Runde?",
+            "Ich sage, was ich fühle, sobald Dain es zuerst sagt.",
+            "So wie wir zueinanderstehen, sollten wir keine Worte brauchen, um es zu wissen."
         ]
     },
     "confess_dain_yes_1": {

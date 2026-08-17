@@ -283,8 +283,8 @@
         "choices": [
             "Si le preocupo, puede decir que le preocupo",
             "Entonces la próxima vez también pediré jugo, profe.",
-            "¿No podría cuidarme así solo a mí de ahora en adelante?",
-            "Si tanto le preocupa, acompáñeme a casa hoy."
+            "¿Puedo pensar que me cuida así porque soy especial para usted?",
+            "La próxima vez, póngame otra vez lo que usted elija."
         ]
     },
     "after_homeroom_honest_choice2a": {
@@ -338,7 +338,9 @@
         "text": "*Llevo toda la mañana rodeado de gente. Mis pasos se detienen frente a la enfermería.*",
         "choices": [
             "Entrar a la enfermería",
-            "Ir directamente a casa"
+            "Ir directamente a casa",
+            "La enfermera también debe de estar aburrida, así que le haré compañía un rato.",
+            "Una consulta de salud podría ayudarnos a acercarnos."
         ]
     },
     "after_hidden_nurse_intro_b": {

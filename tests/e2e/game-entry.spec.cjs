@@ -40,6 +40,35 @@ for (const pageName of ['index.html', 'index-en.html', ...localizedGamePages]) {
     });
 }
 
+test('four-choice affinity scene renders all options and applies a trap penalty', async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto('/game.html');
+    await waitForRuntime(page);
+    await page.waitForFunction(() => window.gameEngine?.dialogueSystem);
+
+    await page.evaluate(async () => {
+        window.gameEngine.dialogueSystem.typingSpeed = 0;
+        window.gameEngine.stateManager.stats.Seoyeon.affinity = 50;
+        await window.gameEngine.renderScene('lunch_seo_choice');
+    });
+    await page.locator('#dialogue-box').click();
+
+    const choices = page.locator('.choice-btn');
+    await expect(choices).toHaveCount(4);
+    await expect(choices).toHaveClass([/choice-ready/, /choice-ready/, /choice-ready/, /choice-ready/]);
+
+    const trapChoice = page.getByRole('button', {
+        name: '정성까지 들였는데 한 입만 먹어줄게',
+        exact: true
+    });
+    await expect(trapChoice).toBeVisible();
+    await trapChoice.click();
+
+    await expect.poll(() => page.evaluate(
+        () => window.gameEngine.stateManager.stats.Seoyeon.affinity
+    )).toBe(47);
+});
+
 test('cinematic overlays only enter the accessibility tree while active', async ({ page }) => {
     await page.goto('/game.html');
     await waitForRuntime(page);

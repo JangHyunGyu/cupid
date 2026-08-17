@@ -689,5 +689,13 @@
     "lunch2_seo_trap_1": {
         "name": "Seoyeon",
         "text": "*Sie zieht das Feuchttuch zurück.* Klar. Du kommst ja allein zurecht."
+    },
+    "lunch2_yuna_trap_compare": {
+        "name": "Yuna",
+        "text": "*Yuna schiebt das Ende des Lesezeichens noch ein Stück tiefer.* Du und diese Person, das lässt sich nicht vergleichen."
+    },
+    "lunch2_yuna_trap_exclusive": {
+        "name": "Yuna",
+        "text": "*Sie zieht das Buch zu sich und lässt es dann langsam los.* Das entscheide ich."
     }
 }

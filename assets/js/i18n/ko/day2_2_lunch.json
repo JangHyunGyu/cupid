@@ -689,5 +689,13 @@
     "lunch2_seo_trap_1": {
         "name": "서연",
         "text": "*물티슈를 거둔다.* 그래. 혼자서 잘하니까."
+    },
+    "lunch2_yuna_trap_compare": {
+        "name": "유나",
+        "text": "*유나는 책갈피 끝을 한 칸 더 밀어 넣는다.* 그 사람하고 넌 비교할 일이 아니야."
+    },
+    "lunch2_yuna_trap_exclusive": {
+        "name": "유나",
+        "text": "*책을 자기 쪽으로 당겼다가 천천히 놓는다.* 그건 내가 정해."
     }
 }
