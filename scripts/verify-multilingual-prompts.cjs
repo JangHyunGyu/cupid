@@ -969,8 +969,12 @@ for (const lang of languages) {
     `group-rivalry/${lang} shares the social cache fingerprint`);
     assert(rivalryParts.stable.includes('Subtle rivalry over a choice')
         && rivalryParts.stable.includes('Do not let the two characters compromise it away')
-        && rivalryParts.stable.includes('does not instantly pretend to be fine or gracefully yield'),
-    `group-rivalry/${lang} lost the awkward choice and subtle competitive pressure`);
+        && rivalryParts.stable.includes('does not instantly pretend to be fine or gracefully yield')
+        && rivalryParts.stable.includes('the unchosen character’s affinity must be negative')
+        && rivalryParts.stable.includes('unavoidable loss to -3')
+        && rivalryParts.stable.includes('each of them an affinity of -3 or lower')
+        && !rivalryParts.stable.includes('do not apply an automatic fixed penalty merely because a choice was made'),
+    `group-rivalry/${lang} lost the unavoidable but minimizable loss for the unchosen character`);
     assert(rivalryParts.dynamic.includes('[Current choice rivalry]')
         && rivalryParts.dynamic.includes('current affinity=12')
         && rivalryParts.dynamic.includes('current affinity=34'),

@@ -962,8 +962,12 @@ function verifyGroupPromptCacheContract(context) {
     'rivalry and social group modes share one stable cache fingerprint');
     assert(rivalryParts.stable.includes('[은근한 선택 경쟁]')
         && rivalryParts.stable.includes('주인공이 답하기 전에 둘이 알아서 타협하거나')
-        && rivalryParts.stable.includes('후자는 억지로 괜찮은 척하거나 곧바로 양보하지 않습니다'),
-    'rivalry prompt no longer sustains the awkward choice without cartoon hostility');
+        && rivalryParts.stable.includes('후자는 억지로 괜찮은 척하거나 곧바로 양보하지 않습니다')
+        && rivalryParts.stable.includes('선택받지 못한 인물의 affinity는 반드시 음수로 주세요')
+        && rivalryParts.stable.includes('-3이 이 미션의 최소 손실입니다')
+        && rivalryParts.stable.includes('두 사람의 affinity를 각각 -3 이하로 주세요')
+        && !rivalryParts.stable.includes('선택 자체만으로 정해진 감점을 기계적으로 주지는 마세요'),
+    'rivalry prompt no longer guarantees an unavoidable but minimizable loss for the unchosen character');
     assert(rivalryParts.dynamic.includes('[현재 선택 경쟁]')
         && rivalryParts.dynamic.includes('현재 호감도=12')
         && rivalryParts.dynamic.includes('현재 호감도=34'),

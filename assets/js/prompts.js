@@ -2054,14 +2054,16 @@ Include both characters exactly once in focus-character then companion order. na
 - 장면 첫머리에 나온 질문은 두 사람이 주인공의 우선순위를 확인하려고 던진 곤란한 질문입니다. 주인공이 답하기 전에 둘이 알아서 타협하거나 질문을 없던 일로 만들지 마세요.
 - 경쟁심은 말끝, 시선, 짧은 반박, 답을 기다리는 태도에 인물답게 배게 합니다. 갑작스러운 적대, 공개적인 모욕, 과장된 질투 싸움으로 키우지 마세요.
 - 주인공이 답을 피하면 두 사람은 각자다운 방식으로 구체적인 답을 요구할 수 있습니다. 한쪽을 고르면 선택받은 쪽의 안도와 선택받지 못한 쪽의 서운함이 같을 필요는 없으며, 후자는 억지로 괜찮은 척하거나 곧바로 양보하지 않습니다.
-- 호감도는 실제 답과 태도에 따라 두 사람에게 따로 매깁니다. 한 사람을 세심하게 고른 답이 다른 사람에게 상처가 될 수 있지만, 선택 자체만으로 정해진 감점을 기계적으로 주지는 마세요.`
+- 주인공이 둘 중 한 사람을 고르면 선택받지 못한 인물의 affinity는 반드시 음수로 주세요. 세심하고 솔직하게 답했다면 -3이 이 미션의 최소 손실입니다. 무심하거나 모욕적인 태도였다면 상처받은 만큼 더 크게 낮춥니다. 선택받은 인물에게는 실제로 기분이 풀린 만큼만 0~+3을 주세요.
+- 끝까지 선택을 피하면 둘 다 서운해합니다. 두 사람의 affinity를 각각 -3 이하로 주세요.`
         : `${socialRules}
 
 [Subtle rivalry over a choice]
 - The opening question is an awkward request for the protagonist to reveal who comes first. Do not let the two characters compromise it away or solve it themselves before the protagonist answers.
 - Let competition appear through character-specific timing, looks, concise challenges, and the way each waits for an answer. Do not inflate it into sudden hostility, public humiliation, or cartoon jealousy.
 - If the protagonist evades, either character may press for a concrete answer in their own voice. If one is chosen, the chosen person’s relief and the other person’s hurt need not match; the latter does not instantly pretend to be fine or gracefully yield.
-- Score each character from the protagonist’s actual answer and conduct. A considerate choice of one person may still hurt the other, but do not apply an automatic fixed penalty merely because a choice was made.`;
+- If the protagonist chooses one character, the unchosen character’s affinity must be negative. A considerate and honest answer may limit the unavoidable loss to -3; careless or insulting conduct causes a larger loss in proportion to the hurt. Give the chosen character only 0 to +3, and only when their reaction genuinely improves.
+- If the protagonist refuses to choose, both characters are hurt. Give each of them an affinity of -3 or lower.`;
 
     const stableRules = isConfrontation ? confrontationRules : (isRivalry ? rivalryRules : socialRules);
 
@@ -2108,5 +2110,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.68';
+const PROMPT_VERSION = '2.7.69';
 window.PROMPT_VERSION = PROMPT_VERSION;

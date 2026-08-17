@@ -1950,8 +1950,8 @@ try {
     const activePromptSources = [promptsContent, ftCoreContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
-    if (promptVersion !== '2.7.68') {
-        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.68이 아님: ' + promptVersion);
+    if (promptVersion !== '2.7.69') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.69가 아님: ' + promptVersion);
     }
     if (galleryPromptVersion !== '2.7.63') {
         errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.63이 아님: ' + galleryPromptVersion);

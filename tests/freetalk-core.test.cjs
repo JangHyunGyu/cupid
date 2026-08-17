@@ -1048,6 +1048,41 @@ test('group reply order, per-speaker affinity, and Dain expression assets follow
     system._applyGroupExpression('sad', 'Dain');
     assert.equal(dainImage.src, 'assets/images/characters/dain_sad.png?v=test');
 
+    system.freeTalkTurns = 1;
+    assert.deepEqual(
+        Array.from(system._enforceRivalryOpeningLoss([
+            { speakerId: 'Teacher', affinity: 3 },
+            { speakerId: 'Dain', affinity: 0 }
+        ], { groupMode: 'route_rivalry' }), item => item.affinity),
+        [3, -3],
+        'the lower-scored unchosen character must take the minimum rivalry loss'
+    );
+    assert.deepEqual(
+        Array.from(system._enforceRivalryOpeningLoss([
+            { speakerId: 'Teacher', affinity: 0 },
+            { speakerId: 'Dain', affinity: 0 }
+        ], { groupMode: 'route_rivalry' }), item => item.affinity),
+        [-3, -3],
+        'an unresolved tie must count as evading both characters'
+    );
+    assert.deepEqual(
+        Array.from(system._enforceRivalryOpeningLoss([
+            { speakerId: 'Teacher', affinity: 2 },
+            { speakerId: 'Dain', affinity: -1 }
+        ], { groupMode: 'route_rivalry' }), item => item.affinity),
+        [2, -3],
+        'a token negative score must not undercut the minimum rivalry loss'
+    );
+    system.freeTalkTurns = 2;
+    assert.deepEqual(
+        Array.from(system._enforceRivalryOpeningLoss([
+            { speakerId: 'Teacher', affinity: 1 },
+            { speakerId: 'Dain', affinity: 0 }
+        ], { groupMode: 'route_rivalry' }), item => item.affinity),
+        [1, 0],
+        'later repair turns must remain behavior-based rather than repeat the opening penalty'
+    );
+
     const events = [];
     system.stateManager = {
         getRelationshipAftermath: () => null,
@@ -1086,7 +1121,7 @@ test('group reply order, per-speaker affinity, and Dain expression assets follow
     ]);
 });
 
-test('skipping a group chat warns first and lowers both participants by ten only after confirmation', async () => {
+test('skipping a group chat warns first and lowers both participants by twenty only after confirmation', async () => {
     const freeTalkWindow = { CupidFreeTalkCore: core, GAME_LANG: 'ko' };
     const sandbox = {
         window: freeTalkWindow,
@@ -1163,11 +1198,11 @@ test('skipping a group chat warns first and lowers both participants by ten only
     beginGroupChat();
     await system.skipFreeTalk();
     assert.match(modalMessages[1], /담임선생님 · 다인/);
-    assert.match(modalMessages[1], /각각 10씩 떨어집니다/);
-    assert.deepEqual(affinities, { Teacher: 25, Dain: 12 });
+    assert.match(modalMessages[1], /각각 20씩 떨어집니다/);
+    assert.deepEqual(affinities, { Teacher: 15, Dain: 2 });
     assert.deepEqual(displayedChanges[0], [
-        { charKey: 'Teacher', amount: -10 },
-        { charKey: 'Dain', amount: -10 }
+        { charKey: 'Teacher', amount: -20 },
+        { charKey: 'Dain', amount: -20 }
     ]);
     assert.equal(system.isFreeTalking, false);
     assert.equal(system.isGroupMode, false);

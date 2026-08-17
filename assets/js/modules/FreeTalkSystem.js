@@ -107,7 +107,7 @@ function buildCupidAffinityIntimacyProgressionPatch(lang = 'ko', affinity = 0, i
 const cupidSanitizeLatestUserText = CupidFreeTalkCore.sanitizeLatestUserText;
 const cupidTruncateLatestUserText = CupidFreeTalkCore.truncateLatestUserText;
 const cupidFindLatestUserText = CupidFreeTalkCore.findLatestUserText;
-const GROUP_FREE_TALK_SKIP_AFFINITY_PENALTY = -10;
+const GROUP_FREE_TALK_SKIP_AFFINITY_PENALTY = -20;
 
 class FreeTalkSystem {
     /**
@@ -1762,6 +1762,36 @@ class FreeTalkSystem {
         };
     }
 
+    _enforceRivalryOpeningLoss(conversations, scene) {
+        if (scene?.groupMode !== 'route_rivalry'
+            || this.freeTalkTurns !== 1
+            || !Array.isArray(conversations)
+            || conversations.length !== 2) {
+            return conversations;
+        }
+
+        const affinityChanges = conversations.map(conversation => (
+            CupidFreeTalkCore.normalizeAffinityChange(conversation.affinity)
+        ));
+        const negativeIndexes = affinityChanges
+            .map((change, index) => change < 0 ? index : -1)
+            .filter(index => index >= 0);
+        const penalizedIndexes = negativeIndexes.length > 0
+            ? negativeIndexes
+            : (() => {
+                const lowestChange = Math.min(...affinityChanges);
+                return affinityChanges
+                    .map((change, index) => change === lowestChange ? index : -1)
+                    .filter(index => index >= 0);
+            })();
+
+        return conversations.map((conversation, index) => (
+            penalizedIndexes.includes(index)
+                ? { ...conversation, affinity: Math.min(affinityChanges[index], -3) }
+                : conversation
+        ));
+    }
+
     async _renderGroupConversations(conversations, requestContext, latestUserText, lang, scene = null) {
         let positiveBudget = 3;
         const rendered = [];
@@ -1951,7 +1981,8 @@ class FreeTalkSystem {
                 });
             }
             const reply = String(data?.choices?.[0]?.message?.content || '').trim();
-            const conversations = this.parseGroupJsonResponse(reply);
+            const parsedConversations = this.parseGroupJsonResponse(reply);
+            const conversations = this._enforceRivalryOpeningLoss(parsedConversations, scene);
 
             this._clearThinkingMessage();
             document.querySelectorAll('.group-freetalk-participant img').forEach(img => img.classList.remove('thinking'));
