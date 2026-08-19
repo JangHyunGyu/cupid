@@ -16,7 +16,7 @@
     "morning5_temptation_counteroffer_branch": {},
     "morning5_caught_teacher_counteroffer": {
         "name": "Klassenlehrerin",
-        "text": "*Morgens im Klassenzimmer lege ich mein Handy hin, um meiner Klassenlehrerin ein Foto meines Entwurfs zu zeigen. Der Bildschirm leuchtet mit einer Nachricht des Mädchens auf, bei dem ich gestern war: 'Was gestern passiert ist, bleibt unter uns, oder?' Die Lehrerin liest sie zu Ende und nimmt ihre Hand vom Handy.* Du hast meine Nachricht gestern ignoriert, um dieses Mädchen zu treffen?",
+        "text": "*Morgens im Klassenzimmer lege ich mein Handy hin, um meiner Klassenlehrerin ein Foto meines Entwurfs zu zeigen. Der Bildschirm leuchtet mit einer Nachricht des Mädchens auf, mit dem ich gestern zusammen war: 'Was gestern passiert ist, bleibt unter uns, oder?' Die Lehrerin liest sie zu Ende und nimmt ihre Hand vom Handy.* Du hast meine Nachricht gestern ignoriert, um dieses Mädchen zu treffen?",
         "choices": [
             "Ihr offen erzählen, was gestern Nacht passiert ist",
             "Es als unwichtig abtun",
@@ -26,7 +26,7 @@
     },
     "morning5_caught_nurse_counteroffer": {
         "name": "Schulkrankenschwester",
-        "text": "*Sobald ich mein Handy auf die Untersuchungsliege lege, leuchtet der Bildschirm auf. Eine Nachricht des Mädchens, bei dem ich gestern war, lautet: 'Was gestern passiert ist, bleibt unter uns, oder?' Die Schulkrankenschwester will wie immer lächeln, doch dann verschwindet ihr Lächeln langsam.* Du hast meine Nachricht also nicht übersehen. Du warst bei diesem Mädchen?",
+        "text": "*Sobald ich mein Handy auf die Ablage im Krankenzimmer lege, leuchtet der Bildschirm auf. Eine Nachricht des Mädchens, mit dem ich gestern zusammen war, lautet: 'Was gestern passiert ist, bleibt unter uns, oder?' Die Schulkrankenschwester will wie immer lächeln, doch dann verschwindet ihr Lächeln langsam.* Du hast meine Nachricht also nicht übersehen. Du warst bei diesem Mädchen?",
         "choices": [
             "Ihr offen erzählen, was gestern Nacht passiert ist",
             "Es als unwichtig abtun",
@@ -48,7 +48,7 @@
     },
     "morning5_caught_nurse_lie": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schulkrankenschwester prüft die neue Nachricht und nimmt ihre Brille ab. Ihr Blick trifft meinen ohne eine Spur des gewohnten Lächelns.* Es waren also keine Schmerzen, die du verborgen hast. Um deine Lügen kann ich mich nicht auch noch kümmern. *Ich verlasse das Krankenzimmer und kehre ins Klassenzimmer zurück.*"
+        "text": "*Die Schulkrankenschwester prüft die neue Nachricht und nimmt ihre Brille ab. Ihr Blick trifft meinen ohne eine Spur des gewohnten Lächelns.* Es war also keine Verletzung, die du verborgen hast. Um deine Lügen kann ich mich nicht auch noch kümmern. *Ich verlasse das Krankenzimmer und kehre ins Klassenzimmer zurück.*"
     },
     "morning5_caught_by_seoyeon_route": {},
     "morning5_caught_by_yuna_route": {},
@@ -139,7 +139,7 @@
     },
     "morning5_counteroffer_group_talk": {
         "name": "Die beiden",
-        "text": "*Beide Blicke nageln mich fest. Was die letzte Nacht wirklich war und ob ich von Anfang an beide festhalten wollte. Keine von ihnen will zuerst zurückweichen.* „Also, wen wählst du jetzt?“",
+        "text": "*Beide Blicke nageln mich fest. Was sollte die letzte Nacht bedeuten? Habe ich sie von Anfang an beide hingehalten? Keine von ihnen will zuerst zurückweichen.* „Also, wen wählst du jetzt?“",
         "context": "Soeben ist herausgekommen, dass der Protagonist der Versuchung der letzten Nacht nachgegeben hat. Die Person, für die er sich entschieden hatte, und diejenige, die ihn verführt hat, stellen ihn nun gemeinsam im selben Klassenzimmer zur Rede. Das Gespräch setzt bei seiner Entscheidung an, die Wahrheit zu sagen oder zu lügen. Beide verlangen eine direkte Erklärung seiner Beziehungen und Absichten sowie eine klare Antwort darauf, wen er jetzt wählt, ohne die Spannung zwischen den dreien zu überspielen.",
         "personality": "Beide behalten ihre eigene Stimme und ihren eigenen Schmerz. Die betrogene Person spricht zuerst, und die Verführerin antwortet, nachdem sie ihr zugehört hat. Im Mittelpunkt steht die Erklärung des Protagonisten: Beide befragen ihn direkt und haken bei jeder Lücke nach. Die betrogene Person fragt auf ihre eigene Art, warum er jemand anderen angenommen hat, obwohl ihre Beziehung weiterlief, ob er von Anfang an zweigleisig gefahren ist oder nur mit ihr gespielt hat. Die Verführerin übernimmt die Verantwortung dafür, den ersten Schritt gemacht und die andere verletzt zu haben. Sie empfindet Schuld, verbirgt aber nicht den Wunsch, den Protagonisten für sich zu gewinnen und von ihm gewählt zu werden. Aus Schuld allein zieht sie sich nicht zurück und gibt nicht nach. Beide dürfen einander widersprechen oder antworten, aber sie schließen den Protagonisten nicht aus und entscheiden die Beziehung nicht unter sich. Eine beantwortete Frage wird nicht wiederholt; stattdessen haken sie bei fehlenden Tatsachen, der Bedeutung der Beziehung oder seiner nächsten Entscheidung nach.",
         "buttonText": "Antworten"
@@ -247,7 +247,7 @@
     },
     "hidden_homeroom_d5_1_c": {
         "name": "{name}",
-        "text": "Frau Lehrerin."
+        "text": "Entschuldigen Sie."
     },
     "hidden_homeroom_d5_1_d": {
         "name": "Klassenlehrerin",
@@ -309,7 +309,7 @@
     },
     "hidden_homeroom_d5_praise_trap_7": {
         "name": "{name}",
-        "text": "Frau Lehrerin."
+        "text": "Entschuldigen Sie."
     },
     "hidden_homeroom_d5_praise_trap_8": {
         "name": "Klassenlehrerin",
@@ -405,7 +405,7 @@
     },
     "hidden_homeroom_d5_6_e": {
         "name": "{name}",
-        "text": "Frau Lehrerin."
+        "text": "Entschuldigen Sie."
     },
     "hidden_homeroom_d5_6_f": {
         "name": "{name}",
@@ -437,7 +437,7 @@
     },
     "hidden_homeroom_d5_6_m": {
         "name": "Klassenlehrerin",
-        "text": "*Sie schiebt eine lose Haarsträhne hinters Ohr.* Einen Aufsatz nehme ich nicht an."
+        "text": "*Sie schiebt eine lose Haarsträhne hinters Ohr.* Buchberichte nehme ich nicht an."
     },
     "hidden_homeroom_d5_6_n": {
         "name": "{name}",
@@ -660,11 +660,11 @@
     "hidden_nurse_d5_after_co_check": {},
     "morning5_after_counteroffer": {
         "name": "{name}",
-        "text": "*Ein Zettel rutscht vom Pult. Niemand hebt ihn auf. Die Ansage zur Veranstaltung kommt zuerst.*"
+        "text": "*Ein Zettel rutscht vom Pult. Noch bevor ihn jemand aufheben kann, erfüllt eine Durchsage zur Veranstaltung das Klassenzimmer.*"
     },
     "morning5_sojeong_1": {
         "name": "{name}",
-        "text": "*Ich öffne die Notizen-App. Neununddreißig leere Entwürfe beginnen mit „An Sojeong“.*"
+        "text": "*Ich öffne die Notizen-App. Neununddreißig unfertige Entwürfe beginnen mit „An Sojeong“.*"
     },
     "morning5_sojeong_2": {
         "name": "{name}",

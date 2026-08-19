@@ -180,7 +180,7 @@
     },
     "hidden_homeroom_d2_2": {
         "name": "{name}",
-        "text": "*Zwischen den Seiten ihres Klassenbuchs ragt die Ecke meiner Wechselunterlagen hervor.*"
+        "text": "*Zwischen den Seiten ihres Klassenbuchs ragt die Ecke der Unterlagen zu meinem Schulwechsel hervor.*"
     },
     "hidden_homeroom_d2_2_b": {
         "name": "{name}",
@@ -273,7 +273,7 @@
     },
     "hidden_homeroom_d2_9": {
         "name": "{name}",
-        "text": "Danke, Frau Lehrerin."
+        "text": "Danke."
     },
     "hidden_homeroom_d2_10": {
         "name": "Klassenlehrerin",
@@ -322,7 +322,7 @@
     },
     "morning2_seo_dust_3": {
         "name": "Seoyeon",
-        "text": "*Ihre Hand berührt {name}s Schulter. Sie klopft den Staub zweimal ab und nimmt die Hand wieder weg.*"
+        "text": "*Ihre Hand berührt die Schulter von {name}. Sie klopft den Staub zweimal ab und nimmt die Hand wieder weg.*"
     },
     "morning2_seo_dust_4": {
         "name": "Seoyeon",

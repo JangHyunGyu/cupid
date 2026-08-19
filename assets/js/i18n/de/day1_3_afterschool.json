@@ -279,10 +279,10 @@
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
-        "text": "*Die Ecke der Anwesenheitsliste liegt am Schreibtisch an.*",
+        "text": "*Die Ecke des Klassenbuchs liegt auf dem Schreibtisch auf.*",
         "choices": [
             "Wenn Sie sich Sorgen machen, können Sie das ruhig auch so sagen",
-            "Dann bestelle ich nächstes Mal wieder Saft, Frau Lehrerin.",
+            "Dann bestelle ich beim nächsten Mal wieder Saft.",
             "Darf ich glauben, dass Sie sich nur um mich so besonders kümmern?",
             "Nächstes Mal nehme ich wieder das, was Sie für mich aussuchen."
         ]

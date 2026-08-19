@@ -1,11 +1,11 @@
 {
     "lunch3_start": {
         "name": "{name}",
-        "text": "*Mittagspause. Sobald ich meine Lunchbox öffne, kommen alle drei an einem Tisch zusammen. Die Verabredungen fürs Wochenende, die heute Morgen ausgetauscht wurden, sind niemandem entgangen. Seoyeon setzt sich neben mich, Dain mir gegenüber, und selbst Yuna zieht aus der Ecke, in der sie ihr Brötchen gegessen hat, einen freien Stuhl heran.*"
+        "text": "*Mittagspause. Sobald ich meine Lunchbox öffne, versammeln sich alle drei an einem Tisch. Die Verabredungen fürs Wochenende, die heute Morgen ausgetauscht wurden, sind niemandem entgangen. Seoyeon setzt sich neben mich, Dain mir gegenüber, und selbst Yuna zieht aus der Ecke, in der sie ihr Brötchen gegessen hat, einen freien Stuhl heran.*"
     },
     "lunch3_start_2_b": {
         "name": "Dain",
-        "text": "*Dain nimmt das gerollte Omelett vor Yuna. Seoyeon sieht auf die andere Tischseite, bevor sie ihre Stäbchen hebt.*"
+        "text": "*Dain schnappt sich das gerollte Omelett, bevor Yuna zugreifen kann. Seoyeon sieht auf die andere Tischseite, bevor sie ihre Stäbchen hebt.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
@@ -269,7 +269,7 @@
     },
     "lunch3_expose_honest_2": {
         "name": "Seoyeon",
-        "text": "Du konntest also nicht Nein sagen. Das ist das Grausamste, was du sagen konntest, {name}."
+        "text": "Du konntest also nicht Nein sagen. Das ist das Grausamste, was du hättest sagen können, {name}."
     },
     "lunch3_expose_honest_3": {
         "name": "Seoyeon",
@@ -329,7 +329,7 @@
     },
     "lunch3_share_solo": {
         "name": "{name}",
-        "text": "*Die drei teilen die Eierrolle Stück für Stück. Niemand steht auf, bevor auch die letzte halbierte Portion verschwunden ist.*"
+        "text": "*Die drei teilen die Eierrolle Stück für Stück. Niemand steht auf, bevor auch das letzte halbierte Stück verschwunden ist.*"
     },
     "lunch3_harem_1": {
         "name": "{name}",

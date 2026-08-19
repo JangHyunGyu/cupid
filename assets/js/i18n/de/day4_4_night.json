@@ -14,7 +14,7 @@
     "day4_adult_nurse_student_rank": {},
     "day4_teacher_seoyeon_counteroffer": {
         "name": "Seoyeon",
-        "text": "*Als ich mich von meiner Klassenlehrerin verabschiedet habe und die Schule verlassen will, wartet Seoyeon an der Treppe zum Dach. Sie lächelt, doch ihre Finger krallen sich in den Ärmel ihrer Uniform.* In letzter Zeit hast du nur noch Augen für die Lehrerin. Kannst du heute nicht einfach mich ansehen, ohne die Schülersprecherin oder die Musterschülerin zu sehen?",
+        "text": "*Als ich mich von meiner Klassenlehrerin verabschiedet habe und die Schule verlassen will, wartet Seoyeon an der Treppe zum Dach. Sie lächelt, doch ihre Finger krallen sich in den Ärmel ihrer Uniform.* In letzter Zeit hast du nur noch Augen für die Lehrerin. Kannst du heute nicht einfach mich ansehen – nicht als Schülersprecherin oder Musterschülerin, sondern nur als Seoyeon?",
         "choices": [
             "Mein Versprechen gegenüber der Klassenlehrerin halten und gehen",
             "Seoyeon aufs Dach folgen und ihre Hand nehmen",
@@ -44,7 +44,7 @@
     },
     "day4_nurse_seoyeon_counteroffer": {
         "name": "Seoyeon",
-        "text": "*Auf dem Weg vom Krankenzimmer zum Schultor stellt sich Seoyeon vor die Treppe zum Dach. Ihre Lippen zwingen sich zu einem Lächeln, während ihre Finger den Uniformärmel zerknittern.* In letzter Zeit besuchst du nur noch die Schulkrankenschwester. Kannst du heute nicht einfach mich ansehen, ohne die Schülersprecherin oder die Musterschülerin zu sehen?",
+        "text": "*Auf dem Weg vom Krankenzimmer zum Schultor stellt sich Seoyeon vor die Treppe zum Dach. Ihre Lippen zwingen sich zu einem Lächeln, während ihre Finger den Uniformärmel zerknittern.* In letzter Zeit besuchst du nur noch die Schulkrankenschwester. Kannst du heute nicht einfach mich ansehen – nicht als Schülersprecherin oder Musterschülerin, sondern nur als Seoyeon?",
         "choices": [
             "Der Schulkrankenschwester antworten und gehen",
             "Seoyeon aufs Dach folgen und ihre Hand nehmen",
@@ -74,7 +74,7 @@
     },
     "day4_adult_counteroffer_accept_seoyeon": {
         "name": "{name}",
-        "text": "*Als die Dachtür zufällt, greift Seoyeon nach {name}s Handgelenk und legt die Hand auf ihre Brust. Unter der gelockerten Schleife steht der Hemdkragen offen, und ihr zitternder Atem streift den Handrücken. Das Handy in der Tasche vibriert immer wieder, doch Seoyeon lässt nicht los. Viel später verlassen sie die Schule und kehren nach Hause zurück.*"
+        "text": "*Als die Dachtür zufällt, greift Seoyeon nach dem Handgelenk von {name} und legt meine Hand auf ihre Brust. Unter der gelockerten Schleife steht der Hemdkragen offen, und ihr zitternder Atem streift meinen Handrücken. Das Handy in der Tasche vibriert immer wieder, doch Seoyeon lässt nicht los. Viel später verlassen wir die Schule und kehren nach Hause zurück.*"
     },
     "day4_adult_counteroffer_accept_dain": {
         "name": "{name}",
@@ -82,12 +82,12 @@
     },
     "day4_adult_counteroffer_accept_yuna": {
         "name": "{name}",
-        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand am Bücherregal ab. Sie lässt die Jacke unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres Oberteils hinunter. Zwischen nackter Schulter und Tattoo bleiben ihre roten Augen auf {name}s Augenhöhe. Das Handy auf dem Tisch vibriert erneut. Viel später verlassen sie das Nebengebäude und kehren nach Hause zurück.*"
+        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand am Bücherregal ab. Sie lässt die Jacke unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres Oberteils hinunter. Über ihre nackte Schulter und das Tattoo hinweg hält sie mit ihren roten Augen den Blick von {name} fest. Das Handy auf dem Tisch vibriert erneut. Viel später verlassen wir das Nebengebäude und kehren nach Hause zurück.*"
     },
     "day4_adult_night_regret_target_branch": {},
     "day4_adult_night_regret_teacher": {
         "name": "{name}",
-        "text": "*Zu Hause schalte ich mein Handy ein und sehe die Nachricht meiner Klassenlehrerin: 'Du solltest mir doch Bescheid sagen, wenn du angekommen bist. Ist etwas passiert?' Meine Hand bleibt über dem Antwortfeld stehen.*"
+        "text": "*Zu Hause schalte ich mein Handy ein und sehe die Nachricht meiner Klassenlehrerin: 'Ich hatte dich gebeten, mir Bescheid zu sagen, wenn du angekommen bist. Ist etwas passiert?' Meine Hand bleibt über dem Antwortfeld stehen.*"
     },
     "day4_adult_night_regret_nurse": {
         "name": "{name}",
@@ -211,7 +211,7 @@
         "text": "*Das verschmierte Make-up bleibt auf ihrem Handrücken, und Seoyeons Schultern heben sich bei jedem Atemzug kurz.*",
         "choices": [
             "Sie in den Arm nehmen",
-            "Ihr meinen kleinen Finger reichen",
+            "Ihr die Hand hinhalten",
             "Du darfst weinen. Ich bringe alles in Ordnung.",
             "Ab jetzt sorge ich dafür, dass dir nichts mehr wehtut."
         ]
@@ -332,7 +332,7 @@
     },
     "wall_seo_glimpse_2": {
         "name": "Dain",
-        "text": "Nur zehn Pässe. Wenn wir fertig sind ... nimm mich kurz in den Arm. Heute Abend schaffe ich es nicht mehr, allein so zu tun, als wäre alles in Ordnung.",
+        "text": "Nur zehn Aufschläge. Wenn wir fertig sind ... nimm mich kurz in den Arm. Heute Abend schaffe ich es nicht mehr, allein so zu tun, als wäre alles in Ordnung.",
         "choices": [
             "Das Versprechen halten und zu Seoyeon in den Park gehen",
             "In die Turnhalle gehen und bei Dain bleiben",
@@ -360,7 +360,7 @@
     },
     "wall_seo_yuna_tempt_accept": {
         "name": "{name}",
-        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand gegen das Regal. Sie lässt den Blazer unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres dunklen Oberteils hinab. Zwischen nackter Schulter und Tattoo bleiben ihre roten Augen auf {name}s Augenhöhe. Seoyeons Nachricht — „Ich sitze auf der Bank im Park.“ — bleibt oben auf dem Bildschirm stehen.*"
+        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand gegen das Regal. Sie lässt den Blazer unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres dunklen Oberteils hinab. Über ihre nackte Schulter und das Tattoo hinweg hält sie mit ihren roten Augen den Blick von {name} fest. Seoyeons Nachricht — „Ich sitze auf der Bank im Park.“ — bleibt oben auf dem Bildschirm stehen.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -396,7 +396,7 @@
     },
     "wall_dain_4": {
         "name": "{name}",
-        "text": "*In der Turnhalle brennt nur das Notlicht. Dain lässt allein einen Volleyball aufspringen. Ihre Mundwinkel sind angehoben, doch die Schultern stehen steif bis nahe an die Ohren.*"
+        "text": "*In der Turnhalle brennt nur das Notlicht. Dain lässt allein einen Volleyball aufspringen. Ihre Mundwinkel sind angehoben, doch ihre Schultern sind starr bis zu den Ohren hochgezogen.*"
     },
     "wall_dain_5": {
         "name": "Dain",
@@ -500,11 +500,11 @@
     },
     "wall_dain_20": {
         "name": "Dain",
-        "text": "Jedes Mal, wenn in der Schule jemand »Du hast so viel Energie!« sagte, wurde mir zuerst die Brust eng."
+        "text": "Jedes Mal, wenn in der Schule jemand »Du hast so viel Energie!« sagte, zog sich zuerst meine Brust zusammen."
     },
     "wall_dain_20_b": {
         "name": "Dain",
-        "text": "Selbst wenn ich einatmete, kam die Luft nie ganz hinein."
+        "text": "Selbst wenn ich einatmete, bekam ich nie richtig Luft."
     },
     "wall_dain_21": {
         "name": "Dain",
@@ -524,7 +524,7 @@
         "choices": [
             "Ich sage nichts. Ich bleibe einfach hier.",
             "Du darfst weinen. Vor mir musst du nicht so tun, als wärst du fröhlich.",
-            "Räumen wir zuerst die Bälle weg. Und buchen wir morgen einen Arzttermin."
+            "Räumen wir zuerst die Bälle weg. Und vereinbaren wir morgen einen Arzttermin."
         ]
     },
     "wall_dain_newdream_1": {
@@ -553,7 +553,7 @@
     },
     "wall_dain_newdream_7": {
         "name": "Dain",
-        "text": "Während ich danach suche, sitzt du dann manchmal so neben mir?"
+        "text": "Willst du, während ich das herausfinde, manchmal so neben mir sitzen?"
     },
     "wall_dain_newdream_8": {
         "name": "{name}",
@@ -637,12 +637,12 @@
     },
     "wall_dain_mention_3": {
         "name": "Dain",
-        "text": "*Ein Schritt bricht ab. Als sie weitergeht, verkürzt sie ihre Schritte und passt sie an {name} neben sich an.*"
+        "text": "*Ein Schritt bricht ab. Als sie weitergeht, verkürzt sie ihre Schritte und passt ihre Schrittlänge der von {name} an.*"
     },
     "wall_dain_skin_check": {},
     "wall_dain_skin70_1": {
         "name": "Dain",
-        "text": "*Dain öffnet die Arme und wartet auf {name}s Antwort.*"
+        "text": "*Dain öffnet die Arme und wartet auf die Antwort von {name}.*"
     },
     "wall_dain_skin70_2": {
         "name": "Dain",
@@ -674,7 +674,7 @@
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand gegen das Regal. Sie lässt den Blazer unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres dunklen Oberteils hinab. Zwischen nackter Schulter und Tattoo bleiben ihre roten Augen auf {name}s Augenhöhe. Dains „Die Hintertür der Turnhalle ist offen.“ bleibt oben auf dem Bildschirm stehen.*"
+        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand gegen das Regal. Sie lässt den Blazer unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres dunklen Oberteils hinab. Über ihre nackte Schulter und das Tattoo hinweg hält sie mit ihren roten Augen den Blick von {name} fest. Dains „Die Hintertür der Turnhalle ist offen.“ bleibt oben auf dem Bildschirm stehen.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -706,7 +706,7 @@
     },
     "wall_dain_seo_tempt_accept": {
         "name": "{name}",
-        "text": "*Die Dachtür fällt zu. Wortlos öffnet Seoyeon die Knöpfe ihrer Bluse, umfasst {name}s Handgelenk und zieht die Hand an sich. Zwischen den geöffneten Blusenrändern berührt die Handfläche ihre nackte Brust, dann legt Seoyeon ihre Hand darüber. Dains Nachricht — „Die Hintertür der Turnhalle ist offen.“ — lässt den Bildschirm aufleuchten.*"
+        "text": "*Die Dachtür fällt zu. Wortlos öffnet Seoyeon die Knöpfe ihrer Bluse, umfasst das Handgelenk von {name} und zieht meine Hand an sich. Zwischen den geöffneten Blusenrändern berührt meine Handfläche ihre nackte Brust, dann legt Seoyeon ihre Hand darüber. Dains Nachricht — „Die Hintertür der Turnhalle ist offen.“ — lässt den Bildschirm aufleuchten.*"
     },
     "wall_yuna_1": {
         "name": "{name}",
@@ -851,7 +851,7 @@
     },
     "wall_yuna_moved_5_b": {
         "name": "Yuna",
-        "text": "*Ihre Hand lässt den Ärmel los. Sie schließt den einen Schritt zwischen {name} und den Regalen.*"
+        "text": "*Ihre Hand lässt den Ärmel los. Sie überbrückt den einen Schritt Abstand zu {name}.*"
     },
     "wall_yuna_skin_check": {},
     "wall_yuna_skin70_1": {
@@ -922,7 +922,7 @@
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*Die Dachtür fällt zu. Wortlos öffnet Seoyeon die Knöpfe ihrer Bluse, umfasst {name}s Handgelenk und zieht die Hand an sich. Zwischen den geöffneten Blusenrändern berührt die Handfläche ihre nackte Brust, dann legt Seoyeon ihre Hand darüber. Yunas Nachricht lässt das Handy einmal und dann noch einmal vibrieren.*"
+        "text": "*Die Dachtür fällt zu. Wortlos öffnet Seoyeon die Knöpfe ihrer Bluse, umfasst das Handgelenk von {name} und zieht meine Hand an sich. Zwischen den geöffneten Blusenrändern berührt meine Handfläche ihre nackte Brust, dann legt Seoyeon ihre Hand darüber. Yunas Nachricht lässt das Handy einmal und dann noch einmal vibrieren.*"
     },
     "wall_yuna_dain_tempt_1": {
         "name": "{name}",
@@ -930,7 +930,7 @@
     },
     "wall_yuna_dain_tempt_2": {
         "name": "Dain",
-        "text": "Nur zehn Pässe. Wenn wir fertig sind ... nimm mich kurz in den Arm. Heute Abend schaffe ich es nicht mehr, allein so zu tun, als wäre alles in Ordnung.",
+        "text": "Nur zehn Aufschläge. Wenn wir fertig sind ... nimm mich kurz in den Arm. Heute Abend schaffe ich es nicht mehr, allein so zu tun, als wäre alles in Ordnung.",
         "choices": [
             "Yuna antworten und weiter zum Hintertor gehen",
             "In die Turnhalle gehen und bei Dain bleiben",
@@ -1020,7 +1020,7 @@
     },
     "wall_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Sie faltet den Brief in ihr Buch und sucht diesmal zuerst den Blick des Protagonisten.* Etwas möchte ich noch hören.",
+        "text": "*Sie faltet den Brief in ihr Buch und sucht diesmal zuerst meinen Blick.* Etwas möchte ich noch hören.",
         "context": "Es ist die Nacht von Tag 4, direkt nachdem Yuna sich Junhos Brief und ihrer Angst, nur Ersatz für jemand anderen zu sein, gestellt hat. Ob der Protagonist ihr Geständnis angenommen oder vertagt hat, und die bestätigten Gefühle sind gespeicherte Tatsachen. Schreibe den Brief nicht um, lösche ihre Angst nicht sofort und bewerte die Beziehung nicht neu.",
         "personality": "Yuna ist still und nachdenklich, weicht wichtigen Fragen aber nicht mehr aus. Statt sich hinter Metaphern zu verstecken, spricht sie wenn nötig direkt und hört zu, ohne die Antwort passend zu ihren Ängsten umzudeuten."
     },
@@ -1034,7 +1034,7 @@
     },
     "day4_final": {
         "name": "{name}",
-        "text": "*Die Uhr in meinem Zimmer rückt auf Mitternacht zu. Auch der Handybildschirm wird dunkel, bis auf einen einzigen Wecker.*"
+        "text": "*Die Uhr in meinem Zimmer rückt auf Mitternacht zu. Auch der Handybildschirm wird dunkel; zurück bleibt nur ein einziger gestellter Wecker.*"
     },
     "forced_violation_day4_after_seoyeon": {
         "name": "Seoyeon",

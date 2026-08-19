@@ -104,7 +104,7 @@
     },
     "after3_seo_choice": {
         "name": "Seoyeon",
-        "text": "Lass das, was du heute gesehen hast, hier enden. Und behandel mich jetzt einfach wie sonst.",
+        "text": "Was du heute gesehen hast, bleibt hier. Und behandel mich jetzt einfach wie sonst.",
         "choices": [
             "Jeder hat mal so einen Tag. Nimm es nicht so schwer.",
             "Gerade eben? Ich habe nichts gesehen. Mein Stift ist runtergefallen, deshalb bin ich reingekommen.",
@@ -216,7 +216,7 @@
     },
     "after3_reject_for_yuna_2": {
         "name": "Seoyeon",
-        "text": "Im Schülerrat ist viel los. Ich esse heute allein. Nur heute."
+        "text": "Im Schülerrat ist viel los. Ich esse heute allein."
     },
     "after3_reject_for_yuna_walk_gym": {
         "name": "{name}",
@@ -558,11 +558,11 @@
     },
     "after3_dain_dilemma_tell_8": {
         "name": "Dain",
-        "text": "Bitte. Sag wenigstens das niemandem."
+        "text": "Bitte. Sag es wenigstens niemandem."
     },
     "after3_dain_dilemma_final": {
         "name": "Dain",
-        "text": "*Dain wischt ihre feuchten Augen nicht ab. Nach ihren letzten Worten folgt auch nicht ihr übliches Lachen.*",
+        "text": "*Dain wischt ihre feuchten Augen nicht ab. Auch ihr übliches Lachen bleibt nach ihren letzten Worten aus.*",
         "choices": [
             "Tut mir leid. Aber ich werde jemandem davon erzählen.",
             "Okay. Du sagst es selbst. Aber ich komme mit ins Krankenzimmer.",
@@ -612,7 +612,7 @@
     },
     "after3_dain_freetalk": {
         "name": "Dain",
-        "text": "*Sie zieht die Handgelenkbandage zurecht; ihr Mundwinkel hebt sich einen halben Schlag zu spät.* Heute rede ich zuerst.",
+        "text": "*Sie zieht die Handgelenkbandage zurecht; ihr Mundwinkel hebt sich einen halben Takt zu spät.* Heute rede ich zuerst.",
         "context": "Tag 3 nach der Schule, direkt nach einem Gespräch mit Dain. Sie versucht, dem Protagonisten mit ihrer gewohnten Energie zu begegnen, doch Verletzung und Unsicherheit bleiben, und sie möchte verstehen, für welche Beziehungen der Protagonist sich entschieden hat.",
         "personality": "Dain ist eine energiegeladene und direkte Volleyballspielerin. Humor und Aufrichtigkeit können sich natürlich zeigen, wenn sie ausdrückt, was sie fühlt und was sie über die Beziehung wissen möchte."
     },
@@ -675,7 +675,7 @@
     },
     "after3_confront_admit_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon blickt auf den Griff ihrer Lunchbox-Tasche hinab.*"
+        "text": "*Seoyeon blickt auf den Griff ihrer Lunchtasche hinab.*"
     },
     "after3_confront_admit_2": {
         "name": "Seoyeon",
@@ -683,7 +683,7 @@
     },
     "after3_confront_admit_3": {
         "name": "Seoyeon",
-        "text": "*Als Seoyeon die Lunchbox-Tasche aufhebt, verdreht sich der Griff in ihrer Hand.*"
+        "text": "*Als Seoyeon die Lunchtasche aufhebt, verdreht sich der Griff in ihrer Hand.*"
     },
     "after3_confront_admit_4": {
         "name": "Seoyeon",
@@ -749,7 +749,7 @@
     },
     "after3_group_nurse_companion": {
         "name": "Schulkrankenschwester und Begleitung",
-        "text": "*Neben einer Gesundheitsliste steht eine Kiste mit Material für die Sportklubs. Die Schulkrankenschwester zeigt auf eine leere Zeile, während die Begleitung fehlendes Material aus der Kiste nimmt.* „Beides muss heute geprüft werden, aber wir müssen mit einer Sache anfangen. Wem helfen wir zuerst?“",
+        "text": "*Neben einer Gesundheitsliste steht eine Kiste mit Material für die Sportklubs. Die Schulkrankenschwester zeigt auf eine leere Zeile, während die Begleitung eines der knapp werdenden Materialien hochhält.* „Beides muss heute geprüft werden, aber wir müssen mit einer Sache anfangen. Wem helfen wir zuerst?“",
         "context": "Nach dem Unterricht hilft der Protagonist der Schulkrankenschwester bei Gesundheitskontrollen der Sportklubs, als die andere Figur mit der höchsten Zuneigung mit einem dringenden Materialproblem dazukommt. Es bleibt nur Zeit, mit einer Aufgabe zu beginnen, also fragt die Schulkrankenschwester, wem der Protagonist zuerst helfen wird.",
         "personality": "Die Schulkrankenschwester darf die Spannung mit einem leichten Scherz lösen, nutzt Pflege oder Behandlung aber nie als Vorwand für Zuneigung. Die Begleitung reagiert gemäß ihrer Persönlichkeit und ihrem aktuellen Zustand. Mache aus Routinearbeit keinen Unfall und kein geheimes Treffen.",
         "buttonText": "Sprechen",
@@ -899,7 +899,7 @@
     },
     "haeun_freetalk": {
         "name": "Haeun",
-        "text": "*Haeun wendet sich nicht ab, sondern sieht den Protagonisten direkt an.* „...Ich gehe erst, wenn ich eine Antwort habe. Was wirst du jetzt tun?“",
+        "text": "*Haeun wendet sich nicht ab, sondern sieht mich direkt an.* „...Ich gehe erst, wenn ich eine Antwort habe. Was wirst du jetzt tun?“",
         "context": "Haeun hat gerade erzählt, dass sie Seoyeon allein weinen sah, und den Protagonisten gebeten, sie heute nicht allein zu lassen, auch wenn er sie nicht zu überzeugen versucht. Sie stehen noch zusammen im Flur, und Haeun wartet darauf, was er vorhat.",
         "personality": "Haeun bleibt höflich, spielt Seoyeons Verletzung aber nicht herunter. Sie will hören, was der Protagonist jetzt tun wird, keine Ausrede. Sie darf nachfragen oder seiner Antwort widersprechen, entscheidet aber nicht für Seoyeon und zwingt den Protagonisten zu keiner Handlung. Mache das Gespräch weder romantisch noch sexuell. Ihre Zuneigung steht nur für persönliches Vertrauen und Wohlwollen und beeinflusst kein Ende."
     },

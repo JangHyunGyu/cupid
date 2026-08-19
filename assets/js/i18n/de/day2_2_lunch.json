@@ -95,11 +95,11 @@
     },
     "lunch2_seo_9": {
         "name": "Dain",
-        "text": "Da bist du ja. Gefunden. Wolltest du heute schon wieder ohne mich essen?"
+        "text": "Da bist du ja. Hab dich gefunden. Wolltest du heute schon wieder ohne mich essen?"
     },
     "lunch2_seo_10": {
         "name": "Seoyeon",
-        "text": "Für das Dach braucht man eine Genehmigung. Und fürs heutige Mittagessen war ich zuerst verabredet."
+        "text": "Für den Zutritt zum Dach braucht man eine Genehmigung. Und fürs heutige Mittagessen war ich zuerst verabredet."
     },
     "lunch2_seo_11": {
         "name": "Dain",
@@ -119,7 +119,7 @@
     },
     "lunch2_seo_13b_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon schiebt das Bento näher zu {name}.* Der Platz mag frei sein, aber die Verabredung nicht."
+        "text": "*Seoyeon schiebt das Bento näher zu {name}.* Der Platz ist vielleicht frei, aber die Verabredung ist nicht für dich."
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
@@ -147,7 +147,7 @@
     },
     "lunch2_seo_choice": {
         "name": "Seoyeon",
-        "text": "*Ein in ein Feuchttuch gewickelter Finger nähert sich meinem Mund.*",
+        "text": "*Ein mit einem Feuchttuch umwickelter Finger nähert sich meinem Mund.*",
         "choices": [
             "Still halten",
             "Ich wisch das selbst ab",
@@ -288,7 +288,7 @@
     },
     "lunch2_dain_9": {
         "name": "{name}",
-        "text": "*Wir kaufen Brötchen und stellen uns an die Fenster im Flur. Aus der Gegenrichtung kommt Seoyeon mit ihrer Lunchbox-Tasche vorbei.*"
+        "text": "*Wir kaufen Brötchen und stellen uns an die Fenster im Flur. Aus der Gegenrichtung kommt Seoyeon mit ihrer Lunchtasche vorbei.*"
     },
     "lunch2_dain_10": {
         "name": "{name}",
@@ -429,7 +429,7 @@
     },
     "lunch2_dain_end_t": {
         "name": "{name}",
-        "text": "*Auch nachdem sie »Kakao« gesagt hat, bleibt ihre Hand auf den Schubladengriff gedrückt.*"
+        "text": "*Auch nachdem sie geantwortet hat, bleibt ihre Hand auf den Schubladengriff gedrückt.*"
     },
     "lunch2_dain_end_u": {
         "name": "Schulkrankenschwester",

@@ -71,7 +71,7 @@
     },
     "after5_farewell_dain_2": {
         "name": "Dain",
-        "text": "Mann, schade! Aber ich werde mich nicht einfach zurückziehen und es nur schade finden."
+        "text": "Verdammt, das tut weh! Aber nur weil ich enttäuscht bin, ziehe ich mich noch lange nicht zurück."
     },
     "after5_farewell_dain_3": {
         "name": "{name}",
@@ -87,7 +87,7 @@
     },
     "after5_farewell_dain_4_c": {
         "name": "Dain",
-        "text": "Mach es gut. Sonst hole ich dich mir zurück."
+        "text": "Behandle sie gut. Sonst hole ich dich mir zurück."
     },
     "after5_farewell_dain_4_d": {
         "name": "Dain",
@@ -128,7 +128,7 @@
     },
     "after5_last_chance_1": {
         "name": "{name}",
-        "text": "*Die Lautsprecher auf dem Veranstaltungsgelände werden ausgeschaltet. Unter dem Wegweiser an der Gabelung können sich meine Fußspitzen für keine Richtung entscheiden.*"
+        "text": "*Die Lautsprecher auf dem Veranstaltungsgelände werden ausgeschaltet. Unter dem Wegweiser an der Gabelung bleibe ich stehen, unfähig, mich für eine Richtung zu entscheiden.*"
     },
     "after5_last_chance_2": {
         "name": "{name}",
@@ -223,7 +223,7 @@
     },
     "after5_last_chance_dain_low_2": {
         "name": "Dain",
-        "text": "*Nachdem sie einen Schritt zu weit gegangen ist, kommt sie zurück. Den Volleyball vor die Brust gedrückt, hält sie Abstand.* Warum?"
+        "text": "*Nach einem Schritt hält sie inne und kommt zurück. Den Volleyball vor die Brust gedrückt, hält sie Abstand.* Warum?"
     },
     "after5_last_chance_yuna_aff_check": {},
     "after5_last_chance_yuna_1": {
@@ -295,7 +295,7 @@
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",
-        "text": "*Ihr Daumen fährt eine Rille im Volleyball entlang.* Ich habe dich gehört. Aber ich kann noch nicht gleich lächeln."
+        "text": "*Ihr Daumen fährt eine Rille im Volleyball entlang.* Ich habe dich gehört. Aber ich kann noch nicht sofort wieder lächeln."
     },
     "after5_confess_aff_yuna": {},
     "after5_confess_react_yuna": {
@@ -344,7 +344,7 @@
     },
     "after5_confess_fail_walk_1": {
         "name": "{name}",
-        "text": "*Die Sonne sinkt weiter. Wir gehen nur noch in dieselbe Richtung.*"
+        "text": "*Die Sonne sinkt weiter. Wir gehen einfach weiter in dieselbe Richtung.*"
     },
     "after5_confess_fail_walk_2": {
         "name": "{name}",
@@ -399,11 +399,11 @@
     },
     "after5_co_seo_1": {
         "name": "Seoyeon",
-        "text": "*Sie schiebt die Brille hoch und wieder runter.* Den Plan habe ich schon verteilt."
+        "text": "*Sie will ihre Brille zurechtrücken, senkt die Hand dann aber wieder.* Den Plan habe ich schon verteilt."
     },
     "after5_co_seo_2": {
         "name": "Seoyeon",
-        "text": "Heute ist kein Platz mehr zum Reden. Geh."
+        "text": "Ich habe dir heute nichts mehr zu sagen. Geh."
     },
     "after5_co_yuna_1": {
         "name": "Yuna",
@@ -415,11 +415,11 @@
     },
     "after5_co_dain_1": {
         "name": "Dain",
-        "text": "*Sie schiebt den Ball in die Kiste.* Den Partner habe ich gestrichen."
+        "text": "*Sie schiebt den Ball in die Kiste.* Ich habe deinen Namen von der Partnerliste gestrichen."
     },
     "after5_co_dain_2": {
         "name": "Dain",
-        "text": "Tschüss. Lachen ist gerade schwierig."
+        "text": "Tschüss. Mir ist gerade nicht nach Lächeln."
     },
     "after5_co_teacher_1": {
         "name": "Klassenlehrerin",
@@ -435,11 +435,11 @@
     },
     "after5_co_nurse_2": {
         "name": "Schulkrankenschwester",
-        "text": "Wenn dir etwas fehlt, geh zu jemand anderem. Heute nicht zu mir."
+        "text": "Wenn du verletzt bist, geh heute zu einer anderen Lehrkraft. Ich kann dir nicht helfen."
     },
     "after5_co_tempter_seo_1": {
         "name": "Seoyeon",
-        "text": "*Sie steckt den Dach-Anhänger ein.* Gestern war ich zuerst dran."
+        "text": "*Sie steckt den Schlüsselbund fürs Dach ein.* Gestern bin ich zuerst auf dich zugegangen."
     },
     "after5_co_tempter_seo_2": {
         "name": "Seoyeon",
@@ -451,7 +451,7 @@
     },
     "after5_co_tempter_yuna_2": {
         "name": "Yuna",
-        "text": "Komm jetzt nicht mit. Das reicht."
+        "text": "Lauf ihnen jetzt nicht hinterher. Mehr brauche ich nicht."
     },
     "after5_co_tempter_dain_1": {
         "name": "Dain",
@@ -459,7 +459,7 @@
     },
     "after5_co_tempter_dain_2": {
         "name": "Dain",
-        "text": "Heute rufe ich nicht zuerst."
+        "text": "Heute werde ich dich nicht als Erste zu mir rufen."
     },
     "after5_normal_start": {
         "name": "{name}",

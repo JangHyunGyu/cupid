@@ -50,7 +50,7 @@
     },
     "date_seo_pretty_low": {
         "name": "Seoyeon",
-        "text": "Wo kam das denn her? Warn mich vor, bevor du so etwas sagst."
+        "text": "Wie kommst du denn jetzt darauf? Warn mich, bevor du so etwas sagst."
     },
     "date_seo_bright": {
         "name": "Seoyeon",
@@ -249,7 +249,7 @@
         "name": "{name}",
         "text": "*Dain drückt einmal den Schirm ihrer Kappe nach unten und wartet.*",
         "choices": [
-            "Die Kappe ist cool.",
+            "Die Kappe steht dir.",
             "Sportkleidung ist einfach total dein Ding.",
             "Heute siehst du viel weiblicher aus als in Sportkleidung.",
             "So herausgeputzt fühlt es sich endlich wie ein Date an."
@@ -273,7 +273,7 @@
     },
     "date_dain_pretty_low": {
         "name": "Dain",
-        "text": "Wo kam das denn her? Danke trotzdem."
+        "text": "Wie kommst du denn jetzt darauf? Danke trotzdem."
     },
     "date_dain_bright": {
         "name": "Dain",

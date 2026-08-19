@@ -30,7 +30,7 @@
     "morning3_gate_branch": {},
     "morning3_seo_gate_1": {
         "name": "{name}",
-        "text": "*Obwohl gleich die Verspätungsglocke läutet, steht Seoyeon vor dem Schultor, ohne auch nur ungeduldig mit dem Fuß zu wippen.*"
+        "text": "*Obwohl gleich die Schulglocke läutet, steht Seoyeon vor dem Schultor, ohne auch nur ungeduldig mit dem Fuß zu wippen.*"
     },
     "morning3_seo_gate_warm_1": {
         "name": "Seoyeon",
@@ -158,7 +158,7 @@
     },
     "morning3_dain_gate_warm_3": {
         "name": "{name}",
-        "text": "*Nachdem sie meine Antwort abgewartet hat, hakt Dain sich locker bei mir unter. Ein paar Schritte später wird sie langsamer und passt sich {name}s Tempo an.*"
+        "text": "*Nachdem sie meine Antwort abgewartet hat, hakt Dain sich locker bei mir unter. Ein paar Schritte später wird sie langsamer und passt sich dem Tempo von {name} an.*"
     },
     "morning3_dain_gate_2": {
         "name": "Dain",
@@ -202,7 +202,7 @@
     },
     "morning3_react_seo_2": {
         "name": "Yuna",
-        "text": "*Yuna, die aus dem Fenster gesehen hat, entdeckt {name}s Spiegelbild in der Scheibe und schiebt ihr Lesezeichen ein Stück tiefer.*"
+        "text": "*Yuna, die aus dem Fenster gesehen hat, entdeckt das Spiegelbild von {name} in der Scheibe und schiebt ihr Lesezeichen ein Stück tiefer.*"
     },
     "morning3_react_yuna_1": {
         "name": "Seoyeon",
@@ -397,7 +397,7 @@
     },
     "hidden_homeroom_d3_reveal_choice_b": {
         "name": "Klassenlehrerin",
-        "text": "Das Klassenzimmer ist am ruhigsten. Ironischerweise."
+        "text": "Das Klassenzimmer ist am ruhigsten. Ironisch, oder?"
     },
     "hidden_homeroom_d3_reveal_5": {
         "name": "Klassenlehrerin",
@@ -429,7 +429,7 @@
     },
     "hidden_homeroom_d3_reveal_6_g": {
         "name": "{name}",
-        "text": "*Nur der Sekundenzeiger bewegt sich, während ich einen Satz lese, auf dem sich die Spuren mehrfachen Radierens überlagern.*"
+        "text": "*Nur der Sekundenzeiger bewegt sich, während ich einen Satz mit mehreren Schichten von Radiererspuren lese.*"
     },
     "hidden_homeroom_d3_hide_1": {
         "name": "Klassenlehrerin",

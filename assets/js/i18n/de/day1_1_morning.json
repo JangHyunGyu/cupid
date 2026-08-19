@@ -21,7 +21,7 @@
     },
     "seoyeon_meet_2": {
         "name": "Seoyeon",
-        "text": "*Sie gleicht {name}s Namen noch einmal ab und hakt ihn auf der Liste an ihrem Klemmbrett ab. Die Stiftspitze bleibt über der Liste, während ihr Blick bis zu meinem Namensschild wandert.*"
+        "text": "*Sie gleicht den Namen {name} noch einmal ab und hakt ihn auf der Liste an ihrem Klemmbrett ab. Die Stiftspitze bleibt über der Liste, während ihr Blick bis zu meinem Namensschild wandert.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",
@@ -94,7 +94,7 @@
     },
     "choice_flirt_7": {
         "name": "Seoyeon",
-        "text": "*Sie geht voraus. Sie blickt einmal zurück, und als {name}s Schritte näherkommen, wird sie nicht langsamer.*"
+        "text": "*Sie geht voraus. Sie blickt einmal zurück, und als die Schritte von {name} näherkommen, wird sie nicht langsamer.*"
     },
     "choice_joke_1": {
         "name": "Seoyeon",
@@ -202,7 +202,7 @@
     },
     "classroom_dain_4": {
         "name": "Dain",
-        "text": "Ach, Frau Lehrerin, so ist's halt am bequemsten. Egal — willkommen, Neuer!"
+        "text": "Ach, so ist's halt am bequemsten. Egal — willkommen, Neuer!"
     },
     "classroom_dain_5": {
         "name": "{name}",

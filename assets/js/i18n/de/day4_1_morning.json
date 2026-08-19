@@ -239,7 +239,7 @@
     },
     "hidden_homeroom_d4_cafe_choice": {
         "name": "Klassenlehrerin",
-        "text": "*Sie stellt ihren Kaffee ab und deutet mit dem Kinn auf die Kritikexemplare am Tisch weiter innen.*",
+        "text": "*Sie stellt ihren Kaffee ab und deutet mit dem Kinn auf die Exemplare für die Besprechung am Tisch weiter innen.*",
         "choices": [
             "Haben Sie das Ende noch nicht festgelegt?",
             "Sie zeigen den anderen aus dem Literaturklub aber auch alles, oder?",
@@ -445,7 +445,7 @@
     },
     "hidden_nurse_d4_4_d": {
         "name": "Schulkrankenschwester",
-        "text": "Das Schlimmste damals war nicht die Arbeitsmenge."
+        "text": "Das Schlimmste damals war nicht die Arbeitsbelastung."
     },
     "hidden_nurse_d4_4_e": {
         "name": "{name}",
@@ -483,7 +483,7 @@
         "name": "{name}",
         "text": "*Die Krankenschwester notiert die Anzahl der fertigen Erste-Hilfe-Sets.*",
         "choices": [
-            "Wann sind Sie froh, Schulkrankenschwester geworden zu sein?",
+            "In welchen Momenten sind Sie froh, Schulkrankenschwester geworden zu sein?",
             "Was ist der größte Unterschied zwischen Krankenhaus und Schule?",
             "An einer Schule gibt es kaum schwere Verletzungen. Das ist bestimmt entspannter als im Krankenhaus."
         ]

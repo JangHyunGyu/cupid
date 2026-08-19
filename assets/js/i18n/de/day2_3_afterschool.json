@@ -286,7 +286,7 @@
     },
     "after2_seo_7": {
         "name": "Seoyeon",
-        "text": "*Sie dreht sich nicht sofort um. Das Klemmbrett zeigt noch zur Tür. Erst als {name}s Schritte zu hören sind, geht sie los.*"
+        "text": "*Sie dreht sich nicht sofort um. Das Klemmbrett zeigt noch zur Tür. Erst als die Schritte von {name} zu hören sind, geht sie los.*"
     },
     "after2_seo_8": {
         "name": "Seoyeon",
@@ -310,7 +310,7 @@
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
-        "text": "Du bist ziemlich brauchbar."
+        "text": "Du bist wirklich eine Hilfe."
     },
     "after2_seo_8b3": {
         "name": "{name}",
@@ -412,7 +412,7 @@
     },
     "after2_seo_choice2": {
         "name": "{name}",
-        "text": "*Die Papierarbeit ist fast fertig.*",
+        "text": "*Die Unterlagen sind fast fertig.*",
         "choices": [
             "Soll ich noch etwas bleiben? Es ist doch noch etwas übrig, oder?",
             "Wenn wir fertig sind, geh ich",
@@ -590,7 +590,7 @@
     },
     "after2_group_seoyeon_companion": {
         "name": "Seoyeon und Begleitung",
-        "text": "*Seoyeon tippt mit dem Finger auf zwei überlappende Termine. Auch der Blick ihr gegenüber weicht nicht.* „Beide brauchen deine Hilfe. Wem hilfst du zuerst?“",
+        "text": "*Seoyeon tippt mit dem Finger auf zwei überlappende Termine. Auch ihr Gegenüber gibt nicht nach.* „Wir beide brauchen deine Hilfe. Wem hilfst du zuerst?“",
         "context": "Während der Protagonist und Seoyeon den Nachmittagsplan ordnen, kommt die andere Figur mit der höchsten Zuneigung mit einem eigenen Termin oder einer Bitte dazu. Die Arbeit des Schülerrats überschneidet sich mit einer anderen Schulaktivität, und die drei müssen sich einigen. Seoyeon fragt klar, wem der Protagonist zuerst helfen wird.",
         "personality": "Es wirkt wie ein kleines Terminproblem, doch beide achten darauf, wen der Protagonist bevorzugt. Lass daraus keine offene Feindseligkeit oder Demütigung werden. Weicht er aus, verlangt jede Figur auf ihre Art eine Antwort. Wird eine gewählt, tut die andere nicht gezwungen so, als mache es ihr nichts aus.",
         "groupLocation": "Schülerratsraum",
@@ -608,7 +608,7 @@
     },
     "after2_group_dain_companion": {
         "name": "Dain und Begleitung",
-        "text": "*Die Berichte aus Turnhalle und Anbau passen nicht zusammen. Dain klemmt einen Ball an die Seite und sieht den Protagonisten direkt an.* „Wenn unsere Geschichten nicht übereinstimmen, wem glaubst du zuerst?“",
+        "text": "*Die Berichte aus Turnhalle und Anbau passen nicht zusammen. Dain klemmt einen Ball an die Seite und sieht mich direkt an.* „Wenn unsere Geschichten nicht übereinstimmen, wem glaubst du zuerst?“",
         "context": "Während der Protagonist und Dain die Turnhalle aufräumen, kommt die andere Figur mit der höchsten Zuneigung mit einer abweichenden Schilderung eines kleinen Vorfalls am Anbau dazu. Die Aussagen widersprechen sich, und jemand muss entscheiden, welcher zuerst nachgegangen wird. Dain fragt, wessen Wort der Protagonist zuerst vertraut.",
         "personality": "Erfinde weder einen schweren Unfall noch eine böswillige Lüge. Es geht nicht um die objektive Lösung eines Rätsels, sondern darum, wem der Protagonist zuerst glaubt. Dain verlangt offen eine Antwort, und die Begleitung zieht sich nicht in eine Nebenrolle zurück. Die Antwort darf eine der beiden verletzen.",
         "groupLocation": "Turnhalle",

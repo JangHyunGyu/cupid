@@ -118,7 +118,7 @@
     },
     "hidden_true_homeroom_2_b": {
         "name": "{name}",
-        "text": "*Um {name}s Hals hängt ein Firmenausweis. In ihrer Hand liegt statt eines Klassenbuchs ein Buch mit ihrem eigenen Namen auf dem Umschlag.*"
+        "text": "*Um den Hals von {name} hängt ein Firmenausweis. In ihrer Hand liegt statt eines Klassenbuchs ein Buch mit ihrem eigenen Namen auf dem Umschlag.*"
     },
     "hidden_true_homeroom_3": {
         "name": "Klassenlehrerin",
@@ -170,7 +170,7 @@
     },
     "hidden_true_homeroom_5_b": {
         "name": "{name}",
-        "text": "*Die ehemalige Klassenlehrerin geht nicht zur Kasse, sondern wartet auf {name}s Antwort.*"
+        "text": "*Die ehemalige Klassenlehrerin geht nicht zur Kasse, sondern wartet auf die Antwort von {name}.*"
     },
     "hidden_true_homeroom_5_c": {
         "name": "{name}",
@@ -198,11 +198,11 @@
     },
     "hidden_true_homeroom_7_d": {
         "name": "{name}",
-        "text": "*Ich spreche ihren Namen einmal aus. Sie sagt {name}s Namen langsam zurück.*"
+        "text": "*Ich spreche ihren Namen einmal aus. Sie sagt den Namen von {name} langsam zurück.*"
     },
     "hidden_true_homeroom_8": {
         "name": "Klassenlehrerin",
-        "text": "*Über den Kuchenteller hinweg öffnet sie ihre Handfläche. Sie hält vor jeder Berührung inne und wartet auf {name}s Antwort.* Möchtest du dich nächste Woche wieder treffen?"
+        "text": "*Über den Kuchenteller hinweg öffnet sie ihre Handfläche. Sie hält vor jeder Berührung inne und wartet auf die Antwort von {name}.* Möchtest du dich nächste Woche wieder treffen?"
     },
     "hidden_true_homeroom_ending_title": {
         "name": "",
@@ -250,7 +250,7 @@
     },
     "hidden_bitter_homeroom_6": {
         "name": "{name}",
-        "text": "*Brief und Empfehlung werden eingesteckt, dann bleibt das Klassenzimmer ohne einen Blick zurück. Niemand ruft hinterher.*"
+        "text": "*Ich nehme Brief und Empfehlung an mich und verlasse das Klassenzimmer. Ich blicke nicht zurück, und hinter mir ruft niemand meinen Namen.*"
     },
     "hidden_bitter_homeroom_ending_title": {
         "name": "",
@@ -299,7 +299,7 @@
     },
     "hidden_perfect_nurse_ep2": {
         "name": "{name}",
-        "text": "*Seit jenem Morgen bei Juwon füllen sich die Wochenenden in unserem gemeinsamen Kalender einer nach dem anderen. Inzwischen wechselt Juwon in das Ausbildungsteam einer Universitätsklinik, und auch die neuen Pflegekräfte nennen sie nun ihre Ausbilderin. Ausbilderin Lee Juwon.*"
+        "text": "*Nach jenem Morgen bei Juwon füllten sich die Wochenenden in unserem gemeinsamen Kalender einer nach dem anderen. In dieser Zeit wechselte Juwon in das Ausbildungsteam einer Universitätsklinik, und auch die neuen Pflegekräfte nannten sie bald ihre Ausbilderin. Ausbilderin Lee Juwon.*"
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
@@ -347,7 +347,7 @@
     },
     "hidden_true_nurse_5_b": {
         "name": "{name}",
-        "text": "*Juwon nimmt die Hand von der Kaffeetasse und wartet auf {name}s Antwort.*"
+        "text": "*Juwon nimmt die Hand von der Kaffeetasse und wartet auf die Antwort von {name}.*"
     },
     "hidden_true_nurse_5_c": {
         "name": "Schulkrankenschwester",
@@ -363,7 +363,7 @@
     },
     "hidden_true_nurse_5_f": {
         "name": "Schulkrankenschwester",
-        "text": "*Mit einem Finger tippt sie zweimal gegen den Henkel der Kaffeetasse.* Genau. Und ein Pflaster muss in weniger als drei Minuten kleben."
+        "text": "*Mit einem Finger tippt sie zweimal gegen den Henkel der Kaffeetasse.* Genau. Für ein Pflaster sollte ich weniger als drei Minuten brauchen."
     },
     "hidden_true_nurse_6": {
         "name": "Schulkrankenschwester",
@@ -419,7 +419,7 @@
     },
     "hidden_true_nurse_8_h": {
         "name": "{name}",
-        "text": "Dann komme ich nächste Woche wieder. Weil ich das möchte. *Noch vor dem Ende des Films schläft Juwon an {name}s Schulter ein.*"
+        "text": "Dann komme ich nächste Woche wieder. Weil ich das möchte. *Noch vor dem Ende des Films schläft Juwon an der Schulter von {name} ein.*"
     },
     "hidden_good_nurse_1": {
         "name": "Schulkrankenschwester",
@@ -459,7 +459,7 @@
     },
     "hidden_bitter_nurse_1": {
         "name": "{name}",
-        "text": "*Nach der Abschlussfeier folgt ein letzter Besuch im Krankenzimmer. Die grüne Gesundheitskarte wird mit einem Zettel samt Kontaktdaten darunter überreicht.*"
+        "text": "*Nach der Abschlussfeier besuche ich ein letztes Mal das Krankenzimmer und überreiche die grüne Gesundheitskarte mit einem Zettel samt meinen Kontaktdaten darunter.*"
     },
     "hidden_bitter_nurse_2": {
         "name": "Schulkrankenschwester",
@@ -471,7 +471,7 @@
     },
     "hidden_bitter_nurse_4": {
         "name": "Schulkrankenschwester",
-        "text": "Du warst nie lästig. Gerade deshalb darf ich dich nicht im Unklaren lassen. Ich habe mich um dich gekümmert, weil du Schüler und verletzt warst."
+        "text": "Du warst nie lästig. Gerade deshalb darf ich dich nicht im Unklaren lassen. Ich habe mich um dich gekümmert, weil du mein Schüler warst und dich verletzt hattest."
     },
     "hidden_bitter_nurse_5": {
         "name": "{name}",
@@ -483,7 +483,7 @@
     },
     "hidden_bitter_nurse_7": {
         "name": "{name}",
-        "text": "*Zettel und Karte werden eingesteckt, dann schließt sich die Tür. Drinnen ist nur noch zu hören, wie eine Kaffeetasse auf der Untertasse abgesetzt wird.*"
+        "text": "*Ich nehme Zettel und Karte an mich und schließe die Tür des Krankenzimmers. Drinnen ist nur noch zu hören, wie eine Kaffeetasse auf der Untertasse abgesetzt wird.*"
     },
     "hidden_bitter_nurse_ending_title": {
         "name": "",
@@ -623,7 +623,7 @@
     },
     "perfect_yuna_2": {
         "name": "{name}",
-        "text": "*Der Titel ist der Name des Protagonisten.*"
+        "text": "*Der Titel ist mein Name.*"
     },
     "perfect_yuna_3": {
         "name": "Yuna",
@@ -664,11 +664,11 @@
     "bitter_yuna_2": {},
     "bitter_yuna_2_library": {
         "name": "Yuna",
-        "text": "Manchmal denke ich daran, wenn ich eine Bibliothek rieche. Ich hätte damals mehr sagen sollen."
+        "text": "Manchmal denke ich an dich, wenn ich eine Bibliothek rieche. Ich hätte damals mehr sagen sollen."
     },
     "bitter_yuna_2_book": {
         "name": "Yuna",
-        "text": "Manchmal denke ich daran, wenn ich an einer Buchhandlung vorbeigehe. Ich hätte damals mehr sagen sollen."
+        "text": "Manchmal denke ich an dich, wenn ich an einer Buchhandlung vorbeigehe. Ich hätte damals mehr sagen sollen."
     },
     "bitter_yuna_3": {
         "name": "{name}",
@@ -768,7 +768,7 @@
     },
     "perfect_epilogue_1b_dain": {
         "name": "{name}",
-        "text": "*Bevor das Gewicht auf ihr rechtes Knie fällt, stützt sie sich an {name}s Schulter ab und findet das Gleichgewicht.*"
+        "text": "*Bevor das Gewicht auf ihr rechtes Knie fällt, stützt sie sich an der Schulter von {name} ab und findet das Gleichgewicht.*"
     },
     "perfect_epilogue_1c_dain": {
         "name": "{name}",
@@ -872,7 +872,7 @@
     },
     "true_epilogue_3": {
         "name": "{name}",
-        "text": "*Im Kalender waren erst fünf Kästchen vergangen.*"
+        "text": "*Erst fünf Kästchen im Kalender waren abgehakt.*"
     },
     "true_epilogue_4": {},
     "true_epilogue_4_seo": {
@@ -993,7 +993,7 @@
     },
     "good_1_seo_b": {
         "name": "Seoyeon",
-        "text": "*Sie entfernt ein Kirschblütenblatt von {name}s Ärmel.*"
+        "text": "*Sie entfernt ein Kirschblütenblatt vom Ärmel von {name}.*"
     },
     "good_1_seo_c": {
         "name": "Seoyeon",
@@ -1201,7 +1201,7 @@
     },
     "mayhem_6": {
         "name": "{name}",
-        "text": "*In jedem Chat stapeln sich ungelesene Fragen.*"
+        "text": "*In jedem Chat stapeln sich unbeantwortete Fragen.*"
     },
     "mayhem_7": {
         "name": "{name}",
@@ -1257,7 +1257,7 @@
     },
     "day5_seo_ending_freetalk_intro": {
         "name": "{name}",
-        "text": "*Das Dach. Neben der offenen Tür ist eine leere Stelle für einen Blumentopf.*"
+        "text": "*Auf dem Dach markiert eine leere Stelle neben der offenen Tür den Platz, an dem früher ein Blumentopf stand.*"
     },
     "day5_yuna_ending_freetalk_intro": {
         "name": "{name}",
@@ -1446,7 +1446,7 @@
     },
     "date_choice_perfect_seo": {
         "name": "Seoyeon",
-        "text": "*Am Tag nach der Aufnahmefeier treffe ich Seoyeon wieder auf dem Schuldach.* Den Rest wollten wir doch auf morgen verschieben. Wohin möchtest du heute noch?",
+        "text": "*Am Tag nach der Aufnahmefeier treffe ich Seoyeon wieder auf dem Schuldach.* Den Rest wollten wir doch auf morgen verschieben. Wohin möchtest du heute noch gehen?",
         "choices": [
             "Aufs Dach.",
             "Ins Café."
@@ -1458,23 +1458,23 @@
     },
     "date_perfect_seo_roof_2": {
         "name": "Seoyeon",
-        "text": "Den leeren Platz suchst du aus. Meinen habe ich schon."
+        "text": "Du suchst aus, wo wir sitzen. Meinen Platz habe ich schon gewählt."
     },
     "date_perfect_seo_roof_3": {
         "name": "{name}",
-        "text": "*Wind kommt durch die offene Tür. Den Plan faltet sie nicht.*"
+        "text": "*Wind weht durch die offene Tür und lässt den Terminplan rascheln. Seoyeon hält eine Ecke fest, ohne ihn zu falten.*"
     },
     "date_perfect_seo_cafe_1": {
         "name": "{name}",
-        "text": "*Am Fenster. Erst der Untersetzer, dann spricht sie.*"
+        "text": "*Am Fensterplatz richtet Seoyeon erst den Untersetzer gerade, bevor sie spricht.*"
     },
     "date_perfect_seo_cafe_2": {
         "name": "Seoyeon",
-        "text": "Nächste Woche wieder hier. Die Uhrzeit bestimmst du."
+        "text": "Treffen wir uns nächste Woche wieder hier. Du bestimmst die Uhrzeit."
     },
     "date_perfect_seo_cafe_3": {
         "name": "{name}",
-        "text": "*Eine Zahl auf der Quittungsrückseite. Keine Telefonnummer. Der nächste Gießtag.*"
+        "text": "*Auf der Rückseite der Quittung steht eine Zahl. Es ist keine Telefonnummer, sondern das nächste Datum, an dem die Pflanzen gegossen werden müssen.*"
     },
     "date_choice_perfect_yuna": {
         "name": "Yuna",
@@ -1486,7 +1486,7 @@
     },
     "date_perfect_yuna_book_1": {
         "name": "{name}",
-        "text": "*Zwischen den Regalen. Yuna bleibt an einem Rücken stehen.*"
+        "text": "*Zwischen den Regalen streicht Yuna mit den Fingern über die Buchrücken und bleibt stehen.*"
     },
     "date_perfect_yuna_book_2": {
         "name": "Mann",
@@ -1494,59 +1494,59 @@
     },
     "date_perfect_yuna_book_3": {
         "name": "Lee Junho",
-        "text": "Ist lange her. Ich dachte, ich muss nichts sagen. ...Störe."
+        "text": "Das ist lange her. Ich dachte nicht, dass ich es erwähnen müsste. Entschuldigt die Störung."
     },
     "date_perfect_yuna_book_4": {
         "name": "Yuna",
-        "text": "*Der Finger bleibt im Lesezeichen.* Ich bin jetzt bei {name}. Das reicht."
+        "text": "*Yunas Finger ruht auf dem Lesezeichen.* Ich bin jetzt mit {name} hier. Nur das zählt."
     },
     "date_perfect_yuna_roof_1": {
         "name": "{name}",
-        "text": "*Das geheime Dach. Ein Ohrhörer kommt rüber.*"
+        "text": "*Als wir das geheime Dach erreichen, reicht Yuna mir einen Ohrhörer.*"
     },
     "date_perfect_yuna_roof_2": {
         "name": "Yuna",
-        "text": "Das dritte Stück. Diesmal von vorn."
+        "text": "Es ist das dritte Stück. Diesmal von Anfang an."
     },
     "date_perfect_yuna_roof_3": {
         "name": "{name}",
-        "text": "*Das Stück ist zu Ende. Sie nimmt den Hörer nicht raus. Die Hand ist näher.*"
+        "text": "*Auch nachdem das Stück zu Ende ist, lässt Yuna den Ohrhörer im Ohr. Ihre Hand auf dem Geländer ist meiner ein wenig näher gekommen.*"
     },
     "date_choice_perfect_dain": {
         "name": "Dain",
-        "text": "Heute muss ich nicht auf den Platz. Orte, wo ich hinwill, hab ich trotzdem.",
+        "text": "Heute muss ich nicht aufs Spielfeld. Aber es gibt trotzdem Orte, an die ich gern gehen würde.",
         "choices": [
             "Die Halle.",
-            "Die Kabine."
+            "Die Kommentatorenkabine."
         ]
     },
     "date_perfect_dain_gym_1": {
         "name": "{name}",
-        "text": "*Sie hat einen Ball. Sie springt nicht. Sie nimmt zuerst die Bank.*"
+        "text": "*Dain hält einen Ball an die Brust und setzt sich ohne zu springen direkt auf die Bank.*"
     },
     "date_perfect_dain_gym_2": {
         "name": "Dain",
-        "text": "Fünf Minuten. Echt fünf. ...Wenn daraus zehn werden, weck mich nicht."
+        "text": "Lass mich fünf Minuten schlafen. Wirklich nur fünf. ...Wenn daraus zehn werden, weck mich nicht."
     },
     "date_perfect_dain_gym_3": {
         "name": "{name}",
-        "text": "*Das rechte Knie hängt von der Bank. Das Gewicht liegt links.*"
+        "text": "*Dain streckt das rechte Knie über die Bank hinaus und verlagert ihr Gewicht nach links.*"
     },
     "date_perfect_dain_booth_1": {
         "name": "{name}",
-        "text": "*Das Headset ist riesig. Sie tippt den Schalter und lässt ihn aus.*"
+        "text": "*Dain setzt das viel zu große Headset auf, berührt den Schalter und schaltet es sofort wieder aus.*"
     },
     "date_perfect_dain_booth_2": {
         "name": "Dain",
-        "text": "Ein Spiel mit Worten mitzugehen, nimmt mehr Luft, als ich dachte. Ist trotzdem okay."
+        "text": "Ein Spiel nur mit Worten zu begleiten kostet mehr Puste, als ich dachte. Aber das macht mir nichts aus."
     },
     "date_perfect_dain_booth_3": {
         "name": "{name}",
-        "text": "*Die Anzeigetafel ist dunkel. Sie sitzt noch.*"
+        "text": "*Auch nachdem die Anzeigetafel erloschen ist, bleibt Dain noch eine Weile sitzen.*"
     },
     "date_choice_perfect_teacher": {
         "name": "Klassenlehrerin",
-        "text": "*Am ersten Wochenende nach Erscheinen ihres zweiten Buches klappt die Klassenlehrerin in einem Café die Karte zu.* Jetzt können wir die Titel weglassen. Wohin möchtest du?",
+        "text": "*Am ersten Wochenende nach Erscheinen ihres zweiten Buches klappt die Klassenlehrerin in einem Café die Karte zu.* Jetzt können wir die alten Anreden hinter uns lassen. Wohin möchtest du?",
         "choices": [
             "Café.",
             "Ausstellung."
@@ -1554,63 +1554,63 @@
     },
     "date_perfect_teacher_cafe_1": {
         "name": "{name}",
-        "text": "*Sie schaut hinaus und dreht die Tasse. Kein Pult hier.*"
+        "text": "*Sie dreht langsam ihre Tasse und blickt aus dem Fenster. Zwischen uns steht kein Lehrerpult.*"
     },
     "date_perfect_teacher_cafe_2": {
         "name": "Klassenlehrerin",
-        "text": "Ob wir uns nächste Woche sehen, sagst du. Den Slot habe ich schon freigelassen."
+        "text": "Ob wir uns nächste Woche wiedersehen, entscheidest du. Ich habe den Termin schon freigehalten."
     },
     "date_perfect_teacher_cafe_3": {
         "name": "{name}",
-        "text": "*Ein Zettel unter der Quittung. Die Zeit ist leer. Nur der Ort steht da.*"
+        "text": "*Auf dem Zettel unter der Quittung steht für das nächste Treffen nur der Ort. Die Uhrzeit ist noch offen.*"
     },
     "date_perfect_teacher_museum_1": {
         "name": "{name}",
-        "text": "*Sie bleibt nicht an den Schildern stehen. Sie hält nur Schritt.*"
+        "text": "*Ohne vor den Ausstellungstexten stehen zu bleiben, passt sie ihr Tempo meinem an.*"
     },
     "date_perfect_teacher_museum_2": {
         "name": "Klassenlehrerin",
-        "text": "Die Schilder kannst du lesen. Ich bleibe daneben."
+        "text": "Die Ausstellungstexte kannst du lesen. Ich bleibe bei dir."
     },
     "date_perfect_teacher_museum_3": {
         "name": "{name}",
-        "text": "*Am Ausgang richtet sie einen Riemen. Ohne Vortrag.*"
+        "text": "*Am Ausgang richtet sie wortlos den Riemen meiner Tasche.*"
     },
     "date_choice_perfect_nurse": {
         "name": "Schulkrankenschwester",
-        "text": "Es bleibt Zeit ohne Akte. Zuhause oder draußen.",
+        "text": "Sieht so aus, als hätten wir endlich Zeit, die in keiner Akte landet. Möchtest du lieber zu Hause bleiben oder ausgehen?",
         "choices": [
-            "Zuhause.",
+            "Zu Hause.",
             "Park."
         ]
     },
     "date_perfect_nurse_home_1": {
         "name": "{name}",
-        "text": "*Samstagvormittag. Der Kittel hängt. Zwei Gläser.*"
+        "text": "*An einem Samstagvormittag hängt ihr Kittel an der Wand. Auf dem Tisch stehen nur zwei Gläser Wasser.*"
     },
     "date_perfect_nurse_home_2": {
         "name": "Schulkrankenschwester",
-        "text": "Heute mache ich keine Akte auf. Setz dich."
+        "text": "Heute sehe ich in keine Akte. Setz dich einfach."
     },
     "date_perfect_nurse_home_3": {
         "name": "{name}",
-        "text": "*Das Fenster steht einen Spalt. Man hört nur den Sekundenzeiger.*"
+        "text": "*Durch das angelehnte Fenster zieht eine Brise herein. Im Zimmer ist nur das Ticken des Sekundenzeigers zu hören.*"
     },
     "date_perfect_nurse_park_1": {
         "name": "{name}",
-        "text": "*Die Straße zur Klinik habt ihr ausgelassen. Zuerst die Bank.*"
+        "text": "*Wir nehmen einen Weg, der nicht am Krankenhaus vorbeiführt. Die Schulkrankenschwester setzt sich zuerst auf die Bank.*"
     },
     "date_perfect_nurse_park_2": {
         "name": "Schulkrankenschwester",
-        "text": "Die Sprüche hab ich zu Hause gelassen. Das reicht."
+        "text": "Die Sprüche habe ich zu Hause gelassen. Bleiben wir fürs Erste einfach so."
     },
     "date_perfect_nurse_park_3": {
         "name": "{name}",
-        "text": "*Gewicht legt sich auf eine Schulter und bleibt.*"
+        "text": "*Die Schulkrankenschwester lehnt sich an meine Schulter und bleibt lange so sitzen.*"
     },
     "date_choice_true_seo": {
         "name": "Seoyeon",
-        "text": "Bevor wir gehen. Kurz.",
+        "text": "Wollen wir noch kurz irgendwohin, bevor wir gehen?",
         "choices": [
             "Café.",
             "Dach."
@@ -1618,7 +1618,7 @@
     },
     "date_true_seo_1": {
         "name": "Seoyeon",
-        "text": "Die Tassen schiebst du. Ich richte nur die Untersetzer."
+        "text": "Du stellst die Tassen hin. Ich richte nur die Untersetzer gerade."
     },
     "date_true_seo_2": {
         "name": "{name}",
@@ -1626,15 +1626,15 @@
     },
     "date_true_seo_alt_1": {
         "name": "Seoyeon",
-        "text": "Nur gießen und runter. Bleiben wir länger, sieht uns jemand."
+        "text": "Wir gießen nur und gehen wieder runter. Wenn wir länger bleiben, sieht uns noch jemand."
     },
     "date_true_seo_alt_2": {
         "name": "{name}",
-        "text": "*Ein Topf ist leer. Das heißt, später einen mitbringen.*"
+        "text": "*Einer der Pflanzkübel ist leer. Nächstes Mal bringe ich einen neuen mit.*"
     },
     "date_choice_true_yuna": {
         "name": "Yuna",
-        "text": "Raus, oder hoch.",
+        "text": "Möchtest du nach draußen oder hoch aufs Dach?",
         "choices": [
             "Buchladen.",
             "Dach."
@@ -1642,31 +1642,31 @@
     },
     "date_true_yuna_book_1": {
         "name": "Lee Junho",
-        "text": "...Ist her. Hab nicht gedacht, dass ich dich hier treffe."
+        "text": "Das ist lange her. Ich hätte nicht gedacht, dich hier wiederzusehen."
     },
     "date_true_yuna_book_2": {
         "name": "Yuna",
-        "text": "*Sie fasst {name}s Ärmel einmal und lässt los.* Wir gehen."
+        "text": "*Yuna greift kurz nach dem Ärmel von {name} und lässt ihn wieder los.* Wir gehen jetzt."
     },
     "date_true_yuna_roof_1": {
         "name": "Yuna",
-        "text": "Du kannst ohne Reden zuhören. Das Stück ist kurz."
+        "text": "Du kannst zuhören, ohne zu reden. Das Stück ist kurz."
     },
     "date_true_yuna_roof_2": {
         "name": "{name}",
-        "text": "*Wind bewegt das Kabel. Sie kommt nicht vom Geländer runter.*"
+        "text": "*Der Wind bewegt das Kabel des Ohrhörers. Yuna lehnt am Geländer und rührt sich nicht, bis das Stück zu Ende ist.*"
     },
     "date_choice_true_dain": {
         "name": "Dain",
         "text": "*Dain sitzt auf einer Bank in der Turnhalle und klopft auf den Platz neben sich.* Bleib kurz bei mir. Wo wäre es für dich angenehmer?",
         "choices": [
             "Die Bank.",
-            "Die Kabine."
+            "Die Kommentatorenkabine."
         ]
     },
     "date_true_dain_1": {
         "name": "Dain",
-        "text": "Kein Sprung. Ich sitze nur."
+        "text": "Ich springe nicht. Ich werde wirklich nur sitzen."
     },
     "date_true_dain_2": {
         "name": "{name}",
@@ -1674,7 +1674,7 @@
     },
     "date_true_dain_alt_1": {
         "name": "Dain",
-        "text": "Ich fass den Schalter nur an. Er ist nicht an."
+        "text": "Ich probiere nur den Schalter aus. Einschalten werde ich ihn nicht."
     },
     "date_true_dain_alt_2": {
         "name": "{name}",
@@ -1682,7 +1682,7 @@
     },
     "date_choice_true_teacher": {
         "name": "Klassenlehrerin",
-        "text": "Der Unterricht ist vorbei. Was bleibt, ist diese Seite.",
+        "text": "Der Unterricht ist vorbei. Wohin sollen wir jetzt gehen?",
         "choices": [
             "Ein Tisch.",
             "Die Ausstellung."
@@ -1690,64 +1690,64 @@
     },
     "date_true_teacher_1": {
         "name": "Klassenlehrerin",
-        "text": "Nächste Woche bestimmst du. Ich fange nicht mit Nein an."
+        "text": "Du bestimmst, was wir nächste Woche machen. Diesmal sage ich nicht als Erste Nein."
     },
     "date_true_teacher_2": {
         "name": "{name}",
-        "text": "*Der Kaffee kühlt ab. Keiner schaut auf die Uhr.*"
+        "text": "*Der Kaffee wird kalt, doch keiner von uns schaut auf die Uhr.*"
     },
     "date_true_teacher_alt_1": {
         "name": "Klassenlehrerin",
-        "text": "Die Schilder lass. Bleib daneben."
+        "text": "Lies die Ausstellungstexte nicht. Bleib einfach bei mir."
     },
     "date_true_teacher_alt_2": {
         "name": "{name}",
-        "text": "*Unter dem Ausgangslicht wird ein Riemen gerichtet.*"
+        "text": "*Unter den Lichtern am Ausgang richtet sie wortlos den Riemen meiner Tasche.*"
     },
     "date_choice_true_nurse": {
         "name": "Schulkrankenschwester",
-        "text": "Ohne Akte. Wohin.",
+        "text": "Die Akte habe ich zurückgelassen. Wohin möchtest du gehen?",
         "choices": [
-            "Zuhause.",
+            "Zu Hause.",
             "Eine Bank."
         ]
     },
     "date_true_nurse_1": {
         "name": "Schulkrankenschwester",
-        "text": "Ich schenk Wasser ein. Das ist keine Medizin."
+        "text": "Ich schenke dir Wasser ein. Da ist keine Medizin drin."
     },
     "date_true_nurse_2": {
         "name": "{name}",
-        "text": "*Der Hahn läuft einmal und hört auf.*"
+        "text": "*Das Wasser im Waschbecken läuft kurz und verstummt dann wieder.*"
     },
     "date_true_nurse_alt_1": {
         "name": "Schulkrankenschwester",
-        "text": "Die Klinikseite lassen wir aus."
+        "text": "Heute nehmen wir einen anderen Weg und gehen nicht am Krankenhaus vorbei."
     },
     "date_true_nurse_alt_2": {
         "name": "{name}",
-        "text": "*Eine Hand legt sich auf die abgeplatzte Farbe der Bank.*"
+        "text": "*Ihre Hand ruht auf einer Stelle der Bank, an der die Farbe abblättert.*"
     },
     "ending_counteroffer_bitter": {},
     "co_bitter_seo_1": {
         "name": "{name}",
-        "text": "*Etwa einen Monat später, ein Café. Seoyeon rückt den Untersetzer nicht zurecht.*"
+        "text": "*Etwa einen Monat später kehren wir in das Café zurück. Seoyeon bemerkt den schiefen Untersetzer, lässt ihn aber liegen.*"
     },
     "co_bitter_seo_2": {
         "name": "Seoyeon",
-        "text": "Die Nachricht von dem Tag. Sie ist noch da, obwohl ich sie gelöscht habe."
+        "text": "Ich muss immer noch an die Benachrichtigung von damals denken, obwohl ich sie gelöscht habe."
     },
     "co_bitter_seo_3": {
         "name": "{name}",
-        "text": "*Sie steht auf und richtet nur den Taschenriemen. Jeder hat seinen eigenen Schirm.*"
+        "text": "*Seoyeon steht auf, richtet den Riemen ihrer Tasche und öffnet nur ihren eigenen Regenschirm.*"
     },
     "co_bitter_yuna_1": {
         "name": "{name}",
-        "text": "*Yuna steht schon vor dem Antiquariat. Sie hat kein Buch dabei.*"
+        "text": "*Yuna wartet bereits vor dem Antiquariat. Sie hat kein Buch dabei.*"
     },
     "co_bitter_yuna_2": {
         "name": "Yuna",
-        "text": "Ich geh nicht mehr in den Anbau. Nicht seit dem Tag."
+        "text": "Ich gehe nicht mehr in den Anbau. Seit diesem Tag nicht mehr."
     },
     "co_bitter_yuna_3": {
         "name": "{name}",
@@ -1755,39 +1755,39 @@
     },
     "co_bitter_dain_1": {
         "name": "{name}",
-        "text": "*Vor der Halle. Dain hat keinen Ball in der Hand.*"
+        "text": "*Dain steht ohne Ball vor der Turnhalle.*"
     },
     "co_bitter_dain_2": {
         "name": "Dain",
-        "text": "Der Partner von dem Tag. Den habe ich gestrichen."
+        "text": "Ich war diejenige, die deinen Namen damals von der Partnerliste gestrichen hat, oder?"
     },
     "co_bitter_dain_3": {
         "name": "{name}",
-        "text": "*Dain streift deine Schulter im Vorbeigehen. Diesmal ist es keine Faust.*"
+        "text": "*Dain tippt mir im Vorbeigehen mit der offenen Hand leicht gegen die Schulter statt mit der Faust.*"
     },
     "co_bitter_teacher_1": {
         "name": "{name}",
-        "text": "*Ein Flur nach dem Abschluss. Die Lehrerin steht ohne Manuskriptumschlag da.*"
+        "text": "*Nach dem Abschluss kehre ich auf den Flur zurück. Meine ehemalige Klassenlehrerin hat keinen Manuskriptumschlag in der Hand.*"
     },
     "co_bitter_teacher_2": {
         "name": "Klassenlehrerin",
-        "text": "An den Bildschirm von dem Tag denke ich noch. Die Besprechung lassen wir hier."
+        "text": "Ich denke immer noch an das, was ich damals auf deinem Bildschirm gesehen habe. Über die Besprechung reden wir nicht mehr."
     },
     "co_bitter_teacher_3": {
         "name": "{name}",
-        "text": "*Statt des Klassenbuchs trägt sie einen Stoß Papier. Sie geht zuerst Richtung Lehrerzimmer.*"
+        "text": "*Statt des Klassenbuchs trägt sie einen Stapel Papier im Arm und geht voraus zum Lehrerzimmer.*"
     },
     "co_bitter_nurse_1": {
         "name": "{name}",
-        "text": "*Vor dem Krankenzimmer. Die Tür steht offen, drinnen ist niemand.*"
+        "text": "*Die Tür des Krankenzimmers steht offen, doch drinnen ist niemand.*"
     },
     "co_bitter_nurse_2": {
         "name": "Schulkrankenschwester",
-        "text": "Die Kartei habe ich weitergegeben. Der Tag steht nicht in der Akte."
+        "text": "Deine Kartei habe ich weitergegeben. Was damals passiert ist, habe ich nicht in die Akte geschrieben."
     },
     "co_bitter_nurse_3": {
         "name": "{name}",
-        "text": "*Statt einer Karte steht eine leere Tasse auf der Fensterbank. Am Ende des Flurs hebt sie die Hand nicht.*"
+        "text": "*Auf der Fensterbank, wo früher die Informationskarte lag, steht nur noch eine leere Tasse. Die Schulkrankenschwester winkt weiter, selbst als sie das Ende des Flurs erreicht.*"
     },
     "forced_violation_resume": {
         "name": "System",

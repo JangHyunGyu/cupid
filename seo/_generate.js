@@ -9,6 +9,9 @@ const LASTMOD = '2026-07-13';
 const SEO_IMAGE = `${SITE}/cupid_link.png?v=2.9.6`;
 const SOCIAL_IMAGE = `${SITE}/assets/images/screenshots/cupid-title.jpg?v=2.9.6`;
 const GAME_DESCRIPTION = 'Cupid is a free browser romance visual novel with a five-day school story, five character routes, multiple endings, and support for seven languages.';
+const GAME_DESCRIPTIONS = {
+  de: 'Cupid ist eine kostenlose romantische Visual Novel für den Browser mit einer fünftägigen Schulgeschichte, fünf Charakterrouten, mehreren Enden und Unterstützung für sieben Sprachen.'
+};
 const SOCIAL_IMAGE_ALTS = {
   ko: '브라우저 로맨스 비주얼 노벨 Cupid 타이틀 화면',
   en: 'Cupid browser romance visual novel title screen',
@@ -239,23 +242,23 @@ const C = {
   },
   de: {
     htmlLang: 'de',
-    why_title: 'Warum ein Browser-Dating-Sim?',
+    why_title: 'Warum eine Dating-Simulation im Browser?',
     why: [
       'Keine Installation, kein Download, keine Anmeldung — einfach anklicken und spielen',
       'Läuft in aktuellen Browsern auf PC, Tablet und Smartphone',
       'Der Fortschritt wird auf demselben Gerät im selben Browser automatisch gespeichert',
-      'Die komplette Story ist kostenlos, ohne Werbung oder Bezahlschranken mitten in einer Route'
+      'Die komplette Geschichte ist kostenlos, ohne Werbung oder Bezahlschranken mitten in einer Route'
     ],
     how_title: 'In 30 Sekunden loslegen',
-    how: ['Unten auf [Jetzt spielen] klicken', 'Gib deinen Namen ein und starte die Geschichte', '5 Tage lang Entscheidungen treffen und dein Ende entdecken'],
+    how: ['Klicke unten auf [Jetzt spielen]', 'Gib deinen Namen ein und starte die Geschichte', 'Triff fünf Tage lang Entscheidungen und entdecke dein Ende'],
     faq_title: 'Häufige Fragen',
     faqs: [
       ['Ist es wirklich 100% kostenlos?', 'Ja. Alle Charakterrouten und Enden sind komplett spielbar — ohne Bezahlung, Abo oder Registrierung.'],
       ['Läuft es auf dem Handy?', 'Ja, in jedem modernen mobilen Browser (Chrome, Safari, Edge). Die Oberfläche ist hochkant gestaltet — bequem einhändig spielbar.'],
       ['Wird mein Fortschritt gespeichert?', 'Ja. Der Fortschritt wird automatisch im Browser gespeichert. Auf demselben Gerät und Browser kannst du jederzeit weiterspielen.'],
-      ['Welches Genre ist das?', 'Eine fünftägige Romance-Visual-Novel im Messenger-Stil. Deine Entscheidungen verändern den Verlauf der Handlung und schalten verschiedene Enden frei.']
+      ['Welches Genre ist das?', 'Es ist eine fünftägige Romance-Visual-Novel im Messenger-Stil. Deine Entscheidungen verändern den Verlauf der Handlung und schalten verschiedene Enden frei.']
     ],
-    picks_title: 'Empfohlene Dating-Sims ohne Download',
+    picks_title: 'Empfohlene Dating-Simulationen ohne Download',
     cupid_name: 'Cupid — Fünf Tage voller Schulromantik',
     cupid_desc: 'Eine Romance-Visual-Novel im Messenger-Stil mit mehreren Enden. Deine Entscheidungen prägen fünf Tage voller Gespräche und Beziehungen. Für Smartphones optimiert.',
     nevergrad_name: 'Nevergrad',
@@ -263,7 +266,7 @@ const C = {
     nevergrad_desc: 'Vielschichtigere Figuren, längere Routen. Der nächste Titel des ArcherLab-Teams.',
     cta: 'Jetzt kostenlos spielen →',
     other_langs_label: 'Andere Sprachen',
-    footer: '© ArcherLab — Browser-Romance-Games ohne Download'
+    footer: '© ArcherLab — Romance-Spiele im Browser, ohne Download'
   }
 };
 
@@ -485,23 +488,23 @@ const PAGES = {
     {
       slug: 'dating-sim-kostenlos',
       group: 'free-browser-romance',
-      h1: 'Dating-Sim kostenlos — Ohne Download im Browser',
+      h1: 'Dating-Sim kostenlos — ohne Download im Browser',
       title: 'Dating-Sim kostenlos ohne Download | Im Browser spielen 2026',
-      meta: 'Spiele einen kostenlosen Dating-Sim ohne Download, Anmeldung oder Bezahlung. Eine Romance-Visual-Novel mit mehreren Enden direkt im Browser.',
-      intro: 'Du suchst einen „Dating-Sim kostenlos ohne Download“? Du brauchst weder Steam noch einen App-Store noch eine Kreditkarte. Diese fünftägige Romance-Visual-Novel mit mehreren Enden läuft direkt in deinem Browser — am PC oder Smartphone.'
+      meta: 'Spiele eine kostenlose Dating-Simulation ohne Download, Anmeldung oder Bezahlung. Eine Romance-Visual-Novel mit mehreren Enden direkt im Browser.',
+      intro: 'Du suchst nach „Dating-Sim kostenlos ohne Download“? Du brauchst weder Steam noch einen App-Store noch eine Kreditkarte. Diese fünftägige Romance-Visual-Novel mit mehreren Enden läuft direkt in deinem Browser — am PC oder Smartphone.'
     },
     {
       slug: 'browser-otome',
       h1: 'Du suchst ein Browser-Otome-Game? Probiere Cupid',
       title: 'Browser-Otome-Game gesucht | Kostenlose Romance-VN',
-      meta: 'Du suchst ein kostenloses Browser-Otome-Game? Cupid ist eine Visual Novel über eine Schulromanze – ohne Download, mit männlichem Protagonisten, fünf Frauen und mehreren Enden.',
-      intro: 'Wenn du nach einem „Browser-Otome-Game“ gesucht hast, ist ein Hinweis wichtig: Cupid ist kein klassisches Otome mit weiblicher Hauptfigur und männlichen Liebesinteressen. Du spielst einen neuen Schüler, der in einer Visual Novel über eine Schulromanze fünf Frauen kennenlernt – kostenlos, ohne Installation oder Anmeldung.'
+      meta: 'Du suchst ein kostenloses Browser-Otome-Game? Cupid ist eine Visual Novel über eine Schulromanze – ohne Download, mit männlicher Hauptfigur, fünf weiblichen Figuren und mehreren Enden.',
+      intro: 'Wenn du nach einem „Browser-Otome-Game“ gesucht hast, ist ein Hinweis wichtig: Cupid ist kein klassisches Otome mit weiblicher Hauptfigur und männlichen Liebesinteressen. Du spielst einen neuen Schüler, der in einer Visual Novel über eine Schulromanze fünf weibliche Figuren kennenlernt – kostenlos, ohne Installation oder Anmeldung.'
     },
     {
       slug: 'dating-spiel-online',
       h1: 'Dating-Spiel online — Gratis im Browser',
       title: 'Dating-Spiel online gratis | Im Browser spielen ohne Download',
-      meta: 'Dating-Spiel online gratis im Browser spielen. Kein Download, keine Anmeldung, komplette Story freigeschaltet.',
+      meta: 'Dating-Spiel online gratis im Browser spielen. Kein Download, keine Anmeldung, die vollständige Handlung ist freigeschaltet.',
       intro: 'Viele Treffer für „Dating-Spiel online“ führen zu fragwürdigen Download-Seiten. Cupid läuft direkt in deinem Browser: eine kostenlose, fünftägige Romance-Visual-Novel, deren komplette Handlung ab dem ersten Klick verfügbar ist.'
     }
   ],
@@ -652,7 +655,7 @@ function renderPage(lang, page) {
         "@id": `${SITE}/#videogame`,
         "name": "Cupid",
         "alternateName": ["Cupid Game", "Cupid Visual Novel", "무료 미연시 Cupid", "学園恋愛ゲーム Cupid"],
-        "description": GAME_DESCRIPTION,
+        "description": GAME_DESCRIPTIONS[lang] || GAME_DESCRIPTION,
         "url": siteUrl('/'),
         "image": SEO_IMAGE,
         "screenshot": [

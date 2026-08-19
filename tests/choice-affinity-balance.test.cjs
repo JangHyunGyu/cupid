@@ -1126,7 +1126,7 @@ test('day 2 through 5 rivalry copy stays synchronized across every supported loc
         ja: 'b05849e94b84c66a951e4cc205393de6e3b3b7821083a586fd18cfa8c3017d15',
         es: 'aa13f742f060cd5dbbc5e3dff527b5d1de7d2371644de66aa334d94133828452',
         fr: '2d36beacf0de49a215bd8e92cc1c35d5784a6eb0b5526dfda11087439a2cb3f0',
-        de: '6d8db666499762bb72aee2431fe2af1d5f8e9796c66a561b098dba71a78a3a7c',
+        de: 'e9dbd7d9c7fa06a8de2a692bb14821f5f67b505203cc2ebed7f8efe934713331',
         pt: 'ad7afa76e2f5504db0a31f8d247b8624642140b5c1dc3d9c41ebc6fa2c17e11b'
     };
 

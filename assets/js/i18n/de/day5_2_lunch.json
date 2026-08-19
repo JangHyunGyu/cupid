@@ -201,7 +201,7 @@
     },
     "tour_dain_end": {
         "name": "Dain",
-        "text": "Ich bin ja nicht allein."
+        "text": "Ich bin nicht allein, oder?"
     },
     "tour_dain_freetalk": {
         "name": "Dain",
@@ -214,27 +214,27 @@
     "tour_co_branch": {},
     "tour_co_event_1": {
         "name": "{name}",
-        "text": "*Die Mittagsglocke geht, die Schlange bleibt kurz. Im Flur klappen Deckel auf und zu.*"
+        "text": "*Der Pausengong ist längst verklungen, doch die Schlangen sind kurz. Im Flur sind nur noch die Deckel der Lunchboxen zu hören, die auf- und zuklappen.*"
     },
     "tour_co_event_2": {
         "name": "{name}",
-        "text": "*Eine Helferweste hängt über einer Stuhllehne. Niemand fragt, wer sie anhatte.*"
+        "text": "*Eine Helferweste hängt über einer Stuhllehne. Niemand fragt, wem sie gehört.*"
     },
     "tour_co_seo_1": {
         "name": "{name}",
-        "text": "*Die Dachtür steht offen. Seoyeon lehnt am Rahmen, nicht am Geländer.*"
+        "text": "*Die Dachtür steht offen. Statt zum Geländer zu gehen, lehnt Seoyeon am Türrahmen.*"
     },
     "tour_co_seo_2": {
         "name": "Seoyeon",
-        "text": "Den Schlüssel habe ich abgegeben. Mehr wird heute nicht."
+        "text": "Den Schlüssel habe ich abgegeben. Lassen wir es heute dabei."
     },
     "tour_co_seo_3": {
         "name": "{name}",
-        "text": "*Die Klemmbrettkante stößt gegen den Rahmen. Sie richtet sie nicht.*"
+        "text": "*Als Seoyeon sich abwendet, stößt die Ecke ihres Klemmbretts gegen den Türrahmen. Sie geht weiter.*"
     },
     "tour_co_yuna_1": {
         "name": "{name}",
-        "text": "*Das Sofa im Anbau. Yuna wickelt einen Taschenriemen, statt ein Buch aufzuschlagen.*"
+        "text": "*Auf dem Sofa im Nebengebäude wickelt Yuna den Riemen ihrer Tasche um einen Finger, ohne ihr Buch zu öffnen.*"
     },
     "tour_co_yuna_2": {
         "name": "Yuna",
@@ -242,23 +242,23 @@
     },
     "tour_co_yuna_3": {
         "name": "{name}",
-        "text": "*Licht vom Fenster reicht bis zum leeren Platz. Yuna setzt sich nicht dorthin.*"
+        "text": "*Licht fällt durch das Fenster und breitet sich bis zum leeren Platz aus. Yuna bleibt sitzen, wo sie ist.*"
     },
     "tour_co_dain_1": {
         "name": "{name}",
-        "text": "*Im Gym ist Licht. Der Ball bleibt in der Kiste.*"
+        "text": "*In der Turnhalle brennt Licht, aber alle Bälle liegen noch im Ballständer.*"
     },
     "tour_co_dain_2": {
         "name": "Dain",
-        "text": "Schnick-schnack-schnuck morgen. Heute stehe ich nur."
+        "text": "Schnick, Schnack, Schnuck heben wir uns für morgen auf. Heute bleibe ich einfach hier stehen."
     },
     "tour_co_dain_3": {
         "name": "{name}",
-        "text": "*Dain zieht einmal am Handgelenkband und lässt los.*"
+        "text": "*Dain zieht einmal an ihrer Handgelenkbandage und lässt sie wieder los.*"
     },
     "tour_seo_event_1": {
         "name": "Haeun",
-        "text": "Präsidentin, die Probe der Rundfunk-AG überschneidet sich mit der Sicherheitsprüfung der Stände. Soll ich den Senderaum übernehmen?"
+        "text": "Frau Schülersprecherin, die Probe der Rundfunk-AG überschneidet sich mit der Sicherheitsprüfung der Stände. Soll ich den Senderaum übernehmen?"
     },
     "tour_seo_event_2": {
         "name": "{name}",
@@ -266,7 +266,7 @@
     },
     "tour_seo_event_3": {
         "name": "Seoyeon",
-        "text": "Übernimm den Senderaum. Schick mir danach nur das Ergebnis."
+        "text": "Übernimm den Senderaum. Sag mir danach einfach, wie es gelaufen ist."
     },
     "tour_seo_event_4": {
         "name": "Haeun",
@@ -310,7 +310,7 @@
     },
     "tour_dain_event_4": {
         "name": "Dain",
-        "text": "Und der Aufschlag kommt! Der war innerhalb der Linie! Beschwerden nehmen wir nach dem Spiel an!"
+        "text": "Und der Aufschlag kommt! Der war innerhalb der Linie! Beschwerden nehme ich nach dem Spiel entgegen!"
     },
     "tour_dain_event_5": {
         "name": "Dain",
