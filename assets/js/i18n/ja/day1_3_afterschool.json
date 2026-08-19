@@ -47,7 +47,7 @@
     },
     "after1_jealousy_seo_honest_2": {
         "name": "ダイン",
-        "text": "……そう。先に言ってくれればいいのに。"
+        "text": "そう？ 先に言ってくれればいいのに。"
     },
     "after1_jealousy_seo_lie": {
         "name": "{name}",
@@ -369,7 +369,7 @@
     },
     "after_nurse_enter_4_b": {
         "name": "{name}",
-        "text": "なんで分かるんですか。"
+        "text": "なんで分かるんですか？"
     },
     "after_nurse_enter_4_c": {
         "name": "保健室の先生",
@@ -540,6 +540,6 @@
     },
     "after_nurse_enter_trap": {
         "name": "保健室の先生",
-        "text": "気楽に見えた？ ここは静かなほど気が抜けないの。"
+        "text": "のんびりしてるように見えたんだ。ここは静かなほど気を張る場所なのに。"
     }
 }

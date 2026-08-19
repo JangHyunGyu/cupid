@@ -1123,7 +1123,7 @@ test('day 2 through 5 rivalry copy stays synchronized across every supported loc
     const expectedDigests = {
         ko: 'c8eecf35afc0adcd0adcef705f1d300175c7b7f50c16cdb2b2527180fa3fd029',
         en: 'c302bd4aee5e4aa867b75367251bc8ef01e1f0151bc4d170cea3df9d1f6c1374',
-        ja: 'ccbb381912fea9d7e3ecdf7d039f30d6a10e054a471582a242be988c6b39cacc',
+        ja: 'b05849e94b84c66a951e4cc205393de6e3b3b7821083a586fd18cfa8c3017d15',
         es: 'aa13f742f060cd5dbbc5e3dff527b5d1de7d2371644de66aa334d94133828452',
         fr: '2d36beacf0de49a215bd8e92cc1c35d5784a6eb0b5526dfda11087439a2cb3f0',
         de: '6d8db666499762bb72aee2431fe2af1d5f8e9796c66a561b098dba71a78a3a7c',

@@ -57,7 +57,7 @@
                 id: 'bookstore',
                 background: 'assets/images/background/bookstore.png',
                 names: { ko: '헌책방', en: 'Used bookstore', es: 'Librería de viejo', ja: '古本屋', fr: 'Librairie d’occasion', de: 'Antiquariat', pt: 'Sebo' },
-                hints: { ko: '서가 사이에 이마를 대던 곳.', en: 'The aisle where she once leaned her forehead.', es: 'El pasillo donde apoyó la frente.', ja: '書架の間で額をつけた場所。', fr: 'L’allée où elle avait posé son front.', de: 'Der Gang, in dem sie die Stirn angelehnt hat.', pt: 'O corredor em que ela encostou a testa.' }
+                hints: { ko: '서가 사이에 이마를 대던 곳.', en: 'The aisle where she once leaned her forehead.', es: 'El pasillo donde apoyó la frente.', ja: '書架の間で額を寄せた場所。', fr: 'L’allée où elle avait posé son front.', de: 'Der Gang, in dem sie die Stirn angelehnt hat.', pt: 'O corredor em que ela encostou a testa.' }
             },
             {
                 id: 'library',
@@ -129,13 +129,13 @@
                 id: 'home',
                 background: 'assets/images/background/nurse_house.png',
                 names: { ko: '둘의 집', en: 'Their home', es: 'Su casa', ja: '二人の家', fr: 'Chez eux', de: 'Ihr Zuhause', pt: 'A casa dos dois' },
-                hints: { ko: '주말에 남는 오전.', en: 'A leftover weekend morning.', es: 'Una mañana de fin de semana que sobra.', ja: '週末に余った午前。', fr: 'Un matin de week-end qui reste.', de: 'Ein übriger Wochenendmorgen.', pt: 'Uma manhã de fim de semana que sobrou.' }
+                hints: { ko: '주말에 남는 오전.', en: 'A leftover weekend morning.', es: 'Una mañana de fin de semana que sobra.', ja: '予定のない週末の朝。', fr: 'Un matin de week-end qui reste.', de: 'Ein übriger Wochenendmorgen.', pt: 'Uma manhã de fim de semana que sobrou.' }
             },
             {
                 id: 'cafe',
                 background: 'assets/images/background/cafe.png',
                 names: { ko: '카페', en: 'Cafe', es: 'Cafetería', ja: 'カフェ', fr: 'Café', de: 'Café', pt: 'Café' },
-                hints: { ko: '농담을 거두기 전의 테이블.', en: 'A table before she drops the joke.', es: 'Una mesa antes de dejar la broma.', ja: '冗談をしまう前のテーブル。', fr: 'Une table avant qu’elle range la blague.', de: 'Ein Tisch, bevor sie den Witz wegsteckt.', pt: 'Uma mesa antes de ela guardar a brincadeira.' }
+                hints: { ko: '농담을 거두기 전의 테이블.', en: 'A table before she drops the joke.', es: 'Una mesa antes de dejar la broma.', ja: '冗談をやめる前、向かい合って座ったテーブル。', fr: 'Une table avant qu’elle range la blague.', de: 'Ein Tisch, bevor sie den Witz wegsteckt.', pt: 'Uma mesa antes de ela guardar a brincadeira.' }
             },
             {
                 id: 'park',
@@ -177,9 +177,9 @@
     }
 
     const pickerCopy = {
-        title: { ko: '오늘 어디 갈래', en: 'Where to today', es: '¿Adónde vamos hoy?', ja: '今日はどこにする', fr: 'Où on va aujourd’hui', de: 'Wohin heute', pt: 'Aonde a gente vai hoje' },
+        title: { ko: '오늘 어디 갈래', en: 'Where to today', es: '¿Adónde vamos hoy?', ja: '今日はどこにする？', fr: 'Où on va aujourd’hui', de: 'Wohin heute', pt: 'Aonde a gente vai hoje' },
         birthday: { ko: '오늘 생일이다', en: 'Today is their birthday', es: 'Hoy es su cumpleaños', ja: '今日は誕生日', fr: 'C’est son anniversaire', de: 'Heute ist Geburtstag', pt: 'Hoje é aniversário' },
-        start: { ko: '여기서 보자', en: 'Meet there', es: 'Allí', ja: 'そこで', fr: 'On s’y retrouve', de: 'Dort treffen', pt: 'A gente se encontra lá' }
+        start: { ko: '여기서 보자', en: 'Meet there', es: 'Allí', ja: 'ここで会おう', fr: 'On s’y retrouve', de: 'Dort treffen', pt: 'A gente se encontra lá' }
     };
 
     global.CupidGalleryOutings = Object.freeze({

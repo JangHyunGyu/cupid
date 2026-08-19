@@ -609,7 +609,7 @@ class FreeTalkSystem {
             Seoyeon: { ko: '서연', en: 'Seoyeon', es: 'Seoyeon', ja: 'ソヨン', fr: 'Seoyeon', de: 'Seoyeon', pt: 'Seoyeon' },
             Yuna: { ko: '유나', en: 'Yuna', es: 'Yuna', ja: 'ユナ', fr: 'Yuna', de: 'Yuna', pt: 'Yuna' },
             Dain: { ko: '다인', en: 'Dain', es: 'Dain', ja: 'ダイン', fr: 'Dain', de: 'Dain', pt: 'Dain' },
-            Teacher: { ko: '담임선생님', en: 'Homeroom Teacher', es: 'Profesora', ja: '担任先生', fr: 'Professeure principale', de: 'Klassenlehrerin', pt: 'Professora' },
+            Teacher: { ko: '담임선생님', en: 'Homeroom Teacher', es: 'Profesora', ja: '担任の先生', fr: 'Professeure principale', de: 'Klassenlehrerin', pt: 'Professora' },
             Nurse: { ko: '보건선생님', en: 'School Nurse', es: 'Enfermera', ja: '保健室の先生', fr: 'Infirmière scolaire', de: 'Schulkrankenschwester', pt: 'Enfermeira' }
         };
         const language = String(lang || 'ko').toLowerCase().split('-')[0];
