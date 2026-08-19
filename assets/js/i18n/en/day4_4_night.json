@@ -82,7 +82,7 @@
     },
     "day4_adult_counteroffer_accept_yuna": {
         "name": "{name}",
-        "text": "*Yuna steps right up to {name}, bracing one hand on the bookcase. She lets her jacket slip below one shoulder and uses her other hand to tug down the neckline beneath it. Between her bare shoulder and tattoo, her red eyes stay level with {name}. The phone on the desk buzzes again. Much later, they leave the annex and return home.*"
+        "text": "*Yuna steps right up to {name}, bracing one hand on the bookcase. She lets her jacket slip below one shoulder and uses her other hand to tug down the neckline beneath it. Over her bare shoulder and tattoo, her red eyes hold {name}'s gaze. The phone on the desk buzzes again. Much later, they leave the annex and return home.*"
     },
     "day4_adult_night_regret_target_branch": {},
     "day4_adult_night_regret_teacher": {
@@ -328,11 +328,11 @@
     },
     "wall_seo_glimpse_1": {
         "name": "{name}",
-        "text": "*On the way to meet Seoyeon at the park at ten, I find Dain outside the dark gym, touching the tape on her knee.*"
+        "text": "*On the way to meet Seoyeon at the park at ten, I find Dain standing by the darkened gym's emergency exit, touching the tape on her knee.*"
     },
     "wall_seo_glimpse_2": {
         "name": "Dain",
-        "text": "Just return ten. When we're done... hug me, okay? I can't keep pretending I'm fine by myself tonight.",
+        "text": "Just return ten serves for me. When we're done... hug me, okay? I can't keep pretending I'm fine by myself tonight.",
         "choices": [
             "Keep the promise and go to Seoyeon at the park",
             "Enter the gym and stay with Dain",
@@ -360,7 +360,7 @@
     },
     "wall_seo_yuna_tempt_accept": {
         "name": "{name}",
-        "text": "*Yuna steps right up to {name} and braces one hand against the shelf. She lets her blazer slip below one shoulder and uses the other hand to tug down the neckline of her dark top. Between her bare shoulder and tattoo, her red eyes stay level with {name}. Seoyeon's message—'I'm on the park bench.'—stays at the top of the screen.*"
+        "text": "*Yuna steps right up to {name} and braces one hand against the shelf. She lets her blazer slip below one shoulder and uses the other hand to tug down the neckline of her dark top. Over her bare shoulder and tattoo, her red eyes hold {name}'s gaze. Seoyeon's message—'I'm on the park bench.'—stays at the top of the screen.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -674,11 +674,11 @@
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*Yuna steps right up to {name} and braces one hand against the shelf. She lets her blazer slip below one shoulder and uses the other hand to tug down the neckline of her dark top. Between her bare shoulder and tattoo, her red eyes stay level with {name}. Dain's 'Gym back door is open.' stays at the top of the screen.*"
+        "text": "*Yuna steps right up to {name} and braces one hand against the shelf. She lets her blazer slip below one shoulder and uses the other hand to tug down the neckline of her dark top. Over her bare shoulder and tattoo, her red eyes hold {name}'s gaze. Dain's 'The gym's back door is open.' stays at the top of the screen.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
-        "text": "*10 PM. A message from Yuna appears just above Dain's 'Gym back door is open.' notification.*"
+        "text": "*10 PM. A message from Yuna appears just above Dain's 'The gym's back door is open.' notification.*"
     },
     "wall_dain_glimpse_4_c": {
         "name": "Yuna",
@@ -706,7 +706,7 @@
     },
     "wall_dain_seo_tempt_accept": {
         "name": "{name}",
-        "text": "*The rooftop door closes. Without a word, Seoyeon undoes her blouse and catches {name}'s wrist, drawing the hand toward her. The palm meets the bare skin of her chest through the open blouse, and Seoyeon's hand settles over it. Dain's 'Gym back door is open.' lights the screen.*"
+        "text": "*The rooftop door closes. Without a word, Seoyeon undoes her blouse and catches {name}'s wrist, drawing the hand toward her. The palm meets the bare skin of her chest through the open blouse, and Seoyeon's hand settles over it. Dain's 'The gym's back door is open.' lights the screen.*"
     },
     "wall_yuna_1": {
         "name": "{name}",
@@ -926,11 +926,11 @@
     },
     "wall_yuna_dain_tempt_1": {
         "name": "{name}",
-        "text": "*On the way to the school back gate where Yuna is waiting, I find Dain outside the dark gym, touching the tape on her knee.*"
+        "text": "*On the way to the school back gate where Yuna is waiting, I find Dain standing by the darkened gym's emergency exit, touching the tape on her knee.*"
     },
     "wall_yuna_dain_tempt_2": {
         "name": "Dain",
-        "text": "Just return ten. When we're done... hug me, okay? I can't keep pretending I'm fine by myself tonight.",
+        "text": "Just return ten serves for me. When we're done... hug me, okay? I can't keep pretending I'm fine by myself tonight.",
         "choices": [
             "Reply to Yuna and continue to the school back gate",
             "Enter the gym and stay with Dain",
@@ -1020,7 +1020,7 @@
     },
     "wall_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*She folds the letter into her book and meets the protagonist's eyes first this time.* There's still something I want to hear.",
+        "text": "*She folds the letter into her book and meets my eyes first this time.* There's still something I want to hear.",
         "context": "It is the night of Day 4, just after Yuna faced Junho's letter and her fear of being a substitute for someone else. Whether the protagonist accepted or postponed her confession, and the feelings just confirmed, are established facts. Do not rewrite the letter, erase her fear instantly, or reassess the relationship.",
         "personality": "Yuna is quiet and reflective, but she no longer avoids the questions that matter. Instead of hiding behind metaphor, she speaks directly when needed and listens without twisting the answer to fit her fears."
     },
@@ -1066,11 +1066,11 @@
     },
     "forced_violation_day4_yuna_excuse": {
         "name": "Yuna",
-        "text": "*Yuna refuses to hear the explanation through.* I said no. There's nothing to explain."
+        "text": "*Yuna cuts off the explanation before it is finished.* I said no. There's nothing to explain."
     },
     "forced_violation_day4_after_dain": {
         "name": "Dain",
-        "text": "*Dain does not laugh it off the way she usually might. A long silence passes before her voice returns, short and rigid.* This isn't a joke. I said no and you forced it anyway. I'm not letting this go.",
+        "text": "*Dain does not laugh it off the way she usually might. A long silence passes before she answers in a clipped, hard voice.* This isn't a joke. I said no and you forced it anyway. I'm not letting this go.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -1086,7 +1086,7 @@
     },
     "forced_violation_day4_after_teacher": {
         "name": "Homeroom Teacher",
-        "text": "*After the conversation ends, the homeroom teacher draws the line in an even firmer voice.* What you just did clearly crossed a line. Do not come any closer. I will handle this through the proper procedures.",
+        "text": "*After the conversation ends, the homeroom teacher makes the boundary even clearer, her voice firm.* What you just did clearly crossed a line. Do not come any closer. I will handle this through the proper procedures.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -1094,7 +1094,7 @@
     },
     "forced_violation_day4_teacher_apologize": {
         "name": "Homeroom Teacher",
-        "text": "*The homeroom teacher takes a short breath before continuing.* I heard your apology. The proper procedures will still go ahead. Don't say anything else."
+        "text": "*The homeroom teacher takes a short breath before continuing.* I heard your apology. I'll still follow the proper procedures. Don't say anything else."
     },
     "forced_violation_day4_teacher_excuse": {
         "name": "Homeroom Teacher",
@@ -1110,14 +1110,14 @@
     },
     "forced_violation_day4_nurse_apologize": {
         "name": "School Nurse",
-        "text": "*The school nurse is silent for a moment, then answers firmly.* I'll hear your apology. The record and notifications still stand. This conversation is over."
+        "text": "*The school nurse is silent for a moment, then answers firmly.* I hear your apology. I'll still document this and notify the appropriate people. This conversation is over."
     },
     "forced_violation_day4_nurse_excuse": {
         "name": "School Nurse",
-        "text": "*The school nurse's voice drops lower.* Do you think calling it a misunderstanding changes anything? The fact is that you ignored a refusal."
+        "text": "*The school nurse's voice drops lower.* Do you think calling it a misunderstanding changes anything? The fact is, you ignored me when I said no."
     },
     "day4_student_return_home": {
         "name": "{name}",
-        "text": "*I return home after the meeting. When the front door closes, the phone is the only light left in my room.*"
+        "text": "*I return home after the meeting. When the front door closes, only the glow of my phone remains in the room.*"
     }
 }

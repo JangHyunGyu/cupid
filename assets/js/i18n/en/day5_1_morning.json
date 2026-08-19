@@ -16,7 +16,7 @@
     "morning5_temptation_counteroffer_branch": {},
     "morning5_caught_teacher_counteroffer": {
         "name": "Homeroom Teacher",
-        "text": "*In the morning classroom, I set my phone down to show my homeroom teacher a photo of my draft. The screen lights up with a message from the girl I was with last night: 'What happened yesterday stays between us, right?' My teacher reads it to the end and takes her hand off the phone.* You ignored my message last night to meet this girl?",
+        "text": "*In the morning classroom, I set my phone down to show my homeroom teacher a photo of my draft. The screen lights up with a message from the girl I was with last night: 'What happened yesterday stays between us, right?' My teacher reads it to the end and takes her hand off the phone.* You ignored my message last night and went to meet this girl?",
         "choices": [
             "Tell her what happened last night",
             "Brush it off as nothing important",
@@ -26,7 +26,7 @@
     },
     "morning5_caught_nurse_counteroffer": {
         "name": "School Nurse",
-        "text": "*The moment I set my phone on the infirmary counter, the screen lights up. A message from the girl I was with last night reads, 'What happened yesterday stays between us, right?' The school nurse starts to give her usual smile, then slowly lets it fade.* So you didn't miss my message yesterday. You were with this girl?",
+        "text": "*The moment I set my phone on the infirmary counter, the screen lights up. A message from the girl I was with last night reads, 'What happened yesterday stays between us, right?' The school nurse starts to give her usual smile, then slowly lets it fade.* So you didn't miss my message yesterday—you were with this girl?",
         "choices": [
             "Tell her what happened last night",
             "Brush it off as nothing important",
@@ -44,11 +44,11 @@
     },
     "morning5_caught_nurse_honest": {
         "name": "School Nurse",
-        "text": "*The school nurse hears everything without telling me it's all right. Instead, she neatly closes the medical log.* You'd feel better if I said it was fine. But I can't say that right now. Please go for today. *I leave the nurse's office and return to the classroom.*"
+        "text": "*The school nurse hears everything without telling me it's all right. Instead, she neatly closes the medical log.* You'd feel better if I said it was fine. But I can't say that right now. Please leave for today. *I leave the nurse's office and return to the classroom.*"
     },
     "morning5_caught_nurse_lie": {
         "name": "School Nurse",
-        "text": "*The school nurse checks the new notification and removes her glasses. Her eyes meet mine without a trace of their usual smile.* So it wasn't an ache you were hiding. I can't take care of your lies too. *I leave the nurse's office and return to the classroom.*"
+        "text": "*The school nurse checks the new notification and removes her glasses. Her eyes meet mine without a trace of their usual smile.* So it wasn't an injury you were hiding—you were hiding this. I can't take care of your lies too. *I leave the nurse's office and return to the classroom.*"
     },
     "morning5_caught_by_seoyeon_route": {},
     "morning5_caught_by_yuna_route": {},
@@ -85,7 +85,7 @@
     },
     "morning5_caught_dain_by_yuna": {
         "name": "Dain",
-        "text": "*As Dain pulls out the chair across from me, a notification from Yuna lights up the screen. 'Thank you for staying with me in the annex last night.' Dain's hand freezes on the chair back.* You read my message and went to the annex?",
+        "text": "*As Dain pulls out the chair across from me, a notification from Yuna lights up the screen. 'Thank you for staying with me in the annex last night.' Dain's hand freezes on the chair back.* You read my message and still went to the annex?",
         "choices": [
             "Tell her what happened last night",
             "Brush it off as nothing important",
@@ -115,7 +115,7 @@
     },
     "morning5_caught_seoyeon_honest": {
         "name": "Seoyeon",
-        "text": "*Even after hearing everything, Seoyeon doesn't take off her glasses. She turns the eyes behind the lenses back to the screen.* I can't thank you for being honest. I can't look at you right now."
+        "text": "*Even after hearing everything, Seoyeon doesn't take off her glasses. She turns the eyes behind the lenses back to the screen.* I can't thank you for being honest. It's hard to look at you right now."
     },
     "morning5_caught_seoyeon_lie": {
         "name": "Seoyeon",
@@ -135,11 +135,11 @@
     },
     "morning5_caught_yuna_lie": {
         "name": "Yuna",
-        "text": "*Instead of answering, Yuna turns the screen on again. The notification stays between us.* I gave you a chance to tell me, and you hid it again."
+        "text": "*Instead of answering, Yuna turns the screen on again. The notification stays between us.* I even gave you a chance to come clean, and you're hiding it again."
     },
     "morning5_counteroffer_group_talk": {
         "name": "Both of Them",
-        "text": "*Both looks pin me in place. What exactly was last night, and was I trying to keep both of them from the start? Neither is willing to step back first.* \"So who are you choosing now?\"",
+        "text": "*Both of them stare me down at once. What was last night supposed to mean? Had I been stringing them both along from the start? Neither is willing to back down.* \"So who are you choosing now?\"",
         "context": "The truth about accepting last night's temptation has just come out. The person the protagonist had committed to and the person who tempted him now face him together in the same classroom. Continue from his choice to confess or lie. Both demand a direct explanation of his relationships and intent and a clear answer about whom he chooses now, without smoothing over the tension among all three.",
         "personality": "Both characters keep their distinct voices and their own hurt. The committed partner speaks first, and the tempter responds after hearing her. The confrontation centers on the protagonist's explanation: both question him directly and press any gap in what he has said. The committed partner asks, in character, why he accepted someone else while continuing their relationship, whether he was two-timing from the start, or whether he was playing with her. The tempter owns the initiative and guilt of hurting the other person, yet does not hide the desire to keep the protagonist and be chosen. Guilt alone does not make her retreat or yield. They may challenge or answer each other, but they never leave the protagonist out and decide the relationship between themselves. Do not repeat an answered question; press a missing fact, what the relationship meant, or what he will choose next.",
         "buttonText": "Answer"
@@ -654,21 +654,21 @@
     },
     "hidden_nurse_d5_choice_trap": {
         "name": "School Nurse",
-        "text": "Other way around. This card isn't for handling everything alone."
+        "text": "It's the other way around. This card isn't for handling everything alone."
     },
     "morning5_after_counteroffer_hidden_check": {},
     "hidden_nurse_d5_after_co_check": {},
     "morning5_after_counteroffer": {
         "name": "{name}",
-        "text": "*A morning notice slides off the desk. No one picks it up. The event announcement comes first.*"
+        "text": "*A morning notice slides off the desk. No one picks it up. Before anyone can, an announcement about the event fills the classroom.*"
     },
     "morning5_sojeong_1": {
         "name": "{name}",
-        "text": "*I open the notes app. Thirty-nine blank drafts begin with 'To Sojeong.'*"
+        "text": "*I open the notes app. Thirty-nine unfinished drafts begin with 'To Sojeong.'*"
     },
     "morning5_sojeong_2": {
         "name": "{name}",
-        "text": "*I do not write a fortieth. I choose the shortest draft and send it as it is.*"
+        "text": "*I don't start a fortieth. I choose the shortest draft and send it as it is.*"
     },
     "morning5_sojeong_3": {
         "name": "{name}",
@@ -676,7 +676,7 @@
     },
     "morning5_sojeong_4": {
         "name": "{name}",
-        "text": "*The message sends. I close the chat without waiting for a read receipt.*"
+        "text": "*The sent indicator appears. I close the chat without waiting for a read receipt.*"
     },
     "morning5_sojeong_5": {
         "name": "{name}",

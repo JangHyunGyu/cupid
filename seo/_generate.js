@@ -104,15 +104,15 @@ const C = {
       'No install, no download, no signup — just click and play',
       'Runs in modern desktop, tablet, and mobile browsers',
       'Progress saves automatically in the same browser on the same device',
-      'Full story unlocked for free, no ads or paywalls mid-route'
+      'The full story is unlocked for free, with no ads or paywalls mid-route'
     ],
     how_title: 'Start playing in 30 seconds',
-    how: ['Click the [Play Now] button below', 'Enter your name and start the story', 'Make choices over 5 in-game days and reach an ending'],
+    how: ['Click the “Play Now” button below', 'Enter your name and start the story', 'Make choices over five in-game days and reach an ending'],
     faq_title: 'Frequently asked questions',
     faqs: [
       ['Is it really 100% free?', 'Yes. Every character route and ending is fully playable with no payment, no subscription, and no signup.'],
       ['Does it work on mobile?', 'Yes — it runs on any modern mobile browser (Chrome, Safari, Edge). The UI is portrait-first so you can play one-handed.'],
-      ['Is my progress saved?', 'Yes. Progress is saved automatically to your browser. Reopen the same browser on the same device and you continue from where you left off.'],
+      ['Is my progress saved?', 'Yes. Progress is saved automatically to your browser. Reopen the same browser on the same device, and you can continue from where you left off.'],
       ['What genre is it?', 'A 5-day messenger-style romance visual novel. Your choices branch the story and unlock different endings.']
     ],
     picks_title: 'Recommended no-download dating sims',
@@ -347,7 +347,7 @@ const PAGES = {
     },
     {
       slug: 'cupid-visual-novel',
-      h1: 'Cupid Visual Novel — Free Romance VN in Browser',
+      h1: 'Cupid Visual Novel — Free Romance VN in Your Browser',
       title: 'Cupid Visual Novel | Free Browser Romance VN',
       meta: 'Cupid is a free browser visual novel with romance routes, multiple endings, and no download. Play the full messenger-style VN on desktop or mobile.',
       intro: 'Cupid is a browser-based visual novel built around short messenger scenes, character choices, and multiple endings. No installer, no app store, no payment wall.'
@@ -711,6 +711,7 @@ function renderPage(lang, page) {
   return `<!DOCTYPE html>
 <html lang="${c.htmlLang}">
 <head>
+<script src="/assets/js/ga-engagement.js?v=20260618-engagement" defer></script>
   <meta charset="UTF-8">
   <script src="/assets/js/error-reporter.js?v=20260817-script-retry"></script>
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -855,6 +856,20 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 ${homeSitemap}
     <!-- SEO landing pages -->
 ${sitemapFrag}
+<!-- traffic-pages:start -->
+  <url>
+    <loc>https://cupid.archerlab.dev/seo/visual-novel-beginner-guide</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cupid.archerlab.dev/seo/multiple-ending-romance-game</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+<!-- traffic-pages:end -->
 </urlset>
 `;
 

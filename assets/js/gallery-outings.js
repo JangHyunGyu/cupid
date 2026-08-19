@@ -57,7 +57,7 @@
                 id: 'bookstore',
                 background: 'assets/images/background/bookstore.png',
                 names: { ko: '헌책방', en: 'Used bookstore', es: 'Librería de viejo', ja: '古本屋', fr: 'Librairie d’occasion', de: 'Antiquariat', pt: 'Sebo' },
-                hints: { ko: '서가 사이에 이마를 대던 곳.', en: 'The aisle where she once leaned her forehead.', es: 'El pasillo donde apoyó la frente.', ja: '書架の間で額を寄せた場所。', fr: 'L’allée où elle avait posé son front.', de: 'Der Gang, in dem sie die Stirn angelehnt hat.', pt: 'O corredor em que ela encostou a testa.' }
+                hints: { ko: '서가 사이에 이마를 대던 곳.', en: 'The aisle where she once rested her forehead against a shelf.', es: 'El pasillo donde apoyó la frente.', ja: '書架の間で額を寄せた場所。', fr: 'L’allée où elle avait posé son front.', de: 'Der Gang, in dem sie die Stirn angelehnt hat.', pt: 'O corredor em que ela encostou a testa.' }
             },
             {
                 id: 'library',
@@ -82,8 +82,8 @@
             {
                 id: 'gym',
                 background: 'assets/images/background/gym.png',
-                names: { ko: '체육관', en: 'Gymnasium', es: 'Gimnasio', ja: '体育館', fr: 'Gymnase', de: 'Turnhalle', pt: 'Ginásio' },
-                hints: { ko: '공은 잡되 점프는 참는 날.', en: 'She holds a ball and skips the jump.', es: 'Sostiene el balón y se salta el salto.', ja: 'ボールは持つが跳ばない日。', fr: 'Elle tient le ballon et saute le saut.', de: 'Sie hält den Ball und lässt den Sprung.', pt: 'Ela segura a bola e dispensa o salto.' }
+                names: { ko: '체육관', en: 'Gym', es: 'Gimnasio', ja: '体育館', fr: 'Gymnase', de: 'Turnhalle', pt: 'Ginásio' },
+                hints: { ko: '공은 잡되 점프는 참는 날.', en: 'A day to hold the ball without jumping.', es: 'Sostiene el balón y se salta el salto.', ja: 'ボールは持つが跳ばない日。', fr: 'Elle tient le ballon et saute le saut.', de: 'Sie hält den Ball und lässt den Sprung.', pt: 'Ela segura a bola e dispensa o salto.' }
             },
             {
                 id: 'booth',
@@ -95,7 +95,7 @@
                 id: 'park',
                 background: 'assets/images/background/park.png',
                 names: { ko: '공원 벤치', en: 'Park bench', es: 'Banco del parque', ja: '公園のベンチ', fr: 'Banc du parc', de: 'Parkbank', pt: 'Banco do parque' },
-                hints: { ko: '5분만, 체력 충전.', en: 'Five minutes. Just a charge-up.', es: 'Cinco minutos. Solo recargar.', ja: '5分だけ、充電。', fr: 'Cinq minutes. Juste recharger.', de: 'Fünf Minuten. Nur auftanken.', pt: 'Cinco minutos. Só recarregar.' }
+                hints: { ko: '5분만, 체력 충전.', en: 'Five minutes. Just a quick recharge.', es: 'Cinco minutos. Solo recargar.', ja: '5分だけ、充電。', fr: 'Cinq minutes. Juste recharger.', de: 'Fünf Minuten. Nur auftanken.', pt: 'Cinco minutos. Só recarregar.' }
             }
         ],
         teacher: [
@@ -129,13 +129,13 @@
                 id: 'home',
                 background: 'assets/images/background/nurse_house.png',
                 names: { ko: '둘의 집', en: 'Their home', es: 'Su casa', ja: '二人の家', fr: 'Chez eux', de: 'Ihr Zuhause', pt: 'A casa dos dois' },
-                hints: { ko: '주말에 남는 오전.', en: 'A leftover weekend morning.', es: 'Una mañana de fin de semana que sobra.', ja: '予定のない週末の朝。', fr: 'Un matin de week-end qui reste.', de: 'Ein übriger Wochenendmorgen.', pt: 'Uma manhã de fim de semana que sobrou.' }
+                hints: { ko: '주말에 남는 오전.', en: 'An unhurried weekend morning.', es: 'Una mañana de fin de semana que sobra.', ja: '予定のない週末の朝。', fr: 'Un matin de week-end qui reste.', de: 'Ein übriger Wochenendmorgen.', pt: 'Uma manhã de fim de semana que sobrou.' }
             },
             {
                 id: 'cafe',
                 background: 'assets/images/background/cafe.png',
                 names: { ko: '카페', en: 'Cafe', es: 'Cafetería', ja: 'カフェ', fr: 'Café', de: 'Café', pt: 'Café' },
-                hints: { ko: '농담을 거두기 전의 테이블.', en: 'A table before she drops the joke.', es: 'Una mesa antes de dejar la broma.', ja: '冗談をやめる前、向かい合って座ったテーブル。', fr: 'Une table avant qu’elle range la blague.', de: 'Ein Tisch, bevor sie den Witz wegsteckt.', pt: 'Uma mesa antes de ela guardar a brincadeira.' }
+                hints: { ko: '농담을 거두기 전의 테이블.', en: 'The table where her jokes give way to honesty.', es: 'Una mesa antes de dejar la broma.', ja: '冗談をやめる前、向かい合って座ったテーブル。', fr: 'Une table avant qu’elle range la blague.', de: 'Ein Tisch, bevor sie den Witz wegsteckt.', pt: 'Uma mesa antes de ela guardar a brincadeira.' }
             },
             {
                 id: 'park',
@@ -173,11 +173,11 @@
         if (String(lang || 'ko').toLowerCase().startsWith('ko')) {
             return `\n\n[오늘 외출]\n장소: ${name}\n${hint}\n- 이 장소의 물건·소리·동선만 쓰고, 다른 장소로 갑자기 옮기지 마세요.\n- ${characterName || '상대'}의 말투와 거리를 유지하세요.${birthday ? `\n- 오늘은 ${characterName || '상대'}의 생일입니다. 파티나 큰 이벤트로 키우지 말고, 그 사람이 받을 법한 작은 표시만 하세요.` : ''}`;
         }
-        return `\n\n[Today's outing]\nPlace: ${name}\n${hint}\n- Keep the scene in this place; do not jump elsewhere.\n- Stay in ${characterName || 'the character'}'s voice and distance.${birthday ? `\n- Today is ${characterName || 'their'} birthday. Keep it small and in character; no party set-piece.` : ''}`;
+        return `\n\n[Today's outing]\nPlace: ${name}\n${hint}\n- Keep the scene in this place; do not jump elsewhere.\n- Stay in ${characterName || 'the character'}'s voice and distance.${birthday ? `\n- Today is ${characterName ? `${characterName}'s` : 'their'} birthday. Keep it small and in character; no elaborate party scene.` : ''}`;
     }
 
     const pickerCopy = {
-        title: { ko: '오늘 어디 갈래', en: 'Where to today', es: '¿Adónde vamos hoy?', ja: '今日はどこにする？', fr: 'Où on va aujourd’hui', de: 'Wohin heute', pt: 'Aonde a gente vai hoje' },
+        title: { ko: '오늘 어디 갈래', en: 'Where should we go today?', es: '¿Adónde vamos hoy?', ja: '今日はどこにする？', fr: 'Où on va aujourd’hui', de: 'Wohin heute', pt: 'Aonde a gente vai hoje' },
         birthday: { ko: '오늘 생일이다', en: 'Today is their birthday', es: 'Hoy es su cumpleaños', ja: '今日は誕生日', fr: 'C’est son anniversaire', de: 'Heute ist Geburtstag', pt: 'Hoje é aniversário' },
         start: { ko: '여기서 보자', en: 'Meet there', es: 'Allí', ja: 'ここで会おう', fr: 'On s’y retrouve', de: 'Dort treffen', pt: 'A gente se encontra lá' }
     };

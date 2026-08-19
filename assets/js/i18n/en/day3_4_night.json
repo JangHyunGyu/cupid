@@ -270,11 +270,11 @@
     },
     "forced_violation_day3_yuna_excuse": {
         "name": "Yuna",
-        "text": "*Yuna refuses to hear the explanation through.* I said no. There's nothing to explain."
+        "text": "*Yuna cuts off the explanation before it is finished.* I said no. There's nothing to explain."
     },
     "forced_violation_day3_after_dain": {
         "name": "Dain",
-        "text": "*Dain does not laugh it off the way she usually might. A long silence passes before her voice returns, short and rigid.* This isn't a joke. I said no and you forced it anyway. I'm not letting this go.",
+        "text": "*Dain does not laugh it off the way she usually might. A long silence passes before she answers in a clipped, hard voice.* This isn't a joke. I said no and you forced it anyway. I'm not letting this go.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -290,7 +290,7 @@
     },
     "forced_violation_day3_after_teacher": {
         "name": "Homeroom Teacher",
-        "text": "*After the conversation ends, the homeroom teacher draws the line in an even firmer voice.* What you just did clearly crossed a line. Do not come any closer. I will handle this through the proper procedures.",
+        "text": "*After the conversation ends, the homeroom teacher makes the boundary even clearer, her voice firm.* What you just did clearly crossed a line. Do not come any closer. I will handle this through the proper procedures.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -298,7 +298,7 @@
     },
     "forced_violation_day3_teacher_apologize": {
         "name": "Homeroom Teacher",
-        "text": "*The homeroom teacher takes a short breath before continuing.* I heard your apology. The proper procedures will still go ahead. Don't say anything else."
+        "text": "*The homeroom teacher takes a short breath before continuing.* I heard your apology. I'll still follow the proper procedures. Don't say anything else."
     },
     "forced_violation_day3_teacher_excuse": {
         "name": "Homeroom Teacher",
@@ -314,7 +314,7 @@
     },
     "forced_violation_day3_haeun_apologize": {
         "name": "Haeun",
-        "text": "*Haeun backs toward the faculty office without answering. She keeps watching until she is sure the protagonist is not following.*"
+        "text": "*Haeun backs toward the faculty office without answering. She keeps watching until she is sure you aren't following.*"
     },
     "forced_violation_day3_haeun_excuse": {
         "name": "Haeun",
@@ -330,10 +330,10 @@
     },
     "forced_violation_day3_nurse_apologize": {
         "name": "School Nurse",
-        "text": "*The school nurse is silent for a moment, then answers firmly.* I'll hear your apology. The record and notifications still stand. This conversation is over."
+        "text": "*The school nurse is silent for a moment, then answers firmly.* I hear your apology. I'll still document this and notify the appropriate people. This conversation is over."
     },
     "forced_violation_day3_nurse_excuse": {
         "name": "School Nurse",
-        "text": "*The school nurse's voice drops lower.* Do you think calling it a misunderstanding changes anything? The fact is that you ignored a refusal."
+        "text": "*The school nurse's voice drops lower.* Do you think calling it a misunderstanding changes anything? The fact is, you ignored me when I said no."
     }
 }

@@ -739,7 +739,7 @@
     },
     "after3_group_teacher_companion": {
         "name": "Homeroom Teacher and companion",
-        "text": "*Classes are over in the open classroom. The teacher spreads out the event draft, and the companion sets different materials across from her. After checking the clock, the teacher points to each task in turn.* \"There is barely time to finish one of these. Whose work will you help with first?\"",
+        "text": "*Classes are over. In a classroom left open for the event, the teacher spreads out the event draft while the companion lays out different materials across from her. After checking the clock, the teacher points to each task in turn.* \"There is barely time to finish one of these. Whose work will you help with first?\"",
         "context": "After school, the protagonist is reviewing a draft for a public school literature event with the homeroom teacher in an open classroom when the other character with the highest affinity joins them with separate event materials or a request. There is only enough time to finish one task, so the teacher asks whose work the protagonist will help with first.",
         "personality": "The teacher keeps professional distance while guiding the discussion with dry humor and precise notes. Let the companion contribute real opinions through their own voice and interests. Do not turn this into a private teacher-student relationship or a closed-door meeting.",
         "buttonText": "Speak",
@@ -749,7 +749,7 @@
     },
     "after3_group_nurse_companion": {
         "name": "School Nurse and companion",
-        "text": "*A health-check sheet lies beside a box of athletic-club supplies. The nurse points to an empty line while the companion takes a missing item from the box.* \"Both need checking today, but we have to start with one. Whose task should we handle first?\"",
+        "text": "*A health-check sheet lies beside a box of athletic-club supplies. The nurse points to an empty line while the companion holds up one of the supplies running low.* \"Both need checking today, but we have to start with one. Whose task should we handle first?\"",
         "context": "After school in the nurse's office, the protagonist is helping the school nurse organize athletic health checks when the other character with the highest affinity arrives with an urgent supply problem. There is only time to begin with one task, so the nurse asks whose work the protagonist will handle first.",
         "personality": "The nurse may ease tension with a light joke, but she never uses care or treatment as an excuse for affection. The companion reacts to the health check or supplies according to their own personality and current condition. Do not inflate routine work into an accident or a secret meeting.",
         "buttonText": "Speak",
@@ -899,13 +899,13 @@
     },
     "haeun_freetalk": {
         "name": "Haeun",
-        "text": "*Haeun does not turn away. She looks directly at the protagonist.* \"...I'm waiting for an answer. What are you going to do now?\"",
+        "text": "*Haeun does not turn away. She looks you straight in the eye.* \"...I'm waiting for an answer. What are you going to do now?\"",
         "context": "Haeun has just said that she saw Seoyeon crying alone and asked the protagonist not to leave her by herself today, even if he does not try to persuade her. They are still together in the hallway, and Haeun is waiting to hear what he plans to do.",
         "personality": "Haeun remains polite but will not brush aside the fact that Seoyeon was hurt. She wants to hear what the protagonist will do now rather than an excuse. She may question or challenge his answer, but she does not decide Seoyeon's feelings for her or force the protagonist to perform an action. Do not turn the exchange romantic or sexual. Her affinity represents only personal trust and regard and affects no ending."
     },
     "haeun_affinity_high_1": {
         "name": "Haeun",
-        "text": "*Haeun studies {name}'s face for a moment, then straightens the student council bracelet that had turned against the inside of her wrist.* ...I'll believe you."
+        "text": "*Haeun studies {name}'s face for a moment, then straightens the student council bracelet that had twisted around to the inside of her wrist.* ...I'll believe you."
     },
     "haeun_affinity_high_2": {
         "name": "Haeun",
@@ -925,7 +925,7 @@
     },
     "haeun_affinity_low_2": {
         "name": "Haeun",
-        "text": "I'll tell the faculty adviser, too. Even if you go to Seoyeon, don't say anything that hurts her more."
+        "text": "I'll tell the faculty adviser, too. If you do go see Seoyeon, don't say anything that hurts her even more."
     },
     "haeun_warn_7_d": {
         "name": "Haeun",

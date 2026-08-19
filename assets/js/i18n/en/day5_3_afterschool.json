@@ -1,7 +1,7 @@
 {
     "after5_farewell_seo_low": {"name":"Seoyeon","text":"*You run into Seoyeon in the hallway. She pauses, then gives you a single nod.* I know what you decided. I have nothing else to say."},
     "after5_farewell_yuna_low": {"name":"Yuna","text":"*Your eyes meet outside the library. Yuna holds her book close and gives you a small nod.* Bye."},
-    "after5_farewell_dain_low": {"name":"Dain","text":"*Dain walks up outside the gym and stops two paces away.* I know what you decided. I'm going in."},
+    "after5_farewell_dain_low": {"name":"Dain","text":"*Dain walks up outside the gym and stops two paces away.* I know what you decided. I'll head inside."},
     "after5_start": {},
     "after5_waited_start_branch": {
         "name": "System",
@@ -87,7 +87,7 @@
     },
     "after5_farewell_dain_4_c": {
         "name": "Dain",
-        "text": "Treat her right. If you don't, I'm taking you back."
+        "text": "Treat her right. If you don't, I'm winning you back."
     },
     "after5_farewell_dain_4_d": {
         "name": "Dain",
@@ -128,7 +128,7 @@
     },
     "after5_last_chance_1": {
         "name": "{name}",
-        "text": "*The event speakers power down. Beneath the fork-in-the-road sign, the toes of my shoes remain unable to choose a direction.*"
+        "text": "*The event speakers power down. Beneath the sign at the fork in the road, I stop, unable to choose a direction.*"
     },
     "after5_last_chance_2": {
         "name": "{name}",
@@ -187,7 +187,7 @@
     },
     "after5_last_chance_2_l": {
         "name": "Dain",
-        "text": "*She takes one step past me, then pins the floor with the volleyball and stops.*"
+        "text": "*She takes one step past me, then presses the volleyball to the floor and stops.*"
     },
     "after5_last_chance_2_m": {
         "name": "Dain",
@@ -252,7 +252,7 @@
     },
     "after5_last_chance_yuna_7": {
         "name": "Yuna",
-        "text": "*She waits, holding the book. The reply window still has no first letter.*"
+        "text": "*She waits, holding the book. The reply box is still empty.*"
     },
     "after5_last_chance_yuna_low_1": {
         "name": "{name}",
@@ -360,7 +360,7 @@
     },
     "after5_confess_no_2b": {
         "name": "{name}",
-        "text": "*I went back home.*"
+        "text": "*In the end, I turn around and head home.*"
     },
     "after5_set_harem": {
         "name": "{name}",
@@ -368,7 +368,7 @@
     },
     "after5_harem_commit": {
         "name": "{name}",
-        "text": "*After switching among all three chats, I lower the phone. “I couldn't choose one person.” All three gazes move from the screen to {name}.*"
+        "text": "*After switching among all three chats, I lower the phone. “I couldn't choose one person.” Their eyes lift from their screens to {name}.*"
     },
     "after5_harem_walk_1": {
         "name": "{name}",
@@ -399,11 +399,11 @@
     },
     "after5_co_seo_1": {
         "name": "Seoyeon",
-        "text": "*She pushes her glasses up, then down.* I already handed out the schedule."
+        "text": "*She starts to adjust her glasses, then lowers her hand.* I already handed out the schedule."
     },
     "after5_co_seo_2": {
         "name": "Seoyeon",
-        "text": "There is no room left to talk today. Go."
+        "text": "I have nothing more to say today. Go."
     },
     "after5_co_yuna_1": {
         "name": "Yuna",
@@ -419,11 +419,11 @@
     },
     "after5_co_dain_2": {
         "name": "Dain",
-        "text": "See you. Laughing right now is a bit much."
+        "text": "Take care. I don't feel like smiling right now."
     },
     "after5_co_teacher_1": {
         "name": "Homeroom Teacher",
-        "text": "*She closes the attendance book.* Another teacher has the event."
+        "text": "*She closes the attendance book.* Another teacher is handling today's event."
     },
     "after5_co_teacher_2": {
         "name": "Homeroom Teacher",
@@ -431,19 +431,19 @@
     },
     "after5_co_nurse_1": {
         "name": "School Nurse",
-        "text": "*She puts the chart in a drawer.* That is all for counseling."
+        "text": "*She puts the chart in a drawer.* This is where our counseling ends."
     },
     "after5_co_nurse_2": {
         "name": "School Nurse",
-        "text": "If you are hurt, go to someone else. Not me today."
+        "text": "If you're hurt, see another teacher today. I can't help you."
     },
     "after5_co_tempter_seo_1": {
         "name": "Seoyeon",
-        "text": "*She pockets the rooftop keychain.* I went first yesterday."
+        "text": "*She pockets the rooftop keychain.* I was the one who approached you first yesterday."
     },
     "after5_co_tempter_seo_2": {
         "name": "Seoyeon",
-        "text": "I still will not hold you here today."
+        "text": "Even so, I won't ask you to stay today."
     },
     "after5_co_tempter_yuna_1": {
         "name": "Yuna",
@@ -451,7 +451,7 @@
     },
     "after5_co_tempter_yuna_2": {
         "name": "Yuna",
-        "text": "Do not come with me now. That is enough."
+        "text": "Don't go after them now. That's all I need."
     },
     "after5_co_tempter_dain_1": {
         "name": "Dain",
@@ -459,7 +459,7 @@
     },
     "after5_co_tempter_dain_2": {
         "name": "Dain",
-        "text": "I will not call first today."
+        "text": "I won't be the one to call you over first today."
     },
     "after5_normal_start": {
         "name": "{name}",

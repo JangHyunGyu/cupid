@@ -1,7 +1,7 @@
 {
     "name": "Cupid — Free Browser Visual Novel",
     "short_name": "Cupid",
-    "description": "Play a free school-romance visual novel right in your browser, with no download or signup required.",
+    "description": "Play a free school romance visual novel right in your browser, with no download or signup required.",
     "start_url": "/index-en.html",
     "display": "standalone",
     "background_color": "#1a1a2e",

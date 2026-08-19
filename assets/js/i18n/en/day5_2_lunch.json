@@ -49,7 +49,7 @@
     },
     "tour_seo_10": {
         "name": "{name}",
-        "text": "The rooftop key—no, it isn't."
+        "text": "The rooftop key... no, it isn't."
     },
     "tour_seo_11": {
         "name": "Seoyeon",
@@ -177,7 +177,7 @@
     },
     "tour_dain_8": {
         "name": "{name}",
-        "text": "*Dain's brow furrows, but she can't suppress the corners of her mouth. One beat late, she sets the volleyball on the court.*"
+        "text": "*Dain's brow furrows, but she can't keep the corners of her mouth from lifting. One beat late, she sets the volleyball on the court.*"
     },
     "tour_dain_10": {
         "name": "Dain",
@@ -185,7 +185,7 @@
     },
     "tour_dain_11": {
         "name": "{name}",
-        "text": "*The ball rolls along the court line. Dain doesn't touch it until she speaks again.*"
+        "text": "*The ball rolls along the court line. I leave it alone until Dain speaks again.*"
     },
     "tour_dain_11_b": {
         "name": "Dain",
@@ -214,43 +214,43 @@
     "tour_co_branch": {},
     "tour_co_event_1": {
         "name": "{name}",
-        "text": "*The lunch bell rings, but the line is short. Lids open and close in the hallway.*"
+        "text": "*The lunch bell has rung, but the lines are short. All that remains in the hallway is the sound of lunchbox lids opening and closing.*"
     },
     "tour_co_event_2": {
         "name": "{name}",
-        "text": "*A staff vest hangs on a chair. No one asks who wore it.*"
+        "text": "*An event vest hangs over the back of a chair. No one asks whose it is.*"
     },
     "tour_co_seo_1": {
         "name": "{name}",
-        "text": "*The rooftop door is open. Seoyeon leans on the frame, not the rail.*"
+        "text": "*The rooftop door is open. Instead of heading for the railing, Seoyeon leans against the doorframe.*"
     },
     "tour_co_seo_2": {
         "name": "Seoyeon",
-        "text": "I turned the key in. This is as far as today goes."
+        "text": "I've returned the key. Let's leave it at that today."
     },
     "tour_co_seo_3": {
         "name": "{name}",
-        "text": "*The clipboard knocks the doorframe. She leaves it.*"
+        "text": "*As Seoyeon turns away, the corner of her clipboard strikes the doorframe. She keeps walking.*"
     },
     "tour_co_yuna_1": {
         "name": "{name}",
-        "text": "*The annex sofa. Yuna winds a bag strap instead of opening a book.*"
+        "text": "*On the sofa in the annex, Yuna winds her bag strap around one finger without opening her book.*"
     },
     "tour_co_yuna_2": {
         "name": "Yuna",
-        "text": "I am not showing the ending. Not today."
+        "text": "I won't show you the ending today."
     },
     "tour_co_yuna_3": {
         "name": "{name}",
-        "text": "*Light from the window reaches the empty seat. Yuna does not sit there.*"
+        "text": "*Light slips through the window and spreads to the empty seat. Yuna stays where she is.*"
     },
     "tour_co_dain_1": {
         "name": "{name}",
-        "text": "*The gym lights are on. The ball stays in the bin.*"
+        "text": "*The gym lights are on, but all the balls are still in the rack.*"
     },
     "tour_co_dain_2": {
         "name": "Dain",
-        "text": "Rock-paper-scissors can wait. I am just standing today."
+        "text": "Let's save rock-paper-scissors for tomorrow. Today, I'll just stand here."
     },
     "tour_co_dain_3": {
         "name": "{name}",
@@ -258,7 +258,7 @@
     },
     "tour_seo_event_1": {
         "name": "Haeun",
-        "text": "President, the broadcast rehearsal overlaps with the booth safety check. Should I take the broadcast room?"
+        "text": "President, the broadcast club's rehearsal overlaps with the booth safety check. Should I cover the broadcast room?"
     },
     "tour_seo_event_2": {
         "name": "{name}",
@@ -266,7 +266,7 @@
     },
     "tour_seo_event_3": {
         "name": "Seoyeon",
-        "text": "Take the broadcast room. Just send me the result when you finish."
+        "text": "Handle the broadcast room. Just tell me how it went when you're done."
     },
     "tour_seo_event_4": {
         "name": "Haeun",
@@ -274,7 +274,7 @@
     },
     "tour_seo_event_5": {
         "name": "Seoyeon",
-        "text": "*Haeun runs off. Seoyeon does not look back once.* Right. One thing can pass through someone else's hands without the festival collapsing."
+        "text": "*Haeun runs off. Seoyeon does not look back once.* Right. The festival won't fall apart just because one thing doesn't pass through my hands."
     },
     "tour_yuna_event_1": {
         "name": "{name}",
@@ -282,7 +282,7 @@
     },
     "tour_yuna_event_2": {
         "name": "{name}",
-        "text": "*Yuna touches one corner of the page. The hand that meant to tear it down stops beneath the title.*"
+        "text": "*Yuna touches one corner of the page. Her hand, poised to pull it down, stops beneath the title.*"
     },
     "tour_yuna_event_3": {
         "name": "Yuna",
@@ -298,11 +298,11 @@
     },
     "tour_dain_event_1": {
         "name": "{name}",
-        "text": "*The coach calls. Dain listens all the way through the question of whether she can play in the sports-day exhibition match.*"
+        "text": "*The coach calls. Dain listens without interrupting as he asks whether she can play in the sports-day exhibition match.*"
     },
     "tour_dain_event_2": {
         "name": "Dain",
-        "text": "I won't play. I told Mom today too. But if the commentary booth is empty, I'll take it."
+        "text": "I'll sit this one out. I told Mom today too. But if the commentary booth is open, I can handle it."
     },
     "tour_dain_event_3": {
         "name": "{name}",
@@ -310,10 +310,10 @@
     },
     "tour_dain_event_4": {
         "name": "Dain",
-        "text": "Here comes the serve! That one was inside the line! Complaints accepted after the match!"
+        "text": "Here comes the serve! That one was inside the line! I'll take complaints after the match!"
     },
     "tour_dain_event_5": {
         "name": "Dain",
-        "text": "*She switches off the microphone and catches her breath as we head down to the gym.* Turns out I still have things to say when I am not playing. A lot of them."
+        "text": "*She switches off the microphone and catches her breath as we head down to the gym.* Turns out I still have plenty to say when I'm not the one playing. More than I thought."
     }
 }

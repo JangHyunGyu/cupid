@@ -603,10 +603,10 @@
     },
     "hidden_nurse_d4_name_trap": {
         "name": "School Nurse",
-        "text": "I wish serious injuries were the only thing that counted. More students keep quiet and tough it out."
+        "text": "I wish serious injuries were the only problems I had to deal with. More students keep quiet and tough it out."
     },
     "hidden_nurse_d4_trap": {
         "name": "School Nurse",
-        "text": "Probably. But speed isn't why I asked someone to stay and help."
+        "text": "Probably. But speed isn't why I asked you to do it with me."
     }
 }
