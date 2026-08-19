@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "https://openrouter-api.yama5993.workers.dev/";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.172";
+const ASSET_VERSION = "2.9.173";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -348,10 +348,10 @@ function getAssetUrl(url) {
 // harem/chatbot의 user_id와 동일한 역할.
 function getCupidDeviceId() {
     try {
-        let id = localStorage.getItem('cupid_device_id');
+        let id = window.CupidStorage.getItem('cupid_device_id');
         if (!id) {
             id = 'cupid_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2, 10);
-            localStorage.setItem('cupid_device_id', id);
+            window.CupidStorage.setItem('cupid_device_id', id);
         }
         return id;
     } catch (_) {
@@ -531,7 +531,10 @@ async function migrateCupidChatHistoryToD1() {
                 recoveryOccurrence
             });
             entry.logSource = 'local-recovery';
-            await postCupidChatLogEntry(entry);
+            await persistCupidChatLogEntries([entry], {
+                source: 'cupid-migration',
+                errorType: 'migration_chat_log_post_failed'
+            });
             totalSaved++;
         } catch (e) {
             console.warn('[Migrate] post 실패:', e.message);
@@ -620,7 +623,7 @@ async function migrateCupidChatHistoryToD1() {
     }
 
     let parsedSave = null;
-    const saveRaw = localStorage.getItem('cupid_save');
+    const saveRaw = window.CupidStorage.getItem('cupid_save');
     if (saveRaw) {
         try {
             parsedSave = JSON.parse(saveRaw);
@@ -724,7 +727,7 @@ async function migrateCupidChatHistoryToD1() {
         });
     }
 
-    if (localStorage.getItem(FLAG)) {
+    if (window.CupidStorage.getItem(FLAG)) {
         if (totalSaved > 0) console.info(`[Migrate] cupid 그룹 대화 ${totalSaved}건 D1 복구 확인 완료`);
         return;
     }
@@ -739,7 +742,7 @@ async function migrateCupidChatHistoryToD1() {
         }
 
         // 2. Gallery cupid_freetalk_memory
-        const gftRaw = localStorage.getItem('cupid_freetalk_memory');
+        const gftRaw = window.CupidStorage.getItem('cupid_freetalk_memory');
         if (gftRaw) {
             const gft = JSON.parse(gftRaw);
             for (const charId of Object.keys(gft)) {
@@ -747,7 +750,7 @@ async function migrateCupidChatHistoryToD1() {
             }
         }
 
-        localStorage.setItem(FLAG, new Date().toISOString());
+        window.CupidStorage.setItem(FLAG, new Date().toISOString());
         if (totalSaved > 0) {
             console.info(`[Migrate] cupid 기존 대화 ${totalSaved}건 D1 마이그레이션 완료`);
         }
@@ -769,18 +772,18 @@ let cupidRenderAckFlushPromise = null;
 
 function readCupidChatLogQueue() {
     try {
-        const parsed = JSON.parse(localStorage.getItem(CUPID_CHAT_LOG_QUEUE_KEY) || '[]');
+        const parsed = JSON.parse(window.CupidStorage.getItem(CUPID_CHAT_LOG_QUEUE_KEY) || '[]');
         return Array.isArray(parsed) ? parsed.filter(entry => entry && entry.clientMsgId) : [];
     } catch (_) {
-        try { localStorage.removeItem(CUPID_CHAT_LOG_QUEUE_KEY); } catch (_) {}
+        try { window.CupidStorage.removeItem(CUPID_CHAT_LOG_QUEUE_KEY); } catch (_) {}
         return [];
     }
 }
 
 function writeCupidChatLogQueue(queue) {
     try {
-        if (!queue.length) localStorage.removeItem(CUPID_CHAT_LOG_QUEUE_KEY);
-        else localStorage.setItem(CUPID_CHAT_LOG_QUEUE_KEY, JSON.stringify(queue.slice(-CUPID_CHAT_LOG_QUEUE_LIMIT)));
+        if (!queue.length) window.CupidStorage.removeItem(CUPID_CHAT_LOG_QUEUE_KEY);
+        else window.CupidStorage.setItem(CUPID_CHAT_LOG_QUEUE_KEY, JSON.stringify(queue.slice(-CUPID_CHAT_LOG_QUEUE_LIMIT)));
         return true;
     } catch (_) {
         return false;
@@ -995,18 +998,18 @@ function getCupidRenderAckQueueId(payload = {}) {
 
 function readCupidRenderAckQueue() {
     try {
-        const parsed = JSON.parse(localStorage.getItem(CUPID_RENDER_ACK_QUEUE_KEY) || '[]');
+        const parsed = JSON.parse(window.CupidStorage.getItem(CUPID_RENDER_ACK_QUEUE_KEY) || '[]');
         return Array.isArray(parsed) ? parsed.filter(entry => entry && entry.clientMsgId) : [];
     } catch (_) {
-        try { localStorage.removeItem(CUPID_RENDER_ACK_QUEUE_KEY); } catch (_) {}
+        try { window.CupidStorage.removeItem(CUPID_RENDER_ACK_QUEUE_KEY); } catch (_) {}
         return [];
     }
 }
 
 function writeCupidRenderAckQueue(queue) {
     try {
-        if (!queue.length) localStorage.removeItem(CUPID_RENDER_ACK_QUEUE_KEY);
-        else localStorage.setItem(CUPID_RENDER_ACK_QUEUE_KEY, JSON.stringify(queue.slice(-CUPID_RENDER_ACK_QUEUE_LIMIT)));
+        if (!queue.length) window.CupidStorage.removeItem(CUPID_RENDER_ACK_QUEUE_KEY);
+        else window.CupidStorage.setItem(CUPID_RENDER_ACK_QUEUE_KEY, JSON.stringify(queue.slice(-CUPID_RENDER_ACK_QUEUE_LIMIT)));
         return true;
     } catch (_) {
         return false;

@@ -57,7 +57,7 @@ class SaveManager {
 
         // JSON 문자열로 변환해서 저장
         try {
-            localStorage.setItem(this.storageKey, JSON.stringify(saveData));
+            window.CupidStorage.setItem(this.storageKey, JSON.stringify(saveData));
             console.log('[SaveManager] 저장 완료:', sceneId);
         } catch (e) {
             console.error('[SaveManager] 저장 실패:', e);
@@ -74,7 +74,7 @@ class SaveManager {
      * @returns {Object|null} 저장된 데이터, 없으면 null
      */
     load() {
-        const saved = localStorage.getItem(this.storageKey);
+        const saved = window.CupidStorage.getItem(this.storageKey);
 
         // 저장된 데이터가 없으면 null 반환
         if (!saved) return null;
@@ -154,7 +154,7 @@ class SaveManager {
 
         gameState.affinityRebalanceVersion = SaveManager.AFFINITY_REBALANCE_VERSION;
         try {
-            localStorage.setItem(this.storageKey, JSON.stringify(saveData));
+            window.CupidStorage.setItem(this.storageKey, JSON.stringify(saveData));
         } catch (e) {
             console.warn('[SaveManager] 호감도 재조정 저장 실패:', e);
         }
@@ -167,7 +167,7 @@ class SaveManager {
      */
     hasSave() {
         try {
-            return localStorage.getItem(this.storageKey) !== null;
+            return window.CupidStorage.getItem(this.storageKey) !== null;
         } catch (e) {
             return false;
         }
@@ -178,7 +178,7 @@ class SaveManager {
      */
     clear() {
         try {
-            localStorage.removeItem(this.storageKey);
+            window.CupidStorage.removeItem(this.storageKey);
             console.log('[SaveManager] 저장 데이터 삭제됨');
         } catch (e) {
             console.error('[SaveManager] 삭제 실패:', e);

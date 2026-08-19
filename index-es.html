@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <script src="assets/js/error-reporter.js?v=20260817-script-retry"></script>
+    <script src="assets/js/storage-adapter.js?v=20260819-storage-fallback-v1"></script>
     <!-- Explicit localized entry point (must be first script) -->
     <script>
     (function () {
         try {
             if (/bot|crawl|spider|slurp|facebookexternalhit|mediapartners/i.test(navigator.userAgent)) return;
-            localStorage.setItem('cupid:language', 'es');
+            window.CupidStorage.setItem('cupid:language', 'es');
         } catch (e) { }
     })();
     </script>
@@ -34,7 +35,7 @@
         };
     </script>
     <script src="assets/js/browser-check.js?v=2.9.8" defer></script>
-    <script src="assets/js/modal-accessibility.js?v=2.9.172" defer></script>
+    <script src="assets/js/modal-accessibility.js?v=2.9.173" defer></script>
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -937,25 +938,25 @@
                 <span class="lang-flag">🇪🇸</span> Espa&#241;ol
             </div>
             <div class="lang-combo-dropdown">
-                <a href="index.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','ko')">
+                <a href="index.html" class="lang-combo-option" onclick="window.CupidStorage.setItem('cupid:language','ko')">
                     <span class="lang-flag">🇰🇷</span> 한국어
                 </a>
-                <a href="index-en" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','en')">
+                <a href="index-en" class="lang-combo-option" onclick="window.CupidStorage.setItem('cupid:language','en')">
                     <span class="lang-flag">🇺🇸</span> English
                 </a>
-                <a href="index-ja" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','ja')">
+                <a href="index-ja" class="lang-combo-option" onclick="window.CupidStorage.setItem('cupid:language','ja')">
                     <span class="lang-flag">🇯🇵</span> 日本語
                 </a>
                 <div class="lang-combo-option active">
                     <span class="lang-flag">🇪🇸</span> Espa&#241;ol
                 </div>
-                <a href="index-fr" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','fr')">
+                <a href="index-fr" class="lang-combo-option" onclick="window.CupidStorage.setItem('cupid:language','fr')">
                     <span class="lang-flag">🇫🇷</span> Français
                 </a>
-                <a href="index-de" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','de')">
+                <a href="index-de" class="lang-combo-option" onclick="window.CupidStorage.setItem('cupid:language','de')">
                     <span class="lang-flag">🇩🇪</span> Deutsch
                 </a>
-                <a href="index-pt" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','pt')">
+                <a href="index-pt" class="lang-combo-option" onclick="window.CupidStorage.setItem('cupid:language','pt')">
                     <span class="lang-flag">🇧🇷</span> Português
                 </a>
             </div>
@@ -999,7 +1000,7 @@
                 <a href="/seo/juego-citas-online" style="color: #ffb6c1; margin: 0 6px;">Juego de citas online</a>
             </nav>
             <p style="color: #ffb6c1;">Asesores: Yujin Kim, Sanghun Lee</p>
-            <p style="opacity: 0.7;">© 2026 ArcherLab. Todos los derechos reservados. (v2.9.172)</p>
+            <p style="opacity: 0.7;">© 2026 ArcherLab. Todos los derechos reservados. (v2.9.173)</p>
         </div>
     </div>
 
@@ -1249,7 +1250,7 @@
     <script>window.preventAutoStart = true;</script>
 
     <!-- Game Scripts (Dynamic Loader) -->
-<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.172"></script>
+<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.173"></script>
 
     <script>
         // Initialize SoundManager + Enable Buttons (게임 스크립트 로드 완료 후)
@@ -1377,12 +1378,12 @@
         function openSettingsModal() {
             document.getElementById('settingsModal').classList.add('is-open');
 
-            const savedSetting = localStorage.getItem('showAffinity');
+            const savedSetting = window.CupidStorage.getItem('showAffinity');
             const showAffinity = savedSetting === null ? true : savedSetting === 'true';
             document.getElementById('affinityToggle').checked = showAffinity;
 
-            const bgmVol = localStorage.getItem('bgmVolume') !== null ? parseFloat(localStorage.getItem('bgmVolume')) : 0.5;
-            const sfxVol = localStorage.getItem('sfxVolume') !== null ? parseFloat(localStorage.getItem('sfxVolume')) : 0.5;
+            const bgmVol = window.CupidStorage.getItem('bgmVolume') !== null ? parseFloat(window.CupidStorage.getItem('bgmVolume')) : 0.5;
+            const sfxVol = window.CupidStorage.getItem('sfxVolume') !== null ? parseFloat(window.CupidStorage.getItem('sfxVolume')) : 0.5;
 
             document.getElementById('bgmVolume').value = bgmVol * 100;
             document.getElementById('sfxVolume').value = sfxVol * 100;
@@ -1409,7 +1410,7 @@
 
         function saveSettings() {
             const showAffinity = document.getElementById('affinityToggle').checked;
-            localStorage.setItem('showAffinity', showAffinity);
+            window.CupidStorage.setItem('showAffinity', showAffinity);
 
             const bgmVol = document.getElementById('bgmVolume').value / 100;
             const sfxVol = document.getElementById('sfxVolume').value / 100;

@@ -547,7 +547,7 @@ class UIManager {
         this.galleryManager.markCharacterMet(charKey || name);
 
         // 호감도 게이지 표시 여부 확인 (설정에서 끌 수 있음)
-        const showAffinity = localStorage.getItem('showAffinity') !== 'false';
+        const showAffinity = window.CupidStorage.getItem('showAffinity') !== 'false';
 
         // 캐릭터가 호감도 대상이고 설정이 켜져있으면 게이지 표시
         if (showAffinity && charKey && this.stateManager.stats[charKey]) {
@@ -899,12 +899,12 @@ class UIManager {
 
         // 호감도 표시 설정 불러오기
         try {
-            const savedSetting = localStorage.getItem('showAffinity');
+            const savedSetting = window.CupidStorage.getItem('showAffinity');
             document.getElementById('affinityToggle').checked = savedSetting === null ? true : savedSetting === 'true';
 
             // 볼륨 설정 불러오기
-            const bgmVol = localStorage.getItem('bgmVolume') !== null ? parseFloat(localStorage.getItem('bgmVolume')) : 0.5;
-            const sfxVol = localStorage.getItem('sfxVolume') !== null ? parseFloat(localStorage.getItem('sfxVolume')) : 0.5;
+            const bgmVol = window.CupidStorage.getItem('bgmVolume') !== null ? parseFloat(window.CupidStorage.getItem('bgmVolume')) : 0.5;
+            const sfxVol = window.CupidStorage.getItem('sfxVolume') !== null ? parseFloat(window.CupidStorage.getItem('sfxVolume')) : 0.5;
 
             document.getElementById('bgmVolume').value = bgmVol * 100;
             document.getElementById('sfxVolume').value = sfxVol * 100;
@@ -936,7 +936,7 @@ class UIManager {
         // 호감도 표시 설정 저장
         const showAffinity = document.getElementById('affinityToggle').checked;
         try {
-            localStorage.setItem('showAffinity', showAffinity);
+            window.CupidStorage.setItem('showAffinity', showAffinity);
         } catch (e) {
             // 프라이빗 브라우징 등에서 localStorage 사용 불가 시 무시
         }
@@ -950,8 +950,8 @@ class UIManager {
 
         // 볼륨 설정도 localStorage에 저장 (새로고침 후에도 유지)
         try {
-            localStorage.setItem('bgmVolume', bgmVol);
-            localStorage.setItem('sfxVolume', sfxVol);
+            window.CupidStorage.setItem('bgmVolume', bgmVol);
+            window.CupidStorage.setItem('sfxVolume', sfxVol);
         } catch (e) {
             // 프라이빗 브라우징 등에서 localStorage 사용 불가 시 무시
         }

@@ -3,6 +3,7 @@
 
 <head>
     <script src="assets/js/error-reporter.js?v=20260817-script-retry"></script>
+    <script src="assets/js/storage-adapter.js?v=20260819-storage-fallback-v1"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -43,25 +44,25 @@
                     <span class="lang-flag">🇺🇸</span> English
                 </div>
                 <div class="lang-combo-dropdown">
-                    <a href="gallery.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','ko')">
+                    <a href="gallery.html" class="lang-combo-option" onclick="window.CupidStorage.setItem('cupid:language','ko')">
                         <span class="lang-flag">🇰🇷</span> 한국어
                     </a>
                     <div class="lang-combo-option active">
                         <span class="lang-flag">🇺🇸</span> English
                     </div>
-                    <a href="gallery-es.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','es')">
+                    <a href="gallery-es.html" class="lang-combo-option" onclick="window.CupidStorage.setItem('cupid:language','es')">
                         <span class="lang-flag">🇪🇸</span> Español
                     </a>
-                    <a href="gallery-ja.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','ja')">
+                    <a href="gallery-ja.html" class="lang-combo-option" onclick="window.CupidStorage.setItem('cupid:language','ja')">
                         <span class="lang-flag">🇯🇵</span> 日本語
                     </a>
-                    <a href="gallery-fr.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','fr')">
+                    <a href="gallery-fr.html" class="lang-combo-option" onclick="window.CupidStorage.setItem('cupid:language','fr')">
                         <span class="lang-flag">🇫🇷</span> Français
                     </a>
-                    <a href="gallery-de.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','de')">
+                    <a href="gallery-de.html" class="lang-combo-option" onclick="window.CupidStorage.setItem('cupid:language','de')">
                         <span class="lang-flag">🇩🇪</span> Deutsch
                     </a>
-                    <a href="gallery-pt.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','pt')">
+                    <a href="gallery-pt.html" class="lang-combo-option" onclick="window.CupidStorage.setItem('cupid:language','pt')">
                         <span class="lang-flag">🇧🇷</span> Português
                     </a>
                 </div>
@@ -144,7 +145,7 @@
     </footer>
 
     <!-- Gallery Scripts (Dynamic Loader) -->
-<script data-cupid-entry-script="true" src="assets/js/loaders/gallery-loader.js?v=2.9.172"></script>
+<script data-cupid-entry-script="true" src="assets/js/loaders/gallery-loader.js?v=2.9.173"></script>
     <script>
         function toggleLangCombo() {
             document.getElementById('langCombo').classList.toggle('open');

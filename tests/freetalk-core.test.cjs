@@ -1485,12 +1485,12 @@ test('existing local group turns are recovered even when the legacy migration fl
         })]
     ]);
     const posted = [];
+    const migrationStorage = {
+        getItem: key => stored.get(key) || null,
+        setItem: (key, value) => stored.set(key, String(value))
+    };
     const migrationSandbox = {
-        window: {},
-        localStorage: {
-            getItem: key => stored.get(key) || null,
-            setItem: (key, value) => stored.set(key, String(value))
-        },
+        window: { CupidStorage: migrationStorage },
         getCupidDeviceId: () => 'cupid-existing-user',
         getCupidLanguage: () => 'ko',
         getCupidAppId: () => 'cupid',
@@ -1498,7 +1498,7 @@ test('existing local group turns are recovered even when the legacy migration fl
         resolveCupidConversationDay: (value, sessionId) => sessionId.startsWith('morning5_') ? 5 : Number(value) || null,
         hashCupidLogText: value => `hash-${String(value).length}:1`,
         makeCupidChatLogEntry: value => ({ ...value }),
-        postCupidChatLogEntry: async entry => { posted.push(entry); },
+        persistCupidChatLogEntries: async entries => { posted.push(...entries); return entries; },
         uploadImageToR2: async () => '',
         reportCupidCaughtError: () => {},
         CHAR_NAME_MAP: {},
@@ -1570,7 +1570,8 @@ test('gallery relationship aftermath persists through its local save store', () 
     };
     const galleryWindow = {
         location: { search: '' },
-        CupidFreeTalkCore: core
+        CupidFreeTalkCore: core,
+        CupidStorage: localStorage
     };
     vm.runInNewContext(read('assets/js/gallery-progress.js'), {
         window: galleryWindow,

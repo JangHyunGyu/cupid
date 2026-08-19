@@ -25,11 +25,11 @@ class SoundManager {
 
         // 볼륨 설정 로드 (시크릿 모드 등 localStorage 차단 환경 대응)
         try {
-            const savedSfx = localStorage.getItem('sfxVolume');
-            const savedBgm = localStorage.getItem('bgmVolume');
+            const savedSfx = window.CupidStorage.getItem('sfxVolume');
+            const savedBgm = window.CupidStorage.getItem('bgmVolume');
             this.sfxVolume = savedSfx !== null ? parseFloat(savedSfx) : 0.5;
             this.bgmVolume = savedBgm !== null ? parseFloat(savedBgm) : 0.5;
-            this.muted = localStorage.getItem('soundMuted') === 'true';
+            this.muted = window.CupidStorage.getItem('soundMuted') === 'true';
         } catch (e) {
             this.sfxVolume = 0.5;
             this.bgmVolume = 0.5;
@@ -592,7 +592,7 @@ class SoundManager {
      */
     setBgmVolume(volume) {
         this.bgmVolume = volume;
-        try { localStorage.setItem('bgmVolume', volume); } catch (e) {}
+        try { window.CupidStorage.setItem('bgmVolume', volume); } catch (e) {}
         if (this.bgmGain && this.audioContext) {
             const now = this.audioContext.currentTime;
             const targetVol = this.muted ? 0 : volume;
@@ -607,7 +607,7 @@ class SoundManager {
      */
     setSfxVolume(volume) {
         this.sfxVolume = volume;
-        try { localStorage.setItem('sfxVolume', volume); } catch (e) {}
+        try { window.CupidStorage.setItem('sfxVolume', volume); } catch (e) {}
     }
 
     /**
@@ -615,7 +615,7 @@ class SoundManager {
      */
     setMuted(muted) {
         this.muted = muted;
-        try { localStorage.setItem('soundMuted', muted); } catch (e) {}
+        try { window.CupidStorage.setItem('soundMuted', muted); } catch (e) {}
         if (this.bgmGain && this.audioContext) {
             const now = this.audioContext.currentTime;
             const targetVol = muted ? 0 : this.bgmVolume;

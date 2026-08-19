@@ -82,7 +82,7 @@ class GalleryProgress {
     load() {
         let saved = null;
         try {
-            saved = localStorage.getItem(this.storageKey);
+            saved = window.CupidStorage.getItem(this.storageKey);
         } catch (e) {
             // 시크릿 모드 등 localStorage 접근 차단 시
             console.warn('[GalleryProgress] localStorage 접근 불가, 기본값 사용');
@@ -231,7 +231,7 @@ class GalleryProgress {
      */
     save() {
         try {
-            localStorage.setItem(this.storageKey, JSON.stringify(this.data));
+            window.CupidStorage.setItem(this.storageKey, JSON.stringify(this.data));
         } catch (e) {
             window.reportCupidCaughtError?.(e, {
                 source: 'cupid-gallery-progress',
@@ -249,7 +249,7 @@ class GalleryProgress {
      */
     refresh() {
         let saved = null;
-        try { saved = localStorage.getItem(this.storageKey); } catch (e) {}
+        try { saved = window.CupidStorage.getItem(this.storageKey); } catch (e) {}
         if (saved) {
             try {
                 this.data = JSON.parse(saved);
@@ -632,7 +632,7 @@ class GalleryProgress {
 
         // 갤러리에 없으면 게임 세이브에서 가져오기
         try {
-            const save = JSON.parse(localStorage.getItem('cupid_save') || '{}');
+            const save = JSON.parse(window.CupidStorage.getItem('cupid_save') || '{}');
             if (save.gameState?.playerName) return save.gameState.playerName;
         } catch (e) { /* 무시 */ }
 

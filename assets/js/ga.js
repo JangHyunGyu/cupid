@@ -16,7 +16,7 @@ function getCupidGALanguage() {
 
 function readCupidGAMilestones() {
 	try {
-		return new Set(JSON.parse(localStorage.getItem(CUPID_GA_MILESTONE_KEY) || '[]'));
+		return new Set(JSON.parse(window.CupidStorage.getItem(CUPID_GA_MILESTONE_KEY) || '[]'));
 	} catch (_) {
 		return new Set();
 	}
@@ -27,7 +27,7 @@ function markCupidGAMilestone(name) {
 	if (milestones.has(name)) return false;
 	milestones.add(name);
 	try {
-		localStorage.setItem(CUPID_GA_MILESTONE_KEY, JSON.stringify(Array.from(milestones)));
+		window.CupidStorage.setItem(CUPID_GA_MILESTONE_KEY, JSON.stringify(Array.from(milestones)));
 	} catch (_) {}
 	return true;
 }
@@ -43,7 +43,7 @@ window.sendGAGameStart = function(mode) {
 	cupidGAGameEntrySent = true;
 	const normalizedMode = mode === 'continue' ? 'continue' : (mode || 'new');
 	if (normalizedMode !== 'continue') {
-		try { localStorage.removeItem(CUPID_GA_MILESTONE_KEY); } catch (_) {}
+		try { window.CupidStorage.removeItem(CUPID_GA_MILESTONE_KEY); } catch (_) {}
 	}
 	window.sendGAEvent(normalizedMode === 'continue' ? 'game_continue' : 'game_start', {
 		game_mode: normalizedMode

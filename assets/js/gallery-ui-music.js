@@ -176,7 +176,7 @@ class MusicRenderer {
                 source.loop = true;
 
                 const gain = ctx.createGain();
-                gain.gain.value = localStorage.getItem('bgmVolume') !== null ? parseFloat(localStorage.getItem('bgmVolume')) : 0.5;
+                gain.gain.value = window.CupidStorage.getItem('bgmVolume') !== null ? parseFloat(window.CupidStorage.getItem('bgmVolume')) : 0.5;
 
                 source.connect(gain);
                 gain.connect(ctx.destination);
@@ -192,7 +192,7 @@ class MusicRenderer {
 
         // Fallback: 기존 Audio 방식
         this.audio = new Audio(file);
-        this.audio.volume = localStorage.getItem('bgmVolume') !== null ? parseFloat(localStorage.getItem('bgmVolume')) : 0.5;
+        this.audio.volume = window.CupidStorage.getItem('bgmVolume') !== null ? parseFloat(window.CupidStorage.getItem('bgmVolume')) : 0.5;
         this.audio.loop = true;
         this.audio.play().catch(e => console.log('Audio play failed:', e));
     }

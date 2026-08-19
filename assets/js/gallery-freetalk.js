@@ -2484,7 +2484,7 @@ ${compactGalleryState}${this._buildOutingDynamicTail(charId, charName)}`;
     _loadPromptEpochState(charId) {
         if (!charId) return null;
         try {
-            const all = JSON.parse(localStorage.getItem(this.PROMPT_EPOCH_MEMORY_KEY) || '{}');
+            const all = JSON.parse(window.CupidStorage.getItem(this.PROMPT_EPOCH_MEMORY_KEY) || '{}');
             return all?.[charId] || null;
         } catch (_) {
             return null;
@@ -2494,10 +2494,10 @@ ${compactGalleryState}${this._buildOutingDynamicTail(charId, charName)}`;
     _savePromptEpochState(charId, state) {
         if (!charId) return;
         try {
-            const all = JSON.parse(localStorage.getItem(this.PROMPT_EPOCH_MEMORY_KEY) || '{}');
+            const all = JSON.parse(window.CupidStorage.getItem(this.PROMPT_EPOCH_MEMORY_KEY) || '{}');
             if (state?.version === 1) all[charId] = state;
             else delete all[charId];
-            localStorage.setItem(this.PROMPT_EPOCH_MEMORY_KEY, JSON.stringify(all));
+            window.CupidStorage.setItem(this.PROMPT_EPOCH_MEMORY_KEY, JSON.stringify(all));
         } catch (e) {
             window.reportCupidCaughtError?.(e, {
                 source: 'cupid-gallery-freetalk',
@@ -2509,7 +2509,7 @@ ${compactGalleryState}${this._buildOutingDynamicTail(charId, charName)}`;
 
     _loadMemory(charId) {
         try {
-            const saved = localStorage.getItem(this.MEMORY_KEY);
+            const saved = window.CupidStorage.getItem(this.MEMORY_KEY);
             if (saved) {
                 const all = JSON.parse(saved);
                 this.chatHistory = all[charId] || [];
@@ -2528,14 +2528,14 @@ ${compactGalleryState}${this._buildOutingDynamicTail(charId, charName)}`;
 
     _saveMemory(charId, history = this.chatHistory) {
         try {
-            const saved = localStorage.getItem(this.MEMORY_KEY);
+            const saved = window.CupidStorage.getItem(this.MEMORY_KEY);
             const all = saved ? JSON.parse(saved) : {};
 
             // system 메시지 제외, 최근 20개만 저장
             const chatOnly = (Array.isArray(history) ? history : []).filter(m => m.role !== 'system');
             all[charId] = chatOnly.slice(-20);
 
-            localStorage.setItem(this.MEMORY_KEY, JSON.stringify(all));
+            window.CupidStorage.setItem(this.MEMORY_KEY, JSON.stringify(all));
         } catch (e) {
             console.error('[GalleryFreeTalk] 메모리 저장 실패:', e);
             window.reportCupidCaughtError?.(e, {

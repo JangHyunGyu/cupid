@@ -69,7 +69,7 @@
  *
  *   2. "이어하기가 작동 안 함"
  *      → localStorage에 'cupid_save' 키가 있는지 확인
- *      → 콘솔: console.log(localStorage.getItem('cupid_save'))
+ *      → 콘솔: console.log(window.CupidStorage.getItem('cupid_save'))
  *
  *   3. "버튼 클릭이 안 됨"
  *      → bindEvents() 메서드에서 해당 버튼 확인
@@ -105,13 +105,13 @@ class GameEngine {
 
         /**
          * 저장 관리자 - localStorage 저장/불러오기
-         * 🔧 디버깅: localStorage.getItem('cupid_save')로 저장 데이터 확인
+         * 🔧 디버깅: window.CupidStorage.getItem('cupid_save')로 저장 데이터 확인
          */
         this.saveManager = new SaveManager('cupid_save');
 
         /**
          * 갤러리 관리자 - CG, 캐릭터 해금
-         * 🔧 디버깅: localStorage.getItem('cupid_gallery')로 해금 현황 확인
+         * 🔧 디버깅: window.CupidStorage.getItem('cupid_gallery')로 해금 현황 확인
          */
         this.galleryManager = new GalleryManager('cupid_gallery');
 
@@ -1201,13 +1201,13 @@ class GameEngine {
                 for (const [key, id] of Object.entries(charMap)) {
                     if (this.stateManager.getFlag(`isDating_${key}`)) {
                         try {
-                            const gallery = JSON.parse(localStorage.getItem('cupid_gallery') || '{}');
+                            const gallery = JSON.parse(window.CupidStorage.getItem('cupid_gallery') || '{}');
                             gallery.affinityRebalanceVersion = window.GalleryData?.AFFINITY_REBALANCE_VERSION || 1;
                             if (!gallery.characters) gallery.characters = {};
                             if (!gallery.characters[id]) gallery.characters[id] = {};
                             gallery.characters[id].perfectEndingCleared = true;
                             gallery.playerName = this.stateManager.playerName;
-                            localStorage.setItem('cupid_gallery', JSON.stringify(gallery));
+                            window.CupidStorage.setItem('cupid_gallery', JSON.stringify(gallery));
                             console.log(`[GameEngine] 갤러리 프리토킹 해금: ${key}`);
                         } catch (e) {
                             console.error('[GameEngine] 갤러리 프리토킹 해금 실패:', e);
@@ -1240,9 +1240,9 @@ class GameEngine {
                 const topAffinity = Math.max(...Object.keys(heroineMap).map(k => this.stateManager.getAffinity(k)));
                 const complianceScore = Math.max(0, Math.min(100, Math.round((topAffinity + 100) / 2)));
 
-                localStorage.setItem('cupid_cycle_01', 'complete');
-                localStorage.setItem('cupid_heroine', heroineId);
-                localStorage.setItem('cupid_subject_compliance', String(complianceScore));
+                window.CupidStorage.setItem('cupid_cycle_01', 'complete');
+                window.CupidStorage.setItem('cupid_heroine', heroineId);
+                window.CupidStorage.setItem('cupid_subject_compliance', String(complianceScore));
 
                 console.log(`[GameEngine] Nevergrad 크로스오버 데이터 저장 완료 — heroine: ${heroineId}, compliance: ${complianceScore}%`);
 

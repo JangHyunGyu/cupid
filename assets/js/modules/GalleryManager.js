@@ -70,7 +70,7 @@ class GalleryManager {
      *   }
      */
     getProgress() {
-        const saved = localStorage.getItem(this.storageKey);
+        const saved = window.CupidStorage.getItem(this.storageKey);
 
         // 저장된 데이터가 없으면 기본 구조 반환
         if (!saved) {
@@ -118,7 +118,7 @@ class GalleryManager {
      */
     saveProgress(progress) {
         try {
-            localStorage.setItem(this.storageKey, JSON.stringify(progress));
+            window.CupidStorage.setItem(this.storageKey, JSON.stringify(progress));
         } catch (e) {
             console.error('[GalleryManager] 갤러리 데이터 저장 실패:', e);
             window.reportCupidCaughtError?.(e, {

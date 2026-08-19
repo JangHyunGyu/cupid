@@ -9,6 +9,34 @@ const vm = require('node:vm');
 const root = path.resolve(__dirname, '..');
 const read = relativePath => fs.readFileSync(path.join(root, relativePath), 'utf8');
 
+test('storage adapter falls back when localStorage is missing or blocked', () => {
+    const createCupidStorageAdapter = require(path.join(root, 'assets/js/storage-adapter.js'));
+    const missing = createCupidStorageAdapter(() => null);
+    missing.setItem('language', 'en');
+    assert.equal(missing.getItem('language'), 'en');
+    assert.equal(missing.length, 1);
+    missing.removeItem('language');
+    assert.equal(missing.getItem('language'), null);
+
+    const blocked = createCupidStorageAdapter(() => {
+        throw new DOMException('Access is denied', 'SecurityError');
+    });
+    blocked.setItem('volume', 0.5);
+    assert.equal(blocked.getItem('volume'), '0.5');
+});
+
+test('app entry pages load the storage adapter before inline storage access', () => {
+    const pages = ['index', 'gallery'].flatMap(name => ['', '-en', '-es', '-ja', '-fr', '-de', '-pt'].map(suffix => `${name}${suffix}.html`));
+    for (const page of pages) {
+        const html = read(page);
+        assert.match(html, /assets\/js\/storage-adapter\.js\?v=20260819-storage-fallback-v1/);
+        assert.ok(
+            html.indexOf('assets/js/storage-adapter.js') < html.indexOf('window.CupidStorage.'),
+            `${page} must install the adapter before first use`
+        );
+    }
+});
+
 test('audio decode failures enter the bounded BGM recovery path', () => {
     const sandbox = {
         window: { addEventListener() {} },
@@ -79,6 +107,13 @@ test('blocked localStorage migration cannot leak an unhandled rejection', () => 
         source,
         /Promise\.resolve\(migrateCupidChatHistoryToD1\(\)\)\.catch\(\(\) => \{\}\)/
     );
+});
+
+test('legacy chat migration uses the durable queue before network access', () => {
+    const source = read('assets/js/modules/config.js');
+    const migrationPost = source.slice(source.indexOf('async function postOne'), source.indexOf('async function convertBase64ToR2'));
+    assert.match(migrationPost, /await persistCupidChatLogEntries\(\[entry\]/);
+    assert.doesNotMatch(migrationPost, /await postCupidChatLogEntry\(entry\)/);
 });
 
 test('same-origin script failures retry twice before reporting a persistent failure', async () => {
