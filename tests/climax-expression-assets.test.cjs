@@ -50,7 +50,9 @@ test('main and gallery free talk register climax with a strict actual-climax gua
         assert.match(prompts, new RegExp(`climax: 'assets/images/characters/${charId}_climax\\.png'`));
     }
     assert.match(prompts, /climax: 'assets\/images\/characters\/nurse_flushed\.png'/);
-    assert.equal((gallery.match(/'climax'/g) || []).length, characterIds.length);
+    for (const charId of characterIds) {
+        assert.match(gallery, new RegExp(`${charId}: \\[[^\\]]*'climax'`));
+    }
     assert.match(gallery, /charId === 'nurse' && resolvedExpression === 'climax'/);
     assert.match(core, /climax는 성인 간 성행위에서 이번 응답에 절정이 있을 때만/);
     assert.match(core, /Use climax only for an orgasm in this response during consensual adult sex/);
