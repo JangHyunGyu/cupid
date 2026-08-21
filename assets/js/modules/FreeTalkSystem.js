@@ -1178,6 +1178,7 @@ class FreeTalkSystem {
         let _lastTurnMeta = null;
         let _lastCacheKey = '';
         let _lastAiEndpoint = '';
+        let _streamingPreview = null;
 
         // ─────────────────────────────────────────────────────────────
         // 🌐 AI API 호출 (try-catch로 오류 처리)
@@ -1197,6 +1198,44 @@ class FreeTalkSystem {
             // - messages: 대화 기록 전체 (시스템 프롬프트 + 대화 내용)
             // [Explicit Caching] 캐시 키 — static 영역이 유저 중립(placeholder 유지)이라 전체 유저 공유 캐시 가능
             const _lang = window.GAME_LANG || document.documentElement.lang || 'ko';
+            let _streamingStarted = false;
+            _streamingPreview = CupidFreeTalkCore.createPacedStreamingPreview({
+                intervalMs: 40,
+                charactersPerTick: 2,
+                shouldFlush: () => this.dialogueSystem.skipTyping === true,
+                onRender: ({ text: previewText, segments: previewSegments }) => {
+                    if (!this._isRequestContextCurrent(requestContext)) return;
+                    if (!_streamingStarted) {
+                        _streamingStarted = true;
+                        this._clearThinkingMessage();
+                        this.uiManager.updateNameTag(scene.name);
+                        document.querySelectorAll('.char-slot img').forEach(img => img.classList.remove('thinking'));
+                        this.uiManager.dialogueBox.classList.remove('thinking-box');
+                        document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
+                        this.dialogueSystem.beginStreamingText(
+                            scene.name,
+                            () => this._isRequestContextCurrent(requestContext)
+                        );
+                    }
+                    this.dialogueSystem.renderStreamingText(
+                        previewText,
+                        scene.name,
+                        previewSegments,
+                        () => this._isRequestContextCurrent(requestContext)
+                    );
+                },
+                onReset: () => {
+                    if (this._isRequestContextCurrent(requestContext) && _streamingStarted) {
+                        this.dialogueSystem.resetStreamingText(scene.name);
+                    }
+                }
+            });
+            const updateStreamingPreview = rawContent => {
+                const preview = CupidFreeTalkCore.extractStreamingSegmentsPreview(rawContent);
+                const previewSegments = this._sanitizeSegmentsPlaceholders(preview.segments || null) || [];
+                const previewText = previewSegments.map(segment => segment.text).join('\n\n');
+                if (previewText) _streamingPreview.update(previewText, previewSegments);
+            };
             // 같은 회차에서 이 캐릭터와 나눈 본편 대화 전체를 순서대로 전달합니다.
             this._assertRequestContext(requestContext);
             const _completeHistory = this._sanitizeDainOutfitHistory(this._buildWindowedHistory(requestHistory, charKey), charKey);
@@ -1262,8 +1301,9 @@ class FreeTalkSystem {
                 : 'https://openrouter-api.yama5993.workers.dev/';
             _lastAiEndpoint = aiEndpoint;
             const fallbackEndpoint = ''; // AI text must not fall back to the legacy Gemini endpoint.
-            const requestCupidReplyData = async (messages) => {
-                const requestInit = {
+            const requestCupidReplyData = async (messages, { resetPreview = false } = {}) => {
+                if (resetPreview) _streamingPreview.reset();
+                const buildRequestInit = wantsStream => ({
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -1282,14 +1322,15 @@ class FreeTalkSystem {
                         responseSchema: "cupid-single-forced-sexual-violation",
                         outputLanguage: _lang,
                         cacheKey: _cacheKey,
+                        stream: wantsStream,
                         ...(_turnMeta || {})
                     })
-                };
-                const fetchWithTransientRetry = async (endpoint) => {
+                });
+                const fetchWithTransientRetry = async (endpoint, wantsStream) => {
                     let lastError = null;
                     for (let attempt = 0; attempt < 3; attempt += 1) {
                         try {
-                            const response = await fetch(endpoint, requestInit);
+                            const response = await fetch(endpoint, buildRequestInit(wantsStream));
                             if (!shouldRetryFreeTalkAiResponse(response)
                                 || navigator.onLine === false
                                 || attempt >= 2) {
@@ -1312,7 +1353,7 @@ class FreeTalkSystem {
                 let primaryError = null;
                 _lastAiEndpoint = aiEndpoint;
                 try {
-                    response = await fetchWithTransientRetry(aiEndpoint);
+                    response = await fetchWithTransientRetry(aiEndpoint, true);
                     this._assertRequestContext(requestContext);
                 } catch (error) {
                     this._assertRequestContext(requestContext);
@@ -1324,14 +1365,29 @@ class FreeTalkSystem {
                 ) && fallbackEndpoint && fallbackEndpoint !== aiEndpoint;
                 if (canFallback) {
                     _lastAiEndpoint = fallbackEndpoint;
-                    response = await fetchWithTransientRetry(fallbackEndpoint);
+                    response = await fetchWithTransientRetry(fallbackEndpoint, true);
                     this._assertRequestContext(requestContext);
                 } else if (primaryError) {
                     throw primaryError;
                 }
 
                 if (!response.ok) throw new Error(`HTTP ${response.status}`);
-                return await response.json();
+                try {
+                    return await CupidFreeTalkCore.readChatCompletionStream(response, {
+                        onDelta: ({ content }) => {
+                            this._assertRequestContext(requestContext);
+                            updateStreamingPreview(content);
+                        }
+                    });
+                } catch (streamError) {
+                    this._assertRequestContext(requestContext);
+                    console.warn('[Cupid FreeTalk] Streaming interrupted; retrying once without streaming', streamError?.reason || streamError?.message || streamError);
+                    _streamingPreview.reset();
+                    const recoveryResponse = await fetchWithTransientRetry(_lastAiEndpoint, false);
+                    this._assertRequestContext(requestContext);
+                    if (!recoveryResponse.ok) throw new Error(`HTTP ${recoveryResponse.status}`);
+                    return await recoveryResponse.json();
+                }
             };
 
             // JSON 파싱
@@ -1400,7 +1456,7 @@ class FreeTalkSystem {
                     ..._optimized.slice(1)
                 ];
                 repairMessages = this._forceLatestUserMessageLast(repairMessages, finalContent);
-                data = await requestCupidReplyData(repairMessages);
+                data = await requestCupidReplyData(repairMessages, { resetPreview: true });
                 this._assertRequestContext(requestContext, data);
                 const repairedContent = data?.choices?.[0]?.message?.content;
                 reply = typeof repairedContent === 'string' ? repairedContent.trim() : '';
@@ -1443,6 +1499,17 @@ class FreeTalkSystem {
                 throw qualityError;
             }
 
+            window.__cupidLastStreamFinish = {
+                provider: data?.provider || '',
+                providerRoute: data?.providerRoute || '',
+                model: data?.model || '',
+                usage: data?.usage || null,
+                cache: data?.cache || null,
+                turnId: data?.turnId || _turnMeta?.turnId || '',
+                at: new Date().toISOString()
+            };
+            console.info('[Cupid AI Stream Finish]', window.__cupidLastStreamFinish);
+
             if (!parsed?.text && !(Array.isArray(parsed?.segments) && parsed.segments.length > 0)) {
                 throw new Error('AI response did not contain visible roleplay text. Please try again.');
             }
@@ -1476,13 +1543,14 @@ class FreeTalkSystem {
                 this.uiManager.dialogueBox.classList.remove('thinking-box');
                 document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
 
-                // segments가 있으면 typeText에 전달 (별표 파싱 건너뛰고 구조화 렌더)
-                await this.dialogueSystem.typeText(
-                    reply,
-                    scene.name,
-                    parsedSegments,
-                    () => this._isRequestContextCurrent(requestContext)
-                );
+                const pacedReplyText = Array.isArray(parsedSegments) && parsedSegments.length > 0
+                    ? parsedSegments.map(segment => segment.text).join('\n\n')
+                    : reply;
+                _streamingPreview.update(pacedReplyText, parsedSegments);
+                await _streamingPreview.drain();
+                this.dialogueSystem.finishStreamingText(scene.name);
+                _streamingPreview.stop();
+                _streamingPreview = null;
                 const assistantRenderReceipt = this.dialogueSystem.getChatRenderReceipt(
                     reply,
                     scene.name,
@@ -1526,23 +1594,26 @@ class FreeTalkSystem {
                     console.warn('[Cupid FreeTalk] Could not persist the completed chat turn', saveError);
                 }
 
-                // D1 chat-logs 저장 (백업 뷰어용). 큐 반영까지 기다려 장면 전환 중 유실을 막는다.
+                // D1 chat-logs 저장 (백업 뷰어용). 화면 완료와 입력 재활성화를 막지 않는다.
                 if (typeof window.saveCupidChatLog === 'function') {
                     this._assertRequestContext(requestContext, data);
-                    await window.saveCupidChatLog({
-                        charId: charKey,
-                        userContent: finalContent,
-                        assistantContent: reply,
-                        sessionId: requestSceneId || '',
-                        context: '1:1',
-                        conversationDay: window.resolveCupidConversationDay?.(
-                            this.stateManager.currentDay,
-                            requestSceneId
-                        ) ?? this.stateManager.currentDay,
-                        affinityChange: affinityResult?.change,
-                        affinityCurrent: affinityResult?.value,
-                        assistantRenderReceipt,
-                        responseMetadata: data
+                    void Promise.resolve().then(() => window.saveCupidChatLog({
+                            charId: charKey,
+                            userContent: finalContent,
+                            assistantContent: reply,
+                            sessionId: requestSceneId || '',
+                            context: '1:1',
+                            conversationDay: window.resolveCupidConversationDay?.(
+                                this.stateManager.currentDay,
+                                requestSceneId
+                            ) ?? this.stateManager.currentDay,
+                            affinityChange: affinityResult?.change,
+                            affinityCurrent: affinityResult?.value,
+                            assistantRenderReceipt,
+                            responseMetadata: data
+                        }))
+                        .catch(logError => {
+                        console.warn('[Cupid FreeTalk] Could not persist chat log asynchronously', logError);
                     });
                 }
             }
@@ -1553,6 +1624,9 @@ class FreeTalkSystem {
                 this.endFreeTalk(requestOwner);
             }
         } catch (error) {
+            _streamingPreview?.stop();
+            _streamingPreview = null;
+            this.dialogueSystem.finishStreamingText(scene.name);
             const ownsCurrentContext = this._isRequestContextCurrent(requestContext);
             this._rollbackRequestHistory(requestContext);
             if (ownsCurrentContext) {
@@ -1621,6 +1695,8 @@ class FreeTalkSystem {
                 window.alert(requestErrorMessage);
             }
         } finally {
+            _streamingPreview?.stop();
+            this.dialogueSystem.finishStreamingText(scene.name);
             if (this._activeRequestOwner === requestOwner) {
                 this._activeRequestOwner = null;
                 this._activeRequestContext = null;
@@ -1760,7 +1836,7 @@ class FreeTalkSystem {
         };
     }
 
-    async _renderGroupConversations(conversations, requestContext, latestUserText, lang, scene = null) {
+    async _renderGroupConversations(conversations, requestContext, latestUserText, lang, scene = null, streamingPreview = null) {
         let positiveBudget = 3;
         const rendered = [];
         for (let index = 0; index < conversations.length; index += 1) {
@@ -1769,12 +1845,22 @@ class FreeTalkSystem {
             this._setGroupActiveSpeaker(conversation.speakerId);
             this.uiManager.updateNameTag(conversation.speakerName);
             this._applyGroupExpression(conversation.expression, conversation.speakerId);
-            await this.dialogueSystem.typeText(
-                conversation.text,
-                conversation.speakerName,
-                conversation.segments,
-                () => this._isRequestContextCurrent(requestContext)
-            );
+            if (index === 0 && streamingPreview) {
+                const pacedConversationText = Array.isArray(conversation.segments) && conversation.segments.length > 0
+                    ? conversation.segments.map(segment => segment.text).join('\n\n')
+                    : conversation.text;
+                streamingPreview.update(pacedConversationText, conversation.segments);
+                await streamingPreview.drain();
+                this.dialogueSystem.finishStreamingText(conversation.speakerName);
+                streamingPreview.stop();
+            } else {
+                await this.dialogueSystem.typeText(
+                    conversation.text,
+                    conversation.speakerName,
+                    conversation.segments,
+                    () => this._isRequestContextCurrent(requestContext)
+                );
+            }
             const renderReceipt = this.dialogueSystem.getChatRenderReceipt(
                 conversation.text,
                 conversation.speakerName,
@@ -1868,8 +1954,53 @@ class FreeTalkSystem {
 
         let lastCacheKey = '';
         let lastTurnMeta = null;
+        let streamingPreview = null;
         try {
             this._assertRequestContext(requestContext);
+            let streamingStarted = false;
+            let previewSpeaker = this.groupParticipants[0] || null;
+            streamingPreview = CupidFreeTalkCore.createPacedStreamingPreview({
+                intervalMs: 40,
+                charactersPerTick: 2,
+                shouldFlush: () => this.dialogueSystem.skipTyping === true,
+                onRender: ({ text: previewText, segments: previewSegments }) => {
+                    if (!this._isRequestContextCurrent(requestContext) || !previewSpeaker) return;
+                    if (!streamingStarted) {
+                        streamingStarted = true;
+                        this._clearThinkingMessage();
+                        document.querySelectorAll('.group-freetalk-participant img').forEach(img => img.classList.remove('thinking'));
+                        this.uiManager.dialogueBox.classList.remove('thinking-box');
+                        this._setGroupActiveSpeaker(previewSpeaker.id);
+                        this.uiManager.updateNameTag(previewSpeaker.name);
+                        this.dialogueSystem.beginStreamingText(
+                            previewSpeaker.name,
+                            () => this._isRequestContextCurrent(requestContext)
+                        );
+                    }
+                    this.dialogueSystem.renderStreamingText(
+                        previewText,
+                        previewSpeaker.name,
+                        previewSegments,
+                        () => this._isRequestContextCurrent(requestContext)
+                    );
+                },
+                onReset: () => {
+                    if (this._isRequestContextCurrent(requestContext) && streamingStarted && previewSpeaker) {
+                        this.dialogueSystem.resetStreamingText(previewSpeaker.name);
+                    }
+                }
+            });
+            const updateGroupStreamingPreview = rawContent => {
+                const preview = CupidFreeTalkCore.extractFirstStreamingConversationPreview(rawContent);
+                const nextSpeaker = this.groupParticipants.find(participant => (
+                    participant.name.toLowerCase() === String(preview.name || '').toLowerCase()
+                    || participant.id.toLowerCase() === String(preview.name || '').toLowerCase()
+                ));
+                if (nextSpeaker && !streamingStarted) previewSpeaker = nextSpeaker;
+                const previewSegments = this._sanitizeSegmentsPlaceholders(preview.segments || null) || [];
+                const previewText = previewSegments.map(segment => segment.text).join('\n\n');
+                if (previewText) streamingPreview.update(previewText, previewSegments);
+            };
             requestHistory[0] = {
                 role: 'system',
                 content: normalizeFreeTalkPromptBlockForCache(this._buildCurrentGroupSystemPrompt(scene, lang))
@@ -1896,7 +2027,7 @@ class FreeTalkSystem {
             const endpoint = (typeof AI_API_ENDPOINT !== 'undefined' && AI_API_ENDPOINT)
                 ? AI_API_ENDPOINT
                 : 'https://openrouter-api.yama5993.workers.dev/';
-            const requestInit = {
+            const buildRequestInit = wantsStream => ({
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -1916,19 +2047,39 @@ class FreeTalkSystem {
                     responseSpeakers: this.groupParticipants.map(item => ({ id: item.id, key: item.id, name: item.name })),
                     outputLanguage: lang,
                     cacheKey: lastCacheKey,
+                    stream: wantsStream,
                     ...(lastTurnMeta || {})
                 })
+            });
+            const fetchWithTransientRetry = async wantsStream => {
+                let response = null;
+                for (let attempt = 0; attempt < 3; attempt += 1) {
+                    response = await fetch(endpoint, buildRequestInit(wantsStream));
+                    this._assertRequestContext(requestContext);
+                    if (!shouldRetryFreeTalkAiResponse(response) || attempt >= 2 || navigator.onLine === false) break;
+                    try { await response.body?.cancel?.(); } catch (_) { /* best effort */ }
+                    await new Promise(resolve => window.setTimeout(resolve, 400 * (attempt + 1)));
+                }
+                return response;
             };
-            let response = null;
-            for (let attempt = 0; attempt < 3; attempt += 1) {
-                response = await fetch(endpoint, requestInit);
-                this._assertRequestContext(requestContext);
-                if (!shouldRetryFreeTalkAiResponse(response) || attempt >= 2 || navigator.onLine === false) break;
-                try { await response.body?.cancel?.(); } catch (_) { /* best effort */ }
-                await new Promise(resolve => window.setTimeout(resolve, 400 * (attempt + 1)));
-            }
+            let response = await fetchWithTransientRetry(true);
             if (!response?.ok) throw new Error(`HTTP ${response?.status || 0}`);
-            const data = await response.json();
+            let data;
+            try {
+                data = await CupidFreeTalkCore.readChatCompletionStream(response, {
+                    onDelta: ({ content }) => {
+                        this._assertRequestContext(requestContext);
+                        updateGroupStreamingPreview(content);
+                    }
+                });
+            } catch (streamError) {
+                this._assertRequestContext(requestContext);
+                console.warn('[Cupid Group FreeTalk] Streaming interrupted; retrying once without streaming', streamError?.reason || streamError?.message || streamError);
+                streamingPreview.reset();
+                response = await fetchWithTransientRetry(false);
+                if (!response?.ok) throw new Error(`HTTP ${response?.status || 0}`);
+                data = await response.json();
+            }
             this._assertRequestContext(requestContext, data);
             if (data?.provider === 'deepseek' && data?.usage) {
                 const usage = data.usage;
@@ -1951,10 +2102,30 @@ class FreeTalkSystem {
             const reply = String(data?.choices?.[0]?.message?.content || '').trim();
             const conversations = this.parseGroupJsonResponse(reply);
 
+            window.__cupidLastStreamFinish = {
+                provider: data?.provider || '',
+                providerRoute: data?.providerRoute || '',
+                model: data?.model || '',
+                usage: data?.usage || null,
+                cache: data?.cache || null,
+                turnId: data?.turnId || lastTurnMeta?.turnId || '',
+                surface: 'group-freetalk',
+                at: new Date().toISOString()
+            };
+            console.info('[Cupid AI Stream Finish]', window.__cupidLastStreamFinish);
+
             this._clearThinkingMessage();
             document.querySelectorAll('.group-freetalk-participant img').forEach(img => img.classList.remove('thinking'));
             this.uiManager.dialogueBox.classList.remove('thinking-box');
-            const rendered = await this._renderGroupConversations(conversations, requestContext, finalContent, lang, scene);
+            const rendered = await this._renderGroupConversations(
+                conversations,
+                requestContext,
+                finalContent,
+                lang,
+                scene,
+                streamingPreview
+            );
+            streamingPreview = null;
             this._assertRequestContext(requestContext, data);
 
             const transcript = rendered
@@ -1986,16 +2157,17 @@ class FreeTalkSystem {
             window.saveGameState?.();
 
             if (typeof window.saveCupidGroupChatLog === 'function') {
-                await window.saveCupidGroupChatLog({
-                    userContent: finalContent,
-                    assistantMessages,
-                    participants: this.groupParticipants,
-                    sessionId: requestSceneId || '',
-                    turnId: lastTurnMeta?.turnId || '',
-                    playerName: this.stateManager.playerName || '',
-                    conversationDay,
-                    responseMetadata: data
-                });
+                void Promise.resolve().then(() => window.saveCupidGroupChatLog({
+                        userContent: finalContent,
+                        assistantMessages,
+                        participants: this.groupParticipants,
+                        sessionId: requestSceneId || '',
+                        turnId: lastTurnMeta?.turnId || '',
+                        playerName: this.stateManager.playerName || '',
+                        conversationDay,
+                        responseMetadata: data
+                    }))
+                    .catch(logError => console.warn('[Cupid Group FreeTalk] Could not persist chat log asynchronously', logError));
             }
 
             if (this.freeTalkTurns >= this.currentMaxTurns) {
@@ -2003,6 +2175,9 @@ class FreeTalkSystem {
                 this.endFreeTalk(requestOwner);
             }
         } catch (error) {
+            streamingPreview?.stop();
+            streamingPreview = null;
+            this.dialogueSystem.finishStreamingText();
             const ownsCurrentContext = this._isRequestContextCurrent(requestContext);
             this._rollbackRequestHistory(requestContext);
             if (ownsCurrentContext) {
@@ -2034,6 +2209,8 @@ class FreeTalkSystem {
             }[lang] || 'The connection was interrupted. Please try again.';
             await this.uiManager.showModal?.(message, true);
         } finally {
+            streamingPreview?.stop();
+            this.dialogueSystem.finishStreamingText();
             if (this._activeRequestOwner === requestOwner) {
                 this._activeRequestOwner = null;
                 this._activeRequestContext = null;

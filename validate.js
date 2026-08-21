@@ -2140,8 +2140,8 @@ try {
         || gftContent.includes('parsed.dialogue || parsed.content || parsed.message || parsed.response')) {
         errors.push('[FREETALK_OUTPUT_SCHEMA] 미지원 JSON 객체의 내부 사유가 대사로 노출될 수 있음');
     }
-    if (!ftSysContent.includes('requestCupidReplyData(repairMessages)')
-        || !gftContent.includes('requestCupidGalleryReplyData(repairMessages)')
+    if (!/requestCupidReplyData\(repairMessages(?:\s*,|\))/.test(ftSysContent)
+        || !/requestCupidGalleryReplyData\(repairMessages(?:\s*,|\))/.test(gftContent)
         || !ftSysContent.includes("qualityError.reason = 'ROLEPLAY_QUALITY_REJECTED'")
         || !gftContent.includes("qualityError.reason = 'ROLEPLAY_QUALITY_REJECTED'")) {
         errors.push('[FREETALK_OUTPUT_QUALITY] 게임/갤러리 저장 전 재생성 경로 누락');
@@ -2300,10 +2300,16 @@ try {
         || !gftContent.includes('if (!ownsTyping())')) {
         errors.push('[FREETALK_STALE] 장면 전환 중 진행 중인 타이핑 렌더 취소 계약이 누락됨');
     }
-    const mainRenderIndex = ftSysContent.indexOf('await this.dialogueSystem.typeText(', mainSendIndex);
-    const mainExpressionIndex = ftSysContent.indexOf('this.applyExpression(parsed.expression');
-    const mainAffinityIndex = ftSysContent.indexOf('this.applyAffinity(parsed.affinity');
-    const galleryRenderIndex = gftContent.indexOf('await this._typeText(displayText, displaySegments, requestContext)', gallerySendIndex);
+    const mainTypedRenderIndex = ftSysContent.indexOf('await this.dialogueSystem.typeText(', mainSendIndex);
+    const mainStreamRenderIndex = ftSysContent.indexOf('await _streamingPreview.drain()', mainSendIndex);
+    const mainRenderCandidates = [mainTypedRenderIndex, mainStreamRenderIndex].filter(index => index >= 0);
+    const mainRenderIndex = mainRenderCandidates.length ? Math.min(...mainRenderCandidates) : -1;
+    const mainExpressionIndex = ftSysContent.indexOf('this.applyExpression(parsed.expression', mainSendIndex);
+    const mainAffinityIndex = ftSysContent.indexOf('this.applyAffinity(parsed.affinity', mainSendIndex);
+    const galleryTypedRenderIndex = gftContent.indexOf('await this._typeText(displayText, displaySegments, requestContext)', gallerySendIndex);
+    const galleryStreamRenderIndex = gftContent.indexOf('await _streamingPreview.drain()', gallerySendIndex);
+    const galleryRenderCandidates = [galleryTypedRenderIndex, galleryStreamRenderIndex].filter(index => index >= 0);
+    const galleryRenderIndex = galleryRenderCandidates.length ? Math.min(...galleryRenderCandidates) : -1;
     const galleryExpressionIndex = gftContent.indexOf('this._updateExpression(parsed.expression, requestCharId', galleryRenderIndex);
     if (!(mainRenderIndex >= 0 && mainExpressionIndex > mainRenderIndex && mainAffinityIndex > mainRenderIndex)
         || !(galleryRenderIndex >= 0 && galleryExpressionIndex > galleryRenderIndex)) {

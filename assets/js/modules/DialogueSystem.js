@@ -49,6 +49,7 @@ class DialogueSystem {
         /** 이전 requestAnimationFrame이 새 타이핑 상태를 해제하지 못하게 하는 렌더 소유권 */
         this._renderGeneration = 0;
         this._activeRenderOwner = null;
+        this._streamingCharName = '';
 
         /**
          * 타이핑 속도 (밀리초 단위)
@@ -331,6 +332,50 @@ class DialogueSystem {
                 : (expectedContent === renderedContent ? 'rendered' : 'mismatch'),
             renderedAt: Date.now()
         };
+    }
+
+    beginStreamingText(charName, isStillCurrent = null) {
+        if (typeof isStillCurrent === 'function' && !isStillCurrent()) return false;
+        this._renderGeneration += 1;
+        this._activeRenderOwner = null;
+        this._streamingCharName = String(charName || '');
+        this.isTyping = true;
+        this.skipTyping = false;
+        this.uiManager.messageEl.innerHTML = '';
+        this.updateTalkingAnimation(charName, true);
+        return true;
+    }
+
+    renderStreamingText(text, charName, structuredSegments = null, isStillCurrent = null) {
+        if (typeof isStillCurrent === 'function' && !isStillCurrent()) {
+            this.finishStreamingText(charName);
+            return false;
+        }
+        if (!this.isTyping || this._streamingCharName !== String(charName || '')) {
+            if (!this.beginStreamingText(charName, isStillCurrent)) return false;
+        }
+        const processedText = Array.isArray(structuredSegments) && structuredSegments.length > 0
+            ? this._segmentsToInlineText(structuredSegments, charName)
+            : this.processPlaceholders(String(text || ''), charName);
+        this.uiManager.messageEl.innerHTML = this.parseNarration(processedText);
+        const msgEl = this.uiManager.messageEl;
+        if (msgEl) msgEl.scrollTop = msgEl.scrollHeight;
+        return true;
+    }
+
+    resetStreamingText(charName = this._streamingCharName) {
+        this.uiManager.messageEl.innerHTML = '';
+        this.skipTyping = false;
+        if (charName) this.updateTalkingAnimation(charName, true);
+    }
+
+    finishStreamingText(charName = this._streamingCharName) {
+        const activeName = charName || this._streamingCharName;
+        this.isTyping = false;
+        this.skipTyping = false;
+        this._streamingCharName = '';
+        if (activeName) this.updateTalkingAnimation(activeName, false);
+        if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;
     }
 
     /**

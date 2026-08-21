@@ -77,6 +77,7 @@ class GalleryFreeTalk {
         this._activeChatTurnId = null;
         this._typingGeneration = 0;
         this._activeTypingOwner = null;
+        this._streamingPreviewActive = false;
 
         this.MEMORY_KEY = 'cupid_freetalk_memory';
         this.PROMPT_EPOCH_MEMORY_KEY = 'cupid_freetalk_prompt_epochs_v1';
@@ -971,8 +972,39 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         let _lastTurnMeta = null;
         let _lastCacheKey = '';
         let _lastAiEndpoint = '';
+        let _streamingPreview = null;
 
         try {
+            let _streamingStarted = false;
+            _streamingPreview = GalleryFreeTalkCore.createPacedStreamingPreview({
+                intervalMs: 40,
+                charactersPerTick: 2,
+                shouldFlush: () => this.skipTyping === true,
+                onRender: ({ text: previewText, segments: previewSegments }) => {
+                    if (!this._isRequestContextCurrent(requestContext)) return;
+                    if (!_streamingStarted) {
+                        _streamingStarted = true;
+                        this._clearThinkingMessage();
+                        if (nameTag) nameTag.textContent = pendingCharName;
+                        if (charImg) charImg.classList.remove('thinking');
+                        if (dialogueBox) dialogueBox.classList.remove('thinking-box');
+                        document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
+                        this._beginStreamingText(requestContext);
+                    }
+                    this._renderStreamingText(previewText, previewSegments, requestContext);
+                },
+                onReset: () => {
+                    if (this._isRequestContextCurrent(requestContext) && _streamingStarted) {
+                        this._resetStreamingText();
+                    }
+                }
+            });
+            const updateStreamingPreview = rawContent => {
+                const preview = GalleryFreeTalkCore.extractStreamingSegmentsPreview(rawContent);
+                const previewSegments = this._sanitizeSegmentsPlaceholders(preview.segments || null) || [];
+                const previewText = previewSegments.map(segment => segment.text).join('\n\n');
+                if (previewText) _streamingPreview.update(previewText, previewSegments);
+            };
             // [Explicit Caching] 캐시 키 헤더 추가
             // 토큰 절감: 최근 5개 메시지 외의 이미지는 [이전 사진]으로 치환
             this._assertRequestContext(requestContext);
@@ -1040,8 +1072,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             const aiEndpoint = window.AI_API_ENDPOINT || 'https://openrouter-api.yama5993.workers.dev/';
             _lastAiEndpoint = aiEndpoint;
             const fallbackEndpoint = ''; // AI text must not fall back to the legacy Gemini endpoint.
-            const requestCupidGalleryReplyData = async (messages) => {
-                const requestInit = {
+            const requestCupidGalleryReplyData = async (messages, { resetPreview = false } = {}) => {
+                if (resetPreview) _streamingPreview.reset();
+                const buildRequestInit = wantsStream => ({
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -1058,14 +1091,15 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                         chatMode: 'single',
                         outputLanguage: this.lang,
                         cacheKey: _gftCacheKey,
+                        stream: wantsStream,
                         ...(_turnMeta || {})
                     })
-                };
-                const fetchWithTransientRetry = async (endpoint) => {
+                });
+                const fetchWithTransientRetry = async (endpoint, wantsStream) => {
                     let lastError = null;
                     for (let attempt = 0; attempt < 3; attempt += 1) {
                         try {
-                            const response = await fetch(endpoint, requestInit);
+                            const response = await fetch(endpoint, buildRequestInit(wantsStream));
                             if (!shouldRetryGalleryAiResponse(response)
                                 || navigator.onLine === false
                                 || attempt >= 2) {
@@ -1088,7 +1122,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 let primaryError = null;
                 _lastAiEndpoint = aiEndpoint;
                 try {
-                    response = await fetchWithTransientRetry(aiEndpoint);
+                    response = await fetchWithTransientRetry(aiEndpoint, true);
                     this._assertRequestContext(requestContext);
                 } catch (error) {
                     this._assertRequestContext(requestContext);
@@ -1100,14 +1134,29 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 ) && fallbackEndpoint && fallbackEndpoint !== aiEndpoint;
                 if (canFallback) {
                     _lastAiEndpoint = fallbackEndpoint;
-                    response = await fetchWithTransientRetry(fallbackEndpoint);
+                    response = await fetchWithTransientRetry(fallbackEndpoint, true);
                     this._assertRequestContext(requestContext);
                 } else if (primaryError) {
                     throw primaryError;
                 }
 
                 if (!response.ok) throw new Error(`HTTP ${response.status}`);
-                return await response.json();
+                try {
+                    return await GalleryFreeTalkCore.readChatCompletionStream(response, {
+                        onDelta: ({ content }) => {
+                            this._assertRequestContext(requestContext);
+                            updateStreamingPreview(content);
+                        }
+                    });
+                } catch (streamError) {
+                    this._assertRequestContext(requestContext);
+                    console.warn('[Cupid GalleryFreeTalk] Streaming interrupted; retrying once without streaming', streamError?.reason || streamError?.message || streamError);
+                    _streamingPreview.reset();
+                    const recoveryResponse = await fetchWithTransientRetry(_lastAiEndpoint, false);
+                    this._assertRequestContext(requestContext);
+                    if (!recoveryResponse.ok) throw new Error(`HTTP ${recoveryResponse.status}`);
+                    return await recoveryResponse.json();
+                }
             };
 
             let data = await requestCupidGalleryReplyData(_optimized);
@@ -1177,7 +1226,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     ..._optimized.slice(1)
                 ];
                 repairMessages = this._forceLatestUserMessageLast(repairMessages, finalContent);
-                data = await requestCupidGalleryReplyData(repairMessages);
+                data = await requestCupidGalleryReplyData(repairMessages, { resetPreview: true });
                 this._assertRequestContext(requestContext, data);
                 const repairedContent = data?.choices?.[0]?.message?.content;
                 reply = typeof repairedContent === 'string' ? repairedContent.trim() : '';
@@ -1212,6 +1261,18 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 throw qualityError;
             }
 
+            window.__cupidLastStreamFinish = {
+                provider: data?.provider || '',
+                providerRoute: data?.providerRoute || '',
+                model: data?.model || '',
+                usage: data?.usage || null,
+                cache: data?.cache || null,
+                turnId: data?.turnId || _turnMeta?.turnId || '',
+                surface: 'gallery-freetalk',
+                at: new Date().toISOString()
+            };
+            console.info('[Cupid AI Stream Finish]', window.__cupidLastStreamFinish);
+
             if (!parsed?.text && !(Array.isArray(parsed?.segments) && parsed.segments.length > 0)) {
                 throw new Error('AI response did not contain visible roleplay text. Please try again.');
             }
@@ -1230,8 +1291,14 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             if (dialogueBox) dialogueBox.classList.remove('thinking-box');
             document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
 
-            // 대사창에 타이핑 효과로 표시 (segments 있으면 구조화 렌더)
-            await this._typeText(displayText, displaySegments, requestContext);
+            const pacedDisplayText = Array.isArray(displaySegments) && displaySegments.length > 0
+                ? displaySegments.map(segment => segment.text).join('\n\n')
+                : displayText;
+            _streamingPreview.update(pacedDisplayText, displaySegments);
+            await _streamingPreview.drain();
+            this._finishStreamingText();
+            _streamingPreview.stop();
+            _streamingPreview = null;
             const assistantRenderReceipt = this._getChatRenderReceipt(displayText, displaySegments);
             this._assertRequestContext(requestContext, data);
             this._updateExpression(parsed.expression, requestCharId);
@@ -1271,21 +1338,25 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             // assistantContent: 파싱된 displayText(raw JSON 저장 금지 — 뷰어에서 원본 JSON이 그대로 노출됨)
             if (typeof window.saveCupidChatLog === 'function') {
                 this._assertRequestContext(requestContext, data);
-                window.saveCupidChatLog({
-                    charId: requestCharKey,
-                    userContent: finalContent,
-                    assistantContent: displayText,
-                    sessionId: 'gallery-freetalk',
-                    context: '1:1',
-                    playerName: this.progress.getPlayerName() || '',
-                    affinityChange: affinityResult?.change,
-                    affinityCurrent: affinityResult?.value,
-                    assistantRenderReceipt,
-                    responseMetadata: data
-                });
+                void Promise.resolve().then(() => window.saveCupidChatLog({
+                        charId: requestCharKey,
+                        userContent: finalContent,
+                        assistantContent: displayText,
+                        sessionId: 'gallery-freetalk',
+                        context: '1:1',
+                        playerName: this.progress.getPlayerName() || '',
+                        affinityChange: affinityResult?.change,
+                        affinityCurrent: affinityResult?.value,
+                        assistantRenderReceipt,
+                        responseMetadata: data
+                    }))
+                    .catch(logError => console.warn('[Cupid GalleryFreeTalk] Could not persist chat log asynchronously', logError));
             }
 
         } catch (err) {
+            _streamingPreview?.stop();
+            _streamingPreview = null;
+            this._finishStreamingText();
             const ownsCurrentContext = this._isRequestContextCurrent(requestContext);
             this._rollbackRequestHistory(requestContext);
             if (!ownsCurrentContext || err?.isStaleTurn || err?.reason === 'STALE_TURN') {
@@ -1343,6 +1414,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             }
         }
 
+        _streamingPreview?.stop();
+        this._finishStreamingText();
         if (this._activeRequestOwner === requestOwner) {
             this._activeRequestOwner = null;
             this._activeRequestContext = null;
@@ -1686,6 +1759,57 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 : (expectedContent === renderedContent ? 'rendered' : 'mismatch'),
             renderedAt: Date.now()
         };
+    }
+
+    _beginStreamingText(requestContext = null) {
+        if (requestContext && !this._isRequestContextCurrent(requestContext)) return false;
+        this._typingGeneration += 1;
+        this._activeTypingOwner = null;
+        this._streamingPreviewActive = true;
+        this.isTyping = true;
+        this.skipTyping = false;
+        const msgEl = document.getElementById('message');
+        if (msgEl) msgEl.innerHTML = '';
+        return Boolean(msgEl);
+    }
+
+    _renderStreamingText(text, structuredSegments = null, requestContext = null) {
+        if (requestContext && !this._isRequestContextCurrent(requestContext)) {
+            this._finishStreamingText();
+            return false;
+        }
+        if (!this._streamingPreviewActive && !this._beginStreamingText(requestContext)) return false;
+        const msgEl = document.getElementById('message');
+        if (!msgEl) return false;
+        const resolvedText = this._sanitizePlayerPlaceholders(text || '');
+        const resolvedSegments = this._sanitizeSegmentsPlaceholders(structuredSegments);
+        const html = Array.isArray(resolvedSegments) && resolvedSegments.length > 0
+            ? resolvedSegments.map(segment => {
+                if (!segment?.text) return '';
+                const isAction = segment.type === 'narration';
+                const formatted = this._zetaFormatText(segment.text, isAction);
+                const escaped = String(formatted)
+                    .replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;');
+                return `<span class="${isAction ? 'gft-action' : 'gft-text'}">${escaped}</span>`;
+            }).filter(Boolean).join(' ')
+            : this._formatAction(resolvedText);
+        msgEl.innerHTML = html;
+        msgEl.scrollTop = msgEl.scrollHeight;
+        return true;
+    }
+
+    _resetStreamingText() {
+        const msgEl = document.getElementById('message');
+        if (msgEl) msgEl.innerHTML = '';
+        this.skipTyping = false;
+    }
+
+    _finishStreamingText() {
+        this._streamingPreviewActive = false;
+        this.isTyping = false;
+        this.skipTyping = false;
     }
 
     /**

@@ -1203,6 +1203,313 @@ Latest user: """${excerpt}"""
 - Continue with the current character's reaction without undoing a completed result. You may naturally infer or narrate the user's response, emotion, or inner thought from their words, actions, and the scene context, while keeping it compatible with any state, choice, consent, or refusal explicitly stated in the current input.`;
     }
 
+    function decodePartialJsonString(value, complete = false) {
+        const source = String(value || '');
+        if (!source) return '';
+        if (complete) {
+            try {
+                return JSON.parse(`"${source}"`);
+            } catch {
+                // Fall through to the incremental decoder while the JSON is still arriving.
+            }
+        }
+        return source
+            .replace(/\\"/g, '"')
+            .replace(/\\\\/g, '\\')
+            .replace(/\\n/g, '\n')
+            .replace(/\\r/g, '\r')
+            .replace(/\\t/g, '\t')
+            .replace(/\\u([0-9a-fA-F]{4})/g, (_, hex) => String.fromCharCode(parseInt(hex, 16)));
+    }
+
+    function readPartialJsonString(source, startIndex) {
+        let index = startIndex;
+        let escaped = false;
+        let value = '';
+        let complete = false;
+        while (index < source.length) {
+            const char = source[index];
+            if (escaped) {
+                value += `\\${char}`;
+                escaped = false;
+                index += 1;
+                continue;
+            }
+            if (char === '\\') {
+                escaped = true;
+                index += 1;
+                continue;
+            }
+            if (char === '"') {
+                complete = true;
+                index += 1;
+                break;
+            }
+            value += char;
+            index += 1;
+        }
+        return { value, index, complete };
+    }
+
+    function inferStreamingSegmentType(source, keyStart, key, valueEnd) {
+        if (key === 'narration' || key === 'sceneNarration') return 'narration';
+        if (key === 'dialogue') return 'dialogue';
+        const objectStart = Math.max(source.lastIndexOf('{', keyStart), source.lastIndexOf('[', keyStart));
+        const prefix = source.slice(Math.max(0, objectStart), keyStart);
+        const prefixType = /"type"\s*:\s*"([^"\\]*(?:\\.[^"\\]*)*)"/.exec(prefix);
+        if (prefixType) {
+            return decodePartialJsonString(prefixType[1], true).toLowerCase() === 'narration'
+                ? 'narration'
+                : 'dialogue';
+        }
+        const suffix = source.slice(valueEnd, Math.min(source.length, valueEnd + 180));
+        const suffixType = /"type"\s*:\s*"([^"\\]*(?:\\.[^"\\]*)*)"/.exec(suffix);
+        if (suffixType) {
+            return decodePartialJsonString(suffixType[1], true).toLowerCase() === 'narration'
+                ? 'narration'
+                : 'dialogue';
+        }
+        return 'dialogue';
+    }
+
+    function extractStreamingSegmentsPreview(rawText) {
+        const source = String(rawText || '');
+        if (!source) return { text: '', segments: [] };
+        const visibleKeys = new Set(['text', 'dialogue', 'narration']);
+        const segments = [];
+        const keyPattern = /"([^"\\]*(?:\\.[^"\\]*)*)"\s*:\s*"/g;
+        let match;
+        while ((match = keyPattern.exec(source)) !== null) {
+            const key = decodePartialJsonString(match[1], true);
+            if (!visibleKeys.has(key)) continue;
+            const parsed = readPartialJsonString(source, keyPattern.lastIndex);
+            keyPattern.lastIndex = parsed.index;
+            const text = decodePartialJsonString(parsed.value, parsed.complete).trim();
+            if (!text) continue;
+            segments.push({
+                type: inferStreamingSegmentType(source, match.index, key, parsed.index),
+                text
+            });
+        }
+        return {
+            text: segments.map(segment => segment.text).join('\n\n'),
+            segments
+        };
+    }
+
+    function extractFirstStreamingConversationPreview(rawText) {
+        const raw = String(rawText || '');
+        const collectionMatch = /"conversations"\s*:\s*\[/.exec(raw);
+        if (!collectionMatch) return { name: '', text: '', segments: [] };
+        const objectStart = raw.indexOf('{', collectionMatch.index + collectionMatch[0].length);
+        if (objectStart < 0) return { name: '', text: '', segments: [] };
+        let depth = 0;
+        let inString = false;
+        let escaped = false;
+        let objectEnd = raw.length;
+        for (let index = objectStart; index < raw.length; index += 1) {
+            const char = raw[index];
+            if (inString) {
+                if (escaped) escaped = false;
+                else if (char === '\\') escaped = true;
+                else if (char === '"') inString = false;
+                continue;
+            }
+            if (char === '"') {
+                inString = true;
+                continue;
+            }
+            if (char === '{') depth += 1;
+            else if (char === '}') {
+                depth -= 1;
+                if (depth === 0) {
+                    objectEnd = index + 1;
+                    break;
+                }
+            }
+        }
+        const source = raw.slice(objectStart, objectEnd);
+        const nameMatch = /"name"\s*:\s*"([^"\\]*(?:\\.[^"\\]*)*)"/.exec(source);
+        const preview = extractStreamingSegmentsPreview(source);
+        return {
+            name: nameMatch ? decodePartialJsonString(nameMatch[1], true).trim() : '',
+            ...preview
+        };
+    }
+
+    async function readChatCompletionStream(response, { onDelta = null } = {}) {
+        const contentType = String(response?.headers?.get?.('content-type') || '').toLowerCase();
+        if (!contentType.includes('text/event-stream') || !response?.body?.getReader) {
+            return await response.json();
+        }
+
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = '';
+        let rawContent = '';
+        let finalPayload = null;
+        const processEvent = async eventText => {
+            const dataText = String(eventText || '')
+                .split(/\r?\n/)
+                .filter(line => line.startsWith('data:'))
+                .map(line => line.slice(5).trimStart())
+                .join('\n')
+                .trim();
+            if (!dataText || dataText === '[DONE]') return;
+            let event;
+            try {
+                event = JSON.parse(dataText);
+            } catch {
+                return;
+            }
+            if (event?.error) {
+                const error = new Error(event.error?.message || event.error?.reason || 'AI streaming failed');
+                error.reason = event.error?.reason || event.reason || 'STREAM_ERROR';
+                throw error;
+            }
+            if (event?.final === true) {
+                finalPayload = event;
+                return;
+            }
+            const delta = event?.choices?.[0]?.delta?.content;
+            if (typeof delta === 'string' && delta) {
+                rawContent += delta;
+                if (typeof onDelta === 'function') await onDelta({ delta, content: rawContent, event });
+            }
+        };
+
+        try {
+            while (true) {
+                const { value, done } = await reader.read();
+                buffer += decoder.decode(value || new Uint8Array(), { stream: !done });
+                let boundary;
+                while ((boundary = buffer.search(/\r?\n\r?\n/)) >= 0) {
+                    const eventText = buffer.slice(0, boundary);
+                    const separator = /^\r\n\r\n/.test(buffer.slice(boundary)) ? 4 : 2;
+                    buffer = buffer.slice(boundary + separator);
+                    await processEvent(eventText);
+                }
+                if (done) break;
+            }
+            if (buffer.trim()) await processEvent(buffer);
+        } finally {
+            reader.releaseLock?.();
+        }
+
+        if (!finalPayload) {
+            const error = new Error('AI stream ended before the final response');
+            error.reason = 'STREAM_INTERRUPTED';
+            error.partialContent = rawContent;
+            throw error;
+        }
+        return finalPayload;
+    }
+
+    function sliceStreamingSegments(segments, visibleCharacters) {
+        if (!Array.isArray(segments) || segments.length === 0) return [];
+        let remaining = Math.max(0, Number(visibleCharacters) || 0);
+        const visible = [];
+        for (const segment of segments) {
+            const characters = Array.from(String(segment?.text || ''));
+            if (!characters.length) continue;
+            if (visible.length > 0) remaining = Math.max(0, remaining - 2);
+            if (remaining <= 0) break;
+            const text = characters.slice(0, remaining).join('');
+            if (text) visible.push({ type: segment?.type === 'narration' ? 'narration' : 'dialogue', text });
+            remaining -= characters.length;
+            if (remaining <= 0) break;
+        }
+        return visible;
+    }
+
+    function createPacedStreamingPreview({
+        onRender,
+        onReset = null,
+        shouldFlush = null,
+        intervalMs = 40,
+        charactersPerTick = 2,
+        schedule = (callback, delay) => global.setTimeout(callback, delay),
+        cancel = timer => global.clearTimeout(timer)
+    } = {}) {
+        const tickDelay = Math.max(10, Number(intervalMs) || 40);
+        const tickCharacters = Math.max(1, Math.floor(Number(charactersPerTick) || 2));
+        let targetText = '';
+        let targetSegments = [];
+        let visibleCharacters = 0;
+        let timer = null;
+        let stopped = false;
+        const drainWaiters = [];
+
+        const render = () => {
+            if (typeof onRender !== 'function') return;
+            const text = Array.from(targetText).slice(0, visibleCharacters).join('');
+            onRender({ text, segments: sliceStreamingSegments(targetSegments, visibleCharacters) });
+        };
+        const resolveDrain = () => {
+            if (visibleCharacters < Array.from(targetText).length) return;
+            while (drainWaiters.length) drainWaiters.shift()();
+        };
+        const scheduleTick = () => {
+            if (stopped || timer !== null) return;
+            timer = schedule(tick, tickDelay);
+        };
+        const tick = () => {
+            timer = null;
+            if (stopped) return;
+            const targetLength = Array.from(targetText).length;
+            if (typeof shouldFlush === 'function' && shouldFlush()) {
+                visibleCharacters = targetLength;
+            } else if (visibleCharacters < targetLength) {
+                visibleCharacters = Math.min(targetLength, visibleCharacters + tickCharacters);
+            }
+            render();
+            resolveDrain();
+            if (visibleCharacters < targetLength) scheduleTick();
+        };
+
+        return {
+            update(text, segments = null) {
+                if (stopped) return;
+                const nextText = String(text || '');
+                const previousVisible = Array.from(targetText).slice(0, visibleCharacters).join('');
+                targetText = nextText;
+                targetSegments = Array.isArray(segments) ? segments : [];
+                const targetLength = Array.from(targetText).length;
+                if (!nextText.startsWith(previousVisible)) {
+                    visibleCharacters = 0;
+                    if (typeof onReset === 'function') onReset();
+                }
+                visibleCharacters = Math.min(visibleCharacters, targetLength);
+                if (targetLength > 0 && visibleCharacters === 0) {
+                    visibleCharacters = 1;
+                    render();
+                }
+                if (visibleCharacters < targetLength) scheduleTick();
+                else resolveDrain();
+            },
+            drain() {
+                if (visibleCharacters >= Array.from(targetText).length) return Promise.resolve();
+                scheduleTick();
+                return new Promise(resolve => drainWaiters.push(resolve));
+            },
+            reset() {
+                if (timer !== null) cancel(timer);
+                timer = null;
+                targetText = '';
+                targetSegments = [];
+                visibleCharacters = 0;
+                while (drainWaiters.length) drainWaiters.shift()();
+                if (typeof onReset === 'function') onReset();
+            },
+            stop() {
+                stopped = true;
+                if (timer !== null) cancel(timer);
+                timer = null;
+                while (drainWaiters.length) drainWaiters.shift()();
+            }
+        };
+    }
+
     global.CupidFreeTalkCore = Object.freeze({
         CACHE_BOUNDARY_MARKER,
         FAILOVER_HTTP_STATUSES,
@@ -1254,6 +1561,10 @@ Latest user: """${excerpt}"""
         truncateLatestUserText,
         findLatestUserText,
         buildLatestUserCanonBlock,
+        extractStreamingSegmentsPreview,
+        extractFirstStreamingConversationPreview,
+        readChatCompletionStream,
+        createPacedStreamingPreview,
         normalizeGalleryIncidentCategory,
         normalizeGalleryCrisisSeverity,
         normalizeGalleryIncidentState,

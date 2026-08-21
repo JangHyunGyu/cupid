@@ -8,12 +8,130 @@ const vm = require('node:vm');
 
 const source = fs.readFileSync(path.join(__dirname, '../assets/js/freetalk-core.js'), 'utf8');
 const window = {};
-vm.runInNewContext(source, { window, Set, Object, String, Number, Array, Map, Math, encodeURIComponent });
+vm.runInNewContext(source, {
+    window,
+    Set,
+    Object,
+    String,
+    Number,
+    Array,
+    Map,
+    Math,
+    JSON,
+    Promise,
+    TextDecoder,
+    Uint8Array,
+    encodeURIComponent
+});
 const core = window.CupidFreeTalkCore;
 
 function read(relativePath) {
     return fs.readFileSync(path.join(__dirname, '..', relativePath), 'utf8');
 }
+
+test('partial structured output becomes narration and dialogue before JSON completion', () => {
+    const partial = '{"segments":[{"type":"narration","text":"창가에 비가 번졌다."},{"type":"dialogue","text":"조금만 더';
+    const preview = core.extractStreamingSegmentsPreview(partial);
+    assert.equal(preview.text, '창가에 비가 번졌다.\n\n조금만 더');
+    assert.deepEqual(Array.from(preview.segments, segment => `${segment.type}:${segment.text}`), [
+        'narration:창가에 비가 번졌다.',
+        'dialogue:조금만 더'
+    ]);
+});
+
+test('group streaming preview stays inside the first speaker object', () => {
+    const source = JSON.stringify({
+        conversations: [
+            { name: '서연', segments: [{ type: 'dialogue', text: '첫 번째 응답' }] },
+            { name: '다인', segments: [{ type: 'dialogue', text: '두 번째 응답' }] }
+        ]
+    });
+    const preview = core.extractFirstStreamingConversationPreview(source);
+    assert.equal(preview.name, '서연');
+    assert.equal(preview.text, '첫 번째 응답');
+    assert.doesNotMatch(preview.text, /두 번째/);
+});
+
+test('paced preview starts immediately and then reveals exactly two characters per 40ms tick', async () => {
+    const scheduled = [];
+    const rendered = [];
+    const preview = core.createPacedStreamingPreview({
+        onRender: frame => rendered.push(frame.text),
+        intervalMs: 40,
+        charactersPerTick: 2,
+        schedule(callback, delay) {
+            scheduled.push({ callback, delay });
+            return scheduled.length;
+        },
+        cancel() {}
+    });
+
+    preview.update('가나다라마', [{ type: 'dialogue', text: '가나다라마' }]);
+    assert.deepEqual(rendered, ['가']);
+    assert.equal(scheduled[0].delay, 40);
+    scheduled.shift().callback();
+    assert.equal(rendered.at(-1), '가나다');
+    scheduled.shift().callback();
+    assert.equal(rendered.at(-1), '가나다라마');
+    await preview.drain();
+    preview.stop();
+});
+
+test('SSE reader exposes deltas before returning final provider and cache metadata', async () => {
+    const encoder = new TextEncoder();
+    const pieces = [
+        'data: {"choices":[{"delta":{"content":"{\\"segments\\":[{\\"type\\":\\"dialogue\\",\\"text\\":\\"안"}}]}\n\n',
+        'data: {"choices":[{"delta":{"content":"녕\\"}]}"}}]}\n\n',
+        'data: {"final":true,"provider":"local","model":"serenity-12b-q6","cache":{"prompt_cache_hit_tokens":12},"choices":[{"message":{"content":"{\\"segments\\":[{\\"type\\":\\"dialogue\\",\\"text\\":\\"안녕\\"}]}"}}]}\n\n',
+        'data: [DONE]\n\n'
+    ];
+    const response = new Response(new ReadableStream({
+        start(controller) {
+            pieces.forEach(piece => controller.enqueue(encoder.encode(piece)));
+            controller.close();
+        }
+    }), { headers: { 'content-type': 'text/event-stream' } });
+    const deltas = [];
+    const result = await core.readChatCompletionStream(response, {
+        onDelta: frame => deltas.push(frame.content)
+    });
+    assert.deepEqual(deltas, ['{"segments":[{"type":"dialogue","text":"안', '{"segments":[{"type":"dialogue","text":"안녕"}]}']);
+    assert.equal(result.provider, 'local');
+    assert.equal(result.model, 'serenity-12b-q6');
+    assert.equal(result.cache.prompt_cache_hit_tokens, 12);
+});
+
+test('SSE reader rejects a transport that ends without final metadata', async () => {
+    const encoder = new TextEncoder();
+    const response = new Response(new ReadableStream({
+        start(controller) {
+            controller.enqueue(encoder.encode('data: {"choices":[{"delta":{"content":"partial"}}]}\n\n'));
+            controller.close();
+        }
+    }), { headers: { 'content-type': 'text/event-stream' } });
+    await assert.rejects(
+        core.readChatCompletionStream(response),
+        error => error?.reason === 'STREAM_INTERRUPTED'
+    );
+});
+
+test('every Cupid free-talk surface uses SSE, fixed pacing, and non-blocking backup logs', () => {
+    const main = read('assets/js/modules/FreeTalkSystem.js');
+    const gallery = read('assets/js/gallery-freetalk.js');
+    const dialogue = read('assets/js/modules/DialogueSystem.js');
+    assert.ok((main.match(/stream:\s*wantsStream/g) || []).length >= 2, 'single and group requests must carry the stream flag');
+    assert.match(gallery, /stream:\s*wantsStream/);
+    assert.ok((main.match(/readChatCompletionStream/g) || []).length >= 2, 'single and group readers must consume SSE');
+    assert.match(gallery, /readChatCompletionStream/);
+    assert.ok((main.match(/intervalMs:\s*40/g) || []).length >= 2);
+    assert.ok((main.match(/charactersPerTick:\s*2/g) || []).length >= 2);
+    assert.match(gallery, /intervalMs:\s*40/);
+    assert.match(gallery, /charactersPerTick:\s*2/);
+    assert.match(dialogue, /renderStreamingText\(/);
+    assert.match(main, /Promise\.resolve\(\)\.then\(\(\) => window\.saveCupidChatLog/);
+    assert.match(main, /Promise\.resolve\(\)\.then\(\(\) => window\.saveCupidGroupChatLog/);
+    assert.match(gallery, /Promise\.resolve\(\)\.then\(\(\) => window\.saveCupidChatLog/);
+});
 
 test('gallery outings stay after the cache boundary and birthdays are calendar-only', () => {
     const outingSource = read('assets/js/gallery-outings.js');
@@ -895,7 +1013,8 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
     assert.match(config, /pending queue retained/);
     assert.doesNotMatch(config, /errorType: 'chat_log_queue_transient_failure'/);
     assert.doesNotMatch(config, /group_chat_log_direct_transient_failure/);
-    assert.match(freeTalk, /await window\.saveCupidGroupChatLog\(\{/);
+    assert.match(freeTalk, /Promise\.resolve\(\)\.then\(\(\) => window\.saveCupidGroupChatLog\(\{/);
+    assert.doesNotMatch(freeTalk, /await window\.saveCupidGroupChatLog\(\{/);
     assert.match(config, /window\.saveCupidGroupChatLog = saveCupidGroupChatLog/);
     assert.match(css, /group-freetalk-active/);
     assert.match(css, /data-group-speaker-side="right"/);
