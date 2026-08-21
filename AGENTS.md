@@ -28,6 +28,12 @@
 - Higgsfield MCP를 사용할 수 없거나 생성이 실패하면 다른 이미지 생성기로 임의 대체하지 말고 사용자에게 상황을 알린다.
 - 프로젝트용 생성 이미지는 기존 캐릭터 외형과 화풍을 참조해 일관성을 확인하고, 최종 파일을 저장소 안에 저장한 뒤 실제 시나리오 또는 갤러리 연결까지 검증한다.
 
+## Gallery Asset Registration (Permanent)
+- 공략 캐릭터의 새 표정 이미지는 실제 장면 연결과 함께 지원하는 모든 언어(`ko`, `en`, `ja`, `es`, `fr`, `de`, `pt`)의 갤러리 표정 목록과 이름에 등록한다.
+- 새 이벤트·엔딩 CG는 해금 장면, `REGISTERED_CG_IDS`, 모든 언어의 갤러리 이름·설명·해금 조건, 실제 이미지 경로를 한 변경에서 맞춘다.
+- 조연 캐릭터 이미지와 반복 사용 배경은 이벤트 CG로 취급하지 않는다. 갤러리 수집 대상으로 바꾸려면 별도 요구사항으로 범위를 확정한다.
+- 커밋 전에 자동 검증으로 갤러리 등록값, 이미지 파일, 시나리오 연결의 누락 여부를 확인한다.
+
 ## Roleplay Prompt Naturalness and Intensity (Permanent)
 - Apply this rule to every prompt addition, modification, consolidation, and deletion in Main FreeTalk, Gallery FreeTalk, and every future character route.
 - Preserve each character's distinct voice, register, dialect, honorifics, forms of address, verbal habits, emotional rhythm, and initiative. Never improve formal prompt compliance by making characters rigid, uniform, editor-like, policy-like, or generically AI-assistant-like.
