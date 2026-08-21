@@ -54,7 +54,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "leadCharacter": "Teacher",
-        "minRivalAffinity": 60,
+        "minRivalAffinity": 0,
         "maxLeadRank": 2,
         "rankedRivalBranches": [
             { "character": "Seoyeon", "next": "day4_teacher_seoyeon_counteroffer" },
@@ -67,7 +67,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "leadCharacter": "Nurse",
-        "minRivalAffinity": 60,
+        "minRivalAffinity": 0,
         "maxLeadRank": 2,
         "rankedRivalBranches": [
             { "character": "Seoyeon", "next": "day4_nurse_seoyeon_counteroffer" },
@@ -540,7 +540,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "backgroundVariant": "cold",
         "character": null,
         "leadCharacter": "Seoyeon",
-        "minRivalAffinity": 60,
+        "minRivalAffinity": 0,
         "maxLeadRank": 2,
         "rankedRivalBranches": [
             { "character": "Dain", "next": "wall_seo_glimpse_1" },
@@ -1036,7 +1036,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/school_back.png",
         "character": null,
         "leadCharacter": "Dain",
-        "minRivalAffinity": 60,
+        "minRivalAffinity": 0,
         "maxLeadRank": 2,
         "rankedRivalBranches": [
             { "character": "Seoyeon", "next": "wall_dain_seo_tempt_1" },
@@ -1402,7 +1402,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "backgroundVariant": "dream",
         "character": null,
         "leadCharacter": "Yuna",
-        "minRivalAffinity": 60,
+        "minRivalAffinity": 0,
         "maxLeadRank": 2,
         "rankedRivalBranches": [
             { "character": "Seoyeon", "next": "wall_yuna_glimpse_1" },
