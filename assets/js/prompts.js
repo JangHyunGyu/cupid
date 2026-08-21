@@ -424,6 +424,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         shy: 'assets/images/characters/dain_shy.png',
         angry: 'assets/images/characters/dain_angry.png',
         sad: 'assets/images/characters/dain_sad.png',
+        pain: 'assets/images/characters/dain_pain.png',
         laugh: 'assets/images/characters/dain_laugh.png',
         pout: 'assets/images/characters/dain_pout.png',
         active: 'assets/images/characters/dain_active.png',
@@ -446,6 +447,8 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         shy: 'assets/images/characters/nurse_shy.png',
         angry: 'assets/images/characters/nurse_angry.png',
         worried: 'assets/images/characters/nurse_worried.png',
+        tired: 'assets/images/characters/nurse_tired.png',
+        dry_smile: 'assets/images/characters/nurse_dry_smile.png',
         flushed: 'assets/images/characters/nurse_flushed.png',
         smile: 'assets/images/characters/nurse_smile.png',
         sad: 'assets/images/characters/nurse_sad.png',
@@ -453,7 +456,9 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
     }),
     Haeun: Object.freeze({
         normal: 'assets/images/characters/haeun_normal.png',
-        worried: 'assets/images/characters/haeun_worried.png'
+        worried: 'assets/images/characters/haeun_worried.png',
+        firm: 'assets/images/characters/haeun_firm.png',
+        relieved: 'assets/images/characters/haeun_relieved.png'
     })
 });
 
@@ -1786,7 +1791,7 @@ function buildSystemPrompt(params) {
     const languageQualityGuard = getLanguageQualityGuard(effectiveLang);
     const nativeStylePolishGuard = getNativeStylePolishGuard(effectiveLang, sceneName, displayName);
     const nativeAntiTranslationGuard = getNativeAntiTranslationGuard(effectiveLang);
-    const expressionNames = Object.keys(getCharacterExpressionSet(sceneName, aiCharName) || { normal: true }).join(", ") || "normal";
+    const expressionNames = Object.keys(getCharacterExpressionSet(sceneName, aiCharName) || { normal: true }).join(",") || "normal";
     const compactStableGuidance = (useEnTemplate ? [
         charAddressingGuideline && `Addressing: ${charAddressingGuideline}`,
         charInteractionGuideline && `Distance/interaction: ${charInteractionGuideline}`,

@@ -251,27 +251,27 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "tour_yuna_event_1"
     },
     "tour_yuna_event_1": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/annex_exhibit_hallway.png",
         "character": null,
         "next": "tour_yuna_event_2"
     },
     "tour_yuna_event_2": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/annex_exhibit_hallway.png",
         "character": "assets/images/characters/yuna_worried.png",
         "next": "tour_yuna_event_3"
     },
     "tour_yuna_event_3": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/annex_exhibit_hallway.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "tour_yuna_event_4"
     },
     "tour_yuna_event_4": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/annex_exhibit_hallway.png",
         "character": "assets/images/characters/yuna_shy.png",
         "next": "tour_yuna_event_5"
     },
     "tour_yuna_event_5": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/annex_exhibit_hallway.png",
         "character": "assets/images/characters/yuna_normal.png",
         "setFlags": ["day5_yuna_signed_story"],
         "next": "tour_yuna_2"
@@ -386,7 +386,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "tour_dain_event_1": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "character": "assets/images/characters/dain_pain.png",
         "next": "tour_dain_event_2"
     },
     "tour_dain_event_2": {

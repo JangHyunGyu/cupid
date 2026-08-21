@@ -148,7 +148,7 @@ class GalleryData {
                 bust: '37-22-35 65H',
                 hobby: '배구, 스포츠 중계',
                 personality: '직진, 승부욕',
-                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'sad', 'pain', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
             },
 
             // 담임선생님 - 원고를 다시 쓰는 교사
@@ -182,7 +182,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: '원예, 명상',
                 personality: '실무적, 침착함',
-                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'smile', 'sad', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'tired', 'dry_smile', 'smile', 'sad', 'bikini']
             }
         },
 
@@ -237,7 +237,7 @@ class GalleryData {
                 bust: '37-22-35 65H',
                 hobby: 'Volleyball, Sports Broadcasting',
                 personality: 'Straightforward, Competitive',
-                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'sad', 'pain', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
             },
 
             // Homeroom Teacher - 원고를 다시 쓰는 교사
@@ -271,7 +271,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: 'Gardening, Meditation',
                 personality: 'Practical, Calm',
-                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'smile', 'sad', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'tired', 'dry_smile', 'smile', 'sad', 'bikini']
             }
         },
 
@@ -320,7 +320,7 @@ class GalleryData {
                 bust: '37-22-35 65H',
                 hobby: 'Voleibol, Transmisión deportiva',
                 personality: 'Directa, Competitiva',
-                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'sad', 'pain', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
             },
             teacher: {
                 id: 'teacher',
@@ -350,7 +350,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: 'Jardinería, Meditación',
                 personality: 'Práctica, Serena',
-                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'smile', 'sad', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'tired', 'dry_smile', 'smile', 'sad', 'bikini']
             }
         },
 
@@ -399,7 +399,7 @@ class GalleryData {
                 bust: '37-22-35 65H',
                 hobby: 'バレーボール、スポーツ中継',
                 personality: 'まっすぐ、負けず嫌い',
-                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'sad', 'pain', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
             },
             teacher: {
                 id: 'teacher',
@@ -429,7 +429,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: '園芸、瞑想',
                 personality: '実務的、冷静',
-                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'smile', 'sad', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'tired', 'dry_smile', 'smile', 'sad', 'bikini']
             }
         },
 
@@ -478,7 +478,7 @@ class GalleryData {
                 bust: '37-22-35 65H',
                 hobby: 'Volley-ball, Retransmission sportive',
                 personality: 'Franche, Compétitive',
-                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'sad', 'pain', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
             },
             teacher: {
                 id: 'teacher',
@@ -508,7 +508,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: 'Jardinage, Méditation',
                 personality: 'Pragmatique, Calme',
-                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'smile', 'sad', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'tired', 'dry_smile', 'smile', 'sad', 'bikini']
             }
         },
 
@@ -557,7 +557,7 @@ class GalleryData {
                 bust: '37-22-35 65H',
                 hobby: 'Volleyball, Sportübertragungen',
                 personality: 'Direkt, Ehrgeizig',
-                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'sad', 'pain', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
             },
             teacher: {
                 id: 'teacher',
@@ -587,7 +587,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: 'Gartenarbeit, Meditation',
                 personality: 'Praktisch, Ruhig',
-                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'smile', 'sad', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'tired', 'dry_smile', 'smile', 'sad', 'bikini']
             }
         },
 
@@ -636,7 +636,7 @@ class GalleryData {
                 bust: '37-22-35 65H',
                 hobby: 'Vôlei, Transmissão esportiva',
                 personality: 'Direta, Competitiva',
-                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'sad', 'pain', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
             },
             teacher: {
                 id: 'teacher',
@@ -666,7 +666,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: 'Jardinagem, Meditação',
                 personality: 'Prática, Tranquila',
-                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'smile', 'sad', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'tired', 'dry_smile', 'smile', 'sad', 'bikini']
             }
         }
     };
@@ -685,10 +685,13 @@ class GalleryData {
             shy2: '수줍음2',     // 수줍은 표정 변형
             angry: '화남',       // 화난 표정
             sad: '슬픔',         // 슬픈 표정
+            pain: '통증',
             laugh: '웃음',       // 웃는 표정
             cry: '울음',         // 우는 표정
             pout: '삐짐',        // 삐친 표정
             worried: '걱정',     // 걱정하는 표정
+            tired: '피곤함',
+            dry_smile: '쓴웃음',
             back: '뒷모습',      // 뒷모습
             smile: '미소',       // 미소짓는 표정
             bored: '지루함',     // 지루해하는 표정
@@ -706,10 +709,13 @@ class GalleryData {
             shy2: 'Shy 2',
             angry: 'Angry',
             sad: 'Sad',
+            pain: 'Pain',
             laugh: 'Laugh',
             cry: 'Cry',
             pout: 'Pout',
             worried: 'Worried',
+            tired: 'Tired',
+            dry_smile: 'Dry Smile',
             back: 'Rear View',
             smile: 'Smile',
             bored: 'Bored',
@@ -727,10 +733,13 @@ class GalleryData {
             shy2: 'Tímida 2',
             angry: 'Enojada',
             sad: 'Triste',
+            pain: 'Dolor',
             laugh: 'Risa',
             cry: 'Llanto',
             pout: 'Puchero',
             worried: 'Preocupada',
+            tired: 'Cansada',
+            dry_smile: 'Sonrisa irónica',
             back: 'Espalda',
             smile: 'Sonrisa',
             bored: 'Aburrida',
@@ -748,10 +757,13 @@ class GalleryData {
             shy2: '照れ（強）',
             angry: '怒り',
             sad: '悲しみ',
+            pain: '痛み',
             laugh: '笑い',
             cry: '泣き顔',
             pout: 'ふくれっ面',
             worried: '心配',
+            tired: '疲れ',
+            dry_smile: '苦笑い',
             back: '後ろ姿',
             smile: '微笑み',
             bored: '退屈',
@@ -769,10 +781,13 @@ class GalleryData {
             shy2: 'Timide 2',
             angry: 'En colère',
             sad: 'Triste',
+            pain: 'Douleur',
             laugh: 'Rieuse',
             cry: 'En pleurs',
             pout: 'Boudeuse',
             worried: 'Inquiète',
+            tired: 'Fatiguée',
+            dry_smile: 'Sourire en coin',
             back: 'De dos',
             smile: 'Souriante',
             bored: 'Ennuyée',
@@ -790,10 +805,13 @@ class GalleryData {
             shy2: 'Schüchtern 2',
             angry: 'Wütend',
             sad: 'Traurig',
+            pain: 'Schmerz',
             laugh: 'Lachen',
             cry: 'Weinen',
             pout: 'Schmollen',
             worried: 'Besorgt',
+            tired: 'Müde',
+            dry_smile: 'Trockenes Lächeln',
             back: 'Rückansicht',
             smile: 'Lächeln',
             bored: 'Gelangweilt',
@@ -811,10 +829,13 @@ class GalleryData {
             shy2: 'Tímida 2',
             angry: 'Brava',
             sad: 'Triste',
+            pain: 'Dor',
             laugh: 'Rindo',
             cry: 'Chorando',
             pout: 'Emburrada',
             worried: 'Preocupada',
+            tired: 'Cansada',
+            dry_smile: 'Sorriso irônico',
             back: 'De costas',
             smile: 'Sorrindo',
             bored: 'Entediada',

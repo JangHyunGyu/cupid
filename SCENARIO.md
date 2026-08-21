@@ -13056,7 +13056,7 @@
 ---
 
 ### `after3_confront_3`
-- 배경: `school_hallway.png`
+- 배경: `school_stairwell.png`
 - 다음: `after3_confront_4`
 
 - 캐릭터: `seyoun_sad.png`
@@ -13065,7 +13065,7 @@
 ---
 
 ### `after3_confront_4`
-- 배경: `school_hallway.png`
+- 배경: `school_stairwell.png`
 - 다음: `after3_confront_5`
 
 - 캐릭터: `seyoun_sad.png`
@@ -13074,7 +13074,7 @@
 ---
 
 ### `after3_confront_5`
-- 배경: `school_hallway.png`
+- 배경: `school_stairwell.png`
 - 다음: `after3_confront_5_b`
 
 - 캐릭터: `seyoun_sad.png`
@@ -13083,7 +13083,7 @@
 ---
 
 ### `after3_confront_5_b`
-- 배경: `school_hallway.png`
+- 배경: `school_stairwell.png`
 - 다음: `after3_confront_5_c`
 
 - 캐릭터: `dain_sad.png`
@@ -13092,7 +13092,7 @@
 ---
 
 ### `after3_confront_5_c`
-- 배경: `school_hallway.png`
+- 배경: `school_stairwell.png`
 - 다음: `after3_confront_6`
 
 - 캐릭터: `dain_sad.png`
@@ -13101,7 +13101,7 @@
 ---
 
 ### `after3_confront_6`
-- 배경: `school_hallway.png`
+- 배경: `school_stairwell.png`
 - 다음: `after3_confront_choice`
 
 - 캐릭터: `seyoun_sad.png`
@@ -13110,7 +13110,7 @@
 ---
 
 ### `after3_confront_choice`
-- 배경: `school_hallway.png`
+- 배경: `school_stairwell.png`
 - 선택지:
   1. "솔직하게 인정한다" → `after3_confront_admit` | Seoyeon -5
   2. "시간대가 다르니까 괜찮을 줄 알았어" → `after3_confront_excuse` | Seoyeon -8
@@ -13122,7 +13122,7 @@
 ---
 
 ### `after3_confront_admit`
-- 배경: `school_hallway.png`
+- 배경: `school_stairwell.png`
 - 다음: `after3_confront_admit_b`
 
 - 캐릭터: `seyoun_sad.png`
@@ -13131,7 +13131,7 @@
 ---
 
 ### `after3_confront_admit_b`
-- 배경: `school_hallway.png`
+- 배경: `school_stairwell.png`
 - 다음: `after3_confront_admit_2`
 
 - 캐릭터: `seyoun_sad.png`
@@ -13140,7 +13140,7 @@
 ---
 
 ### `after3_confront_admit_2`
-- 배경: `school_hallway.png`
+- 배경: `school_stairwell.png`
 - 다음: `after3_confront_admit_3`
 
 - 캐릭터: `seyoun_cry.png`
@@ -13149,7 +13149,7 @@
 ---
 
 ### `after3_confront_admit_3`
-- 배경: `school_hallway.png`
+- 배경: `school_stairwell.png`
 - 다음: `after3_confront_admit_4`
 
 - 캐릭터: `seyoun_cry.png`
@@ -13158,7 +13158,7 @@
 ---
 
 ### `after3_confront_admit_4`
-- 배경: `school_hallway.png`
+- 배경: `school_stairwell.png`
 - 다음: `after3_confront_admit_4_b`
 
 - 캐릭터: `seyoun_sad.png`
@@ -13194,7 +13194,7 @@
 ---
 
 ### `after3_confront_excuse`
-- 배경: `school_hallway.png`
+- 배경: `school_stairwell.png`
 - 다음: `after3_confront_excuse_b`
 
 - 캐릭터: `seyoun_angry.png`
@@ -13203,7 +13203,7 @@
 ---
 
 ### `after3_confront_excuse_b`
-- 배경: `school_hallway.png`
+- 배경: `school_stairwell.png`
 - 다음: `after3_confront_excuse_2`
 
 - 캐릭터: `seyoun_angry.png`
@@ -13212,7 +13212,7 @@
 ---
 
 ### `after3_confront_excuse_2`
-- 배경: `school_hallway.png`
+- 배경: `school_stairwell.png`
 - 다음: `after3_confront_excuse_2_b`
 
 - 캐릭터: `seyoun_angry.png`
@@ -13221,7 +13221,7 @@
 ---
 
 ### `after3_confront_excuse_2_b`
-- 배경: `school_hallway.png`
+- 배경: `school_stairwell.png`
 - 다음: `after3_confront_end`
 
 - 캐릭터: `seyoun_angry.png`
@@ -13230,7 +13230,7 @@
 ---
 
 ### `after3_confront_lie_b`
-- 배경: `school_hallway.png`
+- 배경: `school_stairwell.png`
 - 다음: `after3_confront_lie`
 
 - 캐릭터: `seyoun_sad.png`
@@ -13239,7 +13239,7 @@
 ---
 
 ### `after3_confront_lie`
-- 배경: `school_hallway.png`
+- 배경: `school_stairwell.png`
 - 다음: `after3_confront_lie_2`
 
 - 캐릭터: `seyoun_sad.png`
@@ -13295,7 +13295,7 @@
 ---
 
 ### `after3_group_teacher_companion`
-- 배경: `room_school.png`
+- 배경: `school_event_classroom.png`
 - 타입: `group_free_talk`
 - 다음: `after3_group_return`
 
@@ -13582,7 +13582,7 @@
 - 배경: `school_hallway.png`
 - 다음: `haeun_warn_6_b`
 
-- 캐릭터: `haeun_normal.png`
+- 캐릭터: `haeun_firm.png`
 **하은**: 제가 따라가면 또 괜찮다고 할 거예요. {name} 씨 말은 들을지도 몰라요.
 
 ---
@@ -13591,7 +13591,7 @@
 - 배경: `school_hallway.png`
 - 다음: `haeun_warn_7`
 
-- 캐릭터: `haeun_normal.png`
+- 캐릭터: `haeun_firm.png`
 **하은**: *하은은 학생회 팔찌를 손목 안쪽으로 돌린다.*
 
 ---
@@ -13618,7 +13618,7 @@
 - 배경: `school_hallway.png`
 - 다음: `haeun_freetalk`
 
-- 캐릭터: `haeun_normal.png`
+- 캐릭터: `haeun_firm.png`
 **하은**: 설득하라는 건 아니에요. 그냥 혼자 두지만 말아 주세요.
 
 ---
@@ -13651,7 +13651,7 @@
 - 배경: `school_hallway.png`
 - 다음: `haeun_affinity_high_2`
 
-- 캐릭터: `haeun_normal.png`
+- 캐릭터: `haeun_relieved.png`
 **하은**: *하은은 한동안 {name}의 얼굴을 살피다 손목 안쪽으로 돌아간 학생회 팔찌를 바로잡는다.* ...그 말은 믿을게요.
 
 ---
@@ -13660,7 +13660,7 @@
 - 배경: `school_hallway.png`
 - 다음: `haeun_warn_7_d`
 
-- 캐릭터: `haeun_normal.png`
+- 캐릭터: `haeun_relieved.png`
 **하은**: 서연 선배가 괜찮다고 해도 오늘은 한 번만 더 물어봐 주세요. 안 괜찮을 때도 그렇게 말하는 사람이니까.
 
 ---
@@ -15414,7 +15414,7 @@
 - 배경톤: `cold`
 - 다음: `hidden_nurse_d4_2_d`
 
-- 캐릭터: `nurse_shy.png`
+- 캐릭터: `nurse_dry_smile.png`
 **보건선생님**: 오늘은 봉사자. 다치면 그때 다시 환자.
 
 ---
@@ -15452,7 +15452,7 @@
 - 배경톤: `cold`
 - 다음: `hidden_nurse_d4_2_h`
 
-- 캐릭터: `nurse_shy.png`
+- 캐릭터: `nurse_tired.png`
 **보건선생님**: 대학병원에선 이런 준비도 혼자 맡는 날이 많았어.
 
 ---
@@ -15480,7 +15480,7 @@
 - 배경톤: `cold`
 - 다음: `hidden_nurse_d4_4_b`
 
-- 캐릭터: `nurse_shy.png`
+- 캐릭터: `nurse_tired.png`
 **보건선생님**: 야간 근무 때는 간호사 세 명 몫을 혼자 하는 날도 있었어.
 
 ---
@@ -15498,7 +15498,7 @@
 - 배경: `nurse_room.png`
 - 다음: `hidden_nurse_d4_4_d`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `nurse_tired.png`
 **보건선생님**: *서류철을 덮는다. 볼펜 끝이 표지 위에서 한 번 미끄러진다.*
 
 ---
@@ -15507,7 +15507,7 @@
 - 배경: `nurse_room.png`
 - 다음: `hidden_nurse_d4_4_e`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `nurse_tired.png`
 **보건선생님**: 그때 나한테 제일 힘들었던 건 일의 양이 아니었어.
 
 ---
@@ -22720,7 +22720,7 @@
 ---
 
 ### `tour_yuna_event_1`
-- 배경: `school_hallway.png`
+- 배경: `annex_exhibit_hallway.png`
 - 다음: `tour_yuna_event_2`
 
 - 캐릭터: `없음`
@@ -22729,7 +22729,7 @@
 ---
 
 ### `tour_yuna_event_2`
-- 배경: `school_hallway.png`
+- 배경: `annex_exhibit_hallway.png`
 - 다음: `tour_yuna_event_3`
 
 - 캐릭터: `yuna_worried.png`
@@ -22738,7 +22738,7 @@
 ---
 
 ### `tour_yuna_event_3`
-- 배경: `school_hallway.png`
+- 배경: `annex_exhibit_hallway.png`
 - 다음: `tour_yuna_event_4`
 
 - 캐릭터: `yuna_normal.png`
@@ -22747,7 +22747,7 @@
 ---
 
 ### `tour_yuna_event_4`
-- 배경: `school_hallway.png`
+- 배경: `annex_exhibit_hallway.png`
 - 다음: `tour_yuna_event_5`
 
 - 캐릭터: `yuna_shy.png`
@@ -22756,7 +22756,7 @@
 ---
 
 ### `tour_yuna_event_5`
-- 배경: `school_hallway.png`
+- 배경: `annex_exhibit_hallway.png`
 - 플래그: `day5_yuna_signed_story`
 - 다음: `tour_yuna_2`
 
@@ -22950,7 +22950,7 @@
 - 배경: `gym.png`
 - 다음: `tour_dain_event_2`
 
-- 캐릭터: `dain_sad.png`
+- 캐릭터: `dain_pain.png`
 **{name}**: *코치에게 전화가 온다. 다인은 체육대회 시범 경기에 뛸 수 있느냐는 말을 끝까지 듣는다.*
 
 ---
