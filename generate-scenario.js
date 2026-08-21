@@ -78,6 +78,11 @@ function collectSceneTargets(scene) {
         for (const branch of scene.affinityBranches) addTarget(branch.next);
     }
 
+    if (scene.rankedRivalBranches) {
+        for (const branch of scene.rankedRivalBranches) addTarget(branch.next);
+        addTarget(scene.rankedRivalFallback);
+    }
+
     if (scene.choices) {
         for (const choice of scene.choices) {
             addTarget(choice.next);
@@ -206,6 +211,28 @@ function formatAffinityBranches(scene) {
     return lines;
 }
 
+function formatRankedRivalBranches(scene) {
+    const lines = [
+        `- 실시간 순위 분기:`,
+        `  - 루트 캐릭터: \`${scene.leadCharacter}\` (상위 ${scene.maxLeadRank ?? 1}명)`
+    ];
+
+    if (scene.minLeadAffinity !== undefined) {
+        lines.push(`  - 루트 최소 호감도: ${scene.minLeadAffinity}`);
+    }
+    if (scene.minRivalAffinity !== undefined) {
+        lines.push(`  - 라이벌 최소 호감도: ${scene.minRivalAffinity}`);
+    }
+    for (const branch of scene.rankedRivalBranches) {
+        lines.push(`  - [\`${branch.character}\`] → \`${branch.next}\``);
+    }
+    if (scene.rankedRivalFallback) {
+        lines.push(`  - [기준 미달] → \`${scene.rankedRivalFallback}\``);
+    }
+
+    return lines;
+}
+
 function formatChoiceLine(choice, idx, choiceText) {
     // 선택지의 모든 플래그 수집 (setFlags 배열 + setFlag 단수)
     const choiceFlags = [];
@@ -277,6 +304,8 @@ function formatScene(sceneId, scene, i18n) {
             const choiceText = entry?.choices?.[idx] ?? null;
             lines.push(formatChoiceLine(choice, idx, choiceText));
         });
+    } else if (scene.rankedRivalBranches) {
+        lines.push(...formatRankedRivalBranches(scene));
     } else if (scene.affinityBranches) {
         lines.push(...formatAffinityBranches(scene));
     } else if (scene.branches) {

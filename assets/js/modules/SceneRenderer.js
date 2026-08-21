@@ -230,7 +230,7 @@ class SceneRenderer {
      * 다음 씬 ID 결정 (분기 로직 처리)
      *
      * ▶ 분기 유형:
-     *   1. 2위 라이벌 분기 (rankedRivalBranches): 선택 루트가 선두일 때 실제 2위 캐릭터로
+     *   1. 상위 라이벌 분기 (rankedRivalBranches): 선택 루트의 허용 순위 안에서 실제 최고 호감도 라이벌로
      *   2. 호감도 분기 (affinityBranches): 호감도에 따라 다른 씬으로
      *   3. 플래그 분기 (branches): 조건에 따라 다른 씬으로
      *   4. 최고 호감도 분기 (selectByHighestAffinity): 가장 친한 캐릭터로
@@ -276,12 +276,16 @@ class SceneRenderer {
             }
         }
 
-        // 🔀 실시간 2위 라이벌 분기: 선택 루트가 충분한 호감도로 선두일 때만 유혹 이벤트 진입
+        // 실시간 라이벌 분기: 선택 루트의 허용 순위와 라이벌 호감도 확인
         if (Array.isArray(scene.rankedRivalBranches) && scene.rankedRivalBranches.length > 0) {
             const leadCharacter = scene.leadCharacter;
             const leadAffinity = this.stateManager.getAffinity(leadCharacter);
             const minLeadAffinity = Number(scene.minLeadAffinity ?? -100);
             const minRivalAffinity = Number(scene.minRivalAffinity ?? -100);
+            const configuredMaxLeadRank = Number(scene.maxLeadRank ?? 1);
+            const maxLeadRank = Number.isInteger(configuredMaxLeadRank) && configuredMaxLeadRank > 0
+                ? configuredMaxLeadRank
+                : 1;
             const rankedRivals = scene.rankedRivalBranches
                 .filter(branch => branch.character && branch.next)
                 .map((branch, index) => ({
@@ -292,9 +296,10 @@ class SceneRenderer {
                 .sort((a, b) => b.affinity - a.affinity || a._originalIndex - b._originalIndex);
 
             const strongestRival = rankedRivals[0];
-            const leadIsHighest = strongestRival && leadAffinity >= strongestRival.affinity;
+            const leadRank = 1 + rankedRivals.filter(rival => rival.affinity > leadAffinity).length;
+            const leadRankIsEligible = strongestRival && leadRank <= maxLeadRank;
             const rivalIsEligible = strongestRival && strongestRival.affinity >= minRivalAffinity;
-            if (leadIsHighest && rivalIsEligible && leadAffinity >= minLeadAffinity) return strongestRival.next;
+            if (leadRankIsEligible && rivalIsEligible && leadAffinity >= minLeadAffinity) return strongestRival.next;
             if (scene.rankedRivalFallback) return scene.rankedRivalFallback;
         }
 
