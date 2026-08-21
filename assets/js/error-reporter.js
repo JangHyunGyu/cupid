@@ -3,7 +3,7 @@
 
     if (window.__cupidErrorReporterInstalled) return;
 
-    var VERSION = '20260817-script-retry';
+    var VERSION = '20260821-resource-retry';
     var ERROR_ENDPOINT = 'https://chatbot-api.yama5993.workers.dev/error-logs';
     var QUEUE_KEY = 'cupid-error-queue-v2';
     var SESSION_KEY = 'cupid-error-session-v2';
@@ -270,19 +270,28 @@
         persistQueue();
     }
 
-    function tryRecoverSameOriginScript(target, resource) {
+    function tryRecoverSameOriginResource(target, resource, tagName) {
         if (!target || typeof target.getAttribute !== 'function') return false;
 
-        var attempts = parseInt(target.getAttribute('data-cupid-script-retries') || '0', 10);
+        var retryAttribute = tagName === 'SCRIPT'
+            ? 'data-cupid-script-retries'
+            : 'data-cupid-stylesheet-retries';
+        if (tagName !== 'SCRIPT'
+            && !(tagName === 'LINK' && String(target.rel || '').toLowerCase() === 'stylesheet')) {
+            return false;
+        }
+
+        var attempts = parseInt(target.getAttribute(retryAttribute) || '0', 10);
         if (attempts >= 2) return false;
 
         try {
             var retryUrl = new URL(resource, window.location.href);
             if (retryUrl.origin !== window.location.origin) return false;
-            target.setAttribute('data-cupid-script-retries', String(attempts + 1));
+            target.setAttribute(retryAttribute, String(attempts + 1));
             retryUrl.searchParams.set('retry', Date.now() + '-' + (attempts + 1));
             window.setTimeout(function () {
-                target.src = retryUrl.href;
+                if (tagName === 'SCRIPT') target.src = retryUrl.href;
+                else target.href = retryUrl.href;
             }, 300 * (attempts + 1));
             return true;
         } catch (_) {
@@ -312,7 +321,7 @@
             var resource = target.src || target.href || '';
             if (isIgnorableResourceError(tagName, resource)) return;
             if (target.getAttribute && target.getAttribute('data-cupid-managed-script') === 'true') return;
-            if (tagName === 'SCRIPT' && tryRecoverSameOriginScript(target, resource)) return;
+            if (tryRecoverSameOriginResource(target, resource, tagName)) return;
             report(
                 'ResourceError',
                 'Failed to load resource: ' + (tagName || 'UNKNOWN'),

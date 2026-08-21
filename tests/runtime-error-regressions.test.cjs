@@ -116,7 +116,7 @@ test('legacy chat migration uses the durable queue before network access', () =>
     assert.doesNotMatch(migrationPost, /await postCupidChatLogEntry\(entry\)/);
 });
 
-test('same-origin script failures retry twice before reporting a persistent failure', async () => {
+test('same-origin script and stylesheet failures retry twice before reporting a persistent failure', async () => {
     const listeners = new Map();
     const timers = [];
     const reports = [];
@@ -196,4 +196,30 @@ test('same-origin script failures retry twice before reporting a persistent fail
     await Promise.resolve();
     assert.equal(reports.length, 1);
     assert.equal(reports[0].errorType, 'ResourceError');
+
+    const stylesheetAttributes = new Map();
+    const stylesheetTarget = {
+        tagName: 'LINK',
+        rel: 'stylesheet',
+        href: 'https://cupid.archerlab.dev/assets/css/style.css?v=2.9.7',
+        getAttribute(name) { return stylesheetAttributes.get(name) || null; },
+        setAttribute(name, value) { stylesheetAttributes.set(name, value); }
+    };
+    const fireStylesheetError = () => listeners.get('error')({ target: stylesheetTarget });
+
+    fireStylesheetError();
+    assert.equal(reports.length, 1);
+    assert.equal(stylesheetAttributes.get('data-cupid-stylesheet-retries'), '1');
+    timers.filter(timer => timer.delay === 300).at(-1).callback();
+    assert.match(stylesheetTarget.href, /[?&]retry=/);
+
+    fireStylesheetError();
+    assert.equal(reports.length, 1);
+    assert.equal(stylesheetAttributes.get('data-cupid-stylesheet-retries'), '2');
+    timers.filter(timer => timer.delay === 600).at(-1).callback();
+
+    fireStylesheetError();
+    await Promise.resolve();
+    assert.equal(reports.length, 2);
+    assert.equal(reports[1].errorType, 'ResourceError');
 });
