@@ -404,6 +404,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         worried: 'assets/images/characters/seyoun_worried.png',
         back: 'assets/images/characters/seyoun_back.png',
         flushed: 'assets/images/characters/seyoun_flushed.png',
+        climax: 'assets/images/characters/seyoun_climax.png',
         bikini: 'assets/images/characters/seyoun_bikini.png'
     }),
     Yuna: Object.freeze({
@@ -415,6 +416,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         worried: 'assets/images/characters/yuna_worried.png',
         bored: 'assets/images/characters/yuna_bored.png',
         flushed: 'assets/images/characters/yuna_flushed.png',
+        climax: 'assets/images/characters/yuna_climax.png',
         laugh: 'assets/images/characters/yuna_laugh.png',
         pout: 'assets/images/characters/yuna_pout.png',
         bikini: 'assets/images/characters/yuna_bikini.png'
@@ -430,6 +432,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         active: 'assets/images/characters/dain_active.png',
         sweat: 'assets/images/characters/dain_sweat.png',
         flushed: 'assets/images/characters/dain_flushed.png',
+        climax: 'assets/images/characters/dain_climax.png',
         bikini: 'assets/images/characters/dain_bikini.png'
     }),
     Teacher: Object.freeze({
@@ -440,6 +443,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         sad: 'assets/images/characters/teacher_sad.png',
         worried: 'assets/images/characters/teacher_worried.png',
         flushed: 'assets/images/characters/teacher_flushed.png',
+        climax: 'assets/images/characters/teacher_climax.png',
         bikini: 'assets/images/characters/teacher_bikini.png'
     }),
     Nurse: Object.freeze({
@@ -450,6 +454,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         tired: 'assets/images/characters/nurse_tired.png',
         dry_smile: 'assets/images/characters/nurse_dry_smile.png',
         flushed: 'assets/images/characters/nurse_flushed.png',
+        climax: 'assets/images/characters/nurse_climax.png',
         smile: 'assets/images/characters/nurse_smile.png',
         sad: 'assets/images/characters/nurse_sad.png',
         bikini: 'assets/images/characters/nurse_bikini.png'

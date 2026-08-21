@@ -698,6 +698,7 @@ class GalleryData {
             active: '활발',      // 활발한 표정
             sweat: '땀흘림',     // 땀에 젖은 표정
             flushed: '달아오름',
+            climax: '절정',
             bikini: '???',       // 특별 표정 라벨 (호감도 100 + 프리토킹 30회 해금). 미스터리 연출 위해 '???' 사용 — 해금 전까지 무엇인지 숨김
             awkward: '어색함'
         },
@@ -722,6 +723,7 @@ class GalleryData {
             active: 'Active',
             sweat: 'Sweaty',
             flushed: 'Flushed',
+            climax: 'Climax',
             bikini: '???',
             awkward: 'Awkward'
         },
@@ -746,6 +748,7 @@ class GalleryData {
             active: 'Activa',
             sweat: 'Sudorosa',
             flushed: 'Sonrojada',
+            climax: 'Clímax',
             bikini: '???',
             awkward: 'Incómoda'
         },
@@ -770,6 +773,7 @@ class GalleryData {
             active: '元気',
             sweat: '汗',
             flushed: '火照り',
+            climax: '絶頂',
             bikini: '???',
             awkward: '気まずい'
         },
@@ -794,6 +798,7 @@ class GalleryData {
             active: 'Dynamique',
             sweat: 'En sueur',
             flushed: 'Rougissante',
+            climax: 'Orgasme',
             bikini: '???',
             awkward: 'Gênée'
         },
@@ -818,6 +823,7 @@ class GalleryData {
             active: 'Aktiv',
             sweat: 'Verschwitzt',
             flushed: 'Errötet',
+            climax: 'Höhepunkt',
             bikini: '???',
             awkward: 'Verlegen'
         },
@@ -842,6 +848,7 @@ class GalleryData {
             active: 'Animada',
             sweat: 'Suada',
             flushed: 'Corada',
+            climax: 'Clímax',
             bikini: '???',
             awkward: 'Sem jeito'
         }
@@ -1905,6 +1912,15 @@ class GalleryData {
      */
     static getBGMList(lang) {
         return this.bgm[lang] || [];
+    }
+}
+
+for (const localizedCharacters of Object.values(GalleryData.characters)) {
+    for (const charId of ['seyoun', 'yuna', 'dain', 'teacher', 'nurse']) {
+        const expressions = localizedCharacters[charId]?.expressions;
+        if (!Array.isArray(expressions) || expressions.includes('climax')) continue;
+        const bikiniIndex = expressions.indexOf('bikini');
+        expressions.splice(bikiniIndex >= 0 ? bikiniIndex : expressions.length, 0, 'climax');
     }
 }
 

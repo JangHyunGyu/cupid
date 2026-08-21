@@ -117,11 +117,11 @@ class GalleryFreeTalk {
 
         // 캐릭터별 표정 매핑
         this.CHAR_EXPRESSIONS = {
-            seyoun: ['normal', 'shy', 'shy2', 'pout', 'angry', 'cry', 'laugh', 'worried', 'sad', 'flushed'],
-            yuna: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'worried', 'laugh', 'pout'],
-            dain: ['normal', 'shy', 'angry', 'laugh', 'sad', 'pout', 'flushed'],
-            teacher: ['normal', 'angry', 'shy', 'sad', 'smile', 'flushed', 'worried'],
-            nurse: ['normal', 'angry', 'shy', 'flushed', 'worried', 'smile', 'sad']
+            seyoun: ['normal', 'shy', 'shy2', 'pout', 'angry', 'cry', 'laugh', 'worried', 'sad', 'flushed', 'climax'],
+            yuna: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'climax', 'worried', 'laugh', 'pout'],
+            dain: ['normal', 'shy', 'angry', 'laugh', 'sad', 'pout', 'flushed', 'climax'],
+            teacher: ['normal', 'angry', 'shy', 'sad', 'smile', 'flushed', 'climax', 'worried'],
+            nurse: ['normal', 'angry', 'shy', 'flushed', 'climax', 'worried', 'smile', 'sad']
         };
 
         // 캐릭터별 연인 모드 성격 프롬프트 (7개 언어)

@@ -207,9 +207,9 @@
     function buildExpressionAffinityGuidance(lang = 'ko') {
         const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
         if (isKo) {
-            return 'expression은 이번 응답에 드러난 표정, affinity는 관계의 내적 변화입니다. 둘을 기계적으로 같은 방향에 맞추지 마세요. 감동의 눈물이나 상처를 감춘 웃음처럼 장면상 타당한 불일치를 허용하고, 맞는 허용 표정 하나를 고르세요.';
+            return 'expression은 겉표정, affinity는 관계 변화. 기계적으로 같은 방향에 맞추지 마세요. climax는 성인 간 성행위에서 이번 응답에 절정이 있을 때만, 그 전에는 flushed를 쓰세요.';
         }
-        return 'expression is the visible face; affinity is the relationship’s internal change. Do not mechanically force them in the same direction. Allow scene-supported mismatch (grateful tears, a smile hiding hurt) and choose one fitting allowed expression.';
+        return 'expression is the visible face; affinity is relationship change. Do not mechanically force them in the same direction. Use climax only for an orgasm in this response during consensual adult sex; use flushed before it.';
     }
 
     function normalizeAvailableExpression(expression, validExpressions = []) {
