@@ -454,7 +454,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         tired: 'assets/images/characters/nurse_tired.png',
         dry_smile: 'assets/images/characters/nurse_dry_smile.png',
         flushed: 'assets/images/characters/nurse_flushed.png',
-        climax: 'assets/images/characters/nurse_climax.png',
+        climax: 'assets/images/characters/nurse_flushed.png',
         smile: 'assets/images/characters/nurse_smile.png',
         sad: 'assets/images/characters/nurse_sad.png',
         bikini: 'assets/images/characters/nurse_bikini.png'
