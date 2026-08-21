@@ -281,6 +281,7 @@ function formatScene(sceneId, scene, i18n) {
     if (scene.backgroundVariant) lines.push(`- 배경톤: \`${scene.backgroundVariant}\``);
     if (scene.bgm) lines.push(`- BGM: \`${scene.bgm}\``);
     if (scene.type) lines.push(`- 타입: \`${scene.type}\``);
+    if (scene.affinityLocked === true) lines.push('- 호감도 변동: `없음`');
     if (scene.condition) lines.push(`- 조건: \`${scene.condition}\``);
     if (scene.excludeCondition) lines.push(`- 제외조건: \`${scene.excludeCondition}\``);
 

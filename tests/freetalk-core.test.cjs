@@ -261,6 +261,62 @@ test('game and gallery affinity paths share the core normalizer', () => {
     assert.match(read('assets/js/gallery-freetalk.js'), /normalizeAvailableExpression/);
 });
 
+test('after-ending free talk ignores positive and negative affinity changes at runtime', () => {
+    const runtimeWindow = { CupidFreeTalkCore: core };
+    const sandbox = {
+        window: runtimeWindow,
+        CHAR_NAME_MAP: { 서연: 'Seoyeon' },
+        DEFAULT_MAX_FREE_TALK_TURNS: 3,
+        document: { documentElement: { lang: 'ko' } },
+        console,
+        setTimeout,
+        clearTimeout,
+        Object,
+        String,
+        Number,
+        Array,
+        Map,
+        Set,
+        Math,
+        JSON,
+        Promise,
+        Error
+    };
+    vm.runInNewContext(read('assets/js/modules/FreeTalkSystem.js'), sandbox);
+
+    let affinity = 64;
+    let changeCalls = 0;
+    const stateManager = {
+        stats: { Seoyeon: { affinity } },
+        getAffinity: () => affinity,
+        changeAffinity: (_character, amount) => {
+            changeCalls++;
+            affinity += amount;
+            return affinity;
+        }
+    };
+    const galleryManager = {
+        updateMaxAffinity: () => assert.fail('locked scene updated gallery affinity'),
+        checkAffinityUnlock: () => assert.fail('locked scene checked an affinity unlock')
+    };
+    const uiManager = {
+        showAffinityChange: () => assert.fail('locked scene displayed an affinity change')
+    };
+    const system = new runtimeWindow.FreeTalkSystem(stateManager, galleryManager, uiManager, {});
+    const scene = { name: '서연', affinityLocked: true };
+
+    for (const requestedChange of [5, -50]) {
+        const result = system.applyAffinity(requestedChange, scene);
+        assert.equal(result.change, 0);
+        assert.equal(result.value, 64);
+        assert.equal(result.requestedChange, 0);
+        assert.equal(result.appliedChange, 0);
+    }
+    assert.equal(system.processStatsTags('계속 이야기해. [STATS: affinity -50]', scene), '계속 이야기해.');
+    assert.equal(affinity, 64);
+    assert.equal(changeCalls, 0);
+});
+
 test('visible payload guard blocks nested or malformed JSON protocol text', () => {
     assert.equal(
         core.getVisibleProtocolIssue({
@@ -345,6 +401,15 @@ test('main and gallery prompts avoid a single numeric affinity anchor', () => {
     assert.match(gallery, /window\.buildCupidJsonOutputContract\(/);
     assert.doesNotMatch(prompts, /"affinity":-1/);
     assert.doesNotMatch(gallery, /"affinity":-1/);
+});
+
+test('after-ending prompt contract fixes affinity at zero', () => {
+    const prompts = read('assets/js/prompts.js');
+    const freeTalkSystem = read('assets/js/modules/FreeTalkSystem.js');
+    assert.match(prompts, /affinityLocked = false/);
+    assert.match(prompts, /affinity는 항상 0입니다/);
+    assert.match(prompts, /affinity must always be 0 in this scene/);
+    assert.match(freeTalkSystem, /affinityLocked: scene\.affinityLocked === true/);
 });
 
 test('gallery incident categories preserve 45/45/10 weighting when crisis is eligible', () => {

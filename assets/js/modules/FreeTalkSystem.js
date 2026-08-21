@@ -503,7 +503,8 @@ class FreeTalkSystem {
             promptData,
             playerName: this.stateManager.playerName,
             knowsName,
-            datingGuideline
+            datingGuideline,
+            affinityLocked: scene.affinityLocked === true
         }) : "";
         const systemPrompt = normalizeFreeTalkPromptBlockForCache(rawSystemPrompt);
 
@@ -2472,6 +2473,9 @@ class FreeTalkSystem {
         if (!this.stateManager.stats[charKey]) return null;
 
         const previousValue = this.stateManager.getAffinity(charKey);
+        if (scene.affinityLocked === true) {
+            return { change: 0, value: previousValue, requestedChange: 0, appliedChange: 0 };
+        }
         // 게임·갤러리 공용 턴당 호감도 범위: -50 ~ +5
         const requestedChange = CupidFreeTalkCore.normalizeAffinityChange(change);
         if (requestedChange === 0) {
@@ -2576,6 +2580,7 @@ class FreeTalkSystem {
      */
     processStatsTags(reply, scene) {
         const statsRegex = /\[STATS:\s*affinity\s*([+-]?\d+)\]/gi;
+        if (scene.affinityLocked === true) return reply.replace(statsRegex, "").trim();
         let statMatch;
 
         // 모든 스탯 태그 찾아서 처리

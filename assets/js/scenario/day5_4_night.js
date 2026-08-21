@@ -2264,6 +2264,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },
@@ -2271,6 +2272,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/seyoun_room.png",
         "character": "assets/images/characters/seyoun_shy.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },
@@ -2278,6 +2280,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },
@@ -2285,6 +2288,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },
@@ -2292,6 +2296,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_laugh.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },
@@ -2317,6 +2322,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_smile.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },
@@ -2324,6 +2330,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/yuna_secret_rooftop.png",
         "character": "assets/images/characters/yuna_smile.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },
@@ -2331,6 +2338,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/yuna_normal.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },
@@ -2338,6 +2346,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/library_old.png",
         "character": "assets/images/characters/yuna_sad.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },
@@ -2345,6 +2354,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/yuna_smile.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },
@@ -2370,6 +2380,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/dain_broadcast_booth.png",
         "character": "assets/images/characters/dain_laugh.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },
@@ -2377,6 +2388,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_shy.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },
@@ -2384,6 +2396,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/dain_normal.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },
@@ -2391,6 +2404,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },
@@ -2398,6 +2412,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/dain_laugh.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },
@@ -2422,6 +2437,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/teacher_smile.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },
@@ -2429,6 +2445,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/bookstore.png",
         "character": "assets/images/characters/teacher_smile.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },
@@ -2436,6 +2453,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },
@@ -2444,6 +2462,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "backgroundVariant": "empty",
         "character": "assets/images/characters/teacher_sad.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },
@@ -2468,6 +2487,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/nurse_house.png",
         "character": "assets/images/characters/nurse_normal.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },
@@ -2475,6 +2495,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/nurse_normal.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },
@@ -2482,6 +2503,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },
@@ -2489,6 +2511,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "type": "free_talk",
+        "affinityLocked": true,
         "maxTurns": 5,
         "next": "day5_credits"
     },

@@ -1710,10 +1710,29 @@ window.recoverCupidRoleplayQualityFallback = recoverCupidRoleplayQualityFallback
 window.buildCupidRoleplayQualityRepairBlock = buildCupidRoleplayQualityRepairBlock;
 
 function buildCupidJsonOutputContract(lang, expressionNames, expressionAffinityGuidance, {
-    includeForcedSexualViolation = false
+    includeForcedSexualViolation = false,
+    affinityLocked = false
 } = {}) {
     const expressions = String(expressionNames || 'normal');
     const guidance = String(expressionAffinityGuidance || '').trim();
+    if (affinityLocked && lang === 'ko') {
+        const violationField = includeForcedSexualViolation ? ',"forcedSexualViolation":"none"' : '';
+        const violationRule = includeForcedSexualViolation
+            ? '\nforcedSexualViolation="rape"(비동의 삽입)|"molestation"(비동의 성접촉)|"none".'
+            : '';
+        return `JSON만 출력: {"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":0${violationField}}
+affinity는 항상 0입니다.${violationRule}
+허용 type: narration, dialogue. segments는 비어 있지 않아야 합니다. 표정: ${expressions}. ${guidance}`;
+    }
+    if (affinityLocked) {
+        const violationField = includeForcedSexualViolation ? ',"forcedSexualViolation":"none"' : '';
+        const violationRule = includeForcedSexualViolation
+            ? '\nforcedSexualViolation="rape" (nonconsensual penetration), "molestation" (other nonconsensual sexual contact), or "none".'
+            : '';
+        return `JSON only: {"segments":[{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":0${violationField}}
+affinity must always be 0 in this scene.${violationRule}
+Types: narration/dialogue. segments must be non-empty. Expressions: ${expressions}. ${guidance}`;
+    }
     if (!includeForcedSexualViolation && lang === 'ko') {
         return `JSON만 출력: {"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":<판정한 정수>}
 세 필드는 필수이며 affinity는 위 기준으로 고른 -50~+5 정수입니다. 예시나 기본값 0을 복사하지 않습니다.
@@ -1757,7 +1776,8 @@ function buildSystemPrompt(params) {
         promptData,
         playerName,
         knowsName,
-        datingGuideline
+        datingGuideline,
+        affinityLocked = false
     } = params;
 
     // Determine effective language: use lang if provided, fallback to isEn
@@ -1851,13 +1871,17 @@ function buildSystemPrompt(params) {
             : "대면 입력은 이미 장면 안에서 나온 말, 행동, 침묵, 정정, 단서 가운데 하나입니다.");
     const livingInitiativeRule = buildCupidLivingInitiativeRule(effectiveLang);
     const thirdPersonAdultCameraRule = buildCupidThirdPersonAdultCameraRule(effectiveLang);
-    const affinityChangeGuidance = window.CupidFreeTalkCore.buildAffinityChangeGuidance(effectiveLang);
+    const affinityChangeGuidance = affinityLocked
+        ? (useEnTemplate
+            ? 'This after-ending conversation does not change affinity. Set affinity to 0 regardless of the user input.'
+            : '엔딩 후 대화에서는 호감도가 변하지 않습니다. 사용자 입력과 관계없이 affinity를 0으로 기록하세요.')
+        : window.CupidFreeTalkCore.buildAffinityChangeGuidance(effectiveLang);
     const expressionAffinityGuidance = window.CupidFreeTalkCore.buildExpressionAffinityGuidance(effectiveLang);
     const jsonOutputContract = buildCupidJsonOutputContract(
         effectiveLang,
         expressionNames,
         expressionAffinityGuidance,
-        { includeForcedSexualViolation: true }
+        { includeForcedSexualViolation: true, affinityLocked }
     );
     const compactLiveState = useEnTemplate
         ? `State: place=${locationName || 'current scene'}; user=${playerName || 'the user'}; knowsName=${knowsName ? 'yes' : 'no'}; affinity=${affinity}\nContext: ${context}`

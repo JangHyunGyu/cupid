@@ -272,6 +272,11 @@ function parse() {
                 continue;
             }
 
+            if (meta === '호감도 변동: `없음`') {
+                currentScene.affinityLocked = true;
+                continue;
+            }
+
             // 조건
             const condMatch = meta.match(/^조건: `([^`]+)`$/);
             if (condMatch) {

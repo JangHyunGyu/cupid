@@ -684,7 +684,7 @@ test('competitive scenes retain both relationship tradeoffs and add two all-nega
     }
 });
 
-test('authored routes preserve the shared 120/130 ceiling after added group turns', () => {
+test('authored routes preserve the shared 120 ceiling after added group turns', () => {
     const optimalRouteEffects = {
         Seoyeon: [
             ['seoyeon_choice', 0], ['lunch_seo_3'], ['lunch_seo_choice', 0],
@@ -775,22 +775,34 @@ test('authored routes preserve the shared 120/130 ceiling after added group turn
     assert.equal(scenes.hidden_nurse_d5_7_both.stats.Nurse.affinity, 10);
 });
 
+test('every after-ending free-talk scene locks affinity changes', () => {
+    const endingFreeTalkScenes = Object.entries(scenes).filter(([sceneId, scene]) => (
+        /^day5_(?:seo|yuna|dain|teacher|nurse)_ending_freetalk_(?!intro|router)/.test(sceneId)
+        && scene?.type === 'free_talk'
+    ));
+
+    assert.equal(endingFreeTalkScenes.length, 23);
+    for (const [sceneId, scene] of endingFreeTalkScenes) {
+        assert.equal(scene.affinityLocked, true, `${sceneId} must not change affinity`);
+    }
+});
+
 test('personal free-talk routes keep earning positive affinity without a lifetime cap', () => {
     const personalFreeTalkRoutes = {
-        Seoyeon: ['lunch_seo_freetalk', 'night2_seo_freetalk', 'after3_seo_freetalk', 'wall_seo_freetalk', 'day5_seo_ending_freetalk_perfect'],
-        Yuna: ['lunch_yuna_freetalk', 'night2_yuna_freetalk', 'after3_yuna_freetalk', 'wall_yuna_freetalk', 'day5_yuna_ending_freetalk_perfect'],
-        Dain: ['lunch_dain_freetalk', 'night2_dain_freetalk', 'after3_dain_freetalk', 'wall_dain_freetalk', 'day5_dain_ending_freetalk_perfect'],
-        Teacher: ['after_homeroom_freetalk', 'hidden_homeroom_d2_freetalk', 'hidden_homeroom_d3_freetalk', 'hidden_homeroom_d4_freetalk', 'day5_teacher_ending_freetalk_perfect'],
-        Nurse: ['after_nurse_freetalk', 'hidden_nurse_d2_freetalk', 'hidden_nurse_d3_freetalk', 'hidden_nurse_d4_freetalk', 'day5_nurse_ending_freetalk_perfect'],
+        Seoyeon: ['lunch_seo_freetalk', 'night2_seo_freetalk', 'after3_seo_freetalk', 'wall_seo_freetalk'],
+        Yuna: ['lunch_yuna_freetalk', 'night2_yuna_freetalk', 'after3_yuna_freetalk', 'wall_yuna_freetalk'],
+        Dain: ['lunch_dain_freetalk', 'night2_dain_freetalk', 'after3_dain_freetalk', 'wall_dain_freetalk'],
+        Teacher: ['after_homeroom_freetalk', 'hidden_homeroom_d2_freetalk', 'hidden_homeroom_d3_freetalk', 'hidden_homeroom_d4_freetalk'],
+        Nurse: ['after_nurse_freetalk', 'hidden_nurse_d2_freetalk', 'hidden_nurse_d3_freetalk', 'hidden_nurse_d4_freetalk'],
         Haeun: ['haeun_freetalk']
     };
     const authoredMaximum = { Seoyeon: 71, Yuna: 71, Dain: 72, Teacher: 69, Nurse: 69, Haeun: 0 };
     const expectedBalance = {
-        Seoyeon: { authored: 71, freeTalk: 51, theoretical: 122, stored: 100 },
-        Yuna: { authored: 71, freeTalk: 51, theoretical: 122, stored: 100 },
-        Dain: { authored: 72, freeTalk: 51, theoretical: 123, stored: 100 },
-        Teacher: { authored: 69, freeTalk: 51, theoretical: 120, stored: 100 },
-        Nurse: { authored: 69, freeTalk: 51, theoretical: 120, stored: 100 },
+        Seoyeon: { authored: 71, freeTalk: 36, theoretical: 107, stored: 100 },
+        Yuna: { authored: 71, freeTalk: 36, theoretical: 107, stored: 100 },
+        Dain: { authored: 72, freeTalk: 36, theoretical: 108, stored: 100 },
+        Teacher: { authored: 69, freeTalk: 36, theoretical: 105, stored: 100 },
+        Nurse: { authored: 69, freeTalk: 36, theoretical: 105, stored: 100 },
         Haeun: { authored: 0, freeTalk: 15, theoretical: 15, stored: 15 }
     };
 
@@ -822,7 +834,7 @@ test('personal free-talk routes keep earning positive affinity without a lifetim
     assert.deepEqual(actualBalance, expectedBalance);
 });
 
-test('optimal routes reach 100 before the ending after all personal and group free-talk gains', () => {
+test('optimal routes preserve the 120 ceiling after affinity-locked ending free talk', () => {
     const routes = {
         Seoyeon: [
             ['authored', 10], ['free', 'lunch_seo_freetalk'],
@@ -867,11 +879,11 @@ test('optimal routes reach 100 before the ending after all personal and group fr
         ]
     };
     const expected = {
-        Seoyeon: { authored: 71, freeTalk: 59, preEnding: 120, theoretical: 130 },
-        Yuna: { authored: 71, freeTalk: 59, preEnding: 120, theoretical: 130 },
-        Dain: { authored: 72, freeTalk: 58, preEnding: 120, theoretical: 130 },
-        Teacher: { authored: 69, freeTalk: 61, preEnding: 120, theoretical: 130 },
-        Nurse: { authored: 69, freeTalk: 61, preEnding: 120, theoretical: 130 }
+        Seoyeon: { authored: 71, freeTalk: 49, preEnding: 120, theoretical: 120 },
+        Yuna: { authored: 71, freeTalk: 49, preEnding: 120, theoretical: 120 },
+        Dain: { authored: 72, freeTalk: 48, preEnding: 120, theoretical: 120 },
+        Teacher: { authored: 69, freeTalk: 51, preEnding: 120, theoretical: 120 },
+        Nurse: { authored: 69, freeTalk: 51, preEnding: 120, theoretical: 120 }
     };
 
     for (const [character, steps] of Object.entries(routes)) {
@@ -895,7 +907,9 @@ test('optimal routes reach 100 before the ending after all personal and group fr
             assert.equal(scene?.type, type === 'group' ? 'group_free_talk' : 'free_talk', `${value} type drifted`);
             assert.ok(Number.isInteger(scene.maxTurns) && scene.maxTurns > 0, `${value} must have a positive turn limit`);
             for (let turn = 0; turn < scene.maxTurns; turn += 1) {
-                const gain = freeTalkCore.normalizeStoryFreeTalkAffinityChange(type === 'group' ? 3 : 5, affinity);
+                const gain = scene.affinityLocked === true
+                    ? 0
+                    : freeTalkCore.normalizeStoryFreeTalkAffinityChange(type === 'group' ? 3 : 5, affinity);
                 affinity += gain;
                 freeTalk += gain;
             }
