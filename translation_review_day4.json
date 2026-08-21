@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "generated": "2026-07-30T03:25:32.203Z",
+    "generated": "2026-08-21T07:04:42.307Z",
     "day": 4,
-    "total_nodes": 512,
+    "total_nodes": 519,
     "lang_avg": {
       "en": 10,
       "ja": 10,
@@ -11,7 +11,7 @@
       "de": 10,
       "pt": 10
     },
-    "all_reviewed": true
+    "all_reviewed": false
   },
   "day4_1_morning": {
     "morning4_start": {
@@ -21529,6 +21529,300 @@
       "pt": {
         "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_freetalk",
         "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "day4_adult_counteroffer_soft_seoyeon": {
+      "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#day4_adult_counteroffer_soft_seoyeon",
+      "_ko_name": "서연",
+      "_ko_text_preview": "*서연을 따라 옥상에 올라간다. 난간 앞에 선 서연이 손바닥을 편다.* 오늘은 여기 있어 줘. 그거면 돼.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day4_4_night.json#day4_adult_counteroffer_soft_seoyeon",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day4_4_night.json#day4_adult_counteroffer_soft_seoyeon",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day4_4_night.json#day4_adult_counteroffer_soft_seoyeon",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day4_4_night.json#day4_adult_counteroffer_soft_seoyeon",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day4_4_night.json#day4_adult_counteroffer_soft_seoyeon",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#day4_adult_counteroffer_soft_seoyeon",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "day4_adult_counteroffer_soft_dain": {
+      "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#day4_adult_counteroffer_soft_dain",
+      "_ko_name": "다인",
+      "_ko_text_preview": "*체육관으로 들어가 마지막 공이 멎을 때까지 토스를 받아 준다. 다인이 숨을 고른 뒤 벤치 옆자리를 두드린다.* 오늘은 그냥 같이 앉아 있어 줘.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day4_4_night.json#day4_adult_counteroffer_soft_dain",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day4_4_night.json#day4_adult_counteroffer_soft_dain",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day4_4_night.json#day4_adult_counteroffer_soft_dain",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day4_4_night.json#day4_adult_counteroffer_soft_dain",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day4_4_night.json#day4_adult_counteroffer_soft_dain",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#day4_adult_counteroffer_soft_dain",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "day4_adult_counteroffer_soft_yuna": {
+      "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#day4_adult_counteroffer_soft_yuna",
+      "_ko_name": "유나",
+      "_ko_text_preview": "*별관으로 들어가 빈 의자에 앉는다. 유나는 재킷을 벗지 않은 채 맞은편 책을 덮는다.* 오늘은 가지 마. 말 안 해도 돼.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day4_4_night.json#day4_adult_counteroffer_soft_yuna",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day4_4_night.json#day4_adult_counteroffer_soft_yuna",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day4_4_night.json#day4_adult_counteroffer_soft_yuna",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day4_4_night.json#day4_adult_counteroffer_soft_yuna",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day4_4_night.json#day4_adult_counteroffer_soft_yuna",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#day4_adult_counteroffer_soft_yuna",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "day4_student_counteroffer_soft_seoyeon": {
+      "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#day4_student_counteroffer_soft_seoyeon",
+      "_ko_name": "서연",
+      "_ko_text_preview": "*서연을 따라 옥상에 올라간다. 난간 앞에 선 서연이 손바닥을 편다.* 오늘은 여기 있어 줘. 그거면 돼.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day4_4_night.json#day4_student_counteroffer_soft_seoyeon",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day4_4_night.json#day4_student_counteroffer_soft_seoyeon",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day4_4_night.json#day4_student_counteroffer_soft_seoyeon",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day4_4_night.json#day4_student_counteroffer_soft_seoyeon",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day4_4_night.json#day4_student_counteroffer_soft_seoyeon",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#day4_student_counteroffer_soft_seoyeon",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "day4_student_counteroffer_soft_dain": {
+      "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#day4_student_counteroffer_soft_dain",
+      "_ko_name": "다인",
+      "_ko_text_preview": "*체육관으로 들어가 마지막 공이 멎을 때까지 토스를 받아 준다. 다인이 숨을 고른 뒤 벤치 옆자리를 두드린다.* 오늘은 그냥 같이 앉아 있어 줘.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day4_4_night.json#day4_student_counteroffer_soft_dain",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day4_4_night.json#day4_student_counteroffer_soft_dain",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day4_4_night.json#day4_student_counteroffer_soft_dain",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day4_4_night.json#day4_student_counteroffer_soft_dain",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day4_4_night.json#day4_student_counteroffer_soft_dain",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#day4_student_counteroffer_soft_dain",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "day4_student_counteroffer_soft_yuna": {
+      "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#day4_student_counteroffer_soft_yuna",
+      "_ko_name": "유나",
+      "_ko_text_preview": "*별관으로 들어가 빈 의자에 앉는다. 유나는 재킷을 벗지 않은 채 맞은편 책을 덮는다.* 오늘은 가지 마. 말 안 해도 돼.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day4_4_night.json#day4_student_counteroffer_soft_yuna",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day4_4_night.json#day4_student_counteroffer_soft_yuna",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day4_4_night.json#day4_student_counteroffer_soft_yuna",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day4_4_night.json#day4_student_counteroffer_soft_yuna",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day4_4_night.json#day4_student_counteroffer_soft_yuna",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#day4_student_counteroffer_soft_yuna",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "day4_adult_counteroffer_soft_return_home": {
+      "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#day4_adult_counteroffer_soft_return_home",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*학교를 나와 집으로 돌아간다. 조금 전까지 나눈 말이 현관문을 닫은 뒤에도 남아 있다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day4_4_night.json#day4_adult_counteroffer_soft_return_home",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day4_4_night.json#day4_adult_counteroffer_soft_return_home",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day4_4_night.json#day4_adult_counteroffer_soft_return_home",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day4_4_night.json#day4_adult_counteroffer_soft_return_home",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day4_4_night.json#day4_adult_counteroffer_soft_return_home",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#day4_adult_counteroffer_soft_return_home",
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       }

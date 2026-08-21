@@ -1908,5 +1908,18 @@
     "perfect_dain_coda_3": {
         "name": "Dain",
         "text": "Let's walk home together afterward. I'll set the pace today."
-    }
+    },
+    "ending_counteroffer_choice_lead": {
+        "name": "{name}",
+        "text": "*I chose the person I had promised first, but an apology could not erase last night.*"
+    },
+    "ending_counteroffer_choice_tempter": {
+        "name": "{name}",
+        "text": "*I chose one person, but there was still a relationship to settle before anything new could begin.*"
+    },
+    "ending_counteroffer_choice_neither": {
+        "name": "{name}",
+        "text": "*After I said I would hold on to neither of them, the conversation between the three of us ended there.*"
+    },
+    "ending_counteroffer_bitter_route": {}
 }

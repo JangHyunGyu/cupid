@@ -124,7 +124,12 @@
     },
     "after5_hidden_route_choice": {
         "name": "{name}",
-        "text": "*행사 정리는 다른 학생들에게 맡기고 약속 장소인 공원으로 향한다.*"
+        "text": "*공원으로 향하는 길과, 행사 정리를 마저 돕는 길이 갈린다. 오늘은 누구에게 답할지 정해야 한다.*",
+        "choices": [
+            "공원으로 가서 원래 하던 선택을 마무리한다",
+            "담임선생님에게 돌아가 문예부 원고를 함께 정리한다",
+            "보건선생님에게 돌아가 상담 기록을 함께 정리한다"
+        ]
     },
     "after5_last_chance_1": {
         "name": "{name}",
@@ -207,7 +212,7 @@
     },
     "after5_last_chance_2_q": {
         "name": "다인",
-        "text": "어제부터 기다렸어. 근데 바로 웃지는 못해."
+        "text": "바로 웃지는 못해. 그래도 여기까지 온 말은 들을게."
     },
     "after5_last_chance_2_r": {
         "name": "다인",
@@ -385,11 +390,11 @@
     },
     "after5_defer_dain": {
         "name": "다인",
-        "text": "*배구공을 다시 끌어안는다.* ...그래. 기다린 쪽은 나였지만."
+        "text": "*배구공을 다시 끌어안는다.* 그래. 오늘도 여기서 멈추는 거네."
     },
     "after5_defer_yuna": {
         "name": "유나",
-        "text": "*책을 다시 품에 안는다.* 알겠어. 기다리라고 한 건 너였지만."
+        "text": "*책을 다시 품에 안는다.* 알겠어. 오늘도 여기서 멈추는 거네."
     },
     "after5_co_abandoned_branch": {},
     "after5_co_tempter_branch": {},
@@ -464,5 +469,101 @@
     "after5_normal_start": {
         "name": "{name}",
         "text": "*행사가 끝나갈 무렵, 복도에서 선택하지 않은 두 사람과 마주친다.*"
+    },
+    "after5_farewell_seo_affinity_check": {},
+    "after5_farewell_seo_high_1": {
+        "name": "서연",
+        "text": "*서연이 클립보드 안쪽에서 첫날 건넸던 메모를 꺼낸다. 접힌 모서리를 엄지로 편다.* 이건 아직 갖고 있어."
+    },
+    "after5_farewell_seo_high_2": {
+        "name": "서연",
+        "text": "네 선택은 알아. 그래도 내가 좋아했던 시간까지 없던 일로 만들진 않을게."
+    },
+    "after5_farewell_yuna_affinity_check": {},
+    "after5_farewell_yuna_high_1": {
+        "name": "유나",
+        "text": "*유나가 책갈피 뒷면에 오늘 날짜를 적어 건넨다.* 마지막 장까지는 네가 읽어."
+    },
+    "after5_farewell_yuna_high_2": {
+        "name": "유나",
+        "text": "네가 고른 사람한테는 늦지 마. 그래도 내가 널 좋아했던 문장은 지우지 않을 거야."
+    },
+    "after5_farewell_dain_affinity_check": {},
+    "after5_farewell_dain_high_1": {
+        "name": "다인",
+        "text": "*다인은 배구공을 한 번 튀겨 잡고 코트 선 밖에 내려놓는다.* 네 선택은 알아."
+    },
+    "after5_farewell_dain_high_2": {
+        "name": "다인",
+        "text": "그래도 내가 좋아했던 것까지 없던 일로 하진 않을 거야. 잘해. 아니면 진짜 화낼 거니까."
+    },
+    "after5_hidden_teacher_affinity_check": {},
+    "after5_hidden_teacher_high": {
+        "name": "담임선생님",
+        "text": "*04번 합평본의 빈 의견란을 한 번 확인하고 봉투를 닫는다.* 네가 어디서 멈췄는지 월요일에 들을게. 좋은 말만 고르지는 마."
+    },
+    "after5_hidden_teacher_mid": {
+        "name": "담임선생님",
+        "text": "*04번 합평본 번호를 확인한다.* 읽은 데까지만 표시해. 나머지는 문예부에서 같이 볼 거야."
+    },
+    "after5_hidden_teacher_low": {
+        "name": "담임선생님",
+        "text": "*원고 봉투를 서류철 안에 넣는다.* 합평은 정해진 시간에 문예부에서 받겠다. 오늘은 행사부터 마쳐."
+    },
+    "after5_hidden_nurse_affinity_check": {},
+    "after5_hidden_nurse_high": {
+        "name": "보건선생님",
+        "text": "*상담 확인서와 응급처치 카드를 나란히 놓는다.* 다음에 버거우면 혼자 버티지 말고 네가 정한 순서대로 먼저 연락해."
+    },
+    "after5_hidden_nurse_mid": {
+        "name": "보건선생님",
+        "text": "*응급처치 카드 뒷면의 상담 QR을 가리킨다.* 필요하면 여기로 예약해. 이유를 만들 필요는 없어."
+    },
+    "after5_hidden_nurse_low": {
+        "name": "보건선생님",
+        "text": "*상담 기록지를 파일에 넣고 예약표를 닫는다.* 다음 상담은 정식 절차로 잡아. 오늘 기록은 여기서 마칠게."
+    },
+    "after5_last_chance_seo_history_check": {},
+    "after5_last_chance_seo_postponed": {
+        "name": "서연",
+        "text": "어제 옥상에서 남긴 말, 오늘은 끝까지 해."
+    },
+    "after5_last_chance_seo_tentative": {
+        "name": "서연",
+        "text": "어제는 다음 약속을 안 잡았지. 그래도 오늘은 네가 먼저 왔네."
+    },
+    "after5_last_chance_seo_distance": {
+        "name": "서연",
+        "text": "어제는 여기서 멈추자고 했어. 오늘 온 이유부터 들을게."
+    },
+    "after5_last_chance_dain_history_check": {},
+    "after5_last_chance_dain_postponed": {
+        "name": "다인",
+        "text": "어제 못 끝낸 말, 오늘은 끝까지 들어."
+    },
+    "after5_last_chance_dain_tentative": {
+        "name": "다인",
+        "text": "어제는 다음 약속을 못 잡았지. 오늘은 네가 먼저 왔네."
+    },
+    "after5_last_chance_dain_distance": {
+        "name": "다인",
+        "text": "어제는 서로 멈췄잖아. 오늘은 왜 돌아왔는지 듣고 싶어."
+    },
+    "after5_last_chance_yuna_history_check": {},
+    "after5_last_chance_yuna_postponed": {
+        "name": "유나",
+        "text": "어제는 결말을 미뤘지. 오늘은 네 말부터 들을게."
+    },
+    "after5_last_chance_yuna_tentative": {
+        "name": "유나",
+        "text": "어제는 내가 먼저 연락하겠다고 했는데. 오늘은 네가 왔네."
+    },
+    "after5_last_chance_yuna_distance": {
+        "name": "유나",
+        "text": "어제는 여기까지 하자고 했어. 오늘 온 이유는 들을게."
+    },
+    "after5_hidden_return_to_park": {
+        "name": "{name}",
+        "text": "*정리를 마치고 학교를 나선다. 공원으로 이어진 길에 축제 안내 깃발이 접혀 있다.*"
     }
 }

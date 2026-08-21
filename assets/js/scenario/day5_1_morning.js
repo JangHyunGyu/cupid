@@ -250,6 +250,30 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "group_free_talk",
         "groupParticipants": "counteroffer_confrontation",
         "maxTurns": 3,
+        "next": "morning5_counteroffer_choice"
+    },
+    "morning5_counteroffer_choice": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "choices": [
+            { "next": "morning5_counteroffer_choice_lead", "setFlags": ["day5_counteroffer_choice_lead"] },
+            { "next": "morning5_counteroffer_choice_tempter", "setFlags": ["day5_counteroffer_choice_tempter"] },
+            { "next": "morning5_counteroffer_choice_neither", "setFlags": ["day5_counteroffer_choice_neither"] }
+        ]
+    },
+    "morning5_counteroffer_choice_lead": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "next": "morning5_after_counteroffer"
+    },
+    "morning5_counteroffer_choice_tempter": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "next": "morning5_after_counteroffer"
+    },
+    "morning5_counteroffer_choice_neither": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
         "next": "morning5_after_counteroffer"
     },
     "morning5_after_counteroffer": {

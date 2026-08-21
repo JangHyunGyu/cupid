@@ -111,8 +111,8 @@ test('direct choice affinity distribution keeps subtle penalties meaningful but 
         }
     }
 
-    assert.equal(total, 362);
-    assert.deepEqual(counts, { positive: 59, negative: 154, neutral: 124, mixed: 25 });
+    assert.equal(total, 368);
+    assert.deepEqual(counts, { positive: 59, negative: 154, neutral: 130, mixed: 25 });
 });
 
 test('day 2 afterschool rivalry scales with the live relationship instead of inventing plans', () => {
@@ -424,7 +424,7 @@ test('negative-choice screens stay distributed across every story day', () => {
         2: { choiceScreens: 18, negativeScreens: 10 },
         3: { choiceScreens: 24, negativeScreens: 14 },
         4: { choiceScreens: 32, negativeScreens: 27 },
-        5: { choiceScreens: 28, negativeScreens: 11 }
+        5: { choiceScreens: 30, negativeScreens: 11 }
     };
 
     for (const [day, expectedCounts] of Object.entries(expected)) {
@@ -551,7 +551,7 @@ test('rival temptation CG rewards appear only after accepting the rival offer', 
 
         const incomingChoices = Object.values(scenes)
             .flatMap(scene => scene.choices || [])
-            .filter(choice => choice.next === sceneId);
+            .filter(choice => choice.next === sceneId || choice.affinityBranches?.some(branch => branch.next === sceneId));
         const expectedIncoming = sceneId.startsWith('day4_adult_counteroffer_accept_') ? 2 : 1;
         assert.equal(incomingChoices.length, expectedIncoming, `${sceneId} acceptance entry count drifted`);
         for (const incomingChoice of incomingChoices) {
@@ -559,6 +559,9 @@ test('rival temptation CG rewards appear only after accepting the rival offer', 
                 incomingChoice.setFlags?.some(flag => /^day4_took_.+_counteroffer$/.test(flag)),
                 `${sceneId} must be gated by an accepted counteroffer`
             );
+            assert.equal(incomingChoice.affinityBranches?.[0]?.minAffinity, 68, `${sceneId} must require 60 affinity before the +8 acceptance reward`);
+            assert.equal(incomingChoice.affinityBranches?.[0]?.next, sceneId);
+            assert.match(incomingChoice.next, /^day4_(?:adult|student)_counteroffer_soft_/);
         }
     }
 });
@@ -948,6 +951,91 @@ test('ranked rival routing allows 20-plus rivals while preserving the live top t
     assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_1', 'rivals below 20 must not initiate an intimate counteroffer');
 });
 
+test('day-five continuity keeps availability, history, affinity, and final choice separate', () => {
+    const acceptedHidden = createSceneRenderer({}, {
+        homeroom_day5: true,
+        day4_confession_accepted: true,
+        route_seoyeon: true
+    });
+    assert.equal(acceptedHidden.resolveNextScene(scenes.after5_hidden_route_choice_check), 'ending_start');
+    assert.equal(acceptedHidden.resolveNextScene(scenes.ending_start), 'ending_affinity_check');
+
+    const waitedHidden = createSceneRenderer({}, { homeroom_day5: true, day4_waited: true, route_seoyeon: true });
+    assert.equal(waitedHidden.resolveNextScene(scenes.after5_hidden_route_choice_check), 'after5_hidden_route_choice');
+    assert.equal(scenes.after5_hidden_route_choice.choices.length, 3);
+    assert.equal(scenes.after5_hidden_route_choice.choices[0].condition, undefined);
+    assert.deepEqual([...scenes.after5_hidden_route_choice.choices[1].setFlags], ['hidden_route_chosen_teacher']);
+    assert.deepEqual([...scenes.after5_hidden_route_choice.choices[2].setFlags], ['hidden_route_chosen_nurse']);
+
+    const teacherChosen = createSceneRenderer({}, {
+        homeroom_day5: true,
+        day4_waited: true,
+        hidden_route_chosen_teacher: true
+    });
+    assert.equal(teacherChosen.resolveNextScene(scenes.ending_start), 'hidden_perfect_homeroom_check');
+    const nurseChosen = createSceneRenderer({}, {
+        nurse_day5: true,
+        day4_waited: true,
+        hidden_route_chosen_nurse: true
+    });
+    assert.equal(nurseChosen.resolveNextScene(scenes.ending_start), 'hidden_perfect_nurse_check');
+
+    for (const [character, sceneId, highNext, regularNext] of [
+        ['Seoyeon', 'after5_farewell_seo_affinity_check', 'after5_farewell_seo_high_1', 'after5_farewell_seo_2'],
+        ['Yuna', 'after5_farewell_yuna_affinity_check', 'after5_farewell_yuna_high_1', 'after5_farewell_yuna_2'],
+        ['Dain', 'after5_farewell_dain_affinity_check', 'after5_farewell_dain_high_1', 'after5_farewell_dain_2']
+    ]) {
+        assert.equal(createSceneRenderer({ [character]: 80 }).resolveNextScene(scenes[sceneId]), highNext);
+        assert.equal(createSceneRenderer({ [character]: 79 }).resolveNextScene(scenes[sceneId]), regularNext);
+    }
+
+    for (const [route, character] of [['seo', 'seoyeon'], ['dain', 'dain'], ['yuna', 'yuna']]) {
+        const historyScene = scenes[`after5_last_chance_${route}_history_check`];
+        assert.equal(
+            createSceneRenderer({}, { [`postponed_${character}`]: true }).resolveNextScene(historyScene),
+            `after5_last_chance_${route}_postponed`
+        );
+        assert.equal(
+            createSceneRenderer({}, { [`day4_tentative_${character}`]: true }).resolveNextScene(historyScene),
+            `after5_last_chance_${route}_tentative`
+        );
+        assert.equal(
+            createSceneRenderer({}, { [`day4_distance_${character}`]: true }).resolveNextScene(historyScene),
+            `after5_last_chance_${route}_distance`
+        );
+    }
+
+    assert.equal(createSceneRenderer({ Teacher: 60 }).resolveNextScene(scenes.after5_hidden_teacher_affinity_check), 'after5_hidden_teacher_high');
+    assert.equal(createSceneRenderer({ Teacher: 40 }).resolveNextScene(scenes.after5_hidden_teacher_affinity_check), 'after5_hidden_teacher_mid');
+    assert.equal(createSceneRenderer({ Nurse: 39 }).resolveNextScene(scenes.after5_hidden_nurse_affinity_check), 'after5_hidden_nurse_low');
+
+    assert.equal(scenes.morning5_counteroffer_group_talk.next, 'morning5_counteroffer_choice');
+    assert.deepEqual(
+        scenes.morning5_counteroffer_choice.choices.map(choice => choice.setFlags[0]),
+        ['day5_counteroffer_choice_lead', 'day5_counteroffer_choice_tempter', 'day5_counteroffer_choice_neither']
+    );
+    assert.deepEqual(
+        scenes.ending_counteroffer_bitter.branches.slice(0, 3).map(branch => branch.condition),
+        ['day5_counteroffer_choice_lead', 'day5_counteroffer_choice_tempter', 'day5_counteroffer_choice_neither']
+    );
+
+    const requiredCopy = [
+        'day4_adult_counteroffer_soft_seoyeon',
+        'morning5_counteroffer_choice',
+        'after5_farewell_seo_high_1',
+        'after5_hidden_teacher_high',
+        'after5_last_chance_yuna_distance',
+        'after5_hidden_return_to_park',
+        'ending_counteroffer_choice_neither'
+    ];
+    for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+        const localized = loadLocaleCopy(locale);
+        for (const sceneId of requiredCopy) {
+            assert.ok(localized[sceneId]?.text?.trim(), `${locale}:${sceneId} must be localized`);
+        }
+    }
+});
+
 test('live affinity guards block personal scenes and provide localized low-affinity exits', () => {
     const guardedEntries = [
         ['hidden_homeroom_d2_1', 'Teacher', 15, 'hidden_homeroom_d2_low'],
@@ -1335,8 +1423,8 @@ test('character-specific trap choices retain their understated Korean wording an
         wall_dain_lastspike_2: '*공 보관함을 보다가 다인이 고개를 든다.* 잠깐. 왜 네가 다 정해.',
         hidden_nurse_d5_choice_trap: '반대야. 혼자 버티라고 만든 카드가 아니야.',
         after5_defer_seo: '*펴고 있던 손을 천천히 거둔다.* 그래. 네가 정했으면.',
-        after5_defer_dain: '*배구공을 다시 끌어안는다.* ...그래. 기다린 쪽은 나였지만.',
-        after5_defer_yuna: '*책을 다시 품에 안는다.* 알겠어. 기다리라고 한 건 너였지만.'
+        after5_defer_dain: '*배구공을 다시 끌어안는다.* 그래. 오늘도 여기서 멈추는 거네.',
+        after5_defer_yuna: '*책을 다시 품에 안는다.* 알겠어. 오늘도 여기서 멈추는 거네.'
     };
 
     for (const [sceneId, text] of Object.entries(reactions)) {

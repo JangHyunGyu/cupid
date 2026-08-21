@@ -687,5 +687,26 @@
     "morning5_caught_fallout_3": {"name":"{name}","text":"*Until the event ends, the only words we exchange are work checks. At the final bell, they take three different staircases.*"},
     "morning5_harem_fallout_1": {"name":"{name}","text":"*During the event, the three of them leave only necessary messages in the group chat. None of the private chats receive anything new.*"},
     "morning5_harem_fallout_2": {"name":"Dain","text":"Even after this is over, let's not meet separately. Keep what we agreed on."},
-    "morning5_harem_fallout_3": {"name":"{name}","text":"*I nod. The three of them leave through the school gate together, and I follow alone a little later.*"}
+    "morning5_harem_fallout_3": {"name":"{name}","text":"*I nod. The three of them leave through the school gate together, and I follow alone a little later.*"},
+    "morning5_counteroffer_choice": {
+        "name": "{name}",
+        "text": "*When the conversation ends, both of them wait for an answer.*",
+        "choices": [
+            "Answer the person I promised first and take responsibility",
+            "Say that I choose the person I went to last night",
+            "Let neither of them wait and end both relationships"
+        ]
+    },
+    "morning5_counteroffer_choice_lead": {
+        "name": "{name}",
+        "text": "*I turn toward the person I made the first promise to.* I will start by apologizing for what I chose last night. I will not ask you to hold on to me."
+    },
+    "morning5_counteroffer_choice_tempter": {
+        "name": "{name}",
+        "text": "*I look at the person I went to last night, then bow to the other.* I will not hide where my feelings lean now. But I will not hold on to both of you."
+    },
+    "morning5_counteroffer_choice_neither": {
+        "name": "{name}",
+        "text": "*I take one step back from both of them.* I do not deserve to choose either of you right now. I will not hold on to either of you."
+    }
 }

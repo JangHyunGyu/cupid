@@ -17,12 +17,14 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
             { "condition": "ending_harem", "next": "day5_ending_harem" },
             { "condition": "day4_counteroffer_penalty_deferred", "next": "ending_counteroffer_bitter" },
             { "condition": "day5_last_chance_path", "next": "ending_last_chance_resolve" },
-            { "condition": "both_hidden_day5", "next": "hidden_dual_route_1" },
-            { "condition": "homeroom_day5", "next": "hidden_perfect_homeroom_check" },
-            { "condition": "nurse_day5", "next": "hidden_perfect_nurse_check" },
+            { "condition": "hidden_route_chosen_teacher", "next": "hidden_perfect_homeroom_check" },
+            { "condition": "hidden_route_chosen_nurse", "next": "hidden_perfect_nurse_check" },
             { "condition": "day4_confession_accepted", "next": "ending_affinity_check" },
             { "condition": "day5_confessed", "next": "ending_confessed_aff_check" },
             { "condition": "day4_waited", "next": "day5_ending_friend" },
+            { "condition": "both_hidden_day5", "next": "hidden_dual_route_1" },
+            { "condition": "homeroom_day5", "next": "hidden_perfect_homeroom_check" },
+            { "condition": "nurse_day5", "next": "hidden_perfect_nurse_check" },
             { "next": "day5_ending_alone" }
         ]
     },
@@ -31,6 +33,35 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": null,
         "bgm": "night2.mp3",
         "setFlags": ["ending_bittersweet"],
+        "routeBeforeRender": true,
+        "branches": [
+            { "condition": "day5_counteroffer_choice_lead", "next": "ending_counteroffer_choice_lead" },
+            { "condition": "day5_counteroffer_choice_tempter", "next": "ending_counteroffer_choice_tempter" },
+            { "condition": "day5_counteroffer_choice_neither", "next": "ending_counteroffer_choice_neither" },
+            { "next": "ending_counteroffer_bitter_route" }
+        ]
+    },
+    "ending_counteroffer_choice_lead": {
+        "background": "assets/images/background/park.png",
+        "character": null,
+        "bgm": "night2.mp3",
+        "next": "ending_counteroffer_bitter_route"
+    },
+    "ending_counteroffer_choice_tempter": {
+        "background": "assets/images/background/park.png",
+        "character": null,
+        "bgm": "night2.mp3",
+        "next": "ending_counteroffer_bitter_route"
+    },
+    "ending_counteroffer_choice_neither": {
+        "background": "assets/images/background/park.png",
+        "character": null,
+        "bgm": "night2.mp3",
+        "next": "ending_counteroffer_bitter_route"
+    },
+    "ending_counteroffer_bitter_route": {
+        "background": "assets/images/background/park.png",
+        "character": null,
         "routeBeforeRender": true,
         "branches": [
             { "condition": "day4_counteroffer_target_teacher", "next": "co_bitter_teacher_1" },

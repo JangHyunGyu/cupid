@@ -1908,5 +1908,18 @@
     "perfect_dain_coda_3": {
         "name": "Dain",
         "text": "Lass uns danach zusammen nach Hause laufen. Heute bestimme ich das Tempo."
-    }
+    },
+    "ending_counteroffer_choice_lead": {
+        "name": "{name}",
+        "text": "*Ich wählte die Person, der ich zuerst etwas versprochen hatte, doch eine Entschuldigung konnte die letzte Nacht nicht auslöschen.*"
+    },
+    "ending_counteroffer_choice_tempter": {
+        "name": "{name}",
+        "text": "*Ich wählte eine Person, aber bevor etwas Neues beginnen konnte, musste noch eine Beziehung geklärt werden.*"
+    },
+    "ending_counteroffer_choice_neither": {
+        "name": "{name}",
+        "text": "*Nachdem ich gesagt hatte, dass ich keine von beiden festhalten würde, endete unser Gespräch dort.*"
+    },
+    "ending_counteroffer_bitter_route": {}
 }

@@ -1908,5 +1908,18 @@
     "perfect_dain_coda_3": {
         "name": "ダイン",
         "text": "終わったら一緒に歩いて帰ろう。今日は私がペースを決める。"
-    }
+    },
+    "ending_counteroffer_choice_lead": {
+        "name": "{name}",
+        "text": "*先に約束していた相手を選んだ。それでも、謝罪で昨夜のことは消せなかった。*"
+    },
+    "ending_counteroffer_choice_tempter": {
+        "name": "{name}",
+        "text": "*一人を選んだが、新しく始める前に整理すべき関係が残った。*"
+    },
+    "ending_counteroffer_choice_neither": {
+        "name": "{name}",
+        "text": "*二人とも引き止めないと告げると、三人の会話はそこで終わった。*"
+    },
+    "ending_counteroffer_bitter_route": {}
 }

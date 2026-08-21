@@ -687,5 +687,26 @@
     "morning5_caught_fallout_3": {"name":"{name}","text":"*Jusqu'à la fin de l'événement, nous ne parlons que pour vérifier le travail. À la dernière sonnerie, elles prennent trois escaliers différents.*"},
     "morning5_harem_fallout_1": {"name":"{name}","text":"*Pendant l'événement, toutes les trois ne laissent que les messages nécessaires dans le groupe. Aucun message n'arrive dans les conversations privées.*"},
     "morning5_harem_fallout_2": {"name":"Dain","text":"Même après aujourd'hui, ne nous voyons pas séparément. Tiens l'accord qu'on a passé."},
-    "morning5_harem_fallout_3": {"name":"{name}","text":"*Je hoche la tête. Elles franchissent le portail ensemble, et je les suis seul un peu plus tard.*"}
+    "morning5_harem_fallout_3": {"name":"{name}","text":"*Je hoche la tête. Elles franchissent le portail ensemble, et je les suis seul un peu plus tard.*"},
+    "morning5_counteroffer_choice": {
+        "name": "{name}",
+        "text": "*Quand la conversation s’achève, toutes les deux attendent une réponse.*",
+        "choices": [
+            "Répondre avec responsabilité à la personne à qui j’ai promis en premier",
+            "Dire que je choisis la personne que je suis allé voir hier soir",
+            "Ne retenir aucune des deux et mettre fin aux deux relations"
+        ]
+    },
+    "morning5_counteroffer_choice_lead": {
+        "name": "{name}",
+        "text": "*Je me tourne vers la personne à qui j’avais promis en premier.* Je vais commencer par m’excuser pour mon choix d’hier soir. Je ne te demanderai pas de me retenir."
+    },
+    "morning5_counteroffer_choice_tempter": {
+        "name": "{name}",
+        "text": "*Je regarde la personne que je suis allé voir hier soir, puis baisse la tête devant l’autre.* Je ne cacherai pas vers qui penchent mes sentiments. Mais je ne vous retiendrai pas toutes les deux."
+    },
+    "morning5_counteroffer_choice_neither": {
+        "name": "{name}",
+        "text": "*Je recule d’un pas entre elles.* Pour l’instant, je ne mérite de choisir aucune de vous. Je ne vous retiendrai pas."
+    }
 }

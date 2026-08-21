@@ -523,21 +523,21 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
         "character": "assets/images/characters/seyoun_normal.png",
-        "setFlags": ["day4_waited"],
+        "setFlags": ["day4_waited", "day4_distance_seoyeon"],
         "next": "day4_night_start"
     },
     "confess_yuna_low": {
         "background": "assets/images/background/yuna_hideout.png",
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_normal.png",
-        "setFlags": ["day4_waited"],
+        "setFlags": ["day4_waited", "day4_distance_yuna"],
         "next": "day4_night_start"
     },
     "confess_dain_low": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
         "character": "assets/images/characters/dain_normal.png",
-        "setFlags": ["day4_waited"],
+        "setFlags": ["day4_waited", "day4_distance_dain"],
         "next": "day4_night_start"
     }
     };

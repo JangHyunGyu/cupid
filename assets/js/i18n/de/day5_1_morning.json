@@ -687,5 +687,26 @@
     "morning5_caught_fallout_3": {"name":"{name}","text":"*Bis zum Ende der Veranstaltung reden wir nur über die Arbeit. Beim letzten Klingeln nehmen sie drei verschiedene Treppen.*"},
     "morning5_harem_fallout_1": {"name":"{name}","text":"*Während der Veranstaltung schreiben die drei nur das Nötigste in den Gruppenchat. In den privaten Chats kommt nichts Neues an.*"},
     "morning5_harem_fallout_2": {"name":"Dain","text":"Auch nach heute treffen wir uns nicht einzeln. Halt dich an unsere Abmachung."},
-    "morning5_harem_fallout_3": {"name":"{name}","text":"*Ich nicke. Die drei verlassen gemeinsam das Schultor, und etwas später gehe ich allein hinterher.*"}
+    "morning5_harem_fallout_3": {"name":"{name}","text":"*Ich nicke. Die drei verlassen gemeinsam das Schultor, und etwas später gehe ich allein hinterher.*"},
+    "morning5_counteroffer_choice": {
+        "name": "{name}",
+        "text": "*Als das Gespräch endet, warten beide auf eine Antwort.*",
+        "choices": [
+            "Der Person, der ich zuerst etwas versprochen habe, verantwortlich antworten",
+            "Sagen, dass ich die Person wähle, zu der ich gestern Nacht gegangen bin",
+            "Keine von beiden festhalten und beide Beziehungen beenden"
+        ]
+    },
+    "morning5_counteroffer_choice_lead": {
+        "name": "{name}",
+        "text": "*Ich drehe mich zu der Person, der ich zuerst etwas versprochen hatte.* Zuerst entschuldige ich mich für meine Entscheidung gestern Nacht. Ich werde dich nicht bitten, mich festzuhalten."
+    },
+    "morning5_counteroffer_choice_tempter": {
+        "name": "{name}",
+        "text": "*Ich sehe die Person an, zu der ich gestern Nacht gegangen bin, und senke vor der anderen den Kopf.* Ich werde nicht verbergen, zu wem meine Gefühle jetzt neigen. Aber ich werde euch nicht beide festhalten."
+    },
+    "morning5_counteroffer_choice_neither": {
+        "name": "{name}",
+        "text": "*Ich trete zwischen beiden einen Schritt zurück.* Im Moment habe ich nicht das Recht, eine von euch zu wählen. Ich werde keine von euch festhalten."
+    }
 }

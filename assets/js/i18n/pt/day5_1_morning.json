@@ -687,5 +687,26 @@
     "morning5_caught_fallout_3": {"name":"{name}","text":"*Até o fim do evento, só falamos para conferir tarefas. No último sinal, elas descem por três escadas diferentes.*"},
     "morning5_harem_fallout_1": {"name":"{name}","text":"*Durante o evento, as três deixam apenas mensagens necessárias no grupo. Nenhuma conversa privada recebe algo novo.*"},
     "morning5_harem_fallout_2": {"name":"Dain","text":"Mesmo depois de hoje, não vamos nos encontrar separadamente. Cumpra o que combinamos."},
-    "morning5_harem_fallout_3": {"name":"{name}","text":"*Faço que sim. As três saem juntas pelo portão, e eu sigo sozinho um pouco depois.*"}
+    "morning5_harem_fallout_3": {"name":"{name}","text":"*Faço que sim. As três saem juntas pelo portão, e eu sigo sozinho um pouco depois.*"},
+    "morning5_counteroffer_choice": {
+        "name": "{name}",
+        "text": "*Quando a conversa termina, as duas esperam uma resposta.*",
+        "choices": [
+            "Responder com responsabilidade à pessoa com quem me comprometi primeiro",
+            "Dizer que escolho a pessoa que fui encontrar ontem à noite",
+            "Não prender nenhuma das duas e encerrar as duas relações"
+        ]
+    },
+    "morning5_counteroffer_choice_lead": {
+        "name": "{name}",
+        "text": "*Viro-me para a pessoa com quem me comprometi primeiro.* Vou começar pedindo desculpas pela minha escolha de ontem à noite. Não vou pedir que você me segure."
+    },
+    "morning5_counteroffer_choice_tempter": {
+        "name": "{name}",
+        "text": "*Olho para a pessoa que fui encontrar ontem à noite e abaixo a cabeça diante da outra.* Não vou esconder para quem meus sentimentos pendem agora. Mas não vou prender vocês duas."
+    },
+    "morning5_counteroffer_choice_neither": {
+        "name": "{name}",
+        "text": "*Dou um passo para trás entre as duas.* Agora eu não mereço escolher nenhuma de vocês. Não vou prender nenhuma."
+    }
 }

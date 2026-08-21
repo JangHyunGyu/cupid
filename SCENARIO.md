@@ -16941,7 +16941,7 @@
 
 ### `date_seo_low`
 - 배경: `park.png`
-- 플래그: `day4_waited`
+- 플래그: `day4_waited`, `day4_distance_seoyeon`
 - 다음: `day4_night_start`
 
 - 캐릭터: `seyoun_normal.png`
@@ -16951,7 +16951,7 @@
 
 ### `date_yuna_low`
 - 배경: `cafe.png`
-- 플래그: `day4_waited`
+- 플래그: `day4_waited`, `day4_distance_yuna`
 - 다음: `day4_night_start`
 
 - 캐릭터: `yuna_normal.png`
@@ -16961,7 +16961,7 @@
 
 ### `date_dain_low`
 - 배경: `gym.png`
-- 플래그: `day4_waited`
+- 플래그: `day4_waited`, `day4_distance_dain`
 - 다음: `day4_night_start`
 
 - 캐릭터: `dain_normal.png`
@@ -17785,7 +17785,7 @@
 ### `confess_seo_low`
 - 배경: `top_school.png`
 - 배경톤: `warm`
-- 플래그: `day4_waited`
+- 플래그: `day4_waited`, `day4_distance_seoyeon`
 - 다음: `day4_night_start`
 
 - 캐릭터: `seyoun_normal.png`
@@ -17796,7 +17796,7 @@
 ### `confess_yuna_low`
 - 배경: `yuna_hideout.png`
 - 배경톤: `dream`
-- 플래그: `day4_waited`
+- 플래그: `day4_waited`, `day4_distance_yuna`
 - 다음: `day4_night_start`
 
 - 캐릭터: `yuna_normal.png`
@@ -17807,7 +17807,7 @@
 ### `confess_dain_low`
 - 배경: `gym.png`
 - 배경톤: `lights-off`
-- 플래그: `day4_waited`
+- 플래그: `day4_waited`, `day4_distance_dain`
 - 다음: `day4_night_start`
 
 - 캐릭터: `dain_normal.png`
@@ -17897,7 +17897,9 @@
 - 배경: `school_back.png`
 - 선택지:
   1. "보건선생님에게 답장하고 돌아간다" → `day4_hidden_msg_branch` | Nurse +4, Seoyeon -6 | 플래그: `day4_held_route_nurse`
-  2. "서연을 따라 옥상에 올라가 손을 잡는다" → `day4_adult_counteroffer_accept_seoyeon` | Seoyeon +8, Nurse -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
+  2. "서연을 따라 옥상에 올라가 손을 잡는다" → 호감분기: Seoyeon | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
+    - [68+] → `day4_adult_counteroffer_accept_seoyeon`
+    - [기본] → `day4_adult_counteroffer_soft_seoyeon`
   3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `day4_hidden_msg_branch` | Nurse -8, Seoyeon -8 | 플래그: `day4_held_route_nurse`
   4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `day4_hidden_msg_branch` | Nurse -5, Seoyeon -10 | 플래그: `day4_held_route_nurse`
 
@@ -17911,7 +17913,9 @@
 - 배경톤: `lights-off`
 - 선택지:
   1. "보건선생님에게 돌아간다고 답장한다" → `day4_hidden_msg_branch` | Nurse +4, Dain -6 | 플래그: `day4_held_route_nurse`
-  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `day4_adult_counteroffer_accept_dain` | Dain +8, Nurse -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
+  2. "체육관으로 들어가 다인의 부탁을 받아준다" → 호감분기: Dain | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
+    - [68+] → `day4_adult_counteroffer_accept_dain`
+    - [기본] → `day4_adult_counteroffer_soft_dain`
   3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `day4_hidden_msg_branch` | Nurse -8, Dain -8 | 플래그: `day4_held_route_nurse`
   4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `day4_hidden_msg_branch` | Nurse -5, Dain -10 | 플래그: `day4_held_route_nurse`
 
@@ -17924,7 +17928,9 @@
 - 배경: `yuna_hideout.png`
 - 선택지:
   1. "보건선생님에게 답장하고 집으로 돌아간다" → `day4_hidden_msg_branch` | Nurse +4, Yuna -6 | 플래그: `day4_held_route_nurse`
-  2. "별관으로 가서 유나 곁에 남는다" → `day4_adult_counteroffer_accept_yuna` | Yuna +8, Nurse -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
+  2. "별관으로 가서 유나 곁에 남는다" → 호감분기: Yuna | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
+    - [68+] → `day4_adult_counteroffer_accept_yuna`
+    - [기본] → `day4_adult_counteroffer_soft_yuna`
   3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `day4_hidden_msg_branch` | Nurse -8, Yuna -8 | 플래그: `day4_held_route_nurse`
   4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `day4_hidden_msg_branch` | Nurse -5, Yuna -10 | 플래그: `day4_held_route_nurse`
 
@@ -17953,7 +17959,9 @@
 - 배경: `school_back.png`
 - 선택지:
   1. "담임과 한 약속을 지키고 돌아간다" → `day4_hidden_msg_branch` | Teacher +4, Seoyeon -6 | 플래그: `day4_held_route_teacher`
-  2. "서연을 따라 옥상에 올라가 손을 잡는다" → `day4_adult_counteroffer_accept_seoyeon` | Seoyeon +8, Teacher -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
+  2. "서연을 따라 옥상에 올라가 손을 잡는다" → 호감분기: Seoyeon | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
+    - [68+] → `day4_adult_counteroffer_accept_seoyeon`
+    - [기본] → `day4_adult_counteroffer_soft_seoyeon`
   3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `day4_hidden_msg_branch` | Teacher -8, Seoyeon -8 | 플래그: `day4_held_route_teacher`
   4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `day4_hidden_msg_branch` | Teacher -5, Seoyeon -10 | 플래그: `day4_held_route_teacher`
 
@@ -17971,12 +17979,23 @@
 
 ---
 
+### `day4_adult_counteroffer_soft_seoyeon`
+- 배경: `school_back.png`
+- 다음: `day4_adult_counteroffer_soft_return_home`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: *서연을 따라 옥상에 올라간다. 난간 앞에 선 서연이 손바닥을 편다.* 오늘은 여기 있어 줘. 그거면 돼.
+
+---
+
 ### `day4_teacher_dain_counteroffer`
 - 배경: `gym.png`
 - 배경톤: `lights-off`
 - 선택지:
   1. "담임에게 돌아간다고 답장한다" → `day4_hidden_msg_branch` | Teacher +4, Dain -6 | 플래그: `day4_held_route_teacher`
-  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `day4_adult_counteroffer_accept_dain` | Dain +8, Teacher -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
+  2. "체육관으로 들어가 다인의 부탁을 받아준다" → 호감분기: Dain | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
+    - [68+] → `day4_adult_counteroffer_accept_dain`
+    - [기본] → `day4_adult_counteroffer_soft_dain`
   3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `day4_hidden_msg_branch` | Teacher -8, Dain -8 | 플래그: `day4_held_route_teacher`
   4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `day4_hidden_msg_branch` | Teacher -5, Dain -10 | 플래그: `day4_held_route_teacher`
 
@@ -17994,11 +18013,22 @@
 
 ---
 
+### `day4_adult_counteroffer_soft_dain`
+- 배경: `gym.png`
+- 다음: `day4_adult_counteroffer_soft_return_home`
+
+- 캐릭터: `dain_normal.png`
+**다인**: *체육관으로 들어가 마지막 공이 멎을 때까지 토스를 받아 준다. 다인이 숨을 고른 뒤 벤치 옆자리를 두드린다.* 오늘은 그냥 같이 앉아 있어 줘.
+
+---
+
 ### `day4_teacher_yuna_counteroffer`
 - 배경: `yuna_hideout.png`
 - 선택지:
   1. "담임에게 답장하고 집으로 돌아간다" → `day4_hidden_msg_branch` | Teacher +4, Yuna -6 | 플래그: `day4_held_route_teacher`
-  2. "별관으로 가서 유나 곁에 남는다" → `day4_adult_counteroffer_accept_yuna` | Yuna +8, Teacher -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
+  2. "별관으로 가서 유나 곁에 남는다" → 호감분기: Yuna | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
+    - [68+] → `day4_adult_counteroffer_accept_yuna`
+    - [기본] → `day4_adult_counteroffer_soft_yuna`
   3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `day4_hidden_msg_branch` | Teacher -8, Yuna -8 | 플래그: `day4_held_route_teacher`
   4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `day4_hidden_msg_branch` | Teacher -5, Yuna -10 | 플래그: `day4_held_route_teacher`
 
@@ -18013,6 +18043,24 @@
 
 - 캐릭터: `없음`
 **{name}**: *유나는 {name} 바로 앞까지 다가와 한 손으로 책장을 짚는다. 재킷을 한쪽 어깨 아래로 흘려 내리고 다른 손으로 안쪽 상의의 목깃까지 끌어내린다. 드러난 맨어깨와 타투 사이로 붉은 눈이 {name}의 눈높이에 그대로 있다. 책상 위 휴대폰이 다시 울린다. 한참 뒤 별관을 나와 집으로 돌아간다.*
+
+---
+
+### `day4_adult_counteroffer_soft_yuna`
+- 배경: `yuna_hideout.png`
+- 다음: `day4_adult_counteroffer_soft_return_home`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: *별관으로 들어가 빈 의자에 앉는다. 유나는 재킷을 벗지 않은 채 맞은편 책을 덮는다.* 오늘은 가지 마. 말 안 해도 돼.
+
+---
+
+### `day4_adult_counteroffer_soft_return_home`
+- 배경: `room_my.png`
+- 다음: `day4_adult_night_regret_target_branch`
+
+- 캐릭터: `없음`
+**{name}**: *학교를 나와 집으로 돌아간다. 조금 전까지 나눈 말이 현관문을 닫은 뒤에도 남아 있다.*
 
 ---
 
@@ -18090,7 +18138,9 @@
 - 배경: `school_back.png`
 - 선택지:
   1. "공원으로 가서 서연과의 약속을 지킨다" → `wall_seo_1` | Seoyeon +3, Dain -6 | 플래그: `day4_held_route_seoyeon`
-  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `wall_seo_glimpse_4` | Dain +8, Seoyeon -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_penalty_deferred`
+  2. "체육관으로 들어가 다인의 부탁을 받아준다" → 호감분기: Dain | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_penalty_deferred`
+    - [68+] → `wall_seo_glimpse_4`
+    - [기본] → `day4_student_counteroffer_soft_dain`
   3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `wall_seo_1` | Seoyeon -8, Dain -8 | 플래그: `day4_held_route_seoyeon`
   4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `wall_seo_1` | Seoyeon -5, Dain -10 | 플래그: `day4_held_route_seoyeon`
 
@@ -18121,7 +18171,9 @@
 - 배경: `yuna_hideout.png`
 - 선택지:
   1. "서연에게 답장하고 공원으로 간다" → `wall_seo_1` | Seoyeon +4, Yuna -6 | 플래그: `day4_held_route_seoyeon`
-  2. "별관으로 가서 유나 곁에 남는다" → `wall_seo_yuna_tempt_accept` | Yuna +8, Seoyeon -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_penalty_deferred`
+  2. "별관으로 가서 유나 곁에 남는다" → 호감분기: Yuna | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_penalty_deferred`
+    - [68+] → `wall_seo_yuna_tempt_accept`
+    - [기본] → `day4_student_counteroffer_soft_yuna`
   3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `wall_seo_1` | Seoyeon -8, Yuna -8 | 플래그: `day4_held_route_seoyeon`
   4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `wall_seo_1` | Seoyeon -5, Yuna -10 | 플래그: `day4_held_route_seoyeon`
 
@@ -18757,7 +18809,9 @@
 - 배경: `school_back.png`
 - 선택지:
   1. "다인에게 답장하고 체육관으로 간다" → `wall_dain_1` | Dain +5, Yuna -6 | 플래그: `day4_held_route_dain`
-  2. "학교 후문으로 돌아가 유나 곁에 남는다" → `wall_dain_glimpse_4` | Yuna +8, Dain -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_penalty_deferred`
+  2. "학교 후문으로 돌아가 유나 곁에 남는다" → 호감분기: Yuna | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_penalty_deferred`
+    - [68+] → `wall_dain_glimpse_4`
+    - [기본] → `day4_student_counteroffer_soft_yuna`
   3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `wall_dain_1` | Dain -8, Yuna -8 | 플래그: `day4_held_route_dain`
   4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `wall_dain_1` | Dain -5, Yuna -10 | 플래그: `day4_held_route_dain`
 
@@ -18775,6 +18829,15 @@
 
 ---
 
+### `day4_student_counteroffer_soft_yuna`
+- 배경: `yuna_hideout.png`
+- 다음: `day4_night_regret`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: *별관으로 들어가 빈 의자에 앉는다. 유나는 재킷을 벗지 않은 채 맞은편 책을 덮는다.* 오늘은 가지 마. 말 안 해도 돼.
+
+---
+
 ### `wall_dain_seo_tempt_1`
 - 배경: `school_back.png`
 - 다음: `wall_dain_seo_tempt_2`
@@ -18788,7 +18851,9 @@
 - 배경: `school_back.png`
 - 선택지:
   1. "다인에게 답장하고 체육관으로 간다" → `wall_dain_1` | Dain +5, Seoyeon -6 | 플래그: `day4_held_route_dain`
-  2. "서연을 따라 옥상에 올라가 손을 잡는다" → `wall_dain_seo_tempt_accept` | Seoyeon +8, Dain -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_penalty_deferred`
+  2. "서연을 따라 옥상에 올라가 손을 잡는다" → 호감분기: Seoyeon | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_penalty_deferred`
+    - [68+] → `wall_dain_seo_tempt_accept`
+    - [기본] → `day4_student_counteroffer_soft_seoyeon`
   3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `wall_dain_1` | Dain -8, Seoyeon -8 | 플래그: `day4_held_route_dain`
   4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `wall_dain_1` | Dain -5, Seoyeon -10 | 플래그: `day4_held_route_dain`
 
@@ -19592,7 +19657,9 @@
 - 배경톤: `dream`
 - 선택지:
   1. "유나에게 답장하고 학교 후문으로 간다" → `wall_yuna_1` | Yuna +4, Seoyeon -6 | 플래그: `day4_held_route_yuna`
-  2. "서연을 따라 옥상으로 올라가 손을 잡는다" → `wall_yuna_glimpse_4` | Seoyeon +8, Yuna -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_penalty_deferred`
+  2. "서연을 따라 옥상으로 올라가 손을 잡는다" → 호감분기: Seoyeon | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_penalty_deferred`
+    - [68+] → `wall_yuna_glimpse_4`
+    - [기본] → `day4_student_counteroffer_soft_seoyeon`
   3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `wall_yuna_1` | Yuna -8, Seoyeon -8 | 플래그: `day4_held_route_yuna`
   4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `wall_yuna_1` | Yuna -5, Seoyeon -10 | 플래그: `day4_held_route_yuna`
 
@@ -19607,6 +19674,15 @@
 
 - 캐릭터: `없음`
 **{name}**: *옥상문이 닫히자 서연은 말없이 블라우스 단추를 풀고 {name}의 손목을 잡아 제 쪽으로 끌어당긴다. 열린 옷깃 사이로 손바닥이 맨가슴에 닿는 순간, 서연의 손이 그 위를 덮는다. 주머니 속에서 유나의 메시지가 한 번, 다시 한 번 울린다.*
+
+---
+
+### `day4_student_counteroffer_soft_seoyeon`
+- 배경: `school_back.png`
+- 다음: `day4_night_regret`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: *서연을 따라 옥상에 올라간다. 난간 앞에 선 서연이 손바닥을 편다.* 오늘은 여기 있어 줘. 그거면 돼.
 
 ---
 
@@ -19625,7 +19701,9 @@
 - 배경톤: `lights-off`
 - 선택지:
   1. "유나에게 답장하고 학교 후문으로 간다" → `wall_yuna_1` | Yuna +4, Dain -6 | 플래그: `day4_held_route_yuna`
-  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `wall_yuna_dain_tempt_accept` | Dain +8, Yuna -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_penalty_deferred`
+  2. "체육관으로 들어가 다인의 부탁을 받아준다" → 호감분기: Dain | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_penalty_deferred`
+    - [68+] → `wall_yuna_dain_tempt_accept`
+    - [기본] → `day4_student_counteroffer_soft_dain`
   3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `wall_yuna_1` | Yuna -8, Dain -8 | 플래그: `day4_held_route_yuna`
   4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `wall_yuna_1` | Yuna -5, Dain -10 | 플래그: `day4_held_route_yuna`
 
@@ -20146,6 +20224,15 @@
 
 - 캐릭터: `없음`
 **{name}**: *마지막 공이 바닥을 굴러간다. 다인은 거친 숨을 고르며 유니폼 앞자락을 움켜쥐고 아래로 당긴다. 그대로 {name} 바로 앞까지 몸을 깊이 숙이자 땀에 젖은 숨이 코앞에 닿는다. 유나의 이름이 휴대폰 화면에 연달아 뜬다.*
+
+---
+
+### `day4_student_counteroffer_soft_dain`
+- 배경: `gym.png`
+- 다음: `day4_night_regret`
+
+- 캐릭터: `dain_normal.png`
+**다인**: *체육관으로 들어가 마지막 공이 멎을 때까지 토스를 받아 준다. 다인이 숨을 고른 뒤 벤치 옆자리를 두드린다.* 오늘은 그냥 같이 앉아 있어 줘.
 
 ---
 
@@ -20803,9 +20890,48 @@
 ### `morning5_counteroffer_group_talk`
 - 배경: `room_school.png`
 - 타입: `group_free_talk`
-- 다음: `morning5_after_counteroffer`
+- 다음: `morning5_counteroffer_choice`
 
 **두 사람**: *두 사람의 시선이 한꺼번에 닿는다. 어젯밤은 대체 뭐였는지, 처음부터 둘 다 붙잡아 둔 건지. 어느 쪽도 먼저 물러서지 않는다.* "그래서 지금, 누구를 선택할 건데?"
+
+---
+
+### `morning5_counteroffer_choice`
+- 배경: `room_school.png`
+- 선택지:
+  1. "먼저 약속했던 사람에게 책임지고 답한다" → `morning5_counteroffer_choice_lead` | 플래그: `day5_counteroffer_choice_lead`
+  2. "어젯밤 찾아간 사람을 선택한다고 말한다" → `morning5_counteroffer_choice_tempter` | 플래그: `day5_counteroffer_choice_tempter`
+  3. "둘 다 붙잡지 않고 관계를 정리한다" → `morning5_counteroffer_choice_neither` | 플래그: `day5_counteroffer_choice_neither`
+
+- 캐릭터: `없음`
+**{name}**: *대화가 끝나자 두 사람 모두 답을 기다린다.*
+
+---
+
+### `morning5_counteroffer_choice_lead`
+- 배경: `room_school.png`
+- 다음: `morning5_after_counteroffer`
+
+- 캐릭터: `없음`
+**{name}**: *먼저 약속했던 사람 쪽으로 몸을 돌린다.* 어젯밤 내가 한 선택부터 사과할게. 붙잡아 달라고는 안 하겠어.
+
+---
+
+### `morning5_counteroffer_choice_tempter`
+- 배경: `room_school.png`
+- 다음: `morning5_after_counteroffer`
+
+- 캐릭터: `없음`
+**{name}**: *어젯밤 찾아간 사람을 보고 다른 한 사람에게 고개를 숙인다.* 지금 누구에게 마음이 기운 건지 숨기지 않을게. 대신 두 사람을 같이 붙잡지는 않겠어.
+
+---
+
+### `morning5_counteroffer_choice_neither`
+- 배경: `room_school.png`
+- 다음: `morning5_after_counteroffer`
+
+- 캐릭터: `없음`
+**{name}**: *두 사람 사이에서 한 걸음 물러난다.* 지금은 누구도 선택할 자격이 없어. 둘 다 붙잡지 않을게.
 
 ---
 
@@ -23048,8 +23174,6 @@
 - 배경: `school_hallway.png`
 - BGM: `sunset1.mp3`
 - 분기:
-  - [`homeroom_day5`] → `after5_hidden_farewell_1`
-  - [`nurse_day5`] → `after5_hidden_farewell_1`
   - [`day4_waited`] → `after5_waited_start_branch`
   - [`day4_confession_accepted`] → `after5_waited_start_branch`
   - [`route_seoyeon`] → `after5_farewell_yuna_check`
@@ -23057,33 +23181,6 @@
 
 - 캐릭터: `없음`
 **{name}**: *행사가 끝나갈 무렵, 복도에서 선택하지 않은 두 사람과 마주친다.*
-
----
-
-### `after5_hidden_farewell_1`
-- 배경: `school.png`
-- 다음: `after5_hidden_farewell_3`
-
-- 캐릭터: `없음`
-**{name}**: *교문 앞. 서연은 하은과 행사 명단을 확인하고 다인은 배구공을 옆구리에 낀 채 보폭을 줄이고 유나는 펼친 책 위로 시선을 내린다. 셋은 각자 다른 출구로 향한다.*
-
----
-
-### `after5_hidden_farewell_3`
-- 배경: `school.png`
-- 다음: `after5_hidden_farewell_3b`
-
-- 캐릭터: `없음`
-**{name}**: *교문 앞에서 손만 한 번 들었다.*
-
----
-
-### `after5_hidden_farewell_3b`
-- 배경: `school_back.png`
-- 다음: `after5_sunset_1`
-
-- 캐릭터: `없음`
-**{name}**: *학교 뒤편으로 걸어갔다.*
 
 ---
 
@@ -23287,10 +23384,41 @@
 
 ### `after5_farewell_seo_1`
 - 배경: `school_hallway.png`
-- 다음: `after5_farewell_seo_2`
+- 다음: `after5_farewell_seo_affinity_check`
 
 - 캐릭터: `seyoun_normal.png`
 **{name}**: *복도에서 서연과 마주친다.*
+
+---
+
+### `after5_farewell_seo_affinity_check`
+- 배경: `school_hallway.png`
+- 호감분기: Seoyeon
+  - [80+] → `after5_farewell_seo_high_1`
+  - [기본] → `after5_farewell_seo_2`
+- 다음: `after5_farewell_seo_2`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after5_farewell_seo_high_1`
+- 배경: `school_hallway.png`
+- 다음: `after5_farewell_seo_high_2`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: *서연이 클립보드 안쪽에서 첫날 건넸던 메모를 꺼낸다. 접힌 모서리를 엄지로 편다.* 이건 아직 갖고 있어.
+
+---
+
+### `after5_farewell_seo_high_2`
+- 배경: `school_hallway.png`
+- 다음: `after5_farewell_seo_6_b`
+
+- 캐릭터: `seyoun_sad.png`
+**서연**: 네 선택은 알아. 그래도 내가 좋아했던 시간까지 없던 일로 만들진 않을게.
 
 ---
 
@@ -23383,10 +23511,41 @@
 
 ### `after5_farewell_yuna_1`
 - 배경: `library_old.png`
-- 다음: `after5_farewell_yuna_2`
+- 다음: `after5_farewell_yuna_affinity_check`
 
 - 캐릭터: `yuna_normal.png`
 **{name}**: *도서관 앞에서 유나가 다가온다. 아무 말 없이 책 한 권을 건넨다.*
+
+---
+
+### `after5_farewell_yuna_affinity_check`
+- 배경: `library_old.png`
+- 호감분기: Yuna
+  - [80+] → `after5_farewell_yuna_high_1`
+  - [기본] → `after5_farewell_yuna_2`
+- 다음: `after5_farewell_yuna_2`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after5_farewell_yuna_high_1`
+- 배경: `library_old.png`
+- 다음: `after5_farewell_yuna_high_2`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: *유나가 책갈피 뒷면에 오늘 날짜를 적어 건넨다.* 마지막 장까지는 네가 읽어.
+
+---
+
+### `after5_farewell_yuna_high_2`
+- 배경: `library_old.png`
+- 다음: `after5_farewell_yuna_5b`
+
+- 캐릭터: `yuna_sad.png`
+**유나**: 네가 고른 사람한테는 늦지 마. 그래도 내가 널 좋아했던 문장은 지우지 않을 거야.
 
 ---
 
@@ -23460,10 +23619,41 @@
 
 ### `after5_farewell_dain_1`
 - 배경: `gym.png`
-- 다음: `after5_farewell_dain_2`
+- 다음: `after5_farewell_dain_affinity_check`
 
 - 캐릭터: `dain_normal.png`
 **{name}**: *체육관 앞에서 다인이 걸어온다. 평소보다 보폭이 작다.*
+
+---
+
+### `after5_farewell_dain_affinity_check`
+- 배경: `gym.png`
+- 호감분기: Dain
+  - [80+] → `after5_farewell_dain_high_1`
+  - [기본] → `after5_farewell_dain_2`
+- 다음: `after5_farewell_dain_2`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after5_farewell_dain_high_1`
+- 배경: `gym.png`
+- 다음: `after5_farewell_dain_high_2`
+
+- 캐릭터: `dain_normal.png`
+**다인**: *다인은 배구공을 한 번 튀겨 잡고 코트 선 밖에 내려놓는다.* 네 선택은 알아.
+
+---
+
+### `after5_farewell_dain_high_2`
+- 배경: `gym.png`
+- 다음: `after5_farewell_dain_4_d`
+
+- 캐릭터: `dain_sad.png`
+**다인**: 그래도 내가 좋아했던 것까지 없던 일로 하진 않을 거야. 잘해. 아니면 진짜 화낼 거니까.
 
 ---
 
@@ -23580,9 +23770,9 @@
 ### `after5_hidden_route_choice_check`
 - 배경: `school_back.png`
 - 분기:
-  - [`day4_confession_accepted`] → `after5_hidden_route_choice`
-  - [`day4_waited`] → `after5_last_chance_1`
-  - [기본] → `ending_start`
+  - [`day4_confession_accepted`] → `ending_start`
+  - [`day4_waited`] → `after5_hidden_route_choice`
+  - [기본] → `after5_hidden_route_choice`
 
 - 캐릭터: `없음`
 **{name}**: *친구들과 한 약속으로 가는 길과, 행사 정리를 마저 돕는 길이 갈린다.*
@@ -23591,10 +23781,107 @@
 
 ### `after5_hidden_route_choice`
 - 배경: `park.png`
+- 선택지:
+  1. "공원으로 가서 원래 하던 선택을 마무리한다" → `after5_last_chance_1`
+  2. "담임선생님에게 돌아가 문예부 원고를 함께 정리한다" → `after5_hidden_teacher_affinity_check` | 플래그: `hidden_route_chosen_teacher`
+  3. "보건선생님에게 돌아가 상담 기록을 함께 정리한다" → `after5_hidden_nurse_affinity_check` | 플래그: `hidden_route_chosen_nurse`
+
+- 캐릭터: `없음`
+**{name}**: *공원으로 향하는 길과, 행사 정리를 마저 돕는 길이 갈린다. 오늘은 누구에게 답할지 정해야 한다.*
+
+---
+
+### `after5_hidden_teacher_affinity_check`
+- 배경: `room_school.png`
+- 호감분기: Teacher
+  - [60+] → `after5_hidden_teacher_high`
+  - [40+] → `after5_hidden_teacher_mid`
+  - [기본] → `after5_hidden_teacher_low`
+- 다음: `after5_hidden_teacher_low`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after5_hidden_teacher_high`
+- 배경: `room_school.png`
+- 배경톤: `empty`
+- 다음: `after5_hidden_return_to_park`
+
+- 캐릭터: `teacher_smile.png`
+**담임선생님**: *04번 합평본의 빈 의견란을 한 번 확인하고 봉투를 닫는다.* 네가 어디서 멈췄는지 월요일에 들을게. 좋은 말만 고르지는 마.
+
+---
+
+### `after5_hidden_teacher_mid`
+- 배경: `room_school.png`
+- 배경톤: `empty`
+- 다음: `after5_hidden_return_to_park`
+
+- 캐릭터: `teacher_normal.png`
+**담임선생님**: *04번 합평본 번호를 확인한다.* 읽은 데까지만 표시해. 나머지는 문예부에서 같이 볼 거야.
+
+---
+
+### `after5_hidden_teacher_low`
+- 배경: `room_school.png`
+- 배경톤: `empty`
+- 다음: `after5_hidden_return_to_park`
+
+- 캐릭터: `teacher_normal.png`
+**담임선생님**: *원고 봉투를 서류철 안에 넣는다.* 합평은 정해진 시간에 문예부에서 받겠다. 오늘은 행사부터 마쳐.
+
+---
+
+### `after5_hidden_nurse_affinity_check`
+- 배경: `nurse_room.png`
+- 호감분기: Nurse
+  - [60+] → `after5_hidden_nurse_high`
+  - [40+] → `after5_hidden_nurse_mid`
+  - [기본] → `after5_hidden_nurse_low`
+- 다음: `after5_hidden_nurse_low`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after5_hidden_nurse_high`
+- 배경: `nurse_room.png`
+- 다음: `after5_hidden_return_to_park`
+
+- 캐릭터: `nurse_smile.png`
+**보건선생님**: *상담 확인서와 응급처치 카드를 나란히 놓는다.* 다음에 버거우면 혼자 버티지 말고 네가 정한 순서대로 먼저 연락해.
+
+---
+
+### `after5_hidden_nurse_mid`
+- 배경: `nurse_room.png`
+- 다음: `after5_hidden_return_to_park`
+
+- 캐릭터: `nurse_normal.png`
+**보건선생님**: *응급처치 카드 뒷면의 상담 QR을 가리킨다.* 필요하면 여기로 예약해. 이유를 만들 필요는 없어.
+
+---
+
+### `after5_hidden_nurse_low`
+- 배경: `nurse_room.png`
+- 다음: `after5_hidden_return_to_park`
+
+- 캐릭터: `nurse_normal.png`
+**보건선생님**: *상담 기록지를 파일에 넣고 예약표를 닫는다.* 다음 상담은 정식 절차로 잡아. 오늘 기록은 여기서 마칠게.
+
+---
+
+### `after5_hidden_return_to_park`
+- 배경: `park.png`
 - 다음: `ending_start`
 
 - 캐릭터: `없음`
-**{name}**: *행사 정리는 다른 학생들에게 맡기고 약속 장소인 공원으로 향한다.*
+**{name}**: *정리를 마치고 학교를 나선다. 공원으로 이어진 길에 축제 안내 깃발이 접혀 있다.*
 
 ---
 
@@ -23620,14 +23907,55 @@
 ### `after5_last_chance_route_check`
 - 배경: `school_back.png`
 - 분기:
-  - [`route_seoyeon`] → `after5_last_chance_seo_aff_check`
-  - [`route_dain`] → `after5_last_chance_dain_aff_check`
-  - [`route_yuna`] → `after5_last_chance_yuna_aff_check`
+  - [`route_seoyeon`] → `after5_last_chance_seo_history_check`
+  - [`route_dain`] → `after5_last_chance_dain_history_check`
+  - [`route_yuna`] → `after5_last_chance_yuna_history_check`
   - [기본] → `after5_last_chance_choice`
 
 - 캐릭터: `없음`
 
 <!-- i18n -->
+
+---
+
+### `after5_last_chance_seo_history_check`
+- 배경: `school_back.png`
+- 분기:
+  - [`postponed_seoyeon`] → `after5_last_chance_seo_postponed`
+  - [`day4_tentative_seoyeon`] → `after5_last_chance_seo_tentative`
+  - [`day4_distance_seoyeon`] → `after5_last_chance_seo_distance`
+  - [기본] → `after5_last_chance_seo_aff_check`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after5_last_chance_seo_postponed`
+- 배경: `school_back.png`
+- 다음: `after5_last_chance_seo_aff_check`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 어제 옥상에서 남긴 말, 오늘은 끝까지 해.
+
+---
+
+### `after5_last_chance_seo_tentative`
+- 배경: `school_back.png`
+- 다음: `after5_last_chance_seo_aff_check`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 어제는 다음 약속을 안 잡았지. 그래도 오늘은 네가 먼저 왔네.
+
+---
+
+### `after5_last_chance_seo_distance`
+- 배경: `school_back.png`
+- 다음: `after5_last_chance_seo_aff_check`
+
+- 캐릭터: `seyoun_sad.png`
+**서연**: 어제는 여기서 멈추자고 했어. 오늘 온 이유부터 들을게.
 
 ---
 
@@ -23743,6 +24071,47 @@
 
 ---
 
+### `after5_last_chance_dain_history_check`
+- 배경: `school_back.png`
+- 분기:
+  - [`postponed_dain`] → `after5_last_chance_dain_postponed`
+  - [`day4_tentative_dain`] → `after5_last_chance_dain_tentative`
+  - [`day4_distance_dain`] → `after5_last_chance_dain_distance`
+  - [기본] → `after5_last_chance_dain_aff_check`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after5_last_chance_dain_postponed`
+- 배경: `school_back.png`
+- 다음: `after5_last_chance_dain_aff_check`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 어제 못 끝낸 말, 오늘은 끝까지 들어.
+
+---
+
+### `after5_last_chance_dain_tentative`
+- 배경: `school_back.png`
+- 다음: `after5_last_chance_dain_aff_check`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 어제는 다음 약속을 못 잡았지. 오늘은 네가 먼저 왔네.
+
+---
+
+### `after5_last_chance_dain_distance`
+- 배경: `school_back.png`
+- 다음: `after5_last_chance_dain_aff_check`
+
+- 캐릭터: `dain_sad.png`
+**다인**: 어제는 서로 멈췄잖아. 오늘은 왜 돌아왔는지 듣고 싶어.
+
+---
+
 ### `after5_last_chance_dain_aff_check`
 - 배경: `school_back.png`
 - 호감분기: Dain
@@ -23815,7 +24184,7 @@
 - 다음: `after5_last_chance_2_r`
 
 - 캐릭터: `dain_sad.png`
-**다인**: 어제부터 기다렸어. 근데 바로 웃지는 못해.
+**다인**: 바로 웃지는 못해. 그래도 여기까지 온 말은 들을게.
 
 ---
 
@@ -23852,6 +24221,47 @@
 
 - 캐릭터: `dain_sad.png`
 **다인**: *한 걸음 지나친 뒤 돌아온다. 배구공을 가슴 앞에 안은 채 거리를 둔다.* 왜.
+
+---
+
+### `after5_last_chance_yuna_history_check`
+- 배경: `school_back.png`
+- 분기:
+  - [`postponed_yuna`] → `after5_last_chance_yuna_postponed`
+  - [`day4_tentative_yuna`] → `after5_last_chance_yuna_tentative`
+  - [`day4_distance_yuna`] → `after5_last_chance_yuna_distance`
+  - [기본] → `after5_last_chance_yuna_aff_check`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after5_last_chance_yuna_postponed`
+- 배경: `school_back.png`
+- 다음: `after5_last_chance_yuna_aff_check`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: 어제는 결말을 미뤘지. 오늘은 네 말부터 들을게.
+
+---
+
+### `after5_last_chance_yuna_tentative`
+- 배경: `school_back.png`
+- 다음: `after5_last_chance_yuna_aff_check`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: 어제는 내가 먼저 연락하겠다고 했는데. 오늘은 네가 왔네.
+
+---
+
+### `after5_last_chance_yuna_distance`
+- 배경: `school_back.png`
+- 다음: `after5_last_chance_yuna_aff_check`
+
+- 캐릭터: `yuna_sad.png`
+**유나**: 어제는 여기까지 하자고 했어. 오늘 온 이유는 들을게.
 
 ---
 
@@ -23989,7 +24399,7 @@
 - 다음: `after5_confess_no_2`
 
 - 캐릭터: `dain_sad.png`
-**다인**: *배구공을 다시 끌어안는다.* ...그래. 기다린 쪽은 나였지만.
+**다인**: *배구공을 다시 끌어안는다.* 그래. 오늘도 여기서 멈추는 거네.
 
 ---
 
@@ -23998,7 +24408,7 @@
 - 다음: `after5_confess_no_2`
 
 - 캐릭터: `yuna_sad.png`
-**유나**: *책을 다시 품에 안는다.* 알겠어. 기다리라고 한 건 너였지만.
+**유나**: *책을 다시 품에 안는다.* 알겠어. 오늘도 여기서 멈추는 거네.
 
 ---
 
@@ -24289,12 +24699,14 @@
   - [`ending_harem`] → `day5_ending_harem`
   - [`day4_counteroffer_penalty_deferred`] → `ending_counteroffer_bitter`
   - [`day5_last_chance_path`] → `ending_last_chance_resolve`
-  - [`both_hidden_day5`] → `hidden_dual_route_1`
-  - [`homeroom_day5`] → `hidden_perfect_homeroom_check`
-  - [`nurse_day5`] → `hidden_perfect_nurse_check`
+  - [`hidden_route_chosen_teacher`] → `hidden_perfect_homeroom_check`
+  - [`hidden_route_chosen_nurse`] → `hidden_perfect_nurse_check`
   - [`day4_confession_accepted`] → `ending_affinity_check`
   - [`day5_confessed`] → `ending_confessed_aff_check`
   - [`day4_waited`] → `day5_ending_friend`
+  - [`both_hidden_day5`] → `hidden_dual_route_1`
+  - [`homeroom_day5`] → `hidden_perfect_homeroom_check`
+  - [`nurse_day5`] → `hidden_perfect_nurse_check`
   - [기본] → `day5_ending_alone`
 
 - 캐릭터: `없음`
@@ -24306,6 +24718,50 @@
 - 배경: `park.png`
 - BGM: `night2.mp3`
 - 플래그: `ending_bittersweet`
+- 분기:
+  - [`day5_counteroffer_choice_lead`] → `ending_counteroffer_choice_lead`
+  - [`day5_counteroffer_choice_tempter`] → `ending_counteroffer_choice_tempter`
+  - [`day5_counteroffer_choice_neither`] → `ending_counteroffer_choice_neither`
+  - [기본] → `ending_counteroffer_bitter_route`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `ending_counteroffer_choice_lead`
+- 배경: `park.png`
+- BGM: `night2.mp3`
+- 다음: `ending_counteroffer_bitter_route`
+
+- 캐릭터: `없음`
+**{name}**: *먼저 약속했던 사람을 선택했다. 사과가 어젯밤의 일을 지우지는 못했다.*
+
+---
+
+### `ending_counteroffer_choice_tempter`
+- 배경: `park.png`
+- BGM: `night2.mp3`
+- 다음: `ending_counteroffer_bitter_route`
+
+- 캐릭터: `없음`
+**{name}**: *한 사람을 골랐다. 시작보다 먼저 정리해야 할 관계가 남았다.*
+
+---
+
+### `ending_counteroffer_choice_neither`
+- 배경: `park.png`
+- BGM: `night2.mp3`
+- 다음: `ending_counteroffer_bitter_route`
+
+- 캐릭터: `없음`
+**{name}**: *둘 다 붙잡지 않겠다고 말한 뒤, 세 사람의 대화는 거기서 끝났다.*
+
+---
+
+### `ending_counteroffer_bitter_route`
+- 배경: `park.png`
 - 분기:
   - [`day4_counteroffer_target_teacher`] → `co_bitter_teacher_1`
   - [`day4_counteroffer_target_nurse`] → `co_bitter_nurse_1`

@@ -1119,5 +1119,33 @@
     "day4_student_return_home": {
         "name": "{name}",
         "text": "*約束を終えて家に帰る。玄関の扉が閉まると、部屋にはスマホの明かりだけが残る。*"
+    },
+    "day4_adult_counteroffer_soft_seoyeon": {
+        "name": "ソヨン",
+        "text": "*ソヨンについて屋上へ上がる。手すりの前で立ち止まり、ソヨンが手のひらを差し出す。* 今日はここにいて。それだけでいい。"
+    },
+    "day4_adult_counteroffer_soft_dain": {
+        "name": "ダイン",
+        "text": "*体育館に入り、最後のボールが止まるまでトスを返す。息を整えたダインがベンチの隣を軽く叩く。* 今日はただ、一緒に座ってて。"
+    },
+    "day4_adult_counteroffer_soft_yuna": {
+        "name": "ユナ",
+        "text": "*別館に入り、空いている椅子に座る。ユナはジャケットを脱がないまま、向かいの本を閉じる。* 今日は行かないで。何も言わなくていいから。"
+    },
+    "day4_student_counteroffer_soft_seoyeon": {
+        "name": "ソヨン",
+        "text": "*ソヨンについて屋上へ上がる。手すりの前で立ち止まり、ソヨンが手のひらを差し出す。* 今日はここにいて。それだけでいい。"
+    },
+    "day4_student_counteroffer_soft_dain": {
+        "name": "ダイン",
+        "text": "*体育館に入り、最後のボールが止まるまでトスを返す。息を整えたダインがベンチの隣を軽く叩く。* 今日はただ、一緒に座ってて。"
+    },
+    "day4_student_counteroffer_soft_yuna": {
+        "name": "ユナ",
+        "text": "*別館に入り、空いている椅子に座る。ユナはジャケットを脱がないまま、向かいの本を閉じる。* 今日は行かないで。何も言わなくていいから。"
+    },
+    "day4_adult_counteroffer_soft_return_home": {
+        "name": "{name}",
+        "text": "*学校を出て家に帰る。玄関のドアを閉めても、さっき交わした言葉が残っている。*"
     }
 }

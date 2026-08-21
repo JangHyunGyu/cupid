@@ -638,19 +638,19 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_seo_low": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "setFlags": ["day4_waited"],
+        "setFlags": ["day4_waited", "day4_distance_seoyeon"],
         "next": "day4_night_start"
     },
     "date_yuna_low": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "setFlags": ["day4_waited"],
+        "setFlags": ["day4_waited", "day4_distance_yuna"],
         "next": "day4_night_start"
     },
     "date_dain_low": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
-        "setFlags": ["day4_waited"],
+        "setFlags": ["day4_waited", "day4_distance_dain"],
         "next": "day4_night_start"
     }
     };

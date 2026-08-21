@@ -1119,5 +1119,33 @@
     "day4_student_return_home": {
         "name": "{name}",
         "text": "*Je rentre chez moi après le rendez-vous. Une fois la porte fermée, le téléphone reste la seule lumière dans ma chambre.*"
+    },
+    "day4_adult_counteroffer_soft_seoyeon": {
+        "name": "Seoyeon",
+        "text": "*Je suis Seoyeon sur le toit. Elle s’arrête devant la rambarde et ouvre la main.* Reste avec moi aujourd’hui. Ça me suffit."
+    },
+    "day4_adult_counteroffer_soft_dain": {
+        "name": "Dain",
+        "text": "*J’entre dans le gymnase et lui renvoie ses passes jusqu’à ce que le dernier ballon s’immobilise. Dain reprend son souffle puis tapote la place à côté d’elle.* Aujourd’hui, assieds-toi juste avec moi."
+    },
+    "day4_adult_counteroffer_soft_yuna": {
+        "name": "Yuna",
+        "text": "*J’entre dans l’annexe et m’assieds sur une chaise vide. Sans enlever sa veste, Yuna ferme le livre en face d’elle.* Ne pars pas aujourd’hui. Tu n’as rien besoin de dire."
+    },
+    "day4_student_counteroffer_soft_seoyeon": {
+        "name": "Seoyeon",
+        "text": "*Je suis Seoyeon sur le toit. Elle s’arrête devant la rambarde et ouvre la main.* Reste avec moi aujourd’hui. Ça me suffit."
+    },
+    "day4_student_counteroffer_soft_dain": {
+        "name": "Dain",
+        "text": "*J’entre dans le gymnase et lui renvoie ses passes jusqu’à ce que le dernier ballon s’immobilise. Dain reprend son souffle puis tapote la place à côté d’elle.* Aujourd’hui, assieds-toi juste avec moi."
+    },
+    "day4_student_counteroffer_soft_yuna": {
+        "name": "Yuna",
+        "text": "*J’entre dans l’annexe et m’assieds sur une chaise vide. Sans enlever sa veste, Yuna ferme le livre en face d’elle.* Ne pars pas aujourd’hui. Tu n’as rien besoin de dire."
+    },
+    "day4_adult_counteroffer_soft_return_home": {
+        "name": "{name}",
+        "text": "*Je quitte l’école et rentre chez moi. Les mots que nous venons d’échanger restent présents après la fermeture de la porte.*"
     }
 }

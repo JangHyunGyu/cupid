@@ -124,7 +124,12 @@
     },
     "after5_hidden_route_choice": {
         "name": "{name}",
-        "text": "*I leave the remaining event cleanup to the other students and head for the park where my friends are waiting.*"
+        "text": "*The road to the park and the road back to help finish the event split here. I have to decide who gets my answer today.*",
+        "choices": [
+            "Go to the park and finish the choice I had already started",
+            "Return to the homeroom teacher and organize the literature-club manuscript",
+            "Return to the school nurse and organize the counseling records"
+        ]
     },
     "after5_last_chance_1": {
         "name": "{name}",
@@ -207,7 +212,7 @@
     },
     "after5_last_chance_2_q": {
         "name": "Dain",
-        "text": "I've been waiting since yesterday. But I can't just smile right away."
+        "text": "I cannot smile right away. But I will hear what brought you this far."
     },
     "after5_last_chance_2_r": {
         "name": "Dain",
@@ -385,11 +390,11 @@
     },
     "after5_defer_dain": {
         "name": "Dain",
-        "text": "*She hugs the volleyball to her chest again.* ...Fine. Even though I was the one waiting."
+        "text": "*She hugs the volleyball again.* Okay. We are stopping here again today."
     },
     "after5_defer_yuna": {
         "name": "Yuna",
-        "text": "*She pulls the book back to her chest.* Okay. Even though you were the one who asked me to wait."
+        "text": "*She gathers the book back to her chest.* I see. We are stopping here again today."
     },
     "after5_co_abandoned_branch": {},
     "after5_co_tempter_branch": {},
@@ -464,5 +469,101 @@
     "after5_normal_start": {
         "name": "{name}",
         "text": "*The event is winding down. In the hall, I run into the two people I didn't choose.*"
+    },
+    "after5_farewell_seo_affinity_check": {},
+    "after5_farewell_seo_high_1": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon takes the note from our first day out of her clipboard and smooths its folded corner with her thumb.* I still have this."
+    },
+    "after5_farewell_seo_high_2": {
+        "name": "Seoyeon",
+        "text": "I know who you chose. But I will not pretend the time I liked you never happened."
+    },
+    "after5_farewell_yuna_affinity_check": {},
+    "after5_farewell_yuna_high_1": {
+        "name": "Yuna",
+        "text": "*Yuna writes today’s date on the back of a bookmark and hands it to me.* You read it through the last page."
+    },
+    "after5_farewell_yuna_high_2": {
+        "name": "Yuna",
+        "text": "Do not be late for the person you chose. I am not erasing the lines where I liked you, either."
+    },
+    "after5_farewell_dain_affinity_check": {},
+    "after5_farewell_dain_high_1": {
+        "name": "Dain",
+        "text": "*Dain bounces the volleyball once, catches it, and sets it outside the court line.* I know who you chose."
+    },
+    "after5_farewell_dain_high_2": {
+        "name": "Dain",
+        "text": "But I will not act like liking you never happened. Treat her well. Or I really will get mad."
+    },
+    "after5_hidden_teacher_affinity_check": {},
+    "after5_hidden_teacher_high": {
+        "name": "Homeroom Teacher",
+        "text": "*She checks the blank comment box in critique copy 04, then closes the envelope.* Tell me on Monday where you stopped. Do not pick only the nice parts."
+    },
+    "after5_hidden_teacher_mid": {
+        "name": "Homeroom Teacher",
+        "text": "*She checks the number on critique copy 04.* Mark only how far you read. We will review the rest with the literature club."
+    },
+    "after5_hidden_teacher_low": {
+        "name": "Homeroom Teacher",
+        "text": "*She puts the manuscript envelope into the file.* You will receive the critique during the scheduled club time. Finish the event first today."
+    },
+    "after5_hidden_nurse_affinity_check": {},
+    "after5_hidden_nurse_high": {
+        "name": "School Nurse",
+        "text": "*She places the counseling confirmation and first-aid card side by side.* Next time it gets heavy, do not endure it alone. Contact people in the order you decided."
+    },
+    "after5_hidden_nurse_mid": {
+        "name": "School Nurse",
+        "text": "*She points to the counseling QR code on the back of the first-aid card.* Book here if you need it. You do not need to invent a reason."
+    },
+    "after5_hidden_nurse_low": {
+        "name": "School Nurse",
+        "text": "*She files the counseling record and closes the appointment book.* Schedule the next session through the proper process. We are done recording today."
+    },
+    "after5_last_chance_seo_history_check": {},
+    "after5_last_chance_seo_postponed": {
+        "name": "Seoyeon",
+        "text": "Finish what you left on the rooftop yesterday."
+    },
+    "after5_last_chance_seo_tentative": {
+        "name": "Seoyeon",
+        "text": "We did not make another plan yesterday. Still, you came first today."
+    },
+    "after5_last_chance_seo_distance": {
+        "name": "Seoyeon",
+        "text": "Yesterday, we agreed to stop there. Tell me why you came today first."
+    },
+    "after5_last_chance_dain_history_check": {},
+    "after5_last_chance_dain_postponed": {
+        "name": "Dain",
+        "text": "I will hear the part we did not finish yesterday."
+    },
+    "after5_last_chance_dain_tentative": {
+        "name": "Dain",
+        "text": "We never made the next plan yesterday. You came first today."
+    },
+    "after5_last_chance_dain_distance": {
+        "name": "Dain",
+        "text": "We both stopped yesterday. I want to hear why you came back today."
+    },
+    "after5_last_chance_yuna_history_check": {},
+    "after5_last_chance_yuna_postponed": {
+        "name": "Yuna",
+        "text": "We postponed the ending yesterday. I will hear your answer first today."
+    },
+    "after5_last_chance_yuna_tentative": {
+        "name": "Yuna",
+        "text": "I said I would contact you first. But you came today."
+    },
+    "after5_last_chance_yuna_distance": {
+        "name": "Yuna",
+        "text": "Yesterday, we agreed to stop there. I will hear why you came today."
+    },
+    "after5_hidden_return_to_park": {
+        "name": "{name}",
+        "text": "*After finishing the work, I leave school. Folded festival banners line the road toward the park.*"
     }
 }

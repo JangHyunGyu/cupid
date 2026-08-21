@@ -687,5 +687,26 @@
     "morning5_caught_fallout_3": {"name":"{name}","text":"*行事が終わるまで、三人と交わしたのは仕事の確認だけだった。最後のチャイムが鳴ると、それぞれ別の階段を下りていく。*"},
     "morning5_harem_fallout_1": {"name":"{name}","text":"*行事の間、三人は必要な連絡だけをグループに残す。個別のトークには新しいメッセージがない。*"},
     "morning5_harem_fallout_2": {"name":"ダイン","text":"今日が終わっても、別々には会わないでおこう。みんなで決めたこと、守って。"},
-    "morning5_harem_fallout_3": {"name":"{name}","text":"*うなずく。三人は一緒に校門を出て、少し遅れて一人で後を追う。*"}
+    "morning5_harem_fallout_3": {"name":"{name}","text":"*うなずく。三人は一緒に校門を出て、少し遅れて一人で後を追う。*"},
+    "morning5_counteroffer_choice": {
+        "name": "{name}",
+        "text": "*会話が途切れると、二人とも答えを待った。*",
+        "choices": [
+            "先に約束していた相手に向き合い、責任を持って答える",
+            "昨夜会いに行った相手を選ぶと伝える",
+            "どちらも引き止めず、二つの関係を終わらせる"
+        ]
+    },
+    "morning5_counteroffer_choice_lead": {
+        "name": "{name}",
+        "text": "*先に約束していた相手へ体を向ける。* まず、昨夜の選択を謝る。引き止めてほしいとは言わない。"
+    },
+    "morning5_counteroffer_choice_tempter": {
+        "name": "{name}",
+        "text": "*昨夜会いに行った相手を見て、もう一人に頭を下げる。* 今、気持ちがどちらに傾いているか隠さない。でも、二人とも引き止めることはしない。"
+    },
+    "morning5_counteroffer_choice_neither": {
+        "name": "{name}",
+        "text": "*二人の間から一歩下がる。* 今の僕には、どちらかを選ぶ資格もない。二人とも引き止めない。"
+    }
 }

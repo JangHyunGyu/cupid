@@ -1119,5 +1119,33 @@
     "day4_student_return_home": {
         "name": "{name}",
         "text": "*Vuelvo a casa después de la cita. Al cerrarse la puerta, la luz del móvil es la única que queda en mi habitación.*"
+    },
+    "day4_adult_counteroffer_soft_seoyeon": {
+        "name": "Seoyeon",
+        "text": "*Sigo a Seoyeon hasta la azotea. Se detiene ante la barandilla y abre la mano.* Quédate aquí conmigo hoy. Con eso basta."
+    },
+    "day4_adult_counteroffer_soft_dain": {
+        "name": "Dain",
+        "text": "*Entro al gimnasio y le devuelvo los pases hasta que se detiene el último balón. Dain recupera el aliento y da una palmada al banco junto a ella.* Hoy solo siéntate conmigo."
+    },
+    "day4_adult_counteroffer_soft_yuna": {
+        "name": "Yuna",
+        "text": "*Entro al anexo y tomo una silla vacía. Yuna cierra el libro de enfrente sin quitarse la chaqueta.* No te vayas hoy. No hace falta que digas nada."
+    },
+    "day4_student_counteroffer_soft_seoyeon": {
+        "name": "Seoyeon",
+        "text": "*Sigo a Seoyeon hasta la azotea. Se detiene ante la barandilla y abre la mano.* Quédate aquí conmigo hoy. Con eso basta."
+    },
+    "day4_student_counteroffer_soft_dain": {
+        "name": "Dain",
+        "text": "*Entro al gimnasio y le devuelvo los pases hasta que se detiene el último balón. Dain recupera el aliento y da una palmada al banco junto a ella.* Hoy solo siéntate conmigo."
+    },
+    "day4_student_counteroffer_soft_yuna": {
+        "name": "Yuna",
+        "text": "*Entro al anexo y tomo una silla vacía. Yuna cierra el libro de enfrente sin quitarse la chaqueta.* No te vayas hoy. No hace falta que digas nada."
+    },
+    "day4_adult_counteroffer_soft_return_home": {
+        "name": "{name}",
+        "text": "*Salgo de la escuela y vuelvo a casa. Las palabras que acabamos de intercambiar siguen ahí después de cerrar la puerta.*"
     }
 }

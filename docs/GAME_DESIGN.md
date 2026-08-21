@@ -46,7 +46,7 @@
 
 선택지 문구만 보고 정답과 오답이 드러나지 않도록 캐릭터별 함정 선택지를 둔다. 노골적인 모욕이나 거절이 아니라 배려·칭찬·관심·농담처럼도 읽히지만, 상대의 핵심 상처나 경계를 잘못 짚은 말에 `-2~-3`의 가벼운 감점을 준다. 서연은 작은 호의를 밀어내거나 힘듦을 대수롭지 않게 보는 말, 다인은 운동선수라는 역할로만 규정하는 칭찬, 유나는 조용한 성격으로 단정하거나 과거를 캐묻는 관심, 담임·보건은 친근함으로 포장된 경계 침해와 거짓말이 대상이다.
 
-직접 선택지 273개의 현재 분포는 플러스 59, 마이너스 66, 중립 123, 복합 증감 25다. 함정 선택지는 선택 직후의 반응과 이후 관계 흐름으로 이유가 드러나게 한다.
+직접 선택지 368개의 현재 분포는 플러스 59, 마이너스 154, 중립 130, 복합 증감 25다. 함정 선택지는 선택 직후의 반응과 이후 관계 흐름으로 이유가 드러나게 한다.
 
 **프리토킹 기반 추가 변동:**
 
@@ -95,7 +95,7 @@ AI가 반환한 표정은 해당 캐릭터가 실제 보유한 이미지로만 �
 **고정 시나리오 진입 가드**:
 - **15 이상**: 이전 플래그에 기대는 다음 날 개인 루트와 데이트 약속을 이어갈 수 있다.
 - **40 이상**: 고백 수락, 마지막 날 추억 투어, 미선택 캐릭터의 연애 감정이 남은 작별처럼 관계 진전이 전제된 장면에 들어갈 수 있다.
-- **20 이상(유혹하는 라이벌)**: 강한 라이벌 유혹은 유혹하는 캐릭터의 호감도가 20 이상이면 열린다. 현재 루트 캐릭터는 해당 경쟁군의 실제 상위 2명 안에 있어야 한다.
+- **20 이상(유혹하는 라이벌)**: 라이벌의 역제안은 유혹하는 캐릭터의 호감도가 20 이상이면 열린다. 20~59에서는 함께 남아 달라는 감정적 제안까지만 진행하고, 기존 유혹 CG는 선택 직전 호감도 60 이상일 때만 표시한다. 현재 루트 캐릭터는 해당 경쟁군의 실제 상위 2명 안에 있어야 한다.
 - 기준 미달이면 약속이나 과거 해금 플래그가 남아 있어도 현재 관계에 맞는 거리 두기 장면으로 분기한다.
 
 **도달 예시:**
@@ -121,10 +121,12 @@ AI가 반환한 표정은 해당 캐릭터가 실제 보유한 이미지로만 �
 
 | 엔딩 | 호감도 조건 | 기타 조건 |
 |------|-----------|----------|
-| **PERFECT END** | 100 | `homeroom_day5` 또는 `nurse_day5` |
-| **TRUE LOVE END** | 60~99 | `homeroom_day5` 또는 `nurse_day5` |
-| **GOOD END** | 40~59 | `homeroom_day5` 또는 `nurse_day5` |
-| **BITTERSWEET END** | 40 미만 | `homeroom_day5` 또는 `nurse_day5` |
+| **PERFECT END** | 100 | `hidden_route_chosen_teacher` 또는 `hidden_route_chosen_nurse` |
+| **TRUE LOVE END** | 60~99 | `hidden_route_chosen_teacher` 또는 `hidden_route_chosen_nurse` |
+| **GOOD END** | 40~59 | `hidden_route_chosen_teacher` 또는 `hidden_route_chosen_nurse` |
+| **BITTERSWEET END** | 40 미만 | `hidden_route_chosen_teacher` 또는 `hidden_route_chosen_nurse` |
+
+`homeroom_day5`와 `nurse_day5`는 히든 선택지가 열렸다는 뜻이고, 엔딩 확정 플래그가 아니다. Day 4 고백을 수락했다면 학생 엔딩을 유지한다. 고백을 보류한 상태에서만 학생의 마지막 기회와 열린 히든 루트 사이에서 최종 선택한다.
 
 ### 갤러리 해금 조건
 
@@ -168,14 +170,14 @@ TRUE 엔딩은 본편 에필로그 데이트(1회)로 남긴다. 갤러리 연�
 | 10 | **다인 TRUE END** | 다인 | 60~99 | `day4_confession_accepted` + `route_dain` + `!day3_caught_multiple_dates` + `!ending_harem` |
 | 11 | **다인 GOOD END** | 다인 | 40~59 | `day4_confession_accepted` + `route_dain` + `!day3_caught_multiple_dates` + `!ending_harem` |
 | 12 | **다인 BITTERSWEET END** | 다인 | 40 미만 | `day4_confession_accepted` + `route_dain` + `!day3_caught_multiple_dates` + `!ending_harem` |
-| 13 | **담임 PERFECT END** | 담임 | 100 | `homeroom_day5` |
-| 14 | **담임 TRUE LOVE END** | 담임 | 60~99 | `homeroom_day5` |
-| 15 | **담임 GOOD END** | 담임 | 40~59 | `homeroom_day5` |
-| 16 | **담임 BITTERSWEET END** | 담임 | 40 미만 | `homeroom_day5` |
-| 17 | **보건 PERFECT END** | 보건 | 100 | `nurse_day5` |
-| 18 | **보건 TRUE LOVE END** | 보건 | 60~99 | `nurse_day5` |
-| 19 | **보건 GOOD END** | 보건 | 40~59 | `nurse_day5` |
-| 20 | **보건 BITTERSWEET END** | 보건 | 40 미만 | `nurse_day5` |
+| 13 | **담임 PERFECT END** | 담임 | 100 | `hidden_route_chosen_teacher` |
+| 14 | **담임 TRUE LOVE END** | 담임 | 60~99 | `hidden_route_chosen_teacher` |
+| 15 | **담임 GOOD END** | 담임 | 40~59 | `hidden_route_chosen_teacher` |
+| 16 | **담임 BITTERSWEET END** | 담임 | 40 미만 | `hidden_route_chosen_teacher` |
+| 17 | **보건 PERFECT END** | 보건 | 100 | `hidden_route_chosen_nurse` |
+| 18 | **보건 TRUE LOVE END** | 보건 | 60~99 | `hidden_route_chosen_nurse` |
+| 19 | **보건 GOOD END** | 보건 | 40~59 | `hidden_route_chosen_nurse` |
+| 20 | **보건 BITTERSWEET END** | 보건 | 40 미만 | `hidden_route_chosen_nurse` |
 | 21 | **UNRESOLVED END** | - | - | `ending_harem` (다중 관계의 균열을 해결하지 못한 채 미룸) |
 | 22 | **MAYHEM END** | - | - | `day3_caught_multiple_dates` |
 | 23 | **서연 GOOD END (뒤늦은 고백)** | 서연 | 50+ | `day5_confessed` + `route_seoyeon` |

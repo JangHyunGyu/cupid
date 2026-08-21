@@ -687,5 +687,26 @@
     "morning5_caught_fallout_3": {"name":"{name}","text":"*행사가 끝날 때까지 셋과 나눈 말은 업무 확인뿐이다. 마지막 종이 울리자 각자 다른 계단으로 내려간다.*"},
     "morning5_harem_fallout_1": {"name":"{name}","text":"*행사 동안 세 사람은 필요한 말만 단체방에 남긴다. 개인 대화방에는 새 메시지가 없다.*"},
     "morning5_harem_fallout_2": {"name":"다인","text":"오늘 끝나도 따로 만나진 말자. 우리끼리 정한 거, 지켜."},
-    "morning5_harem_fallout_3": {"name":"{name}","text":"*고개를 끄덕인다. 세 사람은 함께 교문을 나가고 나는 잠시 뒤 혼자 따라 나간다.*"}
+    "morning5_harem_fallout_3": {"name":"{name}","text":"*고개를 끄덕인다. 세 사람은 함께 교문을 나가고 나는 잠시 뒤 혼자 따라 나간다.*"},
+    "morning5_counteroffer_choice": {
+        "name": "{name}",
+        "text": "*대화가 끝나자 두 사람 모두 답을 기다린다.*",
+        "choices": [
+            "먼저 약속했던 사람에게 책임지고 답한다",
+            "어젯밤 찾아간 사람을 선택한다고 말한다",
+            "둘 다 붙잡지 않고 관계를 정리한다"
+        ]
+    },
+    "morning5_counteroffer_choice_lead": {
+        "name": "{name}",
+        "text": "*먼저 약속했던 사람 쪽으로 몸을 돌린다.* 어젯밤 내가 한 선택부터 사과할게. 붙잡아 달라고는 안 하겠어."
+    },
+    "morning5_counteroffer_choice_tempter": {
+        "name": "{name}",
+        "text": "*어젯밤 찾아간 사람을 보고 다른 한 사람에게 고개를 숙인다.* 지금 누구에게 마음이 기운 건지 숨기지 않을게. 대신 두 사람을 같이 붙잡지는 않겠어."
+    },
+    "morning5_counteroffer_choice_neither": {
+        "name": "{name}",
+        "text": "*두 사람 사이에서 한 걸음 물러난다.* 지금은 누구도 선택할 자격이 없어. 둘 다 붙잡지 않을게."
+    }
 }

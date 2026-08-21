@@ -1119,5 +1119,33 @@
     "day4_student_return_home": {
         "name": "{name}",
         "text": "*Nach dem Treffen kehre ich nach Hause zurück. Als die Haustür zufällt, bleibt das Handy das einzige Licht in meinem Zimmer.*"
+    },
+    "day4_adult_counteroffer_soft_seoyeon": {
+        "name": "Seoyeon",
+        "text": "*Ich folge Seoyeon aufs Dach. Am Geländer bleibt sie stehen und öffnet ihre Hand.* Bleib heute bei mir. Das reicht."
+    },
+    "day4_adult_counteroffer_soft_dain": {
+        "name": "Dain",
+        "text": "*Ich gehe in die Turnhalle und spiele ihr die Bälle zurück, bis der letzte stillliegt. Dain holt Luft und klopft auf den Platz neben sich.* Setz dich heute einfach zu mir."
+    },
+    "day4_adult_counteroffer_soft_yuna": {
+        "name": "Yuna",
+        "text": "*Ich gehe in den Anbau und setze mich auf einen freien Stuhl. Yuna schließt das Buch vor sich, ohne die Jacke auszuziehen.* Geh heute nicht. Du musst nichts sagen."
+    },
+    "day4_student_counteroffer_soft_seoyeon": {
+        "name": "Seoyeon",
+        "text": "*Ich folge Seoyeon aufs Dach. Am Geländer bleibt sie stehen und öffnet ihre Hand.* Bleib heute bei mir. Das reicht."
+    },
+    "day4_student_counteroffer_soft_dain": {
+        "name": "Dain",
+        "text": "*Ich gehe in die Turnhalle und spiele ihr die Bälle zurück, bis der letzte stillliegt. Dain holt Luft und klopft auf den Platz neben sich.* Setz dich heute einfach zu mir."
+    },
+    "day4_student_counteroffer_soft_yuna": {
+        "name": "Yuna",
+        "text": "*Ich gehe in den Anbau und setze mich auf einen freien Stuhl. Yuna schließt das Buch vor sich, ohne die Jacke auszuziehen.* Geh heute nicht. Du musst nichts sagen."
+    },
+    "day4_adult_counteroffer_soft_return_home": {
+        "name": "{name}",
+        "text": "*Ich verlasse die Schule und gehe nach Hause. Unsere letzten Worte bleiben, selbst nachdem ich die Haustür geschlossen habe.*"
     }
 }

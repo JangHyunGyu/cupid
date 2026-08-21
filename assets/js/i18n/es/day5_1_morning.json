@@ -687,5 +687,26 @@
     "morning5_caught_fallout_3": {"name":"{name}","text":"*Hasta que termina el evento, solo hablamos para comprobar tareas. Con el último timbre, bajan por tres escaleras distintas.*"},
     "morning5_harem_fallout_1": {"name":"{name}","text":"*Durante el evento, las tres dejan solo mensajes necesarios en el grupo. Ningún chat privado recibe nada nuevo.*"},
     "morning5_harem_fallout_2": {"name":"Dain","text":"Aunque esto termine, no quedemos por separado. Cumple lo que acordamos."},
-    "morning5_harem_fallout_3": {"name":"{name}","text":"*Asiento. Las tres salen juntas por la entrada y yo las sigo a solas un poco después.*"}
+    "morning5_harem_fallout_3": {"name":"{name}","text":"*Asiento. Las tres salen juntas por la entrada y yo las sigo a solas un poco después.*"},
+    "morning5_counteroffer_choice": {
+        "name": "{name}",
+        "text": "*Cuando termina la conversación, las dos esperan una respuesta.*",
+        "choices": [
+            "Responder con responsabilidad a la persona con quien me comprometí primero",
+            "Decir que elijo a la persona que fui a ver anoche",
+            "No retener a ninguna y cerrar ambas relaciones"
+        ]
+    },
+    "morning5_counteroffer_choice_lead": {
+        "name": "{name}",
+        "text": "*Me vuelvo hacia la persona con quien me comprometí primero.* Empezaré por disculparme por lo que elegí anoche. No te pediré que me retengas."
+    },
+    "morning5_counteroffer_choice_tempter": {
+        "name": "{name}",
+        "text": "*Miro a la persona que fui a ver anoche y bajo la cabeza ante la otra.* No ocultaré hacia quién se inclina ahora mi corazón. Pero no intentaré retenerlas a las dos."
+    },
+    "morning5_counteroffer_choice_neither": {
+        "name": "{name}",
+        "text": "*Retrocedo un paso entre las dos.* Ahora mismo no merezco elegir a ninguna. No intentaré retener a ninguna."
+    }
 }

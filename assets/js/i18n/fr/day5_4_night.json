@@ -1908,5 +1908,18 @@
     "perfect_dain_coda_3": {
         "name": "Dain",
         "text": "On rentre à pied ensemble après. Aujourd'hui, c'est moi qui choisis le rythme."
-    }
+    },
+    "ending_counteroffer_choice_lead": {
+        "name": "{name}",
+        "text": "*J’ai choisi la personne à qui j’avais promis en premier, mais des excuses ne pouvaient pas effacer la veille.*"
+    },
+    "ending_counteroffer_choice_tempter": {
+        "name": "{name}",
+        "text": "*J’ai choisi une personne, mais il restait une relation à régler avant de commencer quoi que ce soit.*"
+    },
+    "ending_counteroffer_choice_neither": {
+        "name": "{name}",
+        "text": "*Après avoir dit que je ne retiendrais aucune des deux, notre conversation s’est arrêtée là.*"
+    },
+    "ending_counteroffer_bitter_route": {}
 }

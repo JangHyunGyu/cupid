@@ -124,7 +124,12 @@
     },
     "after5_hidden_route_choice": {
         "name": "{name}",
-        "text": "*Deixo a desmontagem do evento com os outros alunos e sigo para o parque onde marcamos de nos encontrar.*"
+        "text": "*Aqui se separam o caminho para o parque e o caminho de volta para terminar o evento. Hoje preciso decidir quem receberá minha resposta.*",
+        "choices": [
+            "Ir ao parque e concluir a escolha que eu já havia começado",
+            "Voltar à professora titular e organizar o manuscrito do clube de literatura",
+            "Voltar à enfermeira escolar e organizar os registros de consulta"
+        ]
     },
     "after5_last_chance_1": {
         "name": "{name}",
@@ -207,7 +212,7 @@
     },
     "after5_last_chance_2_q": {
         "name": "Dain",
-        "text": "Esperei desde ontem. Mas não consigo sorrir de imediato."
+        "text": "Não consigo sorrir imediatamente. Mas vou ouvir o que você veio dizer."
     },
     "after5_last_chance_2_r": {
         "name": "Dain",
@@ -385,11 +390,11 @@
     },
     "after5_defer_dain": {
         "name": "Dain",
-        "text": "*Ela volta a apertar a bola contra o peito.* ...Tudo bem. Mesmo que quem estivesse esperando fosse eu."
+        "text": "*Ela abraça a bola outra vez.* Certo. Hoje também paramos aqui."
     },
     "after5_defer_yuna": {
         "name": "Yuna",
-        "text": "*Ela volta a abraçar o livro.* Entendi. Mesmo que tenha sido você quem pediu para eu esperar."
+        "text": "*Ela aperta o livro contra o peito outra vez.* Entendi. Hoje também paramos aqui."
     },
     "after5_co_abandoned_branch": {},
     "after5_co_tempter_branch": {},
@@ -464,5 +469,101 @@
     "after5_normal_start": {
         "name": "{name}",
         "text": "*O evento está chegando ao fim. Encontro no corredor as duas pessoas que não escolhi.*"
+    },
+    "after5_farewell_seo_affinity_check": {},
+    "after5_farewell_seo_high_1": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon tira do prancheta o bilhete do primeiro dia e alisa com o polegar a ponta dobrada.* Ainda guardo isto."
+    },
+    "after5_farewell_seo_high_2": {
+        "name": "Seoyeon",
+        "text": "Eu sei quem você escolheu. Mas não vou fingir que o tempo em que gostei de você nunca existiu."
+    },
+    "after5_farewell_yuna_affinity_check": {},
+    "after5_farewell_yuna_high_1": {
+        "name": "Yuna",
+        "text": "*Yuna escreve a data de hoje no verso de um marcador e o entrega a mim.* Leia até a última página."
+    },
+    "after5_farewell_yuna_high_2": {
+        "name": "Yuna",
+        "text": "Não se atrase para a pessoa que escolheu. Também não vou apagar as frases em que gostei de você."
+    },
+    "after5_farewell_dain_affinity_check": {},
+    "after5_farewell_dain_high_1": {
+        "name": "Dain",
+        "text": "*Dain quica a bola uma vez, segura e a deixa fora da linha da quadra.* Eu sei quem você escolheu."
+    },
+    "after5_farewell_dain_high_2": {
+        "name": "Dain",
+        "text": "Mas não vou fingir que nunca gostei de você. Trate-a bem. Senão eu vou ficar brava de verdade."
+    },
+    "after5_hidden_teacher_affinity_check": {},
+    "after5_hidden_teacher_high": {
+        "name": "Professora",
+        "text": "*Ela verifica o campo vazio de comentários na cópia 04 e fecha o envelope.* Na segunda, diga onde parou. Não escolha só as partes agradáveis."
+    },
+    "after5_hidden_teacher_mid": {
+        "name": "Professora",
+        "text": "*Ela confere o número da cópia 04.* Marque apenas até onde leu. Veremos o resto com o clube de literatura."
+    },
+    "after5_hidden_teacher_low": {
+        "name": "Professora",
+        "text": "*Ela guarda o envelope do manuscrito no arquivo.* A crítica será feita no horário marcado do clube. Hoje, termine primeiro o evento."
+    },
+    "after5_hidden_nurse_affinity_check": {},
+    "after5_hidden_nurse_high": {
+        "name": "Enfermeira",
+        "text": "*Ela coloca lado a lado a confirmação de consulta e o cartão de primeiros socorros.* Da próxima vez que pesar, não aguente sozinho. Entre em contato na ordem que decidiu."
+    },
+    "after5_hidden_nurse_mid": {
+        "name": "Enfermeira",
+        "text": "*Ela aponta o QR de consulta no verso do cartão de primeiros socorros.* Agende aqui se precisar. Você não precisa inventar um motivo."
+    },
+    "after5_hidden_nurse_low": {
+        "name": "Enfermeira",
+        "text": "*Ela arquiva o registro de consulta e fecha a agenda.* Marque a próxima consulta pelo procedimento oficial. O registro de hoje termina aqui."
+    },
+    "after5_last_chance_seo_history_check": {},
+    "after5_last_chance_seo_postponed": {
+        "name": "Seoyeon",
+        "text": "Termine hoje o que deixou no terraço ontem."
+    },
+    "after5_last_chance_seo_tentative": {
+        "name": "Seoyeon",
+        "text": "Ontem não marcamos outro encontro. Mesmo assim, hoje você veio primeiro."
+    },
+    "after5_last_chance_seo_distance": {
+        "name": "Seoyeon",
+        "text": "Ontem concordamos em parar ali. Primeiro diga por que veio hoje."
+    },
+    "after5_last_chance_dain_history_check": {},
+    "after5_last_chance_dain_postponed": {
+        "name": "Dain",
+        "text": "Hoje vou ouvir até o fim o que não terminamos ontem."
+    },
+    "after5_last_chance_dain_tentative": {
+        "name": "Dain",
+        "text": "Ontem não marcamos o próximo encontro. Hoje você veio primeiro."
+    },
+    "after5_last_chance_dain_distance": {
+        "name": "Dain",
+        "text": "Ontem nós dois paramos. Quero saber por que voltou hoje."
+    },
+    "after5_last_chance_yuna_history_check": {},
+    "after5_last_chance_yuna_postponed": {
+        "name": "Yuna",
+        "text": "Ontem adiamos o final. Hoje vou ouvir primeiro sua resposta."
+    },
+    "after5_last_chance_yuna_tentative": {
+        "name": "Yuna",
+        "text": "Ontem eu disse que entraria em contato. Mas hoje você veio."
+    },
+    "after5_last_chance_yuna_distance": {
+        "name": "Yuna",
+        "text": "Ontem dissemos que pararíamos ali. Vou ouvir por que veio hoje."
+    },
+    "after5_hidden_return_to_park": {
+        "name": "{name}",
+        "text": "*Depois de terminar a organização, saio da escola. Faixas dobradas do festival acompanham o caminho até o parque.*"
     }
 }

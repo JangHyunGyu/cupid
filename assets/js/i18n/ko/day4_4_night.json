@@ -1119,5 +1119,33 @@
     "day4_student_return_home": {
         "name": "{name}",
         "text": "*약속을 마치고 집으로 돌아온다. 현관문이 닫히자 방 안에는 휴대폰 불빛만 남는다.*"
+    },
+    "day4_adult_counteroffer_soft_seoyeon": {
+        "name": "서연",
+        "text": "*서연을 따라 옥상에 올라간다. 난간 앞에 선 서연이 손바닥을 편다.* 오늘은 여기 있어 줘. 그거면 돼."
+    },
+    "day4_adult_counteroffer_soft_dain": {
+        "name": "다인",
+        "text": "*체육관으로 들어가 마지막 공이 멎을 때까지 토스를 받아 준다. 다인이 숨을 고른 뒤 벤치 옆자리를 두드린다.* 오늘은 그냥 같이 앉아 있어 줘."
+    },
+    "day4_adult_counteroffer_soft_yuna": {
+        "name": "유나",
+        "text": "*별관으로 들어가 빈 의자에 앉는다. 유나는 재킷을 벗지 않은 채 맞은편 책을 덮는다.* 오늘은 가지 마. 말 안 해도 돼."
+    },
+    "day4_student_counteroffer_soft_seoyeon": {
+        "name": "서연",
+        "text": "*서연을 따라 옥상에 올라간다. 난간 앞에 선 서연이 손바닥을 편다.* 오늘은 여기 있어 줘. 그거면 돼."
+    },
+    "day4_student_counteroffer_soft_dain": {
+        "name": "다인",
+        "text": "*체육관으로 들어가 마지막 공이 멎을 때까지 토스를 받아 준다. 다인이 숨을 고른 뒤 벤치 옆자리를 두드린다.* 오늘은 그냥 같이 앉아 있어 줘."
+    },
+    "day4_student_counteroffer_soft_yuna": {
+        "name": "유나",
+        "text": "*별관으로 들어가 빈 의자에 앉는다. 유나는 재킷을 벗지 않은 채 맞은편 책을 덮는다.* 오늘은 가지 마. 말 안 해도 돼."
+    },
+    "day4_adult_counteroffer_soft_return_home": {
+        "name": "{name}",
+        "text": "*학교를 나와 집으로 돌아간다. 조금 전까지 나눈 말이 현관문을 닫은 뒤에도 남아 있다.*"
     }
 }

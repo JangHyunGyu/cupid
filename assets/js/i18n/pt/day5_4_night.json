@@ -1908,5 +1908,18 @@
     "perfect_dain_coda_3": {
         "name": "Dain",
         "text": "Vamos voltar andando juntos depois. Hoje eu escolho o ritmo."
-    }
+    },
+    "ending_counteroffer_choice_lead": {
+        "name": "{name}",
+        "text": "*Escolhi a pessoa com quem me comprometi primeiro, mas um pedido de desculpas não apagava a noite anterior.*"
+    },
+    "ending_counteroffer_choice_tempter": {
+        "name": "{name}",
+        "text": "*Escolhi uma pessoa, mas ainda havia uma relação a resolver antes de começar algo novo.*"
+    },
+    "ending_counteroffer_choice_neither": {
+        "name": "{name}",
+        "text": "*Depois que eu disse que não prenderia nenhuma das duas, nossa conversa terminou ali.*"
+    },
+    "ending_counteroffer_bitter_route": {}
 }

@@ -1119,5 +1119,33 @@
     "day4_student_return_home": {
         "name": "{name}",
         "text": "*I return home after the meeting. When the front door closes, only the glow of my phone remains in the room.*"
+    },
+    "day4_adult_counteroffer_soft_seoyeon": {
+        "name": "Seoyeon",
+        "text": "*I follow Seoyeon up to the rooftop. She stops by the railing and opens her hand.* Stay here with me today. That is enough."
+    },
+    "day4_adult_counteroffer_soft_dain": {
+        "name": "Dain",
+        "text": "*I enter the gym and return her tosses until the last ball goes still. After catching her breath, Dain taps the seat beside her.* Just sit with me today."
+    },
+    "day4_adult_counteroffer_soft_yuna": {
+        "name": "Yuna",
+        "text": "*I enter the annex and take an empty chair. Yuna closes the book across from me without taking off her jacket.* Do not go today. You do not have to say anything."
+    },
+    "day4_student_counteroffer_soft_seoyeon": {
+        "name": "Seoyeon",
+        "text": "*I follow Seoyeon up to the rooftop. She stops by the railing and opens her hand.* Stay here with me today. That is enough."
+    },
+    "day4_student_counteroffer_soft_dain": {
+        "name": "Dain",
+        "text": "*I enter the gym and return her tosses until the last ball goes still. After catching her breath, Dain taps the seat beside her.* Just sit with me today."
+    },
+    "day4_student_counteroffer_soft_yuna": {
+        "name": "Yuna",
+        "text": "*I enter the annex and take an empty chair. Yuna closes the book across from me without taking off her jacket.* Do not go today. You do not have to say anything."
+    },
+    "day4_adult_counteroffer_soft_return_home": {
+        "name": "{name}",
+        "text": "*I leave school and return home. The words we just exchanged remain even after I close the front door.*"
     }
 }
