@@ -248,6 +248,30 @@
         "name": "다인",
         "text": "*떡볶이 컵을 {name} 쪽으로 밀어놓고 빈 물병을 거꾸로 흔든다.*"
     },
+    "after2_dain_rival_seo_high": {
+        "name": "{name}",
+        "text": "*가게 유리창 너머로 서연이 걸음을 멈춘다. 테이블 위 떡볶이 컵 두 개를 본 뒤 휴대폰에 짧은 메시지가 뜬다. '오늘은 체육관 쪽이었네. 다음엔 학생회실에도 들러 줘.'*"
+    },
+    "after2_dain_rival_seo_mid": {
+        "name": "{name}",
+        "text": "*서연이 가게 앞을 지나가다 테이블을 본다. 클립보드 모서리를 두 번 맞춘 뒤 교문 쪽으로 간다.*"
+    },
+    "after2_dain_rival_seo_low": {
+        "name": "{name}",
+        "text": "*서연이 가게 앞을 지나며 두 사람에게 고개를 숙인다. 걸음은 멈추지 않는다.*"
+    },
+    "after2_dain_rival_yuna_high": {
+        "name": "{name}",
+        "text": "*유나가 가게 앞에서 유리창 안을 본다. 손에 들고 있던 접힌 쪽지를 주머니에 넣고 그대로 돌아선다.*"
+    },
+    "after2_dain_rival_yuna_mid": {
+        "name": "{name}",
+        "text": "*가게 앞을 지나던 유나가 이어폰 한쪽을 빼려다 테이블을 보고 다시 낀다.*"
+    },
+    "after2_dain_rival_yuna_low": {
+        "name": "{name}",
+        "text": "*유나가 유리창 너머로 고개를 한 번 숙이고 별관 쪽으로 걸어간다.*"
+    },
     "after2_dain_return": {
         "name": "{name}",
         "text": "*학교로 돌아오는 길. 교문 앞에 다다랐다.*"
@@ -467,6 +491,30 @@
         "name": "{name}",
         "text": "*학생회실을 나섰다. 교문 쪽으로 걸어간다.*"
     },
+    "after2_seo_rival_dain_high": {
+        "name": "다인",
+        "text": "*체육관 공 바구니를 밀던 다인이 복도 끝에서 둘을 본다.* 학생회 일이 꽤 길었네. *손잡이를 쥔 채 먼저 돌아선다.*"
+    },
+    "after2_seo_rival_dain_mid": {
+        "name": "다인",
+        "text": "*공 바구니를 세운다.* 끝났어? *서연을 한 번 보고 다시 체육관 쪽으로 민다.*"
+    },
+    "after2_seo_rival_dain_low": {
+        "name": "다인",
+        "text": "수고! *공 바구니 너머로 손을 흔들고 체육관 쪽으로 간다.*"
+    },
+    "after2_seo_rival_yuna_high": {
+        "name": "{name}",
+        "text": "*계단참에서 책을 읽던 유나가 둘이 나오는 소리에 표지를 덮는다. 끼워 둔 쪽지를 뽑아 반으로 접는다.*"
+    },
+    "after2_seo_rival_yuna_mid": {
+        "name": "{name}",
+        "text": "*유나의 손이 페이지 위에서 멈춘다. 둘이 지나갈 자리를 한 칸 비킨 뒤 다시 책을 펼친다.*"
+    },
+    "after2_seo_rival_yuna_low": {
+        "name": "{name}",
+        "text": "*계단참의 유나가 한쪽으로 비켜서며 짧게 고개를 숙인다.*"
+    },
     "after2_yuna_1": {
         "name": "{name}",
         "text": "*유나한테는 연락이 없지만 도서관으로 향한다. 주머니 속 접힌 쪽지가 걸을 때마다 손등에 닿는다.*"
@@ -570,7 +618,7 @@
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "*핸드폰에는 다인의 '기다렸는데?'와 서연의 '일정 바뀌면 말은 해줘'가 늦게 와 있다. 유나와 나란히 앉아 있던 자리에는 이어폰 한쪽이 놓여 있다.*"
+        "text": "*유나와 나란히 앉아 있던 자리에는 이어폰 한쪽이 남아 있다. 별관을 나서기 전 휴대폰 화면을 켠다.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",
@@ -587,6 +635,30 @@
     "after2_yuna_return": {
         "name": "{name}",
         "text": "*도서관 별관을 나서자 복도 자동등이 켜진다.*"
+    },
+    "after2_yuna_rival_dain_high": {
+        "name": "다인",
+        "text": "체육관 오랬더니 별관 갔네. 다음엔 내 쪽도 와."
+    },
+    "after2_yuna_rival_dain_mid": {
+        "name": "다인",
+        "text": "도서관이었어? 내일은 체육관 들러."
+    },
+    "after2_yuna_rival_dain_low": {
+        "name": "다인",
+        "text": "도서관 쪽이었어? 내일 봐!"
+    },
+    "after2_yuna_rival_seo_high": {
+        "name": "서연",
+        "text": "별관에 있었구나. 다음엔 학생회실에도 들러 줘."
+    },
+    "after2_yuna_rival_seo_mid": {
+        "name": "서연",
+        "text": "별관이었네. 오늘 일은 끝냈어. 내일 보자."
+    },
+    "after2_yuna_rival_seo_low": {
+        "name": "서연",
+        "text": "일손은 채웠어. 내일 보자."
     },
     "after2_group_seoyeon_companion": {
         "name": "서연과 동행",

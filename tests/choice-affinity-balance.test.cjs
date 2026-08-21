@@ -111,8 +111,122 @@ test('direct choice affinity distribution keeps subtle penalties meaningful but 
         }
     }
 
-    assert.equal(total, 361);
-    assert.deepEqual(counts, { positive: 59, negative: 154, neutral: 123, mixed: 25 });
+    assert.equal(total, 362);
+    assert.deepEqual(counts, { positive: 59, negative: 154, neutral: 124, mixed: 25 });
+});
+
+test('day 2 afterschool rivalry scales with the live relationship instead of inventing plans', () => {
+    const checks = [
+        ['Seoyeon', 'after2_dain_rival_seo_check', 'after2_dain_rival_seo'],
+        ['Yuna', 'after2_dain_rival_yuna_check', 'after2_dain_rival_yuna'],
+        ['Dain', 'after2_seo_rival_dain_check', 'after2_seo_rival_dain'],
+        ['Yuna', 'after2_seo_rival_yuna_check', 'after2_seo_rival_yuna'],
+        ['Dain', 'after2_yuna_rival_dain_check', 'after2_yuna_rival_dain'],
+        ['Seoyeon', 'after2_yuna_rival_seo_check', 'after2_yuna_rival_seo']
+    ];
+
+    for (const [character, checkId, prefix] of checks) {
+        assert.equal(createSceneRenderer({ [character]: 9 }).resolveNextScene(scenes[checkId]), `${prefix}_low`);
+        assert.equal(createSceneRenderer({ [character]: 15 }).resolveNextScene(scenes[checkId]), `${prefix}_mid`);
+        assert.equal(createSceneRenderer({ [character]: 30 }).resolveNextScene(scenes[checkId]), `${prefix}_high`);
+        assert.equal(scenes[`${prefix}_low`].stats, undefined);
+        assert.equal(Object.values(scenes[`${prefix}_mid`].stats)[0].affinity, -2);
+        assert.equal(Object.values(scenes[`${prefix}_high`].stats)[0].affinity, -5);
+    }
+
+    for (const endpoint of ['after2_dain_end_3e', 'after2_seo_end', 'after2_yuna_end']) {
+        assert.equal(scenes[endpoint].stats, undefined, `${endpoint} must not apply telepathic rivalry penalties`);
+    }
+    for (const endpoint of ['lunch2_seo_end_c1', 'lunch2_seo_end_c2', 'lunch2_dain_end', 'lunch2_yuna_end']) {
+        assert.equal(scenes[endpoint].stats, undefined, `${endpoint} must defer rivalry costs until an observed reaction`);
+    }
+    assert.doesNotMatch(korean.after2_yuna_end.text, /기다렸|일정 바뀌면/);
+    assert.doesNotMatch(korean.lunch2_seo_9.text, /오늘도 나 빼고/);
+
+    const localizedNodes = checks.flatMap(([, , prefix]) => [`${prefix}_low`, `${prefix}_mid`, `${prefix}_high`]);
+    for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+        const copy = loadLocaleCopy(locale);
+        for (const nodeId of localizedNodes) {
+            assert.ok(copy[nodeId]?.text?.trim(), `${locale}:${nodeId} must be localized`);
+        }
+    }
+});
+
+test('the first affinity callback is reachable before day 1 lunch', () => {
+    assert.equal(scenes.lunch_seo_1.affinityBranches[0].minAffinity, 4);
+    assert.equal(createSceneRenderer({ Seoyeon: 4 }).resolveNextScene(scenes.lunch_seo_1), 'lunch_seo_1_aff_high');
+    assert.equal(createSceneRenderer({ Seoyeon: 2 }).resolveNextScene(scenes.lunch_seo_1), 'lunch_seo_1_aff_default');
+});
+
+test('midgame relationship tiers preserve promises, distance, and locked fallout', () => {
+    assert.equal(scenes.after3_choice.choices.length, 4);
+    assert.equal(scenes.after3_choice.choices[3].next, 'after3_walk_home');
+    assert.equal(scenes.after3_choice.choices[3].setFlags.includes('route_seoyeon'), false);
+    assert.deepEqual([...scenes.morning3_date_seo_low.clearFlags], ['accepted_seoyeon_date']);
+    assert.deepEqual([...scenes.morning3_date_yuna_low.clearFlags], ['accepted_yuna_date']);
+    assert.deepEqual([...scenes.morning3_date_dain_low.clearFlags], ['accepted_dain_date']);
+
+    const unpromised = createSceneRenderer({ Dain: 40 });
+    assert.equal(unpromised.resolveNextScene(scenes.after3_rival_dain_check), 'after3_rival_dain_affinity');
+    const promised = createSceneRenderer({ Dain: 40 }, { accepted_dain_date: true });
+    assert.equal(promised.resolveNextScene(scenes.after3_rival_dain_check), 'after3_rival_dain_promised_dispatch');
+
+    for (const [character, checkId, lowId, partialId, fullId] of [
+        ['Seoyeon', 'after3_seo_affinity_check', 'after3_seo_low_1', 'after3_seo_partial_1', 'after3_seo_1'],
+        ['Yuna', 'after3_yuna_affinity_check', 'after3_yuna_low_1', 'after3_yuna_partial_1', 'after3_yuna_1'],
+        ['Dain', 'after3_dain_affinity_check', 'after3_dain_low_1', 'after3_dain_partial_1', 'after3_dain_1']
+    ]) {
+        assert.equal(createSceneRenderer({ [character]: 14 }).resolveNextScene(scenes[checkId]), lowId);
+        assert.equal(createSceneRenderer({ [character]: 25 }).resolveNextScene(scenes[checkId]), partialId);
+        assert.equal(createSceneRenderer({ [character]: 40 }).resolveNextScene(scenes[checkId]), fullId);
+        assert.ok(scenes[lowId].clearFlags.includes(`accepted_${character === 'Seoyeon' ? 'seoyeon' : character.toLowerCase()}_date`));
+    }
+
+    for (const [character, checkId, tentativeId, normalId, highId] of [
+        ['Seoyeon', 'date_seo_tier_check', 'date_seo_tentative_1', 'date_seo_compliment_choice', 'date_seo_high_1'],
+        ['Yuna', 'date_yuna_tier_check', 'date_yuna_tentative_1', 'date_yuna_compliment_choice', 'date_yuna_high_1'],
+        ['Dain', 'date_dain_tier_check', 'date_dain_tentative_1', 'date_dain_2', 'date_dain_high_1']
+    ]) {
+        assert.equal(createSceneRenderer({ [character]: 25 }).resolveNextScene(scenes[checkId]), tentativeId);
+        assert.equal(createSceneRenderer({ [character]: 45 }).resolveNextScene(scenes[checkId]), normalId);
+        assert.equal(createSceneRenderer({ [character]: 65 }).resolveNextScene(scenes[checkId]), highId);
+    }
+
+    const caught = createSceneRenderer({}, { day3_caught_multiple_dates: true });
+    assert.equal(caught.resolveNextScene(scenes.morning4_end), 'day4_caught_fallout_1');
+    assert.equal(caught.resolveNextScene(scenes.morning5_start_branch), 'morning5_caught_fallout_1');
+    const unresolved = createSceneRenderer({}, { harem_seed: true });
+    assert.equal(unresolved.resolveNextScene(scenes.morning4_end), 'day4_harem_fallout_1');
+    assert.equal(unresolved.resolveNextScene(scenes.morning5_start_branch), 'morning5_harem_fallout_1');
+});
+
+test('late confession and final-day callbacks use aligned live-affinity thresholds', () => {
+    for (const id of ['ending_confessed_aff_seo', 'ending_confessed_aff_yuna', 'ending_confessed_aff_dain']) {
+        assert.equal(scenes[id].affinityBranches[0].minAffinity, 50);
+    }
+    assert.doesNotMatch(korean.morning5_mood_high.text, /옥상|열쇠/);
+
+    for (const [character, checkId, midId, highId] of [
+        ['Seoyeon', 'tour_seo_affinity_check', 'tour_seo_affinity_60', 'tour_seo_affinity_80'],
+        ['Yuna', 'tour_yuna_affinity_check', 'tour_yuna_affinity_60', 'tour_yuna_affinity_80'],
+        ['Dain', 'tour_dain_affinity_check', 'tour_dain_affinity_60', 'tour_dain_affinity_80']
+    ]) {
+        assert.equal(createSceneRenderer({ [character]: 65 }).resolveNextScene(scenes[checkId]), midId);
+        assert.equal(createSceneRenderer({ [character]: 85 }).resolveNextScene(scenes[checkId]), highId);
+    }
+
+    const tieredRivalNodes = [
+        ['lunch3_give_seo_dain_mid', -2],
+        ['lunch3_give_seo_dain_low', -1],
+        ['lunch3_give_dain_seo_mid', -2],
+        ['lunch3_give_dain_seo_low', -1],
+        ['lunch3_give_yuna_dain_mid', -2],
+        ['lunch3_give_yuna_dain_low', -1]
+    ];
+    for (const [id, expected] of tieredRivalNodes) {
+        const affinity = Object.values(scenes[id].stats)[0].affinity;
+        assert.equal(affinity, expected, `${id} affinity tier drifted`);
+    }
 });
 
 test('every affinity screen that had only two options now adds two localized negative traps', () => {
@@ -1110,6 +1224,12 @@ test('day 2 through 5 rivalry copy stays synchronized across every supported loc
         'lunch2_seo_9', 'lunch2_seo_10', 'lunch2_seo_11', 'lunch2_seo_13',
         'lunch2_seo_13b', 'lunch2_seo_13b_b', 'lunch2_seo_14', 'lunch2_seo_16',
         'lunch2_seo_17', 'lunch2_seo_19', 'lunch2_seo_20',
+        'after2_dain_rival_seo_low', 'after2_dain_rival_seo_mid', 'after2_dain_rival_seo_high',
+        'after2_dain_rival_yuna_low', 'after2_dain_rival_yuna_mid', 'after2_dain_rival_yuna_high',
+        'after2_seo_rival_dain_low', 'after2_seo_rival_dain_mid', 'after2_seo_rival_dain_high',
+        'after2_seo_rival_yuna_low', 'after2_seo_rival_yuna_mid', 'after2_seo_rival_yuna_high',
+        'after2_yuna_rival_dain_low', 'after2_yuna_rival_dain_mid', 'after2_yuna_rival_dain_high',
+        'after2_yuna_rival_seo_low', 'after2_yuna_rival_seo_mid', 'after2_yuna_rival_seo_high',
         'morning3_date_seo_1', 'morning3_date_seo_choice', 'morning3_date_seo_accept',
         'morning3_date_seo_decline', 'morning3_date_dain_1', 'morning3_date_dain_2',
         'morning3_date_dain_choice', 'morning3_date_dain_accept', 'morning3_date_dain_decline',
@@ -1121,13 +1241,13 @@ test('day 2 through 5 rivalry copy stays synchronized across every supported loc
         'after5_farewell_dain_2', 'after5_farewell_dain_4', 'after5_farewell_dain_4_c'
     ];
     const expectedDigests = {
-        ko: 'c8eecf35afc0adcd0adcef705f1d300175c7b7f50c16cdb2b2527180fa3fd029',
-        en: '41ec1918df36f8a3f463ec3fb98ab88d67b77c49b1074865708d67f714326077',
-        ja: 'b05849e94b84c66a951e4cc205393de6e3b3b7821083a586fd18cfa8c3017d15',
-        es: 'aa13f742f060cd5dbbc5e3dff527b5d1de7d2371644de66aa334d94133828452',
-        fr: '2d36beacf0de49a215bd8e92cc1c35d5784a6eb0b5526dfda11087439a2cb3f0',
-        de: 'e9dbd7d9c7fa06a8de2a692bb14821f5f67b505203cc2ebed7f8efe934713331',
-        pt: 'ad7afa76e2f5504db0a31f8d247b8624642140b5c1dc3d9c41ebc6fa2c17e11b'
+        ko: 'b3281d8c667b0af80a4c29a02478fb2ddd0cb14ed773b48f9903ced6137eca77',
+        en: 'c6c552353f4fd6b2ff8afe6e954c6bc1104f8750e168559dddb93ebab7cc4adb',
+        ja: 'ff0cc94f7f3b5fc7fe80ccce53103dc5ca5d7b6e7ed7528fedd426a3190081f6',
+        es: '1f683e4e13756b44ef335c8aa307259dd5a574cdf4d1ff56e3b26d82b02d487e',
+        fr: 'e7cbcbc51cd0f8b54290a310a0edc76bd9c7e2fa0195af4747056c5d2d0c6632',
+        de: '7ace751517f545c4596fa9541828a546f768b79f5d9870129fc3a20f47e02542',
+        pt: '022b8b91941226ede4a05823b52c4a40e55875eaa12005b4ffe302e84849510d'
     };
 
     for (const [locale, expectedDigest] of Object.entries(expectedDigests)) {

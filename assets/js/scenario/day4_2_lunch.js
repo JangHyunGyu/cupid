@@ -15,7 +15,44 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "bgm": "date.mp3",
         "condition": "route_seoyeon",
         "affinityGuard": {"character":"Seoyeon","minAffinity":15,"fallback":"date_seo_low"},
+        "next": "date_seo_tier_check"
+    },
+    "date_seo_tier_check": {
+        "background": "assets/images/background/park.png",
+        "character": null,
+        "affinityChar": "Seoyeon",
+        "affinityBranches": [
+            { "minAffinity": 60, "next": "date_seo_high_1" },
+            { "minAffinity": 40, "next": "date_seo_compliment_choice" },
+            { "minAffinity": 15, "next": "date_seo_tentative_1" }
+        ],
+        "next": "date_seo_tentative_1"
+    },
+    "date_seo_high_1": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_laugh.png",
+        "next": "date_seo_high_2"
+    },
+    "date_seo_high_2": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_shy.png",
         "next": "date_seo_compliment_choice"
+    },
+    "date_seo_tentative_1": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "date_seo_tentative_2"
+    },
+    "date_seo_tentative_2": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "date_seo_tentative_3"
+    },
+    "date_seo_tentative_3": {
+        "background": "assets/images/background/street.png",
+        "character": null,
+        "setFlags": ["day4_waited", "day4_tentative_seoyeon"],
+        "next": "day4_night_start"
     },
     "date_seo_compliment_choice": {
         "background": "assets/images/background/park.png",
@@ -149,7 +186,44 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "bgm": "night1.mp3",
         "condition": "route_yuna",
         "affinityGuard": {"character":"Yuna","minAffinity":15,"fallback":"date_yuna_low"},
+        "next": "date_yuna_tier_check"
+    },
+    "date_yuna_tier_check": {
+        "background": "assets/images/background/cafe.png",
+        "character": null,
+        "affinityChar": "Yuna",
+        "affinityBranches": [
+            { "minAffinity": 60, "next": "date_yuna_high_1" },
+            { "minAffinity": 40, "next": "date_yuna_compliment_choice" },
+            { "minAffinity": 15, "next": "date_yuna_tentative_1" }
+        ],
+        "next": "date_yuna_tentative_1"
+    },
+    "date_yuna_high_1": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/yuna_smile.png",
+        "next": "date_yuna_high_2"
+    },
+    "date_yuna_high_2": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/yuna_shy.png",
         "next": "date_yuna_compliment_choice"
+    },
+    "date_yuna_tentative_1": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "date_yuna_tentative_2"
+    },
+    "date_yuna_tentative_2": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "date_yuna_tentative_3"
+    },
+    "date_yuna_tentative_3": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "setFlags": ["day4_waited", "day4_tentative_yuna"],
+        "next": "day4_night_start"
     },
     "date_yuna_compliment_choice": {
         "background": "assets/images/background/cafe.png",
@@ -303,7 +377,44 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "bgm": "daily2.mp3",
         "condition": "route_dain",
         "affinityGuard": {"character":"Dain","minAffinity":15,"fallback":"date_dain_low"},
+        "next": "date_dain_tier_check"
+    },
+    "date_dain_tier_check": {
+        "background": "assets/images/background/gym.png",
+        "character": null,
+        "affinityChar": "Dain",
+        "affinityBranches": [
+            { "minAffinity": 60, "next": "date_dain_high_1" },
+            { "minAffinity": 40, "next": "date_dain_2" },
+            { "minAffinity": 15, "next": "date_dain_tentative_1" }
+        ],
+        "next": "date_dain_tentative_1"
+    },
+    "date_dain_high_1": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "next": "date_dain_high_2"
+    },
+    "date_dain_high_2": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_shy.png",
         "next": "date_dain_2"
+    },
+    "date_dain_tentative_1": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "date_dain_tentative_2"
+    },
+    "date_dain_tentative_2": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "date_dain_tentative_3"
+    },
+    "date_dain_tentative_3": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "setFlags": ["day4_waited", "day4_tentative_dain"],
+        "next": "day4_night_start"
     },
     "date_dain_2": {
         "background": "assets/images/background/gym.png",
@@ -476,6 +587,53 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/minsu_smirk.png",
         "next": "confess_seo_1"
+    },
+    "day4_caught_fallout_1": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "bgm": "night2.mp3",
+        "next": "day4_caught_fallout_2"
+    },
+    "day4_caught_fallout_2": {
+        "background": "assets/images/background/room_my.png",
+        "characters": {"center":{"src":"assets/images/characters/seyoun_sad.png","opacity":0.35}},
+        "next": "day4_caught_fallout_3"
+    },
+    "day4_caught_fallout_3": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "next": "day4_caught_fallout_4"
+    },
+    "day4_caught_fallout_4": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "setFlags": ["day4_caught_fallout_seen"],
+        "next": "morning5_start"
+    },
+    "day4_harem_fallout_1": {
+        "background": "assets/images/background/cafe.png",
+        "character": null,
+        "bgm": "night2.mp3",
+        "next": "day4_harem_fallout_2"
+    },
+    "day4_harem_fallout_2": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "day4_harem_fallout_3"
+    },
+    "day4_harem_fallout_3": {
+        "background": "assets/images/background/cafe.png",
+        "characters": {
+            "left": {"src":"assets/images/characters/yuna_normal.png"},
+            "right": {"src":"assets/images/characters/dain_normal.png"}
+        },
+        "next": "day4_harem_fallout_4"
+    },
+    "day4_harem_fallout_4": {
+        "background": "assets/images/background/street.png",
+        "character": null,
+        "setFlags": ["day4_harem_fallout_seen", "day4_waited"],
+        "next": "morning5_start"
     },
     "date_seo_low": {
         "background": "assets/images/background/park.png",

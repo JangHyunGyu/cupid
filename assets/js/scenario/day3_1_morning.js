@@ -1081,16 +1081,22 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "morning3_date_seo_low": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_normal.png",
+        "clearFlags": ["accepted_seoyeon_date"],
+        "setFlags": ["day3_seoyeon_date_withdrawn"],
         "next": "morning3_date_dain_1"
     },
     "morning3_date_dain_low": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_normal.png",
+        "clearFlags": ["accepted_dain_date"],
+        "setFlags": ["day3_dain_date_withdrawn"],
         "next": "morning3_date_yuna_1"
     },
     "morning3_date_yuna_low": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_normal.png",
+        "clearFlags": ["accepted_yuna_date"],
+        "setFlags": ["day3_yuna_date_withdrawn"],
         "next": "morning3_check_multiple"
     }
     };

@@ -35,7 +35,8 @@
         "choices": [
             "To the student council room",
             "To the library",
-            "To the gym"
+            "To the gym",
+            "Just go home today"
         ]
     },
     "after3_reject_for_seo_1": {
@@ -938,5 +939,39 @@
     "haeun_warn_8b": {
         "name": "{name}",
         "text": "*I walk out to the front of the school.*"
-    }
+    },
+    "after3_walk_home": {"name":"{name}","text":"*I have no plans with anyone. I put my phone in my bag and head for the school gate.*"},
+    "after3_rivals_for_seo_start": {},
+    "after3_rivals_for_yuna_start": {},
+    "after3_rivals_for_dain_start": {},
+    "after3_rival_seo_check": {},
+    "after3_rival_seo_promised_dispatch": {},
+    "after3_rival_seo_affinity": {},
+    "after3_rival_seo_high": {"name":"Seoyeon","text":"*Seoyeon stops at the junction, checks which way I'm headed, and adjusts her grip on her bag strap.* So you're going somewhere else."},
+    "after3_rival_seo_mid": {"name":"Seoyeon","text":"Okay. I'll finish up what is left."},
+    "after3_rival_seo_done": {},
+    "after3_rival_dain_check": {},
+    "after3_rival_dain_promised_dispatch": {},
+    "after3_rival_dain_affinity": {},
+    "after3_rival_dain_high": {"name":"Dain","text":"*Dain swallows her question and looks at the sign for the gym.* You're going somewhere else? Got it."},
+    "after3_rival_dain_mid": {"name":"Dain","text":"Okay. I'll head to the gym first."},
+    "after3_rival_dain_done": {},
+    "after3_rival_yuna_check": {},
+    "after3_rival_yuna_promised_dispatch": {},
+    "after3_rival_yuna_affinity": {},
+    "after3_rival_yuna_high": {"name":"Yuna","text":"*Yuna closes the book she was about to open.* So you're going somewhere else. Okay."},
+    "after3_rival_yuna_mid": {"name":"Yuna","text":"Okay. I'll be in the library."},
+    "after3_rival_yuna_done": {},
+    "after3_seo_affinity_check": {},
+    "after3_seo_partial_1": {"name":"{name}","text":"*When I open the student council room door, Seoyeon is picking her clipboard up from the floor. She wipes beneath one eye and sets a chair straight.*"},
+    "after3_seo_partial_2": {"name":"Seoyeon","text":"I'll finish this alone today. Just don't avoid me tomorrow."},
+    "after3_seo_low_1": {"name":"Seoyeon","text":"*Seoyeon stands in the hall with the door only half open.* I want to be alone right now. See you tomorrow."},
+    "after3_yuna_affinity_check": {},
+    "after3_yuna_partial_1": {"name":"{name}","text":"*The annex door is open, but Yuna does not open her book. She glances at the chair across from her, then pushes it beneath the desk.*"},
+    "after3_yuna_partial_2": {"name":"Yuna","text":"Let's stop here today. Next time, I'll ask you first."},
+    "after3_yuna_low_1": {"name":"Yuna","text":"*Yuna shoulders her bag at the annex door.* I want to be alone today. I'm leaving first."},
+    "after3_dain_affinity_check": {},
+    "after3_dain_partial_1": {"name":"{name}","text":"*Inside the gym, Dain adjusts her knee brace. She starts to stand, then sits back down on the bench.*"},
+    "after3_dain_partial_2": {"name":"Dain","text":"It'll be fine after some rest. Go on ahead. See you tomorrow."},
+    "after3_dain_low_1": {"name":"Dain","text":"*Dain holds the gym door without stepping inside.* I'm practicing alone today. See you at school."}
 }

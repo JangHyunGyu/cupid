@@ -35,7 +35,8 @@
         "choices": [
             "Pra sala do grêmio",
             "Pra biblioteca",
-            "Pro ginásio"
+            "Pro ginásio",
+            "Ir direto pra casa hoje"
         ]
     },
     "after3_reject_for_seo_1": {
@@ -938,5 +939,39 @@
     "haeun_warn_8b": {
         "name": "{name}",
         "text": "*Saí pelo portão da escola.*"
-    }
+    },
+    "after3_walk_home": {"name":"{name}","text":"*Não combinei nada com ninguém. Guardo o celular na mochila e sigo para o portão.*"},
+    "after3_rivals_for_seo_start": {},
+    "after3_rivals_for_yuna_start": {},
+    "after3_rivals_for_dain_start": {},
+    "after3_rival_seo_check": {},
+    "after3_rival_seo_promised_dispatch": {},
+    "after3_rival_seo_affinity": {},
+    "after3_rival_seo_high": {"name":"Seoyeon","text":"*Seoyeon para na bifurcação, confere para onde estou indo e aperta a alça da bolsa.* Então você vai para outro lugar."},
+    "after3_rival_seo_mid": {"name":"Seoyeon","text":"Entendi. Eu termino o que falta."},
+    "after3_rival_seo_done": {},
+    "after3_rival_dain_check": {},
+    "after3_rival_dain_promised_dispatch": {},
+    "after3_rival_dain_affinity": {},
+    "after3_rival_dain_high": {"name":"Dain","text":"*Dain engole a pergunta e olha para a placa do ginásio.* Você vai para outro lugar? Entendi."},
+    "after3_rival_dain_mid": {"name":"Dain","text":"Beleza. Vou na frente para o ginásio."},
+    "after3_rival_dain_done": {},
+    "after3_rival_yuna_check": {},
+    "after3_rival_yuna_promised_dispatch": {},
+    "after3_rival_yuna_affinity": {},
+    "after3_rival_yuna_high": {"name":"Yuna","text":"*Yuna fecha o livro que ia abrir.* Então você vai para outro lugar. Tudo bem."},
+    "after3_rival_yuna_mid": {"name":"Yuna","text":"Entendi. Vou ficar na biblioteca."},
+    "after3_rival_yuna_done": {},
+    "after3_seo_affinity_check": {},
+    "after3_seo_partial_1": {"name":"{name}","text":"*Quando abro a porta da sala do grêmio, Seoyeon está pegando a prancheta do chão. Ela limpa embaixo de um olho e ajeita uma cadeira.*"},
+    "after3_seo_partial_2": {"name":"Seoyeon","text":"Hoje eu termino sozinha. Mas não me evite amanhã."},
+    "after3_seo_low_1": {"name":"Seoyeon","text":"*Seoyeon fica no corredor com a porta entreaberta.* Agora eu quero ficar sozinha. Até amanhã."},
+    "after3_yuna_affinity_check": {},
+    "after3_yuna_partial_1": {"name":"{name}","text":"*A porta do anexo está aberta, mas Yuna não abre o livro. Ela olha para a cadeira à sua frente e a empurra para baixo da mesa.*"},
+    "after3_yuna_partial_2": {"name":"Yuna","text":"Vamos parar por aqui hoje. Da próxima vez, eu chamo você primeiro."},
+    "after3_yuna_low_1": {"name":"Yuna","text":"*Yuna coloca a mochila no ombro diante do anexo.* Hoje quero ficar sozinha. Vou indo."},
+    "after3_dain_affinity_check": {},
+    "after3_dain_partial_1": {"name":"{name}","text":"*Dentro do ginásio, Dain ajusta a joelheira. Ela começa a se levantar, mas volta a sentar no banco.*"},
+    "after3_dain_partial_2": {"name":"Dain","text":"Com um pouco de descanso, passa. Pode ir na frente. Até amanhã."},
+    "after3_dain_low_1": {"name":"Dain","text":"*Dain segura a porta do ginásio sem entrar.* Hoje vou treinar sozinha. Vejo você na escola."}
 }

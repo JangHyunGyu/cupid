@@ -315,5 +315,14 @@
     "tour_dain_event_5": {
         "name": "Dain",
         "text": "*Apaga el micrófono y recupera el aliento mientras bajamos al gimnasio.* Aunque no juegue, todavía tengo cosas que decir. Más de las que creía."
-    }
+    },
+    "tour_seo_affinity_check": {},
+    "tour_seo_affinity_80": {"name":"Seoyeon","text":"He dejado libre el primer hueco de la semana que viene. Tú eliges la hora."},
+    "tour_seo_affinity_60": {"name":"Seoyeon","text":"Pasemos también por la azotea al terminar. Hoy esperaré yo primero."},
+    "tour_yuna_affinity_check": {},
+    "tour_yuna_affinity_80": {"name":"Yuna","text":"Tu sitio como primer lector del próximo relato también está reservado. Pongamos una fecha al terminar."},
+    "tour_yuna_affinity_60": {"name":"Yuna","text":"Lee primero la última página que voy a mostrar hoy."},
+    "tour_dain_affinity_check": {},
+    "tour_dain_affinity_80": {"name":"Dain","text":"Ven también cuando practique la narración del próximo partido. Yo te enviaré la fecha."},
+    "tour_dain_affinity_60": {"name":"Dain","text":"¿Empezamos por la cabina? Hoy serás mi primer oyente."}
 }

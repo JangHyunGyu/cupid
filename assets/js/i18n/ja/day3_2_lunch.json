@@ -338,5 +338,27 @@
     "lunch3_end": {
         "name": "{name}",
         "text": "*チャイムが鳴り、弁当を片づける。約束の話を、それ以上口にする者はいない。*"
-    }
+    },
+    "lunch3_give_seo_2_check": {},
+    "lunch3_give_seo_dain_affinity": {},
+    "lunch3_give_seo_dain_mid": {"name":"ダイン","text":"食べたかったけど、まあいいよ。次は私の分も残して。"},
+    "lunch3_give_seo_dain_low": {"name":"ダイン","text":"*ダインは自分の分を食べ終え、水筒の蓋を閉める。* 私はもうお腹いっぱい。"},
+    "lunch3_give_seo_3_check": {},
+    "lunch3_give_seo_yuna_affinity": {},
+    "lunch3_give_seo_yuna_mid": {"name":"ユナ","text":"*ユナは最後のおかずを見てから、パンの袋を畳む。* 次は少し残して。"},
+    "lunch3_give_seo_yuna_low": {"name":"ユナ","text":"*ユナは表情を変えず、残りのパンを食べる。*"},
+    "lunch3_give_dain_2_check": {},
+    "lunch3_give_dain_seo_affinity": {},
+    "lunch3_give_dain_seo_mid": {"name":"ソヨン","text":"*ソヨンは箸を置き、弁当箱の蓋を合わせる。* 次は私の点数も参考にして。"},
+    "lunch3_give_dain_seo_low": {"name":"ソヨン","text":"*ソヨンは残ったおかずを片づけ、軽くうなずく。*"},
+    "lunch3_give_dain_3_check": {},
+    "lunch3_give_dain_yuna_mid": {"name":"ユナ","text":"ダインにあげるんだ。次は私にも聞いて。"},
+    "lunch3_give_dain_yuna_low": {"name":"ユナ","text":"*ユナはパンの袋を畳み、水を一口飲む。*"},
+    "lunch3_give_yuna_2_check": {},
+    "lunch3_give_yuna_seo_affinity": {},
+    "lunch3_give_yuna_seo_mid": {"name":"ソヨン","text":"ユナにあげるんだ。分かった。"},
+    "lunch3_give_yuna_seo_low": {"name":"ソヨン","text":"*ソヨンは自分の弁当箱を片づける。*"},
+    "lunch3_give_yuna_3_check": {},
+    "lunch3_give_yuna_dain_mid": {"name":"ダイン","text":"まあ、ユナが先に選んだし。次は私の番ね。"},
+    "lunch3_give_yuna_dain_low": {"name":"ダイン","text":"*ダインは空の水筒を鞄に入れる。* 私は平気。"}
 }

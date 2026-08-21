@@ -35,7 +35,8 @@
         "choices": [
             "生徒会室へ",
             "図書館へ",
-            "体育館へ"
+            "体育館へ",
+            "今日はそのまま帰る"
         ]
     },
     "after3_reject_for_seo_1": {
@@ -938,5 +939,39 @@
     "haeun_warn_8b": {
         "name": "{name}",
         "text": "*校門の前に出た。*"
-    }
+    },
+    "after3_walk_home": {"name":"{name}","text":"*誰とも約束はしていない。スマホを鞄にしまい、校門へ向かう。*"},
+    "after3_rivals_for_seo_start": {},
+    "after3_rivals_for_yuna_start": {},
+    "after3_rivals_for_dain_start": {},
+    "after3_rival_seo_check": {},
+    "after3_rival_seo_promised_dispatch": {},
+    "after3_rival_seo_affinity": {},
+    "after3_rival_seo_high": {"name":"ソヨン","text":"*ソヨンは分かれ道で足を止め、こちらが向かう先を確かめて鞄の紐を握り直す。* 別のところに行くんだ。"},
+    "after3_rival_seo_mid": {"name":"ソヨン","text":"分かった。残りは私が片づける。"},
+    "after3_rival_seo_done": {},
+    "after3_rival_dain_check": {},
+    "after3_rival_dain_promised_dispatch": {},
+    "after3_rival_dain_affinity": {},
+    "after3_rival_dain_high": {"name":"ダイン","text":"*ダインは言いかけた言葉を飲み込み、体育館の案内板を見る。* 別のところに行くの？ 分かった。"},
+    "after3_rival_dain_mid": {"name":"ダイン","text":"オーケー。じゃあ、先に体育館へ行くね。"},
+    "after3_rival_dain_done": {},
+    "after3_rival_yuna_check": {},
+    "after3_rival_yuna_promised_dispatch": {},
+    "after3_rival_yuna_affinity": {},
+    "after3_rival_yuna_high": {"name":"ユナ","text":"*ユナは開きかけた本を閉じる。* 別のところに行くんだ。うん、分かった。"},
+    "after3_rival_yuna_mid": {"name":"ユナ","text":"分かった。私は図書館にいる。"},
+    "after3_rival_yuna_done": {},
+    "after3_seo_affinity_check": {},
+    "after3_seo_partial_1": {"name":"{name}","text":"*生徒会室の扉を開けると、ソヨンが床のクリップボードを拾っている。目元を一度拭い、椅子を戻す。*"},
+    "after3_seo_partial_2": {"name":"ソヨン","text":"今日は一人で片づける。代わりに、明日は避けないで。"},
+    "after3_seo_low_1": {"name":"ソヨン","text":"*ソヨンは扉を半分だけ開け、廊下に立つ。* 今は一人でいたい。明日ね。"},
+    "after3_yuna_affinity_check": {},
+    "after3_yuna_partial_1": {"name":"{name}","text":"*別館の扉は開いているが、ユナは本を開かない。向かいの椅子を一度見てから机の下へ押し戻す。*"},
+    "after3_yuna_partial_2": {"name":"ユナ","text":"今日はここまで。次は私から呼ぶ。"},
+    "after3_yuna_low_1": {"name":"ユナ","text":"*別館の前でユナが鞄を肩にかける。* 今日は一人でいたい。先に帰る。"},
+    "after3_dain_affinity_check": {},
+    "after3_dain_partial_1": {"name":"{name}","text":"*体育館の中でダインが膝のサポーターを直す。立ち上がりかけて、またベンチに座る。*"},
+    "after3_dain_partial_2": {"name":"ダイン","text":"少し休めば平気。今日は先に帰って。明日ね。"},
+    "after3_dain_low_1": {"name":"ダイン","text":"*ダインは体育館の扉を持ったまま、中へ入らない。* 今日は一人で練習する。学校でね。"}
 }

@@ -338,5 +338,27 @@
     "lunch3_end": {
         "name": "{name}",
         "text": "*Die Glocke läutet, und ich packe die Lunchbox ein. Niemand spricht die Wochenendpläne noch einmal an.*"
-    }
+    },
+    "lunch3_give_seo_2_check": {},
+    "lunch3_give_seo_dain_affinity": {},
+    "lunch3_give_seo_dain_mid": {"name":"Dain","text":"Ich wollte es zwar, aber schon gut. Heb mir nächstes Mal etwas auf."},
+    "lunch3_give_seo_dain_low": {"name":"Dain","text":"*Dain isst ihre Portion auf und schließt ihre Wasserflasche.* Ich bin sowieso satt."},
+    "lunch3_give_seo_3_check": {},
+    "lunch3_give_seo_yuna_affinity": {},
+    "lunch3_give_seo_yuna_mid": {"name":"Yuna","text":"*Yuna sieht zum letzten Bissen und faltet dann ihre Brottüte zusammen.* Heb mir nächstes Mal etwas auf."},
+    "lunch3_give_seo_yuna_low": {"name":"Yuna","text":"*Yuna isst ihr Brot zu Ende, ohne eine Miene zu verziehen.*"},
+    "lunch3_give_dain_2_check": {},
+    "lunch3_give_dain_seo_affinity": {},
+    "lunch3_give_dain_seo_mid": {"name":"Seoyeon","text":"*Seoyeon legt ihre Stäbchen hin und setzt den Deckel auf ihre Lunchbox.* Berücksichtige nächstes Mal auch meine Bewertung."},
+    "lunch3_give_dain_seo_low": {"name":"Seoyeon","text":"*Seoyeon räumt die Reste zusammen und nickt nur.*"},
+    "lunch3_give_dain_3_check": {},
+    "lunch3_give_dain_yuna_mid": {"name":"Yuna","text":"Du gibst es Dain. Frag mich nächstes Mal auch."},
+    "lunch3_give_dain_yuna_low": {"name":"Yuna","text":"*Yuna faltet ihre Brottüte und trinkt einen Schluck Wasser.*"},
+    "lunch3_give_yuna_2_check": {},
+    "lunch3_give_yuna_seo_affinity": {},
+    "lunch3_give_yuna_seo_mid": {"name":"Seoyeon","text":"Du gibst es Yuna. Verstanden."},
+    "lunch3_give_yuna_seo_low": {"name":"Seoyeon","text":"*Seoyeon packt ihre eigene Lunchbox ein.*"},
+    "lunch3_give_yuna_3_check": {},
+    "lunch3_give_yuna_dain_mid": {"name":"Dain","text":"Na gut, Yuna hat zuerst gewählt. Nächstes Mal bin ich dran."},
+    "lunch3_give_yuna_dain_low": {"name":"Dain","text":"*Dain steckt die leere Wasserflasche in ihre Tasche.* Mir geht's gut."}
 }

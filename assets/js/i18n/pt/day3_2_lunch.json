@@ -338,5 +338,27 @@
     "lunch3_end": {
         "name": "{name}",
         "text": "*O sinal toca e fecho a marmita. Ninguém volta a mencionar os planos.*"
-    }
+    },
+    "lunch3_give_seo_2_check": {},
+    "lunch3_give_seo_dain_affinity": {},
+    "lunch3_give_seo_dain_mid": {"name":"Dain","text":"Eu queria, mas tudo bem. Guarda um pouco pra mim da próxima vez."},
+    "lunch3_give_seo_dain_low": {"name":"Dain","text":"*Dain termina a parte dela e fecha a garrafa.* Eu já estou cheia."},
+    "lunch3_give_seo_3_check": {},
+    "lunch3_give_seo_yuna_affinity": {},
+    "lunch3_give_seo_yuna_mid": {"name":"Yuna","text":"*Yuna olha para o último pedaço e dobra a embalagem do pão.* Na próxima vez, deixa um pouco pra mim."},
+    "lunch3_give_seo_yuna_low": {"name":"Yuna","text":"*Yuna termina o pão sem mudar de expressão.*"},
+    "lunch3_give_dain_2_check": {},
+    "lunch3_give_dain_seo_affinity": {},
+    "lunch3_give_dain_seo_mid": {"name":"Seoyeon","text":"*Seoyeon abaixa os hashis e encaixa a tampa da marmita.* Na próxima vez, leve minha nota em conta."},
+    "lunch3_give_dain_seo_low": {"name":"Seoyeon","text":"*Seoyeon arruma o que sobrou e apenas faz que sim.*"},
+    "lunch3_give_dain_3_check": {},
+    "lunch3_give_dain_yuna_mid": {"name":"Yuna","text":"Você vai dar pra Dain. Na próxima vez, pergunta pra mim também."},
+    "lunch3_give_dain_yuna_low": {"name":"Yuna","text":"*Yuna dobra a embalagem do pão e toma um gole de água.*"},
+    "lunch3_give_yuna_2_check": {},
+    "lunch3_give_yuna_seo_affinity": {},
+    "lunch3_give_yuna_seo_mid": {"name":"Seoyeon","text":"Você vai dar pra Yuna. Entendi."},
+    "lunch3_give_yuna_seo_low": {"name":"Seoyeon","text":"*Seoyeon guarda a própria marmita.*"},
+    "lunch3_give_yuna_3_check": {},
+    "lunch3_give_yuna_dain_mid": {"name":"Dain","text":"Bom, a Yuna escolheu primeiro. Na próxima vez é minha vez."},
+    "lunch3_give_yuna_dain_low": {"name":"Dain","text":"*Dain coloca a garrafa vazia na mochila.* Eu estou bem."}
 }

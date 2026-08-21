@@ -260,6 +260,26 @@ const tests = [
     forbidden: ['after5_confess_react_seo']
   },
   {
+    name: 'Confess Fail(Yuna)',
+    start: 'after5_ending_check',
+    expected: 'day5_ending_confess_fail',
+    affinities: { Yuna: 30 },
+    flags: ['route_yuna', 'day4_waited'],
+    choices: { after5_last_chance_choice: 0 },
+    required: ['after5_last_chance_yuna_low_1', 'after5_confess_react_yuna_low'],
+    forbidden: ['after5_confess_react_yuna']
+  },
+  {
+    name: 'Confess Fail(Dain)',
+    start: 'after5_ending_check',
+    expected: 'day5_ending_confess_fail',
+    affinities: { Dain: 30 },
+    flags: ['route_dain', 'day4_waited'],
+    choices: { after5_last_chance_choice: 0 },
+    required: ['after5_last_chance_dain_low_1', 'after5_confess_react_dain_low'],
+    forbidden: ['after5_confess_react_dain']
+  },
+  {
     name: 'Friend(Yuna Waited)',
     start: 'after5_ending_check',
     expected: 'day5_ending_friend',

@@ -338,5 +338,27 @@
     "lunch3_end": {
         "name": "{name}",
         "text": "*The bell rings and I pack up the lunchbox. No one brings up the weekend plans again.*"
-    }
+    },
+    "lunch3_give_seo_2_check": {},
+    "lunch3_give_seo_dain_affinity": {},
+    "lunch3_give_seo_dain_mid": {"name":"Dain","text":"I wanted it, but it's fine. Save some for me next time."},
+    "lunch3_give_seo_dain_low": {"name":"Dain","text":"*Dain finishes her portion and closes her water bottle.* I'm full anyway."},
+    "lunch3_give_seo_3_check": {},
+    "lunch3_give_seo_yuna_affinity": {},
+    "lunch3_give_seo_yuna_mid": {"name":"Yuna","text":"*Yuna looks at the last side dish, then folds her bread wrapper.* Save me a little next time."},
+    "lunch3_give_seo_yuna_low": {"name":"Yuna","text":"*Yuna finishes her bread without changing her expression.*"},
+    "lunch3_give_dain_2_check": {},
+    "lunch3_give_dain_seo_affinity": {},
+    "lunch3_give_dain_seo_mid": {"name":"Seoyeon","text":"*Seoyeon puts down her chopsticks and fits the lid onto her lunchbox.* Take my score into account next time."},
+    "lunch3_give_dain_seo_low": {"name":"Seoyeon","text":"*Seoyeon tidies the remaining food and only nods.*"},
+    "lunch3_give_dain_3_check": {},
+    "lunch3_give_dain_yuna_mid": {"name":"Yuna","text":"You're giving it to Dain. Ask me next time too."},
+    "lunch3_give_dain_yuna_low": {"name":"Yuna","text":"*Yuna folds her bread wrapper and takes a sip of water.*"},
+    "lunch3_give_yuna_2_check": {},
+    "lunch3_give_yuna_seo_affinity": {},
+    "lunch3_give_yuna_seo_mid": {"name":"Seoyeon","text":"You're giving it to Yuna. All right."},
+    "lunch3_give_yuna_seo_low": {"name":"Seoyeon","text":"*Seoyeon packs up her own lunchbox.*"},
+    "lunch3_give_yuna_3_check": {},
+    "lunch3_give_yuna_dain_mid": {"name":"Dain","text":"Well, Yuna picked first. I'm next next time."},
+    "lunch3_give_yuna_dain_low": {"name":"Dain","text":"*Dain puts her empty water bottle in her bag.* I'm fine."}
 }

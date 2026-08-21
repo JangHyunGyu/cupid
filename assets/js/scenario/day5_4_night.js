@@ -140,21 +140,21 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/top_school.png",
         "character": null,
         "affinityChar": "Seoyeon",
-        "affinityBranches": [{"minAffinity":40,"next":"day5_ending_good"}],
+        "affinityBranches": [{"minAffinity":50,"next":"day5_ending_good"}],
         "next": "day5_ending_confess_fail"
     },
     "ending_confessed_aff_yuna": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": null,
         "affinityChar": "Yuna",
-        "affinityBranches": [{"minAffinity":40,"next":"day5_ending_good"}],
+        "affinityBranches": [{"minAffinity":50,"next":"day5_ending_good"}],
         "next": "day5_ending_confess_fail"
     },
     "ending_confessed_aff_dain": {
         "background": "assets/images/background/gym.png",
         "character": null,
         "affinityChar": "Dain",
-        "affinityBranches": [{"minAffinity":40,"next":"day5_ending_good"}],
+        "affinityBranches": [{"minAffinity":50,"next":"day5_ending_good"}],
         "next": "day5_ending_confess_fail"
     },
     "day5_ending_confess_fail": {

@@ -315,5 +315,14 @@
     "tour_dain_event_5": {
         "name": "Dain",
         "text": "*She switches off the microphone and catches her breath as we head down to the gym.* Turns out I still have plenty to say when I'm not the one playing. More than I thought."
-    }
+    },
+    "tour_seo_affinity_check": {},
+    "tour_seo_affinity_80": {"name":"Seoyeon","text":"I left the first slot in next week's schedule open. You pick the time."},
+    "tour_seo_affinity_60": {"name":"Seoyeon","text":"Let's stop by the rooftop when we're done. I'll be the one waiting first today."},
+    "tour_yuna_affinity_check": {},
+    "tour_yuna_affinity_80": {"name":"Yuna","text":"Your seat is reserved as the first reader of the next story too. Let's write down a date when we're done."},
+    "tour_yuna_affinity_60": {"name":"Yuna","text":"You read the last page I have to show today first."},
+    "tour_dain_affinity_check": {},
+    "tour_dain_affinity_80": {"name":"Dain","text":"Come when I practice commentary for the next game too. I'll send you the date."},
+    "tour_dain_affinity_60": {"name":"Dain","text":"Want to start with the broadcast booth? You're my first listener today."}
 }

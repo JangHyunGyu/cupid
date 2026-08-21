@@ -54,7 +54,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "character": "assets/images/characters/seyoun_normal.png",
         "bgm": "daily.mp3",
         "affinityChar": "Seoyeon",
-        "affinityBranches": [{"minAffinity":5,"next":"lunch_seo_1_aff_high"},{"minAffinity":-100,"next":"lunch_seo_1_aff_default"}],
+        "affinityBranches": [{"minAffinity":4,"next":"lunch_seo_1_aff_high"},{"minAffinity":-100,"next":"lunch_seo_1_aff_default"}],
         "next": "lunch_seo_1_aff_default"
     },
     "lunch_seo_1_aff_high": {

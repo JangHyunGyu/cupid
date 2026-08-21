@@ -19,10 +19,47 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/room_school.png",
         "character": null,
         "branches": [
+            { "condition": "day3_caught_multiple_dates", "next": "morning5_caught_fallout_1" },
+            { "condition": "harem_seed", "next": "morning5_harem_fallout_1" },
             { "condition": "day4_counteroffer_penalty_deferred", "next": "morning5_temptation_counteroffer_branch" },
             { "condition": "day4_confession_accepted", "next": "morning5_temptation_discovery_branch" },
             { "next": "morning5_start_b" }
         ]
+    },
+    "morning5_caught_fallout_1": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "next": "morning5_caught_fallout_2"
+    },
+    "morning5_caught_fallout_2": {
+        "background": "assets/images/background/room_school.png",
+        "characters": {
+            "left": {"src":"assets/images/characters/yuna_normal.png"},
+            "right": {"src":"assets/images/characters/dain_normal.png"}
+        },
+        "next": "morning5_caught_fallout_3"
+    },
+    "morning5_caught_fallout_3": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "setFlags": ["day5_caught_fallout_seen"],
+        "next": "ending_start"
+    },
+    "morning5_harem_fallout_1": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "next": "morning5_harem_fallout_2"
+    },
+    "morning5_harem_fallout_2": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "morning5_harem_fallout_3"
+    },
+    "morning5_harem_fallout_3": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "setFlags": ["morning5_harem_fallout_seen", "ending_harem"],
+        "next": "ending_start"
     },
     "morning5_temptation_discovery_branch": {
         "background": "assets/images/background/room_school.png",

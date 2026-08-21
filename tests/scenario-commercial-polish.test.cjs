@@ -67,12 +67,17 @@ test('Day 5 accountability and route growth scenes are mandatory on successful r
     assert.equal(day5.morning5_sojeong_5.next, 'morning5_route_branch');
 
     const routeEvents = [
-        ['tour_seo_1', 'tour_seo_event_1', 'tour_seo_event_5', 'day5_seoyeon_delegated', 'tour_seo_2'],
-        ['tour_yuna_1', 'tour_yuna_event_1', 'tour_yuna_event_5', 'day5_yuna_signed_story', 'tour_yuna_2'],
-        ['tour_dain_1', 'tour_dain_event_1', 'tour_dain_event_5', 'day5_dain_chose_commentary', 'tour_dain_2']
+        ['tour_seo', 'tour_seo_1', 'tour_seo_event_1', 'tour_seo_event_5', 'day5_seoyeon_delegated', 'tour_seo_2'],
+        ['tour_yuna', 'tour_yuna_1', 'tour_yuna_event_1', 'tour_yuna_event_5', 'day5_yuna_signed_story', 'tour_yuna_2'],
+        ['tour_dain', 'tour_dain_1', 'tour_dain_event_1', 'tour_dain_event_5', 'day5_dain_chose_commentary', 'tour_dain_2']
     ];
-    for (const [entry, first, last, flag, resume] of routeEvents) {
-        assert.equal(day5[entry].next, first);
+    for (const [prefix, entry, first, last, flag, resume] of routeEvents) {
+        const check = `${prefix}_affinity_check`;
+        assert.equal(day5[entry].next, check);
+        if (day5[`${entry}b`]) assert.equal(day5[`${entry}b`].next, check);
+        assert.equal(day5[check].affinityBranches.at(-1).next, first);
+        assert.equal(day5[`${prefix}_affinity_80`].next, `${prefix}_affinity_60`);
+        assert.equal(day5[`${prefix}_affinity_60`].next, first);
         assert.ok(day5[last].setFlags.includes(flag));
         assert.equal(day5[last].next, resume);
     }

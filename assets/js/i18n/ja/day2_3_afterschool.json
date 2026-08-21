@@ -248,6 +248,30 @@
         "name": "ダイン",
         "text": "*トッポギのカップを{name}のほうへ押し、空のペットボトルを逆さにして振る。*"
     },
+    "after2_dain_rival_seo_high": {
+        "name": "{name}",
+        "text": "*店の窓の向こうでソヨンが足を止める。テーブルのトッポギが二つあるのを見たあと、スマホに短いメッセージが届く。『今日は体育館のほうだったんだ。次は生徒会室にも寄って』*"
+    },
+    "after2_dain_rival_seo_mid": {
+        "name": "{name}",
+        "text": "*店の前を通ったソヨンがテーブルを見る。クリップボードの角を二度そろえてから、校門へ向かう。*"
+    },
+    "after2_dain_rival_seo_low": {
+        "name": "{name}",
+        "text": "*ソヨンは店の前を通りながら二人に会釈する。足は止めない。*"
+    },
+    "after2_dain_rival_yuna_high": {
+        "name": "{name}",
+        "text": "*ユナが店の窓から中を見る。手にしていた折りたたみのメモをポケットへ戻し、そのまま引き返す。*"
+    },
+    "after2_dain_rival_yuna_mid": {
+        "name": "{name}",
+        "text": "*店の前を通ったユナがイヤホンを片方外しかける。テーブルを見ると、また耳に戻す。*"
+    },
+    "after2_dain_rival_yuna_low": {
+        "name": "{name}",
+        "text": "*ユナは窓越しに一度うなずき、別館のほうへ歩いていく。*"
+    },
     "after2_dain_return": {
         "name": "{name}",
         "text": "*学校へ戻る途中。校門前まで来た。*"
@@ -467,6 +491,30 @@
         "name": "{name}",
         "text": "*生徒会室を出た。校門に向かって歩き出す。*"
     },
+    "after2_seo_rival_dain_high": {
+        "name": "ダイン",
+        "text": "*体育館のボールかごを押していたダインが、廊下の先で二人を見る。* 生徒会の仕事、ずいぶん長かったんだね。*取っ手を握ったまま先に背を向ける。*"
+    },
+    "after2_seo_rival_dain_mid": {
+        "name": "ダイン",
+        "text": "*ボールかごを止める。* 終わった？ *ソヨンを一度見てから、また体育館のほうへ押していく。*"
+    },
+    "after2_seo_rival_dain_low": {
+        "name": "ダイン",
+        "text": "お疲れ！ *ボールかご越しに手を振り、体育館へ向かう。*"
+    },
+    "after2_seo_rival_yuna_high": {
+        "name": "{name}",
+        "text": "*踊り場で本を読んでいたユナが、二人の足音に表紙を閉じる。挟んであったメモを抜き、半分に折る。*"
+    },
+    "after2_seo_rival_yuna_mid": {
+        "name": "{name}",
+        "text": "*ユナの手がページの上で止まる。二人が通れるよう一段ぶん避けてから、また本を開く。*"
+    },
+    "after2_seo_rival_yuna_low": {
+        "name": "{name}",
+        "text": "*踊り場のユナが脇へ寄り、短く会釈する。*"
+    },
     "after2_yuna_1": {
         "name": "{name}",
         "text": "*ユナから連絡はないが、図書館へ向かう。歩くたび、ポケットの中の折りたたまれたメモが手の甲に触れる。*"
@@ -570,7 +618,7 @@
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "*スマホにはダインの『待ってたのに？』とソヨンの『予定が変わったなら言ってよね』が届いている。ユナと並んで座っていた椅子には、イヤホンが片方残っていた。*"
+        "text": "*ユナと並んで座っていた椅子には、イヤホンが片方残っている。別館を出る前にスマホの画面を点ける。*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",
@@ -587,6 +635,30 @@
     "after2_yuna_return": {
         "name": "{name}",
         "text": "*図書館別館を出ると、廊下の自動照明が点く。*"
+    },
+    "after2_yuna_rival_dain_high": {
+        "name": "ダイン",
+        "text": "体育館に来てって言ったのに、別館に行ったんだ。次はこっちにも来て。"
+    },
+    "after2_yuna_rival_dain_mid": {
+        "name": "ダイン",
+        "text": "図書館にいたの？　明日は体育館にも寄ってよ。"
+    },
+    "after2_yuna_rival_dain_low": {
+        "name": "ダイン",
+        "text": "図書館のほうにいたの？　また明日！"
+    },
+    "after2_yuna_rival_seo_high": {
+        "name": "ソヨン",
+        "text": "別館にいたんだ。次は生徒会室にも寄って。"
+    },
+    "after2_yuna_rival_seo_mid": {
+        "name": "ソヨン",
+        "text": "別館にいたんだね。今日の仕事は終わった。また明日。"
+    },
+    "after2_yuna_rival_seo_low": {
+        "name": "ソヨン",
+        "text": "手伝いは足りたよ。また明日。"
     },
     "after2_group_seoyeon_companion": {
         "name": "ソヨンと同行者",

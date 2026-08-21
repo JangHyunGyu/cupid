@@ -35,7 +35,8 @@
         "choices": [
             "A la sala del consejo estudiantil",
             "A la biblioteca",
-            "Al gimnasio"
+            "Al gimnasio",
+            "Irme a casa por hoy"
         ]
     },
     "after3_reject_for_seo_1": {
@@ -938,5 +939,39 @@
     "haeun_warn_8b": {
         "name": "{name}",
         "text": "*Salgo a la entrada de la escuela.*"
-    }
+    },
+    "after3_walk_home": {"name":"{name}","text":"*No he quedado con nadie. Guardo el teléfono en la mochila y camino hacia la entrada.*"},
+    "after3_rivals_for_seo_start": {},
+    "after3_rivals_for_yuna_start": {},
+    "after3_rivals_for_dain_start": {},
+    "after3_rival_seo_check": {},
+    "after3_rival_seo_promised_dispatch": {},
+    "after3_rival_seo_affinity": {},
+    "after3_rival_seo_high": {"name":"Seoyeon","text":"*Seoyeon se detiene en el cruce, mira hacia dónde voy y ajusta la correa de su bolso.* Así que vas a otro sitio."},
+    "after3_rival_seo_mid": {"name":"Seoyeon","text":"Entendido. Yo terminaré lo que queda."},
+    "after3_rival_seo_done": {},
+    "after3_rival_dain_check": {},
+    "after3_rival_dain_promised_dispatch": {},
+    "after3_rival_dain_affinity": {},
+    "after3_rival_dain_high": {"name":"Dain","text":"*Dain se guarda la pregunta y mira el cartel del gimnasio.* ¿Vas a otro sitio? Entendido."},
+    "after3_rival_dain_mid": {"name":"Dain","text":"Vale. Iré primero al gimnasio."},
+    "after3_rival_dain_done": {},
+    "after3_rival_yuna_check": {},
+    "after3_rival_yuna_promised_dispatch": {},
+    "after3_rival_yuna_affinity": {},
+    "after3_rival_yuna_high": {"name":"Yuna","text":"*Yuna cierra el libro que iba a abrir.* Así que vas a otro sitio. Está bien."},
+    "after3_rival_yuna_mid": {"name":"Yuna","text":"Entendido. Estaré en la biblioteca."},
+    "after3_rival_yuna_done": {},
+    "after3_seo_affinity_check": {},
+    "after3_seo_partial_1": {"name":"{name}","text":"*Al abrir la puerta del consejo, veo a Seoyeon recogiendo el portapapeles del suelo. Se limpia debajo de un ojo y coloca bien una silla.*"},
+    "after3_seo_partial_2": {"name":"Seoyeon","text":"Hoy terminaré sola. Pero mañana no me evites."},
+    "after3_seo_low_1": {"name":"Seoyeon","text":"*Seoyeon se queda en el pasillo con la puerta entreabierta.* Ahora quiero estar sola. Nos vemos mañana."},
+    "after3_yuna_affinity_check": {},
+    "after3_yuna_partial_1": {"name":"{name}","text":"*La puerta del anexo está abierta, pero Yuna no abre el libro. Mira la silla de enfrente y la empuja bajo la mesa.*"},
+    "after3_yuna_partial_2": {"name":"Yuna","text":"Dejémoslo aquí por hoy. La próxima vez te llamaré yo."},
+    "after3_yuna_low_1": {"name":"Yuna","text":"*Yuna se cuelga la mochila frente al anexo.* Hoy quiero estar sola. Me voy primero."},
+    "after3_dain_affinity_check": {},
+    "after3_dain_partial_1": {"name":"{name}","text":"*Dentro del gimnasio, Dain se ajusta la rodillera. Empieza a levantarse, pero vuelve a sentarse en el banco.*"},
+    "after3_dain_partial_2": {"name":"Dain","text":"Estaré bien si descanso un poco. Vete tú. Nos vemos mañana."},
+    "after3_dain_low_1": {"name":"Dain","text":"*Dain sujeta la puerta del gimnasio sin entrar.* Hoy entrenaré sola. Nos vemos en clase."}
 }

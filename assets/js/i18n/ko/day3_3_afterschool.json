@@ -35,7 +35,8 @@
         "choices": [
             "학생회실로",
             "도서관으로",
-            "체육관으로"
+            "체육관으로",
+            "오늘은 그냥 집에 간다"
         ]
     },
     "after3_reject_for_seo_1": {
@@ -938,5 +939,39 @@
     "haeun_warn_8b": {
         "name": "{name}",
         "text": "*학교 앞으로 나왔다.*"
-    }
+    },
+    "after3_walk_home": {"name":"{name}","text":"*잡힌 약속은 없다. 휴대폰을 가방에 넣고 교문 쪽으로 걷는다.*"},
+    "after3_rivals_for_seo_start": {},
+    "after3_rivals_for_yuna_start": {},
+    "after3_rivals_for_dain_start": {},
+    "after3_rival_seo_check": {},
+    "after3_rival_seo_promised_dispatch": {},
+    "after3_rival_seo_affinity": {},
+    "after3_rival_seo_high": {"name":"서연","text":"*서연은 갈림길 앞에서 걸음을 멈춘다. 가려는 방향을 확인하고 가방끈을 고쳐 잡는다.* 다른 데 가는구나."},
+    "after3_rival_seo_mid": {"name":"서연","text":"알겠어. 남은 일은 내가 정리할게."},
+    "after3_rival_seo_done": {},
+    "after3_rival_dain_check": {},
+    "after3_rival_dain_promised_dispatch": {},
+    "after3_rival_dain_affinity": {},
+    "after3_rival_dain_high": {"name":"다인","text":"*다인은 묻던 말을 삼키고 체육관 표지판을 본다.* 다른 데 가는 거야? 알았어."},
+    "after3_rival_dain_mid": {"name":"다인","text":"오케이. 그럼 나 먼저 체육관 갈게."},
+    "after3_rival_dain_done": {},
+    "after3_rival_yuna_check": {},
+    "after3_rival_yuna_promised_dispatch": {},
+    "after3_rival_yuna_affinity": {},
+    "after3_rival_yuna_high": {"name":"유나","text":"*유나는 펼치려던 책을 도로 덮는다.* 다른 데 가는구나. 응, 알겠어."},
+    "after3_rival_yuna_mid": {"name":"유나","text":"알겠어. 난 도서관에 있을게."},
+    "after3_rival_yuna_done": {},
+    "after3_seo_affinity_check": {},
+    "after3_seo_partial_1": {"name":"{name}","text":"*학생회실 문을 열자 서연이 바닥의 클립보드를 줍고 있다. 서연은 눈가를 한 번 닦고 의자를 바로 세운다.*"},
+    "after3_seo_partial_2": {"name":"서연","text":"오늘은 혼자 정리할게. 대신 내일은 피하지 마."},
+    "after3_seo_low_1": {"name":"서연","text":"*서연은 문을 반쯤만 연 채 복도에 선다.* 지금은 혼자 있고 싶어. 내일 보자."},
+    "after3_yuna_affinity_check": {},
+    "after3_yuna_partial_1": {"name":"{name}","text":"*별관 문은 열려 있지만 유나는 책을 펼치지 않는다. 맞은편 의자를 한 번 봤다가 책상 안으로 밀어 넣는다.*"},
+    "after3_yuna_partial_2": {"name":"유나","text":"오늘은 여기까지만. 다음에는 내가 먼저 부를게."},
+    "after3_yuna_low_1": {"name":"유나","text":"*별관 문 앞에서 유나가 가방을 멘다.* 오늘은 혼자 있을래. 먼저 갈게."},
+    "after3_dain_affinity_check": {},
+    "after3_dain_partial_1": {"name":"{name}","text":"*체육관 안에서 다인이 무릎 보호대를 고쳐 찬다. 일어서려다 다시 벤치에 앉는다.*"},
+    "after3_dain_partial_2": {"name":"다인","text":"좀 쉬면 돼. 오늘은 먼저 가. 내일 보자."},
+    "after3_dain_low_1": {"name":"다인","text":"*다인은 체육관 문을 잡은 채 안으로 들어가지 않는다.* 오늘은 혼자 연습할게. 학교에서 보자."}
 }

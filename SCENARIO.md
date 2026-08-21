@@ -768,7 +768,7 @@
 - 배경: `top_school.png`
 - BGM: `daily.mp3`
 - 호감분기: Seoyeon
-  - [5+] → `lunch_seo_1_aff_high`
+  - [4+] → `lunch_seo_1_aff_high`
   - [기본] → `lunch_seo_1_aff_default`
 - 다음: `lunch_seo_1_aff_default`
 
@@ -4492,7 +4492,7 @@
 - 다음: `lunch2_seo_10`
 
 - 캐릭터: `dain_normal.png`
-**다인**: 여기 있었네. 찾았다. 오늘도 나 빼고 먹으려고?
+**다인**: 여기 있었네. 찾았다. 옥상에서 먹는 거면 나도 껴도 돼?
 
 ---
 
@@ -4683,7 +4683,6 @@
 
 ### `lunch2_seo_end_c1`
 - 배경: `top_school.png`
-- 스탯: Dain -3, Yuna -3
 - 다음: `after2_start`
 
 - 캐릭터: `seyoun_shy.png`
@@ -4729,7 +4728,6 @@
 
 ### `lunch2_seo_end_c2`
 - 배경: `top_school.png`
-- 스탯: Dain -3, Yuna -3
 - 다음: `after2_start`
 
 - 캐릭터: `seyoun_pout.png`
@@ -5043,7 +5041,6 @@
 
 ### `lunch2_dain_end`
 - 배경: `school_hallway.png`
-- 스탯: Seoyeon -3, Yuna -3
 - 다음: `lunch2_dain_end_b`
 
 - 캐릭터: `dain_pout.png`
@@ -5854,7 +5851,6 @@
 
 ### `lunch2_yuna_end`
 - 배경: `yuna_hideout.png`
-- 스탯: Seoyeon -3, Dain -3
 - 다음: `after2_start`
 
 - 캐릭터: `yuna_normal.png`
@@ -6425,11 +6421,92 @@
 
 ### `after2_dain_end_3e`
 - 배경: `store.png`
-- 스탯: Seoyeon -5, Yuna -5
-- 다음: `after2_dain_return`
+- 다음: `after2_dain_rival_seo_check`
 
 - 캐릭터: `dain_shy.png`
 **다인**: *떡볶이 컵을 {name} 쪽으로 밀어놓고 빈 물병을 거꾸로 흔든다.*
+
+---
+
+### `after2_dain_rival_seo_check`
+- 배경: `store.png`
+- 호감분기: Seoyeon
+  - [25+] → `after2_dain_rival_seo_high`
+  - [10+] → `after2_dain_rival_seo_mid`
+  - [기본] → `after2_dain_rival_seo_low`
+- 다음: `after2_dain_rival_seo_low`
+
+- 캐릭터: `없음`
+
+---
+
+### `after2_dain_rival_seo_high`
+- 배경: `store.png`
+- 스탯: Seoyeon -5
+- 다음: `after2_dain_rival_yuna_check`
+
+- 캐릭터: `seyoun_sad.png`
+**{name}**: *가게 유리창 너머로 서연이 걸음을 멈춘다. 테이블 위 떡볶이 컵 두 개를 본 뒤 휴대폰에 짧은 메시지가 뜬다. '오늘은 체육관 쪽이었네. 다음엔 학생회실에도 들러 줘.'*
+
+---
+
+### `after2_dain_rival_seo_mid`
+- 배경: `store.png`
+- 스탯: Seoyeon -2
+- 다음: `after2_dain_rival_yuna_check`
+
+- 캐릭터: `seyoun_normal.png`
+**{name}**: *서연이 가게 앞을 지나가다 테이블을 본다. 클립보드 모서리를 두 번 맞춘 뒤 교문 쪽으로 간다.*
+
+---
+
+### `after2_dain_rival_seo_low`
+- 배경: `store.png`
+- 다음: `after2_dain_rival_yuna_check`
+
+- 캐릭터: `seyoun_normal.png`
+**{name}**: *서연이 가게 앞을 지나며 두 사람에게 고개를 숙인다. 걸음은 멈추지 않는다.*
+
+---
+
+### `after2_dain_rival_yuna_check`
+- 배경: `store.png`
+- 호감분기: Yuna
+  - [25+] → `after2_dain_rival_yuna_high`
+  - [10+] → `after2_dain_rival_yuna_mid`
+  - [기본] → `after2_dain_rival_yuna_low`
+- 다음: `after2_dain_rival_yuna_low`
+
+- 캐릭터: `없음`
+
+---
+
+### `after2_dain_rival_yuna_high`
+- 배경: `store.png`
+- 스탯: Yuna -5
+- 다음: `after2_dain_return`
+
+- 캐릭터: `yuna_sad.png`
+**{name}**: *유나가 가게 앞에서 유리창 안을 본다. 손에 들고 있던 접힌 쪽지를 주머니에 넣고 그대로 돌아선다.*
+
+---
+
+### `after2_dain_rival_yuna_mid`
+- 배경: `store.png`
+- 스탯: Yuna -2
+- 다음: `after2_dain_return`
+
+- 캐릭터: `yuna_normal.png`
+**{name}**: *가게 앞을 지나던 유나가 이어폰 한쪽을 빼려다 테이블을 보고 다시 낀다.*
+
+---
+
+### `after2_dain_rival_yuna_low`
+- 배경: `store.png`
+- 다음: `after2_dain_return`
+
+- 캐릭터: `yuna_normal.png`
+**{name}**: *유나가 유리창 너머로 고개를 한 번 숙이고 별관 쪽으로 걸어간다.*
 
 ---
 
@@ -6881,11 +6958,10 @@
 
 ### `after2_seo_end`
 - 배경: `school_hallway.png`
-- 스탯: Dain -5, Yuna -5
 - 호감분기: Seoyeon
   - [25+] → `after2_seo_skinship_1`
-  - [기본] → `after2_seo_return`
-- 다음: `after2_seo_return`
+  - [기본] → `after2_seo_rival_dain_check`
+- 다음: `after2_seo_rival_dain_check`
 
 - 캐릭터: `seyoun_normal.png`
 **{name}**: *학생회실을 나서자 복도 자동등이 앞에서부터 한 칸씩 켜진다.*
@@ -6912,10 +6988,92 @@
 
 ### `after2_seo_skinship_3`
 - 배경: `school_hallway.png`
-- 다음: `after2_seo_return`
+- 다음: `after2_seo_rival_dain_check`
 
 - 캐릭터: `seyoun_normal.png`
 **서연**: 먼지 묻었어.
+
+---
+
+### `after2_seo_rival_dain_check`
+- 배경: `school_hallway.png`
+- 호감분기: Dain
+  - [25+] → `after2_seo_rival_dain_high`
+  - [10+] → `after2_seo_rival_dain_mid`
+  - [기본] → `after2_seo_rival_dain_low`
+- 다음: `after2_seo_rival_dain_low`
+
+- 캐릭터: `없음`
+
+---
+
+### `after2_seo_rival_dain_high`
+- 배경: `school_hallway.png`
+- 스탯: Dain -5
+- 다음: `after2_seo_rival_yuna_check`
+
+- 캐릭터: `dain_sad.png`
+**다인**: *체육관 공 바구니를 밀던 다인이 복도 끝에서 둘을 본다.* 학생회 일이 꽤 길었네. *손잡이를 쥔 채 먼저 돌아선다.*
+
+---
+
+### `after2_seo_rival_dain_mid`
+- 배경: `school_hallway.png`
+- 스탯: Dain -2
+- 다음: `after2_seo_rival_yuna_check`
+
+- 캐릭터: `dain_normal.png`
+**다인**: *공 바구니를 세운다.* 끝났어? *서연을 한 번 보고 다시 체육관 쪽으로 민다.*
+
+---
+
+### `after2_seo_rival_dain_low`
+- 배경: `school_hallway.png`
+- 다음: `after2_seo_rival_yuna_check`
+
+- 캐릭터: `dain_laugh.png`
+**다인**: 수고! *공 바구니 너머로 손을 흔들고 체육관 쪽으로 간다.*
+
+---
+
+### `after2_seo_rival_yuna_check`
+- 배경: `school_hallway.png`
+- 호감분기: Yuna
+  - [25+] → `after2_seo_rival_yuna_high`
+  - [10+] → `after2_seo_rival_yuna_mid`
+  - [기본] → `after2_seo_rival_yuna_low`
+- 다음: `after2_seo_rival_yuna_low`
+
+- 캐릭터: `없음`
+
+---
+
+### `after2_seo_rival_yuna_high`
+- 배경: `school_hallway.png`
+- 스탯: Yuna -5
+- 다음: `after2_seo_return`
+
+- 캐릭터: `yuna_sad.png`
+**{name}**: *계단참에서 책을 읽던 유나가 둘이 나오는 소리에 표지를 덮는다. 끼워 둔 쪽지를 뽑아 반으로 접는다.*
+
+---
+
+### `after2_seo_rival_yuna_mid`
+- 배경: `school_hallway.png`
+- 스탯: Yuna -2
+- 다음: `after2_seo_return`
+
+- 캐릭터: `yuna_normal.png`
+**{name}**: *유나의 손이 페이지 위에서 멈춘다. 둘이 지나갈 자리를 한 칸 비킨 뒤 다시 책을 펼친다.*
+
+---
+
+### `after2_seo_rival_yuna_low`
+- 배경: `school_hallway.png`
+- 다음: `after2_seo_return`
+
+- 캐릭터: `yuna_normal.png`
+**{name}**: *계단참의 유나가 한쪽으로 비켜서며 짧게 고개를 숙인다.*
 
 ---
 
@@ -7181,14 +7339,13 @@
 
 ### `after2_yuna_end`
 - 배경: `yuna_hideout.png`
-- 스탯: Seoyeon -3, Dain -3
 - 호감분기: Yuna
   - [25+] → `after2_yuna_skinship_1`
-  - [기본] → `after2_yuna_return`
-- 다음: `after2_yuna_return`
+  - [기본] → `after2_yuna_rival_dain_check`
+- 다음: `after2_yuna_rival_dain_check`
 
 - 캐릭터: `yuna_smile.png`
-**{name}**: *핸드폰에는 다인의 '기다렸는데?'와 서연의 '일정 바뀌면 말은 해줘'가 늦게 와 있다. 유나와 나란히 앉아 있던 자리에는 이어폰 한쪽이 놓여 있다.*
+**{name}**: *유나와 나란히 앉아 있던 자리에는 이어폰 한쪽이 남아 있다. 별관을 나서기 전 휴대폰 화면을 켠다.*
 
 ---
 
@@ -7212,10 +7369,92 @@
 
 ### `after2_yuna_skinship_3`
 - 배경: `yuna_hideout.png`
-- 다음: `after2_yuna_return`
+- 다음: `after2_yuna_rival_dain_check`
 
 - 캐릭터: `yuna_normal.png`
 **{name}**: *손을 뗀 유나가 책등이 내 쪽을 향하도록 돌려 건넨다.*
+
+---
+
+### `after2_yuna_rival_dain_check`
+- 배경: `yuna_hideout.png`
+- 호감분기: Dain
+  - [25+] → `after2_yuna_rival_dain_high`
+  - [10+] → `after2_yuna_rival_dain_mid`
+  - [기본] → `after2_yuna_rival_dain_low`
+- 다음: `after2_yuna_rival_dain_low`
+
+- 캐릭터: `없음`
+
+---
+
+### `after2_yuna_rival_dain_high`
+- 배경: `yuna_hideout.png`
+- 스탯: Dain -5
+- 다음: `after2_yuna_rival_seo_check`
+
+- 캐릭터: `dain_sad.png`
+**다인**: 체육관 오랬더니 별관 갔네. 다음엔 내 쪽도 와.
+
+---
+
+### `after2_yuna_rival_dain_mid`
+- 배경: `yuna_hideout.png`
+- 스탯: Dain -2
+- 다음: `after2_yuna_rival_seo_check`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 도서관이었어? 내일은 체육관 들러.
+
+---
+
+### `after2_yuna_rival_dain_low`
+- 배경: `yuna_hideout.png`
+- 다음: `after2_yuna_rival_seo_check`
+
+- 캐릭터: `dain_laugh.png`
+**다인**: 도서관 쪽이었어? 내일 봐!
+
+---
+
+### `after2_yuna_rival_seo_check`
+- 배경: `yuna_hideout.png`
+- 호감분기: Seoyeon
+  - [25+] → `after2_yuna_rival_seo_high`
+  - [10+] → `after2_yuna_rival_seo_mid`
+  - [기본] → `after2_yuna_rival_seo_low`
+- 다음: `after2_yuna_rival_seo_low`
+
+- 캐릭터: `없음`
+
+---
+
+### `after2_yuna_rival_seo_high`
+- 배경: `yuna_hideout.png`
+- 스탯: Seoyeon -5
+- 다음: `after2_yuna_return`
+
+- 캐릭터: `seyoun_sad.png`
+**서연**: 별관에 있었구나. 다음엔 학생회실에도 들러 줘.
+
+---
+
+### `after2_yuna_rival_seo_mid`
+- 배경: `yuna_hideout.png`
+- 스탯: Seoyeon -2
+- 다음: `after2_yuna_return`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 별관이었네. 오늘 일은 끝냈어. 내일 보자.
+
+---
+
+### `after2_yuna_rival_seo_low`
+- 배경: `yuna_hideout.png`
+- 다음: `after2_yuna_return`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 일손은 채웠어. 내일 보자.
 
 ---
 
@@ -9752,6 +9991,7 @@
 
 ### `morning3_date_seo_low`
 - 배경: `school_hallway.png`
+- 플래그: `day3_seoyeon_date_withdrawn`
 - 다음: `morning3_date_dain_1`
 
 - 캐릭터: `seyoun_normal.png`
@@ -9828,6 +10068,7 @@
 
 ### `morning3_date_dain_low`
 - 배경: `room_school.png`
+- 플래그: `day3_dain_date_withdrawn`
 - 다음: `morning3_date_yuna_1`
 
 - 캐릭터: `dain_normal.png`
@@ -9895,6 +10136,7 @@
 
 ### `morning3_date_yuna_low`
 - 배경: `room_school.png`
+- 플래그: `day3_yuna_date_withdrawn`
 - 다음: `morning3_check_multiple`
 
 - 캐릭터: `yuna_normal.png`
@@ -10161,7 +10403,7 @@
 - 배경: `room_school.png`
 - 호감분기: Seoyeon
   - [40+] → `lunch3_seo_skin_1`
-  - [기본] → `lunch3_give_seo_2`
+  - [기본] → `lunch3_give_seo_2_check`
 
 - 캐릭터: `seyoun_normal.png`
 
@@ -10190,10 +10432,55 @@
 ### `lunch3_seo_skin_3`
 - 배경: `room_school.png`
 - 플래그: `day3_skinship_seoyeon`
-- 다음: `lunch3_give_seo_2`
+- 다음: `lunch3_give_seo_2_check`
 
 - 캐릭터: `seyoun_shy.png`
 **{name}**: *서연이 손을 거두다 젓가락을 떨어뜨린다. 바로 주웠지만 젓가락 끝이 접시 테두리를 긁는다.*
+
+---
+
+### `lunch3_give_seo_2_check`
+- 배경: `room_school.png`
+- 분기:
+  - [`day3_has_multiple_dates`] → `lunch3_give_seo_2`
+  - [기본] → `lunch3_give_seo_dain_affinity`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `lunch3_give_seo_dain_affinity`
+- 배경: `room_school.png`
+- 호감분기: Dain
+  - [35+] → `lunch3_give_seo_2`
+  - [15+] → `lunch3_give_seo_dain_mid`
+  - [기본] → `lunch3_give_seo_dain_low`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `lunch3_give_seo_dain_mid`
+- 배경: `room_school.png`
+- 스탯: Dain -2
+- 다음: `lunch3_give_seo_3_check`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 먹고 싶긴 했는데 괜찮아. 다음엔 내 것도 남겨 둬.
+
+---
+
+### `lunch3_give_seo_dain_low`
+- 배경: `room_school.png`
+- 스탯: Dain -1
+- 다음: `lunch3_give_seo_3_check`
+
+- 캐릭터: `dain_normal.png`
+**다인**: *다인은 자기 몫을 다 먹고 물병 뚜껑을 닫는다.* 난 배불러.
 
 ---
 
@@ -10251,7 +10538,7 @@
 
 ### `lunch3_seo_chase_dain_2b`
 - 배경: `room_school.png`
-- 다음: `lunch3_give_seo_3`
+- 다음: `lunch3_give_seo_3_check`
 
 - 캐릭터: `dain_sad.png`
 **{name}**: *교실로 돌아왔다.*
@@ -10269,10 +10556,55 @@
 
 ### `lunch3_seo_focus_2`
 - 배경: `room_school.png`
-- 다음: `lunch3_give_seo_3`
+- 다음: `lunch3_give_seo_3_check`
 
 - 캐릭터: `seyoun_normal.png`
 **서연**: 신경 쓰여?
+
+---
+
+### `lunch3_give_seo_3_check`
+- 배경: `room_school.png`
+- 분기:
+  - [`day3_has_multiple_dates`] → `lunch3_give_seo_3`
+  - [기본] → `lunch3_give_seo_yuna_affinity`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `lunch3_give_seo_yuna_affinity`
+- 배경: `room_school.png`
+- 호감분기: Yuna
+  - [35+] → `lunch3_give_seo_3`
+  - [15+] → `lunch3_give_seo_yuna_mid`
+  - [기본] → `lunch3_give_seo_yuna_low`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `lunch3_give_seo_yuna_mid`
+- 배경: `room_school.png`
+- 스탯: Yuna -2
+- 다음: `lunch3_end`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: *유나는 마지막 반찬을 보다가 빵 봉지를 접는다.* 다음에는 조금 남겨 줘.
+
+---
+
+### `lunch3_give_seo_yuna_low`
+- 배경: `room_school.png`
+- 스탯: Yuna -1
+- 다음: `lunch3_end`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: *유나는 별다른 표정 없이 빵을 마저 먹는다.*
 
 ---
 
@@ -10303,7 +10635,7 @@
 - 배경: `room_school.png`
 - 호감분기: Dain
   - [40+] → `lunch3_dain_skin_1`
-  - [기본] → `lunch3_give_dain_2`
+  - [기본] → `lunch3_give_dain_2_check`
 
 - 캐릭터: `dain_laugh.png`
 
@@ -10323,20 +10655,80 @@
 ### `lunch3_dain_skin_3`
 - 배경: `room_school.png`
 - 플래그: `day3_skinship_dain`
-- 다음: `lunch3_give_dain_2`
+- 다음: `lunch3_give_dain_2_check`
 
 - 캐릭터: `dain_shy.png`
 **다인**: 지금 거 카운트 아니야.
 
 ---
 
+### `lunch3_give_dain_2_check`
+- 배경: `room_school.png`
+- 분기:
+  - [`day3_has_multiple_dates`] → `lunch3_give_dain_2`
+  - [기본] → `lunch3_give_dain_seo_affinity`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `lunch3_give_dain_seo_affinity`
+- 배경: `room_school.png`
+- 호감분기: Seoyeon
+  - [35+] → `lunch3_give_dain_2`
+  - [15+] → `lunch3_give_dain_seo_mid`
+  - [기본] → `lunch3_give_dain_seo_low`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `lunch3_give_dain_seo_mid`
+- 배경: `room_school.png`
+- 스탯: Seoyeon -2
+- 다음: `lunch3_give_dain_3_check`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: *서연은 젓가락을 내려놓고 도시락 뚜껑을 맞춘다.* 다음엔 내 점수도 참고해.
+
+---
+
+### `lunch3_give_dain_seo_low`
+- 배경: `room_school.png`
+- 스탯: Seoyeon -1
+- 다음: `lunch3_give_dain_3_check`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: *서연은 남은 반찬을 정리하며 고개만 끄덕인다.*
+
+---
+
 ### `lunch3_give_dain_2`
 - 배경: `room_school.png`
 - 스탯: Seoyeon -3
-- 다음: `lunch3_dain_witness_1`
+- 분기:
+  - [`day3_has_multiple_dates`] → `lunch3_dain_witness_1`
+  - [기본] → `lunch3_give_dain_3_check`
 
 - 캐릭터: `seyoun_pout.png`
 **서연**: 참나. 내가 점수까지 매겨줬는데.
+
+---
+
+### `lunch3_give_dain_3_check`
+- 배경: `room_school.png`
+- 호감분기: Yuna
+  - [35+] → `lunch3_dain_witness_1`
+  - [15+] → `lunch3_give_dain_yuna_mid`
+  - [기본] → `lunch3_give_dain_yuna_low`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
 
 ---
 
@@ -10371,6 +10763,26 @@
 
 ---
 
+### `lunch3_give_dain_yuna_mid`
+- 배경: `room_school.png`
+- 스탯: Yuna -2
+- 다음: `lunch3_end`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: 다인한테 주는구나. 다음엔 나도 물어봐.
+
+---
+
+### `lunch3_give_dain_yuna_low`
+- 배경: `room_school.png`
+- 스탯: Yuna -1
+- 다음: `lunch3_end`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: *유나는 빵 봉지를 접고 물을 한 모금 마신다.*
+
+---
+
 ### `lunch3_give_yuna_1`
 - 배경: `room_school.png`
 - 플래그: `lunch3_gave_yuna`
@@ -10386,7 +10798,7 @@
 - 배경: `room_school.png`
 - 호감분기: Yuna
   - [40+] → `lunch3_yuna_skin_1`
-  - [기본] → `lunch3_give_yuna_2`
+  - [기본] → `lunch3_give_yuna_2_check`
 
 - 캐릭터: `yuna_normal.png`
 
@@ -10415,10 +10827,55 @@
 ### `lunch3_yuna_skin_3`
 - 배경: `room_school.png`
 - 플래그: `day3_skinship_yuna`
-- 다음: `lunch3_give_yuna_2`
+- 다음: `lunch3_give_yuna_2_check`
 
 - 캐릭터: `yuna_shy.png`
 **{name}**: *'그냥' 뒤에 더 붙는 말은 없다. 그제야 종이 끝에서 손이 떨어진다.*
+
+---
+
+### `lunch3_give_yuna_2_check`
+- 배경: `room_school.png`
+- 분기:
+  - [`day3_has_multiple_dates`] → `lunch3_give_yuna_2`
+  - [기본] → `lunch3_give_yuna_seo_affinity`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `lunch3_give_yuna_seo_affinity`
+- 배경: `room_school.png`
+- 호감분기: Seoyeon
+  - [35+] → `lunch3_give_yuna_2`
+  - [15+] → `lunch3_give_yuna_seo_mid`
+  - [기본] → `lunch3_give_yuna_seo_low`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `lunch3_give_yuna_seo_mid`
+- 배경: `room_school.png`
+- 스탯: Seoyeon -2
+- 다음: `lunch3_give_yuna_3_check`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 유나한테 주는구나. 알겠어.
+
+---
+
+### `lunch3_give_yuna_seo_low`
+- 배경: `room_school.png`
+- 스탯: Seoyeon -1
+- 다음: `lunch3_give_yuna_3_check`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: *서연은 자기 도시락을 정리한다.*
 
 ---
 
@@ -10443,10 +10900,45 @@
 
 ### `lunch3_yuna_witness_2`
 - 배경: `room_school.png`
-- 다음: `lunch3_give_yuna_3`
+- 분기:
+  - [`day3_has_multiple_dates`] → `lunch3_give_yuna_3`
+  - [기본] → `lunch3_give_yuna_3_check`
 
 - 캐릭터: `seyoun_normal.png`
 **{name}**: *유나는 컵 옆면을 손가락으로 한 번 두드리고 서연을 본다.*
+
+---
+
+### `lunch3_give_yuna_3_check`
+- 배경: `room_school.png`
+- 호감분기: Dain
+  - [35+] → `lunch3_give_yuna_3`
+  - [15+] → `lunch3_give_yuna_dain_mid`
+  - [기본] → `lunch3_give_yuna_dain_low`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `lunch3_give_yuna_dain_mid`
+- 배경: `room_school.png`
+- 스탯: Dain -2
+- 다음: `lunch3_end`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 뭐, 유나가 먼저 골랐으니까. 다음엔 내 차례.
+
+---
+
+### `lunch3_give_yuna_dain_low`
+- 배경: `room_school.png`
+- 스탯: Dain -1
+- 다음: `lunch3_end`
+
+- 캐릭터: `dain_normal.png`
+**다인**: *다인은 빈 물병을 가방에 넣는다.* 난 괜찮아.
 
 ---
 
@@ -10807,7 +11299,7 @@
 ### `after3_auto_dain`
 - 배경: `school_hallway.png`
 - 플래그: `route_dain`
-- 다음: `after3_reject_for_dain_1`
+- 다음: `after3_rivals_for_dain_start`
 
 - 캐릭터: `없음`
 **{name}**: *다인과 약속이 있다. 체육관으로 간다.*
@@ -10817,7 +11309,7 @@
 ### `after3_auto_yuna`
 - 배경: `school_hallway.png`
 - 플래그: `route_yuna`
-- 다음: `after3_reject_for_yuna_1`
+- 다음: `after3_rivals_for_yuna_start`
 
 - 캐릭터: `없음`
 **{name}**: *유나와 약속이 있다. 도서관 별관으로 간다.*
@@ -10827,7 +11319,7 @@
 ### `after3_auto_seo`
 - 배경: `school_hallway.png`
 - 플래그: `route_seoyeon`
-- 다음: `after3_reject_for_seo_1`
+- 다음: `after3_rivals_for_seo_start`
 
 - 캐릭터: `없음`
 **{name}**: *서연과 약속이 있다. 학생회실로 간다.*
@@ -10837,9 +11329,9 @@
 ### `after3_multi_choice`
 - 배경: `school_hallway.png`
 - 선택지:
-  1. "서연이에게" → `after3_reject_for_seo_1` | 플래그: `route_seoyeon`
-  2. "유나에게" → `after3_reject_for_yuna_1` | 플래그: `route_yuna`
-  3. "다인이에게" → `after3_reject_for_dain_1` | 플래그: `route_dain`
+  1. "서연이에게" → `after3_rivals_for_seo_start` | 플래그: `route_seoyeon`
+  2. "유나에게" → `after3_rivals_for_yuna_start` | 플래그: `route_yuna`
+  3. "다인이에게" → `after3_rivals_for_dain_start` | 플래그: `route_dain`
   4. "조금 더 생각한다" → `after3_choice`
 
 - 캐릭터: `없음`
@@ -10850,12 +11342,182 @@
 ### `after3_choice`
 - 배경: `school_hallway.png`
 - 선택지:
-  1. "학생회실로" → `after3_reject_for_seo_1` | 플래그: `route_seoyeon`
-  2. "도서관으로" → `after3_reject_for_yuna_1` | 플래그: `route_yuna`
-  3. "체육관으로" → `after3_reject_for_dain_1` | 플래그: `route_dain`
+  1. "학생회실로" → `after3_rivals_for_seo_start` | 플래그: `route_seoyeon`
+  2. "도서관으로" → `after3_rivals_for_yuna_start` | 플래그: `route_yuna`
+  3. "체육관으로" → `after3_rivals_for_dain_start` | 플래그: `route_dain`
+  4. "오늘은 그냥 집에 간다" → `after3_walk_home` | 플래그: `day3_kept_distance`
 
 - 캐릭터: `없음`
 **{name}**: *어디로 갈까.*
+
+---
+
+### `after3_walk_home`
+- 배경: `school_hallway.png`
+- 다음: `after3_final`
+
+- 캐릭터: `없음`
+**{name}**: *잡힌 약속은 없다. 휴대폰을 가방에 넣고 교문 쪽으로 걷는다.*
+
+---
+
+### `after3_rivals_for_seo_start`
+- 배경: `school_hallway.png`
+- 다음: `after3_rival_dain_check`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after3_rivals_for_yuna_start`
+- 배경: `school_hallway.png`
+- 다음: `after3_rival_seo_check`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after3_rivals_for_dain_start`
+- 배경: `school_hallway.png`
+- 다음: `after3_rival_seo_check`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after3_rival_seo_check`
+- 배경: `school_hallway.png`
+- 분기:
+  - [`accepted_seoyeon_date`] → `after3_rival_seo_promised_dispatch`
+  - [기본] → `after3_rival_seo_affinity`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after3_rival_seo_promised_dispatch`
+- 배경: `school_hallway.png`
+- 분기:
+  - [`route_yuna`] → `after3_reject_for_yuna_1`
+  - [`route_dain`] → `after3_reject_for_dain_1`
+  - [기본] → `after3_rival_seo_done`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after3_reject_for_yuna_1`
+- 배경: `school_hallway.png`
+- 다음: `after3_reject_for_yuna_2`
+
+- 캐릭터: `seyoun_normal.png`
+**{name}**: *복도에서 서연이 클립보드를 정리하고 있다. 페이지를 넘기는 손이 평소보다 빠르다.*
+
+---
+
+### `after3_reject_for_yuna_2`
+- 배경: `school_hallway.png`
+- 다음: `after3_rival_seo_done`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 학생회 일이 바빠서. 점심은 따로 먹을게. 오늘은.
+
+---
+
+### `after3_reject_for_dain_1`
+- 배경: `school_hallway.png`
+- 다음: `after3_reject_for_dain_2`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: *웃고 있다. 클립보드의 종이 모서리를 맞춘다.*
+
+---
+
+### `after3_reject_for_dain_2`
+- 배경: `school_hallway.png`
+- 다음: `after3_rival_seo_done`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 오늘은 할 일이 좀 있어서. 먼저 갈게.
+
+---
+
+### `after3_rival_seo_affinity`
+- 배경: `school_hallway.png`
+- 호감분기: Seoyeon
+  - [35+] → `after3_rival_seo_high`
+  - [15+] → `after3_rival_seo_mid`
+  - [기본] → `after3_rival_seo_done`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after3_rival_seo_high`
+- 배경: `school_hallway.png`
+- 다음: `after3_rival_seo_done`
+
+- 캐릭터: `seyoun_sad.png`
+**서연**: *서연은 갈림길 앞에서 걸음을 멈춘다. 가려는 방향을 확인하고 가방끈을 고쳐 잡는다.* 다른 데 가는구나.
+
+---
+
+### `after3_rival_seo_mid`
+- 배경: `school_hallway.png`
+- 다음: `after3_rival_seo_done`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 알겠어. 남은 일은 내가 정리할게.
+
+---
+
+### `after3_rival_seo_done`
+- 배경: `school_hallway.png`
+- 분기:
+  - [`route_yuna`] → `after3_rival_dain_check`
+  - [`route_dain`] → `after3_rival_yuna_check`
+  - [기본] → `after3_seo_affinity_check`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after3_rival_dain_check`
+- 배경: `school_hallway.png`
+- 분기:
+  - [`accepted_dain_date`] → `after3_rival_dain_promised_dispatch`
+  - [기본] → `after3_rival_dain_affinity`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after3_rival_dain_promised_dispatch`
+- 배경: `school_hallway.png`
+- 분기:
+  - [`route_seoyeon`] → `after3_reject_for_seo_1`
+  - [`route_yuna`] → `after3_reject_for_yuna_walk_gym`
+  - [기본] → `after3_rival_dain_done`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
 
 ---
 
@@ -10870,10 +11532,124 @@
 
 ### `after3_reject_for_seo_2`
 - 배경: `school_hallway.png`
-- 다음: `after3_reject_for_seo_3`
+- 다음: `after3_rival_dain_done`
 
 - 캐릭터: `dain_sad.png`
 **다인**: 오늘 체육관 안 올 거지?
+
+---
+
+### `after3_reject_for_yuna_walk_gym`
+- 배경: `gym.png`
+- 다음: `after3_reject_for_yuna_3`
+
+- 캐릭터: `없음`
+**{name}**: *체육관 쪽 복도로 방향을 튼다.*
+
+---
+
+### `after3_reject_for_yuna_3`
+- 배경: `gym.png`
+- 다음: `after3_reject_for_yuna_3_dain`
+
+- 캐릭터: `dain_sad.png`
+**다인**: *체육관에서 혼자 공을 치고 있다.*
+
+---
+
+### `after3_reject_for_yuna_3_dain`
+- 배경: `gym.png`
+- 다음: `after3_reject_for_yuna_3_react`
+
+- 캐릭터: `dain_sad.png`
+**다인**: 아, 안녕!
+
+---
+
+### `after3_reject_for_yuna_3_react`
+- 배경: `gym.png`
+- 다음: `after3_reject_for_yuna_4`
+
+- 캐릭터: `dain_sad.png`
+**{name}**: *인사에 손만 들고 얼굴은 돌린다. 쥔 책 모서리가 손바닥을 누른다.*
+
+---
+
+### `after3_reject_for_yuna_4`
+- 배경: `school_hallway.png`
+- 다음: `after3_rival_dain_done`
+
+- 캐릭터: `없음`
+**{name}**: *체육관을 나와 복도로 돌아왔다. 서연의 메시지는 읽음으로 남아 있고 다인의 답장은 없다.*
+
+---
+
+### `after3_rival_dain_affinity`
+- 배경: `school_hallway.png`
+- 호감분기: Dain
+  - [35+] → `after3_rival_dain_high`
+  - [15+] → `after3_rival_dain_mid`
+  - [기본] → `after3_rival_dain_done`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after3_rival_dain_high`
+- 배경: `school_hallway.png`
+- 다음: `after3_rival_dain_done`
+
+- 캐릭터: `dain_sad.png`
+**다인**: *다인은 묻던 말을 삼키고 체육관 표지판을 본다.* 다른 데 가는 거야? 알았어.
+
+---
+
+### `after3_rival_dain_mid`
+- 배경: `school_hallway.png`
+- 다음: `after3_rival_dain_done`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 오케이. 그럼 나 먼저 체육관 갈게.
+
+---
+
+### `after3_rival_dain_done`
+- 배경: `school_hallway.png`
+- 분기:
+  - [`route_seoyeon`] → `after3_rival_yuna_check`
+  - [`route_yuna`] → `after3_yuna_affinity_check`
+  - [기본] → `after3_dain_affinity_check`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after3_rival_yuna_check`
+- 배경: `library_old.png`
+- 분기:
+  - [`accepted_yuna_date`] → `after3_rival_yuna_promised_dispatch`
+  - [기본] → `after3_rival_yuna_affinity`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after3_rival_yuna_promised_dispatch`
+- 배경: `library_old.png`
+- 분기:
+  - [`route_seoyeon`] → `after3_reject_for_seo_3`
+  - [`route_dain`] → `after3_reject_for_dain_2b`
+  - [기본] → `after3_rival_yuna_done`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
 
 ---
 
@@ -10908,10 +11684,123 @@
 
 ### `after3_reject_for_seo_4`
 - 배경: `school_hallway.png`
-- 다음: `after3_seo_1`
+- 다음: `after3_rival_yuna_done`
 
 - 캐릭터: `없음`
 **{name}**: *복도로 나왔다. 다인의 문장 끝은 조용했고 유나의 자리는 비어 있었다. 손에 남은 쪽지만 접힌 자국대로 구겨졌다.*
+
+---
+
+### `after3_reject_for_dain_2b`
+- 배경: `yuna_hideout.png`
+- 다음: `after3_reject_for_dain_3`
+
+- 캐릭터: `없음`
+**{name}**: *유나의 아지트로 걸어간다.*
+
+---
+
+### `after3_reject_for_dain_3`
+- 배경: `library_old.png`
+- 다음: `after3_reject_for_dain_3b`
+
+- 캐릭터: `yuna_normal.png` @ 0.35
+**{name}**: *도서관에 쪽지가 없다. 유나의 가방도 없다. 자리에 미지근한 물 자국만 남아 있다.*
+
+---
+
+### `after3_reject_for_dain_3b`
+- 배경: `school_hallway.png`
+- 다음: `after3_rival_yuna_done`
+
+- 캐릭터: `없음`
+**{name}**: *복도로 돌아왔다. 바닥에 유나가 두고 간 물 자국이 남아 있다.*
+
+---
+
+### `after3_rival_yuna_affinity`
+- 배경: `library_old.png`
+- 호감분기: Yuna
+  - [35+] → `after3_rival_yuna_high`
+  - [15+] → `after3_rival_yuna_mid`
+  - [기본] → `after3_rival_yuna_done`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after3_rival_yuna_high`
+- 배경: `school_hallway.png`
+- 다음: `after3_rival_yuna_done`
+
+- 캐릭터: `yuna_sad.png`
+**유나**: *유나는 펼치려던 책을 도로 덮는다.* 다른 데 가는구나. 응, 알겠어.
+
+---
+
+### `after3_rival_yuna_mid`
+- 배경: `school_hallway.png`
+- 다음: `after3_rival_yuna_done`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: 알겠어. 난 도서관에 있을게.
+
+---
+
+### `after3_rival_yuna_done`
+- 배경: `school_hallway.png`
+- 분기:
+  - [`route_seoyeon`] → `after3_seo_affinity_check`
+  - [`route_dain`] → `after3_dain_affinity_check`
+  - [기본] → `after3_yuna_affinity_check`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after3_seo_affinity_check`
+- 배경: `student_room.png`
+- 호감분기: Seoyeon
+  - [40+] → `after3_seo_1`
+  - [15+] → `after3_seo_partial_1`
+  - [기본] → `after3_seo_low_1`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after3_seo_partial_1`
+- 배경: `student_room.png`
+- 다음: `after3_seo_partial_2`
+
+- 캐릭터: `seyoun_worried.png`
+**{name}**: *학생회실 문을 열자 서연이 바닥의 클립보드를 줍고 있다. 서연은 눈가를 한 번 닦고 의자를 바로 세운다.*
+
+---
+
+### `after3_seo_partial_2`
+- 배경: `student_room.png`
+- 플래그: `seoyeon_day3_partial`
+- 다음: `after3_seo_end`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 오늘은 혼자 정리할게. 대신 내일은 피하지 마.
+
+---
+
+### `after3_seo_low_1`
+- 배경: `student_room.png`
+- 플래그: `day3_kept_distance`
+- 다음: `after3_final`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: *서연은 문을 반쯤만 연 채 복도에 선다.* 지금은 혼자 있고 싶어. 내일 보자.
 
 ---
 
@@ -11243,66 +12132,45 @@
 
 ---
 
-### `after3_reject_for_yuna_1`
-- 배경: `school_hallway.png`
-- 다음: `after3_reject_for_yuna_2`
-
-- 캐릭터: `seyoun_normal.png`
-**{name}**: *복도에서 서연이 클립보드를 정리하고 있다. 페이지를 넘기는 손이 평소보다 빠르다.*
-
----
-
-### `after3_reject_for_yuna_2`
-- 배경: `school_hallway.png`
-- 다음: `after3_reject_for_yuna_walk_gym`
-
-- 캐릭터: `seyoun_normal.png`
-**서연**: 학생회 일이 바빠서. 점심은 따로 먹을게. 오늘은.
-
----
-
-### `after3_reject_for_yuna_walk_gym`
-- 배경: `gym.png`
-- 다음: `after3_reject_for_yuna_3`
+### `after3_yuna_affinity_check`
+- 배경: `yuna_hideout.png`
+- 호감분기: Yuna
+  - [40+] → `after3_yuna_1`
+  - [15+] → `after3_yuna_partial_1`
+  - [기본] → `after3_yuna_low_1`
 
 - 캐릭터: `없음`
-**{name}**: *체육관 쪽 복도로 방향을 튼다.*
+
+<!-- i18n -->
 
 ---
 
-### `after3_reject_for_yuna_3`
-- 배경: `gym.png`
-- 다음: `after3_reject_for_yuna_3_dain`
+### `after3_yuna_partial_1`
+- 배경: `yuna_hideout.png`
+- 다음: `after3_yuna_partial_2`
 
-- 캐릭터: `dain_sad.png`
-**다인**: *체육관에서 혼자 공을 치고 있다.*
-
----
-
-### `after3_reject_for_yuna_3_dain`
-- 배경: `gym.png`
-- 다음: `after3_reject_for_yuna_3_react`
-
-- 캐릭터: `dain_sad.png`
-**다인**: 아, 안녕!
+- 캐릭터: `yuna_normal.png`
+**{name}**: *별관 문은 열려 있지만 유나는 책을 펼치지 않는다. 맞은편 의자를 한 번 봤다가 책상 안으로 밀어 넣는다.*
 
 ---
 
-### `after3_reject_for_yuna_3_react`
-- 배경: `gym.png`
-- 다음: `after3_reject_for_yuna_4`
+### `after3_yuna_partial_2`
+- 배경: `yuna_hideout.png`
+- 플래그: `yuna_day3_partial`
+- 다음: `after3_yuna_end`
 
-- 캐릭터: `dain_sad.png`
-**{name}**: *인사에 손만 들고 얼굴은 돌린다. 쥔 책 모서리가 손바닥을 누른다.*
+- 캐릭터: `yuna_shy.png`
+**유나**: 오늘은 여기까지만. 다음에는 내가 먼저 부를게.
 
 ---
 
-### `after3_reject_for_yuna_4`
-- 배경: `school_hallway.png`
-- 다음: `after3_yuna_1`
+### `after3_yuna_low_1`
+- 배경: `yuna_hideout.png`
+- 플래그: `day3_kept_distance`
+- 다음: `after3_final`
 
-- 캐릭터: `없음`
-**{name}**: *체육관을 나와 복도로 돌아왔다. 서연의 메시지는 읽음으로 남아 있고 다인의 답장은 없다.*
+- 캐릭터: `yuna_normal.png`
+**유나**: *별관 문 앞에서 유나가 가방을 멘다.* 오늘은 혼자 있을래. 먼저 갈게.
 
 ---
 
@@ -11634,48 +12502,45 @@
 
 ---
 
-### `after3_reject_for_dain_1`
-- 배경: `school_hallway.png`
-- 다음: `after3_reject_for_dain_2`
-
-- 캐릭터: `seyoun_normal.png`
-**서연**: *웃고 있다. 클립보드의 종이 모서리를 맞춘다.*
-
----
-
-### `after3_reject_for_dain_2`
-- 배경: `school_hallway.png`
-- 다음: `after3_reject_for_dain_2b`
-
-- 캐릭터: `seyoun_normal.png`
-**서연**: 오늘은 할 일이 좀 있어서. 먼저 갈게.
-
----
-
-### `after3_reject_for_dain_2b`
-- 배경: `yuna_hideout.png`
-- 다음: `after3_reject_for_dain_3`
+### `after3_dain_affinity_check`
+- 배경: `gym.png`
+- 호감분기: Dain
+  - [40+] → `after3_dain_1`
+  - [15+] → `after3_dain_partial_1`
+  - [기본] → `after3_dain_low_1`
 
 - 캐릭터: `없음`
-**{name}**: *유나의 아지트로 걸어간다.*
+
+<!-- i18n -->
 
 ---
 
-### `after3_reject_for_dain_3`
-- 배경: `library_old.png`
-- 다음: `after3_reject_for_dain_3b`
+### `after3_dain_partial_1`
+- 배경: `gym.png`
+- 다음: `after3_dain_partial_2`
 
-- 캐릭터: `yuna_normal.png` @ 0.35
-**{name}**: *도서관에 쪽지가 없다. 유나의 가방도 없다. 자리에 미지근한 물 자국만 남아 있다.*
+- 캐릭터: `dain_sweat.png`
+**{name}**: *체육관 안에서 다인이 무릎 보호대를 고쳐 찬다. 일어서려다 다시 벤치에 앉는다.*
 
 ---
 
-### `after3_reject_for_dain_3b`
-- 배경: `school_hallway.png`
-- 다음: `after3_dain_1`
+### `after3_dain_partial_2`
+- 배경: `gym.png`
+- 플래그: `dain_day3_partial`
+- 다음: `after3_dain_end_first`
 
-- 캐릭터: `없음`
-**{name}**: *복도로 돌아왔다. 바닥에 유나가 두고 간 물 자국이 남아 있다.*
+- 캐릭터: `dain_normal.png`
+**다인**: 좀 쉬면 돼. 오늘은 먼저 가. 내일 보자.
+
+---
+
+### `after3_dain_low_1`
+- 배경: `gym.png`
+- 플래그: `day3_kept_distance`
+- 다음: `after3_final`
+
+- 캐릭터: `dain_normal.png`
+**다인**: *다인은 체육관 문을 잡은 채 안으로 들어가지 않는다.* 오늘은 혼자 연습할게. 학교에서 보자.
 
 ---
 
@@ -14982,6 +15847,8 @@
 ### `morning4_end`
 - 배경: `room_my.png`
 - 분기:
+  - [`day3_caught_multiple_dates`] → `day4_caught_fallout_1`
+  - [`harem_seed`] → `day4_harem_fallout_1`
   - [`route_dain`] → `date_dain_1`
   - [`route_yuna`] → `date_yuna_1`
   - [`route_seoyeon`] → `date_seo_1`
@@ -15001,10 +15868,42 @@
 - 배경: `park.png`
 - BGM: `date.mp3`
 - 조건: `route_seoyeon`
-- 다음: `date_seo_compliment_choice`
+- 다음: `date_seo_tier_check`
 
 - 캐릭터: `seyoun_normal.png`
 **{name}**: *분수대 앞에 서연이 먼저 와 있다. 클립보드는 없고 가방끈만 손가락에 감겨 있다.*
+
+---
+
+### `date_seo_tier_check`
+- 배경: `park.png`
+- 호감분기: Seoyeon
+  - [60+] → `date_seo_high_1`
+  - [40+] → `date_seo_compliment_choice`
+  - [15+] → `date_seo_tentative_1`
+- 다음: `date_seo_tentative_1`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `date_seo_high_1`
+- 배경: `park.png`
+- 다음: `date_seo_high_2`
+
+- 캐릭터: `seyoun_laugh.png`
+**서연**: 첫날 메모 기억하지? 오늘은 계획 바뀌어도 괜찮아. 네가 가고 싶은 데부터 가자.
+
+---
+
+### `date_seo_high_2`
+- 배경: `park.png`
+- 다음: `date_seo_compliment_choice`
+
+- 캐릭터: `seyoun_shy.png`
+**{name}**: *서연은 접어 둔 일정표를 가방 안에 넣는다. 가방끈을 놓고 먼저 공원 안쪽으로 걷는다.*
 
 ---
 
@@ -15231,14 +16130,74 @@
 
 ---
 
+### `date_seo_tentative_1`
+- 배경: `park.png`
+- 다음: `date_seo_tentative_2`
+
+- 캐릭터: `seyoun_normal.png`
+**{name}**: *공원을 한 바퀴 도는 동안 서연은 다음 주 일정만 이야기한다. 벤치 앞에서 걸음을 멈춘다.*
+
+---
+
+### `date_seo_tentative_2`
+- 배경: `park.png`
+- 다음: `date_seo_tentative_3`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 오늘은 이 정도가 좋겠다. 학교에서는 피하지 않을게.
+
+---
+
+### `date_seo_tentative_3`
+- 배경: `street.png`
+- 플래그: `day4_waited`, `day4_tentative_seoyeon`
+- 다음: `day4_night_start`
+
+- 캐릭터: `없음`
+**{name}**: *다음 약속은 잡지 않은 채 역 앞에서 헤어진다.*
+
+---
+
 ### `date_yuna_1`
 - 배경: `cafe.png`
 - BGM: `night1.mp3`
 - 조건: `route_yuna`
-- 다음: `date_yuna_compliment_choice`
+- 다음: `date_yuna_tier_check`
 
 - 캐릭터: `yuna_normal.png`
 **{name}**: *카페 앞. 유나가 벽에 기대어 서 있다. 검은 원피스에 작은 크로스백. 교복이 없으니 타투의 선이 먼저 눈에 들어온다.*
+
+---
+
+### `date_yuna_tier_check`
+- 배경: `cafe.png`
+- 호감분기: Yuna
+  - [60+] → `date_yuna_high_1`
+  - [40+] → `date_yuna_compliment_choice`
+  - [15+] → `date_yuna_tentative_1`
+- 다음: `date_yuna_tentative_1`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `date_yuna_high_1`
+- 배경: `cafe.png`
+- 다음: `date_yuna_high_2`
+
+- 캐릭터: `yuna_smile.png`
+**유나**: *유나는 책갈피 두 장을 테이블에 나란히 놓는다.* 끝나고 같이 골라. 다음에 읽을 책에 쓸 거야.
+
+---
+
+### `date_yuna_high_2`
+- 배경: `cafe.png`
+- 다음: `date_yuna_compliment_choice`
+
+- 캐릭터: `yuna_shy.png`
+**유나**: 다음에도 같이 읽자는 뜻이야. 그건 써 둬도 돼.
 
 ---
 
@@ -15501,14 +16460,74 @@
 
 ---
 
+### `date_yuna_tentative_1`
+- 배경: `cafe.png`
+- 다음: `date_yuna_tentative_2`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: 오늘은 책 얘기만 하자.
+
+---
+
+### `date_yuna_tentative_2`
+- 배경: `cafe.png`
+- 다음: `date_yuna_tentative_3`
+
+- 캐릭터: `yuna_normal.png`
+**{name}**: *대화는 이어지지만 유나는 가방 속 오래된 책을 꺼내지 않는다. 커피가 반쯤 남았을 때 시계를 본다.*
+
+---
+
+### `date_yuna_tentative_3`
+- 배경: `street.png`
+- 플래그: `day4_waited`, `day4_tentative_yuna`
+- 다음: `day4_night_start`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: 다음에는 내가 먼저 연락할게. 오늘은 여기까지.
+
+---
+
 ### `date_dain_1`
 - 배경: `gym.png`
 - BGM: `daily2.mp3`
 - 조건: `route_dain`
-- 다음: `date_dain_2`
+- 다음: `date_dain_tier_check`
 
 - 캐릭터: `dain_laugh.png`
 **{name}**: *체육관 앞. 다인이 뛰어온다. 캡모자에 운동복.*
+
+---
+
+### `date_dain_tier_check`
+- 배경: `gym.png`
+- 호감분기: Dain
+  - [60+] → `date_dain_high_1`
+  - [40+] → `date_dain_2`
+  - [15+] → `date_dain_tentative_1`
+- 다음: `date_dain_tentative_1`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `date_dain_high_1`
+- 배경: `gym.png`
+- 다음: `date_dain_high_2`
+
+- 캐릭터: `dain_laugh.png`
+**다인**: 다음 주에도 시간 비워. 오늘 재밌으면 또 올 거니까.
+
+---
+
+### `date_dain_high_2`
+- 배경: `gym.png`
+- 다음: `date_dain_2`
+
+- 캐릭터: `dain_shy.png`
+**다인**: *체육관 문을 열고 손목 밴드 하나를 내민다.* 오늘은 네가 먼저 골라.
 
 ---
 
@@ -15814,6 +16833,109 @@
 
 - 캐릭터: `minsu_smirk.png`
 **{name}**: *주머니 속 핸드폰 모서리가 손바닥에 눌린다. 알림은 없고 화면에는 검은 유리만 비친다.*
+
+---
+
+### `date_dain_tentative_1`
+- 배경: `gym.png`
+- 다음: `date_dain_tentative_2`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 오늘은 오래 놀지 말자. 무릎도 좀 쉬어야 하고.
+
+---
+
+### `date_dain_tentative_2`
+- 배경: `gym.png`
+- 다음: `date_dain_tentative_3`
+
+- 캐릭터: `dain_normal.png`
+**{name}**: *자판기 앞에서 음료 하나씩 마신다. 다인은 체육관 문을 열지 않고 가방끈만 고쳐 멘다.*
+
+---
+
+### `date_dain_tentative_3`
+- 배경: `street.png`
+- 플래그: `day4_waited`, `day4_tentative_dain`
+- 다음: `day4_night_start`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 학교에서 봐. 다음 약속은 그때 정하자.
+
+---
+
+### `day4_caught_fallout_1`
+- 배경: `room_my.png`
+- BGM: `night2.mp3`
+- 다음: `day4_caught_fallout_2`
+
+- 캐릭터: `없음`
+**{name}**: *휴대폰 화면에 세 대화방이 나란히 떠 있다. 전날 보낸 사과는 모두 읽음에서 멈췄다.*
+
+---
+
+### `day4_caught_fallout_2`
+- 배경: `room_my.png`
+- 다음: `day4_caught_fallout_3`
+
+- 캐릭터: `seyoun_sad.png` @ 0.35
+**서연**: 당분간 따로 연락하지 마. 필요한 얘기는 단체방에서 할게.
+
+---
+
+### `day4_caught_fallout_3`
+- 배경: `room_my.png`
+- 다음: `day4_caught_fallout_4`
+
+- 캐릭터: `없음`
+**{name}**: *잠시 뒤 유나가 대화방을 나가고 다인은 약속 일정을 취소한다. 준비해 둔 외출복을 다시 옷걸이에 건다.*
+
+---
+
+### `day4_caught_fallout_4`
+- 배경: `room_my.png`
+- 플래그: `day4_caught_fallout_seen`
+- 다음: `morning5_start`
+
+- 캐릭터: `없음`
+**{name}**: *밖으로 나가지 않는다. 해가 기울 때까지 단체방 알림도 울리지 않는다.*
+
+---
+
+### `day4_harem_fallout_1`
+- 배경: `cafe.png`
+- BGM: `night2.mp3`
+- 다음: `day4_harem_fallout_2`
+
+- 캐릭터: `없음`
+**{name}**: *세 사람이 있는 단체방에 서연의 메시지가 먼저 올라온다. '오늘은 따로 만나지 말고 모두 같이 얘기하자.'*
+
+---
+
+### `day4_harem_fallout_2`
+- 배경: `cafe.png`
+- 다음: `day4_harem_fallout_3`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 누구 하나 고르라는 말은 안 할게. 대신 지금처럼 각각 기대하게 두진 마.
+
+---
+
+### `day4_harem_fallout_3`
+- 배경: `cafe.png`
+- 다음: `day4_harem_fallout_4`
+
+**{name}**: *유나는 시간을 갖겠다고 말하고 다인은 그동안 따로 만나지 않겠다고 덧붙인다. 셋의 컵은 그대로 놓여 있다.*
+
+---
+
+### `day4_harem_fallout_4`
+- 배경: `street.png`
+- 플래그: `day4_harem_fallout_seen`, `day4_waited`
+- 다음: `morning5_start`
+
+- 캐릭터: `없음`
+**{name}**: 알겠어. 정리할 때까지 누구에게도 따로 연락하지 않을게.
 
 ---
 
@@ -19303,6 +20425,8 @@
 ### `morning5_start_branch`
 - 배경: `room_school.png`
 - 분기:
+  - [`day3_caught_multiple_dates`] → `morning5_caught_fallout_1`
+  - [`harem_seed`] → `morning5_harem_fallout_1`
   - [`day4_counteroffer_penalty_deferred`] → `morning5_temptation_counteroffer_branch`
   - [`day4_confession_accepted`] → `morning5_temptation_discovery_branch`
   - [기본] → `morning5_start_b`
@@ -19310,6 +20434,61 @@
 - 캐릭터: `없음`
 
 <!-- i18n -->
+
+---
+
+### `morning5_caught_fallout_1`
+- 배경: `room_school.png`
+- 다음: `morning5_caught_fallout_2`
+
+- 캐릭터: `없음`
+**{name}**: *행사 시작 전 교실. 세 사람의 자리는 서로 떨어져 있다. 책상 위 역할표에는 필요한 업무만 적혀 있다.*
+
+---
+
+### `morning5_caught_fallout_2`
+- 배경: `room_school.png`
+- 다음: `morning5_caught_fallout_3`
+
+**{name}**: *유나는 안내 책자를 들고 먼저 나가고 다인은 반대편 문으로 향한다. 서연은 출석표를 챙긴 뒤 이쪽을 보지 않는다.*
+
+---
+
+### `morning5_caught_fallout_3`
+- 배경: `school_hallway.png`
+- 플래그: `day5_caught_fallout_seen`
+- 다음: `ending_start`
+
+- 캐릭터: `없음`
+**{name}**: *행사가 끝날 때까지 셋과 나눈 말은 업무 확인뿐이다. 마지막 종이 울리자 각자 다른 계단으로 내려간다.*
+
+---
+
+### `morning5_harem_fallout_1`
+- 배경: `room_school.png`
+- 다음: `morning5_harem_fallout_2`
+
+- 캐릭터: `없음`
+**{name}**: *행사 동안 세 사람은 필요한 말만 단체방에 남긴다. 개인 대화방에는 새 메시지가 없다.*
+
+---
+
+### `morning5_harem_fallout_2`
+- 배경: `room_school.png`
+- 다음: `morning5_harem_fallout_3`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 오늘 끝나도 따로 만나진 말자. 우리끼리 정한 거, 지켜.
+
+---
+
+### `morning5_harem_fallout_3`
+- 배경: `school_hallway.png`
+- 플래그: `morning5_harem_fallout_seen`, `ending_harem`
+- 다음: `ending_start`
+
+- 캐릭터: `없음`
+**{name}**: *고개를 끄덕인다. 세 사람은 함께 교문을 나가고 나는 잠시 뒤 혼자 따라 나간다.*
 
 ---
 
@@ -19702,7 +20881,7 @@
 - 다음: `morning5_gate`
 
 - 캐릭터: `없음`
-**{name}**: 마지막 날이다. 주머니 속 옥상 열쇠가 걸을 때마다 손등에 닿는다.
+**{name}**: *마지막 날이다. 교실 문을 열기 전, 지난 나흘 동안 오간 말들을 한 번씩 떠올린다.*
 
 ---
 
@@ -21093,10 +22272,41 @@
 ### `tour_seo_1`
 - 배경: `school.png`
 - BGM: `sunset1.mp3`
-- 다음: `tour_seo_event_1`
+- 다음: `tour_seo_affinity_check`
 
 - 캐릭터: `seyoun_normal.png`
 **{name}**: *교문 앞에 나란히 선다. 첫날 서연이 기다리고 있던 바로 그 자리.*
+
+---
+
+### `tour_seo_affinity_check`
+- 배경: `school.png`
+- 호감분기: Seoyeon
+  - [80+] → `tour_seo_affinity_80`
+  - [60+] → `tour_seo_affinity_60`
+  - [기본] → `tour_seo_event_1`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `tour_seo_affinity_80`
+- 배경: `school.png`
+- 다음: `tour_seo_affinity_60`
+
+- 캐릭터: `seyoun_shy.png`
+**서연**: 다음 주 일정표 첫 칸 비워 뒀어. 네가 시간 정해.
+
+---
+
+### `tour_seo_affinity_60`
+- 배경: `school.png`
+- 다음: `tour_seo_event_1`
+
+- 캐릭터: `seyoun_laugh.png`
+**서연**: 끝나고 옥상에도 들르자. 오늘은 내가 먼저 기다릴게.
 
 ---
 
@@ -21296,7 +22506,7 @@
 
 ### `tour_yuna_1`
 - 배경: `yuna_hideout.png`
-- 다음: `tour_yuna_event_1`
+- 다음: `tour_yuna_affinity_check`
 
 - 캐릭터: `yuna_normal.png`
 **{name}**: *도서관 별관. 창문 틈의 오후 빛이 낡은 소파 한쪽에 걸려 있다. 처음 들어왔을 때와 같은 먼지 냄새가 난다.*
@@ -21305,10 +22515,41 @@
 
 ### `tour_yuna_1b`
 - 배경: `yuna_hideout.png`
-- 다음: `tour_yuna_event_1`
+- 다음: `tour_yuna_affinity_check`
 
 - 캐릭터: `yuna_normal.png`
 **{name}**: *도서관 별관. 유나와 책을 읽던 낡은 소파에 창문 틈의 오후 빛이 걸려 있다.*
+
+---
+
+### `tour_yuna_affinity_check`
+- 배경: `yuna_hideout.png`
+- 호감분기: Yuna
+  - [80+] → `tour_yuna_affinity_80`
+  - [60+] → `tour_yuna_affinity_60`
+  - [기본] → `tour_yuna_event_1`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `tour_yuna_affinity_80`
+- 배경: `yuna_hideout.png`
+- 다음: `tour_yuna_affinity_60`
+
+- 캐릭터: `yuna_shy.png`
+**유나**: 다음 편 첫 독자도 네 자리야. 끝나면 날짜를 적어 두자.
+
+---
+
+### `tour_yuna_affinity_60`
+- 배경: `yuna_hideout.png`
+- 다음: `tour_yuna_event_1`
+
+- 캐릭터: `yuna_smile.png`
+**유나**: 오늘 보여줄 마지막 장, 네가 먼저 읽어.
 
 ---
 
@@ -21491,7 +22732,7 @@
 ### `tour_dain_1`
 - 배경: `gym.png`
 - 배경톤: `lights-off`
-- 다음: `tour_dain_event_1`
+- 다음: `tour_dain_affinity_check`
 
 - 캐릭터: `없음`
 **{name}**: *체육관. 첫 내기를 했던 라인 옆에 어젯밤 정리한 공 보관함이 있다. 오늘은 불이 켜져 있다.*
@@ -21501,10 +22742,41 @@
 ### `tour_dain_1b`
 - 배경: `gym.png`
 - 배경톤: `lights-off`
-- 다음: `tour_dain_event_1`
+- 다음: `tour_dain_affinity_check`
 
 - 캐릭터: `없음`
 **{name}**: *체육관. 오늘은 불이 켜져 있다.*
+
+---
+
+### `tour_dain_affinity_check`
+- 배경: `gym.png`
+- 호감분기: Dain
+  - [80+] → `tour_dain_affinity_80`
+  - [60+] → `tour_dain_affinity_60`
+  - [기본] → `tour_dain_event_1`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `tour_dain_affinity_80`
+- 배경: `gym.png`
+- 다음: `tour_dain_affinity_60`
+
+- 캐릭터: `dain_shy.png`
+**다인**: 다음 경기 해설 연습할 때도 와. 날짜는 내가 보낼게.
+
+---
+
+### `tour_dain_affinity_60`
+- 배경: `gym.png`
+- 다음: `tour_dain_event_1`
+
+- 캐릭터: `dain_laugh.png`
+**다인**: 방송 부스부터 갈래? 오늘은 네가 첫 청취자 해.
 
 ---
 
@@ -23172,7 +24444,7 @@
 ### `ending_confessed_aff_seo`
 - 배경: `top_school.png`
 - 호감분기: Seoyeon
-  - [40+] → `day5_ending_good`
+  - [50+] → `day5_ending_good`
 - 다음: `day5_ending_confess_fail`
 
 - 캐릭터: `없음`
@@ -23183,7 +24455,7 @@
 ### `ending_confessed_aff_yuna`
 - 배경: `yuna_hideout.png`
 - 호감분기: Yuna
-  - [40+] → `day5_ending_good`
+  - [50+] → `day5_ending_good`
 - 다음: `day5_ending_confess_fail`
 
 - 캐릭터: `없음`
@@ -23194,7 +24466,7 @@
 ### `ending_confessed_aff_dain`
 - 배경: `gym.png`
 - 호감분기: Dain
-  - [40+] → `day5_ending_good`
+  - [50+] → `day5_ending_good`
 - 다음: `day5_ending_confess_fail`
 
 - 캐릭터: `없음`

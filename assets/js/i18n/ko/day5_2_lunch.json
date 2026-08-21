@@ -315,5 +315,14 @@
     "tour_dain_event_5": {
         "name": "다인",
         "text": "*마이크를 끄고 체육관으로 내려가며 숨을 고른다.* 뛰지 않아도 할 말은 있네. 생각보다 많아."
-    }
+    },
+    "tour_seo_affinity_check": {},
+    "tour_seo_affinity_80": {"name":"서연","text":"다음 주 일정표 첫 칸 비워 뒀어. 네가 시간 정해."},
+    "tour_seo_affinity_60": {"name":"서연","text":"끝나고 옥상에도 들르자. 오늘은 내가 먼저 기다릴게."},
+    "tour_yuna_affinity_check": {},
+    "tour_yuna_affinity_80": {"name":"유나","text":"다음 편 첫 독자도 네 자리야. 끝나면 날짜를 적어 두자."},
+    "tour_yuna_affinity_60": {"name":"유나","text":"오늘 보여줄 마지막 장, 네가 먼저 읽어."},
+    "tour_dain_affinity_check": {},
+    "tour_dain_affinity_80": {"name":"다인","text":"다음 경기 해설 연습할 때도 와. 날짜는 내가 보낼게."},
+    "tour_dain_affinity_60": {"name":"다인","text":"방송 부스부터 갈래? 오늘은 네가 첫 청취자 해."}
 }

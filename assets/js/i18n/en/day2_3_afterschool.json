@@ -248,6 +248,30 @@
         "name": "Dain",
         "text": "*She pushes the tteokbokki toward {name} and shakes the empty water bottle upside down.*"
     },
+    "after2_dain_rival_seo_high": {
+        "name": "{name}",
+        "text": "*Beyond the snack bar window, Seoyeon stops. After seeing the two tteokbokki cups on the table, she sends a short message. 'So you were at the gym today. Stop by the student council room next time, too.'*"
+    },
+    "after2_dain_rival_seo_mid": {
+        "name": "{name}",
+        "text": "*Seoyeon passes the snack bar and looks at the table. She squares the edges of her clipboard twice, then heads for the school gate.*"
+    },
+    "after2_dain_rival_seo_low": {
+        "name": "{name}",
+        "text": "*As Seoyeon passes the snack bar, she nods to both of us without breaking stride.*"
+    },
+    "after2_dain_rival_yuna_high": {
+        "name": "{name}",
+        "text": "*Yuna looks through the snack bar window. She puts the folded note in her hand back into her pocket and turns away.*"
+    },
+    "after2_dain_rival_yuna_mid": {
+        "name": "{name}",
+        "text": "*Passing the snack bar, Yuna starts to remove one earbud, sees our table, and puts it back in.*"
+    },
+    "after2_dain_rival_yuna_low": {
+        "name": "{name}",
+        "text": "*Yuna gives us one nod through the window and continues toward the annex.*"
+    },
     "after2_dain_return": {
         "name": "{name}",
         "text": "*On the way back to school, we reach the front gate.*"
@@ -467,6 +491,30 @@
         "name": "{name}",
         "text": "*I leave the student council room and head toward the front gate.*"
     },
+    "after2_seo_rival_dain_high": {
+        "name": "Dain",
+        "text": "*Pushing a cart of gym balls, Dain sees us at the end of the hall.* Student council work took a while. *She grips the handle and turns away first.*"
+    },
+    "after2_seo_rival_dain_mid": {
+        "name": "Dain",
+        "text": "*She stops the ball cart.* Done? *She glances at Seoyeon, then pushes the cart back toward the gym.*"
+    },
+    "after2_seo_rival_dain_low": {
+        "name": "Dain",
+        "text": "Good work! *She waves over the ball cart and heads toward the gym.*"
+    },
+    "after2_seo_rival_yuna_high": {
+        "name": "{name}",
+        "text": "*Reading on the stair landing, Yuna closes her book when she hears us. She pulls out the note tucked between the pages and folds it in half.*"
+    },
+    "after2_seo_rival_yuna_mid": {
+        "name": "{name}",
+        "text": "*Yuna's hand stops on the page. She shifts aside to let us pass, then opens the book again.*"
+    },
+    "after2_seo_rival_yuna_low": {
+        "name": "{name}",
+        "text": "*Yuna steps aside on the landing and gives us a brief nod.*"
+    },
     "after2_yuna_1": {
         "name": "{name}",
         "text": "*No message from Yuna. Still, my feet head toward the library. The folded note in my pocket brushes against the back of my hand with every step.*"
@@ -570,7 +618,7 @@
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "*Dain's 'I was waiting?' and Seoyeon's 'Tell me if your plans change' are waiting on my phone. One earbud remains on the seat where Yuna and I sat side by side.*"
+        "text": "*One earbud remains on the seat where Yuna and I sat side by side. Before leaving the annex, I turn on my phone.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",
@@ -587,6 +635,30 @@
     "after2_yuna_return": {
         "name": "{name}",
         "text": "*When I leave the library annex, the hall's automatic lights come on.*"
+    },
+    "after2_yuna_rival_dain_high": {
+        "name": "Dain",
+        "text": "I told you to come to the gym, and you went to the annex. Come my way next time, too."
+    },
+    "after2_yuna_rival_dain_mid": {
+        "name": "Dain",
+        "text": "You were at the library? Stop by the gym tomorrow."
+    },
+    "after2_yuna_rival_dain_low": {
+        "name": "Dain",
+        "text": "You were near the library? See you tomorrow!"
+    },
+    "after2_yuna_rival_seo_high": {
+        "name": "Seoyeon",
+        "text": "So you were in the annex. Stop by the student council room next time, too."
+    },
+    "after2_yuna_rival_seo_mid": {
+        "name": "Seoyeon",
+        "text": "You were in the annex. I finished today's work. See you tomorrow."
+    },
+    "after2_yuna_rival_seo_low": {
+        "name": "Seoyeon",
+        "text": "I found enough help. See you tomorrow."
     },
     "after2_group_seoyeon_companion": {
         "name": "Seoyeon and companion",

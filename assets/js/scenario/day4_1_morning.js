@@ -840,6 +840,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "branches": [
+            { "condition": "day3_caught_multiple_dates", "next": "day4_caught_fallout_1" },
+            { "condition": "harem_seed", "next": "day4_harem_fallout_1" },
             { "condition": "route_dain", "next": "date_dain_1" },
             { "condition": "route_yuna", "next": "date_yuna_1" },
             { "condition": "route_seoyeon", "next": "date_seo_1" },

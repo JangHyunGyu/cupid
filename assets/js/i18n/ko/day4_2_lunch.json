@@ -378,5 +378,31 @@
     "date_yuna_trap": {
         "name": "유나",
         "text": "평소에는 말 걸기 불편했나 보네."
-    }
+    },
+    "date_seo_tier_check": {},
+    "date_seo_high_1": {"name":"서연","text":"첫날 메모 기억하지? 오늘은 계획 바뀌어도 괜찮아. 네가 가고 싶은 데부터 가자."},
+    "date_seo_high_2": {"name":"{name}","text":"*서연은 접어 둔 일정표를 가방 안에 넣는다. 가방끈을 놓고 먼저 공원 안쪽으로 걷는다.*"},
+    "date_seo_tentative_1": {"name":"{name}","text":"*공원을 한 바퀴 도는 동안 서연은 다음 주 일정만 이야기한다. 벤치 앞에서 걸음을 멈춘다.*"},
+    "date_seo_tentative_2": {"name":"서연","text":"오늘은 이 정도가 좋겠다. 학교에서는 피하지 않을게."},
+    "date_seo_tentative_3": {"name":"{name}","text":"*다음 약속은 잡지 않은 채 역 앞에서 헤어진다.*"},
+    "date_yuna_tier_check": {},
+    "date_yuna_high_1": {"name":"유나","text":"*유나는 책갈피 두 장을 테이블에 나란히 놓는다.* 끝나고 같이 골라. 다음에 읽을 책에 쓸 거야."},
+    "date_yuna_high_2": {"name":"유나","text":"다음에도 같이 읽자는 뜻이야. 그건 써 둬도 돼."},
+    "date_yuna_tentative_1": {"name":"유나","text":"오늘은 책 얘기만 하자."},
+    "date_yuna_tentative_2": {"name":"{name}","text":"*대화는 이어지지만 유나는 가방 속 오래된 책을 꺼내지 않는다. 커피가 반쯤 남았을 때 시계를 본다.*"},
+    "date_yuna_tentative_3": {"name":"유나","text":"다음에는 내가 먼저 연락할게. 오늘은 여기까지."},
+    "date_dain_tier_check": {},
+    "date_dain_high_1": {"name":"다인","text":"다음 주에도 시간 비워. 오늘 재밌으면 또 올 거니까."},
+    "date_dain_high_2": {"name":"다인","text":"*체육관 문을 열고 손목 밴드 하나를 내민다.* 오늘은 네가 먼저 골라."},
+    "date_dain_tentative_1": {"name":"다인","text":"오늘은 오래 놀지 말자. 무릎도 좀 쉬어야 하고."},
+    "date_dain_tentative_2": {"name":"{name}","text":"*자판기 앞에서 음료 하나씩 마신다. 다인은 체육관 문을 열지 않고 가방끈만 고쳐 멘다.*"},
+    "date_dain_tentative_3": {"name":"다인","text":"학교에서 봐. 다음 약속은 그때 정하자."},
+    "day4_caught_fallout_1": {"name":"{name}","text":"*휴대폰 화면에 세 대화방이 나란히 떠 있다. 전날 보낸 사과는 모두 읽음에서 멈췄다.*"},
+    "day4_caught_fallout_2": {"name":"서연","text":"당분간 따로 연락하지 마. 필요한 얘기는 단체방에서 할게."},
+    "day4_caught_fallout_3": {"name":"{name}","text":"*잠시 뒤 유나가 대화방을 나가고 다인은 약속 일정을 취소한다. 준비해 둔 외출복을 다시 옷걸이에 건다.*"},
+    "day4_caught_fallout_4": {"name":"{name}","text":"*밖으로 나가지 않는다. 해가 기울 때까지 단체방 알림도 울리지 않는다.*"},
+    "day4_harem_fallout_1": {"name":"{name}","text":"*세 사람이 있는 단체방에 서연의 메시지가 먼저 올라온다. '오늘은 따로 만나지 말고 모두 같이 얘기하자.'*"},
+    "day4_harem_fallout_2": {"name":"서연","text":"누구 하나 고르라는 말은 안 할게. 대신 지금처럼 각각 기대하게 두진 마."},
+    "day4_harem_fallout_3": {"name":"{name}","text":"*유나는 시간을 갖겠다고 말하고 다인은 그동안 따로 만나지 않겠다고 덧붙인다. 셋의 컵은 그대로 놓여 있다.*"},
+    "day4_harem_fallout_4": {"name":"{name}","text":"알겠어. 정리할 때까지 누구에게도 따로 연락하지 않을게."}
 }

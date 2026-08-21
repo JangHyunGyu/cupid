@@ -315,5 +315,14 @@
     "tour_dain_event_5": {
         "name": "Dain",
         "text": "*Sie schaltet das Mikrofon aus und holt Luft, während wir zur Turnhalle hinuntergehen.* Offenbar habe ich auch ohne zu spielen etwas zu sagen. Mehr als gedacht."
-    }
+    },
+    "tour_seo_affinity_check": {},
+    "tour_seo_affinity_80": {"name":"Seoyeon","text":"Ich habe den ersten Termin nächste Woche freigelassen. Du bestimmst die Uhrzeit."},
+    "tour_seo_affinity_60": {"name":"Seoyeon","text":"Gehen wir danach auch aufs Dach. Heute warte ich zuerst auf dich."},
+    "tour_yuna_affinity_check": {},
+    "tour_yuna_affinity_80": {"name":"Yuna","text":"Dein Platz als erster Leser der nächsten Geschichte ist ebenfalls reserviert. Danach legen wir ein Datum fest."},
+    "tour_yuna_affinity_60": {"name":"Yuna","text":"Lies zuerst die letzte Seite, die ich heute zeigen will."},
+    "tour_dain_affinity_check": {},
+    "tour_dain_affinity_80": {"name":"Dain","text":"Komm auch, wenn ich für das nächste Spiel kommentieren übe. Ich schicke dir den Termin."},
+    "tour_dain_affinity_60": {"name":"Dain","text":"Wollen wir mit der Sprecherkabine anfangen? Heute bist du mein erster Zuhörer."}
 }

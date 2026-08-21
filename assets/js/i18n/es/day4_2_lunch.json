@@ -378,5 +378,31 @@
     "date_yuna_trap": {
         "name": "Yuna",
         "text": "Así que normalmente no soy fácil de abordar."
-    }
+    },
+    "date_seo_tier_check": {},
+    "date_seo_high_1": {"name":"Seoyeon","text":"¿Recuerdas la nota del primer día? No pasa nada si hoy cambiamos el plan. Vamos primero adonde tú quieras."},
+    "date_seo_high_2": {"name":"{name}","text":"*Seoyeon dobla el itinerario y lo guarda en su bolso. Suelta la correa y entra primero en el parque.*"},
+    "date_seo_tentative_1": {"name":"{name}","text":"*Mientras damos una vuelta al parque, Seoyeon solo habla del horario de la semana que viene. Se detiene frente a un banco.*"},
+    "date_seo_tentative_2": {"name":"Seoyeon","text":"Esto basta por hoy. No te evitaré en la escuela."},
+    "date_seo_tentative_3": {"name":"{name}","text":"*Nos despedimos frente a la estación sin hacer otro plan.*"},
+    "date_yuna_tier_check": {},
+    "date_yuna_high_1": {"name":"Yuna","text":"*Yuna coloca dos marcapáginas juntos sobre la mesa.* Elige uno conmigo cuando terminemos. Es para el próximo libro que leamos."},
+    "date_yuna_high_2": {"name":"Yuna","text":"Quiero decir que volveremos a leer juntos. Puedes anotarlo."},
+    "date_yuna_tentative_1": {"name":"Yuna","text":"Hoy hablemos solo de libros."},
+    "date_yuna_tentative_2": {"name":"{name}","text":"*La conversación continúa, pero Yuna no saca el libro viejo del bolso. Mira la hora con medio café todavía en la taza.*"},
+    "date_yuna_tentative_3": {"name":"Yuna","text":"La próxima vez te escribiré yo primero. Dejémoslo aquí por hoy."},
+    "date_dain_tier_check": {},
+    "date_dain_high_1": {"name":"Dain","text":"Deja libre la semana que viene también. Si hoy nos divertimos, repetiremos."},
+    "date_dain_high_2": {"name":"Dain","text":"*Dain abre la puerta del gimnasio y me ofrece una muñequera.* Hoy eliges tú primero."},
+    "date_dain_tentative_1": {"name":"Dain","text":"No nos quedemos mucho hoy. Mi rodilla también necesita descansar."},
+    "date_dain_tentative_2": {"name":"{name}","text":"*Tomamos una bebida junto a la máquina. Dain deja cerrada la puerta del gimnasio y se ajusta la correa del bolso.*"},
+    "date_dain_tentative_3": {"name":"Dain","text":"Nos vemos en la escuela. Allí decidimos el próximo plan."},
+    "day4_caught_fallout_1": {"name":"{name}","text":"*Tres conversaciones aparecen juntas en la pantalla. Todas las disculpas que envié ayer se quedaron en Leído.*"},
+    "day4_caught_fallout_2": {"name":"Seoyeon","text":"No nos escribas por separado durante un tiempo. Si hace falta, usa el chat del grupo."},
+    "day4_caught_fallout_3": {"name":"{name}","text":"*Poco después, Yuna abandona una conversación y Dain cancela nuestro plan. Vuelvo a colgar la ropa que había preparado.*"},
+    "day4_caught_fallout_4": {"name":"{name}","text":"*No salgo. El chat del grupo permanece en silencio hasta que cae el sol.*"},
+    "day4_harem_fallout_1": {"name":"{name}","text":"*El mensaje de Seoyeon aparece primero en el grupo de las tres: «Hoy no nos reunamos por separado. Hablemos todos juntos».*"},
+    "day4_harem_fallout_2": {"name":"Seoyeon","text":"No te diré que elijas a una. Pero no puedes seguir haciendo que cada una espere algo."},
+    "day4_harem_fallout_3": {"name":"{name}","text":"*Yuna dice que necesita tiempo. Dain añade que, por ahora, nadie debería quedar a solas. Las tres tazas siguen intactas.*"},
+    "day4_harem_fallout_4": {"name":"{name}","text":"Entendido. No escribiré a ninguna por separado hasta aclararme."}
 }

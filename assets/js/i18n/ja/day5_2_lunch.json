@@ -315,5 +315,14 @@
     "tour_dain_event_5": {
         "name": "ダイン",
         "text": "*マイクを切り、体育館へ下りながら息を整える。* 出場しなくても、言いたいことはあるんだ。思ったよりずっと。"
-    }
+    },
+    "tour_seo_affinity_check": {},
+    "tour_seo_affinity_80": {"name":"ソヨン","text":"来週の予定表、最初の枠を空けておいた。時間はそっちが決めて。"},
+    "tour_seo_affinity_60": {"name":"ソヨン","text":"終わったら屋上にも寄ろう。今日は私が先に待ってる。"},
+    "tour_yuna_affinity_check": {},
+    "tour_yuna_affinity_80": {"name":"ユナ","text":"次の話も、最初の読者はあなた。終わったら日付を決めよう。"},
+    "tour_yuna_affinity_60": {"name":"ユナ","text":"今日見せる最後のページ、先に読んで。"},
+    "tour_dain_affinity_check": {},
+    "tour_dain_affinity_80": {"name":"ダイン","text":"次の試合の実況練習にも来て。日付は私が送る。"},
+    "tour_dain_affinity_60": {"name":"ダイン","text":"放送室から行く？ 今日は最初のリスナーになって。"}
 }

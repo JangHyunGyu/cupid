@@ -338,5 +338,27 @@
     "lunch3_end": {
         "name": "{name}",
         "text": "*La sonnerie retentit et je range le bento. Personne ne reparle des sorties prévues.*"
-    }
+    },
+    "lunch3_give_seo_2_check": {},
+    "lunch3_give_seo_dain_affinity": {},
+    "lunch3_give_seo_dain_mid": {"name":"Dain","text":"J'en avais envie, mais ce n'est pas grave. Garde-m'en la prochaine fois."},
+    "lunch3_give_seo_dain_low": {"name":"Dain","text":"*Dain termine sa part et referme sa bouteille.* J'ai déjà assez mangé."},
+    "lunch3_give_seo_3_check": {},
+    "lunch3_give_seo_yuna_affinity": {},
+    "lunch3_give_seo_yuna_mid": {"name":"Yuna","text":"*Yuna regarde le dernier morceau, puis replie le sachet de son pain.* La prochaine fois, laisse-m'en un peu."},
+    "lunch3_give_seo_yuna_low": {"name":"Yuna","text":"*Yuna finit son pain sans changer d'expression.*"},
+    "lunch3_give_dain_2_check": {},
+    "lunch3_give_dain_seo_affinity": {},
+    "lunch3_give_dain_seo_mid": {"name":"Seoyeon","text":"*Seoyeon pose ses baguettes et remet le couvercle de son bento.* La prochaine fois, tiens compte de ma note."},
+    "lunch3_give_dain_seo_low": {"name":"Seoyeon","text":"*Seoyeon range ce qui reste et se contente de hocher la tête.*"},
+    "lunch3_give_dain_3_check": {},
+    "lunch3_give_dain_yuna_mid": {"name":"Yuna","text":"Tu le donnes à Dain. La prochaine fois, demande-moi aussi."},
+    "lunch3_give_dain_yuna_low": {"name":"Yuna","text":"*Yuna replie son sachet de pain et boit une gorgée d'eau.*"},
+    "lunch3_give_yuna_2_check": {},
+    "lunch3_give_yuna_seo_affinity": {},
+    "lunch3_give_yuna_seo_mid": {"name":"Seoyeon","text":"Tu le donnes à Yuna. D'accord."},
+    "lunch3_give_yuna_seo_low": {"name":"Seoyeon","text":"*Seoyeon range son propre bento.*"},
+    "lunch3_give_yuna_3_check": {},
+    "lunch3_give_yuna_dain_mid": {"name":"Dain","text":"Bon, Yuna a choisi la première. La prochaine fois, c'est mon tour."},
+    "lunch3_give_yuna_dain_low": {"name":"Dain","text":"*Dain range sa bouteille vide dans son sac.* Ça va."}
 }

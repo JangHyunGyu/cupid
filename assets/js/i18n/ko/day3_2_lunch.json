@@ -338,5 +338,27 @@
     "lunch3_end": {
         "name": "{name}",
         "text": "*종이 울려 도시락을 접는다. 약속 이야기는 누구도 다시 꺼내지 않는다.*"
-    }
+    },
+    "lunch3_give_seo_2_check": {},
+    "lunch3_give_seo_dain_affinity": {},
+    "lunch3_give_seo_dain_mid": {"name":"다인","text":"먹고 싶긴 했는데 괜찮아. 다음엔 내 것도 남겨 둬."},
+    "lunch3_give_seo_dain_low": {"name":"다인","text":"*다인은 자기 몫을 다 먹고 물병 뚜껑을 닫는다.* 난 배불러."},
+    "lunch3_give_seo_3_check": {},
+    "lunch3_give_seo_yuna_affinity": {},
+    "lunch3_give_seo_yuna_mid": {"name":"유나","text":"*유나는 마지막 반찬을 보다가 빵 봉지를 접는다.* 다음에는 조금 남겨 줘."},
+    "lunch3_give_seo_yuna_low": {"name":"유나","text":"*유나는 별다른 표정 없이 빵을 마저 먹는다.*"},
+    "lunch3_give_dain_2_check": {},
+    "lunch3_give_dain_seo_affinity": {},
+    "lunch3_give_dain_seo_mid": {"name":"서연","text":"*서연은 젓가락을 내려놓고 도시락 뚜껑을 맞춘다.* 다음엔 내 점수도 참고해."},
+    "lunch3_give_dain_seo_low": {"name":"서연","text":"*서연은 남은 반찬을 정리하며 고개만 끄덕인다.*"},
+    "lunch3_give_dain_3_check": {},
+    "lunch3_give_dain_yuna_mid": {"name":"유나","text":"다인한테 주는구나. 다음엔 나도 물어봐."},
+    "lunch3_give_dain_yuna_low": {"name":"유나","text":"*유나는 빵 봉지를 접고 물을 한 모금 마신다.*"},
+    "lunch3_give_yuna_2_check": {},
+    "lunch3_give_yuna_seo_affinity": {},
+    "lunch3_give_yuna_seo_mid": {"name":"서연","text":"유나한테 주는구나. 알겠어."},
+    "lunch3_give_yuna_seo_low": {"name":"서연","text":"*서연은 자기 도시락을 정리한다.*"},
+    "lunch3_give_yuna_3_check": {},
+    "lunch3_give_yuna_dain_mid": {"name":"다인","text":"뭐, 유나가 먼저 골랐으니까. 다음엔 내 차례."},
+    "lunch3_give_yuna_dain_low": {"name":"다인","text":"*다인은 빈 물병을 가방에 넣는다.* 난 괜찮아."}
 }

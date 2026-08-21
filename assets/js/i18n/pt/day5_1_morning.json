@@ -158,7 +158,7 @@
     },
     "morning5_mood_high": {
         "name": "{name}",
-        "text": "É o último dia. A chave do telhado no meu bolso toca o dorso da minha mão a cada passo."
+        "text": "*É o último dia. Antes de abrir a porta da sala, lembro uma vez das palavras trocadas nos últimos quatro dias.*"
     },
     "morning5_mood_mid": {
         "name": "{name}",
@@ -681,5 +681,11 @@
     "morning5_sojeong_5": {
         "name": "{name}",
         "text": "*Também escrevo ao meu professor atual: 'Quero conversar sobre algo que escolhi ignorar na minha antiga escola.' Deixo as duas mensagens na tela até o anúncio do festival começar.*"
-    }
+    },
+    "morning5_caught_fallout_1": {"name":"{name}","text":"*Antes do evento começar, as três se sentam afastadas na sala. A folha sobre a mesa lista apenas as tarefas necessárias.*"},
+    "morning5_caught_fallout_2": {"name":"{name}","text":"*Yuna sai primeiro com os folhetos, e Dain usa a porta oposta. Seoyeon pega a lista de presença sem olhar para mim.*"},
+    "morning5_caught_fallout_3": {"name":"{name}","text":"*Até o fim do evento, só falamos para conferir tarefas. No último sinal, elas descem por três escadas diferentes.*"},
+    "morning5_harem_fallout_1": {"name":"{name}","text":"*Durante o evento, as três deixam apenas mensagens necessárias no grupo. Nenhuma conversa privada recebe algo novo.*"},
+    "morning5_harem_fallout_2": {"name":"Dain","text":"Mesmo depois de hoje, não vamos nos encontrar separadamente. Cumpra o que combinamos."},
+    "morning5_harem_fallout_3": {"name":"{name}","text":"*Faço que sim. As três saem juntas pelo portão, e eu sigo sozinho um pouco depois.*"}
 }

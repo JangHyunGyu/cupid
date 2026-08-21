@@ -35,7 +35,8 @@
         "choices": [
             "Vers la salle du conseil",
             "Vers la bibliothèque",
-            "Vers le gymnase"
+            "Vers le gymnase",
+            "Rentrer chez moi pour aujourd'hui"
         ]
     },
     "after3_reject_for_seo_1": {
@@ -938,5 +939,39 @@
     "haeun_warn_8b": {
         "name": "{name}",
         "text": "*Je me dirige vers l'entrée du lycée.*"
-    }
+    },
+    "after3_walk_home": {"name":"{name}","text":"*Je n'ai rendez-vous avec personne. Je range mon téléphone dans mon sac et me dirige vers le portail.*"},
+    "after3_rivals_for_seo_start": {},
+    "after3_rivals_for_yuna_start": {},
+    "after3_rivals_for_dain_start": {},
+    "after3_rival_seo_check": {},
+    "after3_rival_seo_promised_dispatch": {},
+    "after3_rival_seo_affinity": {},
+    "after3_rival_seo_high": {"name":"Seoyeon","text":"*Seoyeon s'arrête au croisement, regarde dans quelle direction je pars et resserre la lanière de son sac.* Tu vas ailleurs, alors."},
+    "after3_rival_seo_mid": {"name":"Seoyeon","text":"D'accord. Je finirai ce qu'il reste."},
+    "after3_rival_seo_done": {},
+    "after3_rival_dain_check": {},
+    "after3_rival_dain_promised_dispatch": {},
+    "after3_rival_dain_affinity": {},
+    "after3_rival_dain_high": {"name":"Dain","text":"*Dain ravale sa question et regarde le panneau du gymnase.* Tu vas ailleurs ? D'accord."},
+    "after3_rival_dain_mid": {"name":"Dain","text":"D'accord. Je vais au gymnase en premier."},
+    "after3_rival_dain_done": {},
+    "after3_rival_yuna_check": {},
+    "after3_rival_yuna_promised_dispatch": {},
+    "after3_rival_yuna_affinity": {},
+    "after3_rival_yuna_high": {"name":"Yuna","text":"*Yuna referme le livre qu'elle allait ouvrir.* Tu vas ailleurs. D'accord."},
+    "after3_rival_yuna_mid": {"name":"Yuna","text":"D'accord. Je serai à la bibliothèque."},
+    "after3_rival_yuna_done": {},
+    "after3_seo_affinity_check": {},
+    "after3_seo_partial_1": {"name":"{name}","text":"*En ouvrant la porte du conseil, je trouve Seoyeon en train de ramasser son bloc-notes. Elle s'essuie sous un œil et remet une chaise droite.*"},
+    "after3_seo_partial_2": {"name":"Seoyeon","text":"Je finirai seule aujourd'hui. Mais ne m'évite pas demain."},
+    "after3_seo_low_1": {"name":"Seoyeon","text":"*Seoyeon reste dans le couloir, la porte à moitié ouverte.* Je veux être seule pour le moment. À demain."},
+    "after3_yuna_affinity_check": {},
+    "after3_yuna_partial_1": {"name":"{name}","text":"*La porte de l'annexe est ouverte, mais Yuna n'ouvre pas son livre. Elle regarde la chaise en face d'elle, puis la repousse sous la table.*"},
+    "after3_yuna_partial_2": {"name":"Yuna","text":"Arrêtons-nous là pour aujourd'hui. La prochaine fois, c'est moi qui t'appellerai."},
+    "after3_yuna_low_1": {"name":"Yuna","text":"*Yuna remet son sac sur son épaule devant l'annexe.* Je veux être seule aujourd'hui. Je rentre."},
+    "after3_dain_affinity_check": {},
+    "after3_dain_partial_1": {"name":"{name}","text":"*Dans le gymnase, Dain resserre sa genouillère. Elle commence à se lever, puis se rassoit sur le banc.*"},
+    "after3_dain_partial_2": {"name":"Dain","text":"Ça ira avec un peu de repos. Rentre sans moi. À demain."},
+    "after3_dain_low_1": {"name":"Dain","text":"*Dain tient la porte du gymnase sans entrer.* Aujourd'hui, je m'entraîne seule. On se voit au lycée."}
 }

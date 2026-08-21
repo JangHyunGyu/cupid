@@ -248,6 +248,30 @@
         "name": "Dain",
         "text": "*Elle pousse le gobelet de tteokbokki vers {name}, puis agite sa bouteille vide à l'envers.*"
     },
+    "after2_dain_rival_seo_high": {
+        "name": "{name}",
+        "text": "*De l'autre côté de la vitre, Seoyeon s'arrête. Après avoir vu les deux gobelets de tteokbokki, elle envoie un bref message : « Alors tu étais au gymnase aujourd'hui. La prochaine fois, passe aussi au conseil. »*"
+    },
+    "after2_dain_rival_seo_mid": {
+        "name": "{name}",
+        "text": "*Seoyeon passe devant le restaurant et regarde la table. Elle aligne deux fois les bords de son porte-bloc, puis repart vers le portail.*"
+    },
+    "after2_dain_rival_seo_low": {
+        "name": "{name}",
+        "text": "*En passant devant le restaurant, Seoyeon nous salue d'un signe de tête sans ralentir.*"
+    },
+    "after2_dain_rival_yuna_high": {
+        "name": "{name}",
+        "text": "*Yuna regarde à travers la vitre. Elle remet dans sa poche le mot plié qu'elle tenait et fait demi-tour.*"
+    },
+    "after2_dain_rival_yuna_mid": {
+        "name": "{name}",
+        "text": "*En passant devant le restaurant, Yuna commence à retirer un écouteur, voit notre table et le remet.*"
+    },
+    "after2_dain_rival_yuna_low": {
+        "name": "{name}",
+        "text": "*Yuna nous adresse un signe de tête à travers la vitre et continue vers l'annexe.*"
+    },
     "after2_dain_return": {
         "name": "{name}",
         "text": "*Sur le chemin du retour vers le lycée, nous arrivons devant le portail.*"
@@ -467,6 +491,30 @@
         "name": "{name}",
         "text": "*Je quitte la salle du conseil et me dirige vers le portail.*"
     },
+    "after2_seo_rival_dain_high": {
+        "name": "Dain",
+        "text": "*Dain pousse un chariot de ballons quand elle nous aperçoit au bout du couloir.* Le travail du conseil a duré longtemps. *Elle serre la poignée et se détourne la première.*"
+    },
+    "after2_seo_rival_dain_mid": {
+        "name": "Dain",
+        "text": "*Elle arrête le chariot.* C'est fini ? *Elle jette un regard à Seoyeon, puis repart vers le gymnase.*"
+    },
+    "after2_seo_rival_dain_low": {
+        "name": "Dain",
+        "text": "Bon travail ! *Elle nous fait signe par-dessus le chariot et repart vers le gymnase.*"
+    },
+    "after2_seo_rival_yuna_high": {
+        "name": "{name}",
+        "text": "*Yuna lisait sur le palier. En nous entendant, elle ferme son livre, retire le mot glissé entre les pages et le plie en deux.*"
+    },
+    "after2_seo_rival_yuna_mid": {
+        "name": "{name}",
+        "text": "*La main de Yuna s'immobilise sur la page. Elle se décale pour nous laisser passer, puis rouvre son livre.*"
+    },
+    "after2_seo_rival_yuna_low": {
+        "name": "{name}",
+        "text": "*Yuna se décale sur le palier et nous salue brièvement de la tête.*"
+    },
     "after2_yuna_1": {
         "name": "{name}",
         "text": "*Aucun message de Yuna. Pourtant, mes pas vont vers la bibliothèque. Le mot plié dans ma poche effleure le dos de ma main à chaque pas.*"
@@ -570,7 +618,7 @@
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "*Sur mon téléphone m'attendent un « Et moi qui t'attendais ? » de Dain et un « Préviens-moi si tes plans changent » de Seoyeon. Sur le siège où Yuna et moi étions assis côte à côte reste un écouteur.*"
+        "text": "*Un écouteur reste sur le siège où Yuna et moi étions côte à côte. Avant de quitter l'annexe, j'allume mon téléphone.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",
@@ -587,6 +635,30 @@
     "after2_yuna_return": {
         "name": "{name}",
         "text": "*Quand je quitte l'annexe de la bibliothèque, l'éclairage automatique du couloir s'allume.*"
+    },
+    "after2_yuna_rival_dain_high": {
+        "name": "Dain",
+        "text": "Je t'ai dit de venir au gymnase et tu es parti à l'annexe. La prochaine fois, viens aussi de mon côté."
+    },
+    "after2_yuna_rival_dain_mid": {
+        "name": "Dain",
+        "text": "Tu étais à la bibliothèque ? Passe au gymnase demain."
+    },
+    "after2_yuna_rival_dain_low": {
+        "name": "Dain",
+        "text": "Tu étais vers la bibliothèque ? À demain !"
+    },
+    "after2_yuna_rival_seo_high": {
+        "name": "Seoyeon",
+        "text": "Alors tu étais dans l'annexe. La prochaine fois, passe aussi au conseil."
+    },
+    "after2_yuna_rival_seo_mid": {
+        "name": "Seoyeon",
+        "text": "Tu étais dans l'annexe. J'ai fini le travail d'aujourd'hui. À demain."
+    },
+    "after2_yuna_rival_seo_low": {
+        "name": "Seoyeon",
+        "text": "J'ai trouvé assez d'aide. À demain."
     },
     "after2_group_seoyeon_companion": {
         "name": "Seoyeon et l'autre personne",

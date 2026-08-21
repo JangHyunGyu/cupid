@@ -35,7 +35,8 @@
         "choices": [
             "Zum Schülerratsraum",
             "Zur Bibliothek",
-            "Zur Turnhalle"
+            "Zur Turnhalle",
+            "Heute einfach nach Hause gehen"
         ]
     },
     "after3_reject_for_seo_1": {
@@ -938,5 +939,39 @@
     "haeun_warn_8b": {
         "name": "{name}",
         "text": "*Ich gehe vor die Schule.*"
-    }
+    },
+    "after3_walk_home": {"name":"{name}","text":"*Ich bin mit niemandem verabredet. Ich stecke mein Handy in die Tasche und gehe zum Schultor.*"},
+    "after3_rivals_for_seo_start": {},
+    "after3_rivals_for_yuna_start": {},
+    "after3_rivals_for_dain_start": {},
+    "after3_rival_seo_check": {},
+    "after3_rival_seo_promised_dispatch": {},
+    "after3_rival_seo_affinity": {},
+    "after3_rival_seo_high": {"name":"Seoyeon","text":"*Seoyeon bleibt an der Kreuzung stehen, sieht in meine Richtung und fasst den Riemen ihrer Tasche fester.* Du gehst also woandershin."},
+    "after3_rival_seo_mid": {"name":"Seoyeon","text":"Verstanden. Ich erledige den Rest."},
+    "after3_rival_seo_done": {},
+    "after3_rival_dain_check": {},
+    "after3_rival_dain_promised_dispatch": {},
+    "after3_rival_dain_affinity": {},
+    "after3_rival_dain_high": {"name":"Dain","text":"*Dain schluckt ihre Frage hinunter und sieht zum Schild der Turnhalle.* Du gehst woandershin? Verstanden."},
+    "after3_rival_dain_mid": {"name":"Dain","text":"Okay. Ich gehe schon mal zur Turnhalle."},
+    "after3_rival_dain_done": {},
+    "after3_rival_yuna_check": {},
+    "after3_rival_yuna_promised_dispatch": {},
+    "after3_rival_yuna_affinity": {},
+    "after3_rival_yuna_high": {"name":"Yuna","text":"*Yuna schließt das Buch, das sie gerade öffnen wollte.* Du gehst woandershin. Okay."},
+    "after3_rival_yuna_mid": {"name":"Yuna","text":"Verstanden. Ich bin in der Bibliothek."},
+    "after3_rival_yuna_done": {},
+    "after3_seo_affinity_check": {},
+    "after3_seo_partial_1": {"name":"{name}","text":"*Als ich die Tür zum Schülerratsraum öffne, hebt Seoyeon ihr Klemmbrett vom Boden auf. Sie wischt sich unter einem Auge entlang und rückt einen Stuhl gerade.*"},
+    "after3_seo_partial_2": {"name":"Seoyeon","text":"Heute mache ich allein fertig. Aber geh mir morgen nicht aus dem Weg."},
+    "after3_seo_low_1": {"name":"Seoyeon","text":"*Seoyeon steht bei halb geöffneter Tür im Flur.* Ich möchte gerade allein sein. Bis morgen."},
+    "after3_yuna_affinity_check": {},
+    "after3_yuna_partial_1": {"name":"{name}","text":"*Die Tür zum Anbau steht offen, aber Yuna öffnet ihr Buch nicht. Sie sieht kurz zum Stuhl gegenüber und schiebt ihn unter den Tisch.*"},
+    "after3_yuna_partial_2": {"name":"Yuna","text":"Belassen wir es heute dabei. Nächstes Mal rufe ich dich zuerst."},
+    "after3_yuna_low_1": {"name":"Yuna","text":"*Yuna hängt sich vor dem Anbau ihre Tasche um.* Heute möchte ich allein sein. Ich gehe schon mal."},
+    "after3_dain_affinity_check": {},
+    "after3_dain_partial_1": {"name":"{name}","text":"*In der Turnhalle richtet Dain ihre Kniebandage. Sie will aufstehen, setzt sich dann aber wieder auf die Bank.*"},
+    "after3_dain_partial_2": {"name":"Dain","text":"Mit etwas Ruhe wird es schon. Geh heute vor. Bis morgen."},
+    "after3_dain_low_1": {"name":"Dain","text":"*Dain hält die Tür zur Turnhalle fest, ohne hineinzugehen.* Heute trainiere ich allein. Bis dann in der Schule."}
 }
