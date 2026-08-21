@@ -29,12 +29,12 @@ context.FLAG_MEMORIES = context.window.FLAG_MEMORIES;
 
 const languages = ['en', 'es', 'ja', 'fr', 'de', 'pt'];
 const stablePromptBudgets = {
-    en: { main: 8100, gallery: 7700 },
-    es: { main: 8400, gallery: 7900 },
-    ja: { main: 6100, gallery: 5000 },
-    fr: { main: 8500, gallery: 8250 },
-    de: { main: 8500, gallery: 8150 },
-    pt: { main: 8300, gallery: 7800 }
+    en: { main: 8800, gallery: 8400 },
+    es: { main: 9100, gallery: 8600 },
+    ja: { main: 6600, gallery: 5500 },
+    fr: { main: 9200, gallery: 8950 },
+    de: { main: 9200, gallery: 8850 },
+    pt: { main: 9000, gallery: 8500 }
 };
 const unnamedPlayerGuardByLanguage = {
     en: 'saved name when present',
@@ -102,6 +102,14 @@ const adultVocalizationSignals = {
     fr: '[Voix dans une scène adulte]',
     de: '[Stimme in einer Erwachsenenszene]',
     pt: '[Voz em uma cena adulta]'
+};
+const detailedAdultNarrationSignals = {
+    en: 'Only after a sex act between adults has actually begun',
+    es: 'Solo después de que un acto sexual entre adultos haya comenzado de verdad',
+    ja: '成人同士の性行為が実際に始まった後だけ',
+    fr: 'Seulement après qu’un acte sexuel entre adultes a réellement commencé',
+    de: 'Erst nachdem ein Sexakt zwischen Erwachsenen tatsächlich begonnen hat',
+    pt: 'Só depois que um ato sexual entre adultos tiver começado de fato'
 };
 const emotionalRangeSignals = {
     en: '[Emotional Range and Aftermath]',
@@ -412,6 +420,8 @@ for (const lang of languages) {
         assertNoEditorPressure(systemPrompt, `[${lang}/${char}] main prompt`);
         assert(systemPrompt.includes(adultVocalizationSignals[lang]),
             `[${lang}/${char}] main prompt is missing the conditional adult vocalization rule`);
+        assert(systemPrompt.includes(detailedAdultNarrationSignals[lang]),
+            `[${lang}/${char}] detailed adult narration is not scoped to an underway adult sex act`);
         if (lang === 'en') {
             assert(systemPrompt.includes('Adult sex stays')
                 && systemPrompt.includes(mainAdultIntimacySignals[char]),
@@ -602,6 +612,8 @@ for (const lang of languages) {
         assertNoEditorPressure(systemPrompt, `[${lang}/${char}] gallery prompt`);
         assert(systemPrompt.includes(adultVocalizationSignals[lang]),
             `[${lang}/${char}] gallery prompt is missing the conditional adult vocalization rule`);
+        assert(systemPrompt.includes(detailedAdultNarrationSignals[lang]),
+            `[${lang}/${char}] gallery detailed adult narration is not scoped to an underway adult sex act`);
         assert(systemPrompt.includes('Adult sex stays')
             && systemPrompt.includes(galleryAdultIntimacySignals[char]),
             `[${lang}/${char}] gallery prompt is missing direct, character-owned adult intimacy guidance`);

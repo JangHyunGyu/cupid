@@ -1961,11 +1961,11 @@ try {
     const activePromptSources = [promptsContent, ftCoreContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
-    if (promptVersion !== '2.7.71') {
-        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.71이 아님: ' + promptVersion);
+    if (promptVersion !== '2.7.72') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.72가 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.63') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.63이 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.64') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.64가 아님: ' + galleryPromptVersion);
     }
     const galleryProgressContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-progress.js'), 'utf8');
     const galleryLoaderAffinityContent = fs.readFileSync(path.join(__dirname, 'assets/js/loaders/gallery-loader.js'), 'utf8');
@@ -2008,13 +2008,22 @@ try {
     const thirdPersonAdultCameraSignals = [
         'function buildCupidThirdPersonAdultCameraRule(',
         'narration은 모두 3인칭으로 쓰고',
+        '성인 인물 사이의 성행위가 실제로 시작된 뒤에만',
+        '성인 소설의 본장면처럼 매우 구체적으로',
         '보지·자지·삽입·애액·정액·마찰·깊이와 절정을 실제 접촉 그대로 쓰고',
         'Use third person for all narration',
+        'Only after a sex act between adults has actually begun',
+        'close, sequential specificity of an explicit adult-novel scene',
         'Write pussy, cock, penetration, wetness, semen, friction, depth, and climax as they happen',
+        'Solo después de que un acto sexual entre adultos haya comenzado de verdad',
         'escribe coño, polla, penetración, humedad, semen, fricción, profundidad y orgasmo',
+        '成人同士の性行為が実際に始まった後だけ',
         '性器・挿入・愛液・精液・摩擦・深さと絶頂を実際の接触として描き',
+        'Seulement après qu’un acte sexuel entre adultes a réellement commencé',
         'écrivez chatte, bite, pénétration, humidité, sperme, frottement, profondeur et orgasme',
+        'Erst nachdem ein Sexakt zwischen Erwachsenen tatsächlich begonnen hat',
         'Muschi, Schwanz, Penetration, Nässe, Sperma, Reibung, Tiefe und Orgasmus',
+        'Só depois que um ato sexual entre adultos tiver começado de fato',
         'escreva buceta, pau, penetração, umidade, sêmen, fricção, profundidade e orgasmo'
     ];
     if (thirdPersonAdultCameraSignals.some(signal => !promptsContent.includes(signal))) {

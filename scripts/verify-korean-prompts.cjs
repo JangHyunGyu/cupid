@@ -127,7 +127,7 @@ function assertCommonKoreanPrompt(prompt, label) {
         assert(prompt.includes(block), `${label} is missing ${block}`);
     }
     const stablePrompt = splitCacheBoundary(prompt, label).stable;
-    const stableBudget = label.startsWith('main/') ? 3900 : 3650;
+    const stableBudget = label.startsWith('main/') ? 4150 : 3900;
     assert(stablePrompt.length <= stableBudget,
         `${label} stable prompt exceeded the ${stableBudget}-character input budget (${stablePrompt.length})`);
     for (const rule of REQUIRED_NATURAL_KOREAN_RULES) {
@@ -306,10 +306,17 @@ function verifyMainAndGalleryPrompts(context) {
             `[main/${character.key}] can still hide established adult sex behind indirect wording`);
         assert(mainPrompt.includes(character.intimateSignal),
             `[main/${character.key}] is missing its character-owned adult intimacy cadence`);
-        assert(mainPrompt.includes('포옹·여운·비유로 건너뛰지 않습니다'),
+        assert(mainPrompt.includes('완곡한 암시·포옹·비유·사후 요약으로 건너뛰지 않습니다'),
             `[main/${character.key}] adult camera can still fade established sex into metaphor`);
-        assert(galleryPrompt.includes('포옹·여운·비유로 건너뛰지 않습니다'),
+        assert(galleryPrompt.includes('완곡한 암시·포옹·비유·사후 요약으로 건너뛰지 않습니다'),
             `[gallery/${character.key}] adult camera can still fade established sex into metaphor`);
+        for (const prompt of [mainPrompt, galleryPrompt]) {
+            assert(prompt.includes('성인 인물 사이의 성행위가 실제로 시작된 뒤에만')
+                && prompt.includes('성인 소설의 본장면처럼 매우 구체적으로')
+                && prompt.includes('접촉 위치와 몸의 움직임')
+                && prompt.includes('행위가 시작되기 전에는 수위를 앞당기지 않습니다'),
+                `[${character.key}] detailed adult narration is not strictly scoped to an underway adult sex act`);
+        }
 
         const sharedCastKnowledge = context.window.getCupidSharedCastKnowledge(
             'ko',
