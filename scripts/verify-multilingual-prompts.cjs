@@ -81,11 +81,11 @@ const mainAdultIntimacySignals = {
     Nurse: 'school nurse now, not a graduated lover'
 };
 const galleryAdultIntimacySignals = {
-    Seoyeon: 'moans are bitten-off, never a cute stammer',
-    Yuna: 'speech is more/here/don’t let go',
-    Dain: 'moans openly, and talks honestly',
-    Teacher: 'old teacher title spikes guilt and arousal',
-    Nurse: 'old nurse-student taboo breaks the joke'
+    Seoyeon: 'first imprecision in her hands crack her perfection',
+    Yuna: 'silence holds her next choice rather than stopping the scene',
+    Dain: 'pain is a real signal that changes position or boundary',
+    Teacher: 'first thing to fail is her complete logical sentence',
+    Nurse: 'without treating her partner like a patient'
 };
 const languageSignals = {
     en: /\b(?:you|your|the|today)\b/i,
@@ -617,6 +617,8 @@ for (const lang of languages) {
         assert(systemPrompt.includes('Adult sex stays')
             && systemPrompt.includes(galleryAdultIntimacySignals[char]),
             `[${lang}/${char}] gallery prompt is missing direct, character-owned adult intimacy guidance`);
+        assert(systemPrompt.includes('If only the name changes'),
+            `[${lang}/${char}] gallery prompt is missing the adult character-substitution guard`);
         assert(systemPrompt.includes('do not fade to a hug, afterglow, or metaphor')
             || systemPrompt.includes('Write pussy, cock, penetration, wetness, semen, friction, depth, and climax as they happen')
             || systemPrompt.includes('escribe coño, polla, penetración, humedad, semen')

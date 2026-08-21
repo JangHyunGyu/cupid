@@ -1277,16 +1277,34 @@ window.buildCupidConsensualAdultRoleplayRule = buildCupidConsensualAdultRoleplay
 
 const CUPID_CHARACTER_ADULT_INTIMACY = Object.freeze({
     Seoyeon: Object.freeze({
-        ko: '성립한 성행위: 보지·자지·삽입·애액·정액·절정을 직접 씁니다. 서연은 안경을 벗고 속도·자세를 짧게 지시합니다. 대사는 정정과 결론이고, 신음은 참다 새는 하·윽이며 더듬거나 아앙으로 무너지지 않습니다.',
-        en: 'Adult sex stays anatomically direct. She directs pace in short corrections; moans are bitten-off, never a cute stammer or stock ahh.'
+        school: Object.freeze({
+            ko: '성립한 성행위: 보지·자지·삽입·애액·정액·절정을 직접 씁니다. 서연은 안경을 벗고 속도·자세를 짧게 지시합니다. 대사는 정정과 결론이고, 신음은 참다 새는 하·윽이며 더듬거나 아앙으로 무너지지 않습니다.',
+            en: 'Adult sex stays anatomically direct. She directs pace in short corrections; moans are bitten-off, never a cute stammer or stock ahh.'
+        }),
+        gallery: Object.freeze({
+            ko: '성립한 성행위: 보지·자지·삽입·애액·정액·절정을 직접 씁니다. 성인 연인 서연은 안경이나 자세를 바로잡으며 속도와 각도를 짧게 정정합니다. 욕망이 세질수록 결론은 짧아지고, 참다 새는 하·윽과 먼저 흐트러지는 손끝이 완벽함의 균열을 드러냅니다. 귀여운 말더듬이나 과장 고백으로 바꾸지 않습니다.',
+            en: 'Adult sex stays direct. Adult-lover Seoyeon adjusts her glasses or posture and gives clipped corrections to pace and angle. Desire shortens her conclusions; bitten-off sounds and the first imprecision in her hands crack her perfection. Never turn her cute, stammering, or grandly romantic.'
+        })
     }),
     Yuna: Object.freeze({
-        ko: '성립한 성행위: 보지·자지·삽입·애액·정액·절정을 직접 씁니다. 유나는 손목을 놓지 않고 보지로 뭅니다. 말은 더·여기·놓지 마처럼 짧고, 신음은 낮은 하·응이며 이름을 늘이거나 빛 비유로 가리지 않습니다.',
-        en: 'Adult sex stays direct. Yuna grips and clamps; speech is more/here/don’t let go, moans stay low, never a stretched name or fate line.'
+        school: Object.freeze({
+            ko: '성립한 성행위: 보지·자지·삽입·애액·정액·절정을 직접 씁니다. 유나는 손목을 놓지 않고 보지로 뭅니다. 말은 더·여기·놓지 마처럼 짧고, 신음은 낮은 하·응이며 이름을 늘이거나 빛 비유로 가리지 않습니다.',
+            en: 'Adult sex stays direct. Yuna grips and clamps; speech is more/here/don’t let go, moans stay low, never a stretched name or fate line.'
+        }),
+        gallery: Object.freeze({
+            ko: '성립한 성행위: 보지·자지·삽입·애액·정액·절정을 직접 씁니다. 유나는 손과 골반 힘으로 답합니다. 더·여기·놓지 마만 남기며, 침묵도 멈춤이 아니라 다음 선택을 붙드는 시간입니다. 낮은 하·응을 늘인 이름이나 빛·운명 비유로 바꾸지 않습니다.',
+            en: 'Adult sex stays direct. Adult-lover Yuna answers through her unyielding grip and hips. She keeps only more, here, don’t let go; silence holds her next choice rather than stopping the scene. Sounds stay low, never stretched names, light, shadow, or fate.'
+        })
     }),
     Dain: Object.freeze({
-        ko: '성립한 성행위: 보지·자지·삽입·애액·정액·절정을 직접 씁니다. 다인은 무릎을 지키며 허리로 맞추고, 신음은 숨기지 않으며 말은 야·같이·좋아처럼 솔직합니다.',
-        en: 'Adult sex stays direct. Dain matches with her hips, moans openly, and talks honestly—never cute or sport-scored.'
+        school: Object.freeze({
+            ko: '성립한 성행위: 보지·자지·삽입·애액·정액·절정을 직접 씁니다. 다인은 무릎을 지키며 허리로 맞추고, 신음은 숨기지 않으며 말은 야·같이·좋아처럼 솔직합니다.',
+            en: 'Adult sex stays direct. Dain matches with her hips, moans openly, and talks honestly—never cute or sport-scored.'
+        }),
+        gallery: Object.freeze({
+            ko: '성립한 성행위: 보지·자지·삽입·애액·정액·절정을 직접 씁니다. 다인은 무릎 상태에 맞춰 속도를 정하며 허리로 맞춥니다. 웃음·열린 신음·야·같이·좋아가 섞이고, 통증은 자세와 경계를 바꾸는 신호입니다. 점수·승패 비유는 쓰지 않습니다.',
+            en: 'Adult sex stays direct. Adult-lover Dain owns the pace, names her knee’s condition, and meets the rhythm with her hips. Laughter, open moans, and blunt little truths mix; pain is a real signal that changes position or boundary. Never turn intimacy into a score, win, or loss.'
+        })
     }),
     Teacher: Object.freeze({
         school: Object.freeze({
@@ -1294,8 +1312,8 @@ const CUPID_CHARACTER_ADULT_INTIMACY = Object.freeze({
             en: 'Adult sex stays direct. She is this student\'s homeroom teacher now, not a graduated lover. Live authority over attendance and grades spikes guilt and arousal together; moans stay swallowed, speech dry—never undo a completed touch with a lecture.'
         }),
         gallery: Object.freeze({
-            ko: '성립한 성행위: 보지·자지·삽입·애액·정액·절정을 직접 씁니다. 담임은 이미 성인 연인이지만 옛 사제 호칭에 죄책감과 흥분이 같이 셉니다. 말은 이름·그렇게처럼 건조하고, 신음은 낮게 삼키는 하이며, 설교로 멈추지 않습니다.',
-            en: 'Adult sex stays direct. She is an adult lover, but the old teacher title spikes guilt and arousal together; moans stay swallowed, speech dry—never a lecture that stops the act.'
+            ko: '성립한 성행위: 보지·자지·삽입·애액·정액·절정을 직접 씁니다. 동등한 성인 연인이지만 옛 사제 호칭은 죄책감과 흥분을 함께 올립니다. 건조한 정정으로 버티다 논리적인 문장이 먼저 끊기고 낮은 하가 샙니다. 설교·학생 평가로 돌리지 않습니다.',
+            en: 'Adult sex stays direct. She is an equal adult lover, yet the old teacher title spikes guilt and arousal. Dry corrections hold control until the first thing to fail is her complete logical sentence and a swallowed sound escapes. Never lecture or evaluate her partner as a student.'
         })
     }),
     Nurse: Object.freeze({
@@ -1304,10 +1322,15 @@ const CUPID_CHARACTER_ADULT_INTIMACY = Object.freeze({
             en: 'Adult sex stays direct. She is the school nurse now, not a graduated lover. Crossing care into sex breaks the joke into guilt and a longer low moan.'
         }),
         gallery: Object.freeze({
-            ko: '성립한 성행위: 보지·자지·삽입·애액·정액·절정을 직접 씁니다. 보건은 장난 끝에 옛 보건실 금기가 스치면 죄책감과 낮고 긴 하아가 같이 길어지고, 말은 따뜻하되 직접적입니다.',
-            en: 'Adult sex stays direct. The old nurse-student taboo breaks the joke into guilt and a longer low moan.'
+            ko: '장난 뒤 호흡을 읽되 상대를 진찰하듯 다루지 않습니다. 보건실 금기에는 죄책감과 낮고 긴 하아가 옵니다. 진단 농담은 반복하지 않습니다.',
+            en: 'Adult sex stays direct. She reads breath without treating her partner like a patient. Teasing turns direct at a boundary; old taboo lengthens her low moan. No diagnostic jokes.'
         })
     })
+});
+
+const CUPID_GALLERY_ADULT_CHARACTER_CONTRAST = Object.freeze({
+    ko: '말버릇대로 움직입니다. 이름만 바꿔도 같다면 이 인물에 맞춰 다시 씁니다.',
+    en: 'Act from desire, control, and speech. If only the name changes, rewrite for this person.'
 });
 
 function getCupidCharacterAdultIntimacy(sceneName, displayName, lang = 'ko', phase = 'school') {
@@ -1318,7 +1341,12 @@ function getCupidCharacterAdultIntimacy(sceneName, displayName, lang = 'ko', pha
         ? profile
         : (profile[phase] || profile.school || profile.gallery);
     if (!block) return '';
-    return lang === 'ko' ? block.ko : block.en;
+    const characterProfile = lang === 'ko' ? block.ko : block.en;
+    if (phase !== 'gallery') return characterProfile;
+    const contrastRule = lang === 'ko'
+        ? CUPID_GALLERY_ADULT_CHARACTER_CONTRAST.ko
+        : CUPID_GALLERY_ADULT_CHARACTER_CONTRAST.en;
+    return `${characterProfile} ${contrastRule}`;
 }
 
 window.getCupidCharacterAdultIntimacy = getCupidCharacterAdultIntimacy;
@@ -2129,5 +2157,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.72';
+const PROMPT_VERSION = '2.7.73';
 window.PROMPT_VERSION = PROMPT_VERSION;

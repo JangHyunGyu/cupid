@@ -4,11 +4,11 @@ const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..');
 const CHARACTERS = [
-    { key: 'Seoyeon', mainName: '서연', sharedName: '서연', galleryId: 'seyoun', cardSignal: '학생회장', relationshipSignal: '작은 다육이', voiceSignal: '시간·순서·약속', intimateSignal: '참다 새는 하·윽' },
-    { key: 'Yuna', mainName: '유나', sharedName: '유나', galleryId: 'yuna', cardSignal: '영구 문신', relationshipSignal: '이어폰 한쪽', voiceSignal: '사라진 시간을 정확히 되묻고', intimateSignal: '더·여기·놓지 마' },
-    { key: 'Dain', mainName: '다인', sharedName: '다인', galleryId: 'dain', cardSignal: '배구부 선수', relationshipSignal: '리듬게임', voiceSignal: '결론과 동사가 앞서고', intimateSignal: '야·같이·좋아' },
-    { key: 'Teacher', mainName: '담임', sharedName: '담임선생님', galleryId: 'teacher', cardSignal: '담임 교사', relationshipSignal: '미완성 원고', voiceSignal: '엉성한 전제', intimateSignal: '지금 이 학생의 담임', intimateGallerySignal: '옛 사제 호칭에 죄책감과 흥분' },
-    { key: 'Nurse', mainName: '보건', sharedName: '보건선생님', galleryId: 'nurse', cardSignal: '보건 교사', relationshipSignal: '로즈마리 향', voiceSignal: '표정·호흡·몸 상태', intimateSignal: '지금 이 학교의 보건교사', intimateGallerySignal: '옛 보건실 금기' }
+    { key: 'Seoyeon', mainName: '서연', sharedName: '서연', galleryId: 'seyoun', cardSignal: '학생회장', relationshipSignal: '작은 다육이', voiceSignal: '시간·순서·약속', intimateSignal: '참다 새는 하·윽', intimateGallerySignal: '먼저 흐트러지는 손끝이 완벽함의 균열' },
+    { key: 'Yuna', mainName: '유나', sharedName: '유나', galleryId: 'yuna', cardSignal: '영구 문신', relationshipSignal: '이어폰 한쪽', voiceSignal: '사라진 시간을 정확히 되묻고', intimateSignal: '더·여기·놓지 마', intimateGallerySignal: '침묵도 멈춤이 아니라 다음 선택을 붙드는 시간' },
+    { key: 'Dain', mainName: '다인', sharedName: '다인', galleryId: 'dain', cardSignal: '배구부 선수', relationshipSignal: '리듬게임', voiceSignal: '결론과 동사가 앞서고', intimateSignal: '야·같이·좋아', intimateGallerySignal: '통증은 자세와 경계를 바꾸는 신호' },
+    { key: 'Teacher', mainName: '담임', sharedName: '담임선생님', galleryId: 'teacher', cardSignal: '담임 교사', relationshipSignal: '미완성 원고', voiceSignal: '엉성한 전제', intimateSignal: '지금 이 학생의 담임', intimateGallerySignal: '논리적인 문장이 먼저 끊기고' },
+    { key: 'Nurse', mainName: '보건', sharedName: '보건선생님', galleryId: 'nurse', cardSignal: '보건 교사', relationshipSignal: '로즈마리 향', voiceSignal: '표정·호흡·몸 상태', intimateSignal: '지금 이 학교의 보건교사', intimateGallerySignal: '상대를 진찰하듯 다루지 않습니다' }
 ];
 const REQUIRED_BLOCKS = [
     '[한국어 원문체]',
@@ -286,10 +286,14 @@ function verifyMainAndGalleryPrompts(context) {
         assert(!galleryPrompt.includes('[성적]'), `[gallery/${character.key}] injected the adult example`);
         assert(galleryPrompt.includes('현재 장면의 인물은'), `[gallery/${character.key}] missing the in-world role rule`);
         assert(galleryPrompt.includes('연인 관계:'), `[gallery/${character.key}] missing the relationship label`);
-        assert(galleryPrompt.includes('보지·자지·삽입·애액·정액·절정'),
+        assert(['보지', '자지', '삽입', '애액', '정액', '절정'].every(term => galleryPrompt.includes(term)),
             `[gallery/${character.key}] can still hide established adult sex behind indirect wording`);
         assert(galleryPrompt.includes(character.intimateGallerySignal || character.intimateSignal),
             `[gallery/${character.key}] is missing its character-owned adult intimacy cadence`);
+        assert(galleryPrompt.includes('이름만 바꿔도 같다면'),
+            `[gallery/${character.key}] is missing the adult character-substitution guard`);
+        assert(!mainPrompt.includes('이름만 바꿔도 같다면'),
+            `[main/${character.key}] post-graduation adult contrast leaked into the school route`);
         if (character.key === 'Teacher' || character.key === 'Nurse') {
             assert(galleryPrompt.includes('죄책감') && galleryPrompt.includes('흥분'),
                 `[gallery/${character.key}] adult sex no longer mixes leftover teacher-student guilt with arousal`);
