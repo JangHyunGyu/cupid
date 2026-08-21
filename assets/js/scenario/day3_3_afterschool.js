@@ -394,7 +394,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/seyoun_sad.png",
         "choices": [
             { "next": "after3_seo_pity_trap_1", "stats": {"Seoyeon":{"affinity":-18}}, "setFlags": ["seo_pity_broken"] },
-            { "next": "after3_seo_correct_1", "stats": {"Seoyeon":{"affinity":12}} },
+            { "next": "after3_seo_correct_1", "stats": {"Seoyeon":{"affinity":9}} },
             { "next": "after3_seo_pity_trap_1", "stats": {"Seoyeon":{"affinity":-14}} },
             { "next": "after3_seo_pity_trap_1", "stats": {"Seoyeon":{"affinity":-16}} }
         ]
@@ -613,7 +613,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/yuna_shy.png",
         "choices": [
             { "next": "after3_yuna_decode_trap_1", "stats": {"Yuna":{"affinity":-22}}, "setFlags": ["yuna_safe_zone_broken"] },
-            { "next": "after3_yuna_correct_1", "stats": {"Yuna":{"affinity":13}} },
+            { "next": "after3_yuna_correct_1", "stats": {"Yuna":{"affinity":10}} },
             { "next": "after3_yuna_decode_trap_1", "stats": {"Yuna":{"affinity":-15}} },
             { "next": "after3_yuna_decode_trap_1", "stats": {"Yuna":{"affinity":-18}} }
         ]
@@ -812,7 +812,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/dain_sad.png",
         "choices": [
             { "next": "after3_dain_pity_trap_1", "stats": {"Dain":{"affinity":-20}}, "setFlags": ["pitied_dain"] },
-            { "next": "after3_dain_correct_1", "stats": {"Dain":{"affinity":13}} },
+            { "next": "after3_dain_correct_1", "stats": {"Dain":{"affinity":10}} },
             { "next": "after3_dain_pity_trap_1", "stats": {"Dain":{"affinity":-15}} },
             { "next": "after3_dain_pity_trap_1", "stats": {"Dain":{"affinity":-17}} }
         ]
@@ -1225,7 +1225,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             "focus": "Teacher",
             "tiePriority": ["Seoyeon", "Yuna", "Dain", "Nurse"]
         },
-        "maxTurns": 2,
+        "maxTurns": 3,
         "next": "after3_group_return"
     },
     "after3_group_nurse_companion": {
@@ -1239,7 +1239,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             "focus": "Nurse",
             "tiePriority": ["Dain", "Seoyeon", "Yuna", "Teacher"]
         },
-        "maxTurns": 2,
+        "maxTurns": 3,
         "next": "after3_group_return"
     },
     "after3_group_return": {

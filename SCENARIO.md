@@ -3915,7 +3915,7 @@
 ### `hidden_homeroom_d2_choice1`
 - 배경: `teacher_office.png`
 - 선택지:
-  1. "선생님은요? 뭐 읽으세요?" → `hidden_homeroom_d2_choice1_a` | Teacher +8
+  1. "선생님은요? 뭐 읽으세요?" → `hidden_homeroom_d2_choice1_a` | Teacher +5
   2. "읽는 건 좋아해요" → `hidden_homeroom_d2_choice1_b` | Teacher +2
   3. "선생님은 어려운 책만 읽으시죠?" → `hidden_homeroom_d2_choice1_trap` | Teacher -3
 
@@ -5956,7 +5956,7 @@
 ### `hidden_nurse_d2_choice1`
 - 배경: `nurse_room.png`
 - 선택지:
-  1. "병원에서는 이런 것도 배워요?" → `hidden_nurse_d2_choice1_a` | Nurse +8
+  1. "병원에서는 이런 것도 배워요?" → `hidden_nurse_d2_choice1_a` | Nurse +5
   2. "밴드 하나도 꼼꼼하시네요." → `hidden_nurse_d2_choice1_b` | Nurse -2
   3. "저한테만 이렇게 정성껏 해주시는 거죠?" → `hidden_nurse_d2_choice1_b` | Nurse -4
   4. "선생님한테 치료받으면 다친 것도 나쁘진 않네요" → `hidden_nurse_d2_choice1_b` | Nurse -6
@@ -6099,7 +6099,7 @@
 - 배경: `gym.png`
 - BGM: `daily2.mp3`
 - 플래그: `chose_dain_after2`
-- 스탯: Dain +6
+- 스탯: Dain +3
 - 다음: `after2_dain_2`
 
 - 캐릭터: `dain_active.png`
@@ -6533,7 +6533,7 @@
 - 배경: `student_room.png`
 - BGM: `sunset1.mp3`
 - 플래그: `chose_seo_after2`
-- 스탯: Seoyeon +6
+- 스탯: Seoyeon +3
 - 다음: `after2_seo_2`
 
 - 캐릭터: `seyoun_sad.png`
@@ -7119,7 +7119,7 @@
 
 ### `after2_yuna_2`
 - 배경: `yuna_hideout.png`
-- 스탯: Yuna +6
+- 스탯: Yuna +3
 - 다음: `after2_yuna_2_b`
 
 - 캐릭터: `yuna_normal.png`
@@ -8966,7 +8966,7 @@
 ### `hidden_homeroom_d3_choice`
 - 배경: `room_school.png`
 - 선택지:
-  1. "원고지인 거 봤어요. 소설 쓰시는 거예요?" → `hidden_homeroom_d3_reveal_1` | Teacher +9
+  1. "원고지인 거 봤어요. 소설 쓰시는 거예요?" → `hidden_homeroom_d3_reveal_1` | Teacher +6
   2. "죄송합니다, 안 봤어요." → `hidden_homeroom_d3_hide_1` | Teacher -3
   3. "완성되면 제가 제일 먼저 읽게 해주세요" → `hidden_homeroom_d3_reveal_1` | Teacher -5
   4. "제가 읽고 고칠 데를 먼저 찾아드릴게요" → `hidden_homeroom_d3_reveal_1` | Teacher -6
@@ -9627,7 +9627,7 @@
 ### `hidden_nurse_d3_choice1`
 - 배경: `nurse_room.png`
 - 선택지:
-  1. "그때 무슨 일이 있었어요?" → `hidden_nurse_d3_choice1_a` | Nurse +6
+  1. "그때 무슨 일이 있었어요?" → `hidden_nurse_d3_choice1_a` | Nurse +3
   2. "말하기 힘드시면 안 하셔도 돼요." → `hidden_nurse_d3_choice1_b` | Nurse +0
   3. "병원이 싫어서 학교로 오신 거예요?" → `hidden_nurse_d3_choice1_c` | Nurse -3
 
@@ -11899,7 +11899,7 @@
 - 배경: `student_room.png`
 - 선택지:
   1. "누구나 그럴 때 있어. 너무 신경 쓰지 마." → `after3_seo_pity_trap_1` | Seoyeon -18 | 플래그: `seo_pity_broken`
-  2. "방금? 아무것도 못 봤는데. 펜 떨어뜨려서 주우러 들어왔어." → `after3_seo_correct_1` | Seoyeon +12
+  2. "방금? 아무것도 못 봤는데. 펜 떨어뜨려서 주우러 들어왔어." → `after3_seo_correct_1` | Seoyeon +9
   3. "네 약한 모습까지 전부 이해해줄게" → `after3_seo_pity_trap_1` | Seoyeon -14
   4. "이제부터는 내가 옆에서 다 챙겨줄게" → `after3_seo_pity_trap_1` | Seoyeon -16
 
@@ -12260,7 +12260,7 @@
 - 배경: `yuna_hideout.png`
 - 선택지:
   1. "미안. 그래도 이거 내 이야기 맞지?" → `after3_yuna_decode_trap_1` | Yuna -22 | 플래그: `yuna_safe_zone_broken`
-  2. "미안. 펼쳐진 첫 장만 봤어. 더 읽지는 않을게. 그런데 이 작가, 문장이 정말 좋다." → `after3_yuna_correct_1` | Yuna +13
+  2. "미안. 펼쳐진 첫 장만 봤어. 더 읽지는 않을게. 그런데 이 작가, 문장이 정말 좋다." → `after3_yuna_correct_1` | Yuna +10
   3. "걱정 마. 이 노트는 내가 대신 잘 보관할게" → `after3_yuna_decode_trap_1` | Yuna -15
   4. "이런 글은 앞으로 나한테만 보여줘" → `after3_yuna_decode_trap_1` | Yuna -18
 
@@ -12603,7 +12603,7 @@
 - 배경: `gym.png`
 - 선택지:
   1. "역시 무리였네. 대회는 포기하고 오늘은 쉬어." → `after3_dain_pity_trap_1` | Dain -20 | 플래그: `pitied_dain`
-  2. "그럼 여기 있을게. 말하고 싶을 때 말해." → `after3_dain_correct_1` | Dain +13
+  2. "그럼 여기 있을게. 말하고 싶을 때 말해." → `after3_dain_correct_1` | Dain +10
   3. "네가 무리하지 않게 내가 대신 결정해줄게" → `after3_dain_pity_trap_1` | Dain -15
   4. "걱정 마. 이제부터 내가 계속 지켜볼게" → `after3_dain_pity_trap_1` | Dain -17
 

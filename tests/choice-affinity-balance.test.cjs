@@ -684,7 +684,7 @@ test('competitive scenes retain both relationship tradeoffs and add two all-nega
     }
 });
 
-test('optimal authored routes stay near 80 while supporting a shared pre-ending ceiling', () => {
+test('authored routes preserve the shared 120/130 ceiling after added group turns', () => {
     const optimalRouteEffects = {
         Seoyeon: [
             ['seoyeon_choice', 0], ['lunch_seo_3'], ['lunch_seo_choice', 0],
@@ -731,7 +731,7 @@ test('optimal authored routes stay near 80 while supporting a shared pre-ending 
         ]
     };
 
-    const expectedTotals = { Seoyeon: 77, Yuna: 77, Dain: 78, Teacher: 75, Nurse: 75 };
+    const expectedTotals = { Seoyeon: 71, Yuna: 71, Dain: 72, Teacher: 69, Nurse: 69 };
     for (const [character, effects] of Object.entries(optimalRouteEffects)) {
         const total = effects.reduce((sum, [sceneId, choiceIndex]) => {
             const source = Number.isInteger(choiceIndex) ? scenes[sceneId]?.choices?.[choiceIndex] : scenes[sceneId];
@@ -742,16 +742,23 @@ test('optimal authored routes stay near 80 while supporting a shared pre-ending 
         assert.equal(total, expectedTotals[character], `${character} optimal authored route budget drifted`);
     }
 
-    assert.equal(scenes.after3_seo_choice.choices[1].stats.Seoyeon.affinity, 12);
+    assert.equal(scenes.after2_seo_1.stats.Seoyeon.affinity, 3);
+    assert.equal(scenes.after2_yuna_2.stats.Yuna.affinity, 3);
+    assert.equal(scenes.after2_dain_1.stats.Dain.affinity, 3);
+    assert.equal(scenes.hidden_homeroom_d2_choice1.choices[0].stats.Teacher.affinity, 5);
+    assert.equal(scenes.hidden_nurse_d2_choice1.choices[0].stats.Nurse.affinity, 5);
+    assert.equal(scenes.after3_seo_choice.choices[1].stats.Seoyeon.affinity, 9);
     assert.equal(scenes.wall_seo_line_choice.choices[0].stats.Seoyeon.affinity, 6);
     assert.equal(scenes.wall_seo_line_choice.choices[1].stats.Seoyeon.affinity, 6);
     assert.equal(scenes.wall_seo_glimpse_2.choices[0].stats.Seoyeon.affinity, 3);
     assert.equal(scenes.tour_seo_14.stats.Seoyeon.affinity, 1);
     assert.equal(scenes.tour_yuna_11.stats.Yuna.affinity, 1);
     assert.equal(scenes.tour_dain_end.stats.Dain.affinity, 3);
-    assert.equal(scenes.after3_yuna_choice.choices[1].stats.Yuna.affinity, 13);
+    assert.equal(scenes.after3_yuna_choice.choices[1].stats.Yuna.affinity, 10);
     assert.equal(scenes.wall_yuna_choice.choices[0].stats.Yuna.affinity, 4);
-    assert.equal(scenes.after3_dain_choice.choices[1].stats.Dain.affinity, 13);
+    assert.equal(scenes.after3_dain_choice.choices[1].stats.Dain.affinity, 10);
+    assert.equal(scenes.hidden_homeroom_d3_choice.choices[0].stats.Teacher.affinity, 6);
+    assert.equal(scenes.hidden_nurse_d3_choice1.choices[0].stats.Nurse.affinity, 3);
     assert.ok(scenes.after3_dain_dilemma_final.choices[1].setFlags.includes('dain_planned_nurse_visit'));
     assert.equal(scenes.after3_dain_dilemma_final.choices[1].setFlags.includes('ignored_dain_knee'), false);
     assert.equal(korean.after3_dain_dilemma_final.choices[1], '알겠어. 네가 직접 말해. 대신 보건실엔 같이 갈게.');
@@ -777,13 +784,13 @@ test('personal free-talk routes keep earning positive affinity without a lifetim
         Nurse: ['after_nurse_freetalk', 'hidden_nurse_d2_freetalk', 'hidden_nurse_d3_freetalk', 'hidden_nurse_d4_freetalk', 'day5_nurse_ending_freetalk_perfect'],
         Haeun: ['haeun_freetalk']
     };
-    const authoredMaximum = { Seoyeon: 77, Yuna: 77, Dain: 78, Teacher: 75, Nurse: 75, Haeun: 0 };
+    const authoredMaximum = { Seoyeon: 71, Yuna: 71, Dain: 72, Teacher: 69, Nurse: 69, Haeun: 0 };
     const expectedBalance = {
-        Seoyeon: { authored: 77, freeTalk: 51, theoretical: 128, stored: 100 },
-        Yuna: { authored: 77, freeTalk: 51, theoretical: 128, stored: 100 },
-        Dain: { authored: 78, freeTalk: 51, theoretical: 129, stored: 100 },
-        Teacher: { authored: 75, freeTalk: 51, theoretical: 126, stored: 100 },
-        Nurse: { authored: 75, freeTalk: 51, theoretical: 126, stored: 100 },
+        Seoyeon: { authored: 71, freeTalk: 51, theoretical: 122, stored: 100 },
+        Yuna: { authored: 71, freeTalk: 51, theoretical: 122, stored: 100 },
+        Dain: { authored: 72, freeTalk: 51, theoretical: 123, stored: 100 },
+        Teacher: { authored: 69, freeTalk: 51, theoretical: 120, stored: 100 },
+        Nurse: { authored: 69, freeTalk: 51, theoretical: 120, stored: 100 },
         Haeun: { authored: 0, freeTalk: 15, theoretical: 15, stored: 15 }
     };
 
@@ -819,52 +826,52 @@ test('optimal routes reach 100 before the ending after all personal and group fr
     const routes = {
         Seoyeon: [
             ['authored', 10], ['free', 'lunch_seo_freetalk'],
-            ['authored', 24], ['group', 'after2_group_seoyeon_companion'],
+            ['authored', 21], ['group', 'after2_group_seoyeon_companion'],
             ['authored', 3], ['free', 'night2_seo_freetalk'],
-            ['authored', 20], ['free', 'after3_seo_freetalk'], ['group', 'after3_group_teacher_companion'],
+            ['authored', 17], ['free', 'after3_seo_freetalk'], ['group', 'after3_group_teacher_companion'],
             ['authored', 1],
             ['authored', 18], ['free', 'wall_seo_freetalk'],
             ['authored', 1], ['ending'], ['free', 'day5_seo_ending_freetalk_perfect']
         ],
         Yuna: [
             ['authored', 8], ['free', 'lunch_yuna_freetalk'],
-            ['authored', 22], ['group', 'after2_group_yuna_companion'],
+            ['authored', 19], ['group', 'after2_group_yuna_companion'],
             ['authored', 5], ['free', 'night2_yuna_freetalk'],
-            ['authored', 22], ['free', 'after3_yuna_freetalk'], ['group', 'after3_group_teacher_companion'],
+            ['authored', 19], ['free', 'after3_yuna_freetalk'], ['group', 'after3_group_teacher_companion'],
             ['authored', 4],
             ['authored', 15], ['free', 'wall_yuna_freetalk'],
             ['authored', 1], ['ending'], ['free', 'day5_yuna_ending_freetalk_perfect']
         ],
         Dain: [
             ['authored', 13], ['free', 'lunch_dain_freetalk'],
-            ['authored', 16], ['group', 'after2_group_dain_companion'],
+            ['authored', 13], ['group', 'after2_group_dain_companion'],
             ['authored', 6], ['free', 'night2_dain_freetalk'],
-            ['authored', 26], ['free', 'after3_dain_freetalk'], ['group', 'after3_group_teacher_companion'],
+            ['authored', 23], ['free', 'after3_dain_freetalk'], ['group', 'after3_group_teacher_companion'],
             ['authored', 2],
             ['authored', 12], ['free', 'wall_dain_freetalk'],
             ['authored', 3], ['ending'], ['free', 'day5_dain_ending_freetalk_perfect']
         ],
         Teacher: [
             ['authored', 14], ['free', 'after_homeroom_freetalk'],
-            ['authored', 14], ['free', 'hidden_homeroom_d2_freetalk'], ['group', 'after2_group_seoyeon_companion'],
-            ['authored', 16], ['free', 'hidden_homeroom_d3_freetalk'], ['group', 'after3_group_teacher_companion'],
+            ['authored', 11], ['free', 'hidden_homeroom_d2_freetalk'], ['group', 'after2_group_seoyeon_companion'],
+            ['authored', 13], ['free', 'hidden_homeroom_d3_freetalk'], ['group', 'after3_group_teacher_companion'],
             ['authored', 12], ['free', 'hidden_homeroom_d4_freetalk'],
             ['authored', 19], ['ending'], ['free', 'day5_teacher_ending_freetalk_perfect']
         ],
         Nurse: [
             ['authored', 14], ['free', 'after_nurse_freetalk'],
-            ['authored', 14], ['free', 'hidden_nurse_d2_freetalk'], ['group', 'after2_group_seoyeon_companion'],
-            ['authored', 15], ['free', 'hidden_nurse_d3_freetalk'], ['group', 'after3_group_nurse_companion'],
+            ['authored', 11], ['free', 'hidden_nurse_d2_freetalk'], ['group', 'after2_group_seoyeon_companion'],
+            ['authored', 12], ['free', 'hidden_nurse_d3_freetalk'], ['group', 'after3_group_nurse_companion'],
             ['authored', 17], ['free', 'hidden_nurse_d4_freetalk'],
             ['authored', 15], ['ending'], ['free', 'day5_nurse_ending_freetalk_perfect']
         ]
     };
     const expected = {
-        Seoyeon: { authored: 77, freeTalk: 53, preEnding: 120, theoretical: 130 },
-        Yuna: { authored: 77, freeTalk: 53, preEnding: 120, theoretical: 130 },
-        Dain: { authored: 78, freeTalk: 52, preEnding: 120, theoretical: 130 },
-        Teacher: { authored: 75, freeTalk: 55, preEnding: 120, theoretical: 130 },
-        Nurse: { authored: 75, freeTalk: 55, preEnding: 120, theoretical: 130 }
+        Seoyeon: { authored: 71, freeTalk: 59, preEnding: 120, theoretical: 130 },
+        Yuna: { authored: 71, freeTalk: 59, preEnding: 120, theoretical: 130 },
+        Dain: { authored: 72, freeTalk: 58, preEnding: 120, theoretical: 130 },
+        Teacher: { authored: 69, freeTalk: 61, preEnding: 120, theoretical: 130 },
+        Nurse: { authored: 69, freeTalk: 61, preEnding: 120, theoretical: 130 }
     };
 
     for (const [character, steps] of Object.entries(routes)) {

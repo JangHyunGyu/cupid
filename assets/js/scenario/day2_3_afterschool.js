@@ -68,7 +68,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "choices": [
-            { "next": "hidden_nurse_d2_choice1_a", "stats": {"Nurse":{"affinity":8}} },
+            { "next": "hidden_nurse_d2_choice1_a", "stats": {"Nurse":{"affinity":5}} },
             { "next": "hidden_nurse_d2_choice1_b", "stats": {"Nurse":{"affinity":-2}} },
             { "next": "hidden_nurse_d2_choice1_b", "stats": {"Nurse":{"affinity":-4}} },
             { "next": "hidden_nurse_d2_choice1_b", "stats": {"Nurse":{"affinity":-6}} }
@@ -157,7 +157,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "character": "assets/images/characters/dain_active.png",
         "bgm": "daily2.mp3",
         "setFlags": ["chose_dain_after2"],
-        "stats": {"Dain":{"affinity":6}},
+        "stats": {"Dain":{"affinity":3}},
         "next": "after2_dain_2"
     },
     "after2_dain_2": {
@@ -413,7 +413,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             "focus": "Dain",
             "tiePriority": ["Yuna", "Seoyeon", "Teacher", "Nurse"]
         },
-        "maxTurns": 2,
+        "maxTurns": 3,
         "next": "after2_group_return"
     },
     "after2_seo_1": {
@@ -421,7 +421,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "character": "assets/images/characters/seyoun_sad.png",
         "bgm": "sunset1.mp3",
         "setFlags": ["chose_seo_after2"],
-        "stats": {"Seoyeon":{"affinity":6}},
+        "stats": {"Seoyeon":{"affinity":3}},
         "next": "after2_seo_2"
     },
     "after2_seo_2": {
@@ -754,7 +754,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             "focus": "Seoyeon",
             "tiePriority": ["Dain", "Yuna", "Teacher", "Nurse"]
         },
-        "maxTurns": 2,
+        "maxTurns": 3,
         "next": "after2_group_return"
     },
     "after2_yuna_1": {
@@ -773,7 +773,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "after2_yuna_2": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "stats": {"Yuna":{"affinity":6}},
+        "stats": {"Yuna":{"affinity":3}},
         "next": "after2_yuna_2_b"
     },
     "after2_yuna_2_b": {
@@ -989,7 +989,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             "focus": "Yuna",
             "tiePriority": ["Seoyeon", "Dain", "Teacher", "Nurse"]
         },
-        "maxTurns": 2,
+        "maxTurns": 3,
         "next": "after2_group_return"
     },
     "after2_group_return": {

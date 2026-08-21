@@ -905,7 +905,7 @@ test('day-two student rivalry and day-three adult social groups use the highest-
         assert.equal(scene.groupParticipants.strategy, 'focus_with_highest_other_affinity');
         assert.equal(scene.groupParticipants.focus, expected.focus);
         assert.equal(scene.groupParticipants.tiePriority[0], expected.firstTie);
-        assert.equal(scene.maxTurns, 2);
+        assert.equal(scene.maxTurns, 3);
         assert.equal(scene.next, 'after2_group_return');
     }
     assert.equal(day2.after2_group_return.next, 'minsu_warn_gate');
@@ -928,7 +928,7 @@ test('day-two student rivalry and day-three adult social groups use the highest-
         assert.equal(scene.groupParticipants.strategy, 'focus_with_highest_other_affinity');
         assert.equal(scene.groupParticipants.focus, expected.focus);
         assert.equal(scene.groupParticipants.tiePriority[0], expected.firstTie);
-        assert.equal(scene.maxTurns, 2);
+        assert.equal(scene.maxTurns, 3);
         assert.equal(scene.next, 'after3_group_return');
     }
     assert.equal(day3.after3_group_return.next, 'haeun_check');

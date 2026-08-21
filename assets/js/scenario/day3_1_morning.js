@@ -367,7 +367,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "choices": [
-            { "next": "hidden_homeroom_d3_reveal_1", "stats": {"Teacher":{"affinity":9}} },
+            { "next": "hidden_homeroom_d3_reveal_1", "stats": {"Teacher":{"affinity":6}} },
             { "next": "hidden_homeroom_d3_hide_1", "stats": {"Teacher":{"affinity":-3}} },
             { "next": "hidden_homeroom_d3_reveal_1", "stats": {"Teacher":{"affinity":-5}} },
             { "next": "hidden_homeroom_d3_reveal_1", "stats": {"Teacher":{"affinity":-6}} }
@@ -742,7 +742,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "choices": [
-            { "next": "hidden_nurse_d3_choice1_a", "stats": {"Nurse":{"affinity":6}} },
+            { "next": "hidden_nurse_d3_choice1_a", "stats": {"Nurse":{"affinity":3}} },
             { "next": "hidden_nurse_d3_choice1_b", "stats": {"Nurse":{"affinity":0}} },
             { "next": "hidden_nurse_d3_choice1_c", "stats": {"Nurse":{"affinity":-3}} }
         ]
