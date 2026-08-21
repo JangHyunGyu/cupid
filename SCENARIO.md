@@ -17881,7 +17881,7 @@
 - 배경: `room_my.png`
 - 실시간 순위 분기:
   - 루트 캐릭터: `Nurse` (상위 2명)
-  - 라이벌 최소 호감도: 0
+  - 라이벌 최소 호감도: 20
   - [`Seoyeon`] → `day4_nurse_seoyeon_counteroffer`
   - [`Dain`] → `day4_nurse_dain_counteroffer`
   - [`Yuna`] → `day4_nurse_yuna_counteroffer`
@@ -17937,7 +17937,7 @@
 - 배경: `room_my.png`
 - 실시간 순위 분기:
   - 루트 캐릭터: `Teacher` (상위 2명)
-  - 라이벌 최소 호감도: 0
+  - 라이벌 최소 호감도: 20
   - [`Seoyeon`] → `day4_teacher_seoyeon_counteroffer`
   - [`Dain`] → `day4_teacher_dain_counteroffer`
   - [`Yuna`] → `day4_teacher_yuna_counteroffer`
@@ -18067,7 +18067,7 @@
 - 배경톤: `cold`
 - 실시간 순위 분기:
   - 루트 캐릭터: `Seoyeon` (상위 2명)
-  - 라이벌 최소 호감도: 0
+  - 라이벌 최소 호감도: 20
   - [`Dain`] → `wall_seo_glimpse_1`
   - [`Yuna`] → `wall_seo_yuna_tempt_1`
   - [기준 미달] → `wall_seo_1`
@@ -18716,7 +18716,7 @@
 - 배경: `school_back.png`
 - 실시간 순위 분기:
   - 루트 캐릭터: `Dain` (상위 2명)
-  - 라이벌 최소 호감도: 0
+  - 라이벌 최소 호감도: 20
   - [`Seoyeon`] → `wall_dain_seo_tempt_1`
   - [`Yuna`] → `wall_dain_glimpse_1`
   - [기준 미달] → `wall_dain_1`
@@ -19557,7 +19557,7 @@
 - 배경톤: `dream`
 - 실시간 순위 분기:
   - 루트 캐릭터: `Yuna` (상위 2명)
-  - 라이벌 최소 호감도: 0
+  - 라이벌 최소 호감도: 20
   - [`Seoyeon`] → `wall_yuna_glimpse_1`
   - [`Dain`] → `wall_yuna_dain_tempt_1`
   - [기준 미달] → `wall_yuna_1`
