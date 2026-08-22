@@ -1517,12 +1517,12 @@ Latest user: """${excerpt}"""
         onRender,
         onReset = null,
         shouldFlush = null,
-        intervalMs = 40,
+        intervalMs = 20,
         charactersPerTick = 2,
         schedule = (callback, delay) => global.setTimeout(callback, delay),
         cancel = timer => global.clearTimeout(timer)
     } = {}) {
-        const tickDelay = Math.max(10, Number(intervalMs) || 40);
+        const tickDelay = Math.max(10, Number(intervalMs) || 20);
         const tickCharacters = Math.max(1, Math.floor(Number(charactersPerTick) || 2));
         let targetText = '';
         let targetSegments = [];

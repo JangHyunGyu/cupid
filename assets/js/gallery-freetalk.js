@@ -983,7 +983,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         try {
             let _streamingStarted = false;
             _streamingPreview = GalleryFreeTalkCore.createPacedStreamingPreview({
-                intervalMs: 40,
+                intervalMs: 20,
                 charactersPerTick: 2,
                 shouldFlush: () => this.skipTyping === true,
                 onRender: ({ text: previewText, segments: previewSegments }) => {
