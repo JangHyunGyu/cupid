@@ -2001,10 +2001,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
         const img = document.getElementById('gft-char-img');
         if (img) {
-            const assetExpression = charId === 'nurse' && resolvedExpression === 'climax'
-                ? 'flushed'
-                : resolvedExpression;
-            img.src = `assets/images/characters/${charId}_${assetExpression}.png?v=${window.ASSET_VERSION || ''}`;
+            img.src = `assets/images/characters/${charId}_${resolvedExpression}.png?v=${window.ASSET_VERSION || ''}`;
         }
     }
 

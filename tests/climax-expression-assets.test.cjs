@@ -6,7 +6,7 @@ const vm = require('node:vm');
 
 const root = path.resolve(__dirname, '..');
 const characterIds = ['seyoun', 'yuna', 'dain', 'teacher', 'nurse'];
-const dedicatedAssetIds = ['seyoun', 'yuna', 'dain', 'teacher'];
+const dedicatedAssetIds = ['seyoun', 'yuna', 'dain', 'teacher', 'nurse'];
 const languages = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'];
 
 function read(relativePath) {
@@ -49,16 +49,9 @@ test('main and gallery free talk register climax with a strict actual-climax gua
     for (const charId of dedicatedAssetIds) {
         assert.match(prompts, new RegExp(`climax: 'assets/images/characters/${charId}_climax\\.png'`));
     }
-    assert.match(prompts, /climax: 'assets\/images\/characters\/nurse_flushed\.png'/);
     for (const charId of characterIds) {
         assert.match(gallery, new RegExp(`${charId}: \\[[^\\]]*'climax'`));
     }
-    assert.match(gallery, /charId === 'nurse' && resolvedExpression === 'climax'/);
     assert.match(core, /climax는 성인 간 성행위에서 이번 응답에 절정이 있을 때만/);
     assert.match(core, /Use climax only for an orgasm in this response during consensual adult sex/);
-});
-
-test('the approved nurse fallback maps climax directly to flushed', () => {
-    assert.equal(fs.existsSync(path.join(root, 'assets/images/characters/nurse_climax.png')), false);
-    assert.equal(fs.existsSync(path.join(root, 'assets/images/characters/nurse_climax.webp')), false);
 });
