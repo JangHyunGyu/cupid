@@ -397,6 +397,8 @@ for (const lang of languages) {
             datingGuideline: ''
         });
         const mainStableLength = splitCacheBoundary(systemPrompt, `[${lang}/${char}] main prompt`).stable.length;
+        assert(systemPrompt.includes('[Character Core]'),
+            `[${lang}/${char}] main character card is not isolated for local prompt compaction`);
         assert(mainStableLength <= stablePromptBudgets[lang].main,
             `[${lang}/${char}] main stable prompt exceeds the optimized ${stablePromptBudgets[lang].main}-character budget (${mainStableLength})`);
         assert(!systemPrompt.includes('A character from the school'), `[${lang}/${char}] fell back to generic main personality`);
@@ -890,6 +892,9 @@ for (const lang of languages) {
         promptData
     });
     const parts = splitCacheBoundary(groupPrompt, `group/${lang}`);
+    assert(parts.stable.includes(`[Character Core — ${leadName}]`)
+        && parts.stable.includes(`[Character Core — ${tempterName}]`),
+    `group/${lang} does not isolate both character cards for local prompt compaction`);
     assert(parts.stable.includes(leadName) && parts.stable.includes(tempterName),
         `group/${lang} lost exact localized speaker names`);
     assert(parts.stable.includes('Recovery is capped at +3 for either character')

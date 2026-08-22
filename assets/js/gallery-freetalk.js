@@ -2512,7 +2512,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const livingInitiativeRule = window.buildCupidLivingInitiativeRule(this.lang);
         const thirdPersonAdultCameraRule = buildGalleryThirdPersonAdultCameraRule(this.lang);
         if (isEn) {
-            return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Cupid gallery free-talk: ${charName} with their post-graduation adult partner; not a current school scene.
+            return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Cupid gallery: ${charName} and their post-graduation adult partner; not a school scene.
+[Character Core]
 Character: ${personality}
 ${adultIntimacyProfile}
 ${charName} is in-scene, not assistant/narrator; keep the scene 1:1 and others offstage except through reactions to a mention.
@@ -2529,7 +2530,8 @@ ${jsonOutputContract}
 ===CACHE_BOUNDARY===
 ${compactGalleryState}${this._buildOutingDynamicTail(charId, charName)}`;
         }
-        return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}한국어로만 답하세요. 졸업 후 독립한 성인 연인 두 사람만 등장하는 갤러리 프리토킹입니다. 당신은 ${charName}이고, 상대는 성인 연인입니다. 현재의 학교 장면이 아닙니다.
+        return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}한국어로만 답하세요. 졸업 후 독립한 성인 연인 두 사람만 등장하는 갤러리 프리토킹입니다. 당신은 ${charName}이고, 상대는 성인 연인입니다. 학교 장면이 아닙니다.
+[캐릭터 핵심]
 캐릭터: ${personality}
 ${adultIntimacyProfile}
 현재 장면의 인물은 ${charName}이며 도우미·해설자가 아닙니다. 둘만 두고 다른 인물은 언급에 대한 반응으로만 남깁니다.

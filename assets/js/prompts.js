@@ -1893,6 +1893,7 @@ function buildSystemPrompt(params) {
         : `현재 상태: 장소=${locationName || '현재 장면'}; 사용자=${playerName || '주인공'}; 이름 인지=${knowsName ? '예' : '아니요'}; 호감도=${affinity}\n장면 맥락: ${context}`;
     if (useEnTemplate) {
         return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Cupid 1:1 scene with ${aiCharName}; no third parties except ${aiCharName}'s reaction to a mention.
+[Character Core]
 Character: ${charPersonality}
 Voice: ${charStyleGuideline}
 Romance and preferences: ${charRelationshipGuideline}
@@ -1915,6 +1916,7 @@ ${compactLiveState}
 ${compactDynamicGuidance}`;
     }
     return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}한국어로만 답하세요. 지금은 주인공과 ${aiCharName}, 두 사람만 마주한 장면입니다. 다른 인물은 언급을 들은 ${aiCharName}의 반응으로만 남기고 장면에 들이지 마세요.
+[캐릭터 핵심]
 캐릭터: ${charPersonality}
 말투: ${charStyleGuideline}
 취향과 연애 방식: ${charRelationshipGuideline}
@@ -2031,8 +2033,8 @@ function buildCupidGroupSystemPrompt(params = {}) {
                     ? '중심 인물의 말을 실제로 듣고 자기 관점에서 끼어듭니다. 분위기를 설명하는 진행자가 되지 말고, 필요하면 묻거나 놀리거나 말리거나 반박하면서 주인공에게도 직접 반응합니다.'
                     : 'Listen to the focus character and join from this character’s own point of view. Do not become an explanatory moderator; question, tease, steady, or disagree when natural, while responding directly to the protagonist too.'));
         return useKo
-            ? `[${participant.name} — ${roleLabel}]\n캐릭터: ${personality}\n말투: ${voice}\n취향과 연애 방식: ${relationship}\n장면 역할: ${sceneDrive}\n연기 원칙: ${general}\n거리와 상호작용: ${interaction}\n호감도 기준: ${criteria}\n허용 표정: ${expressions}\n${outfit}\n${canon}\n${polish}`
-            : `[${participant.name} — ${roleLabel}]\nCharacter: ${personality}\nVoice: ${voice}\nRomance and preferences: ${relationship}\nScene drive: ${sceneDrive}\nIn scene: ${general}\nDistance and interaction: ${interaction}\nAffinity criteria: ${criteria}\nAllowed expressions: ${expressions}\n${outfit}\n${canon}\n${polish}`;
+            ? `[캐릭터 핵심 — ${participant.name}]\n관계상 위치: ${roleLabel}\n캐릭터: ${personality}\n말투: ${voice}\n취향과 연애 방식: ${relationship}\n장면 역할: ${sceneDrive}\n연기 원칙: ${general}\n거리와 상호작용: ${interaction}\n호감도 기준: ${criteria}\n허용 표정: ${expressions}\n${outfit}\n${canon}\n${polish}`
+            : `[Character Core — ${participant.name}]\nRelationship role: ${roleLabel}\nCharacter: ${personality}\nVoice: ${voice}\nRomance and preferences: ${relationship}\nScene drive: ${sceneDrive}\nIn scene: ${general}\nDistance and interaction: ${interaction}\nAffinity criteria: ${criteria}\nAllowed expressions: ${expressions}\n${outfit}\n${canon}\n${polish}`;
     }).join('\n\n');
 
     const competitiveMissionRules = useKo

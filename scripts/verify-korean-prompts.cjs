@@ -259,6 +259,8 @@ function verifyMainAndGalleryPrompts(context) {
         });
         mainPrompts[character.key] = mainPrompt;
         assertCommonKoreanPrompt(mainPrompt, `main/${character.key}`);
+        assert(mainPrompt.includes('[캐릭터 핵심]'),
+            `[main/${character.key}] character card is not isolated for local prompt compaction`);
         assert(mainPrompt.includes(character.cardSignal), `[main/${character.key}] used the generic card`);
         assert(mainPrompt.includes('취향과 연애 방식:'), `[main/${character.key}] missing the relationship profile label`);
         assert(mainPrompt.includes(character.relationshipSignal),
@@ -281,6 +283,8 @@ function verifyMainAndGalleryPrompts(context) {
         const galleryPrompt = gallery._buildSystemPrompt(character.galleryId);
         galleryPrompts[character.key] = galleryPrompt;
         assertCommonKoreanPrompt(galleryPrompt, `gallery/${character.key}`);
+        assert(galleryPrompt.includes('[캐릭터 핵심]'),
+            `[gallery/${character.key}] character card is not isolated for local prompt compaction`);
         assert(!galleryPrompt.includes('forcedSexualViolation'),
             `[gallery/${character.key}] main-scenario violation routing leaked into gallery free talk`);
         assert(!galleryPrompt.includes('[성적]'), `[gallery/${character.key}] injected the adult example`);
@@ -878,6 +882,10 @@ function verifyGroupPromptCacheContract(context) {
         && firstParts.stable.includes('리듬게임')
         && firstParts.stable.includes('취향과 연애 방식을 공통 대사 소재처럼 나열하지 말고'),
     'group prompt does not carry both distinct relationship profiles into the shared scene');
+    assert(firstParts.stable.includes('[캐릭터 핵심 — 서연]')
+        && firstParts.stable.includes('[캐릭터 핵심 — 다인]')
+        && firstParts.stable.includes('관계상 위치:'),
+    'group prompt does not isolate both character cards for local prompt compaction');
     for (const character of CHARACTERS) {
         const partner = character.key === 'Dain'
             ? { id: 'Seoyeon', name: '서연' }
