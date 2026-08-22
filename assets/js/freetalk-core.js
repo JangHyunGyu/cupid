@@ -1513,21 +1513,34 @@ Latest user: """${excerpt}"""
         return visible;
     }
 
+    const STREAMING_CHARACTER_DELAY_MS = 10;
+    const STREAMING_MAX_CHARACTERS_PER_FRAME = 2;
+
     function createPacedStreamingPreview({
         onRender,
         onReset = null,
         shouldFlush = null,
-        intervalMs = 20,
-        charactersPerTick = 2,
-        schedule = (callback, delay) => global.setTimeout(callback, delay),
-        cancel = timer => global.clearTimeout(timer)
+        characterDelayMs = STREAMING_CHARACTER_DELAY_MS,
+        maxCharactersPerFrame = STREAMING_MAX_CHARACTERS_PER_FRAME,
+        now = () => (global.performance?.now?.() ?? Date.now()),
+        scheduleFrame = callback => (typeof global.requestAnimationFrame === 'function'
+            ? global.requestAnimationFrame(callback)
+            : global.setTimeout(() => callback(now()), 16)),
+        cancelFrame = frameId => (typeof global.cancelAnimationFrame === 'function'
+            ? global.cancelAnimationFrame(frameId)
+            : global.clearTimeout(frameId))
     } = {}) {
-        const tickDelay = Math.max(10, Number(intervalMs) || 20);
-        const tickCharacters = Math.max(1, Math.floor(Number(charactersPerTick) || 2));
+        const charDelay = Math.max(6, Number(characterDelayMs) || STREAMING_CHARACTER_DELAY_MS);
+        const frameCharacterLimit = Math.max(
+            1,
+            Math.floor(Number(maxCharactersPerFrame) || STREAMING_MAX_CHARACTERS_PER_FRAME)
+        );
         let targetText = '';
         let targetSegments = [];
         let visibleCharacters = 0;
-        let timer = null;
+        let frame = null;
+        let lastTimestamp = null;
+        let accumulatedMs = 0;
         let stopped = false;
         const drainWaiters = [];
 
@@ -1540,22 +1553,39 @@ Latest user: """${excerpt}"""
             if (visibleCharacters < Array.from(targetText).length) return;
             while (drainWaiters.length) drainWaiters.shift()();
         };
-        const scheduleTick = () => {
-            if (stopped || timer !== null) return;
-            timer = schedule(tick, tickDelay);
+        const scheduleNextFrame = () => {
+            if (stopped || frame !== null || visibleCharacters >= Array.from(targetText).length) return;
+            if (lastTimestamp === null) lastTimestamp = now();
+            frame = scheduleFrame(tick);
         };
-        const tick = () => {
-            timer = null;
+        const tick = (timestamp) => {
+            frame = null;
             if (stopped) return;
             const targetLength = Array.from(targetText).length;
             if (typeof shouldFlush === 'function' && shouldFlush()) {
                 visibleCharacters = targetLength;
-            } else if (visibleCharacters < targetLength) {
-                visibleCharacters = Math.min(targetLength, visibleCharacters + tickCharacters);
+            } else {
+                const currentTimestamp = Number.isFinite(Number(timestamp)) ? Number(timestamp) : now();
+                accumulatedMs += Math.max(0, currentTimestamp - lastTimestamp);
+                lastTimestamp = currentTimestamp;
+                const step = Math.min(
+                    Math.floor(accumulatedMs / charDelay),
+                    frameCharacterLimit,
+                    targetLength - visibleCharacters
+                );
+                if (step > 0) {
+                    visibleCharacters += step;
+                    accumulatedMs -= step * charDelay;
+                }
             }
             render();
             resolveDrain();
-            if (visibleCharacters < targetLength) scheduleTick();
+            if (visibleCharacters < targetLength) {
+                scheduleNextFrame();
+            } else {
+                lastTimestamp = null;
+                accumulatedMs = 0;
+            }
         };
 
         return {
@@ -1575,27 +1605,31 @@ Latest user: """${excerpt}"""
                     visibleCharacters = 1;
                     render();
                 }
-                if (visibleCharacters < targetLength) scheduleTick();
+                if (visibleCharacters < targetLength) scheduleNextFrame();
                 else resolveDrain();
             },
             drain() {
                 if (visibleCharacters >= Array.from(targetText).length) return Promise.resolve();
-                scheduleTick();
+                scheduleNextFrame();
                 return new Promise(resolve => drainWaiters.push(resolve));
             },
             reset() {
-                if (timer !== null) cancel(timer);
-                timer = null;
+                if (frame !== null) cancelFrame(frame);
+                frame = null;
                 targetText = '';
                 targetSegments = [];
                 visibleCharacters = 0;
+                lastTimestamp = null;
+                accumulatedMs = 0;
                 while (drainWaiters.length) drainWaiters.shift()();
                 if (typeof onReset === 'function') onReset();
             },
             stop() {
                 stopped = true;
-                if (timer !== null) cancel(timer);
-                timer = null;
+                if (frame !== null) cancelFrame(frame);
+                frame = null;
+                lastTimestamp = null;
+                accumulatedMs = 0;
                 while (drainWaiters.length) drainWaiters.shift()();
             }
         };
