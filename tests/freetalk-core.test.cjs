@@ -24,6 +24,7 @@ vm.runInNewContext(source, {
     encodeURIComponent
 });
 const core = window.CupidFreeTalkCore;
+const composer = require('../assets/js/modules/MessageComposerUtils.js');
 
 function read(relativePath) {
     return fs.readFileSync(path.join(__dirname, '..', relativePath), 'utf8');
@@ -1929,4 +1930,38 @@ test('new game clears only main-run state while gallery and D1 remain separate',
     const gallery = read('assets/js/gallery-freetalk.js');
     assert.match(gallery, /this\.MEMORY_KEY = 'cupid_freetalk_memory'/);
     assert.match(gallery, /all\[charId\] = chatOnly\.slice\(-20\)/);
+});
+
+test('desktop Enter submits while Shift+Enter and Alt+Enter remain newlines', () => {
+    const desktopEnvironment = {
+        navigator: { userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' },
+        matchMedia: () => ({ matches: false })
+    };
+
+    assert.equal(composer.shouldSubmitOnEnter({ key: 'Enter' }, desktopEnvironment), true);
+    assert.equal(composer.shouldSubmitOnEnter({ key: 'Enter', shiftKey: true }, desktopEnvironment), false);
+    assert.equal(composer.shouldSubmitOnEnter({ key: 'Enter', altKey: true }, desktopEnvironment), false);
+    assert.equal(composer.shouldSubmitOnEnter({ key: 'Enter', isComposing: true }, desktopEnvironment), false);
+    assert.equal(composer.shouldSubmitOnEnter({ key: 'Enter', keyCode: 229 }, desktopEnvironment), false);
+});
+
+test('mobile and coarse-pointer Enter remain native textarea newlines', () => {
+    assert.equal(composer.shouldSubmitOnEnter({ key: 'Enter' }, {
+        navigator: { userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X)' },
+        matchMedia: () => ({ matches: false })
+    }), false);
+    assert.equal(composer.shouldSubmitOnEnter({ key: 'Enter' }, {
+        navigator: { userAgent: 'Mozilla/5.0' },
+        matchMedia: () => ({ matches: true })
+    }), false);
+});
+
+test('game and gallery FreeTalk inputs use the shared keyboard rule', () => {
+    const gameEngine = read('assets/js/modules/GameEngine.js');
+    const gallery = read('assets/js/gallery-freetalk.js');
+
+    assert.match(gameEngine, /chatInput\.addEventListener\('keydown',[\s\S]*MessageComposerUtils\?\.shouldSubmitOnEnter/);
+    assert.match(gameEngine, /chatSendBtn\?\.click\(\)/);
+    assert.match(gallery, /input\.addEventListener\('keydown',[\s\S]*MessageComposerUtils\?\.shouldSubmitOnEnter/);
+    assert.match(gallery, /event\.preventDefault\(\);\s*this\._handleSend\(\);/);
 });

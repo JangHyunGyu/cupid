@@ -233,6 +233,13 @@ class GameEngine {
 
         if (this.uiManager.chatInput) {
             this.uiManager.chatInput.addEventListener('input', () => this.uiManager.resizeChatInput());
+            this.uiManager.chatInput.addEventListener('keydown', (event) => {
+                if (!window.MessageComposerUtils?.shouldSubmitOnEnter(event)) return;
+
+                event.preventDefault();
+                if (this.uiManager.chatInput.disabled || this.uiManager.chatSendBtn?.disabled) return;
+                this.uiManager.chatSendBtn?.click();
+            });
             this.uiManager.resizeChatInput();
         }
 

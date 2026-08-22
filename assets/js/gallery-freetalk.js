@@ -638,6 +638,12 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         closeBtn.addEventListener('click', () => this.close());
         sendBtn.addEventListener('click', () => this._handleSend());
         input.addEventListener('input', () => this._resizeInput(input));
+        input.addEventListener('keydown', (event) => {
+            if (!window.MessageComposerUtils?.shouldSubmitOnEnter(event)) return;
+
+            event.preventDefault();
+            this._handleSend();
+        });
         this._resizeInput(input);
 
         // 대사창 클릭 → 타이핑 스킵 (게임과 동일)
