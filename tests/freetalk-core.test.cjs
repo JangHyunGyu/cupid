@@ -53,6 +53,31 @@ test('group streaming preview stays inside the first speaker object', () => {
     assert.doesNotMatch(preview.text, /두 번째/);
 });
 
+test('collection fallback keeps every streamed narration and dialogue segment after completion', () => {
+    const payload = {
+        sceneNarration: 'The hallway lights dim.',
+        sceneMessages: [
+            { name: 'Scene', type: 'scene', text: 'Rain taps against the glass.' },
+            { name: 'A', segments: [{ type: 'dialogue', text: 'Stay close.' }] },
+            { name: 'Scene', segments: [{ type: 'scene', text: 'The door opens slowly.' }] },
+            { name: 'A', segments: [{ type: 'dialogue', text: 'We should move.' }] }
+        ]
+    };
+    const preview = core.extractStreamingSegmentsPreview(JSON.stringify(payload));
+    const completed = core.normalizeCupidResponsePayload(payload);
+    const previewSegments = Array.from(preview.segments, segment => `${segment.type}:${segment.text}`);
+    const completedSegments = Array.from(completed.segments, segment => `${segment.type}:${segment.text}`);
+
+    assert.deepEqual(completedSegments, [
+        'narration:The hallway lights dim.',
+        'narration:Rain taps against the glass.',
+        'dialogue:Stay close.',
+        'narration:The door opens slowly.',
+        'dialogue:We should move.'
+    ]);
+    assert.deepEqual(completedSegments, previewSegments);
+});
+
 test('paced preview starts immediately and then reveals at most two characters per animation frame', async () => {
     const scheduled = [];
     const rendered = [];

@@ -704,12 +704,26 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         }
         if (Array.isArray(value)) {
             if (value.length === 1) return normalizeCupidResponsePayload(value[0], depth + 1);
-            const segments = value.map(segment => {
-                if (!segment || typeof segment !== 'object') return null;
-                const text = String(segment.text || segment.content || segment.message || '').trim();
-                if (!text) return null;
-                return { ...segment, text };
-            }).filter(Boolean);
+            const segments = value.flatMap(entry => {
+                const normalized = normalizeCupidResponsePayload(entry, depth + 1);
+                if (!normalized) return [];
+                if (Array.isArray(normalized.segments) && normalized.segments.length > 0) {
+                    return normalized.segments.map(segment => {
+                        const type = String(segment?.type || '').trim().toLowerCase();
+                        return {
+                            ...segment,
+                            type: ['narration', 'scene', 'action'].includes(type) ? 'narration' : 'dialogue'
+                        };
+                    });
+                }
+                const text = String(normalized.text || '').trim();
+                if (!text) return [];
+                const explicitType = String(normalized.type || '').trim().toLowerCase();
+                const type = ['narration', 'scene', 'action'].includes(explicitType)
+                    ? 'narration'
+                    : 'dialogue';
+                return [{ type, text }];
+            });
             return segments.length > 0 ? { segments } : null;
         }
         if (typeof value !== 'object') return null;
@@ -718,24 +732,9 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
             return value;
         }
 
-        for (const collectionName of ['sceneMessages', 'conversations']) {
-            const collection = value[collectionName];
-            if (!Array.isArray(collection)) continue;
-            for (const entry of collection) {
-                const normalized = normalizeCupidResponsePayload(entry, depth + 1);
-                if (!normalized) continue;
-                return {
-                    ...value,
-                    ...normalized,
-                    expression: normalized.expression ?? value.expression,
-                    affinity: normalized.affinity ?? value.affinity,
-                    incident: normalized.incident ?? value.incident,
-                };
-            }
-        }
-
         const legacySegments = [];
         for (const [key, type] of [
+            ['sceneNarration', 'narration'],
             ['narration', 'narration'],
             ['action', 'narration'],
             ['scene', 'narration'],
@@ -750,6 +749,47 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
                 if (text) legacySegments.push({ type, text });
             }
         }
+
+        for (const collectionName of ['sceneMessages', 'conversations']) {
+            const collection = value[collectionName];
+            if (!Array.isArray(collection)) continue;
+            const normalizedEntries = [];
+            const collectionSegments = [];
+            for (const entry of collection) {
+                const normalized = normalizeCupidResponsePayload(entry, depth + 1);
+                if (!normalized) continue;
+                normalizedEntries.push(normalized);
+                if (Array.isArray(normalized.segments) && normalized.segments.length > 0) {
+                    collectionSegments.push(...normalized.segments.map(segment => {
+                        const type = String(segment?.type || '').trim().toLowerCase();
+                        return {
+                            ...segment,
+                            type: ['narration', 'scene', 'action'].includes(type) ? 'narration' : 'dialogue'
+                        };
+                    }));
+                    continue;
+                }
+                const text = String(normalized.text || '').trim();
+                if (!text) continue;
+                const explicitType = String(normalized.type || '').trim().toLowerCase();
+                collectionSegments.push({
+                    type: ['narration', 'scene', 'action'].includes(explicitType) ? 'narration' : 'dialogue',
+                    text
+                });
+            }
+            if (collectionSegments.length > 0) {
+                const first = normalizedEntries[0] || {};
+                return {
+                    ...value,
+                    ...first,
+                    segments: [...legacySegments, ...collectionSegments],
+                    expression: first.expression ?? value.expression,
+                    affinity: first.affinity ?? value.affinity,
+                    incident: first.incident ?? value.incident,
+                };
+            }
+        }
+
         if (legacySegments.length > 0) return { ...value, segments: legacySegments };
 
         for (const key of ['', 'data', 'result', 'output', 'response', 'message', 'content', 'reply']) {
@@ -1349,16 +1389,14 @@ Latest user: """${excerpt}"""
         const prefix = source.slice(Math.max(0, objectStart), keyStart);
         const prefixType = /"type"\s*:\s*"([^"\\]*(?:\\.[^"\\]*)*)"/.exec(prefix);
         if (prefixType) {
-            return decodePartialJsonString(prefixType[1], true).toLowerCase() === 'narration'
-                ? 'narration'
-                : 'dialogue';
+            const type = decodePartialJsonString(prefixType[1], true).toLowerCase();
+            return ['narration', 'scene', 'action'].includes(type) ? 'narration' : 'dialogue';
         }
         const suffix = source.slice(valueEnd, Math.min(source.length, valueEnd + 180));
         const suffixType = /"type"\s*:\s*"([^"\\]*(?:\\.[^"\\]*)*)"/.exec(suffix);
         if (suffixType) {
-            return decodePartialJsonString(suffixType[1], true).toLowerCase() === 'narration'
-                ? 'narration'
-                : 'dialogue';
+            const type = decodePartialJsonString(suffixType[1], true).toLowerCase();
+            return ['narration', 'scene', 'action'].includes(type) ? 'narration' : 'dialogue';
         }
         return 'dialogue';
     }
@@ -1366,7 +1404,7 @@ Latest user: """${excerpt}"""
     function extractStreamingSegmentsPreview(rawText) {
         const source = String(rawText || '');
         if (!source) return { text: '', segments: [] };
-        const visibleKeys = new Set(['text', 'dialogue', 'narration']);
+        const visibleKeys = new Set(['text', 'dialogue', 'narration', 'sceneNarration']);
         const segments = [];
         const keyPattern = /"([^"\\]*(?:\\.[^"\\]*)*)"\s*:\s*"/g;
         let match;
