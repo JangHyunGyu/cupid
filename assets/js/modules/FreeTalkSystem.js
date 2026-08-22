@@ -1347,7 +1347,7 @@ class FreeTalkSystem {
                     return await CupidFreeTalkCore.readChatCompletionStream(response, {
                         onDelta: ({ content }) => {
                             this._assertRequestContext(requestContext);
-                            if (!_latestTurnIntimacyBoundaryRule) updateStreamingPreview(content);
+                            updateStreamingPreview(content);
                         }
                     });
                 } catch (streamError) {
@@ -1407,8 +1407,6 @@ class FreeTalkSystem {
                     charKey,
                     recentMessages: _optimized,
                     latestUserText: finalContent,
-                    currentAffinity: _currentAffinity,
-                    nonRomance: charKey === 'Haeun',
                     requireForcedSexualViolation: true
                 });
                 if (!qualityIssue?.shouldRetry) break;
@@ -1442,8 +1440,6 @@ class FreeTalkSystem {
                 charKey,
                 recentMessages: _optimized,
                 latestUserText: finalContent,
-                currentAffinity: _currentAffinity,
-                nonRomance: charKey === 'Haeun',
                 requireForcedSexualViolation: true
             });
             if (finalQualityIssue?.shouldRetry) {
@@ -1463,8 +1459,6 @@ class FreeTalkSystem {
                             charKey,
                             recentMessages: _optimized,
                             latestUserText: finalContent,
-                            currentAffinity: _currentAffinity,
-                            nonRomance: charKey === 'Haeun',
                             requireForcedSexualViolation: true
                         });
                 }
@@ -1789,28 +1783,6 @@ class FreeTalkSystem {
         }
     }
 
-    _getGroupAffinityBoundaryIssue(conversations, latestUserText, lang) {
-        const issues = [];
-        for (const conversation of conversations || []) {
-            const boundaryIssue = CupidFreeTalkCore.getCupidAffinityIntimacyBoundaryIssue(
-                conversation,
-                {
-                    lang,
-                    latestUserText,
-                    currentAffinity: this.stateManager.getAffinity(conversation.speakerId),
-                    nonRomance: conversation.speakerId === 'Haeun'
-                }
-            );
-            if (boundaryIssue?.shouldRetry) issues.push(...boundaryIssue.issues);
-        }
-        const uniqueIssues = [...new Set(issues)];
-        return {
-            shouldRetry: uniqueIssues.length > 0,
-            reason: uniqueIssues.join(','),
-            issues: uniqueIssues
-        };
-    }
-
     _applyGroupAffinity(change, speakerId, positiveBudget, latestUserText = '') {
         if (!this.stateManager.stats?.[speakerId]) return null;
         const previousValue = this.stateManager.getAffinity(speakerId);
@@ -2094,7 +2066,7 @@ class FreeTalkSystem {
                 data = await CupidFreeTalkCore.readChatCompletionStream(response, {
                     onDelta: ({ content }) => {
                         this._assertRequestContext(requestContext);
-                        if (!boundaryRule) updateGroupStreamingPreview(content);
+                        updateGroupStreamingPreview(content);
                     }
                 });
             } catch (streamError) {
@@ -2124,51 +2096,8 @@ class FreeTalkSystem {
                     totalTokens: Number(usage.total_tokens || 0)
                 });
             }
-            let reply = String(data?.choices?.[0]?.message?.content || '').trim();
-            let conversations = this.parseGroupJsonResponse(reply);
-            for (let repairAttempt = 0; repairAttempt < 2; repairAttempt += 1) {
-                const qualityIssue = this._getGroupAffinityBoundaryIssue(
-                    conversations,
-                    finalContent,
-                    lang
-                );
-                if (!qualityIssue.shouldRetry) break;
-
-                console.warn('[Cupid Group FreeTalk] Rejected affinity-boundary draft; regenerating before display', qualityIssue);
-                const repairBlock = window.buildCupidRoleplayQualityRepairBlock?.(
-                    qualityIssue,
-                    lang,
-                    'group'
-                );
-                if (!repairBlock || optimized[0]?.role !== 'system') break;
-                optimized = [
-                    {
-                        ...optimized[0],
-                        content: appendFreeTalkDynamicContext(optimized[0].content, repairBlock)
-                    },
-                    ...optimized.slice(1)
-                ];
-                optimized = this._forceLatestUserMessageLast(optimized, finalContent);
-                streamingPreview.reset();
-                response = await fetchWithTransientRetry(false);
-                this._assertRequestContext(requestContext);
-                if (!response?.ok) throw new Error(`HTTP ${response?.status || 0}`);
-                data = await response.json();
-                this._assertRequestContext(requestContext, data);
-                reply = String(data?.choices?.[0]?.message?.content || '').trim();
-                conversations = this.parseGroupJsonResponse(reply);
-            }
-            const finalQualityIssue = this._getGroupAffinityBoundaryIssue(
-                conversations,
-                finalContent,
-                lang
-            );
-            if (finalQualityIssue.shouldRetry) {
-                const qualityError = new Error('AI group response failed affinity boundary validation. Please try again.');
-                qualityError.reason = 'ROLEPLAY_QUALITY_REJECTED';
-                qualityError.qualityIssue = finalQualityIssue;
-                throw qualityError;
-            }
+            const reply = String(data?.choices?.[0]?.message?.content || '').trim();
+            const conversations = this.parseGroupJsonResponse(reply);
 
             window.__cupidLastStreamFinish = {
                 provider: data?.provider || '',

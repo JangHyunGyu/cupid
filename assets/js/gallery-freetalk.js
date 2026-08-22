@@ -1161,7 +1161,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     return await GalleryFreeTalkCore.readChatCompletionStream(response, {
                         onDelta: ({ content }) => {
                             this._assertRequestContext(requestContext);
-                            if (!_latestTurnIntimacyBoundaryRule) updateStreamingPreview(content);
+                            updateStreamingPreview(content);
                         }
                     });
                 } catch (streamError) {
@@ -1215,7 +1215,6 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 charKey: requestCharKey || requestCharId,
                 recentMessages: _optimized,
                 latestUserText: finalContent,
-                currentAffinity: _currentAffinity,
                 incidentState: requestContext.incidentRuntime?.state || null,
                 incidentPlan: requestContext.incidentRuntime?.plan || null
             };

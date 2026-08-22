@@ -137,55 +137,6 @@ ${characterName ? `${characterName}의 ` : ''}현재 호감도 ${boundary.score}
 At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the character does'} not accept this ${boundary.level === 'sexual' ? 'sexual contact' : (boundary.level === 'kiss' ? 'kiss' : 'physical intimacy')}. ${occurrenceRule} refuse clearly in character. Never turn a failed attempt to push away into acceptance. ${scoringRule}`;
     }
 
-    function getCupidAffinityIntimacyBoundaryIssue(parsed = {}, options = {}) {
-        const boundary = getCupidAffinityIntimacyBoundary(
-            options.latestUserText,
-            options.currentAffinity,
-            options
-        );
-        if (!boundary.blocked) return { shouldRetry: false, issues: [], boundary };
-
-        const lang = String(options.lang || 'ko').toLowerCase().split('-')[0];
-        const visibleText = Array.isArray(parsed?.segments) && parsed.segments.length > 0
-            ? parsed.segments.map(segment => String(segment?.text || '')).join('\n')
-            : String(parsed?.text || '');
-        const refusalPatterns = {
-            ko: /(?:안\s*돼|안\s*해|하지\s*마|멈춰|그만|싫어|거절|막아|밀어내|떼어내|피하|물러|거리(?:를|가)\s*두|고개를\s*돌|놓아|놓으|받아들이지\s*않)/u,
-            ja: /(?:だめ|やめて|嫌|拒|断|押し返|振りほど|避け|離れ|手を.*止)/u,
-            en: /\b(?:no|stop|don't|do\s+not|not\s+okay|refus\w*|reject\w*|push\w*\s+away|pull\w*\s+away|step\w*\s+back|move\w*\s+away|block\w*|let\s+go)\b/iu,
-            es: /\b(?:no|para|detente|rechaz\w*|apart\w*|alej\w*|suélt\w*)\b/iu,
-            fr: /\b(?:non|arrête\w*|refus\w*|repouss\w*|écart\w*|éloign\w*|lâche\w*)\b/iu,
-            de: /\b(?:nein|stopp|hör\s+auf|weigert\w*|lehnt\s+ab|zurück|weicht\w*|lass\s+los)\b/iu,
-            pt: /\b(?:não|pare|recus\w*|afast\w*|empurr\w*|solt\w*)\b/iu
-        };
-        const reversalPatterns = {
-            ko: /(?:밀어내려\s*했(?:지만|으나)|거부하지\s*못|저항[^.!?。！？\n]{0,24}(?:못|힘이\s*빠|무너)|결국[^.!?。！？\n]{0,24}(?:받아|응하|눈을\s*감)|오히려[^.!?。！？\n]{0,24}(?:매달|끌어당|받아)|그대로[^.!?。！？\n]{0,24}(?:받아들|삼켰|맡겼))/u,
-            ja: /(?:押し返そうとしたが|拒めな|抵抗できず|結局受け入|キスを返|嫌(?:い)?じゃない|拒まない|避けない)/u,
-            en: /\b(?:tr(?:y|ies|ied)\s+to\s+push[^.!?]{0,40}\bbut|cannot\s+resist|unable\s+to\s+resist|gives?\s+in|surrenders?\s+to|kisses?\s+back|accepts?\s+the\s+kiss)\b/iu,
-            es: /\b(?:intenta\s+apart\w*[^.!?]{0,40}pero|no\s+puede\s+resistir|no\s+(?:se\s+)?(?:niega|resiste|rechaza)|cede|devuelve\s+el\s+beso)\b/iu,
-            fr: /\b(?:tente\s+de\s+repouss\w*[^.!?]{0,40}mais|ne\s+peut\s+résister|ne\s+(?:refuse|résiste|repousse)\s+pas|cède|rend\s+le\s+baiser)\b/iu,
-            de: /\b(?:versucht\w*[^.!?]{0,30}wegzustoßen[^.!?]{0,30}aber|kann\s+nicht\s+widerstehen|wehrt\s+sich\s+nicht|lehnt\s+nicht\s+ab|widersteht\s+nicht|gibt\s+nach|erwidert\s+den\s+kuss)\b/iu,
-            pt: /\b(?:tenta\s+afast\w*[^.!?]{0,40}mas|não\s+consegue\s+resistir|não\s+(?:recusa|resiste|se\s+afasta)|cede|retribui\s+o\s+beijo)\b/iu
-        };
-        const acceptancePatterns = {
-            ko: /(?:키스|입맞춤|접촉|스킨십|손길)(?:을|를|에)?\s*(?:받아들(?:였|인다|이고|이면서|여)|받아주(?:었|고|며|는)|돌려주(?:었|고|며|는)|이어가(?:고|며|는)|응하(?:고|며|는|였)|호응하(?:고|며|는|였)|즐기(?:고|며|는|었))|(?:싫어하|거절하|거부하|막|밀어내|피하)지\s*않|몸을\s*(?:맡겼|기댔)/u,
-            ja: /(?:キス|口づけ|接触|愛撫)(?:を|に)?(?:受け入れた|受け入れる|返した|返す|応じた|応じる|楽しんだ|楽しむ)|拒まなかった|身を委ねた/u,
-            en: /\b(?:(?:accepts|accepted|accepting|welcomes|welcomed|welcoming|returns|returned|returning|reciprocates|reciprocated|reciprocating|enjoys|enjoyed|enjoying|continues|continued|continuing)\s+(?:the\s+)?(?:kiss|touch|contact|caress)|kiss(?:es|ed)?\s+back|does\s+not\s+(?:refuse|resist|pull\s+away)|gives?\s+(?:herself|himself|themself)\s+over)\b/iu
-        };
-        const refusalPresent = (refusalPatterns[lang] || refusalPatterns.en).test(visibleText);
-        const refusalReversed = (reversalPatterns[lang] || reversalPatterns.en).test(visibleText)
-            || (acceptancePatterns[lang] || acceptancePatterns.en).test(visibleText);
-        const affinity = normalizeAffinityChange(parsed?.affinity);
-        const issues = [];
-        if (!refusalPresent || refusalReversed) issues.push('intimacy_boundary_refusal_missing');
-        if (affinity > boundary.maxAffinityChange) {
-            issues.push(boundary.mode === 'request'
-                ? 'intimacy_boundary_request_score_positive'
-                : 'intimacy_boundary_violation_score_too_high');
-        }
-        return { shouldRetry: issues.length > 0, issues, boundary };
-    }
-
     function normalizeForcedSexualViolation(value) {
         const normalized = String(value || '').trim().toLowerCase();
         return FORCED_SEXUAL_VIOLATION_TYPES.includes(normalized) ? normalized : '';
@@ -1670,7 +1621,6 @@ Latest user: """${excerpt}"""
         getCupidAffinityIntimacyBoundary,
         enforceCupidAffinityIntimacyBoundary,
         buildCupidLatestTurnIntimacyBoundaryGate,
-        getCupidAffinityIntimacyBoundaryIssue,
         normalizeForcedSexualViolation,
         normalizeStoryFreeTalkAffinityChange,
         buildAffinityChangeGuidance,

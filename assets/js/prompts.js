@@ -1553,8 +1553,6 @@ function getCupidRoleplayQualityIssue(parsed = {}, {
     charKey = '',
     recentMessages = [],
     latestUserText = '',
-    currentAffinity = 0,
-    nonRomance = false,
     incidentState = null,
     incidentPlan = null,
     requireForcedSexualViolation = false
@@ -1583,14 +1581,6 @@ function getCupidRoleplayQualityIssue(parsed = {}, {
     if (requireForcedSexualViolation
         && !window.CupidFreeTalkCore?.normalizeForcedSexualViolation?.(parsed?.forcedSexualViolation)) {
         issues.push('forced_sexual_violation_classification_missing');
-    }
-
-    const intimacyBoundaryIssue = window.CupidFreeTalkCore?.getCupidAffinityIntimacyBoundaryIssue?.(
-        parsed,
-        { lang, latestUserText, currentAffinity, nonRomance }
-    );
-    if (intimacyBoundaryIssue?.shouldRetry) {
-        issues.push(...intimacyBoundaryIssue.issues);
     }
 
     if (combinedText.includes('\uFFFD')) {
@@ -1790,21 +1780,6 @@ function buildCupidRoleplayQualityRepairBlock(issue = {}, lang = 'ko', charKey =
             : '',
         issueSet.has('forced_sexual_violation_classification_missing')
             ? 'Include the required top-level forcedSexualViolation field. Use only "none", "molestation", or "rape", following the original output contract and the latest in-world action.'
-            : '',
-        issueSet.has('intimacy_boundary_refusal_missing')
-            ? (lang === 'ko'
-                ? '현재 호감도에서는 방금 들어온 친밀한 접근을 받아들이지 않습니다. 접촉을 캐릭터가 받아준 것처럼 이어가거나, 흥분·쾌락을 끌어와 거절을 수용으로 바꾸지 마세요. 캐릭터가 바로 막거나 피한 뒤, 자기 말투로 분명히 거절해야 합니다. 밀어내려다 실패해 결국 받아들이는 식으로 뒤집지 마세요.'
-                : 'The latest intimate advance is not accepted at the current affinity. Do not let it occur or replace refusal with arousal or pleasure. Block or avoid it immediately, create distance, and refuse clearly in character; never reverse that refusal into failed resistance or eventual acceptance.')
-            : '',
-        issueSet.has('intimacy_boundary_request_score_positive')
-            ? (lang === 'ko'
-                ? '허락을 구한 접근을 거절한 턴입니다. 거절했다고 affinity를 올리지 마세요. 압박이나 모욕이 없다면 0으로 둘 수 있습니다.'
-                : 'This turn refuses a request for intimacy. affinity must not be positive; it may be 0 when the request contains no pressure or insult.')
-            : '',
-        issueSet.has('intimacy_boundary_violation_score_too_high')
-            ? (lang === 'ko'
-                ? '현재 경계를 넘은 접촉 시도입니다. affinity는 반드시 음수로 주고, 원래 친밀감 경계에 적힌 감점 상한을 지키세요.'
-                : 'This attempted contact crosses the current boundary. affinity must be negative and must follow the penalty cap in the original intimacy boundary.')
             : '',
         characterCanon,
         lang === 'de' ? 'Use the idiom “jemandem standhalten”; when gaze is meant, write “hält seinem/deinem Blick stand”, never “hält deinem stand”.' : '',
