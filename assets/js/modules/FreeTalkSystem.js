@@ -1278,6 +1278,7 @@ class FreeTalkSystem {
                     headers: {
                         "Content-Type": "application/json",
                         "x-app-type": "cupid",
+                        "x-roleplay-surface": "game",
                         "x-request-type": "character",
                         "x-chat-mode": "single",
                         "x-response-schema": "cupid-single-forced-sexual-violation",
@@ -1287,6 +1288,7 @@ class FreeTalkSystem {
                     body: JSON.stringify({
                         messages,
                         characterId: charKey,
+                        roleplaySurface: "game",
                         requestType: "character",
                         chatMode: "single",
                         responseSchema: "cupid-single-forced-sexual-violation",
@@ -2029,6 +2031,7 @@ class FreeTalkSystem {
                 headers: {
                     'Content-Type': 'application/json',
                     'x-app-type': 'cupid',
+                    'x-roleplay-surface': 'game',
                     'x-request-type': 'character',
                     'x-chat-mode': 'group',
                     'x-response-schema': 'cupid-group-conversations',
@@ -2038,6 +2041,7 @@ class FreeTalkSystem {
                 body: JSON.stringify({
                     messages: optimized,
                     characterId: 'group',
+                    roleplaySurface: 'game',
                     requestType: 'character',
                     chatMode: 'group',
                     responseSchema: 'cupid-group-conversations',

@@ -1093,6 +1093,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     headers: {
                         'Content-Type': 'application/json',
                         'x-app-type': 'cupid',
+                        'x-roleplay-surface': 'gallery',
                         'x-request-type': 'character',
                         'x-chat-mode': 'single',
                         'x-output-language': this.lang,
@@ -1101,6 +1102,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     body: JSON.stringify({
                         messages,
                         characterId: requestCharId || '',
+                        roleplaySurface: 'gallery',
                         requestType: 'character',
                         chatMode: 'single',
                         responseSchema: 'cupid-single',

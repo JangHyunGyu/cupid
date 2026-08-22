@@ -151,3 +151,19 @@ test('Cupid direct tools keep model-native protocols behind isolated adapters', 
     assert.match(transportSource, /adapter\.applyPayload/);
     assert.match(transportSource, /adapter\.extractText/);
 });
+
+test('Cupid browser FreeTalk requests keep game and gallery provider surfaces separate', () => {
+    const mainSource = fs.readFileSync(path.join(__dirname, '..', 'assets/js/modules/FreeTalkSystem.js'), 'utf8');
+    const gallerySource = fs.readFileSync(path.join(__dirname, '..', 'assets/js/gallery-freetalk.js'), 'utf8');
+    const mainSurfaceHeaders = mainSource.match(/["']x-roleplay-surface["']\s*:\s*["']game["']/g) || [];
+    const mainSurfaceBodies = mainSource.match(/roleplaySurface\s*:\s*["']game["']/g) || [];
+    const gallerySurfaceHeaders = gallerySource.match(/["']x-roleplay-surface["']\s*:\s*["']gallery["']/g) || [];
+    const gallerySurfaceBodies = gallerySource.match(/roleplaySurface\s*:\s*["']gallery["']/g) || [];
+
+    assert.equal(mainSurfaceHeaders.length, 2, 'single and group game FreeTalk must identify the game surface');
+    assert.equal(mainSurfaceBodies.length, 2, 'single and group game bodies must preserve the surface contract');
+    assert.equal(gallerySurfaceHeaders.length, 1, 'Gallery FreeTalk must identify the gallery surface');
+    assert.equal(gallerySurfaceBodies.length, 1, 'Gallery FreeTalk body must preserve the surface contract');
+    assert.match(mainSource, /`cupid:ctx:/, 'game cache lineage must remain unchanged');
+    assert.match(gallerySource, /`cupid-gft:ctx:/, 'gallery cache lineage must remain unchanged');
+});
