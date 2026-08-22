@@ -1089,6 +1089,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                         characterId: requestCharId || '',
                         requestType: 'character',
                         chatMode: 'single',
+                        responseSchema: 'cupid-single',
+                        responseSpeakers: [{ id: requestCharId, key: requestCharId, name: pendingCharName }],
                         outputLanguage: this.lang,
                         cacheKey: _gftCacheKey,
                         stream: wantsStream,
@@ -1325,7 +1327,13 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 }
             );
             this.progress?.setRelationshipAftermath?.(requestCharId, nextAftermath);
-            requestHistory.push({ role: 'assistant', content: displayText });
+            requestHistory.push({
+                role: 'assistant',
+                content: displayText,
+                segments: displaySegments,
+                speakerId: requestCharId,
+                speakerName: charName
+            });
 
             // 프리토킹 횟수 증가
             this._incrementFreeTalkCount(requestCharId);

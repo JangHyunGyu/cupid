@@ -997,6 +997,9 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
     assert.equal((scenario.match(/"next": "morning5_counteroffer_group_talk"/g) || []).length, 10);
     assert.match(freeTalk, /'x-chat-mode': 'group'/);
     assert.match(freeTalk, /responseSpeakers: this\.groupParticipants/);
+    assert.match(freeTalk, /responseSpeakers: \[\{ id: charKey, key: charKey, name: scene\.name \}\]/);
+    assert.match(freeTalk, /speakerId: charKey,[\s\S]*?speakerName: scene\.name/);
+    assert.match(freeTalk, /speakerStates: rendered\.map\(item => \(\{/);
     assert.match(freeTalk, /setChatMemory\(groupKey, requestHistory\)/);
     assert.match(freeTalk, /addGroupConversationMemory\?\.\(\{/);
     assert.match(freeTalk, /includeGroupConversations: false/);
@@ -1062,6 +1065,18 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
                 `${lang} group confrontation lost direct explanation or guilt-and-desire tension: ${signal}`);
         }
     }
+});
+
+test('gallery free talk sends and retains explicit local actor ownership', () => {
+    const galleryFreeTalk = read('assets/js/gallery-freetalk.js');
+    assert.match(
+        galleryFreeTalk,
+        /responseSpeakers: \[\{ id: requestCharId, key: requestCharId, name: pendingCharName \}\]/
+    );
+    assert.match(
+        galleryFreeTalk,
+        /speakerId: requestCharId,[\s\S]*?speakerName: charName/
+    );
 });
 
 test('day-two student rivalry and day-three adult social groups use the highest-affinity companion with deterministic ties', () => {

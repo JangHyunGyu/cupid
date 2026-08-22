@@ -595,7 +595,12 @@ class FreeTalkSystem {
                 || !this.isFreeTalking) {
                 return;
             }
-            startHistory.push({ role: "assistant", content: scene.text });
+            startHistory.push({
+                role: "assistant",
+                content: scene.text,
+                speakerId: charKey,
+                speakerName: scene.name
+            });
             this.stateManager.setChatMemory(charKey, startHistory);
         }
 
@@ -1320,6 +1325,7 @@ class FreeTalkSystem {
                         requestType: "character",
                         chatMode: "single",
                         responseSchema: "cupid-single-forced-sexual-violation",
+                        responseSpeakers: [{ id: charKey, key: charKey, name: scene.name }],
                         outputLanguage: _lang,
                         cacheKey: _cacheKey,
                         stream: wantsStream,
@@ -1582,7 +1588,12 @@ class FreeTalkSystem {
                         day: Number(this.stateManager.currentDay) || 1
                     });
                 }
-                requestHistory.push({ role: "assistant", content: reply, segments: parsedSegments });
+                requestHistory.push({ role: "assistant",
+                    content: reply,
+                    segments: parsedSegments,
+                    speakerId: charKey,
+                    speakerName: scene.name
+                });
                 this.galleryManager.incrementFreeTalkCount(charKey);
 
                 // 대화 기록 저장 (로컬)
@@ -2131,7 +2142,16 @@ class FreeTalkSystem {
             const transcript = rendered
                 .map(item => `${item.speakerName}: ${item.text}`)
                 .join('\n\n');
-            requestHistory.push({ role: 'assistant', content: transcript });
+            requestHistory.push({
+                role: 'assistant',
+                content: transcript,
+                speakerStates: rendered.map(item => ({
+                    speakerId: item.speakerId,
+                    speakerName: item.speakerName,
+                    content: item.text,
+                    segments: item.segments
+                }))
+            });
             this.stateManager.setChatMemory(groupKey, requestHistory);
             const conversationDay = window.resolveCupidConversationDay?.(
                 this.stateManager.currentDay,
