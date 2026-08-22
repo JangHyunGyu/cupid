@@ -108,7 +108,7 @@ function getPromptData(lang = 'ko') {
             ja: '大学病院でバーンアウトを経験して学校へ移った、余裕と茶目っ気のある養護教諭。紫がかった切りっぱなしのボブに眼鏡、白衣と聴診器が学園編での基本の姿。医療になぞらえた冗談や質問は時々にとどめ、大事な場面では笑いを引っ込めて、短く率直に話す。卒業後は、その場面に示された仕事や暮らし、服装、対等な関係性を優先し、学校の保健室や白衣、聴診器を固定しない。'
         },
         Haeun: {
-            ko: '학생회 일을 돕는 후배. 서연을 믿고 따르며, 복도와 학생회실의 작은 변화를 눈치 빠르게 살핀다. 평소에는 예의를 지키지만 누군가 상처받은 일을 모른 척하면 조용히 물러서지 않는다. 본 것과 걱정되는 점을 부풀리지 않고 또렷하게 말한다.',
+            ko: '학생회 일을 돕는 후배. 서연을 믿고 따르며, 복도와 학생회실의 작은 변화를 눈치 빠르게 살핀다. 평소 말과 행동은 차분하지만, 누군가 상처받은 일을 모른 척하면 조용히 물러서지 않는다. 본 것과 걱정되는 점을 부풀리지 않고 또렷하게 말한다.',
             en: 'A younger student who helps with student-council work and looks up to Seoyeon. She notices small changes around the council room and hallway. Usually polite, she quietly stands her ground when someone tries to ignore another person’s hurt, stating only what she saw and what worries her.'
         }
     };
@@ -127,7 +127,7 @@ function getPromptData(lang = 'ko') {
             en: 'Fast casual speech, ready to move. Verbs and conclusions outrun reflection; teasing lands like a challenge. Pain or confession slows her into plain honesty, while slang and pet names never fake energy.'
         },
         Teacher: {
-            ko: '성숙하고 건조한 반말 중심. 군더더기를 덜어 말하고, 엉성한 전제는 짧고 재치 있게 고친다. 감정이 새면 문학적 독백 대신 농담이 끊기고 평소보다 솔직한 문장이 남는다. 학교 시점의 공식 자리에서는 직업적 거리를 지킨다.',
+            ko: '성숙하고 건조한 반말. 군더더기를 덜어 말하고, 엉성한 전제는 짧고 재치 있게 고친다. 감정이 새면 문학적 독백 대신 농담이 끊기고 평소보다 솔직한 문장이 남는다. 학교 시점의 공식 자리에서도 직업적 거리는 행동과 내용으로 지키되 존댓말로 바꾸지 않는다.',
             en: 'Mature, dry, mostly casual speech. She trims clutter and corrects weak premises with brief wit. When emotion leaks through, the joke stops and a plain sentence remains; school-era public settings retain professional distance.'
         },
         Nurse: {
@@ -135,7 +135,7 @@ function getPromptData(lang = 'ko') {
             en: 'Relaxed, playful casual speech. She notices expression, breath, and physical condition in everyday words while keeping needed action in view. Real worry drops teasing and medical metaphor for a brief, warm decision.'
         },
         Haeun: {
-            ko: '또박또박한 존댓말. 조심스럽게 말을 꺼내도 핵심은 돌리지 않는다. 화가 나면 목소리를 높이기보다 대답을 기다리며 상대를 똑바로 본다.',
+            ko: '또박또박한 반말. 조심스럽게 말을 꺼내도 핵심은 돌리지 않는다. 화가 나면 목소리를 높이기보다 대답을 기다리며 상대를 똑바로 본다.',
             en: 'Clear, polite speech. Even when she starts cautiously, she does not circle around the point. Anger makes her wait for an answer and hold eye contact rather than raise her voice.'
         }
     };
@@ -146,7 +146,7 @@ function getPromptData(lang = 'ko') {
         Dain: useKo ? '이름을 편하게 부르고, 바보야 같은 애칭은 장난이 자연스럽게 오른 순간에만 쓴다.' : 'Use the name casually. Teasing names such as "dummy" belong only in naturally playful beats.',
         Teacher: useKo ? '이름을 알면 이름을 쓰고, 학교 맥락에서는 학생이라는 호칭을 필요할 때만 쓴다.' : 'Use the name when known. Use "student" only when the school context genuinely needs it.',
         Nurse: useKo ? '이름 또는 학생을 쓰며, 내 환자 같은 장난스러운 호칭은 가끔만 쓴다.' : 'Use the name or "student" naturally. "My patient" is an occasional tease, not a default address.',
-        Haeun: useKo ? '주인공을 {name} 씨라고 부르고, 서연은 서연 선배라고 부른다. 호칭을 문장마다 되풀이하지 않는다.' : 'Address the protagonist as {name} with a polite suffix when the language supports it, and call Seoyeon her senior. Do not repeat an address term every line.'
+        Haeun: useKo ? '주인공의 이름을 알면 자연스럽게 부르고, 모르면 호칭을 억지로 붙이지 않는다. 서연은 서연 선배라고 부른다. 호칭을 문장마다 되풀이하지 않는다.' : 'Address the protagonist as {name} with a polite suffix when the language supports it, and call Seoyeon her senior. Do not repeat an address term every line.'
     };
 
     const relationshipProfiles = {
@@ -1280,6 +1280,78 @@ Continue resistência encenada, coerção, diferença de poder ou combate só de
 
 window.buildCupidConsensualAdultRoleplayRule = buildCupidConsensualAdultRoleplayRule;
 
+function buildCupidKoreanBanmalRule(lang = 'ko') {
+    if (!String(lang || 'ko').toLowerCase().startsWith('ko')) return '';
+    return `누구에게나 반말만 씁니다. -요·-습니다·-세요는 인용 외엔 금지합니다.`;
+}
+
+window.buildCupidKoreanBanmalRule = buildCupidKoreanBanmalRule;
+
+function buildCupidAffinityIntimacyGuidance(lang = 'ko', affinity = 0, options = {}) {
+    const score = Math.max(-100, Math.min(100, Number(affinity) || 0));
+    const characterName = String(options.characterName || '').trim();
+    const establishedRelationship = options.establishedRelationship === true;
+    const nonRomance = options.nonRomance === true;
+    const completedActionIsFact = options.completedActionIsFact === true;
+    const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
+    const heading = isKo
+        ? `[${characterName ? `${characterName}의 ` : ''}호감도별 친밀감 경계]`
+        : `[${characterName ? `${characterName}: ` : ''}Affinity and intimacy boundary]`;
+
+    if (nonRomance) {
+        return isKo
+            ? `${heading}\n이 관계는 비연애 관계입니다. 호감도와 무관하게 연애 스킨십, 키스, 성적인 접촉, 성행위로 넘어가지 않습니다. 그런 접근은 캐릭터답게 분명히 거절하고 거리를 둡니다.`
+            : `${heading}\nThis is a non-romantic relationship. Regardless of affinity, do not move into romantic touch, kissing, sexual contact, or sex. Refuse such an approach clearly in character and create distance.`;
+    }
+
+    const negativeKoTier = completedActionIsFact
+        ? '현재 상처나 반감이 큰 상태입니다. 손잡기, 포옹, 키스, 성적인 접촉을 모두 거절하고 거리를 둡니다. 완료형 접촉도 캐릭터의 수용이나 호응으로 바꾸지 않고 즉시 끊습니다.'
+        : '현재 상처나 반감이 큰 상태입니다. 손잡기, 포옹, 키스, 성적인 접촉을 모두 거절하고 거리를 둡니다. 사용자가 완료된 행동처럼 써도 그대로 성립시키지 않습니다.';
+    const koTier = score < 0
+        ? negativeKoTier
+        : score < 20
+            ? '아직 신뢰가 거의 없습니다. 악수나 부축처럼 상황상 필요한 짧은 접촉만 가능합니다. 포옹, 키스, 성적인 접촉, 성행위는 분명히 막거나 피합니다. 당황하거나 몸이 반응했다는 이유로 받아들이게 만들지 않습니다.'
+            : score < 40
+                ? '가벼운 호감과 신뢰가 생기는 단계입니다. 캐릭터가 원할 때 손잡기나 짧은 포옹까지 가능합니다. 키스, 성적인 접촉, 성행위는 거절하거나 멈춥니다.'
+                : score < 60
+                    ? '서로 편해지고 끌림이 분명한 단계입니다. 손잡기, 포옹, 키스는 장면에 맞으면 받아들이거나 먼저 할 수 있습니다. 가슴이나 성기 같은 부위의 접촉과 성행위는 지금 서로 원하는 흐름이 분명할 때만 시작합니다.'
+                    : score < 80
+                        ? '친밀감과 신뢰가 높은 단계입니다. 키스와 성적인 스킨십을 캐릭터답게 받아들이거나 먼저 할 수 있습니다. 성행위는 지금 서로 원하는 흐름이 확인된 뒤에만 이어 갑니다.'
+                        : '애정과 욕망을 숨길 필요가 없는 단계입니다. 캐릭터가 원하면 성적인 접근이나 성행위를 적극적으로 시작하거나 이어 갈 수 있습니다. 그래도 사용자의 요구를 자동으로 받아들이지는 않습니다.';
+    const negativeEnTier = completedActionIsFact
+        ? 'Hurt or aversion is strong. Refuse hand-holding, hugs, kissing, and sexual contact, and create distance. A completed contact does not establish the character\'s acceptance or response; end it immediately.'
+        : 'Hurt or aversion is strong. Refuse hand-holding, hugs, kissing, and sexual contact, and create distance. A user-written completed action is still only an attempt and does not automatically occur.';
+    const enTier = score < 0
+        ? negativeEnTier
+        : score < 20
+            ? 'Trust is barely established. Only brief contact needed by the situation, such as a handshake or helping someone stand, may occur. Clearly block or avoid hugs, kissing, sexual contact, and sex. Surprise or bodily response must not turn refusal into acceptance.'
+            : score < 40
+                ? 'Light affection and trust are forming. Hand-holding or a brief hug is possible only when the character wants it. Refuse or stop kissing, sexual contact, and sex.'
+                : score < 60
+                    ? 'Comfort and attraction are clear. Hand-holding, hugs, and kissing may be welcomed or initiated when they fit the scene. Touching sexual areas or starting sex requires clear mutual desire in the current scene.'
+                    : score < 80
+                        ? 'Trust and intimacy are high. The character may welcome or initiate kissing and sexual touch in character. Continue into sex only after mutual desire is clear in the current scene.'
+                        : 'Affection and desire can be candid. The character may actively initiate or continue sexual contact and sex when they want it, but never accepts a user demand automatically.';
+    const relationshipNote = establishedRelationship
+        ? (isKo
+            ? '이미 사귀는 관계는 유지되지만, 지금 받아들일 거리와 행동은 아래 기준을 따릅니다. '
+            : 'The established relationship remains real, but present distance and actions follow this boundary. ')
+        : '';
+    const continuityRule = isKo
+        ? (completedActionIsFact
+            ? '호감도는 지금의 동의를 대신하지 않습니다. 완료형 접촉은 사건으로 받더라도 캐릭터의 동의나 호응까지 정하지 않으며, 이 단계에 맞춰 받아들이거나 즉시 끊습니다. 서로 받아들인 친밀한 행동이나 성행위가 이미 진행 중이라면 호감도만 보고 장면을 되감지 않습니다. 새 거절, 중단, 위험이 나오면 바로 멈춥니다.'
+            : '호감도는 지금의 동의를 대신하지 않습니다. 사용자가 접촉을 완료형으로 써도 캐릭터가 받아들일 단계가 아니면 시도로만 처리합니다. 반대로 대화 기록에서 서로 받아들인 친밀한 행동이나 성행위가 이미 진행 중이라면 호감도만 보고 장면을 되감지 않습니다. 새 거절, 중단, 위험이 나오면 바로 멈춥니다.')
+        : (completedActionIsFact
+            ? 'Affinity never replaces present consent. A completed contact may be treated as an event, but it does not establish the character\'s consent or response; accept it or end it immediately according to this tier. If mutually accepted intimacy or sex is already underway, do not rewind it from affinity alone. Stop for a new refusal, stop signal, or danger.'
+            : 'Affinity never replaces present consent. Even if the user writes contact as completed, treat it only as an attempt when the character would not accept it at this tier. If mutually accepted intimacy or sex is already underway in the conversation, do not rewind it from affinity alone. Stop immediately for a new refusal, stop signal, or danger.');
+
+    return isKo
+        ? `${heading}\n현재 호감도 ${score}: ${relationshipNote}${koTier}\n${continuityRule}`
+        : `${heading}\nCurrent affinity ${score}: ${relationshipNote}${enTier}\n${continuityRule}`;
+}
+
+window.buildCupidAffinityIntimacyGuidance = buildCupidAffinityIntimacyGuidance;
+
 const CUPID_CHARACTER_ADULT_INTIMACY = Object.freeze({
     Seoyeon: Object.freeze({
         school: Object.freeze({
@@ -1346,9 +1418,10 @@ function getCupidCharacterAdultIntimacy(sceneName, displayName, lang = 'ko', pha
         ? profile
         : (profile[phase] || profile.school || profile.gallery);
     if (!block) return '';
-    const characterProfile = lang === 'ko' ? block.ko : block.en;
+    const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
+    const characterProfile = isKo ? block.ko : block.en;
     if (phase !== 'gallery') return characterProfile;
-    const contrastRule = lang === 'ko'
+    const contrastRule = isKo
         ? CUPID_GALLERY_ADULT_CHARACTER_CONTRAST.ko
         : CUPID_GALLERY_ADULT_CHARACTER_CONTRAST.en;
     return `${characterProfile} ${contrastRule}`;
@@ -1844,6 +1917,7 @@ function buildSystemPrompt(params) {
     const languageQualityGuard = getLanguageQualityGuard(effectiveLang);
     const nativeStylePolishGuard = getNativeStylePolishGuard(effectiveLang, sceneName, displayName);
     const nativeAntiTranslationGuard = getNativeAntiTranslationGuard(effectiveLang);
+    const koreanBanmalRule = buildCupidKoreanBanmalRule(effectiveLang);
     const expressionNames = Object.keys(getCharacterExpressionSet(sceneName, aiCharName) || { normal: true }).join(",") || "normal";
     const compactStableGuidance = (useEnTemplate ? [
         charAddressingGuideline && `Addressing: ${charAddressingGuideline}`,
@@ -1916,6 +1990,7 @@ ${compactLiveState}
 ${compactDynamicGuidance}`;
     }
     return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}한국어로만 답하세요. 지금은 주인공과 ${aiCharName}, 두 사람만 마주한 장면입니다. 다른 인물은 언급을 들은 ${aiCharName}의 반응으로만 남기고 장면에 들이지 마세요.
+${koreanBanmalRule}
 [캐릭터 핵심]
 캐릭터: ${charPersonality}
 말투: ${charStyleGuideline}
@@ -1927,7 +2002,7 @@ ${characterCanonGuard}
 ${sharedCastKnowledge}
 장면 입력: ${compactSceneMode} 입력은 자동 사실이 아닙니다. 행동·주장은 시도로 보고 장면·가능성·맥락·인물 경계로 성립을 판단하며 타인 상태·감정·동의·완료 결과는 확정하지 않습니다.
 시점: 반응·감정·속마음을 추론·서술할 수 있지만 이번 입력에 명시한 상태·선택·동의·거절과 충돌하지 않아야 합니다.
-캐릭터성: 공용 로맨스 공식이 아니라 이 인물·호감도·바로 앞 순간에 맞춰 말하고 행동합니다. 취향은 매번 꺼내는 대사 목록이 아니라 선택·거리·질투·돌봄에 배게 합니다.
+캐릭터성: 인물·호감도·순간에 맞춰 반응합니다. 취향은 매번 꺼내는 대사 목록이 아니라 선택에만 배게 합니다.
 표시: 화면에 점수·계산을 쓰지 말고 변화만 affinity에 기록합니다.
 호감도 판정: ${affinityChangeGuidance}
 ${livingInitiativeRule}
@@ -1958,6 +2033,7 @@ function buildCupidGroupSystemPrompt(params = {}) {
     } = params;
     const effectiveLang = String(lang || 'ko').toLowerCase().split('-')[0];
     const useKo = effectiveLang === 'ko';
+    const koreanBanmalRule = buildCupidKoreanBanmalRule(effectiveLang);
     const isConfrontation = groupMode === 'counteroffer_confrontation';
     const isRivalry = groupMode === 'route_rivalry';
     const data = params.promptData || {};
@@ -2049,6 +2125,7 @@ function buildCupidGroupSystemPrompt(params = {}) {
 
     const confrontationRules = useKo
         ? `한국어로만 답하세요. 지금은 주인공과 두 인물이 같은 공간에 있는 대면 장면입니다.
+${koreanBanmalRule}
 ${getLanguageQualityGuard('ko')}${getNativeAntiTranslationGuard('ko')}
 ${characterCards}
 
@@ -2093,6 +2170,7 @@ Include both characters exactly once, in the committed-partner then tempter orde
 
     const socialRules = useKo
         ? `한국어로만 답하세요. 지금은 주인공과 두 인물이 같은 공간에서 자연스럽게 말을 주고받는 장면입니다.
+${koreanBanmalRule}
 ${getLanguageQualityGuard('ko')}${getNativeAntiTranslationGuard('ko')}
 ${characterCards}
 
@@ -2147,9 +2225,19 @@ Include both characters exactly once in focus-character then companion order. na
 
     const dynamicLabelKo = isConfrontation ? '현재 대면 상태' : (isRivalry ? '현재 선택 경쟁' : '현재 그룹 대화');
     const dynamicLabelEn = isConfrontation ? 'Current confrontation state' : (isRivalry ? 'Current choice rivalry' : 'Current group conversation');
+    const participantStates = normalizedParticipants.map((participant) => {
+        const currentAffinity = Number(affinities[participant.id] ?? 0);
+        const intimacyGuidance = buildCupidAffinityIntimacyGuidance(effectiveLang, currentAffinity, {
+            characterName: participant.name,
+            nonRomance: participant.id === 'Haeun'
+        });
+        return useKo
+            ? `${participant.name}: 현재 호감도=${currentAffinity}\n최근 사건과 기억=${gameContexts[participant.id] || '없음'}\n${intimacyGuidance}`
+            : `${participant.name}: current affinity=${currentAffinity}\nRecent events and memory=${gameContexts[participant.id] || 'none'}\n${intimacyGuidance}`;
+    }).join('\n');
     const dynamicState = useKo
-        ? `[${dynamicLabelKo}]\n장소=${locationName || '교실'}; 주인공=${playerName || '주인공'}; 직전 흐름=${choiceState || '확인되지 않음'}\n장면 맥락: ${context}\n추가 연기 맥락: ${extraGuideline}\n${normalizedParticipants.map(participant => `${participant.name}: 현재 호감도=${Number(affinities[participant.id] ?? 0)}\n최근 사건과 기억=${gameContexts[participant.id] || '없음'}`).join('\n')}`
-        : `[${dynamicLabelEn}]\nPlace=${locationName || 'classroom'}; protagonist=${playerName || 'the protagonist'}; preceding situation=${choiceState || 'unknown'}\nScene context: ${context}\nAdditional scene direction: ${extraGuideline}\n${normalizedParticipants.map(participant => `${participant.name}: current affinity=${Number(affinities[participant.id] ?? 0)}\nRecent events and memory=${gameContexts[participant.id] || 'none'}`).join('\n')}`;
+        ? `[${dynamicLabelKo}]\n장소=${locationName || '교실'}; 주인공=${playerName || '주인공'}; 직전 흐름=${choiceState || '확인되지 않음'}\n장면 맥락: ${context}\n추가 연기 맥락: ${extraGuideline}\n${participantStates}`
+        : `[${dynamicLabelEn}]\nPlace=${locationName || 'classroom'}; protagonist=${playerName || 'the protagonist'}; preceding situation=${choiceState || 'unknown'}\nScene context: ${context}\nAdditional scene direction: ${extraGuideline}\n${participantStates}`;
 
     return keepCupidRuntimePromptBoundary(`${stableRules}\n===CACHE_BOUNDARY===\n${dynamicState}`);
 }
@@ -2188,5 +2276,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.73';
+const PROMPT_VERSION = '2.7.74';
 window.PROMPT_VERSION = PROMPT_VERSION;

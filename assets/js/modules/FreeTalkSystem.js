@@ -50,60 +50,6 @@ const getFreeTalkStablePromptFingerprint = CupidFreeTalkCore.getStablePromptFing
 const encodeFreeTalkCacheKeyPart = CupidFreeTalkCore.encodeCacheKeyPart;
 const buildCupidRecentExpressionRepetitionGuard = CupidFreeTalkCore.buildRecentExpressionRepetitionGuard;
 
-function buildCupidAffinityIntimacyProgressionPatch(lang = 'ko', affinity = 0, isDating = false) {
-    const score = Number(affinity);
-    if (!Number.isFinite(score)) return '';
-
-    const tier = score <= -70
-        ? 'hostile'
-        : score <= -40
-            ? 'cold'
-            : score <= -10
-                ? 'hurt'
-                : score < 0
-                    ? 'chilly'
-                    : score < 30
-                        ? 'low'
-                        : score < 60
-                            ? 'warming'
-                            : score < 80
-                                ? 'close'
-                                : 'high';
-
-    const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
-    if (isKo) {
-        const datingNote = isDating
-            ? '사귀는 사이지만 지금의 거리감은 현재 호감도를 따릅니다.'
-            : '사귀는 사이는 아니며 지금의 거리감은 현재 호감도를 따릅니다.';
-        const tierText = {
-            chilly: '서운함이나 경계가 살짝 있습니다. 말은 통하지만 신체 접근은 피하거나 짧게 거절합니다. 원하지 않은 접촉이라면 affinity를 올리지 말고 유지하거나 낮추세요.',
-            hurt: '상처와 경계가 분명합니다. 친밀한 접근은 거부하고 말의 온도가 낮습니다. 원하지 않은 접촉이라면 affinity를 올리지 말고 유지하거나 낮추세요.',
-            cold: '차갑게 거리를 둡니다. 스킨십은 거절하고 대화를 짧게 끊을 수 있습니다. 원하지 않은 접촉이라면 affinity를 올리지 말고 유지하거나 낮추세요.',
-            hostile: '강한 반감이 있습니다. 자리를 피하거나 대화를 끝내고 싶어 하며 따뜻함이나 수용은 나오지 않습니다. 원하지 않은 접촉이라면 affinity를 올리지 말고 유지하거나 낮추세요.',
-            low: '아직 중립에 가까워 친밀한 접근을 선뜻 받아들이지 않습니다.',
-            warming: '호기심과 가벼운 설렘은 가능하지만 깊은 친밀감으로 건너뛰지 않습니다.',
-            close: '친밀한 접근을 더 따뜻하게 받아들일 수 있으나 성격과 상황의 속도를 지킵니다.',
-            high: '원한다면 따뜻하고 적극적으로 반응하거나 먼저 다가갈 수 있습니다.'
-        }[tier];
-        return `\n\n[현재 관계 거리]\n${datingNote} ${tierText} 호감도는 현재 의사나 동의를 대신하지 않습니다. 사용자가 쓴 접근의 성립 여부와 결과는 현재 장면, 실제 가능성, 캐릭터의 인지와 경계를 함께 판단합니다.`;
-    }
-
-    const datingNote = isDating
-        ? 'You are dating, while the present distance still follows current affinity.'
-        : 'You are not dating; the present distance follows current affinity.';
-    const tierText = {
-        chilly: 'A slight hurt or wariness remains. Talk is still possible, but physical approaches are avoided or briefly refused. If the contact is unwanted, hold or lower affinity instead of raising it.',
-        hurt: 'Hurt and caution are clear. Intimate approaches are refused and the voice stays cooler. If the contact is unwanted, hold or lower affinity instead of raising it.',
-        cold: 'They keep a cold distance. Touch is refused and conversation may be cut short. If the contact is unwanted, hold or lower affinity instead of raising it.',
-        hostile: 'Strong aversion is natural. They want to leave or end the talk, and warmth or acceptance does not appear. If the contact is unwanted, hold or lower affinity instead of raising it.',
-        low: 'The relationship is near neutral, so intimate approaches are not readily welcomed.',
-        warming: 'Curiosity and mild attraction are possible without jumping to deep intimacy.',
-        close: 'Intimate approaches can be received more warmly at the character and scene\'s pace.',
-        high: 'The character may respond warmly, actively, or take initiative when it fits.'
-    }[tier];
-    return `\n\n[Current relationship distance]\n${datingNote} ${tierText} Affinity never substitutes for present choice or consent. Judge whether a user-written approach occurs and what it causes from the live scene, actual feasibility, and the character's perception and boundaries.`;
-}
-
 const cupidSanitizeLatestUserText = CupidFreeTalkCore.sanitizeLatestUserText;
 const cupidTruncateLatestUserText = CupidFreeTalkCore.truncateLatestUserText;
 const cupidFindLatestUserText = CupidFreeTalkCore.findLatestUserText;
@@ -1254,7 +1200,15 @@ class FreeTalkSystem {
                 ? this.stateManager.getAffinity(charKey)
                 : (this.stateManager.stats?.[charKey]?.affinity || 0);
             const _isDatingCurrentForBoundary = this.stateManager.getFlag(`isDating_${charKey}`) || this.stateManager.getFlag(`isDating_${scene.name}`);
-            const _affinityIntimacyProgressionPatch = buildCupidAffinityIntimacyProgressionPatch(_lang, _currentAffinity, _isDatingCurrentForBoundary);
+            const _affinityIntimacyProgressionPatch = window.buildCupidAffinityIntimacyGuidance?.(
+                _lang,
+                _currentAffinity,
+                {
+                    characterName: scene.name || charKey,
+                    establishedRelationship: _isDatingCurrentForBoundary,
+                    nonRomance: charKey === 'Haeun'
+                }
+            ) || '';
             const _relationshipAftermathBlock = CupidFreeTalkCore.buildRelationshipAftermathBlock({
                 lang: _lang,
                 state: this.stateManager.getRelationshipAftermath?.(charKey)

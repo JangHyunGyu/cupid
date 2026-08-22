@@ -261,6 +261,9 @@ function verifyMainAndGalleryPrompts(context) {
         assertCommonKoreanPrompt(mainPrompt, `main/${character.key}`);
         assert(mainPrompt.includes('[캐릭터 핵심]'),
             `[main/${character.key}] character card is not isolated for local prompt compaction`);
+        assert(mainPrompt.includes('누구에게나 반말만 씁니다')
+            && mainPrompt.includes('-요·-습니다·-세요는 인용 외엔 금지합니다'),
+            `[main/${character.key}] Korean speech can drift into honorifics`);
         assert(mainPrompt.includes(character.cardSignal), `[main/${character.key}] used the generic card`);
         assert(mainPrompt.includes('취향과 연애 방식:'), `[main/${character.key}] missing the relationship profile label`);
         assert(mainPrompt.includes(character.relationshipSignal),
@@ -285,6 +288,12 @@ function verifyMainAndGalleryPrompts(context) {
         assertCommonKoreanPrompt(galleryPrompt, `gallery/${character.key}`);
         assert(galleryPrompt.includes('[캐릭터 핵심]'),
             `[gallery/${character.key}] character card is not isolated for local prompt compaction`);
+        assert(galleryPrompt.includes('누구에게나 반말만 씁니다')
+            && galleryPrompt.includes('-요·-습니다·-세요는 인용 외엔 금지합니다'),
+            `[gallery/${character.key}] Korean speech can drift into honorifics`);
+        assert(splitCacheBoundary(galleryPrompt, `gallery/${character.key}/intimacy`).dynamic
+            .includes('호감도별 친밀감 경계'),
+            `[gallery/${character.key}] affinity intimacy boundary is not in the dynamic tail`);
         assert(!galleryPrompt.includes('forcedSexualViolation'),
             `[gallery/${character.key}] main-scenario violation routing leaked into gallery free talk`);
         assert(!galleryPrompt.includes('[성적]'), `[gallery/${character.key}] injected the adult example`);
@@ -573,32 +582,51 @@ function verifyLatestUserCanon(context) {
         assert(!block.includes('Latest user:'), `${label} canon block still has an English meta label`);
     }
 
-    const negativeAffinity = vm.runInContext(
-        `buildCupidAffinityIntimacyProgressionPatch('ko', -1, false)`, context
+    const affinityGuidance = score => vm.runInContext(
+        `buildCupidAffinityIntimacyGuidance('ko', ${score}, { characterName: '유나' })`,
+        context
     );
-    assert(negativeAffinity.includes('현재 의사나 동의를 대신하지 않습니다'),
-        'affinity guidance still treats score as consent');
-    assert(negativeAffinity.includes('서운함이나 경계가 살짝 있습니다'),
-        'mild negative affinity lost its chilly-distance wording');
-    assert(negativeAffinity.includes('affinity를 올리지 말고 유지하거나 낮추세요'),
-        'negative affinity still rewards an unwanted physical approach');
-    assert(negativeAffinity.includes('성립 여부와 결과는 현재 장면, 실제 가능성, 캐릭터의 인지와 경계를 함께 판단합니다'),
-        'affinity guidance still treats completed user wording as automatic fact');
-    const hurtAffinity = vm.runInContext(
-        `buildCupidAffinityIntimacyProgressionPatch('ko', -20, false)`, context
+    const negativeAffinity = affinityGuidance(-1);
+    const lowAffinity = affinityGuidance(3);
+    const warmingAffinity = affinityGuidance(25);
+    const trustingAffinity = affinityGuidance(50);
+    const closeAffinity = affinityGuidance(70);
+    const highAffinity = affinityGuidance(90);
+    assert(negativeAffinity.includes('손잡기, 포옹, 키스, 성적인 접촉을 모두 거절'),
+        'negative affinity no longer blocks all intimate contact');
+    assert(lowAffinity.includes('포옹, 키스, 성적인 접촉, 성행위는 분명히 막거나 피합니다'),
+        '0-19 affinity can still accept an intimate or sexual advance');
+    assert(warmingAffinity.includes('손잡기나 짧은 포옹까지 가능')
+        && warmingAffinity.includes('키스, 성적인 접촉, 성행위는 거절하거나 멈춥니다'),
+        '20-39 affinity no longer has a distinct light-touch ceiling');
+    assert(trustingAffinity.includes('손잡기, 포옹, 키스')
+        && trustingAffinity.includes('지금 서로 원하는 흐름이 분명할 때만 시작'),
+        '40-59 affinity no longer separates kissing from sexual escalation');
+    assert(closeAffinity.includes('키스와 성적인 스킨십')
+        && closeAffinity.includes('서로 원하는 흐름이 확인된 뒤에만'),
+        '60-79 affinity no longer requires mutual desire before sex');
+    assert(highAffinity.includes('적극적으로 시작하거나 이어 갈 수 있습니다')
+        && highAffinity.includes('자동으로 받아들이지는 않습니다'),
+        '80-100 affinity no longer permits initiative while preserving choice');
+    assert(lowAffinity.includes('완료형으로 써도')
+        && lowAffinity.includes('시도로만 처리합니다')
+        && lowAffinity.includes('이미 진행 중이라면 호감도만 보고 장면을 되감지 않습니다'),
+        'affinity guidance lost attempt handling or underway-scene continuity');
+    const nonRomanceAffinity = vm.runInContext(
+        `buildCupidAffinityIntimacyGuidance('ko', 100, { characterName: '하은', nonRomance: true })`,
+        context
     );
-    const coldAffinity = vm.runInContext(
-        `buildCupidAffinityIntimacyProgressionPatch('ko', -50, false)`, context
+    assert(nonRomanceAffinity.includes('비연애 관계')
+        && nonRomanceAffinity.includes('성행위로 넘어가지 않습니다'),
+        'Haeun can become romantic or sexual through affinity');
+    const galleryLowAffinity = vm.runInContext(
+        `buildCupidAffinityIntimacyGuidance('ko', 3, { characterName: '유나', establishedRelationship: true, completedActionIsFact: true })`,
+        context
     );
-    const hostileAffinity = vm.runInContext(
-        `buildCupidAffinityIntimacyProgressionPatch('ko', -80, false)`, context
-    );
-    assert(hurtAffinity.includes('상처와 경계가 분명합니다'),
-        'hurt-band affinity must stay distinct from mild chill');
-    assert(coldAffinity.includes('차갑게 거리를 둡니다'),
-        'cold-band affinity must stay distinct from hurt');
-    assert(hostileAffinity.includes('강한 반감이 있습니다'),
-        'hostile-band affinity must stay distinct from ordinary coldness');
+    assert(galleryLowAffinity.includes('완료형 접촉은 사건으로 받더라도')
+        && galleryLowAffinity.includes('캐릭터의 동의나 호응까지 정하지 않으며')
+        && !galleryLowAffinity.includes('시도로만 처리합니다'),
+        'gallery affinity guidance conflicts with its completed-action canon');
 }
 
 function verifyWiringAndScenePrompts() {
@@ -613,6 +641,9 @@ function verifyWiringAndScenePrompts() {
         'chat history does not read the canonical character key');
     assert(freeTalkSource.includes('this.stateManager.setChatMemory(charKey, requestHistory);'),
         'chat history does not save the canonical character key');
+    assert(freeTalkSource.includes('window.buildCupidAffinityIntimacyGuidance?.(')
+        && freeTalkSource.includes('nonRomance: charKey === \'Haeun\''),
+        'main free talk does not inject the shared affinity intimacy boundary');
     assert(!freeTalkSource.includes('buildCupidLatestUserCanonBlock')
         && !freeTalkSource.includes('latestUserCanon'),
         'game free talk still appends the gallery-style latest-user canon block');
@@ -862,6 +893,13 @@ function verifyGroupPromptCacheContract(context) {
     assert(context.window.CupidFreeTalkCore.getStablePromptFingerprint(first)
         !== context.window.CupidFreeTalkCore.getStablePromptFingerprint(pairVariant),
     'different group participant pairs share one cache fingerprint');
+    assert(firstParts.stable.includes('누구에게나 반말만 씁니다')
+        && firstParts.stable.includes('-요·-습니다·-세요는 인용 외엔 금지합니다'),
+    'group characters can drift into Korean honorifics');
+    assert(firstParts.dynamic.includes('서연의 호감도별 친밀감 경계')
+        && firstParts.dynamic.includes('키스, 성적인 접촉, 성행위는 거절하거나 멈춥니다')
+        && dynamicParts.dynamic.includes('손잡기, 포옹, 키스, 성적인 접촉을 모두 거절'),
+    'group affinity changes do not produce distinct dynamic intimacy boundaries');
     assert(firstParts.stable.includes('한 인물의 이번 턴 회복은 최대 +3')
         && firstParts.stable.includes('두 인물의 회복 합계도 최대 +3'),
     'group prompt lost per-speaker or combined recovery caps');

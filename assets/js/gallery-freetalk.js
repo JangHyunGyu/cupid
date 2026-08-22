@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.65';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.66';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 const GalleryFreeTalkCore = window.CupidFreeTalkCore;
@@ -2466,6 +2466,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const languageQualityGuard = this._getLanguageQualityGuard();
         const nativeStylePolishGuard = this._getNativeStylePolishGuard(charId);
         const nativeAntiTranslationGuard = window.getCupidNativeAntiTranslationGuard(this.lang);
+        const koreanBanmalRule = window.buildCupidKoreanBanmalRule(this.lang);
         const characterOutfitGuard = charId === 'dain'
             ? (isEn
                 ? `\n**[Dain Outfit Continuity]** Post-graduation Dain wears sporty streetwear with a black arm sleeve, never a school uniform. Student memories use her ETAURS #19 volleyball jersey—not blazer, tie, school skirt, or uniform hems/sleeves.`
@@ -2509,6 +2510,15 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const compactGalleryState = isEn
             ? `State: user=${playerName || 'the user'}; current_affinity=${currentAffinity}/100; relationship=${relationshipState.en}`
             : `현재 상태: 사용자=${playerName || '상대'}; 현재 호감도=${currentAffinity}/100; 관계 온도=${relationshipState.ko}`;
+        const affinityIntimacyGuidance = window.buildCupidAffinityIntimacyGuidance(
+            this.lang,
+            currentAffinity,
+            {
+                characterName: charName,
+                establishedRelationship: true,
+                completedActionIsFact: true
+            }
+        );
         const livingInitiativeRule = window.buildCupidLivingInitiativeRule(this.lang);
         const thirdPersonAdultCameraRule = buildGalleryThirdPersonAdultCameraRule(this.lang);
         if (isEn) {
@@ -2528,25 +2538,28 @@ ${compactGalleryGuidance}
 ${affinityRelationshipGuard}
 ${jsonOutputContract}
 ===CACHE_BOUNDARY===
-${compactGalleryState}${this._buildOutingDynamicTail(charId, charName)}`;
+${compactGalleryState}
+${affinityIntimacyGuidance}${this._buildOutingDynamicTail(charId, charName)}`;
         }
         return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}한국어로만 답하세요. 졸업 후 독립한 성인 연인 두 사람만 등장하는 갤러리 프리토킹입니다. 당신은 ${charName}이고, 상대는 성인 연인입니다. 학교 장면이 아닙니다.
+${koreanBanmalRule}
 [캐릭터 핵심]
 캐릭터: ${personality}
 ${adultIntimacyProfile}
-현재 장면의 인물은 ${charName}이며 도우미·해설자가 아닙니다. 둘만 두고 다른 인물은 언급에 대한 반응으로만 남깁니다.
+현재 장면의 인물은 ${charName}입니다. 다른 인물은 언급 반응으로만 남깁니다.
 ${characterOutfitGuard}
 ${characterCanonGuard}
 ${sharedCastKnowledge}
-장면 사실: 사용자가 방금 확정해 쓴 극중 사실과 끝난 사건은 되돌리지 않고 현재 장면으로 받습니다. 위의 캐릭터별 사실 잠금만 예외입니다.
-시점: 추론한 사용자 반응·감정·속마음은 명시된 상태·선택·동의·거절과 충돌하지 않아야 합니다.
+장면 사실: 사용자가 확정해 쓴 극중 사실과 끝난 사건은 되돌리지 않습니다. 위의 캐릭터별 사실 잠금만 예외입니다.
+시점: 사용자 반응·감정·속마음은 명시된 상태·선택·동의·거절과 충돌하지 않습니다.
 ${livingInitiativeRule}
 ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}
 ${affinityRelationshipGuard}
 ${jsonOutputContract}
 ===CACHE_BOUNDARY===
-${compactGalleryState}${this._buildOutingDynamicTail(charId, charName)}`;
+${compactGalleryState}
+${affinityIntimacyGuidance}${this._buildOutingDynamicTail(charId, charName)}`;
     }
 
     _buildOutingDynamicTail(charId, charName) {
