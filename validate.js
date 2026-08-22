@@ -2240,8 +2240,8 @@ try {
     const galleryCatchIndex = gftContent.indexOf('} catch (err)', gallerySendIndex);
     const affinityLogContracts = [
         ['config', configContent, ['affinityChange = null', 'affinityCurrent = null', 'entry.affinityChange', 'entry.affinityCurrent']],
-        ['main', ftSysContent, ['const affinityResult = this.applyAffinity(parsed.affinity, scene)', 'affinityChange: affinityResult?.change', 'affinityCurrent: affinityResult?.value', 'const actualChange = newValue - previousValue']],
-        ['gallery', gftContent, ['const affinityResult = this._applyAffinityChange(incidentResult.affinityChange, requestCharId)', 'affinityChange: affinityResult?.change', 'affinityCurrent: affinityResult?.value']]
+        ['main', ftSysContent, ['const affinityResult = this.applyAffinity(parsed.affinity, scene, finalContent)', 'affinityChange: affinityResult?.change', 'affinityCurrent: affinityResult?.value', 'const actualChange = newValue - previousValue']],
+        ['gallery', gftContent, ['const affinityResult = this._applyAffinityChange(', 'incidentResult.affinityChange,', 'requestCharId,', 'finalContent', 'affinityChange: affinityResult?.change', 'affinityCurrent: affinityResult?.value']]
     ];
     for (const [label, source, required] of affinityLogContracts) {
         for (const token of required) {

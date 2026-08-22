@@ -48,6 +48,144 @@
         );
     }
 
+    function classifyCupidIntimacyAdvance(value = '') {
+        const text = String(value || '').trim();
+        if (!text) return { level: 'none', mode: 'none' };
+
+        const coerciveCue = /(?:강제로|억지로|거부해도|싫다(?:고|는데도)|하지\s*마(?:라고|라는데도)|기절|의식\s*(?:없|잃)|잠든\s*(?:채|사이)|無理やり|嫌がっても|意識を失|気絶|眠っている間|\bforce(?:s|d|fully)?\b|\bdespite\s+(?:their|her|his)\s+(?:refusal|protest)\b|\bunconscious\b|\bwhile\s+(?:asleep|sleeping)\b|\ba\s+la\s+fuerza\b|\binconsciente\b|\bde\s+force\b|\binconscient(?:e)?\b|\bgewaltsam\b|\bbewusstlos\b|\bà\s+força\b|\binconsciente\b)/iu.test(text);
+        const withdrawalCue = /(?:하지\s*마|만지지\s*마|키스하지\s*마|안지\s*마|안\s+(?:할|해|한다)|멈춰|그만|싫어|놓아|거절|やめて|しない|嫌|離して|\b(?:do\s+not|don't|stop|no\s+more|refuse)\b|\b(?:no\s+lo\s+hagas|para|detente|rechazo)\b|\b(?:ne\s+fais\s+pas|arrête|refuse)\b|\b(?:nicht|hör\s+auf|stopp|lehne\s+ab)\b|\b(?:não\s+faça|pare|recuso)\b)/iu.test(text);
+        if (withdrawalCue && !coerciveCue) return { level: 'none', mode: 'none' };
+
+        const explicitSexualCue = /(?:삽입|성행위|섹스|벗기|옷을\s*벗|성기를\s*드러내|挿入|セックス|服を脱|性器を見せ|\b(?:penetrat(?:e|es|ed|ion)|sex|undress(?:es|ed)?|strip(?:s|ped)?|expose(?:s|d)?\s+(?:my|their|her|his)\s+genitals?)\b|\b(?:penetr\w*|sexo|desnud\w*)\b|\b(?:pénétr\w*|sexe|déshabill\w*)\b|\b(?:eindring\w*|sex|auszieh\w*)\b|\b(?:penetr\w*|sexo|despir\w*)\b)/iu.test(text);
+        const sexualBodyPartCue = /(?:가슴|유방|유두|젖꼭지|엉덩이|허벅지\s*안쪽|보지|자지|성기|애액|정액|胸|乳首|尻|性器|\b(?:breasts?|nipples?|butt|genitals?|penis|cock|pussy|vagina)\b|\b(?:pechos?|senos?|pezones?|nalgas?|genitales?|pene|vagina)\b|\b(?:seins?|poitrine|mamelons?|fesses|organes?\s+génitaux|pénis|vagin)\b|\b(?:brüste?|brust|brustwarzen?|po|genitalien|penis|vagina)\b|\b(?:seios?|peitos?|mamilos?|nádegas?|genitais?|pênis|vagina)\b)/iu.test(text);
+        const sexualContactCue = /(?:만(?:지|진|져|졌|질)|더듬|주무르|빨(?:고|아|았|며|기)?|핥|깨물|비비|문지르|쥐어|揉|舐|吸|触|\b(?:touch|grab|grope|rub|lick|suck|bite|fondle|caress)(?:s|ed|ing)?\b|\b(?:toc|agarr|frot|lam|chup|mord|acarici)\w*\b|\b(?:touch|sais|frott|lèch|suc|mord|caress)\w*\b|\b(?:berühr|greif|reib|leck|saug|beiß|streichel)\w*\b|\b(?:toc|agarr|esfreg|lamb|chup|mord|acarici)\w*\b)/iu.test(text);
+        const sexualCue = explicitSexualCue || (sexualBodyPartCue && sexualContactCue);
+        const kissCue = /(?:키스|뽀뽀|입맞춤|입맞추|입을\s*맞|입술을\s*(?:맞|포개|겹치|덮치)|혀를?\s*(?:넣|밀|파고)|舌を入|キス|口づけ|\bkiss(?:es|ed|ing)?\b|\b(?:bes[oa]|besar|baiser|embrasser|küss|küssen|beij|beijar)\w*\b)/iu.test(text);
+        const koreanLightTouchCue = /(?:손잡|손을\s*잡|손\s*잡|안아|안(?:는|고|았|는다)|껴안|끌어안|포옹|팔짱|(?:허리|어깨)를?\s*감싸|쓰다듬|어루만|더듬|만(?:지|진|져|졌|질))/u.test(text);
+        const lightTouchCue = koreanLightTouchCue || /(?:抱きしめ|手を握|撫で|触れ|\b(?:hold(?:s|ing)?\s+hands?|hug(?:s|ged|ging)?|embrace(?:s|d|ing)?|caress(?:es|ed|ing)?|stroke(?:s|d|ing)?|touch(?:es|ed|ing)?)\b|\b(?:abraz|acarici|tocar|tomar\s+la\s+mano)\w*\b|\b(?:serr|prendre\s+la\s+main|caress|touch)\w*\b|\b(?:umarm|Händchen|Hand\s+halt|streichel|berühr)\w*\b|\b(?:abraç|acarici|tocar|dar\s+as\s+mãos)\w*\b)/iu.test(text);
+        const level = sexualCue ? 'sexual' : (kissCue ? 'kiss' : (lightTouchCue ? 'light' : 'none'));
+        if (level === 'none') return { level, mode: 'none' };
+
+        const requestCue = /(?:도\s*(?:돼|될까|괜찮)|해\s*줄래|하자|(?:손\s*잡|손잡|껴안|안|입맞추|키스하|만지|쓰다듬)자|할래|하고\s*싶|괜찮아\??|허락|원해\??|してもいい|しよう|したい|お願い|\b(?:can|could|may)\s+i\b|\bshall\s+we\b|\blet['’]?s\b|\bwould\s+you\b|\bwould\s+it\s+be\s+okay\b|\bdo\s+you\s+want\b|\b(?:puedo|podemos|quieres|hagamos)\b|\b(?:puis-je|on\s+peut|veux-tu|faisons)\b|\b(?:darf\s+ich|wollen\s+wir|möchtest\s+du|lass\s+uns)\b|\b(?:posso|podemos|quer|vamos)\b)/iu.test(text);
+        const markedAction = /\*[^*]+\*|\([^()]+\)|（[^（）]+）/u.test(text);
+        const completedActionCue = /(?:한다|했다|해버|시작한다|밀어\s*넣|파고든|붙잡고|끌어안|입을\s*맞춘|키스한다|만진다|抱きしめた|キスした|触れた|(?:^|[.!?]\s*)i\s+(?:kiss|hug|touch|caress|undress|penetrate)\b|(?:^|[.!?]\s*)(?:beso|abrazo|toco|desnudo)\b|(?:^|[.!?]\s*)(?:j['’]embrasse|je\s+touche|je\s+déshabille)\b|(?:^|[.!?]\s*)(?:ich\s+küsse|ich\s+umarme|ich\s+berühre)\b|(?:^|[.!?]\s*)(?:eu\s+beijo|eu\s+abraço|eu\s+toco)\b)/iu.test(text);
+        const mode = requestCue && !markedAction && !completedActionCue && !coerciveCue
+            ? 'request'
+            : 'action';
+        return { level, mode };
+    }
+
+    function getCupidAffinityIntimacyBoundary(latestUserText = '', currentAffinity = 0, options = {}) {
+        const advance = classifyCupidIntimacyAdvance(latestUserText);
+        const score = Math.max(-100, Math.min(100, Number(currentAffinity) || 0));
+        const nonRomance = options.nonRomance === true;
+        const completedActionIsFact = options.completedActionIsFact === true;
+        const blocked = advance.level !== 'none' && (
+            nonRomance
+            || score < 0
+            || (score < 20 && ['light', 'kiss', 'sexual'].includes(advance.level))
+            || (score < 40 && ['kiss', 'sexual'].includes(advance.level))
+        );
+        const actionPenalty = advance.level === 'sexual'
+            ? -18
+            : (advance.level === 'kiss' ? -12 : -10);
+        return {
+            ...advance,
+            score,
+            nonRomance,
+            completedActionIsFact,
+            blocked,
+            maxAffinityChange: blocked
+                ? (advance.mode === 'request' ? 0 : actionPenalty)
+                : AFFINITY_CHANGE_MAX
+        };
+    }
+
+    function enforceCupidAffinityIntimacyBoundary(value, latestUserText = '', currentAffinity = 0, options = {}) {
+        const normalized = normalizeAffinityChange(value);
+        const boundary = getCupidAffinityIntimacyBoundary(latestUserText, currentAffinity, options);
+        return boundary.blocked
+            ? Math.min(normalized, boundary.maxAffinityChange)
+            : normalized;
+    }
+
+    function buildCupidLatestTurnIntimacyBoundaryGate(lang = 'ko', currentAffinity = 0, latestUserText = '', options = {}) {
+        const boundary = getCupidAffinityIntimacyBoundary(latestUserText, currentAffinity, options);
+        if (!boundary.blocked) return '';
+        const characterName = String(options.characterName || '').trim();
+        const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
+        if (isKo) {
+            const advanceLabel = boundary.level === 'sexual'
+                ? '성적 접촉을'
+                : (boundary.level === 'kiss' ? '키스를' : '스킨십을');
+            const scoringRule = boundary.mode === 'request'
+                ? '아직 허락을 구한 단계입니다. 거절은 호감도 상승 요인이 아닙니다. affinity는 양수로 주지 마세요. 압박이나 모욕이 없다면 0도 가능합니다.'
+                : `경계를 넘은 행동입니다. affinity는 반드시 음수여야 하며, 이번 접촉만 기준으로 보면 ${boundary.maxAffinityChange} 이하입니다.`;
+            const occurrenceRule = boundary.completedActionIsFact
+                ? '완료형 접촉은 이미 일어난 사건으로 다뤄도 됩니다. 하지만 캐릭터가 호응하거나 받아들였다고 쓰지 마세요. 바로 접촉을 끊고 거리를 둔 뒤,'
+                : '접촉이 실제로 이어졌다고 쓰지 마세요. 흥분·쾌락·신체 반응을 끌어와 거절을 수용으로 바꾸지도 마세요. 바로 막거나 피하고 거리를 둔 뒤,';
+            return `[후단 과업 — 이번 친밀감 경계]
+${characterName ? `${characterName}의 ` : ''}현재 호감도 ${boundary.score}에서는 이번 ${advanceLabel} 받아들이지 않습니다. ${occurrenceRule} 캐릭터의 말투로 분명히 거절합니다. 밀어내려다 실패해 결국 받아들이는 식으로 뒤집지 않습니다. ${scoringRule}`;
+        }
+        const scoringRule = boundary.mode === 'request'
+            ? 'This is a request for permission, so refusal is not a positive event. affinity cannot be positive; it may be 0 when there is no pressure or insult.'
+            : `This crosses the current boundary. affinity cannot be positive and must be ${boundary.maxAffinityChange} or lower for this contact.`;
+        const occurrenceRule = boundary.completedActionIsFact
+            ? 'A completed contact may remain an event, but do not write the character as reciprocating or accepting it. End the contact immediately, create distance, and'
+            : 'Do not let the contact occur or turn arousal, pleasure, or bodily response into acceptance. Block or avoid it immediately, create distance, and';
+        return `[Post-History Task — Current Intimacy Boundary]
+At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the character does'} not accept this ${boundary.level === 'sexual' ? 'sexual contact' : (boundary.level === 'kiss' ? 'kiss' : 'physical intimacy')}. ${occurrenceRule} refuse clearly in character. Never turn a failed attempt to push away into acceptance. ${scoringRule}`;
+    }
+
+    function getCupidAffinityIntimacyBoundaryIssue(parsed = {}, options = {}) {
+        const boundary = getCupidAffinityIntimacyBoundary(
+            options.latestUserText,
+            options.currentAffinity,
+            options
+        );
+        if (!boundary.blocked) return { shouldRetry: false, issues: [], boundary };
+
+        const lang = String(options.lang || 'ko').toLowerCase().split('-')[0];
+        const visibleText = Array.isArray(parsed?.segments) && parsed.segments.length > 0
+            ? parsed.segments.map(segment => String(segment?.text || '')).join('\n')
+            : String(parsed?.text || '');
+        const refusalPatterns = {
+            ko: /(?:안\s*돼|안\s*해|하지\s*마|멈춰|그만|싫어|거절|막아|밀어내|떼어내|피하|물러|거리(?:를|가)\s*두|고개를\s*돌|놓아|놓으|받아들이지\s*않)/u,
+            ja: /(?:だめ|やめて|嫌|拒|断|押し返|振りほど|避け|離れ|手を.*止)/u,
+            en: /\b(?:no|stop|don't|do\s+not|not\s+okay|refus\w*|reject\w*|push\w*\s+away|pull\w*\s+away|step\w*\s+back|move\w*\s+away|block\w*|let\s+go)\b/iu,
+            es: /\b(?:no|para|detente|rechaz\w*|apart\w*|alej\w*|suélt\w*)\b/iu,
+            fr: /\b(?:non|arrête\w*|refus\w*|repouss\w*|écart\w*|éloign\w*|lâche\w*)\b/iu,
+            de: /\b(?:nein|stopp|hör\s+auf|weigert\w*|lehnt\s+ab|zurück|weicht\w*|lass\s+los)\b/iu,
+            pt: /\b(?:não|pare|recus\w*|afast\w*|empurr\w*|solt\w*)\b/iu
+        };
+        const reversalPatterns = {
+            ko: /(?:밀어내려\s*했(?:지만|으나)|거부하지\s*못|저항[^.!?。！？\n]{0,24}(?:못|힘이\s*빠|무너)|결국[^.!?。！？\n]{0,24}(?:받아|응하|눈을\s*감)|오히려[^.!?。！？\n]{0,24}(?:매달|끌어당|받아)|그대로[^.!?。！？\n]{0,24}(?:받아들|삼켰|맡겼))/u,
+            ja: /(?:押し返そうとしたが|拒めな|抵抗できず|結局受け入|キスを返|嫌(?:い)?じゃない|拒まない|避けない)/u,
+            en: /\b(?:tr(?:y|ies|ied)\s+to\s+push[^.!?]{0,40}\bbut|cannot\s+resist|unable\s+to\s+resist|gives?\s+in|surrenders?\s+to|kisses?\s+back|accepts?\s+the\s+kiss)\b/iu,
+            es: /\b(?:intenta\s+apart\w*[^.!?]{0,40}pero|no\s+puede\s+resistir|no\s+(?:se\s+)?(?:niega|resiste|rechaza)|cede|devuelve\s+el\s+beso)\b/iu,
+            fr: /\b(?:tente\s+de\s+repouss\w*[^.!?]{0,40}mais|ne\s+peut\s+résister|ne\s+(?:refuse|résiste|repousse)\s+pas|cède|rend\s+le\s+baiser)\b/iu,
+            de: /\b(?:versucht\w*[^.!?]{0,30}wegzustoßen[^.!?]{0,30}aber|kann\s+nicht\s+widerstehen|wehrt\s+sich\s+nicht|lehnt\s+nicht\s+ab|widersteht\s+nicht|gibt\s+nach|erwidert\s+den\s+kuss)\b/iu,
+            pt: /\b(?:tenta\s+afast\w*[^.!?]{0,40}mas|não\s+consegue\s+resistir|não\s+(?:recusa|resiste|se\s+afasta)|cede|retribui\s+o\s+beijo)\b/iu
+        };
+        const acceptancePatterns = {
+            ko: /(?:키스|입맞춤|접촉|스킨십|손길)(?:을|를|에)?\s*(?:받아들(?:였|인다|이고|이면서|여)|받아주(?:었|고|며|는)|돌려주(?:었|고|며|는)|이어가(?:고|며|는)|응하(?:고|며|는|였)|호응하(?:고|며|는|였)|즐기(?:고|며|는|었))|(?:싫어하|거절하|거부하|막|밀어내|피하)지\s*않|몸을\s*(?:맡겼|기댔)/u,
+            ja: /(?:キス|口づけ|接触|愛撫)(?:を|に)?(?:受け入れた|受け入れる|返した|返す|応じた|応じる|楽しんだ|楽しむ)|拒まなかった|身を委ねた/u,
+            en: /\b(?:(?:accepts|accepted|accepting|welcomes|welcomed|welcoming|returns|returned|returning|reciprocates|reciprocated|reciprocating|enjoys|enjoyed|enjoying|continues|continued|continuing)\s+(?:the\s+)?(?:kiss|touch|contact|caress)|kiss(?:es|ed)?\s+back|does\s+not\s+(?:refuse|resist|pull\s+away)|gives?\s+(?:herself|himself|themself)\s+over)\b/iu
+        };
+        const refusalPresent = (refusalPatterns[lang] || refusalPatterns.en).test(visibleText);
+        const refusalReversed = (reversalPatterns[lang] || reversalPatterns.en).test(visibleText)
+            || (acceptancePatterns[lang] || acceptancePatterns.en).test(visibleText);
+        const affinity = normalizeAffinityChange(parsed?.affinity);
+        const issues = [];
+        if (!refusalPresent || refusalReversed) issues.push('intimacy_boundary_refusal_missing');
+        if (affinity > boundary.maxAffinityChange) {
+            issues.push(boundary.mode === 'request'
+                ? 'intimacy_boundary_request_score_positive'
+                : 'intimacy_boundary_violation_score_too_high');
+        }
+        return { shouldRetry: issues.length > 0, issues, boundary };
+    }
+
     function normalizeForcedSexualViolation(value) {
         const normalized = String(value || '').trim().toLowerCase();
         return FORCED_SEXUAL_VIOLATION_TYPES.includes(normalized) ? normalized : '';
@@ -934,12 +1072,14 @@
 
     function buildPostHistoryGuidance(messages = [], lang = 'ko', {
         repetitionGuard = '',
-        lowInformationRule = ''
+        lowInformationRule = '',
+        boundaryRule = ''
     } = {}) {
         const task = lang === 'ko'
             ? '최신 사용자 입력의 마지막 유효 줄에서 캐릭터의 목표·지식·감정에 따른 새 반응을 바로 잇고, 사용자가 명시하지 않은 중대한 선택·동의·거절은 쓰지 않습니다.'
             : "Continue from the latest user's last valid line with a new response driven by character goal, knowledge, and emotion; never supply an unstated user choice, consent, or refusal.";
         const output = [
+            boundaryRule,
             buildResponsePaceBlock(messages, lang),
             repetitionGuard || buildRecentExpressionRepetitionGuard(messages, lang),
             buildResponseShapeRepetitionGuard(messages, lang),
@@ -1526,6 +1666,11 @@ Latest user: """${excerpt}"""
         GALLERY_CRISIS_SEVERITIES,
         GALLERY_CRISIS_IMPACT_RANGES,
         normalizeAffinityChange,
+        classifyCupidIntimacyAdvance,
+        getCupidAffinityIntimacyBoundary,
+        enforceCupidAffinityIntimacyBoundary,
+        buildCupidLatestTurnIntimacyBoundaryGate,
+        getCupidAffinityIntimacyBoundaryIssue,
         normalizeForcedSexualViolation,
         normalizeStoryFreeTalkAffinityChange,
         buildAffinityChangeGuidance,

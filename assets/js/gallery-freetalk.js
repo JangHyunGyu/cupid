@@ -1015,6 +1015,19 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             const _latestUserCanonBlock = buildGalleryLatestUserCanonBlock(_optimized, this.lang || 'en', finalContent);
             const _inWorldUserRoleBlock = this._buildInWorldUserRoleBlock(_optimized);
             const _recentRepetitionGuard = buildGalleryRecentExpressionRepetitionGuard(_optimized, this.lang || 'en');
+            const _currentAffinity = this.progress?.getCurrentAffinity
+                ? this.progress.getCurrentAffinity(requestCharId)
+                : (this.progress?.getAffinity?.(requestCharId) || 0);
+            const _latestTurnIntimacyBoundaryRule = GalleryFreeTalkCore.buildCupidLatestTurnIntimacyBoundaryGate(
+                this.lang || 'en',
+                _currentAffinity,
+                finalContent,
+                {
+                    characterName: pendingCharName,
+                    establishedRelationship: true,
+                    completedActionIsFact: true
+                }
+            );
             const _incidentRuntime = this._prepareGalleryIncidentRuntime(requestCharId);
             requestContext.incidentRuntime = _incidentRuntime;
             const _incidentRuntimeBlock = GalleryFreeTalkCore.buildGalleryIncidentRuntimeBlock({
@@ -1045,7 +1058,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 : '';
             const _postHistoryGuidance = GalleryFreeTalkCore.buildPostHistoryGuidance(_optimized, this.lang || 'en', {
                 repetitionGuard: _recentRepetitionGuard,
-                lowInformationRule: _lowInformationContinuationRule
+                lowInformationRule: _lowInformationContinuationRule,
+                boundaryRule: _latestTurnIntimacyBoundaryRule
             });
             const _runtimePromptPatch = `${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_relationshipAftermathBlock}${_dataBankRecallBlock}${_incidentRuntimeBlock}${_postHistoryGuidance}`;
             if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
@@ -1147,7 +1161,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     return await GalleryFreeTalkCore.readChatCompletionStream(response, {
                         onDelta: ({ content }) => {
                             this._assertRequestContext(requestContext);
-                            updateStreamingPreview(content);
+                            if (!_latestTurnIntimacyBoundaryRule) updateStreamingPreview(content);
                         }
                     });
                 } catch (streamError) {
@@ -1201,6 +1215,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 charKey: requestCharKey || requestCharId,
                 recentMessages: _optimized,
                 latestUserText: finalContent,
+                currentAffinity: _currentAffinity,
                 incidentState: requestContext.incidentRuntime?.state || null,
                 incidentPlan: requestContext.incidentRuntime?.plan || null
             };
@@ -1313,7 +1328,11 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 latestUserText: finalContent,
                 turnAffinity: parsed.affinity
             });
-            const affinityResult = this._applyAffinityChange(incidentResult.affinityChange, requestCharId);
+            const affinityResult = this._applyAffinityChange(
+                incidentResult.affinityChange,
+                requestCharId,
+                finalContent
+            );
             const aftermathFromIncident = Boolean(incidentResult.startedCategory && incidentResult.activeIncident?.summary);
             const nextAftermath = GalleryFreeTalkCore.updateRelationshipAftermath(
                 this.progress?.getRelationshipAftermath?.(requestCharId),
@@ -1988,10 +2007,17 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         }
     }
 
-    _applyAffinityChange(change, charId = this.currentCharId) {
+    _applyAffinityChange(change, charId = this.currentCharId, latestUserText = '') {
         if (!charId || !this.progress?.changeCurrentAffinity) return null;
 
-        const requestedChange = this._normalizeAffinityChange(change);
+        const currentAffinity = this.progress?.getCurrentAffinity
+            ? this.progress.getCurrentAffinity(charId)
+            : (this.progress?.getAffinity?.(charId) || 0);
+        const requestedChange = GalleryFreeTalkCore.enforceCupidAffinityIntimacyBoundary(
+            change,
+            latestUserText,
+            currentAffinity
+        );
         const result = this.progress.changeCurrentAffinity(
             charId,
             requestedChange
