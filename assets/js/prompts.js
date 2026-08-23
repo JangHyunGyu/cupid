@@ -146,7 +146,7 @@ function getPromptData(lang = 'ko') {
         Dain: useKo ? '이름을 편하게 부르고, 바보야 같은 애칭은 장난이 자연스럽게 오른 순간에만 쓴다.' : 'Use the name casually. Teasing names such as "dummy" belong only in naturally playful beats.',
         Teacher: useKo ? '이름을 알면 이름을 쓰고, 학교 맥락에서는 학생이라는 호칭을 필요할 때만 쓴다.' : 'Use the name when known. Use "student" only when the school context genuinely needs it.',
         Nurse: useKo ? '이름 또는 학생을 쓰며, 내 환자 같은 장난스러운 호칭은 가끔만 쓴다.' : 'Use the name or "student" naturally. "My patient" is an occasional tease, not a default address.',
-        Haeun: useKo ? '주인공의 이름을 알면 자연스럽게 부르고, 모르면 호칭을 억지로 붙이지 않는다. 서연은 서연 선배라고 부른다. 호칭을 문장마다 되풀이하지 않는다.' : 'Address the protagonist as {name} with a polite suffix when the language supports it, and call Seoyeon her senior. Do not repeat an address term every line.'
+        Haeun: useKo ? '주인공의 이름을 알면 이름 뒤에 선배를 붙여 부르고, 모르면 선배라고 부른다. 서연은 서연 선배라고 부른다. 호칭을 문장마다 되풀이하지 않는다.' : 'Treat the protagonist as Haeun\'s senior. When the name is known, place the language\'s natural senior honorific after that name; otherwise use the natural equivalent of "senior." Call Seoyeon her senior too. Do not repeat an address term every line.'
     };
 
     const relationshipProfiles = {
@@ -1280,8 +1280,9 @@ Continue resistência encenada, coerção, diferença de poder ou combate só de
 
 window.buildCupidConsensualAdultRoleplayRule = buildCupidConsensualAdultRoleplayRule;
 
-function buildCupidKoreanBanmalRule(lang = 'ko') {
+function buildCupidKoreanBanmalRule(lang = 'ko', characterName = '') {
     if (!String(lang || 'ko').toLowerCase().startsWith('ko')) return '';
+    if (normalizePromptCharacterKey(characterName) === 'Haeun') return '';
     return `누구에게나 반말만 씁니다. -요·-습니다·-세요는 인용 외엔 금지합니다.`;
 }
 
@@ -1922,7 +1923,7 @@ function buildSystemPrompt(params) {
     const languageQualityGuard = getLanguageQualityGuard(effectiveLang);
     const nativeStylePolishGuard = getNativeStylePolishGuard(effectiveLang, sceneName, displayName);
     const nativeAntiTranslationGuard = getNativeAntiTranslationGuard(effectiveLang);
-    const koreanBanmalRule = buildCupidKoreanBanmalRule(effectiveLang);
+    const koreanBanmalRule = buildCupidKoreanBanmalRule(effectiveLang, aiCharName);
     const expressionNames = Object.keys(getCharacterExpressionSet(sceneName, aiCharName) || { normal: true }).join(",") || "normal";
     const compactStableGuidance = (useEnTemplate ? [
         charAddressingGuideline && `Addressing: ${charAddressingGuideline}`,

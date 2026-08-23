@@ -218,10 +218,46 @@ function verifyMainAndGalleryPrompts(context) {
         'Haeun prompt is missing the non-romance student boundary');
     assert(promptData.styleGuidelines['하은']?.includes('존댓말')
         && !promptData.styleGuidelines['하은']?.startsWith('또박또박한 반말'),
-    'Haeun main free-talk voice must keep polite Korean speech even when angry');
+        'Haeun main free-talk voice must keep polite Korean speech even when angry');
+    assert(promptData.addressingGuidelines['하은']?.includes('이름 뒤에 선배')
+        && promptData.addressingGuidelines['하은']?.includes('모르면 선배라고 부른다'),
+        'Haeun must address a known user as name plus senior and an unknown user as senior');
     assert(context.window.CHARACTER_EXPRESSIONS.Haeun?.normal
         && context.window.CHARACTER_EXPRESSIONS.Haeun?.worried,
-    'Haeun prompt expressions are not wired');
+        'Haeun prompt expressions are not wired');
+
+    const makeHaeunPrompt = ({ playerName = '민준', knowsName = true } = {}) => context.window.buildSystemPrompt({
+        isEn: false,
+        lang: 'ko',
+        sceneName: '하은',
+        displayName: '하은',
+        locationName: '복도',
+        context: '하은이 주인공의 대답을 기다린다.',
+        affinity: 5,
+        extraGuideline: '서연을 걱정하며 주인공의 대답을 듣는다.',
+        gameContext: '',
+        socialContext: '',
+        mediumInstruction: '',
+        isRemote: false,
+        promptData,
+        playerName,
+        knowsName,
+        datingGuideline: ''
+    });
+    const haeunKnownPrompt = makeHaeunPrompt();
+    const haeunUnknownPrompt = makeHaeunPrompt({ playerName: '', knowsName: false });
+    const haeunKnownParts = splitCacheBoundary(haeunKnownPrompt, 'main/Haeun/known-name');
+    const haeunUnknownParts = splitCacheBoundary(haeunUnknownPrompt, 'main/Haeun/unknown-name');
+    assert(haeunKnownParts.stable.includes('호칭: 주인공의 이름을 알면 이름 뒤에 선배를 붙여 부르고, 모르면 선배라고 부른다.'),
+        'Haeun senior-address rule is missing from the stable main free-talk prompt');
+    assert(haeunKnownParts.stable.includes('주인공에게는 늘 또박또박 존댓말을 쓴다.')
+        && !haeunKnownParts.stable.includes('누구에게나 반말만 씁니다'),
+        'Haeun polite voice still conflicts with the shared Korean banmal rule');
+    assert(haeunKnownParts.dynamic.includes('사용자=민준; 이름 인지=예')
+        && haeunUnknownParts.dynamic.includes('이름 인지=아니요'),
+        'Haeun prompt lost the dynamic user name awareness needed for senior addressing');
+    assert(haeunKnownParts.stable === haeunUnknownParts.stable,
+        'Haeun user name awareness leaked into the stable cache prefix');
     for (const character of CHARACTERS) {
         assert(promptData.styleGuidelines[character.sharedName]?.includes(character.voiceSignal),
             `${character.key} is missing its character-specific Korean voice signal`);

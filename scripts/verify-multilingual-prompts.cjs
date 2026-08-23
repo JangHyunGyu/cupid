@@ -351,6 +351,9 @@ for (const lang of languages) {
         `[${lang}/Haeun] affinity is not separated from romance and endings`);
     assert(data.generalInstructions.Haeun?.includes('non-romance supporting student'),
         `[${lang}/Haeun] non-romance student boundary is missing`);
+    assert(data.addressingGuidelines.Haeun?.includes("Treat the protagonist as Haeun's senior")
+        && data.addressingGuidelines.Haeun?.includes('otherwise use the natural equivalent of "senior."'),
+        `[${lang}/Haeun] senior addressing rule is missing`);
     if (lang === 'ja') {
         assert(data.personalities['Homeroom Teacher'].includes('卒業後'),
             '[ja/Teacher] main personality is missing the post-graduation continuity guard');
@@ -501,7 +504,8 @@ for (const lang of languages) {
     const haeunParts = splitCacheBoundary(haeunPrompt, `[${lang}/Haeun] main prompt`);
     const haeunVariantParts = splitCacheBoundary(haeunDynamicVariant, `[${lang}/Haeun] dynamic prompt`);
     assert(haeunParts.stable.includes('non-romance supporting student')
-        && haeunParts.stable.includes('looks up to Seoyeon'),
+        && haeunParts.stable.includes('looks up to Seoyeon')
+        && haeunParts.stable.includes("Treat the protagonist as Haeun's senior"),
     `[${lang}/Haeun] character and relationship boundary is missing from the stable prompt`);
     assert(haeunParts.stable === haeunVariantParts.stable
         && haeunParts.dynamic !== haeunVariantParts.dynamic,
