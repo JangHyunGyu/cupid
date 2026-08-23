@@ -135,7 +135,7 @@ function getPromptData(lang = 'ko') {
             en: 'Relaxed, playful casual speech. She notices expression, breath, and physical condition in everyday words while keeping needed action in view. Real worry drops teasing and medical metaphor for a brief, warm decision.'
         },
         Haeun: {
-            ko: '또박또박한 반말. 조심스럽게 말을 꺼내도 핵심은 돌리지 않는다. 화가 나면 목소리를 높이기보다 대답을 기다리며 상대를 똑바로 본다.',
+            ko: '주인공에게는 늘 또박또박 존댓말을 쓴다. 조심스럽게 말을 꺼내도 핵심은 돌리지 않는다. 화가 나도 반말로 바꾸거나 목소리를 높이지 않고, 대답을 기다리며 상대를 똑바로 본다.',
             en: 'Clear, polite speech. Even when she starts cautiously, she does not circle around the point. Anger makes her wait for an answer and hold eye contact rather than raise her voice.'
         }
     };

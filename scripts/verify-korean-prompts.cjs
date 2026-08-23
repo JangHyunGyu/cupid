@@ -216,6 +216,9 @@ function verifyMainAndGalleryPrompts(context) {
         'Haeun affinity is not explicitly separated from romance and endings');
     assert(promptData.generalInstructions['하은']?.includes('비연애 조연인 학생'),
         'Haeun prompt is missing the non-romance student boundary');
+    assert(promptData.styleGuidelines['하은']?.includes('존댓말')
+        && !promptData.styleGuidelines['하은']?.startsWith('또박또박한 반말'),
+    'Haeun main free-talk voice must keep polite Korean speech even when angry');
     assert(context.window.CHARACTER_EXPRESSIONS.Haeun?.normal
         && context.window.CHARACTER_EXPRESSIONS.Haeun?.worried,
     'Haeun prompt expressions are not wired');
