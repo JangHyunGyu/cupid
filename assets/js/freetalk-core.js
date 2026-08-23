@@ -1466,6 +1466,58 @@ Latest user: """${excerpt}"""
         };
     }
 
+    function getCompleteDisplayableStreamReply(rawContent) {
+        const source = String(rawContent || '').trim();
+        if (!source) return '';
+
+        const fenced = source.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/i);
+        const candidate = (fenced ? fenced[1] : source).trim();
+        let parsed;
+        try {
+            parsed = JSON.parse(candidate);
+        } catch (_) {
+            return '';
+        }
+
+        const readDisplayText = value => {
+            if (!value || typeof value !== 'object') return '';
+            for (const key of ['text', 'response', 'message', 'content', 'reply', 'dialogue', 'narration', 'sceneNarration', 'speech']) {
+                if (typeof value[key] === 'string' && value[key].trim()) return value[key].trim();
+            }
+            return '';
+        };
+        const hasDisplaySegment = value => !!value
+            && typeof value === 'object'
+            && typeof value.text === 'string'
+            && !!value.text.trim();
+        const hasDisplayItem = value => {
+            if (typeof value === 'string') return !!value.trim();
+            if (!value || typeof value !== 'object') return false;
+            if (readDisplayText(value)) return true;
+            return Array.isArray(value.segments) && value.segments.some(hasDisplaySegment);
+        };
+        const hasDisplayableContent = value => {
+            if (Array.isArray(value)) return value.some(hasDisplayItem);
+            if (!value || typeof value !== 'object') return false;
+            if (hasDisplayItem(value)) return true;
+            return ['sceneMessages', 'conversations', 'messages', 'responses', 'character_speech', 'speech']
+                .some(key => Array.isArray(value[key]) && value[key].some(hasDisplayItem));
+        };
+
+        return hasDisplayableContent(parsed) ? candidate : '';
+    }
+
+    function selectChatCompletionContent(payload = {}) {
+        const finalContent = payload?.choices?.[0]?.message?.content;
+        const fallback = typeof finalContent === 'string' ? finalContent.trim() : '';
+        const finishReason = String(payload?.choices?.[0]?.finish_reason || '').trim().toLowerCase();
+        const cannotPreserveRawStream = payload?.recovered === true
+            || ['length', 'content_filter', 'safety', 'error'].includes(finishReason);
+        if (cannotPreserveRawStream) return fallback;
+
+        return getCompleteDisplayableStreamReply(payload?.streamedContent) || fallback;
+    }
+
     async function readChatCompletionStream(response, { onDelta = null } = {}) {
         const contentType = String(response?.headers?.get?.('content-type') || '').toLowerCase();
         if (!contentType.includes('text/event-stream') || !response?.body?.getReader) {
@@ -1530,6 +1582,13 @@ Latest user: """${excerpt}"""
             error.reason = 'STREAM_INTERRUPTED';
             error.partialContent = rawContent;
             throw error;
+        }
+        if (rawContent.trim()) {
+            Object.defineProperty(finalPayload, 'streamedContent', {
+                value: rawContent,
+                enumerable: false,
+                configurable: true
+            });
         }
         return finalPayload;
     }
@@ -1730,6 +1789,7 @@ Latest user: """${excerpt}"""
         buildLatestUserCanonBlock,
         extractStreamingSegmentsPreview,
         extractFirstStreamingConversationPreview,
+        selectChatCompletionContent,
         readChatCompletionStream,
         createPacedStreamingPreview,
         normalizeGalleryIncidentCategory,

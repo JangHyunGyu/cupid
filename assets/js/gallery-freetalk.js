@@ -1185,8 +1185,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
             let data = await requestCupidGalleryReplyData(_optimized);
             this._assertRequestContext(requestContext, data);
-            const replyContent = data?.choices?.[0]?.message?.content;
-            let reply = typeof replyContent === 'string' ? replyContent.trim() : '';
+            let reply = GalleryFreeTalkCore.selectChatCompletionContent(data);
 
             if (!reply) {
                 console.warn('[Cupid GalleryFreeTalk] Empty AI response payload:', {

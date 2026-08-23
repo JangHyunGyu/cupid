@@ -122,9 +122,73 @@ test('SSE reader exposes deltas before returning final provider and cache metada
         onDelta: frame => deltas.push(frame.content)
     });
     assert.deepEqual(deltas, ['{"segments":[{"type":"dialogue","text":"안', '{"segments":[{"type":"dialogue","text":"안녕"}]}']);
+    assert.equal(result.streamedContent, deltas.at(-1));
     assert.equal(result.provider, 'local');
     assert.equal(result.model, 'serenity-12b-q6');
     assert.equal(result.cache.prompt_cache_hit_tokens, 12);
+});
+
+test('normal completion keeps raw streamed narration while recovery uses final content', async () => {
+    const encoder = new TextEncoder();
+    const streamedReply = JSON.stringify({
+        segments: [
+            { type: 'narration', text: 'Rain spread across the window.' },
+            { text: 'She set the cup down.', type: 'narration' },
+            { type: 'dialogue', text: 'You are late.' }
+        ]
+    });
+    const rewrittenFinalReply = JSON.stringify({
+        segments: [
+            { type: 'narration', text: 'Rain spread across the window.' },
+            { type: 'dialogue', text: 'You are late.' }
+        ]
+    });
+    const midpoint = Math.floor(streamedReply.length / 2);
+    const response = new Response(new ReadableStream({
+        start(controller) {
+            for (const content of [streamedReply.slice(0, midpoint), streamedReply.slice(midpoint)]) {
+                controller.enqueue(encoder.encode(`data: ${JSON.stringify({ choices: [{ delta: { content } }] })}\n\n`));
+            }
+            controller.enqueue(encoder.encode(`data: ${JSON.stringify({
+                final: true,
+                provider: 'openrouter',
+                choices: [{ message: { content: rewrittenFinalReply }, finish_reason: 'stop' }]
+            })}\n\n`));
+            controller.enqueue(encoder.encode('data: [DONE]\n\n'));
+            controller.close();
+        }
+    }), { headers: { 'content-type': 'text/event-stream' } });
+
+    const result = await core.readChatCompletionStream(response);
+    assert.equal(result.streamedContent, streamedReply);
+    assert.equal(
+        core.selectChatCompletionContent(result),
+        streamedReply,
+        'a normal completion must not delete narration already shown by the stream'
+    );
+    assert.equal(
+        Object.prototype.propertyIsEnumerable.call(result, 'streamedContent'),
+        false,
+        'raw streamed text must not be duplicated into persisted response metadata'
+    );
+    assert.equal(
+        core.selectChatCompletionContent({
+            ...result,
+            streamedContent: streamedReply,
+            recovered: true,
+            recoveryReason: 'INCOMPLETE_STRUCTURED_STREAM'
+        }),
+        rewrittenFinalReply,
+        'a recovered completion must use the repaired final response'
+    );
+    assert.equal(
+        core.selectChatCompletionContent({
+            streamedContent: streamedReply.slice(0, -2),
+            choices: [{ message: { content: rewrittenFinalReply }, finish_reason: 'length' }]
+        }),
+        rewrittenFinalReply,
+        'an incomplete stream must use the safe final response'
+    );
 });
 
 test('SSE reader rejects a transport that ends without final metadata', async () => {
@@ -149,6 +213,8 @@ test('every Cupid free-talk surface uses SSE, fixed pacing, and non-blocking bac
     assert.match(gallery, /stream:\s*wantsStream/);
     assert.ok((main.match(/readChatCompletionStream/g) || []).length >= 2, 'single and group readers must consume SSE');
     assert.match(gallery, /readChatCompletionStream/);
+    assert.ok((main.match(/selectChatCompletionContent\(data\)/g) || []).length >= 2, 'single and group completion must preserve valid raw streams');
+    assert.match(gallery, /selectChatCompletionContent\(data\)/, 'gallery completion must preserve a valid raw stream');
     assert.ok((main.match(/characterDelayMs:\s*10/g) || []).length >= 2);
     assert.ok((main.match(/maxCharactersPerFrame:\s*2/g) || []).length >= 2);
     assert.match(gallery, /characterDelayMs:\s*10/);
