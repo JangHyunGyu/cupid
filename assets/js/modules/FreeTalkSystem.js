@@ -2052,15 +2052,28 @@ class FreeTalkSystem {
                 })
             });
             const fetchWithTransientRetry = async wantsStream => {
-                let response = null;
+                let lastError = null;
                 for (let attempt = 0; attempt < 3; attempt += 1) {
-                    response = await fetch(endpoint, buildRequestInit(wantsStream));
-                    this._assertRequestContext(requestContext);
-                    if (!shouldRetryFreeTalkAiResponse(response) || attempt >= 2 || navigator.onLine === false) break;
-                    try { await response.body?.cancel?.(); } catch (_) { /* best effort */ }
+                    try {
+                        const response = await fetch(endpoint, buildRequestInit(wantsStream));
+                        this._assertRequestContext(requestContext);
+                        if (!shouldRetryFreeTalkAiResponse(response)
+                            || navigator.onLine === false
+                            || attempt >= 2) {
+                            return response;
+                        }
+                        try { await response.body?.cancel?.(); } catch (_) { /* best-effort cleanup */ }
+                    } catch (error) {
+                        lastError = error;
+                        this._assertRequestContext(requestContext);
+                        const isTransientFetchError = error instanceof TypeError
+                            || /^(?:Failed to fetch|Load failed|NetworkError)$/i.test(error?.message || '');
+                        if (!isTransientFetchError || navigator.onLine === false || attempt >= 2) throw error;
+                    }
                     await new Promise(resolve => window.setTimeout(resolve, 400 * (attempt + 1)));
+                    this._assertRequestContext(requestContext);
                 }
-                return response;
+                throw lastError;
             };
             let response = await fetchWithTransientRetry(true);
             if (!response?.ok) throw new Error(`HTTP ${response?.status || 0}`);

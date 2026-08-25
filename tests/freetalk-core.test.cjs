@@ -266,6 +266,21 @@ test('retry and failover status contracts remain distinct', () => {
     assert.equal(core.shouldFailOverAiResponse({ ok: false, status: 400 }), false);
 });
 
+test('group free-talk retries transient fetch failures before reporting an error', () => {
+    const freeTalkSystem = read('assets/js/modules/FreeTalkSystem.js');
+    const groupMethodStart = freeTalkSystem.indexOf('async sendGroupChatMessage(getSceneFn)');
+    const retryStart = freeTalkSystem.indexOf('const fetchWithTransientRetry = async wantsStream =>', groupMethodStart);
+    const retryEnd = freeTalkSystem.indexOf('let response = await fetchWithTransientRetry(true)', retryStart);
+    assert.ok(groupMethodStart >= 0 && retryStart > groupMethodStart && retryEnd > retryStart);
+
+    const retryBlock = freeTalkSystem.slice(retryStart, retryEnd);
+    assert.match(retryBlock, /catch \(error\)/);
+    assert.match(retryBlock, /Failed to fetch\|Load failed\|NetworkError/);
+    assert.match(retryBlock, /attempt >= 2/);
+    assert.match(retryBlock, /400 \* \(attempt \+ 1\)/);
+    assert.match(retryBlock, /this\._assertRequestContext\(requestContext\)/);
+});
+
 test('selective memory retrieval searches old recall needs but skips live or recently covered context', () => {
     assert.equal(core.getPromptMemoryRetrievalDecision('오늘은 같이 옥상에 갈까?', []).reason, 'live_scene');
     assert.equal(core.getPromptMemoryRetrievalDecision('지난번에 내가 준 열쇠를 기억해?', [
