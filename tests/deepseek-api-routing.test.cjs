@@ -155,6 +155,8 @@ test('Cupid direct tools keep model-native protocols behind isolated adapters', 
 test('Cupid browser FreeTalk requests keep game and gallery provider surfaces separate', () => {
     const mainSource = fs.readFileSync(path.join(__dirname, '..', 'assets/js/modules/FreeTalkSystem.js'), 'utf8');
     const gallerySource = fs.readFileSync(path.join(__dirname, '..', 'assets/js/gallery-freetalk.js'), 'utf8');
+    const configSource = fs.readFileSync(path.join(__dirname, '..', 'assets/js/modules/config.js'), 'utf8');
+    const serviceWorkerSource = fs.readFileSync(path.join(__dirname, '..', 'service-worker.js'), 'utf8');
     const mainSurfaceHeaders = mainSource.match(/["']x-roleplay-surface["']\s*:\s*["']game["']/g) || [];
     const mainSurfaceBodies = mainSource.match(/roleplaySurface\s*:\s*["']game["']/g) || [];
     const gallerySurfaceHeaders = gallerySource.match(/["']x-roleplay-surface["']\s*:\s*["']gallery["']/g) || [];
@@ -166,4 +168,49 @@ test('Cupid browser FreeTalk requests keep game and gallery provider surfaces se
     assert.equal(gallerySurfaceBodies.length, 1, 'Gallery FreeTalk body must preserve the surface contract');
     assert.match(mainSource, /`cupid:ctx:/, 'game cache lineage must remain unchanged');
     assert.match(gallerySource, /`cupid-gft:ctx:/, 'gallery cache lineage must remain unchanged');
+    assert.match(configSource, /AI_API_ENDPOINT = "\/api\/ai"/);
+    assert.doesNotMatch(mainSource, /openrouter-api\.yama5993\.workers\.dev/);
+    assert.doesNotMatch(gallerySource, /openrouter-api\.yama5993\.workers\.dev/);
+    assert.match(serviceWorkerSource, /if \(event\.request\.method !== 'GET'\) return;/);
+});
+
+test('Cupid Pages proxy forwards the roleplay contract without browser cookies', async () => {
+    const proxySource = fs.readFileSync(path.join(__dirname, '..', 'functions/api/ai.js'), 'utf8');
+    const executableSource = proxySource.replace('export async function onRequestPost', 'async function onRequestPost');
+    let upstreamCall = null;
+    const upstreamFetch = async (url, init) => {
+        upstreamCall = { url, init };
+        return new Response('streamed response', {
+            status: 200,
+            headers: { 'Content-Type': 'text/event-stream' }
+        });
+    };
+    const createHandler = new Function(
+        'Headers',
+        'Response',
+        'fetch',
+        `${executableSource}\nreturn onRequestPost;`
+    );
+    const handler = createHandler(Headers, Response, upstreamFetch);
+    const request = new Request('https://cupid.archerlab.dev/api/ai', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            Cookie: 'session=private',
+            'x-app-type': 'cupid',
+            'x-roleplay-surface': 'game',
+            'x-cache-key': 'cupid:ctx:test'
+        },
+        body: JSON.stringify({ stream: true })
+    });
+
+    const response = await handler({ request });
+    assert.equal(upstreamCall.url, 'https://openrouter-api.yama5993.workers.dev/');
+    assert.equal(upstreamCall.init.headers.get('x-app-type'), 'cupid');
+    assert.equal(upstreamCall.init.headers.get('x-roleplay-surface'), 'game');
+    assert.equal(upstreamCall.init.headers.get('x-cache-key'), 'cupid:ctx:test');
+    assert.equal(upstreamCall.init.headers.has('cookie'), false);
+    assert.equal(new TextDecoder().decode(upstreamCall.init.body), JSON.stringify({ stream: true }));
+    assert.equal(response.headers.get('Cache-Control'), 'no-store');
+    assert.equal(await response.text(), 'streamed response');
 });

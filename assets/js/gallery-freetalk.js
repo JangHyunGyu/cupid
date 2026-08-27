@@ -1089,7 +1089,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             _lastTurnMeta = _turnMeta;
             requestContext.turnMeta = _turnMeta;
             this._activeChatTurnId = _turnMeta?.turnId || null;
-            const aiEndpoint = window.AI_API_ENDPOINT || 'https://openrouter-api.yama5993.workers.dev/';
+            const aiEndpoint = window.AI_API_ENDPOINT || '/api/ai';
             _lastAiEndpoint = aiEndpoint;
             const fallbackEndpoint = ''; // AI text must not fall back to the legacy Gemini endpoint.
             const requestCupidGalleryReplyData = async (messages, { resetPreview = false } = {}) => {

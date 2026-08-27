@@ -1791,7 +1791,9 @@ try {
     const gftContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-freetalk.js'), 'utf8');
     if (gftContent.includes('API_ENDPOINT') || gftContent.includes('window.API_ENDPOINT')) {
         // fallback URL 존재 확인
-        if (!gftContent.includes("'https://") && !gftContent.includes('"https://')) {
+        if (!gftContent.includes("'https://")
+            && !gftContent.includes('"https://')
+            && !gftContent.includes("'/api/ai'")) {
             warnings.push('[FREETALK_API] gallery-freetalk.js: API_ENDPOINT 폴백 URL 없음');
         }
     }

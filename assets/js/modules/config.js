@@ -42,7 +42,7 @@ const API_ENDPOINT = "https://chatbot-api.yama5993.workers.dev/";
  * AI 채팅 API 엔드포인트
  * - FreeTalkSystem에서 이 주소로 HTTP POST 요청을 보내 AI 응답을 받아옵니다
  */
-const AI_API_ENDPOINT = "https://openrouter-api.yama5993.workers.dev/";
+const AI_API_ENDPOINT = "/api/ai";
 
 /**
  * 에셋 버전 번호
@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "https://openrouter-api.yama5993.workers.dev/";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.195";
+const ASSET_VERSION = "2.9.196";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 

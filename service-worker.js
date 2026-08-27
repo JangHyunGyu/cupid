@@ -12,7 +12,7 @@
  * ============================================================================
  */
 
-const CACHE_VERSION = 'cupid-v3.3.122';
+const CACHE_VERSION = 'cupid-v3.3.123';
 const STATIC_CACHE = CACHE_VERSION + '-static';
 const MEDIA_CACHE = CACHE_VERSION + '-media';
 
@@ -159,6 +159,8 @@ self.addEventListener('activate', (event) => {
 // Fetch - 에셋 유형별 최적 캐시 전략 적용
 // ============================================================================
 self.addEventListener('fetch', (event) => {
+    if (event.request.method !== 'GET') return;
+
     const url = new URL(event.request.url);
 
     // 외부 요청(API, CDN 등)은 네트워크 직행

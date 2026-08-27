@@ -1268,7 +1268,7 @@ class FreeTalkSystem {
             this._activeChatTurnId = _turnMeta?.turnId || null;
             const aiEndpoint = (typeof AI_API_ENDPOINT !== 'undefined' && AI_API_ENDPOINT)
                 ? AI_API_ENDPOINT
-                : 'https://openrouter-api.yama5993.workers.dev/';
+                : '/api/ai';
             _lastAiEndpoint = aiEndpoint;
             const fallbackEndpoint = ''; // AI text must not fall back to the legacy Gemini endpoint.
             const requestCupidReplyData = async (messages, { resetPreview = false } = {}) => {
@@ -2024,7 +2024,7 @@ class FreeTalkSystem {
 
             const endpoint = (typeof AI_API_ENDPOINT !== 'undefined' && AI_API_ENDPOINT)
                 ? AI_API_ENDPOINT
-                : 'https://openrouter-api.yama5993.workers.dev/';
+                : '/api/ai';
             const buildRequestInit = wantsStream => ({
                 method: 'POST',
                 headers: {
