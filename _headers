@@ -32,3 +32,10 @@ https://:version.:project.pages.dev/*
 
 /seo/_*
   X-Robots-Tag: noindex, nofollow
+
+# Runtime game and gallery shells are not search landing pages.
+/game*
+  X-Robots-Tag: noindex, follow
+
+/gallery*
+  X-Robots-Tag: noindex, follow
