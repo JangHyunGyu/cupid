@@ -872,6 +872,12 @@ ${sitemapFrag}
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://cupid.archerlab.dev/seo/cupid-gameplay-save-guide</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 <!-- traffic-pages:end -->
 </urlset>
 `;
