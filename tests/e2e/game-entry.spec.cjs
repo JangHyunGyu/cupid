@@ -165,7 +165,7 @@ test('landing modals expose dialog semantics and keep keyboard focus contained',
         continueButton.disabled = false;
         continueButton.style.opacity = '1';
     });
-    const startButton = page.getByRole('button', { name: '새게임' });
+    const startButton = page.getByRole('button', { name: '새 게임' });
     await startButton.click();
     const newGameModal = page.locator('#newGameConfirmModal');
     await expect(newGameModal).toHaveAttribute('role', 'alertdialog');

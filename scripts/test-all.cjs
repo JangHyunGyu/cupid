@@ -7,7 +7,9 @@ const root = path.resolve(__dirname, '..');
 const commands = [
     ['node', ['scripts/sync-build-metadata.cjs', '--check']],
     ['node', ['scripts/verify-project-structure.cjs']],
+    ['node', ['scripts/validate-seo.cjs']],
     ['node', ['generate-scenario.js', '--check']],
+    ['node', ['scripts/verify-korean-naturalness.cjs']],
     ['node', ['validate.js', '--seed=cupid-ci', '--no-report']],
     ['node', ['test_endings.js']],
     ['node', ['test_i18n_full.js']],

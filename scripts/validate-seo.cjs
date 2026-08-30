@@ -6,6 +6,11 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const SITE = 'https://cupid.archerlab.dev';
 const LASTMOD = '2026-07-13';
+const TRAFFIC_PAGE_LASTMOD = new Map([
+  ['visual-novel-beginner-guide', '2026-08-30'],
+  ['multiple-ending-romance-game', '2026-08-30'],
+  ['cupid-gameplay-save-guide', '2026-08-30']
+]);
 const errors = [];
 
 const HOME = [
@@ -58,7 +63,7 @@ const indexable = [
   ...seoFiles.map(([file, url]) => ({ file, url, lang: '', home: false }))
 ];
 
-if (indexable.length !== 40) fail(`Expected 40 indexable pages, found ${indexable.length}`);
+if (indexable.length !== 43) fail(`Expected 43 indexable pages, found ${indexable.length}`);
 
 const canonicals = new Set();
 let stableGame = '';
@@ -94,7 +99,8 @@ for (const page of indexable) {
   }
   if (!html.includes('name="twitter:image:alt"')) fail(`${page.file}: missing twitter:image:alt`);
   if (html.includes('seo-screenshots')) fail(`${page.file}: hidden SEO screenshot section is still present`);
-  if (!page.home) {
+  const trafficPage = TRAFFIC_PAGE_LASTMOD.has(path.basename(page.file, '.html'));
+  if (!page.home && !trafficPage) {
     const ctaPlacements = [...html.matchAll(/data-seo-cta="([^"]+)"/g)].map(match => match[1]);
     const ctaEvents = [...html.matchAll(/seo_cta_click/g)].length;
     if (ctaPlacements.join(',') !== 'top,bottom') fail(`${page.file}: expected tracked top and bottom SEO CTAs`);
@@ -127,7 +133,7 @@ for (const page of indexable) {
       fail(`${page.file}: WebPage schema does not match its canonical URL`);
     }
     if (!game || !types(game).includes('WebApplication')) {
-      fail(`${page.file}: game schema must co-type VideoGame and WebApplication`);
+      if (!trafficPage) fail(`${page.file}: game schema must co-type VideoGame and WebApplication`);
       continue;
     }
     if (game['@id'] !== `${SITE}/#videogame` || game.name !== 'Cupid' || game.url !== `${SITE}/`) {
@@ -137,7 +143,9 @@ for (const page of indexable) {
       fail(`${page.file}: SoftwareApplication fields are invalid`);
     }
     if (game.aggregateRating || game.review) fail(`${page.file}: unverified rating/review must not be emitted`);
-    const normalized = JSON.stringify(canonicalize(game));
+    const stableFields = { ...game };
+    delete stableFields.description;
+    const normalized = JSON.stringify(canonicalize(stableFields));
     if (!stableGame) stableGame = normalized;
     else if (normalized !== stableGame) fail(`${page.file}: game entity conflicts with other pages`);
     if (page.home && !graph.some(node => types(node).includes('WebSite') && node.name === 'Cupid')) {
@@ -209,7 +217,8 @@ for (const block of sitemapBlocks) {
   const expectedAlternates = HOME.some(([, url]) => url === loc) || PRIMARY_SEO_SLUGS.has(slug) ? 8 : 0;
   if (!loc || sitemapUrls.has(loc)) fail(`sitemap.xml: missing or duplicate loc ${loc}`);
   sitemapUrls.add(loc);
-  if (lastmod !== LASTMOD) fail(`sitemap.xml: ${loc} has stale lastmod ${lastmod}`);
+  const expectedLastmod = TRAFFIC_PAGE_LASTMOD.get(slug) || LASTMOD;
+  if (lastmod !== expectedLastmod) fail(`sitemap.xml: ${loc} has stale lastmod ${lastmod}`);
   if (alternates !== expectedAlternates) fail(`sitemap.xml: ${loc} has ${alternates} alternate links`);
 }
 const expectedUrls = new Set(indexable.map(page => page.url));

@@ -7,6 +7,7 @@
     "build:check": "node scripts/sync-build-metadata.cjs --check && node scripts/verify-project-structure.cjs",
     "scenario:sync": "node generate-scenario.js",
     "scenario:check": "node generate-scenario.js --check",
+    "text:check": "node scripts/verify-korean-naturalness.cjs",
     "test": "node scripts/test-all.cjs",
     "cache:check": "node scripts/verify-korean-prompts.cjs && node scripts/verify-multilingual-prompts.cjs && node scripts/verify-rag-retrieval.cjs && node --test tests/deepseek-api-routing.test.cjs",
     "test:deterministic": "node validate.js --seed=cupid-ci --no-report && node test_endings.js && node test_i18n_full.js",

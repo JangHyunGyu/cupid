@@ -44,7 +44,7 @@
         };
     </script>
     <script src="assets/js/browser-check.js?v=2.9.8" defer></script>
-    <script src="assets/js/modal-accessibility.js?v=2.9.197" defer></script>
+    <script src="assets/js/modal-accessibility.js?v=2.9.198" defer></script>
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -982,15 +982,15 @@
         </div>
         <div class="content">
             <h1 class="visual-h1">CUPID<span class="sr-only"> - 무료 웹 비주얼노벨 | 5일간의 학원 로맨스</span></h1>
-            <p>당신의 운명을 결정할 전학 첫날의 이야기</p>
+            <p>전학 첫날, 누구에게 먼저 말을 걸까</p>
             <div class="value-props">
                 <span class="vp-badge">✓ 무료</span>
                 <span class="vp-badge">✓ 회원가입 없음</span>
                 <span class="vp-badge">✓ 설치 없음</span>
-                <span class="vp-badge">✓ AI 멀티엔딩</span>
+                <span class="vp-badge">✓ 여러 엔딩</span>
             </div>
             <div style="display: flex; flex-direction: column; align-items: center; gap: clamp(6px, 1.2vh, 12px);">
-                <button id="start-btn" onclick="startGame()" class="start-btn" style="cursor:pointer; opacity: 0.5;" disabled>새게임</button>
+                <button id="start-btn" onclick="startGame()" class="start-btn" style="cursor:pointer; opacity: 0.5;" disabled>새 게임</button>
                 <button id="continue-btn" onclick="continueGame()" class="start-btn"
                     style="cursor:pointer; opacity: 0.5; background: rgba(0, 0, 0, 0.25);"
                     disabled>계속하기</button>
@@ -1009,16 +1009,16 @@
                 <a href="/seo/misinsi-muryo" style="color: #ffb6c1; margin: 0 6px;">미연시 무료</a>
             </nav>
             <p style="color: #ffb6c1;">Advisor: 김유진 프로, 이상훈 프로</p>
-            <p style="opacity: 0.7;">© 2026 ArcherLab. All rights reserved. (v2.9.197)</p>
+            <p style="opacity: 0.7;">© 2026 ArcherLab. All rights reserved. (v2.9.198)</p>
         </div>
     </div>
 
-    <!-- 새게임 확인 모달 (랜딩 페이지용) -->
+    <!-- 새 게임 확인 모달 (랜딩 페이지용) -->
     <div id="newGameConfirmModal" class="modal-overlay" style="display: none;" onclick="closeNewGameConfirm(event)">
         <div class="modal-container" onclick="event.stopPropagation()">
             <div style="font-size: 2.5rem; margin-bottom: 10px;">⚠️</div>
-            <h3 class="modal-title">새게임 시작</h3>
-            <p style="color: #ccc; margin: 15px 0; line-height: 1.6;">저장된 게임 데이터가 삭제됩니다.<br>그래도 새게임을 시작하시겠습니까?</p>
+            <h3 class="modal-title">새 게임 시작</h3>
+            <p style="color: #ccc; margin: 15px 0; line-height: 1.6;">저장된 게임 데이터가 삭제됩니다.<br>그래도 새 게임을 시작하시겠습니까?</p>
             <div class="confirm-buttons">
                 <button class="modal-btn cancel" onclick="closeNewGameConfirm(event)">취소</button>
                 <button class="modal-btn confirm" onclick="confirmNewGame()">시작</button>
@@ -1263,7 +1263,7 @@
     </script>
 
     <!-- 게임 스크립트 (동적 로더) -->
-<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.197"></script>
+<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.198"></script>
 
     <script>
         // Initialize SoundManager + Enable Buttons (게임 스크립트 로드 완료 후)
@@ -1300,14 +1300,14 @@
             await launchNewGame();
         }
 
-        // 새게임 확인 모달 닫기
+        // 새 게임 확인 모달 닫기
         function closeNewGameConfirm(e) {
             if (e && e.target !== e.currentTarget) return;
             const modal = document.getElementById('newGameConfirmModal');
             if (modal) modal.style.display = 'none';
         }
 
-        // 새게임 확인 후 실행
+        // 새 게임 확인 후 실행
         async function confirmNewGame() {
             const modal = document.getElementById('newGameConfirmModal');
             if (modal) modal.style.display = 'none';
