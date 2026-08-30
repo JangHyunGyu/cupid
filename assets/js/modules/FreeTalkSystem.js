@@ -1793,7 +1793,7 @@ class FreeTalkSystem {
             previousValue,
             { nonRomance: speakerId === 'Haeun' }
         );
-        if (requestedChange > 0) requestedChange = Math.min(3, positiveBudget);
+        if (requestedChange > 0) requestedChange = Math.min(requestedChange, 3, positiveBudget);
         if (requestedChange === 0) {
             return { change: 0, value: previousValue, requestedChange: 0, positiveUsed: 0 };
         }

@@ -1211,7 +1211,7 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
     assert.match(freeTalk, /addGroupConversationMemory\?\.\(\{/);
     assert.match(freeTalk, /includeGroupConversations: false/);
     assert.match(freeTalk, /let positiveBudget = 3/);
-    assert.match(freeTalk, /requestedChange = Math\.min\(3, positiveBudget\)/);
+    assert.match(freeTalk, /requestedChange = Math\.min\(requestedChange, 3, positiveBudget\)/);
     assert.match(freeTalk, /advanceGroupMessageQueue\(\)/);
     assert.match(gameEngine, /scene\.type === 'group_free_talk'/);
     assert.match(config, /charId: 'group'/);
@@ -1491,6 +1491,29 @@ test('group reply order, per-speaker affinity, and Dain expression assets follow
     assert.equal(dainImage.dataset.rawSrc, 'assets/images/characters/dain_angry.png?v=test');
     system._applyGroupExpression('sad', 'Dain');
     assert.equal(dainImage.src, 'assets/images/characters/dain_sad.png?v=test');
+
+    let teacherAffinity = 20;
+    const appliedAffinityChanges = [];
+    system.stateManager = {
+        stats: { Teacher: { affinity: teacherAffinity } },
+        getAffinity: () => teacherAffinity,
+        changeAffinity(_speakerId, amount) {
+            appliedAffinityChanges.push(amount);
+            teacherAffinity += amount;
+            return teacherAffinity;
+        }
+    };
+    system.galleryManager = {
+        updateMaxAffinity() {},
+        checkAffinityUnlock() {}
+    };
+    system.uiManager.showAffinityChange = () => {};
+
+    const mildPositive = system._applyGroupAffinity(1, 'Teacher', 3);
+    assert.equal(mildPositive.requestedChange, 1);
+    assert.equal(mildPositive.appliedChange, 1);
+    assert.equal(mildPositive.change, 1);
+    assert.deepEqual(appliedAffinityChanges, [1], 'a +1 group score must not be inflated to +3');
 
     const events = [];
     system.stateManager = {
