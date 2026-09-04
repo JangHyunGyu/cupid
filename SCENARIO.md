@@ -17830,8 +17830,8 @@
 ### `day4_night_branch`
 - 배경: `room_my.png`
 - 분기:
-  - [`homeroom_day4`] → `day4_adult_teacher_overall_rank`
-  - [`nurse_day4`] → `day4_adult_nurse_overall_rank`
+  - [`homeroom_day4`] → `day4_adult_teacher_student_rank`
+  - [`nurse_day4`] → `day4_adult_nurse_student_rank`
   - [기본] → `day4_student_night_branch`
 
 - 캐릭터: `없음`
@@ -17839,110 +17839,9 @@
 
 ---
 
-### `day4_adult_teacher_overall_rank`
-- 배경: `room_my.png`
-- 실시간 순위 분기:
-  - 루트 캐릭터: `Teacher` (상위 1명)
-  - [`Nurse`] → `day4_adult_teacher_student_rank`
-  - [기준 미달] → `day4_adult_nurse_flag_check`
-
-- 캐릭터: `없음`
-
-<!-- i18n -->
-
----
-
-### `day4_adult_nurse_flag_check`
-- 배경: `room_my.png`
-- 분기:
-  - [`nurse_day4`] → `day4_adult_nurse_overall_rank`
-  - [기본] → `day4_student_night_branch`
-
-- 캐릭터: `없음`
-
-<!-- i18n -->
-
----
-
-### `day4_adult_nurse_overall_rank`
-- 배경: `room_my.png`
-- 실시간 순위 분기:
-  - 루트 캐릭터: `Nurse` (상위 1명)
-  - [`Teacher`] → `day4_adult_nurse_student_rank`
-  - [기준 미달] → `day4_student_night_branch`
-
-- 캐릭터: `없음`
-
-<!-- i18n -->
-
----
-
-### `day4_adult_nurse_student_rank`
-- 배경: `room_my.png`
-- 실시간 순위 분기:
-  - 루트 캐릭터: `Nurse` (상위 2명)
-  - 라이벌 최소 호감도: 0
-  - [`Seoyeon`] → `day4_nurse_seoyeon_counteroffer`
-  - [`Dain`] → `day4_nurse_dain_counteroffer`
-  - [`Yuna`] → `day4_nurse_yuna_counteroffer`
-  - [기준 미달] → `day4_student_night_branch`
-
-- 캐릭터: `없음`
-
-<!-- i18n -->
-
----
-
-### `day4_nurse_seoyeon_counteroffer`
-- 배경: `school_back.png`
-- 선택지:
-  1. "보건선생님에게 답장하고 돌아간다" → `day4_hidden_msg_branch` | Nurse +4, Seoyeon -6 | 플래그: `day4_held_route_nurse`
-  2. "서연을 따라 옥상에 올라가 손을 잡는다" → 호감분기: Seoyeon | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
-    - [0+] → `day4_adult_counteroffer_accept_seoyeon`
-    - [기본] → `day4_adult_counteroffer_soft_seoyeon`
-  3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `day4_hidden_msg_branch` | Nurse -8, Seoyeon -8 | 플래그: `day4_held_route_nurse`
-  4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `day4_hidden_msg_branch` | Nurse -5, Seoyeon -10 | 플래그: `day4_held_route_nurse`
-
-- 캐릭터: `seyoun_sad.png`
-**서연**: *보건실을 나와 정문으로 향하는데 서연이 옥상 계단 앞을 막아선다. 애써 웃는 입술과 달리 손끝은 교복 소매를 구기고 있다.* 요즘 보건선생님만 찾아가잖아. 오늘만은 학생회장도 모범생도 아닌 나를 봐주면 안 돼?
-
----
-
-### `day4_nurse_dain_counteroffer`
-- 배경: `gym.png`
-- 배경톤: `lights-off`
-- 선택지:
-  1. "보건선생님에게 돌아간다고 답장한다" → `day4_hidden_msg_branch` | Nurse +4, Dain -6 | 플래그: `day4_held_route_nurse`
-  2. "체육관으로 들어가 다인의 부탁을 받아준다" → 호감분기: Dain | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
-    - [0+] → `day4_adult_counteroffer_accept_dain`
-    - [기본] → `day4_adult_counteroffer_soft_dain`
-  3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `day4_hidden_msg_branch` | Nurse -8, Dain -8 | 플래그: `day4_held_route_nurse`
-  4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `day4_hidden_msg_branch` | Nurse -5, Dain -10 | 플래그: `day4_held_route_nurse`
-
-- 캐릭터: `dain_sad.png`
-**다인**: *보건실 문을 닫고 나오자 체육관 비상문 앞에 다인이 서 있다. 다인은 무릎 테이프를 뜯었다 붙이며 시선을 피한다.* 요즘 보건선생님한테만 가잖아. 열 번만 받아줘. 끝나면… 오늘은 나 좀 안아주라.
-
----
-
-### `day4_nurse_yuna_counteroffer`
-- 배경: `yuna_hideout.png`
-- 선택지:
-  1. "보건선생님에게 답장하고 집으로 돌아간다" → `day4_hidden_msg_branch` | Nurse +4, Yuna -6 | 플래그: `day4_held_route_nurse`
-  2. "별관으로 가서 유나 곁에 남는다" → 호감분기: Yuna | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
-    - [0+] → `day4_adult_counteroffer_accept_yuna`
-    - [기본] → `day4_adult_counteroffer_soft_yuna`
-  3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `day4_hidden_msg_branch` | Nurse -8, Yuna -8 | 플래그: `day4_held_route_nurse`
-  4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `day4_hidden_msg_branch` | Nurse -5, Yuna -10 | 플래그: `day4_held_route_nurse`
-
-- 캐릭터: `yuna_sad.png`
-**유나**: *보건실을 나선 뒤 유나에게서 별관 사진 한 장이 도착한다. 빈 의자 두 개 중 하나에 유나의 재킷이 놓여 있다.* 선생님 옆이 더 편한가 봐. 그래도 오늘 네가 그냥 가면, 또 혼자 남겨진 기분일 것 같아.
-
----
-
 ### `day4_adult_teacher_student_rank`
 - 배경: `room_my.png`
-- 실시간 순위 분기:
-  - 루트 캐릭터: `Teacher` (상위 2명)
+- 실시간 라이벌 분기:
   - 라이벌 최소 호감도: 0
   - [`Seoyeon`] → `day4_teacher_seoyeon_counteroffer`
   - [`Dain`] → `day4_teacher_dain_counteroffer`
@@ -17970,6 +17869,67 @@
 
 ---
 
+### `day4_teacher_dain_counteroffer`
+- 배경: `gym.png`
+- 배경톤: `lights-off`
+- 선택지:
+  1. "담임에게 돌아간다고 답장한다" → `day4_hidden_msg_branch` | Teacher +4, Dain -6 | 플래그: `day4_held_route_teacher`
+  2. "체육관으로 들어가 다인의 부탁을 받아준다" → 호감분기: Dain | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
+    - [0+] → `day4_adult_counteroffer_accept_dain`
+    - [기본] → `day4_adult_counteroffer_soft_dain`
+  3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `day4_hidden_msg_branch` | Teacher -8, Dain -8 | 플래그: `day4_held_route_teacher`
+  4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `day4_hidden_msg_branch` | Teacher -5, Dain -10 | 플래그: `day4_held_route_teacher`
+
+- 캐릭터: `dain_sad.png`
+**다인**: *담임에게 도착하면 연락하겠다고 한 뒤, 체육관 앞을 지난다. 불 꺼진 비상문에 기대 있던 다인이 무릎 테이프를 만지작거린다.* 요즘 선생님한테만 가잖아. 열 번만 받아줘. 끝나면… 오늘은 나 좀 안아주라.
+
+---
+
+### `day4_teacher_yuna_counteroffer`
+- 배경: `yuna_hideout.png`
+- 선택지:
+  1. "담임에게 답장하고 집으로 돌아간다" → `day4_hidden_msg_branch` | Teacher +4, Yuna -6 | 플래그: `day4_held_route_teacher`
+  2. "별관으로 가서 유나 곁에 남는다" → 호감분기: Yuna | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
+    - [0+] → `day4_adult_counteroffer_accept_yuna`
+    - [기본] → `day4_adult_counteroffer_soft_yuna`
+  3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `day4_hidden_msg_branch` | Teacher -8, Yuna -8 | 플래그: `day4_held_route_teacher`
+  4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `day4_hidden_msg_branch` | Teacher -5, Yuna -10 | 플래그: `day4_held_route_teacher`
+
+- 캐릭터: `yuna_sad.png`
+**유나**: *담임과 헤어진 직후 유나에게서 별관 사진이 온다. 빈 의자 두 개가 나란히 놓여 있고 한쪽에 유나의 재킷이 걸려 있다.* 선생님 옆이 더 편한가 봐. 그래도 오늘 네가 그냥 가면, 또 혼자 남겨진 기분일 것 같아.
+
+---
+
+### `day4_adult_nurse_student_rank`
+- 배경: `room_my.png`
+- 실시간 라이벌 분기:
+  - 라이벌 최소 호감도: 0
+  - [`Seoyeon`] → `day4_nurse_seoyeon_counteroffer`
+  - [`Dain`] → `day4_nurse_dain_counteroffer`
+  - [`Yuna`] → `day4_nurse_yuna_counteroffer`
+  - [기준 미달] → `day4_student_night_branch`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `day4_nurse_seoyeon_counteroffer`
+- 배경: `school_back.png`
+- 선택지:
+  1. "보건선생님에게 답장하고 돌아간다" → `day4_hidden_msg_branch` | Nurse +4, Seoyeon -6 | 플래그: `day4_held_route_nurse`
+  2. "서연을 따라 옥상에 올라가 손을 잡는다" → 호감분기: Seoyeon | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
+    - [0+] → `day4_adult_counteroffer_accept_seoyeon`
+    - [기본] → `day4_adult_counteroffer_soft_seoyeon`
+  3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `day4_hidden_msg_branch` | Nurse -8, Seoyeon -8 | 플래그: `day4_held_route_nurse`
+  4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `day4_hidden_msg_branch` | Nurse -5, Seoyeon -10 | 플래그: `day4_held_route_nurse`
+
+- 캐릭터: `seyoun_sad.png`
+**서연**: *보건실을 나와 정문으로 향하는데 서연이 옥상 계단 앞을 막아선다. 애써 웃는 입술과 달리 손끝은 교복 소매를 구기고 있다.* 요즘 보건선생님만 찾아가잖아. 오늘만은 학생회장도 모범생도 아닌 나를 봐주면 안 돼?
+
+---
+
 ### `day4_adult_counteroffer_accept_seoyeon`
 - 배경: `event_temptation_seoyeon.png`
 - 다음: `day4_adult_night_regret_target_branch`
@@ -17988,19 +17948,19 @@
 
 ---
 
-### `day4_teacher_dain_counteroffer`
+### `day4_nurse_dain_counteroffer`
 - 배경: `gym.png`
 - 배경톤: `lights-off`
 - 선택지:
-  1. "담임에게 돌아간다고 답장한다" → `day4_hidden_msg_branch` | Teacher +4, Dain -6 | 플래그: `day4_held_route_teacher`
-  2. "체육관으로 들어가 다인의 부탁을 받아준다" → 호감분기: Dain | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
+  1. "보건선생님에게 돌아간다고 답장한다" → `day4_hidden_msg_branch` | Nurse +4, Dain -6 | 플래그: `day4_held_route_nurse`
+  2. "체육관으로 들어가 다인의 부탁을 받아준다" → 호감분기: Dain | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
     - [0+] → `day4_adult_counteroffer_accept_dain`
     - [기본] → `day4_adult_counteroffer_soft_dain`
-  3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `day4_hidden_msg_branch` | Teacher -8, Dain -8 | 플래그: `day4_held_route_teacher`
-  4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `day4_hidden_msg_branch` | Teacher -5, Dain -10 | 플래그: `day4_held_route_teacher`
+  3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `day4_hidden_msg_branch` | Nurse -8, Dain -8 | 플래그: `day4_held_route_nurse`
+  4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `day4_hidden_msg_branch` | Nurse -5, Dain -10 | 플래그: `day4_held_route_nurse`
 
 - 캐릭터: `dain_sad.png`
-**다인**: *담임에게 도착하면 연락하겠다고 한 뒤, 체육관 앞을 지난다. 불 꺼진 비상문에 기대 있던 다인이 무릎 테이프를 만지작거린다.* 요즘 선생님한테만 가잖아. 열 번만 받아줘. 끝나면… 오늘은 나 좀 안아주라.
+**다인**: *보건실 문을 닫고 나오자 체육관 비상문 앞에 다인이 서 있다. 다인은 무릎 테이프를 뜯었다 붙이며 시선을 피한다.* 요즘 보건선생님한테만 가잖아. 열 번만 받아줘. 끝나면… 오늘은 나 좀 안아주라.
 
 ---
 
@@ -18022,18 +17982,18 @@
 
 ---
 
-### `day4_teacher_yuna_counteroffer`
+### `day4_nurse_yuna_counteroffer`
 - 배경: `yuna_hideout.png`
 - 선택지:
-  1. "담임에게 답장하고 집으로 돌아간다" → `day4_hidden_msg_branch` | Teacher +4, Yuna -6 | 플래그: `day4_held_route_teacher`
-  2. "별관으로 가서 유나 곁에 남는다" → 호감분기: Yuna | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
+  1. "보건선생님에게 답장하고 집으로 돌아간다" → `day4_hidden_msg_branch` | Nurse +4, Yuna -6 | 플래그: `day4_held_route_nurse`
+  2. "별관으로 가서 유나 곁에 남는다" → 호감분기: Yuna | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
     - [0+] → `day4_adult_counteroffer_accept_yuna`
     - [기본] → `day4_adult_counteroffer_soft_yuna`
-  3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `day4_hidden_msg_branch` | Teacher -8, Yuna -8 | 플래그: `day4_held_route_teacher`
-  4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `day4_hidden_msg_branch` | Teacher -5, Yuna -10 | 플래그: `day4_held_route_teacher`
+  3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `day4_hidden_msg_branch` | Nurse -8, Yuna -8 | 플래그: `day4_held_route_nurse`
+  4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `day4_hidden_msg_branch` | Nurse -5, Yuna -10 | 플래그: `day4_held_route_nurse`
 
 - 캐릭터: `yuna_sad.png`
-**유나**: *담임과 헤어진 직후 유나에게서 별관 사진이 온다. 빈 의자 두 개가 나란히 놓여 있고 한쪽에 유나의 재킷이 걸려 있다.* 선생님 옆이 더 편한가 봐. 그래도 오늘 네가 그냥 가면, 또 혼자 남겨진 기분일 것 같아.
+**유나**: *보건실을 나선 뒤 유나에게서 별관 사진 한 장이 도착한다. 빈 의자 두 개 중 하나에 유나의 재킷이 놓여 있다.* 선생님 옆이 더 편한가 봐. 그래도 오늘 네가 그냥 가면, 또 혼자 남겨진 기분일 것 같아.
 
 ---
 
@@ -18113,8 +18073,7 @@
 ### `wall_seo_rival_rank`
 - 배경: `park.png`
 - 배경톤: `cold`
-- 실시간 순위 분기:
-  - 루트 캐릭터: `Seoyeon` (상위 2명)
+- 실시간 라이벌 분기:
   - 라이벌 최소 호감도: 0
   - [`Dain`] → `wall_seo_glimpse_1`
   - [`Yuna`] → `wall_seo_yuna_tempt_1`
@@ -18766,8 +18725,7 @@
 
 ### `wall_dain_rival_rank`
 - 배경: `school_back.png`
-- 실시간 순위 분기:
-  - 루트 캐릭터: `Dain` (상위 2명)
+- 실시간 라이벌 분기:
   - 라이벌 최소 호감도: 0
   - [`Seoyeon`] → `wall_dain_seo_tempt_1`
   - [`Yuna`] → `wall_dain_glimpse_1`
@@ -19620,8 +19578,7 @@
 ### `wall_yuna_rival_rank`
 - 배경: `yuna_hideout.png`
 - 배경톤: `dream`
-- 실시간 순위 분기:
-  - 루트 캐릭터: `Yuna` (상위 2명)
+- 실시간 라이벌 분기:
   - 라이벌 최소 호감도: 0
   - [`Seoyeon`] → `wall_yuna_glimpse_1`
   - [`Dain`] → `wall_yuna_dain_tempt_1`

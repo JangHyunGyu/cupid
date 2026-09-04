@@ -212,14 +212,8 @@ function formatAffinityBranches(scene) {
 }
 
 function formatRankedRivalBranches(scene) {
-    const lines = [
-        `- 실시간 순위 분기:`,
-        `  - 루트 캐릭터: \`${scene.leadCharacter}\` (상위 ${scene.maxLeadRank ?? 1}명)`
-    ];
+    const lines = [`- 실시간 라이벌 분기:`];
 
-    if (scene.minLeadAffinity !== undefined) {
-        lines.push(`  - 루트 최소 호감도: ${scene.minLeadAffinity}`);
-    }
     if (scene.minRivalAffinity !== undefined) {
         lines.push(`  - 라이벌 최소 호감도: ${scene.minRivalAffinity}`);
     }

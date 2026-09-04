@@ -149,12 +149,6 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
     if (scene.minRivalAffinity !== undefined && !Number.isFinite(Number(scene.minRivalAffinity))) {
         errors.push('[AFFINITY_RIVAL] ' + sceneId + ': minRivalAffinity must be finite');
     }
-    if (scene.maxLeadRank !== undefined
-        && (!Number.isInteger(Number(scene.maxLeadRank))
-            || Number(scene.maxLeadRank) < 1
-            || Number(scene.maxLeadRank) > (scene.rankedRivalBranches?.length ?? 0) + 1)) {
-        errors.push('[AFFINITY_RIVAL] ' + sceneId + ': maxLeadRank must fit the ranked character pool');
-    }
 }
 
 // ===== 2. Image File Existence =====
@@ -966,21 +960,13 @@ function simResolveNext(scene, state) {
     }
     // 1. rankedRivalBranches
     if (scene.rankedRivalBranches && scene.rankedRivalBranches.length > 0) {
-        const leadAffinity = state.getAffinity(scene.leadCharacter);
-        const minLeadAffinity = Number(scene.minLeadAffinity ?? -100);
         const minRivalAffinity = Number(scene.minRivalAffinity ?? -100);
-        const configuredMaxLeadRank = Number(scene.maxLeadRank ?? 1);
-        const maxLeadRank = Number.isInteger(configuredMaxLeadRank) && configuredMaxLeadRank > 0
-            ? configuredMaxLeadRank
-            : 1;
         const rankedRivals = scene.rankedRivalBranches
             .filter(branch => branch.character && branch.next)
             .map((branch, index) => ({ ...branch, affinity: state.getAffinity(branch.character), _i: index }))
             .sort((a, b) => b.affinity - a.affinity || a._i - b._i);
         const strongestRival = rankedRivals[0];
-        const leadRank = 1 + rankedRivals.filter(rival => rival.affinity > leadAffinity).length;
-        if (strongestRival && strongestRival.affinity >= minRivalAffinity
-            && leadRank <= maxLeadRank && leadAffinity >= minLeadAffinity) {
+        if (strongestRival && strongestRival.affinity >= minRivalAffinity) {
             return strongestRival.next;
         }
         return scene.rankedRivalFallback || scene.next || null;
@@ -1294,9 +1280,6 @@ for (const [sceneId, { scene }] of Object.entries(allScenes)) {
         });
     }
     if (scene.rankedRivalBranches) {
-        if (!validCharKeys.includes(scene.leadCharacter)) {
-            errors.push('[PLAYTEST_AFFINITY] "' + sceneId + '" rankedRivalBranches leadCharacter: "' + scene.leadCharacter + '" 유효하지 않은 캐릭터 키');
-        }
         scene.rankedRivalBranches.forEach((branch, i) => {
             if (!validCharKeys.includes(branch.character)) {
                 errors.push('[PLAYTEST_AFFINITY] "' + sceneId + '" rankedRivalBranches[' + i + ']: "' + branch.character + '" 유효하지 않은 캐릭터 키');

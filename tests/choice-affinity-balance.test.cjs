@@ -945,7 +945,7 @@ test('all five character routes share the 100/60/40/bittersweet ending tiers', (
     }
 });
 
-test('ranked rival routing allows nonnegative rivals while preserving the live top two', () => {
+test('ranked rival routing selects the strongest nonnegative rival without checking the lead rank', () => {
     const affinities = { Seoyeon: 80, Dain: 50, Yuna: 70 };
     const renderer = createSceneRenderer(affinities);
 
@@ -963,10 +963,10 @@ test('ranked rival routing allows nonnegative rivals while preserving the live t
     Object.assign(affinities, { Seoyeon: 80, Dain: 0, Yuna: -20 });
     assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_glimpse_1', 'a rival at zero must satisfy the threshold');
     Object.assign(affinities, { Seoyeon: 50, Dain: 80, Yuna: 30 });
-    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_glimpse_1', 'a nonnegative rival may tempt the second-ranked route lead');
+    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_glimpse_1', 'a nonnegative rival may tempt a lower-ranked route lead');
 
     Object.assign(affinities, { Seoyeon: 50, Dain: 80, Yuna: 70 });
-    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_1', 'a third-ranked route lead must skip the temptation');
+    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_glimpse_1', 'the route lead rank must not block the strongest rival');
 
     Object.assign(affinities, { Seoyeon: 80, Dain: -1, Yuna: -10 });
     assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_1', 'negative rivals must not initiate an intimate counteroffer');
@@ -1120,14 +1120,16 @@ test('rival affinity is checked before the wall scene and free talk exits cleanl
         assert.equal(scenes.day4_student_return_home.next, 'day4_hidden_msg_branch');
         assert.equal(scenes[rankId].minLeadAffinity, undefined);
         assert.equal(scenes[rankId].minRivalAffinity, 0);
-        assert.equal(scenes[rankId].maxLeadRank, 2);
+        assert.equal(scenes[rankId].leadCharacter, undefined);
+        assert.equal(scenes[rankId].maxLeadRank, undefined);
         assert.equal(scenes[rankId].rankedRivalFallback, `wall_${short}_1`);
     }
 
     for (const rankId of ['day4_adult_teacher_student_rank', 'day4_adult_nurse_student_rank']) {
         assert.equal(scenes[rankId].minLeadAffinity, undefined);
         assert.equal(scenes[rankId].minRivalAffinity, 0);
-        assert.equal(scenes[rankId].maxLeadRank, 2);
+        assert.equal(scenes[rankId].leadCharacter, undefined);
+        assert.equal(scenes[rankId].maxLeadRank, undefined);
         assert.equal(scenes[rankId].rankedRivalFallback, 'day4_student_night_branch');
     }
 });
@@ -1295,29 +1297,29 @@ test('day-five mood uses the highest live affinity instead of a pseudo-character
     assert.equal(renderer.resolveNextScene(scenes.morning5_mood_check), 'morning5_mood_low');
 });
 
-test('an adult day-four lead in the live top two is tempted by a nonnegative student rival', () => {
+test('adult day-four routes use the strongest nonnegative student rival without rank gates', () => {
     const affinities = { Teacher: 80, Nurse: 70, Seoyeon: 55, Dain: 65, Yuna: 60 };
     const renderer = createSceneRenderer(affinities);
 
     assert.deepEqual(scenes.day4_night_branch.branches, [
-        { condition: 'homeroom_day4', next: 'day4_adult_teacher_overall_rank' },
-        { condition: 'nurse_day4', next: 'day4_adult_nurse_overall_rank' },
+        { condition: 'homeroom_day4', next: 'day4_adult_teacher_student_rank' },
+        { condition: 'nurse_day4', next: 'day4_adult_nurse_student_rank' },
         { next: 'day4_student_night_branch' }
     ]);
-    assert.equal(renderer.resolveNextScene(scenes.day4_adult_teacher_overall_rank), 'day4_adult_teacher_student_rank');
+    assert.equal(scenes.day4_adult_teacher_overall_rank, undefined);
+    assert.equal(scenes.day4_adult_nurse_flag_check, undefined);
+    assert.equal(scenes.day4_adult_nurse_overall_rank, undefined);
     assert.equal(renderer.resolveNextScene(scenes.day4_adult_teacher_student_rank), 'day4_teacher_dain_counteroffer');
 
     Object.assign(affinities, { Teacher: 75, Nurse: 85, Seoyeon: 70, Dain: 60, Yuna: 65 });
-    assert.equal(renderer.resolveNextScene(scenes.day4_adult_teacher_overall_rank), 'day4_adult_nurse_flag_check');
-    assert.equal(renderer.resolveNextScene(scenes.day4_adult_nurse_overall_rank), 'day4_adult_nurse_student_rank');
+    assert.equal(renderer.resolveNextScene(scenes.day4_adult_teacher_student_rank), 'day4_teacher_seoyeon_counteroffer');
     assert.equal(renderer.resolveNextScene(scenes.day4_adult_nurse_student_rank), 'day4_nurse_seoyeon_counteroffer');
 
     Object.assign(affinities, { Teacher: 50, Nurse: 30, Seoyeon: 0, Dain: -10, Yuna: -20 });
-    assert.equal(renderer.resolveNextScene(scenes.day4_adult_teacher_overall_rank), 'day4_adult_teacher_student_rank');
     assert.equal(renderer.resolveNextScene(scenes.day4_adult_teacher_student_rank), 'day4_teacher_seoyeon_counteroffer', 'a student rival at zero may tempt the adult lead');
 
     Object.assign(affinities, { Teacher: 40, Nurse: 30, Seoyeon: 70, Dain: 65, Yuna: 10 });
-    assert.equal(renderer.resolveNextScene(scenes.day4_adult_teacher_student_rank), 'day4_student_night_branch', 'a third-ranked adult lead must skip the temptation');
+    assert.equal(renderer.resolveNextScene(scenes.day4_adult_teacher_student_rank), 'day4_teacher_seoyeon_counteroffer', 'the adult lead rank must not block the strongest student rival');
 
     Object.assign(affinities, { Teacher: 85, Nurse: 30, Seoyeon: -1, Dain: -10, Yuna: -30 });
     assert.equal(renderer.resolveNextScene(scenes.day4_adult_teacher_student_rank), 'day4_student_night_branch', 'negative student rivals must not tempt an adult lead');
