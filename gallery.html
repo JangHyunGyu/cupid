@@ -46,7 +46,7 @@
     <link rel="stylesheet" as="style" crossorigin
         href="assets/vendor/pretendard/pretendard.css" />
     <link rel="stylesheet" href="assets/css/style.css?v=2.9.7">
-    <link rel="stylesheet" href="assets/css/gallery.css?v=2.8.12">
+    <link rel="stylesheet" href="assets/css/gallery.css?v=2.8.13">
     <link rel="stylesheet" href="assets/css/gallery-freetalk.css?v=2.9.9">
 
     <!-- Google tag (gtag.js) -->
@@ -117,6 +117,7 @@
         <nav class="tab-nav">
             <button class="tab-btn active" data-tab="characters">👤 캐릭터 도감</button>
             <button class="tab-btn" data-tab="cg">🖼️ 이벤트 CG</button>
+            <button class="tab-btn" data-tab="endings">🏆 엔딩 도감</button>
             <button class="tab-btn" data-tab="music">🎵 음악실</button>
         </nav>
 
@@ -141,6 +142,11 @@
             <div id="cg-grid" class="cg-grid">
                 <!-- CG items will be rendered here by gallery.js -->
             </div>
+        </section>
+
+        <section id="tab-endings" class="tab-content">
+            <div id="ending-summary" class="ending-summary" role="status"></div>
+            <div id="ending-grid" class="ending-grid"></div>
         </section>
 
         <!-- 음악실 탭 -->
@@ -228,7 +234,7 @@
     </footer>
 
     <!-- 갤러리 스크립트 (동적 로더) -->
-<script data-cupid-entry-script="true" src="assets/js/loaders/gallery-loader.js?v=2.9.200"></script>
+<script data-cupid-entry-script="true" src="assets/js/loaders/gallery-loader.js?v=2.9.201"></script>
     <script>
         function toggleLangCombo() {
             document.getElementById('langCombo').classList.toggle('open');

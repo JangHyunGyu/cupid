@@ -836,6 +836,91 @@ body::before {
     justify-items: center;
 }
 
+.ending-summary {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 9px;
+    width: fit-content;
+    margin: 0 auto 22px;
+    padding: 10px 18px;
+    border: 1px solid rgba(232, 138, 160, 0.34);
+    border-radius: 999px;
+    background: rgba(20, 15, 26, 0.82);
+    color: var(--c-text-soft);
+}
+
+.ending-summary strong {
+    color: var(--c-accent);
+    font-size: 1.25rem;
+}
+
+.ending-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+    gap: 14px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4px 10px 24px;
+}
+
+.ending-card {
+    min-height: 205px;
+    padding: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 6px;
+    background: linear-gradient(145deg, rgba(35, 26, 44, 0.9), rgba(15, 12, 21, 0.94));
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+    position: relative;
+    overflow: hidden;
+}
+
+.ending-card.is-unlocked {
+    border-color: rgba(232, 138, 160, 0.52);
+    background: linear-gradient(145deg, rgba(81, 43, 61, 0.9), rgba(24, 16, 31, 0.95));
+}
+
+.ending-card__number,
+.ending-card__status {
+    display: block;
+    color: var(--c-text-muted);
+    font-size: 0.68rem;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.ending-card__icon {
+    display: block;
+    margin: 16px 0 10px;
+    font-size: 1.55rem;
+    filter: grayscale(1);
+    opacity: 0.58;
+}
+
+.ending-card.is-unlocked .ending-card__icon {
+    filter: none;
+    opacity: 1;
+}
+
+.ending-card h3 {
+    min-height: 1.4em;
+    margin: 0 0 7px;
+    color: var(--c-text);
+    font-size: 1rem;
+}
+
+.ending-card__status {
+    margin-bottom: 12px;
+    color: var(--c-accent);
+}
+
+.ending-card p {
+    margin: 0;
+    color: var(--c-text-soft);
+    font-size: 0.78rem;
+    line-height: 1.58;
+}
+
 /* CG 카드 */
 .cg-card {
     width: 100%;
@@ -1531,6 +1616,24 @@ body::before {
     .lang-combo-selected {
         padding: 6px 26px 6px 12px;
         font-size: 0.8rem;
+    }
+
+    .tab-btn {
+        flex: 1 1 0;
+        min-width: 0;
+        padding: 9px 5px;
+        font-size: 0.7rem;
+        letter-spacing: 0.2px;
+    }
+
+    .ending-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 4px 0 20px;
+    }
+
+    .ending-card {
+        min-height: 0;
     }
 
     /* 캐릭터 그리드: 2열 고정 */

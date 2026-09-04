@@ -1703,6 +1703,93 @@ class GalleryData {
         ]
     };
 
+    static endingRoutes = [
+        { id: 'perfect_seoyeon', character: 'seyoun', kind: 'perfect' },
+        { id: 'perfect_yuna', character: 'yuna', kind: 'perfect' },
+        { id: 'perfect_dain', character: 'dain', kind: 'perfect' },
+        { id: 'true_seoyeon', character: 'seyoun', kind: 'true' },
+        { id: 'true_yuna', character: 'yuna', kind: 'true' },
+        { id: 'true_dain', character: 'dain', kind: 'true' },
+        { id: 'good_seoyeon', character: 'seyoun', kind: 'good' },
+        { id: 'good_yuna', character: 'yuna', kind: 'good' },
+        { id: 'good_dain', character: 'dain', kind: 'good' },
+        { id: 'counteroffer_seoyeon', character: 'seyoun', kind: 'counteroffer' },
+        { id: 'counteroffer_teacher', character: 'teacher', kind: 'counteroffer' },
+        { id: 'bittersweet_seoyeon', character: 'seyoun', kind: 'bittersweet' },
+        { id: 'bittersweet_yuna', character: 'yuna', kind: 'bittersweet' },
+        { id: 'bittersweet_dain', character: 'dain', kind: 'bittersweet' },
+        { id: 'late_good_seoyeon', character: 'seyoun', kind: 'lateGood' },
+        { id: 'late_good_yuna', character: 'yuna', kind: 'lateGood' },
+        { id: 'late_good_dain', character: 'dain', kind: 'lateGood' },
+        { id: 'confess_fail_seoyeon', character: 'seyoun', kind: 'confessFail' },
+        { id: 'confess_fail_yuna', character: 'yuna', kind: 'confessFail' },
+        { id: 'confess_fail_dain', character: 'dain', kind: 'confessFail' },
+        { id: 'friend', character: null, kind: 'friend' },
+        { id: 'mayhem', character: null, kind: 'mayhem' },
+        { id: 'unresolved', character: null, kind: 'unresolved' },
+        { id: 'alone', character: null, kind: 'alone' },
+        { id: 'perfect_teacher', character: 'teacher', kind: 'perfect' },
+        { id: 'true_teacher', character: 'teacher', kind: 'true' },
+        { id: 'good_teacher', character: 'teacher', kind: 'good' },
+        { id: 'bittersweet_teacher', character: 'teacher', kind: 'bittersweet' },
+        { id: 'perfect_nurse', character: 'nurse', kind: 'perfect' },
+        { id: 'true_nurse', character: 'nurse', kind: 'true' },
+        { id: 'good_nurse', character: 'nurse', kind: 'good' },
+        { id: 'bittersweet_nurse', character: 'nurse', kind: 'bittersweet' }
+    ];
+
+    static endingCopy = {
+        ko: {
+            discovered: '발견한 엔딩', complete: '발견 완료', locked: '미발견', hintLabel: '힌트',
+            labels: { perfect: 'PERFECT', true: 'TRUE LOVE', good: 'GOOD', counteroffer: '흔들린 선택', bittersweet: 'BITTERSWEET', lateGood: '늦은 고백', confessFail: '고백 실패', friend: '친구', mayhem: '파국', unresolved: '엇갈린 대답', alone: '혼자' },
+            hints: {
+                perfect: '{character} 루트에서 호감도 100으로 마지막 날을 맞이하세요.',
+                true: '{character} 루트에서 호감도 60 이상으로 마지막 날을 맞이하세요.',
+                good: '고백을 받아들인 {character} 루트에서 호감도 40 이상을 유지하세요.',
+                counteroffer: '{character}와의 약속 뒤 다른 사람의 제안을 받아들이고 그 결과를 확인하세요.',
+                bittersweet: '{character} 루트에서 호감도 40 미만으로 마지막 날을 맞이하세요.',
+                lateGood: '{character}의 고백을 미룬 뒤 마지막 기회에 마음을 전하세요.',
+                confessFail: '{character}의 고백을 미루고 관계가 깊어지기 전에 마지막 고백을 선택하세요.',
+                friend: '마지막 고백 대신 친구로 남는 답을 선택하세요.',
+                mayhem: '여러 약속을 잡고 그 사실이 드러난 채 마지막 날을 맞이하세요.',
+                unresolved: '여러 관계에 하나의 답을 정하지 않은 채 마지막 날을 맞이하세요.',
+                alone: '누구의 루트도 선택하지 않은 채 마지막 날을 맞이하세요.'
+            }
+        },
+        en: {
+            discovered: 'endings found', complete: 'Discovered', locked: 'Undiscovered', hintLabel: 'Hint',
+            labels: { perfect: 'PERFECT', true: 'TRUE LOVE', good: 'GOOD', counteroffer: 'A Shaken Choice', bittersweet: 'BITTERSWEET', lateGood: 'Late Confession', confessFail: 'Confession Failed', friend: 'Friends', mayhem: 'Fallout', unresolved: 'Crossed Answers', alone: 'Alone' },
+            hints: {
+                perfect: 'Finish {character}\'s route with 100 affinity.', true: 'Reach the last day of {character}\'s route with at least 60 affinity.', good: 'Accept {character}\'s confession and keep at least 40 affinity.', counteroffer: 'Accept someone else\'s offer after committing to {character}, then face the result.', bittersweet: 'Reach the last day of {character}\'s route below 40 affinity.', lateGood: 'Delay {character}\'s confession, then speak honestly at the final chance.', confessFail: 'Delay {character}\'s confession and confess again before the relationship is deep enough.', friend: 'Choose to remain friends instead of making the final confession.', mayhem: 'Make several promises and reach the last day after they are exposed.', unresolved: 'Reach the last day without choosing one answer among several relationships.', alone: 'Reach the last day without entering anyone\'s route.'
+            }
+        },
+        es: {
+            discovered: 'finales encontrados', complete: 'Descubierto', locked: 'Sin descubrir', hintLabel: 'Pista',
+            labels: { perfect: 'PERFECT', true: 'TRUE LOVE', good: 'GOOD', counteroffer: 'Elección incierta', bittersweet: 'BITTERSWEET', lateGood: 'Confesión tardía', confessFail: 'Confesión fallida', friend: 'Amistad', mayhem: 'Ruptura', unresolved: 'Respuestas cruzadas', alone: 'Soledad' },
+            hints: { perfect: 'Termina la ruta de {character} con 100 de afinidad.', true: 'Llega al último día de la ruta de {character} con al menos 60 de afinidad.', good: 'Acepta la confesión de {character} y conserva al menos 40 de afinidad.', counteroffer: 'Acepta la propuesta de otra persona después de comprometerte con {character} y afronta el resultado.', bittersweet: 'Llega al último día de la ruta de {character} con menos de 40 de afinidad.', lateGood: 'Aplaza la confesión de {character} y habla con sinceridad en la última oportunidad.', confessFail: 'Aplaza la confesión de {character} y vuelve a confesarte antes de que la relación sea suficiente.', friend: 'Elige seguir como amigos en lugar de hacer la confesión final.', mayhem: 'Haz varias promesas y deja que se descubran antes del último día.', unresolved: 'Llega al último día sin elegir una sola respuesta entre varias relaciones.', alone: 'Llega al último día sin entrar en la ruta de nadie.' }
+        },
+        ja: {
+            discovered: '発見したエンディング', complete: '発見済み', locked: '未発見', hintLabel: 'ヒント',
+            labels: { perfect: 'PERFECT', true: 'TRUE LOVE', good: 'GOOD', counteroffer: '揺れた選択', bittersweet: 'BITTERSWEET', lateGood: '遅い告白', confessFail: '告白失敗', friend: '友達', mayhem: '破局', unresolved: 'すれ違う答え', alone: 'ひとり' },
+            hints: { perfect: '{character}ルートを好感度100で終えてください。', true: '{character}ルートの最終日を好感度60以上で迎えてください。', good: '{character}の告白を受け入れ、好感度40以上を保ってください。', counteroffer: '{character}との約束後に別の相手の提案を受け、その結果を見届けてください。', bittersweet: '{character}ルートの最終日を好感度40未満で迎えてください。', lateGood: '{character}の告白を保留し、最後の機会に本心を伝えてください。', confessFail: '{character}の告白を保留し、関係が十分に深まる前に最後の告白を選んでください。', friend: '最後の告白ではなく、友達でいる答えを選んでください。', mayhem: '複数の約束をして、それが知られたまま最終日を迎えてください。', unresolved: '複数の関係から一つの答えを選ばずに最終日を迎えてください。', alone: '誰のルートにも入らず最終日を迎えてください。' }
+        },
+        fr: {
+            discovered: 'fins découvertes', complete: 'Découverte', locked: 'Non découverte', hintLabel: 'Indice',
+            labels: { perfect: 'PERFECT', true: 'TRUE LOVE', good: 'GOOD', counteroffer: 'Choix ébranlé', bittersweet: 'BITTERSWEET', lateGood: 'Déclaration tardive', confessFail: 'Déclaration refusée', friend: 'Amitié', mayhem: 'Rupture', unresolved: 'Réponses croisées', alone: 'Solitude' },
+            hints: { perfect: 'Terminez la route de {character} avec 100 d’affinité.', true: 'Atteignez le dernier jour de la route de {character} avec au moins 60 d’affinité.', good: 'Acceptez la déclaration de {character} et gardez au moins 40 d’affinité.', counteroffer: 'Acceptez la proposition d’une autre personne après votre engagement envers {character}, puis assumez-en les conséquences.', bittersweet: 'Atteignez le dernier jour de la route de {character} avec moins de 40 d’affinité.', lateGood: 'Repoussez la déclaration de {character}, puis dites la vérité à la dernière occasion.', confessFail: 'Repoussez la déclaration de {character}, puis avouez vos sentiments avant que la relation ne soit assez profonde.', friend: 'Choisissez de rester amis au lieu de faire la dernière déclaration.', mayhem: 'Multipliez les promesses et laissez-les être découvertes avant le dernier jour.', unresolved: 'Atteignez le dernier jour sans choisir une seule réponse parmi plusieurs relations.', alone: 'Atteignez le dernier jour sans entrer dans la route de qui que ce soit.' }
+        },
+        de: {
+            discovered: 'Enden entdeckt', complete: 'Entdeckt', locked: 'Unentdeckt', hintLabel: 'Hinweis',
+            labels: { perfect: 'PERFECT', true: 'TRUE LOVE', good: 'GOOD', counteroffer: 'Wankende Entscheidung', bittersweet: 'BITTERSWEET', lateGood: 'Spätes Geständnis', confessFail: 'Geständnis gescheitert', friend: 'Freundschaft', mayhem: 'Zerwürfnis', unresolved: 'Gekreuzte Antworten', alone: 'Allein' },
+            hints: { perfect: 'Beende {character}s Route mit 100 Zuneigung.', true: 'Erreiche den letzten Tag von {character}s Route mit mindestens 60 Zuneigung.', good: 'Nimm {character}s Geständnis an und halte mindestens 40 Zuneigung.', counteroffer: 'Nimm nach deinem Versprechen an {character} das Angebot einer anderen Person an und stelle dich den Folgen.', bittersweet: 'Erreiche den letzten Tag von {character}s Route mit weniger als 40 Zuneigung.', lateGood: 'Verschiebe {character}s Geständnis und sprich bei der letzten Gelegenheit ehrlich.', confessFail: 'Verschiebe {character}s Geständnis und gestehe erneut, bevor die Beziehung tief genug ist.', friend: 'Entscheide dich beim letzten Geständnis dafür, Freunde zu bleiben.', mayhem: 'Gib mehrere Versprechen und lass sie vor dem letzten Tag auffliegen.', unresolved: 'Erreiche den letzten Tag, ohne dich zwischen mehreren Beziehungen zu entscheiden.', alone: 'Erreiche den letzten Tag, ohne eine Route zu beginnen.' }
+        },
+        pt: {
+            discovered: 'finais encontrados', complete: 'Descoberto', locked: 'Não descoberto', hintLabel: 'Dica',
+            labels: { perfect: 'PERFECT', true: 'TRUE LOVE', good: 'GOOD', counteroffer: 'Escolha abalada', bittersweet: 'BITTERSWEET', lateGood: 'Confissão tardia', confessFail: 'Confissão recusada', friend: 'Amizade', mayhem: 'Ruptura', unresolved: 'Respostas desencontradas', alone: 'Só' },
+            hints: { perfect: 'Conclua a rota de {character} com 100 de afinidade.', true: 'Chegue ao último dia da rota de {character} com pelo menos 60 de afinidade.', good: 'Aceite a confissão de {character} e mantenha pelo menos 40 de afinidade.', counteroffer: 'Aceite a proposta de outra pessoa depois de se comprometer com {character} e encare o resultado.', bittersweet: 'Chegue ao último dia da rota de {character} com menos de 40 de afinidade.', lateGood: 'Adie a confissão de {character} e fale com sinceridade na última oportunidade.', confessFail: 'Adie a confissão de {character} e confesse antes que a relação esteja profunda o bastante.', friend: 'Escolha continuar como amigos em vez de fazer a confissão final.', mayhem: 'Faça várias promessas e deixe que sejam descobertas antes do último dia.', unresolved: 'Chegue ao último dia sem escolher uma única resposta entre vários relacionamentos.', alone: 'Chegue ao último dia sem entrar na rota de ninguém.' }
+        }
+    };
+
     // =========================================================================
     // BGM 데이터 (배경음악 목록)
     // =========================================================================
@@ -1884,6 +1971,66 @@ class GalleryData {
      */
     static getCG(lang, cgId) {
         return this.cg[lang]?.find(cg => cg.id === cgId) || null;
+    }
+
+    static getEndingCopy(lang) {
+        return this.endingCopy[lang] || this.endingCopy.en;
+    }
+
+    static getEndingCatalog(lang) {
+        const copy = this.getEndingCopy(lang);
+        return this.endingRoutes.map((route, index) => {
+            const characterName = route.character ? (this.getCharacter(lang, route.character)?.name || route.character) : '';
+            return {
+                ...route,
+                number: index + 1,
+                name: characterName ? `${characterName} · ${copy.labels[route.kind]}` : copy.labels[route.kind],
+                hint: copy.hints[route.kind].replace('{character}', characterName)
+            };
+        });
+    }
+
+    static resolveEndingId(sceneId, getFlag = () => false) {
+        if (sceneId === 'day5_seo_ending_freetalk_bittersweet') {
+            return getFlag('day5_abandoned_seoyeon') ? 'counteroffer_seoyeon' : 'bittersweet_seoyeon';
+        }
+        if (sceneId === 'day5_teacher_ending_freetalk_bittersweet') {
+            return getFlag('day5_abandoned_teacher') ? 'counteroffer_teacher' : 'bittersweet_teacher';
+        }
+        if (sceneId === 'day5_ending_confess_fail') {
+            if (getFlag('route_seoyeon')) return 'confess_fail_seoyeon';
+            if (getFlag('route_yuna')) return 'confess_fail_yuna';
+            if (getFlag('route_dain')) return 'confess_fail_dain';
+            return null;
+        }
+        const direct = {
+            day5_seo_ending_freetalk_perfect: 'perfect_seoyeon',
+            day5_yuna_ending_freetalk_perfect: 'perfect_yuna',
+            day5_dain_ending_freetalk_perfect: 'perfect_dain',
+            day5_seo_ending_freetalk_true_love: 'true_seoyeon',
+            day5_yuna_ending_freetalk_true_love: 'true_yuna',
+            day5_dain_ending_freetalk_true_love: 'true_dain',
+            day5_seo_ending_freetalk_good: 'good_seoyeon',
+            day5_yuna_ending_freetalk_good: 'good_yuna',
+            day5_dain_ending_freetalk_good: 'good_dain',
+            day5_yuna_ending_freetalk_bittersweet: 'bittersweet_yuna',
+            day5_dain_ending_freetalk_bittersweet: 'bittersweet_dain',
+            day5_seo_ending_freetalk_late_good: 'late_good_seoyeon',
+            day5_yuna_ending_freetalk_late_good: 'late_good_yuna',
+            day5_dain_ending_freetalk_late_good: 'late_good_dain',
+            day5_ending_friend: 'friend',
+            day5_ending_mayhem: 'mayhem',
+            day5_ending_harem: 'unresolved',
+            day5_ending_alone: 'alone',
+            day5_teacher_ending_freetalk_perfect: 'perfect_teacher',
+            day5_teacher_ending_freetalk_true_love: 'true_teacher',
+            day5_teacher_ending_freetalk_good: 'good_teacher',
+            day5_nurse_ending_freetalk_perfect: 'perfect_nurse',
+            day5_nurse_ending_freetalk_true_love: 'true_nurse',
+            day5_nurse_ending_freetalk_good: 'good_nurse',
+            day5_nurse_ending_freetalk_bittersweet: 'bittersweet_nurse'
+        };
+        return direct[sceneId] || null;
     }
 
     /**

@@ -79,6 +79,7 @@ class GalleryManager {
                 affinityRebalanceVersion: window.GalleryData?.AFFINITY_REBALANCE_VERSION || 1,
                 characters: {},
                 cg: {},
+                endings: {},
                 bgm: { intro: { unlocked: true } }  // 인트로 BGM은 기본 해금
             };
         }
@@ -107,6 +108,7 @@ class GalleryManager {
                 affinityRebalanceVersion: window.GalleryData?.AFFINITY_REBALANCE_VERSION || 1,
                 characters: {},
                 cg: {},
+                endings: {},
                 bgm: { intro: { unlocked: true } }
             };
         }
@@ -215,6 +217,21 @@ class GalleryManager {
         progress.cg[cgId] = { unlocked: true, unlockedAt: Date.now() };
         this.saveProgress(progress);
         console.log(`[GalleryManager] CG 해금: ${cgId}`);
+    }
+
+    recordEndingScene(sceneId, stateManager) {
+        const endingId = window.GalleryData?.resolveEndingId?.(
+            sceneId,
+            flag => stateManager?.getFlag?.(flag) === true
+        );
+        if (!endingId) return false;
+
+        const progress = this.getProgress();
+        if (!progress.endings) progress.endings = {};
+        if (progress.endings[endingId]?.unlocked) return false;
+        progress.endings[endingId] = { unlocked: true, unlockedAt: Date.now() };
+        this.saveProgress(progress);
+        return true;
     }
 
     /**

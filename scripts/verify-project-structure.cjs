@@ -53,7 +53,7 @@ const galleryLoader = fs.readFileSync(path.join(root, 'assets/js/loaders/gallery
 for (const marker of ['freetalk-core.js', 'modules/FreeTalkSystem.js', 'modules/GameEngine.js']) {
     if (!gameLoader.includes(marker)) errors.push(`game loader missing ${marker}`);
 }
-for (const marker of ['freetalk-core.js', 'gallery-freetalk.js', 'gallery.js']) {
+for (const marker of ['freetalk-core.js', 'gallery-ui-ending.js', 'gallery-freetalk.js', 'gallery.js']) {
     if (!galleryLoader.includes(marker)) errors.push(`gallery loader missing ${marker}`);
 }
 

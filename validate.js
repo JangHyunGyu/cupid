@@ -1555,7 +1555,7 @@ try {
     if (cgIdMatch) {
         const registeredIds = cgIdMatch[1].match(/'([^']+)'/g).map(s => s.replace(/'/g, ''));
         const gdContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-data.js'), 'utf8');
-        const cgOnlySection = gdContent.split(/static\s+cg\s*=\s*\{/)[1]?.split(/static\s+bgm/)[0] || '';
+        const cgOnlySection = gdContent.split(/static\s+cg\s*=\s*\{/)[1]?.split(/static\s+endingRoutes|static\s+bgm/)[0] || '';
         const galleryCgIds = [...new Set((cgOnlySection.match(/id:\s*'([^']+)'/g) || []).map(m => m.match(/id:\s*'([^']+)'/)[1]))];
 
         for (const gcid of galleryCgIds) {

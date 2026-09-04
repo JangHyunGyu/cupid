@@ -136,6 +136,9 @@ class Gallery {
             case 'cg':
                 this.ui.renderCG();
                 break;
+            case 'endings':
+                this.ui.renderEndings();
+                break;
             case 'music':
                 this.ui.renderMusic();
                 break;

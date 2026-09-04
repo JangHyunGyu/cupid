@@ -99,7 +99,9 @@ test('i18n loading limits concurrency and survives a longer transient interrupti
     assert.equal(calls.get(retriedUrl), 5);
     assert.deepEqual(cacheModes.get(retriedUrl), ['default', 'reload', 'reload', 'reload', 'reload']);
     assert.ok(maxActive <= 4, `expected at most 4 concurrent fetches, saw ${maxActive}`);
-    assert.equal(Object.keys(sandbox.window.I18N_DATA).length, 20);
+    assert.equal(Object.keys(sandbox.window.I18N_DATA).length, 4);
+    await sandbox.window.CupidI18nLoader.ensureDay(2);
+    assert.equal(Object.keys(sandbox.window.I18N_DATA).length, 8);
 });
 
 test('blocked localStorage migration cannot leak an unhandled rejection', () => {

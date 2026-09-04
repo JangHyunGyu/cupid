@@ -103,6 +103,7 @@ class GalleryProgress {
                     this._migratePerfectEndingKey();
                     // 기존 100점 및 퍼펙트 전용 해금을 새 기준에 맞춰 1회 재조정
                     this._migrateAffinityRebalance();
+                    this._migrateEndingLedger();
                     // 기존 최고 호감도를 갤러리 프리토킹의 최초 현재값으로 사용
                     this._migrateCurrentAffinity();
                     return this.data;
@@ -197,6 +198,32 @@ class GalleryProgress {
         return migrated;
     }
 
+    _migrateEndingLedger() {
+        if (!this.data || typeof this.data !== 'object') return false;
+        if (!this.data.endings || typeof this.data.endings !== 'object') this.data.endings = {};
+        const legacyCgMap = {
+            ending_perfect_seoyeon: 'perfect_seoyeon', ending_perfect_yuna: 'perfect_yuna', ending_perfect_dain: 'perfect_dain',
+            ending_true_seoyeon: 'true_seoyeon', ending_true_yuna: 'true_yuna', ending_true_dain: 'true_dain',
+            ending_good_seoyeon: 'good_seoyeon', ending_good_yuna: 'good_yuna', ending_good_dain: 'good_dain',
+            ending_confess_fail_seoyeon: 'confess_fail_seoyeon', ending_confess_fail_yuna: 'confess_fail_yuna', ending_confess_fail_dain: 'confess_fail_dain',
+            ending_friend: 'friend', ending_mayhem: 'mayhem', ending_harem: 'unresolved', ending_alone: 'alone',
+            ending_perfect_teacher: 'perfect_teacher', ending_true_teacher: 'true_teacher', ending_good_teacher: 'good_teacher', ending_bittersweet_teacher: 'bittersweet_teacher',
+            ending_perfect_nurse: 'perfect_nurse', ending_true_nurse: 'true_nurse', ending_good_nurse: 'good_nurse', ending_bittersweet_nurse: 'bittersweet_nurse'
+        };
+        let changed = false;
+        for (const [cgId, endingId] of Object.entries(legacyCgMap)) {
+            if (!this.data.cg?.[cgId]?.unlocked || this.data.endings[endingId]?.unlocked) continue;
+            this.data.endings[endingId] = {
+                unlocked: true,
+                unlockedAt: this.data.cg[cgId].unlockedAt || Date.now(),
+                migratedFromCG: true
+            };
+            changed = true;
+        }
+        if (changed) this.save();
+        return changed;
+    }
+
     /**
      * 기본 진행 데이터 생성
      * 
@@ -220,6 +247,7 @@ class GalleryProgress {
                 nurse: { met: false, maxAffinity: 0, currentAffinity: 0, galleryFreeTalkAffinityInitialized: false, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState(), relationshipAftermath: null }
             },
             cg: {},                           // CG는 기본적으로 없음 (게임 진행 시 추가)
+            endings: {},
             bgm: {
                 intro: { unlocked: true }      // intro BGM만 기본 해금
             }
@@ -255,6 +283,7 @@ class GalleryProgress {
                 this.data = JSON.parse(saved);
                 this._migratePerfectEndingKey();
                 this._migrateAffinityRebalance();
+                this._migrateEndingLedger();
                 this._migrateCurrentAffinity();
             } catch (e) {
                 // 파싱 실패 시 현재 데이터 유지
@@ -659,6 +688,26 @@ class GalleryProgress {
         if (this.isAdmin) return true;
         this.refresh();
         return this.data[type]?.[id]?.unlocked || false;
+    }
+
+    isEndingUnlocked(id) {
+        if (this.isAdmin) return true;
+        this.refresh();
+        return this.data.endings?.[id]?.unlocked || false;
+    }
+
+    getEndingRecord(id) {
+        this.refresh();
+        return this.data.endings?.[id] || null;
+    }
+
+    getUnlockedEndingCount() {
+        if (this.isAdmin) return GalleryData.endingRoutes.length;
+        this.refresh();
+        const validIds = new Set(GalleryData.endingRoutes.map(ending => ending.id));
+        return Object.entries(this.data.endings || {})
+            .filter(([id, value]) => validIds.has(id) && value?.unlocked)
+            .length;
     }
 
     /**

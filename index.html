@@ -44,7 +44,7 @@
         };
     </script>
     <script src="assets/js/browser-check.js?v=2.9.8" defer></script>
-    <script src="assets/js/modal-accessibility.js?v=2.9.200" defer></script>
+    <script src="assets/js/modal-accessibility.js?v=2.9.201" defer></script>
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -1009,7 +1009,7 @@
                 <a href="/seo/misinsi-muryo" style="color: #ffb6c1; margin: 0 6px;">미연시 무료</a>
             </nav>
             <p style="color: #ffb6c1;">Advisor: 김유진 프로, 이상훈 프로</p>
-            <p style="opacity: 0.7;">© 2026 ArcherLab. All rights reserved. (v2.9.200)</p>
+            <p style="opacity: 0.7;">© 2026 ArcherLab. All rights reserved. (v2.9.201)</p>
         </div>
     </div>
 
@@ -1263,7 +1263,7 @@
     </script>
 
     <!-- 게임 스크립트 (동적 로더) -->
-<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.200"></script>
+<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.201"></script>
 
     <script>
         // Initialize SoundManager + Enable Buttons (게임 스크립트 로드 완료 후)
@@ -1316,6 +1316,7 @@
 
         // 실제 새 게임 시작 로직
         async function launchNewGame() {
+            if (window.loadCupidGameRuntime && !await window.loadCupidGameRuntime().catch(() => false)) return;
             // 1. 사운드 재생 (첫 버튼 클릭은 사용자 상호작용으로 인정됨)
             if (window.soundManager) soundManager.playBgm('assets/audio/bgm/intro.mp3');
 
@@ -1371,6 +1372,7 @@
 
         // 계속하기 함수
         async function continueGame() {
+            if (window.loadCupidGameRuntime && !await window.loadCupidGameRuntime().catch(() => false)) return;
             const saveData = window.loadGameState ? window.loadGameState() : null;
             if (!saveData) {
                 alert('저장된 게임이 없습니다.');

@@ -48,6 +48,9 @@ class GalleryUI {
         /** @type {CGRenderer} CG 갤러리 렌더러 */
         this.cg = new CGRenderer(this);
 
+        /** @type {EndingRenderer} 엔딩 도감 렌더러 */
+        this.ending = new EndingRenderer(this);
+
         /** @type {MusicRenderer} 음악실 렌더러 */
         this.music = new MusicRenderer(this);
 
@@ -95,6 +98,10 @@ class GalleryUI {
      */
     renderCG() {
         this.cg.render();
+    }
+
+    renderEndings() {
+        this.ending.render();
     }
 
     /**

@@ -25,7 +25,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/style.css?v=2.9.7">
-    <link rel="stylesheet" href="assets/css/gallery.css?v=2.8.12">
+    <link rel="stylesheet" href="assets/css/gallery.css?v=2.8.13">
     <link rel="stylesheet" href="assets/css/gallery-freetalk.css?v=2.9.9">
 
     <!-- Google tag (gtag.js) -->
@@ -77,6 +77,7 @@
         <nav class="tab-nav">
             <button class="tab-btn active" data-tab="characters">👤 Personnages</button>
             <button class="tab-btn" data-tab="cg">🖼️ CG d'événements</button>
+            <button class="tab-btn" data-tab="endings">🏆 Fins</button>
             <button class="tab-btn" data-tab="music">🎵 Salle de musique</button>
         </nav>
 
@@ -91,6 +92,11 @@
             <div id="cg-grid" class="cg-grid">
                 <!-- CG items will be rendered here -->
             </div>
+        </section>
+
+        <section id="tab-endings" class="tab-content">
+            <div id="ending-summary" class="ending-summary" role="status"></div>
+            <div id="ending-grid" class="ending-grid"></div>
         </section>
 
         <section id="tab-music" class="tab-content">
@@ -146,7 +152,7 @@
     </footer>
 
     <!-- Gallery Scripts (Dynamic Loader) -->
-<script data-cupid-entry-script="true" src="assets/js/loaders/gallery-loader.js?v=2.9.200"></script>
+<script data-cupid-entry-script="true" src="assets/js/loaders/gallery-loader.js?v=2.9.201"></script>
     <script>
         function toggleLangCombo() {
             document.getElementById('langCombo').classList.toggle('open');

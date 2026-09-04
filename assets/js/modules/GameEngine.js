@@ -154,6 +154,24 @@ class GameEngine {
         this.exposeGlobalFunctions();  // window 객체에 함수 등록
     }
 
+    async _getSceneWithLazyContent(sceneId) {
+        let scene = this.sceneRenderer.getScene(sceneId);
+        const loader = window.CupidContentLoader;
+        while (!scene && !String(sceneId || '').endsWith('.html') && loader?.hasUnloadedDays?.()) {
+            await loader.loadNextDay();
+            scene = this.sceneRenderer.getScene(sceneId);
+        }
+        return scene;
+    }
+
+    _prefetchNextScenarioDay(scene) {
+        const match = String(scene?.__sourceFile || '').match(/^day([1-4])_4_night$/);
+        if (!match || !window.CupidContentLoader?.prefetchDay) return;
+        window.CupidContentLoader.prefetchDay(Number(match[1]) + 1).catch(error => {
+            console.warn('[GameEngine] next-day prefetch failed:', error?.message || error);
+        });
+    }
+
     _handleAsyncError(context, error) {
         console.error(`[GameEngine] ${context} error:`, error);
         this._reportCaughtError(context, error, 'game_engine_async_error');
@@ -914,7 +932,7 @@ class GameEngine {
         // ─────────────────────────────────────────────────────────
         // 📌 1단계: 씬 데이터 로드
         // ─────────────────────────────────────────────────────────
-        let scene = this.sceneRenderer.getScene(sceneId);
+        let scene = await this._getSceneWithLazyContent(sceneId);
 
         // 씬이 없으면 HTML 페이지 이동인지 확인
         if (!scene) {
@@ -953,7 +971,7 @@ class GameEngine {
             }
 
             sceneId = nextId;
-            scene = this.sceneRenderer.getScene(sceneId);
+            scene = await this._getSceneWithLazyContent(sceneId);
             if (!scene) {
                 console.error(`[GameEngine] 사전 분기 대상 씬을 찾을 수 없음: ${sceneId}`);
                 this._isRendering = false;
@@ -963,6 +981,8 @@ class GameEngine {
 
         // 현재 씬 ID 저장 (다른 곳에서 참조용)
         this.sceneRenderer.currentSceneId = sceneId;
+        this._prefetchNextScenarioDay(scene);
+        this.galleryManager.recordEndingScene?.(sceneId, this.stateManager);
 
         // ─────────────────────────────────────────────────────────
         // 🎬 엔딩/에필로그 모드 토글

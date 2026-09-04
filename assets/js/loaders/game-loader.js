@@ -53,7 +53,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-        const version = '2.9.200';
+    const version = '2.9.201';
     const LOAD_RETRIES = 3;
 
     // =========================================================================
@@ -152,6 +152,14 @@
         'scenario/day5_3_afterschool.js',
         'scenario/day5_4_night.js',
     ];
+    const scenarioScriptsByDay = scenarioScripts.reduce(function(groups, src) {
+        var match = src.match(/scenario\/day([1-5])_/);
+        if (!match) return groups;
+        var day = Number(match[1]);
+        if (!groups[day]) groups[day] = [];
+        groups[day].push(src);
+        return groups;
+    }, {});
 
     /**
      * 현재 언어를 전역으로 노출 → SceneRenderer에서 _i18n 텍스트 선택에 사용
@@ -198,6 +206,7 @@
         'gallery-ui-core.js',        // UI 코어: 팝업, 기본 기능
         'gallery-ui-character.js',   // UI: 캐릭터 도감
         'gallery-ui-cg.js',          // UI: CG 갤러리
+        'gallery-ui-ending.js',      // UI: 엔딩 도감
         'gallery-ui-music.js',       // UI: 음악실
         'gallery.js',                // 갤러리 초기화 및 이벤트
 
@@ -247,7 +256,10 @@
      *
      * 하나씩 로드해 의존성 순서와 필수 모듈 등록을 보장합니다.
      */
-    var allScripts = [].concat(commonScripts, scenarioScripts, engineScripts);
+    var runtimePromise = null;
+    var scriptPromises = new Map();
+    var loadedScenarioDays = new Set();
+    var scenarioDayPromises = new Map();
     var requiredGlobals = [
         'StateManager', 'SaveManager', 'GalleryManager', 'KoreanProcessor',
         'UIManager', 'DialogueSystem', 'FreeTalkSystem', 'SceneRenderer', 'GameEngine'
@@ -319,19 +331,72 @@
     }
 
     async function loadScript(src) {
-        var lastError = null;
-        for (var attempt = 0; attempt < LOAD_RETRIES; attempt++) {
-            try {
-                return await loadScriptAttempt(src, attempt);
-            } catch (error) {
-                lastError = error;
-                if (attempt < LOAD_RETRIES - 1) {
-                    await delay(500 * (attempt + 1));
+        if (scriptPromises.has(src)) return scriptPromises.get(src);
+        var promise = (async function() {
+            var lastError = null;
+            for (var attempt = 0; attempt < LOAD_RETRIES; attempt++) {
+                try {
+                    return await loadScriptAttempt(src, attempt);
+                } catch (error) {
+                    lastError = error;
+                    if (attempt < LOAD_RETRIES - 1) {
+                        await delay(500 * (attempt + 1));
+                    }
                 }
             }
+            throw lastError || new Error('[game-loader] Failed to load script: ' + src);
+        })();
+        scriptPromises.set(src, promise);
+        try {
+            return await promise;
+        } catch (error) {
+            scriptPromises.delete(src);
+            throw error;
         }
-        throw lastError || new Error('[game-loader] Failed to load script: ' + src);
     }
+
+    async function ensureScenarioDay(day) {
+        var normalizedDay = Number(day);
+        if (!Number.isInteger(normalizedDay) || normalizedDay < 1 || normalizedDay > 5) return false;
+        if (loadedScenarioDays.has(normalizedDay)) {
+            if (window.CupidI18nLoader) await window.CupidI18nLoader.ensureDay(normalizedDay);
+            return true;
+        }
+        if (scenarioDayPromises.has(normalizedDay)) return scenarioDayPromises.get(normalizedDay);
+
+        var promise = (async function() {
+            var scripts = scenarioScriptsByDay[normalizedDay] || [];
+            for (var index = 0; index < scripts.length; index++) {
+                await loadScript(scripts[index]);
+            }
+            if (window.CupidI18nLoader) await window.CupidI18nLoader.ensureDay(normalizedDay);
+            loadedScenarioDays.add(normalizedDay);
+            window.dispatchEvent(createEvent('cupidScenarioDayLoaded', { day: normalizedDay }));
+            return true;
+        })();
+        scenarioDayPromises.set(normalizedDay, promise);
+        try {
+            return await promise;
+        } catch (error) {
+            scenarioDayPromises.delete(normalizedDay);
+            throw error;
+        }
+    }
+
+    async function loadNextScenarioDay() {
+        for (var day = 1; day <= 5; day++) {
+            if (!loadedScenarioDays.has(day)) return ensureScenarioDay(day);
+        }
+        return false;
+    }
+
+    window.CupidContentLoader = {
+        ensureDay: ensureScenarioDay,
+        prefetchDay: ensureScenarioDay,
+        loadNextDay: loadNextScenarioDay,
+        hasUnloadedDays: function() { return loadedScenarioDays.size < 5; },
+        getLoadedDays: function() { return Array.from(loadedScenarioDays).sort(); }
+    };
 
     function verifyRequiredGlobals() {
         var missing = requiredGlobals.filter(function(name) {
@@ -343,9 +408,14 @@
     }
 
     async function loadAllScripts() {
-        for (var i = 0; i < allScripts.length; i++) {
-            await loadScript(allScripts[i]);
+        for (var commonIndex = 0; commonIndex < commonScripts.length; commonIndex++) {
+            await loadScript(commonScripts[commonIndex]);
         }
+        await ensureScenarioDay(1);
+        for (var engineIndex = 0; engineIndex < engineScripts.length; engineIndex++) {
+            await loadScript(engineScripts[engineIndex]);
+        }
+        if (window._i18nReady) await window._i18nReady;
         verifyRequiredGlobals();
         window.gameScriptsLoaded = true;
         window.dispatchEvent(new Event('gameScriptsLoaded'));
@@ -438,7 +508,25 @@
     }
     window.__cupidShowGameLoadError = showGameLoadError;
 
-    loadAllScripts().then(clearLoadRecoveryMarker).catch(function(error) {
+    function setLandingControlsReady(ready) {
+        var startButton = document.getElementById('start-btn');
+        var continueButton = document.getElementById('continue-btn');
+        if (startButton) {
+            startButton.disabled = !ready;
+            startButton.style.opacity = ready ? '1' : '0.65';
+            startButton.setAttribute('aria-busy', ready ? 'false' : 'true');
+        }
+        if (continueButton) {
+            var hasSave = false;
+            try { hasSave = window.CupidStorage.getItem('cupid_save') !== null; } catch (_) {}
+            continueButton.disabled = !ready || !hasSave;
+            continueButton.style.opacity = ready && hasSave ? '1' : '0.5';
+            continueButton.style.cursor = ready && hasSave ? 'pointer' : 'default';
+            continueButton.setAttribute('aria-busy', ready ? 'false' : 'true');
+        }
+    }
+
+    function handleRuntimeLoadError(error) {
         if (scheduleOneTimeLoadRecovery()) return;
         window.gameScriptsLoadError = error;
         if (typeof window.__cupidReportCaughtError === 'function') {
@@ -452,7 +540,37 @@
         console.error(error);
         showGameLoadError();
         window.dispatchEvent(createEvent('gameScriptsLoadError', { error: error }));
-    });
+    }
+
+    window.loadCupidGameRuntime = function() {
+        if (window.gameScriptsLoaded) return Promise.resolve(true);
+        if (runtimePromise) return runtimePromise;
+        setLandingControlsReady(false);
+        runtimePromise = loadAllScripts()
+            .then(function() {
+                clearLoadRecoveryMarker();
+                setLandingControlsReady(true);
+                return true;
+            })
+            .catch(function(error) {
+                runtimePromise = null;
+                setLandingControlsReady(true);
+                handleRuntimeLoadError(error);
+                throw error;
+            });
+        return runtimePromise;
+    };
+
+    if (window.preventAutoStart) {
+        setLandingControlsReady(true);
+        loadScript('ga.js').catch(function(error) {
+            if (typeof window.__cupidLogRuntimeError === 'function') {
+                window.__cupidLogRuntimeError('AnalyticsLoadError', error && error.message, error && error.stack, 'game-loader');
+            }
+        });
+    } else {
+        window.loadCupidGameRuntime().catch(function() {});
+    }
 
 })();
 // 즉시 실행 함수(IIFE)로 감싸서 전역 변수 오염 방지

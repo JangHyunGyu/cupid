@@ -21,22 +21,45 @@ const localizedGamePages = [
     'game.html', 'game-en.html', 'game-ja.html', 'game-es.html',
     'game-fr.html', 'game-de.html', 'game-pt.html'
 ];
+const localizedLandingPages = [
+    'index.html', 'index-en.html', 'index-ja.html', 'index-es.html',
+    'index-fr.html', 'index-de.html', 'index-pt.html'
+];
 
-for (const pageName of ['index.html', 'index-en.html', ...localizedGamePages]) {
+for (const pageName of localizedGamePages) {
     test(`${pageName} loads the complete game runtime`, async ({ page }) => {
         const errors = [];
         page.on('pageerror', error => errors.push(error.message));
         const response = await page.goto(`/${pageName}`, { waitUntil: 'domcontentloaded' });
         expect(response?.status()).toBe(200);
         await waitForRuntime(page);
-        if (pageName.startsWith('index')) {
-            await expect(page.locator('#start-btn')).toBeEnabled();
-        } else {
-            await expect(page.locator('#game-container')).toHaveCount(1);
-            await expect(page.locator('#fade-layer')).toHaveAttribute('aria-hidden', 'true');
-            await expect(page.locator('#credits-layer')).toHaveAttribute('aria-hidden', 'true');
-        }
+        await expect(page.locator('#game-container')).toHaveCount(1);
+        await expect(page.locator('#fade-layer')).toHaveAttribute('aria-hidden', 'true');
+        await expect(page.locator('#credits-layer')).toHaveAttribute('aria-hidden', 'true');
         expect(errors).toEqual([]);
+    });
+}
+
+for (const pageName of localizedLandingPages) {
+    test(`${pageName} defers story content until New Game`, async ({ page }) => {
+        const contentRequests = [];
+        page.on('request', request => {
+            const pathname = new URL(request.url()).pathname;
+            if (/\/assets\/js\/(?:scenario|i18n)\//u.test(pathname)) contentRequests.push(pathname);
+        });
+
+        const response = await page.goto(`/${pageName}`, { waitUntil: 'networkidle' });
+        expect(response?.status()).toBe(200);
+        await expect(page.locator('#start-btn')).toBeEnabled();
+        expect(await page.evaluate(() => window.gameScriptsLoaded === true)).toBe(false);
+        expect(contentRequests).toEqual([]);
+
+        await page.locator('#start-btn').click();
+        await waitForRuntime(page);
+        expect(await page.evaluate(() => window.CupidContentLoader.getLoadedDays())).toEqual([1]);
+        expect(await page.evaluate(() => window.CupidI18nLoader.getLoadedDays())).toEqual([1]);
+        expect(contentRequests.length).toBeGreaterThan(0);
+        expect(contentRequests.every(pathname => /\/day1_/u.test(pathname))).toBe(true);
     });
 }
 
@@ -46,11 +69,10 @@ test('explicit localized landing URL overrides a stale stored language', async (
 
     const response = await page.goto('/index-en.html', { waitUntil: 'domcontentloaded' });
     expect(response?.status()).toBe(200);
-    await waitForRuntime(page);
-
     expect(new URL(page.url()).pathname).toBe('/index-en.html');
     await expect(page.locator('html')).toHaveAttribute('lang', 'en');
     await expect(page.getByRole('button', { name: 'New Game' })).toBeEnabled();
+    expect(await page.evaluate(() => window.gameScriptsLoaded === true)).toBe(false);
     await expect.poll(() => page.evaluate(() => localStorage.getItem('cupid:language'))).toBe('en');
 });
 
@@ -114,7 +136,6 @@ test('cinematic overlays only enter the accessibility tree while active', async 
 test('mobile landing keeps its primary actions and footer inside the viewport', async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 });
     await page.goto('/index.html');
-    await waitForRuntime(page);
 
     const layout = await page.evaluate(() => {
         const footer = document.querySelector('.footer');
@@ -144,7 +165,6 @@ test('mobile landing keeps its primary actions and footer inside the viewport', 
 
 test('landing modals expose dialog semantics and keep keyboard focus contained', async ({ page }) => {
     await page.goto('/index.html');
-    await waitForRuntime(page);
 
     const settingsButton = page.getByRole('button', { name: '설정' });
     await settingsButton.click();
@@ -184,8 +204,8 @@ test('landing modals expose dialog semantics and keep keyboard focus contained',
 
 test('new game reaches the name input scene without changing UI contracts', async ({ page }) => {
     await page.goto('/index.html');
-    await waitForRuntime(page);
     await page.locator('#start-btn').click();
+    await waitForRuntime(page);
     await expect(page.locator('#game-container')).toBeVisible();
     await page.waitForFunction(() => window.gameEngine?.dialogueSystem);
     await page.evaluate(() => { window.gameEngine.dialogueSystem.typingSpeed = 0; });
@@ -331,6 +351,32 @@ test('gallery runtime includes the shared free-talk core', async ({ page }) => {
     await page.goto('/gallery.html');
     await page.waitForFunction(() => window.GalleryFreeTalk && window.CupidFreeTalkCore);
     await expect(page.locator('#gallery-freetalk-overlay')).toHaveCount(1);
+});
+
+test('ending collection renders 32 routes and records distinct route variants', async ({ page }) => {
+    await page.goto('/game.html');
+    await waitForRuntime(page);
+    const result = await page.evaluate(() => {
+        const engine = window.gameEngine;
+        engine.galleryManager.recordEndingScene('day5_seo_ending_freetalk_perfect', engine.stateManager);
+        engine.stateManager.setFlag('day5_abandoned_seoyeon', true);
+        engine.galleryManager.recordEndingScene('day5_seo_ending_freetalk_bittersweet', engine.stateManager);
+        engine.stateManager.setFlag('day5_abandoned_seoyeon', false);
+        engine.galleryManager.recordEndingScene('day5_seo_ending_freetalk_bittersweet', engine.stateManager);
+        engine.stateManager.setFlag('route_yuna', true);
+        engine.galleryManager.recordEndingScene('day5_ending_confess_fail', engine.stateManager);
+        return JSON.parse(localStorage.getItem('cupid_gallery')).endings;
+    });
+    expect(Object.keys(result).sort()).toEqual([
+        'bittersweet_seoyeon', 'confess_fail_yuna', 'counteroffer_seoyeon', 'perfect_seoyeon'
+    ]);
+
+    await page.goto('/gallery.html');
+    await page.locator('[data-tab="endings"]').click();
+    await expect(page.locator('.ending-card')).toHaveCount(32);
+    await expect(page.locator('#ending-summary')).toContainText('4/32');
+    await expect(page.locator('[data-ending-id="perfect_seoyeon"]')).toHaveClass(/is-unlocked/);
+    await expect(page.locator('[data-ending-id="true_seoyeon"]')).toHaveClass(/is-locked/);
 });
 
 test('game and gallery preserve valid outward expressions independently of affinity', async ({ page }) => {
