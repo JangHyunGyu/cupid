@@ -11766,7 +11766,7 @@
 - 배경: `student_room.png`
 - 호감분기: Seoyeon
   - [40+] → `after3_seo_1`
-  - [15+] → `after3_seo_partial_1`
+  - [0+] → `after3_seo_partial_1`
   - [기본] → `after3_seo_low_1`
 
 - 캐릭터: `없음`
@@ -12136,7 +12136,7 @@
 - 배경: `yuna_hideout.png`
 - 호감분기: Yuna
   - [40+] → `after3_yuna_1`
-  - [15+] → `after3_yuna_partial_1`
+  - [0+] → `after3_yuna_partial_1`
   - [기본] → `after3_yuna_low_1`
 
 - 캐릭터: `없음`
@@ -12506,7 +12506,7 @@
 - 배경: `gym.png`
 - 호감분기: Dain
   - [40+] → `after3_dain_1`
-  - [15+] → `after3_dain_partial_1`
+  - [0+] → `after3_dain_partial_1`
   - [기본] → `after3_dain_low_1`
 
 - 캐릭터: `없음`
@@ -15880,7 +15880,7 @@
 - 호감분기: Seoyeon
   - [60+] → `date_seo_high_1`
   - [40+] → `date_seo_compliment_choice`
-  - [15+] → `date_seo_tentative_1`
+  - [0+] → `date_seo_tentative_1`
 - 다음: `date_seo_tentative_1`
 
 - 캐릭터: `없음`
@@ -16150,8 +16150,8 @@
 
 ### `date_seo_tentative_3`
 - 배경: `street.png`
-- 플래그: `day4_waited`, `day4_tentative_seoyeon`
-- 다음: `day4_night_start`
+- 플래그: `day4_tentative_seoyeon`
+- 다음: `pre_confess_minsu`
 
 - 캐릭터: `없음`
 **{name}**: *다음 약속은 잡지 않은 채 역 앞에서 헤어진다.*
@@ -16174,7 +16174,7 @@
 - 호감분기: Yuna
   - [60+] → `date_yuna_high_1`
   - [40+] → `date_yuna_compliment_choice`
-  - [15+] → `date_yuna_tentative_1`
+  - [0+] → `date_yuna_tentative_1`
 - 다음: `date_yuna_tentative_1`
 
 - 캐릭터: `없음`
@@ -16480,8 +16480,8 @@
 
 ### `date_yuna_tentative_3`
 - 배경: `street.png`
-- 플래그: `day4_waited`, `day4_tentative_yuna`
-- 다음: `day4_night_start`
+- 플래그: `day4_tentative_yuna`
+- 다음: `pre_confess_minsu`
 
 - 캐릭터: `yuna_normal.png`
 **유나**: 다음에는 내가 먼저 연락할게. 오늘은 여기까지.
@@ -16504,7 +16504,7 @@
 - 호감분기: Dain
   - [60+] → `date_dain_high_1`
   - [40+] → `date_dain_2`
-  - [15+] → `date_dain_tentative_1`
+  - [0+] → `date_dain_tentative_1`
 - 다음: `date_dain_tentative_1`
 
 - 캐릭터: `없음`
@@ -16809,6 +16809,34 @@
 
 ---
 
+### `date_dain_tentative_1`
+- 배경: `gym.png`
+- 다음: `date_dain_tentative_2`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 오늘은 오래 놀지 말자. 무릎도 좀 쉬어야 하고.
+
+---
+
+### `date_dain_tentative_2`
+- 배경: `gym.png`
+- 다음: `date_dain_tentative_3`
+
+- 캐릭터: `dain_normal.png`
+**{name}**: *자판기 앞에서 음료 하나씩 마신다. 다인은 체육관 문을 열지 않고 가방끈만 고쳐 멘다.*
+
+---
+
+### `date_dain_tentative_3`
+- 배경: `street.png`
+- 플래그: `day4_tentative_dain`
+- 다음: `pre_confess_minsu`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 학교에서 봐. 다음 약속은 그때 정하자.
+
+---
+
 ### `pre_confess_minsu`
 - 배경: `street.png`
 - 다음: `pre_confess_minsu_2`
@@ -16833,34 +16861,6 @@
 
 - 캐릭터: `minsu_smirk.png`
 **{name}**: *주머니 속 핸드폰 모서리가 손바닥에 눌린다. 알림은 없고 화면에는 검은 유리만 비친다.*
-
----
-
-### `date_dain_tentative_1`
-- 배경: `gym.png`
-- 다음: `date_dain_tentative_2`
-
-- 캐릭터: `dain_normal.png`
-**다인**: 오늘은 오래 놀지 말자. 무릎도 좀 쉬어야 하고.
-
----
-
-### `date_dain_tentative_2`
-- 배경: `gym.png`
-- 다음: `date_dain_tentative_3`
-
-- 캐릭터: `dain_normal.png`
-**{name}**: *자판기 앞에서 음료 하나씩 마신다. 다인은 체육관 문을 열지 않고 가방끈만 고쳐 멘다.*
-
----
-
-### `date_dain_tentative_3`
-- 배경: `street.png`
-- 플래그: `day4_waited`, `day4_tentative_dain`
-- 다음: `day4_night_start`
-
-- 캐릭터: `dain_normal.png`
-**다인**: 학교에서 봐. 다음 약속은 그때 정하자.
 
 ---
 

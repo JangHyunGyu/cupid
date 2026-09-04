@@ -178,7 +178,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/teacher_normal.png",
         "bgm": "morning.mp3",
-        "affinityGuard": {"character":"Teacher","minAffinity":15,"fallback":"hidden_homeroom_d4_low"},
+        "affinityGuard": {"character":"Teacher","minAffinity":0,"fallback":"hidden_homeroom_d4_low"},
         "next": "hidden_homeroom_d4_1_b"
     },
     "hidden_homeroom_d4_1_b": {
@@ -471,7 +471,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "bgm": "morning.mp3",
-        "affinityGuard": {"character":"Nurse","minAffinity":15,"fallback":"hidden_nurse_d4_low"},
+        "affinityGuard": {"character":"Nurse","minAffinity":0,"fallback":"hidden_nurse_d4_low"},
         "next": "hidden_nurse_d4_morning_3"
     },
     "hidden_nurse_d4_morning_3": {
@@ -570,7 +570,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "bgm": "morning.mp3",
-        "affinityGuard": {"character":"Nurse","minAffinity":15,"fallback":"hidden_nurse_d4_low"},
+        "affinityGuard": {"character":"Nurse","minAffinity":0,"fallback":"hidden_nurse_d4_low"},
         "next": "hidden_nurse_d4_1_b"
     },
     "hidden_nurse_d4_1_b": {

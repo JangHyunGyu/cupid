@@ -310,7 +310,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/room_school.png",
         "backgroundVariant": "empty",
         "character": "assets/images/characters/teacher_normal.png",
-        "affinityGuard": {"character":"Teacher","minAffinity":15,"fallback":"hidden_homeroom_d3_low"},
+        "affinityGuard": {"character":"Teacher","minAffinity":0,"fallback":"hidden_homeroom_d3_low"},
         "next": "hidden_homeroom_d3_3"
     },
     "hidden_homeroom_d3_3": {
@@ -582,7 +582,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "hidden_nurse_d3_1": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "affinityGuard": {"character":"Nurse","minAffinity":15,"fallback":"hidden_nurse_d3_low"},
+        "affinityGuard": {"character":"Nurse","minAffinity":0,"fallback":"hidden_nurse_d3_low"},
         "next": "hidden_nurse_d3_1_b"
     },
     "hidden_nurse_d3_1_b": {
@@ -912,7 +912,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "morning3_date_seo_1": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "affinityGuard": {"character":"Seoyeon","minAffinity":15,"fallback":"morning3_date_seo_low"},
+        "affinityGuard": {"character":"Seoyeon","minAffinity":0,"fallback":"morning3_date_seo_low"},
         "next": "morning3_date_seo_choice"
     },
     "morning3_date_seo_choice": {
@@ -948,7 +948,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "morning3_date_dain_1": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_normal.png",
-        "affinityGuard": {"character":"Dain","minAffinity":15,"fallback":"morning3_date_dain_low"},
+        "affinityGuard": {"character":"Dain","minAffinity":0,"fallback":"morning3_date_dain_low"},
         "next": "morning3_date_dain_2"
     },
     "morning3_date_dain_2": {
@@ -989,7 +989,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "morning3_date_yuna_1": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "affinityGuard": {"character":"Yuna","minAffinity":15,"fallback":"morning3_date_yuna_low"},
+        "affinityGuard": {"character":"Yuna","minAffinity":0,"fallback":"morning3_date_yuna_low"},
         "next": "morning3_date_yuna_1_b"
     },
     "morning3_date_yuna_1_b": {

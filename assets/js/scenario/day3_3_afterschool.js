@@ -228,7 +228,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "affinityChar": "Seoyeon",
         "affinityBranches": [
             { "minAffinity": 40, "next": "after3_seo_1" },
-            { "minAffinity": 15, "next": "after3_seo_partial_1" },
+            { "minAffinity": 0, "next": "after3_seo_partial_1" },
             { "minAffinity": -100, "next": "after3_seo_low_1" }
         ]
     },
@@ -256,7 +256,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "affinityChar": "Yuna",
         "affinityBranches": [
             { "minAffinity": 40, "next": "after3_yuna_1" },
-            { "minAffinity": 15, "next": "after3_yuna_partial_1" },
+            { "minAffinity": 0, "next": "after3_yuna_partial_1" },
             { "minAffinity": -100, "next": "after3_yuna_low_1" }
         ]
     },
@@ -284,7 +284,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "affinityChar": "Dain",
         "affinityBranches": [
             { "minAffinity": 40, "next": "after3_dain_1" },
-            { "minAffinity": 15, "next": "after3_dain_partial_1" },
+            { "minAffinity": 0, "next": "after3_dain_partial_1" },
             { "minAffinity": -100, "next": "after3_dain_low_1" }
         ]
     },

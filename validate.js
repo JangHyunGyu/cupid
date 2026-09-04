@@ -2561,6 +2561,8 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
 
     // 현재 씬과 다음 씬 모두 배경이 명시적으로 있고, 서로 다른 경우
     if (scene.background && nextScene.background && scene.background !== nextScene.background) {
+        if (nextScene.locationTransition === true) continue;
+
         // Day 전환 / 타임슬롯 전환 패턴은 배경 변경이 정상이므로 제외
         const isTimeSlotTransition =
             (/night/.test(sceneId) && /^morning/.test(nextId)) ||  // 밤→아침

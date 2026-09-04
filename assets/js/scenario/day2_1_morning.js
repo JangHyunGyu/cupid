@@ -236,7 +236,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "hidden_homeroom_d2_1": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/teacher_normal.png",
-        "affinityGuard": {"character":"Teacher","minAffinity":15,"fallback":"hidden_homeroom_d2_low"},
+        "affinityGuard": {"character":"Teacher","minAffinity":0,"fallback":"hidden_homeroom_d2_low"},
         "next": "hidden_homeroom_d2_1_b"
     },
     "hidden_homeroom_d2_1_b": {

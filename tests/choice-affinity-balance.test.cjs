@@ -176,8 +176,8 @@ test('midgame relationship tiers preserve promises, distance, and locked fallout
         ['Yuna', 'after3_yuna_affinity_check', 'after3_yuna_low_1', 'after3_yuna_partial_1', 'after3_yuna_1'],
         ['Dain', 'after3_dain_affinity_check', 'after3_dain_low_1', 'after3_dain_partial_1', 'after3_dain_1']
     ]) {
-        assert.equal(createSceneRenderer({ [character]: 14 }).resolveNextScene(scenes[checkId]), lowId);
-        assert.equal(createSceneRenderer({ [character]: 25 }).resolveNextScene(scenes[checkId]), partialId);
+        assert.equal(createSceneRenderer({ [character]: -1 }).resolveNextScene(scenes[checkId]), lowId);
+        assert.equal(createSceneRenderer({ [character]: 10 }).resolveNextScene(scenes[checkId]), partialId);
         assert.equal(createSceneRenderer({ [character]: 40 }).resolveNextScene(scenes[checkId]), fullId);
         assert.ok(scenes[lowId].clearFlags.includes(`accepted_${character === 'Seoyeon' ? 'seoyeon' : character.toLowerCase()}_date`));
     }
@@ -198,6 +198,68 @@ test('midgame relationship tiers preserve promises, distance, and locked fallout
     const unresolved = createSceneRenderer({}, { harem_seed: true });
     assert.equal(unresolved.resolveNextScene(scenes.morning4_end), 'day4_harem_fallout_1');
     assert.equal(unresolved.resolveNextScene(scenes.morning5_start_branch), 'morning5_harem_fallout_1');
+});
+
+test('neutral student routes continue through confession into rival temptation routing', () => {
+    const cases = [
+        {
+            character: 'Seoyeon',
+            routeFlag: 'route_seoyeon',
+            routeCheck: 'after3_seo_affinity_check',
+            partialScene: 'after3_seo_partial_1',
+            dateEntry: 'date_seo_1',
+            dateTier: 'date_seo_tier_check',
+            tentativeScene: 'date_seo_tentative_1',
+            tentativeEnd: 'date_seo_tentative_3',
+            tentativeFlag: 'day4_tentative_seoyeon',
+            confession: 'confess_seo_2',
+            rivalRouter: 'wall_seo_rival_rank',
+            counteroffer: 'wall_seo_glimpse_1'
+        },
+        {
+            character: 'Yuna',
+            routeFlag: 'route_yuna',
+            routeCheck: 'after3_yuna_affinity_check',
+            partialScene: 'after3_yuna_partial_1',
+            dateEntry: 'date_yuna_1',
+            dateTier: 'date_yuna_tier_check',
+            tentativeScene: 'date_yuna_tentative_1',
+            tentativeEnd: 'date_yuna_tentative_3',
+            tentativeFlag: 'day4_tentative_yuna',
+            confession: 'confess_yuna_1',
+            rivalRouter: 'wall_yuna_rival_rank',
+            counteroffer: 'wall_yuna_glimpse_1'
+        },
+        {
+            character: 'Dain',
+            routeFlag: 'route_dain',
+            routeCheck: 'after3_dain_affinity_check',
+            partialScene: 'after3_dain_partial_1',
+            dateEntry: 'date_dain_1',
+            dateTier: 'date_dain_tier_check',
+            tentativeScene: 'date_dain_tentative_1',
+            tentativeEnd: 'date_dain_tentative_3',
+            tentativeFlag: 'day4_tentative_dain',
+            confession: 'confess_dain_1',
+            rivalRouter: 'wall_dain_rival_rank',
+            counteroffer: 'wall_dain_seo_tempt_1'
+        }
+    ];
+
+    for (const route of cases) {
+        const renderer = createSceneRenderer(
+            { Seoyeon: 0, Yuna: 0, Dain: 0 },
+            { [route.routeFlag]: true }
+        );
+        assert.equal(renderer.resolveNextScene(scenes[route.routeCheck]), route.partialScene);
+        assert.equal(renderer.resolveAffinityGuard(scenes[route.dateEntry]), null);
+        assert.equal(renderer.resolveNextScene(scenes[route.dateTier]), route.tentativeScene);
+        assert.deepEqual(scenes[route.tentativeEnd].setFlags, [route.tentativeFlag]);
+        assert.equal(scenes[route.tentativeEnd].next, 'pre_confess_minsu');
+        assert.equal(renderer.resolveAffinityGuard(scenes[route.confession]), null);
+        assert.equal(renderer.resolveNextScene(scenes.day4_student_night_branch), route.rivalRouter);
+        assert.equal(renderer.resolveNextScene(scenes[route.rivalRouter]), route.counteroffer);
+    }
 });
 
 test('late confession and final-day callbacks use aligned live-affinity thresholds', () => {
@@ -1057,24 +1119,24 @@ test('day-five continuity keeps availability, history, affinity, and final choic
     }
 });
 
-test('live affinity guards block personal scenes and provide localized low-affinity exits', () => {
+test('live affinity guards reject negative relationships and provide localized low-affinity exits', () => {
     const guardedEntries = [
-        ['hidden_homeroom_d2_1', 'Teacher', 15, 'hidden_homeroom_d2_low'],
-        ['hidden_nurse_d2_1', 'Nurse', 15, 'hidden_nurse_d2_low'],
-        ['hidden_homeroom_d3_1', 'Teacher', 15, 'hidden_homeroom_d3_low'],
-        ['hidden_nurse_d3_1', 'Nurse', 15, 'hidden_nurse_d3_low'],
-        ['morning3_date_seo_1', 'Seoyeon', 15, 'morning3_date_seo_low'],
-        ['morning3_date_dain_1', 'Dain', 15, 'morning3_date_dain_low'],
-        ['morning3_date_yuna_1', 'Yuna', 15, 'morning3_date_yuna_low'],
-        ['hidden_homeroom_d4_1', 'Teacher', 15, 'hidden_homeroom_d4_low'],
-        ['hidden_nurse_d4_morning_1', 'Nurse', 15, 'hidden_nurse_d4_low'],
-        ['hidden_nurse_d4_1', 'Nurse', 15, 'hidden_nurse_d4_low'],
-        ['date_seo_1', 'Seoyeon', 15, 'date_seo_low'],
-        ['date_yuna_1', 'Yuna', 15, 'date_yuna_low'],
-        ['date_dain_1', 'Dain', 15, 'date_dain_low'],
-        ['confess_seo_2', 'Seoyeon', 40, 'confess_seo_low'],
-        ['confess_yuna_1', 'Yuna', 40, 'confess_yuna_low'],
-        ['confess_dain_1', 'Dain', 40, 'confess_dain_low'],
+        ['hidden_homeroom_d2_1', 'Teacher', 0, 'hidden_homeroom_d2_low'],
+        ['hidden_nurse_d2_1', 'Nurse', 0, 'hidden_nurse_d2_low'],
+        ['hidden_homeroom_d3_1', 'Teacher', 0, 'hidden_homeroom_d3_low'],
+        ['hidden_nurse_d3_1', 'Nurse', 0, 'hidden_nurse_d3_low'],
+        ['morning3_date_seo_1', 'Seoyeon', 0, 'morning3_date_seo_low'],
+        ['morning3_date_dain_1', 'Dain', 0, 'morning3_date_dain_low'],
+        ['morning3_date_yuna_1', 'Yuna', 0, 'morning3_date_yuna_low'],
+        ['hidden_homeroom_d4_1', 'Teacher', 0, 'hidden_homeroom_d4_low'],
+        ['hidden_nurse_d4_morning_1', 'Nurse', 0, 'hidden_nurse_d4_low'],
+        ['hidden_nurse_d4_1', 'Nurse', 0, 'hidden_nurse_d4_low'],
+        ['date_seo_1', 'Seoyeon', 0, 'date_seo_low'],
+        ['date_yuna_1', 'Yuna', 0, 'date_yuna_low'],
+        ['date_dain_1', 'Dain', 0, 'date_dain_low'],
+        ['confess_seo_2', 'Seoyeon', 0, 'confess_seo_low'],
+        ['confess_yuna_1', 'Yuna', 0, 'confess_yuna_low'],
+        ['confess_dain_1', 'Dain', 0, 'confess_dain_low'],
         ['hidden_homeroom_d5_1', 'Teacher', 15, 'hidden_homeroom_d5_low'],
         ['hidden_nurse_d5_1', 'Nurse', 15, 'hidden_nurse_d5_low'],
         ['tour_seo_1', 'Seoyeon', 40, 'tour_seo_low'],
@@ -1105,7 +1167,7 @@ test('live affinity guards block personal scenes and provide localized low-affin
 
 test('rival affinity is checked before the wall scene and free talk exits cleanly', () => {
     assert.equal(scenes.hidden_nurse_d3_freetalk.next, 'morning3_date_seo_1');
-    assert.equal(scenes.morning3_date_seo_1.affinityGuard.minAffinity, 15);
+    assert.equal(scenes.morning3_date_seo_1.affinityGuard.minAffinity, 0);
 
     const studentRoutes = [
         ['seoyeon', 'seo'],

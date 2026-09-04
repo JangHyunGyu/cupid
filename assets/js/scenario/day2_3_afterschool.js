@@ -41,7 +41,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "hidden_nurse_d2_1": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "affinityGuard": {"character":"Nurse","minAffinity":15,"fallback":"hidden_nurse_d2_low"},
+        "affinityGuard": {"character":"Nurse","minAffinity":0,"fallback":"hidden_nurse_d2_low"},
         "next": "hidden_nurse_d2_2"
     },
     "hidden_nurse_d2_2": {
