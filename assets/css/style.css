@@ -424,6 +424,69 @@ html {
     transition: opacity 0.25s ease-in-out, transform 0.3s ease, filter 0.3s ease;
     will-change: transform, opacity;
     transform: translateZ(0);
+    transform-origin: bottom center;
+    --char-idle-duration: 7.8s;
+    --char-idle-delay: -3.1s;
+    --char-idle-lift: -2px;
+    --char-idle-sway-a: -0.25px;
+    --char-idle-sway-b: 0.35px;
+    --char-idle-lean-a: -0.04deg;
+    --char-idle-lean-b: 0.06deg;
+    --char-talk-duration: 1.25s;
+    --char-talk-lift: -2.2px;
+    --char-thinking-duration: 5.8s;
+}
+
+.char-slot img[src*="seyoun_"] {
+    --char-idle-duration: 7.6s;
+    --char-idle-lift: -2.2px;
+    --char-idle-sway-a: -0.3px;
+    --char-idle-sway-b: 0.45px;
+    --char-talk-duration: 1.3s;
+}
+
+.char-slot img[src*="yuna_"] {
+    --char-idle-duration: 9.2s;
+    --char-idle-lift: -1.6px;
+    --char-idle-sway-a: -0.18px;
+    --char-idle-sway-b: 0.28px;
+    --char-idle-lean-a: -0.025deg;
+    --char-idle-lean-b: 0.04deg;
+    --char-talk-duration: 1.55s;
+    --char-talk-lift: -1.5px;
+    --char-thinking-duration: 6.6s;
+}
+
+.char-slot img[src*="dain_"] {
+    --char-idle-duration: 6.2s;
+    --char-idle-lift: -2.7px;
+    --char-idle-sway-a: -0.45px;
+    --char-idle-sway-b: 0.6px;
+    --char-idle-lean-a: -0.06deg;
+    --char-idle-lean-b: 0.09deg;
+    --char-talk-duration: 1.25s;
+    --char-talk-lift: -2.4px;
+    --char-thinking-duration: 5.2s;
+}
+
+.char-slot img[src*="teacher_"] {
+    --char-idle-duration: 8.4s;
+    --char-idle-lift: -1.8px;
+    --char-idle-sway-a: -0.2px;
+    --char-idle-sway-b: 0.3px;
+    --char-talk-duration: 1.45s;
+    --char-talk-lift: -1.7px;
+    --char-thinking-duration: 6.2s;
+}
+
+.char-slot img[src*="nurse_"] {
+    --char-idle-duration: 8s;
+    --char-idle-lift: -2px;
+    --char-idle-sway-a: -0.3px;
+    --char-idle-sway-b: 0.36px;
+    --char-talk-duration: 1.4s;
+    --char-talk-lift: -1.9px;
+    --char-thinking-duration: 6s;
 }
 
 /* 캐릭터 페이드 인/아웃 */
@@ -440,49 +503,76 @@ html {
    Live2D-like Animations (가상 Live2D 효과)
    ========================================================================== */
 
-/* [가상 Live2D: 호흡] 
-   캐릭터가 살아있는 느낌을 주기 위해 상하로 미세하게 움직임
-   - 4초 주기로 부드럽게 반복
-   - translateY(-2px): 살짝 위로 들석임으로 호흡 연출
-   - scale(1.005): 아주 미세하게 커지는 효과 (가슴 부푸는 연출)
-*/
+/* 캐릭터별 속도와 흔들림 폭을 적용한 대기 호흡
+   발끝을 기준으로 미세한 상하 이동·확대·기울기 조합 */
 @keyframes breathing {
-
-    0%,
-    100% {
-        transform: translateY(0) scale(1);
+    0%, 100% {
+        translate: 0 0;
+        scale: 1;
+        rotate: 0deg;
     }
 
-    50% {
-        transform: translateY(-2px) scale(1.005);
+    24% {
+        translate: var(--char-idle-sway-a) -0.65px;
+        scale: 1.001;
+        rotate: var(--char-idle-lean-a);
+    }
+
+    52% {
+        translate: var(--char-idle-sway-b) var(--char-idle-lift);
+        scale: 1.004;
+        rotate: var(--char-idle-lean-b);
+    }
+
+    76% {
+        translate: 0 -0.55px;
+        scale: 1.0015;
+        rotate: -0.02deg;
     }
 }
 
-.char-breathing {
-    animation: breathing 4s ease-in-out infinite;
-    transform-origin: bottom center;
-    /* 캐릭터 발바닥 기준으로 애니메이션 발생 */
+.char-slot img:not(.thinking):not(.char-talking) {
+    animation: breathing var(--char-idle-duration) cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+    animation-delay: var(--char-idle-delay);
 }
 
-/* [가상 Live2D: 말하기]
-   현재 대사를 하고 있는 캐릭터임을 나타내기 위한 강조 효과
-   - 호흡 애니메이션과 주기를 맞춰 어색함 제거 (4초)
-   - !important를 사용하여 기본 상태보다 우선적으로 움직임 부여
-*/
+/* 타이핑 중인 캐릭터에만 적용하는 발화 모션
+   대기 호흡보다 짧은 주기로 위치·크기·기울기 변경 */
 @keyframes talking-bounce {
-
-    0%,
-    100% {
-        transform: translateY(0);
+    0%, 100% {
+        translate: 0 0;
+        scale: 1;
+        rotate: 0deg;
     }
 
-    50% {
-        transform: translateY(-2px);
+    18% {
+        translate: var(--char-idle-sway-a) var(--char-talk-lift);
+        scale: 1.0025;
+        rotate: var(--char-idle-lean-a);
+    }
+
+    38% {
+        translate: var(--char-idle-sway-b) -0.45px;
+        scale: 1.0005;
+        rotate: 0.025deg;
+    }
+
+    63% {
+        translate: 0 -1.35px;
+        scale: 1.0015;
+        rotate: var(--char-idle-lean-b);
+    }
+
+    82% {
+        translate: var(--char-idle-sway-a) -0.3px;
+        scale: 1;
+        rotate: -0.015deg;
     }
 }
 
 .char-talking {
-    animation: talking-bounce 4s ease-in-out infinite !important;
+    animation: talking-bounce var(--char-talk-duration) cubic-bezier(0.36, 0.08, 0.28, 1) infinite !important;
+    animation-delay: -0.18s !important;
 }
 
 /* 슬롯별 위치 오프셋 (1280px 기준 상대 위치) */
@@ -494,6 +584,7 @@ html {
 
 #char-left img {
     transform: scale(0.9);
+    --char-idle-delay: -1.7s;
     /* 좌측 캐릭터 크기 */
     transform-origin: bottom center;
 }
@@ -505,6 +596,10 @@ html {
     /* 중앙 캐릭터를 가장 앞으로 */
 }
 
+#char-center img {
+    --char-idle-delay: -3.1s;
+}
+
 #char-right {
     transform: translateX(-25%);
     /* 중앙에서 오른쪽으로 이동 */
@@ -514,6 +609,7 @@ html {
 
 #char-right img {
     transform: scale(0.9);
+    --char-idle-delay: -4.6s;
     /* 우측 캐릭터 크기 */
     transform-origin: bottom center;
     mix-blend-mode: lighten;
@@ -1935,34 +2031,36 @@ html[lang="pt"] #message {
     opacity: 0.5;
 }
 
-/* 생각 중인 연출 (캐릭터가 흐려지며 숨쉬는 듯한 효과) */
-/* [가상 Live2D: 프리토킹 AI 응답 대기]
-   AI 답변 생성 동안 캐릭터 몰입 상태 연출
-   - opacity: 살짝 투명하게 하여 '회상'이나 '집중' 느낌 부여
-   - filter: blur(1px)로 캐릭터 외곽을 부드럽게 처리
-   - animation: thinking-breath로 느리고 깊은 호흡 연출
-*/
+/* AI 응답 생성 중 캐릭터 외곽과 호흡을 느리게 처리하는 집중 모션 */
 .thinking {
     opacity: 0.9;
     filter: blur(1px);
     transition: all 0.5s ease-in-out;
-    animation: thinking-breath 4s infinite ease-in-out;
+    animation: thinking-breath var(--char-thinking-duration) infinite ease-in-out;
+    animation-delay: var(--char-idle-delay);
 }
 
-/* 프리토킹 시 사용하는 깊은 호흡 리듬
-   - 일반 호흡보다 투명도 변화(0.85 ~ 1)를 추가하여 '고민 중' 시각화
-*/
+/* 투명도 변화와 느린 호흡으로 일반 대기 상태와 구분 */
 @keyframes thinking-breath {
-
-    0%,
-    100% {
-        opacity: 0.85;
-        transform: scale(1);
+    0%, 100% {
+        opacity: 0.88;
+        translate: 0 0;
+        scale: 1;
+        rotate: 0deg;
     }
 
-    50% {
+    42% {
+        opacity: 0.96;
+        translate: var(--char-idle-sway-a) -0.8px;
+        scale: 1.0015;
+        rotate: var(--char-idle-lean-a);
+    }
+
+    68% {
         opacity: 1;
-        transform: scale(1.005);
+        translate: var(--char-idle-sway-b) var(--char-idle-lift);
+        scale: 1.0035;
+        rotate: var(--char-idle-lean-b);
     }
 }
 
