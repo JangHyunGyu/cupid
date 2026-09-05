@@ -648,7 +648,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "wall_seo_pre_high_2": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/seyoun_sad.png","opacity":0.35}},
-        "next": "wall_seo_to_park"
+        "next": "wall_seo_rival_rank"
     },
     "wall_seo_pre_low_1": {
         "background": "assets/images/background/room_my.png",

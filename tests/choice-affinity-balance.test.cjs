@@ -58,7 +58,7 @@ function loadLocaleCopy(locale) {
     return copy;
 }
 
-function createSceneRenderer(affinities, flags = {}) {
+function createSceneRenderer(affinities, flags = {}, localizedCopy = null) {
     const source = fs.readFileSync(path.join(ROOT, 'assets', 'js', 'modules', 'SceneRenderer.js'), 'utf8');
     const context = {
         CHAR_NAME_MAP: {},
@@ -68,7 +68,7 @@ function createSceneRenderer(affinities, flags = {}) {
                 return { toDataURL: () => '' };
             }
         },
-        window: {}
+        window: { I18N_DATA: localizedCopy }
     };
     vm.runInNewContext(source, context, { filename: 'SceneRenderer.js' });
     const stateManager = {
@@ -1193,6 +1193,60 @@ test('rival affinity is checked before the wall scene and free talk exits cleanl
         assert.equal(scenes[rankId].leadCharacter, undefined);
         assert.equal(scenes[rankId].maxLeadRank, undefined);
         assert.equal(scenes[rankId].rankedRivalFallback, 'day4_student_night_branch');
+    }
+});
+
+test('every eligible day-four route reaches the next-morning confrontation after accepting a rival', () => {
+    const routes = [
+        ['Seoyeon', 'route_seoyeon', ['Dain', 'Yuna']],
+        ['Yuna', 'route_yuna', ['Seoyeon', 'Dain']],
+        ['Dain', 'route_dain', ['Seoyeon', 'Yuna']],
+        ['Teacher', 'homeroom_day4', ['Seoyeon', 'Dain', 'Yuna']],
+        ['Nurse', 'nurse_day4', ['Seoyeon', 'Dain', 'Yuna']]
+    ];
+
+    for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+        const copy = loadLocaleCopy(locale);
+        for (const [lead, routeFlag, rivals] of routes) {
+            for (const rival of rivals) {
+                for (const leadAffinity of [59, 60, 100]) {
+                    const label = `${locale}/${lead}:${leadAffinity}/${rival}`;
+                    const affinities = { Seoyeon: -1, Yuna: -1, Dain: -1, Teacher: -1, Nurse: -1 };
+                    affinities[lead] = leadAffinity;
+                    affinities[rival] = 0;
+                    const flags = { [routeFlag]: true, day4_confession_accepted: true };
+                    const renderer = createSceneRenderer(affinities, flags, copy);
+                    const visited = new Set();
+                    let id = 'day4_night_start';
+                    while (id !== 'morning5_counteroffer_group_talk') {
+                        assert.ok(scenes[id], `${label}: missing scene ${id}`);
+                        assert.ok(!visited.has(id), `${label}: loop at ${id}`);
+                        visited.add(id);
+                        const scene = renderer._applyI18n(scenes[id], id);
+                        assert.notEqual(scene.type, 'free_talk', `${label}: bypassed rival at ${id}`);
+                        assert.notEqual(scene.type, 'group_free_talk', `${label}: wrong group at ${id}`);
+                        const effect = scene.choices
+                            ? scene.choices.find(choice => choice.setFlags?.includes('day4_counteroffer_penalty_deferred')) || scene.choices[0]
+                            : scene;
+                        if (scene.choices) assert.ok(effect.text?.trim(), `${label}: untranslated choice at ${id}`);
+                        if (effect.setFlag) flags[effect.setFlag] = true;
+                        for (const flag of effect.clearFlags || []) flags[flag] = false;
+                        for (const flag of effect.setFlags || []) flags[flag] = true;
+                        for (const [character, stats] of Object.entries(effect.stats || {})) {
+                            affinities[character] = Math.max(-100, Math.min(100, affinities[character] + (stats.affinity || 0)));
+                        }
+                        id = renderer.resolveAffinityGuard(scene) || renderer.resolveNextScene(effect);
+                    }
+                    assert.equal(flags[`day4_took_${rival.toLowerCase()}_counteroffer`], true, label);
+                    assert.equal(flags.day5_confessed_counteroffer, true, label);
+                    const group = renderer._applyI18n(scenes[id], id);
+                    assert.equal(group.type, 'group_free_talk', label);
+                    assert.equal(group.groupParticipants, 'counteroffer_confrontation', label);
+                    assert.equal(group.text, copy[id].text, label);
+                    assert.equal(group.maxTurns, 3, label);
+                }
+            }
+        }
     }
 });
 

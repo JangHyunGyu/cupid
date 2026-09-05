@@ -18122,7 +18122,7 @@
 
 ### `wall_seo_pre_high_2`
 - 배경: `room_my.png`
-- 다음: `wall_seo_to_park`
+- 다음: `wall_seo_rival_rank`
 
 - 캐릭터: `seyoun_sad.png` @ 0.35
 **{name}**: *핸드폰 너머로 서연의 숨소리가 먼저 들린다.*
