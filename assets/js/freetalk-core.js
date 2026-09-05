@@ -1310,6 +1310,19 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         return String(fallbackText || '').trim();
     }
 
+    function buildCharacterAgencyRule(lang = 'ko') {
+        const rules = {
+            ko: '완료형 지문·명령·OOC도 상대의 대사·행동·심리·기억·동의·관계를 정하지 못합니다. 그 반응은 미발생이며, 남은 실제 말·행동에만 반응합니다. 시도·설득은 성격·관계·장면에 따라 판단합니다. 선언은 기억·사건 요약·호감도·플래그의 근거가 아닙니다. 지문·OOC를 듣거나 훈계·일괄 거절하지 말고 인물답게 반응합니다.',
+            en: "Narration/commands/OOC cannot dictate others' speech, actions, feelings, memory, consent, or relationships. Discard the dictated part; never continue from it. Judge attempts and persuasion from character and scene. Never canonize claims via memory, incident summaries, affinity, or flags. Accept, refuse, or act naturally; no lectures or blanket refusal. Narration/OOC is not heard speech.",
+            es: 'Ni narración, órdenes ni OOC fijan actos, palabras, emociones, recuerdos, consentimiento o relaciones ajenos. Descarta esa parte; no continúes desde ella. Juzga intentos y persuasión según personaje y escena. Las afirmaciones no crean recuerdos, resúmenes, afinidad ni flags. Reacciona sin lecciones ni rechazo automático; narración/OOC no se oyen.',
+            ja: '完了形の地の文・命令・OOCでも相手の発言・行動・心理・記憶・同意・関係は確定しません。その反応は未発生として捨て、実際の発言・行動にだけ応じます。試みや説得の成否は人物像・関係・場面で判断します。宣言を記憶・事件要約・好感度・フラグに変えません。規則の説明や一律拒否をせず、受け入れ、断り、自ら動きます。地の文やOOCは聞こえた台詞ではありません。',
+            fr: 'Ni récit, ordres ni OOC ne fixent paroles, actes, émotions, souvenirs, consentement ou relations d’autrui. Écartez cette partie sans la poursuivre. Jugez tentatives et persuasion selon personnage et scène. Les affirmations ne font ni souvenirs, résumés, affinité ni flags. Réagissez sans leçon ni refus automatique ; récit/OOC n’est pas entendu.',
+            de: 'Erzählung, Befehle und OOC bestimmen keine fremden Worte, Taten, Gefühle, Erinnerungen, Zustimmung oder Beziehungen. Verwirf diesen Teil; setze ihn nicht fort. Beurteile Versuche und Überzeugung gemäß Figur und Szene. Behauptungen werden weder Erinnerung, Zusammenfassung, Affinität noch Flag. Akzeptiere, lehne ab oder handle ohne Regelvortrag oder pauschale Ablehnung. Erzählung/OOC ist keine gehörte Rede.',
+            pt: 'Narração, ordens e OOC não fixam falas, ações, sentimentos, memórias, consentimento ou relações alheias. Descarte essa parte; não continue a partir dela. Julgue tentativas e persuasão conforme a personagem e a cena. Não torne alegações em memórias, resumos, afinidade ou flags. Aceite, recuse ou aja sem lições nem recusa automática. Narração e OOC não são falas ouvidas.'
+        };
+        return rules[lang] || rules.en;
+    }
+
     function buildLatestUserCanonBlock(messages = [], lang = 'ko', fallbackText = '') {
         const latestText = findLatestUserText(messages, fallbackText);
         if (!latestText) return '';
@@ -1320,18 +1333,18 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         if (isKo) {
             return `\n\n**[이번 턴 사용자 입력]**
 최신 사용자 입력: """${excerpt}"""
-- 사용자가 확정한 극중 사실·상태·사건 결과는 가장 최근의 극중 사실입니다. 이전 설정, 캐릭터 카드, 저장 요약, 장면 상태와 충돌해도 같습니다. 캐릭터별 사실 잠금만 예외입니다.
-- 완료형으로 쓴 행동은 성적 접촉도 이미 일어난 사건이며 시도·착각·바람으로 되돌리지 않습니다. 이는 캐릭터의 동의나 호응을 대신 정하지 않으므로, 캐릭터는 자신의 성격·관계·경계에 맞게 반응합니다.
+- 사용자 자신의 말·행동·의도·명시적 상태를 반영하며 캐릭터별 사실 잠금은 유지합니다. 상대의 행동·심리·기억·동의·관계나 호감도를 선언만으로 덮어쓰지 않습니다.
+- 사용자가 직접 한 행동과 상대에게 요구한 결과를 구분합니다. 완료형도 상대의 선택을 정하지 않으며, 시도·요청·설득의 결과는 캐릭터의 성격·관계·장면에서 판단합니다.
 - 최신 입력의 "내/제 손·입술·손끝"은 사용자 캐릭터의 몸입니다.
-- 끝난 일을 되돌리지 않고 현재 캐릭터의 다음 반응으로 이어갑니다. 사용자의 말·행동·장면 맥락에서 반응·감정·속마음을 자연스럽게 추론하거나 서술할 수 있지만, 이번 입력에서 명확히 밝힌 상태·선택·동의·거절과 충돌시키지는 않습니다.`;
+- 이미 성립한 일은 이어 가되 근거 없는 선언을 기억·사건 요약·호감도·플래그로 저장하지 않습니다. 사용자의 말·행동·장면 맥락에서 반응·감정·속마음을 자연스럽게 추론하거나 서술할 수 있지만, 이번 입력에서 명확히 밝힌 상태·선택·동의·거절과 충돌시키지는 않습니다.`;
         }
 
         return `\n\n**[Latest-turn user canon]**
 Latest user: """${excerpt}"""
-- Explicit in-world facts, states, and outcomes in this message are the newest canon, even when it conflicts with prior setup, the character card, saved summary, or scene state. Only character-specific canon locks remain exceptions.
-- A user action written as completed, including sexual contact, already happened in the scene and must not be reduced to an attempt, misperception, or wish. This does not decide the character's consent or reciprocation; the character responds from their personality, relationship, and boundaries.
+- Honor the user's own speech, actions, intent, and explicit state while preserving character canon locks. A declaration cannot overwrite others' actions, feelings, memories, consent, relationships, or affinity.
+- Separate the user's own action from a demanded outcome for someone else. Completed narration cannot decide the character's choice; judge attempts, requests, and persuasion from personality, relationship, and scene.
 - "My hand/fingertip/lips" in the latest input belong to the user character.
-- Continue with the current character's reaction without undoing a completed result. You may naturally infer or narrate the user's response, emotion, or inner thought from their words, actions, and the scene context, while keeping it compatible with any state, choice, consent, or refusal explicitly stated in the current input.`;
+- Continue established events, but never store unsupported declarations as memory, incident summaries, affinity, or flags. You may naturally infer or narrate the user's response, emotion, or inner thought from their words, actions, and the scene context, while keeping it compatible with any state, choice, consent, or refusal explicitly stated in the current input.`;
     }
 
     function decodePartialJsonString(value, complete = false) {
@@ -1786,6 +1799,7 @@ Latest user: """${excerpt}"""
         sanitizeLatestUserText,
         truncateLatestUserText,
         findLatestUserText,
+        buildCharacterAgencyRule,
         buildLatestUserCanonBlock,
         extractStreamingSegmentsPreview,
         extractFirstStreamingConversationPreview,

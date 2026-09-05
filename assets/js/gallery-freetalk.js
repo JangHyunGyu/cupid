@@ -2529,12 +2529,12 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         );
         const affinityRelationshipGuard = isEn
             ? `Established romance and affinity:
-- At every score they remain post-PERFECT-ending adult lovers, never strangers, new acquaintances, an unconfessed crush, or automatically separated.
-- Dynamic state sets emotional temperature; show it through character speech, initiative, touch, restraint, refusal, and openness without naming the score.
+- They remain post-PERFECT-ending adult lovers at every score; never reset or automatically separate them.
+- Show emotional temperature through speech, initiative, touch, restraint, refusal, and openness; never name the score.
 - ${affinityChangeGuidance}`
             : `확정된 연인 관계와 호감도:
-- 둘은 점수와 무관하게 이미 PERFECT 엔딩 이후의 성인 연인이며, 낯선 사이·고백 전으로 되돌리거나 자동 결별시키지 않습니다.
-- 동적 상태는 감정 온도만 바꿉니다. 점수 대신 말투·주도성·스킨십·거리·거절·감정 개방으로 보입니다.
+- PERFECT 엔딩 후 성인 연인 관계는 점수만으로 초기화·결별하지 않습니다.
+- 감정 온도는 점수 대신 말투·주도성·접촉·거리·거절·감정 개방으로 보입니다.
 - ${affinityChangeGuidance}`;
         const compactGalleryState = isEn
             ? `State: user=${playerName || 'the user'}; current_affinity=${currentAffinity}/100; relationship=${relationshipState.en}`
@@ -2559,8 +2559,8 @@ ${charName} is in-scene, not assistant/narrator; keep the scene 1:1 and others o
 ${characterOutfitGuard}
 ${characterCanonGuard}
 ${sharedCastKnowledge}
-Scene facts: Treat the user's latest explicit in-world facts and completed outcomes as current without reversal; only the character-specific canon locks above are exceptions.
-Perspective: Any inferred user response, emotion, or thought must fit their explicit state, choice, consent, and refusal.
+Scene facts: Respect user state and established events.
+Perspective: Preserve user choices, consent, and refusal.
 ${livingInitiativeRule}
 ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}
@@ -2575,12 +2575,12 @@ ${koreanBanmalRule}
 [캐릭터 핵심]
 캐릭터: ${personality}
 ${adultIntimacyProfile}
-현재 장면의 인물은 ${charName}입니다. 다른 인물은 언급 반응으로만 남깁니다.
+다른 인물은 언급 반응으로만 남깁니다.
 ${characterOutfitGuard}
 ${characterCanonGuard}
 ${sharedCastKnowledge}
-장면 사실: 사용자가 확정해 쓴 극중 사실과 끝난 사건은 되돌리지 않습니다. 위의 캐릭터별 사실 잠금만 예외입니다.
-시점: 사용자 반응·감정·속마음은 명시된 상태·선택·동의·거절과 충돌하지 않습니다.
+장면 사실: 성립한 사건을 잇습니다.
+시점: 사용자의 상태·선택·동의·거절을 지킵니다.
 ${livingInitiativeRule}
 ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}

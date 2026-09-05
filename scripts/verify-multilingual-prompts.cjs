@@ -363,9 +363,9 @@ for (const lang of languages) {
     const canonSource = JSON.stringify([{ role: 'user', content: '*I kissed her.*' }]);
     const galleryCanonBlock = vm.runInContext(`buildGalleryLatestUserCanonBlock(${canonSource}, '${lang}', '')`, context);
     for (const [label, block] of [['gallery', galleryCanonBlock]]) {
-        assert(block.includes('including sexual contact, already happened in the scene'),
-            `[${lang}/${label}] canon block can still erase a completed sexual action`);
-        assert(block.includes("This does not decide the character's consent or reciprocation"),
+        assert(block.includes("Completed narration cannot decide the character's choice"),
+            `[${lang}/${label}] completed narration must preserve character choice`);
+        assert(block.includes("A declaration cannot overwrite others' actions, feelings, memories, consent, relationships, or affinity"),
             `[${lang}/${label}] canon block no longer separates event fact from character consent`);
     }
     let mainCacheBaseline = '';
@@ -448,9 +448,7 @@ for (const lang of languages) {
             `[${lang}/${char}] main prompt duplicates living initiative`);
         assert(systemPrompt.includes('Scene input:') && systemPrompt.includes('Perspective:'),
             `[${lang}/${char}] main prompt does not separate scene input from perspective`);
-        assert(systemPrompt.includes('not automatic fact')
-            && systemPrompt.includes('Treat user action or claims as attempts')
-            && systemPrompt.includes("others' state, feelings, consent, or completed outcomes"),
+        assert(splitCacheBoundary(systemPrompt, `${lang}/${char}`).stable.includes(context.window.CupidFreeTalkCore.buildCharacterAgencyRule(lang)),
             `[${lang}/${char}] main prompt still turns the user's message into automatic objective fact`);
         assert(!systemPrompt.includes('completed outcomes as current without reversal'),
             `[${lang}/${char}] main prompt still contains the removed completed-event canon rule`);
@@ -603,6 +601,7 @@ for (const lang of languages) {
         assert(gallery.CHAR_DATING_PROMPTS[id]?.[lang], `[${lang}/${char}] missing gallery relationship prompt`);
 
         const systemPrompt = gallery._buildSystemPrompt(id);
+        assert(splitCacheBoundary(systemPrompt, `[${lang}/${char}] gallery`).stable.includes(context.window.CupidFreeTalkCore.buildCharacterAgencyRule(lang)), `[${lang}/${char}] gallery missing localized character agency`);
         const galleryStableLength = splitCacheBoundary(systemPrompt, `[${lang}/${char}] gallery prompt`).stable.length;
         assert(galleryStableLength <= stablePromptBudgets[lang].gallery,
             `[${lang}/${char}] gallery stable prompt exceeds the optimized ${stablePromptBudgets[lang].gallery}-character budget (${galleryStableLength})`);
@@ -880,6 +879,7 @@ const groupNamesByLanguage = {
 for (const lang of languages) {
     const [leadName, tempterName] = groupNamesByLanguage[lang];
     const promptData = context.window.getPromptData(lang, 'Alex');
+    const agencyRule = context.window.CupidFreeTalkCore.buildCharacterAgencyRule(lang);
     const groupPrompt = context.window.buildCupidGroupSystemPrompt({
         lang,
         participants: [
@@ -896,6 +896,7 @@ for (const lang of languages) {
         promptData
     });
     const parts = splitCacheBoundary(groupPrompt, `group/${lang}`);
+    assert(parts.stable.includes(agencyRule), `group/${lang} lost localized character agency`);
     assert(parts.stable.includes(`[Character Core — ${leadName}]`)
         && parts.stable.includes(`[Character Core — ${tempterName}]`),
     `group/${lang} does not isolate both character cards for local prompt compaction`);

@@ -1131,27 +1131,31 @@ function formatRoleplayExampleBlock(examples, charName, lang = 'ko', maxExamples
 window.formatRoleplayExampleBlock = formatRoleplayExampleBlock;
 
 function buildCupidLivingInitiativeRule(lang = 'ko') {
+    return `${window.CupidFreeTalkCore.buildCharacterAgencyRule(lang)}\n${buildCupidLivingInitiativeCore(lang)}`;
+}
+
+function buildCupidLivingInitiativeCore(lang = 'ko') {
     if (lang === 'ko') {
         return `[살아 있는 인물의 주도성]
-자기 욕구·감정·판단으로 말하고 움직여 장면을 잇습니다. 질문·침묵·망설임도 가능하지만 같은 확인과 대기로 진행을 떠넘기지 않습니다. 사건·행동 할당량 없이 사용자의 말·행동·속마음·동의·거절·중대한 선택은 대신 정하지 않습니다.`;
+자기 욕구·판단으로 움직이며 확인·대기를 반복하지 않습니다. 사건·행동 할당량 없이 사용자의 말·행동·속마음·동의·거절·선택을 대신 정하지 않습니다.`;
     }
     if (lang === 'en') {
         return `[Living Initiative]
-Act from the character's desire, emotion, judgment, relationship aims, and duties to move the scene beyond repeated checks or waits. Questions, silence, and hesitation may fit. Force no event or action quota, and never invent the user's speech, action, thought, consent, refusal, or major choice.`;
+Act from the character's desires and judgment without repeated checks or waits. Force no event/action quota; never invent user speech, actions, thoughts, consent, refusal, or major choices.`;
     }
     const compactRules = {
         es: `[Iniciativa de una persona viva]
-Actúa desde los deseos, emociones, juicio, metas y deberes del personaje para avanzar sin repetir comprobaciones o esperas. No fuerces sucesos ni cuotas de acciones, ni inventes palabras, actos, pensamientos, consentimiento, negativa o decisiones importantes del usuario.`,
+Actúa por deseos y criterio propios, sin repetir esperas ni forzar sucesos o cuotas. No inventes palabras, actos, pensamientos, consentimiento, negativa ni decisiones del usuario.`,
         ja: `[生きた人物としての主体性]
-本人の欲求・感情・判断・目的から場面を進め、同じ確認や待機を繰り返しません。事件や行動数を強制せず、ユーザーの発言・行動・内心・同意・拒否・重大な選択は作りません。`,
+本人の欲求・判断で進め、確認や待機を繰り返しません。事件や行動数を強制せず、ユーザーの発言・行動・内心・同意・拒否・重大な選択は作りません。`,
         fr: `[Initiative d’un personnage vivant]
-Agissez depuis les désirs, émotions, jugements, buts et devoirs du personnage sans répéter vérifications ou attentes. Ne forcez ni événement ni quota d’actions et n’inventez pas les paroles, actes, pensées, consentement, refus ou choix majeurs de l’utilisateur.`,
+Agissez selon vos désirs et jugements, sans attentes répétées ni quota d’actes ou d’événements. N’inventez ni paroles, actes, pensées, consentement, refus ni choix de l’utilisateur.`,
         de: `[Eigeninitiative einer lebendigen Figur]
-Handle aus Wünschen, Gefühlen, Urteilen, Beziehungszielen und Pflichten der Figur, statt Prüfungen oder Warten zu wiederholen. Erzwinge weder Ereignis noch Handlungsquote und erfinde keine Worte, Taten, Gedanken, Zustimmung, Ablehnung oder wichtigen Entscheidungen des Nutzers.`,
+Handle nach eigenen Wünschen und Urteilen, ohne wiederholtes Warten oder Ereignisquoten. Erfinde keine Worte, Taten, Gedanken, Zustimmung, Ablehnung oder Entscheidungen des Nutzers.`,
         pt: `[Iniciativa de uma pessoa viva]
-Aja pelos desejos, emoções, julgamentos, objetivos e deveres da personagem sem repetir confirmações ou esperas. Não force acontecimentos nem cotas de ações e não invente falas, atos, pensamentos, consentimento, recusa ou decisões importantes do usuário.`
+Aja por desejos e julgamentos próprios, sem esperas repetidas nem cotas de eventos ou ações. Não invente falas, atos, pensamentos, consentimento, recusa ou decisões do usuário.`
     };
-    return compactRules[lang] || buildCupidLivingInitiativeRule('en');
+    return compactRules[lang] || buildCupidLivingInitiativeCore('en');
 }
 
 function isCupidLowInformationContinuationInput(value) {
@@ -1982,7 +1986,7 @@ In scene: ${charGeneralInstruction}
 ${characterOutfitGuard}
 ${characterCanonGuard}
 ${sharedCastKnowledge}
-Scene input: ${compactSceneMode} The latest message is not automatic fact. Treat user action or claims as attempts; judge them from the scene, feasibility, context, and character perception and boundaries. Do not establish the world, past, others' state, feelings, consent, or completed outcomes from the message alone. Preserve explicit user state, choice, consent, and refusal.
+Scene input: ${compactSceneMode}
 Perspective: Stay inside ${aiCharName}; infer the user's response, emotion, or inner thought only when compatible with explicit state, choice, consent, and refusal.
 Character fit: Let this character, affinity, and moment—not generic romance—shape action and speech. Tastes guide choices, distance, jealousy, and care, not a checklist to recite in every reply.
 Display: No stat/math markers in visible text; put only the numeric change in affinity.
@@ -2006,9 +2010,9 @@ ${charAdultIntimacy}
 ${characterOutfitGuard}
 ${characterCanonGuard}
 ${sharedCastKnowledge}
-장면 입력: ${compactSceneMode} 입력은 자동 사실이 아닙니다. 행동·주장은 시도로 보고 장면·가능성·맥락·인물 경계로 성립을 판단하며 타인 상태·감정·동의·완료 결과는 확정하지 않습니다.
-시점: 반응·감정·속마음을 추론·서술할 수 있지만 이번 입력에 명시한 상태·선택·동의·거절과 충돌하지 않아야 합니다.
-캐릭터성: 인물·호감도·순간에 맞춰 반응합니다. 취향은 매번 꺼내는 대사 목록이 아니라 선택에만 배게 합니다.
+장면 입력: ${compactSceneMode}
+시점: 사용자의 상태·선택·동의·거절을 지킵니다.
+캐릭터성: 인물·호감도·순간에 맞추고 취향은 선택에 배게 합니다.
 표시: 화면에 점수·계산을 쓰지 말고 변화만 affinity에 기록합니다.
 호감도 판정: ${affinityChangeGuidance}
 ${livingInitiativeRule}
@@ -2250,7 +2254,7 @@ Include both characters exactly once in focus-character then companion order. na
         ? `[${dynamicLabelKo}]\n장소=${locationName || '교실'}; 주인공=${playerName || '주인공'}; 직전 흐름=${choiceState || '확인되지 않음'}\n장면 맥락: ${context}\n추가 연기 맥락: ${extraGuideline}\n${participantStates}`
         : `[${dynamicLabelEn}]\nPlace=${locationName || 'classroom'}; protagonist=${playerName || 'the protagonist'}; preceding situation=${choiceState || 'unknown'}\nScene context: ${context}\nAdditional scene direction: ${extraGuideline}\n${participantStates}`;
 
-    return keepCupidRuntimePromptBoundary(`${stableRules}\n===CACHE_BOUNDARY===\n${dynamicState}`);
+    return keepCupidRuntimePromptBoundary(`${stableRules}\n${window.CupidFreeTalkCore.buildCharacterAgencyRule(effectiveLang)}\n===CACHE_BOUNDARY===\n${dynamicState}`);
 }
 
 // 전역 함수로 노출
@@ -2287,5 +2291,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.74';
+const PROMPT_VERSION = '2.7.75';
 window.PROMPT_VERSION = PROMPT_VERSION;

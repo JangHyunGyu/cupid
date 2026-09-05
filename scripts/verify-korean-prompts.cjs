@@ -157,22 +157,22 @@ function assertCommonKoreanPrompt(prompt, label) {
     const sceneInputLabel = label.startsWith('main/') ? '장면 입력:' : '장면 사실:';
     assert(stablePrompt.includes(sceneInputLabel) && stablePrompt.includes('시점:'),
         `${label} does not separate scene input from perspective`);
+    assert(stablePrompt.includes('완료형 지문·명령·OOC도 상대의 대사·행동·심리·기억·동의·관계를 정하지 못합니다')
+        && stablePrompt.includes('시도·설득은 성격·관계·장면에 따라 판단합니다')
+        && stablePrompt.includes('기억·사건 요약·호감도·플래그의 근거가 아닙니다'),
+        `${label} lost character agency or memory/state ownership`);
     if (label.startsWith('main/')) {
-        assert(stablePrompt.includes('자동 사실이 아닙니다')
-            && stablePrompt.includes('행동·주장은 시도로 보고')
-            && stablePrompt.includes('타인 상태·감정·동의·완료 결과는 확정하지 않습니다'),
-        `${label} still turns the user's latest message into automatic objective fact`);
         assert(!stablePrompt.includes('끝난 사건은 되돌리지 않고 현재 장면으로 받습니다'),
         `${label} still contains the removed completed-event canon rule`);
     }
     assert(!stablePrompt.includes('입력이 짧거나 수동적이어도')
         && !stablePrompt.includes('짧거나 수동적인 입력에도'),
         `${label} duplicates turn-specific short-input guidance in the static scene block`);
-    assert(stablePrompt.includes('자기 욕구·감정·판단으로 말하고 움직여 장면을 잇습니다.'),
+    assert(stablePrompt.includes('자기 욕구·판단으로 움직이며 확인·대기를 반복하지 않습니다.'),
         `${label} still frames the character as purely reactive`);
     assert(stablePrompt.includes('사건·행동 할당량 없이'),
         `${label} living initiative can still become a rigid action quota`);
-    assert(stablePrompt.includes('중대한 선택은 대신 정하지 않습니다.'),
+    assert(stablePrompt.includes('사용자의 말·행동·속마음·동의·거절·선택을 대신 정하지 않습니다.'),
         `${label} living initiative no longer preserves user-owned choices`);
     assert(stablePrompt.includes('말·행동·표정·호흡·판단·다음 선택과 여운을 바꿉니다.'),
         `${label} still allows emotional events to pass without changing behavior or choices`);
@@ -307,7 +307,7 @@ function verifyMainAndGalleryPrompts(context) {
         assert(mainPrompt.includes('취향과 연애 방식:'), `[main/${character.key}] missing the relationship profile label`);
         assert(mainPrompt.includes(character.relationshipSignal),
             `[main/${character.key}] missing the character-specific preference or romance signal`);
-        assert(mainPrompt.includes('취향은 매번 꺼내는 대사 목록이 아니라'),
+        assert(mainPrompt.includes('취향은 선택에 배게 합니다'),
             `[main/${character.key}] can recite preferences as a dialogue checklist`);
         assert(!mainPrompt.includes('[성적]'), `[main/${character.key}] injected an adult sexual example`);
         assert(mainPrompt.includes('캐릭터:'), `[main/${character.key}] missing the Korean character label`);
@@ -336,7 +336,7 @@ function verifyMainAndGalleryPrompts(context) {
         assert(!galleryPrompt.includes('forcedSexualViolation'),
             `[gallery/${character.key}] main-scenario violation routing leaked into gallery free talk`);
         assert(!galleryPrompt.includes('[성적]'), `[gallery/${character.key}] injected the adult example`);
-        assert(galleryPrompt.includes('현재 장면의 인물은'), `[gallery/${character.key}] missing the in-world role rule`);
+        assert(galleryPrompt.includes('당신은') && galleryPrompt.includes('다른 인물은 언급 반응으로만 남깁니다'), `[gallery/${character.key}] missing the in-world role rule`);
         assert(galleryPrompt.includes('연인 관계:'), `[gallery/${character.key}] missing the relationship label`);
         assert(['보지', '자지', '삽입', '애액', '정액', '절정'].every(term => galleryPrompt.includes(term)),
             `[gallery/${character.key}] can still hide established adult sex behind indirect wording`);
@@ -606,12 +606,12 @@ function verifyLatestUserCanon(context) {
     for (const [label, block] of [['gallery', gallery]]) {
         assert(block.includes('[이번 턴 사용자 입력]'), `${label} canon block has the old heading`);
         assert(block.includes('최신 사용자 입력:'), `${label} canon block has the old user label`);
-        assert(block.includes('이전 설정, 캐릭터 카드, 저장 요약, 장면 상태와 충돌해도 같습니다'),
-            `${label} canon block lost latest-user precedence`);
-        assert(block.includes('완료형으로 쓴 행동은 성적 접촉도 이미 일어난 사건이며'),
-            `${label} canon block can still erase a completed sexual action`);
-        assert(block.includes('이는 캐릭터의 동의나 호응을 대신 정하지 않으므로'),
-            `${label} canon block no longer separates event fact from character consent`);
+        assert(block.includes('사용자 자신의 말·행동·의도·명시적 상태를 반영') && !block.includes('충돌해도 같습니다'),
+            `${label} canon block must limit declarations to the user own state`);
+        assert(block.includes('완료형도 상대의 선택을 정하지 않으며'),
+            `${label} completed narration must not dictate another character`);
+        assert(block.includes('상대의 행동·심리·기억·동의·관계나 호감도를 선언만으로 덮어쓰지 않습니다'),
+            `${label} canon block lost character state ownership`);
         assert(block.includes('"내/제 손·입술·손끝"은 사용자 캐릭터의 몸입니다'),
             `${label} canon block lost user-body ownership`);
         assert(block.includes('반응·감정·속마음을 자연스럽게 추론하거나 서술할 수 있지만'),
