@@ -925,7 +925,7 @@ class GameEngine {
      *
      * @param {string} sceneId - 렌더링할 씬의 고유 ID
      */
-    async renderScene(sceneId) {
+    async renderScene(sceneId, { restoring = false } = {}) {
         // 렌더링 락 활성화 (비동기 로딩 중 클릭 방지)
         this._isRendering = true;
 
@@ -952,7 +952,7 @@ class GameEngine {
         // 약속 플래그가 남아 있어도 현재 관계가 악화됐다면 높은 친밀도 장면을 노출하지 않는다.
         const preRenderVisited = new Set();
         while (scene) {
-            const guardedNext = this.sceneRenderer.resolveAffinityGuard(scene);
+            const guardedNext = restoring ? null : this.sceneRenderer.resolveAffinityGuard(scene);
             const shouldRoute = scene.routeBeforeRender === true;
             if (!guardedNext && !shouldRoute) break;
 
@@ -1069,9 +1069,13 @@ class GameEngine {
         // 🚩 6단계: 플래그/스탯 처리
         // ─────────────────────────────────────────────────────────
         // 씬에 정의된 setFlag, checkFlag, stats 등 처리
-        this.sceneRenderer.processSceneFlags(scene);
-        this.sceneRenderer.processSceneStats(scene);
+        if (!restoring) {
+            this.sceneRenderer.processSceneFlags(scene);
+            this.sceneRenderer.processSceneStats(scene);
+        }
         this.sceneRenderer.updateCompositeFlags();
+        // Persist entry effects before animation or dialogue can be interrupted by a reload.
+        this.saveGame();
 
         // ─────────────────────────────────────────────────────────
         // 🌅 7단계: 시간대 필터 적용
@@ -1632,7 +1636,7 @@ class GameEngine {
             }
 
             // 🎬 저장된 씬부터 렌더링 재개
-            await this.renderScene(this.sceneRenderer.currentSceneId);
+            await this.renderScene(this.sceneRenderer.currentSceneId, { restoring: true });
 
         } else {
             // ═══════════════════════════════════════════════════

@@ -106,7 +106,7 @@
     },
     "morning3_yuna_gate_warm_4": {
         "name": "{name}",
-        "text": "*I walk beside Yuna. The only sounds are the crinkle of the bread bag and our footsteps.*"
+        "text": "*I walk beside Yuna. The folded note rustles in my hand as our footsteps fall together.*"
     },
     "morning3_yuna_gate_2": {
         "name": "{name}",
@@ -134,7 +134,7 @@
     },
     "morning3_yuna_gate_7": {
         "name": "Yuna",
-        "text": "*Yuna splits a small roll in half. We pass through the gate together as the wrapper rustles.*"
+        "text": "*We eat the shared bread as we pass the gate. Yuna folds the empty wrapper.*"
     },
     "morning3_yuna_gate_cold_1": {
         "name": "Yuna",
@@ -316,7 +316,7 @@
     },
     "hidden_homeroom_d3_reveal_2": {
         "name": "Homeroom Teacher",
-        "text": "The day I was waiting on the last result, the call never came. That same day, I filled out an application to teachers' college."
+        "text": "The last time I waited for a result, no one called. Around then, I started preparing to become a teacher."
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "Homeroom Teacher",
@@ -441,7 +441,7 @@
     },
     "hidden_homeroom_d3_freetalk": {
         "name": "Homeroom Teacher",
-        "text": "*She slips the manuscript pages into a folder.* I understand why you're curious. But let's save this conversation for literature club.",
+        "text": "*She files the manuscript and stands by the desk.* A surprise, I imagine. We can talk for a moment. The manuscript feedback can wait for the public workshop.",
         "context": "Day 3 morning. In an empty classroom, a student found the homeroom teacher's personal novel manuscript. She does not ask the student to keep it secret or give private feedback; she is considering submitting it for an open critique at the literature club.",
         "personality": "The homeroom teacher once hoped to become a novelist. She never stopped writing after becoming a teacher, but she tries to keep her private creative work separate from her role in teaching and evaluating students."
     },
@@ -451,7 +451,7 @@
     },
     "hidden_nurse_d3_1": {
         "name": "{name}",
-        "text": "*Even after the morning bell rang, I couldn't get up from my seat. The edge of the bandage on my hand is lifting. I open the infirmary door.*"
+        "text": "*At the next break, I head to the infirmary. The edge of the bandage on my elbow catches on my sleeve.*"
     },
     "hidden_nurse_d3_1_b": {
         "name": "School Nurse",
@@ -473,22 +473,10 @@
         "name": "School Nurse",
         "text": "Nothing hurts? You don't look well."
     },
-    "hidden_nurse_d3_2_b": {
-        "name": "{name}",
-        "text": "*Even after I reach the hall, the overturned manuscript and my teacher's low voice keep coming back to me.*"
-    },
-    "hidden_nurse_d3_2_c": {
-        "name": "{name}",
-        "text": "*Before the classroom door closes, a low voice reaches me from behind.*"
-    },
-    "hidden_nurse_d3_2_d": {
-        "name": "Homeroom Teacher",
-        "text": "Thank you."
-    },
-    "hidden_nurse_d3_2_e": {
-        "name": "{name}",
-        "text": "*Just before lunch, the hall is crowded with students. Every time I move my wrist, the bandage gives off the smell of antiseptic.*"
-    },
+    "hidden_nurse_d3_2_b": {},
+    "hidden_nurse_d3_2_c": {},
+    "hidden_nurse_d3_2_d": {},
+    "hidden_nurse_d3_2_e": {},
     "hidden_nurse_d3_3": {
         "name": "{name}",
         "text": "I just wanted to rest. Things with people are getting complicated."
@@ -509,14 +497,8 @@
         "name": "School Nurse",
         "text": "*The nurse draws the curtain and hands me a cup of water.* Sit down. You can relax in here. Take your time."
     },
-    "hidden_nurse_d3_5_b": {
-        "name": "School Nurse",
-        "text": "*The nurse pulls her chair closer to the bed and sits down.*"
-    },
-    "hidden_nurse_d3_5_c": {
-        "name": "School Nurse",
-        "text": "Something like that? Then you did the right thing coming here."
-    },
+    "hidden_nurse_d3_5_b": {},
+    "hidden_nurse_d3_5_c": {},
     "hidden_nurse_d3_5_d": {
         "name": "{name}",
         "text": "*The nurse's thumb presses once against the rim of the paper cup.*"
@@ -525,13 +507,10 @@
         "name": "{name}",
         "text": "Things that are hard to bring up with anyone."
     },
-    "hidden_nurse_d3_5_f": {
-        "name": "School Nurse",
-        "text": "*She pulls up a chair and sits across from me.* Relationships."
-    },
+    "hidden_nurse_d3_5_f": {},
     "hidden_nurse_d3_5_g": {
         "name": "{name}",
-        "text": "I'm interested in all three, but I think I'll have to decide on one person in the end."
+        "text": "I keep putting off answers because I’m afraid of disappointing someone."
     },
     "hidden_nurse_d3_5_h": {
         "name": "School Nurse",
@@ -559,7 +538,7 @@
     },
     "hidden_nurse_d3_5_n": {
         "name": "{name}",
-        "text": "Have you ever felt that way? Torn between multiple people?"
+        "text": "Have you ever tried to look after everyone and found it was too much?"
     },
     "hidden_nurse_d3_5_o": {
         "name": "School Nurse",
@@ -622,13 +601,10 @@
         "name": "School Nurse",
         "text": "That's why I came here. At a school, you can really look at each person."
     },
-    "hidden_nurse_d3_7_b": {
-        "name": "School Nurse",
-        "text": "*The nurse sets the stethoscope on the desk and turns her chair toward {name}.*"
-    },
+    "hidden_nurse_d3_7_b": {},
     "hidden_nurse_d3_8": {
         "name": "School Nurse",
-        "text": "The same goes for you. Don't try to take care of everyone. Wouldn't it be better to really see the one person who matters?"
+        "text": "Tell people what you can actually do. Do not promise everything is fine and struggle alone afterward. You can ask for help."
     },
     "hidden_nurse_d3_8_b": {
         "name": "{name}",
@@ -705,7 +681,7 @@
     },
     "hidden_nurse_d3_11": {
         "name": "School Nurse",
-        "text": "You'll be late for your next class. Let's leave today's conversation here for now."
+        "text": "There is a little time before class. You can ask anything else you wanted to ask."
     },
     "hidden_nurse_d3_freetalk": {
         "name": "School Nurse",
@@ -749,11 +725,11 @@
     },
     "morning3_date_dain_2": {
         "name": "Dain",
-        "text": "*Seoyeon is still standing in the classroom doorway. Dain looks this way and taps the corner of the desk.*"
+        "text": "*Dain taps the edge of my desk. This break, Seoyeon is sorting papers at her own seat.*"
     },
     "morning3_date_dain_choice": {
         "name": "Dain",
-        "text": "*Seoyeon's footsteps stop. Dain waits for my answer.*",
+        "text": "*Dain leans closer and waits for my answer.*",
         "choices": [
             "Sure, let's do it",
             "This weekend might be tough.",
@@ -763,7 +739,7 @@
     },
     "morning3_date_dain_accept": {
         "name": "{name}",
-        "text": "*I make weekend plans with Dain. When Dain smiles, Seoyeon's clipboard snaps shut in the hall.*"
+        "text": "*We make plans for the weekend. As Dain smiles, Seoyeon closes her clipboard at her desk.*"
     },
     "morning3_date_dain_decline": {
         "name": "Dain",
@@ -801,7 +777,7 @@
     },
     "morning3_date_yuna_accept": {
         "name": "{name}",
-        "text": "*I write 'I'll go' on the back of the note. As Yuna folds the paper, Dain's fingers go still on the desk.*"
+        "text": "*I write my answer on the back and return the note. Yuna reads it, folds it and slips it into her book.*"
     },
     "morning3_date_yuna_decline": {
         "name": "{name}",
@@ -812,15 +788,12 @@
     "morning3_multi_from_dain": {},
     "morning3_set_multiple": {
         "name": "{name}",
-        "text": "*My weekend plans overlap. The calendar square is split three ways.*"
+        "text": "*My weekend appointments overlap. I close the calendar without deciding whom to tell first.*"
     },
     "morning3_multi_from_yuna": {},
     "morning3_end": {
         "name": "{name}",
         "text": "*The bell ending class rings. Lunch is about to begin.*"
     },
-    "morning3_end_b": {
-        "name": "Yuna",
-        "text": "It's good."
-    }
+    "morning3_end_b": {}
 }

@@ -63,6 +63,9 @@ class StateManager {
          */
         this.chatMemories = {};
 
+        /** Last committed story conversation turn; pending requests are never checkpoints. */
+        this.freeTalkCheckpoint = null;
+
         /** 화자 정보가 보존된 본편 그룹 대화 기록 */
         this.groupConversationMemories = [];
 
@@ -104,6 +107,7 @@ class StateManager {
         };
         this.currentCharacter = null;
         this.chatMemories = {};
+        this.freeTalkCheckpoint = null;
         this.groupConversationMemories = [];
         this.chatPromptEpochs = {};
         this.relationshipAftermaths = {};
@@ -345,6 +349,7 @@ class StateManager {
             affinityRebalanceVersion: this.affinityRebalanceVersion,
             stats: JSON.parse(JSON.stringify(this.stats)),
             chatMemories: JSON.parse(JSON.stringify(this.chatMemories)),
+            freeTalkCheckpoint: this.freeTalkCheckpoint ? JSON.parse(JSON.stringify(this.freeTalkCheckpoint)) : null,
             groupConversationMemories: JSON.parse(JSON.stringify(this.groupConversationMemories)),
             chatPromptEpochs: JSON.parse(JSON.stringify(this.chatPromptEpochs)),
             relationshipAftermaths: JSON.parse(JSON.stringify(this.relationshipAftermaths)),
@@ -377,6 +382,11 @@ class StateManager {
         }
         this.affinityRebalanceVersion = StateManager.AFFINITY_REBALANCE_VERSION;
         if (data.chatMemories) this.chatMemories = data.chatMemories;
+        const checkpoint = data.freeTalkCheckpoint;
+        this.freeTalkCheckpoint = checkpoint && typeof checkpoint.sceneId === 'string'
+            && Number.isInteger(checkpoint.turns) && checkpoint.turns >= 0
+            ? JSON.parse(JSON.stringify(checkpoint))
+            : null;
         this.groupConversationMemories = [];
         if (Array.isArray(data.groupConversationMemories)) {
             for (const memory of data.groupConversationMemories) this.addGroupConversationMemory(memory);

@@ -1,7 +1,7 @@
 {
     "lunch3_start": {
         "name": "{name}",
-        "text": "*A la hora del almuerzo, las tres se reúnen cuando abro la lonchera. Todas conocen las invitaciones del fin de semana que se hicieron esta mañana. Seoyeon se sienta a mi lado, Dain enfrente y Yuna, que comía pan en un rincón, acerca una silla vacía.*"
+        "text": "*Abro mi almuerzo. Seoyeon se sienta a mi lado, Dain enfrente y Yuna acerca la silla libre con su pan.*"
     },
     "lunch3_start_2_b": {
         "name": "Dain",
@@ -45,24 +45,15 @@
     },
     "lunch3_meal_10": {
         "name": "{name}",
-        "text": "*Tres pares de palillos casi se superponen sobre el último trozo de tortilla enrollada. Acabo de proponer que comamos todos juntos.*"
+        "text": "*Tres pares de palillos casi chocan sobre el último trozo de tortilla. Las tres se detienen y me miran.*"
     },
     "lunch3_meal_10_b": {
         "name": "{name}",
         "text": "*Solo queda un acompañamiento en el centro de la lonchera y los tres pares de palillos vuelven a su lugar.*"
     },
-    "lunch3_meal_10_c": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon retira la punta de sus palillos frente a la tortilla enrollada.*"
-    },
-    "lunch3_meal_10_d": {
-        "name": "Dain",
-        "text": "*«¿Todos juntos?». Dain sonríe, pero no acerca la silla.*"
-    },
-    "lunch3_meal_10_e": {
-        "name": "Yuna",
-        "text": "*Yuna se limita a asentir. Escribe una nota, la dobla y se la guarda en el bolsillo. No me la entrega. Solo una mancha violeta pálido traspasa el borde del papel.*"
-    },
+    "lunch3_meal_10_c": {},
+    "lunch3_meal_10_d": {},
+    "lunch3_meal_10_e": {},
     "lunch3_meal_11": {
         "name": "{name}",
         "text": "*¿A quién se lo doy?*"
@@ -100,7 +91,7 @@
     },
     "lunch3_seo_witness_1": {
         "name": "{name}",
-        "text": "*Desde el umbral del salón, Dain ve a Seoyeon recibir la comida. Mueve apenas los labios y regresa al pasillo.*"
+        "text": "*Dain se levanta con su botella vacía, mira la comida que le di a Seoyeon y sale al pasillo.*"
     },
     "lunch3_seo_witness_choice": {
         "name": "{name}",
@@ -109,7 +100,7 @@
             "¡Dain!",
             "Centrarse en Seoyeon",
             "Sería más divertido si invitáramos también a Dain.",
-            "Me sabe mal dejar sola a Dain. La llamaré para que coma con nosotros."
+            "Me sabe mal dejar sola a Dain. Voy a pedirle que vuelva."
         ]
     },
     "lunch3_seo_chase_dain_1": {
@@ -143,7 +134,7 @@
     "lunch3_dain_skin_check": {},
     "lunch3_dain_skin_1": {
         "name": "{name}",
-        "text": "*Emocionada por ganar la apuesta del almuerzo, Dain abre los brazos y pregunta: «¿Puedo abrazarte?». Después de recibir permiso, me abraza brevemente y al cabo de un segundo se aparta para tomar su botella de agua.*"
+        "text": "*Dain termina de comer y abre un poco los brazos. «¿Te doy un abrazo de agradecimiento?» Asiento. Me abraza brevemente y coge su botella.*"
     },
     "lunch3_dain_skin_3": {
         "name": "Dain",
@@ -155,12 +146,9 @@
     },
     "lunch3_dain_witness_1": {
         "name": "{name}",
-        "text": "*Yuna mira el gimnasio desde el pasillo. Al oír la risa de Dain, aprieta la portada del libro contra el pecho y se marcha en dirección contraria. En el siguiente descanso, su asiento está vacío.*"
+        "text": "*Yuna observa la sonrisa de Dain, acerca su libro al almuerzo y baja la mirada sin decir nada.*"
     },
-    "lunch3_dain_witness_2b": {
-        "name": "{name}",
-        "text": "*Volví al salón.*"
-    },
+    "lunch3_dain_witness_2b": {},
     "lunch3_give_dain_3": {
         "name": "Yuna",
         "text": "*Yuna mira por la ventana mientras sostiene enrollada la abertura de la bolsa de pan.*"
@@ -172,7 +160,7 @@
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {
         "name": "{name}",
-        "text": "*Las dos manos siguen sujetando el borde de la nota.*"
+        "text": "*Yuna me pasa una nota que estaba junto a su bandeja. Un instante, ambos sujetamos el borde.*"
     },
     "lunch3_yuna_skin_2": {
         "name": "Yuna",
@@ -188,7 +176,7 @@
     },
     "lunch3_yuna_witness_1": {
         "name": "Seoyeon",
-        "text": "Dicen que en la biblioteca olía a comida. ...¿Con Yuna?"
+        "text": "No pongas esa cara después de dárselo delante de mí. Anda, come."
     },
     "lunch3_yuna_witness_2": {
         "name": "{name}",
@@ -204,7 +192,7 @@
     },
     "lunch3_expose_2": {
         "name": "Dain",
-        "text": "Ah, es verdad. {name}, quedamos para ir al arcade este fin de semana. ¿Qué comemos antes?"
+        "text": "Ah, por cierto. ¿Ya has fijado todos tus planes del fin de semana?"
     },
     "lunch3_expose_3": {
         "name": "{name}",
@@ -216,15 +204,15 @@
     },
     "lunch3_expose_5": {
         "name": "Seoyeon",
-        "text": "...¿Videojuegos?"
+        "text": "Espera."
     },
     "lunch3_expose_6": {
         "name": "Seoyeon",
-        "text": "A mí me dijiste que tenías un lugar adonde ir conmigo."
+        "text": "Espera. ¿Quieres decir que hay más de una cita?"
     },
     "lunch3_expose_7": {
         "name": "Dain",
-        "text": "...Espera. ¿A mí también me dijiste de juntarnos este fin de semana?"
+        "text": "Parece que cada una entendió algo distinto sobre con quién vas a quedar y cuándo."
     },
     "lunch3_expose_7_b": {
         "name": "{name}",
@@ -240,7 +228,7 @@
     },
     "lunch3_expose_11": {
         "name": "Yuna",
-        "text": "...Mentira. Yo tampoco."
+        "text": "Sabía que te habían invitado. No que hubieras aceptado varios planes."
     },
     "lunch3_expose_12": {
         "name": "{name}",
@@ -279,10 +267,7 @@
         "name": "Seoyeon",
         "text": "*Cierra la tapa de la lonchera.*"
     },
-    "lunch3_expose_honest_4_b": {
-        "name": "{name}",
-        "text": "*La sonrisa de Seoyeon se congela. La punta de sus palillos toca la tapa de su lonchera.*"
-    },
+    "lunch3_expose_honest_4_b": {},
     "lunch3_expose_honest_5": {
         "name": "Seoyeon",
         "text": "No quiero ser una opción a medias. Si va a ser así, prefiero apartarme del todo."

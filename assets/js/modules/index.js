@@ -210,7 +210,7 @@ if (!window.preventAutoStart) {
             gameEngine = new GameEngine();  // 게임 엔진 생성
             window.gameEngine = gameEngine; // 개발자 도구에서 접근 가능
             if (typeof soundManager !== 'undefined') soundManager.init();  // 사운드 매니저 초기화
-            await gameEngine.renderScene("start");  // 첫 씬 렌더링
+            await gameEngine.continueGame();  // 직접 접속·새로고침도 저장 지점을 보존
             if (window.sendGAGameStart) window.sendGAGameStart('auto');
         } catch (e) {
             console.error('[Cupid Engine] 초기화 오류:', e);

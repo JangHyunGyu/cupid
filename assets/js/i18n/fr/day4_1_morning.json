@@ -3,7 +3,7 @@
     "hidden_nurse_d4_low": {"name":"Infirmière","text":"*L'infirmière referme la trousse de secours qu'elle rangeait.* Je finirai seule aujourd'hui. Retourne toi aussi à ce que tu avais prévu."},
     "morning4_start": {
         "name": "{name}",
-        "text": "*Quatrième jour. Week-end. — Aujourd'hui, pas d'école. C'est un rendez-vous.*"
+        "text": "*Quatrième jour, samedi. Je me redresse dans mon lit et vérifie mon programme.*"
     },
     "morning4_nightmare_check": {},
     "morning4_nightmare_seo": {
@@ -36,7 +36,7 @@
     },
     "minsu_cheer_1_d": {
         "name": "Minsu",
-        "text": "*Dain a écrit dans le groupe : « J'ai quelque chose de prévu demain. »*"
+        "text": "*Après toutes ces discussions en classe sur le week-end, tu pensais que j’allais pas remarquer ? haha*"
     },
     "minsu_cheer_2": {
         "name": "Minsu",
@@ -53,16 +53,10 @@
     },
     "minsu_cheer_4_c": {
         "name": "{name}",
-        "text": "*Je regarde le calendrier de mon téléphone. Seoyeon le matin, Yuna l'après-midi, Dain le soir. Je n'ai pas dormi la nuit dernière en essayant de caser les trois en une seule journée. Si un seul horaire se chevauche, c'est fini.*"
+        "text": "*Les rendez-vous se chevauchent toujours dans mon calendrier. On m’a déjà dit que changer les horaires ne réglerait rien.*"
     },
-    "minsu_cheer_4_d": {
-        "name": "{name}",
-        "text": "*Les trois noms s'affichent sur le même écran. Je verrouille le calendrier, puis le rouvre.*"
-    },
-    "minsu_cheer_4_e": {
-        "name": "{name}",
-        "text": "*Je recalcule le temps de trajet entre les trois rendez-vous et active toutes les alertes du calendrier.*"
-    },
+    "minsu_cheer_4_d": {},
+    "minsu_cheer_4_e": {},
     "morning4_start_2": {
         "name": "{name}",
         "text": "*Je prends une grande inspiration et je relis une fois encore le message du rendez-vous.*"
@@ -75,10 +69,7 @@
         "name": "{name}",
         "text": "*Le message s'arrête là.*"
     },
-    "morning4_seo_msg_1_c": {
-        "name": "{name}",
-        "text": "*Je m'arrête devant la fontaine. Il est 9 h 58.*"
-    },
+    "morning4_seo_msg_1_c": {},
     "morning4_yuna_msg_1": {
         "name": "Yuna",
         "text": "10 heures. Café devant la gare. Si tu es en retard, je pars."
@@ -93,7 +84,7 @@
     },
     "morning4_dain_msg_1": {
         "name": "Dain",
-        "text": "C'est aujourd'hui. Devant le gymnase à 18 h. Ah, pourquoi je stresse autant ? Je peux vraiment envoyer ça ?"
+        "text": "C’est aujourd’hui ! Devant le gymnase à dix heures. Pourquoi je stresse autant ? Je devrais vraiment envoyer ça ?"
     },
     "morning4_fallback_msg": {
         "name": "{name}",
@@ -298,10 +289,7 @@
         "name": "Professeure principale",
         "text": "La prochaine critique aura lieu à la bibliothèque du lycée. On a choisi le lieu d'aujourd'hui un peu trop vite."
     },
-    "hidden_homeroom_d4_cafe_6_b": {
-        "name": "Professeure principale",
-        "text": "*Après avoir vérifié l'addition avec les membres du club, elle repart la première vers le lycée.*"
-    },
+    "hidden_homeroom_d4_cafe_6_b": {},
     "hidden_homeroom_d4_decline": {
         "name": "Professeure principale",
         "text": "D'accord. Ton rendez-vous passe avant. Je demanderai officiellement l'avis des élèves sur le manuscrit au lycée."
@@ -373,7 +361,7 @@
     },
     "hidden_nurse_d4_morning_12": {
         "name": "Infirmière",
-        "text": "Bien. C'est beaucoup mieux que d'essayer de tout supporter seul."
+        "text": "On peut commencer ensemble. Je vais entourer les contacts sur cette brochure."
     },
     "hidden_nurse_d4_morning_13": {
         "name": "Infirmière",
@@ -455,10 +443,7 @@
         "name": "Infirmière",
         "text": "Le plus dur, c'était quand je me suis mise à vérifier les numéros de lit avant les noms. Je ne savais même plus qui j'étais en train de regarder."
     },
-    "hidden_nurse_d4_4_g": {
-        "name": "{name}",
-        "text": "*La pointe de son stylo a laissé une marque dans la case du numéro de lit, en haut du document.*"
-    },
+    "hidden_nurse_d4_4_g": {},
     "hidden_nurse_d4_4_h": {
         "name": "Infirmière",
         "text": "Au lycée, j'ai le temps de voir chaque élève séparément. Et pour ce que je ne sais pas faire, mon travail consiste aussi à orienter l'élève vers quelqu'un qui le peut."

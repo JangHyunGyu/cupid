@@ -696,9 +696,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "after5_last_chance_yuna_7"
     },
     "after5_last_chance_yuna_7": {
-        "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/yuna_shy.png",
-        "next": "after5_last_chance_choice"
+        "next": "after5_last_chance_choice",
+        "routeBeforeRender": true
     },
     "after5_last_chance_yuna_low_1": {
         "background": "assets/images/background/school_back.png",

@@ -21,11 +21,11 @@
     },
     "tour_seo_3": {
         "name": "{name}",
-        "text": "Naquela vez, quando eu disse que era bom demais para mim, quase levei uma bronca."
+        "text": "Quando a gente se conheceu, eu estava tão nervoso que nem sabia o que dizer."
     },
     "tour_seo_4": {
         "name": "Seoyeon",
-        "text": "Mas eu não briguei com você. Venho prestando atenção em você desde então."
+        "text": "É mesmo? Você sempre cumprimentava direitinho. Eu já reparava em você."
     },
     "tour_seo_5": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Ela apoia a mão no parapeito do terraço e contempla a escola lá embaixo.* Não achei que passaríamos aqui até o último intervalo do almoço."
+        "text": "*Depois da volta pela escola, subimos ao terraço. Seoyeon apoia a mão na grade.* Até no dia do festival a gente acaba almoçando aqui."
     },
     "tour_seo_end": {
         "name": "{name}",
@@ -105,7 +105,7 @@
     },
     "tour_yuna_6": {
         "name": "Yuna",
-        "text": "*Ela tira da mochila o mesmo caderno que fechou às pressas no sótão.*"
+        "text": "*Ela tira um caderno novo da bolsa. As margens mostram onde revisou e passou a limpo o rascunho anterior.*"
     },
     "tour_yuna_7": {
         "name": "Yuna",
@@ -113,7 +113,7 @@
     },
     "tour_yuna_8": {
         "name": "{name}",
-        "text": "Você disse naquela vez: 'Quando se escreve o final, acaba.'"
+        "text": "Como é ter escrito até o fim?"
     },
     "tour_yuna_9": {
         "name": "Yuna",
@@ -133,7 +133,7 @@
     },
     "tour_yuna_end": {
         "name": "Yuna",
-        "text": "Único leitor. Por enquanto."
+        "text": "O primeiro leitor do final. Guardei esse lugar para você."
     },
     "tour_yuna_end_2": {
         "name": "{name}",

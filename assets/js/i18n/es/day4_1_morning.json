@@ -3,7 +3,7 @@
     "hidden_nurse_d4_low": {"name":"Enfermera","text":"*La enfermera cierra la cremallera del botiquín que estaba ordenando.* Hoy terminaré sola. Tú también vuelve a tus planes."},
     "morning4_start": {
         "name": "{name}",
-        "text": "*Cuarto día. Fin de semana. — Hoy no toca escuela. Toca cita.*"
+        "text": "*Cuarto día, sábado. Me incorporo en la cama y reviso mis planes.*"
     },
     "morning4_nightmare_check": {},
     "morning4_nightmare_seo": {
@@ -36,7 +36,7 @@
     },
     "minsu_cheer_1_d": {
         "name": "Minsu",
-        "text": "*Dain lo publicó en el chat grupal. Puso: «Mañana tengo planes».*"
+        "text": "*¿Después de tanto hablar del fin de semana en clase pensabas que no me enteraría? jaja*"
     },
     "minsu_cheer_2": {
         "name": "Minsu",
@@ -53,16 +53,10 @@
     },
     "minsu_cheer_4_c": {
         "name": "{name}",
-        "text": "*Abro el calendario del celular. Seoyeon por la mañana, Yuna por la tarde, Dain por la noche. — Anoche no pegué el ojo metiendo a las tres en el mismo día. Si se empalma una, se acabó.*"
+        "text": "*Las citas siguen solapadas en el calendario. Ya me dijeron que cambiar las horas no resolvería esto.*"
     },
-    "minsu_cheer_4_d": {
-        "name": "{name}",
-        "text": "*Los nombres de las tres aparecen en una sola pantalla. Bloqueo el calendario y vuelvo a abrirlo.*"
-    },
-    "minsu_cheer_4_e": {
-        "name": "{name}",
-        "text": "*Vuelvo a calcular el tiempo de traslado entre las tres citas y activo todas las alertas del calendario.*"
-    },
+    "minsu_cheer_4_d": {},
+    "minsu_cheer_4_e": {},
     "morning4_start_2": {
         "name": "{name}",
         "text": "*Respiro hondo y vuelvo a mirar el mensaje con el plan.*"
@@ -75,10 +69,7 @@
         "name": "{name}",
         "text": "*El mensaje termina ahí.*"
     },
-    "morning4_seo_msg_1_c": {
-        "name": "{name}",
-        "text": "*Me detengo frente a la fuente. El reloj marca las 9:58.*"
-    },
+    "morning4_seo_msg_1_c": {},
     "morning4_yuna_msg_1": {
         "name": "Yuna",
         "text": "A las 10. Cafetería de la estación. Si llegas tarde, me voy."
@@ -93,7 +84,7 @@
     },
     "morning4_dain_msg_1": {
         "name": "Dain",
-        "text": "¡¡¡¡Es hoy!!!! ¡¡Delante del gimnasio a las 6!! Ay qué nervios jajaja, ¿está bien mandarte esto?"
+        "text": "¡Es hoy! Frente al gimnasio a las diez. ¿Por qué estoy tan nerviosa? ¿Debería mandar esto?"
     },
     "morning4_fallback_msg": {
         "name": "{name}",
@@ -298,10 +289,7 @@
         "name": "Profesora",
         "text": "La próxima sesión la haremos en la biblioteca de la escuela. Hoy hemos elegido el lugar con demasiada prisa."
     },
-    "hidden_homeroom_d4_cafe_6_b": {
-        "name": "Profesora",
-        "text": "*Después de revisar la cuenta con los miembros del club, emprende primero el camino de vuelta a la escuela.*"
-    },
+    "hidden_homeroom_d4_cafe_6_b": {},
     "hidden_homeroom_d4_decline": {
         "name": "Profesora",
         "text": "Claro. Tus planes van primero. Pediré opiniones sobre el manuscrito por los cauces formales de la escuela."
@@ -373,7 +361,7 @@
     },
     "hidden_nurse_d4_morning_12": {
         "name": "Enfermera",
-        "text": "Bien. Es mucho mejor que soportarlo en soledad."
+        "text": "Podemos empezar juntos. Marcaré los contactos en este folleto."
     },
     "hidden_nurse_d4_morning_13": {
         "name": "Enfermera",
@@ -455,10 +443,7 @@
         "name": "Enfermera",
         "text": "Lo más duro era el momento en que comprobaba el número de cama antes que el nombre de la persona. Hasta dejaba de tener claro a quién estaba mirando."
     },
-    "hidden_nurse_d4_4_g": {
-        "name": "{name}",
-        "text": "*En la casilla del número de cama del primer documento queda la marca de la punta del bolígrafo.*"
-    },
+    "hidden_nurse_d4_4_g": {},
     "hidden_nurse_d4_4_h": {
         "name": "Enfermera",
         "text": "En la escuela tengo tiempo para atender a cada persona. Y cuando hay algo que no puedo hacer, también es mi trabajo llevarla hasta quien sí puede."

@@ -3,7 +3,7 @@
     "hidden_nurse_d4_low": {"name":"Enfermeira","text":"*A enfermeira fecha o zíper do kit de emergência que estava organizando.* Hoje vou terminar isso sozinha. É melhor você voltar aos seus planos."},
     "morning4_start": {
         "name": "{name}",
-        "text": "*Quarto dia. Fim de semana. — Hoje não é escola. É um encontro.*"
+        "text": "*Quarto dia, sábado. Sento na cama e confiro meus planos.*"
     },
     "morning4_nightmare_check": {},
     "morning4_nightmare_seo": {
@@ -36,7 +36,7 @@
     },
     "minsu_cheer_1_d": {
         "name": "Minsu",
-        "text": "*Dain publicou no grupo. Escreveu: «Tenho compromisso amanhã».*"
+        "text": "*Depois de tanto papo sobre o fim de semana na sala, achou que eu não ia perceber? kkk*"
     },
     "minsu_cheer_2": {
         "name": "Minsu",
@@ -53,16 +53,10 @@
     },
     "minsu_cheer_4_c": {
         "name": "{name}",
-        "text": "*Olho o calendário do celular. Seoyeon de manhã, Yuna à tarde, Dain à noite. — Passei a noite sem dormir tentando espremer as três num dia só. Se um horário cruzar com o outro, já era.*"
+        "text": "*Os encontros continuam sobrepostos no calendário. Já me disseram que mudar os horários não resolveria isso.*"
     },
-    "minsu_cheer_4_d": {
-        "name": "{name}",
-        "text": "*Os nomes das três aparecem na mesma tela. Bloqueio o calendário e volto a abri-lo.*"
-    },
-    "minsu_cheer_4_e": {
-        "name": "{name}",
-        "text": "*Recalculo o tempo de deslocamento entre os três compromissos e ativo todos os alertas do calendário.*"
-    },
+    "minsu_cheer_4_d": {},
+    "minsu_cheer_4_e": {},
     "morning4_start_2": {
         "name": "{name}",
         "text": "*Respiro fundo e confiro a mensagem de novo.*"
@@ -75,10 +69,7 @@
         "name": "{name}",
         "text": "*A mensagem termina aí.*"
     },
-    "morning4_seo_msg_1_c": {
-        "name": "{name}",
-        "text": "*Paro diante da fonte. O relógio marca 9h58.*"
-    },
+    "morning4_seo_msg_1_c": {},
     "morning4_yuna_msg_1": {
         "name": "Yuna",
         "text": "10h. Café perto da estação. Se atrasar, vou embora."
@@ -93,7 +84,7 @@
     },
     "morning4_dain_msg_1": {
         "name": "Dain",
-        "text": "HOJE!!!! Frente do ginásio, 18h!! Ai por que eu tô tão nervosa kkkk ai será que eu devia ter mandado isso"
+        "text": "É hoje! Na frente do ginásio às dez. Por que estou tão nervosa? Será que mando isso?"
     },
     "morning4_fallback_msg": {
         "name": "{name}",
@@ -298,10 +289,7 @@
         "name": "Professora",
         "text": "A próxima sessão vai ser na biblioteca da escola. Hoje escolhemos o lugar com pressa demais."
     },
-    "hidden_homeroom_d4_cafe_6_b": {
-        "name": "Professora",
-        "text": "*Depois de conferir a conta com os membros do clube, segue primeiro de volta para a escola.*"
-    },
+    "hidden_homeroom_d4_cafe_6_b": {},
     "hidden_homeroom_d4_decline": {
         "name": "Professora",
         "text": "Certo. Seus compromissos vêm primeiro. Vou pedir opiniões sobre o manuscrito pelos canais oficiais da escola."
@@ -373,7 +361,7 @@
     },
     "hidden_nurse_d4_morning_12": {
         "name": "Enfermeira",
-        "text": "Ótimo. É muito melhor do que aguentar tudo sozinho."
+        "text": "Podemos começar juntos. Vou marcar os contatos neste folheto."
     },
     "hidden_nurse_d4_morning_13": {
         "name": "Enfermeira",
@@ -455,10 +443,7 @@
         "name": "Enfermeira",
         "text": "O mais difícil era quando eu começava a conferir o número do leito antes do nome da pessoa. Até ficava sem saber direito quem eu estava olhando."
     },
-    "hidden_nurse_d4_4_g": {
-        "name": "{name}",
-        "text": "*Na área do número do leito do primeiro documento, fica uma marca da ponta da caneta.*"
-    },
+    "hidden_nurse_d4_4_g": {},
     "hidden_nurse_d4_4_h": {
         "name": "Enfermeira",
         "text": "Na escola, tenho tempo para olhar cada pessoa. E, quando há algo que não posso fazer, também é meu trabalho levar até quem pode."

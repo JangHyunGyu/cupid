@@ -106,7 +106,7 @@
     },
     "morning3_yuna_gate_warm_4": {
         "name": "{name}",
-        "text": "*Caminho ao lado de Yuna. Só se ouvem o barulho do saco de pão sendo dobrado e os nossos passos.*"
+        "text": "*Caminho ao lado de Yuna. O bilhete dobrado faz barulho na minha mão enquanto nossos passos seguem juntos.*"
     },
     "morning3_yuna_gate_2": {
         "name": "{name}",
@@ -134,7 +134,7 @@
     },
     "morning3_yuna_gate_7": {
         "name": "Yuna",
-        "text": "*Yuna divide o pãozinho ao meio. Enquanto a embalagem farfalha, nós dois atravessamos o portão.*"
+        "text": "*Comemos o pão que dividimos ao passar pelo portão. Yuna dobra o saquinho vazio.*"
     },
     "morning3_yuna_gate_cold_1": {
         "name": "Yuna",
@@ -316,7 +316,7 @@
     },
     "hidden_homeroom_d3_reveal_2": {
         "name": "Professora",
-        "text": "No dia em que esperei o último resultado, a ligação não veio. Nesse dia preenchi a inscrição para pedagogia."
+        "text": "Na última vez em que esperei um resultado, ninguém ligou. Foi por essa época que comecei a me preparar para ser professora."
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "Professora",
@@ -441,7 +441,7 @@
     },
     "hidden_homeroom_d3_freetalk": {
         "name": "Professora",
-        "text": "*Guarda as folhas do manuscrito em uma pasta.* Entendo a sua curiosidade. Mesmo assim, vamos falar disso durante o clube de literatura.",
+        "text": "*Ela guarda o manuscrito e fica junto à mesa.* Surpreendeu você, né? Podemos conversar um pouco. Os comentários do texto ficam para a oficina aberta.",
         "context": "Dia 3, de manhã. Em uma sala vazia, o aluno encontrou o manuscrito de um romance pessoal da professora. Ela não pede que ele guarde segredo nem dê uma opinião particular; está pensando em apresentá-lo a uma sessão aberta de leitura e crítica do clube de literatura.",
         "personality": "A professora queria ser romancista. Mesmo depois de se tornar professora, nunca deixou de escrever; porém, procura separar as aulas e avaliações da sua criação pessoal na relação com os alunos."
     },
@@ -451,7 +451,7 @@
     },
     "hidden_nurse_d3_1": {
         "name": "{name}",
-        "text": "*Mesmo depois que o sinal da manhã tocou, não consegui me levantar da cadeira. A ponta do curativo na minha mão está se soltando. Abro a porta da enfermaria.*"
+        "text": "*No próximo intervalo, vou à enfermaria. A borda do curativo no cotovelo prende na manga.*"
     },
     "hidden_nurse_d3_1_b": {
         "name": "Enfermeira",
@@ -473,22 +473,10 @@
         "name": "Enfermeira",
         "text": "Tem certeza de que não dói nada? Você não está com uma expressão boa."
     },
-    "hidden_nurse_d3_2_b": {
-        "name": "{name}",
-        "text": "*O manuscrito virado e a voz baixa me acompanham até o corredor.*"
-    },
-    "hidden_nurse_d3_2_c": {
-        "name": "{name}",
-        "text": "*Quando saio da sala — alguém fala baixinho, de trás.*"
-    },
-    "hidden_nurse_d3_2_d": {
-        "name": "Professora",
-        "text": "...Obrigada."
-    },
-    "hidden_nurse_d3_2_e": {
-        "name": "{name}",
-        "text": "*Pouco antes do almoço, o corredor está lotado de estudantes. Sempre que mexo o pulso, o curativo exala cheiro de antisséptico.*"
-    },
+    "hidden_nurse_d3_2_b": {},
+    "hidden_nurse_d3_2_c": {},
+    "hidden_nurse_d3_2_d": {},
+    "hidden_nurse_d3_2_e": {},
     "hidden_nurse_d3_3": {
         "name": "{name}",
         "text": "...Só queria descansar um pouco. É que... as relações ficaram complicadas."
@@ -509,14 +497,8 @@
         "name": "Enfermeira",
         "text": "*Fecha a cortina e me entrega um copo d'água.* ...Senta. Aqui você pode relaxar. Fala no seu ritmo."
     },
-    "hidden_nurse_d3_5_b": {
-        "name": "Enfermeira",
-        "text": "*A enfermeira puxa a cadeira na direção da cama e se senta.*"
-    },
-    "hidden_nurse_d3_5_c": {
-        "name": "Enfermeira",
-        "text": "...Parecido? Então fez bem em vir aqui."
-    },
+    "hidden_nurse_d3_5_b": {},
+    "hidden_nurse_d3_5_c": {},
     "hidden_nurse_d3_5_d": {
         "name": "{name}",
         "text": "*O polegar da enfermeira pressiona uma vez a borda do copo de água.*"
@@ -525,13 +507,10 @@
         "name": "{name}",
         "text": "...Coisas difíceis de contar pra qualquer um."
     },
-    "hidden_nurse_d3_5_f": {
-        "name": "Enfermeira",
-        "text": "*Puxa uma cadeira e senta na minha frente* Relações."
-    },
+    "hidden_nurse_d3_5_f": {},
     "hidden_nurse_d3_5_g": {
         "name": "{name}",
-        "text": "Estou interessado nas três, mas acho que no fim vou ter que escolher uma pessoa."
+        "text": "Fico adiando minhas respostas por medo de decepcionar alguém."
     },
     "hidden_nurse_d3_5_h": {
         "name": "Enfermeira",
@@ -559,7 +538,7 @@
     },
     "hidden_nurse_d3_5_n": {
         "name": "{name}",
-        "text": "A senhora já passou por isso? Se perder entre várias pessoas?"
+        "text": "A senhora já tentou cuidar de todo mundo e acabou sobrecarregada?"
     },
     "hidden_nurse_d3_5_o": {
         "name": "Enfermeira",
@@ -622,13 +601,10 @@
         "name": "Enfermeira",
         "text": "Por isso eu vim pra cá. Na escola — dá pra prestar atenção direito em uma pessoa de cada vez."
     },
-    "hidden_nurse_d3_7_b": {
-        "name": "Enfermeira",
-        "text": "*A enfermeira deixa o estetoscópio sobre a mesa e gira a cadeira na direção de {name}.*"
-    },
+    "hidden_nurse_d3_7_b": {},
     "hidden_nurse_d3_8": {
         "name": "Enfermeira",
-        "text": "Com você é igual. Pare de tentar cuidar de todo mundo. — Não é melhor olhar de verdade para uma pessoa que importa de fato?"
+        "text": "Diga o que você consegue fazer. Não prometa que está tudo bem para depois carregar tudo sozinho. Pode pedir ajuda."
     },
     "hidden_nurse_d3_8_b": {
         "name": "{name}",
@@ -705,7 +681,7 @@
     },
     "hidden_nurse_d3_11": {
         "name": "Enfermeira",
-        "text": "Você vai se atrasar para a próxima aula. Vamos encerrar por aqui o que conversamos hoje. Pode ir."
+        "text": "Ainda falta um pouco para a aula. Se quiser perguntar mais alguma coisa, pode falar."
     },
     "hidden_nurse_d3_freetalk": {
         "name": "Enfermeira",
@@ -749,11 +725,11 @@
     },
     "morning3_date_dain_2": {
         "name": "Dain",
-        "text": "*Seoyeon ainda está na porta da sala. Dain olha para cá e tamborila no canto da carteira.*"
+        "text": "*Dain bate na borda da minha carteira. Neste intervalo, Seoyeon organiza papéis no próprio lugar.*"
     },
     "morning3_date_dain_choice": {
         "name": "Dain",
-        "text": "*Os passos de Seoyeon param. Dain espera a minha resposta.*",
+        "text": "*Dain se inclina um pouco e espera minha resposta.*",
         "choices": [
             "Fechou, bora",
             "Fim de semana tá meio corrido...",
@@ -763,7 +739,7 @@
     },
     "morning3_date_dain_accept": {
         "name": "{name}",
-        "text": "*Marquei de sair com Dain no fim de semana. Quando ela sorri, a prancheta de Seoyeon se fecha uma vez no corredor.*"
+        "text": "*Combinamos de nos ver no fim de semana. Dain sorri, e Seoyeon fecha a prancheta na carteira dela.*"
     },
     "morning3_date_dain_decline": {
         "name": "Dain",
@@ -801,7 +777,7 @@
     },
     "morning3_date_yuna_accept": {
         "name": "{name}",
-        "text": "*Escrevo 'Eu vou' no verso do bilhete. Enquanto Yuna dobra o papel, os dedos de Dain param sobre a carteira.*"
+        "text": "*Escrevo a resposta no verso e devolvo o bilhete. Yuna lê, dobra e guarda no livro.*"
     },
     "morning3_date_yuna_decline": {
         "name": "{name}",
@@ -812,15 +788,12 @@
     "morning3_multi_from_dain": {},
     "morning3_set_multiple": {
         "name": "{name}",
-        "text": "*Os planos do fim de semana se sobrepõem. A casa do calendário está dividida em três.*"
+        "text": "*Meus encontros do fim de semana se sobrepõem. Fecho o calendário sem decidir com quem falar primeiro.*"
     },
     "morning3_multi_from_yuna": {},
     "morning3_end": {
         "name": "{name}",
         "text": "*O sinal do fim da aula toca, e logo começa o horário do almoço.*"
     },
-    "morning3_end_b": {
-        "name": "Yuna",
-        "text": "...Tá bom."
-    }
+    "morning3_end_b": {}
 }

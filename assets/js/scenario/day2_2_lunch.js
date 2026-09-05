@@ -596,9 +596,8 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "lunch2_dain_end_v"
     },
     "lunch2_dain_end_v": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_w"
+        "next": "lunch2_dain_end_w",
+        "routeBeforeRender": true
     },
     "lunch2_dain_end_w": {
         "background": "assets/images/background/nurse_room.png",

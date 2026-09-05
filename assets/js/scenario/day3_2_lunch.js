@@ -81,19 +81,16 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         ]
     },
     "lunch3_meal_10_c": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "lunch3_meal_11"
+        "next": "lunch3_meal_11",
+        "routeBeforeRender": true
     },
     "lunch3_meal_10_d": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_laugh.png",
-        "next": "lunch3_meal_11"
+        "next": "lunch3_meal_11",
+        "routeBeforeRender": true
     },
     "lunch3_meal_10_e": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_normal.png",
-        "next": "lunch3_meal_11"
+        "next": "lunch3_meal_11",
+        "routeBeforeRender": true
     },
     "lunch3_meal_11": {
         "background": "assets/images/background/room_school.png",
@@ -321,15 +318,13 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         ]
     },
     "lunch3_dain_witness_1": {
-        "background": "assets/images/background/school_hallway.png",
-        "backgroundVariant": "empty",
+        "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_sad.png",
         "next": "lunch3_dain_witness_2b"
     },
     "lunch3_dain_witness_2b": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_sad.png",
-        "next": "lunch3_give_dain_3"
+        "next": "lunch3_give_dain_3",
+        "routeBeforeRender": true
     },
     "lunch3_give_dain_3_check": {
         "background": "assets/images/background/room_school.png",
@@ -572,9 +567,8 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "lunch3_expose_honest_4_b"
     },
     "lunch3_expose_honest_4_b": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "lunch3_expose_honest_5"
+        "next": "lunch3_expose_honest_5",
+        "routeBeforeRender": true
     },
     "lunch3_expose_honest_5": {
         "background": "assets/images/background/room_school.png",

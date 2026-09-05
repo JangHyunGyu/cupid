@@ -224,10 +224,7 @@
         "name": "{name}",
         "text": "*Miro hacia el fondo, junto a la ventana. Una chica observa el exterior con la barbilla apoyada en la mano. Mientras escriben mi nombre en la pizarra, ella se limita a pasar una página.*"
     },
-    "classroom_yuna_2": {
-        "name": "{name}",
-        "text": "*Cabello blanco plateado. Ojos rojos. Un tatuaje en el brazo. La chica del último asiento junto a la ventana sigue con la barbilla apoyada en la mano, mirando afuera. Hay más espacio entre los pupitres que la rodean.*"
-    },
+    "classroom_yuna_2": {},
     "classroom_yuna_4": {
         "name": "{name}",
         "text": "*Alguien susurra en la primera fila: «No le hables. Da miedo». Yuna pasa una página.*"
@@ -286,7 +283,7 @@
     },
     "classroom_dain_talk_8": {
         "name": "{name}",
-        "text": "*Después de «probablemente», la mirada de Dain se desvía hacia la máquina lanzapelotas. La canasta llena de balones está al fondo de la cancha.*"
+        "text": "*Dain dibuja una pequeña cancha con el dedo sobre el pupitre, marca el centro y me mira levantando una ceja.*"
     },
     "classroom_yuna_note_1": {
         "name": "{name}",

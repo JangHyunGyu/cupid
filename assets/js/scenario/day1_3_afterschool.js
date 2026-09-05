@@ -217,14 +217,23 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "after_miss_yuna_4"
     },
     "after_miss_yuna_4": {
-        "background": "assets/images/background/library_old.png",
-        "character": "assets/images/characters/yuna_normal.png",
-        "setFlags": ["met_yuna"],
+        "setFlags": [
+            "met_yuna"
+        ],
         "branches": [
-            { "condition": "ate_lunch_seoyeon", "next": "after_end" },
-            { "condition": "chose_seoyeon_lunch", "next": "after_end" },
-            { "next": "after_miss_seoyeon_1" }
-        ]
+            {
+                "condition": "ate_lunch_seoyeon",
+                "next": "after_end"
+            },
+            {
+                "condition": "chose_seoyeon_lunch",
+                "next": "after_end"
+            },
+            {
+                "next": "after_miss_seoyeon_1"
+            }
+        ],
+        "routeBeforeRender": false
     },
     "after_miss_seoyeon_1": {
         "background": "assets/images/background/school_hallway.png",
@@ -460,7 +469,8 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "character": "assets/images/characters/teacher_normal.png",
         "type": "free_talk",
         "maxTurns": 3,
-        "next": "night_start"
+        "next": "night_start",
+        "isRemote": false
     },
     "after_hidden_nurse_intro": {
         "background": "assets/images/background/school_hallway.png",
@@ -722,7 +732,8 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "character": "assets/images/characters/nurse_normal.png",
         "type": "free_talk",
         "maxTurns": 3,
-        "next": "night_start"
+        "next": "night_start",
+        "isRemote": false
     },
     "after_nurse_skip": {
         "background": "assets/images/background/school_hallway.png",

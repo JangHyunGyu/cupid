@@ -63,11 +63,11 @@
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*En vérifiant le pansement, je remarque un carnet vert pâle qui dépasse du tiroir. Sur la première ligne de la page ouverte : « À toi, ce jour-là— » L'infirmière referme le tiroir.*"
+        "text": "*L’infirmière jette l’emballage du nouveau pansement. Le tiroir qu’elle a fermé plus tôt reste clos.*"
     },
     "hidden_nurse_d2_7": {
         "name": "Infirmière",
-        "text": "*Elle referme le tiroir.* Tu n'as rien vu, d'accord ? ...Laisse tomber. Parlons plutôt des formalités."
+        "text": "*Elle remarque mon regard et pose la main sur la poignée.* On en reste là. Ta curiosité ne l’ouvrira pas."
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",
@@ -81,7 +81,7 @@
     },
     "hidden_nurse_d2_choice2_a": {
         "name": "Infirmière",
-        "text": "*Elle tapote le tiroir fermé de l'index.* Un seul ? Bon, d'accord. Je préfère le chocolat chaud au café. Voilà le secret."
+        "text": "*Elle tapote le tiroir.* Le chocolat chaud, ça suffit. Pas de deuxième secret."
     },
     "hidden_nurse_d2_choice2_b": {
         "name": "Infirmière",
@@ -91,10 +91,7 @@
         "name": "Infirmière",
         "text": "Voilà, c'est fait. Garde-le au sec aujourd'hui."
     },
-    "hidden_nurse_d2_9": {
-        "name": "{name}",
-        "text": "*Après qu'elle m'a demandé de revenir si le pansement se décolle ou si du sang le traverse, je quitte l'infirmerie.*"
-    },
+    "hidden_nurse_d2_9": {},
     "after2_choice": {
         "name": "{name}",
         "text": "*Où aller ?*",
@@ -150,7 +147,7 @@
     },
     "after2_dain_9_d": {
         "name": "Dain",
-        "text": "Je passe en mode sérieux !"
+        "text": "Bon, fini les services ! Maintenant, des échanges : la première personne à trois points gagne !"
     },
     "after2_dain_9_e": {
         "name": "{name}",
@@ -200,10 +197,7 @@
         "name": "Dain",
         "text": "*En entrant dans la boutique, elle pousse le gobelet de tteokbokki et prend ses baguettes.* On va voir si tu tiens le piment."
     },
-    "after2_dain_end": {
-        "name": "{name}",
-        "text": "*Dain pousse le gobelet de tteokbokki vers moi avant de déballer ses propres baguettes.*"
-    },
+    "after2_dain_end": {},
     "after2_dain_end_first": {
         "name": "{name}",
         "text": "*Dain pose sèchement deux gobelets de tteokbokki et ouvre l'emballage de ses baguettes.*"
@@ -308,10 +302,7 @@
         "name": "{name}",
         "text": "*On commence à trier les documents. Budgets d'événements, demandes de clubs. Une bonne pile.*"
     },
-    "after2_seo_7": {
-        "name": "Seoyeon",
-        "text": "*Elle ne se retourne pas tout de suite. Son porte-bloc reste orienté vers la porte. Ce n'est qu'en entendant les pas de {name} qu'elle se met en marche.*"
-    },
+    "after2_seo_7": {},
     "after2_seo_8": {
         "name": "Seoyeon",
         "text": "Ceux-ci par date, ceux-là par club. — T'es doué pour ranger ?"
@@ -471,10 +462,7 @@
         "name": "Seoyeon",
         "text": "*Des deux mains, elle appuie une fois sur la pile terminée pour en aligner les bords.*"
     },
-    "after2_seo_end": {
-        "name": "{name}",
-        "text": "*Quand je quitte la salle du conseil, les éclairages automatiques du couloir s'allument un à un devant moi.*"
-    },
+    "after2_seo_end": {},
     "after2_seo_skinship_1": {
         "name": "Seoyeon",
         "text": "*Au moment où Seoyeon tend la main pour retirer une poussière de mon col, le dos de sa main effleure mon cou.*"
@@ -589,7 +577,7 @@
         "choices": [
             "Je devrais venir tous les jours ?",
             "C'est agréable parce que c'est calme",
-            "Avec toi, c'est agréable parce qu'on n'est pas obligés de parler."
+            "J’aime qu’il y ait si peu de monde. Je serais à l’aise avec n’importe qui ici."
         ]
     },
     "after2_yuna_everyday": {
@@ -618,7 +606,7 @@
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "*Un écouteur reste sur le siège où Yuna et moi étions côte à côte. Avant de quitter l'annexe, j'allume mon téléphone.*"
+        "text": "*Il est temps de fermer les livres. Je rapproche mon sac pendant que Yuna rassemble ses affaires sur le canapé.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",
@@ -662,7 +650,7 @@
     },
     "after2_group_seoyeon_companion": {
         "name": "Seoyeon et l'autre personne",
-        "text": "*Du bout du doigt, Seoyeon désigne deux créneaux qui se chevauchent. Le regard en face d'elle ne cède pas davantage.* « Vous avez tous les deux besoin de son aide. Alors, qui est-ce que tu aides d'abord ? »",
+        "text": "*Nous revenons au conseil des élèves pour voir le temps restant. Du bout du doigt, Seoyeon désigne deux créneaux qui se chevauchent. Le regard en face d'elle ne cède pas davantage.* « Vous avez tous les deux besoin de son aide. Alors, qui est-ce que tu aides d'abord ? »",
         "context": "Pendant que le protagoniste et Seoyeon mettent au point le planning de l'après-midi, le personnage ayant la meilleure affinité hors Seoyeon arrive avec son propre horaire ou une demande. Le travail du conseil des élèves empiète sur une autre activité scolaire et tous trois doivent trancher. Seoyeon demande clairement qui le protagoniste aidera en premier.",
         "personality": "Cela ressemble à un simple conflit d'horaires, mais les deux personnages surveillent la priorité que leur accorde le protagoniste. Ne transforme pas la scène en hostilité ouverte ni en humiliation. S'il esquive, chacun réclame une réponse à sa manière. Si l'un est choisi, l'autre ne fait pas semblant de le prendre avec le sourire.",
         "groupLocation": "Salle du conseil des élèves",
@@ -671,7 +659,7 @@
     },
     "after2_group_yuna_companion": {
         "name": "Yuna et l'autre personne",
-        "text": "*Il reste deux piles à classer, mais à peine assez de temps pour en finir une. Yuna retire un écouteur et regarde de l'autre côté de la table.* « Si tu ne peux en terminer qu'une avec nous, auprès de qui tu restes ? »",
+        "text": "*Nous revenons à l’annexe et sortons les documents à trier. Il reste deux piles à classer, mais à peine assez de temps pour en finir une. Yuna retire un écouteur et regarde de l'autre côté de la table.* « Si tu ne peux en terminer qu'une avec nous, auprès de qui tu restes ? »",
         "context": "Pendant que le protagoniste et Yuna classent des documents dans l'annexe de la bibliothèque, le personnage ayant la meilleure affinité hors Yuna arrive avec d'autres dossiers ou une demande urgente. Il ne reste assez de temps que pour achever correctement l'une des deux tâches. Yuna demande, brièvement et sans détour, auprès de qui le protagoniste restera.",
         "personality": "Yuna exige un choix bref et précis, tandis que l'autre personne tient sa position à sa façon. Ne force pas une réconciliation et n'invente pas aussitôt une solution qui satisfait tout le monde. La réponse peut rassurer l'un et blesser l'autre.",
         "groupLocation": "Annexe de la bibliothèque",
@@ -680,11 +668,11 @@
     },
     "after2_group_dain_companion": {
         "name": "Dain et l'autre personne",
-        "text": "*Les récits venus du gymnase et de l'annexe ne concordent pas. Dain cale un ballon contre sa hanche et regarde le protagoniste droit dans les yeux.* « Si nos versions diffèrent, qui est-ce que tu crois en premier ? »",
-        "context": "Pendant que le protagoniste et Dain rangent le gymnase, le personnage ayant la meilleure affinité hors Dain arrive avec une autre version d'un petit incident près de l'annexe. Les récits se contredisent et il faut décider lequel vérifier d'abord. Dain demande à qui le protagoniste accorde sa confiance en premier.",
+        "text": "*Nous retournons au gymnase pour le chariot de ballons. L’autre personne dit que le responsable attend d’abord le matériel de la fête. Dain prend le chariot.* « Moi, j’ai entendu les ballons d’abord. Tu vérifies quelle consigne en premier ? »",
+        "context": "Sur le départ, ils sont revenus au gymnase pour rendre le chariot. L’autre personne doit apporter le matériel de la fête d’abord ; Dain a compris les ballons d’abord. Seul l’ordre diverge, sans accident ni mensonge établi. Le temps manque : quelle consigne vérifier et qui aider en premier ?",
         "personality": "N'invente ni accident grave ni mensonge malveillant. L'enjeu n'est pas la solution objective d'un mystère, mais la personne que le protagoniste décide de croire d'abord. Dain réclame une réponse franche et l'autre personnage ne se retire pas dans un rôle secondaire. La réponse peut blesser l'un des deux.",
         "groupLocation": "Gymnase",
-        "groupChoiceState": "les versions du gymnase et de l'annexe se contredisent et le protagoniste doit dire qui il croit d'abord",
+        "groupChoiceState": "Choisir quelle consigne vérifier et s’il faut rendre les ballons ou le matériel de la fête d’abord",
         "groupAftermathCause": "qui le protagoniste a cru en premier dans le gymnase, et pourquoi"
     },
     "after2_group_return": {

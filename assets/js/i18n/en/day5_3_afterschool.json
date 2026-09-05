@@ -58,7 +58,7 @@
     },
     "after5_farewell_yuna_5": {
         "name": "{name}",
-        "text": "*Only one line is written on the bookmark: 'It was fun.' It ends with a period.*"
+        "text": "*I reread the short line on the bookmark: “I had fun.” The ink blurs beneath the final letter.*"
     },
     "after5_farewell_yuna_5b": {
         "name": "{name}",
@@ -167,7 +167,7 @@
     },
     "after5_last_chance_2_h": {
         "name": "{name}",
-        "text": "*She holds out her hand.*"
+        "text": "*Seoyeon holds out her hand.*"
     },
     "after5_last_chance_2_i": {
         "name": "Seoyeon",
@@ -255,10 +255,7 @@
         "name": "{name}",
         "text": "*Yuna doesn't look away. The distance between us has narrowed by one step.*"
     },
-    "after5_last_chance_yuna_7": {
-        "name": "Yuna",
-        "text": "*She waits, holding the book. The reply box is still empty.*"
-    },
+    "after5_last_chance_yuna_7": {},
     "after5_last_chance_yuna_low_1": {
         "name": "{name}",
         "text": "Yuna."
@@ -271,7 +268,7 @@
         "name": "{name}",
         "text": "*My phone presses into my palm.*",
         "choices": [
-            "Say it now",
+            "Tell her I like her",
             "Don't say it yet",
             "Let us both take some time to think."
         ]
@@ -282,12 +279,12 @@
     },
     "after5_confess_yes_2": {
         "name": "{name}",
-        "text": "Hey — there's something I need to say."
+        "text": "I like you. As more than a friend. I know I am late, but I wanted to tell you myself."
     },
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "Seoyeon",
-        "text": "*We start walking side by side toward the park.* You're late. But I'll listen."
+        "text": "*We start walking toward the park.* You took your time. But… now I know how you feel."
     },
     "after5_confess_react_seo_low": {
         "name": "Seoyeon",
@@ -296,7 +293,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*As we leave school, she glances once at her shoelaces.* Hey, you. I did wait. Say everything you came to say."
+        "text": "*She looks down at her shoelaces as we leave.* Hey. I was waiting to hear that. No pretending you never said it, okay?"
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",
@@ -305,7 +302,7 @@
     "after5_confess_aff_yuna": {},
     "after5_confess_react_yuna": {
         "name": "Yuna",
-        "text": "*We walk side by side.* I already knew. But I'll listen."
+        "text": "*We walk side by side.* Yes. I heard what you said."
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",
@@ -539,7 +536,7 @@
     "after5_last_chance_dain_history_check": {},
     "after5_last_chance_dain_postponed": {
         "name": "Dain",
-        "text": "I will hear the part we did not finish yesterday."
+        "text": "Finish what you could not say yesterday. I want to hear it."
     },
     "after5_last_chance_dain_tentative": {
         "name": "Dain",

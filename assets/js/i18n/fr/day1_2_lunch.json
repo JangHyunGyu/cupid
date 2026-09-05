@@ -1,7 +1,7 @@
 {
     "lunch_start": {
         "name": "{name}",
-        "text": "*Pause déjeuner. Au bout du couloir bondé, j'aperçois en même temps le sac à bento de Seoyeon, Dain qui me fait signe devant la supérette et le mot de Yuna qui m'invite à la bibliothèque.*"
+        "text": "*À midi, Seoyeon prend l’escalier avec son déjeuner. Dain me fait signe près de la boutique et Yuna part à la bibliothèque avec son livre.*"
     },
     "lunch_start_4": {
         "name": "{name}",
@@ -409,7 +409,7 @@
     },
     "lunch_yuna_20": {
         "name": "{name}",
-        "text": "*La cloche sonne.*"
+        "text": "*La sonnerie d’avertissement retentit, cinq minutes avant le cours.*"
     },
     "lunch_yuna_21": {
         "name": "{name}",
@@ -429,7 +429,7 @@
     },
     "lunch_yuna_25": {
         "name": "Yuna",
-        "text": "*Yuna cale son livre contre elle et sort la première. Une fois la porte refermée, la chaise d'en face reste à moitié tirée.*"
+        "text": "*Yuna range son livre. Avant de se lever, elle regarde encore la couverture de celui que je tiens.*"
     },
     "lunch_yuna_choice": {
         "name": "{name}",
@@ -443,7 +443,7 @@
     },
     "lunch_yuna_c1_1": {
         "name": "Yuna",
-        "text": "...Celui-là ? Il est pas mal. Tu veux que je te le prête ?"
+        "text": "Prends ton temps avec le premier tome. La suite est encore mieux."
     },
     "lunch_yuna_c1_2": {
         "name": "Yuna",

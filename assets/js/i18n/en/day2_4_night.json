@@ -59,10 +59,7 @@
         "name": "Seoyeon",
         "text": "I'll leave the rooftop open at lunch tomorrow"
     },
-    "night2_msg_generic_3": {
-        "name": "Yuna",
-        "text": "Did you finish that book?"
-    },
+    "night2_msg_generic_3": {},
     "night2_msg_7": {
         "name": "{name}",
         "text": "*Three message threads open one after another. Before I can write a reply, the battery indicator drops one bar.*"
@@ -76,10 +73,7 @@
             "Reply to Yuna first"
         ]
     },
-    "night2_reply_dain_1": {
-        "name": "{name}",
-        "text": "tteokbokki was spicy lol"
-    },
+    "night2_reply_dain_1": {},
     "night2_reply_dain_2": {
         "name": "Dain",
         "text": "You can't handle spicy food?"
@@ -132,25 +126,19 @@
         "name": "Seoyeon",
         "text": "Hm. Got it. See you tomorrow."
     },
-    "night2_reply_yuna_1": {
-        "name": "{name}",
-        "text": "About halfway through. It's good."
-    },
+    "night2_reply_yuna_1": {},
     "night2_reply_yuna_2": {
         "name": "Yuna",
-        "text": "Glad to hear it."
+        "text": "Okay. Take your time reading."
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
         "text": "*The reply box stays empty for a while. Then a new message bubble appears.*"
     },
-    "night2_reply_yuna_4": {
-        "name": "Yuna",
-        "text": "That playlist from earlier. Listen to the third track too."
-    },
+    "night2_reply_yuna_4": {},
     "night2_reply_yuna_5": {
         "name": "{name}",
-        "text": "*I open the playlist Yuna shared again. The third track is a little faster than the one we listened to together.*"
+        "text": "*I open Yuna’s playlist. The play button blinks beside the third song.*"
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",
@@ -224,7 +212,7 @@
     },
     "night2_flashback_1": {
         "name": "{name}",
-        "text": "*Minsu's words keep coming back. 'Seoyeon, Dain, Yuna — all three of them smile at you.'*"
+        "text": "*I pause before replying. At my old school, I used to tell myself I didn’t want to disappoint anyone, too.*"
     },
     "night2_flashback_2": {
         "name": "{name}",
@@ -240,7 +228,7 @@
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*I close the gallery. My finger stops over the delete button. In the end, I turn off the screen.*"
+        "text": "*I hold my finger over the photo’s delete button, then turn off the screen.*"
     },
     "night2_flashback_8": {
         "name": "{name}",
@@ -272,7 +260,7 @@
     },
     "night2_end_4_c": {
         "name": "{name}",
-        "text": "*I put in rice, egg, and seaweed, then close the lid. That's all the side dishes.*"
+        "text": "*I add rice, rolled egg, seaweed and a few sausages, close the lid and put the lunchbox in the fridge.*"
     },
     "forced_violation_day2_after_seoyeon": {
         "name": "Seoyeon",
@@ -353,5 +341,37 @@
     "forced_violation_day2_nurse_excuse": {
         "name": "School Nurse",
         "text": "*The school nurse's voice drops lower.* Do you think calling it a misunderstanding changes anything? The fact is, you ignored me when I said no."
+    },
+    "night2_reply_dain_1_established": {
+        "name": "{name}",
+        "text": "tteokbokki was spicy lol"
+    },
+    "night2_reply_dain_1_first": {
+        "name": "{name}",
+        "text": "Want to get tteokbokki tomorrow? I’m not great with spicy food lol"
+    },
+    "night2_reply_yuna_1_established": {
+        "name": "{name}",
+        "text": "About halfway through. It's good."
+    },
+    "night2_reply_yuna_1_first": {
+        "name": "{name}",
+        "text": "Recommend me a book when I visit the annex tomorrow."
+    },
+    "night2_reply_yuna_4_established": {
+        "name": "Yuna",
+        "text": "That playlist from earlier. Listen to the third track too."
+    },
+    "night2_reply_yuna_4_first": {
+        "name": "Yuna",
+        "text": "I’ll send you a playlist. Start with the third song."
+    },
+    "night2_msg_generic_3_established": {
+        "name": "Yuna",
+        "text": "Did you finish that book?"
+    },
+    "night2_msg_generic_3_first": {
+        "name": "Yuna",
+        "text": "What are you reading lately?"
     }
 }

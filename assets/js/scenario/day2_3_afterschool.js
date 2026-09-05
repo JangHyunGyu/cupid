@@ -120,17 +120,19 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "hidden_nurse_d2_9"
     },
     "hidden_nurse_d2_9": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "setFlags": ["nurse_day2"],
-        "next": "hidden_nurse_d2_freetalk"
+        "setFlags": [
+            "nurse_day2"
+        ],
+        "next": "hidden_nurse_d2_freetalk",
+        "routeBeforeRender": false
     },
     "hidden_nurse_d2_freetalk": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "type": "free_talk",
         "maxTurns": 3,
-        "next": "hidden_nurse_d2_return"
+        "next": "hidden_nurse_d2_return",
+        "isRemote": false
     },
     "hidden_nurse_d2_return": {
         "background": "assets/images/background/room_school.png",
@@ -282,9 +284,8 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         ]
     },
     "after2_dain_end": {
-        "background": "assets/images/background/store.png",
-        "character": "assets/images/characters/dain_laugh.png",
-        "next": "after2_dain_end_b"
+        "next": "after2_dain_end_b",
+        "routeBeforeRender": true
     },
     "after2_dain_end_first": {
         "background": "assets/images/background/store.png",
@@ -411,10 +412,16 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "groupParticipants": {
             "strategy": "focus_with_highest_other_affinity",
             "focus": "Dain",
-            "tiePriority": ["Yuna", "Seoyeon", "Teacher", "Nurse"]
+            "tiePriority": [
+                "Yuna",
+                "Seoyeon",
+                "Teacher",
+                "Nurse"
+            ]
         },
         "maxTurns": 3,
-        "next": "after2_group_return"
+        "next": "after2_group_return",
+        "isRemote": false
     },
     "after2_seo_1": {
         "background": "assets/images/background/student_room.png",
@@ -460,9 +467,8 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "after2_seo_7"
     },
     "after2_seo_7": {
-        "background": "assets/images/background/student_room.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "after2_seo_8"
+        "next": "after2_seo_8",
+        "routeBeforeRender": true
     },
     "after2_seo_8": {
         "background": "assets/images/background/student_room.png",
@@ -661,11 +667,19 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "after2_seo_end"
     },
     "after2_seo_end": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_normal.png",
         "affinityChar": "Seoyeon",
-        "affinityBranches": [{"minAffinity":25,"next":"after2_seo_skinship_1"},{"minAffinity":-100,"next":"after2_seo_rival_dain_check"}],
-        "next": "after2_seo_rival_dain_check"
+        "affinityBranches": [
+            {
+                "minAffinity": 25,
+                "next": "after2_seo_skinship_1"
+            },
+            {
+                "minAffinity": -100,
+                "next": "after2_seo_rival_dain_check"
+            }
+        ],
+        "next": "after2_seo_rival_dain_check",
+        "routeBeforeRender": true
     },
     "after2_seo_skinship_1": {
         "background": "assets/images/background/school_hallway.png",
@@ -752,10 +766,16 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "groupParticipants": {
             "strategy": "focus_with_highest_other_affinity",
             "focus": "Seoyeon",
-            "tiePriority": ["Dain", "Yuna", "Teacher", "Nurse"]
+            "tiePriority": [
+                "Dain",
+                "Yuna",
+                "Teacher",
+                "Nurse"
+            ]
         },
         "maxTurns": 3,
-        "next": "after2_group_return"
+        "next": "after2_group_return",
+        "isRemote": false
     },
     "after2_yuna_1": {
         "background": "assets/images/background/yuna_hideout.png",
@@ -987,10 +1007,16 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "groupParticipants": {
             "strategy": "focus_with_highest_other_affinity",
             "focus": "Yuna",
-            "tiePriority": ["Seoyeon", "Dain", "Teacher", "Nurse"]
+            "tiePriority": [
+                "Seoyeon",
+                "Dain",
+                "Teacher",
+                "Nurse"
+            ]
         },
         "maxTurns": 3,
-        "next": "after2_group_return"
+        "next": "after2_group_return",
+        "isRemote": false
     },
     "after2_group_return": {
         "background": "assets/images/background/school.png",

@@ -39,7 +39,7 @@
     },
     "lunch2_seo_5b_dain": {
         "name": "{name}",
-        "text": "A brisa tá boa. E a sua marmita ficou na minha cabeça."
+        "text": "Ontem comi com Dain. Também estava curioso para provar sua comida."
     },
     "lunch2_seo_6b_dain": {
         "name": "Seoyeon",
@@ -123,7 +123,7 @@
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "*Quando Dain vai se sentar, ela puxa a cadeira vazia para perto com a ponta do pé.* Parece que você e Dain já ficaram bem próximos."
+        "text": "*Seoyeon olha para Dain à sua frente e aproxima um pouco a própria cadeira da minha.*"
     },
     "lunch2_seo_15": {
         "name": "{name}",
@@ -435,10 +435,7 @@
         "name": "Enfermeira",
         "text": "*Ela solta a alça da gaveta.* Isso já vale o preço de um segredo, não vale?"
     },
-    "lunch2_dain_end_v": {
-        "name": "Enfermeira",
-        "text": "*A enfermeira fecha a gaveta. O puxador é pressionado mais uma vez.*"
-    },
+    "lunch2_dain_end_v": {},
     "lunch2_dain_end_w": {
         "name": "Enfermeira",
         "text": "Pronto. Volta para a aula. Tenta não molhar hoje."
@@ -558,7 +555,7 @@
     },
     "lunch2_yuna_9": {
         "name": "Yuna",
-        "text": "*Ela vira uma página e alisa com a palma a almofada amassada do sofá à frente.*"
+        "text": "*Yuna coloca o marcador e se levanta, indicando o fundo do corredor com o queixo.*"
     },
     "lunch2_yuna_10": {
         "name": "Yuna",

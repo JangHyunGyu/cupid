@@ -413,17 +413,20 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "hidden_homeroom_d2_12"
     },
     "hidden_homeroom_d2_12": {
-        "background": "assets/images/background/teacher_office.png",
-        "character": "assets/images/characters/teacher_normal.png",
-        "setFlags": ["homeroom_day2","noticed_manuscript"],
-        "next": "hidden_homeroom_d2_freetalk"
+        "setFlags": [
+            "homeroom_day2",
+            "noticed_manuscript"
+        ],
+        "next": "hidden_homeroom_d2_freetalk",
+        "routeBeforeRender": false
     },
     "hidden_homeroom_d2_freetalk": {
         "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "type": "free_talk",
         "maxTurns": 3,
-        "next": "morning2_seo_dust_1"
+        "next": "morning2_seo_dust_1",
+        "isRemote": false
     },
     "hidden_homeroom_d2_low": {
         "background": "assets/images/background/teacher_office.png",

@@ -224,10 +224,7 @@
         "name": "{name}",
         "text": "*Olhei para o lado e vi uma garota no fundo junto à janela, o queixo apoiado na mão, olhando para fora. Enquanto escreviam meu nome no quadro, apenas uma página foi virada.*"
     },
-    "classroom_yuna_2": {
-        "name": "{name}",
-        "text": "*Cabelo branco-prateado. Olhos vermelhos. Uma tatuagem no braço. A garota no último lugar junto à janela continuava com o queixo apoiado, olhando para fora. As carteiras ao redor dela iam ficando mais vazias.*"
-    },
+    "classroom_yuna_2": {},
     "classroom_yuna_4": {
         "name": "{name}",
         "text": "*Alguém na primeira fileira sussurra: «Não fale com ela. Ela dá medo». Yuna vira uma página.*"
@@ -286,7 +283,7 @@
     },
     "classroom_dain_talk_8": {
         "name": "{name}",
-        "text": "*Depois de dizer «talvez», Dain olha para a máquina lançadora. O cesto cheio de bolas está no fundo da quadra.*"
+        "text": "*Dain desenha uma pequena quadra com o dedo na carteira, marca a linha central e me olha com uma sobrancelha erguida.*"
     },
     "classroom_yuna_note_1": {
         "name": "{name}",

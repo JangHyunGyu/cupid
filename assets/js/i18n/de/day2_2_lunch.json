@@ -39,7 +39,7 @@
     },
     "lunch2_seo_5b_dain": {
         "name": "{name}",
-        "text": "Die Brise ist schön. Und ich musste die ganze Zeit an dein Mittagessen denken."
+        "text": "Gestern habe ich mit Dain gegessen. Auf dein Essen war ich auch neugierig."
     },
     "lunch2_seo_6b_dain": {
         "name": "Seoyeon",
@@ -123,7 +123,7 @@
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "*Als Dain sich setzen will, zieht sie den freien Stuhl mit der Fußspitze zu sich heran.* Du scheinst dich mit Dain ja schon gut zu verstehen."
+        "text": "*Seoyeon schaut zu Dain gegenüber und rückt ihren eigenen Stuhl etwas näher an meinen.*"
     },
     "lunch2_seo_15": {
         "name": "{name}",
@@ -435,10 +435,7 @@
         "name": "Schulkrankenschwester",
         "text": "*Sie nimmt die Hand vom Schubladengriff.* Das ist doch ein Geheimnis wert, oder?"
     },
-    "lunch2_dain_end_v": {
-        "name": "Schulkrankenschwester",
-        "text": "*Die Krankenschwester schließt die Schublade. Der Griff wird noch einmal angedrückt.*"
-    },
+    "lunch2_dain_end_v": {},
     "lunch2_dain_end_w": {
         "name": "Schulkrankenschwester",
         "text": "So, fertig. Zurück in den Unterricht. Pass auf, dass es heute nicht nass wird."
@@ -558,7 +555,7 @@
     },
     "lunch2_yuna_9": {
         "name": "Yuna",
-        "text": "*Sie blättert eine Seite um und streicht mit der Handfläche das zerknitterte Kissen auf dem Sofa gegenüber glatt.*"
+        "text": "*Yuna legt das Lesezeichen ein, steht auf und deutet mit dem Kinn den Flur hinunter.*"
     },
     "lunch2_yuna_10": {
         "name": "Yuna",

@@ -5,7 +5,7 @@
     },
     "hidden_nurse_d5_low": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schulkrankenschwester will dir eine Karte für das Beratungszimmer geben, legt sie dann aber zurück in die Schublade.* Ich glaube nicht, dass wir gerade einen eigenen Termin vereinbaren sollten. Wenn du Hilfe brauchst, nutze bitte den offiziellen Weg. *Ich verlasse das Krankenzimmer und gehe zurück ins Klassenzimmer.*"
+        "text": "*Sie gibt mir die Beratungskarte.* Für ein längeres Gespräch vereinbaren wir einen Termin. Wenn du krank bist, komm jederzeit ins Krankenzimmer. *Ich nehme die Karte und gehe zur Klasse.*"
     },
     "morning5_start": {
         "name": "{name}",
@@ -16,7 +16,7 @@
     "morning5_temptation_counteroffer_branch": {},
     "morning5_caught_teacher_counteroffer": {
         "name": "Klassenlehrerin",
-        "text": "*Morgens im Klassenzimmer lege ich mein Handy hin, um meiner Klassenlehrerin ein Foto meines Entwurfs zu zeigen. Der Bildschirm leuchtet mit einer Nachricht des Mädchens auf, mit dem ich gestern zusammen war: 'Was gestern passiert ist, bleibt unter uns, oder?' Die Lehrerin liest sie zu Ende und nimmt ihre Hand vom Handy.* Du hast meine Nachricht gestern ignoriert, um dieses Mädchen zu treffen?",
+        "text": "*Im Klassenraum zeigt die Lehrerin die fehlende Rückmeldung in der App. Der Chat von gestern ist noch auf meinem Handy.* Du wolltest direkt heimgehen. Warum hast du die Planänderung nicht gemeldet?",
         "choices": [
             "Ihr offen erzählen, was gestern Nacht passiert ist",
             "Es als unwichtig abtun",
@@ -26,7 +26,7 @@
     },
     "morning5_caught_nurse_counteroffer": {
         "name": "Schulkrankenschwester",
-        "text": "*Sobald ich mein Handy auf die Ablage im Krankenzimmer lege, leuchtet der Bildschirm auf. Eine Nachricht des Mädchens, mit dem ich gestern zusammen war, lautet: 'Was gestern passiert ist, bleibt unter uns, oder?' Die Schulkrankenschwester will wie immer lächeln, doch dann verschwindet ihr Lächeln langsam.* Du hast meine Nachricht also nicht übersehen. Du warst bei diesem Mädchen?",
+        "text": "*Die Schulkrankenschwester zeigt die fehlende Rückmeldung.* Du wolltest heimgehen, dann kam nichts mehr. Ich habe mir Sorgen gemacht. Du hättest nur sagen müssen, wo du bist.",
         "choices": [
             "Ihr offen erzählen, was gestern Nacht passiert ist",
             "Es als unwichtig abtun",
@@ -36,19 +36,19 @@
     },
     "morning5_caught_teacher_honest": {
         "name": "Klassenlehrerin",
-        "text": "*Meine Klassenlehrerin hört schweigend zu und schließt dann das Klassenbuch.* Ich verstehe, dass du mir jetzt die Wahrheit sagst. Aber das macht mein Vertrauen in deine Worte von gestern nicht ungeschehen. Geh für heute nach Hause."
+        "text": "*Sie hört zu und schließt das Klassenbuch.* Danke für die Erklärung. Freunde zu treffen ist kein Problem. Halte nächstes Mal dein Versprechen, dich zu melden. Über das Manuskript reden wir heute nicht weiter."
     },
     "morning5_caught_teacher_lie": {
         "name": "Klassenlehrerin",
-        "text": "*Meine Klassenlehrerin blickt von der neuen Nachricht zu meinem Gesicht. Ihre Stimme wird kälter als im Unterricht.* Die Lüge, die du mir gerade erzählt hast, enttäuscht mich mehr als das, was gestern passiert ist. Geh."
+        "text": "*Sie vergleicht meine Antwort mit den Uhrzeiten.* Das passt nicht zusammen. Ändere die Geschichte nicht, um das Gespräch zu beenden. Wir reden in der Schulsprechstunde weiter."
     },
     "morning5_caught_nurse_honest": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schulkrankenschwester hört alles an, ohne zu sagen, dass es schon gut sei. Stattdessen schließt sie sorgfältig die Krankenakte.* Du würdest dich besser fühlen, wenn ich sagte, es sei in Ordnung. Aber das kann ich gerade nicht. Bitte geh für heute. *Ich verlasse das Krankenzimmer und kehre ins Klassenzimmer zurück.*"
+        "text": "*Sie hört zu und schließt die Akte.* Gut, dass du sicher heimgekommen bist. Melde Planänderungen bitte. Heute betreue ich das Fest; für ein längeres Gespräch machen wir einen Termin. *Ich gehe zurück zur Klasse.*"
     },
     "morning5_caught_nurse_lie": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schulkrankenschwester prüft die neue Nachricht und nimmt ihre Brille ab. Ihr Blick trifft meinen ohne eine Spur des gewohnten Lächelns.* Es war also keine Verletzung, die du verborgen hast. Um deine Lügen kann ich mich nicht auch noch kümmern. *Ich verlasse das Krankenzimmer und kehre ins Klassenzimmer zurück.*"
+        "text": "*Sie legt den Stift ab.* Deine Erklärung hat Widersprüche. Wenn es dir schlecht geht, komm jederzeit. Das hier klären wir mit der Beratungslehrkraft. *Ich gehe zur Klasse zurück.*"
     },
     "morning5_caught_by_seoyeon_route": {},
     "morning5_caught_by_yuna_route": {},
@@ -139,19 +139,13 @@
     },
     "morning5_counteroffer_group_talk": {
         "name": "Die beiden",
-        "text": "*Beide Blicke nageln mich fest. Was sollte die letzte Nacht bedeuten? Habe ich sie von Anfang an beide hingehalten? Keine von ihnen will zuerst zurückweichen.* „Also, wen wählst du jetzt?“",
-        "context": "Soeben ist herausgekommen, dass der Protagonist der Versuchung der letzten Nacht nachgegeben hat. Die Person, für die er sich entschieden hatte, und diejenige, die ihn verführt hat, stellen ihn nun gemeinsam im selben Klassenzimmer zur Rede. Das Gespräch setzt bei seiner Entscheidung an, die Wahrheit zu sagen oder zu lügen. Beide verlangen eine direkte Erklärung seiner Beziehungen und Absichten sowie eine klare Antwort darauf, wen er jetzt wählt, ohne die Spannung zwischen den dreien zu überspielen.",
-        "personality": "Beide behalten ihre eigene Stimme und ihren eigenen Schmerz. Die betrogene Person spricht zuerst, und die Verführerin antwortet, nachdem sie ihr zugehört hat. Im Mittelpunkt steht die Erklärung des Protagonisten: Beide befragen ihn direkt und haken bei jeder Lücke nach. Die betrogene Person fragt auf ihre eigene Art, warum er jemand anderen angenommen hat, obwohl ihre Beziehung weiterlief, ob er von Anfang an zweigleisig gefahren ist oder nur mit ihr gespielt hat. Die Verführerin übernimmt die Verantwortung dafür, den ersten Schritt gemacht und die andere verletzt zu haben. Sie empfindet Schuld, verbirgt aber nicht den Wunsch, den Protagonisten für sich zu gewinnen und von ihm gewählt zu werden. Aus Schuld allein zieht sie sich nicht zurück und gibt nicht nach. Beide dürfen einander widersprechen oder antworten, aber sie schließen den Protagonisten nicht aus und entscheiden die Beziehung nicht unter sich. Eine beantwortete Frage wird nicht wiederholt; stattdessen haken sie bei fehlenden Tatsachen, der Bedeutung der Beziehung oder seiner nächsten Entscheidung nach.",
+        "text": "*Vor der Festbesprechung stehe ich im Klassenraum den beiden Beteiligten gegenüber. Niemand geht, während wir die ausgebliebenen Nachrichten und unsere Aussagen durchgehen.*\n„Was hast du jetzt vor?“",
+        "context": "Tag 5 morgens im offenen Klassenraum. Der Spieler blieb nach einer anderen Einladung und meldete sich trotz vorheriger Zusage nicht. Seine ehrliche Erklärung oder Ausflucht wird fortgesetzt. Zwei Schülerinnen besprechen überschneidende romantische Verabredungen. Lehrerin oder Schulkrankenschwester klären dagegen als Schulpersonal die fehlende Rückmeldung, niemals als Partnerin. Die Schülerin erklärt ihre Einladung und Gefühle. Beratung und Behandlung hängen nicht von der Liebeswahl ab. Unter Schülerinnen wird eine direkte Erklärung der Absichten und Zusagen des Protagonisten verlangt.",
+        "personality": "Wenn beide Beteiligten Schülerinnen sind: Beide behalten ihre eigene Stimme und ihren eigenen Schmerz. Die betrogene Person spricht zuerst, und die Verführerin antwortet, nachdem sie ihr zugehört hat. Im Mittelpunkt steht die Erklärung des Protagonisten: Beide befragen ihn direkt und haken bei jeder Lücke nach. Die betrogene Person fragt auf ihre eigene Art, warum er jemand anderen angenommen hat, obwohl ihre Beziehung weiterlief, ob er von Anfang an zweigleisig gefahren ist oder nur mit ihr gespielt hat. Die Verführerin übernimmt die Verantwortung dafür, den ersten Schritt gemacht und die andere verletzt zu haben. Sie empfindet Schuld, verbirgt aber nicht den Wunsch, den Protagonisten für sich zu gewinnen und von ihm gewählt zu werden. Aus Schuld allein zieht sie sich nicht zurück und gibt nicht nach. Beide dürfen einander widersprechen oder antworten, aber sie schließen den Protagonisten nicht aus und entscheiden die Beziehung nicht unter sich. Eine beantwortete Frage wird nicht wiederholt; stattdessen haken sie bei fehlenden Tatsachen, der Bedeutung der Beziehung oder seiner nächsten Entscheidung nach.\nBei Schulpersonal geht es statt des obigen Liebeskonflikts um die fehlende Rückmeldung und die Verantwortung zur Kommunikation. Erwachsene sind keine Liebesrivalen und sprechen als offizielle Ansprechpartner. Die Schülerin erklärt Einladung und Gefühle respektvoll. Bereits erfolgte Abzüge nicht wiederholen.",
         "buttonText": "Antworten"
     },
-    "morning5_start_b": {
-        "name": "{name}",
-        "text": "*Beim Betreten des Klassenzimmers fallen mir drei Dinge gleichzeitig ins Auge: ein Zettel auf meinem Tisch, eine Schleife am Band einer Trainingshose und eine Benachrichtigung auf dem Sperrbildschirm.*"
-    },
-    "morning5_start_2_b": {
-        "name": "{name}",
-        "text": "*Auf meinem Tisch liegt ein Zettel. Seoyeons Handschrift.*"
-    },
+    "morning5_start_b": {},
+    "morning5_start_2_b": {},
     "morning5_mood_check": {
         "name": "System",
         "text": ""
@@ -168,10 +162,7 @@
         "name": "{name}",
         "text": "Der letzte Tag. Ich tippe nacheinander auf die drei Namen auf meinem Sperrbildschirm und schalte ihn aus, ohne einen der Chats zu öffnen."
     },
-    "morning5_gate": {
-        "name": "{name}",
-        "text": "*Am Schultor kremple ich meinen Ärmel hoch. Der rote Abdruck, der sonst um mein Handgelenk lag, ist verschwunden.*"
-    },
+    "morning5_gate": {},
     "morning5_seo_note_1": {
         "name": "{name}",
         "text": "*Auf meinem Tisch liegt ein Zettel. Seoyeons Handschrift. — 'Nimm dir heute Nachmittag kurz Zeit. Ich lasse das Dach offen. — Seoyeon'*"
@@ -194,7 +185,7 @@
     },
     "morning5_yuna_story_1": {
         "name": "{name}",
-        "text": "*Eine Figur in dem Roman legt jemandem, der in der Bibliothek schläft, eine Decke über die Schulter. — Das ist eine Szene, die nur ich kenne.*"
+        "text": "*In der Geschichte deckt jemand einen Schlafenden in der Bibliothek zu. Das haben wir nicht erlebt. Doch diese stille Fürsorge erinnert mich an Yuna.*"
     },
     "morning5_yuna_story_2": {
         "name": "{name}",
@@ -395,10 +386,7 @@
         "name": "{name}",
         "text": "*Ich denke an den Stapel der Kopien gestern auf dem hinteren Tisch im Café. Auf dem Umschlag steht die Nummer 04.*"
     },
-    "hidden_homeroom_d5_6_c": {
-        "name": "{name}",
-        "text": "*Eine Hand auf der Tischkante, beobachtet meine Klassenlehrerin, wie der Umschlag in meiner Tasche verschwindet.*"
-    },
+    "hidden_homeroom_d5_6_c": {},
     "hidden_homeroom_d5_6_d": {
         "name": "Klassenlehrerin",
         "text": "Schreib ehrlich nur über den Teil, den du gelesen hast. Deinen Namen musst du nicht dazusetzen."
@@ -419,18 +407,12 @@
         "name": "Klassenlehrerin",
         "text": "Ich hätte nicht gedacht, dass ich eines Tages bereit wäre, Rückmeldungen anzunehmen."
     },
-    "hidden_homeroom_d5_6_i": {
-        "name": "Klassenlehrerin",
-        "text": "*Sie glättet die geknickte Ecke des Manuskript-Umschlags.*"
-    },
+    "hidden_homeroom_d5_6_i": {},
     "hidden_homeroom_d5_6_j": {
         "name": "Klassenlehrerin",
         "text": "Lies es einfach bis zur Stunde des Literaturklubs am Montag."
     },
-    "hidden_homeroom_d5_6_k": {
-        "name": "{name}",
-        "text": "*Während ich auf ihre Antwort warte, fällt mir die Nummernmarke an der Ecke des Umschlags ins Auge.*"
-    },
+    "hidden_homeroom_d5_6_k": {},
     "hidden_homeroom_d5_6_l": {
         "name": "{name}",
         "text": "Ich werde es gründlich lesen."
@@ -447,10 +429,7 @@
         "name": "Klassenlehrerin",
         "text": "*Ein Mundwinkel hebt sich.* Stimmt. Schreib wenigstens eine Zeile."
     },
-    "hidden_homeroom_d5_6_p": {
-        "name": "Klassenlehrerin",
-        "text": "*Ihr Blick wandert zum Terminplan des Literaturklubs neben der Tür.*"
-    },
+    "hidden_homeroom_d5_6_p": {},
     "hidden_homeroom_d5_6_q": {
         "name": "Klassenlehrerin",
         "text": "{name}."
@@ -471,10 +450,7 @@
         "name": "Klassenlehrerin",
         "text": "Genug gedankt. Geh jetzt beim Schulfest helfen."
     },
-    "hidden_homeroom_d5_7_b": {
-        "name": "{name}",
-        "text": "*Ich stecke die Kopie mit der Nummer 04 in meine Tasche und wende mich zur Tür.*"
-    },
+    "hidden_homeroom_d5_7_b": {},
     "hidden_homeroom_d5_7_c": {
         "name": "Klassenlehrerin",
         "text": "Bring erst das Schulfest gut zu Ende. Wir sehen uns am Montag zur Besprechung im Literaturklub."
@@ -628,10 +604,7 @@
         "name": "Schulkrankenschwester",
         "text": "Dann ist gut. Und das hier ist die Erste-Hilfe-Karte."
     },
-    "hidden_nurse_d5_6_b": {
-        "name": "Schulkrankenschwester",
-        "text": "*Sie steckt die Karte in die Hülle und zeigt mir, sie in die Außentasche zu stecken, damit ich sie sofort finde.*"
-    },
+    "hidden_nurse_d5_6_b": {},
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
         "text": "*Unten auf der Karte steht ein kurzer Satz: ‚Um Hilfe bitten, bevor man sich verletzt.‘*"
@@ -664,11 +637,11 @@
     },
     "morning5_sojeong_1": {
         "name": "{name}",
-        "text": "*Ich öffne die Notizen-App. Neununddreißig unfertige Entwürfe beginnen mit „An Sojeong“.*"
+        "text": "*Ich öffne meine Notizen: angefangene Berichte über Sojeong, geschriebene und gelöschte Entschuldigungen. Entwurf neununddreißig ist noch leer.*"
     },
     "morning5_sojeong_2": {
         "name": "{name}",
-        "text": "*Einen vierzigsten schreibe ich nicht. Ich wähle den kürzesten Entwurf und sende ihn unverändert ab.*"
+        "text": "*Ich beginne keinen vierzigsten Entwurf. Ich kopiere die Entschuldigung in den Chat und drücke auf Senden.*"
     },
     "morning5_sojeong_3": {
         "name": "{name}",

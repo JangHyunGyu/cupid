@@ -13,7 +13,7 @@
     },
     "after_kakao_5": {
         "name": "{name}",
-        "text": "*Sous la zone de réponse vide, mon pouce ne fait que suivre le contour du bouton d'envoi.*"
+        "text": "*Mon visage se reflète dans l’écran noir. Je range le téléphone sans avoir répondu.*"
     },
     "after_kakao_end": {
         "name": "{name}",
@@ -67,7 +67,7 @@
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
-        "text": "*Seoyeon tient son porte-bloc droit contre sa poitrine en attendant ma réponse. Je baisse les yeux vers la zone de réponse vide.*"
+        "text": "*Seoyeon aligne les feuilles sur sa planchette. Je m’arrête pour choisir ma réponse.*"
     },
     "after1_jealousy_yuna_1": {
         "name": "Dain",
@@ -139,10 +139,7 @@
         "name": "Yuna",
         "text": "*Elle glisse le marque-page près du dos du livre et se détourne.*"
     },
-    "after_miss_yuna_4": {
-        "name": "{name}",
-        "text": "*Yuna tourne au coin du couloir sans refermer son livre. Seul le coin plié du marque-page dépasse près du dos.*"
-    },
+    "after_miss_yuna_4": {},
     "after_miss_seoyeon_1": {
         "name": "{name}",
         "text": "*En partant, je croise Seoyeon dans le couloir.*"
@@ -198,7 +195,7 @@
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
-        "text": "Ce que vous avez dit tout à l'heure — ça m'est resté."
+        "text": "Je voulais vous poser une question sur mon adaptation ici."
     },
     "after_hidden_homeroom_3_c": {
         "name": "Professeure principale",
@@ -317,11 +314,11 @@
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
-        "text": "*Au bout du couloir, le registre se referme dans un petit bruit.*"
+        "text": "*Des pas d’élèves passent dans le couloir. La professeure pousse ses dossiers sur le côté.*"
     },
     "after_homeroom_honest_10": {
         "name": "Professeure principale",
-        "text": "*La professeure cale le registre sous son bras et rentre dans la salle des profs. Le bout de la note pliée dépasse toujours entre les pages.*"
+        "text": "*Nous sortons dans le couloir devant la salle des professeurs. Elle garde le registre sous le bras et attend la suite.*"
     },
     "after_homeroom_freetalk": {
         "name": "Professeure principale",
@@ -526,7 +523,7 @@
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*Je la salue brièvement et quitte l'infirmerie. L'odeur de désinfectant me suit jusque dans le couloir.*"
+        "text": "*Je m’arrête en me levant. L’infirmière regarde l’heure et tourne sa chaise vers moi.*"
     },
     "after_nurse_freetalk": {
         "name": "Infirmière",

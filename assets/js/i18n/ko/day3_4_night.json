@@ -9,7 +9,7 @@
     },
     "night3_faithful_check": {
         "name": "{name}",
-        "text": "*읽지 않은 메시지가 떠 있다.*"
+        "text": "*휴대폰 알림을 확인한다.*"
     },
     "night3_faithful_msg_seo_1": {
         "name": "서연",
@@ -25,7 +25,7 @@
     },
     "night3_faithful_msg_yuna_1": {
         "name": "유나",
-        "text": "*유나가 노트 한 줄을 찍은 사진을 보낸다.*"
+        "text": "*유나에게서 짧은 메시지가 온다. 빌려준 노트 이야기다.*"
     },
     "night3_faithful_msg_yuna_2": {
         "name": "유나",
@@ -37,7 +37,7 @@
     },
     "night3_faithful_msg_dain_1": {
         "name": "다인",
-        "text": "발목 괜찮냐고 물어볼 거면 직접 와서 물어봐ㅋㅋ"
+        "text": "무릎 괜찮냐고 물어볼 거면 직접 와서 물어봐ㅋㅋ"
     },
     "night3_faithful_msg_dain_2": {
         "name": "다인",
@@ -49,7 +49,7 @@
     },
     "night3_dream_1": {
         "name": "{name}",
-        "text": "*꿈속에서 누군가와 나란히 걷는다. 얼굴은 보이지 않고 발소리만 같은 박자로 이어진다.*"
+        "text": "*불을 끄려다 핸드폰을 한 번 더 든다. 오늘 나란히 걷던 발소리가 생각난다.*"
     },
     "night3_dream_2_b": {
         "name": "{name}",
@@ -57,7 +57,7 @@
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*커튼 사이로 들어온 아침 햇살에 눈을 뜬다. 핸드폰 갤러리를 열어 소정이 사진까지 스크롤한 뒤 길게 누른다.*"
+        "text": "*잠들기 전 핸드폰 갤러리를 연다. 소정이 사진까지 스크롤한 뒤 길게 누른다.*"
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
-        "text": "*그래. 삭제 버튼에 올린 손가락으로 화면을 누른다.*"
+        "text": "*확인 창에서 취소를 누른다. 사진 한 장을 없앤다고 내가 했던 선택이 바뀌지는 않는다.*"
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
@@ -77,23 +77,17 @@
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*'거절도 네가 해야 할 일이야.' 민수의 말이 떠오른다. 갤러리 속 소정이는 웃고 있고 메모장 38번의 보내기 버튼은 아직 파랗다.*"
+        "text": "*사진 옆에 짧은 메모를 남긴다. 소정이에게 할 말은 새 대화방에서도 대신할 수 없다.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*갤러리에서 소정이 사진이 사라지고 빈칸만 남는다.*"
+        "text": "*새 폴더를 열어 사진이 그대로 있는지 확인한다. 폴더 이름 아래에 사진 한 장이 표시된다.*"
     },
-    "night3_faithful_reflect_4_b": {
-        "name": "{name}",
-        "text": "*빈 앨범 썸네일 위를 엄지로 문지른다.*"
-    },
-    "night3_faithful_reflect_4_c": {
-        "name": "{name}",
-        "text": "*핸드폰을 덮자 검은 화면에 갤러리의 빈칸이 겹쳐 보인다.*"
-    },
+    "night3_faithful_reflect_4_b": {},
+    "night3_faithful_reflect_4_c": {},
     "night3_dream_3": {
         "name": "{name}",
-        "text": "*알람이 울리기 전에 눈을 떴다.*"
+        "text": "*갤러리를 닫고 내일 알람을 확인한다. 휴대폰을 내려놓은 뒤에도 잠은 바로 오지 않는다.*"
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",
@@ -198,7 +192,7 @@
     },
     "night3_nightmare_dain": {
         "name": "{name}",
-        "text": "*다인의 입력창에 '기다리게 해서 미안해. 내일 말할게.'라고 쓰고 전송 아이콘 테두리를 엄지로 누른다.*"
+        "text": "*다인의 입력창에 ‘기다리게 해서 미안해. 내일 말할게.’라고 쓴다. 엄지가 전송 아이콘 위에서 멈춘다.*"
     },
     "night3_nightmare_end": {
         "name": "{name}",

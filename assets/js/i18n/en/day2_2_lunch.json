@@ -39,7 +39,7 @@
     },
     "lunch2_seo_5b_dain": {
         "name": "{name}",
-        "text": "The breeze is nice. And I kept thinking about your lunchbox."
+        "text": "I ate with Dain yesterday. I was curious about your lunch, too."
     },
     "lunch2_seo_6b_dain": {
         "name": "Seoyeon",
@@ -123,7 +123,7 @@
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "*As Dain starts to sit, Seoyeon hooks the empty chair toward herself with her toe.* Looks like you and Dain are already close."
+        "text": "*Seoyeon looks across at Dain, then moves her own chair a little closer to mine.*"
     },
     "lunch2_seo_15": {
         "name": "{name}",
@@ -435,10 +435,7 @@
         "name": "School Nurse",
         "text": "*She takes her hand off the drawer handle.* That's worth one secret, isn't it?"
     },
-    "lunch2_dain_end_v": {
-        "name": "School Nurse",
-        "text": "*The nurse closes the drawer. The handle is pressed once more.*"
-    },
+    "lunch2_dain_end_v": {},
     "lunch2_dain_end_w": {
         "name": "School Nurse",
         "text": "All done. Get back to class, and keep it dry today."
@@ -558,7 +555,7 @@
     },
     "lunch2_yuna_9": {
         "name": "Yuna",
-        "text": "*She turns a page and smooths the rumpled cushion on the opposite sofa with her palm.*"
+        "text": "*Yuna slips in her bookmark and gets up, nodding down the corridor.*"
     },
     "lunch2_yuna_10": {
         "name": "Yuna",

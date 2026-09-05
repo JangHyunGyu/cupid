@@ -253,7 +253,8 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "character": "assets/images/characters/seyoun_normal.png",
         "type": "free_talk",
         "maxTurns": 3,
-        "next": "lunch_end"
+        "next": "lunch_end",
+        "isRemote": false
     },
     "lunch_dain_1": {
         "background": "assets/images/background/store.png",
@@ -436,7 +437,8 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "character": "assets/images/characters/dain_normal.png",
         "type": "free_talk",
         "maxTurns": 3,
-        "next": "lunch_end"
+        "next": "lunch_end",
+        "isRemote": false
     },
     "lunch_yuna_1": {
         "background": "assets/images/background/library_old.png",
@@ -591,7 +593,8 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "character": "assets/images/characters/yuna_normal.png",
         "type": "free_talk",
         "maxTurns": 3,
-        "next": "lunch_end"
+        "next": "lunch_end",
+        "isRemote": false
     },
     "lunch_end": {
         "background": "assets/images/background/school_hallway.png",

@@ -1,7 +1,7 @@
 {
     "lunch3_start": {
         "name": "{name}",
-        "text": "*Hora do almoço. Quando abro a marmita, as três se reúnem no mesmo lugar. Ninguém ali desconhece os convites para o fim de semana feitos de manhã. Seoyeon se senta ao meu lado, Dain à frente, e Yuna, que comia pão em um canto, puxa uma cadeira vazia.*"
+        "text": "*Abro a marmita. Seoyeon senta ao meu lado, Dain à frente, e Yuna traz seu pão e puxa a cadeira vazia.*"
     },
     "lunch3_start_2_b": {
         "name": "Dain",
@@ -45,24 +45,15 @@
     },
     "lunch3_meal_10": {
         "name": "{name}",
-        "text": "*Três pares de hashis quase se encontram sobre o último pedaço de omelete enrolada. Acabei de sugerir que todos comam juntos.*"
+        "text": "*Três pares de hashis quase se encontram sobre o último pedaço de omelete. As três param e olham para mim.*"
     },
     "lunch3_meal_10_b": {
         "name": "{name}",
         "text": "*Resta apenas um acompanhamento no centro da marmita, e os hashis das três voltam aos seus lugares.*"
     },
-    "lunch3_meal_10_c": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon recolhe a ponta dos hashis diante da omelete enrolada.*"
-    },
-    "lunch3_meal_10_d": {
-        "name": "Dain",
-        "text": "*«Todo mundo junto?». Dain sorri, mas não puxa a cadeira para perto.*"
-    },
-    "lunch3_meal_10_e": {
-        "name": "Yuna",
-        "text": "*Yuna apenas assente. Escreve num bilhete, dobra e guarda no bolso. Não me entrega. Só uma mancha lilás-clara atravessa a borda do papel.*"
-    },
+    "lunch3_meal_10_c": {},
+    "lunch3_meal_10_d": {},
+    "lunch3_meal_10_e": {},
     "lunch3_meal_11": {
         "name": "{name}",
         "text": "*Pra quem eu ofereço?*"
@@ -100,7 +91,7 @@
     },
     "lunch3_seo_witness_1": {
         "name": "{name}",
-        "text": "*Da soleira da sala, Dain vê Seoyeon receber a comida. Move apenas os lábios e volta ao corredor.*"
+        "text": "*Dain se levanta com a garrafa vazia, olha a comida que dei a Seoyeon e sai para o corredor.*"
     },
     "lunch3_seo_witness_choice": {
         "name": "{name}",
@@ -109,7 +100,7 @@
             "Dain!",
             "Focar em Seoyeon",
             "Seria mais divertido se chamássemos a Dain também.",
-            "Fico mal de deixar a Dain sozinha. Vou chamá-la para comer com a gente."
+            "Fico mal de deixar Dain sozinha. Vou chamar ela de volta."
         ]
     },
     "lunch3_seo_chase_dain_1": {
@@ -143,7 +134,7 @@
     "lunch3_dain_skin_check": {},
     "lunch3_dain_skin_1": {
         "name": "{name}",
-        "text": "*Empolgada por vencer a aposta do almoço, Dain abre os braços e pergunta: «Posso abraçar você?». Depois de receber permissão, dá um abraço breve e, um segundo depois, se afasta para pegar a garrafa de água.*"
+        "text": "*Depois de comer, Dain abre um pouco os braços. “Posso te dar um abraço de agradecimento?” Concordo. Ela me abraça brevemente e pega a garrafa.*"
     },
     "lunch3_dain_skin_3": {
         "name": "Dain",
@@ -155,12 +146,9 @@
     },
     "lunch3_dain_witness_1": {
         "name": "{name}",
-        "text": "*Yuna olha para dentro do ginásio pelo corredor. Ao ouvir a risada de Dain, aperta a capa do livro contra o peito e segue na direção oposta. No intervalo seguinte, o lugar de Yuna está vazio.*"
+        "text": "*Yuna observa o sorriso de Dain, põe o livro junto à marmita e baixa os olhos sem dizer nada.*"
     },
-    "lunch3_dain_witness_2b": {
-        "name": "{name}",
-        "text": "*Voltei pra sala.*"
-    },
+    "lunch3_dain_witness_2b": {},
     "lunch3_give_dain_3": {
         "name": "Yuna",
         "text": "*Yuna olha pela janela enquanto segura enrolada a abertura da embalagem de pão.*"
@@ -172,7 +160,7 @@
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {
         "name": "{name}",
-        "text": "*As duas mãos ainda seguram a ponta do bilhete.*"
+        "text": "*Yuna pega um bilhete ao lado da bandeja e me entrega. Por um instante, seguramos juntos a beirada do papel.*"
     },
     "lunch3_yuna_skin_2": {
         "name": "Yuna",
@@ -188,7 +176,7 @@
     },
     "lunch3_yuna_witness_1": {
         "name": "Seoyeon",
-        "text": "Falaram que saiu cheiro de marmita da biblioteca. ...Com a Yuna?"
+        "text": "Não fique com essa cara depois de entregar na minha frente. Pode comer."
     },
     "lunch3_yuna_witness_2": {
         "name": "{name}",
@@ -204,7 +192,7 @@
     },
     "lunch3_expose_2": {
         "name": "Dain",
-        "text": "Ah, é verdade. {name}, combinamos de ir ao fliperama neste fim de semana. O que vamos comer antes?"
+        "text": "Ah, é. Já acertou todos os horários do fim de semana?"
     },
     "lunch3_expose_3": {
         "name": "{name}",
@@ -216,15 +204,15 @@
     },
     "lunch3_expose_5": {
         "name": "Seoyeon",
-        "text": "...Fliperama?"
+        "text": "Espera."
     },
     "lunch3_expose_6": {
         "name": "Seoyeon",
-        "text": "Você me disse que a gente tinha um lugar pra ir, no fim de semana."
+        "text": "Espera. Quer dizer que tem mais de um encontro?"
     },
     "lunch3_expose_7": {
         "name": "Dain",
-        "text": "...Peraí. Comigo também combinou de sair no fim de semana?"
+        "text": "Parece que cada uma ouviu uma coisa diferente sobre com quem você vai sair e quando."
     },
     "lunch3_expose_7_b": {
         "name": "{name}",
@@ -240,7 +228,7 @@
     },
     "lunch3_expose_11": {
         "name": "Yuna",
-        "text": "...Mentira. Eu também não sabia de nada."
+        "text": "Sabia que tinham te convidado. Não que você tivesse aceitado vários planos."
     },
     "lunch3_expose_12": {
         "name": "{name}",
@@ -279,10 +267,7 @@
         "name": "Seoyeon",
         "text": "*Fecha a tampa da marmita.*"
     },
-    "lunch3_expose_honest_4_b": {
-        "name": "{name}",
-        "text": "*O sorriso de Seoyeon congela. A ponta dos palitos toca a tampa da marmita.*"
-    },
+    "lunch3_expose_honest_4_b": {},
     "lunch3_expose_honest_5": {
         "name": "Seoyeon",
         "text": "Eu não quero ser uma opção pela metade. Se for assim, prefiro sair de vez."

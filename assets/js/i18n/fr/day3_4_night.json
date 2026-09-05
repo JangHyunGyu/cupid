@@ -9,7 +9,7 @@
     },
     "night3_faithful_check": {
         "name": "{name}",
-        "text": "*Un message non lu s'affiche.*"
+        "text": "*Je regarde les notifications.*"
     },
     "night3_faithful_msg_seo_1": {
         "name": "Seoyeon",
@@ -25,7 +25,7 @@
     },
     "night3_faithful_msg_yuna_1": {
         "name": "Yuna",
-        "text": "*Elle a envoyé une photo d’un mot. Une seule ligne écrite dans son carnet.*"
+        "text": "*Yuna m’envoie un bref message au sujet du cahier qu’elle m’a prêté.*"
     },
     "night3_faithful_msg_yuna_2": {
         "name": "Yuna",
@@ -37,7 +37,7 @@
     },
     "night3_faithful_msg_dain_1": {
         "name": "Dain",
-        "text": "Si tu veux demander pour ma cheville, viens me le demander en personne mdr"
+        "text": "Si tu veux demander comment va mon genou, viens me le demander en personne haha"
     },
     "night3_faithful_msg_dain_2": {
         "name": "Dain",
@@ -49,7 +49,7 @@
     },
     "night3_dream_1": {
         "name": "{name}",
-        "text": "*Dans mon rêve, je marche à côté de quelqu'un. Je ne vois pas son visage ; seuls nos pas continuent au même rythme.*"
+        "text": "*Avant d’éteindre, je reprends mon téléphone. Je repense aux pas qui accompagnaient les miens aujourd’hui.*"
     },
     "night3_dream_2_b": {
         "name": "{name}",
@@ -57,7 +57,7 @@
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*J'ouvre les yeux. Le soleil du matin filtre entre les rideaux. Je prends mon téléphone, ouvre la galerie et m'arrête sur la photo de Sojeong, puis je maintiens le doigt dessus.*"
+        "text": "*Avant de dormir, j’ouvre la galerie, trouve la photo de Sojeong et garde le doigt dessus.*"
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
-        "text": "*...D'accord. Je pose le doigt sur le bouton Supprimer — et j'appuie.*"
+        "text": "*J’appuie sur Annuler. Effacer une photo ne changerait pas le choix que j’ai fait.*"
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
@@ -77,23 +77,17 @@
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*Minsu l'a dit : « Dire non, c'est aussi à toi de le faire. » Sojeong sourit toujours dans la galerie. La note numéro trente-huit n'a jamais été envoyée. Seul le bouton Envoyer est bleu.*"
+        "text": "*Je laisse une note près de la photo. Aucune nouvelle conversation ne remplace ce que je dois dire à Sojeong.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*La photo de Sojeong a disparu de la galerie. Il ne reste qu'un emplacement vide.*"
+        "text": "*J’ouvre le nouveau dossier pour vérifier que la photo est toujours là. Une image apparaît sous son nom.*"
     },
-    "night3_faithful_reflect_4_b": {
-        "name": "{name}",
-        "text": "*Je frotte du pouce la vignette vide de l'album.*"
-    },
-    "night3_faithful_reflect_4_c": {
-        "name": "{name}",
-        "text": "*Je referme le téléphone. L'espace vide de la galerie se reflète sur l'écran noir.*"
-    },
+    "night3_faithful_reflect_4_b": {},
+    "night3_faithful_reflect_4_c": {},
     "night3_dream_3": {
         "name": "{name}",
-        "text": "*Je me réveille avant que l'alarme sonne.*"
+        "text": "*Je ferme la galerie et vérifie le réveil. Même après avoir posé le téléphone, le sommeil tarde à venir.*"
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",
@@ -198,7 +192,7 @@
     },
     "night3_nightmare_dain": {
         "name": "{name}",
-        "text": "*Dans la zone de saisie de Dain, j'écris : « Pardon de t'avoir fait attendre. Je te parlerai demain. » Du pouce, j'appuie sur le contour de l'icône Envoyer.*"
+        "text": "*J’écris à Dain : « Désolé de t’avoir fait attendre. On parlera demain. » Mon pouce reste au-dessus du bouton d’envoi.*"
     },
     "night3_nightmare_end": {
         "name": "{name}",

@@ -63,11 +63,11 @@
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*Während ich das Pflaster prüfe, ragt ein hellgrünes Notizbuch aus der Schreibtischschublade. Die erste Zeile der offenen Seite lautet: ‚An dich von damals —‘ Die Krankenschwester schließt die Schublade.*"
+        "text": "*Die Schulkrankenschwester wirft die Pflasterverpackung weg. Die vorhin geschlossene Schublade bleibt zu.*"
     },
     "hidden_nurse_d2_7": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie schließt die Schublade.* Das hast du nicht gesehen, oder? Gut. Reden wir über den Papierkram."
+        "text": "*Sie bemerkt meinen Blick und legt die Hand auf den Griff.* Das Thema ist abgeschlossen. Neugier öffnet diese Schublade nicht."
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",
@@ -81,7 +81,7 @@
     },
     "hidden_nurse_d2_choice2_a": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie tippt mit dem Zeigefinger gegen die geschlossene Schublade.* Nur eins? Hm, na gut. Ich mag Kakao lieber als Kaffee. Das ist das Geheimnis."
+        "text": "*Sie tippt auf die Schublade.* Das mit dem Kakao reicht. Kein zweites Geheimnis."
     },
     "hidden_nurse_d2_choice2_b": {
         "name": "Schulkrankenschwester",
@@ -91,10 +91,7 @@
         "name": "Schulkrankenschwester",
         "text": "So, fertig. Halte es heute trocken."
     },
-    "hidden_nurse_d2_9": {
-        "name": "{name}",
-        "text": "*Mit dem Hinweis, wiederzukommen, falls sich das Pflaster löst oder Blut durchsickert, verlasse ich das Krankenzimmer.*"
-    },
+    "hidden_nurse_d2_9": {},
     "after2_choice": {
         "name": "{name}",
         "text": "*Wohin soll ich gehen?*",
@@ -150,7 +147,7 @@
     },
     "after2_dain_9_d": {
         "name": "Dain",
-        "text": "Jetzt wird's ernst!"
+        "text": "Gut, Schluss mit dem Aufschlagtraining! Jetzt Ballwechsel, wer zuerst drei Punkte hat, gewinnt!"
     },
     "after2_dain_9_e": {
         "name": "{name}",
@@ -200,10 +197,7 @@
         "name": "Dain",
         "text": "*Als wir den Laden betreten, schiebt sie den Tteokbokki-Becher näher heran und hebt die Stäbchen.* Heute sehe ich, wie gut du Scharfes verträgst."
     },
-    "after2_dain_end": {
-        "name": "{name}",
-        "text": "*Dain schiebt den Tteokbokki-Becher zu mir und reißt dann zuerst die Verpackung ihrer eigenen Stäbchen auf.*"
-    },
+    "after2_dain_end": {},
     "after2_dain_end_first": {
         "name": "{name}",
         "text": "*Dain stellt zwei Becher Tteokbokki mit einem Knall ab und reißt die Stäbchenverpackung auf.*"
@@ -308,10 +302,7 @@
         "name": "{name}",
         "text": "*Wir fangen mit dem Sortieren an. Veranstaltungsbudgets, Clubanträge. Ein ordentlicher Stapel.*"
     },
-    "after2_seo_7": {
-        "name": "Seoyeon",
-        "text": "*Sie dreht sich nicht sofort um. Das Klemmbrett zeigt noch zur Tür. Erst als die Schritte von {name} zu hören sind, geht sie los.*"
-    },
+    "after2_seo_7": {},
     "after2_seo_8": {
         "name": "Seoyeon",
         "text": "Die hier nach Datum, die dort nach Schulclub. — Kannst du gut sortieren?"
@@ -471,10 +462,7 @@
         "name": "Seoyeon",
         "text": "*Mit beiden Händen drückt sie den fertigen Stapel flach und richtet seine Kanten aus.*"
     },
-    "after2_seo_end": {
-        "name": "{name}",
-        "text": "*Als ich den Schülerratsraum verlasse, schalten sich die automatischen Flurlichter vor mir Abschnitt für Abschnitt ein.*"
-    },
+    "after2_seo_end": {},
     "after2_seo_skinship_1": {
         "name": "Seoyeon",
         "text": "*Sie streckt die Hand aus. Entfernt ein Stäubchen von meinem Kragen. Ihre Hand streift meinen Hals.*"
@@ -589,7 +577,7 @@
         "choices": [
             "Soll ich jeden Tag kommen?",
             "Es ist schön, weil es ruhig ist",
-            "Mit dir ist es angenehm, weil wir nicht unbedingt reden müssen."
+            "Hier ist schön wenig los. Da würde ich mich mit jedem wohlfühlen."
         ]
     },
     "after2_yuna_everyday": {
@@ -618,7 +606,7 @@
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "*Auf dem Platz, an dem Yuna und ich nebeneinandersaßen, liegt noch ein Ohrhörer. Bevor ich den Anbau verlasse, schalte ich mein Handy ein.*"
+        "text": "*Es wird Zeit, die Bücher zu schließen. Ich ziehe meine Tasche heran, während Yuna ihre Sachen vom Sofa nimmt.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",
@@ -662,7 +650,7 @@
     },
     "after2_group_seoyeon_companion": {
         "name": "Seoyeon und Begleitung",
-        "text": "*Seoyeon tippt mit dem Finger auf zwei überlappende Termine. Auch ihr Gegenüber gibt nicht nach.* „Wir beide brauchen deine Hilfe. Wem hilfst du zuerst?“",
+        "text": "*Wir kehren in den Schülervertretungsraum zurück und prüfen die verbleibende Zeit. Seoyeon tippt mit dem Finger auf zwei überlappende Termine. Auch ihr Gegenüber gibt nicht nach.* „Wir beide brauchen deine Hilfe. Wem hilfst du zuerst?“",
         "context": "Während der Protagonist und Seoyeon den Nachmittagsplan ordnen, kommt die andere Figur mit der höchsten Zuneigung mit einem eigenen Termin oder einer Bitte dazu. Die Arbeit des Schülerrats überschneidet sich mit einer anderen Schulaktivität, und die drei müssen sich einigen. Seoyeon fragt klar, wem der Protagonist zuerst helfen wird.",
         "personality": "Es wirkt wie ein kleines Terminproblem, doch beide achten darauf, wen der Protagonist bevorzugt. Lass daraus keine offene Feindseligkeit oder Demütigung werden. Weicht er aus, verlangt jede Figur auf ihre Art eine Antwort. Wird eine gewählt, tut die andere nicht gezwungen so, als mache es ihr nichts aus.",
         "groupLocation": "Schülerratsraum",
@@ -671,7 +659,7 @@
     },
     "after2_group_yuna_companion": {
         "name": "Yuna und Begleitung",
-        "text": "*Zwei Stapel müssen sortiert werden, doch die Zeit reicht kaum für einen. Yuna nimmt einen Ohrhörer heraus und blickt über den Tisch.* „Wenn du nur einen mit uns fertig bekommst – bei wem bleibst du?“",
+        "text": "*Wir gehen zurück in den Anbau und breiten die zu sortierenden Unterlagen aus. Zwei Stapel müssen sortiert werden, doch die Zeit reicht kaum für einen. Yuna nimmt einen Ohrhörer heraus und blickt über den Tisch.* „Wenn du nur einen mit uns fertig bekommst – bei wem bleibst du?“",
         "context": "Während der Protagonist und Yuna Material im Bibliotheksanbau sortieren, kommt die andere Figur mit der höchsten Zuneigung mit weiteren Unterlagen oder einer dringenden Bitte dazu. Die Zeit reicht nur, um eine der beiden Aufgaben ordentlich zu beenden. Yuna fragt kurz und direkt, bei wem der Protagonist bleibt.",
         "personality": "Yuna verlangt eine knappe, genaue Entscheidung, während die Begleitung auf ihre eigene Art nicht zurückweicht. Erzwinge keine Versöhnung und erfinde nicht sofort eine Lösung, die beide zufriedenstellt. Die Antwort darf eine Person erleichtern und die andere enttäuschen.",
         "groupLocation": "Bibliotheksanbau",
@@ -680,11 +668,11 @@
     },
     "after2_group_dain_companion": {
         "name": "Dain und Begleitung",
-        "text": "*Die Berichte aus Turnhalle und Anbau passen nicht zusammen. Dain klemmt einen Ball an die Seite und sieht mich direkt an.* „Wenn unsere Geschichten nicht übereinstimmen, wem glaubst du zuerst?“",
-        "context": "Während der Protagonist und Dain die Turnhalle aufräumen, kommt die andere Figur mit der höchsten Zuneigung mit einer abweichenden Schilderung eines kleinen Vorfalls am Anbau dazu. Die Aussagen widersprechen sich, und jemand muss entscheiden, welcher zuerst nachgegangen wird. Dain fragt, wessen Wort der Protagonist zuerst vertraut.",
+        "text": "*Wir gehen zum Ballwagen in die Halle zurück. Die Begleitung sagt, die Lageraufsicht wolle zuerst Festmaterial. Dain greift den Wagen.* „Mir wurde gesagt, erst die Bälle. Welche Anweisung prüfst du zuerst?“",
+        "context": "Auf dem Heimweg kehrten sie zur Halle zurück, um den Wagen abzugeben. Die Begleitung sollte zuerst Festmaterial bringen, Dain zuerst Bälle. Nur die Reihenfolge widerspricht sich; kein Unfall oder Lügner steht fest. Bei knapper Zeit muss der Spieler sagen, wessen Anweisung er zuerst prüft und wem er hilft.",
         "personality": "Erfinde weder einen schweren Unfall noch eine böswillige Lüge. Es geht nicht um die objektive Lösung eines Rätsels, sondern darum, wem der Protagonist zuerst glaubt. Dain verlangt offen eine Antwort, und die Begleitung zieht sich nicht in eine Nebenrolle zurück. Die Antwort darf eine der beiden verletzen.",
         "groupLocation": "Turnhalle",
-        "groupChoiceState": "die Aussagen aus Turnhalle und Anbau widersprechen sich und der Protagonist muss sagen, wem er zuerst glaubt",
+        "groupChoiceState": "Entscheiden, wessen Anweisung zuerst geprüft wird und ob Ballwagen oder Festmaterial zuerst zurückkommt",
         "groupAftermathCause": "wem der Protagonist in der Turnhalle zuerst geglaubt hat und warum"
     },
     "after2_group_return": {

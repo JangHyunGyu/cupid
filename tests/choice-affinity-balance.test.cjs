@@ -257,7 +257,7 @@ test('neutral student routes continue through confession into rival temptation r
         assert.deepEqual(scenes[route.tentativeEnd].setFlags, [route.tentativeFlag]);
         assert.equal(scenes[route.tentativeEnd].next, 'pre_confess_minsu');
         assert.equal(renderer.resolveAffinityGuard(scenes[route.confession]), null);
-        assert.equal(renderer.resolveNextScene(scenes.day4_student_night_branch), route.rivalRouter);
+        assert.equal(renderer.resolveNextScene(scenes.day4_student_night_branch), route.rivalRouter.replace('_rival_rank', '_1'));
         assert.equal(renderer.resolveNextScene(scenes[route.rivalRouter]), route.counteroffer);
     }
 });
@@ -450,7 +450,7 @@ test('two-option screens retain their original response and add the trap as a th
 test('ordinary safe-only dialogue screens add a localized third trap without changing the best route', () => {
     const traps = [
         ['after_hidden_homeroom_choice', 'Teacher', -2, '전학생이라고 특별히 챙기실 필요는 없는데요.', 'after_homeroom_choice_trap', 'teacher_worried.png'],
-        ['hidden_homeroom_d2_choice2', 'Teacher', -3, '그럼 저한테 커피까지 주신 것도 업무예요?', 'hidden_homeroom_d2_choice2_trap', 'teacher_angry.png'],
+        ['hidden_homeroom_d2_choice2', 'Teacher', -3, '따로 불러서 챙겨주시는 것도 업무예요?', 'hidden_homeroom_d2_choice2_trap', 'teacher_angry.png'],
         ['after2_seo_choice2', 'Seoyeon', -3, '이 정도는 혼자 마무리할 수 있지?', 'after2_seo_choice2_trap', 'seyoun_pout.png'],
         ['hidden_homeroom_d3_reveal_choice', 'Teacher', -4, '7년이면 이제 접을 때도 되지 않았어요?', 'hidden_homeroom_d3_reveal_choice_trap', 'teacher_sad.png'],
         ['hidden_nurse_d3_choice1', 'Nurse', -3, '병원이 싫어서 학교로 오신 거예요?', 'hidden_nurse_d3_choice1_c', 'nurse_worried.png'],
@@ -761,7 +761,7 @@ test('authored routes preserve the shared 120 ceiling after added group turns', 
         Yuna: [
             ['lunch_yuna_4'], ['lunch_yuna_choice', 0], ['lunch2_yuna_3_yuna'],
             ['lunch2_yuna_choice', 1], ['after2_yuna_2'], ['after2_yuna_choice', 0],
-            ['night2_reply_yuna_1'], ['night2_reply_yuna_react_high'],
+            ['night2_reply_yuna_1_established'], ['night2_reply_yuna_react_high'],
             ['morning3_date_yuna_choice', 0], ['lunch3_give_yuna_1'],
             ['after3_yuna_choice', 1], ['night3_dream_yuna_bonus'],
             ['date_yuna_compliment_choice', 1], ['date_yuna_pretty_high'],
@@ -769,7 +769,7 @@ test('authored routes preserve the shared 120 ceiling after added group turns', 
         ],
         Dain: [
             ['lunch_dain_2'], ['lunch_dain_choice', 0], ['lunch2_dain_2'],
-            ['lunch2_dain_choice', 2], ['after2_dain_1'], ['night2_reply_dain_1'],
+            ['lunch2_dain_choice', 2], ['after2_dain_1'], ['night2_reply_dain_1_established'],
             ['night2_reply_dain_react_high'], ['morning3_date_dain_choice', 0],
             ['lunch3_give_dain_1'], ['after3_dain_choice', 1],
             ['after3_dain_dilemma_final', 1], ['night3_dream_dain_bonus'],
@@ -1021,7 +1021,7 @@ test('ranked rival routing selects the strongest nonnegative rival without check
     assert.equal(renderer.resolveNextScene(scenes.wall_yuna_rival_rank), 'wall_yuna_dain_tempt_1');
 
     Object.assign(affinities, { Seoyeon: 59, Dain: -1, Yuna: -30 });
-    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_1', 'a rival below zero must skip the temptation and continue the lead route');
+    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_to_park', 'a rival below zero must skip the temptation and continue to the agreed meeting');
     Object.assign(affinities, { Seoyeon: 80, Dain: 0, Yuna: -20 });
     assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_glimpse_1', 'a rival at zero must satisfy the threshold');
     Object.assign(affinities, { Seoyeon: 50, Dain: 80, Yuna: 30 });
@@ -1031,7 +1031,7 @@ test('ranked rival routing selects the strongest nonnegative rival without check
     assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_glimpse_1', 'the route lead rank must not block the strongest rival');
 
     Object.assign(affinities, { Seoyeon: 80, Dain: -1, Yuna: -10 });
-    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_1', 'negative rivals must not initiate an intimate counteroffer');
+    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_to_park', 'negative rivals must not initiate an intimate counteroffer');
 });
 
 test('day-five continuity keeps availability, history, affinity, and final choice separate', () => {
@@ -1177,14 +1177,14 @@ test('rival affinity is checked before the wall scene and free talk exits cleanl
     for (const [route, short] of studentRoutes) {
         const rankId = `wall_${short}_rival_rank`;
         const routeBranch = scenes.day4_student_night_branch.branches.find(branch => branch.condition === `route_${route}`);
-        assert.equal(routeBranch.next, rankId);
+        assert.equal(routeBranch.next, `wall_${short}_1`);
         assert.equal(scenes[`wall_${short}_freetalk`].next, 'day4_student_return_home');
         assert.equal(scenes.day4_student_return_home.next, 'day4_hidden_msg_branch');
         assert.equal(scenes[rankId].minLeadAffinity, undefined);
         assert.equal(scenes[rankId].minRivalAffinity, 0);
         assert.equal(scenes[rankId].leadCharacter, undefined);
         assert.equal(scenes[rankId].maxLeadRank, undefined);
-        assert.equal(scenes[rankId].rankedRivalFallback, `wall_${short}_1`);
+        assert.equal(scenes[rankId].rankedRivalFallback, { seo: 'wall_seo_to_park', dain: 'wall_dain_4', yuna: 'wall_yuna_2' }[short]);
     }
 
     for (const rankId of ['day4_adult_teacher_student_rank', 'day4_adult_nurse_student_rank']) {
@@ -1364,8 +1364,8 @@ test('adult day-four routes use the strongest nonnegative student rival without 
     const renderer = createSceneRenderer(affinities);
 
     assert.deepEqual(scenes.day4_night_branch.branches, [
-        { condition: 'homeroom_day4', next: 'day4_adult_teacher_student_rank' },
-        { condition: 'nurse_day4', next: 'day4_adult_nurse_student_rank' },
+        { condition: 'homeroom_day4', next: 'day4_teacher_checkin' },
+        { condition: 'nurse_day4', next: 'day4_nurse_checkin' },
         { next: 'day4_student_night_branch' }
     ]);
     assert.equal(scenes.day4_adult_teacher_overall_rank, undefined);
@@ -1425,13 +1425,13 @@ test('day 2 through 5 rivalry copy stays synchronized across every supported loc
         'after5_farewell_dain_2', 'after5_farewell_dain_4', 'after5_farewell_dain_4_c'
     ];
     const expectedDigests = {
-        ko: 'b3281d8c667b0af80a4c29a02478fb2ddd0cb14ed773b48f9903ced6137eca77',
-        en: 'c6c552353f4fd6b2ff8afe6e954c6bc1104f8750e168559dddb93ebab7cc4adb',
-        ja: 'ff0cc94f7f3b5fc7fe80ccce53103dc5ca5d7b6e7ed7528fedd426a3190081f6',
-        es: '1f683e4e13756b44ef335c8aa307259dd5a574cdf4d1ff56e3b26d82b02d487e',
-        fr: 'e7cbcbc51cd0f8b54290a310a0edc76bd9c7e2fa0195af4747056c5d2d0c6632',
-        de: '7ace751517f545c4596fa9541828a546f768b79f5d9870129fc3a20f47e02542',
-        pt: '022b8b91941226ede4a05823b52c4a40e55875eaa12005b4ffe302e84849510d'
+        "ko": "fe952342c33c5d94de730f07e766be82c5baa08e75877be6027d9081f4c1532b",
+        "en": "13c8d569a4cabba80c51e965a22c289afb7f1918e00799f82887befcb36ac834",
+        "ja": "7e1f2e535dfaab0255cb4362340bb8b9834acb672fb95a75938740a2dc49c0ff",
+        "es": "886cd79cec1ddf9fc1afe0c6f881a5e143370a4021d4c38d65e4549368ce82d6",
+        "fr": "a841d64a9b8ed6afd70722fdc34b327e5fc4159ffdbc4f06da4ad033ab1050b1",
+        "de": "124d024d5c423e3cb9ffb9270b38250ebc3d8f049b33425e38abaecd90e14124",
+        "pt": "2f5506a0a31b6013f343b8bcf8f17f445f187cab45da722502bd1f0cf66cb107"
     };
 
     for (const [locale, expectedDigest] of Object.entries(expectedDigests)) {
@@ -1469,7 +1469,7 @@ test('character-specific trap choices retain their understated Korean wording an
         ['hidden_nurse_d2_choice1', 1, { Nurse: -2 }, '밴드 하나도 꼼꼼하시네요.'],
         ['hidden_nurse_d2_choice2', 1, { Nurse: -3 }, '네, 안 봤어요'],
         ['after2_seo_choice1', 1, { Seoyeon: -3 }, '매일 하는 거면 익숙하겠네.'],
-        ['after2_yuna_choice', 2, { Yuna: -3 }, '너랑 있으면 굳이 말 안 해도 돼서 편해.'],
+        ['after2_yuna_choice', 2, { Yuna: -3 }, '여긴 사람이 별로 없어서 좋다. 누구랑 와도 편하겠어.'],
         ['hidden_homeroom_d3_choice', 1, { Teacher: -3 }, '죄송합니다, 안 봤어요.'],
         ['hidden_homeroom_d4_cafe_choice', 2, { Teacher: -4 }, '선생님 글이면 애들도 좋다고 하겠네요.'],
         ['hidden_nurse_d4_name_choice', 2, { Nurse: -3 }, '학교에선 크게 다칠 일도 드물어서 마음은 좀 편하시겠어요.'],

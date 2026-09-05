@@ -291,8 +291,8 @@ class FreeTalkSystem {
         if (memories.length > 0) {
             const header = { es: "\n\n[Eventos y Recuerdos Recientes]:\n", ja: "\n\n[直近の出来事と記憶]\n", en: "\n\n[Recent Events & Memories]:\n", fr: "\n\n[Événements et souvenirs récents] :\n", de: "\n\n[Aktuelle Ereignisse & Erinnerungen]:\n", pt: "\n\n[Eventos e Memórias Recentes]:\n" }[lang] || "\n\n[최근 사건과 기억]\n";
             sections.push(header + memories.map(m => {
-                let text = { es: m.es, ja: m.ja, en: m.en, fr: m.fr, de: m.de, pt: m.pt }[lang] || m.ko;
-                if (!text) text = m.en || m.ko;
+                const memory = m.variants?.find(variant => this.stateManager.getFlag(variant.condition)) || m;
+                let text = memory[lang] || memory.ko || memory.en;
                 return `- ${text.replace(/{name}/g, this.stateManager.playerName)}`;
             }).join("\n"));
         }
@@ -328,6 +328,49 @@ class FreeTalkSystem {
      * @param {Object} scene - 씬 데이터
      * @param {string} sceneId - 씬 ID
      */
+    _getFreeTalkCheckpoint(scene, sceneId, history = []) {
+        const saved = this.stateManager.freeTalkCheckpoint;
+        if (saved?.sceneId === sceneId) return saved;
+        const maxTurns = scene.maxTurns || DEFAULT_MAX_FREE_TALK_TURNS;
+        if (scene.type === 'group_free_talk') {
+            const turns = (this.stateManager.groupConversationMemories || []).filter(turn => turn.sessionId === sceneId);
+            if (turns.length) {
+                const lastTurn = turns.at(-1);
+                const completed = this.stateManager.getFlag?.(`messaged_${sceneId}`);
+                const roles = scene.groupParticipants === 'counteroffer_confrontation' ? ['lead', 'tempter'] : ['focus', 'companion'];
+                return {
+                    sceneId,
+                    turns: completed ? maxTurns : Math.min(maxTurns, turns.length),
+                    participants: lastTurn.participants.map((id, index) => ({ id, role: roles[index], side: index === 0 ? 'left' : 'right' })),
+                    lastReply: lastTurn.assistantMessages?.at(-1)
+                };
+            }
+        }
+        if (this.stateManager.getFlag?.(`messaged_${sceneId}`)) {
+            return { sceneId, turns: maxTurns, completed: true };
+        }
+        // Older saves have the opening and replies but no explicit turn checkpoint.
+        const opening = scene.text ? history.findLastIndex(message => (
+            message.role === 'assistant' && message.content === scene.text
+        )) : -1;
+        if (opening < 0) return null;
+        const replies = history.slice(opening + 1).filter(message => message.role === 'assistant');
+        return { sceneId, turns: Math.min(maxTurns, replies.length), lastReply: replies.at(-1) || history[opening] };
+    }
+
+    _commitFreeTalkCheckpoint(lastReply = null) {
+        const previous = this.stateManager.freeTalkCheckpoint;
+        const completed = this.freeTalkTurns >= this.currentMaxTurns;
+        this.stateManager.freeTalkCheckpoint = {
+            sceneId: this.currentSceneId,
+            turns: this.freeTalkTurns,
+            completed,
+            participants: this.isGroupMode ? this.groupParticipants.map(participant => ({ ...participant })) : [],
+            lastReply: lastReply || (previous?.sceneId === this.currentSceneId ? previous.lastReply : null)
+        };
+        if (completed) this.stateManager.setFlag(`messaged_${this.currentSceneId}`);
+    }
+
     async startFreeTalk(scene, sceneId) {
         if (scene?.type === 'group_free_talk') {
             return this.startGroupFreeTalk(scene, sceneId);
@@ -361,6 +404,8 @@ class FreeTalkSystem {
         const canonicalMemory = this.stateManager.getChatMemory(charKey);
         const legacyMemory = charKey !== scene.name ? this.stateManager.getChatMemory(scene.name) : [];
         this.freeTalkHistory = [...(canonicalMemory.length ? canonicalMemory : legacyMemory)];
+        const checkpoint = this._getFreeTalkCheckpoint(scene, sceneId, this.freeTalkHistory);
+        this.freeTalkTurns = Math.min(this.currentMaxTurns, checkpoint?.turns || 0);
 
         // 🔍 현재 배경 이미지로 장소 유추
         const locNames = {
@@ -375,11 +420,21 @@ class FreeTalkSystem {
             library:        { es: "Biblioteca", ja: "図書館", en: "Library", fr: "Bibliothèque", de: "Bibliothek", pt: "Biblioteca", ko: "도서관" },
             arcade:         { es: "Sala de juegos", ja: "ゲームセンター", en: "Arcade", fr: "Salle d'arcade", de: "Spielhalle", pt: "Fliperama", ko: "오락실" },
             bookstore:      { es: "Librería", ja: "書店", en: "Bookstore", fr: "Librairie", de: "Buchhandlung", pt: "Livraria", ko: "서점" },
-            home_room:      { es: "Mi habitación", ja: "自分の部屋", en: "My Room", fr: "Ma chambre", de: "Mein Zimmer", pt: "Meu quarto", ko: "주인공의 방" }
+            home_room:      { es: "Mi habitación", ja: "自分の部屋", en: "My Room", fr: "Ma chambre", de: "Mein Zimmer", pt: "Meu quarto", ko: "주인공의 방" },
+            student_room:   { es: "Sala del consejo estudiantil", ja: "生徒会室", en: "Student council room", fr: "Salle du conseil des élèves", de: "Schülervertretungsraum", pt: "Sala do conselho estudantil", ko: "학생회실" },
+            teacher_office: { es: "Sala de profesores", ja: "職員室", en: "Teachers’ office", fr: "Salle des professeurs", de: "Lehrerzimmer", pt: "Sala dos professores", ko: "교무실" },
+            yuna_hideout:   { es: "Sala de lectura del anexo", ja: "別館の読書室", en: "Annex reading room", fr: "Salle de lecture de l’annexe", de: "Leseraum im Anbau", pt: "Sala de leitura do anexo", ko: "별관 독서실" },
+            cafe:          { es: "Cafetería", ja: "カフェ", en: "Café", fr: "Café", de: "Café", pt: "Café", ko: "카페" },
+            park:          { es: "Parque", ja: "公園", en: "Park", fr: "Parc", de: "Park", pt: "Parque", ko: "공원" },
+            school_back:   { es: "Entrada trasera de la escuela", ja: "学校の裏門", en: "School back gate", fr: "Entrée arrière du lycée", de: "Hinteres Schultor", pt: "Portão dos fundos da escola", ko: "학교 후문" },
+            nurse_house:   { es: "Casa de Juwon", ja: "ジュウォンの家", en: "Juwon’s home", fr: "Chez Juwon", de: "Juwons Zuhause", pt: "Casa de Juwon", ko: "주원의 집" },
+            dain_broadcast_booth: { es: "Cabina de retransmisión", ja: "中継ブース", en: "Broadcast booth", fr: "Cabine de commentaire", de: "Kommentatorenkabine", pt: "Cabine de transmissão", ko: "중계 부스" }
         };
         let locationName = locNames.default[lang] || locNames.default.ko;
-        const bgUrl = this.uiManager.bgLayer.style.backgroundImage;
-        const locKeys = ['room_school', 'school_hallway', 'school.png', 'top_school', 'playground', 'gym', 'nurse_room', 'library', 'arcade', 'bookstore', 'home_room'];
+        const bgUrl = scene.background || this.uiManager.bgLayer.style.backgroundImage;
+        locNames.room_my = locNames.home_room;
+        locNames.library_old = locNames.yuna_hideout;
+        const locKeys = Object.keys(locNames).filter(key => key !== 'default').sort((a, b) => b.length - a.length);
         for (const key of locKeys) {
             if (bgUrl.includes(key)) {
                 locationName = locNames[key][lang] || locNames[key].ko;
@@ -422,11 +477,11 @@ class FreeTalkSystem {
             "nachricht", "anruf", "telefon", "chat", "senden",
             "mensagem", "ligação", "telefone", "enviar"
         ];
-        const isRemote = scene.isRemote === true || remoteKeywords.some(k =>
+        const isRemote = scene.isRemote === true || (scene.isRemote !== false && remoteKeywords.some(k =>
             (scene.context && scene.context.toLowerCase().includes(k)) ||
             (scene.buttonText && scene.buttonText.toLowerCase().includes(k)) ||
             (scene.text && scene.text.toLowerCase().includes(k))
-        );
+        ));
         this._isRemote = isRemote;
 
         const mediumInstruction = isRemote
@@ -509,7 +564,7 @@ class FreeTalkSystem {
         // UI 상태 초기화
         // ─────────────────────────────────────────────────────────────
         // 남은 대화 턴 수 표시 (요소가 있는 경우에만)
-        if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns;
+        if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
 
         // 스킵 버튼 활성화 (대화 중단 가능하도록)
         if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;
@@ -526,8 +581,9 @@ class FreeTalkSystem {
         // ─────────────────────────────────────────────────────────────
         // 캐릭터가 먼저 말을 거는 상황 (예: "안녕! 무슨 일이야?")
         // → 타이핑 효과로 표시하고, AI 대화 기록에도 추가
-        if (scene.text) {
-            await this.dialogueSystem.typeText(scene.text, scene.name, null, () => (
+        const displayReply = checkpoint?.lastReply;
+        if (displayReply?.content || scene.text) {
+            await this.dialogueSystem.typeText(displayReply?.content || scene.text, displayReply?.speakerName || scene.name, displayReply?.segments || null, () => (
                 this._freeTalkEpoch === startEpoch
                 && this.currentSceneId === sceneId
                 && this.currentCharKey === charKey
@@ -541,13 +597,18 @@ class FreeTalkSystem {
                 || !this.isFreeTalking) {
                 return;
             }
-            startHistory.push({
+            if (!checkpoint) startHistory.push({
                 role: "assistant",
                 content: scene.text,
                 speakerId: charKey,
                 speakerName: scene.name
             });
             this.stateManager.setChatMemory(charKey, startHistory);
+        }
+        this._commitFreeTalkCheckpoint(displayReply || { content: scene.text || '', speakerId: charKey, speakerName: scene.name });
+        if (this.freeTalkTurns >= this.currentMaxTurns) {
+            this.endFreeTalk();
+            return;
         }
 
         // 초기 대사 출력 후 입력창에 포커스 (모바일 키보드 활성화)
@@ -762,7 +823,10 @@ class FreeTalkSystem {
     async startGroupFreeTalk(scene, sceneId) {
         if (this.isFreeTalking) return;
         const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
-        const participants = this._resolveGroupParticipants(scene, lang);
+        const checkpoint = this._getFreeTalkCheckpoint(scene, sceneId);
+        const participants = checkpoint?.participants?.length === 2
+            ? checkpoint.participants.map(participant => ({ ...participant, name: this._getLocalizedGroupCharacterName(participant.id, lang) }))
+            : this._resolveGroupParticipants(scene, lang);
         if (participants.length !== 2) {
             throw new Error('Could not resolve the two participants for Cupid group free talk');
         }
@@ -771,8 +835,8 @@ class FreeTalkSystem {
         this.isFreeTalking = true;
         this.isProcessingChat = false;
         this.isGroupMode = true;
-        this.freeTalkTurns = 0;
         this.currentMaxTurns = scene.maxTurns || 3;
+        this.freeTalkTurns = Math.min(this.currentMaxTurns, checkpoint?.turns || 0);
         this.currentSceneId = sceneId;
         this.groupParticipants = participants;
         this.currentCharKey = `group:${participants.map(item => item.id).join(':')}`;
@@ -801,14 +865,11 @@ class FreeTalkSystem {
             chatGuideEl.innerHTML = guides[lang] || guides.en;
         }
 
-        if (scene.buttonText) {
-            this.uiManager.chatSendBtn.textContent = scene.buttonText;
-            this.uiManager.chatSendBtn.style.cssText = 'border-radius:8px;width:auto;padding:0 20px;';
-        } else {
-            this.uiManager.chatSendBtn.innerHTML = SEND_ICON;
-            this.uiManager.chatSendBtn.style.cssText = 'border-radius:50%;width:45px;padding:0;';
-        }
-        if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns;
+        // The group layout reserves one compact cell for sending in every language.
+        this.uiManager.chatSendBtn.innerHTML = SEND_ICON;
+        this.uiManager.chatSendBtn.style.cssText = 'border-radius:50%;width:42px;padding:0;';
+        this.uiManager.chatSendBtn.title = scene.buttonText || '';
+        if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
         if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;
         this.uiManager.chatInput.disabled = false;
         this.uiManager.chatInput.readOnly = false;
@@ -817,7 +878,16 @@ class FreeTalkSystem {
         const openingName = scene.dynamicGroupName
             ? participants.map(participant => participant.name).join(' · ')
             : (scene.name || participants[0].name);
-        if (scene.text) await this.dialogueSystem.typeText(scene.text, openingName);
+        const openingEpoch = this._freeTalkEpoch;
+        const lastReply = checkpoint?.lastReply;
+        if (lastReply?.speakerId) this._setGroupActiveSpeaker(lastReply.speakerId);
+        if (lastReply?.content || scene.text) await this.dialogueSystem.typeText(lastReply?.content || scene.text, lastReply?.speakerName || openingName, lastReply?.segments || null);
+        if (this._freeTalkEpoch !== openingEpoch || this.currentSceneId !== sceneId) return;
+        this._commitFreeTalkCheckpoint(lastReply || { content: scene.text || '', speakerName: openingName });
+        if (this.freeTalkTurns >= this.currentMaxTurns) {
+            this.endFreeTalk();
+            return;
+        }
         if (!window.isCupidDesktopPointer || window.isCupidDesktopPointer()) this.uiManager.chatInput.focus();
     }
 
@@ -855,6 +925,7 @@ class FreeTalkSystem {
             this._invalidateFreeTalkContext();
             this.freeTalkTurns = this.currentMaxTurns;
             this.stateManager.setFlag(`messaged_${this.currentSceneId}`);
+            this._commitFreeTalkCheckpoint();
             this.uiManager.chatContainer.style.display = 'none';
             this.isFreeTalking = false;
             this.isProcessingChat = false;
@@ -1565,6 +1636,7 @@ class FreeTalkSystem {
                 // 대화 기록 저장 (로컬)
                 this._assertRequestContext(requestContext, data);
                 this.stateManager.setChatMemory(charKey, requestHistory);
+                this._commitFreeTalkCheckpoint(requestHistory.at(-1));
                 try {
                     window.saveGameState?.();
                 } catch (saveError) {
@@ -1819,7 +1891,6 @@ class FreeTalkSystem {
     }
 
     async _renderGroupConversations(conversations, requestContext, latestUserText, lang, scene = null, streamingPreview = null) {
-        let positiveBudget = 3;
         const rendered = [];
         for (let index = 0; index < conversations.length; index += 1) {
             this._assertRequestContext(requestContext);
@@ -1848,6 +1919,15 @@ class FreeTalkSystem {
                 conversation.speakerName,
                 conversation.segments
             );
+            rendered.push({ ...conversation, renderReceipt });
+            const remaining = conversations.length - index - 1;
+            if (remaining > 0) await this._waitForGroupMessageAdvance(requestContext, remaining);
+        }
+        // Commit both speakers together after every message has finished rendering.
+        // Skipping or leaving between speakers must not retain half a turn's rewards.
+        this._assertRequestContext(requestContext);
+        let positiveBudget = 3;
+        for (const conversation of rendered) {
             const affinityResult = this._applyGroupAffinity(
                 conversation.affinity,
                 conversation.speakerId,
@@ -1868,10 +1948,7 @@ class FreeTalkSystem {
             );
             this.stateManager.setRelationshipAftermath?.(conversation.speakerId, nextAftermath);
             this.galleryManager.incrementFreeTalkCount(conversation.speakerId);
-            rendered.push({ ...conversation, affinityResult, renderReceipt });
-
-            const remaining = conversations.length - index - 1;
-            if (remaining > 0) await this._waitForGroupMessageAdvance(requestContext, remaining);
+            conversation.affinityResult = affinityResult;
         }
         this.uiManager.showNextIndicator?.(false);
         this._groupMessagesRemaining = 0;
@@ -2176,6 +2253,8 @@ class FreeTalkSystem {
                 userContent: finalContent,
                 assistantMessages
             });
+            const lastSpeaker = rendered.at(-1);
+            this._commitFreeTalkCheckpoint({ content: lastSpeaker.text, speakerId: lastSpeaker.speakerId, speakerName: lastSpeaker.speakerName, segments: lastSpeaker.segments });
             window.saveGameState?.();
 
             if (typeof window.saveCupidGroupChatLog === 'function') {
@@ -2820,6 +2899,7 @@ class FreeTalkSystem {
 
         // 이 프리토킹을 완료했다는 플래그 설정
         this.stateManager.setFlag(`messaged_${endingSceneId}`);
+        this._commitFreeTalkCheckpoint();
 
         setTimeout(() => {
             if (this._freeTalkEpoch !== endingEpoch || this.currentSceneId !== endingSceneId) return;

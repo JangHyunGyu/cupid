@@ -5,7 +5,7 @@
     },
     "hidden_nurse_d5_low": {
         "name": "Enfermera",
-        "text": "*La enfermera empieza a tenderte una tarjeta de consulta, pero vuelve a guardarla en el cajón.* Ahora será mejor que no concertemos una cita aparte. Si necesitas ayuda, ven por el procedimiento oficial. *Salgo de la enfermería y regreso al aula.*"
+        "text": "*Me da una tarjeta de orientación.* Pide hora para hablar con calma. Si te encuentras mal, puedes venir a la enfermería. *Guardo la tarjeta y vuelvo al aula.*"
     },
     "morning5_start": {
         "name": "{name}",
@@ -16,7 +16,7 @@
     "morning5_temptation_counteroffer_branch": {},
     "morning5_caught_teacher_counteroffer": {
         "name": "Profesora",
-        "text": "*En el aula por la mañana, dejo el teléfono sobre la mesa para enseñarle a la profesora una foto del borrador. La pantalla se ilumina con un mensaje de la chica con la que estuve anoche: 'Lo de ayer queda entre nosotros, ¿verdad?'. La profesora lo lee entero y aparta la mano del teléfono.* ¿Anoche ignoraste mi mensaje para verte con esta chica?",
+        "text": "*En clase, la tutora me muestra la confirmación pendiente de la aplicación. En mi móvil sigue el chat de anoche.* Dijiste que ibas directo a casa. ¿Por qué no avisaste del cambio de planes?",
         "choices": [
             "Contarle lo que pasó anoche",
             "Restarle importancia y decir que no fue nada",
@@ -26,7 +26,7 @@
     },
     "morning5_caught_nurse_counteroffer": {
         "name": "Enfermera",
-        "text": "*En cuanto dejo el teléfono sobre la camilla de la enfermería, la pantalla se ilumina. Un mensaje de la chica con la que estuve anoche dice: 'Lo de ayer queda entre nosotros, ¿verdad?'. La enfermera intenta sonreír como siempre, pero deja caer lentamente las comisuras de los labios.* Así que no es que no vieras mi mensaje. ¿Estabas con esta chica?",
+        "text": "*La enfermera señala la confirmación pendiente.* Dijiste que ibas a casa y no supe más. Me preocupé. Bastaba con avisar dónde estabas.",
         "choices": [
             "Contarle lo que pasó anoche",
             "Restarle importancia y decir que no fue nada",
@@ -36,19 +36,19 @@
     },
     "morning5_caught_teacher_honest": {
         "name": "Profesora",
-        "text": "*La profesora escucha todo en silencio y cierra el libro de asistencia.* Entiendo que ahora me estés diciendo la verdad. Pero eso no borra la confianza que puse anoche en tus palabras. Vete a casa por hoy."
+        "text": "*Cierra el registro tras escuchar.* Gracias por contarlo. Ver a un amigo no es el problema. La próxima vez cumple con avisar. Por hoy dejaremos aquí lo del manuscrito."
     },
     "morning5_caught_teacher_lie": {
         "name": "Profesora",
-        "text": "*La profesora mira la nueva notificación y luego mi rostro. Su voz se vuelve más fría que durante cualquier clase.* La mentira que acabas de contarme me decepciona más que lo de anoche. Sal."
+        "text": "*Compara mi respuesta con las horas de la aplicación.* Eso no encaja. No cambies la historia para salir del paso. Hablaremos en el horario de tutoría."
     },
     "morning5_caught_nurse_honest": {
         "name": "Enfermera",
-        "text": "*La enfermera lo escucha todo sin decir que no pasa nada. En su lugar, cierra con cuidado el registro médico.* Te sentirías mejor si dijera que está bien. Pero ahora mismo no puedo decirlo. Por favor, vete por hoy. *Salgo de la enfermería y vuelvo al aula.*"
+        "text": "*Escucha y cierra el registro.* Me alegro de que llegaras bien. La próxima vez avisa si cambian tus planes. Hoy atiendo el festival; reservemos otro momento para hablar con calma. *Vuelvo al aula.*"
     },
     "morning5_caught_nurse_lie": {
         "name": "Enfermera",
-        "text": "*La enfermera comprueba la nueva notificación y se quita las gafas. Sus ojos se clavan en los míos sin rastro de la sonrisa habitual.* Así que no era un dolor lo que escondías. No puedo cuidar también de tus mentiras. *Salgo de la enfermería y vuelvo al aula.*"
+        "text": "*Deja el bolígrafo.* Hay cosas que no encajan. Si te encuentras mal, ven cuando lo necesites. Aclararemos esto con orientación. *Vuelvo al aula.*"
     },
     "morning5_caught_by_seoyeon_route": {},
     "morning5_caught_by_yuna_route": {},
@@ -139,19 +139,13 @@
     },
     "morning5_counteroffer_group_talk": {
         "name": "Las dos",
-        "text": "*Las dos miradas me clavan en el sitio. Qué fue exactamente lo de anoche y si desde el principio intentaba quedarme con las dos. Ninguna piensa apartarse primero.* \"Entonces, ¿a quién eliges ahora?\"",
-        "context": "Acaba de descubrirse que el protagonista aceptó la tentación de anoche. La persona por la que había decidido apostar y quien lo tentó ahora lo enfrentan juntas en el mismo salón. La conversación continúa desde su decisión de confesar o mentir. Las dos exigen una explicación directa sobre sus relaciones e intenciones y una respuesta clara sobre a quién elige ahora, sin disimular la tensión entre los tres.",
-        "personality": "Cada una conserva su propia voz y su propio dolor. La persona traicionada habla primero, y quien lo tentó responde después de escucharla. El centro de la confrontación es la explicación del protagonista: ambas le preguntan directamente y señalan cualquier vacío en lo que diga. La persona traicionada pregunta, a su manera, por qué aceptó a otra mientras mantenía la relación, si jugaba a dos bandas desde el principio o si solo estaba jugando con ella. Quien lo tentó asume que tomó la iniciativa y siente culpa por haber herido a la otra, pero no oculta que quiere quedarse con el protagonista y ser la elegida. La culpa no basta para que se retire o ceda. Pueden contradecirse o responderse, pero no excluyen al protagonista ni deciden la relación entre ellas. No repiten una pregunta ya respondida: insisten en el dato que falta, en lo que significaba la relación o en qué elegirá ahora.",
+        "text": "*Antes de las instrucciones del festival, me reúno en el aula con las dos personas implicadas en lo de anoche. Nadie se marcha mientras aclaramos los mensajes sin responder y lo que dijimos.*\n«¿Qué piensas hacer ahora?»",
+        "context": "Mañana del día 5, en un aula abierta. El protagonista se quedó por otra invitación y no avisó a quien había prometido primero. Continúa su explicación o evasión anterior. Si ambos son estudiantes, se trata de compromisos románticos solapados. Una docente o enfermera pregunta por la confirmación de llegada como personal escolar, nunca como pareja. La estudiante explica su invitación y sentimientos. La atención no depende de elecciones amorosas. Entre estudiantes, se exige una explicación directa de las intenciones y compromisos del protagonista.",
+        "personality": "Cuando ambas participantes son estudiantes: Cada una conserva su propia voz y su propio dolor. La persona traicionada habla primero, y quien lo tentó responde después de escucharla. El centro de la confrontación es la explicación del protagonista: ambas le preguntan directamente y señalan cualquier vacío en lo que diga. La persona traicionada pregunta, a su manera, por qué aceptó a otra mientras mantenía la relación, si jugaba a dos bandas desde el principio o si solo estaba jugando con ella. Quien lo tentó asume que tomó la iniciativa y siente culpa por haber herido a la otra, pero no oculta que quiere quedarse con el protagonista y ser la elegida. La culpa no basta para que se retire o ceda. Pueden contradecirse o responderse, pero no excluyen al protagonista ni deciden la relación entre ellas. No repiten una pregunta ya respondida: insisten en el dato que falta, en lo que significaba la relación o en qué elegirá ahora.\nSi participa personal escolar, sustituye el conflicto romántico anterior por el aviso de llegada incumplido y la responsabilidad de comunicar. El adulto no es rival amoroso y habla desde su función de apoyo. La estudiante explica su invitación y sentimientos con respeto. No repitas penalizaciones ya aplicadas.",
         "buttonText": "Responder"
     },
-    "morning5_start_b": {
-        "name": "{name}",
-        "text": "*Al entrar al salón, tres cosas me llaman la atención a la vez: una nota sobre el pupitre, un listón atado al cordón del uniforme deportivo y una notificación en la pantalla de bloqueo.*"
-    },
-    "morning5_start_2_b": {
-        "name": "{name}",
-        "text": "*Hay una nota en mi mesa. La letra de Seoyeon.*"
-    },
+    "morning5_start_b": {},
+    "morning5_start_2_b": {},
     "morning5_mood_check": {
         "name": "Sistema",
         "text": ""
@@ -168,10 +162,7 @@
         "name": "{name}",
         "text": "Último día. Toco uno por uno los tres nombres que quedan en la pantalla de bloqueo y la apago sin abrir ningún chat."
     },
-    "morning5_gate": {
-        "name": "{name}",
-        "text": "*Frente a la entrada de la escuela, me subo las mangas. Ya no quedan marcas rojas en las muñecas.*"
-    },
+    "morning5_gate": {},
     "morning5_seo_note_1": {
         "name": "{name}",
         "text": "*Hay una nota sobre el pupitre. Es la letra de Seoyeon. — «Hazte un tiempo esta tarde. Dejaré abierta la azotea. — Seoyeon»*"
@@ -194,7 +185,7 @@
     },
     "morning5_yuna_story_1": {
         "name": "{name}",
-        "text": "*En el relato, un personaje le pone una manta sobre los hombros a alguien dormido en la biblioteca. — Esa escena solo la conozco yo.*"
+        "text": "*En el cuento, alguien tapa con una manta a quien duerme en la biblioteca. No nos pasó, pero ese cuidado silencioso me recuerda a Yuna.*"
     },
     "morning5_yuna_story_2": {
         "name": "{name}",
@@ -395,10 +386,7 @@
         "name": "{name}",
         "text": "*Recuerdo las copias apiladas ayer en la mesa del fondo de la cafetería. En el sobre pone «N.º 04».*"
     },
-    "hidden_homeroom_d5_6_c": {
-        "name": "{name}",
-        "text": "*La profesora mantiene una mano en el borde del escritorio mientras comprueba que guardo el sobre en la mochila.*"
-    },
+    "hidden_homeroom_d5_6_c": {},
     "hidden_homeroom_d5_6_d": {
         "name": "Profesora",
         "text": "Escribe con sinceridad solo hasta donde hayas leído. No hace falta que pongas tu nombre."
@@ -419,18 +407,12 @@
         "name": "Profesora",
         "text": "Nunca pensé que llegaría el día en que estuviera preparada para recibir opiniones."
     },
-    "hidden_homeroom_d5_6_i": {
-        "name": "Profesora",
-        "text": "*La profesora alisa la esquina doblada del sobre del manuscrito.*"
-    },
+    "hidden_homeroom_d5_6_i": {},
     "hidden_homeroom_d5_6_j": {
         "name": "Profesora",
         "text": "Léelo antes del club de literatura del lunes."
     },
-    "hidden_homeroom_d5_6_k": {
-        "name": "{name}",
-        "text": "*Mientras espera mi respuesta, veo la etiqueta con el número en la esquina del sobre.*"
-    },
+    "hidden_homeroom_d5_6_k": {},
     "hidden_homeroom_d5_6_l": {
         "name": "{name}",
         "text": "Lo leeré. De verdad."
@@ -447,10 +429,7 @@
         "name": "Profesora",
         "text": "*Se le levantan las comisuras de los labios.* Es cierto. Escríbeme aunque sea una línea."
     },
-    "hidden_homeroom_d5_6_p": {
-        "name": "Profesora",
-        "text": "*Dirige la mirada al horario del club de literatura pegado junto a la puerta.*"
-    },
+    "hidden_homeroom_d5_6_p": {},
     "hidden_homeroom_d5_6_q": {
         "name": "Profesora",
         "text": "{name}."
@@ -471,10 +450,7 @@
         "name": "Profesora",
         "text": "Y hasta aquí los agradecimientos. Ahora ve a preparar el evento."
     },
-    "hidden_homeroom_d5_7_b": {
-        "name": "{name}",
-        "text": "*Guardo la copia número 04 en la mochila y me vuelvo hacia la puerta.*"
-    },
+    "hidden_homeroom_d5_7_b": {},
     "hidden_homeroom_d5_7_c": {
         "name": "Profesora",
         "text": "Termina bien el evento primero. Nos vemos el lunes en el club para la sesión de crítica."
@@ -628,10 +604,7 @@
         "name": "Enfermera",
         "text": "Entonces está bien. Esta es la tarjeta de primeros auxilios."
     },
-    "hidden_nurse_d5_6_b": {
-        "name": "Enfermera",
-        "text": "*Guarda la tarjeta en la funda y me indica que la ponga en el bolsillo exterior de la mochila para poder encontrarla enseguida.*"
-    },
+    "hidden_nurse_d5_6_b": {},
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
         "text": "*En la parte inferior de la tarjeta hay una frase breve: «Pedir ayuda antes de hacerse daño».*"
@@ -664,11 +637,11 @@
     },
     "morning5_sojeong_1": {
         "name": "{name}",
-        "text": "*Abro la aplicación de notas. Hay treinta y nueve borradores vacíos que empiezan por «Para Sojeong».*"
+        "text": "*Abro las notas: intentos incompletos de denunciar lo de Sojeong, disculpas escritas y borradas. El borrador treinta y nueve sigue vacío.*"
     },
     "morning5_sojeong_2": {
         "name": "{name}",
-        "text": "*No escribo un cuadragésimo. Elijo el más corto y lo envío tal cual.*"
+        "text": "*No empiezo el borrador cuarenta. Copio la disculpa en el chat y pulso enviar.*"
     },
     "morning5_sojeong_3": {
         "name": "{name}",

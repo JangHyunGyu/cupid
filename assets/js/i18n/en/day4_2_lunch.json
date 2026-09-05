@@ -120,7 +120,7 @@
         "name": "{name}",
         "text": "*Yuna's eyes briefly rise over the rim of her cup.*",
         "choices": [
-            "First time I'm seeing you out of uniform.",
+            "You look beautiful today.",
             "You look a little different today.",
             "You look much easier to talk to than usual."
         ]
@@ -231,7 +231,7 @@
     },
     "date_dain_1": {
         "name": "{name}",
-        "text": "*Outside the gym, Dain runs up in a cap and athletic wear.*"
+        "text": "*Outside the gym, Dain waves in a cap and sportswear. A brace covers her right knee.*"
     },
     "date_dain_2": {
         "name": "Dain",
@@ -251,8 +251,8 @@
         "choices": [
             "That cap looks good on you.",
             "Sportswear is definitely your look.",
-            "You look much more feminine than you do in sportswear.",
-            "Now that you’ve dressed up, it finally feels like a date."
+            "Sportswear again, even on a date?",
+            "Dress up a little for our next date."
         ]
     },
     "date_dain_pretty_high": {
@@ -393,7 +393,10 @@
     "date_yuna_tentative_3": {"name":"Yuna","text":"I'll message you first next time. Let's stop here today."},
     "date_dain_tier_check": {},
     "date_dain_high_1": {"name":"Dain","text":"Keep next week free too. If today is fun, we're doing this again."},
-    "date_dain_high_2": {"name":"Dain","text":"*Dain opens the gym door and holds out a wristband.* You get first pick today."},
+    "date_dain_high_2": {
+        "name": "Dain",
+        "text": "*She takes a wristband from her pocket and offers it.* You get first pick today."
+    },
     "date_dain_tentative_1": {"name":"Dain","text":"Let's not stay out long today. My knee needs some rest too."},
     "date_dain_tentative_2": {"name":"{name}","text":"*We each have a drink by the vending machine. Dain leaves the gym door closed and adjusts her bag strap.*"},
     "date_dain_tentative_3": {"name":"Dain","text":"See you at school. We can decide on another plan then."},

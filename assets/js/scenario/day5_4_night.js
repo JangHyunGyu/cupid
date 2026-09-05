@@ -1373,6 +1373,23 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "true_yuna_5"
     },
     "true_yuna_5": {
+        "routeBeforeRender": true,
+        "branches": [
+            {
+                "condition": "heard_yuna_third_song",
+                "next": "true_yuna_5_established"
+            },
+            {
+                "next": "true_yuna_5_first"
+            }
+        ]
+    },
+    "true_yuna_5_established": {
+        "background": "assets/images/background/top_school.png",
+        "character": "assets/images/characters/yuna_smile.png",
+        "next": "true_yuna_5_b"
+    },
+    "true_yuna_5_first": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/yuna_smile.png",
         "next": "true_yuna_5_b"
@@ -1383,6 +1400,23 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "true_yuna_6"
     },
     "true_yuna_6": {
+        "routeBeforeRender": true,
+        "branches": [
+            {
+                "condition": "heard_yuna_third_song",
+                "next": "true_yuna_6_established"
+            },
+            {
+                "next": "true_yuna_6_first"
+            }
+        ]
+    },
+    "true_yuna_6_established": {
+        "background": "assets/images/background/top_school.png",
+        "character": "assets/images/characters/yuna_shy.png",
+        "next": "true_yuna_6b"
+    },
+    "true_yuna_6_first": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/yuna_shy.png",
         "next": "true_yuna_6b"
@@ -1457,9 +1491,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "perfect_epilogue_1b_dain"
     },
     "perfect_epilogue_1b_dain": {
-        "background": "assets/images/background/ending_perfect_dain.png",
-        "character": null,
-        "next": "perfect_epilogue_1c_dain"
+        "next": "perfect_epilogue_1c_dain",
+        "routeBeforeRender": true
     },
     "perfect_epilogue_1c_dain": {
         "background": "assets/images/background/ending_perfect_dain.png",
@@ -1761,6 +1794,23 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "good_epilogue_1_yuna"
     },
     "good_epilogue_1_yuna": {
+        "routeBeforeRender": true,
+        "branches": [
+            {
+                "condition": "chose_yuna_lunch",
+                "next": "good_epilogue_1_yuna_established"
+            },
+            {
+                "next": "good_epilogue_1_yuna_first"
+            }
+        ]
+    },
+    "good_epilogue_1_yuna_established": {
+        "background": "assets/images/background/ending_good_yuna.png",
+        "character": null,
+        "next": "good_epilogue_2_yuna"
+    },
+    "good_epilogue_1_yuna_first": {
         "background": "assets/images/background/ending_good_yuna.png",
         "character": null,
         "next": "good_epilogue_2_yuna"
@@ -2266,7 +2316,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "day5_seo_ending_freetalk_true_love": {
         "background": "assets/images/background/seyoun_room.png",
@@ -2274,7 +2325,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "day5_seo_ending_freetalk_good": {
         "background": "assets/images/background/top_school.png",
@@ -2282,7 +2334,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "day5_seo_ending_freetalk_bittersweet": {
         "background": "assets/images/background/cafe.png",
@@ -2290,7 +2343,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "day5_seo_ending_freetalk_late_good": {
         "background": "assets/images/background/park.png",
@@ -2298,7 +2352,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "day5_yuna_ending_freetalk_intro": {
         "background": "assets/images/background/yuna_hideout.png",
@@ -2324,7 +2379,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "day5_yuna_ending_freetalk_true_love": {
         "background": "assets/images/background/yuna_secret_rooftop.png",
@@ -2332,7 +2388,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "day5_yuna_ending_freetalk_good": {
         "background": "assets/images/background/top_school.png",
@@ -2340,7 +2397,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "day5_yuna_ending_freetalk_bittersweet": {
         "background": "assets/images/background/library_old.png",
@@ -2348,7 +2406,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "day5_yuna_ending_freetalk_late_good": {
         "background": "assets/images/background/top_school.png",
@@ -2356,7 +2415,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "day5_dain_ending_freetalk_intro": {
         "background": "assets/images/background/gym.png",
@@ -2382,7 +2442,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "day5_dain_ending_freetalk_true_love": {
         "background": "assets/images/background/gym.png",
@@ -2390,7 +2451,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "day5_dain_ending_freetalk_good": {
         "background": "assets/images/background/park.png",
@@ -2398,7 +2460,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "day5_dain_ending_freetalk_bittersweet": {
         "background": "assets/images/background/gym.png",
@@ -2406,7 +2469,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "day5_dain_ending_freetalk_late_good": {
         "background": "assets/images/background/park.png",
@@ -2414,7 +2478,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "day5_teacher_ending_freetalk_intro": {
         "background": "assets/images/background/cafe.png",
@@ -2439,7 +2504,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "day5_teacher_ending_freetalk_true_love": {
         "background": "assets/images/background/bookstore.png",
@@ -2447,7 +2513,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "day5_teacher_ending_freetalk_good": {
         "background": "assets/images/background/room_school.png",
@@ -2455,7 +2522,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "day5_teacher_ending_freetalk_bittersweet": {
         "background": "assets/images/background/room_school.png",
@@ -2464,7 +2532,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "day5_nurse_ending_freetalk_intro": {
         "background": "assets/images/background/nurse_house.png",
@@ -2489,15 +2558,17 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "day5_nurse_ending_freetalk_true_love": {
-        "background": "assets/images/background/cafe.png",
+        "background": "assets/images/background/nurse_house.png",
         "character": "assets/images/characters/nurse_normal.png",
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "day5_nurse_ending_freetalk_good": {
         "background": "assets/images/background/nurse_room.png",
@@ -2505,7 +2576,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "day5_nurse_ending_freetalk_bittersweet": {
         "background": "assets/images/background/nurse_room.png",
@@ -2513,7 +2585,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
-        "next": "day5_credits"
+        "next": "day5_credits",
+        "isRemote": false
     },
     "forced_violation_day5_after_seoyeon": {
         "runtimeEntrypoint": true,

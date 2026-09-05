@@ -569,7 +569,8 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/teacher_normal.png",
         "type": "free_talk",
         "maxTurns": 3,
-        "next": "hidden_nurse_d3_check"
+        "next": "hidden_nurse_d3_check",
+        "isRemote": false
     },
     "hidden_nurse_d3_check": {
         "background": "assets/images/background/room_school.png",
@@ -614,24 +615,20 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         ]
     },
     "hidden_nurse_d3_2_b": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_normal.png",
-        "next": "hidden_nurse_d3_2_c"
+        "next": "hidden_nurse_d3_2_c",
+        "routeBeforeRender": true
     },
     "hidden_nurse_d3_2_c": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/teacher_normal.png",
-        "next": "hidden_nurse_d3_2_d"
+        "next": "hidden_nurse_d3_2_d",
+        "routeBeforeRender": true
     },
     "hidden_nurse_d3_2_d": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/teacher_normal.png",
-        "next": "hidden_nurse_d3_2_e"
+        "next": "hidden_nurse_d3_2_e",
+        "routeBeforeRender": true
     },
     "hidden_nurse_d3_2_e": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": null,
-        "next": "hidden_nurse_d3_3"
+        "next": "hidden_nurse_d3_3",
+        "routeBeforeRender": true
     },
     "hidden_nurse_d3_3": {
         "background": "assets/images/background/nurse_room.png",
@@ -659,14 +656,12 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "hidden_nurse_d3_5_b"
     },
     "hidden_nurse_d3_5_b": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_nurse_d3_5_c"
+        "next": "hidden_nurse_d3_5_c",
+        "routeBeforeRender": true
     },
     "hidden_nurse_d3_5_c": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_nurse_d3_5_d"
+        "next": "hidden_nurse_d3_5_d",
+        "routeBeforeRender": true
     },
     "hidden_nurse_d3_5_d": {
         "background": "assets/images/background/nurse_room.png",
@@ -679,9 +674,8 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "hidden_nurse_d3_5_f"
     },
     "hidden_nurse_d3_5_f": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_nurse_d3_5_g"
+        "next": "hidden_nurse_d3_5_g",
+        "routeBeforeRender": true
     },
     "hidden_nurse_d3_5_g": {
         "background": "assets/images/background/nurse_room.png",
@@ -798,9 +792,8 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "hidden_nurse_d3_7_b"
     },
     "hidden_nurse_d3_7_b": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_nurse_d3_8"
+        "next": "hidden_nurse_d3_8",
+        "routeBeforeRender": true
     },
     "hidden_nurse_d3_8": {
         "background": "assets/images/background/nurse_room.png",
@@ -907,7 +900,8 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/nurse_normal.png",
         "type": "free_talk",
         "maxTurns": 3,
-        "next": "morning3_date_seo_1"
+        "next": "morning3_date_seo_1",
+        "isRemote": false
     },
     "morning3_date_seo_1": {
         "background": "assets/images/background/school_hallway.png",
@@ -1063,9 +1057,8 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "morning3_end_b"
     },
     "morning3_end_b": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_normal.png",
-        "next": "lunch3_start"
+        "next": "lunch3_start",
+        "routeBeforeRender": true
     },
     "hidden_homeroom_d3_low": {
         "background": "assets/images/background/room_school.png",

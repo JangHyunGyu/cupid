@@ -224,10 +224,7 @@
         "name": "{name}",
         "text": "*A girl at the very back by the window rests her chin on one hand and stares outside. Even as my name goes up on the board, she only turns another page.*"
     },
-    "classroom_yuna_2": {
-        "name": "{name}",
-        "text": "*Silver-white hair. Red eyes. Tattoos along her arms. The girl in the back corner keeps her chin propped on one hand and looks only out the window. The desks around her are conspicuously empty.*"
-    },
+    "classroom_yuna_2": {},
     "classroom_yuna_4": {
         "name": "{name}",
         "text": "*Someone in the front row whispers, 'Don't talk to her. She's scary.' Yuna turns a page.*"
@@ -286,7 +283,7 @@
     },
     "classroom_dain_talk_8": {
         "name": "{name}",
-        "text": "*After that 'probably,' Dain's eyes drift toward the ball machine. A basket full of balls waits at the far end of the court.*"
+        "text": "*Dain traces a little court on the desk, draws the center line, and raises an eyebrow at me.*"
     },
     "classroom_yuna_note_1": {
         "name": "{name}",

@@ -120,7 +120,7 @@
         "name": "{name}",
         "text": "*Le regard de Yuna se lève brièvement au-dessus de son gobelet.*",
         "choices": [
-            "Première fois que je te vois sans uniforme.",
+            "Tu es belle aujourd’hui.",
             "Tu as l'air un peu différente aujourd'hui.",
             "Aujourd'hui, tu as l'air beaucoup plus facile à aborder."
         ]
@@ -231,7 +231,7 @@
     },
     "date_dain_1": {
         "name": "{name}",
-        "text": "*Devant le gymnase. Dain arrive en courant. Casquette et tenue de sport.*"
+        "text": "*Devant le gymnase, Dain fait signe, en casquette et tenue de sport. Son genou droit porte une attelle.*"
     },
     "date_dain_2": {
         "name": "Dain",
@@ -251,8 +251,8 @@
         "choices": [
             "Cette casquette te va bien.",
             "La tenue de sport, c'est vraiment tout toi.",
-            "Aujourd’hui, tu es bien plus féminine qu’en tenue de sport.",
-            "Maintenant que tu t’es habillée comme ça, on dirait enfin un rendez-vous."
+            "Encore une tenue de sport, même pour un rendez-vous ?",
+            "La prochaine fois, fais un peu plus d’efforts pour t’habiller."
         ]
     },
     "date_dain_pretty_high": {
@@ -393,7 +393,10 @@
     "date_yuna_tentative_3": {"name":"Yuna","text":"La prochaine fois, je t'écrirai la première. Arrêtons-nous là aujourd'hui."},
     "date_dain_tier_check": {},
     "date_dain_high_1": {"name":"Dain","text":"Garde aussi du temps la semaine prochaine. Si aujourd'hui est sympa, on recommencera."},
-    "date_dain_high_2": {"name":"Dain","text":"*Dain ouvre la porte du gymnase et me tend un bracelet.* Aujourd'hui, tu choisis en premier."},
+    "date_dain_high_2": {
+        "name": "Dain",
+        "text": "*Elle sort un bracelet de sa poche et me le tend.* Aujourd’hui, tu choisis en premier."
+    },
     "date_dain_tentative_1": {"name":"Dain","text":"Ne restons pas longtemps aujourd'hui. Mon genou a aussi besoin de repos."},
     "date_dain_tentative_2": {"name":"{name}","text":"*Nous buvons chacun une boisson près du distributeur. Dain garde la porte du gymnase fermée et ajuste la lanière de son sac.*"},
     "date_dain_tentative_3": {"name":"Dain","text":"On se voit au lycée. On décidera du prochain rendez-vous là-bas."},

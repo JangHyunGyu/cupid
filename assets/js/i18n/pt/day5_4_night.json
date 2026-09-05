@@ -82,7 +82,7 @@
     },
     "hidden_perfect_homeroom_4g": {
         "name": "Professora",
-        "text": "É um presente para comemorar a publicação. Posso pedir que você o aceite também como sinal de que quero ver você de novo?"
+        "text": "Obrigada por esperar meu livro sair. Estas flores são para celebrar isso. E… pode entender também que eu quero te ver de novo?"
     },
     "hidden_perfect_homeroom_ending_title": {
         "name": "",
@@ -339,7 +339,7 @@
     },
     "hidden_true_nurse_4": {
         "name": "Enfermeira",
-        "text": "Lembro que, no dia da sua transferência, você entrou dizendo que estava tonto."
+        "text": "Lembro que você vinha à enfermaria e a primeira coisa que dizia era que estava bem."
     },
     "hidden_true_nurse_5": {
         "name": "Enfermeira",
@@ -702,18 +702,12 @@
         "name": "Yuna",
         "text": "*Abre a playlist do celular. Há uma pequena estrela ao lado da terceira música.*"
     },
-    "true_yuna_5": {
-        "name": "{name}",
-        "text": "A terceira música daquela época?"
-    },
+    "true_yuna_5": {},
     "true_yuna_5_b": {
         "name": "Yuna",
         "text": "*O dedo que percorria a lista para na terceira música. A mão que segura a lombada do livro relaxa.*"
     },
-    "true_yuna_6": {
-        "name": "Yuna",
-        "text": "...Você se lembrou."
-    },
+    "true_yuna_6": {},
     "true_yuna_6b": {
         "name": "Yuna",
         "text": "Hoje vamos ouvir juntos aqui."
@@ -764,12 +758,9 @@
     },
     "perfect_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Quando Dain diz \"pode me colocar no chão\", {name} a abaixa devagar, deixando o pé esquerdo tocar o chão primeiro.*"
+        "text": "*Quando Dain solta os braços, me afasto devagar. Depois de ver que ela está firme, sentamos lado a lado no banco.*"
     },
-    "perfect_epilogue_1b_dain": {
-        "name": "{name}",
-        "text": "*Antes que o peso caia sobre o joelho direito, apoia-se no ombro de {name} e recupera o equilíbrio.*"
-    },
+    "perfect_epilogue_1b_dain": {},
     "perfect_epilogue_1c_dain": {
         "name": "{name}",
         "text": "*Nos dias de reabilitação, Dain define o ritmo primeiro. {name} acompanha os passos dela.*"
@@ -868,11 +859,11 @@
     },
     "true_epilogue_2": {
         "name": "{name}",
-        "text": "*No dia da cerimónia de graduação, o uniforme estava rígido. As flores de cerejeira só me faziam cócegas no nariz. Diante do portão da escola, enfiei as mãos nos bolsos.*"
+        "text": "*Domingo à noite, a caminho de casa. Diminuímos o passo ao passar pelo portão da escola. Amanhã estaremos aqui de novo, levando o que dissemos hoje.*"
     },
     "true_epilogue_3": {
         "name": "{name}",
-        "text": "*No calendário, só tinham passado cinco quadradinhos.*"
+        "text": "*Cinco dias desde minha chegada na quarta. No último quadrinho da primeira semana, anoto nossos planos para amanhã.*"
     },
     "true_epilogue_4": {},
     "true_epilogue_4_seo": {
@@ -885,7 +876,7 @@
     },
     "true_epilogue_4_dain": {
         "name": "{name}",
-        "text": "*O alarme da manhã de Dain já não diz 'Sorria', mas avisa a hora dos alongamentos de reabilitação. Às vezes ela manda vídeos dos ensaios de transmissão, e {name} responde depois de assistir até o fim.*"
+        "text": "*Dain muda o nome do alarme de amanhã para “alongamento da reabilitação”. Também vai me mandar seus treinos de narração. Prometo assistir até o fim e dar minha opinião.*"
     },
     "true_epilogue_7": {
         "name": "Sistema",
@@ -1063,13 +1054,10 @@
         "name": "{name}",
         "text": "*Saímos pela porta do terraço e descemos as escadas. Nossos passos são lentos, mas não param.*"
     },
-    "good_epilogue_1_yuna": {
-        "name": "{name}",
-        "text": "*Um bilhete dobrado cai da mochila. Marcas mostram onde ficou pressionado contra o forro por muito tempo. 'Se você terminou o volume 1, vou te emprestar o volume 2. — Yuna'*"
-    },
+    "good_epilogue_1_yuna": {},
     "good_epilogue_2_yuna": {
-        "name": "Yuna",
-        "text": "*O volume dois depois do primeiro. Amanhã depois de hoje. Yuna dobra o bilhete e me entrega.*"
+        "name": "{name}",
+        "text": "*Guardo o bilhete na bolsa. As páginas que não lemos hoje continuarão lá amanhã.*"
     },
     "good_epilogue_3_yuna": {
         "name": "{name}",
@@ -1125,7 +1113,7 @@
     },
     "friend_2": {
         "name": "{name}",
-        "text": "*A frase que nunca consegui enviar na conversa de Sojeong me vem à cabeça.*"
+        "text": "*Lembro de quanto adiei as palavras antes de pedir desculpas a Sojeong. Desta vez, quero falar enquanto posso.*"
     },
     "friend_3": {
         "name": "{name}",
@@ -1205,7 +1193,7 @@
     },
     "mayhem_7": {
         "name": "{name}",
-        "text": "*Olho a nota não enviada que estava sob a foto de Sojeong. As mensagens enviadas agora formam uma longa sequência. A tela apaga assim mesmo.*"
+        "text": "*Releio o pedido de desculpas que mandei a Sojeong. Não há mensagens novas abaixo. A tela apaga enquanto espero.*"
     },
     "mayhem_8": {
         "name": "Sistema",
@@ -1339,7 +1327,7 @@
     "day5_yuna_ending_freetalk_good": {
         "name": "Yuna",
         "text": "*Ela escreve outra frase no verso do bilhete dobrado e mostra.* Da próxima vez, fale primeiro. Hoje... pode começar agora.",
-        "context": "Conversa bônus após o GOOD END de Yuna. Embora os dois ainda estivessem sem jeito depois da confissão do dia 4, Yuna leu a frase até o fim e prometeu um segundo volume, o dia seguinte e um desfecho para lerem juntos. Não transforme esse começo cauteloso em uma separação nem o exagere como se fosse uma relação longa e consolidada.",
+        "context": "Após o GOOD END de Yuna. Resta timidez depois da declaração do dia 4, mas vão ler juntos e se ver amanhã. Só mencione os empréstimos dos volumes um e dois se essas memórias existirem. Preserve o começo, sem transformá-lo em separação ou namoro antigo.",
         "personality": "Yuna mantém a relação com frases curtas e pequenos gestos e, quando necessário, reúne coragem para pedir que a outra pessoa fale primeiro. Sem se apressar, deixa claramente aberta para ela a página seguinte."
     },
     "day5_yuna_ending_freetalk_bittersweet": {
@@ -1361,7 +1349,7 @@
     "day5_dain_ending_freetalk_perfect": {
         "name": "Dain",
         "text": "*Ela coloca o roteiro da primeira transmissão junto ao registro de reabilitação e sorri.* Você assistiu até o fim, como prometeu? Quero a sua crítica ao vivo.",
-        "context": "Conversa bônus um ano após o PERFECT END de Dain. Ela continuou a reabilitação, ingressou no curso de Mídia Esportiva e se preparou para sua primeira transmissão na equipe universitária, enquanto o protagonista permaneceu ao seu lado tanto nos dias de dor quanto em seu novo caminho. Não apague a lesão nem a carreira e preserve a relação estável.",
+        "context": "Um ano após o PERFECT END de Dain. Ela continua a reabilitação e já fez a primeira transmissão universitária; a mãe assistiu à reprise. O protagonista viu até o fim. Agora conversam na cabine e preparam o próximo roteiro. Preserve a lesão, a carreira e o relacionamento estável.",
         "personality": "Dain é alegre e direta e, em uma relação estável, não esconde suas brincadeiras nem seu afeto. Ela própria decide o estado e o ritmo do corpo, não trata o apoio do protagonista como obrigação e recorda com alegria os compromissos que construíram juntos."
     },
     "day5_dain_ending_freetalk_true_love": {
@@ -1428,7 +1416,7 @@
     },
     "day5_nurse_ending_freetalk_true_love": {
         "name": "Enfermeira",
-        "text": "*Ela guarda os curativos do evento e mostra o próximo fim de semana.* Desta vez não é consulta nem tratamento. Sobre o que vamos conversar?",
+        "text": "*Depois do filme, ela pousa o chá e mostra a agenda do próximo fim de semana.* O que fazemos da próxima vez? Quero experimentar algo que você escolher também.",
         "context": "Conversa bônus logo após o TRUE LOVE END da enfermeira. Durante quatro anos depois da formatura não houve contato particular. Dois adultos independentes e empregados se reencontraram em uma campanha de saúde. Após se encontrarem todos os fins de semana por três meses e assistirem juntos a um filme na casa de Juwon, estão começando uma relação. Não a adiante para a convivência nem para uma relação de longa data.",
         "personality": "Juwon reconhece claramente os limites profissionais do passado e se aproxima com cautela da pessoa adulta e em igualdade de condições que tem diante de si. Confirma as escolhas da outra pessoa, mas expressa com sinceridade seu interesse e a vontade de se encontrar de novo. Não trata toda conversa como uma consulta de saúde."
     },
@@ -1682,7 +1670,7 @@
     },
     "date_choice_true_teacher": {
         "name": "Professora",
-        "text": "A aula acabou. O que resta é deste lado.",
+        "text": "O evento acabou. Ficamos mais um pouco ou vamos ver a exposição?",
         "choices": [
             "Uma mesa.",
             "A exposição."
@@ -1714,7 +1702,7 @@
     },
     "date_true_nurse_1": {
         "name": "Enfermeira",
-        "text": "Deito água. Não é remédio."
+        "text": "Vou servir água. Se preferir um chá quentinho, é só falar."
     },
     "date_true_nurse_2": {
         "name": "{name}",
@@ -1779,7 +1767,7 @@
     },
     "co_bitter_nurse_1": {
         "name": "{name}",
-        "text": "*À porta da enfermaria. A porta está aberta e lá dentro não está ninguém.*"
+        "text": "*Paro na porta aberta da enfermaria. Ela levanta os olhos dos registros e pousa a caneta.*"
     },
     "co_bitter_nurse_2": {
         "name": "Enfermeira",
@@ -1921,5 +1909,29 @@
         "name": "{name}",
         "text": "*Depois que eu disse que não prenderia nenhuma das duas, nossa conversa terminou ali.*"
     },
-    "ending_counteroffer_bitter_route": {}
+    "ending_counteroffer_bitter_route": {},
+    "true_yuna_5_established": {
+        "name": "{name}",
+        "text": "A terceira música daquela época?"
+    },
+    "true_yuna_5_first": {
+        "name": "{name}",
+        "text": "Só a terceira música tem uma estrela. Ela é especial?"
+    },
+    "true_yuna_6_established": {
+        "name": "Yuna",
+        "text": "...Você se lembrou."
+    },
+    "true_yuna_6_first": {
+        "name": "Yuna",
+        "text": "Sim. Eu queria ouvir essa com você."
+    },
+    "good_epilogue_1_yuna_established": {
+        "name": "{name}",
+        "text": "*Um bilhete dobrado cai da mochila. Marcas mostram onde ficou pressionado contra o forro por muito tempo. 'Se você terminou o volume 1, vou te emprestar o volume 2. — Yuna'*"
+    },
+    "good_epilogue_1_yuna_first": {
+        "name": "{name}",
+        "text": "*Yuna entrega um bilhete novo: “Escolhi um livro para lermos juntos. Vamos pegar na biblioteca amanhã. — Yuna”*"
+    }
 }

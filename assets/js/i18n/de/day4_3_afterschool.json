@@ -21,12 +21,9 @@
     },
     "confess_seo_3": {
         "name": "{name}",
-        "text": "*Das Dach. Unterhalb des Geländers leuchten die Lampen am Sportplatz. Dort stand Seoyeon am ersten Tag.*"
+        "text": "*Ich folge Seoyeon aufs Schuldach. Unten geht die Beleuchtung des Sportplatzes an.*"
     },
-    "confess_seo_3b": {
-        "name": "{name}",
-        "text": "*Als sich die Dachtür schließt, verstummen die Schritte im Treppenhaus. Unter dem Geländer, an dem wir so oft nebeneinanderstanden, gehen die Lichter des Sportplatzes eines nach dem anderen an.*"
-    },
+    "confess_seo_3b": {},
     "confess_seo_4": {
         "name": "Seoyeon",
         "text": "*Seoyeon bleibt einen Schritt vom Geländer entfernt stehen und steckt den Schlüssel ein.*"
@@ -43,7 +40,7 @@
         "name": "{name}",
         "text": "*Nur der Schlüsselbund in Seoyeons Hand klimpert kurz.*",
         "choices": [
-            "Es ihr sagen.",
+            "Ihr sagen, dass ich sie mag.",
             "Noch ein wenig bleiben.",
             "Ich sage, was ich fühle, sobald Seoyeon es zuerst sagt.",
             "So wie wir zueinanderstehen, sollten wir keine Worte brauchen, um es zu wissen."
@@ -133,10 +130,7 @@
         "name": "{name}",
         "text": "*Yunas geheimer Leseraum im Bibliotheksanbau. Oranges Licht fällt durch den Fensterspalt bis auf die Armlehne des alten Sofas. Auf dem Platz neben ihr liegt Yunas Lesezeichen.*"
     },
-    "confess_yuna_3b": {
-        "name": "{name}",
-        "text": "*Als die Tür des Nebengebäudes zufällt, verstummt der Lärm vom Flur. Das Buch auf dem Sofa bleibt aufgeschlagen, das Lesezeichen steckt vor der letzten Seite.*"
-    },
+    "confess_yuna_3b": {},
     "confess_yuna_4": {
         "name": "Yuna",
         "text": "*Sie sitzt auf dem Sofa und sieht {name} an. In ihrer Hand steckt das Lesezeichen.*"
@@ -149,7 +143,7 @@
         "name": "{name}",
         "text": "*Yuna streicht mit dem Daumen das umgeknickte Ende des Lesezeichens glatt und lässt den Platz gegenüber frei.*",
         "choices": [
-            "Yuna. Ich muss dich was fragen.",
+            "Ihr sagen, dass ich sie mag.",
             "Hier ist es wirklich schön.",
             "Ich antworte, wenn Yuna zuerst fragt.",
             "Yuna sollte wissen, was ich fühle, auch wenn ich es nicht sage."
@@ -241,26 +235,20 @@
     },
     "confess_dain_3": {
         "name": "{name}",
-        "text": "*Die leere Turnhalle. Licht aus den Westfenstern fällt schräg über die Spielfeldlinie, an der wir am ersten Tag gewettet haben.*"
+        "text": "*Ich folge Dain in die leere Turnhalle. Nur die Lampen am Spielfeldrand sind an.*"
     },
-    "confess_dain_3b": {
-        "name": "{name}",
-        "text": "*Die Anzeigetafel in der leeren Turnhalle ist dunkel. Die Schatten der Fensterrahmen reichen bis ans andere Ende des Felds, und Dain steht vor der Linie, über die wir so oft den Ball gespielt haben.*"
-    },
+    "confess_dain_3b": {},
     "confess_dain_4": {
         "name": "Dain",
         "text": "*Sie hält einen Ball mit beiden Händen. Wo ihre Fingerknöchel gegen die Oberfläche drücken, werden sie weiß.*"
     },
-    "confess_dain_5": {
-        "name": "{name}",
-        "text": "*Der Ball springt einmal vom Boden auf.*"
-    },
+    "confess_dain_5": {},
     "confess_dain_choice": {
         "name": "Dain",
         "text": "*Der Ball springt einmal auf. Einen halben Takt zu spät streift Dains Hand an seiner Seite vorbei.*",
         "choices": [
-            "Dain. Leg den Ball weg.",
-            "Spielen wir noch eine Runde?",
+            "Ihr sagen, dass ich sie mag.",
+            "Wollen wir noch etwas auf der Bank sitzen?",
             "Ich sage, was ich fühle, sobald Dain es zuerst sagt.",
             "So wie wir zueinanderstehen, sollten wir keine Worte brauchen, um es zu wissen."
         ]
@@ -323,11 +311,11 @@
     },
     "confess_dain_no_1": {
         "name": "{name}",
-        "text": "Noch eine Runde?"
+        "text": "…Wollen wir noch etwas auf der Bank sitzen?"
     },
     "confess_dain_no_2": {
         "name": "{name}",
-        "text": "*Ich werfe ihr den Ball zu. Die Worte kommen nicht heraus.*"
+        "text": "*Ich setze mich neben Dain. Die Worte, die ich sagen wollte, kommen nicht heraus.*"
     },
     "confess_dain_no_3": {
         "name": "Dain",

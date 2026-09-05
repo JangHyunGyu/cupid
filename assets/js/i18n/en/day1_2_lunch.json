@@ -1,7 +1,7 @@
 {
     "lunch_start": {
         "name": "{name}",
-        "text": "*Lunchtime. At the far end of the crowded hall, Seoyeon's lunch bag, Dain waving outside the school store, and Yuna's note pointing toward the library all come into view at once.*"
+        "text": "*Lunchtime. Seoyeon heads for the stairs with her lunch bag. Dain waves from the school shop, while Yuna takes her book toward the library.*"
     },
     "lunch_start_4": {
         "name": "{name}",
@@ -409,7 +409,7 @@
     },
     "lunch_yuna_20": {
         "name": "{name}",
-        "text": "*The bell rings.*"
+        "text": "*The warning bell rings five minutes before class.*"
     },
     "lunch_yuna_21": {
         "name": "{name}",
@@ -429,7 +429,7 @@
     },
     "lunch_yuna_25": {
         "name": "Yuna",
-        "text": "*Yuna tucks the book against her chest and leaves first. After the door closes, the chair across from me remains half pulled out.*"
+        "text": "*Yuna puts her book away. Before getting up, she glances once more at the cover of the book I’m holding.*"
     },
     "lunch_yuna_choice": {
         "name": "{name}",
@@ -443,7 +443,7 @@
     },
     "lunch_yuna_c1_1": {
         "name": "Yuna",
-        "text": "This? It's pretty good. Want to borrow it?"
+        "text": "Take your time with the first volume. It gets better as you go."
     },
     "lunch_yuna_c1_2": {
         "name": "Yuna",

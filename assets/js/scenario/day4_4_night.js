@@ -10,51 +10,154 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
 (() => {
     const scenes = {
     "day4_night_start": {
-        "background": "assets/images/background/room_my.png",
+        "background": "assets/images/background/school.png",
         "character": null,
         "bgm": "night2.mp3",
         "next": "day4_night_branch"
     },
     "day4_night_branch": {
+        "branches": [
+            {
+                "condition": "homeroom_day4",
+                "next": "day4_teacher_checkin"
+            },
+            {
+                "condition": "nurse_day4",
+                "next": "day4_nurse_checkin"
+            },
+            {
+                "next": "day4_student_night_branch"
+            }
+        ],
+        "routeBeforeRender": true
+    },
+    "day4_adult_return_home": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "branches": [
-            { "condition": "homeroom_day4", "next": "day4_adult_teacher_student_rank" },
-            { "condition": "nurse_day4", "next": "day4_adult_nurse_student_rank" },
-            { "next": "day4_student_night_branch" }
-        ]
+        "next": "day4_hidden_msg_branch"
+    },
+    "day4_nurse_checkin": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "day4_adult_nurse_student_rank"
+    },
+    "day4_teacher_checkin": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "day4_adult_teacher_student_rank"
     },
     "day4_adult_teacher_student_rank": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
         "minRivalAffinity": 0,
         "rankedRivalBranches": [
-            { "character": "Seoyeon", "next": "day4_teacher_seoyeon_counteroffer" },
-            { "character": "Dain", "next": "day4_teacher_dain_counteroffer" },
-            { "character": "Yuna", "next": "day4_teacher_yuna_counteroffer" }
+            {
+                "character": "Seoyeon",
+                "next": "day4_teacher_seoyeon_counteroffer"
+            },
+            {
+                "character": "Dain",
+                "next": "day4_teacher_dain_counteroffer"
+            },
+            {
+                "character": "Yuna",
+                "next": "day4_teacher_yuna_counteroffer"
+            }
         ],
-        "rankedRivalFallback": "day4_student_night_branch"
+        "rankedRivalFallback": "day4_student_night_branch",
+        "routeBeforeRender": true
     },
     "day4_adult_nurse_student_rank": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
         "minRivalAffinity": 0,
         "rankedRivalBranches": [
-            { "character": "Seoyeon", "next": "day4_nurse_seoyeon_counteroffer" },
-            { "character": "Dain", "next": "day4_nurse_dain_counteroffer" },
-            { "character": "Yuna", "next": "day4_nurse_yuna_counteroffer" }
+            {
+                "character": "Seoyeon",
+                "next": "day4_nurse_seoyeon_counteroffer"
+            },
+            {
+                "character": "Dain",
+                "next": "day4_nurse_dain_counteroffer"
+            },
+            {
+                "character": "Yuna",
+                "next": "day4_nurse_yuna_counteroffer"
+            }
         ],
-        "rankedRivalFallback": "day4_student_night_branch"
+        "rankedRivalFallback": "day4_student_night_branch",
+        "routeBeforeRender": true
     },
     "day4_teacher_seoyeon_counteroffer": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/seyoun_sad.png",
         "competitiveAffinity": true,
         "choices": [
-            { "next": "day4_hidden_msg_branch", "stats": {"Teacher":{"affinity":4},"Seoyeon":{"affinity":-6}}, "setFlags": ["day4_held_route_teacher"] },
-            { "next": "day4_adult_counteroffer_soft_seoyeon", "affinityChar": "Seoyeon", "affinityBranches": [{"minAffinity":0,"next":"day4_adult_counteroffer_accept_seoyeon"},{"minAffinity":-100,"next":"day4_adult_counteroffer_soft_seoyeon"}], "stats": {"Seoyeon":{"affinity":8},"Teacher":{"affinity":-10}}, "setFlags": ["day4_took_seoyeon_counteroffer","day4_counteroffer_target_teacher","day4_counteroffer_penalty_deferred"] },
-            { "next": "day4_hidden_msg_branch", "stats": {"Teacher":{"affinity":-8},"Seoyeon":{"affinity":-8}}, "setFlags": ["day4_held_route_teacher"] },
-            { "next": "day4_hidden_msg_branch", "stats": {"Teacher":{"affinity":-5},"Seoyeon":{"affinity":-10}}, "setFlags": ["day4_held_route_teacher"] }
+            {
+                "next": "day4_adult_return_home",
+                "stats": {
+                    "Teacher": {
+                        "affinity": 4
+                    },
+                    "Seoyeon": {
+                        "affinity": -6
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_teacher"
+                ]
+            },
+            {
+                "next": "day4_adult_counteroffer_soft_seoyeon",
+                "affinityChar": "Seoyeon",
+                "affinityBranches": [
+                    {
+                        "minAffinity": 0,
+                        "next": "day4_adult_counteroffer_accept_seoyeon"
+                    },
+                    {
+                        "minAffinity": -100,
+                        "next": "day4_adult_counteroffer_soft_seoyeon"
+                    }
+                ],
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": 8
+                    },
+                    "Teacher": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_took_seoyeon_counteroffer",
+                    "day4_counteroffer_target_teacher",
+                    "day4_counteroffer_penalty_deferred"
+                ]
+            },
+            {
+                "next": "day4_adult_return_home",
+                "stats": {
+                    "Teacher": {
+                        "affinity": -8
+                    },
+                    "Seoyeon": {
+                        "affinity": -8
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_teacher"
+                ]
+            },
+            {
+                "next": "day4_adult_return_home",
+                "stats": {
+                    "Teacher": {
+                        "affinity": -5
+                    },
+                    "Seoyeon": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_teacher"
+                ]
+            }
         ]
     },
     "day4_teacher_dain_counteroffer": {
@@ -63,32 +166,233 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/dain_sad.png",
         "competitiveAffinity": true,
         "choices": [
-            { "next": "day4_hidden_msg_branch", "stats": {"Teacher":{"affinity":4},"Dain":{"affinity":-6}}, "setFlags": ["day4_held_route_teacher"] },
-            { "next": "day4_adult_counteroffer_soft_dain", "affinityChar": "Dain", "affinityBranches": [{"minAffinity":0,"next":"day4_adult_counteroffer_accept_dain"},{"minAffinity":-100,"next":"day4_adult_counteroffer_soft_dain"}], "stats": {"Dain":{"affinity":8},"Teacher":{"affinity":-10}}, "setFlags": ["day4_took_dain_counteroffer","day4_counteroffer_target_teacher","day4_counteroffer_penalty_deferred"] },
-            { "next": "day4_hidden_msg_branch", "stats": {"Teacher":{"affinity":-8},"Dain":{"affinity":-8}}, "setFlags": ["day4_held_route_teacher"] },
-            { "next": "day4_hidden_msg_branch", "stats": {"Teacher":{"affinity":-5},"Dain":{"affinity":-10}}, "setFlags": ["day4_held_route_teacher"] }
+            {
+                "next": "day4_adult_return_home",
+                "stats": {
+                    "Teacher": {
+                        "affinity": 4
+                    },
+                    "Dain": {
+                        "affinity": -6
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_teacher"
+                ]
+            },
+            {
+                "next": "day4_adult_counteroffer_soft_dain",
+                "affinityChar": "Dain",
+                "affinityBranches": [
+                    {
+                        "minAffinity": 0,
+                        "next": "day4_adult_counteroffer_accept_dain"
+                    },
+                    {
+                        "minAffinity": -100,
+                        "next": "day4_adult_counteroffer_soft_dain"
+                    }
+                ],
+                "stats": {
+                    "Dain": {
+                        "affinity": 8
+                    },
+                    "Teacher": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_took_dain_counteroffer",
+                    "day4_counteroffer_target_teacher",
+                    "day4_counteroffer_penalty_deferred"
+                ]
+            },
+            {
+                "next": "day4_adult_return_home",
+                "stats": {
+                    "Teacher": {
+                        "affinity": -8
+                    },
+                    "Dain": {
+                        "affinity": -8
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_teacher"
+                ]
+            },
+            {
+                "next": "day4_adult_return_home",
+                "stats": {
+                    "Teacher": {
+                        "affinity": -5
+                    },
+                    "Dain": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_teacher"
+                ]
+            }
         ]
     },
     "day4_teacher_yuna_counteroffer": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_sad.png",
+        "background": "assets/images/background/school_back.png",
+        "character": null,
         "competitiveAffinity": true,
         "choices": [
-            { "next": "day4_hidden_msg_branch", "stats": {"Teacher":{"affinity":4},"Yuna":{"affinity":-6}}, "setFlags": ["day4_held_route_teacher"] },
-            { "next": "day4_adult_counteroffer_soft_yuna", "affinityChar": "Yuna", "affinityBranches": [{"minAffinity":0,"next":"day4_adult_counteroffer_accept_yuna"},{"minAffinity":-100,"next":"day4_adult_counteroffer_soft_yuna"}], "stats": {"Yuna":{"affinity":8},"Teacher":{"affinity":-10}}, "setFlags": ["day4_took_yuna_counteroffer","day4_counteroffer_target_teacher","day4_counteroffer_penalty_deferred"] },
-            { "next": "day4_hidden_msg_branch", "stats": {"Teacher":{"affinity":-8},"Yuna":{"affinity":-8}}, "setFlags": ["day4_held_route_teacher"] },
-            { "next": "day4_hidden_msg_branch", "stats": {"Teacher":{"affinity":-5},"Yuna":{"affinity":-10}}, "setFlags": ["day4_held_route_teacher"] }
-        ]
+            {
+                "next": "day4_adult_return_home",
+                "stats": {
+                    "Teacher": {
+                        "affinity": 4
+                    },
+                    "Yuna": {
+                        "affinity": -6
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_teacher"
+                ]
+            },
+            {
+                "next": "day4_adult_counteroffer_soft_yuna",
+                "affinityChar": "Yuna",
+                "affinityBranches": [
+                    {
+                        "minAffinity": 0,
+                        "next": "day4_adult_counteroffer_accept_yuna"
+                    },
+                    {
+                        "minAffinity": -100,
+                        "next": "day4_adult_counteroffer_soft_yuna"
+                    }
+                ],
+                "stats": {
+                    "Yuna": {
+                        "affinity": 8
+                    },
+                    "Teacher": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_took_yuna_counteroffer",
+                    "day4_counteroffer_target_teacher",
+                    "day4_counteroffer_penalty_deferred"
+                ]
+            },
+            {
+                "next": "day4_adult_return_home",
+                "stats": {
+                    "Teacher": {
+                        "affinity": -8
+                    },
+                    "Yuna": {
+                        "affinity": -8
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_teacher"
+                ]
+            },
+            {
+                "next": "day4_adult_return_home",
+                "stats": {
+                    "Teacher": {
+                        "affinity": -5
+                    },
+                    "Yuna": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_teacher"
+                ]
+            }
+        ],
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_sad.png",
+                "opacity": 0.35
+            }
+        }
     },
     "day4_nurse_seoyeon_counteroffer": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/seyoun_sad.png",
         "competitiveAffinity": true,
         "choices": [
-            { "next": "day4_hidden_msg_branch", "stats": {"Nurse":{"affinity":4},"Seoyeon":{"affinity":-6}}, "setFlags": ["day4_held_route_nurse"] },
-            { "next": "day4_adult_counteroffer_soft_seoyeon", "affinityChar": "Seoyeon", "affinityBranches": [{"minAffinity":0,"next":"day4_adult_counteroffer_accept_seoyeon"},{"minAffinity":-100,"next":"day4_adult_counteroffer_soft_seoyeon"}], "stats": {"Seoyeon":{"affinity":8},"Nurse":{"affinity":-10}}, "setFlags": ["day4_took_seoyeon_counteroffer","day4_counteroffer_target_nurse","day4_counteroffer_penalty_deferred"] },
-            { "next": "day4_hidden_msg_branch", "stats": {"Nurse":{"affinity":-8},"Seoyeon":{"affinity":-8}}, "setFlags": ["day4_held_route_nurse"] },
-            { "next": "day4_hidden_msg_branch", "stats": {"Nurse":{"affinity":-5},"Seoyeon":{"affinity":-10}}, "setFlags": ["day4_held_route_nurse"] }
+            {
+                "next": "day4_adult_return_home",
+                "stats": {
+                    "Nurse": {
+                        "affinity": 4
+                    },
+                    "Seoyeon": {
+                        "affinity": -6
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_nurse"
+                ]
+            },
+            {
+                "next": "day4_adult_counteroffer_soft_seoyeon",
+                "affinityChar": "Seoyeon",
+                "affinityBranches": [
+                    {
+                        "minAffinity": 0,
+                        "next": "day4_adult_counteroffer_accept_seoyeon"
+                    },
+                    {
+                        "minAffinity": -100,
+                        "next": "day4_adult_counteroffer_soft_seoyeon"
+                    }
+                ],
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": 8
+                    },
+                    "Nurse": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_took_seoyeon_counteroffer",
+                    "day4_counteroffer_target_nurse",
+                    "day4_counteroffer_penalty_deferred"
+                ]
+            },
+            {
+                "next": "day4_adult_return_home",
+                "stats": {
+                    "Nurse": {
+                        "affinity": -8
+                    },
+                    "Seoyeon": {
+                        "affinity": -8
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_nurse"
+                ]
+            },
+            {
+                "next": "day4_adult_return_home",
+                "stats": {
+                    "Nurse": {
+                        "affinity": -5
+                    },
+                    "Seoyeon": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_nurse"
+                ]
+            }
         ]
     },
     "day4_nurse_dain_counteroffer": {
@@ -97,22 +401,158 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/dain_sad.png",
         "competitiveAffinity": true,
         "choices": [
-            { "next": "day4_hidden_msg_branch", "stats": {"Nurse":{"affinity":4},"Dain":{"affinity":-6}}, "setFlags": ["day4_held_route_nurse"] },
-            { "next": "day4_adult_counteroffer_soft_dain", "affinityChar": "Dain", "affinityBranches": [{"minAffinity":0,"next":"day4_adult_counteroffer_accept_dain"},{"minAffinity":-100,"next":"day4_adult_counteroffer_soft_dain"}], "stats": {"Dain":{"affinity":8},"Nurse":{"affinity":-10}}, "setFlags": ["day4_took_dain_counteroffer","day4_counteroffer_target_nurse","day4_counteroffer_penalty_deferred"] },
-            { "next": "day4_hidden_msg_branch", "stats": {"Nurse":{"affinity":-8},"Dain":{"affinity":-8}}, "setFlags": ["day4_held_route_nurse"] },
-            { "next": "day4_hidden_msg_branch", "stats": {"Nurse":{"affinity":-5},"Dain":{"affinity":-10}}, "setFlags": ["day4_held_route_nurse"] }
+            {
+                "next": "day4_adult_return_home",
+                "stats": {
+                    "Nurse": {
+                        "affinity": 4
+                    },
+                    "Dain": {
+                        "affinity": -6
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_nurse"
+                ]
+            },
+            {
+                "next": "day4_adult_counteroffer_soft_dain",
+                "affinityChar": "Dain",
+                "affinityBranches": [
+                    {
+                        "minAffinity": 0,
+                        "next": "day4_adult_counteroffer_accept_dain"
+                    },
+                    {
+                        "minAffinity": -100,
+                        "next": "day4_adult_counteroffer_soft_dain"
+                    }
+                ],
+                "stats": {
+                    "Dain": {
+                        "affinity": 8
+                    },
+                    "Nurse": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_took_dain_counteroffer",
+                    "day4_counteroffer_target_nurse",
+                    "day4_counteroffer_penalty_deferred"
+                ]
+            },
+            {
+                "next": "day4_adult_return_home",
+                "stats": {
+                    "Nurse": {
+                        "affinity": -8
+                    },
+                    "Dain": {
+                        "affinity": -8
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_nurse"
+                ]
+            },
+            {
+                "next": "day4_adult_return_home",
+                "stats": {
+                    "Nurse": {
+                        "affinity": -5
+                    },
+                    "Dain": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_nurse"
+                ]
+            }
         ]
     },
     "day4_nurse_yuna_counteroffer": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_sad.png",
+        "background": "assets/images/background/school_back.png",
+        "character": null,
         "competitiveAffinity": true,
         "choices": [
-            { "next": "day4_hidden_msg_branch", "stats": {"Nurse":{"affinity":4},"Yuna":{"affinity":-6}}, "setFlags": ["day4_held_route_nurse"] },
-            { "next": "day4_adult_counteroffer_soft_yuna", "affinityChar": "Yuna", "affinityBranches": [{"minAffinity":0,"next":"day4_adult_counteroffer_accept_yuna"},{"minAffinity":-100,"next":"day4_adult_counteroffer_soft_yuna"}], "stats": {"Yuna":{"affinity":8},"Nurse":{"affinity":-10}}, "setFlags": ["day4_took_yuna_counteroffer","day4_counteroffer_target_nurse","day4_counteroffer_penalty_deferred"] },
-            { "next": "day4_hidden_msg_branch", "stats": {"Nurse":{"affinity":-8},"Yuna":{"affinity":-8}}, "setFlags": ["day4_held_route_nurse"] },
-            { "next": "day4_hidden_msg_branch", "stats": {"Nurse":{"affinity":-5},"Yuna":{"affinity":-10}}, "setFlags": ["day4_held_route_nurse"] }
-        ]
+            {
+                "next": "day4_adult_return_home",
+                "stats": {
+                    "Nurse": {
+                        "affinity": 4
+                    },
+                    "Yuna": {
+                        "affinity": -6
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_nurse"
+                ]
+            },
+            {
+                "next": "day4_adult_counteroffer_soft_yuna",
+                "affinityChar": "Yuna",
+                "affinityBranches": [
+                    {
+                        "minAffinity": 0,
+                        "next": "day4_adult_counteroffer_accept_yuna"
+                    },
+                    {
+                        "minAffinity": -100,
+                        "next": "day4_adult_counteroffer_soft_yuna"
+                    }
+                ],
+                "stats": {
+                    "Yuna": {
+                        "affinity": 8
+                    },
+                    "Nurse": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_took_yuna_counteroffer",
+                    "day4_counteroffer_target_nurse",
+                    "day4_counteroffer_penalty_deferred"
+                ]
+            },
+            {
+                "next": "day4_adult_return_home",
+                "stats": {
+                    "Nurse": {
+                        "affinity": -8
+                    },
+                    "Yuna": {
+                        "affinity": -8
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_nurse"
+                ]
+            },
+            {
+                "next": "day4_adult_return_home",
+                "stats": {
+                    "Nurse": {
+                        "affinity": -5
+                    },
+                    "Yuna": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_nurse"
+                ]
+            }
+        ],
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_sad.png",
+                "opacity": 0.35
+            }
+        }
     },
     "day4_adult_counteroffer_accept_seoyeon": {
         "background": "assets/images/background/event_temptation_seoyeon.png",
@@ -130,7 +570,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "day4_adult_night_regret_target_branch"
     },
     "day4_adult_counteroffer_soft_seoyeon": {
-        "background": "assets/images/background/school_back.png",
+        "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "day4_adult_counteroffer_soft_return_home"
     },
@@ -172,11 +612,25 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "branches": [
-            { "condition": "day4_waited", "next": "day4_night_regret" },
-            { "condition": "route_seoyeon", "next": "wall_seo_rival_rank" },
-            { "condition": "route_dain", "next": "wall_dain_rival_rank" },
-            { "condition": "route_yuna", "next": "wall_yuna_rival_rank" },
-            { "next": "day4_night_reflect" }
+            {
+                "condition": "day4_waited",
+                "next": "day4_night_regret"
+            },
+            {
+                "condition": "route_seoyeon",
+                "next": "wall_seo_1"
+            },
+            {
+                "condition": "route_dain",
+                "next": "wall_dain_1"
+            },
+            {
+                "condition": "route_yuna",
+                "next": "wall_yuna_1"
+            },
+            {
+                "next": "day4_night_reflect"
+            }
         ]
     },
     "wall_seo_1": {
@@ -213,8 +667,13 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "wall_seo_2": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/seyoun_sad.png","opacity":0.35}},
-        "next": "wall_seo_to_park"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_sad.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "wall_seo_rival_rank"
     },
     "wall_seo_to_park": {
         "background": "assets/images/background/park.png",
@@ -347,10 +806,38 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "backgroundVariant": "cold",
         "character": "assets/images/characters/seyoun_cry.png",
         "choices": [
-            { "next": "wall_seo_hug_1", "stats": {"Seoyeon":{"affinity":3}} },
-            { "next": "wall_seo_pinky_1", "stats": {"Seoyeon":{"affinity":3}} },
-            { "next": "wall_seo_hug_1", "stats": {"Seoyeon":{"affinity":-4}} },
-            { "next": "wall_seo_hug_1", "stats": {"Seoyeon":{"affinity":-5}} }
+            {
+                "next": "wall_seo_hug_1",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": 3
+                    }
+                }
+            },
+            {
+                "next": "wall_seo_pinky_1",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": 3
+                    }
+                }
+            },
+            {
+                "next": "wall_seo_overpromise_react",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": -4
+                    }
+                }
+            },
+            {
+                "next": "wall_seo_overpromise_react",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": -5
+                    }
+                }
+            }
         ]
     },
     "wall_seo_hug_1": {
@@ -441,6 +928,11 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/seyoun_cry.png",
         "next": "wall_seo_line_react_3_b"
     },
+    "wall_seo_overpromise_react": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_cry.png",
+        "next": "wall_seo_line_choice"
+    },
     "wall_seo_line_react_3_b": {
         "background": "assets/images/background/park.png",
         "backgroundVariant": "cold",
@@ -498,11 +990,11 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "wall_seo_skin70_3"
     },
     "wall_seo_skin70_3": {
-        "background": "assets/images/background/park.png",
-        "backgroundVariant": "cold",
-        "character": "assets/images/characters/seyoun_shy.png",
-        "setFlags": ["day4_skinship_seoyeon_70"],
-        "next": "wall_seo_freetalk"
+        "setFlags": [
+            "day4_skinship_seoyeon_70"
+        ],
+        "next": "wall_seo_freetalk",
+        "routeBeforeRender": false
     },
     "wall_seo_skin60_1": {
         "background": "assets/images/background/park.png",
@@ -523,7 +1015,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/seyoun_normal.png",
         "type": "free_talk",
         "maxTurns": 3,
-        "next": "day4_student_return_home"
+        "next": "day4_student_return_home",
+        "isRemote": false
     },
     "wall_seo_rival_rank": {
         "background": "assets/images/background/park.png",
@@ -531,10 +1024,17 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": null,
         "minRivalAffinity": 0,
         "rankedRivalBranches": [
-            { "character": "Dain", "next": "wall_seo_glimpse_1" },
-            { "character": "Yuna", "next": "wall_seo_yuna_tempt_1" }
+            {
+                "character": "Dain",
+                "next": "wall_seo_glimpse_1"
+            },
+            {
+                "character": "Yuna",
+                "next": "wall_seo_yuna_tempt_1"
+            }
         ],
-        "rankedRivalFallback": "wall_seo_1"
+        "rankedRivalFallback": "wall_seo_to_park",
+        "routeBeforeRender": true
     },
     "wall_seo_glimpse_1": {
         "background": "assets/images/background/school_back.png",
@@ -546,10 +1046,74 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/dain_sad.png",
         "competitiveAffinity": true,
         "choices": [
-            { "next": "wall_seo_1", "stats": {"Seoyeon":{"affinity":3},"Dain":{"affinity":-6}}, "setFlags": ["day4_held_route_seoyeon"] },
-            { "next": "day4_student_counteroffer_soft_dain", "affinityChar": "Dain", "affinityBranches": [{"minAffinity":0,"next":"wall_seo_glimpse_4"},{"minAffinity":-100,"next":"day4_student_counteroffer_soft_dain"}], "stats": {"Dain":{"affinity":8},"Seoyeon":{"affinity":-10}}, "setFlags": ["day4_took_dain_counteroffer","day4_counteroffer_penalty_deferred"] },
-            { "next": "wall_seo_1", "stats": {"Seoyeon":{"affinity":-8},"Dain":{"affinity":-8}}, "setFlags": ["day4_held_route_seoyeon"] },
-            { "next": "wall_seo_1", "stats": {"Seoyeon":{"affinity":-5},"Dain":{"affinity":-10}}, "setFlags": ["day4_held_route_seoyeon"] }
+            {
+                "next": "wall_seo_to_park",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": 3
+                    },
+                    "Dain": {
+                        "affinity": -6
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_seoyeon"
+                ]
+            },
+            {
+                "next": "day4_student_counteroffer_soft_dain",
+                "affinityChar": "Dain",
+                "affinityBranches": [
+                    {
+                        "minAffinity": 0,
+                        "next": "wall_seo_glimpse_4"
+                    },
+                    {
+                        "minAffinity": -100,
+                        "next": "day4_student_counteroffer_soft_dain"
+                    }
+                ],
+                "stats": {
+                    "Dain": {
+                        "affinity": 8
+                    },
+                    "Seoyeon": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_took_dain_counteroffer",
+                    "day4_counteroffer_penalty_deferred"
+                ]
+            },
+            {
+                "next": "wall_seo_to_park",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": -8
+                    },
+                    "Dain": {
+                        "affinity": -8
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_seoyeon"
+                ]
+            },
+            {
+                "next": "wall_seo_to_park",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": -5
+                    },
+                    "Dain": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_seoyeon"
+                ]
+            }
         ]
     },
     "wall_seo_glimpse_4": {
@@ -567,10 +1131,74 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/yuna_sad.png",
         "competitiveAffinity": true,
         "choices": [
-            { "next": "wall_seo_1", "stats": {"Seoyeon":{"affinity":4},"Yuna":{"affinity":-6}}, "setFlags": ["day4_held_route_seoyeon"] },
-            { "next": "day4_student_counteroffer_soft_yuna", "affinityChar": "Yuna", "affinityBranches": [{"minAffinity":0,"next":"wall_seo_yuna_tempt_accept"},{"minAffinity":-100,"next":"day4_student_counteroffer_soft_yuna"}], "stats": {"Yuna":{"affinity":8},"Seoyeon":{"affinity":-10}}, "setFlags": ["day4_took_yuna_counteroffer","day4_counteroffer_penalty_deferred"] },
-            { "next": "wall_seo_1", "stats": {"Seoyeon":{"affinity":-8},"Yuna":{"affinity":-8}}, "setFlags": ["day4_held_route_seoyeon"] },
-            { "next": "wall_seo_1", "stats": {"Seoyeon":{"affinity":-5},"Yuna":{"affinity":-10}}, "setFlags": ["day4_held_route_seoyeon"] }
+            {
+                "next": "wall_seo_to_park",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": 4
+                    },
+                    "Yuna": {
+                        "affinity": -6
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_seoyeon"
+                ]
+            },
+            {
+                "next": "day4_student_counteroffer_soft_yuna",
+                "affinityChar": "Yuna",
+                "affinityBranches": [
+                    {
+                        "minAffinity": 0,
+                        "next": "wall_seo_yuna_tempt_accept"
+                    },
+                    {
+                        "minAffinity": -100,
+                        "next": "day4_student_counteroffer_soft_yuna"
+                    }
+                ],
+                "stats": {
+                    "Yuna": {
+                        "affinity": 8
+                    },
+                    "Seoyeon": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_took_yuna_counteroffer",
+                    "day4_counteroffer_penalty_deferred"
+                ]
+            },
+            {
+                "next": "wall_seo_to_park",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": -8
+                    },
+                    "Yuna": {
+                        "affinity": -8
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_seoyeon"
+                ]
+            },
+            {
+                "next": "wall_seo_to_park",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": -5
+                    },
+                    "Yuna": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_seoyeon"
+                ]
+            }
         ]
     },
     "wall_seo_yuna_tempt_accept": {
@@ -591,14 +1219,12 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "wall_dain_pre_high_2"
     },
     "wall_dain_pre_high_2": {
-        "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/dain_sad.png","opacity":0.35}},
-        "next": "wall_dain_3"
+        "next": "wall_dain_3",
+        "routeBeforeRender": true
     },
     "wall_dain_pre_low_1": {
-        "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/dain_sweat.png","opacity":0.35}},
-        "next": "wall_dain_pre_low_2"
+        "next": "wall_dain_pre_low_2",
+        "routeBeforeRender": true
     },
     "wall_dain_pre_low_2": {
         "background": "assets/images/background/room_my.png",
@@ -617,8 +1243,13 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "wall_dain_3": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
-        "next": "wall_dain_4"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/dain_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "wall_dain_rival_rank"
     },
     "wall_dain_4": {
         "background": "assets/images/background/gym.png",
@@ -1018,17 +1649,25 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/dain_normal.png",
         "type": "free_talk",
         "maxTurns": 3,
-        "next": "day4_student_return_home"
+        "next": "day4_student_return_home",
+        "isRemote": false
     },
     "wall_dain_rival_rank": {
         "background": "assets/images/background/school_back.png",
         "character": null,
         "minRivalAffinity": 0,
         "rankedRivalBranches": [
-            { "character": "Seoyeon", "next": "wall_dain_seo_tempt_1" },
-            { "character": "Yuna", "next": "wall_dain_glimpse_1" }
+            {
+                "character": "Seoyeon",
+                "next": "wall_dain_seo_tempt_1"
+            },
+            {
+                "character": "Yuna",
+                "next": "wall_dain_glimpse_1"
+            }
         ],
-        "rankedRivalFallback": "wall_dain_1"
+        "rankedRivalFallback": "wall_dain_4",
+        "routeBeforeRender": true
     },
     "wall_dain_glimpse_1": {
         "background": "assets/images/background/school_back.png",
@@ -1052,13 +1691,82 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "wall_dain_glimpse_4_c": {
         "background": "assets/images/background/school_back.png",
-        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_normal.png",
+                "opacity": 0.35
+            }
+        },
         "competitiveAffinity": true,
         "choices": [
-            { "next": "wall_dain_1", "stats": {"Dain":{"affinity":5},"Yuna":{"affinity":-6}}, "setFlags": ["day4_held_route_dain"] },
-            { "next": "day4_student_counteroffer_soft_yuna", "affinityChar": "Yuna", "affinityBranches": [{"minAffinity":0,"next":"wall_dain_glimpse_4"},{"minAffinity":-100,"next":"day4_student_counteroffer_soft_yuna"}], "stats": {"Yuna":{"affinity":8},"Dain":{"affinity":-10}}, "setFlags": ["day4_took_yuna_counteroffer","day4_counteroffer_penalty_deferred"] },
-            { "next": "wall_dain_1", "stats": {"Dain":{"affinity":-8},"Yuna":{"affinity":-8}}, "setFlags": ["day4_held_route_dain"] },
-            { "next": "wall_dain_1", "stats": {"Dain":{"affinity":-5},"Yuna":{"affinity":-10}}, "setFlags": ["day4_held_route_dain"] }
+            {
+                "next": "wall_dain_4",
+                "stats": {
+                    "Dain": {
+                        "affinity": 5
+                    },
+                    "Yuna": {
+                        "affinity": -6
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_dain"
+                ]
+            },
+            {
+                "next": "day4_student_counteroffer_soft_yuna",
+                "affinityChar": "Yuna",
+                "affinityBranches": [
+                    {
+                        "minAffinity": 0,
+                        "next": "wall_dain_glimpse_4"
+                    },
+                    {
+                        "minAffinity": -100,
+                        "next": "day4_student_counteroffer_soft_yuna"
+                    }
+                ],
+                "stats": {
+                    "Yuna": {
+                        "affinity": 8
+                    },
+                    "Dain": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_took_yuna_counteroffer",
+                    "day4_counteroffer_penalty_deferred"
+                ]
+            },
+            {
+                "next": "wall_dain_4",
+                "stats": {
+                    "Dain": {
+                        "affinity": -8
+                    },
+                    "Yuna": {
+                        "affinity": -8
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_dain"
+                ]
+            },
+            {
+                "next": "wall_dain_4",
+                "stats": {
+                    "Dain": {
+                        "affinity": -5
+                    },
+                    "Yuna": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_dain"
+                ]
+            }
         ]
     },
     "wall_dain_seo_tempt_1": {
@@ -1071,10 +1779,74 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/seyoun_sad.png",
         "competitiveAffinity": true,
         "choices": [
-            { "next": "wall_dain_1", "stats": {"Dain":{"affinity":5},"Seoyeon":{"affinity":-6}}, "setFlags": ["day4_held_route_dain"] },
-            { "next": "day4_student_counteroffer_soft_seoyeon", "affinityChar": "Seoyeon", "affinityBranches": [{"minAffinity":0,"next":"wall_dain_seo_tempt_accept"},{"minAffinity":-100,"next":"day4_student_counteroffer_soft_seoyeon"}], "stats": {"Seoyeon":{"affinity":8},"Dain":{"affinity":-10}}, "setFlags": ["day4_took_seoyeon_counteroffer","day4_counteroffer_penalty_deferred"] },
-            { "next": "wall_dain_1", "stats": {"Dain":{"affinity":-8},"Seoyeon":{"affinity":-8}}, "setFlags": ["day4_held_route_dain"] },
-            { "next": "wall_dain_1", "stats": {"Dain":{"affinity":-5},"Seoyeon":{"affinity":-10}}, "setFlags": ["day4_held_route_dain"] }
+            {
+                "next": "wall_dain_4",
+                "stats": {
+                    "Dain": {
+                        "affinity": 5
+                    },
+                    "Seoyeon": {
+                        "affinity": -6
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_dain"
+                ]
+            },
+            {
+                "next": "day4_student_counteroffer_soft_seoyeon",
+                "affinityChar": "Seoyeon",
+                "affinityBranches": [
+                    {
+                        "minAffinity": 0,
+                        "next": "wall_dain_seo_tempt_accept"
+                    },
+                    {
+                        "minAffinity": -100,
+                        "next": "day4_student_counteroffer_soft_seoyeon"
+                    }
+                ],
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": 8
+                    },
+                    "Dain": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_took_seoyeon_counteroffer",
+                    "day4_counteroffer_penalty_deferred"
+                ]
+            },
+            {
+                "next": "wall_dain_4",
+                "stats": {
+                    "Dain": {
+                        "affinity": -8
+                    },
+                    "Seoyeon": {
+                        "affinity": -8
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_dain"
+                ]
+            },
+            {
+                "next": "wall_dain_4",
+                "stats": {
+                    "Dain": {
+                        "affinity": -5
+                    },
+                    "Seoyeon": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_dain"
+                ]
+            }
         ]
     },
     "wall_dain_seo_tempt_accept": {
@@ -1097,22 +1869,16 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "wall_yuna_pre_high_2"
     },
     "wall_yuna_pre_high_2": {
-        "background": "assets/images/background/room_my.png",
-        "backgroundVariant": "dream",
-        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "next": "wall_yuna_3"
+        "next": "wall_yuna_rival_rank",
+        "routeBeforeRender": true
     },
     "wall_yuna_pre_low_1": {
-        "background": "assets/images/background/room_my.png",
-        "backgroundVariant": "dream",
-        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "next": "wall_yuna_pre_low_2"
+        "next": "wall_yuna_pre_low_2",
+        "routeBeforeRender": true
     },
     "wall_yuna_pre_low_2": {
-        "background": "assets/images/background/room_my.png",
-        "backgroundVariant": "dream",
-        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "next": "wall_yuna_2"
+        "next": "wall_yuna_rival_rank",
+        "routeBeforeRender": true
     },
     "wall_yuna_2": {
         "background": "assets/images/background/school_back.png",
@@ -1381,7 +2147,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/yuna_normal.png",
         "type": "free_talk",
         "maxTurns": 3,
-        "next": "day4_student_return_home"
+        "next": "day4_student_return_home",
+        "isRemote": false
     },
     "wall_yuna_rival_rank": {
         "background": "assets/images/background/yuna_hideout.png",
@@ -1389,10 +2156,17 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": null,
         "minRivalAffinity": 0,
         "rankedRivalBranches": [
-            { "character": "Seoyeon", "next": "wall_yuna_glimpse_1" },
-            { "character": "Dain", "next": "wall_yuna_dain_tempt_1" }
+            {
+                "character": "Seoyeon",
+                "next": "wall_yuna_glimpse_1"
+            },
+            {
+                "character": "Dain",
+                "next": "wall_yuna_dain_tempt_1"
+            }
         ],
-        "rankedRivalFallback": "wall_yuna_1"
+        "rankedRivalFallback": "wall_yuna_2",
+        "routeBeforeRender": true
     },
     "wall_yuna_glimpse_1": {
         "background": "assets/images/background/school_back.png",
@@ -1412,10 +2186,74 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/seyoun_normal.png",
         "competitiveAffinity": true,
         "choices": [
-            { "next": "wall_yuna_1", "stats": {"Yuna":{"affinity":4},"Seoyeon":{"affinity":-6}}, "setFlags": ["day4_held_route_yuna"] },
-            { "next": "day4_student_counteroffer_soft_seoyeon", "affinityChar": "Seoyeon", "affinityBranches": [{"minAffinity":0,"next":"wall_yuna_glimpse_4"},{"minAffinity":-100,"next":"day4_student_counteroffer_soft_seoyeon"}], "stats": {"Seoyeon":{"affinity":8},"Yuna":{"affinity":-10}}, "setFlags": ["day4_took_seoyeon_counteroffer","day4_counteroffer_penalty_deferred"] },
-            { "next": "wall_yuna_1", "stats": {"Yuna":{"affinity":-8},"Seoyeon":{"affinity":-8}}, "setFlags": ["day4_held_route_yuna"] },
-            { "next": "wall_yuna_1", "stats": {"Yuna":{"affinity":-5},"Seoyeon":{"affinity":-10}}, "setFlags": ["day4_held_route_yuna"] }
+            {
+                "next": "wall_yuna_2",
+                "stats": {
+                    "Yuna": {
+                        "affinity": 4
+                    },
+                    "Seoyeon": {
+                        "affinity": -6
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_yuna"
+                ]
+            },
+            {
+                "next": "day4_student_counteroffer_soft_seoyeon",
+                "affinityChar": "Seoyeon",
+                "affinityBranches": [
+                    {
+                        "minAffinity": 0,
+                        "next": "wall_yuna_glimpse_4"
+                    },
+                    {
+                        "minAffinity": -100,
+                        "next": "day4_student_counteroffer_soft_seoyeon"
+                    }
+                ],
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": 8
+                    },
+                    "Yuna": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_took_seoyeon_counteroffer",
+                    "day4_counteroffer_penalty_deferred"
+                ]
+            },
+            {
+                "next": "wall_yuna_2",
+                "stats": {
+                    "Yuna": {
+                        "affinity": -8
+                    },
+                    "Seoyeon": {
+                        "affinity": -8
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_yuna"
+                ]
+            },
+            {
+                "next": "wall_yuna_2",
+                "stats": {
+                    "Yuna": {
+                        "affinity": -5
+                    },
+                    "Seoyeon": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_yuna"
+                ]
+            }
         ]
     },
     "wall_yuna_glimpse_4": {
@@ -1435,10 +2273,74 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/dain_sad.png",
         "competitiveAffinity": true,
         "choices": [
-            { "next": "wall_yuna_1", "stats": {"Yuna":{"affinity":4},"Dain":{"affinity":-6}}, "setFlags": ["day4_held_route_yuna"] },
-            { "next": "day4_student_counteroffer_soft_dain", "affinityChar": "Dain", "affinityBranches": [{"minAffinity":0,"next":"wall_yuna_dain_tempt_accept"},{"minAffinity":-100,"next":"day4_student_counteroffer_soft_dain"}], "stats": {"Dain":{"affinity":8},"Yuna":{"affinity":-10}}, "setFlags": ["day4_took_dain_counteroffer","day4_counteroffer_penalty_deferred"] },
-            { "next": "wall_yuna_1", "stats": {"Yuna":{"affinity":-8},"Dain":{"affinity":-8}}, "setFlags": ["day4_held_route_yuna"] },
-            { "next": "wall_yuna_1", "stats": {"Yuna":{"affinity":-5},"Dain":{"affinity":-10}}, "setFlags": ["day4_held_route_yuna"] }
+            {
+                "next": "wall_yuna_2",
+                "stats": {
+                    "Yuna": {
+                        "affinity": 4
+                    },
+                    "Dain": {
+                        "affinity": -6
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_yuna"
+                ]
+            },
+            {
+                "next": "day4_student_counteroffer_soft_dain",
+                "affinityChar": "Dain",
+                "affinityBranches": [
+                    {
+                        "minAffinity": 0,
+                        "next": "wall_yuna_dain_tempt_accept"
+                    },
+                    {
+                        "minAffinity": -100,
+                        "next": "day4_student_counteroffer_soft_dain"
+                    }
+                ],
+                "stats": {
+                    "Dain": {
+                        "affinity": 8
+                    },
+                    "Yuna": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_took_dain_counteroffer",
+                    "day4_counteroffer_penalty_deferred"
+                ]
+            },
+            {
+                "next": "wall_yuna_2",
+                "stats": {
+                    "Yuna": {
+                        "affinity": -8
+                    },
+                    "Dain": {
+                        "affinity": -8
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_yuna"
+                ]
+            },
+            {
+                "next": "wall_yuna_2",
+                "stats": {
+                    "Yuna": {
+                        "affinity": -5
+                    },
+                    "Dain": {
+                        "affinity": -10
+                    }
+                },
+                "setFlags": [
+                    "day4_held_route_yuna"
+                ]
+            }
         ]
     },
     "wall_yuna_dain_tempt_accept": {

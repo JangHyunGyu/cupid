@@ -82,7 +82,7 @@
     },
     "hidden_perfect_homeroom_4g": {
         "name": "Professeure principale",
-        "text": "C’est un cadeau pour fêter la publication. Et puis… est-ce que je peux le prendre comme le signe que tu as envie de me revoir ?"
+        "text": "Merci d’avoir attendu la sortie de mon livre. Ces fleurs marquent l’occasion. Et… tu veux bien y voir aussi mon envie de te revoir ?"
     },
     "hidden_perfect_homeroom_ending_title": {
         "name": "",
@@ -339,7 +339,7 @@
     },
     "hidden_true_nurse_4": {
         "name": "Infirmière",
-        "text": "Je me souviens de ton arrivée à l'infirmerie avec des vertiges, le jour de ton transfert."
+        "text": "Je me souviens que même à l’infirmerie, tu commençais par dire que tout allait bien."
     },
     "hidden_true_nurse_5": {
         "name": "Infirmière",
@@ -702,18 +702,12 @@
         "name": "Yuna",
         "text": "*Elle ouvre la playlist sur son téléphone. Une petite étoile marque le troisième morceau.*"
     },
-    "true_yuna_5": {
-        "name": "{name}",
-        "text": "Le troisième morceau de l'autre fois ?"
-    },
+    "true_yuna_5": {},
     "true_yuna_5_b": {
         "name": "Yuna",
         "text": "*Son doigt s’arrête sur le troisième morceau en faisant défiler la playlist. Sa main se desserre sur le dos du livre.*"
     },
-    "true_yuna_6": {
-        "name": "Yuna",
-        "text": "...Tu t'en souvenais."
-    },
+    "true_yuna_6": {},
     "true_yuna_6b": {
         "name": "Yuna",
         "text": "Aujourd'hui, écoute-le ici avec moi."
@@ -764,12 +758,9 @@
     },
     "perfect_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Quand Dain dit \"Tu peux me reposer\", {name} la redescend lentement en veillant à ce que son pied gauche touche le sol en premier.*"
+        "text": "*Quand Dain desserre les bras, je recule doucement. Une fois qu’elle tient confortablement debout, nous nous asseyons sur le banc.*"
     },
-    "perfect_epilogue_1b_dain": {
-        "name": "{name}",
-        "text": "*Avant que son poids ne se reporte sur son genou droit, elle s'appuie sur l'épaule de {name} pour garder l'équilibre.*"
-    },
+    "perfect_epilogue_1b_dain": {},
     "perfect_epilogue_1c_dain": {
         "name": "{name}",
         "text": "*Les jours de rééducation, Dain choisit d'abord l'allure. {name} accorde ses pas aux siens.*"
@@ -868,11 +859,11 @@
     },
     "true_epilogue_2": {
         "name": "{name}",
-        "text": "*Le jour de la remise des diplômes, l'uniforme était raide. Les fleurs de cerisier ne faisaient que me chatouiller le nez. Devant le portail de l'école, j'ai glissé les mains dans mes poches.*"
+        "text": "*Dimanche soir, sur le chemin du retour. Nous ralentissons en passant devant le lycée. Demain, nous repasserons cette grille, avec les mots échangés aujourd’hui.*"
     },
     "true_epilogue_3": {
         "name": "{name}",
-        "text": "*Le calendrier n’avait avancé que de cinq cases.*"
+        "text": "*Cinq jours depuis mon arrivée mercredi. Dans la dernière case de cette première semaine, je note notre rendez-vous de demain.*"
     },
     "true_epilogue_4": {},
     "true_epilogue_4_seo": {
@@ -885,7 +876,7 @@
     },
     "true_epilogue_4_dain": {
         "name": "{name}",
-        "text": "*L'alarme matinale de Dain annonce ses étirements de rééducation au lieu de lui dire de sourire. Elle envoie parfois une vidéo d'entraînement au commentaire, et {name} la regarde jusqu'au bout avant de répondre.*"
+        "text": "*Dain renomme son réveil de demain « étirements de rééducation ». Elle m’enverra aussi ses essais de commentaire sportif. Je promets de tout regarder et de lui répondre.*"
     },
     "true_epilogue_7": {
         "name": "Système",
@@ -1063,13 +1054,10 @@
         "name": "{name}",
         "text": "*Nous quittons le toit et descendons l'escalier. Nos pas sont lents, mais ne s'arrêtent pas.*"
     },
-    "good_epilogue_1_yuna": {
-        "name": "{name}",
-        "text": "*Un mot plié tombe du sac. Des plis marquent l'endroit où il a été pressé contre la doublure pendant longtemps. 'Si tu as fini le tome 1, je te prêterai le tome 2. — Yuna'*"
-    },
+    "good_epilogue_1_yuna": {},
     "good_epilogue_2_yuna": {
-        "name": "Yuna",
-        "text": "*Le tome 2 après le tome 1. Demain après aujourd'hui. Yuna plie le mot et me le tend.*"
+        "name": "{name}",
+        "text": "*Je range le mot dans mon sac. Les pages que nous n’avons pas lues aujourd’hui seront encore là demain.*"
     },
     "good_epilogue_3_yuna": {
         "name": "{name}",
@@ -1125,7 +1113,7 @@
     },
     "friend_2": {
         "name": "{name}",
-        "text": "*Je repense à la phrase que je n'ai jamais réussi à envoyer à Sojeong.*"
+        "text": "*Je repense aux mots repoussés avant d’envoyer mes excuses à Sojeong. Cette fois, je veux parler tant que je le peux.*"
     },
     "friend_3": {
         "name": "{name}",
@@ -1205,7 +1193,7 @@
     },
     "mayhem_7": {
         "name": "{name}",
-        "text": "*Je regarde le mémo non envoyé sous la photo de Sojeong. Une longue suite de messages envoyés remplit la conversation. L'écran s'éteint sans que rien ne change.*"
+        "text": "*Je relis les excuses envoyées à Sojeong. Aucun nouveau message ne suit. L’écran s’éteint pendant que j’attends.*"
     },
     "mayhem_8": {
         "name": "Système",
@@ -1339,7 +1327,7 @@
     "day5_yuna_ending_freetalk_good": {
         "name": "Yuna",
         "text": "*Elle écrit une nouvelle phrase au dos du mot plié et la montre.* La prochaine fois, parle d’abord. Aujourd’hui… tu peux commencer maintenant.",
-        "context": "Conversation bonus après le GOOD END de Yuna. Après la déclaration du jour 4, ils sont restés maladroits, mais Yuna a lu la phrase jusqu’au bout et ils se sont promis le tome 2, le lendemain et une fin à lire ensemble. Ne transforme pas ce début prudent en séparation et ne l’exagère pas comme s’il s’agissait déjà d’une relation ancienne et accomplie.",
+        "context": "Après le GOOD END de Yuna. Une gêne subsiste après la déclaration du jour 4, mais ils liront ensemble et se verront demain. Évoquer les tomes un et deux seulement si ces souvenirs existent. Préserver ce début sans le transformer en rupture ou relation ancienne.",
         "personality": "Yuna entretient la relation par de courtes phrases et de petits gestes ; lorsqu’il le faut, elle trouve aussi le courage de demander à l’autre de parler le premier. Sans se précipiter, elle lui réserve clairement la page suivante."
     },
     "day5_yuna_ending_freetalk_bittersweet": {
@@ -1361,7 +1349,7 @@
     "day5_dain_ending_freetalk_perfect": {
         "name": "Dain",
         "text": "*Elle pose côte à côte le script de sa première émission et son suivi de rééducation, puis affiche un grand sourire.* Tu as regardé jusqu’au bout, comme promis ? Maintenant, je veux ton avis en direct.",
-        "context": "Conversation bonus un an après le PERFECT END de Dain. Dain a poursuivi sa rééducation, intégré le département de médias sportifs et préparé sa première émission au sein de l’équipe de retransmission des matchs de son campus ; le protagoniste est resté à ses côtés les jours de douleur et dans sa nouvelle voie. N’efface ni sa blessure ni son orientation, et maintiens leur relation stable.",
+        "context": "Un an après le PERFECT END de Dain. Elle poursuit sa rééducation et a terminé sa première retransmission universitaire ; sa mère a vu la rediffusion. Le protagoniste l’a regardée jusqu’au bout. Ils en parlent dans la cabine et préparent le prochain texte. Préserver sa blessure, son parcours et leur relation stable.",
         "personality": "Dain est vive et franche ; dans une relation stable, elle ne cache ni ses taquineries ni son affection. Elle décide elle-même de son état physique et de son allure, ne considère pas le soutien du protagoniste comme acquis et se souvient avec joie des promesses qu’ils ont construites ensemble."
     },
     "day5_dain_ending_freetalk_true_love": {
@@ -1428,7 +1416,7 @@
     },
     "day5_nurse_ending_freetalk_true_love": {
         "name": "Infirmière",
-        "text": "*Elle range dans son sac le pansement utilisé lors de l’événement de santé et montre son agenda du week-end suivant.* Cette fois, ce n’est ni une consultation ni un soin. Si on se voit juste comme ça, de quoi est-ce qu’on parlera ?",
+        "text": "*Après le film, elle pose sa tasse et montre le week-end suivant sur son agenda.* On fait quoi la prochaine fois ? J’aimerais aussi essayer ce que tu choisiras.",
         "context": "Conversation bonus juste après le TRUE LOVE END de l’infirmière. Ils n’ont eu aucun contact personnel pendant les quatre années qui ont suivi la remise des diplômes et se sont retrouvés, tous deux adultes indépendants et salariés, lors d’une campagne de santé. Après s’être vus chaque week-end pendant trois mois et avoir regardé un film chez Juwon, ils en sont au stade où leur relation commence. Ne les fais pas avancer prématurément jusqu’à la cohabitation ou à une relation ancienne.",
         "personality": "Juwon reconnaît clairement les anciennes limites professionnelles et s’approche avec prudence de l’adulte qui est désormais son égal. Tout en vérifiant le choix de l’autre, elle exprime franchement son intérêt et son envie d’un prochain rendez-vous, sans traiter toutes leurs conversations comme des entretiens de santé."
     },
@@ -1682,7 +1670,7 @@
     },
     "date_choice_true_teacher": {
         "name": "Professeure principale",
-        "text": "Le cours est fini. Ce qui reste, c’est ce côté.",
+        "text": "L’événement est terminé. On reste encore un peu, ou on va voir l’exposition ?",
         "choices": [
             "Une table.",
             "L’exposition."
@@ -1714,7 +1702,7 @@
     },
     "date_true_nurse_1": {
         "name": "Infirmière",
-        "text": "Je te sers de l’eau. Ce n’est pas un médicament."
+        "text": "Je te sers de l’eau. Dis-moi si tu préfères un thé chaud."
     },
     "date_true_nurse_2": {
         "name": "{name}",
@@ -1779,7 +1767,7 @@
     },
     "co_bitter_nurse_1": {
         "name": "{name}",
-        "text": "*Devant l’infirmerie. La porte est ouverte, la pièce est vide.*"
+        "text": "*Je m’arrête devant l’infirmerie ouverte. Elle lève les yeux de ses dossiers et pose son stylo.*"
     },
     "co_bitter_nurse_2": {
         "name": "Infirmière",
@@ -1921,5 +1909,29 @@
         "name": "{name}",
         "text": "*Après avoir dit que je ne retiendrais aucune des deux, notre conversation s’est arrêtée là.*"
     },
-    "ending_counteroffer_bitter_route": {}
+    "ending_counteroffer_bitter_route": {},
+    "true_yuna_5_established": {
+        "name": "{name}",
+        "text": "Le troisième morceau de l'autre fois ?"
+    },
+    "true_yuna_5_first": {
+        "name": "{name}",
+        "text": "Seule la troisième chanson a une étoile. Elle est spéciale ?"
+    },
+    "true_yuna_6_established": {
+        "name": "Yuna",
+        "text": "...Tu t'en souvenais."
+    },
+    "true_yuna_6_first": {
+        "name": "Yuna",
+        "text": "Oui. Celle-ci, je voulais l’écouter avec toi."
+    },
+    "good_epilogue_1_yuna_established": {
+        "name": "{name}",
+        "text": "*Un mot plié tombe du sac. Des plis marquent l'endroit où il a été pressé contre la doublure pendant longtemps. 'Si tu as fini le tome 1, je te prêterai le tome 2. — Yuna'*"
+    },
+    "good_epilogue_1_yuna_first": {
+        "name": "{name}",
+        "text": "*Yuna tend un nouveau mot : « J’ai choisi un livre à lire ensemble. Empruntons-le demain. — Yuna »*"
+    }
 }

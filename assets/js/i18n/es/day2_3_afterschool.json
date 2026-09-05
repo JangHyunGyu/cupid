@@ -63,11 +63,11 @@
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*Mientras reviso el apósito, veo un cuaderno verde claro que sobresale del cajón del escritorio. En la primera línea de la página abierta pone: «Para ti, aquel día—». La enfermera cierra el cajón.*"
+        "text": "*La enfermera tira el envoltorio de la tirita nueva. El cajón que cerró antes sigue cerrado.*"
     },
     "hidden_nurse_d2_7": {
         "name": "Enfermera",
-        "text": "*Cierra el cajón.* No viste eso, ¿verdad? Bien. Hablemos de los documentos."
+        "text": "*Ve mi mirada y pone la mano en el tirador.* Ese tema está cerrado. Por mucha curiosidad que tengas."
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",
@@ -81,7 +81,7 @@
     },
     "hidden_nurse_d2_choice2_a": {
         "name": "Enfermera",
-        "text": "*Golpea el cajón cerrado con el índice.* ¿Solo uno? Mmm, está bien. Prefiero el chocolate caliente al café. Ese es mi secreto."
+        "text": "*Da un toque al cajón.* Con lo del cacao ya basta. No hay segundo secreto."
     },
     "hidden_nurse_d2_choice2_b": {
         "name": "Enfermera",
@@ -91,10 +91,7 @@
         "name": "Enfermera",
         "text": "Ya está. Procura que hoy no se moje."
     },
-    "hidden_nurse_d2_9": {
-        "name": "{name}",
-        "text": "*Me dice que vuelva si el apósito se levanta o se mancha de sangre, y salgo de la enfermería.*"
-    },
+    "hidden_nurse_d2_9": {},
     "after2_choice": {
         "name": "{name}",
         "text": "*¿Adónde voy?*",
@@ -150,7 +147,7 @@
     },
     "after2_dain_9_d": {
         "name": "Dain",
-        "text": "¡Ahora sí, en serio!"
+        "text": "¡Bien, se acabó la práctica de saques! ¡Ahora peloteamos, a tres puntos!"
     },
     "after2_dain_9_e": {
         "name": "{name}",
@@ -200,10 +197,7 @@
         "name": "Dain",
         "text": "*Al entrar en el local, empuja el vaso de tteokbokki hacia delante y levanta los palillos.* Hoy voy a comprobar cuánto picante aguantas."
     },
-    "after2_dain_end": {
-        "name": "{name}",
-        "text": "*Dain empuja el vaso de tteokbokki hacia mí y abre primero el envoltorio de sus propios palillos.*"
-    },
+    "after2_dain_end": {},
     "after2_dain_end_first": {
         "name": "{name}",
         "text": "*Dain deja dos vasos de tteokbokki sobre la mesa y abre el envoltorio de los palillos.*"
@@ -308,10 +302,7 @@
         "name": "{name}",
         "text": "*Nos ponemos con los papeles: presupuestos de eventos, solicitudes de clubes. Hay una buena pila.*"
     },
-    "after2_seo_7": {
-        "name": "Seoyeon",
-        "text": "*No se da la vuelta enseguida. Con el borde del portapapeles apuntando hacia la puerta, espera los pasos de {name}.*"
-    },
+    "after2_seo_7": {},
     "after2_seo_8": {
         "name": "Seoyeon",
         "text": "Estos por fecha, esos por club. — ¿Eres bueno ordenando?"
@@ -471,10 +462,7 @@
         "name": "Seoyeon",
         "text": "*Presiona una vez con ambas manos la pila de documentos terminados para alinearla.*"
     },
-    "after2_seo_end": {
-        "name": "{name}",
-        "text": "*Al salir de la sala del consejo, las luces automáticas del pasillo se encienden una por una desde el frente.*"
-    },
+    "after2_seo_end": {},
     "after2_seo_skinship_1": {
         "name": "Seoyeon",
         "text": "*Seoyeon estira la mano para quitarme una pelusa del cuello de la camisa y el dorso me roza el cuello.*"
@@ -589,7 +577,7 @@
         "choices": [
             "¿Vengo todos los días?",
             "Me gusta que sea tranquilo",
-            "Contigo estoy cómodo porque no hace falta hablar."
+            "Me gusta que esté tan vacío. Estaría cómodo con cualquiera."
         ]
     },
     "after2_yuna_everyday": {
@@ -618,7 +606,7 @@
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "*En el asiento donde Yuna y yo estábamos juntos queda uno de los auriculares. Antes de salir del anexo, enciendo el teléfono.*"
+        "text": "*Es hora de cerrar los libros. Acerco mi mochila mientras Yuna recoge sus cosas del sofá.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",
@@ -662,7 +650,7 @@
     },
     "after2_group_seoyeon_companion": {
         "name": "Seoyeon y acompañante",
-        "text": "*Seoyeon señala con un dedo dos horarios superpuestos. La mirada frente a ella tampoco cede.* \"Los dos necesitan tu ayuda. ¿A quién vas a ayudar primero?\"",
+        "text": "*Volvemos al consejo estudiantil para ver cuánto tiempo queda. Seoyeon señala con un dedo dos horarios superpuestos. La mirada frente a ella tampoco cede.* \"Los dos necesitan tu ayuda. ¿A quién vas a ayudar primero?\"",
         "context": "Mientras el protagonista y Seoyeon ordenan el horario de la tarde, el otro personaje con mayor afinidad llega con su propio compromiso o petición. Una tarea del consejo estudiantil coincide con otra actividad escolar y los tres deben ajustarlas. Seoyeon pregunta con claridad a quién ayudará primero el protagonista.",
         "personality": "Parece un pequeño problema de horarios, pero ambos personajes están pendientes de la prioridad del protagonista. No lo conviertas en hostilidad abierta ni humillación. Si evita responder, cada uno insiste a su manera. Si elige a uno, el otro no finge que no le importa.",
         "groupLocation": "Sala del consejo estudiantil",
@@ -671,7 +659,7 @@
     },
     "after2_group_yuna_companion": {
         "name": "Yuna y acompañante",
-        "text": "*Hay dos grupos de documentos, pero apenas queda tiempo para terminar uno. Yuna se quita un auricular y mira al otro lado de la mesa.* \"Si solo puedes acabar uno con nosotros, ¿al lado de quién te quedas?\"",
+        "text": "*Volvemos al anexo y extendemos el material por ordenar. Hay dos grupos de documentos, pero apenas queda tiempo para terminar uno. Yuna se quita un auricular y mira al otro lado de la mesa.* \"Si solo puedes acabar uno con nosotros, ¿al lado de quién te quedas?\"",
         "context": "Mientras el protagonista y Yuna ordenan materiales en el anexo de la biblioteca, el otro personaje con mayor afinidad llega con otros documentos o una petición urgente. Solo hay tiempo para terminar bien uno de los dos trabajos. Yuna pregunta de forma breve y directa junto a quién se quedará el protagonista.",
         "personality": "Yuna exige una elección breve y precisa, y el acompañante no se retira. No fuerces una reconciliación ni inventes de inmediato una solución que deje contentos a ambos. La respuesta puede aliviar a uno y decepcionar al otro.",
         "groupLocation": "Anexo de la biblioteca",
@@ -680,11 +668,11 @@
     },
     "after2_group_dain_companion": {
         "name": "Dain y acompañante",
-        "text": "*Las versiones del gimnasio y del anexo no coinciden. Dain sujeta una pelota contra el costado y mira al protagonista de frente.* \"Si nuestras versiones son distintas, ¿a quién vas a creer primero?\"",
-        "context": "Mientras el protagonista y Dain ordenan el gimnasio, el otro personaje con mayor afinidad llega con una versión diferente de un pequeño incidente ocurrido cerca del anexo. Los relatos se contradicen y hay que decidir cuál comprobar primero. Dain pregunta en quién confía primero el protagonista.",
+        "text": "*Volvemos al gimnasio por el carro de balones. La otra persona dice que el encargado pidió primero el material del festival. Dain agarra el carro.* «A mí me dijeron balones primero. ¿Qué indicación comprobarás antes?»",
+        "context": "De camino a la salida regresaron al gimnasio para devolver el carro. Al acompañante le pidieron primero material del festival; Dain oyó balones primero. Solo discrepa el orden, sin accidente ni mentiroso establecido. Con poco tiempo, el protagonista debe decidir qué indicación comprobar y a quién ayudar antes.",
         "personality": "No inventes un accidente grave ni una mentira maliciosa. Lo importante no es resolver un misterio, sino a quién decide creer primero el protagonista. Dain exige sinceridad y el acompañante no queda reducido a un papel secundario. La respuesta puede herir a uno de los dos.",
         "groupLocation": "Gimnasio",
-        "groupChoiceState": "las versiones del gimnasio y del anexo se contradicen y el protagonista debe decir a quién cree primero",
+        "groupChoiceState": "Decidir qué indicación comprobar y si devolver primero los balones o el material del festival",
         "groupAftermathCause": "a quién creyó primero el protagonista en el gimnasio y por qué"
     },
     "after2_group_return": {

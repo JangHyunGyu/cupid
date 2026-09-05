@@ -13,7 +13,7 @@
     },
     "after_kakao_5": {
         "name": "{name}",
-        "text": "*The reply box stays empty while my thumb traces the edge of the send button.*"
+        "text": "*My face reflects in the dark screen. With no reply written, I put the phone in my pocket.*"
     },
     "after_kakao_end": {
         "name": "{name}",
@@ -67,7 +67,7 @@
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
-        "text": "*Seoyeon holds the clipboard upright against her chest, waiting for an answer. I look down at the empty reply box.*"
+        "text": "*Seoyeon straightens the papers on her clipboard. I stop walking and consider my answer.*"
     },
     "after1_jealousy_yuna_1": {
         "name": "Dain",
@@ -139,10 +139,7 @@
         "name": "Yuna",
         "text": "*She tucks the bookmark between the pages and turns away.*"
     },
-    "after_miss_yuna_4": {
-        "name": "{name}",
-        "text": "*Yuna rounds the corner with her book open. Only the folded corner of the bookmark sticks out past the spine.*"
-    },
+    "after_miss_yuna_4": {},
     "after_miss_seoyeon_1": {
         "name": "{name}",
         "text": "*On my way out, I run into Seoyeon in the hallway.*"
@@ -198,7 +195,7 @@
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
-        "text": "What you said earlier — it won't leave my head."
+        "text": "I wanted to ask you something about settling in here."
     },
     "after_hidden_homeroom_3_c": {
         "name": "Homeroom Teacher",
@@ -317,11 +314,11 @@
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
-        "text": "*From the end of the hall, the attendance book closes with a small sound.*"
+        "text": "*Students’ footsteps pass outside. The teacher moves her paperwork aside.*"
     },
     "after_homeroom_honest_10": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher tucks the attendance book against her chest and heads into the faculty office. The end of a folded notice sticks out between its pages.*"
+        "text": "*We step out into the hall by the staff-room door. She holds the attendance book under her arm and waits for me to continue.*"
     },
     "after_homeroom_freetalk": {
         "name": "Homeroom Teacher",
@@ -526,7 +523,7 @@
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*I say a quick goodbye and leave the nurse's office. The smell of disinfectant follows me into the hall.*"
+        "text": "*I pause as I start to get up. The nurse checks the clock and turns her chair toward me.*"
     },
     "after_nurse_freetalk": {
         "name": "School Nurse",

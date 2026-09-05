@@ -13,7 +13,7 @@
     },
     "after_kakao_5": {
         "name": "{name}",
-        "text": "*Sob o campo de resposta vazio, meu polegar apenas percorre a borda do botão de enviar.*"
+        "text": "*Meu rosto aparece na tela apagada. Guardo o celular sem ter escrito a resposta.*"
     },
     "after_kakao_end": {
         "name": "{name}",
@@ -67,7 +67,7 @@
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
-        "text": "*Seoyeon mantém a prancheta erguida diante do peito enquanto espera uma resposta. Baixo os olhos para o campo de texto vazio.*"
+        "text": "*Seoyeon alinha as folhas na prancheta. Paro para pensar na resposta.*"
     },
     "after1_jealousy_yuna_1": {
         "name": "Dain",
@@ -139,10 +139,7 @@
         "name": "Yuna",
         "text": "*Ela coloca o marcador entre as páginas e se vira.*"
     },
-    "after_miss_yuna_4": {
-        "name": "{name}",
-        "text": "*Yuna vira a esquina do corredor sem fechar o livro. Apenas a ponta dobrada do marcador aparece entre as páginas.*"
-    },
+    "after_miss_yuna_4": {},
     "after_miss_seoyeon_1": {
         "name": "{name}",
         "text": "*Tô indo embora quando esbarro na Seoyeon no corredor.*"
@@ -198,7 +195,7 @@
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
-        "text": "O que disse antes — ficou comigo."
+        "text": "Queria perguntar uma coisa sobre minha adaptação à escola."
     },
     "after_hidden_homeroom_3_c": {
         "name": "Professora",
@@ -317,11 +314,11 @@
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
-        "text": "*No fim do corredor, ouço o livro de chamada se fechar baixinho.*"
+        "text": "*Passos de alunos passam pelo corredor. A professora afasta os papéis da mesa.*"
     },
     "after_homeroom_honest_10": {
         "name": "Professora",
-        "text": "*A professora prende o diário de classe junto ao peito e entra na sala dos professores. A ponta do aviso dobrado aparece entre as páginas.*"
+        "text": "*Saímos para o corredor junto à sala dos professores. Ela segura o registro e espera que eu continue.*"
     },
     "after_homeroom_freetalk": {
         "name": "Professora",
@@ -526,7 +523,7 @@
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*Eu me despeço brevemente e saio da enfermaria. O cheiro de desinfetante me acompanha até o corredor.*"
+        "text": "*Hesito ao me levantar. A enfermeira olha o relógio e vira a cadeira para mim.*"
     },
     "after_nurse_freetalk": {
         "name": "Enfermeira",

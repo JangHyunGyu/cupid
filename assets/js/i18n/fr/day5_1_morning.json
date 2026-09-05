@@ -5,7 +5,7 @@
     },
     "hidden_nurse_d5_low": {
         "name": "Infirmière",
-        "text": "*L'infirmière commence à te tendre une carte du bureau d'entretien, puis la remet dans le tiroir.* Je pense qu'il vaut mieux ne pas prendre de rendez-vous séparé pour le moment. Si tu en as besoin, passe par la procédure officielle. *Je quitte l'infirmerie et retourne en classe.*"
+        "text": "*Elle me tend une carte de consultation.* Prends rendez-vous pour une longue discussion. Si tu es malade, viens à l’infirmerie. *Je range la carte et retourne en classe.*"
     },
     "morning5_start": {
         "name": "{name}",
@@ -16,7 +16,7 @@
     "morning5_temptation_counteroffer_branch": {},
     "morning5_caught_teacher_counteroffer": {
         "name": "Professeure principale",
-        "text": "*Le matin, dans la salle de classe, je pose mon téléphone pour montrer une photo de mon brouillon à ma professeure principale. L'écran s'allume sur un message de la fille avec qui j'étais hier soir : 'Ce qui s'est passé hier reste entre nous, d'accord ?' La professeure le lit jusqu'au bout et retire sa main du téléphone.* Tu as ignoré mon message hier soir pour retrouver cette fille ?",
+        "text": "*En classe, ma professeure montre la confirmation manquante sur l’application. La conversation d’hier est encore sur mon téléphone.* Tu devais rentrer directement. Pourquoi ne pas avoir signalé le changement ?",
         "choices": [
             "Lui raconter ce qui s'est passé hier soir",
             "Prétendre que ce n'était rien d'important",
@@ -26,7 +26,7 @@
     },
     "morning5_caught_nurse_counteroffer": {
         "name": "Infirmière",
-        "text": "*Au moment où je pose mon téléphone sur la table d'examen, l'écran s'allume. Un message de la fille avec qui j'étais hier soir apparaît : 'Ce qui s'est passé hier reste entre nous, d'accord ?' L'infirmière commence à sourire comme d'habitude, puis son expression s'efface lentement.* Alors tu n'as pas raté mon message hier. Tu étais avec cette fille ?",
+        "text": "*L’infirmière montre la confirmation manquante.* Tu as dit que tu rentrais, puis plus rien. Je me suis inquiétée. Il suffisait de dire où tu étais.",
         "choices": [
             "Lui raconter ce qui s'est passé hier soir",
             "Prétendre que ce n'était rien d'important",
@@ -36,19 +36,19 @@
     },
     "morning5_caught_teacher_honest": {
         "name": "Professeure principale",
-        "text": "*Ma professeure principale écoute tout en silence, puis referme le registre d'appel.* Je comprends que tu me dises la vérité maintenant. Mais ça n'efface pas la confiance que j'ai accordée à tes paroles hier soir. Rentre chez toi pour aujourd'hui."
+        "text": "*Elle écoute, puis ferme le registre.* Merci de me l’avoir dit. Voir un ami n’est pas le problème. La prochaine fois, tiens ta promesse de prévenir. Nous en resterons là pour le manuscrit aujourd’hui."
     },
     "morning5_caught_teacher_lie": {
         "name": "Professeure principale",
-        "text": "*Ma professeure principale regarde la nouvelle notification, puis mon visage. Sa voix devient plus froide qu'en plein cours.* Le mensonge que tu viens de me dire me déçoit davantage que ce qui s'est passé hier soir. Sors."
+        "text": "*Elle compare ma réponse aux horaires de l’application.* Ça ne correspond pas. Ne change pas ta version pour en finir. Nous en reparlerons pendant une permanence."
     },
     "morning5_caught_nurse_honest": {
         "name": "Infirmière",
-        "text": "*L'infirmière écoute tout sans me dire que ce n'est rien. À la place, elle referme soigneusement le registre médical.* Tu te sentirais mieux si je disais que tout va bien. Mais je n'en suis pas capable maintenant. Rentre chez toi pour aujourd'hui. *Je quitte l'infirmerie et retourne en classe.*"
+        "text": "*Elle écoute et ferme le dossier.* Heureusement que tu es bien rentré. Préviens si tes plans changent. Aujourd’hui, je m’occupe des soins de la fête ; prenons rendez-vous pour parler plus longtemps. *Je retourne en classe.*"
     },
     "morning5_caught_nurse_lie": {
         "name": "Infirmière",
-        "text": "*L'infirmière vérifie la nouvelle notification et retire ses lunettes. Son regard croise le mien sans la moindre trace de son sourire habituel.* Ce n'était donc pas une douleur que tu cachais. Je ne peux pas soigner aussi tes mensonges. *Je quitte l'infirmerie et retourne en classe.*"
+        "text": "*Elle pose son stylo.* Certains points ne concordent pas. Si tu es malade, viens quand tu en as besoin. Nous reprendrons cela avec la conseillère. *Je retourne en classe.*"
     },
     "morning5_caught_by_seoyeon_route": {},
     "morning5_caught_by_yuna_route": {},
@@ -139,19 +139,13 @@
     },
     "morning5_counteroffer_group_talk": {
         "name": "Toutes les deux",
-        "text": "*Leurs deux regards me clouent sur place. Ce que la nuit dernière signifiait vraiment, et si je cherchais depuis le début à les garder toutes les deux. Aucune ne compte reculer la première.* « Alors, qui choisis-tu maintenant ? »",
-        "context": "Le fait que le protagoniste ait cédé à la tentation de la veille vient d’être découvert. La personne à qui il avait choisi de se consacrer et celle qui l’a tenté lui font maintenant face ensemble dans la même salle de classe. La conversation reprend après son choix d’avouer ou de mentir. Toutes deux exigent une explication directe sur ses relations et ses intentions, ainsi qu'une réponse claire sur la personne qu'il choisit maintenant, sans atténuer la tension entre eux trois.",
-        "personality": "Chacune garde sa voix et sa propre blessure. La personne trahie parle d’abord, puis celle qui l’a tenté répond après l’avoir entendue. La confrontation porte sur les explications du protagoniste : toutes deux l’interrogent directement et relèvent les failles de sa version. La personne trahie demande, à sa manière, pourquoi il a accepté quelqu’un d’autre tout en poursuivant leur relation, s’il jouait sur les deux tableaux depuis le début ou s’il s’est joué d’elle. Celle qui l’a tenté assume d’avoir fait le premier pas et ressent de la culpabilité pour le mal causé à l’autre, mais elle ne cache ni son désir de garder le protagoniste ni son envie d’être choisie. La culpabilité ne suffit pas à la faire reculer ou céder. Elles peuvent se répondre ou se contredire, mais elles n’écartent pas le protagoniste pour décider seules de la relation. Une question déjà résolue ne se répète pas : elles insistent sur le fait manquant, le sens de la relation ou le choix qu’il fera maintenant.",
+        "text": "*Avant les consignes de la fête, je retrouve en classe les deux personnes concernées par hier soir. Personne ne part tandis que nous reprenons les messages sans réponse et nos paroles.*\n« Qu’est-ce que tu comptes faire maintenant ? »",
+        "context": "Matin du jour 5, dans une classe ouverte. Le protagoniste est resté après une autre invitation et n’a pas prévenu la personne à qui il avait promis en premier. Continuer son explication sincère ou son esquive. Deux élèves discutent d’engagements amoureux concurrents. Une enseignante ou infirmière demande les raisons de l’absence de confirmation comme membre du personnel, jamais comme partenaire. L’élève explique son invitation et ses sentiments. Les soins et le soutien ne dépendent pas du choix amoureux. Entre élèves, demander une explication directe des intentions et engagements du protagoniste.",
+        "personality": "Lorsque les deux participantes sont élèves : Chacune garde sa voix et sa propre blessure. La personne trahie parle d’abord, puis celle qui l’a tenté répond après l’avoir entendue. La confrontation porte sur les explications du protagoniste : toutes deux l’interrogent directement et relèvent les failles de sa version. La personne trahie demande, à sa manière, pourquoi il a accepté quelqu’un d’autre tout en poursuivant leur relation, s’il jouait sur les deux tableaux depuis le début ou s’il s’est joué d’elle. Celle qui l’a tenté assume d’avoir fait le premier pas et ressent de la culpabilité pour le mal causé à l’autre, mais elle ne cache ni son désir de garder le protagoniste ni son envie d’être choisie. La culpabilité ne suffit pas à la faire reculer ou céder. Elles peuvent se répondre ou se contredire, mais elles n’écartent pas le protagoniste pour décider seules de la relation. Une question déjà résolue ne se répète pas : elles insistent sur le fait manquant, le sens de la relation ou le choix qu’il fera maintenant.\nSi un membre du personnel participe, remplacer le conflit amoureux ci-dessus par le retour non confirmé et la responsabilité de prévenir. Cet adulte n’est pas un rival amoureux et parle dans son rôle de soutien. L’élève explique son invitation et ses sentiments avec respect. Ne pas répéter les pénalités déjà appliquées.",
         "buttonText": "Répondre"
     },
-    "morning5_start_b": {
-        "name": "{name}",
-        "text": "*Dès que j'entre dans la classe, trois choses me sautent aux yeux : un mot sur mon bureau, un ruban noué au cordon d'une tenue de sport et une notification sur mon écran de verrouillage.*"
-    },
-    "morning5_start_2_b": {
-        "name": "{name}",
-        "text": "*Un mot est posé sur mon bureau. C'est l'écriture de Seoyeon.*"
-    },
+    "morning5_start_b": {},
+    "morning5_start_2_b": {},
     "morning5_mood_check": {
         "name": "Système",
         "text": ""
@@ -168,10 +162,7 @@
         "name": "{name}",
         "text": "Dernier jour. Je touche tour à tour les trois noms restés sur l’écran de verrouillage, puis j’éteins l’écran sans ouvrir les conversations."
     },
-    "morning5_gate": {
-        "name": "{name}",
-        "text": "*Devant le portail, je remonte mes manches. Il ne reste plus aucune marque rouge sur mes poignets.*"
-    },
+    "morning5_gate": {},
     "morning5_seo_note_1": {
         "name": "{name}",
         "text": "*Un mot est posé sur mon bureau. C'est l'écriture de Seoyeon. — « Libère-toi un moment cet après-midi. Je laisserai la porte du toit ouverte. — Seoyeon »*"
@@ -194,7 +185,7 @@
     },
     "morning5_yuna_story_1": {
         "name": "{name}",
-        "text": "*Dans la nouvelle, un personnage couvre l'épaule de quelqu'un qui s'est endormi à la bibliothèque. — C'est une scène que je suis le seul à connaître.*"
+        "text": "*Dans le récit, quelqu’un couvre une personne endormie à la bibliothèque. Nous n’avons pas vécu cela, mais cette présence silencieuse me rappelle Yuna.*"
     },
     "morning5_yuna_story_2": {
         "name": "{name}",
@@ -395,10 +386,7 @@
         "name": "{name}",
         "text": "*Je repense à la pile d'exemplaires au fond du café hier. Le numéro 04 est inscrit sur l'enveloppe.*"
     },
-    "hidden_homeroom_d5_6_c": {
-        "name": "{name}",
-        "text": "*La main posée sur le bord du bureau, la professeure principale regarde l’enveloppe disparaître dans mon sac.*"
-    },
+    "hidden_homeroom_d5_6_c": {},
     "hidden_homeroom_d5_6_d": {
         "name": "Professeure principale",
         "text": "Écris franchement ce que tu penses de ce que tu as lu. Tu n'as pas besoin de mettre ton nom."
@@ -419,18 +407,12 @@
         "name": "Professeure principale",
         "text": "Je ne pensais pas qu'un jour, je serais prête à entendre les avis des autres."
     },
-    "hidden_homeroom_d5_6_i": {
-        "name": "Professeure principale",
-        "text": "*La prof lisse le coin plié de l'enveloppe du manuscrit.*"
-    },
+    "hidden_homeroom_d5_6_i": {},
     "hidden_homeroom_d5_6_j": {
         "name": "Professeure principale",
         "text": "Lis-le avant la séance du club littéraire, lundi."
     },
-    "hidden_homeroom_d5_6_k": {
-        "name": "{name}",
-        "text": "*Pendant qu’elle attend ma réponse, le numéro collé au coin de l’enveloppe entre dans mon champ de vision.*"
-    },
+    "hidden_homeroom_d5_6_k": {},
     "hidden_homeroom_d5_6_l": {
         "name": "{name}",
         "text": "Je le lirai. Attentivement."
@@ -447,10 +429,7 @@
         "name": "Professeure principale",
         "text": "*Le coin de ses lèvres se soulève.* C’est vrai. Écris-moi au moins une ligne."
     },
-    "hidden_homeroom_d5_6_p": {
-        "name": "Professeure principale",
-        "text": "*Elle tourne le regard vers le planning du club littéraire affiché près de la porte.*"
-    },
+    "hidden_homeroom_d5_6_p": {},
     "hidden_homeroom_d5_6_q": {
         "name": "Professeure principale",
         "text": "{name}."
@@ -471,10 +450,7 @@
         "name": "Professeure principale",
         "text": "Ça suffit pour les remerciements. Va aider aux préparatifs de l'événement."
     },
-    "hidden_homeroom_d5_7_b": {
-        "name": "{name}",
-        "text": "*Je glisse l'exemplaire n° 04 dans mon sac et me tourne vers la porte.*"
-    },
+    "hidden_homeroom_d5_7_b": {},
     "hidden_homeroom_d5_7_c": {
         "name": "Professeure principale",
         "text": "Finis d'abord l'événement comme il faut. On se retrouve lundi au club littéraire pour la critique."
@@ -628,10 +604,7 @@
         "name": "Infirmière",
         "text": "Alors c'est bon. Voilà la carte de premiers secours."
     },
-    "hidden_nurse_d5_6_b": {
-        "name": "Infirmière",
-        "text": "*Elle range la carte dans son étui et m'indique de la glisser dans la poche extérieure de mon sac, pour pouvoir la retrouver tout de suite.*"
-    },
+    "hidden_nurse_d5_6_b": {},
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
         "text": "*Une courte phrase est imprimée au bas de la carte : « Demander de l'aide avant de se blesser. »*"
@@ -664,11 +637,11 @@
     },
     "morning5_sojeong_1": {
         "name": "{name}",
-        "text": "*J'ouvre l'application de notes. Trente-neuf brouillons vides commencent par « Pour Sojeong ».*"
+        "text": "*J’ouvre mes notes : des signalements inachevés concernant Sojeong, des excuses écrites puis effacées. Le trente-neuvième brouillon est toujours vide.*"
     },
     "morning5_sojeong_2": {
         "name": "{name}",
-        "text": "*Je n'en écris pas un quarantième. Je choisis le plus court et l'envoie tel quel.*"
+        "text": "*Je ne crée pas de quarantième brouillon. Je copie mes excuses dans la messagerie et j’appuie sur envoyer.*"
     },
     "morning5_sojeong_3": {
         "name": "{name}",

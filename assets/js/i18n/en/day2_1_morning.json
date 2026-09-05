@@ -80,7 +80,7 @@
     },
     "morning2_dain_3": {
         "name": "Dain",
-        "text": "That got you? You need to work on your stamina."
+        "text": "Startled you? Just getting you awake!"
     },
     "morning2_dain_4": {
         "name": "{name}",
@@ -140,7 +140,7 @@
     },
     "morning2_dain_claim_3": {
         "name": "{name}",
-        "text": "*Dain watches until Seoyeon disappears into the classroom.*"
+        "text": "*Seoyeon hugs her clipboard and walks down the hall.*"
     },
     "morning2_dain_claim_4": {
         "name": "Dain",
@@ -285,7 +285,7 @@
         "choices": [
             "For 'just work,' you look pretty happy about it.",
             "Thanks for looking out for me.",
-            "So was giving me coffee part of the job too?"
+            "Is checking on me like this part of your job, too?"
         ]
     },
     "hidden_homeroom_d2_choice2_trap": {
@@ -308,10 +308,7 @@
         "name": "Homeroom Teacher",
         "text": "*Still looking down at her coffee, she says it quietly.*"
     },
-    "hidden_homeroom_d2_12": {
-        "name": "{name}",
-        "text": "*As I leave the faculty office, I glance back once at the open drawer.*"
-    },
+    "hidden_homeroom_d2_12": {},
     "morning2_seo_dust_1": {
         "name": "{name}",
         "text": "*During the break after first period, I pass Seoyeon in the hall. Her gaze lands on the seam of my shoulder, and the hand holding her clipboard rises first.*"
@@ -362,7 +359,7 @@
     },
     "hidden_homeroom_d2_freetalk": {
         "name": "Homeroom Teacher",
-        "text": "*Once the office door closes, she slides the manuscript toward the drawer.* You've looked like you wanted to ask something. Student matters first, for now.",
+        "text": "*The teacher takes her hand off the closed drawer and turns toward me.* Getting used to school yet?",
         "context": "It is the morning of Day 2, just after a counseling meeting in the faculty office. The transfer student happened to glimpse a long manuscript in the homeroom teacher's drawer but does not yet know its contents or history. They are a teacher and student beginning to build trust. Do not invent the manuscript's secret or cross the teacher-student boundary.",
         "personality": "The homeroom teacher is calm, responsible, and listens before she advises. Her embarrassment about the personal manuscript appears in a brief hesitation, but she does not place emotional responsibility on the student and keeps a warm, appropriate boundary."
     },

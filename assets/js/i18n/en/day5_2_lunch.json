@@ -21,11 +21,11 @@
     },
     "tour_seo_3": {
         "name": "{name}",
-        "text": "Back then, I said I was flattered — and almost got scolded."
+        "text": "When we first met, I was so nervous I hardly knew what to say."
     },
     "tour_seo_4": {
         "name": "Seoyeon",
-        "text": "I didn't scold you, did I? I've been watching you since then."
+        "text": "Were you? You still remembered to say hello every time. I noticed you from the start."
     },
     "tour_seo_5": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*She rests a hand on the rooftop railing and looks down at the school.* I didn't think we'd spend the last lunch break here, too."
+        "text": "*After our tour, we climb to the roof. Seoyeon rests a hand on the railing.* So even on festival day, we end up having lunch here."
     },
     "tour_seo_end": {
         "name": "{name}",
@@ -105,7 +105,7 @@
     },
     "tour_yuna_6": {
         "name": "Yuna",
-        "text": "*She pulls a notebook from her bag. The same one hastily covered in the attic.*"
+        "text": "*She takes a new notebook from her bag. The margins show where she has revised and copied over her earlier draft.*"
     },
     "tour_yuna_7": {
         "name": "Yuna",
@@ -113,7 +113,7 @@
     },
     "tour_yuna_8": {
         "name": "{name}",
-        "text": "You said it back then. 'Writing the ending means it ends.'"
+        "text": "How does it feel to have written it to the end?"
     },
     "tour_yuna_9": {
         "name": "Yuna",
@@ -133,7 +133,7 @@
     },
     "tour_yuna_end": {
         "name": "Yuna",
-        "text": "My only reader. For now."
+        "text": "The first reader of the ending. I saved that place for you."
     },
     "tour_yuna_end_2": {
         "name": "{name}",

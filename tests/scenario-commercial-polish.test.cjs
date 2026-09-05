@@ -40,22 +40,24 @@ test('Day 2 split-route warning matches the chosen path and message senders do n
     assert.match(locale('ko', 'day2_3_afterschool').minsu_warn_6.text, /점심엔 한 명, 방과후엔 또 한 명/);
 });
 
-test('Day 4 rival temptation resolves before the lead wall scene', () => {
+test('Day 4 invitation precedes rival temptation, which resolves before the meeting', () => {
     const day4 = loadScenario(['day4_4_night.js'])[4];
     const leads = [
-        ['seoyeon', 'seo', ['wall_seo_glimpse_2', 'wall_seo_yuna_tempt_2']],
-        ['dain', 'dain', ['wall_dain_glimpse_4_c', 'wall_dain_seo_tempt_2']],
-        ['yuna', 'yuna', ['wall_yuna_glimpse_3_b', 'wall_yuna_dain_tempt_2']]
+        ['seoyeon', 'seo', ['wall_seo_glimpse_2', 'wall_seo_yuna_tempt_2'], ['wall_seo_2'], 'wall_seo_to_park'],
+        ['dain', 'dain', ['wall_dain_glimpse_4_c', 'wall_dain_seo_tempt_2'], ['wall_dain_3'], 'wall_dain_4'],
+        ['yuna', 'yuna', ['wall_yuna_glimpse_3_b', 'wall_yuna_dain_tempt_2'], ['wall_yuna_pre_high_2', 'wall_yuna_pre_low_2'], 'wall_yuna_2']
     ];
 
-    for (const [route, short, choices] of leads) {
+    for (const [route, short, choices, invitations, meeting] of leads) {
         const wall = `wall_${short}_1`;
         const rank = `wall_${short}_rival_rank`;
         const routeBranch = day4.day4_student_night_branch.branches.find((branch) => branch.condition === `route_${route}`);
-        assert.equal(routeBranch.next, rank);
-        assert.equal(day4[rank].rankedRivalFallback, wall);
+        assert.equal(routeBranch.next, wall);
+        for (const invitation of invitations) assert.equal(day4[invitation].next, rank);
+        assert.equal(day4[rank].routeBeforeRender, true);
+        assert.equal(day4[rank].rankedRivalFallback, meeting);
         assert.equal(day4[`wall_${short}_freetalk`].next, 'day4_student_return_home');
-        for (const choiceScene of choices) assert.equal(day4[choiceScene].choices[0].next, wall);
+        for (const choiceScene of choices) assert.equal(day4[choiceScene].choices[0].next, meeting);
     }
     assert.equal(day4.day4_student_return_home.next, 'day4_hidden_msg_branch');
 });

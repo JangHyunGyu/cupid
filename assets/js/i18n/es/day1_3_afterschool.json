@@ -13,7 +13,7 @@
     },
     "after_kakao_5": {
         "name": "{name}",
-        "text": "*Debajo del campo de respuesta vacío, mi pulgar solo recorre el borde del botón de enviar.*"
+        "text": "*Mi cara se refleja en la pantalla apagada. Sin haber escrito respuesta, guardo el móvil.*"
     },
     "after_kakao_end": {
         "name": "{name}",
@@ -67,7 +67,7 @@
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
-        "text": "*Seoyeon sostiene el portapapeles erguido frente al pecho mientras espera una respuesta. Bajo la mirada al campo de texto vacío.*"
+        "text": "*Seoyeon alinea los papeles de su portapapeles. Me detengo a pensar qué responder.*"
     },
     "after1_jealousy_yuna_1": {
         "name": "Dain",
@@ -139,10 +139,7 @@
         "name": "Yuna",
         "text": "*Mete el separador entre las páginas y se da la vuelta.*"
     },
-    "after_miss_yuna_4": {
-        "name": "{name}",
-        "text": "*Yuna dobla la esquina del pasillo sin cerrar el libro. Solo la punta doblada del separador asoma entre las páginas.*"
-    },
+    "after_miss_yuna_4": {},
     "after_miss_seoyeon_1": {
         "name": "{name}",
         "text": "*Cuando iba a salir, me cruzo con Seoyeon en el pasillo.*"
@@ -198,7 +195,7 @@
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
-        "text": "Lo que dijo antes — se me quedó grabado."
+        "text": "Quería preguntarle algo sobre cómo adaptarme aquí."
     },
     "after_hidden_homeroom_3_c": {
         "name": "Profesora",
@@ -317,11 +314,11 @@
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
-        "text": "*Desde el fondo del pasillo, se oye el pequeño sonido del registro al cerrarse.*"
+        "text": "*Pasan unos alumnos por el pasillo. La profesora aparta los papeles de su mesa.*"
     },
     "after_homeroom_honest_10": {
         "name": "Profesora",
-        "text": "*La profesora se sujeta la lista de asistencia contra el pecho y entra a la sala de profesores. La punta del aviso doblado sobresale entre las páginas.*"
+        "text": "*Salimos al pasillo, junto a la sala de profesores. Sostiene el registro bajo el brazo y espera a que continúe.*"
     },
     "after_homeroom_freetalk": {
         "name": "Profesora",
@@ -526,7 +523,7 @@
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*Me despido brevemente y salgo de la enfermería. El olor a desinfectante me sigue hasta el pasillo.*"
+        "text": "*Me detengo al ir a levantarme. La enfermera mira el reloj y gira la silla hacia mí.*"
     },
     "after_nurse_freetalk": {
         "name": "Enfermera",

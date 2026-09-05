@@ -63,11 +63,11 @@
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*As I check the bandage, I notice a pale green notebook jutting out of the desk drawer. The first line on the open page reads, 'To you, that day—' The nurse closes the drawer.*"
+        "text": "*The nurse throws away the new bandage wrapper. The drawer she shut earlier stays closed.*"
     },
     "hidden_nurse_d2_7": {
         "name": "School Nurse",
-        "text": "*She closes the drawer.* You didn't see that, right? Good. Let's talk about the paperwork."
+        "text": "*She notices my glance and rests a hand on the handle.* That subject is closed. Curiosity won’t open it."
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",
@@ -81,7 +81,7 @@
     },
     "hidden_nurse_d2_choice2_a": {
         "name": "School Nurse",
-        "text": "*She taps the closed drawer with her index finger.* Just one? Hmm, all right. I like cocoa more than coffee. That's the secret."
+        "text": "*She taps the drawer.* Knowing about the cocoa is enough. No second secret."
     },
     "hidden_nurse_d2_choice2_b": {
         "name": "School Nurse",
@@ -91,10 +91,7 @@
         "name": "School Nurse",
         "text": "All done. Keep it dry today."
     },
-    "hidden_nurse_d2_9": {
-        "name": "{name}",
-        "text": "*After being told to come back if the bandage lifts or blood seeps through, I leave the nurse's office.*"
-    },
+    "hidden_nurse_d2_9": {},
     "after2_choice": {
         "name": "{name}",
         "text": "*Where should I go?*",
@@ -150,7 +147,7 @@
     },
     "after2_dain_9_d": {
         "name": "Dain",
-        "text": "Going all out!"
+        "text": "Okay, serving practice is over! Now rallies—first to three!"
     },
     "after2_dain_9_e": {
         "name": "{name}",
@@ -200,10 +197,7 @@
         "name": "Dain",
         "text": "*After we step into the shop, she pushes the tteokbokki cup closer and lifts her chopsticks.* Let's see how well you handle spicy food."
     },
-    "after2_dain_end": {
-        "name": "{name}",
-        "text": "*Dain pushes the cup of tteokbokki toward me, then unwraps her own chopsticks first.*"
-    },
+    "after2_dain_end": {},
     "after2_dain_end_first": {
         "name": "{name}",
         "text": "*Dain sets down two cups of tteokbokki with a thump and tears open the chopstick wrapper.*"
@@ -308,10 +302,7 @@
         "name": "{name}",
         "text": "*We start sorting documents. Event budgets, club applications. Quite the pile.*"
     },
-    "after2_seo_7": {
-        "name": "Seoyeon",
-        "text": "*She doesn't turn away right away. Her clipboard remains pointed toward the door. Only after she hears {name}'s footsteps does she start walking.*"
-    },
+    "after2_seo_7": {},
     "after2_seo_8": {
         "name": "Seoyeon",
         "text": "These go by date, those by club. — Are you any good at organizing?"
@@ -471,10 +462,7 @@
         "name": "Seoyeon",
         "text": "*She presses the finished stack flat with both hands, squaring its edges.*"
     },
-    "after2_seo_end": {
-        "name": "{name}",
-        "text": "*When I leave the student council room, the hall's automatic lights come on one section at a time ahead of me.*"
-    },
+    "after2_seo_end": {},
     "after2_seo_skinship_1": {
         "name": "Seoyeon",
         "text": "*She reaches out and picks a speck of dust from my collar. Her hand brushes my neck.*"
@@ -589,7 +577,7 @@
         "choices": [
             "Should I come every day?",
             "It's nice because it's quiet.",
-            "It's nice being with you because we don't really have to talk."
+            "I like how empty it is here. I would feel comfortable with anyone."
         ]
     },
     "after2_yuna_everyday": {
@@ -618,7 +606,7 @@
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "*One earbud remains on the seat where Yuna and I sat side by side. Before leaving the annex, I turn on my phone.*"
+        "text": "*It’s time to close our books. I pull my bag closer while Yuna gathers her things from the sofa.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",
@@ -662,7 +650,7 @@
     },
     "after2_group_seoyeon_companion": {
         "name": "Seoyeon and companion",
-        "text": "*Seoyeon taps two overlapping schedule blocks with one finger. The person across from her refuses to yield.* \"We both need your help. Who are you going to help first?\"",
+        "text": "*We return to the student council room to check the time left for cleanup. Seoyeon taps two overlapping schedule blocks with one finger. The person across from her refuses to yield.* \"We both need your help. Who are you going to help first?\"",
         "context": "While the protagonist and Seoyeon are sorting the after-school schedule, the other character with the highest affinity arrives with a schedule or request of their own. Student-council work overlaps with another school activity, and the three of them must settle it. Seoyeon clearly asks whom the protagonist will help first.",
         "personality": "It looks like a small scheduling issue, but both characters are conscious of the protagonist's priority. Keep it from turning into open hostility or humiliation. If the protagonist dodges, each presses for an answer in their own way. If one is chosen, the other does not force a cheerful shrug.",
         "groupLocation": "Student Council Room",
@@ -671,7 +659,7 @@
     },
     "after2_group_yuna_companion": {
         "name": "Yuna and companion",
-        "text": "*There are two stacks to sort, but barely enough time to finish one. Yuna removes one earbud and looks across the table.* \"If you can only finish one with us, who will you stay with?\"",
+        "text": "*We return to the annex and lay out the materials to sort. There are two stacks to sort, but barely enough time to finish one. Yuna removes one earbud and looks across the table.* \"If you can only finish one with us, who will you stay with?\"",
         "context": "While the protagonist and Yuna sort material in the library annex, the other character with the highest affinity arrives with separate material or an urgent request. There is only enough time to finish one side properly. Yuna asks, briefly and directly, whom the protagonist will stay beside.",
         "personality": "Yuna demands a short, exact choice, while the companion holds their ground in their own voice. Do not force a reconciliation or instantly invent a solution that satisfies both. Let the answer bring relief to one person and disappointment to the other when appropriate.",
         "groupLocation": "Library Annex",
@@ -680,11 +668,11 @@
     },
     "after2_group_dain_companion": {
         "name": "Dain and companion",
-        "text": "*The accounts from the gym and the annex do not line up. Dain tucks a ball against her side and looks you straight in the eye.* \"If our stories don't match, who will you believe first?\"",
-        "context": "While the protagonist and Dain clean the gym, the other character with the highest affinity arrives with a different account of a small incident near the annex. The two accounts conflict, and someone must decide which one to check first. Dain asks whose word the protagonist trusts first.",
+        "text": "*We return to the gym for the ball cart. Our companion says the storage attendant asked for festival materials first. Dain grips the cart.* “I heard balls first. Which instruction will you check first?”",
+        "context": "On the way out, they returned to the gym with Dain to return the ball cart. The companion was asked by the storage attendant to bring festival materials first; Dain heard balls first. Only the order conflicts, with no accident or established liar. With little time left, the player must say whose instruction to verify and help with first.",
         "personality": "Do not invent a serious accident or malicious lie. The point is not a mystery's objective solution, but whose word the protagonist trusts first. Dain presses honestly, and the companion does not withdraw into a supporting role. Let one person be hurt by the answer when that fits.",
         "groupLocation": "Gym",
-        "groupChoiceState": "the accounts from the gym and annex conflict, so the protagonist must say whom he believes first",
+        "groupChoiceState": "Decide whose instruction to verify and whether to return the ball cart or festival materials first",
         "groupAftermathCause": "whose account the protagonist believed first in the gym, and why"
     },
     "after2_group_return": {

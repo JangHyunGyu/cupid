@@ -39,10 +39,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "confess_seo_4"
     },
     "confess_seo_3b": {
-        "background": "assets/images/background/top_school.png",
-        "backgroundVariant": "warm",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "confess_seo_4"
+        "next": "confess_seo_4",
+        "routeBeforeRender": true
     },
     "confess_seo_4": {
         "background": "assets/images/background/top_school.png",
@@ -207,10 +205,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "confess_yuna_4"
     },
     "confess_yuna_3b": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "backgroundVariant": "dream",
-        "character": "assets/images/characters/yuna_normal.png",
-        "next": "confess_yuna_4"
+        "next": "confess_yuna_4",
+        "routeBeforeRender": true
     },
     "confess_yuna_4": {
         "background": "assets/images/background/yuna_hideout.png",
@@ -375,10 +371,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "confess_dain_4"
     },
     "confess_dain_3b": {
-        "background": "assets/images/background/gym.png",
-        "backgroundVariant": "empty",
-        "character": "assets/images/characters/dain_normal.png",
-        "next": "confess_dain_4"
+        "next": "confess_dain_4",
+        "routeBeforeRender": true
     },
     "confess_dain_4": {
         "background": "assets/images/background/gym.png",
@@ -387,10 +381,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "confess_dain_5"
     },
     "confess_dain_5": {
-        "background": "assets/images/background/gym.png",
-        "backgroundVariant": "lights-off",
-        "character": "assets/images/characters/dain_normal.png",
-        "next": "confess_dain_choice"
+        "next": "confess_dain_choice",
+        "routeBeforeRender": true
     },
     "confess_dain_choice": {
         "background": "assets/images/background/gym.png",

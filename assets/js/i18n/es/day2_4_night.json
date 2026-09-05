@@ -59,10 +59,7 @@
         "name": "Seoyeon",
         "text": "Mañana a la hora del almuerzo dejo la azotea abierta"
     },
-    "night2_msg_generic_3": {
-        "name": "Yuna",
-        "text": "...¿terminaste ese libro?"
-    },
+    "night2_msg_generic_3": {},
     "night2_msg_7": {
         "name": "{name}",
         "text": "*Tres conversaciones se abren una tras otra. Antes de que pueda escribir una respuesta, el indicador de batería baja una barra.*"
@@ -76,10 +73,7 @@
             "Contestarle a Yuna primero"
         ]
     },
-    "night2_reply_dain_1": {
-        "name": "{name}",
-        "text": "picaba un montón jaja"
-    },
+    "night2_reply_dain_1": {},
     "night2_reply_dain_2": {
         "name": "Dain",
         "text": "¿No aguantas lo picante?"
@@ -132,25 +126,19 @@
         "name": "Seoyeon",
         "text": "ja. Bueno. Hasta mañana."
     },
-    "night2_reply_yuna_1": {
-        "name": "{name}",
-        "text": "Voy más o menos por la mitad. Está bien"
-    },
+    "night2_reply_yuna_1": {},
     "night2_reply_yuna_2": {
         "name": "Yuna",
-        "text": "...menos mal"
+        "text": "Vale. Léelo con calma."
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
         "text": "*La caja de respuesta permanece vacía un rato. Entonces aparece una nueva burbuja.*"
     },
-    "night2_reply_yuna_4": {
-        "name": "Yuna",
-        "text": "La lista de antes. Escucha también la tercera canción"
-    },
+    "night2_reply_yuna_4": {},
     "night2_reply_yuna_5": {
         "name": "{name}",
-        "text": "*Vuelvo a abrir la lista que compartió Yuna. La tercera canción tiene un ritmo algo más rápido que la que escuchamos juntos.*"
+        "text": "*Abro la lista de Yuna. El botón de reproducción parpadea junto a la tercera canción.*"
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",
@@ -224,7 +212,7 @@
     },
     "night2_flashback_1": {
         "name": "{name}",
-        "text": "*No dejo de recordar lo que dijo Minsu: «Seoyeon, Dain y Yuna. Las tres te sonrieron».*"
+        "text": "*Me detengo antes de responder. En mi antiguo colegio también me decía que no quería decepcionar a nadie.*"
     },
     "night2_flashback_2": {
         "name": "{name}",
@@ -240,7 +228,7 @@
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*Cierro la galería y dejo el dedo sobre el botón para borrar la foto, pero al final apago la pantalla.*"
+        "text": "*Dejo el dedo sobre el botón de borrar la foto y apago la pantalla.*"
     },
     "night2_flashback_8": {
         "name": "{name}",
@@ -272,7 +260,7 @@
     },
     "night2_end_4_c": {
         "name": "{name}",
-        "text": "*Meto arroz, huevo y alga y cierro la tapa. Eso es todo el acompañamiento.*"
+        "text": "*Pongo arroz, tortilla enrollada, algas y unas salchichas, cierro la tapa y guardo la fiambrera en la nevera.*"
     },
     "forced_violation_day2_after_seoyeon": {
         "name": "Seoyeon",
@@ -353,5 +341,37 @@
     "forced_violation_day2_nurse_excuse": {
         "name": "Enfermera",
         "text": "*La voz de la enfermera baja aún más.* ¿Crees que llamarlo un malentendido cambia algo? Ignoraste que te dije que no. Eso es un hecho."
+    },
+    "night2_reply_dain_1_established": {
+        "name": "{name}",
+        "text": "picaba un montón jaja"
+    },
+    "night2_reply_dain_1_first": {
+        "name": "{name}",
+        "text": "¿Comemos tteokbokki mañana? No aguanto mucho el picante jaja"
+    },
+    "night2_reply_yuna_1_established": {
+        "name": "{name}",
+        "text": "Voy más o menos por la mitad. Está bien"
+    },
+    "night2_reply_yuna_1_first": {
+        "name": "{name}",
+        "text": "Recomiéndame un libro cuando vaya mañana al anexo."
+    },
+    "night2_reply_yuna_4_established": {
+        "name": "Yuna",
+        "text": "La lista de antes. Escucha también la tercera canción"
+    },
+    "night2_reply_yuna_4_first": {
+        "name": "Yuna",
+        "text": "Te mando una lista. Empieza por la tercera canción."
+    },
+    "night2_msg_generic_3_established": {
+        "name": "Yuna",
+        "text": "...¿terminaste ese libro?"
+    },
+    "night2_msg_generic_3_first": {
+        "name": "Yuna",
+        "text": "¿Qué estás leyendo últimamente?"
     }
 }

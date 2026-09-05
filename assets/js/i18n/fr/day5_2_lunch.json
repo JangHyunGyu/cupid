@@ -21,11 +21,11 @@
     },
     "tour_seo_3": {
         "name": "{name}",
-        "text": "Ce jour-là, j'ai dit que c'était trop d'honneur — et j'ai failli me faire engueuler."
+        "text": "Quand on s’est rencontrés, j’étais si nerveux que je ne savais pas quoi dire."
     },
     "tour_seo_4": {
         "name": "Seoyeon",
-        "text": "Je ne t'ai pas grondé. — Je t'observe depuis ce jour-là."
+        "text": "Ah oui ? Tu n’oubliais pourtant jamais de saluer. Je te remarquais déjà."
     },
     "tour_seo_5": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Elle pose une main sur la rambarde du toit et regarde l'école en contrebas.* Je ne pensais pas qu'on passerait même notre dernier déjeuner ici."
+        "text": "*Après notre tour du lycée, nous montons sur le toit. Seoyeon pose la main sur la rambarde.* Même le jour de la fête, on finit par déjeuner ici."
     },
     "tour_seo_end": {
         "name": "{name}",
@@ -105,7 +105,7 @@
     },
     "tour_yuna_6": {
         "name": "Yuna",
-        "text": "*Elle sort un carnet de son sac. Le même qu'elle avait refermé à la hâte dans le grenier.*"
+        "text": "*Elle sort un nouveau carnet. Les marges gardent les traces de l’ancien brouillon qu’elle a repris et recopié.*"
     },
     "tour_yuna_7": {
         "name": "Yuna",
@@ -113,7 +113,7 @@
     },
     "tour_yuna_8": {
         "name": "{name}",
-        "text": "Tu me l'avais dit. « Quand on écrit la fin, tout s'arrête. »"
+        "text": "Ça fait quoi, d’être allée jusqu’au bout ?"
     },
     "tour_yuna_9": {
         "name": "Yuna",
@@ -133,7 +133,7 @@
     },
     "tour_yuna_end": {
         "name": "Yuna",
-        "text": "...L'unique lecteur. Pour le moment."
+        "text": "Le premier lecteur de la fin. Je t’ai gardé cette place."
     },
     "tour_yuna_end_2": {
         "name": "{name}",

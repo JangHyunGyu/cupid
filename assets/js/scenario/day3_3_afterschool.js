@@ -323,15 +323,15 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "after3_reject_for_seo_3b"
     },
     "after3_reject_for_seo_3b": {
-        "background": "assets/images/background/library_old.png",
-        "character": null,
-        "next": "after3_reject_for_seo_3c"
+        "next": "after3_reject_for_seo_3c",
+        "routeBeforeRender": true
     },
     "after3_reject_for_seo_3c": {
-        "background": "assets/images/background/library_old.png",
-        "character": null,
-        "setFlags": ["yuna_trust_broken"],
-        "next": "after3_reject_for_seo_4"
+        "setFlags": [
+            "yuna_trust_broken"
+        ],
+        "next": "after3_reject_for_seo_4",
+        "routeBeforeRender": false
     },
     "after3_reject_for_seo_4": {
         "background": "assets/images/background/school_hallway.png",
@@ -393,10 +393,41 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/student_room.png",
         "character": "assets/images/characters/seyoun_sad.png",
         "choices": [
-            { "next": "after3_seo_pity_trap_1", "stats": {"Seoyeon":{"affinity":-18}}, "setFlags": ["seo_pity_broken"] },
-            { "next": "after3_seo_correct_1", "stats": {"Seoyeon":{"affinity":9}} },
-            { "next": "after3_seo_pity_trap_1", "stats": {"Seoyeon":{"affinity":-14}} },
-            { "next": "after3_seo_pity_trap_1", "stats": {"Seoyeon":{"affinity":-16}} }
+            {
+                "next": "after3_seo_pity_trap_1",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": -18
+                    }
+                },
+                "setFlags": [
+                    "seo_pity_broken"
+                ]
+            },
+            {
+                "next": "after3_seo_correct_1",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": 9
+                    }
+                }
+            },
+            {
+                "next": "after3_seo_overcare_react",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": -14
+                    }
+                }
+            },
+            {
+                "next": "after3_seo_overcare_react",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": -16
+                    }
+                }
+            }
         ]
     },
     "after3_seo_pity_trap_1": {
@@ -408,6 +439,11 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/student_room.png",
         "character": "assets/images/characters/seyoun_sad.png",
         "next": "after3_seo_pity_trap_3"
+    },
+    "after3_seo_overcare_react": {
+        "background": "assets/images/background/student_room.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "next": "after3_seo_pity_trap_7"
     },
     "after3_seo_pity_trap_3": {
         "background": "assets/images/background/student_room.png",
@@ -516,15 +552,23 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/seyoun_normal.png",
         "type": "free_talk",
         "maxTurns": 3,
-        "next": "after3_seo_end"
+        "next": "after3_seo_end",
+        "isRemote": false
     },
     "after3_seo_end": {
-        "background": "assets/images/background/student_room.png",
-        "character": "assets/images/characters/seyoun_sad.png",
+        "routeBeforeRender": true,
         "branches": [
-            { "condition": "harem_seed", "next": "after3_final" },
-            { "condition": "day3_has_multiple_dates", "next": "after3_confront_1" },
-            { "next": "after3_final" }
+            {
+                "condition": "harem_seed",
+                "next": "after3_final"
+            },
+            {
+                "condition": "day3_has_multiple_dates",
+                "next": "after3_confront_1"
+            },
+            {
+                "next": "after3_final"
+            }
         ]
     },
     "after3_reject_for_yuna_1": {
@@ -612,10 +656,41 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_shy.png",
         "choices": [
-            { "next": "after3_yuna_decode_trap_1", "stats": {"Yuna":{"affinity":-22}}, "setFlags": ["yuna_safe_zone_broken"] },
-            { "next": "after3_yuna_correct_1", "stats": {"Yuna":{"affinity":10}} },
-            { "next": "after3_yuna_decode_trap_1", "stats": {"Yuna":{"affinity":-15}} },
-            { "next": "after3_yuna_decode_trap_1", "stats": {"Yuna":{"affinity":-18}} }
+            {
+                "next": "after3_yuna_decode_trap_1",
+                "stats": {
+                    "Yuna": {
+                        "affinity": -22
+                    }
+                },
+                "setFlags": [
+                    "yuna_safe_zone_broken"
+                ]
+            },
+            {
+                "next": "after3_yuna_correct_1",
+                "stats": {
+                    "Yuna": {
+                        "affinity": 10
+                    }
+                }
+            },
+            {
+                "next": "after3_yuna_control_react",
+                "stats": {
+                    "Yuna": {
+                        "affinity": -15
+                    }
+                }
+            },
+            {
+                "next": "after3_yuna_control_react",
+                "stats": {
+                    "Yuna": {
+                        "affinity": -18
+                    }
+                }
+            }
         ]
     },
     "after3_yuna_decode_trap_1": {
@@ -627,6 +702,11 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "after3_yuna_decode_trap_3"
+    },
+    "after3_yuna_control_react": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "after3_yuna_decode_trap_5"
     },
     "after3_yuna_decode_trap_3": {
         "background": "assets/images/background/yuna_hideout.png",
@@ -740,15 +820,23 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/yuna_normal.png",
         "type": "free_talk",
         "maxTurns": 3,
-        "next": "after3_yuna_end"
+        "next": "after3_yuna_end",
+        "isRemote": false
     },
     "after3_yuna_end": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_shy.png",
+        "routeBeforeRender": true,
         "branches": [
-            { "condition": "harem_seed", "next": "after3_final" },
-            { "condition": "day3_has_multiple_dates", "next": "after3_confront_1" },
-            { "next": "after3_final" }
+            {
+                "condition": "harem_seed",
+                "next": "after3_final"
+            },
+            {
+                "condition": "day3_has_multiple_dates",
+                "next": "after3_confront_1"
+            },
+            {
+                "next": "after3_final"
+            }
         ]
     },
     "after3_reject_for_dain_1": {
@@ -811,10 +899,41 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_sad.png",
         "choices": [
-            { "next": "after3_dain_pity_trap_1", "stats": {"Dain":{"affinity":-20}}, "setFlags": ["pitied_dain"] },
-            { "next": "after3_dain_correct_1", "stats": {"Dain":{"affinity":10}} },
-            { "next": "after3_dain_pity_trap_1", "stats": {"Dain":{"affinity":-15}} },
-            { "next": "after3_dain_pity_trap_1", "stats": {"Dain":{"affinity":-17}} }
+            {
+                "next": "after3_dain_pity_trap_1",
+                "stats": {
+                    "Dain": {
+                        "affinity": -20
+                    }
+                },
+                "setFlags": [
+                    "pitied_dain"
+                ]
+            },
+            {
+                "next": "after3_dain_correct_1",
+                "stats": {
+                    "Dain": {
+                        "affinity": 10
+                    }
+                }
+            },
+            {
+                "next": "after3_dain_control_react",
+                "stats": {
+                    "Dain": {
+                        "affinity": -15
+                    }
+                }
+            },
+            {
+                "next": "after3_dain_control_react",
+                "stats": {
+                    "Dain": {
+                        "affinity": -17
+                    }
+                }
+            }
         ]
     },
     "after3_dain_pity_trap_1": {
@@ -826,6 +945,11 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_sad.png",
         "next": "after3_dain_pity_trap_3"
+    },
+    "after3_dain_control_react": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "next": "after3_dain_pity_trap_4"
     },
     "after3_dain_pity_trap_3": {
         "background": "assets/images/background/gym.png",
@@ -865,8 +989,11 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "after3_dain_pity_trap_10": {
         "background": "assets/images/background/gym.png",
         "character": null,
-        "setFlags": ["dain_day3_event","dain_pity_broken"],
-        "next": "after3_dain_end_check"
+        "setFlags": [
+            "dain_day3_event",
+            "dain_pity_broken"
+        ],
+        "next": "after3_dain_departed_end"
     },
     "after3_dain_correct_1": {
         "background": "assets/images/background/gym.png",
@@ -909,9 +1036,8 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "after3_dain_correct_9"
     },
     "after3_dain_correct_9": {
-        "background": "assets/images/background/gym.png",
-        "character": null,
-        "next": "after3_dain_correct_10"
+        "next": "after3_dain_correct_10",
+        "routeBeforeRender": true
     },
     "after3_dain_correct_10": {
         "background": "assets/images/background/gym.png",
@@ -991,8 +1117,10 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "after3_dain_tell_confirm_3": {
         "background": "assets/images/background/gym.png",
         "character": null,
-        "setFlags": ["dain_day3_event"],
-        "next": "after3_dain_end_check"
+        "setFlags": [
+            "dain_day3_event"
+        ],
+        "next": "after3_dain_departed_end"
     },
     "after3_dain_tell_retreat": {
         "background": "assets/images/background/gym.png",
@@ -1027,7 +1155,10 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "after3_dain_choice1_react3": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_shy.png",
-        "setFlags": ["dain_day3_event"],
+        "setFlags": [
+            "dain_day3_event",
+            "dain_trust_deep"
+        ],
         "next": "after3_dain_freetalk"
     },
     "after3_dain_freetalk": {
@@ -1035,14 +1166,19 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/dain_normal.png",
         "type": "free_talk",
         "maxTurns": 3,
-        "next": "after3_dain_end_check"
+        "next": "after3_dain_end_check",
+        "isRemote": false
     },
     "after3_dain_end_check": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "routeBeforeRender": true,
         "branches": [
-            { "condition": "chose_dain_after2", "next": "after3_dain_end" },
-            { "next": "after3_dain_end_first" }
+            {
+                "condition": "chose_dain_after2",
+                "next": "after3_dain_end"
+            },
+            {
+                "next": "after3_dain_end_first"
+            }
         ]
     },
     "after3_dain_end": {
@@ -1052,6 +1188,22 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             { "condition": "harem_seed", "next": "after3_final" },
             { "condition": "day3_has_multiple_dates", "next": "after3_confront_1" },
             { "next": "after3_final" }
+        ]
+    },
+    "after3_dain_departed_end": {
+        "routeBeforeRender": true,
+        "branches": [
+            {
+                "condition": "harem_seed",
+                "next": "after3_final"
+            },
+            {
+                "condition": "day3_has_multiple_dates",
+                "next": "after3_confront_1"
+            },
+            {
+                "next": "after3_final"
+            }
         ]
     },
     "after3_dain_end_first": {
@@ -1150,9 +1302,8 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "after3_confront_admit_6"
     },
     "after3_confront_admit_6": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_sad.png",
-        "next": "after3_confront_end"
+        "next": "after3_confront_end",
+        "routeBeforeRender": true
     },
     "after3_confront_excuse": {
         "background": "assets/images/background/school_stairwell.png",
@@ -1160,9 +1311,8 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "after3_confront_excuse_b"
     },
     "after3_confront_excuse_b": {
-        "background": "assets/images/background/school_stairwell.png",
-        "character": "assets/images/characters/seyoun_angry.png",
-        "next": "after3_confront_excuse_2"
+        "next": "after3_confront_excuse_2",
+        "routeBeforeRender": true
     },
     "after3_confront_excuse_2": {
         "background": "assets/images/background/school_stairwell.png",
@@ -1190,9 +1340,8 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "after3_confront_lie_2_b"
     },
     "after3_confront_lie_2_b": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_sad.png",
-        "next": "after3_confront_end"
+        "next": "after3_confront_end",
+        "routeBeforeRender": true
     },
     "after3_confront_end": {
         "background": "assets/images/background/school_hallway.png",
@@ -1223,10 +1372,16 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "groupParticipants": {
             "strategy": "focus_with_highest_other_affinity",
             "focus": "Teacher",
-            "tiePriority": ["Seoyeon", "Yuna", "Dain", "Nurse"]
+            "tiePriority": [
+                "Seoyeon",
+                "Yuna",
+                "Dain",
+                "Nurse"
+            ]
         },
         "maxTurns": 3,
-        "next": "after3_group_return"
+        "next": "after3_group_return",
+        "isRemote": false
     },
     "after3_group_nurse_companion": {
         "background": "assets/images/background/nurse_room.png",
@@ -1237,10 +1392,16 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "groupParticipants": {
             "strategy": "focus_with_highest_other_affinity",
             "focus": "Nurse",
-            "tiePriority": ["Dain", "Seoyeon", "Yuna", "Teacher"]
+            "tiePriority": [
+                "Dain",
+                "Seoyeon",
+                "Yuna",
+                "Teacher"
+            ]
         },
         "maxTurns": 3,
-        "next": "after3_group_return"
+        "next": "after3_group_return",
+        "isRemote": false
     },
     "after3_group_return": {
         "background": "assets/images/background/school_hallway.png",
@@ -1256,9 +1417,16 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         ]
     },
     "minsu_d3_check": {
-        "background": "assets/images/background/school.png",
-        "character": null,
-        "next": "minsu_d3_1"
+        "routeBeforeRender": true,
+        "branches": [
+            {
+                "condition": "day3_has_multiple_dates",
+                "next": "minsu_d3_1"
+            },
+            {
+                "next": "night3_start"
+            }
+        ]
     },
     "minsu_d3_1": {
         "background": "assets/images/background/school.png",
@@ -1276,6 +1444,31 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "minsu_d3_4"
     },
     "minsu_d3_4": {
+        "routeBeforeRender": true,
+        "branches": [
+            {
+                "condition": "chose_seoyeon_lunch && chose_seo_after2",
+                "next": "minsu_d3_4_first"
+            },
+            {
+                "condition": "chose_dain_lunch && chose_dain_after2",
+                "next": "minsu_d3_4_first"
+            },
+            {
+                "condition": "chose_yuna_lunch && chose_yuna_after2",
+                "next": "minsu_d3_4_first"
+            },
+            {
+                "next": "minsu_d3_4_established"
+            }
+        ]
+    },
+    "minsu_d3_4_established": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_d3_5"
+    },
+    "minsu_d3_4_first": {
         "background": "assets/images/background/school.png",
         "character": null,
         "next": "minsu_d3_5"
@@ -1387,9 +1580,8 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "haeun_warn_5c_b"
     },
     "haeun_warn_5c_b": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_sad.png",
-        "next": "haeun_warn_6"
+        "next": "haeun_warn_6",
+        "routeBeforeRender": true
     },
     "haeun_warn_6": {
         "background": "assets/images/background/school_hallway.png",
@@ -1422,7 +1614,8 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "type": "free_talk",
         "maxTurns": 5,
         "next": "haeun_affinity_check",
-        "forcedSexualViolationNext": "haeun_warn_8b"
+        "forcedSexualViolationNext": "haeun_warn_8b",
+        "isRemote": false
     },
     "haeun_affinity_check": {
         "background": "assets/images/background/school_hallway.png",
@@ -1467,9 +1660,8 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "haeun_warn_7_d"
     },
     "haeun_warn_7_d": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/haeun_worried.png",
-        "next": "haeun_warn_8"
+        "next": "haeun_warn_8",
+        "routeBeforeRender": true
     },
     "haeun_warn_8": {
         "background": "assets/images/background/school_hallway.png",

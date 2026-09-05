@@ -80,7 +80,7 @@
     },
     "morning2_dain_3": {
         "name": "Dain",
-        "text": "¿Solo eso? Deberías cuidar tu condición física."
+        "text": "¿Te asusté? ¡Era para despertarte!"
     },
     "morning2_dain_4": {
         "name": "{name}",
@@ -140,7 +140,7 @@
     },
     "morning2_dain_claim_3": {
         "name": "{name}",
-        "text": "*Dain observa la espalda de Seoyeon hasta que desaparece en el salón.*"
+        "text": "*Seoyeon abraza su portapapeles y se aleja por el pasillo.*"
     },
     "morning2_dain_claim_4": {
         "name": "Dain",
@@ -285,7 +285,7 @@
         "choices": [
             "Para ser trabajo, tiene usted buena cara",
             "Gracias por estar pendiente",
-            "Entonces, ¿darme café también era parte del trabajo?"
+            "¿Llamarme aparte para ver cómo estoy también es parte de su trabajo?"
         ]
     },
     "hidden_homeroom_d2_choice2_trap": {
@@ -308,10 +308,7 @@
         "name": "Profesora",
         "text": "*La profesora habla en voz baja mientras mira la taza de café.*"
     },
-    "hidden_homeroom_d2_12": {
-        "name": "{name}",
-        "text": "*Al salir de la sala de profesores, vuelvo la cabeza una vez hacia el cajón abierto.*"
-    },
+    "hidden_homeroom_d2_12": {},
     "morning2_seo_dust_1": {
         "name": "{name}",
         "text": "*Recreo después de la primera clase. Me cruzo con Seoyeon en el pasillo. Se detiene y mira mi hombro. La mano que sostiene el portapapeles se adelanta.*"
@@ -362,7 +359,7 @@
     },
     "hidden_homeroom_d2_freetalk": {
         "name": "Profesora",
-        "text": "*Cuando se cierra la puerta de la sala de profesores, desliza el manuscrito hacia el cajón.* Parecía que querías preguntarme algo. Por ahora, los asuntos del alumno van primero.",
+        "text": "*La profesora aparta la mano del cajón cerrado y se vuelve hacia mí.* ¿Ya te vas acostumbrando al colegio?",
         "context": "Es la mañana del día 2, justo después de una tutoría en la sala de profesores. El estudiante transferido alcanzó a ver en el cajón de la profesora el manuscrito de una novela larga en la que lleva mucho tiempo trabajando, pero aún desconoce su contenido y sus circunstancias. Son profesora y alumno y apenas empiezan a crear confianza. No inventes el secreto del manuscrito ni cruces los límites entre profesora y alumno.",
         "personality": "La profesora es serena y responsable; escucha antes de aconsejar. Su vergüenza por el manuscrito personal se nota en una breve vacilación, pero no hace responsable al alumno de sus emociones y mantiene una cercanía apropiada."
     },

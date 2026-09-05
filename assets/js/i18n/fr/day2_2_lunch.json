@@ -39,7 +39,7 @@
     },
     "lunch2_seo_5b_dain": {
         "name": "{name}",
-        "text": "La brise est agréable. Et je n'arrêtais pas de penser à ton déjeuner."
+        "text": "Hier, j’ai mangé avec Dain. Ton déjeuner m’intriguait aussi."
     },
     "lunch2_seo_6b_dain": {
         "name": "Seoyeon",
@@ -123,7 +123,7 @@
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "*Alors que Dain s’apprête à s’asseoir, elle ramène la chaise vide vers elle du bout du pied.* On dirait que Dain et toi êtes déjà proches."
+        "text": "*Seoyeon regarde Dain en face, puis rapproche légèrement sa chaise de la mienne.*"
     },
     "lunch2_seo_15": {
         "name": "{name}",
@@ -435,10 +435,7 @@
         "name": "Infirmière",
         "text": "*Elle retire sa main de la poignée du tiroir.* Ça vaut bien un secret, non ?"
     },
-    "lunch2_dain_end_v": {
-        "name": "Infirmière",
-        "text": "*L'infirmière referme le tiroir. La poignée est poussée une seconde fois.*"
-    },
+    "lunch2_dain_end_v": {},
     "lunch2_dain_end_w": {
         "name": "Infirmière",
         "text": "Voilà, c'est fini. Retourne en cours et garde-le au sec aujourd'hui."
@@ -558,7 +555,7 @@
     },
     "lunch2_yuna_9": {
         "name": "Yuna",
-        "text": "*Elle tourne une page, puis lisse de la paume le coussin froissé du canapé d'en face.*"
+        "text": "*Yuna glisse son marque-page et se lève en désignant le fond du couloir.*"
     },
     "lunch2_yuna_10": {
         "name": "Yuna",

@@ -120,7 +120,7 @@
         "name": "{name}",
         "text": "*Yunas Blick hebt sich kurz über den Rand ihres Bechers.*",
         "choices": [
-            "Ich seh dich zum ersten Mal ohne Uniform.",
+            "Du siehst heute wunderschön aus.",
             "Du siehst heute irgendwie anders aus.",
             "Du wirkst viel leichter anzusprechen als sonst."
         ]
@@ -231,7 +231,7 @@
     },
     "date_dain_1": {
         "name": "{name}",
-        "text": "*Vor der Turnhalle. Dain kommt angerannt. Kappe und Sportkleidung.*"
+        "text": "*Vor der Turnhalle winkt Dain in Kappe und Sportkleidung. Am rechten Knie trägt sie eine Bandage.*"
     },
     "date_dain_2": {
         "name": "Dain",
@@ -251,8 +251,8 @@
         "choices": [
             "Die Kappe steht dir.",
             "Sportkleidung ist einfach total dein Ding.",
-            "Heute siehst du viel weiblicher aus als in Sportkleidung.",
-            "So herausgeputzt fühlt es sich endlich wie ein Date an."
+            "Schon wieder Sportkleidung, sogar bei einem Date?",
+            "Zieh dich beim nächsten Date etwas schicker an."
         ]
     },
     "date_dain_pretty_high": {
@@ -393,7 +393,10 @@
     "date_yuna_tentative_3": {"name":"Yuna","text":"Nächstes Mal schreibe ich zuerst. Für heute belassen wir es dabei."},
     "date_dain_tier_check": {},
     "date_dain_high_1": {"name":"Dain","text":"Halte dir nächste Woche auch frei. Wenn es heute Spaß macht, machen wir das noch mal."},
-    "date_dain_high_2": {"name":"Dain","text":"*Dain öffnet die Tür zur Turnhalle und hält mir ein Armband hin.* Heute darfst du zuerst wählen."},
+    "date_dain_high_2": {
+        "name": "Dain",
+        "text": "*Sie zieht ein Schweißband aus der Tasche und hält es mir hin.* Heute suchst du zuerst aus."
+    },
     "date_dain_tentative_1": {"name":"Dain","text":"Lass uns heute nicht lange bleiben. Mein Knie braucht auch etwas Ruhe."},
     "date_dain_tentative_2": {"name":"{name}","text":"*Am Automaten trinken wir jeder etwas. Dain lässt die Turnhallentür geschlossen und richtet ihren Taschenriemen.*"},
     "date_dain_tentative_3": {"name":"Dain","text":"Bis dann in der Schule. Dort planen wir das nächste Treffen."},

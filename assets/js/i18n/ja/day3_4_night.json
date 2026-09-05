@@ -9,7 +9,7 @@
     },
     "night3_faithful_check": {
         "name": "{name}",
-        "text": "*未読のメッセージが表示されている。*"
+        "text": "*携帯の通知を確認する。*"
     },
     "night3_faithful_msg_seo_1": {
         "name": "ソヨン",
@@ -25,7 +25,7 @@
     },
     "night3_faithful_msg_yuna_1": {
         "name": "ユナ",
-        "text": "*ユナから、ノートの一行を写した写真が届く。*"
+        "text": "*ユナから短いメッセージが届く。貸してくれたノートのことだった。*"
     },
     "night3_faithful_msg_yuna_2": {
         "name": "ユナ",
@@ -37,7 +37,7 @@
     },
     "night3_faithful_msg_dain_1": {
         "name": "ダイン",
-        "text": "足首、大丈夫かって聞くなら直接来て聞いてよ笑"
+        "text": "膝のこと聞くなら、直接来て聞いてよ笑"
     },
     "night3_faithful_msg_dain_2": {
         "name": "ダイン",
@@ -49,7 +49,7 @@
     },
     "night3_dream_1": {
         "name": "{name}",
-        "text": "*夢の中で誰かと並んで歩く。顔は見えず、同じリズムの足音だけが続く。*"
+        "text": "*明かりを消しかけて、もう一度スマホを取る。今日、隣に並んだ足音を思い出した。*"
     },
     "night3_dream_2_b": {
         "name": "{name}",
@@ -57,7 +57,7 @@
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*目を開ける。朝の日差しがカーテンの隙間から差し込む。スマホを取り、ギャラリーを開く。ソジョンの写真でスクロールを止め、長押しする。*"
+        "text": "*眠る前にスマホの写真一覧を開く。ソジョンの写真までスクロールして長押しした。*"
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
-        "text": "*……そうだ。削除ボタンに指を載せる。――押した。*"
+        "text": "*確認画面でキャンセルを押す。写真を一枚消しても、自分がした選択は変わらない。*"
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
@@ -77,23 +77,17 @@
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*ミンスが言った。『断るのも、お前がやらなきゃいけないことだ』。ギャラリーの中でソジョンはまだ笑っている。三十八番目のメモは未送信のまま。送信ボタンだけが青い。*"
+        "text": "*写真の横に短くメモを残す。新しい相手との会話では、ソジョンに言うべき言葉の代わりにならない。*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*ソジョンの写真がギャラリーから消え、そこだけが空白になる。*"
+        "text": "*新しいフォルダーを開き、写真が残っていることを確かめる。名前の下に一枚の写真が表示された。*"
     },
-    "night3_faithful_reflect_4_b": {
-        "name": "{name}",
-        "text": "*空になったアルバムのサムネイルを親指で擦る。*"
-    },
-    "night3_faithful_reflect_4_c": {
-        "name": "{name}",
-        "text": "*スマホを伏せる。ギャラリーの空白が黒い画面に映った。*"
-    },
+    "night3_faithful_reflect_4_b": {},
+    "night3_faithful_reflect_4_c": {},
     "night3_dream_3": {
         "name": "{name}",
-        "text": "*アラームが鳴る前に目が覚めた。*"
+        "text": "*写真一覧を閉じて明日のアラームを確かめる。スマホを置いても、すぐには眠れなかった。*"
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",
@@ -198,7 +192,7 @@
     },
     "night3_nightmare_dain": {
         "name": "{name}",
-        "text": "*ダインの入力欄に『待たせてごめん。明日話す』と書き、送信アイコンの縁を親指で押す。*"
+        "text": "*ダインに「待たせてごめん。明日話す」と打つ。送信の上で親指が止まる。*"
     },
     "night3_nightmare_end": {
         "name": "{name}",

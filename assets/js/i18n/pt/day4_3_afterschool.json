@@ -21,12 +21,9 @@
     },
     "confess_seo_3": {
         "name": "{name}",
-        "text": "*O terraço. As luzes do campo brilham abaixo do parapeito. É o lugar onde Seoyeon ficou no meu primeiro dia.*"
+        "text": "*Sigo Seoyeon até o terraço da escola. As luzes da quadra se acendem lá embaixo.*"
     },
-    "confess_seo_3b": {
-        "name": "{name}",
-        "text": "*Quando a porta do terraço se fecha, o som dos passos na escada cessa. Sob a grade onde ficamos lado a lado tantas vezes, as luzes da quadra se acendem uma a uma.*"
-    },
+    "confess_seo_3b": {},
     "confess_seo_4": {
         "name": "Seoyeon",
         "text": "*Seoyeon fica um passo atrás do parapeito e guarda a chave no bolso.*"
@@ -43,7 +40,7 @@
         "name": "{name}",
         "text": "*Apenas o chaveiro tilinta brevemente na mão de Seoyeon.*",
         "choices": [
-            "Falar.",
+            "Dizer que gosto dela.",
             "Ficar mais um pouco.",
             "Vou dizer o que sinto quando a Seoyeon falar primeiro.",
             "Do jeito que somos, não precisamos colocar em palavras para entender."
@@ -133,10 +130,7 @@
         "name": "{name}",
         "text": "*O espaço secreto de leitura no anexo da biblioteca. A luz laranja entra pela fresta da janela e chega até o braço do sofá velho. No lugar ao lado está o marcador de Yuna.*"
     },
-    "confess_yuna_3b": {
-        "name": "{name}",
-        "text": "*Quando a porta do anexo se fecha, o ruído do corredor cessa. O livro sobre o sofá continua aberto, e o marcador está colocado antes da última página.*"
-    },
+    "confess_yuna_3b": {},
     "confess_yuna_4": {
         "name": "Yuna",
         "text": "*Senta-se no sofá e olha para {name}, segurando um marcador em uma das mãos.*"
@@ -149,7 +143,7 @@
         "name": "{name}",
         "text": "*Yuna alisa com o polegar a ponta dobrada do marcador e deixa vazio o lugar à frente.*",
         "choices": [
-            "Yuna. Deixa eu te perguntar uma coisa.",
+            "Dizer que gosto dela.",
             "...Esse lugar é muito bom mesmo.",
             "Vou responder quando a Yuna perguntar primeiro.",
             "Mesmo sem eu dizer, a Yuna deveria saber o que sinto."
@@ -241,26 +235,20 @@
     },
     "confess_dain_3": {
         "name": "{name}",
-        "text": "*Ginásio vazio. A luz da janela oeste cruza na diagonal a linha da quadra onde fizemos a aposta do primeiro dia.*"
+        "text": "*Sigo Dain até o ginásio vazio. Só as luzes ao redor da quadra estão acesas.*"
     },
-    "confess_dain_3b": {
-        "name": "{name}",
-        "text": "*O placar está apagado. A sombra do batente da janela se estende até o fim da quadra, e Dain para diante da linha onde trocamos a bola tantas vezes.*"
-    },
+    "confess_dain_3b": {},
     "confess_dain_4": {
         "name": "Dain",
         "text": "*Está segurando uma bola. Com cara de quem não liga. — Mas os dedos estão brancos. Tá apertando com força.*"
     },
-    "confess_dain_5": {
-        "name": "{name}",
-        "text": "*A bola quica uma vez no chão.*"
-    },
+    "confess_dain_5": {},
     "confess_dain_choice": {
         "name": "Dain",
         "text": "*A bola quica uma vez. A mão que normalmente a pegaria para no ar, um instante atrasada.*",
         "choices": [
-            "Dain. Larga essa bola.",
-            "...Mais uma partida?",
+            "Dizer que gosto dela.",
+            "Vamos ficar mais um pouco no banco?",
             "Vou dizer o que sinto quando a Dain falar primeiro.",
             "Do jeito que somos, não precisamos colocar em palavras para entender."
         ]
@@ -323,11 +311,11 @@
     },
     "confess_dain_no_1": {
         "name": "{name}",
-        "text": "...Mais uma partida?"
+        "text": "…Vamos ficar mais um pouco no banco?"
     },
     "confess_dain_no_2": {
         "name": "{name}",
-        "text": "*Lanço a bola para ela. Nenhuma palavra sai.*"
+        "text": "*Sento ao lado de Dain. As palavras que queria dizer não saem.*"
     },
     "confess_dain_no_3": {
         "name": "Dain",

@@ -21,12 +21,9 @@
     },
     "confess_seo_3": {
         "name": "{name}",
-        "text": "*The rooftop. The field lights glow below the railing. It's the spot where Seoyeon stood on my first day.*"
+        "text": "*I follow Seoyeon onto the school roof. The field lights come on below.*"
     },
-    "confess_seo_3b": {
-        "name": "{name}",
-        "text": "*When the rooftop door closes, the footsteps on the stairs cut off. Below the railing where we've stood side by side so many times, the field lights come on one by one.*"
-    },
+    "confess_seo_3b": {},
     "confess_seo_4": {
         "name": "Seoyeon",
         "text": "*Seoyeon stands one step back from the railing and slips the key into her pocket.*"
@@ -43,7 +40,7 @@
         "name": "{name}",
         "text": "*Only the key ring gives a brief jingle in Seoyeon's hand.*",
         "choices": [
-            "Say it",
+            "Tell her I like her.",
             "Stay a little longer",
             "I’ll say how I feel once Seoyeon says it first.",
             "At this point, we shouldn’t need words to know how we feel."
@@ -133,10 +130,7 @@
         "name": "{name}",
         "text": "*Yuna's secret reading space in the library annex. Orange light slips through the window and reaches the arm of the old sofa. Her bookmark rests on the seat beside her.*"
     },
-    "confess_yuna_3b": {
-        "name": "{name}",
-        "text": "*When the annex door closes, the noise from the hall cuts off. The book on the sofa remains open, its bookmark tucked in before the final page.*"
-    },
+    "confess_yuna_3b": {},
     "confess_yuna_4": {
         "name": "Yuna",
         "text": "*She sits on the sofa and looks at {name}, a bookmark held in one hand.*"
@@ -149,7 +143,7 @@
         "name": "{name}",
         "text": "*Yuna smooths the folded end of the bookmark with her thumb and leaves the seat opposite her open.*",
         "choices": [
-            "Yuna. Let me ask you one thing.",
+            "Tell her I like her.",
             "This place is really nice.",
             "I’ll answer if Yuna asks me first.",
             "Yuna should know how I feel even if I don’t say it."
@@ -241,26 +235,20 @@
     },
     "confess_dain_3": {
         "name": "{name}",
-        "text": "*The empty gym. Light from the west windows cuts diagonally across the court line where we made our first-day bet.*"
+        "text": "*I follow Dain into the empty gym. Only the lights along the court are on.*"
     },
-    "confess_dain_3b": {
-        "name": "{name}",
-        "text": "*The scoreboard is dark in the empty gym. Window-frame shadows stretch to the far end of the court, and Dain stands before the line where we've passed the ball so many times.*"
-    },
+    "confess_dain_3b": {},
     "confess_dain_4": {
         "name": "Dain",
         "text": "*She holds a ball in both hands. Her knuckles are white where they press against its surface.*"
     },
-    "confess_dain_5": {
-        "name": "{name}",
-        "text": "*The ball bounces once against the floor.*"
-    },
+    "confess_dain_5": {},
     "confess_dain_choice": {
         "name": "Dain",
         "text": "*The ball bounces once. Half a beat late, Dain's hand brushes past its side.*",
         "choices": [
-            "Dain. Put the ball down.",
-            "Want to play one more round?",
+            "Tell her I like her.",
+            "Shall we sit on the bench a little longer?",
             "I’ll say how I feel once Dain says it first.",
             "At this point, we shouldn’t need words to know how we feel."
         ]
@@ -323,11 +311,11 @@
     },
     "confess_dain_no_1": {
         "name": "{name}",
-        "text": "Want to play one more round?"
+        "text": "…Shall we sit on the bench a little longer?"
     },
     "confess_dain_no_2": {
         "name": "{name}",
-        "text": "*I toss the ball up for her. No words come out.*"
+        "text": "*I sit beside Dain on the bench. The words I meant to say won’t come.*"
     },
     "confess_dain_no_3": {
         "name": "Dain",

@@ -21,12 +21,9 @@
     },
     "confess_seo_3": {
         "name": "{name}",
-        "text": "*La azotea. Bajo la barandilla brillan las luces del campo. Es el lugar donde Seoyeon se quedó de pie el primer día.*"
+        "text": "*Sigo a Seoyeon a la azotea. Abajo se encienden las luces del campo.*"
     },
-    "confess_seo_3b": {
-        "name": "{name}",
-        "text": "*Al cerrarse la puerta de la azotea, cesan los pasos de la escalera. Bajo la barandilla junto a la que estuvimos varias veces, las luces de la cancha se encienden una por una.*"
-    },
+    "confess_seo_3b": {},
     "confess_seo_4": {
         "name": "Seoyeon",
         "text": "*Seoyeon se queda un paso atrás de la barandilla y guarda la llave en el bolsillo.*"
@@ -43,7 +40,7 @@
         "name": "{name}",
         "text": "*Solo el llavero tintinea brevemente en la mano de Seoyeon.*",
         "choices": [
-            "Hablar.",
+            "Decirle que me gusta.",
             "Quedarme un poco más.",
             "Diré lo que siento cuando Seoyeon lo diga primero.",
             "A estas alturas, no deberíamos necesitar palabras para saber lo que sentimos."
@@ -133,10 +130,7 @@
         "name": "{name}",
         "text": "*El espacio secreto de lectura del anexo. La luz naranja entra por la abertura de la ventana y llega hasta el brazo del sofá viejo. En el asiento de al lado está el separador de Yuna.*"
     },
-    "confess_yuna_3b": {
-        "name": "{name}",
-        "text": "*Al cerrarse la puerta del anexo, cesa el ruido del pasillo. El libro sobre el sofá sigue abierto y el separador está colocado antes de la última página.*"
-    },
+    "confess_yuna_3b": {},
     "confess_yuna_4": {
         "name": "Yuna",
         "text": "*Se sienta en el sofá y mira a {name}, con un marcapáginas en una mano.*"
@@ -149,7 +143,7 @@
         "name": "{name}",
         "text": "*Yuna alisa con el pulgar la punta doblada del separador y deja vacío el asiento de enfrente.*",
         "choices": [
-            "Yuna. Déjame preguntarte una cosa.",
+            "Decirle que me gusta.",
             "...Este lugar está genial.",
             "Responderé cuando Yuna pregunte primero.",
             "Aunque no lo diga, Yuna debería saber lo que siento."
@@ -241,26 +235,20 @@
     },
     "confess_dain_3": {
         "name": "{name}",
-        "text": "*Gimnasio vacío. La luz de la ventana oeste cruza en diagonal la línea de la cancha donde hicimos la apuesta del primer día.*"
+        "text": "*Sigo a Dain al gimnasio vacío. Solo están encendidas las luces de los bordes de la cancha.*"
     },
-    "confess_dain_3b": {
-        "name": "{name}",
-        "text": "*El marcador está apagado. La sombra del marco de la ventana llega hasta el extremo de la cancha y Dain se planta frente a la línea donde tantas veces nos pasamos el balón.*"
-    },
+    "confess_dain_3b": {},
     "confess_dain_4": {
         "name": "Dain",
         "text": "*Sostiene un balón. Como si nada. — Pero tiene los dedos blancos. Lo está apretando con fuerza.*"
     },
-    "confess_dain_5": {
-        "name": "{name}",
-        "text": "*El balón rebota una vez contra el suelo.*"
-    },
+    "confess_dain_5": {},
     "confess_dain_choice": {
         "name": "Dain",
         "text": "*Su pelota rebota una vez. La mano que normalmente la habría atrapado se detiene en el aire un segundo tarde.*",
         "choices": [
-            "Dain. Suelta la pelota.",
-            "...¿Echamos otra?",
+            "Decirle que me gusta.",
+            "¿Nos sentamos un poco más en el banco?",
             "Diré lo que siento cuando Dain lo diga primero.",
             "A estas alturas, no deberíamos necesitar palabras para saber lo que sentimos."
         ]
@@ -323,11 +311,11 @@
     },
     "confess_dain_no_1": {
         "name": "{name}",
-        "text": "...¿Echamos otra?"
+        "text": "…¿Nos sentamos un poco más en el banco?"
     },
     "confess_dain_no_2": {
         "name": "{name}",
-        "text": "*Le lanzo el balón. No me sale ninguna palabra.*"
+        "text": "*Me siento junto a Dain. No salen las palabras que quería decir.*"
     },
     "confess_dain_no_3": {
         "name": "Dain",

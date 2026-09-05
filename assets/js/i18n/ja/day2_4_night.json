@@ -59,10 +59,7 @@
         "name": "ソヨン",
         "text": "明日の昼、屋上開けとくね"
     },
-    "night2_msg_generic_3": {
-        "name": "ユナ",
-        "text": "……あの本、もう読み終わった？"
-    },
+    "night2_msg_generic_3": {},
     "night2_msg_7": {
         "name": "{name}",
         "text": "*三つのトーク画面を順番に開く。返信を打つ前に、バッテリー表示が一目盛り減る。*"
@@ -76,10 +73,7 @@
             "ユナに先に返信する"
         ]
     },
-    "night2_reply_dain_1": {
-        "name": "{name}",
-        "text": "トッポギ、辛かった笑"
-    },
+    "night2_reply_dain_1": {},
     "night2_reply_dain_2": {
         "name": "ダイン",
         "text": "辛いの苦手なの？"
@@ -132,25 +126,19 @@
         "name": "ソヨン",
         "text": "ふふ、了解。また明日。"
     },
-    "night2_reply_yuna_1": {
-        "name": "{name}",
-        "text": "まだ半分くらい。面白いよ"
-    },
+    "night2_reply_yuna_1": {},
     "night2_reply_yuna_2": {
         "name": "ユナ",
-        "text": "……よかった"
+        "text": "うん。ゆっくり読んで。"
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
         "text": "*しばらく返信欄は空のまま。やがて、新しい吹き出しが浮かぶ。*"
     },
-    "night2_reply_yuna_4": {
-        "name": "ユナ",
-        "text": "さっきのプレイリスト。三曲目も聴いてみて"
-    },
+    "night2_reply_yuna_4": {},
     "night2_reply_yuna_5": {
         "name": "{name}",
-        "text": "*ユナが共有したプレイリストをもう一度開く。三曲目は、さっき一緒に聴いた曲より少しテンポが速い。*"
+        "text": "*ユナのプレイリストを開く。三曲目の横で再生ボタンが点滅している。*"
     },
     "night2_reply_yuna_6": {
         "name": "ユナ",
@@ -224,7 +212,7 @@
     },
     "night2_flashback_1": {
         "name": "{name}",
-        "text": "*ミンスの言葉が何度も頭に浮かぶ。『ソヨン、ダイン、ユナ。三人とも、お前には笑いかけてた』*"
+        "text": "*返事をしかけて手が止まる。誰もがっかりさせたくないと、前の学校でも考えていた。*"
     },
     "night2_flashback_2": {
         "name": "{name}",
@@ -240,7 +228,7 @@
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*ギャラリーを閉じる。写真の削除ボタンの上で指が止まり、結局そのまま画面を消した。*"
+        "text": "*写真の削除ボタンに指を重ねかけて、画面を消した。*"
     },
     "night2_flashback_8": {
         "name": "{name}",
@@ -272,7 +260,7 @@
     },
     "night2_end_4_c": {
         "name": "{name}",
-        "text": "*ご飯と卵、海苔を入れて蓋をする。おかずはそれだけだ。*"
+        "text": "*ご飯と卵焼き、海苔にソーセージをいくつか足して蓋を閉める。弁当は冷蔵庫に入れておいた。*"
     },
     "forced_violation_day2_after_seoyeon": {
         "name": "ソヨン",
@@ -353,5 +341,37 @@
     "forced_violation_day2_nurse_excuse": {
         "name": "保健室の先生",
         "text": "*保健室の先生の声がさらに低くなる。* 誤解と呼べば何か変わると思う？ 嫌だという意思を無視したのは事実だよ。"
+    },
+    "night2_reply_dain_1_established": {
+        "name": "{name}",
+        "text": "トッポギ、辛かった笑"
+    },
+    "night2_reply_dain_1_first": {
+        "name": "{name}",
+        "text": "明日、売店でトッポッキ食べる？ 辛いのは苦手だけど笑"
+    },
+    "night2_reply_yuna_1_established": {
+        "name": "{name}",
+        "text": "まだ半分くらい。面白いよ"
+    },
+    "night2_reply_yuna_1_first": {
+        "name": "{name}",
+        "text": "明日別館に行ったら、本を一冊勧めて。"
+    },
+    "night2_reply_yuna_4_established": {
+        "name": "ユナ",
+        "text": "さっきのプレイリスト。三曲目も聴いてみて"
+    },
+    "night2_reply_yuna_4_first": {
+        "name": "ユナ",
+        "text": "プレイリスト送る。三曲目から聴いて。"
+    },
+    "night2_msg_generic_3_established": {
+        "name": "ユナ",
+        "text": "……あの本、もう読み終わった？"
+    },
+    "night2_msg_generic_3_first": {
+        "name": "ユナ",
+        "text": "最近、何読んでる？"
     }
 }

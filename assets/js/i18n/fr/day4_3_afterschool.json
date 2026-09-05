@@ -21,12 +21,9 @@
     },
     "confess_seo_3": {
         "name": "{name}",
-        "text": "*Le toit. Les projecteurs du terrain sont allumés en contrebas. C'est là que Seoyeon se tenait le premier jour.*"
+        "text": "*Je suis Seoyeon sur le toit du lycée. Les lumières du terrain s’allument en bas.*"
     },
-    "confess_seo_3b": {
-        "name": "{name}",
-        "text": "*Quand la porte du toit se referme, les pas dans l'escalier s'interrompent. Sous la rambarde où nous nous sommes tenus côte à côte tant de fois, les projecteurs du terrain s'allument un à un.*"
-    },
+    "confess_seo_3b": {},
     "confess_seo_4": {
         "name": "Seoyeon",
         "text": "*Seoyeon se tient à un pas de la rambarde et glisse la clé dans sa poche.*"
@@ -43,7 +40,7 @@
         "name": "{name}",
         "text": "*Seul le porte-clés tinte brièvement dans la main de Seoyeon.*",
         "choices": [
-            "Lui dire.",
+            "Lui dire qu’elle me plaît.",
             "Rester encore un peu.",
             "Je dirai ce que je ressens quand Seoyeon le dira la première.",
             "Avec ce qu’il y a entre nous, on ne devrait pas avoir besoin de mots pour se comprendre."
@@ -133,10 +130,7 @@
         "name": "{name}",
         "text": "*Le coin lecture secret de l'annexe. La lumière orange passe par la fenêtre et atteint l'accoudoir du vieux canapé. Le marque-page de Yuna repose sur la place voisine.*"
     },
-    "confess_yuna_3b": {
-        "name": "{name}",
-        "text": "*Quand la porte de l'annexe se referme, le bruit du couloir s'éteint. Le livre sur le canapé est resté ouvert, son marque-page glissé juste avant la dernière page.*"
-    },
+    "confess_yuna_3b": {},
     "confess_yuna_4": {
         "name": "Yuna",
         "text": "*Elle s'assoit sur le canapé et regarde {name}, un marque-page à la main.*"
@@ -149,7 +143,7 @@
         "name": "{name}",
         "text": "*Du pouce, Yuna redresse le bout plié du marque-page et laisse libre la place d'en face.*",
         "choices": [
-            "Yuna. Je peux te poser une question ?",
+            "Lui dire qu’elle me plaît.",
             "...Cet endroit est vraiment bien.",
             "Je répondrai si Yuna me pose la question la première.",
             "Même sans le dire, Yuna devrait savoir ce que je ressens."
@@ -241,26 +235,20 @@
     },
     "confess_dain_3": {
         "name": "{name}",
-        "text": "*Le gymnase est vide. La lumière de la fenêtre ouest coupe en biais la ligne du terrain où nous avions parié le premier jour.*"
+        "text": "*Je suis Dain dans le gymnase vide. Seules les lumières au bord du terrain sont allumées.*"
     },
-    "confess_dain_3b": {
-        "name": "{name}",
-        "text": "*Le gymnase est vide et le tableau d'affichage éteint. L'ombre du cadre de la fenêtre s'étire jusqu'au bout du terrain ; Dain se tient devant la ligne où nous avons échangé tant de ballons.*"
-    },
+    "confess_dain_3b": {},
     "confess_dain_4": {
         "name": "Dain",
         "text": "*Elle tient un ballon des deux mains. Ses jointures, pressées contre sa surface, ont blanchi.*"
     },
-    "confess_dain_5": {
-        "name": "{name}",
-        "text": "*Le ballon rebondit une fois sur le sol.*"
-    },
+    "confess_dain_5": {},
     "confess_dain_choice": {
         "name": "Dain",
         "text": "*Le ballon rebondit une fois. La main qui l'aurait normalement rattrapé s'arrête en l'air un temps trop tard.*",
         "choices": [
-            "Dain. Pose le ballon.",
-            "...On en fait une autre ?",
+            "Lui dire qu’elle me plaît.",
+            "On reste encore un peu sur le banc ?",
             "Je dirai ce que je ressens quand Dain le dira la première.",
             "Avec ce qu’il y a entre nous, on ne devrait pas avoir besoin de mots pour se comprendre."
         ]
@@ -323,11 +311,11 @@
     },
     "confess_dain_no_1": {
         "name": "{name}",
-        "text": "...On refait une partie ?"
+        "text": "…On reste encore un peu sur le banc ?"
     },
     "confess_dain_no_2": {
         "name": "{name}",
-        "text": "*Je lui fais une passe. Aucun mot ne sort.*"
+        "text": "*Je m’assieds près de Dain. Les mots que je voulais dire ne viennent pas.*"
     },
     "confess_dain_no_3": {
         "name": "Dain",

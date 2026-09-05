@@ -224,10 +224,7 @@
         "name": "{name}",
         "text": "*Je tourne la tête. Tout au fond, près de la fenêtre, une lycéenne contemple l'extérieur, le menton dans la main. Même pendant qu'on inscrit mon nom au tableau, elle se contente de tourner une page.*"
     },
-    "classroom_yuna_2": {
-        "name": "{name}",
-        "text": "*Cheveux argentés. Yeux rouges. Un tatouage sur le bras. Assise au dernier rang près de la fenêtre, elle garde le menton dans la main et ne regarde que dehors. Les places autour d'elle sont étrangement vides.*"
-    },
+    "classroom_yuna_2": {},
     "classroom_yuna_4": {
         "name": "{name}",
         "text": "*Quelqu'un chuchote au premier rang : « ...Ne lui parle pas, elle fait peur. » Yuna tourne une page.*"
@@ -286,7 +283,7 @@
     },
     "classroom_dain_talk_8": {
         "name": "{name}",
-        "text": "*Sur « enfin, je crois », le regard de Dain file vers le lance-balles. Un panier rempli de ballons attend au fond du terrain.*"
+        "text": "*Dain trace un petit terrain du doigt sur le bureau, dessine la ligne centrale et me regarde en haussant un sourcil.*"
     },
     "classroom_yuna_note_1": {
         "name": "{name}",

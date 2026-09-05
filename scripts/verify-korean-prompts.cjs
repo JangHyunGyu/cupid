@@ -688,8 +688,15 @@ function verifyWiringAndScenePrompts() {
         'game free talk still appends the gallery-style latest-user canon block');
     assert(freeTalkSource.includes('[scene.personality, scene.extra_guideline].filter(Boolean).join("\\n")'),
         'scene personality is not passed into the system prompt');
-    assert(freeTalkSource.includes('scene.isRemote === true || remoteKeywords.some'),
+    const mediumCode = freeTalkSource.match(/const remoteKeywords = ([\s\S]*?);\s*const isRemote = ([\s\S]*?);\s*this\._isRemote/);
+    assert(mediumCode, 'free-talk medium resolution is missing');
+    const resolveMedium = new Function('scene', `const remoteKeywords = ${mediumCode[1]}; return ${mediumCode[2]};`);
+    assert(resolveMedium({ isRemote: true }) === true,
         'explicit remote free-talk scenes are not honored');
+    assert(resolveMedium({ isRemote: false, context: 'A manuscript text; they exchanged a message yesterday.' }) === false,
+        'explicit face-to-face scenes are overridden by incidental remote keywords');
+    assert(resolveMedium({ context: 'Talking by phone message' }) === true,
+        'legacy remote free-talk scenes lost their fallback');
     assert(freeTalkSource.includes('async skipFreeTalk()')
         && freeTalkSource.includes('this._invalidateFreeTalkContext();')
         && freeTalkSource.includes('this.uiManager.chatContainer.style.display = \'none\';'),
@@ -918,6 +925,31 @@ function verifyGroupPromptCacheContract(context) {
         })
     );
     const first = makePrompt();
+    for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+        for (const staffId of ['Teacher', 'Nurse']) {
+            const buildStaffPrompt = (locationName, affinity) => context.window.buildCupidGroupSystemPrompt({
+                lang,
+                participants: [{ id: staffId, name: staffId, role: 'lead' }, { id: 'Dain', name: 'Dain', role: 'tempter' }],
+                locationName,
+                context: 'The promised school check-in was missed.',
+                affinities: { [staffId]: affinity, Dain: 20 },
+                promptData: context.window.getPromptData(lang, 'Alex')
+            });
+            const firstStaff = buildStaffPrompt('Classroom', 10);
+            const laterStaff = buildStaffPrompt('Hallway', -20);
+            const parts = splitCacheBoundary(firstStaff, `${lang}/staff-check-in/${staffId}`);
+            assert(!parts.stable.includes('원래 마음을 주던 상대이자 방금 배신을 알게 된 사람')
+                && !parts.stable.includes('the committed partner who has just learned of the betrayal'),
+            `${lang}/${staffId} was assigned a student's romantic-partner role`);
+            assert(parts.stable.includes(lang === 'ko' ? '이번 장면의 중심 인물' : 'the focus character in this scene'),
+                `${lang}/${staffId} lost its school conversation role`);
+            assert(context.window.CupidFreeTalkCore.getStablePromptFingerprint(firstStaff)
+                === context.window.CupidFreeTalkCore.getStablePromptFingerprint(laterStaff),
+            `${lang}/${staffId} check-in cache depends on live location or affinity`);
+            assert(parts.dynamic.includes('The promised school check-in was missed.'),
+                `${lang}/${staffId} check-in context is not after the cache boundary`);
+        }
+    }
     const dynamicVariant = makePrompt({ affinity: -18, choiceState: '알림을 보고도 다시 거짓말했다' });
     const pairVariant = makePrompt({ secondId: 'Yuna', secondName: '유나' });
     const firstParts = splitCacheBoundary(first, 'main/group/Seoyeon-Dain');

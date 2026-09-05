@@ -80,7 +80,7 @@
     },
     "morning2_dain_3": {
         "name": "Dain",
-        "text": "Schon davon? Du musst echt an deiner Kondition arbeiten!"
+        "text": "Erschrocken? Du sollst doch wach werden!"
     },
     "morning2_dain_4": {
         "name": "{name}",
@@ -140,7 +140,7 @@
     },
     "morning2_dain_claim_3": {
         "name": "{name}",
-        "text": "*Dain sieht Seoyeon nach, bis sie im Klassenzimmer verschwunden ist.*"
+        "text": "*Seoyeon drückt ihr Klemmbrett an sich und geht den Flur entlang.*"
     },
     "morning2_dain_claim_4": {
         "name": "Dain",
@@ -285,7 +285,7 @@
         "choices": [
             "Für Arbeit sehen Sie ziemlich zufrieden aus",
             "Danke, dass Sie sich kümmern",
-            "War der Kaffee für mich dann auch nur Teil Ihrer Arbeit?"
+            "Gehört es auch zu Ihrem Job, sich so einzeln um mich zu kümmern?"
         ]
     },
     "hidden_homeroom_d2_choice2_trap": {
@@ -308,10 +308,7 @@
         "name": "Klassenlehrerin",
         "text": "*Die Klassenlehrerin sieht in ihre Kaffeetasse und spricht leise.*"
     },
-    "hidden_homeroom_d2_12": {
-        "name": "{name}",
-        "text": "*Als ich das Lehrerzimmer verlasse, sehe ich noch einmal zu der Schublade zurück.*"
-    },
+    "hidden_homeroom_d2_12": {},
     "morning2_seo_dust_1": {
         "name": "{name}",
         "text": "*Pause nach der ersten Stunde. Auf dem Flur begegne ich Seoyeon. Sie bleibt stehen und sieht auf meine Schulter; die Hand mit dem Klemmbrett hebt sich zuerst.*"
@@ -362,7 +359,7 @@
     },
     "hidden_homeroom_d2_freetalk": {
         "name": "Klassenlehrerin",
-        "text": "*Als die Tür zum Lehrerzimmer zufällt, schiebt sie das Manuskript auf dem Schreibtisch zur Schublade.* Du siehst aus, als wolltest du schon die ganze Zeit etwas fragen. Aber jetzt höre ich mir erst an, was dich beschäftigt.",
+        "text": "*Die Lehrerin nimmt die Hand von der geschlossenen Schublade und wendet sich mir zu.* Lebst du dich langsam ein?",
         "context": "Es ist der Morgen von Tag 2, direkt nach einem Beratungsgespräch im Lehrerzimmer. Der neue Schüler hat zufällig ein langes Manuskript in der Schublade der Klassenlehrerin gesehen, kennt aber weder Inhalt noch Vorgeschichte. Als Lehrerin und Schüler beginnen sie gerade erst, Vertrauen aufzubauen. Erfinde kein Geheimnis des Manuskripts und überschreite nicht die Lehrer-Schüler-Grenze.",
         "personality": "Die Klassenlehrerin ist ruhig und verantwortungsbewusst und hört zu, bevor sie Rat gibt. Ihre Verlegenheit über das persönliche Manuskript zeigt sich in kurzem Zögern, doch sie lädt dem Schüler keine emotionale Verantwortung auf und wahrt eine warme, angemessene Grenze."
     },

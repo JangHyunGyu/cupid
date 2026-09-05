@@ -58,7 +58,7 @@
     },
     "after5_farewell_yuna_5": {
         "name": "{name}",
-        "text": "*Une seule phrase est écrite sur le marque-page : « Je me suis bien amusée. » Elle se termine par un point.*"
+        "text": "*Je relis la phrase du marque-page : « C’était bien. » L’encre a un peu bavé sous la dernière lettre.*"
     },
     "after5_farewell_yuna_5b": {
         "name": "{name}",
@@ -167,7 +167,7 @@
     },
     "after5_last_chance_2_h": {
         "name": "{name}",
-        "text": "*Je tends la main.*"
+        "text": "*Seoyeon tend la main.*"
     },
     "after5_last_chance_2_i": {
         "name": "Seoyeon",
@@ -255,10 +255,7 @@
         "name": "{name}",
         "text": "*Yuna ne détourne pas les yeux. La distance entre nous s’est réduite d’un pas.*"
     },
-    "after5_last_chance_yuna_7": {
-        "name": "Yuna",
-        "text": "*Elle attend, le livre serré contre elle. Le champ de réponse est toujours vide.*"
-    },
+    "after5_last_chance_yuna_7": {},
     "after5_last_chance_yuna_low_1": {
         "name": "{name}",
         "text": "Yuna."
@@ -271,7 +268,7 @@
         "name": "{name}",
         "text": "*Le coin du téléphone appuie dans ma paume.*",
         "choices": [
-            "Le dire maintenant",
+            "Lui dire qu’elle me plaît",
             "Ne pas encore le dire",
             "Prenons tous les deux le temps de réfléchir."
         ]
@@ -282,12 +279,12 @@
     },
     "after5_confess_yes_2": {
         "name": "{name}",
-        "text": "Écoute... j'ai quelque chose à te dire."
+        "text": "Tu me plais. Plus qu’une amie. Je sais que j’ai tardé, mais je voulais te le dire moi-même."
     },
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "Seoyeon",
-        "text": "*Nous commençons à marcher côte à côte vers le parc.* Tu arrives tard. Mais je vais quand même t’écouter."
+        "text": "*Nous marchons vers le parc.* Tu en as mis, du temps. Mais… maintenant, je sais ce que tu ressens."
     },
     "after5_confess_react_seo_low": {
         "name": "Seoyeon",
@@ -296,7 +293,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*En quittant l’école, elle baisse une fois les yeux vers ses lacets.* Hé, toi… Je t’ai attendu, tu sais. Alors va jusqu’au bout."
+        "text": "*Elle baisse les yeux sur ses lacets en sortant.* Hé. J’attendais ces mots. Tu ne feras plus semblant de rien, hein ?"
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",
@@ -305,7 +302,7 @@
     "after5_confess_aff_yuna": {},
     "after5_confess_react_yuna": {
         "name": "Yuna",
-        "text": "*Nous marchons côte à côte.* ...Je le savais déjà. Mais je vais quand même t'écouter."
+        "text": "*Nous marchons côte à côte.* Oui. J’ai bien entendu tes mots."
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",
@@ -539,7 +536,7 @@
     "after5_last_chance_dain_history_check": {},
     "after5_last_chance_dain_postponed": {
         "name": "Dain",
-        "text": "Aujourd’hui, j’écouterai jusqu’au bout ce que nous n’avons pas terminé hier."
+        "text": "Aujourd’hui, va au bout de ce que tu n’as pas pu dire hier."
     },
     "after5_last_chance_dain_tentative": {
         "name": "Dain",

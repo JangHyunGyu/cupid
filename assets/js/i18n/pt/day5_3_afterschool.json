@@ -58,7 +58,7 @@
     },
     "after5_farewell_yuna_5": {
         "name": "{name}",
-        "text": "*No marcador há apenas uma linha: 'Foi divertido.' No fim, há um ponto.*"
+        "text": "*Releio a frase curta no marcador: “Foi divertido.” A tinta borrou um pouco sob a última letra.*"
     },
     "after5_farewell_yuna_5b": {
         "name": "{name}",
@@ -167,7 +167,7 @@
     },
     "after5_last_chance_2_h": {
         "name": "{name}",
-        "text": "*Estendo a mão.*"
+        "text": "*Seoyeon estende a mão.*"
     },
     "after5_last_chance_2_i": {
         "name": "Seoyeon",
@@ -255,10 +255,7 @@
         "name": "{name}",
         "text": "*Yuna não desvia o olhar. A distância entre nós diminui para um passo.*"
     },
-    "after5_last_chance_yuna_7": {
-        "name": "Yuna",
-        "text": "*Ela espera, abraçada ao livro. O campo de resposta ainda não tem sequer a primeira letra.*"
-    },
+    "after5_last_chance_yuna_7": {},
     "after5_last_chance_yuna_low_1": {
         "name": "{name}",
         "text": "Yuna."
@@ -271,7 +268,7 @@
         "name": "{name}",
         "text": "*Aperto o celular na palma da mão.*",
         "choices": [
-            "Dizer agora",
+            "Dizer que gosto dela",
             "Não dizer ainda",
             "É melhor nós dois tirarmos um tempo para pensar."
         ]
@@ -282,12 +279,12 @@
     },
     "after5_confess_yes_2": {
         "name": "{name}",
-        "text": "Tenho uma coisa para dizer a você."
+        "text": "Eu gosto de você. Mais do que como amiga. Sei que demorei, mas queria te falar pessoalmente."
     },
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "Seoyeon",
-        "text": "*Começamos a caminhar lado a lado em direção ao parque.* Você chegou tarde. Mesmo assim, vou escutar."
+        "text": "*Começamos a andar juntos para o parque.* Demorou. Mas… agora eu sei o que você sente."
     },
     "after5_confess_react_seo_low": {
         "name": "Seoyeon",
@@ -296,7 +293,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*Ao sairmos da escola, ela olha uma vez para os cadarços do tênis.* Ei, você. Eu esperei por você. Fale até o fim."
+        "text": "*Ela olha os cadarços enquanto saímos.* Ei. Eu estava esperando ouvir isso. Nada de fingir que não falou depois, tá?"
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",
@@ -305,7 +302,7 @@
     "after5_confess_aff_yuna": {},
     "after5_confess_react_yuna": {
         "name": "Yuna",
-        "text": "*Caminhamos lado a lado.* Eu já sabia. Mesmo assim, vou escutar."
+        "text": "*Andamos lado a lado.* Sim. Eu ouvi direitinho."
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",
@@ -539,7 +536,7 @@
     "after5_last_chance_dain_history_check": {},
     "after5_last_chance_dain_postponed": {
         "name": "Dain",
-        "text": "Hoje vou ouvir até o fim o que não terminamos ontem."
+        "text": "Hoje termina o que não conseguiu dizer ontem."
     },
     "after5_last_chance_dain_tentative": {
         "name": "Dain",

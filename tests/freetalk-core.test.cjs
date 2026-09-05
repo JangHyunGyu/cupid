@@ -1543,12 +1543,12 @@ test('group reply order, per-speaker affinity, and Dain expression assets follow
         'name:담임선생님',
         'expression:Teacher',
         'text:담임선생님',
-        'affinity:Teacher',
         'advance',
         'active:Dain',
         'name:다인',
         'expression:Dain',
         'text:다인',
+        'affinity:Teacher',
         'affinity:Dain'
     ]);
 });

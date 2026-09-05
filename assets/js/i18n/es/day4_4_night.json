@@ -1,7 +1,7 @@
 {
     "day4_night_start": {
         "name": "{name}",
-        "text": "*Vuelvo a casa. En las mangas quedan un poco de tierra del parque y polvo de la escuela.*"
+        "text": "*Es hora de volver a casa. Me sacudo el polvo de la manga y miro el móvil.*"
     },
     "day4_night_branch": {
         "name": "Sistema",
@@ -11,62 +11,62 @@
     "day4_adult_nurse_student_rank": {},
     "day4_teacher_seoyeon_counteroffer": {
         "name": "Seoyeon",
-        "text": "*Cuando voy a salir del colegio tras despedirme de la profesora, Seoyeon espera junto a las escaleras de la azotea. Sonríe, pero aprieta con fuerza la manga del uniforme.* Últimamente solo tienes ojos para la profesora. Por una noche, ¿no puedes mirarme a mí, sin pensar en la presidenta del consejo ni en la alumna modelo?",
+        "text": "*Camino de la salida encuentro a Seoyeon junto a las escaleras. Se agarra la manga.* ¿Puedes quedarte un poco más conmigo?",
         "choices": [
-            "Cumplir la promesa hecha a la profesora e irme",
+            "Ir directo a casa y avisar",
             "Seguir a Seoyeon a la azotea y tomarle la mano",
-            "Puedo ver a la persona con la que quedé y seguir pendiente de la otra.",
-            "Cumpliré la primera promesa y le daré una buena excusa a la otra."
+            "Si digo que ya llegué, nadie se preocupará.",
+            "Inventaré una excusa por el retraso y volveré a casa."
         ]
     },
     "day4_teacher_dain_counteroffer": {
         "name": "Dain",
-        "text": "*Después de prometerle a la profesora que le escribiré al llegar, paso frente al gimnasio. Dain está apoyada en la salida de emergencia a oscuras, jugueteando con la cinta de su rodilla.* Últimamente solo vas con la profesora. Devuélveme diez saques. Cuando terminemos... abrázame esta noche.",
+        "text": "*Camino de la salida, Dain saluda desde un banco, ajustándose la rodillera.* ¿Tienes que irte ya? Hoy nada de correr. Hablemos un rato.",
         "choices": [
-            "Escribirle a la profesora que voy a volver",
+            "Ir directo a casa y avisar",
             "Entrar al gimnasio y aceptar la petición de Dain",
-            "Puedo ver a la persona con la que quedé y seguir pendiente de la otra.",
-            "Cumpliré la primera promesa y le daré una buena excusa a la otra."
+            "Si digo que ya llegué, nadie se preocupará.",
+            "Inventaré una excusa por el retraso y volveré a casa."
         ]
     },
     "day4_teacher_yuna_counteroffer": {
         "name": "Yuna",
-        "text": "*Justo después de despedirme de la profesora, Yuna envía una foto del anexo. Hay dos sillas vacías juntas y su chaqueta cuelga de una de ellas.* Supongo que estás más a gusto al lado de la profesora. Pero si te vas esta noche, volveré a sentir que me dejan sola.",
+        "text": "*Al pasar por el anexo, Yuna manda la foto de una silla vacía.* Si sigues aquí, ¿puedes venir? Quisiera que te quedaras un poco más.",
         "choices": [
-            "Responderle a la profesora y volver a casa",
+            "Ir directo a casa y avisar",
             "Ir al anexo y quedarme con Yuna",
-            "Puedo ver a la persona con la que quedé y seguir pendiente de la otra.",
-            "Cumpliré la primera promesa y le daré una buena excusa a la otra."
+            "Si digo que ya llegué, nadie se preocupará.",
+            "Inventaré una excusa por el retraso y volveré a casa."
         ]
     },
     "day4_nurse_seoyeon_counteroffer": {
         "name": "Seoyeon",
-        "text": "*De camino de la enfermería a la entrada, Seoyeon me corta el paso junto a las escaleras de la azotea. Fuerza una sonrisa mientras sus dedos arrugan la manga del uniforme.* Últimamente solo visitas a la enfermera. Por una noche, ¿no puedes mirarme a mí, sin pensar en la presidenta del consejo ni en la alumna modelo?",
+        "text": "*Camino de la salida encuentro a Seoyeon junto a las escaleras. Se agarra la manga.* ¿Puedes quedarte un poco más conmigo?",
         "choices": [
-            "Responderle a la enfermera e irme",
+            "Ir directo a casa y avisar",
             "Seguir a Seoyeon a la azotea y tomarle la mano",
-            "Puedo ver a la persona con la que quedé y seguir pendiente de la otra.",
-            "Cumpliré la primera promesa y le daré una buena excusa a la otra."
+            "Si digo que ya llegué, nadie se preocupará.",
+            "Inventaré una excusa por el retraso y volveré a casa."
         ]
     },
     "day4_nurse_dain_counteroffer": {
         "name": "Dain",
-        "text": "*Al cerrar la puerta de la enfermería, encuentro a Dain junto a la salida de emergencia del gimnasio. Despega y vuelve a pegar la cinta de su rodilla sin mirarme.* Últimamente solo vas con la enfermera. Devuélveme diez saques. Cuando terminemos... abrázame esta noche.",
+        "text": "*Camino de la salida, Dain saluda desde un banco, ajustándose la rodillera.* ¿Tienes que irte ya? Hoy nada de correr. Hablemos un rato.",
         "choices": [
-            "Escribirle a la enfermera que voy a volver",
+            "Ir directo a casa y avisar",
             "Entrar al gimnasio y aceptar la petición de Dain",
-            "Puedo ver a la persona con la que quedé y seguir pendiente de la otra.",
-            "Cumpliré la primera promesa y le daré una buena excusa a la otra."
+            "Si digo que ya llegué, nadie se preocupará.",
+            "Inventaré una excusa por el retraso y volveré a casa."
         ]
     },
     "day4_nurse_yuna_counteroffer": {
         "name": "Yuna",
-        "text": "*Después de salir de la enfermería, Yuna envía una foto del anexo. Su chaqueta descansa sobre una de las dos sillas vacías.* Supongo que estás más a gusto al lado de la enfermera. Pero si te vas esta noche, volveré a sentir que me dejan sola.",
+        "text": "*Al pasar por el anexo, Yuna manda la foto de una silla vacía.* Si sigues aquí, ¿puedes venir? Quisiera que te quedaras un poco más.",
         "choices": [
-            "Responderle a la enfermera y volver a casa",
+            "Ir directo a casa y avisar",
             "Ir al anexo y quedarme con Yuna",
-            "Puedo ver a la persona con la que quedé y seguir pendiente de la otra.",
-            "Cumpliré la primera promesa y le daré una buena excusa a la otra."
+            "Si digo que ya llegué, nadie se preocupará.",
+            "Inventaré una excusa por el retraso y volveré a casa."
         ]
     },
     "day4_adult_counteroffer_accept_seoyeon": {
@@ -90,7 +90,10 @@
         "name": "{name}",
         "text": "*Al llegar a casa, enciendo el teléfono y veo el mensaje de la enfermera: 'Antes no tenías buena cara. ¿Has llegado bien a casa?'. La mano se me queda inmóvil antes de poder escribir que estoy bien.*"
     },
-    "day4_student_night_branch": {},
+    "day4_student_night_branch": {
+        "text": "*En casa dejo la bolsa. Antes de cargar el móvil, miro las notificaciones.*",
+        "name": "{name}"
+    },
     "wall_seo_1": {
         "name": "{name}",
         "text": "*Las diez de la noche. Me llama Seoyeon. No hay ni rastro de risa en su voz.*"
@@ -215,7 +218,7 @@
     },
     "wall_seo_hug_1": {
         "name": "{name}",
-        "text": "*Al abrazar a Seoyeon, hunde el rostro en mi hombro. Las lágrimas se extienden sobre la camisa del uniforme.*"
+        "text": "*Abrazo a Seoyeon. Esconde la cara en mi hombro y las lágrimas empapan la tela.*"
     },
     "wall_seo_hug_2_b": {
         "name": "Seoyeon",
@@ -307,10 +310,7 @@
         "name": "Seoyeon",
         "text": "*Después de confirmar mi permiso, Seoyeon me toma la mano. Nuestras manos permanecen entre los dos sobre el banco.*"
     },
-    "wall_seo_skin70_3": {
-        "name": "Seoyeon",
-        "text": "...Esto es nuevo. De verdad."
-    },
+    "wall_seo_skin70_3": {},
     "wall_seo_skin60_1": {
         "name": "{name}",
         "text": "*Nos sentamos lado a lado en el banco. Seoyeon deja un hombro de distancia y mira hacia {name}.*"
@@ -367,14 +367,8 @@
         "name": "Dain",
         "text": "...¿Hoy podemos hablar de algo que no sea deporte?"
     },
-    "wall_dain_pre_high_2": {
-        "name": "Dain",
-        "text": "*Habla con una voz más baja de lo habitual.*"
-    },
-    "wall_dain_pre_low_1": {
-        "name": "Dain",
-        "text": "*Sonríe. La mano aprieta con fuerza la rodillera.*"
-    },
+    "wall_dain_pre_high_2": {},
+    "wall_dain_pre_low_1": {},
     "wall_dain_pre_low_2": {
         "name": "Dain",
         "text": "jaja, hoy estuvo genial, ¿eh?"
@@ -713,29 +707,20 @@
         "name": "Yuna",
         "text": "...Hoy voy a hablar sin notas."
     },
-    "wall_yuna_pre_high_2": {
-        "name": "Yuna",
-        "text": "*Abre una vez la mano vacía para mostrarla. No hay nota ni separador.*"
-    },
-    "wall_yuna_pre_low_1": {
-        "name": "Yuna",
-        "text": "*Me pasa una nota.*"
-    },
-    "wall_yuna_pre_low_2": {
-        "name": "{name}",
-        "text": "*No salen palabras. Yuna tampoco pregunta más.*"
-    },
+    "wall_yuna_pre_high_2": {},
+    "wall_yuna_pre_low_1": {},
+    "wall_yuna_pre_low_2": {},
     "wall_yuna_2": {
         "name": "{name}",
         "text": "*La luz de la puerta trasera parpadea. Yuna está de pie debajo. El libro está abierto, pero no se ha pasado ni una sola página.*"
     },
     "wall_yuna_3": {
         "name": "Yuna",
-        "text": "Ven conmigo hasta la puerta trasera de la escuela."
+        "text": "Por aquí. Quiero enseñarte algo."
     },
     "wall_yuna_4": {
         "name": "Yuna",
-        "text": "*Camina hacia el anexo de la biblioteca. Pasa de largo el rincón secreto de lectura — Y sigue más adentro. El archivo del sótano. Entre estanterías llenas de polvo. Saca un sobre viejo.*"
+        "text": "*Entramos en el anexo y vamos al almacén tras la sala de lectura. Yuna saca un sobre viejo de una estantería polvorienta.*"
     },
     "wall_yuna_6": {
         "name": "Yuna",
@@ -811,7 +796,7 @@
     },
     "wall_yuna_16": {
         "name": "Yuna",
-        "text": "Pero venías todos los días. En silencio."
+        "text": "Pero volviste. Y esperaste en silencio a que hablara."
     },
     "wall_yuna_16_b": {
         "name": "Yuna",
@@ -893,7 +878,7 @@
     },
     "wall_yuna_reject_3": {
         "name": "Yuna",
-        "text": "*Se da la vuelta. Camina rápido. Un marcador cae de su bolsillo, pero no lo recoge.*"
+        "text": "*Yuna se vuelve, pero se detiene en la puerta. Recoge un marcapáginas caído y vacila sin tocar el pomo.*"
     },
     "wall_yuna_rival_rank": {
         "name": "Sistema",
@@ -1018,7 +1003,7 @@
     "wall_yuna_freetalk": {
         "name": "Yuna",
         "text": "*Dobla la carta dentro del libro y esta vez mira primero al protagonista.* Aún hay algo que quiero oír.",
-        "context": "Es la noche del día 4, justo después de que Yuna afrontara la carta de Junho y su miedo a ser el sustituto de otra persona. Si el protagonista aceptó o pospuso su confesión y los sentimientos confirmados son hechos guardados. No reescribas la carta, no borres su miedo de inmediato ni vuelvas a decidir la relación.",
+        "context": "Noche del día 4 en el anexo. Tras leer la carta de Lee Junho, Yuna teme estar aferrándose al protagonista como sustituto del compañero que se marchó. Mantén las decisiones y la aceptación o aplazamiento de la confesión. No inviertas el temor: Yuna no es la sustituta. La carta está guardada en un libro y ambos siguen allí.",
         "personality": "Yuna es tranquila y reflexiva, pero ya no evita las preguntas importantes. En lugar de esconderse tras metáforas, habla directamente cuando hace falta y escucha sin deformar la respuesta para adaptarla a sus temores."
     },
     "night_nurse_msg_4": {
@@ -1123,7 +1108,7 @@
     },
     "day4_adult_counteroffer_soft_dain": {
         "name": "Dain",
-        "text": "*Entro al gimnasio y le devuelvo los pases hasta que se detiene el último balón. Dain recupera el aliento y da una palmada al banco junto a ella.* Hoy solo siéntate conmigo."
+        "text": "*Nos sentamos ante el gimnasio. Dain acomoda la rodilla y aparta el balón.* Hoy quédate conmigo, nada más."
     },
     "day4_adult_counteroffer_soft_yuna": {
         "name": "Yuna",
@@ -1144,5 +1129,21 @@
     "day4_adult_counteroffer_soft_return_home": {
         "name": "{name}",
         "text": "*Salgo de la escuela y vuelvo a casa. Las palabras que acabamos de intercambiar siguen ahí después de cerrar la puerta.*"
+    },
+    "wall_seo_overpromise_react": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon niega con la cabeza.* No prometas arreglarlo todo. Ahora solo escúchame."
+    },
+    "day4_teacher_checkin": {
+        "name": "{name}",
+        "text": "*La aplicación escolar muestra el aviso de mi tutora para quienes ayudaron con el evento. Respondo: «Voy directo a casa. Avisaré al llegar».*"
+    },
+    "day4_nurse_checkin": {
+        "name": "{name}",
+        "text": "*La aplicación escolar muestra el aviso de la enfermera para quienes ayudaron con el evento. Respondo: «Voy directo a casa. Avisaré al llegar».*"
+    },
+    "day4_adult_return_home": {
+        "name": "{name}",
+        "text": "*En casa, confirmo la llegada en la aplicación escolar, cierro la puerta y me quito los zapatos.*"
     }
 }

@@ -80,7 +80,7 @@
     },
     "morning2_dain_3": {
         "name": "Dain",
-        "text": "Rien que ça ? Tu devrais travailler ton endurance."
+        "text": "Je t’ai fait peur ? C’était pour te réveiller !"
     },
     "morning2_dain_4": {
         "name": "{name}",
@@ -140,7 +140,7 @@
     },
     "morning2_dain_claim_3": {
         "name": "{name}",
-        "text": "*Dain suit Seoyeon du regard jusqu'à ce que sa silhouette disparaisse dans la salle de classe.*"
+        "text": "*Seoyeon serre sa planchette et s’éloigne dans le couloir.*"
     },
     "morning2_dain_claim_4": {
         "name": "Dain",
@@ -285,7 +285,7 @@
         "choices": [
             "Pour du boulot, vous avez l'air drôlement contente",
             "Merci de prendre soin de moi",
-            "Alors, le café aussi, ça faisait partie du travail ?"
+            "Me recevoir à part pour prendre de mes nouvelles, ça fait aussi partie du travail ?"
         ]
     },
     "hidden_homeroom_d2_choice2_trap": {
@@ -308,10 +308,7 @@
         "name": "Professeure principale",
         "text": "*La voix de la prof principale se perd, basse, dans la tasse de café.*"
     },
-    "hidden_homeroom_d2_12": {
-        "name": "{name}",
-        "text": "*En quittant la salle des profs, je jette un dernier regard au tiroir entrouvert.*"
-    },
+    "hidden_homeroom_d2_12": {},
     "morning2_seo_dust_1": {
         "name": "{name}",
         "text": "*Pause après le premier cours. Je croise Seoyeon dans le couloir. Elle s'arrête et regarde mon épaule. La main qui tient son porte-bloc se lève la première.*"
@@ -362,7 +359,7 @@
     },
     "hidden_homeroom_d2_freetalk": {
         "name": "Professeure principale",
-        "text": "*Une fois la porte de la salle des professeurs refermée, elle pousse le manuscrit vers le tiroir.* Tu avais l'air de vouloir me demander quelque chose. Pour l'instant, l'élève passe d'abord.",
+        "text": "*La professeure retire sa main du tiroir fermé et se tourne vers moi.* Tu commences à prendre tes marques ?",
         "context": "Nous sommes au matin du jour 2, juste après un entretien dans la salle des professeurs. L'élève transféré a aperçu par hasard un long manuscrit dans le tiroir de sa professeure, mais n'en connaît ni le contenu ni l'histoire. Ils commencent à se faire confiance en tant que professeure et élève. N'invente pas le secret du manuscrit et ne franchis pas les limites de cette relation.",
         "personality": "La professeure principale est calme et responsable ; elle écoute avant de conseiller. Sa gêne au sujet de ce manuscrit personnel se traduit par une brève hésitation, mais elle ne fait pas porter ses émotions à l'élève et garde une proximité chaleureuse et appropriée."
     },

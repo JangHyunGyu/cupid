@@ -9,7 +9,7 @@
     },
     "night3_faithful_check": {
         "name": "{name}",
-        "text": "*Eine ungelesene Nachricht wartet auf mich.*"
+        "text": "*Ich prüfe die Benachrichtigungen.*"
     },
     "night3_faithful_msg_seo_1": {
         "name": "Seoyeon",
@@ -25,7 +25,7 @@
     },
     "night3_faithful_msg_yuna_1": {
         "name": "Yuna",
-        "text": "*Yuna schickt ein Foto von einer einzigen Zeile in ihrem Notizbuch.*"
+        "text": "*Von Yuna kommt eine kurze Nachricht über das ausgeliehene Notizbuch.*"
     },
     "night3_faithful_msg_yuna_2": {
         "name": "Yuna",
@@ -37,7 +37,7 @@
     },
     "night3_faithful_msg_dain_1": {
         "name": "Dain",
-        "text": "Wenn du nach meinem Knöchel fragen willst, komm vorbei und frag mich selbst haha"
+        "text": "Wenn du nach meinem Knie fragen willst, frag mich persönlich haha"
     },
     "night3_faithful_msg_dain_2": {
         "name": "Dain",
@@ -49,7 +49,7 @@
     },
     "night3_dream_1": {
         "name": "{name}",
-        "text": "*Im Traum gehe ich neben jemandem her, dessen Gesicht ich nicht sehen kann. Nur unsere Schritte laufen im selben Rhythmus weiter.*"
+        "text": "*Bevor ich das Licht ausschalte, nehme ich noch einmal das Handy. Ich denke an die Schritte neben meinen heute.*"
     },
     "night3_dream_2_b": {
         "name": "{name}",
@@ -57,7 +57,7 @@
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*Morgensonne fällt durch die Vorhänge und weckt mich. Ich öffne die Galerie auf meinem Handy, scrolle zu Sojeongs Foto und halte es gedrückt.*"
+        "text": "*Vor dem Einschlafen öffne ich die Galerie, scrolle zu Sojeongs Foto und halte es gedrückt.*"
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
-        "text": "*Gut. Mit dem Finger, der über »Löschen« liegt, drücke ich auf den Bildschirm.*"
+        "text": "*Ich tippe auf Abbrechen. Ein Foto zu löschen würde meine damalige Entscheidung nicht ändern.*"
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
@@ -77,23 +77,17 @@
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*»Nein zu sagen gehört auch zu deinen Aufgaben.« Minsus Worte kommen mir wieder in den Sinn. Sojeong lächelt in der Galerie, und der Senden-Button der noch ungesendeten 38. Notiz leuchtet weiterhin blau.*"
+        "text": "*Ich hinterlasse eine kurze Notiz beim Foto. Kein neues Gespräch ersetzt das, was ich Sojeong noch sagen muss.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*Sojeongs Foto verschwindet aus der Galerie und hinterlässt eine leere Stelle.*"
+        "text": "*Ich öffne den neuen Ordner und prüfe, ob das Foto noch da ist. Unter dem Namen wird ein Bild angezeigt.*"
     },
-    "night3_faithful_reflect_4_b": {
-        "name": "{name}",
-        "text": "*Ich reibe mit dem Daumen über die leere Albumvorschau.*"
-    },
-    "night3_faithful_reflect_4_c": {
-        "name": "{name}",
-        "text": "*Als ich das Handy zuklappe, scheint sich die leere Stelle in der Galerie über das schwarze Display zu legen.*"
-    },
+    "night3_faithful_reflect_4_b": {},
+    "night3_faithful_reflect_4_c": {},
     "night3_dream_3": {
         "name": "{name}",
-        "text": "*Ich wache auf, bevor der Wecker klingelt.*"
+        "text": "*Ich schließe die Galerie und prüfe den Wecker. Auch nachdem ich das Handy weggelegt habe, dauert es, bis ich einschlafe.*"
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",
@@ -198,7 +192,7 @@
     },
     "night3_nightmare_dain": {
         "name": "{name}",
-        "text": "*In Dains Eingabefeld schreibe ich: »Tut mir leid, dass ich dich habe warten lassen. Morgen rede ich mit dir.« Mit dem Daumen drücke ich auf den Rand des Senden-Symbols.*"
+        "text": "*Ich tippe Dain: „Tut mir leid, dass du warten musstest. Morgen reden wir.“ Mein Daumen schwebt über Senden.*"
     },
     "night3_nightmare_end": {
         "name": "{name}",

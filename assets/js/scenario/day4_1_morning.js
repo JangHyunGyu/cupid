@@ -94,14 +94,12 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "minsu_cheer_4_d"
     },
     "minsu_cheer_4_d": {
-        "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
-        "next": "minsu_cheer_4_e"
+        "next": "minsu_cheer_4_e",
+        "routeBeforeRender": true
     },
     "minsu_cheer_4_e": {
-        "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
-        "next": "morning4_start_2"
+        "next": "morning4_start_2",
+        "routeBeforeRender": true
     },
     "morning4_start_2": {
         "background": "assets/images/background/room_my.png",
@@ -124,9 +122,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "morning4_seo_msg_1_c"
     },
     "morning4_seo_msg_1_c": {
-        "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/seyoun_pout.png","opacity":0.35}},
-        "next": "morning4_hidden_check"
+        "next": "morning4_hidden_check",
+        "routeBeforeRender": true
     },
     "morning4_yuna_msg_1": {
         "background": "assets/images/background/room_my.png",
@@ -444,10 +441,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "hidden_homeroom_d4_cafe_6_b"
     },
     "hidden_homeroom_d4_cafe_6_b": {
-        "background": "assets/images/background/cafe.png",
-        "backgroundVariant": "warm",
-        "character": "assets/images/characters/teacher_normal.png",
-        "next": "hidden_homeroom_d4_freetalk"
+        "next": "hidden_homeroom_d4_freetalk",
+        "routeBeforeRender": true
     },
     "hidden_homeroom_d4_freetalk": {
         "background": "assets/images/background/cafe.png",
@@ -455,7 +450,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/teacher_normal.png",
         "type": "free_talk",
         "maxTurns": 3,
-        "next": "hidden_nurse_d4_check"
+        "next": "hidden_nurse_d4_check",
+        "isRemote": false
     },
     "hidden_homeroom_d4_decline": {
         "background": "assets/images/background/street.png",
@@ -660,9 +656,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "hidden_nurse_d4_4_g"
     },
     "hidden_nurse_d4_4_g": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_nurse_d4_4_h"
+        "next": "hidden_nurse_d4_4_h",
+        "routeBeforeRender": true
     },
     "hidden_nurse_d4_4_h": {
         "background": "assets/images/background/nurse_room.png",
@@ -834,7 +829,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/nurse_normal.png",
         "type": "free_talk",
         "maxTurns": 3,
-        "next": "morning4_end"
+        "next": "morning4_end",
+        "isRemote": false
     },
     "morning4_end": {
         "background": "assets/images/background/room_my.png",

@@ -1,7 +1,7 @@
 {
     "lunch3_start": {
         "name": "{name}",
-        "text": "*At lunch, all three gather when I open my lunchbox. Everyone knows about the weekend invitations from this morning. Seoyeon sits beside me, Dain across from me, and even Yuna drags over an empty chair from the corner where she was eating bread.*"
+        "text": "*At lunch, I open my lunchbox. Seoyeon sits beside me, Dain sits across, and Yuna brings her bread to the empty chair.*"
     },
     "lunch3_start_2_b": {
         "name": "Dain",
@@ -45,24 +45,15 @@
     },
     "lunch3_meal_10": {
         "name": "{name}",
-        "text": "*Three pairs of chopsticks nearly meet over the last piece of rolled omelette. This is after I suggested we all share.*"
+        "text": "*Three pairs of chopsticks nearly meet over the last piece of egg. All three stop and look at me.*"
     },
     "lunch3_meal_10_b": {
         "name": "{name}",
         "text": "*Only one last side dish remains in the center of the lunchbox, and all three pairs of chopsticks return to their places.*"
     },
-    "lunch3_meal_10_c": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon draws back the tips of her chopsticks before the rolled omelette.*"
-    },
-    "lunch3_meal_10_d": {
-        "name": "Dain",
-        "text": "*“All together?” Dain laughs, but doesn't pull her chair closer.*"
-    },
-    "lunch3_meal_10_e": {
-        "name": "Yuna",
-        "text": "*Yuna gives a short nod, then folds the note she was writing and slips it into her pocket. A dot of pale-purple ink has bled at the edge, but she never hands it over.*"
-    },
+    "lunch3_meal_10_c": {},
+    "lunch3_meal_10_d": {},
+    "lunch3_meal_10_e": {},
     "lunch3_meal_11": {
         "name": "{name}",
         "text": "*Who should I give it to?*"
@@ -100,7 +91,7 @@
     },
     "lunch3_seo_witness_1": {
         "name": "{name}",
-        "text": "*At the classroom threshold, Dain sees Seoyeon accept the lunchbox. Her lips move without sound, and she turns back into the hall.*"
+        "text": "*Dain gets up with her empty water bottle, glances at the food I gave Seoyeon and steps into the hall.*"
     },
     "lunch3_seo_witness_choice": {
         "name": "{name}",
@@ -109,7 +100,7 @@
             "Dain!",
             "Focus on Seoyeon",
             "It’d be more fun if we invited Dain too.",
-            "I feel bad leaving Dain alone. I’ll ask her to join us."
+            "I feel bad leaving Dain alone. I will ask her to come back."
         ]
     },
     "lunch3_seo_chase_dain_1": {
@@ -143,7 +134,7 @@
     "lunch3_dain_skin_check": {},
     "lunch3_dain_skin_1": {
         "name": "{name}",
-        "text": "*After winning the lunch bet, Dain spreads her arms and asks, “Can I hug you?” Once she has permission, she hugs me briefly, pulls away after one second, and grabs her water bottle.*"
+        "text": "*After finishing the food, Dain opens her arms a little. “Can I give you a thank-you hug?” I nod. She hugs me briefly, then reaches for her bottle.*"
     },
     "lunch3_dain_skin_3": {
         "name": "Dain",
@@ -155,12 +146,9 @@
     },
     "lunch3_dain_witness_1": {
         "name": "{name}",
-        "text": "*Yuna looks into the gym from the hall. When she hears Dain laugh, she presses the book cover to her chest and turns the other way. During the next break, Yuna's seat is empty.*"
+        "text": "*Yuna watches Dain smile, then silently moves her book beside the lunchbox and looks down.*"
     },
-    "lunch3_dain_witness_2b": {
-        "name": "{name}",
-        "text": "*I head back to the classroom.*"
-    },
+    "lunch3_dain_witness_2b": {},
     "lunch3_give_dain_3": {
         "name": "Yuna",
         "text": "*Yuna stares out the window, gripping the rolled opening of her bread wrapper.*"
@@ -172,7 +160,7 @@
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {
         "name": "{name}",
-        "text": "*Both hands are still holding the edge of the note.*"
+        "text": "*Yuna picks up a small note beside her tray and passes it to me. For a moment, we both hold its edge.*"
     },
     "lunch3_yuna_skin_2": {
         "name": "Yuna",
@@ -188,7 +176,7 @@
     },
     "lunch3_yuna_witness_1": {
         "name": "Seoyeon",
-        "text": "I heard the library smelled like lunch. Were you with Yuna?"
+        "text": "Don’t look so guilty after handing it over right in front of me. Go on, eat."
     },
     "lunch3_yuna_witness_2": {
         "name": "{name}",
@@ -204,7 +192,7 @@
     },
     "lunch3_expose_2": {
         "name": "Dain",
-        "text": "Oh, right! {name}, we're going to the arcade this weekend. What should we eat first?"
+        "text": "Oh, right. Did you settle all your weekend plans?"
     },
     "lunch3_expose_3": {
         "name": "{name}",
@@ -216,15 +204,15 @@
     },
     "lunch3_expose_5": {
         "name": "Seoyeon",
-        "text": "The arcade?"
+        "text": "Wait."
     },
     "lunch3_expose_6": {
         "name": "Seoyeon",
-        "text": "You told me we had somewhere to go this weekend."
+        "text": "Wait. You mean there’s more than one?"
     },
     "lunch3_expose_7": {
         "name": "Dain",
-        "text": "Wait. You asked me to hang out this weekend too."
+        "text": "Sounds like we each heard something different about who you’re meeting and when."
     },
     "lunch3_expose_7_b": {
         "name": "{name}",
@@ -240,7 +228,7 @@
     },
     "lunch3_expose_11": {
         "name": "Yuna",
-        "text": "That's a lie. I didn't know either."
+        "text": "I knew people had asked. I didn’t know you’d accepted several plans."
     },
     "lunch3_expose_12": {
         "name": "{name}",
@@ -279,10 +267,7 @@
         "name": "Seoyeon",
         "text": "*She closes her lunchbox.*"
     },
-    "lunch3_expose_honest_4_b": {
-        "name": "{name}",
-        "text": "*Seoyeon's smile disappears as she closes the lunchbox lid. The tip of her chopsticks strikes it with a sharp click.*"
-    },
+    "lunch3_expose_honest_4_b": {},
     "lunch3_expose_honest_5": {
         "name": "Seoyeon",
         "text": "I don't do gray areas. If that's how it is, count me out."

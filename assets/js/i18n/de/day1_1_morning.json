@@ -224,10 +224,7 @@
         "name": "{name}",
         "text": "*Ganz hinten am Fenster stützt ein Mädchen das Kinn auf die Hand und schaut nur hinaus. Selbst als mein Name an die Tafel geschrieben wird, blättert sie lediglich eine Seite um.*"
     },
-    "classroom_yuna_2": {
-        "name": "{name}",
-        "text": "*Silberweißes Haar. Rote Augen. Ein Tattoo am Arm. Das Mädchen ganz hinten am Fenster stützt das Kinn weiterhin auf die Hand und schaut hinaus. Die Plätze um sie herum wirken auffällig leer.*"
-    },
+    "classroom_yuna_2": {},
     "classroom_yuna_4": {
         "name": "{name}",
         "text": "*Jemand in der vorderen Reihe flüstert: »Sprich sie nicht an. Sie ist unheimlich.« Yuna blättert eine Seite um.*"
@@ -286,7 +283,7 @@
     },
     "classroom_dain_talk_8": {
         "name": "{name}",
-        "text": "*Nach dem ‚Wahrscheinlich‘ wandert Dains Blick zur Ballmaschine. Am anderen Ende des Spielfelds wartet ein Korb voller Bälle.*"
+        "text": "*Dain zeichnet mit dem Finger ein kleines Spielfeld auf den Tisch, zieht die Mittellinie und hebt eine Augenbraue.*"
     },
     "classroom_yuna_note_1": {
         "name": "{name}",

@@ -120,7 +120,7 @@
         "name": "{name}",
         "text": "*O olhar de Yuna se ergue por um instante acima do copo.*",
         "choices": [
-            "Primeira vez que te vejo sem uniforme.",
+            "Você está bonita hoje.",
             "Você parece um pouco diferente hoje.",
             "Hoje você parece muito mais fácil de abordar."
         ]
@@ -231,7 +231,7 @@
     },
     "date_dain_1": {
         "name": "{name}",
-        "text": "*Em frente ao ginásio. Dain vem correndo. Boné e roupa de treino.*"
+        "text": "*Na frente do ginásio, Dain acena de boné e roupa esportiva. O joelho direito está com uma joelheira.*"
     },
     "date_dain_2": {
         "name": "Dain",
@@ -251,8 +251,8 @@
         "choices": [
             "Curti esse boné.",
             "Roupa esportiva é mesmo a sua cara.",
-            "Hoje você está muito mais feminina do que com roupa esportiva.",
-            "Agora que se arrumou assim, finalmente parece um encontro."
+            "Roupa de treino de novo, até num encontro?",
+            "Na próxima vez, se arruma um pouco mais para o encontro."
         ]
     },
     "date_dain_pretty_high": {
@@ -393,7 +393,10 @@
     "date_yuna_tentative_3": {"name":"Yuna","text":"Da próxima vez, eu mando mensagem primeiro. Por hoje, chega."},
     "date_dain_tier_check": {},
     "date_dain_high_1": {"name":"Dain","text":"Deixa a próxima semana livre também. Se hoje for divertido, vamos repetir."},
-    "date_dain_high_2": {"name":"Dain","text":"*Dain abre a porta do ginásio e estende uma munhequeira.* Hoje você escolhe primeiro."},
+    "date_dain_high_2": {
+        "name": "Dain",
+        "text": "*Ela tira uma munhequeira do bolso e me entrega.* Hoje você escolhe primeiro."
+    },
     "date_dain_tentative_1": {"name":"Dain","text":"Não vamos ficar muito tempo hoje. Meu joelho também precisa descansar."},
     "date_dain_tentative_2": {"name":"{name}","text":"*Cada um toma uma bebida perto da máquina. Dain deixa a porta do ginásio fechada e ajusta a alça da bolsa.*"},
     "date_dain_tentative_3": {"name":"Dain","text":"Vejo você na escola. A gente decide o próximo plano lá."},

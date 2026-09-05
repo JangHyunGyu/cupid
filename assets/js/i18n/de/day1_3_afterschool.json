@@ -13,7 +13,7 @@
     },
     "after_kakao_5": {
         "name": "{name}",
-        "text": "*Das Antwortfeld bleibt leer, während mein Daumen über den Rand des Senden-Buttons streicht.*"
+        "text": "*Mein Gesicht spiegelt sich im dunklen Display. Ohne Antwort stecke ich das Handy ein.*"
     },
     "after_kakao_end": {
         "name": "{name}",
@@ -67,7 +67,7 @@
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
-        "text": "*Seoyeon hält das Klemmbrett aufrecht vor die Brust und wartet auf eine Antwort. Ich blicke auf das leere Antwortfeld hinab.*"
+        "text": "*Seoyeon richtet die Blätter auf ihrem Klemmbrett aus. Ich bleibe stehen und überlege, was ich sagen soll.*"
     },
     "after1_jealousy_yuna_1": {
         "name": "Dain",
@@ -139,10 +139,7 @@
         "name": "Yuna",
         "text": "*Sie schiebt das Lesezeichen zwischen die Seiten und dreht sich um.*"
     },
-    "after_miss_yuna_4": {
-        "name": "{name}",
-        "text": "*Yuna biegt mit aufgeschlagenem Buch um die Ecke. Nur die gefaltete Ecke des Lesezeichens ragt über den Buchrücken hinaus.*"
-    },
+    "after_miss_yuna_4": {},
     "after_miss_seoyeon_1": {
         "name": "{name}",
         "text": "*Auf dem Weg nach Hause treffe ich Seoyeon im Flur.*"
@@ -198,7 +195,7 @@
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
-        "text": "Was Sie vorhin sagten — das blieb bei mir hängen."
+        "text": "Ich wollte Sie etwas zum Einleben an der Schule fragen."
     },
     "after_hidden_homeroom_3_c": {
         "name": "Klassenlehrerin",
@@ -317,11 +314,11 @@
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
-        "text": "*Am Ende des Flurs höre ich leise das Klassenbuch zuklappen.*"
+        "text": "*Draußen gehen Schüler vorbei. Die Lehrerin schiebt ihre Unterlagen zur Seite.*"
     },
     "after_homeroom_honest_10": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin klemmt sich das Klassenbuch an die Brust und geht ins Lehrerzimmer. Das Ende eines gefalteten Aushangs ragt zwischen den Seiten hervor.*"
+        "text": "*Wir treten vor dem Lehrerzimmer auf den Flur. Sie hält das Klassenbuch unter dem Arm und wartet, bis ich weiterrede.*"
     },
     "after_homeroom_freetalk": {
         "name": "Klassenlehrerin",
@@ -526,7 +523,7 @@
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*Ich verabschiede mich mit einem knappen Nicken und verlasse das Krankenzimmer. Der Geruch nach Desinfektionsmittel folgt mir bis auf den Flur.*"
+        "text": "*Ich halte beim Aufstehen inne. Die Schulkrankenschwester schaut auf die Uhr und dreht ihren Stuhl zu mir.*"
     },
     "after_nurse_freetalk": {
         "name": "Schulkrankenschwester",

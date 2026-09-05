@@ -58,7 +58,7 @@
     },
     "after5_farewell_yuna_5": {
         "name": "{name}",
-        "text": "*しおりには一行だけ書かれている。『楽しかった。』最後には、きちんと句点が打たれている。*"
+        "text": "*しおりの短い文を読み返す。「楽しかった」。最後の文字の下でインクが少しにじんでいる。*"
     },
     "after5_farewell_yuna_5b": {
         "name": "{name}",
@@ -167,7 +167,7 @@
     },
     "after5_last_chance_2_h": {
         "name": "{name}",
-        "text": "*手を差し出す。*"
+        "text": "*ソヨンが手を差し出す。*"
     },
     "after5_last_chance_2_i": {
         "name": "ソヨン",
@@ -255,10 +255,7 @@
         "name": "{name}",
         "text": "*ユナは目をそらさない。二人の距離は、あと一歩分まで縮まっている。*"
     },
-    "after5_last_chance_yuna_7": {
-        "name": "ユナ",
-        "text": "*本を抱えて待っている。返信欄にはまだ最初の一文字もない。*"
-    },
+    "after5_last_chance_yuna_7": {},
     "after5_last_chance_yuna_low_1": {
         "name": "{name}",
         "text": "ユナ。"
@@ -271,7 +268,7 @@
         "name": "{name}",
         "text": "*手のひらにスマホが食い込む。*",
         "choices": [
-            "今、言う",
+            "好きだと伝える",
             "まだ言わない",
             "今日はお互い、考える時間にしよう。"
         ]
@@ -282,12 +279,12 @@
     },
     "after5_confess_yes_2": {
         "name": "{name}",
-        "text": "言いたいことがあるんだ。"
+        "text": "好きだ。友達としてだけじゃなくて。遅くなったけど、自分の言葉で伝えたかった。"
     },
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "ソヨン",
-        "text": "*公園のほうへ並んで歩き出す。* 遅かった。でも、聞く。"
+        "text": "*公園へ並んで歩き出す。* 遅いよ。でも……気持ちは分かった。"
     },
     "after5_confess_react_seo_low": {
         "name": "ソヨン",
@@ -296,7 +293,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "ダイン",
-        "text": "*学校を出ながら、シューズの紐に一度視線を落とす。* ねえ、あんた。待ってはいたよ。最後まで話して。"
+        "text": "*校門を出ながら靴ひもを見下ろす。* ねえ、その言葉待ってた。もう知らないふりするのなしだからね。"
     },
     "after5_confess_react_dain_low": {
         "name": "ダイン",
@@ -305,7 +302,7 @@
     "after5_confess_aff_yuna": {},
     "after5_confess_react_yuna": {
         "name": "ユナ",
-        "text": "*並んで歩く。* ……知ってはいた。でも、聞くよ。"
+        "text": "*並んで歩く。* うん。今の言葉、ちゃんと聞いた。"
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",
@@ -539,7 +536,7 @@
     "after5_last_chance_dain_history_check": {},
     "after5_last_chance_dain_postponed": {
         "name": "ダイン",
-        "text": "昨日言えなかった続き、今日は最後まで聞く。"
+        "text": "昨日言えなかったこと、今日は最後まで言って。"
     },
     "after5_last_chance_dain_tentative": {
         "name": "ダイン",

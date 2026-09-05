@@ -59,10 +59,7 @@
         "name": "서연",
         "text": "내일 점심 옥상 열어놓을게"
     },
-    "night2_msg_generic_3": {
-        "name": "유나",
-        "text": "그 책, 다 읽었어?"
-    },
+    "night2_msg_generic_3": {},
     "night2_msg_7": {
         "name": "{name}",
         "text": "*메시지방 세 개가 차례로 열린다. 답장을 쓰기 전에 배터리 표시부터 한 칸 줄어든다.*"
@@ -76,10 +73,7 @@
             "유나에게 먼저 답장한다"
         ]
     },
-    "night2_reply_dain_1": {
-        "name": "{name}",
-        "text": "떡볶이 매웠어 ㅋㅋ"
-    },
+    "night2_reply_dain_1": {},
     "night2_reply_dain_2": {
         "name": "다인",
         "text": "매운 거 못 먹는 거야?"
@@ -132,25 +126,19 @@
         "name": "서연",
         "text": "ㅋ 알겠어. 내일 봐."
     },
-    "night2_reply_yuna_1": {
-        "name": "{name}",
-        "text": "아직 반 정도. 재밌어"
-    },
+    "night2_reply_yuna_1": {},
     "night2_reply_yuna_2": {
         "name": "유나",
-        "text": "다행이네"
+        "text": "응. 천천히 읽어."
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
         "text": "*답장창이 한동안 비어 있다. 그러다 새 말풍선이 올라온다.*"
     },
-    "night2_reply_yuna_4": {
-        "name": "유나",
-        "text": "아까 재생목록. 세 번째 곡도 들어봐"
-    },
+    "night2_reply_yuna_4": {},
     "night2_reply_yuna_5": {
         "name": "{name}",
-        "text": "*유나가 공유한 재생목록을 다시 연다. 세 번째 곡은 아까 함께 들은 곡보다 템포가 조금 빠르다.*"
+        "text": "*유나가 보낸 재생목록을 연다. 세 번째 곡 옆에서 재생 버튼이 깜빡인다.*"
     },
     "night2_reply_yuna_6": {
         "name": "유나",
@@ -224,7 +212,7 @@
     },
     "night2_flashback_1": {
         "name": "{name}",
-        "text": "*민수가 한 말이 자꾸 돌아온다. '서연이, 다인이, 유나. 셋 다 너한테 웃더라.'*"
+        "text": "*메시지에 답하려다 손을 멈춘다. 누구도 실망시키고 싶지 않다는 생각은 전 학교에서도 했었다.*"
     },
     "night2_flashback_2": {
         "name": "{name}",
@@ -240,7 +228,7 @@
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*갤러리를 닫고 사진 삭제 버튼 위에 손가락을 올렸다가 결국 화면을 끈다.*"
+        "text": "*사진 위의 삭제 버튼에 손가락을 올렸다가 화면을 끈다.*"
     },
     "night2_flashback_8": {
         "name": "{name}",
@@ -272,7 +260,7 @@
     },
     "night2_end_4_c": {
         "name": "{name}",
-        "text": "*밥이랑 계란, 김을 넣고 뚜껑을 닫는다. 반찬은 그게 전부다.*"
+        "text": "*밥과 계란말이, 김에 소시지 몇 개를 더 넣고 뚜껑을 닫는다. 완성한 도시락은 냉장고에 넣어 둔다.*"
     },
     "forced_violation_day2_after_seoyeon": {
         "name": "서연",
@@ -353,5 +341,37 @@
     "forced_violation_day2_nurse_excuse": {
         "name": "보건선생님",
         "text": "*보건선생님의 목소리가 더 낮아진다.* 오해라고 부르면 달라질 것 같아? 싫다는 의사를 무시한 건 사실이야."
+    },
+    "night2_reply_dain_1_established": {
+        "name": "{name}",
+        "text": "떡볶이 매웠어 ㅋㅋ"
+    },
+    "night2_reply_dain_1_first": {
+        "name": "{name}",
+        "text": "내일 매점에서 떡볶이 먹을까? 매운 건 잘 못 먹는데ㅋㅋ"
+    },
+    "night2_reply_yuna_1_established": {
+        "name": "{name}",
+        "text": "아직 반 정도. 재밌어"
+    },
+    "night2_reply_yuna_1_first": {
+        "name": "{name}",
+        "text": "내일 별관에 가면 책 하나 추천해줘."
+    },
+    "night2_reply_yuna_4_established": {
+        "name": "유나",
+        "text": "아까 재생목록. 세 번째 곡도 들어봐"
+    },
+    "night2_reply_yuna_4_first": {
+        "name": "유나",
+        "text": "재생목록 하나 보낼게. 세 번째 곡부터 들어봐."
+    },
+    "night2_msg_generic_3_established": {
+        "name": "유나",
+        "text": "그 책, 다 읽었어?"
+    },
+    "night2_msg_generic_3_first": {
+        "name": "유나",
+        "text": "요즘 무슨 책 읽어?"
     }
 }

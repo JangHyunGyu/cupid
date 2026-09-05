@@ -21,11 +21,11 @@
     },
     "tour_seo_3": {
         "name": "{name}",
-        "text": "Damals habe ich gesagt: ‚Was für eine Ehre‘ — und wäre beinahe ausgeschimpft worden."
+        "text": "Bei unserer ersten Begrüßung war ich so nervös, dass ich kaum wusste, was ich sagen sollte."
     },
     "tour_seo_4": {
         "name": "Seoyeon",
-        "text": "Ich hab dich doch nicht ausgeschimpft. Seit damals beobachte ich dich."
+        "text": "Wirklich? Gegrüßt hast du trotzdem immer. Du bist mir von Anfang an aufgefallen."
     },
     "tour_seo_5": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Sie legt eine Hand auf das Geländer des Dachs und sieht auf die Schule hinunter.* Ich hätte nicht gedacht, dass wir auch die letzte Mittagspause hier verbringen."
+        "text": "*Nach dem Rundgang gehen wir aufs Dach. Seoyeon legt eine Hand aufs Geländer.* Selbst beim Schulfest essen wir am Ende hier zu Mittag."
     },
     "tour_seo_end": {
         "name": "{name}",
@@ -105,7 +105,7 @@
     },
     "tour_yuna_6": {
         "name": "Yuna",
-        "text": "*Sie holt das Notizbuch aus ihrer Tasche, das sie auf dem Dachboden so hastig zugeklappt hatte.*"
+        "text": "*Sie holt ein neues Heft hervor. An den Rändern sieht man, wo sie den früheren Entwurf überarbeitet und übertragen hat.*"
     },
     "tour_yuna_7": {
         "name": "Yuna",
@@ -113,7 +113,7 @@
     },
     "tour_yuna_8": {
         "name": "{name}",
-        "text": "Du hast damals gesagt: ‚Wenn du das Ende schreibst, ist es vorbei.‘"
+        "text": "Wie fühlt es sich an, bis zum Ende geschrieben zu haben?"
     },
     "tour_yuna_9": {
         "name": "Yuna",
@@ -133,7 +133,7 @@
     },
     "tour_yuna_end": {
         "name": "Yuna",
-        "text": "Mein einziger Leser. Vorerst."
+        "text": "Der erste Leser des Endes. Den Platz habe ich für dich freigehalten."
     },
     "tour_yuna_end_2": {
         "name": "{name}",

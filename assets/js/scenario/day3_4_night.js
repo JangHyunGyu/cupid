@@ -27,10 +27,21 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "branches": [
-            { "condition": "seoyeon_day3_event", "next": "night3_faithful_msg_seo_1" },
-            { "condition": "yuna_day3_event", "next": "night3_faithful_msg_yuna_1" },
-            { "condition": "dain_day3_event", "next": "night3_faithful_msg_dain_1" },
-            { "next": "night3_dream_1" }
+            {
+                "condition": "seo_trust_deep",
+                "next": "night3_faithful_msg_seo_1"
+            },
+            {
+                "condition": "yuna_trust_deep",
+                "next": "night3_faithful_msg_yuna_1"
+            },
+            {
+                "condition": "dain_trust_deep",
+                "next": "night3_faithful_msg_dain_1"
+            },
+            {
+                "next": "night3_dream_1"
+            }
         ]
     },
     "night3_faithful_msg_seo_1": {
@@ -124,14 +135,12 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "night3_faithful_reflect_4_b"
     },
     "night3_faithful_reflect_4_b": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
-        "next": "night3_faithful_reflect_4_c"
+        "next": "night3_faithful_reflect_4_c",
+        "routeBeforeRender": true
     },
     "night3_faithful_reflect_4_c": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
-        "next": "night3_dream_3"
+        "next": "night3_dream_3",
+        "routeBeforeRender": true
     },
     "night3_dream_3": {
         "background": "assets/images/background/room_my.png",
