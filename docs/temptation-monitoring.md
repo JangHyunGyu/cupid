@@ -39,8 +39,13 @@
 Harem 저장소에서 실행한다. 조회 파일은 이 Cupid 저장소의 `scripts/sql/temptation-monitoring.sql`.
 
 ```powershell
-npx.cmd --no-install wrangler d1 execute archerlab_db --remote --file C:/workspace/cupid/scripts/sql/temptation-monitoring.sql --json
+$queryPath = 'C:/workspace/cupid/scripts/sql/temptation-monitoring.sql'
+$query = (Get-Content -LiteralPath $queryPath -Encoding UTF8 | Where-Object { $_ -notmatch '^\s*--' }) -join ' '
+npx.cmd --no-install wrangler d1 execute archerlab_db --remote --command $query --json
 ```
+
+`--file`은 SQL 가져오기 요약만 반환할 수 있으므로, 집계 결과를 읽을 때는 위처럼
+주석을 제거한 SQL을 `--command`로 전달한다.
 
 최근 7일 기준. 관찰 기간을 바꿀 때 SQL의 `-7 days`를 바꾼다. 회차별 집계를 기본으로 하고,
 기기 수를 사용자 수와 동일시하지 않는다. 프리토킹 기록이 있는 기기만 분모로 사용하지 않는다.
