@@ -134,7 +134,7 @@
     },
     "hidden_true_homeroom_4": {
         "name": "Profesora",
-        "text": "*Revisa primero el nombre y luego la foto de la tarjeta de acceso de la empresa.* De verdad estás construyendo tu propia vida."
+        "text": "*Sonríe al ver mi acreditación.* ¿Qué tal te va en el trabajo?"
     },
     "hidden_true_homeroom_4_b": {
         "name": "{name}",
@@ -319,7 +319,7 @@
     },
     "hidden_true_nurse_2_b": {
         "name": "{name}",
-        "text": "*Sobre la mesa hay dos tarjetas de acceso de empresas distintas. En una aparece una notificación de autorización para trabajar horas extra; en la otra, el informe de cierre del evento de salud.*"
+        "text": "*Suenan los dos móviles sobre la mesa. Uno muestra la aprobación de unas horas extra; el otro, el informe de cierre del evento de salud.*"
     },
     "hidden_true_nurse_2_c": {
         "name": "Enfermera",
@@ -363,7 +363,7 @@
     },
     "hidden_true_nurse_5_f": {
         "name": "Enfermera",
-        "text": "*Golpea dos veces con un dedo el asa de la taza.* Sí. Y las vendas deben ponerse en menos de tres minutos."
+        "text": "*Golpetea el asa de la taza con un dedo.* Sí. La próxima vez, hablemos sin mirar el reloj."
     },
     "hidden_true_nurse_6": {
         "name": "Enfermera",
@@ -415,11 +415,11 @@
     },
     "hidden_true_nurse_8_g": {
         "name": "Enfermera",
-        "text": "Sí. No porque alguien me retuviera, sino porque yo lo decidí. Igual que venir hoy."
+        "text": "Sí. Me quedé porque quería seguir haciendo este trabajo. Y volver a verte también fue decisión mía."
     },
     "hidden_true_nurse_8_h": {
         "name": "{name}",
-        "text": "Entonces vendré también la semana que viene. Porque yo quiero. *Antes de que termine la película, Juwon se queda dormida con la cabeza apoyada en el hombro de {name}.*"
+        "text": "Yo también quiero volver a verte la semana que viene. *Antes de que termine la película, Juwon se duerme apoyada en el hombro de {name}.*"
     },
     "hidden_good_nurse_1": {
         "name": "Enfermera",
@@ -611,7 +611,7 @@
     },
     "true_epilogue_1_seo": {
         "name": "{name}",
-        "text": "*Cinco días. Eso fue lo que tardé en memorizar dónde estaba cada cosa sobre el escritorio de Seoyeon.*"
+        "text": "*Era la primera vez que entraba en la habitación de Seoyeon, pero reconocía muchas cosas de su escritorio.*"
     },
     "ending_aff_check_yuna": {
         "name": "Sistema",
@@ -672,7 +672,7 @@
     },
     "bitter_yuna_3": {
         "name": "{name}",
-        "text": "*Salgo por la puerta de la escuela. Está lloviendo. En el buzón hay una nota de Yuna, la última. Es corta. La parte inferior del papel está manchada por la lluvia.*"
+        "text": "*Cruzo la entrada bajo la lluvia y vuelvo a abrir la última nota de Yuna. La tinta se ha corrido por la parte de abajo.*"
     },
     "true_yuna_1": {
         "name": "{name}",
@@ -722,7 +722,7 @@
     },
     "true_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*Cinco días. Eso fue lo que tomó escuchar la voz de Yuna más allá de las notas.*"
+        "text": "*Ahora Yuna me decía en voz alta cosas que antes dejaba en sus notas.*"
     },
     "ending_aff_check_dain": {
         "name": "Sistema",
@@ -835,7 +835,7 @@
     },
     "true_dain_6": {
         "name": "Dain",
-        "text": "No sé. Probaré las dos y elegiré la que me resulte más divertida."
+        "text": "Sí. Voy a seguir con la rehabilitación y también quiero probar lo de las retransmisiones."
     },
     "true_dain_7": {
         "name": "{name}",
@@ -855,7 +855,7 @@
     },
     "true_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Aquel día, por primera vez, Dain dijo la fecha de su próxima consulta en lugar de «Estoy bien».*"
+        "text": "*Aquel día, en vez de decir que estaba bien, Dain me contó cuándo era su próxima cita médica.*"
     },
     "true_epilogue_2": {
         "name": "{name}",
@@ -928,7 +928,7 @@
     },
     "day5_ending_confess_fail": {
         "name": "{name}",
-        "text": "*Camino hasta el parque y por fin consigo decirlo. Mientras espero una respuesta, no aparto la vista de la punta de mis zapatos.*"
+        "text": "*Después de confesarle lo que siento, caminamos juntos hasta el parque. Miro la punta de mis zapatos mientras espero su respuesta.*"
     },
     "confess_fail_cg_seo": {
         "name": "Seoyeon",
@@ -1028,7 +1028,7 @@
     },
     "good_1_yuna": {
         "name": "Yuna",
-        "text": "Te tardaste. Aun así, leí tu frase hasta el final."
+        "text": "Has tardado. Pero gracias por decírmelo todo."
     },
     "good_1_yuna_b": {
         "name": "Yuna",
@@ -1085,7 +1085,7 @@
     },
     "good_5_dain": {
         "name": "{name}",
-        "text": "*Dain extiende primero el puño y espera. En el folleto de rehabilitación que sostiene con la otra mano están anotados el horario del próximo paseo y «Yo marco el ritmo».*"
+        "text": "*Dain me tiende el puño y espera. En el folleto de rehabilitación que tengo en la mano figuran la hora del próximo paseo y una nota: «El ritmo lo marco yo».*"
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
@@ -1247,14 +1247,8 @@
         "name": "{name}",
         "text": "*La azotea. Junto a la puerta abierta queda el hueco de una maceta.*"
     },
-    "day5_yuna_ending_freetalk_intro": {
-        "name": "{name}",
-        "text": "*Después del epílogo, vuelven a sentarse juntos en el tranquilo anexo de la escuela.*"
-    },
-    "day5_dain_ending_freetalk_intro": {
-        "name": "{name}",
-        "text": "*Después de la última escena, un balón rebota una vez en el gimnasio de siempre.*"
-    },
+    "day5_yuna_ending_freetalk_intro": {},
+    "day5_dain_ending_freetalk_intro": {},
     "day5_teacher_ending_freetalk_intro": {
         "name": "{name}",
         "text": "*Sobre la mesa de la cafetería descansan un manuscrito terminado y dos cafés.*"
@@ -1304,7 +1298,7 @@
     },
     "day5_seo_ending_freetalk_late_good": {
         "name": "Seoyeon",
-        "text": "*Reduce el paso en el parque hasta caminar a su lado.* Esperaste al último día. De ahora en adelante, no dejemos las palabras para tan tarde.",
+        "text": "*Afloja el paso por el parque.* Por fin me lo has dicho. La próxima vez no tardes tanto.",
         "context": "Conversación extra después del GOOD END obtenido al confesarle tarde a Seoyeon en la última oportunidad del día 5. El protagonista esperó durante el día 4 y la confesión del último día fue aceptada, por lo que la relación acaba de empezar. No cambies el momento de la confesión al día 4 ni actúes como si llevaran mucho tiempo juntos; continúa la siguiente conversación de dos personas que empezaron tarde.",
         "personality": "Seoyeon no toma a la ligera la confesión tardía, pero responde con responsabilidad a la decisión que aceptó. Revisa con calma las palabras que ambos dejaron pasar y muestra la esperanza cautelosa y el pequeño alivio propios de una relación que acaba de empezar."
     },
@@ -1338,7 +1332,7 @@
     },
     "day5_yuna_ending_freetalk_late_good": {
         "name": "Yuna",
-        "text": "*Dobla la nota sobre la confesión del último día y la usa como marcapáginas.* Llegó tarde, pero la leí. Escribamos juntos la siguiente.",
+        "text": "*Coloca el marcapáginas y cierra el libro.* Gracias por decírmelo. La próxima vez también hablaré yo primero.",
         "context": "Conversación extra después del GOOD END obtenido al confesarle tarde a Yuna en la última oportunidad del día 5. El protagonista esperó durante el día 4 y solo expresó sus sentimientos el último día, por lo que la relación acaba de empezar. No cambies el momento de la confesión ni actúes como si llevaran mucho tiempo juntos.",
         "personality": "Yuna acepta con cautela la sinceridad que llegó tarde y toma la iniciativa con pequeñas preguntas para no volver a perder la oportunidad en el silencio. Muestra a la vez la timidez y la esperanza prudente de una relación nueva."
     },
@@ -1372,7 +1366,7 @@
     },
     "day5_dain_ending_freetalk_late_good": {
         "name": "Dain",
-        "text": "*Recuerda la confesión del último día, ofrece el puño y sonríe.* ¡Tarde, pero a tiempo! Ya no pospongamos lo importante, ¿de acuerdo?",
+        "text": "*Me tiende el puño sonriendo.* ¡Tarde, pero a tiempo! Ahora nada de seguir aplazándolo, ¿eh?",
         "context": "Conversación extra después del GOOD END obtenido al confesarle tarde a Dain en la última oportunidad del día 5. El protagonista esperó durante el día 4 y la confesión del último día fue aceptada, por lo que la relación acaba de empezar. No la conviertas en una relación que ya existía y sigue respetando la rehabilitación y el ritmo que Dain eligió.",
         "personality": "Dain acepta con humor la confesión tardía, pero deja claro que habla en serio cuando pide que no vuelvan a postergar las palabras. Trata con franqueza la emoción, la incomodidad que aún queda y su propio ritmo físico y afectivo dentro de la relación que acaba de empezar."
     },
@@ -1388,7 +1382,7 @@
     },
     "day5_teacher_ending_freetalk_true_love": {
         "name": "Profesora",
-        "text": "*En la librería, después de la charla literaria, abre la pantalla de contactos y la muestra.* ¿Volvemos a conocernos poco a poco, empezando por quien eres ahora y no por mi antiguo estudiante?",
+        "text": "*Tras la charla en la librería, me muestra la pantalla de contactos.* La próxima vez me cuentas más de cómo te va. O ahora, si tienes un rato.",
         "context": "Conversación extra inmediatamente después del TRUE LOVE END de la profesora. Durante cuatro años después de la graduación no hubo contacto privado. El protagonista, ahora un adulto independiente con trabajo, y su antigua profesora, ahora escritora, se reencontraron en una charla literaria. Ambos están empezando a aprender de nuevo sus nombres y contactos y prometieron un próximo encuentro. No los adelantes como si ya llevaran mucho tiempo en pareja.",
         "personality": "Ella da por terminada con claridad la antigua relación de poder y conoce con cautela a la persona adulta que tiene delante en el presente. Expresa su interés con sinceridad, pero confirma que la otra persona pueda elegir, y mantiene la prudencia y la emoción propias de una relación nueva."
     },
@@ -1410,7 +1404,7 @@
     },
     "day5_nurse_ending_freetalk_perfect": {
         "name": "Enfermera",
-        "text": "*Riega el romero junto a la ventana de la casa que eligieron y deja libre el asiento de enfrente.* Hoy todo está bien. ¿Hablamos de nosotros?",
+        "text": "*Riega el romero junto a la ventana de la casa que elegimos juntos y acerca una silla.* ¿Qué tal el día? Siéntate. Yo también tengo cosas que contarte.",
         "context": "Conversación extra después del PERFECT END de la enfermera. Cinco años después de la graduación, dos adultos independientes se reencontraron en un evento local de salud y, tras varias citas y una mañana juntos, se convirtieron en una pareja en igualdad de condiciones. Ahora tienen un calendario compartido, una casa que eligieron juntos y una maceta de romero. No regreses a un romance situado en la época en que eran enfermera escolar y estudiante menor de edad.",
         "personality": "Juwon es una pareja actual práctica y cariñosa que no convierte el cuidado en control ni en un diagnóstico. Respeta la vida y las decisiones de ambos y comparte con naturalidad un humor relajado, un afecto familiar y las comprobaciones necesarias."
     },
@@ -1747,7 +1741,7 @@
     },
     "co_bitter_dain_2": {
         "name": "Dain",
-        "text": "La pareja de aquel día. La borré yo, ¿no?"
+        "text": "Aquel día borré tu nombre de la lista. Todavía no quiero volver a ponerlo."
     },
     "co_bitter_dain_3": {
         "name": "{name}",
@@ -1759,7 +1753,7 @@
     },
     "co_bitter_teacher_2": {
         "name": "Profesora",
-        "text": "Sigo viendo aquella pantalla. Dejemos aquí lo de la crítica."
+        "text": "Enhorabuena por graduarte. Comprueba que estén todos los documentos. Cuídate."
     },
     "co_bitter_teacher_3": {
         "name": "{name}",
@@ -1771,11 +1765,11 @@
     },
     "co_bitter_nurse_2": {
         "name": "Enfermera",
-        "text": "Pasé la ficha. Aquel día no quedó en el registro."
+        "text": "He terminado el registro de la consulta. Pide otra cita si necesitas ayuda."
     },
     "co_bitter_nurse_3": {
         "name": "{name}",
-        "text": "*En el alféizar hay un vaso vacío en vez de una tarjeta. Al fondo del pasillo no levanta la mano.*"
+        "text": "*La enfermera retira la taza vacía y vuelve al escritorio. Me despido desde la puerta y me marcho.*"
     },
     "forced_violation_resume": {
         "name": "Sistema",

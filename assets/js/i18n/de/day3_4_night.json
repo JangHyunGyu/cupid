@@ -53,7 +53,7 @@
     },
     "night3_dream_2_b": {
         "name": "{name}",
-        "text": "*Ich schließe die Notiz-App. Noch gibt es keinen Satz, den ich morgen verschicken könnte.*"
+        "text": "*Ich lege das Handy weg. Noch weiß ich nicht, was ich morgen sagen soll.*"
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
@@ -65,7 +65,7 @@
     },
     "night3_faithful_reflect_2_c": {
         "name": "{name}",
-        "text": "*Eine Sekunde lang starre ich auf den Bildschirm. Sojeongs beschmierter Tisch und die achtunddreißig Morgen, an denen ich weggesehen habe, kehren einer nach dem anderen zurück.*"
+        "text": "*Ich sehe einen Moment auf den Bildschirm. Die Kritzeleien auf Sojeongs Tisch fallen mir wieder ein und die Morgen, an denen ich weggesehen habe.*"
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
@@ -139,7 +139,7 @@
     },
     "night3_cheat_msg_7": {
         "name": "Yuna",
-        "text": "*Von Yuna erscheinen drei Sprechblasen direkt hintereinander.*"
+        "text": "*Ich lese Yunas Nachrichten noch einmal. Mein Finger schwebt kurz über dem Antwortfeld, dann ziehe ich ihn zurück.*"
     },
     "night3_nightmare_1": {
         "name": "{name}",
@@ -155,7 +155,7 @@
     },
     "night3_nightmare_3_b": {
         "name": "{name}",
-        "text": "*Unter den drei Zeilen von Yuna steht nur die Lesebestätigung.*"
+        "text": "*Unter Yunas Nachrichten steht nur die Lesebestätigung.*"
     },
     "night3_nightmare_4": {
         "name": "{name}",
@@ -216,7 +216,7 @@
     },
     "night3_cheat_reflect_3_d": {
         "name": "{name}",
-        "text": "*Im Chat mit Minsu wartet eine Antwort: ‚Nur weil du es aufschiebst, verschwindet es nicht.‘*"
+        "text": "*Minsu hat geschrieben: „Vom Aufschieben geht das nicht weg.“*"
     },
     "night3_cheat_reflect_3_e": {
         "name": "{name}",

@@ -138,7 +138,7 @@
     },
     "lunch3_dain_skin_3": {
         "name": "Dain",
-        "text": "Isso aí não conta!!"
+        "text": "…Fiquei com mais vergonha do que eu esperava."
     },
     "lunch3_give_dain_2": {
         "name": "Seoyeon",
@@ -164,11 +164,11 @@
     },
     "lunch3_yuna_skin_2": {
         "name": "Yuna",
-        "text": "...Isso não tem a ver com o bilhete. Eu só quis."
+        "text": "Quando te agradeci antes, foi de verdade."
     },
     "lunch3_yuna_skin_3": {
         "name": "{name}",
-        "text": "*Ela não acrescenta nada depois de «porque sim». Só então solta a ponta do papel.*"
+        "text": "*Yuna solta a ponta do papel. Dobro o bilhete e o guardo com cuidado.*"
     },
     "lunch3_give_yuna_2": {
         "name": "Seoyeon",
@@ -202,10 +202,7 @@
         "name": "{name}",
         "text": "*A ponta dos hashis de Seoyeon pressiona a borda da marmita. Yuna olha para Dain sem soltar a embalagem de pão que abria.*"
     },
-    "lunch3_expose_5": {
-        "name": "Seoyeon",
-        "text": "Espera."
-    },
+    "lunch3_expose_5": {},
     "lunch3_expose_6": {
         "name": "Seoyeon",
         "text": "Espera. Quer dizer que tem mais de um encontro?"
@@ -278,7 +275,7 @@
     },
     "lunch3_expose_honest_7": {
         "name": "{name}",
-        "text": "*Não há ponto de exclamação. O final da frase de Dain é estranhamente tranquilo.*"
+        "text": "*Dain responde poucas palavras e desvia o olhar. A animação de antes desapareceu.*"
     },
     "lunch3_expose_excuse_1": {
         "name": "{name}",

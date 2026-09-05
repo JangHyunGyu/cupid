@@ -402,7 +402,7 @@ function generate() {
     output.push(MARKER_START);
     output.push('');
     output.push('> 아래 시나리오 섹션은 `node generate-scenario.js`로 자동 생성되었습니다.');
-    output.push('> 수정 후 `node parse-scenario.js`로 코드를 재생성할 수 있습니다.');
+    output.push('> 분기는 `assets/js/scenario/`, 문구는 `assets/js/i18n/{언어}/`에서 수정합니다. 7개 언어를 반영한 뒤 `npm run scenario:sync`로 이 문서를 갱신하고 `npm run scenario:check`로 동기화를 확인합니다.');
     output.push('');
 
     let currentDay = 0;

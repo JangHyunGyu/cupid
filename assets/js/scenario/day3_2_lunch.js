@@ -488,9 +488,8 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "lunch3_expose_5"
     },
     "lunch3_expose_5": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_sad.png",
-        "next": "lunch3_expose_6"
+        "next": "lunch3_expose_6",
+        "routeBeforeRender": true
     },
     "lunch3_expose_6": {
         "background": "assets/images/background/room_school.png",

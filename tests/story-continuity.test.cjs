@@ -233,3 +233,165 @@ test('the same invitation flag recalls school supervision or romance according t
         }
     }
 });
+
+
+test('editing removes repeated beats without losing legacy save destinations or rewards', () => {
+    const all = scenarios();
+    const expectedRoutes = {
+        "lunch_seo_after_7": {
+            "next": "lunch_seo_freetalk"
+        },
+        "after_kakao_5": {
+            "next": "after_kakao_end"
+        },
+        "after_nurse_enter_11_j": {
+            "next": "after_nurse_enter_11_k"
+        },
+        "hidden_homeroom_d2_8_f": {
+            "next": "hidden_homeroom_d2_9"
+        },
+        "lunch2_seo_c2_3": {
+            "next": "lunch2_seo_end_c2"
+        },
+        "after2_seo_sunset_joke_b": {
+            "next": "after2_seo_sunset_react"
+        },
+        "after2_seo_sunset_react_b": {
+            "next": "after2_seo_9"
+        },
+        "night2_msg_1": {
+            "branches": [
+                {
+                    "condition": "chose_dain_after2",
+                    "next": "night2_msg_dain_specific"
+                },
+                {
+                    "condition": "chose_seo_after2",
+                    "next": "night2_msg_seo_specific"
+                },
+                {
+                    "condition": "chose_yuna_after2",
+                    "next": "night2_msg_yuna_specific"
+                },
+                {
+                    "next": "night2_msg_generic"
+                }
+            ]
+        },
+        "night2_end_2_b": {
+            "next": "night2_end_3_b"
+        },
+        "hidden_nurse_d3_3_c": {
+            "next": "hidden_nurse_d3_3_d"
+        },
+        "hidden_nurse_d3_3_d": {
+            "next": "hidden_nurse_d3_4"
+        },
+        "lunch3_expose_5": {
+            "next": "lunch3_expose_6"
+        },
+        "after5_farewell_seo_high_1": {
+            "next": "after5_farewell_seo_high_2"
+        },
+        "lunch2_dain_end_q": {
+            "next": "lunch2_dain_end_r"
+        },
+        "day5_yuna_ending_freetalk_intro": {
+            "next": "day5_yuna_ending_freetalk_router"
+        },
+        "day5_dain_ending_freetalk_intro": {
+            "next": "day5_dain_ending_freetalk_router"
+        },
+        "hidden_nurse_d5_2_b": {
+            "next": "hidden_nurse_d5_2_c"
+        },
+        "hidden_nurse_d5_2_c": {
+            "next": "hidden_nurse_d5_3"
+        },
+        "hidden_nurse_d5_3_d": {
+            "next": "hidden_nurse_d5_3_e"
+        },
+        "hidden_nurse_d5_3_e": {
+            "next": "hidden_nurse_d5_3_f"
+        },
+        "hidden_nurse_d5_3_g": {
+            "next": "hidden_nurse_d5_3_h"
+        },
+        "hidden_nurse_d5_3_h": {
+            "next": "hidden_nurse_d5_3_i"
+        },
+        "hidden_nurse_d5_3_i": {
+            "next": "hidden_nurse_d5_4"
+        }
+    };
+    for (const [id, route] of Object.entries(expectedRoutes)) {
+        assert.deepEqual(JSON.parse(JSON.stringify(all[id])), { ...route, routeBeforeRender: true }, id);
+    }
+    for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+        const copy = {};
+        const dir = path.join(root, 'assets/js/i18n', lang);
+        for (const file of fs.readdirSync(dir).filter(f => /^day[1-5]_/.test(f))) {
+            Object.assign(copy, JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8')));
+        }
+        for (const id of Object.keys(expectedRoutes)) assert.deepEqual(copy[id], {}, lang + ':' + id);
+    }
+});
+
+test('night-two branch routing still delivers music only when Yuna actually played it', () => {
+    const { window, state, context } = runtime();
+    vm.runInContext(read('assets/js/modules/SceneRenderer.js'), context);
+    const renderer = new window.SceneRenderer(state, {}, {});
+    const scene = scenarios().night2_msg_1;
+    assert.equal(scene.routeBeforeRender, true);
+    state.flags = {};
+    assert.equal(renderer.resolveNextScene(scene), 'night2_msg_generic');
+    for (const [flag, target] of [
+        ['chose_dain_after2', 'night2_msg_dain_specific'],
+        ['chose_seo_after2', 'night2_msg_seo_specific'],
+        ['chose_yuna_after2', 'night2_msg_yuna_specific']
+    ]) {
+        state.flags = { [flag]: true };
+        assert.equal(renderer.resolveNextScene(scene), target);
+    }
+});
+
+test('first-week continuity preserves unsent apologies, injury limits and spoken confessions', () => {
+    const ko = {};
+    for (const file of fs.readdirSync(path.join(root, 'assets/js/i18n/ko')).filter(f => /^day[1-5]_/.test(f))) {
+        Object.assign(ko, JSON.parse(read('assets/js/i18n/ko/' + file)));
+    }
+    assert.match(ko.night3_nightmare_end.text, /아직 보내지는 않았다/);
+    assert.match(ko.day4_caught_fallout_1.text, /입력창에 남아/);
+    assert.doesNotMatch(ko.day4_caught_fallout_1.text, /읽음/);
+    assert.doesNotMatch(ko.day4_harem_fallout_3.text, /컵/);
+    assert.match(ko.wall_dain_21.text, /걷는 것도 아팠/);
+    assert.doesNotMatch(ko.wall_dain_21.text, /뛰어다니/);
+    for (const id of ['wall_seo_glimpse_2', 'wall_yuna_dain_tempt_2', 'day4_student_counteroffer_soft_dain']) {
+        assert.doesNotMatch(ko[id].text, /열 번|토스/);
+    }
+    assert.match(ko.true_dain_6.text, /재활은 계속/);
+    assert.match(ko.after5_confess_react_yuna_low.text, /들었어/);
+    assert.doesNotMatch(ko.after5_confess_react_yuna_low.text, /읽었어/);
+    assert.match(ko.morning5_caught_dain_honest.text, /기다린다고/);
+    assert.match(ko.day4_night_regret_msg_dain.text, /기다리고 있어/);
+    for (const id of ['morning5_mood_high', 'morning5_mood_mid', 'morning5_mood_low', 'tour_yuna_freetalk', 'tour_dain_freetalk']) {
+        assert.doesNotMatch(ko[id].text, /마지막/);
+    }
+});
+
+test('persistent event memories stay dated and remember the completed public workshop', () => {
+    const context = { window: {} };
+    vm.runInNewContext(read('assets/js/prompts.js'), context);
+    const get = flag => context.window.FLAG_MEMORIES.find(entry => entry.flag === flag);
+    for (const flag of ['datedDainDay1', 'helpedSeoyeon', 'day2_ate_lunch_seoyeon', 'visitedWarehouseAtLunch', 'day2_dain_bet']) {
+        assert.doesNotMatch(get(flag).ko, /오늘|어제/, flag);
+        assert.doesNotMatch(get(flag).en, /today|yesterday/i, flag);
+    }
+    for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+        assert.ok(get('homeroom_day4')[lang]?.trim());
+        assert.ok(get('nurse_day3')[lang]?.trim());
+    }
+    assert.match(get('homeroom_day4').ko, /다른 부원들도 참석/);
+    assert.doesNotMatch(get('homeroom_day4').ko, /합평에 낼/);
+    assert.doesNotMatch(get('nurse_day3').ko, /예약한/);
+});

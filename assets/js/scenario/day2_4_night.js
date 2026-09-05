@@ -16,14 +16,24 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "night2_msg_1"
     },
     "night2_msg_1": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
         "branches": [
-            { "condition": "chose_dain_after2", "next": "night2_msg_dain_specific" },
-            { "condition": "chose_seo_after2", "next": "night2_msg_seo_specific" },
-            { "condition": "chose_yuna_after2", "next": "night2_msg_yuna_specific" },
-            { "next": "night2_msg_generic" }
-        ]
+            {
+                "condition": "chose_dain_after2",
+                "next": "night2_msg_dain_specific"
+            },
+            {
+                "condition": "chose_seo_after2",
+                "next": "night2_msg_seo_specific"
+            },
+            {
+                "condition": "chose_yuna_after2",
+                "next": "night2_msg_yuna_specific"
+            },
+            {
+                "next": "night2_msg_generic"
+            }
+        ],
+        "routeBeforeRender": true
     },
     "night2_msg_dain_specific": {
         "background": "assets/images/background/room_my.png",
@@ -519,9 +529,8 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "night2_end_2_b"
     },
     "night2_end_2_b": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
-        "next": "night2_end_3_b"
+        "next": "night2_end_3_b",
+        "routeBeforeRender": true
     },
     "night2_end_3_b": {
         "background": "assets/images/background/room_my.png",

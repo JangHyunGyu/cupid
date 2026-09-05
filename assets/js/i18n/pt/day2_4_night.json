@@ -3,10 +3,7 @@
         "name": "{name}",
         "text": "*Cheguei em casa. Tomei banho e deitei na cama quando — notificações do mensageiro começam a pipocar. Três pessoas. Ao mesmo tempo.*"
     },
-    "night2_msg_1": {
-        "name": "{name}",
-        "text": "*Chegaram mensagens de três pessoas.*"
-    },
+    "night2_msg_1": {},
     "night2_msg_dain_specific": {
         "name": "Dain",
         "text": "Ei, o tteokbokki de hoje estava delicioso."
@@ -29,11 +26,11 @@
     },
     "night2_msg_yuna_specific": {
         "name": "Yuna",
-        "text": "...Aquela música de hoje. Era boa"
+        "text": "O que achou da música que toquei para você hoje?"
     },
     "night2_msg_yuna_specific_2": {
         "name": "Yuna",
-        "text": "Vamos ouvir de novo na próxima vez."
+        "text": "Da próxima vez, me mostra alguma de que você goste também."
     },
     "night2_msg_dain_general": {
         "name": "Dain",
@@ -129,7 +126,7 @@
     "night2_reply_yuna_1": {},
     "night2_reply_yuna_2": {
         "name": "Yuna",
-        "text": "Tá. Leia com calma."
+        "text": "Tá. Também quero saber o que você acha."
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
@@ -167,7 +164,7 @@
     "night2_dain_freetalk": {
         "name": "Dain",
         "text": "Espera, antes de você dormir. O que foi mais divertido hoje?",
-        "context": "É a noite do segundo dia após a transferência, e Dain e o protagonista estão relembrando o dia por mensagens. O tempo que passaram juntos hoje e as mensagens que acabaram de trocar são fatos já ocorridos. Eles ainda não são namorados, e a conversa acontece pelo celular, não pessoalmente. Não descreva Dain aparecendo de repente nem os dois no mesmo cômodo.",
+        "context": "[Meio: mensagens de celular] Na segunda noite após a transferência, Dain e o aluno conversam sobre o dia. Só recordar lugares ou atividades compartilhados se os eventos salvos confirmarem. Continuar a troca de mensagens; eles ainda não são um casal.",
         "personality": "Dain é uma jogadora de vôlei franca e de reações rápidas. Sua energia aparece até nas mensagens, mas ela não pressiona a outra pessoa a responder. Quando se interessa por alguém, demonstra isso naturalmente com brincadeiras e perguntas diretas."
     },
     "night2_seo_freetalk": {
@@ -179,7 +176,7 @@
     "night2_yuna_freetalk": {
         "name": "Yuna",
         "text": "Espere. Se você ainda estiver acordado... quer conversar só mais um pouco?",
-        "context": "É a noite do segundo dia após a transferência, e Yuna e o protagonista continuam uma conversa tranquila por mensagens. As lembranças de hoje no anexo e relacionadas ao livro, assim como as mensagens que acabaram de trocar, são fatos já ocorridos. Eles ainda não são namorados e estão construindo confiança com cautela. Como conversam pelo celular, não transforme a cena em um encontro presencial em que se veem ou se tocam.",
+        "context": "[Meio: mensagens de celular] Na segunda noite após a transferência, a conversa com Yuna continua em tom tranquilo. Lembrar de livros emprestados, visitas ao anexo e músicas compartilhadas apenas conforme os eventos salvos e as mensagens recentes confirmarem. Eles ainda não são um casal e estão em lugares diferentes.",
         "personality": "Yuna é uma leitora cautelosa e observadora. Escolhe bem as palavras antes de enviar uma mensagem e, conforme se sente mais à vontade, começa a compartilhar pouco a pouco seus gostos e dúvidas. Não interpreta o silêncio como ansiedade e respeita o ritmo da outra pessoa."
     },
     "night2_hidden_check": {
@@ -246,10 +243,7 @@
         "name": "{name}",
         "text": "*Os três nomes se acumulam, um após o outro, na tela de bloqueio. Leio todas as notificações, desligo a tela e volto a ligá-la.*"
     },
-    "night2_end_2_b": {
-        "name": "{name}",
-        "text": "*Duas notificações não lidas se acumulam acima da mensagem de Minsu.*"
-    },
+    "night2_end_2_b": {},
     "night2_end_3_b": {
         "name": "{name}",
         "text": "*Mesmo depois que a tela apaga, continuo segurando o celular do mesmo jeito.*"

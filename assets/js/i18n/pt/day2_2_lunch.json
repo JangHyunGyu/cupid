@@ -119,7 +119,7 @@
     },
     "lunch2_seo_13b_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon aproxima a marmita de {name}.* O lugar pode estar vazio, mas o compromisso não."
+        "text": "*Seoyeon aproxima a marmita de {name}.* Pode sentar. Só deixa a gente terminar a conversa."
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
@@ -192,12 +192,9 @@
     },
     "lunch2_seo_c2_2": {
         "name": "Seoyeon",
-        "text": "...Limpando assim, só espalha."
+        "text": "Usa o lenço umedecido."
     },
-    "lunch2_seo_c2_3": {
-        "name": "Seoyeon",
-        "text": "*As mãos dela escorregam duas vezes ao alinhar a tampa da marmita. Na terceira tentativa, ela a fecha com um clique.*"
-    },
+    "lunch2_seo_c2_3": {},
     "lunch2_seo_end_c2": {
         "name": "{name}",
         "text": "*A marca do grão de arroz ainda está no dorso da minha mão. Seoyeon desamarra a faixa da marmita e a amarra novamente.*"
@@ -415,10 +412,7 @@
         "name": "Enfermeira",
         "text": "É um truque que aprendi no hospital. Nas articulações, tem que colocar assim para durar."
     },
-    "lunch2_dain_end_q": {
-        "name": "{name}",
-        "text": "*O curativo não enruga nem quando dobro o cotovelo.*"
-    },
+    "lunch2_dain_end_q": {},
     "lunch2_dain_end_r": {
         "name": "{name}",
         "text": "*Enquanto confiro o curativo, vejo um caderno verde-claro saindo da gaveta. Na primeira linha da página aberta está escrito: 'Para você, naquele dia—'. A enfermeira fecha a gaveta.*"
@@ -433,7 +427,7 @@
     },
     "lunch2_dain_end_u": {
         "name": "Enfermeira",
-        "text": "*Ela solta a alça da gaveta.* Isso já vale o preço de um segredo, não vale?"
+        "text": "*Ela solta o puxador da gaveta.* Chega de falar de mim. O curativo está bom?"
     },
     "lunch2_dain_end_v": {},
     "lunch2_dain_end_w": {
@@ -637,7 +631,7 @@
     },
     "lunch2_yuna_c1_10": {
         "name": "Yuna",
-        "text": "Não foi de repente. Foi uma transferência."
+        "text": "Só fiquei sabendo da transferência depois. Antes disso, nenhuma palavra."
     },
     "lunch2_yuna_c1_11": {
         "name": "{name}",

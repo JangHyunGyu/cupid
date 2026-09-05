@@ -119,7 +119,7 @@
     },
     "lunch2_seo_13b_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon schiebt das Bento näher zu {name}.* Der Platz ist vielleicht frei, aber die Verabredung ist nicht für dich."
+        "text": "*Seoyeon rückt ihre Lunchbox näher zu {name}.* Setz dich ruhig. Lass uns nur erst zu Ende reden."
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
@@ -192,12 +192,9 @@
     },
     "lunch2_seo_c2_2": {
         "name": "Seoyeon",
-        "text": "Wenn du selbst wischst, verschmierst du es nur."
+        "text": "Nimm doch das Feuchttuch."
     },
-    "lunch2_seo_c2_3": {
-        "name": "Seoyeon",
-        "text": "*Zweimal rutschen ihre Hände ab, als sie den Deckel ausrichtet. Beim dritten Versuch rastet er mit einem Klicken ein.*"
-    },
+    "lunch2_seo_c2_3": {},
     "lunch2_seo_end_c2": {
         "name": "{name}",
         "text": "*Die Spur des Reiskorns ist noch auf meinem Handrücken. Seoyeon löst das Band der Lunchbox und bindet es neu.*"
@@ -415,10 +412,7 @@
         "name": "Schulkrankenschwester",
         "text": "Ein Trick aus dem Krankenhaus. An Gelenken muss man es so kleben, damit es hält."
     },
-    "lunch2_dain_end_q": {
-        "name": "{name}",
-        "text": "*Selbst beim Anwinkeln des Ellbogens wirft das Pflaster keine Falten.*"
-    },
+    "lunch2_dain_end_q": {},
     "lunch2_dain_end_r": {
         "name": "{name}",
         "text": "*Während ich das Pflaster prüfe, ragt ein hellgrünes Notizbuch aus der Schreibtischschublade. Die erste Zeile der offenen Seite lautet: ‚An dich von damals —‘ Die Krankenschwester schließt die Schublade.*"
@@ -433,7 +427,7 @@
     },
     "lunch2_dain_end_u": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie nimmt die Hand vom Schubladengriff.* Das ist doch ein Geheimnis wert, oder?"
+        "text": "*Sie lässt den Schubladengriff los.* Genug von mir. Sitzt das Pflaster gut?"
     },
     "lunch2_dain_end_v": {},
     "lunch2_dain_end_w": {
@@ -637,7 +631,7 @@
     },
     "lunch2_yuna_c1_10": {
         "name": "Yuna",
-        "text": "Es war nicht plötzlich. Sie ist auf eine andere Schule gewechselt."
+        "text": "Von dem Schulwechsel habe ich erst hinterher erfahren. Vorher kam kein Wort."
     },
     "lunch2_yuna_c1_11": {
         "name": "{name}",

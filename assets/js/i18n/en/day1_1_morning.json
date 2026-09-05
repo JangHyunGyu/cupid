@@ -13,7 +13,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*An unfamiliar school gate. Mine is the only uniform with its creases still sharply pressed. Beside the gate, a long-haired girl in glasses checks the time. She looks up as I approach.*"
+        "text": "*A girl with long black hair waits by the gate, adjusting her glasses as she checks the time. She looks up when I approach.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -41,7 +41,7 @@
     },
     "seoyeon_meet_7": {
         "name": "Seoyeon",
-        "text": "I'll be the judge of that."
+        "text": "Showing new students around is part of my job. Relax."
     },
     "seoyeon_meet_8": {
         "name": "{name}",
@@ -90,7 +90,7 @@
     },
     "choice_flirt_6": {
         "name": "Seoyeon",
-        "text": "Honor or disaster — jury's still out."
+        "text": "Let’s see if you’re still saying that in a few days."
     },
     "choice_flirt_7": {
         "name": "Seoyeon",
@@ -182,7 +182,7 @@
     },
     "classroom_5_b": {
         "name": "Homeroom Teacher",
-        "text": "Okay, {name}. Got it. *She traces over the name in the attendance book and adds under her breath,* I only need to hear a name once."
+        "text": "Welcome, {name}. Take your time settling in."
     },
     "classroom_5_c": {
         "name": "{name}",

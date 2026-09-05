@@ -86,7 +86,7 @@
     },
     "date_seo_succulent_2": {
         "name": "Seoyeon",
-        "text": "Essa é fácil. Sobrevive até sem regar."
+        "text": "Não precisa regar com muita frequência. Acho que é boa para começar."
     },
     "date_seo_succulent_2_b": {
         "name": "{name}",
@@ -321,7 +321,7 @@
     },
     "date_dain_knee": {
         "name": "{name}",
-        "text": "*«Porque não preciso usar o joelho.» Dain sorri ao terminar, mas olha uma vez para o reflexo do joelho direito no vidro da vitrine.*"
+        "text": "*‘Assim não preciso usar os joelhos.’ Dain fala sorrindo e depois olha para o joelho direito.*"
     },
     "date_dain_knee_2": {
         "name": "{name}",
@@ -380,7 +380,10 @@
         "text": "Então normalmente não é fácil falar comigo."
     },
     "date_seo_tier_check": {},
-    "date_seo_high_1": {"name":"Seoyeon","text":"Lembra do bilhete do primeiro dia? Tudo bem se o plano mudar hoje. Vamos primeiro aonde você quiser."},
+    "date_seo_high_1": {
+        "name": "Seoyeon",
+        "text": "Hoje tudo bem mudar os planos. Vamos primeiro aonde você quiser."
+    },
     "date_seo_high_2": {"name":"{name}","text":"*Seoyeon dobra o roteiro e guarda na bolsa. Ela solta a alça e entra primeiro no parque.*"},
     "date_seo_tentative_1": {"name":"{name}","text":"*Enquanto damos uma volta no parque, Seoyeon fala apenas da agenda da próxima semana. Ela para diante de um banco.*"},
     "date_seo_tentative_2": {"name":"Seoyeon","text":"Isso basta por hoje. Não vou evitar você na escola."},
@@ -395,17 +398,23 @@
     "date_dain_high_1": {"name":"Dain","text":"Deixa a próxima semana livre também. Se hoje for divertido, vamos repetir."},
     "date_dain_high_2": {
         "name": "Dain",
-        "text": "*Ela tira uma munhequeira do bolso e me entrega.* Hoje você escolhe primeiro."
+        "text": "*Ela tira uma munhequeira do bolso e me entrega.* Hoje você escolhe o primeiro jogo."
     },
     "date_dain_tentative_1": {"name":"Dain","text":"Não vamos ficar muito tempo hoje. Meu joelho também precisa descansar."},
     "date_dain_tentative_2": {"name":"{name}","text":"*Cada um toma uma bebida perto da máquina. Dain deixa a porta do ginásio fechada e ajusta a alça da bolsa.*"},
     "date_dain_tentative_3": {"name":"Dain","text":"Vejo você na escola. A gente decide o próximo plano lá."},
-    "day4_caught_fallout_1": {"name":"{name}","text":"*Três conversas aparecem lado a lado no celular. Todos os pedidos de desculpas que enviei ontem pararam no Visualizado.*"},
+    "day4_caught_fallout_1": {
+        "name": "{name}",
+        "text": "*O pedido de desculpas de ontem ainda está no campo de texto. Quando vou enviar, chega uma mensagem de Seoyeon.*"
+    },
     "day4_caught_fallout_2": {"name":"Seoyeon","text":"Não fale com a gente separadamente por um tempo. Se precisar, use o grupo."},
     "day4_caught_fallout_3": {"name":"{name}","text":"*Pouco depois, Yuna sai de uma conversa e Dain cancela nosso encontro. Penduro de volta a roupa que eu tinha separado.*"},
     "day4_caught_fallout_4": {"name":"{name}","text":"*Não saio de casa. O grupo fica em silêncio até o sol se pôr.*"},
     "day4_harem_fallout_1": {"name":"{name}","text":"*A mensagem de Seoyeon aparece primeiro no grupo das três: “Hoje não vamos nos encontrar separadamente. Vamos conversar todos juntos.”*"},
     "day4_harem_fallout_2": {"name":"Seoyeon","text":"Não vou mandar você escolher uma de nós. Mas você não pode continuar deixando cada uma esperar alguma coisa."},
-    "day4_harem_fallout_3": {"name":"{name}","text":"*Yuna diz que precisa de tempo. Dain acrescenta que ninguém deve se encontrar a sós por enquanto. As três xícaras continuam intocadas.*"},
+    "day4_harem_fallout_3": {
+        "name": "{name}",
+        "text": "*Yuna responde que precisa de tempo. Dain escreve que também não vai se encontrar comigo a sós por enquanto. Leio as duas mensagens e fico sem conseguir responder.*"
+    },
     "day4_harem_fallout_4": {"name":"{name}","text":"Entendi. Não vou falar com ninguém separadamente até resolver isso."}
 }

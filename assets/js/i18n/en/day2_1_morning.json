@@ -116,7 +116,7 @@
     },
     "morning2_seo_5": {
         "name": "Seoyeon",
-        "text": "It's patrol. — And an attendance check."
+        "text": "I was on my way to the staff room. Thought I’d stop by and see you."
     },
     "morning2_minsu_1": {
         "name": "Seoyeon",
@@ -152,7 +152,7 @@
     },
     "morning2_dain_claim_6": {
         "name": "Dain",
-        "text": "I saw you first, so yeah, you're ours. I called dibs."
+        "text": "We sit next to each other in class. That’s the least you can do."
     },
     "morning2_break_transition": {
         "name": "{name}",
@@ -267,17 +267,14 @@
         "name": "Homeroom Teacher",
         "text": "*She sets down her coffee.* Anyway, there don't seem to be any problems with you."
     },
-    "hidden_homeroom_d2_8_f": {
-        "name": "Homeroom Teacher",
-        "text": "*The homeroom teacher covers her mouth with the coffee cup and turns the saucer twice in the same spot.*"
-    },
+    "hidden_homeroom_d2_8_f": {},
     "hidden_homeroom_d2_9": {
         "name": "{name}",
         "text": "Thank you."
     },
     "hidden_homeroom_d2_10": {
         "name": "Homeroom Teacher",
-        "text": "It's part of the job. Homeroom duties."
+        "text": "It’s part of being your homeroom teacher. You don’t need to be so formal."
     },
     "hidden_homeroom_d2_choice2": {
         "name": "{name}",
@@ -294,15 +291,15 @@
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Homeroom Teacher",
-        "text": "*She hides her mouth behind the coffee cup.* That's enough. Off you go."
+        "text": "Of course I’m glad to hear you’re doing well."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Homeroom Teacher",
-        "text": "*She points her pen toward the faculty-office door.* That's enough. Off you go."
+        "text": "Well, thank you for saying so."
     },
     "hidden_homeroom_d2_11": {
         "name": "Homeroom Teacher",
-        "text": "If I make an exception for the transfer student, the others will talk."
+        "text": "The others come to me when something’s troubling them, too. You’re welcome to do the same."
     },
     "hidden_homeroom_d2_11_b": {
         "name": "Homeroom Teacher",
@@ -359,7 +356,7 @@
     },
     "hidden_homeroom_d2_freetalk": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher takes her hand off the closed drawer and turns toward me.* Getting used to school yet?",
+        "text": "*She turns her chair toward me.* Anything else you wanted to ask?",
         "context": "It is the morning of Day 2, just after a counseling meeting in the faculty office. The transfer student happened to glimpse a long manuscript in the homeroom teacher's drawer but does not yet know its contents or history. They are a teacher and student beginning to build trust. Do not invent the manuscript's secret or cross the teacher-student boundary.",
         "personality": "The homeroom teacher is calm, responsible, and listens before she advises. Her embarrassment about the personal manuscript appears in a brief hesitation, but she does not place emotional responsibility on the student and keeps a warm, appropriate boundary."
     },

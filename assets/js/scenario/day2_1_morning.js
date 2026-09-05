@@ -364,9 +364,8 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "hidden_homeroom_d2_8_f"
     },
     "hidden_homeroom_d2_8_f": {
-        "background": "assets/images/background/teacher_office.png",
-        "character": "assets/images/characters/teacher_normal.png",
-        "next": "hidden_homeroom_d2_9"
+        "next": "hidden_homeroom_d2_9",
+        "routeBeforeRender": true
     },
     "hidden_homeroom_d2_9": {
         "background": "assets/images/background/teacher_office.png",

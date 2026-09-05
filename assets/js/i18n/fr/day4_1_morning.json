@@ -182,15 +182,15 @@
     },
     "hidden_homeroom_d4_cafe_1": {
         "name": "Professeure principale",
-        "text": "Les membres du club sont à la table du fond. La rumeur qu'on serait venus en tête-à-tête circulerait plus vite que mon manuscrit."
+        "text": "Tu vois les membres du club littéraire à la table du fond ? Asseyons-nous ici un instant."
     },
     "hidden_homeroom_d4_cafe_1_b": {
         "name": "{name}",
-        "text": "J'allais justement dire la même chose."
+        "text": "Vous êtes nerveuse ?"
     },
     "hidden_homeroom_d4_cafe_1_c": {
         "name": "Professeure principale",
-        "text": "*Elle boit une gorgée de café.* Parfait. On est donc d'accord."
+        "text": "Un peu. J’hésite encore à récupérer le manuscrit tant qu’il est temps."
     },
     "hidden_homeroom_d4_cafe_1_d": {
         "name": "Professeure principale",
@@ -243,7 +243,7 @@
     },
     "hidden_homeroom_d4_cafe_choice_b": {
         "name": "Professeure principale",
-        "text": "Bien sûr. Ce sont les exemplaires que je distribue aujourd'hui. Il n'y en a pas un à part, rien que pour toi."
+        "text": "Oui, tout le monde a le même texte. Annote-le librement."
     },
     "hidden_homeroom_d4_cafe_4": {
         "name": "Professeure principale",
@@ -279,7 +279,7 @@
     },
     "hidden_homeroom_d4_cafe_5_g": {
         "name": "Professeure principale",
-        "text": "Et nous ne parlerons du manuscrit que pendant le club. Je ne le mêlerai ni aux cours ni aux entretiens."
+        "text": "Je réunirai les remarques d’aujourd’hui pour qu’on les reprenne ensemble la prochaine fois."
     },
     "hidden_homeroom_d4_cafe_5_h": {
         "name": "Professeure principale",
@@ -349,7 +349,7 @@
     },
     "hidden_nurse_d4_morning_choice_trap": {
         "name": "Infirmière",
-        "text": "Non. Si je suis la seule adulte sur qui tu peux compter, tu te retrouveras seul dès que je ne serai pas là."
+        "text": "Tu peux venir me voir d’abord. Mais il te faut aussi quelqu’un vers qui te tourner quand je suis absente."
     },
     "hidden_nurse_d4_morning_choice_a": {
         "name": "{name}",
@@ -536,7 +536,7 @@
     },
     "hidden_nurse_d4_meal_3": {
         "name": "Infirmière",
-        "text": "Ça me touche, mais ne fais pas de mon humeur ta responsabilité."
+        "text": "Tu trouves ? Je devais avoir l’air un peu crispée. Allez, on finit cette dernière boîte."
     },
     "hidden_nurse_d4_meal_3_b": {
         "name": "{name}",
@@ -592,6 +592,6 @@
     },
     "hidden_nurse_d4_trap": {
         "name": "Infirmière",
-        "text": "Sans doute. Mais ce n'est pas pour aller plus vite que j'ai demandé de l'aide."
+        "text": "Je peux le faire seule. J’espérais juste que tu m’aiderais à terminer."
     }
 }

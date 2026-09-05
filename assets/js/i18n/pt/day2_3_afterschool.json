@@ -187,7 +187,7 @@
     },
     "after2_dain_skinship_2": {
         "name": "Dain",
-        "text": "...Ah, desculpa! Às vezes faço isso depois de um jogo."
+        "text": "Opa, ardeu? Devia ter pegado mais leve."
     },
     "after2_dain_skinship_3": {
         "name": "{name}",
@@ -284,7 +284,7 @@
     },
     "after2_seo_4": {
         "name": "Seoyeon",
-        "text": "*Ela aponta para a cadeira vazia com a ponta da prancheta.* Obediente."
+        "text": "Ainda bem que te chamei."
     },
     "after2_seo_4_b": {
         "name": "Seoyeon",
@@ -296,7 +296,7 @@
     },
     "after2_seo_6": {
         "name": "Seoyeon",
-        "text": "Não foi pedido. Foi uma oportunidade."
+        "text": "Quero dizer, obrigada por vir."
     },
     "after2_seo_6_b": {
         "name": "{name}",
@@ -325,7 +325,7 @@
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
-        "text": "...Você serve para isso."
+        "text": "Você tem mais jeito para isso do que eu pensei."
     },
     "after2_seo_8b3": {
         "name": "{name}",
@@ -353,18 +353,12 @@
         "name": "Seoyeon",
         "text": "*Os óculos escorregam um pouco para a ponta do nariz, e a caneta sai do espaço reservado à data.*"
     },
-    "after2_seo_sunset_joke_b": {
-        "name": "Seoyeon",
-        "text": "*Enquanto cobre a boca com a borda dos documentos, a tampa da caneta rola para baixo da mesa.*"
-    },
+    "after2_seo_sunset_joke_b": {},
     "after2_seo_sunset_react": {
         "name": "Seoyeon",
-        "text": "...Se você solta uma dessas do nada, nem dá tempo de anotar."
+        "text": "…Você explicar isso só deixa tudo mais suspeito."
     },
-    "after2_seo_sunset_react_b": {
-        "name": "Seoyeon",
-        "text": "*Ainda cobrindo a boca com a borda dos documentos, ela acompanha com a ponta da caneta a faixa laranja no batente da janela.*"
-    },
+    "after2_seo_sunset_react_b": {},
     "after2_seo_neck_worry": {
         "name": "Seoyeon",
         "text": "Tô bem. Isso é rotina."
@@ -383,7 +377,7 @@
     },
     "after2_seo_neck_touch": {
         "name": "Seoyeon",
-        "text": "Vai usar minha caixa de arquivo como apoio?"
+        "text": "Quer usar isso como apoio?"
     },
     "after2_seo_neck_high": {
         "name": "{name}",
@@ -452,7 +446,7 @@
     },
     "after2_seo_stay_3b": {
         "name": "Seoyeon",
-        "text": "Nunca. — Só aqui."
+        "text": "Ia descansar agora."
     },
     "after2_seo_stay_3c": {
         "name": "{name}",

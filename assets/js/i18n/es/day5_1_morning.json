@@ -123,7 +123,7 @@
     },
     "morning5_caught_dain_honest": {
         "name": "Dain",
-        "text": "*Dain se aprieta la muñequera hasta el final y luego la suelta.* Entonces, cuando te pregunté si era la única que se había ilusionado, tú ya estabas allí con ella."
+        "text": "*Dain estira la muñequera hasta el tope y la suelta.* O sea, cuando te escribí que seguía esperando, tú ya estabas allí."
     },
     "morning5_caught_dain_lie": {
         "name": "Dain",
@@ -152,15 +152,15 @@
     },
     "morning5_mood_high": {
         "name": "{name}",
-        "text": "*Es el último día. Antes de abrir la puerta del aula, recuerdo una vez las palabras de estos últimos cuatro días.*"
+        "text": "*Mi primera semana en el nuevo instituto toca a su fin. Antes de abrir la puerta del aula, recuerdo lo que hemos hablado estos cuatro días.*"
     },
     "morning5_mood_mid": {
         "name": "{name}",
-        "text": "Último día. Todavía no he decidido qué camino tomar. Aun así, cruzo la entrada de la escuela."
+        "text": "Mi primera semana casi ha terminado y sigo sin decidirme. De momento, cruzo la entrada."
     },
     "morning5_mood_low": {
         "name": "{name}",
-        "text": "Último día. Toco uno por uno los tres nombres que quedan en la pantalla de bloqueo y la apago sin abrir ningún chat."
+        "text": "Mi primera semana toca a su fin. Miro los tres nombres en la pantalla bloqueada y la apago sin abrir ningún chat."
     },
     "morning5_gate": {},
     "morning5_seo_note_1": {
@@ -177,7 +177,7 @@
     },
     "morning5_yuna_story_gone_2": {
         "name": "{name}",
-        "text": "*Un asiento vacío en la biblioteca, un separador desaparecido, un relato que no se colocó. En el tablero solo quedan cuatro marcas de tachuelas.*"
+        "text": "*Me detengo ante el tablón vacío. Los agujeros de las chinchetas no me dicen qué pensaba Yuna.*"
     },
     "morning5_seo_note_1_c": {
         "name": "{name}",
@@ -254,7 +254,7 @@
     },
     "hidden_homeroom_d5_3": {
         "name": "Profesora",
-        "text": "Lo tuve guardado durante siete años, pero esta vez pienso repartirlo también entre el club de literatura y el departamento de Lengua."
+        "text": "Llevo siete años con esto. Ya va siendo hora de escuchar también a los demás."
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",
@@ -491,14 +491,8 @@
         "name": "{name}",
         "text": "*Bajo la hoja de seguimiento figuran, uno junto al otro, los métodos para reservar en la enfermería y en Wee Class.*"
     },
-    "hidden_nurse_d5_2_b": {
-        "name": "Enfermera",
-        "text": "*Abro la puerta de la enfermería y compruebo la lista de reservas.*"
-    },
-    "hidden_nurse_d5_2_c": {
-        "name": "Enfermera",
-        "text": "Has llegado a la hora reservada. Bien hecho."
-    },
+    "hidden_nurse_d5_2_b": {},
+    "hidden_nurse_d5_2_c": {},
     "hidden_nurse_d5_3": {
         "name": "{name}",
         "text": "He venido a recoger el justificante de la consulta."
@@ -511,30 +505,15 @@
         "name": "Enfermera",
         "text": "Siempre puedes venir a recibir ayuda a la hora acordada."
     },
-    "hidden_nurse_d5_3_d": {
-        "name": "{name}",
-        "text": "¿Sin tener que inventar una excusa?"
-    },
-    "hidden_nurse_d5_3_e": {
-        "name": "Enfermera",
-        "text": "Por supuesto. La enfermería no es un lugar donde inventar excusas, sino donde recibir la ayuda que necesitas."
-    },
+    "hidden_nurse_d5_3_d": {},
+    "hidden_nurse_d5_3_e": {},
     "hidden_nurse_d5_3_f": {
         "name": "Enfermera",
         "text": "*Abre la caja de tarjetas con instrucciones de primeros auxilios.*"
     },
-    "hidden_nurse_d5_3_g": {
-        "name": "Enfermera",
-        "text": "Ya, ve. No te puedes saltar el evento."
-    },
-    "hidden_nurse_d5_3_h": {
-        "name": "Enfermera",
-        "text": "*Antes de que cruce el umbral de la enfermería, vuelve a abrir la lista de reservas.*"
-    },
-    "hidden_nurse_d5_3_i": {
-        "name": "Enfermera",
-        "text": "{name}, espera."
-    },
+    "hidden_nurse_d5_3_g": {},
+    "hidden_nurse_d5_3_h": {},
+    "hidden_nurse_d5_3_i": {},
     "hidden_nurse_d5_4": {
         "name": "Enfermera",
         "text": "El botiquín del evento está en la entrada del gimnasio. Si te lastimas, llama de inmediato al docente responsable."
@@ -619,7 +598,7 @@
     "morning5_end_branch": {},
     "morning5_end": {
         "name": "{name}",
-        "text": "*Coloco juntas sobre el pupitre las notas y la notificación que llegaron desde tres direcciones distintas.*"
+        "text": "*Reúno las notas sobre la mesa y reviso las notificaciones del móvil una a una.*"
     },
     "morning5_committed_end": {
         "name": "{name}",

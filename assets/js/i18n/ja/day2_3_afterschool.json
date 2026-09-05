@@ -67,7 +67,7 @@
     },
     "hidden_nurse_d2_7": {
         "name": "保健室の先生",
-        "text": "*私の視線に気づき、取っ手に手を置く。* その話はここまで。気になっても開けないよ。"
+        "text": "*こちらの視線に気づき、取っ手に手を置く。* その話はここまで。気になっても開けないよ。"
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",
@@ -187,7 +187,7 @@
     },
     "after2_dain_skinship_2": {
         "name": "ダイン",
-        "text": "……あ、ごめん！　試合が終わると、たまにこうなるんだ！"
+        "text": "あ、手痛かった？ もうちょっと加減すればよかった。"
     },
     "after2_dain_skinship_3": {
         "name": "{name}",
@@ -284,7 +284,7 @@
     },
     "after2_seo_4": {
         "name": "ソヨン",
-        "text": "*クリップボードの角で空いた椅子を指す。* 素直ね。"
+        "text": "呼んでよかった。"
     },
     "after2_seo_4_b": {
         "name": "ソヨン",
@@ -296,7 +296,7 @@
     },
     "after2_seo_6": {
         "name": "ソヨン",
-        "text": "お願いじゃなくて、チャンスをあげたの。"
+        "text": "だから、来てくれてありがとうってこと。"
     },
     "after2_seo_6_b": {
         "name": "{name}",
@@ -325,7 +325,7 @@
     },
     "after2_seo_8b2": {
         "name": "ソヨン",
-        "text": "……なかなか使えるね。"
+        "text": "思ったより手際がいいね。"
     },
     "after2_seo_8b3": {
         "name": "{name}",
@@ -353,18 +353,12 @@
         "name": "ソヨン",
         "text": "*眼鏡が鼻先へ少しずれ、ペン先が日付欄の外へ滑る。*"
     },
-    "after2_seo_sunset_joke_b": {
-        "name": "ソヨン",
-        "text": "*書類を立てて口元を隠すあいだに、ペンのキャップが机の下へ転がる。*"
-    },
+    "after2_seo_sunset_joke_b": {},
     "after2_seo_sunset_react": {
         "name": "ソヨン",
-        "text": "……そんなふうにさらっと言われたら、書き留める暇もないじゃない。"
+        "text": "……わざわざ付け足すほうが怪しいんだけど。"
     },
-    "after2_seo_sunset_react_b": {
-        "name": "ソヨン",
-        "text": "*書類の端で口元を隠したまま、窓枠に映るオレンジ色の線をペン先でなぞる。*"
-    },
+    "after2_seo_sunset_react_b": {},
     "after2_seo_neck_worry": {
         "name": "ソヨン",
         "text": "平気。このくらい毎日だから。"
@@ -383,7 +377,7 @@
     },
     "after2_seo_neck_touch": {
         "name": "ソヨン",
-        "text": "私の書類を、箱の上に置けって？"
+        "text": "それを台にするの？"
     },
     "after2_seo_neck_high": {
         "name": "{name}",
@@ -452,7 +446,7 @@
     },
     "after2_seo_stay_3b": {
         "name": "ソヨン",
-        "text": "ない。――ここにいるとき以外はね。"
+        "text": "今から休むつもり。"
     },
     "after2_seo_stay_3c": {
         "name": "{name}",

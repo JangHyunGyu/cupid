@@ -5,19 +5,16 @@
     },
     "after_kakao_1": {
         "name": "{name}",
-        "text": "*« Hé, Sojeong dit qu'elle va bien dans son nouveau lycée. » « Tant mieux mdr. » — Je remets le téléphone dans ma poche.*"
+        "text": "*« Hé, Sojeong va bien dans son nouveau lycée. » « Tant mieux mdr. » Des noms familiers s’affichent les uns après les autres.*"
     },
     "after_kakao_3": {
         "name": "{name}",
-        "text": "*Je relis le dernier message : « Tant mieux mdr. » J'ouvre la zone de réponse, mais éteins l'écran sans avoir rien écrit.*"
+        "text": "*Je relis le dernier message. « Tant mieux mdr. » J’ouvre le champ de réponse, sans trouver quoi écrire.*"
     },
-    "after_kakao_5": {
-        "name": "{name}",
-        "text": "*Mon visage se reflète dans l’écran noir. Je range le téléphone sans avoir répondu.*"
-    },
+    "after_kakao_5": {},
     "after_kakao_end": {
         "name": "{name}",
-        "text": "*Je ressors mon téléphone et je quitte le groupe. En haut de la liste, il ne reste que la messagerie du nouveau lycée.*"
+        "text": "*Après un instant d’hésitation, je quitte le groupe. La conversation du nouveau lycée se retrouve en tête de liste.*"
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
@@ -55,7 +52,7 @@
     },
     "after1_jealousy_seo_lie_2": {
         "name": "Dain",
-        "text": "Vraiment ? Tout seul ? — Bon, c'est ton premier jour, normal !"
+        "text": "Vraiment ? …J’ai dû me tromper, alors."
     },
     "after1_jealousy_seo_yuna": {
         "name": "{name}",
@@ -162,11 +159,11 @@
     },
     "after_miss_seoyeon_6": {
         "name": "Seoyeon",
-        "text": "...Je suis montée prendre l’air et la porte était ouverte, c’est tout."
+        "text": "J’avais commencé à manger. Préviens-moi, la prochaine fois."
     },
     "after_miss_seoyeon_7": {
         "name": "{name}",
-        "text": "*Mon nom figure toujours en haut du porte-bloc de Seoyeon. La case à côté est encore vide.*"
+        "text": "*Seoyeon serre son porte-documents contre elle et rebouche son stylo sans me regarder.*"
     },
     "after_miss_seoyeon_8": {
         "name": "Seoyeon",
@@ -323,7 +320,7 @@
     "after_homeroom_freetalk": {
         "name": "Professeure principale",
         "text": "*La professeure principale laisse la porte de la salle des profs entrouverte et cale le registre sous son bras.*",
-        "context": "Jour 1 après les cours. La professeure principale a retenu le nouvel élève pour savoir comment il s'adaptait, et celui-ci a reconnu franchement qu'il se sentait dépassé. C'est leur premier entretien formel entre professeure et élève.",
+        "context": "[Mode : en personne] Devant la salle des professeurs, après les cours du premier jour. L’élève a demandé conseil pour s’intégrer et sa professeure principale l’a écouté. Poursuivre cet échange à partir de ses paroles et du motif de sa visite.",
         "personality": "La professeure principale est une femme attentive à la fin de la vingtaine, aux longs cheveux bruns ondulés, vêtue d'un cardigan beige. Elle inscrit l'accompagnement et les conseils dans les procédures de l'école. Elle rêvait autrefois de devenir romancière et tient toujours à l'écriture."
     },
     "after_hidden_nurse_intro": {
@@ -370,7 +367,7 @@
     },
     "after_nurse_enter_4_c": {
         "name": "Infirmière",
-        "text": "Ton uniforme est encore raide. Il sent l'amidon, et tu as même des pétales de cerisier dessus. Ça se voit que c'est ton premier jour."
+        "text": "Je ne t’avais jamais vu, et ton uniforme a l’air neuf. J’ai bon ?"
     },
     "after_nurse_enter_4_d": {
         "name": "Infirmière",
@@ -406,7 +403,7 @@
     },
     "after_nurse_enter_choice": {
         "name": "{name}",
-        "text": "*Je m'allonge sur le lit. À travers le rideau, j'aperçois le dos de l'infirmière.*",
+        "text": "*Par l’ouverture du rideau, je vois l’infirmière remplir une fiche.*",
         "choices": [
             "Vous avez l'air plus fatiguée que moi, en fait",
             "L'infirmerie est plus calme que je pensais.",
@@ -459,7 +456,7 @@
     },
     "after_nurse_enter_10_b": {
         "name": "Infirmière",
-        "text": "*Le tiroir se referme, cachant le carnet vert clair qui se trouve à l'intérieur. L'horloge indique dix minutes de plus que lorsque je me suis allongé.*"
+        "text": "*En rangeant la fiche dans le tiroir, elle laisse entrevoir un carnet vert pâle. Dix minutes se sont écoulées depuis que je me suis allongé.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",
@@ -501,10 +498,7 @@
         "name": "Infirmière",
         "text": "*Elle ouvre le rideau et remet le drap en ordre.*"
     },
-    "after_nurse_enter_11_j": {
-        "name": "{name}",
-        "text": "*Au moment où je vais ouvrir la porte de l'infirmerie, l'infirmière m'appelle derrière moi.*"
-    },
+    "after_nurse_enter_11_j": {},
     "after_nurse_enter_11_k": {
         "name": "Infirmière",
         "text": "Oh, le nouveau."
@@ -537,6 +531,6 @@
     },
     "after_nurse_enter_trap": {
         "name": "Infirmière",
-        "text": "Ça avait l'air tranquille ? Plus c'est calme ici, plus je dois rester vigilante."
+        "text": "Quand il n’y a personne, je m’occupe des dossiers et du matériel. Le calme, ce n’est pas toujours une pause."
     }
 }

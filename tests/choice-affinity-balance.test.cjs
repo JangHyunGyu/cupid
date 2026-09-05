@@ -1105,7 +1105,7 @@ test('day-five continuity keeps availability, history, affinity, and final choic
     const requiredCopy = [
         'day4_adult_counteroffer_soft_seoyeon',
         'morning5_counteroffer_choice',
-        'after5_farewell_seo_high_1',
+        'after5_farewell_seo_high_2',
         'after5_hidden_teacher_high',
         'after5_last_chance_yuna_distance',
         'after5_hidden_return_to_park',
@@ -1425,13 +1425,13 @@ test('day 2 through 5 rivalry copy stays synchronized across every supported loc
         'after5_farewell_dain_2', 'after5_farewell_dain_4', 'after5_farewell_dain_4_c'
     ];
     const expectedDigests = {
-        "ko": "fe952342c33c5d94de730f07e766be82c5baa08e75877be6027d9081f4c1532b",
-        "en": "13c8d569a4cabba80c51e965a22c289afb7f1918e00799f82887befcb36ac834",
-        "ja": "7e1f2e535dfaab0255cb4362340bb8b9834acb672fb95a75938740a2dc49c0ff",
-        "es": "886cd79cec1ddf9fc1afe0c6f881a5e143370a4021d4c38d65e4549368ce82d6",
-        "fr": "a841d64a9b8ed6afd70722fdc34b327e5fc4159ffdbc4f06da4ad033ab1050b1",
-        "de": "124d024d5c423e3cb9ffb9270b38250ebc3d8f049b33425e38abaecd90e14124",
-        "pt": "2f5506a0a31b6013f343b8bcf8f17f445f187cab45da722502bd1f0cf66cb107"
+        "ko": "c6d0864232891bdf165afc857fe383020c1f474fc0084c3b6b178bd7f174ca5d",
+        "en": "1f6c00dfd4db5c8ddbe65f4e21c676a73a9b1e7b8f4d08e94c9d2cb1e9bd73b0",
+        "ja": "e1fd08117c49f6448a016ba485230e8d83739ab34e71e2353a363e5b25f3702c",
+        "es": "c7b03538c5a6ddb45ae2271c7d619ca60c5e4a6444f847be1eabcac31ba29331",
+        "fr": "2bb26e4e994ccd36e5386d660a63a02ae7b36238c7284005308d2edf67b2658d",
+        "de": "7946fc3236ac1e10a62f362a6b9ad0951a9b08ce9442cb9fd9a79c0b9756a21e",
+        "pt": "e171561faa61f9bc9da6d2e09883063eda55a96e0f85535a71f7f870a31548a1"
     };
 
     for (const [locale, expectedDigest] of Object.entries(expectedDigests)) {
@@ -1494,7 +1494,7 @@ test('character-specific trap choices retain their understated Korean wording an
 
     const reactions = {
         lunch_dain_trap_1: '관심 없으면 없다고 해. 맞춰주는 건 더 싫어.',
-        after_nurse_enter_trap: '편해 보였구나. 여긴 조용할수록 긴장하는 곳인데.',
+        after_nurse_enter_trap: '학생 없을 땐 기록도 쓰고 물품도 챙겨. 조용하다고 늘 쉬는 건 아니야.',
         hidden_homeroom_d2_choice1_trap: '선생님이라고 취향까지 어려울 필요는 없지.',
         lunch2_seo_trap_1: '*물티슈를 거둔다.* 그래. 혼자서 잘하니까.',
         after2_yuna_trap: '…여기가 아니라, 내 얘기인 줄 알았는데.',
@@ -1503,7 +1503,7 @@ test('character-specific trap choices retain their understated Korean wording an
         date_dain_bright: '*웃던 다인이 모자챙을 한 번 더 눌러쓴다.* ...그렇지. 운동복이 편하니까.',
         hidden_homeroom_d4_cafe_trap: '그런 합평이면 받을 이유가 없지. 선생님 글이라고 봐주는 건 싫어.',
         hidden_nurse_d4_name_trap: '크게 다치는 일만 일이면 좋겠네. 말 못 하고 버티는 애들이 더 많아.',
-        hidden_nurse_d4_trap: '빠르긴 하겠지. 그래도 같이 하자고 물은 건 속도 때문이 아니었는데.',
+        hidden_nurse_d4_trap: '혼자 할 수야 있지. 그래도 남은 일까지 같이 끝내 줬으면 해서 물어봤어.',
         wall_seo_line_react_3: '아는 척하지 마.',
         wall_dain_lastspike_2: '*공 보관함을 보다가 다인이 고개를 든다.* 잠깐. 왜 네가 다 정해.',
         hidden_nurse_d5_choice_trap: '반대야. 혼자 버티라고 만든 카드가 아니야.',

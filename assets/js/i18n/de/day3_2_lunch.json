@@ -138,7 +138,7 @@
     },
     "lunch3_dain_skin_3": {
         "name": "Dain",
-        "text": "Das zählt nicht!"
+        "text": "…Damit, dass ich so verlegen werde, habe ich nicht gerechnet."
     },
     "lunch3_give_dain_2": {
         "name": "Seoyeon",
@@ -164,11 +164,11 @@
     },
     "lunch3_yuna_skin_2": {
         "name": "Yuna",
-        "text": "Das habe ich nicht auf den Zettel geschrieben. Es ist einfach—"
+        "text": "Als ich mich vorhin bedankt habe, habe ich das ernst gemeint."
     },
     "lunch3_yuna_skin_3": {
         "name": "{name}",
-        "text": "*Nach »einfach« kommt nichts mehr. Erst dann lösen sich ihre Finger vom Rand des Papiers.*"
+        "text": "*Yuna lässt den Rand des Papiers los. Ich falte den Zettel und stecke ihn vorsichtig ein.*"
     },
     "lunch3_give_yuna_2": {
         "name": "Seoyeon",
@@ -202,10 +202,7 @@
         "name": "{name}",
         "text": "*Die Spitzen von Seoyeons Stäbchen drücken gegen den Rand der Lunchbox. Yuna hält die halb geöffnete Brottüte fest und sieht Dain an.*"
     },
-    "lunch3_expose_5": {
-        "name": "Seoyeon",
-        "text": "Moment."
-    },
+    "lunch3_expose_5": {},
     "lunch3_expose_6": {
         "name": "Seoyeon",
         "text": "Warte. Soll das heißen, es ist mehr als eine Verabredung?"
@@ -278,7 +275,7 @@
     },
     "lunch3_expose_honest_7": {
         "name": "{name}",
-        "text": "*Dains Antwort ist kürzer als sonst. Am Satzende fehlt jede Spur ihrer üblichen Begeisterung.*"
+        "text": "*Dain antwortet knapp und sieht weg. Von ihrer Begeisterung ist nichts mehr übrig.*"
     },
     "lunch3_expose_excuse_1": {
         "name": "{name}",

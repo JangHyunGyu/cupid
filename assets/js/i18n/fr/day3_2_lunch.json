@@ -138,7 +138,7 @@
     },
     "lunch3_dain_skin_3": {
         "name": "Dain",
-        "text": "Celui-là ne compte pas !!"
+        "text": "…Je pensais pas que ça me ferait rougir comme ça."
     },
     "lunch3_give_dain_2": {
         "name": "Seoyeon",
@@ -164,11 +164,11 @@
     },
     "lunch3_yuna_skin_2": {
         "name": "Yuna",
-        "text": "...Ce n'est pas à propos du mot. Juste."
+        "text": "Tout à l’heure, quand je t’ai remercié, je le pensais vraiment."
     },
     "lunch3_yuna_skin_3": {
         "name": "{name}",
-        "text": "*Rien ne vient après « juste ». Ce n'est qu'alors que sa main lâche le bord du papier.*"
+        "text": "*Yuna lâche le bord du papier. Je plie le mot et le range soigneusement.*"
     },
     "lunch3_give_yuna_2": {
         "name": "Seoyeon",
@@ -202,10 +202,7 @@
         "name": "{name}",
         "text": "*La pointe des baguettes de Seoyeon appuie sur le bord du bento. Yuna, l'ouverture du sachet de pain encore entre les doigts, regarde Dain.*"
     },
-    "lunch3_expose_5": {
-        "name": "Seoyeon",
-        "text": "Attends."
-    },
+    "lunch3_expose_5": {},
     "lunch3_expose_6": {
         "name": "Seoyeon",
         "text": "Attends. Tu veux dire qu’il y en a plusieurs ?"
@@ -278,7 +275,7 @@
     },
     "lunch3_expose_honest_7": {
         "name": "{name}",
-        "text": "*La réponse de Dain est plus brève que d'habitude. Aucun point d'exclamation ne vient conclure sa phrase.*"
+        "text": "*Dain répond brièvement et détourne les yeux. Son entrain de tout à l’heure a disparu.*"
     },
     "lunch3_expose_excuse_1": {
         "name": "{name}",

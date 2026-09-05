@@ -13,7 +13,7 @@
     },
     "morning3_date_dain_low": {
         "name": "Dain",
-        "text": "*Dain sostiene el balón contra el costado, te mira un instante y vuelve la vista a la cancha.* Este fin de semana entrenaré sola."
+        "text": "*Dain me mira un instante y cierra la mochila.* Este fin de semana entreno por mi cuenta."
     },
     "morning3_date_yuna_low": {
         "name": "Yuna",
@@ -368,7 +368,7 @@
     },
     "hidden_homeroom_d3_reveal_4_e": {
         "name": "Profesora",
-        "text": "Puedes leerlo. Pero no te lo daré a escondidas solo a ti. Primero voy a prepararlo para llevarlo a la sesión de lectura y crítica del club de literatura."
+        "text": "Quiero llevarlo a la sesión de crítica del club de escritura. ¿Lo leerías entonces?"
     },
     "hidden_homeroom_d3_reveal_4_f": {
         "name": "Profesora",
@@ -409,7 +409,7 @@
     },
     "hidden_homeroom_d3_reveal_6_b": {
         "name": "Profesora",
-        "text": "...Entonces será la primera vez en siete años que lo muestre a otras personas."
+        "text": "Hasta ahora lo corregía sola. Esta vez podré escuchar las opiniones en persona."
     },
     "hidden_homeroom_d3_reveal_6_c": {
         "name": "{name}",
@@ -425,11 +425,11 @@
     },
     "hidden_homeroom_d3_reveal_6_f": {
         "name": "Profesora",
-        "text": "Porque aquí hay silencio. Aun así, a partir de ahora hablaremos del manuscrito solo durante el club de literatura."
+        "text": "En fin, seguimos hablando del manuscrito en la sesión de crítica."
     },
     "hidden_homeroom_d3_reveal_6_g": {
         "name": "{name}",
-        "text": "*El tictac del reloj en un aula vacía hace mucho ruido. La mirada no se desvía de la frase con rastros de borrado superpuestos.*"
+        "text": "*Recoge el manuscrito y lo mete en un sobre. Se detiene un instante antes de guardar la última página.*"
     },
     "hidden_homeroom_d3_hide_1": {
         "name": "Profesora",
@@ -485,14 +485,8 @@
         "name": "Enfermera",
         "text": "*La enfermera deja la taza.*"
     },
-    "hidden_nurse_d3_3_c": {
-        "name": "Enfermera",
-        "text": "...Siéntate."
-    },
-    "hidden_nurse_d3_3_d": {
-        "name": "Enfermera",
-        "text": "*Coloca el vaso al fondo del escritorio y acerca la silla para pacientes hasta el frente de la cama.*"
-    },
+    "hidden_nurse_d3_3_c": {},
+    "hidden_nurse_d3_3_d": {},
     "hidden_nurse_d3_4": {
         "name": "Enfermera",
         "text": "*Corre la cortina y me entrega un vaso de agua.* ...Siéntate. Aquí puedes relajarte. Habla a tu ritmo."
@@ -575,7 +569,7 @@
     },
     "hidden_nurse_d3_6": {
         "name": "Enfermera",
-        "text": "Cuando trabajaba en el hospital universitario. Cuando las alarmas sonaban al mismo tiempo, mis manos contaban primero las camas vacías. Odiaba eso."
+        "text": "En el hospital universitario, cuando sonaban varios avisos a la vez, solo podía pensar adónde ir primero. Muchas veces tenía que salir corriendo sin terminar de escuchar a un paciente."
     },
     "hidden_nurse_d3_6_b": {
         "name": "Enfermera",
@@ -583,7 +577,7 @@
     },
     "hidden_nurse_d3_6_c": {
         "name": "Enfermera",
-        "text": "Más que renunciar, me fui. No hubo ningún motivo admirable."
+        "text": "No creía que pudiera seguir aguantando."
     },
     "hidden_nurse_d3_6_d": {
         "name": "Enfermera",
@@ -636,7 +630,7 @@
     },
     "hidden_nurse_d3_choice2": {
         "name": "Enfermera",
-        "text": "*La enfermera se detuvo en 'una persona'. El borde del vaso de papel se arruga bajo sus dedos.*",
+        "text": "*La enfermera cierra el cajón. Junto a la puerta, busco qué decir.*",
         "choices": [
             "¿Dejó el hospital después de aquello?",
             "¿Le parece bien seguir hablando de aquello?",
@@ -697,7 +691,7 @@
         "name": "Seoyeon",
         "text": "*Seoyeon pregunta desde la puerta del salón. La tapa de la botella que Dain estaba girando se detiene.*",
         "choices": [
-            "Claro. ¿Dónde?",
+            "Vale. ¿A qué hora?",
             "Creo que voy a estar ocupado",
             "Es una petición de la presidenta del consejo. Claro que sacaré tiempo.",
             "Haré un hueco si no viene nadie más."
@@ -725,7 +719,7 @@
     },
     "morning3_date_dain_2": {
         "name": "Dain",
-        "text": "*Dain golpea el borde de mi pupitre. En este descanso, Seoyeon ordena papeles en su asiento.*"
+        "text": "*Dain tamborilea en el borde de mi mesa. Por la puerta abierta veo a Seoyeon ordenar sus papeles.*"
     },
     "morning3_date_dain_choice": {
         "name": "Dain",
@@ -739,7 +733,7 @@
     },
     "morning3_date_dain_accept": {
         "name": "{name}",
-        "text": "*Quedamos para el fin de semana. Dain sonríe y Seoyeon cierra la carpeta en su pupitre.*"
+        "text": "*Quedo con Dain para el fin de semana. Ella sonríe y Seoyeon, al otro lado de la puerta, cierra su carpeta.*"
     },
     "morning3_date_dain_decline": {
         "name": "Dain",

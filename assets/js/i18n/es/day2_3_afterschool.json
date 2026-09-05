@@ -187,7 +187,7 @@
     },
     "after2_dain_skinship_2": {
         "name": "Dain",
-        "text": "...Ah, ¡perdón! A veces me pasa al terminar un partido."
+        "text": "Uy, ¿te ha dolido? Se me ha ido un poco la fuerza."
     },
     "after2_dain_skinship_3": {
         "name": "{name}",
@@ -284,7 +284,7 @@
     },
     "after2_seo_4": {
         "name": "Seoyeon",
-        "text": "*Señala una silla vacía con la esquina del portapapeles.* Qué obediente."
+        "text": "Menos mal que te he llamado."
     },
     "after2_seo_4_b": {
         "name": "Seoyeon",
@@ -296,7 +296,7 @@
     },
     "after2_seo_6": {
         "name": "Seoyeon",
-        "text": "No fue una petición. Fue darte una oportunidad."
+        "text": "Que gracias por venir, digo."
     },
     "after2_seo_6_b": {
         "name": "{name}",
@@ -325,7 +325,7 @@
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
-        "text": "...Sirves para esto."
+        "text": "Se te da mejor de lo que pensaba."
     },
     "after2_seo_8b3": {
         "name": "{name}",
@@ -353,18 +353,12 @@
         "name": "Seoyeon",
         "text": "*Los lentes se le deslizan un poco hacia la punta de la nariz y el bolígrafo se sale de la casilla de la fecha.*"
     },
-    "after2_seo_sunset_joke_b": {
-        "name": "Seoyeon",
-        "text": "*Mientras se tapa la boca con el borde de los documentos, la tapa del bolígrafo rueda bajo el escritorio.*"
-    },
+    "after2_seo_sunset_joke_b": {},
     "after2_seo_sunset_react": {
         "name": "Seoyeon",
-        "text": "...Si sueltas cosas así de repente, ni siquiera me da tiempo a apuntarlas."
+        "text": "…Esa aclaración solo lo hace más sospechoso."
     },
-    "after2_seo_sunset_react_b": {
-        "name": "Seoyeon",
-        "text": "*Aún tapándose la boca con el borde de los documentos, sigue con la punta del bolígrafo la franja naranja del marco de la ventana.*"
-    },
+    "after2_seo_sunset_react_b": {},
     "after2_seo_neck_worry": {
         "name": "Seoyeon",
         "text": "Estoy bien. Esto lo tengo a diario."
@@ -383,7 +377,7 @@
     },
     "after2_seo_neck_touch": {
         "name": "Seoyeon",
-        "text": "¿Piensas usar mi caja de archivo como soporte?"
+        "text": "¿Quieres usar eso de soporte?"
     },
     "after2_seo_neck_high": {
         "name": "{name}",
@@ -452,7 +446,7 @@
     },
     "after2_seo_stay_3b": {
         "name": "Seoyeon",
-        "text": "Nunca. — Solo aquí."
+        "text": "Ahora pensaba descansar."
     },
     "after2_seo_stay_3c": {
         "name": "{name}",

@@ -129,7 +129,7 @@
     },
     "tour_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Pasa los dedos por los lomos de los libros y luego levanta la cabeza.* Como es la última vez, hablo más de lo normal."
+        "text": "*Pasa un dedo por el lomo y levanta la cabeza.* Hoy he hablado bastante, ¿no?"
     },
     "tour_yuna_end": {
         "name": "Yuna",
@@ -157,7 +157,7 @@
     },
     "tour_dain_3": {
         "name": "Dain",
-        "text": "Oye, ¿jugamos una última ronda de piedra, papel o tijera?"
+        "text": "Oye, ¿otra ronda de piedra, papel o tijera?"
     },
     "tour_dain_4": {
         "name": "{name}",
@@ -205,7 +205,7 @@
     },
     "tour_dain_freetalk": {
         "name": "Dain",
-        "text": "*Detiene el balón de voleibol bajo la suela de su tenis.* Aunque sea la última hora del almuerzo, no puedo dejar que pase sin más."
+        "text": "*Frena con la zapatilla un balón que venía rodando.* Es el descanso de la fiesta del instituto. Da pena dejarlo aquí."
     },
     "tour_dain_end_2": {
         "name": "{name}",
@@ -250,7 +250,7 @@
     },
     "tour_co_dain_2": {
         "name": "Dain",
-        "text": "Piedra, papel o tijera, mañana. Hoy me quedo de pie."
+        "text": "Piedra, papel o tijera lo dejamos para mañana. Hoy quiero descansar."
     },
     "tour_co_dain_3": {
         "name": "{name}",

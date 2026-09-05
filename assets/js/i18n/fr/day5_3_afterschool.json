@@ -262,11 +262,11 @@
     },
     "after5_last_chance_yuna_low_2": {
         "name": "Yuna",
-        "text": "*Elle se retourne lentement. Ses bras se resserrent autour du livre qu'elle tient.* ...Quoi."
+        "text": "*Yuna se retourne, serrant son livre contre elle.* Quoi ?"
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*Le coin du téléphone appuie dans ma paume.*",
+        "text": "*Je la regarde et cherche mes mots.*",
         "choices": [
             "Lui dire qu’elle me plaît",
             "Ne pas encore le dire",
@@ -275,7 +275,7 @@
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*Je remets mon téléphone dans ma poche et appelle son nom.*"
+        "text": "*Je prends une inspiration et prononce son nom.*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "after5_confess_react_yuna_low": {
         "name": "Yuna",
-        "text": "*Elle replie le mot et le serre dans sa main.* ...Je l'ai lu. Mais je ne peux pas encore décider de la fin."
+        "text": "*Yuna serre son livre.* J’ai entendu. Mais je ne peux pas encore te répondre."
     },
     "after5_confess_fail_walk_1": {
         "name": "{name}",
@@ -366,15 +366,15 @@
     },
     "after5_set_harem": {
         "name": "{name}",
-        "text": "*Les mots laissés en suspens à midi sont toujours là. Les trois conversations s'affichent en même temps, et je ne parviens à taper la première lettre dans aucune.*"
+        "text": "*Je regarde les trois noms dans ma liste de conversations et leur propose à chacune de se retrouver un instant derrière le lycée.*"
     },
     "after5_harem_commit": {
         "name": "{name}",
-        "text": "*Après avoir regardé tour à tour les trois conversations, je pose mon téléphone. « Je n’ai pas réussi à choisir une seule personne. » Les trois regards quittent l’écran pour se poser sur {name}.*"
+        "text": "*Un peu plus tard, elles arrivent l’une après l’autre. Je range mon téléphone et leur fais face. « Je n’ai pas réussi à choisir une seule personne. » Aucune ne répond tout de suite.*"
     },
     "after5_harem_walk_1": {
         "name": "{name}",
-        "text": "*Jusqu'à l'arrière de l'école, personne ne parle le premier.*"
+        "text": "*Nous marchons ensemble vers le parc. Pendant un moment, personne ne parle.*"
     },
     "after5_harem_walk_2": {
         "name": "{name}",
@@ -429,7 +429,7 @@
     },
     "after5_co_teacher_2": {
         "name": "Professeure principale",
-        "text": "Ne viens pas en salle des professeurs aujourd’hui."
+        "text": "Fixons un autre moment pour parler. Aujourd’hui, je dois finir de ranger après la fête."
     },
     "after5_co_nurse_1": {
         "name": "Infirmière",
@@ -437,7 +437,7 @@
     },
     "after5_co_nurse_2": {
         "name": "Infirmière",
-        "text": "Si tu as mal, va voir quelqu’un d’autre. Pas moi aujourd’hui."
+        "text": "Si tu es malade, viens à l’infirmerie. On reprendra cette conversation au prochain rendez-vous."
     },
     "after5_co_tempter_seo_1": {
         "name": "Seoyeon",
@@ -468,10 +468,7 @@
         "text": "*L'événement touche à sa fin. Dans le couloir, je croise les deux personnes que je n'ai pas choisies.*"
     },
     "after5_farewell_seo_affinity_check": {},
-    "after5_farewell_seo_high_1": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon sort de son porte-bloc la note du premier jour et lisse le coin plié avec son pouce.* Je l’ai toujours."
-    },
+    "after5_farewell_seo_high_1": {},
     "after5_farewell_seo_high_2": {
         "name": "Seoyeon",
         "text": "Je sais qui tu as choisie. Mais je ne ferai pas comme si le temps où je t’aimais n’avait jamais existé."

@@ -3,10 +3,7 @@
         "name": "{name}",
         "text": "*Back home, I shower and lie down in bed — and messenger notifications start pouring in. Three people, all at once.*"
     },
-    "night2_msg_1": {
-        "name": "{name}",
-        "text": "*Messages from three people.*"
-    },
+    "night2_msg_1": {},
     "night2_msg_dain_specific": {
         "name": "Dain",
         "text": "Hey, the tteokbokki was good today!"
@@ -29,11 +26,11 @@
     },
     "night2_msg_yuna_specific": {
         "name": "Yuna",
-        "text": "I liked that song today."
+        "text": "What did you think of the piece I played for you today?"
     },
     "night2_msg_yuna_specific_2": {
         "name": "Yuna",
-        "text": "Play it for me again sometime."
+        "text": "Next time, show me something you like, too."
     },
     "night2_msg_dain_general": {
         "name": "Dain",
@@ -129,7 +126,7 @@
     "night2_reply_yuna_1": {},
     "night2_reply_yuna_2": {
         "name": "Yuna",
-        "text": "Okay. Take your time reading."
+        "text": "Okay. I’d like to hear what you think."
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
@@ -167,7 +164,7 @@
     "night2_dain_freetalk": {
         "name": "Dain",
         "text": "Wait, before you actually sleep. What was the most fun part of today?",
-        "context": "It is the night of Day 2, and Dain and the transfer student are wrapping up the day over messenger. Their time together today and the messages already exchanged are established events. They are not dating yet, and this is a phone chat rather than a face-to-face meeting. Do not have Dain arrive in person or act as if they share a room.",
+        "context": "[Medium: phone messages] On the second night after the transfer, Dain and the student talk about their day. Only recall shared places or activities when the saved events confirm them. Continue the messages just exchanged; they are not dating yet.",
         "personality": "Dain is a candid, quick-reacting volleyball player. Her energy carries through in text, but she does not pressure the other person to answer. When interested, she shows it naturally through teasing and direct questions."
     },
     "night2_seo_freetalk": {
@@ -179,7 +176,7 @@
     "night2_yuna_freetalk": {
         "name": "Yuna",
         "text": "Wait. If you're still awake, want to talk a little longer?",
-        "context": "It is the night of Day 2, and Yuna is quietly continuing a messenger conversation. Today's memories of the annex and books, along with the messages already exchanged, have happened. They are not dating and are carefully building trust. This is a phone chat, so do not turn it into a scene where they see or touch each other in person.",
+        "context": "[Medium: phone messages] On the second night after the transfer, the student continues a quiet conversation with Yuna. Recall borrowed books, annex visits, and shared music only as confirmed by saved events and the messages just exchanged. They are not dating yet and are in separate places.",
         "personality": "Yuna is thoughtful and observant. She chooses her words before sending them, and as she grows comfortable she volunteers more of her tastes and questions. She does not treat silence as rejection and respects the other person's pace."
     },
     "night2_hidden_check": {
@@ -246,10 +243,7 @@
         "name": "{name}",
         "text": "*The three names stack up on my lock screen. I read every notification, turn off the display, then turn it on again.*"
     },
-    "night2_end_2_b": {
-        "name": "{name}",
-        "text": "*Two unread notifications are stacked above Minsu's message.*"
-    },
+    "night2_end_2_b": {},
     "night2_end_3_b": {
         "name": "{name}",
         "text": "*Even after the screen goes dark, my hand stays wrapped around the phone.*"

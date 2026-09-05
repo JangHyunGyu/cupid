@@ -2356,8 +2356,6 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "isRemote": false
     },
     "day5_yuna_ending_freetalk_intro": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_smile.png",
         "routeBeforeRender": true,
         "next": "day5_yuna_ending_freetalk_router"
     },
@@ -2419,8 +2417,6 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "isRemote": false
     },
     "day5_dain_ending_freetalk_intro": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
         "routeBeforeRender": true,
         "next": "day5_dain_ending_freetalk_router"
     },

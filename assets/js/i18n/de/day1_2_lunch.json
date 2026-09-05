@@ -168,7 +168,7 @@
     },
     "lunch_seo_after": {
         "name": "{name}",
-        "text": "*Über die Lautsprecher am Sportplatz ertönt das Signal, das das Ende der Mittagspause ankündigt.*"
+        "text": "*Vom Schulhof dringt Gelächter herauf.*"
     },
     "lunch_seo_after_2": {
         "name": "Seoyeon",
@@ -180,16 +180,13 @@
     },
     "lunch_seo_after_4": {
         "name": "Seoyeon",
-        "text": "Nein. Ich erlaube es dir."
+        "text": "Ich lade dich zum Essen ein. Komm vorbei, wenn du Zeit hast."
     },
     "lunch_seo_after_5": {
         "name": "Seoyeon",
         "text": "*Sie bindet das Band um die Lunchbox, löst es wieder und zieht es noch fester.*"
     },
-    "lunch_seo_after_7": {
-        "name": "{name}",
-        "text": "*Der Knoten um die Lunchbox sitzt nun fester als zuvor.*"
-    },
+    "lunch_seo_after_7": {},
     "lunch_seo_freetalk": {
         "name": "Seoyeon",
         "text": "*Sie richtet den Deckel der Lunchbox aus und schiebt den Klappstuhl mit der Schuhspitze ein Stück zur Seite.* Angenehmer Wind, oder?",
@@ -278,11 +275,11 @@
     },
     "lunch_dain_20": {
         "name": "Dain",
-        "text": "PR? Was heißt das?"
+        "text": "PR? Werbung oder persönlicher Rekord?"
     },
     "lunch_dain_21": {
         "name": "{name}",
-        "text": "Personal Record. Ein Sportbegriff."
+        "text": "Diesmal Werbung. Du suchst wohl Freunde, die mit dir mithalten können."
     },
     "lunch_dain_22": {
         "name": "Dain",
@@ -290,7 +287,7 @@
     },
     "lunch_dain_23": {
         "name": "Dain",
-        "text": "Oh, du kennst das?! Du kennst dich doch mit Sport aus?!"
+        "text": "Erwischt. Kennst du dich denn mit Sport aus?"
     },
     "lunch_dain_choice": {
         "name": "Dain",
@@ -405,15 +402,15 @@
     },
     "lunch_yuna_18": {
         "name": "Yuna",
-        "text": "*Yuna schlägt ihr eigenes Buch wieder auf. Das Buch, das sie mir geliehen hat, lässt sie beim ersten Satz aufgeschlagen liegen.*"
+        "text": "*Yuna schlägt ebenfalls ihr Buch auf. Wir sitzen uns gegenüber und lesen still.*"
     },
     "lunch_yuna_20": {
         "name": "{name}",
-        "text": "*Die Vorwarnklingel läutet fünf Minuten vor Unterrichtsbeginn.*"
+        "text": "*Als ich vom Buch aufsehe, schaut Yuna mich an.*"
     },
     "lunch_yuna_21": {
         "name": "{name}",
-        "text": "Es klingelt schon?"
+        "text": "Wolltest du etwas sagen?"
     },
     "lunch_yuna_22": {
         "name": "Yuna",
@@ -429,13 +426,13 @@
     },
     "lunch_yuna_25": {
         "name": "Yuna",
-        "text": "*Yuna packt ihr Buch ein. Bevor sie aufsteht, schaut sie noch einmal auf den Einband des Buches in meiner Hand.*"
+        "text": "*Yuna sieht auf den Einband meines Buches. Einen Moment lang treffen sich unsere Blicke.*"
     },
     "lunch_yuna_choice": {
         "name": "{name}",
-        "text": "*Yuna ist erst ein paar Schritte voraus. Ich nehme das Buch, das sie liegen gelassen hat, und eile ihr hinterher.*",
+        "text": "*Ich klappe das Buch zu und sehe Yuna an.*",
         "choices": [
-            "Ist das Buch gut? Soll ich es auch mal lesen?",
+            "Ich würde gern weiterlesen.",
             "Du sitzt wohl am liebsten still da und liest.",
             "Ich unterhalte dich besser als das Buch.",
             "Wir könnten uns miteinander wohlfühlen, ohne reden zu müssen."
@@ -459,7 +456,7 @@
     },
     "lunch_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Sie schiebt ihr Lesezeichen zwischen die Seiten, klappt das Buch zu und deutet mit der Handfläche auf den Stuhl gegenüber.* Du hast doch nichts gegen die Ruhe, oder?",
+        "text": "*Yuna legt die Hände auf ihr Buch.* Die Ruhe stört dich doch nicht, oder?",
         "context": "Mittagspause am ersten Tag, direkt nach einer ruhigen Zeit mit Yuna in der Bibliothek. Sie kennen einander noch kaum, doch zwischen ihnen liegt eine stille Neugier.",
         "personality": "Yuna ist eine zurückhaltende und vorsichtige Leserin. Sie beobachtet und denkt meist nach, bevor sie spricht, und zeigt mit wachsendem Vertrauen mehr von ihren eigenen Gedanken."
     },

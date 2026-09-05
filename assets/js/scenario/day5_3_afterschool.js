@@ -166,9 +166,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "after5_farewell_seo_2"
     },
     "after5_farewell_seo_high_1": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "after5_farewell_seo_high_2"
+        "next": "after5_farewell_seo_high_2",
+        "routeBeforeRender": true
     },
     "after5_farewell_seo_high_2": {
         "background": "assets/images/background/school_hallway.png",

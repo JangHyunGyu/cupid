@@ -13,7 +13,7 @@
     },
     "confess_seo_1": {
         "name": "{name}",
-        "text": "*La cita está llegando a su fin. En vez de ir a la entrada, subimos a la azotea.*"
+        "text": "*Al terminar la cita, volvemos hasta la entrada del instituto.*"
     },
     "confess_seo_2": {
         "name": "Seoyeon",
@@ -56,7 +56,7 @@
     },
     "confess_seo_yes_3": {
         "name": "{name}",
-        "text": "Quiero seguir viéndote después de hoy."
+        "text": "Me gustas. Quiero seguir viéndote después de hoy."
     },
     "confess_seo_yes_4": {
         "name": "{name}",
@@ -159,7 +159,7 @@
     },
     "confess_yuna_yes_3": {
         "name": "{name}",
-        "text": "Yuna. Contigo dejo de medir tanto mis palabras."
+        "text": "Yuna, me gustas. Contigo no tengo que guardarme lo que quiero decir."
     },
     "confess_yuna_yes_3_b": {
         "name": "{name}",
@@ -267,7 +267,7 @@
     },
     "confess_dain_yes_3_b": {
         "name": "{name}",
-        "text": "Quiero seguir viéndote después de hoy."
+        "text": "Me gustas. No quiero que esto se quede en hoy; quiero seguir viéndote."
     },
     "confess_dain_yes_4": {
         "name": "{name}",

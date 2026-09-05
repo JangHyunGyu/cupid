@@ -13,7 +13,7 @@
     },
     "confess_seo_1": {
         "name": "{name}",
-        "text": "*Le rendez-vous est terminé. Au lieu de passer le portail, nous montons sur le toit.*"
+        "text": "*Après notre rendez-vous, nous revenons devant le lycée.*"
     },
     "confess_seo_2": {
         "name": "Seoyeon",
@@ -56,7 +56,7 @@
     },
     "confess_seo_yes_3": {
         "name": "{name}",
-        "text": "J'ai envie de continuer à te voir après aujourd'hui."
+        "text": "Tu me plais. J’ai envie qu’on continue à se voir après aujourd’hui."
     },
     "confess_seo_yes_4": {
         "name": "{name}",
@@ -159,7 +159,7 @@
     },
     "confess_yuna_yes_3": {
         "name": "{name}",
-        "text": "Yuna. Avec toi, je choisis moins mes mots."
+        "text": "Yuna, tu me plais. Avec toi, je n’ai pas besoin de retenir ce que j’ai envie de dire."
     },
     "confess_yuna_yes_3_b": {
         "name": "{name}",
@@ -267,7 +267,7 @@
     },
     "confess_dain_yes_3_b": {
         "name": "{name}",
-        "text": "J'ai envie de continuer à te voir après aujourd'hui."
+        "text": "Tu me plais. J’ai envie de continuer à te voir, pas seulement aujourd’hui."
     },
     "confess_dain_yes_4": {
         "name": "{name}",

@@ -119,7 +119,7 @@
     },
     "lunch2_seo_13b_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon nudges the lunchbox closer to {name}.* The seat may be open, but the promise isn't."
+        "text": "*Seoyeon moves her lunchbox closer to {name}.* You can sit. Just let us finish our conversation."
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
@@ -192,12 +192,9 @@
     },
     "lunch2_seo_c2_2": {
         "name": "Seoyeon",
-        "text": "You'll only smear it if you wipe it yourself."
+        "text": "Use the wet wipe."
     },
-    "lunch2_seo_c2_3": {
-        "name": "Seoyeon",
-        "text": "*Her hands slip twice while lining up the lunchbox lid. It clicks shut on the third try.*"
-    },
+    "lunch2_seo_c2_3": {},
     "lunch2_seo_end_c2": {
         "name": "{name}",
         "text": "*The rice mark is still on the back of my hand. Seoyeon unties the lunchbox strap and ties it again.*"
@@ -415,10 +412,7 @@
         "name": "School Nurse",
         "text": "It's a trick I learned at the hospital. Bandages last longer when you apply them this way over a joint."
     },
-    "lunch2_dain_end_q": {
-        "name": "{name}",
-        "text": "*The bandage doesn't crease, even when I bend my elbow.*"
-    },
+    "lunch2_dain_end_q": {},
     "lunch2_dain_end_r": {
         "name": "{name}",
         "text": "*As I check the bandage, I notice a pale green notebook jutting out of the desk drawer. The first line on the open page reads, 'To you, that day—' The nurse closes the drawer.*"
@@ -433,7 +427,7 @@
     },
     "lunch2_dain_end_u": {
         "name": "School Nurse",
-        "text": "*She takes her hand off the drawer handle.* That's worth one secret, isn't it?"
+        "text": "*She lets go of the drawer handle.* That’s enough about me. How’s the bandage?"
     },
     "lunch2_dain_end_v": {},
     "lunch2_dain_end_w": {
@@ -637,7 +631,7 @@
     },
     "lunch2_yuna_c1_10": {
         "name": "Yuna",
-        "text": "It wasn't sudden. She transferred."
+        "text": "I only found out about the transfer afterward. Before that, not a word."
     },
     "lunch2_yuna_c1_11": {
         "name": "{name}",

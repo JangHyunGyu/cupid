@@ -13,7 +13,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*Vor dem fremden Schultor. Nur an meiner Uniform sind die Bügelfalten noch deutlich zu sehen. Neben dem Tor rückt eine Schülerin mit langen schwarzen Haaren ihre Brille zurecht und sieht auf die Uhr. Als ich näher komme, blickt sie auf.*"
+        "text": "*Am Schultor rückt ein Mädchen mit langen schwarzen Haaren seine Brille zurecht und sieht auf die Uhr. Als ich näher komme, hebt sie den Blick.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -41,7 +41,7 @@
     },
     "seoyeon_meet_7": {
         "name": "Seoyeon",
-        "text": "Ob's eine Ehre ist oder nicht — das entscheide immer noch ich."
+        "text": "Neue Schüler herumzuführen gehört auch zu meinen Aufgaben. Mach dir keinen Kopf."
     },
     "seoyeon_meet_8": {
         "name": "{name}",
@@ -90,7 +90,7 @@
     },
     "choice_flirt_6": {
         "name": "Seoyeon",
-        "text": "Noch weißt du ja nicht, ob's eine Ehre oder eine Katastrophe wird."
+        "text": "Mal sehen, ob du das in ein paar Tagen immer noch sagst."
     },
     "choice_flirt_7": {
         "name": "Seoyeon",
@@ -182,7 +182,7 @@
     },
     "classroom_5_b": {
         "name": "Klassenlehrerin",
-        "text": "Gut, {name}. Hab ich. *Sie fährt den Namen im Klassenbuch mit dem Stift nach und fügt leise hinzu:* Ich muss einen Namen nur einmal hören."
+        "text": "Willkommen, {name}. Lass dir Zeit, dich einzuleben."
     },
     "classroom_5_c": {
         "name": "{name}",

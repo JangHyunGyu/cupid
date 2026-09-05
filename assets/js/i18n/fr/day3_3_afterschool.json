@@ -125,7 +125,7 @@
     },
     "after3_seo_pity_trap_5": {
         "name": "Seoyeon",
-        "text": "Je ne suis pas devenue présidente du conseil pour être « n'importe qui »."
+        "text": "Ne balaie pas ça d’une phrase, s’il te plaît. Là, je ne peux pas aller mieux comme ça."
     },
     "after3_seo_pity_trap_6": {
         "name": "Seoyeon",
@@ -177,7 +177,7 @@
     },
     "after3_seo_correct_8": {
         "name": "{name}",
-        "text": "*Pendant que Seoyeon rajuste ses lunettes, je poursuis cette conversation inutile sur les stylos. Je garde les yeux sous le bureau jusqu'au bout.*"
+        "text": "*Je continue à parler de stylos pendant que Seoyeon rajuste ses lunettes. J’attends qu’elle cherche mon regard.*"
     },
     "after3_seo_correct_9": {
         "name": "Seoyeon",
@@ -189,7 +189,7 @@
     },
     "after3_seo_correct_11": {
         "name": "Seoyeon",
-        "text": "Pour le stylo. — Reviens en ramasser un de temps en temps."
+        "text": "La prochaine fois que tu perds un stylo, viens d’abord ici."
     },
     "after3_seo_correct_12": {
         "name": "{name}",
@@ -228,7 +228,7 @@
     },
     "after3_reject_for_yuna_4": {
         "name": "{name}",
-        "text": "*Je quitte le gymnase et retourne dans le couloir. Le message de Seoyeon reste marqué comme lu et Dain n'a toujours pas répondu.*"
+        "text": "*Avec Seoyeon, je n’ai parlé que du travail. À Dain, j’ai à peine dit bonjour. Je n’ai toujours pas dit ce que j’avais à leur dire.*"
     },
     "after3_yuna_1": {
         "name": "{name}",
@@ -393,7 +393,7 @@
     },
     "after3_reject_for_dain_3b": {
         "name": "{name}",
-        "text": "*Je retourne dans le couloir. Une traînée d'eau laissée par le gobelet de Yuna marque encore le sol.*"
+        "text": "*Je quitte l’annexe et me dirige vers le gymnase.*"
     },
     "after3_dain_1": {
         "name": "{name}",
@@ -463,11 +463,11 @@
     },
     "after3_dain_pity_trap_9": {
         "name": "Dain",
-        "text": "Le coach fait pareil. Mes parents font pareil. Tout le monde fait pareil. — Je pensais que toi, non."
+        "text": "Je ne voulais pas entendre ça de ta part aussi."
     },
     "after3_dain_pity_trap_10": {
         "name": "{name}",
-        "text": "*La porte du gymnase se ferme. Pas un claquement. Doucement. Un des protège-poignets de Dain gît sur le sol.*"
+        "text": "*La porte du gymnase se referme doucement. Le protège-poignet oublié par Dain reste par terre.*"
     },
     "after3_dain_correct_1": {
         "name": "Dain",
@@ -540,7 +540,7 @@
     },
     "after3_dain_dilemma_tell_7": {
         "name": "Dain",
-        "text": "*Dain se lève et se penche pour nouer ses lacets. Son genou craque et sa main n’arrive pas jusqu’aux lacets.*"
+        "text": "*Dain se penche pour nouer son lacet, puis se saisit le genou sans avoir pu atteindre sa chaussure.*"
     },
     "after3_dain_dilemma_tell_8": {
         "name": "Dain",
@@ -885,7 +885,7 @@
     },
     "haeun_affinity_neutral_2": {
         "name": "Haeun",
-        "text": "Mais je verrai si vous tenez parole. Aujourd’hui, ne laissez pas Seoyeon seule."
+        "text": "Tenez quand même votre promesse. Et vérifiez plus tard qu’elle est bien rentrée."
     },
     "haeun_affinity_low_1": {
         "name": "Haeun",
@@ -944,7 +944,7 @@
     "after3_dain_departed_end": {},
     "minsu_d3_4_established": {
         "name": "Minsu",
-        "text": "Je te l’ai dit hier : ce que tu dis en passant peut compter pour l’autre. Tu as vu, ce midi ?"
+        "text": "Hier aussi, ça m’a fait tiquer. L’une à midi, une autre après les cours. Avec ce qui s’est passé aujourd’hui, je crois pas que tu puisses laisser traîner."
     },
     "minsu_d3_4_first": {
         "name": "Minsu",

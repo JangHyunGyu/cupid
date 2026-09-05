@@ -168,7 +168,7 @@
     },
     "lunch_seo_after": {
         "name": "{name}",
-        "text": "*Le haut-parleur du terrain diffuse le signal annonçant la fin prochaine de la pause déjeuner.*"
+        "text": "*Des rires montent de la cour.*"
     },
     "lunch_seo_after_2": {
         "name": "Seoyeon",
@@ -180,16 +180,13 @@
     },
     "lunch_seo_after_4": {
         "name": "Seoyeon",
-        "text": "Non. C’est une autorisation."
+        "text": "Je te propose de manger avec moi. Passe si tu es libre."
     },
     "lunch_seo_after_5": {
         "name": "Seoyeon",
         "text": "*Elle noue une première fois l'élastique du bento, puis le resserre.*"
     },
-    "lunch_seo_after_7": {
-        "name": "{name}",
-        "text": "*Le nœud du bento est plus serré qu'auparavant.*"
-    },
+    "lunch_seo_after_7": {},
     "lunch_seo_freetalk": {
         "name": "Seoyeon",
         "text": "*Elle range le couvercle du bento et pousse la chaise pliante d'une vingtaine de centimètres du bout de sa chaussure.* Le vent ne te dérange pas ?",
@@ -278,11 +275,11 @@
     },
     "lunch_dain_20": {
         "name": "Dain",
-        "text": "PR ? Ça veut dire quoi ?"
+        "text": "PR ? Relations publiques ou record personnel ?"
     },
     "lunch_dain_21": {
         "name": "{name}",
-        "text": "Personal Record. C'est un terme qu'on utilise dans le sport."
+        "text": "La pub, cette fois. Tu recrutes des amis capables de te suivre."
     },
     "lunch_dain_22": {
         "name": "Dain",
@@ -290,7 +287,7 @@
     },
     "lunch_dain_23": {
         "name": "Dain",
-        "text": "Oh, tu connais ça ?! Alors tu t’y connais en sport ?!"
+        "text": "Tu m’as percée à jour. Alors, tu t’y connais en sport ?"
     },
     "lunch_dain_choice": {
         "name": "Dain",
@@ -405,15 +402,15 @@
     },
     "lunch_yuna_18": {
         "name": "Yuna",
-        "text": "*Yuna rouvre son propre livre. Celui qu'elle m'a prêté reste ouvert sur sa première phrase.*"
+        "text": "*Yuna ouvre aussi son livre. Assis face à face, nous lisons en silence.*"
     },
     "lunch_yuna_20": {
         "name": "{name}",
-        "text": "*La sonnerie d’avertissement retentit, cinq minutes avant le cours.*"
+        "text": "*Je relève les yeux de mon livre. Yuna me regarde.*"
     },
     "lunch_yuna_21": {
         "name": "{name}",
-        "text": "Déjà ?"
+        "text": "Tu voulais me dire quelque chose ?"
     },
     "lunch_yuna_22": {
         "name": "Yuna",
@@ -429,13 +426,13 @@
     },
     "lunch_yuna_25": {
         "name": "Yuna",
-        "text": "*Yuna range son livre. Avant de se lever, elle regarde encore la couverture de celui que je tiens.*"
+        "text": "*Yuna regarde la couverture de mon livre. Nos regards se croisent un instant.*"
     },
     "lunch_yuna_choice": {
         "name": "{name}",
-        "text": "*Je remarque le livre que Yuna a oublié. Elle n'est encore qu'à quelques pas. Je me lance à sa poursuite.*",
+        "text": "*Je referme mon livre et regarde Yuna.*",
         "choices": [
-            "Il est bien ce livre ? Je devrais le lire aussi ?",
+            "J’aimerais lire la suite.",
             "On dirait que tu aimes rester tranquille avec un livre.",
             "Je saurai être plus intéressant que ce livre.",
             "On pourrait être bien ensemble sans même avoir à parler."
@@ -459,7 +456,7 @@
     },
     "lunch_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Elle glisse son marque-page et referme le livre, puis désigne de la paume la chaise d'en face.* Le silence ne te dérange pas, si ?",
+        "text": "*Yuna pose ses mains sur son livre.* Le silence ne te dérange pas, hein ?",
         "context": "Déjeuner du premier jour, juste après avoir passé un moment calme avec Yuna à la bibliothèque. Ils se connaissent encore peu, mais une curiosité silencieuse circule entre eux.",
         "personality": "Yuna est une lectrice réservée et prudente. Elle observe et réfléchit avant de parler, puis dévoile davantage ses propres pensées à mesure que la confiance grandit."
     },

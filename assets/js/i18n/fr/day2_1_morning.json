@@ -116,7 +116,7 @@
     },
     "morning2_seo_5": {
         "name": "Seoyeon",
-        "text": "C'est une ronde. — Et un contrôle de présence en même temps."
+        "text": "J’allais à la salle des profs. Je voulais juste passer te voir."
     },
     "morning2_minsu_1": {
         "name": "Seoyeon",
@@ -152,7 +152,7 @@
     },
     "morning2_dain_claim_6": {
         "name": "Dain",
-        "text": "C'est moi qui t'ai vu en premier~ donc oui, t'es à nous. Réservé."
+        "text": "On est dans la même classe, assis côte à côte. C’est bien le minimum."
     },
     "morning2_break_transition": {
         "name": "{name}",
@@ -267,17 +267,14 @@
         "name": "Professeure principale",
         "text": "*Elle repose son café.* ...Bref. De ton côté, rien de particulier."
     },
-    "hidden_homeroom_d2_8_f": {
-        "name": "Professeure principale",
-        "text": "*La professeure principale se couvre la bouche avec la tasse à café et fait tourner la soucoupe deux fois au même endroit.*"
-    },
+    "hidden_homeroom_d2_8_f": {},
     "hidden_homeroom_d2_9": {
         "name": "{name}",
         "text": "Merci, madame."
     },
     "hidden_homeroom_d2_10": {
         "name": "Professeure principale",
-        "text": "Ça fait partie du suivi de la classe dont j'ai la charge. C'est mon travail."
+        "text": "Ça fait aussi partie de mon travail de professeure principale. Ne sois pas si solennel."
     },
     "hidden_homeroom_d2_choice2": {
         "name": "{name}",
@@ -294,15 +291,15 @@
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Professeure principale",
-        "text": "*Elle cache sa bouche derrière sa tasse de café.* ...Ça suffit. Allez, file."
+        "text": "Évidemment que ça me fait plaisir de savoir que tu vas bien."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Professeure principale",
-        "text": "*Elle désigne la porte de la salle des profs avec son stylo.* Ça suffit. Allez, file."
+        "text": "Merci, ça me fait plaisir que tu me le dises."
     },
     "hidden_homeroom_d2_11": {
         "name": "Professeure principale",
-        "text": "Si je fais une exception pour le nouvel élève, les autres vont jaser."
+        "text": "Les autres viennent aussi me voir quand ça ne va pas. N’hésite pas à faire pareil."
     },
     "hidden_homeroom_d2_11_b": {
         "name": "Professeure principale",
@@ -359,7 +356,7 @@
     },
     "hidden_homeroom_d2_freetalk": {
         "name": "Professeure principale",
-        "text": "*La professeure retire sa main du tiroir fermé et se tourne vers moi.* Tu commences à prendre tes marques ?",
+        "text": "*Elle tourne sa chaise vers moi.* Tu avais d’autres questions ?",
         "context": "Nous sommes au matin du jour 2, juste après un entretien dans la salle des professeurs. L'élève transféré a aperçu par hasard un long manuscrit dans le tiroir de sa professeure, mais n'en connaît ni le contenu ni l'histoire. Ils commencent à se faire confiance en tant que professeure et élève. N'invente pas le secret du manuscrit et ne franchis pas les limites de cette relation.",
         "personality": "La professeure principale est calme et responsable ; elle écoute avant de conseiller. Sa gêne au sujet de ce manuscrit personnel se traduit par une brève hésitation, mais elle ne fait pas porter ses émotions à l'élève et garde une proximité chaleureuse et appropriée."
     },

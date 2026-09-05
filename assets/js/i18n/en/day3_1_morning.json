@@ -13,7 +13,7 @@
     },
     "morning3_date_dain_low": {
         "name": "Dain",
-        "text": "*Dain holds a volleyball against her side, glances your way, then looks back toward the court.* I'm practicing alone this weekend."
+        "text": "*Dain glances my way, then zips up her bag.* I’m practicing on my own this weekend."
     },
     "morning3_date_yuna_low": {
         "name": "Yuna",
@@ -368,7 +368,7 @@
     },
     "hidden_homeroom_d3_reveal_4_e": {
         "name": "Homeroom Teacher",
-        "text": "You can read it. I just won't slip it to you in secret. I'll start by getting it ready for the literature club's group critique."
+        "text": "I’m planning to bring it to the writing club’s critique session. Would you read it then?"
     },
     "hidden_homeroom_d3_reveal_4_f": {
         "name": "Homeroom Teacher",
@@ -409,7 +409,7 @@
     },
     "hidden_homeroom_d3_reveal_6_b": {
         "name": "Homeroom Teacher",
-        "text": "Then it'll be the first time I've put it in front of anyone in seven years."
+        "text": "I’ve been revising it on my own. This time I’ll get to hear people’s reactions in person."
     },
     "hidden_homeroom_d3_reveal_6_c": {
         "name": "{name}",
@@ -425,11 +425,11 @@
     },
     "hidden_homeroom_d3_reveal_6_f": {
         "name": "Homeroom Teacher",
-        "text": "Because it's quiet here. Still, from now on, let's only talk about the manuscript during literature club."
+        "text": "Anyway, let’s talk more about the manuscript at the critique session."
     },
     "hidden_homeroom_d3_reveal_6_g": {
         "name": "{name}",
-        "text": "*Only the second hand moves while I read a sentence covered in layers of eraser marks.*"
+        "text": "*She gathers the manuscript into an envelope, pausing before slipping in the last page.*"
     },
     "hidden_homeroom_d3_hide_1": {
         "name": "Homeroom Teacher",
@@ -485,14 +485,8 @@
         "name": "School Nurse",
         "text": "*The nurse sets down her cup.*"
     },
-    "hidden_nurse_d3_3_c": {
-        "name": "School Nurse",
-        "text": "Sit down."
-    },
-    "hidden_nurse_d3_3_d": {
-        "name": "School Nurse",
-        "text": "*She sets the cup farther back on the desk and pulls the patient chair in front of the bed.*"
-    },
+    "hidden_nurse_d3_3_c": {},
+    "hidden_nurse_d3_3_d": {},
     "hidden_nurse_d3_4": {
         "name": "School Nurse",
         "text": "*The nurse draws the curtain and hands me a cup of water.* Sit down. You can relax in here. Take your time."
@@ -575,7 +569,7 @@
     },
     "hidden_nurse_d3_6": {
         "name": "School Nurse",
-        "text": "When I worked at the university hospital, if several call bells rang at once, I found myself counting the empty beds first. I hated that."
+        "text": "At the university hospital, when several call bells went off, all I could think about was where to go first. Often I had to rush away before a patient had finished speaking."
     },
     "hidden_nurse_d3_6_b": {
         "name": "School Nurse",
@@ -583,7 +577,7 @@
     },
     "hidden_nurse_d3_6_c": {
         "name": "School Nurse",
-        "text": "I wouldn't say I quit. I left. There was no noble reason."
+        "text": "I didn’t think I could keep going."
     },
     "hidden_nurse_d3_6_d": {
         "name": "School Nurse",
@@ -636,7 +630,7 @@
     },
     "hidden_nurse_d3_choice2": {
         "name": "School Nurse",
-        "text": "*The nurse stops at 'one person.' The rim of the paper cup buckles beneath her fingers.*",
+        "text": "*The nurse closes the drawer. I stand by the door, choosing my words.*",
         "choices": [
             "Is that why you left the hospital?",
             "Are you okay talking more about it?",
@@ -697,7 +691,7 @@
         "name": "Seoyeon",
         "text": "*Seoyeon asks from the classroom doorway. The cap on Dain's water bottle stops turning.*",
         "choices": [
-            "Sure. Where?",
+            "Sure. What time?",
             "I might be kind of busy.",
             "You’re the student council president. Of course I’ll make time for you.",
             "I’ll clear my schedule if no one else is coming."
@@ -725,7 +719,7 @@
     },
     "morning3_date_dain_2": {
         "name": "Dain",
-        "text": "*Dain taps the edge of my desk. This break, Seoyeon is sorting papers at her own seat.*"
+        "text": "*Dain taps the edge of my desk. Through the open classroom door, I can see Seoyeon sorting her papers.*"
     },
     "morning3_date_dain_choice": {
         "name": "Dain",
@@ -739,7 +733,7 @@
     },
     "morning3_date_dain_accept": {
         "name": "{name}",
-        "text": "*We make plans for the weekend. As Dain smiles, Seoyeon closes her clipboard at her desk.*"
+        "text": "*Dain and I make plans for the weekend. As she grins, Seoyeon closes her clipboard outside the door.*"
     },
     "morning3_date_dain_decline": {
         "name": "Dain",

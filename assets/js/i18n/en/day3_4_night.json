@@ -53,7 +53,7 @@
     },
     "night3_dream_2_b": {
         "name": "{name}",
-        "text": "*I close the notes app. I still have no sentence to send tomorrow.*"
+        "text": "*I put down my phone. I still don’t know what I’ll say tomorrow.*"
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
@@ -65,7 +65,7 @@
     },
     "night3_faithful_reflect_2_c": {
         "name": "{name}",
-        "text": "*For one second, I stare at the screen. Sojeong's graffitied desk and the thirty-eight mornings I looked away return one after another.*"
+        "text": "*I stare at the screen for a moment, remembering the writing on Sojeong’s desk and the mornings I looked away.*"
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
@@ -139,7 +139,7 @@
     },
     "night3_cheat_msg_7": {
         "name": "Yuna",
-        "text": "*Three message bubbles rise in a row from Yuna.*"
+        "text": "*I reread Yuna’s messages. My finger hovers over the reply field, then pulls away.*"
     },
     "night3_nightmare_1": {
         "name": "{name}",
@@ -155,7 +155,7 @@
     },
     "night3_nightmare_3_b": {
         "name": "{name}",
-        "text": "*Only a read receipt sits beneath the three lines Yuna sent.*"
+        "text": "*Beneath Yuna’s messages, there’s only the read receipt.*"
     },
     "night3_nightmare_4": {
         "name": "{name}",
@@ -163,7 +163,7 @@
     },
     "night3_nightmare_4_b": {
         "name": "{name}",
-        "text": "*Only one sentence marked with laughter has arrived in Dain's chat.*"
+        "text": "*Dain’s only message starts with a laugh.*"
     },
     "night3_nightmare_5": {
         "name": "{name}",
@@ -212,11 +212,11 @@
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",
-        "text": "*I scan the list. A different last sentence remains beside each of the three names.*"
+        "text": "*I scan the chat list. A different message sits beside each of the three names.*"
     },
     "night3_cheat_reflect_3_d": {
         "name": "{name}",
-        "text": "*Minsu has replied, 'Putting it off won't make it disappear.'*"
+        "text": "*There’s a message from Minsu: ‘Putting it off won’t make it go away.’*"
     },
     "night3_cheat_reflect_3_e": {
         "name": "{name}",

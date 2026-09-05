@@ -273,9 +273,8 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "lunch2_seo_c2_3"
     },
     "lunch2_seo_c2_3": {
-        "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/seyoun_pout.png",
-        "next": "lunch2_seo_end_c2"
+        "next": "lunch2_seo_end_c2",
+        "routeBeforeRender": true
     },
     "lunch2_seo_end_c2": {
         "background": "assets/images/background/top_school.png",
@@ -571,9 +570,8 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "lunch2_dain_end_q"
     },
     "lunch2_dain_end_q": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_r"
+        "next": "lunch2_dain_end_r",
+        "routeBeforeRender": true
     },
     "lunch2_dain_end_r": {
         "background": "assets/images/background/nurse_room.png",

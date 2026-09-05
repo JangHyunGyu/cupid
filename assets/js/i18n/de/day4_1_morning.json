@@ -182,15 +182,15 @@
     },
     "hidden_homeroom_d4_cafe_1": {
         "name": "Klassenlehrerin",
-        "text": "Die anderen sitzen am Tisch dort hinten. Das Gerücht, wir wären allein hergekommen, verbreitet sich schneller als ein Manuskript."
+        "text": "Siehst du den Literaturklub am hinteren Tisch? Setzen wir uns erst mal hierhin."
     },
     "hidden_homeroom_d4_cafe_1_b": {
         "name": "{name}",
-        "text": "Genau das wollte ich auch gerade sagen."
+        "text": "Sind Sie nervös?"
     },
     "hidden_homeroom_d4_cafe_1_c": {
         "name": "Klassenlehrerin",
-        "text": "*Sie nimmt einen Schluck Kaffee.* Gut. Dann haben wir das beide festgehalten."
+        "text": "Ein bisschen. Ich überlege, ob ich das Manuskript noch schnell wieder einsammle."
     },
     "hidden_homeroom_d4_cafe_1_d": {
         "name": "Klassenlehrerin",
@@ -243,7 +243,7 @@
     },
     "hidden_homeroom_d4_cafe_choice_b": {
         "name": "Klassenlehrerin",
-        "text": "Natürlich. Das sind die Kopien für die heutige Besprechung. Es gibt kein Manuskript, das nur du lesen darfst."
+        "text": "Ja, alle haben dieselbe Fassung. Markier ruhig, was dir auffällt."
     },
     "hidden_homeroom_d4_cafe_4": {
         "name": "Klassenlehrerin",
@@ -279,7 +279,7 @@
     },
     "hidden_homeroom_d4_cafe_5_g": {
         "name": "Klassenlehrerin",
-        "text": "Und über das Manuskript reden wir nur im Literaturklub. Ich mische das nicht mit Unterricht oder Beratung."
+        "text": "Ich sammle die heutigen Anmerkungen. Beim nächsten Treffen gehen wir sie gemeinsam durch."
     },
     "hidden_homeroom_d4_cafe_5_h": {
         "name": "Klassenlehrerin",
@@ -349,7 +349,7 @@
     },
     "hidden_nurse_d4_morning_choice_trap": {
         "name": "Schulkrankenschwester",
-        "text": "Nein. Wenn ich die einzige Erwachsene bin, auf die du dich verlassen kannst, bist du wieder allein, sobald ich nicht da bin."
+        "text": "Du kannst zuerst zu mir kommen. Aber du brauchst auch jemanden, der da ist, wenn ich mal fehle."
     },
     "hidden_nurse_d4_morning_choice_a": {
         "name": "{name}",
@@ -536,7 +536,7 @@
     },
     "hidden_nurse_d4_meal_3": {
         "name": "Schulkrankenschwester",
-        "text": "Danke, aber mach meine Gefühle nicht auch noch zu deiner Verantwortung."
+        "text": "Findest du? Vorhin war ich wohl ziemlich angespannt. So, bringen wir noch diese Kiste zu Ende."
     },
     "hidden_nurse_d4_meal_3_b": {
         "name": "{name}",
@@ -592,6 +592,6 @@
     },
     "hidden_nurse_d4_trap": {
         "name": "Schulkrankenschwester",
-        "text": "Wahrscheinlich. Aber ich habe nicht wegen der Geschwindigkeit gefragt, ob jemand bleibt."
+        "text": "Allein schaffe ich das schon. Ich hatte nur gehofft, dass du mir noch beim Rest hilfst."
     }
 }

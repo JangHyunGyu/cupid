@@ -116,7 +116,7 @@
     },
     "morning2_seo_5": {
         "name": "Seoyeon",
-        "text": "Estoy haciendo la ronda. — De paso, reviso la asistencia."
+        "text": "Iba a la sala de profesores. Me he pasado a verte un momento."
     },
     "morning2_minsu_1": {
         "name": "Seoyeon",
@@ -152,7 +152,7 @@
     },
     "morning2_dain_claim_6": {
         "name": "Dain",
-        "text": "Yo te vi primero, así que sí: es nuestro. Me lo pido."
+        "text": "Estamos en la misma clase y nos sentamos juntos. Qué menos."
     },
     "morning2_break_transition": {
         "name": "{name}",
@@ -267,17 +267,14 @@
         "name": "Profesora",
         "text": "*Deja la taza sobre la mesa.* ...En fin. Por tu parte, todo en orden."
     },
-    "hidden_homeroom_d2_8_f": {
-        "name": "Profesora",
-        "text": "*La profesora tutora cubre su boca con la taza de café y gira el platillo dos veces en el mismo lugar.*"
-    },
+    "hidden_homeroom_d2_8_f": {},
     "hidden_homeroom_d2_9": {
         "name": "{name}",
         "text": "Gracias, profesora."
     },
     "hidden_homeroom_d2_10": {
         "name": "Profesora",
-        "text": "Entra dentro de mis funciones como tutora. Es trabajo."
+        "text": "También es parte de mi trabajo como tutora. No hace falta tanta formalidad."
     },
     "hidden_homeroom_d2_choice2": {
         "name": "{name}",
@@ -294,15 +291,15 @@
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Profesora",
-        "text": "*Se tapa la boca con la taza de café.* Ya está. Puedes irte."
+        "text": "Claro que me alegra saber que te va bien."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Profesora",
-        "text": "*Señala la puerta de la sala con el bolígrafo.* Ya está. Puedes irte."
+        "text": "Gracias por decírmelo."
     },
     "hidden_homeroom_d2_11": {
         "name": "Profesora",
-        "text": "...Si le doy trato preferencial al nuevo, los demás se van a quejar."
+        "text": "Los demás también vienen cuando tienen algún problema. Tú puedes hacer lo mismo."
     },
     "hidden_homeroom_d2_11_b": {
         "name": "Profesora",
@@ -359,7 +356,7 @@
     },
     "hidden_homeroom_d2_freetalk": {
         "name": "Profesora",
-        "text": "*La profesora aparta la mano del cajón cerrado y se vuelve hacia mí.* ¿Ya te vas acostumbrando al colegio?",
+        "text": "*Gira la silla hacia mí.* ¿Hay algo más que quieras preguntar?",
         "context": "Es la mañana del día 2, justo después de una tutoría en la sala de profesores. El estudiante transferido alcanzó a ver en el cajón de la profesora el manuscrito de una novela larga en la que lleva mucho tiempo trabajando, pero aún desconoce su contenido y sus circunstancias. Son profesora y alumno y apenas empiezan a crear confianza. No inventes el secreto del manuscrito ni cruces los límites entre profesora y alumno.",
         "personality": "La profesora es serena y responsable; escucha antes de aconsejar. Su vergüenza por el manuscrito personal se nota en una breve vacilación, pero no hace responsable al alumno de sus emociones y mantiene una cercanía apropiada."
     },

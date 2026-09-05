@@ -125,7 +125,7 @@
     },
     "after3_seo_pity_trap_5": {
         "name": "Seoyeon",
-        "text": "Ich bin nicht Schülersprecherin geworden, um nur eine von vielen zu sein."
+        "text": "Tu es bitte nicht mit diesem Satz ab. So leicht geht es mir gerade nicht wieder besser."
     },
     "after3_seo_pity_trap_6": {
         "name": "Seoyeon",
@@ -177,7 +177,7 @@
     },
     "after3_seo_correct_8": {
         "name": "{name}",
-        "text": "*Während Seoyeon ihre Brille zurechtrückt, rede ich weiter über die belanglosen Stifte. Mein Blick bleibt die ganze Zeit unter dem Schreibtisch.*"
+        "text": "*Während Seoyeon ihre Brille zurechtrückt, rede ich weiter über die Stifte und warte, bis sie mich ansieht.*"
     },
     "after3_seo_correct_9": {
         "name": "Seoyeon",
@@ -189,7 +189,7 @@
     },
     "after3_seo_correct_11": {
         "name": "Seoyeon",
-        "text": "Das mit dem Stift. Mach das irgendwann wieder."
+        "text": "Wenn dir wieder ein Stift fehlt, komm zuerst hierher."
     },
     "after3_seo_correct_12": {
         "name": "{name}",
@@ -228,7 +228,7 @@
     },
     "after3_reject_for_yuna_4": {
         "name": "{name}",
-        "text": "*Ich verlasse die Turnhalle und kehre auf den Flur zurück. Seoyeons Nachricht ist weiterhin als gelesen markiert; von Dain kommt keine Antwort.*"
+        "text": "*Mit Seoyeon habe ich nur über die Arbeit geredet und Dain bloß begrüßt. Was ich eigentlich sagen wollte, ist noch immer unausgesprochen.*"
     },
     "after3_yuna_1": {
         "name": "{name}",
@@ -393,7 +393,7 @@
     },
     "after3_reject_for_dain_3b": {
         "name": "{name}",
-        "text": "*Ich kehre auf den Flur zurück. Auf dem Boden sind noch die Wasserspuren zu sehen, die Yuna hinterlassen hat.*"
+        "text": "*Ich verlasse den Anbau und gehe zur Sporthalle.*"
     },
     "after3_dain_1": {
         "name": "{name}",
@@ -463,11 +463,11 @@
     },
     "after3_dain_pity_trap_9": {
         "name": "Dain",
-        "text": "Mein Coach sieht mich so an. Meine Eltern auch. Alle tun es. Ich dachte, du würdest es wenigstens nicht tun."
+        "text": "Von dir wollte ich das nicht auch noch hören."
     },
     "after3_dain_pity_trap_10": {
         "name": "{name}",
-        "text": "*Die Sporthallentür schließt sich. Kein Knall. Leise. Eine von Dains Handgelenkbandagen liegt auf dem Boden.*"
+        "text": "*Die Tür der Sporthalle fällt leise zu. Dains Handgelenkstütze liegt noch auf dem Boden.*"
     },
     "after3_dain_correct_1": {
         "name": "Dain",
@@ -540,7 +540,7 @@
     },
     "after3_dain_dilemma_tell_7": {
         "name": "Dain",
-        "text": "*Dain steht auf und beugt sich hinunter, um ihren Schuh zu binden. Ihr Knie knackt, und ihre Hand erreicht die Schnürsenkel nicht.*"
+        "text": "*Dain beugt sich zu ihrem Schnürsenkel hinunter, greift aber nach ihrem Knie, bevor sie ihn erreicht.*"
     },
     "after3_dain_dilemma_tell_8": {
         "name": "Dain",
@@ -885,7 +885,7 @@
     },
     "haeun_affinity_neutral_2": {
         "name": "Haeun",
-        "text": "Aber ich werde sehen, ob du dich an das hältst, was du gerade gesagt hast. Lass Seoyeon heute nur nicht allein."
+        "text": "Halten Sie bitte trotzdem Ihr Versprechen. Und fragen Sie später nach, ob sie gut nach Hause gekommen ist."
     },
     "haeun_affinity_low_1": {
         "name": "Haeun",
@@ -944,7 +944,7 @@
     "after3_dain_departed_end": {},
     "minsu_d3_4_established": {
         "name": "Minsu",
-        "text": "Das habe ich gestern gesagt: Was du beiläufig sagst, kann dem anderen viel bedeuten. Du hast es heute Mittag gesehen, oder?"
+        "text": "Gestern fiel es mir auch schon auf. Eine mittags, eine andere nach der Schule. Nach heute kannst du das wohl kaum einfach laufen lassen."
     },
     "minsu_d3_4_first": {
         "name": "Minsu",

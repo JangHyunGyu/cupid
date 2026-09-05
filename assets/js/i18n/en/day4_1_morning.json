@@ -182,15 +182,15 @@
     },
     "hidden_homeroom_d4_cafe_1": {
         "name": "Homeroom Teacher",
-        "text": "The club members are at a table in the back. Rumors that we came alone would spread faster than my manuscript."
+        "text": "See the writing club at that table in the back? Let’s sit here for a moment."
     },
     "hidden_homeroom_d4_cafe_1_b": {
         "name": "{name}",
-        "text": "I was just about to say the same thing."
+        "text": "Are you nervous?"
     },
     "hidden_homeroom_d4_cafe_1_c": {
         "name": "Homeroom Teacher",
-        "text": "*She takes a sip of coffee.* Good. Then we're on the same page."
+        "text": "A little. I’m tempted to take the manuscript back while I still can."
     },
     "hidden_homeroom_d4_cafe_1_d": {
         "name": "Homeroom Teacher",
@@ -243,7 +243,7 @@
     },
     "hidden_homeroom_d4_cafe_choice_b": {
         "name": "Homeroom Teacher",
-        "text": "Of course. These are the copies I'm handing out today. There isn't a separate version just for you."
+        "text": "Yes, everyone has the same draft. Mark whatever catches your attention."
     },
     "hidden_homeroom_d4_cafe_4": {
         "name": "Homeroom Teacher",
@@ -279,7 +279,7 @@
     },
     "hidden_homeroom_d4_cafe_5_g": {
         "name": "Homeroom Teacher",
-        "text": "And we'll only discuss the manuscript during club time. I won't mix it into class or counseling."
+        "text": "I’ll collect today’s comments so we can go through them together next time."
     },
     "hidden_homeroom_d4_cafe_5_h": {
         "name": "Homeroom Teacher",
@@ -349,7 +349,7 @@
     },
     "hidden_nurse_d4_morning_choice_trap": {
         "name": "School Nurse",
-        "text": "No. If I'm the only adult you can rely on, you'll be alone again the moment I'm not here."
+        "text": "You can come to me first. But you’ll need someone to turn to when I’m not here, too."
     },
     "hidden_nurse_d4_morning_choice_a": {
         "name": "{name}",
@@ -536,7 +536,7 @@
     },
     "hidden_nurse_d4_meal_3": {
         "name": "School Nurse",
-        "text": "I appreciate that, but don't make my feelings your responsibility."
+        "text": "Do I? I must’ve looked pretty tense earlier. All right, let’s finish this last box."
     },
     "hidden_nurse_d4_meal_3_b": {
         "name": "{name}",
@@ -592,6 +592,6 @@
     },
     "hidden_nurse_d4_trap": {
         "name": "School Nurse",
-        "text": "Probably. But speed isn't why I asked you to do it with me."
+        "text": "I can do it on my own. I was just hoping you’d help finish what’s left."
     }
 }

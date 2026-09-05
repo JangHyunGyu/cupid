@@ -53,7 +53,7 @@
     },
     "night3_dream_2_b": {
         "name": "{name}",
-        "text": "*Je ferme l'application de notes. Je n'ai toujours aucune phrase à envoyer demain.*"
+        "text": "*Je pose mon téléphone. Je ne sais toujours pas ce que je dirai demain.*"
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
@@ -65,7 +65,7 @@
     },
     "night3_faithful_reflect_2_c": {
         "name": "{name}",
-        "text": "*Une seconde. Je fixe juste l'écran. — Le graffiti sur le bureau de Sojeong. Les trente-huit matins où j'ai détourné le regard.*"
+        "text": "*Je fixe un instant l’écran. Je revois les inscriptions sur le bureau de Sojeong et ces matins où j’ai détourné les yeux.*"
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
@@ -139,7 +139,7 @@
     },
     "night3_cheat_msg_7": {
         "name": "Yuna",
-        "text": "*Trois bulles de message de Yuna apparaissent à la suite.*"
+        "text": "*Je relis les messages de Yuna. Mon doigt s’approche du champ de réponse, puis recule.*"
     },
     "night3_nightmare_1": {
         "name": "{name}",
@@ -155,7 +155,7 @@
     },
     "night3_nightmare_3_b": {
         "name": "{name}",
-        "text": "*Dans la conversation de Yuna, un accusé de lecture apparaît sous trois lignes de texte.*"
+        "text": "*Sous les messages de Yuna, il n’y a que la mention « lu ».*"
     },
     "night3_nightmare_4": {
         "name": "{name}",
@@ -216,7 +216,7 @@
     },
     "night3_cheat_reflect_3_d": {
         "name": "{name}",
-        "text": "*Minsu a répondu : « Repousser le problème ne le fera pas disparaître. »*"
+        "text": "*Un message de Minsu m’attend : « Repousser le problème le fera pas disparaître. »*"
     },
     "night3_cheat_reflect_3_e": {
         "name": "{name}",

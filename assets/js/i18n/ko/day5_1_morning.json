@@ -123,7 +123,7 @@
     },
     "morning5_caught_dain_honest": {
         "name": "다인",
-        "text": "*다인은 손목 보호대를 끝까지 잡아당겼다가 놓는다.* 그럼 내가 혼자 들뜬 거 아니었냐고 물었을 때, 넌 이미 거기 있었던 거네."
+        "text": "*다인은 손목 보호대를 끝까지 잡아당겼다가 놓는다.* 내가 기다린다고 보냈을 때도, 넌 이미 거기 있었던 거네."
     },
     "morning5_caught_dain_lie": {
         "name": "다인",
@@ -152,15 +152,15 @@
     },
     "morning5_mood_high": {
         "name": "{name}",
-        "text": "*마지막 날이다. 교실 문을 열기 전, 지난 나흘 동안 오간 말들을 한 번씩 떠올린다.*"
+        "text": "*전학 온 첫 주가 끝나간다. 교실 문을 열기 전, 지난 나흘 동안 오간 말들을 떠올린다.*"
     },
     "morning5_mood_mid": {
         "name": "{name}",
-        "text": "마지막 날. 어느 쪽으로 갈지는 아직 정하지 못했다. 그래도 교문은 넘는다."
+        "text": "첫 주가 끝나가는데도 마음은 정하지 못했다. 일단 교문을 넘는다."
     },
     "morning5_mood_low": {
         "name": "{name}",
-        "text": "마지막 날. 잠금화면에 남은 이름 셋을 차례로 누른다. 대화방은 열지 않은 채 화면을 끈다."
+        "text": "첫 주가 끝나간다. 잠금화면에 남은 이름 셋을 바라보다 대화방을 열지 않고 화면을 끈다."
     },
     "morning5_gate": {},
     "morning5_seo_note_1": {
@@ -177,7 +177,7 @@
     },
     "morning5_yuna_story_gone_2": {
         "name": "{name}",
-        "text": "*도서관의 빈자리, 사라진 책갈피, 붙이지 않은 소설. 게시판 압정 자국만 네 개 남아 있다.*"
+        "text": "*빈 게시판 앞에 잠시 멈춘다. 압정 자국만으로는 유나가 무슨 생각을 했는지 알 수 없다.*"
     },
     "morning5_seo_note_1_c": {
         "name": "{name}",
@@ -254,7 +254,7 @@
     },
     "hidden_homeroom_d5_3": {
         "name": "담임선생님",
-        "text": "7년 동안 덮어뒀는데 이번엔 문예부랑 국어과 선생님들한테도 돌리려고."
+        "text": "7년째 붙잡고 있는데 이젠 다른 사람들 얘기도 좀 들어야지."
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",
@@ -491,14 +491,8 @@
         "name": "{name}",
         "text": "*상담 기록지 아래에 보건실과 위클래스 예약 방법이 나란히 적혀 있다.*"
     },
-    "hidden_nurse_d5_2_b": {
-        "name": "보건선생님",
-        "text": "*보건실 문을 열고 예약 명단을 확인한다.*"
-    },
-    "hidden_nurse_d5_2_c": {
-        "name": "보건선생님",
-        "text": "예약 시간 맞춰 왔네. 잘했어."
-    },
+    "hidden_nurse_d5_2_b": {},
+    "hidden_nurse_d5_2_c": {},
     "hidden_nurse_d5_3": {
         "name": "{name}",
         "text": "상담 확인서 받으러 왔어요."
@@ -511,30 +505,15 @@
         "name": "보건선생님",
         "text": "정해진 시간에 도움을 받으러 오는 건 언제든 괜찮아."
     },
-    "hidden_nurse_d5_3_d": {
-        "name": "{name}",
-        "text": "핑계 안 대도요?"
-    },
-    "hidden_nurse_d5_3_e": {
-        "name": "보건선생님",
-        "text": "당연하지. 보건실은 핑계를 만드는 곳이 아니라 필요한 도움을 받는 곳이야."
-    },
+    "hidden_nurse_d5_3_d": {},
+    "hidden_nurse_d5_3_e": {},
     "hidden_nurse_d5_3_f": {
         "name": "보건선생님",
         "text": "*응급처치 안내 카드 상자를 연다.*"
     },
-    "hidden_nurse_d5_3_g": {
-        "name": "보건선생님",
-        "text": "자, 가 봐. 행사 빠지면 안 되지."
-    },
-    "hidden_nurse_d5_3_h": {
-        "name": "보건선생님",
-        "text": "*보건실 문턱을 넘기 전 예약 명단을 다시 펼친다.*"
-    },
-    "hidden_nurse_d5_3_i": {
-        "name": "보건선생님",
-        "text": "{name}, 잠깐."
-    },
+    "hidden_nurse_d5_3_g": {},
+    "hidden_nurse_d5_3_h": {},
+    "hidden_nurse_d5_3_i": {},
     "hidden_nurse_d5_4": {
         "name": "보건선생님",
         "text": "행사장 응급키트는 체육관 입구에 있어. 다치면 바로 담당 교사를 불러."
@@ -619,7 +598,7 @@
     "morning5_end_branch": {},
     "morning5_end": {
         "name": "{name}",
-        "text": "*세 방향에서 온 쪽지와 알림을 책상 위에 나란히 둔다.*"
+        "text": "*쪽지를 책상에 모아 두고 휴대폰 알림도 차례로 확인한다.*"
     },
     "morning5_committed_end": {
         "name": "{name}",

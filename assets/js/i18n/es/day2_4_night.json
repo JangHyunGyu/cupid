@@ -3,10 +3,7 @@
         "name": "{name}",
         "text": "*Ya en casa. Me duché y me acosté en la cama — y entonces empiezan a caer notificaciones en el celular. Tres. A la vez.*"
     },
-    "night2_msg_1": {
-        "name": "{name}",
-        "text": "*Me escribieron tres.*"
-    },
+    "night2_msg_1": {},
     "night2_msg_dain_specific": {
         "name": "Dain",
         "text": "Oye, el tteokbokki de hoy estaba delicioso."
@@ -29,11 +26,11 @@
     },
     "night2_msg_yuna_specific": {
         "name": "Yuna",
-        "text": "...la canción de hoy. Me gustó"
+        "text": "¿Qué te pareció la pieza que te toqué hoy?"
     },
     "night2_msg_yuna_specific_2": {
         "name": "Yuna",
-        "text": "Escuchémosla otra vez la próxima vez."
+        "text": "La próxima vez, enséñame algo que te guste a ti."
     },
     "night2_msg_dain_general": {
         "name": "Dain",
@@ -129,7 +126,7 @@
     "night2_reply_yuna_1": {},
     "night2_reply_yuna_2": {
         "name": "Yuna",
-        "text": "Vale. Léelo con calma."
+        "text": "Vale. Me gustaría saber qué te parece."
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
@@ -167,7 +164,7 @@
     "night2_dain_freetalk": {
         "name": "Dain",
         "text": "Espera, antes de que te duermas. ¿Qué fue lo más divertido de hoy?",
-        "context": "Es la noche del segundo día desde la transferencia y Dain y el protagonista repasan el día por mensajes. El tiempo que pasaron juntos hoy y los mensajes que acaban de intercambiar son hechos consumados. Todavía no son pareja y hablan por celular, no en persona. No describas que Dain aparece de pronto ni que están en la misma habitación.",
+        "context": "[Medio: mensajes de móvil] La segunda noche tras el traslado, Dain y el alumno comentan su día. Solo recuerdan lugares o actividades compartidos si constan en los eventos guardados. Se continúa el intercambio de mensajes; aún no son pareja.",
         "personality": "Dain es una jugadora de voleibol franca y de reacciones rápidas. Su energía se siente incluso en los mensajes, pero no presiona al otro para que responda. Cuando alguien le interesa, lo demuestra de forma natural mediante bromas y preguntas directas."
     },
     "night2_seo_freetalk": {
@@ -179,7 +176,7 @@
     "night2_yuna_freetalk": {
         "name": "Yuna",
         "text": "Espera. Si todavía estás despierto... ¿quieres que hablemos un poco más?",
-        "context": "Es la noche del segundo día desde la transferencia y la conversación tranquila con Yuna continúa por mensajes. Lo que ocurrió hoy en el anexo y con el libro, además de los mensajes que acaban de intercambiar, son hechos consumados. Todavía no son pareja y están construyendo confianza con cautela. Como hablan por celular, no conviertas la escena en una situación donde se ven o se tocan en persona.",
+        "context": "[Medio: mensajes de móvil] La segunda noche tras el traslado, continúa una conversación tranquila con Yuna. Recordar préstamos de libros, visitas al anexo y música compartida solo cuando los eventos guardados o los mensajes recientes lo confirmen. Aún no son pareja y están en lugares distintos.",
         "personality": "Yuna es una lectora prudente y observadora. Piensa bien las palabras antes de enviar un mensaje y, a medida que se siente cómoda, empieza a compartir poco a poco sus gustos y preguntas. No interpreta el silencio como ansiedad y respeta el ritmo de la otra persona."
     },
     "night2_hidden_check": {
@@ -246,10 +243,7 @@
         "name": "{name}",
         "text": "*En la pantalla de bloqueo se acumulan los tres nombres, uno tras otro. Leo todas las notificaciones, apago la pantalla y vuelvo a encenderla.*"
     },
-    "night2_end_2_b": {
-        "name": "{name}",
-        "text": "*Sobre el mensaje de Minsu se acumulan dos notificaciones sin leer.*"
-    },
+    "night2_end_2_b": {},
     "night2_end_3_b": {
         "name": "{name}",
         "text": "*Incluso después de que se apaga la pantalla, sigo sujetando el celular de la misma manera.*"

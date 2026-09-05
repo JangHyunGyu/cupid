@@ -129,7 +129,7 @@
     },
     "tour_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Elle fait courir ses doigts sur le dos d'un livre, puis relève la tête.* Depuis qu'on dit que c'est la dernière fois, je parle plus que d'habitude."
+        "text": "*Elle passe un doigt sur le dos du livre, puis relève la tête.* J’ai beaucoup parlé aujourd’hui, hein ?"
     },
     "tour_yuna_end": {
         "name": "Yuna",
@@ -157,7 +157,7 @@
     },
     "tour_dain_3": {
         "name": "Dain",
-        "text": "Hé, on fait un dernier pierre-feuille-ciseaux ?"
+        "text": "Hé, encore une manche de pierre-feuille-ciseaux ?"
     },
     "tour_dain_4": {
         "name": "{name}",
@@ -205,7 +205,7 @@
     },
     "tour_dain_freetalk": {
         "name": "Dain",
-        "text": "*Elle bloque le ballon qui revient en posant sa basket dessus.* Même si c’est notre dernier déjeuner, pas question de le laisser filer sans rien faire."
+        "text": "*Elle arrête du pied un ballon de volley.* C’est la pause déjeuner de la fête du lycée. Ce serait dommage d’en rester là."
     },
     "tour_dain_end_2": {
         "name": "{name}",
@@ -250,7 +250,7 @@
     },
     "tour_co_dain_2": {
         "name": "Dain",
-        "text": "Pierre-feuille-ciseaux, demain. Aujourd’hui je reste debout."
+        "text": "Pierre-feuille-ciseaux, ce sera pour demain. Aujourd’hui, j’ai envie de me reposer."
     },
     "tour_co_dain_3": {
         "name": "{name}",

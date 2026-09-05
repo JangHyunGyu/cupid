@@ -3,10 +3,7 @@
         "name": "{name}",
         "text": "*De retour chez moi, je prends une douche et m'allonge sur le lit. Les notifications de la messagerie se mettent alors à affluer. Trois personnes, en même temps.*"
     },
-    "night2_msg_1": {
-        "name": "{name}",
-        "text": "*Des messages de trois personnes.*"
-    },
+    "night2_msg_1": {},
     "night2_msg_dain_specific": {
         "name": "Dain",
         "text": "Hé !! Le tteokbokki d'aujourd'hui était trop bon !!"
@@ -29,11 +26,11 @@
     },
     "night2_msg_yuna_specific": {
         "name": "Yuna",
-        "text": "...Ce morceau aujourd'hui. C'était bien"
+        "text": "Tu as pensé quoi du morceau que je t’ai joué aujourd’hui ?"
     },
     "night2_msg_yuna_specific_2": {
         "name": "Yuna",
-        "text": "...Fais-le-moi réécouter un de ces jours"
+        "text": "La prochaine fois, fais-moi aussi écouter quelque chose que tu aimes."
     },
     "night2_msg_dain_general": {
         "name": "Dain",
@@ -129,7 +126,7 @@
     "night2_reply_yuna_1": {},
     "night2_reply_yuna_2": {
         "name": "Yuna",
-        "text": "D’accord. Prends ton temps pour lire."
+        "text": "D’accord. J’aimerais bien avoir ton avis."
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
@@ -167,7 +164,7 @@
     "night2_dain_freetalk": {
         "name": "Dain",
         "text": "Attends, juste avant de vraiment dormir. C'était quoi, le plus amusant aujourd'hui ?",
-        "context": "Nous sommes au soir du deuxième jour de transfert. Dain et le protagoniste font le bilan de leur journée par messagerie. Le temps passé ensemble aujourd'hui et les messages qu'ils viennent d'échanger sont des faits acquis. Ils ne sortent pas encore ensemble et ne se trouvent pas au même endroit : n'invente pas une visite soudaine ni une action comme s'ils partageaient la même pièce.",
+        "context": "[Mode : messages sur téléphone] Le deuxième soir après le transfert, Dain et l’élève parlent de leur journée. Ne rappeler des lieux ou activités partagés que si les événements enregistrés les confirment. Poursuivre les messages échangés ; ils ne sont pas encore en couple.",
         "personality": "Dain est une volleyeuse franche et très réactive. Son énergie se ressent aussi dans ses messages, mais elle ne presse pas l'autre de répondre. Quand quelqu'un l'intéresse, elle le montre naturellement par des taquineries et des questions directes."
     },
     "night2_seo_freetalk": {
@@ -179,7 +176,7 @@
     "night2_yuna_freetalk": {
         "name": "Yuna",
         "text": "Attends. Si tu es encore réveillé... tu veux qu'on parle encore un peu ?",
-        "context": "Nous sommes au soir du deuxième jour de transfert. Yuna et le protagoniste poursuivent calmement leur conversation par messagerie. Leurs souvenirs de l'annexe et des livres aujourd'hui, ainsi que les messages qu'ils viennent d'échanger, sont des faits acquis. Ils ne sortent pas encore ensemble et bâtissent prudemment une relation de confiance. Comme ils communiquent par téléphone, ne transforme pas la scène en rencontre où ils se voient ou se touchent.",
+        "context": "[Mode : messages sur téléphone] Le deuxième soir après le transfert, une conversation tranquille se poursuit avec Yuna. Ne rappeler les prêts de livres, visites à l’annexe et morceaux partagés que dans la mesure où les événements enregistrés et les messages récents les confirment. Ils ne sont pas encore en couple et se trouvent dans des lieux différents.",
         "personality": "Yuna est une lectrice prudente et observatrice. Elle choisit ses mots avant d'envoyer un message et, à mesure qu'elle se sent à l'aise, partage d'elle-même ses goûts et ses interrogations. Elle ne prend pas le silence pour de l'anxiété et respecte le rythme de l'autre."
     },
     "night2_hidden_check": {
@@ -246,10 +243,7 @@
         "name": "{name}",
         "text": "*Les trois noms s'empilent sur l'écran verrouillé. Je lis toutes les notifications, éteins l'écran, puis le rallume.*"
     },
-    "night2_end_2_b": {
-        "name": "{name}",
-        "text": "*Deux notifications non lues sont empilées au-dessus du message de Minsu.*"
-    },
+    "night2_end_2_b": {},
     "night2_end_3_b": {
         "name": "{name}",
         "text": "*Même après que l'écran s'est éteint, ma main reste refermée sur le téléphone.*"

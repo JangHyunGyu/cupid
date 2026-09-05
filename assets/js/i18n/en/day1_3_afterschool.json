@@ -5,19 +5,16 @@
     },
     "after_kakao_1": {
         "name": "{name}",
-        "text": "*'Hey, Sojeong says she's doing fine at her new school.' 'That's a relief lol.' — I slip the phone back into my pocket.*"
+        "text": "*‘Hey, Sojeong’s doing well at her new school.’ ‘Glad to hear it lol.’ Familiar names pop up one after another.*"
     },
     "after_kakao_3": {
         "name": "{name}",
-        "text": "*I look at the last message again — 'Thank goodness lol.' I open the reply field, type nothing, and turn off the screen.*"
+        "text": "*I read the last message again. ‘Glad to hear it lol.’ I tap the reply field, but can’t think of anything to write.*"
     },
-    "after_kakao_5": {
-        "name": "{name}",
-        "text": "*My face reflects in the dark screen. With no reply written, I put the phone in my pocket.*"
-    },
+    "after_kakao_5": {},
     "after_kakao_end": {
         "name": "{name}",
-        "text": "*I take out my phone again and leave the group chat. At the top of the chat list, only the new school's messenger remains.*"
+        "text": "*After a moment’s hesitation, I leave the group chat. The new school’s chat is now at the top of the list.*"
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
@@ -55,7 +52,7 @@
     },
     "after1_jealousy_seo_lie_2": {
         "name": "Dain",
-        "text": "Really? Alone? — Well, makes sense, it's your first day!"
+        "text": "Really? …Then I guess I was mistaken."
     },
     "after1_jealousy_seo_yuna": {
         "name": "{name}",
@@ -162,11 +159,11 @@
     },
     "after_miss_seoyeon_6": {
         "name": "Seoyeon",
-        "text": "I went up for some air. The door happened to be open."
+        "text": "I’d already started eating. Just let me know next time."
     },
     "after_miss_seoyeon_7": {
         "name": "{name}",
-        "text": "*My name is still at the top of Seoyeon's clipboard. The checkbox next to it is still empty.*"
+        "text": "*Seoyeon turns the clipboard against her chest and caps her pen without looking at me.*"
     },
     "after_miss_seoyeon_8": {
         "name": "Seoyeon",
@@ -323,7 +320,7 @@
     "after_homeroom_freetalk": {
         "name": "Homeroom Teacher",
         "text": "*The teacher leaves the faculty-office door half open and tucks the attendance book under one arm.*",
-        "context": "Day 1 after school. The homeroom teacher stopped the transfer student to check how they were adjusting, and the student honestly said they felt overwhelmed. This is their first formal teacher-student check-in.",
+        "context": "[Medium: in person] Outside the staff room after school on the student’s first day. The student asked for advice about settling in, and the homeroom teacher listened. Continue that conversation, responding to what the student actually said and why they came.",
         "personality": "The homeroom teacher is an attentive woman in her late twenties with long wavy brown hair and a beige cardigan. She keeps counseling and guidance within formal school procedures. She once hoped to become a novelist and still cares about writing."
     },
     "after_hidden_nurse_intro": {
@@ -370,7 +367,7 @@
     },
     "after_nurse_enter_4_c": {
         "name": "School Nurse",
-        "text": "Your uniform is still stiff. It smells like starch, and you've even got cherry petals stuck to it. You look like you're on your first day."
+        "text": "I haven’t seen you before, and your uniform looks new. Am I right?"
     },
     "after_nurse_enter_4_d": {
         "name": "School Nurse",
@@ -406,7 +403,7 @@
     },
     "after_nurse_enter_choice": {
         "name": "{name}",
-        "text": "*I lie down on the bed. Through the curtain, I can see the nurse's back.*",
+        "text": "*Through the gap in the curtain, I can see the nurse filling out a form.*",
         "choices": [
             "You look more tired than I do, honestly.",
             "The nurse's office is quieter than I expected.",
@@ -459,7 +456,7 @@
     },
     "after_nurse_enter_10_b": {
         "name": "School Nurse",
-        "text": "*The drawer slides shut, hiding the light-green notebook inside. The wall clock has moved ten minutes since I first lay down.*"
+        "text": "*As she puts the form in a drawer, I catch a glimpse of a pale green notebook inside. Ten minutes have passed since I lay down.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",
@@ -501,10 +498,7 @@
         "name": "School Nurse",
         "text": "*She pulls back the curtain and straightens the sheet.*"
     },
-    "after_nurse_enter_11_j": {
-        "name": "{name}",
-        "text": "*Just as I reach for the nurse's office door, the nurse calls from behind me.*"
-    },
+    "after_nurse_enter_11_j": {},
     "after_nurse_enter_11_k": {
         "name": "School Nurse",
         "text": "Oh, transfer student."
@@ -537,6 +531,6 @@
     },
     "after_nurse_enter_trap": {
         "name": "School Nurse",
-        "text": "I looked relaxed, did I? The quieter it is in here, the more alert I have to be."
+        "text": "When no one’s here, I catch up on records and check supplies. A quiet room doesn’t always mean a break."
     }
 }

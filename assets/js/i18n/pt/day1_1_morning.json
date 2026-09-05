@@ -13,7 +13,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*Paro diante do portão de uma escola desconhecida. Só o meu uniforme ainda guarda as marcas das dobras. Ao lado do portão, uma aluna de cabelos negros e compridos ajeita os óculos e confere as horas. Quando paro, ela também levanta o olhar.*"
+        "text": "*Perto do portão, uma garota de cabelos pretos e compridos ajeita os óculos e confere a hora. Ela levanta o rosto quando me aproximo.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -41,7 +41,7 @@
     },
     "seoyeon_meet_7": {
         "name": "Seoyeon",
-        "text": "Isso quem decide sou eu."
+        "text": "Mostrar a escola para os alunos novos também faz parte do meu trabalho. Pode relaxar."
     },
     "seoyeon_meet_8": {
         "name": "{name}",
@@ -90,7 +90,7 @@
     },
     "choice_flirt_6": {
         "name": "Seoyeon",
-        "text": "Você ainda não sabe se é uma honra ou uma tragédia."
+        "text": "Vamos ver se daqui a alguns dias você ainda vai dizer isso."
     },
     "choice_flirt_7": {
         "name": "Seoyeon",
@@ -182,7 +182,7 @@
     },
     "classroom_5_b": {
         "name": "Professora",
-        "text": "Certo, {name}. Já decorei. *Ela sublinha o nome no diário e acrescenta em voz baixa:* Decoro nomes de primeira."
+        "text": "Bem-vindo, {name}. Vá se acostumando no seu ritmo."
     },
     "classroom_5_c": {
         "name": "{name}",

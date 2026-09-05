@@ -13,7 +13,7 @@
     },
     "morning3_date_dain_low": {
         "name": "Dain",
-        "text": "*Dain cale le ballon contre sa hanche, jette un regard dans ta direction, puis se tourne vers le terrain.* Ce week-end, je m'entraînerai seule."
+        "text": "*Dain me jette un regard, puis ferme son sac.* Ce week-end, je m’entraîne seule."
     },
     "morning3_date_yuna_low": {
         "name": "Yuna",
@@ -368,7 +368,7 @@
     },
     "hidden_homeroom_d3_reveal_4_e": {
         "name": "Professeure principale",
-        "text": "Tu peux le lire. Mais je ne vais pas te le glisser en secret. Je vais d'abord le préparer pour une séance de critique au club littéraire."
+        "text": "Je compte le proposer à l’atelier de critique du club littéraire. Tu voudras bien le lire à ce moment-là ?"
     },
     "hidden_homeroom_d3_reveal_4_f": {
         "name": "Professeure principale",
@@ -409,7 +409,7 @@
     },
     "hidden_homeroom_d3_reveal_6_b": {
         "name": "Professeure principale",
-        "text": "...Ce sera donc la première fois en sept ans que je le montre à d'autres."
+        "text": "Jusqu’ici, je le retravaillais seule. Cette fois, j’entendrai les réactions de vive voix."
     },
     "hidden_homeroom_d3_reveal_6_c": {
         "name": "{name}",
@@ -425,11 +425,11 @@
     },
     "hidden_homeroom_d3_reveal_6_f": {
         "name": "Professeure principale",
-        "text": "Parce qu'ici, c'est calme. Mais à partir de maintenant, on ne parlera du manuscrit que pendant le club littéraire."
+        "text": "Enfin, on reparlera du manuscrit à l’atelier."
     },
     "hidden_homeroom_d3_reveal_6_g": {
         "name": "{name}",
-        "text": "*Pendant que je lis une phrase recouverte de plusieurs traces de gommage, seule la trotteuse continue d’avancer.*"
+        "text": "*Elle rassemble les pages dans une enveloppe et hésite un instant avant d’y glisser la dernière.*"
     },
     "hidden_homeroom_d3_hide_1": {
         "name": "Professeure principale",
@@ -485,14 +485,8 @@
         "name": "Infirmière",
         "text": "*L'infirmière repose sa tasse.*"
     },
-    "hidden_nurse_d3_3_c": {
-        "name": "Infirmière",
-        "text": "...Assieds-toi."
-    },
-    "hidden_nurse_d3_3_d": {
-        "name": "Infirmière",
-        "text": "*Elle pose sa tasse au fond du bureau et tire la chaise des patients devant le lit.*"
-    },
+    "hidden_nurse_d3_3_c": {},
+    "hidden_nurse_d3_3_d": {},
     "hidden_nurse_d3_4": {
         "name": "Infirmière",
         "text": "*Elle tire le rideau et me tend un verre d'eau.* ...Assieds-toi. Tu peux te détendre ici. Prends ton temps pour parler."
@@ -575,7 +569,7 @@
     },
     "hidden_nurse_d3_6": {
         "name": "Infirmière",
-        "text": "Quand je travaillais à l'hôpital universitaire, si plusieurs sonnettes retentissaient en même temps, je me surprenais à compter d'abord les lits libres. Je détestais ça."
+        "text": "À l’hôpital universitaire, quand plusieurs sonnettes retentissaient, je ne pensais plus qu’à l’ordre des chambres. Souvent, je devais repartir en courant avant qu’un patient ait fini de parler."
     },
     "hidden_nurse_d3_6_b": {
         "name": "Infirmière",
@@ -583,7 +577,7 @@
     },
     "hidden_nurse_d3_6_c": {
         "name": "Infirmière",
-        "text": "Je ne dirais pas que j'ai démissionné. Je suis partie. Il n'y avait rien de noble là-dedans."
+        "text": "Je ne me sentais plus capable de tenir."
     },
     "hidden_nurse_d3_6_d": {
         "name": "Infirmière",
@@ -636,7 +630,7 @@
     },
     "hidden_nurse_d3_choice2": {
         "name": "Infirmière",
-        "text": "*L'infirmière s'est arrêtée sur 'une personne'. Le bord du gobelet en papier se froisse sous ses doigts.*",
+        "text": "*L’infirmière ferme le tiroir. Debout près de la porte, je cherche mes mots.*",
         "choices": [
             "C'est pour ça que vous avez quitté l'hôpital ?",
             "Ça ne vous dérange pas d'en parler davantage ?",
@@ -697,7 +691,7 @@
         "name": "Seoyeon",
         "text": "*Seoyeon pose la question devant la porte de la classe. Dain ne tourne plus le bouchon de sa bouteille.*",
         "choices": [
-            "Oui. Où ça ?",
+            "D’accord. À quelle heure ?",
             "Je crois que je serai un peu occupé",
             "C’est une demande de la présidente du conseil, alors bien sûr que je viendrai.",
             "Je me libérerai si personne d’autre ne vient."
@@ -725,7 +719,7 @@
     },
     "morning3_date_dain_2": {
         "name": "Dain",
-        "text": "*Dain tapote le bord de mon bureau. Cette fois, Seoyeon trie des papiers à sa place.*"
+        "text": "*Dain tapote le bord de mon bureau. Par la porte ouverte, je vois Seoyeon ranger ses papiers.*"
     },
     "morning3_date_dain_choice": {
         "name": "Dain",
@@ -739,7 +733,7 @@
     },
     "morning3_date_dain_accept": {
         "name": "{name}",
-        "text": "*Nous fixons notre rendez-vous du week-end. Dain sourit ; à sa place, Seoyeon referme son porte-documents.*"
+        "text": "*Dain et moi prenons rendez-vous pour le week-end. Elle sourit ; derrière la porte, Seoyeon referme son porte-documents.*"
     },
     "morning3_date_dain_decline": {
         "name": "Dain",

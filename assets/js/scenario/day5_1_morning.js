@@ -840,14 +840,12 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "hidden_nurse_d5_2_b"
     },
     "hidden_nurse_d5_2_b": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_nurse_d5_2_c"
+        "next": "hidden_nurse_d5_2_c",
+        "routeBeforeRender": true
     },
     "hidden_nurse_d5_2_c": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_nurse_d5_3"
+        "next": "hidden_nurse_d5_3",
+        "routeBeforeRender": true
     },
     "hidden_nurse_d5_3": {
         "background": "assets/images/background/school_hallway.png",
@@ -865,14 +863,12 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "hidden_nurse_d5_3_d"
     },
     "hidden_nurse_d5_3_d": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_nurse_d5_3_e"
+        "next": "hidden_nurse_d5_3_e",
+        "routeBeforeRender": true
     },
     "hidden_nurse_d5_3_e": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_nurse_d5_3_f"
+        "next": "hidden_nurse_d5_3_f",
+        "routeBeforeRender": true
     },
     "hidden_nurse_d5_3_f": {
         "background": "assets/images/background/school_hallway.png",
@@ -880,19 +876,16 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "hidden_nurse_d5_3_g"
     },
     "hidden_nurse_d5_3_g": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_nurse_d5_3_h"
+        "next": "hidden_nurse_d5_3_h",
+        "routeBeforeRender": true
     },
     "hidden_nurse_d5_3_h": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/nurse_angry.png",
-        "next": "hidden_nurse_d5_3_i"
+        "next": "hidden_nurse_d5_3_i",
+        "routeBeforeRender": true
     },
     "hidden_nurse_d5_3_i": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_nurse_d5_4"
+        "next": "hidden_nurse_d5_4",
+        "routeBeforeRender": true
     },
     "hidden_nurse_d5_4": {
         "background": "assets/images/background/school_hallway.png",

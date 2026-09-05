@@ -187,7 +187,7 @@
     },
     "after2_dain_skinship_2": {
         "name": "다인",
-        "text": "아, 미안! 경기 끝나면 가끔 이래!"
+        "text": "아, 손 얼얼하지? 힘 조절 좀 할걸."
     },
     "after2_dain_skinship_3": {
         "name": "{name}",
@@ -284,7 +284,7 @@
     },
     "after2_seo_4": {
         "name": "서연",
-        "text": "*클립보드 모서리로 빈 의자를 가리킨다.* 순종적이네."
+        "text": "부르길 잘했네."
     },
     "after2_seo_4_b": {
         "name": "서연",
@@ -296,7 +296,7 @@
     },
     "after2_seo_6": {
         "name": "서연",
-        "text": "부탁이 아니라 기회를 준 거야."
+        "text": "그러니까 와 줘서 고맙다고."
     },
     "after2_seo_6_b": {
         "name": "{name}",
@@ -325,7 +325,7 @@
     },
     "after2_seo_8b2": {
         "name": "서연",
-        "text": "너, 쓸 만하네."
+        "text": "생각보다 손이 빠르네."
     },
     "after2_seo_8b3": {
         "name": "{name}",
@@ -353,18 +353,12 @@
         "name": "서연",
         "text": "*안경이 코끝으로 조금 내려오고 펜 끝이 날짜 칸 밖으로 미끄러진다.*"
     },
-    "after2_seo_sunset_joke_b": {
-        "name": "서연",
-        "text": "*서류 끝을 세워 입가를 가리는 사이 펜 뚜껑이 책상 아래로 굴러간다.*"
-    },
+    "after2_seo_sunset_joke_b": {},
     "after2_seo_sunset_react": {
         "name": "서연",
-        "text": "그런 말을 그렇게 툭 던지면, 받아 적을 시간도 없잖아."
+        "text": "…굳이 덧붙이는 게 더 수상한데."
     },
-    "after2_seo_sunset_react_b": {
-        "name": "서연",
-        "text": "*서류 끝으로 입가를 가린 채 창틀의 주황색 줄을 펜 끝으로 따라간다.*"
-    },
+    "after2_seo_sunset_react_b": {},
     "after2_seo_neck_worry": {
         "name": "서연",
         "text": "괜찮아. 이 정도는 매일이야."
@@ -383,7 +377,7 @@
     },
     "after2_seo_neck_touch": {
         "name": "서연",
-        "text": "내 서류를 받침대로 쓰겠다고?"
+        "text": "그걸 받침대로 쓰자고?"
     },
     "after2_seo_neck_high": {
         "name": "{name}",
@@ -452,7 +446,7 @@
     },
     "after2_seo_stay_3b": {
         "name": "서연",
-        "text": "없어. — 여기 있을 때만 빼고."
+        "text": "지금부터 쉬려고."
     },
     "after2_seo_stay_3c": {
         "name": "{name}",

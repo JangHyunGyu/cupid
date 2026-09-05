@@ -5,19 +5,16 @@
     },
     "after_kakao_1": {
         "name": "{name}",
-        "text": "*‚Hey, Sojeong kommt an ihrer neuen Schule wohl gut klar.‘ ‚Zum Glück, haha.‘ — Ich stecke das Handy wieder in die Tasche.*"
+        "text": "*„Hey, Sojeong geht’s an der neuen Schule gut.“ „Zum Glück, haha.“ Ein vertrauter Name nach dem anderen erscheint.*"
     },
     "after_kakao_3": {
         "name": "{name}",
-        "text": "*Ich sehe mir die letzte Nachricht noch einmal an — 'Zum Glück haha.' Ich öffne das Antwortfeld, schreibe nichts und schalte den Bildschirm aus.*"
+        "text": "*Ich lese die letzte Nachricht noch einmal. „Zum Glück, haha.“ Ich tippe ins Antwortfeld, aber mir fällt nichts ein.*"
     },
-    "after_kakao_5": {
-        "name": "{name}",
-        "text": "*Mein Gesicht spiegelt sich im dunklen Display. Ohne Antwort stecke ich das Handy ein.*"
-    },
+    "after_kakao_5": {},
     "after_kakao_end": {
         "name": "{name}",
-        "text": "*Ich hole das Handy wieder heraus und verlasse den Gruppenchat. Ganz oben in der Chatliste bleibt nur der Messenger der neuen Schule.*"
+        "text": "*Nach kurzem Zögern verlasse ich den Gruppenchat. Ganz oben steht jetzt der Chat der neuen Schule.*"
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
@@ -55,7 +52,7 @@
     },
     "after1_jealousy_seo_lie_2": {
         "name": "Dain",
-        "text": "Echt? Allein? — Naja, ist ja dein erster Tag!"
+        "text": "Wirklich? …Dann habe ich mich wohl verguckt."
     },
     "after1_jealousy_seo_yuna": {
         "name": "{name}",
@@ -162,11 +159,11 @@
     },
     "after_miss_seoyeon_6": {
         "name": "Seoyeon",
-        "text": "Ich wollte nur kurz frische Luft schnappen. Die Tür stand gerade offen."
+        "text": "Ich hatte schon angefangen zu essen. Sag nächstes Mal einfach Bescheid."
     },
     "after_miss_seoyeon_7": {
         "name": "{name}",
-        "text": "*Mein Name steht immer noch ganz oben auf Seoyeons Klemmbrett. Das Kontrollkästchen daneben ist noch leer.*"
+        "text": "*Seoyeon drückt die Klemmbrettmappe an ihre Brust und steckt die Kappe auf den Stift, ohne mich anzusehen.*"
     },
     "after_miss_seoyeon_8": {
         "name": "Seoyeon",
@@ -323,7 +320,7 @@
     "after_homeroom_freetalk": {
         "name": "Klassenlehrerin",
         "text": "*Die Klassenlehrerin lässt die Tür zum Lehrerzimmer halb offen und klemmt sich das Klassenbuch unter den Arm.*",
-        "context": "Tag 1 nach der Schule. Die Klassenlehrerin hielt den neuen Schüler an, um zu fragen, wie er sich eingewöhnt, und der Schüler gab ehrlich zu, überfordert zu sein. Es ist ihr erstes formelles Gespräch als Lehrerin und Schüler.",
+        "context": "[Medium: persönlich] Nach Schulschluss vor dem Lehrerzimmer am ersten Tag des neuen Schülers. Er hat um Rat zum Einleben gebeten, und seine Klassenlehrerin hat zugehört. Das Gespräch setzt bei seinen tatsächlichen Fragen und dem Anlass seines Besuchs an.",
         "personality": "Die Klassenlehrerin ist eine aufmerksame Frau Ende zwanzig mit langem, welligem braunem Haar und einer beigen Strickjacke. Beratung und Begleitung hält sie innerhalb der schulischen Verfahren. Früher wollte sie Romanautorin werden, und das Schreiben ist ihr weiterhin wichtig."
     },
     "after_hidden_nurse_intro": {
@@ -370,7 +367,7 @@
     },
     "after_nurse_enter_4_c": {
         "name": "Schulkrankenschwester",
-        "text": "Deine Uniform ist noch ganz steif. Sie riecht nach Stärke, und sogar ein Kirschblütenblatt hängt daran. Man sieht dir den ersten Tag an."
+        "text": "Ich habe dich noch nie gesehen, und deine Uniform sieht neu aus. Liege ich richtig?"
     },
     "after_nurse_enter_4_d": {
         "name": "Schulkrankenschwester",
@@ -406,7 +403,7 @@
     },
     "after_nurse_enter_choice": {
         "name": "{name}",
-        "text": "*Ich lege mich aufs Bett. Durch den Vorhang sehe ich den Rücken der Krankenschwester.*",
+        "text": "*Durch den Spalt im Vorhang sehe ich, wie die Schulkrankenschwester ein Formular ausfüllt.*",
         "choices": [
             "Sie sehen müder aus als ich, ehrlich gesagt",
             "Das Krankenzimmer ist ruhiger, als ich dachte.",
@@ -459,7 +456,7 @@
     },
     "after_nurse_enter_10_b": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schublade gleitet zu und verbirgt das hellgrüne Notizbuch darin. Seit ich mich hingelegt habe, sind auf der Wanduhr zehn Minuten vergangen.*"
+        "text": "*Als sie das Formular in die Schublade legt, sehe ich kurz ein hellgrünes Notizbuch darin. Seit ich mich hingelegt habe, sind zehn Minuten vergangen.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",
@@ -501,10 +498,7 @@
         "name": "Schulkrankenschwester",
         "text": "*Sie zieht den Vorhang auf und richtet das Bettlaken.*"
     },
-    "after_nurse_enter_11_j": {
-        "name": "{name}",
-        "text": "*Als ich gerade die Tür des Krankenzimmers öffnen will, ruft die Krankenschwester mich von hinten.*"
-    },
+    "after_nurse_enter_11_j": {},
     "after_nurse_enter_11_k": {
         "name": "Schulkrankenschwester",
         "text": "Oh, Neuer."
@@ -537,6 +531,6 @@
     },
     "after_nurse_enter_trap": {
         "name": "Schulkrankenschwester",
-        "text": "Sah wohl gemütlich aus. Je stiller es hier ist, desto aufmerksamer muss ich sein."
+        "text": "Wenn niemand da ist, kümmere ich mich um Unterlagen und Vorräte. Nur weil es ruhig ist, habe ich noch lange keine Pause."
     }
 }

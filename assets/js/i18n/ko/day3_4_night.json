@@ -53,7 +53,7 @@
     },
     "night3_dream_2_b": {
         "name": "{name}",
-        "text": "*메모장을 닫았다. 내일 보낼 문장은 아직 없다.*"
+        "text": "*휴대폰을 내려놓는다. 내일은 무슨 말을 해야 할지 아직 모르겠다.*"
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
@@ -65,7 +65,7 @@
     },
     "night3_faithful_reflect_2_c": {
         "name": "{name}",
-        "text": "*1초 동안 화면을 내려다본다. 소정이 책상의 낙서와 고개를 돌렸던 38번의 아침이 차례로 떠오른다.*"
+        "text": "*잠깐 화면을 내려다본다. 소정이 책상의 낙서와 고개를 돌렸던 아침들이 떠오른다.*"
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
@@ -139,7 +139,7 @@
     },
     "night3_cheat_msg_7": {
         "name": "유나",
-        "text": "*유나에게서 말풍선 세 개가 연달아 올라온다.*"
+        "text": "*유나의 메시지를 다시 읽는다. 답장창에 손을 댔다가 거둔다.*"
     },
     "night3_nightmare_1": {
         "name": "{name}",
@@ -155,7 +155,7 @@
     },
     "night3_nightmare_3_b": {
         "name": "{name}",
-        "text": "*유나가 보낸 세 줄 아래에는 읽음 표시만 붙어 있다.*"
+        "text": "*유나의 메시지 아래에는 읽음 표시만 붙어 있다.*"
     },
     "night3_nightmare_4": {
         "name": "{name}",
@@ -216,7 +216,7 @@
     },
     "night3_cheat_reflect_3_d": {
         "name": "{name}",
-        "text": "*민수와의 대화방에는 '미룬다고 없어지는 일 아님'이라는 답장이 와 있다.*"
+        "text": "*민수에게서 '미룬다고 없어지는 일 아님'이라는 메시지가 와 있다.*"
     },
     "night3_cheat_reflect_3_e": {
         "name": "{name}",

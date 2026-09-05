@@ -53,7 +53,7 @@
     },
     "night3_dream_2_b": {
         "name": "{name}",
-        "text": "*Cierro la aplicación de notas. Todavía no hay ninguna frase que enviar mañana.*"
+        "text": "*Dejo el móvil. Todavía no sé qué voy a decir mañana.*"
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
@@ -65,7 +65,7 @@
     },
     "night3_faithful_reflect_2_c": {
         "name": "{name}",
-        "text": "*Un segundo. Solo miro la pantalla. — El grafiti en el pupitre de Sojeong. Las treinta y ocho mañanas en que aparté la vista.*"
+        "text": "*Miro la pantalla un momento. Recuerdo las pintadas en el pupitre de Sojeong y las mañanas en que aparté la mirada.*"
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
@@ -139,7 +139,7 @@
     },
     "night3_cheat_msg_7": {
         "name": "Yuna",
-        "text": "*De Yuna llegan tres burbujas de mensaje seguidas.*"
+        "text": "*Releo los mensajes de Yuna. Acerco el dedo al campo de respuesta, pero lo retiro.*"
     },
     "night3_nightmare_1": {
         "name": "{name}",
@@ -155,7 +155,7 @@
     },
     "night3_nightmare_3_b": {
         "name": "{name}",
-        "text": "*En el chat de Yuna solo aparece la marca de leído bajo sus tres líneas.*"
+        "text": "*Bajo los mensajes de Yuna solo aparece la confirmación de lectura.*"
     },
     "night3_nightmare_4": {
         "name": "{name}",
@@ -216,7 +216,7 @@
     },
     "night3_cheat_reflect_3_d": {
         "name": "{name}",
-        "text": "*En el chat con Minsu hay una respuesta: «Dejarlo para después no hará que desaparezca».*"
+        "text": "*Tengo un mensaje de Minsu: «Aplazarlo no hará que desaparezca».*"
     },
     "night3_cheat_reflect_3_e": {
         "name": "{name}",

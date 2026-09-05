@@ -168,7 +168,7 @@
     },
     "lunch_seo_after": {
         "name": "{name}",
-        "text": "*A warning chime sounds over the field speakers, signaling the end of lunch.*"
+        "text": "*Laughter drifts up from the schoolyard.*"
     },
     "lunch_seo_after_2": {
         "name": "Seoyeon",
@@ -180,16 +180,13 @@
     },
     "lunch_seo_after_4": {
         "name": "Seoyeon",
-        "text": "No. I'm giving you permission."
+        "text": "I’m asking you to eat with me. Come by if you’re free."
     },
     "lunch_seo_after_5": {
         "name": "Seoyeon",
         "text": "*She ties the lunchbox strap, then reties it tighter.*"
     },
-    "lunch_seo_after_7": {
-        "name": "{name}",
-        "text": "*The knot around the lunchbox is tighter than before.*"
-    },
+    "lunch_seo_after_7": {},
     "lunch_seo_freetalk": {
         "name": "Seoyeon",
         "text": "*She straightens the lunchbox lid and nudges the folding chair a few inches with the toe of her shoe.* Nice breeze, right?",
@@ -278,11 +275,11 @@
     },
     "lunch_dain_20": {
         "name": "Dain",
-        "text": "What? What's a PR?"
+        "text": "PR? Are we talking publicity or a personal record?"
     },
     "lunch_dain_21": {
         "name": "{name}",
-        "text": "Personal Record. It's a sports term."
+        "text": "Publicity, this time. You’re recruiting athletic friends."
     },
     "lunch_dain_22": {
         "name": "Dain",
@@ -290,7 +287,7 @@
     },
     "lunch_dain_23": {
         "name": "Dain",
-        "text": "Oh, you know that? So you do know sports!"
+        "text": "You got me. So, do you know much about sports?"
     },
     "lunch_dain_choice": {
         "name": "Dain",
@@ -405,15 +402,15 @@
     },
     "lunch_yuna_18": {
         "name": "Yuna",
-        "text": "*Yuna opens her own book again. She leaves the one she lent me open to its first sentence.*"
+        "text": "*Yuna opens her own book, too. We sit across from each other, reading quietly.*"
     },
     "lunch_yuna_20": {
         "name": "{name}",
-        "text": "*The warning bell rings five minutes before class.*"
+        "text": "*I look up from the book to find Yuna watching me.*"
     },
     "lunch_yuna_21": {
         "name": "{name}",
-        "text": "Bell already?"
+        "text": "Something on your mind?"
     },
     "lunch_yuna_22": {
         "name": "Yuna",
@@ -429,13 +426,13 @@
     },
     "lunch_yuna_25": {
         "name": "Yuna",
-        "text": "*Yuna puts her book away. Before getting up, she glances once more at the cover of the book I’m holding.*"
+        "text": "*Yuna glances at the cover of my book. Our eyes meet for a moment.*"
     },
     "lunch_yuna_choice": {
         "name": "{name}",
-        "text": "*Yuna is only a few steps ahead. I pick up the book she left behind and hurry after her.*",
+        "text": "*I close the book and turn to Yuna.*",
         "choices": [
-            "Is that book good? Should I read it too?",
+            "I’d like to read the rest.",
             "I guess you like sitting quietly with a book.",
             "I’ll keep you more entertained than that book.",
             "We could be comfortable together without having to talk."
@@ -459,7 +456,7 @@
     },
     "lunch_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*She slips in her bookmark, closes the cover, and gestures to the chair opposite her with one palm.* You don't mind the quiet, do you?",
+        "text": "*Yuna rests her hands on her book.* You don’t mind the quiet, do you?",
         "context": "First-day lunch, just after spending a quiet stretch of time with Yuna in the library. They do not know each other well yet, but there is a quiet curiosity between them.",
         "personality": "Yuna is a reserved and cautious reader. She tends to observe and think before speaking, revealing more of her own thoughts as trust develops."
     },

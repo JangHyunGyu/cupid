@@ -222,7 +222,7 @@
     },
     "wall_seo_hug_2_b": {
         "name": "Seoyeon",
-        "text": "It's been a long time since I cried in front of anyone."
+        "text": "It’s been a long time since I cried with someone holding me like this."
     },
     "wall_seo_hug_2_c": {
         "name": "Seoyeon",
@@ -283,7 +283,7 @@
     },
     "wall_seo_after_line": {
         "name": "Seoyeon",
-        "text": "Wait. Do you have a wet wipe?"
+        "text": "Wait. Could I have a wet wipe?"
     },
     "wall_seo_after_line_2": {
         "name": "Seoyeon",
@@ -329,7 +329,7 @@
     },
     "wall_seo_glimpse_2": {
         "name": "Dain",
-        "text": "Just return ten serves for me. When we're done... hug me, okay? I can't keep pretending I'm fine by myself tonight.",
+        "text": "I’m not practicing tonight. Just… hold me for a minute? I’m tired of pretending I’m okay on my own.",
         "choices": [
             "Keep the promise and go to Seoyeon at the park",
             "Enter the gym and stay with Dain",
@@ -499,7 +499,7 @@
     },
     "wall_dain_21": {
         "name": "Dain",
-        "text": "Today too. Running around on our date. Pretending to be cheerful beside you. My knee kept giving out."
+        "text": "I did it again today. Even walking on our date hurt, but I kept pretending I was fine in front of you."
     },
     "wall_dain_22": {
         "name": "Dain",
@@ -756,7 +756,7 @@
     },
     "wall_yuna_13": {
         "name": "Yuna",
-        "text": "One day he transferred. No contact. Just this letter."
+        "text": "One day, he transferred. No goodbye in person. Just this letter."
     },
     "wall_yuna_14": {
         "name": "Yuna",
@@ -850,7 +850,7 @@
     },
     "wall_yuna_skin60_1": {
         "name": "{name}",
-        "text": "*Between the shelves of the basement archive, Yuna stands one step behind me.*"
+        "text": "*Between the archive shelves, Yuna stops one step behind me.*"
     },
     "wall_yuna_skin60_2": {
         "name": "Yuna",
@@ -912,7 +912,7 @@
     },
     "wall_yuna_dain_tempt_2": {
         "name": "Dain",
-        "text": "Just return ten serves for me. When we're done... hug me, okay? I can't keep pretending I'm fine by myself tonight.",
+        "text": "I’m not practicing tonight. Just… hold me for a minute? I’m tired of pretending I’m okay on my own.",
         "choices": [
             "Reply to Yuna and continue to the school back gate",
             "Enter the gym and stay with Dain",
@@ -934,15 +934,15 @@
     },
     "day4_night_regret_msg_seo": {
         "name": "Seoyeon",
-        "text": "The wind was nice today. I waited for a while."
+        "text": "I waited at the park for a while. I’m heading home now."
     },
     "day4_night_regret_msg_dain": {
         "name": "Dain",
-        "text": "Hey, today was fun. I wasn't the only one excited, right?"
+        "text": "I’m still waiting. If you can’t come, at least tell me."
     },
     "day4_night_regret_msg_yuna": {
         "name": "Yuna",
-        "text": "Today, I was looking forward to it too. Even if I talked less."
+        "text": "I thought you’d come tonight. I’m leaving now."
     },
     "day4_night_regret_msg": {
         "name": "{name}",
@@ -970,7 +970,7 @@
     },
     "night_homeroom_msg_3": {
         "name": "{name}",
-        "text": "*Nine at night. Confirmation comments from literature club members appear one by one beneath the class notice. I add 'critique' to tomorrow's schedule.*"
+        "text": "*The writing club has left replies under the notice posted at 9 p.m. I add ‘critique session’ to tomorrow’s schedule.*"
     },
     "day4_hidden_msg_after_homeroom": {
         "name": "System",
@@ -1002,7 +1002,7 @@
     },
     "wall_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*She folds the letter into her book and meets my eyes first this time.* There's still something I want to hear.",
+        "text": "*Back at our seats in the reading room, Yuna folds the letter into her book. This time she meets my eyes first.* There’s still something I want to ask you.",
         "context": "Night of Day 4 in the annex reading room. After reading Lee Junho’s letter, Yuna has voiced her fear that she may be holding onto the player as a replacement for the senior who left. Preserve their just-made choices and acceptance or postponement of the confession. Do not reverse this into Yuna being someone’s replacement. The letter is folded inside a book; both remain here.",
         "personality": "Yuna is quiet and reflective, but she no longer avoids the questions that matter. Instead of hiding behind metaphor, she speaks directly when needed and listens without twisting the answer to fit her fears."
     },
@@ -1120,7 +1120,7 @@
     },
     "day4_student_counteroffer_soft_dain": {
         "name": "Dain",
-        "text": "*I enter the gym and return her tosses until the last ball goes still. After catching her breath, Dain taps the seat beside her.* Just sit with me today."
+        "text": "*When I enter the gym, Dain sets the ball down and sits on the bench. She looks at me and pats the seat beside her.* Just sit with me tonight."
     },
     "day4_student_counteroffer_soft_yuna": {
         "name": "Yuna",

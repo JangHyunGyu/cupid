@@ -129,7 +129,7 @@
     },
     "tour_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*She runs her fingertips along the book spines, then lifts her head.* Since it's the last time, I'm talking more than usual."
+        "text": "*She runs a finger along the book’s spine, then looks up.* I’ve talked a lot today, haven’t I?"
     },
     "tour_yuna_end": {
         "name": "Yuna",
@@ -157,7 +157,7 @@
     },
     "tour_dain_3": {
         "name": "Dain",
-        "text": "One last round of rock-paper-scissors?"
+        "text": "Hey, one more round of rock-paper-scissors?"
     },
     "tour_dain_4": {
         "name": "{name}",
@@ -205,7 +205,7 @@
     },
     "tour_dain_freetalk": {
         "name": "Dain",
-        "text": "*She pins the rolling volleyball beneath her sneaker.* I can't let our last lunch pass without doing something."
+        "text": "*She stops a rolling volleyball under her shoe.* It’s the festival lunch break. We can’t call it a day yet."
     },
     "tour_dain_end_2": {
         "name": "{name}",
@@ -250,7 +250,7 @@
     },
     "tour_co_dain_2": {
         "name": "Dain",
-        "text": "Let's save rock-paper-scissors for tomorrow. Today, I'll just stand here."
+        "text": "Rock-paper-scissors can wait till tomorrow. I want to rest today."
     },
     "tour_co_dain_3": {
         "name": "{name}",

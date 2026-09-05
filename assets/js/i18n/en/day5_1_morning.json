@@ -123,7 +123,7 @@
     },
     "morning5_caught_dain_honest": {
         "name": "Dain",
-        "text": "*Dain pulls her wrist guard tight, then lets go.* So when I asked if I was the only one getting excited, you were already there with her."
+        "text": "*Dain pulls her wrist support tight, then lets go.* So when I texted that I was waiting, you were already there."
     },
     "morning5_caught_dain_lie": {
         "name": "Dain",
@@ -152,15 +152,15 @@
     },
     "morning5_mood_high": {
         "name": "{name}",
-        "text": "*It's the last day. Before opening the classroom door, I think once about the words exchanged over the past four days.*"
+        "text": "*My first week at the new school is nearly over. Before opening the classroom door, I think back on our conversations over the past four days.*"
     },
     "morning5_mood_mid": {
         "name": "{name}",
-        "text": "The last day. I still haven't decided which way to go. Even so, I walk through the gate."
+        "text": "My first week is almost over, and I still haven’t made up my mind. For now, I walk through the gate."
     },
     "morning5_mood_low": {
         "name": "{name}",
-        "text": "The last day. I tap each of the three names left on my lock screen, then turn it off without opening any of the chats."
+        "text": "My first week is nearly over. I stare at the three names on the lock screen, then turn it off without opening a chat."
     },
     "morning5_gate": {},
     "morning5_seo_note_1": {
@@ -177,7 +177,7 @@
     },
     "morning5_yuna_story_gone_2": {
         "name": "{name}",
-        "text": "*An empty library seat, a missing bookmark, an unposted novel. Only four thumbtack holes remain on the bulletin board.*"
+        "text": "*I pause before the empty noticeboard. The pinholes tell me nothing about what Yuna was thinking.*"
     },
     "morning5_seo_note_1_c": {
         "name": "{name}",
@@ -254,7 +254,7 @@
     },
     "hidden_homeroom_d5_3": {
         "name": "Homeroom Teacher",
-        "text": "I kept it buried for seven years. This time, I'm sharing it with the literature club and the other language arts teachers too."
+        "text": "I’ve been at this for seven years. It’s time I listened to other people’s ideas, too."
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",
@@ -491,14 +491,8 @@
         "name": "{name}",
         "text": "*Beneath the counseling form, the booking instructions for the nurse's office and school counseling center are printed side by side.*"
     },
-    "hidden_nurse_d5_2_b": {
-        "name": "School Nurse",
-        "text": "*I open the nurse's office door and check the appointment list.*"
-    },
-    "hidden_nurse_d5_2_c": {
-        "name": "School Nurse",
-        "text": "Right on time for your appointment. Good."
-    },
+    "hidden_nurse_d5_2_b": {},
+    "hidden_nurse_d5_2_c": {},
     "hidden_nurse_d5_3": {
         "name": "{name}",
         "text": "I'm here to pick up my counseling confirmation."
@@ -511,30 +505,15 @@
         "name": "School Nurse",
         "text": "You're always welcome to come for help at a scheduled time."
     },
-    "hidden_nurse_d5_3_d": {
-        "name": "{name}",
-        "text": "Even without an excuse?"
-    },
-    "hidden_nurse_d5_3_e": {
-        "name": "School Nurse",
-        "text": "Of course. The nurse's office isn't for inventing excuses. It's for getting the help you need."
-    },
+    "hidden_nurse_d5_3_d": {},
+    "hidden_nurse_d5_3_e": {},
     "hidden_nurse_d5_3_f": {
         "name": "School Nurse",
         "text": "*She opens a box of first-aid information cards.*"
     },
-    "hidden_nurse_d5_3_g": {
-        "name": "School Nurse",
-        "text": "Go on. You can't skip the event."
-    },
-    "hidden_nurse_d5_3_h": {
-        "name": "School Nurse",
-        "text": "*Before crossing the nurse's-office threshold, she opens the appointment list again.*"
-    },
-    "hidden_nurse_d5_3_i": {
-        "name": "School Nurse",
-        "text": "{name}, wait."
-    },
+    "hidden_nurse_d5_3_g": {},
+    "hidden_nurse_d5_3_h": {},
+    "hidden_nurse_d5_3_i": {},
     "hidden_nurse_d5_4": {
         "name": "School Nurse",
         "text": "The event first-aid kit is by the gym entrance. If anyone gets hurt, call the teacher in charge right away."
@@ -619,7 +598,7 @@
     "morning5_end_branch": {},
     "morning5_end": {
         "name": "{name}",
-        "text": "*I place the notes and notifications from three directions side by side on my desk.*"
+        "text": "*I gather the notes on my desk, then check the notifications on my phone one by one.*"
     },
     "morning5_committed_end": {
         "name": "{name}",

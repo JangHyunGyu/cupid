@@ -13,7 +13,7 @@
     },
     "confess_seo_1": {
         "name": "{name}",
-        "text": "*데이트가 끝났다. 교문 대신 옥상으로 올라왔다.*"
+        "text": "*데이트를 마치고 학교 앞까지 돌아왔다.*"
     },
     "confess_seo_2": {
         "name": "서연",
@@ -56,7 +56,7 @@
     },
     "confess_seo_yes_3": {
         "name": "{name}",
-        "text": "오늘 이후에도 너랑 만나고 싶어."
+        "text": "좋아해. 오늘 이후에도 너랑 만나고 싶어."
     },
     "confess_seo_yes_4": {
         "name": "{name}",
@@ -159,7 +159,7 @@
     },
     "confess_yuna_yes_3": {
         "name": "{name}",
-        "text": "유나. 너랑 있으면 말을 덜 고르게 돼."
+        "text": "유나, 좋아해. 너랑 있으면 하고 싶은 말을 참지 않아도 돼서."
     },
     "confess_yuna_yes_3_b": {
         "name": "{name}",
@@ -267,7 +267,7 @@
     },
     "confess_dain_yes_3_b": {
         "name": "{name}",
-        "text": "오늘만 말고 다음에도 계속 만나고 싶어."
+        "text": "좋아해. 오늘만 말고 앞으로도 계속 만나고 싶어."
     },
     "confess_dain_yes_4": {
         "name": "{name}",

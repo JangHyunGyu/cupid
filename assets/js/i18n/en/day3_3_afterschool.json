@@ -55,7 +55,7 @@
     "after3_reject_for_seo_3c": {},
     "after3_reject_for_seo_4": {
         "name": "{name}",
-        "text": "*I step into the hall. Dain's sentence ended quietly, and Yuna's seat was empty. The note in my hand crumples along its creases.*"
+        "text": "*I step into the hall. Dain had gone quiet, and Yuna’s seat was empty. I crumple the note in my hand along its folds.*"
     },
     "after3_seo_1": {
         "name": "{name}",
@@ -125,7 +125,7 @@
     },
     "after3_seo_pity_trap_5": {
         "name": "Seoyeon",
-        "text": "I didn't become student council president to be 'just anyone.'"
+        "text": "Please don’t brush it off like that. I can’t just feel better right now."
     },
     "after3_seo_pity_trap_6": {
         "name": "Seoyeon",
@@ -177,7 +177,7 @@
     },
     "after3_seo_correct_8": {
         "name": "{name}",
-        "text": "*I keep up the pointless talk about pens while Seoyeon adjusts her glasses. My eyes stay fixed beneath the desk.*"
+        "text": "*I keep talking about pens while Seoyeon adjusts her glasses, waiting for her to meet my eyes.*"
     },
     "after3_seo_correct_9": {
         "name": "Seoyeon",
@@ -189,7 +189,7 @@
     },
     "after3_seo_correct_11": {
         "name": "Seoyeon",
-        "text": "The pen thing. Do it again sometime."
+        "text": "Next time you lose a pen, come here first."
     },
     "after3_seo_correct_12": {
         "name": "{name}",
@@ -228,7 +228,7 @@
     },
     "after3_reject_for_yuna_4": {
         "name": "{name}",
-        "text": "*I leave the gym and return to the hall. Seoyeon's message remains marked as read, and Dain still hasn't replied.*"
+        "text": "*I only talked about work with Seoyeon, and barely said hello to Dain. I still haven’t said what I meant to.*"
     },
     "after3_yuna_1": {
         "name": "{name}",
@@ -393,7 +393,7 @@
     },
     "after3_reject_for_dain_3b": {
         "name": "{name}",
-        "text": "*I return to the hall. A trail of water from Yuna's cup remains on the floor.*"
+        "text": "*I leave the annex and head toward the gym.*"
     },
     "after3_dain_1": {
         "name": "{name}",
@@ -463,11 +463,11 @@
     },
     "after3_dain_pity_trap_9": {
         "name": "Dain",
-        "text": "My coach does it. My parents do it. Everyone does. I thought you wouldn't."
+        "text": "I didn’t want to hear that from you, too."
     },
     "after3_dain_pity_trap_10": {
         "name": "{name}",
-        "text": "*The gym door closes. Not a slam. Quietly. One of Dain's wrist guards lies on the floor.*"
+        "text": "*The gym door closes quietly. Dain’s wrist support lies on the floor where she left it.*"
     },
     "after3_dain_correct_1": {
         "name": "Dain",
@@ -540,7 +540,7 @@
     },
     "after3_dain_dilemma_tell_7": {
         "name": "Dain",
-        "text": "*Dain gets up and bends to tie her shoe, but her knee creaks. Her hand never reaches the laces.*"
+        "text": "*Dain bends to tie her shoe, then grabs her knee. She never reaches the laces.*"
     },
     "after3_dain_dilemma_tell_8": {
         "name": "Dain",
@@ -885,7 +885,7 @@
     },
     "haeun_affinity_neutral_2": {
         "name": "Haeun",
-        "text": "But I'll see whether you keep your word. Just don't leave Seoyeon alone today."
+        "text": "Just keep the promise you made. And check later that she got home safely."
     },
     "haeun_affinity_low_1": {
         "name": "Haeun",
@@ -944,7 +944,7 @@
     "after3_dain_departed_end": {},
     "minsu_d3_4_established": {
         "name": "Minsu",
-        "text": "I told you yesterday: something casual to you can mean more to someone else. You saw what happened at lunch, right?"
+        "text": "It bothered me yesterday, too. One person at lunch, someone else after school. After what happened today, I don’t think you can just let it slide."
     },
     "minsu_d3_4_first": {
         "name": "Minsu",

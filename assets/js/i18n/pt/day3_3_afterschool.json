@@ -125,7 +125,7 @@
     },
     "after3_seo_pity_trap_5": {
         "name": "Seoyeon",
-        "text": "Eu não virei presidente do grêmio pra ser «qualquer uma»."
+        "text": "Não resume tudo a essa frase, por favor. Agora não consigo ficar bem assim tão fácil."
     },
     "after3_seo_pity_trap_6": {
         "name": "Seoyeon",
@@ -177,7 +177,7 @@
     },
     "after3_seo_correct_8": {
         "name": "{name}",
-        "text": "*A conversa continua naturalmente. Seoyeon ajeita os óculos de novo, e eu continuo fingindo olhar debaixo da mesa.*"
+        "text": "*Continuo falando das canetas enquanto Seoyeon ajeita os óculos. Espero até que ela olhe para mim.*"
     },
     "after3_seo_correct_9": {
         "name": "Seoyeon",
@@ -189,7 +189,7 @@
     },
     "after3_seo_correct_11": {
         "name": "Seoyeon",
-        "text": "Sobre pegar a caneta... vê se deixa cair outra de vez em quando."
+        "text": "Da próxima vez que perder uma caneta, vem aqui primeiro."
     },
     "after3_seo_correct_12": {
         "name": "{name}",
@@ -228,7 +228,7 @@
     },
     "after3_reject_for_yuna_4": {
         "name": "{name}",
-        "text": "*Saí da quadra e voltei para o corredor. A mensagem de Seoyeon ainda está marcada como lida. Nenhuma resposta de Dain.*"
+        "text": "*Com Seoyeon só falei de trabalho, e a Dain só dei um oi. Ainda não consegui dizer o que precisava.*"
     },
     "after3_yuna_1": {
         "name": "{name}",
@@ -393,7 +393,7 @@
     },
     "after3_reject_for_dain_3b": {
         "name": "{name}",
-        "text": "*Volto ao corredor. No chão, ficou o rastro de água do copo de Yuna.*"
+        "text": "*Saio do anexo e sigo para o ginásio.*"
     },
     "after3_dain_1": {
         "name": "{name}",
@@ -463,11 +463,11 @@
     },
     "after3_dain_pity_trap_9": {
         "name": "Dain",
-        "text": "O treinador olha assim. Meus pais olham assim. Todo mundo olha assim. — Eu jurei que você não ia olhar."
+        "text": "Não queria ouvir isso de você também."
     },
     "after3_dain_pity_trap_10": {
         "name": "{name}",
-        "text": "*A porta da quadra fecha. Não um baque. Quieta. Uma das munhequeiras de Dain jaz no chão.*"
+        "text": "*A porta do ginásio se fecha devagar. A munhequeira que Dain deixou para trás continua no chão.*"
     },
     "after3_dain_correct_1": {
         "name": "Dain",
@@ -540,7 +540,7 @@
     },
     "after3_dain_dilemma_tell_7": {
         "name": "Dain",
-        "text": "*Dain se levanta e se inclina para amarrar o cadarço, mas o joelho range. Sua mão não chega até ele.*"
+        "text": "*Dain se abaixa para amarrar o tênis, mas leva a mão ao joelho antes de alcançar o cadarço.*"
     },
     "after3_dain_dilemma_tell_8": {
         "name": "Dain",
@@ -885,7 +885,7 @@
     },
     "haeun_affinity_neutral_2": {
         "name": "Haeun",
-        "text": "Mas vou ver se você cumpre o que acabou de dizer. Hoje, só não deixe Seoyeon sozinha."
+        "text": "Mas cumpra o que acabou de prometer. E depois veja se ela chegou bem em casa."
     },
     "haeun_affinity_low_1": {
         "name": "Haeun",
@@ -944,7 +944,7 @@
     "after3_dain_departed_end": {},
     "minsu_d3_4_established": {
         "name": "Minsu",
-        "text": "Falei ontem: o que você diz sem pensar pode significar muito para outra pessoa. Viu o que aconteceu no almoço, né?"
+        "text": "Ontem já fiquei encucado. Uma no almoço, outra depois da aula. Depois do que aconteceu hoje, acho que não dá para deixar passar."
     },
     "minsu_d3_4_first": {
         "name": "Minsu",

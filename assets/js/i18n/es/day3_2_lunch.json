@@ -138,7 +138,7 @@
     },
     "lunch3_dain_skin_3": {
         "name": "Dain",
-        "text": "¡¡Eso no cuenta!!"
+        "text": "…Me ha dado más vergüenza de la que pensaba."
     },
     "lunch3_give_dain_2": {
         "name": "Seoyeon",
@@ -164,11 +164,11 @@
     },
     "lunch3_yuna_skin_2": {
         "name": "Yuna",
-        "text": "...Esto no tiene que ver con la nota. Porque sí."
+        "text": "Lo de darte las gracias antes. Lo decía de verdad."
     },
     "lunch3_yuna_skin_3": {
         "name": "{name}",
-        "text": "*No añade nada después de «porque sí». Solo entonces suelta el borde del papel.*"
+        "text": "*Yuna suelta el borde del papel. Doblo la nota y la guardo con cuidado.*"
     },
     "lunch3_give_yuna_2": {
         "name": "Seoyeon",
@@ -202,10 +202,7 @@
         "name": "{name}",
         "text": "*La punta de los palillos de Seoyeon presiona el borde de la lonchera. Yuna mira a Dain sin soltar la bolsa de pan que estaba abriendo.*"
     },
-    "lunch3_expose_5": {
-        "name": "Seoyeon",
-        "text": "Espera."
-    },
+    "lunch3_expose_5": {},
     "lunch3_expose_6": {
         "name": "Seoyeon",
         "text": "Espera. ¿Quieres decir que hay más de una cita?"
@@ -278,7 +275,7 @@
     },
     "lunch3_expose_honest_7": {
         "name": "{name}",
-        "text": "*No hay ningún signo de exclamación. El final de la frase de Dain es extrañamente tranquilo.*"
+        "text": "*Dain responde brevemente y aparta la mirada. Ya no queda rastro de su entusiasmo.*"
     },
     "lunch3_expose_excuse_1": {
         "name": "{name}",

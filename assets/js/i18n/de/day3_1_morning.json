@@ -13,7 +13,7 @@
     },
     "morning3_date_dain_low": {
         "name": "Dain",
-        "text": "*Dain klemmt einen Volleyball an ihre Seite, wirft dir einen Blick zu und sieht dann wieder zum Spielfeld.* Dieses Wochenende trainiere ich allein."
+        "text": "*Dain schaut kurz zu mir und zieht dann ihre Tasche zu.* Dieses Wochenende trainiere ich allein."
     },
     "morning3_date_yuna_low": {
         "name": "Yuna",
@@ -368,7 +368,7 @@
     },
     "hidden_homeroom_d3_reveal_4_e": {
         "name": "Klassenlehrerin",
-        "text": "Lesen ist in Ordnung. Aber ich werde es nicht heimlich nur dir geben. Ich bereite es erst einmal für eine offene Besprechung im Literaturklub vor."
+        "text": "Ich möchte es zur Besprechung im Literaturklub mitbringen. Würdest du es dann lesen?"
     },
     "hidden_homeroom_d3_reveal_4_f": {
         "name": "Klassenlehrerin",
@@ -409,7 +409,7 @@
     },
     "hidden_homeroom_d3_reveal_6_b": {
         "name": "Klassenlehrerin",
-        "text": "Dann zeige ich es nach sieben Jahren zum ersten Mal anderen."
+        "text": "Bisher habe ich allein daran gefeilt. Diesmal höre ich direkt, was die anderen dazu sagen."
     },
     "hidden_homeroom_d3_reveal_6_c": {
         "name": "{name}",
@@ -425,11 +425,11 @@
     },
     "hidden_homeroom_d3_reveal_6_f": {
         "name": "Klassenlehrerin",
-        "text": "Weil es hier ruhig ist. Trotzdem reden wir ab jetzt nur während des Literaturklubs über das Manuskript."
+        "text": "Über das Manuskript reden wir dann bei der Besprechung weiter."
     },
     "hidden_homeroom_d3_reveal_6_g": {
         "name": "{name}",
-        "text": "*Nur der Sekundenzeiger bewegt sich, während ich einen Satz mit mehreren Schichten von Radiererspuren lese.*"
+        "text": "*Sie schiebt das Manuskript in einen Umschlag und hält vor der letzten Seite kurz inne.*"
     },
     "hidden_homeroom_d3_hide_1": {
         "name": "Klassenlehrerin",
@@ -485,14 +485,8 @@
         "name": "Schulkrankenschwester",
         "text": "*Die Krankenschwester stellt den Becher ab.*"
     },
-    "hidden_nurse_d3_3_c": {
-        "name": "Schulkrankenschwester",
-        "text": "Setz dich."
-    },
-    "hidden_nurse_d3_3_d": {
-        "name": "Schulkrankenschwester",
-        "text": "*Sie stellt den Becher weiter hinten auf den Schreibtisch und zieht den Besucherstuhl vor das Bett.*"
-    },
+    "hidden_nurse_d3_3_c": {},
+    "hidden_nurse_d3_3_d": {},
     "hidden_nurse_d3_4": {
         "name": "Schulkrankenschwester",
         "text": "*Sie zieht den Vorhang zu und reicht mir einen Becher Wasser.* Setz dich. Hier kannst du dich entspannen. Lass dir Zeit beim Reden."
@@ -575,7 +569,7 @@
     },
     "hidden_nurse_d3_6": {
         "name": "Schulkrankenschwester",
-        "text": "Als ich im Universitätskrankenhaus gearbeitet habe. Wenn mehrere Rufglocken gleichzeitig klingelten, habe ich unwillkürlich zuerst die freien Betten gezählt. Das habe ich gehasst."
+        "text": "In der Uniklinik wusste ich bei mehreren Klingeln oft nicht, wohin zuerst. Häufig musste ich schon weiter, bevor ein Patient ausgeredet hatte."
     },
     "hidden_nurse_d3_6_b": {
         "name": "Schulkrankenschwester",
@@ -583,7 +577,7 @@
     },
     "hidden_nurse_d3_6_c": {
         "name": "Schulkrankenschwester",
-        "text": "Ich würde nicht sagen, dass ich gekündigt habe. Ich bin gegangen. Einen edlen Grund gab es nicht."
+        "text": "Ich wusste nicht, wie lange ich das noch schaffen würde."
     },
     "hidden_nurse_d3_6_d": {
         "name": "Schulkrankenschwester",
@@ -636,7 +630,7 @@
     },
     "hidden_nurse_d3_choice2": {
         "name": "Schulkrankenschwester",
-        "text": "*Bei ‚einer Person‘ hält die Krankenschwester inne. Der Rand des Pappbechers knickt unter ihren Fingern ein.*",
+        "text": "*Die Schulkrankenschwester schließt die Schublade. An der Tür suche ich nach den richtigen Worten.*",
         "choices": [
             "Sind Sie nach diesem Erlebnis aus dem Krankenhaus gegangen?",
             "Ist es für Sie in Ordnung, noch mehr davon zu erzählen?",
@@ -697,7 +691,7 @@
         "name": "Seoyeon",
         "text": "*Seoyeon fragt vor der Klassenzimmertür. Dain hört auf, den Deckel ihrer Flasche zu drehen.*",
         "choices": [
-            "Ja. Wohin?",
+            "Gern. Um wie viel Uhr?",
             "Ich glaube, ich bin etwas beschäftigt",
             "Wenn die Schülersprecherin darum bittet, nehme ich mir natürlich Zeit.",
             "Ich halte mir die Zeit frei, wenn sonst niemand kommt."
@@ -725,7 +719,7 @@
     },
     "morning3_date_dain_2": {
         "name": "Dain",
-        "text": "*Dain klopft auf meine Tischkante. In dieser Pause sortiert Seoyeon an ihrem Platz Unterlagen.*"
+        "text": "*Dain trommelt auf die Kante meines Tisches. Durch die offene Klassenzimmertür sehe ich Seoyeon ihre Unterlagen sortieren.*"
     },
     "morning3_date_dain_choice": {
         "name": "Dain",
@@ -739,7 +733,7 @@
     },
     "morning3_date_dain_accept": {
         "name": "{name}",
-        "text": "*Wir verabreden uns fürs Wochenende. Als Dain lächelt, schließt Seoyeon an ihrem Platz die Schreibmappe.*"
+        "text": "*Dain und ich verabreden uns fürs Wochenende. Als sie grinst, klappt Seoyeon vor der Tür ihre Klemmbrettmappe zu.*"
     },
     "morning3_date_dain_decline": {
         "name": "Dain",

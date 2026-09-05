@@ -134,7 +134,7 @@
     },
     "hidden_true_homeroom_4": {
         "name": "Homeroom Teacher",
-        "text": "*She checks the name and photo on my company ID in turn.* You've really built a life of your own."
+        "text": "*She smiles at my work badge.* How’s the job treating you?"
     },
     "hidden_true_homeroom_4_b": {
         "name": "{name}",
@@ -319,7 +319,7 @@
     },
     "hidden_true_nurse_2_b": {
         "name": "{name}",
-        "text": "*Two company IDs from different workplaces rest on the table. One phone shows an overtime-approval notice; the other, a report that the health event has ended.*"
+        "text": "*Two phones buzz on the table. One shows an overtime approval; the other, the health event’s closing report.*"
     },
     "hidden_true_nurse_2_c": {
         "name": "School Nurse",
@@ -363,7 +363,7 @@
     },
     "hidden_true_nurse_5_f": {
         "name": "School Nurse",
-        "text": "*She taps the coffee-cup handle twice with one finger.* Right. A bandage should take under three minutes."
+        "text": "*She taps the handle of her coffee cup.* Yes. Next time, let’s talk without watching the clock."
     },
     "hidden_true_nurse_6": {
         "name": "School Nurse",
@@ -415,11 +415,11 @@
     },
     "hidden_true_nurse_8_g": {
         "name": "School Nurse",
-        "text": "Right. I chose it—not because anyone held me there. Coming here today was my choice too."
+        "text": "Yes. I stayed because I still wanted to do the job. And seeing you again was my choice, too."
     },
     "hidden_true_nurse_8_h": {
         "name": "{name}",
-        "text": "Then I'll come by next week, too. That's my choice. *Before the movie ends, Juwon falls asleep against {name}'s shoulder.*"
+        "text": "I’d like to see you again next week, too. *Before the film ends, Juwon falls asleep against {name}’s shoulder.*"
     },
     "hidden_good_nurse_1": {
         "name": "School Nurse",
@@ -611,7 +611,7 @@
     },
     "true_epilogue_1_seo": {
         "name": "{name}",
-        "text": "*Five days. That's how long it took to memorize where everything sat on Seoyeon's desk.*"
+        "text": "*It was my first time in Seoyeon’s room, but I recognized plenty of things on her desk.*"
     },
     "ending_aff_check_yuna": {
         "name": "System",
@@ -672,7 +672,7 @@
     },
     "bitter_yuna_3": {
         "name": "{name}",
-        "text": "*I leave through the school gate. It's raining. In the mailbox, Yuna's last note is stuck. It's short. The bottom of the paper is smeared by rain.*"
+        "text": "*I walk out through the gate into the rain and unfold Yuna’s last note again. The ink along the bottom is beginning to run.*"
     },
     "true_yuna_1": {
         "name": "{name}",
@@ -722,7 +722,7 @@
     },
     "true_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*Five days. That's how long it took to hear Yuna's voice beyond the notes.*"
+        "text": "*Yuna now said things she used to put in notes.*"
     },
     "ending_aff_check_dain": {
         "name": "System",
@@ -835,7 +835,7 @@
     },
     "true_dain_6": {
         "name": "Dain",
-        "text": "I don't know. I'll try both and choose whichever one I enjoy more."
+        "text": "Yeah. I’m sticking with rehab, and I want to give broadcasting a try, too."
     },
     "true_dain_7": {
         "name": "{name}",
@@ -855,7 +855,7 @@
     },
     "true_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*That day, for the first time, Dain gives me the date of her next appointment instead of saying, 'I'm fine.'*"
+        "text": "*That day, instead of saying she was fine, Dain told me the date of her next appointment.*"
     },
     "true_epilogue_2": {
         "name": "{name}",
@@ -928,7 +928,7 @@
     },
     "day5_ending_confess_fail": {
         "name": "{name}",
-        "text": "*I make it all the way to the park and finally say it. While I wait for an answer, I can only stare at my shoes.*"
+        "text": "*After my confession, we walk together to the park. I look down at my shoes as I wait for her answer.*"
     },
     "confess_fail_cg_seo": {
         "name": "Seoyeon",
@@ -1028,7 +1028,7 @@
     },
     "good_1_yuna": {
         "name": "Yuna",
-        "text": "You were late. Still, I read your sentence all the way to the end."
+        "text": "It took you a while. But thank you for saying it all."
     },
     "good_1_yuna_b": {
         "name": "Yuna",
@@ -1085,7 +1085,7 @@
     },
     "good_5_dain": {
         "name": "{name}",
-        "text": "*Dain holds out her fist first and waits. The rehabilitation handout in her other hand lists our next walk and the note “I set the pace.”*"
+        "text": "*Dain holds out a fist and waits. The rehab leaflet in my hand has our next walk’s time written on it, along with ‘I set the pace.’*"
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
@@ -1247,14 +1247,8 @@
         "name": "{name}",
         "text": "*On the rooftop, an empty space beside the open door marks where a pot used to be.*"
     },
-    "day5_yuna_ending_freetalk_intro": {
-        "name": "{name}",
-        "text": "*After the epilogue, they sit together again in the quiet school annex.*"
-    },
-    "day5_dain_ending_freetalk_intro": {
-        "name": "{name}",
-        "text": "*After the final scene, a ball bounces once in the familiar gym.*"
-    },
+    "day5_yuna_ending_freetalk_intro": {},
+    "day5_dain_ending_freetalk_intro": {},
     "day5_teacher_ending_freetalk_intro": {
         "name": "{name}",
         "text": "*A finished manuscript and two coffees rest on the café table.*"
@@ -1304,7 +1298,7 @@
     },
     "day5_seo_ending_freetalk_late_good": {
         "name": "Seoyeon",
-        "text": "*She slows down on the park path until their steps match.* You waited until the last day to say it. From now on, let’s not leave things that late.",
+        "text": "*She slows her steps along the park path.* You finally told me. Don’t make me wait that long next time.",
         "context": "Bonus conversation after Seoyeon’s late-confession GOOD END. The protagonist waited on Day 4 and confessed during the final chance on Day 5, so the relationship has only just begun. Keep that timing instead of treating it as the Day 4 confession or an established romance.",
         "personality": "Seoyeon takes the late confession seriously and stands by her choice to accept it. She carefully asks about words they missed, with the hope and relief of a relationship that has just started."
     },
@@ -1338,7 +1332,7 @@
     },
     "day5_yuna_ending_freetalk_late_good": {
         "name": "Yuna",
-        "text": "*She folds the note about the final-day confession into a bookmark.* It was a late sentence, but I read it. Let’s write the next one together.",
+        "text": "*She slips in a bookmark and closes the book.* Thank you for telling me. Next time, I’ll speak up first, too.",
         "context": "Bonus conversation after Yuna’s late-confession GOOD END. The protagonist waited on Day 4 and only confessed during the final chance on Day 5, so their relationship has just begun. Do not change the confession timing or act as if they have dated for a long time.",
         "personality": "Yuna receives the late honesty carefully and asks small questions first so silence does not cost them another chance. Keep both the shyness and cautious hope of the new relationship."
     },
@@ -1372,7 +1366,7 @@
     },
     "day5_dain_ending_freetalk_late_good": {
         "name": "Dain",
-        "text": "*Remembering the last-day confession, she offers a fist bump and smiles.* Late, but safe! No putting off the words from now on, okay?",
+        "text": "*She holds out a fist and grins.* Late, but you made it! No more putting things off, okay?",
         "context": "Bonus conversation after Dain’s late-confession GOOD END. The protagonist waited on Day 4 and confessed during the final chance on Day 5, so the relationship has just begun. Do not backdate it, and continue to respect Dain’s rehabilitation and chosen pace.",
         "personality": "Dain jokes about the late confession but sincerely asks that they stop postponing important words. Keep the excitement, remaining awkwardness, and her control over both physical and relationship pace."
     },
@@ -1388,7 +1382,7 @@
     },
     "day5_teacher_ending_freetalk_true_love": {
         "name": "Homeroom Teacher",
-        "text": "*After the book talk, she opens a new contact screen.* Instead of my former student, can I slowly get to know who you are now?",
+        "text": "*After the book talk, she opens her contacts on her phone.* Tell me more about your life when we meet again. Or now, if you have a little time.",
         "context": "Bonus conversation immediately after the Homeroom Teacher’s TRUE LOVE END. After four years without private contact, the independent adult protagonist met the former teacher, now a published writer, at a book talk. They exchanged contacts and agreed to another meeting; do not treat them as long-term partners yet.",
         "personality": "She clearly leaves the old power relationship in the past and carefully learns who the other adult is now. She expresses interest while checking choice and keeps the anticipation of a new beginning."
     },
@@ -1410,7 +1404,7 @@
     },
     "day5_nurse_ending_freetalk_perfect": {
         "name": "School Nurse",
-        "text": "*She waters the rosemary by the window of the home they chose together and leaves the opposite seat open.* All clear today. Shall we talk about us now?",
+        "text": "*She waters the rosemary by the window of the home we chose together, then pulls up a chair.* How was your day? Sit down. I’ve got something to tell you, too.",
         "context": "Bonus conversation after the School Nurse’s PERFECT END. Five years after graduation, two independent adults reunited at a health event, dated, shared a morning, and became equal partners with a shared calendar and home. Never return to romance during the former nurse-and-minor period.",
         "personality": "Juwon is a practical, caring adult partner who does not turn care into control or diagnosis. She respects both lives and choices, mixing easy humor with familiar affection."
     },
@@ -1747,7 +1741,7 @@
     },
     "co_bitter_dain_2": {
         "name": "Dain",
-        "text": "I was the one who crossed your name off the partner list that day, right?"
+        "text": "I took your name off the list that day. I’m not ready to put it back."
     },
     "co_bitter_dain_3": {
         "name": "{name}",
@@ -1759,7 +1753,7 @@
     },
     "co_bitter_teacher_2": {
         "name": "Homeroom Teacher",
-        "text": "I still think about what I saw on your screen that day. Let's not talk about the critique anymore."
+        "text": "Congratulations on graduating. Check that you have all your documents. Take care."
     },
     "co_bitter_teacher_3": {
         "name": "{name}",
@@ -1771,11 +1765,11 @@
     },
     "co_bitter_nurse_2": {
         "name": "School Nurse",
-        "text": "I handed off your chart. I didn't put what happened that day in the record."
+        "text": "I’ve completed the consultation record. Make another appointment if you need help."
     },
     "co_bitter_nurse_3": {
         "name": "{name}",
-        "text": "*Only an empty cup remains on the windowsill where the information card once sat. The school nurse keeps waving even after she reaches the end of the hall.*"
+        "text": "*The nurse clears away the empty cup and returns to her desk. I say goodbye from the doorway and leave.*"
     },
     "forced_violation_resume": {
         "name": "System",

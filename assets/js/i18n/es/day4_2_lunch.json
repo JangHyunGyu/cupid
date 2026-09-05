@@ -86,7 +86,7 @@
     },
     "date_seo_succulent_2": {
         "name": "Seoyeon",
-        "text": "Esta es fácil de cuidar. Aguanta sin agua."
+        "text": "No hace falta regarla muy a menudo. Creo que está bien para empezar."
     },
     "date_seo_succulent_2_b": {
         "name": "{name}",
@@ -321,7 +321,7 @@
     },
     "date_dain_knee": {
         "name": "{name}",
-        "text": "*«Porque no tengo que usar la rodilla». Dain sonríe al final, pero mira una vez el reflejo de su rodilla derecha en el vidrio del escaparate.*"
+        "text": "*«Así no tengo que usar las rodillas». Dain lo dice sonriendo, y luego baja la vista hacia la rodilla derecha.*"
     },
     "date_dain_knee_2": {
         "name": "{name}",
@@ -380,7 +380,10 @@
         "text": "Así que normalmente no soy fácil de abordar."
     },
     "date_seo_tier_check": {},
-    "date_seo_high_1": {"name":"Seoyeon","text":"¿Recuerdas la nota del primer día? No pasa nada si hoy cambiamos el plan. Vamos primero adonde tú quieras."},
+    "date_seo_high_1": {
+        "name": "Seoyeon",
+        "text": "Hoy podemos cambiar de planes. Empecemos por donde tú quieras ir."
+    },
     "date_seo_high_2": {"name":"{name}","text":"*Seoyeon dobla el itinerario y lo guarda en su bolso. Suelta la correa y entra primero en el parque.*"},
     "date_seo_tentative_1": {"name":"{name}","text":"*Mientras damos una vuelta al parque, Seoyeon solo habla del horario de la semana que viene. Se detiene frente a un banco.*"},
     "date_seo_tentative_2": {"name":"Seoyeon","text":"Esto basta por hoy. No te evitaré en la escuela."},
@@ -395,17 +398,23 @@
     "date_dain_high_1": {"name":"Dain","text":"Deja libre la semana que viene también. Si hoy nos divertimos, repetiremos."},
     "date_dain_high_2": {
         "name": "Dain",
-        "text": "*Saca una muñequera del bolsillo y me la ofrece.* Hoy eliges tú primero."
+        "text": "*Saca una muñequera del bolsillo y me la ofrece.* Hoy eliges tú el primer juego."
     },
     "date_dain_tentative_1": {"name":"Dain","text":"No nos quedemos mucho hoy. Mi rodilla también necesita descansar."},
     "date_dain_tentative_2": {"name":"{name}","text":"*Tomamos una bebida junto a la máquina. Dain deja cerrada la puerta del gimnasio y se ajusta la correa del bolso.*"},
     "date_dain_tentative_3": {"name":"Dain","text":"Nos vemos en la escuela. Allí decidimos el próximo plan."},
-    "day4_caught_fallout_1": {"name":"{name}","text":"*Tres conversaciones aparecen juntas en la pantalla. Todas las disculpas que envié ayer se quedaron en Leído.*"},
+    "day4_caught_fallout_1": {
+        "name": "{name}",
+        "text": "*La disculpa de anoche sigue en el campo de texto. Justo cuando voy a enviarla, llega un mensaje de Seoyeon.*"
+    },
     "day4_caught_fallout_2": {"name":"Seoyeon","text":"No nos escribas por separado durante un tiempo. Si hace falta, usa el chat del grupo."},
     "day4_caught_fallout_3": {"name":"{name}","text":"*Poco después, Yuna abandona una conversación y Dain cancela nuestro plan. Vuelvo a colgar la ropa que había preparado.*"},
     "day4_caught_fallout_4": {"name":"{name}","text":"*No salgo. El chat del grupo permanece en silencio hasta que cae el sol.*"},
     "day4_harem_fallout_1": {"name":"{name}","text":"*El mensaje de Seoyeon aparece primero en el grupo de las tres: «Hoy no nos reunamos por separado. Hablemos todos juntos».*"},
     "day4_harem_fallout_2": {"name":"Seoyeon","text":"No te diré que elijas a una. Pero no puedes seguir haciendo que cada una espere algo."},
-    "day4_harem_fallout_3": {"name":"{name}","text":"*Yuna dice que necesita tiempo. Dain añade que, por ahora, nadie debería quedar a solas. Las tres tazas siguen intactas.*"},
+    "day4_harem_fallout_3": {
+        "name": "{name}",
+        "text": "*Yuna responde que necesita tiempo. Dain escribe que tampoco quedará a solas conmigo por ahora. Leo ambos mensajes y tardo en encontrar una respuesta.*"
+    },
     "day4_harem_fallout_4": {"name":"{name}","text":"Entendido. No escribiré a ninguna por separado hasta aclararme."}
 }

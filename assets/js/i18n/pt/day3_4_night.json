@@ -53,7 +53,7 @@
     },
     "night3_dream_2_b": {
         "name": "{name}",
-        "text": "*Fecho o aplicativo de notas. Ainda não há nenhuma frase para enviar amanhã.*"
+        "text": "*Deixo o celular de lado. Ainda não sei o que vou dizer amanhã.*"
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
@@ -65,7 +65,7 @@
     },
     "night3_faithful_reflect_2_c": {
         "name": "{name}",
-        "text": "*Um segundo. Só encaro a tela. — O rabisco na mesa da Sojeong. As trinta e oito manhãs em que desviei o olhar.*"
+        "text": "*Olho para a tela por um momento. Lembro dos rabiscos na carteira de Sojeong e das manhãs em que desviei o olhar.*"
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
@@ -139,7 +139,7 @@
     },
     "night3_cheat_msg_7": {
         "name": "Yuna",
-        "text": "*Três bolhas de mensagem de Yuna aparecem em sequência.*"
+        "text": "*Releio as mensagens de Yuna. Aproximo o dedo do campo de resposta, mas desisto.*"
     },
     "night3_nightmare_1": {
         "name": "{name}",
@@ -155,7 +155,7 @@
     },
     "night3_nightmare_3_b": {
         "name": "{name}",
-        "text": "*Na conversa de Yuna, só há a marca de lido abaixo das três linhas.*"
+        "text": "*Abaixo das mensagens de Yuna, só aparece a confirmação de leitura.*"
     },
     "night3_nightmare_4": {
         "name": "{name}",
@@ -216,7 +216,7 @@
     },
     "night3_cheat_reflect_3_d": {
         "name": "{name}",
-        "text": "*Na conversa com Minsu há uma resposta: 'Adiar não vai fazer isso desaparecer.'*"
+        "text": "*Tem uma mensagem de Minsu: ‘Adiar não vai fazer isso sumir.’*"
     },
     "night3_cheat_reflect_3_e": {
         "name": "{name}",

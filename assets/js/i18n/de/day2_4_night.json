@@ -3,10 +3,7 @@
         "name": "{name}",
         "text": "*Wieder zu Hause. Ich habe geduscht und liege im Bett, als die Messenger-Benachrichtigungen hereinprasseln. Drei Leute. Gleichzeitig.*"
     },
-    "night2_msg_1": {
-        "name": "{name}",
-        "text": "*Nachrichten von drei Personen.*"
-    },
+    "night2_msg_1": {},
     "night2_msg_dain_specific": {
         "name": "Dain",
         "text": "Hey, das Tteokbokki heute war richtig gut!"
@@ -29,11 +26,11 @@
     },
     "night2_msg_yuna_specific": {
         "name": "Yuna",
-        "text": "Das Lied heute hat mir gefallen."
+        "text": "Wie fandest du das Stück, das ich dir heute vorgespielt habe?"
     },
     "night2_msg_yuna_specific_2": {
         "name": "Yuna",
-        "text": "Spiel es mir irgendwann noch einmal vor."
+        "text": "Zeig mir nächstes Mal auch etwas, das du magst."
     },
     "night2_msg_dain_general": {
         "name": "Dain",
@@ -129,7 +126,7 @@
     "night2_reply_yuna_1": {},
     "night2_reply_yuna_2": {
         "name": "Yuna",
-        "text": "Gut. Lass dir Zeit beim Lesen."
+        "text": "Okay. Ich bin gespannt, wie du es findest."
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
@@ -167,7 +164,7 @@
     "night2_dain_freetalk": {
         "name": "Dain",
         "text": "Warte, bevor du wirklich schlafen gehst: Was hat dir heute am meisten Spaß gemacht?",
-        "context": "Es ist die Nacht von Tag 2. Dain und der Protagonist schreiben einander, direkt nachdem er auf ihre Unterhaltung über die heutige Wette und eine neue Runde morgen geantwortet hat. Sie sind an verschiedenen Orten; Handlungen erscheinen nur als Text, Emoji, gesendetes Foto oder Audio. Unterstelle keine Nachricht, die der Protagonist noch nicht geschrieben hat.",
+        "context": "[Medium: Handynachrichten] Am zweiten Abend nach dem Schulwechsel sprechen Dain und der Schüler über ihren Tag. Gemeinsame Orte und Aktivitäten nur erwähnen, wenn sie durch gespeicherte Ereignisse belegt sind. An die gerade ausgetauschten Nachrichten anknüpfen; die beiden sind noch kein Paar.",
         "personality": "Dain schreibt energiegeladen, offen und mit spielerischem Ehrgeiz. Sie bemerkt Stimmungswechsel schnell, fragt aber nach, bevor sie Schlüsse zieht, und erzwingt im Chat keine Nähe."
     },
     "night2_seo_freetalk": {
@@ -179,7 +176,7 @@
     "night2_yuna_freetalk": {
         "name": "Yuna",
         "text": "Warte. Wenn du noch wach bist ... willst du noch ein bisschen reden?",
-        "context": "Es ist die Nacht von Tag 2. Yuna und der Protagonist schreiben nach ihrem Austausch über die Bibliothek und das Buch. Sie sind an verschiedenen Orten; Handlungen erscheinen nur als Text, Emoji, gesendetes Foto oder Audio. Deute Schweigen nicht als Ablehnung und erfinde keine Nachricht des Protagonisten.",
+        "context": "[Medium: Handynachrichten] Am zweiten Abend nach dem Schulwechsel läuft ein ruhiges Gespräch mit Yuna. Ausgeliehene Bücher, Besuche im Anbau und geteilte Musik nur im durch gespeicherte Ereignisse und aktuelle Nachrichten bestätigten Umfang aufgreifen. Die beiden sind noch kein Paar und befinden sich an verschiedenen Orten.",
         "personality": "Yuna schreibt sorgfältig und manchmal in literarischen Bildern, antwortet aber auf das tatsächlich Gesagte. Ihr Interesse zeigt sich in kleinen, ehrlichen Fragen, ohne Überinterpretation oder übereilte Nähe."
     },
     "night2_hidden_check": {
@@ -246,10 +243,7 @@
         "name": "{name}",
         "text": "*Die drei Namen stapeln sich auf meinem Sperrbildschirm. Ich lese jede Benachrichtigung, schalte das Display aus und gleich wieder ein.*"
     },
-    "night2_end_2_b": {
-        "name": "{name}",
-        "text": "*Über Minsus Nachricht stapeln sich zwei ungelesene Benachrichtigungen.*"
-    },
+    "night2_end_2_b": {},
     "night2_end_3_b": {
         "name": "{name}",
         "text": "*Auch nachdem der Bildschirm erlischt, halte ich das Handy unverändert fest.*"

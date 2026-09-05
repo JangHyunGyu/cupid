@@ -129,7 +129,7 @@
     },
     "tour_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Ela passa os dedos pelas lombadas e depois levanta a cabeça.* Como é a última vez, acabo falando mais que o normal."
+        "text": "*Ela passa o dedo pela lombada e levanta o rosto.* Hoje falei bastante, né?"
     },
     "tour_yuna_end": {
         "name": "Yuna",
@@ -157,7 +157,7 @@
     },
     "tour_dain_3": {
         "name": "Dain",
-        "text": "Ei, quer jogar jokenpô uma última vez?"
+        "text": "Ei, mais uma de pedra, papel e tesoura?"
     },
     "tour_dain_4": {
         "name": "{name}",
@@ -205,7 +205,7 @@
     },
     "tour_dain_freetalk": {
         "name": "Dain",
-        "text": "*Ela detém a bola de vôlei sob a sola do tênis.* Não dá para deixar passar nem o último intervalo do almoço."
+        "text": "*Ela para uma bola de vôlei com o tênis.* É o intervalo do almoço no dia do evento. Não dá vontade de terminar assim, né?"
     },
     "tour_dain_end_2": {
         "name": "{name}",
@@ -250,7 +250,7 @@
     },
     "tour_co_dain_2": {
         "name": "Dain",
-        "text": "Pedra, papel, tesoura fica para amanhã. Hoje fico só de pé."
+        "text": "Pedra, papel e tesoura fica para amanhã. Hoje quero descansar um pouco."
     },
     "tour_co_dain_3": {
         "name": "{name}",

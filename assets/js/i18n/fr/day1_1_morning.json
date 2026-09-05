@@ -13,7 +13,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*Devant ce portail inconnu, les plis de mon uniforme tout neuf sont encore bien marqués. Près de l'entrée, une lycéenne aux longs cheveux noirs rajuste ses lunettes en regardant l'heure. Quand j'approche, elle relève la tête.*"
+        "text": "*Près du portail, une fille aux longs cheveux noirs rajuste ses lunettes en regardant l’heure. Elle lève la tête à mon approche.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -41,7 +41,7 @@
     },
     "seoyeon_meet_7": {
         "name": "Seoyeon",
-        "text": "C'est à moi de décider si c'est trop d'honneur ou pas."
+        "text": "Faire visiter le lycée aux nouveaux, ça fait aussi partie de mon rôle. Détends-toi."
     },
     "seoyeon_meet_8": {
         "name": "{name}",
@@ -90,7 +90,7 @@
     },
     "choice_flirt_6": {
         "name": "Seoyeon",
-        "text": "Tu sais pas encore si c'est flatteur ou catastrophique."
+        "text": "On verra si tu dis toujours ça dans quelques jours."
     },
     "choice_flirt_7": {
         "name": "Seoyeon",
@@ -182,7 +182,7 @@
     },
     "classroom_5_b": {
         "name": "Professeure principale",
-        "text": "Bien, {name}. C'est retenu. *Elle repasse sur mon nom dans le registre et ajoute à voix basse :* Je retiens toujours les noms du premier coup."
+        "text": "Bienvenue, {name}. Prends le temps de trouver tes marques."
     },
     "classroom_5_c": {
         "name": "{name}",

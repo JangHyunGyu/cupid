@@ -86,7 +86,7 @@
     },
     "date_seo_succulent_2": {
         "name": "Seoyeon",
-        "text": "Die ist pflegeleicht. Sie kommt auch lange ohne Wasser aus."
+        "text": "Du musst sie nicht oft gießen. Für den Anfang ist sie ganz gut, denke ich."
     },
     "date_seo_succulent_2_b": {
         "name": "{name}",
@@ -321,7 +321,7 @@
     },
     "date_dain_knee": {
         "name": "{name}",
-        "text": "*»Dafür brauche ich die Knie nicht.« Dain lacht am Satzende, blickt dann aber einmal auf ihr rechtes Knie im Spiegelbild des Schaufensters.*"
+        "text": "*„Da brauche ich meine Knie nicht.“ Dain lächelt dabei und sieht dann auf ihr rechtes Knie.*"
     },
     "date_dain_knee_2": {
         "name": "{name}",
@@ -380,7 +380,10 @@
         "text": "Sonst war ich also schwer anzusprechen."
     },
     "date_seo_tier_check": {},
-    "date_seo_high_1": {"name":"Seoyeon","text":"Erinnerst du dich an den Zettel vom ersten Tag? Es ist okay, wenn sich der Plan heute ändert. Gehen wir zuerst dorthin, wo du hinwillst."},
+    "date_seo_high_1": {
+        "name": "Seoyeon",
+        "text": "Heute können wir ruhig vom Plan abweichen. Gehen wir zuerst dahin, wo du hinwillst."
+    },
     "date_seo_high_2": {"name":"{name}","text":"*Seoyeon faltet den Zeitplan und steckt ihn in ihre Tasche. Sie lässt den Riemen los und geht zuerst in den Park.*"},
     "date_seo_tentative_1": {"name":"{name}","text":"*Während wir eine Runde durch den Park gehen, spricht Seoyeon nur über den Zeitplan der nächsten Woche. Vor einer Bank bleibt sie stehen.*"},
     "date_seo_tentative_2": {"name":"Seoyeon","text":"Das reicht für heute. In der Schule gehe ich dir nicht aus dem Weg."},
@@ -395,17 +398,23 @@
     "date_dain_high_1": {"name":"Dain","text":"Halte dir nächste Woche auch frei. Wenn es heute Spaß macht, machen wir das noch mal."},
     "date_dain_high_2": {
         "name": "Dain",
-        "text": "*Sie zieht ein Schweißband aus der Tasche und hält es mir hin.* Heute suchst du zuerst aus."
+        "text": "*Sie holt ein Schweißband aus der Tasche und hält es mir hin.* Heute suchst du das erste Spiel aus."
     },
     "date_dain_tentative_1": {"name":"Dain","text":"Lass uns heute nicht lange bleiben. Mein Knie braucht auch etwas Ruhe."},
     "date_dain_tentative_2": {"name":"{name}","text":"*Am Automaten trinken wir jeder etwas. Dain lässt die Turnhallentür geschlossen und richtet ihren Taschenriemen.*"},
     "date_dain_tentative_3": {"name":"Dain","text":"Bis dann in der Schule. Dort planen wir das nächste Treffen."},
-    "day4_caught_fallout_1": {"name":"{name}","text":"*Drei Chats stehen nebeneinander auf meinem Handy. Jede Entschuldigung von gestern blieb bei Gelesen stehen.*"},
+    "day4_caught_fallout_1": {
+        "name": "{name}",
+        "text": "*Die Entschuldigung von gestern Abend steht noch im Eingabefeld. Gerade als ich sie abschicken will, kommt eine Nachricht von Seoyeon.*"
+    },
     "day4_caught_fallout_2": {"name":"Seoyeon","text":"Kontaktiere uns eine Weile nicht einzeln. Wenn es nötig ist, nutze den Gruppenchat."},
     "day4_caught_fallout_3": {"name":"{name}","text":"*Kurz darauf verlässt Yuna einen Chat, und Dain sagt unser Treffen ab. Ich hänge die bereitgelegten Sachen zurück in den Schrank.*"},
     "day4_caught_fallout_4": {"name":"{name}","text":"*Ich gehe nicht aus dem Haus. Der Gruppenchat bleibt still, bis die Sonne untergeht.*"},
     "day4_harem_fallout_1": {"name":"{name}","text":"*Seoyeons Nachricht erscheint zuerst im Chat mit allen dreien: „Treffen wir uns heute nicht einzeln. Wir sollten alle zusammen reden.“*"},
     "day4_harem_fallout_2": {"name":"Seoyeon","text":"Ich sage dir nicht, dass du eine von uns wählen sollst. Aber du kannst nicht jede von uns weiter hoffen lassen."},
-    "day4_harem_fallout_3": {"name":"{name}","text":"*Yuna sagt, sie brauche Zeit. Dain fügt hinzu, dass sich vorerst niemand allein treffen sollte. Alle drei Tassen bleiben unberührt.*"},
+    "day4_harem_fallout_3": {
+        "name": "{name}",
+        "text": "*Yuna antwortet, dass sie Zeit braucht. Dain schreibt, dass auch sie mich vorerst nicht allein treffen will. Ich lese beide Nachrichten und bringe keine Antwort zustande.*"
+    },
     "day4_harem_fallout_4": {"name":"{name}","text":"Verstanden. Ich kontaktiere niemanden einzeln, bis ich das geklärt habe."}
 }

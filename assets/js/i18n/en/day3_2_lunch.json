@@ -138,7 +138,7 @@
     },
     "lunch3_dain_skin_3": {
         "name": "Dain",
-        "text": "That one doesn't count!"
+        "text": "…That was more embarrassing than I expected."
     },
     "lunch3_give_dain_2": {
         "name": "Seoyeon",
@@ -164,11 +164,11 @@
     },
     "lunch3_yuna_skin_2": {
         "name": "Yuna",
-        "text": "This isn't something I wrote in the note. It's just—"
+        "text": "When I thanked you earlier, I meant it."
     },
     "lunch3_yuna_skin_3": {
         "name": "{name}",
-        "text": "*Nothing follows “just.” Only then do her fingers leave the edge of the paper.*"
+        "text": "*Yuna lets go of the edge of the paper. I fold the note and carefully put it away.*"
     },
     "lunch3_give_yuna_2": {
         "name": "Seoyeon",
@@ -202,10 +202,7 @@
         "name": "{name}",
         "text": "*The tips of Seoyeon's chopsticks press against the edge of the lunchbox, while Yuna looks at Dain with the half-open bread wrapper in her hand.*"
     },
-    "lunch3_expose_5": {
-        "name": "Seoyeon",
-        "text": "Wait."
-    },
+    "lunch3_expose_5": {},
     "lunch3_expose_6": {
         "name": "Seoyeon",
         "text": "Wait. You mean there’s more than one?"
@@ -278,7 +275,7 @@
     },
     "lunch3_expose_honest_7": {
         "name": "{name}",
-        "text": "*Dain's answer is shorter than usual. There is none of the excitement that normally punctuates her sentences.*"
+        "text": "*Dain gives a short reply and looks away. Her earlier excitement is gone.*"
     },
     "lunch3_expose_excuse_1": {
         "name": "{name}",

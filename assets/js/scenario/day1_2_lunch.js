@@ -244,9 +244,8 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "lunch_seo_after_7"
     },
     "lunch_seo_after_7": {
-        "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "lunch_seo_freetalk"
+        "next": "lunch_seo_freetalk",
+        "routeBeforeRender": true
     },
     "lunch_seo_freetalk": {
         "background": "assets/images/background/top_school.png",

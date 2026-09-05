@@ -6,6 +6,35 @@ async function ready(page) {
     await page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
 }
 
+for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+    test(`${lang}: edited story routers load translated dialogue and survive reload`, async ({ page }) => {
+        test.setTimeout(90_000);
+        await page.goto(lang === 'ko' ? '/game.html' : `/game-${lang}.html`);
+        await ready(page);
+        await page.evaluate(async () => {
+            const e = window.gameEngine;
+            e.dialogueSystem.typingSpeed = 0;
+            e.stateManager.flags = { chose_yuna_after2: true };
+            await e.renderScene('night2_msg_1');
+        });
+        const nightCopy = require(`../../assets/js/i18n/${lang}/day2_4_night.json`);
+        await expect(page.locator('#message')).toHaveText(nightCopy.night2_msg_yuna_specific.text);
+        expect(await page.evaluate(() => window.gameEngine.sceneRenderer.currentSceneId)).toBe('night2_msg_yuna_specific');
+
+        await page.evaluate(async () => {
+            const e = window.gameEngine;
+            await e.renderScene('after5_farewell_seo_high_1');
+        });
+        expect(await page.evaluate(() => window.gameEngine.sceneRenderer.currentSceneId)).toBe('after5_farewell_seo_high_2');
+        const before = await page.locator('#message').innerText();
+        expect(before.trim().length).toBeGreaterThan(0);
+        await page.reload();
+        await ready(page);
+        expect(await page.evaluate(() => window.gameEngine.sceneRenderer.currentSceneId)).toBe('after5_farewell_seo_high_2');
+        await expect(page.locator('#message')).toHaveText(before, { useInnerText: true });
+    });
+}
+
 test('reload and landing Continue preserve authored rewards and the current scene', async ({ page }) => {
     await page.goto('/game.html');
     await ready(page);

@@ -222,7 +222,7 @@
     },
     "wall_seo_hug_2_b": {
         "name": "Seoyeon",
-        "text": "...Hace mucho que no lloro delante de alguien."
+        "text": "Hacía mucho que no lloraba apoyada en alguien así."
     },
     "wall_seo_hug_2_c": {
         "name": "Seoyeon",
@@ -283,7 +283,7 @@
     },
     "wall_seo_after_line": {
         "name": "Seoyeon",
-        "text": "Espera. ¿Tienes una toallita húmeda?"
+        "text": "Espera. ¿Me das una toallita?"
     },
     "wall_seo_after_line_2": {
         "name": "Seoyeon",
@@ -329,7 +329,7 @@
     },
     "wall_seo_glimpse_2": {
         "name": "Dain",
-        "text": "Solo diez pases. Cuando terminemos... abrázame un rato. Esta noche no puedo seguir fingiendo que estoy bien sola.",
+        "text": "Hoy no voy a entrenar. Solo… abrázame un momento, ¿vale? Me cuesta seguir fingiendo que estoy bien, sola.",
         "choices": [
             "Cumplir la promesa e ir con Seoyeon al parque",
             "Entrar al gimnasio y quedarme con Dain",
@@ -499,7 +499,7 @@
     },
     "wall_dain_21": {
         "name": "Dain",
-        "text": "Hoy también. Al correr durante la cita. Al fingir que estaba animada a tu lado. La rodilla no dejaba de fallarme."
+        "text": "Hoy he vuelto a hacerlo. Hasta caminar durante la cita me dolía, pero delante de ti seguía fingiendo que estaba bien."
     },
     "wall_dain_22": {
         "name": "Dain",
@@ -756,7 +756,7 @@
     },
     "wall_yuna_13": {
         "name": "Yuna",
-        "text": "Un día se cambió de escuela. Sin avisar. Solo dejó esta carta."
+        "text": "Un día se cambió de instituto. Sin despedirse en persona. Solo dejó esta carta."
     },
     "wall_yuna_14": {
         "name": "Yuna",
@@ -850,7 +850,7 @@
     },
     "wall_yuna_skin60_1": {
         "name": "{name}",
-        "text": "*Entre los estantes del archivo del sótano, Yuna se queda a un paso detrás de mí.*"
+        "text": "*Entre las estanterías del archivo, Yuna se detiene un paso detrás de mí.*"
     },
     "wall_yuna_skin60_2": {
         "name": "Yuna",
@@ -912,7 +912,7 @@
     },
     "wall_yuna_dain_tempt_2": {
         "name": "Dain",
-        "text": "Solo diez pases. Cuando terminemos... abrázame un rato. Esta noche no puedo seguir fingiendo que estoy bien sola.",
+        "text": "Hoy no voy a entrenar. Solo… abrázame un momento, ¿vale? Me cuesta seguir fingiendo que estoy bien, sola.",
         "choices": [
             "Responder a Yuna y seguir hacia la puerta trasera",
             "Entrar al gimnasio y quedarme con Dain",
@@ -934,15 +934,15 @@
     },
     "day4_night_regret_msg_seo": {
         "name": "Seoyeon",
-        "text": "Hoy hacía buena brisa. Esperé un poco."
+        "text": "He esperado un rato en el parque. Me voy a casa."
     },
     "day4_night_regret_msg_dain": {
         "name": "Dain",
-        "text": "Oye, hoy fue divertido. No fui la única que se emocionó, ¿verdad?"
+        "text": "Sigo esperando. Si no puedes venir, al menos avísame."
     },
     "day4_night_regret_msg_yuna": {
         "name": "Yuna",
-        "text": "Hoy yo también tenía expectativas. Aunque hablé todavía menos."
+        "text": "Pensaba que hoy vendrías. Me voy."
     },
     "day4_night_regret_msg": {
         "name": "{name}",
@@ -970,7 +970,7 @@
     },
     "night_homeroom_msg_3": {
         "name": "{name}",
-        "text": "*A las nueve de la noche, bajo el aviso de clase aparecen uno tras otro los comentarios de confirmación de los miembros del club. Anoto «lectura y crítica» en la agenda de mañana.*"
+        "text": "*Los miembros del club han dejado comentarios bajo el aviso publicado a las nueve de la noche. Anoto «sesión de crítica» para mañana.*"
     },
     "day4_hidden_msg_after_homeroom": {
         "name": "Sistema",
@@ -1002,7 +1002,7 @@
     },
     "wall_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Dobla la carta dentro del libro y esta vez mira primero al protagonista.* Aún hay algo que quiero oír.",
+        "text": "*De vuelta en la sala de lectura, Yuna dobla la carta y la guarda en el libro. Esta vez me mira primero.* Aún hay algo que quiero preguntarte.",
         "context": "Noche del día 4 en el anexo. Tras leer la carta de Lee Junho, Yuna teme estar aferrándose al protagonista como sustituto del compañero que se marchó. Mantén las decisiones y la aceptación o aplazamiento de la confesión. No inviertas el temor: Yuna no es la sustituta. La carta está guardada en un libro y ambos siguen allí.",
         "personality": "Yuna es tranquila y reflexiva, pero ya no evita las preguntas importantes. En lugar de esconderse tras metáforas, habla directamente cuando hace falta y escucha sin deformar la respuesta para adaptarla a sus temores."
     },
@@ -1120,7 +1120,7 @@
     },
     "day4_student_counteroffer_soft_dain": {
         "name": "Dain",
-        "text": "*Entro al gimnasio y le devuelvo los pases hasta que se detiene el último balón. Dain recupera el aliento y da una palmada al banco junto a ella.* Hoy solo siéntate conmigo."
+        "text": "*Al entrar en el gimnasio, Dain deja el balón y se sienta en el banco. Me mira y da unas palmadas en el sitio de al lado.* Hoy solo quiero que te sientes conmigo."
     },
     "day4_student_counteroffer_soft_yuna": {
         "name": "Yuna",

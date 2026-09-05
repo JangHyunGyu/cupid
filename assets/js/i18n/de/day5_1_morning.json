@@ -123,7 +123,7 @@
     },
     "morning5_caught_dain_honest": {
         "name": "Dain",
-        "text": "*Dain zieht ihren Handgelenkschutz fest und lässt ihn dann los.* Als ich gefragt habe, ob nur ich mich so gefreut habe, warst du also schon dort bei ihr."
+        "text": "*Dain zieht ihre Handgelenkstütze straff und lässt sie wieder los.* Als ich dir geschrieben habe, dass ich warte, warst du also schon dort."
     },
     "morning5_caught_dain_lie": {
         "name": "Dain",
@@ -152,15 +152,15 @@
     },
     "morning5_mood_high": {
         "name": "{name}",
-        "text": "*Es ist der letzte Tag. Bevor ich die Klassenzimmertür öffne, denke ich noch einmal an die Worte der vergangenen vier Tage.*"
+        "text": "*Meine erste Woche an der neuen Schule ist fast vorbei. Bevor ich die Klassenzimmertür öffne, denke ich an unsere Gespräche der letzten vier Tage.*"
     },
     "morning5_mood_mid": {
         "name": "{name}",
-        "text": "Der letzte Tag. Ich habe mich noch immer nicht entschieden, welchen Weg ich einschlage. Trotzdem gehe ich durch das Schultor."
+        "text": "Die erste Woche ist fast vorbei, und ich habe mich noch immer nicht entschieden. Erst mal gehe ich durchs Schultor."
     },
     "morning5_mood_low": {
         "name": "{name}",
-        "text": "Der letzte Tag. Ich tippe nacheinander auf die drei Namen auf meinem Sperrbildschirm und schalte ihn aus, ohne einen der Chats zu öffnen."
+        "text": "Meine erste Woche geht zu Ende. Ich sehe die drei Namen auf dem Sperrbildschirm an und schalte ihn aus, ohne einen Chat zu öffnen."
     },
     "morning5_gate": {},
     "morning5_seo_note_1": {
@@ -177,7 +177,7 @@
     },
     "morning5_yuna_story_gone_2": {
         "name": "{name}",
-        "text": "*Ein leerer Bibliotheksplatz, ein verschwundenes Lesezeichen, ein nicht aufgehängter Roman. Nur vier Reißzweckenlöcher bleiben an der Pinnwand.*"
+        "text": "*Ich bleibe vor der leeren Pinnwand stehen. Die Einstichlöcher verraten mir nicht, was Yuna gedacht hat.*"
     },
     "morning5_seo_note_1_c": {
         "name": "{name}",
@@ -254,7 +254,7 @@
     },
     "hidden_homeroom_d5_3": {
         "name": "Klassenlehrerin",
-        "text": "Sieben Jahre lang habe ich es weggeschlossen. Diesmal will ich es auch im Literaturklub und unter den Lehrkräften im Fachbereich Koreanisch herumgeben."
+        "text": "Seit sieben Jahren sitze ich daran. Langsam sollte ich auch hören, was die anderen dazu sagen."
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",
@@ -491,14 +491,8 @@
         "name": "{name}",
         "text": "*Unter dem Beratungsprotokoll stehen die Buchungswege für das Krankenzimmer und die Wee-Class-Beratung nebeneinander.*"
     },
-    "hidden_nurse_d5_2_b": {
-        "name": "Schulkrankenschwester",
-        "text": "*Sie öffnet die Tür des Krankenzimmers und prüft die Terminliste.*"
-    },
-    "hidden_nurse_d5_2_c": {
-        "name": "Schulkrankenschwester",
-        "text": "Pünktlich zum Termin. Gut gemacht."
-    },
+    "hidden_nurse_d5_2_b": {},
+    "hidden_nurse_d5_2_c": {},
     "hidden_nurse_d5_3": {
         "name": "{name}",
         "text": "Ich bin hier, um meine Beratungsbestätigung abzuholen."
@@ -511,30 +505,15 @@
         "name": "Schulkrankenschwester",
         "text": "Es ist immer in Ordnung, zur vereinbarten Zeit Hilfe zu holen."
     },
-    "hidden_nurse_d5_3_d": {
-        "name": "{name}",
-        "text": "Auch ohne Vorwand?"
-    },
-    "hidden_nurse_d5_3_e": {
-        "name": "Schulkrankenschwester",
-        "text": "Natürlich. Das Krankenzimmer ist kein Ort, an dem man Vorwände erfindet, sondern ein Ort, an dem man die nötige Hilfe bekommt."
-    },
+    "hidden_nurse_d5_3_d": {},
+    "hidden_nurse_d5_3_e": {},
     "hidden_nurse_d5_3_f": {
         "name": "Schulkrankenschwester",
         "text": "*Sie öffnet die Schachtel mit den Erste-Hilfe-Infokarten.*"
     },
-    "hidden_nurse_d5_3_g": {
-        "name": "Schulkrankenschwester",
-        "text": "Los, geh. Du kannst bei der Veranstaltung nicht einfach fehlen."
-    },
-    "hidden_nurse_d5_3_h": {
-        "name": "Schulkrankenschwester",
-        "text": "*Bevor sie über die Schwelle des Krankenzimmers tritt, klappt sie die Terminliste noch einmal auf.*"
-    },
-    "hidden_nurse_d5_3_i": {
-        "name": "Schulkrankenschwester",
-        "text": "{name}, warte kurz."
-    },
+    "hidden_nurse_d5_3_g": {},
+    "hidden_nurse_d5_3_h": {},
+    "hidden_nurse_d5_3_i": {},
     "hidden_nurse_d5_4": {
         "name": "Schulkrankenschwester",
         "text": "Die Erste-Hilfe-Sets für das Fest stehen am Eingang der Turnhalle. Wenn du dich verletzt, ruf sofort die zuständige Lehrkraft."
@@ -619,7 +598,7 @@
     "morning5_end_branch": {},
     "morning5_end": {
         "name": "{name}",
-        "text": "*Ich lege die Notizen und Benachrichtigungen aus drei Richtungen nebeneinander auf meinen Schreibtisch.*"
+        "text": "*Ich lege die Zettel auf meinen Tisch und gehe dann die Benachrichtigungen auf meinem Handy durch.*"
     },
     "morning5_committed_end": {
         "name": "{name}",

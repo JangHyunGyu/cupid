@@ -86,7 +86,7 @@
     },
     "date_seo_succulent_2": {
         "name": "Seoyeon",
-        "text": "Celle-ci est facile à entretenir. Elle survit bien sans eau."
+        "text": "Elle n’a pas besoin d’être arrosée souvent. Pour une première plante, ça devrait aller."
     },
     "date_seo_succulent_2_b": {
         "name": "{name}",
@@ -321,7 +321,7 @@
     },
     "date_dain_knee": {
         "name": "{name}",
-        "text": "*« Pas besoin des genoux pour ça. » Dain rit à la fin de sa phrase, puis jette un coup d'œil à son genou droit dans le reflet de la vitrine.*"
+        "text": "*« Pas besoin de me servir des genoux. » Dain sourit en le disant, puis baisse les yeux vers son genou droit.*"
     },
     "date_dain_knee_2": {
         "name": "{name}",
@@ -380,7 +380,10 @@
         "text": "D'habitude, j'ai donc l'air difficile à aborder."
     },
     "date_seo_tier_check": {},
-    "date_seo_high_1": {"name":"Seoyeon","text":"Tu te souviens du mot du premier jour ? Ce n'est pas grave si le programme change aujourd'hui. Allons d'abord où tu veux."},
+    "date_seo_high_1": {
+        "name": "Seoyeon",
+        "text": "Aujourd’hui, on peut changer de programme. Allons d’abord là où tu en as envie."
+    },
     "date_seo_high_2": {"name":"{name}","text":"*Seoyeon plie l'itinéraire et le range dans son sac. Elle lâche la lanière et entre la première dans le parc.*"},
     "date_seo_tentative_1": {"name":"{name}","text":"*Pendant que nous faisons le tour du parc, Seoyeon ne parle que de l'emploi du temps de la semaine prochaine. Elle s'arrête devant un banc.*"},
     "date_seo_tentative_2": {"name":"Seoyeon","text":"Ça suffit pour aujourd'hui. Je ne t'éviterai pas au lycée."},
@@ -395,17 +398,23 @@
     "date_dain_high_1": {"name":"Dain","text":"Garde aussi du temps la semaine prochaine. Si aujourd'hui est sympa, on recommencera."},
     "date_dain_high_2": {
         "name": "Dain",
-        "text": "*Elle sort un bracelet de sa poche et me le tend.* Aujourd’hui, tu choisis en premier."
+        "text": "*Elle sort un bracelet de sport de sa poche et me le tend.* Aujourd’hui, c’est toi qui choisis le premier jeu."
     },
     "date_dain_tentative_1": {"name":"Dain","text":"Ne restons pas longtemps aujourd'hui. Mon genou a aussi besoin de repos."},
     "date_dain_tentative_2": {"name":"{name}","text":"*Nous buvons chacun une boisson près du distributeur. Dain garde la porte du gymnase fermée et ajuste la lanière de son sac.*"},
     "date_dain_tentative_3": {"name":"Dain","text":"On se voit au lycée. On décidera du prochain rendez-vous là-bas."},
-    "day4_caught_fallout_1": {"name":"{name}","text":"*Trois conversations s'affichent côte à côte sur mon téléphone. Toutes les excuses envoyées hier sont restées sur Lu.*"},
+    "day4_caught_fallout_1": {
+        "name": "{name}",
+        "text": "*Les excuses écrites hier soir sont toujours dans le champ de saisie. Au moment de les envoyer, je reçois un message de Seoyeon.*"
+    },
     "day4_caught_fallout_2": {"name":"Seoyeon","text":"Ne nous contacte pas séparément pendant quelque temps. Si c'est nécessaire, utilise le groupe."},
     "day4_caught_fallout_3": {"name":"{name}","text":"*Peu après, Yuna quitte une conversation et Dain annule notre sortie. Je remets sur cintre les vêtements que j'avais préparés.*"},
     "day4_caught_fallout_4": {"name":"{name}","text":"*Je ne sors pas. Le groupe reste silencieux jusqu'au coucher du soleil.*"},
     "day4_harem_fallout_1": {"name":"{name}","text":"*Le message de Seoyeon apparaît en premier dans le groupe à trois : « Ne nous voyons pas séparément aujourd'hui. Parlons tous ensemble. »*"},
     "day4_harem_fallout_2": {"name":"Seoyeon","text":"Je ne te dirai pas d'en choisir une. Mais tu ne peux pas continuer à laisser chacune espérer quelque chose."},
-    "day4_harem_fallout_3": {"name":"{name}","text":"*Yuna dit qu'elle a besoin de temps. Dain ajoute que, pour l'instant, personne ne devrait se voir en tête-à-tête. Les trois tasses restent intactes.*"},
+    "day4_harem_fallout_3": {
+        "name": "{name}",
+        "text": "*Yuna répond qu’il lui faut du temps. Dain écrit qu’elle ne me verra pas seul pour le moment non plus. Je lis leurs messages sans parvenir à répondre.*"
+    },
     "day4_harem_fallout_4": {"name":"{name}","text":"D'accord. Je ne contacterai personne séparément avant d'avoir fait le point."}
 }

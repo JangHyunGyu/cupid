@@ -26,9 +26,8 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "after_kakao_5"
     },
     "after_kakao_5": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": null,
-        "next": "after_kakao_end"
+        "next": "after_kakao_end",
+        "routeBeforeRender": true
     },
     "after_kakao_end": {
         "background": "assets/images/background/school_hallway.png",
@@ -697,9 +696,8 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "after_nurse_enter_11_j"
     },
     "after_nurse_enter_11_j": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "after_nurse_enter_11_k"
+        "next": "after_nurse_enter_11_k",
+        "routeBeforeRender": true
     },
     "after_nurse_enter_11_k": {
         "background": "assets/images/background/nurse_room.png",

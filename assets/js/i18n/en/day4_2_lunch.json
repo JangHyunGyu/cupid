@@ -86,7 +86,7 @@
     },
     "date_seo_succulent_2": {
         "name": "Seoyeon",
-        "text": "This one's easy. Survives even if you forget to water it."
+        "text": "It doesn’t need watering very often. A good first plant, I think."
     },
     "date_seo_succulent_2_b": {
         "name": "{name}",
@@ -321,7 +321,7 @@
     },
     "date_dain_knee": {
         "name": "{name}",
-        "text": "*“Because I don't have to use my knees.” Dain laughs at the end, then glances once at her right knee reflected in the window.*"
+        "text": "*‘Won’t have to use my knees.’ Dain says it with a smile, then glances down at her right knee.*"
     },
     "date_dain_knee_2": {
         "name": "{name}",
@@ -380,7 +380,10 @@
         "text": "I guess it's usually hard for you to talk to me."
     },
     "date_seo_tier_check": {},
-    "date_seo_high_1": {"name":"Seoyeon","text":"Remember the note from the first day? It's fine if today's plan changes. Let's go where you want first."},
+    "date_seo_high_1": {
+        "name": "Seoyeon",
+        "text": "We can change the plan today. Let’s start somewhere you want to go."
+    },
     "date_seo_high_2": {"name":"{name}","text":"*Seoyeon folds the itinerary and puts it in her bag. She lets go of the strap and walks into the park first.*"},
     "date_seo_tentative_1": {"name":"{name}","text":"*As we circle the park, Seoyeon only talks about next week's schedule. She stops in front of a bench.*"},
     "date_seo_tentative_2": {"name":"Seoyeon","text":"This is enough for today. I won't avoid you at school."},
@@ -395,17 +398,23 @@
     "date_dain_high_1": {"name":"Dain","text":"Keep next week free too. If today is fun, we're doing this again."},
     "date_dain_high_2": {
         "name": "Dain",
-        "text": "*She takes a wristband from her pocket and offers it.* You get first pick today."
+        "text": "*She takes a wristband from her pocket and offers it to me.* You get to pick our first game today."
     },
     "date_dain_tentative_1": {"name":"Dain","text":"Let's not stay out long today. My knee needs some rest too."},
     "date_dain_tentative_2": {"name":"{name}","text":"*We each have a drink by the vending machine. Dain leaves the gym door closed and adjusts her bag strap.*"},
     "date_dain_tentative_3": {"name":"Dain","text":"See you at school. We can decide on another plan then."},
-    "day4_caught_fallout_1": {"name":"{name}","text":"*Three chats sit side by side on my phone. Every apology I sent yesterday stopped at Read.*"},
+    "day4_caught_fallout_1": {
+        "name": "{name}",
+        "text": "*Last night’s apology is still sitting in the input field. Just as I’m about to send it, a message from Seoyeon arrives.*"
+    },
     "day4_caught_fallout_2": {"name":"Seoyeon","text":"Don't contact us separately for a while. Use the group chat if it's necessary."},
     "day4_caught_fallout_3": {"name":"{name}","text":"*Soon Yuna leaves one chat and Dain cancels our plan. I hang the clothes I had laid out back in the closet.*"},
     "day4_caught_fallout_4": {"name":"{name}","text":"*I don't go out. The group chat stays silent until the sun goes down.*"},
     "day4_harem_fallout_1": {"name":"{name}","text":"*Seoyeon's message appears first in the group chat with all three of them: “Let's not meet separately today. We should all talk together.”*"},
     "day4_harem_fallout_2": {"name":"Seoyeon","text":"I won't tell you to pick one of us. But you can't keep letting each of us expect something."},
-    "day4_harem_fallout_3": {"name":"{name}","text":"*Yuna says she needs time. Dain adds that none of us should meet alone for now. All three cups remain untouched.*"},
+    "day4_harem_fallout_3": {
+        "name": "{name}",
+        "text": "*Yuna replies that she needs time. Dain writes that she won’t meet me alone for a while either. I read both messages and sit there, unable to answer.*"
+    },
     "day4_harem_fallout_4": {"name":"{name}","text":"Okay. I won't contact any of you separately until I've sorted this out."}
 }

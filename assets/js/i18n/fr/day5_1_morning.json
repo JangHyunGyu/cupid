@@ -123,7 +123,7 @@
     },
     "morning5_caught_dain_honest": {
         "name": "Dain",
-        "text": "*Dain tire sa protection de poignet jusqu'au bout, puis la relâche.* Alors, quand je t'ai demandé si j'étais la seule à m'emballer, tu étais déjà là-bas avec elle."
+        "text": "*Dain tire sur son protège-poignet, puis le relâche.* Donc quand je t’ai écrit que je t’attendais, tu étais déjà là-bas."
     },
     "morning5_caught_dain_lie": {
         "name": "Dain",
@@ -152,15 +152,15 @@
     },
     "morning5_mood_high": {
         "name": "{name}",
-        "text": "*C'est le dernier jour. Avant d'ouvrir la porte de la classe, je repense une fois aux paroles échangées ces quatre derniers jours.*"
+        "text": "*Ma première semaine dans ce lycée touche à sa fin. Avant d’ouvrir la porte de la classe, je repense aux paroles échangées ces quatre derniers jours.*"
     },
     "morning5_mood_mid": {
         "name": "{name}",
-        "text": "Dernier jour. Je n’ai pas encore décidé quelle direction prendre. Je franchis quand même le portail."
+        "text": "Ma première semaine est presque finie, mais je n’ai toujours pas fait mon choix. Pour l’instant, je franchis le portail."
     },
     "morning5_mood_low": {
         "name": "{name}",
-        "text": "Dernier jour. Je touche tour à tour les trois noms restés sur l’écran de verrouillage, puis j’éteins l’écran sans ouvrir les conversations."
+        "text": "Ma première semaine touche à sa fin. Je regarde les trois noms sur l’écran verrouillé, puis je l’éteins sans ouvrir les conversations."
     },
     "morning5_gate": {},
     "morning5_seo_note_1": {
@@ -177,7 +177,7 @@
     },
     "morning5_yuna_story_gone_2": {
         "name": "{name}",
-        "text": "*Une place vide à la bibliothèque, un marque-page disparu, une nouvelle jamais affichée. Il ne reste que quatre trous de punaise sur le panneau.*"
+        "text": "*Je m’arrête devant le panneau vide. Les trous de punaises ne me disent rien de ce que pensait Yuna.*"
     },
     "morning5_seo_note_1_c": {
         "name": "{name}",
@@ -254,7 +254,7 @@
     },
     "hidden_homeroom_d5_3": {
         "name": "Professeure principale",
-        "text": "Je l’ai laissé de côté pendant sept ans. Cette fois, je vais aussi le faire lire au club littéraire et aux professeurs de coréen."
+        "text": "Ça fait sept ans que je suis dessus. Il est temps que j’écoute aussi les autres."
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",
@@ -491,14 +491,8 @@
         "name": "{name}",
         "text": "*Sous la fiche de suivi, les procédures de rendez-vous à l'infirmerie et au service d'écoute sont imprimées côte à côte.*"
     },
-    "hidden_nurse_d5_2_b": {
-        "name": "Infirmière",
-        "text": "*Elle ouvre la porte de l'infirmerie et consulte la liste des rendez-vous.*"
-    },
-    "hidden_nurse_d5_2_c": {
-        "name": "Infirmière",
-        "text": "Tu es pile à l'heure pour ton rendez-vous. C'est bien."
-    },
+    "hidden_nurse_d5_2_b": {},
+    "hidden_nurse_d5_2_c": {},
     "hidden_nurse_d5_3": {
         "name": "{name}",
         "text": "Je viens chercher mon attestation d'entretien."
@@ -511,30 +505,15 @@
         "name": "Infirmière",
         "text": "Tu peux toujours venir demander de l'aide sur un créneau prévu."
     },
-    "hidden_nurse_d5_3_d": {
-        "name": "{name}",
-        "text": "Même sans prétexte ?"
-    },
-    "hidden_nurse_d5_3_e": {
-        "name": "Infirmière",
-        "text": "Bien sûr. L'infirmerie ne sert pas à fabriquer des prétextes, mais à recevoir l'aide dont on a besoin."
-    },
+    "hidden_nurse_d5_3_d": {},
+    "hidden_nurse_d5_3_e": {},
     "hidden_nurse_d5_3_f": {
         "name": "Infirmière",
         "text": "*Elle ouvre une boîte de cartes de premiers secours.*"
     },
-    "hidden_nurse_d5_3_g": {
-        "name": "Infirmière",
-        "text": "Allez, file. Tu ne voudrais pas rater l'événement."
-    },
-    "hidden_nurse_d5_3_h": {
-        "name": "Infirmière",
-        "text": "*Avant de franchir le seuil de l’infirmerie, elle rouvre la liste des rendez-vous.*"
-    },
-    "hidden_nurse_d5_3_i": {
-        "name": "Infirmière",
-        "text": "{name}, attends un instant."
-    },
+    "hidden_nurse_d5_3_g": {},
+    "hidden_nurse_d5_3_h": {},
+    "hidden_nurse_d5_3_i": {},
     "hidden_nurse_d5_4": {
         "name": "Infirmière",
         "text": "La trousse de secours est à l'entrée du gymnase. Si tu te blesses, appelle tout de suite le professeur responsable."
@@ -619,7 +598,7 @@
     "morning5_end_branch": {},
     "morning5_end": {
         "name": "{name}",
-        "text": "*Je pose côte à côte sur mon bureau les notes et notifications venues de trois directions.*"
+        "text": "*Je rassemble les petits mots sur mon bureau, puis consulte les notifications de mon téléphone une à une.*"
     },
     "morning5_committed_end": {
         "name": "{name}",

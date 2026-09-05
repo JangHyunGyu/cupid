@@ -13,7 +13,7 @@
     },
     "confess_seo_1": {
         "name": "{name}",
-        "text": "*Das Date ist vorbei. Statt zum Schultor gehen wir hinauf aufs Dach.*"
+        "text": "*Nach unserem Date sind wir wieder vor der Schule angekommen.*"
     },
     "confess_seo_2": {
         "name": "Seoyeon",
@@ -56,7 +56,7 @@
     },
     "confess_seo_yes_3": {
         "name": "{name}",
-        "text": "Ich möchte dich auch nach heute noch treffen."
+        "text": "Ich bin in dich verliebt. Ich möchte dich auch nach heute weitersehen."
     },
     "confess_seo_yes_4": {
         "name": "{name}",
@@ -159,7 +159,7 @@
     },
     "confess_yuna_yes_3": {
         "name": "{name}",
-        "text": "Yuna. Wenn ich bei dir bin, muss ich meine Worte nicht so sorgfältig auswählen."
+        "text": "Yuna, ich bin in dich verliebt. Bei dir muss ich nicht für mich behalten, was ich sagen möchte."
     },
     "confess_yuna_yes_3_b": {
         "name": "{name}",
@@ -267,7 +267,7 @@
     },
     "confess_dain_yes_3_b": {
         "name": "{name}",
-        "text": "Ich möchte dich auch nach heute noch treffen."
+        "text": "Ich bin in dich verliebt. Ich will dich weitersehen, nicht nur heute."
     },
     "confess_dain_yes_4": {
         "name": "{name}",

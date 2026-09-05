@@ -119,7 +119,7 @@
     },
     "lunch2_seo_13b_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon acerca la lonchera hacia {name}.* El asiento estará libre, pero el compromiso no."
+        "text": "*Seoyeon acerca su comida a {name}.* Puedes sentarte. Pero déjanos terminar lo que estábamos hablando."
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
@@ -192,12 +192,9 @@
     },
     "lunch2_seo_c2_2": {
         "name": "Seoyeon",
-        "text": "...Si te lo limpias tú, lo único que consigues es extenderlo."
+        "text": "Usa la toallita."
     },
-    "lunch2_seo_c2_3": {
-        "name": "Seoyeon",
-        "text": "*Las manos le resbalan dos veces al alinear la tapa. Al tercer intento, la cierra con un clic.*"
-    },
+    "lunch2_seo_c2_3": {},
     "lunch2_seo_end_c2": {
         "name": "{name}",
         "text": "*La marca del grano de arroz aún sigue en el dorso de mi mano. Seoyeon desata la correa de la lonchera y vuelve a atarla.*"
@@ -415,10 +412,7 @@
         "name": "Enfermera",
         "text": "Es un truco que aprendí en el hospital. En las articulaciones hay que ponerla así para que dure."
     },
-    "lunch2_dain_end_q": {
-        "name": "{name}",
-        "text": "*La venda no se arruga ni siquiera al doblar el codo.*"
-    },
+    "lunch2_dain_end_q": {},
     "lunch2_dain_end_r": {
         "name": "{name}",
         "text": "*Mientras reviso la venda, un cuaderno verde claro sobresale del cajón del escritorio. En la primera línea de la página abierta se lee: 'Para ti, aquel día—'. La enfermera cierra el cajón.*"
@@ -433,7 +427,7 @@
     },
     "lunch2_dain_end_u": {
         "name": "Enfermera",
-        "text": "*Suelta la manija del cajón.* Con eso alcanza para pagar un secreto, ¿no?"
+        "text": "*Suelta el tirador del cajón.* Ya hemos hablado bastante de mí. ¿Qué tal la tirita?"
     },
     "lunch2_dain_end_v": {},
     "lunch2_dain_end_w": {
@@ -637,7 +631,7 @@
     },
     "lunch2_yuna_c1_10": {
         "name": "Yuna",
-        "text": "No fue de repente. Se cambió de escuela."
+        "text": "Me enteré del traslado después. Antes no me había dicho nada."
     },
     "lunch2_yuna_c1_11": {
         "name": "{name}",

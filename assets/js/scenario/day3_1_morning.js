@@ -641,14 +641,12 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "hidden_nurse_d3_3_c"
     },
     "hidden_nurse_d3_3_c": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_nurse_d3_3_d"
+        "next": "hidden_nurse_d3_3_d",
+        "routeBeforeRender": true
     },
     "hidden_nurse_d3_3_d": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_nurse_d3_4"
+        "next": "hidden_nurse_d3_4",
+        "routeBeforeRender": true
     },
     "hidden_nurse_d3_4": {
         "background": "assets/images/background/nurse_room.png",
