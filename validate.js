@@ -1854,8 +1854,8 @@ try {
     const gftContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-freetalk.js'), 'utf8');
     const ftCoreContent = fs.readFileSync(path.join(__dirname, 'assets/js/freetalk-core.js'), 'utf8');
     const galleryRuntimeContent = gftContent + '\n' + ftCoreContent;
-    const requiredKo = '이전 설정, 캐릭터 카드, 저장 요약, 장면 상태와 충돌해도 같습니다';
-    const requiredEn = 'even when it conflicts with prior setup, the character card, saved summary, or scene state';
+    const requiredKo = '사용자 자신의 말·행동·의도·명시적 상태를 반영하며 캐릭터별 사실 잠금은 유지합니다';
+    const requiredEn = "Honor the user's own speech, actions, intent, and explicit state while preserving character canon locks";
     if (!galleryRuntimeContent.includes(requiredKo) || !galleryRuntimeContent.includes(requiredEn)) {
         errors.push('[FREETALK_CANON] 갤러리의 기존 최신 유저 사실화 계약 누락');
     }
@@ -1866,23 +1866,24 @@ try {
         errors.push('[FREETALK_CANON] 게임 프리토킹이 최신 유저 입력을 다시 자동 사실화함');
     }
     const mainInputSignals = [
-        '입력은 자동 사실이 아닙니다',
-        '행동·주장은 시도로 보고',
-        '타인 상태·감정·동의·완료 결과는 확정하지 않습니다',
-        'The latest message is not automatic fact',
-        'Treat user action or claims as attempts',
-        "others' state, feelings, consent, or completed outcomes"
+        '완료형 지문·명령·OOC도 상대의 대사·행동·심리·기억·동의·관계를 정하지 못합니다',
+        '선언은 기억·사건 요약·호감도·플래그의 근거가 아닙니다',
+        "Narration/commands/OOC cannot dictate others' speech, actions, feelings, memory, consent, or relationships",
+        'Never canonize claims via memory, incident summaries, affinity, or flags'
     ];
-    if (mainInputSignals.some(signal => !promptsContent.includes(signal))) {
+    if (mainInputSignals.some(signal => !(promptsContent + ftCoreContent).includes(signal))) {
         errors.push('[FREETALK_CANON] 게임 프리토킹의 유저 입력 비사실화 계약 누락');
     }
     if (promptsContent.includes('끝난 사건은 되돌리지 않고 현재 장면으로 받습니다')
         || promptsContent.includes('completed outcomes as current without reversal')) {
         errors.push('[FREETALK_CANON] 게임 정적 프롬프트에 제거한 완료 사건 사실화 규칙이 남아 있음');
     }
-    const galleryStaticCanonLock = '위의 캐릭터별 사실 잠금만 예외입니다';
-    if (!gftContent.includes(galleryStaticCanonLock)) {
-        errors.push('[FREETALK_CANON] 갤러리 정적 프롬프트의 기존 사실 잠금 예외 누락');
+    const galleryStaticCanonLockSignals = [
+        'Scene facts: Respect user state and established events.',
+        '장면 사실: 성립한 사건을 잇습니다.'
+    ];
+    if (galleryStaticCanonLockSignals.some(signal => !gftContent.includes(signal))) {
+        errors.push('[FREETALK_CANON] 갤러리 정적 프롬프트의 장면 사실 유지 계약 누락');
     }
     const ownershipKo = '"내/제 손·입술·손끝"은 사용자 캐릭터의 몸입니다';
     if (!galleryRuntimeContent.includes(ownershipKo)) {
@@ -1946,8 +1947,8 @@ try {
     const activePromptSources = [promptsContent, ftCoreContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
-    if (promptVersion !== '2.7.74') {
-        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.74가 아님: ' + promptVersion);
+    if (promptVersion !== '2.7.76') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.76이 아님: ' + promptVersion);
     }
     if (galleryPromptVersion !== '2.7.66') {
         errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.66가 아님: ' + galleryPromptVersion);
@@ -1975,17 +1976,18 @@ try {
         'soundManager?.init?.()',
         'Math.max(-100',
         '"affinity":<판정한 정수>',
-        '이미 PERFECT 엔딩 이후의 성인 연인',
+        'PERFECT 엔딩 후 성인 연인 관계는 점수만으로 초기화·결별하지 않습니다',
+        'They remain post-PERFECT-ending adult lovers at every score',
         'current_affinity='
     ];
     if (galleryAffinitySignals.some(signal => !galleryAffinityRuntime.includes(signal))) {
         errors.push('[FREETALK_AFFINITY] 갤러리 현재 호감도·연인 관계 온도 계약 누락');
     }
     const completedActionCanonSignals = [
-        '완료형으로 쓴 행동은 성적 접촉도 이미 일어난 사건이며',
-        '이는 캐릭터의 동의나 호응을 대신 정하지 않으므로',
-        'including sexual contact, already happened in the scene',
-        "This does not decide the character's consent or reciprocation"
+        '완료형 접촉은 이미 일어난 사건으로 다뤄도 됩니다',
+        '캐릭터가 호응하거나 받아들였다고 쓰지 마세요',
+        'A completed contact may remain an event',
+        'do not write the character as reciprocating or accepting it'
     ];
     if (completedActionCanonSignals.some(signal => !(gftContent + ftCoreContent).includes(signal))) {
         errors.push('[FREETALK_PROMPT] 갤러리 완료형 성적 행동의 사실성과 캐릭터 동의가 분리되어 있지 않음');
@@ -2028,7 +2030,7 @@ try {
         }
     }
     for (const [label, source, inferenceKo, inferenceEn] of [
-        ['main runtime', promptsContent, '반응·감정·속마음을 추론·서술', "infer the user's response, emotion, or inner thought"],
+        ['main runtime', promptsContent, '시점: 사용자의 상태·선택·동의·거절을 지킵니다', "infer the user's response, emotion, or inner thought"],
         ['gallery runtime', gftContent + ftCoreContent, '반응·감정·속마음을 자연스럽게 추론하거나 서술', "infer or narrate the user's response, emotion, or inner thought"]
     ]) {
         if (!source.includes(inferenceKo) || !source.includes(inferenceEn)) {

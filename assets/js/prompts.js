@@ -1704,13 +1704,39 @@ function recoverCupidRoleplayQualityFallback(parsed = {}, options = {}) {
         'narration_player_point_of_view',
         'unicode_replacement_character'
     ]);
-    if (!Array.isArray(working?.segments)
-        || working.segments.length === 0
-        || initialIssue.issues.some(issue => !recoverableIssues.has(issue))) {
+    if (initialIssue.issues.some(issue => !recoverableIssues.has(issue))) {
         return null;
     }
 
     const pointOfViewPattern = getCupidNarrationPointOfViewPattern(lang);
+    if (!Array.isArray(working?.segments) || working.segments.length === 0) {
+        let droppedSegments = 0;
+        const text = String(working?.text || '')
+            .replace(/\*([^*]+)\*/gu, (match, narration) => {
+                const value = String(narration || '').trim();
+                if (value.includes('\uFFFD') || pointOfViewPattern.test(value)) {
+                    droppedSegments += 1;
+                    return '';
+                }
+                return match;
+            })
+            .replace(/[ \t]{2,}/g, ' ')
+            .replace(/\s+([,.;!?])/g, '$1')
+            .trim();
+        if (droppedSegments === 0 || !text) return null;
+        const recovered = {
+            ...working,
+            text,
+            qualityRecovery: {
+                reason: initialIssue.reason,
+                droppedSegments,
+                legacyText: true,
+                implicitIncident: working?.qualityRecovery?.implicitIncident || undefined
+            }
+        };
+        return getCupidRoleplayQualityIssue(recovered, options).shouldRetry ? null : recovered;
+    }
+
     let droppedSegments = 0;
     const segments = working.segments.flatMap(segment => {
         if (!segment || typeof segment !== 'object') return [];
@@ -1767,6 +1793,7 @@ function buildCupidRoleplayQualityRepairBlock(issue = {}, lang = 'ko', charKey =
         'Regenerate the complete assistant response to the original latest in-world user message; do not continue or discuss the rejected draft.',
         `Write every segments[].text in ${languageNames[lang] || languageNames.en}.`,
         'Keep the required JSON schema. Use strict external third-person narration; second-person and first-person player references belong only in spoken dialogue.',
+        'If valid third-person narration would require any player reference, omit narration and return character dialogue segments only; dialogue-only output is valid.',
         'Never emit U+FFFD. Use fresh, grammatical wording.',
         issueSet.has('recent_response_near_duplicate')
             ? 'Discard the rejected draft’s repeated wording and choreography. React to the newest user turn with a genuinely different line, judgment, or action instead of paraphrasing a recent response.'
@@ -2291,5 +2318,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.75';
+const PROMPT_VERSION = '2.7.76';
 window.PROMPT_VERSION = PROMPT_VERSION;

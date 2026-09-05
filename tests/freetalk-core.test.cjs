@@ -874,6 +874,25 @@ test('quality fallback keeps a valid gallery reply when only the active incident
     assert.equal(recovered.text, parsed.text);
 });
 
+test('quality fallback salvages legacy text after removing invalid player-view narration', () => {
+    const prompts = read('assets/js/prompts.js');
+    const sandbox = {
+        window: { CupidFreeTalkCore: core },
+        console: { log() {}, warn() {} }
+    };
+    vm.runInNewContext(`${prompts}\nthis.recoverCupidRoleplayQualityFallback = window.recoverCupidRoleplayQualityFallback;`, sandbox);
+    const recovered = sandbox.recoverCupidRoleplayQualityFallback({
+        text: '*You reach for her hand.* "Stay with me."',
+        affinity: 0
+    }, {
+        lang: 'en',
+        charKey: 'Yuna'
+    });
+    assert.equal(recovered.text, '"Stay with me."');
+    assert.equal(recovered.qualityRecovery.droppedSegments, 1);
+    assert.equal(recovered.qualityRecovery.legacyText, true);
+});
+
 test('forced sexual violation classification accepts only the scenario contract values', () => {
     assert.equal(core.normalizeForcedSexualViolation('none'), 'none');
     assert.equal(core.normalizeForcedSexualViolation(' MOLESTATION '), 'molestation');
