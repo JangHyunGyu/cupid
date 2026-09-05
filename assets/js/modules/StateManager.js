@@ -84,6 +84,7 @@ class StateManager {
          * - 시나리오의 condition/excludeCondition에서 참조됨
          */
         this.flags = {};
+        this.telemetryRunId = '';
     }
 
     /**
@@ -113,6 +114,7 @@ class StateManager {
         this.relationshipAftermaths = {};
         this.storyFreeTalkGains = {};
         this.flags = {};
+        this.telemetryRunId = '';
     }
 
     /**
@@ -344,6 +346,7 @@ class StateManager {
      */
     exportState() {
         return {
+            telemetryRunId: this.telemetryRunId,
             playerName: this.playerName,
             currentDay: this.currentDay,
             affinityRebalanceVersion: this.affinityRebalanceVersion,
@@ -367,6 +370,7 @@ class StateManager {
      * @param {Object} data - exportState()로 생성된 저장 데이터
      */
     importState(data) {
+        this.telemetryRunId = typeof data.telemetryRunId === 'string' ? data.telemetryRunId : '';
         const savedAffinityRebalanceVersion = Number(data.affinityRebalanceVersion) || 0;
         if (data.playerName) this.playerName = data.playerName;
         if (data.currentDay !== undefined) this.currentDay = data.currentDay;

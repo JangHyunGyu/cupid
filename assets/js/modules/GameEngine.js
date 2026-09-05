@@ -408,7 +408,7 @@ class GameEngine {
 
         if ((scene.type === 'free_talk' || scene.type === 'group_free_talk')
             && !this.freeTalkSystem.isFreeTalking) {
-            const nextId = this.sceneRenderer.resolveNextScene(scene);
+            const nextId = this._resolveNextScene(scene);
             if (nextId) {
                 await this.renderScene(nextId);
             } else {
@@ -436,7 +436,7 @@ class GameEngine {
 
             // 🔄 선택지가 모두 조건을 충족하지 못하면 다음 씬으로
             if (availableChoices.length === 0) {
-                const nextId = this.sceneRenderer.resolveNextScene(scene);
+                const nextId = this._resolveNextScene(scene);
                 if (nextId) {
                     await this.renderScene(nextId);
                 } else {
@@ -460,7 +460,7 @@ class GameEngine {
             this.showChoices(availableChoices);
         } else {
             // 선택지 없으면 바로 다음 씬으로
-            const nextId = this.sceneRenderer.resolveNextScene(scene);
+            const nextId = this._resolveNextScene(scene);
             if (nextId) {
                 await this.renderScene(nextId);
             } else {
@@ -774,6 +774,8 @@ class GameEngine {
         // ─────────────────────────────────────────────────────────
         // 📌 4단계: 씬 이동 실행
         // ─────────────────────────────────────────────────────────
+        window.CupidRouteTelemetry?.choice(this.stateManager, this.sceneRenderer.currentSceneId,
+            this.sceneRenderer.getScene(this.sceneRenderer.currentSceneId), choice, nextScene);
         if (nextScene === 'index.html') {
             // 메인 메뉴로 돌아가기 (게임 종료) - 현재 언어에 맞는 index 페이지로 이동
             this.uiManager.goToHome();
@@ -874,7 +876,7 @@ class GameEngine {
 
         // 📌 현재 씬의 다음 씬으로 진행
         const scene = this.sceneRenderer.getScene(this.sceneRenderer.currentSceneId);
-        const nextId = this.sceneRenderer.resolveNextScene(scene);
+        const nextId = this._resolveNextScene(scene);
         if (nextId) await this.renderScene(nextId);
     }
 
@@ -925,6 +927,12 @@ class GameEngine {
      *
      * @param {string} sceneId - 렌더링할 씬의 고유 ID
      */
+    _resolveNextScene(scene, sceneId = this.sceneRenderer.currentSceneId) {
+        const nextId = this.sceneRenderer.resolveNextScene(scene);
+        window.CupidRouteTelemetry?.transition(this.stateManager, sceneId, scene, nextId);
+        return nextId;
+    }
+
     async renderScene(sceneId, { restoring = false } = {}) {
         // 렌더링 락 활성화 (비동기 로딩 중 클릭 방지)
         this._isRendering = true;
@@ -963,7 +971,8 @@ class GameEngine {
             }
             preRenderVisited.add(sceneId);
 
-            const nextId = guardedNext || this.sceneRenderer.resolveNextScene(scene);
+            const nextId = guardedNext || this._resolveNextScene(scene, sceneId);
+            if (guardedNext) window.CupidRouteTelemetry?.transition(this.stateManager, sceneId, scene, nextId, true);
             if (!nextId || nextId === sceneId) {
                 console.error(`[GameEngine] 사전 분기 대상이 올바르지 않음: ${sceneId}`);
                 this._isRendering = false;
@@ -1492,7 +1501,7 @@ class GameEngine {
             // 호감도 분기 등 라우팅 로직만 처리하고 즉시 다음 씬으로 진행
             // (배경/캐릭터 속성이 있어도 다음 씬에서 덮어쓰므로 클릭 대기 불필요)
             if (!scene.text && (!scene.choices || scene.choices.length === 0)) {
-                const nextId = this.sceneRenderer.resolveNextScene(scene);
+                const nextId = this._resolveNextScene(scene);
 
                 // 무한 루프 방지 (자기 자신으로 돌아가지 않도록)
                 if (nextId && nextId !== sceneId) {
@@ -1505,6 +1514,7 @@ class GameEngine {
         // ─────────────────────────────────────────────────────────
         // 💾 11단계: 게임 자동 저장
         // ─────────────────────────────────────────────────────────
+        window.CupidRouteTelemetry?.entered(this.stateManager, sceneId, scene, restoring);
         // 매 씬마다 저장하여 브라우저 종료 시에도 이어하기 가능
         this.saveGame();
     }

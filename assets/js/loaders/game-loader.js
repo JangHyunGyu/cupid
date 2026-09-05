@@ -53,7 +53,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-    const version = '2.9.205';
+    const version = '2.9.207';
     const LOAD_RETRIES = 3;
 
     // =========================================================================
@@ -212,6 +212,7 @@
 
         // 게임 엔진 모듈 (의존성 순서대로 로드)
         'modules/config.js',         // 전역 상수 + getAssetUrl()
+        'modules/RouteTelemetry.js',  // D1 story branch diagnostics
         'modules/MessageComposerUtils.js', // PC Enter 전송 / 수정키 줄바꿈 판정
         'modules/KoreanProcessor.js',// 한국어 조사 자동 처리
         'modules/StateManager.js',   // 게임 상태 관리

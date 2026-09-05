@@ -1007,7 +1007,7 @@ test('all five character routes share the 100/60/40/bittersweet ending tiers', (
     }
 });
 
-test('ranked rival routing selects the strongest nonnegative rival without checking the lead rank', () => {
+test('ranked rival routing selects the strongest rival without checking the lead rank', () => {
     const affinities = { Seoyeon: 80, Dain: 50, Yuna: 70 };
     const renderer = createSceneRenderer(affinities);
 
@@ -1021,7 +1021,7 @@ test('ranked rival routing selects the strongest nonnegative rival without check
     assert.equal(renderer.resolveNextScene(scenes.wall_yuna_rival_rank), 'wall_yuna_dain_tempt_1');
 
     Object.assign(affinities, { Seoyeon: 59, Dain: -1, Yuna: -30 });
-    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_to_park', 'a rival below zero must skip the temptation and continue to the agreed meeting');
+    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_glimpse_1', 'negative affinity must not block temptation entry');
     Object.assign(affinities, { Seoyeon: 80, Dain: 0, Yuna: -20 });
     assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_glimpse_1', 'a rival at zero must satisfy the threshold');
     Object.assign(affinities, { Seoyeon: 50, Dain: 80, Yuna: 30 });
@@ -1031,7 +1031,7 @@ test('ranked rival routing selects the strongest nonnegative rival without check
     assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_glimpse_1', 'the route lead rank must not block the strongest rival');
 
     Object.assign(affinities, { Seoyeon: 80, Dain: -1, Yuna: -10 });
-    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_to_park', 'negative rivals must not initiate an intimate counteroffer');
+    assert.equal(renderer.resolveNextScene(scenes.wall_seo_rival_rank), 'wall_seo_glimpse_1', 'negative rivals must still enter the offer scene');
 });
 
 test('day-five continuity keeps availability, history, affinity, and final choice separate', () => {
@@ -1181,7 +1181,7 @@ test('rival affinity is checked before the wall scene and free talk exits cleanl
         assert.equal(scenes[`wall_${short}_freetalk`].next, 'day4_student_return_home');
         assert.equal(scenes.day4_student_return_home.next, 'day4_hidden_msg_branch');
         assert.equal(scenes[rankId].minLeadAffinity, undefined);
-        assert.equal(scenes[rankId].minRivalAffinity, 0);
+        assert.equal(scenes[rankId].minRivalAffinity, undefined);
         assert.equal(scenes[rankId].leadCharacter, undefined);
         assert.equal(scenes[rankId].maxLeadRank, undefined);
         assert.equal(scenes[rankId].rankedRivalFallback, { seo: 'wall_seo_to_park', dain: 'wall_dain_4', yuna: 'wall_yuna_2' }[short]);
@@ -1189,7 +1189,7 @@ test('rival affinity is checked before the wall scene and free talk exits cleanl
 
     for (const rankId of ['day4_adult_teacher_student_rank', 'day4_adult_nurse_student_rank']) {
         assert.equal(scenes[rankId].minLeadAffinity, undefined);
-        assert.equal(scenes[rankId].minRivalAffinity, 0);
+        assert.equal(scenes[rankId].minRivalAffinity, undefined);
         assert.equal(scenes[rankId].leadCharacter, undefined);
         assert.equal(scenes[rankId].maxLeadRank, undefined);
         assert.equal(scenes[rankId].rankedRivalFallback, 'day4_student_night_branch');
@@ -1210,10 +1210,12 @@ test('every eligible day-four route reaches the next-morning confrontation after
         for (const [lead, routeFlag, rivals] of routes) {
             for (const rival of rivals) {
                 for (const leadAffinity of [59, 60, 100]) {
-                    const label = `${locale}/${lead}:${leadAffinity}/${rival}`;
-                    const affinities = { Seoyeon: -1, Yuna: -1, Dain: -1, Teacher: -1, Nurse: -1 };
+                  for (const rivalAffinity of [-100, -1, 0]) {
+                    if (rivalAffinity === -100 && rival !== rivals[0]) continue;
+                    const label = `${locale}/${lead}:${leadAffinity}/${rival}:${rivalAffinity}`;
+                    const affinities = { Seoyeon: -100, Yuna: -100, Dain: -100, Teacher: -100, Nurse: -100 };
                     affinities[lead] = leadAffinity;
-                    affinities[rival] = 0;
+                    affinities[rival] = rivalAffinity;
                     const flags = { [routeFlag]: true, day4_confession_accepted: true };
                     const renderer = createSceneRenderer(affinities, flags, copy);
                     const visited = new Set();
@@ -1244,6 +1246,7 @@ test('every eligible day-four route reaches the next-morning confrontation after
                     assert.equal(group.groupParticipants, 'counteroffer_confrontation', label);
                     assert.equal(group.text, copy[id].text, label);
                     assert.equal(group.maxTurns, 3, label);
+                  }
                 }
             }
         }
@@ -1413,7 +1416,7 @@ test('day-five mood uses the highest live affinity instead of a pseudo-character
     assert.equal(renderer.resolveNextScene(scenes.morning5_mood_check), 'morning5_mood_low');
 });
 
-test('adult day-four routes use the strongest nonnegative student rival without rank gates', () => {
+test('adult day-four routes use the strongest student rival without rank gates', () => {
     const affinities = { Teacher: 80, Nurse: 70, Seoyeon: 55, Dain: 65, Yuna: 60 };
     const renderer = createSceneRenderer(affinities);
 
@@ -1438,7 +1441,7 @@ test('adult day-four routes use the strongest nonnegative student rival without 
     assert.equal(renderer.resolveNextScene(scenes.day4_adult_teacher_student_rank), 'day4_teacher_seoyeon_counteroffer', 'the adult lead rank must not block the strongest student rival');
 
     Object.assign(affinities, { Teacher: 85, Nurse: 30, Seoyeon: -1, Dain: -10, Yuna: -30 });
-    assert.equal(renderer.resolveNextScene(scenes.day4_adult_teacher_student_rank), 'day4_student_night_branch', 'negative student rivals must not tempt an adult lead');
+    assert.equal(renderer.resolveNextScene(scenes.day4_adult_teacher_student_rank), 'day4_teacher_seoyeon_counteroffer', 'negative student affinity must not block an adult-route offer');
 });
 
 test('prior-lunch dialogue is reachable only through the flag that proves the lunch happened', () => {

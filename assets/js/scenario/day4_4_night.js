@@ -47,7 +47,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "day4_adult_teacher_student_rank"
     },
     "day4_adult_teacher_student_rank": {
-        "minRivalAffinity": 0,
         "rankedRivalBranches": [
             {
                 "character": "Seoyeon",
@@ -66,7 +65,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "routeBeforeRender": true
     },
     "day4_adult_nurse_student_rank": {
-        "minRivalAffinity": 0,
         "rankedRivalBranches": [
             {
                 "character": "Seoyeon",
@@ -1022,7 +1020,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/park.png",
         "backgroundVariant": "cold",
         "character": null,
-        "minRivalAffinity": 0,
         "rankedRivalBranches": [
             {
                 "character": "Dain",
@@ -1655,7 +1652,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "wall_dain_rival_rank": {
         "background": "assets/images/background/school_back.png",
         "character": null,
-        "minRivalAffinity": 0,
         "rankedRivalBranches": [
             {
                 "character": "Seoyeon",
@@ -2154,7 +2150,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/yuna_hideout.png",
         "backgroundVariant": "dream",
         "character": null,
-        "minRivalAffinity": 0,
         "rankedRivalBranches": [
             {
                 "character": "Seoyeon",
