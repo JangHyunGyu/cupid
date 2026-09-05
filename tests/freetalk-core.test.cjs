@@ -692,27 +692,15 @@ test('chat log preserves narration formatting after the source renders successfu
     );
 });
 
-test('gallery incident timing is turn-based with a 10-turn guard and 30-turn ceiling', () => {
-    assert.equal(core.getGalleryIncidentTriggerChance(9), 0);
-    assert.equal(core.getGalleryIncidentTriggerChance(10), 0.08);
-    assert.equal(core.getGalleryIncidentTriggerChance(17), 0.08);
-    assert.equal(core.getGalleryIncidentTriggerChance(18), 0.18);
-    assert.equal(core.getGalleryIncidentTriggerChance(28), 0.18);
-    assert.equal(core.getGalleryIncidentTriggerChance(29), 1);
-
-    const beforeCeiling = core.normalizeGalleryIncidentState({ completedTurns: 28, quietTurns: 28 });
-    assert.equal(core.planGalleryIncident(beforeCeiling, 0.99, 0.1), null);
-    const atCeiling = core.normalizeGalleryIncidentState({ completedTurns: 29, quietTurns: 29 });
-    assert.equal(core.planGalleryIncident(atCeiling, 0.99, 0.1).category, 'daily');
-
-    let survival = 1;
-    let expectedTurn = 0;
-    for (let quietTurns = 0; quietTurns < core.GALLERY_INCIDENT_POLICY.guaranteedTurn; quietTurns++) {
-        const chance = core.getGalleryIncidentTriggerChance(quietTurns);
-        expectedTurn += (quietTurns + 1) * survival * chance;
-        survival *= (1 - chance);
+test('quiet conversations never trigger gallery incidents without fresh evidence', () => {
+    for (const turns of [10, 29, 30, 99, 500]) {
+        const state = { completedTurns: turns, quietTurns: turns };
+        assert.equal(core.planGalleryIncident(state, 0, 0), null);
+        assert.equal(core.planGalleryIncident({ ...state, negativeSignals: [{ turn: turns - 1, weight: 6, excerpt: '이미 지나간 갈등' }] }, 0, 0), null);
     }
-    assert.ok(expectedTurn >= 18 && expectedTurn <= 22, `unexpected incident cadence: ${expectedTurn}`);
+    const fresh = { completedTurns: 30, quietTurns: 30, negativeSignals: [{ turn: 30, weight: 3, excerpt: '실제로 드러난 갈등' }] };
+    assert.ok(core.planGalleryIncident(fresh, 0, 0.5));
+    assert.equal(core.planGalleryIncident({ ...fresh, recentIncidents: [{ category: 'conflict', summary: '이미 해결됨', endedAtTurn: 30 }] }, 0, 0.5), null);
 });
 
 test('main and gallery prompts avoid a single numeric affinity anchor', () => {
@@ -751,7 +739,7 @@ test('trust crises require actual negative evidence and enforce the 300-turn coo
         quietTurns: 99,
         negativeSignals: [
             { turn: 470, weight: 3, excerpt: '첫 번째 실제 입력' },
-            { turn: 480, weight: 3, excerpt: '두 번째 실제 입력' }
+            { turn: 500, weight: 3, excerpt: '두 번째 실제 입력' }
         ]
     });
     assert.equal(core.isGalleryCrisisEligible(eligible), true);
@@ -807,7 +795,7 @@ test('gallery incident prompt delegates specifics to AI without inventing user a
         state,
         plan: { category: 'crisis' }
     });
-    assert.match(block, /구체적인 사건은 유나의 설정/);
+    assert.match(block, /최근 근거에서 이미 드러난 쟁점만 유나의 설정/);
     assert.match(block, /사용자가 하지 않은 말·행동·약속 위반을 사실로 지어내지 마세요/);
     assert.match(block, /"severity":"low 또는 medium 또는 high"/);
     assert.match(block, /"impact":-25/);
@@ -818,7 +806,7 @@ test('gallery incident prompt delegates specifics to AI without inventing user a
 
 test('scheduled and active gallery incidents cannot commit without their required payload', () => {
     const state = core.normalizeGalleryIncidentState({ completedTurns: 29, quietTurns: 29 });
-    const plan = core.planGalleryIncident(state, 0.99, 0.5);
+    const plan = { category: 'conflict', triggerTurn: 30 };
     assert.equal(plan.category, 'conflict');
     assert.deepEqual(
         Array.from(core.getGalleryIncidentContractIssue({ state, plan, payload: null }).issues),
@@ -2116,4 +2104,20 @@ test('game and gallery FreeTalk inputs use the shared keyboard rule', () => {
     assert.match(gameEngine, /chatSendBtn\?\.click\(\)/);
     assert.match(gallery, /input\.addEventListener\('keydown',[\s\S]*MessageComposerUtils\?\.shouldSubmitOnEnter/);
     assert.match(gallery, /event\.preventDefault\(\);\s*this\._handleSend\(\);/);
+});
+
+test('gallery rollover retains recent voice and a bounded stable checkpoint', () => {
+    const context = { window: { addEventListener() {} }, navigator: { userAgent: '', platform: '' }, document: { documentElement: { lang: 'ko' } }, location: { search: '', pathname: '/gallery.html' }, URLSearchParams, console };
+    vm.runInNewContext(read('assets/js/modules/config.js'), context);
+    const history = [{ role: 'system', content: 'stable profile' }, ...Array.from({ length: 33 }, (_, i) => ({ role: i % 2 ? 'assistant' : 'user', content: `line ${i}`, timestamp: i + 1 }))];
+    const first = context.window.buildCupidPromptEpoch(history);
+    const raw = first.messages.filter(message => message.role !== 'system');
+    assert.equal(raw.length, 24);
+    assert.equal(raw[0].content, 'line 9');
+    assert.equal(raw.at(-1).content, 'line 32');
+    assert.ok(first.state.carryover.includes('line 8'));
+    const next = context.window.buildCupidPromptEpoch([...history, { role: 'assistant', content: 'next', timestamp: 34 }], { state: first.state });
+    assert.equal(next.messages.filter(message => message.role !== 'system').length, 25);
+    assert.equal(next.state.carryover, first.state.carryover, 'checkpoint should remain frozen inside an epoch');
+    assert.equal(next.messages[0].content, 'stable profile');
 });

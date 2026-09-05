@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.208";
+const ASSET_VERSION = "2.9.209";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -127,9 +127,9 @@ function buildCupidPromptEpoch(history, options = {}) {
         return { messages: systemMessage ? [systemMessage] : [], state: null };
     }
 
-    const maxMessages = Math.max(4, Number(options.maxMessages) || 10);
-    const retainMessages = Math.max(2, Math.min(maxMessages - 1, Number(options.retainMessages) || 2));
-    const carryoverChars = Math.max(800, Number(options.carryoverChars) || 1800);
+    const maxMessages = Math.max(4, Number(options.maxMessages) || 32);
+    const retainMessages = Math.max(2, Math.min(maxMessages - 1, Number(options.retainMessages) || 24));
+    const carryoverChars = Math.max(800, Number(options.carryoverChars) || 2400);
     const savedState = options.state?.version === CUPID_PROMPT_EPOCH_VERSION ? options.state : {};
     const state = {
         version: CUPID_PROMPT_EPOCH_VERSION,

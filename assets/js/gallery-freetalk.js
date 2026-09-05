@@ -81,7 +81,7 @@ class GalleryFreeTalk {
 
         this.MEMORY_KEY = 'cupid_freetalk_memory';
         this.PROMPT_EPOCH_MEMORY_KEY = 'cupid_freetalk_prompt_epochs_v1';
-        this.HISTORY_WINDOW = 10;
+        this.HISTORY_WINDOW = 32;
 
         // 캐릭터 ID → 키 매핑
         this.CHAR_ID_TO_KEY = {
@@ -2653,8 +2653,8 @@ ${affinityIntimacyGuidance}${this._buildOutingDynamicTail(charId, charName)}`;
         const result = window.buildCupidPromptEpoch(history, {
             state: this._loadPromptEpochState(charId),
             maxMessages: this.HISTORY_WINDOW,
-            retainMessages: 2,
-            carryoverChars: 1800
+            retainMessages: 24,
+            carryoverChars: 2400
         });
         this._savePromptEpochState(charId, result.state);
         return result.messages;
