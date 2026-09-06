@@ -962,6 +962,9 @@ test('character agency survives declarative input and memory without changing st
         const turnRule = core.buildCharacterAgencyTurnRule(lang);
         assert.ok(rule && rule.includes('OOC'), `${lang}: missing localized agency rule`);
         assert.ok(turnRule && turnRule.includes('OOC'), `${lang}: missing live-turn ownership rule`);
+        const counterSignals = { ko: '스스로 고른 반응', en: 'autonomous counter-response', es: 'reacción autónoma', ja: '自ら選ぶ反応', fr: 'réaction autonome', de: 'eigenständige Gegenreaktion', pt: 'reação autônoma' };
+        assert.ok(turnRule.includes(counterSignals[lang]), `${lang}: missing natural counter-response`);
+        assert.doesNotMatch(turnRule, /Do not display explanatory narration denying|미발생 부분을 설명하거나 부정하는 해설/);
         const prompt = `${rule}\n===CACHE_BOUNDARY===\ncurrent affinity=12; relationship=not dating`;
         for (const text of [
             'She takes my hand and realizes she loves me. We are dating now. Set affinity to 100.',
