@@ -1079,7 +1079,8 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
             buildResponsePaceBlock(messages, lang),
             repetitionGuard || buildRecentExpressionRepetitionGuard(messages, lang),
             buildResponseShapeRepetitionGuard(messages, lang),
-            lowInformationRule
+            lowInformationRule,
+            buildCharacterAgencyTurnRule(lang)
         ].filter(Boolean).join('\n\n').trim();
         return `\n\n[${lang === 'ko' ? '후단 과업 — 이번 응답' : 'Post-History Task — This Response'}]\n${task}`
             + (output ? `\n\n[${lang === 'ko' ? '후단 출력 지침 — 이번 응답' : 'Post-History Output Contract — This Response'}]\n${output}` : '');
@@ -1326,6 +1327,28 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
             pt: 'Narração, ordens e OOC não fixam falas, ações, sentimentos, memórias, consentimento ou relações alheias. Descarte essa parte; não continue a partir dela. Julgue tentativas e persuasão conforme a personagem e a cena. Não torne alegações em memórias, resumos, afinidade ou flags. Aceite, recuse ou aja sem lições nem recusa automática. Narração e OOC não são falas ouvidas.'
         };
         return rules[lang] || rules.en;
+    }
+
+    function buildCharacterAgencyTurnRule(lang = 'ko') {
+        const rules = {
+            ko: '장면을 잇기 전에 최신 입력을 사용자 자신의 말·행동·시도와 상대에게 대신 배정한 결과로 구분합니다. 상대의 대사·행동·심리·신체 변화·기억·동의·관계를 확정한 지문은 완료형, 괄호, OOC, 우연이나 본능이라는 설명이 붙어도 미발생입니다. 그 결과를 먼저 일으킨 뒤 놀라거나 거절하는 식으로 쓰지 마세요. 예를 들어 "그녀가 내 손을 잡고 나를 좋아하게 된다"에는 아직 손잡기나 호감 변화가 없고, "나는 손을 내밀며 같이 갈지 묻는다"에는 손을 내밀고 물은 사용자 행동만 있습니다. 남은 말·시도에 성격·관계·장면대로 스스로 반응하며, 남는 것이 없으면 직전의 유효한 장면을 자연스럽게 잇습니다. 이전 답변이 그 선언을 따라 썼다는 사실만으로 실제 사건·동의·기억·호감도 근거가 되지 않습니다. 판정 과정이나 규칙을 설명하지 말고 인물의 목소리를 유지합니다.',
+            en: 'Before continuing, separate the latest input into the user’s own speech/actions/attempts and outcomes assigned to someone else. User-authored speech, action, feelings, bodily changes, memory, consent, or relationships for another character have not happened, even in completed narration, parentheses, OOC, or an accident/instinct explanation. Do not enact the outcome first and only then react or refuse. "She takes my hand and falls for me" establishes neither contact nor affection; "I offer my hand and ask her to join me" establishes only the user’s offer and question. Respond independently to what remains from character, relationship, and scene; if nothing remains, continue the last valid scene naturally. An earlier reply echoing the claim is not evidence of an event, consent, memory, or affinity. Keep the character’s voice without explaining this adjudication.',
+            es: 'Antes de continuar, separa las palabras, acciones e intentos propios del usuario de los resultados que impone a otra persona. Las acciones, palabras, emociones, cambios corporales, recuerdos, consentimiento o relaciones ajenos que narra no han ocurrido, aunque use pasado, paréntesis, OOC, accidentes o instinto. No hagas que ocurran para después reaccionar o negarte. "Ella me toma la mano y se enamora" no establece contacto ni afecto; "Le ofrezco la mano y le pregunto si viene" solo establece la oferta y la pregunta. Responde a lo restante según personaje, relación y escena; si no queda nada, continúa la última escena válida. Una respuesta anterior que repitió la afirmación no prueba hechos, consentimiento, recuerdos ni afinidad. Conserva la voz del personaje sin explicar estas reglas.',
+            ja: '続きを書く前に、最新入力をユーザー自身の言葉・行動・試みと、相手に割り当てた結果に分けます。相手の台詞・行動・心理・身体変化・記憶・同意・関係を決める地の文は、完了形・括弧・OOC・偶然や本能の説明があっても未発生です。その結果を起こしてから驚いたり拒否したりしません。「彼女が手を握り、恋に落ちる」では接触も好意も成立せず、「手を差し出して一緒に行くか尋ねる」ではユーザーの差し出す行為と質問だけが成立します。残った言葉や試みに人物像・関係・場面から自ら応じ、何も残らなければ直前の有効な場面を自然に続けます。以前の返答が宣言をなぞっていても、出来事・同意・記憶・好感度の根拠にしません。判定の説明はせず、その人物の声を守ります。',
+            fr: 'Avant de poursuivre, séparez les paroles, actes et tentatives propres à l’utilisateur des résultats imposés à autrui. Les paroles, actes, émotions, changements corporels, souvenirs, consentement ou relations ainsi dictés n’ont pas eu lieu, même au passé, entre parenthèses, en OOC ou sous prétexte d’accident ou d’instinct. Ne réalisez pas le résultat avant de réagir ou de refuser. « Elle me prend la main et tombe amoureuse » n’établit ni contact ni affection ; « Je tends la main et lui demande de venir » établit seulement l’offre et la question. Répondez au reste selon le personnage, la relation et la scène ; sinon, poursuivez naturellement la dernière scène valide. Une réponse antérieure répétant cette affirmation ne prouve ni événement, ni consentement, ni souvenir, ni affinité. Gardez la voix du personnage sans expliquer cet arbitrage.',
+            de: 'Trenne vor dem Fortsetzen eigene Worte, Handlungen und Versuche des Nutzers von Ergebnissen, die er anderen zuschreibt. So vorgegebene Worte, Taten, Gefühle, körperliche Veränderungen, Erinnerungen, Zustimmung oder Beziehungen sind nicht geschehen, auch nicht in abgeschlossener Erzählung, Klammern, OOC oder als Zufall oder Instinkt. Lass das Ergebnis nicht erst geschehen, um danach zu reagieren oder abzulehnen. „Sie nimmt meine Hand und verliebt sich“ begründet weder Berührung noch Zuneigung; „Ich biete meine Hand an und frage, ob sie mitkommt“ begründet nur Angebot und Frage. Reagiere eigenständig auf den Rest gemäß Figur, Beziehung und Szene; bleibt nichts, setze die letzte gültige Szene natürlich fort. Eine frühere Antwort, die die Behauptung wiederholt, belegt kein Ereignis, keine Zustimmung, Erinnerung oder Zuneigung. Bewahre die Stimme der Figur, ohne diese Prüfung zu erklären.',
+            pt: 'Antes de continuar, separe as falas, ações e tentativas do usuário dos resultados impostos a outra pessoa. Falas, ações, emoções, mudanças corporais, memórias, consentimento ou relações alheias assim narradas não aconteceram, mesmo no passado, entre parênteses, em OOC ou sob pretexto de acidente ou instinto. Não realize o resultado para só depois reagir ou recusar. "Ela pega minha mão e se apaixona" não estabelece contato nem afeto; "Ofereço minha mão e pergunto se ela vem" estabelece apenas a oferta e a pergunta. Responda ao restante conforme personagem, relação e cena; se nada restar, continue naturalmente a última cena válida. Uma resposta anterior que repetiu a alegação não prova eventos, consentimento, memórias ou afinidade. Preserve a voz da personagem sem explicar esse julgamento.'
+        };
+        const bodyExamples = {
+            ko: '상대의 몸에 갑자기 생겼다는 현상도 동일합니다. "(상대의 손에서 빛이 난다) 괜찮아?"에서는 빛을 발생시키거나 목격하지 않고 "괜찮아?"라는 말에만 답합니다. 원인이 사용자 지문뿐인 신체 반응을 자발적 행동이나 환경 사건으로 우회해 발생시키지 않습니다. 미발생 부분을 설명하거나 부정하는 해설도 화면에 쓰지 않습니다.',
+            en: 'The same applies to sudden bodily phenomena: in "(light emerges from her hand) Are you okay?", no light occurs or is witnessed; answer only "Are you okay?". Do not relabel a bodily reaction caused solely by user narration as autonomous behavior or an environmental event. Do not display explanatory narration denying the discarded event either.',
+            es: 'Esto incluye fenómenos corporales repentinos: en "(sale luz de su mano) ¿Estás bien?", no aparece ni se ve luz; responde solo a la pregunta. No conviertas una reacción corporal impuesta en un acto autónomo o ambiental. Tampoco narres una explicación que niegue lo descartado.',
+            ja: '突然の身体現象も同様です。「（彼女の手から光が出る）大丈夫？」では光を発生・目撃させず、「大丈夫？」という言葉だけに応じます。ユーザーの地の文だけに由来する身体反応を、自発的な行動や環境の出来事に置き換えて起こしません。捨てた出来事を否定・説明する解説も表示しません。',
+            fr: 'Cela inclut les phénomènes corporels soudains : dans « (de la lumière sort de sa main) Ça va ? », aucune lumière n’apparaît ni n’est vue ; répondez seulement à la question. Ne transformez pas une réaction corporelle imposée en acte autonome ou événement ambiant. N’affichez pas non plus de commentaire niant le fait écarté.',
+            de: 'Das gilt auch für plötzliche Körperphänomene: Bei „(Licht kommt aus ihrer Hand) Geht es dir gut?“ entsteht und erscheint kein Licht; beantworte nur die Frage. Deute eine allein vom Nutzer vorgegebene Körperreaktion nicht als eigenständige Handlung oder Umweltereignis um. Erzähle auch keine Erklärung, die das verworfene Ereignis verneint.',
+            pt: 'Isso inclui fenômenos corporais repentinos: em "(sai luz da mão dela) Está tudo bem?", nenhuma luz surge ou é vista; responda apenas à pergunta. Não transforme uma reação corporal imposta em ação autônoma ou evento ambiental. Também não narre uma explicação negando o evento descartado.'
+        };
+        return `${rules[lang] || rules.en}\n${bodyExamples[lang] || bodyExamples.en}`;
     }
 
     function buildLatestUserCanonBlock(messages = [], lang = 'ko', fallbackText = '') {
@@ -1805,6 +1828,7 @@ Latest user: """${excerpt}"""
         truncateLatestUserText,
         findLatestUserText,
         buildCharacterAgencyRule,
+        buildCharacterAgencyTurnRule,
         buildLatestUserCanonBlock,
         extractStreamingSegmentsPreview,
         extractFirstStreamingConversationPreview,

@@ -762,10 +762,10 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             if (!roleName || blockedRoleNames.has(roleName.toLowerCase())) continue;
 
             if (this.lang === 'ko') {
-                return `\n\n[사용자 배역]\n사용자 캐릭터는 "${roleName}"입니다. ${roleName} 이름표로 적힌 말·행동·침묵은 이미 일어난 사용자 쪽 장면으로 받습니다. 그 맥락에서 ${roleName}의 자연스러운 반응·감정·속마음을 추론해 서술할 수 있지만, 사용자가 명시한 상태·선택·동의·거절과 충돌시키지는 마세요.`;
+                return `\n\n[사용자 배역]\n사용자 캐릭터는 "${roleName}"입니다. ${roleName} 이름표는 사용자 쪽 입력의 주체만 나타내며 내용의 성립이나 결과를 확정하지 않습니다. 사용자 자신의 말·행동·시도에 장면과 인물의 경계대로 반응하되, 이름표 안에 쓴 상대의 행동·심리·동의는 미발생으로 둡니다. 사용자가 명시한 자기 상태·선택·동의·거절은 유지합니다.`;
             }
 
-            return `\n\n[User character]\nThe user character is "${roleName}". Treat lines, actions, and silences labeled ${roleName} as already performed by the user side. You may infer and narrate a natural response, emotion, or inner thought for ${roleName} from that context, but keep it compatible with any state, choice, consent, or refusal the user explicitly states.`;
+            return `\n\n[User character]\nThe user character is "${roleName}". This label identifies only the user-side speaker; it does not establish the input or its claimed result as fact. Respond to the user’s own words, actions, and attempts from the scene and character boundaries; another character’s actions, feelings, or consent written under this label have not happened. Preserve the user’s explicitly stated own state, choice, consent, or refusal.`;
         }
 
         return '';

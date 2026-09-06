@@ -254,11 +254,18 @@ class StateManager {
             .filter(value => knownCharacters.has(value)))];
         if (participants.length < 2) return null;
 
+        const affinitySnapshot = value => {
+            if (value === null || value === undefined || value === '') return null;
+            const number = Number(value);
+            return Number.isInteger(number) && number >= -100 && number <= 100 ? number : null;
+        };
         const assistantMessages = (Array.isArray(memory.assistantMessages) ? memory.assistantMessages : [])
             .map(message => ({
                 speakerId: String(message?.speakerId || '').trim(),
                 speakerName: String(message?.speakerName || '').trim(),
-                content: normalizeContent(message?.content)
+                content: normalizeContent(message?.content),
+                affinityChange: affinitySnapshot(message?.affinityChange),
+                affinityCurrent: affinitySnapshot(message?.affinityCurrent)
             }))
             .filter(message => participants.includes(message.speakerId) && message.content);
         const userContent = normalizeContent(memory.userContent);
