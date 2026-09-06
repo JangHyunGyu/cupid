@@ -614,8 +614,10 @@ function verifyLatestUserCanon(context) {
             `${label} canon block lost character state ownership`);
         assert(block.includes('"내/제 손·입술·손끝"은 사용자 캐릭터의 몸입니다'),
             `${label} canon block lost user-body ownership`);
-        assert(block.includes('반응·감정·속마음을 자연스럽게 추론하거나 서술할 수 있지만'),
-            `${label} canon block lost scene-compatible user inference`);
+        assert(block.includes('직접 들은 말·관찰 가능한 행동만 근거로 판단')
+            && block.includes('속마음·상상은 사용자만 아는 내면으로 남깁니다')
+            && block.includes('알아챘다는 외적 단서를 만들지 않고'),
+            `${label} canon block must separate private thoughts from observable facts`);
         assert(block.includes('명확히 밝힌 상태·선택·동의·거절과 충돌시키지는 않습니다'),
             `${label} canon block lost explicit user-state compatibility`);
         assert(!block.includes('Latest user:'), `${label} canon block still has an English meta label`);

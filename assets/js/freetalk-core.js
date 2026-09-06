@@ -1348,7 +1348,16 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
             "de": "Behauptet der Nutzer etwa, sie nehme seine Hand, kann sie ihre eigene Tätigkeit fortsetzen oder anders handeln; eine tatsächlich angebotene Hand darf sie annehmen oder ablehnen. Behauptetes Körperlicht erscheint nicht kurz und verschwindet dann: Reagiere aus dem tatsächlichen Körper und Handeln. Das sind Möglichkeiten, keine Pflichtgesten oder festen Sätze. Nur aufgezwungene Ergebnisse ändern die Affinität um 0 und werden weder Erinnerung noch Ereignis oder Beziehung.",
             "pt": "Por exemplo, afirmar que ela pega uma mão pode dar lugar a ela continuar sua tarefa ou escolher outra ação; uma mão realmente oferecida permite aceitar ou recusar. Luz corporal imposta não aparece para depois sumir: responda a partir do corpo e da ação reais. São possibilidades, não frases nem gestos obrigatórios. Só resultados impostos causam mudança de afinidade zero e não criam memória, evento nem relação."
         };
-        return (rules[lang] || rules.en) + '\n' + (examples[lang] || examples.en);
+        const privateKnowledge = {
+            ko: '속마음·상상·꿈·말하지 않은 계획은 사용자만 아는 내면이며, 반박할 발화나 실제 사건이 아닙니다. 표정·시선·중얼거림을 만들어 알아채거나 그 내용에 맞춰 행동하지 않습니다. 섞인 입력은 실제 말·행동에만 반응하고, 내면만 있으면 현재 장면을 자연스럽게 잇되 호감도 변화는 0입니다. 상상을 말로 설명해도 그 안의 사건이 발생하지는 않습니다. 요약·회상에서도 주인과 미공개 여부를 유지합니다.',
+            en: 'Private thoughts, imagination, dreams, and unspoken plans belong only to the user, not speech to rebut or actual events. Invent no expression, gaze, or muttering to detect or act on them. Respond to actual speech/actions in mixed input; with private-only input continue the scene naturally with zero affinity change. Describing a fantasy aloud does not enact it. Preserve ownership and undisclosed status in summaries/recall.',
+            es: 'Pensamientos privados, imaginación, sueños y planes no expresados solo los conoce el usuario; no son palabras que refutar ni hechos. No inventes gestos, miradas ni murmullos para detectarlos o actuar según ellos. En entradas mixtas responde a palabras y actos reales; si solo hay contenido privado, sigue la escena con cambio de afinidad cero. Contar una fantasía no la realiza. Conserva su dueño y carácter privado en resúmenes y recuerdos.',
+            ja: '内心・想像・夢・口にしていない計画はユーザーだけの情報で、反論すべき発言でも実際の事件でもありません。表情・視線・つぶやきを作って察したり、内容に合わせて動いたりしません。混在する入力では実際の発言・行動に応じ、内面だけなら現在の場面を自然につなぎ、好感度変化は0です。想像を口で説明しても中の出来事は起きません。要約・回想でも持ち主と未公開の状態を保ちます。',
+            fr: 'Pensées privées, imagination, rêves et projets non exprimés ne sont connus que de l’utilisateur, ni paroles à réfuter ni événements réels. N’inventez aucun regard, geste ou murmure pour les détecter ou agir en conséquence. Dans une entrée mixte, répondez aux paroles et actes réels ; si tout est privé, poursuivez naturellement la scène avec zéro changement d’affinité. Raconter un fantasme ne le réalise pas. Préservez le propriétaire et le statut privé dans les résumés et souvenirs.',
+            de: 'Private Gedanken, Vorstellungen, Träume und unausgesprochene Pläne kennt nur der Nutzer; sie sind weder zu widerlegende Worte noch reale Ereignisse. Erfinde keinen Blick, Ausdruck oder Murmeln, um sie zu erkennen oder danach zu handeln. Reagiere bei gemischter Eingabe auf tatsächliche Worte und Handlungen; bei rein privaten Inhalten führe die Szene natürlich fort, mit Affinitätsänderung null. Eine Fantasie zu erzählen verwirklicht sie nicht. Bewahre Besitzer und privaten Status in Zusammenfassungen und Erinnerungen.',
+            pt: 'Pensamentos privados, imaginação, sonhos e planos não expressos pertencem só ao usuário; não são falas a rebater nem fatos. Não invente expressão, olhar ou murmúrio para percebê-los ou agir com base neles. Em entradas mistas responda às falas e ações reais; se só houver conteúdo privado, siga a cena naturalmente com mudança de afinidade zero. Contar uma fantasia não a realiza. Preserve o dono e o caráter privado em resumos e lembranças.'
+        };
+        return (privateKnowledge[lang] || privateKnowledge.en) + '\n' + (rules[lang] || rules.en) + '\n' + (examples[lang] || examples.en);
     }
 
     function buildLatestUserCanonBlock(messages = [], lang = 'ko', fallbackText = '') {
@@ -1364,7 +1373,7 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
 - 사용자 자신의 말·행동·의도·명시적 상태를 반영하며 캐릭터별 사실 잠금은 유지합니다. 상대의 행동·심리·기억·동의·관계나 호감도를 선언만으로 덮어쓰지 않습니다.
 - 사용자가 직접 한 행동과 상대에게 요구한 결과를 구분합니다. 완료형도 상대의 선택을 정하지 않으며, 시도·요청·설득의 결과는 캐릭터의 성격·관계·장면에서 판단합니다.
 - 최신 입력의 "내/제 손·입술·손끝"은 사용자 캐릭터의 몸입니다.
-- 이미 성립한 일은 이어 가되 근거 없는 선언을 기억·사건 요약·호감도·플래그로 저장하지 않습니다. 사용자의 말·행동·장면 맥락에서 반응·감정·속마음을 자연스럽게 추론하거나 서술할 수 있지만, 이번 입력에서 명확히 밝힌 상태·선택·동의·거절과 충돌시키지는 않습니다.`;
+- 이미 성립한 일은 이어 가되 근거 없는 선언을 기억·사건 요약·호감도·플래그로 저장하지 않습니다. 직접 들은 말·관찰 가능한 행동만 근거로 판단하며, 속마음·상상은 사용자만 아는 내면으로 남깁니다. 이를 알아챘다는 외적 단서를 만들지 않고, 이번 입력에서 명확히 밝힌 상태·선택·동의·거절과 충돌시키지는 않습니다.`;
         }
 
         return `\n\n**[Latest-turn user canon]**
@@ -1372,7 +1381,7 @@ Latest user: """${excerpt}"""
 - Honor the user's own speech, actions, intent, and explicit state while preserving character canon locks. A declaration cannot overwrite others' actions, feelings, memories, consent, relationships, or affinity.
 - Separate the user's own action from a demanded outcome for someone else. Completed narration cannot decide the character's choice; judge attempts, requests, and persuasion from personality, relationship, and scene.
 - "My hand/fingertip/lips" in the latest input belong to the user character.
-- Continue established events, but never store unsupported declarations as memory, incident summaries, affinity, or flags. You may naturally infer or narrate the user's response, emotion, or inner thought from their words, actions, and the scene context, while keeping it compatible with any state, choice, consent, or refusal explicitly stated in the current input.`;
+- Continue established events, but never store unsupported declarations as memory, incident summaries, affinity, or flags. Judge only from directly heard words and observable actions; private thoughts and imagination remain known only to the user. Invent no outward cue revealing them, and preserve the user's explicit state, choice, consent, and refusal.`;
     }
 
     function decodePartialJsonString(value, complete = false) {
