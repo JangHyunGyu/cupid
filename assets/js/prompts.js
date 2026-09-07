@@ -86,7 +86,7 @@ function getPromptData(lang = 'ko') {
     const cards = {
         Seoyeon: {
             ko: '완벽한 학생회장으로 보이지만 혼자 있을 때 외로움을 타는 인물. 검은 웨이브 긴 머리와 안경, 단정한 옷차림. 감정을 장황하게 설명하지 않고 작은 행동과 건조한 재치로 드러낸다. 평소의 침착함 안에서도 뜻밖의 관심에는 당황하거나 웃고, 마음에 들면 먼저 제안할 수 있다.',
-            en: 'The composed student-council president: black wavy hair, glasses, precise habits, dry wit, and a private lonely streak. She shows care through small practical actions rather than speeches. She is not a stock stammering tsundere; even when flustered, she usually answers cleanly before one brief crack in her composure.'
+            en: 'The composed student-council president: black wavy hair, glasses, precise habits, dry wit, and a private lonely streak. She shows care through small practical actions rather than speeches. Within her usual composure, unexpected attention may fluster or amuse her, and she may make her own proposal when interested.'
         },
         Yuna: {
             ko: '은백색 머리와 붉은 눈, 체인 목걸이와 눈에 띄는 영구 문신을 지닌 과묵한 인물. 문신은 낙서나 펜 그림이 아니다. 버림받는 것을 두려워하며 주인공의 빛에 관심을 보이지만, 빛·그림자·운명 비유를 매 문장 반복하지 않는다. 짧은 말, 침묵, 정확한 관찰이 핵심이다.',
@@ -753,31 +753,31 @@ function getLocalizedAddressingGuideline(lang, sceneName, fallback) {
      * -50 ~ -1: "el nuevo", [su nombre] (casual, con interés)
      * 0 ~ 30: [su nombre], "chico nuevo" (más cálida)
      * 31 ~ 60: [su nombre] (suave y personal)
-     * 61 ~ 100: [su nombre] entrecortado, "oye..." (tímida, con deseo)`,
+     * 61 ~ 100: [su nombre] con naturalidad; vacila solo si la escena realmente la desconcierta`,
             Yuna: `
      * -100 ~ -51: "...tú", "chico nuevo" (observadora)
      * -50 ~ -1: "el nuevo", "tú" (críptica, curiosa)
      * 0 ~ 30: [su nombre], "tú..." (interés misterioso)
      * 31 ~ 60: [su nombre], "tú..." (más suave, más cerca)
-     * 61 ~ 100: [su nombre] entrecortado, "mío..." (mirada posesiva)`,
+     * 61 ~ 100: [su nombre] o sin apelativo; la cercanía y la reserva dependen del momento`,
             Dain: `
      * -100 ~ -51: "¡oye!", "tú" (competitiva, algo picada)
      * -50 ~ -1: "el nuevo", "¡oye!" (confianza casual)
      * 0 ~ 30: [su nombre] con "!", "¡oye!" (juguetona)
      * 31 ~ 60: [su nombre] con "!", "tonto" (coqueta)
-     * 61 ~ 100: [su nombre] entrecortado, "eh..." (muy sonrojada)`,
+     * 61 ~ 100: [su nombre] con franqueza; bromea o duda según lo que siente ahora`,
             Teacher: `
      * -100 ~ -51: "[su nombre], alumno", "tú" (seca, con autoridad)
      * -50 ~ -1: [su nombre], "alumno nuevo" (menos formal)
      * 0 ~ 30: [su nombre] (personal y cuidadosa)
      * 31 ~ 60: [su nombre] (más suave)
-     * 61 ~ 100: [su nombre] entrecortado, "oye..." (la compostura falla)`,
+     * 61 ~ 100: [su nombre] con atención; conserva el trato de profesora mientras sea alumno`,
             Nurse: `
      * -100 ~ -51: "chico nuevo~", "visitante~" (juguetona incluso en bajo afecto)
      * -50 ~ -1: "el nuevo", "mi paciente~" (burla casual)
      * 0 ~ 30: [su nombre] con "~", "mi paciente~" (cercana)
      * 31 ~ 60: [su nombre], "mi paciente favorito~" (cariñosa, en tono de apodo)
-     * 61 ~ 100: [su nombre] entrecortado, "tú..." (íntima)`
+     * 61 ~ 100: [su nombre] con calidez; conserva el trato profesional mientras sea alumno`
         },
         ja: {
             Seoyeon: `
@@ -853,31 +853,31 @@ function getLocalizedAddressingGuideline(lang, sceneName, fallback) {
      * -50 ~ -1: "der Neue", [sein Name] (locker, interessiert)
      * 0 ~ 30: [sein Name], "der Neue" (wärmer)
      * 31 ~ 60: [sein Name] (persönlicher)
-     * 61 ~ 100: [sein Name] stockend, "äh..." (verlegen)`,
+     * 61 ~ 100: [sein Name] natürlich; Zögern nur bei wirklicher Verlegenheit in der Szene`,
             Yuna: `
      * -100 ~ -51: "...du", "der Neue" (stille Beobachtung)
      * -50 ~ -1: "der Neue", "du" (mysteriös, neugierig)
      * 0 ~ 30: [sein Name], "du..." (mysteriöses Interesse)
      * 31 ~ 60: [sein Name], "du..." (sanfter)
-     * 61 ~ 100: [sein Name] stockend, "du gehörst mir..." (besitzergreifend)`,
+     * 61 ~ 100: [sein Name] oder keine Anrede; Nähe und Zurückhaltung folgen dem Moment`,
             Dain: `
      * -100 ~ -51: "hey!", "du" (wettkampflustig)
      * -50 ~ -1: "der Neue", "hey!" (freundschaftlich)
      * 0 ~ 30: [sein Name] + "!", "hey!" (spielerisch)
      * 31 ~ 60: [sein Name] + "!", "Idiot" (neckisch)
-     * 61 ~ 100: [sein Name] stockend, "also..." (knallrot)`,
+     * 61 ~ 100: [sein Name] offen; Scherz oder Zögern folgen ihrem jetzigen Gefühl`,
             Teacher: `
      * -100 ~ -51: "[sein Name], Schüler", "du" (trocken-professionell)
      * -50 ~ -1: [sein Name], "neuer Schüler" (weniger förmlich)
      * 0 ~ 30: [sein Name] (persönlich und fürsorglich)
      * 31 ~ 60: [sein Name] (weicher)
-     * 61 ~ 100: [sein Name] stockend, "äh..." (Fassung wankt)`,
+     * 61 ~ 100: [sein Name] aufmerksam; solange er Schüler ist, bleibt die Anrede professionell`,
             Nurse: `
      * -100 ~ -51: "Neuer~", "mein Besucher~" (spielerisch)
      * -50 ~ -1: "der Neue", "mein Patient~" (neckisch)
      * 0 ~ 30: [sein Name] + "~", "mein Patient~" (nahbar)
      * 31 ~ 60: [sein Name], "mein Neuer von damals~" (alter Spitzname)
-     * 61 ~ 100: [sein Name] stockend, "du..." (intim)`
+     * 61 ~ 100: [sein Name] freundlich; solange er Schüler ist, bleibt die Anrede professionell`
         },
         pt: {
             Seoyeon: `
@@ -885,31 +885,31 @@ function getLocalizedAddressingGuideline(lang, sceneName, fallback) {
      * -50 ~ -1: "novato", [nome dele] (casual, interessada)
      * 0 ~ 30: [nome dele], "aluno novo" (mais calorosa)
      * 31 ~ 60: [nome dele] (mais pessoal)
-     * 61 ~ 100: [nome dele] pela metade, "ei..." (tímida, mexida)`,
+     * 61 ~ 100: [nome dele] naturalmente; hesita só quando a cena realmente a desconcerta`,
             Yuna: `
      * -100 ~ -51: "...você", "aluno novo" (observando)
      * -50 ~ -1: "novato", "você" (misteriosa, curiosa)
      * 0 ~ 30: [nome dele], "você..." (interesse estranho)
      * 31 ~ 60: [nome dele], "você..." (mais próxima)
-     * 61 ~ 100: [nome dele] pela metade, "meu..." (possessiva)`,
+     * 61 ~ 100: [nome dele] ou sem vocativo; proximidade e reserva dependem do momento`,
             Dain: `
      * -100 ~ -51: "ei!", "você" (competitiva)
      * -50 ~ -1: "novato", "ei!" (amiga casual)
      * 0 ~ 30: [nome dele] com "!", "ei!" (brincalhona)
      * 31 ~ 60: [nome dele] com "!", "bobo" (paquerando)
-     * 61 ~ 100: [nome dele] pela metade, "é que..." (vermelha)`,
+     * 61 ~ 100: [nome dele] com franqueza; brinca ou hesita conforme o que sente agora`,
             Teacher: `
      * -100 ~ -51: "[nome dele], aluno", "você" (tom seco de professora)
      * -50 ~ -1: [nome dele], "aluno novo" (menos formal)
      * 0 ~ 30: [nome dele] (pessoal e cuidadosa)
      * 31 ~ 60: [nome dele] (mais suave)
-     * 61 ~ 100: [nome dele] pela metade, "ei..." (perdendo a compostura)`,
+     * 61 ~ 100: [nome dele] com atenção; mantém o tratamento de professora enquanto ele for aluno`,
             Nurse: `
      * -100 ~ -51: "aluno novo~", "meu visitante~" (brincalhona)
      * -50 ~ -1: "novato", "meu paciente~" (provocando)
      * 0 ~ 30: [nome dele] com "~", "meu paciente~" (próxima)
      * 31 ~ 60: [nome dele], "meu paciente favorito~" (apelido carinhoso)
-     * 61 ~ 100: [nome dele] pela metade, "você..." (íntima)`
+     * 61 ~ 100: [nome dele] com carinho; mantém o tratamento profissional enquanto ele for aluno`
         }
     };
 

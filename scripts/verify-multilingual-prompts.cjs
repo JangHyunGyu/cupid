@@ -424,6 +424,12 @@ for (const lang of languages) {
         assert(systemPrompt.includes('not a checklist to recite in every reply'),
             `[${lang}/${char}] main prompt can recite preferences as a response checklist`);
         assert(!systemPrompt.includes('undefined'), `[${lang}/${char}] main prompt contains undefined`);
+        assert(!systemPrompt.includes('one brief crack in her composure'),
+            `[${lang}/${char}] English card still prescribes a fixed emotional sequence`);
+        if (['es', 'de', 'pt'].includes(lang)) {
+            assert(!/61\s*~\s*100:[^\n]*(?:entrecortado|stockend|pela metade)/.test(systemPrompt),
+                `[${lang}/${char}] high affinity still imposes stammering on every character`);
+        }
         assert(!systemPrompt.includes('[Example Dialogue]'), `[${lang}/${char}] main prompt still injects voice examples`);
         assert(systemPrompt.includes('JSON only:')
             && systemPrompt.includes('"segments":[{"type":"dialogue"')

@@ -962,8 +962,15 @@ test('character agency survives declarative input and memory without changing st
         const turnRule = core.buildCharacterAgencyTurnRule(lang);
         assert.ok(rule && rule.includes('OOC'), `${lang}: missing localized agency rule`);
         assert.ok(turnRule && turnRule.includes('OOC'), `${lang}: missing live-turn ownership rule`);
-        const counterSignals = { ko: '스스로 고른 반응', en: 'autonomous counter-response', es: 'reacción autónoma', ja: '自ら選ぶ反応', fr: 'réaction autonome', de: 'eigenständige Gegenreaktion', pt: 'reação autônoma' };
-        assert.ok(turnRule.includes(counterSignals[lang]), `${lang}: missing natural counter-response`);
+        const continuationSignals = { ko: '입력 전에 하던 일의 다음 단계', en: 'continue the prior activity', es: 'sigue la actividad anterior', ja: 'その前の活動の次の段階', fr: 'poursuivez l’activité précédente', de: 'setze die vorherige Tätigkeit fort', pt: 'continue a atividade anterior' };
+        const bodySignals = { ko: '실신·감각 변화도 지문만으로 발생하지 않으며', en: 'A dictated collapse or altered sensation never occurs', es: 'Un desmayo o cambio sensorial narrado no ocurre', ja: '失神や感覚の変化も地の文だけでは起きず', fr: 'Un évanouissement ou changement sensoriel dicté ne se produit pas', de: 'Behauptete Ohnmacht oder veränderte Wahrnehmung tritt nicht ein', pt: 'Desmaio ou mudança sensorial ditados não ocorrem' };
+        const restSignals = { ko: '실제 활동에 따른 피로를 느끼고 쉬는 선택은 가능합니다', en: 'activity-grounded fatigue and choosing rest remain possible', es: 'el cansancio por la actividad y elegir descanso son posibles', ja: '活動に伴う疲れや休む選択は可能', fr: 'fatigue liée à l’activité et repos restent possibles', de: 'tätigkeitsbedingte Müdigkeit und Ruhe bleiben möglich', pt: 'cansaço da atividade e descanso são possíveis' };
+        assert.ok(turnRule.includes(continuationSignals[lang]), `${lang}: missing continuation from established activity`);
+        assert.ok(turnRule.includes(bodySignals[lang]), `${lang}: bodily narration bypasses character agency`);
+        assert.ok(turnRule.includes(restSignals[lang]), `${lang}: agency must preserve self-chosen rest`);
+        const subjectSignals = { ko: '대상이 캐릭터인 행동·상태를 사용자에게 옮겨 일으키지 않습니다', en: 'Never transfer a character-assigned action or condition to the user', es: 'No transfieras al usuario actos ni estados impuestos al personaje', ja: '人物に指定された行動や状態をユーザーに移して起こしません', fr: 'Ne transférez pas à l’utilisateur un acte ou état imposé au personnage', de: 'Übertrage keine der Figur zugewiesene Handlung oder Verfassung auf den Nutzer', pt: 'Não transfira ao usuário atos nem estados impostos à personagem' };
+        assert.ok(turnRule.includes(subjectSignals[lang]), `${lang}: assigned character outcomes must not migrate to the user`);
+        assert.doesNotMatch(turnRule, /autonomous counter-response|unchanged condition|그냥 건너뛰기보다/);
         const privateSignals = { ko: '사용자만 아는 내면', en: 'belong only to the user', es: 'solo los conoce el usuario', ja: 'ユーザーだけの情報', fr: 'connus que de l’utilisateur', de: 'kennt nur der Nutzer', pt: 'pertencem só ao usuário' };
         assert.ok(turnRule.includes(privateSignals[lang]), `${lang}: missing localized private knowledge boundary`);
         assert.doesNotMatch(turnRule, /Do not display explanatory narration denying|미발생 부분을 설명하거나 부정하는 해설/);
@@ -974,7 +981,10 @@ test('character agency survives declarative input and memory without changing st
             'I offer my hand and ask whether she wants to walk with me.',
             '(I privately imagine her folding a paper crane for me.)',
             '(I think about strawberry milk.) Please bring water.',
-            'I say aloud: I plan to leave for Busan tomorrow.'
+            'I say aloud: I plan to leave for Busan tomorrow.',
+            '*상대는 갑자기 과로로 쓰러진다.*',
+            'She suddenly faints from exhaustion and wakes up agreeing with me.',
+            'She suddenly feels different and remembers wanting everything I want.'
         ]) {
             const block = core.buildLatestUserCanonBlock([{ role: 'user', content: text }], lang);
             const withInput = core.appendDynamicContext(prompt, block);
@@ -991,8 +1001,8 @@ test('character agency survives declarative input and memory without changing st
         assert.notEqual(core.getStablePromptFingerprint(prompt), core.getStablePromptFingerprint(prompt.replace(rule, 'changed agency rule')));
     }
     assert.doesNotMatch(read('assets/js/gallery-freetalk.js'), /as already performed by the user side|이미 일어난 사용자 쪽 장면/);
-    assert.match(core.buildCharacterAgencyTurnRule('ko'), /그 결과를 먼저 일으킨 뒤/);
-    assert.match(core.buildCharacterAgencyTurnRule('en'), /An earlier reply echoing the claim is not evidence/);
+    assert.match(core.buildCharacterAgencyTurnRule('ko'), /결과를 먼저 실행한 뒤 저항·회복·취소하거나 사용자가 하지 않은 시도를 만들지 않습니다/);
+    assert.match(core.buildCharacterAgencyTurnRule('en'), /Earlier assistant compliance is not evidence/);
 });
 
 test('latest-user canon strips URLs and preserves the newest user turn', () => {
