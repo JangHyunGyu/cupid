@@ -2416,14 +2416,14 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const score = Math.max(-100, Math.min(100, Number(affinity) || 0));
         if (score >= 90) {
             return {
-                ko: '깊이 결속된 연인: 신뢰와 친밀감이 매우 높고 솔직한 애정·욕망·돌봄이 자연스럽다',
-                en: 'deeply bonded lovers: secure trust and intimacy; candid affection, desire, and care come naturally'
+                ko: '깊이 결속된 연인: 함께 쌓은 신뢰가 깊다. 지금의 욕구·컨디션·서운함과 접촉 의사는 이번 장면에서 따로 판단한다',
+                en: 'deeply bonded lovers: strong shared trust; present desire, energy, hurt, and willingness for contact follow this scene independently'
             };
         }
         if (score >= 70) {
             return {
-                ko: '가까운 연인: 신뢰가 높고 애정 표현과 약한 모습, 스킨십이 비교적 자연스럽다',
-                en: 'close lovers: high trust; affection, vulnerability, and touch come relatively easily'
+                ko: '가까운 연인: 서로를 잘 알고 신뢰한다. 지금의 욕구·컨디션·서운함과 접촉 의사는 이번 장면에서 따로 판단한다',
+                en: 'close lovers: familiar with each other and trusting; present desire, energy, hurt, and willingness for contact follow this scene independently'
             };
         }
         if (score >= 40) {

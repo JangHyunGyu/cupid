@@ -268,6 +268,18 @@ function verifyMainAndGalleryPrompts(context) {
         isFreeTalkUnlocked: () => false
     };
     const gallery = new context.window.GalleryFreeTalk('ko', progress);
+    for (const character of CHARACTERS) {
+        let stableAtHighAffinity = '';
+        for (const score of [70, 90, 100]) {
+            const probe = new context.window.GalleryFreeTalk('ko', { ...progress, getCurrentAffinity: () => score });
+            const parts = splitCacheBoundary(probe._buildSystemPrompt(character.key), `gallery/${character.key}/${score}`);
+            assert(parts.dynamic.includes('지금의 욕구·컨디션·서운함과 접촉 의사는 이번 장면에서 따로 판단한다'),
+                `gallery/${character.key}/${score} treats relationship trust as current desire`);
+            if (stableAtHighAffinity) assert(parts.stable === stableAtHighAffinity,
+                `gallery/${character.key} affinity changes must not change the stable cache prefix`);
+            stableAtHighAffinity = parts.stable;
+        }
+    }
     const mainPrompts = {};
     const galleryPrompts = {};
 

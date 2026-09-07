@@ -607,6 +607,18 @@ for (const lang of languages) {
         `[${lang}] main remote prompt still forces terse dialogue and narration`);
 
     const gallery = new context.window.GalleryFreeTalk(lang, progress);
+    for (const id of Object.values(galleryIds)) {
+        let stableAtHighAffinity = '';
+        for (const score of [70, 90, 100]) {
+            const probe = new context.window.GalleryFreeTalk(lang, { ...progress, getCurrentAffinity: () => score });
+            const parts = splitCacheBoundary(probe._buildSystemPrompt(id), `${lang}/${id}/${score}`);
+            assert(parts.dynamic.includes('present desire, energy, hurt, and willingness for contact follow this scene independently'),
+                `[${lang}/${id}/${score}] high affinity overwrites present willingness`);
+            if (stableAtHighAffinity) assert(parts.stable === stableAtHighAffinity,
+                `[${lang}/${id}] affinity changes must not change the stable cache prefix`);
+            stableAtHighAffinity = parts.stable;
+        }
+    }
     let galleryCacheBaseline = '';
     for (const char of characters) {
         const id = galleryIds[char];
