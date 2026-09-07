@@ -4,10 +4,10 @@ const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..');
 const CHARACTERS = [
-    { key: 'Seoyeon', mainName: '서연', sharedName: '서연', galleryId: 'seyoun', cardSignal: '학생회장', relationshipSignal: '작은 다육이', voiceSignal: '시간·순서·약속', intimateSignal: '참다 새는 하·윽', intimateGallerySignal: '먼저 흐트러지는 손끝이 완벽함의 균열' },
-    { key: 'Yuna', mainName: '유나', sharedName: '유나', galleryId: 'yuna', cardSignal: '영구 문신', relationshipSignal: '이어폰 한쪽', voiceSignal: '사라진 시간을 정확히 되묻고', intimateSignal: '더·여기·놓지 마', intimateGallerySignal: '침묵도 멈춤이 아니라 다음 선택을 붙드는 시간' },
-    { key: 'Dain', mainName: '다인', sharedName: '다인', galleryId: 'dain', cardSignal: '배구부 선수', relationshipSignal: '리듬게임', voiceSignal: '결론과 동사가 앞서고', intimateSignal: '야·같이·좋아', intimateGallerySignal: '통증은 자세와 경계를 바꾸는 신호' },
-    { key: 'Teacher', mainName: '담임', sharedName: '담임선생님', galleryId: 'teacher', cardSignal: '담임 교사', relationshipSignal: '미완성 원고', voiceSignal: '엉성한 전제', intimateSignal: '지금 이 학생의 담임', intimateGallerySignal: '논리적인 문장이 먼저 끊기고' },
+    { key: 'Seoyeon', mainName: '서연', sharedName: '서연', galleryId: 'seyoun', cardSignal: '학생회장', relationshipSignal: '작은 다육이', voiceSignal: '시간·순서·약속', intimateSignal: '약속과 사생활, 자기 결정권', intimateGallerySignal: '사람들 앞에서 사생활' },
+    { key: 'Yuna', mainName: '유나', sharedName: '유나', galleryId: 'yuna', cardSignal: '영구 문신', relationshipSignal: '이어폰 한쪽', voiceSignal: '사라진 시간을 정확히 되묻고', intimateSignal: '구경거리로 만들지 않는 태도', intimateGallerySignal: '버려질 두려움이나 침묵' },
+    { key: 'Dain', mainName: '다인', sharedName: '다인', galleryId: 'dain', cardSignal: '배구부 선수', relationshipSignal: '리듬게임', voiceSignal: '결론과 동사가 앞서고', intimateSignal: '무릎 상태와 자기 속도', intimateGallerySignal: '통증·불편함은 실제 경계' },
+    { key: 'Teacher', mainName: '담임', sharedName: '담임선생님', galleryId: 'teacher', cardSignal: '담임 교사', relationshipSignal: '미완성 원고', voiceSignal: '엉성한 전제', intimateSignal: '지금 이 학생의 담임', intimateGallerySignal: '직함으로 의무를 강요' },
     { key: 'Nurse', mainName: '보건', sharedName: '보건선생님', galleryId: 'nurse', cardSignal: '보건 교사', relationshipSignal: '로즈마리 향', voiceSignal: '표정·호흡·몸 상태', intimateSignal: '지금 이 학교의 보건교사', intimateGallerySignal: '상대를 진찰하듯 다루지 않습니다' }
 ];
 const REQUIRED_BLOCKS = [
@@ -347,18 +347,18 @@ function verifyMainAndGalleryPrompts(context) {
         assert(!mainPrompt.includes('이름만 바꿔도 같다면'),
             `[main/${character.key}] post-graduation adult contrast leaked into the school route`);
         if (character.key === 'Teacher' || character.key === 'Nurse') {
-            assert(galleryPrompt.includes('죄책감') && galleryPrompt.includes('흥분'),
-                `[gallery/${character.key}] adult sex no longer mixes leftover teacher-student guilt with arousal`);
+            assert(galleryPrompt.includes('과거 호칭이나 친밀함이 현재 감정을 정하지 않습니다'),
+                `[gallery/${character.key}] past roles must not prescribe present feelings`);
             assert(!galleryPrompt.includes('금단이나 죄책감을 되풀이하지 않습니다'),
                 `[gallery/${character.key}] still forbids leftover taboo during established adult sex`);
             assert(!galleryPrompt.includes('졸업한 연인이 아닙니다'),
                 `[gallery/${character.key}] still treats post-graduation sex as a current school affair`);
-            assert(mainPrompt.includes('졸업한 연인이 아닙니다'),
+            assert(mainPrompt.includes('재학 중의 직업적 경계') || mainPrompt.includes('돌봄의 경계'),
                 `[main/${character.key}] school-era sex can still collapse into a graduated-lover frame`);
             assert(!mainPrompt.includes('이미 성인 연인'),
                 `[main/${character.key}] school-era sex still assumes a post-graduation relationship`);
         }
-        assert(mainPrompt.includes('보지·자지·삽입·애액·정액·절정'),
+        assert(mainPrompt.includes('성인 소설의 본장면') && mainPrompt.includes('묘사 강도와 반응은 이 인물'),
             `[main/${character.key}] can still hide established adult sex behind indirect wording`);
         assert(mainPrompt.includes(character.intimateSignal),
             `[main/${character.key}] is missing its character-owned adult intimacy cadence`);
@@ -560,12 +560,12 @@ function verifyMemories(context) {
     const nurseDating = one('isDating_Nurse', '보건선생님')?.ko || '';
     assert(teacherDating.includes('4년') && teacherDating.includes('독립한 성인') && teacherDating.includes('교사와 학생 관계는 끝났습니다'),
         'teacher dating memory does not enforce the adult reunion canon');
-    assert(teacherDating.includes('성행위가 시작되면') && teacherDating.includes('죄책감이 흥분을 밀어 올리되'),
-        'teacher dating memory no longer lets leftover taboo sharpen adult sex');
+    assert(teacherDating.includes('과거 호칭이나 친밀함이 현재 감정을 정하지 않습니다'),
+        'teacher dating memory must not prescribe feelings or acceptance');
     assert(nurseDating.includes('5년') && nurseDating.includes('독립한 성인') && nurseDating.includes('비밀 연애가 아닙니다'),
         'nurse dating memory does not enforce the adult reunion canon');
-    assert(nurseDating.includes('옛 보건교사와 학생이었다는 금기') && nurseDating.includes('죄책감과 흥분'),
-        'nurse dating memory no longer lets leftover taboo sharpen adult sex');
+    assert(nurseDating.includes('과거 호칭이나 친밀함이 현재 감정을 정하지 않습니다'),
+        'nurse dating memory must not prescribe feelings or acceptance');
 
     assert(one('homeroom_day4')?.ko.includes('공개 합평'), 'teacher day 4 lost its public critique boundary');
     assert(one('homeroom_day5')?.ko.includes('문예부와 국어과 교사'), 'teacher day 5 lost its public review context');
@@ -643,16 +643,22 @@ function verifyLatestUserCanon(context) {
     assert(trustingAffinity.includes('손잡기, 포옹, 키스')
         && trustingAffinity.includes('지금 서로 원하는 흐름이 분명할 때만 시작'),
         '40-59 affinity no longer separates kissing from sexual escalation');
-    assert(closeAffinity.includes('키스와 성적인 스킨십')
-        && closeAffinity.includes('서로 원하는 흐름이 확인된 뒤에만'),
+    assert(closeAffinity.includes('원치 않는 방식·시점')
+        && closeAffinity.includes('지금 원하는 접근은 반기거나 먼저'),
         '60-79 affinity no longer requires mutual desire before sex');
-    assert(highAffinity.includes('적극적으로 시작하거나 이어 갈 수 있습니다')
-        && highAffinity.includes('자동으로 받아들이지는 않습니다'),
+    assert(highAffinity.includes('원하면 먼저 다가갈 수 있고')
+        && highAffinity.includes('높은 호감이 현재 욕망이나 모든 행위의 선호를 뜻하지 않습니다'),
         '80-100 affinity no longer permits initiative while preserving choice');
     assert(lowAffinity.includes('완료형으로 써도')
         && lowAffinity.includes('시도로만 처리합니다')
         && lowAffinity.includes('이미 진행 중이라면 호감도만 보고 장면을 되감지 않습니다'),
         'affinity guidance lost attempt handling or underway-scene continuity');
+    for (const score of [0, 25, 50, 70, 90, 100]) {
+        const rule = affinityGuidance(score);
+        for (const signal of ['종류·강도·공개성·주도권·위험', '부끄러움·신체 반응·애정은 동의와 별개', '한 행동의 수용은 다음 행동의 승낙이 아니며', '반응을 무작위로 바꾸거나']) {
+            assert(rule.includes(signal), `affinity ${score} lost contextual choice: ${signal}`);
+        }
+    }
     const nonRomanceAffinity = vm.runInContext(
         `buildCupidAffinityIntimacyGuidance('ko', 100, { characterName: '하은', nonRomance: true })`,
         context

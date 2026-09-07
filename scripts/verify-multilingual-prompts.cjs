@@ -74,17 +74,17 @@ const galleryIds = {
     Nurse: 'nurse'
 };
 const mainAdultIntimacySignals = {
-    Seoyeon: 'moans are bitten-off, never a cute stammer',
-    Yuna: 'speech is more/here/don’t let go',
-    Dain: 'moans openly, and talks honestly',
+    Seoyeon: 'values promises, privacy, and choosing for herself',
+    Yuna: 'trusts shared silence',
+    Dain: 'her knee and her own pace',
     Teacher: 'homeroom teacher now, not a graduated lover',
     Nurse: 'school nurse now, not a graduated lover'
 };
 const galleryAdultIntimacySignals = {
-    Seoyeon: 'first imprecision in her hands crack her perfection',
-    Yuna: 'silence holds her next choice rather than stopping the scene',
-    Dain: 'pain is a real signal that changes position or boundary',
-    Teacher: 'first thing to fail is her complete logical sentence',
+    Seoyeon: 'exposing private matters in public',
+    Yuna: 'Fear of abandonment and silence',
+    Dain: 'pain or discomfort changes what she wants',
+    Teacher: 'using a title to demand obligation',
     Nurse: 'without treating her partner like a patient'
 };
 const languageSignals = {
@@ -428,7 +428,7 @@ for (const lang of languages) {
         assert(systemPrompt.includes(detailedAdultNarrationSignals[lang]),
             `[${lang}/${char}] detailed adult narration is not scoped to an underway adult sex act`);
         if (lang === 'en') {
-            assert(systemPrompt.includes('Adult sex stays')
+            assert(systemPrompt.includes('current consent, and boundaries')
                 && systemPrompt.includes(mainAdultIntimacySignals[char]),
                 `[${lang}/${char}] main prompt is missing direct, character-owned adult intimacy guidance`);
         }
@@ -619,7 +619,7 @@ for (const lang of languages) {
             `[${lang}/${char}] gallery prompt is missing the conditional adult vocalization rule`);
         assert(systemPrompt.includes(detailedAdultNarrationSignals[lang]),
             `[${lang}/${char}] gallery detailed adult narration is not scoped to an underway adult sex act`);
-        assert(systemPrompt.includes('Adult sex stays')
+        assert(systemPrompt.includes('kind, intensity, privacy, control, or risk')
             && systemPrompt.includes(galleryAdultIntimacySignals[char]),
             `[${lang}/${char}] gallery prompt is missing direct, character-owned adult intimacy guidance`);
         assert(systemPrompt.includes('If only the name changes'),
