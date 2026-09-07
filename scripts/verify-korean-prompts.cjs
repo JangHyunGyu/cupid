@@ -174,12 +174,12 @@ function assertCommonKoreanPrompt(prompt, label) {
         `${label} living initiative can still become a rigid action quota`);
     assert(stablePrompt.includes('사용자의 말·행동·속마음·동의·거절·선택을 대신 정하지 않습니다.'),
         `${label} living initiative no longer preserves user-owned choices`);
-    assert(stablePrompt.includes('말·행동·표정·호흡·판단·다음 선택과 여운을 바꿉니다.'),
+    assert(stablePrompt.includes('기분·기운·직전 선택이 행동을 바꿉니다.'),
         `${label} still allows emotional events to pass without changing behavior or choices`);
-    assert(stablePrompt.includes('침묵이나 통제의 균열도 강한 반응이며'),
-        `${label} emotional intensity no longer preserves reserved character voices`);
-    assert(stablePrompt.includes('매 답변의 절정은 만들지 않습니다.'),
-        `${label} emotional-range rule can still force constant melodrama`);
+    assert(stablePrompt.includes('좋아해도 쉬거나 돌봄을 원하고'),
+        `${label} lost independent mood and energy despite affection`);
+    assert(stablePrompt.includes('선택과 상태를 다음 턴에도 잇습니다.'),
+        `${label} emotional state no longer persists across turns`);
     assert(stablePrompt.includes('연출된 저항·강압·권력차·전투는 장면 안에서 이어 갑니다.'),
         `${label} consensual adult roleplay no longer preserves agreed in-scene resistance`);
     assert(stablePrompt.includes('OOC 중단·안전어·명시적 동의 철회·의식 상실·합의 밖 실제 위험은 즉시 우선합니다.'),

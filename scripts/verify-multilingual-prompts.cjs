@@ -75,17 +75,17 @@ const galleryIds = {
 };
 const mainAdultIntimacySignals = {
     Seoyeon: 'values promises, privacy, and choosing for herself',
-    Yuna: 'trusts shared silence',
+    Yuna: 'trusts shared quiet',
     Dain: 'her knee and her own pace',
-    Teacher: 'homeroom teacher now, not a graduated lover',
-    Nurse: 'school nurse now, not a graduated lover'
+    Teacher: 'homeroom teacher now; keep professional boundaries',
+    Nurse: 'school nurse now; keep care boundaries'
 };
 const galleryAdultIntimacySignals = {
-    Seoyeon: 'exposing private matters in public',
+    Seoyeon: 'public exposure of private matters is unwelcome',
     Yuna: 'Fear of abandonment and silence',
-    Dain: 'pain or discomfort changes what she wants',
-    Teacher: 'using a title to demand obligation',
-    Nurse: 'without treating her partner like a patient'
+    Dain: 'Pain or discomfort changes her boundary',
+    Teacher: 'A title used to demand obligation meets firmness',
+    Nurse: 'her partner is not a patient'
 };
 const languageSignals = {
     en: /\b(?:you|your|the|today)\b/i,
@@ -118,6 +118,14 @@ const emotionalRangeSignals = {
     fr: '[Amplitude et retombée émotionnelles]',
     de: '[Emotionale Spannweite und Nachwirkung]',
     pt: '[Amplitude e consequência emocional]'
+};
+const emotionalContinuitySignals = {
+    en: 'Carry the state into the next turn.',
+    es: 'Conserva el estado en el turno siguiente.',
+    ja: '次のターンにも状態を引き継ぎます。',
+    fr: 'Gardez cet état au tour suivant.',
+    de: 'Der Zustand gilt im nächsten Zug weiter.',
+    pt: 'Mantenha esse estado no turno seguinte.'
 };
 const livingInitiativeSignals = {
     en: '[Living Initiative]',
@@ -445,6 +453,8 @@ for (const lang of languages) {
             `[${lang}/${char}] main adult camera can still fade established sex into metaphor`);
         assert(systemPrompt.includes(emotionalRangeSignals[lang]),
             `[${lang}/${char}] main prompt is missing the emotional-range rule`);
+        assert(splitCacheBoundary(systemPrompt, `${lang}/${char}`).stable.includes(emotionalContinuitySignals[lang]),
+            `[${lang}/${char}] main stable prompt lost persistence of the character's chosen state`);
         assert(systemPrompt.includes(livingInitiativeSignals[lang]),
             `[${lang}/${char}] main prompt is missing living initiative`);
         assert((systemPrompt.match(/\[Living Initiative\]|\[Iniciativa de una persona viva\]|\[生きた人物としての主体性\]|\[Initiative d’un personnage vivant\]|\[Eigeninitiative einer lebendigen Figur\]|\[Iniciativa de uma pessoa viva\]/g) || []).length === 1,
@@ -637,6 +647,8 @@ for (const lang of languages) {
             `[${lang}/${char}] gallery adult camera can still fade established sex into metaphor`);
         assert(systemPrompt.includes(emotionalRangeSignals[lang]),
             `[${lang}/${char}] gallery prompt is missing the emotional-range rule`);
+        assert(splitCacheBoundary(systemPrompt, `${lang}/${char}`).stable.includes(emotionalContinuitySignals[lang]),
+            `[${lang}/${char}] gallery stable prompt lost persistence of the character's chosen state`);
         assert(systemPrompt.includes(livingInitiativeSignals[lang]),
             `[${lang}/${char}] gallery prompt is missing living initiative`);
         assert(systemPrompt.includes(consensualAdultRoleplaySignals[lang])
