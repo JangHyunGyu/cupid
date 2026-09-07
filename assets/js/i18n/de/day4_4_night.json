@@ -71,15 +71,15 @@
     },
     "day4_adult_counteroffer_accept_seoyeon": {
         "name": "{name}",
-        "text": "*Als die Dachtür zufällt, greift Seoyeon nach dem Handgelenk von {name} und legt meine Hand auf ihre Brust. Unter der gelockerten Schleife steht der Hemdkragen offen, und ihr zitternder Atem streift meinen Handrücken. Das Handy in der Tasche vibriert immer wieder, doch Seoyeon lässt nicht los. Viel später verlassen wir die Schule und kehren nach Hause zurück.*"
+        "text": "*Als die Dachtür zufällt, greift Seoyeon nach dem Handgelenk von {name} und legt meine Hand auf ihre Brust. Unter der gelockerten Schleife steht der Hemdkragen offen, und ihr zitternder Atem streift meinen Handrücken. Das Handy in der Tasche vibriert immer wieder, doch Seoyeon lässt nicht los.*"
     },
     "day4_adult_counteroffer_accept_dain": {
         "name": "{name}",
-        "text": "*Der letzte Ball rollt über den Boden. Dain ringt nach Luft, packt die Vorderseite ihrer Uniform und zieht sie nach unten. Sie beugt sich bis direkt vor {name}, sodass ihr warmer, schweißfeuchter Atem das Gesicht erreicht. Das Handy in der Tasche vibriert weiter. Viel später verlassen sie die Schule und kehren nach Hause zurück.*"
+        "text": "*Der letzte Ball rollt über den Boden. Dain ringt nach Luft, packt die Vorderseite ihrer Uniform und zieht sie nach unten. Sie beugt sich bis direkt vor {name}, sodass ihr warmer, schweißfeuchter Atem das Gesicht erreicht. Das Handy in der Tasche vibriert weiter.*"
     },
     "day4_adult_counteroffer_accept_yuna": {
         "name": "{name}",
-        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand am Bücherregal ab. Sie lässt die Jacke unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres Oberteils hinunter. Über ihre nackte Schulter und das Tattoo hinweg hält sie mit ihren roten Augen den Blick von {name} fest. Das Handy auf dem Tisch vibriert erneut. Viel später verlassen wir das Nebengebäude und kehren nach Hause zurück.*"
+        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand am Bücherregal ab. Sie lässt die Jacke unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres Oberteils hinunter. Über ihre nackte Schulter und das Tattoo hinweg hält sie mit ihren roten Augen den Blick von {name} fest. Das Handy auf dem Tisch vibriert erneut.*"
     },
     "day4_adult_night_regret_target_branch": {},
     "day4_adult_night_regret_teacher": {
@@ -1145,5 +1145,27 @@
     "day4_adult_return_home": {
         "name": "{name}",
         "text": "*Zu Hause bestätige ich meine Ankunft in der Schul-App, schließe die Tür und ziehe die Schuhe aus.*"
+    },
+    "day4_temptation_seoyeon_freetalk": {
+        "name": "Seoyeon",
+        "text": "Ich freue mich, dass du gekommen bist. Heute Abend möchte ich mehr von dir hören. Setzt du dich neben mich?",
+        "context": "Am vierten Abend hat der Protagonist Seoyeons Einladung angenommen. Die beiden sind allein auf dem Dach.",
+        "personality": "Bewahre ihre ruhige Stimme, zeige Zuneigung offen und frage direkt nach dem, was sie am Protagonisten interessiert."
+    },
+    "day4_temptation_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "Setz dich hierher. Ich bin… froh, dass du da bist. Bleib noch etwas bei mir.",
+        "context": "Am vierten Abend hat der Protagonist Yunas Einladung angenommen. Die beiden sind allein im Leseraum des Nebengebäudes.",
+        "personality": "Vermittle Zuneigung mit kurzen Sätzen und natürlichen Pausen und zeige Interesse an der Person neben ihr."
+    },
+    "day4_temptation_dain_freetalk": {
+        "name": "Dain",
+        "text": "Man merkt mir an, wie sehr ich mich freue, oder? Ich will es auch gar nicht verstecken. Komm, setz dich zu mir.",
+        "context": "Am vierten Abend hat der Protagonist Dains Einladung angenommen. Die beiden sind allein in der Turnhalle.",
+        "personality": "Beginne das Gespräch mit Dains spielerischer Ehrlichkeit und lass ihre Freude natürlich sichtbar werden."
+    },
+    "day4_temptation_return_home": {
+        "name": "{name}",
+        "text": "*Nach dem Gespräch zu zweit kehrt der Protagonist nach Hause zurück.*"
     }
 }

@@ -489,17 +489,17 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "day4_adult_counteroffer_accept_seoyeon": {
         "background": "assets/images/background/event_temptation_seoyeon.png",
         "character": null,
-        "next": "day4_adult_night_regret_target_branch"
+        "next": "day4_temptation_seoyeon_freetalk"
     },
     "day4_adult_counteroffer_accept_dain": {
         "background": "assets/images/background/event_temptation_dain.png",
         "character": null,
-        "next": "day4_adult_night_regret_target_branch"
+        "next": "day4_temptation_dain_freetalk"
     },
     "day4_adult_counteroffer_accept_yuna": {
         "background": "assets/images/background/event_temptation_yuna.png",
         "character": null,
-        "next": "day4_adult_night_regret_target_branch"
+        "next": "day4_temptation_yuna_freetalk"
     },
     "day4_adult_counteroffer_soft_seoyeon": {
         "background": "assets/images/background/top_school.png",
@@ -1039,7 +1039,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "wall_seo_glimpse_4": {
         "background": "assets/images/background/event_temptation_dain.png",
         "character": null,
-        "next": "day4_night_regret"
+        "next": "day4_temptation_dain_freetalk"
     },
     "wall_seo_yuna_tempt_1": {
         "background": "assets/images/background/yuna_hideout.png",
@@ -1113,7 +1113,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "wall_seo_yuna_tempt_accept": {
         "background": "assets/images/background/event_temptation_yuna.png",
         "character": null,
-        "next": "day4_night_regret"
+        "next": "day4_temptation_yuna_freetalk"
     },
     "wall_dain_1": {
         "background": "assets/images/background/room_my.png",
@@ -1590,7 +1590,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "wall_dain_glimpse_4": {
         "background": "assets/images/background/event_temptation_yuna.png",
         "character": null,
-        "next": "day4_night_regret"
+        "next": "day4_temptation_yuna_freetalk"
     },
     "wall_dain_glimpse_4_b": {
         "background": "assets/images/background/school_back.png",
@@ -1738,7 +1738,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "wall_dain_seo_tempt_accept": {
         "background": "assets/images/background/event_temptation_seoyeon.png",
         "character": null,
-        "next": "day4_night_regret"
+        "next": "day4_temptation_seoyeon_freetalk"
     },
     "wall_yuna_1": {
         "background": "assets/images/background/room_my.png",
@@ -2133,7 +2133,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "wall_yuna_glimpse_4": {
         "background": "assets/images/background/event_temptation_seoyeon.png",
         "character": null,
-        "next": "day4_night_regret"
+        "next": "day4_temptation_seoyeon_freetalk"
     },
     "wall_yuna_dain_tempt_1": {
         "background": "assets/images/background/gym.png",
@@ -2209,7 +2209,48 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "wall_yuna_dain_tempt_accept": {
         "background": "assets/images/background/event_temptation_dain.png",
         "character": null,
-        "next": "day4_night_regret"
+        "next": "day4_temptation_dain_freetalk"
+    },
+    "day4_temptation_seoyeon_freetalk": {
+        "background": "assets/images/background/event_temptation_seoyeon.png",
+        "name": "Seoyeon",
+        "character": null,
+        "type": "free_talk",
+        "maxTurns": 5,
+        "isRemote": false,
+        "romanticInterlude": true,
+        "affinityLocked": true,
+        "locationKey": "top_school",
+        "next": "day4_temptation_return_home"
+    },
+    "day4_temptation_yuna_freetalk": {
+        "background": "assets/images/background/event_temptation_yuna.png",
+        "name": "Yuna",
+        "character": null,
+        "type": "free_talk",
+        "maxTurns": 5,
+        "isRemote": false,
+        "romanticInterlude": true,
+        "affinityLocked": true,
+        "locationKey": "yuna_hideout",
+        "next": "day4_temptation_return_home"
+    },
+    "day4_temptation_dain_freetalk": {
+        "background": "assets/images/background/event_temptation_dain.png",
+        "name": "Dain",
+        "character": null,
+        "type": "free_talk",
+        "maxTurns": 5,
+        "isRemote": false,
+        "romanticInterlude": true,
+        "affinityLocked": true,
+        "locationKey": "gym",
+        "next": "day4_temptation_return_home"
+    },
+    "day4_temptation_return_home": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "next": "day4_adult_night_regret_target_branch"
     },
     "day4_student_counteroffer_soft_seoyeon": {
         "background": "assets/images/background/school_back.png",

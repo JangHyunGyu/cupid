@@ -736,7 +736,7 @@ function verifyWiringAndScenePrompts() {
         Object.values(value).forEach(collect);
     }
     sceneFiles.forEach(file => collect(JSON.parse(read(file))));
-    assert(scenePrompts.length === 49, `expected 49 active Korean scene prompts, found ${scenePrompts.length}`);
+    assert(scenePrompts.length === 52, `expected 52 active Korean scene prompts, found ${scenePrompts.length}`);
     const joined = scenePrompts.join('\n');
     for (const stalePhrase of ['Day 1', 'Day 3', '톤:', '티키타카', '쿨뷰티', '신비주의 문학소녀', '체육계']) {
         assert(!joined.includes(stalePhrase), `active Korean scene prompt still contains: ${stalePhrase}`);
@@ -753,11 +753,11 @@ function verifyWiringAndScenePrompts() {
     for (let day = 1; day <= 5; day += 1) {
         const freeTalks = Object.entries(scenarioContext.SCENARIO[day] || {})
             .filter(([, scene]) => scene?.type === 'free_talk');
-        const expectedCount = day === 5 ? 23 : (day === 3 ? 6 : 5);
+        const expectedCount = day === 5 ? 23 : (day === 4 ? 8 : (day === 3 ? 6 : 5));
         assert(freeTalks.length === expectedCount,
             `day ${day} must contain exactly ${expectedCount} free-talk scenes, found ${freeTalks.length}`);
         for (const [id, scene] of freeTalks) {
-            const expectedTurns = id === 'haeun_freetalk' || day === 5 ? 5 : 3;
+            const expectedTurns = id === 'haeun_freetalk' || day === 5 || scene.romanticInterlude === true ? 5 : 3;
             assert(scene.maxTurns === expectedTurns,
                 `${id} must use maxTurns ${expectedTurns}, found ${scene.maxTurns}`);
         }
@@ -1215,4 +1215,4 @@ verifyCacheKeyWiring();
 verifyGroupPromptCacheContract(context);
 verifyTypingOwnerIsolation(context);
 
-console.log(`Verified Korean runtime prompts for ${CHARACTERS.length} romance characters plus Haeun, 49 scene prompts, daily turn limits, loader order, memories, user agency, and stale-turn ownership.`);
+console.log(`Verified Korean runtime prompts for ${CHARACTERS.length} romance characters plus Haeun, 52 scene prompts, daily turn limits, loader order, memories, user agency, and stale-turn ownership.`);

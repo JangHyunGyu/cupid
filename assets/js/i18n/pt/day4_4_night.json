@@ -71,15 +71,15 @@
     },
     "day4_adult_counteroffer_accept_seoyeon": {
         "name": "{name}",
-        "text": "*Quando a porta do terraço se fecha, Seoyeon segura o pulso de {name} e coloca aquela mão sobre o próprio peito. O laço frouxo deixa o colarinho da camisa aberto, e sua respiração trêmula toca o dorso da mão. O celular vibra sem parar no bolso, mas Seoyeon não solta. Muito tempo depois, eles saem da escola e voltam para casa.*"
+        "text": "*Quando a porta do terraço se fecha, Seoyeon segura o pulso de {name} e coloca aquela mão sobre o próprio peito. O laço frouxo deixa o colarinho da camisa aberto, e sua respiração trêmula toca o dorso da mão. O celular vibra sem parar no bolso, mas Seoyeon não solta.*"
     },
     "day4_adult_counteroffer_accept_dain": {
         "name": "{name}",
-        "text": "*A última bola rola pelo chão. Tentando recuperar o fôlego, Dain agarra a frente do uniforme e puxa para baixo. Ela se inclina até ficar diante de {name}, e sua respiração quente e úmida chega ao rosto. O celular continua vibrando no bolso. Muito tempo depois, eles saem da escola e voltam para casa.*"
+        "text": "*A última bola rola pelo chão. Tentando recuperar o fôlego, Dain agarra a frente do uniforme e puxa para baixo. Ela se inclina até ficar diante de {name}, e sua respiração quente e úmida chega ao rosto. O celular continua vibrando no bolso.*"
     },
     "day4_adult_counteroffer_accept_yuna": {
         "name": "{name}",
-        "text": "*Yuna se aproxima até ficar diante de {name} e apoia uma mão na estante. Deixa a jaqueta cair abaixo de um ombro e, com a outra mão, puxa o decote da blusa por baixo. Entre o ombro nu e a tatuagem, seus olhos vermelhos ficam na altura dos de {name}. O celular vibra de novo sobre a mesa. Muito tempo depois, eles saem do anexo e voltam para casa.*"
+        "text": "*Yuna se aproxima até ficar diante de {name} e apoia uma mão na estante. Deixa a jaqueta cair abaixo de um ombro e, com a outra mão, puxa o decote da blusa por baixo. Entre o ombro nu e a tatuagem, seus olhos vermelhos ficam na altura dos de {name}. O celular vibra de novo sobre a mesa.*"
     },
     "day4_adult_night_regret_target_branch": {},
     "day4_adult_night_regret_teacher": {
@@ -1145,5 +1145,27 @@
     "day4_adult_return_home": {
         "name": "{name}",
         "text": "*Em casa, confirmo a chegada no aplicativo da escola, fecho a porta e tiro os sapatos.*"
+    },
+    "day4_temptation_seoyeon_freetalk": {
+        "name": "Seoyeon",
+        "text": "Fico feliz que você veio. Hoje quero ouvir um pouco mais sobre você. Senta aqui do meu lado?",
+        "context": "Na quarta noite, o protagonista aceitou o convite de Seoyeon. Os dois estão a sós no terraço.",
+        "personality": "Mantenha a voz calma, demonstre carinho com sinceridade e pergunte diretamente o que desperta sua curiosidade sobre o protagonista."
+    },
+    "day4_temptation_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "Senta aqui. Eu… fico feliz que você veio. Fica comigo mais um pouco.",
+        "context": "Na quarta noite, o protagonista aceitou o convite de Yuna. Os dois estão a sós na sala de leitura do anexo.",
+        "personality": "Expresse carinho com frases curtas e pausas naturais, mostrando interesse pela pessoa ao seu lado."
+    },
+    "day4_temptation_dain_freetalk": {
+        "name": "Dain",
+        "text": "Dá para perceber como estou feliz, né? Nem quero esconder. Vem sentar comigo.",
+        "context": "Na quarta noite, o protagonista aceitou o convite de Dain. Os dois estão a sós no ginásio.",
+        "personality": "Puxe a conversa com as brincadeiras e a sinceridade próprias de Dain, deixando sua alegria aparecer naturalmente."
+    },
+    "day4_temptation_return_home": {
+        "name": "{name}",
+        "text": "*Depois da conversa a sós, o protagonista volta para casa.*"
     }
 }

@@ -1877,6 +1877,20 @@ window.buildCupidJsonOutputContract = buildCupidJsonOutputContract;
 /**
  * 시스템 프롬프트 생성 함수
  */
+function buildCupidTemptationRomanceGuidance(lang = 'ko') {
+    const rules = {
+        ko: '서로 곁에 남기로 선택한 짧은 로맨스 장면입니다. 가까운 사이의 편안함과 분명한 호감으로 먼저 말하거나 다가가되, 캐릭터 고유의 말투와 취향을 유지합니다. 대화와 애정 표현은 비노골적인 로맨스 안에서 이어갑니다. 지금의 끌림을 과거의 연애·용서·동의로 소급하지 않고, 상대의 선택과 거절을 존중합니다. 이 장면의 친밀한 분위기는 실제 관계 점수나 엔딩을 바꾸지 않습니다.',
+        en: 'This is a brief romantic interlude both chose to share. Initiate conversation or closeness with ease and clear affection while keeping this character’s own voice and preferences. Keep conversation and affection within non-graphic romance. Present attraction does not invent past dating, forgiveness, or consent; respect the other person’s choices and refusal. This moment’s closeness does not change the actual relationship score or ending.',
+        es: 'Es un breve momento romántico que ambos eligieron compartir. Toma la iniciativa con confianza y cariño claro, conservando la voz y los gustos del personaje. Mantén la conversación y el afecto en un romance sin detalles explícitos. La atracción actual no inventa un noviazgo previo, perdón ni consentimiento; respeta las decisiones y el rechazo de la otra persona. Esta cercanía no cambia la puntuación real de la relación ni el final.',
+        ja: '二人が自分の意思で一緒に残った、短い恋愛の場面です。親しい相手への気安さと好意を素直に見せ、自分から話しかけたり距離を縮めたりします。人物固有の口調と好みを保ち、露骨な描写を伴わない恋愛として続けます。今の好意から過去の交際、許し、同意を作らず、相手の選択や拒否を尊重します。この場の親密さは実際の関係値や結末を変えません。',
+        fr: 'C’est un bref moment romantique que les deux personnes ont choisi de partager. Prends l’initiative avec aisance et une affection claire, en gardant la voix et les goûts du personnage. Reste dans une romance sans descriptions explicites. L’attirance présente n’invente ni relation passée, ni pardon, ni consentement ; respecte les choix et les refus de l’autre. Cette proximité ne modifie ni le score réel de la relation ni la fin.',
+        de: 'Dies ist ein kurzer romantischer Moment, für den sich beide entschieden haben. Zeige vertraute Gelassenheit und deutliche Zuneigung, ergreife selbst die Initiative und bewahre Stimme und Vorlieben der Figur. Bleibe bei Romantik ohne explizite Beschreibungen. Die jetzige Anziehung erfindet weder eine frühere Beziehung noch Vergebung oder Zustimmung; respektiere Entscheidungen und Ablehnung. Diese Nähe verändert weder den tatsächlichen Beziehungswert noch das Ende.',
+        pt: 'Este é um breve momento romântico que os dois escolheram compartilhar. Tome a iniciativa com naturalidade e carinho claro, mantendo a voz e os gostos da personagem. Mantenha a conversa e o afeto em um romance sem descrições explícitas. A atração atual não inventa namoro anterior, perdão ou consentimento; respeite as escolhas e a recusa da outra pessoa. Essa proximidade não altera a pontuação real da relação nem o final.'
+    };
+    return rules[lang] || rules.en;
+}
+window.buildCupidTemptationRomanceGuidance = buildCupidTemptationRomanceGuidance;
+
 function buildSystemPrompt(params) {
     const {
         isEn,
@@ -1895,7 +1909,8 @@ function buildSystemPrompt(params) {
         playerName,
         knowsName,
         datingGuideline,
-        affinityLocked = false
+        affinityLocked = false,
+        romanticInterlude = false
     } = params;
 
     // Determine effective language: use lang if provided, fallback to isEn
@@ -1918,7 +1933,7 @@ function buildSystemPrompt(params) {
     const charInteractionGuideline = findPromptValue(data.interactionGuidelines, useEnTemplate ? "Maintain a natural distance based on the situation." : "상황에 맞는 자연스러운 거리감을 유지하세요.");
     const charSpecificCriteria = findPromptValue(data.statCriteria, "");
     const charRelationshipGuideline = findPromptValue(data.relationshipGuidelines, useEnTemplate ? "Let this character’s own tastes, aversions, and way of loving shape their choices." : "이 인물의 취향과 싫어하는 것, 사랑하는 방식이 선택에 배게 하세요.");
-    const charAdultIntimacy = (effectiveLang === 'ko' || effectiveLang === 'en')
+    const charAdultIntimacy = !romanticInterlude && (effectiveLang === 'ko' || effectiveLang === 'en')
         ? getCupidCharacterAdultIntimacy(sceneName, displayName, effectiveLang)
         : '';
     const charAddressingGuideline = getLocalizedAddressingGuideline(
@@ -1989,8 +2004,12 @@ function buildSystemPrompt(params) {
             ? "전화나 메신저 대화도 세계 안에서 벌어집니다. 길이와 호흡은 캐릭터와 순간을 따르며, 상대가 그 매체로 알 수 있는 말·소리·전송된 내용 안에서 반응하세요."
             : "대면 입력은 이미 장면 안에서 나온 말, 행동, 침묵, 정정, 단서 가운데 하나입니다.");
     const livingInitiativeRule = buildCupidLivingInitiativeRule(effectiveLang);
-    const thirdPersonAdultCameraRule = buildCupidThirdPersonAdultCameraRule(effectiveLang);
-    const affinityChangeGuidance = affinityLocked
+    const thirdPersonAdultCameraRule = romanticInterlude
+        ? buildCupidTemptationRomanceGuidance(effectiveLang)
+        : buildCupidThirdPersonAdultCameraRule(effectiveLang);
+    const affinityChangeGuidance = romanticInterlude
+        ? (useEnTemplate ? 'This interlude does not change affinity. Set affinity to 0.' : '이 장면 대화는 호감도를 바꾸지 않습니다. affinity는 0입니다.')
+        : affinityLocked
         ? (useEnTemplate
             ? 'This after-ending conversation does not change affinity. Set affinity to 0 regardless of the user input.'
             : '엔딩 후 대화에서는 호감도가 변하지 않습니다. 사용자 입력과 관계없이 affinity를 0으로 기록하세요.')

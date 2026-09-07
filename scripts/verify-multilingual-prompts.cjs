@@ -218,6 +218,9 @@ const activeFreeTalkIds = [
     'wall_seo_freetalk',
     'wall_dain_freetalk',
     'wall_yuna_freetalk',
+    'day4_temptation_seoyeon_freetalk',
+    'day4_temptation_yuna_freetalk',
+    'day4_temptation_dain_freetalk',
     'morning5_counteroffer_group_talk',
     ...day5EndingFreeTalkIds
 ];

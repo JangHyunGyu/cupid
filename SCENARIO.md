@@ -17943,10 +17943,10 @@
 
 ### `day4_adult_counteroffer_accept_seoyeon`
 - 배경: `event_temptation_seoyeon.png`
-- 다음: `day4_adult_night_regret_target_branch`
+- 다음: `day4_temptation_seoyeon_freetalk`
 
 - 캐릭터: `없음`
-**{name}**: *옥상 문이 닫히자 서연은 {name}의 손목을 잡아 자기 가슴 위에 손을 얹는다. 느슨하게 푼 리본 아래로 셔츠 깃이 벌어지고 떨리는 숨이 손등에 닿는다. 주머니 속 휴대폰이 연달아 울리지만 서연은 손을 놓지 않는다. 한참 뒤 학교를 나와 집으로 돌아간다.*
+**{name}**: *옥상 문이 닫히자 서연은 {name}의 손목을 잡아 자기 가슴 위에 손을 얹는다. 느슨하게 푼 리본 아래로 셔츠 깃이 벌어지고 떨리는 숨이 손등에 닿는다. 주머니 속 휴대폰이 연달아 울리지만 서연은 손을 놓지 않는다.*
 
 ---
 
@@ -17966,10 +17966,10 @@
 
 ### `day4_adult_counteroffer_accept_dain`
 - 배경: `event_temptation_dain.png`
-- 다음: `day4_adult_night_regret_target_branch`
+- 다음: `day4_temptation_dain_freetalk`
 
 - 캐릭터: `없음`
-**{name}**: *마지막 공이 바닥을 굴러간다. 다인은 거친 숨을 고르며 유니폼 앞자락을 움켜쥐고 아래로 당긴다. 그대로 {name} 바로 앞까지 몸을 깊이 숙이자 땀에 젖은 숨이 코앞에 닿는다. 주머니 속 휴대폰이 연달아 울린다. 한참 뒤 학교를 나와 집으로 돌아간다.*
+**{name}**: *마지막 공이 바닥을 굴러간다. 다인은 거친 숨을 고르며 유니폼 앞자락을 움켜쥐고 아래로 당긴다. 그대로 {name} 바로 앞까지 몸을 깊이 숙이자 땀에 젖은 숨이 코앞에 닿는다. 주머니 속 휴대폰이 연달아 울린다.*
 
 ---
 
@@ -17997,10 +17997,10 @@
 
 ### `day4_adult_counteroffer_accept_yuna`
 - 배경: `event_temptation_yuna.png`
-- 다음: `day4_adult_night_regret_target_branch`
+- 다음: `day4_temptation_yuna_freetalk`
 
 - 캐릭터: `없음`
-**{name}**: *유나는 {name} 바로 앞까지 다가와 한 손으로 책장을 짚는다. 재킷을 한쪽 어깨 아래로 흘려 내리고 다른 손으로 안쪽 상의의 목깃까지 끌어내린다. 드러난 맨어깨와 타투 사이로 붉은 눈이 {name}의 눈높이에 그대로 있다. 책상 위 휴대폰이 다시 울린다. 한참 뒤 별관을 나와 집으로 돌아간다.*
+**{name}**: *유나는 {name} 바로 앞까지 다가와 한 손으로 책장을 짚는다. 재킷을 한쪽 어깨 아래로 흘려 내리고 다른 손으로 안쪽 상의의 목깃까지 끌어내린다. 드러난 맨어깨와 타투 사이로 붉은 눈이 {name}의 눈높이에 그대로 있다. 책상 위 휴대폰이 다시 울린다.*
 
 ---
 
@@ -18121,7 +18121,7 @@
 
 ### `wall_seo_glimpse_4`
 - 배경: `event_temptation_dain.png`
-- 다음: `day4_night_regret`
+- 다음: `day4_temptation_dain_freetalk`
 
 - 캐릭터: `없음`
 **{name}**: *마지막 공이 바닥을 굴러간다. 다인은 거친 숨을 고르며 유니폼 앞자락을 움켜쥐고 아래로 당긴다. 그대로 {name} 바로 앞까지 몸을 깊이 숙이자 땀에 젖은 숨이 코앞에 닿는다. 주머니 속 휴대폰에서는 서연의 메시지가 연달아 울린다.*
@@ -18665,7 +18665,7 @@
 
 ### `wall_seo_yuna_tempt_accept`
 - 배경: `event_temptation_yuna.png`
-- 다음: `day4_night_regret`
+- 다음: `day4_temptation_yuna_freetalk`
 
 - 캐릭터: `없음`
 **{name}**: *유나는 {name} 바로 앞까지 다가와 한 손으로 책장을 짚는다. 재킷을 한쪽 어깨 아래로 흘려 내리고 다른 손으로 안쪽 상의의 목깃까지 끌어내린다. 드러난 맨어깨와 타투 사이로 붉은 눈이 {name}의 눈높이에 그대로 있다. 서연의 '공원 벤치에 있어.'라는 메시지가 화면 위에서 사라지지 않는다.*
@@ -18797,10 +18797,23 @@
 
 ### `wall_dain_glimpse_4`
 - 배경: `event_temptation_yuna.png`
-- 다음: `day4_night_regret`
+- 다음: `day4_temptation_yuna_freetalk`
 
 - 캐릭터: `없음`
 **{name}**: *유나는 {name} 바로 앞까지 다가와 한 손으로 책장을 짚는다. 재킷을 한쪽 어깨 아래로 흘려 내리고 다른 손으로 안쪽 상의의 목깃까지 끌어내린다. 드러난 맨어깨와 타투 사이로 붉은 눈이 {name}의 눈높이에 그대로 있다. 다인의 '체육관 뒷문 열어놨어.' 알림이 화면 위에서 사라지지 않는다.*
+
+---
+
+### `day4_temptation_yuna_freetalk`
+- 배경: `event_temptation_yuna.png`
+- 타입: `free_talk`
+- 호감도 변동: `없음`
+- 다음: `day4_temptation_return_home`
+- 컨텍스트: "4일차 밤, 주인공이 유나의 제안을 수락해 별관 독서실에 둘만 남았다."
+- 성격: "짧은 말과 자연스러운 여백으로 마음을 전하며 지금 곁에 있는 상대에게 관심을 보인다."
+
+- 캐릭터: `없음`
+**유나**: 이쪽에 앉아. 네가 와서… 좋아. 지금은 나랑 같이 있어 줘.
 
 ---
 
@@ -19499,7 +19512,7 @@
 
 ### `wall_dain_seo_tempt_accept`
 - 배경: `event_temptation_seoyeon.png`
-- 다음: `day4_night_regret`
+- 다음: `day4_temptation_seoyeon_freetalk`
 
 - 캐릭터: `없음`
 **{name}**: *옥상문이 닫히자 서연은 말없이 블라우스 단추를 풀고 {name}의 손목을 잡아 제 쪽으로 끌어당긴다. 열린 옷깃 사이로 손바닥이 맨가슴에 닿는 순간, 서연의 손이 그 위를 덮는다. 다인의 '체육관 뒷문 열어놨어.'라는 메시지가 화면을 밝힌다.*
@@ -19599,10 +19612,23 @@
 
 ### `wall_yuna_glimpse_4`
 - 배경: `event_temptation_seoyeon.png`
-- 다음: `day4_night_regret`
+- 다음: `day4_temptation_seoyeon_freetalk`
 
 - 캐릭터: `없음`
 **{name}**: *옥상문이 닫히자 서연은 말없이 블라우스 단추를 풀고 {name}의 손목을 잡아 제 쪽으로 끌어당긴다. 열린 옷깃 사이로 손바닥이 맨가슴에 닿는 순간, 서연의 손이 그 위를 덮는다. 주머니 속에서 유나의 메시지가 한 번, 다시 한 번 울린다.*
+
+---
+
+### `day4_temptation_seoyeon_freetalk`
+- 배경: `event_temptation_seoyeon.png`
+- 타입: `free_talk`
+- 호감도 변동: `없음`
+- 다음: `day4_temptation_return_home`
+- 컨텍스트: "4일차 밤, 주인공이 서연의 제안을 수락해 옥상에 둘만 남았다."
+- 성격: "차분한 말투에 솔직한 호감을 드러내고 주인공에게 궁금한 것을 직접 묻는다."
+
+- 캐릭터: `없음`
+**서연**: 와줘서 기뻐. 오늘은 네 얘기를 조금 더 듣고 싶어. 내 옆에 앉을래?
 
 ---
 
@@ -20085,10 +20111,32 @@
 
 ### `wall_yuna_dain_tempt_accept`
 - 배경: `event_temptation_dain.png`
-- 다음: `day4_night_regret`
+- 다음: `day4_temptation_dain_freetalk`
 
 - 캐릭터: `없음`
 **{name}**: *마지막 공이 바닥을 굴러간다. 다인은 거친 숨을 고르며 유니폼 앞자락을 움켜쥐고 아래로 당긴다. 그대로 {name} 바로 앞까지 몸을 깊이 숙이자 땀에 젖은 숨이 코앞에 닿는다. 유나의 이름이 휴대폰 화면에 연달아 뜬다.*
+
+---
+
+### `day4_temptation_dain_freetalk`
+- 배경: `event_temptation_dain.png`
+- 타입: `free_talk`
+- 호감도 변동: `없음`
+- 다음: `day4_temptation_return_home`
+- 컨텍스트: "4일차 밤, 주인공이 다인의 제안을 수락해 체육관에 둘만 남았다."
+- 성격: "다인다운 장난과 솔직함으로 먼저 말을 걸고 기쁜 마음을 편하게 드러낸다."
+
+- 캐릭터: `없음`
+**다인**: 나 지금 되게 좋은 거 티 나지? 그래도 숨기기 싫어. 이리 와, 내 옆에.
+
+---
+
+### `day4_temptation_return_home`
+- 배경: `room_my.png`
+- 다음: `day4_adult_night_regret_target_branch`
+
+- 캐릭터: `없음`
+**{name}**: *둘만의 대화를 마치고 집으로 돌아온다.*
 
 ---
 

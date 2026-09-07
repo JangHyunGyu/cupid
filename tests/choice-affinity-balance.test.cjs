@@ -603,7 +603,7 @@ test('rival temptation CG rewards appear only after accepting the rival offer', 
 
     for (const [sceneId, scene] of Object.entries(scenes)) {
         const cgId = path.basename(scene.background || '', path.extname(scene.background || ''));
-        if (temptationCgIds.has(cgId)) actualUses.push(sceneId);
+        if (temptationCgIds.has(cgId) && scene.type !== 'free_talk') actualUses.push(sceneId);
     }
 
     assert.deepEqual(actualUses.sort(), Object.keys(acceptanceScenes).sort());
@@ -1225,7 +1225,12 @@ test('every eligible day-four route shows the accepted rival CG at any affinity 
                         assert.ok(!visited.has(id), `${label}: loop at ${id}`);
                         visited.add(id);
                         const scene = renderer._applyI18n(scenes[id], id);
-                        assert.notEqual(scene.type, 'free_talk', `${label}: bypassed rival at ${id}`);
+                        if (scene.type === 'free_talk') {
+                            assert.equal(id, `day4_temptation_${rival.toLowerCase()}_freetalk`, label);
+                            assert.equal(scene.maxTurns, 5, label);
+                            assert.equal(scene.affinityLocked, true, label);
+                            assert.equal(scene.romanticInterlude, true, label);
+                        }
                         assert.notEqual(scene.type, 'group_free_talk', `${label}: wrong group at ${id}`);
                         const effect = scene.choices
                             ? scene.choices.find(choice => choice.setFlags?.includes('day4_counteroffer_penalty_deferred')) || scene.choices[0]
@@ -1243,10 +1248,11 @@ test('every eligible day-four route shows the accepted rival CG at any affinity 
                     assert.equal(flags.day5_confessed_counteroffer, true, label);
                     const displayedCGs = [...visited]
                         .map(sceneId => scenes[sceneId])
-                        .filter(scene => /\/event_temptation_/.test(scene.background || ''));
+                        .filter(scene => scene.type !== 'free_talk' && /\/event_temptation_/.test(scene.background || ''));
                     assert.equal(displayedCGs.length, 1, `${label}: acceptance must show exactly one rival CG`);
                     assert.equal(displayedCGs[0].background,
                         `assets/images/background/event_temptation_${rival.toLowerCase()}.png`, label);
+                    assert.ok(visited.has(`day4_temptation_${rival.toLowerCase()}_freetalk`), label);
                     for (const sceneId of visited) {
                         if (/\/event_temptation_/.test(scenes[sceneId].background || '')) {
                             assert.ok(copy[sceneId]?.text?.trim(), `${label}: missing localized CG scene`);
@@ -1337,7 +1343,7 @@ test('forced sexual violation aftermath covers every day and resumes every free-
         assert.deepEqual([...dayCharacters].sort(), expectedCharacters,
             `day ${day} forced-violation coverage drifted`);
     }
-    assert.equal(routes.length, 44, 'every authored main-story free talk must be covered');
+    assert.equal(routes.length, 47, 'every authored main-story free talk must be covered');
 
     const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy);
 

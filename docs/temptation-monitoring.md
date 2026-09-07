@@ -25,6 +25,9 @@
 - `freetalk_entered`: 프리토킹 UI 초기화 완료. 특히
   `morning5_counteroffer_group_talk`이 5일차 대면 프리토킹이다.
   실제 메시지 전송·응답 성공은 별도의 `chat_logs`를 확인한다.
+  `day4_temptation_{seoyeon|yuna|dain}_freetalk`은 수락한 상대와 CG를 배경으로 나누는
+  5턴의 개인 대화다. 이 장면에서만 대화 분위기를 친밀도 100 기준으로 적용하며 실제
+  호감도와 후속 관계 판정은 유지한다. 수락 보상은 기존 +8, 개인 대화의 점수 변화는 0이다.
 - `freetalk_exited`: 해당 프리토킹에서 다음 장면으로 이동. 건너뛰기도 포함한다.
 - `scene_checkpoint`: 고백 보류/루트 없음/우선 결말 경로의 도달 확인.
 

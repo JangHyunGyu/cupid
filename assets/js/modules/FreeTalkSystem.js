@@ -371,6 +371,22 @@ class FreeTalkSystem {
         if (completed) this.stateManager.setFlag(`messaged_${this.currentSceneId}`);
     }
 
+    _getSceneDialoguePolicy(scene, sceneId = this.currentSceneId) {
+        const character = this.charNameMap[scene.name] || scene.name;
+        const targets = {
+            day4_temptation_seoyeon_freetalk: 'Seoyeon',
+            day4_temptation_yuna_freetalk: 'Yuna',
+            day4_temptation_dain_freetalk: 'Dain'
+        };
+        const romanticInterlude = targets[sceneId] === character
+            && scene.type === 'free_talk' && scene.romanticInterlude === true
+            && scene.affinityLocked === true && scene.maxTurns === 5;
+        const actualAffinity = this.stateManager.getAffinity
+            ? this.stateManager.getAffinity(character)
+            : (this.stateManager.stats?.[character]?.affinity || 0);
+        return { romanticInterlude, actualAffinity, affinity: romanticInterlude ? 100 : actualAffinity };
+    }
+
     async startFreeTalk(scene, sceneId) {
         if (scene?.type === 'group_free_talk') {
             return this.startGroupFreeTalk(scene, sceneId);
@@ -441,12 +457,15 @@ class FreeTalkSystem {
                 break;
             }
         }
+        if (locNames[scene.locationKey]) {
+            locationName = locNames[scene.locationKey][lang] || locNames[scene.locationKey].ko;
+        }
 
         // 캐릭터 정보 수집
         this.freeTalkHistory = this._sanitizeDainOutfitHistory(this.freeTalkHistory, charKey);
         this.freeTalkHistory = this._sanitizeVisibleArtifactsHistory(this.freeTalkHistory);
         const knowsName = this.stateManager.getFlag(`knows_name_${charKey.toLowerCase()}`);
-        const charStats = this.stateManager.stats[charKey] || { affinity: 0 };
+        const sceneDialogue = this._getSceneDialoguePolicy(scene, sceneId);
 
         // 🔧 프롬프트 데이터 가져오기 (prompts.js에서)
         const promptData = window.getPromptData ? window.getPromptData(lang, this.stateManager.playerName) : {};
@@ -496,7 +515,8 @@ class FreeTalkSystem {
             displayName: scene.name,
             locationName,
             context: scene.context || ({ es: "La escena continúa a partir de la última intervención del protagonista.", ja: "主人公が直前に発した言葉や取った行動を受けて、場面を続けます。", en: "Continuing the scene from the protagonist's latest line or action.", fr: "La scène reprend après la dernière parole ou action du protagoniste.", de: "Die Szene wird nach der letzten Äußerung oder Handlung des Protagonisten fortgesetzt.", pt: "A cena continua a partir da última fala ou ação do protagonista." }[lang] || "주인공이 방금 한 말이나 행동에서 장면을 이어갑니다."),
-            affinity: charStats.affinity,
+            affinity: sceneDialogue.affinity,
+            romanticInterlude: sceneDialogue.romanticInterlude,
             extraGuideline: [scene.personality, scene.extra_guideline].filter(Boolean).join("\n"),
             gameContext,
             mediumInstruction,
@@ -1267,11 +1287,12 @@ class FreeTalkSystem {
                 : _completeHistory;
             const _inWorldUserRoleBlock = this._buildInWorldUserRoleBlock(_optimized);
             const _recentRepetitionGuard = buildCupidRecentExpressionRepetitionGuard(_optimized, _lang);
-            const _currentAffinity = this.stateManager.getAffinity
-                ? this.stateManager.getAffinity(charKey)
-                : (this.stateManager.stats?.[charKey]?.affinity || 0);
+            const _sceneDialogue = this._getSceneDialoguePolicy(scene);
+            const _currentAffinity = _sceneDialogue.affinity;
             const _isDatingCurrentForBoundary = this.stateManager.getFlag(`isDating_${charKey}`) || this.stateManager.getFlag(`isDating_${scene.name}`);
-            const _latestTurnIntimacyBoundaryRule = CupidFreeTalkCore.buildCupidLatestTurnIntimacyBoundaryGate(
+            const _latestTurnIntimacyBoundaryRule = _sceneDialogue.romanticInterlude
+                ? window.buildCupidTemptationRomanceGuidance(_lang)
+                : CupidFreeTalkCore.buildCupidLatestTurnIntimacyBoundaryGate(
                 _lang,
                 _currentAffinity,
                 finalContent,
@@ -1281,7 +1302,7 @@ class FreeTalkSystem {
                     nonRomance: charKey === 'Haeun'
                 }
             );
-            const _affinityIntimacyProgressionPatch = window.buildCupidAffinityIntimacyGuidance?.(
+            const _affinityIntimacyProgressionPatch = _sceneDialogue.romanticInterlude ? '' : window.buildCupidAffinityIntimacyGuidance?.(
                 _lang,
                 _currentAffinity,
                 {
@@ -1290,7 +1311,7 @@ class FreeTalkSystem {
                     nonRomance: charKey === 'Haeun'
                 }
             ) || '';
-            const _relationshipAftermathBlock = CupidFreeTalkCore.buildRelationshipAftermathBlock({
+            const _relationshipAftermathBlock = _sceneDialogue.romanticInterlude ? '' : CupidFreeTalkCore.buildRelationshipAftermathBlock({
                 lang: _lang,
                 state: this.stateManager.getRelationshipAftermath?.(charKey)
             });
@@ -1616,7 +1637,7 @@ class FreeTalkSystem {
                             : 'the user\'s preceding words or action'
                     }
                 );
-                this.stateManager.setRelationshipAftermath?.(charKey, nextAftermath);
+                if (!_sceneDialogue.romanticInterlude) this.stateManager.setRelationshipAftermath?.(charKey, nextAftermath);
                 if (forcedSexualViolation === 'rape' || forcedSexualViolation === 'molestation') {
                     this.stateManager.setFlag('forced_sexual_violation', {
                         character: charKey,
@@ -2715,6 +2736,7 @@ class FreeTalkSystem {
      * @param {Object} scene - 현재 씬 데이터
      */
     applyExpression(exprName, scene) {
+        if (scene.romanticInterlude === true) return;
         if (!window.CHARACTER_EXPRESSIONS) return;
         const charExprs = typeof getCharacterExpressionSet === 'function'
             ? getCharacterExpressionSet(scene.name)
@@ -2808,6 +2830,7 @@ class FreeTalkSystem {
      * @returns {string} 표정 태그가 제거된 텍스트
      */
     processExpressionTags(reply, scene) {
+        if (scene.romanticInterlude === true) return reply.replace(/\[EXPRESSION:\s*\w+\]/gi, '').trim();
         // 📌 정규식: [EXPRESSION: xxx] 형태 찾기 (대소문자 무시)
         const exprRegex = /\[EXPRESSION:\s*(\w+)\]/gi;
         let exprMatch;

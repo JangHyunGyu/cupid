@@ -18,6 +18,7 @@ const commands = [
     ['node', ['--test', 'tests/scenario-commercial-polish.test.cjs']],
     ['node', ['--test', 'tests/story-continuity.test.cjs']],
     ['node', ['--test', 'tests/freetalk-core.test.cjs']],
+    ['node', ['--test', 'tests/temptation-freetalk.test.cjs']],
     ['node', ['--test', 'tests/runtime-error-regressions.test.cjs']],
     ['node', ['--test', 'tests/product-polish.test.cjs']],
     ['node', ['scripts/verify-repetition-guards.cjs']],

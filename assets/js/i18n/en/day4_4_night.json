@@ -71,15 +71,15 @@
     },
     "day4_adult_counteroffer_accept_seoyeon": {
         "name": "{name}",
-        "text": "*As the rooftop door closes, Seoyeon catches {name}'s wrist and places their hand over her chest. Her loosened ribbon leaves her shirt collar open, and her trembling breath brushes the back of their hand. The phone in their pocket buzzes again and again, but Seoyeon doesn't let go. Much later, they leave the school and return home.*"
+        "text": "*As the rooftop door closes, Seoyeon catches {name}'s wrist and places their hand over her chest. Her loosened ribbon leaves her shirt collar open, and her trembling breath brushes the back of their hand. The phone in their pocket buzzes again and again, but Seoyeon doesn't let go.*"
     },
     "day4_adult_counteroffer_accept_dain": {
         "name": "{name}",
-        "text": "*The last ball rolls across the floor. Catching her ragged breath, Dain grips the front of her uniform and pulls it down. She leans in until her sweat-warmed breath reaches {name}'s face. The phone in their pocket keeps buzzing. Much later, they leave the school and return home.*"
+        "text": "*The last ball rolls across the floor. Catching her ragged breath, Dain grips the front of her uniform and pulls it down. She leans in until her sweat-warmed breath reaches {name}'s face. The phone in their pocket keeps buzzing.*"
     },
     "day4_adult_counteroffer_accept_yuna": {
         "name": "{name}",
-        "text": "*Yuna steps right up to {name}, bracing one hand on the bookcase. She lets her jacket slip below one shoulder and uses her other hand to tug down the neckline beneath it. Over her bare shoulder and tattoo, her red eyes hold {name}'s gaze. The phone on the desk buzzes again. Much later, they leave the annex and return home.*"
+        "text": "*Yuna steps right up to {name}, bracing one hand on the bookcase. She lets her jacket slip below one shoulder and uses her other hand to tug down the neckline beneath it. Over her bare shoulder and tattoo, her red eyes hold {name}'s gaze. The phone on the desk buzzes again.*"
     },
     "day4_adult_night_regret_target_branch": {},
     "day4_adult_night_regret_teacher": {
@@ -1145,5 +1145,27 @@
     "day4_adult_return_home": {
         "name": "{name}",
         "text": "*At home, I complete the school app’s check-in, close the front door, and take off my shoes.*"
+    },
+    "day4_temptation_seoyeon_freetalk": {
+        "name": "Seoyeon",
+        "text": "I’m glad you came. I want to hear more about you tonight. Will you sit beside me?",
+        "context": "On the fourth night, the protagonist accepted Seoyeon’s invitation. The two are alone on the rooftop.",
+        "personality": "Keep her calm voice, show affection honestly, and ask directly about what interests her in the protagonist."
+    },
+    "day4_temptation_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "Sit here. I’m… glad you came. Stay with me for a while.",
+        "context": "On the fourth night, the protagonist accepted Yuna’s invitation. The two are alone in the annex reading room.",
+        "personality": "Express affection through short lines and natural pauses, taking an interest in the person beside her."
+    },
+    "day4_temptation_dain_freetalk": {
+        "name": "Dain",
+        "text": "You can tell how happy I am, right? I don’t want to hide it. Come sit with me.",
+        "context": "On the fourth night, the protagonist accepted Dain’s invitation. The two are alone in the gym.",
+        "personality": "Initiate conversation with Dain’s playful honesty and let her happiness show naturally."
+    },
+    "day4_temptation_return_home": {
+        "name": "{name}",
+        "text": "*After their private conversation, the protagonist returns home.*"
     }
 }
