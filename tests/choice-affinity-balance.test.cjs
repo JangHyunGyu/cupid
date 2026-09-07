@@ -621,9 +621,9 @@ test('rival temptation CG rewards appear only after accepting the rival offer', 
                 incomingChoice.setFlags?.some(flag => /^day4_took_.+_counteroffer$/.test(flag)),
                 `${sceneId} must be gated by an accepted counteroffer`
             );
-            assert.equal(incomingChoice.affinityBranches?.[0]?.minAffinity, 0, `${sceneId} must allow the CG after accepting a nonnegative rival offer`);
-            assert.equal(incomingChoice.affinityBranches?.[0]?.next, sceneId);
-            assert.match(incomingChoice.next, /^day4_(?:adult|student)_counteroffer_soft_/);
+            assert.equal(incomingChoice.next, sceneId, `${sceneId} must follow acceptance at any affinity`);
+            assert.equal(incomingChoice.affinityBranches, undefined, `${sceneId} must not recheck rival affinity`);
+            assert.equal(incomingChoice.affinityChar, undefined);
         }
     }
 });
@@ -1196,7 +1196,7 @@ test('rival affinity is checked before the wall scene and free talk exits cleanl
     }
 });
 
-test('every eligible day-four route reaches the next-morning confrontation after accepting a rival', () => {
+test('every eligible day-four route shows the accepted rival CG at any affinity before the next-morning confrontation', () => {
     const routes = [
         ['Seoyeon', 'route_seoyeon', ['Dain', 'Yuna']],
         ['Yuna', 'route_yuna', ['Seoyeon', 'Dain']],
@@ -1210,7 +1210,7 @@ test('every eligible day-four route reaches the next-morning confrontation after
         for (const [lead, routeFlag, rivals] of routes) {
             for (const rival of rivals) {
                 for (const leadAffinity of [59, 60, 100]) {
-                  for (const rivalAffinity of [-100, -1, 0]) {
+                  for (const rivalAffinity of [-100, -9, -8, -1, 0, 100]) {
                     if (rivalAffinity === -100 && rival !== rivals[0]) continue;
                     const label = `${locale}/${lead}:${leadAffinity}/${rival}:${rivalAffinity}`;
                     const affinities = { Seoyeon: -100, Yuna: -100, Dain: -100, Teacher: -100, Nurse: -100 };
@@ -1241,6 +1241,17 @@ test('every eligible day-four route reaches the next-morning confrontation after
                     }
                     assert.equal(flags[`day4_took_${rival.toLowerCase()}_counteroffer`], true, label);
                     assert.equal(flags.day5_confessed_counteroffer, true, label);
+                    const displayedCGs = [...visited]
+                        .map(sceneId => scenes[sceneId])
+                        .filter(scene => /\/event_temptation_/.test(scene.background || ''));
+                    assert.equal(displayedCGs.length, 1, `${label}: acceptance must show exactly one rival CG`);
+                    assert.equal(displayedCGs[0].background,
+                        `assets/images/background/event_temptation_${rival.toLowerCase()}.png`, label);
+                    for (const sceneId of visited) {
+                        if (/\/event_temptation_/.test(scenes[sceneId].background || '')) {
+                            assert.ok(copy[sceneId]?.text?.trim(), `${label}: missing localized CG scene`);
+                        }
+                    }
                     const group = renderer._applyI18n(scenes[id], id);
                     assert.equal(group.type, 'group_free_talk', label);
                     assert.equal(group.groupParticipants, 'counteroffer_confrontation', label);

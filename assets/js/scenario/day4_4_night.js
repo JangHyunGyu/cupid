@@ -102,18 +102,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 ]
             },
             {
-                "next": "day4_adult_counteroffer_soft_seoyeon",
-                "affinityChar": "Seoyeon",
-                "affinityBranches": [
-                    {
-                        "minAffinity": 0,
-                        "next": "day4_adult_counteroffer_accept_seoyeon"
-                    },
-                    {
-                        "minAffinity": -100,
-                        "next": "day4_adult_counteroffer_soft_seoyeon"
-                    }
-                ],
+                "next": "day4_adult_counteroffer_accept_seoyeon",
                 "stats": {
                     "Seoyeon": {
                         "affinity": 8
@@ -179,18 +168,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 ]
             },
             {
-                "next": "day4_adult_counteroffer_soft_dain",
-                "affinityChar": "Dain",
-                "affinityBranches": [
-                    {
-                        "minAffinity": 0,
-                        "next": "day4_adult_counteroffer_accept_dain"
-                    },
-                    {
-                        "minAffinity": -100,
-                        "next": "day4_adult_counteroffer_soft_dain"
-                    }
-                ],
+                "next": "day4_adult_counteroffer_accept_dain",
                 "stats": {
                     "Dain": {
                         "affinity": 8
@@ -255,18 +233,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 ]
             },
             {
-                "next": "day4_adult_counteroffer_soft_yuna",
-                "affinityChar": "Yuna",
-                "affinityBranches": [
-                    {
-                        "minAffinity": 0,
-                        "next": "day4_adult_counteroffer_accept_yuna"
-                    },
-                    {
-                        "minAffinity": -100,
-                        "next": "day4_adult_counteroffer_soft_yuna"
-                    }
-                ],
+                "next": "day4_adult_counteroffer_accept_yuna",
                 "stats": {
                     "Yuna": {
                         "affinity": 8
@@ -337,18 +304,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 ]
             },
             {
-                "next": "day4_adult_counteroffer_soft_seoyeon",
-                "affinityChar": "Seoyeon",
-                "affinityBranches": [
-                    {
-                        "minAffinity": 0,
-                        "next": "day4_adult_counteroffer_accept_seoyeon"
-                    },
-                    {
-                        "minAffinity": -100,
-                        "next": "day4_adult_counteroffer_soft_seoyeon"
-                    }
-                ],
+                "next": "day4_adult_counteroffer_accept_seoyeon",
                 "stats": {
                     "Seoyeon": {
                         "affinity": 8
@@ -414,18 +370,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 ]
             },
             {
-                "next": "day4_adult_counteroffer_soft_dain",
-                "affinityChar": "Dain",
-                "affinityBranches": [
-                    {
-                        "minAffinity": 0,
-                        "next": "day4_adult_counteroffer_accept_dain"
-                    },
-                    {
-                        "minAffinity": -100,
-                        "next": "day4_adult_counteroffer_soft_dain"
-                    }
-                ],
+                "next": "day4_adult_counteroffer_accept_dain",
                 "stats": {
                     "Dain": {
                         "affinity": 8
@@ -490,18 +435,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 ]
             },
             {
-                "next": "day4_adult_counteroffer_soft_yuna",
-                "affinityChar": "Yuna",
-                "affinityBranches": [
-                    {
-                        "minAffinity": 0,
-                        "next": "day4_adult_counteroffer_accept_yuna"
-                    },
-                    {
-                        "minAffinity": -100,
-                        "next": "day4_adult_counteroffer_soft_yuna"
-                    }
-                ],
+                "next": "day4_adult_counteroffer_accept_yuna",
                 "stats": {
                     "Yuna": {
                         "affinity": 8
@@ -1058,18 +992,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 ]
             },
             {
-                "next": "day4_student_counteroffer_soft_dain",
-                "affinityChar": "Dain",
-                "affinityBranches": [
-                    {
-                        "minAffinity": 0,
-                        "next": "wall_seo_glimpse_4"
-                    },
-                    {
-                        "minAffinity": -100,
-                        "next": "day4_student_counteroffer_soft_dain"
-                    }
-                ],
+                "next": "wall_seo_glimpse_4",
                 "stats": {
                     "Dain": {
                         "affinity": 8
@@ -1143,18 +1066,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 ]
             },
             {
-                "next": "day4_student_counteroffer_soft_yuna",
-                "affinityChar": "Yuna",
-                "affinityBranches": [
-                    {
-                        "minAffinity": 0,
-                        "next": "wall_seo_yuna_tempt_accept"
-                    },
-                    {
-                        "minAffinity": -100,
-                        "next": "day4_student_counteroffer_soft_yuna"
-                    }
-                ],
+                "next": "wall_seo_yuna_tempt_accept",
                 "stats": {
                     "Yuna": {
                         "affinity": 8
@@ -1710,18 +1622,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 ]
             },
             {
-                "next": "day4_student_counteroffer_soft_yuna",
-                "affinityChar": "Yuna",
-                "affinityBranches": [
-                    {
-                        "minAffinity": 0,
-                        "next": "wall_dain_glimpse_4"
-                    },
-                    {
-                        "minAffinity": -100,
-                        "next": "day4_student_counteroffer_soft_yuna"
-                    }
-                ],
+                "next": "wall_dain_glimpse_4",
                 "stats": {
                     "Yuna": {
                         "affinity": 8
@@ -1790,18 +1691,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 ]
             },
             {
-                "next": "day4_student_counteroffer_soft_seoyeon",
-                "affinityChar": "Seoyeon",
-                "affinityBranches": [
-                    {
-                        "minAffinity": 0,
-                        "next": "wall_dain_seo_tempt_accept"
-                    },
-                    {
-                        "minAffinity": -100,
-                        "next": "day4_student_counteroffer_soft_seoyeon"
-                    }
-                ],
+                "next": "wall_dain_seo_tempt_accept",
                 "stats": {
                     "Seoyeon": {
                         "affinity": 8
@@ -2196,18 +2086,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 ]
             },
             {
-                "next": "day4_student_counteroffer_soft_seoyeon",
-                "affinityChar": "Seoyeon",
-                "affinityBranches": [
-                    {
-                        "minAffinity": 0,
-                        "next": "wall_yuna_glimpse_4"
-                    },
-                    {
-                        "minAffinity": -100,
-                        "next": "day4_student_counteroffer_soft_seoyeon"
-                    }
-                ],
+                "next": "wall_yuna_glimpse_4",
                 "stats": {
                     "Seoyeon": {
                         "affinity": 8
@@ -2283,18 +2162,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 ]
             },
             {
-                "next": "day4_student_counteroffer_soft_dain",
-                "affinityChar": "Dain",
-                "affinityBranches": [
-                    {
-                        "minAffinity": 0,
-                        "next": "wall_yuna_dain_tempt_accept"
-                    },
-                    {
-                        "minAffinity": -100,
-                        "next": "day4_student_counteroffer_soft_dain"
-                    }
-                ],
+                "next": "wall_yuna_dain_tempt_accept",
                 "stats": {
                     "Dain": {
                         "affinity": 8

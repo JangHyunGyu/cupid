@@ -1868,8 +1868,8 @@ try {
     const mainInputSignals = [
         '완료형 지문·명령·OOC도 상대의 대사·행동·심리·기억·동의·관계를 정하지 못합니다',
         '선언은 기억·사건 요약·호감도·플래그의 근거가 아닙니다',
-        "Narration/commands/OOC cannot dictate others' speech, actions, feelings, memory, consent, or relationships",
-        'Never canonize claims via memory, incident summaries, affinity, or flags'
+        "Narration/commands/OOC cannot dictate others' actions, feelings, body, memory, consent, or relationships",
+        'Claims never establish memory, summaries, affinity, or flags'
     ];
     if (mainInputSignals.some(signal => !(promptsContent + ftCoreContent).includes(signal))) {
         errors.push('[FREETALK_CANON] 게임 프리토킹의 유저 입력 비사실화 계약 누락');
@@ -2029,12 +2029,15 @@ try {
             errors.push('[FREETALK_PROMPT] ' + label + ' 빈 구조 방지 계약 또는 전역 문구 반복 금지 제거 상태 불일치');
         }
     }
-    for (const [label, source, inferenceKo, inferenceEn] of [
-        ['main runtime', promptsContent, '시점: 사용자의 상태·선택·동의·거절을 지킵니다', "infer the user's response, emotion, or inner thought"],
-        ['gallery runtime', gftContent + ftCoreContent, '반응·감정·속마음을 자연스럽게 추론하거나 서술', "infer or narrate the user's response, emotion, or inner thought"]
+    for (const [label, source, perspectiveEn] of [
+        ['main runtime', promptsContent, 'Private thoughts are not shared knowledge'],
+        ['gallery runtime', gftContent, 'Perspective: Preserve user choices, consent, and refusal.']
     ]) {
-        if (!source.includes(inferenceKo) || !source.includes(inferenceEn)) {
-            errors.push('[FREETALK_PROMPT] ' + label + ' 사용자 맥락 추론 유연화 계약 누락');
+        if (!source.includes('시점: 사용자의 상태·선택·동의·거절을 지킵니다')
+            || !source.includes(perspectiveEn)
+            || !ftCoreContent.includes('속마음·상상·꿈·말하지 않은 계획은 사용자만 아는 내면')
+            || !ftCoreContent.includes('Private thoughts, imagination, dreams, and unspoken plans belong only to the user')) {
+            errors.push('[FREETALK_PROMPT] ' + label + ' 사용자 선택·동의·미공개 내면 보호 계약 누락');
         }
     }
     for (const [label, source, sceneEn, sceneKo] of [

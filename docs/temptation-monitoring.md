@@ -17,6 +17,11 @@
   막혔을 판정**. 현재는 음수여도 최고 호감도의 라이벌을 선택한다. 동률은 시나리오 순서.
 - `offer_entered`: 유혹 선택지가 있는 장면 렌더링 완료. `offer_choice`는 실제 선택이며
   `details_json.accepted`로 수락 여부를 구별한다. 선택 로그 호감도는 선택 효과 적용 후다.
+  수락 후 CG 진입의 0점 조건도 제거했다. 신규 수락은 호감도와 무관하게 상대 CG로
+  직접 이동하며, `next_scene_id`로 선택된 CG 장면을 확인한다. 이전 버전의 수락 기록은
+  `day4_student_counteroffer_soft_*` 또는 `day4_adult_counteroffer_soft_*`로 이동할 수
+  있으므로 수락 건수를 CG 표시 건수와 동일하게 취급하지 않는다. 선택 로그는 이동 결정이며
+  이미지 로딩 성공 여부까지 증명하지는 않는다.
 - `freetalk_entered`: 프리토킹 UI 초기화 완료. 특히
   `morning5_counteroffer_group_talk`이 5일차 대면 프리토킹이다.
   실제 메시지 전송·응답 성공은 별도의 `chat_logs`를 확인한다.
