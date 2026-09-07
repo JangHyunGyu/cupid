@@ -81,6 +81,28 @@ test('failed transmission survives reload with the same event IDs; acknowledgeme
     assert.equal(restored.state.telemetryRunId, '');
 });
 
+test('temptation diagnostics distinguish the +50 reward and mutable real scores from dialogue affinity 100', async () => {
+    const h = harness();
+    const id = 'wall_dain_seo_tempt_2';
+    const scene = h.scenes[id];
+    const accept = scene.choices[1];
+    h.state.stats.Seoyeon.affinity = 50;
+    h.telemetry.choice(h.state, id, scene, accept, accept.next);
+    const talkId = 'day4_temptation_seoyeon_freetalk';
+    h.telemetry.entered(h.state, talkId, h.scenes[talkId]);
+    h.state.stats.Seoyeon.affinity = 46;
+    h.telemetry.transition(h.state, talkId, h.scenes[talkId], h.scenes[talkId].next);
+    await h.telemetry.flush();
+    const [choice, entry, exit] = h.requests[0].events;
+    assert.equal(choice.details.affinityEffects.Seoyeon.affinity, 50);
+    assert.equal(choice.details.affinityEffects.Dain.affinity, -10);
+    assert.equal(entry.details.dialogueAffinity, 100);
+    assert.equal(entry.details.affinityLocked, false);
+    assert.equal(entry.details.affinities.Seoyeon, 50);
+    assert.equal(exit.eventType, 'freetalk_exited');
+    assert.equal(exit.details.affinities.Seoyeon, 46);
+});
+
 test('Android file-origin users are production data; local and explicit smoke tests are excluded', async () => {
     for (const [hostname, explicit, expected] of [['', false, false], ['127.0.0.1', false, true], ['cupid.archerlab.dev', true, true]]) {
         const h = harness();

@@ -1,15 +1,16 @@
 const { test, expect } = require('@playwright/test');
 
 for (const [lang, character, lead, offer, startAffinity] of [
-    ['ko', 'Seoyeon', 'Dain', 'wall_dain_seo_tempt_2', -8],
+    ['ko', 'Seoyeon', 'Dain', 'wall_dain_seo_tempt_2', 0],
     ['ko', 'Yuna', 'Seoyeon', 'wall_seo_yuna_tempt_2', -100],
-    ['ko', 'Dain', 'Yuna', 'wall_yuna_dain_tempt_2', 30],
-    ['en', 'Seoyeon', 'Dain', 'wall_dain_seo_tempt_2', -8]
+    ['ko', 'Dain', 'Yuna', 'wall_yuna_dain_tempt_2', 48],
+    ['en', 'Seoyeon', 'Dain', 'wall_dain_seo_tempt_2', -50]
 ]) {
     test(`${lang}/${character}: accepted CG, five scene-only turns, reload, and normal affinity afterward`, async ({ page }) => {
         test.setTimeout(120_000);
         const requests = [];
         const events = [];
+        const requestedChanges = [5, -4, 5, -2, 5];
         await page.route('**/*', async route => {
             const request = route.request();
             if (request.method() !== 'POST') return route.continue();
@@ -21,7 +22,7 @@ for (const [lang, character, lead, offer, startAffinity] of [
                     : ['I’m glad you stayed.', 'I wanted to hear about your day.', 'Tell me a little more.', 'I like spending this time with you.', 'Let’s talk like this again.'];
                 return route.fulfill({ status: 200, json: { choices: [{ message: { content: JSON.stringify({
                     segments: [{ type: 'dialogue', text: replies[(requests.length - 1) % replies.length] }],
-                    expression: 'happy', affinity: 50, forcedSexualViolation: 'none'
+                    expression: 'happy', affinity: requestedChanges[requests.length - 1], forcedSexualViolation: 'none'
                 }) } }] } });
             }
             if (Array.isArray(body?.events)) events.push(...body.events);
@@ -44,9 +45,10 @@ for (const [lang, character, lead, offer, startAffinity] of [
             await e.renderScene(cg.next);
             return result;
         }, { character, lead, offer, startAffinity });
-        expect(accepted.affinity).toBe(startAffinity + 8);
+        expect(accepted.affinity).toBe(Math.min(100, startAffinity + 50));
         expect(accepted.background).toContain(`event_temptation_${character.toLowerCase()}`);
         const sceneId = `day4_temptation_${character.toLowerCase()}_freetalk`;
+        let expectedAffinity = accepted.affinity;
         for (let turn = 1; turn <= 5; turn++) {
             await page.waitForFunction(() => {
                 const e = window.gameEngine;
@@ -65,7 +67,10 @@ for (const [lang, character, lead, offer, startAffinity] of [
                     scene: e.sceneRenderer.currentSceneId, max: e.freeTalkSystem.currentMaxTurns,
                     background: e.uiManager.bgLayer.style.backgroundImage };
             }, character);
-            expect(state.affinity).toBe(accepted.affinity);
+            const requested = requestedChanges[turn - 1];
+            const applied = requested > 0 ? Math.min(requested, expectedAffinity >= 90 ? 2 : 3) : requested;
+            expectedAffinity = Math.max(-100, Math.min(100, expectedAffinity + applied));
+            expect(state.affinity).toBe(expectedAffinity);
             expect(state.turns).toBe(turn);
             expect(state.max).toBe(5);
             expect(state.scene).toBe(sceneId);
@@ -76,6 +81,7 @@ for (const [lang, character, lead, offer, startAffinity] of [
                 await page.reload();
                 await ready();
                 expect(await page.evaluate(() => window.gameEngine.freeTalkSystem.freeTalkTurns)).toBe(2);
+                expect(await page.evaluate(character => window.gameEngine.stateManager.getAffinity(character), character)).toBe(expectedAffinity);
             }
         }
         expect(new Set(requests.map(request => request.cacheKey)).size).toBe(1);
@@ -83,6 +89,7 @@ for (const [lang, character, lead, offer, startAffinity] of [
         await page.evaluate(() => window.CupidRouteTelemetry.flush());
         const entry = events.find(event => event.eventType === 'freetalk_entered' && event.sceneId === sceneId);
         expect(entry.details.dialogueAffinity).toBe(100);
+        expect(entry.details.affinityLocked).toBe(false);
         expect(entry.details.affinities[character]).toBe(accepted.affinity);
         await page.evaluate(async character => {
             const e = window.gameEngine;
@@ -94,6 +101,11 @@ for (const [lang, character, lead, offer, startAffinity] of [
             return e.freeTalkSystem._getSceneDialoguePolicy(e.sceneRenderer.getScene(e.sceneRenderer.currentSceneId));
         });
         expect(normal.romanticInterlude).toBe(false);
-        expect(normal.affinity).toBe(accepted.affinity);
+        expect(normal.affinity).toBe(expectedAffinity);
+        const ending = await page.evaluate(() => {
+            const e = window.gameEngine;
+            return e.sceneRenderer.resolveNextScene(e.sceneRenderer.getScene('ending_start'));
+        });
+        expect(ending).toBe('ending_counteroffer_bitter');
     });
 }

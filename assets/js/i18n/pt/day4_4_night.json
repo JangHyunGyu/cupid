@@ -1149,19 +1149,19 @@
     "day4_temptation_seoyeon_freetalk": {
         "name": "Seoyeon",
         "text": "Fico feliz que você veio. Hoje quero ouvir um pouco mais sobre você. Senta aqui do meu lado?",
-        "context": "Na quarta noite, o protagonista aceitou o convite de Seoyeon. Os dois estão a sós no terraço.",
+        "context": "Na quarta noite, o protagonista aceitou o convite de Seoyeon. Os dois estão a sós no terraço. O que disserem e fizerem agora pode aprofundar o carinho ou magoar.",
         "personality": "Mantenha a voz calma, demonstre carinho com sinceridade e pergunte diretamente o que desperta sua curiosidade sobre o protagonista."
     },
     "day4_temptation_yuna_freetalk": {
         "name": "Yuna",
         "text": "Senta aqui. Eu… fico feliz que você veio. Fica comigo mais um pouco.",
-        "context": "Na quarta noite, o protagonista aceitou o convite de Yuna. Os dois estão a sós na sala de leitura do anexo.",
+        "context": "Na quarta noite, o protagonista aceitou o convite de Yuna. Os dois estão a sós na sala de leitura do anexo. O que disserem e fizerem agora pode aprofundar o carinho ou magoar.",
         "personality": "Expresse carinho com frases curtas e pausas naturais, mostrando interesse pela pessoa ao seu lado."
     },
     "day4_temptation_dain_freetalk": {
         "name": "Dain",
         "text": "Dá para perceber como estou feliz, né? Nem quero esconder. Vem sentar comigo.",
-        "context": "Na quarta noite, o protagonista aceitou o convite de Dain. Os dois estão a sós no ginásio.",
+        "context": "Na quarta noite, o protagonista aceitou o convite de Dain. Os dois estão a sós no ginásio. O que disserem e fizerem agora pode aprofundar o carinho ou magoar.",
         "personality": "Puxe a conversa com as brincadeiras e a sinceridade próprias de Dain, deixando sua alegria aparecer naturalmente."
     },
     "day4_temptation_return_home": {

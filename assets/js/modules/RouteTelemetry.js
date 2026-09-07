@@ -88,7 +88,7 @@
         if (/^(wall_|day4_|morning5_)/.test(sceneId) && (scene.type === 'free_talk' || scene.type === 'group_free_talk')) {
             emit(state, sceneId, 'freetalk_entered', {
                 restoring, sceneType: scene.type, maxTurns: scene.maxTurns,
-                ...(scene.romanticInterlude === true && { dialogueAffinity: 100, affinityLocked: true })
+                ...(scene.romanticInterlude === true && { dialogueAffinity: 100, affinityLocked: scene.affinityLocked === true })
             });
         }
         if (['day4_night_regret', 'day4_night_reflect', 'morning5_caught_fallout_1', 'morning5_harem_fallout_1'].includes(sceneId)) {
@@ -124,7 +124,7 @@
             accepted: selected.setFlags?.includes('day4_counteroffer_penalty_deferred') || false,
             choiceIndex: scene.choices.findIndex(choice => choice.next === selected.next
                 && JSON.stringify(choice.setFlags || []) === JSON.stringify(selected.setFlags || [])), setFlags: selected.setFlags || [],
-            affinityBranches: selected.affinityBranches || []
+            affinityBranches: selected.affinityBranches || [], affinityEffects: selected.stats || {}
         }, nextSceneId);
     }
     window.CupidRouteTelemetry = { entered, transition, choice, flush };

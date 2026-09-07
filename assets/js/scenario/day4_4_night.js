@@ -105,7 +105,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "day4_adult_counteroffer_accept_seoyeon",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 8
+                        "affinity": 50
                     },
                     "Teacher": {
                         "affinity": -10
@@ -171,7 +171,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "day4_adult_counteroffer_accept_dain",
                 "stats": {
                     "Dain": {
-                        "affinity": 8
+                        "affinity": 50
                     },
                     "Teacher": {
                         "affinity": -10
@@ -236,7 +236,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "day4_adult_counteroffer_accept_yuna",
                 "stats": {
                     "Yuna": {
-                        "affinity": 8
+                        "affinity": 50
                     },
                     "Teacher": {
                         "affinity": -10
@@ -307,7 +307,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "day4_adult_counteroffer_accept_seoyeon",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 8
+                        "affinity": 50
                     },
                     "Nurse": {
                         "affinity": -10
@@ -373,7 +373,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "day4_adult_counteroffer_accept_dain",
                 "stats": {
                     "Dain": {
-                        "affinity": 8
+                        "affinity": 50
                     },
                     "Nurse": {
                         "affinity": -10
@@ -438,7 +438,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "day4_adult_counteroffer_accept_yuna",
                 "stats": {
                     "Yuna": {
-                        "affinity": 8
+                        "affinity": 50
                     },
                     "Nurse": {
                         "affinity": -10
@@ -995,7 +995,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "wall_seo_glimpse_4",
                 "stats": {
                     "Dain": {
-                        "affinity": 8
+                        "affinity": 50
                     },
                     "Seoyeon": {
                         "affinity": -10
@@ -1069,7 +1069,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "wall_seo_yuna_tempt_accept",
                 "stats": {
                     "Yuna": {
-                        "affinity": 8
+                        "affinity": 50
                     },
                     "Seoyeon": {
                         "affinity": -10
@@ -1625,7 +1625,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "wall_dain_glimpse_4",
                 "stats": {
                     "Yuna": {
-                        "affinity": 8
+                        "affinity": 50
                     },
                     "Dain": {
                         "affinity": -10
@@ -1694,7 +1694,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "wall_dain_seo_tempt_accept",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 8
+                        "affinity": 50
                     },
                     "Dain": {
                         "affinity": -10
@@ -2089,7 +2089,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "wall_yuna_glimpse_4",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 8
+                        "affinity": 50
                     },
                     "Yuna": {
                         "affinity": -10
@@ -2165,7 +2165,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "wall_yuna_dain_tempt_accept",
                 "stats": {
                     "Dain": {
-                        "affinity": 8
+                        "affinity": 50
                     },
                     "Yuna": {
                         "affinity": -10
@@ -2219,7 +2219,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "maxTurns": 5,
         "isRemote": false,
         "romanticInterlude": true,
-        "affinityLocked": true,
+        "affinityLocked": false,
         "locationKey": "top_school",
         "next": "day4_temptation_return_home"
     },
@@ -2231,7 +2231,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "maxTurns": 5,
         "isRemote": false,
         "romanticInterlude": true,
-        "affinityLocked": true,
+        "affinityLocked": false,
         "locationKey": "yuna_hideout",
         "next": "day4_temptation_return_home"
     },
@@ -2243,7 +2243,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "maxTurns": 5,
         "isRemote": false,
         "romanticInterlude": true,
-        "affinityLocked": true,
+        "affinityLocked": false,
         "locationKey": "gym",
         "next": "day4_temptation_return_home"
     },

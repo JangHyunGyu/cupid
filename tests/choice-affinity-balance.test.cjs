@@ -89,6 +89,12 @@ const scenario = loadScenario();
 const korean = loadKoreanCopy();
 const scenes = Object.assign({}, ...Object.values(scenario));
 const freeTalkCore = loadFreeTalkCore();
+const temptationAcceptanceSceneIds = new Set([
+    'wall_seo_glimpse_2', 'wall_seo_yuna_tempt_2', 'wall_dain_seo_tempt_2',
+    'wall_dain_glimpse_4_c', 'wall_yuna_glimpse_3_b', 'wall_yuna_dain_tempt_2',
+    'day4_teacher_seoyeon_counteroffer', 'day4_teacher_dain_counteroffer', 'day4_teacher_yuna_counteroffer',
+    'day4_nurse_seoyeon_counteroffer', 'day4_nurse_dain_counteroffer', 'day4_nurse_yuna_counteroffer'
+]);
 
 test('direct choice affinity distribution keeps subtle penalties meaningful but secondary', () => {
     const counts = { positive: 0, negative: 0, neutral: 0, mixed: 0 };
@@ -503,7 +509,7 @@ test('negative-choice screens stay distributed across every story day', () => {
     }
 });
 
-test('day 4 rival temptations use asymmetric relationship costs and stay localized', () => {
+test('day 4 rival temptations grant +50 while retaining relationship costs and localization', () => {
     const counteroffers = [
         {
             sceneId: 'wall_seo_glimpse_2',
@@ -569,7 +575,7 @@ test('day 4 rival temptations use asymmetric relationship costs and stay localiz
         assert.equal(scene.choices[0].stats?.[counteroffer.routeCharacter]?.affinity, counteroffer.heldGain);
         assert.equal(scene.choices[0].stats?.[counteroffer.rivalCharacter]?.affinity, -6);
         assert.ok(scene.choices[0].setFlags?.includes(counteroffer.heldFlag));
-        assert.equal(scene.choices[1].stats?.[counteroffer.rivalCharacter]?.affinity, 8);
+        assert.equal(scene.choices[1].stats?.[counteroffer.rivalCharacter]?.affinity, 50);
         assert.equal(scene.choices[1].stats?.[counteroffer.routeCharacter]?.affinity, -10);
         assert.ok(scene.choices[1].setFlags?.includes(counteroffer.temptedFlag));
         assert.ok(scene.choices[1].setFlags?.includes('day4_counteroffer_penalty_deferred'));
@@ -578,10 +584,33 @@ test('day 4 rival temptations use asymmetric relationship costs and stay localiz
         for (const choice of scene.choices) {
             const deltas = Object.values(choice.stats).map(stat => Number(stat.affinity));
             assert.equal(deltas.length, 2, `${counteroffer.sceneId} must affect exactly two rivals`);
-            assert.ok(deltas.reduce((sum, value) => sum + value, 0) <= 0, `${counteroffer.sceneId} must not create net affinity`);
+            const total = deltas.reduce((sum, value) => sum + value, 0);
+            if (choice === scene.choices[1]) assert.equal(total, 40, `${counteroffer.sceneId} accepted reward exception`);
+            else assert.ok(total <= 0, `${counteroffer.sceneId} other choices must not create net affinity`);
         }
         for (const copy of localizedCopies) {
             assert.equal(copy[counteroffer.sceneId]?.choices?.length, 4, `${counteroffer.sceneId} must exist in every locale`);
+        }
+    }
+});
+
+test('all twelve +50 acceptances retain the incident ending even at 100 affinity', () => {
+    const accepts = Object.entries(scenes).filter(([, scene]) => scene.choices?.some(choice => choice.setFlags?.includes('day4_counteroffer_penalty_deferred')));
+    assert.deepEqual(accepts.map(([id]) => id).sort(), [...temptationAcceptanceSceneIds].sort());
+    for (const [id, scene] of accepts) {
+        const accept = scene.choices[1];
+        assert.deepEqual(Object.values(accept.stats).map(stat => stat.affinity).sort((a, b) => a - b), [-10, 50], id);
+        const lead = Object.keys(accept.stats).find(character => accept.stats[character].affinity < 0);
+        for (const score of [-100, 0, 50, 100]) {
+            for (const choice of ['lead', 'tempter', 'neither']) {
+                const affinities = Object.fromEntries(['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse'].map(character => [character, score]));
+                const flags = { [`route_${lead.toLowerCase()}`]: true, day4_confession_accepted: true,
+                    [`day5_counteroffer_choice_${choice}`]: true, ...Object.fromEntries(accept.setFlags.map(flag => [flag, true])) };
+                if (lead === 'Teacher' || lead === 'Nurse') flags[`hidden_route_chosen_${lead.toLowerCase()}`] = true;
+                const renderer = createSceneRenderer(affinities, flags);
+                assert.equal(renderer.resolveNextScene(scenes.ending_start), 'ending_counteroffer_bitter', `${id}/${score}`);
+                assert.equal(renderer.resolveNextScene(scenes.ending_counteroffer_bitter), `ending_counteroffer_choice_${choice}`);
+            }
         }
     }
 });
@@ -734,7 +763,13 @@ test('competitive scenes retain both relationship tradeoffs and add two all-nega
                 .filter(Number.isFinite);
             assert.equal(deltas.length, 2, `${sceneId} must affect exactly two characters`);
             assert.ok(deltas.some(value => value > 0) && deltas.some(value => value < 0), `${sceneId} must trade affinity between rivals`);
-            assert.ok(deltas.reduce((sum, value) => sum + value, 0) <= 0, `${sceneId} must not create net affinity`);
+            if (choice.setFlags?.includes('day4_counteroffer_penalty_deferred')) {
+                assert.ok(temptationAcceptanceSceneIds.has(sceneId), `${sceneId} is not an authorized +50 exception`);
+                assert.equal(choice, scene.choices[1]);
+                assert.deepEqual(deltas.sort((a, b) => a - b), [-10, 50]);
+            } else {
+                assert.ok(deltas.reduce((sum, value) => sum + value, 0) <= 0, `${sceneId} must not create net affinity`);
+            }
         }
         for (const choice of scene.choices.slice(2)) {
             const deltas = Object.values(choice.stats || {})
@@ -1228,7 +1263,7 @@ test('every eligible day-four route shows the accepted rival CG at any affinity 
                         if (scene.type === 'free_talk') {
                             assert.equal(id, `day4_temptation_${rival.toLowerCase()}_freetalk`, label);
                             assert.equal(scene.maxTurns, 5, label);
-                            assert.equal(scene.affinityLocked, true, label);
+                            assert.equal(scene.affinityLocked, false, label);
                             assert.equal(scene.romanticInterlude, true, label);
                         }
                         assert.notEqual(scene.type, 'group_free_talk', `${label}: wrong group at ${id}`);

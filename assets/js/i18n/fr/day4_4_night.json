@@ -1149,19 +1149,19 @@
     "day4_temptation_seoyeon_freetalk": {
         "name": "Seoyeon",
         "text": "Je suis contente que tu sois venu. Ce soir, j’ai envie d’en apprendre un peu plus sur toi. Tu t’assieds à côté de moi ?",
-        "context": "Le quatrième soir, le protagoniste a accepté l’invitation de Seoyeon. Ils sont seuls sur le toit.",
+        "context": "Le quatrième soir, le protagoniste a accepté l’invitation de Seoyeon. Ils sont seuls sur le toit. Leurs paroles et leurs gestes peuvent maintenant renforcer leur affection ou la blesser.",
         "personality": "Garde sa voix calme, exprime franchement son affection et pose des questions directes sur ce qui l’intéresse chez le protagoniste."
     },
     "day4_temptation_yuna_freetalk": {
         "name": "Yuna",
         "text": "Assieds-toi ici. Je suis… contente que tu sois venu. Reste un peu avec moi.",
-        "context": "Le quatrième soir, le protagoniste a accepté l’invitation de Yuna. Ils sont seuls dans la salle de lecture de l’annexe.",
+        "context": "Le quatrième soir, le protagoniste a accepté l’invitation de Yuna. Ils sont seuls dans la salle de lecture de l’annexe. Leurs paroles et leurs gestes peuvent maintenant renforcer leur affection ou la blesser.",
         "personality": "Exprime son affection par des phrases courtes et des silences naturels, en s’intéressant à la personne à ses côtés."
     },
     "day4_temptation_dain_freetalk": {
         "name": "Dain",
         "text": "Ça se voit que je suis contente, hein ? Je n’ai pas envie de le cacher. Viens t’asseoir avec moi.",
-        "context": "Le quatrième soir, le protagoniste a accepté l’invitation de Dain. Ils sont seuls dans le gymnase.",
+        "context": "Le quatrième soir, le protagoniste a accepté l’invitation de Dain. Ils sont seuls dans le gymnase. Leurs paroles et leurs gestes peuvent maintenant renforcer leur affection ou la blesser.",
         "personality": "Lance la conversation avec la franchise et les taquineries propres à Dain, et laisse paraître sa joie."
     },
     "day4_temptation_return_home": {

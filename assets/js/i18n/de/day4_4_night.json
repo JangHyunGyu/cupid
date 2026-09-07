@@ -1149,19 +1149,19 @@
     "day4_temptation_seoyeon_freetalk": {
         "name": "Seoyeon",
         "text": "Ich freue mich, dass du gekommen bist. Heute Abend möchte ich mehr von dir hören. Setzt du dich neben mich?",
-        "context": "Am vierten Abend hat der Protagonist Seoyeons Einladung angenommen. Die beiden sind allein auf dem Dach.",
+        "context": "Am vierten Abend hat der Protagonist Seoyeons Einladung angenommen. Die beiden sind allein auf dem Dach. Ihre Worte und Handlungen können die Zuneigung jetzt vertiefen oder verletzen.",
         "personality": "Bewahre ihre ruhige Stimme, zeige Zuneigung offen und frage direkt nach dem, was sie am Protagonisten interessiert."
     },
     "day4_temptation_yuna_freetalk": {
         "name": "Yuna",
         "text": "Setz dich hierher. Ich bin… froh, dass du da bist. Bleib noch etwas bei mir.",
-        "context": "Am vierten Abend hat der Protagonist Yunas Einladung angenommen. Die beiden sind allein im Leseraum des Nebengebäudes.",
+        "context": "Am vierten Abend hat der Protagonist Yunas Einladung angenommen. Die beiden sind allein im Leseraum des Nebengebäudes. Ihre Worte und Handlungen können die Zuneigung jetzt vertiefen oder verletzen.",
         "personality": "Vermittle Zuneigung mit kurzen Sätzen und natürlichen Pausen und zeige Interesse an der Person neben ihr."
     },
     "day4_temptation_dain_freetalk": {
         "name": "Dain",
         "text": "Man merkt mir an, wie sehr ich mich freue, oder? Ich will es auch gar nicht verstecken. Komm, setz dich zu mir.",
-        "context": "Am vierten Abend hat der Protagonist Dains Einladung angenommen. Die beiden sind allein in der Turnhalle.",
+        "context": "Am vierten Abend hat der Protagonist Dains Einladung angenommen. Die beiden sind allein in der Turnhalle. Ihre Worte und Handlungen können die Zuneigung jetzt vertiefen oder verletzen.",
         "personality": "Beginne das Gespräch mit Dains spielerischer Ehrlichkeit und lass ihre Freude natürlich sichtbar werden."
     },
     "day4_temptation_return_home": {

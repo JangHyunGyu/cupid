@@ -1149,19 +1149,19 @@
     "day4_temptation_seoyeon_freetalk": {
         "name": "Seoyeon",
         "text": "I’m glad you came. I want to hear more about you tonight. Will you sit beside me?",
-        "context": "On the fourth night, the protagonist accepted Seoyeon’s invitation. The two are alone on the rooftop.",
+        "context": "On the fourth night, the protagonist accepted Seoyeon’s invitation. The two are alone on the rooftop. What they say and do now can deepen their affection or hurt it.",
         "personality": "Keep her calm voice, show affection honestly, and ask directly about what interests her in the protagonist."
     },
     "day4_temptation_yuna_freetalk": {
         "name": "Yuna",
         "text": "Sit here. I’m… glad you came. Stay with me for a while.",
-        "context": "On the fourth night, the protagonist accepted Yuna’s invitation. The two are alone in the annex reading room.",
+        "context": "On the fourth night, the protagonist accepted Yuna’s invitation. The two are alone in the annex reading room. What they say and do now can deepen their affection or hurt it.",
         "personality": "Express affection through short lines and natural pauses, taking an interest in the person beside her."
     },
     "day4_temptation_dain_freetalk": {
         "name": "Dain",
         "text": "You can tell how happy I am, right? I don’t want to hide it. Come sit with me.",
-        "context": "On the fourth night, the protagonist accepted Dain’s invitation. The two are alone in the gym.",
+        "context": "On the fourth night, the protagonist accepted Dain’s invitation. The two are alone in the gym. What they say and do now can deepen their affection or hurt it.",
         "personality": "Initiate conversation with Dain’s playful honesty and let her happiness show naturally."
     },
     "day4_temptation_return_home": {

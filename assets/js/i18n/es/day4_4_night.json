@@ -1149,19 +1149,19 @@
     "day4_temptation_seoyeon_freetalk": {
         "name": "Seoyeon",
         "text": "Me alegra que hayas venido. Esta noche quiero saber un poco más de ti. ¿Te sientas a mi lado?",
-        "context": "La cuarta noche, el protagonista aceptó la invitación de Seoyeon. Están a solas en la azotea.",
+        "context": "La cuarta noche, el protagonista aceptó la invitación de Seoyeon. Están a solas en la azotea. Lo que digan y hagan ahora puede fortalecer el cariño o herirlo.",
         "personality": "Conserva su voz serena, expresa su cariño con franqueza y pregunta directamente lo que le interesa del protagonista."
     },
     "day4_temptation_yuna_freetalk": {
         "name": "Yuna",
         "text": "Siéntate aquí. Me… alegra que hayas venido. Quédate conmigo un rato.",
-        "context": "La cuarta noche, el protagonista aceptó la invitación de Yuna. Están a solas en la sala de lectura del anexo.",
+        "context": "La cuarta noche, el protagonista aceptó la invitación de Yuna. Están a solas en la sala de lectura del anexo. Lo que digan y hagan ahora puede fortalecer el cariño o herirlo.",
         "personality": "Expresa cariño con frases breves y pausas naturales, mostrando interés por la persona a su lado."
     },
     "day4_temptation_dain_freetalk": {
         "name": "Dain",
         "text": "Se me nota lo contenta que estoy, ¿verdad? No quiero esconderlo. Ven, siéntate conmigo.",
-        "context": "La cuarta noche, el protagonista aceptó la invitación de Dain. Están a solas en el gimnasio.",
+        "context": "La cuarta noche, el protagonista aceptó la invitación de Dain. Están a solas en el gimnasio. Lo que digan y hagan ahora puede fortalecer el cariño o herirlo.",
         "personality": "Inicia la conversación con las bromas y la sinceridad propias de Dain, dejando ver su alegría."
     },
     "day4_temptation_return_home": {

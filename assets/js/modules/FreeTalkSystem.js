@@ -380,7 +380,7 @@ class FreeTalkSystem {
         };
         const romanticInterlude = targets[sceneId] === character
             && scene.type === 'free_talk' && scene.romanticInterlude === true
-            && scene.affinityLocked === true && scene.maxTurns === 5;
+            && scene.affinityLocked === false && scene.maxTurns === 5;
         const actualAffinity = this.stateManager.getAffinity
             ? this.stateManager.getAffinity(character)
             : (this.stateManager.stats?.[character]?.affinity || 0);
@@ -2780,7 +2780,7 @@ class FreeTalkSystem {
         const requestedChange = CupidFreeTalkCore.enforceCupidAffinityIntimacyBoundary(
             change,
             latestUserText,
-            previousValue,
+            this._getSceneDialoguePolicy(scene).affinity,
             { nonRomance: charKey === 'Haeun' }
         );
         if (requestedChange === 0) {
