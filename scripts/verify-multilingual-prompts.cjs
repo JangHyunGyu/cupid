@@ -348,6 +348,13 @@ const progress = {
 
 for (const lang of languages) {
     const briefContinuationRule = context.window.buildCupidLowInformationContinuationRule('...', lang);
+    const agencyRules = context.window.CupidFreeTalkCore.buildCharacterAgencyRule(lang)
+        + context.window.CupidFreeTalkCore.buildCharacterAgencyTurnRule(lang);
+    assert(!/blanket refusal|without lectures|rechazo automático|sin sermones|一律拒否|説教|refus automatique|sans leçons|pauschale Ablehnung|ohne Belehrung|recusa automática|sem sermões/.test(agencyRules),
+        `[${lang}] agency rules must not prohibit character-grounded refusal or reproach`);
+    const consentRule = context.window.buildCupidConsensualAdultRoleplayRule(lang);
+    assert(!/Continue performed|Continúa resistencia|範囲だけ続け|Ne poursuivez résistance|Rollenspiel fortsetzen|Continue resistência/.test(consentRule),
+        `[${lang}] consent guidance must not prescribe continuing performed coercion`);
     assert(briefContinuationRule.includes(briefContinuationSignals[lang]),
         `[${lang}] brief continuation input is missing its localized runtime rule`);
     assert(context.window.buildCupidLowInformationContinuationRule('This message contains a concrete new request.', lang) === '',

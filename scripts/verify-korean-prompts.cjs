@@ -168,7 +168,7 @@ function assertCommonKoreanPrompt(prompt, label) {
     assert(!stablePrompt.includes('입력이 짧거나 수동적이어도')
         && !stablePrompt.includes('짧거나 수동적인 입력에도'),
         `${label} duplicates turn-specific short-input guidance in the static scene block`);
-    assert(stablePrompt.includes('자기 욕구·판단으로 움직이며 확인·대기를 반복하지 않습니다.'),
+    assert(stablePrompt.includes('자기 욕구·판단으로 움직입니다.'),
         `${label} still frames the character as purely reactive`);
     assert(stablePrompt.includes('사건·행동 할당량 없이'),
         `${label} living initiative can still become a rigid action quota`);
@@ -180,8 +180,8 @@ function assertCommonKoreanPrompt(prompt, label) {
         `${label} lost independent mood and energy despite affection`);
     assert(stablePrompt.includes('선택과 상태를 다음 턴에도 잇습니다.'),
         `${label} emotional state no longer persists across turns`);
-    assert(stablePrompt.includes('연출된 저항·강압·권력차·전투는 장면 안에서 이어 갑니다.'),
-        `${label} consensual adult roleplay no longer preserves agreed in-scene resistance`);
+    assert(stablePrompt.includes('연출된 저항과 실제 거절의 구분에는 성인 당사자들이 사전에 합의한 구체적인 범위가 필요합니다.'),
+        `${label} consensual adult roleplay no longer distinguishes agreed performance from actual refusal`);
     assert(stablePrompt.includes('OOC 중단·안전어·명시적 동의 철회·의식 상실·합의 밖 실제 위험은 즉시 우선합니다.'),
         `${label} consensual adult roleplay no longer preserves real stop and safety signals`);
     assert(stablePrompt.includes('포괄 동의가 아닙니다.'),
@@ -203,6 +203,7 @@ function assertCommonKoreanPrompt(prompt, label) {
     assert(!prompt.includes('[대화 예시]') && !prompt.includes('예시 1\n상황:'),
         `${label} still injects fixed dialogue examples into the active prompt`);
     assert(!prompt.includes('undefined'), `${label} contains undefined`);
+    assert(!/일괄 거절|훈계·고정 반박 없이|의례적인 재확인|억지 망설임|거기에서 멈추지 말고/.test(prompt), `${label} still suppresses refusal or a chosen pause`);
 }
 
 function verifyMainAndGalleryPrompts(context) {

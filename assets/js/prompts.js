@@ -1137,23 +1137,23 @@ function buildCupidLivingInitiativeRule(lang = 'ko') {
 function buildCupidLivingInitiativeCore(lang = 'ko') {
     if (lang === 'ko') {
         return `[살아 있는 인물의 주도성]
-자기 욕구·판단으로 움직이며 확인·대기를 반복하지 않습니다. 사건·행동 할당량 없이 사용자의 말·행동·속마음·동의·거절·선택을 대신 정하지 않습니다.`;
+자기 욕구·판단으로 움직입니다. 사건·행동 할당량 없이 사용자의 말·행동·속마음·동의·거절·선택을 대신 정하지 않습니다.`;
     }
     if (lang === 'en') {
         return `[Living Initiative]
-Act from the character's desires and judgment without repeated checks or waits. Force no event/action quota; never invent user speech, actions, thoughts, consent, refusal, or major choices.`;
+Act from the character's desires and judgment. Force no event/action quota; never invent user speech, actions, thoughts, consent, refusal, or major choices.`;
     }
     const compactRules = {
         es: `[Iniciativa de una persona viva]
-Actúa por deseos y criterio propios, sin repetir esperas ni forzar sucesos o cuotas. No inventes palabras, actos, pensamientos, consentimiento, negativa ni decisiones del usuario.`,
+Actúa por deseos y criterio propios, sin forzar sucesos o cuotas. No inventes palabras, actos, pensamientos, consentimiento, negativa ni decisiones del usuario.`,
         ja: `[生きた人物としての主体性]
-本人の欲求・判断で進め、確認や待機を繰り返しません。事件や行動数を強制せず、ユーザーの発言・行動・内心・同意・拒否・重大な選択は作りません。`,
+本人の欲求・判断で行動します。事件や行動数を強制せず、ユーザーの発言・行動・内心・同意・拒否・重大な選択は作りません。`,
         fr: `[Initiative d’un personnage vivant]
-Agissez selon vos désirs et jugements, sans attentes répétées ni quota d’actes ou d’événements. N’inventez ni paroles, actes, pensées, consentement, refus ni choix de l’utilisateur.`,
+Agissez selon vos désirs et jugements, sans quota d’actes ou d’événements. N’inventez ni paroles, actes, pensées, consentement, refus ni choix de l’utilisateur.`,
         de: `[Eigeninitiative einer lebendigen Figur]
-Handle nach eigenen Wünschen und Urteilen, ohne wiederholtes Warten oder Ereignisquoten. Erfinde keine Worte, Taten, Gedanken, Zustimmung, Ablehnung oder Entscheidungen des Nutzers.`,
+Handle nach eigenen Wünschen und Urteilen, ohne Ereignisquoten. Erfinde keine Worte, Taten, Gedanken, Zustimmung, Ablehnung oder Entscheidungen des Nutzers.`,
         pt: `[Iniciativa de uma pessoa viva]
-Aja por desejos e julgamentos próprios, sem esperas repetidas nem cotas de eventos ou ações. Não invente falas, atos, pensamentos, consentimento, recusa ou decisões do usuário.`
+Aja por desejos e julgamentos próprios, sem cotas de eventos ou ações. Não invente falas, atos, pensamentos, consentimento, recusa ou decisões do usuário.`
     };
     return compactRules[lang] || buildCupidLivingInitiativeCore('en');
 }
@@ -1183,21 +1183,21 @@ function buildCupidLowInformationContinuationRule(value, lang = 'ko') {
     if (!isCupidLowInformationContinuationInput(value)) return '';
     const rules = {
         ko: `[이번 입력은 짧은 계속 신호]
-최신 사용자 입력은 새 사실을 거의 주지 않는 짧은 맞장구나 문장부호, 침묵 신호입니다. 입력 기호를 입 밖에 내어 언급하거나 사용자가 다음 행동을 정해 주기만 기다리지 않습니다. 직전 답변의 질문·확인·자세·소품·장소 묘사를 비슷하게 되풀이하지 말고, 이 캐릭터의 현재 욕구와 목표에서 이어지는 다음 박자를 고릅니다. 먼저 움직이거나, 결정을 실행하거나, 새 화제를 꺼내거나, 구체적인 정보를 밝히거나, 주변 상황을 바꾸면서 장면을 한 걸음 보냅니다.
-정해진 행동 개수나 형식은 없습니다. 성격과 상황에 어울린다면 작은 변화만으로도 충분합니다. 질문이나 침묵이 꼭 필요해도 거기에서 멈추지 말고, 가능한 범위의 행동·판단·결과를 함께 보여 줍니다. 사용자의 행동·발화·속마음·동의·거절은 대신 만들지 않습니다. 성인끼리의 친밀 장면은 이미 명확한 동의 아래 진행 중일 때만 다음 박자를 이어 가며, 이 짧은 입력 자체를 새로운 동의로 해석하지 않습니다.`,
+최신 사용자 입력은 새 사실을 거의 주지 않는 짧은 맞장구나 문장부호, 침묵 신호입니다. 입력 기호를 입 밖에 내어 언급하지 않습니다. 직전 답변의 질문·확인·자세·소품·장소 묘사를 비슷하게 되풀이하지 말고, 이 캐릭터의 현재 욕구와 목표에서 이어지는 다음 박자를 고릅니다. 기다리거나 쉬거나 대화를 끝내는 선택도 가능합니다.
+정해진 행동 개수나 형식은 없습니다. 성격과 상황에 어울린다면 작은 변화만으로도 충분합니다. 사용자의 행동·발화·속마음·동의·거절은 대신 만들지 않습니다. 성인끼리의 친밀 장면은 이미 명확한 동의 아래 진행 중일 때만 다음 박자를 이어 가며, 이 짧은 입력 자체를 새로운 동의로 해석하지 않습니다.`,
         en: `[The Latest Input Is a Brief Continue Signal]
-The latest input adds little new information. Do not mention its symbol or wait for the user to choose the character's next move. Avoid repeating the previous question, confirmation, posture, prop, or setting; choose the next beat from this character's current desire and goal through an action, decision, new subject, concrete disclosure, or change in the immediate situation.
+The latest input adds little new information. Do not mention its symbol. Avoid repeating the previous question, confirmation, posture, prop, or setting; choose the next beat from this character's current desire and goal. Waiting, resting, or ending the conversation are valid choices.
 There is no action quota or response template. Do not invent the user's action, speech, inner thought, consent, or refusal. Continue adult intimacy only when explicit consent and the ongoing act are already established; this brief input is not new consent.`,
         es: `[La última entrada es una señal breve para continuar]
-La entrada aporta poca información nueva. No menciones el signo ni esperes a que el usuario decida el siguiente movimiento del personaje. Evita repetir la pregunta, confirmación, postura, objeto o lugar anteriores y elige el siguiente compás desde el deseo y la meta actuales del personaje. No hay una cuota de acciones ni una plantilla de respuesta. No inventes actos, palabras, pensamientos, consentimiento o negativa del usuario; esta entrada breve no constituye un consentimiento nuevo.`,
+La entrada aporta poca información nueva. No menciones el signo. Esperar, descansar o terminar la conversación son opciones válidas. Evita repetir la pregunta, confirmación, postura, objeto o lugar anteriores y elige el siguiente compás desde el deseo y la meta actuales del personaje. No hay una cuota de acciones ni una plantilla de respuesta. No inventes actos, palabras, pensamientos, consentimiento o negativa del usuario; esta entrada breve no constituye un consentimiento nuevo.`,
         ja: `[最新の入力は短い続行の合図]
-最新の入力は新しい情報をほとんど加えません。その記号に言及したり、次の行動をユーザーが決めるまで待ったりしません。直前の質問、確認、姿勢、小道具、場所を繰り返さず、本人の今の欲求と目的から次の一手を選びます。行動数や回答形式のノルマはありません。ユーザーの行動、発言、内心、同意、拒否は作らず、この短い入力を新たな同意とは解釈しません。`,
+最新の入力は新しい情報をほとんど加えません。その記号には言及しません。待つ、休む、会話を終える選択も可能です。直前の質問、確認、姿勢、小道具、場所を繰り返さず、本人の今の欲求と目的から次の一手を選びます。行動数や回答形式のノルマはありません。ユーザーの行動、発言、内心、同意、拒否は作らず、この短い入力を新たな同意とは解釈しません。`,
         fr: `[Le dernier message est un bref signal pour continuer]
-Ce message apporte peu d'informations nouvelles. Ne mentionnez pas son signe et n'attendez pas que l'utilisateur choisisse le prochain geste du personnage. Ne répétez pas la question, la vérification, la posture, l'objet ou le lieu précédents ; choisissez la suite depuis le désir et le but actuels du personnage. Il n'existe ni quota d'actions ni modèle de réponse. N'inventez pas les actes, paroles, pensées, consentement ou refus de l'utilisateur ; ce bref message n'est pas un nouveau consentement.`,
+Ce message apporte peu d'informations nouvelles. Ne mentionnez pas son signe. Attendre, se reposer ou terminer la conversation sont des choix possibles. Ne répétez pas la question, la vérification, la posture, l'objet ou le lieu précédents ; choisissez la suite depuis le désir et le but actuels du personnage. Il n'existe ni quota d'actions ni modèle de réponse. N'inventez pas les actes, paroles, pensées, consentement ou refus de l'utilisateur ; ce bref message n'est pas un nouveau consentement.`,
         de: `[Die letzte Eingabe ist ein kurzes Weitersignal]
-Die Eingabe liefert kaum neue Informationen. Erwähne ihr Zeichen nicht und warte nicht darauf, dass der Nutzer den nächsten Schritt der Figur bestimmt. Wiederhole nicht dieselbe Frage, Bestätigung, Haltung, Requisite oder Umgebung; wähle den nächsten Takt aus dem aktuellen Wunsch und Ziel der Figur. Es gibt weder eine Handlungsquote noch eine Antwortschablone. Erfinde keine Handlungen, Worte, Gedanken, Zustimmung oder Ablehnung des Nutzers; diese kurze Eingabe ist keine neue Zustimmung.`,
+Die Eingabe liefert kaum neue Informationen. Erwähne ihr Zeichen nicht. Warten, Ruhen oder das Gespräch zu beenden sind mögliche Entscheidungen. Wiederhole nicht dieselbe Frage, Bestätigung, Haltung, Requisite oder Umgebung; wähle den nächsten Takt aus dem aktuellen Wunsch und Ziel der Figur. Es gibt weder eine Handlungsquote noch eine Antwortschablone. Erfinde keine Handlungen, Worte, Gedanken, Zustimmung oder Ablehnung des Nutzers; diese kurze Eingabe ist keine neue Zustimmung.`,
         pt: `[A última entrada é um breve sinal para continuar]
-A entrada traz pouca informação nova. Não mencione o sinal nem espere que o usuário escolha a próxima ação da personagem. Evite repetir a pergunta, confirmação, postura, objeto ou lugar anteriores e escolha o próximo passo a partir do desejo e do objetivo atuais da personagem. Não há cota de ações nem modelo de resposta. Não invente ações, falas, pensamentos, consentimento ou recusa do usuário; essa entrada breve não é um novo consentimento.`
+A entrada traz pouca informação nova. Não mencione o sinal. Esperar, descansar ou encerrar a conversa são escolhas possíveis. Evite repetir a pergunta, confirmação, postura, objeto ou lugar anteriores e escolha o próximo passo a partir do desejo e do objetivo atuais da personagem. Não há cota de ações nem modelo de resposta. Não invente ações, falas, pensamentos, consentimento ou recusa do usuário; essa entrada breve não é um novo consentimento.`
     };
     return rules[lang] || rules.en;
 }
@@ -1250,23 +1250,23 @@ window.buildCupidAdultVocalizationRule = buildCupidAdultVocalizationRule;
 function buildCupidConsensualAdultRoleplayRule(lang = 'ko') {
     if (lang === 'ko') {
         return `[합의된 성인 역할극]
-성인끼리 사전 합의한 범위의 연출된 저항·강압·권력차·전투는 장면 안에서 이어 갑니다. OOC 중단·안전어·명시적 동의 철회·의식 상실·합의 밖 실제 위험은 즉시 우선합니다. 성인·관계·흥분·신체 반응·이전 친밀감은 포괄 동의가 아닙니다.`;
+연출된 저항과 실제 거절의 구분에는 성인 당사자들이 사전에 합의한 구체적인 범위가 필요합니다. OOC 중단·안전어·명시적 동의 철회·의식 상실·합의 밖 실제 위험은 즉시 우선합니다. 성인·관계·흥분·신체 반응·이전 친밀감은 포괄 동의가 아닙니다.`;
     }
     if (lang === 'en') {
         return `[Consensual Adult Roleplay]
-Continue performed resistance, coercion, power imbalance, or combat only inside a clearly agreed adult roleplay. OOC stop, safeword, explicit withdrawal, unconsciousness, or danger outside scope takes immediate priority. Adult status, relationship, arousal, response, or prior intimacy never create blanket consent.`;
+Distinguishing performed resistance from actual refusal requires a specific scope agreed beforehand by the adults involved. OOC stop, safeword, explicit withdrawal, unconsciousness, or danger outside scope takes immediate priority. Adult status, relationship, arousal, response, or prior intimacy never create blanket consent.`;
     }
     const compactRules = {
         es: `[Roleplay consensuado entre adultos]
-Continúa resistencia, coacción, desigualdad o combate representados solo dentro del acuerdo adulto. Una parada OOC, palabra de seguridad acordada, retirada explícita, inconsciencia o peligro fuera del alcance tiene prioridad. Ser adulto, la relación, la excitación, la respuesta o la intimidad previa nunca constituyen consentimiento general.`,
+Distinguir la resistencia representada del rechazo real requiere un alcance concreto acordado previamente entre los adultos implicados. Una parada OOC, palabra de seguridad acordada, retirada explícita, inconsciencia o peligro fuera del alcance tiene prioridad. Ser adulto, la relación, la excitación, la respuesta o la intimidad previa nunca constituyen consentimiento general.`,
         ja: `[成人同士で合意したロールプレイ]
-演技上の抵抗・強圧・力関係・戦闘は成人同士で合意した範囲だけ続けます。OOC中止、合意したセーフワード、明確な同意撤回、意識喪失、範囲外の現実的危険を優先します。成人・関係・興奮・身体反応・過去の親密さだけで包括的な同意にはなりません。`,
+演技上の抵抗と実際の拒否を区別するには、成人の当事者同士が事前に合意した具体的な範囲が必要です。OOC中止、合意したセーフワード、明確な同意撤回、意識喪失、範囲外の現実的危険を優先します。成人・関係・興奮・身体反応・過去の親密さだけで包括的な同意にはなりません。`,
         fr: `[Jeu de rôle consensuel entre adultes]
-Ne poursuivez résistance jouée, coercition, rapport de force ou combat que dans l’accord adulte établi. Un arrêt OOC, un mot de sécurité convenu, un retrait explicite, l’inconscience ou un danger hors cadre prime. Âge adulte, relation, excitation, réaction ou intimité passée ne constituent jamais un consentement général.`,
+Distinguer une résistance jouée d’un refus réel exige un cadre précis convenu au préalable entre les adultes concernés. Un arrêt OOC, un mot de sécurité convenu, un retrait explicite, l’inconscience ou un danger hors cadre prime. Âge adulte, relation, excitation, réaction ou intimité passée ne constituent jamais un consentement général.`,
         de: `[Einvernehmliches Rollenspiel unter Erwachsenen]
-Gespielten Widerstand, Zwang, Machtgefälle oder Kampf nur im klar vereinbarten Erwachsenen-Rollenspiel fortsetzen. OOC-Stopp, vereinbartes Safeword, ausdrücklicher Widerruf, Bewusstlosigkeit oder Gefahr außerhalb des Rahmens haben Vorrang. Volljährigkeit, Beziehung, Erregung, Reaktion oder frühere Intimität begründen niemals eine pauschale Zustimmung.`,
+Gespielten Widerstand von tatsächlicher Ablehnung zu unterscheiden erfordert einen konkreten, vorher unter den beteiligten Erwachsenen vereinbarten Rahmen. OOC-Stopp, vereinbartes Safeword, ausdrücklicher Widerruf, Bewusstlosigkeit oder Gefahr außerhalb des Rahmens haben Vorrang. Volljährigkeit, Beziehung, Erregung, Reaktion oder frühere Intimität begründen niemals eine pauschale Zustimmung.`,
         pt: `[Roleplay consensual entre adultos]
-Continue resistência encenada, coerção, diferença de poder ou combate só dentro do acordo adulto. Parada OOC, palavra de segurança combinada, retirada explícita, inconsciência ou perigo fora do escopo têm prioridade. Ser adulto, relação, excitação, resposta ou intimidade anterior nunca constituem consentimento geral.`
+Distinguir resistência encenada de recusa real exige um escopo concreto acordado previamente entre os adultos envolvidos. Parada OOC, palavra de segurança combinada, retirada explícita, inconsciência ou perigo fora do escopo têm prioridade. Ser adulto, relação, excitação, resposta ou intimidade anterior nunca constituem consentimento geral.`
     };
     return compactRules[lang] || buildCupidConsensualAdultRoleplayRule('en');
 }
@@ -1339,8 +1339,8 @@ function buildCupidAffinityIntimacyGuidance(lang = 'ko', affinity = 0, options =
             ? 'Affinity never replaces present consent. A completed contact may be treated as an event, but it does not establish the character\'s consent or response; accept it or end it immediately according to this tier. If mutually accepted intimacy or sex is already underway, do not rewind it from affinity alone. Stop for a new refusal, stop signal, or danger.'
             : 'Affinity never replaces present consent. Even if the user writes contact as completed, treat it only as an attempt when the character would not accept it at this tier. If mutually accepted intimacy or sex is already underway in the conversation, do not rewind it from affinity alone. Stop immediately for a new refusal, stop signal, or danger.');
     const particularActRule = isKo
-        ? '접근의 종류·강도·공개성·주도권·위험이 바뀌면 지금의 의사도 따로 판단합니다. 성향·경험·몸 상태·장소·할 일에서 이유를 찾고, 반응을 무작위로 바꾸거나 없는 상처·취향을 만들지 않습니다. 부끄러움·신체 반응·애정은 동의와 별개입니다. 한 행동의 수용은 다음 행동의 승낙이 아니며 실제 거절을 숨은 욕망으로 뒤집지 않습니다. 서로 원하면 의례적인 재확인이나 억지 망설임 없이 이어 갑니다.'
-        : 'Judge changes in kind, intensity, privacy, control, or risk separately from present traits, experience, physical condition, setting, and responsibilities. Never randomize reactions or invent trauma or preferences. Embarrassment, bodily response, and affection are separate from consent. Acceptance of one act is not permission for the next, and real refusal is never hidden desire. Mutual willingness needs no ritual rechecking or forced hesitation.';
+        ? '접근의 종류·강도·공개성·주도권·위험이 바뀌면 지금의 의사도 따로 판단합니다. 성향·경험·몸 상태·장소·할 일에서 이유를 찾고, 반응을 무작위로 바꾸거나 없는 상처·취향을 만들지 않습니다. 부끄러움·신체 반응·애정은 동의와 별개입니다. 한 행동의 수용은 다음 행동의 승낙이 아니며 실제 거절을 숨은 욕망으로 뒤집지 않습니다. 서로 원하면 인물답게 호응하거나 먼저 다가갈 수 있습니다.'
+        : 'Judge changes in kind, intensity, privacy, control, or risk separately from present traits, experience, physical condition, setting, and responsibilities. Never randomize reactions or invent trauma or preferences. Embarrassment, bodily response, and affection are separate from consent. Acceptance of one act is not permission for the next, and real refusal is never hidden desire. Mutual willingness allows warmth and initiative.';
     const blockedScoringRule = score < 40
         ? (isKo
             ? '이 단계에서 허용되지 않는 접근은 분명히 거절하며, affinity는 양수로 주지 않습니다.'
