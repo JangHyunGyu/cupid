@@ -2094,19 +2094,29 @@ try {
         }
     }
     if (!ftCoreContent.includes('function buildRecentExpressionRepetitionGuard(')
-        || !ftCoreContent.includes('function buildResponseShapeRepetitionGuard(')
         || !ftCoreContent.includes('function buildResponsePaceBlock(')
         || !ftCoreContent.includes('function buildPostHistoryGuidance(')
         || !ftSysContent.includes('CupidFreeTalkCore.buildRecentExpressionRepetitionGuard')
         || !gftContent.includes('GalleryFreeTalkCore.buildRecentExpressionRepetitionGuard')
         || !ftSysContent.includes('CupidFreeTalkCore.buildPostHistoryGuidance')
         || !gftContent.includes('GalleryFreeTalkCore.buildPostHistoryGuidance')) {
-        errors.push('[FREETALK_PROMPT] 최근 표현·형태 반복 또는 후단 응답 호흡 지침이 누락됨');
+        errors.push('[FREETALK_PROMPT] 최근 본문 반복 또는 후단 응답 호흡 지침이 누락됨');
     }
-    if (ftSysContent.includes('const gesturePatterns = [')
-        || gftContent.includes('const gesturePatterns = [')
-        || !/\)\s*>=\s*2\s*&&/.test(ftCoreContent)) {
-        errors.push('[FREETALK_PROMPT] 반복 감지가 실제 2회 이상 문구 중복보다 넓게 작동함');
+    if (activePromptSources.includes('buildResponseShapeRepetitionGuard')
+        || activePromptSources.includes('const gesturePatterns = [')) {
+        errors.push('[FREETALK_PROMPT] 제거한 답변 형식·몸짓 강제 변경 지침이 남아 있음');
+    }
+    const repetitionSandbox = { window: {} };
+    require('node:vm').runInNewContext(ftCoreContent, repetitionSandbox);
+    const repetitionGuard = repetitionSandbox.window.CupidFreeTalkCore.buildRecentExpressionRepetitionGuard;
+    const repeatedReply = { role: 'assistant', content: '그녀는 책갈피를 펼쳐 어제 표시한 문장을 다시 확인했다. 창밖에서 들려오는 빗소리에 잠시 귀를 기울인 뒤, 책을 탁자 위에 놓고 지금 이야기하던 약속을 차분히 설명했다.' };
+    for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+        if (repetitionGuard([repeatedReply], lang)
+            || !repetitionGuard([repeatedReply, repeatedReply], lang)
+            || repetitionGuard([{ role: 'assistant', content: '그녀는 작게 웃었다.' }, { role: 'assistant', content: '그녀는 작게 웃었다.' }], lang)
+            || repetitionGuard([repeatedReply, repeatedReply, { role: 'user', content: '다시 말해 줘. Repeat that.' }], lang)) {
+            errors.push('[FREETALK_PROMPT] ' + lang + ' 긴 본문 중복 감지 또는 말버릇·요청된 반복 예외가 잘못 작동함');
+        }
     }
     if (!promptsContent.includes('function getCupidRoleplayQualityIssue(')
         || !promptsContent.includes('unicode_replacement_character')

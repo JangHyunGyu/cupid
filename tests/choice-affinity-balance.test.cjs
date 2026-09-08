@@ -571,7 +571,7 @@ test('negative-choice screens stay distributed across every story day', () => {
     }
 });
 
-test('day 4 rival temptations grant +50 while retaining relationship costs and localization', () => {
+test('day 4 rival temptations grant +30 while retaining relationship costs and localization', () => {
     const counteroffers = [
         {
             sceneId: 'wall_seo_glimpse_2',
@@ -637,7 +637,7 @@ test('day 4 rival temptations grant +50 while retaining relationship costs and l
         assert.equal(scene.choices[0].stats?.[counteroffer.routeCharacter]?.affinity, counteroffer.heldGain);
         assert.equal(scene.choices[0].stats?.[counteroffer.rivalCharacter]?.affinity, -6);
         assert.ok(scene.choices[0].setFlags?.includes(counteroffer.heldFlag));
-        assert.equal(scene.choices[1].stats?.[counteroffer.rivalCharacter]?.affinity, 50);
+        assert.equal(scene.choices[1].stats?.[counteroffer.rivalCharacter]?.affinity, 30);
         assert.equal(scene.choices[1].stats?.[counteroffer.routeCharacter]?.affinity, -10);
         assert.ok(scene.choices[1].setFlags?.includes(counteroffer.temptedFlag));
         assert.ok(scene.choices[1].setFlags?.includes('day4_counteroffer_penalty_deferred'));
@@ -647,7 +647,7 @@ test('day 4 rival temptations grant +50 while retaining relationship costs and l
             const deltas = Object.values(choice.stats).map(stat => Number(stat.affinity));
             assert.equal(deltas.length, 2, `${counteroffer.sceneId} must affect exactly two rivals`);
             const total = deltas.reduce((sum, value) => sum + value, 0);
-            if (choice === scene.choices[1]) assert.equal(total, 40, `${counteroffer.sceneId} accepted reward exception`);
+            if (choice === scene.choices[1]) assert.equal(total, 20, `${counteroffer.sceneId} accepted reward exception`);
             else assert.ok(total <= 0, `${counteroffer.sceneId} other choices must not create net affinity`);
         }
         for (const copy of localizedCopies) {
@@ -656,12 +656,12 @@ test('day 4 rival temptations grant +50 while retaining relationship costs and l
     }
 });
 
-test('all twelve +50 acceptances retain the incident ending even at 100 affinity', () => {
+test('all twelve +30 acceptances retain the incident ending even at 100 affinity', () => {
     const accepts = Object.entries(scenes).filter(([, scene]) => scene.choices?.some(choice => choice.setFlags?.includes('day4_counteroffer_penalty_deferred')));
     assert.deepEqual(accepts.map(([id]) => id).sort(), [...temptationAcceptanceSceneIds].sort());
     for (const [id, scene] of accepts) {
         const accept = scene.choices[1];
-        assert.deepEqual(Object.values(accept.stats).map(stat => stat.affinity).sort((a, b) => a - b), [-10, 50], id);
+        assert.deepEqual(Object.values(accept.stats).map(stat => stat.affinity).sort((a, b) => a - b), [-10, 30], id);
         const lead = Object.keys(accept.stats).find(character => accept.stats[character].affinity < 0);
         for (const score of [-100, 0, 50, 100]) {
             for (const choice of ['lead', 'tempter', 'neither']) {
@@ -826,9 +826,9 @@ test('competitive scenes retain both relationship tradeoffs and add two all-nega
             assert.equal(deltas.length, 2, `${sceneId} must affect exactly two characters`);
             assert.ok(deltas.some(value => value > 0) && deltas.some(value => value < 0), `${sceneId} must trade affinity between rivals`);
             if (choice.setFlags?.includes('day4_counteroffer_penalty_deferred')) {
-                assert.ok(temptationAcceptanceSceneIds.has(sceneId), `${sceneId} is not an authorized +50 exception`);
+                assert.ok(temptationAcceptanceSceneIds.has(sceneId), `${sceneId} is not an authorized +30 exception`);
                 assert.equal(choice, scene.choices[1]);
-                assert.deepEqual(deltas.sort((a, b) => a - b), [-10, 50]);
+                assert.deepEqual(deltas.sort((a, b) => a - b), [-10, 30]);
             } else {
                 assert.ok(deltas.reduce((sum, value) => sum + value, 0) <= 0, `${sceneId} must not create net affinity`);
             }

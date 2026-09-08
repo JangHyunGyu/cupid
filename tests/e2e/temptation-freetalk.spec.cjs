@@ -3,7 +3,7 @@ const { test, expect } = require('@playwright/test');
 for (const [lang, character, lead, offer, startAffinity] of [
     ['ko', 'Seoyeon', 'Dain', 'wall_dain_seo_tempt_2', 0],
     ['ko', 'Yuna', 'Seoyeon', 'wall_seo_yuna_tempt_2', -100],
-    ['ko', 'Dain', 'Yuna', 'wall_yuna_dain_tempt_2', 48],
+    ['ko', 'Dain', 'Yuna', 'wall_yuna_dain_tempt_2', 68],
     ['en', 'Seoyeon', 'Dain', 'wall_dain_seo_tempt_2', -50]
 ]) {
     test(`${lang}/${character}: accepted CG, five scene-only turns, reload, and normal affinity afterward`, async ({ page }) => {
@@ -47,7 +47,7 @@ for (const [lang, character, lead, offer, startAffinity] of [
             await e.renderScene(cg.next);
             return result;
         }, { character, lead, offer, startAffinity });
-        expect(accepted.affinity).toBe(Math.min(100, startAffinity + 50));
+        expect(accepted.affinity).toBe(Math.min(100, startAffinity + 30));
         expect(accepted.background).toContain(`event_temptation_${character.toLowerCase()}`);
         const sceneId = `day4_temptation_${character.toLowerCase()}_freetalk`;
         let expectedAffinity = accepted.affinity;

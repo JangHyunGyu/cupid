@@ -17880,7 +17880,7 @@
 - 배경: `school_back.png`
 - 선택지:
   1. "바로 귀가해 도착 확인을 남긴다" → `day4_adult_return_home` | Nurse +4, Seoyeon -6 | 플래그: `day4_held_route_nurse`
-  2. "서연을 따라 옥상에 올라가 손을 잡는다" → `day4_adult_counteroffer_accept_seoyeon` | Seoyeon +50, Nurse -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
+  2. "서연을 따라 옥상에 올라가 손을 잡는다" → `day4_adult_counteroffer_accept_seoyeon` | Seoyeon +30, Nurse -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
   3. "도착했다고 먼저 알려 놓으면 둘 다 안심하겠지." → `day4_adult_return_home` | Nurse -8, Seoyeon -8 | 플래그: `day4_held_route_nurse`
   4. "늦은 이유는 적당히 둘러대고 돌아가자." → `day4_adult_return_home` | Nurse -5, Seoyeon -10 | 플래그: `day4_held_route_nurse`
 
@@ -17894,7 +17894,7 @@
 - 배경톤: `lights-off`
 - 선택지:
   1. "바로 귀가해 도착 확인을 남긴다" → `day4_adult_return_home` | Nurse +4, Dain -6 | 플래그: `day4_held_route_nurse`
-  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `day4_adult_counteroffer_accept_dain` | Dain +50, Nurse -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
+  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `day4_adult_counteroffer_accept_dain` | Dain +30, Nurse -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
   3. "도착했다고 먼저 알려 놓으면 둘 다 안심하겠지." → `day4_adult_return_home` | Nurse -8, Dain -8 | 플래그: `day4_held_route_nurse`
   4. "늦은 이유는 적당히 둘러대고 돌아가자." → `day4_adult_return_home` | Nurse -5, Dain -10 | 플래그: `day4_held_route_nurse`
 
@@ -17907,7 +17907,7 @@
 - 배경: `school_back.png`
 - 선택지:
   1. "바로 귀가해 도착 확인을 남긴다" → `day4_adult_return_home` | Nurse +4, Yuna -6 | 플래그: `day4_held_route_nurse`
-  2. "별관으로 가서 유나 곁에 남는다" → `day4_adult_counteroffer_accept_yuna` | Yuna +50, Nurse -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
+  2. "별관으로 가서 유나 곁에 남는다" → `day4_adult_counteroffer_accept_yuna` | Yuna +30, Nurse -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_target_nurse`, `day4_counteroffer_penalty_deferred`
   3. "도착했다고 먼저 알려 놓으면 둘 다 안심하겠지." → `day4_adult_return_home` | Nurse -8, Yuna -8 | 플래그: `day4_held_route_nurse`
   4. "늦은 이유는 적당히 둘러대고 돌아가자." → `day4_adult_return_home` | Nurse -5, Yuna -10 | 플래그: `day4_held_route_nurse`
 
@@ -17940,7 +17940,7 @@
 - 배경: `school_back.png`
 - 선택지:
   1. "바로 귀가해 도착 확인을 남긴다" → `day4_adult_return_home` | Teacher +4, Seoyeon -6 | 플래그: `day4_held_route_teacher`
-  2. "서연을 따라 옥상에 올라가 손을 잡는다" → `day4_adult_counteroffer_accept_seoyeon` | Seoyeon +50, Teacher -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
+  2. "서연을 따라 옥상에 올라가 손을 잡는다" → `day4_adult_counteroffer_accept_seoyeon` | Seoyeon +30, Teacher -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
   3. "도착했다고 먼저 알려 놓으면 둘 다 안심하겠지." → `day4_adult_return_home` | Teacher -8, Seoyeon -8 | 플래그: `day4_held_route_teacher`
   4. "늦은 이유는 적당히 둘러대고 돌아가자." → `day4_adult_return_home` | Teacher -5, Seoyeon -10 | 플래그: `day4_held_route_teacher`
 
@@ -17963,7 +17963,7 @@
 - 배경톤: `lights-off`
 - 선택지:
   1. "바로 귀가해 도착 확인을 남긴다" → `day4_adult_return_home` | Teacher +4, Dain -6 | 플래그: `day4_held_route_teacher`
-  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `day4_adult_counteroffer_accept_dain` | Dain +50, Teacher -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
+  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `day4_adult_counteroffer_accept_dain` | Dain +30, Teacher -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
   3. "도착했다고 먼저 알려 놓으면 둘 다 안심하겠지." → `day4_adult_return_home` | Teacher -8, Dain -8 | 플래그: `day4_held_route_teacher`
   4. "늦은 이유는 적당히 둘러대고 돌아가자." → `day4_adult_return_home` | Teacher -5, Dain -10 | 플래그: `day4_held_route_teacher`
 
@@ -17985,7 +17985,7 @@
 - 배경: `school_back.png`
 - 선택지:
   1. "바로 귀가해 도착 확인을 남긴다" → `day4_adult_return_home` | Teacher +4, Yuna -6 | 플래그: `day4_held_route_teacher`
-  2. "별관으로 가서 유나 곁에 남는다" → `day4_adult_counteroffer_accept_yuna` | Yuna +50, Teacher -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
+  2. "별관으로 가서 유나 곁에 남는다" → `day4_adult_counteroffer_accept_yuna` | Yuna +30, Teacher -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_target_teacher`, `day4_counteroffer_penalty_deferred`
   3. "도착했다고 먼저 알려 놓으면 둘 다 안심하겠지." → `day4_adult_return_home` | Teacher -8, Yuna -8 | 플래그: `day4_held_route_teacher`
   4. "늦은 이유는 적당히 둘러대고 돌아가자." → `day4_adult_return_home` | Teacher -5, Yuna -10 | 플래그: `day4_held_route_teacher`
 
@@ -18189,7 +18189,7 @@
 - 배경: `school_back.png`
 - 선택지:
   1. "공원으로 가서 서연과의 약속을 지킨다" → `wall_seo_to_park` | Seoyeon +3, Dain -6 | 플래그: `day4_held_route_seoyeon`
-  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `wall_seo_glimpse_4` | Dain +50, Seoyeon -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_penalty_deferred`
+  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `wall_seo_glimpse_4` | Dain +30, Seoyeon -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_penalty_deferred`
   3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `wall_seo_to_park` | Seoyeon -8, Dain -8 | 플래그: `day4_held_route_seoyeon`
   4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `wall_seo_to_park` | Seoyeon -5, Dain -10 | 플래그: `day4_held_route_seoyeon`
 
@@ -18220,7 +18220,7 @@
 - 배경: `yuna_hideout.png`
 - 선택지:
   1. "서연에게 답장하고 공원으로 간다" → `wall_seo_to_park` | Seoyeon +4, Yuna -6 | 플래그: `day4_held_route_seoyeon`
-  2. "별관으로 가서 유나 곁에 남는다" → `wall_seo_yuna_tempt_accept` | Yuna +50, Seoyeon -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_penalty_deferred`
+  2. "별관으로 가서 유나 곁에 남는다" → `wall_seo_yuna_tempt_accept` | Yuna +30, Seoyeon -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_penalty_deferred`
   3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `wall_seo_to_park` | Seoyeon -8, Yuna -8 | 플래그: `day4_held_route_seoyeon`
   4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `wall_seo_to_park` | Seoyeon -5, Yuna -10 | 플래그: `day4_held_route_seoyeon`
 
@@ -18865,7 +18865,7 @@
 - 배경: `school_back.png`
 - 선택지:
   1. "다인에게 답장하고 체육관으로 간다" → `wall_dain_4` | Dain +5, Yuna -6 | 플래그: `day4_held_route_dain`
-  2. "학교 후문으로 돌아가 유나 곁에 남는다" → `wall_dain_glimpse_4` | Yuna +50, Dain -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_penalty_deferred`
+  2. "학교 후문으로 돌아가 유나 곁에 남는다" → `wall_dain_glimpse_4` | Yuna +30, Dain -10 | 플래그: `day4_took_yuna_counteroffer`, `day4_counteroffer_penalty_deferred`
   3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `wall_dain_4` | Dain -8, Yuna -8 | 플래그: `day4_held_route_dain`
   4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `wall_dain_4` | Dain -5, Yuna -10 | 플래그: `day4_held_route_dain`
 
@@ -18908,7 +18908,7 @@
 - 배경: `school_back.png`
 - 선택지:
   1. "다인에게 답장하고 체육관으로 간다" → `wall_dain_4` | Dain +5, Seoyeon -6 | 플래그: `day4_held_route_dain`
-  2. "서연을 따라 옥상에 올라가 손을 잡는다" → `wall_dain_seo_tempt_accept` | Seoyeon +50, Dain -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_penalty_deferred`
+  2. "서연을 따라 옥상에 올라가 손을 잡는다" → `wall_dain_seo_tempt_accept` | Seoyeon +30, Dain -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_penalty_deferred`
   3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `wall_dain_4` | Dain -8, Seoyeon -8 | 플래그: `day4_held_route_dain`
   4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `wall_dain_4` | Dain -5, Seoyeon -10 | 플래그: `day4_held_route_dain`
 
@@ -19679,7 +19679,7 @@
 - 배경톤: `dream`
 - 선택지:
   1. "유나에게 답장하고 학교 후문으로 간다" → `wall_yuna_2` | Yuna +4, Seoyeon -6 | 플래그: `day4_held_route_yuna`
-  2. "서연을 따라 옥상으로 올라가 손을 잡는다" → `wall_yuna_glimpse_4` | Seoyeon +50, Yuna -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_penalty_deferred`
+  2. "서연을 따라 옥상으로 올라가 손을 잡는다" → `wall_yuna_glimpse_4` | Seoyeon +30, Yuna -10 | 플래그: `day4_took_seoyeon_counteroffer`, `day4_counteroffer_penalty_deferred`
   3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `wall_yuna_2` | Yuna -8, Seoyeon -8 | 플래그: `day4_held_route_yuna`
   4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `wall_yuna_2` | Yuna -5, Seoyeon -10 | 플래그: `day4_held_route_yuna`
 
@@ -19724,7 +19724,7 @@
 - 배경톤: `lights-off`
 - 선택지:
   1. "유나에게 답장하고 학교 후문으로 간다" → `wall_yuna_2` | Yuna +4, Dain -6 | 플래그: `day4_held_route_yuna`
-  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `wall_yuna_dain_tempt_accept` | Dain +50, Yuna -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_penalty_deferred`
+  2. "체육관으로 들어가 다인의 부탁을 받아준다" → `wall_yuna_dain_tempt_accept` | Dain +30, Yuna -10 | 플래그: `day4_took_dain_counteroffer`, `day4_counteroffer_penalty_deferred`
   3. "약속한 사람을 만나면서 다른 쪽도 계속 챙기면 되겠다" → `wall_yuna_2` | Yuna -8, Dain -8 | 플래그: `day4_held_route_yuna`
   4. "먼저 한 약속은 지키고 다른 쪽엔 좋은 핑계를 대자" → `wall_yuna_2` | Yuna -5, Dain -10 | 플래그: `day4_held_route_yuna`
 

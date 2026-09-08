@@ -98,7 +98,7 @@ test('failed transmission survives reload with the same event IDs; acknowledgeme
     assert.equal(restored.state.telemetryRunId, '');
 });
 
-test('temptation diagnostics distinguish the +50 reward and mutable real scores from dialogue affinity 100', async () => {
+test('temptation diagnostics distinguish the +30 reward and mutable real scores from dialogue affinity 100', async () => {
     const h = harness();
     const id = 'wall_dain_seo_tempt_2';
     const scene = h.scenes[id];
@@ -111,7 +111,7 @@ test('temptation diagnostics distinguish the +50 reward and mutable real scores 
     h.telemetry.transition(h.state, talkId, h.scenes[talkId], h.scenes[talkId].next);
     await h.telemetry.flush();
     const [choice, entry, exit] = h.requests[0].events;
-    assert.equal(choice.details.affinityEffects.Seoyeon.affinity, 50);
+    assert.equal(choice.details.affinityEffects.Seoyeon.affinity, 30);
     assert.equal(choice.details.affinityEffects.Dain.affinity, -10);
     assert.equal(entry.details.dialogueAffinity, 100);
     assert.equal(entry.details.affinityLocked, false);
