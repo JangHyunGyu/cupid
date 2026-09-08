@@ -1514,13 +1514,14 @@ function getCupidCharacterCanonGuard(lang, sceneName, displayName) {
 
 function getCupidNarrationPointOfViewPattern(lang = 'ko') {
     const patterns = {
-        ko: /(?:당신|너)(?:은|는|이|가|을|를|의|에게|한테|와|과|도|만)|(?:나|내)(?:는|가|를|의|게|에게|한테)|내\s+[가-힣]/u,
+        // Match pronoun tokens, not words such as 빛나는/나가는/내는 or locative 내.
+        ko: /(?:^|[^\p{L}\p{N}_])(?:당신(?:은|이|을|의|에게|한테|과|도|만)|너(?:는|가|를|의|에게|한테|와|도|만)|나(?:는|를|의|에게|한테|와|도|만)|내(?:가|게))(?:는|도|만|서)?(?=$|[^\p{L}\p{N}_])/u,
         en: /\b(?:you|your|yours|yourself|yourselves|i|me|my|mine|myself)\b/iu,
         de: /\b(?:du|dich|dir|dein(?:e|em|en|er|es)?|ich|mich|mir|mein(?:e|em|en|er|es)?)\b/iu,
         ja: /(?:あなた|あんた|君|きみ|お前)(?:たち)?(?:は|が|を|の|に|へ|と|も)|(?:私|わたし|あたし|僕|ぼく|俺|おれ)(?:たち)?(?:は|が|を|の|に|へ|と|も)/u,
-        es: /\b(?:tú|tu|tus|te|ti|contigo|usted|ustedes|su|sus|yo|me|mi|mis|mío|mía)\b/iu,
+        es: /\b(?:tú|tu|tus|te|ti|contigo|usted|ustedes|yo|me|mi|mis|mío|mía)\b/iu,
         fr: /\b(?:tu|toi|te|ton|ta|tes|vous|votre|vos|je|j['’]|me|moi|mon|ma|mes)\b/iu,
-        pt: /\b(?:tu|te|ti|contigo|você|vocês|seu|sua|seus|suas|eu|me|mim|meu|minha)\b/iu
+        pt: /\b(?:tu|te|ti|contigo|você|vocês|eu|me|mim|meu|minha)\b/iu
     };
     return patterns[lang] || patterns.en;
 }
@@ -1702,12 +1703,23 @@ function recoverCupidRoleplayQualityFallback(parsed = {}, options = {}) {
     }
 
     const pointOfViewPattern = getCupidNarrationPointOfViewPattern(lang);
+    // Last-resort recovery keeps valid sentences in a mixed narration segment.
+    // Viewpoint repair must not discard unrelated scene facts with the bad sentence.
+    const retainValidNarration = value => (String(value || '').match(/[^.!?。！？\n]+[.!?。！？]*|\n+/gu) || [])
+        .filter(sentence => !sentence.includes('\uFFFD') && !pointOfViewPattern.test(sentence))
+        .join('').trim();
     if (!Array.isArray(working?.segments) || working.segments.length === 0) {
         let droppedSegments = 0;
+        let repairedSegments = 0;
         const text = String(working?.text || '')
             .replace(/\*([^*]+)\*/gu, (match, narration) => {
                 const value = String(narration || '').trim();
                 if (value.includes('\uFFFD') || pointOfViewPattern.test(value)) {
+                    const retained = retainValidNarration(value);
+                    if (retained) {
+                        repairedSegments += 1;
+                        return `*${retained}*`;
+                    }
                     droppedSegments += 1;
                     return '';
                 }
@@ -1716,13 +1728,14 @@ function recoverCupidRoleplayQualityFallback(parsed = {}, options = {}) {
             .replace(/[ \t]{2,}/g, ' ')
             .replace(/\s+([,.;!?])/g, '$1')
             .trim();
-        if (droppedSegments === 0 || !text) return null;
+        if ((!droppedSegments && !repairedSegments) || !text) return null;
         const recovered = {
             ...working,
             text,
             qualityRecovery: {
                 reason: initialIssue.reason,
                 droppedSegments,
+                repairedSegments,
                 legacyText: true,
                 implicitIncident: working?.qualityRecovery?.implicitIncident || undefined
             }
@@ -1731,6 +1744,7 @@ function recoverCupidRoleplayQualityFallback(parsed = {}, options = {}) {
     }
 
     let droppedSegments = 0;
+    let repairedSegments = 0;
     const segments = working.segments.flatMap(segment => {
         if (!segment || typeof segment !== 'object') return [];
         const text = String(segment.text || '').trim();
@@ -1741,13 +1755,18 @@ function recoverCupidRoleplayQualityFallback(parsed = {}, options = {}) {
         const isCorrupt = text.includes('\uFFFD');
         const hasPlayerPointOfView = type !== 'dialogue' && pointOfViewPattern.test(text);
         if (isCorrupt || hasPlayerPointOfView) {
+            const retained = type === 'narration' ? retainValidNarration(text) : '';
+            if (retained) {
+                repairedSegments += 1;
+                return [{ ...segment, type, text: retained }];
+            }
             droppedSegments += 1;
             return [];
         }
         return [{ ...segment, type, text }];
     });
 
-    if (droppedSegments === 0 || segments.length === 0) return null;
+    if ((!droppedSegments && !repairedSegments) || segments.length === 0) return null;
 
     const recovered = {
         ...working,
@@ -1758,6 +1777,7 @@ function recoverCupidRoleplayQualityFallback(parsed = {}, options = {}) {
         qualityRecovery: {
             reason: initialIssue.reason,
             droppedSegments,
+            repairedSegments,
             implicitIncident: working?.qualityRecovery?.implicitIncident || undefined
         }
     };
@@ -1786,10 +1806,10 @@ function buildCupidRoleplayQualityRepairBlock(issue = {}, lang = 'ko', charKey =
         'Regenerate the complete assistant response to the original latest in-world user message; do not continue or discuss the rejected draft.',
         `Write every segments[].text in ${languageNames[lang] || languageNames.en}.`,
         'Keep the required JSON schema. Use strict external third-person narration; second-person and first-person player references belong only in spoken dialogue.',
-        'If valid third-person narration would require any player reference, omit narration and return character dialogue segments only; dialogue-only output is valid.',
+        'Preserve valid narration and its scene facts when correcting viewpoint. Third-person references to the player are allowed for established facts; never invent their unchosen actions or inner state.',
         'Never emit U+FFFD. Use fresh, grammatical wording.',
         issueSet.has('recent_response_near_duplicate')
-            ? 'Discard the rejected draft’s repeated wording and choreography. React to the newest user turn with a genuinely different line, judgment, or action instead of paraphrasing a recent response.'
+            ? 'Respond to the newest user turn without needlessly replaying a whole answer. Preserve intentional habits and an unchanged boundary or decision when they still fit the scene.'
             : '',
         issueSet.has('latest_user_awake_state_contradiction')
             ? 'The user character is already awake in the latest turn. Do not describe them as still sleeping or waiting to wake; continue from their awake state.'

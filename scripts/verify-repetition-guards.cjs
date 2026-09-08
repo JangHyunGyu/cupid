@@ -62,8 +62,8 @@ function verifyGuard(label, guard) {
         '다음 순간 그녀는 살짝 웃었다. 어깨의 힘이 풀렸다.'
     ]);
     assert(
-        guard(repeatedStockUse, 'ko').includes('[표현 겹침]'),
-        `${label}: a stock expression repeated across two replies must trigger the guard`
+        guard(repeatedStockUse, 'ko') === '',
+        `${label}: similar gestures across different replies must remain available`
     );
 
     const repeatedOpening = messages([
@@ -72,8 +72,8 @@ function verifyGuard(label, guard) {
         '조용한 목소리로 말했다. 이번에는 더 솔직한 대답이었다.'
     ]);
     assert(
-        guard(repeatedOpening, 'ko').includes('[표현 겹침]'),
-        `${label}: a genuinely repeated opening must trigger the guard`
+        guard(repeatedOpening, 'ko') === '',
+        `${label}: a shared opening with different content must not force variation`
     );
 
     assert.strictEqual(
@@ -92,7 +92,6 @@ const context = { window: {}, Set, Object, String, Number, Array, Map, Math, enc
 vm.createContext(context);
 vm.runInContext(read('assets/js/freetalk-core.js'), context);
 const sharedGuard = context.window.CupidFreeTalkCore.buildRecentExpressionRepetitionGuard;
-const shapeGuard = context.window.CupidFreeTalkCore.buildResponseShapeRepetitionGuard;
 const responsePace = context.window.CupidFreeTalkCore.buildResponsePaceBlock;
 const postHistoryGuidance = context.window.CupidFreeTalkCore.buildPostHistoryGuidance;
 const isNearDuplicateReply = context.window.CupidFreeTalkCore.isNearDuplicateReply;
@@ -108,15 +107,15 @@ assert(gallerySource.includes('GalleryFreeTalkCore.buildPostHistoryGuidance'),
 verifyGuard('shared main/gallery core', sharedGuard);
 
 assert(
-    shapeGuard(messages([
+    sharedGuard(messages([
         '서연은 창가를 바라봤다.\n\n빗소리가 조금 잦아들었다.',
         '서연은 책을 덮었다.\n\n복도는 여전히 조용했다.',
         '서연은 시계를 확인했다.\n\n전등이 한 번 깜빡였다.'
-    ]), 'ko').includes('[최근 응답 형태 반복]'),
-    'three identical reply shapes did not trigger the shared shape guard'
+    ]), 'ko') === '',
+    'matching shapes with different content must not force variation'
 );
 assert.strictEqual(
-    shapeGuard(messages([
+    sharedGuard(messages([
         '"이쪽으로 와."',
         '서연은 책을 덮었다.\n\n복도는 여전히 조용했다.',
         '*서연이 먼저 문을 열었다.*'
@@ -124,18 +123,24 @@ assert.strictEqual(
     '',
     'different response shapes incorrectly triggered the shared shape guard'
 );
-assert(responsePace(messages([], '*복도로 나가 문을 연다*'), 'ko').includes('[응답 호흡 — action]'),
+assert(responsePace(messages([], '*복도로 나가 문을 연다*'), 'ko').includes('[응답 호흡]'),
     'action input did not receive action-paced guidance');
-assert(responsePace(messages([], '다음 날 아침으로 장면 전환'), 'ko').includes('[응답 호흡 — transition]'),
+assert(responsePace(messages([], '다음 날 아침으로 장면 전환'), 'ko').includes('[응답 호흡]'),
     'time transition did not receive transition-paced guidance');
-assert(responsePace(messages([], '오늘 어땠어?'), 'ko').includes('[응답 호흡 — dialogue]'),
+assert(responsePace(messages([], '오늘 어땠어?'), 'ko').includes('[응답 호흡]'),
     'conversation input did not receive dialogue-paced guidance');
 const postHistory = postHistoryGuidance(messages([], '*문을 열고 들어간다*'), 'ko');
 assert(postHistory.includes('[후단 과업 — 이번 응답]')
     && postHistory.includes('[후단 출력 지침 — 이번 응답]')
-    && postHistory.includes('[응답 호흡 — action]'),
+    && postHistory.includes('[응답 호흡]'),
     'shared post-history task/output guidance is incomplete');
 
+for (const text of ['해결책 말고 그냥 들어줘', "Please don't leave. Just listen to me.", 'I understand.']) {
+    const guidance = postHistoryGuidance(messages(['*고개를 끄덕였다.*'], text), 'ko');
+    assert(!/응답 호흡 —|다음 움직임|구체적 사건|최근 응답 형태 반복/.test(guidance), 'Keywords and shape must not force progression');
+    assert(guidance.includes('경청·질문·침묵·휴식'), 'Listening must remain available');
+}
+assert.strictEqual(sharedGuard(messages(['그녀는 고개를 끄덕였다. 열쇠는 주머니에 있었다.', '그녀는 고개를 들었다. 새가 창가를 지나갔다.', '문밖에서 발소리가 들렸다.']), 'ko'), '', 'Different head gestures must not be grouped into a banned expression family');
 const repeatedSleepBeat = [
     {
         role: 'assistant',

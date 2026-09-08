@@ -645,11 +645,6 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         return [stable, CACHE_BOUNDARY_MARKER, sceneContext].filter(Boolean).join('\n');
     }
 
-    function recentPhraseMatches(pattern, text) {
-        pattern.lastIndex = 0;
-        return pattern.test(text || '');
-    }
-
     function normalizeRepetitionText(text = '') {
         return String(text || '')
             .normalize('NFKC')
@@ -876,194 +871,31 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         return renderedContent.trim() ? renderedContent : formattedContent;
     }
 
-    function findRepeatedReplyFragments(assistantTexts = [], latestUserText = '') {
-        const normalizedLatestUser = normalizeRepetitionText(latestUserText);
-        const documentCounts = new Map();
-        assistantTexts.forEach(text => {
-            createRepetitionShingles(text, 6).forEach(fragment => {
-                documentCounts.set(fragment, (documentCounts.get(fragment) || 0) + 1);
-            });
-        });
-        return [...documentCounts.entries()]
-            .filter(([fragment, count]) => count >= 4 && !normalizedLatestUser.includes(fragment))
-            .sort((left, right) => right[1] - left[1])
-            .map(([fragment]) => fragment)
-            .filter((fragment, index, all) => !all.slice(0, index).some(kept => (
-                kept.includes(fragment) || fragment.includes(kept)
-            )))
-            .slice(0, 4);
-    }
-
     function buildRecentExpressionRepetitionGuard(messages = [], lang = 'ko') {
         const allMessages = Array.isArray(messages) ? messages : [];
-        const assistantTexts = allMessages
-            .filter(message =>
-                message
-                && message.role === 'assistant'
-                && typeof message.content === 'string'
-                && String(message.content || '').trim()
-            )
-            .slice(-8)
-            .map(message => String(message.content || '').replace(/\s+/g, ' ').trim())
-            .filter(Boolean);
-
-        if (assistantTexts.length < 3) return '';
-
-        const latestUserText = String([...allMessages].reverse().find(message =>
-            message
-            && message.role === 'user'
-            && typeof message.content === 'string'
-        )?.content || '');
-
-        const isKo = lang === 'ko';
-        const formatList = (items, limit = 6) => items.filter(Boolean).slice(0, limit).join(', ');
-        const normalizeOpening = (text = '') => {
-            const firstSentence = String(text || '').replace(/\\n/g, ' ').split(/[.!?。！？\n]/u)[0] || '';
-            return firstSentence
-                .replace(/^[\s"'“”‘’`*<>\[\]{}()]+/g, '')
-                .replace(/\s+/g, ' ')
-                .trim()
-                .slice(0, 34);
-        };
-
-        const openingCounts = assistantTexts
-            .map(normalizeOpening)
-            .filter(opening => opening.length >= 8)
-            .reduce((map, opening) => {
-                const key = opening
-                    .toLowerCase()
-                    .replace(/["'“”‘’`*<>\[\]{}(),.?!:;，。！？]/g, '')
-                    .replace(/\s+/g, ' ')
-                    .trim()
-                    .slice(0, 24);
-                if (!key || key.length < 6) return map;
-                const entry = map.get(key) || { label: opening, count: 0 };
-                entry.count += 1;
-                map.set(key, entry);
-                return map;
-            }, new Map());
-
-        const repeatedOpenings = [...openingCounts.values()]
-            .filter(entry => entry.count >= 2)
-            .map(entry => `"${entry.label}"`);
-
-        const stockPatterns = [
-            { ko: '"결국"', en: '"eventually/in the end" transitions', pattern: /결국|끝내|마침내/iu },
-            { ko: '"서로의 마음"', en: 'mutual-feeling summaries', pattern: /서로의\s*마음|마음을\s*확인|진심을\s*확인|감정을\s*확인|마음이\s*닿/iu },
-            { ko: '"다시 한번"', en: '"once again" beats', pattern: /다시\s*한\s*번|한\s*번\s*더|다시금/iu },
-            { ko: '"작게 웃었다"와 비슷한 표현', en: 'small-smile beats', pattern: /작게\s*웃|살짝\s*웃|희미하게\s*웃|쓴웃음|미소를\s*(?:지|띠|머금)/iu },
-            { ko: '"고개를 끄덕였다"와 비슷한 표현', en: 'nod/lift/lower-head beats', pattern: /고개(?:를)?\s*(?:끄덕|숙|들|돌|젓)/iu },
-            { ko: '감정을 정리하며 끝내는 문장', en: 'neat emotional-summary endings', pattern: /감정(?:을|이)?\s*(?:정리|가라앉|흘러|번져)|마음(?:을|이)?\s*(?:정리|가라앉|흘러|번져)/iu }
-        ];
-
-        const stockHits = stockPatterns
-            .filter(item =>
-                assistantTexts.reduce(
-                    (count, text) => count + (recentPhraseMatches(item.pattern, text) ? 1 : 0),
-                    0
-                ) >= 2
-                && !recentPhraseMatches(item.pattern, latestUserText)
-            )
-            .map(item => isKo ? item.ko : item.en);
-
-        const hasNearDuplicateBodies = assistantTexts.some((text, index) => (
-            assistantTexts.slice(index + 1).some(other => (
-                normalizeRepetitionText(text).length >= 40
-                && normalizeRepetitionText(other).length >= 40
-                && getRepetitionContainment(text, other) >= 0.58
-            ))
-        ));
-        const repeatedFragments = findRepeatedReplyFragments(assistantTexts, latestUserText);
-
-        if (repeatedOpenings.length === 0
-            && stockHits.length === 0
-            && !hasNearDuplicateBodies
-            && repeatedFragments.length === 0) return '';
-
-        const guardLines = [];
-        if (stockHits.length) {
-            guardLines.push(isKo
-                ? `- 최근 되풀이한 상투 표현: ${formatList(stockHits)}`
-                : `- Recent stock expressions: ${formatList(stockHits)}`);
-        }
-        if (repeatedOpenings.length) {
-            guardLines.push(isKo
-                ? `- 되풀이한 문장 첫머리: ${formatList(repeatedOpenings, 4)}`
-                : `- Repeated sentence openings: ${formatList(repeatedOpenings, 4)}`);
-        }
-        if (hasNearDuplicateBodies) {
-            guardLines.push(isKo
-                ? '- 최근 답변끼리 말과 행동의 전개가 거의 같습니다.'
-                : '- Recent replies reuse nearly the same sequence of words and actions.');
-        }
-        if (repeatedFragments.length) {
-            guardLines.push(isKo
-                ? `- 여러 답변에 겹친 짧은 표현: ${formatList(repeatedFragments.map(fragment => `"${fragment}"`), 4)}`
-                : `- Short fragments shared across several replies: ${formatList(repeatedFragments.map(fragment => `"${fragment}"`), 4)}`);
-        }
-        const guardBody = guardLines.join('\n');
-        return isKo
-            ? `\n\n[표현 겹침]\n${guardBody}\n사용자가 방금 다시 꺼낸 표현이 아니라면 이번 답변에서 되풀이하지 마세요. 같은 문장을 동의어로 바꾸는 데 그치지 말고, 최신 사용자 입력을 우선해 이전과 다른 말·판단·행동 중 적어도 하나로 장면을 실제로 전진시키세요.`
-            : `\n\n[Repeated wording]\n${guardBody}\nUnless the user just brought it back, do not repeat this material. Do more than swap synonyms: prioritize the latest user turn and genuinely advance the scene with a different line, judgment, or action.`;
-    }
-
-    function buildResponseShapeRepetitionGuard(messages = [], lang = 'ko') {
-        const assistantTexts = (Array.isArray(messages) ? messages : [])
-            .filter(message => message?.role === 'assistant' && typeof message.content === 'string')
-            .slice(-3)
-            .map(message => String(message.content || '').trim())
-            .filter(Boolean);
-        if (assistantTexts.length < 3) return '';
-
-        const getShapeSignature = (value = '') => {
-            const text = String(value || '')
-                .replace(/^```(?:json)?\s*|\s*```$/giu, '')
-                .replace(/^\s*\[[^\]\n]{1,48}\]:?\s*/u, '')
-                .trim();
-            const opening = /^["'“”‘’「『]/u.test(text)
-                ? 'dialogue'
-                : (/^\*/u.test(text) ? 'action' : 'narration');
-            const paragraphCount = text.split(/\n{2,}/u).filter(Boolean).length;
-            const paragraphShape = paragraphCount <= 1 ? 'one' : (paragraphCount === 2 ? 'two' : 'many');
-            const ending = /\?\s*["'”’」』*]*\s*$/u.test(text)
-                ? 'question'
-                : (/[*]\s*$/u.test(text) ? 'action' : 'statement');
-            return `${opening}:${paragraphShape}:${ending}`;
-        };
-
-        const signatures = assistantTexts.map(getShapeSignature);
-        if (!signatures.every(signature => signature === signatures[0])) return '';
-
+        const texts = allMessages.filter(message => message?.role === 'assistant' && typeof message.content === 'string')
+            .slice(-8).map(message => String(message.content).normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ''))
+            .filter(text => text.length >= 40);
+        const latestUser = String([...allMessages].reverse().find(message => message?.role === 'user')?.content || '');
+        if (/(?:다시\s*(?:말|해|써|반복)|그대로\s*(?:말|해|써)|\b(?:repeat|say\s+that\s+again|same\s+words?)\b)/iu.test(latestUser)) return '';
+        const shingles = text => new Set(Array.from({ length: Math.max(0, text.length - 5) }, (_, index) => text.slice(index, index + 6)));
+        const bodies = texts.map(text => ({ text, parts: shingles(text) }));
+        const repeated = bodies.some((left, index) => bodies.slice(index + 1).some(right => {
+            if (Math.min(left.text.length, right.text.length) / Math.max(left.text.length, right.text.length) < 0.85) return false;
+            let overlap = 0;
+            left.parts.forEach(part => { if (right.parts.has(part)) overlap += 1; });
+            return overlap / Math.min(left.parts.size, right.parts.size) >= 0.85;
+        }));
+        if (!repeated) return '';
         return lang === 'ko'
-            ? `\n\n[최근 응답 형태 반복]\n최근 세 답변의 시작 방식·문단 수·마무리 박자가 같았습니다. 이번에는 그중 하나만 현재 장면에 맞게 바꾸되, 캐릭터 말투·의도적인 말버릇·필요한 감각·현재 강도는 유지합니다. 동의어만 억지로 바꾸거나 진행을 줄이는 방식으로 해결하지 않습니다.`
-            : `\n\n[Recent response-shape repetition]\nThe last three replies used the same opening mode, paragraph count, and closing beat. Change only one of those when it fits the current scene, while preserving the character's voice, intentional verbal habits, necessary sensory detail, and current intensity. Do not solve this with forced synonym swaps or reduced progression.`;
-    }
-
-    function classifyResponseBeat(messages = []) {
-        const recent = (Array.isArray(messages) ? messages : [])
-            .filter(message => ['user', 'assistant'].includes(message?.role) && String(message.content || '').trim())
-            .slice(-4);
-        const latestUserText = String([...recent].reverse().find(message => message.role === 'user')?.content || '');
-        const latestAssistantText = String([...recent].reverse().find(message => message.role === 'assistant')?.content || '');
-        const transitionCue = /(?:장면\s*전환|시간(?:이|을)?\s*(?:흐르|건너|넘기)|다음\s*(?:날|아침|밤)|며칠\s*뒤|잠시\s*뒤|도착(?:했|한|하)|떠나(?:고|며|자)|들어가(?:고|며|자)|scene\s+(?:change|transition)|time\s+(?:passes|skip)|the\s+next\s+(?:day|morning|night)|days?\s+later|arriv(?:e|es|ed|ing)|leav(?:e|es|ing)|enter(?:s|ed|ing))/iu;
-        if (transitionCue.test(latestUserText)) return 'transition';
-        const actionCue = /(?:\*[^*]{2,}\*|움직|다가가|밀어|당겨|붙잡|놓아|열어|닫아|앉아|일어나|돌아서|달려|싸우|공격|피하|만지|입맞|키스|벗|껴안|move|approach|push|pull|grab|release|open|close|sit|stand|turn|run|fight|attack|dodge|touch|kiss|undress|embrace)/iu;
-        return actionCue.test(`${latestAssistantText}\n${latestUserText}`) ? 'action' : 'dialogue';
+            ? '\n\n[표현 겹침]\n최근 긴 답변의 본문이 거의 그대로 반복됐습니다. 이번 입력과 현재 상황에 답하고 무의미한 답변 재생을 피합니다. 의도적인 말버릇·몸짓·같은 경계의 유지는 가능하며, 반복을 피하려고 판단이나 행동을 억지로 바꾸지 않습니다.'
+            : '\n\n[Repeated wording]\nRecent long replies repeated almost the same body. Respond to the current input and situation without replaying a whole answer needlessly. Intentional verbal habits, gestures, and maintaining the same boundary remain valid; do not force a different decision or action to avoid repetition.';
     }
 
     function buildResponsePaceBlock(messages = [], lang = 'ko') {
-        const beat = classifyResponseBeat(messages);
-        const ko = {
-            dialogue: '대화 박자입니다. 한 줄 대사나 짧은 행동이면 충분할 때 설명을 늘리지 말고, 고백·망설임·화해처럼 반응이 달라지는 순간에는 말 사이의 행동과 감정의 여운이 이어질 만큼 충분히 씁니다.',
-            action: '행동 박자입니다. 중요한 움직임의 다음 단계와 즉각적 결과까지 쓰되, 사용자의 미정 선택은 완결하지 않습니다.',
-            transition: '전환·전개 박자입니다. 새 시간·공간·등장 상태를 한 번 잡고 구체적 사건이나 선택까지 이으며, 필요하면 길게 씁니다.'
-        };
-        const en = {
-            dialogue: 'Conversational beat: do not pad one sufficient line or brief action; give a confession, hesitation, or reconciliation enough room for connected actions and emotional aftermath.',
-            action: "Action beat: show the next meaningful movement and immediate result without completing the user's unchosen decision.",
-            transition: 'Transition/development beat: establish new time, place, and presence once, then reach a concrete event or choice; use more length only as needed.'
-        };
-        return `\n\n[${lang === 'ko' ? '응답 호흡' : 'Response Pace'} — ${beat}]\n${(lang === 'ko' ? ko : en)[beat]}`;
+        return lang === 'ko'
+            ? '\n\n[응답 호흡]\n응답 길이와 말·행동·내면 서술은 캐릭터와 현재 장면에 맞춥니다. 경청·질문·침묵·휴식도 자연스러운 반응이며, 매번 새 행동이나 사건을 만들 필요는 없습니다. 진행 중인 행동은 실제로 일어난 만큼 구체적으로 쓰고 사용자의 미정 선택은 남겨 둡니다.'
+            : "\n\n[Response Pace]\nLet the character and current scene determine length, speech, action, and character interiority. Listening, questions, silence, and rest are valid responses; a new action or event is not required each turn. Describe ongoing action concretely as it occurs, leaving the user's unchosen decisions open.";
     }
 
     function buildPostHistoryGuidance(messages = [], lang = 'ko', {
@@ -1078,7 +910,6 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
             boundaryRule,
             buildResponsePaceBlock(messages, lang),
             repetitionGuard || buildRecentExpressionRepetitionGuard(messages, lang),
-            buildResponseShapeRepetitionGuard(messages, lang),
             lowInformationRule,
             buildCharacterAgencyTurnRule(lang)
         ].filter(Boolean).join('\n\n').trim();
@@ -1820,8 +1651,6 @@ Latest user: """${excerpt}"""
         encodeCacheKeyPart,
         keepRuntimeBoundary,
         buildRecentExpressionRepetitionGuard,
-        buildResponseShapeRepetitionGuard,
-        classifyResponseBeat,
         buildResponsePaceBlock,
         buildPostHistoryGuidance,
         normalizePromptMemoryText,

@@ -873,6 +873,29 @@ assert(context.window.buildCupidRoleplayQualityRepairBlock({
 }, 'en', 'Yuna').includes('Never place another JSON object'), 'Nested JSON repair instruction is missing');
 const recoverQualityFallback = context.window.recoverCupidRoleplayQualityFallback;
 assert(typeof recoverQualityFallback === 'function', 'Cupid roleplay quality fallback recovery is missing');
+for (const [lang, text] of [
+    ['ko', '그녀는 빛나는 별을 가리켰다.'], ['ko', '나라의 오래된 지도를 살폈다.'],
+    ['ko', '나가는 길에 소리를 내는 새를 보았다.'], ['ko', '학교 내 복도는 조용했다.'],
+    ['es', 'Ella dejó su taza sobre la mesa.'], ['pt', 'Ela colocou sua xícara na mesa.']
+]) {
+    for (const legacy of [false, true]) {
+        const parsed = legacy ? { text: `*${text}*` } : { text, segments: [{ type: 'narration', text }] };
+        assert(!getQualityIssue(parsed, { lang, charKey: 'Yuna' }).shouldRetry, `${lang}: valid narration rejected: ${text}`);
+        assert(recoverQualityFallback(parsed, { lang, charKey: 'Yuna' }) === null, `${lang}: valid narration must not be edited or deleted`);
+    }
+}
+for (const text of ['나는 창문을 닫았다.', '내가 창문을 닫았다.', '너는 창문을 닫았다.']) {
+    assert(issueCodes({ text, segments: [{ type: 'narration', text }] }, 'ko', 'Yuna').includes('narration_player_point_of_view'), 'Actual first/second person narration must still be detected');
+}
+assert(!context.window.buildCupidRoleplayQualityRepairBlock({ reason: 'narration_player_point_of_view' }, 'ko', 'Yuna').includes('omit narration'), 'Viewpoint repair must not prescribe deleting valid narration');
+for (const legacy of [false, true]) {
+    const valid = '그녀는 빛나는 별을 가리켰다.';
+    const mixed = `${valid} 나는 창문을 닫았다.`;
+    const parsed = legacy ? { text: `*${mixed}* 저 별이야.` } : { text: mixed, segments: [{ type: 'narration', text: mixed }, { type: 'dialogue', text: '저 별이야.' }] };
+    const recovered = recoverQualityFallback(parsed, { lang: 'ko', charKey: 'Yuna' });
+    assert(recovered && recovered.text.includes(valid) && recovered.text.includes('저 별이야.') && !recovered.text.includes('나는 창문'), 'Recovery must keep valid narration and dialogue in a mixed draft');
+    assert(recovered.qualityRecovery.repairedSegments === 1 && recovered.qualityRecovery.droppedSegments === 0, 'Mixed narration must be repaired at sentence granularity');
+}
 const recoveredRepeatedReply = recoverQualityFallback({
     text: repeatedRoleplayReply,
     segments: [{ type: 'dialogue', text: repeatedRoleplayReply }]
