@@ -127,12 +127,18 @@ function assertCommonKoreanPrompt(prompt, label) {
         assert(prompt.includes(block), `${label} is missing ${block}`);
     }
     const stablePrompt = splitCacheBoundary(prompt, label).stable;
-    const stableBudget = label.startsWith('main/') ? 4150 : 3900;
+    // Reserve room for narrator register without shortening character canon.
+    const stableBudget = label.startsWith('main/') ? 4325 : 4075;
     assert(stablePrompt.length <= stableBudget,
         `${label} stable prompt exceeded the ${stableBudget}-character input budget (${stablePrompt.length})`);
     for (const rule of REQUIRED_NATURAL_KOREAN_RULES) {
         assert(stablePrompt.includes(rule), `${label} stable prefix is missing natural Korean rule: ${rule}`);
     }
+    const narrationRule = '지문(narration/scene/sceneNarration)은 3인칭 소설 서술체(-다/-했다)로 쓰며 -요·-ㅂ니다·-습니다로 끝내지 않습니다. 실제 발화는 dialogue에만 두고 존댓말·반말·사투리·호칭 등 인물 고유 말투는 대사에만 적용합니다. 과거 지문의 문체·대사 혼입 오류는 이어 쓰지 않습니다.';
+    assert(stablePrompt.includes(narrationRule), `${label} is missing the stable narrator/dialogue register boundary`);
+    const fingerprint = label.startsWith('main/') ? 'getFreeTalkStablePromptFingerprint' : 'getGalleryFreeTalkStablePromptFingerprint';
+    assert(getRuntimeStableHash(context, fingerprint, prompt) !== getRuntimeStableHash(context, fingerprint, prompt.replace(narrationRule, '')),
+        `${label} narrator register changes must split the stable-prefix fingerprint`);
     for (const block of REMOVED_PRESSURE_BLOCKS) {
         assert(!prompt.includes(block), `${label} still injects removed pressure block ${block}`);
     }
