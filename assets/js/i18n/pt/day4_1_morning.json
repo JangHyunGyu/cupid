@@ -593,5 +593,6 @@
     "hidden_nurse_d4_trap": {
         "name": "Enfermeira",
         "text": "Eu consigo fazer sozinha. Só perguntei porque queria sua ajuda para terminar o que falta."
-    }
+    },
+    "day4_date_branch": {}
 }

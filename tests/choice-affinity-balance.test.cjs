@@ -206,6 +206,68 @@ test('midgame relationship tiers preserve promises, distance, and locked fallout
     assert.equal(unresolved.resolveNextScene(scenes.morning5_start_branch), 'morning5_harem_fallout_1');
 });
 
+test('day-three incidents rejoin day-four meetings without erasing distance or setting a deferred confession', () => {
+    for (const incident of ['day3_caught_multiple_dates', 'harem_seed']) {
+        for (const [character, short] of [['Seoyeon', 'seo'], ['Yuna', 'yuna'], ['Dain', 'dain']]) {
+            const flags = { [incident]: true, [`route_${character.toLowerCase()}`]: true };
+            const affinity = { [character]: 60 };
+            const renderer = createSceneRenderer(affinity, flags);
+            let id = 'morning4_end';
+            const visited = new Set();
+            while (id !== `date_${short}_1`) {
+                assert.ok(scenes[id] && !visited.has(id), `${incident}/${character}: ${id}`);
+                assert.notEqual(id, 'morning5_start');
+                visited.add(id);
+                const current = scenes[id];
+                for (const flag of current.setFlags || []) flags[flag] = true;
+                id = renderer.resolveNextScene(current);
+            }
+            assert.ok(visited.has('day4_date_branch'));
+            assert.ok(visited.has(incident === 'harem_seed' ? 'day4_harem_fallout_4' : 'day4_caught_fallout_4'));
+            assert.equal(flags[incident], true);
+            assert.notEqual(flags.day4_waited, true);
+            assert.equal(renderer.resolveAffinityGuard(scenes[id]), null);
+            affinity[character] = -1;
+            assert.equal(renderer.resolveAffinityGuard(scenes[id]), `date_${short}_low`);
+        }
+    }
+});
+
+test('every acceptance completes the next-day confrontation despite earlier incidents and any explanation choice', () => {
+    const offers = Object.entries(scenes).filter(([, s]) => s.choices?.some(c => c.setFlags?.includes('day4_counteroffer_penalty_deferred')));
+    assert.equal(offers.length, 12);
+    for (const [offerId, offer] of offers) {
+        const accepted = offer.choices.find(c => c.setFlags?.includes('day4_counteroffer_penalty_deferred'));
+        const lead = offerId.startsWith('wall_seo') ? 'Seoyeon' : offerId.startsWith('wall_dain') ? 'Dain' : 'Yuna';
+        for (const incident of ['day3_caught_multiple_dates', 'harem_seed', 'both']) {
+            for (const answer of [0, 1, 2, 3]) {
+                const flags = { [`route_${lead.toLowerCase()}`]: true, day4_waited: true,
+                    day3_caught_multiple_dates: incident !== 'harem_seed', harem_seed: incident !== 'day3_caught_multiple_dates', ending_harem: true };
+                for (const flag of accepted.setFlags) flags[flag] = true;
+                const renderer = createSceneRenderer({ Seoyeon: -100, Yuna: -100, Dain: -100, Teacher: -100, Nurse: -100 }, flags);
+                let id = accepted.next;
+                const visited = new Set();
+                while (id !== 'morning5_counteroffer_group_talk') {
+                    assert.ok(scenes[id] && !visited.has(id), `${offerId}/${incident}/${answer}: ${id}`);
+                    visited.add(id);
+                    const current = scenes[id];
+                    const chosen = current.choices ? current.choices[answer] || current.choices[0] : current;
+                    for (const flag of chosen.setFlags || []) flags[flag] = true;
+                    for (const flag of chosen.clearFlags || []) flags[flag] = false;
+                    id = renderer.resolveAffinityGuard(current) || renderer.resolveNextScene(chosen);
+                }
+                assert.ok([...visited].some(id => /^day4_temptation_.*_freetalk$/.test(id)));
+                assert.ok(visited.has('morning5_counteroffer_gather'));
+                assert.equal(flags.day5_lied_about_counteroffer === true, answer !== 0);
+                assert.equal(renderer.resolveNextScene(scenes.after5_ending_check), 'ending_start');
+                assert.equal(renderer.resolveNextScene(scenes.ending_start), 'ending_counteroffer_bitter');
+                assert.equal(flags.day3_caught_multiple_dates, incident !== 'harem_seed');
+                assert.equal(flags.harem_seed, incident !== 'day3_caught_multiple_dates');
+            }
+        }
+    }
+});
+
 test('neutral student routes continue through confession into rival temptation routing', () => {
     const cases = [
         {

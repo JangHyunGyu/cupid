@@ -744,7 +744,51 @@ class FreeTalkSystem {
             ? { ko: '알림을 보고도 별일 아니라고 다시 거짓말했다', en: 'he lied again and dismissed the notification', es: 'volvió a mentir y restó importancia a la notificación', ja: '通知を見られても、たいしたことではないと再び嘘をついた', fr: 'il a de nouveau menti en minimisant la notification', de: 'er hat erneut gelogen und die Nachricht heruntergespielt', pt: 'ele mentiu de novo e tentou minimizar a notificação' }
             : { ko: '숨기지 않고 어젯밤 일을 털어놓았다', en: 'he admitted what happened last night without hiding it', es: 'contó sin ocultarlo lo que ocurrió la noche anterior', ja: '昨夜のことを隠さず打ち明けた', fr: 'il a raconté sans rien cacher ce qui s’était passé la veille', de: 'er hat ohne Ausflüchte erzählt, was in der Nacht geschehen ist', pt: 'ele contou sem esconder o que aconteceu na noite anterior' };
         const language = String(lang || 'ko').toLowerCase().split('-')[0];
-        return states[language] || states.en;
+        const preceding = states[language] || states.en;
+        if (scene?.groupParticipants !== 'counteroffer_confrontation') return preceding;
+        const history = {
+            "ko": [
+                "3일차에 학생들에게 중복 약속이 발각됐다. 그 학생들은 이번 설명을 더 의심할 수 있다. 교직원이 그 일까지 안다고 단정하지 않는다. 이미 반영한 감점을 반복하지 않는다.",
+                "3일차에 중복 약속을 잡고 점심을 모두 나눠 먹었지만 누구를 만날지는 정리하지 않았다. 학생들의 불신에 반영하되, 함께 먹었다는 이유만으로 연애 합의나 이별을 확정하지 않는다.",
+                "기존 상대와 고백 수락이 확인되지 않았다. 학생끼리의 갈등은 약속 위반과 연락 두절에 맞추고, 연인 관계였다고 지어내지 않는다."
+            ],
+            "en": [
+                "On Day 3, the students discovered overlapping date promises. Those students may be more skeptical now. Do not assume staff know that history. Do not repeat penalties already applied.",
+                "On Day 3, overlapping promises remained unresolved after everyone shared lunch. Let that affect the students' trust; sharing food alone did not establish a relationship agreement or a breakup.",
+                "An accepted confession with the original partner is not established. Between students, focus the conflict on a broken promise and missing contact; do not invent an established couple."
+            ],
+            "ja": [
+                "三日目、学生たちに重複したデートの約束が発覚した。その学生たちは今回の説明をより疑ってもよい。教職員も知っているとは決めつけず、適用済みの減点を繰り返さない。",
+                "三日目に約束を重ね、昼食を皆で分けた後も誰に会うかは未整理だった。学生たちの不信に反映するが、食事を分けただけで交際の合意や別れを確定しない。",
+                "元の相手との告白成立は確認されていない。学生同士の対立は約束破りと連絡の途絶を中心にし、恋人同士だったと創作しない。"
+            ],
+            "es": [
+                "El día 3, las estudiantes descubrieron que había citas que se solapaban. Pueden desconfiar más de esta explicación. No supongas que el personal conoce esos hechos ni repitas penalizaciones ya aplicadas.",
+                "El día 3 quedaron citas sin aclarar después de compartir la comida entre todos. Refleja la desconfianza de las estudiantes; compartir comida no estableció por sí solo una relación ni una ruptura.",
+                "No consta una confesión aceptada con la persona original. Entre estudiantes, centra el conflicto en la promesa incumplida y la falta de contacto; no inventes que ya eran pareja."
+            ],
+            "fr": [
+                "Au jour 3, les élèves ont découvert des rendez-vous promis aux mêmes heures. Elles peuvent davantage douter de cette explication. Ne suppose pas que le personnel connaît ces faits et ne répète pas les pénalités déjà appliquées.",
+                "Au jour 3, les rendez-vous sont restés flous après le déjeuner partagé. Cela nourrit la méfiance des élèves ; partager un repas n'a pas, à lui seul, établi un accord amoureux ou une rupture.",
+                "Une déclaration acceptée avec la personne initiale n'est pas établie. Entre élèves, centre le conflit sur la promesse rompue et l'absence de nouvelles ; n'invente pas un couple déjà formé."
+            ],
+            "de": [
+                "Am dritten Tag entdeckten die Schülerinnen sich überschneidende Verabredungen. Sie können dieser Erklärung nun stärker misstrauen. Unterstelle Lehrkräften keine Kenntnis davon und wiederhole keine bereits angewandten Abzüge.",
+                "Am dritten Tag blieben überlappende Verabredungen auch nach dem gemeinsamen Essen ungeklärt. Das beeinflusst das Vertrauen der Schülerinnen; geteiltes Essen allein begründet weder eine Beziehung noch eine Trennung.",
+                "Ein angenommenes Liebesgeständnis mit der ursprünglichen Person steht nicht fest. Bei Schülerinnen betrifft der Konflikt die gebrochene Zusage und den fehlenden Kontakt; erfinde keine bereits bestehende Paarbeziehung."
+            ],
+            "pt": [
+                "No dia 3, as estudantes descobriram promessas de encontros em horários sobrepostos. Elas podem desconfiar mais desta explicação. Não suponha que os funcionários saibam disso nem repita penalidades já aplicadas.",
+                "No dia 3, os encontros sobrepostos continuaram sem definição depois de todos dividirem o almoço. Isso afeta a confiança das estudantes; dividir comida não estabeleceu por si só um namoro ou um término.",
+                "Não há confirmação de uma declaração aceita com a pessoa original. Entre estudantes, concentre o conflito na promessa quebrada e na falta de contato; não invente um namoro já estabelecido."
+            ]
+        };
+        const notes = history[language] || history.en;
+        const parts = [preceding];
+        if (this.stateManager.getFlag?.('day3_caught_multiple_dates')) parts.push(notes[0]);
+        if (this.stateManager.getFlag?.('harem_seed')) parts.push(notes[1]);
+        if (!this.stateManager.getFlag?.('day4_confession_accepted')) parts.push(notes[2]);
+        return parts.join('\n');
     }
 
     _setGroupStandingCharacters(participants = []) {

@@ -15872,6 +15872,15 @@
 - 분기:
   - [`day3_caught_multiple_dates`] → `day4_caught_fallout_1`
   - [`harem_seed`] → `day4_harem_fallout_1`
+  - [기본] → `day4_date_branch`
+
+- 캐릭터: `없음`
+**{name}**: *집으로 돌아와 거울 옆 시계를 확인하고 다시 현관에서 신발끈을 묶는다.*
+
+---
+
+### `day4_date_branch`
+- 분기:
   - [`route_dain`] → `date_dain_1`
   - [`route_yuna`] → `date_yuna_1`
   - [`route_seoyeon`] → `date_seo_1`
@@ -15880,8 +15889,7 @@
   - [`accepted_seoyeon_date`] → `date_seo_1`
   - [기본] → `day4_night_start`
 
-- 캐릭터: `없음`
-**{name}**: *집으로 돌아와 거울 옆 시계를 확인하고 다시 현관에서 신발끈을 묶는다.*
+<!-- i18n -->
 
 ---
 
@@ -16889,7 +16897,7 @@
 
 ### `day4_caught_fallout_1`
 - 배경: `room_my.png`
-- BGM: `night2.mp3`
+- BGM: `morning.mp3`
 - 다음: `day4_caught_fallout_2`
 
 - 캐릭터: `없음`
@@ -16902,7 +16910,7 @@
 - 다음: `day4_caught_fallout_3`
 
 - 캐릭터: `seyoun_sad.png` @ 0.35
-**서연**: 당분간 따로 연락하지 마. 필요한 얘기는 단체방에서 할게.
+**서연**: 어제 약속 겹친 일, 그냥 넘기지는 않을 거야. 오늘 누구를 만날 건지부터 말해 줘.
 
 ---
 
@@ -16911,54 +16919,54 @@
 - 다음: `day4_caught_fallout_4`
 
 - 캐릭터: `없음`
-**{name}**: *잠시 뒤 유나가 대화방을 나가고 다인은 약속 일정을 취소한다. 준비해 둔 외출복을 다시 옷걸이에 건다.*
+**{name}**: *유나는 단체방의 메시지를 읽고도 답하지 않는다. 다인은 '오늘 만날 거면 시간부터 정해'라고 남긴다. 캘린더에서 겹친 약속을 다시 확인한다.*
 
 ---
 
 ### `day4_caught_fallout_4`
 - 배경: `room_my.png`
 - 플래그: `day4_caught_fallout_seen`
-- 다음: `morning5_start`
+- 다음: `day4_date_branch`
 
 - 캐릭터: `없음`
-**{name}**: *밖으로 나가지 않는다. 해가 기울 때까지 단체방 알림도 울리지 않는다.*
+**{name}**: *보내지 않았던 사과를 마저 적어 전송한다. 답을 기다리며 오늘 약속을 확인한다.*
 
 ---
 
 ### `day4_harem_fallout_1`
-- 배경: `cafe.png`
-- BGM: `night2.mp3`
+- 배경: `room_my.png`
+- BGM: `morning.mp3`
 - 다음: `day4_harem_fallout_2`
 
 - 캐릭터: `없음`
-**{name}**: *세 사람이 있는 단체방에 서연의 메시지가 먼저 올라온다. '오늘은 따로 만나지 말고 모두 같이 얘기하자.'*
+**{name}**: *단체방에 서연의 메시지가 올라온다. '어제 웃고 넘겼다고 약속까지 정리된 건 아니야.'*
 
 ---
 
 ### `day4_harem_fallout_2`
-- 배경: `cafe.png`
+- 배경: `room_my.png`
 - 다음: `day4_harem_fallout_3`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_normal.png` @ 0.35
 **서연**: 누구 하나 고르라는 말은 안 할게. 대신 지금처럼 각각 기대하게 두진 마.
 
 ---
 
 ### `day4_harem_fallout_3`
-- 배경: `cafe.png`
+- 배경: `room_my.png`
 - 다음: `day4_harem_fallout_4`
 
-**{name}**: *유나는 시간이 필요하다고 답한다. 다인도 당분간 따로 만나지는 않겠다고 쓴다. 두 메시지를 읽고도 한동안 답장을 못 한다.*
+**{name}**: *유나는 '내 약속도 다시 확인해 줘'라고 보낸다. 다인이 뒤이어 '시간 겹치면 지금 말해'라고 쓴다. 캘린더를 열어 둔 채 답장을 적는다.*
 
 ---
 
 ### `day4_harem_fallout_4`
-- 배경: `street.png`
-- 플래그: `day4_harem_fallout_seen`, `day4_waited`
-- 다음: `morning5_start`
+- 배경: `room_my.png`
+- 플래그: `day4_harem_fallout_seen`
+- 다음: `day4_date_branch`
 
 - 캐릭터: `없음`
-**{name}**: 알겠어. 정리할 때까지 누구에게도 따로 연락하지 않을게.
+**{name}**: *단체방에 약속을 다시 확인하겠다고 답한다. 캘린더를 열어 둔 채 현관에서 신발을 신는다.*
 
 ---
 
@@ -20618,9 +20626,9 @@
 ### `morning5_start_branch`
 - 배경: `room_school.png`
 - 분기:
+  - [`day4_counteroffer_penalty_deferred`] → `morning5_temptation_counteroffer_branch`
   - [`day3_caught_multiple_dates`] → `morning5_caught_fallout_1`
   - [`harem_seed`] → `morning5_harem_fallout_1`
-  - [`day4_counteroffer_penalty_deferred`] → `morning5_temptation_counteroffer_branch`
   - [`day4_confession_accepted`] → `morning5_temptation_discovery_branch`
   - [기본] → `morning5_start_b`
 
@@ -20730,7 +20738,8 @@
 ### `morning5_caught_teacher_honest`
 - 배경: `room_school.png`
 - 배경톤: `empty`
-- 다음: `morning5_counteroffer_group_talk`
+- 플래그: `day5_confessed_counteroffer`
+- 다음: `morning5_counteroffer_gather`
 
 - 캐릭터: `teacher_sad.png`
 **담임선생님**: *담임은 끝까지 듣고 출석부를 덮는다.* 말해 줘서 고맙다. 친구를 만난 게 문제가 아니야. 연락하겠다는 약속은 다음엔 지켜 줘. 오늘 원고 이야기는 여기까지 하자.
@@ -20740,7 +20749,8 @@
 ### `morning5_caught_teacher_lie`
 - 배경: `room_school.png`
 - 배경톤: `empty`
-- 다음: `morning5_counteroffer_group_talk`
+- 플래그: `day5_lied_about_counteroffer`
+- 다음: `morning5_counteroffer_gather`
 
 - 캐릭터: `teacher_angry.png`
 **담임선생님**: *담임은 대답과 앱의 시간을 번갈아 확인한다.* 설명이 맞지 않는구나. 당장 넘기려고 말을 바꾸지는 마. 정리되면 학교 상담 시간에 다시 얘기하자.
@@ -20762,7 +20772,8 @@
 
 ### `morning5_caught_nurse_honest`
 - 배경: `nurse_room.png`
-- 다음: `morning5_counteroffer_group_talk`
+- 플래그: `day5_confessed_counteroffer`
+- 다음: `morning5_counteroffer_gather`
 
 - 캐릭터: `nurse_worried.png`
 **보건선생님**: *보건선생님은 설명을 듣고 기록지를 덮는다.* 무사히 돌아가서 다행이야. 다음엔 일정이 바뀌면 알려 줘. 오늘은 행사 진료가 있으니, 긴 상담은 시간을 잡아서 하자. *교실로 돌아간다.*
@@ -20771,7 +20782,8 @@
 
 ### `morning5_caught_nurse_lie`
 - 배경: `nurse_room.png`
-- 다음: `morning5_counteroffer_group_talk`
+- 플래그: `day5_lied_about_counteroffer`
+- 다음: `morning5_counteroffer_gather`
 
 - 캐릭터: `nurse_angry.png`
 **보건선생님**: *보건선생님이 기록지 위에 펜을 놓는다.* 지금 설명은 맞지 않는 부분이 있어. 몸이 아프면 언제든 와. 이 이야기는 상담 선생님과 함께 다시 정리하자. *교실로 돌아간다.*
@@ -20859,7 +20871,8 @@
 
 ### `morning5_caught_dain_honest`
 - 배경: `room_school.png`
-- 다음: `morning5_counteroffer_group_talk`
+- 플래그: `day5_confessed_counteroffer`
+- 다음: `morning5_counteroffer_gather`
 
 - 캐릭터: `dain_sad.png`
 **다인**: *다인은 손목 보호대를 끝까지 잡아당겼다가 놓는다.* 내가 기다린다고 보냈을 때도, 넌 이미 거기 있었던 거네.
@@ -20868,7 +20881,8 @@
 
 ### `morning5_caught_dain_lie`
 - 배경: `room_school.png`
-- 다음: `morning5_counteroffer_group_talk`
+- 플래그: `day5_lied_about_counteroffer`
+- 다음: `morning5_counteroffer_gather`
 
 - 캐릭터: `dain_angry.png`
 **다인**: *다인의 눈썹이 올라가지만 웃음은 돌아오지 않는다.* 나 운동만 해서 바보인 줄 알았어?
@@ -20903,7 +20917,8 @@
 
 ### `morning5_caught_seoyeon_honest`
 - 배경: `room_school.png`
-- 다음: `morning5_counteroffer_group_talk`
+- 플래그: `day5_confessed_counteroffer`
+- 다음: `morning5_counteroffer_gather`
 
 - 캐릭터: `seyoun_sad.png`
 **서연**: *전부 듣고도 서연은 안경을 벗지 않는다. 렌즈 너머로 보던 눈을 화면 쪽으로 되돌린다.* 솔직히 말해 줘서 고맙다는 말은 못 하겠어. 지금은 네 얼굴 보기 힘들어.
@@ -20912,7 +20927,8 @@
 
 ### `morning5_caught_seoyeon_lie`
 - 배경: `room_school.png`
-- 다음: `morning5_counteroffer_group_talk`
+- 플래그: `day5_lied_about_counteroffer`
+- 다음: `morning5_counteroffer_gather`
 
 - 캐릭터: `seyoun_pout.png`
 **서연**: *서연은 다시 켜진 알림 화면과 맞은편 얼굴을 번갈아 본다. 입가에 남아 있던 미소가 사라진다.* 어제 일보다 지금 말이 더 걸려.
@@ -20936,7 +20952,8 @@
 ### `morning5_caught_yuna_honest`
 - 배경: `room_school.png`
 - 배경톤: `cold`
-- 다음: `morning5_counteroffer_group_talk`
+- 플래그: `day5_confessed_counteroffer`
+- 다음: `morning5_counteroffer_gather`
 
 - 캐릭터: `yuna_sad.png`
 **유나**: *유나는 화면을 끄고 휴대폰을 맞은편으로 밀어 놓는다.* 이번에는 어디로 갔는지 알아서 더 아프네.
@@ -20946,10 +20963,20 @@
 ### `morning5_caught_yuna_lie`
 - 배경: `room_school.png`
 - 배경톤: `cold`
-- 다음: `morning5_counteroffer_group_talk`
+- 플래그: `day5_lied_about_counteroffer`
+- 다음: `morning5_counteroffer_gather`
 
 - 캐릭터: `yuna_angry.png`
 **유나**: *유나는 대답 대신 화면을 한 번 더 켠다. 알림 문장이 두 사람 사이에 그대로 남는다.* 확인할 기회까지 줬는데 또 숨기네.
+
+---
+
+### `morning5_counteroffer_gather`
+- 배경: `room_school.png`
+- 다음: `morning5_counteroffer_group_talk`
+
+- 캐릭터: `없음`
+**{name}**: *어젯밤 함께 있던 상대에게 연락해 교실에서 만나기로 한다. 먼저 약속했던 사람에게도 시간을 확인한다. 두 사람이 오자 교실 한쪽에 자리를 잡는다.*
 
 ---
 
@@ -23782,9 +23809,9 @@
 
 ### `after5_ending_check`
 - 분기:
+  - [`day4_counteroffer_penalty_deferred`] → `ending_start`
   - [`day3_caught_multiple_dates`] → `ending_start`
   - [`harem_seed`] → `after5_set_harem`
-  - [`day4_counteroffer_penalty_deferred`] → `ending_start`
   - [`homeroom_day5`] → `after5_hidden_route_choice_check`
   - [`nurse_day5`] → `after5_hidden_route_choice_check`
   - [`day4_waited`] → `after5_last_chance_1`
@@ -24721,9 +24748,9 @@
 ### `ending_start`
 - 배경: `park.png`
 - 분기:
+  - [`day4_counteroffer_penalty_deferred`] → `ending_counteroffer_bitter`
   - [`day3_caught_multiple_dates`] → `day5_ending_mayhem`
   - [`ending_harem`] → `day5_ending_harem`
-  - [`day4_counteroffer_penalty_deferred`] → `ending_counteroffer_bitter`
   - [`day5_last_chance_path`] → `ending_last_chance_resolve`
   - [`hidden_route_chosen_teacher`] → `hidden_perfect_homeroom_check`
   - [`hidden_route_chosen_nurse`] → `hidden_perfect_nurse_check`

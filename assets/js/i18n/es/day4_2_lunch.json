@@ -407,14 +407,14 @@
         "name": "{name}",
         "text": "*La disculpa de anoche sigue en el campo de texto. Justo cuando voy a enviarla, llega un mensaje de Seoyeon.*"
     },
-    "day4_caught_fallout_2": {"name":"Seoyeon","text":"No nos escribas por separado durante un tiempo. Si hace falta, usa el chat del grupo."},
-    "day4_caught_fallout_3": {"name":"{name}","text":"*Poco después, Yuna abandona una conversación y Dain cancela nuestro plan. Vuelvo a colgar la ropa que había preparado.*"},
-    "day4_caught_fallout_4": {"name":"{name}","text":"*No salgo. El chat del grupo permanece en silencio hasta que cae el sol.*"},
-    "day4_harem_fallout_1": {"name":"{name}","text":"*El mensaje de Seoyeon aparece primero en el grupo de las tres: «Hoy no nos reunamos por separado. Hablemos todos juntos».*"},
+    "day4_caught_fallout_2": {"name":"Seoyeon","text":"No voy a pasar por alto que ayer hicieras planes a la misma hora. Primero dinos con quién vas a quedar hoy."},
+    "day4_caught_fallout_3": {"name":"{name}","text":"*Yuna lee los mensajes del grupo sin responder. Dain escribe: «Si vamos a vernos hoy, fija primero la hora». Vuelvo a revisar las citas que se solapan en el calendario.*"},
+    "day4_caught_fallout_4": {"name":"{name}","text":"*Termino la disculpa que no había enviado y la mando. Mientras espero respuesta, reviso los planes de hoy.*"},
+    "day4_harem_fallout_1": {"name":"{name}","text":"*Seoyeon escribe en el grupo: «Que ayer nos riéramos no significa que hayamos aclarado los planes».*"},
     "day4_harem_fallout_2": {"name":"Seoyeon","text":"No te diré que elijas a una. Pero no puedes seguir haciendo que cada una espere algo."},
     "day4_harem_fallout_3": {
         "name": "{name}",
-        "text": "*Yuna responde que necesita tiempo. Dain escribe que tampoco quedará a solas conmigo por ahora. Leo ambos mensajes y tardo en encontrar una respuesta.*"
+        "text": "*Yuna escribe: «Confirma también nuestra cita». Dain añade: «Si las horas coinciden, dilo ahora». Respondo con el calendario abierto.*"
     },
-    "day4_harem_fallout_4": {"name":"{name}","text":"Entendido. No escribiré a ninguna por separado hasta aclararme."}
+    "day4_harem_fallout_4": {"name":"{name}","text":"*Le digo al grupo que volveré a confirmar los planes. Con el calendario aún abierto, me pongo los zapatos junto a la puerta.*"}
 }

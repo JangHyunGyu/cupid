@@ -1259,7 +1259,8 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
     const css = read('assets/css/style.css');
 
     assert.match(scenario, /"type": "group_free_talk"/);
-    assert.equal((scenario.match(/"next": "morning5_counteroffer_group_talk"/g) || []).length, 10);
+    assert.equal((scenario.match(/"next": "morning5_counteroffer_gather"/g) || []).length, 10);
+    assert.equal((scenario.match(/"next": "morning5_counteroffer_group_talk"/g) || []).length, 1);
     assert.match(freeTalk, /'x-chat-mode': 'group'/);
     assert.match(freeTalk, /responseSpeakers: this\.groupParticipants/);
     assert.match(freeTalk, /responseSpeakers: \[\{ id: charKey, key: charKey, name: scene\.name \}\]/);

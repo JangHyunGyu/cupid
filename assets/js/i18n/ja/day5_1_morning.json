@@ -660,5 +660,9 @@
     "morning5_counteroffer_choice_neither": {
         "name": "{name}",
         "text": "*二人の間から一歩下がる。* 今の僕には、どちらかを選ぶ資格もない。二人とも引き止めない。"
+    },
+    "morning5_counteroffer_gather": {
+        "name": "{name}",
+        "text": "*昨夜一緒にいた相手に連絡して、教室で会うことにする。先に約束していた相手にも時間を確認する。二人が来ると教室の隅に席を取る。*"
     }
 }

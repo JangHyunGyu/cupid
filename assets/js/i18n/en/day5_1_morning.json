@@ -660,5 +660,9 @@
     "morning5_counteroffer_choice_neither": {
         "name": "{name}",
         "text": "*I take one step back from both of them.* I do not deserve to choose either of you right now. I will not hold on to either of you."
+    },
+    "morning5_counteroffer_gather": {
+        "name": "{name}",
+        "text": "*I contact the person I stayed with last night and arrange to meet in the classroom. I check the time with the person I had promised to meet first, too. When both arrive, we settle in a corner of the room.*"
     }
 }

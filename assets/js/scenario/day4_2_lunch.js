@@ -592,7 +592,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "day4_caught_fallout_1": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "bgm": "night2.mp3",
+        "bgm": "morning.mp3",
         "next": "day4_caught_fallout_2"
     },
     "day4_caught_fallout_2": {
@@ -608,33 +608,48 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "day4_caught_fallout_4": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "setFlags": ["day4_caught_fallout_seen"],
-        "next": "morning5_start"
+        "setFlags": [
+            "day4_caught_fallout_seen"
+        ],
+        "next": "day4_date_branch"
     },
     "day4_harem_fallout_1": {
-        "background": "assets/images/background/cafe.png",
+        "background": "assets/images/background/room_my.png",
         "character": null,
-        "bgm": "night2.mp3",
+        "bgm": "morning.mp3",
         "next": "day4_harem_fallout_2"
     },
     "day4_harem_fallout_2": {
-        "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "day4_harem_fallout_3"
+        "background": "assets/images/background/room_my.png",
+        "next": "day4_harem_fallout_3",
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_normal.png",
+                "opacity": 0.35
+            }
+        }
     },
     "day4_harem_fallout_3": {
-        "background": "assets/images/background/cafe.png",
+        "background": "assets/images/background/room_my.png",
         "characters": {
-            "left": {"src":"assets/images/characters/yuna_normal.png"},
-            "right": {"src":"assets/images/characters/dain_normal.png"}
+            "left": {
+                "src": "assets/images/characters/yuna_normal.png",
+                "opacity": 0.35
+            },
+            "right": {
+                "src": "assets/images/characters/dain_normal.png",
+                "opacity": 0.35
+            }
         },
         "next": "day4_harem_fallout_4"
     },
     "day4_harem_fallout_4": {
-        "background": "assets/images/background/street.png",
+        "background": "assets/images/background/room_my.png",
         "character": null,
-        "setFlags": ["day4_harem_fallout_seen", "day4_waited"],
-        "next": "morning5_start"
+        "setFlags": [
+            "day4_harem_fallout_seen"
+        ],
+        "next": "day4_date_branch"
     },
     "date_seo_low": {
         "background": "assets/images/background/park.png",

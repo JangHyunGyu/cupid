@@ -593,5 +593,6 @@
     "hidden_nurse_d4_trap": {
         "name": "Schulkrankenschwester",
         "text": "Allein schaffe ich das schon. Ich hatte nur gehofft, dass du mir noch beim Rest hilfst."
-    }
+    },
+    "day4_date_branch": {}
 }

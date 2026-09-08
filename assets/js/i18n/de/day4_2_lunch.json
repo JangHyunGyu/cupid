@@ -407,14 +407,14 @@
         "name": "{name}",
         "text": "*Die Entschuldigung von gestern Abend steht noch im Eingabefeld. Gerade als ich sie abschicken will, kommt eine Nachricht von Seoyeon.*"
     },
-    "day4_caught_fallout_2": {"name":"Seoyeon","text":"Kontaktiere uns eine Weile nicht einzeln. Wenn es nötig ist, nutze den Gruppenchat."},
-    "day4_caught_fallout_3": {"name":"{name}","text":"*Kurz darauf verlässt Yuna einen Chat, und Dain sagt unser Treffen ab. Ich hänge die bereitgelegten Sachen zurück in den Schrank.*"},
-    "day4_caught_fallout_4": {"name":"{name}","text":"*Ich gehe nicht aus dem Haus. Der Gruppenchat bleibt still, bis die Sonne untergeht.*"},
-    "day4_harem_fallout_1": {"name":"{name}","text":"*Seoyeons Nachricht erscheint zuerst im Chat mit allen dreien: „Treffen wir uns heute nicht einzeln. Wir sollten alle zusammen reden.“*"},
+    "day4_caught_fallout_2": {"name":"Seoyeon","text":"Ich lasse nicht einfach durchgehen, dass du gestern Verabredungen zur selben Zeit gemacht hast. Sag uns erst, wen du heute triffst."},
+    "day4_caught_fallout_3": {"name":"{name}","text":"*Yuna liest die Gruppennachrichten, ohne zu antworten. Dain schreibt: „Wenn wir uns heute treffen, leg erst die Uhrzeit fest.“ Ich prüfe die überlappenden Termine noch einmal im Kalender.*"},
+    "day4_caught_fallout_4": {"name":"{name}","text":"*Ich schreibe die noch nicht gesendete Entschuldigung zu Ende und schicke sie ab. Während ich auf eine Antwort warte, prüfe ich die heutigen Verabredungen.*"},
+    "day4_harem_fallout_1": {"name":"{name}","text":"*Seoyeon schreibt in die Gruppe: „Dass wir gestern darüber gelacht haben, hat unsere Verabredungen nicht geklärt.“*"},
     "day4_harem_fallout_2": {"name":"Seoyeon","text":"Ich sage dir nicht, dass du eine von uns wählen sollst. Aber du kannst nicht jede von uns weiter hoffen lassen."},
     "day4_harem_fallout_3": {
         "name": "{name}",
-        "text": "*Yuna antwortet, dass sie Zeit braucht. Dain schreibt, dass auch sie mich vorerst nicht allein treffen will. Ich lese beide Nachrichten und bringe keine Antwort zustande.*"
+        "text": "*Yuna schreibt: „Bestätige auch unsere Verabredung.“ Dain ergänzt: „Wenn sich die Zeiten überschneiden, sag es jetzt.“ Ich antworte mit geöffnetem Kalender.*"
     },
-    "day4_harem_fallout_4": {"name":"{name}","text":"Verstanden. Ich kontaktiere niemanden einzeln, bis ich das geklärt habe."}
+    "day4_harem_fallout_4": {"name":"{name}","text":"*Ich schreibe der Gruppe, dass ich die Verabredungen noch einmal bestätigen werde. Mit noch geöffnetem Kalender ziehe ich an der Tür meine Schuhe an.*"}
 }

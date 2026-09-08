@@ -9,6 +9,38 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
 
 (() => {
     const scenes = {
+    "day4_date_branch": {
+        "branches": [
+            {
+                "condition": "route_dain",
+                "next": "date_dain_1"
+            },
+            {
+                "condition": "route_yuna",
+                "next": "date_yuna_1"
+            },
+            {
+                "condition": "route_seoyeon",
+                "next": "date_seo_1"
+            },
+            {
+                "condition": "accepted_dain_date",
+                "next": "date_dain_1"
+            },
+            {
+                "condition": "accepted_yuna_date",
+                "next": "date_yuna_1"
+            },
+            {
+                "condition": "accepted_seoyeon_date",
+                "next": "date_seo_1"
+            },
+            {
+                "next": "day4_night_start"
+            }
+        ],
+        "routeBeforeRender": true
+    },
     "morning4_start": {
         "background": "assets/images/background/room_my.png",
         "character": null,
@@ -836,15 +868,17 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "branches": [
-            { "condition": "day3_caught_multiple_dates", "next": "day4_caught_fallout_1" },
-            { "condition": "harem_seed", "next": "day4_harem_fallout_1" },
-            { "condition": "route_dain", "next": "date_dain_1" },
-            { "condition": "route_yuna", "next": "date_yuna_1" },
-            { "condition": "route_seoyeon", "next": "date_seo_1" },
-            { "condition": "accepted_dain_date", "next": "date_dain_1" },
-            { "condition": "accepted_yuna_date", "next": "date_yuna_1" },
-            { "condition": "accepted_seoyeon_date", "next": "date_seo_1" },
-            { "next": "day4_night_start" }
+            {
+                "condition": "day3_caught_multiple_dates",
+                "next": "day4_caught_fallout_1"
+            },
+            {
+                "condition": "harem_seed",
+                "next": "day4_harem_fallout_1"
+            },
+            {
+                "next": "day4_date_branch"
+            }
         ]
     },
     "hidden_homeroom_d4_low": {

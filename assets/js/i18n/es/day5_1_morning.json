@@ -660,5 +660,9 @@
     "morning5_counteroffer_choice_neither": {
         "name": "{name}",
         "text": "*Retrocedo un paso entre las dos.* Ahora mismo no merezco elegir a ninguna. No intentaré retener a ninguna."
+    },
+    "morning5_counteroffer_gather": {
+        "name": "{name}",
+        "text": "*Contacto con la persona con la que me quedé anoche y acordamos vernos en el aula. También confirmo la hora con quien tenía la primera cita. Cuando llegan ambas personas, nos sentamos en un rincón del aula.*"
     }
 }

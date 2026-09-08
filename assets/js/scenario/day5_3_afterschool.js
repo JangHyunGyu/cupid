@@ -357,14 +357,37 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "after5_ending_check": {
         "branches": [
-            { "condition": "day3_caught_multiple_dates", "next": "ending_start" },
-            { "condition": "harem_seed", "next": "after5_set_harem" },
-            { "condition": "day4_counteroffer_penalty_deferred", "next": "ending_start" },
-            { "condition": "homeroom_day5", "next": "after5_hidden_route_choice_check" },
-            { "condition": "nurse_day5", "next": "after5_hidden_route_choice_check" },
-            { "condition": "day4_waited", "next": "after5_last_chance_1" },
-            { "condition": "day4_confession_accepted", "next": "ending_start" },
-            { "next": "ending_start" }
+            {
+                "condition": "day4_counteroffer_penalty_deferred",
+                "next": "ending_start"
+            },
+            {
+                "condition": "day3_caught_multiple_dates",
+                "next": "ending_start"
+            },
+            {
+                "condition": "harem_seed",
+                "next": "after5_set_harem"
+            },
+            {
+                "condition": "homeroom_day5",
+                "next": "after5_hidden_route_choice_check"
+            },
+            {
+                "condition": "nurse_day5",
+                "next": "after5_hidden_route_choice_check"
+            },
+            {
+                "condition": "day4_waited",
+                "next": "after5_last_chance_1"
+            },
+            {
+                "condition": "day4_confession_accepted",
+                "next": "ending_start"
+            },
+            {
+                "next": "ending_start"
+            }
         ]
     },
     "after5_hidden_route_choice_check": {

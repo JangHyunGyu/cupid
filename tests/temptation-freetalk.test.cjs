@@ -119,3 +119,34 @@ test('every interlude preserves its CG and localized character voice with a sepa
         }
     }
 });
+
+test('confrontation history and relationship status change only the live prompt tail in every language', () => {
+    for (const lang of languages) {
+        const flags = { day4_confession_accepted: true };
+        const context = {
+            stateManager: { playerName: 'Player', getFlag: flag => flags[flag] || false, getAffinity: () => 20 },
+            groupParticipants: [{ id: 'Seoyeon', name: 'Seoyeon', role: 'lead' }, { id: 'Dain', name: 'Dain', role: 'tempter' }],
+            getGameContext: () => '',
+            _getGroupChoiceState: prototype._getGroupChoiceState,
+            _getLocalizedGroupLocation: prototype._getLocalizedGroupLocation
+        };
+        const scene = { groupParticipants: 'counteroffer_confrontation' };
+        const ordinary = prototype._buildCurrentGroupSystemPrompt.call(context, scene, lang);
+        const ordinaryState = context._getGroupChoiceState(scene, lang);
+        flags.day3_caught_multiple_dates = true;
+        const caughtState = context._getGroupChoiceState(scene, lang);
+        assert.notEqual(caughtState, ordinaryState, lang);
+        flags.harem_seed = true;
+        flags.day4_confession_accepted = false;
+        const incidentState = context._getGroupChoiceState(scene, lang);
+        assert.notEqual(incidentState, caughtState, lang);
+        const incident = prototype._buildCurrentGroupSystemPrompt.call(context, scene, lang);
+        const [stable, dynamic] = incident.split(core.CACHE_BOUNDARY_MARKER);
+        assert.equal(stable, ordinary.split(core.CACHE_BOUNDARY_MARKER)[0], lang);
+        assert.ok(dynamic.includes(incidentState), lang);
+        assert.equal(core.getStablePromptFingerprint(ordinary), core.getStablePromptFingerprint(incident), lang);
+        flags.day5_lied_about_counteroffer = true;
+        assert.notEqual(context._getGroupChoiceState(scene, lang), incidentState, lang);
+        assert.equal(context._getGroupChoiceState({groupChoiceState:'Fixed social context'},lang), 'Fixed social context');
+    }
+});

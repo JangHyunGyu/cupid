@@ -11,7 +11,7 @@
   각 조건의 참/거짓 및 선택 여부. `details_json.reason`이 선택된 조건이다.
   `confession_deferred`는 고백 보류 뒤 밤 약속으로 진입, `day4_distance_*`는 상대의 거리두기로 유혹 진입 차단이다.
   `day4_waited` 차단 사유는 이전 버전 기록이며, `no_student_route`는 학생 루트 없음이다.
-  `day3_caught_multiple_dates`와 `harem_seed`는 5일차 우선 결말 분기,
+  `day3_caught_multiple_dates`와 `harem_seed`는 4일차 후일담 진입이며, 유혹을 수락하지 않은 경우 5일차 기존 결말에도 사용한다.
   `no_counteroffer_accepted`는 유혹 수락 플래그 없음,
   `affinity_guard`는 개별 장면의 호감도 가드, `rival_selected`는 유혹 상대 선정이다.
 - `details_json.wouldFailFormerZeroGate`: 모든 라이벌이 음수여서 **제거 전 0점 조건이면
@@ -37,6 +37,10 @@
   유혹 수락 플래그가 일반 호감도 엔딩보다 우선하므로 100점이어도 사건의 결과는 지워지지 않는다.
 - `freetalk_exited`: 해당 프리토킹에서 다음 장면으로 이동. 건너뛰기도 포함한다.
 - `scene_checkpoint`: 고백 보류/루트 없음/우선 결말 경로의 도달 확인.
+
+2.9.222부터 3일차 사건의 4일차 후일담은 `day4_date_branch`로 합류한다. 기존 사건 플래그는 유지하고 현재 호감도에 따른 만남 거절도 적용한다. `morning4_end`와 `day4_date_branch`의 판정, 후일담 마지막 장면을 함께 기록한다.
+
+유혹 수락 플래그 `day4_counteroffer_penalty_deferred`는 5일차 아침과 이후 결말 판정에서 기존 사건보다 먼저 적용한다. 1:1 대화 완료 횟수와 호감도는 다음 날 그룹 진입 조건이 아니다. 해명 뒤 `morning5_counteroffer_gather`에서 두 참여자에게 연락해 대면을 잡고 `morning5_counteroffer_group_talk`으로 이동한다. 집합 장면과 대면 후 `morning5_after_counteroffer`는 체크포인트로 기록한다. 기존 중복 약속과 고백 보류는 그룹 대화의 현재 맥락에만 반영하며 이미 적용한 감점을 반복하지 않는다.
 
 `user_id`는 기존 대화 로그와 같은 기기 ID이고, `run_id`는 저장/이어하기에 보존되며
 새 게임에서 바뀐다. 재방문·불러오기는 같은 회차로 집계한다. 재전송은 `event_id`로 중복 제거된다.

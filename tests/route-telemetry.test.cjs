@@ -41,8 +41,8 @@ test('logs actual gate outcome, negative rivals, and overriding day-five conditi
     assert.equal(events[0].nextSceneId, 'wall_seo_glimpse_1');
     assert.equal(events[1].details.reason, 'confession_deferred');
     assert.equal(events[1].nextSceneId, 'day4_waited_night_branch');
-    assert.equal(events[2].details.reason, 'harem_seed');
-    assert.equal(events[2].nextSceneId, 'morning5_harem_fallout_1');
+    assert.equal(events[2].details.reason, 'day4_counteroffer_penalty_deferred');
+    assert.equal(events[2].nextSceneId, 'morning5_temptation_counteroffer_branch');
     assert.equal(new Set(events.map(event => event.runId)).size, 1);
     assert.ok(events.every(event => !event.isTest));
     assert.ok(!JSON.stringify(events).includes('playerName'));

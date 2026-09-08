@@ -9,6 +9,11 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
 
 (() => {
     const scenes = {
+    "morning5_counteroffer_gather": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "next": "morning5_counteroffer_group_talk"
+    },
     "morning5_start": {
         "background": "assets/images/background/room_school.png",
         "character": null,
@@ -19,11 +24,25 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/room_school.png",
         "character": null,
         "branches": [
-            { "condition": "day3_caught_multiple_dates", "next": "morning5_caught_fallout_1" },
-            { "condition": "harem_seed", "next": "morning5_harem_fallout_1" },
-            { "condition": "day4_counteroffer_penalty_deferred", "next": "morning5_temptation_counteroffer_branch" },
-            { "condition": "day4_confession_accepted", "next": "morning5_temptation_discovery_branch" },
-            { "next": "morning5_start_b" }
+            {
+                "condition": "day4_counteroffer_penalty_deferred",
+                "next": "morning5_temptation_counteroffer_branch"
+            },
+            {
+                "condition": "day3_caught_multiple_dates",
+                "next": "morning5_caught_fallout_1"
+            },
+            {
+                "condition": "harem_seed",
+                "next": "morning5_harem_fallout_1"
+            },
+            {
+                "condition": "day4_confession_accepted",
+                "next": "morning5_temptation_discovery_branch"
+            },
+            {
+                "next": "morning5_start_b"
+            }
         ]
     },
     "morning5_caught_fallout_1": {
@@ -103,26 +122,34 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         ]
     },
     "morning5_caught_teacher_honest": {
+        "setFlags": ["day5_confessed_counteroffer"],
+        "clearFlags": ["day5_lied_about_counteroffer"],
         "background": "assets/images/background/room_school.png",
         "backgroundVariant": "empty",
         "character": "assets/images/characters/teacher_sad.png",
-        "next": "morning5_counteroffer_group_talk"
+        "next": "morning5_counteroffer_gather"
     },
     "morning5_caught_teacher_lie": {
+        "setFlags": ["day5_lied_about_counteroffer"],
+        "clearFlags": ["day5_confessed_counteroffer"],
         "background": "assets/images/background/room_school.png",
         "backgroundVariant": "empty",
         "character": "assets/images/characters/teacher_angry.png",
-        "next": "morning5_counteroffer_group_talk"
+        "next": "morning5_counteroffer_gather"
     },
     "morning5_caught_nurse_honest": {
+        "setFlags": ["day5_confessed_counteroffer"],
+        "clearFlags": ["day5_lied_about_counteroffer"],
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_worried.png",
-        "next": "morning5_counteroffer_group_talk"
+        "next": "morning5_counteroffer_gather"
     },
     "morning5_caught_nurse_lie": {
+        "setFlags": ["day5_lied_about_counteroffer"],
+        "clearFlags": ["day5_confessed_counteroffer"],
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_angry.png",
-        "next": "morning5_counteroffer_group_talk"
+        "next": "morning5_counteroffer_gather"
     },
     "morning5_caught_by_seoyeon_route": {
         "background": "assets/images/background/room_school.png",
@@ -214,36 +241,48 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         ]
     },
     "morning5_caught_seoyeon_honest": {
+        "setFlags": ["day5_confessed_counteroffer"],
+        "clearFlags": ["day5_lied_about_counteroffer"],
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/seyoun_sad.png",
-        "next": "morning5_counteroffer_group_talk"
+        "next": "morning5_counteroffer_gather"
     },
     "morning5_caught_seoyeon_lie": {
+        "setFlags": ["day5_lied_about_counteroffer"],
+        "clearFlags": ["day5_confessed_counteroffer"],
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/seyoun_pout.png",
-        "next": "morning5_counteroffer_group_talk"
+        "next": "morning5_counteroffer_gather"
     },
     "morning5_caught_dain_honest": {
+        "setFlags": ["day5_confessed_counteroffer"],
+        "clearFlags": ["day5_lied_about_counteroffer"],
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_sad.png",
-        "next": "morning5_counteroffer_group_talk"
+        "next": "morning5_counteroffer_gather"
     },
     "morning5_caught_dain_lie": {
+        "setFlags": ["day5_lied_about_counteroffer"],
+        "clearFlags": ["day5_confessed_counteroffer"],
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_angry.png",
-        "next": "morning5_counteroffer_group_talk"
+        "next": "morning5_counteroffer_gather"
     },
     "morning5_caught_yuna_honest": {
+        "setFlags": ["day5_confessed_counteroffer"],
+        "clearFlags": ["day5_lied_about_counteroffer"],
         "background": "assets/images/background/room_school.png",
         "backgroundVariant": "cold",
         "character": "assets/images/characters/yuna_sad.png",
-        "next": "morning5_counteroffer_group_talk"
+        "next": "morning5_counteroffer_gather"
     },
     "morning5_caught_yuna_lie": {
+        "setFlags": ["day5_lied_about_counteroffer"],
+        "clearFlags": ["day5_confessed_counteroffer"],
         "background": "assets/images/background/room_school.png",
         "backgroundVariant": "cold",
         "character": "assets/images/characters/yuna_angry.png",
-        "next": "morning5_counteroffer_group_talk"
+        "next": "morning5_counteroffer_gather"
     },
     "morning5_counteroffer_group_talk": {
         "background": "assets/images/background/room_school.png",

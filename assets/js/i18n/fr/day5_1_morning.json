@@ -660,5 +660,9 @@
     "morning5_counteroffer_choice_neither": {
         "name": "{name}",
         "text": "*Je recule d’un pas entre elles.* Pour l’instant, je ne mérite de choisir aucune de vous. Je ne vous retiendrai pas."
+    },
+    "morning5_counteroffer_gather": {
+        "name": "{name}",
+        "text": "*Je contacte la personne avec qui je suis resté hier soir et nous convenons de nous voir en classe. Je confirme aussi l'heure avec celle que je devais retrouver en premier. Quand elles arrivent toutes les deux, nous nous installons dans un coin de la salle.*"
     }
 }

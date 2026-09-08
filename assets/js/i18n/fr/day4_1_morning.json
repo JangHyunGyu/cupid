@@ -593,5 +593,6 @@
     "hidden_nurse_d4_trap": {
         "name": "Infirmière",
         "text": "Je peux le faire seule. J’espérais juste que tu m’aiderais à terminer."
-    }
+    },
+    "day4_date_branch": {}
 }

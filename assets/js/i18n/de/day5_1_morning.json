@@ -660,5 +660,9 @@
     "morning5_counteroffer_choice_neither": {
         "name": "{name}",
         "text": "*Ich trete zwischen beiden einen Schritt zurück.* Im Moment habe ich nicht das Recht, eine von euch zu wählen. Ich werde keine von euch festhalten."
+    },
+    "morning5_counteroffer_gather": {
+        "name": "{name}",
+        "text": "*Ich kontaktiere die Person, bei der ich gestern Abend geblieben bin, und verabrede mich mit ihr im Klassenraum. Auch mit der Person, der ich zuerst zugesagt hatte, kläre ich die Uhrzeit. Als beide kommen, setzen wir uns in eine Ecke des Raums.*"
     }
 }

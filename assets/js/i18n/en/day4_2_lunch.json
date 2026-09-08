@@ -407,14 +407,14 @@
         "name": "{name}",
         "text": "*Last night’s apology is still sitting in the input field. Just as I’m about to send it, a message from Seoyeon arrives.*"
     },
-    "day4_caught_fallout_2": {"name":"Seoyeon","text":"Don't contact us separately for a while. Use the group chat if it's necessary."},
-    "day4_caught_fallout_3": {"name":"{name}","text":"*Soon Yuna leaves one chat and Dain cancels our plan. I hang the clothes I had laid out back in the closet.*"},
-    "day4_caught_fallout_4": {"name":"{name}","text":"*I don't go out. The group chat stays silent until the sun goes down.*"},
-    "day4_harem_fallout_1": {"name":"{name}","text":"*Seoyeon's message appears first in the group chat with all three of them: “Let's not meet separately today. We should all talk together.”*"},
+    "day4_caught_fallout_2": {"name":"Seoyeon","text":"I'm not letting yesterday's overlapping plans slide. Tell us who you're meeting today first."},
+    "day4_caught_fallout_3": {"name":"{name}","text":"*Yuna reads the group messages without replying. Dain writes, 'If we're meeting today, settle the time first.' I check the overlapping plans in my calendar again.*"},
+    "day4_caught_fallout_4": {"name":"{name}","text":"*I finish the apology I hadn't sent and send it. While waiting for a reply, I check today's plans.*"},
+    "day4_harem_fallout_1": {"name":"{name}","text":"*Seoyeon posts in the group chat: 'Laughing it off yesterday didn't sort out our plans.'*"},
     "day4_harem_fallout_2": {"name":"Seoyeon","text":"I won't tell you to pick one of us. But you can't keep letting each of us expect something."},
     "day4_harem_fallout_3": {
         "name": "{name}",
-        "text": "*Yuna replies that she needs time. Dain writes that she won’t meet me alone for a while either. I read both messages and sit there, unable to answer.*"
+        "text": "*Yuna writes, 'Confirm our plans too.' Dain follows with, 'If the times overlap, say so now.' I reply with my calendar open.*"
     },
-    "day4_harem_fallout_4": {"name":"{name}","text":"Okay. I won't contact any of you separately until I've sorted this out."}
+    "day4_harem_fallout_4": {"name":"{name}","text":"*I tell the group I'll confirm the plans again. With my calendar still open, I put on my shoes by the door.*"}
 }

@@ -660,5 +660,9 @@
     "morning5_counteroffer_choice_neither": {
         "name": "{name}",
         "text": "*두 사람 사이에서 한 걸음 물러난다.* 지금은 누구도 선택할 자격이 없어. 둘 다 붙잡지 않을게."
+    },
+    "morning5_counteroffer_gather": {
+        "name": "{name}",
+        "text": "*어젯밤 함께 있던 상대에게 연락해 교실에서 만나기로 한다. 먼저 약속했던 사람에게도 시간을 확인한다. 두 사람이 오자 교실 한쪽에 자리를 잡는다.*"
     }
 }

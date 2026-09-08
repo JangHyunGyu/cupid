@@ -13,19 +13,57 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/park.png",
         "character": null,
         "branches": [
-            { "condition": "day3_caught_multiple_dates", "next": "day5_ending_mayhem" },
-            { "condition": "ending_harem", "next": "day5_ending_harem" },
-            { "condition": "day4_counteroffer_penalty_deferred", "next": "ending_counteroffer_bitter" },
-            { "condition": "day5_last_chance_path", "next": "ending_last_chance_resolve" },
-            { "condition": "hidden_route_chosen_teacher", "next": "hidden_perfect_homeroom_check" },
-            { "condition": "hidden_route_chosen_nurse", "next": "hidden_perfect_nurse_check" },
-            { "condition": "day4_confession_accepted", "next": "ending_affinity_check" },
-            { "condition": "day5_confessed", "next": "ending_confessed_aff_check" },
-            { "condition": "day4_waited", "next": "day5_ending_friend" },
-            { "condition": "both_hidden_day5", "next": "hidden_dual_route_1" },
-            { "condition": "homeroom_day5", "next": "hidden_perfect_homeroom_check" },
-            { "condition": "nurse_day5", "next": "hidden_perfect_nurse_check" },
-            { "next": "day5_ending_alone" }
+            {
+                "condition": "day4_counteroffer_penalty_deferred",
+                "next": "ending_counteroffer_bitter"
+            },
+            {
+                "condition": "day3_caught_multiple_dates",
+                "next": "day5_ending_mayhem"
+            },
+            {
+                "condition": "ending_harem",
+                "next": "day5_ending_harem"
+            },
+            {
+                "condition": "day5_last_chance_path",
+                "next": "ending_last_chance_resolve"
+            },
+            {
+                "condition": "hidden_route_chosen_teacher",
+                "next": "hidden_perfect_homeroom_check"
+            },
+            {
+                "condition": "hidden_route_chosen_nurse",
+                "next": "hidden_perfect_nurse_check"
+            },
+            {
+                "condition": "day4_confession_accepted",
+                "next": "ending_affinity_check"
+            },
+            {
+                "condition": "day5_confessed",
+                "next": "ending_confessed_aff_check"
+            },
+            {
+                "condition": "day4_waited",
+                "next": "day5_ending_friend"
+            },
+            {
+                "condition": "both_hidden_day5",
+                "next": "hidden_dual_route_1"
+            },
+            {
+                "condition": "homeroom_day5",
+                "next": "hidden_perfect_homeroom_check"
+            },
+            {
+                "condition": "nurse_day5",
+                "next": "hidden_perfect_nurse_check"
+            },
+            {
+                "next": "day5_ending_alone"
+            }
         ]
     },
     "ending_counteroffer_bitter": {

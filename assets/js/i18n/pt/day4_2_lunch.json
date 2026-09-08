@@ -407,14 +407,14 @@
         "name": "{name}",
         "text": "*O pedido de desculpas de ontem ainda está no campo de texto. Quando vou enviar, chega uma mensagem de Seoyeon.*"
     },
-    "day4_caught_fallout_2": {"name":"Seoyeon","text":"Não fale com a gente separadamente por um tempo. Se precisar, use o grupo."},
-    "day4_caught_fallout_3": {"name":"{name}","text":"*Pouco depois, Yuna sai de uma conversa e Dain cancela nosso encontro. Penduro de volta a roupa que eu tinha separado.*"},
-    "day4_caught_fallout_4": {"name":"{name}","text":"*Não saio de casa. O grupo fica em silêncio até o sol se pôr.*"},
-    "day4_harem_fallout_1": {"name":"{name}","text":"*A mensagem de Seoyeon aparece primeiro no grupo das três: “Hoje não vamos nos encontrar separadamente. Vamos conversar todos juntos.”*"},
+    "day4_caught_fallout_2": {"name":"Seoyeon","text":"Não vou deixar passar as promessas de ontem no mesmo horário. Primeiro diz com quem você vai se encontrar hoje."},
+    "day4_caught_fallout_3": {"name":"{name}","text":"*Yuna lê as mensagens do grupo sem responder. Dain escreve: «Se a gente vai se ver hoje, decide primeiro o horário». Confiro de novo os compromissos sobrepostos no calendário.*"},
+    "day4_caught_fallout_4": {"name":"{name}","text":"*Termino o pedido de desculpas que ainda não tinha enviado e mando a mensagem. Enquanto espero a resposta, confiro os planos de hoje.*"},
+    "day4_harem_fallout_1": {"name":"{name}","text":"*Seoyeon escreve no grupo: «A gente ter rido ontem não resolveu os nossos compromissos».*"},
     "day4_harem_fallout_2": {"name":"Seoyeon","text":"Não vou mandar você escolher uma de nós. Mas você não pode continuar deixando cada uma esperar alguma coisa."},
     "day4_harem_fallout_3": {
         "name": "{name}",
-        "text": "*Yuna responde que precisa de tempo. Dain escreve que também não vai se encontrar comigo a sós por enquanto. Leio as duas mensagens e fico sem conseguir responder.*"
+        "text": "*Yuna escreve: «Confirma o nosso encontro também». Dain acrescenta: «Se os horários batem, fala agora». Respondo com o calendário aberto.*"
     },
-    "day4_harem_fallout_4": {"name":"{name}","text":"Entendi. Não vou falar com ninguém separadamente até resolver isso."}
+    "day4_harem_fallout_4": {"name":"{name}","text":"*Digo ao grupo que vou confirmar os compromissos de novo. Com o calendário ainda aberto, calço os sapatos perto da porta.*"}
 }

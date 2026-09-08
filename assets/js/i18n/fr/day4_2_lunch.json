@@ -407,14 +407,14 @@
         "name": "{name}",
         "text": "*Les excuses écrites hier soir sont toujours dans le champ de saisie. Au moment de les envoyer, je reçois un message de Seoyeon.*"
     },
-    "day4_caught_fallout_2": {"name":"Seoyeon","text":"Ne nous contacte pas séparément pendant quelque temps. Si c'est nécessaire, utilise le groupe."},
-    "day4_caught_fallout_3": {"name":"{name}","text":"*Peu après, Yuna quitte une conversation et Dain annule notre sortie. Je remets sur cintre les vêtements que j'avais préparés.*"},
-    "day4_caught_fallout_4": {"name":"{name}","text":"*Je ne sors pas. Le groupe reste silencieux jusqu'au coucher du soleil.*"},
-    "day4_harem_fallout_1": {"name":"{name}","text":"*Le message de Seoyeon apparaît en premier dans le groupe à trois : « Ne nous voyons pas séparément aujourd'hui. Parlons tous ensemble. »*"},
+    "day4_caught_fallout_2": {"name":"Seoyeon","text":"Je ne vais pas laisser passer les rendez-vous qui se chevauchaient hier. Dis-nous d'abord qui tu vois aujourd'hui."},
+    "day4_caught_fallout_3": {"name":"{name}","text":"*Yuna lit les messages du groupe sans répondre. Dain écrit : « Si on se voit aujourd'hui, fixe d'abord l'heure. » Je vérifie encore les rendez-vous qui se chevauchent dans mon calendrier.*"},
+    "day4_caught_fallout_4": {"name":"{name}","text":"*Je termine les excuses que je n'avais pas envoyées et les envoie. En attendant une réponse, je vérifie les rendez-vous du jour.*"},
+    "day4_harem_fallout_1": {"name":"{name}","text":"*Seoyeon écrit dans le groupe : « Ce n'est pas parce qu'on en a ri hier que les rendez-vous sont réglés. »*"},
     "day4_harem_fallout_2": {"name":"Seoyeon","text":"Je ne te dirai pas d'en choisir une. Mais tu ne peux pas continuer à laisser chacune espérer quelque chose."},
     "day4_harem_fallout_3": {
         "name": "{name}",
-        "text": "*Yuna répond qu’il lui faut du temps. Dain écrit qu’elle ne me verra pas seul pour le moment non plus. Je lis leurs messages sans parvenir à répondre.*"
+        "text": "*Yuna écrit : « Confirme aussi notre rendez-vous. » Dain ajoute : « Si les horaires se chevauchent, dis-le maintenant. » Je réponds en gardant mon calendrier ouvert.*"
     },
-    "day4_harem_fallout_4": {"name":"{name}","text":"D'accord. Je ne contacterai personne séparément avant d'avoir fait le point."}
+    "day4_harem_fallout_4": {"name":"{name}","text":"*Je dis au groupe que je vais reconfirmer les rendez-vous. Mon calendrier toujours ouvert, je mets mes chaussures près de la porte.*"}
 }
