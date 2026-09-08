@@ -283,6 +283,7 @@
 
     function buildScriptUrl(src, attempt) {
         var query = '?v=' + encodeURIComponent(version);
+        if (src === 'modules/config.js') query += '&history=20260908';
         if (attempt > 0) {
             query += '&retry=' + Date.now();
         }

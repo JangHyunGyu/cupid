@@ -127,8 +127,8 @@ function buildCupidPromptEpoch(history, options = {}) {
         return { messages: systemMessage ? [systemMessage] : [], state: null };
     }
 
-    const maxMessages = Math.max(4, Number(options.maxMessages) || 32);
-    const retainMessages = Math.max(2, Math.min(maxMessages - 1, Number(options.retainMessages) || 24));
+    const maxMessages = Math.max(4, Number(options.maxMessages) || 10);
+    const retainMessages = Math.max(2, Math.min(maxMessages - 1, Number(options.retainMessages) || 6));
     const carryoverChars = Math.max(800, Number(options.carryoverChars) || 2400);
     const savedState = options.state?.version === CUPID_PROMPT_EPOCH_VERSION ? options.state : {};
     const state = {

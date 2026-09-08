@@ -218,6 +218,7 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
 
     scripts.forEach(function (src) {
-        document.write('<script src="' + basePath + src + '?v=' + version + '" onerror="window.__cupidShowGalleryLoadError && window.__cupidShowGalleryLoadError()"><\/script>');
+        const historyRevision = src === 'modules/config.js' || src === 'gallery-freetalk.js' ? '&history=20260908' : '';
+        document.write('<script src="' + basePath + src + '?v=' + version + historyRevision + '" onerror="window.__cupidShowGalleryLoadError && window.__cupidShowGalleryLoadError()"><\/script>');
     });
 })();

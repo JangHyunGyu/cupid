@@ -434,7 +434,7 @@ function generate() {
 
     const finalContent = header + output.join('\n') + footer;
     if (process.argv.includes('--check')) {
-        if (existingContent !== finalContent) {
+        if (existingContent.replace(/\r\n/g, '\n') !== finalContent.replace(/\r\n/g, '\n')) {
             console.error('❌ SCENARIO.md가 시나리오 JS 및 한국어 i18n과 동기화되지 않았습니다. `node generate-scenario.js`를 실행하세요.');
             process.exitCode = 1;
             return;

@@ -2167,12 +2167,23 @@ test('gallery rollover retains recent voice and a bounded stable checkpoint', ()
     const history = [{ role: 'system', content: 'stable profile' }, ...Array.from({ length: 33 }, (_, i) => ({ role: i % 2 ? 'assistant' : 'user', content: `line ${i}`, timestamp: i + 1 }))];
     const first = context.window.buildCupidPromptEpoch(history);
     const raw = first.messages.filter(message => message.role !== 'system');
-    assert.equal(raw.length, 24);
-    assert.equal(raw[0].content, 'line 9');
+    assert.equal(raw.length, 6);
+    assert.equal(raw[0].content, 'line 27');
     assert.equal(raw.at(-1).content, 'line 32');
-    assert.ok(first.state.carryover.includes('line 8'));
+    assert.ok(first.state.carryover.includes('line 26'));
     const next = context.window.buildCupidPromptEpoch([...history, { role: 'assistant', content: 'next', timestamp: 34 }], { state: first.state });
-    assert.equal(next.messages.filter(message => message.role !== 'system').length, 25);
+    assert.equal(next.messages.filter(message => message.role !== 'system').length, 7);
     assert.equal(next.state.carryover, first.state.carryover, 'checkpoint should remain frozen inside an epoch');
     assert.equal(next.messages[0].content, 'stable profile');
+    assert.equal(history.length, 34, 'request trimming must not delete stored history');
+    let state = next.state;
+    let source = [...history, { role: 'assistant', content: 'next', timestamp: 34 }];
+    for (let i = 35; i < 80; i++) {
+        source = [...source, { role: i % 2 ? 'user' : 'assistant', content: `new ${i}`, timestamp: i }];
+        const result = context.window.buildCupidPromptEpoch(source, { state });
+        const conversation = result.messages.filter(message => message.role !== 'system');
+        assert.ok(conversation.length <= 10, 'restored gallery request limit must hold across rollovers');
+        assert.equal(conversation.at(-1).content, `new ${i}`, 'latest message must survive trimming');
+        state = result.state;
+    }
 });
