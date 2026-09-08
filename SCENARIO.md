@@ -18007,7 +18007,10 @@
 ### `day4_student_night_branch`
 - 배경: `room_my.png`
 - 분기:
-  - [`day4_waited`] → `day4_night_regret`
+  - [`day4_distance_seoyeon`] → `day4_night_regret`
+  - [`day4_distance_dain`] → `day4_night_regret`
+  - [`day4_distance_yuna`] → `day4_night_regret`
+  - [`day4_waited`] → `day4_waited_night_branch`
   - [`route_seoyeon`] → `wall_seo_1`
   - [`route_dain`] → `wall_dain_1`
   - [`route_yuna`] → `wall_yuna_1`
@@ -18015,6 +18018,74 @@
 
 - 캐릭터: `없음`
 **{name}**: *집으로 돌아와 가방을 내려놓는다. 휴대폰을 충전기에 꽂으려다 새 알림을 확인한다.*
+
+---
+
+### `day4_waited_night_branch`
+- 분기:
+  - [`route_seoyeon`] → `day4_waited_seoyeon_invite`
+  - [`route_dain`] → `day4_waited_dain_invite`
+  - [`route_yuna`] → `day4_waited_yuna_invite`
+  - [기본] → `day4_night_regret`
+
+<!-- i18n -->
+
+---
+
+### `day4_waited_seoyeon_invite`
+- 배경: `room_my.png`
+- 다음: `day4_waited_seoyeon_promise`
+
+- 캐릭터: `seyoun_normal.png` @ 0.35
+**서연**: 열 시에 공원에서 잠깐 볼래? 아까는 얘기를 다 못 한 것 같아서.
+
+---
+
+### `day4_waited_seoyeon_promise`
+- 배경: `room_my.png`
+- 플래그: `day4_night_promised_seoyeon`
+- 다음: `wall_seo_rival_rank`
+
+- 캐릭터: `없음`
+**{name}**: *서연에게 '응, 열 시에 공원으로 갈게'라고 답장을 보낸다. 겉옷을 챙겨 다시 집을 나선다.*
+
+---
+
+### `day4_waited_dain_invite`
+- 배경: `room_my.png`
+- 다음: `day4_waited_dain_promise`
+
+- 캐릭터: `dain_normal.png` @ 0.35
+**다인**: 야, 집이야? 열 시에 체육관으로 와. 뒷문 열어둘게. 그냥 앉아 있다 가도 되니까.
+
+---
+
+### `day4_waited_dain_promise`
+- 배경: `room_my.png`
+- 플래그: `day4_night_promised_dain`
+- 다음: `wall_dain_rival_rank`
+
+- 캐릭터: `없음`
+**{name}**: *'열 시까지 갈게.' 답장을 보내자 다인이 확인했다는 이모티콘을 보낸다. 운동화를 신고 현관문을 연다.*
+
+---
+
+### `day4_waited_yuna_invite`
+- 배경: `room_my.png`
+- 다음: `day4_waited_yuna_promise`
+
+- 캐릭터: `yuna_normal.png` @ 0.35
+**유나**: 열 시에 학교 후문으로 와. 걸으면서 얘기하자.
+
+---
+
+### `day4_waited_yuna_promise`
+- 배경: `room_my.png`
+- 플래그: `day4_night_promised_yuna`
+- 다음: `wall_yuna_rival_rank`
+
+- 캐릭터: `없음`
+**{name}**: *유나에게 '응, 열 시에 후문에서 보자'라고 보낸다. 휴대폰을 주머니에 넣고 다시 학교 쪽으로 걷는다.*
 
 ---
 

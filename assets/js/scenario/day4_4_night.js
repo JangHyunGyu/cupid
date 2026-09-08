@@ -540,14 +540,88 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "characters": {"center":{"src":"assets/images/characters/nurse_worried.png","opacity":0.35}},
         "next": "day4_hidden_msg_branch"
     },
+    "day4_waited_night_branch": {
+        "branches": [
+            {
+                "condition": "route_seoyeon",
+                "next": "day4_waited_seoyeon_invite"
+            },
+            {
+                "condition": "route_dain",
+                "next": "day4_waited_dain_invite"
+            },
+            {
+                "condition": "route_yuna",
+                "next": "day4_waited_yuna_invite"
+            },
+            {
+                "next": "day4_night_regret"
+            }
+        ],
+        "routeBeforeRender": true
+    },
+    "day4_waited_seoyeon_invite": {
+        "background": "assets/images/background/room_my.png",
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "day4_waited_seoyeon_promise"
+    },
+    "day4_waited_seoyeon_promise": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "setFlags": [
+            "day4_night_promised_seoyeon"
+        ],
+        "next": "wall_seo_rival_rank"
+    },
+    "day4_waited_dain_invite": {
+        "background": "assets/images/background/room_my.png",
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/dain_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "day4_waited_dain_promise"
+    },
+    "day4_waited_dain_promise": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "setFlags": [
+            "day4_night_promised_dain"
+        ],
+        "next": "wall_dain_rival_rank"
+    },
+    "day4_waited_yuna_invite": {
+        "background": "assets/images/background/room_my.png",
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "day4_waited_yuna_promise"
+    },
+    "day4_waited_yuna_promise": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "setFlags": [
+            "day4_night_promised_yuna"
+        ],
+        "next": "wall_yuna_rival_rank"
+    },
     "day4_student_night_branch": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "branches": [
-            {
-                "condition": "day4_waited",
-                "next": "day4_night_regret"
-            },
+            {"condition":"day4_distance_seoyeon","next":"day4_night_regret"},
+            {"condition":"day4_distance_dain","next":"day4_night_regret"},
+            {"condition":"day4_distance_yuna","next":"day4_night_regret"},
+            { "condition": "day4_waited", "next": "day4_waited_night_branch" },
             {
                 "condition": "route_seoyeon",
                 "next": "wall_seo_1"

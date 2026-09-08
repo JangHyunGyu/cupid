@@ -1167,5 +1167,30 @@
     "day4_temptation_return_home": {
         "name": "{name}",
         "text": "*Après leur conversation en tête-à-tête, le protagoniste rentre chez lui.*"
+    },
+    "day4_waited_night_branch": {},
+    "day4_waited_seoyeon_invite": {
+        "name": "Seoyeon",
+        "text": "On se voit un moment au parc à vingt-deux heures ? J'ai l'impression qu'on n'a pas fini de parler tout à l'heure."
+    },
+    "day4_waited_seoyeon_promise": {
+        "name": "{name}",
+        "text": "*J'écris à Seoyeon : « D'accord, je serai au parc à vingt-deux heures. » Je prends ma veste et ressors.*"
+    },
+    "day4_waited_dain_invite": {
+        "name": "Dain",
+        "text": "Hé, tu es chez toi ? Viens au gymnase à vingt-deux heures. Je laisserai la porte de derrière ouverte. On peut juste rester assis un moment."
+    },
+    "day4_waited_dain_promise": {
+        "name": "{name}",
+        "text": "*« J'y serai pour vingt-deux heures. » Dain confirme avec un emoji. J'enfile mes baskets et ouvre la porte d'entrée.*"
+    },
+    "day4_waited_yuna_invite": {
+        "name": "Yuna",
+        "text": "Viens à l'entrée arrière de l'école à vingt-deux heures. On parlera en marchant."
+    },
+    "day4_waited_yuna_promise": {
+        "name": "{name}",
+        "text": "*J'écris à Yuna : « D'accord, à vingt-deux heures à l'entrée arrière. » Je range mon téléphone et repars vers l'école.*"
     }
 }

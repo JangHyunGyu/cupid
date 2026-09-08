@@ -2052,6 +2052,9 @@ test('conversation log day prefers the scene session over stale runtime day stat
     assert.equal(daySandbox.__resolveCupidConversationDay(1, 'hidden_yuna_d2_freetalk'), 2);
     assert.equal(daySandbox.__resolveCupidConversationDay(1, 'after3_dain_freetalk'), 3);
     assert.equal(daySandbox.__resolveCupidConversationDay(1, 'wall_teacher_freetalk'), 4);
+    for (const character of ['seoyeon', 'yuna', 'dain']) {
+        assert.equal(daySandbox.__resolveCupidConversationDay(1, `day4_temptation_${character}_freetalk`), 4);
+    }
     assert.equal(daySandbox.__resolveCupidConversationDay(1, 'tour_yuna_freetalk'), 5);
     assert.equal(daySandbox.__resolveCupidConversationDay(1, 'day5_yuna_ending_freetalk_perfect'), 5);
     assert.equal(daySandbox.__resolveCupidConversationDay(4, 'gallery-freetalk'), 4);

@@ -9,7 +9,8 @@
 - `day4_entered`, `night_entered`, `morning_entered`: 해당 장면까지 실행된 회차.
 - `gate_evaluated`: 실제 선택된 다음 장면, 판정 시점의 5명 호감도, 관련 플래그,
   각 조건의 참/거짓 및 선택 여부. `details_json.reason`이 선택된 조건이다.
-  `day4_waited`는 고백 보류, `no_student_route`는 학생 루트 없음,
+  `confession_deferred`는 고백 보류 뒤 밤 약속으로 진입, `day4_distance_*`는 상대의 거리두기로 유혹 진입 차단이다.
+  `day4_waited` 차단 사유는 이전 버전 기록이며, `no_student_route`는 학생 루트 없음이다.
   `day3_caught_multiple_dates`와 `harem_seed`는 5일차 우선 결말 분기,
   `no_counteroffer_accepted`는 유혹 수락 플래그 없음,
   `affinity_guard`는 개별 장면의 호감도 가드, `rival_selected`는 유혹 상대 선정이다.

@@ -1231,6 +1231,19 @@ test('rival affinity is checked before the wall scene and free talk exits cleanl
     }
 });
 
+test('distance flags keep declined closeness separate from deferred confessions', () => {
+    for (const route of ['seoyeon', 'yuna', 'dain']) {
+        const flags = { [`route_${route}`]: true, day4_waited: true, [`day4_distance_${route}`]: true };
+        const renderer = createSceneRenderer({ Seoyeon: 100, Yuna: 100, Dain: 100 }, flags);
+        assert.equal(renderer.resolveNextScene(scenes.day4_student_night_branch), 'day4_night_regret');
+        flags[`day4_distance_${route}`] = false;
+        assert.equal(renderer.resolveNextScene(scenes.day4_student_night_branch), 'day4_waited_night_branch');
+        assert.equal(renderer.resolveNextScene(scenes.day4_waited_night_branch), `day4_waited_${route}_invite`);
+    }
+    const noRoute = createSceneRenderer({}, { day4_waited: true });
+    assert.equal(noRoute.resolveNextScene(scenes.day4_waited_night_branch), 'day4_night_regret');
+});
+
 test('every eligible day-four route shows the accepted rival CG at any affinity before the next-morning confrontation', () => {
     const routes = [
         ['Seoyeon', 'route_seoyeon', ['Dain', 'Yuna']],
@@ -1247,11 +1260,12 @@ test('every eligible day-four route shows the accepted rival CG at any affinity 
                 for (const leadAffinity of [59, 60, 100]) {
                   for (const rivalAffinity of [-100, -9, -8, -1, 0, 100]) {
                     if (rivalAffinity === -100 && rival !== rivals[0]) continue;
-                    const label = `${locale}/${lead}:${leadAffinity}/${rival}:${rivalAffinity}`;
+                  for (const deferred of [false, true]) {
+                    const label = `${locale}/${lead}:${leadAffinity}/${rival}:${rivalAffinity}/deferred:${deferred}`;
                     const affinities = { Seoyeon: -100, Yuna: -100, Dain: -100, Teacher: -100, Nurse: -100 };
                     affinities[lead] = leadAffinity;
                     affinities[rival] = rivalAffinity;
-                    const flags = { [routeFlag]: true, day4_confession_accepted: true };
+                    const flags = { [routeFlag]: true, day4_confession_accepted: !deferred, day4_waited: deferred };
                     const renderer = createSceneRenderer(affinities, flags, copy);
                     const visited = new Set();
                     let id = 'day4_night_start';
@@ -1281,6 +1295,18 @@ test('every eligible day-four route shows the accepted rival CG at any affinity 
                     }
                     assert.equal(flags[`day4_took_${rival.toLowerCase()}_counteroffer`], true, label);
                     assert.equal(flags.day5_confessed_counteroffer, true, label);
+                    assert.equal(flags.day4_confession_accepted, !deferred, label);
+                    if (deferred && !['Teacher', 'Nurse'].includes(lead)) {
+                        const invite = `day4_waited_${lead.toLowerCase()}_invite`;
+                        const promise = `day4_waited_${lead.toLowerCase()}_promise`;
+                        assert.ok(visited.has(invite) && visited.has(promise), label);
+                        const path = [...visited];
+                        const offerIndex = path.findIndex(id => scenes[id].choices?.some(choice => choice.setFlags?.includes('day4_counteroffer_penalty_deferred')));
+                        assert.ok(path.indexOf(invite) < path.indexOf(promise) && path.indexOf(promise) < offerIndex, label);
+                        assert.equal(flags[`day4_night_promised_${lead.toLowerCase()}`], true, label);
+                        assert.notEqual(flags[`isDating_${lead}`], true, label);
+                        assert.ok(copy[invite]?.text && copy[promise]?.text, label);
+                    }
                     const displayedCGs = [...visited]
                         .map(sceneId => scenes[sceneId])
                         .filter(scene => scene.type !== 'free_talk' && /\/event_temptation_/.test(scene.background || ''));
@@ -1298,6 +1324,7 @@ test('every eligible day-four route shows the accepted rival CG at any affinity 
                     assert.equal(group.groupParticipants, 'counteroffer_confrontation', label);
                     assert.equal(group.text, copy[id].text, label);
                     assert.equal(group.maxTurns, 3, label);
+                  }
                   }
                 }
             }

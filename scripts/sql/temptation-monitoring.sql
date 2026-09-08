@@ -6,7 +6,7 @@ WITH runs AS (
     MAX(event_type='offer_choice' AND json_extract(details_json,'$.accepted')=1) AS accepted,
     MAX(event_type='offer_choice' AND json_extract(details_json,'$.accepted')=0) AS declined,
     MAX(event_type='gate_evaluated' AND json_extract(details_json,'$.reason') IN
-      ('day4_waited','no_student_route','affinity_guard','no_eligible_rival')) AS blocked,
+      ('day4_waited','day4_distance_seoyeon','day4_distance_dain','day4_distance_yuna','no_student_route','affinity_guard','no_eligible_rival')) AS blocked,
     MAX(event_type='freetalk_entered' AND scene_id='morning5_counteroffer_group_talk') AS confrontation
   FROM cupid_route_events WHERE is_test=0 AND created_at >= datetime('now','-7 days')
   GROUP BY app_id, user_id, run_id

@@ -10,6 +10,7 @@ for (const [lang, character, lead, offer, startAffinity] of [
         test.setTimeout(120_000);
         const requests = [];
         const events = [];
+        const chatLogs = [];
         const requestedChanges = [5, -4, 5, -2, 5];
         await page.route('**/*', async route => {
             const request = route.request();
@@ -25,6 +26,7 @@ for (const [lang, character, lead, offer, startAffinity] of [
                     expression: 'happy', affinity: requestedChanges[requests.length - 1], forcedSexualViolation: 'none'
                 }) } }] } });
             }
+            if (new URL(request.url()).pathname === '/chat-logs') chatLogs.push(body);
             if (Array.isArray(body?.events)) events.push(...body.events);
             return route.fulfill({ status: 200, json: { ok: true, eventIds: (body?.events || []).map(event => event.eventId) } });
         });
@@ -85,6 +87,8 @@ for (const [lang, character, lead, offer, startAffinity] of [
             }
         }
         expect(new Set(requests.map(request => request.cacheKey)).size).toBe(1);
+        await expect.poll(() => chatLogs.filter(entry => entry.sessionId === sceneId).length).toBe(10);
+        expect(chatLogs.filter(entry => entry.sessionId === sceneId).every(entry => entry.conversationDay === 4)).toBe(true);
         await page.waitForFunction(() => !window.gameEngine.freeTalkSystem.isFreeTalking);
         await page.evaluate(() => window.CupidRouteTelemetry.flush());
         const entry = events.find(event => event.eventType === 'freetalk_entered' && event.sceneId === sceneId);

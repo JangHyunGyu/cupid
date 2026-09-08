@@ -1167,5 +1167,30 @@
     "day4_temptation_return_home": {
         "name": "{name}",
         "text": "*Depois da conversa a sós, o protagonista volta para casa.*"
+    },
+    "day4_waited_night_branch": {},
+    "day4_waited_seoyeon_invite": {
+        "name": "Seoyeon",
+        "text": "Quer me encontrar um pouco no parque às dez? Acho que ainda tínhamos coisas para conversar mais cedo."
+    },
+    "day4_waited_seoyeon_promise": {
+        "name": "{name}",
+        "text": "*Mando uma mensagem para Seoyeon: «Claro. Estarei no parque às dez». Pego a jaqueta e saio de novo.*"
+    },
+    "day4_waited_dain_invite": {
+        "name": "Dain",
+        "text": "Ei, já está em casa? Vem ao ginásio às dez. Vou deixar a porta dos fundos aberta. A gente pode só ficar sentado um pouco."
+    },
+    "day4_waited_dain_promise": {
+        "name": "{name}",
+        "text": "*«Chego às dez». Dain confirma com um emoji. Calço os tênis e abro a porta de casa.*"
+    },
+    "day4_waited_yuna_invite": {
+        "name": "Yuna",
+        "text": "Vem ao portão dos fundos da escola às dez. Vamos conversar enquanto caminhamos."
+    },
+    "day4_waited_yuna_promise": {
+        "name": "{name}",
+        "text": "*Mando uma mensagem para Yuna: «Tudo bem, às dez no portão dos fundos». Guardo o celular e volto a caminhar em direção à escola.*"
     }
 }

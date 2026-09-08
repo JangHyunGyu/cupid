@@ -39,7 +39,8 @@ test('logs actual gate outcome, negative rivals, and overriding day-five conditi
     assert.equal(events[0].details.reason, 'rival_selected');
     assert.equal(events[0].details.wouldFailFormerZeroGate, true);
     assert.equal(events[0].nextSceneId, 'wall_seo_glimpse_1');
-    assert.equal(events[1].details.reason, 'day4_waited');
+    assert.equal(events[1].details.reason, 'confession_deferred');
+    assert.equal(events[1].nextSceneId, 'day4_waited_night_branch');
     assert.equal(events[2].details.reason, 'harem_seed');
     assert.equal(events[2].nextSceneId, 'morning5_harem_fallout_1');
     assert.equal(new Set(events.map(event => event.runId)).size, 1);
@@ -62,6 +63,22 @@ test('offer choices and free-talk entry are separate from passage eligibility', 
     assert.equal(events[1].details.accepted, false);
     assert.equal(events[2].details.accepted, true);
     assert.equal(events[3].day, 5);
+});
+
+test('distance and deferred invitation decisions remain distinct in monitoring', async () => {
+    const h = harness();
+    h.state.flags = { route_yuna: true, day4_waited: true, day4_distance_yuna: true };
+    const gate = h.scenes.day4_student_night_branch;
+    h.telemetry.transition(h.state, 'day4_student_night_branch', gate, h.renderer.resolveNextScene(gate));
+    h.state.flags.day4_distance_yuna = false;
+    h.telemetry.transition(h.state, 'day4_student_night_branch', gate, h.renderer.resolveNextScene(gate));
+    const invitation = h.scenes.day4_waited_night_branch;
+    h.telemetry.transition(h.state, 'day4_waited_night_branch', invitation, h.renderer.resolveNextScene(invitation));
+    await h.telemetry.flush();
+    const events = h.requests[0].events;
+    assert.deepEqual(events.map(event => event.details.reason), ['day4_distance_yuna', 'confession_deferred', 'route_yuna']);
+    assert.equal(events[0].nextSceneId, 'day4_night_regret');
+    assert.equal(events[2].nextSceneId, 'day4_waited_yuna_invite');
 });
 
 test('failed transmission survives reload with the same event IDs; acknowledgements clear it', async () => {

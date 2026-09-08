@@ -1167,5 +1167,30 @@
     "day4_temptation_return_home": {
         "name": "{name}",
         "text": "*Nach dem Gespräch zu zweit kehrt der Protagonist nach Hause zurück.*"
+    },
+    "day4_waited_night_branch": {},
+    "day4_waited_seoyeon_invite": {
+        "name": "Seoyeon",
+        "text": "Wollen wir uns um zehn kurz im Park treffen? Ich glaube, vorhin waren wir noch nicht fertig mit Reden."
+    },
+    "day4_waited_seoyeon_promise": {
+        "name": "{name}",
+        "text": "*Ich schreibe Seoyeon: ‚Klar, ich komme um zehn in den Park.‘ Ich nehme meine Jacke und gehe wieder hinaus.*"
+    },
+    "day4_waited_dain_invite": {
+        "name": "Dain",
+        "text": "Hey, bist du schon zu Hause? Komm um zehn zur Sporthalle. Ich lasse die Hintertür offen. Wir können auch einfach ein bisschen zusammensitzen."
+    },
+    "day4_waited_dain_promise": {
+        "name": "{name}",
+        "text": "*‚Ich bin um zehn da.‘ Dain bestätigt mit einem Emoji. Ich ziehe meine Turnschuhe an und öffne die Haustür.*"
+    },
+    "day4_waited_yuna_invite": {
+        "name": "Yuna",
+        "text": "Komm um zehn zum hinteren Schultor. Wir reden beim Gehen."
+    },
+    "day4_waited_yuna_promise": {
+        "name": "{name}",
+        "text": "*Ich schreibe Yuna: ‚Okay, bis zehn am hinteren Tor.‘ Ich stecke das Handy ein und gehe wieder Richtung Schule.*"
     }
 }

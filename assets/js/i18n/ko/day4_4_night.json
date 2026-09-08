@@ -1167,5 +1167,30 @@
     "day4_temptation_return_home": {
         "name": "{name}",
         "text": "*둘만의 대화를 마치고 집으로 돌아온다.*"
+    },
+    "day4_waited_night_branch": {},
+    "day4_waited_seoyeon_invite": {
+        "name": "서연",
+        "text": "열 시에 공원에서 잠깐 볼래? 아까는 얘기를 다 못 한 것 같아서."
+    },
+    "day4_waited_seoyeon_promise": {
+        "name": "{name}",
+        "text": "*서연에게 '응, 열 시에 공원으로 갈게'라고 답장을 보낸다. 겉옷을 챙겨 다시 집을 나선다.*"
+    },
+    "day4_waited_dain_invite": {
+        "name": "다인",
+        "text": "야, 집이야? 열 시에 체육관으로 와. 뒷문 열어둘게. 그냥 앉아 있다 가도 되니까."
+    },
+    "day4_waited_dain_promise": {
+        "name": "{name}",
+        "text": "*'열 시까지 갈게.' 답장을 보내자 다인이 확인했다는 이모티콘을 보낸다. 운동화를 신고 현관문을 연다.*"
+    },
+    "day4_waited_yuna_invite": {
+        "name": "유나",
+        "text": "열 시에 학교 후문으로 와. 걸으면서 얘기하자."
+    },
+    "day4_waited_yuna_promise": {
+        "name": "{name}",
+        "text": "*유나에게 '응, 열 시에 후문에서 보자'라고 보낸다. 휴대폰을 주머니에 넣고 다시 학교 쪽으로 걷는다.*"
     }
 }

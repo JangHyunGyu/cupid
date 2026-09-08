@@ -1167,5 +1167,30 @@
     "day4_temptation_return_home": {
         "name": "{name}",
         "text": "*After their private conversation, the protagonist returns home.*"
+    },
+    "day4_waited_night_branch": {},
+    "day4_waited_seoyeon_invite": {
+        "name": "Seoyeon",
+        "text": "Want to meet at the park at ten? I feel like we didn't finish talking earlier."
+    },
+    "day4_waited_seoyeon_promise": {
+        "name": "{name}",
+        "text": "*I text Seoyeon, 'Sure. I'll be at the park at ten.' I grab my jacket and head back out.*"
+    },
+    "day4_waited_dain_invite": {
+        "name": "Dain",
+        "text": "Hey, are you home? Come to the gym at ten. I'll leave the back door open. We can just sit for a bit."
+    },
+    "day4_waited_dain_promise": {
+        "name": "{name}",
+        "text": "*'I'll be there by ten.' Dain replies with a confirmation emoji. I put on my sneakers and open the front door.*"
+    },
+    "day4_waited_yuna_invite": {
+        "name": "Yuna",
+        "text": "Come to the school's back gate at ten. Let's talk while we walk."
+    },
+    "day4_waited_yuna_promise": {
+        "name": "{name}",
+        "text": "*I text Yuna, 'Okay, see you at the back gate at ten.' I pocket my phone and walk back toward school.*"
     }
 }

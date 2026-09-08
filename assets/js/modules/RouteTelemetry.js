@@ -2,7 +2,7 @@
 (() => {
     const KEY = 'cupid_pending_route_events_v1';
     const CHARACTERS = ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse'];
-    const GATES = new Set(['day4_night_branch', 'day4_student_night_branch', 'morning5_start_branch', 'morning5_temptation_discovery_branch', 'morning5_temptation_counteroffer_branch']);
+    const GATES = new Set(['day4_night_branch', 'day4_student_night_branch', 'day4_waited_night_branch', 'morning5_start_branch', 'morning5_temptation_discovery_branch', 'morning5_temptation_counteroffer_branch']);
     let pending = [];
     let busy = false;
     let timer = null;
@@ -97,17 +97,22 @@
     }
     function transition(state, sceneId, scene, nextSceneId, guarded = false) {
         if (!scene || !/^(wall_|day4_|morning5_)/.test(sceneId)) return;
-        const conditions = (scene.branches || []).map(branch => ({
-            condition: branch.condition || '', excludeCondition: branch.excludeCondition || '', next: branch.next,
-            passed: (!branch.condition || !!state.getFlag(branch.condition)) && (!branch.excludeCondition || !state.getFlag(branch.excludeCondition)),
-            selected: branch.next === nextSceneId
-        }));
+        let selectedConditionFound = false;
+        const conditions = (scene.branches || []).map(branch => {
+            const passed = (!branch.condition || !!state.getFlag(branch.condition))
+                && (!branch.excludeCondition || !state.getFlag(branch.excludeCondition));
+            const selected = !selectedConditionFound && passed && branch.next === nextSceneId;
+            if (selected) selectedConditionFound = true;
+            return { condition: branch.condition || '', excludeCondition: branch.excludeCondition || '',
+                next: branch.next, passed, selected };
+        });
         if (guarded || GATES.has(sceneId) || scene.rankedRivalBranches || sceneId.startsWith('morning5_caught_by_')) {
             const selected = conditions.find(condition => condition.selected);
             const rivals = (scene.rankedRivalBranches || []).map(branch => ({ character: branch.character, affinity: state.getAffinity(branch.character), selected: branch.next === nextSceneId }));
             let reason = guarded ? 'affinity_guard' : selected?.condition || 'fallback';
             if (rivals.length) reason = rivals.some(rival => rival.selected) ? 'rival_selected' : 'no_eligible_rival';
-            if (sceneId === 'day4_student_night_branch' && reason === 'fallback') reason = 'no_student_route';
+            if (['day4_student_night_branch', 'day4_waited_night_branch'].includes(sceneId) && reason === 'fallback') reason = 'no_student_route';
+            if (sceneId === 'day4_student_night_branch' && nextSceneId === 'day4_waited_night_branch') reason = 'confession_deferred';
             if (sceneId === 'morning5_start_branch' && !state.getFlag('day4_counteroffer_penalty_deferred')
                 && !['day3_caught_multiple_dates', 'harem_seed'].includes(reason)) reason = 'no_counteroffer_accepted';
             emit(state, sceneId, 'gate_evaluated', {

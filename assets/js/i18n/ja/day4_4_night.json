@@ -1167,5 +1167,30 @@
     "day4_temptation_return_home": {
         "name": "{name}",
         "text": "*二人きりの会話を終え、家へ帰る。*"
+    },
+    "day4_waited_night_branch": {},
+    "day4_waited_seoyeon_invite": {
+        "name": "ソヨン",
+        "text": "十時に公園で少し会わない？ さっき、まだ話し足りなかった気がして。"
+    },
+    "day4_waited_seoyeon_promise": {
+        "name": "{name}",
+        "text": "*ソヨンに『うん、十時に公園へ行くよ』と返す。上着を手に取り、もう一度家を出る。*"
+    },
+    "day4_waited_dain_invite": {
+        "name": "ダイン",
+        "text": "ねえ、もう家？ 十時に体育館に来て。裏口を開けておくから。座って話すだけでもいいし。"
+    },
+    "day4_waited_dain_promise": {
+        "name": "{name}",
+        "text": "*『十時までに行くよ』と送ると、ダインから了解の絵文字が返ってくる。スニーカーを履いて玄関を開ける。*"
+    },
+    "day4_waited_yuna_invite": {
+        "name": "ユナ",
+        "text": "十時に学校の裏門に来て。歩きながら話そう。"
+    },
+    "day4_waited_yuna_promise": {
+        "name": "{name}",
+        "text": "*ユナに『うん、十時に裏門で』と送る。携帯をポケットに入れ、また学校の方へ歩き出す。*"
     }
 }

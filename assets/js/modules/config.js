@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.220";
+const ASSET_VERSION = "2.9.221";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -384,7 +384,7 @@ function inferCupidConversationDay(sessionId) {
     const id = String(sessionId || '').trim().toLowerCase();
     if (!id || id === 'gallery-freetalk' || id === 'migrated-gallery' || id === 'migrated-main') return null;
     if (/^(?:day5_|morning5_|tour_)/.test(id) || /(?:^|_)d5(?:_|$)/.test(id)) return 5;
-    if (/^wall_/.test(id) || /(?:^|_)d4(?:_|$)/.test(id)) return 4;
+    if (/^(?:day4_|wall_)/.test(id) || /(?:^|_)d4(?:_|$)/.test(id)) return 4;
     if (/^after3_/.test(id) || /(?:^|_)d3(?:_|$)/.test(id)) return 3;
     if (/^(?:night2_|after2_)/.test(id) || /(?:^|_)d2(?:_|$)/.test(id)) return 2;
     if (/^lunch_/.test(id) || /^(?:after_homeroom|after_nurse)_freetalk$/.test(id)
