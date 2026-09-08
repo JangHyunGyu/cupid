@@ -588,7 +588,8 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
     }
 
     function shouldRetryAiResponse(response) {
-        return !!response && !response.ok && (
+        return !!response && !response.ok
+            && response.headers?.get?.('x-ai-retry-exhausted') !== 'true' && (
             RETRY_HTTP_STATUSES.has(response.status)
             || response.status >= 500
         );
@@ -1388,7 +1389,32 @@ Latest user: """${excerpt}"""
         return hasDisplayableContent(parsed) ? candidate : '';
     }
 
+    function assertChatCompletionSucceeded(payload = {}) {
+        if (payload?.retryExhausted === true
+            || payload?.model === 'local-structured-recovery'
+            || payload?.providerRoute === 'worker:local-structured-recovery'
+            || payload?.recoveryReason === 'UPSTREAM_UNDISPLAYABLE') {
+            const error = new Error('AI reply is temporarily unavailable. Please retry this turn.');
+            error.reason = 'UPSTREAM_RETRIES_EXHAUSTED';
+            error.retryExhausted = true;
+            throw error;
+        }
+        return payload;
+    }
+
+    async function createAiResponseError(response) {
+        const error = new Error('HTTP ' + (response?.status || 0));
+        let payload = null;
+        try { payload = await response?.json?.(); } catch (_) { /* An HTML gateway error has no metadata. */ }
+        error.retryExhausted = response?.headers?.get?.('x-ai-retry-exhausted') === 'true'
+            || payload?.retryExhausted === true;
+        if (error.retryExhausted) error.reason = 'UPSTREAM_RETRIES_EXHAUSTED';
+        error.retryAfterSeconds = Number(payload?.retryAfterSeconds || response?.headers?.get?.('retry-after')) || 0;
+        return error;
+    }
+
     function selectChatCompletionContent(payload = {}) {
+        assertChatCompletionSucceeded(payload);
         const finalContent = payload?.choices?.[0]?.message?.content;
         const fallback = typeof finalContent === 'string' ? finalContent.trim() : '';
         const finishReason = String(payload?.choices?.[0]?.finish_reason || '').trim().toLowerCase();
@@ -1402,7 +1428,7 @@ Latest user: """${excerpt}"""
     async function readChatCompletionStream(response, { onDelta = null } = {}) {
         const contentType = String(response?.headers?.get?.('content-type') || '').toLowerCase();
         if (!contentType.includes('text/event-stream') || !response?.body?.getReader) {
-            return await response.json();
+            return assertChatCompletionSucceeded(await response.json());
         }
 
         const reader = response.body.getReader();
@@ -1424,6 +1450,7 @@ Latest user: """${excerpt}"""
             } catch {
                 return;
             }
+            assertChatCompletionSucceeded(event);
             if (event?.error) {
                 const error = new Error(event.error?.message || event.error?.reason || 'AI streaming failed');
                 error.reason = event.error?.reason || event.reason || 'STREAM_ERROR';
@@ -1670,6 +1697,8 @@ Latest user: """${excerpt}"""
         buildLatestUserCanonBlock,
         extractStreamingSegmentsPreview,
         extractFirstStreamingConversationPreview,
+        assertChatCompletionSucceeded,
+        createAiResponseError,
         selectChatCompletionContent,
         readChatCompletionStream,
         createPacedStreamingPreview,

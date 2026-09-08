@@ -1164,7 +1164,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     throw primaryError;
                 }
 
-                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                if (!response.ok) throw await GalleryFreeTalkCore.createAiResponseError(response);
                 try {
                     return await GalleryFreeTalkCore.readChatCompletionStream(response, {
                         onDelta: ({ content }) => {
@@ -1174,11 +1174,12 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     });
                 } catch (streamError) {
                     this._assertRequestContext(requestContext);
+                    if (streamError?.retryExhausted) throw streamError;
                     console.warn('[Cupid GalleryFreeTalk] Streaming interrupted; retrying once without streaming', streamError?.reason || streamError?.message || streamError);
                     _streamingPreview.reset();
                     const recoveryResponse = await fetchWithTransientRetry(_lastAiEndpoint, false);
                     this._assertRequestContext(requestContext);
-                    if (!recoveryResponse.ok) throw new Error(`HTTP ${recoveryResponse.status}`);
+                    if (!recoveryResponse.ok) throw await GalleryFreeTalkCore.createAiResponseError(recoveryResponse);
                     return await recoveryResponse.json();
                 }
             };
@@ -1397,16 +1398,22 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 err.__staleTurnHandled = true;
             }
             if (!err?.__staleTurnHandled) {
+                input.value = text;
+                this._resizeInput(input);
+                if (stagedImage) {
+                    this.stagedImage = stagedImage;
+                    this._setImageUploadState(false, stagedImage);
+                }
                 const isTransientTransportFailure = err instanceof TypeError
                     || /^(?:Failed to fetch|Load failed|NetworkError|HTTP (?:408|425|429|5\d\d))$/i.test(err?.message || '');
                 const isOfflineTransportFailure = navigator.onLine === false
                     && (err instanceof TypeError || /^(?:Failed to fetch|Load failed|NetworkError)$/i.test(err?.message || ''));
                 if (isTransientTransportFailure) console.warn('[GalleryFreeTalk] transport interruption:', err?.message || err);
                 else console.error('[GalleryFreeTalk] API 오류:', err);
-                if (typeof window.logCupidError === 'function' && !isOfflineTransportFailure && !isTransientTransportFailure) {
+                if (typeof window.logCupidError === 'function' && !isOfflineTransportFailure && (!isTransientTransportFailure || err?.retryExhausted)) {
                     window.logCupidError(err, {
                         source: 'cupid-gallery-freetalk',
-                        errorType: err?.reason === 'ROLEPLAY_QUALITY_REJECTED'
+                        errorType: err?.retryExhausted ? 'freetalk_upstream_retries_exhausted' : err?.reason === 'ROLEPLAY_QUALITY_REJECTED'
                             ? 'freetalk_roleplay_quality_rejected'
                             : (/^HTTP\s+\d+/.test(err?.message || '') ? 'freetalk_http_error' : 'freetalk_request_failed'),
                         sessionId: 'gallery-freetalk',

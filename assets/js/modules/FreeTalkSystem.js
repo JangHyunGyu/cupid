@@ -1480,7 +1480,7 @@ class FreeTalkSystem {
                     throw primaryError;
                 }
 
-                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                if (!response.ok) throw await CupidFreeTalkCore.createAiResponseError(response);
                 try {
                     return await CupidFreeTalkCore.readChatCompletionStream(response, {
                         onDelta: ({ content }) => {
@@ -1490,11 +1490,12 @@ class FreeTalkSystem {
                     });
                 } catch (streamError) {
                     this._assertRequestContext(requestContext);
+                    if (streamError?.retryExhausted) throw streamError;
                     console.warn('[Cupid FreeTalk] Streaming interrupted; retrying once without streaming', streamError?.reason || streamError?.message || streamError);
                     _streamingPreview.reset();
                     const recoveryResponse = await fetchWithTransientRetry(_lastAiEndpoint, false);
                     this._assertRequestContext(requestContext);
-                    if (!recoveryResponse.ok) throw new Error(`HTTP ${recoveryResponse.status}`);
+                    if (!recoveryResponse.ok) throw await CupidFreeTalkCore.createAiResponseError(recoveryResponse);
                     return await recoveryResponse.json();
                 }
             };
@@ -1744,6 +1745,9 @@ class FreeTalkSystem {
             const ownsCurrentContext = this._isRequestContextCurrent(requestContext);
             this._rollbackRequestHistory(requestContext);
             if (ownsCurrentContext) {
+                this.uiManager.chatInput.value = text;
+                this.uiManager.resizeChatInput?.();
+                if (stagedImage) this.uiManager.updateImagePreview?.(stagedImage);
                 this.freeTalkTurns = requestContext.freeTalkTurnsBefore;
                 if (this.uiManager.turnCountEl) {
                     this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
@@ -1764,10 +1768,10 @@ class FreeTalkSystem {
                 && (error instanceof TypeError || /^(?:Failed to fetch|Load failed|NetworkError)$/i.test(error?.message || ''));
             if (isTransientTransportFailure) console.warn("AI Chat transport interruption:", error?.message || error);
             else console.error("AI Chat Error:", error);
-            if (typeof window.logCupidError === 'function' && !isOfflineTransportFailure && !isTransientTransportFailure) {
+            if (typeof window.logCupidError === 'function' && !isOfflineTransportFailure && (!isTransientTransportFailure || error?.retryExhausted)) {
                 window.logCupidError(error, {
                     source: 'cupid-freetalk',
-                    errorType: error?.reason === 'ROLEPLAY_QUALITY_REJECTED'
+                    errorType: error?.retryExhausted ? 'freetalk_upstream_retries_exhausted' : error?.reason === 'ROLEPLAY_QUALITY_REJECTED'
                         ? 'freetalk_roleplay_quality_rejected'
                         : (/^HTTP\s+\d+/.test(error?.message || '') ? 'freetalk_http_error' : 'freetalk_request_failed'),
                     sessionId: requestSceneId || '',
@@ -2218,7 +2222,7 @@ class FreeTalkSystem {
                 throw lastError;
             };
             let response = await fetchWithTransientRetry(true);
-            if (!response?.ok) throw new Error(`HTTP ${response?.status || 0}`);
+            if (!response?.ok) throw await CupidFreeTalkCore.createAiResponseError(response);
             let data;
             try {
                 data = await CupidFreeTalkCore.readChatCompletionStream(response, {
@@ -2229,10 +2233,11 @@ class FreeTalkSystem {
                 });
             } catch (streamError) {
                 this._assertRequestContext(requestContext);
+                if (streamError?.retryExhausted) throw streamError;
                 console.warn('[Cupid Group FreeTalk] Streaming interrupted; retrying once without streaming', streamError?.reason || streamError?.message || streamError);
                 streamingPreview.reset();
                 response = await fetchWithTransientRetry(false);
-                if (!response?.ok) throw new Error(`HTTP ${response?.status || 0}`);
+                if (!response?.ok) throw await CupidFreeTalkCore.createAiResponseError(response);
                 data = await response.json();
             }
             this._assertRequestContext(requestContext, data);
@@ -2347,13 +2352,16 @@ class FreeTalkSystem {
             const ownsCurrentContext = this._isRequestContextCurrent(requestContext);
             this._rollbackRequestHistory(requestContext);
             if (ownsCurrentContext) {
+                this.uiManager.chatInput.value = text;
+                this.uiManager.resizeChatInput?.();
+                if (stagedImage) this.uiManager.updateImagePreview?.(stagedImage);
                 this.freeTalkTurns = requestContext.freeTalkTurnsBefore;
                 if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
             }
             if (!ownsCurrentContext || error?.isStaleTurn || error?.reason === 'STALE_TURN') return;
             window.logCupidError?.(error, {
                 source: 'cupid-group-freetalk',
-                errorType: /^HTTP\s+\d+/.test(error?.message || '') ? 'group_freetalk_http_error' : 'group_freetalk_request_failed',
+                errorType: error?.retryExhausted ? 'freetalk_upstream_retries_exhausted' : /^HTTP\s+\d+/.test(error?.message || '') ? 'group_freetalk_http_error' : 'group_freetalk_request_failed',
                 sessionId: requestSceneId || '',
                 context: {
                     charId: 'group',
