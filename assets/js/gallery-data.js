@@ -49,8 +49,9 @@ class GalleryData {
         if (!progress || typeof progress !== 'object') {
             return { changed: false, downgradedCharacters: [] };
         }
+        const targetedChanged = window.CupidAffinityCorrections?.correctGallery(progress) || false;
         if ((Number(progress.affinityRebalanceVersion) || 0) >= this.AFFINITY_REBALANCE_VERSION) {
-            return { changed: false, downgradedCharacters: [] };
+            return { changed: targetedChanged, downgradedCharacters: [] };
         }
 
         const downgradedCharacters = [];

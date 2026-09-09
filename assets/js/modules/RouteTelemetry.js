@@ -54,9 +54,11 @@
         }
     }
     function route(state) {
+        const establishedRoute = CHARACTERS.find(name => state.getFlag('route_' + name.toLowerCase()));
+        if (establishedRoute) return establishedRoute;
         if (state.getFlag('homeroom_day4')) return 'Teacher';
         if (state.getFlag('nurse_day4')) return 'Nurse';
-        return CHARACTERS.find(name => state.getFlag('route_' + name.toLowerCase())) || '';
+        return '';
     }
     function emit(state, sceneId, eventType, details = {}, nextSceneId = '') {
         try {

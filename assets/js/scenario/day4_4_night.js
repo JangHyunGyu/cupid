@@ -18,6 +18,18 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "day4_night_branch": {
         "branches": [
             {
+                "condition": "route_seoyeon",
+                "next": "day4_student_night_branch"
+            },
+            {
+                "condition": "route_yuna",
+                "next": "day4_student_night_branch"
+            },
+            {
+                "condition": "route_dain",
+                "next": "day4_student_night_branch"
+            },
+            {
                 "condition": "homeroom_day4",
                 "next": "day4_teacher_checkin"
             },

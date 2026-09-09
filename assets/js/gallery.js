@@ -179,7 +179,8 @@ class Gallery {
 const gallery = new Gallery();
 
 /** DOM 로드 완료 시 갤러리 초기화 */
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+    await window.CupidAffinityCorrections?.ready;
     gallery.init();
 });
 

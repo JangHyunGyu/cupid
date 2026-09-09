@@ -65,6 +65,37 @@ test('offer choices and free-talk entry are separate from passage eligibility', 
     assert.equal(events[3].day, 5);
 });
 
+test('monitoring keeps the established route when staff visits coexist with it', async () => {
+    for (const character of ['Seoyeon', 'Yuna', 'Dain']) {
+        const h = harness();
+        h.state.flags = { [`route_${character.toLowerCase()}`]: true, nurse_day4: true, homeroom_day4: true, day4_confession_accepted: true };
+        h.state.stats[character].affinity = 71;
+        h.state.stats.Nurse.affinity = 16;
+        const saved = h.state.exportState();
+        h.state.importState(saved);
+        h.telemetry.entered(h.state, 'day4_night_start', h.scenes.day4_night_start);
+        const gate = h.scenes.day4_night_branch;
+        h.telemetry.transition(h.state, 'day4_night_branch', gate, h.renderer.resolveNextScene(gate));
+        h.state.stats[character].affinity = 10;
+        h.state.stats.Nurse.affinity = 100;
+        h.telemetry.entered(h.state, 'morning5_start', h.scenes.morning5_start);
+        await h.telemetry.flush();
+        const events = h.requests[0].events;
+        assert.ok(events.every(event => event.route === character));
+        assert.equal(events[1].details.reason, `route_${character.toLowerCase()}`);
+        assert.equal(events[1].nextSceneId, 'day4_student_night_branch');
+        assert.equal(events[1].details.flags.nurse_day4, true);
+        assert.equal(events[1].details.flags.homeroom_day4, true);
+    }
+    for (const [character, flag] of [['Teacher', 'homeroom_day4'], ['Nurse', 'nurse_day4']]) {
+        const h = harness();
+        h.state.flags = { [flag]: true };
+        h.telemetry.entered(h.state, 'day4_night_start', h.scenes.day4_night_start);
+        await h.telemetry.flush();
+        assert.equal(h.requests[0].events[0].route, character);
+    }
+});
+
 test('distance and deferred invitation decisions remain distinct in monitoring', async () => {
     const h = harness();
     h.state.flags = { route_yuna: true, day4_waited: true, day4_distance_yuna: true };

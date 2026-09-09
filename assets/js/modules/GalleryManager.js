@@ -77,6 +77,7 @@ class GalleryManager {
             return {
                 version: this.dataVersion,
                 affinityRebalanceVersion: window.GalleryData?.AFFINITY_REBALANCE_VERSION || 1,
+                appliedAffinityCorrections: window.CupidAffinityCorrections?.ids() || [],
                 characters: {},
                 cg: {},
                 endings: {},
@@ -106,6 +107,7 @@ class GalleryManager {
             return {
                 version: this.dataVersion,
                 affinityRebalanceVersion: window.GalleryData?.AFFINITY_REBALANCE_VERSION || 1,
+                appliedAffinityCorrections: window.CupidAffinityCorrections?.ids() || [],
                 characters: {},
                 cg: {},
                 endings: {},

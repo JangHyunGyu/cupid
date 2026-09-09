@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.227";
+const ASSET_VERSION = "2.9.228";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -835,6 +835,7 @@ function makeCupidChatLogEntry({
     conversationDay = null,
     affinityChange = null,
     affinityCurrent = null,
+    affinityCorrectionIds = [],
     clientMsgId = '',
     recoveryOccurrence = null,
     requestId = '',
@@ -870,6 +871,9 @@ function makeCupidChatLogEntry({
     const normalizedAffinityCurrent = normalizeCupidChatLogAffinity(affinityCurrent);
     if (normalizedAffinityChange !== null) entry.affinityChange = normalizedAffinityChange;
     if (normalizedAffinityCurrent !== null) entry.affinityCurrent = normalizedAffinityCurrent;
+    if (Array.isArray(affinityCorrectionIds) && affinityCorrectionIds.length) {
+        entry.affinityCorrectionIds = affinityCorrectionIds.filter(id => typeof id === 'string' && /^[a-z0-9-]{1,100}$/.test(id)).slice(0, 4);
+    }
     if (requestId) entry.requestId = String(requestId).substring(0, 128);
     if (model) entry.model = String(model).substring(0, 160);
     if (providerRoute) entry.providerRoute = String(providerRoute).substring(0, 200);
@@ -1173,7 +1177,8 @@ async function saveCupidChatLog({
             role: 'assistant',
             content: assistantLogContent,
             affinityChange,
-            affinityCurrent
+            affinityCurrent,
+            affinityCorrectionIds: window.CupidAffinityCorrections?.ids(charId) || []
         });
         entries.push(assistantEntry);
     }
@@ -1244,6 +1249,7 @@ async function saveCupidGroupChatLog({
             speakerId,
             affinityChange: message.affinityChange,
             affinityCurrent: message.affinityCurrent,
+            affinityCorrectionIds: window.CupidAffinityCorrections?.ids(speakerId) || [],
             clientMsgId: makeCupidGroupChatLogClientId({
                 turnId,
                 role: 'assistant',

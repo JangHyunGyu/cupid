@@ -357,6 +357,7 @@ class StateManager {
             playerName: this.playerName,
             currentDay: this.currentDay,
             affinityRebalanceVersion: this.affinityRebalanceVersion,
+            appliedAffinityCorrections: window.CupidAffinityCorrections?.ids() || [],
             stats: JSON.parse(JSON.stringify(this.stats)),
             chatMemories: JSON.parse(JSON.stringify(this.chatMemories)),
             freeTalkCheckpoint: this.freeTalkCheckpoint ? JSON.parse(JSON.stringify(this.freeTalkCheckpoint)) : null,
@@ -377,6 +378,7 @@ class StateManager {
      * @param {Object} data - exportState()로 생성된 저장 데이터
      */
     importState(data) {
+        window.CupidAffinityCorrections?.correctState(data);
         this.telemetryRunId = typeof data.telemetryRunId === 'string' ? data.telemetryRunId : '';
         const savedAffinityRebalanceVersion = Number(data.affinityRebalanceVersion) || 0;
         if (data.playerName) this.playerName = data.playerName;

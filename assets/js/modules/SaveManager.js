@@ -81,6 +81,9 @@ class SaveManager {
 
         try {
             const saveData = JSON.parse(saved);
+            if (window.CupidAffinityCorrections?.correctSave(saveData)) {
+                window.CupidStorage.setItem(this.storageKey, JSON.stringify(saveData));
+            }
             this._migrateAffinityRebalance(saveData);
             return saveData;
         } catch (e) {

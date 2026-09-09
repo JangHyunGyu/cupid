@@ -18,8 +18,8 @@ for (const page of config.localizedPages) {
         }
         if (page === 'index') {
             const html = fs.readFileSync(fullPath, 'utf8');
-            if (!html.includes(`(v${config.assetVersion})</p>`)) {
-                errors.push(`${relativePath}: visible version does not match ${config.assetVersion}`);
+            if (!html.includes(`(v${config.displayVersion || config.assetVersion})</p>`)) {
+                errors.push(`${relativePath}: visible version does not match ${config.displayVersion || config.assetVersion}`);
             }
         }
     }

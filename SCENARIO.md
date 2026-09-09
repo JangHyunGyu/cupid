@@ -17848,6 +17848,9 @@
 
 ### `day4_night_branch`
 - 분기:
+  - [`route_seoyeon`] → `day4_student_night_branch`
+  - [`route_yuna`] → `day4_student_night_branch`
+  - [`route_dain`] → `day4_student_night_branch`
   - [`homeroom_day4`] → `day4_teacher_checkin`
   - [`nurse_day4`] → `day4_nurse_checkin`
   - [기본] → `day4_student_night_branch`

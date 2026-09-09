@@ -239,6 +239,7 @@ class GalleryProgress {
         return {
             version: GalleryData.VERSION,
             affinityRebalanceVersion: GalleryData.AFFINITY_REBALANCE_VERSION,
+            appliedAffinityCorrections: window.CupidAffinityCorrections?.ids() || [],
             characters: {
                 seyoun: { met: false, maxAffinity: 0, currentAffinity: 0, galleryFreeTalkAffinityInitialized: false, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState(), relationshipAftermath: null },
                 yuna: { met: false, maxAffinity: 0, currentAffinity: 0, galleryFreeTalkAffinityInitialized: false, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState(), relationshipAftermath: null },

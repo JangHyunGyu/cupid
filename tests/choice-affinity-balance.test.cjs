@@ -1557,11 +1557,67 @@ test('day-five mood uses the highest live affinity instead of a pseudo-character
     assert.equal(renderer.resolveNextScene(scenes.morning5_mood_check), 'morning5_mood_low');
 });
 
+test('day-four visits cannot replace an established student route or make its lead a rival', () => {
+    for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+        const copy = loadLocaleCopy(locale);
+        for (const [lead, short] of [['Seoyeon', 'seo'], ['Yuna', 'yuna'], ['Dain', 'dain']]) {
+            for (const visits of [{ nurse_day4: true }, { homeroom_day4: true }, { nurse_day4: true, homeroom_day4: true }]) {
+                const flags = { [`route_${lead.toLowerCase()}`]: true, day4_confession_accepted: true, ...visits };
+                const affinities = { Seoyeon: 71, Yuna: -4, Dain: -5, Teacher: 0, Nurse: 16, [lead]: 71 };
+                const renderer = createSceneRenderer(affinities, flags, copy);
+                assert.equal(renderer.resolveNextScene(scenes.day4_night_branch), 'day4_student_night_branch');
+                const rank = scenes[`wall_${short}_rival_rank`];
+                assert.ok(rank.rankedRivalBranches.every(branch => branch.character !== lead));
+                const rival = [...rank.rankedRivalBranches].sort((a, b) => affinities[b.character] - affinities[a.character])[0].character;
+                let id = 'day4_night_start';
+                const visited = new Set();
+                while (!scenes[id]?.choices?.some(choice => choice.setFlags?.includes('day4_counteroffer_penalty_deferred'))) {
+                    assert.ok(scenes[id] && !visited.has(id), `${locale}/${lead}: unexpected route at ${id}`);
+                    visited.add(id);
+                    const scene = renderer._applyI18n(scenes[id], id);
+                    for (const flag of scene.setFlags || []) flags[flag] = true;
+                    id = renderer.resolveAffinityGuard(scene) || renderer.resolveNextScene(scene);
+                }
+                assert.ok(visited.has(`wall_${short}_rival_rank`));
+                assert.ok(!visited.has('day4_nurse_checkin') && !visited.has('day4_teacher_checkin'));
+                const offer = renderer._applyI18n(scenes[id], id);
+                const accept = offer.choices.find(choice => choice.setFlags?.includes('day4_counteroffer_penalty_deferred'));
+                assert.ok(accept.text?.trim(), `${locale}/${id}: missing choice`);
+                assert.equal(accept.stats[lead].affinity, -10);
+                assert.equal(accept.stats[rival].affinity, 30);
+                assert.equal(accept.stats.Teacher, undefined);
+                assert.equal(accept.stats.Nurse, undefined);
+                assert.ok(!accept.setFlags.some(flag => /^day4_counteroffer_target_(teacher|nurse)$/.test(flag)));
+
+                affinities.Teacher = 100;
+                affinities.Nurse = 100;
+                affinities[lead] = -50;
+                assert.equal(renderer.resolveNextScene(scenes.day4_night_branch), 'day4_student_night_branch', 'live ranks must not replace an established route');
+                flags.day4_waited = true;
+                assert.equal(renderer.resolveNextScene(scenes.day4_student_night_branch), 'day4_waited_night_branch');
+                flags[`day4_distance_${lead.toLowerCase()}`] = true;
+                assert.equal(renderer.resolveNextScene(scenes.day4_student_night_branch), 'day4_night_regret');
+            }
+        }
+    }
+});
+
+test('adult day-four routes remain available without an established student route', () => {
+    for (const [flag, next] of [['homeroom_day4', 'day4_teacher_checkin'], ['nurse_day4', 'day4_nurse_checkin']]) {
+        const flags = { [flag]: true, route_seoyeon: false, route_yuna: false, route_dain: false };
+        assert.equal(createSceneRenderer({}, flags).resolveNextScene(scenes.day4_night_branch), next);
+    }
+    assert.equal(createSceneRenderer({}, {}).resolveNextScene(scenes.day4_night_branch), 'day4_student_night_branch');
+});
+
 test('adult day-four routes use the strongest student rival without rank gates', () => {
     const affinities = { Teacher: 80, Nurse: 70, Seoyeon: 55, Dain: 65, Yuna: 60 };
     const renderer = createSceneRenderer(affinities);
 
     assert.deepEqual(scenes.day4_night_branch.branches, [
+        { condition: 'route_seoyeon', next: 'day4_student_night_branch' },
+        { condition: 'route_yuna', next: 'day4_student_night_branch' },
+        { condition: 'route_dain', next: 'day4_student_night_branch' },
         { condition: 'homeroom_day4', next: 'day4_teacher_checkin' },
         { condition: 'nurse_day4', next: 'day4_nurse_checkin' },
         { next: 'day4_student_night_branch' }

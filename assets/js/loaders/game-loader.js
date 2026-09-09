@@ -53,7 +53,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-    const version = '2.9.227';
+    const version = '2.9.228';
     const LOAD_RETRIES = 3;
 
     // =========================================================================
@@ -192,6 +192,7 @@
      * 13. modules/index.js       : 초기화 + 모듈 검증 (항상 마지막)
      */
     const engineScripts = [
+        'affinity-corrections.js',
         // 다국어 텍스트 로더
         'loaders/i18n-loader.js',
 
@@ -416,6 +417,7 @@
         await ensureScenarioDay(1);
         for (var engineIndex = 0; engineIndex < engineScripts.length; engineIndex++) {
             await loadScript(engineScripts[engineIndex]);
+            if (engineScripts[engineIndex] === 'affinity-corrections.js') await window.CupidAffinityCorrections.ready;
         }
         if (window._i18nReady) await window._i18nReady;
         verifyRequiredGlobals();

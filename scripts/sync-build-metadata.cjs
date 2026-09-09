@@ -67,7 +67,7 @@ for (const page of config.localizedPages) {
         if (page === 'index') {
             transforms.push(replaceRequired(
                 /\(v[0-9.]+\)<\/p>/,
-                `(v${version})</p>`,
+                `(v${config.displayVersion || version})</p>`,
                 `${relativePath} visible version`
             ));
         }
