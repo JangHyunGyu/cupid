@@ -1192,5 +1192,23 @@
     "day4_waited_yuna_promise": {
         "name": "{name}",
         "text": "*J'écris à Yuna : « D'accord, à vingt-deux heures à l'entrée arrière. » Je range mon téléphone et repars vers l'école.*"
+    },
+    "day4_student_visit_branch": {},
+    "day4_student_visit_teacher_branch": {},
+    "day4_student_teacher_checkin": {
+        "name": "{name}",
+        "text": "*L’application du lycée affiche la demande de ma professeure aux élèves restés préparer la fête. Je réponds : « Je rentre directement. Je confirmerai mon arrivée. »*"
+    },
+    "day4_student_nurse_checkin": {
+        "name": "{name}",
+        "text": "*L’application du lycée affiche la demande de l’infirmière aux élèves restés préparer la fête. Je réponds : « Je rentre directement. Je confirmerai mon arrivée. »*"
+    },
+    "day4_student_both_checkin": {
+        "name": "{name}",
+        "text": "*L’application du lycée affiche les demandes de ma professeure et de l’infirmière pour confirmer mon retour à la maison. Je réponds à chacune : « Je rentre directement. Je confirmerai mon arrivée. »*"
+    },
+    "day4_student_checkin_return_home": {
+        "name": "{name}",
+        "text": "*Une fois chez moi, je confirme mon arrivée sur l’application du lycée. Je pose mon sac et branche mon téléphone. Une nouvelle notification apparaît.*"
     }
 }

@@ -17848,14 +17848,81 @@
 
 ### `day4_night_branch`
 - 분기:
-  - [`route_seoyeon`] → `day4_student_night_branch`
-  - [`route_yuna`] → `day4_student_night_branch`
-  - [`route_dain`] → `day4_student_night_branch`
+  - [`route_seoyeon`] → `day4_student_visit_branch`
+  - [`route_yuna`] → `day4_student_visit_branch`
+  - [`route_dain`] → `day4_student_visit_branch`
   - [`homeroom_day4`] → `day4_teacher_checkin`
   - [`nurse_day4`] → `day4_nurse_checkin`
   - [기본] → `day4_student_night_branch`
 
 **시스템**: ‹빈›
+
+---
+
+### `day4_student_visit_branch`
+- 분기:
+  - [`homeroom_day4`] → `day4_student_visit_teacher_branch`
+  - [`nurse_day4`] → `day4_student_nurse_checkin`
+  - [기본] → `day4_student_night_branch`
+
+<!-- i18n -->
+
+---
+
+### `day4_student_visit_teacher_branch`
+- 분기:
+  - [`nurse_day4`] → `day4_student_both_checkin`
+  - [기본] → `day4_student_teacher_checkin`
+
+<!-- i18n -->
+
+---
+
+### `day4_student_teacher_checkin`
+- 배경: `school.png`
+- 플래그: `day4_staff_checkin_teacher`
+- 다음: `day4_student_checkin_return_home`
+
+- 캐릭터: `없음`
+**{name}**: *학교 알림 앱에 담임의 귀가 확인 요청이 떠 있다. 행사 준비에 남았던 학생들에게 보낸 안내다. ‘바로 집에 가고 도착하면 확인 남길게요.’라고 답한다.*
+
+---
+
+### `day4_student_both_checkin`
+- 배경: `school.png`
+- 플래그: `day4_staff_checkin_teacher`, `day4_staff_checkin_nurse`
+- 다음: `day4_student_checkin_return_home`
+
+- 캐릭터: `없음`
+**{name}**: *학교 알림 앱에 담임과 보건선생님의 귀가 확인 요청이 나란히 떠 있다. 두 알림에 ‘바로 집에 가고 도착하면 확인 남길게요.’라고 답한다.*
+
+---
+
+### `day4_student_nurse_checkin`
+- 배경: `school.png`
+- 플래그: `day4_staff_checkin_nurse`
+- 다음: `day4_student_checkin_return_home`
+
+- 캐릭터: `없음`
+**{name}**: *학교 알림 앱에 보건선생님의 귀가 확인 요청이 떠 있다. 행사 준비에 남았던 학생들에게 보낸 안내다. ‘바로 집에 가고 도착하면 확인 남길게요.’라고 답한다.*
+
+---
+
+### `day4_student_checkin_return_home`
+- 배경: `room_my.png`
+- 플래그: `day4_staff_checkin_completed`
+- 분기:
+  - [`day4_distance_seoyeon`] → `day4_night_regret`
+  - [`day4_distance_dain`] → `day4_night_regret`
+  - [`day4_distance_yuna`] → `day4_night_regret`
+  - [`day4_waited`] → `day4_waited_night_branch`
+  - [`route_seoyeon`] → `wall_seo_1`
+  - [`route_dain`] → `wall_dain_1`
+  - [`route_yuna`] → `wall_yuna_1`
+  - [기본] → `day4_night_reflect`
+
+- 캐릭터: `없음`
+**{name}**: *집에 도착해 학교 앱에 귀가 확인을 남긴다. 가방을 내려놓고 휴대폰을 충전기에 꽂자 새 알림이 뜬다.*
 
 ---
 

@@ -1192,5 +1192,23 @@
     "day4_waited_yuna_promise": {
         "name": "{name}",
         "text": "*I text Yuna, 'Okay, see you at the back gate at ten.' I pocket my phone and walk back toward school.*"
+    },
+    "day4_student_visit_branch": {},
+    "day4_student_visit_teacher_branch": {},
+    "day4_student_teacher_checkin": {
+        "name": "{name}",
+        "text": "*The school app shows my teacher’s check-in request for students who stayed to prepare the event. I reply, “I am going straight home. I will check in when I arrive.”*"
+    },
+    "day4_student_nurse_checkin": {
+        "name": "{name}",
+        "text": "*The school app shows the nurse’s check-in request for students who stayed to prepare the event. I reply, “I am going straight home. I will check in when I arrive.”*"
+    },
+    "day4_student_both_checkin": {
+        "name": "{name}",
+        "text": "*The school app shows check-in requests from both my teacher and the nurse. I reply to each, “I am going straight home. I will check in when I arrive.”*"
+    },
+    "day4_student_checkin_return_home": {
+        "name": "{name}",
+        "text": "*At home, I confirm my arrival in the school app. I put my bag down and plug in my phone. A new notification appears.*"
     }
 }

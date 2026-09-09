@@ -2,7 +2,7 @@
 (() => {
     const KEY = 'cupid_pending_route_events_v1';
     const CHARACTERS = ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse'];
-    const GATES = new Set(['morning4_end', 'day4_date_branch', 'day4_night_branch', 'day4_student_night_branch', 'day4_waited_night_branch', 'morning5_start_branch', 'morning5_temptation_discovery_branch', 'morning5_temptation_counteroffer_branch']);
+    const GATES = new Set(['morning4_end', 'day4_date_branch', 'day4_night_branch', 'day4_student_visit_branch', 'day4_student_visit_teacher_branch', 'day4_student_checkin_return_home', 'day4_student_night_branch', 'day4_waited_night_branch', 'morning5_start_branch', 'morning5_temptation_discovery_branch', 'morning5_temptation_counteroffer_branch']);
     let pending = [];
     let busy = false;
     let timer = null;
@@ -93,7 +93,7 @@
                 ...(scene.romanticInterlude === true && { dialogueAffinity: 100, affinityLocked: scene.affinityLocked === true })
             });
         }
-        if (['day4_caught_fallout_4', 'day4_harem_fallout_4', 'morning5_counteroffer_gather', 'morning5_after_counteroffer', 'day4_night_regret', 'day4_night_reflect', 'morning5_caught_fallout_1', 'morning5_harem_fallout_1'].includes(sceneId)) {
+        if (['day4_student_checkin_return_home', 'day4_caught_fallout_4', 'day4_harem_fallout_4', 'morning5_counteroffer_gather', 'morning5_after_counteroffer', 'day4_night_regret', 'day4_night_reflect', 'morning5_caught_fallout_1', 'morning5_harem_fallout_1'].includes(sceneId)) {
             emit(state, sceneId, 'scene_checkpoint', { restoring });
         }
     }

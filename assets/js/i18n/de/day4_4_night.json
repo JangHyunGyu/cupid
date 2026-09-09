@@ -1192,5 +1192,23 @@
     "day4_waited_yuna_promise": {
         "name": "{name}",
         "text": "*Ich schreibe Yuna: ‚Okay, bis zehn am hinteren Tor.‘ Ich stecke das Handy ein und gehe wieder Richtung Schule.*"
+    },
+    "day4_student_visit_branch": {},
+    "day4_student_visit_teacher_branch": {},
+    "day4_student_teacher_checkin": {
+        "name": "{name}",
+        "text": "*In der Schul-App bittet meine Lehrerin die Helfer der Veranstaltung um eine Rückmeldung nach der Heimkehr. Ich antworte: „Ich gehe direkt heim und melde mich, wenn ich da bin.“*"
+    },
+    "day4_student_nurse_checkin": {
+        "name": "{name}",
+        "text": "*In der Schul-App bittet die Schulkrankenschwester die Helfer um eine Rückmeldung nach der Heimkehr. Ich antworte: „Ich gehe direkt heim und melde mich, wenn ich da bin.“*"
+    },
+    "day4_student_both_checkin": {
+        "name": "{name}",
+        "text": "*In der Schul-App bitten sowohl meine Lehrerin als auch die Schulkrankenschwester um eine Rückmeldung nach der Heimkehr. Ich antworte beiden: „Ich gehe direkt heim und melde mich, wenn ich da bin.“*"
+    },
+    "day4_student_checkin_return_home": {
+        "name": "{name}",
+        "text": "*Zu Hause bestätige ich meine Ankunft in der Schul-App. Ich stelle die Tasche ab und schließe mein Handy ans Ladegerät an. Eine neue Benachrichtigung erscheint.*"
     }
 }

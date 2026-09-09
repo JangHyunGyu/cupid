@@ -1192,5 +1192,23 @@
     "day4_waited_yuna_promise": {
         "name": "{name}",
         "text": "*Mando uma mensagem para Yuna: «Tudo bem, às dez no portão dos fundos». Guardo o celular e volto a caminhar em direção à escola.*"
+    },
+    "day4_student_visit_branch": {},
+    "day4_student_visit_teacher_branch": {},
+    "day4_student_teacher_checkin": {
+        "name": "{name}",
+        "text": "*O aplicativo da escola mostra o pedido da professora para os alunos que ajudaram no evento. Respondo: “Vou direto para casa. Aviso quando chegar.”*"
+    },
+    "day4_student_nurse_checkin": {
+        "name": "{name}",
+        "text": "*O aplicativo da escola mostra o pedido da enfermeira para os alunos que ajudaram no evento. Respondo: “Vou direto para casa. Aviso quando chegar.”*"
+    },
+    "day4_student_both_checkin": {
+        "name": "{name}",
+        "text": "*O aplicativo da escola mostra os pedidos da professora e da enfermeira para confirmar minha chegada em casa. Respondo às duas: “Vou direto para casa. Aviso quando chegar.”*"
+    },
+    "day4_student_checkin_return_home": {
+        "name": "{name}",
+        "text": "*Em casa, confirmo a chegada no aplicativo da escola. Deixo a mochila e conecto o celular ao carregador. Aparece uma nova notificação.*"
     }
 }

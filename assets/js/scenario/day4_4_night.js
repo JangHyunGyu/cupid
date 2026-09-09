@@ -19,15 +19,15 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "branches": [
             {
                 "condition": "route_seoyeon",
-                "next": "day4_student_night_branch"
+                "next": "day4_student_visit_branch"
             },
             {
                 "condition": "route_yuna",
-                "next": "day4_student_night_branch"
+                "next": "day4_student_visit_branch"
             },
             {
                 "condition": "route_dain",
-                "next": "day4_student_night_branch"
+                "next": "day4_student_visit_branch"
             },
             {
                 "condition": "homeroom_day4",
@@ -42,6 +42,44 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         ],
         "routeBeforeRender": true
+    },
+    "day4_student_visit_branch": {
+        "routeBeforeRender": true,
+        "branches": [
+            { "condition": "homeroom_day4", "next": "day4_student_visit_teacher_branch" },
+            { "condition": "nurse_day4", "next": "day4_student_nurse_checkin" },
+            { "next": "day4_student_night_branch" }
+        ]
+    },
+    "day4_student_visit_teacher_branch": {
+        "routeBeforeRender": true,
+        "branches": [
+            { "condition": "nurse_day4", "next": "day4_student_both_checkin" },
+            { "next": "day4_student_teacher_checkin" }
+        ]
+    },
+    "day4_student_teacher_checkin": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "setFlags": ["day4_staff_checkin_teacher"],
+        "next": "day4_student_checkin_return_home"
+    },
+    "day4_student_nurse_checkin": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "setFlags": ["day4_staff_checkin_nurse"],
+        "next": "day4_student_checkin_return_home"
+    },
+    "day4_student_both_checkin": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "setFlags": ["day4_staff_checkin_teacher", "day4_staff_checkin_nurse"],
+        "next": "day4_student_checkin_return_home"
+    },
+    "day4_student_checkin_return_home": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "setFlags": ["day4_staff_checkin_completed"]
     },
     "day4_adult_return_home": {
         "background": "assets/images/background/room_my.png",
@@ -2550,6 +2588,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "forcedSexualViolationResume": true
     }
     };
+    scenes.day4_student_checkin_return_home.branches = scenes.day4_student_night_branch.branches;
     for (const scene of Object.values(scenes)) {
         if (scene && typeof scene === 'object') {
             Object.defineProperty(scene, "__sourceFile", {

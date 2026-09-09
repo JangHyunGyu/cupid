@@ -83,7 +83,7 @@ test('monitoring keeps the established route when staff visits coexist with it',
         const events = h.requests[0].events;
         assert.ok(events.every(event => event.route === character));
         assert.equal(events[1].details.reason, `route_${character.toLowerCase()}`);
-        assert.equal(events[1].nextSceneId, 'day4_student_night_branch');
+        assert.equal(events[1].nextSceneId, 'day4_student_visit_branch');
         assert.equal(events[1].details.flags.nurse_day4, true);
         assert.equal(events[1].details.flags.homeroom_day4, true);
     }
@@ -94,6 +94,31 @@ test('monitoring keeps the established route when staff visits coexist with it',
         await h.telemetry.flush();
         assert.equal(h.requests[0].events[0].route, character);
     }
+});
+
+test('staff check-in completion is logged under the established main route without a rival reward', async () => {
+    const h = harness();
+    h.state.flags = { route_seoyeon: true, nurse_day4: true, homeroom_day4: true };
+    h.state.stats.Seoyeon.affinity = 71;
+    h.state.stats.Nurse.affinity = 16;
+    for (const id of ['day4_student_visit_branch', 'day4_student_visit_teacher_branch']) {
+        h.telemetry.transition(h.state, id, h.scenes[id], h.renderer.resolveNextScene(h.scenes[id]));
+    }
+    for (const id of ['day4_student_both_checkin', 'day4_student_checkin_return_home']) {
+        for (const flag of h.scenes[id].setFlags) h.state.setFlag(flag);
+        h.telemetry.entered(h.state, id, h.scenes[id]);
+    }
+    await h.telemetry.flush();
+    const events = h.requests[0].events;
+    assert.ok(events.every(event => event.route === 'Seoyeon'));
+    const completed = events.find(event => event.eventType === 'scene_checkpoint');
+    assert.equal(completed.sceneId, 'day4_student_checkin_return_home');
+    assert.equal(completed.details.flags.day4_staff_checkin_completed, true);
+    assert.equal(completed.details.flags.day4_staff_checkin_teacher, true);
+    assert.equal(completed.details.flags.day4_staff_checkin_nurse, true);
+    assert.equal(completed.details.affinities.Seoyeon, 71);
+    assert.equal(completed.details.affinities.Nurse, 16);
+    assert.equal(completed.details.flags.day4_counteroffer_penalty_deferred, undefined);
 });
 
 test('distance and deferred invitation decisions remain distinct in monitoring', async () => {

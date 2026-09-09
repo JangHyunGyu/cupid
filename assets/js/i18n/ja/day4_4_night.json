@@ -1192,5 +1192,23 @@
     "day4_waited_yuna_promise": {
         "name": "{name}",
         "text": "*ユナに『うん、十時に裏門で』と送る。携帯をポケットに入れ、また学校の方へ歩き出す。*"
+    },
+    "day4_student_visit_branch": {},
+    "day4_student_visit_teacher_branch": {},
+    "day4_student_teacher_checkin": {
+        "name": "{name}",
+        "text": "*学校の連絡アプリに、行事の準備で残った生徒への担任の帰宅確認が届く。「まっすぐ帰ります。着いたら連絡します」と返す。*"
+    },
+    "day4_student_nurse_checkin": {
+        "name": "{name}",
+        "text": "*学校の連絡アプリに、行事の準備で残った生徒への保健の先生の帰宅確認が届く。「まっすぐ帰ります。着いたら連絡します」と返す。*"
+    },
+    "day4_student_both_checkin": {
+        "name": "{name}",
+        "text": "*学校の連絡アプリに、担任と保健の先生からの帰宅確認が並んでいる。それぞれに「まっすぐ帰ります。着いたら連絡します」と返す。*"
+    },
+    "day4_student_checkin_return_home": {
+        "name": "{name}",
+        "text": "*家に着き、学校のアプリで帰宅を報告する。鞄を下ろして携帯を充電器につなぐと、新しい通知が届く。*"
     }
 }
