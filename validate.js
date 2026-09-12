@@ -793,7 +793,7 @@ try {
             errors.push('[VERSION_SYNC] 진입 로더 캐시 버전 불일치: ' + file.name);
         }
         if (file.content.includes('assets/js/browser-check.js')
-            && !file.content.includes('assets/js/browser-check.js?v=2.9.8')) {
+            && !file.content.includes('assets/js/browser-check.js?v=2.9.9')) {
             errors.push('[VERSION_SYNC] browser-check.js 캐시 버전 불일치: ' + file.name);
         }
     }
