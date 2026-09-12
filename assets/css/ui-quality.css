@@ -99,4 +99,10 @@ body:has(#landing-container) .lang-combo-selected, #landing-settings-btn { backg
   .modal-container { padding: 20px; }
 }
 @media (hover:none) { #landing-container .title-heroine { filter: none; } }
+@media (orientation:landscape) and (max-height:560px) {
+  #landing-container { padding-left: max(24px,env(safe-area-inset-left)); padding-right: max(24px,env(safe-area-inset-right)); }
+  body:has(#landing-container) .archerlab-link { left: max(24px,env(safe-area-inset-left)); }
+  #landing-container .footer { left: max(16px,env(safe-area-inset-left)); right: max(16px,env(safe-area-inset-right)); width: auto; }
+  #ui-layer { padding-left: max(20px,env(safe-area-inset-left)); padding-right: max(20px,env(safe-area-inset-right)); }
+}
 @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
