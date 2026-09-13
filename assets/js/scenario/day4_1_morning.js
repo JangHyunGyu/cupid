@@ -45,7 +45,19 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "bgm": "morning.mp3",
-        "next": "morning4_nightmare_check"
+        "next": "morning4_date_plan_check"
+    },
+    "morning4_date_plan_check": {
+        "routeBeforeRender": true,
+        "branches": [
+            { "condition": "route_seoyeon", "next": "morning4_nightmare_check" },
+            { "condition": "route_yuna", "next": "morning4_nightmare_check" },
+            { "condition": "route_dain", "next": "morning4_nightmare_check" },
+            { "condition": "accepted_seoyeon_date", "next": "morning4_nightmare_check" },
+            { "condition": "accepted_yuna_date", "next": "morning4_nightmare_check" },
+            { "condition": "accepted_dain_date", "next": "morning4_nightmare_check" },
+            { "next": "morning4_fallback_msg" }
+        ]
     },
     "morning4_nightmare_check": {
         "background": "assets/images/background/room_my.png",

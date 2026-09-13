@@ -11765,7 +11765,7 @@
 - 배경: `student_room.png`
 - 호감분기: Seoyeon
   - [40+] → `after3_seo_1`
-  - [0+] → `after3_seo_partial_1`
+  - [30+] → `after3_seo_partial_1`
   - [기본] → `after3_seo_low_1`
 
 - 캐릭터: `없음`
@@ -11799,7 +11799,7 @@
 - 다음: `after3_final`
 
 - 캐릭터: `seyoun_normal.png`
-**서연**: *서연은 문을 반쯤만 연 채 복도에 선다.* 지금은 혼자 있고 싶어. 내일 보자.
+**서연**: *서연은 문을 반쯤만 연 채 복도에 선다.* 아직 둘이 따로 만나기는 좀 그래. 주말 약속은 잡지 말자. 학교에서 보자.
 
 ---
 
@@ -12142,7 +12142,7 @@
 - 배경: `yuna_hideout.png`
 - 호감분기: Yuna
   - [40+] → `after3_yuna_1`
-  - [0+] → `after3_yuna_partial_1`
+  - [30+] → `after3_yuna_partial_1`
   - [기본] → `after3_yuna_low_1`
 
 - 캐릭터: `없음`
@@ -12176,7 +12176,7 @@
 - 다음: `after3_final`
 
 - 캐릭터: `yuna_normal.png`
-**유나**: *별관 문 앞에서 유나가 가방을 멘다.* 오늘은 혼자 있을래. 먼저 갈게.
+**유나**: *별관 문 앞에서 유나가 가방을 멘다.* 둘이 만나는 건... 아직은 좀 어려워. 주말엔 혼자 있을래.
 
 ---
 
@@ -12519,7 +12519,7 @@
 - 배경: `gym.png`
 - 호감분기: Dain
   - [40+] → `after3_dain_1`
-  - [0+] → `after3_dain_partial_1`
+  - [30+] → `after3_dain_partial_1`
   - [기본] → `after3_dain_low_1`
 
 - 캐릭터: `없음`
@@ -12553,7 +12553,7 @@
 - 다음: `after3_final`
 
 - 캐릭터: `dain_normal.png`
-**다인**: *다인은 체육관 문을 잡은 채 안으로 들어가지 않는다.* 오늘은 혼자 연습할게. 학교에서 보자.
+**다인**: *다인은 체육관 문을 잡은 채 안으로 들어가지 않는다.* 둘이 놀러 가는 건 좀 더 친해지면 하자. 이번 주말엔 혼자 연습할게.
 
 ---
 
@@ -14462,10 +14462,24 @@
 ### `morning4_start`
 - 배경: `room_my.png`
 - BGM: `morning.mp3`
-- 다음: `morning4_nightmare_check`
+- 다음: `morning4_date_plan_check`
 
 - 캐릭터: `없음`
 **{name}**: *넷째 날, 토요일. 침대에서 몸을 일으켜 오늘 일정을 확인한다.*
+
+---
+
+### `morning4_date_plan_check`
+- 분기:
+  - [`route_seoyeon`] → `morning4_nightmare_check`
+  - [`route_yuna`] → `morning4_nightmare_check`
+  - [`route_dain`] → `morning4_nightmare_check`
+  - [`accepted_seoyeon_date`] → `morning4_nightmare_check`
+  - [`accepted_yuna_date`] → `morning4_nightmare_check`
+  - [`accepted_dain_date`] → `morning4_nightmare_check`
+  - [기본] → `morning4_fallback_msg`
+
+<!-- i18n -->
 
 ---
 
@@ -15911,8 +15925,8 @@
 - 호감분기: Seoyeon
   - [60+] → `date_seo_high_1`
   - [40+] → `date_seo_compliment_choice`
-  - [0+] → `date_seo_tentative_1`
-- 다음: `date_seo_tentative_1`
+  - [30+] → `date_seo_tentative_1`
+- 다음: `date_seo_low`
 
 - 캐릭터: `없음`
 
@@ -16189,6 +16203,16 @@
 
 ---
 
+### `date_seo_low`
+- 배경: `park.png`
+- 플래그: `day4_waited`, `day4_distance_seoyeon`
+- 다음: `day4_night_start`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: *분수대 앞 벤치는 비어 있다. 잠시 뒤 서연에게 메시지가 온다.* 오늘은 둘이 만나지 않는 게 좋을 것 같아. 다음 주 학교에서 보자.
+
+---
+
 ### `date_yuna_1`
 - 배경: `cafe.png`
 - BGM: `night1.mp3`
@@ -16205,8 +16229,8 @@
 - 호감분기: Yuna
   - [60+] → `date_yuna_high_1`
   - [40+] → `date_yuna_compliment_choice`
-  - [0+] → `date_yuna_tentative_1`
-- 다음: `date_yuna_tentative_1`
+  - [30+] → `date_yuna_tentative_1`
+- 다음: `date_yuna_low`
 
 - 캐릭터: `없음`
 
@@ -16519,6 +16543,16 @@
 
 ---
 
+### `date_yuna_low`
+- 배경: `cafe.png`
+- 플래그: `day4_waited`, `day4_distance_yuna`
+- 다음: `day4_night_start`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: *카페 앞에 먼저 와 있던 유나가 가방끈을 고쳐 메고 한 걸음 물러난다.* 지금은 둘이 오래 있지 않는 게 좋겠어. 오늘은 여기까지 하자.
+
+---
+
 ### `date_dain_1`
 - 배경: `gym.png`
 - BGM: `daily2.mp3`
@@ -16535,8 +16569,8 @@
 - 호감분기: Dain
   - [60+] → `date_dain_high_1`
   - [40+] → `date_dain_2`
-  - [0+] → `date_dain_tentative_1`
-- 다음: `date_dain_tentative_1`
+  - [30+] → `date_dain_tentative_1`
+- 다음: `date_dain_low`
 
 - 캐릭터: `없음`
 
@@ -16895,6 +16929,16 @@
 
 ---
 
+### `date_dain_low`
+- 배경: `gym.png`
+- 플래그: `day4_waited`, `day4_distance_dain`
+- 다음: `day4_night_start`
+
+- 캐릭터: `dain_normal.png`
+**다인**: *체육관 앞에서 다인이 공 가방 끈을 고쳐 멘다.* 오늘은 같이 놀 기분이 아니야. 학교에서 보자.
+
+---
+
 ### `day4_caught_fallout_1`
 - 배경: `room_my.png`
 - BGM: `morning.mp3`
@@ -16967,36 +17011,6 @@
 
 - 캐릭터: `없음`
 **{name}**: *단체방에 약속을 다시 확인하겠다고 답한다. 캘린더를 열어 둔 채 현관에서 신발을 신는다.*
-
----
-
-### `date_seo_low`
-- 배경: `park.png`
-- 플래그: `day4_waited`, `day4_distance_seoyeon`
-- 다음: `day4_night_start`
-
-- 캐릭터: `seyoun_normal.png`
-**서연**: *분수대 앞 벤치는 비어 있다. 잠시 뒤 서연에게 메시지가 온다.* 오늘은 둘이 만나지 않는 게 좋을 것 같아. 다음 주 학교에서 보자.
-
----
-
-### `date_yuna_low`
-- 배경: `cafe.png`
-- 플래그: `day4_waited`, `day4_distance_yuna`
-- 다음: `day4_night_start`
-
-- 캐릭터: `yuna_normal.png`
-**유나**: *카페 앞에 먼저 와 있던 유나가 가방끈을 고쳐 메고 한 걸음 물러난다.* 지금은 둘이 오래 있지 않는 게 좋겠어. 오늘은 여기까지 하자.
-
----
-
-### `date_dain_low`
-- 배경: `gym.png`
-- 플래그: `day4_waited`, `day4_distance_dain`
-- 다음: `day4_night_start`
-
-- 캐릭터: `dain_normal.png`
-**다인**: *체육관 앞에서 다인이 공 가방 끈을 고쳐 멘다.* 오늘은 같이 놀 기분이 아니야. 학교에서 보자.
 
 ---
 

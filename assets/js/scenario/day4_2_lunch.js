@@ -14,7 +14,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/seyoun_normal.png",
         "bgm": "date.mp3",
         "condition": "route_seoyeon",
-        "affinityGuard": {"character":"Seoyeon","minAffinity":0,"fallback":"date_seo_low"},
+        "affinityGuard": {"character":"Seoyeon","minAffinity":30,"fallback":"date_seo_low"},
         "next": "date_seo_tier_check"
     },
     "date_seo_tier_check": {
@@ -24,9 +24,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "affinityBranches": [
             { "minAffinity": 60, "next": "date_seo_high_1" },
             { "minAffinity": 40, "next": "date_seo_compliment_choice" },
-            { "minAffinity": 0, "next": "date_seo_tentative_1" }
+            { "minAffinity": 30, "next": "date_seo_tentative_1" }
         ],
-        "next": "date_seo_tentative_1"
+        "next": "date_seo_low"
     },
     "date_seo_high_1": {
         "background": "assets/images/background/park.png",
@@ -185,7 +185,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/yuna_normal.png",
         "bgm": "night1.mp3",
         "condition": "route_yuna",
-        "affinityGuard": {"character":"Yuna","minAffinity":0,"fallback":"date_yuna_low"},
+        "affinityGuard": {"character":"Yuna","minAffinity":30,"fallback":"date_yuna_low"},
         "next": "date_yuna_tier_check"
     },
     "date_yuna_tier_check": {
@@ -195,9 +195,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "affinityBranches": [
             { "minAffinity": 60, "next": "date_yuna_high_1" },
             { "minAffinity": 40, "next": "date_yuna_compliment_choice" },
-            { "minAffinity": 0, "next": "date_yuna_tentative_1" }
+            { "minAffinity": 30, "next": "date_yuna_tentative_1" }
         ],
-        "next": "date_yuna_tentative_1"
+        "next": "date_yuna_low"
     },
     "date_yuna_high_1": {
         "background": "assets/images/background/cafe.png",
@@ -377,7 +377,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/dain_laugh.png",
         "bgm": "daily2.mp3",
         "condition": "route_dain",
-        "affinityGuard": {"character":"Dain","minAffinity":0,"fallback":"date_dain_low"},
+        "affinityGuard": {"character":"Dain","minAffinity":30,"fallback":"date_dain_low"},
         "next": "date_dain_tier_check"
     },
     "date_dain_tier_check": {
@@ -387,9 +387,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "affinityBranches": [
             { "minAffinity": 60, "next": "date_dain_high_1" },
             { "minAffinity": 40, "next": "date_dain_2" },
-            { "minAffinity": 0, "next": "date_dain_tentative_1" }
+            { "minAffinity": 30, "next": "date_dain_tentative_1" }
         ],
-        "next": "date_dain_tentative_1"
+        "next": "date_dain_low"
     },
     "date_dain_high_1": {
         "background": "assets/images/background/gym.png",

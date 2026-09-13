@@ -5,6 +5,7 @@
         "name": "{name}",
         "text": "*四日目、土曜日。ベッドから体を起こし、今日の予定を確かめる。*"
     },
+    "morning4_date_plan_check": {},
     "morning4_nightmare_check": {},
     "morning4_nightmare_seo": {
         "name": "{name}",

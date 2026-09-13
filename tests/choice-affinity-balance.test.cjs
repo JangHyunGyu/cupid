@@ -183,7 +183,8 @@ test('midgame relationship tiers preserve promises, distance, and locked fallout
         ['Dain', 'after3_dain_affinity_check', 'after3_dain_low_1', 'after3_dain_partial_1', 'after3_dain_1']
     ]) {
         assert.equal(createSceneRenderer({ [character]: -1 }).resolveNextScene(scenes[checkId]), lowId);
-        assert.equal(createSceneRenderer({ [character]: 10 }).resolveNextScene(scenes[checkId]), partialId);
+        assert.equal(createSceneRenderer({ [character]: 29 }).resolveNextScene(scenes[checkId]), lowId);
+        assert.equal(createSceneRenderer({ [character]: 30 }).resolveNextScene(scenes[checkId]), partialId);
         assert.equal(createSceneRenderer({ [character]: 40 }).resolveNextScene(scenes[checkId]), fullId);
         assert.ok(scenes[lowId].clearFlags.includes(`accepted_${character === 'Seoyeon' ? 'seoyeon' : character.toLowerCase()}_date`));
     }
@@ -193,7 +194,7 @@ test('midgame relationship tiers preserve promises, distance, and locked fallout
         ['Yuna', 'date_yuna_tier_check', 'date_yuna_tentative_1', 'date_yuna_compliment_choice', 'date_yuna_high_1'],
         ['Dain', 'date_dain_tier_check', 'date_dain_tentative_1', 'date_dain_2', 'date_dain_high_1']
     ]) {
-        assert.equal(createSceneRenderer({ [character]: 25 }).resolveNextScene(scenes[checkId]), tentativeId);
+        assert.equal(createSceneRenderer({ [character]: 30 }).resolveNextScene(scenes[checkId]), tentativeId);
         assert.equal(createSceneRenderer({ [character]: 45 }).resolveNextScene(scenes[checkId]), normalId);
         assert.equal(createSceneRenderer({ [character]: 65 }).resolveNextScene(scenes[checkId]), highId);
     }
@@ -268,7 +269,7 @@ test('every acceptance completes the next-day confrontation despite earlier inci
     }
 });
 
-test('neutral student routes continue through confession into rival temptation routing', () => {
+test('eligible tentative student routes continue through confession into rival temptation routing', () => {
     const cases = [
         {
             character: 'Seoyeon',
@@ -316,7 +317,7 @@ test('neutral student routes continue through confession into rival temptation r
 
     for (const route of cases) {
         const renderer = createSceneRenderer(
-            { Seoyeon: 0, Yuna: 0, Dain: 0 },
+            { Seoyeon: 0, Yuna: 0, Dain: 0, [route.character]: 30 },
             { [route.routeFlag]: true }
         );
         assert.equal(renderer.resolveNextScene(scenes[route.routeCheck]), route.partialScene);
@@ -1216,21 +1217,21 @@ test('day-five continuity keeps availability, history, affinity, and final choic
     }
 });
 
-test('live affinity guards reject negative relationships and provide localized low-affinity exits', () => {
+test('live affinity guards enforce relationship thresholds and provide localized exits', () => {
     const guardedEntries = [
         ['hidden_homeroom_d2_1', 'Teacher', 0, 'hidden_homeroom_d2_low'],
         ['hidden_nurse_d2_1', 'Nurse', 0, 'hidden_nurse_d2_low'],
         ['hidden_homeroom_d3_1', 'Teacher', 0, 'hidden_homeroom_d3_low'],
         ['hidden_nurse_d3_1', 'Nurse', 0, 'hidden_nurse_d3_low'],
-        ['morning3_date_seo_1', 'Seoyeon', 0, 'morning3_date_seo_low'],
-        ['morning3_date_dain_1', 'Dain', 0, 'morning3_date_dain_low'],
-        ['morning3_date_yuna_1', 'Yuna', 0, 'morning3_date_yuna_low'],
+        ['morning3_date_seo_1', 'Seoyeon', 20, 'morning3_date_seo_low'],
+        ['morning3_date_dain_1', 'Dain', 20, 'morning3_date_dain_low'],
+        ['morning3_date_yuna_1', 'Yuna', 20, 'morning3_date_yuna_low'],
         ['hidden_homeroom_d4_1', 'Teacher', 0, 'hidden_homeroom_d4_low'],
         ['hidden_nurse_d4_morning_1', 'Nurse', 0, 'hidden_nurse_d4_low'],
         ['hidden_nurse_d4_1', 'Nurse', 0, 'hidden_nurse_d4_low'],
-        ['date_seo_1', 'Seoyeon', 0, 'date_seo_low'],
-        ['date_yuna_1', 'Yuna', 0, 'date_yuna_low'],
-        ['date_dain_1', 'Dain', 0, 'date_dain_low'],
+        ['date_seo_1', 'Seoyeon', 30, 'date_seo_low'],
+        ['date_yuna_1', 'Yuna', 30, 'date_yuna_low'],
+        ['date_dain_1', 'Dain', 30, 'date_dain_low'],
         ['confess_seo_2', 'Seoyeon', 0, 'confess_seo_low'],
         ['confess_yuna_1', 'Yuna', 0, 'confess_yuna_low'],
         ['confess_dain_1', 'Dain', 0, 'confess_dain_low'],
@@ -1262,9 +1263,61 @@ test('live affinity guards reject negative relationships and provide localized l
     }
 });
 
+test('date route gates cover automatic, manual, multiple-promise, and saved-entry paths', () => {
+    for (const [character, short] of [['Seoyeon', 'seo'], ['Yuna', 'yuna'], ['Dain', 'dain']]) {
+        const routeFlag = `route_${character.toLowerCase()}`;
+        const promiseFlag = `accepted_${character.toLowerCase()}_date`;
+        for (const affinity of [-100, -1, 0, 19, 20, 29, 30, 39, 40, 100]) {
+            const flags = { [routeFlag]: true, [promiseFlag]: true, day3_has_multiple_dates: true };
+            const renderer = createSceneRenderer({ [character]: affinity }, flags);
+            assert.equal(renderer.resolveAffinityGuard(scenes[`morning3_date_${short}_1`]),
+                affinity < 20 ? `morning3_date_${short}_low` : null);
+            for (const entry of [`after3_auto_${short}`, `after3_rivals_for_${short}_start`]) {
+                assert.equal(renderer.resolveAffinityGuard(scenes[entry]),
+                    affinity < 30 ? `after3_${short}_low_1` : null, `${entry}/${affinity}`);
+            }
+            for (const chooser of ['after3_choice', 'after3_multi_choice']) {
+                const choice = scenes[chooser].choices.find(option => option.setFlags?.includes(routeFlag));
+                assert.ok(choice, `${chooser} must retain the ${character} choice`);
+                assert.equal(renderer.resolveAffinityGuard(scenes[choice.next]),
+                    affinity < 30 ? `after3_${short}_low_1` : null);
+            }
+            assert.equal(renderer.resolveAffinityGuard(scenes[`date_${short}_1`]),
+                affinity < 30 ? `date_${short}_low` : null);
+            if (affinity < 30) {
+                assert.equal(renderer.resolveNextScene(scenes[`date_${short}_tier_check`]), `date_${short}_low`,
+                    'Continuing an old saved date entry must still check the live score');
+            }
+        }
+        const refusal = scenes[`after3_${short}_low_1`];
+        assert.ok(refusal.clearFlags.includes(routeFlag));
+        assert.ok(refusal.clearFlags.includes(promiseFlag));
+        assert.equal(refusal.next, 'after3_final');
+        assert.equal(refusal.stats, undefined, 'A failed route must not penalize the other characters');
+    }
+    for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+        const copy = loadLocaleCopy(locale);
+        for (const id of ['after3_choice', 'after3_multi_choice', 'after3_seo_low_1', 'after3_yuna_low_1', 'after3_dain_low_1']) {
+            assert.doesNotMatch(copy[id].text, /\d/, `${locale}:${id} must convey the relationship without numeric notices`);
+        }
+    }
+});
+
+test('a weekend without a date skips messages that assume a date was arranged', () => {
+    const renderer = createSceneRenderer({ Seoyeon: 29, Yuna: 0, Dain: 0 });
+    assert.equal(scenes.morning4_start.next, 'morning4_date_plan_check');
+    assert.equal(renderer.resolveNextScene(scenes.morning4_date_plan_check), 'morning4_fallback_msg');
+    assert.equal(scenes.morning4_fallback_msg.next, 'morning4_hidden_check');
+    for (const character of ['seoyeon', 'yuna', 'dain']) {
+        for (const flag of [`route_${character}`, `accepted_${character}_date`]) {
+            assert.equal(createSceneRenderer({}, { [flag]: true }).resolveNextScene(scenes.morning4_date_plan_check), 'morning4_nightmare_check');
+        }
+    }
+});
+
 test('rival affinity is checked before the wall scene and free talk exits cleanly', () => {
     assert.equal(scenes.hidden_nurse_d3_freetalk.next, 'morning3_date_seo_1');
-    assert.equal(scenes.morning3_date_seo_1.affinityGuard.minAffinity, 0);
+    assert.equal(scenes.morning3_date_seo_1.affinityGuard.minAffinity, 20);
 
     const studentRoutes = [
         ['seoyeon', 'seo'],

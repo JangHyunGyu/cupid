@@ -182,4 +182,5 @@ body :is(button, input[type='button'], input[type='submit'], input[type='reset']
 }
 @media (prefers-reduced-motion: reduce) {
   :is(.start-btn, .modal-btn, .contact-link, .lang-btn, .lang-combo-selected, .archerlab-link, .tab-btn, .back-btn, .choice-btn) { animation: none; transition: none; }
+  .choice-btn { opacity: 1; transform: none; }
 }

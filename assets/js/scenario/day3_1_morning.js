@@ -904,7 +904,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "morning3_date_seo_1": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "affinityGuard": {"character":"Seoyeon","minAffinity":0,"fallback":"morning3_date_seo_low"},
+        "affinityGuard": {"character":"Seoyeon","minAffinity":20,"fallback":"morning3_date_seo_low"},
         "next": "morning3_date_seo_choice"
     },
     "morning3_date_seo_choice": {
@@ -940,7 +940,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "morning3_date_dain_1": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_normal.png",
-        "affinityGuard": {"character":"Dain","minAffinity":0,"fallback":"morning3_date_dain_low"},
+        "affinityGuard": {"character":"Dain","minAffinity":20,"fallback":"morning3_date_dain_low"},
         "next": "morning3_date_dain_2"
     },
     "morning3_date_dain_2": {
@@ -981,7 +981,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "morning3_date_yuna_1": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "affinityGuard": {"character":"Yuna","minAffinity":0,"fallback":"morning3_date_yuna_low"},
+        "affinityGuard": {"character":"Yuna","minAffinity":20,"fallback":"morning3_date_yuna_low"},
         "next": "morning3_date_yuna_1_b"
     },
     "morning3_date_yuna_1_b": {
