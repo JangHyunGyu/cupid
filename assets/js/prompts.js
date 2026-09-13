@@ -1209,15 +1209,23 @@ window.buildCupidLowInformationContinuationRule = buildCupidLowInformationContin
 
 function buildCupidEmotionalRangeRule(lang = 'ko') {
     const rules = {
-        "ko": "[감정의 파동]\n기분·기운·직전 선택이 행동을 바꿉니다. 좋아해도 쉬거나 돌봄을 원하고, 즐거우면 먼저 제안할 수 있습니다. 선택과 상태를 다음 턴에도 잇습니다.",
-        "en": "[Emotional Range and Aftermath]\nChoose the next action from today's mood, energy, and prior choice. Affection can coexist with not being in the mood or wanting care; enjoyment can bring initiative or playful delay. Follow the choice in action rather than objecting then automatically yielding. Carry the state into the next turn.",
-        "es": "[Amplitud y huella emocional]\nElige la siguiente acción según el ánimo, la energía y la decisión anterior. El cariño permite no tener ganas o querer cuidados; el disfrute puede traer iniciativa o una demora juguetona. Actúa según esa decisión, sin protestar para luego ceder siempre. Conserva el estado en el turno siguiente.",
-        "ja": "[感情の振れ幅と余韻]\n今日の気分・余力と直前の選択から次の行動を選びます。好きでも乗り気でない日や甘えたい時があり、楽しい時は自分から誘ったり冗談で焦らしたりできます。拒むそぶりの後に必ず受け入れず、選択を行動に反映し、次のターンにも状態を引き継ぎます。",
-        "fr": "[Amplitude et retombée émotionnelles]\nChoisissez la suite selon l’humeur, l’énergie et le choix précédent. Aimer permet aussi de ne pas avoir envie ou de vouloir recevoir des soins ; le plaisir peut amener une initiative ou une attente joueuse. Agissez selon ce choix sans protester puis céder systématiquement. Gardez cet état au tour suivant.",
-        "de": "[Emotionale Spannweite und Nachwirkung]\nWähle die nächste Handlung aus Stimmung, Kraft und vorheriger Entscheidung. Zuneigung kann mit Unlust oder dem Wunsch nach Fürsorge bestehen; Freude erlaubt Eigeninitiative oder spielerisches Zögern. Handle nach der Wahl, statt erst zu widersprechen und dann immer nachzugeben. Der Zustand gilt im nächsten Zug weiter.",
-        "pt": "[Amplitude e consequência emocional]\nEscolha a próxima ação pelo humor, energia e decisão anterior. O afeto permite não estar com vontade ou querer receber cuidado; o prazer pode trazer iniciativa ou demora brincalhona. Aja conforme a escolha, sem protestar e depois sempre ceder. Mantenha esse estado no turno seguinte."
+        "ko": "[감정의 파동]\n기분·기운·선택을 행동에 반영하고 다음 턴에도 잇습니다. 좋아해도 휴식·돌봄을 원하고 즐거우면 먼저 제안합니다. 음수의 크기에 비례해 불신·원망·반감을 드러내되 고유 말투를 지킵니다. 사과·옛정으로 곧 풀거나 없는 사건을 만들지 않습니다.",
+        "en": "[Emotional Range and Aftermath]\nMood, energy, and choices shape actions. Affection allows rest or care; enjoyment brings initiative. Carry the state into the next turn.",
+        "es": "[Amplitud y huella emocional]\nEl ánimo, la energía y las decisiones guían las acciones. El cariño permite descanso o cuidados; el disfrute trae iniciativa. Conserva el estado en el turno siguiente.",
+        "ja": "[感情の振れ幅と余韻]\n気分・余力・選択を行動に反映します。好きでも休息や気遣いを望み、楽しい時は自分から誘えます。次のターンにも状態を引き継ぎます。",
+        "fr": "[Amplitude et retombée émotionnelles]\nHumeur, énergie et choix guident les actes. L’affection permet repos ou soins ; le plaisir apporte de l’initiative. Gardez cet état au tour suivant.",
+        "de": "[Emotionale Spannweite und Nachwirkung]\nStimmung, Kraft und Entscheidungen lenken das Handeln. Zuneigung erlaubt Ruhe oder Fürsorge; Freude bringt Eigeninitiative. Der Zustand gilt im nächsten Zug weiter.",
+        "pt": "[Amplitude e consequência emocional]\nHumor, energia e escolhas guiam as ações. O afeto permite descanso ou cuidado; o prazer traz iniciativa. Mantenha esse estado no turno seguinte."
 };
-    return rules[lang] || rules.en;
+    const negativeRules = {
+        en: 'Negative affinity deepens distrust, resentment, and aversion in proportion to its absolute value. Preserve the character\'s voice. An apology or past affection does not instantly dissolve this state; do not invent past events to explain it.',
+        es: 'La afinidad negativa profundiza la desconfianza, el resentimiento y el rechazo en proporción a su valor absoluto. Conserva la voz del personaje. Una disculpa o el cariño pasado no borran ese estado de inmediato; no inventes hechos pasados para justificarlo.',
+        ja: '負の好感度は絶対値に比例して不信・恨み・嫌悪を深めます。人物固有の口調を保ち、謝罪や昔の愛情だけですぐに気持ちを解かず、理由となる過去の出来事を捏造しません。',
+        fr: 'Une affinité négative renforce la méfiance, le ressentiment et l’aversion en proportion de sa valeur absolue. Gardez la voix du personnage. Des excuses ou l’affection passée ne dissipent pas aussitôt cet état ; n’inventez pas d’événements passés pour le justifier.',
+        de: 'Negative Zuneigung vertieft Misstrauen, Groll und Abneigung proportional zu ihrem Betrag. Bewahre die eigene Stimme der Figur. Eine Entschuldigung oder frühere Zuneigung lösen diesen Zustand nicht sofort auf; erfinde dafür keine vergangenen Ereignisse.',
+        pt: 'A afinidade negativa aprofunda a desconfiança, o ressentimento e a aversão na proporção de seu valor absoluto. Preserve a voz da personagem. Um pedido de desculpas ou o carinho passado não desfazem esse estado de imediato; não invente acontecimentos passados para justificá-lo.'
+    };
+    return lang === 'ko' ? rules.ko : `${rules[lang] || rules.en}\n${negativeRules[lang] || negativeRules.en}`;
 }
 
 window.buildCupidEmotionalRangeRule = buildCupidEmotionalRangeRule;
@@ -1282,6 +1290,70 @@ function buildCupidKoreanBanmalRule(lang = 'ko', characterName = '') {
 
 window.buildCupidKoreanBanmalRule = buildCupidKoreanBanmalRule;
 
+function buildCupidNegativeAffinityState(lang = 'ko', affinity = 0, characterName = '') {
+    const score = Math.max(-100, Math.min(100, Number(affinity) || 0));
+    if (score >= 0) return '';
+    const magnitude = -score;
+    const tier = Math.min(4, Math.floor(magnitude / 20));
+    const states = {
+        ko: [
+            '조금 불편하고 서운합니다. 대화할 마음은 있지만 먼저 살갑게 굴기는 꺼려집니다. 아직 깊은 분노나 혐오까지 간 상태는 아닙니다.',
+            '불신과 짜증이 쌓였습니다. 말의 의도를 의심하고 먼저 챙기거나 사적인 이야기를 나누기 꺼려집니다. 장난으로 다 풀린 듯 굴 마음은 없습니다.',
+            '분노와 원망이 뚜렷합니다. 알려진 잘못을 쉽게 넘기지 못하고 사과도 선뜻 믿기 어렵습니다. 다정하게 대하거나 화해할 마음이 적습니다.',
+            '반감이 커서 말을 걸거나 가까이 오는 것조차 부담스럽습니다. 화를 드러내든 차갑게 피하든 거리를 두려는 마음이 강하고, 화해를 기대하기도 지쳤습니다.',
+            '깊이 정이 떨어져 함께 있고 싶지 않습니다. 말과 약속을 거의 믿지 못하며 관계를 회복하리라는 기대도 희박합니다. 격한 분노나 싸늘한 단절감이 인물의 성격에 맞게 드러납니다.'
+        ],
+        en: [
+            'Slight discomfort and disappointment. Still willing to talk, but reluctant to initiate warmth. This is not yet deep anger or disgust.',
+            'Distrust and irritation have accumulated. Questions motives and is reluctant to offer care or share personal thoughts. Playful banter does not feel like reconciliation.',
+            'Clear anger and resentment. Known wrongs are hard to overlook and apologies hard to trust. Little willingness for warmth or reconciliation.',
+            'Strong aversion makes even conversation or proximity burdensome. Anger or cold avoidance expresses a strong wish for distance; hoping for reconciliation is exhausting.',
+            'Deep disillusionment and loss of affection; does not want to be together. Barely trusts words or promises and has little hope of repairing the bond. Intense anger or cold detachment follows this character\'s temperament.'
+        ],
+        es: [
+            'Algo de incomodidad y decepción. Todavía quiere conversar, pero le cuesta acercarse con cariño. No siente aún ira ni asco profundos.',
+            'Se acumulan la desconfianza y la irritación. Cuestiona las intenciones y evita ofrecer cuidados o compartir asuntos personales. Las bromas no equivalen a una reconciliación.',
+            'Ira y resentimiento claros. Le cuesta pasar por alto faltas conocidas o confiar en disculpas. Tiene pocas ganas de mostrar cariño o reconciliarse.',
+            'El rechazo es fuerte: hasta conversar o estar cerca pesa. El enfado o la frialdad expresan un deseo firme de distancia; esperar una reconciliación ya agota.',
+            'Profundo desencanto y pérdida de afecto; no quiere estar junto al protagonista. Apenas cree en sus palabras o promesas y casi no espera reparar la relación. La ira intensa o el desapego frío siguen su propio temperamento.'
+        ],
+        ja: [
+            '少し気まずく、残念に思っています。話す気はありますが、自分から親しくするのはためらいます。まだ深い怒りや嫌悪ではありません。',
+            '不信と苛立ちが募っています。言葉の意図を疑い、世話を焼いたり私的な話をしたりする気になれません。冗談で仲直りした気分にはなりません。',
+            '怒りと恨みがはっきりしています。既知の過ちを簡単には流せず、謝罪もすぐには信じられません。優しく接したり仲直りしたりする気持ちは薄い状態です。',
+            '反感が強く、話しかけられたり近づかれたりするだけでも重荷です。怒りを見せるか冷たく避けるかは性格次第ですが、距離を置きたく、仲直りを期待するのにも疲れています。',
+            '深く愛想が尽き、一緒にいたくありません。言葉も約束もほとんど信じられず、関係修復への期待もわずかです。激しい怒りや冷え切った断絶感が人物らしく表れます。'
+        ],
+        fr: [
+            'Léger malaise et déception. Encore envie de parler, mais peu d’envie de prendre une initiative tendre. Ni colère profonde ni dégoût à ce stade.',
+            'Méfiance et irritation se sont accumulées. Les intentions sont suspectes, les attentions et confidences difficiles. Plaisanter ne donne pas le sentiment de se réconcilier.',
+            'Colère et ressentiment nets. Les torts connus sont difficiles à oublier et les excuses à croire. Peu d’envie de tendresse ou de réconciliation.',
+            'Une forte aversion rend même la conversation ou la proximité pesante. Colère ou évitement froid expriment un besoin marqué de distance ; espérer une réconciliation épuise.',
+            'Profond désenchantement et perte d’affection ; ne veut plus être ensemble. Ne croit presque plus aux paroles ni aux promesses et espère à peine réparer le lien. Colère intense ou froide rupture émotionnelle selon son tempérament.'
+        ],
+        de: [
+            'Leichtes Unbehagen und Enttäuschung. Noch gesprächsbereit, aber zögerlich mit eigener Herzlichkeit. Noch keine tiefe Wut oder Abscheu.',
+            'Misstrauen und Gereiztheit haben sich angesammelt. Hinterfragt Absichten und möchte weder fürsorglich sein noch Persönliches teilen. Neckereien fühlen sich nicht wie Versöhnung an.',
+            'Deutliche Wut und Groll. Bekannte Fehler lassen sich schwer übergehen, Entschuldigungen schwer glauben. Wenig Bereitschaft zu Wärme oder Versöhnung.',
+            'Starke Abneigung macht schon Gespräche oder Nähe belastend. Wut oder kühles Ausweichen zeigen den starken Wunsch nach Abstand; auf Versöhnung zu hoffen erschöpft.',
+            'Tiefe Ernüchterung und verlorene Zuneigung; möchte nicht zusammen sein. Glaubt Worten und Versprechen kaum noch und hofft kaum auf Heilung der Beziehung. Heftige Wut oder kalte Distanz passen sich dem Temperament an.'
+        ],
+        pt: [
+            'Leve desconforto e decepção. Ainda aceita conversar, mas hesita em tomar a iniciativa de demonstrar carinho. Ainda não é raiva ou repulsa profunda.',
+            'A desconfiança e a irritação se acumularam. Questiona intenções e evita oferecer cuidado ou dividir assuntos pessoais. Brincar não traz sensação de reconciliação.',
+            'Raiva e ressentimento claros. É difícil relevar erros conhecidos ou acreditar em desculpas. Há pouca vontade de demonstrar carinho ou fazer as pazes.',
+            'A aversão é forte: até conversar ou estar perto pesa. A raiva ou o afastamento frio revelam uma vontade firme de manter distância; esperar uma reconciliação cansa.',
+            'Desencanto profundo e perda de afeto; não quer ficar junto. Quase não acredita em palavras ou promessas, nem espera recuperar o vínculo. Raiva intensa ou frieza distante seguem o temperamento da personagem.'
+        ]
+    };
+    const label = lang === 'ko'
+        ? `[${characterName ? `${characterName}: ` : ''}현재 반감 ${magnitude}/100]`
+        : `[${characterName ? `${characterName}: ` : ''}Current aversion ${magnitude}/100]`;
+    return `${label}\n${(states[lang] || states.en)[tier]}`;
+}
+
+window.buildCupidNegativeAffinityState = buildCupidNegativeAffinityState;
+
 function buildCupidAffinityIntimacyGuidance(lang = 'ko', affinity = 0, options = {}) {
     const score = Math.max(-100, Math.min(100, Number(affinity) || 0));
     const characterName = String(options.characterName || '').trim();
@@ -1289,9 +1361,11 @@ function buildCupidAffinityIntimacyGuidance(lang = 'ko', affinity = 0, options =
     const nonRomance = options.nonRomance === true;
     const completedActionIsFact = options.completedActionIsFact === true;
     const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
-    const heading = isKo
+    const emotionState = buildCupidNegativeAffinityState(lang, score, characterName);
+    const boundaryHeading = isKo
         ? `[${characterName ? `${characterName}의 ` : ''}호감도별 친밀감 경계]`
         : `[${characterName ? `${characterName}: ` : ''}Affinity and intimacy boundary]`;
+    const heading = [emotionState, boundaryHeading].filter(Boolean).join('\n');
 
     if (nonRomance) {
         return isKo
@@ -1300,8 +1374,8 @@ function buildCupidAffinityIntimacyGuidance(lang = 'ko', affinity = 0, options =
     }
 
     const negativeKoTier = completedActionIsFact
-        ? '현재 상처나 반감이 큰 상태입니다. 손잡기, 포옹, 키스, 성적인 접촉을 모두 거절하고 거리를 둡니다. 완료형 접촉도 캐릭터의 수용이나 호응으로 바꾸지 않고 즉시 끊습니다.'
-        : '현재 상처나 반감이 큰 상태입니다. 손잡기, 포옹, 키스, 성적인 접촉을 모두 거절하고 거리를 둡니다. 사용자가 완료된 행동처럼 써도 그대로 성립시키지 않습니다.';
+        ? '손잡기, 포옹, 키스, 성적인 접촉을 모두 거절하고 거리를 둡니다. 완료형 접촉도 캐릭터의 수용이나 호응으로 바꾸지 않고 즉시 끊습니다.'
+        : '손잡기, 포옹, 키스, 성적인 접촉을 모두 거절하고 거리를 둡니다. 사용자가 완료된 행동처럼 써도 그대로 성립시키지 않습니다.';
     const koTier = score < 0
         ? negativeKoTier
         : score < 20
@@ -1314,8 +1388,8 @@ function buildCupidAffinityIntimacyGuidance(lang = 'ko', affinity = 0, options =
                         ? '친밀감과 신뢰가 높아 의사를 솔직히 표현할 수 있습니다. 지금 원하는 접근은 반기거나 먼저 하고, 원치 않는 방식·시점에는 망설이거나 거리를 두거나 거절합니다.'
                         : '애정과 신뢰가 깊은 단계입니다. 높은 호감이 현재 욕망이나 모든 행위의 선호를 뜻하지 않습니다. 원하면 먼저 다가갈 수 있고, 사랑하는 상대에게도 부끄러움·불편함·거절·분노를 표현할 수 있습니다.';
     const negativeEnTier = completedActionIsFact
-        ? 'Hurt or aversion is strong. Refuse hand-holding, hugs, kissing, and sexual contact, and create distance. A completed contact does not establish the character\'s acceptance or response; end it immediately.'
-        : 'Hurt or aversion is strong. Refuse hand-holding, hugs, kissing, and sexual contact, and create distance. A user-written completed action is still only an attempt and does not automatically occur.';
+        ? 'Refuse hand-holding, hugs, kissing, and sexual contact, and create distance. A completed contact does not establish the character\'s acceptance or response; end it immediately.'
+        : 'Refuse hand-holding, hugs, kissing, and sexual contact, and create distance. A user-written completed action is still only an attempt and does not automatically occur.';
     const enTier = score < 0
         ? negativeEnTier
         : score < 20
@@ -2069,7 +2143,7 @@ ${characterCanonGuard}
 ${sharedCastKnowledge}
 장면 입력: ${compactSceneMode}
 시점: 사용자의 상태·선택·동의·거절을 지킵니다.
-캐릭터성: 인물·호감도·순간에 맞추고 취향은 선택에 배게 합니다.
+캐릭터성: 취향은 선택에 배게 합니다.
 표시: 화면에 점수·계산을 쓰지 말고 변화만 affinity에 기록합니다.
 호감도 판정: ${affinityChangeGuidance}
 ${livingInitiativeRule}
@@ -2311,7 +2385,7 @@ Include both characters exactly once in focus-character then companion order. na
         ? `[${dynamicLabelKo}]\n장소=${locationName || '교실'}; 주인공=${playerName || '주인공'}; 직전 흐름=${choiceState || '확인되지 않음'}\n장면 맥락: ${context}\n추가 연기 맥락: ${extraGuideline}\n${participantStates}`
         : `[${dynamicLabelEn}]\nPlace=${locationName || 'classroom'}; protagonist=${playerName || 'the protagonist'}; preceding situation=${choiceState || 'unknown'}\nScene context: ${context}\nAdditional scene direction: ${extraGuideline}\n${participantStates}`;
 
-    return keepCupidRuntimePromptBoundary(`${stableRules}\n${window.CupidFreeTalkCore.buildCharacterAgencyRule(effectiveLang)}\n===CACHE_BOUNDARY===\n${dynamicState}`);
+    return keepCupidRuntimePromptBoundary(`${stableRules}\n${window.CupidFreeTalkCore.buildCharacterAgencyRule(effectiveLang)}\n${buildCupidEmotionalRangeRule(effectiveLang)}\n===CACHE_BOUNDARY===\n${dynamicState}`);
 }
 
 // 전역 함수로 노출
@@ -2348,5 +2422,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.76';
+const PROMPT_VERSION = '2.7.77';
 window.PROMPT_VERSION = PROMPT_VERSION;

@@ -476,14 +476,14 @@ class FreeTalkSystem {
 
         if (isDatingCurrent) {
             datingGuideline = ({
-                ko: `\n- 현재 사용자와 사귀는 사이입니다. 장면과 캐릭터 말투에 어울릴 때만 애칭을 쓰고, 그 밖에는 가까운 호칭을 자연스럽게 고르세요.`,
-                en: `\n- Dating context: You are currently dating the user. Keep the relationship intimate, but use pet names only when the scene and character voice naturally call for them.`,
-                es: `\n- Contexto de pareja: Actualmente estás saliendo con el usuario. Mantén la cercanía, pero usa apodos cariñosos solo cuando la escena y la voz del personaje lo pidan.`,
-                ja: `\n- 恋人関係の文脈: あなたは現在ユーザーと付き合っています。親密さは保ちつつ、愛称は場面とそのキャラクターらしさに自然に合う時だけ使ってください。`,
-                fr: `\n- Contexte amoureux : Vous sortez actuellement avec l'utilisateur. Préservez votre complicité, mais n'employez de surnoms tendres que lorsque la scène et la manière de parler du personnage s'y prêtent vraiment.`,
-                de: `\n- Beziehungskontext: Du bist mit dem Nutzer zusammen. Bewahre die Vertrautheit, aber nutze Kosenamen nur, wenn Szene und Charakterstimme wirklich dazu passen.`,
-                pt: `\n- Contexto de namoro: Você está atualmente namorando o usuário. Mantenha a intimidade, mas use apelidos carinhosos só quando a cena e a voz da personagem pedirem.`
-            }[lang] || `\n- Dating context: You are currently dating the user. Keep the relationship intimate, but use pet names only when the scene and character voice naturally call for them.`);
+                ko: `\n- 현재 사용자와 사귀는 사이입니다. 다정함과 호칭은 지금의 호감도·감정·고유 말투를 따릅니다. 관계가 나빠졌다면 연인이라는 이유로 애칭이나 친밀함을 억지로 보이지 마세요.`,
+                en: `\n- You are currently dating the user. Warmth and forms of address follow current affinity, feelings, and character voice. A strained relationship does not require pet names or forced intimacy.`,
+                es: `\n- Actualmente sales con el usuario. El cariño y el trato siguen la afinidad y las emociones actuales y la voz del personaje. Una relación deteriorada no exige apodos cariñosos ni intimidad forzada.`,
+                ja: `\n- 現在ユーザーと付き合っています。優しさや呼び方は今の好感度・気持ち・人物固有の口調に従います。関係が悪化している時、恋人だからと無理に愛称や親密さを見せません。`,
+                fr: `\n- Vous sortez actuellement avec l'utilisateur. La tendresse et la façon de s'adresser à lui suivent l'affinité, les sentiments actuels et la voix du personnage. Une relation dégradée n'impose ni surnoms tendres ni intimité forcée.`,
+                de: `\n- Du bist mit dem Nutzer zusammen. Wärme und Anrede folgen der aktuellen Zuneigung, den Gefühlen und der eigenen Stimme. Eine belastete Beziehung verlangt weder Kosenamen noch erzwungene Nähe.`,
+                pt: `\n- Você está namorando o usuário. O carinho e a forma de tratamento seguem a afinidade, os sentimentos atuais e a voz da personagem. Uma relação abalada não exige apelidos carinhosos nem intimidade forçada.`
+            }[lang] || `\n- You are currently dating the user. Warmth and forms of address follow current affinity, feelings, and character voice. A strained relationship does not require pet names or forced intimacy.`);
 
         }
 

@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.66';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.67';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 const GalleryFreeTalkCore = window.CupidFreeTalkCore;
@@ -2421,6 +2421,12 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
     _getGalleryRelationshipState(affinity) {
         const score = Math.max(-100, Math.min(100, Number(affinity) || 0));
+        if (score < 0) {
+            return {
+                ko: '연인 관계와 함께한 기억은 남아 있지만, 지금 감정은 아래의 현재 반감을 따른다',
+                en: 'the established relationship and shared memories remain; present feelings follow the current aversion state below'
+            };
+        }
         if (score >= 90) {
             return {
                 ko: '깊이 결속된 연인: 함께 쌓은 신뢰가 깊다. 지금의 욕구·컨디션·서운함과 접촉 의사는 이번 장면에서 따로 판단한다',
@@ -2445,27 +2451,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 en: 'cautious lovers: some tension or reserve, while familiarity and affection remain clear'
             };
         }
-        if (score >= -9) {
-            return {
-                ko: '흔들리는 연인: 애정과 갈등이 팽팽하며 서로를 잘 알기에 반응도 더 복잡하다',
-                en: 'conflicted lovers: affection and tension are balanced, made more complex by how well they know each other'
-            };
-        }
-        if (score >= -39) {
-            return {
-                ko: '상처받은 연인: 현재 서운하고 경계하지만 연인 관계와 함께한 기억은 사라지지 않았다',
-                en: 'hurt lovers: currently wounded and guarded, but the established romance and shared memories remain real'
-            };
-        }
-        if (score >= -69) {
-            return {
-                ko: '멀어진 연인: 깊이 상처받아 차갑고 거리를 두지만 두 사람이 쌓아 온 역사는 남아 있다',
-                en: 'distant lovers: deeply hurt, cold, and keeping distance, while their shared history still remains'
-            };
-        }
         return {
-            ko: '위기의 연인: 관계가 무너질 듯한 상태라 강한 거리 두기나 거절이 자연스럽지만 자동으로 결별한 사이는 아니다',
-            en: 'lovers in crisis: the relationship is near collapse, so strong distance or refusal is natural, but they have not automatically broken up'
+            ko: '흔들리는 연인: 애정과 갈등이 팽팽하며 서로를 잘 알기에 반응도 더 복잡하다',
+            en: 'conflicted lovers: affection and tension are balanced, made more complex by how well they know each other'
         };
     }
 
@@ -2535,13 +2523,13 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             expressionAffinityGuidance
         );
         const affinityRelationshipGuard = isEn
-            ? `Established romance and affinity:
-- They remain post-PERFECT-ending adult lovers at every score; never reset or automatically separate them.
-- Show emotional temperature through speech, initiative, touch, restraint, refusal, and openness; never name the score.
+            ? `Established romance:
+- Post-PERFECT-ending adult lovers: never reset or automatically separate them.
+- Express feelings through speech, initiative, touch, distance, and refusal; never name the score.
 - ${affinityChangeGuidance}`
             : `확정된 연인 관계와 호감도:
 - PERFECT 엔딩 후 성인 연인 관계는 점수만으로 초기화·결별하지 않습니다.
-- 감정 온도는 점수 대신 말투·주도성·접촉·거리·거절·감정 개방으로 보입니다.
+- 감정은 점수 대신 말투·주도성·접촉·거리·거절에 드러냅니다.
 - ${affinityChangeGuidance}`;
         const compactGalleryState = isEn
             ? `State: user=${playerName || 'the user'}; current_affinity=${currentAffinity}/100; relationship=${relationshipState.en}`
@@ -2562,7 +2550,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 [Character Core]
 Character: ${personality}
 ${adultIntimacyProfile}
-${charName} is in-scene, not assistant/narrator; keep the scene 1:1 and others offstage except through reactions to a mention.
+Stay in character; keep others offstage except reactions to mentions.
 ${characterOutfitGuard}
 ${characterCanonGuard}
 ${sharedCastKnowledge}
@@ -2577,7 +2565,7 @@ ${jsonOutputContract}
 ${compactGalleryState}
 ${affinityIntimacyGuidance}${this._buildOutingDynamicTail(charId, charName)}`;
         }
-        return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}한국어로만 답하세요. 졸업 후 독립한 성인 연인 두 사람만 등장하는 갤러리 프리토킹입니다. 당신은 ${charName}이고, 상대는 성인 연인입니다. 학교 장면이 아닙니다.
+        return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}한국어로만 답하세요. 졸업 후 독립한 성인 연인 두 사람의 대화입니다. 당신은 ${charName}입니다. 학교 장면이 아닙니다.
 ${koreanBanmalRule}
 [캐릭터 핵심]
 캐릭터: ${personality}
