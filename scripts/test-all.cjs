@@ -22,6 +22,7 @@ const commands = [
     ['node', ['--test', 'tests/temptation-freetalk.test.cjs']],
     ['node', ['--test', 'tests/runtime-error-regressions.test.cjs']],
     ['node', ['--test', 'tests/product-polish.test.cjs']],
+    ['node', ['--test', 'tests/immersive.test.cjs']],
     ['node', ['scripts/verify-repetition-guards.cjs']],
     ['node', ['scripts/audit-media.cjs']]
 ];

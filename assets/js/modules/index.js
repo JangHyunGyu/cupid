@@ -95,46 +95,10 @@ window.gameEngine = null;
  * 사용 예시 (HTML):
  * <button onclick="initGame()">새 게임</button>
  */
-/**
- * 📱 모바일 가로모드 전용 풀스크린
- * - 세로모드 풀스크린에서는 Chrome 자동완성 바 위치가 깨지므로 가로만 적용
- * - 화면 회전 시 자동 진입/해제
- */
-function setupLandscapeFullscreen() {
-    const isMobile = ('ontouchstart' in window || navigator.maxTouchPoints > 0) && window.innerWidth <= 1024;
-    if (!isMobile) return;
-
-    const tryEnter = () => {
-        if (window.innerWidth <= window.innerHeight) return; // 세로면 스킵
-        const el = document.documentElement;
-        const rfs = el.requestFullscreen || el.webkitRequestFullscreen || el.msRequestFullscreen;
-        if (rfs && !document.fullscreenElement && !document.webkitFullscreenElement) {
-            rfs.call(el).catch(() => {});
-        }
-    };
-
-    const tryExit = () => {
-        if (window.innerWidth > window.innerHeight) return; // 가로면 스킵
-        if (document.fullscreenElement || document.webkitFullscreenElement) {
-            (document.exitFullscreen || document.webkitExitFullscreen).call(document).catch(() => {});
-        }
-    };
-
-    // 최초 진입
-    tryEnter();
-
-    // 화면 회전 감지
-    screen.orientation?.addEventListener('change', () => {
-        setTimeout(() => {
-            if (screen.orientation.type.startsWith('landscape')) tryEnter();
-            else tryExit();
-        }, 100);
-    });
-}
-
+// Request during the initiating gesture, before localization or save loading.
 window.initGame = async () => {
+    window.ArcherImmersive?.autoEnter();
     if (window._i18nReady) await window._i18nReady;
-    setupLandscapeFullscreen();
     gameEngine = new GameEngine();  // 게임 엔진 인스턴스 생성
     window.gameEngine = gameEngine; // 개발자 도구에서 접근 가능
     await gameEngine.startNewGame();  // 처음부터 시작
@@ -148,8 +112,8 @@ window.initGame = async () => {
  * <button onclick="initGameFromSave()">이어하기</button>
  */
 window.initGameFromSave = async (saveData) => {
+    window.ArcherImmersive?.autoEnter();
     if (window._i18nReady) await window._i18nReady;
-    setupLandscapeFullscreen();
     gameEngine = new GameEngine();  // 게임 엔진 인스턴스 생성
     window.gameEngine = gameEngine; // 개발자 도구에서 접근 가능
     await gameEngine.continueGame();  // 저장 지점부터 재개

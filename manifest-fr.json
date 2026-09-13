@@ -3,10 +3,10 @@
     "short_name": "Cupid",
     "description": "Jouez gratuitement à un visual novel de romance scolaire dans votre navigateur, sans téléchargement ni inscription.",
     "start_url": "/index-fr.html",
-    "display": "standalone",
+    "display": "fullscreen",
     "background_color": "#1a1a2e",
     "theme_color": "#e94560",
-    "orientation": "portrait",
+    "orientation": "any",
     "lang": "fr",
     "icons": [
         {
@@ -25,5 +25,14 @@
             "type": "image/png"
         }
     ],
-    "categories": ["games", "entertainment"]
+    "categories": [
+        "games",
+        "entertainment"
+    ],
+    "id": "/index-fr.html",
+    "scope": "/",
+    "display_override": [
+        "fullscreen",
+        "standalone"
+    ]
 }

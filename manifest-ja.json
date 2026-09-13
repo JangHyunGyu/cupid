@@ -3,10 +3,10 @@
     "short_name": "Cupid",
     "description": "インストール不要ですぐ遊べる、無料の学園恋愛ゲーム。選択肢で物語と結末が変わります。",
     "start_url": "/index-ja.html",
-    "display": "standalone",
+    "display": "fullscreen",
     "background_color": "#1a1a2e",
     "theme_color": "#e94560",
-    "orientation": "portrait",
+    "orientation": "any",
     "lang": "ja",
     "icons": [
         {
@@ -25,5 +25,14 @@
             "type": "image/png"
         }
     ],
-    "categories": ["games", "entertainment"]
+    "categories": [
+        "games",
+        "entertainment"
+    ],
+    "id": "/index-ja.html",
+    "scope": "/",
+    "display_override": [
+        "fullscreen",
+        "standalone"
+    ]
 }

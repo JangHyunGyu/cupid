@@ -44,7 +44,7 @@
         };
     </script>
     <script src="assets/js/browser-check.js?v=2.9.9" defer></script>
-    <script src="assets/js/modal-accessibility.js?v=2.9.229" defer></script>
+    <script src="assets/js/modal-accessibility.js?v=2.9.230" defer></script>
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -917,6 +917,10 @@
     </style>
 <script src="assets/js/ga-engagement.js?v=20260618-engagement" defer></script>
     <link rel="stylesheet" href="assets/css/buttons.css?v=1.0.1">
+    <script src="assets/js/immersive.js?v=20260913-immersive-v1" defer></script>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 
 <body>
@@ -933,7 +937,7 @@
         }
     </script>
     <div class="lang-switch">
-        <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="ArcherLab 홈" title="ArcherLab">🏹 ArcherLab</a>
+        <a href="https://archerlab.dev" rel="noopener noreferrer" class="archerlab-link" aria-label="ArcherLab 홈" title="ArcherLab">🏹 ArcherLab</a>
         <button id="landing-settings-btn" class="lang-btn"
             style="border: none;">
             설정</button>
@@ -979,8 +983,8 @@
             <h1 class="visual-h1">CUPID<span class="sr-only"> - 무료 웹 비주얼노벨 | 5일간의 학원 로맨스</span></h1>
             <p>전학 첫날, 누구에게 먼저 말을 걸까</p>
             <div style="display: flex; flex-direction: column; align-items: center; gap: clamp(6px, 1.2vh, 12px);">
-                <button id="start-btn" onclick="startGame()" class="start-btn" style="cursor:pointer; opacity: 0.5;" disabled>새 게임</button>
-                <button id="continue-btn" onclick="continueGame()" class="start-btn"
+                <button id="start-btn" data-fullscreen-start onclick="startGame()" class="start-btn" style="cursor:pointer; opacity: 0.5;" disabled>새 게임</button>
+                <button id="continue-btn" data-fullscreen-start onclick="continueGame()" class="start-btn"
                     style="cursor:pointer; opacity: 0.5;"
                     disabled>계속하기</button>
             </div>
@@ -1029,7 +1033,7 @@
 
         <!-- UI 레이어 -->
         <div id="ui-layer">
-            <div id="dialogue-box">
+            <div id="dialogue-box" data-fullscreen-play>
                 <div id="name-tag"></div>
                 <div id="message"></div>
                 <div id="next-indicator"></div>
@@ -1252,7 +1256,7 @@
     </script>
 
     <!-- 게임 스크립트 (동적 로더) -->
-<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.229&history=20260908"></script>
+<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.230&history=20260908"></script>
 
     <script>
         // Initialize SoundManager + Enable Buttons (게임 스크립트 로드 완료 후)

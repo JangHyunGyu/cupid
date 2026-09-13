@@ -3,10 +3,10 @@
     "short_name": "Cupid",
     "description": "Erlebe eine kostenlose Schulromanze als Visual Novel direkt im Browser – ohne Download oder Anmeldung.",
     "start_url": "/index-de.html",
-    "display": "standalone",
+    "display": "fullscreen",
     "background_color": "#1a1a2e",
     "theme_color": "#e94560",
-    "orientation": "portrait",
+    "orientation": "any",
     "lang": "de",
     "icons": [
         {
@@ -25,5 +25,14 @@
             "type": "image/png"
         }
     ],
-    "categories": ["games", "entertainment"]
+    "categories": [
+        "games",
+        "entertainment"
+    ],
+    "id": "/index-de.html",
+    "scope": "/",
+    "display_override": [
+        "fullscreen",
+        "standalone"
+    ]
 }
