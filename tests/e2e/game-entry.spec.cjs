@@ -488,7 +488,7 @@ test('game and gallery preserve valid outward expressions independently of affin
     expect(galleryAvatar).toContain('yuna_angry.png');
 });
 
-test('gallery free-talk injects all eight affinity temperature bands into every turn prompt', async ({ page }) => {
+test('gallery keeps relationship history and all ten emotional bands in the live prompt', async ({ page }) => {
     await page.goto('/gallery.html');
     await page.waitForFunction(() => window.GalleryFreeTalk && window.CupidFreeTalkCore);
 
@@ -498,23 +498,27 @@ test('gallery free-talk injects all eight affinity temperature bands into every 
             getPlayerName: () => 'Tester',
             getCurrentAffinity: () => currentAffinity
         });
-        const scores = [95, 75, 50, 20, 0, -20, -50, -80];
+        const scores = [95, 75, 50, 20, 0, -1, -20, -40, -60, -80];
         return scores.map(score => {
             currentAffinity = score;
             const label = talk._getGalleryRelationshipState(score).en;
             const prompt = talk._buildSystemPrompt('yuna');
+            const [stable, dynamic] = prompt.split('===CACHE_BOUNDARY===');
+            const emotion = window.buildCupidNegativeAffinityState('en', score, talk.CHAR_NAMES.yuna.en);
             return {
-                label,
-                hasScore: prompt.includes(`current_affinity=${score}/100`),
-                hasLabel: prompt.includes(`relationship=${label}`),
-                hasBehaviorAxes: ['speech', 'initiative', 'touch', 'restraint', 'refusal', 'openness']
-                    .every(axis => prompt.includes(axis))
+                band: score < 0 ? emotion.split('\n')[1] : label,
+                hasScore: dynamic.includes(`current_affinity=${score}/100`),
+                hasLabel: dynamic.includes(`relationship=${label}`),
+                hasEmotion: score >= 0 || (dynamic.includes(emotion) && !stable.includes(emotion)),
+                preservesHistory: stable.includes('never reset or automatically separate them'),
+                fingerprint: window.CupidFreeTalkCore.getStablePromptFingerprint(prompt)
             };
         });
     });
 
-    expect(new Set(result.map(item => item.label)).size).toBe(8);
-    expect(result.every(item => item.hasScore && item.hasLabel && item.hasBehaviorAxes)).toBe(true);
+    expect(new Set(result.map(item => item.band)).size).toBe(10);
+    expect(result.every(item => item.hasScore && item.hasLabel && item.hasEmotion && item.preservesHistory)).toBe(true);
+    expect(new Set(result.map(item => item.fingerprint)).size).toBe(1);
 });
 
 test('gallery high-severity trust incident commits one completed turn and an immediate -50 impact', async ({ page }) => {
