@@ -1,0 +1,101 @@
+/* Button finishes only. Original page composition, typography and artwork remain in the base styles. */
+:is(.start-btn:not(#continue-btn), .modal-btn.confirm, .cu-btn-accent, #name-confirm-btn, .freetalk-btn:not(.locked), #continue-btn, .modal-btn.cancel, .cu-btn-soft, .contact-link, .lang-btn, .lang-combo-selected, .archerlab-link, .tab-btn, .back-btn, #chat-skip-btn, #upload-image-btn, #action-toggle-btn, #gallery-btn, #home-btn, #settings-btn, .gft-close-btn, #chat-send) {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  transition: background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease, filter 160ms ease;
+}
+:is(.start-btn:not(#continue-btn), .modal-btn.confirm, .cu-btn-accent, #name-confirm-btn, .freetalk-btn:not(.locked)) {
+  position: relative;
+  border-radius: 6px;
+  border-color: transparent;
+  color: #fff7f2;
+  background: radial-gradient(ellipse at 50% 0, #ffffff24, transparent 65%), linear-gradient(180deg, #be6680, #a84b68 48%, #843b58);
+  box-shadow: inset 0 1px 0 #ffffff40, inset 0 -2px 0 #00000035, 0 3px 0 #853e58, 0 6px 14px #00000026;
+  text-shadow: 0 1px 1px #00000025;
+  font-weight: 650;
+}
+:is(.start-btn:not(#continue-btn), .modal-btn.confirm, .cu-btn-accent, #name-confirm-btn, .freetalk-btn:not(.locked))::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 12px solid transparent;
+  border-image: url("../images/ui/button-frame.svg") 24 / 12px stretch;
+  border-radius: inherit;
+  pointer-events: none;
+}
+:is(#continue-btn, .modal-btn.cancel, .cu-btn-soft, .contact-link, .lang-btn, .lang-combo-selected, .archerlab-link, .tab-btn, .back-btn, #chat-skip-btn) {
+  color: #f6e5eb;
+  border-color: #745366;
+  background: linear-gradient(180deg, #382938, #231d2a);
+  box-shadow: inset 0 1px 0 #ffffff1f, inset 0 -1px 0 #00000018, 0 2px 3px #0000001a;
+  text-shadow: none;
+}
+:is(#upload-image-btn, #action-toggle-btn, #gallery-btn, #home-btn, #settings-btn, .gft-close-btn) {
+  border-radius: 10px;
+  color: #f6e5eb;
+  border-color: #745366;
+  background: linear-gradient(155deg, #382938, #231d2a);
+  box-shadow: inset 0 0 0 1px #745366, inset 0 2px 0 #ffffff12, 0 2px 4px #00000020;
+}
+:is(.start-btn:not(#continue-btn), .modal-btn.confirm, .cu-btn-accent, #name-confirm-btn, .freetalk-btn:not(.locked), #continue-btn, .modal-btn.cancel, .cu-btn-soft, .contact-link, .lang-btn, .lang-combo-selected, .archerlab-link, .tab-btn, .back-btn, #chat-skip-btn, #upload-image-btn, #action-toggle-btn, #gallery-btn, #home-btn, #settings-btn, .gft-close-btn, #chat-send):focus-visible {
+  outline: 2px solid #ffcbdf;
+  outline-offset: 3px;
+}
+@media (hover: hover) and (pointer: fine) {
+  :is(.start-btn:not(#continue-btn), .modal-btn.confirm, .cu-btn-accent, #name-confirm-btn, .freetalk-btn:not(.locked), #continue-btn, .modal-btn.cancel, .cu-btn-soft, .contact-link, .lang-btn, .lang-combo-selected, .archerlab-link, .tab-btn, .back-btn, #chat-skip-btn, #upload-image-btn, #action-toggle-btn, #gallery-btn, #home-btn, #settings-btn, .gft-close-btn, #chat-send):not(:disabled):not([aria-disabled="true"]):hover {
+    filter: brightness(1.12);
+    border-color: #d496a4;
+  }
+}
+:is(.start-btn:not(#continue-btn), .modal-btn.confirm, .cu-btn-accent, #name-confirm-btn, .freetalk-btn:not(.locked), #continue-btn, .modal-btn.cancel, .cu-btn-soft, .contact-link, .lang-btn, .lang-combo-selected, .archerlab-link, .tab-btn, .back-btn, #chat-skip-btn, #upload-image-btn, #action-toggle-btn, #gallery-btn, #home-btn, #settings-btn, .gft-close-btn, #chat-send):not(:disabled):not([aria-disabled="true"]):active {
+  filter: brightness(.93);
+  box-shadow: inset 0 2px 5px #00000032, inset 0 0 0 1px #d496a4, 0 1px 0 #ffffff12;
+}
+:is(.tab-btn.active, #action-toggle-btn.active) {
+  color: #fff7f2;
+  background: linear-gradient(180deg, #be6680, #843b58);
+  border-color: #d496a4;
+  box-shadow: inset 0 1px 0 #ffffff38, inset 0 0 0 1px #d496a4, 0 2px 5px #00000020;
+}
+:is(.start-btn:not(#continue-btn), .modal-btn.confirm, .cu-btn-accent, #name-confirm-btn, .freetalk-btn:not(.locked), #continue-btn, .modal-btn.cancel, .cu-btn-soft, .contact-link, .lang-btn, .lang-combo-selected, .archerlab-link, .tab-btn, .back-btn, #chat-skip-btn, #upload-image-btn, #action-toggle-btn, #gallery-btn, #home-btn, #settings-btn, .gft-close-btn, #chat-send):is(:disabled, [aria-disabled="true"]) {
+  filter: saturate(.25);
+  box-shadow: inset 0 0 0 1px #88888830;
+  cursor: not-allowed;
+}
+@media (prefers-reduced-motion: reduce) {
+  :is(.start-btn:not(#continue-btn), .modal-btn.confirm, .cu-btn-accent, #name-confirm-btn, .freetalk-btn:not(.locked), #continue-btn, .modal-btn.cancel, .cu-btn-soft, .contact-link, .lang-btn, .lang-combo-selected, .archerlab-link, .tab-btn, .back-btn, #chat-skip-btn, #upload-image-btn, #action-toggle-btn, #gallery-btn, #home-btn, #settings-btn, .gft-close-btn, #chat-send) { transition: none; }
+}
+:is(#chat-send) {
+  color: #fff7f2;
+  background: linear-gradient(155deg, #be6680, #843b58);
+  border: 1px solid #d496a4;
+  box-shadow: inset 0 1px 1px #fff0e580, inset 0 -2px 2px #00000030, 0 2px 5px #00000025;
+}
+:is(#chat-send) svg { fill: currentColor; }
+
+.start-btn { min-height: 44px; }
+.start-btn:hover { letter-spacing: clamp(3px, .7vw, 6px); }
+#continue-btn { border-radius: 6px; }
+.tab-btn { border-radius: 8px; }
+.lang-btn, .lang-combo-selected, .contact-link, .back-btn { border-radius: 7px; }
+#landing-settings-btn { box-shadow: inset 0 0 0 1px #745366, inset 0 2px 0 #ffffff12, 0 2px 4px #00000020; }
+@media (pointer: coarse) {
+  .lang-btn, .lang-combo-selected, .contact-link, .back-btn, .archerlab-link { min-height: 44px; box-sizing: border-box; }
+  #landing-settings-btn { min-width: 44px; }
+  #gallery-btn, #home-btn, #settings-btn, #chat-send, #upload-image-btn, #action-toggle-btn, .gft-close-btn { min-width: 44px; min-height: 44px; }
+}
+.choice-btn {
+  border-color: #b78096;
+  background: linear-gradient(110deg, #503548ee, #302335f5 70%, #463142ee);
+  box-shadow: inset 0 1px 0 #f4cddc33, inset 3px 0 0 #cd8ba3, 0 3px 9px #00000026;
+  color: #fff2f6;
+  border-radius: 7px;
+}
+.choice-btn:focus-visible { outline: 2px solid #ffcbdf; outline-offset: 3px; }
+.choice-btn:active { box-shadow: inset 0 2px 6px #00000050, inset 3px 0 0 #edbad0; }
+@media (hover: hover) and (pointer: fine) {
+  .choice-btn:hover { background: linear-gradient(110deg, #6c4257f5, #453047f5); border-color: #edbad0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .choice-btn { animation-duration: .01ms; transition: none; }
+}
