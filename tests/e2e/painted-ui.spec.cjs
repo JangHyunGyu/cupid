@@ -132,6 +132,12 @@ for (const [width, height] of [[320,568], [568,320], [768,1024]]) {
     await save.click();
     await expect(page.locator('#settingsModal')).toBeHidden();
 
+    await page.goto('/game.html');
+    await page.waitForFunction(() => window.gameScriptsLoaded === true);
+    await page.locator('#settings-btn').click();
+    await expectReachablePaintedButton(page.locator('#settingsModal button'), page);
+    await expectPaintedControls(page);
+
     await page.goto('/gallery.html');
     const card = page.locator('.character-card.not-met').first();
     await card.click();

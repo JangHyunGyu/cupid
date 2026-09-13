@@ -125,7 +125,7 @@ body :is(button, input[type='button'], input[type='submit'], input[type='reset']
 .modal-container { max-height: 100%; overflow-y: auto; box-sizing: border-box; }
 #settingsModal .modal-container { display: flex; flex-direction: column; overflow: hidden; }
 #settingsModal .modal-title { flex-shrink: 0; }
-#settingsModal .contact-options { min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+#settingsModal :is(.contact-options, .settings-options) { min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
 #settingsModal .modal-container > button { flex-shrink: 0; align-self: center; }
 .unlock-popup-overlay {
   padding: max(12px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) max(12px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));

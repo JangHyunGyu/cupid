@@ -12,7 +12,7 @@
  * ============================================================================
  */
 
-const CACHE_VERSION = 'cupid-v3.3.157';
+const CACHE_VERSION = 'cupid-v3.3.158';
 const STATIC_CACHE = CACHE_VERSION + '-static';
 const MEDIA_CACHE = CACHE_VERSION + '-media';
 
