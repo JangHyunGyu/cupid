@@ -1,9 +1,30 @@
-/* Painted borders above translucent surfaces keep the cast visible. */
+/* Shared image skin for native, custom and dynamically created controls. */
 :root {
   --button-frame: url('../images/ui/petal-frame.webp');
   --button-ink: #fff7f5;
   --button-edge: #f5c4d252;
   --button-surface: linear-gradient(110deg, #35212d66, #38273740);
+}
+/* Nine-slice painting preserves the corners on icons, tabs and wide choices.
+   Keep this independent of background/::after: legacy inline surfaces, icons
+   and language arrows must not hide the frame or replace each other. */
+body :is(button, input[type='button'], input[type='submit'], input[type='reset'], [role='button'], .start-btn, .contact-link, .contact-option, .archerlab-link, .back-btn, .lang-combo-selected, .lang-combo-option) {
+  border-style: solid !important;
+  border-width: 1px !important;
+  border-image-source: var(--button-frame) !important;
+  border-image-slice: 64 112 !important;
+  border-image-width: 10px 16px !important;
+  border-image-repeat: stretch !important;
+  border-image-outset: 0 !important;
+  min-width: 44px;
+  min-height: 44px;
+  box-sizing: border-box;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+body :is(button, input[type='button'], input[type='submit'], input[type='reset'], [role='button'], .contact-link, .contact-option, .archerlab-link, .back-btn, .lang-combo-selected, .lang-combo-option):focus-visible {
+  outline: 2px solid #ffe0ec;
+  outline-offset: 3px;
 }
 :is(.start-btn, .modal-btn, .cu-btn-accent, .cu-btn-soft, #name-confirm-btn, .freetalk-btn, .contact-link, .lang-btn, .lang-combo-selected, .archerlab-link, .tab-btn, .back-btn, #chat-skip-btn, #upload-image-btn, #action-toggle-btn, #gallery-btn, #home-btn, #settings-btn, .gft-close-btn, #chat-send, .choice-btn) {
   -webkit-tap-highlight-color: transparent;
@@ -24,16 +45,7 @@
   background: linear-gradient(110deg, #a64d6a80, #66384c59);
   font-weight: 600;
 }
-:is(.start-btn, .modal-btn.confirm, .cu-btn-accent, #name-confirm-btn, .freetalk-btn:not(.locked))::after {
-  content: '';
-  position: absolute;
-  inset: -1px;
-  background: var(--button-frame) center / 100% 100% no-repeat;
-  pointer-events: none;
-  opacity: .85;
-}
 #continue-btn { background: var(--button-surface); font-weight: 500; }
-#continue-btn::after { opacity: .45; }
 .start-btn {
   width: clamp(148px, 17vw, 184px);
   max-width: 100%;
@@ -111,6 +123,23 @@
 .lang-combo-dropdown { max-height: calc(100dvh - 76px - env(safe-area-inset-bottom)); overflow-y: auto; }
 .modal-overlay { padding: max(12px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) max(12px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left)); box-sizing: border-box; }
 .modal-container { max-height: 100%; overflow-y: auto; box-sizing: border-box; }
+#settingsModal .modal-container { display: flex; flex-direction: column; overflow: hidden; }
+#settingsModal .modal-title { flex-shrink: 0; }
+#settingsModal .contact-options { min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+#settingsModal .modal-container > button { flex-shrink: 0; align-self: center; }
+.unlock-popup-overlay {
+  padding: max(12px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) max(12px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
+  box-sizing: border-box;
+}
+.unlock-popup-content { display: flex; flex-direction: column; max-height: 100%; overflow: hidden; box-sizing: border-box; }
+.unlock-popup-message { min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+.unlock-popup-icon, .unlock-popup-title, .unlock-popup-btn { flex-shrink: 0; }
+.unlock-popup-btn { align-self: center; }
+@media (max-height: 560px) {
+  .unlock-popup-content { padding: 16px 20px; }
+  .unlock-popup-icon { font-size: 2rem; margin-bottom: 8px; }
+  .unlock-popup-title { margin: 0 0 8px; }
+}
 @media (orientation: portrait) {
   #landing-container {
     display: grid;

@@ -24,7 +24,7 @@ async function audit(page) {
       menu:rect(menu),
       controls:[...document.querySelectorAll(controlSelector)].map(el=>({
         text:el.textContent.trim(),...rect(el),scrollWidth:el.scrollWidth,clientWidth:el.clientWidth,
-        scrollHeight:el.scrollHeight,clientHeight:el.clientHeight,blur:getComputedStyle(el).backdropFilter
+        scrollHeight:el.scrollHeight,clientHeight:el.clientHeight,blur:getComputedStyle(el).backdropFilter,frame:getComputedStyle(el).borderImageSource
       })),
       buttons:[...menu.querySelectorAll('button')].map(rect)
     };
@@ -40,6 +40,7 @@ async function audit(page) {
     expect(b.scrollWidth,b.text).toBeLessThanOrEqual(b.clientWidth+1);
     expect(b.scrollHeight,b.text).toBeLessThanOrEqual(b.clientHeight+1);
     expect(b.blur,b.text).toBe('none');
+    expect(b.frame,b.text).toContain('petal-frame.webp');
   }
   for(const b of metrics.buttons) {
     expect(b.height).toBeLessThanOrEqual(56);
@@ -84,7 +85,7 @@ test('dynamic browser height and safe areas keep controls reachable',async({page
 });
 test('painted frame loads and keyboard activation reaches a real control',async({page})=>{
   await boot(page,'ko');
-  const frame=await page.locator('#start-btn').evaluate(el=>getComputedStyle(el,'::after').backgroundImage);
+  const frame=await page.locator('#start-btn').evaluate(el=>getComputedStyle(el).borderImageSource);
   expect(frame).toContain('petal-frame.webp');
   const frameResponse=await page.request.get('/assets/images/ui/petal-frame.webp');
   expect(frameResponse.ok()).toBe(true);
@@ -94,3 +95,55 @@ test('painted frame loads and keyboard activation reaches a real control',async(
   await button.press('Enter');
   await expect(page.locator('#settingsModal')).toBeVisible();
 });
+
+// Audit native and custom controls, including hidden dialogs whose buttons are
+// revealed later. Dynamic dialog controls are checked again after UI activation.
+async function expectPaintedControls(page) {
+  const missing = await page.locator('button, input[type="button"], input[type="submit"], input[type="reset"], [role="button"]').evaluateAll((controls, asset) =>
+    controls.filter(el => !getComputedStyle(el).borderImageSource.includes(asset))
+      .map(el => el.id || el.className || el.textContent.trim()), 'petal-frame.webp');
+  expect(missing).toEqual([]);
+}
+async function expectReachablePaintedButton(button, page) {
+  await expect(button).toBeVisible();
+  await button.scrollIntoViewIfNeeded();
+  await expect(button).toHaveCSS('border-image-source', /petal-frame\.webp/);
+  const box = await button.boundingBox();
+  const viewport = page.viewportSize();
+  expect(box.width).toBeGreaterThanOrEqual(44);
+  expect(box.height).toBeGreaterThanOrEqual(44);
+  expect(box.x).toBeGreaterThanOrEqual(-1);
+  expect(box.y).toBeGreaterThanOrEqual(-1);
+  expect(box.x + box.width).toBeLessThanOrEqual(viewport.width + 1);
+  expect(box.y + box.height).toBeLessThanOrEqual(viewport.height + 1);
+}
+
+for (const [width, height] of [[320,568], [568,320], [768,1024]]) {
+  test(`game and popup buttons retain their frame at ${width}x${height}`, async ({ page }) => {
+    await page.setViewportSize({width, height});
+    await boot(page, 'ko');
+    await expectPaintedControls(page);
+    await page.locator('#start-btn').click();
+    await expect(page.locator('#settings-btn')).toBeVisible();
+    await expectPaintedControls(page);
+    await page.locator('#settings-btn').click();
+    const save = page.locator('#settingsModal button');
+    await expectReachablePaintedButton(save, page);
+    await save.click();
+    await expect(page.locator('#settingsModal')).toBeHidden();
+
+    await page.goto('/gallery.html');
+    const card = page.locator('.character-card.not-met').first();
+    await card.click();
+    await expectPaintedControls(page);
+    const confirm = page.locator('#unlock-popup-ok-btn');
+    await expectReachablePaintedButton(confirm, page);
+    await confirm.focus();
+    await confirm.press('Enter');
+    await expect(confirm).toHaveCount(0);
+    await page.locator('.tab-btn[data-tab="music"]').click();
+    await page.locator('.music-item.locked').first().click();
+    await expectReachablePaintedButton(page.locator('#unlock-popup-ok-btn'), page);
+    await expectPaintedControls(page);
+  });
+}
