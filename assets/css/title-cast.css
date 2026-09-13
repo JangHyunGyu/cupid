@@ -52,7 +52,9 @@
 /* Lift the cast into the scene on tall phones without enlarging their faces. */
 @media (orientation: portrait) and (max-aspect-ratio: 3 / 5) {
   #landing-container .title-heroines .title-heroine {
-    bottom: clamp(0px, calc(50dvh - 80vw), 160px);
+    --cast-lift: clamp(0px, calc(50dvh - 80vw), 160px);
+    bottom: var(--cast-lift);
+    height: min(calc(100% - var(--cast-lift)), 108vw, 980px);
     filter: none;
     -webkit-mask-image: linear-gradient(#000 86%, transparent);
     mask-image: linear-gradient(#000 86%, transparent);

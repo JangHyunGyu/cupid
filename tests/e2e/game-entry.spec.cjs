@@ -141,13 +141,14 @@ test.describe('portrait landing artwork and controls', () => {
         { width: 390, height: 844 },
         { width: 430, height: 932 }
     ]) {
-        test(`${viewport.width}px phone keeps large characters and aligned buttons in every language`, async ({ page }) => {
+        test(`${viewport.width}px phone keeps three distinct characters and aligned buttons in every language`, async ({ page }) => {
             await page.setViewportSize(viewport);
             for (const pageName of localizedLandingPages) {
                 const lang = pageName === 'index.html' ? 'ko' : pageName.slice(6, 8);
                 await page.goto(`/${pageName}?lang=${lang}`, { waitUntil: 'domcontentloaded' });
                 await expect(page.locator('#start-btn')).toBeEnabled();
-                await page.locator('.title-heroine.pos-3').evaluate(image => image.decode());
+                await Promise.all(['pos-1', 'pos-3', 'pos-5'].map(position =>
+                    page.locator(`.title-heroine.${position}`).evaluate(image => image.decode())));
                 await page.evaluate(() => document.fonts.ready);
                 const layout = await page.evaluate(() => {
                     const image = document.querySelector('.title-heroine.pos-3');
@@ -156,7 +157,25 @@ test.describe('portrait landing artwork and controls', () => {
                     const footerStyle = getComputedStyle(footer);
                     const start = document.querySelector('#start-btn').getBoundingClientRect();
                     const resume = document.querySelector('#continue-btn').getBoundingClientRect();
+                    // Upper portrait bounds measured from the existing artwork,
+                    // independent of the CSS positions and scale breakpoints.
+                    const headBounds = {
+                        'pos-1': [413 / 1152, 848 / 1152],
+                        'pos-3': [305 / 1086, 766 / 1086],
+                        'pos-5': [273 / 1152, 815 / 1152]
+                    };
+                    const portraits = [...document.querySelectorAll('.title-heroine')]
+                        .filter(element => getComputedStyle(element).display !== 'none')
+                        .map(element => {
+                            const id = [...element.classList].find(name => name.startsWith('pos-'));
+                            const rect = element.getBoundingClientRect();
+                            const bounds = headBounds[id] || [0, 1];
+                            return { id, left: rect.left + rect.width * bounds[0],
+                                right: rect.left + rect.width * bounds[1],
+                                top: rect.top, bottom: rect.top + rect.height * .28 };
+                        });
                     return {
+                        portraits,
                         scrollWidth: document.documentElement.scrollWidth,
                         viewportWidth: innerWidth,
                         viewportHeight: innerHeight,
@@ -188,8 +207,21 @@ test.describe('portrait landing artwork and controls', () => {
                     };
                 });
                 expect(layout.scrollWidth, pageName).toBeLessThanOrEqual(layout.viewportWidth);
-                const availableArtworkHeight = Math.min(viewport.height * 0.65, viewport.height - layout.resumeBottom);
-                expect(layout.paintedHeight, pageName).toBeGreaterThanOrEqual(availableArtworkHeight - 1);
+                expect(layout.portraits.map(portrait => portrait.id), pageName).toEqual(['pos-1', 'pos-3', 'pos-5']);
+                for (const [index, portrait] of layout.portraits.entries()) {
+                    expect(portrait.right - portrait.left, pageName).toBeGreaterThanOrEqual(64);
+                    expect(portrait.left, pageName).toBeGreaterThanOrEqual(-1);
+                    expect(portrait.right, pageName).toBeLessThanOrEqual(viewport.width + 1);
+                    expect(portrait.top, pageName).toBeGreaterThanOrEqual(layout.resumeBottom - 1);
+                    for (const other of layout.portraits.slice(index + 1)) {
+                        const overlap = portrait.left < other.right && portrait.right > other.left &&
+                            portrait.top < other.bottom && portrait.bottom > other.top;
+                        expect(overlap, `${pageName}: ${portrait.id} overlaps ${other.id}`).toBe(false);
+                    }
+                }
+                const centerPortrait = layout.portraits[1];
+                expect(Math.abs((centerPortrait.left + centerPortrait.right) / 2 - viewport.width / 2), pageName)
+                    .toBeLessThan(viewport.width * .035);
                 expect(layout.imageHeight - layout.paintedHeight, pageName).toBeLessThan(1);
                 expect(layout.imageTop, pageName).toBeGreaterThanOrEqual(layout.resumeBottom - 1);
                 expect(layout.resumeBottom, pageName).toBeLessThan(layout.footerTop);
