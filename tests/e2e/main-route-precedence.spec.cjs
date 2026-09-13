@@ -74,7 +74,7 @@ for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
             };
         });
         expect(accepted.scene).toBe('wall_seo_yuna_tempt_accept');
-        expect(accepted.affinities).toEqual({ Seoyeon: 61, Yuna: 26, Dain: -5, Teacher: 0, Nurse: 16 });
+        expect(accepted.affinities).toEqual({ Seoyeon: 61, Yuna: 4, Dain: -5, Teacher: 0, Nurse: 16 });
         expect(accepted.nurseTarget).toBe(false);
         expect(accepted.nurseVisit).toBe(true);
         const confrontation = await page.evaluate(async () => {

@@ -47,7 +47,7 @@ for (const [lang, character, lead, offer, startAffinity] of [
             await e.renderScene(cg.next);
             return result;
         }, { character, lead, offer, startAffinity });
-        expect(accepted.affinity).toBe(Math.min(100, startAffinity + 30));
+        expect(accepted.affinity).toBe(Math.min(100, startAffinity + 8));
         expect(accepted.background).toContain(`event_temptation_${character.toLowerCase()}`);
         const sceneId = `day4_temptation_${character.toLowerCase()}_freetalk`;
         let expectedAffinity = accepted.affinity;
