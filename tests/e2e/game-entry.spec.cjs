@@ -133,34 +133,106 @@ test('cinematic overlays only enter the accessibility tree while active', async 
     await expect(creditsLayer).toHaveAttribute('aria-hidden', 'true');
 });
 
-test('mobile landing keeps its primary actions and footer inside the viewport', async ({ page }) => {
-    await page.setViewportSize({ width: 390, height: 844 });
-    await page.goto('/index.html');
+test.describe('portrait landing artwork and controls', () => {
+    test.use({ isMobile: true, hasTouch: true });
 
-    const layout = await page.evaluate(() => {
-        const footer = document.querySelector('.footer');
-        const landing = document.querySelector('#landing-container');
-        const continueButton = document.querySelector('#continue-btn');
-        const footerRect = footer.getBoundingClientRect();
-        const continueRect = continueButton.getBoundingClientRect();
-        const footerStyle = getComputedStyle(footer);
-        return {
-            viewportWidth: window.innerWidth,
-            viewportHeight: window.innerHeight,
+    for (const viewport of [
+        { width: 320, height: 568 },
+        { width: 390, height: 844 },
+        { width: 430, height: 932 }
+    ]) {
+        test(`${viewport.width}px phone keeps large characters and aligned buttons in every language`, async ({ page }) => {
+            await page.setViewportSize(viewport);
+            for (const pageName of localizedLandingPages) {
+                const lang = pageName === 'index.html' ? 'ko' : pageName.slice(6, 8);
+                await page.goto(`/${pageName}?lang=${lang}`, { waitUntil: 'domcontentloaded' });
+                await expect(page.locator('#start-btn')).toBeEnabled();
+                await page.locator('.title-heroine.pos-3').evaluate(image => image.decode());
+                await page.evaluate(() => document.fonts.ready);
+                const layout = await page.evaluate(() => {
+                    const image = document.querySelector('.title-heroine.pos-3');
+                    const imageRect = image.getBoundingClientRect();
+                    const footer = document.querySelector('.footer');
+                    const footerStyle = getComputedStyle(footer);
+                    const start = document.querySelector('#start-btn').getBoundingClientRect();
+                    const resume = document.querySelector('#continue-btn').getBoundingClientRect();
+                    return {
+                        scrollWidth: document.documentElement.scrollWidth,
+                        viewportWidth: innerWidth,
+                        viewportHeight: innerHeight,
+                        // object-fit: contain can shrink the artwork inside a much taller element.
+                        paintedHeight: Math.min(imageRect.height, imageRect.width * image.naturalHeight / image.naturalWidth),
+                        imageHeight: imageRect.height,
+                        imageTop: imageRect.top,
+                        footerTop: footer.getBoundingClientRect().top,
+                        footerBottom: footer.getBoundingClientRect().bottom,
+                        footerBackground: footerStyle.backgroundImage,
+                        footerBlur: footerStyle.backdropFilter,
+                        resumeBottom: resume.bottom,
+                        startWidth: start.width,
+                        resumeWidth: resume.width,
+                        startHeight: start.height,
+                        resumeHeight: resume.height,
+                        buttons: [...document.querySelectorAll('.start-btn, .footer .contact-link, .lang-switch .lang-btn, .lang-combo-selected, .archerlab-link')].map(element => {
+                            const rect = element.getBoundingClientRect();
+                            return { left: rect.left, right: rect.right, top: rect.top, bottom: rect.bottom, height: rect.height };
+                        }),
+                        footerLabels: [...document.querySelectorAll('.footer .contact-link')].map(element => {
+                            const rect = element.getBoundingClientRect();
+                            const range = document.createRange();
+                            range.selectNodeContents(element);
+                            const text = range.getBoundingClientRect();
+                            return { width: rect.width, centerOffset: Math.abs((rect.top + rect.bottom - text.top - text.bottom) / 2) };
+                        }),
+                        headerGap: document.querySelector('#landing-settings-btn').getBoundingClientRect().left - document.querySelector('.archerlab-link').getBoundingClientRect().right
+                    };
+                });
+                expect(layout.scrollWidth, pageName).toBeLessThanOrEqual(layout.viewportWidth);
+                const availableArtworkHeight = Math.min(viewport.height * 0.65, viewport.height - layout.resumeBottom);
+                expect(layout.paintedHeight, pageName).toBeGreaterThanOrEqual(availableArtworkHeight - 1);
+                expect(layout.imageHeight - layout.paintedHeight, pageName).toBeLessThan(1);
+                expect(layout.imageTop, pageName).toBeGreaterThanOrEqual(layout.resumeBottom - 1);
+                expect(layout.resumeBottom, pageName).toBeLessThan(layout.footerTop);
+                expect(layout.footerBottom, pageName).toBeLessThanOrEqual(layout.viewportHeight);
+                expect(layout.footerBackground, pageName).toBe('none');
+                expect(layout.footerBlur, pageName).toBe('none');
+                expect(Math.abs(layout.startWidth - layout.resumeWidth), pageName).toBeLessThan(1);
+                expect(Math.abs(layout.startHeight - layout.resumeHeight), pageName).toBeLessThan(1);
+                expect(layout.headerGap, pageName).toBeGreaterThanOrEqual(4);
+                for (const button of layout.buttons) {
+                    expect(button.left, pageName).toBeGreaterThanOrEqual(0);
+                    expect(button.right, pageName).toBeLessThanOrEqual(viewport.width + 1);
+                    expect(button.top, pageName).toBeGreaterThanOrEqual(0);
+                    expect(button.bottom, pageName).toBeLessThanOrEqual(viewport.height + 1);
+                    expect(button.height, pageName).toBeGreaterThanOrEqual(44);
+                }
+                for (const label of layout.footerLabels) {
+                    expect(Math.abs(label.width - layout.footerLabels[0].width), pageName).toBeLessThan(1);
+                    expect(label.centerOffset, pageName).toBeLessThan(3);
+                }
+            }
+        });
+    }
+
+    test('shorter dynamic viewport and reduced motion keep controls reachable', async ({ page }) => {
+        await page.setViewportSize({ width: 390, height: 844 });
+        await page.emulateMedia({ reducedMotion: 'reduce' });
+        await page.goto('/index.html?lang=ko', { waitUntil: 'domcontentloaded' });
+        await expect(page.locator('#start-btn')).toBeEnabled();
+        await page.setViewportSize({ width: 390, height: 540 });
+        await expect.poll(async () => (await page.locator('#landing-container').boundingBox()).height).toBe(540);
+        const layout = await page.evaluate(() => ({
+            footerBottom: document.querySelector('.footer').getBoundingClientRect().bottom,
+            footerTop: document.querySelector('.footer').getBoundingClientRect().top,
+            resumeBottom: document.querySelector('#continue-btn').getBoundingClientRect().bottom,
+            viewportHeight: innerHeight,
             scrollWidth: document.documentElement.scrollWidth,
-            footerTop: footerRect.top,
-            footerBottom: footerRect.bottom,
-            continueBottom: continueRect.bottom,
-            footerBackground: footerStyle.backgroundImage,
-            landingBackground: getComputedStyle(landing).backgroundImage
-        };
+            viewportWidth: innerWidth
+        }));
+        expect(layout.footerBottom).toBeLessThanOrEqual(layout.viewportHeight);
+        expect(layout.resumeBottom).toBeLessThan(layout.footerTop);
+        expect(layout.scrollWidth).toBeLessThanOrEqual(layout.viewportWidth);
     });
-
-    expect(layout.scrollWidth).toBeLessThanOrEqual(layout.viewportWidth);
-    expect(layout.continueBottom).toBeLessThan(layout.footerTop);
-    expect(layout.footerBottom).toBeLessThanOrEqual(layout.viewportHeight);
-    expect(layout.footerBackground).not.toBe('none');
-    expect(layout.landingBackground).toContain('title_portrait.webp');
 });
 
 test('landing modals expose dialog semantics and keep keyboard focus contained', async ({ page }) => {
