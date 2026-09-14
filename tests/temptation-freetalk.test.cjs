@@ -141,15 +141,23 @@ test('every interlude preserves its CG and localized character voice with a sepa
             assert.ok(!runtime.window.buildCupidTemptationRomanceGuidance(lang).includes('비노골'));
             assert.ok(!runtime.window.buildCupidTemptationRomanceGuidance(lang).includes('non-graphic'));
             assert.ok(!runtime.window.buildCupidTemptationRomanceGuidance(lang).includes('성행위가 시작됐다고 단정하지는'));
+            assert.ok(!runtime.window.buildCupidTemptationRomanceGuidance(lang).includes('성적 스킨십에 매우 적극'));
+            assert.ok(!runtime.window.buildCupidTemptationRomanceGuidance(lang).includes('highly proactive about sexual skinship'));
+            assert.ok(!runtime.window.buildCupidTemptationRomanceGuidance(lang).includes("guide the user's hand onto their body"));
             assert.ok(runtime.window.buildCupidTemptationRomanceGuidance(lang).includes({
-                ko: '성적 스킨십에 매우 적극',
-                en: 'highly proactive about sexual skinship',
-                es: 'muy activo en el contacto sexual',
-                ja: '性的なスキンシップにとても積極的',
-                fr: 'très actif dans le contact sexuel',
-                de: 'sexuell sehr initiativ',
-                pt: 'muito ativa no contato sexual'
+                ko: '방식은 캐릭터 고유의 말투와 취향을 따릅니다',
+                en: 'follows this character’s own voice and tastes',
+                es: 'El modo sigue su voz y sus gustos',
+                ja: 'やり方は人物固有の口調と好みに従い',
+                fr: 'La manière suit sa voix et ses goûts',
+                de: 'Die Art folgt ihrer Stimme und ihren Vorlieben',
+                pt: 'O jeito segue a voz e os gostos dela'
             }[lang]));
+            assert.ok(copy[id].personality.includes({
+                Seoyeon: { ko: '차분한 말투', en: 'calm voice over the hand', ja: '落ち着いた口調', es: 'voz serena', fr: 'voix calme', de: 'ruhige Stimme', pt: 'voz calma' },
+                Yuna: { ko: '말은 짧게', en: 'lines short', ja: '言葉は短く', es: 'Habla poco', fr: 'Parle peu', de: 'Sätze kurz', pt: 'Fale pouco' },
+                Dain: { ko: '유니폼 안으로', en: 'inside the jersey', ja: 'ユニフォームの中', es: 'en el uniforme', fr: 'dans le maillot', de: 'ins Trikot', pt: 'na camisa' }
+            }[character][lang]));
             assert.ok(stable.includes(runtime.window.buildCupidThirdPersonAdultCameraRule(lang)));
         }
     }
