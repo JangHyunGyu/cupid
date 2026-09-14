@@ -79,7 +79,10 @@ test('group participants each use their latest affinity without sharing anger or
             stateManager: { playerName: 'Player', getFlag: () => false, getAffinity: id => id === 'Seoyeon' ? score : 80 },
             groupParticipants: [{ id: 'Seoyeon', name: 'Seoyeon', role: 'lead' }, { id: 'Yuna', name: 'Yuna', role: 'tempter' }],
             getGameContext: () => '', _getGroupChoiceState: prototype._getGroupChoiceState,
-            _getLocalizedGroupLocation: prototype._getLocalizedGroupLocation
+            _getLocalizedGroupLocation: prototype._getLocalizedGroupLocation,
+            charNameMap: {},
+            _buildTemptationNightMemoryBlock: prototype._buildTemptationNightMemoryBlock,
+            _getTemptationPrecedingHistory: prototype._getTemptationPrecedingHistory
         };
         const build = () => prototype._buildCurrentGroupSystemPrompt.call(context, { groupParticipants: type }, lang);
         const before = build();

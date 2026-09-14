@@ -1148,21 +1148,24 @@
     },
     "day4_temptation_seoyeon_freetalk": {
         "name": "Seoyeon",
-        "text": "Ich freue mich, dass du gekommen bist. Heute Abend möchte ich mehr von dir hören. Setzt du dich neben mich?",
-        "context": "Am vierten Abend hat der Protagonist Seoyeons Einladung angenommen. Die beiden sind allein auf dem Dach. Ihre Worte und Handlungen können die Zuneigung jetzt vertiefen oder verletzen.",
-        "personality": "Bewahre ihre ruhige Stimme, zeige Zuneigung offen und frage direkt nach dem, was sie am Protagonisten interessiert."
+        "text": "*Sie lässt die Hand nicht los, die sie an ihre Brust gelegt hat.* Bleib so. Zieh sie nicht weg.",
+        "precedingHistory": "*Die Dachluke fällt zu. Seoyeon öffnet lautlos die Bluse, nimmt mein Handgelenk und zieht es zu sich. In dem Moment, in dem die Handfläche durch den offenen Kragen ihre nackte Brust berührt, legt sie ihre Hand darüber.*",
+        "context": "Am vierten Abend hat der Protagonist Seoyeons Einladung angenommen. Die beiden sind allein auf dem Dach. Gerade hat Seoyeon das Handgelenk des Protagonisten genommen, die Hand auf ihre nackte Brust gelegt und sie mit der eigenen bedeckt. Diese Hand liegt noch dort. Ihre Worte und Handlungen können die Zuneigung jetzt vertiefen oder verletzen.",
+        "personality": "Bewahre ihre ruhige Stimme, zeige Zuneigung offen und fahre aus der Haltung fort, in der sie gerade die Hand auf ihre Brust gelegt hat. Leugne diesen Kontakt nicht."
     },
     "day4_temptation_yuna_freetalk": {
         "name": "Yuna",
-        "text": "Setz dich hierher. Ich bin… froh, dass du da bist. Bleib noch etwas bei mir.",
-        "context": "Am vierten Abend hat der Protagonist Yunas Einladung angenommen. Die beiden sind allein im Leseraum des Nebengebäudes. Ihre Worte und Handlungen können die Zuneigung jetzt vertiefen oder verletzen.",
-        "personality": "Vermittle Zuneigung mit kurzen Sätzen und natürlichen Pausen und zeige Interesse an der Person neben ihr."
+        "text": "*Sie lässt den Kragen dort, wo sie ihn heruntergezogen hat.* Wenn du gehst… wird es wieder wie an jenem Tag.",
+        "precedingHistory": "*Yuna tritt ganz nah und stützt eine Hand am Regal ab. Die Jacke rutscht von einer Schulter, und sie zieht den inneren Kragen herunter. Zwischen bloßer Schulter und Tattoo bleiben ihre roten Augen auf meiner Höhe.*",
+        "context": "Am vierten Abend hat der Protagonist Yunas Einladung angenommen. Die beiden sind allein im Leseraum des Nebengebäudes. Gerade hat Yuna eine Hand ans Regal gelegt, die Jacke rutschen lassen und den Kragen heruntergezogen; sie steht ganz nah, mit bloßer Schulter und entblößter Brust. Dieser Abstand ist unverändert. Ihre Worte und Handlungen können die Zuneigung jetzt vertiefen oder verletzen.",
+        "personality": "Vermittle Zuneigung mit kurzen Sätzen und natürlichen Pausen und fahre aus der Nähe fort, den Kragen noch heruntergezogen. Leugne diesen Kontakt nicht."
     },
     "day4_temptation_dain_freetalk": {
         "name": "Dain",
-        "text": "Man merkt mir an, wie sehr ich mich freue, oder? Ich will es auch gar nicht verstecken. Komm, setz dich zu mir.",
-        "context": "Am vierten Abend hat der Protagonist Dains Einladung angenommen. Die beiden sind allein in der Turnhalle. Ihre Worte und Handlungen können die Zuneigung jetzt vertiefen oder verletzen.",
-        "personality": "Beginne das Gespräch mit Dains spielerischer Ehrlichkeit und lass ihre Freude natürlich sichtbar werden."
+        "text": "*Sie hält das Trikot nach unten gezogen und bleibt so nah.* Bekommst du keine Luft? Bleib so eine Sekunde.",
+        "precedingHistory": "*Der letzte Ball rollt über den Boden. Dain holt Luft, greift in die Vorderseite ihres Trikots und zieht es nach unten. Sie beugt sich so nah, dass ihr warmer Atem mir ins Gesicht trifft.*",
+        "context": "Am vierten Abend hat der Protagonist Dains Einladung angenommen. Die beiden sind allein in der Turnhalle. Gerade hat Dain die Vorderseite ihres Trikots nach unten gezogen und sich ganz nah gebeugt. Dieser Abstand ist unverändert. Ihre Worte und Handlungen können die Zuneigung jetzt vertiefen oder verletzen.",
+        "personality": "Beginne das Gespräch mit Dains spielerischer Ehrlichkeit und fahre aus der nahen Beugung fort, das Trikot nach unten gezogen. Leugne diesen Kontakt nicht."
     },
     "day4_temptation_return_home": {
         "name": "{name}",

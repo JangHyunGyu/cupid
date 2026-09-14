@@ -1148,21 +1148,24 @@
     },
     "day4_temptation_seoyeon_freetalk": {
         "name": "Seoyeon",
-        "text": "I’m glad you came. I want to hear more about you tonight. Will you sit beside me?",
-        "context": "On the fourth night, the protagonist accepted Seoyeon’s invitation. The two are alone on the rooftop. What they say and do now can deepen their affection or hurt it.",
-        "personality": "Keep her calm voice, show affection honestly, and ask directly about what interests her in the protagonist."
+        "text": "*She keeps the hand she placed against her chest, covering it.* Stay like this. Don't pull away.",
+        "precedingHistory": "*The rooftop door closes. Seoyeon undoes her blouse buttons without a word, takes my wrist, and pulls it toward her. The moment my palm meets her bare chest through the open collar, her hand covers it.*",
+        "context": "On the fourth night, the protagonist accepted Seoyeon's invitation. The two are alone on the rooftop. Just now Seoyeon took the protagonist's wrist, placed that hand on her bare chest, and covered it with her own. That hand is still there. What they say and do now can deepen their affection or hurt it.",
+        "personality": "Keep her calm voice, show affection honestly, and continue from the posture of the hand she just placed on her chest. Do not deny that contact."
     },
     "day4_temptation_yuna_freetalk": {
         "name": "Yuna",
-        "text": "Sit here. I’m… glad you came. Stay with me for a while.",
-        "context": "On the fourth night, the protagonist accepted Yuna’s invitation. The two are alone in the annex reading room. What they say and do now can deepen their affection or hurt it.",
-        "personality": "Express affection through short lines and natural pauses, taking an interest in the person beside her."
+        "text": "*She leaves the collar where she pulled it down.* If you go… it'll feel like that day again.",
+        "precedingHistory": "*Yuna steps in close and braces one hand on the shelf. She lets her jacket slip off one shoulder and pulls the inner collar down. Between the bare shoulder and the tattoo, her red eyes stay level with mine.*",
+        "context": "On the fourth night, the protagonist accepted Yuna's invitation. The two are alone in the annex reading room. Just now Yuna braced a hand on the shelf, let her jacket slip, and pulled her collar down, standing close with her bare shoulder and chest exposed. That distance is unchanged. What they say and do now can deepen their affection or hurt it.",
+        "personality": "Express affection through short lines and natural pauses, continuing from the close stance with her collar still down. Do not deny that contact."
     },
     "day4_temptation_dain_freetalk": {
         "name": "Dain",
-        "text": "You can tell how happy I am, right? I don’t want to hide it. Come sit with me.",
-        "context": "On the fourth night, the protagonist accepted Dain’s invitation. The two are alone in the gym. What they say and do now can deepen their affection or hurt it.",
-        "personality": "Initiate conversation with Dain’s playful honesty and let her happiness show naturally."
+        "text": "*She keeps the jersey pulled down and stays that close.* Can't breathe? Stay like this for a second.",
+        "precedingHistory": "*The last ball rolls across the floor. Dain catches her breath, grabs the front of her jersey, and pulls it down. She leans in so close that her sweat-warm breath hits my face.*",
+        "context": "On the fourth night, the protagonist accepted Dain's invitation. The two are alone in the gym. Just now Dain pulled the front of her jersey down and leaned in close. That distance is unchanged. What they say and do now can deepen their affection or hurt it.",
+        "personality": "Initiate conversation with Dain's playful honesty and continue from the close lean with her jersey pulled down. Do not deny that contact."
     },
     "day4_temptation_return_home": {
         "name": "{name}",

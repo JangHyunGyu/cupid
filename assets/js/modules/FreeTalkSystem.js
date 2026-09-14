@@ -371,6 +371,75 @@ class FreeTalkSystem {
         if (completed) this.stateManager.setFlag(`messaged_${this.currentSceneId}`);
     }
 
+    _getTemptationPrecedingHistory(charKey) {
+        const sceneId = {
+            Seoyeon: 'day4_temptation_seoyeon_freetalk',
+            Yuna: 'day4_temptation_yuna_freetalk',
+            Dain: 'day4_temptation_dain_freetalk'
+        }[charKey];
+        if (!sceneId) return '';
+        return String(window.I18N_DATA?.[sceneId]?.precedingHistory || '').trim();
+    }
+
+    _withTemptationSceneHistory(history, scene) {
+        const seed = String(scene?.precedingHistory || '').trim();
+        if (!seed || scene?.romanticInterlude !== true) {
+            return Array.isArray(history) ? history.slice() : [];
+        }
+        const list = (Array.isArray(history) ? history : []).filter(message => message?.role !== 'system');
+        if (list.some(message => message?.content === seed)) return list;
+        const seedMessage = { role: 'user', content: seed };
+        const openingIndex = scene.text
+            ? list.findIndex(message => message.role === 'assistant' && message.content === scene.text)
+            : -1;
+        if (openingIndex >= 0) {
+            return [...list.slice(0, openingIndex), seedMessage, ...list.slice(openingIndex)];
+        }
+        return [seedMessage, ...list];
+    }
+
+    _buildTemptationNightMemoryBlock(tempterId, lang = 'ko') {
+        const character = this.charNameMap[tempterId] || tempterId;
+        if (!this.stateManager.getFlag?.(`day4_took_${String(character || '').toLowerCase()}_counteroffer`)) {
+            return '';
+        }
+        const seed = this._getTemptationPrecedingHistory(character, lang);
+        if (!seed) return '';
+        const language = String(lang || 'ko').toLowerCase().split('-')[0];
+        const copy = {
+            ko: {
+                header: '[이 인물만 아는 어젯밤]',
+                guard: '이 접촉은 유혹한 상대와 주인공만 아는 사실입니다. 원래 상대는 주인공이 직접 말하기 전에 구체적인 내용을 모릅니다. 그 기억을 원래 상대의 목격이나 대사로 옮기지 마세요.'
+            },
+            en: {
+                header: '[Last night, known only to this character]',
+                guard: 'This contact is known only to the person who tempted the protagonist. The original partner does not know the specific details unless the protagonist says them. Do not move that memory into the original partner’s witness or dialogue.'
+            },
+            es: {
+                header: '[Anoche, solo lo sabe este personaje]',
+                guard: 'Este contacto solo lo conocen quien tentó al protagonista y el protagonista. La pareja original no sabe los detalles concretos hasta que el protagonista los diga. No conviertas ese recuerdo en algo que la pareja original haya visto o dicho.'
+            },
+            ja: {
+                header: '[この人物だけが知る昨夜]',
+                guard: 'この接触は誘った相手と主人公だけが知る事実です。元の相手は主人公が口にするまで具体的な内容を知りません。その記憶を元の相手の目撃や台詞に移さないでください。'
+            },
+            fr: {
+                header: '[La nuit dernière, connue de ce personnage seulement]',
+                guard: 'Ce contact n’est connu que de la personne qui a tenté le protagoniste. L’autre personne ne connaît pas les détails tant que le protagoniste ne les dit pas. N’en faites pas un souvenir vu ou dit par le partenaire d’origine.'
+            },
+            de: {
+                header: '[Die letzte Nacht, nur dieser Figur bekannt]',
+                guard: 'Diesen Kontakt kennen nur die Person, die den Protagonisten verführt hat, und der Protagonist. Die ursprüngliche Partnerin kennt die Einzelheiten nicht, bevor er sie ausspricht. Übertrage diese Erinnerung nicht in ihre Wahrnehmung oder ihre Worte.'
+            },
+            pt: {
+                header: '[A noite passada, só esta personagem sabe]',
+                guard: 'Esse contato só é conhecido por quem tentou o protagonista e pelo protagonista. A pessoa original não sabe os detalhes até que ele fale. Não transforme essa memória em algo que ela tenha visto ou dito.'
+            }
+        };
+        const localized = copy[language] || copy.en;
+        return `${localized.header}\n${seed}\n${localized.guard}`;
+    }
+
     _getSceneDialoguePolicy(scene, sceneId = this.currentSceneId) {
         const character = this.charNameMap[scene.name] || scene.name;
         const targets = {
@@ -419,7 +488,11 @@ class FreeTalkSystem {
         // 이전 대화 기록 불러오기 (표시명이 달라도 같은 캐릭터로 이어짐)
         const canonicalMemory = this.stateManager.getChatMemory(charKey);
         const legacyMemory = charKey !== scene.name ? this.stateManager.getChatMemory(scene.name) : [];
-        this.freeTalkHistory = [...(canonicalMemory.length ? canonicalMemory : legacyMemory)];
+        this.freeTalkHistory = this._withTemptationSceneHistory(
+            [...(canonicalMemory.length ? canonicalMemory : legacyMemory)],
+            scene
+        );
+        if (scene.precedingHistory) this.stateManager.setChatMemory(charKey, this.freeTalkHistory);
         const checkpoint = this._getFreeTalkCheckpoint(scene, sceneId, this.freeTalkHistory);
         this.freeTalkTurns = Math.min(this.currentMaxTurns, checkpoint?.turns || 0);
 
@@ -856,6 +929,13 @@ class FreeTalkSystem {
             participant.id,
             this.getGameContext(participant.id, lang, { includeGroupConversations: false })
         ]));
+        const tempter = participants.find(participant => participant.role === 'tempter');
+        if (tempter && typeof this._buildTemptationNightMemoryBlock === 'function') {
+            const nightMemory = this._buildTemptationNightMemoryBlock(tempter.id, lang);
+            if (nightMemory) {
+                gameContexts[tempter.id] = [gameContexts[tempter.id], nightMemory].filter(Boolean).join('\n');
+            }
+        }
         const affinities = Object.fromEntries(participants.map(participant => [
             participant.id,
             this.stateManager.getAffinity?.(participant.id) ?? this.stateManager.stats?.[participant.id]?.affinity ?? 0
@@ -1378,7 +1458,10 @@ class FreeTalkSystem {
             const _postHistoryGuidance = CupidFreeTalkCore.buildPostHistoryGuidance(_optimized, _lang, {
                 repetitionGuard: _recentRepetitionGuard,
                 lowInformationRule: _lowInformationContinuationRule,
-                boundaryRule: _latestTurnIntimacyBoundaryRule
+                boundaryRule: _latestTurnIntimacyBoundaryRule,
+                sceneCanonRule: _sceneDialogue.romanticInterlude
+                    ? window.buildCupidTemptationSceneCanonRule(_lang)
+                    : ''
             });
             const _runtimePromptPatch = `${_inWorldUserRoleBlock}${_affinityIntimacyProgressionPatch}${_relationshipAftermathBlock}${_dataBankRecallBlock}${_postHistoryGuidance}`;
             if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {

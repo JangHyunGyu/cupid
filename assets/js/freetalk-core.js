@@ -902,7 +902,8 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
     function buildPostHistoryGuidance(messages = [], lang = 'ko', {
         repetitionGuard = '',
         lowInformationRule = '',
-        boundaryRule = ''
+        boundaryRule = '',
+        sceneCanonRule = ''
     } = {}) {
         const task = lang === 'ko'
             ? '최신 사용자 입력의 마지막 유효 줄에서 캐릭터의 목표·지식·감정에 따른 새 반응을 바로 잇고, 사용자가 명시하지 않은 중대한 선택·동의·거절은 쓰지 않습니다.'
@@ -912,7 +913,8 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
             buildResponsePaceBlock(messages, lang),
             repetitionGuard || buildRecentExpressionRepetitionGuard(messages, lang),
             lowInformationRule,
-            buildCharacterAgencyTurnRule(lang)
+            buildCharacterAgencyTurnRule(lang),
+            sceneCanonRule
         ].filter(Boolean).join('\n\n').trim();
         return `\n\n[${lang === 'ko' ? '후단 과업 — 이번 응답' : 'Post-History Task — This Response'}]\n${task}`
             + (output ? `\n\n[${lang === 'ko' ? '후단 출력 지침 — 이번 응답' : 'Post-History Output Contract — This Response'}]\n${output}` : '');

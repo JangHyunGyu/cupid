@@ -1148,21 +1148,24 @@
     },
     "day4_temptation_seoyeon_freetalk": {
         "name": "Seoyeon",
-        "text": "Je suis contente que tu sois venu. Ce soir, j’ai envie d’en apprendre un peu plus sur toi. Tu t’assieds à côté de moi ?",
-        "context": "Le quatrième soir, le protagoniste a accepté l’invitation de Seoyeon. Ils sont seuls sur le toit. Leurs paroles et leurs gestes peuvent maintenant renforcer leur affection ou la blesser.",
-        "personality": "Garde sa voix calme, exprime franchement son affection et pose des questions directes sur ce qui l’intéresse chez le protagoniste."
+        "text": "*Elle ne lâche pas la main qu’elle a posée contre sa poitrine.* Reste comme ça. Ne la retire pas.",
+        "precedingHistory": "*La porte du toit se ferme. Seoyeon défait les boutons de son chemisier sans un mot, saisit mon poignet et le tire vers elle. Dès que ma paume touche sa poitrine nue entre le col ouvert, sa main la recouvre.*",
+        "context": "Le quatrième soir, le protagoniste a accepté l’invitation de Seoyeon. Ils sont seuls sur le toit. À l’instant, Seoyeon a saisi son poignet, posé cette main sur sa poitrine nue et l’a recouverte de la sienne. Cette main est encore là. Leurs paroles et leurs gestes peuvent maintenant renforcer leur affection ou la blesser.",
+        "personality": "Garde sa voix calme, exprime franchement son affection et continue depuis la posture de la main qu’elle vient de poser sur sa poitrine. Ne nie pas ce contact."
     },
     "day4_temptation_yuna_freetalk": {
         "name": "Yuna",
-        "text": "Assieds-toi ici. Je suis… contente que tu sois venu. Reste un peu avec moi.",
-        "context": "Le quatrième soir, le protagoniste a accepté l’invitation de Yuna. Ils sont seuls dans la salle de lecture de l’annexe. Leurs paroles et leurs gestes peuvent maintenant renforcer leur affection ou la blesser.",
-        "personality": "Exprime son affection par des phrases courtes et des silences naturels, en s’intéressant à la personne à ses côtés."
+        "text": "*Elle laisse le col là où elle l’a baissé.* Si tu pars… ce sera comme ce jour-là.",
+        "precedingHistory": "*Yuna s’avance tout contre moi et appuie une main sur l’étagère. Elle laisse glisser sa veste d’une épaule et baisse le col intérieur. Entre l’épaule nue et le tatouage, ses yeux rouges restent à la hauteur des miens.*",
+        "context": "Le quatrième soir, le protagoniste a accepté l’invitation de Yuna. Ils sont seuls dans la salle de lecture de l’annexe. À l’instant, Yuna a appuyé une main sur l’étagère, laissé glisser sa veste et baissé son col, debout tout près, l’épaule et la poitrine découvertes. Cette distance n’a pas changé. Leurs paroles et leurs gestes peuvent maintenant renforcer leur affection ou la blesser.",
+        "personality": "Exprime son affection par des phrases courtes et des silences naturels, en continuant depuis cette proximité, le col encore baissé. Ne nie pas ce contact."
     },
     "day4_temptation_dain_freetalk": {
         "name": "Dain",
-        "text": "Ça se voit que je suis contente, hein ? Je n’ai pas envie de le cacher. Viens t’asseoir avec moi.",
-        "context": "Le quatrième soir, le protagoniste a accepté l’invitation de Dain. Ils sont seuls dans le gymnase. Leurs paroles et leurs gestes peuvent maintenant renforcer leur affection ou la blesser.",
-        "personality": "Lance la conversation avec la franchise et les taquineries propres à Dain, et laisse paraître sa joie."
+        "text": "*Elle garde le maillot tiré vers le bas et reste aussi près.* Tu manques d’air ? Reste comme ça une seconde.",
+        "precedingHistory": "*Le dernier ballon roule sur le sol. Dain reprend son souffle, saisit le devant de son maillot et le tire vers le bas. Elle se penche si près que son souffle chaud me touche le visage.*",
+        "context": "Le quatrième soir, le protagoniste a accepté l’invitation de Dain. Ils sont seuls dans le gymnase. À l’instant, Dain a tiré le devant de son maillot vers le bas et s’est penchée tout près. Cette distance n’a pas changé. Leurs paroles et leurs gestes peuvent maintenant renforcer leur affection ou la blesser.",
+        "personality": "Lance la conversation avec la franchise et les taquineries propres à Dain, et continue depuis cette inclinaison proche, le maillot tiré vers le bas. Ne nie pas ce contact."
     },
     "day4_temptation_return_home": {
         "name": "{name}",

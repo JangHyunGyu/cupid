@@ -50,6 +50,22 @@ for (const [lang, character, lead, offer, startAffinity] of [
         expect(accepted.affinity).toBe(Math.min(100, startAffinity + 8));
         expect(accepted.background).toContain(`event_temptation_${character.toLowerCase()}`);
         const sceneId = `day4_temptation_${character.toLowerCase()}_freetalk`;
+        const historyStart = await page.evaluate(() => {
+            const e = window.gameEngine;
+            const history = (e.freeTalkSystem.freeTalkHistory || []).filter(message => message.role !== 'system');
+            return {
+                roles: history.slice(0, 2).map(message => message.role),
+                seed: history[0]?.content || '',
+                opening: history.find(message => message.role === 'assistant')?.content
+                    || e.sceneRenderer.getScene(e.sceneRenderer.currentSceneId).text
+            };
+        });
+        expect(historyStart.roles).toEqual(['user', 'assistant']);
+        expect(historyStart.opening).not.toMatch(/앉을래|sit beside me|Come sit with me/);
+        if (character === 'Seoyeon') {
+            expect(historyStart.seed).toMatch(lang === 'ko' ? /맨가슴/ : /bare chest|pecho desnudo|poitrine nue|nackte Brust|peito nu|裸の胸/);
+            expect(historyStart.opening).toMatch(lang === 'ko' ? /가슴/ : /chest|pecho|poitrine|Brust|peito|胸/);
+        }
         let expectedAffinity = accepted.affinity;
         for (let turn = 1; turn <= 5; turn++) {
             await page.waitForFunction(() => {
@@ -63,6 +79,11 @@ for (const [lang, character, lead, offer, startAffinity] of [
                 await e.freeTalkSystem.sendChatMessage(id => e.sceneRenderer.getScene(id));
             }, { turn, lang });
             expect(requests).toHaveLength(turn);
+            if (turn === 1) {
+                expect(requests[0].messages.some(message => (
+                    message.role === 'user' && message.content === historyStart.seed
+                ))).toBe(true);
+            }
             const state = await page.evaluate(character => {
                 const e = window.gameEngine;
                 return { affinity: e.stateManager.getAffinity(character), turns: e.freeTalkSystem.freeTalkTurns,

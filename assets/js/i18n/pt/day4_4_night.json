@@ -1148,21 +1148,24 @@
     },
     "day4_temptation_seoyeon_freetalk": {
         "name": "Seoyeon",
-        "text": "Fico feliz que você veio. Hoje quero ouvir um pouco mais sobre você. Senta aqui do meu lado?",
-        "context": "Na quarta noite, o protagonista aceitou o convite de Seoyeon. Os dois estão a sós no terraço. O que disserem e fizerem agora pode aprofundar o carinho ou magoar.",
-        "personality": "Mantenha a voz calma, demonstre carinho com sinceridade e pergunte diretamente o que desperta sua curiosidade sobre o protagonista."
+        "text": "*Ela não solta a mão que apoiou contra o peito.* Fica assim. Não tira.",
+        "precedingHistory": "*A porta do terraço se fecha. Seoyeon abre a blusa sem dizer nada, pega meu pulso e puxa para ela. No instante em que a palma encontra o peito nu no decote aberto, a mão dela cobre a minha.*",
+        "context": "Na quarta noite, o protagonista aceitou o convite de Seoyeon. Os dois estão a sós no terraço. Agora há pouco Seoyeon segurou o pulso do protagonista, pôs essa mão no próprio peito nu e cobriu com a sua. Essa mão ainda está lá. O que disserem e fizerem agora pode aprofundar o carinho ou magoar.",
+        "personality": "Mantenha a voz calma, demonstre carinho com sinceridade e continue a partir da pose da mão que ela acabou de pôr no peito. Não negue esse contato."
     },
     "day4_temptation_yuna_freetalk": {
         "name": "Yuna",
-        "text": "Senta aqui. Eu… fico feliz que você veio. Fica comigo mais um pouco.",
-        "context": "Na quarta noite, o protagonista aceitou o convite de Yuna. Os dois estão a sós na sala de leitura do anexo. O que disserem e fizerem agora pode aprofundar o carinho ou magoar.",
-        "personality": "Expresse carinho com frases curtas e pausas naturais, mostrando interesse pela pessoa ao seu lado."
+        "text": "*Ela deixa a gola onde puxou para baixo.* Se você for… vai ser como naquele dia.",
+        "precedingHistory": "*Yuna chega bem perto e apoia uma mão na estante. O paletó escorrega de um ombro e ela puxa a gola de dentro. Entre o ombro nu e a tatuagem, os olhos vermelhos ficam na altura dos meus.*",
+        "context": "Na quarta noite, o protagonista aceitou o convite de Yuna. Os dois estão a sós na sala de leitura do anexo. Agora há pouco Yuna apoiou uma mão na estante, deixou o paletó escorregar e puxou a gola, parada bem perto, com o ombro e o peito à mostra. Essa distância continua igual. O que disserem e fizerem agora pode aprofundar o carinho ou magoar.",
+        "personality": "Expresse carinho com frases curtas e pausas naturais, continuando da proximidade com a gola ainda abaixada. Não negue esse contato."
     },
     "day4_temptation_dain_freetalk": {
         "name": "Dain",
-        "text": "Dá para perceber como estou feliz, né? Nem quero esconder. Vem sentar comigo.",
-        "context": "Na quarta noite, o protagonista aceitou o convite de Dain. Os dois estão a sós no ginásio. O que disserem e fizerem agora pode aprofundar o carinho ou magoar.",
-        "personality": "Puxe a conversa com as brincadeiras e a sinceridade próprias de Dain, deixando sua alegria aparecer naturalmente."
+        "text": "*Ela mantém a camisa puxada para baixo e continua tão perto.* Falta ar? Fica assim um segundo.",
+        "precedingHistory": "*A última bola rola pelo chão. Dain retoma o fôlego, agarra a frente da camisa e puxa para baixo. Ela se inclina tão perto que o hálito quente acerta meu rosto.*",
+        "context": "Na quarta noite, o protagonista aceitou o convite de Dain. Os dois estão a sós no ginásio. Agora há pouco Dain puxou a frente da camisa para baixo e se inclinou bem perto. Essa distância continua igual. O que disserem e fizerem agora pode aprofundar o carinho ou magoar.",
+        "personality": "Puxe a conversa com as brincadeiras e a sinceridade próprias de Dain e continue da inclinação próxima, com a camisa puxada para baixo. Não negue esse contato."
     },
     "day4_temptation_return_home": {
         "name": "{name}",

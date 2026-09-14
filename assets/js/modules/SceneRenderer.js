@@ -176,6 +176,7 @@ class SceneRenderer {
         for (const key of [
             'name',
             'text',
+            'precedingHistory',
             'context',
             'personality',
             'affinityText',
