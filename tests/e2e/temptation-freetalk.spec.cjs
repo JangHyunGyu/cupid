@@ -63,8 +63,8 @@ for (const [lang, character, lead, offer, startAffinity] of [
         expect(historyStart.roles).toEqual(['user', 'assistant']);
         expect(historyStart.opening).not.toMatch(/앉을래|sit beside me|Come sit with me/);
         if (character === 'Seoyeon') {
-            expect(historyStart.seed).toMatch(lang === 'ko' ? /맨가슴/ : /bare chest|pecho desnudo|poitrine nue|nackte Brust|peito nu|裸の胸/);
-            expect(historyStart.opening).toMatch(lang === 'ko' ? /가슴/ : /chest|pecho|poitrine|Brust|peito|胸/);
+            expect(historyStart.seed).toMatch(lang === 'ko' ? /맨가슴|심장/ : /bare chest|heart|pecho|cœur|Herz|coração|胸|心臓/);
+            expect(historyStart.opening).toMatch(lang === 'ko' ? /가슴|심장/ : /chest|heart|pecho|cœur|Herz|peito|胸/);
         }
         let expectedAffinity = accepted.affinity;
         for (let turn = 1; turn <= 5; turn++) {

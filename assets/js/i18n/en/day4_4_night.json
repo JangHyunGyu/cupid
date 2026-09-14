@@ -70,16 +70,16 @@
         ]
     },
     "day4_adult_counteroffer_accept_seoyeon": {
-        "name": "{name}",
-        "text": "*As the rooftop door closes, Seoyeon catches {name}'s wrist and places their hand over her chest. Her loosened ribbon leaves her shirt collar open, and her trembling breath brushes the back of their hand. The phone in their pocket buzzes again and again, but Seoyeon doesn't let go.*"
+        "name": "Seoyeon",
+        "text": "*As the rooftop door closes, Seoyeon catches {name}'s wrist and places their hand over her chest. Her loosened ribbon leaves her shirt collar open, and her trembling breath brushes the back of their hand. The phone in their pocket buzzes again and again, but Seoyeon doesn't let go.* Can you feel my heart beating?"
     },
     "day4_adult_counteroffer_accept_dain": {
-        "name": "{name}",
-        "text": "*The last ball rolls across the floor. Catching her ragged breath, Dain grips the front of her uniform and pulls it down. She leans in until her sweat-warmed breath reaches {name}'s face. The phone in their pocket keeps buzzing.*"
+        "name": "Dain",
+        "text": "*The last ball rolls across the floor. Catching her ragged breath, Dain grips the front of her uniform and pulls it down. She leans in until her sweat-warmed breath reaches {name}'s face. The phone in their pocket keeps buzzing.* Put your hand inside my jersey. The sweat between my breasts. Want to feel it with your fingers?"
     },
     "day4_adult_counteroffer_accept_yuna": {
-        "name": "{name}",
-        "text": "*Yuna steps right up to {name}, bracing one hand on the bookcase. She lets her jacket slip below one shoulder and uses her other hand to tug down the neckline beneath it. Over her bare shoulder and tattoo, her red eyes hold {name}'s gaze. The phone on the desk buzzes again.*"
+        "name": "Yuna",
+        "text": "*Yuna steps right up to {name}, bracing one hand on the bookcase. She lets her jacket slip below one shoulder and uses her other hand to tug down the neckline beneath it. Over her bare shoulder and tattoo, her red eyes hold {name}'s gaze. The phone on the desk buzzes again.* I don't want even a scrap of cloth between us. The whole day, just you."
     },
     "day4_adult_night_regret_target_branch": {},
     "day4_adult_night_regret_teacher": {
@@ -338,8 +338,8 @@
         ]
     },
     "wall_seo_glimpse_4": {
-        "name": "{name}",
-        "text": "*The last ball rolls across the floor. Dain catches her breath, grips the front hem of her jersey, and pulls it taut. She bends low until her breath, still hot from training, is only inches from {name}. Seoyeon's messages keep the phone buzzing in the pocket.*"
+        "name": "Dain",
+        "text": "*The last ball rolls across the floor. Dain catches her breath, grips the front hem of her jersey, and pulls it taut. She bends low until her breath, still hot from training, is only inches from {name}. Seoyeon's messages keep the phone buzzing in the pocket.* Put your hand inside my jersey. The sweat between my breasts. Want to feel it with your fingers?"
     },
     "wall_seo_yuna_tempt_1": {
         "name": "{name}",
@@ -356,8 +356,8 @@
         ]
     },
     "wall_seo_yuna_tempt_accept": {
-        "name": "{name}",
-        "text": "*Yuna steps right up to {name} and braces one hand against the shelf. She lets her blazer slip below one shoulder and uses the other hand to tug down the neckline of her dark top. Over her bare shoulder and tattoo, her red eyes hold {name}'s gaze. Seoyeon's message—'I'm on the park bench.'—stays at the top of the screen.*"
+        "name": "Yuna",
+        "text": "*Yuna steps right up to {name} and braces one hand against the shelf. She lets her blazer slip below one shoulder and uses the other hand to tug down the neckline of her dark top. Over her bare shoulder and tattoo, her red eyes hold {name}'s gaze. Seoyeon's message—'I'm on the park bench.'—stays at the top of the screen.* I don't want even a scrap of cloth between us. The whole day, just you."
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -664,8 +664,8 @@
         "text": "*Yuna sits before an open book, staring through the window. Not a single page turns.*"
     },
     "wall_dain_glimpse_4": {
-        "name": "{name}",
-        "text": "*Yuna steps right up to {name} and braces one hand against the shelf. She lets her blazer slip below one shoulder and uses the other hand to tug down the neckline of her dark top. Over her bare shoulder and tattoo, her red eyes hold {name}'s gaze. Dain's 'The gym's back door is open.' stays at the top of the screen.*"
+        "name": "Yuna",
+        "text": "*Yuna steps right up to {name} and braces one hand against the shelf. She lets her blazer slip below one shoulder and uses the other hand to tug down the neckline of her dark top. Over her bare shoulder and tattoo, her red eyes hold {name}'s gaze. Dain's 'The gym's back door is open.' stays at the top of the screen.* I don't want even a scrap of cloth between us. The whole day, just you."
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -696,8 +696,8 @@
         ]
     },
     "wall_dain_seo_tempt_accept": {
-        "name": "{name}",
-        "text": "*The rooftop door closes. Without a word, Seoyeon undoes her blouse and catches {name}'s wrist, drawing the hand toward her. The palm meets the bare skin of her chest through the open blouse, and Seoyeon's hand settles over it. Dain's 'The gym's back door is open.' lights the screen.*"
+        "name": "Seoyeon",
+        "text": "*The rooftop door closes. Without a word, Seoyeon undoes her blouse and catches {name}'s wrist, drawing the hand toward her. The palm meets the bare skin of her chest through the open blouse, and Seoyeon's hand settles over it. Dain's 'The gym's back door is open.' lights the screen.* Can you feel my heart beating?"
     },
     "wall_yuna_1": {
         "name": "{name}",
@@ -903,8 +903,8 @@
         ]
     },
     "wall_yuna_glimpse_4": {
-        "name": "{name}",
-        "text": "*The rooftop door closes. Without a word, Seoyeon undoes her blouse and catches {name}'s wrist, drawing the hand toward her. The palm meets the bare skin of her chest through the open blouse, and Seoyeon's hand settles over it. Yuna's message buzzes once in the pocket, then a second time.*"
+        "name": "Seoyeon",
+        "text": "*The rooftop door closes. Without a word, Seoyeon undoes her blouse and catches {name}'s wrist, drawing the hand toward her. The palm meets the bare skin of her chest through the open blouse, and Seoyeon's hand settles over it. Yuna's message buzzes once in the pocket, then a second time.* Can you feel my heart beating?"
     },
     "wall_yuna_dain_tempt_1": {
         "name": "{name}",
@@ -921,8 +921,8 @@
         ]
     },
     "wall_yuna_dain_tempt_accept": {
-        "name": "{name}",
-        "text": "*The last ball rolls across the floor. Dain catches her breath, grips the front hem of her jersey, and pulls it taut. She bends low until her breath, still hot from training, is only inches from {name}. Yuna's name keeps appearing on the phone screen.*"
+        "name": "Dain",
+        "text": "*The last ball rolls across the floor. Dain catches her breath, grips the front hem of her jersey, and pulls it taut. She bends low until her breath, still hot from training, is only inches from {name}. Yuna's name keeps appearing on the phone screen.* Put your hand inside my jersey. The sweat between my breasts. Want to feel it with your fingers?"
     },
     "day4_night_regret": {
         "name": "{name}",
@@ -1148,24 +1148,24 @@
     },
     "day4_temptation_seoyeon_freetalk": {
         "name": "Seoyeon",
-        "text": "*She keeps the hand she placed against her chest, covering it.* Stay like this. Don't pull away.",
-        "precedingHistory": "*The rooftop door closes. Seoyeon undoes her blouse buttons without a word, takes my wrist, and pulls it toward her. The moment my palm meets her bare chest through the open collar, her hand covers it.*",
-        "context": "On the fourth night, the protagonist accepted Seoyeon's invitation. The two are alone on the rooftop. Just now Seoyeon took the protagonist's wrist, placed that hand on her bare chest, and covered it with her own. That hand is still there. What they say and do now can deepen their affection or hurt it.",
-        "personality": "Keep her calm voice, show affection honestly, and continue from the posture of the hand she just placed on her chest. Do not deny that contact."
+        "text": "*She keeps the hand she placed against her chest, covering it.* Can you feel my heart beating?",
+        "precedingHistory": "*The rooftop door closes. Seoyeon undoes her blouse buttons without a word, takes my wrist, and pulls it toward her. The moment my palm meets her bare chest through the open collar, her hand covers it.* Can you feel my heart beating?",
+        "context": "On the fourth night, the protagonist accepted Seoyeon's invitation. The two are alone on the rooftop. Just now Seoyeon took the protagonist's wrist, placed that hand on her bare chest, covered it, and asked if they could feel her heart beating. That hand is still there. In this scene Seoyeon leads the sexual skinship. What they say and do now can deepen their affection or hurt it.",
+        "personality": "Keep her calm voice and lead the hand on her chest. Do not deny that contact."
     },
     "day4_temptation_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*She leaves the collar where she pulled it down.* If you go… it'll feel like that day again.",
-        "precedingHistory": "*Yuna steps in close and braces one hand on the shelf. She lets her jacket slip off one shoulder and pulls the inner collar down. Between the bare shoulder and the tattoo, her red eyes stay level with mine.*",
-        "context": "On the fourth night, the protagonist accepted Yuna's invitation. The two are alone in the annex reading room. Just now Yuna braced a hand on the shelf, let her jacket slip, and pulled her collar down, standing close with her bare shoulder and chest exposed. That distance is unchanged. What they say and do now can deepen their affection or hurt it.",
-        "personality": "Express affection through short lines and natural pauses, continuing from the close stance with her collar still down. Do not deny that contact."
+        "text": "*She leaves the collar where she pulled it down.* I don't want even a scrap of cloth between us.",
+        "precedingHistory": "*Yuna steps in close and braces one hand on the shelf. She lets her jacket slip off one shoulder and pulls the inner collar down. Between the bare shoulder and the tattoo, her red eyes stay level with mine.* I don't want even a scrap of cloth between us. The whole day, just you.",
+        "context": "On the fourth night, the protagonist accepted Yuna's invitation. The two are alone in the annex reading room. Just now Yuna braced a hand on the shelf, let her jacket slip, pulled her collar down, and said she does not want even a scrap of cloth between them for the whole day. That distance is unchanged. In this scene Yuna leads the sexual skinship. What they say and do now can deepen their affection or hurt it.",
+        "personality": "Close the distance in short lines and take the cloth between you first. Do not deny that contact."
     },
     "day4_temptation_dain_freetalk": {
         "name": "Dain",
-        "text": "*She keeps the jersey pulled down and stays that close.* Can't breathe? Stay like this for a second.",
-        "precedingHistory": "*The last ball rolls across the floor. Dain catches her breath, grabs the front of her jersey, and pulls it down. She leans in so close that her sweat-warm breath hits my face.*",
-        "context": "On the fourth night, the protagonist accepted Dain's invitation. The two are alone in the gym. Just now Dain pulled the front of her jersey down and leaned in close. That distance is unchanged. What they say and do now can deepen their affection or hurt it.",
-        "personality": "Initiate conversation with Dain's playful honesty and continue from the close lean with her jersey pulled down. Do not deny that contact."
+        "text": "*She keeps the jersey pulled down and stays that close.* Put your hand inside my jersey. The sweat between my breasts. Want to feel it with your fingers?",
+        "precedingHistory": "*The last ball rolls across the floor. Dain catches her breath, grabs the front of her jersey, and pulls it down. She leans in so close that her sweat-warm breath hits my face.* Put your hand inside my jersey. The sweat between my breasts. Want to feel it with your fingers?",
+        "context": "On the fourth night, the protagonist accepted Dain's invitation. The two are alone in the gym. Just now Dain pulled the front of her jersey down, leaned in close, and told them to put a hand inside the jersey and feel the sweat between her breasts. That distance is unchanged. In this scene Dain leads the sexual skinship. What they say and do now can deepen their affection or hurt it.",
+        "personality": "Guide the protagonist's hand inside her jersey with playful honesty. Do not deny that contact."
     },
     "day4_temptation_return_home": {
         "name": "{name}",

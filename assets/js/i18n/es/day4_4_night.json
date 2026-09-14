@@ -70,16 +70,16 @@
         ]
     },
     "day4_adult_counteroffer_accept_seoyeon": {
-        "name": "{name}",
-        "text": "*Cuando se cierra la puerta de la azotea, Seoyeon toma la muñeca de {name} y apoya esa mano sobre su pecho. El lazo suelto deja abierto el cuello de su camisa y su respiración temblorosa roza el dorso de la mano. El teléfono vibra una y otra vez dentro del bolsillo, pero Seoyeon no la suelta.*"
+        "name": "Seoyeon",
+        "text": "*Cuando se cierra la puerta de la azotea, Seoyeon toma la muñeca de {name} y apoya esa mano sobre su pecho. El lazo suelto deja abierto el cuello de su camisa y su respiración temblorosa roza el dorso de la mano. El teléfono vibra una y otra vez dentro del bolsillo, pero Seoyeon no la suelta.* ¿Sientes cómo late mi corazón?"
     },
     "day4_adult_counteroffer_accept_dain": {
-        "name": "{name}",
-        "text": "*La última pelota rueda por el suelo. Dain trata de recuperar el aliento, agarra la parte delantera del uniforme y tira de ella hacia abajo. Se inclina hasta quedar frente a {name}, y su respiración húmeda y caliente llega hasta su rostro. El teléfono no deja de vibrar en el bolsillo.*"
+        "name": "Dain",
+        "text": "*La última pelota rueda por el suelo. Dain trata de recuperar el aliento, agarra la parte delantera del uniforme y tira de ella hacia abajo. Se inclina hasta quedar frente a {name}, y su respiración húmeda y caliente llega hasta su rostro. El teléfono no deja de vibrar en el bolsillo.* Mete la mano dentro del uniforme. El sudor entre mis pechos, ¿no quieres sentirlo con los dedos?"
     },
     "day4_adult_counteroffer_accept_yuna": {
-        "name": "{name}",
-        "text": "*Yuna se acerca hasta quedar frente a {name} y apoya una mano en la estantería. Deja caer la chaqueta por debajo de un hombro y con la otra mano baja el escote de la prenda interior. Entre el hombro desnudo y el tatuaje, sus ojos rojos siguen a la altura de los de {name}. El teléfono vuelve a vibrar sobre la mesa.*"
+        "name": "Yuna",
+        "text": "*Yuna se acerca hasta quedar frente a {name} y apoya una mano en la estantería. Deja caer la chaqueta por debajo de un hombro y con la otra mano baja el escote de la prenda interior. Entre el hombro desnudo y el tatuaje, sus ojos rojos siguen a la altura de los de {name}. El teléfono vuelve a vibrar sobre la mesa.* Hoy no quiero ni una tela entre nosotros. Todo el día, solo tú."
     },
     "day4_adult_night_regret_target_branch": {},
     "day4_adult_night_regret_teacher": {
@@ -338,8 +338,8 @@
         ]
     },
     "wall_seo_glimpse_4": {
-        "name": "{name}",
-        "text": "*El último balón rueda por el suelo. Dain recupera el aliento, agarra el borde delantero del uniforme y tira de él hacia abajo. Se inclina hasta quedar justo frente a {name}; su respiración entrecortada se siente a pocos centímetros. Los mensajes de Seoyeon hacen vibrar sin parar el teléfono en el bolsillo.*"
+        "name": "Dain",
+        "text": "*El último balón rueda por el suelo. Dain recupera el aliento, agarra el borde delantero del uniforme y tira de él hacia abajo. Se inclina hasta quedar justo frente a {name}; su respiración entrecortada se siente a pocos centímetros. Los mensajes de Seoyeon hacen vibrar sin parar el teléfono en el bolsillo.* Mete la mano dentro del uniforme. El sudor entre mis pechos, ¿no quieres sentirlo con los dedos?"
     },
     "wall_seo_yuna_tempt_1": {
         "name": "{name}",
@@ -356,8 +356,8 @@
         ]
     },
     "wall_seo_yuna_tempt_accept": {
-        "name": "{name}",
-        "text": "*Yuna se acerca hasta quedar frente a {name} y apoya una mano en la estantería. Deja que el blazer caiga por debajo de un hombro y, con la otra mano, baja el escote de la prenda oscura que lleva debajo. Entre el hombro desnudo y el tatuaje, sus ojos rojos siguen a la altura de los de {name}. El mensaje de Seoyeon —«Estoy en el banco del parque»— no desaparece de la pantalla.*"
+        "name": "Yuna",
+        "text": "*Yuna se acerca hasta quedar frente a {name} y apoya una mano en la estantería. Deja que el blazer caiga por debajo de un hombro y, con la otra mano, baja el escote de la prenda oscura que lleva debajo. Entre el hombro desnudo y el tatuaje, sus ojos rojos siguen a la altura de los de {name}. El mensaje de Seoyeon —«Estoy en el banco del parque»— no desaparece de la pantalla.* Hoy no quiero ni una tela entre nosotros. Todo el día, solo tú."
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -664,8 +664,8 @@
         "text": "*Yuna está frente a un libro abierto, mirando por la ventana. No pasa ni una página.*"
     },
     "wall_dain_glimpse_4": {
-        "name": "{name}",
-        "text": "*Yuna se acerca hasta quedar frente a {name} y apoya una mano en la estantería. Deja que el blazer caiga por debajo de un hombro y, con la otra mano, baja el escote de la prenda oscura que lleva debajo. Entre el hombro desnudo y el tatuaje, sus ojos rojos siguen a la altura de los de {name}. El «La puerta trasera del gimnasio está abierta» de Dain no desaparece de la pantalla.*"
+        "name": "Yuna",
+        "text": "*Yuna se acerca hasta quedar frente a {name} y apoya una mano en la estantería. Deja que el blazer caiga por debajo de un hombro y, con la otra mano, baja el escote de la prenda oscura que lleva debajo. Entre el hombro desnudo y el tatuaje, sus ojos rojos siguen a la altura de los de {name}. El «La puerta trasera del gimnasio está abierta» de Dain no desaparece de la pantalla.* Hoy no quiero ni una tela entre nosotros. Todo el día, solo tú."
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -696,8 +696,8 @@
         ]
     },
     "wall_dain_seo_tempt_accept": {
-        "name": "{name}",
-        "text": "*La puerta de la azotea se cierra. Sin decir nada, Seoyeon desabrocha la blusa, sujeta la muñeca de {name} y atrae la mano hacia ella. La palma toca su pecho desnudo entre la blusa abierta, y la mano de Seoyeon se posa encima. El mensaje de Dain —«La puerta trasera del gimnasio está abierta»— ilumina la pantalla.*"
+        "name": "Seoyeon",
+        "text": "*La puerta de la azotea se cierra. Sin decir nada, Seoyeon desabrocha la blusa, sujeta la muñeca de {name} y atrae la mano hacia ella. La palma toca su pecho desnudo entre la blusa abierta, y la mano de Seoyeon se posa encima. El mensaje de Dain —«La puerta trasera del gimnasio está abierta»— ilumina la pantalla.* ¿Sientes cómo late mi corazón?"
     },
     "wall_yuna_1": {
         "name": "{name}",
@@ -903,8 +903,8 @@
         ]
     },
     "wall_yuna_glimpse_4": {
-        "name": "{name}",
-        "text": "*La puerta de la azotea se cierra. Sin decir nada, Seoyeon desabrocha la blusa, sujeta la muñeca de {name} y atrae la mano hacia ella. La palma toca su pecho desnudo entre la blusa abierta, y la mano de Seoyeon se posa encima. El mensaje de Yuna hace vibrar el teléfono una vez y luego otra.*"
+        "name": "Seoyeon",
+        "text": "*La puerta de la azotea se cierra. Sin decir nada, Seoyeon desabrocha la blusa, sujeta la muñeca de {name} y atrae la mano hacia ella. La palma toca su pecho desnudo entre la blusa abierta, y la mano de Seoyeon se posa encima. El mensaje de Yuna hace vibrar el teléfono una vez y luego otra.* ¿Sientes cómo late mi corazón?"
     },
     "wall_yuna_dain_tempt_1": {
         "name": "{name}",
@@ -921,8 +921,8 @@
         ]
     },
     "wall_yuna_dain_tempt_accept": {
-        "name": "{name}",
-        "text": "*El último balón rueda por el suelo. Dain recupera el aliento, agarra el borde delantero del uniforme y tira de él hacia abajo. Se inclina hasta quedar justo frente a {name}; su respiración entrecortada se siente a pocos centímetros. El nombre de Yuna aparece una y otra vez en la pantalla.*"
+        "name": "Dain",
+        "text": "*El último balón rueda por el suelo. Dain recupera el aliento, agarra el borde delantero del uniforme y tira de él hacia abajo. Se inclina hasta quedar justo frente a {name}; su respiración entrecortada se siente a pocos centímetros. El nombre de Yuna aparece una y otra vez en la pantalla.* Mete la mano dentro del uniforme. El sudor entre mis pechos, ¿no quieres sentirlo con los dedos?"
     },
     "day4_night_regret": {
         "name": "{name}",
@@ -1148,24 +1148,24 @@
     },
     "day4_temptation_seoyeon_freetalk": {
         "name": "Seoyeon",
-        "text": "*No suelta la mano que apoyó contra su pecho.* Quédate así. No la apartes.",
-        "precedingHistory": "*La puerta de la azotea se cierra. Seoyeon desabrocha la blusa sin decir nada, me toma la muñeca y la acerca a ella. En cuanto la palma toca su pecho desnudo entre el cuello abierto, su mano la cubre.*",
-        "context": "La cuarta noche, el protagonista aceptó la invitación de Seoyeon. Están a solas en la azotea. Hace un momento Seoyeon le tomó la muñeca, le puso la mano sobre su pecho desnudo y la cubrió con la suya. Esa mano sigue ahí. Lo que digan y hagan ahora puede fortalecer el cariño o herirlo.",
-        "personality": "Conserva su voz serena, expresa su cariño con franqueza y continúa desde la postura de la mano que acaba de ponerle en el pecho. No niegues ese contacto."
+        "text": "*No suelta la mano que apoyó contra su pecho.* ¿Sientes cómo late mi corazón?",
+        "precedingHistory": "*La puerta de la azotea se cierra. Seoyeon desabrocha la blusa sin decir nada, me toma la muñeca y la acerca a ella. En cuanto la palma toca su pecho desnudo entre el cuello abierto, su mano la cubre.* ¿Sientes cómo late mi corazón?",
+        "context": "La cuarta noche, el protagonista aceptó la invitación de Seoyeon. Están a solas en la azotea. Hace un momento Seoyeon le tomó la muñeca, le puso la mano sobre su pecho desnudo, la cubrió y preguntó si sentía latir su corazón. Esa mano sigue ahí. En esta escena Seoyeon lleva el contacto sexual. Lo que digan y hagan ahora puede fortalecer el cariño o herirlo.",
+        "personality": "Conserva su voz serena y guía la mano sobre su pecho. No niegues ese contacto."
     },
     "day4_temptation_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Deja el cuello donde lo bajó.* Si te vas… va a ser como aquel día.",
-        "precedingHistory": "*Yuna se acerca del todo y apoya una mano en la estantería. Deja caer la chaqueta de un hombro y baja el cuello interior. Entre el hombro desnudo y el tatuaje, sus ojos rojos quedan a la altura de los míos.*",
-        "context": "La cuarta noche, el protagonista aceptó la invitación de Yuna. Están a solas en la sala de lectura del anexo. Hace un momento Yuna apoyó una mano en la estantería, dejó caer la chaqueta y bajó el cuello, de pie muy cerca, con el hombro y el pecho al descubierto. Esa distancia no ha cambiado. Lo que digan y hagan ahora puede fortalecer el cariño o herirlo.",
-        "personality": "Expresa cariño con frases breves y pausas naturales, continuando desde la cercanía con el cuello aún bajado. No niegues ese contacto."
+        "text": "*Deja el cuello donde lo bajó.* Hoy no quiero ni una tela entre nosotros.",
+        "precedingHistory": "*Yuna se acerca del todo y apoya una mano en la estantería. Deja caer la chaqueta de un hombro y baja el cuello interior. Entre el hombro desnudo y el tatuaje, sus ojos rojos quedan a la altura de los míos.* Hoy no quiero ni una tela entre nosotros. Todo el día, solo tú.",
+        "context": "La cuarta noche, el protagonista aceptó la invitación de Yuna. Están a solas en la sala de lectura del anexo. Hace un momento Yuna apoyó una mano en la estantería, dejó caer la chaqueta, bajó el cuello y dijo que no quiere ni una tela entre ellos todo el día. Esa distancia no ha cambiado. En esta escena Yuna lleva el contacto sexual. Lo que digan y hagan ahora puede fortalecer el cariño o herirlo.",
+        "personality": "Acerca la distancia con frases breves y quita primero la tela de en medio. No niegues ese contacto."
     },
     "day4_temptation_dain_freetalk": {
         "name": "Dain",
-        "text": "*Sigue con la camiseta tirada hacia abajo y no se aleja.* ¿Te falta el aire? Quédate así un segundo.",
-        "precedingHistory": "*La última pelota rueda por el suelo. Dain recupera el aliento, agarra el frente de la camiseta y lo tira hacia abajo. Se inclina tan cerca que su aliento caliente me da en la cara.*",
-        "context": "La cuarta noche, el protagonista aceptó la invitación de Dain. Están a solas en el gimnasio. Hace un momento Dain tiró hacia abajo la parte delantera de su camiseta y se inclinó hasta quedar muy cerca. Esa distancia no ha cambiado. Lo que digan y hagan ahora puede fortalecer el cariño o herirlo.",
-        "personality": "Inicia la conversación con las bromas y la sinceridad propias de Dain y continúa desde la inclinación cercana, con la camiseta tirada hacia abajo. No niegues ese contacto."
+        "text": "*Sigue con la camiseta tirada hacia abajo y no se aleja.* Mete la mano dentro del uniforme. El sudor entre mis pechos, ¿no quieres sentirlo con los dedos?",
+        "precedingHistory": "*La última pelota rueda por el suelo. Dain recupera el aliento, agarra el frente de la camiseta y lo tira hacia abajo. Se inclina tan cerca que su aliento caliente me da en la cara.* Mete la mano dentro del uniforme. El sudor entre mis pechos, ¿no quieres sentirlo con los dedos?",
+        "context": "La cuarta noche, el protagonista aceptó la invitación de Dain. Están a solas en el gimnasio. Hace un momento Dain tiró hacia abajo la parte delantera de su camiseta, se inclinó muy cerca y dijo que metieran la mano en el uniforme para sentir el sudor entre sus pechos. Esa distancia no ha cambiado. En esta escena Dain lleva el contacto sexual. Lo que digan y hagan ahora puede fortalecer el cariño o herirlo.",
+        "personality": "Guía la mano del protagonista dentro del uniforme con bromas y sinceridad. No niegues ese contacto."
     },
     "day4_temptation_return_home": {
         "name": "{name}",

@@ -94,6 +94,11 @@ test('every interlude preserves its CG and localized character voice with a sepa
             assert.equal(scene.character, null);
             assert.equal(scene.next, 'day4_temptation_return_home');
             assert.ok(copy[id].name && copy[id].text && copy[id].precedingHistory && copy[id].context && copy[id].personality);
+            assert.ok(copy[id].precedingHistory.includes({
+                Seoyeon: { ko: '내 심장, 뛰는 거 느껴져', en: 'Can you feel my heart beating', ja: '私の心臓、打つの分かる', es: '¿Sientes cómo late mi corazón', fr: 'Tu sens mon cœur battre', de: 'Spürst du, wie mein Herz schlägt', pt: 'Dá para sentir meu coração batendo' },
+                Yuna: { ko: '천 한 장도 사이에 두고 싶지 않아', en: 'scrap of cloth between us', ja: '布一枚もあいだに置きたくない', es: 'ni una tela entre nosotros', fr: 'même pas un tissu entre nous', de: 'nicht mal einen Stoff zwischen uns', pt: 'nem um pano entre a gente' },
+                Dain: { ko: '유니폼 안으로 손 넣어 봐', en: 'Put your hand inside my jersey', ja: 'ユニフォームの中に手を入れて', es: 'Mete la mano dentro del uniforme', fr: 'Glisse ta main dans le maillot', de: 'Steck deine Hand ins Trikot', pt: 'Enfia a mão dentro da camisa' }
+            }[character][lang]));
             const params = { lang, sceneName: character, displayName: copy[id].name,
                 locationName: scene.locationKey, context: copy[id].context, extraGuideline: copy[id].personality,
                 affinity: 100, affinityLocked: false, romanticInterlude: true,
@@ -125,16 +130,27 @@ test('every interlude preserves its CG and localized character voice with a sepa
             assert.doesNotMatch(copy[id].text, /앉을래|sit beside me|Come sit with me|¿Te sientas a mi lado|Siéntate aquí|Ven, siéntate|Tu t’assieds à côté|Assieds-toi ici|Viens t’asseoir|Setzt du dich neben mich|Setz dich hierher|setz dich zu mir|Senta aqui do meu lado|Senta aqui\.|Vem sentar|隣に座ってくれる|こっちに座って|隣に来て/);
             assert.ok(dynamic.includes(copy[id].context));
             assert.ok(runtime.window.buildCupidTemptationRomanceGuidance(lang).includes({
-                ko: '직전 대본에서 이미 일어난 접촉',
-                en: 'preceding scripted scene is a present fact',
-                es: 'contacto ya establecido en la escena anterior',
-                ja: '直前の脚本ですでに起きた接触',
-                fr: 'contact déjà établi dans la scène écrite précédente',
-                de: 'in der vorigen Skriptszene bereits geschehene Kontakt',
-                pt: 'contato já estabelecido na cena anterior'
+                ko: '직전 대본에서 이미 일어난 접촉과 유혹 대사',
+                en: 'preceding scripted scene are present facts',
+                es: 'ya establecidos en la escena anterior son hechos presentes',
+                ja: '直前の脚本ですでに起きた接触と誘惑の台詞',
+                fr: 'déjà établis dans la scène écrite précédente sont des faits présents',
+                de: 'bereits geschehene Kontakt und die Verführungsworte sind jetzt Tatsache',
+                pt: 'já estabelecidos na cena anterior são fatos presentes'
             }[lang]));
             assert.ok(!runtime.window.buildCupidTemptationRomanceGuidance(lang).includes('비노골'));
             assert.ok(!runtime.window.buildCupidTemptationRomanceGuidance(lang).includes('non-graphic'));
+            assert.ok(!runtime.window.buildCupidTemptationRomanceGuidance(lang).includes('성행위가 시작됐다고 단정하지는'));
+            assert.ok(runtime.window.buildCupidTemptationRomanceGuidance(lang).includes({
+                ko: '성적 스킨십에 매우 적극',
+                en: 'highly proactive about sexual skinship',
+                es: 'muy activo en el contacto sexual',
+                ja: '性的なスキンシップにとても積極的',
+                fr: 'très actif dans le contact sexuel',
+                de: 'sexuell sehr initiativ',
+                pt: 'muito ativa no contato sexual'
+            }[lang]));
+            assert.ok(stable.includes(runtime.window.buildCupidThirdPersonAdultCameraRule(lang)));
         }
     }
 });
