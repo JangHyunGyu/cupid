@@ -732,5 +732,9 @@
     "lunch2_yuna_neg_leave": {
         "name": "{name}",
         "text": "*Cierro la puerta del anexo y bajo las escaleras.*"
+    },
+    "lunch2_seo_cool_cont": {
+        "name": "{name}",
+        "text": "*Se abre la tapa del táper. Primero entra el viento.*"
     }
 }

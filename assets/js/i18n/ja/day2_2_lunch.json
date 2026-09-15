@@ -732,5 +732,9 @@
     "lunch2_yuna_neg_leave": {
         "name": "{name}",
         "text": "*別館のドアを閉めて階段を降りる。*"
+    },
+    "lunch2_seo_cool_cont": {
+        "name": "{name}",
+        "text": "*弁当の蓋が開く。先に風だけが入ってくる。*"
     }
 }

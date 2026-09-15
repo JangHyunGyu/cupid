@@ -163,7 +163,18 @@ test('history routers select only established memories and preserve rewards on e
         state.setFlag(flag, false);
         assert.equal(renderer.resolveNextScene(all[id]), `${id}_first`);
         state.setFlag(flag, true);
-        assert.equal(renderer.resolveNextScene(all[id]), `${id}_established`);
+        const establishedNext = all[id].branches[0].next;
+        if (establishedNext === `${id}_visit`) {
+            assert.equal(renderer.resolveNextScene(all[id]), `${id}_visit`);
+            state.stats.Dain.affinity = 8;
+            state.stats.Yuna.affinity = 8;
+            assert.equal(renderer.resolveNextScene(all[`${id}_visit`]), `${id}_established`);
+            state.stats.Dain.affinity = -2;
+            state.stats.Yuna.affinity = -2;
+            assert.match(renderer.resolveNextScene(all[`${id}_visit`]), /_react_neg$/);
+        } else {
+            assert.equal(renderer.resolveNextScene(all[id]), `${id}_established`);
+        }
         assert.deepEqual(all[`${id}_first`].stats, all[`${id}_established`].stats, id);
         assert.equal(all[`${id}_first`].next, all[`${id}_established`].next, id);
         assert.equal(all[id].stats, undefined, 'routing itself must not grant the reward twice');

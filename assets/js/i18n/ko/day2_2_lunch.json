@@ -732,5 +732,9 @@
     "lunch2_yuna_neg_leave": {
         "name": "{name}",
         "text": "*별관 문을 닫고 계단을 내려간다.*"
+    },
+    "lunch2_seo_cool_cont": {
+        "name": "{name}",
+        "text": "*도시락 뚜껑이 열린다. 바람만 먼저 들어온다.*"
     }
 }

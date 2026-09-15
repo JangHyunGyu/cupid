@@ -732,5 +732,9 @@
     "lunch2_yuna_neg_leave": {
         "name": "{name}",
         "text": "*Fecho a porta do anexo e desço as escadas.*"
+    },
+    "lunch2_seo_cool_cont": {
+        "name": "{name}",
+        "text": "*A tampa da marmita abre. O vento entra primeiro.*"
     }
 }

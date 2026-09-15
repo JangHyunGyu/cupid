@@ -59,6 +59,8 @@ test('negative affinity uses a dedicated line instead of the default greeting', 
         ['night2_reply_seo_5', 'Seoyeon', 'night2_reply_seo_react_neg', 'night2_reply_seo_react_default'],
         ['night2_reply_dain_5', 'Dain', 'night2_reply_dain_react_neg', 'night2_reply_dain_react_default'],
         ['night2_reply_yuna_7', 'Yuna', 'night2_reply_yuna_react_neg', 'night2_reply_yuna_react_default'],
+        ['night2_reply_dain_1_visit', 'Dain', 'night2_reply_dain_react_neg', 'night2_reply_dain_1_established'],
+        ['night2_reply_yuna_4_visit', 'Yuna', 'night2_reply_yuna_react_neg', 'night2_reply_yuna_4_established'],
         ['morning3_seo_gate_1', 'Seoyeon', 'morning3_seo_gate_neg_1', 'morning3_seo_gate_cold_1'],
         ['morning3_yuna_gate_1', 'Yuna', 'morning3_yuna_gate_neg_1', 'morning3_yuna_gate_cold_1'],
         ['morning3_dain_gate_1', 'Dain', 'morning3_dain_gate_neg_1', 'morning3_dain_gate_cold_1'],
@@ -121,6 +123,14 @@ test('negative lunch and afterschool do not continue the warm hangout', () => {
     assert.equal(scenes.after2_dain_neg_leave.next, 'after2_dain_rival_seo_check');
     assert.notEqual(scenes.after2_dain_neg_1.next, 'after2_dain_4');
     assert.notEqual(scenes.after2_yuna_neg_1.next, 'after2_yuna_3');
+    assert.equal(scenes.lunch2_seo_2_cool.next, 'lunch2_seo_cool_cont');
+    assert.notEqual(scenes.lunch2_seo_2_cool.next, 'lunch2_seo_3');
+    assert.equal(scenes.lunch2_dain_2_cool.next, 'lunch2_dain_8');
+    assert.equal(scenes.after2_yuna_cool_1.next, 'after2_yuna_6');
+    assert.equal(scenes.after2_dain_cool_1.next, 'after2_dain_9');
+    assert.equal(scenes.night2_reply_dain_react_neg.next, 'night2_hidden_check');
+    assert.equal(scenes.night2_reply_seo_react_neg.next, 'night2_hidden_check');
+    assert.equal(scenes.night2_reply_yuna_react_neg.next, 'night2_hidden_check');
 });
 
 test('negative-affinity copy exists in every language and differs from the zero-affinity line', () => {

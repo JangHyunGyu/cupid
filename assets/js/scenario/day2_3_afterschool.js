@@ -1107,7 +1107,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "after2_dain_cool_1": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "after2_dain_4"
+        "next": "after2_dain_9"
     },
     "after2_dain_neg_1": {
         "background": "assets/images/background/gym.png",
@@ -1125,7 +1125,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "after2_yuna_cool_1": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_bored.png",
-        "next": "after2_yuna_3"
+        "next": "after2_yuna_6"
     },
     "after2_yuna_neg_1": {
         "background": "assets/images/background/yuna_hideout.png",

@@ -38,6 +38,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "night2_msg_dain_specific": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
+        "affinityGuard": {"character":"Dain","minAffinity":0,"fallback":"night2_msg_seo_general"},
         "next": "night2_msg_dain_specific_2"
     },
     "night2_msg_dain_specific_2": {
@@ -53,6 +54,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "night2_msg_seo_specific": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
+        "affinityGuard": {"character":"Seoyeon","minAffinity":0,"fallback":"night2_msg_dain_general"},
         "next": "night2_msg_seo_specific_2"
     },
     "night2_msg_seo_specific_2": {
@@ -63,6 +65,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "night2_msg_yuna_specific": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
+        "affinityGuard": {"character":"Yuna","minAffinity":0,"fallback":"night2_msg_dain_general"},
         "next": "night2_msg_yuna_specific_2"
     },
     "night2_msg_yuna_specific_2": {
@@ -157,12 +160,18 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "branches": [
             {
                 "condition": "chose_dain_after2",
-                "next": "night2_reply_dain_1_established"
+                "next": "night2_reply_dain_1_visit"
             },
             {
                 "next": "night2_reply_dain_1_first"
             }
         ]
+    },
+    "night2_reply_dain_1_visit": {
+        "routeBeforeRender": true,
+        "affinityChar": "Dain",
+        "affinityBranches": [{"minAffinity":0,"next":"night2_reply_dain_1_established"},{"minAffinity":-100,"next":"night2_reply_dain_react_neg"}],
+        "next": "night2_reply_dain_react_neg"
     },
     "night2_reply_dain_1_established": {
         "background": "assets/images/background/room_my.png",
@@ -246,6 +255,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
         "stats": {"Seoyeon":{"affinity":2}},
+        "affinityGuard": {"character":"Seoyeon","minAffinity":0,"fallback":"night2_reply_seo_react_neg"},
         "next": "night2_reply_seo_2"
     },
     "night2_reply_seo_2": {
@@ -353,12 +363,18 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "branches": [
             {
                 "condition": "chose_yuna_after2",
-                "next": "night2_reply_yuna_4_established"
+                "next": "night2_reply_yuna_4_visit"
             },
             {
                 "next": "night2_reply_yuna_4_first"
             }
         ]
+    },
+    "night2_reply_yuna_4_visit": {
+        "routeBeforeRender": true,
+        "affinityChar": "Yuna",
+        "affinityBranches": [{"minAffinity":0,"next":"night2_reply_yuna_4_established"},{"minAffinity":-100,"next":"night2_reply_yuna_react_neg"}],
+        "next": "night2_reply_yuna_react_neg"
     },
     "night2_reply_yuna_4_established": {
         "background": "assets/images/background/room_my.png",
@@ -635,19 +651,19 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
         "setFlags": ["night2_replied_dain"],
-        "next": "night2_dain_freetalk"
+        "next": "night2_hidden_check"
     },
     "night2_reply_seo_react_neg": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
         "setFlags": ["night2_replied_seo"],
-        "next": "night2_seo_freetalk"
+        "next": "night2_hidden_check"
     },
     "night2_reply_yuna_react_neg": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
         "setFlags": ["night2_replied_yuna"],
-        "next": "night2_yuna_freetalk"
+        "next": "night2_hidden_check"
     }
     };
     for (const scene of Object.values(scenes)) {

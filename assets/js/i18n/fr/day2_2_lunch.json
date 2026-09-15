@@ -732,5 +732,9 @@
     "lunch2_yuna_neg_leave": {
         "name": "{name}",
         "text": "*Je ferme la porte de l'annexe et je descends.*"
+    },
+    "lunch2_seo_cool_cont": {
+        "name": "{name}",
+        "text": "*Le couvercle de la boîte s'ouvre. Le vent entre d'abord.*"
     }
 }

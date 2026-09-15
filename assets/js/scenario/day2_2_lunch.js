@@ -945,7 +945,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "stats": {"Seoyeon":{"affinity":6}},
-        "next": "lunch2_seo_3"
+        "next": "lunch2_seo_cool_cont"
     },
     "lunch2_seo_2_neg": {
         "background": "assets/images/background/top_school.png",
@@ -963,7 +963,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "stats": {"Seoyeon":{"affinity":6}},
-        "next": "lunch2_seo_3"
+        "next": "lunch2_seo_cool_cont"
     },
     "lunch2_dain_tone": {
         "background": "assets/images/background/store.png",
@@ -977,7 +977,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/store.png",
         "character": "assets/images/characters/dain_normal.png",
         "stats": {"Dain":{"affinity":6}},
-        "next": "lunch2_dain_3"
+        "next": "lunch2_dain_8"
     },
     "lunch2_dain_2_neg": {
         "background": "assets/images/background/store.png",
@@ -1002,6 +1002,11 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "character": "assets/images/characters/yuna_bored.png",
         "stats": {"Yuna":{"affinity":6}},
         "next": "lunch2_yuna_neg_leave"
+    },
+    "lunch2_seo_cool_cont": {
+        "background": "assets/images/background/top_school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "lunch2_seo_7"
     },
     "lunch2_seo_neg_leave": {
         "background": "assets/images/background/school_hallway.png",

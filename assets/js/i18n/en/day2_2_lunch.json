@@ -732,5 +732,9 @@
     "lunch2_yuna_neg_leave": {
         "name": "{name}",
         "text": "*I shut the annex door and go down the stairs.*"
+    },
+    "lunch2_seo_cool_cont": {
+        "name": "{name}",
+        "text": "*The lunch box lid opens. The wind comes in first.*"
     }
 }

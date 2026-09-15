@@ -4393,7 +4393,7 @@
 ### `lunch2_seo_2b_cool`
 - 배경: `top_school.png`
 - 스탯: Seoyeon +6
-- 다음: `lunch2_seo_3`
+- 다음: `lunch2_seo_cool_cont`
 
 - 캐릭터: `seyoun_normal.png`
 **서연**: 옥상은 허가제야. 오늘은 예외로 둘게.
@@ -4523,16 +4523,6 @@
 
 ---
 
-### `lunch2_seo_2_cool`
-- 배경: `top_school.png`
-- 스탯: Seoyeon +6
-- 다음: `lunch2_seo_3`
-
-- 캐릭터: `seyoun_normal.png`
-**서연**: 왔구나. 도시락 펼칠 테니까 잠깐만.
-
----
-
 ### `lunch2_seo_3`
 - 배경: `top_school.png`
 - 다음: `lunch2_seo_4`
@@ -4566,6 +4556,25 @@
 
 - 캐릭터: `seyoun_normal.png`
 **서연**: 바람이라.
+
+---
+
+### `lunch2_seo_2_cool`
+- 배경: `top_school.png`
+- 스탯: Seoyeon +6
+- 다음: `lunch2_seo_cool_cont`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 왔구나. 도시락 펼칠 테니까 잠깐만.
+
+---
+
+### `lunch2_seo_cool_cont`
+- 배경: `top_school.png`
+- 다음: `lunch2_seo_7`
+
+- 캐릭터: `seyoun_normal.png`
+**{name}**: *도시락 뚜껑이 열린다. 바람만 먼저 들어온다.*
 
 ---
 
@@ -4978,43 +4987,6 @@
 
 ---
 
-### `lunch2_dain_3b`
-- 배경: `store.png`
-- 다음: `lunch2_dain_4b`
-
-- 캐릭터: `dain_normal.png`
-**{name}**: 정말?
-
----
-
-### `lunch2_dain_4b`
-- 배경: `store.png`
-- 다음: `lunch2_dain_5b`
-
-- 캐릭터: `dain_normal.png`
-**다인**: 당연하지. 나 원래 잘해.
-
----
-
-### `lunch2_dain_5b`
-- 배경: `store.png`
-- 다음: `lunch2_dain_6`
-
-- 캐릭터: `dain_pout.png`
-**{name}**: *가위바위보. — 다인이 졌다.*
-
----
-
-### `lunch2_dain_2_cool`
-- 배경: `store.png`
-- 스탯: Dain +6
-- 다음: `lunch2_dain_3`
-
-- 캐릭터: `dain_normal.png`
-**다인**: 왔으면 줄이나 서. 빵은 네가 사는 거 알지.
-
----
-
 ### `lunch2_dain_3`
 - 배경: `store.png`
 - 다음: `lunch2_dain_4`
@@ -5042,6 +5014,33 @@
 
 ---
 
+### `lunch2_dain_3b`
+- 배경: `store.png`
+- 다음: `lunch2_dain_4b`
+
+- 캐릭터: `dain_normal.png`
+**{name}**: 정말?
+
+---
+
+### `lunch2_dain_4b`
+- 배경: `store.png`
+- 다음: `lunch2_dain_5b`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 당연하지. 나 원래 잘해.
+
+---
+
+### `lunch2_dain_5b`
+- 배경: `store.png`
+- 다음: `lunch2_dain_6`
+
+- 캐릭터: `dain_pout.png`
+**{name}**: *가위바위보. — 다인이 졌다.*
+
+---
+
 ### `lunch2_dain_6`
 - 배경: `store.png`
 - 다음: `lunch2_dain_7`
@@ -5057,6 +5056,16 @@
 
 - 캐릭터: `dain_pout.png`
 **{name}**: 가위바위보를 어떻게 조작해.
+
+---
+
+### `lunch2_dain_2_cool`
+- 배경: `store.png`
+- 스탯: Dain +6
+- 다음: `lunch2_dain_8`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 왔으면 줄이나 서. 빵은 네가 사는 거 알지.
 
 ---
 
@@ -6326,15 +6335,6 @@
 
 ---
 
-### `after2_dain_cool_1`
-- 배경: `gym.png`
-- 다음: `after2_dain_4`
-
-- 캐릭터: `dain_normal.png`
-**다인**: 왔으면 공부터 주워. 말은 나중에.
-
----
-
 ### `after2_dain_4`
 - 배경: `gym.png`
 - 다음: `after2_dain_5`
@@ -6377,6 +6377,15 @@
 
 - 캐릭터: `dain_laugh.png`
 **다인**: 배고프거든.
+
+---
+
+### `after2_dain_cool_1`
+- 배경: `gym.png`
+- 다음: `after2_dain_9`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 왔으면 공부터 주워. 말은 나중에.
 
 ---
 
@@ -7468,15 +7477,6 @@
 
 ---
 
-### `after2_yuna_cool_1`
-- 배경: `yuna_hideout.png`
-- 다음: `after2_yuna_3`
-
-- 캐릭터: `yuna_bored.png`
-**유나**: *이어폰 한쪽만 치운다.* 읽어도 돼. 말은 조금만.
-
----
-
 ### `after2_yuna_3`
 - 배경: `yuna_hideout.png`
 - 다음: `after2_yuna_4`
@@ -7501,6 +7501,15 @@
 
 - 캐릭터: `yuna_normal.png`
 **유나**: 불러야 오는 거야?
+
+---
+
+### `after2_yuna_cool_1`
+- 배경: `yuna_hideout.png`
+- 다음: `after2_yuna_6`
+
+- 캐릭터: `yuna_bored.png`
+**유나**: *이어폰 한쪽만 치운다.* 읽어도 돼. 말은 조금만.
 
 ---
 
@@ -8146,8 +8155,18 @@
 
 ### `night2_reply_dain_1`
 - 분기:
-  - [`chose_dain_after2`] → `night2_reply_dain_1_established`
+  - [`chose_dain_after2`] → `night2_reply_dain_1_visit`
   - [기본] → `night2_reply_dain_1_first`
+
+<!-- i18n -->
+
+---
+
+### `night2_reply_dain_1_visit`
+- 호감분기: Dain
+  - [0+] → `night2_reply_dain_1_established`
+  - [기본] → `night2_reply_dain_react_neg`
+- 다음: `night2_reply_dain_react_neg`
 
 <!-- i18n -->
 
@@ -8234,16 +8253,6 @@
 
 ---
 
-### `night2_reply_dain_react_neg`
-- 배경: `room_my.png`
-- 플래그: `night2_replied_dain`
-- 다음: `night2_dain_freetalk`
-
-- 캐릭터: `dain_normal.png` @ 0.35
-**다인**: 알겠어. 자. *읽음은 뜨고 다음 말은 없다.*
-
----
-
 ### `night2_dain_freetalk`
 - 배경: `room_my.png`
 - 타입: `free_talk`
@@ -8253,6 +8262,16 @@
 
 - 캐릭터: `dain_normal.png` @ 0.35
 **다인**: 잠깐, 진짜 자기 전에. 오늘 제일 재밌었던 건 뭐였어?
+
+---
+
+### `night2_reply_dain_react_neg`
+- 배경: `room_my.png`
+- 플래그: `night2_replied_dain`
+- 다음: `night2_hidden_check`
+
+- 캐릭터: `dain_normal.png` @ 0.35
+**다인**: 알겠어. 자. *읽음은 뜨고 다음 말은 없다.*
 
 ---
 
@@ -8327,16 +8346,6 @@
 
 ---
 
-### `night2_reply_seo_react_neg`
-- 배경: `room_my.png`
-- 플래그: `night2_replied_seo`
-- 다음: `night2_seo_freetalk`
-
-- 캐릭터: `seyoun_normal.png` @ 0.35
-**서연**: 내일 봐. *바로 읽음 처리된다.*
-
----
-
 ### `night2_seo_freetalk`
 - 배경: `room_my.png`
 - 타입: `free_talk`
@@ -8346,6 +8355,16 @@
 
 - 캐릭터: `seyoun_normal.png` @ 0.35
 **서연**: 아, 잠깐. 아직 안 잤지?
+
+---
+
+### `night2_reply_seo_react_neg`
+- 배경: `room_my.png`
+- 플래그: `night2_replied_seo`
+- 다음: `night2_hidden_check`
+
+- 캐릭터: `seyoun_normal.png` @ 0.35
+**서연**: 내일 봐. *바로 읽음 처리된다.*
 
 ---
 
@@ -8398,8 +8417,18 @@
 
 ### `night2_reply_yuna_4`
 - 분기:
-  - [`chose_yuna_after2`] → `night2_reply_yuna_4_established`
+  - [`chose_yuna_after2`] → `night2_reply_yuna_4_visit`
   - [기본] → `night2_reply_yuna_4_first`
+
+<!-- i18n -->
+
+---
+
+### `night2_reply_yuna_4_visit`
+- 호감분기: Yuna
+  - [0+] → `night2_reply_yuna_4_established`
+  - [기본] → `night2_reply_yuna_react_neg`
+- 다음: `night2_reply_yuna_react_neg`
 
 <!-- i18n -->
 
@@ -8494,16 +8523,6 @@
 
 ---
 
-### `night2_reply_yuna_react_neg`
-- 배경: `room_my.png`
-- 플래그: `night2_replied_yuna`
-- 다음: `night2_yuna_freetalk`
-
-- 캐릭터: `yuna_normal.png` @ 0.35
-**유나**: ...잘 자. *말풍선이 거기서 끊긴다.*
-
----
-
 ### `night2_yuna_freetalk`
 - 배경: `room_my.png`
 - 타입: `free_talk`
@@ -8513,6 +8532,16 @@
 
 - 캐릭터: `yuna_normal.png` @ 0.35
 **유나**: 잠깐. 아직 깨어 있으면... 조금만 더 얘기할래?
+
+---
+
+### `night2_reply_yuna_react_neg`
+- 배경: `room_my.png`
+- 플래그: `night2_replied_yuna`
+- 다음: `night2_hidden_check`
+
+- 캐릭터: `yuna_normal.png` @ 0.35
+**유나**: ...잘 자. *말풍선이 거기서 끊긴다.*
 
 ---
 

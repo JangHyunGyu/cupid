@@ -379,5 +379,7 @@
     "night2_reply_yuna_react_neg": {
         "name": "유나",
         "text": "...잘 자. *말풍선이 거기서 끊긴다.*"
-    }
+    },
+    "night2_reply_dain_1_visit": {},
+    "night2_reply_yuna_4_visit": {}
 }

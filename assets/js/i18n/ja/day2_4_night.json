@@ -379,5 +379,7 @@
     "night2_reply_yuna_react_neg": {
         "name": "ユナ",
         "text": "……おやすみ。*吹き出しはそこで終わる。*"
-    }
+    },
+    "night2_reply_dain_1_visit": {},
+    "night2_reply_yuna_4_visit": {}
 }

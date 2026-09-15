@@ -379,5 +379,7 @@
     "night2_reply_yuna_react_neg": {
         "name": "Yuna",
         "text": "...Good night. *The bubble stops there.*"
-    }
+    },
+    "night2_reply_dain_1_visit": {},
+    "night2_reply_yuna_4_visit": {}
 }

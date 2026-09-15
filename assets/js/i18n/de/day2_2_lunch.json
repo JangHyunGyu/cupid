@@ -732,5 +732,9 @@
     "lunch2_yuna_neg_leave": {
         "name": "{name}",
         "text": "*Ich schließe die Tür des Anbaus und gehe die Treppe hinunter.*"
+    },
+    "lunch2_seo_cool_cont": {
+        "name": "{name}",
+        "text": "*Der Deckel der Lunchbox geht auf. Zuerst kommt nur Wind.*"
     }
 }

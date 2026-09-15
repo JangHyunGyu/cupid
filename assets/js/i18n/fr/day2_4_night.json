@@ -379,5 +379,7 @@
     "night2_reply_yuna_react_neg": {
         "name": "Yuna",
         "text": "...Bonne nuit. *La bulle s'arrête là.*"
-    }
+    },
+    "night2_reply_dain_1_visit": {},
+    "night2_reply_yuna_4_visit": {}
 }
