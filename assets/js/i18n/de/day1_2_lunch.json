@@ -475,5 +475,21 @@
     "lunch_seo_neg_leave": {
         "name": "{name}",
         "text": "*Ich schließe die Dachtür und gehe die Treppe hinunter.*"
+    },
+    "lunch_dain_1_aff_neg": {
+        "name": "Dain",
+        "text": "*Sie lässt in der Schlange eine Lücke und sieht nach vorn.* Heute kein Wette. Kauf und geh."
+    },
+    "lunch_dain_neg_leave": {
+        "name": "{name}",
+        "text": "*Ich trete aus der Schlange am Kiosk und bleibe im Flur stehen.*"
+    },
+    "lunch_yuna_1_aff_neg": {
+        "name": "Yuna",
+        "text": "*Sie klappt das Buch nicht zu.* Heute will ich keine Gesellschaft."
+    },
+    "lunch_yuna_neg_leave": {
+        "name": "{name}",
+        "text": "*Ich schließe die Tür des Anbaus und gehe die Treppe hinunter.*"
     }
 }

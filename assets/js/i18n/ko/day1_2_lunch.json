@@ -475,5 +475,21 @@
     "lunch_seo_neg_leave": {
         "name": "{name}",
         "text": "*옥상 문을 닫고 계단을 내려간다.*"
+    },
+    "lunch_dain_1_aff_neg": {
+        "name": "다인",
+        "text": "*줄에서 한 칸 비우고 앞만 본다.* 오늘은 내기 안 해. 빨리 사고 가."
+    },
+    "lunch_dain_neg_leave": {
+        "name": "{name}",
+        "text": "*매점 줄에서 빠져나와 복도로 선다.*"
+    },
+    "lunch_yuna_1_aff_neg": {
+        "name": "유나",
+        "text": "*책을 덮지 않는다.* 오늘은 같이 있기 싫어."
+    },
+    "lunch_yuna_neg_leave": {
+        "name": "{name}",
+        "text": "*별관 문을 닫고 계단을 내려간다.*"
     }
 }

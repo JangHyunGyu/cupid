@@ -740,5 +740,13 @@
     "lunch2_dain_cool_cont": {
         "name": "{name}",
         "text": "*소보로를 집어 계산한다. 다인은 자기 몫만 받아 든다.*"
+    },
+    "lunch2_seo_cool_leave": {
+        "name": "{name}",
+        "text": "*도시락 뚜껑을 덮고 옥상 문을 닫는다.*"
+    },
+    "lunch2_yuna_cool_cont": {
+        "name": "{name}",
+        "text": "*책장만 한 장 넘긴다. 유나는 이어폰을 빼지 않는다.*"
     }
 }

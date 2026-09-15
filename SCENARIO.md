@@ -1145,10 +1145,32 @@
 ### `lunch_dain_1`
 - 배경: `store.png`
 - BGM: `daily2.mp3`
+- 호감분기: Dain
+  - [0+] → `lunch_dain_1_aff_default`
+  - [-19 이상] → `lunch_dain_1_aff_default`
+  - [기본] → `lunch_dain_1_aff_neg`
 - 다음: `lunch_dain_1_aff_default`
 
 - 캐릭터: `dain_laugh.png`
 **다인**: 도착. 여기가 매점이야. 일단 고르고 봐.
+
+---
+
+### `lunch_dain_1_aff_neg`
+- 배경: `store.png`
+- 다음: `lunch_dain_neg_leave`
+
+- 캐릭터: `dain_angry.png`
+**다인**: *줄에서 한 칸 비우고 앞만 본다.* 오늘은 내기 안 해. 빨리 사고 가.
+
+---
+
+### `lunch_dain_neg_leave`
+- 배경: `school_hallway.png`
+- 다음: `lunch_end`
+
+- 캐릭터: `없음`
+**{name}**: *매점 줄에서 빠져나와 복도로 선다.*
 
 ---
 
@@ -1469,10 +1491,32 @@
 - 배경: `library_old.png`
 - 배경톤: `empty`
 - BGM: `night1.mp3`
+- 호감분기: Yuna
+  - [0+] → `lunch_yuna_1_aff_default`
+  - [-19 이상] → `lunch_yuna_1_aff_default`
+  - [기본] → `lunch_yuna_1_aff_neg`
 - 다음: `lunch_yuna_1_aff_default`
 
 - 캐릭터: `yuna_normal.png`
 **{name}**: *유나의 뒷모습을 따라 도서관으로 들어간다. 점심 종이 친 뒤인데도 대출대 의자만 삐뚤게 비어 있다.*
+
+---
+
+### `lunch_yuna_1_aff_neg`
+- 배경: `library_old.png`
+- 다음: `lunch_yuna_neg_leave`
+
+- 캐릭터: `yuna_bored.png`
+**유나**: *책을 덮지 않는다.* 오늘은 같이 있기 싫어.
+
+---
+
+### `lunch_yuna_neg_leave`
+- 배경: `school_hallway.png`
+- 다음: `lunch_end`
+
+- 캐릭터: `없음`
+**{name}**: *별관 문을 닫고 계단을 내려간다.*
 
 ---
 
@@ -3463,7 +3507,7 @@
 - 다음: `morning2_greet_seo_2`
 
 - 캐릭터: `seyoun_normal.png`
-**서연**: 어제 교문에서 한 말, 기억은 하지?
+**서연**: 출석 확인이야. 앉아.
 
 ---
 
@@ -3486,11 +3530,29 @@
 ---
 
 ### `morning2_greet_dain_1`
+- 분기:
+  - [`chose_dain_lunch`] → `morning2_greet_dain_1_fun`
+  - [기본] → `morning2_greet_dain_1_plain`
+
+<!-- i18n -->
+
+---
+
+### `morning2_greet_dain_1_fun`
 - 배경: `room_school.png`
 - 다음: `morning2_greet_dain_2`
 
 - 캐릭터: `dain_laugh.png`
 **다인**: 야! 어제 재밌었다, 오늘도 같이 뭐 하자!
+
+---
+
+### `morning2_greet_dain_1_plain`
+- 배경: `room_school.png`
+- 다음: `morning2_greet_dain_2`
+
+- 캐릭터: `dain_laugh.png`
+**다인**: 야! 좋은 아침. 오늘도 에너지 채워 둬.
 
 ---
 
@@ -3540,6 +3602,15 @@
 ---
 
 ### `morning2_greet_yuna_1`
+- 분기:
+  - [`chose_yuna_lunch`] → `morning2_greet_yuna_1_thanks`
+  - [기본] → `morning2_greet_yuna_2`
+
+<!-- i18n -->
+
+---
+
+### `morning2_greet_yuna_1_thanks`
 - 배경: `room_school.png`
 - 다음: `morning2_greet_yuna_2`
 
@@ -4572,25 +4643,6 @@
 
 ---
 
-### `lunch2_seo_2_cool`
-- 배경: `top_school.png`
-- 스탯: Seoyeon +6
-- 다음: `lunch2_seo_cool_cont`
-
-- 캐릭터: `seyoun_normal.png`
-**서연**: 왔구나. 도시락 펼게. 잠깐만.
-
----
-
-### `lunch2_seo_cool_cont`
-- 배경: `top_school.png`
-- 다음: `lunch2_seo_7`
-
-- 캐릭터: `seyoun_normal.png`
-**{name}**: *도시락 뚜껑이 열린다. 바람만 먼저 들어온다.*
-
----
-
 ### `lunch2_seo_7`
 - 배경: `top_school.png`
 - 다음: `lunch2_seo_9`
@@ -4843,6 +4895,34 @@
 
 - 캐릭터: `seyoun_pout.png`
 **{name}**: *손등에 아직 밥풀 자국이 남아 있다. 서연은 도시락 끈을 풀었다가 다시 맨다.*
+
+---
+
+### `lunch2_seo_2_cool`
+- 배경: `top_school.png`
+- 스탯: Seoyeon +6
+- 다음: `lunch2_seo_cool_cont`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 왔구나. 도시락 펼게. 잠깐만.
+
+---
+
+### `lunch2_seo_cool_cont`
+- 배경: `top_school.png`
+- 다음: `lunch2_seo_cool_leave`
+
+- 캐릭터: `seyoun_normal.png`
+**{name}**: *도시락 뚜껑이 열린다. 바람만 먼저 들어온다.*
+
+---
+
+### `lunch2_seo_cool_leave`
+- 배경: `school_hallway.png`
+- 다음: `after2_start`
+
+- 캐릭터: `없음`
+**{name}**: *도시락 뚜껑을 덮고 옥상 문을 닫는다.*
 
 ---
 
@@ -5593,16 +5673,6 @@
 
 ---
 
-### `lunch2_yuna_3_cool`
-- 배경: `yuna_hideout.png`
-- 스탯: Yuna +6
-- 다음: `lunch2_yuna_4`
-
-- 캐릭터: `yuna_bored.png`
-**유나**: *책갈피만 밀어 넣고 옆자리를 비운다.*
-
----
-
 ### `lunch2_yuna_4`
 - 배경: `yuna_hideout.png`
 - 다음: `lunch2_yuna_5`
@@ -5645,6 +5715,25 @@
 
 - 캐릭터: `yuna_normal.png`
 **{name}**: 피난처가 필요할 때도 있어.
+
+---
+
+### `lunch2_yuna_3_cool`
+- 배경: `yuna_hideout.png`
+- 스탯: Yuna +6
+- 다음: `lunch2_yuna_cool_cont`
+
+- 캐릭터: `yuna_bored.png`
+**유나**: *책갈피만 밀어 넣고 옆자리를 비운다.*
+
+---
+
+### `lunch2_yuna_cool_cont`
+- 배경: `yuna_hideout.png`
+- 다음: `lunch2_yuna_end`
+
+- 캐릭터: `yuna_bored.png`
+**{name}**: *책장만 한 장 넘긴다. 유나는 이어폰을 빼지 않는다.*
 
 ---
 
@@ -6315,7 +6404,6 @@
 ### `after2_dain_1`
 - 배경: `gym.png`
 - BGM: `daily2.mp3`
-- 플래그: `chose_dain_after2`
 - 스탯: Dain +3
 - 다음: `after2_dain_tone`
 
@@ -6341,6 +6429,7 @@
 
 ### `after2_dain_2`
 - 배경: `gym.png`
+- 플래그: `chose_dain_after2`
 - 다음: `after2_dain_3`
 
 - 캐릭터: `dain_sweat.png`
@@ -6502,24 +6591,6 @@
 
 ---
 
-### `after2_dain_cool_1`
-- 배경: `gym.png`
-- 다음: `after2_dain_cool_cont`
-
-- 캐릭터: `dain_normal.png`
-**다인**: 왔으면 공부터 주워. 말은 나중에.
-
----
-
-### `after2_dain_cool_cont`
-- 배경: `gym.png`
-- 다음: `after2_dain_16`
-
-- 캐릭터: `dain_normal.png`
-**{name}**: *공을 바구니에 넣는다. 다인은 네트 쪽을 보며 서브 자세만 취한다.*
-
----
-
 ### `after2_dain_16`
 - 배경: `street.png`
 - 호감분기: Dain
@@ -6673,6 +6744,24 @@
 
 - 캐릭터: `dain_shy.png`
 **다인**: *떡볶이 컵을 {name} 쪽으로 밀어놓고 빈 물병을 거꾸로 흔든다.*
+
+---
+
+### `after2_dain_cool_1`
+- 배경: `gym.png`
+- 다음: `after2_dain_cool_cont`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 왔으면 공부터 주워. 말은 나중에.
+
+---
+
+### `after2_dain_cool_cont`
+- 배경: `gym.png`
+- 다음: `after2_dain_neg_leave`
+
+- 캐릭터: `dain_normal.png`
+**{name}**: *공을 바구니에 넣는다. 다인은 네트 쪽을 보며 서브 자세만 취한다.*
 
 ---
 
@@ -7463,7 +7552,6 @@
 ### `after2_yuna_1`
 - 배경: `yuna_hideout.png`
 - BGM: `night1.mp3`
-- 플래그: `chose_yuna_after2`
 - 다음: `after2_yuna_1_b`
 
 - 캐릭터: `yuna_normal.png`
@@ -7508,6 +7596,7 @@
 
 ### `after2_yuna_2_b`
 - 배경: `yuna_hideout.png`
+- 플래그: `chose_yuna_after2`
 - 다음: `after2_yuna_3`
 
 - 캐릭터: `yuna_shy.png`
@@ -8101,7 +8190,7 @@
 - 다음: `night2_msg_dain_general_merge`
 
 - 캐릭터: `dain_normal.png` @ 0.35
-**다인**: 야, 내일 매점 가자! 오늘 못 간 거 아직 아쉽거든!
+**다인**: 야, 내일 매점 가자.
 
 ---
 
@@ -8141,7 +8230,7 @@
 - 다음: `night2_msg_generic_2`
 
 - 캐릭터: `dain_normal.png` @ 0.35
-**다인**: 야, 내일 매점 갈 거지?
+**다인**: 야, 내일 학교에서 보자.
 
 ---
 

@@ -34,7 +34,7 @@
     },
     "night2_msg_dain_general": {
         "name": "Dain",
-        "text": "Hé, demain, on va à la supérette ! Je regrette encore qu'on n'ait pas pu y aller aujourd'hui !"
+        "text": "Hé, kiosque demain."
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
@@ -50,7 +50,7 @@
     },
     "night2_msg_generic": {
         "name": "Dain",
-        "text": "Hé, tu viendras à la supérette demain, hein ?"
+        "text": "Hé. On se voit demain à l'école."
     },
     "night2_msg_generic_2": {
         "name": "Seoyeon",

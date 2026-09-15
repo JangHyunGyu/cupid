@@ -475,5 +475,21 @@
     "lunch_seo_neg_leave": {
         "name": "{name}",
         "text": "*I close the rooftop door and go down the stairs.*"
+    },
+    "lunch_dain_1_aff_neg": {
+        "name": "Dain",
+        "text": "*She leaves a gap in line and looks ahead.* No bets today. Buy yours and go."
+    },
+    "lunch_dain_neg_leave": {
+        "name": "{name}",
+        "text": "*I step out of the snack-shop line and stand in the hallway.*"
+    },
+    "lunch_yuna_1_aff_neg": {
+        "name": "Yuna",
+        "text": "*She does not close the book.* I don't want company today."
+    },
+    "lunch_yuna_neg_leave": {
+        "name": "{name}",
+        "text": "*I shut the annex door and go down the stairs.*"
     }
 }

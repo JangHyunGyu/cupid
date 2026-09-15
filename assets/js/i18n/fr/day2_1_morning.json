@@ -15,7 +15,7 @@
     },
     "morning2_greet_seo_1_gate": {
         "name": "Seoyeon",
-        "text": "Ce que tu as dit au portail hier — tu t'en souviens, hein ?"
+        "text": "Appel. Assieds-toi."
     },
     "morning2_greet_seo_2": {
         "name": "{name}",
@@ -25,10 +25,7 @@
         "name": "{name}",
         "text": "*Seoyeon tapote une fois son porte-bloc.*"
     },
-    "morning2_greet_dain_1": {
-        "name": "Dain",
-        "text": "Hé ! C'était fun hier, on refait un truc aujourd'hui !"
-    },
+    "morning2_greet_dain_1": {},
     "morning2_greet_dain_2": {
         "name": "Dain",
         "text": "*Elle me tape l'épaule par derrière.*"
@@ -49,10 +46,7 @@
         "name": "{name}",
         "text": "*Une fois la porte de la classe refermée, un coup contre le porte-bloc retentit dans le couloir.*"
     },
-    "morning2_greet_yuna_1": {
-        "name": "{name}",
-        "text": "*Sur le point de m'asseoir, je découvre un mot plié sur mon bureau. « Merci pour hier. »*"
-    },
+    "morning2_greet_yuna_1": {},
     "morning2_greet_yuna_2": {
         "name": "{name}",
         "text": "*L'écriture de Yuna. Une phrase plus longue qu'hier. Au dos, en tout petit : « À l'annexe de la bibliothèque à midi. »*"
@@ -387,5 +381,17 @@
     "morning2_greet_none_neg_2": {
         "name": "{name}",
         "text": "*Seoyeon ne lève pas les yeux du registre. Dain est déjà avec ses amies. Yuna ne quitte pas son livre.*"
+    },
+    "morning2_greet_dain_1_fun": {
+        "name": "Dain",
+        "text": "Hé ! Hier c'était fun, on fait un truc aujourd'hui aussi !"
+    },
+    "morning2_greet_dain_1_plain": {
+        "name": "Dain",
+        "text": "Hé ! Salut. Garde de l'énergie pour aujourd'hui."
+    },
+    "morning2_greet_yuna_1_thanks": {
+        "name": "{name}",
+        "text": "*Sur le point de m'asseoir, je découvre un mot plié sur mon bureau. « Merci pour hier. »*"
     }
 }

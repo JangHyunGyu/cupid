@@ -740,5 +740,13 @@
     "lunch2_dain_cool_cont": {
         "name": "{name}",
         "text": "*Pego um pão soboro e pago. Dain pega só o dela.*"
+    },
+    "lunch2_seo_cool_leave": {
+        "name": "{name}",
+        "text": "*Fecho a marmita e a porta do terraço.*"
+    },
+    "lunch2_yuna_cool_cont": {
+        "name": "{name}",
+        "text": "*Viro só uma página. Yuna não tira o fone.*"
     }
 }

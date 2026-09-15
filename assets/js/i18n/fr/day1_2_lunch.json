@@ -475,5 +475,21 @@
     "lunch_seo_neg_leave": {
         "name": "{name}",
         "text": "*Je ferme la porte du toit et je descends.*"
+    },
+    "lunch_dain_1_aff_neg": {
+        "name": "Dain",
+        "text": "*Elle laisse un écart dans la file et regarde devant.* Pas de pari aujourd'hui. Achète et file."
+    },
+    "lunch_dain_neg_leave": {
+        "name": "{name}",
+        "text": "*Je sors de la file du kiosque et je m'arrête dans le couloir.*"
+    },
+    "lunch_yuna_1_aff_neg": {
+        "name": "Yuna",
+        "text": "*Elle ne ferme pas le livre.* Aujourd'hui je veux pas de compagnie."
+    },
+    "lunch_yuna_neg_leave": {
+        "name": "{name}",
+        "text": "*Je ferme la porte de l'annexe et je descends.*"
     }
 }

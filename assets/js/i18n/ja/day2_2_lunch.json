@@ -740,5 +740,13 @@
     "lunch2_dain_cool_cont": {
         "name": "{name}",
         "text": "*ソボロパンを取って会計する。ダインは自分の分だけ受け取る。*"
+    },
+    "lunch2_seo_cool_leave": {
+        "name": "{name}",
+        "text": "*弁当の蓋を閉めて屋上の扉を閉める。*"
+    },
+    "lunch2_yuna_cool_cont": {
+        "name": "{name}",
+        "text": "*ページを一枚だけめくる。ユナはイヤホンを外さない。*"
     }
 }

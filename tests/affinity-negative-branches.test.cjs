@@ -142,8 +142,19 @@ test('negative lunch and afterschool do not continue the warm hangout', () => {
     assert.equal(scenes.lunch2_dain_cool_cont.next, 'lunch2_dain_9');
     assert.equal(scenes.after2_yuna_cool_1.next, 'after2_yuna_cool_cont');
     assert.equal(scenes.after2_dain_cool_1.next, 'after2_dain_cool_cont');
-    assert.equal(scenes.after2_dain_cool_cont.next, 'after2_dain_16');
+    assert.equal(scenes.after2_dain_cool_cont.next, 'after2_dain_neg_leave');
     assert.equal(scenes.after2_yuna_cool_cont.next, 'after2_yuna_end');
+    assert.equal(scenes.lunch2_seo_cool_cont.next, 'lunch2_seo_cool_leave');
+    assert.equal(scenes.lunch2_seo_cool_leave.next, 'after2_start');
+    assert.equal(scenes.lunch2_yuna_3_cool.next, 'lunch2_yuna_cool_cont');
+    assert.equal(scenes.lunch2_yuna_cool_cont.next, 'lunch2_yuna_end');
+    assert.deepEqual(scenes.after2_dain_2.setFlags, ['chose_dain_after2']);
+    assert.equal(scenes.after2_dain_1.setFlags, undefined);
+    assert.deepEqual(scenes.after2_yuna_2_b.setFlags, ['chose_yuna_after2']);
+    assert.equal(scenes.after2_yuna_1.setFlags, undefined);
+    assert.equal(createSceneRenderer({ Dain: -25 }).resolveNextScene(scenes.lunch_dain_1), 'lunch_dain_1_aff_neg');
+    assert.equal(createSceneRenderer({ Yuna: -25 }).resolveNextScene(scenes.lunch_yuna_1), 'lunch_yuna_1_aff_neg');
+    assert.equal(createSceneRenderer({ Dain: 0 }).resolveNextScene(scenes.lunch_dain_1), 'lunch_dain_1_aff_default');
     assert.equal(scenes.lunch_seo_1_aff_neg.next, 'lunch_seo_neg_leave');
     assert.equal(scenes.lunch_seo_neg_leave.next, 'lunch_end');
     assert.equal(createSceneRenderer({ Seoyeon: 9 }).resolveNextScene(scenes.lunch2_seo_2), 'lunch2_seo_2_cool');
@@ -180,7 +191,11 @@ test('negative-affinity copy exists in every language and differs from the zero-
         ['lunch_seo_neg_leave', 'lunch_seo_2'],
         ['lunch2_dain_cool_cont', 'lunch2_dain_8'],
         ['after2_dain_cool_cont', 'after2_dain_9'],
-        ['after2_yuna_cool_cont', 'after2_yuna_6']
+        ['after2_yuna_cool_cont', 'after2_yuna_6'],
+        ['lunch_dain_1_aff_neg', 'lunch_dain_1_aff_default'],
+        ['lunch_yuna_1_aff_neg', 'lunch_yuna_1_aff_default'],
+        ['lunch2_seo_cool_leave', 'lunch2_seo_7'],
+        ['lunch2_yuna_cool_cont', 'lunch2_yuna_4']
     ];
     for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
         const copy = loadLocaleCopy(locale);

@@ -15,7 +15,7 @@
     },
     "morning2_greet_seo_1_gate": {
         "name": "Seoyeon",
-        "text": "Lo que dijiste ayer en la entrada, ¿te acuerdas?"
+        "text": "Pasar lista. Siéntate."
     },
     "morning2_greet_seo_2": {
         "name": "{name}",
@@ -25,10 +25,7 @@
         "name": "{name}",
         "text": "*Seoyeon da un golpecito a su portapapeles.*"
     },
-    "morning2_greet_dain_1": {
-        "name": "Dain",
-        "text": "¡Oye! ¡Ayer lo pasamos bien, hagamos algo hoy también!"
-    },
+    "morning2_greet_dain_1": {},
     "morning2_greet_dain_2": {
         "name": "Dain",
         "text": "*Me suelta una palmada en el hombro por detrás.*"
@@ -49,10 +46,7 @@
         "name": "{name}",
         "text": "*Después de cerrarse la puerta del salón, desde el pasillo se oye una vez el golpecito del portapapeles.*"
     },
-    "morning2_greet_yuna_1": {
-        "name": "{name}",
-        "text": "*Voy a sentarme — y hay una nota doblada sobre el pupitre. '...Gracias por lo de ayer.'*"
-    },
+    "morning2_greet_yuna_1": {},
     "morning2_greet_yuna_2": {
         "name": "{name}",
         "text": "*La letra de Yuna. Una frase más larga que ayer. — Por detrás, en letra pequeña: 'Al mediodía, en el anexo de la biblioteca.'*"
@@ -387,5 +381,17 @@
     "morning2_greet_none_neg_2": {
         "name": "{name}",
         "text": "*Seoyeon no levanta la vista de la lista. Dain ya está con sus amigas. Yuna no aparta los ojos del libro.*"
+    },
+    "morning2_greet_dain_1_fun": {
+        "name": "Dain",
+        "text": "¡Oye! Ayer fue divertido, ¡hoy también hacemos algo!"
+    },
+    "morning2_greet_dain_1_plain": {
+        "name": "Dain",
+        "text": "¡Oye! Buenos días. Reserva energía para hoy."
+    },
+    "morning2_greet_yuna_1_thanks": {
+        "name": "{name}",
+        "text": "*Voy a sentarme — y hay una nota doblada sobre el pupitre. '...Gracias por lo de ayer.'*"
     }
 }

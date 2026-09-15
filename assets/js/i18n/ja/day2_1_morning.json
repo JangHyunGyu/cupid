@@ -15,7 +15,7 @@
     },
     "morning2_greet_seo_1_gate": {
         "name": "ソヨン",
-        "text": "昨日、校門で言ったこと、覚えてるよね？"
+        "text": "出席確認。座って。"
     },
     "morning2_greet_seo_2": {
         "name": "{name}",
@@ -25,10 +25,7 @@
         "name": "{name}",
         "text": "*ソヨンがクリップボードを一度叩く。*"
     },
-    "morning2_greet_dain_1": {
-        "name": "ダイン",
-        "text": "ねえ！　昨日、楽しかったね！　今日も何か一緒にやろうよ！"
-    },
+    "morning2_greet_dain_1": {},
     "morning2_greet_dain_2": {
         "name": "ダイン",
         "text": "*後ろからバシッと肩を叩いてきた。*"
@@ -49,10 +46,7 @@
         "name": "{name}",
         "text": "*教室のドアが閉まったあと、廊下からクリップボードを叩く音が一度聞こえる。*"
     },
-    "morning2_greet_yuna_1": {
-        "name": "{name}",
-        "text": "*座ろうとすると――机の上に折りたたまれたメモ。『……昨日、ありがとう』*"
-    },
+    "morning2_greet_yuna_1": {},
     "morning2_greet_yuna_2": {
         "name": "{name}",
         "text": "*ユナの字。昨日より一文だけ長くなっている。――裏に小さく『昼休み、図書館別館で。』*"
@@ -387,5 +381,17 @@
     "morning2_greet_none_neg_2": {
         "name": "{name}",
         "text": "*ソヨンは出席簿から目を離さず、ダインは先に友達のほうへ行く。ユナは本だけを見ている。*"
+    },
+    "morning2_greet_dain_1_fun": {
+        "name": "ダイン",
+        "text": "おっ！昨日楽しかった、今日も何かしよう！"
+    },
+    "morning2_greet_dain_1_plain": {
+        "name": "ダイン",
+        "text": "おっ！おはよう。今日も元気出しとけよ。"
+    },
+    "morning2_greet_yuna_1_thanks": {
+        "name": "{name}",
+        "text": "*座ろうとすると――机の上に折りたたまれたメモ。『……昨日、ありがとう』*"
     }
 }

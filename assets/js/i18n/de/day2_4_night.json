@@ -34,7 +34,7 @@
     },
     "night2_msg_dain_general": {
         "name": "Dain",
-        "text": "Hey, lass uns morgen zum Kiosk gehen! Ich ärgere mich immer noch, dass wir heute nicht hin konnten!"
+        "text": "Hey, morgen Kiosk."
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
@@ -50,7 +50,7 @@
     },
     "night2_msg_generic": {
         "name": "Dain",
-        "text": "Hey, morgen gehen wir zum Schulkiosk, ja?"
+        "text": "Hey. Bis morgen in der Schule."
     },
     "night2_msg_generic_2": {
         "name": "Seoyeon",

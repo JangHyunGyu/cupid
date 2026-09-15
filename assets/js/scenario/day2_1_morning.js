@@ -48,6 +48,18 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "morning2_note_1"
     },
     "morning2_greet_dain_1": {
+        "routeBeforeRender": true,
+        "branches": [
+            { "condition": "chose_dain_lunch", "next": "morning2_greet_dain_1_fun" },
+            { "next": "morning2_greet_dain_1_plain" }
+        ]
+    },
+    "morning2_greet_dain_1_fun": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "next": "morning2_greet_dain_2"
+    },
+    "morning2_greet_dain_1_plain": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_laugh.png",
         "next": "morning2_greet_dain_2"
@@ -78,6 +90,13 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "morning2_note_1"
     },
     "morning2_greet_yuna_1": {
+        "routeBeforeRender": true,
+        "branches": [
+            { "condition": "chose_yuna_lunch", "next": "morning2_greet_yuna_1_thanks" },
+            { "next": "morning2_greet_yuna_2" }
+        ]
+    },
+    "morning2_greet_yuna_1_thanks": {
         "background": "assets/images/background/room_school.png",
         "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
         "next": "morning2_greet_yuna_2"

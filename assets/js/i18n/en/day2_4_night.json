@@ -34,7 +34,7 @@
     },
     "night2_msg_dain_general": {
         "name": "Dain",
-        "text": "Yo, snack bar tomorrow! Still salty we skipped it today!"
+        "text": "Hey, snack bar tomorrow."
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
@@ -50,7 +50,7 @@
     },
     "night2_msg_generic": {
         "name": "Dain",
-        "text": "Hey! You're coming to the snack bar tomorrow, right?"
+        "text": "Hey. See you at school tomorrow."
     },
     "night2_msg_generic_2": {
         "name": "Seoyeon",

@@ -740,5 +740,13 @@
     "lunch2_dain_cool_cont": {
         "name": "{name}",
         "text": "*Cojo un bollo soboro y pago. Dain coge solo el suyo.*"
+    },
+    "lunch2_seo_cool_leave": {
+        "name": "{name}",
+        "text": "*Cierro el táper y la puerta de la azotea.*"
+    },
+    "lunch2_yuna_cool_cont": {
+        "name": "{name}",
+        "text": "*Paso una sola hoja. Yuna no se quita el auricular.*"
     }
 }

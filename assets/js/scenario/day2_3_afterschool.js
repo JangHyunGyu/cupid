@@ -158,13 +158,13 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_active.png",
         "bgm": "daily2.mp3",
-        "setFlags": ["chose_dain_after2"],
         "stats": {"Dain":{"affinity":3}},
         "next": "after2_dain_tone"
     },
     "after2_dain_2": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_sweat.png",
+        "setFlags": ["chose_dain_after2"],
         "next": "after2_dain_3"
     },
     "after2_dain_3": {
@@ -787,7 +787,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "bgm": "night1.mp3",
-        "setFlags": ["chose_yuna_after2"],
         "next": "after2_yuna_1_b"
     },
     "after2_yuna_1_b": {
@@ -805,6 +804,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "after2_yuna_2_b": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_shy.png",
+        "setFlags": ["chose_yuna_after2"],
         "next": "after2_yuna_3"
     },
     "after2_yuna_3": {
@@ -1118,7 +1118,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "after2_dain_cool_cont": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "after2_dain_16"
+        "next": "after2_dain_neg_leave"
     },
     "after2_dain_neg_1": {
         "background": "assets/images/background/gym.png",

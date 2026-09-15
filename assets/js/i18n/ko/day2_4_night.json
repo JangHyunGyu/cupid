@@ -34,7 +34,7 @@
     },
     "night2_msg_dain_general": {
         "name": "다인",
-        "text": "야, 내일 매점 가자! 오늘 못 간 거 아직 아쉽거든!"
+        "text": "야, 내일 매점 가자."
     },
     "night2_msg_dain_general_merge": {
         "name": "서연",
@@ -50,7 +50,7 @@
     },
     "night2_msg_generic": {
         "name": "다인",
-        "text": "야, 내일 매점 갈 거지?"
+        "text": "야, 내일 학교에서 보자."
     },
     "night2_msg_generic_2": {
         "name": "서연",

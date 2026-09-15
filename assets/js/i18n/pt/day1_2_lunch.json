@@ -475,5 +475,21 @@
     "lunch_seo_neg_leave": {
         "name": "{name}",
         "text": "*Fecho a porta do terraço e desço a escada.*"
+    },
+    "lunch_dain_1_aff_neg": {
+        "name": "Dain",
+        "text": "*Ela deixa um vão na fila e olha pra frente.* Hoje sem aposta. Compra e vai."
+    },
+    "lunch_dain_neg_leave": {
+        "name": "{name}",
+        "text": "*Saio da fila da cantina e fico no corredor.*"
+    },
+    "lunch_yuna_1_aff_neg": {
+        "name": "Yuna",
+        "text": "*Ela não fecha o livro.* Hoje não quero companhia."
+    },
+    "lunch_yuna_neg_leave": {
+        "name": "{name}",
+        "text": "*Fecho a porta do anexo e desço a escada.*"
     }
 }

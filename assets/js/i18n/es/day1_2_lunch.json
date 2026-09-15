@@ -475,5 +475,21 @@
     "lunch_seo_neg_leave": {
         "name": "{name}",
         "text": "*Cierro la puerta de la azotea y bajo las escaleras.*"
+    },
+    "lunch_dain_1_aff_neg": {
+        "name": "Dain",
+        "text": "*Deja un hueco en la cola y mira al frente.* Hoy no hay apuesta. Compra y vete."
+    },
+    "lunch_dain_neg_leave": {
+        "name": "{name}",
+        "text": "*Salgo de la cola del kiosco y me quedo en el pasillo.*"
+    },
+    "lunch_yuna_1_aff_neg": {
+        "name": "Yuna",
+        "text": "*No cierra el libro.* Hoy no quiero compañía."
+    },
+    "lunch_yuna_neg_leave": {
+        "name": "{name}",
+        "text": "*Cierro la puerta del anexo y bajo las escaleras.*"
     }
 }

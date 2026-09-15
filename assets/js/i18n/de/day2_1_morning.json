@@ -15,7 +15,7 @@
     },
     "morning2_greet_seo_1_gate": {
         "name": "Seoyeon",
-        "text": "Was du gestern am Tor gesagt hast — du erinnerst dich, oder?"
+        "text": "Anwesenheit. Setz dich."
     },
     "morning2_greet_seo_2": {
         "name": "{name}",
@@ -25,10 +25,7 @@
         "name": "{name}",
         "text": "*Seoyeon tippt einmal gegen ihr Klemmbrett.*"
     },
-    "morning2_greet_dain_1": {
-        "name": "Dain",
-        "text": "Hey! Gestern war's lustig. Lass uns heute auch etwas zusammen machen!"
-    },
+    "morning2_greet_dain_1": {},
     "morning2_greet_dain_2": {
         "name": "Dain",
         "text": "*Sie klatscht mir von hinten auf die Schulter.*"
@@ -49,10 +46,7 @@
         "name": "{name}",
         "text": "*Nachdem die Klassenzimmertür zufällt, ist vom Flur ein einzelnes Klopfen gegen ein Klemmbrett zu hören.*"
     },
-    "morning2_greet_yuna_1": {
-        "name": "{name}",
-        "text": "*Als ich mich setzen will, liegt ein gefalteter Zettel auf meinem Tisch. »Danke für gestern.«*"
-    },
+    "morning2_greet_yuna_1": {},
     "morning2_greet_yuna_2": {
         "name": "{name}",
         "text": "*Yunas Handschrift. Ein Satz länger als gestern. — Auf der Rückseite, winzig klein: 'Mittags im Bibliotheksanbau.'*"
@@ -387,5 +381,17 @@
     "morning2_greet_none_neg_2": {
         "name": "{name}",
         "text": "*Seoyeon sieht nicht von der Liste auf. Dain ist schon bei ihren Freundinnen. Yuna starrt nur in ihr Buch.*"
+    },
+    "morning2_greet_dain_1_fun": {
+        "name": "Dain",
+        "text": "Hey! Gestern war's lustig, heute wieder was zusammen!"
+    },
+    "morning2_greet_dain_1_plain": {
+        "name": "Dain",
+        "text": "Hey! Morgen. Spar dir Energie für heute."
+    },
+    "morning2_greet_yuna_1_thanks": {
+        "name": "{name}",
+        "text": "*Als ich mich setzen will, liegt ein gefalteter Zettel auf meinem Tisch. »Danke für gestern.«*"
     }
 }

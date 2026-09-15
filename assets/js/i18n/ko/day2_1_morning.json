@@ -15,7 +15,7 @@
     },
     "morning2_greet_seo_1_gate": {
         "name": "서연",
-        "text": "어제 교문에서 한 말, 기억은 하지?"
+        "text": "출석 확인이야. 앉아."
     },
     "morning2_greet_seo_2": {
         "name": "{name}",
@@ -25,10 +25,7 @@
         "name": "{name}",
         "text": "*서연이 클립보드를 한 번 두드린다.*"
     },
-    "morning2_greet_dain_1": {
-        "name": "다인",
-        "text": "야! 어제 재밌었다, 오늘도 같이 뭐 하자!"
-    },
+    "morning2_greet_dain_1": {},
     "morning2_greet_dain_2": {
         "name": "다인",
         "text": "*뒤에서 어깨를 탁 친다.*"
@@ -49,10 +46,7 @@
         "name": "{name}",
         "text": "*교실 문이 닫힌 뒤 클립보드 두드리는 소리가 복도에서 한 번 들린다.*"
     },
-    "morning2_greet_yuna_1": {
-        "name": "{name}",
-        "text": "*자리에 앉으려는데 책상 위에 접힌 쪽지가 놓여 있다. '어제, 고마웠어.'*"
-    },
+    "morning2_greet_yuna_1": {},
     "morning2_greet_yuna_2": {
         "name": "{name}",
         "text": "*유나의 글씨. 어제보다 한 문장이 길어졌다. — 뒷면에 작게 '점심에 도서관 별관으로.'*"
@@ -387,5 +381,17 @@
     "morning2_greet_none_neg_2": {
         "name": "{name}",
         "text": "*서연은 출석부에서 눈을 떼지 않는다. 다인은 친구들 쪽으로 먼저 간다. 유나는 책만 보고 있다.*"
+    },
+    "morning2_greet_dain_1_fun": {
+        "name": "다인",
+        "text": "야! 어제 재밌었다, 오늘도 같이 뭐 하자!"
+    },
+    "morning2_greet_dain_1_plain": {
+        "name": "다인",
+        "text": "야! 좋은 아침. 오늘도 에너지 채워 둬."
+    },
+    "morning2_greet_yuna_1_thanks": {
+        "name": "{name}",
+        "text": "*자리에 앉으려는데 책상 위에 접힌 쪽지가 놓여 있다. '어제, 고마웠어.'*"
     }
 }

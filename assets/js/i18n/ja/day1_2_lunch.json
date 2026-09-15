@@ -475,5 +475,21 @@
     "lunch_seo_neg_leave": {
         "name": "{name}",
         "text": "*屋上の扉を閉めて階段を下りる。*"
+    },
+    "lunch_dain_1_aff_neg": {
+        "name": "ダイン",
+        "text": "*列を一つ空けて前だけ見る。* 今日は勝負しない。買ったら行け。"
+    },
+    "lunch_dain_neg_leave": {
+        "name": "{name}",
+        "text": "*売店の列から抜けて廊下に立つ。*"
+    },
+    "lunch_yuna_1_aff_neg": {
+        "name": "ユナ",
+        "text": "*本を閉じない。* 今日は一緒にいたくない。"
+    },
+    "lunch_yuna_neg_leave": {
+        "name": "{name}",
+        "text": "*別館の扉を閉めて階段を下りる。*"
     }
 }

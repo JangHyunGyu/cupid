@@ -34,7 +34,7 @@
     },
     "night2_msg_dain_general": {
         "name": "Dain",
-        "text": "Ei, amanhã bora pra cantina! Ainda tô chateada porque não fui hoje!"
+        "text": "Ei, amanhã a cantina."
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
@@ -50,7 +50,7 @@
     },
     "night2_msg_generic": {
         "name": "Dain",
-        "text": "Ei, amanhã vamos à cantina, né?"
+        "text": "Ei. A gente se vê amanhã na escola."
     },
     "night2_msg_generic_2": {
         "name": "Seoyeon",

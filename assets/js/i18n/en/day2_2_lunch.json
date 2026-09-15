@@ -740,5 +740,13 @@
     "lunch2_dain_cool_cont": {
         "name": "{name}",
         "text": "*I grab a soboro bun and pay. Dain takes only her own.*"
+    },
+    "lunch2_seo_cool_leave": {
+        "name": "{name}",
+        "text": "*I close the lunch box and shut the rooftop door.*"
+    },
+    "lunch2_yuna_cool_cont": {
+        "name": "{name}",
+        "text": "*I turn a single page. Yuna does not take out an earphone.*"
     }
 }

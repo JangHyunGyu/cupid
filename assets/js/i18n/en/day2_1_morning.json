@@ -15,7 +15,7 @@
     },
     "morning2_greet_seo_1_gate": {
         "name": "Seoyeon",
-        "text": "What you said at the gate yesterday — you remember, right?"
+        "text": "Attendance check. Sit down."
     },
     "morning2_greet_seo_2": {
         "name": "{name}",
@@ -25,10 +25,7 @@
         "name": "{name}",
         "text": "*Seoyeon taps her clipboard once.*"
     },
-    "morning2_greet_dain_1": {
-        "name": "Dain",
-        "text": "Hey! Yesterday was fun, let's hang again today!"
-    },
+    "morning2_greet_dain_1": {},
     "morning2_greet_dain_2": {
         "name": "Dain",
         "text": "*She slaps my shoulder from behind.*"
@@ -49,10 +46,7 @@
         "name": "{name}",
         "text": "*After the classroom door closes, a single tap of a clipboard sounds from the hall.*"
     },
-    "morning2_greet_yuna_1": {
-        "name": "{name}",
-        "text": "*As I'm about to sit down, I find a folded note on my desk. “Thank you for yesterday.”*"
-    },
+    "morning2_greet_yuna_1": {},
     "morning2_greet_yuna_2": {
         "name": "{name}",
         "text": "*Yuna's handwriting. One sentence longer than yesterday. — On the back, in tiny letters: 'Library annex at lunch.'*"
@@ -387,5 +381,17 @@
     "morning2_greet_none_neg_2": {
         "name": "{name}",
         "text": "*Seoyeon never looks up from the roll. Dain is already with her friends. Yuna keeps her eyes on her book.*"
+    },
+    "morning2_greet_dain_1_fun": {
+        "name": "Dain",
+        "text": "Hey! Yesterday was fun, let's hang again today!"
+    },
+    "morning2_greet_dain_1_plain": {
+        "name": "Dain",
+        "text": "Hey! Morning. Save some energy for today."
+    },
+    "morning2_greet_yuna_1_thanks": {
+        "name": "{name}",
+        "text": "*As I'm about to sit down, I find a folded note on my desk. “Thank you for yesterday.”*"
     }
 }
