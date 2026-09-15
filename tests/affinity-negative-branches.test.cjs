@@ -139,7 +139,42 @@ test('negative lunch and afterschool do not continue the warm hangout', () => {
     assert.equal(scenes.lunch2_seo_2_cool.next, 'lunch2_seo_cool_cont');
     assert.notEqual(scenes.lunch2_seo_2_cool.next, 'lunch2_seo_3');
     assert.equal(scenes.lunch2_dain_2_cool.next, 'lunch2_dain_cool_cont');
-    assert.equal(scenes.lunch2_dain_cool_cont.next, 'lunch2_dain_9');
+    assert.equal(scenes.lunch2_dain_cool_cont.next, 'lunch2_dain_cool_leave');
+    assert.equal(scenes.lunch2_dain_cool_leave.next, 'lunch2_dain_end_b');
+    assert.notEqual(scenes.lunch2_dain_cool_cont.next, 'lunch2_dain_9');
+    assert.equal(createSceneRenderer({ Seoyeon: 5 }).resolveNextScene(scenes.after2_seo_9), 'after2_seo_leave');
+    assert.equal(createSceneRenderer({ Seoyeon: 20 }).resolveNextScene(scenes.after2_seo_9), 'after2_seo_choice2');
+    assert.equal(
+        createSceneRenderer({ Seoyeon: 12 }, { route_seoyeon: true, postponed_seoyeon: true })
+            .resolveNextScene(scenes.after5_last_chance_route_check),
+        'after5_last_chance_seo_aff_check'
+    );
+    assert.equal(
+        createSceneRenderer({ Seoyeon: 12 }, { route_seoyeon: true, postponed_seoyeon: true })
+            .resolveNextScene(scenes.after5_last_chance_seo_aff_check),
+        'after5_last_chance_seo_low_1'
+    );
+    assert.equal(
+        createSceneRenderer({ Seoyeon: 50 }, { route_seoyeon: true, postponed_seoyeon: true })
+            .resolveNextScene(scenes.after5_last_chance_seo_aff_check),
+        'after5_last_chance_seo_history_check'
+    );
+    assert.equal(
+        createSceneRenderer({ Seoyeon: 50 }, { postponed_seoyeon: true })
+            .resolveNextScene(scenes.after5_last_chance_seo_history_check),
+        'after5_last_chance_seo_postponed'
+    );
+    assert.equal(scenes.after5_last_chance_seo_postponed.next, 'after5_last_chance_2_b');
+    assert.equal(
+        createSceneRenderer({ Dain: 8 }, { route_dain: true, postponed_dain: true })
+            .resolveNextScene(scenes.after5_last_chance_dain_aff_check),
+        'after5_last_chance_dain_low_1'
+    );
+    assert.equal(
+        createSceneRenderer({ Yuna: -25 }, { route_yuna: true, postponed_yuna: true })
+            .resolveNextScene(scenes.after5_last_chance_yuna_aff_check),
+        'after5_last_chance_yuna_neg'
+    );
     assert.equal(scenes.after2_yuna_cool_1.next, 'after2_yuna_cool_cont');
     assert.equal(scenes.after2_dain_cool_1.next, 'after2_dain_cool_cont');
     assert.equal(scenes.after2_dain_cool_cont.next, 'after2_dain_neg_leave');
@@ -224,6 +259,7 @@ test('negative-affinity copy exists in every language and differs from the zero-
         ['after5_confess_react_seo_neg', 'after5_confess_react_seo_low'],
         ['lunch_seo_neg_leave', 'lunch_seo_2'],
         ['lunch2_dain_cool_cont', 'lunch2_dain_8'],
+        ['lunch2_dain_cool_leave', 'lunch2_dain_9'],
         ['after2_dain_cool_cont', 'after2_dain_9'],
         ['after2_yuna_cool_cont', 'after2_yuna_6'],
         ['lunch_dain_1_aff_neg', 'lunch_dain_1_aff_default'],

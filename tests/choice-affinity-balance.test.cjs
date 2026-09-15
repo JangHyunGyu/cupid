@@ -1192,6 +1192,16 @@ test('day-five continuity keeps availability, history, affinity, and final choic
             createSceneRenderer({}, { [`day4_distance_${character}`]: true }).resolveNextScene(historyScene),
             `after5_last_chance_${route}_distance`
         );
+        const affChar = character === 'seoyeon' ? 'Seoyeon' : character === 'yuna' ? 'Yuna' : 'Dain';
+        const affCheck = scenes[`after5_last_chance_${route}_aff_check`];
+        assert.equal(
+            createSceneRenderer({ [affChar]: 12 }, { [`route_${character}`]: true, [`postponed_${character}`]: true })
+                .resolveNextScene(scenes.after5_last_chance_route_check),
+            `after5_last_chance_${route}_aff_check`
+        );
+        assert.equal(createSceneRenderer({ [affChar]: 12 }).resolveNextScene(affCheck), `after5_last_chance_${route}_low_1`);
+        assert.equal(createSceneRenderer({ [affChar]: 50 }).resolveNextScene(affCheck), `after5_last_chance_${route}_history_check`);
+        assert.equal(scenes[`after5_last_chance_${route}_postponed`].next, route === 'seo' ? 'after5_last_chance_2_b' : route === 'dain' ? 'after5_last_chance_2_k' : 'after5_last_chance_yuna_1');
     }
 
     assert.equal(createSceneRenderer({ Teacher: 60 }).resolveNextScene(scenes.after5_hidden_teacher_affinity_check), 'after5_hidden_teacher_high');

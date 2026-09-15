@@ -1028,7 +1028,12 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_dain_cool_cont": {
         "background": "assets/images/background/store.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "lunch2_dain_9"
+        "next": "lunch2_dain_cool_leave"
+    },
+    "lunch2_dain_cool_leave": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "lunch2_dain_end_b"
     },
     "lunch2_yuna_3_warm": {
         "background": "assets/images/background/yuna_hideout.png",

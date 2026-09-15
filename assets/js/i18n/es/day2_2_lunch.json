@@ -741,6 +741,10 @@
         "name": "{name}",
         "text": "*Cojo un bollo soboro y pago. Dain coge solo el suyo.*"
     },
+    "lunch2_dain_cool_leave": {
+        "name": "{name}",
+        "text": "*Termino de pagar y salgo al pasillo. Dain ya camina hacia sus amigas.*"
+    },
     "lunch2_seo_cool_leave": {
         "name": "{name}",
         "text": "*Cierro el táper y la puerta de la azotea.*"

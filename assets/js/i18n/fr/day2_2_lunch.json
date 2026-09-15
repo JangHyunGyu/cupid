@@ -741,6 +741,10 @@
         "name": "{name}",
         "text": "*Je prends un bun soboro et je paie. Dain ne prend que le sien.*"
     },
+    "lunch2_dain_cool_leave": {
+        "name": "{name}",
+        "text": "*Je finis de payer et je sors dans le couloir. Dain marche déjà vers ses amies.*"
+    },
     "lunch2_seo_cool_leave": {
         "name": "{name}",
         "text": "*Je referme la boîte et la porte du toit.*"

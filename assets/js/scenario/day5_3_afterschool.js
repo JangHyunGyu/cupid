@@ -475,42 +475,44 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/school_back.png",
         "character": null,
         "branches": [
-            { "condition": "route_seoyeon", "next": "after5_last_chance_seo_history_check" },
-            { "condition": "route_dain", "next": "after5_last_chance_dain_history_check" },
-            { "condition": "route_yuna", "next": "after5_last_chance_yuna_history_check" },
+            { "condition": "route_seoyeon", "next": "after5_last_chance_seo_aff_check" },
+            { "condition": "route_dain", "next": "after5_last_chance_dain_aff_check" },
+            { "condition": "route_yuna", "next": "after5_last_chance_yuna_aff_check" },
             { "next": "after5_last_chance_choice" }
         ]
     },
     "after5_last_chance_seo_history_check": {
         "background": "assets/images/background/school_back.png",
         "character": null,
+        "routeBeforeRender": true,
         "branches": [
             { "condition": "postponed_seoyeon", "next": "after5_last_chance_seo_postponed" },
             { "condition": "day4_tentative_seoyeon", "next": "after5_last_chance_seo_tentative" },
             { "condition": "day4_distance_seoyeon", "next": "after5_last_chance_seo_distance" },
-            { "next": "after5_last_chance_seo_aff_check" }
+            { "next": "after5_last_chance_2_b" }
         ]
     },
     "after5_last_chance_seo_postponed": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "after5_last_chance_seo_aff_check"
+        "next": "after5_last_chance_2_b"
     },
     "after5_last_chance_seo_tentative": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "after5_last_chance_seo_aff_check"
+        "next": "after5_last_chance_2_b"
     },
     "after5_last_chance_seo_distance": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/seyoun_sad.png",
-        "next": "after5_last_chance_seo_aff_check"
+        "next": "after5_last_chance_2_b"
     },
     "after5_last_chance_seo_aff_check": {
         "background": "assets/images/background/school_back.png",
         "character": null,
         "affinityChar": "Seoyeon",
-        "affinityBranches": [{"minAffinity":50,"next":"after5_last_chance_2_b"},{"minAffinity":0,"next":"after5_last_chance_seo_low_1"},{"minAffinity":-19,"next":"after5_last_chance_seo_low_1"},{"minAffinity":-100,"next":"after5_last_chance_seo_neg"}],
+        "routeBeforeRender": true,
+        "affinityBranches": [{"minAffinity":50,"next":"after5_last_chance_seo_history_check"},{"minAffinity":0,"next":"after5_last_chance_seo_low_1"},{"minAffinity":-19,"next":"after5_last_chance_seo_low_1"},{"minAffinity":-100,"next":"after5_last_chance_seo_neg"}],
         "next": "after5_last_chance_seo_neg"
     },
     "after5_last_chance_2_b": {
@@ -571,33 +573,35 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "after5_last_chance_dain_history_check": {
         "background": "assets/images/background/school_back.png",
         "character": null,
+        "routeBeforeRender": true,
         "branches": [
             { "condition": "postponed_dain", "next": "after5_last_chance_dain_postponed" },
             { "condition": "day4_tentative_dain", "next": "after5_last_chance_dain_tentative" },
             { "condition": "day4_distance_dain", "next": "after5_last_chance_dain_distance" },
-            { "next": "after5_last_chance_dain_aff_check" }
+            { "next": "after5_last_chance_2_k" }
         ]
     },
     "after5_last_chance_dain_postponed": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "after5_last_chance_dain_aff_check"
+        "next": "after5_last_chance_2_k"
     },
     "after5_last_chance_dain_tentative": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "after5_last_chance_dain_aff_check"
+        "next": "after5_last_chance_2_k"
     },
     "after5_last_chance_dain_distance": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/dain_sad.png",
-        "next": "after5_last_chance_dain_aff_check"
+        "next": "after5_last_chance_2_k"
     },
     "after5_last_chance_dain_aff_check": {
         "background": "assets/images/background/school_back.png",
         "character": null,
         "affinityChar": "Dain",
-        "affinityBranches": [{"minAffinity":50,"next":"after5_last_chance_2_k"},{"minAffinity":0,"next":"after5_last_chance_dain_low_1"},{"minAffinity":-19,"next":"after5_last_chance_dain_low_1"},{"minAffinity":-100,"next":"after5_last_chance_dain_neg"}],
+        "routeBeforeRender": true,
+        "affinityBranches": [{"minAffinity":50,"next":"after5_last_chance_dain_history_check"},{"minAffinity":0,"next":"after5_last_chance_dain_low_1"},{"minAffinity":-19,"next":"after5_last_chance_dain_low_1"},{"minAffinity":-100,"next":"after5_last_chance_dain_neg"}],
         "next": "after5_last_chance_dain_neg"
     },
     "after5_last_chance_2_k": {
@@ -658,33 +662,35 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "after5_last_chance_yuna_history_check": {
         "background": "assets/images/background/school_back.png",
         "character": null,
+        "routeBeforeRender": true,
         "branches": [
             { "condition": "postponed_yuna", "next": "after5_last_chance_yuna_postponed" },
             { "condition": "day4_tentative_yuna", "next": "after5_last_chance_yuna_tentative" },
             { "condition": "day4_distance_yuna", "next": "after5_last_chance_yuna_distance" },
-            { "next": "after5_last_chance_yuna_aff_check" }
+            { "next": "after5_last_chance_yuna_1" }
         ]
     },
     "after5_last_chance_yuna_postponed": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "after5_last_chance_yuna_aff_check"
+        "next": "after5_last_chance_yuna_1"
     },
     "after5_last_chance_yuna_tentative": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "after5_last_chance_yuna_aff_check"
+        "next": "after5_last_chance_yuna_1"
     },
     "after5_last_chance_yuna_distance": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/yuna_sad.png",
-        "next": "after5_last_chance_yuna_aff_check"
+        "next": "after5_last_chance_yuna_1"
     },
     "after5_last_chance_yuna_aff_check": {
         "background": "assets/images/background/school_back.png",
         "character": null,
         "affinityChar": "Yuna",
-        "affinityBranches": [{"minAffinity":50,"next":"after5_last_chance_yuna_1"},{"minAffinity":0,"next":"after5_last_chance_yuna_low_1"},{"minAffinity":-19,"next":"after5_last_chance_yuna_low_1"},{"minAffinity":-100,"next":"after5_last_chance_yuna_neg"}],
+        "routeBeforeRender": true,
+        "affinityBranches": [{"minAffinity":50,"next":"after5_last_chance_yuna_history_check"},{"minAffinity":0,"next":"after5_last_chance_yuna_low_1"},{"minAffinity":-19,"next":"after5_last_chance_yuna_low_1"},{"minAffinity":-100,"next":"after5_last_chance_yuna_neg"}],
         "next": "after5_last_chance_yuna_neg"
     },
     "after5_last_chance_yuna_1": {

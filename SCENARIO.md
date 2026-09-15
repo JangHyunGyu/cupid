@@ -5213,25 +5213,6 @@
 
 ---
 
-### `lunch2_dain_2_cool`
-- 배경: `store.png`
-- 스탯: Dain +6
-- 다음: `lunch2_dain_cool_cont`
-
-- 캐릭터: `dain_normal.png`
-**다인**: 왔으면 줄이나 서. 빵은 네가 사는 거 알지.
-
----
-
-### `lunch2_dain_cool_cont`
-- 배경: `store.png`
-- 다음: `lunch2_dain_9`
-
-- 캐릭터: `dain_normal.png`
-**{name}**: *소보로를 집어 계산한다. 다인은 자기 몫만 받아 든다.*
-
----
-
 ### `lunch2_dain_9`
 - 배경: `school_hallway.png`
 - 다음: `lunch2_dain_10`
@@ -5340,6 +5321,34 @@
 
 - 캐릭터: `dain_pout.png`
 **{name}**: *다인이 소보로를 씹는 동안, 서연이 사라진 매점 유리문은 아직 앞뒤로 흔들린다.*
+
+---
+
+### `lunch2_dain_2_cool`
+- 배경: `store.png`
+- 스탯: Dain +6
+- 다음: `lunch2_dain_cool_cont`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 왔으면 줄이나 서. 빵은 네가 사는 거 알지.
+
+---
+
+### `lunch2_dain_cool_cont`
+- 배경: `store.png`
+- 다음: `lunch2_dain_cool_leave`
+
+- 캐릭터: `dain_normal.png`
+**{name}**: *소보로를 집어 계산한다. 다인은 자기 몫만 받아 든다.*
+
+---
+
+### `lunch2_dain_cool_leave`
+- 배경: `school_hallway.png`
+- 다음: `lunch2_dain_end_b`
+
+- 캐릭터: `없음`
+**{name}**: *계산을 마치고 복도로 나온다. 다인은 친구들 쪽으로 먼저 간다.*
 
 ---
 
@@ -7376,7 +7385,12 @@
 
 ### `after2_seo_9`
 - 배경: `student_room.png`
-- 다음: `after2_seo_choice2`
+- 호감분기: Seoyeon
+  - [20+] → `after2_seo_choice2`
+  - [0+] → `after2_seo_leave`
+  - [-19 이상] → `after2_seo_leave`
+  - [기본] → `after2_seo_leave`
+- 다음: `after2_seo_leave`
 
 - 캐릭터: `seyoun_normal.png`
 **{name}**: *블라인드 그림자가 책상 끝까지 길어질 무렵 서류 정리가 거의 끝난다.*
@@ -25523,10 +25537,25 @@
 ### `after5_last_chance_route_check`
 - 배경: `school_back.png`
 - 분기:
-  - [`route_seoyeon`] → `after5_last_chance_seo_history_check`
-  - [`route_dain`] → `after5_last_chance_dain_history_check`
-  - [`route_yuna`] → `after5_last_chance_yuna_history_check`
+  - [`route_seoyeon`] → `after5_last_chance_seo_aff_check`
+  - [`route_dain`] → `after5_last_chance_dain_aff_check`
+  - [`route_yuna`] → `after5_last_chance_yuna_aff_check`
   - [기본] → `after5_last_chance_choice`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
+### `after5_last_chance_seo_aff_check`
+- 배경: `school_back.png`
+- 호감분기: Seoyeon
+  - [50+] → `after5_last_chance_seo_history_check`
+  - [0+] → `after5_last_chance_seo_low_1`
+  - [-19 이상] → `after5_last_chance_seo_low_1`
+  - [기본] → `after5_last_chance_seo_neg`
+- 다음: `after5_last_chance_seo_neg`
 
 - 캐릭터: `없음`
 
@@ -25540,7 +25569,7 @@
   - [`postponed_seoyeon`] → `after5_last_chance_seo_postponed`
   - [`day4_tentative_seoyeon`] → `after5_last_chance_seo_tentative`
   - [`day4_distance_seoyeon`] → `after5_last_chance_seo_distance`
-  - [기본] → `after5_last_chance_seo_aff_check`
+  - [기본] → `after5_last_chance_2_b`
 
 - 캐릭터: `없음`
 
@@ -25550,7 +25579,7 @@
 
 ### `after5_last_chance_seo_postponed`
 - 배경: `school_back.png`
-- 다음: `after5_last_chance_seo_aff_check`
+- 다음: `after5_last_chance_2_b`
 
 - 캐릭터: `seyoun_normal.png`
 **서연**: 어제 옥상에서 남긴 말, 오늘은 끝까지 해.
@@ -25559,7 +25588,7 @@
 
 ### `after5_last_chance_seo_tentative`
 - 배경: `school_back.png`
-- 다음: `after5_last_chance_seo_aff_check`
+- 다음: `after5_last_chance_2_b`
 
 - 캐릭터: `seyoun_normal.png`
 **서연**: 어제는 다음 약속을 안 잡았지. 그래도 오늘은 네가 먼저 왔네.
@@ -25568,25 +25597,10 @@
 
 ### `after5_last_chance_seo_distance`
 - 배경: `school_back.png`
-- 다음: `after5_last_chance_seo_aff_check`
+- 다음: `after5_last_chance_2_b`
 
 - 캐릭터: `seyoun_sad.png`
 **서연**: 어제는 여기서 멈추자고 했어. 오늘 온 이유부터 들을게.
-
----
-
-### `after5_last_chance_seo_aff_check`
-- 배경: `school_back.png`
-- 호감분기: Seoyeon
-  - [50+] → `after5_last_chance_2_b`
-  - [0+] → `after5_last_chance_seo_low_1`
-  - [-19 이상] → `after5_last_chance_seo_low_1`
-  - [기본] → `after5_last_chance_seo_neg`
-- 다음: `after5_last_chance_seo_neg`
-
-- 캐릭터: `없음`
-
-<!-- i18n -->
 
 ---
 
@@ -25698,13 +25712,28 @@
 
 ---
 
+### `after5_last_chance_dain_aff_check`
+- 배경: `school_back.png`
+- 호감분기: Dain
+  - [50+] → `after5_last_chance_dain_history_check`
+  - [0+] → `after5_last_chance_dain_low_1`
+  - [-19 이상] → `after5_last_chance_dain_low_1`
+  - [기본] → `after5_last_chance_dain_neg`
+- 다음: `after5_last_chance_dain_neg`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
 ### `after5_last_chance_dain_history_check`
 - 배경: `school_back.png`
 - 분기:
   - [`postponed_dain`] → `after5_last_chance_dain_postponed`
   - [`day4_tentative_dain`] → `after5_last_chance_dain_tentative`
   - [`day4_distance_dain`] → `after5_last_chance_dain_distance`
-  - [기본] → `after5_last_chance_dain_aff_check`
+  - [기본] → `after5_last_chance_2_k`
 
 - 캐릭터: `없음`
 
@@ -25714,7 +25743,7 @@
 
 ### `after5_last_chance_dain_postponed`
 - 배경: `school_back.png`
-- 다음: `after5_last_chance_dain_aff_check`
+- 다음: `after5_last_chance_2_k`
 
 - 캐릭터: `dain_normal.png`
 **다인**: 어제 못 끝낸 말, 오늘은 끝까지 해 줘.
@@ -25723,7 +25752,7 @@
 
 ### `after5_last_chance_dain_tentative`
 - 배경: `school_back.png`
-- 다음: `after5_last_chance_dain_aff_check`
+- 다음: `after5_last_chance_2_k`
 
 - 캐릭터: `dain_normal.png`
 **다인**: 어제는 다음 약속을 못 잡았지. 오늘은 네가 먼저 왔네.
@@ -25732,25 +25761,10 @@
 
 ### `after5_last_chance_dain_distance`
 - 배경: `school_back.png`
-- 다음: `after5_last_chance_dain_aff_check`
+- 다음: `after5_last_chance_2_k`
 
 - 캐릭터: `dain_sad.png`
 **다인**: 어제는 서로 멈췄잖아. 오늘은 왜 돌아왔는지 듣고 싶어.
-
----
-
-### `after5_last_chance_dain_aff_check`
-- 배경: `school_back.png`
-- 호감분기: Dain
-  - [50+] → `after5_last_chance_2_k`
-  - [0+] → `after5_last_chance_dain_low_1`
-  - [-19 이상] → `after5_last_chance_dain_low_1`
-  - [기본] → `after5_last_chance_dain_neg`
-- 다음: `after5_last_chance_dain_neg`
-
-- 캐릭터: `없음`
-
-<!-- i18n -->
 
 ---
 
@@ -25862,13 +25876,28 @@
 
 ---
 
+### `after5_last_chance_yuna_aff_check`
+- 배경: `school_back.png`
+- 호감분기: Yuna
+  - [50+] → `after5_last_chance_yuna_history_check`
+  - [0+] → `after5_last_chance_yuna_low_1`
+  - [-19 이상] → `after5_last_chance_yuna_low_1`
+  - [기본] → `after5_last_chance_yuna_neg`
+- 다음: `after5_last_chance_yuna_neg`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
+
+---
+
 ### `after5_last_chance_yuna_history_check`
 - 배경: `school_back.png`
 - 분기:
   - [`postponed_yuna`] → `after5_last_chance_yuna_postponed`
   - [`day4_tentative_yuna`] → `after5_last_chance_yuna_tentative`
   - [`day4_distance_yuna`] → `after5_last_chance_yuna_distance`
-  - [기본] → `after5_last_chance_yuna_aff_check`
+  - [기본] → `after5_last_chance_yuna_1`
 
 - 캐릭터: `없음`
 
@@ -25878,7 +25907,7 @@
 
 ### `after5_last_chance_yuna_postponed`
 - 배경: `school_back.png`
-- 다음: `after5_last_chance_yuna_aff_check`
+- 다음: `after5_last_chance_yuna_1`
 
 - 캐릭터: `yuna_normal.png`
 **유나**: 어제는 결말을 미뤘지. 오늘은 네 말부터 들을게.
@@ -25887,7 +25916,7 @@
 
 ### `after5_last_chance_yuna_tentative`
 - 배경: `school_back.png`
-- 다음: `after5_last_chance_yuna_aff_check`
+- 다음: `after5_last_chance_yuna_1`
 
 - 캐릭터: `yuna_normal.png`
 **유나**: 어제는 내가 먼저 연락하겠다고 했는데. 오늘은 네가 왔네.
@@ -25896,25 +25925,10 @@
 
 ### `after5_last_chance_yuna_distance`
 - 배경: `school_back.png`
-- 다음: `after5_last_chance_yuna_aff_check`
+- 다음: `after5_last_chance_yuna_1`
 
 - 캐릭터: `yuna_sad.png`
 **유나**: 어제는 여기까지 하자고 했어. 오늘 온 이유는 들을게.
-
----
-
-### `after5_last_chance_yuna_aff_check`
-- 배경: `school_back.png`
-- 호감분기: Yuna
-  - [50+] → `after5_last_chance_yuna_1`
-  - [0+] → `after5_last_chance_yuna_low_1`
-  - [-19 이상] → `after5_last_chance_yuna_low_1`
-  - [기본] → `after5_last_chance_yuna_neg`
-- 다음: `after5_last_chance_yuna_neg`
-
-- 캐릭터: `없음`
-
-<!-- i18n -->
 
 ---
 

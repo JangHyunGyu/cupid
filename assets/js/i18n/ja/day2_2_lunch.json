@@ -741,6 +741,10 @@
         "name": "{name}",
         "text": "*ソボロパンを取って会計する。ダインは自分の分だけ受け取る。*"
     },
+    "lunch2_dain_cool_leave": {
+        "name": "{name}",
+        "text": "*会計を済ませて廊下に出る。ダインはもう友達のほうへ歩いている。*"
+    },
     "lunch2_seo_cool_leave": {
         "name": "{name}",
         "text": "*弁当の蓋を閉めて屋上の扉を閉める。*"

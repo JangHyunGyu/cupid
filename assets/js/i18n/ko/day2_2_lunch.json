@@ -741,6 +741,10 @@
         "name": "{name}",
         "text": "*소보로를 집어 계산한다. 다인은 자기 몫만 받아 든다.*"
     },
+    "lunch2_dain_cool_leave": {
+        "name": "{name}",
+        "text": "*계산을 마치고 복도로 나온다. 다인은 친구들 쪽으로 먼저 간다.*"
+    },
     "lunch2_seo_cool_leave": {
         "name": "{name}",
         "text": "*도시락 뚜껑을 덮고 옥상 문을 닫는다.*"

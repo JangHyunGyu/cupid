@@ -741,6 +741,10 @@
         "name": "{name}",
         "text": "*Ich nehme ein Soboro-Brötchen und zahle. Dain nimmt nur ihres.*"
     },
+    "lunch2_dain_cool_leave": {
+        "name": "{name}",
+        "text": "*Ich zahle und trete in den Flur. Dain geht schon zu ihren Freundinnen.*"
+    },
     "lunch2_seo_cool_leave": {
         "name": "{name}",
         "text": "*Ich schließe die Box und die Dachtür.*"
