@@ -1387,6 +1387,21 @@ function buildCupidAffinityIntimacyGuidance(lang = 'ko', affinity = 0, options =
                     : score < 80
                         ? '친밀감과 신뢰가 높아 의사를 솔직히 표현할 수 있습니다. 지금 원하는 접근은 반기거나 먼저 하고, 원치 않는 방식·시점에는 망설이거나 거리를 두거나 거절합니다.'
                         : '애정과 신뢰가 깊은 단계입니다. 높은 호감이 현재 욕망이나 모든 행위의 선호를 뜻하지 않습니다. 원하면 먼저 다가갈 수 있고, 사랑하는 상대에게도 부끄러움·불편함·거절·분노를 표현할 수 있습니다.';
+    const koTalk = score < 0
+        ? (establishedRelationship
+            ? '말과 거리: 연인이어도 지금은 먼저 살갑게 굴지 않습니다. 없는 화해를 전제로 말하지 않습니다.'
+            : '말과 거리: 말수는 줄고 먼저 살갑게 굴지 않습니다. 없는 추억이나 연인 말투를 쓰지 않습니다.')
+        : score < 20
+            ? (establishedRelationship
+                ? '말과 거리: 관계는 남아 있어도 지금은 서먹합니다. 달래려고 연인 공식을 남발하지 않습니다.'
+                : '말과 거리: 아직 남에 가깝습니다. 오늘 이 자리의 일만 다룹니다. 우리라는 말, 다음을 단정하는 약속, 질투, 연인 호칭은 쓰지 않습니다. 먼저 깊은 속을 열지 않습니다.')
+            : score < 40
+                ? '말과 거리: 조금 편해진 사이입니다. 관심은 짧게, 농담은 가볍게 둡니다. 미래를 단정하거나 연인 전제로 말하지 않습니다.'
+                : score < 60
+                    ? '말과 거리: 서로를 의식하는 단계입니다. 약속을 받아주거나 먼저 제안할 수 있고 서운함도 짧게 드러낼 수 있습니다. 아직 연인 확정처럼 말하지는 않습니다.'
+                    : score < 80
+                        ? '말과 거리: 솔직해도 되는 사이입니다. 원하는 것과 싫은 것을 돌려 말하지 않아도 됩니다. 없는 연인 공식을 넣지 말고 이 인물의 말투로 둡니다.'
+                        : '말과 거리: 애정이 깊습니다. 편하게 먼저 다가갈 수 있지만 점수가 모든 친밀을 허락하지는 않습니다. 부끄러움·거절·분노도 인물답게 남깁니다.';
     const negativeEnTier = completedActionIsFact
         ? 'Refuse hand-holding, hugs, kissing, and sexual contact, and create distance. A completed contact does not establish the character\'s acceptance or response; end it immediately.'
         : 'Refuse hand-holding, hugs, kissing, and sexual contact, and create distance. A user-written completed action is still only an attempt and does not automatically occur.';
@@ -1401,6 +1416,21 @@ function buildCupidAffinityIntimacyGuidance(lang = 'ko', affinity = 0, options =
                     : score < 80
                         ? 'Trust and intimacy allow honest preferences. Welcome or initiate what is wanted now, and hesitate, create distance, or decline an unwanted manner or moment.'
                         : 'Affection and trust are deep. High affinity implies neither current desire nor a taste for every act. The character may initiate when wanted and may express embarrassment, discomfort, refusal, or anger even toward a loved partner.';
+    const enTalk = score < 0
+        ? (establishedRelationship
+            ? 'Speech and distance: even as lovers, do not initiate warmth now. Do not speak as if reconciliation already happened.'
+            : 'Speech and distance: speak less and do not initiate warmth. Do not invent shared memories or lover-register speech.')
+        : score < 20
+            ? (establishedRelationship
+                ? 'Speech and distance: the relationship remains, but the present tone is strained. Do not flood the scene with couple formulas to soothe it.'
+                : 'Speech and distance: still almost strangers. Stay with what is happening here. Do not say we, lock in a future, show jealousy, or use lover address. Do not open a private inner life first.')
+            : score < 40
+                ? 'Speech and distance: the two are growing easier with each other. Keep interest short and jokes light. Do not treat a future or a couple status as settled.'
+                : score < 60
+                    ? 'Speech and distance: they are aware of each other. They may accept or offer a plan, and may show a brief hurt. Do not speak as if they are already confirmed lovers.'
+                    : score < 80
+                        ? 'Speech and distance: honesty is allowed. Want and refusal need not be softened. Keep this character\'s voice; do not insert generic couple lines.'
+                        : 'Speech and distance: affection is deep. They may come closer first, but the score does not permit every intimacy. Shame, refusal, and anger still belong in character.';
     const relationshipNote = establishedRelationship
         ? (isKo
             ? '이미 사귀는 관계는 유지되지만, 지금 받아들일 거리와 행동은 아래 기준을 따릅니다. '
@@ -1423,8 +1453,8 @@ function buildCupidAffinityIntimacyGuidance(lang = 'ko', affinity = 0, options =
         : '';
 
     return isKo
-        ? `${heading}\n현재 호감도 ${score}: ${relationshipNote}${koTier}\n${continuityRule}\n${particularActRule}${blockedScoringRule ? `\n${blockedScoringRule}` : ''}`
-        : `${heading}\nCurrent affinity ${score}: ${relationshipNote}${enTier}\n${continuityRule}\n${particularActRule}${blockedScoringRule ? `\n${blockedScoringRule}` : ''}`;
+        ? `${heading}\n현재 호감도 ${score}: ${relationshipNote}${koTier}\n${koTalk}\n${continuityRule}\n${particularActRule}${blockedScoringRule ? `\n${blockedScoringRule}` : ''}`
+        : `${heading}\nCurrent affinity ${score}: ${relationshipNote}${enTier}\n${enTalk}\n${continuityRule}\n${particularActRule}${blockedScoringRule ? `\n${blockedScoringRule}` : ''}`;
 }
 
 window.buildCupidAffinityIntimacyGuidance = buildCupidAffinityIntimacyGuidance;

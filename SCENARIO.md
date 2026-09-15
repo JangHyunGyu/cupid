@@ -4381,7 +4381,7 @@
 - 배경: `top_school.png`
 - 스탯: Seoyeon +6
 - 호감분기: Seoyeon
-  - [20+] → `lunch2_seo_2b_warm`
+  - [10+] → `lunch2_seo_2b_warm`
   - [0+] → `lunch2_seo_2b_cool`
   - [-19 이상] → `lunch2_seo_2b_cool`
   - [기본] → `lunch2_seo_2_neg`
@@ -4515,7 +4515,7 @@
 ### `lunch2_seo_2`
 - 배경: `top_school.png`
 - 호감분기: Seoyeon
-  - [20+] → `lunch2_seo_2_warm`
+  - [10+] → `lunch2_seo_2_warm`
   - [0+] → `lunch2_seo_2_cool`
   - [-19 이상] → `lunch2_seo_2_cool`
   - [기본] → `lunch2_seo_2_neg`
@@ -4976,7 +4976,7 @@
 ### `lunch2_dain_tone`
 - 배경: `store.png`
 - 호감분기: Dain
-  - [20+] → `lunch2_dain_2`
+  - [10+] → `lunch2_dain_2`
   - [0+] → `lunch2_dain_2_cool`
   - [-19 이상] → `lunch2_dain_2_cool`
   - [기본] → `lunch2_dain_2_neg`
@@ -5572,7 +5572,7 @@
 ### `lunch2_yuna_3`
 - 배경: `yuna_hideout.png`
 - 호감분기: Yuna
-  - [20+] → `lunch2_yuna_3_warm`
+  - [10+] → `lunch2_yuna_3_warm`
   - [0+] → `lunch2_yuna_3_cool`
   - [-19 이상] → `lunch2_yuna_3_cool`
   - [기본] → `lunch2_yuna_3_neg`

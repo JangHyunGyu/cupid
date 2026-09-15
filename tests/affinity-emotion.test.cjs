@@ -43,6 +43,26 @@ test('negative emotion has five increasing bands and preserves exact intensity w
     assert.match(api.buildCupidNegativeAffinityState('ko', -90), /깊이 정이 떨어져/);
 });
 
+test('free-talk intimacy guidance also branches speech and distance with the same temperature bands', () => {
+    const ko = (score, options = {}) => api.buildCupidAffinityIntimacyGuidance('ko', score, {
+        characterName: '서연',
+        ...options
+    });
+    assert.match(ko(5), /아직 남에 가깝습니다/);
+    assert.match(ko(5), /우리라는 말/);
+    assert.doesNotMatch(ko(5), /솔직해도 되는 사이/);
+    assert.match(ko(25), /조금 편해진 사이/);
+    assert.match(ko(45), /서로를 의식하는 단계/);
+    assert.match(ko(65), /솔직해도 되는 사이/);
+    assert.match(ko(90), /애정이 깊습니다/);
+    assert.match(ko(-5), /먼저 살갑게 굴지 않습니다/);
+    assert.match(ko(5, { establishedRelationship: true }), /관계는 남아 있어도 지금은 서먹합니다/);
+    assert.doesNotMatch(ko(5, { establishedRelationship: true }), /아직 남에 가깝습니다/);
+    const en = api.buildCupidAffinityIntimacyGuidance('en', 5, { characterName: 'Seoyeon' });
+    assert.match(en, /still almost strangers/i);
+    assert.match(en, /Speech and distance/);
+});
+
 test('ordinary single conversation keeps the emotional rule stable and current scores in the live tail', () => {
     for (const lang of languages) for (const character of [...characters, 'Haeun']) {
         let baseline;
