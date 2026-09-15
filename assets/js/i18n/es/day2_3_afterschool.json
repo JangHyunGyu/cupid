@@ -802,5 +802,9 @@
     "after2_yuna_cool_cont": {
         "name": "{name}",
         "text": "*Leo una página del libro abierto. Yuna se vuelve a poner el auricular y pasa la hoja.*"
+    },
+    "after2_seo_cool_work": {
+        "name": "{name}",
+        "text": "*Nos ponemos con los papeles: presupuestos de eventos, solicitudes de clubes. Hay una buena pila.*"
     }
 }

@@ -143,7 +143,41 @@ test('negative lunch and afterschool do not continue the warm hangout', () => {
     assert.equal(scenes.after2_yuna_cool_1.next, 'after2_yuna_cool_cont');
     assert.equal(scenes.after2_dain_cool_1.next, 'after2_dain_cool_cont');
     assert.equal(scenes.after2_dain_cool_cont.next, 'after2_dain_neg_leave');
-    assert.equal(scenes.after2_yuna_cool_cont.next, 'after2_yuna_end');
+    assert.equal(scenes.after2_yuna_cool_cont.next, 'after2_yuna_rival_dain_check');
+    assert.equal(scenes.after2_seo_cool_1.next, 'after2_seo_cool_work');
+    assert.equal(scenes.after2_seo_cool_work.next, 'after2_seo_9');
+    assert.equal(
+        createSceneRenderer({ Seoyeon: 5 }).resolveNextScene(scenes.lunch2_seo_2b_dain_aff),
+        'lunch2_seo_2b_cool'
+    );
+    assert.equal(
+        createSceneRenderer({ Seoyeon: 10 }).resolveNextScene(scenes.lunch2_seo_2b_dain_aff),
+        'lunch2_seo_2b_dain'
+    );
+    assert.equal(
+        createSceneRenderer({ Seoyeon: 5 }).resolveNextScene(scenes.lunch2_seo_2b_yuna_aff),
+        'lunch2_seo_2b_cool'
+    );
+    assert.equal(
+        createSceneRenderer({ Dain: 5 }).resolveNextScene(scenes.lunch2_dain_1b_seo_aff),
+        'lunch2_dain_2_cool'
+    );
+    assert.equal(
+        createSceneRenderer({ Dain: 10 }).resolveNextScene(scenes.lunch2_dain_1b_seo_aff),
+        'lunch2_dain_2b_seo'
+    );
+    assert.equal(
+        createSceneRenderer({ Yuna: 5 }).resolveNextScene(scenes.lunch2_yuna_3_seo_aff),
+        'lunch2_yuna_3_cool'
+    );
+    assert.equal(
+        createSceneRenderer({ Yuna: 10 }).resolveNextScene(scenes.lunch2_yuna_3_yuna_aff),
+        'lunch2_yuna_3_yuna'
+    );
+    assert.equal(
+        createSceneRenderer({ Yuna: -25 }).resolveNextScene(scenes.lunch2_yuna_3_seo_aff),
+        'lunch2_yuna_3_neg'
+    );
     assert.equal(scenes.lunch2_seo_cool_cont.next, 'lunch2_seo_cool_leave');
     assert.equal(scenes.lunch2_seo_cool_leave.next, 'after2_start');
     assert.equal(scenes.lunch2_yuna_3_cool.next, 'lunch2_yuna_cool_cont');

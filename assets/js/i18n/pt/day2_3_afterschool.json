@@ -802,5 +802,9 @@
     "after2_yuna_cool_cont": {
         "name": "{name}",
         "text": "*Leio uma página do livro aberto. Yuna coloca de novo o fone e vira a folha.*"
+    },
+    "after2_seo_cool_work": {
+        "name": "{name}",
+        "text": "*Começo a organizar os documentos. Orçamento de eventos, ficha de clubes. É bastante coisa.*"
     }
 }

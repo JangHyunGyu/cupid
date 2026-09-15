@@ -4438,8 +4438,8 @@
 ### `lunch2_seo_2b_check`
 - 배경: `top_school.png`
 - 분기:
-  - [`chose_dain_lunch`] → `lunch2_seo_2b_dain`
-  - [`chose_yuna_lunch`] → `lunch2_seo_2b_yuna`
+  - [`chose_dain_lunch`] → `lunch2_seo_2b_dain_aff`
+  - [`chose_yuna_lunch`] → `lunch2_seo_2b_yuna_aff`
   - [기본] → `lunch2_seo_2b`
 
 - 캐릭터: `seyoun_normal.png`
@@ -4473,13 +4473,16 @@
 
 ---
 
-### `lunch2_seo_2b_cool`
+### `lunch2_seo_2b_dain_aff`
 - 배경: `top_school.png`
-- 스탯: Seoyeon +6
-- 다음: `lunch2_seo_cool_cont`
+- 호감분기: Seoyeon
+  - [10+] → `lunch2_seo_2b_dain`
+  - [0+] → `lunch2_seo_2b_cool`
+  - [-19 이상] → `lunch2_seo_2b_cool`
+  - [기본] → `lunch2_seo_2_neg`
+- 다음: `lunch2_seo_2_neg`
 
-- 캐릭터: `seyoun_normal.png`
-**서연**: 옥상은 허가제야. 오늘은 예외.
+- 캐릭터: `없음`
 
 ---
 
@@ -4528,6 +4531,19 @@
 
 ---
 
+### `lunch2_seo_2b_yuna_aff`
+- 배경: `top_school.png`
+- 호감분기: Seoyeon
+  - [10+] → `lunch2_seo_2b_yuna`
+  - [0+] → `lunch2_seo_2b_cool`
+  - [-19 이상] → `lunch2_seo_2b_cool`
+  - [기본] → `lunch2_seo_2_neg`
+- 다음: `lunch2_seo_2_neg`
+
+- 캐릭터: `없음`
+
+---
+
 ### `lunch2_seo_2b_yuna`
 - 배경: `top_school.png`
 - 다음: `lunch2_seo_3b_yuna`
@@ -4570,6 +4586,16 @@
 
 - 캐릭터: `seyoun_laugh.png`
 **서연**: *도시락 뚜껑 끝을 젓가락으로 톡 친다.* 그거, 이상하게 말 되네.
+
+---
+
+### `lunch2_seo_2b_cool`
+- 배경: `top_school.png`
+- 스탯: Seoyeon +6
+- 다음: `lunch2_seo_cool_cont`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 옥상은 허가제야. 오늘은 예외.
 
 ---
 
@@ -4970,10 +4996,23 @@
 ### `lunch2_dain_1b_seo`
 - 배경: `store.png`
 - BGM: `daily2.mp3`
-- 다음: `lunch2_dain_2b_seo`
+- 다음: `lunch2_dain_1b_seo_aff`
 
 - 캐릭터: `dain_normal.png`
 **{name}**: *다인과 매점으로. 어제는 도시락이었고 오늘은 빵 냄새가 먼저 난다.*
+
+---
+
+### `lunch2_dain_1b_seo_aff`
+- 배경: `store.png`
+- 호감분기: Dain
+  - [10+] → `lunch2_dain_2b_seo`
+  - [0+] → `lunch2_dain_2_cool`
+  - [-19 이상] → `lunch2_dain_2_cool`
+  - [기본] → `lunch2_dain_2_neg`
+- 다음: `lunch2_dain_2_neg`
+
+- 캐릭터: `없음`
 
 ---
 
@@ -5008,10 +5047,23 @@
 ### `lunch2_dain_1b_yuna`
 - 배경: `store.png`
 - BGM: `daily2.mp3`
-- 다음: `lunch2_dain_2b_yuna`
+- 다음: `lunch2_dain_1b_yuna_aff`
 
 - 캐릭터: `dain_normal.png`
 **{name}**: *다인과 매점으로. 어제는 조용한 도서관이었는데 오늘은 빵 굽는 냄새와 소음이 먼저 밀려온다.*
+
+---
+
+### `lunch2_dain_1b_yuna_aff`
+- 배경: `store.png`
+- 호감분기: Dain
+  - [10+] → `lunch2_dain_2b_yuna`
+  - [0+] → `lunch2_dain_2_cool`
+  - [-19 이상] → `lunch2_dain_2_cool`
+  - [기본] → `lunch2_dain_2_neg`
+- 다음: `lunch2_dain_2_neg`
+
+- 캐릭터: `없음`
 
 ---
 
@@ -5639,8 +5691,8 @@
 ### `lunch2_yuna_intro_check`
 - 배경: `yuna_hideout.png`
 - 분기:
-  - [`chose_seoyeon_lunch`] → `lunch2_yuna_3_seo`
-  - [`chose_yuna_lunch`] → `lunch2_yuna_3_yuna`
+  - [`chose_seoyeon_lunch`] → `lunch2_yuna_3_seo_aff`
+  - [`chose_yuna_lunch`] → `lunch2_yuna_3_yuna_aff`
   - [기본] → `lunch2_yuna_3`
 
 - 캐릭터: `yuna_normal.png`
@@ -5718,40 +5770,16 @@
 
 ---
 
-### `lunch2_yuna_3_cool`
+### `lunch2_yuna_3_seo_aff`
 - 배경: `yuna_hideout.png`
-- 스탯: Yuna +6
-- 다음: `lunch2_yuna_cool_cont`
-
-- 캐릭터: `yuna_bored.png`
-**유나**: *책갈피만 밀어 넣고 옆자리를 비운다.*
-
----
-
-### `lunch2_yuna_cool_cont`
-- 배경: `yuna_hideout.png`
-- 다음: `lunch2_yuna_end`
-
-- 캐릭터: `yuna_bored.png`
-**{name}**: *책장만 한 장 넘긴다. 유나는 이어폰을 빼지 않는다.*
-
----
-
-### `lunch2_yuna_3_neg`
-- 배경: `yuna_hideout.png`
-- 다음: `lunch2_yuna_neg_leave`
-
-- 캐릭터: `yuna_bored.png`
-**유나**: *쪽지는 주지 않는다. 책장만 한 장 넘긴다.* 오늘은 말 섞기 싫어.
-
----
-
-### `lunch2_yuna_neg_leave`
-- 배경: `school_hallway.png`
-- 다음: `after2_start`
+- 호감분기: Yuna
+  - [10+] → `lunch2_yuna_3_seo`
+  - [0+] → `lunch2_yuna_3_cool`
+  - [-19 이상] → `lunch2_yuna_3_cool`
+  - [기본] → `lunch2_yuna_3_neg`
+- 다음: `lunch2_yuna_3_neg`
 
 - 캐릭터: `없음`
-**{name}**: *별관 문을 닫고 계단을 내려간다.*
 
 ---
 
@@ -5807,6 +5835,19 @@
 
 - 캐릭터: `yuna_normal.png`
 **{name}**: 그래서 더 와보고 싶었어.
+
+---
+
+### `lunch2_yuna_3_yuna_aff`
+- 배경: `yuna_hideout.png`
+- 호감분기: Yuna
+  - [10+] → `lunch2_yuna_3_yuna`
+  - [0+] → `lunch2_yuna_3_cool`
+  - [-19 이상] → `lunch2_yuna_3_cool`
+  - [기본] → `lunch2_yuna_3_neg`
+- 다음: `lunch2_yuna_3_neg`
+
+- 캐릭터: `없음`
 
 ---
 
@@ -6157,12 +6198,49 @@
 
 ---
 
+### `lunch2_yuna_3_cool`
+- 배경: `yuna_hideout.png`
+- 스탯: Yuna +6
+- 다음: `lunch2_yuna_cool_cont`
+
+- 캐릭터: `yuna_bored.png`
+**유나**: *책갈피만 밀어 넣고 옆자리를 비운다.*
+
+---
+
+### `lunch2_yuna_cool_cont`
+- 배경: `yuna_hideout.png`
+- 다음: `lunch2_yuna_end`
+
+- 캐릭터: `yuna_bored.png`
+**{name}**: *책장만 한 장 넘긴다. 유나는 이어폰을 빼지 않는다.*
+
+---
+
 ### `lunch2_yuna_end`
 - 배경: `yuna_hideout.png`
 - 다음: `after2_start`
 
 - 캐릭터: `yuna_normal.png`
 **{name}**: *문을 닫기 전 돌아보자 유나는 '있었는데'에서 멈춘 페이지를 다시 펴고 있다.*
+
+---
+
+### `lunch2_yuna_3_neg`
+- 배경: `yuna_hideout.png`
+- 다음: `lunch2_yuna_neg_leave`
+
+- 캐릭터: `yuna_bored.png`
+**유나**: *쪽지는 주지 않는다. 책장만 한 장 넘긴다.* 오늘은 말 섞기 싫어.
+
+---
+
+### `lunch2_yuna_neg_leave`
+- 배경: `school_hallway.png`
+- 다음: `after2_start`
+
+- 캐릭터: `없음`
+**{name}**: *별관 문을 닫고 계단을 내려간다.*
 
 ---
 
@@ -6960,15 +7038,6 @@
 
 ---
 
-### `after2_seo_cool_1`
-- 배경: `student_room.png`
-- 다음: `after2_seo_4_b`
-
-- 캐릭터: `seyoun_normal.png`
-**서연**: 왔으면 이 목록부터. *클립보드를 밀어 준다.*
-
----
-
 ### `after2_seo_4_b`
 - 배경: `student_room.png`
 - 다음: `after2_seo_5`
@@ -7284,6 +7353,24 @@
 
 - 캐릭터: `seyoun_normal.png`
 **서연**: *상자를 원래 자리로 밀어 둔다.* 그건 됐어. 목록이나 맞춰.
+
+---
+
+### `after2_seo_cool_1`
+- 배경: `student_room.png`
+- 다음: `after2_seo_cool_work`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 왔으면 이 목록부터. *클립보드를 밀어 준다.*
+
+---
+
+### `after2_seo_cool_work`
+- 배경: `student_room.png`
+- 다음: `after2_seo_9`
+
+- 캐릭터: `seyoun_normal.png`
+**{name}**: *서류 정리를 시작한다. 행사 예산안, 동아리 신청서. 양이 꽤 많다.*
 
 ---
 
@@ -7805,24 +7892,6 @@
 
 ---
 
-### `after2_yuna_cool_1`
-- 배경: `yuna_hideout.png`
-- 다음: `after2_yuna_cool_cont`
-
-- 캐릭터: `yuna_bored.png`
-**유나**: *이어폰 한쪽만 치운다.* 읽어도 돼. 말은 조금만.
-
----
-
-### `after2_yuna_cool_cont`
-- 배경: `yuna_hideout.png`
-- 다음: `after2_yuna_end`
-
-- 캐릭터: `yuna_bored.png`
-**{name}**: *펼쳐진 책 한 쪽을 읽는다. 유나는 이어폰을 다시 끼고 다음 장을 넘긴다.*
-
----
-
 ### `after2_yuna_end`
 - 배경: `yuna_hideout.png`
 - 호감분기: Yuna
@@ -7859,6 +7928,24 @@
 
 - 캐릭터: `yuna_normal.png`
 **{name}**: *손을 뗀 유나가 책등이 내 쪽을 향하도록 돌려 건넨다.*
+
+---
+
+### `after2_yuna_cool_1`
+- 배경: `yuna_hideout.png`
+- 다음: `after2_yuna_cool_cont`
+
+- 캐릭터: `yuna_bored.png`
+**유나**: *이어폰 한쪽만 치운다.* 읽어도 돼. 말은 조금만.
+
+---
+
+### `after2_yuna_cool_cont`
+- 배경: `yuna_hideout.png`
+- 다음: `after2_yuna_rival_dain_check`
+
+- 캐릭터: `yuna_bored.png`
+**{name}**: *펼쳐진 책 한 쪽을 읽는다. 유나는 이어폰을 다시 끼고 다음 장을 넘긴다.*
 
 ---
 

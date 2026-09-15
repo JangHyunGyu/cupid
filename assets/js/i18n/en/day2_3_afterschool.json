@@ -802,5 +802,9 @@
     "after2_yuna_cool_cont": {
         "name": "{name}",
         "text": "*I read a page of the open book. Yuna puts her earphone back in and turns the next page.*"
+    },
+    "after2_seo_cool_work": {
+        "name": "{name}",
+        "text": "*We start sorting documents. Event budgets, club applications. Quite the pile.*"
     }
 }

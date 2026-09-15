@@ -1095,7 +1095,12 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "after2_seo_cool_1": {
         "background": "assets/images/background/student_room.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "after2_seo_4_b"
+        "next": "after2_seo_cool_work"
+    },
+    "after2_seo_cool_work": {
+        "background": "assets/images/background/student_room.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "after2_seo_9"
     },
     "after2_seo_neg_1": {
         "background": "assets/images/background/student_room.png",
@@ -1141,7 +1146,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "after2_yuna_cool_cont": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_bored.png",
-        "next": "after2_yuna_end"
+        "next": "after2_yuna_rival_dain_check"
     },
     "after2_yuna_neg_1": {
         "background": "assets/images/background/yuna_hideout.png",

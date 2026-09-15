@@ -802,5 +802,9 @@
     "after2_yuna_cool_cont": {
         "name": "{name}",
         "text": "*펼쳐진 책 한 쪽을 읽는다. 유나는 이어폰을 다시 끼고 다음 장을 넘긴다.*"
+    },
+    "after2_seo_cool_work": {
+        "name": "{name}",
+        "text": "*서류 정리를 시작한다. 행사 예산안, 동아리 신청서. 양이 꽤 많다.*"
     }
 }
