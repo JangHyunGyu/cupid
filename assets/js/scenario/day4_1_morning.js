@@ -158,6 +158,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "morning4_seo_msg_1": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/seyoun_pout.png","opacity":0.35}},
+        "affinityGuard": {"character":"Seoyeon","minAffinity":30,"fallback":"morning4_hidden_check"},
         "next": "morning4_seo_msg_1_b"
     },
     "morning4_seo_msg_1_b": {
@@ -172,6 +173,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "morning4_yuna_msg_1": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
+        "affinityGuard": {"character":"Yuna","minAffinity":30,"fallback":"morning4_hidden_check"},
         "next": "morning4_yuna_msg_1_b"
     },
     "morning4_yuna_msg_1_b": {
@@ -187,6 +189,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "morning4_dain_msg_1": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/dain_sweat.png","opacity":0.35}},
+        "affinityGuard": {"character":"Dain","minAffinity":30,"fallback":"morning4_hidden_check"},
         "next": "morning4_hidden_check"
     },
     "morning4_fallback_msg": {
@@ -197,6 +200,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "morning4_hidden_check": {
         "background": "assets/images/background/room_my.png",
         "character": null,
+        "routeBeforeRender": true,
         "branches": [
             { "condition": "homeroom_day3", "next": "morning4_manuscript_check" },
             { "condition": "nurse_day3", "next": "hidden_nurse_d4_morning_1" },

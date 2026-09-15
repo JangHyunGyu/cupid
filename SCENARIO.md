@@ -8368,12 +8368,17 @@
 
 ### `night2_msg_seo_general_alt`
 - 배경: `room_my.png`
-- 분기:
-  - [`chose_yuna_after2`] → `night2_msg_7`
-  - [기본] → `night2_msg_yuna_general`
+- 다음: `night2_msg_seo_general_alt_gate`
 
 - 캐릭터: `seyoun_normal.png` @ 0.35
 **서연**: 내일 옥상 열어둘게. 시간 되면 와
+
+---
+
+### `night2_msg_seo_general_alt_gate`
+- 분기:
+  - [`chose_yuna_after2`] → `night2_msg_7`
+  - [기본] → `night2_msg_yuna_general`
 
 ---
 

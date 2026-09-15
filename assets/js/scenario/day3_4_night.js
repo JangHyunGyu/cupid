@@ -47,6 +47,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "night3_faithful_msg_seo_1": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
+        "affinityGuard": {"character":"Seoyeon","minAffinity":20,"fallback":"night3_dream_1"},
         "next": "night3_faithful_msg_seo_2"
     },
     "night3_faithful_msg_seo_2": {
@@ -62,6 +63,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "night3_faithful_msg_yuna_1": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
+        "affinityGuard": {"character":"Yuna","minAffinity":20,"fallback":"night3_dream_1"},
         "next": "night3_faithful_msg_yuna_2"
     },
     "night3_faithful_msg_yuna_2": {
@@ -77,6 +79,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "night3_faithful_msg_dain_1": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
+        "affinityGuard": {"character":"Dain","minAffinity":20,"fallback":"night3_dream_1"},
         "next": "night3_faithful_msg_dain_2"
     },
     "night3_faithful_msg_dain_2": {

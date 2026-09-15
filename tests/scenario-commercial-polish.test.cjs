@@ -27,9 +27,10 @@ test('Day 2 split-route warning matches the chosen path and message senders do n
     assert.equal(day2.minsu_warn_6.next, 'night2_start');
     assert.equal(day2.minsu_warn_15_b, undefined);
     assert.equal(day2.minsu_warn_15_c, undefined);
-    assert.equal(day2.night2_msg_seo_general_alt.branches[0].condition, 'chose_yuna_after2');
-    assert.equal(day2.night2_msg_seo_general_alt.branches[0].next, 'night2_msg_7');
-    assert.equal(day2.night2_msg_seo_general_alt.branches[1].next, 'night2_msg_yuna_general');
+    assert.equal(day2.night2_msg_seo_general_alt.next, 'night2_msg_seo_general_alt_gate');
+    assert.equal(day2.night2_msg_seo_general_alt_gate.branches[0].condition, 'chose_yuna_after2');
+    assert.equal(day2.night2_msg_seo_general_alt_gate.branches[0].next, 'night2_msg_7');
+    assert.equal(day2.night2_msg_seo_general_alt_gate.branches[1].next, 'night2_msg_yuna_general');
 
     for (const code of locales) {
         const copy = locale(code, 'day2_3_afterschool');
