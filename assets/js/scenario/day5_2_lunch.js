@@ -505,7 +505,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/school.png",
         "character": null,
         "affinityChar": "Seoyeon",
-        "affinityBranches": [{"minAffinity":0,"next":"tour_seo_low"},{"minAffinity":-100,"next":"tour_seo_neg"}],
+        "affinityBranches": [{"minAffinity":0,"next":"tour_seo_low"},{"minAffinity":-19,"next":"tour_seo_low"},{"minAffinity":-100,"next":"tour_seo_neg"}],
         "next": "tour_seo_neg",
         "routeBeforeRender": true
     },
@@ -513,7 +513,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/yuna_hideout.png",
         "character": null,
         "affinityChar": "Yuna",
-        "affinityBranches": [{"minAffinity":0,"next":"tour_yuna_low"},{"minAffinity":-100,"next":"tour_yuna_neg"}],
+        "affinityBranches": [{"minAffinity":0,"next":"tour_yuna_low"},{"minAffinity":-19,"next":"tour_yuna_low"},{"minAffinity":-100,"next":"tour_yuna_neg"}],
         "next": "tour_yuna_neg",
         "routeBeforeRender": true
     },
@@ -521,7 +521,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/gym.png",
         "character": null,
         "affinityChar": "Dain",
-        "affinityBranches": [{"minAffinity":0,"next":"tour_dain_low"},{"minAffinity":-100,"next":"tour_dain_neg"}],
+        "affinityBranches": [{"minAffinity":0,"next":"tour_dain_low"},{"minAffinity":-19,"next":"tour_dain_low"},{"minAffinity":-100,"next":"tour_dain_neg"}],
         "next": "tour_dain_neg",
         "routeBeforeRender": true
     },

@@ -686,7 +686,7 @@
     },
     "lunch2_seo_2_cool": {
         "name": "Seoyeon",
-        "text": "Tu es là. J'ouvre la boîte, une seconde."
+        "text": "Tu es là. J'ouvre la boîte. Une seconde."
     },
     "lunch2_seo_2_neg": {
         "name": "Seoyeon",
@@ -698,7 +698,7 @@
     },
     "lunch2_seo_2b_cool": {
         "name": "Seoyeon",
-        "text": "Le toit est sur autorisation. Exception pour aujourd'hui."
+        "text": "Le toit est sur autorisation. Exception aujourd'hui."
     },
     "lunch2_dain_tone": {},
     "lunch2_dain_2_cool": {

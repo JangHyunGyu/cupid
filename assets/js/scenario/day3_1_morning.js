@@ -33,7 +33,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "affinityChar": "Seoyeon",
-        "affinityBranches": [{"minAffinity":35,"next":"morning3_seo_gate_warm_1"},{"minAffinity":15,"next":"morning3_seo_gate_2"},{"minAffinity":0,"next":"morning3_seo_gate_cold_1"},{"minAffinity":-100,"next":"morning3_seo_gate_neg_1"}]
+        "affinityBranches": [{"minAffinity":35,"next":"morning3_seo_gate_warm_1"},{"minAffinity":15,"next":"morning3_seo_gate_2"},{"minAffinity":0,"next":"morning3_seo_gate_cold_1"},{"minAffinity":-19,"next":"morning3_seo_gate_cold_1"},{"minAffinity":-100,"next":"morning3_seo_gate_neg_1"}]
     },
     "morning3_seo_gate_warm_1": {
         "background": "assets/images/background/school.png",
@@ -112,7 +112,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/yuna_normal.png",
         "affinityChar": "Yuna",
-        "affinityBranches": [{"minAffinity":35,"next":"morning3_yuna_gate_warm_1"},{"minAffinity":15,"next":"morning3_yuna_gate_2"},{"minAffinity":0,"next":"morning3_yuna_gate_cold_1"},{"minAffinity":-100,"next":"morning3_yuna_gate_neg_1"}]
+        "affinityBranches": [{"minAffinity":35,"next":"morning3_yuna_gate_warm_1"},{"minAffinity":15,"next":"morning3_yuna_gate_2"},{"minAffinity":0,"next":"morning3_yuna_gate_cold_1"},{"minAffinity":-19,"next":"morning3_yuna_gate_cold_1"},{"minAffinity":-100,"next":"morning3_yuna_gate_neg_1"}]
     },
     "morning3_yuna_gate_warm_1": {
         "background": "assets/images/background/school.png",
@@ -186,7 +186,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/dain_normal.png",
         "affinityChar": "Dain",
-        "affinityBranches": [{"minAffinity":35,"next":"morning3_dain_gate_warm_1"},{"minAffinity":15,"next":"morning3_dain_gate_2"},{"minAffinity":0,"next":"morning3_dain_gate_cold_1"},{"minAffinity":-100,"next":"morning3_dain_gate_neg_1"}]
+        "affinityBranches": [{"minAffinity":35,"next":"morning3_dain_gate_warm_1"},{"minAffinity":15,"next":"morning3_dain_gate_2"},{"minAffinity":0,"next":"morning3_dain_gate_cold_1"},{"minAffinity":-19,"next":"morning3_dain_gate_cold_1"},{"minAffinity":-100,"next":"morning3_dain_gate_neg_1"}]
     },
     "morning3_dain_gate_warm_1": {
         "background": "assets/images/background/school.png",
@@ -1124,7 +1124,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/school_hallway.png",
         "character": null,
         "affinityChar": "Seoyeon",
-        "affinityBranches": [{"minAffinity":0,"next":"morning3_date_seo_low"},{"minAffinity":-100,"next":"morning3_date_seo_neg"}],
+        "affinityBranches": [{"minAffinity":0,"next":"morning3_date_seo_low"},{"minAffinity":-19,"next":"morning3_date_seo_low"},{"minAffinity":-100,"next":"morning3_date_seo_neg"}],
         "next": "morning3_date_seo_neg",
         "routeBeforeRender": true
     },
@@ -1132,7 +1132,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/room_school.png",
         "character": null,
         "affinityChar": "Dain",
-        "affinityBranches": [{"minAffinity":0,"next":"morning3_date_dain_low"},{"minAffinity":-100,"next":"morning3_date_dain_neg"}],
+        "affinityBranches": [{"minAffinity":0,"next":"morning3_date_dain_low"},{"minAffinity":-19,"next":"morning3_date_dain_low"},{"minAffinity":-100,"next":"morning3_date_dain_neg"}],
         "next": "morning3_date_dain_neg",
         "routeBeforeRender": true
     },
@@ -1140,7 +1140,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/room_school.png",
         "character": null,
         "affinityChar": "Yuna",
-        "affinityBranches": [{"minAffinity":0,"next":"morning3_date_yuna_low"},{"minAffinity":-100,"next":"morning3_date_yuna_neg"}],
+        "affinityBranches": [{"minAffinity":0,"next":"morning3_date_yuna_low"},{"minAffinity":-19,"next":"morning3_date_yuna_low"},{"minAffinity":-100,"next":"morning3_date_yuna_neg"}],
         "next": "morning3_date_yuna_neg",
         "routeBeforeRender": true
     },

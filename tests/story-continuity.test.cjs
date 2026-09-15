@@ -171,6 +171,9 @@ test('history routers select only established memories and preserve rewards on e
             assert.equal(renderer.resolveNextScene(all[`${id}_visit`]), `${id}_established`);
             state.stats.Dain.affinity = -2;
             state.stats.Yuna.affinity = -2;
+            assert.equal(renderer.resolveNextScene(all[`${id}_visit`]), `${id}_established`);
+            state.stats.Dain.affinity = -25;
+            state.stats.Yuna.affinity = -25;
             assert.match(renderer.resolveNextScene(all[`${id}_visit`]), /_react_neg$/);
         } else {
             assert.equal(renderer.resolveNextScene(all[id]), `${id}_established`);

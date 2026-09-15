@@ -686,7 +686,7 @@
     },
     "lunch2_seo_2_cool": {
         "name": "ソヨン",
-        "text": "来たんだ。弁当を開けるから、ちょっと待って。"
+        "text": "来たんだ。弁当を開ける。ちょっと待って。"
     },
     "lunch2_seo_2_neg": {
         "name": "ソヨン",
@@ -698,7 +698,7 @@
     },
     "lunch2_seo_2b_cool": {
         "name": "ソヨン",
-        "text": "屋上は許可制。今日は例外にする。"
+        "text": "屋上は許可制。今日は例外。"
     },
     "lunch2_dain_tone": {},
     "lunch2_dain_2_cool": {

@@ -132,7 +132,8 @@ test('day 2 afterschool rivalry scales with the live relationship instead of inv
     ];
 
     for (const [character, checkId, prefix] of checks) {
-        assert.equal(createSceneRenderer({ [character]: -1 }).resolveNextScene(scenes[checkId]), `${prefix}_neg`);
+        assert.equal(createSceneRenderer({ [character]: -1 }).resolveNextScene(scenes[checkId]), `${prefix}_low`);
+        assert.equal(createSceneRenderer({ [character]: -25 }).resolveNextScene(scenes[checkId]), `${prefix}_neg`);
         assert.equal(createSceneRenderer({ [character]: 0 }).resolveNextScene(scenes[checkId]), `${prefix}_low`);
         assert.equal(createSceneRenderer({ [character]: 9 }).resolveNextScene(scenes[checkId]), `${prefix}_low`);
         assert.equal(createSceneRenderer({ [character]: 15 }).resolveNextScene(scenes[checkId]), `${prefix}_mid`);
@@ -165,7 +166,8 @@ test('the first affinity callback is reachable before day 1 lunch', () => {
     assert.equal(createSceneRenderer({ Seoyeon: 4 }).resolveNextScene(scenes.lunch_seo_1), 'lunch_seo_1_aff_high');
     assert.equal(createSceneRenderer({ Seoyeon: 2 }).resolveNextScene(scenes.lunch_seo_1), 'lunch_seo_1_aff_default');
     assert.equal(createSceneRenderer({ Seoyeon: 0 }).resolveNextScene(scenes.lunch_seo_1), 'lunch_seo_1_aff_default');
-    assert.equal(createSceneRenderer({ Seoyeon: -1 }).resolveNextScene(scenes.lunch_seo_1), 'lunch_seo_1_aff_neg');
+    assert.equal(createSceneRenderer({ Seoyeon: -1 }).resolveNextScene(scenes.lunch_seo_1), 'lunch_seo_1_aff_default');
+    assert.equal(createSceneRenderer({ Seoyeon: -25 }).resolveNextScene(scenes.lunch_seo_1), 'lunch_seo_1_aff_neg');
 });
 
 test('midgame relationship tiers preserve promises, distance, and locked fallout', () => {
@@ -186,7 +188,8 @@ test('midgame relationship tiers preserve promises, distance, and locked fallout
         ['Yuna', 'after3_yuna_affinity_check', 'after3_yuna_low_1', 'after3_yuna_partial_1', 'after3_yuna_1'],
         ['Dain', 'after3_dain_affinity_check', 'after3_dain_low_1', 'after3_dain_partial_1', 'after3_dain_1']
     ]) {
-        assert.equal(createSceneRenderer({ [character]: -1 }).resolveNextScene(scenes[checkId]), `${lowId.replace('_low_1', '_neg_1')}`);
+        assert.equal(createSceneRenderer({ [character]: -1 }).resolveNextScene(scenes[checkId]), lowId);
+        assert.equal(createSceneRenderer({ [character]: -25 }).resolveNextScene(scenes[checkId]), `${lowId.replace('_low_1', '_neg_1')}`);
         assert.equal(createSceneRenderer({ [character]: 0 }).resolveNextScene(scenes[checkId]), lowId);
         assert.equal(createSceneRenderer({ [character]: 29 }).resolveNextScene(scenes[checkId]), lowId);
         assert.equal(createSceneRenderer({ [character]: 30 }).resolveNextScene(scenes[checkId]), partialId);
@@ -1194,8 +1197,10 @@ test('day-five continuity keeps availability, history, affinity, and final choic
     assert.equal(createSceneRenderer({ Teacher: 60 }).resolveNextScene(scenes.after5_hidden_teacher_affinity_check), 'after5_hidden_teacher_high');
     assert.equal(createSceneRenderer({ Teacher: 40 }).resolveNextScene(scenes.after5_hidden_teacher_affinity_check), 'after5_hidden_teacher_mid');
     assert.equal(createSceneRenderer({ Nurse: 39 }).resolveNextScene(scenes.after5_hidden_nurse_affinity_check), 'after5_hidden_nurse_low');
-    assert.equal(createSceneRenderer({ Nurse: -1 }).resolveNextScene(scenes.after5_hidden_nurse_affinity_check), 'after5_hidden_nurse_neg');
-    assert.equal(createSceneRenderer({ Teacher: -1 }).resolveNextScene(scenes.after5_hidden_teacher_affinity_check), 'after5_hidden_teacher_neg');
+    assert.equal(createSceneRenderer({ Nurse: -1 }).resolveNextScene(scenes.after5_hidden_nurse_affinity_check), 'after5_hidden_nurse_low');
+    assert.equal(createSceneRenderer({ Nurse: -25 }).resolveNextScene(scenes.after5_hidden_nurse_affinity_check), 'after5_hidden_nurse_neg');
+    assert.equal(createSceneRenderer({ Teacher: -1 }).resolveNextScene(scenes.after5_hidden_teacher_affinity_check), 'after5_hidden_teacher_low');
+    assert.equal(createSceneRenderer({ Teacher: -25 }).resolveNextScene(scenes.after5_hidden_teacher_affinity_check), 'after5_hidden_teacher_neg');
 
     assert.equal(scenes.morning5_counteroffer_group_talk.next, 'morning5_counteroffer_choice');
     assert.deepEqual(
@@ -1239,19 +1244,19 @@ test('live affinity guards enforce relationship thresholds and provide localized
         ['date_seo_1', 'Seoyeon', 30, 'date_seo_skip'],
         ['date_yuna_1', 'Yuna', 30, 'date_yuna_skip'],
         ['date_dain_1', 'Dain', 30, 'date_dain_skip'],
-        ['confess_seo_2', 'Seoyeon', 0, 'confess_seo_low'],
-        ['confess_yuna_1', 'Yuna', 0, 'confess_yuna_low'],
-        ['confess_dain_1', 'Dain', 0, 'confess_dain_low'],
-        ['night2_msg_dain_specific', 'Dain', 0, 'night2_msg_seo_general'],
-        ['night2_msg_seo_specific', 'Seoyeon', 0, 'night2_msg_dain_general'],
-        ['night2_msg_yuna_specific', 'Yuna', 0, 'night2_msg_dain_general'],
-        ['night2_reply_seo_1', 'Seoyeon', 0, 'night2_reply_seo_react_neg'],
-        ['lunch2_seo_2b_dain', 'Seoyeon', 0, 'lunch2_seo_2_neg'],
-        ['lunch2_seo_2b_yuna', 'Seoyeon', 0, 'lunch2_seo_2_neg'],
-        ['lunch2_dain_1b_seo', 'Dain', 0, 'lunch2_dain_2_neg'],
-        ['lunch2_dain_1b_yuna', 'Dain', 0, 'lunch2_dain_2_neg'],
-        ['lunch2_yuna_3_seo', 'Yuna', 0, 'lunch2_yuna_3_neg'],
-        ['lunch2_yuna_3_yuna', 'Yuna', 0, 'lunch2_yuna_3_neg'],
+        ['confess_seo_2', 'Seoyeon', -19, 'confess_seo_low'],
+        ['confess_yuna_1', 'Yuna', -19, 'confess_yuna_low'],
+        ['confess_dain_1', 'Dain', -19, 'confess_dain_low'],
+        ['night2_msg_dain_specific', 'Dain', -19, 'night2_msg_seo_general'],
+        ['night2_msg_seo_specific', 'Seoyeon', -19, 'night2_msg_dain_general'],
+        ['night2_msg_yuna_specific', 'Yuna', -19, 'night2_msg_dain_general'],
+        ['night2_reply_seo_1', 'Seoyeon', -19, 'night2_reply_seo_react_neg'],
+        ['lunch2_seo_2b_dain', 'Seoyeon', -19, 'lunch2_seo_2_neg'],
+        ['lunch2_seo_2b_yuna', 'Seoyeon', -19, 'lunch2_seo_2_neg'],
+        ['lunch2_dain_1b_seo', 'Dain', -19, 'lunch2_dain_2_neg'],
+        ['lunch2_dain_1b_yuna', 'Dain', -19, 'lunch2_dain_2_neg'],
+        ['lunch2_yuna_3_seo', 'Yuna', -19, 'lunch2_yuna_3_neg'],
+        ['lunch2_yuna_3_yuna', 'Yuna', -19, 'lunch2_yuna_3_neg'],
         ['hidden_homeroom_d5_1', 'Teacher', 15, 'hidden_homeroom_d5_skip'],
         ['hidden_nurse_d5_1', 'Nurse', 15, 'hidden_nurse_d5_skip'],
         ['tour_seo_1', 'Seoyeon', 40, 'tour_seo_skip'],
@@ -1302,7 +1307,7 @@ test('date route gates cover automatic, manual, multiple-promise, and saved-entr
             }
             if (affinity < 30) {
                 assert.equal(renderer.resolveNextScene(scenes[`after3_${short}_skip`]),
-                    affinity < 0 ? `after3_${short}_neg_1` : `after3_${short}_low_1`,
+                    affinity < -19 ? `after3_${short}_neg_1` : `after3_${short}_low_1`,
                     `after3_${short}_skip/${affinity}`);
             }
             assert.equal(renderer.resolveAffinityGuard(scenes[`date_${short}_1`]),
@@ -1486,6 +1491,7 @@ test('Haeun free talk branches by personal trust before rejoining the Seoyeon ro
         [
             [8, 'haeun_affinity_high_1'],
             [0, 'haeun_affinity_neutral_1'],
+            [-19, 'haeun_affinity_neutral_1'],
             [-100, 'haeun_affinity_low_1']
         ]
     );
@@ -1496,6 +1502,8 @@ test('Haeun free talk branches by personal trust before rejoining the Seoyeon ro
     affinities.Haeun = 0;
     assert.equal(renderer.resolveNextScene(router), 'haeun_affinity_neutral_1');
     affinities.Haeun = -1;
+    assert.equal(renderer.resolveNextScene(router), 'haeun_affinity_neutral_1');
+    affinities.Haeun = -25;
     assert.equal(renderer.resolveNextScene(router), 'haeun_affinity_low_1');
 
     for (const copy of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy)) {

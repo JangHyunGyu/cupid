@@ -84,32 +84,45 @@ test('negative affinity uses a dedicated line instead of the default greeting', 
         if (character === 'selectByHighestAffinity') {
             assert.equal(createSceneRenderer({
                 Seoyeon: -3, Yuna: -8, Dain: -1, Teacher: -2, Nurse: -4
-            }).resolveNextScene(scene), negNext, id);
+            }).resolveNextScene(scene), zeroNext, `${id} at mild negative`);
+            assert.equal(createSceneRenderer({
+                Seoyeon: -25, Yuna: -28, Dain: -21, Teacher: -22, Nurse: -24
+            }).resolveNextScene(scene), negNext, `${id} at hard negative`);
             assert.equal(createSceneRenderer({
                 Seoyeon: 0, Yuna: 0, Dain: 0, Teacher: 0, Nurse: 0
             }).resolveNextScene(scene), zeroNext, `${id} at 0`);
             continue;
         }
-        assert.equal(createSceneRenderer({ [character]: -1 }).resolveNextScene(scene), negNext, id);
+        assert.equal(createSceneRenderer({ [character]: -1 }).resolveNextScene(scene), zeroNext, `${id} at -1`);
+        if (negNext !== zeroNext) {
+            assert.equal(createSceneRenderer({ [character]: -25 }).resolveNextScene(scene), negNext, `${id} at -25`);
+        }
         assert.equal(createSceneRenderer({ [character]: 0 }).resolveNextScene(scene), zeroNext, `${id} at 0`);
     }
 });
 
 test('below-threshold date and farewell guards split zero from negative', () => {
     assert.equal(createSceneRenderer({ Seoyeon: 0 }).resolveNextScene(scenes.date_seo_skip), 'date_seo_low');
-    assert.equal(createSceneRenderer({ Seoyeon: -4 }).resolveNextScene(scenes.date_seo_skip), 'date_seo_neg');
+    assert.equal(createSceneRenderer({ Seoyeon: -4 }).resolveNextScene(scenes.date_seo_skip), 'date_seo_low');
+    assert.equal(createSceneRenderer({ Seoyeon: -25 }).resolveNextScene(scenes.date_seo_skip), 'date_seo_neg');
     assert.equal(createSceneRenderer({ Yuna: 10 }).resolveNextScene(scenes.morning3_date_yuna_skip), 'morning3_date_yuna_low');
-    assert.equal(createSceneRenderer({ Yuna: -2 }).resolveNextScene(scenes.morning3_date_yuna_skip), 'morning3_date_yuna_neg');
+    assert.equal(createSceneRenderer({ Yuna: -2 }).resolveNextScene(scenes.morning3_date_yuna_skip), 'morning3_date_yuna_low');
+    assert.equal(createSceneRenderer({ Yuna: -25 }).resolveNextScene(scenes.morning3_date_yuna_skip), 'morning3_date_yuna_neg');
     assert.equal(createSceneRenderer({ Dain: 5 }).resolveNextScene(scenes.after5_farewell_dain_skip), 'after5_farewell_dain_low');
-    assert.equal(createSceneRenderer({ Dain: -1 }).resolveNextScene(scenes.after5_farewell_dain_skip), 'after5_farewell_dain_neg');
+    assert.equal(createSceneRenderer({ Dain: -1 }).resolveNextScene(scenes.after5_farewell_dain_skip), 'after5_farewell_dain_low');
+    assert.equal(createSceneRenderer({ Dain: -25 }).resolveNextScene(scenes.after5_farewell_dain_skip), 'after5_farewell_dain_neg');
     assert.equal(createSceneRenderer({ Seoyeon: 12 }).resolveNextScene(scenes.after3_seo_skip), 'after3_seo_low_1');
-    assert.equal(createSceneRenderer({ Seoyeon: -2 }).resolveNextScene(scenes.after3_seo_skip), 'after3_seo_neg_1');
+    assert.equal(createSceneRenderer({ Seoyeon: -2 }).resolveNextScene(scenes.after3_seo_skip), 'after3_seo_low_1');
+    assert.equal(createSceneRenderer({ Seoyeon: -25 }).resolveNextScene(scenes.after3_seo_skip), 'after3_seo_neg_1');
     assert.equal(createSceneRenderer({ Teacher: 8 }).resolveNextScene(scenes.hidden_homeroom_d5_skip), 'hidden_homeroom_d5_low');
-    assert.equal(createSceneRenderer({ Teacher: -3 }).resolveNextScene(scenes.hidden_homeroom_d5_skip), 'hidden_homeroom_d5_neg');
+    assert.equal(createSceneRenderer({ Teacher: -3 }).resolveNextScene(scenes.hidden_homeroom_d5_skip), 'hidden_homeroom_d5_low');
+    assert.equal(createSceneRenderer({ Teacher: -25 }).resolveNextScene(scenes.hidden_homeroom_d5_skip), 'hidden_homeroom_d5_neg');
     assert.equal(createSceneRenderer({ Seoyeon: 12 }).resolveNextScene(scenes.after5_last_chance_seo_aff_check), 'after5_last_chance_seo_low_1');
-    assert.equal(createSceneRenderer({ Seoyeon: -2 }).resolveNextScene(scenes.after5_last_chance_seo_aff_check), 'after5_last_chance_seo_neg');
+    assert.equal(createSceneRenderer({ Seoyeon: -2 }).resolveNextScene(scenes.after5_last_chance_seo_aff_check), 'after5_last_chance_seo_low_1');
+    assert.equal(createSceneRenderer({ Seoyeon: -25 }).resolveNextScene(scenes.after5_last_chance_seo_aff_check), 'after5_last_chance_seo_neg');
     assert.equal(createSceneRenderer({ Dain: 8 }).resolveNextScene(scenes.after5_confess_aff_dain), 'after5_confess_react_dain_low');
-    assert.equal(createSceneRenderer({ Dain: -3 }).resolveNextScene(scenes.after5_confess_aff_dain), 'after5_confess_react_dain_neg');
+    assert.equal(createSceneRenderer({ Dain: -3 }).resolveNextScene(scenes.after5_confess_aff_dain), 'after5_confess_react_dain_low');
+    assert.equal(createSceneRenderer({ Dain: -25 }).resolveNextScene(scenes.after5_confess_aff_dain), 'after5_confess_react_dain_neg');
 });
 
 test('negative lunch and afterschool do not continue the warm hangout', () => {

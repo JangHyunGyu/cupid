@@ -115,6 +115,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             { "minAffinity": 35, "next": "after3_rival_seo_high" },
             { "minAffinity": 15, "next": "after3_rival_seo_mid" },
             { "minAffinity": 0, "next": "after3_rival_seo_cool" },
+            { "minAffinity": -19, "next": "after3_rival_seo_cool" },
             { "minAffinity": -100, "next": "after3_rival_seo_neg" }
         ]
     },
@@ -162,6 +163,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             { "minAffinity": 35, "next": "after3_rival_dain_high" },
             { "minAffinity": 15, "next": "after3_rival_dain_mid" },
             { "minAffinity": 0, "next": "after3_rival_dain_cool" },
+            { "minAffinity": -19, "next": "after3_rival_dain_cool" },
             { "minAffinity": -100, "next": "after3_rival_dain_neg" }
         ]
     },
@@ -209,6 +211,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             { "minAffinity": 35, "next": "after3_rival_yuna_high" },
             { "minAffinity": 15, "next": "after3_rival_yuna_mid" },
             { "minAffinity": 0, "next": "after3_rival_yuna_cool" },
+            { "minAffinity": -19, "next": "after3_rival_yuna_cool" },
             { "minAffinity": -100, "next": "after3_rival_yuna_neg" }
         ]
     },
@@ -239,6 +242,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             { "minAffinity": 40, "next": "after3_seo_1" },
             { "minAffinity": 30, "next": "after3_seo_partial_1" },
             { "minAffinity": 0, "next": "after3_seo_low_1" },
+            { "minAffinity": -19, "next": "after3_seo_low_1" },
             { "minAffinity": -100, "next": "after3_seo_neg_1" }
         ]
     },
@@ -268,6 +272,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             { "minAffinity": 40, "next": "after3_yuna_1" },
             { "minAffinity": 30, "next": "after3_yuna_partial_1" },
             { "minAffinity": 0, "next": "after3_yuna_low_1" },
+            { "minAffinity": -19, "next": "after3_yuna_low_1" },
             { "minAffinity": -100, "next": "after3_yuna_neg_1" }
         ]
     },
@@ -297,6 +302,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             { "minAffinity": 40, "next": "after3_dain_1" },
             { "minAffinity": 30, "next": "after3_dain_partial_1" },
             { "minAffinity": 0, "next": "after3_dain_low_1" },
+            { "minAffinity": -19, "next": "after3_dain_low_1" },
             { "minAffinity": -100, "next": "after3_dain_neg_1" }
         ]
     },
@@ -1637,6 +1643,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "affinityBranches": [
             { "minAffinity": 8, "next": "haeun_affinity_high_1" },
             { "minAffinity": 0, "next": "haeun_affinity_neutral_1" },
+            { "minAffinity": -19, "next": "haeun_affinity_neutral_1" },
             { "minAffinity": -100, "next": "haeun_affinity_low_1" }
         ],
         "next": "haeun_affinity_low_1"
@@ -1741,7 +1748,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": null,
         "affinityChar": "Seoyeon",
         "routeBeforeRender": true,
-        "affinityBranches": [{"minAffinity":0,"next":"after3_seo_low_1"},{"minAffinity":-100,"next":"after3_seo_neg_1"}],
+        "affinityBranches": [{"minAffinity":0,"next":"after3_seo_low_1"},{"minAffinity":-19,"next":"after3_seo_low_1"},{"minAffinity":-100,"next":"after3_seo_neg_1"}],
         "next": "after3_seo_neg_1"
     },
     "after3_yuna_skip": {
@@ -1749,7 +1756,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": null,
         "affinityChar": "Yuna",
         "routeBeforeRender": true,
-        "affinityBranches": [{"minAffinity":0,"next":"after3_yuna_low_1"},{"minAffinity":-100,"next":"after3_yuna_neg_1"}],
+        "affinityBranches": [{"minAffinity":0,"next":"after3_yuna_low_1"},{"minAffinity":-19,"next":"after3_yuna_low_1"},{"minAffinity":-100,"next":"after3_yuna_neg_1"}],
         "next": "after3_yuna_neg_1"
     },
     "after3_dain_skip": {
@@ -1757,7 +1764,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": null,
         "affinityChar": "Dain",
         "routeBeforeRender": true,
-        "affinityBranches": [{"minAffinity":0,"next":"after3_dain_low_1"},{"minAffinity":-100,"next":"after3_dain_neg_1"}],
+        "affinityBranches": [{"minAffinity":0,"next":"after3_dain_low_1"},{"minAffinity":-19,"next":"after3_dain_low_1"},{"minAffinity":-100,"next":"after3_dain_neg_1"}],
         "next": "after3_dain_neg_1"
     }
     };

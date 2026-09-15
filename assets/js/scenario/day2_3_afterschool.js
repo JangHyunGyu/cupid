@@ -350,6 +350,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             { "minAffinity": 25, "next": "after2_dain_rival_seo_high" },
             { "minAffinity": 10, "next": "after2_dain_rival_seo_mid" },
             { "minAffinity": 0, "next": "after2_dain_rival_seo_low" },
+            { "minAffinity": -19, "next": "after2_dain_rival_seo_low" },
             { "minAffinity": -100, "next": "after2_dain_rival_seo_neg" }
         ],
         "next": "after2_dain_rival_seo_low"
@@ -379,6 +380,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             { "minAffinity": 25, "next": "after2_dain_rival_yuna_high" },
             { "minAffinity": 10, "next": "after2_dain_rival_yuna_mid" },
             { "minAffinity": 0, "next": "after2_dain_rival_yuna_low" },
+            { "minAffinity": -19, "next": "after2_dain_rival_yuna_low" },
             { "minAffinity": -100, "next": "after2_dain_rival_yuna_neg" }
         ],
         "next": "after2_dain_rival_yuna_low"
@@ -569,7 +571,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/student_room.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "affinityChar": "Seoyeon",
-        "affinityBranches": [{"minAffinity":30,"next":"after2_seo_neck_high"},{"minAffinity":0,"next":"after2_seo_neck_low"},{"minAffinity":-100,"next":"after2_seo_neck_neg"}],
+        "affinityBranches": [{"minAffinity":30,"next":"after2_seo_neck_high"},{"minAffinity":0,"next":"after2_seo_neck_low"},{"minAffinity":-19,"next":"after2_seo_neck_low"},{"minAffinity":-100,"next":"after2_seo_neck_neg"}],
         "next": "after2_seo_neck_low"
     },
     "after2_seo_neck_high": {
@@ -709,6 +711,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             { "minAffinity": 25, "next": "after2_seo_rival_dain_high" },
             { "minAffinity": 10, "next": "after2_seo_rival_dain_mid" },
             { "minAffinity": 0, "next": "after2_seo_rival_dain_low" },
+            { "minAffinity": -19, "next": "after2_seo_rival_dain_low" },
             { "minAffinity": -100, "next": "after2_seo_rival_dain_neg" }
         ],
         "next": "after2_seo_rival_dain_low"
@@ -738,6 +741,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             { "minAffinity": 25, "next": "after2_seo_rival_yuna_high" },
             { "minAffinity": 10, "next": "after2_seo_rival_yuna_mid" },
             { "minAffinity": 0, "next": "after2_seo_rival_yuna_low" },
+            { "minAffinity": -19, "next": "after2_seo_rival_yuna_low" },
             { "minAffinity": -100, "next": "after2_seo_rival_yuna_neg" }
         ],
         "next": "after2_seo_rival_yuna_low"
@@ -952,6 +956,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             { "minAffinity": 25, "next": "after2_yuna_rival_dain_high" },
             { "minAffinity": 10, "next": "after2_yuna_rival_dain_mid" },
             { "minAffinity": 0, "next": "after2_yuna_rival_dain_low" },
+            { "minAffinity": -19, "next": "after2_yuna_rival_dain_low" },
             { "minAffinity": -100, "next": "after2_yuna_rival_dain_neg" }
         ],
         "next": "after2_yuna_rival_dain_low"
@@ -981,6 +986,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             { "minAffinity": 25, "next": "after2_yuna_rival_seo_high" },
             { "minAffinity": 10, "next": "after2_yuna_rival_seo_mid" },
             { "minAffinity": 0, "next": "after2_yuna_rival_seo_low" },
+            { "minAffinity": -19, "next": "after2_yuna_rival_seo_low" },
             { "minAffinity": -100, "next": "after2_yuna_rival_seo_neg" }
         ],
         "next": "after2_yuna_rival_seo_low"
@@ -1083,7 +1089,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "character": null,
         "affinityChar": "Seoyeon",
         "routeBeforeRender": true,
-        "affinityBranches": [{"minAffinity":10,"next":"after2_seo_2"},{"minAffinity":0,"next":"after2_seo_cool_1"},{"minAffinity":-100,"next":"after2_seo_neg_1"}],
+        "affinityBranches": [{"minAffinity":10,"next":"after2_seo_2"},{"minAffinity":0,"next":"after2_seo_cool_1"},{"minAffinity":-19,"next":"after2_seo_cool_1"},{"minAffinity":-100,"next":"after2_seo_neg_1"}],
         "next": "after2_seo_neg_1"
     },
     "after2_seo_cool_1": {
@@ -1101,7 +1107,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "character": null,
         "affinityChar": "Dain",
         "routeBeforeRender": true,
-        "affinityBranches": [{"minAffinity":10,"next":"after2_dain_2"},{"minAffinity":0,"next":"after2_dain_cool_1"},{"minAffinity":-100,"next":"after2_dain_neg_1"}],
+        "affinityBranches": [{"minAffinity":10,"next":"after2_dain_2"},{"minAffinity":0,"next":"after2_dain_cool_1"},{"minAffinity":-19,"next":"after2_dain_cool_1"},{"minAffinity":-100,"next":"after2_dain_neg_1"}],
         "next": "after2_dain_neg_1"
     },
     "after2_dain_cool_1": {
@@ -1119,7 +1125,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "character": null,
         "affinityChar": "Yuna",
         "routeBeforeRender": true,
-        "affinityBranches": [{"minAffinity":10,"next":"after2_yuna_2_b"},{"minAffinity":0,"next":"after2_yuna_cool_1"},{"minAffinity":-100,"next":"after2_yuna_neg_1"}],
+        "affinityBranches": [{"minAffinity":10,"next":"after2_yuna_2_b"},{"minAffinity":0,"next":"after2_yuna_cool_1"},{"minAffinity":-19,"next":"after2_yuna_cool_1"},{"minAffinity":-100,"next":"after2_yuna_neg_1"}],
         "next": "after2_yuna_neg_1"
     },
     "after2_yuna_cool_1": {

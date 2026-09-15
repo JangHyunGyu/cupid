@@ -673,7 +673,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/park.png",
         "character": null,
         "affinityChar": "Seoyeon",
-        "affinityBranches": [{"minAffinity":0,"next":"date_seo_low"},{"minAffinity":-100,"next":"date_seo_neg"}],
+        "affinityBranches": [{"minAffinity":0,"next":"date_seo_low"},{"minAffinity":-19,"next":"date_seo_low"},{"minAffinity":-100,"next":"date_seo_neg"}],
         "next": "date_seo_neg",
         "routeBeforeRender": true
     },
@@ -681,7 +681,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/cafe.png",
         "character": null,
         "affinityChar": "Yuna",
-        "affinityBranches": [{"minAffinity":0,"next":"date_yuna_low"},{"minAffinity":-100,"next":"date_yuna_neg"}],
+        "affinityBranches": [{"minAffinity":0,"next":"date_yuna_low"},{"minAffinity":-19,"next":"date_yuna_low"},{"minAffinity":-100,"next":"date_yuna_neg"}],
         "next": "date_yuna_neg",
         "routeBeforeRender": true
     },
@@ -689,7 +689,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/gym.png",
         "character": null,
         "affinityChar": "Dain",
-        "affinityBranches": [{"minAffinity":0,"next":"date_dain_low"},{"minAffinity":-100,"next":"date_dain_neg"}],
+        "affinityBranches": [{"minAffinity":0,"next":"date_dain_low"},{"minAffinity":-19,"next":"date_dain_low"},{"minAffinity":-100,"next":"date_dain_neg"}],
         "next": "date_dain_neg",
         "routeBeforeRender": true
     },

@@ -152,6 +152,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             { "minAffinity": 35, "next": "lunch3_give_seo_2" },
             { "minAffinity": 15, "next": "lunch3_give_seo_dain_mid" },
             { "minAffinity": 0, "next": "lunch3_give_seo_dain_low" },
+            { "minAffinity": -19, "next": "lunch3_give_seo_dain_low" },
             { "minAffinity": -100, "next": "lunch3_give_seo_dain_neg" }
         ]
     },
@@ -232,6 +233,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             { "minAffinity": 35, "next": "lunch3_give_seo_3" },
             { "minAffinity": 15, "next": "lunch3_give_seo_yuna_mid" },
             { "minAffinity": 0, "next": "lunch3_give_seo_yuna_low" },
+            { "minAffinity": -19, "next": "lunch3_give_seo_yuna_low" },
             { "minAffinity": -100, "next": "lunch3_give_seo_yuna_neg" }
         ]
     },
@@ -296,6 +298,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             { "minAffinity": 35, "next": "lunch3_give_dain_2" },
             { "minAffinity": 15, "next": "lunch3_give_dain_seo_mid" },
             { "minAffinity": 0, "next": "lunch3_give_dain_seo_low" },
+            { "minAffinity": -19, "next": "lunch3_give_dain_seo_low" },
             { "minAffinity": -100, "next": "lunch3_give_dain_seo_neg" }
         ]
     },
@@ -337,6 +340,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             { "minAffinity": 35, "next": "lunch3_dain_witness_1" },
             { "minAffinity": 15, "next": "lunch3_give_dain_yuna_mid" },
             { "minAffinity": 0, "next": "lunch3_give_dain_yuna_low" },
+            { "minAffinity": -19, "next": "lunch3_give_dain_yuna_low" },
             { "minAffinity": -100, "next": "lunch3_give_dain_yuna_neg" }
         ]
     },
@@ -406,6 +410,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             { "minAffinity": 35, "next": "lunch3_give_yuna_2" },
             { "minAffinity": 15, "next": "lunch3_give_yuna_seo_mid" },
             { "minAffinity": 0, "next": "lunch3_give_yuna_seo_low" },
+            { "minAffinity": -19, "next": "lunch3_give_yuna_seo_low" },
             { "minAffinity": -100, "next": "lunch3_give_yuna_seo_neg" }
         ]
     },
@@ -448,6 +453,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             { "minAffinity": 35, "next": "lunch3_give_yuna_3" },
             { "minAffinity": 15, "next": "lunch3_give_yuna_dain_mid" },
             { "minAffinity": 0, "next": "lunch3_give_yuna_dain_low" },
+            { "minAffinity": -19, "next": "lunch3_give_yuna_dain_low" },
             { "minAffinity": -100, "next": "lunch3_give_yuna_dain_neg" }
         ]
     },

@@ -513,7 +513,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "affinityChar": "selectByHighestAffinity",
         "affinityCandidates": ["Seoyeon","Yuna","Dain"],
         "routeBeforeRender": true,
-        "affinityBranches": [{"minAffinity":0,"next":"morning2_greet_none_1"},{"minAffinity":-100,"next":"morning2_greet_none_neg_1"}],
+        "affinityBranches": [{"minAffinity":0,"next":"morning2_greet_none_1"},{"minAffinity":-19,"next":"morning2_greet_none_1"},{"minAffinity":-100,"next":"morning2_greet_none_neg_1"}],
         "next": "morning2_greet_none_neg_1"
     },
     "morning2_greet_none_neg_1": {

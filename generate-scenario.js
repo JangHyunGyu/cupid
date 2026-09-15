@@ -196,7 +196,8 @@ function formatAffinityBranches(scene) {
         lines.push(`- 호감분기: ${scene.affinityChar}`);
         for (const b of branches) {
             if (b.minAffinity !== undefined && b.minAffinity > -100) {
-                lines.push(`  - [${b.minAffinity}+] → \`${b.next}\``);
+                const label = b.minAffinity < 0 ? `${b.minAffinity} 이상` : `${b.minAffinity}+`;
+                lines.push(`  - [${label}] → \`${b.next}\``);
             } else {
                 lines.push(`  - [기본] → \`${b.next}\``);
             }
@@ -243,7 +244,8 @@ function formatChoiceLine(choice, idx, choiceText) {
         lines.push(header);
         for (const b of choice.affinityBranches) {
             if (b.minAffinity !== undefined && b.minAffinity > -100) {
-                lines.push(`    - [${b.minAffinity}+] → \`${b.next}\``);
+                const label = b.minAffinity < 0 ? `${b.minAffinity} 이상` : `${b.minAffinity}+`;
+                lines.push(`    - [${label}] → \`${b.next}\``);
             } else {
                 lines.push(`    - [기본] → \`${b.next}\``);
             }

@@ -354,7 +354,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": null,
         "affinityChar": "selectByHighestAffinity",
         "affinityCandidates": ["Seoyeon","Yuna","Dain","Teacher","Nurse"],
-        "affinityBranches": [{"minAffinity":80,"next":"morning5_mood_high"},{"minAffinity":50,"next":"morning5_mood_mid"},{"minAffinity":0,"next":"morning5_mood_low"},{"minAffinity":-100,"next":"morning5_mood_neg"}],
+        "affinityBranches": [{"minAffinity":80,"next":"morning5_mood_high"},{"minAffinity":50,"next":"morning5_mood_mid"},{"minAffinity":0,"next":"morning5_mood_low"},{"minAffinity":-19,"next":"morning5_mood_low"},{"minAffinity":-100,"next":"morning5_mood_neg"}],
         "next": "morning5_mood_low"
     },
     "morning5_mood_high": {
@@ -1138,7 +1138,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": null,
         "affinityChar": "Teacher",
         "routeBeforeRender": true,
-        "affinityBranches": [{"minAffinity":0,"next":"hidden_homeroom_d5_low"},{"minAffinity":-100,"next":"hidden_homeroom_d5_neg"}],
+        "affinityBranches": [{"minAffinity":0,"next":"hidden_homeroom_d5_low"},{"minAffinity":-19,"next":"hidden_homeroom_d5_low"},{"minAffinity":-100,"next":"hidden_homeroom_d5_neg"}],
         "next": "hidden_homeroom_d5_neg"
     },
     "hidden_nurse_d5_skip": {
@@ -1146,7 +1146,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": null,
         "affinityChar": "Nurse",
         "routeBeforeRender": true,
-        "affinityBranches": [{"minAffinity":0,"next":"hidden_nurse_d5_low"},{"minAffinity":-100,"next":"hidden_nurse_d5_neg"}],
+        "affinityBranches": [{"minAffinity":0,"next":"hidden_nurse_d5_low"},{"minAffinity":-19,"next":"hidden_nurse_d5_low"},{"minAffinity":-100,"next":"hidden_nurse_d5_neg"}],
         "next": "hidden_nurse_d5_neg"
     },
     "hidden_homeroom_d5_neg": {

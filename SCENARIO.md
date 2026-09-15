@@ -767,6 +767,7 @@
 - 호감분기: Seoyeon
   - [4+] → `lunch_seo_1_aff_high`
   - [0+] → `lunch_seo_1_aff_default`
+  - [-19 이상] → `lunch_seo_1_aff_default`
   - [기본] → `lunch_seo_1_aff_neg`
 - 다음: `lunch_seo_1_aff_default`
 
@@ -3587,6 +3588,7 @@
 - 배경: `room_school.png`
 - 호감분기: selectByHighestAffinity
   - [0+] → `morning2_greet_none_1`
+  - [-19 이상] → `morning2_greet_none_1`
   - [기본] → `morning2_greet_none_neg_1`
 - 다음: `morning2_greet_none_neg_1`
 
@@ -4372,6 +4374,7 @@
 - 호감분기: Seoyeon
   - [10+] → `lunch2_seo_2b_warm`
   - [0+] → `lunch2_seo_2b_cool`
+  - [-19 이상] → `lunch2_seo_2b_cool`
   - [기본] → `lunch2_seo_2_neg`
 
 - 캐릭터: `seyoun_normal.png`
@@ -4396,7 +4399,7 @@
 - 다음: `lunch2_seo_cool_cont`
 
 - 캐릭터: `seyoun_normal.png`
-**서연**: 옥상은 허가제야. 오늘은 예외로 둘게.
+**서연**: 옥상은 허가제야. 오늘은 예외.
 
 ---
 
@@ -4505,6 +4508,7 @@
 - 호감분기: Seoyeon
   - [10+] → `lunch2_seo_2_warm`
   - [0+] → `lunch2_seo_2_cool`
+  - [-19 이상] → `lunch2_seo_2_cool`
   - [기본] → `lunch2_seo_2_neg`
 
 - 캐릭터: `seyoun_normal.png`
@@ -4565,7 +4569,7 @@
 - 다음: `lunch2_seo_cool_cont`
 
 - 캐릭터: `seyoun_normal.png`
-**서연**: 왔구나. 도시락 펼칠 테니까 잠깐만.
+**서연**: 왔구나. 도시락 펼게. 잠깐만.
 
 ---
 
@@ -4966,6 +4970,7 @@
 - 호감분기: Dain
   - [10+] → `lunch2_dain_2`
   - [0+] → `lunch2_dain_2_cool`
+  - [-19 이상] → `lunch2_dain_2_cool`
   - [기본] → `lunch2_dain_2_neg`
 - 다음: `lunch2_dain_2_neg`
 
@@ -5553,6 +5558,7 @@
 - 호감분기: Yuna
   - [10+] → `lunch2_yuna_3_warm`
   - [0+] → `lunch2_yuna_3_cool`
+  - [-19 이상] → `lunch2_yuna_3_cool`
   - [기본] → `lunch2_yuna_3_neg`
 
 - 캐릭터: `yuna_normal.png`
@@ -6308,6 +6314,7 @@
 - 호감분기: Dain
   - [10+] → `after2_dain_2`
   - [0+] → `after2_dain_cool_1`
+  - [-19 이상] → `after2_dain_cool_1`
   - [기본] → `after2_dain_neg_1`
 - 다음: `after2_dain_neg_1`
 
@@ -6669,6 +6676,7 @@
   - [25+] → `after2_dain_rival_seo_high`
   - [10+] → `after2_dain_rival_seo_mid`
   - [0+] → `after2_dain_rival_seo_low`
+  - [-19 이상] → `after2_dain_rival_seo_low`
   - [기본] → `after2_dain_rival_seo_neg`
 - 다음: `after2_dain_rival_seo_low`
 
@@ -6720,6 +6728,7 @@
   - [25+] → `after2_dain_rival_yuna_high`
   - [10+] → `after2_dain_rival_yuna_mid`
   - [0+] → `after2_dain_rival_yuna_low`
+  - [-19 이상] → `after2_dain_rival_yuna_low`
   - [기본] → `after2_dain_rival_yuna_neg`
 - 다음: `after2_dain_rival_yuna_low`
 
@@ -6801,6 +6810,7 @@
 - 호감분기: Seoyeon
   - [10+] → `after2_seo_2`
   - [0+] → `after2_seo_cool_1`
+  - [-19 이상] → `after2_seo_cool_1`
   - [기본] → `after2_seo_neg_1`
 - 다음: `after2_seo_neg_1`
 
@@ -7056,6 +7066,7 @@
 - 호감분기: Seoyeon
   - [30+] → `after2_seo_neck_high`
   - [0+] → `after2_seo_neck_low`
+  - [-19 이상] → `after2_seo_neck_low`
   - [기본] → `after2_seo_neck_neg`
 - 다음: `after2_seo_neck_low`
 
@@ -7308,6 +7319,7 @@
   - [25+] → `after2_seo_rival_dain_high`
   - [10+] → `after2_seo_rival_dain_mid`
   - [0+] → `after2_seo_rival_dain_low`
+  - [-19 이상] → `after2_seo_rival_dain_low`
   - [기본] → `after2_seo_rival_dain_neg`
 - 다음: `after2_seo_rival_dain_low`
 
@@ -7359,6 +7371,7 @@
   - [25+] → `after2_seo_rival_yuna_high`
   - [10+] → `after2_seo_rival_yuna_mid`
   - [0+] → `after2_seo_rival_yuna_low`
+  - [-19 이상] → `after2_seo_rival_yuna_low`
   - [기본] → `after2_seo_rival_yuna_neg`
 - 다음: `after2_seo_rival_yuna_low`
 
@@ -7459,6 +7472,7 @@
 - 호감분기: Yuna
   - [10+] → `after2_yuna_2_b`
   - [0+] → `after2_yuna_cool_1`
+  - [-19 이상] → `after2_yuna_cool_1`
   - [기본] → `after2_yuna_neg_1`
 - 다음: `after2_yuna_neg_1`
 
@@ -7740,7 +7754,7 @@
 - 다음: `after2_yuna_rival_dain_check`
 
 - 캐릭터: `없음`
-**{name}**: *책을 덮지 않은 자리 곁을 나와 문 쪽으로 선다.*
+**{name}**: *책을 덮지 않은 채 자리 옆을 지나 문 쪽으로 선다.*
 
 ---
 
@@ -7750,6 +7764,7 @@
   - [25+] → `after2_yuna_rival_dain_high`
   - [10+] → `after2_yuna_rival_dain_mid`
   - [0+] → `after2_yuna_rival_dain_low`
+  - [-19 이상] → `after2_yuna_rival_dain_low`
   - [기본] → `after2_yuna_rival_dain_neg`
 - 다음: `after2_yuna_rival_dain_low`
 
@@ -7801,6 +7816,7 @@
   - [25+] → `after2_yuna_rival_seo_high`
   - [10+] → `after2_yuna_rival_seo_mid`
   - [0+] → `after2_yuna_rival_seo_low`
+  - [-19 이상] → `after2_yuna_rival_seo_low`
   - [기본] → `after2_yuna_rival_seo_neg`
 - 다음: `after2_yuna_rival_seo_low`
 
@@ -8164,7 +8180,7 @@
 
 ### `night2_reply_dain_1_visit`
 - 호감분기: Dain
-  - [0+] → `night2_reply_dain_1_established`
+  - [-19 이상] → `night2_reply_dain_1_established`
   - [기본] → `night2_reply_dain_react_neg`
 - 다음: `night2_reply_dain_react_neg`
 
@@ -8224,6 +8240,7 @@
 - 호감분기: Dain
   - [30+] → `night2_reply_dain_react_high`
   - [0+] → `night2_reply_dain_react_default`
+  - [-19 이상] → `night2_reply_dain_react_default`
   - [기본] → `night2_reply_dain_react_neg`
 - 다음: `night2_reply_dain_react_default`
 
@@ -8317,6 +8334,7 @@
 - 호감분기: Seoyeon
   - [30+] → `night2_reply_seo_react_high`
   - [0+] → `night2_reply_seo_react_default`
+  - [-19 이상] → `night2_reply_seo_react_default`
   - [기본] → `night2_reply_seo_react_neg`
 - 다음: `night2_reply_seo_react_default`
 
@@ -8426,7 +8444,7 @@
 
 ### `night2_reply_yuna_4_visit`
 - 호감분기: Yuna
-  - [0+] → `night2_reply_yuna_4_established`
+  - [-19 이상] → `night2_reply_yuna_4_established`
   - [기본] → `night2_reply_yuna_react_neg`
 - 다음: `night2_reply_yuna_react_neg`
 
@@ -8494,6 +8512,7 @@
 - 호감분기: Yuna
   - [30+] → `night2_reply_yuna_react_high`
   - [0+] → `night2_reply_yuna_react_default`
+  - [-19 이상] → `night2_reply_yuna_react_default`
   - [기본] → `night2_reply_yuna_react_neg`
 - 다음: `night2_reply_yuna_react_default`
 
@@ -8891,6 +8910,7 @@
   - [35+] → `morning3_seo_gate_warm_1`
   - [15+] → `morning3_seo_gate_2`
   - [0+] → `morning3_seo_gate_cold_1`
+  - [-19 이상] → `morning3_seo_gate_cold_1`
   - [기본] → `morning3_seo_gate_neg_1`
 
 - 캐릭터: `seyoun_normal.png`
@@ -9051,6 +9071,7 @@
   - [35+] → `morning3_yuna_gate_warm_1`
   - [15+] → `morning3_yuna_gate_2`
   - [0+] → `morning3_yuna_gate_cold_1`
+  - [-19 이상] → `morning3_yuna_gate_cold_1`
   - [기본] → `morning3_yuna_gate_neg_1`
 
 - 캐릭터: `yuna_normal.png`
@@ -9193,6 +9214,7 @@
   - [35+] → `morning3_dain_gate_warm_1`
   - [15+] → `morning3_dain_gate_2`
   - [0+] → `morning3_dain_gate_cold_1`
+  - [-19 이상] → `morning3_dain_gate_cold_1`
   - [기본] → `morning3_dain_gate_neg_1`
 
 - 캐릭터: `dain_normal.png`
@@ -10542,6 +10564,7 @@
 - 배경: `school_hallway.png`
 - 호감분기: Seoyeon
   - [0+] → `morning3_date_seo_low`
+  - [-19 이상] → `morning3_date_seo_low`
   - [기본] → `morning3_date_seo_neg`
 - 다음: `morning3_date_seo_neg`
 
@@ -10642,6 +10665,7 @@
 - 배경: `room_school.png`
 - 호감분기: Dain
   - [0+] → `morning3_date_dain_low`
+  - [-19 이상] → `morning3_date_dain_low`
   - [기본] → `morning3_date_dain_neg`
 - 다음: `morning3_date_dain_neg`
 
@@ -10733,6 +10757,7 @@
 - 배경: `room_school.png`
 - 호감분기: Yuna
   - [0+] → `morning3_date_yuna_low`
+  - [-19 이상] → `morning3_date_yuna_low`
   - [기본] → `morning3_date_yuna_neg`
 - 다음: `morning3_date_yuna_neg`
 
@@ -11067,6 +11092,7 @@
   - [35+] → `lunch3_give_seo_2`
   - [15+] → `lunch3_give_seo_dain_mid`
   - [0+] → `lunch3_give_seo_dain_low`
+  - [-19 이상] → `lunch3_give_seo_dain_low`
   - [기본] → `lunch3_give_seo_dain_neg`
 
 - 캐릭터: `없음`
@@ -11201,6 +11227,7 @@
   - [35+] → `lunch3_give_seo_3`
   - [15+] → `lunch3_give_seo_yuna_mid`
   - [0+] → `lunch3_give_seo_yuna_low`
+  - [-19 이상] → `lunch3_give_seo_yuna_low`
   - [기본] → `lunch3_give_seo_yuna_neg`
 
 - 캐릭터: `없음`
@@ -11310,6 +11337,7 @@
   - [35+] → `lunch3_give_dain_2`
   - [15+] → `lunch3_give_dain_seo_mid`
   - [0+] → `lunch3_give_dain_seo_low`
+  - [-19 이상] → `lunch3_give_dain_seo_low`
   - [기본] → `lunch3_give_dain_seo_neg`
 
 - 캐릭터: `없음`
@@ -11365,6 +11393,7 @@
   - [35+] → `lunch3_dain_witness_1`
   - [15+] → `lunch3_give_dain_yuna_mid`
   - [0+] → `lunch3_give_dain_yuna_low`
+  - [-19 이상] → `lunch3_give_dain_yuna_low`
   - [기본] → `lunch3_give_dain_yuna_neg`
 
 - 캐릭터: `없음`
@@ -11499,6 +11528,7 @@
   - [35+] → `lunch3_give_yuna_2`
   - [15+] → `lunch3_give_yuna_seo_mid`
   - [0+] → `lunch3_give_yuna_seo_low`
+  - [-19 이상] → `lunch3_give_yuna_seo_low`
   - [기본] → `lunch3_give_yuna_seo_neg`
 
 - 캐릭터: `없음`
@@ -11572,6 +11602,7 @@
   - [35+] → `lunch3_give_yuna_3`
   - [15+] → `lunch3_give_yuna_dain_mid`
   - [0+] → `lunch3_give_yuna_dain_low`
+  - [-19 이상] → `lunch3_give_yuna_dain_low`
   - [기본] → `lunch3_give_yuna_dain_neg`
 
 - 캐릭터: `없음`
@@ -12121,6 +12152,7 @@
   - [35+] → `after3_rival_seo_high`
   - [15+] → `after3_rival_seo_mid`
   - [0+] → `after3_rival_seo_cool`
+  - [-19 이상] → `after3_rival_seo_cool`
   - [기본] → `after3_rival_seo_neg`
 
 - 캐릭터: `없음`
@@ -12272,6 +12304,7 @@
   - [35+] → `after3_rival_dain_high`
   - [15+] → `after3_rival_dain_mid`
   - [0+] → `after3_rival_dain_cool`
+  - [-19 이상] → `after3_rival_dain_cool`
   - [기본] → `after3_rival_dain_neg`
 
 - 캐릭터: `없음`
@@ -12312,7 +12345,7 @@
 - 다음: `after3_rival_dain_done`
 
 - 캐릭터: `dain_angry.png`
-**다인**: *배구공을 집어 들고 먼저 돌아선다. 느낌표는 없다.*
+**다인**: *배구공을 집어 들고 먼저 돌아선다.*
 
 ---
 
@@ -12421,6 +12454,7 @@
   - [35+] → `after3_rival_yuna_high`
   - [15+] → `after3_rival_yuna_mid`
   - [0+] → `after3_rival_yuna_cool`
+  - [-19 이상] → `after3_rival_yuna_cool`
   - [기본] → `after3_rival_yuna_neg`
 
 - 캐릭터: `없음`
@@ -12484,6 +12518,7 @@
   - [40+] → `after3_seo_1`
   - [30+] → `after3_seo_partial_1`
   - [0+] → `after3_seo_low_1`
+  - [-19 이상] → `after3_seo_low_1`
   - [기본] → `after3_seo_neg_1`
 
 - 캐릭터: `없음`
@@ -12852,6 +12887,7 @@
   - [40+] → `after3_yuna_1`
   - [30+] → `after3_yuna_partial_1`
   - [0+] → `after3_yuna_low_1`
+  - [-19 이상] → `after3_yuna_low_1`
   - [기본] → `after3_yuna_neg_1`
 
 - 캐릭터: `없음`
@@ -13220,6 +13256,7 @@
   - [40+] → `after3_dain_1`
   - [30+] → `after3_dain_partial_1`
   - [0+] → `after3_dain_low_1`
+  - [-19 이상] → `after3_dain_low_1`
   - [기본] → `after3_dain_neg_1`
 
 - 캐릭터: `없음`
@@ -13990,6 +14027,7 @@
 - 배경: `student_room.png`
 - 호감분기: Seoyeon
   - [0+] → `after3_seo_low_1`
+  - [-19 이상] → `after3_seo_low_1`
   - [기본] → `after3_seo_neg_1`
 - 다음: `after3_seo_neg_1`
 
@@ -14023,6 +14061,7 @@
 - 배경: `yuna_hideout.png`
 - 호감분기: Yuna
   - [0+] → `after3_yuna_low_1`
+  - [-19 이상] → `after3_yuna_low_1`
   - [기본] → `after3_yuna_neg_1`
 - 다음: `after3_yuna_neg_1`
 
@@ -14056,6 +14095,7 @@
 - 배경: `gym.png`
 - 호감분기: Dain
   - [0+] → `after3_dain_low_1`
+  - [-19 이상] → `after3_dain_low_1`
   - [기본] → `after3_dain_neg_1`
 - 다음: `after3_dain_neg_1`
 
@@ -14469,6 +14509,7 @@
 - 호감분기: Haeun
   - [8+] → `haeun_affinity_high_1`
   - [0+] → `haeun_affinity_neutral_1`
+  - [-19 이상] → `haeun_affinity_neutral_1`
   - [기본] → `haeun_affinity_low_1`
 - 다음: `haeun_affinity_low_1`
 
@@ -17777,6 +17818,7 @@
 - 배경: `park.png`
 - 호감분기: Seoyeon
   - [0+] → `date_seo_low`
+  - [-19 이상] → `date_seo_low`
   - [기본] → `date_seo_neg`
 - 다음: `date_seo_neg`
 
@@ -17810,6 +17852,7 @@
 - 배경: `cafe.png`
 - 호감분기: Yuna
   - [0+] → `date_yuna_low`
+  - [-19 이상] → `date_yuna_low`
   - [기본] → `date_yuna_neg`
 - 다음: `date_yuna_neg`
 
@@ -17843,6 +17886,7 @@
 - 배경: `gym.png`
 - 호감분기: Dain
   - [0+] → `date_dain_low`
+  - [-19 이상] → `date_dain_low`
   - [기본] → `date_dain_neg`
 - 다음: `date_dain_neg`
 
@@ -18383,7 +18427,7 @@
 - 다음: `confess_yuna_yes_9_b`
 
 - 캐릭터: `yuna_normal.png`
-**유나**: ...바로는 못 말할게. 그래도 사라지지는 마.
+**유나**: ...바로는 말 못 할게. 그래도 사라지지는 마.
 
 ---
 
@@ -19119,6 +19163,7 @@
 - 호감분기: Seoyeon
   - [60+] → `wall_seo_pre_high_1`
   - [0+] → `wall_seo_pre_low_1`
+  - [-19 이상] → `wall_seo_pre_low_1`
   - [기본] → `wall_seo_skip`
 
 - 캐릭터: `없음`
@@ -19783,6 +19828,7 @@
 - 호감분기: Dain
   - [60+] → `wall_dain_pre_high_1`
   - [0+] → `wall_dain_pre_low_1`
+  - [-19 이상] → `wall_dain_pre_low_1`
   - [기본] → `wall_dain_skip`
 
 - 캐릭터: `없음`
@@ -20640,6 +20686,7 @@
 - 호감분기: Yuna
   - [60+] → `wall_yuna_pre_high_1`
   - [0+] → `wall_yuna_pre_low_1`
+  - [-19 이상] → `wall_yuna_pre_low_1`
   - [기본] → `wall_yuna_skip`
 
 - 캐릭터: `없음`
@@ -22171,6 +22218,7 @@
   - [80+] → `morning5_mood_high`
   - [50+] → `morning5_mood_mid`
   - [0+] → `morning5_mood_low`
+  - [-19 이상] → `morning5_mood_low`
   - [기본] → `morning5_mood_neg`
 - 다음: `morning5_mood_low`
 
@@ -22952,6 +23000,7 @@
 - 배경톤: `empty`
 - 호감분기: Teacher
   - [0+] → `hidden_homeroom_d5_low`
+  - [-19 이상] → `hidden_homeroom_d5_low`
   - [기본] → `hidden_homeroom_d5_neg`
 - 다음: `hidden_homeroom_d5_neg`
 
@@ -22977,7 +23026,7 @@
 - 다음: `hidden_nurse_d5_check`
 
 - 캐릭터: `teacher_normal.png`
-**담임선생님**: *원고 봉투를 서랍에 넣고 열쇠를 돌린다.* 개인 상담은 여기까지다. 남은 일정은 학급 공지로만 전달할게.
+**담임선생님**: *원고 봉투를 서랍에 넣고 열쇠를 돌린다.* 개인 상담은 여기까지야. 남은 일정은 학급 공지로만 전달할게.
 
 ---
 
@@ -23346,6 +23395,7 @@
 - 배경: `school_hallway.png`
 - 호감분기: Nurse
   - [0+] → `hidden_nurse_d5_low`
+  - [-19 이상] → `hidden_nurse_d5_low`
   - [기본] → `hidden_nurse_d5_neg`
 - 다음: `hidden_nurse_d5_neg`
 
@@ -24291,6 +24341,7 @@
 - 배경: `school.png`
 - 호감분기: Seoyeon
   - [0+] → `tour_seo_low`
+  - [-19 이상] → `tour_seo_low`
   - [기본] → `tour_seo_neg`
 - 다음: `tour_seo_neg`
 
@@ -24322,6 +24373,7 @@
 - 배경: `yuna_hideout.png`
 - 호감분기: Yuna
   - [0+] → `tour_yuna_low`
+  - [-19 이상] → `tour_yuna_low`
   - [기본] → `tour_yuna_neg`
 - 다음: `tour_yuna_neg`
 
@@ -24353,6 +24405,7 @@
 - 배경: `gym.png`
 - 호감분기: Dain
   - [0+] → `tour_dain_low`
+  - [-19 이상] → `tour_dain_low`
   - [기본] → `tour_dain_neg`
 - 다음: `tour_dain_neg`
 
@@ -24716,6 +24769,7 @@
 - 배경: `school_hallway.png`
 - 호감분기: Seoyeon
   - [0+] → `after5_farewell_seo_low`
+  - [-19 이상] → `after5_farewell_seo_low`
   - [기본] → `after5_farewell_seo_neg`
 - 다음: `after5_farewell_seo_neg`
 
@@ -24846,6 +24900,7 @@
 - 배경: `school_hallway.png`
 - 호감분기: Yuna
   - [0+] → `after5_farewell_yuna_low`
+  - [-19 이상] → `after5_farewell_yuna_low`
   - [기본] → `after5_farewell_yuna_neg`
 - 다음: `after5_farewell_yuna_neg`
 
@@ -25004,6 +25059,7 @@
 - 배경: `school_hallway.png`
 - 호감분기: Dain
   - [0+] → `after5_farewell_dain_low`
+  - [-19 이상] → `after5_farewell_dain_low`
   - [기본] → `after5_farewell_dain_neg`
 - 다음: `after5_farewell_dain_neg`
 
@@ -25086,6 +25142,7 @@
   - [60+] → `after5_hidden_teacher_high`
   - [40+] → `after5_hidden_teacher_mid`
   - [0+] → `after5_hidden_teacher_low`
+  - [-19 이상] → `after5_hidden_teacher_low`
   - [기본] → `after5_hidden_teacher_neg`
 - 다음: `after5_hidden_teacher_low`
 
@@ -25141,6 +25198,7 @@
   - [60+] → `after5_hidden_nurse_high`
   - [40+] → `after5_hidden_nurse_mid`
   - [0+] → `after5_hidden_nurse_low`
+  - [-19 이상] → `after5_hidden_nurse_low`
   - [기본] → `after5_hidden_nurse_neg`
 - 다음: `after5_hidden_nurse_low`
 
@@ -25274,6 +25332,7 @@
 - 호감분기: Seoyeon
   - [50+] → `after5_last_chance_2_b`
   - [0+] → `after5_last_chance_seo_low_1`
+  - [-19 이상] → `after5_last_chance_seo_low_1`
   - [기본] → `after5_last_chance_seo_neg`
 - 다음: `after5_last_chance_seo_neg`
 
@@ -25437,6 +25496,7 @@
 - 호감분기: Dain
   - [50+] → `after5_last_chance_2_k`
   - [0+] → `after5_last_chance_dain_low_1`
+  - [-19 이상] → `after5_last_chance_dain_low_1`
   - [기본] → `after5_last_chance_dain_neg`
 - 다음: `after5_last_chance_dain_neg`
 
@@ -25600,6 +25660,7 @@
 - 호감분기: Yuna
   - [50+] → `after5_last_chance_yuna_1`
   - [0+] → `after5_last_chance_yuna_low_1`
+  - [-19 이상] → `after5_last_chance_yuna_low_1`
   - [기본] → `after5_last_chance_yuna_neg`
 - 다음: `after5_last_chance_yuna_neg`
 
@@ -25795,6 +25856,7 @@
 - 호감분기: Seoyeon
   - [50+] → `after5_confess_react_seo`
   - [0+] → `after5_confess_react_seo_low`
+  - [-19 이상] → `after5_confess_react_seo_low`
   - [기본] → `after5_confess_react_seo_neg`
 - 다음: `after5_confess_react_seo_neg`
 
@@ -25836,6 +25898,7 @@
 - 호감분기: Dain
   - [50+] → `after5_confess_react_dain`
   - [0+] → `after5_confess_react_dain_low`
+  - [-19 이상] → `after5_confess_react_dain_low`
   - [기본] → `after5_confess_react_dain_neg`
 - 다음: `after5_confess_react_dain_neg`
 
@@ -25877,6 +25940,7 @@
 - 호감분기: Yuna
   - [50+] → `after5_confess_react_yuna`
   - [0+] → `after5_confess_react_yuna_low`
+  - [-19 이상] → `after5_confess_react_yuna_low`
   - [기본] → `after5_confess_react_yuna_neg`
 - 다음: `after5_confess_react_yuna_neg`
 
