@@ -1,7 +1,16 @@
 {
-    "after5_farewell_seo_low": {"name":"Seoyeon","text":"*Você encontra Seoyeon no corredor. Ela para por um instante e faz um único aceno com a cabeça.* Sei o que você decidiu. Não tenho mais nada a dizer."},
-    "after5_farewell_yuna_low": {"name":"Yuna","text":"*Os olhares de vocês se cruzam em frente à biblioteca. Yuna aperta o livro contra o peito e faz um leve aceno.* Tchau."},
-    "after5_farewell_dain_low": {"name":"Dain","text":"*Dain se aproxima do lado de fora do ginásio e para a dois passos de distância.* Sei o que você decidiu. Vou entrar."},
+    "after5_farewell_seo_low": {
+        "name": "Seoyeon",
+        "text": "*Você encontra Seoyeon no corredor. Ela para por um instante e faz um único aceno com a cabeça.* Sei o que você decidiu. Não tenho mais nada a dizer."
+    },
+    "after5_farewell_yuna_low": {
+        "name": "Yuna",
+        "text": "*Os olhares de vocês se cruzam em frente à biblioteca. Yuna aperta o livro contra o peito e faz um leve aceno.* Tchau."
+    },
+    "after5_farewell_dain_low": {
+        "name": "Dain",
+        "text": "*Dain se aproxima do lado de fora do ginásio e para a dois passos de distância.* Sei o que você decidiu. Vou entrar."
+    },
     "after5_start": {},
     "after5_waited_start_branch": {
         "name": "Sistema",
@@ -559,5 +568,28 @@
     "after5_hidden_return_to_park": {
         "name": "{name}",
         "text": "*Depois de terminar a organização, saio da escola. Faixas dobradas do festival acompanham o caminho até o parque.*"
+    },
+    "after5_farewell_seo_skip": {},
+    "after5_farewell_yuna_skip": {},
+    "after5_farewell_dain_skip": {},
+    "after5_farewell_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Ela passa sem virar a cabeça.*"
+    },
+    "after5_farewell_yuna_neg": {
+        "name": "Yuna",
+        "text": "*Ela vai pro outro lado do corredor com o livro. Sem fala.*"
+    },
+    "after5_farewell_dain_neg": {
+        "name": "Dain",
+        "text": "*Ela arruma a mochila e entra no ginásio. Não olha pra trás.*"
+    },
+    "after5_hidden_teacher_neg": {
+        "name": "Professora",
+        "text": "*Ela põe o envelope do manuscrito na pasta e fecha.* Hoje só o evento. Conversa pessoal termina aqui."
+    },
+    "after5_hidden_nurse_neg": {
+        "name": "Enfermeira",
+        "text": "*Ela arquiva a ficha e fecha a agenda.* Daqui pra frente, só o canal oficial. Por hoje chega."
     }
 }

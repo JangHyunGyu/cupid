@@ -1213,5 +1213,17 @@
     "day4_student_checkin_return_home": {
         "name": "{name}",
         "text": "*En casa, confirmo la llegada en la aplicación escolar. Dejo la mochila y conecto el teléfono al cargador. Aparece una nueva notificación.*"
+    },
+    "wall_seo_skip": {
+        "name": "{name}",
+        "text": "*El chat de Seoyeon sigue en silencio. No llama.*"
+    },
+    "wall_dain_skip": {
+        "name": "{name}",
+        "text": "*El último mensaje de Dain se quedó por la mañana. De noche, nada.*"
+    },
+    "wall_yuna_skip": {
+        "name": "{name}",
+        "text": "*Ni recado ni mensaje de Yuna. La pantalla se apaga.*"
     }
 }

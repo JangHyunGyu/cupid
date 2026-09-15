@@ -1,7 +1,16 @@
 {
-    "after5_farewell_seo_low": {"name":"Seoyeon","text":"*You run into Seoyeon in the hallway. She pauses, then gives you a single nod.* I know what you decided. I have nothing else to say."},
-    "after5_farewell_yuna_low": {"name":"Yuna","text":"*Your eyes meet outside the library. Yuna holds her book close and gives you a small nod.* Bye."},
-    "after5_farewell_dain_low": {"name":"Dain","text":"*Dain walks up outside the gym and stops two paces away.* I know what you decided. I'll head inside."},
+    "after5_farewell_seo_low": {
+        "name": "Seoyeon",
+        "text": "*You run into Seoyeon in the hallway. She pauses, then gives you a single nod.* I know what you decided. I have nothing else to say."
+    },
+    "after5_farewell_yuna_low": {
+        "name": "Yuna",
+        "text": "*Your eyes meet outside the library. Yuna holds her book close and gives you a small nod.* Bye."
+    },
+    "after5_farewell_dain_low": {
+        "name": "Dain",
+        "text": "*Dain walks up outside the gym and stops two paces away.* I know what you decided. I'll head inside."
+    },
     "after5_start": {},
     "after5_waited_start_branch": {
         "name": "System",
@@ -559,5 +568,28 @@
     "after5_hidden_return_to_park": {
         "name": "{name}",
         "text": "*After finishing the work, I leave school. Folded festival banners line the road toward the park.*"
+    },
+    "after5_farewell_seo_skip": {},
+    "after5_farewell_yuna_skip": {},
+    "after5_farewell_dain_skip": {},
+    "after5_farewell_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*She walks past without turning her head.*"
+    },
+    "after5_farewell_yuna_neg": {
+        "name": "Yuna",
+        "text": "*She goes the other way down the hall with her book. No words.*"
+    },
+    "after5_farewell_dain_neg": {
+        "name": "Dain",
+        "text": "*She fixes her bag and goes through the gym door. She doesn't look back.*"
+    },
+    "after5_hidden_teacher_neg": {
+        "name": "Homeroom Teacher",
+        "text": "*She puts the manuscript envelope in the file and closes it.* Let's just finish the event today. Personal talk ends here."
+    },
+    "after5_hidden_nurse_neg": {
+        "name": "School Nurse",
+        "text": "*She files the counseling form and closes the appointment sheet.* From now on, official channels only. That's it for today."
     }
 }

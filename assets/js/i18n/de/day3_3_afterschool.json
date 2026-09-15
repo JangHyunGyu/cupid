@@ -914,33 +914,78 @@
     "after3_rival_seo_check": {},
     "after3_rival_seo_promised_dispatch": {},
     "after3_rival_seo_affinity": {},
-    "after3_rival_seo_high": {"name":"Seoyeon","text":"*Seoyeon bleibt an der Kreuzung stehen, sieht in meine Richtung und fasst den Riemen ihrer Tasche fester.* Du gehst also woandershin."},
-    "after3_rival_seo_mid": {"name":"Seoyeon","text":"Verstanden. Ich erledige den Rest."},
+    "after3_rival_seo_high": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon bleibt an der Kreuzung stehen, sieht in meine Richtung und fasst den Riemen ihrer Tasche fester.* Du gehst also woandershin."
+    },
+    "after3_rival_seo_mid": {
+        "name": "Seoyeon",
+        "text": "Verstanden. Ich erledige den Rest."
+    },
     "after3_rival_seo_done": {},
     "after3_rival_dain_check": {},
     "after3_rival_dain_promised_dispatch": {},
     "after3_rival_dain_affinity": {},
-    "after3_rival_dain_high": {"name":"Dain","text":"*Dain schluckt ihre Frage hinunter und sieht zum Schild der Turnhalle.* Du gehst woandershin? Verstanden."},
-    "after3_rival_dain_mid": {"name":"Dain","text":"Okay. Ich gehe schon mal zur Turnhalle."},
+    "after3_rival_dain_high": {
+        "name": "Dain",
+        "text": "*Dain schluckt ihre Frage hinunter und sieht zum Schild der Turnhalle.* Du gehst woandershin? Verstanden."
+    },
+    "after3_rival_dain_mid": {
+        "name": "Dain",
+        "text": "Okay. Ich gehe schon mal zur Turnhalle."
+    },
     "after3_rival_dain_done": {},
     "after3_rival_yuna_check": {},
     "after3_rival_yuna_promised_dispatch": {},
     "after3_rival_yuna_affinity": {},
-    "after3_rival_yuna_high": {"name":"Yuna","text":"*Yuna schließt das Buch, das sie gerade öffnen wollte.* Du gehst woandershin. Okay."},
-    "after3_rival_yuna_mid": {"name":"Yuna","text":"Verstanden. Ich bin in der Bibliothek."},
+    "after3_rival_yuna_high": {
+        "name": "Yuna",
+        "text": "*Yuna schließt das Buch, das sie gerade öffnen wollte.* Du gehst woandershin. Okay."
+    },
+    "after3_rival_yuna_mid": {
+        "name": "Yuna",
+        "text": "Verstanden. Ich bin in der Bibliothek."
+    },
     "after3_rival_yuna_done": {},
     "after3_seo_affinity_check": {},
-    "after3_seo_partial_1": {"name":"{name}","text":"*Als ich die Tür zum Schülerratsraum öffne, hebt Seoyeon ihr Klemmbrett vom Boden auf. Sie wischt sich unter einem Auge entlang und rückt einen Stuhl gerade.*"},
-    "after3_seo_partial_2": {"name":"Seoyeon","text":"Heute mache ich allein fertig. Aber geh mir morgen nicht aus dem Weg."},
-    "after3_seo_low_1": {"name":"Seoyeon","text":"*Seoyeon steht im Flur und hält die Tür halb offen.* Für ein Treffen zu zweit bin ich noch nicht bereit. Lass uns fürs Wochenende nichts ausmachen. Wir sehen uns in der Schule."},
+    "after3_seo_partial_1": {
+        "name": "{name}",
+        "text": "*Als ich die Tür zum Schülerratsraum öffne, hebt Seoyeon ihr Klemmbrett vom Boden auf. Sie wischt sich unter einem Auge entlang und rückt einen Stuhl gerade.*"
+    },
+    "after3_seo_partial_2": {
+        "name": "Seoyeon",
+        "text": "Heute mache ich allein fertig. Aber geh mir morgen nicht aus dem Weg."
+    },
+    "after3_seo_low_1": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon steht im Flur und hält die Tür halb offen.* Für ein Treffen zu zweit bin ich noch nicht bereit. Lass uns fürs Wochenende nichts ausmachen. Wir sehen uns in der Schule."
+    },
     "after3_yuna_affinity_check": {},
-    "after3_yuna_partial_1": {"name":"{name}","text":"*Die Tür zum Anbau steht offen, aber Yuna öffnet ihr Buch nicht. Sie sieht kurz zum Stuhl gegenüber und schiebt ihn unter den Tisch.*"},
-    "after3_yuna_partial_2": {"name":"Yuna","text":"Belassen wir es heute dabei. Nächstes Mal rufe ich dich zuerst."},
-    "after3_yuna_low_1": {"name":"Yuna","text":"*Vor der Tür zum Anbau hängt Yuna sich ihre Tasche über die Schulter.* Nur wir zwei... dafür bin ich noch nicht bereit. Am Wochenende wäre ich lieber allein."},
+    "after3_yuna_partial_1": {
+        "name": "{name}",
+        "text": "*Die Tür zum Anbau steht offen, aber Yuna öffnet ihr Buch nicht. Sie sieht kurz zum Stuhl gegenüber und schiebt ihn unter den Tisch.*"
+    },
+    "after3_yuna_partial_2": {
+        "name": "Yuna",
+        "text": "Belassen wir es heute dabei. Nächstes Mal rufe ich dich zuerst."
+    },
+    "after3_yuna_low_1": {
+        "name": "Yuna",
+        "text": "*Vor der Tür zum Anbau hängt Yuna sich ihre Tasche über die Schulter.* Nur wir zwei... dafür bin ich noch nicht bereit. Am Wochenende wäre ich lieber allein."
+    },
     "after3_dain_affinity_check": {},
-    "after3_dain_partial_1": {"name":"{name}","text":"*In der Turnhalle richtet Dain ihre Kniebandage. Sie will aufstehen, setzt sich dann aber wieder auf die Bank.*"},
-    "after3_dain_partial_2": {"name":"Dain","text":"Mit etwas Ruhe wird es schon. Geh heute vor. Bis morgen."},
-    "after3_dain_low_1": {"name":"Dain","text":"*Dain hält die Tür zur Sporthalle fest, ohne hineinzugehen.* Lernen wir uns erst besser kennen, bevor wir zu zweit etwas unternehmen. Dieses Wochenende trainiere ich allein."},
+    "after3_dain_partial_1": {
+        "name": "{name}",
+        "text": "*In der Turnhalle richtet Dain ihre Kniebandage. Sie will aufstehen, setzt sich dann aber wieder auf die Bank.*"
+    },
+    "after3_dain_partial_2": {
+        "name": "Dain",
+        "text": "Mit etwas Ruhe wird es schon. Geh heute vor. Bis morgen."
+    },
+    "after3_dain_low_1": {
+        "name": "Dain",
+        "text": "*Dain hält die Tür zur Sporthalle fest, ohne hineinzugehen.* Lernen wir uns erst besser kennen, bevor wir zu zweit etwas unternehmen. Dieses Wochenende trainiere ich allein."
+    },
     "after3_dain_departed_end": {},
     "minsu_d3_4_established": {
         "name": "Minsu",
@@ -961,5 +1006,44 @@
     "after3_dain_control_react": {
         "name": "Dain",
         "text": "Entscheide nicht für mich. Ich habe dich auch nicht gebeten, mich zu überwachen."
-    }
+    },
+    "after3_rival_seo_cool": {
+        "name": "Seoyeon",
+        "text": "Der Plan hat sich geändert. *Sie blättert und geht weiter.*"
+    },
+    "after3_rival_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Sie geht mit der Liste unterm Arm in den Schülerrat. Kein Name.*"
+    },
+    "after3_rival_dain_cool": {
+        "name": "Dain",
+        "text": "Heute keine Halle. *Sie richtet den Riemen der Balltasche.*"
+    },
+    "after3_rival_dain_neg": {
+        "name": "Dain",
+        "text": "*Sie nimmt einen Volleyball und dreht sich zuerst weg. Kein Ausrufezeichen.*"
+    },
+    "after3_rival_yuna_cool": {
+        "name": "Yuna",
+        "text": "*Sie schließt die Anbautür. Kein Zettel.*"
+    },
+    "after3_rival_yuna_neg": {
+        "name": "{name}",
+        "text": "*Der Platz im Anbau ist leer. Kein Lesezeichen, kein Zettel.*"
+    },
+    "after3_seo_neg_1": {
+        "name": "Seoyeon",
+        "text": "*Sie steckt den Schülerratsschlüssel ein.* Für heute reicht's. Auch kein Wochenende."
+    },
+    "after3_yuna_neg_1": {
+        "name": "Yuna",
+        "text": "*Sie macht das Licht im Anbau aus.* Heute bin ich allein."
+    },
+    "after3_dain_neg_1": {
+        "name": "Dain",
+        "text": "*Sie wickelt die Netzschnur und hängt die Tasche um.* Heute nicht. Ruf nicht an."
+    },
+    "after3_seo_skip": {},
+    "after3_yuna_skip": {},
+    "after3_dain_skip": {}
 }

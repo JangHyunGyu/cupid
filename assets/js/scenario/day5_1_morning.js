@@ -354,7 +354,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": null,
         "affinityChar": "selectByHighestAffinity",
         "affinityCandidates": ["Seoyeon","Yuna","Dain","Teacher","Nurse"],
-        "affinityBranches": [{"minAffinity":80,"next":"morning5_mood_high"},{"minAffinity":50,"next":"morning5_mood_mid"},{"minAffinity":-100,"next":"morning5_mood_low"}],
+        "affinityBranches": [{"minAffinity":80,"next":"morning5_mood_high"},{"minAffinity":50,"next":"morning5_mood_mid"},{"minAffinity":0,"next":"morning5_mood_low"},{"minAffinity":-100,"next":"morning5_mood_neg"}],
         "next": "morning5_mood_low"
     },
     "morning5_mood_high": {
@@ -477,7 +477,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/room_school.png",
         "backgroundVariant": "empty",
         "character": "assets/images/characters/teacher_sad.png",
-        "affinityGuard": {"character":"Teacher","minAffinity":15,"fallback":"hidden_homeroom_d5_low"},
+        "affinityGuard": {"character":"Teacher","minAffinity":15,"fallback":"hidden_homeroom_d5_skip"},
         "next": "hidden_homeroom_d5_1_b"
     },
     "hidden_homeroom_d5_1_b": {
@@ -850,7 +850,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "hidden_nurse_d5_1": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "affinityGuard": {"character":"Nurse","minAffinity":15,"fallback":"hidden_nurse_d5_low"},
+        "affinityGuard": {"character":"Nurse","minAffinity":15,"fallback":"hidden_nurse_d5_skip"},
         "next": "hidden_nurse_d5_1_b"
     },
     "hidden_nurse_d5_1_b": {
@@ -1123,6 +1123,39 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "hidden_nurse_d5_check"
     },
     "hidden_nurse_d5_low": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "morning5_end_branch"
+    },
+    "morning5_mood_neg": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "next": "morning5_gate"
+    },
+    "hidden_homeroom_d5_skip": {
+        "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "empty",
+        "character": null,
+        "affinityChar": "Teacher",
+        "routeBeforeRender": true,
+        "affinityBranches": [{"minAffinity":0,"next":"hidden_homeroom_d5_low"},{"minAffinity":-100,"next":"hidden_homeroom_d5_neg"}],
+        "next": "hidden_homeroom_d5_neg"
+    },
+    "hidden_nurse_d5_skip": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "affinityChar": "Nurse",
+        "routeBeforeRender": true,
+        "affinityBranches": [{"minAffinity":0,"next":"hidden_nurse_d5_low"},{"minAffinity":-100,"next":"hidden_nurse_d5_neg"}],
+        "next": "hidden_nurse_d5_neg"
+    },
+    "hidden_homeroom_d5_neg": {
+        "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "empty",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_nurse_d5_check"
+    },
+    "hidden_nurse_d5_neg": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "morning5_end_branch"

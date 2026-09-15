@@ -328,5 +328,29 @@
     "confess_dain_no_4_b": {
         "name": "{name}",
         "text": "*Dains Stimme verliert sich leise unter der Hallendecke. Nur das langgezogene Reißen des Klettverschlusses an ihrer Handgelenkbandage bleibt.*"
+    },
+    "confess_seo_yes_mid_1": {
+        "name": "Seoyeon",
+        "text": "Ich kann nicht sofort antworten. Morgen lasse ich das Dach offen."
+    },
+    "confess_seo_yes_low_1": {
+        "name": "Seoyeon",
+        "text": "*Sie steckt den Schlüssel ein.* Für heute reicht's. Das kann ich noch nicht annehmen."
+    },
+    "confess_yuna_yes_mid_1": {
+        "name": "Yuna",
+        "text": "...Ich kann es nicht sofort sagen. Verschwind nur nicht."
+    },
+    "confess_yuna_yes_low_1": {
+        "name": "Yuna",
+        "text": "*Sie schiebt das Lesezeichen zwischen die Seiten.* Das nehme ich heute nicht an."
+    },
+    "confess_dain_yes_mid_1": {
+        "name": "Dain",
+        "text": "Ich kann nicht sofort antworten. Lauf bloß nicht weg."
+    },
+    "confess_dain_yes_low_1": {
+        "name": "Dain",
+        "text": "*Sie richtet den Riemen.* Das noch nicht. Geh heute."
     }
 }

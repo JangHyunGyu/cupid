@@ -634,12 +634,30 @@
         "name": "{name}",
         "text": "*También escribo a mi tutor actual: «Quiero hablar de algo que decidí ignorar en mi antigua escuela». Dejo los dos mensajes en pantalla hasta que comienza el anuncio del festival.*"
     },
-    "morning5_caught_fallout_1": {"name":"{name}","text":"*Antes del evento, las tres se sientan separadas en el aula. La hoja de tareas sobre el pupitre solo enumera el trabajo necesario.*"},
-    "morning5_caught_fallout_2": {"name":"{name}","text":"*Yuna sale primero con los folletos y Dain toma la puerta contraria. Seoyeon recoge la lista sin mirar hacia mí.*"},
-    "morning5_caught_fallout_3": {"name":"{name}","text":"*Hasta que termina el evento, solo hablamos para comprobar tareas. Con el último timbre, bajan por tres escaleras distintas.*"},
-    "morning5_harem_fallout_1": {"name":"{name}","text":"*Durante el evento, las tres dejan solo mensajes necesarios en el grupo. Ningún chat privado recibe nada nuevo.*"},
-    "morning5_harem_fallout_2": {"name":"Dain","text":"Aunque esto termine, no quedemos por separado. Cumple lo que acordamos."},
-    "morning5_harem_fallout_3": {"name":"{name}","text":"*Asiento. Las tres salen juntas por la entrada y yo las sigo a solas un poco después.*"},
+    "morning5_caught_fallout_1": {
+        "name": "{name}",
+        "text": "*Antes del evento, las tres se sientan separadas en el aula. La hoja de tareas sobre el pupitre solo enumera el trabajo necesario.*"
+    },
+    "morning5_caught_fallout_2": {
+        "name": "{name}",
+        "text": "*Yuna sale primero con los folletos y Dain toma la puerta contraria. Seoyeon recoge la lista sin mirar hacia mí.*"
+    },
+    "morning5_caught_fallout_3": {
+        "name": "{name}",
+        "text": "*Hasta que termina el evento, solo hablamos para comprobar tareas. Con el último timbre, bajan por tres escaleras distintas.*"
+    },
+    "morning5_harem_fallout_1": {
+        "name": "{name}",
+        "text": "*Durante el evento, las tres dejan solo mensajes necesarios en el grupo. Ningún chat privado recibe nada nuevo.*"
+    },
+    "morning5_harem_fallout_2": {
+        "name": "Dain",
+        "text": "Aunque esto termine, no quedemos por separado. Cumple lo que acordamos."
+    },
+    "morning5_harem_fallout_3": {
+        "name": "{name}",
+        "text": "*Asiento. Las tres salen juntas por la entrada y yo las sigo a solas un poco después.*"
+    },
     "morning5_counteroffer_choice": {
         "name": "{name}",
         "text": "*Cuando termina la conversación, las dos esperan una respuesta.*",
@@ -664,5 +682,19 @@
     "morning5_counteroffer_gather": {
         "name": "{name}",
         "text": "*Contacto con la persona con la que me quedé anoche y acordamos vernos en el aula. También confirmo la hora con quien tenía la primera cita. Cuando llegan ambas personas, nos sentamos en un rincón del aula.*"
+    },
+    "morning5_mood_neg": {
+        "name": "{name}",
+        "text": "Se acaba la primera semana. Subo la cremallera sin mirar los nombres en la pantalla de bloqueo."
+    },
+    "hidden_homeroom_d5_skip": {},
+    "hidden_nurse_d5_skip": {},
+    "hidden_homeroom_d5_neg": {
+        "name": "Profesora",
+        "text": "*Mete el sobre del manuscrito en el cajón y gira la llave.* Las tutorías personales terminan aquí. Lo que quede irá en el aviso de clase."
+    },
+    "hidden_nurse_d5_neg": {
+        "name": "Enfermera",
+        "text": "*Cierra la ficha y la hoja de citas.* Hoy solo tratamiento. Lo personal, por el canal oficial. *Vuelvo al aula.*"
     }
 }

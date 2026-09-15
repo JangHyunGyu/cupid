@@ -367,5 +367,17 @@
     "night2_msg_generic_3_first": {
         "name": "유나",
         "text": "요즘 무슨 책 읽어?"
+    },
+    "night2_reply_dain_react_neg": {
+        "name": "다인",
+        "text": "알겠어. 자. *읽음은 뜨고 다음 말은 없다.*"
+    },
+    "night2_reply_seo_react_neg": {
+        "name": "서연",
+        "text": "내일 봐. *바로 읽음 처리된다.*"
+    },
+    "night2_reply_yuna_react_neg": {
+        "name": "유나",
+        "text": "...잘 자. *말풍선이 거기서 끊긴다.*"
     }
 }

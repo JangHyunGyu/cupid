@@ -21,10 +21,7 @@
         "text": "*처음 올라온 옥상이다. 난간 아래에서 운동장 호루라기 소리가 올라오고 서연은 접이식 의자 위에 도시락을 펼친다.*"
     },
     "lunch2_seo_2b_check": {},
-    "lunch2_seo_2b": {
-        "name": "서연",
-        "text": "여기까지 올라왔네. 용기 있다."
-    },
+    "lunch2_seo_2b": {},
     "lunch2_seo_2b_dain": {
         "name": "서연",
         "text": "어제는 매점 쪽이더니. 오늘은 여기까지 왔네."
@@ -69,10 +66,7 @@
         "name": "{name}",
         "text": "*옥상. 어제와 같은 장소. 서연이 도시락을 펼치고 있다.*"
     },
-    "lunch2_seo_2": {
-        "name": "서연",
-        "text": "또 왔네. 맛 들렸나 봐."
-    },
+    "lunch2_seo_2": {},
     "lunch2_seo_3": {
         "name": "{name}",
         "text": "밥이 맛있었으니까."
@@ -475,10 +469,7 @@
         "text": "*본관보다 오래된 도서관 별관에는 학생이 거의 없다. 계단을 올라가니 복도 끝, 벽에 기대어 책을 읽는 유나가 보인다.*"
     },
     "lunch2_yuna_intro_check": {},
-    "lunch2_yuna_3": {
-        "name": "유나",
-        "text": "왔네."
-    },
+    "lunch2_yuna_3": {},
     "lunch2_yuna_4": {
         "name": "{name}",
         "text": "쪽지 받았거든."
@@ -688,5 +679,46 @@
     "lunch2_yuna_trap_exclusive": {
         "name": "유나",
         "text": "*책을 자기 쪽으로 당겼다가 천천히 놓는다.* 그건 내가 정해."
+    },
+    "lunch2_seo_2_warm": {
+        "name": "서연",
+        "text": "또 왔네. 맛 들렸나 봐."
+    },
+    "lunch2_seo_2_cool": {
+        "name": "서연",
+        "text": "왔구나. 도시락 펼칠 테니까 잠깐만."
+    },
+    "lunch2_seo_2_neg": {
+        "name": "서연",
+        "text": "*도시락 뚜껑을 열지 않은 채 난간만 본다.* 학생회 일이야. 오래 있지는 마."
+    },
+    "lunch2_seo_2b_warm": {
+        "name": "서연",
+        "text": "여기까지 올라왔네. 용기 있다."
+    },
+    "lunch2_seo_2b_cool": {
+        "name": "서연",
+        "text": "옥상은 허가제야. 오늘은 예외로 둘게."
+    },
+    "lunch2_dain_tone": {},
+    "lunch2_dain_2_cool": {
+        "name": "다인",
+        "text": "왔으면 줄이나 서. 빵은 네가 사는 거 알지."
+    },
+    "lunch2_dain_2_neg": {
+        "name": "다인",
+        "text": "*줄에서 한 칸 비우고 앞만 본다.* 오늘은 내기 안 해. 빨리 사고 가."
+    },
+    "lunch2_yuna_3_warm": {
+        "name": "유나",
+        "text": "왔네."
+    },
+    "lunch2_yuna_3_cool": {
+        "name": "유나",
+        "text": "*책갈피만 밀어 넣고 옆자리를 비운다.*"
+    },
+    "lunch2_yuna_3_neg": {
+        "name": "유나",
+        "text": "*쪽지는 주지 않는다. 책장만 한 장 넘긴다.* 오늘은 말 섞기 싫어."
     }
 }

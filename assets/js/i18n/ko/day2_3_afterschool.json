@@ -723,5 +723,64 @@
     "after2_yuna_trap_react": {
         "name": "유나",
         "text": "*책갈피가 한 장 앞으로 옮겨간다. 소파 끝의 이어폰을 가방에 넣는다.*"
+    },
+    "after2_seo_tone": {},
+    "after2_dain_tone": {},
+    "after2_yuna_tone": {},
+    "after2_seo_cool_1": {
+        "name": "서연",
+        "text": "왔으면 이 목록부터. *클립보드를 밀어 준다.*"
+    },
+    "after2_seo_neg_1": {
+        "name": "서연",
+        "text": "*출석 확인만 하고 펜을 내려놓는다.* 필요한 칸만 채워. 다른 얘기는 내일."
+    },
+    "after2_dain_cool_1": {
+        "name": "다인",
+        "text": "왔으면 공부터 주워. 말은 나중에."
+    },
+    "after2_dain_neg_1": {
+        "name": "다인",
+        "text": "*네트 줄을 감으며 이쪽을 보지 않는다.* 오늘은 혼자 칠게. 방해만 하지 마."
+    },
+    "after2_yuna_cool_1": {
+        "name": "유나",
+        "text": "*이어폰 한쪽만 치운다.* 읽어도 돼. 말은 조금만."
+    },
+    "after2_yuna_neg_1": {
+        "name": "유나",
+        "text": "*책을 덮지 않는다. 쪽지도 없다.* 오늘은 같이 있기 싫어."
+    },
+    "after2_dain_rival_seo_neg": {
+        "name": "서연",
+        "text": "*매점 앞을 지나가다 걸음을 늦추지 않는다.*"
+    },
+    "after2_dain_rival_yuna_neg": {
+        "name": "{name}",
+        "text": "*별관 쪽 유나는 고개를 돌린 채 책을 든다. 눈이 마주치지 않는다.*"
+    },
+    "after2_seo_rival_dain_neg": {
+        "name": "다인",
+        "text": "*공 바구니를 밀고 체육관으로 들어간다. 손 흔드는 시늉도 없다.*"
+    },
+    "after2_seo_rival_yuna_neg": {
+        "name": "{name}",
+        "text": "*계단참의 유나는 책을 든 채 벽을 본다. 고개도 숙이지 않는다.*"
+    },
+    "after2_yuna_rival_dain_neg": {
+        "name": "다인",
+        "text": "*복도 끝에서 공 하나만 주워 들고 돌아선다.*"
+    },
+    "after2_yuna_rival_seo_neg": {
+        "name": "서연",
+        "text": "*출석부를 팔 안쪽에 붙인 채 지나간다. 발걸음은 멈추지 않는다.*"
+    },
+    "after2_seo_neck_neg": {
+        "name": "{name}",
+        "text": "안 쓰는 상자잖아."
+    },
+    "after2_seo_neck_neg_b": {
+        "name": "서연",
+        "text": "*상자를 원래 자리로 밀어 둔다.* 그건 됐어. 목록이나 맞춰."
     }
 }

@@ -723,5 +723,64 @@
     "after2_yuna_trap_react": {
         "name": "Yuna",
         "text": "*El marcapáginas avanza una página. Guarda en su bolso el auricular que estaba en el borde del sofá.*"
+    },
+    "after2_seo_tone": {},
+    "after2_dain_tone": {},
+    "after2_yuna_tone": {},
+    "after2_seo_cool_1": {
+        "name": "Seoyeon",
+        "text": "Si viniste, empieza por esta lista. *Empuja el portapapeles.*"
+    },
+    "after2_seo_neg_1": {
+        "name": "Seoyeon",
+        "text": "*Pasa lista y deja el bolígrafo.* Rellena solo lo obligatorio. Lo demás, mañana."
+    },
+    "after2_dain_cool_1": {
+        "name": "Dain",
+        "text": "Si viniste, recoge pelotas primero. Hablamos luego."
+    },
+    "after2_dain_neg_1": {
+        "name": "Dain",
+        "text": "*Enrolla la cuerda de la red y no mira hacia aquí.* Hoy golpeo sola. No estorbes."
+    },
+    "after2_yuna_cool_1": {
+        "name": "Yuna",
+        "text": "*Se quita solo un auricular.* Puedes leer. Habla poco."
+    },
+    "after2_yuna_neg_1": {
+        "name": "Yuna",
+        "text": "*No cierra el libro. No hay recado.* Hoy no quiero compañía."
+    },
+    "after2_dain_rival_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Pasa por la tienda sin frenar.*"
+    },
+    "after2_dain_rival_yuna_neg": {
+        "name": "{name}",
+        "text": "*En el anexo, Yuna coge el libro con la cara apartada. No se cruzan las miradas.*"
+    },
+    "after2_seo_rival_dain_neg": {
+        "name": "Dain",
+        "text": "*Empuja el carrito de pelotas al gimnasio. Ni un saludo.*"
+    },
+    "after2_seo_rival_yuna_neg": {
+        "name": "{name}",
+        "text": "*En el rellano, Yuna mira la pared con el libro en la mano. Ni inclina la cabeza.*"
+    },
+    "after2_yuna_rival_dain_neg": {
+        "name": "Dain",
+        "text": "*Al fondo del pasillo coge un solo balón y se da la vuelta.*"
+    },
+    "after2_yuna_rival_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Pasa con la lista bajo el brazo. No se detiene.*"
+    },
+    "after2_seo_neck_neg": {
+        "name": "{name}",
+        "text": "Es una caja vacía."
+    },
+    "after2_seo_neck_neg_b": {
+        "name": "Seoyeon",
+        "text": "*Empuja la caja a su sitio.* No hace falta. Sigue con la lista."
     }
 }

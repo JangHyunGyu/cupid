@@ -789,5 +789,44 @@
         "name": "{name}",
         "text": "*O sinal do fim da aula toca, e logo começa o horário do almoço.*"
     },
-    "morning3_end_b": {}
+    "morning3_end_b": {},
+    "morning3_gate_none_1": {
+        "name": "{name}",
+        "text": "*Ninguém espera no portão. O sinal de atraso toca primeiro.*"
+    },
+    "morning3_seo_gate_neg_1": {
+        "name": "Seoyeon",
+        "text": "*Ela passa sem olhar o crachá.*"
+    },
+    "morning3_seo_gate_neg_2": {
+        "name": "{name}",
+        "text": "*Os sapatos da Seoyeon somem primeiro para dentro do portão.*"
+    },
+    "morning3_yuna_gate_neg_1": {
+        "name": "{name}",
+        "text": "*Yuna vira o rosto antes dos olhares se cruzarem e passa o portão. Sem bilhete.*"
+    },
+    "morning3_dain_gate_neg_1": {
+        "name": "Dain",
+        "text": "*Ela corre com as amigas e não olha pra cá.*"
+    },
+    "morning3_dain_gate_neg_2": {
+        "name": "{name}",
+        "text": "*Sem cumprimento até a mochila da Dain sumir na esquina.*"
+    },
+    "morning3_date_seo_skip": {},
+    "morning3_date_dain_skip": {},
+    "morning3_date_yuna_skip": {},
+    "morning3_date_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Ela passa com a prancheta no peito.* Fim de semana só no grupo. Não pergunta à parte."
+    },
+    "morning3_date_dain_neg": {
+        "name": "Dain",
+        "text": "*Ela fecha o zíper até o fim.* Não me chama no fim de semana. Vou treinar sozinha."
+    },
+    "morning3_date_yuna_neg": {
+        "name": "Yuna",
+        "text": "*Ela começa a tirar um bilhete e enfia de novo no livro.* Não me procura no fim de semana."
+    }
 }

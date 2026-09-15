@@ -213,7 +213,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
         "affinityChar": "Dain",
-        "affinityBranches": [{"minAffinity":30,"next":"night2_reply_dain_react_high"},{"minAffinity":-100,"next":"night2_reply_dain_react_default"}],
+        "affinityBranches": [{"minAffinity":30,"next":"night2_reply_dain_react_high"},{"minAffinity":0,"next":"night2_reply_dain_react_default"},{"minAffinity":-100,"next":"night2_reply_dain_react_neg"}],
         "next": "night2_reply_dain_react_default"
     },
     "night2_reply_dain_react_high": {
@@ -267,7 +267,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
         "affinityChar": "Seoyeon",
-        "affinityBranches": [{"minAffinity":30,"next":"night2_reply_seo_react_high"},{"minAffinity":-100,"next":"night2_reply_seo_react_default"}],
+        "affinityBranches": [{"minAffinity":30,"next":"night2_reply_seo_react_high"},{"minAffinity":0,"next":"night2_reply_seo_react_default"},{"minAffinity":-100,"next":"night2_reply_seo_react_neg"}],
         "next": "night2_reply_seo_react_default"
     },
     "night2_reply_seo_react_high": {
@@ -412,7 +412,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
         "affinityChar": "Yuna",
-        "affinityBranches": [{"minAffinity":30,"next":"night2_reply_yuna_react_high"},{"minAffinity":-100,"next":"night2_reply_yuna_react_default"}],
+        "affinityBranches": [{"minAffinity":30,"next":"night2_reply_yuna_react_high"},{"minAffinity":0,"next":"night2_reply_yuna_react_default"},{"minAffinity":-100,"next":"night2_reply_yuna_react_neg"}],
         "next": "night2_reply_yuna_react_default"
     },
     "night2_reply_yuna_react_high": {
@@ -630,6 +630,24 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "forced_violation_day2_resume": {
         "routeBeforeRender": true,
         "forcedSexualViolationResume": true
+    },
+    "night2_reply_dain_react_neg": {
+        "background": "assets/images/background/room_my.png",
+        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
+        "setFlags": ["night2_replied_dain"],
+        "next": "night2_dain_freetalk"
+    },
+    "night2_reply_seo_react_neg": {
+        "background": "assets/images/background/room_my.png",
+        "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
+        "setFlags": ["night2_replied_seo"],
+        "next": "night2_seo_freetalk"
+    },
+    "night2_reply_yuna_react_neg": {
+        "background": "assets/images/background/room_my.png",
+        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
+        "setFlags": ["night2_replied_yuna"],
+        "next": "night2_yuna_freetalk"
     }
     };
     for (const scene of Object.values(scenes)) {

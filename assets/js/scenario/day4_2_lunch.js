@@ -14,7 +14,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/seyoun_normal.png",
         "bgm": "date.mp3",
         "condition": "route_seoyeon",
-        "affinityGuard": {"character":"Seoyeon","minAffinity":30,"fallback":"date_seo_low"},
+        "affinityGuard": {"character":"Seoyeon","minAffinity":30,"fallback":"date_seo_skip"},
         "next": "date_seo_tier_check"
     },
     "date_seo_tier_check": {
@@ -185,7 +185,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/yuna_normal.png",
         "bgm": "night1.mp3",
         "condition": "route_yuna",
-        "affinityGuard": {"character":"Yuna","minAffinity":30,"fallback":"date_yuna_low"},
+        "affinityGuard": {"character":"Yuna","minAffinity":30,"fallback":"date_yuna_skip"},
         "next": "date_yuna_tier_check"
     },
     "date_yuna_tier_check": {
@@ -377,7 +377,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/dain_laugh.png",
         "bgm": "daily2.mp3",
         "condition": "route_dain",
-        "affinityGuard": {"character":"Dain","minAffinity":30,"fallback":"date_dain_low"},
+        "affinityGuard": {"character":"Dain","minAffinity":30,"fallback":"date_dain_skip"},
         "next": "date_dain_tier_check"
     },
     "date_dain_tier_check": {
@@ -667,6 +667,48 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
         "setFlags": ["day4_waited", "day4_distance_dain"],
+        "next": "day4_night_start"
+    },
+    "date_seo_skip": {
+        "background": "assets/images/background/park.png",
+        "character": null,
+        "affinityChar": "Seoyeon",
+        "affinityBranches": [{"minAffinity":0,"next":"date_seo_low"},{"minAffinity":-100,"next":"date_seo_neg"}],
+        "next": "date_seo_neg",
+        "routeBeforeRender": true
+    },
+    "date_yuna_skip": {
+        "background": "assets/images/background/cafe.png",
+        "character": null,
+        "affinityChar": "Yuna",
+        "affinityBranches": [{"minAffinity":0,"next":"date_yuna_low"},{"minAffinity":-100,"next":"date_yuna_neg"}],
+        "next": "date_yuna_neg",
+        "routeBeforeRender": true
+    },
+    "date_dain_skip": {
+        "background": "assets/images/background/gym.png",
+        "character": null,
+        "affinityChar": "Dain",
+        "affinityBranches": [{"minAffinity":0,"next":"date_dain_low"},{"minAffinity":-100,"next":"date_dain_neg"}],
+        "next": "date_dain_neg",
+        "routeBeforeRender": true
+    },
+    "date_seo_neg": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_pout.png",
+        "setFlags": ["day4_waited","day4_distance_seoyeon"],
+        "next": "day4_night_start"
+    },
+    "date_yuna_neg": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/yuna_bored.png",
+        "setFlags": ["day4_waited","day4_distance_yuna"],
+        "next": "day4_night_start"
+    },
+    "date_dain_neg": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_angry.png",
+        "setFlags": ["day4_waited","day4_distance_dain"],
         "next": "day4_night_start"
     }
     };

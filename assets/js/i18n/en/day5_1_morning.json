@@ -634,12 +634,30 @@
         "name": "{name}",
         "text": "*I message my current homeroom teacher too: 'I need to talk about something I chose to ignore at my old school.' I leave both messages on the screen until the festival announcement begins.*"
     },
-    "morning5_caught_fallout_1": {"name":"{name}","text":"*Before the event begins, the three of them sit far apart in the classroom. The duty sheet on the desk lists only the work that must be done.*"},
-    "morning5_caught_fallout_2": {"name":"{name}","text":"*Yuna leaves first with the guidebooks, and Dain takes the opposite door. Seoyeon picks up the attendance sheet without looking my way.*"},
-    "morning5_caught_fallout_3": {"name":"{name}","text":"*Until the event ends, the only words we exchange are work checks. At the final bell, they take three different staircases.*"},
-    "morning5_harem_fallout_1": {"name":"{name}","text":"*During the event, the three of them leave only necessary messages in the group chat. None of the private chats receive anything new.*"},
-    "morning5_harem_fallout_2": {"name":"Dain","text":"Even after this is over, let's not meet separately. Keep what we agreed on."},
-    "morning5_harem_fallout_3": {"name":"{name}","text":"*I nod. The three of them leave through the school gate together, and I follow alone a little later.*"},
+    "morning5_caught_fallout_1": {
+        "name": "{name}",
+        "text": "*Before the event begins, the three of them sit far apart in the classroom. The duty sheet on the desk lists only the work that must be done.*"
+    },
+    "morning5_caught_fallout_2": {
+        "name": "{name}",
+        "text": "*Yuna leaves first with the guidebooks, and Dain takes the opposite door. Seoyeon picks up the attendance sheet without looking my way.*"
+    },
+    "morning5_caught_fallout_3": {
+        "name": "{name}",
+        "text": "*Until the event ends, the only words we exchange are work checks. At the final bell, they take three different staircases.*"
+    },
+    "morning5_harem_fallout_1": {
+        "name": "{name}",
+        "text": "*During the event, the three of them leave only necessary messages in the group chat. None of the private chats receive anything new.*"
+    },
+    "morning5_harem_fallout_2": {
+        "name": "Dain",
+        "text": "Even after this is over, let's not meet separately. Keep what we agreed on."
+    },
+    "morning5_harem_fallout_3": {
+        "name": "{name}",
+        "text": "*I nod. The three of them leave through the school gate together, and I follow alone a little later.*"
+    },
     "morning5_counteroffer_choice": {
         "name": "{name}",
         "text": "*When the conversation ends, both of them wait for an answer.*",
@@ -664,5 +682,19 @@
     "morning5_counteroffer_gather": {
         "name": "{name}",
         "text": "*I contact the person I stayed with last night and arrange to meet in the classroom. I check the time with the person I had promised to meet first, too. When both arrive, we settle in a corner of the room.*"
+    },
+    "morning5_mood_neg": {
+        "name": "{name}",
+        "text": "The first week is ending. I zip the bag without looking at the names on the lock screen."
+    },
+    "hidden_homeroom_d5_skip": {},
+    "hidden_nurse_d5_skip": {},
+    "hidden_homeroom_d5_neg": {
+        "name": "Homeroom Teacher",
+        "text": "*She puts the manuscript envelope in a drawer and turns the key.* Personal talks end here. Anything left goes out as a class notice."
+    },
+    "hidden_nurse_d5_neg": {
+        "name": "School Nurse",
+        "text": "*She closes the chart and the appointment sheet.* Treatment only today. Personal talk goes through official channels. *I go back to class.*"
     }
 }

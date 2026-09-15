@@ -367,5 +367,17 @@
     "night2_msg_generic_3_first": {
         "name": "Yuna",
         "text": "O que você anda lendo?"
+    },
+    "night2_reply_dain_react_neg": {
+        "name": "Dain",
+        "text": "Beleza. Dorme. *Visto. Mais nada.*"
+    },
+    "night2_reply_seo_react_neg": {
+        "name": "Seoyeon",
+        "text": "Até amanhã. *Marca visto na hora.*"
+    },
+    "night2_reply_yuna_react_neg": {
+        "name": "Yuna",
+        "text": "...Boa noite. *O balão para ali.*"
     }
 }

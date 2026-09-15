@@ -467,5 +467,9 @@
     "lunch_dain_trap_1": {
         "name": "Dain",
         "text": "If you're not interested, just say so. I hate it more when people fake it."
+    },
+    "lunch_seo_1_aff_neg": {
+        "name": "Seoyeon",
+        "text": "*She nudges a chair aside and sets down only her clipboard.* Student council work. Sit if you're sitting."
     }
 }

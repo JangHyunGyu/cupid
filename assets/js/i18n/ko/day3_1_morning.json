@@ -789,5 +789,44 @@
         "name": "{name}",
         "text": "*수업 종료 종이 울리고 곧 점심시간이 된다.*"
     },
-    "morning3_end_b": {}
+    "morning3_end_b": {},
+    "morning3_gate_none_1": {
+        "name": "{name}",
+        "text": "*교문 앞을 지나도 먼저 서 있는 사람은 없다. 지각 종이 먼저 울린다.*"
+    },
+    "morning3_seo_gate_neg_1": {
+        "name": "서연",
+        "text": "*명찰도 보지 않고 지나간다.*"
+    },
+    "morning3_seo_gate_neg_2": {
+        "name": "{name}",
+        "text": "*서연의 구두 소리가 교문 안쪽으로 먼저 사라진다.*"
+    },
+    "morning3_yuna_gate_neg_1": {
+        "name": "{name}",
+        "text": "*유나는 눈이 마주치기 전에 고개를 돌리고 교문을 통과한다. 쪽지는 없다.*"
+    },
+    "morning3_dain_gate_neg_1": {
+        "name": "다인",
+        "text": "*친구들 사이로 뛰어가며 이쪽은 보지 않는다.*"
+    },
+    "morning3_dain_gate_neg_2": {
+        "name": "{name}",
+        "text": "*다인의 가방이 모퉁이를 돌 때까지 인사는 없다.*"
+    },
+    "morning3_date_seo_skip": {},
+    "morning3_date_dain_skip": {},
+    "morning3_date_yuna_skip": {},
+    "morning3_date_seo_neg": {
+        "name": "서연",
+        "text": "*클립보드를 가슴 앞에 붙인 채 지나간다.* 주말 일정, 단체방에만 올릴게. 따로 묻지 마."
+    },
+    "morning3_date_dain_neg": {
+        "name": "다인",
+        "text": "*가방 지퍼를 끝까지 올린다.* 주말엔 부르지 마. 혼자 연습할 거야."
+    },
+    "morning3_date_yuna_neg": {
+        "name": "유나",
+        "text": "*쪽지를 꺼내다 다시 책 사이에 넣는다.* 주말엔 찾지 마."
+    }
 }

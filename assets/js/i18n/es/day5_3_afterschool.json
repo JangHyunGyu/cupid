@@ -1,7 +1,16 @@
 {
-    "after5_farewell_seo_low": {"name":"Seoyeon","text":"*Te cruzas con Seoyeon en el pasillo. Ella se detiene un instante y se limita a inclinar la cabeza.* Sé lo que has decidido. No tengo nada más que decir."},
-    "after5_farewell_yuna_low": {"name":"Yuna","text":"*Vuestras miradas se cruzan frente a la biblioteca. Yuna abraza el libro y asiente levemente.* Adiós."},
-    "after5_farewell_dain_low": {"name":"Dain","text":"*Dain se acerca frente al gimnasio y se detiene a dos pasos de distancia.* Ya sé lo que has decidido. Yo entro primero."},
+    "after5_farewell_seo_low": {
+        "name": "Seoyeon",
+        "text": "*Te cruzas con Seoyeon en el pasillo. Ella se detiene un instante y se limita a inclinar la cabeza.* Sé lo que has decidido. No tengo nada más que decir."
+    },
+    "after5_farewell_yuna_low": {
+        "name": "Yuna",
+        "text": "*Vuestras miradas se cruzan frente a la biblioteca. Yuna abraza el libro y asiente levemente.* Adiós."
+    },
+    "after5_farewell_dain_low": {
+        "name": "Dain",
+        "text": "*Dain se acerca frente al gimnasio y se detiene a dos pasos de distancia.* Ya sé lo que has decidido. Yo entro primero."
+    },
     "after5_start": {},
     "after5_waited_start_branch": {
         "name": "Sistema",
@@ -559,5 +568,28 @@
     "after5_hidden_return_to_park": {
         "name": "{name}",
         "text": "*Después de terminar el trabajo, salgo de la escuela. Las banderas plegadas del festival bordean el camino hacia el parque.*"
+    },
+    "after5_farewell_seo_skip": {},
+    "after5_farewell_yuna_skip": {},
+    "after5_farewell_dain_skip": {},
+    "after5_farewell_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Pasa sin girar la cabeza.*"
+    },
+    "after5_farewell_yuna_neg": {
+        "name": "Yuna",
+        "text": "*Se va al otro lado del pasillo con el libro. Sin palabras.*"
+    },
+    "after5_farewell_dain_neg": {
+        "name": "Dain",
+        "text": "*Ajusta la mochila y entra al gimnasio. No mira atrás.*"
+    },
+    "after5_hidden_teacher_neg": {
+        "name": "Profesora",
+        "text": "*Mete el sobre del manuscrito en la carpeta y la cierra.* Hoy terminemos solo el acto. Aquí se acaba lo personal."
+    },
+    "after5_hidden_nurse_neg": {
+        "name": "Enfermera",
+        "text": "*Archiva la ficha y cierra la hoja de citas.* A partir de ahora, solo el cauce oficial. Por hoy, basta."
     }
 }

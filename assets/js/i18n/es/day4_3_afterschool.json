@@ -328,5 +328,29 @@
     "confess_dain_no_4_b": {
         "name": "{name}",
         "text": "*La voz de Dain se dispersa suavemente hacia el techo del gimnasio. Solo el velcro de la muñequera se despega con un sonido largo.*"
+    },
+    "confess_seo_yes_mid_1": {
+        "name": "Seoyeon",
+        "text": "No puedo responder ahora. Mañana dejo la azotea abierta."
+    },
+    "confess_seo_yes_low_1": {
+        "name": "Seoyeon",
+        "text": "*Se guarda la llave.* Por hoy, basta. Aún no puedo aceptar eso."
+    },
+    "confess_yuna_yes_mid_1": {
+        "name": "Yuna",
+        "text": "...No puedo decirlo ahora. Pero no desaparezcas."
+    },
+    "confess_yuna_yes_low_1": {
+        "name": "Yuna",
+        "text": "*Mete el marcapáginas entre las páginas.* Hoy no voy a aceptar eso."
+    },
+    "confess_dain_yes_mid_1": {
+        "name": "Dain",
+        "text": "No puedo responder ahora. Pero no te escapes."
+    },
+    "confess_dain_yes_low_1": {
+        "name": "Dain",
+        "text": "*Ajusta la correa de la bolsa.* Eso todavía no. Hoy vete."
     }
 }

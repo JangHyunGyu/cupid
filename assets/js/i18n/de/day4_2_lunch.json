@@ -384,37 +384,109 @@
         "name": "Seoyeon",
         "text": "Heute können wir ruhig vom Plan abweichen. Gehen wir zuerst dahin, wo du hinwillst."
     },
-    "date_seo_high_2": {"name":"{name}","text":"*Seoyeon faltet den Zeitplan und steckt ihn in ihre Tasche. Sie lässt den Riemen los und geht zuerst in den Park.*"},
-    "date_seo_tentative_1": {"name":"{name}","text":"*Während wir eine Runde durch den Park gehen, spricht Seoyeon nur über den Zeitplan der nächsten Woche. Vor einer Bank bleibt sie stehen.*"},
-    "date_seo_tentative_2": {"name":"Seoyeon","text":"Das reicht für heute. In der Schule gehe ich dir nicht aus dem Weg."},
-    "date_seo_tentative_3": {"name":"{name}","text":"*Wir trennen uns am Bahnhof, ohne ein weiteres Treffen auszumachen.*"},
+    "date_seo_high_2": {
+        "name": "{name}",
+        "text": "*Seoyeon faltet den Zeitplan und steckt ihn in ihre Tasche. Sie lässt den Riemen los und geht zuerst in den Park.*"
+    },
+    "date_seo_tentative_1": {
+        "name": "{name}",
+        "text": "*Während wir eine Runde durch den Park gehen, spricht Seoyeon nur über den Zeitplan der nächsten Woche. Vor einer Bank bleibt sie stehen.*"
+    },
+    "date_seo_tentative_2": {
+        "name": "Seoyeon",
+        "text": "Das reicht für heute. In der Schule gehe ich dir nicht aus dem Weg."
+    },
+    "date_seo_tentative_3": {
+        "name": "{name}",
+        "text": "*Wir trennen uns am Bahnhof, ohne ein weiteres Treffen auszumachen.*"
+    },
     "date_yuna_tier_check": {},
-    "date_yuna_high_1": {"name":"Yuna","text":"*Yuna legt zwei Lesezeichen nebeneinander auf den Tisch.* Such nachher eins mit mir aus. Es ist für das nächste Buch, das wir lesen."},
-    "date_yuna_high_2": {"name":"Yuna","text":"Ich meine, dass wir wieder zusammen lesen. Das darfst du dir merken."},
-    "date_yuna_tentative_1": {"name":"Yuna","text":"Heute reden wir nur über Bücher."},
-    "date_yuna_tentative_2": {"name":"{name}","text":"*Das Gespräch geht weiter, aber Yuna holt das alte Buch nicht aus ihrer Tasche. Als ihr Kaffee noch halb voll ist, sieht sie auf die Uhr.*"},
-    "date_yuna_tentative_3": {"name":"Yuna","text":"Nächstes Mal schreibe ich zuerst. Für heute belassen wir es dabei."},
+    "date_yuna_high_1": {
+        "name": "Yuna",
+        "text": "*Yuna legt zwei Lesezeichen nebeneinander auf den Tisch.* Such nachher eins mit mir aus. Es ist für das nächste Buch, das wir lesen."
+    },
+    "date_yuna_high_2": {
+        "name": "Yuna",
+        "text": "Ich meine, dass wir wieder zusammen lesen. Das darfst du dir merken."
+    },
+    "date_yuna_tentative_1": {
+        "name": "Yuna",
+        "text": "Heute reden wir nur über Bücher."
+    },
+    "date_yuna_tentative_2": {
+        "name": "{name}",
+        "text": "*Das Gespräch geht weiter, aber Yuna holt das alte Buch nicht aus ihrer Tasche. Als ihr Kaffee noch halb voll ist, sieht sie auf die Uhr.*"
+    },
+    "date_yuna_tentative_3": {
+        "name": "Yuna",
+        "text": "Nächstes Mal schreibe ich zuerst. Für heute belassen wir es dabei."
+    },
     "date_dain_tier_check": {},
-    "date_dain_high_1": {"name":"Dain","text":"Halte dir nächste Woche auch frei. Wenn es heute Spaß macht, machen wir das noch mal."},
+    "date_dain_high_1": {
+        "name": "Dain",
+        "text": "Halte dir nächste Woche auch frei. Wenn es heute Spaß macht, machen wir das noch mal."
+    },
     "date_dain_high_2": {
         "name": "Dain",
         "text": "*Sie holt ein Schweißband aus der Tasche und hält es mir hin.* Heute suchst du das erste Spiel aus."
     },
-    "date_dain_tentative_1": {"name":"Dain","text":"Lass uns heute nicht lange bleiben. Mein Knie braucht auch etwas Ruhe."},
-    "date_dain_tentative_2": {"name":"{name}","text":"*Am Automaten trinken wir jeder etwas. Dain lässt die Turnhallentür geschlossen und richtet ihren Taschenriemen.*"},
-    "date_dain_tentative_3": {"name":"Dain","text":"Bis dann in der Schule. Dort planen wir das nächste Treffen."},
+    "date_dain_tentative_1": {
+        "name": "Dain",
+        "text": "Lass uns heute nicht lange bleiben. Mein Knie braucht auch etwas Ruhe."
+    },
+    "date_dain_tentative_2": {
+        "name": "{name}",
+        "text": "*Am Automaten trinken wir jeder etwas. Dain lässt die Turnhallentür geschlossen und richtet ihren Taschenriemen.*"
+    },
+    "date_dain_tentative_3": {
+        "name": "Dain",
+        "text": "Bis dann in der Schule. Dort planen wir das nächste Treffen."
+    },
     "day4_caught_fallout_1": {
         "name": "{name}",
         "text": "*Die Entschuldigung von gestern Abend steht noch im Eingabefeld. Gerade als ich sie abschicken will, kommt eine Nachricht von Seoyeon.*"
     },
-    "day4_caught_fallout_2": {"name":"Seoyeon","text":"Ich lasse nicht einfach durchgehen, dass du gestern Verabredungen zur selben Zeit gemacht hast. Sag uns erst, wen du heute triffst."},
-    "day4_caught_fallout_3": {"name":"{name}","text":"*Yuna liest die Gruppennachrichten, ohne zu antworten. Dain schreibt: „Wenn wir uns heute treffen, leg erst die Uhrzeit fest.“ Ich prüfe die überlappenden Termine noch einmal im Kalender.*"},
-    "day4_caught_fallout_4": {"name":"{name}","text":"*Ich schreibe die noch nicht gesendete Entschuldigung zu Ende und schicke sie ab. Während ich auf eine Antwort warte, prüfe ich die heutigen Verabredungen.*"},
-    "day4_harem_fallout_1": {"name":"{name}","text":"*Seoyeon schreibt in die Gruppe: „Dass wir gestern darüber gelacht haben, hat unsere Verabredungen nicht geklärt.“*"},
-    "day4_harem_fallout_2": {"name":"Seoyeon","text":"Ich sage dir nicht, dass du eine von uns wählen sollst. Aber du kannst nicht jede von uns weiter hoffen lassen."},
+    "day4_caught_fallout_2": {
+        "name": "Seoyeon",
+        "text": "Ich lasse nicht einfach durchgehen, dass du gestern Verabredungen zur selben Zeit gemacht hast. Sag uns erst, wen du heute triffst."
+    },
+    "day4_caught_fallout_3": {
+        "name": "{name}",
+        "text": "*Yuna liest die Gruppennachrichten, ohne zu antworten. Dain schreibt: „Wenn wir uns heute treffen, leg erst die Uhrzeit fest.“ Ich prüfe die überlappenden Termine noch einmal im Kalender.*"
+    },
+    "day4_caught_fallout_4": {
+        "name": "{name}",
+        "text": "*Ich schreibe die noch nicht gesendete Entschuldigung zu Ende und schicke sie ab. Während ich auf eine Antwort warte, prüfe ich die heutigen Verabredungen.*"
+    },
+    "day4_harem_fallout_1": {
+        "name": "{name}",
+        "text": "*Seoyeon schreibt in die Gruppe: „Dass wir gestern darüber gelacht haben, hat unsere Verabredungen nicht geklärt.“*"
+    },
+    "day4_harem_fallout_2": {
+        "name": "Seoyeon",
+        "text": "Ich sage dir nicht, dass du eine von uns wählen sollst. Aber du kannst nicht jede von uns weiter hoffen lassen."
+    },
     "day4_harem_fallout_3": {
         "name": "{name}",
         "text": "*Yuna schreibt: „Bestätige auch unsere Verabredung.“ Dain ergänzt: „Wenn sich die Zeiten überschneiden, sag es jetzt.“ Ich antworte mit geöffnetem Kalender.*"
     },
-    "day4_harem_fallout_4": {"name":"{name}","text":"*Ich schreibe der Gruppe, dass ich die Verabredungen noch einmal bestätigen werde. Mit noch geöffnetem Kalender ziehe ich an der Tür meine Schuhe an.*"}
+    "day4_harem_fallout_4": {
+        "name": "{name}",
+        "text": "*Ich schreibe der Gruppe, dass ich die Verabredungen noch einmal bestätigen werde. Mit noch geöffnetem Kalender ziehe ich an der Tür meine Schuhe an.*"
+    },
+    "date_seo_skip": {},
+    "date_yuna_skip": {},
+    "date_dain_skip": {},
+    "date_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Die Bank ist leer. Eine Nachricht.* Komm heute nicht. In der Schule."
+    },
+    "date_yuna_neg": {
+        "name": "Yuna",
+        "text": "*Sie dreht vor dem Café um.* Heute will ich dich nicht sehen."
+    },
+    "date_dain_neg": {
+        "name": "Dain",
+        "text": "*Vor dem Hallenrollo richtet sie die Tasche.* Heute will ich dich nicht. Geh."
+    }
 }

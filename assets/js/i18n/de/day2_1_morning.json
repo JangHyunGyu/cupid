@@ -1,5 +1,8 @@
 {
-    "hidden_homeroom_d2_low": {"name":"Klassenlehrerin","text":"*Vor dem Lehrerzimmer begegnest du deiner Klassenlehrerin. Sie dreht die Unterlagen in ihrer Hand wieder in Richtung Schreibtisch.* Heute sollten wir nicht unter vier Augen reden. Wir sehen uns im Unterricht."},
+    "hidden_homeroom_d2_low": {
+        "name": "Klassenlehrerin",
+        "text": "*Vor dem Lehrerzimmer begegnest du deiner Klassenlehrerin. Sie dreht die Unterlagen in ihrer Hand wieder in Richtung Schreibtisch.* Heute sollten wir nicht unter vier Augen reden. Wir sehen uns im Unterricht."
+    },
     "morning2_start": {
         "name": "{name}",
         "text": "*Zweiter Tag. Die Bügelfalten an den Ärmeln meiner Uniform sind schwächer als gestern.*"
@@ -367,5 +370,22 @@
     "hidden_homeroom_d2_choice1_trap": {
         "name": "Klassenlehrerin",
         "text": "Nur weil ich Lehrerin bin, muss mein Geschmack nicht auch kompliziert sein."
+    },
+    "morning2_greet_none_1": {
+        "name": "{name}",
+        "text": "*Ich öffne die Klassenzimmertür. Niemand kommt. Nur Taschen auf den Tischen.*"
+    },
+    "morning2_greet_none_2": {
+        "name": "{name}",
+        "text": "*Seoyeon blättert in der Liste. Dain dreht sich zu ihren Freundinnen. Yunas Buch liegt schon auf.*"
+    },
+    "morning2_greet_none_tone": {},
+    "morning2_greet_none_neg_1": {
+        "name": "{name}",
+        "text": "*Ich öffne die Klassenzimmertür. Blicke sammeln sich kurz und weichen aus. Nur die Taschen werden lauter.*"
+    },
+    "morning2_greet_none_neg_2": {
+        "name": "{name}",
+        "text": "*Seoyeon sieht nicht von der Liste auf. Dain ist schon bei ihren Freundinnen. Yuna starrt nur in ihr Buch.*"
     }
 }

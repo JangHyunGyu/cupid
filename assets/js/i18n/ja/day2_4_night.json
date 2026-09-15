@@ -367,5 +367,17 @@
     "night2_msg_generic_3_first": {
         "name": "ユナ",
         "text": "最近、何読んでる？"
+    },
+    "night2_reply_dain_react_neg": {
+        "name": "ダイン",
+        "text": "わかった。寝る。*既読だけついて、次の文は来ない。*"
+    },
+    "night2_reply_seo_react_neg": {
+        "name": "ソヨン",
+        "text": "また明日。*すぐ既読になる。*"
+    },
+    "night2_reply_yuna_react_neg": {
+        "name": "ユナ",
+        "text": "……おやすみ。*吹き出しはそこで終わる。*"
     }
 }

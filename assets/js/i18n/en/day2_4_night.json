@@ -367,5 +367,17 @@
     "night2_msg_generic_3_first": {
         "name": "Yuna",
         "text": "What are you reading lately?"
+    },
+    "night2_reply_dain_react_neg": {
+        "name": "Dain",
+        "text": "Got it. Sleep. *Read receipt. Nothing else.*"
+    },
+    "night2_reply_seo_react_neg": {
+        "name": "Seoyeon",
+        "text": "See you tomorrow. *It marks as read immediately.*"
+    },
+    "night2_reply_yuna_react_neg": {
+        "name": "Yuna",
+        "text": "...Good night. *The bubble stops there.*"
     }
 }

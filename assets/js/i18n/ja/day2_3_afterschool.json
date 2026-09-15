@@ -723,5 +723,64 @@
     "after2_yuna_trap_react": {
         "name": "ユナ",
         "text": "*しおりが一ページ先に移る。ソファの端のイヤホンを鞄にしまう。*"
+    },
+    "after2_seo_tone": {},
+    "after2_dain_tone": {},
+    "after2_yuna_tone": {},
+    "after2_seo_cool_1": {
+        "name": "ソヨン",
+        "text": "来たなら、このリストから。*クリップボードを押し出す。*"
+    },
+    "after2_seo_neg_1": {
+        "name": "ソヨン",
+        "text": "*出席だけ確認してペンを置く。* 必要な欄だけ埋めて。他の話は明日。"
+    },
+    "after2_dain_cool_1": {
+        "name": "ダイン",
+        "text": "来たなら、先にボール拾って。話はあと。"
+    },
+    "after2_dain_neg_1": {
+        "name": "ダイン",
+        "text": "*ネットの紐を巻きながら、こちらを見ない。* 今日は一人で打つ。邪魔しないで。"
+    },
+    "after2_yuna_cool_1": {
+        "name": "ユナ",
+        "text": "*イヤホンを片方だけ外す。* 読んでもいい。話は短く。"
+    },
+    "after2_yuna_neg_1": {
+        "name": "ユナ",
+        "text": "*本は閉じない。メモもない。* 今日は一緒にいたくない。"
+    },
+    "after2_dain_rival_seo_neg": {
+        "name": "ソヨン",
+        "text": "*売店の前を、歩幅を落とさず通り過ぎる。*"
+    },
+    "after2_dain_rival_yuna_neg": {
+        "name": "{name}",
+        "text": "*別館のほうのユナは顔をそむけたまま本を持つ。目は合わない。*"
+    },
+    "after2_seo_rival_dain_neg": {
+        "name": "ダイン",
+        "text": "*ボールかごを押して体育館に入る。手も振らない。*"
+    },
+    "after2_seo_rival_yuna_neg": {
+        "name": "{name}",
+        "text": "*踊り場のユナは本を持ったまま壁を見ている。会釈もしない。*"
+    },
+    "after2_yuna_rival_dain_neg": {
+        "name": "ダイン",
+        "text": "*廊下の端でボールを一つ拾って、背を向ける。*"
+    },
+    "after2_yuna_rival_seo_neg": {
+        "name": "ソヨン",
+        "text": "*出席簿を腕に挟んだまま通り過ぎる。足は止まらない。*"
+    },
+    "after2_seo_neck_neg": {
+        "name": "{name}",
+        "text": "使ってない箱だよ。"
+    },
+    "after2_seo_neck_neg_b": {
+        "name": "ソヨン",
+        "text": "*箱を元の場所へ戻す。* それはいい。リストを合わせて。"
     }
 }

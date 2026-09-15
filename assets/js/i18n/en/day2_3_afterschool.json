@@ -723,5 +723,64 @@
     "after2_yuna_trap_react": {
         "name": "Yuna",
         "text": "*The bookmark moves one page forward. She puts the earbud lying at the edge of the sofa into her bag.*"
+    },
+    "after2_seo_tone": {},
+    "after2_dain_tone": {},
+    "after2_yuna_tone": {},
+    "after2_seo_cool_1": {
+        "name": "Seoyeon",
+        "text": "If you're here, start with this list. *She slides the clipboard over.*"
+    },
+    "after2_seo_neg_1": {
+        "name": "Seoyeon",
+        "text": "*She checks attendance and puts the pen down.* Fill the required boxes. Anything else tomorrow."
+    },
+    "after2_dain_cool_1": {
+        "name": "Dain",
+        "text": "If you're here, pick up balls first. Talk later."
+    },
+    "after2_dain_neg_1": {
+        "name": "Dain",
+        "text": "*She winds the net cord and doesn't look over.* I'm hitting alone today. Just don't get in the way."
+    },
+    "after2_yuna_cool_1": {
+        "name": "Yuna",
+        "text": "*She only moves one earbud aside.* You can read. Keep talking short."
+    },
+    "after2_yuna_neg_1": {
+        "name": "Yuna",
+        "text": "*She doesn't close the book. No note.* I don't want company today."
+    },
+    "after2_dain_rival_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*She passes the store without slowing down.*"
+    },
+    "after2_dain_rival_yuna_neg": {
+        "name": "{name}",
+        "text": "*By the annex Yuna picks up her book with her face turned away. Our eyes don't meet.*"
+    },
+    "after2_seo_rival_dain_neg": {
+        "name": "Dain",
+        "text": "*She pushes the ball cart into the gym. No wave.*"
+    },
+    "after2_seo_rival_yuna_neg": {
+        "name": "{name}",
+        "text": "*On the landing Yuna looks at the wall with her book in hand. She doesn't even nod.*"
+    },
+    "after2_yuna_rival_dain_neg": {
+        "name": "Dain",
+        "text": "*At the end of the hall she picks up one ball and turns away.*"
+    },
+    "after2_yuna_rival_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*She walks past with the roll tucked against her arm. She doesn't stop.*"
+    },
+    "after2_seo_neck_neg": {
+        "name": "{name}",
+        "text": "It's an empty box."
+    },
+    "after2_seo_neck_neg_b": {
+        "name": "Seoyeon",
+        "text": "*She pushes the box back where it was.* I don't need it. Stick to the list."
     }
 }

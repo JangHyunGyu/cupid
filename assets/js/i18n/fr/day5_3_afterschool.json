@@ -1,7 +1,16 @@
 {
-    "after5_farewell_seo_low": {"name":"Seoyeon","text":"*Tu croises Seoyeon dans le couloir. Elle s'arrête un instant et se contente d'incliner la tête.* Je sais ce que tu as décidé. Je n'ai rien d'autre à dire."},
-    "after5_farewell_yuna_low": {"name":"Yuna","text":"*Vos regards se croisent devant la bibliothèque. Yuna serre son livre contre elle et hoche brièvement la tête.* Salut."},
-    "after5_farewell_dain_low": {"name":"Dain","text":"*Dain s'approche devant le gymnase et s'arrête à deux pas de toi.* Je sais ce que tu as décidé. Je rentre."},
+    "after5_farewell_seo_low": {
+        "name": "Seoyeon",
+        "text": "*Tu croises Seoyeon dans le couloir. Elle s'arrête un instant et se contente d'incliner la tête.* Je sais ce que tu as décidé. Je n'ai rien d'autre à dire."
+    },
+    "after5_farewell_yuna_low": {
+        "name": "Yuna",
+        "text": "*Vos regards se croisent devant la bibliothèque. Yuna serre son livre contre elle et hoche brièvement la tête.* Salut."
+    },
+    "after5_farewell_dain_low": {
+        "name": "Dain",
+        "text": "*Dain s'approche devant le gymnase et s'arrête à deux pas de toi.* Je sais ce que tu as décidé. Je rentre."
+    },
     "after5_start": {},
     "after5_waited_start_branch": {
         "name": "Système",
@@ -559,5 +568,28 @@
     "after5_hidden_return_to_park": {
         "name": "{name}",
         "text": "*Le rangement terminé, je quitte l’école. Des fanions repliés bordent la route qui mène au parc.*"
+    },
+    "after5_farewell_seo_skip": {},
+    "after5_farewell_yuna_skip": {},
+    "after5_farewell_dain_skip": {},
+    "after5_farewell_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Elle passe sans tourner la tête.*"
+    },
+    "after5_farewell_yuna_neg": {
+        "name": "Yuna",
+        "text": "*Elle part de l'autre côté du couloir, livre en main. Pas un mot.*"
+    },
+    "after5_farewell_dain_neg": {
+        "name": "Dain",
+        "text": "*Elle ajuste son sac et passe la porte du gymnase. Elle ne regarde pas derrière.*"
+    },
+    "after5_hidden_teacher_neg": {
+        "name": "Professeure principale",
+        "text": "*Elle range l'enveloppe du manuscrit et ferme le dossier.* Finissons seulement la cérémonie. Les propos personnels s'arrêtent là."
+    },
+    "after5_hidden_nurse_neg": {
+        "name": "Infirmière",
+        "text": "*Elle classe la fiche et ferme le tableau des rendez-vous.* Désormais, uniquement le canal officiel. C'est tout pour aujourd'hui."
     }
 }

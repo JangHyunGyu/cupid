@@ -21,10 +21,7 @@
         "text": "*It's my first time on the rooftop. A whistle from the field carries up past the railing as Seoyeon spreads her lunch out on a folding chair.*"
     },
     "lunch2_seo_2b_check": {},
-    "lunch2_seo_2b": {
-        "name": "Seoyeon",
-        "text": "You actually came up here. Bold."
-    },
+    "lunch2_seo_2b": {},
     "lunch2_seo_2b_dain": {
         "name": "Seoyeon",
         "text": "Yesterday you were headed for the store. Today you came all the way up here."
@@ -69,10 +66,7 @@
         "name": "{name}",
         "text": "*The rooftop. Same spot as yesterday. Seoyeon is setting out her lunchbox.*"
     },
-    "lunch2_seo_2": {
-        "name": "Seoyeon",
-        "text": "Back again. Hooked already?"
-    },
+    "lunch2_seo_2": {},
     "lunch2_seo_3": {
         "name": "{name}",
         "text": "The food was good."
@@ -475,10 +469,7 @@
         "text": "*The library annex is older than the main building, and almost no students are around. At the top of the stairs, Yuna stands at the end of the hall, leaning against the wall with a book.*"
     },
     "lunch2_yuna_intro_check": {},
-    "lunch2_yuna_3": {
-        "name": "Yuna",
-        "text": "You came."
-    },
+    "lunch2_yuna_3": {},
     "lunch2_yuna_4": {
         "name": "{name}",
         "text": "I got your note."
@@ -688,5 +679,46 @@
     "lunch2_yuna_trap_exclusive": {
         "name": "Yuna",
         "text": "*She pulls the book toward herself, then slowly lets it go.* That’s for me to decide."
+    },
+    "lunch2_seo_2_warm": {
+        "name": "Seoyeon",
+        "text": "You came again. Getting used to this?"
+    },
+    "lunch2_seo_2_cool": {
+        "name": "Seoyeon",
+        "text": "You're here. Give me a second to open the lunch box."
+    },
+    "lunch2_seo_2_neg": {
+        "name": "Seoyeon",
+        "text": "*She doesn't open the lunch box and looks at the railing.* Student council work. Don't stay long."
+    },
+    "lunch2_seo_2b_warm": {
+        "name": "Seoyeon",
+        "text": "You came all the way up. That takes guts."
+    },
+    "lunch2_seo_2b_cool": {
+        "name": "Seoyeon",
+        "text": "The roof is permit-only. I'll make an exception today."
+    },
+    "lunch2_dain_tone": {},
+    "lunch2_dain_2_cool": {
+        "name": "Dain",
+        "text": "If you're here, get in line. You're buying the bread. You know that."
+    },
+    "lunch2_dain_2_neg": {
+        "name": "Dain",
+        "text": "*She leaves a gap in line and stares ahead.* No bets today. Buy it and go."
+    },
+    "lunch2_yuna_3_warm": {
+        "name": "Yuna",
+        "text": "You came."
+    },
+    "lunch2_yuna_3_cool": {
+        "name": "Yuna",
+        "text": "*She only slides in a bookmark and leaves the seat beside her empty.*"
+    },
+    "lunch2_yuna_3_neg": {
+        "name": "Yuna",
+        "text": "*No note. She only turns a page.* I don't want to talk today."
     }
 }

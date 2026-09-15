@@ -1,7 +1,16 @@
 {
-    "after5_farewell_seo_low": {"name":"ソヨン","text":"*廊下でソヨンと鉢合わせる。ソヨンは少し立ち止まり、一度だけ頭を下げる。* あなたが決めたことは分かってる。もう話すことはないよ。"},
-    "after5_farewell_yuna_low": {"name":"ユナ","text":"*図書館の前でユナと目が合う。ユナは本を胸元に抱えたまま、小さくうなずく。* じゃあね。"},
-    "after5_farewell_dain_low": {"name":"ダイン","text":"*体育館の前でダインが歩いてきて、二歩分の距離を置いて止まる。* あんたが決めたことは分かった。先に入るね。"},
+    "after5_farewell_seo_low": {
+        "name": "ソヨン",
+        "text": "*廊下でソヨンと鉢合わせる。ソヨンは少し立ち止まり、一度だけ頭を下げる。* あなたが決めたことは分かってる。もう話すことはないよ。"
+    },
+    "after5_farewell_yuna_low": {
+        "name": "ユナ",
+        "text": "*図書館の前でユナと目が合う。ユナは本を胸元に抱えたまま、小さくうなずく。* じゃあね。"
+    },
+    "after5_farewell_dain_low": {
+        "name": "ダイン",
+        "text": "*体育館の前でダインが歩いてきて、二歩分の距離を置いて止まる。* あんたが決めたことは分かった。先に入るね。"
+    },
     "after5_start": {},
     "after5_waited_start_branch": {
         "name": "システム",
@@ -559,5 +568,28 @@
     "after5_hidden_return_to_park": {
         "name": "{name}",
         "text": "*片づけを終えて学校を出る。公園へ続く道には、たたまれた行事の旗が並んでいる。*"
+    },
+    "after5_farewell_seo_skip": {},
+    "after5_farewell_yuna_skip": {},
+    "after5_farewell_dain_skip": {},
+    "after5_farewell_seo_neg": {
+        "name": "ソヨン",
+        "text": "*顔も向けずに通り過ぎる。*"
+    },
+    "after5_farewell_yuna_neg": {
+        "name": "ユナ",
+        "text": "*本を持ったまま廊下の反対側へ行く。言葉はない。*"
+    },
+    "after5_farewell_dain_neg": {
+        "name": "ダイン",
+        "text": "*カバンを直して体育館のドアに入る。後ろは見ない。*"
+    },
+    "after5_hidden_teacher_neg": {
+        "name": "担任の先生",
+        "text": "*原稿の封筒をファイルに入れて蓋を閉じる。* 今日は行事だけ終えよう。個人の話はここまで。"
+    },
+    "after5_hidden_nurse_neg": {
+        "name": "保健室の先生",
+        "text": "*相談記録をファイルに入れて予約表を閉じる。* これからは正式な窓口だけ。今日はここまで。"
     }
 }

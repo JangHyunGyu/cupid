@@ -467,5 +467,9 @@
     "lunch_dain_trap_1": {
         "name": "Dain",
         "text": "Se você não tem interesse, é só falar. Fingir é pior."
+    },
+    "lunch_seo_1_aff_neg": {
+        "name": "Seoyeon",
+        "text": "*Ela empurra uma cadeira e deixa só a prancheta.* Trabalho do grêmio. Senta se for ficar."
     }
 }

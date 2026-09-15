@@ -914,33 +914,78 @@
     "after3_rival_seo_check": {},
     "after3_rival_seo_promised_dispatch": {},
     "after3_rival_seo_affinity": {},
-    "after3_rival_seo_high": {"name":"ソヨン","text":"*ソヨンは分かれ道で足を止め、こちらが向かう先を確かめて鞄の紐を握り直す。* 別のところに行くんだ。"},
-    "after3_rival_seo_mid": {"name":"ソヨン","text":"分かった。残りは私が片づける。"},
+    "after3_rival_seo_high": {
+        "name": "ソヨン",
+        "text": "*ソヨンは分かれ道で足を止め、こちらが向かう先を確かめて鞄の紐を握り直す。* 別のところに行くんだ。"
+    },
+    "after3_rival_seo_mid": {
+        "name": "ソヨン",
+        "text": "分かった。残りは私が片づける。"
+    },
     "after3_rival_seo_done": {},
     "after3_rival_dain_check": {},
     "after3_rival_dain_promised_dispatch": {},
     "after3_rival_dain_affinity": {},
-    "after3_rival_dain_high": {"name":"ダイン","text":"*ダインは言いかけた言葉を飲み込み、体育館の案内板を見る。* 別のところに行くの？ 分かった。"},
-    "after3_rival_dain_mid": {"name":"ダイン","text":"オーケー。じゃあ、先に体育館へ行くね。"},
+    "after3_rival_dain_high": {
+        "name": "ダイン",
+        "text": "*ダインは言いかけた言葉を飲み込み、体育館の案内板を見る。* 別のところに行くの？ 分かった。"
+    },
+    "after3_rival_dain_mid": {
+        "name": "ダイン",
+        "text": "オーケー。じゃあ、先に体育館へ行くね。"
+    },
     "after3_rival_dain_done": {},
     "after3_rival_yuna_check": {},
     "after3_rival_yuna_promised_dispatch": {},
     "after3_rival_yuna_affinity": {},
-    "after3_rival_yuna_high": {"name":"ユナ","text":"*ユナは開きかけた本を閉じる。* 別のところに行くんだ。うん、分かった。"},
-    "after3_rival_yuna_mid": {"name":"ユナ","text":"分かった。私は図書館にいる。"},
+    "after3_rival_yuna_high": {
+        "name": "ユナ",
+        "text": "*ユナは開きかけた本を閉じる。* 別のところに行くんだ。うん、分かった。"
+    },
+    "after3_rival_yuna_mid": {
+        "name": "ユナ",
+        "text": "分かった。私は図書館にいる。"
+    },
     "after3_rival_yuna_done": {},
     "after3_seo_affinity_check": {},
-    "after3_seo_partial_1": {"name":"{name}","text":"*生徒会室の扉を開けると、ソヨンが床のクリップボードを拾っている。目元を一度拭い、椅子を戻す。*"},
-    "after3_seo_partial_2": {"name":"ソヨン","text":"今日は一人で片づける。代わりに、明日は避けないで。"},
-    "after3_seo_low_1": {"name":"ソヨン","text":"*ソヨンはドアを半分だけ開けたまま廊下に立つ。* まだ二人きりで会うのはちょっと。週末の約束はやめておこう。また学校でね。"},
+    "after3_seo_partial_1": {
+        "name": "{name}",
+        "text": "*生徒会室の扉を開けると、ソヨンが床のクリップボードを拾っている。目元を一度拭い、椅子を戻す。*"
+    },
+    "after3_seo_partial_2": {
+        "name": "ソヨン",
+        "text": "今日は一人で片づける。代わりに、明日は避けないで。"
+    },
+    "after3_seo_low_1": {
+        "name": "ソヨン",
+        "text": "*ソヨンはドアを半分だけ開けたまま廊下に立つ。* まだ二人きりで会うのはちょっと。週末の約束はやめておこう。また学校でね。"
+    },
     "after3_yuna_affinity_check": {},
-    "after3_yuna_partial_1": {"name":"{name}","text":"*別館の扉は開いているが、ユナは本を開かない。向かいの椅子を一度見てから机の下へ押し戻す。*"},
-    "after3_yuna_partial_2": {"name":"ユナ","text":"今日はここまで。次は私から呼ぶ。"},
-    "after3_yuna_low_1": {"name":"ユナ","text":"*別館のドアの前でユナが鞄を肩にかける。* 二人で会うのは……まだ少し難しい。週末は一人でいたい。"},
+    "after3_yuna_partial_1": {
+        "name": "{name}",
+        "text": "*別館の扉は開いているが、ユナは本を開かない。向かいの椅子を一度見てから机の下へ押し戻す。*"
+    },
+    "after3_yuna_partial_2": {
+        "name": "ユナ",
+        "text": "今日はここまで。次は私から呼ぶ。"
+    },
+    "after3_yuna_low_1": {
+        "name": "ユナ",
+        "text": "*別館のドアの前でユナが鞄を肩にかける。* 二人で会うのは……まだ少し難しい。週末は一人でいたい。"
+    },
     "after3_dain_affinity_check": {},
-    "after3_dain_partial_1": {"name":"{name}","text":"*体育館の中でダインが膝のサポーターを直す。立ち上がりかけて、またベンチに座る。*"},
-    "after3_dain_partial_2": {"name":"ダイン","text":"少し休めば平気。今日は先に帰って。明日ね。"},
-    "after3_dain_low_1": {"name":"ダイン","text":"*ダインは体育館のドアに手をかけたまま、中には入らない。* 二人で遊びに行くのは、もう少し仲良くなってからにしよう。今週末は一人で練習するよ。"},
+    "after3_dain_partial_1": {
+        "name": "{name}",
+        "text": "*体育館の中でダインが膝のサポーターを直す。立ち上がりかけて、またベンチに座る。*"
+    },
+    "after3_dain_partial_2": {
+        "name": "ダイン",
+        "text": "少し休めば平気。今日は先に帰って。明日ね。"
+    },
+    "after3_dain_low_1": {
+        "name": "ダイン",
+        "text": "*ダインは体育館のドアに手をかけたまま、中には入らない。* 二人で遊びに行くのは、もう少し仲良くなってからにしよう。今週末は一人で練習するよ。"
+    },
     "after3_dain_departed_end": {},
     "minsu_d3_4_established": {
         "name": "ミンス",
@@ -961,5 +1006,44 @@
     "after3_dain_control_react": {
         "name": "ダイン",
         "text": "私の代わりに決めないで。見張ってくれとも頼んでない。"
-    }
+    },
+    "after3_rival_seo_cool": {
+        "name": "ソヨン",
+        "text": "予定が変わったんだね。*クリップボードをめくって通り過ぎる。*"
+    },
+    "after3_rival_seo_neg": {
+        "name": "ソヨン",
+        "text": "*出席簿だけ腕に挟んで生徒会室に入る。名前は呼ばない。*"
+    },
+    "after3_rival_dain_cool": {
+        "name": "ダイン",
+        "text": "今日体育館はなし。*ボールバッグの紐を直す。*"
+    },
+    "after3_rival_dain_neg": {
+        "name": "ダイン",
+        "text": "*バレーボールを持って先に背を向ける。感嘆符はない。*"
+    },
+    "after3_rival_yuna_cool": {
+        "name": "ユナ",
+        "text": "*メモなしで別館のドアを閉める。*"
+    },
+    "after3_rival_yuna_neg": {
+        "name": "{name}",
+        "text": "*別館の席は空いている。しおりもメモもない。*"
+    },
+    "after3_seo_neg_1": {
+        "name": "ソヨン",
+        "text": "*生徒会室の鍵をポケットに入れる。* 今日はここまで。週末の話もない。"
+    },
+    "after3_yuna_neg_1": {
+        "name": "ユナ",
+        "text": "*別館の電気を消す。* 今日は一人でいる。"
+    },
+    "after3_dain_neg_1": {
+        "name": "ダイン",
+        "text": "*ネットの紐を巻いてカバンをかける。* 今日はやめとく。呼ばないで。"
+    },
+    "after3_seo_skip": {},
+    "after3_yuna_skip": {},
+    "after3_dain_skip": {}
 }

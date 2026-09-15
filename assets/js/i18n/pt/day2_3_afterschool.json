@@ -723,5 +723,64 @@
     "after2_yuna_trap_react": {
         "name": "Yuna",
         "text": "*O marcador avança uma página. Ela guarda na bolsa o fone que estava na ponta do sofá.*"
+    },
+    "after2_seo_tone": {},
+    "after2_dain_tone": {},
+    "after2_yuna_tone": {},
+    "after2_seo_cool_1": {
+        "name": "Seoyeon",
+        "text": "Se veio, começa por essa lista. *Ela empurra a prancheta.*"
+    },
+    "after2_seo_neg_1": {
+        "name": "Seoyeon",
+        "text": "*Ela confere a presença e larga a caneta.* Preenche só o obrigatório. O resto, amanhã."
+    },
+    "after2_dain_cool_1": {
+        "name": "Dain",
+        "text": "Se veio, junta as bolas primeiro. Conversa depois."
+    },
+    "after2_dain_neg_1": {
+        "name": "Dain",
+        "text": "*Ela enrola a corda da rede e não olha pra cá.* Hoje eu treino sozinha. Só não atrapalha."
+    },
+    "after2_yuna_cool_1": {
+        "name": "Yuna",
+        "text": "*Ela tira só um fone.* Pode ler. Fala pouco."
+    },
+    "after2_yuna_neg_1": {
+        "name": "Yuna",
+        "text": "*Ela não fecha o livro. Sem bilhete.* Hoje não quero companhia."
+    },
+    "after2_dain_rival_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Ela passa da cantina sem diminuir o passo.*"
+    },
+    "after2_dain_rival_yuna_neg": {
+        "name": "{name}",
+        "text": "*No anexo, Yuna pega o livro de lado. Os olhares não se cruzam.*"
+    },
+    "after2_seo_rival_dain_neg": {
+        "name": "Dain",
+        "text": "*Ela empurra o cesto de bolas pro ginásio. Sem acenar.*"
+    },
+    "after2_seo_rival_yuna_neg": {
+        "name": "{name}",
+        "text": "*No patamar, Yuna olha a parede com o livro. Nem acena com a cabeça.*"
+    },
+    "after2_yuna_rival_dain_neg": {
+        "name": "Dain",
+        "text": "*No fim do corredor ela pega uma bola e vira as costas.*"
+    },
+    "after2_yuna_rival_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Ela passa com a lista no braço. Não para.*"
+    },
+    "after2_seo_neck_neg": {
+        "name": "{name}",
+        "text": "É uma caixa vazia."
+    },
+    "after2_seo_neck_neg_b": {
+        "name": "Seoyeon",
+        "text": "*Empurra a caixa de volta ao lugar.* Não preciso. Fica na lista."
     }
 }

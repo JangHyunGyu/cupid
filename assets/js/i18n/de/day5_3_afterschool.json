@@ -1,7 +1,16 @@
 {
-    "after5_farewell_seo_low": {"name":"Seoyeon","text":"*Auf dem Flur begegnest du Seoyeon. Sie hält kurz inne und nickt dir einmal zu.* Ich weiß, wie du dich entschieden hast. Mehr habe ich nicht zu sagen."},
-    "after5_farewell_yuna_low": {"name":"Yuna","text":"*Vor der Bibliothek treffen sich eure Blicke. Yuna drückt ihr Buch an sich und nickt dir knapp zu.* Tschüss."},
-    "after5_farewell_dain_low": {"name":"Dain","text":"*Dain kommt vor der Sporthalle auf dich zu und bleibt zwei Schritte entfernt stehen.* Ich weiß, wie du dich entschieden hast. Ich gehe rein."},
+    "after5_farewell_seo_low": {
+        "name": "Seoyeon",
+        "text": "*Auf dem Flur begegnest du Seoyeon. Sie hält kurz inne und nickt dir einmal zu.* Ich weiß, wie du dich entschieden hast. Mehr habe ich nicht zu sagen."
+    },
+    "after5_farewell_yuna_low": {
+        "name": "Yuna",
+        "text": "*Vor der Bibliothek treffen sich eure Blicke. Yuna drückt ihr Buch an sich und nickt dir knapp zu.* Tschüss."
+    },
+    "after5_farewell_dain_low": {
+        "name": "Dain",
+        "text": "*Dain kommt vor der Sporthalle auf dich zu und bleibt zwei Schritte entfernt stehen.* Ich weiß, wie du dich entschieden hast. Ich gehe rein."
+    },
     "after5_start": {},
     "after5_waited_start_branch": {
         "name": "System",
@@ -559,5 +568,28 @@
     "after5_hidden_return_to_park": {
         "name": "{name}",
         "text": "*Nach dem Aufräumen verlasse ich die Schule. Gefaltete Festbanner säumen den Weg zum Park.*"
+    },
+    "after5_farewell_seo_skip": {},
+    "after5_farewell_yuna_skip": {},
+    "after5_farewell_dain_skip": {},
+    "after5_farewell_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Sie geht vorbei, ohne den Kopf zu drehen.*"
+    },
+    "after5_farewell_yuna_neg": {
+        "name": "Yuna",
+        "text": "*Sie geht mit dem Buch die andere Gangseite. Kein Wort.*"
+    },
+    "after5_farewell_dain_neg": {
+        "name": "Dain",
+        "text": "*Sie richtet die Tasche und geht in die Halle. Kein Blick zurück.*"
+    },
+    "after5_hidden_teacher_neg": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie legt den Umschlag in die Mappe und schließt sie.* Heute nur die Feier. Persönliches endet hier."
+    },
+    "after5_hidden_nurse_neg": {
+        "name": "Schulkrankenschwester",
+        "text": "*Sie heftet den Bogen ab und schließt den Terminplan.* Ab jetzt nur der Dienstweg. Für heute reicht's."
     }
 }

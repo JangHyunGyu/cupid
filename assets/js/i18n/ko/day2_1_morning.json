@@ -1,5 +1,8 @@
 {
-    "hidden_homeroom_d2_low": {"name":"담임선생님","text":"*교무실 문 앞에서 담임과 마주친다. 담임은 들고 있던 서류를 책상 쪽으로 돌려놓는다.* 오늘은 따로 이야기하지 말자. 수업에서 보자."},
+    "hidden_homeroom_d2_low": {
+        "name": "담임선생님",
+        "text": "*교무실 문 앞에서 담임과 마주친다. 담임은 들고 있던 서류를 책상 쪽으로 돌려놓는다.* 오늘은 따로 이야기하지 말자. 수업에서 보자."
+    },
     "morning2_start": {
         "name": "{name}",
         "text": "*둘째 날. 교복 소매의 접힌 자국이 어제보다 옅다.*"
@@ -367,5 +370,22 @@
     "hidden_homeroom_d2_choice1_trap": {
         "name": "담임선생님",
         "text": "선생님이라고 취향까지 어려울 필요는 없지."
+    },
+    "morning2_greet_none_1": {
+        "name": "{name}",
+        "text": "*교실 문을 열어도 먼저 다가오는 사람은 없다. 가방 놓는 소리만 난다.*"
+    },
+    "morning2_greet_none_2": {
+        "name": "{name}",
+        "text": "*서연은 출석부를 넘기고 다인은 친구들 쪽으로 몸을 돌린다. 유나의 자리는 이미 책이 펴져 있다.*"
+    },
+    "morning2_greet_none_tone": {},
+    "morning2_greet_none_neg_1": {
+        "name": "{name}",
+        "text": "*교실 문을 열자 시선이 잠깐 모였다가 바로 흩어진다. 가방 놓는 소리만 커진다.*"
+    },
+    "morning2_greet_none_neg_2": {
+        "name": "{name}",
+        "text": "*서연은 출석부에서 눈을 떼지 않는다. 다인은 친구들 쪽으로 먼저 간다. 유나는 책만 보고 있다.*"
     }
 }

@@ -1213,5 +1213,17 @@
     "day4_student_checkin_return_home": {
         "name": "{name}",
         "text": "*家に着き、学校のアプリで帰宅を報告する。鞄を下ろして携帯を充電器につなぐと、新しい通知が届く。*"
+    },
+    "wall_seo_skip": {
+        "name": "{name}",
+        "text": "*ソヨンのトークは静かだ。電話は来ない。*"
+    },
+    "wall_dain_skip": {
+        "name": "{name}",
+        "text": "*ダインの最後のメッセージは午前で止まっている。夜の通知はない。*"
+    },
+    "wall_yuna_skip": {
+        "name": "{name}",
+        "text": "*ユナからはメモもメッセージもない。画面が消えるだけ。*"
     }
 }

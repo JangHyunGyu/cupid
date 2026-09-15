@@ -1,5 +1,8 @@
 {
-    "hidden_homeroom_d2_low": {"name":"Profesora","text":"*Te cruzas con la profesora frente a la sala de profesores. Ella aparta hacia el escritorio los documentos que llevaba en la mano.* Hoy será mejor que no hablemos a solas. Nos vemos en clase."},
+    "hidden_homeroom_d2_low": {
+        "name": "Profesora",
+        "text": "*Te cruzas con la profesora frente a la sala de profesores. Ella aparta hacia el escritorio los documentos que llevaba en la mano.* Hoy será mejor que no hablemos a solas. Nos vemos en clase."
+    },
     "morning2_start": {
         "name": "{name}",
         "text": "*Segundo día. Los pliegues de las mangas del uniforme están menos marcados que ayer.*"
@@ -367,5 +370,22 @@
     "hidden_homeroom_d2_choice1_trap": {
         "name": "Profesora",
         "text": "Ser profesora no significa que mis gustos también tengan que ser difíciles."
+    },
+    "morning2_greet_none_1": {
+        "name": "{name}",
+        "text": "*Abro la puerta del aula. Nadie se acerca. Solo se oyen mochilas contra los pupitres.*"
+    },
+    "morning2_greet_none_2": {
+        "name": "{name}",
+        "text": "*Seoyeon pasa lista. Dain se gira hacia sus amigas. El libro de Yuna ya está abierto.*"
+    },
+    "morning2_greet_none_tone": {},
+    "morning2_greet_none_neg_1": {
+        "name": "{name}",
+        "text": "*Abro la puerta del aula. Las miradas se juntan un segundo y se apartan. Solo se oyen más las mochilas.*"
+    },
+    "morning2_greet_none_neg_2": {
+        "name": "{name}",
+        "text": "*Seoyeon no levanta la vista de la lista. Dain ya está con sus amigas. Yuna no aparta los ojos del libro.*"
     }
 }

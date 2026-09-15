@@ -789,5 +789,44 @@
         "name": "{name}",
         "text": "*La sonnerie de fin de cours retentit. La pause déjeuner commence bientôt.*"
     },
-    "morning3_end_b": {}
+    "morning3_end_b": {},
+    "morning3_gate_none_1": {
+        "name": "{name}",
+        "text": "*Personne n'attend au portail. La sonnerie de retard retentit d'abord.*"
+    },
+    "morning3_seo_gate_neg_1": {
+        "name": "Seoyeon",
+        "text": "*Elle passe sans même regarder le badge.*"
+    },
+    "morning3_seo_gate_neg_2": {
+        "name": "{name}",
+        "text": "*Les chaussures de Seoyeon disparaissent d'abord derrière le portail.*"
+    },
+    "morning3_yuna_gate_neg_1": {
+        "name": "{name}",
+        "text": "*Yuna détourne la tête avant que nos regards se croisent et passe le portail. Pas de mot.*"
+    },
+    "morning3_dain_gate_neg_1": {
+        "name": "Dain",
+        "text": "*Elle court avec ses amies et ne regarde pas ici.*"
+    },
+    "morning3_dain_gate_neg_2": {
+        "name": "{name}",
+        "text": "*Pas un salut jusqu'à ce que le sac de Dain disparaisse au coin.*"
+    },
+    "morning3_date_seo_skip": {},
+    "morning3_date_dain_skip": {},
+    "morning3_date_yuna_skip": {},
+    "morning3_date_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Elle passe, le bloc-notes contre la poitrine.* Le week-end, uniquement sur le groupe. Ne demande pas à part."
+    },
+    "morning3_date_dain_neg": {
+        "name": "Dain",
+        "text": "*Elle ferme la fermeture jusqu'en haut.* Ne m'appelle pas ce week-end. Je m'entraîne seule."
+    },
+    "morning3_date_yuna_neg": {
+        "name": "Yuna",
+        "text": "*Elle sort un mot, puis le remet entre les pages.* Ne me cherche pas ce week-end."
+    }
 }

@@ -723,5 +723,64 @@
     "after2_yuna_trap_react": {
         "name": "Yuna",
         "text": "*Das Lesezeichen wandert eine Seite weiter. Den Ohrhörer vom Sofarand steckt sie in ihre Tasche.*"
+    },
+    "after2_seo_tone": {},
+    "after2_dain_tone": {},
+    "after2_yuna_tone": {},
+    "after2_seo_cool_1": {
+        "name": "Seoyeon",
+        "text": "Wenn du da bist, fang mit der Liste an. *Sie schiebt das Klemmbrett rüber.*"
+    },
+    "after2_seo_neg_1": {
+        "name": "Seoyeon",
+        "text": "*Sie macht Anwesenheit und legt den Stift hin.* Nur die Pflichtfelder. Rest morgen."
+    },
+    "after2_dain_cool_1": {
+        "name": "Dain",
+        "text": "Wenn du da bist, Bälle aufsammeln. Reden später."
+    },
+    "after2_dain_neg_1": {
+        "name": "Dain",
+        "text": "*Sie wickelt die Netzschnur und schaut nicht her.* Heute schlage ich allein. Komm nicht in die Quere."
+    },
+    "after2_yuna_cool_1": {
+        "name": "Yuna",
+        "text": "*Sie nimmt nur einen Ohrhörer raus.* Lesen geht. Wenig reden."
+    },
+    "after2_yuna_neg_1": {
+        "name": "Yuna",
+        "text": "*Sie klappt das Buch nicht zu. Kein Zettel.* Heute will ich niemanden."
+    },
+    "after2_dain_rival_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Sie geht am Kiosk vorbei, ohne langsamer zu werden.*"
+    },
+    "after2_dain_rival_yuna_neg": {
+        "name": "{name}",
+        "text": "*Am Anbau nimmt Yuna ihr Buch, das Gesicht abgewandt. Kein Blickkontakt.*"
+    },
+    "after2_seo_rival_dain_neg": {
+        "name": "Dain",
+        "text": "*Sie schiebt den Ballkorb in die Halle. Kein Winken.*"
+    },
+    "after2_seo_rival_yuna_neg": {
+        "name": "{name}",
+        "text": "*Auf dem Absatz sieht Yuna mit dem Buch zur Wand. Nicht mal ein Nicken.*"
+    },
+    "after2_yuna_rival_dain_neg": {
+        "name": "Dain",
+        "text": "*Am Ende des Gangs hebt sie einen Ball auf und dreht sich weg.*"
+    },
+    "after2_yuna_rival_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Sie geht vorbei, die Liste am Arm. Kein Halt.*"
+    },
+    "after2_seo_neck_neg": {
+        "name": "{name}",
+        "text": "Das ist ein leerer Karton."
+    },
+    "after2_seo_neck_neg_b": {
+        "name": "Seoyeon",
+        "text": "*Sie schiebt den Karton zurück.* Brauche ich nicht. Halt dich an die Liste."
     }
 }

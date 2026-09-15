@@ -328,5 +328,29 @@
     "confess_dain_no_4_b": {
         "name": "{name}",
         "text": "*La voix de Dain se disperse faiblement sous le plafond du gymnase. Seul le velcro de son protège-poignet se déchire dans un long bruit.*"
+    },
+    "confess_seo_yes_mid_1": {
+        "name": "Seoyeon",
+        "text": "Je ne peux pas répondre tout de suite. Demain j'ouvrirai le toit."
+    },
+    "confess_seo_yes_low_1": {
+        "name": "Seoyeon",
+        "text": "*Elle met la clé en poche.* C'est tout pour aujourd'hui. Je ne peux pas encore prendre ça."
+    },
+    "confess_yuna_yes_mid_1": {
+        "name": "Yuna",
+        "text": "...Je peux pas le dire tout de suite. Mais ne disparais pas."
+    },
+    "confess_yuna_yes_low_1": {
+        "name": "Yuna",
+        "text": "*Elle enfonce le marque-page entre les pages.* Aujourd'hui je ne prends pas ça."
+    },
+    "confess_dain_yes_mid_1": {
+        "name": "Dain",
+        "text": "Je ne peux pas répondre tout de suite. Mais ne fuis pas."
+    },
+    "confess_dain_yes_low_1": {
+        "name": "Dain",
+        "text": "*Elle ajuste la sangle du sac.* Pas ça, pas encore. File aujourd'hui."
     }
 }

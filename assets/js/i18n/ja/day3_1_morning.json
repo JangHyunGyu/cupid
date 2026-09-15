@@ -789,5 +789,44 @@
         "name": "{name}",
         "text": "*授業終了のチャイムが鳴り、まもなく昼休みになる。*"
     },
-    "morning3_end_b": {}
+    "morning3_end_b": {},
+    "morning3_gate_none_1": {
+        "name": "{name}",
+        "text": "*校門の前に先に立っている人はいない。遅刻のベルが先に鳴る。*"
+    },
+    "morning3_seo_gate_neg_1": {
+        "name": "ソヨン",
+        "text": "*名札も見ずに通り過ぎる。*"
+    },
+    "morning3_seo_gate_neg_2": {
+        "name": "{name}",
+        "text": "*ソヨンの靴音が先に校門の中へ消える。*"
+    },
+    "morning3_yuna_gate_neg_1": {
+        "name": "{name}",
+        "text": "*ユナは目が合う前に顔をそむけ、校門を抜ける。メモはない。*"
+    },
+    "morning3_dain_gate_neg_1": {
+        "name": "ダイン",
+        "text": "*友達の間を走って入り、こちらは見ない。*"
+    },
+    "morning3_dain_gate_neg_2": {
+        "name": "{name}",
+        "text": "*ダインのカバンが角を曲がるまで、挨拶はない。*"
+    },
+    "morning3_date_seo_skip": {},
+    "morning3_date_dain_skip": {},
+    "morning3_date_yuna_skip": {},
+    "morning3_date_seo_neg": {
+        "name": "ソヨン",
+        "text": "*クリップボードを胸の前に抱えたまま通り過ぎる。* 週末の予定はグループだけに上げる。個別に聞かないで。"
+    },
+    "morning3_date_dain_neg": {
+        "name": "ダイン",
+        "text": "*カバンのファスナーを一番上まで上げる。* 週末は呼ばないで。一人で練習する。"
+    },
+    "morning3_date_yuna_neg": {
+        "name": "ユナ",
+        "text": "*メモを出しかけて、また本の間に戻す。* 週末は探さないで。"
+    }
 }

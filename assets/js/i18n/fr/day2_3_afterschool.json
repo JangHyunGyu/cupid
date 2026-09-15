@@ -723,5 +723,64 @@
     "after2_yuna_trap_react": {
         "name": "Yuna",
         "text": "*Le marque-page avance d'une page. Elle range dans son sac l'écouteur posé au bout du canapé.*"
+    },
+    "after2_seo_tone": {},
+    "after2_dain_tone": {},
+    "after2_yuna_tone": {},
+    "after2_seo_cool_1": {
+        "name": "Seoyeon",
+        "text": "Si tu es là, commence par cette liste. *Elle pousse le bloc-notes.*"
+    },
+    "after2_seo_neg_1": {
+        "name": "Seoyeon",
+        "text": "*Elle fait l'appel et pose le stylo.* Remplis seulement les cases nécessaires. Le reste, demain."
+    },
+    "after2_dain_cool_1": {
+        "name": "Dain",
+        "text": "Si tu es là, ramasse les ballons d'abord. On parlera après."
+    },
+    "after2_dain_neg_1": {
+        "name": "Dain",
+        "text": "*Elle enroule la corde du filet sans regarder ici.* Aujourd'hui je frappe seule. Ne gêne pas."
+    },
+    "after2_yuna_cool_1": {
+        "name": "Yuna",
+        "text": "*Elle écarte un seul écouteur.* Tu peux lire. Parle peu."
+    },
+    "after2_yuna_neg_1": {
+        "name": "Yuna",
+        "text": "*Elle ne ferme pas le livre. Pas de mot.* J'ai pas envie de compagnie aujourd'hui."
+    },
+    "after2_dain_rival_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Elle passe devant le magasin sans ralentir.*"
+    },
+    "after2_dain_rival_yuna_neg": {
+        "name": "{name}",
+        "text": "*Côté annexe, Yuna prend son livre le visage détourné. Nos regards ne se croisent pas.*"
+    },
+    "after2_seo_rival_dain_neg": {
+        "name": "Dain",
+        "text": "*Elle pousse le bac à ballons dans le gymnase. Pas un signe.*"
+    },
+    "after2_seo_rival_yuna_neg": {
+        "name": "{name}",
+        "text": "*Sur le palier, Yuna regarde le mur, livre en main. Même pas un signe de tête.*"
+    },
+    "after2_yuna_rival_dain_neg": {
+        "name": "Dain",
+        "text": "*Au bout du couloir elle ramasse un ballon et tourne le dos.*"
+    },
+    "after2_yuna_rival_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Elle passe, le registre sous le bras. Elle ne s'arrête pas.*"
+    },
+    "after2_seo_neck_neg": {
+        "name": "{name}",
+        "text": "C'est une boîte vide."
+    },
+    "after2_seo_neck_neg_b": {
+        "name": "Seoyeon",
+        "text": "*Elle remet la boîte à sa place.* Pas besoin. Tiens-toi à la liste."
     }
 }

@@ -21,10 +21,7 @@
         "text": "*Ich bin zum ersten Mal auf dem Dach. Vom Sportplatz dringt ein Pfiff über das Geländer herauf, während Seoyeon ihr Mittagessen auf einem Klappstuhl ausbreitet.*"
     },
     "lunch2_seo_2b_check": {},
-    "lunch2_seo_2b": {
-        "name": "Seoyeon",
-        "text": "Du bist bis hierher gekommen. Mutig."
-    },
+    "lunch2_seo_2b": {},
     "lunch2_seo_2b_dain": {
         "name": "Seoyeon",
         "text": "Gestern warst du noch beim Kiosk. Heute bist du bis hier hochgekommen."
@@ -69,10 +66,7 @@
         "name": "{name}",
         "text": "*Das Dach. Gleicher Ort wie gestern. Seoyeon packt ihre Lunchbox aus.*"
     },
-    "lunch2_seo_2": {
-        "name": "Seoyeon",
-        "text": "Schon wieder hier. Auf den Geschmack gekommen?"
-    },
+    "lunch2_seo_2": {},
     "lunch2_seo_3": {
         "name": "{name}",
         "text": "Das Essen war gut."
@@ -475,10 +469,7 @@
         "text": "*Der Bibliotheksanbau ist älter als das Hauptgebäude. Kaum ein Schüler ist hier. Oben an der Treppe steht Yuna am Ende des Flurs, an die Wand gelehnt und in ein Buch vertieft.*"
     },
     "lunch2_yuna_intro_check": {},
-    "lunch2_yuna_3": {
-        "name": "Yuna",
-        "text": "Du bist gekommen."
-    },
+    "lunch2_yuna_3": {},
     "lunch2_yuna_4": {
         "name": "{name}",
         "text": "Ich hab deinen Zettel bekommen."
@@ -688,5 +679,46 @@
     "lunch2_yuna_trap_exclusive": {
         "name": "Yuna",
         "text": "*Sie zieht das Buch zu sich und lässt es dann langsam los.* Das entscheide ich."
+    },
+    "lunch2_seo_2_warm": {
+        "name": "Seoyeon",
+        "text": "Schon wieder. Dir schmeckt das wohl."
+    },
+    "lunch2_seo_2_cool": {
+        "name": "Seoyeon",
+        "text": "Du bist da. Sekunde, ich mache die Box auf."
+    },
+    "lunch2_seo_2_neg": {
+        "name": "Seoyeon",
+        "text": "*Sie öffnet die Box nicht und sieht nur aufs Geländer.* Schülerrat. Bleib nicht lange."
+    },
+    "lunch2_seo_2b_warm": {
+        "name": "Seoyeon",
+        "text": "Du bist ganz hier hochgekommen. Mutig."
+    },
+    "lunch2_seo_2b_cool": {
+        "name": "Seoyeon",
+        "text": "Das Dach braucht eine Erlaubnis. Heute ausnahmsweise."
+    },
+    "lunch2_dain_tone": {},
+    "lunch2_dain_2_cool": {
+        "name": "Dain",
+        "text": "Wenn du da bist, stell dich an. Das Brot zahlst du."
+    },
+    "lunch2_dain_2_neg": {
+        "name": "Dain",
+        "text": "*Sie lässt eine Lücke in der Schlange und starrt nach vorn.* Heute kein Wette. Kauf und geh."
+    },
+    "lunch2_yuna_3_warm": {
+        "name": "Yuna",
+        "text": "Du bist gekommen."
+    },
+    "lunch2_yuna_3_cool": {
+        "name": "Yuna",
+        "text": "*Sie schiebt nur das Lesezeichen rein und lässt den Platz daneben frei.*"
+    },
+    "lunch2_yuna_3_neg": {
+        "name": "Yuna",
+        "text": "*Kein Zettel. Sie blättert nur um.* Heute will ich nicht reden."
     }
 }

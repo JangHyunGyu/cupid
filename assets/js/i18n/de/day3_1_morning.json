@@ -789,5 +789,44 @@
         "name": "{name}",
         "text": "*Die Glocke zum Stundenende läutet. Gleich beginnt die Mittagspause.*"
     },
-    "morning3_end_b": {}
+    "morning3_end_b": {},
+    "morning3_gate_none_1": {
+        "name": "{name}",
+        "text": "*Niemand wartet am Tor. Die Verspätungsglocke geht zuerst.*"
+    },
+    "morning3_seo_gate_neg_1": {
+        "name": "Seoyeon",
+        "text": "*Sie geht vorbei, ohne auf das Schild zu sehen.*"
+    },
+    "morning3_seo_gate_neg_2": {
+        "name": "{name}",
+        "text": "*Seoyeons Schuhe verschwinden zuerst hinter dem Tor.*"
+    },
+    "morning3_yuna_gate_neg_1": {
+        "name": "{name}",
+        "text": "*Yuna dreht den Kopf, bevor sich die Blicke treffen, und geht durchs Tor. Kein Zettel.*"
+    },
+    "morning3_dain_gate_neg_1": {
+        "name": "Dain",
+        "text": "*Sie rennt mit Freundinnen rein und schaut nicht her.*"
+    },
+    "morning3_dain_gate_neg_2": {
+        "name": "{name}",
+        "text": "*Kein Gruß, bis Dains Tasche um die Ecke ist.*"
+    },
+    "morning3_date_seo_skip": {},
+    "morning3_date_dain_skip": {},
+    "morning3_date_yuna_skip": {},
+    "morning3_date_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Sie geht vorbei, Klemmbrett an der Brust.* Wochenende nur in die Gruppe. Nicht extra fragen."
+    },
+    "morning3_date_dain_neg": {
+        "name": "Dain",
+        "text": "*Sie zieht den Reißverschluss ganz zu.* Ruf am Wochenende nicht an. Ich trainiere allein."
+    },
+    "morning3_date_yuna_neg": {
+        "name": "Yuna",
+        "text": "*Sie zieht einen Zettel raus und schiebt ihn zurück.* Such mich am Wochenende nicht."
+    }
 }

@@ -1,5 +1,8 @@
 {
-    "hidden_homeroom_d2_low": {"name":"Professeure principale","text":"*Tu croises la professeure principale devant la salle des professeurs. Elle ramène vers son bureau les documents qu'elle tenait.* Évitons de parler en tête-à-tête aujourd'hui. On se voit en cours."},
+    "hidden_homeroom_d2_low": {
+        "name": "Professeure principale",
+        "text": "*Tu croises la professeure principale devant la salle des professeurs. Elle ramène vers son bureau les documents qu'elle tenait.* Évitons de parler en tête-à-tête aujourd'hui. On se voit en cours."
+    },
     "morning2_start": {
         "name": "{name}",
         "text": "*Deuxième jour. Les plis sur les manches de mon uniforme sont moins marqués qu'hier.*"
@@ -367,5 +370,22 @@
     "hidden_homeroom_d2_choice1_trap": {
         "name": "Professeure principale",
         "text": "Ce n'est pas parce que je suis prof que mes goûts doivent être compliqués."
+    },
+    "morning2_greet_none_1": {
+        "name": "{name}",
+        "text": "*J'ouvre la porte de la classe. Personne ne s'approche. Juste le bruit des sacs.*"
+    },
+    "morning2_greet_none_2": {
+        "name": "{name}",
+        "text": "*Seoyeon tourne une page du registre. Dain se tourne vers ses amies. Le livre de Yuna est déjà ouvert.*"
+    },
+    "morning2_greet_none_tone": {},
+    "morning2_greet_none_neg_1": {
+        "name": "{name}",
+        "text": "*J'ouvre la porte de la classe. Les regards se croisent une seconde, puis se détournent. Seul le bruit des sacs augmente.*"
+    },
+    "morning2_greet_none_neg_2": {
+        "name": "{name}",
+        "text": "*Seoyeon ne lève pas les yeux du registre. Dain est déjà avec ses amies. Yuna ne quitte pas son livre.*"
     }
 }

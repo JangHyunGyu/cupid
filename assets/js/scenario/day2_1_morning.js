@@ -19,7 +19,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/room_school.png",
         "character": null,
         "affinityBranches": [{"char":"Seoyeon","minAffinity":10,"next":"morning2_greet_seo_1"},{"char":"Dain","minAffinity":10,"next":"morning2_greet_dain_1"},{"char":"Yuna","minAffinity":10,"next":"morning2_greet_yuna_1"}],
-        "next": "morning2_dain_1"
+        "next": "morning2_greet_none_tone"
     },
     "morning2_greet_seo_1": {
         "branches": [
@@ -496,6 +496,35 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "lunch2_start"
+    },
+    "morning2_greet_none_1": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "next": "morning2_greet_none_2"
+    },
+    "morning2_greet_none_2": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "morning2_note_1"
+    },
+    "morning2_greet_none_tone": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "affinityChar": "selectByHighestAffinity",
+        "affinityCandidates": ["Seoyeon","Yuna","Dain"],
+        "routeBeforeRender": true,
+        "affinityBranches": [{"minAffinity":0,"next":"morning2_greet_none_1"},{"minAffinity":-100,"next":"morning2_greet_none_neg_1"}],
+        "next": "morning2_greet_none_neg_1"
+    },
+    "morning2_greet_none_neg_1": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "next": "morning2_greet_none_neg_2"
+    },
+    "morning2_greet_none_neg_2": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "morning2_note_1"
     }
     };
     for (const scene of Object.values(scenes)) {

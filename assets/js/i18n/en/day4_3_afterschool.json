@@ -328,5 +328,29 @@
     "confess_dain_no_4_b": {
         "name": "{name}",
         "text": "*Dain's voice dissipates beneath the gym ceiling. Only the long rip of the Velcro on her wrist guard remains.*"
+    },
+    "confess_seo_yes_mid_1": {
+        "name": "Seoyeon",
+        "text": "I can't answer right now. I'll leave the roof open tomorrow."
+    },
+    "confess_seo_yes_low_1": {
+        "name": "Seoyeon",
+        "text": "*She pockets the key.* That's enough for today. I can't take that yet."
+    },
+    "confess_yuna_yes_mid_1": {
+        "name": "Yuna",
+        "text": "...I can't say it back right now. Just don't disappear."
+    },
+    "confess_yuna_yes_low_1": {
+        "name": "Yuna",
+        "text": "*She pushes the bookmark between the pages.* I won't take that today."
+    },
+    "confess_dain_yes_mid_1": {
+        "name": "Dain",
+        "text": "I can't answer right now. Just don't run."
+    },
+    "confess_dain_yes_low_1": {
+        "name": "Dain",
+        "text": "*She fixes the strap on the ball bag.* Not that yet. Go today."
     }
 }

@@ -634,12 +634,30 @@
         "name": "{name}",
         "text": "*J'écris aussi à mon professeur principal actuel : « Je voudrais parler de quelque chose que j'ai choisi d'ignorer dans mon ancien lycée. » Je laisse les deux messages à l'écran jusqu'à l'annonce du festival.*"
     },
-    "morning5_caught_fallout_1": {"name":"{name}","text":"*Avant le début de l'événement, toutes les trois sont assises loin les unes des autres. La feuille sur le bureau ne mentionne que les tâches nécessaires.*"},
-    "morning5_caught_fallout_2": {"name":"{name}","text":"*Yuna sort la première avec les brochures, et Dain prend la porte opposée. Seoyeon récupère la feuille de présence sans me regarder.*"},
-    "morning5_caught_fallout_3": {"name":"{name}","text":"*Jusqu'à la fin de l'événement, nous ne parlons que pour vérifier le travail. À la dernière sonnerie, elles prennent trois escaliers différents.*"},
-    "morning5_harem_fallout_1": {"name":"{name}","text":"*Pendant l'événement, toutes les trois ne laissent que les messages nécessaires dans le groupe. Aucun message n'arrive dans les conversations privées.*"},
-    "morning5_harem_fallout_2": {"name":"Dain","text":"Même après aujourd'hui, ne nous voyons pas séparément. Tiens l'accord qu'on a passé."},
-    "morning5_harem_fallout_3": {"name":"{name}","text":"*Je hoche la tête. Elles franchissent le portail ensemble, et je les suis seul un peu plus tard.*"},
+    "morning5_caught_fallout_1": {
+        "name": "{name}",
+        "text": "*Avant le début de l'événement, toutes les trois sont assises loin les unes des autres. La feuille sur le bureau ne mentionne que les tâches nécessaires.*"
+    },
+    "morning5_caught_fallout_2": {
+        "name": "{name}",
+        "text": "*Yuna sort la première avec les brochures, et Dain prend la porte opposée. Seoyeon récupère la feuille de présence sans me regarder.*"
+    },
+    "morning5_caught_fallout_3": {
+        "name": "{name}",
+        "text": "*Jusqu'à la fin de l'événement, nous ne parlons que pour vérifier le travail. À la dernière sonnerie, elles prennent trois escaliers différents.*"
+    },
+    "morning5_harem_fallout_1": {
+        "name": "{name}",
+        "text": "*Pendant l'événement, toutes les trois ne laissent que les messages nécessaires dans le groupe. Aucun message n'arrive dans les conversations privées.*"
+    },
+    "morning5_harem_fallout_2": {
+        "name": "Dain",
+        "text": "Même après aujourd'hui, ne nous voyons pas séparément. Tiens l'accord qu'on a passé."
+    },
+    "morning5_harem_fallout_3": {
+        "name": "{name}",
+        "text": "*Je hoche la tête. Elles franchissent le portail ensemble, et je les suis seul un peu plus tard.*"
+    },
     "morning5_counteroffer_choice": {
         "name": "{name}",
         "text": "*Quand la conversation s’achève, toutes les deux attendent une réponse.*",
@@ -664,5 +682,19 @@
     "morning5_counteroffer_gather": {
         "name": "{name}",
         "text": "*Je contacte la personne avec qui je suis resté hier soir et nous convenons de nous voir en classe. Je confirme aussi l'heure avec celle que je devais retrouver en premier. Quand elles arrivent toutes les deux, nous nous installons dans un coin de la salle.*"
+    },
+    "morning5_mood_neg": {
+        "name": "{name}",
+        "text": "La première semaine se termine. Je ferme le sac sans regarder les noms sur l'écran de verrouillage."
+    },
+    "hidden_homeroom_d5_skip": {},
+    "hidden_nurse_d5_skip": {},
+    "hidden_homeroom_d5_neg": {
+        "name": "Professeure principale",
+        "text": "*Elle range l'enveloppe du manuscrit dans le tiroir et tourne la clé.* Les entretiens personnels s'arrêtent ici. Le reste passera par l'avis de classe."
+    },
+    "hidden_nurse_d5_neg": {
+        "name": "Infirmière",
+        "text": "*Elle referme le dossier et la feuille de rendez-vous.* Soins seulement aujourd'hui. Le reste passe par le canal officiel. *Je retourne en classe.*"
     }
 }

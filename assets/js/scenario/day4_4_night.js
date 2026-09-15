@@ -694,7 +694,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": null,
         "bgm": "night2.mp3",
         "affinityChar": "Seoyeon",
-        "affinityBranches": [{"minAffinity":60,"next":"wall_seo_pre_high_1"},{"minAffinity":-100,"next":"wall_seo_pre_low_1"}]
+        "routeBeforeRender": true,
+        "affinityBranches": [{"minAffinity":60,"next":"wall_seo_pre_high_1"},{"minAffinity":0,"next":"wall_seo_pre_low_1"},{"minAffinity":-100,"next":"wall_seo_skip"}]
     },
     "wall_seo_pre_high_1": {
         "background": "assets/images/background/room_my.png",
@@ -1244,7 +1245,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": null,
         "bgm": "night2.mp3",
         "affinityChar": "Dain",
-        "affinityBranches": [{"minAffinity":60,"next":"wall_dain_pre_high_1"},{"minAffinity":-100,"next":"wall_dain_pre_low_1"}]
+        "routeBeforeRender": true,
+        "affinityBranches": [{"minAffinity":60,"next":"wall_dain_pre_high_1"},{"minAffinity":0,"next":"wall_dain_pre_low_1"},{"minAffinity":-100,"next":"wall_dain_skip"}]
     },
     "wall_dain_pre_high_1": {
         "background": "assets/images/background/room_my.png",
@@ -1870,7 +1872,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": null,
         "bgm": "night2.mp3",
         "affinityChar": "Yuna",
-        "affinityBranches": [{"minAffinity":60,"next":"wall_yuna_pre_high_1"},{"minAffinity":-100,"next":"wall_yuna_pre_low_1"}]
+        "routeBeforeRender": true,
+        "affinityBranches": [{"minAffinity":60,"next":"wall_yuna_pre_high_1"},{"minAffinity":0,"next":"wall_yuna_pre_low_1"},{"minAffinity":-100,"next":"wall_yuna_skip"}]
     },
     "wall_yuna_pre_high_1": {
         "background": "assets/images/background/room_my.png",
@@ -2586,6 +2589,21 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "forced_violation_day4_resume": {
         "routeBeforeRender": true,
         "forcedSexualViolationResume": true
+    },
+    "wall_seo_skip": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "next": "day4_night_reflect"
+    },
+    "wall_dain_skip": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "next": "day4_night_reflect"
+    },
+    "wall_yuna_skip": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "next": "day4_night_reflect"
     }
     };
     scenes.day4_student_checkin_return_home.branches = scenes.day4_student_night_branch.branches;

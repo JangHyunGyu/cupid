@@ -1,5 +1,8 @@
 {
-    "hidden_homeroom_d2_low": {"name":"Homeroom Teacher","text":"*At the teachers' office door, you run into your homeroom teacher. She turns the papers in her hand back toward her desk.* Let's not talk one-on-one today. I'll see you in class."},
+    "hidden_homeroom_d2_low": {
+        "name": "Homeroom Teacher",
+        "text": "*At the teachers' office door, you run into your homeroom teacher. She turns the papers in her hand back toward her desk.* Let's not talk one-on-one today. I'll see you in class."
+    },
     "morning2_start": {
         "name": "{name}",
         "text": "*Day two. The creases in my uniform sleeves are fainter than yesterday.*"
@@ -367,5 +370,22 @@
     "hidden_homeroom_d2_choice1_trap": {
         "name": "Homeroom Teacher",
         "text": "Being a teacher doesn't mean I have to like difficult books."
+    },
+    "morning2_greet_none_1": {
+        "name": "{name}",
+        "text": "*I open the classroom door. Nobody comes over. Only bags hitting desks.*"
+    },
+    "morning2_greet_none_2": {
+        "name": "{name}",
+        "text": "*Seoyeon turns a page in the roll. Dain faces her friends. Yuna's book is already open.*"
+    },
+    "morning2_greet_none_tone": {},
+    "morning2_greet_none_neg_1": {
+        "name": "{name}",
+        "text": "*I open the classroom door. Eyes gather for a second, then look away. Only the bags get louder.*"
+    },
+    "morning2_greet_none_neg_2": {
+        "name": "{name}",
+        "text": "*Seoyeon never looks up from the roll. Dain is already with her friends. Yuna keeps her eyes on her book.*"
     }
 }

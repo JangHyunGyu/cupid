@@ -21,10 +21,7 @@
         "text": "*C'est la première fois que je monte sur le toit. Les coups de sifflet du terrain nous parviennent d'en bas tandis que Seoyeon dispose son bento sur une chaise pliante.*"
     },
     "lunch2_seo_2b_check": {},
-    "lunch2_seo_2b": {
-        "name": "Seoyeon",
-        "text": "Tu es vraiment monté jusqu'ici. Tu ne manques pas d'audace."
-    },
+    "lunch2_seo_2b": {},
     "lunch2_seo_2b_dain": {
         "name": "Seoyeon",
         "text": "Hier tu allais vers la boutique. Aujourd'hui tu es monté jusqu'ici."
@@ -69,10 +66,7 @@
         "name": "{name}",
         "text": "*Le toit. Le même endroit qu'hier. Seoyeon ouvre son bento.*"
     },
-    "lunch2_seo_2": {
-        "name": "Seoyeon",
-        "text": "T'es revenu. Tu y as pris goût ?"
-    },
+    "lunch2_seo_2": {},
     "lunch2_seo_3": {
         "name": "{name}",
         "text": "C'était bon."
@@ -475,10 +469,7 @@
         "text": "*L'annexe de la bibliothèque. Un bâtiment plus ancien que le principal. Presque aucun élève. Je monte les escaliers et au bout du couloir, Yuna est là. Adossée au mur, un livre à la main.*"
     },
     "lunch2_yuna_intro_check": {},
-    "lunch2_yuna_3": {
-        "name": "Yuna",
-        "text": "...T'es venu."
-    },
+    "lunch2_yuna_3": {},
     "lunch2_yuna_4": {
         "name": "{name}",
         "text": "J'ai reçu ton mot."
@@ -688,5 +679,46 @@
     "lunch2_yuna_trap_exclusive": {
         "name": "Yuna",
         "text": "*Elle ramène le livre vers elle, puis le relâche lentement.* C’est à moi d’en décider."
+    },
+    "lunch2_seo_2_warm": {
+        "name": "Seoyeon",
+        "text": "Encore toi. Tu as pris le goût."
+    },
+    "lunch2_seo_2_cool": {
+        "name": "Seoyeon",
+        "text": "Tu es là. J'ouvre la boîte, une seconde."
+    },
+    "lunch2_seo_2_neg": {
+        "name": "Seoyeon",
+        "text": "*Elle n'ouvre pas la boîte et regarde la rambarde.* Travail du conseil. Ne reste pas longtemps."
+    },
+    "lunch2_seo_2b_warm": {
+        "name": "Seoyeon",
+        "text": "Tu es monté jusqu'ici. Il en faut, du cran."
+    },
+    "lunch2_seo_2b_cool": {
+        "name": "Seoyeon",
+        "text": "Le toit est sur autorisation. Exception pour aujourd'hui."
+    },
+    "lunch2_dain_tone": {},
+    "lunch2_dain_2_cool": {
+        "name": "Dain",
+        "text": "Si tu es là, mets-toi à la queue. Le pain, c'est toi qui paies."
+    },
+    "lunch2_dain_2_neg": {
+        "name": "Dain",
+        "text": "*Elle laisse un écart dans la file et fixe devant.* Pas de pari aujourd'hui. Achète et file."
+    },
+    "lunch2_yuna_3_warm": {
+        "name": "Yuna",
+        "text": "Tu es venu."
+    },
+    "lunch2_yuna_3_cool": {
+        "name": "Yuna",
+        "text": "*Elle glisse seulement le marque-page et laisse le siège à côté vide.*"
+    },
+    "lunch2_yuna_3_neg": {
+        "name": "Yuna",
+        "text": "*Pas de mot. Elle tourne seulement une page.* J'ai pas envie de parler aujourd'hui."
     }
 }

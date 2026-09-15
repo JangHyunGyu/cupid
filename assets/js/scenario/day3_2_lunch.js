@@ -151,7 +151,8 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "affinityBranches": [
             { "minAffinity": 35, "next": "lunch3_give_seo_2" },
             { "minAffinity": 15, "next": "lunch3_give_seo_dain_mid" },
-            { "minAffinity": -100, "next": "lunch3_give_seo_dain_low" }
+            { "minAffinity": 0, "next": "lunch3_give_seo_dain_low" },
+            { "minAffinity": -100, "next": "lunch3_give_seo_dain_neg" }
         ]
     },
     "lunch3_give_seo_dain_mid": {
@@ -230,7 +231,8 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "affinityBranches": [
             { "minAffinity": 35, "next": "lunch3_give_seo_3" },
             { "minAffinity": 15, "next": "lunch3_give_seo_yuna_mid" },
-            { "minAffinity": -100, "next": "lunch3_give_seo_yuna_low" }
+            { "minAffinity": 0, "next": "lunch3_give_seo_yuna_low" },
+            { "minAffinity": -100, "next": "lunch3_give_seo_yuna_neg" }
         ]
     },
     "lunch3_give_seo_yuna_mid": {
@@ -293,7 +295,8 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "affinityBranches": [
             { "minAffinity": 35, "next": "lunch3_give_dain_2" },
             { "minAffinity": 15, "next": "lunch3_give_dain_seo_mid" },
-            { "minAffinity": -100, "next": "lunch3_give_dain_seo_low" }
+            { "minAffinity": 0, "next": "lunch3_give_dain_seo_low" },
+            { "minAffinity": -100, "next": "lunch3_give_dain_seo_neg" }
         ]
     },
     "lunch3_give_dain_seo_mid": {
@@ -333,7 +336,8 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "affinityBranches": [
             { "minAffinity": 35, "next": "lunch3_dain_witness_1" },
             { "minAffinity": 15, "next": "lunch3_give_dain_yuna_mid" },
-            { "minAffinity": -100, "next": "lunch3_give_dain_yuna_low" }
+            { "minAffinity": 0, "next": "lunch3_give_dain_yuna_low" },
+            { "minAffinity": -100, "next": "lunch3_give_dain_yuna_neg" }
         ]
     },
     "lunch3_give_dain_yuna_mid": {
@@ -401,7 +405,8 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "affinityBranches": [
             { "minAffinity": 35, "next": "lunch3_give_yuna_2" },
             { "minAffinity": 15, "next": "lunch3_give_yuna_seo_mid" },
-            { "minAffinity": -100, "next": "lunch3_give_yuna_seo_low" }
+            { "minAffinity": 0, "next": "lunch3_give_yuna_seo_low" },
+            { "minAffinity": -100, "next": "lunch3_give_yuna_seo_neg" }
         ]
     },
     "lunch3_give_yuna_seo_mid": {
@@ -442,7 +447,8 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "affinityBranches": [
             { "minAffinity": 35, "next": "lunch3_give_yuna_3" },
             { "minAffinity": 15, "next": "lunch3_give_yuna_dain_mid" },
-            { "minAffinity": -100, "next": "lunch3_give_yuna_dain_low" }
+            { "minAffinity": 0, "next": "lunch3_give_yuna_dain_low" },
+            { "minAffinity": -100, "next": "lunch3_give_yuna_dain_neg" }
         ]
     },
     "lunch3_give_yuna_dain_mid": {
@@ -645,6 +651,36 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/room_school.png",
         "character": null,
         "next": "after3_start"
+    },
+    "lunch3_give_seo_dain_neg": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "lunch3_give_seo_3_check"
+    },
+    "lunch3_give_seo_yuna_neg": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/yuna_bored.png",
+        "next": "lunch3_end"
+    },
+    "lunch3_give_dain_seo_neg": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "lunch3_give_dain_3_check"
+    },
+    "lunch3_give_dain_yuna_neg": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/yuna_bored.png",
+        "next": "lunch3_end"
+    },
+    "lunch3_give_yuna_seo_neg": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "lunch3_give_yuna_3_check"
+    },
+    "lunch3_give_yuna_dain_neg": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "lunch3_end"
     }
     };
     for (const scene of Object.values(scenes)) {

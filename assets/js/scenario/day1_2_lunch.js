@@ -54,7 +54,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "character": "assets/images/characters/seyoun_normal.png",
         "bgm": "daily.mp3",
         "affinityChar": "Seoyeon",
-        "affinityBranches": [{"minAffinity":4,"next":"lunch_seo_1_aff_high"},{"minAffinity":-100,"next":"lunch_seo_1_aff_default"}],
+        "affinityBranches": [{"minAffinity":4,"next":"lunch_seo_1_aff_high"},{"minAffinity":0,"next":"lunch_seo_1_aff_default"},{"minAffinity":-100,"next":"lunch_seo_1_aff_neg"}],
         "next": "lunch_seo_1_aff_default"
     },
     "lunch_seo_1_aff_high": {
@@ -599,6 +599,11 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "background": "assets/images/background/school_hallway.png",
         "character": null,
         "next": "after_start"
+    },
+    "lunch_seo_1_aff_neg": {
+        "background": "assets/images/background/top_school.png",
+        "character": "assets/images/characters/seyoun_pout.png",
+        "next": "lunch_seo_2"
     }
     };
     for (const scene of Object.values(scenes)) {

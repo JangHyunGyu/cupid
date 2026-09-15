@@ -21,10 +21,7 @@
         "text": "*É a primeira vez que subo ao terraço. Da quadra, abaixo da grade, chega o som de um apito. Seoyeon abre a marmita sobre uma cadeira dobrável.*"
     },
     "lunch2_seo_2b_check": {},
-    "lunch2_seo_2b": {
-        "name": "Seoyeon",
-        "text": "Subiu até aqui. Corajoso."
-    },
+    "lunch2_seo_2b": {},
     "lunch2_seo_2b_dain": {
         "name": "Seoyeon",
         "text": "Ontem foi pra cantina. Hoje subiu pra cá."
@@ -69,10 +66,7 @@
         "name": "{name}",
         "text": "*O terraço. Mesmo lugar de ontem. Seoyeon está abrindo a marmita.*"
     },
-    "lunch2_seo_2": {
-        "name": "Seoyeon",
-        "text": "Voltou. Gostou do lugar?"
-    },
+    "lunch2_seo_2": {},
     "lunch2_seo_3": {
         "name": "{name}",
         "text": "A comida era boa."
@@ -475,10 +469,7 @@
         "text": "*O anexo da biblioteca. Um prédio mais antigo que o principal. Quase sem alunos. Subo as escadas e no fim do corredor, Yuna está ali. Encostada na parede, lendo um livro.*"
     },
     "lunch2_yuna_intro_check": {},
-    "lunch2_yuna_3": {
-        "name": "Yuna",
-        "text": "...Veio."
-    },
+    "lunch2_yuna_3": {},
     "lunch2_yuna_4": {
         "name": "{name}",
         "text": "Recebi seu bilhete."
@@ -688,5 +679,46 @@
     "lunch2_yuna_trap_exclusive": {
         "name": "Yuna",
         "text": "*Ela puxa o livro para si e depois o solta devagar.* Isso quem decide sou eu."
+    },
+    "lunch2_seo_2_warm": {
+        "name": "Seoyeon",
+        "text": "De novo. Já pegou o gosto."
+    },
+    "lunch2_seo_2_cool": {
+        "name": "Seoyeon",
+        "text": "Você veio. Espera eu abrir a marmita."
+    },
+    "lunch2_seo_2_neg": {
+        "name": "Seoyeon",
+        "text": "*Ela não abre a marmita e olha só o parapeito.* Trabalho do grêmio. Não fica muito."
+    },
+    "lunch2_seo_2b_warm": {
+        "name": "Seoyeon",
+        "text": "Subiu até aqui. Precisa de coragem."
+    },
+    "lunch2_seo_2b_cool": {
+        "name": "Seoyeon",
+        "text": "O terraço é com permissão. Hoje faço uma exceção."
+    },
+    "lunch2_dain_tone": {},
+    "lunch2_dain_2_cool": {
+        "name": "Dain",
+        "text": "Se veio, entra na fila. O pão você paga, né."
+    },
+    "lunch2_dain_2_neg": {
+        "name": "Dain",
+        "text": "*Ela deixa um espaço na fila e olha pra frente.* Hoje sem aposta. Compra e vai."
+    },
+    "lunch2_yuna_3_warm": {
+        "name": "Yuna",
+        "text": "Você veio."
+    },
+    "lunch2_yuna_3_cool": {
+        "name": "Yuna",
+        "text": "*Ela só enfia o marcador e deixa o lugar do lado vazio.*"
+    },
+    "lunch2_yuna_3_neg": {
+        "name": "Yuna",
+        "text": "*Não entrega bilhete. Só vira uma página.* Hoje não quero conversa."
     }
 }

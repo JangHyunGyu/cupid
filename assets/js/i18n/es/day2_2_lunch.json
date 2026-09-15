@@ -21,10 +21,7 @@
         "text": "*Es la primera vez que subo a la azotea. Desde la cancha, debajo de la barandilla, llega el sonido de un silbato. Seoyeon extiende la comida sobre una silla plegable.*"
     },
     "lunch2_seo_2b_check": {},
-    "lunch2_seo_2b": {
-        "name": "Seoyeon",
-        "text": "Mira, te animaste a subir. Valiente."
-    },
+    "lunch2_seo_2b": {},
     "lunch2_seo_2b_dain": {
         "name": "Seoyeon",
         "text": "Ayer ibas a la tienda. Hoy subiste hasta aquí."
@@ -69,10 +66,7 @@
         "name": "{name}",
         "text": "*La azotea. El mismo lugar que ayer. Seoyeon está abriendo su lonchera.*"
     },
-    "lunch2_seo_2": {
-        "name": "Seoyeon",
-        "text": "Otra vez por aquí. Le tomaste el gusto, ¿eh?"
-    },
+    "lunch2_seo_2": {},
     "lunch2_seo_3": {
         "name": "{name}",
         "text": "La comida estaba rica."
@@ -475,10 +469,7 @@
         "text": "*Anexo de la biblioteca. El edificio es más viejo que el principal. Apenas hay estudiantes. Subo las escaleras y, al fondo del pasillo, Yuna. Apoyada en la pared, leyendo.*"
     },
     "lunch2_yuna_intro_check": {},
-    "lunch2_yuna_3": {
-        "name": "Yuna",
-        "text": "...Has venido."
-    },
+    "lunch2_yuna_3": {},
     "lunch2_yuna_4": {
         "name": "{name}",
         "text": "Me llegó tu nota."
@@ -688,5 +679,46 @@
     "lunch2_yuna_trap_exclusive": {
         "name": "Yuna",
         "text": "*Atrae el libro hacia sí y luego lo suelta despacio.* Eso lo decido yo."
+    },
+    "lunch2_seo_2_warm": {
+        "name": "Seoyeon",
+        "text": "Otra vez. Ya te está gustando esto."
+    },
+    "lunch2_seo_2_cool": {
+        "name": "Seoyeon",
+        "text": "Viniste. Espera, abro el táper."
+    },
+    "lunch2_seo_2_neg": {
+        "name": "Seoyeon",
+        "text": "*No abre el táper y mira la barandilla.* Trabajo del consejo. No te quedes mucho."
+    },
+    "lunch2_seo_2b_warm": {
+        "name": "Seoyeon",
+        "text": "Has subido hasta aquí. Hay que tener valor."
+    },
+    "lunch2_seo_2b_cool": {
+        "name": "Seoyeon",
+        "text": "La azotea es con permiso. Hoy haré una excepción."
+    },
+    "lunch2_dain_tone": {},
+    "lunch2_dain_2_cool": {
+        "name": "Dain",
+        "text": "Si viniste, ponte en la cola. El pan lo pagas tú, ¿no?"
+    },
+    "lunch2_dain_2_neg": {
+        "name": "Dain",
+        "text": "*Deja un hueco en la cola y mira al frente.* Hoy no hay apuesta. Compra y vete."
+    },
+    "lunch2_yuna_3_warm": {
+        "name": "Yuna",
+        "text": "Viniste."
+    },
+    "lunch2_yuna_3_cool": {
+        "name": "Yuna",
+        "text": "*Solo mete el marcapáginas y deja el asiento de al lado libre.*"
+    },
+    "lunch2_yuna_3_neg": {
+        "name": "Yuna",
+        "text": "*No da ningún recado. Solo pasa una página.* Hoy no quiero hablar."
     }
 }

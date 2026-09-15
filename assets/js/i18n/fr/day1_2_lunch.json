@@ -467,5 +467,9 @@
     "lunch_dain_trap_1": {
         "name": "Dain",
         "text": "Si ça ne t'intéresse pas, dis-le. Je déteste encore plus qu'on fasse semblant."
+    },
+    "lunch_seo_1_aff_neg": {
+        "name": "Seoyeon",
+        "text": "*Elle écarte une chaise et pose seulement son bloc-notes.* Travail du conseil. Assieds-toi si tu restes."
     }
 }

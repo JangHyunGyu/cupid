@@ -634,12 +634,30 @@
         "name": "{name}",
         "text": "*Auch meiner jetzigen Klassenleitung schreibe ich: „Ich möchte über etwas sprechen, das ich an meiner alten Schule absichtlich ignoriert habe.“ Bis die Festivalansage beginnt, lasse ich beide Nachrichten auf dem Bildschirm stehen.*"
     },
-    "morning5_caught_fallout_1": {"name":"{name}","text":"*Vor Beginn der Veranstaltung sitzen die drei weit voneinander entfernt. Auf dem Aufgabenblatt stehen nur die notwendigen Arbeiten.*"},
-    "morning5_caught_fallout_2": {"name":"{name}","text":"*Yuna geht zuerst mit den Broschüren hinaus, und Dain nimmt die andere Tür. Seoyeon holt die Anwesenheitsliste, ohne zu mir zu sehen.*"},
-    "morning5_caught_fallout_3": {"name":"{name}","text":"*Bis zum Ende der Veranstaltung reden wir nur über die Arbeit. Beim letzten Klingeln nehmen sie drei verschiedene Treppen.*"},
-    "morning5_harem_fallout_1": {"name":"{name}","text":"*Während der Veranstaltung schreiben die drei nur das Nötigste in den Gruppenchat. In den privaten Chats kommt nichts Neues an.*"},
-    "morning5_harem_fallout_2": {"name":"Dain","text":"Auch nach heute treffen wir uns nicht einzeln. Halt dich an unsere Abmachung."},
-    "morning5_harem_fallout_3": {"name":"{name}","text":"*Ich nicke. Die drei verlassen gemeinsam das Schultor, und etwas später gehe ich allein hinterher.*"},
+    "morning5_caught_fallout_1": {
+        "name": "{name}",
+        "text": "*Vor Beginn der Veranstaltung sitzen die drei weit voneinander entfernt. Auf dem Aufgabenblatt stehen nur die notwendigen Arbeiten.*"
+    },
+    "morning5_caught_fallout_2": {
+        "name": "{name}",
+        "text": "*Yuna geht zuerst mit den Broschüren hinaus, und Dain nimmt die andere Tür. Seoyeon holt die Anwesenheitsliste, ohne zu mir zu sehen.*"
+    },
+    "morning5_caught_fallout_3": {
+        "name": "{name}",
+        "text": "*Bis zum Ende der Veranstaltung reden wir nur über die Arbeit. Beim letzten Klingeln nehmen sie drei verschiedene Treppen.*"
+    },
+    "morning5_harem_fallout_1": {
+        "name": "{name}",
+        "text": "*Während der Veranstaltung schreiben die drei nur das Nötigste in den Gruppenchat. In den privaten Chats kommt nichts Neues an.*"
+    },
+    "morning5_harem_fallout_2": {
+        "name": "Dain",
+        "text": "Auch nach heute treffen wir uns nicht einzeln. Halt dich an unsere Abmachung."
+    },
+    "morning5_harem_fallout_3": {
+        "name": "{name}",
+        "text": "*Ich nicke. Die drei verlassen gemeinsam das Schultor, und etwas später gehe ich allein hinterher.*"
+    },
     "morning5_counteroffer_choice": {
         "name": "{name}",
         "text": "*Als das Gespräch endet, warten beide auf eine Antwort.*",
@@ -664,5 +682,19 @@
     "morning5_counteroffer_gather": {
         "name": "{name}",
         "text": "*Ich kontaktiere die Person, bei der ich gestern Abend geblieben bin, und verabrede mich mit ihr im Klassenraum. Auch mit der Person, der ich zuerst zugesagt hatte, kläre ich die Uhrzeit. Als beide kommen, setzen wir uns in eine Ecke des Raums.*"
+    },
+    "morning5_mood_neg": {
+        "name": "{name}",
+        "text": "Die erste Woche endet. Ich ziehe den Reißverschluss zu, ohne auf die Namen auf dem Sperrbildschirm zu sehen."
+    },
+    "hidden_homeroom_d5_skip": {},
+    "hidden_nurse_d5_skip": {},
+    "hidden_homeroom_d5_neg": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie legt den Manuskriptumschlag in die Schublade und dreht den Schlüssel.* Persönliche Gespräche enden hier. Der Rest geht nur noch als Klassenhinweis raus."
+    },
+    "hidden_nurse_d5_neg": {
+        "name": "Schulkrankenschwester",
+        "text": "*Sie klappt die Kartei zu und die Terminliste.* Heute nur Behandlung. Persönliches über den Dienstweg. *Ich gehe zurück in die Klasse.*"
     }
 }
