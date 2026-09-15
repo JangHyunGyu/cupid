@@ -182,6 +182,14 @@
         "name": "{name}",
         "text": "*帰ろうとして、教室に最後まで残って出席簿を整理していた担任を思い出す。職員室の前でノックして、ドアを開ける。*"
     },
+    "after_hidden_homeroom_cool": {
+        "name": "担任の先生",
+        "text": "*出席簿を閉じないまま、ドアのほうだけ見る。* 今は出席整理中。明日、教室でしよう。"
+    },
+    "after_hidden_homeroom_neg": {
+        "name": "担任の先生",
+        "text": "*クリップボードを胸にしまう。* 下校時間だ。また明日。"
+    },
     "after_hidden_homeroom_2": {
         "name": "担任の先生",
         "text": "あれ、{name}？　どうしたの？"
@@ -340,6 +348,14 @@
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
         "text": "*ドアの前で一度、息を整えて取っ手に手をかける。金属が冷たい。*"
+    },
+    "after_nurse_d1_cool": {
+        "name": "保健室の先生",
+        "text": "*カルテを閉じる。* 今は片付け中。どこも痛くないなら戻って。"
+    },
+    "after_nurse_d1_neg": {
+        "name": "保健室の先生",
+        "text": "*予約表を閉じる。* 今日はここまで。帰りなさい。"
     },
     "after_nurse_enter_1": {
         "name": "{name}",

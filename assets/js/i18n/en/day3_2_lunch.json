@@ -72,6 +72,14 @@
         "name": "Seoyeon",
         "text": "Thanks. You really are thoughtful."
     },
+    "lunch3_give_seo_cool": {
+        "name": "Seoyeon",
+        "text": "I'll take it."
+    },
+    "lunch3_give_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*She puts her chopsticks down.* I'm fine."
+    },
     "lunch3_seo_skin_check": {},
     "lunch3_seo_skin_1": {
         "name": "{name}",
@@ -131,6 +139,14 @@
         "name": "Dain",
         "text": "Really? Thanks! {name}, you've got good instincts."
     },
+    "lunch3_give_dain_cool": {
+        "name": "Dain",
+        "text": "Okay. I'll eat it."
+    },
+    "lunch3_give_dain_neg": {
+        "name": "Dain",
+        "text": "*She picks up only her water bottle.* I'm good."
+    },
     "lunch3_dain_skin_check": {},
     "lunch3_dain_skin_1": {
         "name": "{name}",
@@ -156,6 +172,10 @@
     "lunch3_give_yuna_1": {
         "name": "Yuna",
         "text": "Thanks."
+    },
+    "lunch3_give_yuna_neg": {
+        "name": "Yuna",
+        "text": "*She folds the bread bag.* I'm okay."
     },
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {
@@ -308,6 +328,14 @@
     "lunch3_share_1": {
         "name": "{name}",
         "text": "*When I suggest sharing, all three laugh. Even after the laughter stops, no one's chopsticks reach the rolled omelette first.*"
+    },
+    "lunch3_share_cool": {
+        "name": "{name}",
+        "text": "*I set the last piece in the middle. The three of them split it, but nobody laughs.*"
+    },
+    "lunch3_share_neg": {
+        "name": "{name}",
+        "text": "*I put the egg roll in the middle. Nobody reaches. One of them has already closed her lunch box.*"
     },
     "lunch3_share_solo": {
         "name": "{name}",

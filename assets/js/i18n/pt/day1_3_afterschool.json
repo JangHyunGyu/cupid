@@ -182,6 +182,14 @@
         "name": "{name}",
         "text": "*Quando estou prestes a ir embora, lembro da professora, que ficou na sala até o fim organizando o diário de classe. Bato diante da sala dos professores e abro a porta.*"
     },
+    "after_hidden_homeroom_cool": {
+        "name": "Professora",
+        "text": "*Ela não fecha o diário, só olha para a porta.* Ainda estou na chamada. Amanhã na sala."
+    },
+    "after_hidden_homeroom_neg": {
+        "name": "Professora",
+        "text": "*Ela guarda a prancheta no peito.* Hora de ir. Até amanhã."
+    },
     "after_hidden_homeroom_2": {
         "name": "Professora",
         "text": "Ah, {name}? — Que foi?"
@@ -340,6 +348,14 @@
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
         "text": "*Paro na frente da porta, respiro fundo e ponho a mão na maçaneta. O metal gelado encosta na palma.*"
+    },
+    "after_nurse_d1_cool": {
+        "name": "Enfermeira",
+        "text": "*Ela fecha a ficha.* Estou arrumando. Se não dói nada, volta."
+    },
+    "after_nurse_d1_neg": {
+        "name": "Enfermeira",
+        "text": "*Ela fecha a agenda.* Por hoje chega. Vai embora."
     },
     "after_nurse_enter_1": {
         "name": "{name}",

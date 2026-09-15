@@ -72,6 +72,14 @@
         "name": "Seoyeon",
         "text": "...Merci. T’as le coup d’œil."
     },
+    "lunch3_give_seo_cool": {
+        "name": "Seoyeon",
+        "text": "Je prends."
+    },
+    "lunch3_give_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Elle pose ses baguettes.* C’est bon."
+    },
     "lunch3_seo_skin_check": {},
     "lunch3_seo_skin_1": {
         "name": "{name}",
@@ -131,6 +139,14 @@
         "name": "Dain",
         "text": "Sérieux ? Merci ! {name}, tu as un bon instinct."
     },
+    "lunch3_give_dain_cool": {
+        "name": "Dain",
+        "text": "Ok. Je mange."
+    },
+    "lunch3_give_dain_neg": {
+        "name": "Dain",
+        "text": "*Elle ne prend que sa bouteille.* J’ai plus faim."
+    },
     "lunch3_dain_skin_check": {},
     "lunch3_dain_skin_1": {
         "name": "{name}",
@@ -156,6 +172,10 @@
     "lunch3_give_yuna_1": {
         "name": "Yuna",
         "text": "...Merci."
+    },
+    "lunch3_give_yuna_neg": {
+        "name": "Yuna",
+        "text": "*Elle plie le sachet.* Ça va."
     },
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {
@@ -308,6 +328,14 @@
     "lunch3_share_1": {
         "name": "{name}",
         "text": "*Quand je propose de le partager, elles sourient toutes les trois. Même une fois leurs rires retombés, aucune paire de baguettes ne touche la première l'omelette roulée.*"
+    },
+    "lunch3_share_cool": {
+        "name": "{name}",
+        "text": "*Je mets le dernier morceau au milieu. Elles se le partagent, sans rire.*"
+    },
+    "lunch3_share_neg": {
+        "name": "{name}",
+        "text": "*Je pose l’omelette au milieu. Personne n’avance les baguettes. L’une a déjà refermé sa boîte.*"
     },
     "lunch3_share_solo": {
         "name": "{name}",

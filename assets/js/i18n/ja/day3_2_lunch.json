@@ -72,6 +72,14 @@
         "name": "ソヨン",
         "text": "……ありがと。やっぱりセンスあるね。"
     },
+    "lunch3_give_seo_cool": {
+        "name": "ソヨン",
+        "text": "もらう。"
+    },
+    "lunch3_give_seo_neg": {
+        "name": "ソヨン",
+        "text": "*箸を置く。* いい。"
+    },
     "lunch3_seo_skin_check": {},
     "lunch3_seo_skin_1": {
         "name": "{name}",
@@ -131,6 +139,14 @@
         "name": "ダイン",
         "text": "ほんと？　ありがとう！　{name}、センスある！"
     },
+    "lunch3_give_dain_cool": {
+        "name": "ダイン",
+        "text": "うん。食べる。"
+    },
+    "lunch3_give_dain_neg": {
+        "name": "ダイン",
+        "text": "*水筒だけ持つ。* 私はいい。"
+    },
     "lunch3_dain_skin_check": {},
     "lunch3_dain_skin_1": {
         "name": "{name}",
@@ -156,6 +172,10 @@
     "lunch3_give_yuna_1": {
         "name": "ユナ",
         "text": "ありがとう。"
+    },
+    "lunch3_give_yuna_neg": {
+        "name": "ユナ",
+        "text": "*パンの袋を折る。* 大丈夫。"
     },
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {
@@ -308,6 +328,14 @@
     "lunch3_share_1": {
         "name": "{name}",
         "text": "*みんなで分けて食べようと言うと、三人が笑う。笑いが途切れたあとも、誰の箸も先に卵焼きへ伸びない。*"
+    },
+    "lunch3_share_cool": {
+        "name": "{name}",
+        "text": "*最後の一切れを真ん中に置く。三人で分けるが、笑いはない。*"
+    },
+    "lunch3_share_neg": {
+        "name": "{name}",
+        "text": "*卵焼きを真ん中に置くと、箸が動かない。もう弁当箱を閉じている人がいる。*"
     },
     "lunch3_share_solo": {
         "name": "{name}",

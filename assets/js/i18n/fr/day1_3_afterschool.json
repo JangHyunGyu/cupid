@@ -182,6 +182,14 @@
         "name": "{name}",
         "text": "*Sur le point de rentrer, je repense à la professeure principale, restée la dernière en classe pour ranger le registre d'appel. Devant la salle des profs, je frappe avant d'ouvrir la porte.*"
     },
+    "after_hidden_homeroom_cool": {
+        "name": "Professeure principale",
+        "text": "*Elle ne ferme pas le registre, elle regarde juste vers la porte.* Je suis encore sur l’appel. Demain, en classe."
+    },
+    "after_hidden_homeroom_neg": {
+        "name": "Professeure principale",
+        "text": "*Elle serre le presse-papiers contre elle.* C’est l’heure de rentrer. À demain."
+    },
     "after_hidden_homeroom_2": {
         "name": "Professeure principale",
         "text": "Oh, {name} ? Qu'est-ce qu'il y a ?"
@@ -340,6 +348,14 @@
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
         "text": "*Devant la porte, je reprends mon souffle et pose la main sur la poignée. Le métal est froid.*"
+    },
+    "after_nurse_d1_cool": {
+        "name": "Infirmière",
+        "text": "*Elle referme le dossier.* Je range. Si tu n’as mal nulle part, rentre."
+    },
+    "after_nurse_d1_neg": {
+        "name": "Infirmière",
+        "text": "*Elle ferme le cahier de rendez-vous.* C’est tout pour aujourd’hui. Rentre."
     },
     "after_nurse_enter_1": {
         "name": "{name}",

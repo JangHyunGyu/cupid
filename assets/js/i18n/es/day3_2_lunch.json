@@ -72,6 +72,14 @@
         "name": "Seoyeon",
         "text": "...Gracias. Se nota que tienes buen ojo."
     },
+    "lunch3_give_seo_cool": {
+        "name": "Seoyeon",
+        "text": "Lo cojo."
+    },
+    "lunch3_give_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Baja los palillos.* Pasa."
+    },
     "lunch3_seo_skin_check": {},
     "lunch3_seo_skin_1": {
         "name": "{name}",
@@ -131,6 +139,14 @@
         "name": "Dain",
         "text": "¿En serio? Gracias. {name}, sí que tienes buen ojo."
     },
+    "lunch3_give_dain_cool": {
+        "name": "Dain",
+        "text": "Vale. Me lo como."
+    },
+    "lunch3_give_dain_neg": {
+        "name": "Dain",
+        "text": "*Coge solo el botellín.* Yo paso."
+    },
     "lunch3_dain_skin_check": {},
     "lunch3_dain_skin_1": {
         "name": "{name}",
@@ -156,6 +172,10 @@
     "lunch3_give_yuna_1": {
         "name": "Yuna",
         "text": "...Gracias."
+    },
+    "lunch3_give_yuna_neg": {
+        "name": "Yuna",
+        "text": "*Dobla la bolsa del pan.* Estoy bien."
     },
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {
@@ -308,6 +328,14 @@
     "lunch3_share_1": {
         "name": "{name}",
         "text": "*Cuando propongo compartirlo, las tres sonríen. Incluso después de que las risas terminan, nadie acerca primero los palillos a la tortilla enrollada.*"
+    },
+    "lunch3_share_cool": {
+        "name": "{name}",
+        "text": "*Dejo el último trozo en el centro. Lo parten las tres, pero nadie ríe.*"
+    },
+    "lunch3_share_neg": {
+        "name": "{name}",
+        "text": "*Pongo la tortilla en el centro. Nadie alarga los palillos. Una ya ha cerrado el táper.*"
     },
     "lunch3_share_solo": {
         "name": "{name}",

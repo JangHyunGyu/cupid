@@ -101,15 +101,37 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_bored.png",
         "choices": [
-            { "next": "lunch3_give_seo_1" },
-            { "next": "lunch3_give_dain_1" },
-            { "next": "lunch3_give_yuna_1" },
-            { "next": "lunch3_share_1" }
+            { "next": "lunch3_give_seo_aff" },
+            { "next": "lunch3_give_dain_aff" },
+            { "next": "lunch3_give_yuna_aff" },
+            { "next": "lunch3_share_tone" }
         ]
+    },
+    "lunch3_give_seo_aff": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "affinityChar": "Seoyeon",
+        "routeBeforeRender": true,
+        "affinityBranches": [{"minAffinity":10,"next":"lunch3_give_seo_1"},{"minAffinity":0,"next":"lunch3_give_seo_cool"},{"minAffinity":-19,"next":"lunch3_give_seo_cool"},{"minAffinity":-100,"next":"lunch3_give_seo_neg"}],
+        "next": "lunch3_give_seo_neg"
     },
     "lunch3_give_seo_1": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
+        "setFlags": ["lunch3_gave_seoyeon"],
+        "stats": {"Seoyeon":{"affinity":4}},
+        "next": "lunch3_seo_skin_check"
+    },
+    "lunch3_give_seo_cool": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "setFlags": ["lunch3_gave_seoyeon"],
+        "stats": {"Seoyeon":{"affinity":4}},
+        "next": "lunch3_seo_skin_check"
+    },
+    "lunch3_give_seo_neg": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_pout.png",
         "setFlags": ["lunch3_gave_seoyeon"],
         "stats": {"Seoyeon":{"affinity":4}},
         "next": "lunch3_seo_skin_check"
@@ -258,9 +280,31 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             { "next": "lunch3_end" }
         ]
     },
+    "lunch3_give_dain_aff": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "affinityChar": "Dain",
+        "routeBeforeRender": true,
+        "affinityBranches": [{"minAffinity":10,"next":"lunch3_give_dain_1"},{"minAffinity":0,"next":"lunch3_give_dain_cool"},{"minAffinity":-19,"next":"lunch3_give_dain_cool"},{"minAffinity":-100,"next":"lunch3_give_dain_neg"}],
+        "next": "lunch3_give_dain_neg"
+    },
     "lunch3_give_dain_1": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_laugh.png",
+        "setFlags": ["lunch3_gave_dain"],
+        "stats": {"Dain":{"affinity":5}},
+        "next": "lunch3_dain_skin_check"
+    },
+    "lunch3_give_dain_cool": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "setFlags": ["lunch3_gave_dain"],
+        "stats": {"Dain":{"affinity":5}},
+        "next": "lunch3_dain_skin_check"
+    },
+    "lunch3_give_dain_neg": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/dain_pout.png",
         "setFlags": ["lunch3_gave_dain"],
         "stats": {"Dain":{"affinity":5}},
         "next": "lunch3_dain_skin_check"
@@ -365,9 +409,24 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             { "next": "lunch3_end" }
         ]
     },
+    "lunch3_give_yuna_aff": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "affinityChar": "Yuna",
+        "routeBeforeRender": true,
+        "affinityBranches": [{"minAffinity":0,"next":"lunch3_give_yuna_1"},{"minAffinity":-19,"next":"lunch3_give_yuna_1"},{"minAffinity":-100,"next":"lunch3_give_yuna_neg"}],
+        "next": "lunch3_give_yuna_neg"
+    },
     "lunch3_give_yuna_1": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_normal.png",
+        "setFlags": ["lunch3_gave_yuna"],
+        "stats": {"Yuna":{"affinity":5}},
+        "next": "lunch3_yuna_skin_check"
+    },
+    "lunch3_give_yuna_neg": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/yuna_bored.png",
         "setFlags": ["lunch3_gave_yuna"],
         "stats": {"Yuna":{"affinity":5}},
         "next": "lunch3_yuna_skin_check"
@@ -634,6 +693,15 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/seyoun_angry.png",
         "next": "lunch3_end"
     },
+    "lunch3_share_tone": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "affinityChar": "selectByHighestAffinity",
+        "affinityCandidates": ["Seoyeon", "Yuna", "Dain"],
+        "routeBeforeRender": true,
+        "affinityBranches": [{"minAffinity":10,"next":"lunch3_share_1"},{"minAffinity":0,"next":"lunch3_share_cool"},{"minAffinity":-19,"next":"lunch3_share_cool"},{"minAffinity":-100,"next":"lunch3_share_neg"}],
+        "next": "lunch3_share_neg"
+    },
     "lunch3_share_1": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_bored.png",
@@ -641,6 +709,16 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             { "condition": "day3_has_multiple_dates", "next": "lunch3_harem_1" },
             { "next": "lunch3_share_solo" }
         ]
+    },
+    "lunch3_share_cool": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "lunch3_end"
+    },
+    "lunch3_share_neg": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/yuna_bored.png",
+        "next": "lunch3_end"
     },
     "lunch3_share_solo": {
         "background": "assets/images/background/room_school.png",

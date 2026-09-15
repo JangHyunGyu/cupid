@@ -182,6 +182,14 @@
         "name": "{name}",
         "text": "*Ich will gerade nach Hause gehen, als mir meine Klassenlehrerin einfällt. Sie war bis zuletzt im Klassenzimmer geblieben und hatte das Klassenbuch geordnet. Vor dem Lehrerzimmer klopfe ich und öffne die Tür.*"
     },
+    "after_hidden_homeroom_cool": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie klappt das Klassenbuch nicht zu, schaut nur zur Tür.* Ich bin noch bei der Anwesenheit. Morgen im Unterricht."
+    },
+    "after_hidden_homeroom_neg": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie nimmt das Klemmbrett an sich.* Schulschluss. Bis morgen."
+    },
     "after_hidden_homeroom_2": {
         "name": "Klassenlehrerin",
         "text": "Oh, {name}? Was gibt's?"
@@ -340,6 +348,14 @@
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
         "text": "*Vor der Tür bleibe ich stehen, atme einmal durch und lege die Hand auf die Klinke. Das Metall ist kalt.*"
+    },
+    "after_nurse_d1_cool": {
+        "name": "Schulkrankenschwester",
+        "text": "*Sie klappt die Kartei zu.* Ich räume gerade. Wenn nichts wehtut, geh zurück."
+    },
+    "after_nurse_d1_neg": {
+        "name": "Schulkrankenschwester",
+        "text": "*Sie schließt den Terminplan.* Für heute reicht's. Geh nach Hause."
     },
     "after_nurse_enter_1": {
         "name": "{name}",

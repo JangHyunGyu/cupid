@@ -72,6 +72,14 @@
         "name": "Seoyeon",
         "text": "Danke. Du bist wirklich aufmerksam."
     },
+    "lunch3_give_seo_cool": {
+        "name": "Seoyeon",
+        "text": "Ich nehm's."
+    },
+    "lunch3_give_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Sie legt die Stäbchen hin.* Passt schon."
+    },
     "lunch3_seo_skin_check": {},
     "lunch3_seo_skin_1": {
         "name": "{name}",
@@ -131,6 +139,14 @@
         "name": "Dain",
         "text": "Echt? Danke! {name}, du bist der Beste!"
     },
+    "lunch3_give_dain_cool": {
+        "name": "Dain",
+        "text": "Okay. Ich ess's."
+    },
+    "lunch3_give_dain_neg": {
+        "name": "Dain",
+        "text": "*Sie nimmt nur die Flasche.* Ich bin satt."
+    },
     "lunch3_dain_skin_check": {},
     "lunch3_dain_skin_1": {
         "name": "{name}",
@@ -156,6 +172,10 @@
     "lunch3_give_yuna_1": {
         "name": "Yuna",
         "text": "Danke."
+    },
+    "lunch3_give_yuna_neg": {
+        "name": "Yuna",
+        "text": "*Sie faltet die Tüte.* Ist gut."
     },
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {
@@ -308,6 +328,14 @@
     "lunch3_share_1": {
         "name": "{name}",
         "text": "*Als ich vorschlage, dass wir alle teilen, lachen die drei. Selbst nachdem das Lachen verstummt, rührt niemand als Erstes mit den Stäbchen die Eierrolle an.*"
+    },
+    "lunch3_share_cool": {
+        "name": "{name}",
+        "text": "*Ich lege das letzte Stück in die Mitte. Sie teilen es, aber niemand lacht.*"
+    },
+    "lunch3_share_neg": {
+        "name": "{name}",
+        "text": "*Ich stelle die Eierrolle in die Mitte. Niemand greift zu. Eine hat die Box schon geschlossen.*"
     },
     "lunch3_share_solo": {
         "name": "{name}",

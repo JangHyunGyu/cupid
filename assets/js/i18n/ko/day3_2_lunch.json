@@ -72,6 +72,14 @@
         "name": "서연",
         "text": "고마워. 역시 너는 센스가 있어."
     },
+    "lunch3_give_seo_cool": {
+        "name": "서연",
+        "text": "받을게."
+    },
+    "lunch3_give_seo_neg": {
+        "name": "서연",
+        "text": "*젓가락을 내려놓는다.* 됐어."
+    },
     "lunch3_seo_skin_check": {},
     "lunch3_seo_skin_1": {
         "name": "{name}",
@@ -131,6 +139,14 @@
         "name": "다인",
         "text": "진짜? 고마워. {name}, 너 센스 있다."
     },
+    "lunch3_give_dain_cool": {
+        "name": "다인",
+        "text": "그래. 먹을게."
+    },
+    "lunch3_give_dain_neg": {
+        "name": "다인",
+        "text": "*물병만 집어 든다.* 난 됐어."
+    },
     "lunch3_dain_skin_check": {},
     "lunch3_dain_skin_1": {
         "name": "{name}",
@@ -156,6 +172,10 @@
     "lunch3_give_yuna_1": {
         "name": "유나",
         "text": "고마워."
+    },
+    "lunch3_give_yuna_neg": {
+        "name": "유나",
+        "text": "*빵 봉지를 접는다.* 괜찮아."
     },
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {
@@ -308,6 +328,14 @@
     "lunch3_share_1": {
         "name": "{name}",
         "text": "*다 같이 나눠 먹자고 하자 셋이 웃는다. 웃음이 끊긴 뒤에도 누구의 젓가락도 먼저 계란말이에 닿지 않는다.*"
+    },
+    "lunch3_share_cool": {
+        "name": "{name}",
+        "text": "*마지막 조각을 가운데 둔다. 셋이 나눠 가지지만 웃음은 없다.*"
+    },
+    "lunch3_share_neg": {
+        "name": "{name}",
+        "text": "*계란말이를 가운데 두자 젓가락이 움직이지 않는다. 한 사람은 이미 뚜껑을 닫는다.*"
     },
     "lunch3_share_solo": {
         "name": "{name}",

@@ -182,6 +182,14 @@
         "name": "{name}",
         "text": "*하교하려다 아까 교실에 마지막까지 남아 출석부를 정리하던 담임을 생각한다. 교무실 앞에서 노크한 뒤 문을 연다.*"
     },
+    "after_hidden_homeroom_cool": {
+        "name": "담임",
+        "text": "*출석부를 덮지 않은 채 문 쪽만 본다.* 지금은 출석 정리 중이야. 내일 교실에서 하자."
+    },
+    "after_hidden_homeroom_neg": {
+        "name": "담임",
+        "text": "*클립보드를 품에 넣는다.* 하교 시간이다. 내일 보자."
+    },
     "after_hidden_homeroom_2": {
         "name": "담임",
         "text": "어, {name}? — 무슨 일?"
@@ -340,6 +348,14 @@
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
         "text": "*문 앞에 서서 한 번 숨을 고르고 손잡이에 손을 얹는다. 금속이 차갑다.*"
+    },
+    "after_nurse_d1_cool": {
+        "name": "보건선생님",
+        "text": "*차트를 덮는다.* 지금은 정리 중이야. 아픈 데 없으면 돌아가."
+    },
+    "after_nurse_d1_neg": {
+        "name": "보건선생님",
+        "text": "*예약표를 닫는다.* 오늘은 여기까지. 하교해."
     },
     "after_nurse_enter_1": {
         "name": "{name}",

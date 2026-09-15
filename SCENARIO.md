@@ -2236,10 +2236,40 @@
 
 ### `after_hidden_homeroom_1`
 - 배경: `school_hallway.png`
-- 다음: `after_hidden_homeroom_2`
+- 다음: `after_hidden_homeroom_aff`
 
 - 캐릭터: `없음`
 **{name}**: *하교하려다 아까 교실에 마지막까지 남아 출석부를 정리하던 담임을 생각한다. 교무실 앞에서 노크한 뒤 문을 연다.*
+
+---
+
+### `after_hidden_homeroom_aff`
+- 배경: `teacher_office.png`
+- 호감분기: Teacher
+  - [0+] → `after_hidden_homeroom_2`
+  - [-19 이상] → `after_hidden_homeroom_cool`
+  - [기본] → `after_hidden_homeroom_neg`
+- 다음: `after_hidden_homeroom_neg`
+
+- 캐릭터: `없음`
+
+---
+
+### `after_hidden_homeroom_cool`
+- 배경: `teacher_office.png`
+- 다음: `night_start`
+
+- 캐릭터: `teacher_normal.png`
+**담임**: *출석부를 덮지 않은 채 문 쪽만 본다.* 지금은 출석 정리 중이야. 내일 교실에서 하자.
+
+---
+
+### `after_hidden_homeroom_neg`
+- 배경: `teacher_office.png`
+- 다음: `night_start`
+
+- 캐릭터: `teacher_worried.png`
+**담임**: *클립보드를 품에 넣는다.* 하교 시간이다. 내일 보자.
 
 ---
 
@@ -2567,10 +2597,40 @@
 
 ### `after_hidden_nurse_intro_b`
 - 배경: `school_hallway.png`
-- 다음: `after_nurse_enter_1`
+- 다음: `after_nurse_d1_aff`
 
 - 캐릭터: `없음`
 **{name}**: *문 앞에 서서 한 번 숨을 고르고 손잡이에 손을 얹는다. 금속이 차갑다.*
+
+---
+
+### `after_nurse_d1_aff`
+- 배경: `nurse_room.png`
+- 호감분기: Nurse
+  - [0+] → `after_nurse_enter_1`
+  - [-19 이상] → `after_nurse_d1_cool`
+  - [기본] → `after_nurse_d1_neg`
+- 다음: `after_nurse_d1_neg`
+
+- 캐릭터: `없음`
+
+---
+
+### `after_nurse_d1_cool`
+- 배경: `nurse_room.png`
+- 다음: `night_start`
+
+- 캐릭터: `nurse_normal.png`
+**보건선생님**: *차트를 덮는다.* 지금은 정리 중이야. 아픈 데 없으면 돌아가.
+
+---
+
+### `after_nurse_d1_neg`
+- 배경: `nurse_room.png`
+- 다음: `night_start`
+
+- 캐릭터: `nurse_normal.png`
+**보건선생님**: *예약표를 닫는다.* 오늘은 여기까지. 하교해.
 
 ---
 
@@ -11236,13 +11296,26 @@
 ### `lunch3_choice`
 - 배경: `room_school.png`
 - 선택지:
-  1. "서연에게 준다" → `lunch3_give_seo_1`
-  2. "다인에게 준다" → `lunch3_give_dain_1`
-  3. "유나에게 준다" → `lunch3_give_yuna_1`
-  4. "다 같이 나눠 먹자" → `lunch3_share_1`
+  1. "서연에게 준다" → `lunch3_give_seo_aff`
+  2. "다인에게 준다" → `lunch3_give_dain_aff`
+  3. "유나에게 준다" → `lunch3_give_yuna_aff`
+  4. "다 같이 나눠 먹자" → `lunch3_share_tone`
 
 - 캐릭터: `yuna_bored.png`
 **{name}**: *마지막 반찬을 누구에게 줄지 고민한다.*
+
+---
+
+### `lunch3_give_seo_aff`
+- 배경: `room_school.png`
+- 호감분기: Seoyeon
+  - [10+] → `lunch3_give_seo_1`
+  - [0+] → `lunch3_give_seo_cool`
+  - [-19 이상] → `lunch3_give_seo_cool`
+  - [기본] → `lunch3_give_seo_neg`
+- 다음: `lunch3_give_seo_neg`
+
+- 캐릭터: `없음`
 
 ---
 
@@ -11254,6 +11327,28 @@
 
 - 캐릭터: `seyoun_normal.png`
 **서연**: 고마워. 역시 너는 센스가 있어.
+
+---
+
+### `lunch3_give_seo_cool`
+- 배경: `room_school.png`
+- 플래그: `lunch3_gave_seoyeon`
+- 스탯: Seoyeon +4
+- 다음: `lunch3_seo_skin_check`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 받을게.
+
+---
+
+### `lunch3_give_seo_neg`
+- 배경: `room_school.png`
+- 플래그: `lunch3_gave_seoyeon`
+- 스탯: Seoyeon +4
+- 다음: `lunch3_seo_skin_check`
+
+- 캐릭터: `seyoun_pout.png`
+**서연**: *젓가락을 내려놓는다.* 됐어.
 
 ---
 
@@ -11500,6 +11595,19 @@
 
 ---
 
+### `lunch3_give_dain_aff`
+- 배경: `room_school.png`
+- 호감분기: Dain
+  - [10+] → `lunch3_give_dain_1`
+  - [0+] → `lunch3_give_dain_cool`
+  - [-19 이상] → `lunch3_give_dain_cool`
+  - [기본] → `lunch3_give_dain_neg`
+- 다음: `lunch3_give_dain_neg`
+
+- 캐릭터: `없음`
+
+---
+
 ### `lunch3_give_dain_1`
 - 배경: `room_school.png`
 - 플래그: `lunch3_gave_dain`
@@ -11508,6 +11616,28 @@
 
 - 캐릭터: `dain_laugh.png`
 **다인**: 진짜? 고마워. {name}, 너 센스 있다.
+
+---
+
+### `lunch3_give_dain_cool`
+- 배경: `room_school.png`
+- 플래그: `lunch3_gave_dain`
+- 스탯: Dain +5
+- 다음: `lunch3_dain_skin_check`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 그래. 먹을게.
+
+---
+
+### `lunch3_give_dain_neg`
+- 배경: `room_school.png`
+- 플래그: `lunch3_gave_dain`
+- 스탯: Dain +5
+- 다음: `lunch3_dain_skin_check`
+
+- 캐릭터: `dain_pout.png`
+**다인**: *물병만 집어 든다.* 난 됐어.
 
 ---
 
@@ -11682,6 +11812,18 @@
 
 ---
 
+### `lunch3_give_yuna_aff`
+- 배경: `room_school.png`
+- 호감분기: Yuna
+  - [0+] → `lunch3_give_yuna_1`
+  - [-19 이상] → `lunch3_give_yuna_1`
+  - [기본] → `lunch3_give_yuna_neg`
+- 다음: `lunch3_give_yuna_neg`
+
+- 캐릭터: `없음`
+
+---
+
 ### `lunch3_give_yuna_1`
 - 배경: `room_school.png`
 - 플래그: `lunch3_gave_yuna`
@@ -11690,6 +11832,17 @@
 
 - 캐릭터: `yuna_normal.png`
 **유나**: 고마워.
+
+---
+
+### `lunch3_give_yuna_neg`
+- 배경: `room_school.png`
+- 플래그: `lunch3_gave_yuna`
+- 스탯: Yuna +5
+- 다음: `lunch3_yuna_skin_check`
+
+- 캐릭터: `yuna_bored.png`
+**유나**: *빵 봉지를 접는다.* 괜찮아.
 
 ---
 
@@ -12148,6 +12301,19 @@
 
 ---
 
+### `lunch3_share_tone`
+- 배경: `room_school.png`
+- 호감분기: selectByHighestAffinity
+  - [10+] → `lunch3_share_1`
+  - [0+] → `lunch3_share_cool`
+  - [-19 이상] → `lunch3_share_cool`
+  - [기본] → `lunch3_share_neg`
+- 다음: `lunch3_share_neg`
+
+- 캐릭터: `없음`
+
+---
+
 ### `lunch3_share_1`
 - 배경: `room_school.png`
 - 분기:
@@ -12175,6 +12341,24 @@
 
 - 캐릭터: `없음`
 **{name}**: *셋이 조금씩 나눠 먹는다. 서연은 입꼬리만 올리고 다인의 웃음은 평소보다 크다. 유나는 접어 둔 쪽지를 끝내 꺼내지 않는다.*
+
+---
+
+### `lunch3_share_cool`
+- 배경: `room_school.png`
+- 다음: `lunch3_end`
+
+- 캐릭터: `yuna_normal.png`
+**{name}**: *마지막 조각을 가운데 둔다. 셋이 나눠 가지지만 웃음은 없다.*
+
+---
+
+### `lunch3_share_neg`
+- 배경: `room_school.png`
+- 다음: `lunch3_end`
+
+- 캐릭터: `yuna_bored.png`
+**{name}**: *계란말이를 가운데 두자 젓가락이 움직이지 않는다. 한 사람은 이미 뚜껑을 닫는다.*
 
 ---
 

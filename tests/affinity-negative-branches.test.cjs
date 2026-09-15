@@ -123,6 +123,22 @@ test('below-threshold date and farewell guards split zero from negative', () => 
     assert.equal(createSceneRenderer({ Dain: 8 }).resolveNextScene(scenes.after5_confess_aff_dain), 'after5_confess_react_dain_low');
     assert.equal(createSceneRenderer({ Dain: -3 }).resolveNextScene(scenes.after5_confess_aff_dain), 'after5_confess_react_dain_low');
     assert.equal(createSceneRenderer({ Dain: -25 }).resolveNextScene(scenes.after5_confess_aff_dain), 'after5_confess_react_dain_neg');
+    assert.equal(createSceneRenderer({ Seoyeon: 12 }).resolveNextScene(scenes.lunch3_give_seo_aff), 'lunch3_give_seo_1');
+    assert.equal(createSceneRenderer({ Seoyeon: 0 }).resolveNextScene(scenes.lunch3_give_seo_aff), 'lunch3_give_seo_cool');
+    assert.equal(createSceneRenderer({ Seoyeon: -1 }).resolveNextScene(scenes.lunch3_give_seo_aff), 'lunch3_give_seo_cool');
+    assert.equal(createSceneRenderer({ Seoyeon: -25 }).resolveNextScene(scenes.lunch3_give_seo_aff), 'lunch3_give_seo_neg');
+    assert.equal(createSceneRenderer({ Dain: 5 }).resolveNextScene(scenes.lunch3_give_dain_aff), 'lunch3_give_dain_cool');
+    assert.equal(createSceneRenderer({ Dain: -25 }).resolveNextScene(scenes.lunch3_give_dain_aff), 'lunch3_give_dain_neg');
+    assert.equal(createSceneRenderer({ Yuna: -1 }).resolveNextScene(scenes.lunch3_give_yuna_aff), 'lunch3_give_yuna_1');
+    assert.equal(createSceneRenderer({ Yuna: -25 }).resolveNextScene(scenes.lunch3_give_yuna_aff), 'lunch3_give_yuna_neg');
+    assert.equal(createSceneRenderer({ Seoyeon: 20, Yuna: 5, Dain: 8 }).resolveNextScene(scenes.lunch3_share_tone), 'lunch3_share_1');
+    assert.equal(createSceneRenderer({ Seoyeon: 4, Yuna: 2, Dain: 1 }).resolveNextScene(scenes.lunch3_share_tone), 'lunch3_share_cool');
+    assert.equal(createSceneRenderer({ Seoyeon: -25, Yuna: -22, Dain: -21 }).resolveNextScene(scenes.lunch3_share_tone), 'lunch3_share_neg');
+    assert.equal(createSceneRenderer({ Teacher: 0 }).resolveNextScene(scenes.after_hidden_homeroom_aff), 'after_hidden_homeroom_2');
+    assert.equal(createSceneRenderer({ Teacher: -1 }).resolveNextScene(scenes.after_hidden_homeroom_aff), 'after_hidden_homeroom_cool');
+    assert.equal(createSceneRenderer({ Teacher: -25 }).resolveNextScene(scenes.after_hidden_homeroom_aff), 'after_hidden_homeroom_neg');
+    assert.equal(createSceneRenderer({ Nurse: -1 }).resolveNextScene(scenes.after_nurse_d1_aff), 'after_nurse_d1_cool');
+    assert.equal(createSceneRenderer({ Nurse: -25 }).resolveNextScene(scenes.after_nurse_d1_aff), 'after_nurse_d1_neg');
 });
 
 test('negative lunch and afterschool do not continue the warm hangout', () => {
@@ -260,6 +276,13 @@ test('negative-affinity copy exists in every language and differs from the zero-
         ['lunch_seo_neg_leave', 'lunch_seo_2'],
         ['lunch2_dain_cool_cont', 'lunch2_dain_8'],
         ['lunch2_dain_cool_leave', 'lunch2_dain_9'],
+        ['lunch3_give_seo_cool', 'lunch3_give_seo_1'],
+        ['lunch3_give_seo_neg', 'lunch3_give_seo_cool'],
+        ['lunch3_give_dain_neg', 'lunch3_give_dain_1'],
+        ['lunch3_give_yuna_neg', 'lunch3_give_yuna_1'],
+        ['lunch3_share_neg', 'lunch3_share_1'],
+        ['after_hidden_homeroom_neg', 'after_hidden_homeroom_2'],
+        ['after_nurse_d1_neg', 'after_nurse_enter_1'],
         ['after2_dain_cool_cont', 'after2_dain_9'],
         ['after2_yuna_cool_cont', 'after2_yuna_6'],
         ['lunch_dain_1_aff_neg', 'lunch_dain_1_aff_default'],

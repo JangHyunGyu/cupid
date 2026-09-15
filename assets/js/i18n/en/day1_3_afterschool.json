@@ -182,6 +182,14 @@
         "name": "{name}",
         "text": "*I'm about to leave when I remember my homeroom teacher, who stayed behind organizing the attendance book after everyone else had gone. I knock outside the faculty office and open the door.*"
     },
+    "after_hidden_homeroom_cool": {
+        "name": "Homeroom Teacher",
+        "text": "*She doesn't close the attendance book, just looks toward the door.* I'm still on attendance. Let's do this in class tomorrow."
+    },
+    "after_hidden_homeroom_neg": {
+        "name": "Homeroom Teacher",
+        "text": "*She tucks the clipboard against her chest.* It's time to go home. See you tomorrow."
+    },
     "after_hidden_homeroom_2": {
         "name": "Homeroom Teacher",
         "text": "Oh, {name}? — Something up?"
@@ -340,6 +348,14 @@
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
         "text": "*I stop in front of the door, take a breath, and put my hand on the handle. Cold metal against my palm.*"
+    },
+    "after_nurse_d1_cool": {
+        "name": "School Nurse",
+        "text": "*She closes the chart.* I'm packing up. If you're not hurt, head back."
+    },
+    "after_nurse_d1_neg": {
+        "name": "School Nurse",
+        "text": "*She shuts the appointment book.* That's enough for today. Go home."
     },
     "after_nurse_enter_1": {
         "name": "{name}",

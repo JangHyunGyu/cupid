@@ -72,6 +72,14 @@
         "name": "Seoyeon",
         "text": "...Obrigada. Você tem bom senso, hein."
     },
+    "lunch3_give_seo_cool": {
+        "name": "Seoyeon",
+        "text": "Eu pego."
+    },
+    "lunch3_give_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Ela larga os hashi.* Deixa."
+    },
     "lunch3_seo_skin_check": {},
     "lunch3_seo_skin_1": {
         "name": "{name}",
@@ -131,6 +139,14 @@
         "name": "Dain",
         "text": "Sério? Obrigada. {name}, você tem bom senso."
     },
+    "lunch3_give_dain_cool": {
+        "name": "Dain",
+        "text": "Tá. Eu como."
+    },
+    "lunch3_give_dain_neg": {
+        "name": "Dain",
+        "text": "*Ela pega só a garrafa.* Eu tô de boa."
+    },
     "lunch3_dain_skin_check": {},
     "lunch3_dain_skin_1": {
         "name": "{name}",
@@ -156,6 +172,10 @@
     "lunch3_give_yuna_1": {
         "name": "Yuna",
         "text": "...Obrigada."
+    },
+    "lunch3_give_yuna_neg": {
+        "name": "Yuna",
+        "text": "*Ela dobra o saco do pão.* Tô bem."
     },
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {
@@ -308,6 +328,14 @@
     "lunch3_share_1": {
         "name": "{name}",
         "text": "*Quando sugiro que todos dividam, as três sorriem. Mesmo depois que as risadas cessam, ninguém aproxima primeiro os hashis da omelete enrolada.*"
+    },
+    "lunch3_share_cool": {
+        "name": "{name}",
+        "text": "*Ponho o último pedaço no meio. As três dividem, mas ninguém ri.*"
+    },
+    "lunch3_share_neg": {
+        "name": "{name}",
+        "text": "*Ponho a omelete no meio. Ninguém estica o hashi. Uma já fechou a marmita.*"
     },
     "lunch3_share_solo": {
         "name": "{name}",

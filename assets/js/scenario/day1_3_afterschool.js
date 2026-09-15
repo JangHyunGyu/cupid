@@ -295,7 +295,25 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "after_hidden_homeroom_1": {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
-        "next": "after_hidden_homeroom_2"
+        "next": "after_hidden_homeroom_aff"
+    },
+    "after_hidden_homeroom_aff": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": null,
+        "affinityChar": "Teacher",
+        "routeBeforeRender": true,
+        "affinityBranches": [{"minAffinity":0,"next":"after_hidden_homeroom_2"},{"minAffinity":-19,"next":"after_hidden_homeroom_cool"},{"minAffinity":-100,"next":"after_hidden_homeroom_neg"}],
+        "next": "after_hidden_homeroom_neg"
+    },
+    "after_hidden_homeroom_cool": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "night_start"
+    },
+    "after_hidden_homeroom_neg": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/teacher_worried.png",
+        "next": "night_start"
     },
     "after_hidden_homeroom_2": {
         "background": "assets/images/background/teacher_office.png",
@@ -489,7 +507,25 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "after_hidden_nurse_intro_b": {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
-        "next": "after_nurse_enter_1"
+        "next": "after_nurse_d1_aff"
+    },
+    "after_nurse_d1_aff": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": null,
+        "affinityChar": "Nurse",
+        "routeBeforeRender": true,
+        "affinityBranches": [{"minAffinity":0,"next":"after_nurse_enter_1"},{"minAffinity":-19,"next":"after_nurse_d1_cool"},{"minAffinity":-100,"next":"after_nurse_d1_neg"}],
+        "next": "after_nurse_d1_neg"
+    },
+    "after_nurse_d1_cool": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "night_start"
+    },
+    "after_nurse_d1_neg": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "night_start"
     },
     "after_nurse_enter_1": {
         "background": "assets/images/background/nurse_room.png",
