@@ -255,7 +255,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "hidden_homeroom_d2_1": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/teacher_normal.png",
-        "affinityGuard": {"character":"Teacher","minAffinity":0,"fallback":"hidden_homeroom_d2_low"},
+        "affinityGuard": {"character":"Teacher","minAffinity":0,"fallback":"hidden_homeroom_d2_skip"},
         "next": "hidden_homeroom_d2_1_b"
     },
     "hidden_homeroom_d2_1_b": {
@@ -446,9 +446,22 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "morning2_seo_dust_1",
         "isRemote": false
     },
+    "hidden_homeroom_d2_skip": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": null,
+        "affinityChar": "Teacher",
+        "routeBeforeRender": true,
+        "affinityBranches": [{"minAffinity":-19,"next":"hidden_homeroom_d2_low"},{"minAffinity":-100,"next":"hidden_homeroom_d2_neg"}],
+        "next": "hidden_homeroom_d2_neg"
+    },
     "hidden_homeroom_d2_low": {
         "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
+        "next": "morning2_seo_dust_1"
+    },
+    "hidden_homeroom_d2_neg": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/teacher_worried.png",
         "next": "morning2_seo_dust_1"
     },
     "morning2_seo_dust_1": {

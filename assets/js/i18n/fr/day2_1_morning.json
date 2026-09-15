@@ -3,6 +3,10 @@
         "name": "Professeure principale",
         "text": "*Tu croises la professeure principale devant la salle des professeurs. Elle ramène vers son bureau les documents qu'elle tenait.* Évitons de parler en tête-à-tête aujourd'hui. On se voit en cours."
     },
+    "hidden_homeroom_d2_neg": {
+        "name": "Professeure principale",
+        "text": "*Elle ramène les papiers contre elle.* Rien à voir aujourd'hui. En classe."
+    },
     "morning2_start": {
         "name": "{name}",
         "text": "*Deuxième jour. Les plis sur les manches de mon uniforme sont moins marqués qu'hier.*"

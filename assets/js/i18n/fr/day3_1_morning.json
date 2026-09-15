@@ -3,9 +3,17 @@
         "name": "Professeure principale",
         "text": "*Devant la salle vide, la professeure principale s'arrête et désigne le couloir plutôt que les tables à l'intérieur.* Aujourd'hui, restons-en aux cours."
     },
+    "hidden_homeroom_d3_neg": {
+        "name": "Professeure principale",
+        "text": "*Elle désigne seulement le couloir.* Les affaires personnelles s'arrêtent là."
+    },
     "hidden_nurse_d3_low": {
         "name": "Infirmière",
         "text": "*L'infirmière reste près de la porte sans sortir la chaise d'entretien.* Je ne pense pas qu'on doive poursuivre cette discussion en tête-à-tête maintenant. Si tu en as besoin, viens pendant les heures officielles d'entretien."
+    },
+    "hidden_nurse_d3_neg": {
+        "name": "Infirmière",
+        "text": "*Elle ne sort pas de chaise.* Guichet officiel seulement. Retourne."
     },
     "morning3_date_seo_low": {
         "name": "Seoyeon",

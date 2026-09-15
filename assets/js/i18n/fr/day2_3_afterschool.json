@@ -3,6 +3,10 @@
         "name": "Infirmière",
         "text": "*Quand tu ouvres la porte de l'infirmerie, l'infirmière referme le dossier.* Si tu n'as pas besoin de soins, je ne peux pas discuter longtemps pour le moment. Retourne en classe."
     },
+    "hidden_nurse_d2_neg": {
+        "name": "Infirmière",
+        "text": "*Elle referme le dossier et désigne la porte.* Pas de soins, tu sors."
+    },
     "after2_start": {
         "name": "{name}",
         "text": "*Après les cours. Deux notifications sur mon téléphone.*"

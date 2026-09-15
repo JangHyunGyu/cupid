@@ -3,6 +3,10 @@
         "name": "Schulkrankenschwester",
         "text": "*Als du die Tür zum Krankenzimmer öffnest, klappt die Schulkrankenschwester die Akte zu.* Wenn du keine Behandlung brauchst, kann ich gerade nicht lange mit dir reden. Geh zurück in den Unterricht."
     },
+    "hidden_nurse_d2_neg": {
+        "name": "Schulkrankenschwester",
+        "text": "*Sie klappt die Akte zu und zeigt zur Tür.* Keine Behandlung, raus."
+    },
     "after2_start": {
         "name": "{name}",
         "text": "*Nach der Schule. Auf meinem Handy warten zwei Benachrichtigungen.*"

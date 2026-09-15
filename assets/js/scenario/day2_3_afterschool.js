@@ -41,7 +41,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "hidden_nurse_d2_1": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "affinityGuard": {"character":"Nurse","minAffinity":0,"fallback":"hidden_nurse_d2_low"},
+        "affinityGuard": {"character":"Nurse","minAffinity":0,"fallback":"hidden_nurse_d2_skip"},
         "next": "hidden_nurse_d2_2"
     },
     "hidden_nurse_d2_2": {
@@ -139,7 +139,20 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "character": null,
         "next": "after2_choice"
     },
+    "hidden_nurse_d2_skip": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": null,
+        "affinityChar": "Nurse",
+        "routeBeforeRender": true,
+        "affinityBranches": [{"minAffinity":-19,"next":"hidden_nurse_d2_low"},{"minAffinity":-100,"next":"hidden_nurse_d2_neg"}],
+        "next": "hidden_nurse_d2_neg"
+    },
     "hidden_nurse_d2_low": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "after2_choice"
+    },
+    "hidden_nurse_d2_neg": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "after2_choice"

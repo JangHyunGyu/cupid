@@ -1,6 +1,8 @@
 {
     "hidden_homeroom_d4_low": {"name":"Klassenlehrerin","text":"*Am Treffpunkt zieht deine Klassenlehrerin die Papiertüte näher an ihre Brust.* Das Manuskript zeige ich dir heute nicht. Wir sehen uns in der Schule."},
+    "hidden_homeroom_d4_neg": {"name":"Klassenlehrerin","text":"*Sie nimmt die Tüte an sich.* Kein Manuskript. Geh."},
     "hidden_nurse_d4_low": {"name":"Schulkrankenschwester","text":"*Die Schulkrankenschwester zieht den Reißverschluss des Notfallsets zu, das sie gerade sortiert hat.* Ich mache das heute allein fertig. Du solltest zu deinen Plänen zurückkehren."},
+    "hidden_nurse_d4_neg": {"name":"Schulkrankenschwester","text":"*Sie schließt das Set.* Das mache ich heute allein. Geh zurück."},
     "morning4_start": {
         "name": "{name}",
         "text": "*Vierter Tag, Samstag. Ich setze mich im Bett auf und sehe mir meine Pläne an.*"

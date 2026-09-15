@@ -1,6 +1,8 @@
 {
     "hidden_homeroom_d4_low": {"name":"Profesora","text":"*En el lugar de encuentro, la profesora acerca la bolsa de papel al pecho.* Hoy no voy a enseñarte el manuscrito. Nos vemos en la escuela."},
+    "hidden_homeroom_d4_neg": {"name":"Profesora","text":"*Guarda la bolsa contra el pecho.* No hay manuscrito. Vete."},
     "hidden_nurse_d4_low": {"name":"Enfermera","text":"*La enfermera cierra la cremallera del botiquín que estaba ordenando.* Hoy terminaré sola. Tú también vuelve a tus planes."},
+    "hidden_nurse_d4_neg": {"name":"Enfermera","text":"*Cierra el botiquín.* Hoy lo hago sola. Vuelve."},
     "morning4_start": {
         "name": "{name}",
         "text": "*Cuarto día, sábado. Me incorporo en la cama y reviso mis planes.*"

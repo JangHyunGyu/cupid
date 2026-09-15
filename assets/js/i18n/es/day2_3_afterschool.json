@@ -3,6 +3,10 @@
         "name": "Enfermera",
         "text": "*Cuando abres la puerta de la enfermería, la enfermera cierra el expediente.* Si no necesitas atención médica, ahora no puedo hablar mucho rato. Vuelve a clase."
     },
+    "hidden_nurse_d2_neg": {
+        "name": "Enfermera",
+        "text": "*Cierra la ficha y señala la puerta.* Si no hay tratamiento, fuera."
+    },
     "after2_start": {
         "name": "{name}",
         "text": "*Después de clase. Dos notificaciones en el celular.*"

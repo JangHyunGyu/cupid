@@ -3,9 +3,17 @@
         "name": "Profesora",
         "text": "*La profesora se detiene ante el aula vacía y señala el pasillo en vez de los pupitres del interior.* Hoy hablemos solo de las clases."
     },
+    "hidden_homeroom_d3_neg": {
+        "name": "Profesora",
+        "text": "*Solo señala el pasillo.* Lo personal termina aquí."
+    },
     "hidden_nurse_d3_low": {
         "name": "Enfermera",
         "text": "*La enfermera permanece junto a la puerta sin sacar la silla de consulta.* Ahora no creo que debamos seguir hablando a solas. Si necesitas algo, ven durante el horario oficial de consulta."
+    },
+    "hidden_nurse_d3_neg": {
+        "name": "Enfermera",
+        "text": "*No saca la silla.* Solo el mostrador oficial. Vuelve."
     },
     "morning3_date_seo_low": {
         "name": "Seoyeon",

@@ -3,6 +3,10 @@
         "name": "Klassenlehrerin",
         "text": "*Vor dem Lehrerzimmer begegnest du deiner Klassenlehrerin. Sie dreht die Unterlagen in ihrer Hand wieder in Richtung Schreibtisch.* Heute sollten wir nicht unter vier Augen reden. Wir sehen uns im Unterricht."
     },
+    "hidden_homeroom_d2_neg": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie zieht die Unterlagen an sich.* Heute gibt's nichts zu besprechen. Ab in den Unterricht."
+    },
     "morning2_start": {
         "name": "{name}",
         "text": "*Zweiter Tag. Die Bügelfalten an den Ärmeln meiner Uniform sind schwächer als gestern.*"

@@ -3,6 +3,10 @@
         "name": "Profesora",
         "text": "*Te cruzas con la profesora frente a la sala de profesores. Ella aparta hacia el escritorio los documentos que llevaba en la mano.* Hoy será mejor que no hablemos a solas. Nos vemos en clase."
     },
+    "hidden_homeroom_d2_neg": {
+        "name": "Profesora",
+        "text": "*Acerca los papeles al pecho.* Hoy no hay nada que tratar. A clase."
+    },
     "morning2_start": {
         "name": "{name}",
         "text": "*Segundo día. Los pliegues de las mangas del uniforme están menos marcados que ayer.*"

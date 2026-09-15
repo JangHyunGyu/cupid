@@ -1,6 +1,8 @@
 {
     "hidden_homeroom_d4_low": {"name":"Homeroom Teacher","text":"*At the meeting spot, your homeroom teacher pulls the paper bag closer to her chest.* I'm not showing you the manuscript today. I'll see you at school."},
+    "hidden_homeroom_d4_neg": {"name":"Homeroom Teacher","text":"*She tucks the bag against her chest.* No manuscript. Go."},
     "hidden_nurse_d4_low": {"name":"School Nurse","text":"*The school nurse zips up the emergency kit she was organizing.* I'll finish this on my own today. You should get back to your plans."},
+    "hidden_nurse_d4_neg": {"name":"School Nurse","text":"*She zips the kit shut.* I'm doing this alone today. Go back."},
     "morning4_start": {
         "name": "{name}",
         "text": "*Day four, Saturday. I sit up in bed and check today’s plans.*"

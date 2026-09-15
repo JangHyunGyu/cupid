@@ -223,7 +223,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/teacher_normal.png",
         "bgm": "morning.mp3",
-        "affinityGuard": {"character":"Teacher","minAffinity":0,"fallback":"hidden_homeroom_d4_low"},
+        "affinityGuard": {"character":"Teacher","minAffinity":0,"fallback":"hidden_homeroom_d4_skip"},
         "next": "hidden_homeroom_d4_1_b"
     },
     "hidden_homeroom_d4_1_b": {
@@ -515,7 +515,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "bgm": "morning.mp3",
-        "affinityGuard": {"character":"Nurse","minAffinity":0,"fallback":"hidden_nurse_d4_low"},
+        "affinityGuard": {"character":"Nurse","minAffinity":0,"fallback":"hidden_nurse_d4_skip"},
         "next": "hidden_nurse_d4_morning_3"
     },
     "hidden_nurse_d4_morning_3": {
@@ -614,7 +614,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "bgm": "morning.mp3",
-        "affinityGuard": {"character":"Nurse","minAffinity":0,"fallback":"hidden_nurse_d4_low"},
+        "affinityGuard": {"character":"Nurse","minAffinity":0,"fallback":"hidden_nurse_d4_skip"},
         "next": "hidden_nurse_d4_1_b"
     },
     "hidden_nurse_d4_1_b": {
@@ -897,12 +897,38 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         ]
     },
+    "hidden_homeroom_d4_skip": {
+        "background": "assets/images/background/street.png",
+        "character": null,
+        "affinityChar": "Teacher",
+        "routeBeforeRender": true,
+        "affinityBranches": [{"minAffinity":-19,"next":"hidden_homeroom_d4_low"},{"minAffinity":-100,"next":"hidden_homeroom_d4_neg"}],
+        "next": "hidden_homeroom_d4_neg"
+    },
     "hidden_homeroom_d4_low": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_nurse_d4_check"
     },
+    "hidden_homeroom_d4_neg": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/teacher_worried.png",
+        "next": "hidden_nurse_d4_check"
+    },
+    "hidden_nurse_d4_skip": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": null,
+        "affinityChar": "Nurse",
+        "routeBeforeRender": true,
+        "affinityBranches": [{"minAffinity":-19,"next":"hidden_nurse_d4_low"},{"minAffinity":-100,"next":"hidden_nurse_d4_neg"}],
+        "next": "hidden_nurse_d4_neg"
+    },
     "hidden_nurse_d4_low": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "morning4_end"
+    },
+    "hidden_nurse_d4_neg": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "morning4_end"

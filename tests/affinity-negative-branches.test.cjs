@@ -70,9 +70,7 @@ test('negative affinity uses a dedicated line instead of the default greeting', 
         ['after3_dain_skip', 'Dain', 'after3_dain_neg_1', 'after3_dain_low_1'],
         ['hidden_homeroom_d5_skip', 'Teacher', 'hidden_homeroom_d5_neg', 'hidden_homeroom_d5_low'],
         ['hidden_nurse_d5_skip', 'Nurse', 'hidden_nurse_d5_neg', 'hidden_nurse_d5_low'],
-        ['wall_seo_1', 'Seoyeon', 'wall_seo_skip', 'wall_seo_pre_low_1'],
-        ['wall_dain_1', 'Dain', 'wall_dain_skip', 'wall_dain_pre_low_1'],
-        ['wall_yuna_1', 'Yuna', 'wall_yuna_skip', 'wall_yuna_pre_low_1'],
+
         ['confess_seo_yes_7', 'Seoyeon', 'confess_seo_yes_neg', 'confess_seo_yes_low_1'],
         ['morning5_mood_check', 'selectByHighestAffinity', 'morning5_mood_neg', 'morning5_mood_low'],
         ['morning2_greet_none_tone', 'selectByHighestAffinity', 'morning2_greet_none_neg_1', 'morning2_greet_none_1']
@@ -105,6 +103,23 @@ test('below-threshold date and farewell guards split zero from negative', () => 
     assert.equal(createSceneRenderer({ Seoyeon: 0 }).resolveNextScene(scenes.date_seo_skip), 'date_seo_low');
     assert.equal(createSceneRenderer({ Seoyeon: -4 }).resolveNextScene(scenes.date_seo_skip), 'date_seo_low');
     assert.equal(createSceneRenderer({ Seoyeon: -25 }).resolveNextScene(scenes.date_seo_skip), 'date_seo_neg');
+    assert.equal(createSceneRenderer({ Seoyeon: 0 }).resolveNextScene(scenes.date_seo_tier_check), 'date_seo_low');
+    assert.equal(createSceneRenderer({ Seoyeon: -4 }).resolveNextScene(scenes.date_seo_tier_check), 'date_seo_low');
+    assert.equal(createSceneRenderer({ Seoyeon: -25 }).resolveNextScene(scenes.date_seo_tier_check), 'date_seo_neg');
+    assert.equal(createSceneRenderer({ Yuna: -25 }).resolveNextScene(scenes.date_yuna_tier_check), 'date_yuna_neg');
+    assert.equal(createSceneRenderer({ Dain: -25 }).resolveNextScene(scenes.date_dain_tier_check), 'date_dain_neg');
+    assert.equal(createSceneRenderer({ Seoyeon: -1 }).resolveNextScene(scenes.wall_seo_1), 'wall_seo_skip');
+    assert.equal(createSceneRenderer({ Seoyeon: 0 }).resolveNextScene(scenes.wall_seo_1), 'wall_seo_pre_low_1');
+    assert.equal(createSceneRenderer({ Dain: -25 }).resolveNextScene(scenes.wall_dain_1), 'wall_dain_skip');
+    assert.equal(createSceneRenderer({ Yuna: -2 }).resolveNextScene(scenes.wall_yuna_1), 'wall_yuna_skip');
+    assert.equal(createSceneRenderer({ Teacher: -1 }).resolveNextScene(scenes.hidden_homeroom_d2_skip), 'hidden_homeroom_d2_low');
+    assert.equal(createSceneRenderer({ Teacher: -25 }).resolveNextScene(scenes.hidden_homeroom_d2_skip), 'hidden_homeroom_d2_neg');
+    assert.equal(createSceneRenderer({ Nurse: -1 }).resolveNextScene(scenes.hidden_nurse_d2_skip), 'hidden_nurse_d2_low');
+    assert.equal(createSceneRenderer({ Nurse: -25 }).resolveNextScene(scenes.hidden_nurse_d2_skip), 'hidden_nurse_d2_neg');
+    assert.equal(createSceneRenderer({ Teacher: -25 }).resolveNextScene(scenes.hidden_homeroom_d3_skip), 'hidden_homeroom_d3_neg');
+    assert.equal(createSceneRenderer({ Nurse: -25 }).resolveNextScene(scenes.hidden_nurse_d3_skip), 'hidden_nurse_d3_neg');
+    assert.equal(createSceneRenderer({ Teacher: -25 }).resolveNextScene(scenes.hidden_homeroom_d4_skip), 'hidden_homeroom_d4_neg');
+    assert.equal(createSceneRenderer({ Nurse: -25 }).resolveNextScene(scenes.hidden_nurse_d4_skip), 'hidden_nurse_d4_neg');
     assert.equal(createSceneRenderer({ Yuna: 10 }).resolveNextScene(scenes.morning3_date_yuna_skip), 'morning3_date_yuna_low');
     assert.equal(createSceneRenderer({ Yuna: -2 }).resolveNextScene(scenes.morning3_date_yuna_skip), 'morning3_date_yuna_low');
     assert.equal(createSceneRenderer({ Yuna: -25 }).resolveNextScene(scenes.morning3_date_yuna_skip), 'morning3_date_yuna_neg');
@@ -276,6 +291,12 @@ test('negative-affinity copy exists in every language and differs from the zero-
         ['lunch_seo_neg_leave', 'lunch_seo_2'],
         ['lunch2_dain_cool_cont', 'lunch2_dain_8'],
         ['lunch2_dain_cool_leave', 'lunch2_dain_9'],
+        ['hidden_homeroom_d2_neg', 'hidden_homeroom_d2_low'],
+        ['hidden_nurse_d2_neg', 'hidden_nurse_d2_low'],
+        ['hidden_homeroom_d3_neg', 'hidden_homeroom_d3_low'],
+        ['hidden_nurse_d3_neg', 'hidden_nurse_d3_low'],
+        ['hidden_homeroom_d4_neg', 'hidden_homeroom_d4_low'],
+        ['hidden_nurse_d4_neg', 'hidden_nurse_d4_low'],
         ['lunch3_give_seo_cool', 'lunch3_give_seo_1'],
         ['lunch3_give_seo_neg', 'lunch3_give_seo_cool'],
         ['lunch3_give_dain_neg', 'lunch3_give_dain_1'],

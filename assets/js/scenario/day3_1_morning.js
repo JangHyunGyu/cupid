@@ -310,7 +310,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/room_school.png",
         "backgroundVariant": "empty",
         "character": "assets/images/characters/teacher_normal.png",
-        "affinityGuard": {"character":"Teacher","minAffinity":0,"fallback":"hidden_homeroom_d3_low"},
+        "affinityGuard": {"character":"Teacher","minAffinity":0,"fallback":"hidden_homeroom_d3_skip"},
         "next": "hidden_homeroom_d3_3"
     },
     "hidden_homeroom_d3_3": {
@@ -583,7 +583,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "hidden_nurse_d3_1": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "affinityGuard": {"character":"Nurse","minAffinity":0,"fallback":"hidden_nurse_d3_low"},
+        "affinityGuard": {"character":"Nurse","minAffinity":0,"fallback":"hidden_nurse_d3_skip"},
         "next": "hidden_nurse_d3_1_b"
     },
     "hidden_nurse_d3_1_b": {
@@ -1058,13 +1058,40 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "lunch3_start",
         "routeBeforeRender": true
     },
+    "hidden_homeroom_d3_skip": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "affinityChar": "Teacher",
+        "routeBeforeRender": true,
+        "affinityBranches": [{"minAffinity":-19,"next":"hidden_homeroom_d3_low"},{"minAffinity":-100,"next":"hidden_homeroom_d3_neg"}],
+        "next": "hidden_homeroom_d3_neg"
+    },
     "hidden_homeroom_d3_low": {
         "background": "assets/images/background/room_school.png",
         "backgroundVariant": "empty",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_nurse_d3_check"
     },
+    "hidden_homeroom_d3_neg": {
+        "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "empty",
+        "character": "assets/images/characters/teacher_worried.png",
+        "next": "hidden_nurse_d3_check"
+    },
+    "hidden_nurse_d3_skip": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": null,
+        "affinityChar": "Nurse",
+        "routeBeforeRender": true,
+        "affinityBranches": [{"minAffinity":-19,"next":"hidden_nurse_d3_low"},{"minAffinity":-100,"next":"hidden_nurse_d3_neg"}],
+        "next": "hidden_nurse_d3_neg"
+    },
     "hidden_nurse_d3_low": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "morning3_date_seo_1"
+    },
+    "hidden_nurse_d3_neg": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "morning3_date_seo_1"

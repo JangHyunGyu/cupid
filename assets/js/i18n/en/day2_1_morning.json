@@ -3,6 +3,10 @@
         "name": "Homeroom Teacher",
         "text": "*At the teachers' office door, you run into your homeroom teacher. She turns the papers in her hand back toward her desk.* Let's not talk one-on-one today. I'll see you in class."
     },
+    "hidden_homeroom_d2_neg": {
+        "name": "Homeroom Teacher",
+        "text": "*She turns the papers toward her chest.* Nothing to discuss today. Go to class."
+    },
     "morning2_start": {
         "name": "{name}",
         "text": "*Day two. The creases in my uniform sleeves are fainter than yesterday.*"

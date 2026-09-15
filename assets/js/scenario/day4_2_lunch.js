@@ -24,9 +24,12 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "affinityBranches": [
             { "minAffinity": 60, "next": "date_seo_high_1" },
             { "minAffinity": 40, "next": "date_seo_compliment_choice" },
-            { "minAffinity": 30, "next": "date_seo_tentative_1" }
+            { "minAffinity": 30, "next": "date_seo_tentative_1" },
+            { "minAffinity": 0, "next": "date_seo_low" },
+            { "minAffinity": -19, "next": "date_seo_low" },
+            { "minAffinity": -100, "next": "date_seo_neg" }
         ],
-        "next": "date_seo_low"
+        "next": "date_seo_neg"
     },
     "date_seo_high_1": {
         "background": "assets/images/background/park.png",
@@ -195,9 +198,12 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "affinityBranches": [
             { "minAffinity": 60, "next": "date_yuna_high_1" },
             { "minAffinity": 40, "next": "date_yuna_compliment_choice" },
-            { "minAffinity": 30, "next": "date_yuna_tentative_1" }
+            { "minAffinity": 30, "next": "date_yuna_tentative_1" },
+            { "minAffinity": 0, "next": "date_yuna_low" },
+            { "minAffinity": -19, "next": "date_yuna_low" },
+            { "minAffinity": -100, "next": "date_yuna_neg" }
         ],
-        "next": "date_yuna_low"
+        "next": "date_yuna_neg"
     },
     "date_yuna_high_1": {
         "background": "assets/images/background/cafe.png",
@@ -387,9 +393,12 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "affinityBranches": [
             { "minAffinity": 60, "next": "date_dain_high_1" },
             { "minAffinity": 40, "next": "date_dain_2" },
-            { "minAffinity": 30, "next": "date_dain_tentative_1" }
+            { "minAffinity": 30, "next": "date_dain_tentative_1" },
+            { "minAffinity": 0, "next": "date_dain_low" },
+            { "minAffinity": -19, "next": "date_dain_low" },
+            { "minAffinity": -100, "next": "date_dain_neg" }
         ],
-        "next": "date_dain_low"
+        "next": "date_dain_neg"
     },
     "date_dain_high_1": {
         "background": "assets/images/background/gym.png",

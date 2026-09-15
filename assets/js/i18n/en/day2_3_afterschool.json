@@ -3,6 +3,10 @@
         "name": "School Nurse",
         "text": "*When you open the nurse's office door, the school nurse closes the chart.* Unless you need treatment, I can't talk for long right now. Go back to class."
     },
+    "hidden_nurse_d2_neg": {
+        "name": "School Nurse",
+        "text": "*She closes the chart and nods at the door.* If you don't need treatment, out."
+    },
     "after2_start": {
         "name": "{name}",
         "text": "*After school. Two notifications are waiting on my phone.*"

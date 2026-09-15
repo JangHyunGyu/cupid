@@ -3,9 +3,17 @@
         "name": "Klassenlehrerin",
         "text": "*An der Tür zum leeren Klassenzimmer bleibt deine Klassenlehrerin stehen und weist den Flur entlang statt zu den Tischen.* Heute bleiben wir beim Unterricht."
     },
+    "hidden_homeroom_d3_neg": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie zeigt nur den Flur entlang.* Persönliches endet hier."
+    },
     "hidden_nurse_d3_low": {
         "name": "Schulkrankenschwester",
         "text": "*Die Schulkrankenschwester bleibt an der Tür stehen, ohne den Stuhl für Beratungsgespräche hervorzuholen.* Ich denke nicht, dass wir dieses Gespräch gerade allein fortsetzen sollten. Wenn du etwas brauchst, komm während der offiziellen Beratungszeiten."
+    },
+    "hidden_nurse_d3_neg": {
+        "name": "Schulkrankenschwester",
+        "text": "*Sie holt keinen Stuhl.* Nur der Dienstweg. Geh zurück."
     },
     "morning3_date_seo_low": {
         "name": "Seoyeon",

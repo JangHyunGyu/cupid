@@ -1,6 +1,8 @@
 {
     "hidden_homeroom_d4_low": {"name":"Professeure principale","text":"*Au lieu du rendez-vous, la professeure principale serre le sac en papier contre elle.* Je ne te montrerai pas le manuscrit aujourd'hui. On se voit au lycée."},
+    "hidden_homeroom_d4_neg": {"name":"Professeure principale","text":"*Elle serre le sac contre elle.* Pas de manuscrit. Va-t'en."},
     "hidden_nurse_d4_low": {"name":"Infirmière","text":"*L'infirmière referme la trousse de secours qu'elle rangeait.* Je finirai seule aujourd'hui. Retourne toi aussi à ce que tu avais prévu."},
+    "hidden_nurse_d4_neg": {"name":"Infirmière","text":"*Elle ferme la trousse.* Je fais ça seule aujourd'hui. Retourne."},
     "morning4_start": {
         "name": "{name}",
         "text": "*Quatrième jour, samedi. Je me redresse dans mon lit et vérifie mon programme.*"

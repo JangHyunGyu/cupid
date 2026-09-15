@@ -3,9 +3,17 @@
         "name": "Homeroom Teacher",
         "text": "*At the empty classroom door, your homeroom teacher stops and points down the hall instead of toward the desks.* Let's keep it to classwork today."
     },
+    "hidden_homeroom_d3_neg": {
+        "name": "Homeroom Teacher",
+        "text": "*She only points down the hall.* Personal talk ends here."
+    },
     "hidden_nurse_d3_low": {
         "name": "School Nurse",
         "text": "*The school nurse stays by the door without pulling out the counseling chair.* I don't think we should continue this conversation alone right now. If you need something, come during official counseling hours."
+    },
+    "hidden_nurse_d3_neg": {
+        "name": "School Nurse",
+        "text": "*She doesn't pull out a chair.* Official desk only. Go back."
     },
     "morning3_date_seo_low": {
         "name": "Seoyeon",

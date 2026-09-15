@@ -3,9 +3,17 @@
         "name": "Professora",
         "text": "*Na porta da sala vazia, sua professora para e aponta para o corredor, em vez das carteiras.* Hoje vamos nos limitar aos assuntos da aula."
     },
+    "hidden_homeroom_d3_neg": {
+        "name": "Professora",
+        "text": "*Ela aponta só o corredor.* Assunto pessoal termina aqui."
+    },
     "hidden_nurse_d3_low": {
         "name": "Enfermeira",
         "text": "*A enfermeira continua junto à porta, sem puxar a cadeira de atendimento.* Acho que não devemos continuar esta conversa a sós agora. Se precisar de algo, venha no horário oficial de atendimento."
+    },
+    "hidden_nurse_d3_neg": {
+        "name": "Enfermeira",
+        "text": "*Não puxa a cadeira.* Só o balcão oficial. Volte."
     },
     "morning3_date_seo_low": {
         "name": "Seoyeon",

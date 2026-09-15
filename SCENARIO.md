@@ -4324,12 +4324,32 @@
 
 ---
 
+### `hidden_homeroom_d2_skip`
+- 배경: `teacher_office.png`
+- 호감분기: Teacher
+  - [-19 이상] → `hidden_homeroom_d2_low`
+  - [기본] → `hidden_homeroom_d2_neg`
+- 다음: `hidden_homeroom_d2_neg`
+
+- 캐릭터: `없음`
+
+---
+
 ### `hidden_homeroom_d2_low`
 - 배경: `teacher_office.png`
 - 다음: `morning2_seo_dust_1`
 
 - 캐릭터: `teacher_normal.png`
 **담임선생님**: *교무실 문 앞에서 담임과 마주친다. 담임은 들고 있던 서류를 책상 쪽으로 돌려놓는다.* 오늘은 따로 이야기하지 말자. 수업에서 보자.
+
+---
+
+### `hidden_homeroom_d2_neg`
+- 배경: `teacher_office.png`
+- 다음: `morning2_seo_dust_1`
+
+- 캐릭터: `teacher_worried.png`
+**담임선생님**: *서류를 품 쪽으로 돌린다.* 오늘은 볼일 없다. 교실로 가.
 
 ---
 
@@ -6526,12 +6546,32 @@
 
 ---
 
+### `hidden_nurse_d2_skip`
+- 배경: `nurse_room.png`
+- 호감분기: Nurse
+  - [-19 이상] → `hidden_nurse_d2_low`
+  - [기본] → `hidden_nurse_d2_neg`
+- 다음: `hidden_nurse_d2_neg`
+
+- 캐릭터: `없음`
+
+---
+
 ### `hidden_nurse_d2_low`
 - 배경: `nurse_room.png`
 - 다음: `after2_choice`
 
 - 캐릭터: `nurse_normal.png`
 **보건선생님**: *보건실 문을 열자 보건선생님이 차트를 덮는다.* 지금은 필요한 처치가 아니면 오래 이야기하기 어렵겠네. 교실로 돌아가.
+
+---
+
+### `hidden_nurse_d2_neg`
+- 배경: `nurse_room.png`
+- 다음: `after2_choice`
+
+- 캐릭터: `nurse_normal.png`
+**보건선생님**: *차트를 덮고 문을 가리킨다.* 오늘은 처치 없으면 나가.
 
 ---
 
@@ -10201,6 +10241,17 @@
 
 ---
 
+### `hidden_homeroom_d3_skip`
+- 배경: `room_school.png`
+- 호감분기: Teacher
+  - [-19 이상] → `hidden_homeroom_d3_low`
+  - [기본] → `hidden_homeroom_d3_neg`
+- 다음: `hidden_homeroom_d3_neg`
+
+- 캐릭터: `없음`
+
+---
+
 ### `hidden_homeroom_d3_low`
 - 배경: `room_school.png`
 - 배경톤: `empty`
@@ -10208,6 +10259,16 @@
 
 - 캐릭터: `teacher_normal.png`
 **담임선생님**: *빈 교실 문 앞에서 담임이 걸음을 멈춘다. 안쪽 책상 대신 복도를 가리킨다.* 오늘은 수업 얘기만 하자.
+
+---
+
+### `hidden_homeroom_d3_neg`
+- 배경: `room_school.png`
+- 배경톤: `empty`
+- 다음: `hidden_nurse_d3_check`
+
+- 캐릭터: `teacher_worried.png`
+**담임선생님**: *복도만 가리킨다.* 개인 얘기는 여기까지다.
 
 ---
 
@@ -10781,12 +10842,32 @@
 
 ---
 
+### `hidden_nurse_d3_skip`
+- 배경: `nurse_room.png`
+- 호감분기: Nurse
+  - [-19 이상] → `hidden_nurse_d3_low`
+  - [기본] → `hidden_nurse_d3_neg`
+- 다음: `hidden_nurse_d3_neg`
+
+- 캐릭터: `없음`
+
+---
+
 ### `hidden_nurse_d3_low`
 - 배경: `nurse_room.png`
 - 다음: `morning3_date_seo_1`
 
 - 캐릭터: `nurse_normal.png`
 **보건선생님**: *보건선생님은 상담 의자를 꺼내지 않은 채 문 옆에 선다.* 지금은 따로 상담을 이어가기 어렵겠어. 필요한 일이 있으면 공식 상담 시간에 와.
+
+---
+
+### `hidden_nurse_d3_neg`
+- 배경: `nurse_room.png`
+- 다음: `morning3_date_seo_1`
+
+- 캐릭터: `nurse_normal.png`
+**보건선생님**: *의자를 꺼내지 않는다.* 정식 창구로만. 돌아가.
 
 ---
 
@@ -15979,11 +16060,32 @@
 ---
 
 ### `hidden_homeroom_d4_skip`
-- 배경: `room_my.png`
-- 다음: `hidden_nurse_d4_check`
+- 배경: `street.png`
+- 호감분기: Teacher
+  - [-19 이상] → `hidden_homeroom_d4_low`
+  - [기본] → `hidden_homeroom_d4_neg`
+- 다음: `hidden_homeroom_d4_neg`
 
 - 캐릭터: `없음`
 **{name}**: *정문 안쪽에서 문 닫히는 소리가 난다. 그사이 보행 신호가 켜진다.*
+
+---
+
+### `hidden_homeroom_d4_low`
+- 배경: `street.png`
+- 다음: `hidden_nurse_d4_check`
+
+- 캐릭터: `teacher_normal.png`
+**담임선생님**: *약속 장소 앞에서 담임이 종이봉투를 품 쪽으로 당긴다.* 오늘은 원고를 보여주지 않을게. 학교에서 보자.
+
+---
+
+### `hidden_homeroom_d4_neg`
+- 배경: `street.png`
+- 다음: `hidden_nurse_d4_check`
+
+- 캐릭터: `teacher_worried.png`
+**담임선생님**: *봉투를 품에 넣는다.* 원고는 없다. 가.
 
 ---
 
@@ -16633,15 +16735,6 @@
 
 ---
 
-### `hidden_homeroom_d4_low`
-- 배경: `street.png`
-- 다음: `hidden_nurse_d4_check`
-
-- 캐릭터: `teacher_normal.png`
-**담임선생님**: *약속 장소 앞에서 담임이 종이봉투를 품 쪽으로 당긴다.* 오늘은 원고를 보여주지 않을게. 학교에서 보자.
-
----
-
 ### `hidden_nurse_d4_check`
 - 분기:
   - [`nurse_day3`] → `hidden_nurse_d4_1`
@@ -17114,12 +17207,32 @@
 
 ---
 
+### `hidden_nurse_d4_skip`
+- 배경: `nurse_room.png`
+- 호감분기: Nurse
+  - [-19 이상] → `hidden_nurse_d4_low`
+  - [기본] → `hidden_nurse_d4_neg`
+- 다음: `hidden_nurse_d4_neg`
+
+- 캐릭터: `없음`
+
+---
+
 ### `hidden_nurse_d4_low`
 - 배경: `nurse_room.png`
 - 다음: `morning4_end`
 
 - 캐릭터: `nurse_normal.png`
 **보건선생님**: *보건선생님이 정리 중인 응급키트 지퍼를 닫는다.* 오늘은 혼자 마칠게. 너도 네 일정으로 돌아가.
+
+---
+
+### `hidden_nurse_d4_neg`
+- 배경: `nurse_room.png`
+- 다음: `morning4_end`
+
+- 캐릭터: `nurse_normal.png`
+**보건선생님**: *키트 지퍼를 닫는다.* 오늘은 혼자 한다. 돌아가.
 
 ---
 
@@ -17168,7 +17281,10 @@
   - [60+] → `date_seo_high_1`
   - [40+] → `date_seo_compliment_choice`
   - [30+] → `date_seo_tentative_1`
-- 다음: `date_seo_low`
+  - [0+] → `date_seo_low`
+  - [-19 이상] → `date_seo_low`
+  - [기본] → `date_seo_neg`
+- 다음: `date_seo_neg`
 
 - 캐릭터: `없음`
 
@@ -17462,7 +17578,10 @@
   - [60+] → `date_yuna_high_1`
   - [40+] → `date_yuna_compliment_choice`
   - [30+] → `date_yuna_tentative_1`
-- 다음: `date_yuna_low`
+  - [0+] → `date_yuna_low`
+  - [-19 이상] → `date_yuna_low`
+  - [기본] → `date_yuna_neg`
+- 다음: `date_yuna_neg`
 
 - 캐릭터: `없음`
 
@@ -17792,7 +17911,10 @@
   - [60+] → `date_dain_high_1`
   - [40+] → `date_dain_2`
   - [30+] → `date_dain_tentative_1`
-- 다음: `date_dain_low`
+  - [0+] → `date_dain_low`
+  - [-19 이상] → `date_dain_low`
+  - [기본] → `date_dain_neg`
+- 다음: `date_dain_neg`
 
 - 캐릭터: `없음`
 
@@ -19614,7 +19736,7 @@
 - 호감분기: Seoyeon
   - [60+] → `wall_seo_pre_high_1`
   - [0+] → `wall_seo_pre_low_1`
-  - [-19 이상] → `wall_seo_pre_low_1`
+  - [-19 이상] → `wall_seo_skip`
   - [기본] → `wall_seo_skip`
 
 - 캐릭터: `없음`
@@ -20279,7 +20401,7 @@
 - 호감분기: Dain
   - [60+] → `wall_dain_pre_high_1`
   - [0+] → `wall_dain_pre_low_1`
-  - [-19 이상] → `wall_dain_pre_low_1`
+  - [-19 이상] → `wall_dain_skip`
   - [기본] → `wall_dain_skip`
 
 - 캐릭터: `없음`
@@ -21137,7 +21259,7 @@
 - 호감분기: Yuna
   - [60+] → `wall_yuna_pre_high_1`
   - [0+] → `wall_yuna_pre_low_1`
-  - [-19 이상] → `wall_yuna_pre_low_1`
+  - [-19 이상] → `wall_yuna_skip`
   - [기본] → `wall_yuna_skip`
 
 - 캐릭터: `없음`

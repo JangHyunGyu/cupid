@@ -1241,16 +1241,16 @@ test('day-five continuity keeps availability, history, affinity, and final choic
 
 test('live affinity guards enforce relationship thresholds and provide localized exits', () => {
     const guardedEntries = [
-        ['hidden_homeroom_d2_1', 'Teacher', 0, 'hidden_homeroom_d2_low'],
-        ['hidden_nurse_d2_1', 'Nurse', 0, 'hidden_nurse_d2_low'],
-        ['hidden_homeroom_d3_1', 'Teacher', 0, 'hidden_homeroom_d3_low'],
-        ['hidden_nurse_d3_1', 'Nurse', 0, 'hidden_nurse_d3_low'],
+        ['hidden_homeroom_d2_1', 'Teacher', 0, 'hidden_homeroom_d2_skip'],
+        ['hidden_nurse_d2_1', 'Nurse', 0, 'hidden_nurse_d2_skip'],
+        ['hidden_homeroom_d3_1', 'Teacher', 0, 'hidden_homeroom_d3_skip'],
+        ['hidden_nurse_d3_1', 'Nurse', 0, 'hidden_nurse_d3_skip'],
         ['morning3_date_seo_1', 'Seoyeon', 20, 'morning3_date_seo_skip'],
         ['morning3_date_dain_1', 'Dain', 20, 'morning3_date_dain_skip'],
         ['morning3_date_yuna_1', 'Yuna', 20, 'morning3_date_yuna_skip'],
-        ['hidden_homeroom_d4_1', 'Teacher', 0, 'hidden_homeroom_d4_low'],
-        ['hidden_nurse_d4_morning_1', 'Nurse', 0, 'hidden_nurse_d4_low'],
-        ['hidden_nurse_d4_1', 'Nurse', 0, 'hidden_nurse_d4_low'],
+        ['hidden_homeroom_d4_1', 'Teacher', 0, 'hidden_homeroom_d4_skip'],
+        ['hidden_nurse_d4_morning_1', 'Nurse', 0, 'hidden_nurse_d4_skip'],
+        ['hidden_nurse_d4_1', 'Nurse', 0, 'hidden_nurse_d4_skip'],
         ['date_seo_1', 'Seoyeon', 30, 'date_seo_skip'],
         ['date_yuna_1', 'Yuna', 30, 'date_yuna_skip'],
         ['date_dain_1', 'Dain', 30, 'date_dain_skip'],
@@ -1332,8 +1332,11 @@ test('date route gates cover automatic, manual, multiple-promise, and saved-entr
             assert.equal(renderer.resolveAffinityGuard(scenes[`date_${short}_1`]),
                 affinity < 30 ? `date_${short}_skip` : null);
             if (affinity < 30) {
-                assert.equal(renderer.resolveNextScene(scenes[`date_${short}_tier_check`]), `date_${short}_low`,
-                    'Continuing an old saved date entry must still check the live score');
+                assert.equal(
+                    renderer.resolveNextScene(scenes[`date_${short}_tier_check`]),
+                    affinity < -19 ? `date_${short}_neg` : `date_${short}_low`,
+                    'Continuing an old saved date entry must still check the live score'
+                );
             }
         }
         const refusal = scenes[`after3_${short}_low_1`];
