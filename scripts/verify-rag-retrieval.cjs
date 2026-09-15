@@ -38,7 +38,7 @@ assert(config.includes("`${API_ENDPOINT}search-memory`"), 'shared search-memory 
 assert(config.includes("'x-app-id': getCupidAppId()"), 'language-scoped Cupid app id is not sent');
 assert(config.includes('userId: getCupidDeviceId()'), 'persistent Cupid device id is not sent');
 assert(config.includes('topK: 6'), 'retrieval candidate count must remain six');
-assert(config.includes('}, 900);'), 'retrieval must fail open after 900ms');
+assert(config.includes('}, 1500);'), 'retrieval must fail open after 1500ms');
 assert(config.includes('window.prepareCupidPromptMemoryRecall = prepareCupidPromptMemoryRecall'),
     'retrieval helper is not exported');
 
