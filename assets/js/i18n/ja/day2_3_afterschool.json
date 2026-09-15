@@ -782,5 +782,17 @@
     "after2_seo_neck_neg_b": {
         "name": "ソヨン",
         "text": "*箱を元の場所へ戻す。* それはいい。リストを合わせて。"
+    },
+    "after2_seo_neg_leave": {
+        "name": "{name}",
+        "text": "*空欄だけ埋めて生徒会室を出る。*"
+    },
+    "after2_dain_neg_leave": {
+        "name": "{name}",
+        "text": "*体育館のドアを出て廊下に立つ。*"
+    },
+    "after2_yuna_neg_leave": {
+        "name": "{name}",
+        "text": "*本を閉じない席のそばを離れて、別館のドアを閉める。*"
     }
 }

@@ -720,5 +720,17 @@
     "lunch2_yuna_3_neg": {
         "name": "Yuna",
         "text": "*No da ningún recado. Solo pasa una página.* Hoy no quiero hablar."
+    },
+    "lunch2_seo_neg_leave": {
+        "name": "{name}",
+        "text": "*Cierro la puerta de la azotea y bajo las escaleras.*"
+    },
+    "lunch2_dain_neg_leave": {
+        "name": "{name}",
+        "text": "*Salgo de la cola del kiosco y me quedo en el pasillo.*"
+    },
+    "lunch2_yuna_neg_leave": {
+        "name": "{name}",
+        "text": "*Cierro la puerta del anexo y bajo las escaleras.*"
     }
 }

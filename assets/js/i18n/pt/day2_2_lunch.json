@@ -720,5 +720,17 @@
     "lunch2_yuna_3_neg": {
         "name": "Yuna",
         "text": "*Não entrega bilhete. Só vira uma página.* Hoje não quero conversa."
+    },
+    "lunch2_seo_neg_leave": {
+        "name": "{name}",
+        "text": "*Fecho a porta do terraço e desço as escadas.*"
+    },
+    "lunch2_dain_neg_leave": {
+        "name": "{name}",
+        "text": "*Saio da fila da cantina e fico no corredor.*"
+    },
+    "lunch2_yuna_neg_leave": {
+        "name": "{name}",
+        "text": "*Fecho a porta do anexo e desço as escadas.*"
     }
 }

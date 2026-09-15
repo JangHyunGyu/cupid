@@ -720,5 +720,17 @@
     "lunch2_yuna_3_neg": {
         "name": "Yuna",
         "text": "*No note. She only turns a page.* I don't want to talk today."
+    },
+    "lunch2_seo_neg_leave": {
+        "name": "{name}",
+        "text": "*I shut the roof door and go down the stairs.*"
+    },
+    "lunch2_dain_neg_leave": {
+        "name": "{name}",
+        "text": "*I step out of the snack-shop line and stand in the hallway.*"
+    },
+    "lunch2_yuna_neg_leave": {
+        "name": "{name}",
+        "text": "*I shut the annex door and go down the stairs.*"
     }
 }

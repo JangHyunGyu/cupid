@@ -1094,7 +1094,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "after2_seo_neg_1": {
         "background": "assets/images/background/student_room.png",
         "character": "assets/images/characters/seyoun_pout.png",
-        "next": "after2_seo_4_b"
+        "next": "after2_seo_neg_leave"
     },
     "after2_dain_tone": {
         "background": "assets/images/background/gym.png",
@@ -1112,7 +1112,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "after2_dain_neg_1": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_angry.png",
-        "next": "after2_dain_4"
+        "next": "after2_dain_neg_leave"
     },
     "after2_yuna_tone": {
         "background": "assets/images/background/yuna_hideout.png",
@@ -1130,7 +1130,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "after2_yuna_neg_1": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_bored.png",
-        "next": "after2_yuna_3"
+        "next": "after2_yuna_neg_leave"
     },
     "after2_dain_rival_seo_neg": {
         "background": "assets/images/background/store.png",
@@ -1171,6 +1171,21 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/student_room.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "after2_seo_9"
+    },
+    "after2_seo_neg_leave": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "after2_seo_rival_dain_check"
+    },
+    "after2_dain_neg_leave": {
+        "background": "assets/images/background/store.png",
+        "character": null,
+        "next": "after2_dain_rival_seo_check"
+    },
+    "after2_yuna_neg_leave": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": null,
+        "next": "after2_yuna_rival_dain_check"
     }
     };
     for (const scene of Object.values(scenes)) {

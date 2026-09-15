@@ -591,5 +591,29 @@
     "after5_hidden_nurse_neg": {
         "name": "보건선생님",
         "text": "*상담 기록지를 파일에 넣고 예약표를 닫는다.* 다음부터는 정식 창구로만. 오늘은 여기까지."
+    },
+    "after5_last_chance_seo_neg": {
+        "name": "서연",
+        "text": "*출구 쪽으로 먼저 걷는다.* 오늘은 됐어."
+    },
+    "after5_last_chance_dain_neg": {
+        "name": "다인",
+        "text": "*공 가방을 멘 채 지나간다.* 부르지 마."
+    },
+    "after5_last_chance_yuna_neg": {
+        "name": "유나",
+        "text": "*책을 든 채 반대쪽으로 간다.* 오늘은 듣지 않을게."
+    },
+    "after5_confess_react_seo_neg": {
+        "name": "서연",
+        "text": "*열쇠를 주머니에 넣는다.* 그 말은 들을 사이가 아니야."
+    },
+    "after5_confess_react_dain_neg": {
+        "name": "다인",
+        "text": "*공을 집어 들고 먼저 돌아선다.* 그 말, 지금 들을 생각 없어."
+    },
+    "after5_confess_react_yuna_neg": {
+        "name": "유나",
+        "text": "*책장만 넘긴다.* 그 말은 받지 않아."
     }
 }

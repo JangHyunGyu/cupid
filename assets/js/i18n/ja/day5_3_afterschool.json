@@ -591,5 +591,29 @@
     "after5_hidden_nurse_neg": {
         "name": "保健室の先生",
         "text": "*相談記録をファイルに入れて予約表を閉じる。* これからは正式な窓口だけ。今日はここまで。"
+    },
+    "after5_last_chance_seo_neg": {
+        "name": "ソヨン",
+        "text": "*先に出口のほうへ歩く。* 今日はもういい。"
+    },
+    "after5_last_chance_dain_neg": {
+        "name": "ダイン",
+        "text": "*ボールバッグをかけたまま通り過ぎる。* 呼ばないで。"
+    },
+    "after5_last_chance_yuna_neg": {
+        "name": "ユナ",
+        "text": "*本を持ったまま反対へ行く。* 今日は聞かない。"
+    },
+    "after5_confess_react_seo_neg": {
+        "name": "ソヨン",
+        "text": "*鍵をポケットに入れる。* その話を聞く仲じゃない。"
+    },
+    "after5_confess_react_dain_neg": {
+        "name": "ダイン",
+        "text": "*ボールを拾って先に振り返る。* 今は聞く気ない。"
+    },
+    "after5_confess_react_yuna_neg": {
+        "name": "ユナ",
+        "text": "*ページだけめくる。* その言葉は受け取らない。"
     }
 }

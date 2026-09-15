@@ -720,5 +720,17 @@
     "lunch2_yuna_3_neg": {
         "name": "유나",
         "text": "*쪽지는 주지 않는다. 책장만 한 장 넘긴다.* 오늘은 말 섞기 싫어."
+    },
+    "lunch2_seo_neg_leave": {
+        "name": "{name}",
+        "text": "*옥상 문을 닫고 계단을 내려간다.*"
+    },
+    "lunch2_dain_neg_leave": {
+        "name": "{name}",
+        "text": "*매점 줄에서 빠져나와 복도로 선다.*"
+    },
+    "lunch2_yuna_neg_leave": {
+        "name": "{name}",
+        "text": "*별관 문을 닫고 계단을 내려간다.*"
     }
 }

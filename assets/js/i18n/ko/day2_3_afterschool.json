@@ -782,5 +782,17 @@
     "after2_seo_neck_neg_b": {
         "name": "서연",
         "text": "*상자를 원래 자리로 밀어 둔다.* 그건 됐어. 목록이나 맞춰."
+    },
+    "after2_seo_neg_leave": {
+        "name": "{name}",
+        "text": "*빈 칸만 채우고 학생회실을 나온다.*"
+    },
+    "after2_dain_neg_leave": {
+        "name": "{name}",
+        "text": "*체육관 문을 나와 매점 쪽으로 걷는다.*"
+    },
+    "after2_yuna_neg_leave": {
+        "name": "{name}",
+        "text": "*책을 덮지 않은 자리 곁을 나와 문 쪽으로 선다.*"
     }
 }

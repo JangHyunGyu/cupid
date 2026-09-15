@@ -591,5 +591,29 @@
     "after5_hidden_nurse_neg": {
         "name": "School Nurse",
         "text": "*She files the counseling form and closes the appointment sheet.* From now on, official channels only. That's it for today."
+    },
+    "after5_last_chance_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*She walks toward the exit first.* That's enough for today."
+    },
+    "after5_last_chance_dain_neg": {
+        "name": "Dain",
+        "text": "*She passes with the ball bag on her shoulder.* Don't call me."
+    },
+    "after5_last_chance_yuna_neg": {
+        "name": "Yuna",
+        "text": "*She goes the other way with her book.* I'm not listening today."
+    },
+    "after5_confess_react_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*She pockets the key.* We're not close enough for that."
+    },
+    "after5_confess_react_dain_neg": {
+        "name": "Dain",
+        "text": "*She picks up the ball and turns first.* I'm not hearing that now."
+    },
+    "after5_confess_react_yuna_neg": {
+        "name": "Yuna",
+        "text": "*She only turns a page.* I'm not taking that."
     }
 }

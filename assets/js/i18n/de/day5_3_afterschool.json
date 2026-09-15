@@ -591,5 +591,29 @@
     "after5_hidden_nurse_neg": {
         "name": "Schulkrankenschwester",
         "text": "*Sie heftet den Bogen ab und schließt den Terminplan.* Ab jetzt nur der Dienstweg. Für heute reicht's."
+    },
+    "after5_last_chance_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Sie geht zuerst zum Ausgang.* Für heute reicht es."
+    },
+    "after5_last_chance_dain_neg": {
+        "name": "Dain",
+        "text": "*Sie geht mit der Balltasche vorbei.* Ruf mich nicht."
+    },
+    "after5_last_chance_yuna_neg": {
+        "name": "Yuna",
+        "text": "*Sie geht mit dem Buch in die andere Richtung.* Heute höre ich nicht zu."
+    },
+    "after5_confess_react_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Sie steckt den Schlüssel ein.* Dafür sind wir uns nicht nah genug."
+    },
+    "after5_confess_react_dain_neg": {
+        "name": "Dain",
+        "text": "*Sie nimmt den Ball und dreht sich zuerst um.* Das höre ich jetzt nicht."
+    },
+    "after5_confess_react_yuna_neg": {
+        "name": "Yuna",
+        "text": "*Sie blättert nur um.* Das nehme ich nicht an."
     }
 }

@@ -720,5 +720,17 @@
     "lunch2_yuna_3_neg": {
         "name": "Yuna",
         "text": "*Kein Zettel. Sie blättert nur um.* Heute will ich nicht reden."
+    },
+    "lunch2_seo_neg_leave": {
+        "name": "{name}",
+        "text": "*Ich schließe die Dachtür und gehe die Treppe hinunter.*"
+    },
+    "lunch2_dain_neg_leave": {
+        "name": "{name}",
+        "text": "*Ich trete aus der Schlange am Kiosk und bleibe im Flur stehen.*"
+    },
+    "lunch2_yuna_neg_leave": {
+        "name": "{name}",
+        "text": "*Ich schließe die Tür des Anbaus und gehe die Treppe hinunter.*"
     }
 }

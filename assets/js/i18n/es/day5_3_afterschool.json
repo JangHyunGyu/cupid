@@ -591,5 +591,29 @@
     "after5_hidden_nurse_neg": {
         "name": "Enfermera",
         "text": "*Archiva la ficha y cierra la hoja de citas.* A partir de ahora, solo el cauce oficial. Por hoy, basta."
+    },
+    "after5_last_chance_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Camina primero hacia la salida.* Por hoy, basta."
+    },
+    "after5_last_chance_dain_neg": {
+        "name": "Dain",
+        "text": "*Pasa con la bolsa del balón al hombro.* No me llames."
+    },
+    "after5_last_chance_yuna_neg": {
+        "name": "Yuna",
+        "text": "*Se va al otro lado con el libro.* Hoy no voy a escuchar."
+    },
+    "after5_confess_react_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Se guarda la llave.* No estamos para esa conversación."
+    },
+    "after5_confess_react_dain_neg": {
+        "name": "Dain",
+        "text": "*Coge el balón y se gira primero.* Eso ahora no lo escucho."
+    },
+    "after5_confess_react_yuna_neg": {
+        "name": "Yuna",
+        "text": "*Solo pasa la página.* Eso no lo acepto."
     }
 }

@@ -782,5 +782,17 @@
     "after2_seo_neck_neg_b": {
         "name": "Seoyeon",
         "text": "*Sie schiebt den Karton zurück.* Brauche ich nicht. Halt dich an die Liste."
+    },
+    "after2_seo_neg_leave": {
+        "name": "{name}",
+        "text": "*Ich fülle nur die leeren Felder und verlasse den Schülerrat.*"
+    },
+    "after2_dain_neg_leave": {
+        "name": "{name}",
+        "text": "*Ich verlasse die Halle und bleibe im Flur stehen.*"
+    },
+    "after2_yuna_neg_leave": {
+        "name": "{name}",
+        "text": "*Ich gehe vom ungelesenen Buch weg und schließe die Tür des Anbaus.*"
     }
 }

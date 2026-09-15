@@ -782,5 +782,17 @@
     "after2_seo_neck_neg_b": {
         "name": "Seoyeon",
         "text": "*Elle remet la boîte à sa place.* Pas besoin. Tiens-toi à la liste."
+    },
+    "after2_seo_neg_leave": {
+        "name": "{name}",
+        "text": "*Je remplis seulement les cases vides et je quitte la salle du conseil.*"
+    },
+    "after2_dain_neg_leave": {
+        "name": "{name}",
+        "text": "*Je sors du gymnase et je m'arrête dans le couloir.*"
+    },
+    "after2_yuna_neg_leave": {
+        "name": "{name}",
+        "text": "*Je m'éloigne du livre encore ouvert et je ferme la porte de l'annexe.*"
     }
 }

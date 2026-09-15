@@ -104,6 +104,23 @@ test('below-threshold date and farewell guards split zero from negative', () => 
     assert.equal(createSceneRenderer({ Seoyeon: -2 }).resolveNextScene(scenes.after3_seo_skip), 'after3_seo_neg_1');
     assert.equal(createSceneRenderer({ Teacher: 8 }).resolveNextScene(scenes.hidden_homeroom_d5_skip), 'hidden_homeroom_d5_low');
     assert.equal(createSceneRenderer({ Teacher: -3 }).resolveNextScene(scenes.hidden_homeroom_d5_skip), 'hidden_homeroom_d5_neg');
+    assert.equal(createSceneRenderer({ Seoyeon: 12 }).resolveNextScene(scenes.after5_last_chance_seo_aff_check), 'after5_last_chance_seo_low_1');
+    assert.equal(createSceneRenderer({ Seoyeon: -2 }).resolveNextScene(scenes.after5_last_chance_seo_aff_check), 'after5_last_chance_seo_neg');
+    assert.equal(createSceneRenderer({ Dain: 8 }).resolveNextScene(scenes.after5_confess_aff_dain), 'after5_confess_react_dain_low');
+    assert.equal(createSceneRenderer({ Dain: -3 }).resolveNextScene(scenes.after5_confess_aff_dain), 'after5_confess_react_dain_neg');
+});
+
+test('negative lunch and afterschool do not continue the warm hangout', () => {
+    assert.equal(scenes.lunch2_seo_2_neg.next, 'lunch2_seo_neg_leave');
+    assert.equal(scenes.lunch2_dain_2_neg.next, 'lunch2_dain_neg_leave');
+    assert.equal(scenes.lunch2_yuna_3_neg.next, 'lunch2_yuna_neg_leave');
+    assert.equal(scenes.lunch2_seo_neg_leave.next, 'after2_start');
+    assert.equal(scenes.after2_seo_neg_1.next, 'after2_seo_neg_leave');
+    assert.equal(scenes.after2_dain_neg_1.next, 'after2_dain_neg_leave');
+    assert.equal(scenes.after2_yuna_neg_1.next, 'after2_yuna_neg_leave');
+    assert.equal(scenes.after2_dain_neg_leave.next, 'after2_dain_rival_seo_check');
+    assert.notEqual(scenes.after2_dain_neg_1.next, 'after2_dain_4');
+    assert.notEqual(scenes.after2_yuna_neg_1.next, 'after2_yuna_3');
 });
 
 test('negative-affinity copy exists in every language and differs from the zero-affinity line', () => {
@@ -120,7 +137,9 @@ test('negative-affinity copy exists in every language and differs from the zero-
         ['hidden_homeroom_d5_neg', 'hidden_homeroom_d5_low'],
         ['hidden_nurse_d5_neg', 'hidden_nurse_d5_low'],
         ['morning2_greet_none_neg_1', 'morning2_greet_none_1'],
-        ['after2_seo_neck_neg_b', 'after2_seo_neck_low_2']
+        ['after2_seo_neck_neg_b', 'after2_seo_neck_low_2'],
+        ['after5_last_chance_seo_neg', 'after5_last_chance_seo_low_2'],
+        ['after5_confess_react_seo_neg', 'after5_confess_react_seo_low']
     ];
     for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
         const copy = loadLocaleCopy(locale);

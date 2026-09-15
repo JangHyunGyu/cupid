@@ -720,5 +720,17 @@
     "lunch2_yuna_3_neg": {
         "name": "ユナ",
         "text": "*メモは渡さない。ページだけ一枚めくる。* 今日は話したくない。"
+    },
+    "lunch2_seo_neg_leave": {
+        "name": "{name}",
+        "text": "*屋上のドアを閉めて階段を降りる。*"
+    },
+    "lunch2_dain_neg_leave": {
+        "name": "{name}",
+        "text": "*売店の列から抜けて廊下に立つ。*"
+    },
+    "lunch2_yuna_neg_leave": {
+        "name": "{name}",
+        "text": "*別館のドアを閉めて階段を降りる。*"
     }
 }

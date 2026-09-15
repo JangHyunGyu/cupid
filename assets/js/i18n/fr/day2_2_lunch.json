@@ -720,5 +720,17 @@
     "lunch2_yuna_3_neg": {
         "name": "Yuna",
         "text": "*Pas de mot. Elle tourne seulement une page.* J'ai pas envie de parler aujourd'hui."
+    },
+    "lunch2_seo_neg_leave": {
+        "name": "{name}",
+        "text": "*Je ferme la porte du toit et je descends.*"
+    },
+    "lunch2_dain_neg_leave": {
+        "name": "{name}",
+        "text": "*Je sors de la file du kiosque et je m'arrête dans le couloir.*"
+    },
+    "lunch2_yuna_neg_leave": {
+        "name": "{name}",
+        "text": "*Je ferme la porte de l'annexe et je descends.*"
     }
 }

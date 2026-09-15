@@ -591,5 +591,29 @@
     "after5_hidden_nurse_neg": {
         "name": "Enfermeira",
         "text": "*Ela arquiva a ficha e fecha a agenda.* Daqui pra frente, só o canal oficial. Por hoje chega."
+    },
+    "after5_last_chance_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Ela anda primeiro para a saída.* Por hoje, chega."
+    },
+    "after5_last_chance_dain_neg": {
+        "name": "Dain",
+        "text": "*Passa com a bolsa da bola no ombro.* Não me chama."
+    },
+    "after5_last_chance_yuna_neg": {
+        "name": "Yuna",
+        "text": "*Vai para o outro lado com o livro.* Hoje não vou ouvir."
+    },
+    "after5_confess_react_seo_neg": {
+        "name": "Seoyeon",
+        "text": "*Guarda a chave.* Não estamos perto o bastante para isso."
+    },
+    "after5_confess_react_dain_neg": {
+        "name": "Dain",
+        "text": "*Pega a bola e se vira primeiro.* Isso agora eu não escuto."
+    },
+    "after5_confess_react_yuna_neg": {
+        "name": "Yuna",
+        "text": "*Só vira a página.* Isso eu não aceito."
     }
 }
