@@ -352,5 +352,17 @@
     "confess_dain_yes_low_1": {
         "name": "ダイン",
         "text": "*ボールバッグの紐を直す。* その言葉はまだ。今日は行け。"
+    },
+    "confess_seo_yes_neg": {
+        "name": "ソヨン",
+        "text": "*鍵をポケットに入れる。* その話を聞く間柄じゃない。"
+    },
+    "confess_yuna_yes_neg": {
+        "name": "ユナ",
+        "text": "*しおりを本に挟む。* その言葉は受け取らない。"
+    },
+    "confess_dain_yes_neg": {
+        "name": "ダイン",
+        "text": "*ボールバッグのひもを直す。* その話、今は聞く気ない。"
     }
 }

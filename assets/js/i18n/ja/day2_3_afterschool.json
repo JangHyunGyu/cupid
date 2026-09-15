@@ -794,5 +794,13 @@
     "after2_yuna_neg_leave": {
         "name": "{name}",
         "text": "*本を閉じない席のそばを離れて、別館のドアを閉める。*"
+    },
+    "after2_dain_cool_cont": {
+        "name": "{name}",
+        "text": "*ボールをかごに入れる。ダインはネットの方を見て、サーブの姿勢だけ取る。*"
+    },
+    "after2_yuna_cool_cont": {
+        "name": "{name}",
+        "text": "*開いた本のページを読む。ユナはイヤホンを付け直し、次のページをめくる。*"
     }
 }

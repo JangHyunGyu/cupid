@@ -352,5 +352,17 @@
     "confess_dain_yes_low_1": {
         "name": "Dain",
         "text": "*Elle ajuste la sangle du sac.* Pas ça, pas encore. File aujourd'hui."
+    },
+    "confess_seo_yes_neg": {
+        "name": "Seoyeon",
+        "text": "*Elle met la clé dans sa poche.* On n'est pas au point où j'écoute ça."
+    },
+    "confess_yuna_yes_neg": {
+        "name": "Yuna",
+        "text": "*Elle glisse le signet dans le livre.* Je prends pas ça."
+    },
+    "confess_dain_yes_neg": {
+        "name": "Dain",
+        "text": "*Elle rattrape la sangle du sac à ballons.* J'écoute pas ça maintenant."
     }
 }

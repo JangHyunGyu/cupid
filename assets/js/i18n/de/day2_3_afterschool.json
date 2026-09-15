@@ -794,5 +794,13 @@
     "after2_yuna_neg_leave": {
         "name": "{name}",
         "text": "*Ich gehe vom ungelesenen Buch weg und schließe die Tür des Anbaus.*"
+    },
+    "after2_dain_cool_cont": {
+        "name": "{name}",
+        "text": "*Ich lege Bälle in den Korb. Dain sieht zum Netz und geht nur in Aufschlaghaltung.*"
+    },
+    "after2_yuna_cool_cont": {
+        "name": "{name}",
+        "text": "*Ich lese eine Seite im aufgeschlagenen Buch. Yuna steckt den Ohrhörer wieder ein und blättert weiter.*"
     }
 }

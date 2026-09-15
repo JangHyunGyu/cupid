@@ -736,5 +736,9 @@
     "lunch2_seo_cool_cont": {
         "name": "{name}",
         "text": "*Le couvercle de la boîte s'ouvre. Le vent entre d'abord.*"
+    },
+    "lunch2_dain_cool_cont": {
+        "name": "{name}",
+        "text": "*Je prends un bun soboro et je paie. Dain ne prend que le sien.*"
     }
 }

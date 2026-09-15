@@ -736,5 +736,9 @@
     "lunch2_seo_cool_cont": {
         "name": "{name}",
         "text": "*Der Deckel der Lunchbox geht auf. Zuerst kommt nur Wind.*"
+    },
+    "lunch2_dain_cool_cont": {
+        "name": "{name}",
+        "text": "*Ich nehme ein Soboro-Brötchen und zahle. Dain nimmt nur ihres.*"
     }
 }

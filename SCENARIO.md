@@ -794,15 +794,6 @@
 
 ---
 
-### `lunch_seo_1_aff_neg`
-- 배경: `top_school.png`
-- 다음: `lunch_seo_2`
-
-- 캐릭터: `seyoun_pout.png`
-**서연**: *의자를 한 칸 밀어 두고 클립보드만 내려놓는다.* 학생회 일이야. 앉을 거면 앉아.
-
----
-
 ### `lunch_seo_2`
 - 배경: `top_school.png`
 - 다음: `lunch_seo_3`
@@ -1130,6 +1121,24 @@
 
 - 캐릭터: `seyoun_normal.png`
 **서연**: *도시락 뚜껑을 정리하고 접이식 의자를 신발 끝으로 한 뼘 밀어 둔다.* 바람 괜찮지?
+
+---
+
+### `lunch_seo_1_aff_neg`
+- 배경: `top_school.png`
+- 다음: `lunch_seo_neg_leave`
+
+- 캐릭터: `seyoun_pout.png`
+**서연**: *클립보드를 팔 안쪽에 붙인 채 난간만 본다.* 학생회 일이야. 오래 있지는 마.
+
+---
+
+### `lunch_seo_neg_leave`
+- 배경: `school_hallway.png`
+- 다음: `lunch_end`
+
+- 캐릭터: `없음`
+**{name}**: *옥상 문을 닫고 계단을 내려간다.*
 
 ---
 
@@ -4372,7 +4381,7 @@
 - 배경: `top_school.png`
 - 스탯: Seoyeon +6
 - 호감분기: Seoyeon
-  - [10+] → `lunch2_seo_2b_warm`
+  - [20+] → `lunch2_seo_2b_warm`
   - [0+] → `lunch2_seo_2b_cool`
   - [-19 이상] → `lunch2_seo_2b_cool`
   - [기본] → `lunch2_seo_2_neg`
@@ -4506,7 +4515,7 @@
 ### `lunch2_seo_2`
 - 배경: `top_school.png`
 - 호감분기: Seoyeon
-  - [10+] → `lunch2_seo_2_warm`
+  - [20+] → `lunch2_seo_2_warm`
   - [0+] → `lunch2_seo_2_cool`
   - [-19 이상] → `lunch2_seo_2_cool`
   - [기본] → `lunch2_seo_2_neg`
@@ -4839,7 +4848,6 @@
 
 ### `lunch2_seo_2_neg`
 - 배경: `top_school.png`
-- 스탯: Seoyeon +6
 - 다음: `lunch2_seo_neg_leave`
 
 - 캐릭터: `seyoun_pout.png`
@@ -4968,7 +4976,7 @@
 ### `lunch2_dain_tone`
 - 배경: `store.png`
 - 호감분기: Dain
-  - [10+] → `lunch2_dain_2`
+  - [20+] → `lunch2_dain_2`
   - [0+] → `lunch2_dain_2_cool`
   - [-19 이상] → `lunch2_dain_2_cool`
   - [기본] → `lunch2_dain_2_neg`
@@ -5064,22 +5072,31 @@
 
 ---
 
-### `lunch2_dain_2_cool`
-- 배경: `store.png`
-- 스탯: Dain +6
-- 다음: `lunch2_dain_8`
-
-- 캐릭터: `dain_normal.png`
-**다인**: 왔으면 줄이나 서. 빵은 네가 사는 거 알지.
-
----
-
 ### `lunch2_dain_8`
 - 배경: `store.png`
 - 다음: `lunch2_dain_9`
 
 - 캐릭터: `dain_pout.png`
 **다인**: 알았어, 알았어. 이모, 소보로 두 개요.
+
+---
+
+### `lunch2_dain_2_cool`
+- 배경: `store.png`
+- 스탯: Dain +6
+- 다음: `lunch2_dain_cool_cont`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 왔으면 줄이나 서. 빵은 네가 사는 거 알지.
+
+---
+
+### `lunch2_dain_cool_cont`
+- 배경: `store.png`
+- 다음: `lunch2_dain_9`
+
+- 캐릭터: `dain_normal.png`
+**{name}**: *소보로를 집어 계산한다. 다인은 자기 몫만 받아 든다.*
 
 ---
 
@@ -5513,7 +5530,6 @@
 
 ### `lunch2_dain_2_neg`
 - 배경: `store.png`
-- 스탯: Dain +6
 - 다음: `lunch2_dain_neg_leave`
 
 - 캐릭터: `dain_angry.png`
@@ -5556,7 +5572,7 @@
 ### `lunch2_yuna_3`
 - 배경: `yuna_hideout.png`
 - 호감분기: Yuna
-  - [10+] → `lunch2_yuna_3_warm`
+  - [20+] → `lunch2_yuna_3_warm`
   - [0+] → `lunch2_yuna_3_cool`
   - [-19 이상] → `lunch2_yuna_3_cool`
   - [기본] → `lunch2_yuna_3_neg`
@@ -5634,7 +5650,6 @@
 
 ### `lunch2_yuna_3_neg`
 - 배경: `yuna_hideout.png`
-- 스탯: Yuna +6
 - 다음: `lunch2_yuna_neg_leave`
 
 - 캐릭터: `yuna_bored.png`
@@ -6312,7 +6327,7 @@
 ### `after2_dain_tone`
 - 배경: `gym.png`
 - 호감분기: Dain
-  - [10+] → `after2_dain_2`
+  - [20+] → `after2_dain_2`
   - [0+] → `after2_dain_cool_1`
   - [-19 이상] → `after2_dain_cool_1`
   - [기본] → `after2_dain_neg_1`
@@ -6384,15 +6399,6 @@
 
 - 캐릭터: `dain_laugh.png`
 **다인**: 배고프거든.
-
----
-
-### `after2_dain_cool_1`
-- 배경: `gym.png`
-- 다음: `after2_dain_9`
-
-- 캐릭터: `dain_normal.png`
-**다인**: 왔으면 공부터 주워. 말은 나중에.
 
 ---
 
@@ -6493,6 +6499,24 @@
 
 - 캐릭터: `dain_normal.png`
 **{name}**: 속인 건 아니고 물어보지도 않았잖아.
+
+---
+
+### `after2_dain_cool_1`
+- 배경: `gym.png`
+- 다음: `after2_dain_cool_cont`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 왔으면 공부터 주워. 말은 나중에.
+
+---
+
+### `after2_dain_cool_cont`
+- 배경: `gym.png`
+- 다음: `after2_dain_16`
+
+- 캐릭터: `dain_normal.png`
+**{name}**: *공을 바구니에 넣는다. 다인은 네트 쪽을 보며 서브 자세만 취한다.*
 
 ---
 
@@ -6808,7 +6832,7 @@
 ### `after2_seo_tone`
 - 배경: `student_room.png`
 - 호감분기: Seoyeon
-  - [10+] → `after2_seo_2`
+  - [20+] → `after2_seo_2`
   - [0+] → `after2_seo_cool_1`
   - [-19 이상] → `after2_seo_cool_1`
   - [기본] → `after2_seo_neg_1`
@@ -7470,7 +7494,7 @@
 ### `after2_yuna_tone`
 - 배경: `yuna_hideout.png`
 - 호감분기: Yuna
-  - [10+] → `after2_yuna_2_b`
+  - [20+] → `after2_yuna_2_b`
   - [0+] → `after2_yuna_cool_1`
   - [-19 이상] → `after2_yuna_cool_1`
   - [기본] → `after2_yuna_neg_1`
@@ -7515,15 +7539,6 @@
 
 - 캐릭터: `yuna_normal.png`
 **유나**: 불러야 오는 거야?
-
----
-
-### `after2_yuna_cool_1`
-- 배경: `yuna_hideout.png`
-- 다음: `after2_yuna_6`
-
-- 캐릭터: `yuna_bored.png`
-**유나**: *이어폰 한쪽만 치운다.* 읽어도 돼. 말은 조금만.
 
 ---
 
@@ -7698,6 +7713,24 @@
 
 - 캐릭터: `yuna_normal.png`
 **유나**: *책갈피가 한 장 앞으로 옮겨간다. 소파 끝의 이어폰을 가방에 넣는다.*
+
+---
+
+### `after2_yuna_cool_1`
+- 배경: `yuna_hideout.png`
+- 다음: `after2_yuna_cool_cont`
+
+- 캐릭터: `yuna_bored.png`
+**유나**: *이어폰 한쪽만 치운다.* 읽어도 돼. 말은 조금만.
+
+---
+
+### `after2_yuna_cool_cont`
+- 배경: `yuna_hideout.png`
+- 다음: `after2_yuna_end`
+
+- 캐릭터: `yuna_bored.png`
+**{name}**: *펼쳐진 책 한 쪽을 읽는다. 유나는 이어폰을 다시 끼고 다음 장을 넘긴다.*
 
 ---
 
@@ -18072,7 +18105,9 @@
 - 호감분기: Seoyeon
   - [60+] → `confess_seo_yes_8`
   - [40+] → `confess_seo_yes_mid_1`
-  - [기본] → `confess_seo_yes_low_1`
+  - [0+] → `confess_seo_yes_low_1`
+  - [-19 이상] → `confess_seo_yes_low_1`
+  - [기본] → `confess_seo_yes_neg`
 
 - 캐릭터: `seyoun_shy2.png`
 **{name}**: *난간 아래 운동장 조명이 한 줄 더 켜진다. 서연은 열쇠고리를 쥔 채 그대로 서 있다.*
@@ -18158,6 +18193,17 @@
 
 - 캐릭터: `seyoun_pout.png`
 **서연**: *열쇠를 주머니에 넣는다.* 오늘은 여기까지. 그 말은 아직 받지 못할게.
+
+---
+
+### `confess_seo_yes_neg`
+- 배경: `top_school.png`
+- 배경톤: `warm`
+- 플래그: `postponed_seoyeon`, `day4_waited`
+- 다음: `day4_night_start`
+
+- 캐릭터: `seyoun_pout.png`
+**서연**: *열쇠를 주머니에 넣는다.* 그 말은 들을 사이가 아니야.
 
 ---
 
@@ -18372,7 +18418,9 @@
 - 호감분기: Yuna
   - [60+] → `confess_yuna_yes_8`
   - [40+] → `confess_yuna_yes_mid_1`
-  - [기본] → `confess_yuna_yes_low_1`
+  - [0+] → `confess_yuna_yes_low_1`
+  - [-19 이상] → `confess_yuna_yes_low_1`
+  - [기본] → `confess_yuna_yes_neg`
 
 - 캐릭터: `yuna_shy.png`
 **{name}**: *책갈피는 소파 위에 놓인 채다.*
@@ -18449,6 +18497,17 @@
 
 - 캐릭터: `yuna_bored.png`
 **유나**: *책갈피를 책 사이에 밀어 넣는다.* 오늘은 그 말, 받지 않을게.
+
+---
+
+### `confess_yuna_yes_neg`
+- 배경: `yuna_hideout.png`
+- 배경톤: `dream`
+- 플래그: `postponed_yuna`, `day4_waited`
+- 다음: `day4_night_start`
+
+- 캐릭터: `yuna_bored.png`
+**유나**: *책갈피를 책 사이에 밀어 넣는다.* 그 말은 받지 않아.
 
 ---
 
@@ -18650,7 +18709,9 @@
 - 호감분기: Dain
   - [60+] → `confess_dain_yes_8`
   - [40+] → `confess_dain_yes_mid_1`
-  - [기본] → `confess_dain_yes_low_1`
+  - [0+] → `confess_dain_yes_low_1`
+  - [-19 이상] → `confess_dain_yes_low_1`
+  - [기본] → `confess_dain_yes_neg`
 
 - 캐릭터: `dain_shy.png`
 **{name}**: *체육관 조명이 낮게 웅웅거린다.*
@@ -18737,6 +18798,17 @@
 
 - 캐릭터: `dain_angry.png`
 **다인**: *공 가방 끈을 고쳐 멘다.* 그 말은 아직. 오늘은 가.
+
+---
+
+### `confess_dain_yes_neg`
+- 배경: `gym.png`
+- 배경톤: `lights-off`
+- 플래그: `postponed_dain`, `day4_waited`
+- 다음: `day4_night_start`
+
+- 캐릭터: `dain_angry.png`
+**다인**: *공 가방 끈을 고쳐 멘다.* 그 말, 지금 들을 생각 없어.
 
 ---
 

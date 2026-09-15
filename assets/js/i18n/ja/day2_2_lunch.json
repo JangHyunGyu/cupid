@@ -736,5 +736,9 @@
     "lunch2_seo_cool_cont": {
         "name": "{name}",
         "text": "*弁当の蓋が開く。先に風だけが入ってくる。*"
+    },
+    "lunch2_dain_cool_cont": {
+        "name": "{name}",
+        "text": "*ソボロパンを取って会計する。ダインは自分の分だけ受け取る。*"
     }
 }

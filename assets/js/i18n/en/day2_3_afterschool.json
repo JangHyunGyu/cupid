@@ -794,5 +794,13 @@
     "after2_yuna_neg_leave": {
         "name": "{name}",
         "text": "*I step away from the unread book and stand by the door.*"
+    },
+    "after2_dain_cool_cont": {
+        "name": "{name}",
+        "text": "*I put balls in the basket. Dain faces the net and only holds a serve stance.*"
+    },
+    "after2_yuna_cool_cont": {
+        "name": "{name}",
+        "text": "*I read a page of the open book. Yuna puts her earphone back in and turns the next page.*"
     }
 }

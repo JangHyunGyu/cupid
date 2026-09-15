@@ -470,6 +470,10 @@
     },
     "lunch_seo_1_aff_neg": {
         "name": "Seoyeon",
-        "text": "*Aparta una silla y deja solo el portapapeles.* Trabajo del consejo. Siéntate si te vas a quedar."
+        "text": "*Se aprieta el portapapeles contra el brazo y mira solo la barandilla.* Trabajo del consejo. No te quedes mucho."
+    },
+    "lunch_seo_neg_leave": {
+        "name": "{name}",
+        "text": "*Cierro la puerta de la azotea y bajo las escaleras.*"
     }
 }

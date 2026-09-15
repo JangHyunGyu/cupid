@@ -794,5 +794,13 @@
     "after2_yuna_neg_leave": {
         "name": "{name}",
         "text": "*Me alejo del asiento con el libro abierto y cierro la puerta del anexo.*"
+    },
+    "after2_dain_cool_cont": {
+        "name": "{name}",
+        "text": "*Meto los balones en la cesta. Dain mira la red y solo se coloca para sacar.*"
+    },
+    "after2_yuna_cool_cont": {
+        "name": "{name}",
+        "text": "*Leo una página del libro abierto. Yuna se vuelve a poner el auricular y pasa la hoja.*"
     }
 }

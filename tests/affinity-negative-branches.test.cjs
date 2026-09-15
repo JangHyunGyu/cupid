@@ -73,7 +73,7 @@ test('negative affinity uses a dedicated line instead of the default greeting', 
         ['wall_seo_1', 'Seoyeon', 'wall_seo_skip', 'wall_seo_pre_low_1'],
         ['wall_dain_1', 'Dain', 'wall_dain_skip', 'wall_dain_pre_low_1'],
         ['wall_yuna_1', 'Yuna', 'wall_yuna_skip', 'wall_yuna_pre_low_1'],
-        ['confess_seo_yes_7', 'Seoyeon', 'confess_seo_yes_low_1', 'confess_seo_yes_low_1'],
+        ['confess_seo_yes_7', 'Seoyeon', 'confess_seo_yes_neg', 'confess_seo_yes_low_1'],
         ['morning5_mood_check', 'selectByHighestAffinity', 'morning5_mood_neg', 'morning5_mood_low'],
         ['morning2_greet_none_tone', 'selectByHighestAffinity', 'morning2_greet_none_neg_1', 'morning2_greet_none_1']
     ];
@@ -138,9 +138,20 @@ test('negative lunch and afterschool do not continue the warm hangout', () => {
     assert.notEqual(scenes.after2_yuna_neg_1.next, 'after2_yuna_3');
     assert.equal(scenes.lunch2_seo_2_cool.next, 'lunch2_seo_cool_cont');
     assert.notEqual(scenes.lunch2_seo_2_cool.next, 'lunch2_seo_3');
-    assert.equal(scenes.lunch2_dain_2_cool.next, 'lunch2_dain_8');
-    assert.equal(scenes.after2_yuna_cool_1.next, 'after2_yuna_6');
-    assert.equal(scenes.after2_dain_cool_1.next, 'after2_dain_9');
+    assert.equal(scenes.lunch2_dain_2_cool.next, 'lunch2_dain_cool_cont');
+    assert.equal(scenes.lunch2_dain_cool_cont.next, 'lunch2_dain_9');
+    assert.equal(scenes.after2_yuna_cool_1.next, 'after2_yuna_cool_cont');
+    assert.equal(scenes.after2_dain_cool_1.next, 'after2_dain_cool_cont');
+    assert.equal(scenes.after2_dain_cool_cont.next, 'after2_dain_16');
+    assert.equal(scenes.after2_yuna_cool_cont.next, 'after2_yuna_end');
+    assert.equal(scenes.lunch_seo_1_aff_neg.next, 'lunch_seo_neg_leave');
+    assert.equal(scenes.lunch_seo_neg_leave.next, 'lunch_end');
+    assert.equal(createSceneRenderer({ Seoyeon: 10 }).resolveNextScene(scenes.lunch2_seo_2), 'lunch2_seo_2_cool');
+    assert.equal(createSceneRenderer({ Seoyeon: 20 }).resolveNextScene(scenes.lunch2_seo_2), 'lunch2_seo_2_warm');
+    assert.equal(createSceneRenderer({ Seoyeon: -25 }).resolveNextScene(scenes.confess_seo_yes_7), 'confess_seo_yes_neg');
+    assert.equal(scenes.lunch2_seo_2_neg.stats, undefined);
+    assert.equal(scenes.lunch2_dain_2_neg.stats, undefined);
+    assert.equal(scenes.lunch2_yuna_3_neg.stats, undefined);
     assert.equal(scenes.night2_reply_dain_react_neg.next, 'night2_hidden_check');
     assert.equal(scenes.night2_reply_seo_react_neg.next, 'night2_hidden_check');
     assert.equal(scenes.night2_reply_yuna_react_neg.next, 'night2_hidden_check');
@@ -154,6 +165,7 @@ test('negative-affinity copy exists in every language and differs from the zero-
         ['morning3_date_seo_neg', 'morning3_date_seo_low'],
         ['wall_seo_skip', 'wall_seo_pre_low_1'],
         ['confess_seo_yes_low_1', 'confess_seo_yes_mid_1'],
+        ['confess_seo_yes_neg', 'confess_seo_yes_low_1'],
         ['after5_farewell_seo_neg', 'after5_farewell_seo_low'],
         ['after5_hidden_teacher_neg', 'after5_hidden_teacher_low'],
         ['after3_seo_neg_1', 'after3_seo_low_1'],
@@ -162,7 +174,11 @@ test('negative-affinity copy exists in every language and differs from the zero-
         ['morning2_greet_none_neg_1', 'morning2_greet_none_1'],
         ['after2_seo_neck_neg_b', 'after2_seo_neck_low_2'],
         ['after5_last_chance_seo_neg', 'after5_last_chance_seo_low_2'],
-        ['after5_confess_react_seo_neg', 'after5_confess_react_seo_low']
+        ['after5_confess_react_seo_neg', 'after5_confess_react_seo_low'],
+        ['lunch_seo_neg_leave', 'lunch_seo_2'],
+        ['lunch2_dain_cool_cont', 'lunch2_dain_8'],
+        ['after2_dain_cool_cont', 'after2_dain_9'],
+        ['after2_yuna_cool_cont', 'after2_yuna_6']
     ];
     for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
         const copy = loadLocaleCopy(locale);

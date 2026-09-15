@@ -736,5 +736,9 @@
     "lunch2_seo_cool_cont": {
         "name": "{name}",
         "text": "*Se abre la tapa del táper. Primero entra el viento.*"
+    },
+    "lunch2_dain_cool_cont": {
+        "name": "{name}",
+        "text": "*Cojo un bollo soboro y pago. Dain coge solo el suyo.*"
     }
 }

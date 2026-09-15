@@ -352,5 +352,17 @@
     "confess_dain_yes_low_1": {
         "name": "Dain",
         "text": "*Sie richtet den Riemen.* Das noch nicht. Geh heute."
+    },
+    "confess_seo_yes_neg": {
+        "name": "Seoyeon",
+        "text": "*Sie steckt den Schlüssel ein.* Wir sind nicht so weit, dass ich mir das anhöre."
+    },
+    "confess_yuna_yes_neg": {
+        "name": "Yuna",
+        "text": "*Sie schiebt das Lesezeichen ins Buch.* Das nehme ich nicht an."
+    },
+    "confess_dain_yes_neg": {
+        "name": "Dain",
+        "text": "*Sie richtet den Riemen der Balltasche.* Das höre ich mir jetzt nicht an."
     }
 }

@@ -794,5 +794,13 @@
     "after2_yuna_neg_leave": {
         "name": "{name}",
         "text": "*책을 덮지 않은 채 자리 옆을 지나 문 쪽으로 선다.*"
+    },
+    "after2_dain_cool_cont": {
+        "name": "{name}",
+        "text": "*공을 바구니에 넣는다. 다인은 네트 쪽을 보며 서브 자세만 취한다.*"
+    },
+    "after2_yuna_cool_cont": {
+        "name": "{name}",
+        "text": "*펼쳐진 책 한 쪽을 읽는다. 유나는 이어폰을 다시 끼고 다음 장을 넘긴다.*"
     }
 }

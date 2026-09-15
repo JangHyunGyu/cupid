@@ -112,7 +112,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "backgroundVariant": "warm",
         "character": "assets/images/characters/seyoun_shy2.png",
         "affinityChar": "Seoyeon",
-        "affinityBranches": [{"minAffinity":60,"next":"confess_seo_yes_8"},{"minAffinity":40,"next":"confess_seo_yes_mid_1"},{"minAffinity":-100,"next":"confess_seo_yes_low_1"}]
+        "affinityBranches": [{"minAffinity":60,"next":"confess_seo_yes_8"},{"minAffinity":40,"next":"confess_seo_yes_mid_1"},{"minAffinity":0,"next":"confess_seo_yes_low_1"},{"minAffinity":-19,"next":"confess_seo_yes_low_1"},{"minAffinity":-100,"next":"confess_seo_yes_neg"}]
     },
     "confess_seo_yes_8": {
         "background": "assets/images/background/top_school.png",
@@ -285,7 +285,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_shy.png",
         "affinityChar": "Yuna",
-        "affinityBranches": [{"minAffinity":60,"next":"confess_yuna_yes_8"},{"minAffinity":40,"next":"confess_yuna_yes_mid_1"},{"minAffinity":-100,"next":"confess_yuna_yes_low_1"}]
+        "affinityBranches": [{"minAffinity":60,"next":"confess_yuna_yes_8"},{"minAffinity":40,"next":"confess_yuna_yes_mid_1"},{"minAffinity":0,"next":"confess_yuna_yes_low_1"},{"minAffinity":-19,"next":"confess_yuna_yes_low_1"},{"minAffinity":-100,"next":"confess_yuna_yes_neg"}]
     },
     "confess_yuna_yes_8": {
         "background": "assets/images/background/yuna_hideout.png",
@@ -444,7 +444,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "backgroundVariant": "lights-off",
         "character": "assets/images/characters/dain_shy.png",
         "affinityChar": "Dain",
-        "affinityBranches": [{"minAffinity":60,"next":"confess_dain_yes_8"},{"minAffinity":40,"next":"confess_dain_yes_mid_1"},{"minAffinity":-100,"next":"confess_dain_yes_low_1"}]
+        "affinityBranches": [{"minAffinity":60,"next":"confess_dain_yes_8"},{"minAffinity":40,"next":"confess_dain_yes_mid_1"},{"minAffinity":0,"next":"confess_dain_yes_low_1"},{"minAffinity":-19,"next":"confess_dain_yes_low_1"},{"minAffinity":-100,"next":"confess_dain_yes_neg"}]
     },
     "confess_dain_yes_8": {
         "background": "assets/images/background/gym.png",
@@ -570,6 +570,27 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "confess_dain_yes_10_b"
     },
     "confess_dain_yes_low_1": {
+        "background": "assets/images/background/gym.png",
+        "backgroundVariant": "lights-off",
+        "character": "assets/images/characters/dain_angry.png",
+        "setFlags": ["postponed_dain","day4_waited"],
+        "next": "day4_night_start"
+    },
+    "confess_seo_yes_neg": {
+        "background": "assets/images/background/top_school.png",
+        "backgroundVariant": "warm",
+        "character": "assets/images/characters/seyoun_pout.png",
+        "setFlags": ["postponed_seoyeon","day4_waited"],
+        "next": "day4_night_start"
+    },
+    "confess_yuna_yes_neg": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "backgroundVariant": "dream",
+        "character": "assets/images/characters/yuna_bored.png",
+        "setFlags": ["postponed_yuna","day4_waited"],
+        "next": "day4_night_start"
+    },
+    "confess_dain_yes_neg": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
         "character": "assets/images/characters/dain_angry.png",

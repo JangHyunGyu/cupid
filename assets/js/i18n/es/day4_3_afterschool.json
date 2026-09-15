@@ -352,5 +352,17 @@
     "confess_dain_yes_low_1": {
         "name": "Dain",
         "text": "*Ajusta la correa de la bolsa.* Eso todavía no. Hoy vete."
+    },
+    "confess_seo_yes_neg": {
+        "name": "Seoyeon",
+        "text": "*Se mete la llave en el bolsillo.* No estamos para que yo escuche eso."
+    },
+    "confess_yuna_yes_neg": {
+        "name": "Yuna",
+        "text": "*Mete el marcapáginas en el libro.* Eso no lo acepto."
+    },
+    "confess_dain_yes_neg": {
+        "name": "Dain",
+        "text": "*Se ajusta la correa de la bolsa.* Eso ahora no lo escucho."
     }
 }

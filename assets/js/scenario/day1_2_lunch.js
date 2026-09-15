@@ -603,7 +603,12 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "lunch_seo_1_aff_neg": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_pout.png",
-        "next": "lunch_seo_2"
+        "next": "lunch_seo_neg_leave"
+    },
+    "lunch_seo_neg_leave": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "lunch_end"
     }
     };
     for (const scene of Object.values(scenes)) {

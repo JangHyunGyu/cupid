@@ -470,6 +470,10 @@
     },
     "lunch_seo_1_aff_neg": {
         "name": "Seoyeon",
-        "text": "*Sie schiebt einen Stuhl zur Seite und legt nur das Klemmbrett hin.* Schülerrat. Setz dich, wenn du bleibst."
+        "text": "*Sie klemmt das Klemmbrett unter den Arm und sieht nur aufs Geländer.* Schülerrat. Bleib nicht lange."
+    },
+    "lunch_seo_neg_leave": {
+        "name": "{name}",
+        "text": "*Ich schließe die Dachtür und gehe die Treppe hinunter.*"
     }
 }

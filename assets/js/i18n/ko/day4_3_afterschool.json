@@ -352,5 +352,17 @@
     "confess_dain_yes_low_1": {
         "name": "다인",
         "text": "*공 가방 끈을 고쳐 멘다.* 그 말은 아직. 오늘은 가."
+    },
+    "confess_seo_yes_neg": {
+        "name": "서연",
+        "text": "*열쇠를 주머니에 넣는다.* 그 말은 들을 사이가 아니야."
+    },
+    "confess_yuna_yes_neg": {
+        "name": "유나",
+        "text": "*책갈피를 책 사이에 밀어 넣는다.* 그 말은 받지 않아."
+    },
+    "confess_dain_yes_neg": {
+        "name": "다인",
+        "text": "*공 가방 끈을 고쳐 멘다.* 그 말, 지금 들을 생각 없어."
     }
 }

@@ -470,6 +470,10 @@
     },
     "lunch_seo_1_aff_neg": {
         "name": "Seoyeon",
-        "text": "*She nudges a chair aside and sets down only her clipboard.* Student council work. Sit if you're sitting."
+        "text": "*She tucks the clipboard under her arm and looks only at the railing.* Student council work. Don't stay long."
+    },
+    "lunch_seo_neg_leave": {
+        "name": "{name}",
+        "text": "*I close the rooftop door and go down the stairs.*"
     }
 }

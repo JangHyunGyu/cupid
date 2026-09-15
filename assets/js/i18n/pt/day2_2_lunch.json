@@ -736,5 +736,9 @@
     "lunch2_seo_cool_cont": {
         "name": "{name}",
         "text": "*A tampa da marmita abre. O vento entra primeiro.*"
+    },
+    "lunch2_dain_cool_cont": {
+        "name": "{name}",
+        "text": "*Pego um pão soboro e pago. Dain pega só o dela.*"
     }
 }

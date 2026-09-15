@@ -736,5 +736,9 @@
     "lunch2_seo_cool_cont": {
         "name": "{name}",
         "text": "*The lunch box lid opens. The wind comes in first.*"
+    },
+    "lunch2_dain_cool_cont": {
+        "name": "{name}",
+        "text": "*I grab a soboro bun and pay. Dain takes only her own.*"
     }
 }

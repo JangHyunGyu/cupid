@@ -736,5 +736,9 @@
     "lunch2_seo_cool_cont": {
         "name": "{name}",
         "text": "*도시락 뚜껑이 열린다. 바람만 먼저 들어온다.*"
+    },
+    "lunch2_dain_cool_cont": {
+        "name": "{name}",
+        "text": "*소보로를 집어 계산한다. 다인은 자기 몫만 받아 든다.*"
     }
 }

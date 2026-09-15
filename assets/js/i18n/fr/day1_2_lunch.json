@@ -470,6 +470,10 @@
     },
     "lunch_seo_1_aff_neg": {
         "name": "Seoyeon",
-        "text": "*Elle écarte une chaise et pose seulement son bloc-notes.* Travail du conseil. Assieds-toi si tu restes."
+        "text": "*Elle serre le bloc-notes contre son bras et ne regarde que la rambarde.* Travail du conseil. Ne reste pas longtemps."
+    },
+    "lunch_seo_neg_leave": {
+        "name": "{name}",
+        "text": "*Je ferme la porte du toit et je descends.*"
     }
 }

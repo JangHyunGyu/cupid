@@ -352,5 +352,17 @@
     "confess_dain_yes_low_1": {
         "name": "Dain",
         "text": "*She fixes the strap on the ball bag.* Not that yet. Go today."
+    },
+    "confess_seo_yes_neg": {
+        "name": "Seoyeon",
+        "text": "*She pockets the key.* We're not on terms where I listen to that."
+    },
+    "confess_yuna_yes_neg": {
+        "name": "Yuna",
+        "text": "*She slides the bookmark back in.* I'm not taking that."
+    },
+    "confess_dain_yes_neg": {
+        "name": "Dain",
+        "text": "*She fixes the strap on the ball bag.* I'm not listening to that right now."
     }
 }

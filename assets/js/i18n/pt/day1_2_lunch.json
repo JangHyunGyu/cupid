@@ -470,6 +470,10 @@
     },
     "lunch_seo_1_aff_neg": {
         "name": "Seoyeon",
-        "text": "*Ela empurra uma cadeira e deixa só a prancheta.* Trabalho do grêmio. Senta se for ficar."
+        "text": "*Ela prende a prancheta no braço e olha só o parapeito.* Trabalho do grêmio. Não fica muito."
+    },
+    "lunch_seo_neg_leave": {
+        "name": "{name}",
+        "text": "*Fecho a porta do terraço e desço a escada.*"
     }
 }
