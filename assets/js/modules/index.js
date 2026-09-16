@@ -97,8 +97,7 @@ window.gameEngine = null;
  */
 // Request during the initiating gesture, before localization or save loading.
 window.initGame = async () => {
-    window.ArcherImmersive?.autoEnter();
-    if (window._i18nReady) await window._i18nReady;
+if (window._i18nReady) await window._i18nReady;
     gameEngine = new GameEngine();  // 게임 엔진 인스턴스 생성
     window.gameEngine = gameEngine; // 개발자 도구에서 접근 가능
     await gameEngine.startNewGame();  // 처음부터 시작
@@ -112,8 +111,7 @@ window.initGame = async () => {
  * <button onclick="initGameFromSave()">이어하기</button>
  */
 window.initGameFromSave = async (saveData) => {
-    window.ArcherImmersive?.autoEnter();
-    if (window._i18nReady) await window._i18nReady;
+if (window._i18nReady) await window._i18nReady;
     gameEngine = new GameEngine();  // 게임 엔진 인스턴스 생성
     window.gameEngine = gameEngine; // 개발자 도구에서 접근 가능
     await gameEngine.continueGame();  // 저장 지점부터 재개
