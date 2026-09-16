@@ -297,9 +297,11 @@ class UIManager {
 
         const focusedElement = document.activeElement;
         const shouldTrack = focusedElement && this.uiLayer.contains(focusedElement);
-        const keyboardOffset = shouldTrack && typeof window.getCupidKeyboardOffset === 'function'
-            ? window.getCupidKeyboardOffset(focusedElement)
-            : 0;
+        const keyboardOffset = document.documentElement.classList.contains('archer-immersive-keyboard')
+            ? 0
+            : (shouldTrack && typeof window.getCupidKeyboardOffset === 'function'
+                ? window.getCupidKeyboardOffset(focusedElement)
+                : 0);
 
         this.uiLayer.style.setProperty('--keyboard-offset', `${keyboardOffset}px`);
         this.uiLayer.classList.toggle('keyboard-active', keyboardOffset > 0);
