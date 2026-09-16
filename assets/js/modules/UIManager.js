@@ -272,6 +272,9 @@ class UIManager {
             window.visualViewport.addEventListener('scroll', this._keyboardViewportHandler);
         }
         window.addEventListener('resize', this._keyboardViewportHandler);
+        document.addEventListener('fullscreenchange', this._keyboardViewportHandler);
+        document.addEventListener('webkitfullscreenchange', this._keyboardViewportHandler);
+        window.navigator?.virtualKeyboard?.addEventListener?.('geometrychange', this._keyboardViewportHandler);
         this._keyboardOrientationHandler = () => this._queueMobileKeyboardUpdate(160);
         window.addEventListener('orientationchange', this._keyboardOrientationHandler);
 
@@ -297,11 +300,9 @@ class UIManager {
 
         const focusedElement = document.activeElement;
         const shouldTrack = focusedElement && this.uiLayer.contains(focusedElement);
-        const keyboardOffset = document.documentElement.classList.contains('archer-immersive-keyboard')
-            ? 0
-            : (shouldTrack && typeof window.getCupidKeyboardOffset === 'function'
-                ? window.getCupidKeyboardOffset(focusedElement)
-                : 0);
+        const keyboardOffset = shouldTrack && typeof window.getCupidKeyboardOffset === 'function'
+            ? window.getCupidKeyboardOffset(focusedElement)
+            : 0;
 
         this.uiLayer.style.setProperty('--keyboard-offset', `${keyboardOffset}px`);
         this.uiLayer.classList.toggle('keyboard-active', keyboardOffset > 0);

@@ -685,11 +685,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             const uiLayer = this.overlayEl.querySelector('.gft-ui-layer');
             const updateKeyboardOffset = () => {
                 if (!uiLayer) return;
-                const keyboardOffset = document.documentElement.classList.contains('archer-immersive-keyboard')
-                    ? 0
-                    : (typeof window.getCupidKeyboardOffset === 'function'
-                        ? window.getCupidKeyboardOffset(document.activeElement)
-                        : 0);
+                const keyboardOffset = typeof window.getCupidKeyboardOffset === 'function'
+                    ? window.getCupidKeyboardOffset(document.activeElement)
+                    : 0;
                 uiLayer.style.setProperty('--keyboard-offset', `${keyboardOffset}px`);
                 uiLayer.classList.toggle('keyboard-active', keyboardOffset > 0);
                 uiLayer.style.transform = keyboardOffset > 0

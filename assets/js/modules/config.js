@@ -227,20 +227,27 @@ function updateCupidKeyboardBaseline() {
 
 function getCupidKeyboardOffset(focusedElement = document.activeElement) {
     const viewport = window.visualViewport;
-    if (!viewport || window.innerWidth > 768 || !isCupidEditableElement(focusedElement)) {
+    if (window.innerWidth > 768 || !isCupidEditableElement(focusedElement)) {
         updateCupidKeyboardBaseline();
         return 0;
     }
 
-    const viewportHeight = viewport.height;
-    const viewportTop = viewport.offsetTop || 0;
+    const fullscreen = Boolean(
+        document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement
+    );
+    const virtualKeyboardHeight = Math.round(window.navigator?.virtualKeyboard?.boundingRect?.height || 0);
+    const viewportHeight = viewport?.height || window.innerHeight || 0;
+    const viewportTop = viewport?.offsetTop || 0;
     const layoutHeight = Math.max(
         cupidKeyboardBaselineHeight,
         window.innerHeight || 0,
         document.documentElement?.clientHeight || 0,
         viewportHeight + viewportTop
     );
-    const rawOffset = Math.max(layoutHeight - viewportHeight - viewportTop, 0);
+    const rawOffset = Math.max(
+        layoutHeight - viewportHeight - viewportTop,
+        fullscreen ? virtualKeyboardHeight : 0
+    );
     const threshold = CUPID_IS_IOS ? 120 : 80;
     return rawOffset > threshold ? rawOffset : 0;
 }
