@@ -2442,19 +2442,24 @@ class FreeTalkSystem {
                 if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
             }
             if (!ownsCurrentContext || error?.isStaleTurn || error?.reason === 'STALE_TURN') return;
-            window.logCupidError?.(error, {
-                source: 'cupid-group-freetalk',
-                errorType: error?.retryExhausted ? 'freetalk_upstream_retries_exhausted' : /^HTTP\s+\d+/.test(error?.message || '') ? 'group_freetalk_http_error' : 'group_freetalk_request_failed',
-                sessionId: requestSceneId || '',
-                context: {
-                    charId: 'group',
-                    participants: this.groupParticipants.map(item => item.id),
-                    sceneId: requestSceneId || '',
-                    language: lang,
-                    chatMode: 'group'
-                },
-                extra: { cacheKey: lastCacheKey, turnId: lastTurnMeta?.turnId || '' }
-            });
+            const isOfflineTransportFailure = navigator.onLine === false;
+            const isTransientTransportFailure = error instanceof TypeError
+                || /^(?:Failed to fetch|Load failed|NetworkError)$/i.test(error?.message || '');
+            if (typeof window.logCupidError === 'function' && !isOfflineTransportFailure && (!isTransientTransportFailure || error?.retryExhausted)) {
+                window.logCupidError(error, {
+                    source: 'cupid-group-freetalk',
+                    errorType: error?.retryExhausted ? 'freetalk_upstream_retries_exhausted' : /^HTTP\s+\d+/.test(error?.message || '') ? 'group_freetalk_http_error' : 'group_freetalk_request_failed',
+                    sessionId: requestSceneId || '',
+                    context: {
+                        charId: 'group',
+                        participants: this.groupParticipants.map(item => item.id),
+                        sceneId: requestSceneId || '',
+                        language: lang,
+                        chatMode: 'group'
+                    },
+                    extra: { cacheKey: lastCacheKey, turnId: lastTurnMeta?.turnId || '' }
+                });
+            }
             const message = {
                 ko: '연결이 잠시 원활하지 않습니다. 방금 입력은 대화 기록에 저장되지 않았습니다. 다시 시도해 주세요.',
                 en: 'The connection was interrupted. Your last input was not saved. Please try again.',
