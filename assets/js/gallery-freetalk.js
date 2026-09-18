@@ -21,8 +21,12 @@ window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 const GalleryFreeTalkCore = window.CupidFreeTalkCore;
 if (!GalleryFreeTalkCore) {
-    throw new Error('CupidFreeTalkCore must be loaded before GalleryFreeTalk');
-}
+    console.error('CupidFreeTalkCore must be loaded before GalleryFreeTalk');
+    if (typeof window.__cupidShowGalleryLoadError === 'function') {
+        window.__cupidShowGalleryLoadError();
+    }
+} else {
+
 
 function buildGalleryThirdPersonAdultCameraRule(lang = 'ko') {
     if (typeof window.buildCupidThirdPersonAdultCameraRule !== 'function') {
@@ -2723,3 +2727,4 @@ ${affinityIntimacyGuidance}${this._buildOutingDynamicTail(charId, charName)}`;
 
 // window 전역 노출
 window.GalleryFreeTalk = GalleryFreeTalk;
+}

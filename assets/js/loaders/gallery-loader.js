@@ -173,7 +173,7 @@ window.__cupidShowGalleryLoadError = function() {
 
 (function () {
     // 로더 설정 로드 (동기)
-    document.write('<script src="assets/js/loaders/config.js?v=2.9.249" onerror="window.__cupidShowGalleryLoadError && window.__cupidShowGalleryLoadError()"><\/script>');
+    document.write('<script src="assets/js/loaders/config.js?v=2.9.250" onerror="window.__cupidShowGalleryLoadError && window.__cupidShowGalleryLoadError()"><\/script>');
 })();
 
 // config.js 로드 후 실행
@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // 갤러리 스크립트 로드 (document.write는 동기적)
 (function () {
     const basePath = 'assets/js/';
-    const version = '2.9.249';
+    const version = '2.9.250';
 
     const scripts = [
         'affinity-corrections.js',
@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
 
     scripts.forEach(function (src) {
-        const historyRevision = src === 'modules/config.js' || src === 'gallery-freetalk.js' ? '&history=20260908' : '';
+        const historyRevision = src === 'modules/config.js' || src === 'gallery-freetalk.js' ? '&history=20260918' : '';
         document.write('<script src="' + basePath + src + '?v=' + version + historyRevision + '" onerror="window.__cupidShowGalleryLoadError && window.__cupidShowGalleryLoadError()"><\/script>');
     });
 })();
