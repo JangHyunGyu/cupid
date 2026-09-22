@@ -5,156 +5,40 @@ const fs = require('node:fs');
 const path = require('node:path');
 const code = fs.readFileSync(path.join(__dirname, '../assets/js/immersive.js'), 'utf8');
 
-function setup(options = {}) {
-  const calls = [];
-  const listeners = {};
-  const timeouts = [];
-  const classNames = new Set();
-  const style = { transform: '', setProperty(name, value) { this[name] = value; } };
-  const document = {
-    documentElement: {
-      style,
-      clientHeight: options.innerHeight || 800,
-      classList: {
-        add: name => classNames.add(name),
-        remove: name => classNames.delete(name),
-        toggle(name, force) {
-          const on = force === undefined ? !classNames.has(name) : !!force;
-          if (on) classNames.add(name); else classNames.delete(name);
-          return on;
-        },
-        contains: name => classNames.has(name)
-      }
-    },
-    body: {},
-    activeElement: options.activeElement || { matches: () => false, closest: () => null },
-    addEventListener: (name, fn) => { listeners[name] = fn; }
-  };
-  if (!options.unsupported) document.documentElement[options.webkit ? 'webkitRequestFullscreen' : 'requestFullscreen'] = (value) => {
-    calls.push(value);
-    if (options.reject) return Promise.reject(new Error('denied'));
-    if (options.throws) throw new Error('blocked');
-    return options.webkit ? undefined : Promise.resolve();
-  };
-  const window = {
-    document,
-    innerHeight: options.innerHeight || 800,
-    navigator: {
-      userActivation: { isActive: true },
-      standalone: options.standalone,
-      virtualKeyboard: options.keyboard ? {
-        overlaysContent: false,
-        boundingRect: { height: options.keyboard },
-        addEventListener() {}
-      } : undefined
-    },
-    visualViewport: options.visualViewport,
-    matchMedia: () => ({ matches: false }),
-    addEventListener: (name, fn) => { listeners[name] = fn; },
-    setTimeout: (fn, ms) => { timeouts.push({ fn, ms }); return timeouts.length; },
-    clearTimeout() {}
-  };
+test('disabled immersive helper never enters fullscreen or moves the existing layout', async () => {
+  for (const height of [375, 667, 800, 844]) {
+    let calls = 0;
+    const style = { transform: '', setProperty() { calls++; } };
+    const window = {
+      innerHeight: height,
+      document: { documentElement: { style, requestFullscreen() { calls++; } },
+        addEventListener() { calls++; }, exitFullscreen() { calls++; } },
+      addEventListener() { calls++; },
+      navigator: { standalone: true, virtualKeyboard: { boundingRect: { height: 320 } } },
+      visualViewport: { height: height - 320 }
+    };
+    vm.runInNewContext(code, { window });
+    const api = window.ArcherImmersive;
+    for (const name of ['enter', 'autoEnter', 'exit', 'toggle']) assert.equal(await api[name](), false);
+    for (const name of ['isFullscreen', 'isStandalone', 'supported']) assert.equal(api[name](), false);
+    assert.equal(api.keyboardOverlap(), 0);
+    assert.equal(api.keyboardOverlapFrom({ editing: true, innerHeight: height, vvHeight: height - 320, vkHeight: 320 }), 0);
+    assert.equal(calls, 0);
+    assert.equal(style.transform, '');
+    assert.ok(Object.isFrozen(api));
+  }
+});
+
+test('disabled helper remains safe without browser APIs and preserves an existing API on repeat loading', () => {
+  const window = {};
   vm.runInNewContext(code, { window });
-  return { api: window.ArcherImmersive, calls, window, document, listeners, timeouts, style, click: (kind, trusted = true) => listeners.click({ isTrusted: trusted, target: { closest: selector => selector.includes(kind) } }) };
-}
-
-test('fullscreen requests the whole document and hides browser navigation', async () => {
-  const s = setup();
-  assert.equal(await s.api.autoEnter(), true);
-  assert.equal(s.calls[0].navigationUI, 'hide');
-  await s.api.autoEnter();
-  assert.equal(s.calls.length, 1, 'do not reenter automatically after Escape');
-  await s.api.enter();
-  assert.equal(s.calls.length, 2, 'explicit settings toggle can reenter');
+  const api = window.ArcherImmersive;
+  vm.runInNewContext(code, { window });
+  assert.equal(window.ArcherImmersive, api);
+  const existing = { ArcherImmersive: { marker: true } };
+  vm.runInNewContext(code, { window: existing });
+  assert.equal(existing.ArcherImmersive.marker, true);
 });
-test('parallel requests share one pending transition', async () => {
-  const s = setup();
-  await Promise.all([s.api.enter(), s.api.enter()]);
-  assert.equal(s.calls.length, 1);
-});
-test('legacy void return, denied permission and unsupported browsers never break startup', async () => {
-  for (const options of [{ webkit: true }, { reject: true }, { throws: true }, { unsupported: true }]) {
-    const s = setup(options);
-    assert.equal(await s.api.enter(), Boolean(options.webkit));
-  }
-});
-test('standalone launch and inactive gestures need no fullscreen request', async () => {
-  const s = setup({ standalone: true });
-  assert.equal(await s.api.enter(), true);
-  assert.equal(s.calls.length, 0);
-  const inactive = setup();
-  inactive.window.navigator.userActivation.isActive = false;
-  await inactive.api.autoEnter();
-  inactive.window.navigator.userActivation.isActive = true;
-  await inactive.api.autoEnter();
-  assert.equal(inactive.calls.length, 1);
-});
-test('links, forms, scrollable ranking and synthetic events never consume activation', async () => {
-  for (const kind of ['a,', 'input', 'textarea', 'select', '[contenteditable]', '[data-ranking-scroll]', '[data-no-fullscreen]']) {
-    const s = setup(); s.click(kind); assert.equal(s.calls.length, 0);
-  }
-  const s = setup(); s.click('canvas', false); assert.equal(s.calls.length, 0);
-  s.click('canvas'); await Promise.resolve(); assert.equal(s.calls.length, 1);
-});
-test('exit denial is handled and the settings toggle follows actual fullscreen state', async () => {
-  const s = setup();
-  s.document.fullscreenElement = s.document.documentElement;
-  s.document.exitFullscreen = () => Promise.reject(new Error('denied'));
-  assert.equal(await s.api.toggle(), false);
-  assert.equal(s.calls.length, 0);
-});
-test('canvas touch and keyboard menus enter even without a compatibility click', () => {
-  const touch = setup();
-  touch.listeners.pointerup({ isTrusted: true, target: { closest: selector => selector.includes('canvas') } });
-  assert.equal(touch.calls.length, 1);
-  const keyboard = setup();
-  keyboard.document.querySelector = () => ({});
-  keyboard.listeners.keydown({ isTrusted: true, key: 'Enter', target: { tagName: 'A' } });
-  assert.equal(keyboard.calls.length, 0, 'home navigation retains keyboard activation');
-  keyboard.listeners.keydown({ isTrusted: true, key: 'Enter', target: { tagName: 'BODY' } });
-  assert.equal(keyboard.calls.length, 1);
-});
-test('back-forward cache restoration allows a fresh start gesture', async () => {
-  const s = setup();
-  await s.api.autoEnter();
-  s.listeners.pageshow({ persisted: false });
-  await s.api.autoEnter();
-  assert.equal(s.calls.length, 1);
-  s.listeners.pageshow({ persisted: true });
-  await s.api.autoEnter();
-  assert.equal(s.calls.length, 2);
-});
-test('lifts the layout briefly after fullscreen so the browser exit hint does not cover controls', async () => {
-  const s = setup();
-  await s.api.enter();
-  s.document.fullscreenElement = s.document.documentElement;
-  s.listeners.fullscreenchange();
-  assert.match(s.style.transform, /translate3d\(0,-80px,0\)/);
-  assert.equal(s.timeouts[0].ms, 2000);
-  s.timeouts[0].fn();
-  assert.equal(s.style.transform, '');
-});
-test('lifts by virtual keyboard height when fullscreen overlays the composer', () => {
-  const s = setup({ keyboard: 320, activeElement: { matches: sel => sel.includes('textarea'), closest: () => null } });
-  s.document.fullscreenElement = s.document.documentElement;
-  s.listeners.fullscreenchange();
-  assert.equal(s.style.transform, '', 'fullscreen keyboard inset is applied by the app, not by translating the document');
-  assert.equal(s.style['--immersive-keyboard-inset'], '320px');
-  assert.equal(s.api.keyboardOverlap(), 320);
-});
-test('keyboard overlap uses visual viewport shrink in windowed layout and the virtual keyboard in fullscreen overlay', () => {
-  const s = setup();
-  assert.equal(s.api.keyboardOverlapFrom({
-    editing: true, innerHeight: 800, clientHeight: 800, vvHeight: 480, vvOffsetTop: 0, vkHeight: 0
-  }), 320);
-  assert.equal(s.api.keyboardOverlapFrom({
-    editing: true, innerHeight: 800, clientHeight: 800, vvHeight: 800, vvOffsetTop: 0, vkHeight: 320
-  }), 320);
-  assert.equal(s.api.keyboardOverlapFrom({
-    editing: false, innerHeight: 800, clientHeight: 800, vvHeight: 480, vvOffsetTop: 0, vkHeight: 320
-  }), 0);
-});
-
 
 test('every localized game shell has a local immersive helper and an unrestricted app manifest', () => {
   const repo = path.resolve(__dirname, fs.existsSync(path.join(__dirname, '../../config/games.json')) ? '../..' : '..');

@@ -357,5 +357,340 @@
     "tour_dain_neg": {
         "name": "Dain",
         "text": "*She turns off the gym lights.* Skip today. I'm going first."
+    },
+    "day5_haeun_high_intro": {
+        "name": "Haeun",
+        "text": "Could you take this side? Would you help me carry it to the broadcasting room? *Haeun holds out one end of a box of paperwork.*"
+    },
+    "day5_haeun_high_clasp": {
+        "name": "{name}",
+        "text": "*We set the box outside the broadcasting room. The clasp on Haeun’s student-council bracelet has caught on my sleeve button. She leans closer to free it. Footsteps in the hallway stop.*"
+    },
+    "day5_haeun_explain_choice": {
+        "name": "{name}",
+        "text": "*Haeun lets go of the bracelet and looks back. Standing between them, I begin to speak.*",
+        "choices": [
+            "Introduce Haeun and explain what we were doing",
+            "Ask them to wait and put off explaining"
+        ]
+    },
+    "day5_haeun_explain_open": {
+        "name": "{name}",
+        "text": "*I introduce Haeun and explain that we were moving paperwork to the broadcasting room. She nods, but the other person is still looking at my sleeve.*"
+    },
+    "day5_haeun_explain_delay": {
+        "name": "{name}",
+        "text": "*I ask for a moment and turn back to Haeun, adding that I will explain later to the person waiting in the hallway.*"
+    },
+    "day5_haeun_defends": {
+        "name": "Haeun",
+        "text": "I asked for help. I feel comfortable asking. *Haeun pulls the box closer.* We weren’t doing anything wrong."
+    },
+    "day5_haeun_finish": {
+        "name": "{name}",
+        "text": "*The broadcasting-room door opens and a student takes the box. Haeun fastens her bracelet. Announcements for the lunchtime events continue down the hallway.*"
+    },
+    "day5_haeun_low_intro": {
+        "name": "Haeun",
+        "text": "Looking for the checklist? *Haeun draws the papers toward herself.* I’m not ready to leave this entirely to you."
+    },
+    "day5_haeun_low_choice": {
+        "name": "Haeun",
+        "text": "We just need to check the booth numbers and emergency access routes again. If you want to help, please come with me.",
+        "choices": [
+            "Apologize for my earlier attitude and finish the inspection",
+            "Start helping with the inspection",
+            "Leave the task to Haeun and go"
+        ]
+    },
+    "day5_haeun_low_apology": {
+        "name": "Haeun",
+        "text": "*I apologize to Haeun for my earlier attitude and offer to finish the inspection with her. After a pause, she unfolds the checklist.* I hear your apology. Let’s start here, then."
+    },
+    "day5_haeun_low_work": {
+        "name": "{name}",
+        "text": "*We check the booth numbers one by one, move empty boxes out of the passage and note where a sign is missing. I return the checklist to Haeun after checking the last entry.*"
+    },
+    "day5_haeun_low_repair": {
+        "name": "Haeun",
+        "text": "*Haeun looks over the completed checklist.* You stayed until we finished. What happened before still bothers me, but thank you for helping today."
+    },
+    "day5_haeun_low_thanks": {
+        "name": "Haeun",
+        "text": "*Haeun ticks the final box.* We finished early thanks to you. I’ll take the paperwork from here."
+    },
+    "day5_haeun_low_leave": {
+        "name": "Haeun",
+        "text": "All right. I’ll do the inspection. *Haeun folds the checklist and walks toward the booths.*"
+    },
+    "day5_haeun_seoyeon_arrival": {
+        "name": "Seoyeon",
+        "text": "So here you two are. *Seoyeon stops and looks from Haeun’s hand to my sleeve.* What were you doing?"
+    },
+    "day5_haeun_seoyeon_escalation": {
+        "name": "Seoyeon",
+        "text": "So you’re close enough for her to ask freely. *Seoyeon turns toward me.* Tell me yourself. Since when have you two been this close?"
+    },
+    "day5_haeun_seoyeon_escalation_delay": {
+        "name": "Seoyeon",
+        "text": "So you’re close enough for her to ask freely. *Seoyeon turns toward me.* Tell me yourself. Since when have you two been this close?"
+    },
+    "day5_haeun_seoyeon_group_talk": {
+        "name": "Seoyeon · Haeun",
+        "text": "*Haeun takes half a step away from me. The other person stays, waiting for my answer.*",
+        "groupLocation": "Hallway outside the broadcasting room during the school festival",
+        "context": "Haeun and the protagonist carried paperwork to the broadcasting room. The other person saw her leaning close to free her student-council bracelet clasp from his sleeve button. Haeun defended him, saying she felt comfortable asking him for help, which deepened the misunderstanding about their relationship. The other person has already lost 15 affinity, or 20 if the protagonist delayed explaining. There has been no romance or sexual activity between Haeun and the protagonist.",
+        "personality": "The other person asks for an explanation in their own voice and at their current affinity. Being ranked first does not establish a couple or past promises. Haeun remains polite and speaks only to what she witnessed, never for the protagonist’s feelings. Leave him room to explain; let the actual answers resolve or sustain the misunderstanding. Do not solve everything at the outset or turn suspicion into a factual betrayal. Do not repeat the initial penalty; score only changes caused by the current contribution.",
+        "groupChoiceState": {
+            "open": "The protagonist introduced Haeun and explained that they were carrying paperwork. Their apparent closeness and the bracelet incident still trouble the other person.",
+            "delay": "The protagonist asked the other person to wait, turned back to Haeun and put off explaining. They took this as avoidance. The initial penalty for this choice has already been applied."
+        }
+    },
+    "day5_haeun_yuna_arrival": {
+        "name": "Yuna",
+        "text": "Wait. *Yuna takes out an earbud and looks between us.* You were standing close."
+    },
+    "day5_haeun_yuna_escalation": {
+        "name": "Yuna",
+        "text": "*Yuna pockets her earbuds.* I understand the work. I didn’t know you two were close, though. I want to hear from you, too."
+    },
+    "day5_haeun_yuna_escalation_delay": {
+        "name": "Yuna",
+        "text": "*Yuna pockets her earbuds.* I understand the work. I didn’t know you two were close, though. I want to hear from you, too."
+    },
+    "day5_haeun_yuna_group_talk": {
+        "name": "Yuna · Haeun",
+        "text": "*Haeun takes half a step away from me. The other person stays, waiting for my answer.*",
+        "groupLocation": "Hallway outside the broadcasting room during the school festival",
+        "context": "Haeun and the protagonist carried paperwork to the broadcasting room. The other person saw her leaning close to free her student-council bracelet clasp from his sleeve button. Haeun defended him, saying she felt comfortable asking him for help, which deepened the misunderstanding about their relationship. The other person has already lost 15 affinity, or 20 if the protagonist delayed explaining. There has been no romance or sexual activity between Haeun and the protagonist.",
+        "personality": "The other person asks for an explanation in their own voice and at their current affinity. Being ranked first does not establish a couple or past promises. Haeun remains polite and speaks only to what she witnessed, never for the protagonist’s feelings. Leave him room to explain; let the actual answers resolve or sustain the misunderstanding. Do not solve everything at the outset or turn suspicion into a factual betrayal. Do not repeat the initial penalty; score only changes caused by the current contribution.",
+        "groupChoiceState": {
+            "open": "The protagonist introduced Haeun and explained that they were carrying paperwork. Their apparent closeness and the bracelet incident still trouble the other person.",
+            "delay": "The protagonist asked the other person to wait, turned back to Haeun and put off explaining. They took this as avoidance. The initial penalty for this choice has already been applied."
+        }
+    },
+    "day5_haeun_dain_arrival": {
+        "name": "Dain",
+        "text": "Hey, what are you two doing? *Dain stops beside the box.* I’m not interrupting, am I?"
+    },
+    "day5_haeun_dain_escalation": {
+        "name": "Dain",
+        "text": "*Dain looks away from Haeun and at me.* You tell me, not Haeun. Were you really just helping with the work?"
+    },
+    "day5_haeun_dain_escalation_delay": {
+        "name": "Dain",
+        "text": "*Dain looks away from Haeun and at me.* You tell me, not Haeun. Were you really just helping with the work?"
+    },
+    "day5_haeun_dain_group_talk": {
+        "name": "Dain · Haeun",
+        "text": "*Haeun takes half a step away from me. The other person stays, waiting for my answer.*",
+        "groupLocation": "Hallway outside the broadcasting room during the school festival",
+        "context": "Haeun and the protagonist carried paperwork to the broadcasting room. The other person saw her leaning close to free her student-council bracelet clasp from his sleeve button. Haeun defended him, saying she felt comfortable asking him for help, which deepened the misunderstanding about their relationship. The other person has already lost 15 affinity, or 20 if the protagonist delayed explaining. There has been no romance or sexual activity between Haeun and the protagonist.",
+        "personality": "The other person asks for an explanation in their own voice and at their current affinity. Being ranked first does not establish a couple or past promises. Haeun remains polite and speaks only to what she witnessed, never for the protagonist’s feelings. Leave him room to explain; let the actual answers resolve or sustain the misunderstanding. Do not solve everything at the outset or turn suspicion into a factual betrayal. Do not repeat the initial penalty; score only changes caused by the current contribution.",
+        "groupChoiceState": {
+            "open": "The protagonist introduced Haeun and explained that they were carrying paperwork. Their apparent closeness and the bracelet incident still trouble the other person.",
+            "delay": "The protagonist asked the other person to wait, turned back to Haeun and put off explaining. They took this as avoidance. The initial penalty for this choice has already been applied."
+        }
+    },
+    "day5_haeun_teacher_arrival": {
+        "name": "Homeroom Teacher",
+        "text": "*The homeroom teacher lowers her folder and looks at us.* What were you doing here?"
+    },
+    "day5_haeun_teacher_escalation": {
+        "name": "Homeroom Teacher",
+        "text": "*The teacher tucks her folder under her arm.* Haeun doesn’t need to answer for you. Explain it yourself. Did I get the wrong idea?"
+    },
+    "day5_haeun_teacher_escalation_delay": {
+        "name": "Homeroom Teacher",
+        "text": "*The teacher tucks her folder under her arm.* Haeun doesn’t need to answer for you. Explain it yourself. Did I get the wrong idea?"
+    },
+    "day5_haeun_teacher_group_talk": {
+        "name": "Homeroom Teacher · Haeun",
+        "text": "*Haeun takes half a step away from me. The other person stays, waiting for my answer.*",
+        "groupLocation": "Hallway outside the broadcasting room during the school festival",
+        "context": "Haeun and the protagonist carried paperwork to the broadcasting room. The other person saw her leaning close to free her student-council bracelet clasp from his sleeve button. Haeun defended him, saying she felt comfortable asking him for help, which deepened the misunderstanding about their relationship. The other person has already lost 15 affinity, or 20 if the protagonist delayed explaining. There has been no romance or sexual activity between Haeun and the protagonist.",
+        "personality": "The other person asks for an explanation in their own voice and at their current affinity. Being ranked first does not establish a couple or past promises. Haeun remains polite and speaks only to what she witnessed, never for the protagonist’s feelings. Leave him room to explain; let the actual answers resolve or sustain the misunderstanding. Do not solve everything at the outset or turn suspicion into a factual betrayal. Do not repeat the initial penalty; score only changes caused by the current contribution.",
+        "groupChoiceState": {
+            "open": "The protagonist introduced Haeun and explained that they were carrying paperwork. Their apparent closeness and the bracelet incident still trouble the other person.",
+            "delay": "The protagonist asked the other person to wait, turned back to Haeun and put off explaining. They took this as avoidance. The initial penalty for this choice has already been applied."
+        }
+    },
+    "day5_haeun_nurse_arrival": {
+        "name": "School Nurse",
+        "text": "*The school nurse slows down.* You two look comfortable together. What’s going on?"
+    },
+    "day5_haeun_nurse_escalation": {
+        "name": "School Nurse",
+        "text": "*The nurse stops smiling.* I’m not asking Haeun. I want to hear it from you. What’s between you two?"
+    },
+    "day5_haeun_nurse_escalation_delay": {
+        "name": "School Nurse",
+        "text": "*The nurse stops smiling.* I’m not asking Haeun. I want to hear it from you. What’s between you two?"
+    },
+    "day5_haeun_nurse_group_talk": {
+        "name": "School Nurse · Haeun",
+        "text": "*Haeun takes half a step away from me. The other person stays, waiting for my answer.*",
+        "groupLocation": "Hallway outside the broadcasting room during the school festival",
+        "context": "Haeun and the protagonist carried paperwork to the broadcasting room. The other person saw her leaning close to free her student-council bracelet clasp from his sleeve button. Haeun defended him, saying she felt comfortable asking him for help, which deepened the misunderstanding about their relationship. The other person has already lost 15 affinity, or 20 if the protagonist delayed explaining. There has been no romance or sexual activity between Haeun and the protagonist.",
+        "personality": "The other person asks for an explanation in their own voice and at their current affinity. Being ranked first does not establish a couple or past promises. Haeun remains polite and speaks only to what she witnessed, never for the protagonist’s feelings. Leave him room to explain; let the actual answers resolve or sustain the misunderstanding. Do not solve everything at the outset or turn suspicion into a factual betrayal. Do not repeat the initial penalty; score only changes caused by the current contribution.",
+        "groupChoiceState": {
+            "open": "The protagonist introduced Haeun and explained that they were carrying paperwork. Their apparent closeness and the bracelet incident still trouble the other person.",
+            "delay": "The protagonist asked the other person to wait, turned back to Haeun and put off explaining. They took this as avoidance. The initial penalty for this choice has already been applied."
+        }
+    },
+    "day5_haeun_concern_choice": {
+        "name": "{name}",
+        "text": "*Haeun turns toward me. The person listening to her stays where they are.*",
+        "choices": [
+            "Ask what they heard and explain with Haeun present",
+            "Say I do not want to discuss it now"
+        ]
+    },
+    "day5_haeun_concern_open": {
+        "name": "{name}",
+        "text": "*I ask what they heard and say I will explain with Haeun here. The other person glances at her once more, then turns to me.*"
+    },
+    "day5_haeun_concern_delay": {
+        "name": "{name}",
+        "text": "*I say I don’t want to discuss it now and try to leave. The other person calls my name. Haeun stays as well.*"
+    },
+    "day5_haeun_concern_clarify": {
+        "name": "Haeun",
+        "text": "I’m not trying to make you look bad by inventing things. I talked about what made me uncomfortable. *Haeun looks at me.* If I took it differently than you meant, please tell us here."
+    },
+    "day5_haeun_concern_seoyeon_intro": {
+        "name": "Haeun",
+        "text": "*I hear Haeun around the corner. She is speaking quietly to someone, then stops when she sees me.* I felt uncomfortable when we talked before. I wasn’t sure how to take it, so I brought it up."
+    },
+    "day5_haeun_concern_seoyeon_arrival": {
+        "name": "Seoyeon",
+        "text": "What did you talk about with Haeun? *Seoyeon lowers her papers.* It didn’t sound like something I should brush aside."
+    },
+    "day5_haeun_concern_seoyeon_escalation": {
+        "name": "Seoyeon",
+        "text": "I want to know whether you realized she felt uncomfortable. *Seoyeon waits for my answer.* Tell us directly."
+    },
+    "day5_haeun_concern_seoyeon_escalation_delay": {
+        "name": "Seoyeon",
+        "text": "I want to know whether you realized she felt uncomfortable. *Seoyeon waits for my answer.* Tell us directly."
+    },
+    "day5_haeun_concern_seoyeon_group_talk": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon glances at Haeun, then asks me.* I didn’t expect to hear something like this about you. What did you say to her?",
+        "groupLocation": "Hallway outside the broadcasting room during the school festival",
+        "context": "Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three meet in the hallway to discuss it. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
+        "personality": "Haeun stays polite and separates words she actually heard from her interpretation. Descriptions such as frightening or strange require evidence in the prior conversation. The other person listens in their own voice at their current affinity and does not treat Haeun’s account as proven fact. Leave room for the user to explain; clarification may resolve a misunderstanding or establish responsibility. Do not erase actual harm by calling it a misunderstanding or force an apology. Do not repeat the initial penalty; score only the effect of the current contribution.",
+        "groupChoiceState": {
+            "open": "The protagonist asked what was reported and offered to explain with Haeun present. The actual explanation has not started yet.",
+            "delay": "The protagonist said he did not want to discuss it now and tried to leave. The other person took this as avoidance. The initial penalty for that choice has already been applied."
+        }
+    },
+    "day5_haeun_concern_yuna_intro": {
+        "name": "Haeun",
+        "text": "*I hear Haeun around the corner. She is speaking quietly to someone, then stops when she sees me.* I felt uncomfortable when we talked before. I wasn’t sure how to take it, so I brought it up."
+    },
+    "day5_haeun_concern_yuna_arrival": {
+        "name": "Yuna",
+        "text": "*Yuna looks from Haeun to me.* Do you remember the same conversation differently? I want to hear your side, too."
+    },
+    "day5_haeun_concern_yuna_escalation": {
+        "name": "Yuna",
+        "text": "*Yuna puts away her phone.* I don’t know how to take your words right now. Tell me what you meant then."
+    },
+    "day5_haeun_concern_yuna_escalation_delay": {
+        "name": "Yuna",
+        "text": "*Yuna puts away her phone.* I don’t know how to take your words right now. Tell me what you meant then."
+    },
+    "day5_haeun_concern_yuna_group_talk": {
+        "name": "Yuna",
+        "text": "*Yuna folds her earbud cord into her pocket.* What Haeun told me sounds so unlike the person I know. Tell me yourself. What did you talk about?",
+        "groupLocation": "Hallway outside the broadcasting room during the school festival",
+        "context": "Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three meet in the hallway to discuss it. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
+        "personality": "Haeun stays polite and separates words she actually heard from her interpretation. Descriptions such as frightening or strange require evidence in the prior conversation. The other person listens in their own voice at their current affinity and does not treat Haeun’s account as proven fact. Leave room for the user to explain; clarification may resolve a misunderstanding or establish responsibility. Do not erase actual harm by calling it a misunderstanding or force an apology. Do not repeat the initial penalty; score only the effect of the current contribution.",
+        "groupChoiceState": {
+            "open": "The protagonist asked what was reported and offered to explain with Haeun present. The actual explanation has not started yet.",
+            "delay": "The protagonist said he did not want to discuss it now and tried to leave. The other person took this as avoidance. The initial penalty for that choice has already been applied."
+        }
+    },
+    "day5_haeun_concern_dain_intro": {
+        "name": "Haeun",
+        "text": "*I hear Haeun around the corner. She is speaking quietly to someone, then stops when she sees me.* I felt uncomfortable when we talked before. I wasn’t sure how to take it, so I brought it up."
+    },
+    "day5_haeun_concern_dain_arrival": {
+        "name": "Dain",
+        "text": "Haeun stopped halfway through telling me. *Dain stands in front of me.* I’m going to ask you what happened, too."
+    },
+    "day5_haeun_concern_dain_escalation": {
+        "name": "Dain",
+        "text": "*Dain lowers her arms.* If there’s a misunderstanding, clear it up. If you said something hurtful, talk about that too. I’m listening."
+    },
+    "day5_haeun_concern_dain_escalation_delay": {
+        "name": "Dain",
+        "text": "*Dain lowers her arms.* If there’s a misunderstanding, clear it up. If you said something hurtful, talk about that too. I’m listening."
+    },
+    "day5_haeun_concern_dain_group_talk": {
+        "name": "Dain",
+        "text": "*Dain stops in front of me.* What did you say to Haeun? I didn’t think you were the kind of person to treat someone badly. Let’s hear your side.",
+        "groupLocation": "Hallway outside the broadcasting room during the school festival",
+        "context": "Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three meet in the hallway to discuss it. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
+        "personality": "Haeun stays polite and separates words she actually heard from her interpretation. Descriptions such as frightening or strange require evidence in the prior conversation. The other person listens in their own voice at their current affinity and does not treat Haeun’s account as proven fact. Leave room for the user to explain; clarification may resolve a misunderstanding or establish responsibility. Do not erase actual harm by calling it a misunderstanding or force an apology. Do not repeat the initial penalty; score only the effect of the current contribution.",
+        "groupChoiceState": {
+            "open": "The protagonist asked what was reported and offered to explain with Haeun present. The actual explanation has not started yet.",
+            "delay": "The protagonist said he did not want to discuss it now and tried to leave. The other person took this as avoidance. The initial penalty for that choice has already been applied."
+        }
+    },
+    "day5_haeun_concern_teacher_intro": {
+        "name": "Haeun",
+        "text": "*I hear Haeun around the corner. She is speaking quietly to someone, then stops when she sees me.* I felt uncomfortable when we talked before. I wasn’t sure how to take it, so I brought it up."
+    },
+    "day5_haeun_concern_teacher_arrival": {
+        "name": "Homeroom Teacher",
+        "text": "*The teacher steps aside from Haeun.* I’m not deciding based on one side. Tell me yours."
+    },
+    "day5_haeun_concern_teacher_escalation": {
+        "name": "Homeroom Teacher",
+        "text": "*The teacher looks straight at me.* It may not have sounded the way you intended. We still need to hear what bothered Haeun. What do you think?"
+    },
+    "day5_haeun_concern_teacher_escalation_delay": {
+        "name": "Homeroom Teacher",
+        "text": "*The teacher looks straight at me.* It may not have sounded the way you intended. We still need to hear what bothered Haeun. What do you think?"
+    },
+    "day5_haeun_concern_teacher_group_talk": {
+        "name": "Homeroom Teacher",
+        "text": "*The teacher puts down her folder.* I thought well of you, but I can’t brush this aside. Tell me what you said to Haeun.",
+        "groupLocation": "Hallway outside the broadcasting room during the school festival",
+        "context": "Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three meet in the hallway to discuss it. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
+        "personality": "Haeun stays polite and separates words she actually heard from her interpretation. Descriptions such as frightening or strange require evidence in the prior conversation. The other person listens in their own voice at their current affinity and does not treat Haeun’s account as proven fact. Leave room for the user to explain; clarification may resolve a misunderstanding or establish responsibility. Do not erase actual harm by calling it a misunderstanding or force an apology. Do not repeat the initial penalty; score only the effect of the current contribution.",
+        "groupChoiceState": {
+            "open": "The protagonist asked what was reported and offered to explain with Haeun present. The actual explanation has not started yet.",
+            "delay": "The protagonist said he did not want to discuss it now and tried to leave. The other person took this as avoidance. The initial penalty for that choice has already been applied."
+        }
+    },
+    "day5_haeun_concern_nurse_intro": {
+        "name": "Haeun",
+        "text": "*I hear Haeun around the corner. She is speaking quietly to someone, then stops when she sees me.* I felt uncomfortable when we talked before. I wasn’t sure how to take it, so I brought it up."
+    },
+    "day5_haeun_concern_nurse_arrival": {
+        "name": "School Nurse",
+        "text": "*The nurse glances at Haeun, then meets my eyes.* I can’t simply ignore that she felt uncomfortable. I need to hear your side."
+    },
+    "day5_haeun_concern_nurse_escalation": {
+        "name": "School Nurse",
+        "text": "*The nurse’s smile fades.* Let’s work out why Haeun took it that way. Explain your side."
+    },
+    "day5_haeun_concern_nurse_escalation_delay": {
+        "name": "School Nurse",
+        "text": "*The nurse’s smile fades.* Let’s work out why Haeun took it that way. Explain your side."
+    },
+    "day5_haeun_concern_nurse_group_talk": {
+        "name": "School Nurse",
+        "text": "*The nurse checks on Haeun before turning to me.* I don’t understand why I’m hearing this about you. I want to hear from you why she’s so upset. What did you say?",
+        "groupLocation": "Hallway outside the broadcasting room during the school festival",
+        "context": "Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three meet in the hallway to discuss it. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
+        "personality": "Haeun stays polite and separates words she actually heard from her interpretation. Descriptions such as frightening or strange require evidence in the prior conversation. The other person listens in their own voice at their current affinity and does not treat Haeun’s account as proven fact. Leave room for the user to explain; clarification may resolve a misunderstanding or establish responsibility. Do not erase actual harm by calling it a misunderstanding or force an apology. Do not repeat the initial penalty; score only the effect of the current contribution.",
+        "groupChoiceState": {
+            "open": "The protagonist asked what was reported and offered to explain with Haeun present. The actual explanation has not started yet.",
+            "delay": "The protagonist said he did not want to discuss it now and tried to leave. The other person took this as avoidance. The initial penalty for that choice has already been applied."
+        }
     }
 }

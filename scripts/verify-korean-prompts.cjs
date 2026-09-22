@@ -58,7 +58,8 @@ function splitCacheBoundary(prompt, label) {
 }
 
 function getRuntimeStableHash(context, functionName, prompt) {
-    return vm.runInContext(`${functionName}(${JSON.stringify(prompt)})`, context);
+    const callable = functionName.replace(/^getGalleryFreeTalkStablePrompt/, 'GalleryFreeTalkCore.getStablePrompt');
+    return vm.runInContext(`${callable}(${JSON.stringify(prompt)})`, context);
 }
 
 function verifyGalleryLoaderOrder() {
@@ -621,7 +622,7 @@ function verifyMemories(context) {
 
 function verifyLatestUserCanon(context) {
     const source = JSON.stringify([{ role: 'user', content: '내 손을 탁자 위에 올려 둔다.' }]);
-    const gallery = vm.runInContext(`buildGalleryLatestUserCanonBlock(${source}, 'ko', '')`, context);
+    const gallery = vm.runInContext(`GalleryFreeTalkCore.buildLatestUserCanonBlock(${source}, 'ko', '')`, context);
     for (const [label, block] of [['gallery', gallery]]) {
         assert(block.includes('[이번 턴 사용자 입력]'), `${label} canon block has the old heading`);
         assert(block.includes('최신 사용자 입력:'), `${label} canon block has the old user label`);

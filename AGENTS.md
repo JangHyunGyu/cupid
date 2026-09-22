@@ -1,5 +1,11 @@
 # Cupid Repository Instructions
 
+## Korean Writing Verification (Permanent)
+- 한국어 대사·지문·캐릭터 프롬프트를 작성하기 전에 `humanize-korean`과 `D:\workspace\im-not-ai\skills\humanize-korean\references\quick-rules.md`를 읽는다.
+- 작성 후 `D:\workspace\im-not-ai\codex\skills\humanize-korean\SKILL.md`의 단일 호출 절차로 점검하고 원문·최종문·점검 결과를 작업 기록에 남긴다. 규칙 참고나 맞춤법 검사만으로 완료 처리하지 않는다.
+- 캐릭터별 말투, 사건, 수치, 고유명사와 플레이스홀더를 보존하고, 실제 플레이 기록에 없는 막말·위협·약속 위반을 회상이나 소문으로 만들지 않는다.
+- 최종 한국어와 모든 지원 언어 및 `SCENARIO.md`를 동기화하고 `npm run text:check`, `npm run scenario:check`, `npm run cache:check`를 통과시킨다.
+
 ## Main-Only Git and Deployment (Permanent)
 - 이 저장소에서는 브랜치를 새로 만들지 않는다.
 - 모든 `git commit`, `git push`, 운영 배포는 반드시 `main` 브랜치에서만 수행한다.

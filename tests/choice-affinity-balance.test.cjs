@@ -117,8 +117,8 @@ test('direct choice affinity distribution keeps subtle penalties meaningful but 
         }
     }
 
-    assert.equal(total, 368);
-    assert.deepEqual(counts, { positive: 59, negative: 154, neutral: 130, mixed: 25 });
+    assert.equal(total, 375);
+    assert.deepEqual(counts, { positive: 59, negative: 154, neutral: 137, mixed: 25 });
 });
 
 test('day 2 afterschool rivalry scales with the live relationship instead of inventing plans', () => {
@@ -447,12 +447,13 @@ test('the only remaining two-choice screens are deliberate structural binary dec
     const remaining = Object.entries(scenes)
         .filter(([, scene]) => scene.choices?.length === 2);
 
-    assert.equal(remaining.length, 37);
+    assert.equal(remaining.length, 39);
     for (const [sceneId, scene] of remaining) {
         assert.ok(
             /^forced_violation_day[1-5]_after_/.test(sceneId)
                 || /^date_choice_(perfect|true)_/.test(sceneId)
-                || sceneId === 'hidden_dual_route_choice',
+                || sceneId === 'hidden_dual_route_choice'
+                || ['day5_haeun_explain_choice', 'day5_haeun_concern_choice'].includes(sceneId),
             `${sceneId} is not an approved structural two-choice screen`
         );
         assert.equal(
@@ -563,7 +564,7 @@ test('negative-choice screens stay distributed across every story day', () => {
         2: { choiceScreens: 18, negativeScreens: 10 },
         3: { choiceScreens: 24, negativeScreens: 14 },
         4: { choiceScreens: 32, negativeScreens: 27 },
-        5: { choiceScreens: 30, negativeScreens: 11 }
+        5: { choiceScreens: 33, negativeScreens: 11 }
     };
 
     for (const [day, expectedCounts] of Object.entries(expected)) {
@@ -1513,7 +1514,6 @@ test('Haeun free talk branches by personal trust before rejoining the Seoyeon ro
         [
             [8, 'haeun_affinity_high_1'],
             [0, 'haeun_affinity_neutral_1'],
-            [-19, 'haeun_affinity_neutral_1'],
             [-100, 'haeun_affinity_low_1']
         ]
     );
@@ -1524,7 +1524,7 @@ test('Haeun free talk branches by personal trust before rejoining the Seoyeon ro
     affinities.Haeun = 0;
     assert.equal(renderer.resolveNextScene(router), 'haeun_affinity_neutral_1');
     affinities.Haeun = -1;
-    assert.equal(renderer.resolveNextScene(router), 'haeun_affinity_neutral_1');
+    assert.equal(renderer.resolveNextScene(router), 'haeun_affinity_low_1');
     affinities.Haeun = -25;
     assert.equal(renderer.resolveNextScene(router), 'haeun_affinity_low_1');
 

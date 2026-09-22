@@ -1,5 +1,6 @@
 /* Prevent visualViewport scroll handlers from fighting streaming auto-scroll (화면 떨림). */
 (function () {
+  if (typeof window === 'undefined') return;
   var vv = window.visualViewport;
   if (!vv || vv.__archerScrollGuard) return;
   vv.__archerScrollGuard = true;

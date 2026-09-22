@@ -1643,7 +1643,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "affinityBranches": [
             { "minAffinity": 8, "next": "haeun_affinity_high_1" },
             { "minAffinity": 0, "next": "haeun_affinity_neutral_1" },
-            { "minAffinity": -19, "next": "haeun_affinity_neutral_1" },
             { "minAffinity": -100, "next": "haeun_affinity_low_1" }
         ],
         "next": "haeun_affinity_low_1"

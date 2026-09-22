@@ -200,6 +200,9 @@ const day5EndingFreeTalkIds = [
     'day5_nurse_ending_freetalk_bittersweet'
 ];
 const activeFreeTalkIds = [
+    ...['seoyeon', 'yuna', 'dain', 'teacher', 'nurse'].flatMap(id => [
+        `day5_haeun_${id}_group_talk`, `day5_haeun_concern_${id}_group_talk`
+    ]),
     'lunch_seo_freetalk',
     'lunch_dain_freetalk',
     'lunch_yuna_freetalk',
@@ -273,7 +276,8 @@ function splitCacheBoundary(prompt, label) {
 }
 
 function getRuntimeStableHash(functionName, prompt) {
-    return vm.runInContext(`${functionName}(${JSON.stringify(prompt)})`, context);
+    const callable = functionName.replace(/^getGalleryFreeTalkStablePrompt/, 'GalleryFreeTalkCore.getStablePrompt');
+    return vm.runInContext(`${callable}(${JSON.stringify(prompt)})`, context);
 }
 
 function verifyLocalizedFreeTalkInventory() {
@@ -379,7 +383,7 @@ for (const lang of languages) {
             '[ja/Nurse] main personality is missing the post-graduation continuity guard');
     }
     const canonSource = JSON.stringify([{ role: 'user', content: '*I kissed her.*' }]);
-    const galleryCanonBlock = vm.runInContext(`buildGalleryLatestUserCanonBlock(${canonSource}, '${lang}', '')`, context);
+    const galleryCanonBlock = vm.runInContext(`GalleryFreeTalkCore.buildLatestUserCanonBlock(${canonSource}, '${lang}', '')`, context);
     for (const [label, block] of [['gallery', galleryCanonBlock]]) {
         assert(block.includes("Completed narration cannot decide the character's choice"),
             `[${lang}/${label}] completed narration must preserve character choice`);

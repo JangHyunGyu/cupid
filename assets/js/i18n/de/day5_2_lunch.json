@@ -357,5 +357,340 @@
     "tour_dain_neg": {
         "name": "Dain",
         "text": "*Sie macht das Hallenlicht aus.* Heute nicht. Ich geh zuerst."
+    },
+    "day5_haeun_high_intro": {
+        "name": "Haeun",
+        "text": "Kannst du diese Seite nehmen? Hilfst du mir, das zum Rundfunkraum zu tragen? *Haeun hält mir eine Seite der Kiste mit Unterlagen hin.*"
+    },
+    "day5_haeun_high_clasp": {
+        "name": "{name}",
+        "text": "*Wir stellen die Kiste vor dem Rundfunkraum ab. Der Verschluss von Haeuns Schülerratsarmband hängt an meinem Ärmelknopf fest. Sie beugt sich näher, um ihn zu lösen. Schritte auf dem Flur verstummen.*"
+    },
+    "day5_haeun_explain_choice": {
+        "name": "{name}",
+        "text": "*Haeun lässt das Armband los und blickt zurück. Zwischen den beiden beginne ich zu sprechen.*",
+        "choices": [
+            "Haeun vorstellen und unsere Arbeit erklären",
+            "Um Geduld bitten und die Erklärung aufschieben"
+        ]
+    },
+    "day5_haeun_explain_open": {
+        "name": "{name}",
+        "text": "*Ich stelle Haeun vor und erkläre, dass wir Unterlagen zum Rundfunkraum gebracht haben. Sie nickt, doch der Blick der anderen bleibt an meinem Ärmel hängen.*"
+    },
+    "day5_haeun_explain_delay": {
+        "name": "{name}",
+        "text": "*Ich bitte um einen Moment und wende mich wieder Haeun zu. Der Wartenden auf dem Flur sage ich, dass ich es später erkläre.*"
+    },
+    "day5_haeun_defends": {
+        "name": "Haeun",
+        "text": "Ich habe um Hilfe gebeten. Bei ihm traue ich mich, einfach zu fragen. *Haeun zieht die Kiste heran.* Wir haben nichts Falsches gemacht."
+    },
+    "day5_haeun_finish": {
+        "name": "{name}",
+        "text": "*Die Tür geht auf, und ein Schüler nimmt die Kiste entgegen. Haeun schließt ihr Armband. Am Ende des Flurs laufen die Durchsagen für das Mittagsprogramm weiter.*"
+    },
+    "day5_haeun_low_intro": {
+        "name": "Haeun",
+        "text": "Suchst du die Prüfliste? *Haeun zieht die Unterlagen zu sich.* Ich möchte dir das noch nicht allein überlassen."
+    },
+    "day5_haeun_low_choice": {
+        "name": "Haeun",
+        "text": "Wir müssen nur die Standnummern und die Fluchtwege noch einmal prüfen. Wenn du helfen möchtest, komm bitte mit.",
+        "choices": [
+            "Mich entschuldigen und bis zum Ende helfen",
+            "Bei der Kontrolle mithelfen",
+            "Die Aufgabe Haeun überlassen und gehen"
+        ]
+    },
+    "day5_haeun_low_apology": {
+        "name": "Haeun",
+        "text": "*Ich entschuldige mich für mein früheres Verhalten und biete an, bis zum Ende mitzuhelfen. Nach einer Pause klappt Haeun die Liste auf.* Ich habe deine Entschuldigung gehört. Fangen wir hier an."
+    },
+    "day5_haeun_low_work": {
+        "name": "{name}",
+        "text": "*Wir gleichen die Standnummern einzeln ab, räumen leere Kisten aus dem Durchgang an die Wand und notieren ein fehlendes Schild. Nach dem letzten Eintrag gebe ich Haeun die Liste zurück.*"
+    },
+    "day5_haeun_low_repair": {
+        "name": "Haeun",
+        "text": "*Haeun sieht die ausgefüllte Liste durch.* Du bist bis zum Schluss geblieben. Die Sache von vorher beschäftigt mich noch, aber danke für heute."
+    },
+    "day5_haeun_low_thanks": {
+        "name": "Haeun",
+        "text": "*Haeun setzt den letzten Haken.* Mit deiner Hilfe sind wir früher fertig. Ich bringe die Unterlagen weg."
+    },
+    "day5_haeun_low_leave": {
+        "name": "Haeun",
+        "text": "Gut. Ich übernehme die Kontrolle. *Haeun faltet die Liste und geht zu den Ständen.*"
+    },
+    "day5_haeun_seoyeon_arrival": {
+        "name": "Seoyeon",
+        "text": "Hier seid ihr also. *Seoyeon bleibt stehen und schaut von Haeuns Hand zu meinem Ärmel.* Was habt ihr gemacht?"
+    },
+    "day5_haeun_seoyeon_escalation": {
+        "name": "Seoyeon",
+        "text": "Ihr seid also vertraut genug, dass sie dich einfach um etwas bitten kann. *Seoyeon wendet sich mir zu.* Sag du es mir. Seit wann seid ihr euch so nah?"
+    },
+    "day5_haeun_seoyeon_escalation_delay": {
+        "name": "Seoyeon",
+        "text": "Ihr seid also vertraut genug, dass sie dich einfach um etwas bitten kann. *Seoyeon wendet sich mir zu.* Sag du es mir. Seit wann seid ihr euch so nah?"
+    },
+    "day5_haeun_seoyeon_group_talk": {
+        "name": "Seoyeon · Haeun",
+        "text": "*Haeun tritt einen halben Schritt von mir weg. Die andere bleibt stehen und wartet auf meine Antwort.*",
+        "groupLocation": "Flur vor dem Rundfunkraum während des Schulfests",
+        "context": "Haeun und der Protagonist trugen Unterlagen zum Rundfunkraum. Die andere Person sah Haeun sich vorbeugen, um ihren Armbandverschluss vom Ärmelknopf zu lösen. Haeun verteidigte ihn und sagte, sie könne ihn ungezwungen um Hilfe bitten. Das vertiefte das Missverständnis über ihre Beziehung. Die Zuneigung der anderen Person ist bereits um 15 gesunken, bei aufgeschobener Erklärung um 20. Zwischen Haeun und dem Protagonisten gab es weder Romantik noch sexuelle Handlungen.",
+        "personality": "Die andere Person verlangt in ihrer eigenen Stimme und entsprechend ihrer aktuellen Zuneigung eine Erklärung. Der höchste Wert belegt weder eine Paarbeziehung noch frühere Versprechen. Haeun bleibt höflich und berichtet nur, was sie gesehen hat; sie spricht nicht für seine Gefühle. Lass dem Protagonisten Raum zur Erklärung. Seine tatsächlichen Antworten können das Missverständnis lösen oder bestehen lassen. Löse nicht alles sofort und mache aus einem Verdacht keinen erwiesenen Verrat. Wiederhole den anfänglichen Abzug nicht; bewerte nur die aktuelle Äußerung und Handlung.",
+        "groupChoiceState": {
+            "open": "Der Protagonist hat Haeun vorgestellt und den Transport der Unterlagen erklärt. Die Nähe und der Armbandvorfall beschäftigen die andere Person weiterhin.",
+            "delay": "Der Protagonist bat um Geduld, wandte sich wieder Haeun zu und schob die Erklärung auf. Die andere Person empfand das als Ausweichen. Der anfängliche Abzug wurde bereits angewandt."
+        }
+    },
+    "day5_haeun_yuna_arrival": {
+        "name": "Yuna",
+        "text": "Warte. *Yuna nimmt einen Ohrhörer heraus und sieht uns an.* Ihr standet so nah beieinander."
+    },
+    "day5_haeun_yuna_escalation": {
+        "name": "Yuna",
+        "text": "*Yuna steckt die Ohrhörer ein.* Die Arbeit verstehe ich. Dass ihr euch nahesteht, wusste ich nicht. Ich möchte es auch von dir hören."
+    },
+    "day5_haeun_yuna_escalation_delay": {
+        "name": "Yuna",
+        "text": "*Yuna steckt die Ohrhörer ein.* Die Arbeit verstehe ich. Dass ihr euch nahesteht, wusste ich nicht. Ich möchte es auch von dir hören."
+    },
+    "day5_haeun_yuna_group_talk": {
+        "name": "Yuna · Haeun",
+        "text": "*Haeun tritt einen halben Schritt von mir weg. Die andere bleibt stehen und wartet auf meine Antwort.*",
+        "groupLocation": "Flur vor dem Rundfunkraum während des Schulfests",
+        "context": "Haeun und der Protagonist trugen Unterlagen zum Rundfunkraum. Die andere Person sah Haeun sich vorbeugen, um ihren Armbandverschluss vom Ärmelknopf zu lösen. Haeun verteidigte ihn und sagte, sie könne ihn ungezwungen um Hilfe bitten. Das vertiefte das Missverständnis über ihre Beziehung. Die Zuneigung der anderen Person ist bereits um 15 gesunken, bei aufgeschobener Erklärung um 20. Zwischen Haeun und dem Protagonisten gab es weder Romantik noch sexuelle Handlungen.",
+        "personality": "Die andere Person verlangt in ihrer eigenen Stimme und entsprechend ihrer aktuellen Zuneigung eine Erklärung. Der höchste Wert belegt weder eine Paarbeziehung noch frühere Versprechen. Haeun bleibt höflich und berichtet nur, was sie gesehen hat; sie spricht nicht für seine Gefühle. Lass dem Protagonisten Raum zur Erklärung. Seine tatsächlichen Antworten können das Missverständnis lösen oder bestehen lassen. Löse nicht alles sofort und mache aus einem Verdacht keinen erwiesenen Verrat. Wiederhole den anfänglichen Abzug nicht; bewerte nur die aktuelle Äußerung und Handlung.",
+        "groupChoiceState": {
+            "open": "Der Protagonist hat Haeun vorgestellt und den Transport der Unterlagen erklärt. Die Nähe und der Armbandvorfall beschäftigen die andere Person weiterhin.",
+            "delay": "Der Protagonist bat um Geduld, wandte sich wieder Haeun zu und schob die Erklärung auf. Die andere Person empfand das als Ausweichen. Der anfängliche Abzug wurde bereits angewandt."
+        }
+    },
+    "day5_haeun_dain_arrival": {
+        "name": "Dain",
+        "text": "Hey, was macht ihr zwei? *Dain bleibt neben der Kiste stehen.* Ich darf doch dazukommen?"
+    },
+    "day5_haeun_dain_escalation": {
+        "name": "Dain",
+        "text": "*Dain schaut von Haeun zu mir.* Sag du es, nicht Haeun. Hast du wirklich nur bei der Arbeit geholfen?"
+    },
+    "day5_haeun_dain_escalation_delay": {
+        "name": "Dain",
+        "text": "*Dain schaut von Haeun zu mir.* Sag du es, nicht Haeun. Hast du wirklich nur bei der Arbeit geholfen?"
+    },
+    "day5_haeun_dain_group_talk": {
+        "name": "Dain · Haeun",
+        "text": "*Haeun tritt einen halben Schritt von mir weg. Die andere bleibt stehen und wartet auf meine Antwort.*",
+        "groupLocation": "Flur vor dem Rundfunkraum während des Schulfests",
+        "context": "Haeun und der Protagonist trugen Unterlagen zum Rundfunkraum. Die andere Person sah Haeun sich vorbeugen, um ihren Armbandverschluss vom Ärmelknopf zu lösen. Haeun verteidigte ihn und sagte, sie könne ihn ungezwungen um Hilfe bitten. Das vertiefte das Missverständnis über ihre Beziehung. Die Zuneigung der anderen Person ist bereits um 15 gesunken, bei aufgeschobener Erklärung um 20. Zwischen Haeun und dem Protagonisten gab es weder Romantik noch sexuelle Handlungen.",
+        "personality": "Die andere Person verlangt in ihrer eigenen Stimme und entsprechend ihrer aktuellen Zuneigung eine Erklärung. Der höchste Wert belegt weder eine Paarbeziehung noch frühere Versprechen. Haeun bleibt höflich und berichtet nur, was sie gesehen hat; sie spricht nicht für seine Gefühle. Lass dem Protagonisten Raum zur Erklärung. Seine tatsächlichen Antworten können das Missverständnis lösen oder bestehen lassen. Löse nicht alles sofort und mache aus einem Verdacht keinen erwiesenen Verrat. Wiederhole den anfänglichen Abzug nicht; bewerte nur die aktuelle Äußerung und Handlung.",
+        "groupChoiceState": {
+            "open": "Der Protagonist hat Haeun vorgestellt und den Transport der Unterlagen erklärt. Die Nähe und der Armbandvorfall beschäftigen die andere Person weiterhin.",
+            "delay": "Der Protagonist bat um Geduld, wandte sich wieder Haeun zu und schob die Erklärung auf. Die andere Person empfand das als Ausweichen. Der anfängliche Abzug wurde bereits angewandt."
+        }
+    },
+    "day5_haeun_teacher_arrival": {
+        "name": "Klassenlehrerin",
+        "text": "*Die Klassenlehrerin senkt ihre Mappe und sieht uns an.* Was habt ihr hier gemacht?"
+    },
+    "day5_haeun_teacher_escalation": {
+        "name": "Klassenlehrerin",
+        "text": "*Die Lehrerin klemmt die Mappe unter den Arm.* Haeun muss nicht für dich antworten. Erklär es selbst. Habe ich das falsch verstanden?"
+    },
+    "day5_haeun_teacher_escalation_delay": {
+        "name": "Klassenlehrerin",
+        "text": "*Die Lehrerin klemmt die Mappe unter den Arm.* Haeun muss nicht für dich antworten. Erklär es selbst. Habe ich das falsch verstanden?"
+    },
+    "day5_haeun_teacher_group_talk": {
+        "name": "Klassenlehrerin · Haeun",
+        "text": "*Haeun tritt einen halben Schritt von mir weg. Die andere bleibt stehen und wartet auf meine Antwort.*",
+        "groupLocation": "Flur vor dem Rundfunkraum während des Schulfests",
+        "context": "Haeun und der Protagonist trugen Unterlagen zum Rundfunkraum. Die andere Person sah Haeun sich vorbeugen, um ihren Armbandverschluss vom Ärmelknopf zu lösen. Haeun verteidigte ihn und sagte, sie könne ihn ungezwungen um Hilfe bitten. Das vertiefte das Missverständnis über ihre Beziehung. Die Zuneigung der anderen Person ist bereits um 15 gesunken, bei aufgeschobener Erklärung um 20. Zwischen Haeun und dem Protagonisten gab es weder Romantik noch sexuelle Handlungen.",
+        "personality": "Die andere Person verlangt in ihrer eigenen Stimme und entsprechend ihrer aktuellen Zuneigung eine Erklärung. Der höchste Wert belegt weder eine Paarbeziehung noch frühere Versprechen. Haeun bleibt höflich und berichtet nur, was sie gesehen hat; sie spricht nicht für seine Gefühle. Lass dem Protagonisten Raum zur Erklärung. Seine tatsächlichen Antworten können das Missverständnis lösen oder bestehen lassen. Löse nicht alles sofort und mache aus einem Verdacht keinen erwiesenen Verrat. Wiederhole den anfänglichen Abzug nicht; bewerte nur die aktuelle Äußerung und Handlung.",
+        "groupChoiceState": {
+            "open": "Der Protagonist hat Haeun vorgestellt und den Transport der Unterlagen erklärt. Die Nähe und der Armbandvorfall beschäftigen die andere Person weiterhin.",
+            "delay": "Der Protagonist bat um Geduld, wandte sich wieder Haeun zu und schob die Erklärung auf. Die andere Person empfand das als Ausweichen. Der anfängliche Abzug wurde bereits angewandt."
+        }
+    },
+    "day5_haeun_nurse_arrival": {
+        "name": "Schulkrankenschwester",
+        "text": "*Die Schulkrankenschwester wird langsamer.* Ihr wirkt ziemlich vertraut miteinander. Was ist los?"
+    },
+    "day5_haeun_nurse_escalation": {
+        "name": "Schulkrankenschwester",
+        "text": "*Die Krankenschwester lächelt nicht mehr.* Ich frage nicht Haeun. Ich will es von dir hören. Was ist zwischen euch?"
+    },
+    "day5_haeun_nurse_escalation_delay": {
+        "name": "Schulkrankenschwester",
+        "text": "*Die Krankenschwester lächelt nicht mehr.* Ich frage nicht Haeun. Ich will es von dir hören. Was ist zwischen euch?"
+    },
+    "day5_haeun_nurse_group_talk": {
+        "name": "Schulkrankenschwester · Haeun",
+        "text": "*Haeun tritt einen halben Schritt von mir weg. Die andere bleibt stehen und wartet auf meine Antwort.*",
+        "groupLocation": "Flur vor dem Rundfunkraum während des Schulfests",
+        "context": "Haeun und der Protagonist trugen Unterlagen zum Rundfunkraum. Die andere Person sah Haeun sich vorbeugen, um ihren Armbandverschluss vom Ärmelknopf zu lösen. Haeun verteidigte ihn und sagte, sie könne ihn ungezwungen um Hilfe bitten. Das vertiefte das Missverständnis über ihre Beziehung. Die Zuneigung der anderen Person ist bereits um 15 gesunken, bei aufgeschobener Erklärung um 20. Zwischen Haeun und dem Protagonisten gab es weder Romantik noch sexuelle Handlungen.",
+        "personality": "Die andere Person verlangt in ihrer eigenen Stimme und entsprechend ihrer aktuellen Zuneigung eine Erklärung. Der höchste Wert belegt weder eine Paarbeziehung noch frühere Versprechen. Haeun bleibt höflich und berichtet nur, was sie gesehen hat; sie spricht nicht für seine Gefühle. Lass dem Protagonisten Raum zur Erklärung. Seine tatsächlichen Antworten können das Missverständnis lösen oder bestehen lassen. Löse nicht alles sofort und mache aus einem Verdacht keinen erwiesenen Verrat. Wiederhole den anfänglichen Abzug nicht; bewerte nur die aktuelle Äußerung und Handlung.",
+        "groupChoiceState": {
+            "open": "Der Protagonist hat Haeun vorgestellt und den Transport der Unterlagen erklärt. Die Nähe und der Armbandvorfall beschäftigen die andere Person weiterhin.",
+            "delay": "Der Protagonist bat um Geduld, wandte sich wieder Haeun zu und schob die Erklärung auf. Die andere Person empfand das als Ausweichen. Der anfängliche Abzug wurde bereits angewandt."
+        }
+    },
+    "day5_haeun_concern_choice": {
+        "name": "{name}",
+        "text": "*Haeun wendet sich mir zu. Die Zuhörerin bleibt stehen.*",
+        "choices": [
+            "Fragen, was erzählt wurde, und es vor Haeun erklären",
+            "Sagen, dass ich jetzt nicht darüber reden möchte"
+        ]
+    },
+    "day5_haeun_concern_open": {
+        "name": "{name}",
+        "text": "*Ich frage nach dem Bericht und biete an, es vor Haeun zu erklären. Die andere schaut noch einmal zu ihr und dann zu mir.*"
+    },
+    "day5_haeun_concern_delay": {
+        "name": "{name}",
+        "text": "*Ich sage, dass ich jetzt nicht darüber reden möchte, und will gehen. Die andere ruft meinen Namen. Auch Haeun bleibt stehen.*"
+    },
+    "day5_haeun_concern_clarify": {
+        "name": "Haeun",
+        "text": "Ich erfinde nichts, um dich schlechtzumachen. Ich habe erzählt, was mir unangenehm war. *Haeun schaut mich an.* Wenn ich es anders verstanden habe, als du es meintest, erklär es bitte hier."
+    },
+    "day5_haeun_concern_seoyeon_intro": {
+        "name": "Haeun",
+        "text": "*Ich höre Haeun hinter der Flurecke. Sie spricht leise mit jemandem und hält inne, als sie mich sieht.* Bei unserem letzten Gespräch war mir unwohl. Ich wusste nicht, wie ich das verstehen sollte, und habe es deshalb angesprochen."
+    },
+    "day5_haeun_concern_seoyeon_arrival": {
+        "name": "Seoyeon",
+        "text": "Worüber hast du mit Haeun gesprochen? *Seoyeon senkt ihre Unterlagen.* Es klang nicht nach etwas, das ich abtun sollte."
+    },
+    "day5_haeun_concern_seoyeon_escalation": {
+        "name": "Seoyeon",
+        "text": "Ich möchte wissen, ob du ihr Unbehagen bemerkt hast. *Seoyeon wartet auf meine Antwort.* Sag es uns direkt."
+    },
+    "day5_haeun_concern_seoyeon_escalation_delay": {
+        "name": "Seoyeon",
+        "text": "Ich möchte wissen, ob du ihr Unbehagen bemerkt hast. *Seoyeon wartet auf meine Antwort.* Sag es uns direkt."
+    },
+    "day5_haeun_concern_seoyeon_group_talk": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon schaut zu Haeun und fragt mich dann.* So etwas hätte ich nicht über dich erwartet. Was hast du ihr gesagt?",
+        "groupLocation": "Flur vor dem Rundfunkraum während des Schulfests",
+        "context": "Haeun verlor im vorherigen freien Gespräch Vertrauen zum Protagonisten. Sie schilderte ihr Unbehagen der Person mit der höchsten Zuneigung, die ihm jetzt skeptischer begegnet. Alle drei stehen im Flur. Die andere Person hat bereits 15 Punkte verloren, bei aufgeschobener Erklärung 20. Haeuns Eindruck kann von der Absicht abweichen. Nur das frühere Transkript unten dient als Tatsachengrundlage. Erfinde keine Beleidigungen, Drohungen oder gebrochenen Versprechen. Fehlt der Verlauf, behandle nur ihr Unbehagen und zitiere keine konkreten Aussagen.",
+        "personality": "Haeun bleibt höflich und trennt Gehörtes von ihrer Deutung. Bezeichnungen wie beängstigend oder seltsam brauchen Belege im früheren Gespräch. Die andere Person hört in ihrer eigenen Stimme bei aktueller Zuneigung zu und behandelt Haeuns Bericht nicht als bewiesene Tatsache. Lass Raum zur Erklärung; diese kann das Missverständnis klären oder Verantwortung aufzeigen. Wische tatsächliche Verletzungen nicht als Missverständnis weg und erzwinge keine Entschuldigung. Wiederhole den anfänglichen Abzug nicht; bewerte nur die aktuelle Äußerung und Handlung.",
+        "groupChoiceState": {
+            "open": "Der Protagonist fragte nach dem Bericht und bot an, sich vor Haeun zu erklären. Die eigentliche Erklärung hat noch nicht begonnen.",
+            "delay": "Der Protagonist wollte jetzt nicht darüber reden und versuchte zu gehen. Die andere Person verstand dies als Ausweichen. Der anfängliche Abzug ist bereits angewandt."
+        }
+    },
+    "day5_haeun_concern_yuna_intro": {
+        "name": "Haeun",
+        "text": "*Ich höre Haeun hinter der Flurecke. Sie spricht leise mit jemandem und hält inne, als sie mich sieht.* Bei unserem letzten Gespräch war mir unwohl. Ich wusste nicht, wie ich das verstehen sollte, und habe es deshalb angesprochen."
+    },
+    "day5_haeun_concern_yuna_arrival": {
+        "name": "Yuna",
+        "text": "*Yuna schaut von Haeun zu mir.* Erinnert ihr euch unterschiedlich an dasselbe Gespräch? Ich möchte auch deine Seite hören."
+    },
+    "day5_haeun_concern_yuna_escalation": {
+        "name": "Yuna",
+        "text": "*Yuna steckt ihr Handy weg.* Ich weiß gerade nicht, wie ich deine Worte verstehen soll. Sag mir, was du damals gemeint hast."
+    },
+    "day5_haeun_concern_yuna_escalation_delay": {
+        "name": "Yuna",
+        "text": "*Yuna steckt ihr Handy weg.* Ich weiß gerade nicht, wie ich deine Worte verstehen soll. Sag mir, was du damals gemeint hast."
+    },
+    "day5_haeun_concern_yuna_group_talk": {
+        "name": "Yuna",
+        "text": "*Yuna steckt das Kabel ihrer Ohrhörer ein.* Was Haeun erzählt, klingt ganz anders als der Mensch, den ich kenne. Sag es selbst. Worüber habt ihr gesprochen?",
+        "groupLocation": "Flur vor dem Rundfunkraum während des Schulfests",
+        "context": "Haeun verlor im vorherigen freien Gespräch Vertrauen zum Protagonisten. Sie schilderte ihr Unbehagen der Person mit der höchsten Zuneigung, die ihm jetzt skeptischer begegnet. Alle drei stehen im Flur. Die andere Person hat bereits 15 Punkte verloren, bei aufgeschobener Erklärung 20. Haeuns Eindruck kann von der Absicht abweichen. Nur das frühere Transkript unten dient als Tatsachengrundlage. Erfinde keine Beleidigungen, Drohungen oder gebrochenen Versprechen. Fehlt der Verlauf, behandle nur ihr Unbehagen und zitiere keine konkreten Aussagen.",
+        "personality": "Haeun bleibt höflich und trennt Gehörtes von ihrer Deutung. Bezeichnungen wie beängstigend oder seltsam brauchen Belege im früheren Gespräch. Die andere Person hört in ihrer eigenen Stimme bei aktueller Zuneigung zu und behandelt Haeuns Bericht nicht als bewiesene Tatsache. Lass Raum zur Erklärung; diese kann das Missverständnis klären oder Verantwortung aufzeigen. Wische tatsächliche Verletzungen nicht als Missverständnis weg und erzwinge keine Entschuldigung. Wiederhole den anfänglichen Abzug nicht; bewerte nur die aktuelle Äußerung und Handlung.",
+        "groupChoiceState": {
+            "open": "Der Protagonist fragte nach dem Bericht und bot an, sich vor Haeun zu erklären. Die eigentliche Erklärung hat noch nicht begonnen.",
+            "delay": "Der Protagonist wollte jetzt nicht darüber reden und versuchte zu gehen. Die andere Person verstand dies als Ausweichen. Der anfängliche Abzug ist bereits angewandt."
+        }
+    },
+    "day5_haeun_concern_dain_intro": {
+        "name": "Haeun",
+        "text": "*Ich höre Haeun hinter der Flurecke. Sie spricht leise mit jemandem und hält inne, als sie mich sieht.* Bei unserem letzten Gespräch war mir unwohl. Ich wusste nicht, wie ich das verstehen sollte, und habe es deshalb angesprochen."
+    },
+    "day5_haeun_concern_dain_arrival": {
+        "name": "Dain",
+        "text": "Haeun hat mitten im Erzählen aufgehört. *Dain stellt sich vor mich.* Ich frage auch dich, was passiert ist."
+    },
+    "day5_haeun_concern_dain_escalation": {
+        "name": "Dain",
+        "text": "*Dain lässt die Arme sinken.* Wenn es ein Missverständnis ist, klär es auf. Wenn du etwas Verletzendes gesagt hast, sprich auch darüber. Ich höre zu."
+    },
+    "day5_haeun_concern_dain_escalation_delay": {
+        "name": "Dain",
+        "text": "*Dain lässt die Arme sinken.* Wenn es ein Missverständnis ist, klär es auf. Wenn du etwas Verletzendes gesagt hast, sprich auch darüber. Ich höre zu."
+    },
+    "day5_haeun_concern_dain_group_talk": {
+        "name": "Dain",
+        "text": "*Dain bleibt vor mir stehen.* Was hast du Haeun gesagt? Ich dachte nicht, dass du andere schlecht behandelst. Hören wir deine Seite.",
+        "groupLocation": "Flur vor dem Rundfunkraum während des Schulfests",
+        "context": "Haeun verlor im vorherigen freien Gespräch Vertrauen zum Protagonisten. Sie schilderte ihr Unbehagen der Person mit der höchsten Zuneigung, die ihm jetzt skeptischer begegnet. Alle drei stehen im Flur. Die andere Person hat bereits 15 Punkte verloren, bei aufgeschobener Erklärung 20. Haeuns Eindruck kann von der Absicht abweichen. Nur das frühere Transkript unten dient als Tatsachengrundlage. Erfinde keine Beleidigungen, Drohungen oder gebrochenen Versprechen. Fehlt der Verlauf, behandle nur ihr Unbehagen und zitiere keine konkreten Aussagen.",
+        "personality": "Haeun bleibt höflich und trennt Gehörtes von ihrer Deutung. Bezeichnungen wie beängstigend oder seltsam brauchen Belege im früheren Gespräch. Die andere Person hört in ihrer eigenen Stimme bei aktueller Zuneigung zu und behandelt Haeuns Bericht nicht als bewiesene Tatsache. Lass Raum zur Erklärung; diese kann das Missverständnis klären oder Verantwortung aufzeigen. Wische tatsächliche Verletzungen nicht als Missverständnis weg und erzwinge keine Entschuldigung. Wiederhole den anfänglichen Abzug nicht; bewerte nur die aktuelle Äußerung und Handlung.",
+        "groupChoiceState": {
+            "open": "Der Protagonist fragte nach dem Bericht und bot an, sich vor Haeun zu erklären. Die eigentliche Erklärung hat noch nicht begonnen.",
+            "delay": "Der Protagonist wollte jetzt nicht darüber reden und versuchte zu gehen. Die andere Person verstand dies als Ausweichen. Der anfängliche Abzug ist bereits angewandt."
+        }
+    },
+    "day5_haeun_concern_teacher_intro": {
+        "name": "Haeun",
+        "text": "*Ich höre Haeun hinter der Flurecke. Sie spricht leise mit jemandem und hält inne, als sie mich sieht.* Bei unserem letzten Gespräch war mir unwohl. Ich wusste nicht, wie ich das verstehen sollte, und habe es deshalb angesprochen."
+    },
+    "day5_haeun_concern_teacher_arrival": {
+        "name": "Klassenlehrerin",
+        "text": "*Die Lehrerin tritt neben Haeun einen Schritt zur Seite.* Ich urteile nicht nach nur einer Seite. Erklär mir deine."
+    },
+    "day5_haeun_concern_teacher_escalation": {
+        "name": "Klassenlehrerin",
+        "text": "*Die Lehrerin sieht mich direkt an.* Vielleicht kam es anders an, als du wolltest. Trotzdem müssen wir hören, was Haeun gestört hat. Was meinst du?"
+    },
+    "day5_haeun_concern_teacher_escalation_delay": {
+        "name": "Klassenlehrerin",
+        "text": "*Die Lehrerin sieht mich direkt an.* Vielleicht kam es anders an, als du wolltest. Trotzdem müssen wir hören, was Haeun gestört hat. Was meinst du?"
+    },
+    "day5_haeun_concern_teacher_group_talk": {
+        "name": "Klassenlehrerin",
+        "text": "*Die Lehrerin legt ihre Mappe ab.* Ich hatte eine gute Meinung von dir, aber darüber kann ich nicht hinwegsehen. Erklär, was du Haeun gesagt hast.",
+        "groupLocation": "Flur vor dem Rundfunkraum während des Schulfests",
+        "context": "Haeun verlor im vorherigen freien Gespräch Vertrauen zum Protagonisten. Sie schilderte ihr Unbehagen der Person mit der höchsten Zuneigung, die ihm jetzt skeptischer begegnet. Alle drei stehen im Flur. Die andere Person hat bereits 15 Punkte verloren, bei aufgeschobener Erklärung 20. Haeuns Eindruck kann von der Absicht abweichen. Nur das frühere Transkript unten dient als Tatsachengrundlage. Erfinde keine Beleidigungen, Drohungen oder gebrochenen Versprechen. Fehlt der Verlauf, behandle nur ihr Unbehagen und zitiere keine konkreten Aussagen.",
+        "personality": "Haeun bleibt höflich und trennt Gehörtes von ihrer Deutung. Bezeichnungen wie beängstigend oder seltsam brauchen Belege im früheren Gespräch. Die andere Person hört in ihrer eigenen Stimme bei aktueller Zuneigung zu und behandelt Haeuns Bericht nicht als bewiesene Tatsache. Lass Raum zur Erklärung; diese kann das Missverständnis klären oder Verantwortung aufzeigen. Wische tatsächliche Verletzungen nicht als Missverständnis weg und erzwinge keine Entschuldigung. Wiederhole den anfänglichen Abzug nicht; bewerte nur die aktuelle Äußerung und Handlung.",
+        "groupChoiceState": {
+            "open": "Der Protagonist fragte nach dem Bericht und bot an, sich vor Haeun zu erklären. Die eigentliche Erklärung hat noch nicht begonnen.",
+            "delay": "Der Protagonist wollte jetzt nicht darüber reden und versuchte zu gehen. Die andere Person verstand dies als Ausweichen. Der anfängliche Abzug ist bereits angewandt."
+        }
+    },
+    "day5_haeun_concern_nurse_intro": {
+        "name": "Haeun",
+        "text": "*Ich höre Haeun hinter der Flurecke. Sie spricht leise mit jemandem und hält inne, als sie mich sieht.* Bei unserem letzten Gespräch war mir unwohl. Ich wusste nicht, wie ich das verstehen sollte, und habe es deshalb angesprochen."
+    },
+    "day5_haeun_concern_nurse_arrival": {
+        "name": "Schulkrankenschwester",
+        "text": "*Die Krankenschwester sieht erst Haeun, dann mich an.* Dass sie sich unwohl gefühlt hat, kann ich nicht ignorieren. Ich muss auch deine Seite hören."
+    },
+    "day5_haeun_concern_nurse_escalation": {
+        "name": "Schulkrankenschwester",
+        "text": "*Die Krankenschwester lächelt nicht mehr.* Finden wir heraus, warum Haeun es so aufgefasst hat. Erklär deine Seite."
+    },
+    "day5_haeun_concern_nurse_escalation_delay": {
+        "name": "Schulkrankenschwester",
+        "text": "*Die Krankenschwester lächelt nicht mehr.* Finden wir heraus, warum Haeun es so aufgefasst hat. Erklär deine Seite."
+    },
+    "day5_haeun_concern_nurse_group_talk": {
+        "name": "Schulkrankenschwester",
+        "text": "*Die Krankenschwester sieht erst nach Haeun und wendet sich dann mir zu.* Ich verstehe nicht, warum ich so etwas über dich höre. Ich möchte auch von dir hören, warum sie so aufgewühlt ist. Was hast du gesagt?",
+        "groupLocation": "Flur vor dem Rundfunkraum während des Schulfests",
+        "context": "Haeun verlor im vorherigen freien Gespräch Vertrauen zum Protagonisten. Sie schilderte ihr Unbehagen der Person mit der höchsten Zuneigung, die ihm jetzt skeptischer begegnet. Alle drei stehen im Flur. Die andere Person hat bereits 15 Punkte verloren, bei aufgeschobener Erklärung 20. Haeuns Eindruck kann von der Absicht abweichen. Nur das frühere Transkript unten dient als Tatsachengrundlage. Erfinde keine Beleidigungen, Drohungen oder gebrochenen Versprechen. Fehlt der Verlauf, behandle nur ihr Unbehagen und zitiere keine konkreten Aussagen.",
+        "personality": "Haeun bleibt höflich und trennt Gehörtes von ihrer Deutung. Bezeichnungen wie beängstigend oder seltsam brauchen Belege im früheren Gespräch. Die andere Person hört in ihrer eigenen Stimme bei aktueller Zuneigung zu und behandelt Haeuns Bericht nicht als bewiesene Tatsache. Lass Raum zur Erklärung; diese kann das Missverständnis klären oder Verantwortung aufzeigen. Wische tatsächliche Verletzungen nicht als Missverständnis weg und erzwinge keine Entschuldigung. Wiederhole den anfänglichen Abzug nicht; bewerte nur die aktuelle Äußerung und Handlung.",
+        "groupChoiceState": {
+            "open": "Der Protagonist fragte nach dem Bericht und bot an, sich vor Haeun zu erklären. Die eigentliche Erklärung hat noch nicht begonnen.",
+            "delay": "Der Protagonist wollte jetzt nicht darüber reden und versuchte zu gehen. Die andere Person verstand dies als Ausweichen. Der anfängliche Abzug ist bereits angewandt."
+        }
     }
 }

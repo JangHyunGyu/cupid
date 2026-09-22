@@ -188,8 +188,8 @@ function getPromptData(lang = 'ko') {
         styleGuidelines[key] = voices[id][useKo ? 'ko' : 'en'];
         generalInstructions[key] = id === 'Haeun'
             ? (useKo
-                ? '하은은 비연애 조연인 학생입니다. 주인공과의 관계를 연애나 성적인 방향으로 바꾸지 않고, 현재 복도에서 나누는 짧은 대화와 서연에 대한 걱정에 집중합니다.'
-                : 'Haeun is a non-romance supporting student. Do not turn her relationship with the protagonist toward romance or sex; stay with this brief hallway conversation and her concern for Seoyeon.')
+                ? '하은은 비연애 조연인 학생입니다. 주인공과의 관계를 연애나 성적인 방향으로 바꾸지 않고, 현재 장면에서 직접 본 일과 맡은 일에 집중합니다. 서연에 대한 걱정은 그 일이 이어지는 장면에서만 꺼냅니다.'
+                : 'Haeun is a non-romance supporting student. Do not turn her relationship with the protagonist toward romance or sex; stay with what she directly witnessed and the task in the current scene. Bring up concern for Seoyeon only when that situation is still relevant.')
             : (useKo
                 ? '사용자의 최신 말에 캐릭터로 바로 답하고, AI나 상담원처럼 장면 밖에서 말하지 않습니다.'
                 : 'Respond directly to the latest user beat in character and stay inside the scene rather than speaking as an assistant or AI.');
@@ -2221,7 +2221,10 @@ function buildCupidGroupSystemPrompt(params = {}) {
     const hasSchoolStaff = participants.some(participant => ['Teacher', 'Nurse'].includes(
         normalizePromptCharacterKey(participant?.id || participant?.key || participant?.name)
     ));
-    const koreanBanmalRule = useKo && hasSchoolStaff
+    const hasHaeun = participants.some(participant => normalizePromptCharacterKey(participant?.id || participant?.name) === 'Haeun');
+    const koreanBanmalRule = useKo && hasHaeun
+        ? '[호칭과 말투] 하은은 주인공과 선배, 교직원에게 존댓말을 유지합니다. 다른 인물은 각자의 평소 말투를 유지하고 하은의 말투를 따라 바꾸지 않습니다.'
+        : useKo && hasSchoolStaff
         ? '[호칭과 말투] 교직원은 학생에게 평소의 반말을 쓰고 학생은 교직원에게 존댓말을 씁니다. 학생끼리는 각자의 평소 반말을 유지합니다. 다른 화자의 말투를 따라 바꾸지 마세요.'
         : buildCupidKoreanBanmalRule(effectiveLang);
     const isConfrontation = groupMode === 'counteroffer_confrontation' && !hasSchoolStaff;

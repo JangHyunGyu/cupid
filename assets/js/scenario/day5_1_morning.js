@@ -1097,24 +1097,12 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "morning5_end": {
         "background": "assets/images/background/room_school.png",
         "character": null,
-        "branches": [
-            { "condition": "day4_counteroffer_penalty_deferred", "next": "tour_co_branch" },
-            { "condition": "route_dain", "next": "tour_dain_1_check" },
-            { "condition": "route_yuna", "next": "tour_yuna_1_check" },
-            { "condition": "route_seoyeon", "next": "tour_seo_1" },
-            { "next": "tour_seo_1" }
-        ]
+        "next": "day5_haeun_gate"
     },
     "morning5_committed_end": {
         "background": "assets/images/background/room_school.png",
         "character": null,
-        "branches": [
-            { "condition": "day4_counteroffer_penalty_deferred", "next": "tour_co_branch" },
-            { "condition": "route_dain", "next": "tour_dain_1_check" },
-            { "condition": "route_yuna", "next": "tour_yuna_1_check" },
-            { "condition": "route_seoyeon", "next": "tour_seo_1" },
-            { "next": "tour_seo_1" }
-        ]
+        "next": "day5_haeun_gate"
     },
     "hidden_homeroom_d5_low": {
         "background": "assets/images/background/room_school.png",

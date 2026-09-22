@@ -56,7 +56,8 @@ for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
         expect(offer.completed).toBe(true);
         expect(offer.mainAffinity).toBe(71);
         expect(offer.nurseAffinity).toBe(16);
-        expect(offer.visited.indexOf('day4_student_checkin_return_home')).toBeLessThan(offer.visited.indexOf('wall_seo_1'));
+        expect(offer.visited.indexOf('day4_student_checkin_return_home')).toBeGreaterThanOrEqual(0);
+        expect(offer.visited.indexOf('day4_student_checkin_return_home')).toBeLessThan(offer.visited.indexOf(offer.id));
         expect(offer.visited).not.toContain('day4_student_night_branch');
         await page.reload();
         await ready();

@@ -289,6 +289,18 @@ class SceneRenderer {
                 }))
                 .sort((a, b) => b.affinity - a.affinity || a._originalIndex - b._originalIndex);
 
+            if (scene.randomTieFlag && rankedRivals.length > 0) {
+                const saved = this.stateManager.getFlag(scene.randomTieFlag);
+                const remembered = rankedRivals.find(branch => branch.character === saved);
+                if (remembered) return remembered.next;
+                const tied = rankedRivals.filter(branch => branch.affinity === rankedRivals[0].affinity);
+                const chosen = tied[Math.floor(Math.random() * tied.length)];
+                if (chosen.affinity >= minRivalAffinity) {
+                    this.stateManager.setFlag(scene.randomTieFlag, chosen.character);
+                    return chosen.next;
+                }
+            }
+
             const strongestRival = rankedRivals[0];
             const rivalIsEligible = strongestRival && strongestRival.affinity >= minRivalAffinity;
             if (rivalIsEligible) return strongestRival.next;
