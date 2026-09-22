@@ -40,6 +40,15 @@ test('Haeun choice requires her conversation and 45, with a persisted highest-af
     assert.equal(scenes.day5_haeun_leave_yuna.next, 'day5_haeun_switch_yuna_entry');
     assert.equal(scenes.day5_haeun_switch_yuna_group_talk.maxTurns, 3);
 });
+
+test('Day 4 group exit stays at the gate until Haeun finishes her personal conversation', () => {
+    const { state, scenes, renderer } = runtime();
+    state.setFlag('messaged_haeun_freetalk');
+    assert.equal(scenes.day4_haeun_finish.background, scenes.day4_haeun_personal.background);
+    assert.equal(renderer.resolveNextScene(scenes.day4_haeun_finish), 'day4_haeun_personal_gate');
+    assert.equal(renderer.resolveNextScene(scenes.day4_haeun_personal_gate), 'day4_haeun_personal');
+    assert.equal(scenes.day4_haeun_personal.next, 'morning4_end');
+});
 test('100 dates Haeun; 99 returns to the unchanged ending conditions and does not erase incidents', () => {
     const { state, renderer, scenes } = runtime();
     state.setFlag('haeun_route_selected');

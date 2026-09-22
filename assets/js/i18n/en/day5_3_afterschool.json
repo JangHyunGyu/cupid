@@ -626,7 +626,7 @@
     },
     "day5_haeun_private_1": {
         "name": "Haeun",
-        "text": "Then talk with me today. I want to hear what you see in me. I haven’t agreed to date you yet.",
+        "text": "Then let’s talk a little longer. I’d like to hear how you see me. I’ll try to tell you how I feel too, in my own time.",
         "context": "Talk privately with Haeun. Remember only actual prior exchanges. Keep her polite voice and natural senior address. Before the explicit route choice, do not establish romance; even after the choice she has not agreed to date yet. Respond to the current conversation and affinity.",
         "personality": "Talk privately with Haeun. Remember only actual prior exchanges. Keep her polite voice and natural senior address. Before the explicit route choice, do not establish romance; even after the choice she has not agreed to date yet. Respond to the current conversation and affinity."
     },
@@ -642,7 +642,7 @@
     },
     "day5_haeun_fallback": {
         "name": "Haeun",
-        "text": "I’m glad we talked today, but I’m not ready to date you. *Haeun picks up her bag.* Please don’t leave someone waiting because of me."
+        "text": "Thank you for talking with me today. But I don’t think I’m ready to be in a relationship with you. *Haeun picks up her bag. We say goodbye, and I turn back toward school.*"
     },
     "day5_ending_haeun": {
         "name": "Haeun",

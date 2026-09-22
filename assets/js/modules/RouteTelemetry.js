@@ -1,7 +1,8 @@
 /** Day 4 temptation / Day 5 confrontation diagnostics. No dialogue or player names. */
 (() => {
     const KEY = 'cupid_pending_route_events_v1';
-    const CHARACTERS = ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse'];
+    const CHARACTERS = ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse', 'Haeun'];
+    const isHaeunScene = id => /^day[45]_(?:haeun_|ending_haeun)/.test(id);
     const GATES = new Set(['morning4_end', 'day4_date_branch', 'day4_night_branch', 'day4_student_visit_branch', 'day4_student_visit_teacher_branch', 'day4_student_checkin_return_home', 'day4_student_night_branch', 'day4_waited_night_branch', 'morning5_start_branch', 'morning5_temptation_discovery_branch', 'morning5_temptation_counteroffer_branch']);
     let pending = [];
     let busy = false;
@@ -54,6 +55,7 @@
         }
     }
     function route(state) {
+        if (state.getFlag('haeun_route_selected') || state.getFlag('route_haeun')) return 'Haeun';
         const establishedRoute = CHARACTERS.find(name => state.getFlag('route_' + name.toLowerCase()));
         if (establishedRoute) return establishedRoute;
         if (state.getFlag('homeroom_day4')) return 'Teacher';
@@ -65,7 +67,7 @@
             if (!state.telemetryRunId) state.telemetryRunId = uuid();
             const affinities = Object.fromEntries(CHARACTERS.map(name => [name, state.getAffinity(name)]));
             const flags = Object.fromEntries(Object.entries(state.flags || {}).filter(([key, value]) =>
-                typeof value === 'boolean' && /^(day4_|route_|day3_caught_multiple_dates$|harem_seed$|homeroom_day4$|nurse_day4$)/.test(key)));
+                typeof value === 'boolean' && /^(day4_|day5_haeun_|haeun_|route_|day3_caught_multiple_dates$|harem_seed$|homeroom_day4$|nurse_day4$)/.test(key)));
             pending.push({ appId: window.getCupidAppId(), userId: window.getCupidDeviceId(), event: {
                 eventId: uuid(), runId: state.telemetryRunId, eventType, sceneId, nextSceneId,
                 day: /^(morning5_|day5_)/.test(sceneId) ? 5 : 4,
@@ -81,13 +83,13 @@
         } catch (_) { /* Diagnostics must never interrupt a scene. */ }
     }
     function isOffer(scene) {
-        return scene?.choices?.some(choice => choice.setFlags?.includes('day4_counteroffer_penalty_deferred'));
+        return scene?.choices?.some(choice => choice.setFlags?.some(flag => ['day4_counteroffer_penalty_deferred', 'haeun_route_selected'].includes(flag)));
     }
     function entered(state, sceneId, scene, restoring = false) {
         const milestones = { morning4_start: 'day4_entered', day4_night_start: 'night_entered', morning5_start: 'morning_entered' };
         if (milestones[sceneId]) emit(state, sceneId, milestones[sceneId], { restoring });
         if (isOffer(scene)) emit(state, sceneId, 'offer_entered', { restoring });
-        if (/^(wall_|day4_|morning5_)/.test(sceneId) && (scene.type === 'free_talk' || scene.type === 'group_free_talk')) {
+        if ((/^(wall_|day4_|morning5_)/.test(sceneId) || isHaeunScene(sceneId)) && (scene.type === 'free_talk' || scene.type === 'group_free_talk')) {
             emit(state, sceneId, 'freetalk_entered', {
                 restoring, sceneType: scene.type, maxTurns: scene.maxTurns,
                 ...(scene.romanticInterlude === true && { dialogueAffinity: 100, affinityLocked: scene.affinityLocked === true })
@@ -98,7 +100,7 @@
         }
     }
     function transition(state, sceneId, scene, nextSceneId, guarded = false) {
-        if (!scene || !/^(wall_|day4_|morning4_|morning5_)/.test(sceneId)) return;
+        if (!scene || (!/^(wall_|day4_|morning4_|morning5_)/.test(sceneId) && !isHaeunScene(sceneId))) return;
         let selectedConditionFound = false;
         const conditions = (scene.branches || []).map(branch => {
             const passed = (!branch.condition || !!state.getFlag(branch.condition))
@@ -108,7 +110,8 @@
             return { condition: branch.condition || '', excludeCondition: branch.excludeCondition || '',
                 next: branch.next, passed, selected };
         });
-        if (guarded || GATES.has(sceneId) || scene.rankedRivalBranches || sceneId.startsWith('morning5_caught_by_')) {
+        if (guarded || GATES.has(sceneId) || scene.rankedRivalBranches || sceneId.startsWith('morning5_caught_by_')
+            || (isHaeunScene(sceneId) && scene.routeBeforeRender)) {
             const selected = conditions.find(condition => condition.selected);
             const rivals = (scene.rankedRivalBranches || []).map(branch => ({ character: branch.character, affinity: state.getAffinity(branch.character), selected: branch.next === nextSceneId }));
             let reason = guarded ? 'affinity_guard' : selected?.condition || 'fallback';
@@ -128,7 +131,7 @@
     function choice(state, sceneId, scene, selected, nextSceneId) {
         if (!isOffer(scene)) return;
         emit(state, sceneId, 'offer_choice', {
-            accepted: selected.setFlags?.includes('day4_counteroffer_penalty_deferred') || false,
+            accepted: selected.setFlags?.some(flag => ['day4_counteroffer_penalty_deferred', 'haeun_route_selected'].includes(flag)) || false,
             choiceIndex: scene.choices.findIndex(choice => choice.next === selected.next
                 && JSON.stringify(choice.setFlags || []) === JSON.stringify(selected.setFlags || [])), setFlags: selected.setFlags || [],
             affinityBranches: selected.affinityBranches || [], affinityEffects: selected.stats || {}

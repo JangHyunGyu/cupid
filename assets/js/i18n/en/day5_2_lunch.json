@@ -456,7 +456,7 @@
     },
     "day5_haeun_yuna_escalation_delay": {
         "name": "Yuna",
-        "text": "*Yuna pockets her earbuds.* I understand the work. I didn’t know you two were close, though. I want to hear from you, too."
+        "text": "*Yuna puts her earphones away.* I heard that Haeun asked you. But I want to hear it from you. What were you two doing?"
     },
     "day5_haeun_yuna_group_talk": {
         "name": "Yuna · Haeun",
@@ -591,7 +591,7 @@
     },
     "day5_haeun_concern_yuna_arrival": {
         "name": "Yuna",
-        "text": "*Yuna looks from Haeun to me.* Do you remember the same conversation differently? I want to hear your side, too."
+        "text": "*Yuna looks away from Haeun and turns to me.* I heard what Haeun had to say. I want to hear your side too."
     },
     "day5_haeun_concern_yuna_escalation": {
         "name": "Yuna",

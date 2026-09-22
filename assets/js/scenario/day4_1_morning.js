@@ -496,7 +496,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "groupChoiceFlag": "day4_haeun_delayed_explanation"
     },
     "day4_haeun_finish": {
-        "background": "assets/images/background/street.png",
+        "background": "assets/images/background/school.png",
         "character": null,
         "next": "morning4_end",
         "setFlags": [

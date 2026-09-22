@@ -626,7 +626,7 @@
     },
     "day5_haeun_private_1": {
         "name": "Haeun",
-        "text": "Então converse comigo hoje. Quero saber o que você vê em mim. Ainda não aceitei namorar você.",
+        "text": "Então vamos conversar mais um pouco. Quero saber como você me vê. Também vou tentar falar do que sinto, no meu tempo.",
         "context": "Conversa particular com Haeun. Lembre apenas de falas reais anteriores. Preserve o jeito educado e o tratamento de um colega mais velho. Não estabeleça romance antes da escolha da rota; mesmo depois ela ainda não aceitou namorar. Responda conforme a conversa e a afinidade atuais.",
         "personality": "Conversa particular com Haeun. Lembre apenas de falas reais anteriores. Preserve o jeito educado e o tratamento de um colega mais velho. Não estabeleça romance antes da escolha da rota; mesmo depois ela ainda não aceitou namorar. Responda conforme a conversa e a afinidade atuais."
     },
@@ -642,7 +642,7 @@
     },
     "day5_haeun_fallback": {
         "name": "Haeun",
-        "text": "Gostei de conversar hoje, mas ainda não estou pronta para namorar você. *Haeun pega a bolsa.* Não deixe alguém esperando por minha causa."
+        "text": "Obrigada por conversar comigo hoje. Mas acho que ainda não estou pronta para namorar você. *Haeun pega a bolsa. Nós nos despedimos, e eu volto na direção da escola.*"
     },
     "day5_ending_haeun": {
         "name": "Haeun",

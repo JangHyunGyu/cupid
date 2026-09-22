@@ -626,7 +626,7 @@
     },
     "day5_haeun_private_1": {
         "name": "Haeun",
-        "text": "Dann rede heute mit mir. Ich möchte hören, was du in mir siehst. Ich habe noch nicht zugesagt, mit dir zusammen zu sein.",
+        "text": "Dann lass uns noch ein bisschen reden. Ich möchte hören, wie du mich siehst. Ich werde auch versuchen, dir in Ruhe zu sagen, was ich fühle.",
         "context": "Ein Gespräch unter vier Augen mit Haeun. Nur tatsächliche frühere Gespräche erinnern. Ihre höfliche Stimme und Anrede für den älteren Mitschüler beibehalten. Vor der Routenwahl keine Liebesbeziehung festlegen; auch danach hat sie einer Beziehung noch nicht zugestimmt. Auf das aktuelle Gespräch und die Zuneigung eingehen.",
         "personality": "Ein Gespräch unter vier Augen mit Haeun. Nur tatsächliche frühere Gespräche erinnern. Ihre höfliche Stimme und Anrede für den älteren Mitschüler beibehalten. Vor der Routenwahl keine Liebesbeziehung festlegen; auch danach hat sie einer Beziehung noch nicht zugestimmt. Auf das aktuelle Gespräch und die Zuneigung eingehen."
     },
@@ -642,7 +642,7 @@
     },
     "day5_haeun_fallback": {
         "name": "Haeun",
-        "text": "Ich bin froh, dass wir heute geredet haben. Für eine Beziehung bin ich aber noch nicht bereit. *Haeun nimmt ihre Tasche.* Lass bitte niemanden wegen mir warten."
+        "text": "Danke für das Gespräch heute. Aber ich glaube, ich bin noch nicht bereit für eine Beziehung mit dir. *Haeun nimmt ihre Tasche. Wir verabschieden uns, und ich gehe zurück in Richtung Schule.*"
     },
     "day5_ending_haeun": {
         "name": "Haeun",

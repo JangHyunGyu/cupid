@@ -1,6 +1,7 @@
 const { test, expect } = require('@playwright/test');
 const fs = require('node:fs');
-const output = 'D:/workspace/_workspace/cupid-haeun-switch-20260922';
+const path = require('node:path');
+const output = path.resolve(__dirname, '../../test-results/haeun-romance');
 const ready = page => page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
 for (const [suffix, score] of [['', 60], ['-en', 45]]) {
     test(`Haeun ${suffix || 'ko'}: declaration, three group rounds, ten personal turns and ending CG`, async ({ page }) => {
@@ -18,7 +19,7 @@ for (const [suffix, score] of [['', 60], ['-en', 45]]) {
             }
             return route.fulfill({ json: { ok: true, eventIds: (body.events || []).map(e => e.eventId) } });
         });
-        await page.goto(`/game${suffix}.html`); await ready(page);
+        await page.goto(`/game${suffix}.html`, { waitUntil: 'domcontentloaded' }); await ready(page);
         await page.evaluate(async score => {
             const e = window.gameEngine; e.dialogueSystem.typingSpeed = 0;
             e.stateManager.currentDay = 5;
@@ -51,7 +52,7 @@ for (const [suffix, score] of [['', 60], ['-en', 45]]) {
             await page.evaluate(()=>window.gameEngine.freeTalkSystem.advanceGroupMessageQueue());
             await page.evaluate(()=>window.__switchTurn);
             if(turn===0){
-                await page.reload();await ready(page);
+                await page.reload({ waitUntil: 'domcontentloaded' });await ready(page);
                 expect(await page.evaluate(()=>window.gameEngine.freeTalkSystem.freeTalkTurns)).toBe(1);
                 expect(await page.evaluate(()=>window.gameEngine.stateManager.getAffinity('Haeun'))).toBe(score+23);
                 expect(await page.evaluate(()=>window.gameEngine.stateManager.getAffinity('Yuna'))).toBe(49);
@@ -68,7 +69,7 @@ for (const [suffix, score] of [['', 60], ['-en', 45]]) {
                 await e.freeTalkSystem.sendChatMessage(id => e.sceneRenderer.getScene(id));
             });
             if (turn===2) {
-                await page.reload(); await ready(page);
+                await page.reload({ waitUntil: 'domcontentloaded' }); await ready(page);
                 expect(await page.evaluate(() => window.gameEngine.freeTalkSystem.freeTalkTurns)).toBe(3);
             }
         }
@@ -82,7 +83,7 @@ for (const [suffix, score] of [['', 60], ['-en', 45]]) {
         expect(unlock.characters.haeun.perfectEndingCleared).toBe(true);
         expect(unlock.endings.perfect_haeun).toBeTruthy();
         expect(unlock.cg.ending_perfect_haeun.unlocked).toBe(true);
-        await page.goto(`/gallery${suffix}.html`);
+        await page.goto(`/gallery${suffix}.html`, { waitUntil: 'domcontentloaded' });
         await page.waitForFunction(() => window.gallery?.freeTalk && window.galleryProgressInstance);
         expect(await page.evaluate(() => window.galleryProgressInstance.isFreeTalkUnlocked('haeun'))).toBe(true);
         await expect(page.locator('[data-char-id="haeun"]')).toBeVisible();
@@ -96,7 +97,7 @@ for (const [suffix, score] of [['', 60], ['-en', 45]]) {
 }
 test('Haeun selected at 99 without enough successful dialogue resumes the original route', async ({ page }) => {
     await page.route('**/*', r => r.request().method()==='POST' ? r.fulfill({json:{ok:true}}) : r.continue());
-    await page.goto('/game-en.html'); await ready(page);
+    await page.goto('/game-en.html', { waitUntil: 'domcontentloaded' }); await ready(page);
     const result = await page.evaluate(async () => {
         const e=window.gameEngine; e.dialogueSystem.typingSpeed=0;e.stateManager.currentDay=5;
         e.stateManager.stats.Haeun.affinity=99;
@@ -114,7 +115,7 @@ test('Haeun selected at 99 without enough successful dialogue resumes the origin
 
 test('a pre-switch Haeun save retains its remaining ten-turn conversation', async ({page})=>{
     await page.route('**/*',r=>r.request().method()==='POST'?r.fulfill({json:{ok:true}}):r.continue());
-    await page.goto('/game-en.html');await ready(page);
+    await page.goto('/game-en.html', { waitUntil: 'domcontentloaded' });await ready(page);
     const result=await page.evaluate(async()=>{
         const e=window.gameEngine;e.dialogueSystem.typingSpeed=0;e.stateManager.currentDay=5;
         e.stateManager.flags={haeun_route_selected:true};e.stateManager.stats.Haeun.affinity=75;

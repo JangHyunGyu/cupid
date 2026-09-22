@@ -25,6 +25,36 @@ function harness(storage = new Map(), post = null) {
     return { state, renderer, telemetry: window.CupidRouteTelemetry, requests, storage, scenes: Object.assign({}, ...Object.values(context.SCENARIO)), window };
 }
 
+test('Haeun selection, conversations and fallback retain accurate route snapshots', async () => {
+    const h = harness();
+    h.state.flags = { route_yuna: true, day5_haeun_route_offered: true };
+    h.state.stats.Haeun.affinity = 45;
+    const offer = h.scenes.day5_haeun_route_choice;
+    h.telemetry.entered(h.state, 'day5_haeun_route_choice', offer);
+    h.telemetry.choice(h.state, 'day5_haeun_route_choice', offer, offer.choices[1], offer.choices[1].next);
+    h.state.setFlag('haeun_route_selected');
+    h.state.setFlag('haeun_switch_declared');
+    h.telemetry.choice(h.state, 'day5_haeun_route_choice', offer, offer.choices[0], offer.choices[0].next);
+    const id = 'day5_haeun_switch_yuna_group_talk';
+    h.telemetry.entered(h.state, id, h.scenes[id]);
+    h.telemetry.transition(h.state, id, h.scenes[id], h.scenes[id].next);
+    h.telemetry.entered(h.state, 'day5_haeun_private_1', h.scenes.day5_haeun_private_1);
+    h.state.setFlag('haeun_route_selected', false);
+    h.telemetry.transition(h.state, 'day5_haeun_romance_check', h.scenes.day5_haeun_romance_check, 'day5_haeun_fallback');
+    await h.telemetry.flush();
+    const events = h.requests[0].events;
+    assert.deepEqual(events.map(e => e.eventType), ['offer_entered', 'offer_choice', 'offer_choice', 'freetalk_entered', 'freetalk_exited', 'freetalk_entered', 'gate_evaluated']);
+    assert.equal(events[1].details.accepted, false);
+    assert.equal(events[2].details.accepted, true);
+    assert.ok(events.slice(2, 6).every(e => e.route === 'Haeun' && e.day === 5));
+    assert.equal(events[3].details.maxTurns, 3);
+    assert.equal(events[5].details.maxTurns, 5);
+    assert.equal(events[3].details.affinities.Haeun, 45);
+    assert.equal(events[3].details.flags.haeun_switch_declared, true);
+    assert.equal(events[6].route, 'Yuna');
+    assert.ok(!JSON.stringify(events).includes('playerName'));
+});
+
 test('logs actual gate outcome, negative rivals, and overriding day-five conditions', async () => {
     const h = harness();
     h.state.flags = { route_seoyeon: true, day4_confession_accepted: true };

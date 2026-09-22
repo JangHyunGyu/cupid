@@ -663,7 +663,7 @@
     },
     "day4_haeun_concern_yuna_arrival": {
         "name": "ユナ",
-        "text": "*ユナがハウンから僕に目を向ける。*同じ会話を違うふうに覚えてるの？あなたの話も聞きたい。"
+        "text": "*ユナがハウンから視線を外し、こちらを見る。* ハウンの話は聞いた。あなたの話も聞きたい。"
     },
     "day4_haeun_concern_yuna_escalation": {
         "name": "ユナ",
@@ -771,7 +771,7 @@
     },
     "day4_haeun_finish": {
         "name": "{name}",
-        "text": "*話を終えて校門を離れる。横断歩道の信号が変わり、家の方へ歩き出す。*"
+        "text": "*話が終わり、ハウンと校門の脇によける。横断歩道の前には信号を待つ人たちが集まっている。*"
     },
     "day4_haeun_reputation_cg": {
         "name": "{name}",

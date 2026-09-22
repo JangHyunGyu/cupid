@@ -663,7 +663,7 @@
     },
     "day4_haeun_concern_yuna_arrival": {
         "name": "Yuna",
-        "text": "*Yuna quitte Haeun des yeux et me regarde.* Vous vous souvenez différemment de la même conversation ? Je veux t’entendre aussi."
+        "text": "*Yuna détourne les yeux de Haeun et me regarde.* J’ai écouté Haeun. Je veux aussi entendre ce que tu as à dire."
     },
     "day4_haeun_concern_yuna_escalation": {
         "name": "Yuna",
@@ -771,7 +771,7 @@
     },
     "day4_haeun_finish": {
         "name": "{name}",
-        "text": "*La conversation terminée, je m’éloigne du portail. Quand le feu piéton change, je prends le chemin de la maison.*"
+        "text": "*La conversation terminée, Haeun et moi nous écartons près du portail. Des passants attendent au feu devant le passage piéton.*"
     },
     "day4_haeun_reputation_cg": {
         "name": "{name}",

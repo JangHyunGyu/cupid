@@ -626,7 +626,7 @@
     },
     "day5_haeun_private_1": {
         "name": "Haeun",
-        "text": "Entonces habla conmigo hoy. Quiero saber qué ves en mí. Todavía no he aceptado salir contigo.",
+        "text": "Entonces hablemos un poco más. Quiero saber cómo me ves. Yo también intentaré contarte lo que siento, a mi ritmo.",
         "context": "Conversación privada con Haeun. Recuerda solo intercambios reales. Mantén su tono cortés y el trato a alguien de un curso superior. No establezcas un romance antes de elegir su ruta; incluso después, aún no ha aceptado salir. Responde según la conversación y la afinidad actuales.",
         "personality": "Conversación privada con Haeun. Recuerda solo intercambios reales. Mantén su tono cortés y el trato a alguien de un curso superior. No establezcas un romance antes de elegir su ruta; incluso después, aún no ha aceptado salir. Responde según la conversación y la afinidad actuales."
     },
@@ -642,7 +642,7 @@
     },
     "day5_haeun_fallback": {
         "name": "Haeun",
-        "text": "Me alegra que habláramos hoy, pero no estoy lista para salir contigo. *Haeun recoge su bolso.* No dejes a alguien esperando por mí."
+        "text": "Gracias por hablar conmigo hoy. Pero todavía no creo estar preparada para salir contigo. *Haeun recoge su bolso. Nos despedimos y vuelvo hacia la escuela.*"
     },
     "day5_ending_haeun": {
         "name": "Haeun",

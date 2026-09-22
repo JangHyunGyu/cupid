@@ -456,7 +456,7 @@
     },
     "day5_haeun_yuna_escalation_delay": {
         "name": "Yuna",
-        "text": "*Yuna range ses écouteurs.* Le travail, j’ai compris. Mais je ne savais pas que vous étiez proches. Je veux t’entendre aussi."
+        "text": "*Yuna range ses écouteurs.* J’ai compris que Haeun t’avait demandé. Mais je veux l’entendre de ta bouche. Qu’est-ce que vous faisiez ?"
     },
     "day5_haeun_yuna_group_talk": {
         "name": "Yuna · Haeun",
@@ -591,7 +591,7 @@
     },
     "day5_haeun_concern_yuna_arrival": {
         "name": "Yuna",
-        "text": "*Yuna quitte Haeun des yeux et me regarde.* Vous vous souvenez différemment de la même conversation ? Je veux t’entendre aussi."
+        "text": "*Yuna détourne les yeux de Haeun et me regarde.* J’ai écouté Haeun. Je veux aussi entendre ce que tu as à dire."
     },
     "day5_haeun_concern_yuna_escalation": {
         "name": "Yuna",

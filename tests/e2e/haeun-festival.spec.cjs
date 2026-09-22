@@ -21,11 +21,18 @@ for (const mode of ['high', 'low']) for (const [index, character] of ['Seoyeon',
                     }))
                 }) } }] } });
             }
-            if (new URL(request.url()).pathname === '/chat-logs') logs.push(body);
+            if (new URL(request.url()).pathname === '/chat-logs') {
+                // Match the D1 key: reload recovery may safely resend an existing row.
+                expect(body.clientMsgId).toBeTruthy();
+                const existing = logs.findIndex(log => log.appId === body.appId
+                    && log.userId === body.userId && log.clientMsgId === body.clientMsgId);
+                if (existing < 0) logs.push(body);
+                else logs[existing] = body;
+            }
             return route.fulfill({ status: 200, json: { ok: true, eventIds: (body.events || []).map(event => event.eventId) } });
         });
         await page.setViewportSize(index % 2 ? { width: 390, height: 844 } : { width: 1280, height: 800 });
-        await page.goto('/game.html');
+        await page.goto('/game.html', { waitUntil: 'domcontentloaded' });
         const ready = () => page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
         await ready();
         const delayed = index % 2 === 1;
@@ -55,7 +62,7 @@ for (const mode of ['high', 'low']) for (const [index, character] of ['Seoyeon',
         expect(entry.affinity).toBe(delayed ? 60 : 65);
         expect(entry.seen).toContain(mode === 'high' ? 'day5_haeun_high_clasp' : 'day4_haeun_concern_clarify');
         expect(entry.seen).toContain(mode === 'high' ? 'day5_haeun_trust_cg' : 'day4_haeun_reputation_cg');
-        await page.reload();
+        await page.reload({ waitUntil: 'domcontentloaded' });
         await ready();
         expect(await page.evaluate(character => window.gameEngine.stateManager.getAffinity(character), character)).toBe(entry.affinity);
         await page.evaluate(async () => {
@@ -86,7 +93,7 @@ for (const mode of ['high', 'low']) for (const [index, character] of ['Seoyeon',
             const current = await page.evaluate(character => window.gameEngine.stateManager.getAffinity(character), character);
             expect(current).toBe(entry.affinity + (turn + 1) * 2);
             if (turn === 0 && turns > 1) {
-                await page.reload();
+                await page.reload({ waitUntil: 'domcontentloaded' });
                 await ready();
                 expect(await page.evaluate(() => window.gameEngine.freeTalkSystem.freeTalkTurns)).toBe(1);
                 expect(await page.evaluate(character => window.gameEngine.stateManager.getAffinity(character), character)).toBe(current);
@@ -124,7 +131,7 @@ for (const mode of ['high', 'low']) for (const [index, character] of ['Seoyeon',
 test('legacy Day 5 reputation saves keep their date, score and continuation', async ({ page }) => {
     await page.route('**/*', route => route.request().method() === 'POST'
         ? route.fulfill({ json: { ok: true } }) : route.continue());
-    await page.goto('/game.html');
+    await page.goto('/game.html', { waitUntil: 'domcontentloaded' });
     const ready = () => page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
     await ready();
     await page.evaluate(async () => {
@@ -135,7 +142,7 @@ test('legacy Day 5 reputation saves keep their date, score and continuation', as
         e.stateManager.flags = { day5_haeun_rival: 'Yuna', day5_haeun_misunderstanding_started: true };
         await e.renderScene('day5_haeun_concern_yuna_group_talk');
     });
-    await page.reload();
+    await page.reload({ waitUntil: 'domcontentloaded' });
     await ready();
     const restored = await page.evaluate(() => {
         const e = window.gameEngine;

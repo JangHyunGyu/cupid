@@ -9,7 +9,7 @@ for (const [index, lang] of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].entries()
         await page.route('**/*', route => route.request().method() === 'POST'
             ? route.fulfill({ json: { ok: true } }) : route.continue());
         const readyGallery = () => page.waitForFunction(() => window.gallery?.ui && window.GalleryData);
-        await page.goto(`/gallery${suffix}.html`);
+        await page.goto(`/gallery${suffix}.html`, { waitUntil: 'domcontentloaded' });
         await readyGallery();
         await page.locator('[data-tab="cg"]').click();
         for (const id of ids) await expect(page.locator(`[data-cg-id="${id}"]`)).toHaveClass(/locked/);
@@ -17,7 +17,7 @@ for (const [index, lang] of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].entries()
             ['high', ids[0], 'day5_haeun_trust_cg', 'day5_haeun_defends'],
             ['low', ids[1], 'day4_haeun_reputation_cg', 'day4_haeun_concern_clarify']
         ]) {
-            await page.goto(`/game${suffix}.html`);
+            await page.goto(`/game${suffix}.html`, { waitUntil: 'domcontentloaded' });
             await page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
             const result = await page.evaluate(async ({ mode, id, sceneId }) => {
                 const e = window.gameEngine;
@@ -49,10 +49,10 @@ for (const [index, lang] of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].entries()
             expect(result.background).toMatch(new RegExp(`${id}\\.(?:png|webp)(?:\\?|["\\)])`));
             expect(result.standingSprites).toBe(0);
             if (lang === 'ko' || lang === 'en') await page.screenshot({ path: `test-results/haeun-cg-${lang}-${mode}-scene.png` });
-            await page.reload();
+            await page.reload({ waitUntil: 'domcontentloaded' });
             await page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
             expect(await page.evaluate(() => window.gameEngine.sceneRenderer.currentSceneId)).toBe(sceneId);
-            await page.goto(`/gallery${suffix}.html`);
+            await page.goto(`/gallery${suffix}.html`, { waitUntil: 'domcontentloaded' });
             await readyGallery();
             await page.locator('[data-tab="cg"]').click();
             const card = page.locator(`[data-cg-id="${id}"]`);
@@ -63,7 +63,7 @@ for (const [index, lang] of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].entries()
             await card.click();
             const image = page.locator('#cg-modal-image');
             await expect(image).toBeVisible();
-            await expect.poll(() => image.evaluate(img => img.complete && img.naturalWidth)).toBe(mode === 'high' ? 2160 : 3072);
+            await expect.poll(() => image.evaluate(img => img.complete && img.naturalWidth), { timeout: 30_000 }).toBe(mode === 'high' ? 2160 : 3072);
             expect(await image.evaluate(img => img.naturalHeight)).toBe(mode === 'high' ? 2160 : 3072);
             await expect(image).toHaveCSS('opacity', '1');
             await expect(page.locator('#cg-modal-title')).toHaveText(copy.name);

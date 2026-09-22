@@ -663,7 +663,7 @@
     },
     "day4_haeun_concern_yuna_arrival": {
         "name": "Yuna",
-        "text": "*Yuna looks from Haeun to me.* Do you remember the same conversation differently? I want to hear your side, too."
+        "text": "*Yuna looks away from Haeun and turns to me.* I heard what Haeun had to say. I want to hear your side too."
     },
     "day4_haeun_concern_yuna_escalation": {
         "name": "Yuna",
@@ -771,7 +771,7 @@
     },
     "day4_haeun_finish": {
         "name": "{name}",
-        "text": "*After the conversation, I step away from the gate. When the crossing light changes, I head home.*"
+        "text": "*As the conversation ends, Haeun and I step aside by the gate. People are waiting for the light at the crossing.*"
     },
     "day4_haeun_reputation_cg": {
         "name": "{name}",
