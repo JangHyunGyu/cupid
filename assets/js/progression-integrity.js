@@ -98,7 +98,7 @@
             saveData.lastBgUrl = record.lastBgUrl || '';
             saveData.currentCharacters = record.currentCharacters || {};
         }
-        if (record?.runId === saveData.gameState.progressionRunId && record.pendingNextScene) {
+        if (record && record.runId === saveData.gameState.progressionRunId && record.pendingNextScene) {
             saveData.currentSceneId = record.pendingNextScene;
             saveData.pendingEntryEffects = true;
             return true;
