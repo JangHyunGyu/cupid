@@ -597,5 +597,168 @@
         "name": "School Nurse",
         "text": "I can do it on my own. I was just hoping you’d help finish what’s left."
     },
-    "day4_date_branch": {}
+    "day4_date_branch": {},
+    "day4_haeun_concern_choice": {
+        "name": "{name}",
+        "text": "*Haeun turns toward me. The person listening to her stays where they are.*",
+        "choices": [
+            "Ask what they heard and explain with Haeun present",
+            "Say I do not want to discuss it now"
+        ]
+    },
+    "day4_haeun_concern_open": {
+        "name": "{name}",
+        "text": "*I ask what they heard and say I will explain with Haeun here. The other person glances at her once more, then turns to me.*"
+    },
+    "day4_haeun_concern_delay": {
+        "name": "{name}",
+        "text": "*I say I don’t want to discuss it now and try to leave. The other person calls my name. Haeun stays as well.*"
+    },
+    "day4_haeun_concern_clarify": {
+        "name": "Haeun",
+        "text": "I’m not trying to make you look bad by inventing things. I talked about what made me uncomfortable. *Haeun looks at me.* If I took it differently than you meant, please tell us here."
+    },
+    "day4_haeun_concern_seoyeon_intro": {
+        "name": "Haeun",
+        "text": "*I hear Haeun by the gate. She is speaking quietly to someone, then stops when she sees me.* I felt uncomfortable when we talked yesterday. I wasn’t sure how to take it, so I brought it up."
+    },
+    "day4_haeun_concern_seoyeon_arrival": {
+        "name": "Seoyeon",
+        "text": "What did you talk about with Haeun? *Seoyeon lowers her papers.* It didn’t sound like something I should brush aside."
+    },
+    "day4_haeun_concern_seoyeon_escalation": {
+        "name": "Seoyeon",
+        "text": "I want to know whether you realized she felt uncomfortable. *Seoyeon waits for my answer.* Tell us directly."
+    },
+    "day4_haeun_concern_seoyeon_escalation_delay": {
+        "name": "Seoyeon",
+        "text": "I want to know whether you realized she felt uncomfortable. *Seoyeon waits for my answer.* Tell us directly."
+    },
+    "day4_haeun_concern_seoyeon_group_talk": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon glances at Haeun, then asks me.* I didn’t expect to hear something like this about you. What did you say to her?",
+        "groupLocation": "School gate on Saturday morning, Day 4",
+        "context": "It is Saturday morning, Day 4. Having finished the morning errands, the protagonist meets Haeun and the other person at the school gate before returning home. Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three discuss yesterday’s conversation at the school gate. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
+        "personality": "Haeun stays polite and separates words she actually heard from her interpretation. Descriptions such as frightening or strange require evidence in the prior conversation. The other person listens in their own voice at their current affinity and does not treat Haeun’s account as proven fact. Leave room for the user to explain; clarification may resolve a misunderstanding or establish responsibility. Do not erase actual harm by calling it a misunderstanding or force an apology. Do not repeat the initial penalty; score only the effect of the current contribution.",
+        "groupChoiceState": {
+            "open": "The protagonist asked what was reported and offered to explain with Haeun present. The actual explanation has not started yet.",
+            "delay": "The protagonist said he did not want to discuss it now and tried to leave. The other person took this as avoidance. The initial penalty for that choice has already been applied."
+        }
+    },
+    "day4_haeun_concern_yuna_intro": {
+        "name": "Haeun",
+        "text": "*I hear Haeun by the gate. She is speaking quietly to someone, then stops when she sees me.* I felt uncomfortable when we talked yesterday. I wasn’t sure how to take it, so I brought it up."
+    },
+    "day4_haeun_concern_yuna_arrival": {
+        "name": "Yuna",
+        "text": "*Yuna looks from Haeun to me.* Do you remember the same conversation differently? I want to hear your side, too."
+    },
+    "day4_haeun_concern_yuna_escalation": {
+        "name": "Yuna",
+        "text": "*Yuna puts away her phone.* I don’t know how to take your words right now. Tell me what you meant then."
+    },
+    "day4_haeun_concern_yuna_escalation_delay": {
+        "name": "Yuna",
+        "text": "*Yuna puts away her phone.* I don’t know how to take your words right now. Tell me what you meant then."
+    },
+    "day4_haeun_concern_yuna_group_talk": {
+        "name": "Yuna",
+        "text": "*Yuna folds her earbud cord into her pocket.* What Haeun told me sounds so unlike the person I know. Tell me yourself. What did you talk about?",
+        "groupLocation": "School gate on Saturday morning, Day 4",
+        "context": "It is Saturday morning, Day 4. Having finished the morning errands, the protagonist meets Haeun and the other person at the school gate before returning home. Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three discuss yesterday’s conversation at the school gate. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
+        "personality": "Haeun stays polite and separates words she actually heard from her interpretation. Descriptions such as frightening or strange require evidence in the prior conversation. The other person listens in their own voice at their current affinity and does not treat Haeun’s account as proven fact. Leave room for the user to explain; clarification may resolve a misunderstanding or establish responsibility. Do not erase actual harm by calling it a misunderstanding or force an apology. Do not repeat the initial penalty; score only the effect of the current contribution.",
+        "groupChoiceState": {
+            "open": "The protagonist asked what was reported and offered to explain with Haeun present. The actual explanation has not started yet.",
+            "delay": "The protagonist said he did not want to discuss it now and tried to leave. The other person took this as avoidance. The initial penalty for that choice has already been applied."
+        }
+    },
+    "day4_haeun_concern_dain_intro": {
+        "name": "Haeun",
+        "text": "*I hear Haeun by the gate. She is speaking quietly to someone, then stops when she sees me.* I felt uncomfortable when we talked yesterday. I wasn’t sure how to take it, so I brought it up."
+    },
+    "day4_haeun_concern_dain_arrival": {
+        "name": "Dain",
+        "text": "Haeun stopped halfway through telling me. *Dain stands in front of me.* I’m going to ask you what happened, too."
+    },
+    "day4_haeun_concern_dain_escalation": {
+        "name": "Dain",
+        "text": "*Dain lowers her arms.* If there’s a misunderstanding, clear it up. If you said something hurtful, talk about that too. I’m listening."
+    },
+    "day4_haeun_concern_dain_escalation_delay": {
+        "name": "Dain",
+        "text": "*Dain lowers her arms.* If there’s a misunderstanding, clear it up. If you said something hurtful, talk about that too. I’m listening."
+    },
+    "day4_haeun_concern_dain_group_talk": {
+        "name": "Dain",
+        "text": "*Dain stops in front of me.* What did you say to Haeun? I didn’t think you were the kind of person to treat someone badly. Let’s hear your side.",
+        "groupLocation": "School gate on Saturday morning, Day 4",
+        "context": "It is Saturday morning, Day 4. Having finished the morning errands, the protagonist meets Haeun and the other person at the school gate before returning home. Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three discuss yesterday’s conversation at the school gate. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
+        "personality": "Haeun stays polite and separates words she actually heard from her interpretation. Descriptions such as frightening or strange require evidence in the prior conversation. The other person listens in their own voice at their current affinity and does not treat Haeun’s account as proven fact. Leave room for the user to explain; clarification may resolve a misunderstanding or establish responsibility. Do not erase actual harm by calling it a misunderstanding or force an apology. Do not repeat the initial penalty; score only the effect of the current contribution.",
+        "groupChoiceState": {
+            "open": "The protagonist asked what was reported and offered to explain with Haeun present. The actual explanation has not started yet.",
+            "delay": "The protagonist said he did not want to discuss it now and tried to leave. The other person took this as avoidance. The initial penalty for that choice has already been applied."
+        }
+    },
+    "day4_haeun_concern_teacher_intro": {
+        "name": "Haeun",
+        "text": "*I hear Haeun by the gate. She is speaking quietly to someone, then stops when she sees me.* I felt uncomfortable when we talked yesterday. I wasn’t sure how to take it, so I brought it up."
+    },
+    "day4_haeun_concern_teacher_arrival": {
+        "name": "Homeroom Teacher",
+        "text": "*The teacher steps aside from Haeun.* I’m not deciding based on one side. Tell me yours."
+    },
+    "day4_haeun_concern_teacher_escalation": {
+        "name": "Homeroom Teacher",
+        "text": "*The teacher looks straight at me.* It may not have sounded the way you intended. We still need to hear what bothered Haeun. What do you think?"
+    },
+    "day4_haeun_concern_teacher_escalation_delay": {
+        "name": "Homeroom Teacher",
+        "text": "*The teacher looks straight at me.* It may not have sounded the way you intended. We still need to hear what bothered Haeun. What do you think?"
+    },
+    "day4_haeun_concern_teacher_group_talk": {
+        "name": "Homeroom Teacher",
+        "text": "*The teacher puts down her folder.* I thought well of you, but I can’t brush this aside. Tell me what you said to Haeun.",
+        "groupLocation": "School gate on Saturday morning, Day 4",
+        "context": "It is Saturday morning, Day 4. Having finished the morning errands, the protagonist meets Haeun and the other person at the school gate before returning home. Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three discuss yesterday’s conversation at the school gate. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
+        "personality": "Haeun stays polite and separates words she actually heard from her interpretation. Descriptions such as frightening or strange require evidence in the prior conversation. The other person listens in their own voice at their current affinity and does not treat Haeun’s account as proven fact. Leave room for the user to explain; clarification may resolve a misunderstanding or establish responsibility. Do not erase actual harm by calling it a misunderstanding or force an apology. Do not repeat the initial penalty; score only the effect of the current contribution.",
+        "groupChoiceState": {
+            "open": "The protagonist asked what was reported and offered to explain with Haeun present. The actual explanation has not started yet.",
+            "delay": "The protagonist said he did not want to discuss it now and tried to leave. The other person took this as avoidance. The initial penalty for that choice has already been applied."
+        }
+    },
+    "day4_haeun_concern_nurse_intro": {
+        "name": "Haeun",
+        "text": "*I hear Haeun by the gate. She is speaking quietly to someone, then stops when she sees me.* I felt uncomfortable when we talked yesterday. I wasn’t sure how to take it, so I brought it up."
+    },
+    "day4_haeun_concern_nurse_arrival": {
+        "name": "School Nurse",
+        "text": "*The nurse glances at Haeun, then meets my eyes.* I can’t simply ignore that she felt uncomfortable. I need to hear your side."
+    },
+    "day4_haeun_concern_nurse_escalation": {
+        "name": "School Nurse",
+        "text": "*The nurse’s smile fades.* Let’s work out why Haeun took it that way. Explain your side."
+    },
+    "day4_haeun_concern_nurse_escalation_delay": {
+        "name": "School Nurse",
+        "text": "*The nurse’s smile fades.* Let’s work out why Haeun took it that way. Explain your side."
+    },
+    "day4_haeun_concern_nurse_group_talk": {
+        "name": "School Nurse",
+        "text": "*The nurse checks on Haeun before turning to me.* I don’t understand why I’m hearing this about you. I want to hear from you why she’s so upset. What did you say?",
+        "groupLocation": "School gate on Saturday morning, Day 4",
+        "context": "It is Saturday morning, Day 4. Having finished the morning errands, the protagonist meets Haeun and the other person at the school gate before returning home. Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three discuss yesterday’s conversation at the school gate. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
+        "personality": "Haeun stays polite and separates words she actually heard from her interpretation. Descriptions such as frightening or strange require evidence in the prior conversation. The other person listens in their own voice at their current affinity and does not treat Haeun’s account as proven fact. Leave room for the user to explain; clarification may resolve a misunderstanding or establish responsibility. Do not erase actual harm by calling it a misunderstanding or force an apology. Do not repeat the initial penalty; score only the effect of the current contribution.",
+        "groupChoiceState": {
+            "open": "The protagonist asked what was reported and offered to explain with Haeun present. The actual explanation has not started yet.",
+            "delay": "The protagonist said he did not want to discuss it now and tried to leave. The other person took this as avoidance. The initial penalty for that choice has already been applied."
+        }
+    },
+    "day4_haeun_approach": {
+        "name": "{name}",
+        "text": "*Haeun stands beside the open school gate. I slow down when I see her talking to someone.*"
+    },
+    "day4_haeun_finish": {
+        "name": "{name}",
+        "text": "*After the conversation, I step away from the gate. When the crossing light changes, I head home.*"
+    }
 }

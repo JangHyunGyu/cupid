@@ -201,7 +201,7 @@ const day5EndingFreeTalkIds = [
 ];
 const activeFreeTalkIds = [
     ...['seoyeon', 'yuna', 'dain', 'teacher', 'nurse'].flatMap(id => [
-        `day5_haeun_${id}_group_talk`, `day5_haeun_concern_${id}_group_talk`
+        `day5_haeun_${id}_group_talk`, `day5_haeun_concern_${id}_group_talk`, `day4_haeun_concern_${id}_group_talk`
     ]),
     'lunch_seo_freetalk',
     'lunch_dain_freetalk',

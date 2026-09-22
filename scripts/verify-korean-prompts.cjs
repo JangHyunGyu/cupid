@@ -756,7 +756,7 @@ function verifyWiringAndScenePrompts() {
         Object.values(value).forEach(collect);
     }
     sceneFiles.forEach(file => collect(JSON.parse(read(file))));
-    assert(scenePrompts.length === 52, `expected 52 active Korean scene prompts, found ${scenePrompts.length}`);
+    assert(scenePrompts.length === 57, `expected 57 active Korean scene prompts, found ${scenePrompts.length}`);
     const joined = scenePrompts.join('\n');
     for (const stalePhrase of ['Day 1', 'Day 3', '톤:', '티키타카', '쿨뷰티', '신비주의 문학소녀', '체육계']) {
         assert(!joined.includes(stalePhrase), `active Korean scene prompt still contains: ${stalePhrase}`);
@@ -1235,4 +1235,4 @@ verifyCacheKeyWiring();
 verifyGroupPromptCacheContract(context);
 verifyTypingOwnerIsolation(context);
 
-console.log(`Verified Korean runtime prompts for ${CHARACTERS.length} romance characters plus Haeun, 52 scene prompts, daily turn limits, loader order, memories, user agency, and stale-turn ownership.`);
+console.log(`Verified Korean runtime prompts for ${CHARACTERS.length} romance characters plus Haeun, 57 scene prompts, daily turn limits, loader order, memories, user agency, and stale-turn ownership.`);

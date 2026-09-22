@@ -16737,7 +16737,7 @@
 ### `hidden_nurse_d4_check`
 - 분기:
   - [`nurse_day3`] → `hidden_nurse_d4_1`
-  - [기본] → `morning4_end`
+  - [기본] → `day4_haeun_gate`
 
 - 캐릭터: `없음`
 **시스템**: ‹빈›
@@ -17197,7 +17197,7 @@
 ### `hidden_nurse_d4_freetalk`
 - 배경: `nurse_room.png`
 - 타입: `free_talk`
-- 다음: `morning4_end`
+- 다음: `day4_haeun_gate`
 - 컨텍스트: "4일차 아침, 학교 행사 준비와 응급키트 정리를 함께 마친 보건실이다. 함께 간식을 먹었을 수도 있고 주인공이 먼저 쉬기로 했을 수도 있으므로, 저장된 사건만 사실로 다룬다. 두 사람은 보건교사와 학생이며 신뢰가 깊어졌지만 전문적 경계는 유지된다."
 - 성격: "보건선생님은 실용적이고 세심하며 피곤한 순간에도 유머를 잃지 않는다. 자신의 과거를 과장해 털어놓기보다 필요한 만큼만 솔직하게 말하고 학생의 건강과 선택을 존중한다."
 
@@ -17219,7 +17219,7 @@
 
 ### `hidden_nurse_d4_low`
 - 배경: `nurse_room.png`
-- 다음: `morning4_end`
+- 다음: `day4_haeun_gate`
 
 - 캐릭터: `nurse_normal.png`
 **보건선생님**: *보건선생님이 정리 중인 응급키트 지퍼를 닫는다.* 오늘은 혼자 마칠게. 너도 네 일정으로 돌아가.
@@ -17228,10 +17228,386 @@
 
 ### `hidden_nurse_d4_neg`
 - 배경: `nurse_room.png`
-- 다음: `morning4_end`
+- 다음: `day4_haeun_gate`
 
 - 캐릭터: `nurse_normal.png`
 **보건선생님**: *키트 지퍼를 닫는다.* 오늘은 혼자 한다. 돌아가.
+
+---
+
+### `day4_haeun_gate`
+- 분기:
+  - [`day4_haeun_event_done`] → `morning4_end`
+  - [기본] → `day4_haeun_trust_check`
+
+---
+
+### `day4_haeun_trust_check`
+- 호감분기: Haeun
+  - [0+] → `morning4_end`
+  - [기본] → `day4_haeun_approach`
+
+---
+
+### `day4_haeun_approach`
+- 배경: `school.png`
+- 다음: `day4_haeun_select_concern`
+
+- 캐릭터: `haeun_worried.png`
+**{name}**: *열린 교문 옆에 하은이 서 있다. 누군가와 이야기를 나누는 모습에 걸음을 늦춘다.*
+
+---
+
+### `day4_haeun_select_concern`
+- 실시간 라이벌 분기:
+  - [`Seoyeon`] → `day4_haeun_concern_seoyeon_intro`
+  - [`Yuna`] → `day4_haeun_concern_yuna_intro`
+  - [`Dain`] → `day4_haeun_concern_dain_intro`
+  - [`Teacher`] → `day4_haeun_concern_teacher_intro`
+  - [`Nurse`] → `day4_haeun_concern_nurse_intro`
+
+---
+
+### `day4_haeun_concern_seoyeon_intro`
+- 배경: `school.png`
+- 다음: `day4_haeun_concern_seoyeon_arrival`
+
+- 캐릭터: `haeun_worried.png`
+**하은**: *교문 옆에서 하은의 목소리가 들린다. 맞은편 사람에게 낮은 목소리로 이야기하던 하은이 나를 보고 말을 멈춘다.* 어제 선배랑 얘기할 때 좀 불편했어요. 어떻게 받아들여야 할지 몰라서 말씀드렸어요.
+
+---
+
+### `day4_haeun_concern_seoyeon_arrival`
+- 배경: `school.png`
+- 다음: `day4_haeun_concern_choice`
+
+- 캐릭터: `seyoun_pout.png`
+**서연**: 하은이랑 무슨 얘기를 했어? *서연이 들고 있던 서류를 내린다.* 그냥 넘겨도 되는 얘기 같지는 않아서.
+
+---
+
+### `day4_haeun_concern_yuna_intro`
+- 배경: `school.png`
+- 다음: `day4_haeun_concern_yuna_arrival`
+
+- 캐릭터: `haeun_worried.png`
+**하은**: *교문 옆에서 하은의 목소리가 들린다. 맞은편 사람에게 낮은 목소리로 이야기하던 하은이 나를 보고 말을 멈춘다.* 어제 선배랑 얘기할 때 좀 불편했어요. 어떻게 받아들여야 할지 몰라서 말씀드렸어요.
+
+---
+
+### `day4_haeun_concern_yuna_arrival`
+- 배경: `school.png`
+- 다음: `day4_haeun_concern_choice`
+
+- 캐릭터: `yuna_sad.png`
+**유나**: *유나가 하은에게서 눈을 떼고 나를 본다.* 같은 대화였는데 다르게 기억하는 거야? 네 얘기도 듣고 싶어.
+
+---
+
+### `day4_haeun_concern_dain_intro`
+- 배경: `school.png`
+- 다음: `day4_haeun_concern_dain_arrival`
+
+- 캐릭터: `haeun_worried.png`
+**하은**: *교문 옆에서 하은의 목소리가 들린다. 맞은편 사람에게 낮은 목소리로 이야기하던 하은이 나를 보고 말을 멈춘다.* 어제 선배랑 얘기할 때 좀 불편했어요. 어떻게 받아들여야 할지 몰라서 말씀드렸어요.
+
+---
+
+### `day4_haeun_concern_dain_arrival`
+- 배경: `school.png`
+- 다음: `day4_haeun_concern_choice`
+
+- 캐릭터: `dain_angry.png`
+**다인**: 하은이 얘기하다가 멈추더라. *다인이 내 앞에 선다.* 무슨 일 있었는지 너한테도 물어볼게.
+
+---
+
+### `day4_haeun_concern_teacher_intro`
+- 배경: `school.png`
+- 다음: `day4_haeun_concern_teacher_arrival`
+
+- 캐릭터: `haeun_worried.png`
+**하은**: *교문 옆에서 하은의 목소리가 들린다. 맞은편 사람에게 낮은 목소리로 이야기하던 하은이 나를 보고 말을 멈춘다.* 어제 선배랑 얘기할 때 좀 불편했어요. 어떻게 받아들여야 할지 몰라서 말씀드렸어요.
+
+---
+
+### `day4_haeun_concern_teacher_arrival`
+- 배경: `school.png`
+- 다음: `day4_haeun_concern_choice`
+
+- 캐릭터: `teacher_sad.png`
+**담임선생님**: *담임선생님이 하은 옆으로 한 걸음 비켜 선다.* 한쪽 얘기만 듣고 판단하진 않을 거야. 네가 설명해 봐.
+
+---
+
+### `day4_haeun_concern_nurse_intro`
+- 배경: `school.png`
+- 다음: `day4_haeun_concern_nurse_arrival`
+
+- 캐릭터: `haeun_worried.png`
+**하은**: *교문 옆에서 하은의 목소리가 들린다. 맞은편 사람에게 낮은 목소리로 이야기하던 하은이 나를 보고 말을 멈춘다.* 어제 선배랑 얘기할 때 좀 불편했어요. 어떻게 받아들여야 할지 몰라서 말씀드렸어요.
+
+---
+
+### `day4_haeun_concern_nurse_arrival`
+- 배경: `school.png`
+- 다음: `day4_haeun_concern_choice`
+
+- 캐릭터: `nurse_worried.png`
+**보건선생님**: *보건선생님이 하은을 돌아본 뒤 내게 시선을 맞춘다.* 하은이 불편했다는 건 그냥 넘기기 어려워. 네 쪽 얘기도 들어야겠어.
+
+---
+
+### `day4_haeun_concern_choice`
+- 배경: `school.png`
+- 선택지:
+  1. "어떤 이야기를 들었는지 묻고 함께 설명한다" → `day4_haeun_concern_open`
+  2. "지금은 이야기하고 싶지 않다고 미룬다" → `day4_haeun_concern_delay` | 플래그: `day4_haeun_delayed_explanation`
+
+- 캐릭터: `haeun_worried.png`
+**{name}**: *하은이 내 쪽으로 돌아선다. 이야기를 듣던 상대도 자리를 비키지 않는다.*
+
+---
+
+### `day4_haeun_concern_open`
+- 배경: `school.png`
+- 다음: `day4_haeun_concern_clarify`
+
+- 캐릭터: `없음`
+**{name}**: *어떤 이야기를 들었는지 묻고 하은도 있는 자리에서 설명하겠다고 말한다. 상대는 하은에게 한 번 더 시선을 준 뒤 내 쪽으로 돌아선다.*
+
+---
+
+### `day4_haeun_concern_delay`
+- 배경: `school.png`
+- 다음: `day4_haeun_concern_clarify`
+
+- 캐릭터: `없음`
+**{name}**: *지금은 이야기하고 싶지 않다고 말하며 자리를 뜨려 한다. 상대가 내 이름을 부른다. 하은도 그대로 서 있다.*
+
+---
+
+### `day4_haeun_concern_clarify`
+- 배경: `school.png`
+- 다음: `day4_haeun_concern_router`
+
+- 캐릭터: `haeun_firm.png`
+**하은**: 선배를 나쁘게 말하려고 지어낸 얘기는 아니에요. 제가 불편했던 얘기를 한 거예요. *하은이 내 쪽을 본다.* 다르게 받아들인 거라면 여기서 얘기해 주세요.
+
+---
+
+### `day4_haeun_concern_router`
+- 실시간 라이벌 분기:
+  - [`Seoyeon`] → `day4_haeun_concern_seoyeon_check`
+  - [`Yuna`] → `day4_haeun_concern_yuna_check`
+  - [`Dain`] → `day4_haeun_concern_dain_check`
+  - [`Teacher`] → `day4_haeun_concern_teacher_check`
+  - [`Nurse`] → `day4_haeun_concern_nurse_check`
+
+---
+
+### `day4_haeun_concern_seoyeon_check`
+- 분기:
+  - [`day4_haeun_delayed_explanation`] → `day4_haeun_concern_seoyeon_escalation_delay`
+  - [기본] → `day4_haeun_concern_seoyeon_escalation`
+
+---
+
+### `day4_haeun_concern_seoyeon_escalation`
+- 배경: `school.png`
+- 플래그: `day4_haeun_misunderstanding_started`
+- 스탯: Seoyeon -15
+- 다음: `day4_haeun_concern_seoyeon_group_talk`
+
+- 캐릭터: `seyoun_pout.png`
+**서연**: 하은이 불편했던 걸 네가 알고 있었는지가 궁금해. *서연이 내 대답을 기다린다.* 여기서 직접 얘기해.
+
+---
+
+### `day4_haeun_concern_seoyeon_escalation_delay`
+- 배경: `school.png`
+- 플래그: `day4_haeun_misunderstanding_started`
+- 스탯: Seoyeon -20
+- 다음: `day4_haeun_concern_seoyeon_group_talk`
+
+- 캐릭터: `seyoun_pout.png`
+**서연**: 하은이 불편했던 걸 네가 알고 있었는지가 궁금해. *서연이 내 대답을 기다린다.* 여기서 직접 얘기해.
+
+---
+
+### `day4_haeun_concern_seoyeon_group_talk`
+- 배경: `school.png`
+- 타입: `group_free_talk`
+- 다음: `day4_haeun_finish`
+
+- 캐릭터: `없음`
+**서연**: *서연이 하은을 돌아본 뒤 내게 묻는다.* 너에 대해 이런 얘길 들을 줄은 몰랐어. 하은한테 무슨 말을 한 거야?
+
+---
+
+### `day4_haeun_concern_yuna_check`
+- 분기:
+  - [`day4_haeun_delayed_explanation`] → `day4_haeun_concern_yuna_escalation_delay`
+  - [기본] → `day4_haeun_concern_yuna_escalation`
+
+---
+
+### `day4_haeun_concern_yuna_escalation`
+- 배경: `school.png`
+- 플래그: `day4_haeun_misunderstanding_started`
+- 스탯: Yuna -15
+- 다음: `day4_haeun_concern_yuna_group_talk`
+
+- 캐릭터: `yuna_sad.png`
+**유나**: *유나가 휴대폰을 넣는다.* 지금은 네 말을 어떻게 받아들여야 할지 모르겠어. 그때 무슨 뜻이었는지 말해 줘.
+
+---
+
+### `day4_haeun_concern_yuna_escalation_delay`
+- 배경: `school.png`
+- 플래그: `day4_haeun_misunderstanding_started`
+- 스탯: Yuna -20
+- 다음: `day4_haeun_concern_yuna_group_talk`
+
+- 캐릭터: `yuna_sad.png`
+**유나**: *유나가 휴대폰을 넣는다.* 지금은 네 말을 어떻게 받아들여야 할지 모르겠어. 그때 무슨 뜻이었는지 말해 줘.
+
+---
+
+### `day4_haeun_concern_yuna_group_talk`
+- 배경: `school.png`
+- 타입: `group_free_talk`
+- 다음: `day4_haeun_finish`
+
+- 캐릭터: `없음`
+**유나**: *유나가 이어폰 줄을 접어 주머니에 넣는다.* 하은이 하는 얘기가 내가 아는 너랑 너무 달라서. 네가 직접 말해 줘. 무슨 얘길 했어?
+
+---
+
+### `day4_haeun_concern_dain_check`
+- 분기:
+  - [`day4_haeun_delayed_explanation`] → `day4_haeun_concern_dain_escalation_delay`
+  - [기본] → `day4_haeun_concern_dain_escalation`
+
+---
+
+### `day4_haeun_concern_dain_escalation`
+- 배경: `school.png`
+- 플래그: `day4_haeun_misunderstanding_started`
+- 스탯: Dain -15
+- 다음: `day4_haeun_concern_dain_group_talk`
+
+- 캐릭터: `dain_angry.png`
+**다인**: *다인이 팔을 내린다.* 오해면 풀어. 상처 준 말이 있으면 그것도 얘기하고. 내가 듣고 있을게.
+
+---
+
+### `day4_haeun_concern_dain_escalation_delay`
+- 배경: `school.png`
+- 플래그: `day4_haeun_misunderstanding_started`
+- 스탯: Dain -20
+- 다음: `day4_haeun_concern_dain_group_talk`
+
+- 캐릭터: `dain_angry.png`
+**다인**: *다인이 팔을 내린다.* 오해면 풀어. 상처 준 말이 있으면 그것도 얘기하고. 내가 듣고 있을게.
+
+---
+
+### `day4_haeun_concern_dain_group_talk`
+- 배경: `school.png`
+- 타입: `group_free_talk`
+- 다음: `day4_haeun_finish`
+
+- 캐릭터: `없음`
+**다인**: *다인이 내 앞에서 걸음을 멈춘다.* 하은한테 뭐라고 했어? 너 사람한테 함부로 할 애는 아니라고 생각했는데. 네 얘기도 들어 보자.
+
+---
+
+### `day4_haeun_concern_teacher_check`
+- 분기:
+  - [`day4_haeun_delayed_explanation`] → `day4_haeun_concern_teacher_escalation_delay`
+  - [기본] → `day4_haeun_concern_teacher_escalation`
+
+---
+
+### `day4_haeun_concern_teacher_escalation`
+- 배경: `school.png`
+- 플래그: `day4_haeun_misunderstanding_started`
+- 스탯: Teacher -15
+- 다음: `day4_haeun_concern_teacher_group_talk`
+
+- 캐릭터: `teacher_sad.png`
+**담임선생님**: *담임선생님이 나를 똑바로 본다.* 의도와 다르게 들렸을 수도 있겠지. 그래도 하은이 불편했던 건 들어 봐야 해. 네 생각은 어때?
+
+---
+
+### `day4_haeun_concern_teacher_escalation_delay`
+- 배경: `school.png`
+- 플래그: `day4_haeun_misunderstanding_started`
+- 스탯: Teacher -20
+- 다음: `day4_haeun_concern_teacher_group_talk`
+
+- 캐릭터: `teacher_sad.png`
+**담임선생님**: *담임선생님이 나를 똑바로 본다.* 의도와 다르게 들렸을 수도 있겠지. 그래도 하은이 불편했던 건 들어 봐야 해. 네 생각은 어때?
+
+---
+
+### `day4_haeun_concern_teacher_group_talk`
+- 배경: `school.png`
+- 타입: `group_free_talk`
+- 다음: `day4_haeun_finish`
+
+- 캐릭터: `없음`
+**담임선생님**: *담임선생님이 서류철을 내려놓는다.* 너를 좋게 보고 있었는데 이 얘기는 그냥 넘길 수가 없네. 하은한테 무슨 말을 했는지 설명해 봐.
+
+---
+
+### `day4_haeun_concern_nurse_check`
+- 분기:
+  - [`day4_haeun_delayed_explanation`] → `day4_haeun_concern_nurse_escalation_delay`
+  - [기본] → `day4_haeun_concern_nurse_escalation`
+
+---
+
+### `day4_haeun_concern_nurse_escalation`
+- 배경: `school.png`
+- 플래그: `day4_haeun_misunderstanding_started`
+- 스탯: Nurse -15
+- 다음: `day4_haeun_concern_nurse_group_talk`
+
+- 캐릭터: `nurse_worried.png`
+**보건선생님**: *보건선생님이 말끝의 웃음을 거둔다.* 하은이 왜 그렇게 받아들였는지 같이 짚어 보자. 네가 설명해 줘.
+
+---
+
+### `day4_haeun_concern_nurse_escalation_delay`
+- 배경: `school.png`
+- 플래그: `day4_haeun_misunderstanding_started`
+- 스탯: Nurse -20
+- 다음: `day4_haeun_concern_nurse_group_talk`
+
+- 캐릭터: `nurse_worried.png`
+**보건선생님**: *보건선생님이 말끝의 웃음을 거둔다.* 하은이 왜 그렇게 받아들였는지 같이 짚어 보자. 네가 설명해 줘.
+
+---
+
+### `day4_haeun_concern_nurse_group_talk`
+- 배경: `school.png`
+- 타입: `group_free_talk`
+- 다음: `day4_haeun_finish`
+
+- 캐릭터: `없음`
+**보건선생님**: *보건선생님이 하은을 먼저 살피고 내 쪽으로 돌아선다.* 네가 왜 그런 얘길 듣는지 모르겠어. 하은이 저러는 이유를 너한테도 듣고 싶어. 무슨 말을 했어?
+
+---
+
+### `day4_haeun_finish`
+- 배경: `street.png`
+- 플래그: `day4_haeun_event_done`
+- 다음: `morning4_end`
+
+- 캐릭터: `없음`
+**{name}**: *대화를 마치고 교문에서 물러난다. 횡단보도 신호가 바뀌자 집 쪽으로 발을 옮긴다.*
 
 ---
 
@@ -24098,7 +24474,7 @@
 - 호감분기: Haeun
   - [8+] → `day5_haeun_select_rival`
   - [0+] → `day5_haeun_resume`
-  - [기본] → `day5_haeun_select_concern`
+  - [기본] → `day5_haeun_low_intro`
 
 ---
 

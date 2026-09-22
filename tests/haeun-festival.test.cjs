@@ -14,25 +14,31 @@ function runtime(random = 0) {
         document: { createElement: () => ({ toDataURL: () => '' }) } };
     vm.createContext(context);
     for (const file of ['freetalk-core.js', 'example-dialogues-ko.js', 'prompts.js', 'modules/StateManager.js',
-        'modules/SceneRenderer.js', 'modules/FreeTalkSystem.js', 'scenario/day3_3_afterschool.js', 'scenario/day5_1_morning.js', 'scenario/day5_2_lunch.js']) {
+        'modules/SceneRenderer.js', 'modules/FreeTalkSystem.js', 'scenario/day3_3_afterschool.js', 'scenario/day4_1_morning.js', 'scenario/day5_1_morning.js', 'scenario/day5_2_lunch.js']) {
         vm.runInContext(read(`assets/js/${file}`), context, { filename: file });
     }
     const state = new context.window.StateManager();
     const renderer = new context.window.SceneRenderer(state, { updateMaxAffinity() {}, checkAffinityUnlock() {} }, { showAffinityChange() {} });
-    return { context, state, renderer, scenes: context.SCENARIO[5], core: context.window.CupidFreeTalkCore };
+    return { context, state, renderer, scenes: { ...context.SCENARIO[4], ...context.SCENARIO[5] }, core: context.window.CupidFreeTalkCore };
 }
 
 test('Haeun uses negative / 0–7 / 8+ trust in both conversations and the festival', () => {
     const { context, state, renderer, scenes } = runtime();
-    for (const [score, day3, day5] of [[-100, 'low', 'select_concern'], [-20, 'low', 'select_concern'], [-1, 'low', 'select_concern'],
+    for (const [score, day3, day5] of [[-100, 'low', 'low_intro'], [-20, 'low', 'low_intro'], [-1, 'low', 'low_intro'],
         [0, 'neutral', 'resume'], [7, 'neutral', 'resume'], [8, 'high', 'select_rival'], [15, 'high', 'select_rival']]) {
         state.stats.Haeun.affinity = score;
         assert.equal(renderer.resolveNextScene(context.SCENARIO[3].haeun_affinity_check), `haeun_affinity_${day3}_1`);
         assert.equal(renderer.resolveNextScene(scenes.day5_haeun_trust_check), `day5_haeun_${day5}`);
+        assert.equal(renderer.resolveNextScene(scenes.day4_haeun_trust_check), score < 0 ? 'day4_haeun_approach' : 'morning4_end');
     }
     for (const id of ['morning5_end', 'morning5_committed_end']) assert.equal(scenes[id].next, 'day5_haeun_gate');
     state.setFlag('day5_haeun_event_done');
     assert.equal(renderer.resolveNextScene(scenes.day5_haeun_gate), 'day5_haeun_resume');
+    state.setFlag('day4_haeun_event_done');
+    assert.equal(renderer.resolveNextScene(scenes.day4_haeun_gate), 'morning4_end');
+    for (const id of ['hidden_nurse_d4_freetalk', 'hidden_nurse_d4_low', 'hidden_nurse_d4_neg']) {
+        assert.equal(scenes[id].next, 'day4_haeun_gate');
+    }
 });
 
 test('highest affinity is selected from all five; tied selection survives penalties and save/load', () => {
@@ -56,10 +62,30 @@ test('highest affinity is selected from all five; tied selection survives penalt
     }
 });
 
-test('both events deduct 15 or 20 before five group turns and cannot increase the romance route ceiling', () => {
-    for (const mode of ['', 'concern_']) for (const character of characters) for (const [suffix, loss] of [['', 15], ['_delay', 20]]) {
+test('Day 4 selection persists independently while Day 5 can choose a new highest-affinity character', () => {
+    const { context, state, renderer, scenes } = runtime(0.999);
+    state.stats.Yuna.affinity = state.stats.Nurse.affinity = 80;
+    renderer.resolveNextScene(scenes.day4_haeun_select_concern);
+    assert.equal(state.getFlag('day4_haeun_rival'), 'Nurse');
+    state.changeAffinity('Nurse', -20);
+    const restored = new context.window.StateManager();
+    restored.importState(JSON.parse(JSON.stringify(state.exportState())));
+    renderer.stateManager = restored;
+    assert.equal(renderer.resolveNextScene(scenes.day4_haeun_concern_router), 'day4_haeun_concern_nurse_check');
+    renderer.processSceneFlags(scenes.day4_haeun_finish);
+    assert.equal(renderer.resolveNextScene(scenes.day4_haeun_gate), 'morning4_end');
+    restored.stats.Haeun.affinity = 8;
+    assert.equal(renderer.resolveNextScene(scenes.day5_haeun_trust_check), 'day5_haeun_select_rival');
+    renderer.resolveNextScene(scenes.day5_haeun_select_rival);
+    assert.equal(restored.getFlag('day5_haeun_rival'), 'Yuna');
+    assert.equal(restored.getFlag('day4_haeun_rival'), 'Nurse');
+    assert.equal(scenes.day5_haeun_select_concern.runtimeEntrypoint, true);
+});
+
+test('new and legacy events deduct 15 or 20 before five group turns without increasing the romance route ceiling', () => {
+    for (const [day, mode] of [[5, ''], [5, 'concern_'], [4, 'concern_']]) for (const character of characters) for (const [suffix, loss] of [['', 15], ['_delay', 20]]) {
         const { state, renderer, scenes, core, context } = runtime();
-        const prefix = `day5_haeun_${mode}${character.toLowerCase()}`;
+        const prefix = `day${day}_haeun_${mode}${character.toLowerCase()}`;
         const entry = scenes[`${prefix}_escalation${suffix}`];
         const group = scenes[entry.next];
         state.stats[character].affinity = 80;
@@ -73,15 +99,15 @@ test('both events deduct 15 or 20 before five group turns and cannot increase th
         for (let turn = 0; turn < group.maxTurns; turn++) state.changeAffinity(character, core.normalizeStoryFreeTalkAffinityChange(5, state.getAffinity(character)));
         assert.ok(state.getAffinity(character) <= 80);
         assert.ok(group.maxTurns * 3 - loss <= 0);
-        assert.equal(group.next, mode ? 'day5_haeun_low_intro' : 'day5_haeun_finish');
+        assert.equal(group.next, day === 4 ? 'day4_haeun_finish' : mode ? 'day5_haeun_low_intro' : 'day5_haeun_finish');
     }
 });
 
 test('every visible new scene has seven-language copy, valid choices and existing images', () => {
     const { scenes } = runtime();
-    const added = Object.entries(scenes).filter(([id]) => id.startsWith('day5_haeun_'));
+    const added = Object.entries(scenes).filter(([id]) => /^day[45]_haeun_/.test(id));
     for (const lang of languages) {
-        const copy = JSON.parse(read(`assets/js/i18n/${lang}/day5_2_lunch.json`));
+        const copy = { ...JSON.parse(read(`assets/js/i18n/${lang}/day4_1_morning.json`)), ...JSON.parse(read(`assets/js/i18n/${lang}/day5_2_lunch.json`)) };
         for (const [id, scene] of added) {
             if (!scene.routeBeforeRender) {
                 assert.ok(copy[id]?.name && copy[id]?.text, `${lang}/${id}`);
@@ -96,22 +122,22 @@ test('every visible new scene has seven-language copy, valid choices and existin
     }
 });
 
-test('all ten localized group prompts isolate live scores, choices and real Haeun evidence from stable cache prefixes', () => {
+test('all new and legacy localized group prompts isolate scores, choices and real evidence from stable cache prefixes', () => {
     const { context, state, scenes, core } = runtime();
     const prototype = context.window.FreeTalkSystem.prototype;
-    for (const lang of languages) for (const mode of ['', 'concern_']) for (const id of characters) {
-        const key = `day5_haeun_${mode}${id.toLowerCase()}_group_talk`;
-        const copy = JSON.parse(read(`assets/js/i18n/${lang}/day5_2_lunch.json`));
+    for (const lang of languages) for (const [day, mode] of [[5, ''], [5, 'concern_'], [4, 'concern_']]) for (const id of characters) {
+        const key = `day${day}_haeun_${mode}${id.toLowerCase()}_group_talk`;
+        const copy = JSON.parse(read(`assets/js/i18n/${lang}/${day === 4 ? 'day4_1_morning' : 'day5_2_lunch'}.json`));
         const scene = { ...scenes[key], ...copy[key] };
         const talk = { stateManager: state, getGameContext: () => '', _getLocalizedGroupCharacterName: prototype._getLocalizedGroupCharacterName,
             _getGroupChoiceState: prototype._getGroupChoiceState, _getLocalizedGroupLocation: prototype._getLocalizedGroupLocation };
         talk.groupParticipants = prototype._resolveGroupParticipants.call(talk, scene, lang);
         state.stats[id].affinity = 65;
-        state.flags.day5_haeun_delayed_explanation = false;
+        state.flags[scene.groupChoiceFlag || 'day5_haeun_delayed_explanation'] = false;
         state.setChatMemory('Haeun', [{ role: 'user', content: 'ACTUAL_HAEUN_EVIDENCE_1' }, { role: 'assistant', content: 'ACTUAL_HAEUN_REPLY_1' }]);
         const first = prototype._buildCurrentGroupSystemPrompt.call(talk, scene, lang);
         state.stats[id].affinity = 60;
-        state.flags.day5_haeun_delayed_explanation = true;
+        state.flags[scene.groupChoiceFlag || 'day5_haeun_delayed_explanation'] = true;
         state.setChatMemory('Haeun', [{ role: 'user', content: 'ACTUAL_HAEUN_EVIDENCE_2' }]);
         const second = prototype._buildCurrentGroupSystemPrompt.call(talk, scene, lang);
         const [stable, dynamic] = first.split('===CACHE_BOUNDARY===');

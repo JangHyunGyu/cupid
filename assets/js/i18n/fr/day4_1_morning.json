@@ -597,5 +597,168 @@
         "name": "Infirmière",
         "text": "Je peux le faire seule. J’espérais juste que tu m’aiderais à terminer."
     },
-    "day4_date_branch": {}
+    "day4_date_branch": {},
+    "day4_haeun_concern_choice": {
+        "name": "{name}",
+        "text": "*Haeun se tourne vers moi. La personne qui l’écoutait reste sur place.*",
+        "choices": [
+            "Demander ce qui a été rapporté et expliquer devant Haeun",
+            "Dire que je ne veux pas en parler maintenant"
+        ]
+    },
+    "day4_haeun_concern_open": {
+        "name": "{name}",
+        "text": "*Je demande ce qui a été rapporté et propose de m’expliquer devant Haeun. L’autre personne lui jette un dernier regard avant de se tourner vers moi.*"
+    },
+    "day4_haeun_concern_delay": {
+        "name": "{name}",
+        "text": "*Je dis que je ne veux pas en parler maintenant et tente de partir. L’autre personne m’appelle par mon nom. Haeun reste là aussi.*"
+    },
+    "day4_haeun_concern_clarify": {
+        "name": "Haeun",
+        "text": "Je n’invente pas des choses pour te faire passer pour quelqu’un de mauvais. J’ai parlé de ce qui m’a gênée. *Haeun me regarde.* Si j’ai mal compris, explique-le ici, s’il te plaît."
+    },
+    "day4_haeun_concern_seoyeon_intro": {
+        "name": "Haeun",
+        "text": "*J’entends Haeun près du portail. Elle parle à voix basse à quelqu’un, puis s’interrompt en me voyant.* J’étais mal à l’aise quand on a discuté hier. Je ne savais pas comment le prendre, alors j’en ai parlé."
+    },
+    "day4_haeun_concern_seoyeon_arrival": {
+        "name": "Seoyeon",
+        "text": "De quoi as-tu parlé avec Haeun ? *Seoyeon baisse ses papiers.* Ça ne me semblait pas être quelque chose à balayer."
+    },
+    "day4_haeun_concern_seoyeon_escalation": {
+        "name": "Seoyeon",
+        "text": "Je veux savoir si tu avais remarqué son malaise. *Seoyeon attend ma réponse.* Dis-le-nous directement."
+    },
+    "day4_haeun_concern_seoyeon_escalation_delay": {
+        "name": "Seoyeon",
+        "text": "Je veux savoir si tu avais remarqué son malaise. *Seoyeon attend ma réponse.* Dis-le-nous directement."
+    },
+    "day4_haeun_concern_seoyeon_group_talk": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon regarde Haeun avant de m’interroger.* Je ne m’attendais pas à entendre ça de toi. Qu’est-ce que tu lui as dit ?",
+        "groupLocation": "Portail de l’école, le samedi matin du jour 4",
+        "context": "C’est le samedi matin du jour 4. Après ses occupations du matin, le protagoniste rencontre Haeun et l’autre personne au portail de l’école avant de rentrer chez lui. Haeun a perdu confiance lors de sa précédente conversation libre avec le protagoniste. Elle a confié son malaise à la personne ayant la plus forte affinité, qui se méfie désormais davantage de lui. Tous trois discutent de leur conversation de la veille devant le portail. L’autre personne a déjà perdu 15 points, ou 20 si l’explication a été différée. L’impression de Haeun peut différer de l’intention. Seule la transcription antérieure ci-dessous fait foi. N’invente ni insultes, ni menaces, ni promesses rompues. Sans transcription, parle uniquement de son malaise sans citer de propos précis.",
+        "personality": "Haeun reste polie et distingue les paroles entendues de son interprétation. Les qualificatifs effrayant ou étrange nécessitent des éléments dans la conversation antérieure. L’autre personne écoute avec sa voix propre et son affinité actuelle, sans tenir le récit de Haeun pour une vérité établie. Laisse la place aux explications ; elles peuvent lever le malentendu ou montrer une responsabilité. N’efface pas un tort réel sous prétexte de malentendu et n’impose pas d’excuses. Ne répète pas la pénalité initiale ; note uniquement les effets de la contribution actuelle.",
+        "groupChoiceState": {
+            "open": "Le protagoniste a demandé ce qui avait été rapporté et proposé de s’expliquer devant Haeun. L’explication concrète n’a pas encore commencé.",
+            "delay": "Le protagoniste a dit ne pas vouloir en parler et a tenté de partir. L’autre personne y a vu une esquive. La pénalité initiale a déjà été appliquée."
+        }
+    },
+    "day4_haeun_concern_yuna_intro": {
+        "name": "Haeun",
+        "text": "*J’entends Haeun près du portail. Elle parle à voix basse à quelqu’un, puis s’interrompt en me voyant.* J’étais mal à l’aise quand on a discuté hier. Je ne savais pas comment le prendre, alors j’en ai parlé."
+    },
+    "day4_haeun_concern_yuna_arrival": {
+        "name": "Yuna",
+        "text": "*Yuna quitte Haeun des yeux et me regarde.* Vous vous souvenez différemment de la même conversation ? Je veux t’entendre aussi."
+    },
+    "day4_haeun_concern_yuna_escalation": {
+        "name": "Yuna",
+        "text": "*Yuna range son téléphone.* Je ne sais plus comment prendre tes mots. Dis-moi ce que tu voulais dire."
+    },
+    "day4_haeun_concern_yuna_escalation_delay": {
+        "name": "Yuna",
+        "text": "*Yuna range son téléphone.* Je ne sais plus comment prendre tes mots. Dis-moi ce que tu voulais dire."
+    },
+    "day4_haeun_concern_yuna_group_talk": {
+        "name": "Yuna",
+        "text": "*Yuna range le fil de ses écouteurs.* Ce que raconte Haeun ne ressemble pas à la personne que je connais. Dis-le-moi toi-même. De quoi avez-vous parlé ?",
+        "groupLocation": "Portail de l’école, le samedi matin du jour 4",
+        "context": "C’est le samedi matin du jour 4. Après ses occupations du matin, le protagoniste rencontre Haeun et l’autre personne au portail de l’école avant de rentrer chez lui. Haeun a perdu confiance lors de sa précédente conversation libre avec le protagoniste. Elle a confié son malaise à la personne ayant la plus forte affinité, qui se méfie désormais davantage de lui. Tous trois discutent de leur conversation de la veille devant le portail. L’autre personne a déjà perdu 15 points, ou 20 si l’explication a été différée. L’impression de Haeun peut différer de l’intention. Seule la transcription antérieure ci-dessous fait foi. N’invente ni insultes, ni menaces, ni promesses rompues. Sans transcription, parle uniquement de son malaise sans citer de propos précis.",
+        "personality": "Haeun reste polie et distingue les paroles entendues de son interprétation. Les qualificatifs effrayant ou étrange nécessitent des éléments dans la conversation antérieure. L’autre personne écoute avec sa voix propre et son affinité actuelle, sans tenir le récit de Haeun pour une vérité établie. Laisse la place aux explications ; elles peuvent lever le malentendu ou montrer une responsabilité. N’efface pas un tort réel sous prétexte de malentendu et n’impose pas d’excuses. Ne répète pas la pénalité initiale ; note uniquement les effets de la contribution actuelle.",
+        "groupChoiceState": {
+            "open": "Le protagoniste a demandé ce qui avait été rapporté et proposé de s’expliquer devant Haeun. L’explication concrète n’a pas encore commencé.",
+            "delay": "Le protagoniste a dit ne pas vouloir en parler et a tenté de partir. L’autre personne y a vu une esquive. La pénalité initiale a déjà été appliquée."
+        }
+    },
+    "day4_haeun_concern_dain_intro": {
+        "name": "Haeun",
+        "text": "*J’entends Haeun près du portail. Elle parle à voix basse à quelqu’un, puis s’interrompt en me voyant.* J’étais mal à l’aise quand on a discuté hier. Je ne savais pas comment le prendre, alors j’en ai parlé."
+    },
+    "day4_haeun_concern_dain_arrival": {
+        "name": "Dain",
+        "text": "Haeun s’est arrêtée au milieu de son récit. *Dain se place devant moi.* Je vais aussi te demander ce qui s’est passé."
+    },
+    "day4_haeun_concern_dain_escalation": {
+        "name": "Dain",
+        "text": "*Dain baisse les bras.* S’il y a un malentendu, explique-le. Si tu as dit quelque chose de blessant, parle-en aussi. J’écoute."
+    },
+    "day4_haeun_concern_dain_escalation_delay": {
+        "name": "Dain",
+        "text": "*Dain baisse les bras.* S’il y a un malentendu, explique-le. Si tu as dit quelque chose de blessant, parle-en aussi. J’écoute."
+    },
+    "day4_haeun_concern_dain_group_talk": {
+        "name": "Dain",
+        "text": "*Dain s’arrête devant moi.* Qu’est-ce que tu as dit à Haeun ? Je ne te pensais pas du genre à mal traiter les gens. Écoutons ta version.",
+        "groupLocation": "Portail de l’école, le samedi matin du jour 4",
+        "context": "C’est le samedi matin du jour 4. Après ses occupations du matin, le protagoniste rencontre Haeun et l’autre personne au portail de l’école avant de rentrer chez lui. Haeun a perdu confiance lors de sa précédente conversation libre avec le protagoniste. Elle a confié son malaise à la personne ayant la plus forte affinité, qui se méfie désormais davantage de lui. Tous trois discutent de leur conversation de la veille devant le portail. L’autre personne a déjà perdu 15 points, ou 20 si l’explication a été différée. L’impression de Haeun peut différer de l’intention. Seule la transcription antérieure ci-dessous fait foi. N’invente ni insultes, ni menaces, ni promesses rompues. Sans transcription, parle uniquement de son malaise sans citer de propos précis.",
+        "personality": "Haeun reste polie et distingue les paroles entendues de son interprétation. Les qualificatifs effrayant ou étrange nécessitent des éléments dans la conversation antérieure. L’autre personne écoute avec sa voix propre et son affinité actuelle, sans tenir le récit de Haeun pour une vérité établie. Laisse la place aux explications ; elles peuvent lever le malentendu ou montrer une responsabilité. N’efface pas un tort réel sous prétexte de malentendu et n’impose pas d’excuses. Ne répète pas la pénalité initiale ; note uniquement les effets de la contribution actuelle.",
+        "groupChoiceState": {
+            "open": "Le protagoniste a demandé ce qui avait été rapporté et proposé de s’expliquer devant Haeun. L’explication concrète n’a pas encore commencé.",
+            "delay": "Le protagoniste a dit ne pas vouloir en parler et a tenté de partir. L’autre personne y a vu une esquive. La pénalité initiale a déjà été appliquée."
+        }
+    },
+    "day4_haeun_concern_teacher_intro": {
+        "name": "Haeun",
+        "text": "*J’entends Haeun près du portail. Elle parle à voix basse à quelqu’un, puis s’interrompt en me voyant.* J’étais mal à l’aise quand on a discuté hier. Je ne savais pas comment le prendre, alors j’en ai parlé."
+    },
+    "day4_haeun_concern_teacher_arrival": {
+        "name": "Professeure principale",
+        "text": "*La professeure se décale d’un pas.* Je ne vais pas juger sur une seule version. Donne-moi la tienne."
+    },
+    "day4_haeun_concern_teacher_escalation": {
+        "name": "Professeure principale",
+        "text": "*La professeure me regarde droit dans les yeux.* Tes mots ont pu être compris autrement. Mais il faut entendre ce qui a gêné Haeun. Qu’en penses-tu ?"
+    },
+    "day4_haeun_concern_teacher_escalation_delay": {
+        "name": "Professeure principale",
+        "text": "*La professeure me regarde droit dans les yeux.* Tes mots ont pu être compris autrement. Mais il faut entendre ce qui a gêné Haeun. Qu’en penses-tu ?"
+    },
+    "day4_haeun_concern_teacher_group_talk": {
+        "name": "Professeure principale",
+        "text": "*La professeure pose son dossier.* J’avais une bonne opinion de toi, mais je ne peux pas écarter cette histoire. Explique ce que tu as dit à Haeun.",
+        "groupLocation": "Portail de l’école, le samedi matin du jour 4",
+        "context": "C’est le samedi matin du jour 4. Après ses occupations du matin, le protagoniste rencontre Haeun et l’autre personne au portail de l’école avant de rentrer chez lui. Haeun a perdu confiance lors de sa précédente conversation libre avec le protagoniste. Elle a confié son malaise à la personne ayant la plus forte affinité, qui se méfie désormais davantage de lui. Tous trois discutent de leur conversation de la veille devant le portail. L’autre personne a déjà perdu 15 points, ou 20 si l’explication a été différée. L’impression de Haeun peut différer de l’intention. Seule la transcription antérieure ci-dessous fait foi. N’invente ni insultes, ni menaces, ni promesses rompues. Sans transcription, parle uniquement de son malaise sans citer de propos précis.",
+        "personality": "Haeun reste polie et distingue les paroles entendues de son interprétation. Les qualificatifs effrayant ou étrange nécessitent des éléments dans la conversation antérieure. L’autre personne écoute avec sa voix propre et son affinité actuelle, sans tenir le récit de Haeun pour une vérité établie. Laisse la place aux explications ; elles peuvent lever le malentendu ou montrer une responsabilité. N’efface pas un tort réel sous prétexte de malentendu et n’impose pas d’excuses. Ne répète pas la pénalité initiale ; note uniquement les effets de la contribution actuelle.",
+        "groupChoiceState": {
+            "open": "Le protagoniste a demandé ce qui avait été rapporté et proposé de s’expliquer devant Haeun. L’explication concrète n’a pas encore commencé.",
+            "delay": "Le protagoniste a dit ne pas vouloir en parler et a tenté de partir. L’autre personne y a vu une esquive. La pénalité initiale a déjà été appliquée."
+        }
+    },
+    "day4_haeun_concern_nurse_intro": {
+        "name": "Haeun",
+        "text": "*J’entends Haeun près du portail. Elle parle à voix basse à quelqu’un, puis s’interrompt en me voyant.* J’étais mal à l’aise quand on a discuté hier. Je ne savais pas comment le prendre, alors j’en ai parlé."
+    },
+    "day4_haeun_concern_nurse_arrival": {
+        "name": "Infirmière",
+        "text": "*L’infirmière regarde Haeun, puis moi.* Je ne peux pas ignorer son malaise. J’ai besoin d’entendre ta version."
+    },
+    "day4_haeun_concern_nurse_escalation": {
+        "name": "Infirmière",
+        "text": "*L’infirmière perd son sourire.* Voyons pourquoi Haeun l’a pris ainsi. Explique-nous ton point de vue."
+    },
+    "day4_haeun_concern_nurse_escalation_delay": {
+        "name": "Infirmière",
+        "text": "*L’infirmière perd son sourire.* Voyons pourquoi Haeun l’a pris ainsi. Explique-nous ton point de vue."
+    },
+    "day4_haeun_concern_nurse_group_talk": {
+        "name": "Infirmière",
+        "text": "*L’infirmière regarde d’abord Haeun, puis se tourne vers moi.* Je ne comprends pas pourquoi j’entends ça à ton sujet. Je veux aussi t’entendre sur ce qui la met dans cet état. Qu’as-tu dit ?",
+        "groupLocation": "Portail de l’école, le samedi matin du jour 4",
+        "context": "C’est le samedi matin du jour 4. Après ses occupations du matin, le protagoniste rencontre Haeun et l’autre personne au portail de l’école avant de rentrer chez lui. Haeun a perdu confiance lors de sa précédente conversation libre avec le protagoniste. Elle a confié son malaise à la personne ayant la plus forte affinité, qui se méfie désormais davantage de lui. Tous trois discutent de leur conversation de la veille devant le portail. L’autre personne a déjà perdu 15 points, ou 20 si l’explication a été différée. L’impression de Haeun peut différer de l’intention. Seule la transcription antérieure ci-dessous fait foi. N’invente ni insultes, ni menaces, ni promesses rompues. Sans transcription, parle uniquement de son malaise sans citer de propos précis.",
+        "personality": "Haeun reste polie et distingue les paroles entendues de son interprétation. Les qualificatifs effrayant ou étrange nécessitent des éléments dans la conversation antérieure. L’autre personne écoute avec sa voix propre et son affinité actuelle, sans tenir le récit de Haeun pour une vérité établie. Laisse la place aux explications ; elles peuvent lever le malentendu ou montrer une responsabilité. N’efface pas un tort réel sous prétexte de malentendu et n’impose pas d’excuses. Ne répète pas la pénalité initiale ; note uniquement les effets de la contribution actuelle.",
+        "groupChoiceState": {
+            "open": "Le protagoniste a demandé ce qui avait été rapporté et proposé de s’expliquer devant Haeun. L’explication concrète n’a pas encore commencé.",
+            "delay": "Le protagoniste a dit ne pas vouloir en parler et a tenté de partir. L’autre personne y a vu une esquive. La pénalité initiale a déjà été appliquée."
+        }
+    },
+    "day4_haeun_approach": {
+        "name": "{name}",
+        "text": "*Haeun se tient près du portail ouvert de l’école. Je ralentis en la voyant parler avec quelqu’un.*"
+    },
+    "day4_haeun_finish": {
+        "name": "{name}",
+        "text": "*La conversation terminée, je m’éloigne du portail. Quand le feu piéton change, je prends le chemin de la maison.*"
+    }
 }

@@ -597,5 +597,168 @@
         "name": "Schulkrankenschwester",
         "text": "Allein schaffe ich das schon. Ich hatte nur gehofft, dass du mir noch beim Rest hilfst."
     },
-    "day4_date_branch": {}
+    "day4_date_branch": {},
+    "day4_haeun_concern_choice": {
+        "name": "{name}",
+        "text": "*Haeun wendet sich mir zu. Die Zuhörerin bleibt stehen.*",
+        "choices": [
+            "Fragen, was erzählt wurde, und es vor Haeun erklären",
+            "Sagen, dass ich jetzt nicht darüber reden möchte"
+        ]
+    },
+    "day4_haeun_concern_open": {
+        "name": "{name}",
+        "text": "*Ich frage nach dem Bericht und biete an, es vor Haeun zu erklären. Die andere schaut noch einmal zu ihr und dann zu mir.*"
+    },
+    "day4_haeun_concern_delay": {
+        "name": "{name}",
+        "text": "*Ich sage, dass ich jetzt nicht darüber reden möchte, und will gehen. Die andere ruft meinen Namen. Auch Haeun bleibt stehen.*"
+    },
+    "day4_haeun_concern_clarify": {
+        "name": "Haeun",
+        "text": "Ich erfinde nichts, um dich schlechtzumachen. Ich habe erzählt, was mir unangenehm war. *Haeun schaut mich an.* Wenn ich es anders verstanden habe, als du es meintest, erklär es bitte hier."
+    },
+    "day4_haeun_concern_seoyeon_intro": {
+        "name": "Haeun",
+        "text": "*Ich höre Haeun neben dem Tor. Sie spricht leise mit jemandem und hält inne, als sie mich sieht.* Bei unserem Gespräch gestern war mir unwohl. Ich wusste nicht, wie ich das verstehen sollte, und habe es deshalb angesprochen."
+    },
+    "day4_haeun_concern_seoyeon_arrival": {
+        "name": "Seoyeon",
+        "text": "Worüber hast du mit Haeun gesprochen? *Seoyeon senkt ihre Unterlagen.* Es klang nicht nach etwas, das ich abtun sollte."
+    },
+    "day4_haeun_concern_seoyeon_escalation": {
+        "name": "Seoyeon",
+        "text": "Ich möchte wissen, ob du ihr Unbehagen bemerkt hast. *Seoyeon wartet auf meine Antwort.* Sag es uns direkt."
+    },
+    "day4_haeun_concern_seoyeon_escalation_delay": {
+        "name": "Seoyeon",
+        "text": "Ich möchte wissen, ob du ihr Unbehagen bemerkt hast. *Seoyeon wartet auf meine Antwort.* Sag es uns direkt."
+    },
+    "day4_haeun_concern_seoyeon_group_talk": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon schaut zu Haeun und fragt mich dann.* So etwas hätte ich nicht über dich erwartet. Was hast du ihr gesagt?",
+        "groupLocation": "Schultor am Samstagmorgen, Tag 4",
+        "context": "Es ist Samstagmorgen am vierten Tag. Nach seinen morgendlichen Erledigungen trifft der Protagonist Haeun und die andere Person am Schultor, bevor er nach Hause geht. Haeun verlor im vorherigen freien Gespräch Vertrauen zum Protagonisten. Sie schilderte ihr Unbehagen der Person mit der höchsten Zuneigung, die ihm jetzt skeptischer begegnet. Alle drei sprechen am Schultor über das Gespräch vom Vortag. Die andere Person hat bereits 15 Punkte verloren, bei aufgeschobener Erklärung 20. Haeuns Eindruck kann von der Absicht abweichen. Nur das frühere Transkript unten dient als Tatsachengrundlage. Erfinde keine Beleidigungen, Drohungen oder gebrochenen Versprechen. Fehlt der Verlauf, behandle nur ihr Unbehagen und zitiere keine konkreten Aussagen.",
+        "personality": "Haeun bleibt höflich und trennt Gehörtes von ihrer Deutung. Bezeichnungen wie beängstigend oder seltsam brauchen Belege im früheren Gespräch. Die andere Person hört in ihrer eigenen Stimme bei aktueller Zuneigung zu und behandelt Haeuns Bericht nicht als bewiesene Tatsache. Lass Raum zur Erklärung; diese kann das Missverständnis klären oder Verantwortung aufzeigen. Wische tatsächliche Verletzungen nicht als Missverständnis weg und erzwinge keine Entschuldigung. Wiederhole den anfänglichen Abzug nicht; bewerte nur die aktuelle Äußerung und Handlung.",
+        "groupChoiceState": {
+            "open": "Der Protagonist fragte nach dem Bericht und bot an, sich vor Haeun zu erklären. Die eigentliche Erklärung hat noch nicht begonnen.",
+            "delay": "Der Protagonist wollte jetzt nicht darüber reden und versuchte zu gehen. Die andere Person verstand dies als Ausweichen. Der anfängliche Abzug ist bereits angewandt."
+        }
+    },
+    "day4_haeun_concern_yuna_intro": {
+        "name": "Haeun",
+        "text": "*Ich höre Haeun neben dem Tor. Sie spricht leise mit jemandem und hält inne, als sie mich sieht.* Bei unserem Gespräch gestern war mir unwohl. Ich wusste nicht, wie ich das verstehen sollte, und habe es deshalb angesprochen."
+    },
+    "day4_haeun_concern_yuna_arrival": {
+        "name": "Yuna",
+        "text": "*Yuna schaut von Haeun zu mir.* Erinnert ihr euch unterschiedlich an dasselbe Gespräch? Ich möchte auch deine Seite hören."
+    },
+    "day4_haeun_concern_yuna_escalation": {
+        "name": "Yuna",
+        "text": "*Yuna steckt ihr Handy weg.* Ich weiß gerade nicht, wie ich deine Worte verstehen soll. Sag mir, was du damals gemeint hast."
+    },
+    "day4_haeun_concern_yuna_escalation_delay": {
+        "name": "Yuna",
+        "text": "*Yuna steckt ihr Handy weg.* Ich weiß gerade nicht, wie ich deine Worte verstehen soll. Sag mir, was du damals gemeint hast."
+    },
+    "day4_haeun_concern_yuna_group_talk": {
+        "name": "Yuna",
+        "text": "*Yuna steckt das Kabel ihrer Ohrhörer ein.* Was Haeun erzählt, klingt ganz anders als der Mensch, den ich kenne. Sag es selbst. Worüber habt ihr gesprochen?",
+        "groupLocation": "Schultor am Samstagmorgen, Tag 4",
+        "context": "Es ist Samstagmorgen am vierten Tag. Nach seinen morgendlichen Erledigungen trifft der Protagonist Haeun und die andere Person am Schultor, bevor er nach Hause geht. Haeun verlor im vorherigen freien Gespräch Vertrauen zum Protagonisten. Sie schilderte ihr Unbehagen der Person mit der höchsten Zuneigung, die ihm jetzt skeptischer begegnet. Alle drei sprechen am Schultor über das Gespräch vom Vortag. Die andere Person hat bereits 15 Punkte verloren, bei aufgeschobener Erklärung 20. Haeuns Eindruck kann von der Absicht abweichen. Nur das frühere Transkript unten dient als Tatsachengrundlage. Erfinde keine Beleidigungen, Drohungen oder gebrochenen Versprechen. Fehlt der Verlauf, behandle nur ihr Unbehagen und zitiere keine konkreten Aussagen.",
+        "personality": "Haeun bleibt höflich und trennt Gehörtes von ihrer Deutung. Bezeichnungen wie beängstigend oder seltsam brauchen Belege im früheren Gespräch. Die andere Person hört in ihrer eigenen Stimme bei aktueller Zuneigung zu und behandelt Haeuns Bericht nicht als bewiesene Tatsache. Lass Raum zur Erklärung; diese kann das Missverständnis klären oder Verantwortung aufzeigen. Wische tatsächliche Verletzungen nicht als Missverständnis weg und erzwinge keine Entschuldigung. Wiederhole den anfänglichen Abzug nicht; bewerte nur die aktuelle Äußerung und Handlung.",
+        "groupChoiceState": {
+            "open": "Der Protagonist fragte nach dem Bericht und bot an, sich vor Haeun zu erklären. Die eigentliche Erklärung hat noch nicht begonnen.",
+            "delay": "Der Protagonist wollte jetzt nicht darüber reden und versuchte zu gehen. Die andere Person verstand dies als Ausweichen. Der anfängliche Abzug ist bereits angewandt."
+        }
+    },
+    "day4_haeun_concern_dain_intro": {
+        "name": "Haeun",
+        "text": "*Ich höre Haeun neben dem Tor. Sie spricht leise mit jemandem und hält inne, als sie mich sieht.* Bei unserem Gespräch gestern war mir unwohl. Ich wusste nicht, wie ich das verstehen sollte, und habe es deshalb angesprochen."
+    },
+    "day4_haeun_concern_dain_arrival": {
+        "name": "Dain",
+        "text": "Haeun hat mitten im Erzählen aufgehört. *Dain stellt sich vor mich.* Ich frage auch dich, was passiert ist."
+    },
+    "day4_haeun_concern_dain_escalation": {
+        "name": "Dain",
+        "text": "*Dain lässt die Arme sinken.* Wenn es ein Missverständnis ist, klär es auf. Wenn du etwas Verletzendes gesagt hast, sprich auch darüber. Ich höre zu."
+    },
+    "day4_haeun_concern_dain_escalation_delay": {
+        "name": "Dain",
+        "text": "*Dain lässt die Arme sinken.* Wenn es ein Missverständnis ist, klär es auf. Wenn du etwas Verletzendes gesagt hast, sprich auch darüber. Ich höre zu."
+    },
+    "day4_haeun_concern_dain_group_talk": {
+        "name": "Dain",
+        "text": "*Dain bleibt vor mir stehen.* Was hast du Haeun gesagt? Ich dachte nicht, dass du andere schlecht behandelst. Hören wir deine Seite.",
+        "groupLocation": "Schultor am Samstagmorgen, Tag 4",
+        "context": "Es ist Samstagmorgen am vierten Tag. Nach seinen morgendlichen Erledigungen trifft der Protagonist Haeun und die andere Person am Schultor, bevor er nach Hause geht. Haeun verlor im vorherigen freien Gespräch Vertrauen zum Protagonisten. Sie schilderte ihr Unbehagen der Person mit der höchsten Zuneigung, die ihm jetzt skeptischer begegnet. Alle drei sprechen am Schultor über das Gespräch vom Vortag. Die andere Person hat bereits 15 Punkte verloren, bei aufgeschobener Erklärung 20. Haeuns Eindruck kann von der Absicht abweichen. Nur das frühere Transkript unten dient als Tatsachengrundlage. Erfinde keine Beleidigungen, Drohungen oder gebrochenen Versprechen. Fehlt der Verlauf, behandle nur ihr Unbehagen und zitiere keine konkreten Aussagen.",
+        "personality": "Haeun bleibt höflich und trennt Gehörtes von ihrer Deutung. Bezeichnungen wie beängstigend oder seltsam brauchen Belege im früheren Gespräch. Die andere Person hört in ihrer eigenen Stimme bei aktueller Zuneigung zu und behandelt Haeuns Bericht nicht als bewiesene Tatsache. Lass Raum zur Erklärung; diese kann das Missverständnis klären oder Verantwortung aufzeigen. Wische tatsächliche Verletzungen nicht als Missverständnis weg und erzwinge keine Entschuldigung. Wiederhole den anfänglichen Abzug nicht; bewerte nur die aktuelle Äußerung und Handlung.",
+        "groupChoiceState": {
+            "open": "Der Protagonist fragte nach dem Bericht und bot an, sich vor Haeun zu erklären. Die eigentliche Erklärung hat noch nicht begonnen.",
+            "delay": "Der Protagonist wollte jetzt nicht darüber reden und versuchte zu gehen. Die andere Person verstand dies als Ausweichen. Der anfängliche Abzug ist bereits angewandt."
+        }
+    },
+    "day4_haeun_concern_teacher_intro": {
+        "name": "Haeun",
+        "text": "*Ich höre Haeun neben dem Tor. Sie spricht leise mit jemandem und hält inne, als sie mich sieht.* Bei unserem Gespräch gestern war mir unwohl. Ich wusste nicht, wie ich das verstehen sollte, und habe es deshalb angesprochen."
+    },
+    "day4_haeun_concern_teacher_arrival": {
+        "name": "Klassenlehrerin",
+        "text": "*Die Lehrerin tritt neben Haeun einen Schritt zur Seite.* Ich urteile nicht nach nur einer Seite. Erklär mir deine."
+    },
+    "day4_haeun_concern_teacher_escalation": {
+        "name": "Klassenlehrerin",
+        "text": "*Die Lehrerin sieht mich direkt an.* Vielleicht kam es anders an, als du wolltest. Trotzdem müssen wir hören, was Haeun gestört hat. Was meinst du?"
+    },
+    "day4_haeun_concern_teacher_escalation_delay": {
+        "name": "Klassenlehrerin",
+        "text": "*Die Lehrerin sieht mich direkt an.* Vielleicht kam es anders an, als du wolltest. Trotzdem müssen wir hören, was Haeun gestört hat. Was meinst du?"
+    },
+    "day4_haeun_concern_teacher_group_talk": {
+        "name": "Klassenlehrerin",
+        "text": "*Die Lehrerin legt ihre Mappe ab.* Ich hatte eine gute Meinung von dir, aber darüber kann ich nicht hinwegsehen. Erklär, was du Haeun gesagt hast.",
+        "groupLocation": "Schultor am Samstagmorgen, Tag 4",
+        "context": "Es ist Samstagmorgen am vierten Tag. Nach seinen morgendlichen Erledigungen trifft der Protagonist Haeun und die andere Person am Schultor, bevor er nach Hause geht. Haeun verlor im vorherigen freien Gespräch Vertrauen zum Protagonisten. Sie schilderte ihr Unbehagen der Person mit der höchsten Zuneigung, die ihm jetzt skeptischer begegnet. Alle drei sprechen am Schultor über das Gespräch vom Vortag. Die andere Person hat bereits 15 Punkte verloren, bei aufgeschobener Erklärung 20. Haeuns Eindruck kann von der Absicht abweichen. Nur das frühere Transkript unten dient als Tatsachengrundlage. Erfinde keine Beleidigungen, Drohungen oder gebrochenen Versprechen. Fehlt der Verlauf, behandle nur ihr Unbehagen und zitiere keine konkreten Aussagen.",
+        "personality": "Haeun bleibt höflich und trennt Gehörtes von ihrer Deutung. Bezeichnungen wie beängstigend oder seltsam brauchen Belege im früheren Gespräch. Die andere Person hört in ihrer eigenen Stimme bei aktueller Zuneigung zu und behandelt Haeuns Bericht nicht als bewiesene Tatsache. Lass Raum zur Erklärung; diese kann das Missverständnis klären oder Verantwortung aufzeigen. Wische tatsächliche Verletzungen nicht als Missverständnis weg und erzwinge keine Entschuldigung. Wiederhole den anfänglichen Abzug nicht; bewerte nur die aktuelle Äußerung und Handlung.",
+        "groupChoiceState": {
+            "open": "Der Protagonist fragte nach dem Bericht und bot an, sich vor Haeun zu erklären. Die eigentliche Erklärung hat noch nicht begonnen.",
+            "delay": "Der Protagonist wollte jetzt nicht darüber reden und versuchte zu gehen. Die andere Person verstand dies als Ausweichen. Der anfängliche Abzug ist bereits angewandt."
+        }
+    },
+    "day4_haeun_concern_nurse_intro": {
+        "name": "Haeun",
+        "text": "*Ich höre Haeun neben dem Tor. Sie spricht leise mit jemandem und hält inne, als sie mich sieht.* Bei unserem Gespräch gestern war mir unwohl. Ich wusste nicht, wie ich das verstehen sollte, und habe es deshalb angesprochen."
+    },
+    "day4_haeun_concern_nurse_arrival": {
+        "name": "Schulkrankenschwester",
+        "text": "*Die Krankenschwester sieht erst Haeun, dann mich an.* Dass sie sich unwohl gefühlt hat, kann ich nicht ignorieren. Ich muss auch deine Seite hören."
+    },
+    "day4_haeun_concern_nurse_escalation": {
+        "name": "Schulkrankenschwester",
+        "text": "*Die Krankenschwester lächelt nicht mehr.* Finden wir heraus, warum Haeun es so aufgefasst hat. Erklär deine Seite."
+    },
+    "day4_haeun_concern_nurse_escalation_delay": {
+        "name": "Schulkrankenschwester",
+        "text": "*Die Krankenschwester lächelt nicht mehr.* Finden wir heraus, warum Haeun es so aufgefasst hat. Erklär deine Seite."
+    },
+    "day4_haeun_concern_nurse_group_talk": {
+        "name": "Schulkrankenschwester",
+        "text": "*Die Krankenschwester sieht erst nach Haeun und wendet sich dann mir zu.* Ich verstehe nicht, warum ich so etwas über dich höre. Ich möchte auch von dir hören, warum sie so aufgewühlt ist. Was hast du gesagt?",
+        "groupLocation": "Schultor am Samstagmorgen, Tag 4",
+        "context": "Es ist Samstagmorgen am vierten Tag. Nach seinen morgendlichen Erledigungen trifft der Protagonist Haeun und die andere Person am Schultor, bevor er nach Hause geht. Haeun verlor im vorherigen freien Gespräch Vertrauen zum Protagonisten. Sie schilderte ihr Unbehagen der Person mit der höchsten Zuneigung, die ihm jetzt skeptischer begegnet. Alle drei sprechen am Schultor über das Gespräch vom Vortag. Die andere Person hat bereits 15 Punkte verloren, bei aufgeschobener Erklärung 20. Haeuns Eindruck kann von der Absicht abweichen. Nur das frühere Transkript unten dient als Tatsachengrundlage. Erfinde keine Beleidigungen, Drohungen oder gebrochenen Versprechen. Fehlt der Verlauf, behandle nur ihr Unbehagen und zitiere keine konkreten Aussagen.",
+        "personality": "Haeun bleibt höflich und trennt Gehörtes von ihrer Deutung. Bezeichnungen wie beängstigend oder seltsam brauchen Belege im früheren Gespräch. Die andere Person hört in ihrer eigenen Stimme bei aktueller Zuneigung zu und behandelt Haeuns Bericht nicht als bewiesene Tatsache. Lass Raum zur Erklärung; diese kann das Missverständnis klären oder Verantwortung aufzeigen. Wische tatsächliche Verletzungen nicht als Missverständnis weg und erzwinge keine Entschuldigung. Wiederhole den anfänglichen Abzug nicht; bewerte nur die aktuelle Äußerung und Handlung.",
+        "groupChoiceState": {
+            "open": "Der Protagonist fragte nach dem Bericht und bot an, sich vor Haeun zu erklären. Die eigentliche Erklärung hat noch nicht begonnen.",
+            "delay": "Der Protagonist wollte jetzt nicht darüber reden und versuchte zu gehen. Die andere Person verstand dies als Ausweichen. Der anfängliche Abzug ist bereits angewandt."
+        }
+    },
+    "day4_haeun_approach": {
+        "name": "{name}",
+        "text": "*Haeun steht neben dem offenen Schultor. Ich werde langsamer, als ich sie mit jemandem reden sehe.*"
+    },
+    "day4_haeun_finish": {
+        "name": "{name}",
+        "text": "*Nach dem Gespräch gehe ich vom Tor weg. Als die Fußgängerampel umspringt, mache ich mich auf den Heimweg.*"
+    }
 }

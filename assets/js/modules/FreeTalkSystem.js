@@ -813,7 +813,7 @@ class FreeTalkSystem {
 
     _getGroupChoiceState(scene, lang = 'ko') {
         if (['haeun_misunderstanding', 'haeun_reputation'].includes(scene?.groupMode)) {
-            const key = this.stateManager.getFlag?.('day5_haeun_delayed_explanation') ? 'delay' : 'open';
+            const key = this.stateManager.getFlag?.(scene.groupChoiceFlag || 'day5_haeun_delayed_explanation') ? 'delay' : 'open';
             return scene.groupChoiceState?.[key] || '';
         }
         if (scene?.groupChoiceState) return scene.groupChoiceState;

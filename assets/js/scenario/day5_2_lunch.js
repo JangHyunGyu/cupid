@@ -35,7 +35,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
             },
             {
                 "minAffinity": -100,
-                "next": "day5_haeun_select_concern"
+                "next": "day5_haeun_low_intro"
             }
         ]
     },
@@ -605,6 +605,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "dynamicGroupName": true
     },
     "day5_haeun_select_concern": {
+        "runtimeEntrypoint": true,
         "routeBeforeRender": true,
         "randomTieFlag": "day5_haeun_rival",
         "rankedRivalBranches": [
