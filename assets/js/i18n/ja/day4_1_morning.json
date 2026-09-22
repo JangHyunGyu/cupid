@@ -760,5 +760,9 @@
     "day4_haeun_finish": {
         "name": "{name}",
         "text": "*話を終えて校門を離れる。横断歩道の信号が変わり、家の方へ歩き出す。*"
+    },
+    "day4_haeun_reputation_cg": {
+        "name": "{name}",
+        "text": "*ハウンは校門の前に立ったまま返事を待つ。*"
     }
 }

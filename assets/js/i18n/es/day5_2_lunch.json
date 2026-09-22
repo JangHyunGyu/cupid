@@ -692,5 +692,9 @@
             "open": "El protagonista preguntó qué se había contado y ofreció explicarlo con Haeun presente. La explicación concreta aún no comenzó.",
             "delay": "El protagonista dijo que no quería hablar ahora e intentó marcharse. La otra persona lo tomó como evasión. La penalización inicial ya se aplicó."
         }
+    },
+    "day5_haeun_trust_cg": {
+        "name": "{name}",
+        "text": "*Haeun apoya las manos en la caja de documentos y se vuelve hacia mí.*"
     }
 }

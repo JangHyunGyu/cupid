@@ -760,5 +760,9 @@
     "day4_haeun_finish": {
         "name": "{name}",
         "text": "*Nach dem Gespräch gehe ich vom Tor weg. Als die Fußgängerampel umspringt, mache ich mich auf den Heimweg.*"
+    },
+    "day4_haeun_reputation_cg": {
+        "name": "{name}",
+        "text": "*Haeun bleibt am Schultor stehen und wartet auf eine Antwort.*"
     }
 }

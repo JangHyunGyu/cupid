@@ -760,5 +760,9 @@
     "day4_haeun_finish": {
         "name": "{name}",
         "text": "*대화를 마치고 교문에서 물러난다. 횡단보도 신호가 바뀌자 집 쪽으로 발을 옮긴다.*"
+    },
+    "day4_haeun_reputation_cg": {
+        "name": "{name}",
+        "text": "*하은이 교문 앞에 선 채 대답을 기다린다.*"
     }
 }

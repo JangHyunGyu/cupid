@@ -760,5 +760,9 @@
     "day4_haeun_finish": {
         "name": "{name}",
         "text": "*Depois da conversa, me afasto do portão. Quando o sinal da faixa de pedestres muda, sigo para casa.*"
+    },
+    "day4_haeun_reputation_cg": {
+        "name": "{name}",
+        "text": "*Haeun permanece diante do portão da escola, esperando uma resposta.*"
     }
 }

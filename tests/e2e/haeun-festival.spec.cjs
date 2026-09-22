@@ -54,6 +54,7 @@ for (const mode of ['high', 'low']) for (const [index, character] of ['Seoyeon',
         expect(entry.selected).toBe(character);
         expect(entry.affinity).toBe(delayed ? 60 : 65);
         expect(entry.seen).toContain(mode === 'high' ? 'day5_haeun_high_clasp' : 'day4_haeun_concern_clarify');
+        expect(entry.seen).toContain(mode === 'high' ? 'day5_haeun_trust_cg' : 'day4_haeun_reputation_cg');
         await page.reload();
         await ready();
         expect(await page.evaluate(character => window.gameEngine.stateManager.getAffinity(character), character)).toBe(entry.affinity);

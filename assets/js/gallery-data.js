@@ -870,6 +870,8 @@ class GalleryData {
 
     static cg = {
         ko: [
+            {"id":"event_haeun_trust","name":"제가 부탁했어요","character":"하은","description":"방송실 앞에서 서류 상자를 끌어당기며 주인공을 두둔하는 하은","file":"assets/images/background/event_haeun_trust.png","thumbnail":"assets/images/background/event_haeun_trust.webp","unlockHint":"하은 신뢰 8 이상으로 5일차 점심에 하은이 두둔하는 장면 보기"},
+            {"id":"event_haeun_reputation","name":"교문 앞의 해명","character":"하은","description":"교문 앞에서 전날 대화가 불편했던 이유를 말하는 하은","file":"assets/images/background/event_haeun_reputation.png","thumbnail":"assets/images/background/event_haeun_reputation.webp","unlockHint":"하은 신뢰가 음수일 때 4일차 아침의 평판 해명 장면 보기"},
             {
                 id: 'nurse_home_event1',
                 name: '주원의 집에서 맞은 아침',
@@ -1043,6 +1045,8 @@ class GalleryData {
             }
         ],
         en: [
+            {"id":"event_haeun_trust","name":"I Asked for Help","character":"Haeun","description":"Haeun pulls the box of paperwork closer and speaks in the protagonist’s defense outside the broadcasting room","file":"assets/images/background/event_haeun_trust.png","thumbnail":"assets/images/background/event_haeun_trust.webp","unlockHint":"See Haeun defend the protagonist at lunch on Day 5 with her trust at 8 or above"},
+            {"id":"event_haeun_reputation","name":"An Explanation at the Gate","character":"Haeun","description":"Haeun explains at the school gate why yesterday’s conversation made her uncomfortable","file":"assets/images/background/event_haeun_reputation.png","thumbnail":"assets/images/background/event_haeun_reputation.webp","unlockHint":"Reach the reputation clarification on the morning of Day 4 with Haeun’s trust below zero"},
             {
                 id: 'nurse_home_event1',
                 name: 'Morning at Juwon\'s Home',
@@ -1153,6 +1157,8 @@ class GalleryData {
             }
         ],
         es: [
+            {"id":"event_haeun_trust","name":"Yo pedí ayuda","character":"Haeun","description":"Haeun acerca la caja de documentos y defiende al protagonista frente a la sala de radio","file":"assets/images/background/event_haeun_trust.png","thumbnail":"assets/images/background/event_haeun_trust.webp","unlockHint":"Ve a Haeun defender al protagonista al mediodía del día 5 con su confianza en 8 o más"},
+            {"id":"event_haeun_reputation","name":"Una explicación en la entrada","character":"Haeun","description":"Haeun explica en la entrada de la escuela por qué la conversación de ayer la incomodó","file":"assets/images/background/event_haeun_reputation.png","thumbnail":"assets/images/background/event_haeun_reputation.webp","unlockHint":"Llega a la aclaración sobre tu reputación la mañana del día 4 con la confianza de Haeun por debajo de cero"},
             {
                 id: 'nurse_home_event1',
                 name: 'Una mañana en casa de Juwon',
@@ -1263,6 +1269,8 @@ class GalleryData {
             }
         ],
         ja: [
+            {"id":"event_haeun_trust","name":"私がお願いしたんです","character":"ハウン","description":"放送室の前で書類の箱を引き寄せ、主人公をかばうハウン","file":"assets/images/background/event_haeun_trust.png","thumbnail":"assets/images/background/event_haeun_trust.webp","unlockHint":"ハウンの信頼が8以上で、五日目の昼に主人公をかばう場面を見る"},
+            {"id":"event_haeun_reputation","name":"校門での釈明","character":"ハウン","description":"校門で、前日の会話に居心地の悪さを感じた理由を話すハウン","file":"assets/images/background/event_haeun_reputation.png","thumbnail":"assets/images/background/event_haeun_reputation.webp","unlockHint":"ハウンの信頼がマイナスの状態で、四日目の朝に評判をめぐる釈明の場面を見る"},
             {
                 id: 'nurse_home_event1',
                 name: 'ジュウォンの家で迎えた朝',
@@ -1373,6 +1381,8 @@ class GalleryData {
             }
         ],
         fr: [
+            {"id":"event_haeun_trust","name":"C’est moi qui ai demandé","character":"Haeun","description":"Devant la salle radio, Haeun rapproche la caisse de documents et prend la défense du protagoniste","file":"assets/images/background/event_haeun_trust.png","thumbnail":"assets/images/background/event_haeun_trust.webp","unlockHint":"Voir Haeun défendre le protagoniste à midi au jour 5 avec une confiance de 8 ou plus"},
+            {"id":"event_haeun_reputation","name":"Une explication au portail","character":"Haeun","description":"Au portail de l’école, Haeun explique ce qui l’a mise mal à l’aise dans la conversation de la veille","file":"assets/images/background/event_haeun_reputation.png","thumbnail":"assets/images/background/event_haeun_reputation.webp","unlockHint":"Atteindre la discussion sur votre réputation au matin du jour 4 avec une confiance de Haeun inférieure à zéro"},
             {
                 id: 'nurse_home_event1',
                 name: 'Un matin chez Juwon',
@@ -1483,6 +1493,8 @@ class GalleryData {
             }
         ],
         de: [
+            {"id":"event_haeun_trust","name":"Ich habe um Hilfe gebeten","character":"Haeun","description":"Vor dem Rundfunkraum zieht Haeun die Kiste mit Unterlagen näher und verteidigt den Protagonisten","file":"assets/images/background/event_haeun_trust.png","thumbnail":"assets/images/background/event_haeun_trust.webp","unlockHint":"Erlebe, wie Haeun den Protagonisten am Mittag von Tag 5 mit einem Vertrauen von mindestens 8 verteidigt"},
+            {"id":"event_haeun_reputation","name":"Eine Erklärung am Schultor","character":"Haeun","description":"Am Schultor erklärt Haeun, warum ihr das gestrige Gespräch unangenehm war","file":"assets/images/background/event_haeun_reputation.png","thumbnail":"assets/images/background/event_haeun_reputation.webp","unlockHint":"Erreiche das klärende Gespräch über deinen Ruf am Morgen von Tag 4 mit Haeuns Vertrauen unter null"},
             {
                 id: 'nurse_home_event1',
                 name: 'Ein Morgen bei Juwon',
@@ -1593,6 +1605,8 @@ class GalleryData {
             }
         ],
         pt: [
+            {"id":"event_haeun_trust","name":"Eu pedi ajuda","character":"Haeun","description":"Diante da sala de rádio, Haeun puxa a caixa de documentos para perto e defende o protagonista","file":"assets/images/background/event_haeun_trust.png","thumbnail":"assets/images/background/event_haeun_trust.webp","unlockHint":"Veja Haeun defender o protagonista no almoço do dia 5 com a confiança dela em 8 ou mais"},
+            {"id":"event_haeun_reputation","name":"Uma explicação no portão","character":"Haeun","description":"No portão da escola, Haeun explica por que a conversa de ontem a deixou desconfortável","file":"assets/images/background/event_haeun_reputation.png","thumbnail":"assets/images/background/event_haeun_reputation.webp","unlockHint":"Chegue à conversa sobre sua reputação na manhã do dia 4 com a confiança de Haeun abaixo de zero"},
             {
                 id: 'nurse_home_event1',
                 name: 'Uma manhã na casa de Juwon',

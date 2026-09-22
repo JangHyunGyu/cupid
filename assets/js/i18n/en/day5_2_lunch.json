@@ -692,5 +692,9 @@
             "open": "The protagonist asked what was reported and offered to explain with Haeun present. The actual explanation has not started yet.",
             "delay": "The protagonist said he did not want to discuss it now and tried to leave. The other person took this as avoidance. The initial penalty for that choice has already been applied."
         }
+    },
+    "day5_haeun_trust_cg": {
+        "name": "{name}",
+        "text": "*Haeun rests her hands on the box of paperwork and turns toward me.*"
     }
 }

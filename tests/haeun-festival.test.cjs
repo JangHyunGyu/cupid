@@ -122,6 +122,53 @@ test('every visible new scene has seven-language copy, valid choices and existin
     }
 });
 
+test('Haeun CGs follow the buildup, preserve scores and register full-resolution lossless gallery assets in every language', () => {
+    const { context, scenes } = runtime();
+    vm.runInContext(read('assets/js/gallery-data.js'), context);
+    const config = read('assets/js/modules/config.js');
+    const registered = vm.runInNewContext(config.match(/const REGISTERED_CG_IDS = new Set\((\[[\s\S]*?\])\);/)[1]);
+    for (const [id, sceneId, preceding, next] of [
+        ['event_haeun_trust', 'day5_haeun_trust_cg', 'day5_haeun_defends', 'day5_haeun_escalation_router'],
+        ['event_haeun_reputation', 'day4_haeun_reputation_cg', 'day4_haeun_concern_clarify', 'day4_haeun_concern_router']
+    ]) {
+        const scene = scenes[sceneId];
+        assert.equal(scenes[preceding].next, sceneId);
+        assert.equal(scene.next, next);
+        assert.equal(scene.character, null);
+        assert.equal(scene.stats, undefined);
+        assert.equal(scene.background, `assets/images/background/${id}.png`);
+        assert.ok(registered.includes(id));
+        const png = fs.readFileSync(path.join(root, scene.background));
+        assert.equal(png.subarray(1,4).toString(), 'PNG');
+        const width = png.readUInt32BE(16), height = png.readUInt32BE(20);
+        assert.ok(width >= 3840 && height >= 2160);
+        assert.ok(png.length < 25 * 1024 * 1024);
+        const webp = fs.readFileSync(path.join(root, scene.background.replace('.png', '.webp')));
+        assert.equal(webp.subarray(8,12).toString(), 'WEBP');
+        assert.ok(webp.length < 25 * 1024 * 1024);
+        let dimensions = null;
+        for (let offset = 12; offset + 8 <= webp.length;) {
+            const size = webp.readUInt32LE(offset + 4);
+            if (webp.subarray(offset, offset + 4).toString() === 'VP8L') {
+                assert.equal(webp[offset + 8], 0x2f);
+                const packed = webp.readUInt32LE(offset + 9);
+                dimensions = [(packed & 0x3fff) + 1, ((packed >>> 14) & 0x3fff) + 1];
+                break;
+            }
+            offset += 8 + size + (size % 2);
+        }
+        assert.deepEqual(dimensions, [width, height], 'lossless WebP must preserve the PNG master dimensions');
+        for (const lang of languages) {
+            const items = context.window.GalleryData.getCGList(lang).filter(cg => cg.id === id);
+            assert.equal(items.length, 1, `${lang}/${id}`);
+            const cg = items[0];
+            assert.equal(cg.file, scene.background);
+            assert.equal(cg.thumbnail, scene.background.replace('.png', '.webp'));
+            for (const field of ['name','character','description','unlockHint']) assert.ok(cg[field]?.trim(), `${lang}/${id}/${field}`);
+        }
+    }
+});
+
 test('all new and legacy localized group prompts isolate scores, choices and real evidence from stable cache prefixes', () => {
     const { context, state, scenes, core } = runtime();
     const prototype = context.window.FreeTalkSystem.prototype;

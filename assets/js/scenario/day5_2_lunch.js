@@ -9,6 +9,11 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
 
 (() => {
     const scenes = {
+    "day5_haeun_trust_cg": {
+        "background": "assets/images/background/event_haeun_trust.png",
+        "character": null,
+        "next": "day5_haeun_escalation_router"
+    },
     "day5_haeun_gate": {
         "routeBeforeRender": true,
         "branches": [
@@ -132,7 +137,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "day5_haeun_defends": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/haeun_firm.png",
-        "next": "day5_haeun_escalation_router"
+        "next": "day5_haeun_trust_cg"
     },
     "day5_haeun_escalation_router": {
         "routeBeforeRender": true,

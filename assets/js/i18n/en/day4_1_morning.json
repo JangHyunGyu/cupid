@@ -760,5 +760,9 @@
     "day4_haeun_finish": {
         "name": "{name}",
         "text": "*After the conversation, I step away from the gate. When the crossing light changes, I head home.*"
+    },
+    "day4_haeun_reputation_cg": {
+        "name": "{name}",
+        "text": "*Haeun stands by the school gate, waiting for an answer.*"
     }
 }

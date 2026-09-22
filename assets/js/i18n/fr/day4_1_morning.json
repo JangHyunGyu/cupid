@@ -760,5 +760,9 @@
     "day4_haeun_finish": {
         "name": "{name}",
         "text": "*La conversation terminée, je m’éloigne du portail. Quand le feu piéton change, je prends le chemin de la maison.*"
+    },
+    "day4_haeun_reputation_cg": {
+        "name": "{name}",
+        "text": "*Haeun reste devant le portail de l’école, attendant une réponse.*"
     }
 }

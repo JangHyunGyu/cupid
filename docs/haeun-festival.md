@@ -1,6 +1,6 @@
 # Haeun festival events
 
-Haeun's trust uses the same boundaries after the Day 3 conversation: high at 8 or above, neutral at 0–7, and low below zero. The low-trust reputation event takes place on Saturday morning, Day 4, after the existing morning errands and before returning home to prepare for the date. The high-trust relationship misunderstanding remains at lunchtime on Day 5. Neutral trust continues the existing route. Existing images and layouts are reused.
+Haeun's trust uses the same boundaries after the Day 3 conversation: high at 8 or above, neutral at 0–7, and low below zero. The low-trust reputation event takes place on Saturday morning, Day 4, after the existing morning errands and before returning home to prepare for the date. The high-trust relationship misunderstanding remains at lunchtime on Day 5. Neutral trust continues the existing route. Existing layouts are retained; two dedicated Haeun CGs mark the end of each buildup.
 
 High trust opens a misunderstanding about the protagonist's closeness to Haeun. Low trust opens a confrontation at the school gate after Haeun describes her discomfort during the previous day's conversation. Both events choose the highest current affinity among Seoyeon, Yuna, Dain, Teacher and Nurse. Ties are random; the independent `day4_haeun_rival` and `day5_haeun_rival` flags persist each day's chosen character before any penalty and survive saves. If trust recovers to 8 or above after Day 4, Day 5 may open its separate event and select the current highest-affinity character anew.
 
@@ -18,6 +18,13 @@ The Harem backup viewer uses two labels:
 Existing Day 5 reputation scenes and their locale entries remain available exclusively for old saves. Old `day5_haeun_concern_<character>_group_talk` archives retain their original day and label; new conversations are recorded as Day 4. The legacy selector is a runtime entry point, not a route from the new festival gate.
 
 The archive separates five-turn replay occurrences and retains both character identities, session IDs, message ranges and affinity records.
+
+## Collectible CGs
+
+- `event_haeun_trust` / `day5_haeun_trust_cg`: follows Haeun's defense of the protagonist, before the selected character's escalation. Original PNG: 3840 × 2160.
+- `event_haeun_reputation` / `day4_haeun_reputation_cg`: follows Haeun's explanation of her discomfort at the gate, before the selected character's escalation. Original PNG: 5504 × 3072.
+
+Each CG unlocks only when its scene is viewed. The existing gallery stores that unlock separately from game saves and exposes the full-resolution image, localized name, description and unlock hint in all seven languages. Standing sprites are hidden during the CG and restored for subsequent scenes. CGs do not change scores or group-chat behavior. Original PNGs and pixel-identical lossless WebP files are retained at their generated resolutions. Prompts and provenance are in [haeun-cg-prompts.md](haeun-cg-prompts.md).
 
 ## Verification
 

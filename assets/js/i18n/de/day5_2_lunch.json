@@ -692,5 +692,9 @@
             "open": "Der Protagonist fragte nach dem Bericht und bot an, sich vor Haeun zu erklären. Die eigentliche Erklärung hat noch nicht begonnen.",
             "delay": "Der Protagonist wollte jetzt nicht darüber reden und versuchte zu gehen. Die andere Person verstand dies als Ausweichen. Der anfängliche Abzug ist bereits angewandt."
         }
+    },
+    "day5_haeun_trust_cg": {
+        "name": "{name}",
+        "text": "*Haeun legt die Hände auf die Kiste mit Unterlagen und wendet sich mir zu.*"
     }
 }

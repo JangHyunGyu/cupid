@@ -692,5 +692,9 @@
             "open": "Le protagoniste a demandé ce qui avait été rapporté et proposé de s’expliquer devant Haeun. L’explication concrète n’a pas encore commencé.",
             "delay": "Le protagoniste a dit ne pas vouloir en parler et a tenté de partir. L’autre personne y a vu une esquive. La pénalité initiale a déjà été appliquée."
         }
+    },
+    "day5_haeun_trust_cg": {
+        "name": "{name}",
+        "text": "*Haeun pose les mains sur la caisse de documents et se tourne vers moi.*"
     }
 }

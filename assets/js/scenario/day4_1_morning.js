@@ -9,6 +9,11 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
 
 (() => {
     const scenes = {
+    "day4_haeun_reputation_cg": {
+        "background": "assets/images/background/event_haeun_reputation.png",
+        "character": null,
+        "next": "day4_haeun_concern_router"
+    },
     "day4_haeun_gate": {
         "routeBeforeRender": true,
         "branches": [
@@ -97,7 +102,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "day4_haeun_concern_clarify": {
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/haeun_firm.png",
-        "next": "day4_haeun_concern_router"
+        "next": "day4_haeun_reputation_cg"
     },
     "day4_haeun_concern_router": {
         "routeBeforeRender": true,

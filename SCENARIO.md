@@ -17389,10 +17389,19 @@
 
 ### `day4_haeun_concern_clarify`
 - 배경: `school.png`
-- 다음: `day4_haeun_concern_router`
+- 다음: `day4_haeun_reputation_cg`
 
 - 캐릭터: `haeun_firm.png`
 **하은**: 선배를 나쁘게 말하려고 지어낸 얘기는 아니에요. 제가 불편했던 얘기를 한 거예요. *하은이 내 쪽을 본다.* 다르게 받아들인 거라면 여기서 얘기해 주세요.
+
+---
+
+### `day4_haeun_reputation_cg`
+- 배경: `event_haeun_reputation.png`
+- 다음: `day4_haeun_concern_router`
+
+- 캐릭터: `없음`
+**{name}**: *하은이 교문 앞에 선 채 대답을 기다린다.*
 
 ---
 
@@ -24592,10 +24601,19 @@
 
 ### `day5_haeun_defends`
 - 배경: `school_hallway.png`
-- 다음: `day5_haeun_escalation_router`
+- 다음: `day5_haeun_trust_cg`
 
 - 캐릭터: `haeun_firm.png`
 **하은**: 제가 부탁했어요. 선배한테는 편하게 부탁할 수 있어서요. *하은이 상자를 끌어당긴다.* 이상한 일 한 거 아니에요.
+
+---
+
+### `day5_haeun_trust_cg`
+- 배경: `event_haeun_trust.png`
+- 다음: `day5_haeun_escalation_router`
+
+- 캐릭터: `없음`
+**{name}**: *하은이 서류 상자에 손을 얹고 내 쪽을 돌아본다.*
 
 ---
 

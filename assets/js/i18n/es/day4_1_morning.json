@@ -760,5 +760,9 @@
     "day4_haeun_finish": {
         "name": "{name}",
         "text": "*Al terminar la conversación, me alejo de la entrada. Cuando cambia el semáforo del cruce, tomo el camino de casa.*"
+    },
+    "day4_haeun_reputation_cg": {
+        "name": "{name}",
+        "text": "*Haeun permanece junto a la entrada de la escuela, esperando una respuesta.*"
     }
 }
