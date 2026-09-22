@@ -21,10 +21,10 @@ The archive separates five-turn replay occurrences and retains both character id
 
 ## Collectible CGs
 
-- `event_haeun_trust` / `day5_haeun_trust_cg`: follows Haeun's defense of the protagonist, before the selected character's escalation. Original PNG: 3840 × 2160.
-- `event_haeun_reputation` / `day4_haeun_reputation_cg`: follows Haeun's explanation of her discomfort at the gate, before the selected character's escalation. Original PNG: 5504 × 3072.
+- `event_haeun_trust` / `day5_haeun_trust_cg`: follows Haeun's defense of the protagonist, before the selected character's escalation. Deployed square crop: 2160 × 2160; preserved landscape original: 3840 × 2160.
+- `event_haeun_reputation` / `day4_haeun_reputation_cg`: follows Haeun's explanation of her discomfort at the gate, before the selected character's escalation. Deployed square crop: 3072 × 3072; preserved landscape original: 5504 × 3072.
 
-Each CG unlocks only when its scene is viewed. The existing gallery stores that unlock separately from game saves and exposes the full-resolution image, localized name, description and unlock hint in all seven languages. Standing sprites are hidden during the CG and restored for subsequent scenes. CGs do not change scores or group-chat behavior. Original PNGs and pixel-identical lossless WebP files are retained at their generated resolutions. Prompts and provenance are in [haeun-cg-prompts.md](haeun-cg-prompts.md).
+Each CG unlocks only when its scene is viewed. The existing gallery stores that unlock separately from game saves and exposes the square image, localized name, description and unlock hint in all seven languages. Standing sprites are hidden during the CG and restored for subsequent scenes. CGs do not change scores or group-chat behavior. The user-approved square crops remove only side pixels, without resizing. Full landscape originals are archived separately; square PNG and lossless WebP files are pixel-identical. Prompts, crop coordinates and provenance are in [haeun-cg-prompts.md](haeun-cg-prompts.md).
 
 ## Verification
 

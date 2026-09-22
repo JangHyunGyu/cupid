@@ -1,6 +1,6 @@
 # Haeun event CG masters
 
-Both assets were generated through Higgsfield, using existing Cupid character and campus artwork as references. Original native-resolution PNG outputs are preserved without resizing; WebP delivery copies are lossless and pixel-identical.
+Both assets were originally generated through Higgsfield, using existing Cupid character and campus artwork as references. At the user's request, the deployed CGs are now 1:1 side crops of those existing images. No new images were generated and no resizing was applied. Original landscape PNGs are preserved in `assets/images/masters`; WebP delivery copies are lossless and pixel-identical to the square PNGs.
 
 | CG | Approved scene | Native size | Generator |
 | --- | --- | --- | --- |
@@ -14,6 +14,15 @@ Files:
 - assets/images/background/event_haeun_trust.webp
 - assets/images/background/event_haeun_reputation.png
 - assets/images/background/event_haeun_reputation.webp
+
+## Square crops
+
+| CG | Original master | Crop rectangle (left, top, right, bottom) | Deployed PNG/WebP |
+| --- | --- | --- | --- |
+| event_haeun_trust | assets/images/masters/event_haeun_trust_landscape.png | (840, 0, 3000, 2160) | 2160 × 2160 |
+| event_haeun_reputation | assets/images/masters/event_haeun_reputation_landscape.png | (1216, 0, 4288, 3072) | 3072 × 3072 |
+
+Coordinates use exclusive right/bottom bounds. Native height is retained; only the left and right edges were removed. Haeun's face, hands and the paperwork box or school-gate setting remain visible. The prompts below document the original landscape generation, not a new generation request. Future Cupid event and ending CGs default to 1:1.
 
 Approved generation IDs:
 - High trust: 6e816ec6-f1af-4e76-ac7f-85d1bb6f7187
@@ -40,4 +49,3 @@ The CGs use the existing registered-CG rendering, hide standing sprites, and ret
 Both IDs are registered in REGISTERED_CG_IDS and all seven GalleryData.cg locale lists with names, descriptions, character labels and unlock hints. Gallery unlocks are view-based and survive reload and a new game.
 
 Korean wording was checked against the im-not-ai Codex humanize-korean workflow. Original, reviewed text and review notes are stored in D:/workspace/_workspace/2026-09-22-003.
-

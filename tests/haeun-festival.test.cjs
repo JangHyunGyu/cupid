@@ -122,7 +122,7 @@ test('every visible new scene has seven-language copy, valid choices and existin
     }
 });
 
-test('Haeun CGs follow the buildup, preserve scores and register full-resolution lossless gallery assets in every language', () => {
+test('Haeun CGs use square lossless crops, retain original masters and register gallery assets in every language', () => {
     const { context, scenes } = runtime();
     vm.runInContext(read('assets/js/gallery-data.js'), context);
     const config = read('assets/js/modules/config.js');
@@ -141,7 +141,12 @@ test('Haeun CGs follow the buildup, preserve scores and register full-resolution
         const png = fs.readFileSync(path.join(root, scene.background));
         assert.equal(png.subarray(1,4).toString(), 'PNG');
         const width = png.readUInt32BE(16), height = png.readUInt32BE(20);
-        assert.ok(width >= 3840 && height >= 2160);
+        assert.equal(width, height);
+        assert.ok(height >= 2160);
+        const master = fs.readFileSync(path.join(root, `assets/images/masters/${id}_landscape.png`));
+        assert.ok(master.readUInt32BE(16) >= 3840);
+        assert.equal(master.readUInt32BE(20), height, 'side cropping must preserve native height without resizing');
+        assert.ok(master.readUInt32BE(16) > width);
         assert.ok(png.length < 25 * 1024 * 1024);
         const webp = fs.readFileSync(path.join(root, scene.background.replace('.png', '.webp')));
         assert.equal(webp.subarray(8,12).toString(), 'WEBP');

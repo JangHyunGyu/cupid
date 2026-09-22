@@ -63,7 +63,8 @@ for (const [index, lang] of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].entries()
             await card.click();
             const image = page.locator('#cg-modal-image');
             await expect(image).toBeVisible();
-            await expect.poll(() => image.evaluate(img => img.complete && img.naturalWidth)).toBe(mode === 'high' ? 3840 : 5504);
+            await expect.poll(() => image.evaluate(img => img.complete && img.naturalWidth)).toBe(mode === 'high' ? 2160 : 3072);
+            expect(await image.evaluate(img => img.naturalHeight)).toBe(mode === 'high' ? 2160 : 3072);
             await expect(image).toHaveCSS('opacity', '1');
             await expect(page.locator('#cg-modal-title')).toHaveText(copy.name);
             await expect(page.locator('#cg-modal-desc')).toHaveText(copy.description);
