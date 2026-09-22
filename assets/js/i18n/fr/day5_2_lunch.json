@@ -696,5 +696,11 @@
     "day5_haeun_trust_cg": {
         "name": "{name}",
         "text": "*Haeun pose les mains sur la caisse de documents et se tourne vers moi.*"
+    },
+    "day5_haeun_personal": {
+        "name": "Haeun",
+        "text": "*Haeun ferme la porte de la salle radio et se place à côté de toi.* Je n’ai pas pu te le demander devant tout le monde. Avec qui voulais-tu passer la journée ?",
+        "context": "Conversation privée avec Haeun. Ne rappeler que des échanges réels. Garder sa voix polie et sa façon de s’adresser à un élève plus âgé. Avant le choix de sa route, ne pas établir de romance ; même après, elle n’a pas encore accepté de sortir ensemble. Suivre la conversation et l’affinité actuelles.",
+        "personality": "Conversation privée avec Haeun. Ne rappeler que des échanges réels. Garder sa voix polie et sa façon de s’adresser à un élève plus âgé. Avant le choix de sa route, ne pas établir de romance ; même après, elle n’a pas encore accepté de sortir ensemble. Suivre la conversation et l’affinité actuelles."
     }
 }

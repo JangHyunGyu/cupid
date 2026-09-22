@@ -1024,6 +1024,253 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "after5_confess_fail_walk_1"
     }
     };
+    Object.assign(scenes, {
+    "day5_haeun_route_gate": {
+        "routeBeforeRender": true,
+        "branches": [
+            {
+                "condition": "day5_haeun_route_offered",
+                "next": "after5_original_start"
+            },
+            {
+                "condition": "messaged_day5_haeun_personal",
+                "next": "day5_haeun_route_affinity"
+            },
+            {
+                "next": "after5_original_start"
+            }
+        ]
+    },
+    "day5_haeun_route_affinity": {
+        "routeBeforeRender": true,
+        "affinityChar": "Haeun",
+        "affinityBranches": [
+            {
+                "minAffinity": 45,
+                "next": "day5_haeun_route_rival"
+            },
+            {
+                "minAffinity": -100,
+                "next": "after5_original_start"
+            }
+        ]
+    },
+    "day5_haeun_route_rival": {
+        "routeBeforeRender": true,
+        "randomTieFlag": "day5_haeun_route_rival",
+        "rankedRivalBranches": [
+            {
+                "character": "Seoyeon",
+                "next": "day5_haeun_offer_seoyeon"
+            },
+            {
+                "character": "Yuna",
+                "next": "day5_haeun_offer_yuna"
+            },
+            {
+                "character": "Dain",
+                "next": "day5_haeun_offer_dain"
+            },
+            {
+                "character": "Teacher",
+                "next": "day5_haeun_offer_teacher"
+            },
+            {
+                "character": "Nurse",
+                "next": "day5_haeun_offer_nurse"
+            }
+        ]
+    },
+    "day5_haeun_route_choice": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_worried.png",
+        "next": "day5_haeun_private_1",
+        "setFlags": [
+            "day5_haeun_route_offered"
+        ],
+        "choices": [
+            {
+                "next": "day5_haeun_choose_rival",
+                "setFlags": [
+                    "haeun_route_selected"
+                ]
+            },
+            {
+                "next": "after5_original_start"
+            }
+        ]
+    },
+    "day5_haeun_choose_rival": {
+        "routeBeforeRender": true,
+        "randomTieFlag": "day5_haeun_route_rival",
+        "rankedRivalBranches": [
+            {
+                "character": "Seoyeon",
+                "next": "day5_haeun_leave_seoyeon"
+            },
+            {
+                "character": "Yuna",
+                "next": "day5_haeun_leave_yuna"
+            },
+            {
+                "character": "Dain",
+                "next": "day5_haeun_leave_dain"
+            },
+            {
+                "character": "Teacher",
+                "next": "day5_haeun_leave_teacher"
+            },
+            {
+                "character": "Nurse",
+                "next": "day5_haeun_leave_nurse"
+            }
+        ]
+    },
+    "day5_haeun_private_1": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_normal.png",
+        "next": "day5_haeun_walk",
+        "type": "free_talk",
+        "maxTurns": 10,
+        "isRemote": false,
+        "haeunRomance": true
+    },
+    "day5_haeun_walk": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/haeun_normal.png",
+        "next": "day5_haeun_private_2"
+    },
+    "day5_haeun_private_2": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/haeun_normal.png",
+        "next": "day5_haeun_romance_check",
+        "type": "free_talk",
+        "maxTurns": 10,
+        "isRemote": false,
+        "haeunRomance": true
+    },
+    "day5_haeun_romance_check": {
+        "routeBeforeRender": true,
+        "affinityChar": "Haeun",
+        "affinityBranches": [
+            {
+                "minAffinity": 100,
+                "next": "day5_ending_haeun"
+            },
+            {
+                "minAffinity": -100,
+                "next": "day5_haeun_fallback"
+            }
+        ]
+    },
+    "day5_haeun_fallback": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/haeun_firm.png",
+        "next": "after5_original_start",
+        "clearFlags": [
+            "haeun_route_selected"
+        ]
+    },
+    "day5_ending_haeun": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/haeun_relieved.png",
+        "next": "day5_ending_haeun_epilogue",
+        "setFlags": [
+            "route_haeun",
+            "isDating_Haeun",
+            "ending_perfect"
+        ],
+        "clearFlags": [
+            "isDating_Seoyeon",
+            "isDating_Yuna",
+            "isDating_Dain",
+            "isDating_Teacher",
+            "isDating_Nurse"
+        ]
+    },
+    "day5_ending_haeun_epilogue": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/haeun_relieved.png",
+        "next": "day5_credits"
+    },
+    "day5_haeun_offer_seoyeon": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_worried.png",
+        "next": "day5_haeun_route_choice"
+    },
+    "day5_haeun_leave_seoyeon": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_firm.png",
+        "next": "day5_haeun_private_1",
+        "stats": {
+            "Seoyeon": {
+                "affinity": -10
+            }
+        }
+    },
+    "day5_haeun_offer_yuna": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_worried.png",
+        "next": "day5_haeun_route_choice"
+    },
+    "day5_haeun_leave_yuna": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_firm.png",
+        "next": "day5_haeun_private_1",
+        "stats": {
+            "Yuna": {
+                "affinity": -10
+            }
+        }
+    },
+    "day5_haeun_offer_dain": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_worried.png",
+        "next": "day5_haeun_route_choice"
+    },
+    "day5_haeun_leave_dain": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_firm.png",
+        "next": "day5_haeun_private_1",
+        "stats": {
+            "Dain": {
+                "affinity": -10
+            }
+        }
+    },
+    "day5_haeun_offer_teacher": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_worried.png",
+        "next": "day5_haeun_route_choice"
+    },
+    "day5_haeun_leave_teacher": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_firm.png",
+        "next": "day5_haeun_private_1",
+        "stats": {
+            "Teacher": {
+                "affinity": -10
+            }
+        }
+    },
+    "day5_haeun_offer_nurse": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_worried.png",
+        "next": "day5_haeun_route_choice"
+    },
+    "day5_haeun_leave_nurse": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_firm.png",
+        "next": "day5_haeun_private_1",
+        "stats": {
+            "Nurse": {
+                "affinity": -10
+            }
+        }
+    }
+});
+    scenes.after5_original_start = scenes.after5_start;
+    scenes.after5_start = { routeBeforeRender: true, next: 'day5_haeun_route_gate' };
     for (const scene of Object.values(scenes)) {
         if (scene && typeof scene === 'object') {
             Object.defineProperty(scene, "__sourceFile", {

@@ -2607,6 +2607,28 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     }
     };
     scenes.day4_student_checkin_return_home.branches = scenes.day4_student_night_branch.branches;
+    Object.assign(scenes, {
+    "forced_violation_day4_after_haeun": {
+        "runtimeEntrypoint": true,
+        "inheritVisualContext": true,
+        "choices": [
+            {
+                "next": "forced_violation_day4_haeun_apologize"
+            },
+            {
+                "next": "forced_violation_day4_haeun_excuse"
+            }
+        ]
+    },
+    "forced_violation_day4_haeun_apologize": {
+        "inheritVisualContext": true,
+        "next": "forced_violation_day4_resume"
+    },
+    "forced_violation_day4_haeun_excuse": {
+        "inheritVisualContext": true,
+        "next": "forced_violation_day4_resume"
+    }
+});
     for (const scene of Object.values(scenes)) {
         if (scene && typeof scene === 'object') {
             Object.defineProperty(scene, "__sourceFile", {

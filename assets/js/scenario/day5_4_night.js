@@ -2720,6 +2720,28 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         ]
     }
     };
+    Object.assign(scenes, {
+    "forced_violation_day5_after_haeun": {
+        "runtimeEntrypoint": true,
+        "inheritVisualContext": true,
+        "choices": [
+            {
+                "next": "forced_violation_day5_haeun_apologize"
+            },
+            {
+                "next": "forced_violation_day5_haeun_excuse"
+            }
+        ]
+    },
+    "forced_violation_day5_haeun_apologize": {
+        "inheritVisualContext": true,
+        "next": "forced_violation_day5_resume"
+    },
+    "forced_violation_day5_haeun_excuse": {
+        "inheritVisualContext": true,
+        "next": "forced_violation_day5_resume"
+    }
+});
     for (const scene of Object.values(scenes)) {
         if (scene && typeof scene === 'object') {
             Object.defineProperty(scene, "__sourceFile", {

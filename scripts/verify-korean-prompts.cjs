@@ -220,9 +220,9 @@ function verifyMainAndGalleryPrompts(context) {
         'the Korean relationship profiles are not distinct');
     assert(new Set(Object.values(promptData.styleGuidelines)).size === Object.values(promptData.styleGuidelines).length,
         'the Korean character voices are not distinct');
-    assert(promptData.relationshipGuidelines['하은']?.includes('연애 감정이나 엔딩 조건이 아니라'),
+    assert(promptData.relationshipGuidelines['하은']?.includes('선택만으로 연인이 되지는 않는다'),
         'Haeun affinity is not explicitly separated from romance and endings');
-    assert(promptData.generalInstructions['하은']?.includes('비연애 조연인 학생'),
+    assert(promptData.generalInstructions['하은']?.includes('재학 중 장면은 성적인 방향으로 바꾸지 않습니다'),
         'Haeun prompt is missing the non-romance student boundary');
     assert(promptData.styleGuidelines['하은']?.includes('존댓말')
         && !promptData.styleGuidelines['하은']?.startsWith('또박또박한 반말'),
@@ -746,6 +746,8 @@ function verifyWiringAndScenePrompts() {
         'assets/js/i18n/ko/day3_3_afterschool.json',
         'assets/js/i18n/ko/day4_1_morning.json',
         'assets/js/i18n/ko/day4_4_night.json',
+        'assets/js/i18n/ko/day5_2_lunch.json',
+        'assets/js/i18n/ko/day5_3_afterschool.json',
         'assets/js/i18n/ko/day5_4_night.json'
     ];
     const scenePrompts = [];
@@ -756,7 +758,7 @@ function verifyWiringAndScenePrompts() {
         Object.values(value).forEach(collect);
     }
     sceneFiles.forEach(file => collect(JSON.parse(read(file))));
-    assert(scenePrompts.length === 57, `expected 57 active Korean scene prompts, found ${scenePrompts.length}`);
+    assert(scenePrompts.length === 71, `expected 71 active Korean scene prompts, found ${scenePrompts.length}`);
     const joined = scenePrompts.join('\n');
     for (const stalePhrase of ['Day 1', 'Day 3', '톤:', '티키타카', '쿨뷰티', '신비주의 문학소녀', '체육계']) {
         assert(!joined.includes(stalePhrase), `active Korean scene prompt still contains: ${stalePhrase}`);
@@ -773,11 +775,11 @@ function verifyWiringAndScenePrompts() {
     for (let day = 1; day <= 5; day += 1) {
         const freeTalks = Object.entries(scenarioContext.SCENARIO[day] || {})
             .filter(([, scene]) => scene?.type === 'free_talk');
-        const expectedCount = day === 5 ? 23 : (day === 4 ? 8 : (day === 3 ? 6 : 5));
+        const expectedCount = day === 5 ? 26 : (day === 4 ? 9 : (day === 3 ? 6 : 5));
         assert(freeTalks.length === expectedCount,
             `day ${day} must contain exactly ${expectedCount} free-talk scenes, found ${freeTalks.length}`);
         for (const [id, scene] of freeTalks) {
-            const expectedTurns = id === 'haeun_freetalk' || day === 5 || scene.romanticInterlude === true ? 5 : 3;
+            const expectedTurns = scene.haeunRomance === true ? 10 : id === 'day4_haeun_personal' || id === 'haeun_freetalk' || day === 5 || scene.romanticInterlude === true ? 5 : 3;
             assert(scene.maxTurns === expectedTurns,
                 `${id} must use maxTurns ${expectedTurns}, found ${scene.maxTurns}`);
         }

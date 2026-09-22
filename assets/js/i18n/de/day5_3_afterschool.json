@@ -615,5 +615,81 @@
     "after5_confess_react_yuna_neg": {
         "name": "Yuna",
         "text": "*Sie blättert nur um.* Das nehme ich nicht an."
+    },
+    "day5_haeun_route_choice": {
+        "name": "Haeun",
+        "text": "Wenn du mich wählst, kann es mit dieser Person nicht einfach weitergehen wie bisher. *Haeun faltet das Papier in ihren Händen.* Denk bitte noch einmal nach, bevor du antwortest.",
+        "choices": [
+            "Haeun statt der bisherigen Beziehung wählen",
+            "Zur ursprünglich geliebten Person zurückgehen"
+        ]
+    },
+    "day5_haeun_private_1": {
+        "name": "Haeun",
+        "text": "Dann rede heute mit mir. Ich möchte hören, was du in mir siehst. Ich habe noch nicht zugesagt, mit dir zusammen zu sein.",
+        "context": "Ein Gespräch unter vier Augen mit Haeun. Nur tatsächliche frühere Gespräche erinnern. Ihre höfliche Stimme und Anrede für den älteren Mitschüler beibehalten. Vor der Routenwahl keine Liebesbeziehung festlegen; auch danach hat sie einer Beziehung noch nicht zugestimmt. Auf das aktuelle Gespräch und die Zuneigung eingehen.",
+        "personality": "Ein Gespräch unter vier Augen mit Haeun. Nur tatsächliche frühere Gespräche erinnern. Ihre höfliche Stimme und Anrede für den älteren Mitschüler beibehalten. Vor der Routenwahl keine Liebesbeziehung festlegen; auch danach hat sie einer Beziehung noch nicht zugestimmt. Auf das aktuelle Gespräch und die Zuneigung eingehen."
+    },
+    "day5_haeun_walk": {
+        "name": "Haeun",
+        "text": "*Nach dem Aufräumen geht ihr zum Park. Haeun stellt ihre Tasche ans Ende einer Bank.* Setz dich hierhin. Ich würde gern weiterreden."
+    },
+    "day5_haeun_private_2": {
+        "name": "Haeun",
+        "text": "Ich möchte beim nächsten Treffen wieder so mit dir reden können. Was für eine Beziehung wünschst du dir mit mir?",
+        "context": "Ein Gespräch unter vier Augen mit Haeun. Nur tatsächliche frühere Gespräche erinnern. Ihre höfliche Stimme und Anrede für den älteren Mitschüler beibehalten. Vor der Routenwahl keine Liebesbeziehung festlegen; auch danach hat sie einer Beziehung noch nicht zugestimmt. Auf das aktuelle Gespräch und die Zuneigung eingehen.",
+        "personality": "Ein Gespräch unter vier Augen mit Haeun. Nur tatsächliche frühere Gespräche erinnern. Ihre höfliche Stimme und Anrede für den älteren Mitschüler beibehalten. Vor der Routenwahl keine Liebesbeziehung festlegen; auch danach hat sie einer Beziehung noch nicht zugestimmt. Auf das aktuelle Gespräch und die Zuneigung eingehen."
+    },
+    "day5_haeun_fallback": {
+        "name": "Haeun",
+        "text": "Ich bin froh, dass wir heute geredet haben. Für eine Beziehung bin ich aber noch nicht bereit. *Haeun nimmt ihre Tasche.* Lass bitte niemanden wegen mir warten."
+    },
+    "day5_ending_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun rückt neben dich.* Ich mag dich auch. Lass uns zusammen sein. Darf ich dich morgen treffen, ohne so zu tun, als bräuchte ich Hilfe bei der Arbeit?"
+    },
+    "day5_ending_haeun_epilogue": {
+        "name": "Haeun",
+        "text": "*Auch Haeun hat inzwischen ihren Schulabschluss gemacht und ist erwachsen. Als du ins Café kommst, nimmt sie ihre Tasche vom gegenüberliegenden Stuhl.* Heute war ich zuerst da. Ich wollte mit dir zusammen bestellen. Was möchtest du trinken?"
+    },
+    "day5_haeun_offer_seoyeon": {
+        "name": "Haeun",
+        "text": "Wolltest du nicht zu Seoyeon? Was meinst du damit, dass du bei mir bleiben möchtest?"
+    },
+    "day5_haeun_leave_seoyeon": {
+        "name": "{name}",
+        "text": "*Du schreibst Seoyeon, dass du heute mit Haeun zusammen sein möchtest. Eine kurze Antwort kommt. Du steckst das Handy weg, ohne sie Haeun zu zeigen.*"
+    },
+    "day5_haeun_offer_yuna": {
+        "name": "Haeun",
+        "text": "Wolltest du nicht zu Yuna? Was meinst du damit, dass du bei mir bleiben möchtest?"
+    },
+    "day5_haeun_leave_yuna": {
+        "name": "{name}",
+        "text": "*Du schreibst Yuna, dass du heute mit Haeun zusammen sein möchtest. Eine kurze Antwort kommt. Du steckst das Handy weg, ohne sie Haeun zu zeigen.*"
+    },
+    "day5_haeun_offer_dain": {
+        "name": "Haeun",
+        "text": "Wolltest du nicht zu Dain? Was meinst du damit, dass du bei mir bleiben möchtest?"
+    },
+    "day5_haeun_leave_dain": {
+        "name": "{name}",
+        "text": "*Du schreibst Dain, dass du heute mit Haeun zusammen sein möchtest. Eine kurze Antwort kommt. Du steckst das Handy weg, ohne sie Haeun zu zeigen.*"
+    },
+    "day5_haeun_offer_teacher": {
+        "name": "Haeun",
+        "text": "Wolltest du nicht zu deine Klassenlehrerin? Was meinst du damit, dass du bei mir bleiben möchtest?"
+    },
+    "day5_haeun_leave_teacher": {
+        "name": "{name}",
+        "text": "*Du schreibst deine Klassenlehrerin, dass du heute mit Haeun zusammen sein möchtest. Eine kurze Antwort kommt. Du steckst das Handy weg, ohne sie Haeun zu zeigen.*"
+    },
+    "day5_haeun_offer_nurse": {
+        "name": "Haeun",
+        "text": "Wolltest du nicht zu die Schulkrankenschwester? Was meinst du damit, dass du bei mir bleiben möchtest?"
+    },
+    "day5_haeun_leave_nurse": {
+        "name": "{name}",
+        "text": "*Du schreibst die Schulkrankenschwester, dass du heute mit Haeun zusammen sein möchtest. Eine kurze Antwort kommt. Du steckst das Handy weg, ohne sie Haeun zu zeigen.*"
     }
 }

@@ -466,6 +466,21 @@ class CharacterRenderer {
         const currentAffinity = this.ui.progress.getAffinity(charId);
         const freeTalkCount = this.ui.progress.getFreeTalkCount(charId);
 
+        if (charId === 'haeun') {
+            this.ui.showUnlockPopup({
+                title: L('대화 미해금', 'Chat Locked', 'Chat bloqueado', 'トーク未解放', 'Discussion verrouillée', 'Chat gesperrt', 'Chat bloqueado'),
+                message: L('하은을 선택하고 호감도 100으로 하은 엔딩을 보면 대화가 열립니다.',
+                    'Choose Haeun and reach her ending with 100 affinity to unlock this chat.',
+                    'Elige a Haeun y alcanza su final con 100 de afinidad para desbloquear este chat.',
+                    'ハウンを選び、好感度100でエンディングを迎えると会話が解放されます。',
+                    'Choisissez Haeun et atteignez sa fin avec 100 d’affinité pour débloquer cette discussion.',
+                    'Wähle Haeun und erreiche ihr Ende mit 100 Zuneigung, um diesen Chat freizuschalten.',
+                    'Escolha Haeun e alcance o final dela com 100 de afinidade para liberar esta conversa.'),
+                icon: '🔒'
+            });
+            return;
+        }
+
         const hiddenChars = ['teacher', 'nurse'];
         const affinityMax = hiddenChars.includes(charId) ? 80 : 100;
         const endingStatus = perfectEnding ? '✅' : '❌';

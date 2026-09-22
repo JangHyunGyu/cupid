@@ -200,6 +200,7 @@ const day5EndingFreeTalkIds = [
     'day5_nurse_ending_freetalk_bittersweet'
 ];
 const activeFreeTalkIds = [
+    'day4_haeun_personal', 'day5_haeun_personal', 'day5_haeun_private_1', 'day5_haeun_private_2',
     ...['seoyeon', 'yuna', 'dain', 'teacher', 'nurse'].flatMap(id => [
         `day5_haeun_${id}_group_talk`, `day5_haeun_concern_${id}_group_talk`, `day4_haeun_concern_${id}_group_talk`
     ]),
@@ -369,9 +370,9 @@ for (const lang of languages) {
     assert(data.relationshipGuidelines, `[${lang}] relationship profiles are missing`);
     assert(new Set(characters.map(char => data.relationshipGuidelines[promptKeys[char]])).size === characters.length,
         `[${lang}] the five relationship profiles are not distinct`);
-    assert(data.relationshipGuidelines.Haeun?.includes('not romance or an ending condition'),
+    assert(data.relationshipGuidelines.Haeun?.includes('the choice alone does not make them a couple'),
         `[${lang}/Haeun] affinity is not separated from romance and endings`);
-    assert(data.generalInstructions.Haeun?.includes('non-romance supporting student'),
+    assert(data.generalInstructions.Haeun?.includes('Keep school-timeline scenes nonsexual'),
         `[${lang}/Haeun] non-romance student boundary is missing`);
     assert(data.addressingGuidelines.Haeun?.includes("Treat the protagonist as Haeun's senior")
         && data.addressingGuidelines.Haeun?.includes('otherwise use the natural equivalent of "senior."'),
@@ -531,7 +532,7 @@ for (const lang of languages) {
     });
     const haeunParts = splitCacheBoundary(haeunPrompt, `[${lang}/Haeun] main prompt`);
     const haeunVariantParts = splitCacheBoundary(haeunDynamicVariant, `[${lang}/Haeun] dynamic prompt`);
-    assert(haeunParts.stable.includes('non-romance supporting student')
+    assert(haeunParts.stable.includes('younger schoolmate')
         && haeunParts.stable.includes('looks up to Seoyeon')
         && haeunParts.stable.includes("Treat the protagonist as Haeun's senior"),
     `[${lang}/Haeun] character and relationship boundary is missing from the stable prompt`);

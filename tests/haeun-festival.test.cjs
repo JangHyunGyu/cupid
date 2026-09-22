@@ -29,7 +29,7 @@ test('Haeun uses negative / 0–7 / 8+ trust in both conversations and the festi
         state.stats.Haeun.affinity = score;
         assert.equal(renderer.resolveNextScene(context.SCENARIO[3].haeun_affinity_check), `haeun_affinity_${day3}_1`);
         assert.equal(renderer.resolveNextScene(scenes.day5_haeun_trust_check), `day5_haeun_${day5}`);
-        assert.equal(renderer.resolveNextScene(scenes.day4_haeun_trust_check), score < 0 ? 'day4_haeun_approach' : 'morning4_end');
+        assert.equal(renderer.resolveNextScene(scenes.day4_haeun_trust_check), score < 0 ? 'day4_haeun_approach' : 'day4_haeun_personal_gate');
     }
     for (const id of ['morning5_end', 'morning5_committed_end']) assert.equal(scenes[id].next, 'day5_haeun_gate');
     state.setFlag('day5_haeun_event_done');

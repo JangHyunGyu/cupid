@@ -696,5 +696,11 @@
     "day5_haeun_trust_cg": {
         "name": "{name}",
         "text": "*Haeun rests her hands on the box of paperwork and turns toward me.*"
+    },
+    "day5_haeun_personal": {
+        "name": "Haeun",
+        "text": "*Haeun closes the broadcasting-room door and stands beside you.* I couldn’t ask with everyone there. Who did you want to spend today with?",
+        "context": "Talk privately with Haeun. Remember only actual prior exchanges. Keep her polite voice and natural senior address. Before the explicit route choice, do not establish romance; even after the choice she has not agreed to date yet. Respond to the current conversation and affinity.",
+        "personality": "Talk privately with Haeun. Remember only actual prior exchanges. Keep her polite voice and natural senior address. Before the explicit route choice, do not establish romance; even after the choice she has not agreed to date yet. Respond to the current conversation and affinity."
     }
 }

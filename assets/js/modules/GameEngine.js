@@ -632,6 +632,34 @@ class GameEngine {
      * @param {Object} choice - 실행할 선택지 객체
      */
     async executeChoice(choice) {
+        if (this._choiceInFlight) return false;
+        const sceneId = this.sceneRenderer.currentSceneId;
+        const available = this.getAvailableChoices(this.sceneRenderer.getScene(sceneId)?.choices || []);
+        const canonical = available.find(candidate => JSON.stringify(candidate) === JSON.stringify(choice));
+        if (!canonical) return false;
+        choice = canonical;
+        this._choiceInFlight = true;
+        try {
+            const apply = () => this._applyChoiceEffects(choice);
+            const result = this.stateManager.commitProgressEvent
+                ? await this.stateManager.commitProgressEvent(`choice:${sceneId}`, apply, { transition: true })
+                : { applied: true, value: apply() };
+            if (!result.applied) return false;
+            const nextScene = result.value;
+            window.CupidRouteTelemetry?.choice(this.stateManager, sceneId,
+                this.sceneRenderer.getScene(sceneId), choice, nextScene);
+            if (nextScene === 'index.html') this.uiManager.goToHome();
+            else await this.renderScene(nextScene);
+            return true;
+        } catch (error) {
+            if (error?.name === 'ProgressConflictError') { await this.continueGame(); return false; }
+            throw error;
+        } finally {
+            this._choiceInFlight = false;
+        }
+    }
+
+    _applyChoiceEffects(choice) {
         // ─────────────────────────────────────────────────────────
         // 📌 1단계: 플래그 설정
         // ─────────────────────────────────────────────────────────
@@ -774,15 +802,7 @@ class GameEngine {
         // ─────────────────────────────────────────────────────────
         // 📌 4단계: 씬 이동 실행
         // ─────────────────────────────────────────────────────────
-        window.CupidRouteTelemetry?.choice(this.stateManager, this.sceneRenderer.currentSceneId,
-            this.sceneRenderer.getScene(this.sceneRenderer.currentSceneId), choice, nextScene);
-        if (nextScene === 'index.html') {
-            // 메인 메뉴로 돌아가기 (게임 종료) - 현재 언어에 맞는 index 페이지로 이동
-            this.uiManager.goToHome();
-        } else {
-            // 다음 씬 렌더링
-            await this.renderScene(nextScene);
-        }
+        return nextScene;
     }
 
     /**
@@ -1079,8 +1099,12 @@ class GameEngine {
         // ─────────────────────────────────────────────────────────
         // 씬에 정의된 setFlag, checkFlag, stats 등 처리
         if (!restoring) {
-            this.sceneRenderer.processSceneFlags(scene);
-            this.sceneRenderer.processSceneStats(scene);
+            const apply = () => {
+                this.sceneRenderer.processSceneFlags(scene);
+                this.sceneRenderer.processSceneStats(scene);
+            };
+            if (this.stateManager.commitProgressEvent) await this.stateManager.commitProgressEvent(`scene:${sceneId}`, apply, { arrivedScene: sceneId });
+            else apply();
         }
         this.sceneRenderer.updateCompositeFlags();
         // Persist entry effects before animation or dialogue can be interrupted by a reload.
@@ -1237,7 +1261,7 @@ class GameEngine {
 
             // ── 갤러리 프리토킹 해금 (PERFECT 엔딩 한정) ──
             if (this.stateManager.getFlag('ending_perfect')) {
-                const charMap = { Seoyeon: 'seyoun', Yuna: 'yuna', Dain: 'dain', Teacher: 'teacher', Nurse: 'nurse' };
+                const charMap = { Seoyeon: 'seyoun', Yuna: 'yuna', Dain: 'dain', Teacher: 'teacher', Nurse: 'nurse', Haeun: 'haeun' };
                 for (const [key, id] of Object.entries(charMap)) {
                     if (this.stateManager.getFlag(`isDating_${key}`)) {
                         try {
@@ -1261,7 +1285,7 @@ class GameEngine {
             // ── Nevergrad 크로스오버: 플레이 기록 저장 ──
             try {
                 // 공략 히로인 판별: isDating 플래그 우선, 없으면 최고 호감도 캐릭터
-                const heroineMap = { Seoyeon: 'seoyeon', Yuna: 'yuna', Dain: 'dain', Teacher: 'teacher', Nurse: 'nurse' };
+                const heroineMap = { Seoyeon: 'seoyeon', Yuna: 'yuna', Dain: 'dain', Teacher: 'teacher', Nurse: 'nurse', Haeun: 'haeun' };
                 let heroineId = 'none';
                 let maxAff = -Infinity;
                 for (const [key, id] of Object.entries(heroineMap)) {
@@ -1646,7 +1670,7 @@ class GameEngine {
             }
 
             // 🎬 저장된 씬부터 렌더링 재개
-            await this.renderScene(this.sceneRenderer.currentSceneId, { restoring: true });
+            await this.renderScene(this.sceneRenderer.currentSceneId, { restoring: !saveData.pendingEntryEffects });
 
         } else {
             // ═══════════════════════════════════════════════════

@@ -55,6 +55,8 @@ class SaveManager {
             savedAt: Date.now()                // 저장 시각
         };
 
+        if (window.CupidProgressIntegrity?.save(saveData) === false) return false;
+
         // JSON 문자열로 변환해서 저장
         try {
             window.CupidStorage.setItem(this.storageKey, JSON.stringify(saveData));
@@ -81,6 +83,7 @@ class SaveManager {
 
         try {
             const saveData = JSON.parse(saved);
+            window.CupidProgressIntegrity?.restoreSave(saveData);
             if (window.CupidAffinityCorrections?.correctSave(saveData)) {
                 window.CupidStorage.setItem(this.storageKey, JSON.stringify(saveData));
             }

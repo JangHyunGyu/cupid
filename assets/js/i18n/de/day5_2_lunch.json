@@ -696,5 +696,11 @@
     "day5_haeun_trust_cg": {
         "name": "{name}",
         "text": "*Haeun legt die Hände auf die Kiste mit Unterlagen und wendet sich mir zu.*"
+    },
+    "day5_haeun_personal": {
+        "name": "Haeun",
+        "text": "*Haeun schließt die Tür zum Rundfunkraum und stellt sich neben dich.* Vor den anderen konnte ich nicht fragen. Mit wem wolltest du heute zusammen sein?",
+        "context": "Ein Gespräch unter vier Augen mit Haeun. Nur tatsächliche frühere Gespräche erinnern. Ihre höfliche Stimme und Anrede für den älteren Mitschüler beibehalten. Vor der Routenwahl keine Liebesbeziehung festlegen; auch danach hat sie einer Beziehung noch nicht zugestimmt. Auf das aktuelle Gespräch und die Zuneigung eingehen.",
+        "personality": "Ein Gespräch unter vier Augen mit Haeun. Nur tatsächliche frühere Gespräche erinnern. Ihre höfliche Stimme und Anrede für den älteren Mitschüler beibehalten. Vor der Routenwahl keine Liebesbeziehung festlegen; auch danach hat sie einer Beziehung noch nicht zugestimmt. Auf das aktuelle Gespräch und die Zuneigung eingehen."
     }
 }

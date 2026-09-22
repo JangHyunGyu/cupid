@@ -329,7 +329,11 @@ class FreeTalkSystem {
      * @param {string} sceneId - 씬 ID
      */
     _getFreeTalkCheckpoint(scene, sceneId, history = []) {
-        const saved = this.stateManager.freeTalkCheckpoint;
+        const protectedCheckpoint = window.CupidProgressIntegrity?.checkpoint(this.stateManager, sceneId);
+        const saved = protectedCheckpoint || this.stateManager.freeTalkCheckpoint;
+        if (this.stateManager.getFlag?.(`messaged_${sceneId}`)) {
+            return { ...(saved?.sceneId === sceneId ? saved : {}), sceneId, turns: scene.maxTurns || DEFAULT_MAX_FREE_TALK_TURNS, completed: true };
+        }
         if (saved?.sceneId === sceneId) return saved;
         const maxTurns = scene.maxTurns || DEFAULT_MAX_FREE_TALK_TURNS;
         if (scene.type === 'group_free_talk') {
@@ -587,7 +591,7 @@ class FreeTalkSystem {
             sceneName: charKey,
             displayName: scene.name,
             locationName,
-            context: scene.context || ({ es: "La escena continúa a partir de la última intervención del protagonista.", ja: "主人公が直前に発した言葉や取った行動を受けて、場面を続けます。", en: "Continuing the scene from the protagonist's latest line or action.", fr: "La scène reprend après la dernière parole ou action du protagoniste.", de: "Die Szene wird nach der letzten Äußerung oder Handlung des Protagonisten fortgesetzt.", pt: "A cena continua a partir da última fala ou ação do protagonista." }[lang] || "주인공이 방금 한 말이나 행동에서 장면을 이어갑니다."),
+            context: (charKey === 'Haeun' ? (scene.haeunRomance === true ? '[Current route state: the player explicitly chose Haeun. Mutual dating has NOT been agreed yet.] ' : '[Current route state: Haeun has NOT been chosen for romance.] ') : '') + (scene.context || ({ es: "La escena continúa a partir de la última intervención del protagonista.", ja: "主人公が直前に発した言葉や取った行動を受けて、場面を続けます。", en: "Continuing the scene from the protagonist's latest line or action.", fr: "La scène reprend après la dernière parole ou action du protagoniste.", de: "Die Szene wird nach der letzten Äußerung oder Handlung des Protagonisten fortgesetzt.", pt: "A cena continua a partir da última fala ou ação do protagonista." }[lang] || "주인공이 방금 한 말이나 행동에서 장면을 이어갑니다.")),
             affinity: sceneDialogue.affinity,
             romanticInterlude: sceneDialogue.romanticInterlude,
             extraGuideline: [scene.personality, scene.extra_guideline].filter(Boolean).join("\n"),
@@ -1073,9 +1077,13 @@ class FreeTalkSystem {
                 || !this.isFreeTalking) {
                 return;
             }
-            if (skippedGroupParticipants.length === 2) {
-                this._applyGroupSkipPenalty(skippedGroupParticipants);
-            }
+            const skipped = await this.stateManager.commitProgressEvent('close:' + skipSceneId, () => {
+                if (skippedGroupParticipants.length === 2) this._applyGroupSkipPenalty(skippedGroupParticipants);
+                this.freeTalkTurns = this.currentMaxTurns;
+                this.stateManager.setFlag('messaged_' + skipSceneId);
+                this._commitFreeTalkCheckpoint();
+            }, { checkpoint: () => this.stateManager.freeTalkCheckpoint });
+            if (!skipped.applied) return;
             // 타이핑 중이면 중단
             if (this.dialogueSystem.isCurrentlyTyping()) {
                 this.dialogueSystem.requestSkip();
@@ -1437,7 +1445,7 @@ class FreeTalkSystem {
                 {
                     characterName: scene.name || charKey,
                     establishedRelationship: _isDatingCurrentForBoundary,
-                    nonRomance: charKey === 'Haeun'
+                    nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true
                 }
             );
             const _affinityIntimacyProgressionPatch = _sceneDialogue.romanticInterlude ? '' : window.buildCupidAffinityIntimacyGuidance?.(
@@ -1446,7 +1454,7 @@ class FreeTalkSystem {
                 {
                     characterName: scene.name || charKey,
                     establishedRelationship: _isDatingCurrentForBoundary,
-                    nonRomance: charKey === 'Haeun'
+                    nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true
                 }
             ) || '';
             const _relationshipAftermathBlock = _sceneDialogue.romanticInterlude ? '' : CupidFreeTalkCore.buildRelationshipAftermathBlock({
@@ -1765,8 +1773,10 @@ class FreeTalkSystem {
 
                 // 화면 렌더가 성공한 응답에만 표정과 호감도를 적용한다.
                 this._assertRequestContext(requestContext, data);
+                let affinityResult;
+                const commitTurn = () => {
                 this.applyExpression(parsed.expression, scene);
-                const affinityResult = this.applyAffinity(parsed.affinity, scene, finalContent);
+                affinityResult = this.applyAffinity(parsed.affinity, scene, finalContent);
                 this._assertRequestContext(requestContext, data);
                 const nextAftermath = CupidFreeTalkCore.updateRelationshipAftermath(
                     this.stateManager.getRelationshipAftermath?.(charKey),
@@ -1800,6 +1810,12 @@ class FreeTalkSystem {
                 this._assertRequestContext(requestContext, data);
                 this.stateManager.setChatMemory(charKey, requestHistory);
                 this._commitFreeTalkCheckpoint(requestHistory.at(-1));
+                };
+                const turnResult = this.stateManager.commitProgressEvent
+                    ? await this.stateManager.commitProgressEvent(`talk:${requestSceneId}:${requestContext.freeTalkTurnsBefore}`, commitTurn,
+                        { checkpoint: () => this.stateManager.freeTalkCheckpoint })
+                    : { applied: true, value: commitTurn() };
+                if (!turnResult.applied) throw this._makeStaleTurnError('This conversation turn was already committed');
                 try {
                     window.saveGameState?.();
                 } catch (saveError) {
@@ -2092,6 +2108,7 @@ class FreeTalkSystem {
         // Commit both speakers together after every message has finished rendering.
         // Skipping or leaving between speakers must not retain half a turn's rewards.
         this._assertRequestContext(requestContext);
+        const commitTurn = () => {
         let positiveBudget = 3;
         for (const conversation of rendered) {
             const affinityResult = this._applyGroupAffinity(
@@ -2116,6 +2133,14 @@ class FreeTalkSystem {
             this.galleryManager.incrementFreeTalkCount(conversation.speakerId);
             conversation.affinityResult = affinityResult;
         }
+            const last = rendered.at(-1);
+            this._commitFreeTalkCheckpoint({ content: last.text, speakerId: last.speakerId, speakerName: last.speakerName, segments: last.segments });
+        };
+        const turnResult = this.stateManager.commitProgressEvent
+            ? await this.stateManager.commitProgressEvent(`talk:${requestContext.sceneId}:${requestContext.freeTalkTurnsBefore}`, commitTurn,
+                { checkpoint: () => this.stateManager.freeTalkCheckpoint })
+            : { applied: true, value: commitTurn() };
+        if (!turnResult.applied) throw this._makeStaleTurnError('This group turn was already committed');
         this.uiManager.showNextIndicator?.(false);
         this._groupMessagesRemaining = 0;
         return rendered;
@@ -2935,7 +2960,7 @@ class FreeTalkSystem {
             change,
             latestUserText,
             this._getSceneDialoguePolicy(scene).affinity,
-            { nonRomance: charKey === 'Haeun' }
+            { nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true }
         );
         if (requestedChange === 0) {
             return { change: 0, value: previousValue, requestedChange: 0 };
@@ -3029,36 +3054,15 @@ class FreeTalkSystem {
     }
 
     /**
-     * 스탯(호감도) 변화 태그 처리
-     *
-     * ▶ AI 응답에 "[STATS: affinity +10]" 같은 태그가 있으면
-     *   실제로 호감도를 변경하고 팝업 애니메이션 표시
+     * 화면에 남은 구형 호감도 태그 제거
+     * 점수 반영은 검증된 응답을 저장하는 단계에서만 처리
      *
      * @param {string} reply - AI 응답 텍스트
      * @param {Object} scene - 현재 씬 데이터
      * @returns {string} 태그가 제거된 텍스트
      */
     processStatsTags(reply, scene) {
-        const statsRegex = /\[STATS:\s*affinity\s*([+-]?\d+)\]/gi;
-        if (scene.affinityLocked === true) return reply.replace(statsRegex, "").trim();
-        let statMatch;
-
-        // 모든 스탯 태그 찾아서 처리
-        while ((statMatch = statsRegex.exec(reply)) !== null) {
-            const affinityChange = parseInt(statMatch[1]);
-            const charKey = this.charNameMap[scene.name] || scene.name;
-
-            // 캐릭터 호감도 변경
-            if (this.stateManager.stats[charKey]) {
-                const newValue = this.stateManager.changeAffinity(charKey, affinityChange);
-                this.uiManager.showAffinityChange(affinityChange, charKey);
-                this.galleryManager.updateMaxAffinity(charKey, newValue);
-                this.galleryManager.checkAffinityUnlock(charKey, newValue);
-            }
-        }
-
-        // 태그 제거 후 반환
-        return reply.replace(statsRegex, "").trim();
+        return String(reply || '').replace(/\[STATS:\s*affinity\s*[+-]?\d+\]/gi, '').trim();
     }
 
     /**
@@ -3075,8 +3079,14 @@ class FreeTalkSystem {
         const endingEpoch = this._freeTalkEpoch;
 
         // 이 프리토킹을 완료했다는 플래그 설정
+        this.freeTalkTurns = this.currentMaxTurns;
         this.stateManager.setFlag(`messaged_${endingSceneId}`);
         this._commitFreeTalkCheckpoint();
+        const persistClose = () => { window.saveGameState?.(); };
+        if (this.stateManager.commitProgressEvent) {
+            void this.stateManager.commitProgressEvent(`close:${endingSceneId}`, () => {},
+                { checkpoint: () => this.stateManager.freeTalkCheckpoint }).then(persistClose).catch(() => {});
+        } else persistClose();
 
         setTimeout(() => {
             if (this._freeTalkEpoch !== endingEpoch || this.currentSceneId !== endingSceneId) return;

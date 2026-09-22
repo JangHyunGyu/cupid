@@ -615,5 +615,81 @@
     "after5_confess_react_yuna_neg": {
         "name": "Yuna",
         "text": "*Só vira a página.* Isso eu não aceito."
+    },
+    "day5_haeun_route_choice": {
+        "name": "Haeun",
+        "text": "Se você me escolher, as coisas com essa pessoa não vão continuar como antes. *Haeun dobra o papel nas mãos.* Pense mais uma vez antes de responder.",
+        "choices": [
+            "Escolher Haeun em vez da relação anterior",
+            "Voltar para a pessoa de quem gostava antes"
+        ]
+    },
+    "day5_haeun_private_1": {
+        "name": "Haeun",
+        "text": "Então converse comigo hoje. Quero saber o que você vê em mim. Ainda não aceitei namorar você.",
+        "context": "Conversa particular com Haeun. Lembre apenas de falas reais anteriores. Preserve o jeito educado e o tratamento de um colega mais velho. Não estabeleça romance antes da escolha da rota; mesmo depois ela ainda não aceitou namorar. Responda conforme a conversa e a afinidade atuais.",
+        "personality": "Conversa particular com Haeun. Lembre apenas de falas reais anteriores. Preserve o jeito educado e o tratamento de um colega mais velho. Não estabeleça romance antes da escolha da rota; mesmo depois ela ainda não aceitou namorar. Responda conforme a conversa e a afinidade atuais."
+    },
+    "day5_haeun_walk": {
+        "name": "Haeun",
+        "text": "*Depois da arrumação, vocês caminham até o parque. Haeun deixa a bolsa em uma ponta do banco.* Sente aqui. Quero continuar nossa conversa."
+    },
+    "day5_haeun_private_2": {
+        "name": "Haeun",
+        "text": "Queria que a gente pudesse conversar assim na próxima vez também. Que tipo de relação você quer comigo?",
+        "context": "Conversa particular com Haeun. Lembre apenas de falas reais anteriores. Preserve o jeito educado e o tratamento de um colega mais velho. Não estabeleça romance antes da escolha da rota; mesmo depois ela ainda não aceitou namorar. Responda conforme a conversa e a afinidade atuais.",
+        "personality": "Conversa particular com Haeun. Lembre apenas de falas reais anteriores. Preserve o jeito educado e o tratamento de um colega mais velho. Não estabeleça romance antes da escolha da rota; mesmo depois ela ainda não aceitou namorar. Responda conforme a conversa e a afinidade atuais."
+    },
+    "day5_haeun_fallback": {
+        "name": "Haeun",
+        "text": "Gostei de conversar hoje, mas ainda não estou pronta para namorar você. *Haeun pega a bolsa.* Não deixe alguém esperando por minha causa."
+    },
+    "day5_ending_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun se senta ao seu lado.* Eu também gosto de você. Vamos namorar. Amanhã posso chamar você sem fingir que preciso de ajuda com o trabalho?"
+    },
+    "day5_ending_haeun_epilogue": {
+        "name": "Haeun",
+        "text": "*Haeun também concluiu a escola e já é adulta. Quando você entra no café, ela tira a bolsa da cadeira à frente.* Hoje cheguei primeiro. Esperei para pedirmos juntos. O que você quer beber?"
+    },
+    "day5_haeun_offer_seoyeon": {
+        "name": "Haeun",
+        "text": "Você não ia encontrar Seoyeon? O que quer dizer quando fala que prefere ficar comigo?"
+    },
+    "day5_haeun_leave_seoyeon": {
+        "name": "{name}",
+        "text": "*Você avisa Seoyeon que quer passar o dia com Haeun. Chega uma resposta curta. Você guarda o celular sem mostrá-la a Haeun.*"
+    },
+    "day5_haeun_offer_yuna": {
+        "name": "Haeun",
+        "text": "Você não ia encontrar Yuna? O que quer dizer quando fala que prefere ficar comigo?"
+    },
+    "day5_haeun_leave_yuna": {
+        "name": "{name}",
+        "text": "*Você avisa Yuna que quer passar o dia com Haeun. Chega uma resposta curta. Você guarda o celular sem mostrá-la a Haeun.*"
+    },
+    "day5_haeun_offer_dain": {
+        "name": "Haeun",
+        "text": "Você não ia encontrar Dain? O que quer dizer quando fala que prefere ficar comigo?"
+    },
+    "day5_haeun_leave_dain": {
+        "name": "{name}",
+        "text": "*Você avisa Dain que quer passar o dia com Haeun. Chega uma resposta curta. Você guarda o celular sem mostrá-la a Haeun.*"
+    },
+    "day5_haeun_offer_teacher": {
+        "name": "Haeun",
+        "text": "Você não ia encontrar sua professora? O que quer dizer quando fala que prefere ficar comigo?"
+    },
+    "day5_haeun_leave_teacher": {
+        "name": "{name}",
+        "text": "*Você avisa sua professora que quer passar o dia com Haeun. Chega uma resposta curta. Você guarda o celular sem mostrá-la a Haeun.*"
+    },
+    "day5_haeun_offer_nurse": {
+        "name": "Haeun",
+        "text": "Você não ia encontrar a enfermeira escolar? O que quer dizer quando fala que prefere ficar comigo?"
+    },
+    "day5_haeun_leave_nurse": {
+        "name": "{name}",
+        "text": "*Você avisa a enfermeira escolar que quer passar o dia com Haeun. Chega uma resposta curta. Você guarda o celular sem mostrá-la a Haeun.*"
     }
 }

@@ -17244,7 +17244,7 @@
 
 ### `day4_haeun_trust_check`
 - 호감분기: Haeun
-  - [0+] → `morning4_end`
+  - [0+] → `day4_haeun_personal_gate`
   - [기본] → `day4_haeun_approach`
 
 ---
@@ -17613,10 +17613,30 @@
 ### `day4_haeun_finish`
 - 배경: `street.png`
 - 플래그: `day4_haeun_event_done`
-- 다음: `morning4_end`
+- 다음: `day4_haeun_personal_gate`
 
 - 캐릭터: `없음`
 **{name}**: *대화를 마치고 교문에서 물러난다. 횡단보도 신호가 바뀌자 집 쪽으로 발을 옮긴다.*
+
+---
+
+### `day4_haeun_personal_gate`
+- 분기:
+  - [`messaged_day4_haeun_personal`] → `morning4_end`
+  - [`messaged_haeun_freetalk`] → `day4_haeun_personal`
+  - [기본] → `morning4_end`
+
+---
+
+### `day4_haeun_personal`
+- 배경: `school.png`
+- 타입: `free_talk`
+- 다음: `morning4_end`
+- 컨텍스트: "하은과 단둘이 대화한다. 이전 대화에서 실제로 나온 말만 기억한다. 존댓말과 선배 호칭을 유지한다. 선택 전에는 연애를 확정하지 않는다. 하은을 선택한 뒤에도 사귀기로 합의한 상태는 아니며 현재 대화와 호감도에 따라 마음을 판단한다."
+- 성격: "하은과 단둘이 대화한다. 이전 대화에서 실제로 나온 말만 기억한다. 존댓말과 선배 호칭을 유지한다. 선택 전에는 연애를 확정하지 않는다. 하은을 선택한 뒤에도 사귀기로 합의한 상태는 아니며 현재 대화와 호감도에 따라 마음을 판단한다."
+
+- 캐릭터: `haeun_normal.png`
+**하은**: 선배, 가기 전에 잠깐만요. 어제 얘기하고 나서 저도 생각한 게 있어서요. *하은이 교문 옆으로 비켜 선다.* 오늘은 제 얘기도 좀 해도 돼요?
 
 ---
 
@@ -22655,6 +22675,29 @@
 
 ---
 
+### `forced_violation_day4_after_haeun`
+- 선택지:
+  1. "잘못을 인정하고 거리를 둔다." → `forced_violation_day4_haeun_apologize`
+  2. "오해였다고 둘러댄다." → `forced_violation_day4_haeun_excuse`
+
+**하은**: *하은이 한 걸음 물러서며 학생회 팔찌를 움켜쥔다.* 가까이 오지 마세요. 지금 선생님 부를 거예요.
+
+---
+
+### `forced_violation_day4_haeun_apologize`
+- 다음: `forced_violation_day4_resume`
+
+**하은**: *하은은 대답하지 않은 채 교무실 쪽으로 물러난다. 주인공이 따라오지 않는지 끝까지 확인한다.*
+
+---
+
+### `forced_violation_day4_haeun_excuse`
+- 다음: `forced_violation_day4_resume`
+
+**하은**: 오해 아니에요. 따라오지 마세요. *하은은 거리를 둔 채 교무실 문을 연다.*
+
+---
+
 ### `forced_violation_day4_resume`
 
 ---
@@ -24825,10 +24868,22 @@
 ### `day5_haeun_finish`
 - 배경: `school_hallway.png`
 - 플래그: `day5_haeun_event_done`
-- 다음: `day5_haeun_resume`
+- 다음: `day5_haeun_personal`
 
 - 캐릭터: `없음`
 **{name}**: *방송실 문이 열리고 담당 학생이 상자를 받아 간다. 하은은 팔찌 고리를 잠근다. 복도 끝에서는 점심 행사 안내 방송이 이어진다.*
+
+---
+
+### `day5_haeun_personal`
+- 배경: `school_hallway.png`
+- 타입: `free_talk`
+- 다음: `day5_haeun_resume`
+- 컨텍스트: "하은과 단둘이 대화한다. 이전 대화에서 실제로 나온 말만 기억한다. 존댓말과 선배 호칭을 유지한다. 선택 전에는 연애를 확정하지 않는다. 하은을 선택한 뒤에도 사귀기로 합의한 상태는 아니며 현재 대화와 호감도에 따라 마음을 판단한다."
+- 성격: "하은과 단둘이 대화한다. 이전 대화에서 실제로 나온 말만 기억한다. 존댓말과 선배 호칭을 유지한다. 선택 전에는 연애를 확정하지 않는다. 하은을 선택한 뒤에도 사귀기로 합의한 상태는 아니며 현재 대화와 호감도에 따라 마음을 판단한다."
+
+- 캐릭터: `haeun_normal.png`
+**하은**: *하은이 방송실 문을 닫고 옆에 선다.* 아까는 같이 얘기하느라 못 물어봤어요. 선배는 오늘 누구랑 있고 싶었어요?
 
 ---
 
@@ -26174,6 +26229,204 @@
 ## 5일차 — 방과후 `day5_3_afterschool`
 
 ### `after5_start`
+- 다음: `day5_haeun_route_gate`
+
+<!-- i18n -->
+
+---
+
+### `day5_haeun_route_gate`
+- 분기:
+  - [`day5_haeun_route_offered`] → `after5_original_start`
+  - [`messaged_day5_haeun_personal`] → `day5_haeun_route_affinity`
+  - [기본] → `after5_original_start`
+
+---
+
+### `day5_haeun_route_affinity`
+- 호감분기: Haeun
+  - [45+] → `day5_haeun_route_rival`
+  - [기본] → `after5_original_start`
+
+---
+
+### `day5_haeun_route_rival`
+- 실시간 라이벌 분기:
+  - [`Seoyeon`] → `day5_haeun_offer_seoyeon`
+  - [`Yuna`] → `day5_haeun_offer_yuna`
+  - [`Dain`] → `day5_haeun_offer_dain`
+  - [`Teacher`] → `day5_haeun_offer_teacher`
+  - [`Nurse`] → `day5_haeun_offer_nurse`
+
+---
+
+### `day5_haeun_offer_seoyeon`
+- 배경: `school_hallway.png`
+- 다음: `day5_haeun_route_choice`
+
+- 캐릭터: `haeun_worried.png`
+**하은**: 선배, 서연 쪽으로 가려던 거 아니에요? 저랑 더 있고 싶다는 건 어떤 뜻이에요?
+
+---
+
+### `day5_haeun_offer_yuna`
+- 배경: `school_hallway.png`
+- 다음: `day5_haeun_route_choice`
+
+- 캐릭터: `haeun_worried.png`
+**하은**: 선배, 유나 쪽으로 가려던 거 아니에요? 저랑 더 있고 싶다는 건 어떤 뜻이에요?
+
+---
+
+### `day5_haeun_offer_dain`
+- 배경: `school_hallway.png`
+- 다음: `day5_haeun_route_choice`
+
+- 캐릭터: `haeun_worried.png`
+**하은**: 선배, 다인 쪽으로 가려던 거 아니에요? 저랑 더 있고 싶다는 건 어떤 뜻이에요?
+
+---
+
+### `day5_haeun_offer_teacher`
+- 배경: `school_hallway.png`
+- 다음: `day5_haeun_route_choice`
+
+- 캐릭터: `haeun_worried.png`
+**하은**: 선배, 담임선생님 쪽으로 가려던 거 아니에요? 저랑 더 있고 싶다는 건 어떤 뜻이에요?
+
+---
+
+### `day5_haeun_offer_nurse`
+- 배경: `school_hallway.png`
+- 다음: `day5_haeun_route_choice`
+
+- 캐릭터: `haeun_worried.png`
+**하은**: 선배, 보건선생님 쪽으로 가려던 거 아니에요? 저랑 더 있고 싶다는 건 어떤 뜻이에요?
+
+---
+
+### `day5_haeun_route_choice`
+- 배경: `school_hallway.png`
+- 플래그: `day5_haeun_route_offered`
+- 선택지:
+  1. "기존 관계 대신 하은과 시간을 보낸다" → `day5_haeun_choose_rival` | 플래그: `haeun_route_selected`
+  2. "원래 마음을 두었던 사람에게 돌아간다" → `after5_original_start`
+
+- 캐릭터: `haeun_worried.png`
+**하은**: 저한테 오면, 그분하고는 전처럼 지내기 어렵잖아요. *하은이 들고 있던 종이를 접는다.* 지금 대답하기 전에 한 번만 더 생각해 주세요.
+
+---
+
+### `day5_haeun_choose_rival`
+- 실시간 라이벌 분기:
+  - [`Seoyeon`] → `day5_haeun_leave_seoyeon`
+  - [`Yuna`] → `day5_haeun_leave_yuna`
+  - [`Dain`] → `day5_haeun_leave_dain`
+  - [`Teacher`] → `day5_haeun_leave_teacher`
+  - [`Nurse`] → `day5_haeun_leave_nurse`
+
+---
+
+### `day5_haeun_leave_seoyeon`
+- 배경: `school_hallway.png`
+- 스탯: Seoyeon -10
+- 다음: `day5_haeun_private_1`
+
+- 캐릭터: `haeun_firm.png`
+**{name}**: *서연에게 오늘은 하은과 있고 싶다고 전한다. 잠시 뒤 짧은 답이 온다. 하은에게 휴대폰을 보여 주지 않고 주머니에 넣는다.*
+
+---
+
+### `day5_haeun_leave_yuna`
+- 배경: `school_hallway.png`
+- 스탯: Yuna -10
+- 다음: `day5_haeun_private_1`
+
+- 캐릭터: `haeun_firm.png`
+**{name}**: *유나에게 오늘은 하은과 있고 싶다고 전한다. 잠시 뒤 짧은 답이 온다. 하은에게 휴대폰을 보여 주지 않고 주머니에 넣는다.*
+
+---
+
+### `day5_haeun_leave_dain`
+- 배경: `school_hallway.png`
+- 스탯: Dain -10
+- 다음: `day5_haeun_private_1`
+
+- 캐릭터: `haeun_firm.png`
+**{name}**: *다인에게 오늘은 하은과 있고 싶다고 전한다. 잠시 뒤 짧은 답이 온다. 하은에게 휴대폰을 보여 주지 않고 주머니에 넣는다.*
+
+---
+
+### `day5_haeun_leave_teacher`
+- 배경: `school_hallway.png`
+- 스탯: Teacher -10
+- 다음: `day5_haeun_private_1`
+
+- 캐릭터: `haeun_firm.png`
+**{name}**: *담임선생님에게 오늘은 하은과 있고 싶다고 전한다. 잠시 뒤 짧은 답이 온다. 하은에게 휴대폰을 보여 주지 않고 주머니에 넣는다.*
+
+---
+
+### `day5_haeun_leave_nurse`
+- 배경: `school_hallway.png`
+- 스탯: Nurse -10
+- 다음: `day5_haeun_private_1`
+
+- 캐릭터: `haeun_firm.png`
+**{name}**: *보건선생님에게 오늘은 하은과 있고 싶다고 전한다. 잠시 뒤 짧은 답이 온다. 하은에게 휴대폰을 보여 주지 않고 주머니에 넣는다.*
+
+---
+
+### `day5_haeun_private_1`
+- 배경: `school_hallway.png`
+- 타입: `free_talk`
+- 다음: `day5_haeun_walk`
+- 컨텍스트: "하은과 단둘이 대화한다. 이전 대화에서 실제로 나온 말만 기억한다. 존댓말과 선배 호칭을 유지한다. 선택 전에는 연애를 확정하지 않는다. 하은을 선택한 뒤에도 사귀기로 합의한 상태는 아니며 현재 대화와 호감도에 따라 마음을 판단한다."
+- 성격: "하은과 단둘이 대화한다. 이전 대화에서 실제로 나온 말만 기억한다. 존댓말과 선배 호칭을 유지한다. 선택 전에는 연애를 확정하지 않는다. 하은을 선택한 뒤에도 사귀기로 합의한 상태는 아니며 현재 대화와 호감도에 따라 마음을 판단한다."
+
+- 캐릭터: `haeun_normal.png`
+**하은**: 그럼 오늘은 저랑 얘기해요. 선배가 저를 어떻게 보고 있는지 듣고 싶어요. 아직 사귀겠다고 답한 건 아니에요.
+
+---
+
+### `day5_haeun_walk`
+- 배경: `park.png`
+- 다음: `day5_haeun_private_2`
+
+- 캐릭터: `haeun_normal.png`
+**하은**: *정리를 마친 뒤 하은과 공원까지 걷는다. 하은이 벤치 한쪽에 가방을 내려놓는다.* 여기 앉아요. 아까 하던 얘기, 더 듣고 싶어요.
+
+---
+
+### `day5_haeun_private_2`
+- 배경: `park.png`
+- 타입: `free_talk`
+- 다음: `day5_haeun_romance_check`
+- 컨텍스트: "하은과 단둘이 대화한다. 이전 대화에서 실제로 나온 말만 기억한다. 존댓말과 선배 호칭을 유지한다. 선택 전에는 연애를 확정하지 않는다. 하은을 선택한 뒤에도 사귀기로 합의한 상태는 아니며 현재 대화와 호감도에 따라 마음을 판단한다."
+- 성격: "하은과 단둘이 대화한다. 이전 대화에서 실제로 나온 말만 기억한다. 존댓말과 선배 호칭을 유지한다. 선택 전에는 연애를 확정하지 않는다. 하은을 선택한 뒤에도 사귀기로 합의한 상태는 아니며 현재 대화와 호감도에 따라 마음을 판단한다."
+
+- 캐릭터: `haeun_normal.png`
+**하은**: 다음에 만날 때도 이렇게 얘기할 수 있으면 좋겠어요. 선배는 어떤 사이가 되고 싶어요?
+
+---
+
+### `day5_haeun_romance_check`
+- 호감분기: Haeun
+  - [100+] → `day5_ending_haeun`
+  - [기본] → `day5_haeun_fallback`
+
+---
+
+### `day5_haeun_fallback`
+- 배경: `park.png`
+- 다음: `after5_original_start`
+
+- 캐릭터: `haeun_firm.png`
+**하은**: 오늘 얘기는 잘 들었어요. 그런데 사귀자는 말에는 아직 대답 못 하겠어요. *하은이 가방을 챙긴다.* 저 때문에 기다리고 있는 사람을 그냥 두지는 마세요.
+
+---
+
+### `after5_original_start`
 - 배경: `school_hallway.png`
 - BGM: `sunset1.mp3`
 - 분기:
@@ -26181,8 +26434,6 @@
   - [기본] → `after5_normal_start`
 
 - 캐릭터: `없음`
-
-<!-- i18n -->
 
 ---
 
@@ -26500,6 +26751,25 @@
 
 - 캐릭터: `seyoun_sad.png`
 **{name}**: *복도에 혼자 남았다. 서연의 발소리가 멀어지고 위층에서 옥상 문 잠기는 소리가 난다.*
+
+---
+
+### `day5_ending_haeun`
+- 배경: `park.png`
+- 플래그: `route_haeun`, `isDating_Haeun`, `ending_perfect`
+- 다음: `day5_ending_haeun_epilogue`
+
+- 캐릭터: `haeun_relieved.png`
+**하은**: *하은이 내 옆으로 자리를 옮긴다.* 저도 선배 좋아해요. 우리 사귀어요. 내일은 일 도와달라는 핑계 없이 불러도 되죠?
+
+---
+
+### `day5_ending_haeun_epilogue`
+- 배경: `cafe.png`
+- 다음: `day5_credits`
+
+- 캐릭터: `haeun_relieved.png`
+**하은**: *하은도 졸업하고 성인이 된 뒤. 카페 문을 열자 하은이 맞은편 의자에서 가방을 치운다.* 선배, 오늘은 제가 먼저 왔어요. 주문은 같이 하려고 기다렸고요. 뭐 마실래요?
 
 ---
 
@@ -32263,6 +32533,29 @@
 - 다음: `forced_violation_day5_resume`
 
 **보건선생님**: *보건선생님의 목소리가 더 낮아진다.* 오해라고 부르면 달라질 것 같아? 싫다는 의사를 무시한 건 사실이야.
+
+---
+
+### `forced_violation_day5_after_haeun`
+- 선택지:
+  1. "잘못을 인정하고 거리를 둔다." → `forced_violation_day5_haeun_apologize`
+  2. "오해였다고 둘러댄다." → `forced_violation_day5_haeun_excuse`
+
+**하은**: *하은이 한 걸음 물러서며 학생회 팔찌를 움켜쥔다.* 가까이 오지 마세요. 지금 선생님 부를 거예요.
+
+---
+
+### `forced_violation_day5_haeun_apologize`
+- 다음: `forced_violation_day5_resume`
+
+**하은**: *하은은 대답하지 않은 채 교무실 쪽으로 물러난다. 주인공이 따라오지 않는지 끝까지 확인한다.*
+
+---
+
+### `forced_violation_day5_haeun_excuse`
+- 다음: `forced_violation_day5_resume`
+
+**하은**: 오해 아니에요. 따라오지 마세요. *하은은 거리를 둔 채 교무실 문을 연다.*
 
 ---
 

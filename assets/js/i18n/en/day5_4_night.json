@@ -1927,5 +1927,21 @@
     "good_epilogue_1_yuna_first": {
         "name": "{name}",
         "text": "*Yuna offers a new note: “I chose a book I want to read with you. Let us borrow it tomorrow. — Yuna”*"
+    },
+    "forced_violation_day5_after_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun steps back and grips her student-council bracelet.* Don't come any closer. I'm calling a teacher now.",
+        "choices": [
+            "Admit the wrongdoing and keep my distance.",
+            "Claim it was a misunderstanding."
+        ]
+    },
+    "forced_violation_day5_haeun_apologize": {
+        "name": "Haeun",
+        "text": "*Haeun backs toward the faculty office without answering. She keeps watching until she is sure you aren't following.*"
+    },
+    "forced_violation_day5_haeun_excuse": {
+        "name": "Haeun",
+        "text": "It wasn't a misunderstanding. Don't follow me. *Keeping her distance, Haeun opens the faculty-office door.*"
     }
 }

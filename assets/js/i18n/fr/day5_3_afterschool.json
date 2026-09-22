@@ -615,5 +615,81 @@
     "after5_confess_react_yuna_neg": {
         "name": "Yuna",
         "text": "*Elle tourne seulement une page.* Je ne prends pas ça."
+    },
+    "day5_haeun_route_choice": {
+        "name": "Haeun",
+        "text": "Si tu me choisis, les choses avec cette personne ne pourront pas rester comme avant. *Haeun plie la feuille qu’elle tient.* Réfléchis encore avant de répondre.",
+        "choices": [
+            "Choisir Haeun plutôt que la relation précédente",
+            "Retourner vers la personne qui comptait jusque-là"
+        ]
+    },
+    "day5_haeun_private_1": {
+        "name": "Haeun",
+        "text": "Alors, parle avec moi aujourd’hui. J’aimerais savoir ce que tu vois en moi. Je n’ai pas encore accepté qu’on sorte ensemble.",
+        "context": "Conversation privée avec Haeun. Ne rappeler que des échanges réels. Garder sa voix polie et sa façon de s’adresser à un élève plus âgé. Avant le choix de sa route, ne pas établir de romance ; même après, elle n’a pas encore accepté de sortir ensemble. Suivre la conversation et l’affinité actuelles.",
+        "personality": "Conversation privée avec Haeun. Ne rappeler que des échanges réels. Garder sa voix polie et sa façon de s’adresser à un élève plus âgé. Avant le choix de sa route, ne pas établir de romance ; même après, elle n’a pas encore accepté de sortir ensemble. Suivre la conversation et l’affinité actuelles."
+    },
+    "day5_haeun_walk": {
+        "name": "Haeun",
+        "text": "*Une fois le rangement terminé, vous marchez jusqu’au parc. Haeun pose son sac au bout d’un banc.* Assieds-toi ici. J’aimerais continuer notre conversation."
+    },
+    "day5_haeun_private_2": {
+        "name": "Haeun",
+        "text": "J’aimerais qu’on puisse parler comme ça la prochaine fois aussi. Quelle relation voudrais-tu avec moi ?",
+        "context": "Conversation privée avec Haeun. Ne rappeler que des échanges réels. Garder sa voix polie et sa façon de s’adresser à un élève plus âgé. Avant le choix de sa route, ne pas établir de romance ; même après, elle n’a pas encore accepté de sortir ensemble. Suivre la conversation et l’affinité actuelles.",
+        "personality": "Conversation privée avec Haeun. Ne rappeler que des échanges réels. Garder sa voix polie et sa façon de s’adresser à un élève plus âgé. Avant le choix de sa route, ne pas établir de romance ; même après, elle n’a pas encore accepté de sortir ensemble. Suivre la conversation et l’affinité actuelles."
+    },
+    "day5_haeun_fallback": {
+        "name": "Haeun",
+        "text": "Je suis contente qu’on ait parlé aujourd’hui, mais je ne suis pas prête à sortir avec toi. *Haeun reprend son sac.* Ne laisse pas quelqu’un attendre à cause de moi."
+    },
+    "day5_ending_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun vient s’asseoir à côté de toi.* Tu me plais aussi. Sortons ensemble. Demain, je pourrai te proposer de te voir sans prétexter du travail ?"
+    },
+    "day5_ending_haeun_epilogue": {
+        "name": "Haeun",
+        "text": "*Haeun a elle aussi terminé ses études secondaires et est devenue adulte. À ton arrivée au café, elle retire son sac de la chaise d’en face.* Aujourd’hui, je suis arrivée la première. Je t’ai attendu pour commander ensemble. Tu veux boire quoi ?"
+    },
+    "day5_haeun_offer_seoyeon": {
+        "name": "Haeun",
+        "text": "Tu n’allais pas retrouver Seoyeon ? Que veux-tu dire quand tu dis vouloir rester avec moi ?"
+    },
+    "day5_haeun_leave_seoyeon": {
+        "name": "{name}",
+        "text": "*Tu préviens Seoyeon que tu souhaites passer la journée avec Haeun. Une brève réponse arrive. Tu ranges ton téléphone sans la montrer à Haeun.*"
+    },
+    "day5_haeun_offer_yuna": {
+        "name": "Haeun",
+        "text": "Tu n’allais pas retrouver Yuna ? Que veux-tu dire quand tu dis vouloir rester avec moi ?"
+    },
+    "day5_haeun_leave_yuna": {
+        "name": "{name}",
+        "text": "*Tu préviens Yuna que tu souhaites passer la journée avec Haeun. Une brève réponse arrive. Tu ranges ton téléphone sans la montrer à Haeun.*"
+    },
+    "day5_haeun_offer_dain": {
+        "name": "Haeun",
+        "text": "Tu n’allais pas retrouver Dain ? Que veux-tu dire quand tu dis vouloir rester avec moi ?"
+    },
+    "day5_haeun_leave_dain": {
+        "name": "{name}",
+        "text": "*Tu préviens Dain que tu souhaites passer la journée avec Haeun. Une brève réponse arrive. Tu ranges ton téléphone sans la montrer à Haeun.*"
+    },
+    "day5_haeun_offer_teacher": {
+        "name": "Haeun",
+        "text": "Tu n’allais pas retrouver ta professeure ? Que veux-tu dire quand tu dis vouloir rester avec moi ?"
+    },
+    "day5_haeun_leave_teacher": {
+        "name": "{name}",
+        "text": "*Tu préviens ta professeure que tu souhaites passer la journée avec Haeun. Une brève réponse arrive. Tu ranges ton téléphone sans la montrer à Haeun.*"
+    },
+    "day5_haeun_offer_nurse": {
+        "name": "Haeun",
+        "text": "Tu n’allais pas retrouver l’infirmière scolaire ? Que veux-tu dire quand tu dis vouloir rester avec moi ?"
+    },
+    "day5_haeun_leave_nurse": {
+        "name": "{name}",
+        "text": "*Tu préviens l’infirmière scolaire que tu souhaites passer la journée avec Haeun. Une brève réponse arrive. Tu ranges ton téléphone sans la montrer à Haeun.*"
     }
 }

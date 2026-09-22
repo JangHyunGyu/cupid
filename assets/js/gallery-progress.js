@@ -56,10 +56,14 @@ class GalleryProgress {
         this.data = null;
 
         /**
-         * 관리자 모드 - URL에 ?admin 파라미터가 있으면 모든 해금 우회
+         * 로컬 개발 주소에서만 허용하는 갤러리 미리보기
          * @type {boolean}
          */
-        this.isAdmin = new URLSearchParams(window.location.search).has('admin');
+        Object.defineProperty(this, 'isAdmin', {
+            value: ['localhost', '127.0.0.1', '[::1]'].includes(window.location.hostname)
+                && new URLSearchParams(window.location.search).has('admin'),
+            writable: false
+        });
 
         // 초기 데이터 로드
         this.load();
@@ -643,6 +647,7 @@ class GalleryProgress {
         if (this.isAdmin) return true;
         this.refresh();
         const perfectEnding = this.data.characters?.[charId]?.perfectEndingCleared || false;
+        if (charId === 'haeun') return perfectEnding && this.getAffinity(charId) >= 100;
         const hiddenChars = ['teacher', 'nurse'];
         const affinityThreshold = hiddenChars.includes(charId) ? 80 : 100;
         const bikiniUnlocked = this.getAffinity(charId) >= affinityThreshold && this.getFreeTalkCount(charId) >= 30;

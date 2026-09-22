@@ -1719,6 +1719,7 @@ class GalleryData {
     };
 
     static endingRoutes = [
+        { id: 'perfect_haeun', character: 'haeun', kind: 'perfect' },
         { id: 'perfect_seoyeon', character: 'seyoun', kind: 'perfect' },
         { id: 'perfect_yuna', character: 'yuna', kind: 'perfect' },
         { id: 'perfect_dain', character: 'dain', kind: 'perfect' },
@@ -2019,6 +2020,8 @@ class GalleryData {
             return null;
         }
         const direct = {
+            day5_ending_haeun: 'perfect_haeun',
+            day5_ending_haeun_epilogue: 'perfect_haeun',
             day5_seo_ending_freetalk_perfect: 'perfect_seoyeon',
             day5_yuna_ending_freetalk_perfect: 'perfect_yuna',
             day5_dain_ending_freetalk_perfect: 'perfect_dain',
@@ -2087,4 +2090,153 @@ for (const localizedCharacters of Object.values(GalleryData.characters)) {
 }
 
 // 전역 접근을 위해 window에 노출 (다른 스크립트에서 사용 가능)
+const haeunGalleryProfiles = {
+    "ko": {
+        "id": "haeun",
+        "name": "하은",
+        "title": "대화로 가까워진 후배",
+        "shortDescription": "서연을 걱정하던 후배. 남의 말보다 직접 나눈 대화를 믿고, 불편한 일도 존댓말로 분명히 말한다. 축제 뒤 둘만의 대화를 통해 연인이 된다.",
+        "description": "서연을 걱정하던 후배. 남의 말보다 직접 나눈 대화를 믿고, 불편한 일도 존댓말로 분명히 말한다. 축제 뒤 둘만의 대화를 통해 연인이 된다.",
+        "age": "미공개",
+        "birthday": "미공개",
+        "height": "미공개",
+        "weight": "미공개",
+        "bust": "미공개",
+        "hobby": "미공개",
+        "personality": "서연을 걱정하던 후배. 남의 말보다 직접 나눈 대화를 믿고, 불편한 일도 존댓말로 분명히 말한다. 축제 뒤 둘만의 대화를 통해 연인이 된다.",
+        "expressions": [
+            "normal",
+            "worried",
+            "firm",
+            "relieved"
+        ]
+    },
+    "en": {
+        "id": "haeun",
+        "name": "Haeun",
+        "title": "A bond built through conversation",
+        "shortDescription": "A younger schoolmate who worried about Seoyeon. She trusts direct conversations over rumors and voices discomfort politely but clearly. Private conversations after the festival can lead to a relationship.",
+        "description": "A younger schoolmate who worried about Seoyeon. She trusts direct conversations over rumors and voices discomfort politely but clearly. Private conversations after the festival can lead to a relationship.",
+        "age": "Not specified",
+        "birthday": "Not specified",
+        "height": "Not specified",
+        "weight": "Not specified",
+        "bust": "Not specified",
+        "hobby": "Not specified",
+        "personality": "A younger schoolmate who worried about Seoyeon. She trusts direct conversations over rumors and voices discomfort politely but clearly. Private conversations after the festival can lead to a relationship.",
+        "expressions": [
+            "normal",
+            "worried",
+            "firm",
+            "relieved"
+        ]
+    },
+    "ja": {
+        "id": "haeun",
+        "name": "ハウン",
+        "title": "会話を重ねた後輩",
+        "shortDescription": "ソヨンを心配していた後輩。噂より直接の会話を信じ、不快なことも丁寧にはっきり伝える。文化祭後、二人の会話を重ねて恋人になる。",
+        "description": "ソヨンを心配していた後輩。噂より直接の会話を信じ、不快なことも丁寧にはっきり伝える。文化祭後、二人の会話を重ねて恋人になる。",
+        "age": "非公開",
+        "birthday": "非公開",
+        "height": "非公開",
+        "weight": "非公開",
+        "bust": "非公開",
+        "hobby": "非公開",
+        "personality": "ソヨンを心配していた後輩。噂より直接の会話を信じ、不快なことも丁寧にはっきり伝える。文化祭後、二人の会話を重ねて恋人になる。",
+        "expressions": [
+            "normal",
+            "worried",
+            "firm",
+            "relieved"
+        ]
+    },
+    "es": {
+        "id": "haeun",
+        "name": "Haeun",
+        "title": "Un vínculo entre conversaciones",
+        "shortDescription": "Una compañera de un curso menor que se preocupaba por Seoyeon. Confía en las conversaciones directas y expresa su incomodidad con cortesía y claridad. Las charlas a solas tras el festival pueden llevar a una relación.",
+        "description": "Una compañera de un curso menor que se preocupaba por Seoyeon. Confía en las conversaciones directas y expresa su incomodidad con cortesía y claridad. Las charlas a solas tras el festival pueden llevar a una relación.",
+        "age": "Sin especificar",
+        "birthday": "Sin especificar",
+        "height": "Sin especificar",
+        "weight": "Sin especificar",
+        "bust": "Sin especificar",
+        "hobby": "Sin especificar",
+        "personality": "Una compañera de un curso menor que se preocupaba por Seoyeon. Confía en las conversaciones directas y expresa su incomodidad con cortesía y claridad. Las charlas a solas tras el festival pueden llevar a una relación.",
+        "expressions": [
+            "normal",
+            "worried",
+            "firm",
+            "relieved"
+        ]
+    },
+    "fr": {
+        "id": "haeun",
+        "name": "Haeun",
+        "title": "Un lien né des conversations",
+        "shortDescription": "Une élève plus jeune qui s’inquiétait pour Seoyeon. Elle se fie aux échanges directs et dit clairement ce qui la gêne, sans perdre sa politesse. Après le festival, les conversations à deux peuvent mener à une relation.",
+        "description": "Une élève plus jeune qui s’inquiétait pour Seoyeon. Elle se fie aux échanges directs et dit clairement ce qui la gêne, sans perdre sa politesse. Après le festival, les conversations à deux peuvent mener à une relation.",
+        "age": "Non précisé",
+        "birthday": "Non précisé",
+        "height": "Non précisé",
+        "weight": "Non précisé",
+        "bust": "Non précisé",
+        "hobby": "Non précisé",
+        "personality": "Une élève plus jeune qui s’inquiétait pour Seoyeon. Elle se fie aux échanges directs et dit clairement ce qui la gêne, sans perdre sa politesse. Après le festival, les conversations à deux peuvent mener à une relation.",
+        "expressions": [
+            "normal",
+            "worried",
+            "firm",
+            "relieved"
+        ]
+    },
+    "de": {
+        "id": "haeun",
+        "name": "Haeun",
+        "title": "Durch Gespräche vertraut",
+        "shortDescription": "Eine jüngere Mitschülerin, die sich um Seoyeon sorgte. Sie vertraut direkten Gesprächen und spricht höflich, aber deutlich an, was sie stört. Gespräche zu zweit nach dem Fest können zu einer Beziehung führen.",
+        "description": "Eine jüngere Mitschülerin, die sich um Seoyeon sorgte. Sie vertraut direkten Gesprächen und spricht höflich, aber deutlich an, was sie stört. Gespräche zu zweit nach dem Fest können zu einer Beziehung führen.",
+        "age": "Nicht angegeben",
+        "birthday": "Nicht angegeben",
+        "height": "Nicht angegeben",
+        "weight": "Nicht angegeben",
+        "bust": "Nicht angegeben",
+        "hobby": "Nicht angegeben",
+        "personality": "Eine jüngere Mitschülerin, die sich um Seoyeon sorgte. Sie vertraut direkten Gesprächen und spricht höflich, aber deutlich an, was sie stört. Gespräche zu zweit nach dem Fest können zu einer Beziehung führen.",
+        "expressions": [
+            "normal",
+            "worried",
+            "firm",
+            "relieved"
+        ]
+    },
+    "pt": {
+        "id": "haeun",
+        "name": "Haeun",
+        "title": "Um vínculo criado em conversas",
+        "shortDescription": "Uma colega de uma turma mais nova que se preocupava com Seoyeon. Confia em conversas diretas e expressa seu desconforto com educação e clareza. Conversas a sós após o festival podem levar a um namoro.",
+        "description": "Uma colega de uma turma mais nova que se preocupava com Seoyeon. Confia em conversas diretas e expressa seu desconforto com educação e clareza. Conversas a sós após o festival podem levar a um namoro.",
+        "age": "Não informado",
+        "birthday": "Não informado",
+        "height": "Não informado",
+        "weight": "Não informado",
+        "bust": "Não informado",
+        "hobby": "Não informado",
+        "personality": "Uma colega de uma turma mais nova que se preocupava com Seoyeon. Confia em conversas diretas e expressa seu desconforto com educação e clareza. Conversas a sós após o festival podem levar a um namoro.",
+        "expressions": [
+            "normal",
+            "worried",
+            "firm",
+            "relieved"
+        ]
+    }
+};
+for (const [lang, profile] of Object.entries(haeunGalleryProfiles)) {
+    GalleryData.characters[lang].haeun = profile;
+    Object.assign(GalleryData.expressions[lang], {
+        firm: {"ko":"단호함","en":"Firm","ja":"毅然","es":"Firme","fr":"Ferme","de":"Entschlossen","pt":"Firme"}[lang],
+        relieved: {"ko":"안도","en":"Relieved","ja":"安堵","es":"Aliviada","fr":"Soulagée","de":"Erleichtert","pt":"Aliviada"}[lang]
+    });
+}
 window.GalleryData = GalleryData;

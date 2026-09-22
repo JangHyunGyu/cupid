@@ -1428,6 +1428,35 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "day4_haeun_gate"
     }
     };
+    Object.assign(scenes, {
+    "day4_haeun_personal_gate": {
+        "routeBeforeRender": true,
+        "branches": [
+            {
+                "condition": "messaged_day4_haeun_personal",
+                "next": "morning4_end"
+            },
+            {
+                "condition": "messaged_haeun_freetalk",
+                "next": "day4_haeun_personal"
+            },
+            {
+                "next": "morning4_end"
+            }
+        ]
+    },
+    "day4_haeun_personal": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/haeun_normal.png",
+        "next": "morning4_end",
+        "type": "free_talk",
+        "maxTurns": 5,
+        "isRemote": false,
+        "haeunRomance": false
+    }
+});
+    scenes.day4_haeun_trust_check.affinityBranches[0].next = 'day4_haeun_personal_gate';
+    scenes.day4_haeun_finish.next = 'day4_haeun_personal_gate';
     for (const scene of Object.values(scenes)) {
         if (scene && typeof scene === 'object') {
             Object.defineProperty(scene, "__sourceFile", {

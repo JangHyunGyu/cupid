@@ -903,7 +903,8 @@ test('forced sexual violation classification accepts only the scenario contract 
     const mainFreeTalk = read('assets/js/modules/FreeTalkSystem.js');
     assert.match(mainFreeTalk, /setFlag\('forced_sexual_violation'/);
     assert.match(mainFreeTalk, /forcedSexualViolation === 'rape' \|\| forcedSexualViolation === 'molestation'/);
-    assert.match(mainFreeTalk, /const affinityResult = this\.applyAffinity\(parsed\.affinity, scene, finalContent\)/);
+    assert.match(mainFreeTalk, /affinityResult = this\.applyAffinity\(parsed\.affinity, scene, finalContent\)/);
+    assert.match(mainFreeTalk, /commitProgressEvent\(`talk:/);
     assert.match(mainFreeTalk, /if \(this\.freeTalkTurns >= this\.currentMaxTurns\)/);
     assert.doesNotMatch(mainFreeTalk, /violationAffinity/);
     assert.doesNotMatch(mainFreeTalk, /forcedSexualViolation !== 'none' \|\|/);
@@ -1652,7 +1653,8 @@ test('skipping a group chat warns first and lowers both participants by twenty o
             this.stats[id].affinity = affinities[id];
             return affinities[id];
         },
-        setFlag() {}
+        setFlag() {},
+        async commitProgressEvent(key, operation) { return { applied: true, value: operation() }; }
     };
     const ui = {
         async showModal(message) {

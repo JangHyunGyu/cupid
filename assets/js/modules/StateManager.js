@@ -50,7 +50,7 @@ class StateManager {
             Dain: { affinity: 0 },       // 다인 (활기찬 소녀)
             Teacher: { affinity: 0 },    // 담임선생님
             Nurse: { affinity: 0 },      // 보건선생님
-            Haeun: { affinity: 0 }       // 하은 (비연애 조연)
+            Haeun: { affinity: 0 }       // 하은 (대화 중심 히든 루트)
         };
 
         /** 분기별 선택지에서 선택된 캐릭터를 추적 */
@@ -85,6 +85,9 @@ class StateManager {
          */
         this.flags = {};
         this.telemetryRunId = '';
+        this.progressionRunId = '';
+        this.progressionRevision = 0;
+        this.appliedAffinityCorrections = window.CupidAffinityCorrections?.ids() || [];
     }
 
     /**
@@ -115,6 +118,10 @@ class StateManager {
         this.storyFreeTalkGains = {};
         this.flags = {};
         this.telemetryRunId = '';
+        this.progressionRunId = '';
+        this.progressionRevision = 0;
+        this.appliedAffinityCorrections = window.CupidAffinityCorrections?.ids() || [];
+        window.CupidProgressIntegrity?.start(this);
     }
 
     /**
@@ -144,6 +151,10 @@ class StateManager {
      */
     changeAffinity(charKey, amount) {
         if (!this.stats[charKey]) return 0;
+        amount = Number(amount);
+        if (!Number.isFinite(amount)) return this.getAffinity(charKey);
+        amount = Math.trunc(amount);
+        this.stats[charKey].affinity = this.getAffinity(charKey);
 
         // 범위 제한: -100 ~ 100
         let newValue = Math.max(-100, Math.min(100, this.stats[charKey].affinity + amount));
@@ -161,7 +172,14 @@ class StateManager {
     getAffinity(charKey) {
         // ?? 0 사용: 음수 호감도(-50 등)도 올바르게 반환
         // || 0은 falsy 값(-50, 0 등)을 모두 0으로 처리하는 버그 발생
-        return this.stats[charKey]?.affinity ?? 0;
+        const value = Number(this.stats[charKey]?.affinity);
+        return Number.isFinite(value) ? Math.max(-100, Math.min(100, Math.round(value))) : 0;
+    }
+
+    async commitProgressEvent(eventKey, operation, metadata = {}) {
+        const integrity = window.CupidProgressIntegrity;
+        if (!integrity) return { applied: true, value: operation() };
+        return integrity.withLock(() => integrity.commit(this, eventKey, operation, metadata));
     }
 
     getStoryFreeTalkGain(charKey) {
@@ -354,6 +372,8 @@ class StateManager {
     exportState() {
         return {
             telemetryRunId: this.telemetryRunId,
+            progressionRunId: this.progressionRunId,
+            progressionRevision: this.progressionRevision,
             playerName: this.playerName,
             currentDay: this.currentDay,
             affinityRebalanceVersion: this.affinityRebalanceVersion,
@@ -378,12 +398,19 @@ class StateManager {
      * @param {Object} data - exportState()로 생성된 저장 데이터
      */
     importState(data) {
+        window.CupidProgressIntegrity?.restoreState(data);
         window.CupidAffinityCorrections?.correctState(data);
+        this.progressionRunId = String(data.progressionRunId || '');
+        this.progressionRevision = Number(data.progressionRevision) || 0;
+        this.appliedAffinityCorrections = data.appliedAffinityCorrections || [];
         this.telemetryRunId = typeof data.telemetryRunId === 'string' ? data.telemetryRunId : '';
         const savedAffinityRebalanceVersion = Number(data.affinityRebalanceVersion) || 0;
         if (data.playerName) this.playerName = data.playerName;
         if (data.currentDay !== undefined) this.currentDay = data.currentDay;
-        if (data.stats) this.stats = { ...this.stats, ...data.stats };
+        if (data.stats) for (const key of Object.keys(this.stats)) {
+            const value = Number(data.stats[key]?.affinity);
+            if (Number.isFinite(value)) this.stats[key].affinity = Math.max(-100, Math.min(100, Math.round(value)));
+        }
         let affinityRebalanced = false;
         if (savedAffinityRebalanceVersion < StateManager.AFFINITY_REBALANCE_VERSION) {
             for (const charKey of StateManager.ROMANCE_CHARACTER_KEYS) {

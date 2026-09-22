@@ -1225,5 +1225,21 @@
     "wall_yuna_skip": {
         "name": "{name}",
         "text": "*Kein Zettel, keine Nachricht von Yuna. Nur der Bildschirm aus.*"
+    },
+    "forced_violation_day4_after_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun tritt einen Schritt zurück und umklammert ihr Schülerratsarmband.* Komm nicht näher. Ich hole jetzt eine Lehrkraft.",
+        "choices": [
+            "Mein Fehlverhalten eingestehen und Abstand halten.",
+            "Behaupten, es sei ein Missverständnis gewesen."
+        ]
+    },
+    "forced_violation_day4_haeun_apologize": {
+        "name": "Haeun",
+        "text": "*Ohne zu antworten, weicht Haeun zum Lehrerzimmer zurück. Sie achtet bis zuletzt darauf, dass ich ihr nicht folge.*"
+    },
+    "forced_violation_day4_haeun_excuse": {
+        "name": "Haeun",
+        "text": "Das war kein Missverständnis. Folge mir nicht. *Haeun hält Abstand und öffnet die Tür zum Lehrerzimmer.*"
     }
 }

@@ -1927,5 +1927,21 @@
     "good_epilogue_1_yuna_first": {
         "name": "{name}",
         "text": "*Yuna tend un nouveau mot : « J’ai choisi un livre à lire ensemble. Empruntons-le demain. — Yuna »*"
+    },
+    "forced_violation_day5_after_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun recule d'un pas et serre son bracelet du conseil des élèves.* Ne vous approchez pas. Je vais appeler un professeur.",
+        "choices": [
+            "Reconnaître ce que j'ai fait et garder mes distances.",
+            "Prétendre qu'il s'agit d'un malentendu."
+        ]
+    },
+    "forced_violation_day5_haeun_apologize": {
+        "name": "Haeun",
+        "text": "*Sans répondre, Haeun recule vers la salle des professeurs. Elle vérifie jusqu'au bout que le protagoniste ne la suit pas.*"
+    },
+    "forced_violation_day5_haeun_excuse": {
+        "name": "Haeun",
+        "text": "Ce n'était pas un malentendu. Ne me suivez pas. *En gardant ses distances, Haeun ouvre la porte de la salle des professeurs.*"
     }
 }

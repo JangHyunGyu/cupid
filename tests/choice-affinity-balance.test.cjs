@@ -117,8 +117,8 @@ test('direct choice affinity distribution keeps subtle penalties meaningful but 
         }
     }
 
-    assert.equal(total, 377);
-    assert.deepEqual(counts, { positive: 59, negative: 154, neutral: 139, mixed: 25 });
+    assert.equal(total, 383);
+    assert.deepEqual(counts, { positive: 59, negative: 154, neutral: 145, mixed: 25 });
 });
 
 test('day 2 afterschool rivalry scales with the live relationship instead of inventing plans', () => {
@@ -447,13 +447,13 @@ test('the only remaining two-choice screens are deliberate structural binary dec
     const remaining = Object.entries(scenes)
         .filter(([, scene]) => scene.choices?.length === 2);
 
-    assert.equal(remaining.length, 40);
+    assert.equal(remaining.length, 43);
     for (const [sceneId, scene] of remaining) {
         assert.ok(
             /^forced_violation_day[1-5]_after_/.test(sceneId)
                 || /^date_choice_(perfect|true)_/.test(sceneId)
                 || sceneId === 'hidden_dual_route_choice'
-                || ['day5_haeun_explain_choice', 'day5_haeun_concern_choice', 'day4_haeun_concern_choice'].includes(sceneId),
+                || ['day5_haeun_route_choice', 'day5_haeun_explain_choice', 'day5_haeun_concern_choice', 'day4_haeun_concern_choice'].includes(sceneId),
             `${sceneId} is not an approved structural two-choice screen`
         );
         assert.equal(
@@ -563,8 +563,8 @@ test('negative-choice screens stay distributed across every story day', () => {
         1: { choiceScreens: 16, negativeScreens: 9 },
         2: { choiceScreens: 18, negativeScreens: 10 },
         3: { choiceScreens: 24, negativeScreens: 14 },
-        4: { choiceScreens: 33, negativeScreens: 27 },
-        5: { choiceScreens: 33, negativeScreens: 11 }
+        4: { choiceScreens: 34, negativeScreens: 27 },
+        5: { choiceScreens: 35, negativeScreens: 11 }
     };
 
     for (const [day, expectedCounts] of Object.entries(expected)) {
@@ -1573,12 +1573,12 @@ test('forced sexual violation aftermath covers every day and resumes every free-
             routes.push([day, character, freeTalkId]);
         }
         const expectedCharacters = Object.keys(characterSlugs)
-            .filter(character => character !== 'Haeun' || day === 3)
+            .filter(character => character !== 'Haeun' || day >= 3)
             .sort();
         assert.deepEqual([...dayCharacters].sort(), expectedCharacters,
             `day ${day} forced-violation coverage drifted`);
     }
-    assert.equal(routes.length, 47, 'every authored main-story free talk must be covered');
+    assert.equal(routes.length, 51, 'every authored main-story free talk must be covered');
 
     const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy);
 

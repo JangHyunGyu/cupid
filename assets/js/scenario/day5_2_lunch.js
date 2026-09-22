@@ -1582,6 +1582,18 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "after5_start"
     }
     };
+    Object.assign(scenes, {
+    "day5_haeun_personal": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_normal.png",
+        "next": "day5_haeun_resume",
+        "type": "free_talk",
+        "maxTurns": 5,
+        "isRemote": false,
+        "haeunRomance": false
+    }
+});
+    scenes.day5_haeun_finish.next = 'day5_haeun_personal';
     for (const scene of Object.values(scenes)) {
         if (scene && typeof scene === 'object') {
             Object.defineProperty(scene, "__sourceFile", {

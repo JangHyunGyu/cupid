@@ -31,14 +31,14 @@ test('landing pages defer the game runtime and the initial content bundle contai
     }
 });
 
-test('ending collection exposes 32 unique localized routes and resolves route variants', () => {
+test('ending collection exposes 33 unique localized routes and resolves route variants', () => {
     const GalleryData = loadGalleryData();
     const ids = GalleryData.endingRoutes.map(ending => ending.id);
-    assert.equal(ids.length, 32);
-    assert.equal(new Set(ids).size, 32);
+    assert.equal(ids.length, 33);
+    assert.equal(new Set(ids).size, 33);
     for (const language of ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt']) {
         const catalog = GalleryData.getEndingCatalog(language);
-        assert.equal(catalog.length, 32);
+        assert.equal(catalog.length, 33);
         assert(catalog.every(ending => ending.name && ending.hint));
     }
 

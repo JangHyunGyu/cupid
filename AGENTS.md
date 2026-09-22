@@ -57,3 +57,7 @@
 - 메인 히로인 사이의 경쟁 선택지는 한 사람의 상승이 다른 사람의 손실을 동반하는 트레이드오프를 기본으로 삼되, 변화량을 반드시 1:1로 맞추지는 않는다. 배신·약속 위반처럼 관계 손상이 큰 선택은 얻는 호감보다 잃는 호감이 더 커야 하며, 두 사람의 변화량 합이 양수가 되지 않게 한다. 경쟁 선택지임을 시나리오 데이터에 표시해 자동 테스트가 계속 검증하게 한다.
 - 호감도 순위를 이용하는 라이벌 이벤트는 실행 시점의 실제 호감도로 선두와 2위를 계산한다. 동률 처리 순서는 시나리오 데이터에 명시된 순서로 결정해 재현 가능하게 유지하며, 선두가 아닌 루트 캐릭터를 선두라고 단정하는 대사를 출력하지 않는다.
 - 시나리오의 구조, 대사, 선택지, 이름, 문맥, 성격 지시를 변경할 때는 지원하는 모든 언어(`ko`, `en`, `ja`, `es`, `fr`, `de`, `pt`)를 같은 변경에서 갱신한다. 한 언어라도 누락되면 시나리오 변경은 미완료로 취급한다.
+
+## Haeun Romance Exception (2026-09-22)
+- User-authorized Haeun route: stored affinity remains capped at 100; theoretical best-route budget is 110, primarily from personal FreeTalk. Other five route budgets stay unchanged.
+- Offer Haeun on Day 5 at affinity 45 or higher after her personal conversation. Selection alone is not a dating agreement. Below 100 after the two private conversations, resume the original route and ending conditions with current scores and incident flags.

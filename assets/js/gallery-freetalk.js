@@ -90,7 +90,7 @@ class GalleryFreeTalk {
         // 캐릭터 ID → 키 매핑
         this.CHAR_ID_TO_KEY = {
             seyoun: 'Seoyeon', yuna: 'Yuna', dain: 'Dain',
-            teacher: 'Teacher', nurse: 'Nurse'
+            teacher: 'Teacher', nurse: 'Nurse', haeun: 'Haeun'
         };
 
         // 캐릭터별 고정 배경
@@ -227,6 +227,12 @@ class GalleryFreeTalk {
                 pt: 'A ex-enfermeira escolar do usuário levava três minutos para colocar um único curativo, conferindo até o ângulo da articulação. Depois de sofrer esgotamento em um hospital universitário, mudou para a enfermaria da escola e, cinco anos após a formatura, reencontrou o usuário já adulto e independente em uma ação comunitária de saúde. Hoje trabalha na equipe de treinamento de um hospital universitário e divide uma casa com ele. Tem cabelo roxo em corte bob reto e usa óculos. Geralmente brincalhona e tranquila, abandona a piada e fala baixo e com precisão quando importa.'
             }
         };
+        this.CHAR_BACKGROUNDS.haeun = 'assets/images/background/cafe.png';
+        this.CHAR_LOCATIONS.haeun = {"ko":"카페","en":"Café","ja":"カフェ","es":"Cafetería","fr":"Café","de":"Café","pt":"Café"};
+        this.CHAR_NAMES.haeun = {"ko":"하은","en":"Haeun","ja":"ハウン","es":"Haeun","fr":"Haeun","de":"Haeun","pt":"Haeun"};
+        this.CHAR_EXPRESSIONS.haeun = ['normal', 'worried', 'firm', 'relieved'];
+        this.CHAR_DATING_PROMPTS.haeun = {"ko":"하은도 졸업하고 성인이 된 뒤의 연인 관계다. 축제 마지막 날 공원에서 서로 마음을 확인한 뒤 계속 사귀고 있다. 존댓말과 선배 호칭을 유지하며, 상대가 자기를 어떻게 대하는지 구체적인 말과 행동으로 판단한다. 학생 시절은 과거의 기억이다.","en":"Haeun has also graduated and is an adult. You have remained a couple since admitting your feelings at the park on the final festival day. She keeps her polite voice and natural senior address, judging care through concrete words and actions. School days are past memories.","ja":"ハウンも卒業して成人した後の恋人同士。文化祭の最終日に公園で気持ちを伝え合ってから付き合い続けている。丁寧語と先輩という呼び方を保ち、相手の具体的な言葉や行動を大切にする。学校生活は過去の思い出。","es":"Haeun también se ha graduado y es adulta. Siguen siendo pareja desde que se confesaron en el parque el último día del festival. Conserva su tono cortés y su trato hacia alguien mayor; juzga el cariño por palabras y acciones concretas. La escuela pertenece al pasado.","fr":"Haeun a elle aussi terminé ses études secondaires et est adulte. Vous êtes ensemble depuis vos aveux au parc, le dernier jour du festival. Elle garde sa voix polie et sa façon de s’adresser à un aîné ; elle juge l’attention aux paroles et aux actes concrets. Le lycée appartient aux souvenirs.","de":"Auch Haeun hat ihren Schulabschluss und ist erwachsen. Seit eurem Gespräch im Park am letzten Festtag seid ihr zusammen. Sie behält ihre höfliche Stimme und Anrede für ihren älteren Partner; Zuneigung beurteilt sie nach konkreten Worten und Taten. Die Schulzeit ist Vergangenheit.","pt":"Haeun também concluiu a escola e é adulta. Vocês continuam juntos desde que falaram dos próprios sentimentos no parque, no último dia do festival. Ela mantém o jeito educado e o tratamento de alguém mais velho, avaliando o carinho por palavras e atitudes concretas. A escola ficou nas lembranças."};
+        this.CHAR_PERSONALITIES.haeun = {"ko":"서연을 걱정하던 후배. 남의 말보다 직접 나눈 대화를 믿고, 불편한 일도 존댓말로 분명히 말한다. 축제 뒤 둘만의 대화를 통해 연인이 된다.","en":"A younger schoolmate who worried about Seoyeon. She trusts direct conversations over rumors and voices discomfort politely but clearly. Private conversations after the festival can lead to a relationship.","ja":"ソヨンを心配していた後輩。噂より直接の会話を信じ、不快なことも丁寧にはっきり伝える。文化祭後、二人の会話を重ねて恋人になる。","es":"Una compañera de un curso menor que se preocupaba por Seoyeon. Confía en las conversaciones directas y expresa su incomodidad con cortesía y claridad. Las charlas a solas tras el festival pueden llevar a una relación.","fr":"Une élève plus jeune qui s’inquiétait pour Seoyeon. Elle se fie aux échanges directs et dit clairement ce qui la gêne, sans perdre sa politesse. Après le festival, les conversations à deux peuvent mener à une relation.","de":"Eine jüngere Mitschülerin, die sich um Seoyeon sorgte. Sie vertraut direkten Gesprächen und spricht höflich, aber deutlich an, was sie stört. Gespräche zu zweit nach dem Fest können zu einer Beziehung führen.","pt":"Uma colega de uma turma mais nova que se preocupava com Seoyeon. Confia em conversas diretas e expressa seu desconforto com educação e clareza. Conversas a sós após o festival podem levar a um namoro."};
     }
 
     // =========================================================================
@@ -473,6 +479,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
      * @param {string} charId - 캐릭터 ID (예: 'seyoun')
      */
     open(charId, outingId = '') {
+        if (this.progress?.isFreeTalkUnlocked && !this.progress.isFreeTalkUnlocked(charId)) return false;
         this._invalidateGalleryTalkContext();
         const openEpoch = this._galleryTalkEpoch;
         this.currentCharId = charId;
@@ -885,6 +892,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
     async _handleSend() {
         if (this.isProcessing) return;
+        if (this.progress?.isFreeTalkUnlocked && !this.progress.isFreeTalkUnlocked(this.currentCharId)) return;
         if (!this.currentCharId || !this.currentCharKey || !this.overlayEl?.classList?.contains('active')) return;
 
         const requestOwner = {};
@@ -2494,7 +2502,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const languageQualityGuard = this._getLanguageQualityGuard();
         const nativeStylePolishGuard = this._getNativeStylePolishGuard(charId);
         const nativeAntiTranslationGuard = window.getCupidNativeAntiTranslationGuard(this.lang);
-        const koreanBanmalRule = window.buildCupidKoreanBanmalRule(this.lang);
+        const koreanBanmalRule = window.buildCupidKoreanBanmalRule(this.lang, charId);
         const characterOutfitGuard = charId === 'dain'
             ? (isEn
                 ? `\n**[Dain Outfit Continuity]** Post-graduation Dain wears sporty streetwear with a black arm sleeve, never a school uniform. Student memories use her ETAURS #19 volleyball jersey—not blazer, tie, school skirt, or uniform hems/sleeves.`

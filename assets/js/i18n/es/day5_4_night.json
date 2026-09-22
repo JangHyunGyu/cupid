@@ -1927,5 +1927,21 @@
     "good_epilogue_1_yuna_first": {
         "name": "{name}",
         "text": "*Yuna me tiende una nota nueva: «Elegí un libro para leer juntos. Mañana lo sacamos de la biblioteca. — Yuna»*"
+    },
+    "forced_violation_day5_after_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun da un paso atrás y aprieta la pulsera del consejo estudiantil.* No te acerques. Voy a llamar a un profesor ahora mismo.",
+        "choices": [
+            "Reconocer lo que hice y mantener la distancia.",
+            "Decir que fue un malentendido."
+        ]
+    },
+    "forced_violation_day5_haeun_apologize": {
+        "name": "Haeun",
+        "text": "*Haeun retrocede hacia la sala de profesores sin responder. No deja de mirar hasta comprobar que el protagonista no la sigue.*"
+    },
+    "forced_violation_day5_haeun_excuse": {
+        "name": "Haeun",
+        "text": "No fue un malentendido. No me sigas. *Sin acortar la distancia, Haeun abre la puerta de la sala de profesores.*"
     }
 }

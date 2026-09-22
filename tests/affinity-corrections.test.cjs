@@ -10,6 +10,27 @@ const device = 'test-target-device';
 const id = 'main-route-seoyeon-20260909';
 const manifest = [{ id, deviceSha256: createHash('sha256').update(device).digest('hex'), character: 'Seoyeon', galleryCharacter: 'seyoun', perfectCG: 'ending_perfect_seoyeon', perfectEnding: 'perfect_seoyeon' }];
 const clone = value => JSON.parse(JSON.stringify(value));
+
+test('all five corrected perfect routes return to their own affinity checks, including credits', async () => {
+    for (const [character, suffix, check] of [
+        ['Seoyeon', 'seo', 'ending_aff_check_seo'], ['Yuna', 'yuna', 'ending_aff_check_yuna'],
+        ['Dain', 'dain', 'ending_aff_check_dain'], ['Teacher', 'teacher', 'hidden_perfect_homeroom_check'],
+        ['Nurse', 'nurse', 'hidden_perfect_nurse_check']
+    ]) {
+        const data = new Map([['cupid_device_id', device]]);
+        const api = createCorrections({ storage: { getItem: k => data.get(k), setItem: (k,v) => data.set(k,v) },
+            crypto: webcrypto, TextEncoder, corrections: [{ ...manifest[0], character }] });
+        await api.ready;
+        for (const scene of [`day5_${suffix}_ending_freetalk_perfect`, 'day5_credits']) {
+            const save = { currentSceneId: scene, gameState: { stats: { [character]: { affinity: 100 } }, flags: { ending_perfect: true, [`isDating_${character}`]: true } } };
+            assert.equal(api.correctSave(save), true);
+            assert.equal(save.currentSceneId, check);
+            assert.equal(save.gameState.stats[character].affinity, 99);
+            assert.equal(save.gameState.flags.ending_perfect, false);
+            assert.equal(save.pendingEntryEffects, true);
+        }
+    }
+});
 const gallery = () => ({
     version: 2, affinityRebalanceVersion: 1,
     characters: {

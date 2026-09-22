@@ -1927,5 +1927,21 @@
     "good_epilogue_1_yuna_first": {
         "name": "{name}",
         "text": "*유나가 새 쪽지를 내민다. ‘같이 읽고 싶은 책을 골랐어. 내일 도서관에서 빌리자. — 유나’*"
+    },
+    "forced_violation_day5_after_haeun": {
+        "name": "하은",
+        "text": "*하은이 한 걸음 물러서며 학생회 팔찌를 움켜쥔다.* 가까이 오지 마세요. 지금 선생님 부를 거예요.",
+        "choices": [
+            "잘못을 인정하고 거리를 둔다.",
+            "오해였다고 둘러댄다."
+        ]
+    },
+    "forced_violation_day5_haeun_apologize": {
+        "name": "하은",
+        "text": "*하은은 대답하지 않은 채 교무실 쪽으로 물러난다. 주인공이 따라오지 않는지 끝까지 확인한다.*"
+    },
+    "forced_violation_day5_haeun_excuse": {
+        "name": "하은",
+        "text": "오해 아니에요. 따라오지 마세요. *하은은 거리를 둔 채 교무실 문을 연다.*"
     }
 }

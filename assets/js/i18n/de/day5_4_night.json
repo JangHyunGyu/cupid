@@ -1927,5 +1927,21 @@
     "good_epilogue_1_yuna_first": {
         "name": "{name}",
         "text": "*Yuna reicht mir einen neuen Zettel: „Ich habe ein Buch für uns ausgesucht. Leihen wir es morgen aus. — Yuna“*"
+    },
+    "forced_violation_day5_after_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun tritt einen Schritt zurück und umklammert ihr Schülerratsarmband.* Komm nicht näher. Ich hole jetzt eine Lehrkraft.",
+        "choices": [
+            "Mein Fehlverhalten eingestehen und Abstand halten.",
+            "Behaupten, es sei ein Missverständnis gewesen."
+        ]
+    },
+    "forced_violation_day5_haeun_apologize": {
+        "name": "Haeun",
+        "text": "*Ohne zu antworten, weicht Haeun zum Lehrerzimmer zurück. Sie achtet bis zuletzt darauf, dass ich ihr nicht folge.*"
+    },
+    "forced_violation_day5_haeun_excuse": {
+        "name": "Haeun",
+        "text": "Das war kein Missverständnis. Folge mir nicht. *Haeun hält Abstand und öffnet die Tür zum Lehrerzimmer.*"
     }
 }
