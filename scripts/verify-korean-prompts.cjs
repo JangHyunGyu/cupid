@@ -758,7 +758,7 @@ function verifyWiringAndScenePrompts() {
         Object.values(value).forEach(collect);
     }
     sceneFiles.forEach(file => collect(JSON.parse(read(file))));
-    assert(scenePrompts.length === 71, `expected 71 active Korean scene prompts, found ${scenePrompts.length}`);
+    assert(scenePrompts.length === 76, `expected 76 active Korean scene prompts, found ${scenePrompts.length}`);
     const joined = scenePrompts.join('\n');
     for (const stalePhrase of ['Day 1', 'Day 3', '톤:', '티키타카', '쿨뷰티', '신비주의 문학소녀', '체육계']) {
         assert(!joined.includes(stalePhrase), `active Korean scene prompt still contains: ${stalePhrase}`);
@@ -779,7 +779,7 @@ function verifyWiringAndScenePrompts() {
         assert(freeTalks.length === expectedCount,
             `day ${day} must contain exactly ${expectedCount} free-talk scenes, found ${freeTalks.length}`);
         for (const [id, scene] of freeTalks) {
-            const expectedTurns = scene.haeunRomance === true ? 10 : id === 'day4_haeun_personal' || id === 'haeun_freetalk' || day === 5 || scene.romanticInterlude === true ? 5 : 3;
+            const expectedTurns = id === 'day4_haeun_personal' || id === 'haeun_freetalk' || day === 5 || scene.romanticInterlude === true ? 5 : 3;
             assert(scene.maxTurns === expectedTurns,
                 `${id} must use maxTurns ${expectedTurns}, found ${scene.maxTurns}`);
         }
@@ -1237,4 +1237,4 @@ verifyCacheKeyWiring();
 verifyGroupPromptCacheContract(context);
 verifyTypingOwnerIsolation(context);
 
-console.log(`Verified Korean runtime prompts for ${CHARACTERS.length} romance characters plus Haeun, 57 scene prompts, daily turn limits, loader order, memories, user agency, and stale-turn ownership.`);
+console.log(`Verified Korean runtime prompts for ${CHARACTERS.length} romance characters plus Haeun, 76 scene prompts, daily turn limits, loader order, memories, user agency, and stale-turn ownership.`);

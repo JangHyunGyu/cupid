@@ -61,3 +61,5 @@
 ## Haeun Romance Exception (2026-09-22)
 - User-authorized Haeun route: stored affinity remains capped at 100; theoretical best-route budget is 110, primarily from personal FreeTalk. Other five route budgets stay unchanged.
 - Offer Haeun on Day 5 at affinity 45 or higher after her personal conversation. Selection alone is not a dating agreement. Below 100 after the two private conversations, resume the original route and ending conditions with current scores and incident flags.
+- Current choice: Haeun +20, displaced highest-affinity character -30, then three group rounds and two five-turn personal conversations. This preserves the 110 best-route budget. Saves that already entered the previous route retain their original ten-turn personal scenes without the new declaration bonus or group.
+- Haeun addresses Seoyeon, Yuna and Dain as `서연 선배`, `유나 선배`, `다인 선배` in Korean and uses the corresponding senior address in Japanese. School staff remain `선생님`. Verify authored speech and Main/Group/Gallery prompt guidance together.

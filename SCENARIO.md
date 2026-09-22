@@ -26265,7 +26265,7 @@
 - 다음: `day5_haeun_route_choice`
 
 - 캐릭터: `haeun_worried.png`
-**하은**: 선배, 서연 쪽으로 가려던 거 아니에요? 저랑 더 있고 싶다는 건 어떤 뜻이에요?
+**하은**: 선배, 서연 선배 쪽으로 가려던 거 아니에요? 저랑 더 있고 싶다는 건 어떤 뜻이에요?
 
 ---
 
@@ -26274,7 +26274,7 @@
 - 다음: `day5_haeun_route_choice`
 
 - 캐릭터: `haeun_worried.png`
-**하은**: 선배, 유나 쪽으로 가려던 거 아니에요? 저랑 더 있고 싶다는 건 어떤 뜻이에요?
+**하은**: 선배, 유나 선배 쪽으로 가려던 거 아니에요? 저랑 더 있고 싶다는 건 어떤 뜻이에요?
 
 ---
 
@@ -26283,7 +26283,7 @@
 - 다음: `day5_haeun_route_choice`
 
 - 캐릭터: `haeun_worried.png`
-**하은**: 선배, 다인 쪽으로 가려던 거 아니에요? 저랑 더 있고 싶다는 건 어떤 뜻이에요?
+**하은**: 선배, 다인 선배 쪽으로 가려던 거 아니에요? 저랑 더 있고 싶다는 건 어떤 뜻이에요?
 
 ---
 
@@ -26329,51 +26329,231 @@
 
 ### `day5_haeun_leave_seoyeon`
 - 배경: `school_hallway.png`
-- 스탯: Seoyeon -10
-- 다음: `day5_haeun_private_1`
+- 플래그: `haeun_switch_declared`
+- 스탯: Haeun +20, Seoyeon -30
+- 다음: `day5_haeun_switch_seoyeon_entry`
 
 - 캐릭터: `haeun_firm.png`
-**{name}**: *서연에게 오늘은 하은과 있고 싶다고 전한다. 잠시 뒤 짧은 답이 온다. 하은에게 휴대폰을 보여 주지 않고 주머니에 넣는다.*
+**{name}**: *서연에게 얘기할 게 있다고 전한다. 복도 창가에 마주 서자 하은도 내 옆에서 멈춘다.* 내가 더 알아가고 싶은 사람은 하은이야. 오늘은 하은이랑 갈게. 직접 말하고 싶었어.
+
+---
+
+### `day5_haeun_switch_seoyeon_entry`
+- 분기:
+  - [`haeun_switch_declared`] → `day5_haeun_switch_seoyeon_response`
+  - [기본] → `day5_haeun_private_1`
+
+---
+
+### `day5_haeun_switch_seoyeon_response`
+- 배경: `school_hallway.png`
+- 다음: `day5_haeun_switch_seoyeon_haeun`
+
+- 캐릭터: `seyoun_worried.png`
+**서연**: 그 말을 지금 하은 앞에서 하네. 언제부터 그렇게 생각했어?
+
+---
+
+### `day5_haeun_switch_seoyeon_haeun`
+- 배경: `school_hallway.png`
+- 다음: `day5_haeun_switch_seoyeon_group_talk`
+
+- 캐릭터: `haeun_firm.png`
+**하은**: *하은이 내 옆에 서서 서연 쪽을 본다.* 저도 더 얘기해 보고 싶어요. 그래도 서연 선배 말씀은 듣고 가요.
+
+---
+
+### `day5_haeun_switch_seoyeon_group_talk`
+- 배경: `school_hallway.png`
+- 타입: `group_free_talk`
+- 다음: `day5_haeun_private_1`
+
+- 캐릭터: `없음`
+**서연**: 내가 알아듣게 말해 줘. 오늘 갑자기 바뀐 건지, 전부터 생각한 건지.
 
 ---
 
 ### `day5_haeun_leave_yuna`
 - 배경: `school_hallway.png`
-- 스탯: Yuna -10
-- 다음: `day5_haeun_private_1`
+- 플래그: `haeun_switch_declared`
+- 스탯: Haeun +20, Yuna -30
+- 다음: `day5_haeun_switch_yuna_entry`
 
 - 캐릭터: `haeun_firm.png`
-**{name}**: *유나에게 오늘은 하은과 있고 싶다고 전한다. 잠시 뒤 짧은 답이 온다. 하은에게 휴대폰을 보여 주지 않고 주머니에 넣는다.*
+**{name}**: *유나에게 얘기할 게 있다고 전한다. 복도 창가에 마주 서자 하은도 내 옆에서 멈춘다.* 내가 더 알아가고 싶은 사람은 하은이야. 오늘은 하은이랑 갈게. 직접 말하고 싶었어.
+
+---
+
+### `day5_haeun_switch_yuna_entry`
+- 분기:
+  - [`haeun_switch_declared`] → `day5_haeun_switch_yuna_response`
+  - [기본] → `day5_haeun_private_1`
+
+---
+
+### `day5_haeun_switch_yuna_response`
+- 배경: `school_hallway.png`
+- 다음: `day5_haeun_switch_yuna_haeun`
+
+- 캐릭터: `yuna_worried.png`
+**유나**: 나한테 먼저 말할 시간은 없었어? 이렇게 들으면 내가 그냥 보내줄 줄 알았어?
+
+---
+
+### `day5_haeun_switch_yuna_haeun`
+- 배경: `school_hallway.png`
+- 다음: `day5_haeun_switch_yuna_group_talk`
+
+- 캐릭터: `haeun_firm.png`
+**하은**: *하은이 내 옆에 서서 유나 쪽을 본다.* 저도 더 얘기해 보고 싶어요. 그래도 유나 선배 말씀은 듣고 가요.
+
+---
+
+### `day5_haeun_switch_yuna_group_talk`
+- 배경: `school_hallway.png`
+- 타입: `group_free_talk`
+- 다음: `day5_haeun_private_1`
+
+- 캐릭터: `없음`
+**유나**: 말 돌리지 말고 나 보고 얘기해.
 
 ---
 
 ### `day5_haeun_leave_dain`
 - 배경: `school_hallway.png`
-- 스탯: Dain -10
-- 다음: `day5_haeun_private_1`
+- 플래그: `haeun_switch_declared`
+- 스탯: Haeun +20, Dain -30
+- 다음: `day5_haeun_switch_dain_entry`
 
 - 캐릭터: `haeun_firm.png`
-**{name}**: *다인에게 오늘은 하은과 있고 싶다고 전한다. 잠시 뒤 짧은 답이 온다. 하은에게 휴대폰을 보여 주지 않고 주머니에 넣는다.*
+**{name}**: *다인에게 얘기할 게 있다고 전한다. 복도 창가에 마주 서자 하은도 내 옆에서 멈춘다.* 내가 더 알아가고 싶은 사람은 하은이야. 오늘은 하은이랑 갈게. 직접 말하고 싶었어.
+
+---
+
+### `day5_haeun_switch_dain_entry`
+- 분기:
+  - [`haeun_switch_declared`] → `day5_haeun_switch_dain_response`
+  - [기본] → `day5_haeun_private_1`
+
+---
+
+### `day5_haeun_switch_dain_response`
+- 배경: `school_hallway.png`
+- 다음: `day5_haeun_switch_dain_haeun`
+
+- 캐릭터: `dain_worried.png`
+**다인**: 하은도 데려와서 말하면, 내가 여기서 뭐라고 할 줄 알았는데?
+
+---
+
+### `day5_haeun_switch_dain_haeun`
+- 배경: `school_hallway.png`
+- 다음: `day5_haeun_switch_dain_group_talk`
+
+- 캐릭터: `haeun_firm.png`
+**하은**: *하은이 내 옆에 서서 다인 쪽을 본다.* 저도 더 얘기해 보고 싶어요. 그래도 다인 선배 말씀은 듣고 가요.
+
+---
+
+### `day5_haeun_switch_dain_group_talk`
+- 배경: `school_hallway.png`
+- 타입: `group_free_talk`
+- 다음: `day5_haeun_private_1`
+
+- 캐릭터: `없음`
+**다인**: 응. 듣고 있으니까, 왜 그렇게 정했는지 말해 봐.
 
 ---
 
 ### `day5_haeun_leave_teacher`
 - 배경: `school_hallway.png`
-- 스탯: Teacher -10
-- 다음: `day5_haeun_private_1`
+- 플래그: `haeun_switch_declared`
+- 스탯: Haeun +20, Teacher -30
+- 다음: `day5_haeun_switch_teacher_entry`
 
 - 캐릭터: `haeun_firm.png`
-**{name}**: *담임선생님에게 오늘은 하은과 있고 싶다고 전한다. 잠시 뒤 짧은 답이 온다. 하은에게 휴대폰을 보여 주지 않고 주머니에 넣는다.*
+**{name}**: *담임선생님에게 얘기할 게 있다고 전한다. 복도 창가에 마주 서자 하은도 내 옆에서 멈춘다.* 저는 하은이랑 더 만나보고 싶어요. 오늘은 하은이랑 갈게요. 선생님께도 직접 말씀드리고 싶었어요.
+
+---
+
+### `day5_haeun_switch_teacher_entry`
+- 분기:
+  - [`haeun_switch_declared`] → `day5_haeun_switch_teacher_response`
+  - [기본] → `day5_haeun_private_1`
+
+---
+
+### `day5_haeun_switch_teacher_response`
+- 배경: `school_hallway.png`
+- 다음: `day5_haeun_switch_teacher_haeun`
+
+- 캐릭터: `teacher_sad.png`
+**담임선생님**: 알았어. 그런데 나는 지금 통보받으려고 여기 온 거니?
+
+---
+
+### `day5_haeun_switch_teacher_haeun`
+- 배경: `school_hallway.png`
+- 다음: `day5_haeun_switch_teacher_group_talk`
+
+- 캐릭터: `haeun_firm.png`
+**하은**: *하은이 내 옆에 서서 담임선생님 쪽을 본다.* 저도 더 얘기해 보고 싶어요. 그래도 선생님 말씀은 듣고 가요.
+
+---
+
+### `day5_haeun_switch_teacher_group_talk`
+- 배경: `school_hallway.png`
+- 타입: `group_free_talk`
+- 다음: `day5_haeun_private_1`
+
+- 캐릭터: `없음`
+**담임선생님**: 네 선택을 허락해 달라는 얘기는 아닐 테고. 나한테 하고 싶은 말이 뭔지 들어 보자.
 
 ---
 
 ### `day5_haeun_leave_nurse`
 - 배경: `school_hallway.png`
-- 스탯: Nurse -10
-- 다음: `day5_haeun_private_1`
+- 플래그: `haeun_switch_declared`
+- 스탯: Haeun +20, Nurse -30
+- 다음: `day5_haeun_switch_nurse_entry`
 
 - 캐릭터: `haeun_firm.png`
-**{name}**: *보건선생님에게 오늘은 하은과 있고 싶다고 전한다. 잠시 뒤 짧은 답이 온다. 하은에게 휴대폰을 보여 주지 않고 주머니에 넣는다.*
+**{name}**: *보건선생님에게 얘기할 게 있다고 전한다. 복도 창가에 마주 서자 하은도 내 옆에서 멈춘다.* 저는 하은이랑 더 만나보고 싶어요. 오늘은 하은이랑 갈게요. 선생님께도 직접 말씀드리고 싶었어요.
+
+---
+
+### `day5_haeun_switch_nurse_entry`
+- 분기:
+  - [`haeun_switch_declared`] → `day5_haeun_switch_nurse_response`
+  - [기본] → `day5_haeun_private_1`
+
+---
+
+### `day5_haeun_switch_nurse_response`
+- 배경: `school_hallway.png`
+- 다음: `day5_haeun_switch_nurse_haeun`
+
+- 캐릭터: `nurse_worried.png`
+**보건선생님**: 잠깐. 네가 정한 건 알겠는데 내 대답은 듣고 갈 거지?
+
+---
+
+### `day5_haeun_switch_nurse_haeun`
+- 배경: `school_hallway.png`
+- 다음: `day5_haeun_switch_nurse_group_talk`
+
+- 캐릭터: `haeun_firm.png`
+**하은**: *하은이 내 옆에 서서 보건선생님 쪽을 본다.* 저도 더 얘기해 보고 싶어요. 그래도 선생님 말씀은 듣고 가요.
+
+---
+
+### `day5_haeun_switch_nurse_group_talk`
+- 배경: `school_hallway.png`
+- 타입: `group_free_talk`
+- 다음: `day5_haeun_private_1`
+
+- 캐릭터: `없음`
+**보건선생님**: 하은도 여기 있으니까, 둘 다 들을 수 있게 얘기해.
 
 ---
 
@@ -26755,11 +26935,11 @@
 ---
 
 ### `day5_ending_haeun`
-- 배경: `park.png`
+- 배경: `ending_perfect_haeun.png`
 - 플래그: `route_haeun`, `isDating_Haeun`, `ending_perfect`
 - 다음: `day5_ending_haeun_epilogue`
 
-- 캐릭터: `haeun_relieved.png`
+- 캐릭터: `없음`
 **하은**: *하은이 내 옆으로 자리를 옮긴다.* 저도 선배 좋아해요. 우리 사귀어요. 내일은 일 도와달라는 핑계 없이 불러도 되죠?
 
 ---

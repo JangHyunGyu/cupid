@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.257";
+const ASSET_VERSION = "2.9.258";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -259,6 +259,7 @@ function getCupidKeyboardOffset(focusedElement = document.activeElement) {
  * - 예: 'nurse_home_event1' → assets/images/cg/nurse_home_event1.webp
  */
 const REGISTERED_CG_IDS = new Set([
+    'ending_perfect_haeun',
     'event_haeun_trust',
     'event_haeun_reputation',
     'nurse_home_event1',

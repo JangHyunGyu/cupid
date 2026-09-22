@@ -200,6 +200,7 @@ const day5EndingFreeTalkIds = [
     'day5_nurse_ending_freetalk_bittersweet'
 ];
 const activeFreeTalkIds = [
+    ...['seoyeon', 'yuna', 'dain', 'teacher', 'nurse'].map(id => `day5_haeun_switch_${id}_group_talk`),
     'day4_haeun_personal', 'day5_haeun_personal', 'day5_haeun_private_1', 'day5_haeun_private_2',
     ...['seoyeon', 'yuna', 'dain', 'teacher', 'nurse'].flatMap(id => [
         `day5_haeun_${id}_group_talk`, `day5_haeun_concern_${id}_group_talk`, `day4_haeun_concern_${id}_group_talk`

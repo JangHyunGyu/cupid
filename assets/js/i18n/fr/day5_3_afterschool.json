@@ -658,7 +658,7 @@
     },
     "day5_haeun_leave_seoyeon": {
         "name": "{name}",
-        "text": "*Tu préviens Seoyeon que tu souhaites passer la journée avec Haeun. Une brève réponse arrive. Tu ranges ton téléphone sans la montrer à Haeun.*"
+        "text": "*Tu demandes à Seoyeon de te parler. Vous vous retrouvez près de la fenêtre du couloir, et Haeun s’arrête à côté de toi.* C’est Haeun que je veux mieux connaître. Aujourd’hui, je pars avec elle. Je voulais te le dire en personne."
     },
     "day5_haeun_offer_yuna": {
         "name": "Haeun",
@@ -666,7 +666,7 @@
     },
     "day5_haeun_leave_yuna": {
         "name": "{name}",
-        "text": "*Tu préviens Yuna que tu souhaites passer la journée avec Haeun. Une brève réponse arrive. Tu ranges ton téléphone sans la montrer à Haeun.*"
+        "text": "*Tu demandes à Yuna de te parler. Vous vous retrouvez près de la fenêtre du couloir, et Haeun s’arrête à côté de toi.* C’est Haeun que je veux mieux connaître. Aujourd’hui, je pars avec elle. Je voulais te le dire en personne."
     },
     "day5_haeun_offer_dain": {
         "name": "Haeun",
@@ -674,7 +674,7 @@
     },
     "day5_haeun_leave_dain": {
         "name": "{name}",
-        "text": "*Tu préviens Dain que tu souhaites passer la journée avec Haeun. Une brève réponse arrive. Tu ranges ton téléphone sans la montrer à Haeun.*"
+        "text": "*Tu demandes à Dain de te parler. Vous vous retrouvez près de la fenêtre du couloir, et Haeun s’arrête à côté de toi.* C’est Haeun que je veux mieux connaître. Aujourd’hui, je pars avec elle. Je voulais te le dire en personne."
     },
     "day5_haeun_offer_teacher": {
         "name": "Haeun",
@@ -682,7 +682,7 @@
     },
     "day5_haeun_leave_teacher": {
         "name": "{name}",
-        "text": "*Tu préviens ta professeure que tu souhaites passer la journée avec Haeun. Une brève réponse arrive. Tu ranges ton téléphone sans la montrer à Haeun.*"
+        "text": "*Tu demandes à la professeure principale de te parler. Vous vous retrouvez près de la fenêtre du couloir, et Haeun s’arrête à côté de toi.* C’est Haeun que je veux mieux connaître. Aujourd’hui, je pars avec elle. Je voulais te le dire en personne."
     },
     "day5_haeun_offer_nurse": {
         "name": "Haeun",
@@ -690,6 +690,86 @@
     },
     "day5_haeun_leave_nurse": {
         "name": "{name}",
-        "text": "*Tu préviens l’infirmière scolaire que tu souhaites passer la journée avec Haeun. Une brève réponse arrive. Tu ranges ton téléphone sans la montrer à Haeun.*"
+        "text": "*Tu demandes à l’infirmière scolaire de te parler. Vous vous retrouvez près de la fenêtre du couloir, et Haeun s’arrête à côté de toi.* C’est Haeun que je veux mieux connaître. Aujourd’hui, je pars avec elle. Je voulais te le dire en personne."
+    },
+    "day5_haeun_switch_seoyeon_response": {
+        "name": "Seoyeon",
+        "text": "Tu me le dis devant Haeun. Depuis quand tu penses ça ?"
+    },
+    "day5_haeun_switch_seoyeon_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun reste à côté de toi et regarde Seoyeon.* Moi aussi, je voudrais qu’on parle davantage. Mais écoutons ce qu’elle a à dire avant de partir."
+    },
+    "day5_haeun_switch_seoyeon_group_talk": {
+        "name": "Seoyeon",
+        "text": "Explique-moi. Quelque chose a changé aujourd’hui, ou tu y pensais depuis un moment ?",
+        "context": "Jour 5 après les cours. Le protagoniste, Seoyeon et Haeun se font face dans le couloir. Il vient de dire : « C’est Haeun que je veux mieux connaître. Aujourd’hui, je pars avec elle. Je voulais te le dire en personne. » Il a explicitement choisi Haeun, sans accord pour devenir un couple. Seoyeon avait l’affinité la plus élevée avant ce choix. Haeun +20 et Seoyeon -30 sont déjà appliqués.",
+        "personality": "Tous trois discutent de la déclaration qui vient d’être faite. Haeun est heureuse d’être choisie, mais n’a pas encore accepté une relation. L’autre personne exprime sa peine et ses questions avec sa propre voix. Les relations et promesses passées doivent figurer dans les souvenirs réels. Ne présentez pas le personnel scolaire comme ayant fréquenté un élève. Les changements Haeun +20 et l’autre personne -30 sont déjà appliqués ; évaluez uniquement les nouveaux comportements.",
+        "groupLocation": "Fenêtre du couloir",
+        "groupChoiceState": "C’est Haeun que je veux mieux connaître. Aujourd’hui, je pars avec elle. Je voulais te le dire en personne."
+    },
+    "day5_haeun_switch_yuna_response": {
+        "name": "Yuna",
+        "text": "Tu n’avais pas le temps de me le dire avant ? Tu pensais qu’en me l’annonçant comme ça, je te laisserais partir sans rien dire ?"
+    },
+    "day5_haeun_switch_yuna_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun reste à côté de toi et regarde Yuna.* Moi aussi, je voudrais qu’on parle davantage. Mais écoutons ce qu’elle a à dire avant de partir."
+    },
+    "day5_haeun_switch_yuna_group_talk": {
+        "name": "Yuna",
+        "text": "Regarde-moi et parle. Ne change pas de sujet.",
+        "context": "Jour 5 après les cours. Le protagoniste, Yuna et Haeun se font face dans le couloir. Il vient de dire : « C’est Haeun que je veux mieux connaître. Aujourd’hui, je pars avec elle. Je voulais te le dire en personne. » Il a explicitement choisi Haeun, sans accord pour devenir un couple. Yuna avait l’affinité la plus élevée avant ce choix. Haeun +20 et Yuna -30 sont déjà appliqués.",
+        "personality": "Tous trois discutent de la déclaration qui vient d’être faite. Haeun est heureuse d’être choisie, mais n’a pas encore accepté une relation. L’autre personne exprime sa peine et ses questions avec sa propre voix. Les relations et promesses passées doivent figurer dans les souvenirs réels. Ne présentez pas le personnel scolaire comme ayant fréquenté un élève. Les changements Haeun +20 et l’autre personne -30 sont déjà appliqués ; évaluez uniquement les nouveaux comportements.",
+        "groupLocation": "Fenêtre du couloir",
+        "groupChoiceState": "C’est Haeun que je veux mieux connaître. Aujourd’hui, je pars avec elle. Je voulais te le dire en personne."
+    },
+    "day5_haeun_switch_dain_response": {
+        "name": "Dain",
+        "text": "Tu as amené Haeun pour me le dire. Tu t’attendais à quelle réponse ?"
+    },
+    "day5_haeun_switch_dain_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun reste à côté de toi et regarde Dain.* Moi aussi, je voudrais qu’on parle davantage. Mais écoutons ce qu’elle a à dire avant de partir."
+    },
+    "day5_haeun_switch_dain_group_talk": {
+        "name": "Dain",
+        "text": "Bon, je t’écoute. Dis-moi pourquoi tu as décidé ça.",
+        "context": "Jour 5 après les cours. Le protagoniste, Dain et Haeun se font face dans le couloir. Il vient de dire : « C’est Haeun que je veux mieux connaître. Aujourd’hui, je pars avec elle. Je voulais te le dire en personne. » Il a explicitement choisi Haeun, sans accord pour devenir un couple. Dain avait l’affinité la plus élevée avant ce choix. Haeun +20 et Dain -30 sont déjà appliqués.",
+        "personality": "Tous trois discutent de la déclaration qui vient d’être faite. Haeun est heureuse d’être choisie, mais n’a pas encore accepté une relation. L’autre personne exprime sa peine et ses questions avec sa propre voix. Les relations et promesses passées doivent figurer dans les souvenirs réels. Ne présentez pas le personnel scolaire comme ayant fréquenté un élève. Les changements Haeun +20 et l’autre personne -30 sont déjà appliqués ; évaluez uniquement les nouveaux comportements.",
+        "groupLocation": "Fenêtre du couloir",
+        "groupChoiceState": "C’est Haeun que je veux mieux connaître. Aujourd’hui, je pars avec elle. Je voulais te le dire en personne."
+    },
+    "day5_haeun_switch_teacher_response": {
+        "name": "Professeure principale",
+        "text": "D’accord. Mais tu m’as fait venir seulement pour m’annoncer ta décision ?"
+    },
+    "day5_haeun_switch_teacher_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun reste à côté de toi et regarde la professeure principale.* Moi aussi, je voudrais qu’on parle davantage. Mais écoutons ce qu’elle a à dire avant de partir."
+    },
+    "day5_haeun_switch_teacher_group_talk": {
+        "name": "Professeure principale",
+        "text": "Tu ne me demandes pas la permission, je suppose. Dis-moi ce que tu voulais vraiment me dire.",
+        "context": "Jour 5 après les cours. Le protagoniste, la professeure principale et Haeun se font face dans le couloir. Il vient de dire : « C’est Haeun que je veux mieux connaître. Aujourd’hui, je pars avec elle. Je voulais te le dire en personne. » Il a explicitement choisi Haeun, sans accord pour devenir un couple. la professeure principale avait l’affinité la plus élevée avant ce choix. Haeun +20 et la professeure principale -30 sont déjà appliqués.",
+        "personality": "Tous trois discutent de la déclaration qui vient d’être faite. Haeun est heureuse d’être choisie, mais n’a pas encore accepté une relation. L’autre personne exprime sa peine et ses questions avec sa propre voix. Les relations et promesses passées doivent figurer dans les souvenirs réels. Ne présentez pas le personnel scolaire comme ayant fréquenté un élève. Les changements Haeun +20 et l’autre personne -30 sont déjà appliqués ; évaluez uniquement les nouveaux comportements.",
+        "groupLocation": "Fenêtre du couloir",
+        "groupChoiceState": "C’est Haeun que je veux mieux connaître. Aujourd’hui, je pars avec elle. Je voulais te le dire en personne."
+    },
+    "day5_haeun_switch_nurse_response": {
+        "name": "Infirmière",
+        "text": "Attends. J’ai compris que tu avais décidé, mais tu vas écouter ma réponse avant de partir, non ?"
+    },
+    "day5_haeun_switch_nurse_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun reste à côté de toi et regarde l’infirmière scolaire.* Moi aussi, je voudrais qu’on parle davantage. Mais écoutons ce qu’elle a à dire avant de partir."
+    },
+    "day5_haeun_switch_nurse_group_talk": {
+        "name": "Infirmière",
+        "text": "Haeun est là aussi. Parle pour qu’on puisse t’entendre toutes les deux.",
+        "context": "Jour 5 après les cours. Le protagoniste, l’infirmière scolaire et Haeun se font face dans le couloir. Il vient de dire : « C’est Haeun que je veux mieux connaître. Aujourd’hui, je pars avec elle. Je voulais te le dire en personne. » Il a explicitement choisi Haeun, sans accord pour devenir un couple. l’infirmière scolaire avait l’affinité la plus élevée avant ce choix. Haeun +20 et l’infirmière scolaire -30 sont déjà appliqués.",
+        "personality": "Tous trois discutent de la déclaration qui vient d’être faite. Haeun est heureuse d’être choisie, mais n’a pas encore accepté une relation. L’autre personne exprime sa peine et ses questions avec sa propre voix. Les relations et promesses passées doivent figurer dans les souvenirs réels. Ne présentez pas le personnel scolaire comme ayant fréquenté un élève. Les changements Haeun +20 et l’autre personne -30 sont déjà appliqués ; évaluez uniquement les nouveaux comportements.",
+        "groupLocation": "Fenêtre du couloir",
+        "groupChoiceState": "C’est Haeun que je veux mieux connaître. Aujourd’hui, je pars avec elle. Je voulais te le dire en personne."
     }
 }

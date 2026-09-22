@@ -1131,9 +1131,10 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": "assets/images/characters/haeun_normal.png",
         "next": "day5_haeun_walk",
         "type": "free_talk",
-        "maxTurns": 10,
+        "maxTurns": 5,
         "isRemote": false,
-        "haeunRomance": true
+        "haeunRomance": true,
+        "legacyHaeunMaxTurns": 10
     },
     "day5_haeun_walk": {
         "background": "assets/images/background/park.png",
@@ -1145,9 +1146,10 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": "assets/images/characters/haeun_normal.png",
         "next": "day5_haeun_romance_check",
         "type": "free_talk",
-        "maxTurns": 10,
+        "maxTurns": 5,
         "isRemote": false,
-        "haeunRomance": true
+        "haeunRomance": true,
+        "legacyHaeunMaxTurns": 10
     },
     "day5_haeun_romance_check": {
         "routeBeforeRender": true,
@@ -1172,8 +1174,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         ]
     },
     "day5_ending_haeun": {
-        "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/haeun_relieved.png",
+        "background": "assets/images/background/ending_perfect_haeun.png",
+        "character": null,
         "next": "day5_ending_haeun_epilogue",
         "setFlags": [
             "route_haeun",
@@ -1201,11 +1203,21 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "day5_haeun_leave_seoyeon": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/haeun_firm.png",
-        "next": "day5_haeun_private_1",
+        "next": "day5_haeun_switch_seoyeon_entry",
         "stats": {
+            "Haeun": {
+                "affinity": 20
+            },
             "Seoyeon": {
-                "affinity": -10
+                "affinity": -30
             }
+        },
+        "setFlags": [
+            "haeun_switch_declared"
+        ],
+        "rivalry": {
+            "chosen": "Haeun",
+            "displaced": "Seoyeon"
         }
     },
     "day5_haeun_offer_yuna": {
@@ -1216,11 +1228,21 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "day5_haeun_leave_yuna": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/haeun_firm.png",
-        "next": "day5_haeun_private_1",
+        "next": "day5_haeun_switch_yuna_entry",
         "stats": {
+            "Haeun": {
+                "affinity": 20
+            },
             "Yuna": {
-                "affinity": -10
+                "affinity": -30
             }
+        },
+        "setFlags": [
+            "haeun_switch_declared"
+        ],
+        "rivalry": {
+            "chosen": "Haeun",
+            "displaced": "Yuna"
         }
     },
     "day5_haeun_offer_dain": {
@@ -1231,11 +1253,21 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "day5_haeun_leave_dain": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/haeun_firm.png",
-        "next": "day5_haeun_private_1",
+        "next": "day5_haeun_switch_dain_entry",
         "stats": {
+            "Haeun": {
+                "affinity": 20
+            },
             "Dain": {
-                "affinity": -10
+                "affinity": -30
             }
+        },
+        "setFlags": [
+            "haeun_switch_declared"
+        ],
+        "rivalry": {
+            "chosen": "Haeun",
+            "displaced": "Dain"
         }
     },
     "day5_haeun_offer_teacher": {
@@ -1246,11 +1278,21 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "day5_haeun_leave_teacher": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/haeun_firm.png",
-        "next": "day5_haeun_private_1",
+        "next": "day5_haeun_switch_teacher_entry",
         "stats": {
+            "Haeun": {
+                "affinity": 20
+            },
             "Teacher": {
-                "affinity": -10
+                "affinity": -30
             }
+        },
+        "setFlags": [
+            "haeun_switch_declared"
+        ],
+        "rivalry": {
+            "chosen": "Haeun",
+            "displaced": "Teacher"
         }
     },
     "day5_haeun_offer_nurse": {
@@ -1261,12 +1303,257 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "day5_haeun_leave_nurse": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/haeun_firm.png",
-        "next": "day5_haeun_private_1",
+        "next": "day5_haeun_switch_nurse_entry",
         "stats": {
+            "Haeun": {
+                "affinity": 20
+            },
             "Nurse": {
-                "affinity": -10
+                "affinity": -30
             }
+        },
+        "setFlags": [
+            "haeun_switch_declared"
+        ],
+        "rivalry": {
+            "chosen": "Haeun",
+            "displaced": "Nurse"
         }
+    },
+    "day5_haeun_switch_seoyeon_response": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_worried.png",
+        "next": "day5_haeun_switch_seoyeon_haeun"
+    },
+    "day5_haeun_switch_seoyeon_haeun": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_firm.png",
+        "next": "day5_haeun_switch_seoyeon_group_talk"
+    },
+    "day5_haeun_switch_seoyeon_group_talk": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "day5_haeun_private_1",
+        "type": "group_free_talk",
+        "groupMode": "haeun_switch",
+        "haeunRomance": true,
+        "isRemote": false,
+        "maxTurns": 3,
+        "dynamicGroupName": true,
+        "groupParticipants": [
+            {
+                "id": "Seoyeon",
+                "role": "focus",
+                "side": "left",
+                "initialExpression": "worried"
+            },
+            {
+                "id": "Haeun",
+                "role": "companion",
+                "side": "right",
+                "initialExpression": "firm"
+            }
+        ]
+    },
+    "day5_haeun_switch_yuna_response": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/yuna_worried.png",
+        "next": "day5_haeun_switch_yuna_haeun"
+    },
+    "day5_haeun_switch_yuna_haeun": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_firm.png",
+        "next": "day5_haeun_switch_yuna_group_talk"
+    },
+    "day5_haeun_switch_yuna_group_talk": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "day5_haeun_private_1",
+        "type": "group_free_talk",
+        "groupMode": "haeun_switch",
+        "haeunRomance": true,
+        "isRemote": false,
+        "maxTurns": 3,
+        "dynamicGroupName": true,
+        "groupParticipants": [
+            {
+                "id": "Yuna",
+                "role": "focus",
+                "side": "left",
+                "initialExpression": "worried"
+            },
+            {
+                "id": "Haeun",
+                "role": "companion",
+                "side": "right",
+                "initialExpression": "firm"
+            }
+        ]
+    },
+    "day5_haeun_switch_dain_response": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/dain_worried.png",
+        "next": "day5_haeun_switch_dain_haeun"
+    },
+    "day5_haeun_switch_dain_haeun": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_firm.png",
+        "next": "day5_haeun_switch_dain_group_talk"
+    },
+    "day5_haeun_switch_dain_group_talk": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "day5_haeun_private_1",
+        "type": "group_free_talk",
+        "groupMode": "haeun_switch",
+        "haeunRomance": true,
+        "isRemote": false,
+        "maxTurns": 3,
+        "dynamicGroupName": true,
+        "groupParticipants": [
+            {
+                "id": "Dain",
+                "role": "focus",
+                "side": "left",
+                "initialExpression": "worried"
+            },
+            {
+                "id": "Haeun",
+                "role": "companion",
+                "side": "right",
+                "initialExpression": "firm"
+            }
+        ]
+    },
+    "day5_haeun_switch_teacher_response": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/teacher_sad.png",
+        "next": "day5_haeun_switch_teacher_haeun"
+    },
+    "day5_haeun_switch_teacher_haeun": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_firm.png",
+        "next": "day5_haeun_switch_teacher_group_talk"
+    },
+    "day5_haeun_switch_teacher_group_talk": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "day5_haeun_private_1",
+        "type": "group_free_talk",
+        "groupMode": "haeun_switch",
+        "haeunRomance": true,
+        "isRemote": false,
+        "maxTurns": 3,
+        "dynamicGroupName": true,
+        "groupParticipants": [
+            {
+                "id": "Teacher",
+                "role": "focus",
+                "side": "left",
+                "initialExpression": "sad"
+            },
+            {
+                "id": "Haeun",
+                "role": "companion",
+                "side": "right",
+                "initialExpression": "firm"
+            }
+        ]
+    },
+    "day5_haeun_switch_nurse_response": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/nurse_worried.png",
+        "next": "day5_haeun_switch_nurse_haeun"
+    },
+    "day5_haeun_switch_nurse_haeun": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_firm.png",
+        "next": "day5_haeun_switch_nurse_group_talk"
+    },
+    "day5_haeun_switch_nurse_group_talk": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "day5_haeun_private_1",
+        "type": "group_free_talk",
+        "groupMode": "haeun_switch",
+        "haeunRomance": true,
+        "isRemote": false,
+        "maxTurns": 3,
+        "dynamicGroupName": true,
+        "groupParticipants": [
+            {
+                "id": "Nurse",
+                "role": "focus",
+                "side": "left",
+                "initialExpression": "worried"
+            },
+            {
+                "id": "Haeun",
+                "role": "companion",
+                "side": "right",
+                "initialExpression": "firm"
+            }
+        ]
+    },
+    "day5_haeun_switch_seoyeon_entry": {
+        "routeBeforeRender": true,
+        "branches": [
+            {
+                "condition": "haeun_switch_declared",
+                "next": "day5_haeun_switch_seoyeon_response"
+            },
+            {
+                "next": "day5_haeun_private_1"
+            }
+        ]
+    },
+    "day5_haeun_switch_yuna_entry": {
+        "routeBeforeRender": true,
+        "branches": [
+            {
+                "condition": "haeun_switch_declared",
+                "next": "day5_haeun_switch_yuna_response"
+            },
+            {
+                "next": "day5_haeun_private_1"
+            }
+        ]
+    },
+    "day5_haeun_switch_dain_entry": {
+        "routeBeforeRender": true,
+        "branches": [
+            {
+                "condition": "haeun_switch_declared",
+                "next": "day5_haeun_switch_dain_response"
+            },
+            {
+                "next": "day5_haeun_private_1"
+            }
+        ]
+    },
+    "day5_haeun_switch_teacher_entry": {
+        "routeBeforeRender": true,
+        "branches": [
+            {
+                "condition": "haeun_switch_declared",
+                "next": "day5_haeun_switch_teacher_response"
+            },
+            {
+                "next": "day5_haeun_private_1"
+            }
+        ]
+    },
+    "day5_haeun_switch_nurse_entry": {
+        "routeBeforeRender": true,
+        "branches": [
+            {
+                "condition": "haeun_switch_declared",
+                "next": "day5_haeun_switch_nurse_response"
+            },
+            {
+                "next": "day5_haeun_private_1"
+            }
+        ]
     }
 });
     scenes.after5_original_start = scenes.after5_start;

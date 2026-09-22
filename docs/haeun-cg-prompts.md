@@ -49,3 +49,19 @@ The CGs use the existing registered-CG rendering, hide standing sprites, and ret
 Both IDs are registered in REGISTERED_CG_IDS and all seven GalleryData.cg locale lists with names, descriptions, character labels and unlock hints. Gallery unlocks are view-based and survive reload and a new game.
 
 Korean wording was checked against the im-not-ai Codex humanize-korean workflow. Original, reviewed text and review notes are stored in D:/workspace/_workspace/2026-09-22-003.
+
+## Dedicated Haeun ending CG (2026-09-22)
+
+- ID: `ending_perfect_haeun`; displayed by `day5_ending_haeun` only after the 100-affinity route check
+- Files: `assets/images/background/ending_perfect_haeun.png` (native master) and `.webp` (pixel-identical lossless delivery)
+- Generator: Higgsfield / GPT Image 2; requested `quality: high`, `resolution: 4k`, `aspect_ratio: 1:1`
+- Actual output: **2880 × 2880**, retained without resizing; PNG 12,238,507 bytes, WebP 8,088,188 bytes
+- Generation ID: `9adf41b9-9407-436a-8fa3-3aa701f7676c`
+- References: existing `haeun_relieved.png` (media `8d1016d7-95ab-4c9a-94b0-e71b4c249968`) and `park.png` (media `17bfbcba-e8df-448d-947a-19f6ce1c9280`)
+- Review: matching bob, white headband, brown eyes and navy uniform; seated bench composition, warm afternoon park light and unobstructed face. The lower hands are naturally cropped. No text, watermark, extra person or suggestive pose. Both game and gallery use the same square master.
+
+Prompt:
+
+```text
+Create one finished collectible romance ending CG for the Korean visual novel CUPID. This is a NEW illustration, using reference 1 only for Haeun's exact identity and painterly anime rendering, and reference 2 for the park setting. Preserve Haeun's shoulder-length charcoal-black bob, softly curled ends, short parted bangs, wide white headband, warm brown eyes, navy blazer with small gold crest and neatly buttoned white shirt. Wholesome, nonsexual first-romance confession between schoolmates. Scene: late afternoon after the festival, Haeun has moved to sit beside the unseen protagonist on a wooden park bench and has just agreed to date him. Eye-level intimate medium close-up from the seated protagonist's viewpoint, Haeun turned slightly toward the viewer, relaxed shoulders, a small spontaneous happy smile, direct warm eye contact, a hint of natural cheek warmth, her two hands resting loosely together on her own lap. She is the only visible identifiable person. No kiss, no suggestive pose, no fanservice. Avoid the reference's static standing sprite pose: fully compose her seated posture and the bench, with a little empty seat beside her implied at the frame edge. The background softly suggests the reference park's brick path, pink flowering trees and distant fountain in golden late-afternoon light. Delicate confident linework, detailed eyes and hair, nuanced warm skin shading, painted foliage, beautiful rim lighting and cinematic depth; keep the same visual-novel art style. Face centered horizontally in the upper 45 percent, hands near the middle, with quieter park/bench detail in the lower 30 percent behind the game's dialogue overlay. Exactly 1:1 SQUARE composition from the start. Maximum supported native resolution 4K and highest supported quality HIGH, exceptionally polished final master, no upscaled draft. No text, captions, logos, readable signs, speech balloons, UI or watermark. Natural hands, correct five fingers per hand, no duplicated limbs.
+```

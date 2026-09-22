@@ -461,6 +461,10 @@ class FreeTalkSystem {
     }
 
     async startFreeTalk(scene, sceneId) {
+        if (scene.legacyHaeunMaxTurns && this.stateManager.getFlag('haeun_route_selected')
+            && !this.stateManager.getFlag('haeun_switch_declared')) {
+            scene = { ...scene, maxTurns: scene.legacyHaeunMaxTurns };
+        }
         if (scene?.type === 'group_free_talk') {
             return this.startGroupFreeTalk(scene, sceneId);
         }
@@ -2038,14 +2042,14 @@ class FreeTalkSystem {
         }
     }
 
-    _applyGroupAffinity(change, speakerId, positiveBudget, latestUserText = '') {
+    _applyGroupAffinity(change, speakerId, positiveBudget, latestUserText = '', scene = null) {
         if (!this.stateManager.stats?.[speakerId]) return null;
         const previousValue = this.stateManager.getAffinity(speakerId);
         let requestedChange = CupidFreeTalkCore.enforceCupidAffinityIntimacyBoundary(
             change,
             latestUserText,
             previousValue,
-            { nonRomance: speakerId === 'Haeun' }
+            { nonRomance: speakerId === 'Haeun' && scene?.haeunRomance !== true }
         );
         if (requestedChange > 0) requestedChange = Math.min(requestedChange, 3, positiveBudget);
         if (requestedChange === 0) {
@@ -2115,7 +2119,8 @@ class FreeTalkSystem {
                 conversation.affinity,
                 conversation.speakerId,
                 positiveBudget,
-                latestUserText
+                latestUserText,
+                scene
             );
             positiveBudget = Math.max(0, positiveBudget - (affinityResult?.positiveUsed || 0));
             const nextAftermath = CupidFreeTalkCore.updateRelationshipAftermath(
@@ -2266,7 +2271,7 @@ class FreeTalkSystem {
                     finalContent,
                     {
                         characterName: participant.name,
-                        nonRomance: participant.id === 'Haeun'
+                        nonRomance: participant.id === 'Haeun' && scene.haeunRomance !== true
                     }
                 ))
                 .filter(Boolean)

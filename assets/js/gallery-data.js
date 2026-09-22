@@ -35,7 +35,8 @@ class GalleryData {
         yuna: 'ending_perfect_yuna',
         dain: 'ending_perfect_dain',
         teacher: 'ending_perfect_teacher',
-        nurse: 'ending_perfect_nurse'
+        nurse: 'ending_perfect_nurse',
+        haeun: 'ending_perfect_haeun'
     });
 
     /**
@@ -2239,4 +2240,70 @@ for (const [lang, profile] of Object.entries(haeunGalleryProfiles)) {
         relieved: {"ko":"안도","en":"Relieved","ja":"安堵","es":"Aliviada","fr":"Soulagée","de":"Erleichtert","pt":"Aliviada"}[lang]
     });
 }
+const haeunEndingCG = {
+    "ko": {
+        "id": "ending_perfect_haeun",
+        "name": "내일은 둘이서",
+        "character": "하은",
+        "description": "축제 뒤 공원 벤치에서 내 옆에 앉아 사귀자고 말하는 하은",
+        "file": "assets/images/background/ending_perfect_haeun.png",
+        "thumbnail": "assets/images/background/ending_perfect_haeun.webp",
+        "unlockHint": "하은을 선택하고 호감도 100으로 하은 엔딩 보기"
+    },
+    "en": {
+        "id": "ending_perfect_haeun",
+        "name": "Tomorrow, Just Us",
+        "character": "Haeun",
+        "description": "After the festival, Haeun sits beside the protagonist on a park bench and agrees to date",
+        "file": "assets/images/background/ending_perfect_haeun.png",
+        "thumbnail": "assets/images/background/ending_perfect_haeun.webp",
+        "unlockHint": "Choose Haeun and reach her ending at 100 affinity"
+    },
+    "ja": {
+        "id": "ending_perfect_haeun",
+        "name": "明日は二人で",
+        "character": "ハウン",
+        "description": "文化祭の後、公園のベンチで隣に座り、付き合おうと伝えるハウン",
+        "file": "assets/images/background/ending_perfect_haeun.png",
+        "thumbnail": "assets/images/background/ending_perfect_haeun.webp",
+        "unlockHint": "ハウンを選び、好感度100でエンディングを見る"
+    },
+    "es": {
+        "id": "ending_perfect_haeun",
+        "name": "Mañana, solo nosotros",
+        "character": "Haeun",
+        "description": "Después del festival, Haeun se sienta junto al protagonista en una banca del parque y acepta ser su pareja",
+        "file": "assets/images/background/ending_perfect_haeun.png",
+        "thumbnail": "assets/images/background/ending_perfect_haeun.webp",
+        "unlockHint": "Elige a Haeun y alcanza su final con 100 de afinidad"
+    },
+    "fr": {
+        "id": "ending_perfect_haeun",
+        "name": "Demain, tous les deux",
+        "character": "Haeun",
+        "description": "Après le festival, Haeun s’assoit près du protagoniste sur un banc du parc et accepte de sortir avec lui",
+        "file": "assets/images/background/ending_perfect_haeun.png",
+        "thumbnail": "assets/images/background/ending_perfect_haeun.webp",
+        "unlockHint": "Choisir Haeun et atteindre sa fin avec 100 d’affinité"
+    },
+    "de": {
+        "id": "ending_perfect_haeun",
+        "name": "Morgen, nur wir",
+        "character": "Haeun",
+        "description": "Nach dem Fest setzt sich Haeun im Park neben den Protagonisten und stimmt einer Beziehung zu",
+        "file": "assets/images/background/ending_perfect_haeun.png",
+        "thumbnail": "assets/images/background/ending_perfect_haeun.webp",
+        "unlockHint": "Wähle Haeun und erreiche ihr Ende mit 100 Zuneigung"
+    },
+    "pt": {
+        "id": "ending_perfect_haeun",
+        "name": "Amanhã, só nós",
+        "character": "Haeun",
+        "description": "Após o festival, Haeun se senta ao lado do protagonista no banco do parque e aceita namorar",
+        "file": "assets/images/background/ending_perfect_haeun.png",
+        "thumbnail": "assets/images/background/ending_perfect_haeun.webp",
+        "unlockHint": "Escolha Haeun e alcance o final dela com 100 de afinidade"
+    }
+};
+for (const [lang, cg] of Object.entries(haeunEndingCG)) GalleryData.cg[lang].push(cg);
 window.GalleryData = GalleryData;

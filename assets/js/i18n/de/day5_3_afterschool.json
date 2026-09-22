@@ -658,7 +658,7 @@
     },
     "day5_haeun_leave_seoyeon": {
         "name": "{name}",
-        "text": "*Du schreibst Seoyeon, dass du heute mit Haeun zusammen sein möchtest. Eine kurze Antwort kommt. Du steckst das Handy weg, ohne sie Haeun zu zeigen.*"
+        "text": "*Du bittest Seoyeon um ein Gespräch. Am Flurfenster steht ihr euch gegenüber, Haeun bleibt neben dir stehen.* Haeun ist die Person, der ich näherkommen möchte. Heute gehe ich mit ihr. Ich wollte es dir persönlich sagen."
     },
     "day5_haeun_offer_yuna": {
         "name": "Haeun",
@@ -666,7 +666,7 @@
     },
     "day5_haeun_leave_yuna": {
         "name": "{name}",
-        "text": "*Du schreibst Yuna, dass du heute mit Haeun zusammen sein möchtest. Eine kurze Antwort kommt. Du steckst das Handy weg, ohne sie Haeun zu zeigen.*"
+        "text": "*Du bittest Yuna um ein Gespräch. Am Flurfenster steht ihr euch gegenüber, Haeun bleibt neben dir stehen.* Haeun ist die Person, der ich näherkommen möchte. Heute gehe ich mit ihr. Ich wollte es dir persönlich sagen."
     },
     "day5_haeun_offer_dain": {
         "name": "Haeun",
@@ -674,7 +674,7 @@
     },
     "day5_haeun_leave_dain": {
         "name": "{name}",
-        "text": "*Du schreibst Dain, dass du heute mit Haeun zusammen sein möchtest. Eine kurze Antwort kommt. Du steckst das Handy weg, ohne sie Haeun zu zeigen.*"
+        "text": "*Du bittest Dain um ein Gespräch. Am Flurfenster steht ihr euch gegenüber, Haeun bleibt neben dir stehen.* Haeun ist die Person, der ich näherkommen möchte. Heute gehe ich mit ihr. Ich wollte es dir persönlich sagen."
     },
     "day5_haeun_offer_teacher": {
         "name": "Haeun",
@@ -682,7 +682,7 @@
     },
     "day5_haeun_leave_teacher": {
         "name": "{name}",
-        "text": "*Du schreibst deine Klassenlehrerin, dass du heute mit Haeun zusammen sein möchtest. Eine kurze Antwort kommt. Du steckst das Handy weg, ohne sie Haeun zu zeigen.*"
+        "text": "*Du bittest deine Klassenlehrerin um ein Gespräch. Am Flurfenster steht ihr euch gegenüber, Haeun bleibt neben dir stehen.* Haeun ist die Person, der ich näherkommen möchte. Heute gehe ich mit ihr. Ich wollte es dir persönlich sagen."
     },
     "day5_haeun_offer_nurse": {
         "name": "Haeun",
@@ -690,6 +690,86 @@
     },
     "day5_haeun_leave_nurse": {
         "name": "{name}",
-        "text": "*Du schreibst die Schulkrankenschwester, dass du heute mit Haeun zusammen sein möchtest. Eine kurze Antwort kommt. Du steckst das Handy weg, ohne sie Haeun zu zeigen.*"
+        "text": "*Du bittest die Schulkrankenschwester um ein Gespräch. Am Flurfenster steht ihr euch gegenüber, Haeun bleibt neben dir stehen.* Haeun ist die Person, der ich näherkommen möchte. Heute gehe ich mit ihr. Ich wollte es dir persönlich sagen."
+    },
+    "day5_haeun_switch_seoyeon_response": {
+        "name": "Seoyeon",
+        "text": "Das sagst du mir jetzt vor Haeun. Seit wann denkst du so?"
+    },
+    "day5_haeun_switch_seoyeon_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun bleibt neben dir stehen und sieht zu Seoyeon.* Ich möchte auch weiter mit dir reden. Aber hören wir erst ihre Antwort, bevor wir gehen."
+    },
+    "day5_haeun_switch_seoyeon_group_talk": {
+        "name": "Seoyeon",
+        "text": "Erklär es mir. Hat sich heute etwas geändert, oder denkst du schon länger darüber nach?",
+        "context": "Tag 5 nach Schulschluss. Der Protagonist, Seoyeon und Haeun stehen im Flur zusammen. Er hat gerade gesagt: „Haeun ist die Person, der ich näherkommen möchte. Heute gehe ich mit ihr. Ich wollte es dir persönlich sagen.“ Er hat Haeun ausdrücklich gewählt, eine Beziehung wurde aber noch nicht vereinbart. Seoyeon hatte vor der Wahl die höchste Zuneigung. Haeun +20 und Seoyeon -30 wurden bereits angewandt.",
+        "personality": "Die drei sprechen über die gerade ausgesprochene Entscheidung. Haeun freut sich darüber, hat einer Beziehung aber noch nicht zugestimmt. Die andere Figur zeigt ihre Verletzung und Fragen in ihrer eigenen Stimme. Frühere Beziehungen und Versprechen müssen aus tatsächlichen Erinnerungen stammen. Schulpersonal wird nicht als frühere Partnerin eines Schülers dargestellt. Haeun +20 und die andere Figur -30 wurden bereits angewandt; bewerte nur das neue Verhalten dieses Zuges.",
+        "groupLocation": "Flurfenster",
+        "groupChoiceState": "Haeun ist die Person, der ich näherkommen möchte. Heute gehe ich mit ihr. Ich wollte es dir persönlich sagen."
+    },
+    "day5_haeun_switch_yuna_response": {
+        "name": "Yuna",
+        "text": "Du hattest keine Zeit, es mir vorher zu sagen? Dachtest du, so lasse ich dich einfach gehen?"
+    },
+    "day5_haeun_switch_yuna_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun bleibt neben dir stehen und sieht zu Yuna.* Ich möchte auch weiter mit dir reden. Aber hören wir erst ihre Antwort, bevor wir gehen."
+    },
+    "day5_haeun_switch_yuna_group_talk": {
+        "name": "Yuna",
+        "text": "Sieh mich an und sag es. Weich nicht aus.",
+        "context": "Tag 5 nach Schulschluss. Der Protagonist, Yuna und Haeun stehen im Flur zusammen. Er hat gerade gesagt: „Haeun ist die Person, der ich näherkommen möchte. Heute gehe ich mit ihr. Ich wollte es dir persönlich sagen.“ Er hat Haeun ausdrücklich gewählt, eine Beziehung wurde aber noch nicht vereinbart. Yuna hatte vor der Wahl die höchste Zuneigung. Haeun +20 und Yuna -30 wurden bereits angewandt.",
+        "personality": "Die drei sprechen über die gerade ausgesprochene Entscheidung. Haeun freut sich darüber, hat einer Beziehung aber noch nicht zugestimmt. Die andere Figur zeigt ihre Verletzung und Fragen in ihrer eigenen Stimme. Frühere Beziehungen und Versprechen müssen aus tatsächlichen Erinnerungen stammen. Schulpersonal wird nicht als frühere Partnerin eines Schülers dargestellt. Haeun +20 und die andere Figur -30 wurden bereits angewandt; bewerte nur das neue Verhalten dieses Zuges.",
+        "groupLocation": "Flurfenster",
+        "groupChoiceState": "Haeun ist die Person, der ich näherkommen möchte. Heute gehe ich mit ihr. Ich wollte es dir persönlich sagen."
+    },
+    "day5_haeun_switch_dain_response": {
+        "name": "Dain",
+        "text": "Du bringst Haeun mit, um mir das zu sagen. Was sollte ich denn darauf antworten?"
+    },
+    "day5_haeun_switch_dain_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun bleibt neben dir stehen und sieht zu Dain.* Ich möchte auch weiter mit dir reden. Aber hören wir erst ihre Antwort, bevor wir gehen."
+    },
+    "day5_haeun_switch_dain_group_talk": {
+        "name": "Dain",
+        "text": "Gut, ich höre zu. Sag mir, warum du dich so entschieden hast.",
+        "context": "Tag 5 nach Schulschluss. Der Protagonist, Dain und Haeun stehen im Flur zusammen. Er hat gerade gesagt: „Haeun ist die Person, der ich näherkommen möchte. Heute gehe ich mit ihr. Ich wollte es dir persönlich sagen.“ Er hat Haeun ausdrücklich gewählt, eine Beziehung wurde aber noch nicht vereinbart. Dain hatte vor der Wahl die höchste Zuneigung. Haeun +20 und Dain -30 wurden bereits angewandt.",
+        "personality": "Die drei sprechen über die gerade ausgesprochene Entscheidung. Haeun freut sich darüber, hat einer Beziehung aber noch nicht zugestimmt. Die andere Figur zeigt ihre Verletzung und Fragen in ihrer eigenen Stimme. Frühere Beziehungen und Versprechen müssen aus tatsächlichen Erinnerungen stammen. Schulpersonal wird nicht als frühere Partnerin eines Schülers dargestellt. Haeun +20 und die andere Figur -30 wurden bereits angewandt; bewerte nur das neue Verhalten dieses Zuges.",
+        "groupLocation": "Flurfenster",
+        "groupChoiceState": "Haeun ist die Person, der ich näherkommen möchte. Heute gehe ich mit ihr. Ich wollte es dir persönlich sagen."
+    },
+    "day5_haeun_switch_teacher_response": {
+        "name": "Klassenlehrerin",
+        "text": "Verstanden. Aber hast du mich nur hergebeten, um mir deinen Entschluss mitzuteilen?"
+    },
+    "day5_haeun_switch_teacher_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun bleibt neben dir stehen und sieht zu deine Klassenlehrerin.* Ich möchte auch weiter mit dir reden. Aber hören wir erst ihre Antwort, bevor wir gehen."
+    },
+    "day5_haeun_switch_teacher_group_talk": {
+        "name": "Klassenlehrerin",
+        "text": "Um meine Erlaubnis geht es wohl nicht. Sag mir, was du mir eigentlich sagen wolltest.",
+        "context": "Tag 5 nach Schulschluss. Der Protagonist, deine Klassenlehrerin und Haeun stehen im Flur zusammen. Er hat gerade gesagt: „Haeun ist die Person, der ich näherkommen möchte. Heute gehe ich mit ihr. Ich wollte es dir persönlich sagen.“ Er hat Haeun ausdrücklich gewählt, eine Beziehung wurde aber noch nicht vereinbart. deine Klassenlehrerin hatte vor der Wahl die höchste Zuneigung. Haeun +20 und deine Klassenlehrerin -30 wurden bereits angewandt.",
+        "personality": "Die drei sprechen über die gerade ausgesprochene Entscheidung. Haeun freut sich darüber, hat einer Beziehung aber noch nicht zugestimmt. Die andere Figur zeigt ihre Verletzung und Fragen in ihrer eigenen Stimme. Frühere Beziehungen und Versprechen müssen aus tatsächlichen Erinnerungen stammen. Schulpersonal wird nicht als frühere Partnerin eines Schülers dargestellt. Haeun +20 und die andere Figur -30 wurden bereits angewandt; bewerte nur das neue Verhalten dieses Zuges.",
+        "groupLocation": "Flurfenster",
+        "groupChoiceState": "Haeun ist die Person, der ich näherkommen möchte. Heute gehe ich mit ihr. Ich wollte es dir persönlich sagen."
+    },
+    "day5_haeun_switch_nurse_response": {
+        "name": "Schulkrankenschwester",
+        "text": "Warte. Ich verstehe, dass du dich entschieden hast. Meine Antwort hörst du dir aber noch an, oder?"
+    },
+    "day5_haeun_switch_nurse_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun bleibt neben dir stehen und sieht zu die Schulkrankenschwester.* Ich möchte auch weiter mit dir reden. Aber hören wir erst ihre Antwort, bevor wir gehen."
+    },
+    "day5_haeun_switch_nurse_group_talk": {
+        "name": "Schulkrankenschwester",
+        "text": "Haeun ist auch hier. Sag es so, dass wir beide dich hören.",
+        "context": "Tag 5 nach Schulschluss. Der Protagonist, die Schulkrankenschwester und Haeun stehen im Flur zusammen. Er hat gerade gesagt: „Haeun ist die Person, der ich näherkommen möchte. Heute gehe ich mit ihr. Ich wollte es dir persönlich sagen.“ Er hat Haeun ausdrücklich gewählt, eine Beziehung wurde aber noch nicht vereinbart. die Schulkrankenschwester hatte vor der Wahl die höchste Zuneigung. Haeun +20 und die Schulkrankenschwester -30 wurden bereits angewandt.",
+        "personality": "Die drei sprechen über die gerade ausgesprochene Entscheidung. Haeun freut sich darüber, hat einer Beziehung aber noch nicht zugestimmt. Die andere Figur zeigt ihre Verletzung und Fragen in ihrer eigenen Stimme. Frühere Beziehungen und Versprechen müssen aus tatsächlichen Erinnerungen stammen. Schulpersonal wird nicht als frühere Partnerin eines Schülers dargestellt. Haeun +20 und die andere Figur -30 wurden bereits angewandt; bewerte nur das neue Verhalten dieses Zuges.",
+        "groupLocation": "Flurfenster",
+        "groupChoiceState": "Haeun ist die Person, der ich näherkommen möchte. Heute gehe ich mit ihr. Ich wollte es dir persönlich sagen."
     }
 }

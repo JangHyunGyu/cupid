@@ -658,7 +658,7 @@
     },
     "day5_haeun_leave_seoyeon": {
         "name": "{name}",
-        "text": "*You tell Seoyeon that you want to spend today with Haeun. A brief reply arrives. You pocket your phone without showing it to Haeun.*"
+        "text": "*You ask Seoyeon to talk. You face each other by the hallway window, and Haeun stops beside you.* Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person."
     },
     "day5_haeun_offer_yuna": {
         "name": "Haeun",
@@ -666,7 +666,7 @@
     },
     "day5_haeun_leave_yuna": {
         "name": "{name}",
-        "text": "*You tell Yuna that you want to spend today with Haeun. A brief reply arrives. You pocket your phone without showing it to Haeun.*"
+        "text": "*You ask Yuna to talk. You face each other by the hallway window, and Haeun stops beside you.* Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person."
     },
     "day5_haeun_offer_dain": {
         "name": "Haeun",
@@ -674,7 +674,7 @@
     },
     "day5_haeun_leave_dain": {
         "name": "{name}",
-        "text": "*You tell Dain that you want to spend today with Haeun. A brief reply arrives. You pocket your phone without showing it to Haeun.*"
+        "text": "*You ask Dain to talk. You face each other by the hallway window, and Haeun stops beside you.* Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person."
     },
     "day5_haeun_offer_teacher": {
         "name": "Haeun",
@@ -682,7 +682,7 @@
     },
     "day5_haeun_leave_teacher": {
         "name": "{name}",
-        "text": "*You tell your homeroom teacher that you want to spend today with Haeun. A brief reply arrives. You pocket your phone without showing it to Haeun.*"
+        "text": "*You ask your homeroom teacher to talk. You face each other by the hallway window, and Haeun stops beside you.* Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person."
     },
     "day5_haeun_offer_nurse": {
         "name": "Haeun",
@@ -690,6 +690,86 @@
     },
     "day5_haeun_leave_nurse": {
         "name": "{name}",
-        "text": "*You tell the school nurse that you want to spend today with Haeun. A brief reply arrives. You pocket your phone without showing it to Haeun.*"
+        "text": "*You ask the school nurse to talk. You face each other by the hallway window, and Haeun stops beside you.* Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person."
+    },
+    "day5_haeun_switch_seoyeon_response": {
+        "name": "Seoyeon",
+        "text": "You’re telling me this in front of Haeun. Since when have you felt that way?"
+    },
+    "day5_haeun_switch_seoyeon_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun stays beside you and looks at Seoyeon.* I want to talk with you more too. But let’s hear what Seoyeon has to say before we go."
+    },
+    "day5_haeun_switch_seoyeon_group_talk": {
+        "name": "Seoyeon",
+        "text": "Help me understand. Did something change today, or have you been thinking about this for a while?",
+        "context": "Day 5 after school. The protagonist, Seoyeon and Haeun face each other in the hallway. The protagonist just said: “Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person.” Haeun was explicitly chosen, but they have not agreed to date. Seoyeon had the highest affinity before this choice. Haeun +20 and Seoyeon -30 are already applied.",
+        "personality": "The three discuss the declaration just made. Haeun welcomes being chosen but has not agreed to date yet. The other character expresses hurt and questions in her own voice. Existing relationships and promises must come from actual memory. School staff are not portrayed as having dated a student. The entry changes, Haeun +20 and the other character -30, have already been applied; judge only new conduct this turn.",
+        "groupLocation": "Hallway window",
+        "groupChoiceState": "Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person."
+    },
+    "day5_haeun_switch_yuna_response": {
+        "name": "Yuna",
+        "text": "Was there no time to tell me first? Did you think I’d just let you go if I heard it like this?"
+    },
+    "day5_haeun_switch_yuna_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun stays beside you and looks at Yuna.* I want to talk with you more too. But let’s hear what Yuna has to say before we go."
+    },
+    "day5_haeun_switch_yuna_group_talk": {
+        "name": "Yuna",
+        "text": "Look at me and tell me. Don’t change the subject.",
+        "context": "Day 5 after school. The protagonist, Yuna and Haeun face each other in the hallway. The protagonist just said: “Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person.” Haeun was explicitly chosen, but they have not agreed to date. Yuna had the highest affinity before this choice. Haeun +20 and Yuna -30 are already applied.",
+        "personality": "The three discuss the declaration just made. Haeun welcomes being chosen but has not agreed to date yet. The other character expresses hurt and questions in her own voice. Existing relationships and promises must come from actual memory. School staff are not portrayed as having dated a student. The entry changes, Haeun +20 and the other character -30, have already been applied; judge only new conduct this turn.",
+        "groupLocation": "Hallway window",
+        "groupChoiceState": "Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person."
+    },
+    "day5_haeun_switch_dain_response": {
+        "name": "Dain",
+        "text": "You brought Haeun along to tell me. What did you expect me to say?"
+    },
+    "day5_haeun_switch_dain_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun stays beside you and looks at Dain.* I want to talk with you more too. But let’s hear what Dain has to say before we go."
+    },
+    "day5_haeun_switch_dain_group_talk": {
+        "name": "Dain",
+        "text": "All right. I’m listening. Tell me why you decided that.",
+        "context": "Day 5 after school. The protagonist, Dain and Haeun face each other in the hallway. The protagonist just said: “Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person.” Haeun was explicitly chosen, but they have not agreed to date. Dain had the highest affinity before this choice. Haeun +20 and Dain -30 are already applied.",
+        "personality": "The three discuss the declaration just made. Haeun welcomes being chosen but has not agreed to date yet. The other character expresses hurt and questions in her own voice. Existing relationships and promises must come from actual memory. School staff are not portrayed as having dated a student. The entry changes, Haeun +20 and the other character -30, have already been applied; judge only new conduct this turn.",
+        "groupLocation": "Hallway window",
+        "groupChoiceState": "Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person."
+    },
+    "day5_haeun_switch_teacher_response": {
+        "name": "Homeroom Teacher",
+        "text": "All right. But did you ask me here just to announce your decision?"
+    },
+    "day5_haeun_switch_teacher_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun stays beside you and looks at your homeroom teacher.* I want to talk with you more too. But let’s hear what your homeroom teacher has to say before we go."
+    },
+    "day5_haeun_switch_teacher_group_talk": {
+        "name": "Homeroom Teacher",
+        "text": "You aren’t asking my permission, I assume. Tell me what you actually wanted to say to me.",
+        "context": "Day 5 after school. The protagonist, your homeroom teacher and Haeun face each other in the hallway. The protagonist just said: “Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person.” Haeun was explicitly chosen, but they have not agreed to date. your homeroom teacher had the highest affinity before this choice. Haeun +20 and your homeroom teacher -30 are already applied.",
+        "personality": "The three discuss the declaration just made. Haeun welcomes being chosen but has not agreed to date yet. The other character expresses hurt and questions in her own voice. Existing relationships and promises must come from actual memory. School staff are not portrayed as having dated a student. The entry changes, Haeun +20 and the other character -30, have already been applied; judge only new conduct this turn.",
+        "groupLocation": "Hallway window",
+        "groupChoiceState": "Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person."
+    },
+    "day5_haeun_switch_nurse_response": {
+        "name": "School Nurse",
+        "text": "Wait. I understand you’ve decided, but you’re going to hear my answer before leaving, right?"
+    },
+    "day5_haeun_switch_nurse_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun stays beside you and looks at the school nurse.* I want to talk with you more too. But let’s hear what the school nurse has to say before we go."
+    },
+    "day5_haeun_switch_nurse_group_talk": {
+        "name": "School Nurse",
+        "text": "Haeun is here too. Say it so we can both hear you.",
+        "context": "Day 5 after school. The protagonist, the school nurse and Haeun face each other in the hallway. The protagonist just said: “Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person.” Haeun was explicitly chosen, but they have not agreed to date. the school nurse had the highest affinity before this choice. Haeun +20 and the school nurse -30 are already applied.",
+        "personality": "The three discuss the declaration just made. Haeun welcomes being chosen but has not agreed to date yet. The other character expresses hurt and questions in her own voice. Existing relationships and promises must come from actual memory. School staff are not portrayed as having dated a student. The entry changes, Haeun +20 and the other character -30, have already been applied; judge only new conduct this turn.",
+        "groupLocation": "Hallway window",
+        "groupChoiceState": "Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person."
     }
 }

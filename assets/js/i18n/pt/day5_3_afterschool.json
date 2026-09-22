@@ -658,7 +658,7 @@
     },
     "day5_haeun_leave_seoyeon": {
         "name": "{name}",
-        "text": "*Você avisa Seoyeon que quer passar o dia com Haeun. Chega uma resposta curta. Você guarda o celular sem mostrá-la a Haeun.*"
+        "text": "*Você pede para conversar com Seoyeon. Vocês se encontram junto à janela do corredor, e Haeun para ao seu lado.* É da Haeun que eu quero me aproximar. Hoje vou embora com ela. Queria dizer isso pessoalmente."
     },
     "day5_haeun_offer_yuna": {
         "name": "Haeun",
@@ -666,7 +666,7 @@
     },
     "day5_haeun_leave_yuna": {
         "name": "{name}",
-        "text": "*Você avisa Yuna que quer passar o dia com Haeun. Chega uma resposta curta. Você guarda o celular sem mostrá-la a Haeun.*"
+        "text": "*Você pede para conversar com Yuna. Vocês se encontram junto à janela do corredor, e Haeun para ao seu lado.* É da Haeun que eu quero me aproximar. Hoje vou embora com ela. Queria dizer isso pessoalmente."
     },
     "day5_haeun_offer_dain": {
         "name": "Haeun",
@@ -674,7 +674,7 @@
     },
     "day5_haeun_leave_dain": {
         "name": "{name}",
-        "text": "*Você avisa Dain que quer passar o dia com Haeun. Chega uma resposta curta. Você guarda o celular sem mostrá-la a Haeun.*"
+        "text": "*Você pede para conversar com Dain. Vocês se encontram junto à janela do corredor, e Haeun para ao seu lado.* É da Haeun que eu quero me aproximar. Hoje vou embora com ela. Queria dizer isso pessoalmente."
     },
     "day5_haeun_offer_teacher": {
         "name": "Haeun",
@@ -682,7 +682,7 @@
     },
     "day5_haeun_leave_teacher": {
         "name": "{name}",
-        "text": "*Você avisa sua professora que quer passar o dia com Haeun. Chega uma resposta curta. Você guarda o celular sem mostrá-la a Haeun.*"
+        "text": "*Você pede para conversar com a professora. Vocês se encontram junto à janela do corredor, e Haeun para ao seu lado.* É da Haeun que eu quero me aproximar. Hoje vou embora com ela. Queria dizer isso pessoalmente."
     },
     "day5_haeun_offer_nurse": {
         "name": "Haeun",
@@ -690,6 +690,86 @@
     },
     "day5_haeun_leave_nurse": {
         "name": "{name}",
-        "text": "*Você avisa a enfermeira escolar que quer passar o dia com Haeun. Chega uma resposta curta. Você guarda o celular sem mostrá-la a Haeun.*"
+        "text": "*Você pede para conversar com a enfermeira escolar. Vocês se encontram junto à janela do corredor, e Haeun para ao seu lado.* É da Haeun que eu quero me aproximar. Hoje vou embora com ela. Queria dizer isso pessoalmente."
+    },
+    "day5_haeun_switch_seoyeon_response": {
+        "name": "Seoyeon",
+        "text": "Você está me dizendo isso na frente da Haeun. Desde quando pensa assim?"
+    },
+    "day5_haeun_switch_seoyeon_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun continua ao seu lado e olha para Seoyeon.* Eu também quero conversar mais com você. Mas vamos ouvir o que ela tem a dizer antes de sair."
+    },
+    "day5_haeun_switch_seoyeon_group_talk": {
+        "name": "Seoyeon",
+        "text": "Me explica. Mudou alguma coisa hoje ou você já vinha pensando nisso?",
+        "context": "Dia 5, depois da aula. O protagonista, Seoyeon e Haeun estão frente a frente no corredor. Ele acabou de dizer: “É da Haeun que eu quero me aproximar. Hoje vou embora com ela. Queria dizer isso pessoalmente.” Escolheu Haeun explicitamente, mas ainda não combinaram namorar. Seoyeon tinha a maior afinidade antes da escolha. Haeun +20 e Seoyeon -30 já foram aplicados.",
+        "personality": "Os três conversam sobre a declaração que acabou de ser feita. Haeun gosta de ser escolhida, mas ainda não aceitou namorar. A outra pessoa expressa mágoa e dúvidas com a própria voz. Relações e promessas anteriores precisam constar nas memórias reais. Não retrate funcionárias da escola como ex-namoradas de um aluno. Haeun +20 e a outra pessoa -30 já foram aplicados; avalie apenas a conduta nova deste turno.",
+        "groupLocation": "Janela do corredor",
+        "groupChoiceState": "É da Haeun que eu quero me aproximar. Hoje vou embora com ela. Queria dizer isso pessoalmente."
+    },
+    "day5_haeun_switch_yuna_response": {
+        "name": "Yuna",
+        "text": "Não deu para me contar antes? Achou que, ouvindo desse jeito, eu ia deixar você ir sem falar nada?"
+    },
+    "day5_haeun_switch_yuna_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun continua ao seu lado e olha para Yuna.* Eu também quero conversar mais com você. Mas vamos ouvir o que ela tem a dizer antes de sair."
+    },
+    "day5_haeun_switch_yuna_group_talk": {
+        "name": "Yuna",
+        "text": "Olhe para mim e fale. Não mude de assunto.",
+        "context": "Dia 5, depois da aula. O protagonista, Yuna e Haeun estão frente a frente no corredor. Ele acabou de dizer: “É da Haeun que eu quero me aproximar. Hoje vou embora com ela. Queria dizer isso pessoalmente.” Escolheu Haeun explicitamente, mas ainda não combinaram namorar. Yuna tinha a maior afinidade antes da escolha. Haeun +20 e Yuna -30 já foram aplicados.",
+        "personality": "Os três conversam sobre a declaração que acabou de ser feita. Haeun gosta de ser escolhida, mas ainda não aceitou namorar. A outra pessoa expressa mágoa e dúvidas com a própria voz. Relações e promessas anteriores precisam constar nas memórias reais. Não retrate funcionárias da escola como ex-namoradas de um aluno. Haeun +20 e a outra pessoa -30 já foram aplicados; avalie apenas a conduta nova deste turno.",
+        "groupLocation": "Janela do corredor",
+        "groupChoiceState": "É da Haeun que eu quero me aproximar. Hoje vou embora com ela. Queria dizer isso pessoalmente."
+    },
+    "day5_haeun_switch_dain_response": {
+        "name": "Dain",
+        "text": "Você trouxe a Haeun para me dizer isso. Esperava que eu respondesse o quê?"
+    },
+    "day5_haeun_switch_dain_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun continua ao seu lado e olha para Dain.* Eu também quero conversar mais com você. Mas vamos ouvir o que ela tem a dizer antes de sair."
+    },
+    "day5_haeun_switch_dain_group_talk": {
+        "name": "Dain",
+        "text": "Tá, estou ouvindo. Diga por que decidiu isso.",
+        "context": "Dia 5, depois da aula. O protagonista, Dain e Haeun estão frente a frente no corredor. Ele acabou de dizer: “É da Haeun que eu quero me aproximar. Hoje vou embora com ela. Queria dizer isso pessoalmente.” Escolheu Haeun explicitamente, mas ainda não combinaram namorar. Dain tinha a maior afinidade antes da escolha. Haeun +20 e Dain -30 já foram aplicados.",
+        "personality": "Os três conversam sobre a declaração que acabou de ser feita. Haeun gosta de ser escolhida, mas ainda não aceitou namorar. A outra pessoa expressa mágoa e dúvidas com a própria voz. Relações e promessas anteriores precisam constar nas memórias reais. Não retrate funcionárias da escola como ex-namoradas de um aluno. Haeun +20 e a outra pessoa -30 já foram aplicados; avalie apenas a conduta nova deste turno.",
+        "groupLocation": "Janela do corredor",
+        "groupChoiceState": "É da Haeun que eu quero me aproximar. Hoje vou embora com ela. Queria dizer isso pessoalmente."
+    },
+    "day5_haeun_switch_teacher_response": {
+        "name": "Professora",
+        "text": "Entendi. Mas você me chamou aqui só para comunicar sua decisão?"
+    },
+    "day5_haeun_switch_teacher_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun continua ao seu lado e olha para a professora.* Eu também quero conversar mais com você. Mas vamos ouvir o que ela tem a dizer antes de sair."
+    },
+    "day5_haeun_switch_teacher_group_talk": {
+        "name": "Professora",
+        "text": "Imagino que não esteja pedindo minha permissão. Diga o que realmente queria me falar.",
+        "context": "Dia 5, depois da aula. O protagonista, a professora e Haeun estão frente a frente no corredor. Ele acabou de dizer: “É da Haeun que eu quero me aproximar. Hoje vou embora com ela. Queria dizer isso pessoalmente.” Escolheu Haeun explicitamente, mas ainda não combinaram namorar. a professora tinha a maior afinidade antes da escolha. Haeun +20 e a professora -30 já foram aplicados.",
+        "personality": "Os três conversam sobre a declaração que acabou de ser feita. Haeun gosta de ser escolhida, mas ainda não aceitou namorar. A outra pessoa expressa mágoa e dúvidas com a própria voz. Relações e promessas anteriores precisam constar nas memórias reais. Não retrate funcionárias da escola como ex-namoradas de um aluno. Haeun +20 e a outra pessoa -30 já foram aplicados; avalie apenas a conduta nova deste turno.",
+        "groupLocation": "Janela do corredor",
+        "groupChoiceState": "É da Haeun que eu quero me aproximar. Hoje vou embora com ela. Queria dizer isso pessoalmente."
+    },
+    "day5_haeun_switch_nurse_response": {
+        "name": "Enfermeira",
+        "text": "Espere. Entendi que você já decidiu, mas vai ouvir minha resposta antes de sair, não vai?"
+    },
+    "day5_haeun_switch_nurse_haeun": {
+        "name": "Haeun",
+        "text": "*Haeun continua ao seu lado e olha para a enfermeira escolar.* Eu também quero conversar mais com você. Mas vamos ouvir o que ela tem a dizer antes de sair."
+    },
+    "day5_haeun_switch_nurse_group_talk": {
+        "name": "Enfermeira",
+        "text": "A Haeun também está aqui. Fale para nós duas ouvirmos.",
+        "context": "Dia 5, depois da aula. O protagonista, a enfermeira escolar e Haeun estão frente a frente no corredor. Ele acabou de dizer: “É da Haeun que eu quero me aproximar. Hoje vou embora com ela. Queria dizer isso pessoalmente.” Escolheu Haeun explicitamente, mas ainda não combinaram namorar. a enfermeira escolar tinha a maior afinidade antes da escolha. Haeun +20 e a enfermeira escolar -30 já foram aplicados.",
+        "personality": "Os três conversam sobre a declaração que acabou de ser feita. Haeun gosta de ser escolhida, mas ainda não aceitou namorar. A outra pessoa expressa mágoa e dúvidas com a própria voz. Relações e promessas anteriores precisam constar nas memórias reais. Não retrate funcionárias da escola como ex-namoradas de um aluno. Haeun +20 e a outra pessoa -30 já foram aplicados; avalie apenas a conduta nova deste turno.",
+        "groupLocation": "Janela do corredor",
+        "groupChoiceState": "É da Haeun que eu quero me aproximar. Hoje vou embora com ela. Queria dizer isso pessoalmente."
     }
 }

@@ -7,12 +7,130 @@
 })(typeof window !== 'undefined' ? window : null, function (options) {
     'use strict';
     const { storage, crypto, TextEncoder, corrections } = options;
-    const manifest = corrections || [{
-        id: 'main-route-seoyeon-20260909',
-        deviceSha256: '9fe6b2e83ad606ac68ff1832e42a7f1fd6d2f076a73ea469dec209639eefe2fb',
-        character: 'Seoyeon', galleryCharacter: 'seyoun',
-        perfectCG: 'ending_perfect_seoyeon', perfectEnding: 'perfect_seoyeon'
-    },{"id": "gallery-unlock-20260922-dain", "deviceSha256": "ede48cab5f4481ebb12140e4739e67a2a078acd29afee3c96b620014f654ef1a", "character": "Dain", "galleryCharacter": "dain", "perfectCG": "ending_perfect_dain", "perfectEnding": "perfect_dain"},{"id": "gallery-unlock-20260922-seoyeon", "deviceSha256": "62a80221a16c1d396077ecf9f929b59242c3c26f23983c1c3ccf4339aa84daa2", "character": "Seoyeon", "galleryCharacter": "seyoun", "perfectCG": "ending_perfect_seoyeon", "perfectEnding": "perfect_seoyeon"},{"id": "gallery-unlock-20260922-yuna", "deviceSha256": "62a80221a16c1d396077ecf9f929b59242c3c26f23983c1c3ccf4339aa84daa2", "character": "Yuna", "galleryCharacter": "yuna", "perfectCG": "ending_perfect_yuna", "perfectEnding": "perfect_yuna"},{"id": "gallery-unlock-20260922-dain", "deviceSha256": "62a80221a16c1d396077ecf9f929b59242c3c26f23983c1c3ccf4339aa84daa2", "character": "Dain", "galleryCharacter": "dain", "perfectCG": "ending_perfect_dain", "perfectEnding": "perfect_dain"},{"id": "gallery-unlock-20260922-teacher", "deviceSha256": "62a80221a16c1d396077ecf9f929b59242c3c26f23983c1c3ccf4339aa84daa2", "character": "Teacher", "galleryCharacter": "teacher", "perfectCG": "ending_perfect_teacher", "perfectEnding": "perfect_teacher"},{"id": "gallery-unlock-20260922-nurse", "deviceSha256": "62a80221a16c1d396077ecf9f929b59242c3c26f23983c1c3ccf4339aa84daa2", "character": "Nurse", "galleryCharacter": "nurse", "perfectCG": "ending_perfect_nurse", "perfectEnding": "perfect_nurse"}];
+    const manifest = corrections || [
+    {
+        "id": "main-route-seoyeon-20260909",
+        "deviceSha256": "9fe6b2e83ad606ac68ff1832e42a7f1fd6d2f076a73ea469dec209639eefe2fb",
+        "character": "Seoyeon",
+        "galleryCharacter": "seyoun",
+        "perfectCG": "ending_perfect_seoyeon",
+        "perfectEnding": "perfect_seoyeon"
+    },
+    {
+        "id": "gallery-unlock-20260922-dain",
+        "deviceSha256": "ede48cab5f4481ebb12140e4739e67a2a078acd29afee3c96b620014f654ef1a",
+        "character": "Dain",
+        "galleryCharacter": "dain",
+        "perfectCG": "ending_perfect_dain",
+        "perfectEnding": "perfect_dain"
+    },
+    {
+        "id": "gallery-unlock-20260922-seoyeon",
+        "deviceSha256": "62a80221a16c1d396077ecf9f929b59242c3c26f23983c1c3ccf4339aa84daa2",
+        "character": "Seoyeon",
+        "galleryCharacter": "seyoun",
+        "perfectCG": "ending_perfect_seoyeon",
+        "perfectEnding": "perfect_seoyeon"
+    },
+    {
+        "id": "gallery-unlock-20260922-yuna",
+        "deviceSha256": "62a80221a16c1d396077ecf9f929b59242c3c26f23983c1c3ccf4339aa84daa2",
+        "character": "Yuna",
+        "galleryCharacter": "yuna",
+        "perfectCG": "ending_perfect_yuna",
+        "perfectEnding": "perfect_yuna"
+    },
+    {
+        "id": "gallery-unlock-20260922-dain",
+        "deviceSha256": "62a80221a16c1d396077ecf9f929b59242c3c26f23983c1c3ccf4339aa84daa2",
+        "character": "Dain",
+        "galleryCharacter": "dain",
+        "perfectCG": "ending_perfect_dain",
+        "perfectEnding": "perfect_dain"
+    },
+    {
+        "id": "gallery-unlock-20260922-teacher",
+        "deviceSha256": "62a80221a16c1d396077ecf9f929b59242c3c26f23983c1c3ccf4339aa84daa2",
+        "character": "Teacher",
+        "galleryCharacter": "teacher",
+        "perfectCG": "ending_perfect_teacher",
+        "perfectEnding": "perfect_teacher"
+    },
+    {
+        "id": "gallery-unlock-20260922-nurse",
+        "deviceSha256": "62a80221a16c1d396077ecf9f929b59242c3c26f23983c1c3ccf4339aa84daa2",
+        "character": "Nurse",
+        "galleryCharacter": "nurse",
+        "perfectCG": "ending_perfect_nurse",
+        "perfectEnding": "perfect_nurse"
+    },
+    {
+        "id": "gallery-baseline-20260922-dain",
+        "deviceSha256": "ede48cab5f4481ebb12140e4739e67a2a078acd29afee3c96b620014f654ef1a",
+        "character": "Dain",
+        "galleryCharacter": "dain",
+        "perfectCG": "ending_perfect_dain",
+        "perfectEnding": "perfect_dain",
+        "correctedPeak": 10,
+        "correctedCurrent": -2,
+        "restoreFrom99": true
+    },
+    {
+        "id": "gallery-baseline-20260922-dain",
+        "deviceSha256": "62a80221a16c1d396077ecf9f929b59242c3c26f23983c1c3ccf4339aa84daa2",
+        "character": "Dain",
+        "galleryCharacter": "dain",
+        "perfectCG": "ending_perfect_dain",
+        "perfectEnding": "perfect_dain",
+        "correctedPeak": 45,
+        "correctedCurrent": -4,
+        "restoreFrom99": true
+    },
+    {
+        "id": "gallery-baseline-20260922-nurse",
+        "deviceSha256": "62a80221a16c1d396077ecf9f929b59242c3c26f23983c1c3ccf4339aa84daa2",
+        "character": "Nurse",
+        "galleryCharacter": "nurse",
+        "perfectCG": "ending_perfect_nurse",
+        "perfectEnding": "perfect_nurse",
+        "correctedPeak": 11,
+        "correctedCurrent": 11,
+        "restoreFrom99": true
+    },
+    {
+        "id": "gallery-baseline-20260922-seoyeon",
+        "deviceSha256": "62a80221a16c1d396077ecf9f929b59242c3c26f23983c1c3ccf4339aa84daa2",
+        "character": "Seoyeon",
+        "galleryCharacter": "seyoun",
+        "perfectCG": "ending_perfect_seoyeon",
+        "perfectEnding": "perfect_seoyeon",
+        "correctedPeak": 97,
+        "correctedCurrent": 97,
+        "restoreFrom99": true
+    },
+    {
+        "id": "gallery-baseline-20260922-teacher",
+        "deviceSha256": "62a80221a16c1d396077ecf9f929b59242c3c26f23983c1c3ccf4339aa84daa2",
+        "character": "Teacher",
+        "galleryCharacter": "teacher",
+        "perfectCG": "ending_perfect_teacher",
+        "perfectEnding": "perfect_teacher",
+        "correctedPeak": 19,
+        "correctedCurrent": 8,
+        "restoreFrom99": true
+    },
+    {
+        "id": "gallery-baseline-20260922-yuna",
+        "deviceSha256": "62a80221a16c1d396077ecf9f929b59242c3c26f23983c1c3ccf4339aa84daa2",
+        "character": "Yuna",
+        "galleryCharacter": "yuna",
+        "perfectCG": "ending_perfect_yuna",
+        "perfectEnding": "perfect_yuna",
+        "correctedPeak": 92,
+        "correctedCurrent": 5,
+        "restoreFrom99": true
+    }
+];
     let matchedDevice = '';
     let matches = [];
     const isObject = value => value && typeof value === 'object' && !Array.isArray(value);
@@ -23,8 +141,10 @@
             ...(Array.isArray(data.appliedAffinityCorrections) ? data.appliedAffinityCorrections : []), id
         ])];
     }
-    function cap(value) {
-        return Number(value) >= 100 ? 99 : value;
+    function cap(value, correction, kind) {
+        const target = kind === 'peak' ? correction.correctedPeak : correction.correctedCurrent;
+        const baseline = Number.isInteger(target) ? Math.max(-100, Math.min(99, target)) : 99;
+        return Number(value) >= (correction.restoreFrom99 ? 99 : 100) ? baseline : value;
     }
     function correctGallery(data) {
         if (!isObject(data)) return false;
@@ -33,8 +153,8 @@
             if (marked(data, correction.id)) continue;
             const character = data.characters?.[correction.galleryCharacter];
             if (isObject(character)) {
-                if ('maxAffinity' in character) character.maxAffinity = cap(character.maxAffinity);
-                if ('currentAffinity' in character) character.currentAffinity = cap(character.currentAffinity);
+                if ('maxAffinity' in character) character.maxAffinity = cap(character.maxAffinity, correction, 'peak');
+                if ('currentAffinity' in character) character.currentAffinity = cap(character.currentAffinity, correction, 'current');
                 for (const key of ['unlocked', 'unlockedAt', 'perfectEndingCleared', 'trueEndingCleared']) delete character[key];
             }
             if (isObject(data.cg)) delete data.cg[correction.perfectCG];
@@ -50,7 +170,7 @@
         for (const correction of active()) {
             if (marked(data, correction.id)) continue;
             const stat = data.stats?.[correction.character];
-            if (isObject(stat) && 'affinity' in stat) stat.affinity = cap(stat.affinity);
+            if (isObject(stat) && 'affinity' in stat) stat.affinity = cap(stat.affinity, correction, 'current');
             mark(data, correction.id);
             changed = true;
         }

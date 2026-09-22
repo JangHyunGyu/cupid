@@ -146,7 +146,7 @@ function getPromptData(lang = 'ko') {
         Dain: useKo ? '이름을 편하게 부르고, 바보야 같은 애칭은 장난이 자연스럽게 오른 순간에만 쓴다.' : 'Use the name casually. Teasing names such as "dummy" belong only in naturally playful beats.',
         Teacher: useKo ? '이름을 알면 이름을 쓰고, 학교 맥락에서는 학생이라는 호칭을 필요할 때만 쓴다.' : 'Use the name when known. Use "student" only when the school context genuinely needs it.',
         Nurse: useKo ? '이름 또는 학생을 쓰며, 내 환자 같은 장난스러운 호칭은 가끔만 쓴다.' : 'Use the name or "student" naturally. "My patient" is an occasional tease, not a default address.',
-        Haeun: useKo ? '주인공의 이름을 알면 이름 뒤에 선배를 붙여 부르고, 모르면 선배라고 부른다. 서연은 서연 선배라고 부른다. 호칭을 문장마다 되풀이하지 않는다.' : 'Treat the protagonist as Haeun\'s senior. When the name is known, place the language\'s natural senior honorific after that name; otherwise use the natural equivalent of "senior." Call Seoyeon her senior too. Do not repeat an address term every line.'
+        Haeun: useKo ? '주인공의 이름을 알면 이름 뒤에 선배를 붙여 부르고, 모르면 선배라고 부른다. 서연·유나·다인은 각각 서연 선배·유나 선배·다인 선배라고 부른다. 교직원은 선생님이라고 부른다. 호칭을 문장마다 되풀이하지 않는다.' : 'Treat the protagonist as Haeun\'s senior. When the name is known, place the language\'s natural senior honorific after that name; otherwise use the natural equivalent of "senior." Seoyeon, Yuna and Dain are all her seniors; in Korean call them 서연 선배, 유나 선배 and 다인 선배, and in Japanese use their names plus 先輩. Address school staff as teachers, not seniors. Do not repeat an address term every line.'
     };
 
     const relationshipProfiles = {
@@ -2270,7 +2270,7 @@ function buildCupidGroupSystemPrompt(params = {}) {
     const exactNames = normalizedParticipants.map(participant => JSON.stringify(participant.name)).join(', ');
     const characterCards = normalizedParticipants.map((participant) => {
         const personality = findPromptValue(data.personalities, participant, useKo ? '학교에서 살아가는 인물' : 'A person at the school');
-        const voice = findPromptValue(data.styleGuidelines, participant, useKo ? '이 인물다운 자연스러운 말투' : 'The character’s own natural voice');
+        const voice = [findPromptValue(data.styleGuidelines, participant, useKo ? '이 인물다운 자연스러운 말투' : 'The character’s own natural voice'), participant.id === 'Haeun' ? findPromptValue(data.addressingGuidelines, participant, '') : ''].filter(Boolean).join('\n');
         const interaction = findPromptValue(data.interactionGuidelines, participant, '');
         const criteria = findPromptValue(data.statCriteria, participant, '');
         const general = findPromptValue(data.generalInstructions, participant, '');
@@ -2440,7 +2440,7 @@ Include both characters exactly once in focus-character then companion order. na
         const currentAffinity = Number(affinities[participant.id] ?? 0);
         const intimacyGuidance = buildCupidAffinityIntimacyGuidance(effectiveLang, currentAffinity, {
             characterName: participant.name,
-            nonRomance: participant.id === 'Haeun'
+            nonRomance: participant.id === 'Haeun' && groupMode !== 'haeun_switch'
         });
         return useKo
             ? `${participant.name}: 현재 호감도=${currentAffinity}\n최근 사건과 기억=${gameContexts[participant.id] || '없음'}\n${intimacyGuidance}`

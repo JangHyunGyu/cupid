@@ -11,6 +11,26 @@ const id = 'main-route-seoyeon-20260909';
 const manifest = [{ id, deviceSha256: createHash('sha256').update(device).digest('hex'), character: 'Seoyeon', galleryCharacter: 'seyoun', perfectCG: 'ending_perfect_seoyeon', perfectEnding: 'perfect_seoyeon' }];
 const clone = value => JSON.parse(JSON.stringify(value));
 
+test('baseline rollback replaces prior 99 with separate verified peak/current, once per revision', async () => {
+    const next = { ...manifest[0], id: 'baseline-v2', correctedPeak: 45, correctedCurrent: -4, restoreFrom99: true };
+    const data = new Map([['cupid_device_id', device]]);
+    const api = createCorrections({ storage: {getItem:k=>data.get(k),setItem:(k,v)=>data.set(k,v)}, crypto:webcrypto,TextEncoder,corrections:[manifest[0],next] });
+    await api.ready;
+    for (const score of [99, 100]) {
+        const progress = { characters:{seyoun:{maxAffinity:score,currentAffinity:score,unlocked:true,perfectEndingCleared:true}}, cg:{ending_perfect_seoyeon:{unlocked:true}},endings:{perfect_seoyeon:{unlocked:true}}, appliedAffinityCorrections:[id] };
+        assert.equal(api.correctGallery(progress),true);
+        assert.equal(progress.characters.seyoun.maxAffinity,45);
+        assert.equal(progress.characters.seyoun.currentAffinity,-4);
+        assert.equal(progress.characters.seyoun.perfectEndingCleared,undefined);
+        assert.equal(progress.cg.ending_perfect_seoyeon,undefined);
+        const state={stats:{Seoyeon:{affinity:score}},appliedAffinityCorrections:[id]};
+        api.correctState(state);assert.equal(state.stats.Seoyeon.affinity,-4);
+        state.stats.Seoyeon.affinity=12;assert.equal(api.correctState(state),false);assert.equal(state.stats.Seoyeon.affinity,12);
+        progress.characters.seyoun.maxAffinity=48;assert.equal(api.correctGallery(progress),false);assert.equal(progress.characters.seyoun.maxAffinity,48);
+    }
+    const lower={stats:{Seoyeon:{affinity:-37}}};api.correctState(lower);assert.equal(lower.stats.Seoyeon.affinity,-37);
+});
+
 test('all five corrected perfect routes return to their own affinity checks, including credits', async () => {
     for (const [character, suffix, check] of [
         ['Seoyeon', 'seo', 'ending_aff_check_seo'], ['Yuna', 'yuna', 'ending_aff_check_yuna'],

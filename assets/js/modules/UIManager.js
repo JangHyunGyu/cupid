@@ -673,20 +673,20 @@ class UIManager {
         // 캐릭터 이름 매핑
         const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
         const nameMapByLang = {
-            ko: { Seoyeon: '서연', Yuna: '유나', Dain: '다인', Teacher: '담임', Nurse: '보건' },
-            ja: { Seoyeon: 'ソヨン', Yuna: 'ユナ', Dain: 'ダイン', Teacher: '担任の先生', Nurse: '保健室の先生' },
-            en: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Homeroom Teacher', Nurse: 'School Nurse' },
-            es: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Profesora tutora', Nurse: 'Enfermera escolar' },
-            fr: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Professeure', Nurse: 'Infirmière' },
-            de: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Klassenlehrerin', Nurse: 'Schulkrankenschwester' },
-            pt: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Professora da turma', Nurse: 'Enfermeira escolar' }
+            ko: { Seoyeon: '서연', Yuna: '유나', Dain: '다인', Teacher: '담임', Nurse: '보건', Haeun: '하은' },
+            ja: { Seoyeon: 'ソヨン', Yuna: 'ユナ', Dain: 'ダイン', Teacher: '担任の先生', Nurse: '保健室の先生', Haeun: 'ハウン' },
+            en: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Homeroom Teacher', Nurse: 'School Nurse', Haeun: 'Haeun' },
+            es: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Profesora tutora', Nurse: 'Enfermera escolar', Haeun: 'Haeun' },
+            fr: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Professeure', Nurse: 'Infirmière', Haeun: 'Haeun' },
+            de: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Klassenlehrerin', Nurse: 'Schulkrankenschwester', Haeun: 'Haeun' },
+            pt: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Professora da turma', Nurse: 'Enfermeira escolar', Haeun: 'Haeun' }
         };
         const nameMap = nameMapByLang[lang] || nameMapByLang['ko'];
 
         // 캐릭터 키 → 이미지 파일명 매핑 (화면 표시 여부 판별용)
         const charFileMap = {
             Seoyeon: 'seyoun', Yuna: 'yuna', Dain: 'dain',
-            Teacher: 'teacher', Nurse: 'nurse'
+            Teacher: 'teacher', Nurse: 'nurse', Haeun: 'haeun'
         };
 
         // 현재 화면에 보이는 캐릭터 슬롯 확인
