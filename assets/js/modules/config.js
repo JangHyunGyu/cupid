@@ -10,8 +10,11 @@
   }
   var scriptSrc = (document.currentScript && document.currentScript.src) || '';
   var base = scriptSrc ? scriptSrc.replace(/[^/]+(?:\?.*)?$/, '') : 'assets/js/modules/';
+  var v = '2.9.261';
   var code =
-    load(base + 'config.part1.js?v=2.9.261') +
-    load(base + 'config.part2.js?v=2.9.261');
+    load(base + 'config.part0.js?v=' + v) +
+    load(base + 'config.part1.js?v=' + v) +
+    load(base + 'config.part2.js?v=' + v) +
+    load(base + 'config.part3.js?v=' + v);
   (0, eval)(code);
 })();
