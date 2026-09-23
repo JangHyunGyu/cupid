@@ -1,18 +1,13 @@
 (function () {
-  function load(url) {
-    var x = new XMLHttpRequest();
-    x.open('GET', url, false);
-    x.send(null);
-    if (x.status < 200 || x.status >= 300) throw new Error('gallery part ' + url + ' ' + x.status);
-    return x.responseText;
+  var url =
+    'https://cdn.jsdelivr.net/gh/JangHyunGyu/cupid@dc9928b76e0cd92c4940573ae7d316820ad31457/assets/js/gallery-freetalk.js';
+  var x = new XMLHttpRequest();
+  x.open('GET', url, false);
+  x.send(null);
+  if (x.status < 200 || x.status >= 300) {
+    throw new Error('gallery-freetalk restore fetch failed: ' + x.status);
   }
-  var src = (document.currentScript && document.currentScript.src) || '';
-  var base = src ? src.replace(/[^/]+(?:\?.*)?$/, '') : 'assets/js/';
-  var v = '2.9.261';
-  var code = '';
-  for (var i = 0; i < 16; i++) {
-    var id = (i < 10 ? '0' : '') + i;
-    code += load(base + 'gallery-freetalk.p' + id + '.js?v=' + v);
-  }
-  (0, eval)(code);
+  var code = String(x.responseText || '')
+    .replace('this.HISTORY_WINDOW = 10;', 'this.HISTORY_WINDOW = 5;')
+    .replace('retainMessages: 6,', 'retainMessages: 3,');\n  (0, eval)(code);
 })();
