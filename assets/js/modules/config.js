@@ -1,20 +1,15 @@
 (function () {
-  function load(url) {
-    var x = new XMLHttpRequest();
-    x.open('GET', url, false);
-    x.send(null);
-    if (x.status < 200 || x.status >= 300) {
-      throw new Error('cupid config part load failed: ' + url + ' status ' + x.status);
-    }
-    return x.responseText;
+  var url =
+    'https://cdn.jsdelivr.net/gh/JangHyunGyu/cupid@dc9928b76e0cd92c4940573ae7d316820ad31457/assets/js/modules/config.js';
+  var x = new XMLHttpRequest();
+  x.open('GET', url, false);
+  x.send(null);
+  if (x.status < 200 || x.status >= 300) {
+    throw new Error('cupid config restore fetch failed: ' + x.status);
   }
-  var scriptSrc = (document.currentScript && document.currentScript.src) || '';
-  var base = scriptSrc ? scriptSrc.replace(/[^/]+(?:\?.*)?$/, '') : 'assets/js/modules/';
-  var v = '2.9.261';
-  var code = '';
-  for (var i = 0; i < 22; i++) {
-    var id = (i < 10 ? '0' : '') + i;
-    code += load(base + 'config.p' + id + '.js?v=' + v);
-  }
+  var code = String(x.responseText || '')
+    .replace('const ASSET_VERSION = "2.9.260"', 'const ASSET_VERSION = "2.9.261"')
+    .replace('Number(options.maxMessages) || 10)', 'Number(options.maxMessages) || 5)')
+    .replace('Number(options.retainMessages) || 6)', 'Number(options.retainMessages) || 3)');
   (0, eval)(code);
 })();
