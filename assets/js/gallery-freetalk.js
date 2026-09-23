@@ -9,5 +9,6 @@
   }
   var code = String(x.responseText || '')
     .replace('this.HISTORY_WINDOW = 10;', 'this.HISTORY_WINDOW = 5;')
-    .replace('retainMessages: 6,', 'retainMessages: 3,');\n  (0, eval)(code);
+    .replace('retainMessages: 6,', 'retainMessages: 3,');
+  (0, eval)(code);
 })();
