@@ -14,5 +14,4 @@ pages_build_output_dir = "."
 [[d1_databases]]
 binding = "DB"
 database_name = "cupid-gallery-unlocks"
-# REPLACE_AFTER_D1_CREATE
-database_id = "00000000-0000-0000-0000-000000000000"
+database_id = "f4f4fe52-b7f6-4dff-bb12-821e20c1d885"
