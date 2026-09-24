@@ -1648,23 +1648,32 @@ class GameEngine {
             // 🎬 현재 씬 ID 복원
             if (saveData.currentSceneId) this.sceneRenderer.currentSceneId = saveData.currentSceneId;
 
+            const isEncryptedStaticUrl = (value) => !!(
+                window.CupidMedia?.isProtectedPath?.(value)
+                && String(value).indexOf('/api/media?') === -1
+            );
+
             // 🖼️ 배경 이미지 즉시 표시 (로딩 화면 없이)
-            if (saveData.lastBgUrl) {
-                this.sceneRenderer.lastBgUrl = saveData.lastBgUrl;
-                this.uiManager.bgLayer.style.backgroundImage = `url(${saveData.lastBgUrl})`;
+            // 암호화 전 세이브의 정적 경로는 복호화 API로 다시 그린다.
+            if (saveData.lastBgUrl && !isEncryptedStaticUrl(saveData.lastBgUrl)) {
+                const bg = window.CupidMedia?.preferWebpUrl?.(saveData.lastBgUrl) || saveData.lastBgUrl;
+                this.sceneRenderer.lastBgUrl = bg;
+                this.uiManager.bgLayer.style.backgroundImage = `url(${bg})`;
             }
 
             // 👤 캐릭터 이미지 즉시 표시
             if (saveData.currentCharacters) {
                 for (const [slot, src] of Object.entries(saveData.currentCharacters)) {
-                    if (this.uiManager.charSlots[slot] && src) {
-                        // 저장된 이미지 URL로 캐릭터 표시 (XSS 방지)
-                        const img = document.createElement('img');
+                    if (!this.uiManager.charSlots[slot] || !src || isEncryptedStaticUrl(src)) continue;
+                    const img = document.createElement('img');
+                    img.alt = '';
+                    img.setAttribute('aria-hidden', 'true');
+                    this.uiManager.charSlots[slot].innerHTML = '';
+                    this.uiManager.charSlots[slot].appendChild(img);
+                    if (window.CupidMedia?.loadImageWithMediaFallback && String(src).indexOf('/api/media?') !== -1) {
+                        window.CupidMedia.loadImageWithMediaFallback(img, src);
+                    } else {
                         img.src = src;
-                        img.alt = '';
-                        img.setAttribute('aria-hidden', 'true');
-                        this.uiManager.charSlots[slot].innerHTML = '';
-                        this.uiManager.charSlots[slot].appendChild(img);
                     }
                 }
             }

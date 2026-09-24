@@ -8,6 +8,12 @@
 (function (global) {
   'use strict';
 
+  if (global.__CUPID_MEDIA_GATE) {
+    try { global.CupidMedia?.hydrateProtectedImages?.(); } catch (_) {}
+    return;
+  }
+  global.__CUPID_MEDIA_GATE = true;
+
   var GUEST_KEY = 'cupid_guest_id';
   var MIGRATION_KEY = 'cupid_gallery_media_migrated_v1';
   var PLACEHOLDER = 'assets/images/ui/character-silhouette.svg';
@@ -29,6 +35,16 @@
   ];
   var CG_SET = {};
   for (var i = 0; i < CG_BASES.length; i++) CG_SET[CG_BASES[i]] = true;
+
+  // Keep in sync with PUBLIC_LOGICAL_IDS in functions/_lib/media-assets.js.
+  var PUBLIC_IDS = {
+    'characters/dain_normal': true,
+    'characters/teacher_normal': true,
+    'characters/seyoun_normal': true,
+    'characters/nurse_normal': true,
+    'characters/yuna_normal': true
+  };
+  var UNLOCK_MEMORY_KEY = 'cupid_media_unlocked_v1';
 
   var pendingUnlocks = [];
   var unlockTimer = null;
@@ -89,6 +105,45 @@
     return p;
   }
 
+  function recallUnlocks() {
+    try {
+      var raw = global.sessionStorage.getItem(UNLOCK_MEMORY_KEY);
+      var list = raw ? JSON.parse(raw) : [];
+      if (!Array.isArray(list)) return;
+      for (var i = 0; i < list.length; i++) knownUnlocked[list[i]] = true;
+    } catch (_) {}
+  }
+
+  function rememberUnlocks(ids) {
+    try {
+      var raw = global.sessionStorage.getItem(UNLOCK_MEMORY_KEY);
+      var list = raw ? JSON.parse(raw) : [];
+      if (!Array.isArray(list)) list = [];
+      for (var i = 0; i < ids.length; i++) {
+        if (list.indexOf(ids[i]) === -1) list.push(ids[i]);
+      }
+      if (list.length > 500) list = list.slice(list.length - 500);
+      global.sessionStorage.setItem(UNLOCK_MEMORY_KEY, JSON.stringify(list));
+    } catch (_) {}
+  }
+
+  function forgetUnlock(id) {
+    if (!id) return;
+    delete knownUnlocked[id];
+    try {
+      var raw = global.sessionStorage.getItem(UNLOCK_MEMORY_KEY);
+      var list = raw ? JSON.parse(raw) : [];
+      if (!Array.isArray(list)) return;
+      global.sessionStorage.setItem(UNLOCK_MEMORY_KEY, JSON.stringify(list.filter(function (item) {
+        return item !== id;
+      })));
+    } catch (_) {}
+  }
+
+  function isPublicLogical(id) {
+    return !!(id && PUBLIC_IDS[id]);
+  }
+
   function isProtectedPath(raw) {
     var id = toLogicalAssetId(raw);
     if (!id) return false;
@@ -105,16 +160,34 @@
     return global.ASSET_VERSION || '';
   }
 
-  function mediaUrl(rawPath) {
+  function mediaUrl(rawPath, extension) {
     var logical = toLogicalAssetId(rawPath);
     if (!logical) return normalizePath(rawPath);
-    var preferExt = /\.png$/i.test(normalizePath(rawPath)) ? '.png' : '.webp';
-    var asset = 'assets/images/' + logical + preferExt;
+    var ext = extension || '.webp';
+    var asset = 'assets/images/' + logical + ext;
     var guest = getGuestId();
     var q = 'asset=' + encodeURIComponent(asset)
       + '&guest=' + encodeURIComponent(guest)
       + '&v=' + encodeURIComponent(assetVersion());
     return '/api/media?' + q;
+  }
+
+  function logicalFromAny(rawPath) {
+    var text = String(rawPath || '');
+    if (text.indexOf('/api/media?') !== -1) {
+      try {
+        var base = global.location ? global.location.href : 'http://localhost/';
+        var asset = new URL(text, base).searchParams.get('asset');
+        if (asset) return toLogicalAssetId(asset);
+      } catch (_) {}
+    }
+    return toLogicalAssetId(text);
+  }
+
+  function preferWebpUrl(url) {
+    var text = String(url || '');
+    if (text.indexOf('/api/media?') === -1) return text;
+    return text.replace(/\.(png|jpeg|jpg)(?=(&|$))/i, '.webp');
   }
 
   function resolveUrl(rawPath) {
@@ -174,6 +247,7 @@
       return resp.json().catch(function () { return {}; });
     }).then(function (data) {
       for (var i = 0; i < batch.length; i++) knownUnlocked[batch[i]] = true;
+      rememberUnlocks(batch);
       if (pendingUnlocks.length) {
         unlockTimer = setTimeout(function () { flushUnlocks(); }, 50);
       }
@@ -283,8 +357,12 @@
 
   function loadImageWithMediaFallback(img, rawPath, onload, onerror) {
     if (!img) return;
-    if (!isProtectedPath(rawPath)) {
-      var plain = resolveUrl(rawPath);
+    var source = rawPath;
+    if (typeof source === 'string' && source.indexOf('/api/media?') !== -1) {
+      source = logicalFromAny(source) || source;
+    }
+    if (!isProtectedPath(source)) {
+      var plain = resolveUrl(source);
       var webp = plain.replace(/\.(png|jpg|jpeg)(\?|$)/i, '.webp$2');
       if (webp !== plain) {
         img.onerror = function () {
@@ -302,29 +380,65 @@
       return;
     }
 
-    var logical = toLogicalAssetId(rawPath);
-    var guest = getGuestId();
-    // Ensure unlock is posted before fetch when caller already decided to show it.
-    queueUnlock([logical]).finally(function () {
-      var webpUrl = '/api/media?asset=' + encodeURIComponent('assets/images/' + logical + '.webp')
-        + '&guest=' + encodeURIComponent(guest) + '&v=' + encodeURIComponent(assetVersion());
-      var pngUrl = '/api/media?asset=' + encodeURIComponent('assets/images/' + logical + '.png')
-        + '&guest=' + encodeURIComponent(guest) + '&v=' + encodeURIComponent(assetVersion());
-      img.onerror = function () {
-        img.onerror = onerror || null;
-        img.onload = onload || null;
-        img.src = pngUrl;
-      };
+    var logical = toLogicalAssetId(source);
+    var webpUrl = mediaUrl(logical, '.webp');
+    var pngUrl = mediaUrl(logical, '.png');
+    var needsUnlock = !!(logical && !isPublicLogical(logical) && !knownUnlocked[logical]);
+
+    function show(url, fallback) {
       img.onload = onload || null;
-      img.src = webpUrl;
-    });
+      img.onerror = function () {
+        if (fallback) {
+          fallback();
+          return;
+        }
+        if (onerror) onerror();
+      };
+      img.src = url;
+    }
+
+    function showWithRecovery() {
+      show(webpUrl, function () {
+        var recover = function () {
+          show(webpUrl + '&retry=1', function () {
+            show(pngUrl, null);
+          });
+        };
+        if (logical && !isPublicLogical(logical)) {
+          forgetUnlock(logical);
+          queueUnlock([logical]).finally(recover);
+          return;
+        }
+        recover();
+      });
+    }
+
+    if (needsUnlock) queueUnlock([logical]).finally(showWithRecovery);
+    else showWithRecovery();
+  }
+
+  function hydrateProtectedImages(root) {
+    if (typeof document === 'undefined' || !document.querySelectorAll) return;
+    var scope = root && root.querySelectorAll ? root : document;
+    var imgs = scope.querySelectorAll('img');
+    for (var i = 0; i < imgs.length; i++) {
+      var img = imgs[i];
+      if (img.getAttribute('data-cupid-hydrated') === '1') continue;
+      var asset = img.getAttribute('data-cupid-asset') || img.getAttribute('src') || '';
+      if (!asset || asset.indexOf('/api/media?') !== -1 || asset.indexOf('data:') === 0) continue;
+      if (!isProtectedPath(asset)) continue;
+      img.setAttribute('data-cupid-hydrated', '1');
+      loadImageWithMediaFallback(img, asset);
+    }
   }
 
   var api = {
     getGuestId: getGuestId,
     isProtectedPath: isProtectedPath,
+    isPublicLogical: isPublicLogical,
     toLogicalAssetId: toLogicalAssetId,
     mediaUrl: mediaUrl,
+    preferWebpUrl: preferWebpUrl,
     resolveUrl: resolveUrl,
     placeholderUrl: placeholderUrl,
     unlock: queueUnlock,
@@ -334,13 +448,16 @@
     migrateFromLocalGallery: migrateFromLocalGallery,
     syncFromProgressObject: syncFromProgressObject,
     loadImageWithMediaFallback: loadImageWithMediaFallback,
+    hydrateProtectedImages: hydrateProtectedImages,
     PLACEHOLDER: PLACEHOLDER
   };
 
   global.CupidMedia = api;
+  recallUnlocks();
 
   // Boot migrate shortly after load (storage + GalleryData may appear later).
   function bootMigrate() {
+    hydrateProtectedImages();
     migrateFromLocalGallery().catch(function () {});
   }
   if (document.readyState === 'loading') {

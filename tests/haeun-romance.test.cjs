@@ -4,6 +4,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
+const { readPlainMedia } = require('../scripts/lib/read-plain-media.cjs');
 const root = path.resolve(__dirname, '..');
 const read = f => fs.readFileSync(path.join(root, f), 'utf8');
 const languages = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'];
@@ -147,7 +148,7 @@ test('Haeun ending has one native square CG registered in every locale', () => {
     assert.equal(scenes.day5_ending_haeun.background,`assets/images/background/${id}.png`);
     assert.equal(scenes.day5_ending_haeun.character,null);
     assert.equal(context.window.GalleryData.PERFECT_CG_BY_CHARACTER.haeun,id);
-    const png=fs.readFileSync(path.join(root,`assets/images/background/${id}.png`));
+    const png=readPlainMedia(path.join(root,`assets/images/background/${id}.png`));
     assert.equal(png.readUInt32BE(16),2880);assert.equal(png.readUInt32BE(20),2880);
     for(const lang of languages)assert.equal(context.window.GalleryData.cg[lang].filter(cg=>cg.id===id).length,1);
 });

@@ -1392,7 +1392,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "day5_haeun_switch_dain_response": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/dain_worried.png",
+        "character": "assets/images/characters/dain_angry.png",
         "next": "day5_haeun_switch_dain_haeun"
     },
     "day5_haeun_switch_dain_haeun": {

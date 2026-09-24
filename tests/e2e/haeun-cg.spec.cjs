@@ -46,7 +46,7 @@ for (const [index, lang] of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].entries()
             expect(result.visited.at(-2)).toBe(preceding);
             expect(result.unlocked).toBe(true);
             expect(result.affinity).toBe(80);
-            expect(result.background).toMatch(new RegExp(`${id}\\.(?:png|webp)(?:\\?|["\\)])`));
+            expect(result.background).toMatch(new RegExp(`${id}\\.(?:png|webp)(?:\\?|&|%26|["\\)])`));
             expect(result.standingSprites).toBe(0);
             if (lang === 'ko' || lang === 'en') await page.screenshot({ path: `test-results/haeun-cg-${lang}-${mode}-scene.png` });
             await page.reload({ waitUntil: 'domcontentloaded' });

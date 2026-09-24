@@ -44,6 +44,20 @@ export const GALLERY_CG_BASES = Object.freeze([
 
 const CG_SET = new Set(GALLERY_CG_BASES);
 
+/**
+ * Landing-page standing sprites. The files stay encrypted; these ids skip the
+ * unlock check so the title can paint before gallery state exists.
+ */
+export const PUBLIC_LOGICAL_IDS = Object.freeze([
+  'characters/dain_normal',
+  'characters/teacher_normal',
+  'characters/seyoun_normal',
+  'characters/nurse_normal',
+  'characters/yuna_normal'
+]);
+
+const PUBLIC_SET = new Set(PUBLIC_LOGICAL_IDS);
+
 export function normalizeAssetInput(raw) {
   return String(raw || '').split('?')[0].replace(/^\/+/, '').replace(/\\/g, '/');
 }
@@ -63,6 +77,10 @@ export function isProtectedLogicalId(logicalId) {
     ? logicalId.slice('background/'.length)
     : logicalId;
   return CG_SET.has(base);
+}
+
+export function isPublicLogicalId(logicalId) {
+  return PUBLIC_SET.has(logicalId);
 }
 
 export function candidateStaticPaths(logicalId) {

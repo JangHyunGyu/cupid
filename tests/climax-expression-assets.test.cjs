@@ -4,6 +4,8 @@ const path = require('node:path');
 const test = require('node:test');
 const vm = require('node:vm');
 
+const { readPlainMedia } = require('../scripts/lib/read-plain-media.cjs');
+
 const root = path.resolve(__dirname, '..');
 const characterIds = ['seyoun', 'yuna', 'dain', 'teacher', 'nurse'];
 const dedicatedAssetIds = ['seyoun', 'yuna', 'dain', 'teacher', 'nurse'];
@@ -11,6 +13,10 @@ const languages = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'];
 
 function read(relativePath) {
     return fs.readFileSync(path.join(root, relativePath));
+}
+
+function readImage(relativePath) {
+    return readPlainMedia(path.join(root, relativePath));
 }
 
 test('every romance character exposes the climax expression in every gallery language', () => {
@@ -30,8 +36,8 @@ test('every romance character exposes the climax expression in every gallery lan
 
 test('climax assets are valid transparent PNG and WebP files', () => {
     for (const charId of dedicatedAssetIds) {
-        const png = read(`assets/images/characters/${charId}_climax.png`);
-        const webp = read(`assets/images/characters/${charId}_climax.webp`);
+        const png = readImage(`assets/images/characters/${charId}_climax.png`);
+        const webp = readImage(`assets/images/characters/${charId}_climax.webp`);
 
         assert.deepEqual([...png.subarray(0, 8)], [137, 80, 78, 71, 13, 10, 26, 10]);
         assert.equal(png[25], 6, `${charId} PNG must use RGBA color`);

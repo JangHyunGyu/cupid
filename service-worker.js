@@ -12,7 +12,7 @@
  * ============================================================================
  */
 
-const CACHE_VERSION = 'cupid-v3.3.183';
+const CACHE_VERSION = 'cupid-v3.3.184';
 const STATIC_CACHE = CACHE_VERSION + '-static';
 const MEDIA_CACHE = CACHE_VERSION + '-media';
 
@@ -170,6 +170,12 @@ self.addEventListener('fetch', (event) => {
 
     const path = url.pathname;
 
+    // 복호화된 캐릭터/CG. 주소에 버전이 들어 있어 캐시 우선으로 정적 이미지와 같게 재사용한다.
+    if (path === '/api/media') {
+        event.respondWith(cacheFirst(event.request, MEDIA_CACHE));
+        return;
+    }
+
     // 이미지/오디오: Cache-first (가장 큰 에셋, 캐시 효과 극대화)
     if (/\.(png|jpg|jpeg|webp|gif|svg|mp3|ogg|wav)$/i.test(path)) {
         const isAudioRecovery = /\.(mp3|ogg|wav)$/i.test(path)
@@ -263,8 +269,30 @@ async function matchCacheSafely(request) {
     }
 }
 
+async function isWrappedCiphertext(response) {
+    if (!response?.body?.getReader) return false;
+    const reader = response.clone().body.getReader();
+    try {
+        const { value } = await reader.read();
+        if (!value || value.length < 9) return false;
+        const expected = [67, 85, 80, 73, 68, 69, 78, 67, 49];
+        for (let i = 0; i < expected.length; i++) {
+            if (value[i] !== expected[i]) return false;
+        }
+        return true;
+    } catch (_) {
+        return false;
+    } finally {
+        try { await reader.cancel(); } catch (_) {}
+    }
+}
+
 async function cacheResponseSafely(cacheName, request, response) {
     try {
+        const requestUrl = new URL(request.url);
+        if (/\.(png|jpe?g|webp|gif)$/i.test(requestUrl.pathname) && await isWrappedCiphertext(response)) {
+            return false;
+        }
         const copy = response.clone();
         // Cache writes consume a cloned response stream. Safari rejects this
         // promise with "Load failed" when that stream is interrupted, so the

@@ -8,6 +8,7 @@ import { parseMediaKey, importAesKey, decryptCupidEnc1, isEncryptedBytes, conten
 import {
   toLogicalAssetId,
   isProtectedLogicalId,
+  isPublicLogicalId,
   candidateStaticPaths,
   isValidGuestId,
   jsonResponse
@@ -28,22 +29,23 @@ export async function onRequestGet(context) {
   if (!logicalId || !isProtectedLogicalId(logicalId)) {
     return jsonResponse({ error: 'invalid_asset' }, 400);
   }
-  if (!isValidGuestId(guestId)) {
+  const isPublic = isPublicLogicalId(logicalId);
+  if (!isPublic && !isValidGuestId(guestId)) {
     return jsonResponse({ error: 'invalid_guest' }, 400);
-  }
-  if (!env.DB) {
-    return jsonResponse({ error: 'db_unavailable' }, 503);
   }
   if (!env.CUPID_MEDIA_KEY) {
     return jsonResponse({ error: 'media_key_missing' }, 503);
   }
-
-  const unlocked = await env.DB.prepare(
-    'SELECT 1 AS ok FROM cupid_gallery_unlocks WHERE guest_id = ? AND asset_id = ? LIMIT 1'
-  ).bind(guestId, logicalId).first();
-
-  if (!unlocked) {
-    return jsonResponse({ error: 'forbidden', asset: logicalId }, 403);
+  if (!isPublic) {
+    if (!env.DB) {
+      return jsonResponse({ error: 'db_unavailable' }, 503);
+    }
+    const unlocked = await env.DB.prepare(
+      'SELECT 1 AS ok FROM cupid_gallery_unlocks WHERE guest_id = ? AND asset_id = ? LIMIT 1'
+    ).bind(guestId, logicalId).first();
+    if (!unlocked) {
+      return jsonResponse({ error: 'forbidden', asset: logicalId }, 403);
+    }
   }
 
   const candidates = candidateStaticPaths(logicalId);
@@ -85,7 +87,7 @@ export async function onRequestGet(context) {
       status: 200,
       headers: {
         'content-type': contentTypeForPath(usedPath),
-        'cache-control': 'private, max-age=300',
+        'cache-control': isPublic ? 'public, max-age=86400' : 'private, max-age=86400',
         'x-cupid-asset': logicalId
       }
     });

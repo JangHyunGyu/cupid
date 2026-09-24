@@ -4,6 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const test = require('node:test');
+const { readPlainMedia } = require('../scripts/lib/read-plain-media.cjs');
 const root = path.resolve(__dirname, '..');
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const characters = ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse'];
@@ -138,7 +139,7 @@ test('Haeun CGs use square lossless crops, retain original masters and register 
         assert.equal(scene.stats, undefined);
         assert.equal(scene.background, `assets/images/background/${id}.png`);
         assert.ok(registered.includes(id));
-        const png = fs.readFileSync(path.join(root, scene.background));
+        const png = readPlainMedia(path.join(root, scene.background));
         assert.equal(png.subarray(1,4).toString(), 'PNG');
         const width = png.readUInt32BE(16), height = png.readUInt32BE(20);
         assert.equal(width, height);
@@ -148,7 +149,7 @@ test('Haeun CGs use square lossless crops, retain original masters and register 
         assert.equal(master.readUInt32BE(20), height, 'side cropping must preserve native height without resizing');
         assert.ok(master.readUInt32BE(16) > width);
         assert.ok(png.length < 25 * 1024 * 1024);
-        const webp = fs.readFileSync(path.join(root, scene.background.replace('.png', '.webp')));
+        const webp = readPlainMedia(path.join(root, scene.background.replace('.png', '.webp')));
         assert.equal(webp.subarray(8,12).toString(), 'WEBP');
         assert.ok(webp.length < 25 * 1024 * 1024);
         let dimensions = null;

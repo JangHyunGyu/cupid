@@ -51,8 +51,11 @@ const _webpSupport = (() => {
  */
 function toWebpUrl(url) {
     if (!_webpSupport || !url) return url;
-    if (String(url).indexOf('/api/media?') === 0) return url;
-    return url.replace(/\.(png|jpg|jpeg)$/i, '.webp');
+    const text = String(url);
+    if (text.indexOf('/api/media?') !== -1) {
+        return text.replace(/\.(png|jpeg|jpg)(?=(&|$))/i, '.webp');
+    }
+    return text.replace(/\.(png|jpg|jpeg)$/i, '.webp');
 }
 
 /**
@@ -63,34 +66,13 @@ function toWebpUrl(url) {
  * @param {Function} onerror - 로드 실패 콜백
  */
 function loadImageWithFallback(img, url, onload, onerror) {
-    // Encrypted media URLs are already /api/media?... — unlock then load.
-    if (typeof url === 'string' && url.indexOf('/api/media?') === 0) {
-        try {
-            const asset = new URL(url, document.baseURI).searchParams.get('asset');
-            const logical = window.CupidMedia?.toLogicalAssetId?.(asset);
-            const start = () => {
-                img.onload = onload || null;
-                img.onerror = onerror || null;
-                img.src = url;
-            };
-            if (logical && window.CupidMedia?.unlock) {
-                Promise.resolve(window.CupidMedia.unlock([logical])).finally(start);
-            } else {
-                start();
-            }
-        } catch (_) {
-            img.onload = onload || null;
-            img.onerror = onerror || null;
-            img.src = url;
-        }
-        return;
-    }
+    const text = String(url || '');
     const stripQuery = (u) => String(u || '').split('?')[0];
-    const pathOnly = stripQuery(url).replace(/^https?:\/\/[^/]+\//, '');
-    if (window.CupidMedia?.isProtectedPath?.(pathOnly) || window.CupidMedia?.isProtectedPath?.(url)) {
-        const logicalSource = pathOnly || url;
-        window.CupidMedia.unlock?.(window.CupidMedia.toLogicalAssetId(logicalSource));
-        window.CupidMedia.loadImageWithMediaFallback(img, logicalSource, onload, onerror);
+    const pathOnly = stripQuery(text).replace(/^https?:\/\/[^/]+\//, '');
+    const protectedPath = window.CupidMedia?.isProtectedPath?.(pathOnly) || window.CupidMedia?.isProtectedPath?.(text);
+    if ((text.indexOf('/api/media?') !== -1 || protectedPath) && window.CupidMedia?.loadImageWithMediaFallback) {
+        const source = text.indexOf('/api/media?') !== -1 ? text : (pathOnly || text);
+        window.CupidMedia.loadImageWithMediaFallback(img, source, onload, onerror);
         return;
     }
     const webpUrl = toWebpUrl(url);
