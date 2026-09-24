@@ -1,0 +1,18 @@
+# Cloudflare Pages + D1 bindings for Cupid media unlock gating.
+# Deploy is Git-connected Pages from main. Set secret CUPID_MEDIA_KEY in the
+# Pages project (Dashboard or `wrangler pages secret put CUPID_MEDIA_KEY`).
+#
+# Create DB (once):
+#   npx wrangler d1 create cupid-gallery-unlocks
+# then replace database_id below and run:
+#   npx wrangler d1 execute cupid-gallery-unlocks --file=scripts/sql/0001_gallery_unlocks.sql --remote
+
+name = "cupid"
+compatibility_date = "2025-09-01"
+pages_build_output_dir = "."
+
+[[d1_databases]]
+binding = "DB"
+database_name = "cupid-gallery-unlocks"
+# REPLACE_AFTER_D1_CREATE
+database_id = "00000000-0000-0000-0000-000000000000"

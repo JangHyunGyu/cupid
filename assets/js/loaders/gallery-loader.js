@@ -190,6 +190,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'affinity-corrections.js',
         // 0. 모듈 설정 (ASSET_VERSION 등)
         'modules/config.js',
+        'media-gate.js',
         'modules/MessageComposerUtils.js',
         // 갤러리 프리토킹·음악실 효과음
         'sound.js',

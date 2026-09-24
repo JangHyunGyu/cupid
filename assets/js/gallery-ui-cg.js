@@ -106,7 +106,7 @@ class CGRenderer {
                 <div class="cg-card ${unlocked ? '' : 'locked'}" data-cg-id="${cg.id}">
                     <div class="card-image">
                         ${unlocked ?
-                    `<img src="${(cg.thumbnail || cg.file)}?v=${window.ASSET_VERSION || ''}" alt="${cg.name}">` :
+                    `<img src="" data-cupid-asset="${cg.thumbnail || cg.file}" alt="${cg.name}">` :
                     `<div class="lock-overlay">🔒</div>`
                 }
                     </div>
@@ -119,6 +119,20 @@ class CGRenderer {
         });
 
         this.gridEl.innerHTML = html;
+        this._hydrateProtectedImages();
+    }
+
+    /** @private */
+    _hydrateProtectedImages() {
+        if (!this.gridEl || !window.CupidMedia) return;
+        this.gridEl.querySelectorAll('img[data-cupid-asset]').forEach((img) => {
+            const asset = img.getAttribute('data-cupid-asset');
+            if (!asset) return;
+            window.CupidMedia.unlockCG?.(
+                (window.CupidMedia.toLogicalAssetId(asset) || '').replace(/^background\//, '')
+            );
+            window.CupidMedia.loadImageWithMediaFallback(img, asset);
+        });
     }
 
     /**
@@ -167,7 +181,12 @@ class CGRenderer {
         const modal = this.modalEl || this._createModal();
 
         const cgImage = document.getElementById('cg-modal-image');
-        cgImage.src = `${cg.file}?v=${window.ASSET_VERSION || ''}`;
+        if (window.CupidMedia) {
+            window.CupidMedia.unlockCG(cg.id);
+            window.CupidMedia.loadImageWithMediaFallback(cgImage, cg.file);
+        } else {
+            cgImage.src = `${cg.file}?v=${window.ASSET_VERSION || ''}`;
+        }
         cgImage.classList.remove('cg-image-loaded');
 
         document.getElementById('cg-modal-title').textContent = cg.name;

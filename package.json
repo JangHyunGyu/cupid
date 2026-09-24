@@ -15,7 +15,10 @@
     "test:freetalk": "node --test tests/freetalk-core.test.cjs",
     "test:e2e": "playwright test",
     "media:audit": "node scripts/audit-media.cjs",
-    "validate": "node validate.js --seed=cupid-ci --no-report"
+    "validate": "node validate.js --seed=cupid-ci --no-report",
+    "media:encrypt": "node scripts/encrypt-media.cjs",
+    "media:decrypt": "node scripts/decrypt-media.cjs",
+    "media:list": "node -e \"console.log(require('./scripts/lib/cupid-protected-assets.cjs').listProtectedAssets(process.cwd()).join('\\n'))\""
   },
   "devDependencies": {
     "@playwright/test": "^1.54.2"

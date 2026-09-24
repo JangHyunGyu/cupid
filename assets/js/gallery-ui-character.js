@@ -160,7 +160,8 @@ class CharacterRenderer {
             html += `
                 <div class="character-card ${met ? '' : 'not-met'}" data-char-id="${char.id}">
                     <div class="card-image">
-                        <img src="assets/images/characters/${char.id}_normal.png?v=${window.ASSET_VERSION || ''}"
+                        <img src="${met ? '' : (window.CupidMedia ? window.CupidMedia.placeholderUrl() : 'assets/images/ui/character-silhouette.svg')}"
+                             ${met ? `data-cupid-asset="assets/images/characters/${char.id}_normal.webp"` : ''}
                              alt="${met ? char.name : '???'}" 
                              class="${met ? '' : 'silhouette'}">
                     </div>
@@ -174,6 +175,17 @@ class CharacterRenderer {
         });
 
         this.gridEl.innerHTML = html;
+        this._hydrateProtectedImages();
+    }
+
+    /** @private */
+    _hydrateProtectedImages() {
+        if (!this.gridEl || !window.CupidMedia) return;
+        this.gridEl.querySelectorAll('img[data-cupid-asset]').forEach((img) => {
+            const asset = img.getAttribute('data-cupid-asset');
+            if (!asset) return;
+            window.CupidMedia.loadImageWithMediaFallback(img, asset);
+        });
     }
 
     /**
@@ -265,7 +277,13 @@ class CharacterRenderer {
     _updateImage() {
         const img = document.getElementById('modal-char-image');
         if (img && this.currentCharacter) {
-            img.src = `assets/images/characters/${this.currentCharacter}_${this.currentExpression}.png?v=${window.ASSET_VERSION || ''}`;
+            const path = `assets/images/characters/${this.currentCharacter}_${this.currentExpression}.png`;
+            if (window.CupidMedia) {
+                window.CupidMedia.unlockExpression(this.currentCharacter, this.currentExpression);
+                window.CupidMedia.loadImageWithMediaFallback(img, path);
+            } else {
+                img.src = `${path}?v=${window.ASSET_VERSION || ''}`;
+            }
         }
     }
 

@@ -51,6 +51,7 @@ const _webpSupport = (() => {
  */
 function toWebpUrl(url) {
     if (!_webpSupport || !url) return url;
+    if (String(url).indexOf('/api/media?') === 0) return url;
     return url.replace(/\.(png|jpg|jpeg)$/i, '.webp');
 }
 
@@ -62,6 +63,36 @@ function toWebpUrl(url) {
  * @param {Function} onerror - 로드 실패 콜백
  */
 function loadImageWithFallback(img, url, onload, onerror) {
+    // Encrypted media URLs are already /api/media?... — unlock then load.
+    if (typeof url === 'string' && url.indexOf('/api/media?') === 0) {
+        try {
+            const asset = new URL(url, document.baseURI).searchParams.get('asset');
+            const logical = window.CupidMedia?.toLogicalAssetId?.(asset);
+            const start = () => {
+                img.onload = onload || null;
+                img.onerror = onerror || null;
+                img.src = url;
+            };
+            if (logical && window.CupidMedia?.unlock) {
+                Promise.resolve(window.CupidMedia.unlock([logical])).finally(start);
+            } else {
+                start();
+            }
+        } catch (_) {
+            img.onload = onload || null;
+            img.onerror = onerror || null;
+            img.src = url;
+        }
+        return;
+    }
+    const stripQuery = (u) => String(u || '').split('?')[0];
+    const pathOnly = stripQuery(url).replace(/^https?:\/\/[^/]+\//, '');
+    if (window.CupidMedia?.isProtectedPath?.(pathOnly) || window.CupidMedia?.isProtectedPath?.(url)) {
+        const logicalSource = pathOnly || url;
+        window.CupidMedia.unlock?.(window.CupidMedia.toLogicalAssetId(logicalSource));
+        window.CupidMedia.loadImageWithMediaFallback(img, logicalSource, onload, onerror);
+        return;
+    }
     const webpUrl = toWebpUrl(url);
     if (webpUrl !== url) {
         img.onerror = () => {
@@ -406,12 +437,14 @@ class SceneRenderer {
     async setBackground(bgPath) {
         if (!bgPath) return;
 
-        const bgUrl = getAssetUrl(bgPath);
-        this.lastBgUrl = bgUrl;
-
-        // CG 해금 체크 (파일명으로 판단)
         const cgFileName = bgPath.split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '');
         this.galleryManager.unlockCG(cgFileName);
+        try { window.CupidMedia?.unlockCG?.(cgFileName); } catch (_) {}
+
+        const bgUrl = (window.CupidMedia?.isProtectedPath?.(bgPath))
+            ? window.CupidMedia.resolveUrl(bgPath)
+            : getAssetUrl(bgPath);
+        this.lastBgUrl = bgUrl;
 
         const bgLayer = this.uiManager.bgLayer;
         const layoutClasses = [...bgLayer.classList]
@@ -538,17 +571,17 @@ class SceneRenderer {
                 const posKey = pos.toLowerCase();
                 if (typeof value === 'object' && value?.src) {
                     // 객체 형태: {src, opacity}
-                    newCharMap[posKey] = getAssetUrl(value.src);
+                    newCharMap[posKey] = (window.CupidMedia?.isProtectedPath?.(value.src) ? window.CupidMedia.resolveUrl(value.src) : getAssetUrl(value.src));
                     charOptions[posKey] = { opacity: value.opacity ?? 1 };
                 } else {
                     // 문자열: 단순 URL
-                    newCharMap[posKey] = getAssetUrl(value);
+                    newCharMap[posKey] = (window.CupidMedia?.isProtectedPath?.(value) ? window.CupidMedia.resolveUrl(value) : getAssetUrl(value));
                     charOptions[posKey] = { opacity: 1 };
                 }
             });
         } else if (!shouldHideCharactersForCG && scene.character) {
             // 단일 캐릭터: 중앙에 배치
-            newCharMap['center'] = getAssetUrl(scene.character);
+            newCharMap['center'] = (window.CupidMedia?.isProtectedPath?.(scene.character) ? window.CupidMedia.resolveUrl(scene.character) : getAssetUrl(scene.character));
             charOptions['center'] = { opacity: 1 };
         }
 

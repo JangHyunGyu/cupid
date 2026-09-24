@@ -154,6 +154,7 @@ class GalleryManager {
 
         this.saveProgress(progress);
         console.log(`[GalleryManager] 캐릭터 만남: ${charId}`);
+        try { window.CupidMedia?.unlockCharacterMet?.(charId); } catch (_) {}
     }
 
     /**
@@ -174,6 +175,7 @@ class GalleryManager {
             progress.characters[charId].maxAffinity = currentAffinity;
             this.saveProgress(progress);
             console.log(`[GalleryManager] 최대 호감도: ${charId} = ${currentAffinity}`);
+            try { window.CupidMedia?.syncFromProgressObject?.(progress); } catch (_) {}
         }
     }
 
@@ -219,6 +221,7 @@ class GalleryManager {
         progress.cg[cgId] = { unlocked: true, unlockedAt: Date.now() };
         this.saveProgress(progress);
         console.log(`[GalleryManager] CG 해금: ${cgId}`);
+        try { window.CupidMedia?.unlockCG?.(cgId); } catch (_) {}
     }
 
     recordEndingScene(sceneId, stateManager) {
@@ -265,6 +268,7 @@ class GalleryManager {
 
         this.saveProgress(progress);
         console.log(`[GalleryManager] 프리토킹: ${charId} = ${newCount}회`);
+        try { window.CupidMedia?.syncFromProgressObject?.(progress); } catch (_) {}
     }
 
     /**

@@ -203,6 +203,7 @@
         'prompts.js',
 
         // 갤러리 모듈 (게임에서 진행도 저장에도 사용됨)
+        'media-gate.js',             // encrypted media unlock gate
         'gallery-data.js',           // 갤러리 데이터 정의
         'gallery-progress.js',       // 진행도 관리 (localStorage)
         'gallery-ui-core.js',        // UI 코어: 팝업, 기본 기능

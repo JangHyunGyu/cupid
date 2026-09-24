@@ -67,6 +67,10 @@ class GalleryProgress {
 
         // 초기 데이터 로드
         this.load();
+        try {
+            window.CupidMedia?.syncFromProgressObject?.(this.data);
+            window.CupidMedia?.migrateFromLocalGallery?.();
+        } catch (_) {}
     }
 
     // =========================================================================
@@ -752,6 +756,7 @@ class GalleryProgress {
 
         this.save();
         console.log(`[GalleryProgress] CG 해금: ${cgId}`);
+        try { window.CupidMedia?.unlockCG?.(cgId); } catch (_) {}
         return true;
     }
 
