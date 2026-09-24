@@ -286,7 +286,7 @@
 
     function buildScriptUrl(src, attempt) {
         var query = '?v=' + encodeURIComponent(version);
-        if (src === 'modules/config.js') query += '&history=20260908';
+        if (src === 'modules/config.js' || src === 'modules/FreeTalkSystem.js') query += '&history=20260924';
         if (attempt > 0) {
             query += '&retry=' + Date.now();
         }

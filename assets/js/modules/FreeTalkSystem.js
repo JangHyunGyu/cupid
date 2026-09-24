@@ -899,13 +899,13 @@ class FreeTalkSystem {
                 || expressions.normal
                 || fallbackImages[participant.id];
             const img = document.createElement('img');
-            img.src = getAssetUrl(rawSrc);
-            img.dataset.rawSrc = getAssetUrl(rawSrc);
+            img.dataset.rawSrc = rawSrc;
             img.alt = '';
             img.setAttribute('aria-hidden', 'true');
             slot.dataset.groupCharId = participant.id;
             slot.classList.add('group-freetalk-participant', 'group-freetalk-inactive');
             slot.appendChild(img);
+            this._loadCupidProtectedImage(img, rawSrc);
         }
         document.getElementById('character-layer')?.classList.add('group-freetalk-mode');
         this.uiManager?.dialogueBox?.classList.add('group-freetalk-dialogue');
@@ -2037,8 +2037,8 @@ class FreeTalkSystem {
             .find(candidate => candidate?.dataset?.groupCharId === speakerId);
         const img = slot?.querySelector('img');
         if (src && img) {
-            img.src = getAssetUrl(src);
-            img.dataset.rawSrc = getAssetUrl(src);
+            img.dataset.rawSrc = src;
+            this._loadCupidProtectedImage(img, src);
         }
     }
 
@@ -2919,6 +2919,17 @@ class FreeTalkSystem {
      * @param {string} exprName - 표정 이름 (예: shy, angry, laugh)
      * @param {Object} scene - 현재 씬 데이터
      */
+
+    _loadCupidProtectedImage(img, rawPath) {
+        if (!img || !rawPath) return;
+        if (window.CupidMedia?.loadImageWithMediaFallback) {
+            window.CupidMedia.loadImageWithMediaFallback(img, rawPath);
+            return;
+        }
+        const url = typeof getAssetUrl === 'function' ? getAssetUrl(rawPath) : rawPath;
+        img.src = url;
+    }
+
     applyExpression(exprName, scene) {
         if (scene.romanticInterlude === true) return;
         if (!window.CHARACTER_EXPRESSIONS) return;
@@ -2934,16 +2945,16 @@ class FreeTalkSystem {
         const centerSlot = this.uiManager.charSlots.center;
         if (!centerSlot) return;
 
-        const exprUrl = getAssetUrl(charExprs[name]);
+        const rawPath = charExprs[name];
         const existingImg = centerSlot.querySelector('img');
         if (existingImg) {
-            existingImg.src = exprUrl;
+            this._loadCupidProtectedImage(existingImg, rawPath);
         } else {
             const img = document.createElement('img');
-            img.src = exprUrl;
             img.alt = '';
             img.setAttribute('aria-hidden', 'true');
             centerSlot.appendChild(img);
+            this._loadCupidProtectedImage(img, rawPath);
         }
     }
 
@@ -3037,18 +3048,18 @@ class FreeTalkSystem {
                     // 🔧 centerSlot이 없으면 표정 변경 스킵
                     if (!centerSlot) continue;
 
-                    const exprUrl = getAssetUrl(charExprs[exprName]);    // 버전 쿼리 추가
+                                        const rawPath = charExprs[exprName];
 
                     // 이미 이미지가 있으면 src만 변경, 없으면 새로 생성
                     const existingImg = centerSlot.querySelector('img');
                     if (existingImg) {
-                        existingImg.src = exprUrl;
+                        this._loadCupidProtectedImage(existingImg, rawPath);
                     } else {
                         const img = document.createElement('img');
-                        img.src = exprUrl;
                         img.alt = '';
                         img.setAttribute('aria-hidden', 'true');
                         centerSlot.appendChild(img);
+                        this._loadCupidProtectedImage(img, rawPath);
                     }
                 }
             }

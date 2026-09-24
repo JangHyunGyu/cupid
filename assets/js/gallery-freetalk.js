@@ -520,6 +520,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
         // UI 생성
         this._createOverlay(charId);
+        this._hydratePendingCharacterImage();
         this.overlayEl.classList.add('active');
 
         // 마지막 AI 메시지가 있으면 대사창에 표시
@@ -600,7 +601,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         this.overlayEl.innerHTML = `
             <div class="gft-background" style="background-image: url('${bgUrl}')"></div>
             <div class="gft-character">
-                <img id="gft-char-img" src="assets/images/characters/${charId}_normal.png?v=${window.ASSET_VERSION || ''}" alt="${charName}">
+                <img id="gft-char-img" src="" alt="${charName}" data-cupid-pending="assets/images/characters/${charId}_normal.png">
             </div>
             <div class="gft-ui-layer">
                 <div id="dialogue-box">
@@ -2024,9 +2025,15 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         if (!validExprs.includes(resolvedExpression)) return;
 
         const img = document.getElementById('gft-char-img');
-        if (img) {
-            img.src = `assets/images/characters/${charId}_${resolvedExpression}.png?v=${window.ASSET_VERSION || ''}`;
+        if (!img) return;
+        const path = `assets/images/characters/${charId}_${resolvedExpression}.png`;
+        // Encrypted CUPIDENC1 sprites must go through /api/media — raw static URLs blank the img.
+        if (window.CupidMedia?.loadImageWithMediaFallback) {
+            window.CupidMedia.unlockExpression?.(charId, resolvedExpression);
+            window.CupidMedia.loadImageWithMediaFallback(img, path);
+            return;
         }
+        img.src = `${path}?v=${window.ASSET_VERSION || ''}`;
     }
 
     _applyAffinityChange(change, charId = this.currentCharId, latestUserText = '') {

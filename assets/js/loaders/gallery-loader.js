@@ -220,7 +220,7 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
 
     scripts.forEach(function (src) {
-        const historyRevision = src === 'modules/config.js' || src === 'gallery-freetalk.js' ? '&history=20260918' : '';
+        const historyRevision = src === 'modules/config.js' || src === 'gallery-freetalk.js' ? '&history=20260924' : '';
         document.write('<script src="' + basePath + src + '?v=' + version + historyRevision + '" onerror="window.__cupidShowGalleryLoadError && window.__cupidShowGalleryLoadError()"><\/script>');
     });
 })();
