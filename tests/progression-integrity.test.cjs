@@ -66,6 +66,17 @@ test('failed mutations roll back critical state without consuming a receipt', ()
     assert.equal(api.commit(state, 'scene:start', () => {}).applied, true);
 });
 
+test('a console edit is discarded before the next reward and is not saved', () => {
+    const { api, state, save } = setup();
+    state.stats.Seoyeon.affinity = 100;
+    assert.equal(api.commit(state, 'scene:next', () => { state.stats.Seoyeon.affinity += 3; }).applied, true);
+    assert.equal(state.stats.Seoyeon.affinity, 3);
+    const cheated = clone(state);
+    cheated.stats.Seoyeon.affinity = 100;
+    assert.equal(api.save({ ...save, gameState: cheated }), true);
+    assert.equal(cheated.stats.Seoyeon.affinity, 3);
+});
+
 test('a choice routed through intermediate nodes resumes at the final arrived scene', () => {
     const { api, state, save } = setup();
     api.commit(state, 'choice:start', () => 'router', { transition: true });

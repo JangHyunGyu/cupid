@@ -36,6 +36,48 @@
         error.reason = 'STALE_TURN';
         return error;
     }
+    function affinityMap(stats) {
+        const out = {};
+        if (!stats || typeof stats !== 'object') return out;
+        for (const [key, value] of Object.entries(stats)) {
+            const score = Number(value?.affinity);
+            if (Number.isFinite(score)) out[key] = score;
+        }
+        return out;
+    }
+    function uncommittedAffinityEdits(state, snapshot) {
+        const saved = affinityMap(snapshot?.stats);
+        const live = affinityMap(state?.stats);
+        return Object.entries(saved)
+            .filter(([key, expected]) => live[key] !== undefined && live[key] !== expected)
+            .map(([key, expected]) => ({ character: key, from: live[key], to: expected }));
+    }
+    function restoreUncommittedAffinities(state, snapshot) {
+        if (typeof state?.restoreCommittedAffinities === 'function') {
+            state.restoreCommittedAffinities(snapshot?.stats);
+            return;
+        }
+        const saved = snapshot?.stats;
+        const live = state?.stats;
+        if (!saved || !live) return;
+        for (const [key, snap] of Object.entries(saved)) {
+            if (!live[key] || snap == null || !Object.prototype.hasOwnProperty.call(snap, 'affinity')) continue;
+            live[key].affinity = snap.affinity;
+        }
+    }
+    function affinityChanges(beforeStats, afterStats) {
+        const before = affinityMap(beforeStats);
+        const after = affinityMap(afterStats);
+        return [...new Set([...Object.keys(before), ...Object.keys(after)])].flatMap(key => {
+            if (after[key] === undefined || before[key] === after[key]) return [];
+            const from = before[key] ?? 0;
+            return [{ character: key, before: from, delta: after[key] - from, after: after[key] }];
+        });
+    }
+    function auditAffinity(state, eventKey, report) {
+        const telemetry = typeof window !== 'undefined' ? window.CupidRouteTelemetry : null;
+        try { telemetry?.auditAffinity?.(state, { eventKey, ...report }); } catch (_) { /* A log must not block play. */ }
+    }
     function commit(state, eventKey, operation, metadata = {}) {
         if (!storage) return { applied: true, value: operation() };
         let record = read();
@@ -51,6 +93,9 @@
             if (metadata.arrivedScene) persist(record);
             return { applied: false, value: record.receipts[eventKey] };
         }
+        const reverted = uncommittedAffinityEdits(state, record.snapshot);
+        restoreUncommittedAffinities(state, record.snapshot);
+        if (reverted.length) auditAffinity(state, eventKey, { reverted });
         const before = critical(state);
         try {
             const value = operation();
@@ -66,9 +111,12 @@
             record.revision = state.progressionRevision;
             record.snapshot = critical(state);
             persist(record);
+            const changes = affinityChanges(before.stats, record.snapshot.stats);
+            if (changes.length) auditAffinity(state, eventKey, { changes });
             return { applied: true, value };
         } catch (error) {
             Object.assign(state, before);
+            state._installAffinityGuards?.();
             throw error;
         }
     }
@@ -81,6 +129,9 @@
         if (!record) return true;
         const state = saveData.gameState;
         if (state?.progressionRunId !== record.runId || Number(state.progressionRevision || 0) !== record.revision) return false;
+        const reverted = uncommittedAffinityEdits(state, record.snapshot);
+        restoreUncommittedAffinities(state, record.snapshot);
+        if (reverted.length) auditAffinity(state, 'save', { reverted });
         record.snapshot = critical(state);
         record.sceneId = saveData.currentSceneId;
         record.lastBgUrl = saveData.lastBgUrl;

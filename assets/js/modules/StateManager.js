@@ -88,6 +88,7 @@ class StateManager {
         this.progressionRunId = '';
         this.progressionRevision = 0;
         this.appliedAffinityCorrections = window.CupidAffinityCorrections?.ids() || [];
+        this._installAffinityGuards();
     }
 
     /**
@@ -121,7 +122,46 @@ class StateManager {
         this.progressionRunId = '';
         this.progressionRevision = 0;
         this.appliedAffinityCorrections = window.CupidAffinityCorrections?.ids() || [];
+        this._installAffinityGuards();
         window.CupidProgressIntegrity?.start(this);
+    }
+
+    _withAffinityWrite(write) {
+        this._affinityWriteDepth = (this._affinityWriteDepth || 0) + 1;
+        try { return write(); }
+        finally { this._affinityWriteDepth -= 1; }
+    }
+
+    _installAffinityGuards() {
+        const state = this;
+        for (const box of Object.values(this.stats || {})) {
+            if (!box || typeof box !== 'object') continue;
+            if (Object.getOwnPropertyDescriptor(box, 'affinity')?.set) continue;
+            let stored = Number(box.affinity);
+            stored = Number.isFinite(stored) ? Math.max(-100, Math.min(100, Math.round(stored))) : 0;
+            Object.defineProperty(box, 'affinity', {
+                configurable: true,
+                enumerable: true,
+                get() { return stored; },
+                set(value) {
+                    if (!state._affinityWriteDepth) return;
+                    const next = Number(value);
+                    if (!Number.isFinite(next)) return;
+                    stored = Math.max(-100, Math.min(100, Math.round(next)));
+                }
+            });
+        }
+    }
+
+    restoreCommittedAffinities(snapshotStats) {
+        this._installAffinityGuards();
+        this._withAffinityWrite(() => {
+            for (const key of Object.keys(this.stats || {})) {
+                const expected = Number(snapshotStats?.[key]?.affinity);
+                if (!Number.isFinite(expected) || !this.stats[key]) continue;
+                this.stats[key].affinity = expected;
+            }
+        });
     }
 
     /**
@@ -154,11 +194,11 @@ class StateManager {
         amount = Number(amount);
         if (!Number.isFinite(amount)) return this.getAffinity(charKey);
         amount = Math.trunc(amount);
-        this.stats[charKey].affinity = this.getAffinity(charKey);
-
-        // 범위 제한: -100 ~ 100
-        let newValue = Math.max(-100, Math.min(100, this.stats[charKey].affinity + amount));
-        this.stats[charKey].affinity = newValue;
+        let newValue = this.getAffinity(charKey);
+        this._withAffinityWrite(() => {
+            newValue = Math.max(-100, Math.min(100, this.getAffinity(charKey) + amount));
+            this.stats[charKey].affinity = newValue;
+        });
 
         console.log(`[StateManager] ${charKey} 호감도: ${amount > 0 ? '+' : ''}${amount} → 총 ${newValue}`);
         return newValue;
@@ -407,17 +447,21 @@ class StateManager {
         const savedAffinityRebalanceVersion = Number(data.affinityRebalanceVersion) || 0;
         if (data.playerName) this.playerName = data.playerName;
         if (data.currentDay !== undefined) this.currentDay = data.currentDay;
-        if (data.stats) for (const key of Object.keys(this.stats)) {
-            const value = Number(data.stats[key]?.affinity);
-            if (Number.isFinite(value)) this.stats[key].affinity = Math.max(-100, Math.min(100, Math.round(value)));
-        }
+        this._withAffinityWrite(() => {
+            if (data.stats) for (const key of Object.keys(this.stats)) {
+                const value = Number(data.stats[key]?.affinity);
+                if (Number.isFinite(value)) this.stats[key].affinity = value;
+            }
+            if (savedAffinityRebalanceVersion < StateManager.AFFINITY_REBALANCE_VERSION) {
+                for (const charKey of StateManager.ROMANCE_CHARACTER_KEYS) {
+                    if ((Number(this.stats[charKey]?.affinity) || 0) >= 100) this.stats[charKey].affinity = 99;
+                }
+            }
+        });
         let affinityRebalanced = false;
         if (savedAffinityRebalanceVersion < StateManager.AFFINITY_REBALANCE_VERSION) {
             for (const charKey of StateManager.ROMANCE_CHARACTER_KEYS) {
-                if ((Number(this.stats[charKey]?.affinity) || 0) >= 100) {
-                    this.stats[charKey].affinity = 99;
-                    affinityRebalanced = true;
-                }
+                if ((Number(data.stats?.[charKey]?.affinity) || 0) >= 100) affinityRebalanced = true;
             }
         }
         this.affinityRebalanceVersion = StateManager.AFFINITY_REBALANCE_VERSION;

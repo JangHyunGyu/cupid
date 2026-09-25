@@ -129,6 +129,46 @@
         "correctedPeak": 92,
         "correctedCurrent": 5,
         "restoreFrom99": true
+    },
+    {
+        "id": "cheat-rollback-20260926-dain",
+        "deviceSha256": "c338c2a08207737e9d4b3102065819ef7a588976b5536725b19f7920cec9c86f",
+        "character": "Dain",
+        "galleryCharacter": "dain",
+        "perfectCG": "ending_perfect_dain",
+        "perfectEnding": "perfect_dain",
+        "correctedPeak": 9,
+        "correctedCurrent": 9
+    },
+    {
+        "id": "cheat-rollback-20260926-yuna",
+        "deviceSha256": "c338c2a08207737e9d4b3102065819ef7a588976b5536725b19f7920cec9c86f",
+        "character": "Yuna",
+        "galleryCharacter": "yuna",
+        "perfectCG": "ending_perfect_yuna",
+        "perfectEnding": "perfect_yuna",
+        "correctedPeak": 9,
+        "correctedCurrent": 9
+    },
+    {
+        "id": "cheat-rollback-20260926-teacher",
+        "deviceSha256": "c338c2a08207737e9d4b3102065819ef7a588976b5536725b19f7920cec9c86f",
+        "character": "Teacher",
+        "galleryCharacter": "teacher",
+        "perfectCG": "ending_perfect_teacher",
+        "perfectEnding": "perfect_teacher",
+        "correctedPeak": 0,
+        "correctedCurrent": 0
+    },
+    {
+        "id": "cheat-rollback-20260926-haeun",
+        "deviceSha256": "c338c2a08207737e9d4b3102065819ef7a588976b5536725b19f7920cec9c86f",
+        "character": "Haeun",
+        "galleryCharacter": "haeun",
+        "perfectCG": "ending_perfect_haeun",
+        "perfectEnding": "perfect_haeun",
+        "correctedPeak": 0,
+        "correctedCurrent": 0
     }
 ];
     let matchedDevice = '';
@@ -152,13 +192,18 @@
         for (const correction of active()) {
             if (marked(data, correction.id)) continue;
             const character = data.characters?.[correction.galleryCharacter];
+            let stripped = false;
             if (isObject(character)) {
-                if ('maxAffinity' in character) character.maxAffinity = cap(character.maxAffinity, correction, 'peak');
-                if ('currentAffinity' in character) character.currentAffinity = cap(character.currentAffinity, correction, 'current');
-                for (const key of ['unlocked', 'unlockedAt', 'perfectEndingCleared', 'trueEndingCleared']) delete character[key];
+                for (const [field, kind] of [['maxAffinity', 'peak'], ['currentAffinity', 'current']]) {
+                    if (!(field in character)) continue;
+                    const next = cap(character[field], correction, kind);
+                    if (Number(character[field]) !== Number(next)) stripped = true;
+                    character[field] = next;
+                }
+                if (stripped) for (const key of ['unlocked', 'unlockedAt', 'perfectEndingCleared', 'trueEndingCleared']) delete character[key];
             }
-            if (isObject(data.cg)) delete data.cg[correction.perfectCG];
-            if (isObject(data.endings)) delete data.endings[correction.perfectEnding];
+            if (stripped && isObject(data.cg)) delete data.cg[correction.perfectCG];
+            if (stripped && isObject(data.endings)) delete data.endings[correction.perfectEnding];
             mark(data, correction.id);
             changed = true;
         }

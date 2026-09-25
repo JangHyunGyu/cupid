@@ -62,7 +62,7 @@
         if (state.getFlag('nurse_day4')) return 'Nurse';
         return '';
     }
-    function emit(state, sceneId, eventType, details = {}, nextSceneId = '') {
+    function emit(state, sceneId, eventType, details = {}, nextSceneId = '', dayOverride = null) {
         try {
             if (!state.telemetryRunId) state.telemetryRunId = uuid();
             const affinities = Object.fromEntries(CHARACTERS.map(name => [name, state.getAffinity(name)]));
@@ -70,7 +70,7 @@
                 typeof value === 'boolean' && /^(day4_|day5_haeun_|haeun_|route_|day3_caught_multiple_dates$|harem_seed$|homeroom_day4$|nurse_day4$)/.test(key)));
             pending.push({ appId: window.getCupidAppId(), userId: window.getCupidDeviceId(), event: {
                 eventId: uuid(), runId: state.telemetryRunId, eventType, sceneId, nextSceneId,
-                day: /^(morning5_|day5_)/.test(sceneId) ? 5 : 4,
+                day: Number.isInteger(dayOverride) ? dayOverride : (/^(morning5_|day5_)/.test(sceneId) ? 5 : 4),
                 route: route(state), version: ASSET_VERSION, clientTime: new Date().toISOString(),
                 isTest: window.CUPID_ROUTE_TELEMETRY_TEST === true
                     || /^(localhost|127\.0\.0\.1)$/.test(window.location.hostname)
@@ -137,7 +137,13 @@
             affinityBranches: selected.affinityBranches || [], affinityEffects: selected.stats || {}
         }, nextSceneId);
     }
-    window.CupidRouteTelemetry = { entered, transition, choice, flush };
+    function auditAffinity(state, report = {}) {
+        const day = Math.min(5, Math.max(1, Number(state?.currentDay) || 1));
+        const sceneId = String(report.eventKey || 'affinity').replace(/[^a-zA-Z0-9_.:-]/g, '').slice(0, 120) || 'affinity';
+        if (Array.isArray(report.changes) && report.changes.length) emit(state, sceneId, 'affinity_commit', { changes: report.changes }, '', day);
+        if (Array.isArray(report.reverted) && report.reverted.length) emit(state, sceneId, 'affinity_reverted', { reverted: report.reverted }, '', day);
+    }
+    window.CupidRouteTelemetry = { entered, transition, choice, auditAffinity, flush };
     window.addEventListener('online', () => { void flush(); });
     window.addEventListener('pagehide', () => { void flush(); });
     document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') void flush(); });
