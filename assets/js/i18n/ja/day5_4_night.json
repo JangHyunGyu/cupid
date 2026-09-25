@@ -1259,24 +1259,36 @@
     },
     "nurse_perfect_pills_2": {
         "name": "保健室の先生",
-        "text": "一つでいい。",
+        "text": "どっちでも、一つだけ飲んで。",
         "choices": ["ピンクの薬", "黒い薬"]
     },
     "nurse_perfect_pills_pink": {
         "name": "{name}",
-        "text": "*ピンクの錠剤を飲み込む。スタンドの明かりはそのままだ。*"
+        "text": "*ピンクの錠剤を飲み込む。舌に甘さが残って、喉は温かい。*"
+    },
+    "nurse_perfect_pills_pink_2": {
+        "name": "保健室の先生",
+        "text": "今日はこの布団のままでいい。"
+    },
+    "nurse_perfect_pills_pink_3": {
+        "name": "{name}",
+        "text": "*指がまた布団の下で触れ合う。スタンドの明かりは消えない。*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
-        "text": "*黒い錠剤を飲み込む。寝室の明かりが消える。*"
+        "text": "*黒い錠剤を飲み込む。甘さはなく、喉だけが冷たい。*"
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",
-        "text": "*顔が割れる。短い紫の髪と金色の目が、その上に重なる。*"
+        "text": "*笑いを消す。寝室の空気が冷えて、スタンドが消える。*"
     },
     "nurse_perfect_pills_black_3": {
+        "name": "{name}",
+        "text": "*顔が割れる。短い紫の髪と金色の目が、その上に重なる。*"
+    },
+    "nurse_perfect_pills_black_4": {
         "name": "カン・リイン",
-        "text": "*ベッドが消える。蛍光灯の下にいるのはカン・リインだ。*"
+        "text": "*ベッドが消える。* ここだよ。"
     },
     "day5_nurse_ending_freetalk_intro": {
         "name": "{name}",

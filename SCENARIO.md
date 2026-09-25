@@ -29890,16 +29890,34 @@
   2. "검은 알약" → `nurse_perfect_pills_black_1`
 
 - 캐릭터: `없음`
-**보건선생님**: 하나만.
+**보건선생님**: 어느 쪽이든 하나만 삼켜.
 
 ---
 
 ### `nurse_perfect_pills_pink`
 - 배경: `nurse_bedroom_pills.jpg`
+- 다음: `nurse_perfect_pills_pink_2`
+
+- 캐릭터: `없음`
+**{name}**: *분홍 알약을 삼킨다. 혀에 단맛이 남고 목은 따뜻하다.*
+
+---
+
+### `nurse_perfect_pills_pink_2`
+- 배경: `nurse_bedroom_pills.jpg`
+- 다음: `nurse_perfect_pills_pink_3`
+
+- 캐릭터: `없음`
+**보건선생님**: 오늘은 이 이불 그대로야.
+
+---
+
+### `nurse_perfect_pills_pink_3`
+- 배경: `ending_perfect_nurse.png`
 - 다음: `hidden_perfect_nurse_ending_title`
 
 - 캐릭터: `없음`
-**{name}**: *분홍 알약을 삼킨다. 스탠드 불은 그대로다.*
+**{name}**: *손가락이 다시 이불 아래에서 맞닿는다. 스탠드 불은 꺼지지 않는다.*
 
 ---
 
@@ -30009,24 +30027,33 @@
 - 다음: `nurse_perfect_pills_black_2`
 
 - 캐릭터: `없음`
-**{name}**: *검은 알약을 삼킨다. 침실 불이 꺼진다.*
+**{name}**: *검은 알약을 삼킨다. 단맛은 없고 목만 차갑다.*
 
 ---
 
 ### `nurse_perfect_pills_black_2`
-- 배경: `riin_lab_pills.jpg`
+- 배경: `nurse_bedroom_pills.jpg`
 - 다음: `nurse_perfect_pills_black_3`
+
+- 캐릭터: `없음`
+**{name}**: *웃음을 거둔다. 침실 공기가 식고 스탠드가 꺼진다.*
+
+---
+
+### `nurse_perfect_pills_black_3`
+- 배경: `riin_lab_pills.jpg`
+- 다음: `nurse_perfect_pills_black_4`
 
 - 캐릭터: `없음`
 **{name}**: *얼굴이 갈라진다. 짧은 보랏빛 머리와 금색 눈이 그 위에 겹친다.*
 
 ---
 
-### `nurse_perfect_pills_black_3`
+### `nurse_perfect_pills_black_4`
 - 배경: `riin_lab_pills.jpg`
 
 - 캐릭터: `없음`
-**강리인**: *침대가 사라진다. 형광등 아래 강리인이다.*
+**강리인**: *침대가 사라진다.* 여기야.
 
 ---
 

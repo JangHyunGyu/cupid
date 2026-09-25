@@ -1259,24 +1259,36 @@
     },
     "nurse_perfect_pills_2": {
         "name": "Infirmière",
-        "text": "Un seul.",
+        "text": "L'un ou l'autre. N'en avale qu'un.",
         "choices": ["Comprimé rose", "Comprimé noir"]
     },
     "nurse_perfect_pills_pink": {
         "name": "{name}",
-        "text": "*J'avale le comprimé rose. La lampe reste allumée.*"
+        "text": "*J'avale le comprimé rose. Le sucre reste sur la langue, et la gorge reste tiède.*"
+    },
+    "nurse_perfect_pills_pink_2": {
+        "name": "Infirmière",
+        "text": "Aujourd'hui, on reste sous cette couverture."
+    },
+    "nurse_perfect_pills_pink_3": {
+        "name": "{name}",
+        "text": "*Ses doigts retrouvent les miens sous la couverture. La lampe ne s'éteint pas.*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
-        "text": "*J'avale le comprimé noir. La lumière de la chambre s'éteint.*"
+        "text": "*J'avale le comprimé noir. Pas de sucre. Seule la gorge devient froide.*"
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",
-        "text": "*Le visage se fend. Une coupe violette courte et des yeux dorés se superposent.*"
+        "text": "*Elle laisse tomber le sourire. L'air de la chambre se refroidit, et la lampe s'éteint.*"
     },
     "nurse_perfect_pills_black_3": {
+        "name": "{name}",
+        "text": "*Le visage se fend. Une coupe violette courte et des yeux dorés se superposent.*"
+    },
+    "nurse_perfect_pills_black_4": {
         "name": "Kang Riin",
-        "text": "*Le lit disparaît. Sous le néon, c'est Kang Riin.*"
+        "text": "*Le lit disparaît.* Ici."
     },
     "day5_nurse_ending_freetalk_intro": {
         "name": "{name}",

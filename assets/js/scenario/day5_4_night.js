@@ -874,21 +874,36 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "nurse_perfect_pills_pink": {
         "background": "assets/images/background/nurse_bedroom_pills.jpg",
         "character": null,
+        "next": "nurse_perfect_pills_pink_2"
+    },
+    "nurse_perfect_pills_pink_2": {
+        "background": "assets/images/background/nurse_bedroom_pills.jpg",
+        "character": null,
+        "next": "nurse_perfect_pills_pink_3"
+    },
+    "nurse_perfect_pills_pink_3": {
+        "background": "assets/images/background/ending_perfect_nurse.png",
+        "character": null,
         "next": "hidden_perfect_nurse_ending_title"
     },
     "nurse_perfect_pills_black_1": {
         "background": "assets/images/background/nurse_bedroom_pills.jpg",
         "character": null,
-        "labGlitch": "lab-flicker",
         "next": "nurse_perfect_pills_black_2"
     },
     "nurse_perfect_pills_black_2": {
-        "background": "assets/images/background/riin_lab_pills.jpg",
+        "background": "assets/images/background/nurse_bedroom_pills.jpg",
         "character": null,
-        "labGlitch": "lab-dark",
+        "labGlitch": "lab-flicker",
         "next": "nurse_perfect_pills_black_3"
     },
     "nurse_perfect_pills_black_3": {
+        "background": "assets/images/background/riin_lab_pills.jpg",
+        "character": null,
+        "labGlitch": "lab-dark",
+        "next": "nurse_perfect_pills_black_4"
+    },
+    "nurse_perfect_pills_black_4": {
         "background": "assets/images/background/riin_lab_pills.jpg",
         "character": null,
         "labGlitch": "lab-dark",

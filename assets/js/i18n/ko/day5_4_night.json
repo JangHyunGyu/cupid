@@ -1389,24 +1389,36 @@
     },
     "nurse_perfect_pills_2": {
         "name": "보건선생님",
-        "text": "하나만.",
+        "text": "어느 쪽이든 하나만 삼켜.",
         "choices": ["분홍 알약", "검은 알약"]
     },
     "nurse_perfect_pills_pink": {
         "name": "{name}",
-        "text": "*분홍 알약을 삼킨다. 스탠드 불은 그대로다.*"
+        "text": "*분홍 알약을 삼킨다. 혀에 단맛이 남고 목은 따뜻하다.*"
+    },
+    "nurse_perfect_pills_pink_2": {
+        "name": "보건선생님",
+        "text": "오늘은 이 이불 그대로야."
+    },
+    "nurse_perfect_pills_pink_3": {
+        "name": "{name}",
+        "text": "*손가락이 다시 이불 아래에서 맞닿는다. 스탠드 불은 꺼지지 않는다.*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
-        "text": "*검은 알약을 삼킨다. 침실 불이 꺼진다.*"
+        "text": "*검은 알약을 삼킨다. 단맛은 없고 목만 차갑다.*"
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",
-        "text": "*얼굴이 갈라진다. 짧은 보랏빛 머리와 금색 눈이 그 위에 겹친다.*"
+        "text": "*웃음을 거둔다. 침실 공기가 식고 스탠드가 꺼진다.*"
     },
     "nurse_perfect_pills_black_3": {
+        "name": "{name}",
+        "text": "*얼굴이 갈라진다. 짧은 보랏빛 머리와 금색 눈이 그 위에 겹친다.*"
+    },
+    "nurse_perfect_pills_black_4": {
         "name": "강리인",
-        "text": "*침대가 사라진다. 형광등 아래 강리인이다.*"
+        "text": "*침대가 사라진다.* 여기야."
     },
     "day5_nurse_ending_freetalk_intro": {
         "name": "{name}",

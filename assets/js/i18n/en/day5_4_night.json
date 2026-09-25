@@ -1259,24 +1259,36 @@
     },
     "nurse_perfect_pills_2": {
         "name": "School Nurse",
-        "text": "Just one.",
+        "text": "Either one. Swallow just one.",
         "choices": ["Pink pill", "Black pill"]
     },
     "nurse_perfect_pills_pink": {
         "name": "{name}",
-        "text": "*The pink pill goes down. The lamp stays on.*"
+        "text": "*The pink pill goes down. It stays sweet on the tongue, and the throat stays warm.*"
+    },
+    "nurse_perfect_pills_pink_2": {
+        "name": "School Nurse",
+        "text": "Today we stay under this blanket."
+    },
+    "nurse_perfect_pills_pink_3": {
+        "name": "{name}",
+        "text": "*Her fingers find mine under the blanket again. The lamp does not go out.*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
-        "text": "*The black pill goes down. The bedroom lights go out.*"
+        "text": "*The black pill goes down. No sweetness. Only the throat goes cold.*"
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",
-        "text": "*Her face splits. A short violet bob and golden eyes settle over it.*"
+        "text": "*She lets the smile go. The bedroom air cools, and the lamp goes out.*"
     },
     "nurse_perfect_pills_black_3": {
+        "name": "{name}",
+        "text": "*Her face splits. A short violet bob and golden eyes settle over it.*"
+    },
+    "nurse_perfect_pills_black_4": {
         "name": "Kang Riin",
-        "text": "*The bed is gone. Under the fluorescent light, it's Kang Riin.*"
+        "text": "*The bed is gone.* Here."
     },
     "day5_nurse_ending_freetalk_intro": {
         "name": "{name}",

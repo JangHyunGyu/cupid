@@ -1259,24 +1259,36 @@
     },
     "nurse_perfect_pills_2": {
         "name": "Enfermeira",
-        "text": "Só um.",
+        "text": "Qualquer um. Engole só um.",
         "choices": ["Comprimido rosa", "Comprimido preto"]
     },
     "nurse_perfect_pills_pink": {
         "name": "{name}",
-        "text": "*Engulo o comprimido rosa. O abajur continua aceso.*"
+        "text": "*Engulo o comprimido rosa. Fica doce na língua, e a garganta fica morna.*"
+    },
+    "nurse_perfect_pills_pink_2": {
+        "name": "Enfermeira",
+        "text": "Hoje a gente fica debaixo deste cobertor."
+    },
+    "nurse_perfect_pills_pink_3": {
+        "name": "{name}",
+        "text": "*Os dedos se encontram de novo debaixo do cobertor. O abajur não apaga.*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
-        "text": "*Engulo o comprimido preto. A luz do quarto se apaga.*"
+        "text": "*Engulo o comprimido preto. Não tem doçura. Só a garganta esfria.*"
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",
-        "text": "*O rosto se parte. Um corte violeta curto e olhos dourados se sobrepõem.*"
+        "text": "*Ela solta o sorriso. O ar do quarto esfria, e o abajur apaga.*"
     },
     "nurse_perfect_pills_black_3": {
+        "name": "{name}",
+        "text": "*O rosto se parte. Um corte violeta curto e olhos dourados se sobrepõem.*"
+    },
+    "nurse_perfect_pills_black_4": {
         "name": "Kang Riin",
-        "text": "*A cama some. Sob a luz fluorescente está Kang Riin.*"
+        "text": "*A cama some.* Aqui."
     },
     "day5_nurse_ending_freetalk_intro": {
         "name": "{name}",

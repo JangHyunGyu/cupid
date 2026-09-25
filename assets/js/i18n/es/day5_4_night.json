@@ -1259,24 +1259,36 @@
     },
     "nurse_perfect_pills_2": {
         "name": "Enfermera",
-        "text": "Solo una.",
+        "text": "Cualquiera. Trágate solo una.",
         "choices": ["Pastilla rosa", "Pastilla negra"]
     },
     "nurse_perfect_pills_pink": {
         "name": "{name}",
-        "text": "*Trago la pastilla rosa. La lámpara sigue encendida.*"
+        "text": "*Trago la pastilla rosa. Queda dulce en la lengua y la garganta se queda tibia.*"
+    },
+    "nurse_perfect_pills_pink_2": {
+        "name": "Enfermera",
+        "text": "Hoy nos quedamos bajo esta manta."
+    },
+    "nurse_perfect_pills_pink_3": {
+        "name": "{name}",
+        "text": "*Los dedos vuelven a encontrarse bajo la manta. La lámpara no se apaga.*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
-        "text": "*Trago la pastilla negra. La luz del dormitorio se apaga.*"
+        "text": "*Trago la pastilla negra. No hay dulzor. Solo la garganta se enfría.*"
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",
-        "text": "*La cara se parte. Un corte violeta corto y unos ojos dorados se superponen.*"
+        "text": "*Suelta la sonrisa. El aire del dormitorio se enfría y la lámpara se apaga.*"
     },
     "nurse_perfect_pills_black_3": {
+        "name": "{name}",
+        "text": "*La cara se parte. Un corte violeta corto y unos ojos dorados se superponen.*"
+    },
+    "nurse_perfect_pills_black_4": {
         "name": "Kang Riin",
-        "text": "*La cama desaparece. Bajo el fluorescente está Kang Riin.*"
+        "text": "*La cama desaparece.* Aquí."
     },
     "day5_nurse_ending_freetalk_intro": {
         "name": "{name}",
