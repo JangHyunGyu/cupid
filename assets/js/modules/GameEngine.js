@@ -1599,7 +1599,8 @@ class GameEngine {
             de: '/de/',
             pt: '/pt/'
         }[lang] || '/';
-        location.assign(`https://nevergrad.archerlab.dev${page}`);
+        const join = page.includes('?') ? '&' : '?';
+        location.assign(`https://nevergrad.archerlab.dev${page}${join}from=riin`);
     }
 
     _hasPlayedNevergrad() {
