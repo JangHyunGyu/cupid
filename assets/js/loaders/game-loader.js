@@ -425,6 +425,25 @@
         verifyRequiredGlobals();
         window.gameScriptsLoaded = true;
         window.dispatchEvent(new Event('gameScriptsLoaded'));
+        if (/(?:^|; )nevergrad_played=1(?:;|$)/.test(document.cookie || '')) {
+            const nodes = document.querySelectorAll('p');
+            let versionNode = null;
+            for (let i = 0; i < nodes.length; i++) {
+                if (nodes[i].textContent.indexOf('ver. 0.13') !== -1) versionNode = nodes[i];
+            }
+            if (versionNode) {
+                const original = versionNode.textContent;
+                const cracked = original.replace('ver. 0.13', 'CYCLE_13');
+                let step = 0;
+                const tick = () => {
+                    versionNode.textContent = step % 2 ? original : cracked;
+                    step += 1;
+                    if (step < 5) setTimeout(tick, step % 2 ? 160 : 80);
+                    else versionNode.textContent = original;
+                };
+                setTimeout(tick, 700);
+            }
+        }
         if (/(?:^|[?&])gate=1(?:&|$)/.test(location.search)) {
             setTimeout(() => {
                 if (typeof startGame !== 'function') return;

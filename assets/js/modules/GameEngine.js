@@ -1091,6 +1091,7 @@ class GameEngine {
         // 배경 크로스페이드(최대 2.1초)와 캐릭터 업데이트를 동시에 시작
         // → CG 전환 시 캐릭터가 남아있는 현상 방지
         this._applyLabGlitch(scene);
+        this._applyCrossHitch(sceneId);
         const bgPromise = scene.background
             ? this.sceneRenderer.setBackground(scene.background)
             : Promise.resolve();
@@ -1572,6 +1573,19 @@ class GameEngine {
      * - renderScene() 완료 후 자동 호출
      * - 매 씬마다 저장되므로 데이터 손실 걱정 없음
      */
+    _applyCrossHitch(sceneId) {
+        const fromGate = /(?:^|[?&])gate=1(?:&|$)/.test(location.search);
+        const hitch = sceneId === 'start_again'
+            || (sceneId === 'start' && fromGate)
+            || (sceneId === 'morning2_yuna_seen' && this._hasPlayedNevergrad());
+        if (!hitch) return;
+        const box = document.getElementById('game-container');
+        if (!box) return;
+        box.classList.remove('lab-flicker');
+        void box.offsetWidth;
+        box.classList.add('lab-flicker');
+    }
+
     _applyLabGlitch(scene) {
         const layer = document.getElementById('background-layer');
         const box = document.getElementById('game-container');
