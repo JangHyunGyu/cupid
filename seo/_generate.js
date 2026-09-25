@@ -94,9 +94,8 @@ const C = {
     picks_title: '설치 없이 즐기는 연애 게임',
     cupid_name: 'Cupid — AI 큐피드의 5일',
     cupid_desc: '메신저처럼 대화하고 선택하는 5일짜리 로맨스 VN입니다. 선택에 따라 관계와 엔딩이 달라지며, 한국어와 모바일 화면을 지원합니다.',
-    nevergrad_name: 'Nevergrad (출시 예정)',
-    nevergrad_label: '개발 중',
-    nevergrad_desc: 'ArcherLab이 다음으로 준비 중인 작품입니다. 인물과 시나리오를 더 길고 깊게 다룹니다.',
+    nevergrad_name: 'Nevergrad',
+    nevergrad_desc: '인물과 시나리오를 더 길고 깊게 다루는 작품입니다.',
     cta: '무료로 시작하기 →',
     other_langs_label: '다른 언어',
     footer: '© ArcherLab — 무설치 브라우저 로맨스 게임'
@@ -123,8 +122,7 @@ const C = {
     cupid_name: 'Cupid — Five Days of School Romance',
     cupid_desc: 'A messenger-style romance visual novel with multiple endings. Your choices shape five days of conversations and relationships. Optimized for mobile play.',
     nevergrad_name: 'Nevergrad',
-    nevergrad_label: 'In development',
-    nevergrad_desc: 'Deeper characters, longer routes. The next title from the same ArcherLab team.',
+    nevergrad_desc: 'Deeper characters, longer routes, from the same ArcherLab team.',
     cta: 'Play Free Now →',
     other_langs_label: 'Other languages',
     footer: '© ArcherLab — browser-based romance games, no download'
@@ -151,8 +149,7 @@ const C = {
     cupid_name: 'Cupid — 5日間の学園ロマンス',
     cupid_desc: 'メッセンジャー風UIで物語が進む、マルチエンディングの恋愛ビジュアルノベル。日本語に完全対応し、スマートフォンでも快適に遊べます。',
     nevergrad_name: 'Nevergrad',
-    nevergrad_label: '開発中',
-    nevergrad_desc: 'より深い人物描写と長編ルートを描く、ArcherLabの次回作です。',
+    nevergrad_desc: 'より深い人物描写と長編ルートを描く、ArcherLabの作品です。',
     cta: '今すぐ無料でプレイ →',
     other_langs_label: '他の言語',
     footer: '© ArcherLab — ダウンロード不要のブラウザ恋愛ゲーム'
@@ -179,8 +176,7 @@ const C = {
     cupid_name: 'Cupid — Cinco días de romance escolar',
     cupid_desc: 'Una novela visual romántica con interfaz de mensajería y múltiples finales. Tus decisiones dan forma a cinco días de conversaciones y relaciones. Optimizada para celulares.',
     nevergrad_name: 'Nevergrad',
-    nevergrad_label: 'En desarrollo',
-    nevergrad_desc: 'Personajes más profundos, rutas más largas. El próximo título del equipo ArcherLab.',
+    nevergrad_desc: 'Personajes más profundos, rutas más largas. Otro título del equipo ArcherLab.',
     cta: 'Jugar gratis ahora →',
     other_langs_label: 'Otros idiomas',
     footer: '© ArcherLab — juegos románticos en el navegador, sin descarga'
@@ -207,8 +203,7 @@ const C = {
     cupid_name: 'Cupid — Cinq jours de romance au lycée',
     cupid_desc: 'Un visual novel romantique qui se joue sous forme de messagerie, avec plusieurs fins. Vos choix façonnent cinq jours d\'échanges et de relations. Le jeu est optimisé pour les appareils mobiles.',
     nevergrad_name: 'Nevergrad',
-    nevergrad_label: 'En développement',
-    nevergrad_desc: 'Des personnages plus fouillés et des intrigues plus longues. Le prochain titre de l\'équipe ArcherLab.',
+    nevergrad_desc: 'Des personnages plus fouillés et des intrigues plus longues. Un autre titre de l\'équipe ArcherLab.',
     cta: 'Jouer gratuitement →',
     other_langs_label: 'Autres langues',
     footer: '© ArcherLab — jeux romantiques sur navigateur, sans téléchargement'
@@ -235,8 +230,7 @@ const C = {
     cupid_name: 'Cupid — Cinco dias de romance escolar',
     cupid_desc: 'Uma visual novel romântica com interface de conversa e vários finais. Suas escolhas moldam cinco dias de diálogos e relacionamentos. Otimizada para celular.',
     nevergrad_name: 'Nevergrad',
-    nevergrad_label: 'Em desenvolvimento',
-    nevergrad_desc: 'Personagens mais profundos, rotas mais longas. O próximo título da equipe ArcherLab.',
+    nevergrad_desc: 'Personagens mais profundos, rotas mais longas. Outro título da equipe ArcherLab.',
     cta: 'Jogar grátis agora →',
     other_langs_label: 'Outros idiomas',
     footer: '© ArcherLab — jogos românticos no navegador, sem download'
@@ -263,8 +257,7 @@ const C = {
     cupid_name: 'Cupid — Fünf Tage voller Schulromantik',
     cupid_desc: 'Eine Romance-Visual-Novel im Messenger-Stil mit mehreren Enden. Deine Entscheidungen prägen fünf Tage voller Gespräche und Beziehungen. Für Smartphones optimiert.',
     nevergrad_name: 'Nevergrad',
-    nevergrad_label: 'In Entwicklung',
-    nevergrad_desc: 'Vielschichtigere Figuren, längere Routen. Der nächste Titel des ArcherLab-Teams.',
+    nevergrad_desc: 'Vielschichtigere Figuren, längere Routen. Ein weiterer Titel des ArcherLab-Teams.',
     cta: 'Jetzt kostenlos spielen →',
     other_langs_label: 'Andere Sprachen',
     footer: '© ArcherLab — Romance-Spiele im Browser, ohne Download'
@@ -552,7 +545,6 @@ li{margin-bottom:8px}
 .cta:hover{transform:translateY(-2px)}
 .pick{background:#fff;border:1px solid #f8bbd0;border-radius:10px;padding:16px 18px;margin-bottom:14px}
 .pick h3{font-size:17px;color:#c2185b;margin-bottom:6px}
-.pick .badge{display:inline-block;background:#fce4ec;color:#c2185b;font-size:12px;padding:2px 8px;border-radius:10px;margin-left:6px;vertical-align:middle}
 .pick p{font-size:14px;color:#555;margin:0}
 .faq{margin-bottom:14px}
 .faq summary{cursor:pointer;font-weight:600;padding:10px 0;color:#444}
@@ -772,7 +764,7 @@ ${page.intentSection ? `
       <p>${escapeHTML(c.cupid_desc)}</p>
     </div>
     <div class="pick">
-      <h3>${escapeHTML(c.nevergrad_name)} <span class="badge">${escapeHTML(c.nevergrad_label)}</span></h3>
+      <h3>${escapeHTML(c.nevergrad_name)}</h3>
       <p>${escapeHTML(c.nevergrad_desc)}</p>
     </div>
 

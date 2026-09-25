@@ -67,6 +67,7 @@
             var normalizedValue = String(value);
             var result = useNative(function (storage) { storage.setItem(normalizedKey, normalizedValue); });
             if (!result.ok) memory.set(normalizedKey, normalizedValue);
+            writeSharedCookie(normalizedKey, normalizedValue);
         },
         removeItem: function (key) {
             var normalizedKey = String(key);
@@ -92,6 +93,29 @@
             var result = useNative(function (storage) { return storage.length; });
             return result.ok ? result.value : memory.size;
         }
+    });
+
+    var SHARED_CUPID_KEYS = ['cupid_cycle_01', 'cupid_heroine', 'cupid_subject_compliance'];
+
+    function pageGlobal() {
+        return typeof window !== 'undefined' ? window : null;
+    }
+
+    function writeSharedCookie(key, value) {
+        if (SHARED_CUPID_KEYS.indexOf(key) === -1) return;
+        var page = pageGlobal();
+        if (!page || !page.document || !page.location) return;
+        var host = page.location.hostname || '';
+        var domain = (host === 'archerlab.dev' || host.slice(-15) === '.archerlab.dev') ? '; Domain=.archerlab.dev' : '';
+        var secure = page.location.protocol === 'https:' ? '; Secure' : '';
+        try {
+            page.document.cookie = key + '=' + encodeURIComponent(value) + '; Path=/; Max-Age=31536000; SameSite=Lax' + domain + secure;
+        } catch (_) {}
+    }
+
+    SHARED_CUPID_KEYS.forEach(function (key) {
+        var existing = adapter.getItem(key);
+        if (existing) writeSharedCookie(key, existing);
     });
 
     return Object.freeze(adapter);
