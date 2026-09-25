@@ -425,6 +425,18 @@
         verifyRequiredGlobals();
         window.gameScriptsLoaded = true;
         window.dispatchEvent(new Event('gameScriptsLoaded'));
+        if (/(?:^|[?&])gate=1(?:&|$)/.test(location.search)) {
+            setTimeout(() => {
+                if (typeof startGame !== 'function') return;
+                const continueBtn = document.getElementById('continue-btn');
+                if (continueBtn && window.hasSavedGame && window.hasSavedGame()) {
+                    continueBtn.disabled = false;
+                    continueBtn.style.opacity = '1';
+                    continueBtn.style.cursor = 'pointer';
+                }
+                startGame();
+            }, 150);
+        }
     }
 
     function clearLoadRecoveryMarker() {
