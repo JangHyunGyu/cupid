@@ -1255,7 +1255,7 @@
     },
     "nurse_perfect_pills_0": {
         "name": "Enfermera",
-        "text": "Dormías con mala cara. Traje algo para la mañana."
+        "text": "Al despertar tenías mala cara. Traje una pastilla para la mañana."
     },
     "nurse_perfect_pills_1": {
         "name": "Enfermera",
@@ -1267,7 +1267,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "Enfermera",
-        "text": "No tiene nombre. Trágate una.",
+        "text": "Es una pastilla sin nombre. Trágate una.",
         "choices": ["Pastilla rosa", "Pastilla negra"]
     },
     "nurse_perfect_pills_pink": {
@@ -1276,7 +1276,7 @@
     },
     "nurse_perfect_pills_pink_2": {
         "name": "Enfermera",
-        "text": "Hoy nos quedamos bajo esta manta."
+        "text": "Hoy nos quedamos un rato más en esta cama."
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",

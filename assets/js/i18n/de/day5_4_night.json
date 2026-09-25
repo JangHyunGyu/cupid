@@ -1255,7 +1255,7 @@
     },
     "nurse_perfect_pills_0": {
         "name": "Schulkrankenschwester",
-        "text": "Im Schlaf sahst du schlecht aus. Ich habe etwas für den Morgen mitgebracht."
+        "text": "Beim Aufwachen sahst du blass aus. Ich habe eine Tablette für den Morgen mitgebracht."
     },
     "nurse_perfect_pills_1": {
         "name": "Schulkrankenschwester",
@@ -1267,7 +1267,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "Schulkrankenschwester",
-        "text": "Es hat keinen Namen. Schluck eine.",
+        "text": "Eine Tablette ohne Namen. Schluck eine.",
         "choices": ["Rosa Tablette", "Schwarze Tablette"]
     },
     "nurse_perfect_pills_pink": {
@@ -1276,7 +1276,7 @@
     },
     "nurse_perfect_pills_pink_2": {
         "name": "Schulkrankenschwester",
-        "text": "Heute bleiben wir unter dieser Decke."
+        "text": "Heute bleiben wir noch ein bisschen in diesem Bett."
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",

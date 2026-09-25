@@ -1385,7 +1385,7 @@
     },
     "nurse_perfect_pills_0": {
         "name": "보건선생님",
-        "text": "잠결에 얼굴이 안 좋았어. 아침에 먹을 거 가져왔지."
+        "text": "자다 깨니 얼굴이 안 좋았어. 아침약 가져왔어."
     },
     "nurse_perfect_pills_1": {
         "name": "보건선생님",
@@ -1397,7 +1397,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "보건선생님",
-        "text": "이름은 없어. 하나만 삼키면 돼.",
+        "text": "이름 없는 약이야. 하나만 삼켜.",
         "choices": ["분홍 알약", "검은 알약"]
     },
     "nurse_perfect_pills_pink": {
@@ -1406,7 +1406,7 @@
     },
     "nurse_perfect_pills_pink_2": {
         "name": "보건선생님",
-        "text": "오늘은 이 이불 그대로야."
+        "text": "오늘은 이 침대에서 더 있자."
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",

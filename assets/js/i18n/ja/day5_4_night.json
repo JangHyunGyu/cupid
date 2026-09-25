@@ -1255,7 +1255,7 @@
     },
     "nurse_perfect_pills_0": {
         "name": "保健室の先生",
-        "text": "寝てる顔が悪かった。朝に飲むもの、持ってきた。"
+        "text": "起きてみたら顔色が悪かった。朝の薬、持ってきた。"
     },
     "nurse_perfect_pills_1": {
         "name": "保健室の先生",
@@ -1267,7 +1267,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "保健室の先生",
-        "text": "名前はない。一つだけ飲んで。",
+        "text": "名前のない薬だよ。一つだけ飲んで。",
         "choices": ["ピンクの薬", "黒い薬"]
     },
     "nurse_perfect_pills_pink": {
@@ -1276,7 +1276,7 @@
     },
     "nurse_perfect_pills_pink_2": {
         "name": "保健室の先生",
-        "text": "今日はこの布団のままでいい。"
+        "text": "今日は、このベッドでもう少し寝ていよう。"
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",

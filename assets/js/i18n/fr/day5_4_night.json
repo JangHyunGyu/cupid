@@ -1255,7 +1255,7 @@
     },
     "nurse_perfect_pills_0": {
         "name": "Infirmière",
-        "text": "Tu avais mauvaise mine en dormant. J'ai apporté de quoi pour le matin."
+        "text": "Au réveil, tu étais pâle. J'ai apporté un comprimé pour le matin."
     },
     "nurse_perfect_pills_1": {
         "name": "Infirmière",
@@ -1267,7 +1267,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "Infirmière",
-        "text": "Ça n'a pas de nom. N'en avale qu'un.",
+        "text": "C'est un comprimé sans nom. N'en avale qu'un.",
         "choices": ["Comprimé rose", "Comprimé noir"]
     },
     "nurse_perfect_pills_pink": {
@@ -1276,7 +1276,7 @@
     },
     "nurse_perfect_pills_pink_2": {
         "name": "Infirmière",
-        "text": "Aujourd'hui, on reste sous cette couverture."
+        "text": "Aujourd'hui, on reste encore un peu dans ce lit."
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",

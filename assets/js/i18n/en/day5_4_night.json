@@ -1255,7 +1255,7 @@
     },
     "nurse_perfect_pills_0": {
         "name": "School Nurse",
-        "text": "You looked awful in your sleep. I brought something for the morning."
+        "text": "You looked pale when you woke. I brought a morning pill."
     },
     "nurse_perfect_pills_1": {
         "name": "School Nurse",
@@ -1267,7 +1267,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "School Nurse",
-        "text": "It doesn't have a name. Swallow one.",
+        "text": "It's a pill with no name. Swallow one.",
         "choices": ["Pink pill", "Black pill"]
     },
     "nurse_perfect_pills_pink": {
@@ -1276,7 +1276,7 @@
     },
     "nurse_perfect_pills_pink_2": {
         "name": "School Nurse",
-        "text": "Today we stay under this blanket."
+        "text": "Let's stay in this bed a little longer."
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",

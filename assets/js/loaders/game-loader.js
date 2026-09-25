@@ -287,7 +287,7 @@
     function buildScriptUrl(src, attempt) {
         var query = '?v=' + encodeURIComponent(version);
         if (src === 'modules/config.js' || src === 'modules/FreeTalkSystem.js') query += '&history=20260924';
-        if (src === 'sound.js' || src === 'modules/GameEngine.js' || src === 'modules/SceneRenderer.js' || src === 'scenario/day5_4_night.js') query += '&history=20260926-noskip';
+        if (src === 'sound.js' || src === 'modules/GameEngine.js' || src === 'modules/SceneRenderer.js' || src === 'scenario/day5_4_night.js') query += '&history=20260926-line';
         if (attempt > 0) {
             query += '&retry=' + Date.now();
         }

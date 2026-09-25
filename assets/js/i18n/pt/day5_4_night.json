@@ -1255,7 +1255,7 @@
     },
     "nurse_perfect_pills_0": {
         "name": "Enfermeira",
-        "text": "Dormindo, seu rosto estava ruim. Trouxe uma coisa para a manhã."
+        "text": "Quando você acordou, o rosto estava pálido. Trouxe um comprimido para a manhã."
     },
     "nurse_perfect_pills_1": {
         "name": "Enfermeira",
@@ -1267,7 +1267,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "Enfermeira",
-        "text": "Não tem nome. Engole um.",
+        "text": "É um comprimido sem nome. Engole um.",
         "choices": ["Comprimido rosa", "Comprimido preto"]
     },
     "nurse_perfect_pills_pink": {
@@ -1276,7 +1276,7 @@
     },
     "nurse_perfect_pills_pink_2": {
         "name": "Enfermeira",
-        "text": "Hoje a gente fica debaixo deste cobertor."
+        "text": "Hoje a gente fica mais um pouco nesta cama."
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",
