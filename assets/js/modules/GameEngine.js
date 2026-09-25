@@ -1565,7 +1565,16 @@ class GameEngine {
      * - renderScene() 완료 후 자동 호출
      * - 매 씬마다 저장되므로 데이터 손실 걱정 없음
      */
+    _hasPlayedNevergrad() {
+        try {
+            return /(?:^|; )nevergrad_played=1(?:;|$)/.test(document.cookie || '');
+        } catch (_) {
+            return false;
+        }
+    }
+
     _flashExperimentStabilized() {
+        if (!this._hasPlayedNevergrad()) return Promise.resolve();
         const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
         const text = {
             ko: '[실험 환경 안정화 완료]',
@@ -1576,16 +1585,27 @@ class GameEngine {
             de: '[Versuchsumgebung stabilisiert]',
             pt: '[Ambiente experimental estabilizado]'
         }[lang] || '[Experiment environment stabilized]';
+        if (!document.getElementById('cupid-stabilize-style')) {
+            const style = document.createElement('style');
+            style.id = 'cupid-stabilize-style';
+            style.textContent = '@keyframes cupid-stabilize-glitch{0%{transform:translate(0,0);text-shadow:none;opacity:1;clip-path:none}15%{transform:translate(-4px,1px);text-shadow:3px 0 #ff4d6d,-3px 0 #7af;opacity:.85}32%{transform:translate(4px,-1px);text-shadow:-3px 0 #ff4d6d,3px 0 #7af}48%{transform:translate(-2px,0);clip-path:inset(18% 0 48% 0);opacity:.65}66%{transform:translate(3px,1px);clip-path:inset(52% 0 12% 0);text-shadow:4px 0 #ff4d6d,-4px 0 #7af}84%{transform:translate(-3px,-1px);clip-path:none;opacity:.9}100%{transform:translate(0,0);text-shadow:none;opacity:1}}';
+            document.head.appendChild(style);
+        }
         const overlay = document.createElement('div');
         overlay.setAttribute('aria-hidden', 'true');
-        overlay.textContent = text;
         overlay.style.cssText = 'position:fixed;inset:0;z-index:10000;background:#000;color:#d8d8d8;display:flex;align-items:center;justify-content:center;font:14px/1.4 ui-monospace,Consolas,monospace;letter-spacing:.04em;pointer-events:none;';
+        const label = document.createElement('span');
+        label.textContent = text;
+        overlay.appendChild(label);
         document.body.appendChild(overlay);
         return new Promise((resolve) => {
             setTimeout(() => {
-                overlay.remove();
-                resolve();
-            }, 500);
+                label.style.animation = 'cupid-stabilize-glitch .5s linear 1';
+                setTimeout(() => {
+                    overlay.remove();
+                    resolve();
+                }, 500);
+            }, 1000);
         });
     }
 
