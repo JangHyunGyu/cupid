@@ -1253,6 +1253,31 @@
         "name": "{name}",
         "text": "*カフェのテーブルには、完成した原稿と二杯のコーヒーが置かれている。*"
     },
+    "nurse_perfect_pills_1": {
+        "name": "保健室の先生",
+        "text": "*布団の外に両手だけ出す。片方に黒い錠剤、もう片方にピンクの錠剤。*"
+    },
+    "nurse_perfect_pills_2": {
+        "name": "保健室の先生",
+        "text": "一つでいい。",
+        "choices": ["ピンクの薬", "黒い薬"]
+    },
+    "nurse_perfect_pills_pink": {
+        "name": "{name}",
+        "text": "*ピンクの錠剤を飲み込む。スタンドの明かりはそのままだ。*"
+    },
+    "nurse_perfect_pills_black_1": {
+        "name": "{name}",
+        "text": "*黒い錠剤を飲み込む。寝室の明かりが消える。*"
+    },
+    "nurse_perfect_pills_black_2": {
+        "name": "{name}",
+        "text": "*顔が割れる。短い紫の髪と金色の目が、その上に重なる。*"
+    },
+    "nurse_perfect_pills_black_3": {
+        "name": "カン・リイン",
+        "text": "*ベッドが消える。蛍光灯の下にいるのはカン・リインだ。*"
+    },
     "day5_nurse_ending_freetalk_intro": {
         "name": "{name}",
         "text": "*家で片づけを終えた彼女が、向かいの席を空けておく。*"

@@ -1253,6 +1253,31 @@
         "name": "{name}",
         "text": "*A finished manuscript and two coffees rest on the café table.*"
     },
+    "nurse_perfect_pills_1": {
+        "name": "School Nurse",
+        "text": "*From under the blanket, she holds out only her hands. One palm has a black pill. The other has a pink pill.*"
+    },
+    "nurse_perfect_pills_2": {
+        "name": "School Nurse",
+        "text": "Just one.",
+        "choices": ["Pink pill", "Black pill"]
+    },
+    "nurse_perfect_pills_pink": {
+        "name": "{name}",
+        "text": "*The pink pill goes down. The lamp stays on.*"
+    },
+    "nurse_perfect_pills_black_1": {
+        "name": "{name}",
+        "text": "*The black pill goes down. The bedroom lights go out.*"
+    },
+    "nurse_perfect_pills_black_2": {
+        "name": "{name}",
+        "text": "*Her face splits. A short violet bob and golden eyes settle over it.*"
+    },
+    "nurse_perfect_pills_black_3": {
+        "name": "Kang Riin",
+        "text": "*The bed is gone. Under the fluorescent light, it's Kang Riin.*"
+    },
     "day5_nurse_ending_freetalk_intro": {
         "name": "{name}",
         "text": "*At home, she finishes tidying and leaves the seat across from her open.*"

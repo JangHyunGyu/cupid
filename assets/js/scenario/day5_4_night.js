@@ -836,7 +836,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "hidden_perfect_nurse_ep1": {
         "background": "assets/images/background/ending_perfect_nurse.png",
         "character": null,
-        "next": "hidden_perfect_nurse_ending_title"
+        "next": "nurse_perfect_pills_1"
     },
     "hidden_perfect_nurse_ending_title": {
         "background": "assets/images/background/ending_perfect_nurse.png",
@@ -857,6 +857,42 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/nurse_house.png",
         "character": null,
         "next": "day5_nurse_ending_freetalk_intro"
+    },
+    "nurse_perfect_pills_1": {
+        "background": "assets/images/background/nurse_bedroom_pills.jpg",
+        "character": null,
+        "next": "nurse_perfect_pills_2"
+    },
+    "nurse_perfect_pills_2": {
+        "background": "assets/images/background/nurse_bedroom_pills.jpg",
+        "character": null,
+        "choices": [
+            { "next": "nurse_perfect_pills_pink" },
+            { "next": "nurse_perfect_pills_black_1" }
+        ]
+    },
+    "nurse_perfect_pills_pink": {
+        "background": "assets/images/background/nurse_bedroom_pills.jpg",
+        "character": null,
+        "next": "hidden_perfect_nurse_ending_title"
+    },
+    "nurse_perfect_pills_black_1": {
+        "background": "assets/images/background/nurse_bedroom_pills.jpg",
+        "character": null,
+        "labGlitch": "lab-flicker",
+        "next": "nurse_perfect_pills_black_2"
+    },
+    "nurse_perfect_pills_black_2": {
+        "background": "assets/images/background/riin_lab_pills.jpg",
+        "character": null,
+        "labGlitch": "lab-dark",
+        "next": "nurse_perfect_pills_black_3"
+    },
+    "nurse_perfect_pills_black_3": {
+        "background": "assets/images/background/riin_lab_pills.jpg",
+        "character": null,
+        "labGlitch": "lab-dark",
+        "redirectNevergrad": true
     },
     "hidden_true_nurse_1": {
         "background": "assets/images/background/street.png",

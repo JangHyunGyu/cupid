@@ -29867,10 +29867,39 @@
 
 ### `hidden_perfect_nurse_ep1`
 - 배경: `ending_perfect_nurse.png`
-- 다음: `hidden_perfect_nurse_ending_title`
+- 다음: `nurse_perfect_pills_1`
 
 - 캐릭터: `없음`
 **{name}**: *몇 달 뒤. 몇 번의 주말을 함께 보낸 끝에 처음으로 같은 아침을 맞는다. 주원이 이불 아래로 손을 내밀고 손가락을 느슨하게 편 채 기다린다.*
+
+---
+
+### `nurse_perfect_pills_1`
+- 배경: `nurse_bedroom_pills.jpg`
+- 다음: `nurse_perfect_pills_2`
+
+- 캐릭터: `없음`
+**보건선생님**: *이불 밖으로 양손만 내민다. 한 손에는 검은 알약, 다른 손에는 분홍 알약.*
+
+---
+
+### `nurse_perfect_pills_2`
+- 배경: `nurse_bedroom_pills.jpg`
+- 선택지:
+  1. "분홍 알약" → `nurse_perfect_pills_pink`
+  2. "검은 알약" → `nurse_perfect_pills_black_1`
+
+- 캐릭터: `없음`
+**보건선생님**: 하나만.
+
+---
+
+### `nurse_perfect_pills_pink`
+- 배경: `nurse_bedroom_pills.jpg`
+- 다음: `hidden_perfect_nurse_ending_title`
+
+- 캐릭터: `없음`
+**{name}**: *분홍 알약을 삼킨다. 스탠드 불은 그대로다.*
 
 ---
 
@@ -29972,6 +30001,32 @@
 
 - 캐릭터: `없음`
 **{name}**: *연두색 노트 마지막 장에는 한 줄이 남아 있다. '오래 걸렸지만 이제 내 선택으로 다시 시작할게.'*
+
+---
+
+### `nurse_perfect_pills_black_1`
+- 배경: `nurse_bedroom_pills.jpg`
+- 다음: `nurse_perfect_pills_black_2`
+
+- 캐릭터: `없음`
+**{name}**: *검은 알약을 삼킨다. 침실 불이 꺼진다.*
+
+---
+
+### `nurse_perfect_pills_black_2`
+- 배경: `riin_lab_pills.jpg`
+- 다음: `nurse_perfect_pills_black_3`
+
+- 캐릭터: `없음`
+**{name}**: *얼굴이 갈라진다. 짧은 보랏빛 머리와 금색 눈이 그 위에 겹친다.*
+
+---
+
+### `nurse_perfect_pills_black_3`
+- 배경: `riin_lab_pills.jpg`
+
+- 캐릭터: `없음`
+**강리인**: *침대가 사라진다. 형광등 아래 강리인이다.*
 
 ---
 

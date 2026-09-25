@@ -1253,6 +1253,31 @@
         "name": "{name}",
         "text": "*Un manuscrit achevé et deux cafés reposent sur la table du café.*"
     },
+    "nurse_perfect_pills_1": {
+        "name": "Infirmière",
+        "text": "*De sous la couverture, elle ne sort que les mains. Dans l'une, un comprimé noir. Dans l'autre, un comprimé rose.*"
+    },
+    "nurse_perfect_pills_2": {
+        "name": "Infirmière",
+        "text": "Un seul.",
+        "choices": ["Comprimé rose", "Comprimé noir"]
+    },
+    "nurse_perfect_pills_pink": {
+        "name": "{name}",
+        "text": "*J'avale le comprimé rose. La lampe reste allumée.*"
+    },
+    "nurse_perfect_pills_black_1": {
+        "name": "{name}",
+        "text": "*J'avale le comprimé noir. La lumière de la chambre s'éteint.*"
+    },
+    "nurse_perfect_pills_black_2": {
+        "name": "{name}",
+        "text": "*Le visage se fend. Une coupe violette courte et des yeux dorés se superposent.*"
+    },
+    "nurse_perfect_pills_black_3": {
+        "name": "Kang Riin",
+        "text": "*Le lit disparaît. Sous le néon, c'est Kang Riin.*"
+    },
     "day5_nurse_ending_freetalk_intro": {
         "name": "{name}",
         "text": "*Chez elle, elle finit de ranger et laisse libre la place en face.*"

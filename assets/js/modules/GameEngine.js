@@ -1090,6 +1090,7 @@ class GameEngine {
         // ─────────────────────────────────────────────────────────
         // 배경 크로스페이드(최대 2.1초)와 캐릭터 업데이트를 동시에 시작
         // → CG 전환 시 캐릭터가 남아있는 현상 방지
+        this._applyLabGlitch(scene);
         const bgPromise = scene.background
             ? this.sceneRenderer.setBackground(scene.background)
             : Promise.resolve();
@@ -1484,6 +1485,12 @@ class GameEngine {
             if (scene.text) {
                 await this.dialogueSystem.typeText(scene.text, scene.name);
                 if (this.sceneRenderer.currentSceneId !== sceneId) return;
+                if (scene.redirectNevergrad) {
+                    await new Promise((resolve) => setTimeout(resolve, 1600));
+                    if (this.sceneRenderer.currentSceneId !== sceneId) return;
+                    this._redirectToNevergrad();
+                    return;
+                }
             } else {
                 // 대사 없으면 메시지 영역 비우기
                 this.uiManager.messageEl.textContent = "";
@@ -1565,6 +1572,36 @@ class GameEngine {
      * - renderScene() 완료 후 자동 호출
      * - 매 씬마다 저장되므로 데이터 손실 걱정 없음
      */
+    _applyLabGlitch(scene) {
+        const layer = document.getElementById('background-layer');
+        const box = document.getElementById('game-container');
+        if (!document.getElementById('cupid-lab-glitch-style')) {
+            const style = document.createElement('style');
+            style.id = 'cupid-lab-glitch-style';
+            style.textContent = '@keyframes cupid-lab-flicker{0%{filter:brightness(1)}20%{filter:brightness(.25) contrast(1.6) hue-rotate(80deg)}40%{filter:brightness(.8) contrast(1.2)}60%{filter:brightness(.15) saturate(0)}80%{filter:brightness(.55) hue-rotate(40deg)}100%{filter:brightness(.35)}}@keyframes cupid-lab-dark{0%{filter:brightness(.7) contrast(1.3)}100%{filter:brightness(.48) saturate(.65) contrast(1.15)}}#background-layer.lab-flicker,#game-container.lab-flicker{animation:cupid-lab-flicker .7s steps(2) 1}#background-layer.lab-dark,#game-container.lab-dark{animation:cupid-lab-dark .8s linear 1 forwards}';
+            document.head.appendChild(style);
+        }
+        for (const el of [layer, box]) {
+            if (!el) continue;
+            el.classList.remove('lab-flicker', 'lab-dark');
+            if (scene.labGlitch) el.classList.add(scene.labGlitch);
+        }
+    }
+
+    _redirectToNevergrad() {
+        const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
+        const page = {
+            ko: '/',
+            en: '/en/',
+            ja: '/ja/',
+            es: '/es/',
+            fr: '/fr/',
+            de: '/de/',
+            pt: '/pt/'
+        }[lang] || '/';
+        location.assign(`https://nevergrad.archerlab.dev${page}`);
+    }
+
     _hasPlayedNevergrad() {
         try {
             return /(?:^|; )nevergrad_played=1(?:;|$)/.test(document.cookie || '');
