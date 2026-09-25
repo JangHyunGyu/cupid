@@ -1267,7 +1267,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "Schulkrankenschwester",
-        "text": "Eine Tablette ohne Namen. Schluck eine.",
+        "text": "Die Tablette hat keinen Namen. Schluck eine.",
         "choices": ["Rosa Tablette", "Schwarze Tablette"]
     },
     "nurse_perfect_pills_pink": {
@@ -1276,11 +1276,11 @@
     },
     "nurse_perfect_pills_pink_2": {
         "name": "Schulkrankenschwester",
-        "text": "Heute bleiben wir noch ein bisschen in diesem Bett."
+        "text": "Heute bleiben wir noch ein bisschen im Bett."
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",
-        "text": "*Die Finger finden sich unter der Decke wieder. Die Lampe geht nicht aus.*"
+        "text": "*Die Finger berühren sich wieder unter der Decke. Die Lampe bleibt an.*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
@@ -1296,11 +1296,11 @@
     },
     "nurse_perfect_pills_black_3": {
         "name": "{name}",
-        "text": "*Das Gesicht reißt auf. Ein kurzer violetter Bob und goldene Augen legen sich darüber.*"
+        "text": "*Das Gesicht reißt auf. Ein kurzer violetter Bob kommt zum Vorschein, und die Augen sind gold.*"
     },
     "nurse_perfect_pills_black_4": {
         "name": "Kang Riin",
-        "text": "*Das Bett ist weg.* Hier."
+        "text": "Hier."
     },
     "day5_nurse_ending_freetalk_intro": {
         "name": "{name}",

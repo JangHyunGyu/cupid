@@ -1267,7 +1267,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "Enfermeira",
-        "text": "É um comprimido sem nome. Engole um.",
+        "text": "O comprimido não tem nome. Engole um.",
         "choices": ["Comprimido rosa", "Comprimido preto"]
     },
     "nurse_perfect_pills_pink": {
@@ -1276,11 +1276,11 @@
     },
     "nurse_perfect_pills_pink_2": {
         "name": "Enfermeira",
-        "text": "Hoje a gente fica mais um pouco nesta cama."
+        "text": "Hoje a gente fica mais um pouco na cama."
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",
-        "text": "*Os dedos se encontram de novo debaixo do cobertor. O abajur não apaga.*"
+        "text": "*Os dedos se tocam de novo debaixo do cobertor. O abajur continua aceso.*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
@@ -1296,11 +1296,11 @@
     },
     "nurse_perfect_pills_black_3": {
         "name": "{name}",
-        "text": "*O rosto se parte. Um corte violeta curto e olhos dourados se sobrepõem.*"
+        "text": "*O rosto se parte. Aparece um corte violeta curto, e os olhos são dourados.*"
     },
     "nurse_perfect_pills_black_4": {
         "name": "Kang Riin",
-        "text": "*A cama some.* Aqui."
+        "text": "Aqui."
     },
     "day5_nurse_ending_freetalk_intro": {
         "name": "{name}",

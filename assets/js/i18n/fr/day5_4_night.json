@@ -1267,7 +1267,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "Infirmière",
-        "text": "C'est un comprimé sans nom. N'en avale qu'un.",
+        "text": "Le comprimé n'a pas de nom. N'en avale qu'un.",
         "choices": ["Comprimé rose", "Comprimé noir"]
     },
     "nurse_perfect_pills_pink": {
@@ -1276,11 +1276,11 @@
     },
     "nurse_perfect_pills_pink_2": {
         "name": "Infirmière",
-        "text": "Aujourd'hui, on reste encore un peu dans ce lit."
+        "text": "Aujourd'hui, on reste encore un peu au lit."
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",
-        "text": "*Ses doigts retrouvent les miens sous la couverture. La lampe ne s'éteint pas.*"
+        "text": "*Ses doigts retrouvent les miens sous la couverture. La lampe reste allumée.*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
@@ -1296,11 +1296,11 @@
     },
     "nurse_perfect_pills_black_3": {
         "name": "{name}",
-        "text": "*Le visage se fend. Une coupe violette courte et des yeux dorés se superposent.*"
+        "text": "*Le visage se fend. Une coupe violette courte apparaît, et les yeux sont dorés.*"
     },
     "nurse_perfect_pills_black_4": {
         "name": "Kang Riin",
-        "text": "*Le lit disparaît.* Ici."
+        "text": "Ici."
     },
     "day5_nurse_ending_freetalk_intro": {
         "name": "{name}",

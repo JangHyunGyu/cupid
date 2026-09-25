@@ -1267,7 +1267,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "保健室の先生",
-        "text": "名前のない薬だよ。一つだけ飲んで。",
+        "text": "薬に名前はない。一つだけ飲んで。",
         "choices": ["ピンクの薬", "黒い薬"]
     },
     "nurse_perfect_pills_pink": {
@@ -1276,11 +1276,11 @@
     },
     "nurse_perfect_pills_pink_2": {
         "name": "保健室の先生",
-        "text": "今日は、このベッドでもう少し寝ていよう。"
+        "text": "今日はベッドでもう少し寝ていよう。"
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",
-        "text": "*指がまた布団の下で触れ合う。スタンドの明かりは消えない。*"
+        "text": "*指がまた布団の中で触れる。スタンドはついたままだ。*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
@@ -1296,11 +1296,11 @@
     },
     "nurse_perfect_pills_black_3": {
         "name": "{name}",
-        "text": "*顔が割れる。短い紫の髪と金色の目が、その上に重なる。*"
+        "text": "*顔が割れる。短い紫の髪が見えて、目が金色だ。*"
     },
     "nurse_perfect_pills_black_4": {
         "name": "カン・リイン",
-        "text": "*ベッドが消える。* ここだよ。"
+        "text": "ここだよ。"
     },
     "day5_nurse_ending_freetalk_intro": {
         "name": "{name}",

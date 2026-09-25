@@ -1267,7 +1267,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "Enfermera",
-        "text": "Es una pastilla sin nombre. Trágate una.",
+        "text": "La pastilla no tiene nombre. Trágate una.",
         "choices": ["Pastilla rosa", "Pastilla negra"]
     },
     "nurse_perfect_pills_pink": {
@@ -1276,11 +1276,11 @@
     },
     "nurse_perfect_pills_pink_2": {
         "name": "Enfermera",
-        "text": "Hoy nos quedamos un rato más en esta cama."
+        "text": "Hoy nos quedamos un rato más en la cama."
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",
-        "text": "*Los dedos vuelven a encontrarse bajo la manta. La lámpara no se apaga.*"
+        "text": "*Los dedos vuelven a tocarse bajo la manta. La lámpara sigue encendida.*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
@@ -1296,11 +1296,11 @@
     },
     "nurse_perfect_pills_black_3": {
         "name": "{name}",
-        "text": "*La cara se parte. Un corte violeta corto y unos ojos dorados se superponen.*"
+        "text": "*La cara se parte. Se ve un corte violeta corto, y los ojos son dorados.*"
     },
     "nurse_perfect_pills_black_4": {
         "name": "Kang Riin",
-        "text": "*La cama desaparece.* Aquí."
+        "text": "Aquí."
     },
     "day5_nurse_ending_freetalk_intro": {
         "name": "{name}",
