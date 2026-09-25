@@ -5,7 +5,7 @@
     },
     "start_again": {
         "name": "{name}",
-        "text": "*Mir wird plötzlich schwindlig. Der Magen zieht sich zusammen, ich stütze mich am Tor ab und stehe erst nach einem Atemzug wieder gerade.*"
+        "text": "*Mir wird plötzlich schwindlig. Der Magen zieht sich zusammen. Ich stütze mich am Tor ab, hole einmal Luft und stehe erst dann wieder gerade.*"
     },
     "start_3": {
         "name": "{name}",
