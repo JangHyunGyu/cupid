@@ -33,6 +33,137 @@
  *   progress.getAffinity('seyoun'); // 0~100
  */
 
+let cupidGalleryAccepted = null;
+
+function cupidGalleryMac(text) {
+    let hash = 2166136261;
+    for (let i = 0; i < text.length; i++) {
+        hash ^= text.charCodeAt(i);
+        hash = Math.imul(hash, 16777619);
+    }
+    return (hash >>> 0).toString(16).padStart(8, '0');
+}
+
+function cupidGalleryAffinityText(data) {
+    const characters = data?.characters || {};
+    return Object.keys(characters).sort().map(id => {
+        const row = characters[id] || {};
+        return `${id}:${Number(row.maxAffinity) || 0}:${Number(row.currentAffinity) || 0}`;
+    }).join('|');
+}
+
+function cupidGalleryUnlockText(data) {
+    const characters = data?.characters || {};
+    const chars = Object.keys(characters).sort().map(id => {
+        const row = characters[id] || {};
+        return `${id}:${Number(row.freeTalkCount) || 0}:${row.unlocked ? 1 : 0}:${row.met ? 1 : 0}`;
+    }).join('|');
+    const ids = bucket => Object.keys(bucket || {}).filter(id => bucket[id]?.unlocked).sort().join(',');
+    return `${chars}#${ids(data?.cg)}#${ids(data?.endings)}#${ids(data?.bgm)}`;
+}
+
+function cupidGallerySeal(data, version) {
+    const body = version >= 2
+        ? `${cupidGalleryAffinityText(data)}#${cupidGalleryUnlockText(data)}`
+        : cupidGalleryAffinityText(data);
+    return cupidGalleryMac(`cupid-gallery-seal-v${version}:k9Qm4rV2pL8sN1wX6cH3dF0|${body}`);
+}
+
+function cupidGallerySealMatches(data) {
+    if (!data?.affinitySeal) return !data?.affinitySealed;
+    const version = Number(data.affinitySealVersion) || 1;
+    return data.affinitySeal === cupidGallerySeal(data, version);
+}
+
+function cupidGalleryWriteAllowed() {
+    return /(?:SceneRenderer|GameEngine|UIManager|sound|FreeTalkSystem|gallery-freetalk)\.js/.test(new Error().stack || '');
+}
+
+function cupidGalleryStripRewards(data) {
+    for (const row of Object.values(data?.characters || {})) {
+        if (!row || typeof row !== 'object') continue;
+        row.maxAffinity = 0;
+        row.currentAffinity = 0;
+        row.freeTalkCount = 0;
+        row.unlocked = false;
+    }
+    data.cg = {};
+    data.endings = {};
+    data.bgm = { intro: { unlocked: true } };
+}
+
+function cupidGalleryStamp(data) {
+    data.affinitySealed = true;
+    data.affinitySealVersion = 2;
+    data.affinitySeal = cupidGallerySeal(data, 2);
+}
+
+function cupidGalleryRemember(data) {
+    cupidGalleryAccepted = JSON.parse(JSON.stringify({
+        characters: data.characters || {},
+        cg: data.cg || {},
+        endings: data.endings || {},
+        bgm: data.bgm || {}
+    }));
+}
+
+function cupidGalleryClampGrowth(data) {
+    const accepted = cupidGalleryAccepted;
+    if (!accepted || cupidGalleryWriteAllowed()) return;
+    for (const [id, row] of Object.entries(data.characters || {})) {
+        if (!row || typeof row !== 'object') continue;
+        const prev = accepted.characters?.[id];
+        if (!prev) {
+            row.maxAffinity = 0;
+            row.currentAffinity = 0;
+            row.freeTalkCount = 0;
+            row.unlocked = false;
+            row.met = false;
+            continue;
+        }
+        if ((Number(row.maxAffinity) || 0) > (Number(prev.maxAffinity) || 0)) row.maxAffinity = prev.maxAffinity || 0;
+        if ((Number(row.currentAffinity) || 0) > (Number(prev.currentAffinity) || 0)) row.currentAffinity = prev.currentAffinity || 0;
+        if ((Number(row.freeTalkCount) || 0) > (Number(prev.freeTalkCount) || 0)) row.freeTalkCount = prev.freeTalkCount || 0;
+        if (row.unlocked && !prev.unlocked) row.unlocked = false;
+        if (row.met && !prev.met) row.met = false;
+    }
+    for (const id of Object.keys(data.cg || {})) {
+        if (data.cg[id]?.unlocked && !accepted.cg?.[id]?.unlocked) delete data.cg[id];
+    }
+    for (const id of Object.keys(data.endings || {})) {
+        if (data.endings[id]?.unlocked && !accepted.endings?.[id]?.unlocked) delete data.endings[id];
+    }
+    for (const id of Object.keys(data.bgm || {})) {
+        if (id !== 'intro' && data.bgm[id]?.unlocked && !accepted.bgm?.[id]?.unlocked) delete data.bgm[id];
+    }
+}
+
+function cupidGalleryPersist(data) {
+    window.CupidStorage.setItem('cupid_gallery', JSON.stringify(data));
+}
+
+window.CupidGalleryStore = {
+    sanitize(data) {
+        if (!data || typeof data !== 'object') return data;
+        if (data.affinitySeal && !cupidGallerySealMatches(data)) {
+            cupidGalleryStripRewards(data);
+            cupidGalleryStamp(data);
+            cupidGalleryPersist(data);
+        }
+        cupidGalleryRemember(data);
+        return data;
+    },
+    commit(data) {
+        if (!data || typeof data !== 'object') return data;
+        if (!cupidGalleryAccepted) this.sanitize(data);
+        cupidGalleryClampGrowth(data);
+        cupidGalleryStamp(data);
+        cupidGalleryRemember(data);
+        cupidGalleryPersist(data);
+        return data;
+    }
+};
+
 class GalleryProgress {
     // =========================================================================
     // 생성자 및 초기화
@@ -106,8 +237,7 @@ class GalleryProgress {
                     needsReset = true;
                     console.log('[GalleryProgress] 데이터 버전 업데이트로 인해 초기화됩니다.');
                 } else {
-                    this.data = parsed;
-                    if (parsed.affinitySealed && !this._affinitySealMatches()) this._clearUnsealedAffinity();
+                    this.data = window.CupidGalleryStore.sanitize(parsed);
                     // trueEndingCleared → perfectEndingCleared 마이그레이션
                     this._migratePerfectEndingKey();
                     // 기존 100점 및 퍼펙트 전용 해금을 새 기준에 맞춰 1회 재조정
@@ -306,9 +436,7 @@ class GalleryProgress {
 
     save() {
         try {
-            this.data.affinitySealed = true;
-            this._stampAffinitySeal();
-            window.CupidStorage.setItem(this.storageKey, JSON.stringify(this.data));
+            window.CupidGalleryStore.commit(this.data);
         } catch (e) {
             window.reportCupidCaughtError?.(e, {
                 source: 'cupid-gallery-progress',
@@ -329,8 +457,7 @@ class GalleryProgress {
         try { saved = window.CupidStorage.getItem(this.storageKey); } catch (e) {}
         if (saved) {
             try {
-                this.data = JSON.parse(saved);
-                if (this.data?.affinitySealed && !this._affinitySealMatches()) this._clearUnsealedAffinity();
+                this.data = window.CupidGalleryStore.sanitize(JSON.parse(saved));
                 this._migratePerfectEndingKey();
                 this._migrateAffinityRebalance();
                 this._migrateEndingLedger();
@@ -800,6 +927,7 @@ class GalleryProgress {
         };
 
         this.save();
+        if (!this.data.cg?.[cgId]?.unlocked) return false;
         console.log(`[GalleryProgress] CG 해금: ${cgId}`);
         try { window.CupidMedia?.unlockCG?.(cgId); } catch (_) {}
         return true;

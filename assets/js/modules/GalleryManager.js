@@ -87,7 +87,9 @@ class GalleryManager {
 
         // 🔧 JSON.parse 에러 핸들링 추가 (데이터 손상 대비)
         try {
-            const data = JSON.parse(saved);
+            const data = window.CupidGalleryStore?.sanitize
+                ? window.CupidGalleryStore.sanitize(JSON.parse(saved))
+                : JSON.parse(saved);
 
             // 구버전 데이터면 버전 정보 추가
             if (!data.version) data.version = this.dataVersion;
@@ -122,6 +124,10 @@ class GalleryManager {
      */
     saveProgress(progress) {
         try {
+            if (window.CupidGalleryStore?.commit) {
+                window.CupidGalleryStore.commit(progress);
+                return;
+            }
             window.CupidStorage.setItem(this.storageKey, JSON.stringify(progress));
         } catch (e) {
             console.error('[GalleryManager] 갤러리 데이터 저장 실패:', e);
@@ -222,6 +228,7 @@ class GalleryManager {
 
         progress.cg[cgId] = { unlocked: true, unlockedAt: Date.now() };
         this.saveProgress(progress);
+        if (!progress.cg[cgId]?.unlocked) return;
         console.log(`[GalleryManager] CG 해금: ${cgId}`);
         try { window.CupidMedia?.unlockCG?.(cgId); } catch (_) {}
     }

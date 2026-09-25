@@ -177,6 +177,10 @@ class CGRenderer {
     openModal(cgId) {
         const cg = GalleryData.getCG(this.ui.lang, cgId);
         if (!cg) return;
+        if (!this.ui.progress?.isUnlocked?.('cg', cgId)) {
+            this.showLockPopup(cgId);
+            return;
+        }
 
         const modal = this.modalEl || this._createModal();
 

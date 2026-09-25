@@ -348,6 +348,9 @@
 
   function unlockCG(cgId) {
     if (!cgId) return Promise.resolve();
+    var stack = '';
+    try { stack = new Error().stack || ''; } catch (_) {}
+    if (!/(?:SceneRenderer|gallery-progress|gallery-ui-cg)\.js/.test(stack)) return Promise.resolve();
     return queueUnlock([cgAsset(cgId)]);
   }
 
