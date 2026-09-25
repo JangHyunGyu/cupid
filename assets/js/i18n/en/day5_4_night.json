@@ -1267,7 +1267,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "School Nurse",
-        "text": "The pill has no name. Swallow one.",
+        "text": "It's vitamins. We overdid it yesterday.",
         "choices": ["Pink pill", "Black pill"]
     },
     "nurse_perfect_pills_pink": {

@@ -1267,7 +1267,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "Schulkrankenschwester",
-        "text": "Die Tablette hat keinen Namen. Schluck eine.",
+        "text": "Das sind Vitamine. Wir haben's gestern übertrieben.",
         "choices": ["Rosa Tablette", "Schwarze Tablette"]
     },
     "nurse_perfect_pills_pink": {

@@ -1267,7 +1267,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "Enfermeira",
-        "text": "O comprimido não tem nome. Engole um.",
+        "text": "É vitamina. Ontem a gente exagerou.",
         "choices": ["Comprimido rosa", "Comprimido preto"]
     },
     "nurse_perfect_pills_pink": {

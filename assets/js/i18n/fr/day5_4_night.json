@@ -1267,7 +1267,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "Infirmière",
-        "text": "Le comprimé n'a pas de nom. N'en avale qu'un.",
+        "text": "C'est des vitamines. On a forcé hier.",
         "choices": ["Comprimé rose", "Comprimé noir"]
     },
     "nurse_perfect_pills_pink": {

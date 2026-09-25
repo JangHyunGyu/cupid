@@ -77,7 +77,7 @@
 
                     // Promise.allSettled로 수집하므로 개별 rejection은 상위로 전파되지 않음
                     // (bingbot 등 크롤러가 Cloudflare에 차단당해 403 받을 때 unhandled rejection 발생하던 문제 방지)
-                    const task = () => fetchJsonWithRetry(`${basePath}/${file}`)
+                    const task = () => fetchJsonWithRetry(`${basePath}/${file}?v=20260926-vitamin`)
                         .then(data => {
                             Object.assign(localeData[locale], data);
                             Object.assign(dayLocaleData[locale], data);

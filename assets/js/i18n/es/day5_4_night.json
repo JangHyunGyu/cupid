@@ -1267,7 +1267,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "Enfermera",
-        "text": "La pastilla no tiene nombre. Trágate una.",
+        "text": "Son vitaminas. Ayer nos pasamos.",
         "choices": ["Pastilla rosa", "Pastilla negra"]
     },
     "nurse_perfect_pills_pink": {

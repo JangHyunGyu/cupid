@@ -1397,7 +1397,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "보건선생님",
-        "text": "약 이름은 없어. 하나만 삼켜.",
+        "text": "영양제야. 어제 무리했으니까.",
         "choices": ["분홍 알약", "검은 알약"]
     },
     "nurse_perfect_pills_pink": {

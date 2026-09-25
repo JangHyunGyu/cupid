@@ -1267,7 +1267,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "保健室の先生",
-        "text": "薬に名前はない。一つだけ飲んで。",
+        "text": "栄養剤だよ。昨日無理したから。",
         "choices": ["ピンクの薬", "黒い薬"]
     },
     "nurse_perfect_pills_pink": {
