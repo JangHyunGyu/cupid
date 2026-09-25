@@ -1253,6 +1253,10 @@
         "name": "{name}",
         "text": "*A finished manuscript and two coffees rest on the café table.*"
     },
+    "nurse_perfect_pills_0": {
+        "name": "School Nurse",
+        "text": "Just open your hand."
+    },
     "nurse_perfect_pills_1": {
         "name": "School Nurse",
         "text": "*From under the blanket, she holds out only her hands. One palm has a black pill. The other has a pink pill.*"

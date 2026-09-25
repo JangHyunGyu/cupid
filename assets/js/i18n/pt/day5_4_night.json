@@ -1253,6 +1253,10 @@
         "name": "{name}",
         "text": "*Na mesa do café estão um manuscrito pronto e dois cafés.*"
     },
+    "nurse_perfect_pills_0": {
+        "name": "Enfermeira",
+        "text": "Só abre a mão."
+    },
     "nurse_perfect_pills_1": {
         "name": "Enfermeira",
         "text": "*De baixo do cobertor, ela estende só as mãos. Numa, um comprimido preto. Na outra, um rosa.*"

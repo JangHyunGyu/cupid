@@ -29867,10 +29867,19 @@
 
 ### `hidden_perfect_nurse_ep1`
 - 배경: `ending_perfect_nurse.png`
-- 다음: `nurse_perfect_pills_1`
+- 다음: `nurse_perfect_pills_0`
 
 - 캐릭터: `없음`
 **{name}**: *몇 달 뒤. 몇 번의 주말을 함께 보낸 끝에 처음으로 같은 아침을 맞는다. 주원이 이불 아래로 손을 내밀고 손가락을 느슨하게 편 채 기다린다.*
+
+---
+
+### `nurse_perfect_pills_0`
+- 배경: `ending_perfect_nurse.png`
+- 다음: `nurse_perfect_pills_1`
+
+- 캐릭터: `없음`
+**보건선생님**: 손만 펴 봐.
 
 ---
 

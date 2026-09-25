@@ -836,7 +836,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "hidden_perfect_nurse_ep1": {
         "background": "assets/images/background/ending_perfect_nurse.png",
         "character": null,
-        "next": "nurse_perfect_pills_1"
+        "next": "nurse_perfect_pills_0"
     },
     "hidden_perfect_nurse_ending_title": {
         "background": "assets/images/background/ending_perfect_nurse.png",
@@ -857,6 +857,11 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/nurse_house.png",
         "character": null,
         "next": "day5_nurse_ending_freetalk_intro"
+    },
+    "nurse_perfect_pills_0": {
+        "background": "assets/images/background/ending_perfect_nurse.png",
+        "character": null,
+        "next": "nurse_perfect_pills_1"
     },
     "nurse_perfect_pills_1": {
         "background": "assets/images/background/nurse_bedroom_pills.jpg",
@@ -894,6 +899,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "nurse_perfect_pills_black_2": {
         "background": "assets/images/background/nurse_bedroom_pills.jpg",
         "character": null,
+        "bgm": null,
         "labGlitch": "lab-flicker",
         "next": "nurse_perfect_pills_black_3"
     },

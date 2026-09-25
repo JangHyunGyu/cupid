@@ -1253,6 +1253,10 @@
         "name": "{name}",
         "text": "*Auf dem Cafétisch liegen ein fertiges Manuskript und zwei Tassen Kaffee.*"
     },
+    "nurse_perfect_pills_0": {
+        "name": "Schulkrankenschwester",
+        "text": "Streck nur die Hand aus."
+    },
     "nurse_perfect_pills_1": {
         "name": "Schulkrankenschwester",
         "text": "*Unter der Decke hebt sie nur die Hände. Auf der einen eine schwarze Tablette, auf der anderen eine rosa.*"
