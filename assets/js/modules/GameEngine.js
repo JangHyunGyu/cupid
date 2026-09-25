@@ -358,7 +358,7 @@ class GameEngine {
      */
     _isEndingScene(sceneId) {
         if (!sceneId) return false;
-        return /^(perfect_|good_|bitter_|confess_fail_|harem_|hidden_perfect_|hidden_good_|ending_|day5_ending_)/.test(sceneId)
+        return /^(perfect_|good_|bitter_|confess_fail_|harem_|hidden_|ending_|day5_ending_|day5_credits|nurse_perfect_pills_)/.test(sceneId)
             || sceneId.includes('_epilogue_') || sceneId.includes('epilogue_');
     }
 
@@ -1092,6 +1092,12 @@ class GameEngine {
         // → CG 전환 시 캐릭터가 남아있는 현상 방지
         this._applyLabGlitch(scene);
         this._applyCrossHitch(sceneId);
+        if (this._isEndingScene(sceneId)) {
+            this._cgLocked = true;
+            clearTimeout(this._endingLockTimer);
+            const hold = (scene.background && (String(scene.background).includes('nurse_bedroom_pills') || String(scene.background).includes('riin_lab_pills'))) ? 1800 : 900;
+            this._endingLockTimer = setTimeout(() => { this._cgLocked = false; }, hold);
+        }
         const bgPromise = scene.background
             ? this.sceneRenderer.setBackground(scene.background)
             : Promise.resolve();

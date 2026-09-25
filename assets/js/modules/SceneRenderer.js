@@ -456,9 +456,16 @@ class SceneRenderer {
         }
 
         // 엔딩 CG 여부 판별 (느린 페이드인 적용)
+        const isHandoff = bgPath.includes('nurse_bedroom_pills') || bgPath.includes('riin_lab_pills');
         const isEndingCG = bgPath.includes('ending_');
-        const fadeClass = isEndingCG ? 'bg-crossfade-slow' : 'bg-crossfade';
-        const fadeDuration = isEndingCG ? 2100 : 420;
+        const fadeClass = isHandoff ? 'bg-crossfade-long' : (isEndingCG ? 'bg-crossfade-slow' : 'bg-crossfade');
+        const fadeDuration = isHandoff ? 1800 : (isEndingCG ? 2100 : 420);
+        if (isHandoff && !document.getElementById('cupid-long-fade')) {
+            const style = document.createElement('style');
+            style.id = 'cupid-long-fade';
+            style.textContent = '#background-layer.bg-crossfade-long::after{transition:opacity 1.8s ease-in-out;opacity:1}';
+            document.head.appendChild(style);
+        }
 
         // 크로스페이드: ::after에 새 배경을 설정하고 페이드인
         // CSS 변수는 style.css 기준으로 URL이 해석되므로 절대 URL로 변환
