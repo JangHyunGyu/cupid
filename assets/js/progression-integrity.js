@@ -6,14 +6,50 @@
     'use strict';
     const { storage, locks, crypto } = options || {};
     const key = 'cupid_progress_integrity_v1';
+    const sealKey = 'cupid-affinity-seal-v1:k9Qm4rV2pL8sN1wX6cH3dF0';
+    function sealText(snapshot, runId, revision) {
+        const stats = snapshot?.stats || {};
+        const body = Object.keys(stats).sort().map(name => `${name}=${Number(stats[name]?.affinity) || 0}`).join(',');
+        return `${sealKey}|${runId}|${revision}|${body}`;
+    }
+    function sealMac(text) {
+        let hash = 2166136261;
+        for (let i = 0; i < text.length; i++) {
+            hash ^= text.charCodeAt(i);
+            hash = Math.imul(hash, 16777619);
+        }
+        return (hash >>> 0).toString(16).padStart(8, '0');
+    }
+    function stamp(record) {
+        if (!record) return;
+        record.sealed = true;
+        record.seal = sealMac(sealText(record.snapshot, record.runId, record.revision));
+    }
+    function sealMatches(record) {
+        return !!record?.seal && record.seal === sealMac(sealText(record.snapshot, record.runId, record.revision));
+    }
+    function clearSealedAffinities(record) {
+        for (const stat of Object.values(record?.snapshot?.stats || {})) {
+            if (stat && typeof stat === 'object') stat.affinity = 0;
+        }
+        stamp(record);
+        storage?.setItem(key, JSON.stringify(record));
+    }
     const copy = value => JSON.parse(JSON.stringify(value));
     const fields = ['playerName', 'currentDay', 'stats', 'flags', 'freeTalkCheckpoint', 'progressionRunId', 'progressionRevision', 'telemetryRunId', 'appliedAffinityCorrections'];
     const critical = state => Object.fromEntries(fields.filter(field => state[field] !== undefined).map(field => [field, copy(state[field])]));
     const uuid = () => crypto?.randomUUID?.() || `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`;
     function read() {
-        try { const value = JSON.parse(storage?.getItem(key) || 'null'); return value?.version === 1 && value.runId ? value : null; } catch (_) { return null; }
+        try {
+            const value = JSON.parse(storage?.getItem(key) || 'null');
+            if (!(value?.version === 1 && value.runId)) return null;
+            if (value.sealed && !sealMatches(value)) {
+                clearSealedAffinities(value);
+            }
+            return value;
+        } catch (_) { return null; }
     }
-    function persist(value) { storage?.setItem(key, JSON.stringify(value)); }
+    function persist(value) { stamp(value); storage?.setItem(key, JSON.stringify(value)); }
     function start(state) {
         state.progressionRunId = uuid();
         state.progressionRevision = 0;

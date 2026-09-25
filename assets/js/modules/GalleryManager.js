@@ -170,9 +170,11 @@ class GalleryManager {
         if (!progress.characters[charId]) progress.characters[charId] = {};
 
         // 현재 기록된 최대 호감도보다 높을 때만 갱신
+        const storyAffinity = Number(window.gameEngine?.stateManager?.getAffinity?.(charKey));
+        const cappedAffinity = Number.isFinite(storyAffinity) ? Math.min(currentAffinity, storyAffinity) : currentAffinity;
         const currentMax = progress.characters[charId].maxAffinity || 0;
-        if (currentAffinity > currentMax) {
-            progress.characters[charId].maxAffinity = currentAffinity;
+        if (cappedAffinity > currentMax) {
+            progress.characters[charId].maxAffinity = cappedAffinity;
             this.saveProgress(progress);
             console.log(`[GalleryManager] 최대 호감도: ${charId} = ${currentAffinity}`);
             try { window.CupidMedia?.syncFromProgressObject?.(progress); } catch (_) {}

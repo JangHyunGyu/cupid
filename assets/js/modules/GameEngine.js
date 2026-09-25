@@ -692,7 +692,9 @@ class GameEngine {
         // - "선생님께 인사한다" → Teacher +5
         // - "현재 대화중인 캐릭터 선물" → #{current_character} +10
 
-        if (choice.stats) {
+        const liveChoices = this.sceneRenderer.getScene(this.sceneRenderer.currentSceneId)?.choices || [];
+        const choiceIsLive = liveChoices.some(candidate => candidate === choice || JSON.stringify(candidate) === JSON.stringify(choice));
+        if (choice.stats && choiceIsLive) {
             // stats 객체의 각 캐릭터별로 순회
             // 예: { Seoyeon: { affinity: 10 }, "#{current_character}": { affinity: 5 } }
             for (const [char, stats] of Object.entries(choice.stats)) {
@@ -745,7 +747,9 @@ class GameEngine {
                 // 💕 호감도 변경 및 UI 업데이트
                 // ─────────────────────────────────────────────────
                 // stats.affinity가 있고, 해당 캐릭터가 존재하는 경우만 처리
-                if (stats.affinity && this.stateManager.stats[charKey]) {
+                if (stats.affinity && this.stateManager.stats[charKey]
+                    && window.CupidAffinityGate?.commitKey() === `choice:${this.sceneRenderer.currentSceneId}`
+                    && window.CupidAffinityGate?.grant(charKey, stats.affinity)) {
                     // 1️⃣ 호감도 수치 변경
                     // changeAffinity(캐릭터, 변화량) → 새로운 호감도 반환
                     // 예: 현재 30 + 변화량 10 = 새 값 40

@@ -107,6 +107,7 @@ class GalleryProgress {
                     console.log('[GalleryProgress] 데이터 버전 업데이트로 인해 초기화됩니다.');
                 } else {
                     this.data = parsed;
+                    if (parsed.affinitySealed && !this._affinitySealMatches()) this._clearUnsealedAffinity();
                     // trueEndingCleared → perfectEndingCleared 마이그레이션
                     this._migratePerfectEndingKey();
                     // 기존 100점 및 퍼펙트 전용 해금을 새 기준에 맞춰 1회 재조정
@@ -266,8 +267,47 @@ class GalleryProgress {
     /**
      * 현재 진행 상태를 localStorage에 저장
      */
+    _affinitySealText() {
+        const characters = this.data?.characters || {};
+        return Object.keys(characters).sort().map(id => {
+            const row = characters[id] || {};
+            return `${id}:${Number(row.maxAffinity) || 0}:${Number(row.currentAffinity) || 0}`;
+        }).join('|');
+    }
+
+    _stampAffinitySeal() {
+        if (!this.data) return;
+        let hash = 2166136261;
+        const text = `cupid-gallery-seal-v1:k9Qm4rV2pL8sN1wX6cH3dF0|${this._affinitySealText()}`;
+        for (let i = 0; i < text.length; i++) {
+            hash ^= text.charCodeAt(i);
+            hash = Math.imul(hash, 16777619);
+        }
+        this.data.affinitySeal = (hash >>> 0).toString(16).padStart(8, '0');
+    }
+
+    _affinitySealMatches() {
+        if (!this.data?.affinitySeal) return !this.data?.affinitySealed;
+        const expected = this.data.affinitySeal;
+        this._stampAffinitySeal();
+        return this.data.affinitySeal === expected;
+    }
+
+    _clearUnsealedAffinity() {
+        for (const row of Object.values(this.data?.characters || {})) {
+            if (!row || typeof row !== 'object') continue;
+            row.maxAffinity = 0;
+            row.currentAffinity = 0;
+        }
+        this.data.affinitySealed = true;
+        this._stampAffinitySeal();
+        this.save();
+    }
+
     save() {
         try {
+            this.data.affinitySealed = true;
+            this._stampAffinitySeal();
             window.CupidStorage.setItem(this.storageKey, JSON.stringify(this.data));
         } catch (e) {
             window.reportCupidCaughtError?.(e, {
@@ -290,6 +330,7 @@ class GalleryProgress {
         if (saved) {
             try {
                 this.data = JSON.parse(saved);
+                if (this.data?.affinitySealed && !this._affinitySealMatches()) this._clearUnsealedAffinity();
                 this._migratePerfectEndingKey();
                 this._migrateAffinityRebalance();
                 this._migrateEndingLedger();
@@ -419,6 +460,10 @@ class GalleryProgress {
      * @returns {{value:number, change:number, requestedChange:number, maxAffinity:number}}
      */
     changeCurrentAffinity(charId, amount) {
+        if (!/gallery-freetalk\.js/.test(new Error().stack || '')) {
+            const current = Number(this.data?.characters?.[charId]?.currentAffinity) || 0;
+            return { value: current, change: 0, requestedChange: 0, maxAffinity: Number(this.data?.characters?.[charId]?.maxAffinity) || 0 };
+        }
         this.refresh();
         const charData = this.data.characters?.[charId];
         if (!charData) return { value: 0, change: 0, requestedChange: 0, maxAffinity: 0 };

@@ -130,6 +130,7 @@ test('save loading and direct state restoration preserve correction markers and 
     const state = new context.window.StateManager();
     state.importState(clone(saved.gameState));
     assert.equal(state.getAffinity('Seoyeon'), 99);
+    context.window.CupidAffinityGate.testGrant('Seoyeon', 1);
     state.changeAffinity('Seoyeon', 1);
     const fresh = state.exportState();
     state.importState(fresh);

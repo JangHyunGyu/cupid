@@ -735,15 +735,17 @@ class SceneRenderer {
      * @param {Object} scene - 씬 데이터
      */
     processSceneStats(scene) {
-        if (!scene.stats) return;
+        const live = this.getScene(this.currentSceneId);
+        if (!live?.stats || window.CupidAffinityGate?.commitKey() !== `scene:${this.currentSceneId}`) return;
+        if (scene && scene !== live && JSON.stringify(scene.stats || {}) !== JSON.stringify(live.stats)) return;
 
         // { Seoyeon: { affinity: 10 }, ... } 또는 { Seoyeon: 10, ... } 형태 모두 지원
         // 모든 호감도 변화를 수집 후 위치 분산 표시
         const changes = [];
-        for (const [char, stats] of Object.entries(scene.stats)) {
+        for (const [char, stats] of Object.entries(live.stats)) {
             const charKey = this.charNameMap[char] || char;
             const affinityChange = typeof stats === 'number' ? stats : stats?.affinity;
-            if (affinityChange && this.stateManager.stats[charKey]) {
+            if (affinityChange && this.stateManager.stats[charKey] && window.CupidAffinityGate?.grant(charKey, affinityChange)) {
                 const newValue = this.stateManager.changeAffinity(charKey, affinityChange);
                 this.galleryManager.updateMaxAffinity(charKey, newValue);
                 this.galleryManager.checkAffinityUnlock(charKey, newValue);

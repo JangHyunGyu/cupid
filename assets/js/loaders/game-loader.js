@@ -289,7 +289,7 @@
         if (src === 'modules/config.js' || src === 'modules/FreeTalkSystem.js') query += '&history=20260924';
         if (src === 'sound.js' || src === 'modules/GameEngine.js' || src === 'modules/SceneRenderer.js' || src === 'scenario/day5_4_night.js') query += '&history=20260926-bedline';
         if (src === 'loaders/i18n-loader.js') query += '&history=20260926-vitamin';
-        if (src === 'affinity-corrections.js' || src === 'progression-integrity.js' || src === 'modules/StateManager.js' || src === 'modules/RouteTelemetry.js') query += '&history=20260926-affinity-guard';
+        if (src === 'affinity-corrections.js' || src === 'progression-integrity.js' || src === 'modules/StateManager.js' || src === 'modules/RouteTelemetry.js' || src === 'modules/SceneRenderer.js' || src === 'modules/GameEngine.js' || src === 'modules/FreeTalkSystem.js' || src === 'modules/GalleryManager.js' || src === 'gallery-progress.js') query += '&guard=20260926-affinity-lock';
         if (attempt > 0) {
             query += '&retry=' + Date.now();
         }

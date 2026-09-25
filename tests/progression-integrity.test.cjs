@@ -66,6 +66,16 @@ test('failed mutations roll back critical state without consuming a receipt', ()
     assert.equal(api.commit(state, 'scene:start', () => {}).applied, true);
 });
 
+test('a rewritten progress record loses its affinity', () => {
+    const { api, storage, state } = setup();
+    const saved = JSON.parse(storage.getItem('cupid_progress_integrity_v1'));
+    saved.snapshot.stats.Seoyeon.affinity = 100;
+    storage.setItem('cupid_progress_integrity_v1', JSON.stringify(saved));
+    state.stats.Seoyeon.affinity = 12;
+    api.restoreState(state);
+    assert.equal(state.stats.Seoyeon.affinity, 0);
+});
+
 test('a console edit is discarded before the next reward and is not saved', () => {
     const { api, state, save } = setup();
     state.stats.Seoyeon.affinity = 100;

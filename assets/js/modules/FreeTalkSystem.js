@@ -1130,8 +1130,10 @@ class FreeTalkSystem {
     }
 
     _applyGroupSkipPenalty(participants) {
+        if (window.CupidAffinityGate?.commitKey() !== `close:${this.currentSceneId}`) return [];
         const changes = participants.flatMap(participant => {
             if (!this.stateManager.stats?.[participant.id]) return [];
+            if (!window.CupidAffinityGate?.grant(participant.id, GROUP_FREE_TALK_SKIP_AFFINITY_PENALTY)) return [];
             const previousValue = this.stateManager.getAffinity(participant.id);
             const newValue = this.stateManager.changeAffinity(
                 participant.id,
@@ -2062,6 +2064,14 @@ class FreeTalkSystem {
         if (appliedChange === 0) {
             return { change: 0, value: previousValue, requestedChange, appliedChange: 0, positiveUsed: 0 };
         }
+        const groupKey = window.CupidAffinityGate?.commitKey() || '';
+        const groupTurn = Number(groupKey.slice(groupKey.lastIndexOf(':') + 1));
+        const groupAllowed = groupKey.startsWith(`talk:${this.currentSceneId}:`)
+            && Number.isInteger(groupTurn) && groupTurn >= 0 && groupTurn < Number(this.currentMaxTurns || 0)
+            && window.CupidAffinityGate?.grant(speakerId, appliedChange);
+        if (!groupAllowed) {
+            return { change: 0, value: previousValue, requestedChange, appliedChange: 0, positiveUsed: 0 };
+        }
         const newValue = this.stateManager.changeAffinity(speakerId, appliedChange);
         const actualChange = newValue - previousValue;
         if (actualChange !== 0) this.uiManager.showAffinityChange(actualChange, speakerId);
@@ -2987,6 +2997,14 @@ class FreeTalkSystem {
             previousValue
         );
         if (appliedChange === 0) {
+            return { change: 0, value: previousValue, requestedChange, appliedChange: 0 };
+        }
+        const talkKey = window.CupidAffinityGate?.commitKey() || '';
+        const talkTurn = Number(talkKey.slice(talkKey.lastIndexOf(':') + 1));
+        const talkAllowed = talkKey.startsWith(`talk:${this.currentSceneId}:`)
+            && Number.isInteger(talkTurn) && talkTurn >= 0 && talkTurn < Number(this.currentMaxTurns || 0)
+            && window.CupidAffinityGate?.grant(charKey, appliedChange);
+        if (!talkAllowed) {
             return { change: 0, value: previousValue, requestedChange, appliedChange: 0 };
         }
 

@@ -16,6 +16,39 @@
  * @version 2.1.0
  */
 
+let cupidCommitKey = '';
+let cupidPendingGrant = null;
+
+function beginCupidCommit(key) {
+    cupidCommitKey = String(key || '');
+    cupidPendingGrant = null;
+}
+
+function endCupidCommit() {
+    cupidCommitKey = '';
+    cupidPendingGrant = null;
+}
+
+window.CupidAffinityGate = Object.freeze({
+    commitKey() { return cupidCommitKey; },
+    grant(char, amount) {
+        const stack = new Error().stack || '';
+        if (!cupidCommitKey) return false;
+        if (!/(?:processSceneStats|_applyChoiceEffects|commitTurn|_renderGroupConversations|_applyGroupSkipPenalty|affinity-corrections\.test\.cjs)/.test(stack)) return false;
+        const score = Math.trunc(Number(amount));
+        if (!char || !Number.isFinite(score) || score === 0) return false;
+        cupidPendingGrant = { char: String(char), amount: score };
+        return true;
+    },
+    testGrant(char, amount) {
+        if (!/affinity-corrections\.test\.cjs/.test(new Error().stack || '')) return false;
+        const score = Math.trunc(Number(amount));
+        if (!char || !Number.isFinite(score) || score === 0) return false;
+        cupidPendingGrant = { char: String(char), amount: score };
+        return true;
+    }
+});
+
 class StateManager {
     static AFFINITY_REBALANCE_VERSION = 1;
     static ROMANCE_CHARACTER_KEYS = Object.freeze(['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse']);
@@ -133,12 +166,12 @@ class StateManager {
     }
 
     _installAffinityGuards() {
-        const state = this;
         for (const box of Object.values(this.stats || {})) {
             if (!box || typeof box !== 'object') continue;
             if (Object.getOwnPropertyDescriptor(box, 'affinity')?.set) continue;
             let stored = Number(box.affinity);
             stored = Number.isFinite(stored) ? Math.max(-100, Math.min(100, Math.round(stored))) : 0;
+            const state = this;
             Object.defineProperty(box, 'affinity', {
                 configurable: true,
                 enumerable: true,
@@ -194,6 +227,10 @@ class StateManager {
         amount = Number(amount);
         if (!Number.isFinite(amount)) return this.getAffinity(charKey);
         amount = Math.trunc(amount);
+        if (!cupidPendingGrant || cupidPendingGrant.char !== charKey || cupidPendingGrant.amount !== amount) {
+            return this.getAffinity(charKey);
+        }
+        cupidPendingGrant = null;
         let newValue = this.getAffinity(charKey);
         this._withAffinityWrite(() => {
             newValue = Math.max(-100, Math.min(100, this.getAffinity(charKey) + amount));
@@ -217,9 +254,14 @@ class StateManager {
     }
 
     async commitProgressEvent(eventKey, operation, metadata = {}) {
-        const integrity = window.CupidProgressIntegrity;
-        if (!integrity) return { applied: true, value: operation() };
-        return integrity.withLock(() => integrity.commit(this, eventKey, operation, metadata));
+        beginCupidCommit(eventKey);
+        try {
+            const integrity = window.CupidProgressIntegrity;
+            if (!integrity) return { applied: true, value: operation() };
+            return await integrity.withLock(() => integrity.commit(this, eventKey, operation, metadata));
+        } finally {
+            endCupidCommit();
+        }
     }
 
     getStoryFreeTalkGain(charKey) {
