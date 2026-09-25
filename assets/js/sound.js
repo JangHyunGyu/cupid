@@ -587,6 +587,41 @@ class SoundManager {
         };
     }
 
+    playStaticCrackle() {
+        if (this.muted) return;
+        const ctx = this._ensureAudioContext();
+        if (!ctx) return;
+        if (ctx.state === 'suspended') {
+            ctx.resume().catch(() => {});
+        }
+        if (!this._unlocked && ctx.state !== 'running') return;
+        this._unlocked = true;
+        const duration = 0.72;
+        const rate = ctx.sampleRate;
+        const buffer = ctx.createBuffer(1, Math.floor(rate * duration), rate);
+        const data = buffer.getChannelData(0);
+        const bursts = [[0.00, 0.045], [0.08, 0.12], [0.15, 0.26], [0.40, 0.445], [0.48, 0.52], [0.55, 0.66]];
+        bursts.forEach(([from, to]) => {
+            const start = Math.floor(from * rate);
+            const end = Math.min(data.length, Math.floor(to * rate));
+            for (let i = start; i < end; i++) {
+                const env = Math.sin(Math.PI * (i - start) / Math.max(1, end - start));
+                data[i] = (Math.random() * 2 - 1) * env;
+            }
+        });
+        const source = ctx.createBufferSource();
+        source.buffer = buffer;
+        const filter = ctx.createBiquadFilter();
+        filter.type = 'highpass';
+        filter.frequency.value = 1200;
+        const gainNode = ctx.createGain();
+        gainNode.gain.value = Math.max(0.05, this.sfxVolume) * 0.55;
+        source.connect(filter);
+        filter.connect(gainNode);
+        gainNode.connect(ctx.destination);
+        source.start();
+    }
+
     /**
      * BGM 볼륨 조절
      */

@@ -1584,6 +1584,7 @@ class GameEngine {
         box.classList.remove('lab-flicker');
         void box.offsetWidth;
         box.classList.add('lab-flicker');
+        this._crackleAndBuzz();
     }
 
     _applyLabGlitch(scene) {
@@ -1599,6 +1600,14 @@ class GameEngine {
             if (!el) continue;
             el.classList.remove('lab-flicker', 'lab-dark');
             if (scene.labGlitch) el.classList.add(scene.labGlitch);
+        }
+        if (scene.labGlitch) this._crackleAndBuzz();
+    }
+
+    _crackleAndBuzz() {
+        try { window.soundManager?.playStaticCrackle?.(); } catch (_) {}
+        if (navigator.vibrate && (navigator.maxTouchPoints > 0 || 'ontouchstart' in window)) {
+            navigator.vibrate([45, 35, 40, 30, 110, 140, 45, 35, 40, 30, 110]);
         }
     }
 
@@ -1653,6 +1662,7 @@ class GameEngine {
         return new Promise((resolve) => {
             setTimeout(() => {
                 label.style.animation = 'cupid-stabilize-glitch .5s linear 1';
+                this._crackleAndBuzz();
                 setTimeout(() => {
                     overlay.remove();
                     resolve();

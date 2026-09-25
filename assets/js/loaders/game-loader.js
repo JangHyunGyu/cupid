@@ -287,6 +287,7 @@
     function buildScriptUrl(src, attempt) {
         var query = '?v=' + encodeURIComponent(version);
         if (src === 'modules/config.js' || src === 'modules/FreeTalkSystem.js') query += '&history=20260924';
+        if (src === 'sound.js' || src === 'modules/GameEngine.js') query += '&history=20260925-crackle';
         if (attempt > 0) {
             query += '&retry=' + Date.now();
         }
@@ -442,6 +443,12 @@
                     else versionNode.textContent = original;
                 };
                 setTimeout(tick, 700);
+                setTimeout(() => {
+                    try { window.soundManager?.playStaticCrackle?.(); } catch (_) {}
+                    if (navigator.vibrate && (navigator.maxTouchPoints > 0 || 'ontouchstart' in window)) {
+                        navigator.vibrate([45, 35, 40, 30, 110, 140, 45, 35, 40, 30, 110]);
+                    }
+                }, 700);
             }
         }
         if (/(?:^|[?&])gate=1(?:&|$)/.test(location.search)) {
