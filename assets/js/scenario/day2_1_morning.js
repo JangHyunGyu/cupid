@@ -45,7 +45,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "morning2_greet_seo_others_2": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "morning2_note_1"
+        "next": "morning2_yuna_seen"
     },
     "morning2_greet_dain_1": {
         "routeBeforeRender": true,
@@ -87,7 +87,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "morning2_greet_dain_others_2": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_laugh.png",
-        "next": "morning2_note_1"
+        "next": "morning2_yuna_seen"
     },
     "morning2_greet_yuna_1": {
         "routeBeforeRender": true,
@@ -154,6 +154,11 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "morning2_dain_6": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_laugh.png",
+        "next": "morning2_yuna_seen"
+    },
+    "morning2_yuna_seen": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "next": "morning2_note_1"
     },
     "morning2_note_1": {
@@ -537,7 +542,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "morning2_greet_none_2": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "morning2_note_1"
+        "next": "morning2_yuna_seen"
     },
     "morning2_greet_none_tone": {
         "background": "assets/images/background/room_school.png",
@@ -556,7 +561,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "morning2_greet_none_neg_2": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "morning2_note_1"
+        "next": "morning2_yuna_seen"
     }
     };
     for (const scene of Object.values(scenes)) {

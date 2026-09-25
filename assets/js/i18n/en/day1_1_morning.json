@@ -3,6 +3,10 @@
         "name": "{name}",
         "text": "*Outside the school gates in April. Crushed petals cling to the pavement here and there. The creases in my new uniform still run across the elbows, and my transfer papers lie pressed flat inside my bag.*"
     },
+    "start_again": {
+        "name": "{name}",
+        "text": "*This time will be different.*"
+    },
     "start_3": {
         "name": "{name}",
         "text": "*My phone buzzes in my pocket. A familiar name has popped up in the group chat from my old school. I turn off the screen without clearing the notification and slip the phone back into my pocket.*"

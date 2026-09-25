@@ -3,6 +3,10 @@
         "name": "{name}",
         "text": "*Abril, diante do portão da escola. Aqui e ali, pétalas pisoteadas estão grudadas no chão. As marcas das dobras do uniforme novo ainda aparecem nos cotovelos, e os documentos da transferência estão prensados dentro da mochila.*"
     },
+    "start_again": {
+        "name": "{name}",
+        "text": "*Dessa vez vai ser diferente.*"
+    },
     "start_3": {
         "name": "{name}",
         "text": "*O celular vibra no bolso, e um nome conhecido aparece no grupo do KakaoTalk da escola antiga. Sem apagar a notificação, desligo a tela e guardo o aparelho de novo.*"

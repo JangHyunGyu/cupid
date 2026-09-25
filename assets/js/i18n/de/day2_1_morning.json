@@ -95,6 +95,10 @@
         "name": "Dain",
         "text": "*Ihre Stimme füllt das Klassenzimmer, noch bevor die Morgenbesprechung beginnt.*"
     },
+    "morning2_yuna_seen": {
+        "name": "Yuna",
+        "text": "...Warst du schon mal hier?"
+    },
     "morning2_note_1": {
         "name": "{name}",
         "text": "*Ich will mich gerade setzen, als — mir ein gefalteter Zettel auf meinem Tisch auffällt.*"

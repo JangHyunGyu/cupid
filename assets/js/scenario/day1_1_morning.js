@@ -13,6 +13,11 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "background": "assets/images/background/school.png",
         "character": null,
         "bgm": "intro.mp3",
+        "next": "start_again"
+    },
+    "start_again": {
+        "background": "assets/images/background/school.png",
+        "character": null,
         "next": "start_3"
     },
     "start_3": {

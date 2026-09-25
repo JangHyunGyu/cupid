@@ -1255,6 +1255,9 @@ class GameEngine {
             // 🎬 타입 C: 엔딩 크레딧
             // ═══════════════════════════════════════════════════════
         } else if (scene.type === 'credits') {
+            await this._flashExperimentStabilized();
+            if (this.sceneRenderer.currentSceneId !== sceneId) return;
+
             // 대화창 숨김
             this.uiManager.dialogueBox.style.display = 'none';
             this.uiManager.choiceContainer.style.display = 'none';
@@ -1562,6 +1565,30 @@ class GameEngine {
      * - renderScene() 완료 후 자동 호출
      * - 매 씬마다 저장되므로 데이터 손실 걱정 없음
      */
+    _flashExperimentStabilized() {
+        const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
+        const text = {
+            ko: '[실험 환경 안정화 완료]',
+            en: '[Experiment environment stabilized]',
+            ja: '[実験環境の安定化完了]',
+            es: '[Entorno experimental estabilizado]',
+            fr: '[Stabilisation de l\'environnement expérimental terminée]',
+            de: '[Versuchsumgebung stabilisiert]',
+            pt: '[Ambiente experimental estabilizado]'
+        }[lang] || '[Experiment environment stabilized]';
+        const overlay = document.createElement('div');
+        overlay.setAttribute('aria-hidden', 'true');
+        overlay.textContent = text;
+        overlay.style.cssText = 'position:fixed;inset:0;z-index:10000;background:#000;color:#d8d8d8;display:flex;align-items:center;justify-content:center;font:14px/1.4 ui-monospace,Consolas,monospace;letter-spacing:.04em;pointer-events:none;';
+        document.body.appendChild(overlay);
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                overlay.remove();
+                resolve();
+            }, 500);
+        });
+    }
+
     saveGame() {
         // SceneRenderer에서 현재 렌더링 상태 내보내기
         const renderState = this.sceneRenderer.exportRenderState();

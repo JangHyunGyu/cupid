@@ -15,10 +15,19 @@
 ### `start`
 - 배경: `school.png`
 - BGM: `intro.mp3`
-- 다음: `start_3`
+- 다음: `start_again`
 
 - 캐릭터: `없음`
 **{name}**: *4월의 교문 앞. 밟힌 꽃잎이 드문드문 붙어 있다. 새 교복의 접힌 선은 아직 팔꿈치에 남아 있고 전학 서류는 가방 안에서 납작하게 눌려 있다.*
+
+---
+
+### `start_again`
+- 배경: `school.png`
+- 다음: `start_3`
+
+- 캐릭터: `없음`
+**{name}**: *이번엔 다를 거야.*
 
 ---
 
@@ -3582,7 +3591,7 @@
 
 ### `morning2_greet_seo_others_2`
 - 배경: `room_school.png`
-- 다음: `morning2_note_1`
+- 다음: `morning2_yuna_seen`
 
 - 캐릭터: `seyoun_normal.png`
 **{name}**: *서연이 클립보드를 한 번 두드린다.*
@@ -3654,7 +3663,7 @@
 
 ### `morning2_greet_dain_others_2`
 - 배경: `room_school.png`
-- 다음: `morning2_note_1`
+- 다음: `morning2_yuna_seen`
 
 - 캐릭터: `dain_laugh.png`
 **{name}**: *교실 문이 닫힌 뒤 클립보드 두드리는 소리가 복도에서 한 번 들린다.*
@@ -3749,7 +3758,7 @@
 
 ### `morning2_greet_none_2`
 - 배경: `room_school.png`
-- 다음: `morning2_note_1`
+- 다음: `morning2_yuna_seen`
 
 - 캐릭터: `seyoun_normal.png`
 **{name}**: *서연은 출석부를 넘기고 다인은 친구들 쪽으로 몸을 돌린다. 유나의 자리는 이미 책이 펴져 있다.*
@@ -3767,7 +3776,7 @@
 
 ### `morning2_greet_none_neg_2`
 - 배경: `room_school.png`
-- 다음: `morning2_note_1`
+- 다음: `morning2_yuna_seen`
 
 - 캐릭터: `seyoun_normal.png`
 **{name}**: *서연은 출석부에서 눈을 떼지 않는다. 다인은 친구들 쪽으로 먼저 간다. 유나는 책만 보고 있다.*
@@ -3821,10 +3830,19 @@
 
 ### `morning2_dain_6`
 - 배경: `room_school.png`
-- 다음: `morning2_note_1`
+- 다음: `morning2_yuna_seen`
 
 - 캐릭터: `dain_laugh.png`
 **다인**: *아침 조회 전 교실에 다인의 목소리가 먼저 울린다.*
+
+---
+
+### `morning2_yuna_seen`
+- 배경: `room_school.png`
+- 다음: `morning2_note_1`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: ...너 전에도 여기 온 적 있어?
 
 ---
 
@@ -26441,7 +26459,7 @@
 - 배경: `school_hallway.png`
 - 다음: `day5_haeun_switch_dain_haeun`
 
-- 캐릭터: `dain_worried.png`
+- 캐릭터: `dain_angry.png`
 **다인**: 하은도 데려와서 말하면, 내가 여기서 뭐라고 할 줄 알았는데?
 
 ---

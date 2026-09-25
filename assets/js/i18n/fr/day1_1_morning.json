@@ -3,6 +3,10 @@
         "name": "{name}",
         "text": "*Devant le portail de l'école, en avril. Quelques pétales piétinés restent collés au sol. Les plis de mon nouvel uniforme marquent encore les coudes, et mon dossier de transfert est aplati au fond de mon sac.*"
     },
+    "start_again": {
+        "name": "{name}",
+        "text": "*Cette fois, ce sera différent.*"
+    },
     "start_3": {
         "name": "{name}",
         "text": "*Mon téléphone vibre dans ma poche. Un nom familier s'affiche dans la conversation de groupe de mon ancien lycée. Sans effacer la notification, j'éteins l'écran et range mon téléphone.*"
