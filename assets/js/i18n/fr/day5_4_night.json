@@ -1255,15 +1255,19 @@
     },
     "nurse_perfect_pills_0": {
         "name": "Infirmière",
-        "text": "Ouvre juste la main."
+        "text": "Tu avais mauvaise mine en dormant. J'ai apporté de quoi pour le matin."
     },
     "nurse_perfect_pills_1": {
         "name": "Infirmière",
         "text": "*De sous la couverture, elle ne sort que les mains. Dans l'une, un comprimé noir. Dans l'autre, un comprimé rose.*"
     },
+    "nurse_perfect_pills_ask": {
+        "name": "{name}",
+        "text": "C'est quoi ?"
+    },
     "nurse_perfect_pills_2": {
         "name": "Infirmière",
-        "text": "L'un ou l'autre. N'en avale qu'un.",
+        "text": "Ça n'a pas de nom. N'en avale qu'un.",
         "choices": ["Comprimé rose", "Comprimé noir"]
     },
     "nurse_perfect_pills_pink": {
@@ -1281,6 +1285,10 @@
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
         "text": "*J'avale le comprimé noir. Pas de sucre. Seule la gorge devient froide.*"
+    },
+    "nurse_perfect_pills_black_ask": {
+        "name": "{name}",
+        "text": "Le goût est bizarre."
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",

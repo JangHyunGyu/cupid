@@ -29879,16 +29879,25 @@
 - 다음: `nurse_perfect_pills_1`
 
 - 캐릭터: `없음`
-**보건선생님**: 손만 펴 봐.
+**보건선생님**: 잠결에 얼굴이 안 좋았어. 아침에 먹을 거 가져왔지.
 
 ---
 
 ### `nurse_perfect_pills_1`
 - 배경: `nurse_bedroom_pills.jpg`
-- 다음: `nurse_perfect_pills_2`
+- 다음: `nurse_perfect_pills_ask`
 
 - 캐릭터: `없음`
 **보건선생님**: *이불 밖으로 양손만 내민다. 한 손에는 검은 알약, 다른 손에는 분홍 알약.*
+
+---
+
+### `nurse_perfect_pills_ask`
+- 배경: `nurse_bedroom_pills.jpg`
+- 다음: `nurse_perfect_pills_2`
+
+- 캐릭터: `없음`
+**{name}**: 이게 뭐야?
 
 ---
 
@@ -29899,7 +29908,7 @@
   2. "검은 알약" → `nurse_perfect_pills_black_1`
 
 - 캐릭터: `없음`
-**보건선생님**: 어느 쪽이든 하나만 삼켜.
+**보건선생님**: 이름은 없어. 하나만 삼키면 돼.
 
 ---
 
@@ -30033,10 +30042,19 @@
 
 ### `nurse_perfect_pills_black_1`
 - 배경: `nurse_bedroom_pills.jpg`
-- 다음: `nurse_perfect_pills_black_2`
+- 다음: `nurse_perfect_pills_black_ask`
 
 - 캐릭터: `없음`
 **{name}**: *검은 알약을 삼킨다. 단맛은 없고 목만 차갑다.*
+
+---
+
+### `nurse_perfect_pills_black_ask`
+- 배경: `nurse_bedroom_pills.jpg`
+- 다음: `nurse_perfect_pills_black_2`
+
+- 캐릭터: `없음`
+**{name}**: 맛이 이상해.
 
 ---
 

@@ -1255,15 +1255,19 @@
     },
     "nurse_perfect_pills_0": {
         "name": "School Nurse",
-        "text": "Just open your hand."
+        "text": "You looked awful in your sleep. I brought something for the morning."
     },
     "nurse_perfect_pills_1": {
         "name": "School Nurse",
         "text": "*From under the blanket, she holds out only her hands. One palm has a black pill. The other has a pink pill.*"
     },
+    "nurse_perfect_pills_ask": {
+        "name": "{name}",
+        "text": "What is this?"
+    },
     "nurse_perfect_pills_2": {
         "name": "School Nurse",
-        "text": "Either one. Swallow just one.",
+        "text": "It doesn't have a name. Swallow one.",
         "choices": ["Pink pill", "Black pill"]
     },
     "nurse_perfect_pills_pink": {
@@ -1281,6 +1285,10 @@
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
         "text": "*The black pill goes down. No sweetness. Only the throat goes cold.*"
+    },
+    "nurse_perfect_pills_black_ask": {
+        "name": "{name}",
+        "text": "This tastes wrong."
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",

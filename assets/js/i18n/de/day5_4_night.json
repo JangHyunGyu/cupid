@@ -1255,15 +1255,19 @@
     },
     "nurse_perfect_pills_0": {
         "name": "Schulkrankenschwester",
-        "text": "Streck nur die Hand aus."
+        "text": "Im Schlaf sahst du schlecht aus. Ich habe etwas für den Morgen mitgebracht."
     },
     "nurse_perfect_pills_1": {
         "name": "Schulkrankenschwester",
         "text": "*Unter der Decke hebt sie nur die Hände. Auf der einen eine schwarze Tablette, auf der anderen eine rosa.*"
     },
+    "nurse_perfect_pills_ask": {
+        "name": "{name}",
+        "text": "Was ist das?"
+    },
     "nurse_perfect_pills_2": {
         "name": "Schulkrankenschwester",
-        "text": "Egal welche. Schluck nur eine.",
+        "text": "Es hat keinen Namen. Schluck eine.",
         "choices": ["Rosa Tablette", "Schwarze Tablette"]
     },
     "nurse_perfect_pills_pink": {
@@ -1281,6 +1285,10 @@
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
         "text": "*Ich schlucke die schwarze Tablette. Keine Süße. Nur der Hals wird kalt.*"
+    },
+    "nurse_perfect_pills_black_ask": {
+        "name": "{name}",
+        "text": "Das schmeckt falsch."
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",

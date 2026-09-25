@@ -866,6 +866,11 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "nurse_perfect_pills_1": {
         "background": "assets/images/background/nurse_bedroom_pills.jpg",
         "character": null,
+        "next": "nurse_perfect_pills_ask"
+    },
+    "nurse_perfect_pills_ask": {
+        "background": "assets/images/background/nurse_bedroom_pills.jpg",
+        "character": null,
         "next": "nurse_perfect_pills_2"
     },
     "nurse_perfect_pills_2": {
@@ -892,6 +897,11 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "hidden_perfect_nurse_ending_title"
     },
     "nurse_perfect_pills_black_1": {
+        "background": "assets/images/background/nurse_bedroom_pills.jpg",
+        "character": null,
+        "next": "nurse_perfect_pills_black_ask"
+    },
+    "nurse_perfect_pills_black_ask": {
         "background": "assets/images/background/nurse_bedroom_pills.jpg",
         "character": null,
         "next": "nurse_perfect_pills_black_2"

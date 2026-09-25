@@ -1255,15 +1255,19 @@
     },
     "nurse_perfect_pills_0": {
         "name": "Enfermeira",
-        "text": "Só abre a mão."
+        "text": "Dormindo, seu rosto estava ruim. Trouxe uma coisa para a manhã."
     },
     "nurse_perfect_pills_1": {
         "name": "Enfermeira",
         "text": "*De baixo do cobertor, ela estende só as mãos. Numa, um comprimido preto. Na outra, um rosa.*"
     },
+    "nurse_perfect_pills_ask": {
+        "name": "{name}",
+        "text": "O que é isso?"
+    },
     "nurse_perfect_pills_2": {
         "name": "Enfermeira",
-        "text": "Qualquer um. Engole só um.",
+        "text": "Não tem nome. Engole um.",
         "choices": ["Comprimido rosa", "Comprimido preto"]
     },
     "nurse_perfect_pills_pink": {
@@ -1281,6 +1285,10 @@
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
         "text": "*Engulo o comprimido preto. Não tem doçura. Só a garganta esfria.*"
+    },
+    "nurse_perfect_pills_black_ask": {
+        "name": "{name}",
+        "text": "O gosto está estranho."
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",

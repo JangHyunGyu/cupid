@@ -1385,15 +1385,19 @@
     },
     "nurse_perfect_pills_0": {
         "name": "보건선생님",
-        "text": "손만 펴 봐."
+        "text": "잠결에 얼굴이 안 좋았어. 아침에 먹을 거 가져왔지."
     },
     "nurse_perfect_pills_1": {
         "name": "보건선생님",
         "text": "*이불 밖으로 양손만 내민다. 한 손에는 검은 알약, 다른 손에는 분홍 알약.*"
     },
+    "nurse_perfect_pills_ask": {
+        "name": "{name}",
+        "text": "이게 뭐야?"
+    },
     "nurse_perfect_pills_2": {
         "name": "보건선생님",
-        "text": "어느 쪽이든 하나만 삼켜.",
+        "text": "이름은 없어. 하나만 삼키면 돼.",
         "choices": ["분홍 알약", "검은 알약"]
     },
     "nurse_perfect_pills_pink": {
@@ -1411,6 +1415,10 @@
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
         "text": "*검은 알약을 삼킨다. 단맛은 없고 목만 차갑다.*"
+    },
+    "nurse_perfect_pills_black_ask": {
+        "name": "{name}",
+        "text": "맛이 이상해."
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",

@@ -1255,15 +1255,19 @@
     },
     "nurse_perfect_pills_0": {
         "name": "保健室の先生",
-        "text": "手だけ、出して。"
+        "text": "寝てる顔が悪かった。朝に飲むもの、持ってきた。"
     },
     "nurse_perfect_pills_1": {
         "name": "保健室の先生",
         "text": "*布団の外に両手だけ出す。片方に黒い錠剤、もう片方にピンクの錠剤。*"
     },
+    "nurse_perfect_pills_ask": {
+        "name": "{name}",
+        "text": "これ、何？"
+    },
     "nurse_perfect_pills_2": {
         "name": "保健室の先生",
-        "text": "どっちでも、一つだけ飲んで。",
+        "text": "名前はない。一つだけ飲んで。",
         "choices": ["ピンクの薬", "黒い薬"]
     },
     "nurse_perfect_pills_pink": {
@@ -1281,6 +1285,10 @@
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
         "text": "*黒い錠剤を飲み込む。甘さはなく、喉だけが冷たい。*"
+    },
+    "nurse_perfect_pills_black_ask": {
+        "name": "{name}",
+        "text": "味が変だ。"
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",

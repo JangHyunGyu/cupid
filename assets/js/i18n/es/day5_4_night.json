@@ -1255,15 +1255,19 @@
     },
     "nurse_perfect_pills_0": {
         "name": "Enfermera",
-        "text": "Solo abre la mano."
+        "text": "Dormías con mala cara. Traje algo para la mañana."
     },
     "nurse_perfect_pills_1": {
         "name": "Enfermera",
         "text": "*Desde debajo de la manta, saca solo las manos. En una, una pastilla negra. En la otra, una rosa.*"
     },
+    "nurse_perfect_pills_ask": {
+        "name": "{name}",
+        "text": "¿Qué es esto?"
+    },
     "nurse_perfect_pills_2": {
         "name": "Enfermera",
-        "text": "Cualquiera. Trágate solo una.",
+        "text": "No tiene nombre. Trágate una.",
         "choices": ["Pastilla rosa", "Pastilla negra"]
     },
     "nurse_perfect_pills_pink": {
@@ -1281,6 +1285,10 @@
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
         "text": "*Trago la pastilla negra. No hay dulzor. Solo la garganta se enfría.*"
+    },
+    "nurse_perfect_pills_black_ask": {
+        "name": "{name}",
+        "text": "Sabe raro."
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",
