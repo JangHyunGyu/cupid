@@ -19,7 +19,7 @@
                 if (!M[s]) s = 'en';
                 window.CupidStorage.setItem(K, s);
             }
-            if (s !== P && M[s]) location.replace(M[s]);
+            if (s !== P && M[s]) location.replace(M[s] + location.search + location.hash);
         } catch (e) { }
     })();
     </script>
@@ -922,6 +922,29 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <script src="assets/js/immersive.js?v=20260916-immersive-disabled-v1" defer></script>
+
+    <style id="cupid-gate-veil-style">
+        html.cupid-from-gate { background: #f3d5df url('assets/images/background/gate_bloom.jpg') center/cover no-repeat; }
+        html.cupid-from-gate body { background: transparent; }
+        html.cupid-from-gate #landing-container,
+        html.cupid-from-gate .lang-switch { visibility: hidden !important; }
+        #cupid-gate-veil { position: fixed; inset: 0; z-index: 1600; background: #f3d5df url('assets/images/background/gate_bloom.jpg') center/cover no-repeat; transition: opacity 1.15s ease; pointer-events: auto; }
+        #cupid-gate-veil.cupid-gate-veil-out { opacity: 0; pointer-events: none; }
+    </style>
+    <script id="cupid-gate-veil-boot">
+        (function () {
+            if (!/(?:^|[?&])gate=1(?:&|$)/.test(location.search)) return;
+            document.documentElement.classList.add('cupid-from-gate');
+            var mount = function () {
+                if (document.getElementById('cupid-gate-veil')) return;
+                var veil = document.createElement('div');
+                veil.id = 'cupid-gate-veil';
+                (document.body || document.documentElement).appendChild(veil);
+            };
+            if (document.body) mount();
+            else document.addEventListener('DOMContentLoaded', mount);
+        })();
+    </script>
 </head>
 
 <body>
@@ -1257,7 +1280,7 @@
     </script>
 
     <!-- 게임 스크립트 (동적 로더) -->
-<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.265&history=20260926-dizzy"></script>
+<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.265&history=20260926-cross"></script>
 
     <script>
         // Initialize SoundManager + Enable Buttons (게임 스크립트 로드 완료 후)

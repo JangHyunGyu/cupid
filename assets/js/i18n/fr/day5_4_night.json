@@ -1292,11 +1292,11 @@
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",
-        "text": "*Elle laisse tomber le sourire. L'air de la chambre se refroidit, et la lampe s'éteint.*"
+        "text": "*Le sourire se fend. L'air de la chambre se refroidit, et la lampe s'éteint.*"
     },
     "nurse_perfect_pills_black_3": {
         "name": "{name}",
-        "text": "*Le visage se fend. Une coupe violette courte apparaît, et les yeux sont dorés.*"
+        "text": "*Une coupe violette courte. Des yeux dorés. Ce n'est pas la chambre.*"
     },
     "nurse_perfect_pills_black_4": {
         "name": "Kang Riin",

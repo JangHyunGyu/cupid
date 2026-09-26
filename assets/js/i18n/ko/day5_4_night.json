@@ -1422,11 +1422,11 @@
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",
-        "text": "*웃음을 거둔다. 침실 공기가 식고 스탠드가 꺼진다.*"
+        "text": "*웃음이 갈라진다. 침실 공기가 식고 스탠드가 꺼진다.*"
     },
     "nurse_perfect_pills_black_3": {
         "name": "{name}",
-        "text": "*얼굴이 갈라진다. 짧은 보랏빛 머리가 보이고 눈이 금색이다.*"
+        "text": "*짧은 보랏빛 머리다. 눈이 금색이다. 여긴 침실이 아니다.*"
     },
     "nurse_perfect_pills_black_4": {
         "name": "강리인",

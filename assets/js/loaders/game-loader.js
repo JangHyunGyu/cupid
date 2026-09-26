@@ -287,8 +287,9 @@
     function buildScriptUrl(src, attempt) {
         var query = '?v=' + encodeURIComponent(version);
         if (src === 'modules/config.js' || src === 'modules/FreeTalkSystem.js') query += '&history=20260924';
-        if (src === 'sound.js' || src === 'modules/GameEngine.js' || src === 'modules/SceneRenderer.js' || src === 'scenario/day5_4_night.js') query += '&history=20260926-bedline';
-        if (src === 'loaders/i18n-loader.js') query += '&history=20260926-dizzy';
+        if (src === 'sound.js' || src === 'scenario/day5_4_night.js') query += '&history=20260926-bedline';
+        if (src === 'modules/GameEngine.js' || src === 'modules/SceneRenderer.js') query += '&history=20260926-cross';
+        if (src === 'loaders/i18n-loader.js') query += '&history=20260926-cross';
         if (src === 'affinity-corrections.js' || src === 'progression-integrity.js' || src === 'modules/StateManager.js' || src === 'modules/RouteTelemetry.js' || src === 'modules/SceneRenderer.js' || src === 'modules/GameEngine.js' || src === 'modules/FreeTalkSystem.js' || src === 'modules/GalleryManager.js' || src === 'gallery-progress.js' || src === 'media-gate.js') query += '&guard=20260926-gallery-slot';
         if (attempt > 0) {
             query += '&retry=' + Date.now();
@@ -454,6 +455,19 @@
             }
         }
         if (/(?:^|[?&])gate=1(?:&|$)/.test(location.search)) {
+            if (typeof closeNewGameConfirm === 'function' && !closeNewGameConfirm.__gateWrapped) {
+                const origClose = closeNewGameConfirm;
+                window.closeNewGameConfirm = function (e) {
+                    origClose(e);
+                    const modal = document.getElementById('newGameConfirmModal');
+                    if (!modal || modal.style.display === 'none') {
+                        document.documentElement.classList.remove('cupid-from-gate');
+                        const veil = document.getElementById('cupid-gate-veil');
+                        if (veil) veil.remove();
+                    }
+                };
+                window.closeNewGameConfirm.__gateWrapped = true;
+            }
             setTimeout(() => {
                 if (typeof startGame !== 'function') return;
                 const continueBtn = document.getElementById('continue-btn');

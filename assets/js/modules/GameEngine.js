@@ -1583,8 +1583,19 @@ class GameEngine {
      * - renderScene() 완료 후 자동 호출
      * - 매 씬마다 저장되므로 데이터 손실 걱정 없음
      */
+    _releaseGateVeil() {
+        const veil = document.getElementById('cupid-gate-veil');
+        if (!veil || veil.dataset.leaving === '1') return;
+        veil.dataset.leaving = '1';
+        window.setTimeout(() => {
+            veil.classList.add('cupid-gate-veil-out');
+            window.setTimeout(() => veil.remove(), 1200);
+        }, 520);
+    }
+
     _applyCrossHitch(sceneId) {
         const fromGate = /(?:^|[?&])gate=1(?:&|$)/.test(location.search);
+        if (fromGate && sceneId === 'start') this._releaseGateVeil();
         const hitch = sceneId === 'start_again'
             || (sceneId === 'start' && fromGate)
             || (sceneId === 'morning2_yuna_seen' && this._hasPlayedNevergrad());

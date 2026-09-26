@@ -471,7 +471,7 @@ class SceneRenderer {
         // CSS 변수는 style.css 기준으로 URL이 해석되므로 절대 URL로 변환
         const absoluteBgUrl = new URL(displayBgUrl, document.baseURI).href;
         bgLayer.style.setProperty('--bg-next', `url(${absoluteBgUrl})`);
-        bgLayer.classList.remove('bg-crossfade', 'bg-crossfade-slow');
+        bgLayer.classList.remove('bg-crossfade', 'bg-crossfade-slow', 'bg-crossfade-long');
         // ::after에 background-image 설정
         bgLayer.style.cssText = bgLayer.style.cssText; // force reflow
         void bgLayer.offsetWidth; // force reflow
@@ -481,7 +481,7 @@ class SceneRenderer {
         await new Promise(r => setTimeout(r, fadeDuration));
         if (this.lastBgUrl === bgUrl) {
             bgLayer.style.backgroundImage = `url(${displayBgUrl})`;
-            bgLayer.classList.remove('bg-crossfade', 'bg-crossfade-slow');
+            bgLayer.classList.remove('bg-crossfade', 'bg-crossfade-slow', 'bg-crossfade-long');
             bgLayer.style.removeProperty('--bg-next');
         }
     }

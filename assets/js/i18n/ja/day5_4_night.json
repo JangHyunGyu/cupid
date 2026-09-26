@@ -1292,11 +1292,11 @@
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",
-        "text": "*笑いを消す。寝室の空気が冷えて、スタンドが消える。*"
+        "text": "*笑いが割れる。寝室の空気が冷えて、スタンドが消える。*"
     },
     "nurse_perfect_pills_black_3": {
         "name": "{name}",
-        "text": "*顔が割れる。短い紫の髪が見えて、目が金色だ。*"
+        "text": "*短い紫の髪だ。目が金色だ。ここは寝室じゃない。*"
     },
     "nurse_perfect_pills_black_4": {
         "name": "カン・リイン",
