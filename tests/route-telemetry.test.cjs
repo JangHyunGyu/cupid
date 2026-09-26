@@ -1,3 +1,4 @@
+const fixture = require('./affinity-fixture.cjs');
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -28,7 +29,7 @@ function harness(storage = new Map(), post = null) {
 test('Haeun selection, conversations and fallback retain accurate route snapshots', async () => {
     const h = harness();
     h.state.flags = { route_yuna: true, day5_haeun_route_offered: true };
-    h.state.stats.Haeun.affinity = 45;
+    fixture.seed(h.state, 'Haeun', 45);
     const offer = h.scenes.day5_haeun_route_choice;
     h.telemetry.entered(h.state, 'day5_haeun_route_choice', offer);
     h.telemetry.choice(h.state, 'day5_haeun_route_choice', offer, offer.choices[1], offer.choices[1].next);
@@ -99,15 +100,15 @@ test('monitoring keeps the established route when staff visits coexist with it',
     for (const character of ['Seoyeon', 'Yuna', 'Dain']) {
         const h = harness();
         h.state.flags = { [`route_${character.toLowerCase()}`]: true, nurse_day4: true, homeroom_day4: true, day4_confession_accepted: true };
-        h.state.stats[character].affinity = 71;
-        h.state.stats.Nurse.affinity = 16;
+        fixture.seed(h.state, character, 71);
+        fixture.seed(h.state, 'Nurse', 16);
         const saved = h.state.exportState();
         h.state.importState(saved);
         h.telemetry.entered(h.state, 'day4_night_start', h.scenes.day4_night_start);
         const gate = h.scenes.day4_night_branch;
         h.telemetry.transition(h.state, 'day4_night_branch', gate, h.renderer.resolveNextScene(gate));
-        h.state.stats[character].affinity = 10;
-        h.state.stats.Nurse.affinity = 100;
+        fixture.seed(h.state, character, 10);
+        fixture.seed(h.state, 'Nurse', 100);
         h.telemetry.entered(h.state, 'morning5_start', h.scenes.morning5_start);
         await h.telemetry.flush();
         const events = h.requests[0].events;
@@ -129,8 +130,8 @@ test('monitoring keeps the established route when staff visits coexist with it',
 test('staff check-in completion is logged under the established main route without a rival reward', async () => {
     const h = harness();
     h.state.flags = { route_seoyeon: true, nurse_day4: true, homeroom_day4: true };
-    h.state.stats.Seoyeon.affinity = 71;
-    h.state.stats.Nurse.affinity = 16;
+    fixture.seed(h.state, 'Seoyeon', 71);
+    fixture.seed(h.state, 'Nurse', 16);
     for (const id of ['day4_student_visit_branch', 'day4_student_visit_teacher_branch']) {
         h.telemetry.transition(h.state, id, h.scenes[id], h.renderer.resolveNextScene(h.scenes[id]));
     }
@@ -189,11 +190,11 @@ test('temptation diagnostics distinguish the +8 reward and mutable real scores f
     const id = 'wall_dain_seo_tempt_2';
     const scene = h.scenes[id];
     const accept = scene.choices[1];
-    h.state.stats.Seoyeon.affinity = 50;
+    fixture.seed(h.state, 'Seoyeon', 50);
     h.telemetry.choice(h.state, id, scene, accept, accept.next);
     const talkId = 'day4_temptation_seoyeon_freetalk';
     h.telemetry.entered(h.state, talkId, h.scenes[talkId]);
-    h.state.stats.Seoyeon.affinity = 46;
+    fixture.seed(h.state, 'Seoyeon', 46);
     h.telemetry.transition(h.state, talkId, h.scenes[talkId], h.scenes[talkId].next);
     await h.telemetry.flush();
     const [choice, entry, exit] = h.requests[0].events;

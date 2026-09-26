@@ -398,6 +398,11 @@ class GameEngine {
             return;
         }
 
+        if (scene.redirectNevergrad) {
+            this._redirectToNevergrad();
+            return;
+        }
+
         // ✅ 케이스 1: 프리토킹이 방금 끝났을 때
         // - 프리토킹 종료 후 대화창을 클릭하면 다음 씬으로 넘어감
         if (scene.type === 'group_free_talk'
@@ -1260,7 +1265,8 @@ class GameEngine {
 
             // 이름 입력 UI 표시
             this.uiManager.nameInputContainer.style.display = 'block';
-            this.uiManager.playerNameInput.value = "";
+            this.uiManager.playerNameInput.value = window.__cupidCrossingName || "";
+            window.__cupidCrossingName = "";
             this.uiManager.playerNameInput.focus();
 
             // ═══════════════════════════════════════════════════════
@@ -1496,12 +1502,7 @@ class GameEngine {
             if (scene.text) {
                 await this.dialogueSystem.typeText(scene.text, scene.name);
                 if (this.sceneRenderer.currentSceneId !== sceneId) return;
-                if (scene.redirectNevergrad) {
-                    await new Promise((resolve) => setTimeout(resolve, 1600));
-                    if (this.sceneRenderer.currentSceneId !== sceneId) return;
-                    this._redirectToNevergrad();
-                    return;
-                }
+
             } else {
                 // 대사 없으면 메시지 영역 비우기
                 this.uiManager.messageEl.textContent = "";
@@ -1599,7 +1600,7 @@ class GameEngine {
         const hitch = sceneId === 'start_again'
             || (sceneId === 'start' && fromGate)
             || (sceneId === 'morning2_yuna_seen' && this._hasPlayedNevergrad());
-        if (!hitch) return;
+        if (!hitch || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
         const box = document.getElementById('game-container');
         if (!box) return;
         box.classList.remove('lab-flicker');
@@ -1620,12 +1621,13 @@ class GameEngine {
         for (const el of [layer, box]) {
             if (!el) continue;
             el.classList.remove('lab-flicker', 'lab-dark');
-            if (scene.labGlitch) el.classList.add(scene.labGlitch);
+            if (scene.labGlitch && el === layer && !window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) el.classList.add(scene.labGlitch);
         }
         if (scene.labGlitch) this._crackleAndBuzz();
     }
 
     _crackleAndBuzz() {
+        if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
         try { window.soundManager?.playStaticCrackle?.(); } catch (_) {}
         if (navigator.vibrate && (navigator.maxTouchPoints > 0 || 'ontouchstart' in window)) {
             navigator.vibrate([45, 35, 40, 30, 110, 140, 45, 35, 40, 30, 110]);
@@ -1643,8 +1645,25 @@ class GameEngine {
             de: '/de/',
             pt: '/pt/'
         }[lang] || '/';
-        const join = page.includes('?') ? '&' : '?';
-        location.assign(`https://nevergrad.archerlab.dev${page}${join}from=riin`);
+        window.CrossWorld.show({
+            departure: true, world: 'nevergrad', lang,
+            image: 'assets/images/background/riin_lab_pills.jpg',
+            name: this.stateManager.playerName,
+            url: `https://nevergrad.archerlab.dev${page}?from=riin`,
+            save: () => {
+                // Keep the departure scene. It now waits for input when restored.
+                this.saveGame();
+                window.CupidStorage.setItem('cupid_cycle_01', 'complete');
+                window.CupidStorage.setItem('cupid_heroine', 'nurse');
+                window.CupidStorage.setItem('cupid_subject_compliance', '100');
+                try {
+                    const saved = JSON.parse(localStorage.getItem(this.saveManager.storageKey) || 'null');
+                    return saved?.currentSceneId === this.sceneRenderer.currentSceneId;
+                } catch (_) { return false; }
+            },
+            onLeave: () => window.soundManager?.stopBgm?.(),
+            onBack: () => this.uiManager.dialogueBox.focus?.()
+        });
     }
 
     _hasPlayedNevergrad() {

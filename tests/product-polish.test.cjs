@@ -19,7 +19,7 @@ function loadGalleryData() {
 test('landing pages defer the game runtime and the initial content bundle contains only day one', () => {
     const gameLoader = read('assets/js/loaders/game-loader.js');
     const i18nLoader = read('assets/js/loaders/i18n-loader.js');
-    assert.match(gameLoader, /if \(window\.preventAutoStart\)/u);
+    assert.match(gameLoader, /if \(window\.preventAutoStart && new URLSearchParams\(location\.search\)\.get\('gate'\) !== '1'\)/u);
     assert.match(gameLoader, /await ensureScenarioDay\(1\)/u);
     assert.match(gameLoader, /window\.loadCupidGameRuntime/u);
     assert.doesNotMatch(gameLoader, /concat\(commonScripts, scenarioScripts, engineScripts\)/u);

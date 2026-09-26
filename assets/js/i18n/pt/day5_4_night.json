@@ -1268,7 +1268,10 @@
     "nurse_perfect_pills_2": {
         "name": "Enfermeira",
         "text": "É vitamina. Ontem a gente exagerou.",
-        "choices": ["Comprimido rosa", "Comprimido preto"]
+        "choices": [
+            "Comprimido rosa",
+            "Comprimido preto"
+        ]
     },
     "nurse_perfect_pills_pink": {
         "name": "{name}",
@@ -1292,11 +1295,11 @@
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",
-        "text": "*Ela solta o sorriso. O ar do quarto esfria, e o abajur apaga.*"
+        "text": "*O sorriso dela desaparece. O candeeiro ao lado da cama apaga-se e uma luz fluorescente zune sobre a minha cabeça.*"
     },
     "nurse_perfect_pills_black_3": {
         "name": "{name}",
-        "text": "*O rosto se parte. Aparece um corte violeta curto, e os olhos são dourados.*"
+        "text": "*Quando a luz volta, vejo outro rosto. Cabelo roxo, olhos dourados. As mãos que ofereciam os dois comprimidos continuam no mesmo lugar.*"
     },
     "nurse_perfect_pills_black_4": {
         "name": "Kang Riin",

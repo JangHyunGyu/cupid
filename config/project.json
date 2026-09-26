@@ -1,7 +1,8 @@
 {
-  "assetVersion": "2.9.265",
+  "assetVersion": "2.9.266",
   "displayVersion": "2.9.230",
-  "serviceWorkerCacheVersion": "cupid-v3.3.184",
+  "displayVersionLabel": "ver. 0.13",
+  "serviceWorkerCacheVersion": "cupid-v3.3.185",
   "languages": [
     "ko",
     "en",

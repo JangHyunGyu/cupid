@@ -106,7 +106,7 @@
         var page = pageGlobal();
         if (!page || !page.document || !page.location) return;
         var host = page.location.hostname || '';
-        var domain = (host === 'archerlab.dev' || host.slice(-15) === '.archerlab.dev') ? '; Domain=.archerlab.dev' : '';
+        var domain = (host === 'archerlab.dev' || host.endsWith('.archerlab.dev')) ? '; Domain=.archerlab.dev' : '';
         var secure = page.location.protocol === 'https:' ? '; Secure' : '';
         try {
             page.document.cookie = key + '=' + encodeURIComponent(value) + '; Path=/; Max-Age=31536000; SameSite=Lax' + domain + secure;

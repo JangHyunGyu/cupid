@@ -1,3 +1,4 @@
+const fixture = require('./affinity-fixture.cjs');
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -15,7 +16,7 @@ const prototype = runtime.window.FreeTalkSystem.prototype;
 const characters = ['Seoyeon', 'Yuna', 'Dain'];
 const languages = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'];
 
-test('only the three five-turn interludes use dialogue affinity 100; stored scores and other scenes remain independent', () => {
+test('only the three five-turn interludes use dialogue affinity 100; stored scores and other scenes remain independent', async () => {
     for (const character of characters) {
         const id = `day4_temptation_${character.toLowerCase()}_freetalk`;
         const scene = { ...runtime.SCENARIO[4][id], name: character };
@@ -39,52 +40,52 @@ test('only the three five-turn interludes use dialogue affinity 100; stored scor
     }
 });
 
-test('interludes score positive and negative turns using real point caps while keeping dialogue affinity 100', () => {
+test('interludes score positive and negative turns using real point caps while keeping dialogue affinity 100', async () => {
     for (const character of characters) {
         const id = `day4_temptation_${character.toLowerCase()}_freetalk`;
         const scene = runtime.SCENARIO[4][id];
         assert.equal(scene.affinityLocked, false);
         const stateManager = new runtime.window.StateManager();
         const context = Object.assign(Object.create(prototype), {
-            currentSceneId: id, charNameMap: {}, stateManager,
+            currentSceneId: id, currentMaxTurns: 5, charNameMap: {}, stateManager,
             uiManager: { showAffinityChange() {} },
             galleryManager: { updateMaxAffinity() {}, checkAffinityUnlock() {} }
         });
-        stateManager.stats[character].affinity = 0;
+        fixture.seed(stateManager, character, 0);
         for (let turn = 1; turn <= 5; turn++) {
-            assert.equal(context.applyAffinity(5, scene, '손을 잡아도 돼?').change, 3);
+            assert.equal((await fixture.talk(context, 5, scene, '손을 잡아도 돼?')).change, 3);
             assert.equal(stateManager.getAffinity(character), turn * 3);
             assert.equal(context._getSceneDialoguePolicy(scene).affinity, 100);
         }
-        assert.equal(context.applyAffinity(-4, scene).change, -4);
+        assert.equal((await fixture.talk(context, -4, scene)).change, -4);
         assert.equal(stateManager.getAffinity(character), 11);
         assert.equal(context._getSceneDialoguePolicy(scene).affinity, 100);
-        stateManager.stats[character].affinity = 89;
-        assert.equal(context.applyAffinity(5, scene).change, 3);
-        assert.equal(context.applyAffinity(5, scene).change, 2);
+        fixture.seed(stateManager, character, 89);
+        assert.equal((await fixture.talk(context, 5, scene)).change, 3);
+        assert.equal((await fixture.talk(context, 5, scene)).change, 2);
         assert.equal(stateManager.getAffinity(character), 94);
-        stateManager.stats[character].affinity = 99;
-        assert.equal(context.applyAffinity(50, scene).change, 1);
-        assert.equal(context.applyAffinity(5, scene).change, 0);
-        stateManager.stats[character].affinity = -99;
-        assert.equal(context.applyAffinity(-50, scene).change, -1);
-        assert.equal(context.applyAffinity(5, scene, '손을 잡아도 돼?').change, 3);
+        fixture.seed(stateManager, character, 99);
+        assert.equal((await fixture.talk(context, 50, scene)).change, 1);
+        assert.equal((await fixture.talk(context, 5, scene)).change, 0);
+        fixture.seed(stateManager, character, -99);
+        assert.equal((await fixture.talk(context, -50, scene)).change, -1);
+        assert.equal((await fixture.talk(context, 5, scene, '손을 잡아도 돼?')).change, 3);
         assert.equal(stateManager.getAffinity(character), -97);
         const saved = stateManager.exportState();
         const restored = new runtime.window.StateManager();
         restored.importState(saved);
         assert.equal(restored.getAffinity(character), -97);
         const ending = { ...scene, affinityLocked: true };
-        assert.equal(context.applyAffinity(5, ending).change, 0);
-        assert.equal(context.applyAffinity(-50, ending).change, 0);
+        assert.equal((await fixture.talk(context, 5, ending)).change, 0);
+        assert.equal((await fixture.talk(context, -50, ending)).change, 0);
         context.currentSceneId = 'wall_seo_freetalk';
         const normal = { name: character, type: 'free_talk' };
         assert.equal(context._getSceneDialoguePolicy(normal).affinity, -97);
-        assert.equal(context.applyAffinity(5, normal, '손을 잡아도 돼?').change, 0);
+        assert.equal((await fixture.talk(context, 5, normal, '손을 잡아도 돼?')).change, 0);
     }
 });
 
-test('every interlude preserves its CG and localized character voice with a separate stable cache prefix', () => {
+test('every interlude preserves its CG and localized character voice with a separate stable cache prefix', async () => {
     for (const lang of languages) {
         const copy = JSON.parse(read(`assets/js/i18n/${lang}/day4_4_night.json`));
         for (const character of characters) {
@@ -163,7 +164,7 @@ test('every interlude preserves its CG and localized character voice with a sepa
     }
 });
 
-test('interlude post-history keeps the scripted contact after the agency hand-holding example', () => {
+test('interlude post-history keeps the scripted contact after the agency hand-holding example', async () => {
     const canon = runtime.window.buildCupidTemptationSceneCanonRule('ko');
     const post = core.buildPostHistoryGuidance([{ role: 'user', content: '가슴에 내 손' }], 'ko', {
         boundaryRule: runtime.window.buildCupidTemptationRomanceGuidance('ko'),
@@ -182,7 +183,7 @@ test('interlude post-history keeps the scripted contact after the agency hand-ho
     );
 });
 
-test('scripted temptation contact is seeded into 1:1 history and kept as the tempter’s private night in group prompts', () => {
+test('scripted temptation contact is seeded into 1:1 history and kept as the tempter’s private night in group prompts', async () => {
     for (const lang of languages) {
         const copy = JSON.parse(read(`assets/js/i18n/${lang}/day4_4_night.json`));
         for (const character of characters) {
@@ -248,7 +249,7 @@ test('scripted temptation contact is seeded into 1:1 history and kept as the tem
     assert.ok(!withoutNight.split(core.CACHE_BOUNDARY_MARKER)[1].includes(seoyeonHistory));
 });
 
-test('confrontation history and relationship status change only the live prompt tail in every language', () => {
+test('confrontation history and relationship status change only the live prompt tail in every language', async () => {
     for (const lang of languages) {
         const flags = { day4_confession_accepted: true };
         const context = {

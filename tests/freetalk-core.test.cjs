@@ -1548,7 +1548,7 @@ test('group reply order, per-speaker affinity, and Dain expression assets follow
 
     system._applyGroupExpression('angry', 'Dain');
     assert.equal(dainImage.src, 'assets/images/characters/dain_angry.png?v=test');
-    assert.equal(dainImage.dataset.rawSrc, 'assets/images/characters/dain_angry.png?v=test');
+    assert.equal(dainImage.dataset.rawSrc, 'assets/images/characters/dain_angry.png');
     system._applyGroupExpression('sad', 'Dain');
     assert.equal(dainImage.src, 'assets/images/characters/dain_sad.png?v=test');
 
@@ -1569,7 +1569,11 @@ test('group reply order, per-speaker affinity, and Dain expression assets follow
     };
     system.uiManager.showAffinityChange = () => {};
 
-    const mildPositive = system._applyGroupAffinity(1, 'Teacher', 3);
+    system.currentSceneId = 'group_scene';
+    system.currentMaxTurns = 3;
+    freeTalkWindow.CupidAffinityGate = { commitKey: () => 'talk:group_scene:0', grant: (id, amount) => id === 'Teacher' && amount === 1 };
+    function commitTurn() { return system._applyGroupAffinity(1, 'Teacher', 3); }
+    const mildPositive = commitTurn();
     assert.equal(mildPositive.requestedChange, 1);
     assert.equal(mildPositive.appliedChange, 1);
     assert.equal(mildPositive.change, 1);
@@ -1614,7 +1618,8 @@ test('group reply order, per-speaker affinity, and Dain expression assets follow
 });
 
 test('skipping a group chat warns first and lowers both participants by twenty only after confirmation', async () => {
-    const freeTalkWindow = { CupidFreeTalkCore: core, GAME_LANG: 'ko' };
+    let commitKey = '';
+    const freeTalkWindow = { CupidFreeTalkCore: core, GAME_LANG: 'ko', CupidAffinityGate: { commitKey: () => commitKey, grant: (id, amount) => commitKey === 'close:group_scene' && ['Teacher', 'Dain'].includes(id) && amount === -20 } };
     const sandbox = {
         window: freeTalkWindow,
         document: {
@@ -1654,7 +1659,7 @@ test('skipping a group chat warns first and lowers both participants by twenty o
             return affinities[id];
         },
         setFlag() {},
-        async commitProgressEvent(key, operation) { return { applied: true, value: operation() }; }
+        async commitProgressEvent(key, operation) { commitKey = key; try { return { applied: true, value: operation() }; } finally { commitKey = ''; } }
     };
     const ui = {
         async showModal(message) {
@@ -2173,12 +2178,12 @@ test('gallery rollover retains recent voice and a bounded stable checkpoint', ()
     const history = [{ role: 'system', content: 'stable profile' }, ...Array.from({ length: 33 }, (_, i) => ({ role: i % 2 ? 'assistant' : 'user', content: `line ${i}`, timestamp: i + 1 }))];
     const first = context.window.buildCupidPromptEpoch(history);
     const raw = first.messages.filter(message => message.role !== 'system');
-    assert.equal(raw.length, 6);
-    assert.equal(raw[0].content, 'line 27');
+    assert.equal(raw.length, 3);
+    assert.equal(raw[0].content, 'line 30');
     assert.equal(raw.at(-1).content, 'line 32');
-    assert.ok(first.state.carryover.includes('line 26'));
+    assert.ok(first.state.carryover.includes('line 29'));
     const next = context.window.buildCupidPromptEpoch([...history, { role: 'assistant', content: 'next', timestamp: 34 }], { state: first.state });
-    assert.equal(next.messages.filter(message => message.role !== 'system').length, 7);
+    assert.equal(next.messages.filter(message => message.role !== 'system').length, 4);
     assert.equal(next.state.carryover, first.state.carryover, 'checkpoint should remain frozen inside an epoch');
     assert.equal(next.messages[0].content, 'stable profile');
     assert.equal(history.length, 34, 'request trimming must not delete stored history');
@@ -2188,7 +2193,7 @@ test('gallery rollover retains recent voice and a bounded stable checkpoint', ()
         source = [...source, { role: i % 2 ? 'user' : 'assistant', content: `new ${i}`, timestamp: i }];
         const result = context.window.buildCupidPromptEpoch(source, { state });
         const conversation = result.messages.filter(message => message.role !== 'system');
-        assert.ok(conversation.length <= 10, 'restored gallery request limit must hold across rollovers');
+        assert.ok(conversation.length <= 5, 'restored gallery request limit must hold across rollovers');
         assert.equal(conversation.at(-1).content, `new ${i}`, 'latest message must survive trimming');
         state = result.state;
     }

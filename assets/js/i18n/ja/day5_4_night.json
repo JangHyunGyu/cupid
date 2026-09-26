@@ -1268,7 +1268,10 @@
     "nurse_perfect_pills_2": {
         "name": "保健室の先生",
         "text": "栄養剤だよ。昨日無理したから。",
-        "choices": ["ピンクの薬", "黒い薬"]
+        "choices": [
+            "ピンクの薬",
+            "黒い薬"
+        ]
     },
     "nurse_perfect_pills_pink": {
         "name": "{name}",
@@ -1292,11 +1295,11 @@
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",
-        "text": "*笑いを消す。寝室の空気が冷えて、スタンドが消える。*"
+        "text": "*先生が笑みを消す。ベッド脇のスタンドが消え、頭上で蛍光灯が唸る。*"
     },
     "nurse_perfect_pills_black_3": {
         "name": "{name}",
-        "text": "*顔が割れる。短い紫の髪が見えて、目が金色だ。*"
+        "text": "*明かりが戻ると、別の顔が見えた。紫の髪に金色の目。二つの薬を差し出していた手は同じ位置にある。*"
     },
     "nurse_perfect_pills_black_4": {
         "name": "カン・リイン",

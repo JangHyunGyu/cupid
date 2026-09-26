@@ -1268,7 +1268,10 @@
     "nurse_perfect_pills_2": {
         "name": "Schulkrankenschwester",
         "text": "Das sind Vitamine. Wir haben's gestern übertrieben.",
-        "choices": ["Rosa Tablette", "Schwarze Tablette"]
+        "choices": [
+            "Rosa Tablette",
+            "Schwarze Tablette"
+        ]
     },
     "nurse_perfect_pills_pink": {
         "name": "{name}",
@@ -1292,11 +1295,11 @@
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",
-        "text": "*Sie lässt das Lächeln fallen. Die Luft im Schlafzimmer kühlt ab, und die Lampe geht aus.*"
+        "text": "*Ihr Lächeln verschwindet. Die Nachttischlampe erlischt, und über mir summt eine Leuchtstoffröhre.*"
     },
     "nurse_perfect_pills_black_3": {
         "name": "{name}",
-        "text": "*Das Gesicht reißt auf. Ein kurzer violetter Bob kommt zum Vorschein, und die Augen sind gold.*"
+        "text": "*Als das Licht zurückkehrt, sehe ich ein anderes Gesicht. Violettes Haar, goldene Augen. Die Hände, die mir die beiden Tabletten hinhielten, sind noch am selben Platz.*"
     },
     "nurse_perfect_pills_black_4": {
         "name": "Kang Riin",

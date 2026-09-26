@@ -13,7 +13,7 @@ const commands = [
     ['node', ['validate.js', '--seed=cupid-ci', '--no-report']],
     ['node', ['test_endings.js']],
     ['node', ['test_i18n_full.js']],
-    ['node', ['--test', 'tests/choice-affinity-balance.test.cjs']],
+    ['node', ['--test', 'tests/choice-affinity-balance.test.cjs', 'tests/cross-world.test.cjs']],
     ['node', ['--test', 'tests/haeun-festival.test.cjs', 'tests/haeun-romance.test.cjs', 'tests/progression-integrity.test.cjs']],
     ['node', ['--test', 'tests/affinity-negative-branches.test.cjs']],
     ['node', ['--test', 'tests/affinity-corrections.test.cjs']],

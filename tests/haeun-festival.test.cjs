@@ -1,3 +1,4 @@
+const fixture = require('./affinity-fixture.cjs');
 'use strict';
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -19,15 +20,16 @@ function runtime(random = 0) {
         vm.runInContext(read(`assets/js/${file}`), context, { filename: file });
     }
     const state = new context.window.StateManager();
+    fixture.register(state, context);
     const renderer = new context.window.SceneRenderer(state, { updateMaxAffinity() {}, checkAffinityUnlock() {} }, { showAffinityChange() {} });
     return { context, state, renderer, scenes: { ...context.SCENARIO[4], ...context.SCENARIO[5] }, core: context.window.CupidFreeTalkCore };
 }
 
-test('Haeun uses negative / 0–7 / 8+ trust in both conversations and the festival', () => {
+test('Haeun uses negative / 0–7 / 8+ trust in both conversations and the festival', async () => {
     const { context, state, renderer, scenes } = runtime();
     for (const [score, day3, day5] of [[-100, 'low', 'low_intro'], [-20, 'low', 'low_intro'], [-1, 'low', 'low_intro'],
         [0, 'neutral', 'resume'], [7, 'neutral', 'resume'], [8, 'high', 'select_rival'], [15, 'high', 'select_rival']]) {
-        state.stats.Haeun.affinity = score;
+        fixture.seed(state, 'Haeun', score);
         assert.equal(renderer.resolveNextScene(context.SCENARIO[3].haeun_affinity_check), `haeun_affinity_${day3}_1`);
         assert.equal(renderer.resolveNextScene(scenes.day5_haeun_trust_check), `day5_haeun_${day5}`);
         assert.equal(renderer.resolveNextScene(scenes.day4_haeun_trust_check), score < 0 ? 'day4_haeun_approach' : 'day4_haeun_personal_gate');
@@ -42,19 +44,19 @@ test('Haeun uses negative / 0–7 / 8+ trust in both conversations and the festi
     }
 });
 
-test('highest affinity is selected from all five; tied selection survives penalties and save/load', () => {
+test('highest affinity is selected from all five; tied selection survives penalties and save/load', async () => {
     for (const selected of characters) {
-        const { state, renderer, scenes } = runtime();
-        state.stats[selected].affinity = 70;
+        const { context, state, renderer, scenes } = runtime();
+        fixture.seed(state, selected, 70);
         renderer.resolveNextScene(scenes.day5_haeun_select_rival);
         assert.equal(state.getFlag('day5_haeun_rival'), selected);
     }
     for (const [random, selected] of [[0, 'Yuna'], [0.999, 'Nurse']]) {
         const { context, state, renderer, scenes } = runtime(random);
-        state.stats.Yuna.affinity = state.stats.Nurse.affinity = 80;
+        fixture.seed(state, 'Yuna', 80); fixture.seed(state, 'Nurse', 80);
         renderer.resolveNextScene(scenes.day5_haeun_select_rival);
         assert.equal(state.getFlag('day5_haeun_rival'), selected);
-        state.changeAffinity(selected, -20);
+        await fixture.award(state, selected, -20);
         const restored = new context.window.StateManager();
         restored.importState(JSON.parse(JSON.stringify(state.exportState())));
         renderer.stateManager = restored;
@@ -63,19 +65,19 @@ test('highest affinity is selected from all five; tied selection survives penalt
     }
 });
 
-test('Day 4 selection persists independently while Day 5 can choose a new highest-affinity character', () => {
+test('Day 4 selection persists independently while Day 5 can choose a new highest-affinity character', async () => {
     const { context, state, renderer, scenes } = runtime(0.999);
-    state.stats.Yuna.affinity = state.stats.Nurse.affinity = 80;
+    fixture.seed(state, 'Yuna', 80); fixture.seed(state, 'Nurse', 80);
     renderer.resolveNextScene(scenes.day4_haeun_select_concern);
     assert.equal(state.getFlag('day4_haeun_rival'), 'Nurse');
-    state.changeAffinity('Nurse', -20);
+    await fixture.award(state, 'Nurse', -20);
     const restored = new context.window.StateManager();
     restored.importState(JSON.parse(JSON.stringify(state.exportState())));
     renderer.stateManager = restored;
     assert.equal(renderer.resolveNextScene(scenes.day4_haeun_concern_router), 'day4_haeun_concern_nurse_check');
     renderer.processSceneFlags(scenes.day4_haeun_finish);
     assert.equal(renderer.resolveNextScene(scenes.day4_haeun_gate), 'morning4_end');
-    restored.stats.Haeun.affinity = 8;
+    fixture.seed(restored, 'Haeun', 8);
     assert.equal(renderer.resolveNextScene(scenes.day5_haeun_trust_check), 'day5_haeun_select_rival');
     renderer.resolveNextScene(scenes.day5_haeun_select_rival);
     assert.equal(restored.getFlag('day5_haeun_rival'), 'Yuna');
@@ -83,28 +85,28 @@ test('Day 4 selection persists independently while Day 5 can choose a new highes
     assert.equal(scenes.day5_haeun_select_concern.runtimeEntrypoint, true);
 });
 
-test('new and legacy events deduct 15 or 20 before five group turns without increasing the romance route ceiling', () => {
+test('new and legacy events deduct 15 or 20 before five group turns without increasing the romance route ceiling', async () => {
     for (const [day, mode] of [[5, ''], [5, 'concern_'], [4, 'concern_']]) for (const character of characters) for (const [suffix, loss] of [['', 15], ['_delay', 20]]) {
         const { state, renderer, scenes, core, context } = runtime();
         const prefix = `day${day}_haeun_${mode}${character.toLowerCase()}`;
         const entry = scenes[`${prefix}_escalation${suffix}`];
         const group = scenes[entry.next];
-        state.stats[character].affinity = 80;
-        renderer.processSceneStats(entry);
+        fixture.seed(state, character, 80);
+        await fixture.scene(context, state, renderer, scenes, entry);
         assert.equal(state.getAffinity(character), 80 - loss);
         assert.equal(group.maxTurns, 5);
         const prototype = context.window.FreeTalkSystem.prototype;
         const participants = prototype._resolveGroupParticipants.call({ _getLocalizedGroupCharacterName: prototype._getLocalizedGroupCharacterName }, group, 'ko');
         assert.deepEqual(Array.from(participants, participant => participant.id), [character, 'Haeun']);
         assert.equal(participants[1].name, '하은');
-        for (let turn = 0; turn < group.maxTurns; turn++) state.changeAffinity(character, core.normalizeStoryFreeTalkAffinityChange(5, state.getAffinity(character)));
+        for (let turn = 0; turn < group.maxTurns; turn++) await fixture.award(state, character, core.normalizeStoryFreeTalkAffinityChange(5, state.getAffinity(character)));
         assert.ok(state.getAffinity(character) <= 80);
         assert.ok(group.maxTurns * 3 - loss <= 0);
         assert.equal(group.next, day === 4 ? 'day4_haeun_finish' : mode ? 'day5_haeun_low_intro' : 'day5_haeun_finish');
     }
 });
 
-test('every visible new scene has seven-language copy, valid choices and existing images', () => {
+test('every visible new scene has seven-language copy, valid choices and existing images', async () => {
     const { scenes } = runtime();
     const added = Object.entries(scenes).filter(([id]) => /^day[45]_haeun_/.test(id));
     for (const lang of languages) {
@@ -123,7 +125,7 @@ test('every visible new scene has seven-language copy, valid choices and existin
     }
 });
 
-test('Haeun CGs use square lossless crops, retain original masters and register gallery assets in every language', () => {
+test('Haeun CGs use square lossless crops, retain original masters and register gallery assets in every language', async () => {
     const { context, scenes } = runtime();
     vm.runInContext(read('assets/js/gallery-data.js'), context);
     const config = read('assets/js/modules/config.js');
@@ -175,7 +177,7 @@ test('Haeun CGs use square lossless crops, retain original masters and register 
     }
 });
 
-test('all new and legacy localized group prompts isolate scores, choices and real evidence from stable cache prefixes', () => {
+test('all new and legacy localized group prompts isolate scores, choices and real evidence from stable cache prefixes', async () => {
     const { context, state, scenes, core } = runtime();
     const prototype = context.window.FreeTalkSystem.prototype;
     for (const lang of languages) for (const [day, mode] of [[5, ''], [5, 'concern_'], [4, 'concern_']]) for (const id of characters) {
@@ -185,11 +187,11 @@ test('all new and legacy localized group prompts isolate scores, choices and rea
         const talk = { stateManager: state, getGameContext: () => '', _getLocalizedGroupCharacterName: prototype._getLocalizedGroupCharacterName,
             _getGroupChoiceState: prototype._getGroupChoiceState, _getLocalizedGroupLocation: prototype._getLocalizedGroupLocation };
         talk.groupParticipants = prototype._resolveGroupParticipants.call(talk, scene, lang);
-        state.stats[id].affinity = 65;
+        fixture.seed(state, id, 65);
         state.flags[scene.groupChoiceFlag || 'day5_haeun_delayed_explanation'] = false;
         state.setChatMemory('Haeun', [{ role: 'user', content: 'ACTUAL_HAEUN_EVIDENCE_1' }, { role: 'assistant', content: 'ACTUAL_HAEUN_REPLY_1' }]);
         const first = prototype._buildCurrentGroupSystemPrompt.call(talk, scene, lang);
-        state.stats[id].affinity = 60;
+        fixture.seed(state, id, 60);
         state.flags[scene.groupChoiceFlag || 'day5_haeun_delayed_explanation'] = true;
         state.setChatMemory('Haeun', [{ role: 'user', content: 'ACTUAL_HAEUN_EVIDENCE_2' }]);
         const second = prototype._buildCurrentGroupSystemPrompt.call(talk, scene, lang);

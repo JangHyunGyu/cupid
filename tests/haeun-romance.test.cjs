@@ -1,3 +1,4 @@
+const fixture = require('./affinity-fixture.cjs');
 'use strict';
 const test = require('node:test');
 const assert = require('node:assert/strict');
@@ -18,31 +19,32 @@ function runtime() {
         vm.runInContext(read('assets/js/' + file), context, { filename: file });
     }
     const state = new context.window.StateManager();
+    fixture.register(state, context);
     const renderer = new context.window.SceneRenderer(state, { updateMaxAffinity() {}, checkAffinityUnlock() {} }, { showAffinityChange() {}, showAffinityChangeMulti() {} });
     return { context, state, renderer, scenes: Object.assign({}, ...Object.values(context.SCENARIO)) };
 }
-test('Haeun choice requires her conversation and 45, with a persisted highest-affinity rival', () => {
-    const { state, renderer, scenes } = runtime();
+test('Haeun choice requires her conversation and 45, with a persisted highest-affinity rival', async () => {
+    const { context, state, renderer, scenes } = runtime();
     assert.equal(renderer.resolveNextScene(scenes.day5_haeun_route_gate), 'after5_original_start');
     state.setFlag('messaged_day5_haeun_personal');
     assert.equal(renderer.resolveNextScene(scenes.day5_haeun_route_gate), 'day5_haeun_route_affinity');
     for (const score of [0, 30, 44, 45, 100]) {
-        state.stats.Haeun.affinity = score;
+        fixture.seed(state, 'Haeun', score);
         assert.equal(renderer.resolveNextScene(scenes.day5_haeun_route_affinity), score >= 45 ? 'day5_haeun_route_rival' : 'after5_original_start');
     }
-    state.stats.Yuna.affinity = 90;
-    state.stats.Haeun.affinity = 60;
+    fixture.seed(state, 'Yuna', 90);
+    fixture.seed(state, 'Haeun', 60);
     assert.equal(renderer.resolveNextScene(scenes.day5_haeun_route_rival), 'day5_haeun_offer_yuna');
-    state.stats.Seoyeon.affinity = 100;
+    fixture.seed(state, 'Seoyeon', 100);
     assert.equal(renderer.resolveNextScene(scenes.day5_haeun_choose_rival), 'day5_haeun_leave_yuna');
-    renderer.processSceneStats(scenes.day5_haeun_leave_yuna);
+    await fixture.scene(context, state, renderer, scenes, scenes.day5_haeun_leave_yuna);
     assert.equal(state.getAffinity('Yuna'), 60);
     assert.equal(state.getAffinity('Haeun'), 80);
     assert.equal(scenes.day5_haeun_leave_yuna.next, 'day5_haeun_switch_yuna_entry');
     assert.equal(scenes.day5_haeun_switch_yuna_group_talk.maxTurns, 3);
 });
 
-test('Day 4 group exit stays at the gate until Haeun finishes her personal conversation', () => {
+test('Day 4 group exit stays at the gate until Haeun finishes her personal conversation', async () => {
     const { state, scenes, renderer } = runtime();
     state.setFlag('messaged_haeun_freetalk');
     assert.equal(scenes.day4_haeun_finish.background, scenes.day4_haeun_personal.background);
@@ -50,18 +52,18 @@ test('Day 4 group exit stays at the gate until Haeun finishes her personal conve
     assert.equal(renderer.resolveNextScene(scenes.day4_haeun_personal_gate), 'day4_haeun_personal');
     assert.equal(scenes.day4_haeun_personal.next, 'morning4_end');
 });
-test('100 dates Haeun; 99 returns to the unchanged ending conditions and does not erase incidents', () => {
-    const { state, renderer, scenes } = runtime();
+test('100 dates Haeun; 99 returns to the unchanged ending conditions and does not erase incidents', async () => {
+    const { context, state, renderer, scenes } = runtime();
     state.setFlag('haeun_route_selected');
     state.setFlag('day3_caught_multiple_dates');
     state.setFlag('route_seoyeon');
-    state.stats.Haeun.affinity = 99;
+    fixture.seed(state, 'Haeun', 99);
     assert.equal(renderer.resolveNextScene(scenes.day5_haeun_romance_check), 'day5_haeun_fallback');
     renderer.processSceneFlags(scenes.day5_haeun_fallback);
     assert.equal(state.getFlag('haeun_route_selected'), false);
     assert.equal(state.getFlag('route_seoyeon'), true);
     assert.equal(renderer.resolveNextScene(scenes.ending_start), 'day5_ending_mayhem');
-    state.stats.Haeun.affinity = 100;
+    fixture.seed(state, 'Haeun', 100);
     assert.equal(renderer.resolveNextScene(scenes.day5_haeun_romance_check), 'day5_ending_haeun');
     state.setFlag('isDating_Seoyeon');
     renderer.processSceneFlags(scenes.day5_ending_haeun);
@@ -69,26 +71,26 @@ test('100 dates Haeun; 99 returns to the unchanged ending conditions and does no
     assert.equal(state.getFlag('isDating_Seoyeon'), false);
     assert.equal(state.getFlag('ending_perfect'), true);
 });
-test('the best path has a 110-point budget, stored cap 100, mostly personal conversation', () => {
+test('the best path has a 110-point budget, stored cap 100, mostly personal conversation', async () => {
     const { context, state, scenes } = runtime();
     const personal = ['haeun_freetalk', 'day4_haeun_personal', 'day5_haeun_personal', 'day5_haeun_private_1', 'day5_haeun_private_2'];
     assert.equal(personal.reduce((n, id) => n + scenes[id].maxTurns, 0), 25);
     let raw = 0;
     for (let turn = 0; turn < 33; turn++) {
-        if (turn === 20) { state.changeAffinity('Haeun', 20); raw += 20; }
+        if (turn === 20) { await fixture.award(state, 'Haeun', 20); raw += 20; }
         const gain = context.window.CupidFreeTalkCore.normalizeStoryFreeTalkAffinityChange(5, state.getAffinity('Haeun'));
         raw += gain;
-        state.changeAffinity('Haeun', gain);
+        await fixture.award(state, 'Haeun', gain);
     }
     assert.equal(raw, 110);
     assert.equal(state.getAffinity('Haeun'), 100);
-    state.stats.Haeun.affinity = 45;
-    state.changeAffinity('Haeun', 20);
-    for (let turn = 0; turn < 13; turn++) state.changeAffinity('Haeun', context.window.CupidFreeTalkCore.normalizeStoryFreeTalkAffinityChange(5, state.getAffinity('Haeun')));
+    fixture.seed(state, 'Haeun', 45);
+    await fixture.award(state, 'Haeun', 20);
+    for (let turn = 0; turn < 13; turn++) await fixture.award(state, 'Haeun', context.window.CupidFreeTalkCore.normalizeStoryFreeTalkAffinityChange(5, state.getAffinity('Haeun')));
     assert.equal(state.getAffinity('Haeun'), 100);
     for (const id of personal) assert.equal(scenes[id].stats, undefined);
 });
-test('all seven locales have Haeun route copy, four existing expressions and gallery prompt cache isolation', () => {
+test('all seven locales have Haeun route copy, four existing expressions and gallery prompt cache isolation', async () => {
     const { context, scenes } = runtime();
     const Gallery = context.window.GalleryData;
     assert.equal(Gallery.resolveEndingId('day5_ending_haeun'), 'perfect_haeun');
@@ -112,21 +114,21 @@ test('all seven locales have Haeun route copy, four existing expressions and gal
     }
 });
 
-test('switch groups preserve senior addresses and keep live relationship facts beyond the cache boundary', () => {
+test('switch groups preserve senior addresses and keep live relationship facts beyond the cache boundary', async () => {
     const { context, state, scenes, renderer } = runtime();
     const p=context.window.FreeTalkSystem.prototype;
     for (const lang of languages) for (const character of ['Seoyeon','Yuna','Dain','Teacher','Nurse']) {
         const id=`day5_haeun_switch_${character.toLowerCase()}_group_talk`;
         const copy=JSON.parse(read(`assets/js/i18n/${lang}/day5_3_afterschool.json`));
         const scene={...scenes[id],...copy[id]};
-        state.stats.Haeun.affinity=45;state.stats[character].affinity=80;
-        renderer.processSceneStats(scenes[`day5_haeun_leave_${character.toLowerCase()}`]);
+        fixture.seed(state, 'Haeun', 45);fixture.seed(state, character, 80);
+        await fixture.scene(context, state, renderer, scenes, scenes[`day5_haeun_leave_${character.toLowerCase()}`]);
         assert.equal(state.getAffinity('Haeun'),65);assert.equal(state.getAffinity(character),50);
         assert.equal(scene.maxTurns,3);assert.equal(scene.haeunRomance,true);
         const talk={stateManager:state,getGameContext:()=>'',_getLocalizedGroupCharacterName:p._getLocalizedGroupCharacterName,_getLocalizedGroupLocation:p._getLocalizedGroupLocation,_getGroupChoiceState:p._getGroupChoiceState};
         talk.groupParticipants=p._resolveGroupParticipants.call(talk,scene,lang);
         const first=p._buildCurrentGroupSystemPrompt.call(talk,scene,lang);
-        state.stats.Haeun.affinity=68;state.stats[character].affinity=47;
+        fixture.seed(state, 'Haeun', 68);fixture.seed(state, character, 47);
         const second=p._buildCurrentGroupSystemPrompt.call(talk,scene,lang);
         assert.equal(first.split('===CACHE_BOUNDARY===')[0],second.split('===CACHE_BOUNDARY===')[0]);
         assert.notEqual(first.split('===CACHE_BOUNDARY===')[1],second.split('===CACHE_BOUNDARY===')[1]);
@@ -142,7 +144,7 @@ test('switch groups preserve senior addresses and keep live relationship facts b
     }
 });
 
-test('Haeun ending has one native square CG registered in every locale', () => {
+test('Haeun ending has one native square CG registered in every locale', async () => {
     const {context,scenes}=runtime();
     const id='ending_perfect_haeun';
     assert.equal(scenes.day5_ending_haeun.background,`assets/images/background/${id}.png`);

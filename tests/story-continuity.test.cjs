@@ -1,3 +1,4 @@
+const fixture = require('./affinity-fixture.cjs');
 'use strict';
 
 const assert = require('node:assert/strict');
@@ -74,7 +75,7 @@ test('legacy group save preserves its original speakers even after affinity rank
         sessionId: 'group_scene', turnId: 'one', participants: ['Dain', 'Yuna'],
         userContent: '들어볼게.', assistantMessages: [{ speakerId: 'Yuna', content: '내 말도 들어.' }]
     });
-    state.stats.Seoyeon.affinity = 99;
+    fixture.seed(state, 'Seoyeon', 99);
     const restored = talk._getFreeTalkCheckpoint({ type: 'group_free_talk', maxTurns: 3 }, 'group_scene');
     assert.deepEqual(Array.from(restored.participants, p => [p.id, p.side]), [['Dain', 'left'], ['Yuna', 'right']]);
     assert.equal(restored.turns, 1);
@@ -166,14 +167,14 @@ test('history routers select only established memories and preserve rewards on e
         const establishedNext = all[id].branches[0].next;
         if (establishedNext === `${id}_visit`) {
             assert.equal(renderer.resolveNextScene(all[id]), `${id}_visit`);
-            state.stats.Dain.affinity = 8;
-            state.stats.Yuna.affinity = 8;
+            fixture.seed(state, 'Dain', 8);
+            fixture.seed(state, 'Yuna', 8);
             assert.equal(renderer.resolveNextScene(all[`${id}_visit`]), `${id}_established`);
-            state.stats.Dain.affinity = -2;
-            state.stats.Yuna.affinity = -2;
+            fixture.seed(state, 'Dain', -2);
+            fixture.seed(state, 'Yuna', -2);
             assert.equal(renderer.resolveNextScene(all[`${id}_visit`]), `${id}_established`);
-            state.stats.Dain.affinity = -25;
-            state.stats.Yuna.affinity = -25;
+            fixture.seed(state, 'Dain', -25);
+            fixture.seed(state, 'Yuna', -25);
             assert.match(renderer.resolveNextScene(all[`${id}_visit`]), /_react_neg$/);
         } else {
             assert.equal(renderer.resolveNextScene(all[id]), `${id}_established`);

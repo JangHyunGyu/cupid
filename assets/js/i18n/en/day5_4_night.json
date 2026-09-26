@@ -1268,7 +1268,10 @@
     "nurse_perfect_pills_2": {
         "name": "School Nurse",
         "text": "It's vitamins. We overdid it yesterday.",
-        "choices": ["Pink pill", "Black pill"]
+        "choices": [
+            "Pink pill",
+            "Black pill"
+        ]
     },
     "nurse_perfect_pills_pink": {
         "name": "{name}",
@@ -1292,11 +1295,11 @@
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",
-        "text": "*She lets the smile go. The bedroom air cools, and the lamp goes out.*"
+        "text": "*Her smile fades. The bedside lamp goes out, and a fluorescent light hums overhead.*"
     },
     "nurse_perfect_pills_black_3": {
         "name": "{name}",
-        "text": "*Her face splits. A short violet bob shows, and the eyes are gold.*"
+        "text": "*When the light returns, I see a different face. Purple hair, golden eyes. The hands that offered the two pills have not moved.*"
     },
     "nurse_perfect_pills_black_4": {
         "name": "Kang Riin",

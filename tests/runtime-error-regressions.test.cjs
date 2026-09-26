@@ -29,7 +29,7 @@ test('app entry pages load the storage adapter before inline storage access', ()
     const pages = ['index', 'game', 'gallery'].flatMap(name => ['', '-en', '-es', '-ja', '-fr', '-de', '-pt'].map(suffix => `${name}${suffix}.html`));
     for (const page of pages) {
         const html = read(page);
-        assert.match(html, /assets\/js\/storage-adapter\.js\?v=20260819-storage-fallback-v1/);
+        assert.match(html, /assets\/js\/storage-adapter\.js\?v=20260926-crossing-storage-v2/);
         const firstInlineUse = html.indexOf('window.CupidStorage.');
         assert.ok(
             firstInlineUse === -1 || html.indexOf('assets/js/storage-adapter.js') < firstInlineUse,
@@ -86,7 +86,7 @@ test('i18n loading limits concurrency and survives a longer transient interrupti
             maxActive = Math.max(maxActive, active);
             await Promise.resolve();
             active -= 1;
-            if (url.endsWith('day1_1_morning.json') && count < 5) {
+            if (url.split('?')[0].endsWith('day1_1_morning.json') && count < 5) {
                 throw new TypeError('Load failed');
             }
             return { ok: true, json: async () => ({ [url]: true }) };
@@ -95,7 +95,7 @@ test('i18n loading limits concurrency and survives a longer transient interrupti
     vm.runInNewContext(read('assets/js/loaders/i18n-loader.js'), sandbox, { filename: 'i18n-loader.js' });
     await sandbox.window._i18nReady;
 
-    const retriedUrl = 'assets/js/i18n/ko/day1_1_morning.json';
+    const retriedUrl = [...calls.keys()].find(url => url.split('?')[0] === 'assets/js/i18n/ko/day1_1_morning.json');
     assert.equal(calls.get(retriedUrl), 5);
     assert.deepEqual(cacheModes.get(retriedUrl), ['default', 'reload', 'reload', 'reload', 'reload']);
     assert.ok(maxActive <= 4, `expected at most 4 concurrent fetches, saw ${maxActive}`);
