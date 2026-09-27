@@ -53,7 +53,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-    const version = '2.9.273';
+    const version = '2.9.274';
     const LOAD_RETRIES = 3;
 
     // =========================================================================
@@ -430,7 +430,8 @@
         verifyRequiredGlobals();
         window.gameScriptsLoaded = true;
         window.dispatchEvent(new Event('gameScriptsLoaded'));
-        if (/(?:^|; )nevergrad_played=1(?:;|$)/.test(document.cookie || '')) {
+        const arrival = window.CrossWorld.takeArrival('cupid');
+        if (arrival && !window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
             const nodes = document.querySelectorAll('p');
             let versionNode = null;
             for (let i = 0; i < nodes.length; i++) {
@@ -455,7 +456,6 @@
                 }, 700);
             }
         }
-        const arrival = window.CrossWorld.takeArrival('cupid');
         if (arrival) {
             window.__cupidCrossingName = arrival.name;
             document.documentElement.classList.remove('cupid-from-gate');
