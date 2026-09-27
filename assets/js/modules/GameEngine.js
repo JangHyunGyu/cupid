@@ -1601,7 +1601,7 @@ class GameEngine {
             || (sceneId === 'start' && fromGate)
             || (sceneId === 'morning2_yuna_seen' && this._hasPlayedNevergrad());
         if (!hitch || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
-        const box = document.getElementById('game-container');
+        const box = document.getElementById('background-layer');
         if (!box) return;
         box.classList.remove('lab-flicker');
         void box.offsetWidth;
@@ -1618,19 +1618,23 @@ class GameEngine {
             style.textContent = '@keyframes cupid-lab-flicker{0%{filter:brightness(1)}20%{filter:brightness(.25) contrast(1.6) hue-rotate(80deg)}40%{filter:brightness(.8) contrast(1.2)}60%{filter:brightness(.15) saturate(0)}80%{filter:brightness(.55) hue-rotate(40deg)}100%{filter:brightness(.35)}}@keyframes cupid-lab-dark{0%{filter:brightness(.7) contrast(1.3)}100%{filter:brightness(.48) saturate(.65) contrast(1.15)}}#background-layer.lab-flicker,#game-container.lab-flicker{animation:cupid-lab-flicker .7s steps(2) 1}#background-layer.lab-dark,#game-container.lab-dark{animation:cupid-lab-dark .8s linear 1 forwards}';
             document.head.appendChild(style);
         }
+        // The two lab lines are one sustained reveal, not two fresh shocks.
+        const effect = scene.labGlitch || null;
+        if (this._labGlitchType === effect) return;
+        this._labGlitchType = effect;
         for (const el of [layer, box]) {
             if (!el) continue;
             el.classList.remove('lab-flicker', 'lab-dark');
             if (scene.labGlitch && el === layer && !window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) el.classList.add(scene.labGlitch);
         }
-        if (scene.labGlitch) this._crackleAndBuzz();
+        if (scene.labGlitch === 'lab-flicker') this._crackleAndBuzz();
     }
 
     _crackleAndBuzz() {
         if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
         try { window.soundManager?.playStaticCrackle?.(); } catch (_) {}
         if (navigator.vibrate && (navigator.maxTouchPoints > 0 || 'ontouchstart' in window)) {
-            navigator.vibrate([45, 35, 40, 30, 110, 140, 45, 35, 40, 30, 110]);
+            navigator.vibrate([35, 40, 65]);
         }
     }
 

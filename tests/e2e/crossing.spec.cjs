@@ -77,3 +77,71 @@ for (const lang of languages) test(`saved arrival remains reachable through rota
   }
   await page.screenshot({path:info.outputPath('saved-arrival.png')});
 });
+
+test('async save settles before departure and reports rejection with usable controls', async ({page}) => {
+  await boot(page); await page.keyboard.press('Escape');
+  await page.evaluate(cupid => {
+    window.crossingSaves = 0;
+    window.CrossWorld.show({world: cupid ? 'nevergrad' : 'cupid', lang:'ko', departure:true,
+      image: cupid ? 'assets/images/background/riin_lab_pills.jpg' : 'assets/images/background/cg_gate_bloom.jpg',
+      url:'http://[', save:() => { window.crossingSaves++; return new Promise((resolve,reject) => { window.rejectCrossingSave = reject; }); }});
+    const button = document.querySelector('#cross-world .cw-primary');
+    button.click(); button.click();
+  }, cupid);
+  await expect(page.locator('#cross-world')).toHaveAttribute('aria-busy','true');
+  await page.keyboard.press('Tab'); await expect(page.locator('#cross-world')).toBeFocused();
+  expect(await page.evaluate(() => window.crossingSaves)).toBe(1);
+  await page.evaluate(() => window.rejectCrossingSave(new Error('storage unavailable')));
+  await expect(page.locator('.cw-note')).toContainText('저장하지 못했습니다');
+  await expect(page.locator('#cross-world .cw-primary')).toBeEnabled();
+  await expect(page.locator('#cross-world .cw-primary')).toBeFocused();
+});
+
+test('failed navigation restores sound and focus without exposing the old screen', async ({page}) => {
+  await boot(page); await page.keyboard.press('Escape');
+  await page.evaluate(cupid => {
+    window.crossingReturnCount = 0;
+    window.CrossWorld.show({world:cupid ? 'nevergrad' : 'cupid', lang:'ko', departure:true,
+      image:cupid ? 'assets/images/background/riin_lab_pills.jpg' : 'assets/images/background/cg_gate_bloom.jpg',
+      url:'http://[', save:() => true, onReturn:() => window.crossingReturnCount++});
+  },cupid);
+  await page.locator('#cross-world .cw-primary').click();
+  await expect(page.locator('#cross-world')).toHaveClass(/cw-out/);
+  expect(await page.locator('#cross-world').evaluate(el => getComputedStyle(el).opacity)).toBe('1');
+  await expect(page.locator('.cw-note')).toContainText('다시 눌러');
+  await expect(page.locator('#cross-world .cw-primary')).toBeFocused();
+  expect(await page.evaluate(() => window.crossingReturnCount)).toBe(1);
+});
+
+test('closing a pending departure prevents later save completion from navigating', async ({page}) => {
+  await boot(page); await page.keyboard.press('Escape');
+  await page.evaluate(cupid => {
+    window.crossingLeft = false;
+    window.CrossWorld.show({world:cupid ? 'nevergrad' : 'cupid', lang:'ko', departure:true,
+      image:cupid ? 'assets/images/background/riin_lab_pills.jpg' : 'assets/images/background/cg_gate_bloom.jpg',
+      url:'https://example.invalid/', save:() => new Promise(resolve => window.finishCrossingSave = resolve),
+      onLeave:() => window.crossingLeft = true});
+  },cupid);
+  await page.locator('#cross-world .cw-primary').click();
+  await page.evaluate(async () => { window.CrossWorld.show({}).close(); window.finishCrossingSave(true); await Promise.resolve(); });
+  await expect(page.locator('#cross-world')).toHaveCount(0);
+  expect(await page.evaluate(() => window.crossingLeft)).toBe(false);
+});
+
+test('unavailable crossing artwork leaves readable choices and no broken-image icon', async ({page}) => {
+  await boot(page); await page.keyboard.press('Escape');
+  await page.evaluate(() => window.CrossWorld.show({world:'nevergrad',lang:'ko',image:'/missing-crossing-art.jpg'}));
+  await expect(page.locator('#cross-world')).toHaveClass(/cw-image-error/);
+  await expect(page.locator('#cross-world img')).toBeHidden();
+  await expect(page.locator('#cross-world .cw-primary')).toBeEnabled();
+  await page.keyboard.press('Escape'); await expect(page.locator('#cross-world')).toHaveCount(0);
+});
+
+test('Korean crossing overrides an old English preference and browser locale', async ({page}) => {
+  await page.addInitScript(() => localStorage.setItem('cupid:language','en'));
+  await boot(page,'ko');
+  await expect(page.locator('#cw-title')).toHaveText('교문 앞에서');
+  await expect(page.locator('html')).toHaveAttribute('lang','ko');
+  expect(await page.evaluate(() => window.GAME_LANG)).toBe('ko');
+  expect(await page.evaluate(() => window.CupidStorage.getItem('cupid:language'))).toBe('ko');
+});

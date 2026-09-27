@@ -12,6 +12,11 @@
         try {
             if (/bot|crawl|spider|slurp|facebookexternalhit|mediapartners/i.test(navigator.userAgent)) return;
             var K = 'cupid:language', P = 'ko';
+            // A Korean crossing is an explicit entry, just like index-ja/en/etc.
+            if (new URLSearchParams(location.search).get('gate') === '1') {
+                window.CupidStorage.setItem(K, P);
+                return;
+            }
             var M = { ko: '/', en: 'index-en', es: 'index-es', ja: 'index-ja', fr: 'index-fr', de: 'index-de', pt: 'index-pt' };
             var s = window.CupidStorage.getItem(K);
             if (!s) {
@@ -44,7 +49,7 @@
         };
     </script>
     <script src="assets/js/browser-check.js?v=2.9.9" defer></script>
-    <script src="assets/js/modal-accessibility.js?v=2.9.269" defer></script>
+    <script src="assets/js/modal-accessibility.js?v=2.9.270" defer></script>
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -997,11 +1002,11 @@
     <div id="landing-container">
         <!-- Title Heroines -->
         <div class="title-heroines">
-            <img src="/api/media?asset=assets%2Fimages%2Fcharacters%2Fdain_normal.webp&amp;v=2.9.269" alt="다인 - Cupid 히로인" class="title-heroine pos-1" loading="eager">
-            <img src="/api/media?asset=assets%2Fimages%2Fcharacters%2Fteacher_normal.webp&amp;v=2.9.269" alt="담임 선생님 - Cupid 히로인" class="title-heroine pos-2" loading="eager">
-            <img src="/api/media?asset=assets%2Fimages%2Fcharacters%2Fseyoun_normal.webp&amp;v=2.9.269" alt="서연 - Cupid 히로인" class="title-heroine pos-3" loading="eager">
-            <img src="/api/media?asset=assets%2Fimages%2Fcharacters%2Fnurse_normal.webp&amp;v=2.9.269" alt="보건 선생님 - Cupid 히로인" class="title-heroine pos-4" loading="eager">
-            <img src="/api/media?asset=assets%2Fimages%2Fcharacters%2Fyuna_normal.webp&amp;v=2.9.269" alt="유나 - Cupid 히로인" class="title-heroine pos-5" loading="eager">
+            <img src="/api/media?asset=assets%2Fimages%2Fcharacters%2Fdain_normal.webp&amp;v=2.9.270" alt="다인 - Cupid 히로인" class="title-heroine pos-1" loading="eager">
+            <img src="/api/media?asset=assets%2Fimages%2Fcharacters%2Fteacher_normal.webp&amp;v=2.9.270" alt="담임 선생님 - Cupid 히로인" class="title-heroine pos-2" loading="eager">
+            <img src="/api/media?asset=assets%2Fimages%2Fcharacters%2Fseyoun_normal.webp&amp;v=2.9.270" alt="서연 - Cupid 히로인" class="title-heroine pos-3" loading="eager">
+            <img src="/api/media?asset=assets%2Fimages%2Fcharacters%2Fnurse_normal.webp&amp;v=2.9.270" alt="보건 선생님 - Cupid 히로인" class="title-heroine pos-4" loading="eager">
+            <img src="/api/media?asset=assets%2Fimages%2Fcharacters%2Fyuna_normal.webp&amp;v=2.9.270" alt="유나 - Cupid 히로인" class="title-heroine pos-5" loading="eager">
         </div>
         <div class="content">
             <h1 class="visual-h1">CUPID<span class="sr-only"> - 무료 웹 비주얼노벨 | 5일간의 학원 로맨스</span></h1>
@@ -1280,7 +1285,7 @@
     </script>
 
     <!-- 게임 스크립트 (동적 로더) -->
-<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.269&history=20260926-pills"></script>
+<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.270&history=20260926-pills"></script>
 
     <script>
         // Initialize SoundManager + Enable Buttons (게임 스크립트 로드 완료 후)

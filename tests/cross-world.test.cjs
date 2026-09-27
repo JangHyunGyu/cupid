@@ -44,3 +44,22 @@ test('Cupid completion cookies reach sibling games and never claim a lookalike d
     assert.match(cookies[0],/SameSite=Lax.*Secure/);
   }
 });
+
+test('consecutive lab dialogue keeps one reveal and never filters the dialogue container',()=>{
+  const nodes = new Map();
+  const node = () => ({classList:{values:new Set(),add(...v){v.forEach(x=>this.values.add(x));},remove(...v){v.forEach(x=>this.values.delete(x));}}});
+  for (const id of ['background-layer','game-container']) nodes.set(id,node());
+  const env = {window:{matchMedia:()=>({matches:false})},document:{getElementById:id=>nodes.get(id),createElement:()=>({}),head:{appendChild(el){nodes.set(el.id,el);}}}};
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../assets/js/modules/GameEngine.js'),'utf8'),env);
+  const engine = Object.create(env.window.GameEngine.prototype);
+  let sounds=0; engine._crackleAndBuzz=()=>sounds++;
+  engine._applyLabGlitch({labGlitch:'lab-flicker'});
+  engine._applyLabGlitch({labGlitch:'lab-dark'});
+  const layer=nodes.get('background-layer');
+  let restarts=0; const originalAdd=layer.classList.add.bind(layer.classList);
+  layer.classList.add=(...args)=>{restarts++;originalAdd(...args);};
+  engine._applyLabGlitch({labGlitch:'lab-dark'});
+  assert.equal(restarts,0); assert.equal(sounds,1);
+  assert.equal(nodes.get('game-container').classList.values.size,0);
+  engine._applyLabGlitch({}); assert.equal(layer.classList.values.size,0);
+});
