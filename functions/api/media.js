@@ -2,6 +2,8 @@ import { contentTypeForPath } from '../_lib/media-crypto.js';
 import { toLogicalAssetId, isPublicLogicalId, jsonResponse } from '../_lib/media-assets.js';
 import { MEDIA_MANIFEST } from '../_lib/media-manifest.js';
 import { readMediaSession, sameOriginRequest } from '../_lib/media-session.js';
+import { readMediaGrant } from '../_lib/media-grant.js';
+import { mediaCacheKey } from '../_lib/media-storage.js';
 
 export async function onRequestGet(context) {
   const { request, env } = context;
@@ -22,7 +24,8 @@ export async function onRequestGet(context) {
     const claimed = request.headers.get('X-Cupid-Guest') || url.searchParams.get('guest') || url.searchParams.get('guestId');
     if (!guest || (claimed && claimed !== guest)) return jsonResponse({ error: 'unauthorized' }, 401);
     if (!env.DB) return jsonResponse({ error: 'db_unavailable' }, 503);
-    const unlocked = await env.DB.prepare(
+    const receipt = await readMediaGrant(request, env, guest);
+    const unlocked = receipt?.has(id) || await env.DB.prepare(
       'SELECT 1 AS ok FROM cupid_gallery_unlocks WHERE guest_id = ? AND asset_id = ? LIMIT 1'
     ).bind(guest, id).first();
     if (!unlocked) return jsonResponse({ error: 'forbidden' }, 403);
@@ -34,7 +37,7 @@ export async function onRequestGet(context) {
   const file = entry.files.find(item => requestedExt && item.path.endsWith(requestedExt))
     || entry.files.find(item => item.path.endsWith('.webp')) || entry.files[0];
   // This synthetic key is never served directly. Authorization always precedes cache lookup.
-  const cacheKey = new Request(url.origin + '/api/media?__internal=r2-v1-' + file.sha256);
+  const cacheKey = mediaCacheKey(url.origin, file);
   const cache = globalThis.caches?.default;
   const versioned = url.searchParams.get('v') === entry.version;
   const responseHeaders = {

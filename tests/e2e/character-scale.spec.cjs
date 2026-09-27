@@ -107,6 +107,8 @@ test('Yuna framing survives phone rotation, dynamic height, touch and animation'
     // Mobile emulation settles viewport CSS after setViewportSize resolves.
     await page.waitForFunction(({ width, height }) => innerWidth === width && innerHeight === height
       && Math.abs(document.querySelector('#char-center').getBoundingClientRect().height - height) < 1
+      && Math.abs(document.querySelector('#character-layer').getBoundingClientRect().bottom
+        - height * (width > height && height <= 500 ? 1.1 : 1)) < 1
       && matchMedia('(orientation: portrait)').matches === (height >= width), { width, height });
     const results = [];
     for (const expression of ['normal','smile']) {
@@ -116,6 +118,7 @@ test('Yuna framing survives phone rotation, dynamic height, touch and animation'
       }, expression);
       results.push(await measure(page.locator('#char-center img')));
     }
+    await info.attach(`rotation-${width}x${height}.json`, { body: JSON.stringify(results), contentType: 'application/json' });
     expect(Math.abs(results[0].crown - results[1].crown)).toBeLessThan(height * 0.01);
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
   }

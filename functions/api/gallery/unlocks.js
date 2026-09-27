@@ -15,6 +15,8 @@ import {
 } from '../../_lib/media-assets.js';
 import { readMediaSession, sameOriginRequest, readSmallJson } from '../../_lib/media-session.js';
 import { MEDIA_MANIFEST } from '../../_lib/media-manifest.js';
+import { createMediaGrant } from '../../_lib/media-grant.js';
+import { warmGrantedMedia } from '../../_lib/media-storage.js';
 
 const BATCH_CAP = 100;
 
@@ -123,11 +125,17 @@ export async function onRequestPost(context) {
        ON CONFLICT(guest_id, asset_id) DO NOTHING`
     ).bind(guestId, assetId, now)
   );
+  // Overlap storage with the grant write, rather than starting both after it.
+  // No bytes/receipt reach the caller unless the D1 transaction commits.
+  if (context.waitUntil && logicalIds.length <= 3) context.waitUntil(warmGrantedMedia(context, logicalIds.map(id => {
+    const files = MEDIA_MANIFEST[id].files;
+    return files.find(file => file.path.endsWith('.webp')) || files[0];
+  })));
   await env.DB.batch(stmts);
 
   return jsonResponse({
     guestId,
     upserted: logicalIds.length,
     assets: logicalIds
-  }, 200, corsHeaders(request));
+  }, 200, { ...corsHeaders(request), 'set-cookie': await createMediaGrant(env, guestId, logicalIds) });
 }

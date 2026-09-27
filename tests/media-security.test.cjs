@@ -67,7 +67,7 @@ async function fixture() {
   const request = (asset = id, headers = {}, query = '') => new Request(origin + '/api/media?asset=' + asset
     + '&v=' + 'a'.repeat(24) + query, { headers: { Cookie: cookie, ...headers } });
   const serve = req => media.onRequestGet({ request: req || request(), env, waitUntil: p => writes.push(p) });
-  const post = (assets, headers = {}, guest = guestId) => unlock.onRequestPost({ env,
+  const post = (assets, headers = {}, guest = guestId) => unlock.onRequestPost({ env, waitUntil: p => writes.push(p),
     request: new Request(origin + '/api/gallery/unlocks', { method: 'POST',
       headers: { Origin: origin, Cookie: cookie, 'Content-Type': 'application/json', ...headers },
       body: JSON.stringify({ guestId: guest, assets }) }) });
@@ -109,10 +109,11 @@ test('warm edge cache saves private R2 reads but never bypasses current unlock c
   try {
     assert.equal((await f.serve()).status, 403);
     assert.equal((await f.post([f.id])).status, 200);
+    await Promise.all(f.writes);
     const first = await f.serve();
     assert.equal(first.status, 200);
-    assert.equal(first.headers.get('x-cupid-media-cache'), 'MISS');
-    assert.match(first.headers.get('server-timing'), /storage;dur=/);
+    assert.equal(first.headers.get('x-cupid-media-cache'), 'HIT', 'grant warms the first image in parallel');
+    assert.match(first.headers.get('server-timing'), /edge;dur=/);
     assert.doesNotMatch(first.headers.get('server-timing'), /decrypt/);
     assert.equal(first.headers.get('x-cupid-media-source'), 'private-r2');
     assert.deepEqual(Buffer.from(await first.arrayBuffer()), f.plain);
@@ -136,6 +137,45 @@ test('warm edge cache saves private R2 reads but never bypasses current unlock c
     assert.equal((await f.serve()).status, 401, 'key rotation invalidates signed sessions');
     f.env.CUPID_MEDIA_KEY = oldKey;
   } finally { f.restore(); }
+});
+
+test('signed grant receipt avoids the immediate D1 read and is scoped, tamper proof and short lived', async () => {
+  const f = await fixture();
+  try {
+    const grant = await f.post([f.id]);
+    const receipt = grant.headers.get('set-cookie').split(';')[0];
+    assert.match(grant.headers.get('set-cookie'), /Secure; HttpOnly; SameSite=Strict; Max-Age=120/);
+    await Promise.all(f.writes);
+    const withReceipt = f.cookie + '; ' + receipt;
+    assert.equal((await f.serve(f.request(f.id, { Cookie: withReceipt }))).status, 200);
+    assert.equal(f.counters().checks, 0, 'first render does not repeat the committed D1 grant lookup');
+    assert.equal((await f.serve(f.request('characters/yuna_shy', { Cookie: withReceipt }))).status, 403);
+    f.grants.clear();
+    assert.equal((await f.serve(f.request(f.id, { Cookie: withReceipt + '0' }))).status, 403);
+    const another = await f.create();
+    assert.equal((await f.serve(f.request(f.id, { Cookie: another.headers.get('set-cookie').split(';')[0] + '; ' + receipt }))).status, 403);
+    const now = Date.now;
+    try {
+      Date.now = () => now() + 121000;
+      assert.equal((await f.serve(f.request(f.id, { Cookie: withReceipt }))).status, 403);
+    } finally { Date.now = now; }
+  } finally { f.restore(); }
+});
+
+test('slow optional cache warming does not delay the committed grant response', async () => {
+  const f = await fixture();
+  let release;
+  try {
+    const hold = new Promise(resolve => { release = resolve; });
+    let warmingStarted = false;
+    f.env.MEDIA_BUCKET.get = async () => { warmingStarted = true; await hold; return null; };
+    const originalBatch = f.env.DB.batch;
+    f.env.DB.batch = async statements => { await Promise.resolve(); assert.ok(warmingStarted); return originalBatch(statements); };
+    const timeout = new Promise((_, reject) => { const timer = setTimeout(() => reject(new Error('Grant waited for storage')), 1000); timer.unref(); });
+    assert.equal((await Promise.race([f.post([f.id]), timeout])).status, 200);
+    f.env.DB.batch = async () => { throw new Error('D1 write failed'); };
+    await assert.rejects(f.post([f.id]), /D1 write failed/, 'a failed grant cannot issue a receipt');
+  } finally { release(); await Promise.all(f.writes); f.restore(); }
 });
 
 test('unknown paths and changed R2 objects fail closed; public normals need no session secret', async () => {
@@ -166,6 +206,8 @@ test('cold delivery starts streaming before the whole image or cache write is av
   const f = await fixture();
   try {
     await f.post([f.id]);
+    await Promise.all(f.writes);
+    f.cacheEntries.clear();
     let finish;
     const remaining = new Promise(resolve => { finish = resolve; });
     const originalGet = f.env.MEDIA_BUCKET.get;
