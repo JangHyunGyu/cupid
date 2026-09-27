@@ -1283,15 +1283,15 @@
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",
-        "text": "*Nuestros dedos vuelven a tocarse bajo la manta. La lámpara sigue encendida.*"
+        "text": "*Nuestros dedos vuelven a tocarse bajo la manta.*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
-        "text": "*Trago la pastilla negra. No sabe dulce y la garganta se me enfría.*"
+        "text": "*Al tragar la pastilla negra, la garganta se me enfría.*"
     },
     "nurse_perfect_pills_black_ask": {
         "name": "{name}",
-        "text": "Sabe raro."
+        "text": "¿Por qué siento tanto frío en la garganta?"
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",

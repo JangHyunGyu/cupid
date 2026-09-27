@@ -1413,15 +1413,15 @@
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",
-        "text": "*이불 속에서 손가락이 다시 맞닿는다. 스탠드는 여전히 켜져 있다.*"
+        "text": "*이불 속에서 손가락이 다시 맞닿는다.*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
-        "text": "*검은 알약을 삼킨다. 단맛은 나지 않고 목 안이 차가워진다.*"
+        "text": "*검은 알약을 삼키자 목 안이 차가워진다.*"
     },
     "nurse_perfect_pills_black_ask": {
         "name": "{name}",
-        "text": "맛이 이상해."
+        "text": "목이 왜 이렇게 차갑지?"
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",

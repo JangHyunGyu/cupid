@@ -1283,15 +1283,15 @@
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",
-        "text": "*Os nossos dedos voltam a tocar-se debaixo do cobertor. O candeeiro continua aceso.*"
+        "text": "*Os nossos dedos voltam a tocar-se debaixo do cobertor.*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
-        "text": "*Engulo o comprimido preto. Não tem sabor doce e a garganta fica fria.*"
+        "text": "*Ao engolir o comprimido preto, sinto a garganta ficar fria.*"
     },
     "nurse_perfect_pills_black_ask": {
         "name": "{name}",
-        "text": "O gosto está estranho."
+        "text": "Por que minha garganta está tão fria?"
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",

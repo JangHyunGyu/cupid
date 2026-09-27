@@ -1283,15 +1283,15 @@
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",
-        "text": "*Nos doigts se touchent à nouveau sous la couverture. La lampe est toujours allumée.*"
+        "text": "*Nos doigts se touchent à nouveau sous la couverture.*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
-        "text": "*J’avale le comprimé noir. Aucun goût sucré, et ma gorge se refroidit.*"
+        "text": "*J’avale le comprimé noir et ma gorge se refroidit.*"
     },
     "nurse_perfect_pills_black_ask": {
         "name": "{name}",
-        "text": "Le goût est bizarre."
+        "text": "Pourquoi j’ai si froid dans la gorge ?"
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",

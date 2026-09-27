@@ -1283,15 +1283,15 @@
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",
-        "text": "*Unter der Decke berühren sich unsere Finger wieder. Die Lampe brennt noch.*"
+        "text": "*Unter der Decke berühren sich unsere Finger wieder.*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
-        "text": "*Ich schlucke die schwarze Tablette. Sie schmeckt nicht süß, und mein Hals wird kalt.*"
+        "text": "*Als ich die schwarze Tablette schlucke, wird mein Hals kalt.*"
     },
     "nurse_perfect_pills_black_ask": {
         "name": "{name}",
-        "text": "Das schmeckt falsch."
+        "text": "Warum fühlt sich mein Hals so kalt an?"
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",

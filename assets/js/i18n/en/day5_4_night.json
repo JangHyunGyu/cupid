@@ -1283,15 +1283,15 @@
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",
-        "text": "*Our fingers touch again beneath the blanket. The lamp is still on.*"
+        "text": "*Our fingers touch again beneath the blanket.*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
-        "text": "*I swallow the black pill. There is no sweetness, and my throat grows cold.*"
+        "text": "*As I swallow the black pill, my throat grows cold.*"
     },
     "nurse_perfect_pills_black_ask": {
         "name": "{name}",
-        "text": "This tastes wrong."
+        "text": "Why does my throat feel so cold?"
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",

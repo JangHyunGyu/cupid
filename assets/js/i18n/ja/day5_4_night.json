@@ -1283,15 +1283,15 @@
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",
-        "text": "*布団の中で、また指先が触れ合う。スタンドの明かりはまだついている。*"
+        "text": "*布団の中で、また指先が触れ合う。*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
-        "text": "*黒い錠剤を飲み込む。甘さはなく、喉の奥が冷たくなる。*"
+        "text": "*黒い錠剤を飲み込むと、喉の奥が冷たくなる。*"
     },
     "nurse_perfect_pills_black_ask": {
         "name": "{name}",
-        "text": "味が変だ。"
+        "text": "なんでこんなに喉が冷たいんだろう？"
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",
