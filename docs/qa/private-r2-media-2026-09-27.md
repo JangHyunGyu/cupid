@@ -40,6 +40,11 @@ path 404s, R2 public-domain denial, and desktop/mobile browser rendering.
 Store actual timing and deployment evidence outside the published directory.
 
 ## Limits
+The first production probe found old encrypted static objects still present in
+the CDN after their removal from the new build. Explicit static-path Functions
+now deny character and registered CG URLs before static delivery, with a
+regression ensuring ordinary scene backgrounds continue to work.
+
 First-request latency still includes authorization, R2 lookup and transfer.
 Removing decryption does not prove a fixed end-to-end speedup; Server-Timing
 storage measures headers, not the whole transfer. Unlock grants remain

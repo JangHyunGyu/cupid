@@ -7,6 +7,22 @@ const root = path.resolve(__dirname, '..');
 const load = name => import(pathToFileURL(path.join(root, name)).href);
 const origin = 'https://cupid.test';
 
+test('legacy protected static URLs are denied before CDN lookup while ordinary backgrounds remain public', async () => {
+  const sprites = await load('functions/assets/images/characters/[[path]].js');
+  const backgrounds = await load('functions/assets/images/background/[[path]].js');
+  assert.equal(sprites.onRequest().status, 404);
+  let staticReads = 0;
+  const next = () => { staticReads++; return new Response('public-background'); };
+  for (const suffix of ['ending_perfect_seoyeon.webp', 'ending_perfect_seoyeon.png?v=old', '%65nding_perfect_seoyeon.webp']) {
+    const response = backgrounds.onRequest({ request: new Request(origin + '/assets/images/background/' + suffix), next });
+    assert.equal(response.status, 404);
+    assert.equal(response.headers.get('cache-control'), 'no-store');
+  }
+  assert.equal(staticReads, 0);
+  assert.equal((await backgrounds.onRequest({request: new Request(origin + '/assets/images/background/classroom.webp'), next})).status, 200);
+  assert.equal(staticReads, 1);
+});
+
 async function fixture() {
   const [sessions, media, unlock, { MEDIA_MANIFEST }] = await Promise.all([
     load('functions/_lib/media-session.js'), load('functions/api/media.js'),
