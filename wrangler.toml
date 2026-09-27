@@ -1,5 +1,6 @@
-# Cloudflare Pages + D1 bindings for Cupid media unlock gating.
-# Deploy is Git-connected Pages from main. Set secret CUPID_MEDIA_KEY in the
+# Cloudflare Pages + D1 + private R2 bindings for Cupid media unlock gating.
+# Git-connected Pages: build `npm run build`, publish `dist` from main.
+# CUPID_MEDIA_KEY is retained ONLY as the existing session-signing seed in the
 # Pages project (Dashboard or `wrangler pages secret put CUPID_MEDIA_KEY`).
 #
 # Create DB (once):
@@ -9,7 +10,11 @@
 
 name = "cupid"
 compatibility_date = "2025-09-01"
-pages_build_output_dir = "."
+pages_build_output_dir = "dist"
+
+[[r2_buckets]]
+binding = "MEDIA_BUCKET"
+bucket_name = "cupid-media-private"
 
 [[d1_databases]]
 binding = "DB"

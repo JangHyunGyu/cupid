@@ -6,6 +6,7 @@ tmp/
 .wrangler/
 test-results/
 playwright-report/
+dist/
 
 # Media encryption key (never commit)
 .cupid-media-key

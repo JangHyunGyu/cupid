@@ -1,4 +1,4 @@
-import { parseMediaKey, importAesKey, decryptCupidEnc1, isEncryptedBytes, contentTypeForPath } from '../_lib/media-crypto.js';
+import { contentTypeForPath } from '../_lib/media-crypto.js';
 import { toLogicalAssetId, isPublicLogicalId, jsonResponse } from '../_lib/media-assets.js';
 import { MEDIA_MANIFEST } from '../_lib/media-manifest.js';
 import { readMediaSession, sameOriginRequest } from '../_lib/media-session.js';
@@ -12,11 +12,12 @@ export async function onRequestGet(context) {
   if (!entry) return jsonResponse({ error: 'invalid_asset' }, 400);
   const publicAsset = isPublicLogicalId(id);
   if (!sameOriginRequest(request)) return jsonResponse({ error: 'forbidden_origin' }, 403);
-  if (!env.CUPID_MEDIA_KEY) return jsonResponse({ error: 'media_unavailable' }, 503);
+  if (!env.MEDIA_BUCKET) return jsonResponse({ error: 'media_unavailable' }, 503);
 
   const timings = [];
   let started = performance.now();
   if (!publicAsset) {
+    if (!env.CUPID_MEDIA_KEY) return jsonResponse({ error: 'media_unavailable' }, 503);
     const guest = await readMediaSession(request, env);
     const claimed = request.headers.get('X-Cupid-Guest') || url.searchParams.get('guest') || url.searchParams.get('guestId');
     if (!guest || (claimed && claimed !== guest)) return jsonResponse({ error: 'unauthorized' }, 401);
@@ -28,15 +29,12 @@ export async function onRequestGet(context) {
   }
   timings.push(`authorize;dur=${(performance.now() - started).toFixed(2)}`);
 
-  // Pick only a generated, encrypted file; no speculative extension fetches.
+  // Only manifest-listed objects can be read; never accept a caller-supplied R2 key.
   const requestedExt = asset.match(/\.(webp|png|jpe?g)$/i)?.[0].toLowerCase();
   const file = entry.files.find(item => requestedExt && item.path.endsWith(requestedExt))
     || entry.files.find(item => item.path.endsWith('.webp')) || entry.files[0];
-  const keyBytes = parseMediaKey(env.CUPID_MEDIA_KEY);
-  const keyDigest = new Uint8Array(await crypto.subtle.digest('SHA-256', keyBytes));
-  const keyVersion = Array.from(keyDigest, byte => byte.toString(16).padStart(2, '0')).join('');
   // This synthetic key is never served directly. Authorization always precedes cache lookup.
-  const cacheKey = new Request(url.origin + '/api/media?__internal=v2-' + file.hash + '-' + keyVersion);
+  const cacheKey = new Request(url.origin + '/api/media?__internal=r2-v1-' + file.sha256);
   const cache = globalThis.caches?.default;
   const versioned = url.searchParams.get('v') === entry.version;
   const responseHeaders = {
@@ -48,6 +46,7 @@ export async function onRequestGet(context) {
     'cross-origin-resource-policy': 'same-origin',
     'x-cupid-asset': id,
     'x-cupid-media-version': entry.version,
+    'x-cupid-media-source': 'private-r2',
     ...(publicAsset ? {} : { vary: 'Cookie' })
   };
   started = performance.now();
@@ -60,27 +59,26 @@ export async function onRequestGet(context) {
 
   try {
     started = performance.now();
-    const staticUrl = new URL('/' + file.path, url.origin);
-    const response = env.ASSETS ? await env.ASSETS.fetch(new Request(staticUrl)) : await fetch(staticUrl);
-    if (!response.ok) return jsonResponse({ error: 'asset_missing' }, 404);
-    const packed = new Uint8Array(await response.arrayBuffer());
-    if (!isEncryptedBytes(packed)) return jsonResponse({ error: 'invalid_media' }, 503);
-    const digest = new Uint8Array(await crypto.subtle.digest('SHA-256', packed));
-    const hash = Array.from(digest, byte => byte.toString(16).padStart(2, '0')).join('');
-    if (hash !== file.hash) return jsonResponse({ error: 'media_version_mismatch' }, 503);
-    timings.push(`asset;dur=${(performance.now() - started).toFixed(2)}`);
-    started = performance.now();
-    const plain = await decryptCupidEnc1(packed, await importAesKey(keyBytes));
-    timings.push(`decrypt;dur=${(performance.now() - started).toFixed(2)}`);
-    if (cache) {
-      const write = cache.put(cacheKey, new Response(plain, { headers: {
-        'content-type': responseHeaders['content-type'], 'cache-control': 'public, max-age=86400'
-      } })).catch(() => {});
-      context.waitUntil(write);
+    const object = await env.MEDIA_BUCKET.get(file.key);
+    if (!object) return jsonResponse({ error: 'asset_missing' }, 404);
+    // Uploads are verified single-part objects. Check their identity without buffering
+    // the image; immutable SHA-256 keys are never overwritten with different bytes.
+    if (object.etag !== file.etag || object.size !== file.size || !object.body) {
+      await object.body?.cancel();
+      return jsonResponse({ error: 'media_version_mismatch' }, 503);
     }
-    return new Response(plain, { headers: {
-      ...responseHeaders, 'x-cupid-media-cache': 'MISS', 'server-timing': timings.join(', ')
+    timings.push(`storage;dur=${(performance.now() - started).toFixed(2)}`);
+    const response = new Response(object.body, { headers: {
+      ...responseHeaders, 'content-length': String(object.size),
+      'x-cupid-media-cache': 'MISS', 'server-timing': timings.join(', ')
     } });
+    if (cache) {
+      const cachedResponse = response.clone();
+      cachedResponse.headers.set('cache-control', 'public, max-age=86400');
+      cachedResponse.headers.delete('vary');
+      context.waitUntil(cache.put(cacheKey, cachedResponse).catch(() => {}));
+    }
+    return response;
   } catch (_) {
     return jsonResponse({ error: 'media_unavailable' }, 503);
   }

@@ -1,70 +1,73 @@
-# Cupid media unlock gating
+# Cupid private media delivery
 
-## What this does
-Sensitive character sprites and gallery CG files are stored encrypted at rest
-(`CUPIDENC1` + AES-256-GCM). Browsers load them through `GET /api/media` only
-after a D1 unlock row exists for the guest.
+## Storage and delivery
+Character sprites and gallery CG originals are normal PNG/WebP/JPEG objects in
+the private `cupid-media-private` R2 bucket. Its managed r2.dev URL and all custom
+domains must remain disabled. Only the Pages `MEDIA_BUCKET` binding reads them.
+There is no application image encryption or decryption on the delivery path.
 
-## Security boundary
-The server issues its own random guest ID in a signed `__Host-cupid-media`
-cookie (Secure, HttpOnly, SameSite=Strict). It never signs a client-selected ID.
-The signing key is derived with HKDF from the existing media secret, using a
-separate purpose label. A copied guest URL, forged cookie, mismatched guest ID,
-or cross-origin browser request does not grant access. Mutation endpoints require
-an exact same-origin Origin header. Unlock payloads are bounded to 16 KiB and
-100 known encrypted assets; responses and session creation are never cached.
+`GET /api/media` accepts only manifest-listed logical asset IDs, never arbitrary
+object keys. Protected requests validate the signed session and D1 unlock BEFORE
+edge-cache access. Cold responses stream the R2 body after checking size and the
+expected single-part upload ETag. No full-image buffering, hashing or decryption
+delays delivery. Uploads use immutable SHA-256 keys and full readback verification.
+Five normal title sprites are intentionally public through the API.
 
-Progression is still anonymous and client-reported. A determined player can
-obtain their own valid session and fabricate progression grants. This change
-does not claim server-authoritative gameplay or DRM. Preventing that requires
-server validation of the game state and all progression transitions, including
-legacy saves. Already delivered images can be saved; public Git history may
-also retain plaintext ancestors. Editing masters remain in the repository but
-their deployed `/assets/images/masters/*` URLs return 404.
+## Public build boundary
+`npm run build` publishes only allowlisted runtime files in `dist`. All protected
+images, editing masters, repository configuration, tests, maintenance scripts and
+credentials are excluded. Direct original paths return 404. Pages compiles
+`functions/` separately. Never deploy the repository root again.
 
-## Secrets / D1
-1. Generate a 32-byte key: `openssl rand -base64 32 > .cupid-media-key`
-2. Encrypt: `npm run media:encrypt` (uses env `CUPID_MEDIA_KEY` or `.cupid-media-key`)
-3. Pages secret: `npx wrangler pages secret put CUPID_MEDIA_KEY --project-name cupid`
-4. D1: create `cupid-gallery-unlocks`, put `database_id` in `wrangler.toml`, apply `scripts/sql/0001_gallery_unlocks.sql`
+Existing CUPIDENC1 files remain encrypted OFFLINE source archives for audits,
+local preview and rollback. Production neither deploys nor reads them. Do not
+decrypt archives in the public repository; plaintext originals belong outside it.
+Historical Git commits and older deployments may contain old assets. This
+migration does not rewrite history or retract previously published copies.
 
-## Client
-- `cupid_guest_id` mirrors the server session ID for private cache partitioning.
-- On upgrade, existing local gallery achievements are re-synchronized into the
-  new server-issued identity; unsigned legacy IDs cannot read the old ledger.
-- Unlocks synced from `cupid_gallery` on boot and on meet / CG / expression unlock
-- Locked gallery cards and unmet characters never fetch real media
-- Reads, error recovery and prefetch never issue an implicit unlock. The scene
-  renderer explicitly grants only expressions of the scene actually entered.
-- Concurrent grants share a batch and a per-image acknowledgement promise.
-- Preloading considers only previously granted images in an unconditional next
-  scene, at most two requests in flight and four retained image references;
-  Save-Data disables it. Decoding completes before the renderer swaps images.
+## Sessions and progression
+The server issues a random guest identity in a signed `__Host-cupid-media` cookie
+(Secure, HttpOnly, SameSite=Strict). Copied URLs, forged cookies, mismatched guest
+IDs and cross-origin calls do not grant access. Mutations require exact same-origin
+Origin headers and bounded payloads. `CUPID_MEDIA_KEY` remains only as the HKDF
+session-signing seed, preserving existing signed identities and gallery progress.
 
-## Caching and release process
-`npm run build` generates ciphertext hashes and per-image content versions in
-the server manifest and client gate. `npm run build:check` rejects stale manifests
-or unencrypted protected files. Encrypt changed delivery assets before building.
-Unchanged image URLs remain stable across application releases; public title
-images use the same content versions and omit guest IDs.
+Progression is still anonymous and client-reported. A player with their own valid
+session can fabricate progression grants. Preventing this requires separate
+server-authoritative progression, including legacy save migration. This storage
+migration preserves that existing boundary; it is not DRM. Already delivered
+images can be saved, and grant revocation cannot erase downloaded browser copies.
 
-Every protected network request validates the signed session and queries D1
-before looking up the internal edge cache. The cache key includes the ciphertext
-hash and secret fingerprint, so changed files and key rotations cannot reuse
-old plaintext. Internal cache keys cannot be fetched as media URLs. Cache writes
-use waitUntil and cache failures do not prevent delivery. Response headers expose
-HIT/MISS and Server-Timing for authorization, edge lookup, asset fetch and decryption,
-without exposing keys, cookies or player text.
+## Caching and rendering
+Per-image versions and guest-specific URLs stay unchanged during migration.
+The protected SW cache survives application releases and is bounded to 64 images.
+Failed requests and session/unlock responses are never persisted. Reads and
+recovery never implicitly grant an image. Explicit scene grants are acknowledged
+before rendering. Prefetch uses only already unlocked images, at most two
+concurrent requests/four retained images, and is disabled by Save-Data. Decoding
+finishes before the visible image swap.
 
-The browser uses private HTTP caching and a separate content-versioned service
-worker cache, limited to 64 images. Session/guest identity partitions private
-URLs. Invalid versions, failed responses and session/unlock API responses are
-not persisted by the service worker. Disk writes do not delay image responses.
-Browser caches retain previously delivered images; revoking a server grant does
-not erase an image that was already downloaded.
+The edge cache uses a content hash in an R2-specific namespace. Authorization
+still runs on every network request, including cache hits. Cache writes use
+waitUntil without delaying responses. Server-Timing reports authorization,
+edge lookup and storage-header latency. Storage timing does not measure full
+body transfer; there is no decrypt stage.
 
-## Verification
-`npm test` includes media session, authorization, edge-cache isolation, manifest,
-duplicate-grant, read-only loader and bounded-preload regressions. Run
-`npm run cache:check` after changes. Verify cold and warm responses independently,
-and confirm a locked session is still denied after another session warms the cache.
+## Updating protected assets
+1. Maintain source archives and matching plaintext originals in an external
+   private directory, preserving their `assets/images/...` relative paths.
+2. Set `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` in the environment.
+   Run `node scripts/upload-private-media.cjs <private-original-directory>`.
+   The tool rejects public buckets, verifies every upload by reading it back,
+   then writes `config/media-storage.json` after all objects succeed.
+3. Run `npm run build`, `npm test`, `npm run cache:check` and browser/media checks.
+   A source changed without matching uploaded catalog metadata fails the build.
+   Commit the catalog and generated manifest together.
+4. Push main. Pages runs `npm run build` and publishes `dist` with private R2,
+   existing D1 and session-secret bindings. Verify locked reads, cross-session
+   denial after warming the cache, direct-path denial and rendered images.
+
+## References
+- [R2 Worker API](https://developers.cloudflare.com/r2/api/workers/workers-api-reference/)
+- [R2 public access](https://developers.cloudflare.com/r2/buckets/public-buckets/)
+- [Pages R2 bindings](https://developers.cloudflare.com/pages/functions/bindings/#r2-buckets)

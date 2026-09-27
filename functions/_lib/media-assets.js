@@ -45,7 +45,7 @@ export const GALLERY_CG_BASES = Object.freeze([
 const CG_SET = new Set(GALLERY_CG_BASES);
 
 /**
- * Landing-page standing sprites. The files stay encrypted; these ids skip the
+ * Landing-page standing sprites. These private-storage objects skip the
  * unlock check so the title can paint before gallery state exists.
  */
 export const PUBLIC_LOGICAL_IDS = Object.freeze([

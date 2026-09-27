@@ -5,7 +5,7 @@ https://:project.pages.dev/*
 https://:version.:project.pages.dev/*
   X-Robots-Tag: noindex, nofollow
 
-# Repository sources are deployed as static files; keep them out of search results.
+# Runtime scripts and metadata are not search landing pages.
 /*.md
   X-Robots-Tag: noindex, nofollow
 

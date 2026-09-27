@@ -3,7 +3,7 @@
   "private": true,
   "version": "2.9.130",
   "scripts": {
-    "build": "node scripts/sync-build-metadata.cjs --write && node scripts/verify-project-structure.cjs",
+    "build": "node scripts/sync-build-metadata.cjs --write && node scripts/verify-project-structure.cjs && node scripts/build-public.cjs",
     "build:check": "node scripts/sync-build-metadata.cjs --check && node scripts/verify-project-structure.cjs",
     "scenario:sync": "node generate-scenario.js",
     "scenario:check": "node generate-scenario.js --check",
