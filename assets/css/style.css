@@ -415,7 +415,8 @@ html {
 
 /* 캐릭터 이미지 설정 */
 .char-slot img {
-    height: 95%;
+    --char-framing-scale: 1;
+    height: calc(95% * var(--char-framing-scale));
     width: auto;
     max-width: none;
     object-fit: contain;
@@ -455,6 +456,13 @@ html {
     --char-talk-duration: 1.55s;
     --char-talk-lift: -1.5px;
     --char-thinking-duration: 6.6s;
+}
+
+/* These five portraits have 93-94px of top padding on a 1536px canvas.
+   Match Yuna's normal framing without changing slot depth or idle transforms. */
+.char-slot img:is([src*="yuna_angry."], [src*="yuna_bored."],
+    [src*="yuna_sad."], [src*="yuna_shy."], [src*="yuna_smile."]) {
+    --char-framing-scale: 1.065;
 }
 
 .char-slot img[src*="dain_"] {
@@ -1874,7 +1882,7 @@ html[lang="pt"] #message {
     .char-slot img {
         width: auto !important;
         max-width: none !important;
-        height: 80%;
+        height: calc(80% * var(--char-framing-scale));
     }
 
     #char-left {

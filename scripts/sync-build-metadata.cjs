@@ -53,6 +53,10 @@ for (const page of config.localizedPages) {
         const relativePath = `${page}${suffix}.html`;
         const transforms = [
             content => content.replace(
+                /(assets\/css\/style\.css\?v=)[0-9.]+/g,
+                `$1${version}`
+            ),
+            content => content.replace(
                 /(assets\/js\/loaders\/(?:game|gallery)-loader\.js\?v=)[0-9.]+/g,
                 `$1${version}`
             ),
