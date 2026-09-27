@@ -53,6 +53,10 @@ for (const page of config.localizedPages) {
         const relativePath = `${page}${suffix}.html`;
         const transforms = [
             content => content.replace(
+                /(<head[^>]*>\s*)(?:<script src="assets\/js\/runtime-support\.js\?v=[^"]+"><\/script>\s*)?/i,
+                `$1<script src="assets/js/runtime-support.js?v=${version}"></script>\n    `
+            ),
+            content => content.replace(
                 /(assets\/css\/style\.css\?v=)[0-9.]+/g,
                 `$1${version}`
             ),

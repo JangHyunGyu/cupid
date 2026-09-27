@@ -184,8 +184,26 @@ class GameEngine {
     }
 
     _handleAsyncError(context, error) {
+        if (error?.name === 'ProgressConflictError') {
+            if (this._progressRecovery) return this._progressRecovery;
+            // Discard the stale action; never replay its rewards against the new revision.
+            this._resetAsyncControls();
+            this._progressRecovery = Promise.resolve()
+                .then(() => this.continueGame({ requireSave: true }))
+                .catch(recoveryError => {
+                    console.error('[GameEngine] progress recovery failed:', recoveryError);
+                    this._reportCaughtError(context, recoveryError, 'progress_recovery_failed');
+                    this._resetAsyncControls();
+                })
+                .finally(() => { this._progressRecovery = null; });
+            return this._progressRecovery;
+        }
         console.error(`[GameEngine] ${context} error:`, error);
         this._reportCaughtError(context, error, 'game_engine_async_error');
+        this._resetAsyncControls();
+    }
+
+    _resetAsyncControls() {
         this._isRendering = false;
         if (this.freeTalkSystem) this.freeTalkSystem.isProcessingChat = false;
         if (this.uiManager?.chatSendBtn) this.uiManager.chatSendBtn.disabled = false;
@@ -219,8 +237,9 @@ class GameEngine {
     }
 
     _runAsync(context, task) {
+        if (this._progressRecovery) return this._progressRecovery;
         return Promise.resolve()
-            .then(task)
+            .then(() => this._progressRecovery || task())
             .catch(error => this._handleAsyncError(context, error));
     }
 
@@ -668,7 +687,7 @@ class GameEngine {
             else await this.renderScene(nextScene);
             return true;
         } catch (error) {
-            if (error?.name === 'ProgressConflictError') { await this.continueGame(); return false; }
+            if (error?.name === 'ProgressConflictError') { await this._handleAsyncError('choice', error); return false; }
             throw error;
         } finally {
             this._choiceInFlight = false;
@@ -1794,12 +1813,13 @@ class GameEngine {
      * ▶ 저장 데이터가 없으면?
      * 자동으로 새 게임을 시작합니다.
      */
-    async continueGame() {
+    async continueGame({ requireSave = false } = {}) {
         // 🔊 사운드 매니저 초기화
         if (typeof soundManager !== 'undefined') soundManager.init();
 
         // 💾 저장 데이터 로드
         const saveData = this.saveManager.load();
+        if (requireSave && !saveData) throw new Error('No saved progress is available for conflict recovery');
 
         if (saveData) {
             // ═══════════════════════════════════════════════════

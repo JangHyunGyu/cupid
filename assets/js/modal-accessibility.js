@@ -102,7 +102,7 @@
         state.returnFocus = null;
         window.requestAnimationFrame(() => {
             const anotherModalIsOpen = openStack.some(isVisible);
-            if (!anotherModalIsOpen && returnFocus?.isConnected) {
+            if (!anotherModalIsOpen && returnFocus && returnFocus.isConnected) {
                 returnFocus.focus({ preventScroll: true });
             }
         });

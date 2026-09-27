@@ -35,6 +35,7 @@
  */
 
 (function () {
+    if (window.CupidRuntimeSupport && !window.CupidRuntimeSupport.supported) return;
     // =========================================================================
     // 설정 (Configuration)
     // =========================================================================
@@ -53,7 +54,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-    const version = '2.9.275';
+    const version = '2.9.276';
     const LOAD_RETRIES = 3;
 
     // =========================================================================
@@ -431,7 +432,7 @@
         window.gameScriptsLoaded = true;
         window.dispatchEvent(new Event('gameScriptsLoaded'));
         const arrival = window.CrossWorld.takeArrival('cupid');
-        if (arrival && !window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
+        if (arrival && !(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) {
             const nodes = document.querySelectorAll('p');
             let versionNode = null;
             for (let i = 0; i < nodes.length; i++) {
@@ -449,7 +450,7 @@
                 };
                 setTimeout(tick, 700);
                 setTimeout(() => {
-                    try { window.soundManager?.playStaticCrackle?.(); } catch (_) {}
+                    try { if (window.soundManager && window.soundManager.playStaticCrackle) window.soundManager.playStaticCrackle(); } catch (_) {}
                     if (navigator.vibrate && (navigator.maxTouchPoints > 0 || 'ontouchstart' in window)) {
                         navigator.vibrate([45, 35, 40, 30, 110, 140, 45, 35, 40, 30, 110]);
                     }
@@ -459,14 +460,15 @@
         if (arrival) {
             window.__cupidCrossingName = arrival.name;
             document.documentElement.classList.remove('cupid-from-gate');
-            document.getElementById('cupid-gate-veil')?.remove();
+            var gateVeil = document.getElementById('cupid-gate-veil');
+            if (gateVeil) gateVeil.remove();
             window.CrossWorld.show({
                 world: 'cupid', lang: window.GAME_LANG || document.documentElement.lang || 'ko',
                 image: 'assets/images/background/gate_bloom.jpg',
-                hasSave: Boolean(window.hasSavedGame?.()),
-                onContinue: () => window.continueGame?.(),
-                onNew: () => window.startGame?.(),
-                onTitle: () => document.getElementById('start-btn')?.focus()
+                hasSave: Boolean(window.hasSavedGame && window.hasSavedGame()),
+                onContinue: () => window.continueGame && window.continueGame(),
+                onNew: () => window.startGame && window.startGame(),
+                onTitle: () => { var start = document.getElementById('start-btn'); if (start) start.focus(); }
             });
         }
     }
@@ -578,7 +580,8 @@
 
     function handleRuntimeLoadError(error) {
         document.documentElement.classList.remove('cupid-from-gate');
-        document.getElementById('cupid-gate-veil')?.remove();
+        var gateVeil = document.getElementById('cupid-gate-veil');
+        if (gateVeil) gateVeil.remove();
         if (scheduleOneTimeLoadRecovery()) return;
         window.gameScriptsLoadError = error;
         if (typeof window.__cupidReportCaughtError === 'function') {
