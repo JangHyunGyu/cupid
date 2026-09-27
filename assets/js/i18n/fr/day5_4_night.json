@@ -1255,11 +1255,11 @@
     },
     "nurse_perfect_pills_0": {
         "name": "Infirmière",
-        "text": "Au réveil, tu étais pâle. J'ai apporté un comprimé pour le matin."
+        "text": "Tu n’avais pas bonne mine à ton réveil, tout à l’heure. Je t’ai apporté ton médicament du matin."
     },
     "nurse_perfect_pills_1": {
         "name": "Infirmière",
-        "text": "*De sous la couverture, elle ne sort que les mains. Dans l'une, un comprimé noir. Dans l'autre, un comprimé rose.*"
+        "text": "*Elle sort les deux mains de sous la couverture. Un comprimé noir repose dans une paume, un rose dans l’autre.*"
     },
     "nurse_perfect_pills_ask": {
         "name": "{name}",
@@ -1275,19 +1275,19 @@
     },
     "nurse_perfect_pills_pink": {
         "name": "{name}",
-        "text": "*J'avale le comprimé rose. Le sucre reste sur la langue, et la gorge reste tiède.*"
+        "text": "*J’avale le comprimé rose et une chaleur douce gagne ma gorge. Un goût sucré reste sur ma langue.*"
     },
     "nurse_perfect_pills_pink_2": {
         "name": "Infirmière",
-        "text": "Aujourd'hui, on reste encore un peu au lit."
+        "text": "Aujourd’hui, restons encore un peu au lit."
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",
-        "text": "*Ses doigts retrouvent les miens sous la couverture. La lampe reste allumée.*"
+        "text": "*Nos doigts se touchent à nouveau sous la couverture. La lampe est toujours allumée.*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
-        "text": "*J'avale le comprimé noir. Pas de sucre. Seule la gorge devient froide.*"
+        "text": "*J’avale le comprimé noir. Aucun goût sucré, et ma gorge se refroidit.*"
     },
     "nurse_perfect_pills_black_ask": {
         "name": "{name}",
@@ -1295,11 +1295,11 @@
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",
-        "text": "*Son sourire disparaît. La lampe de chevet s’éteint et un néon bourdonne au-dessus de moi.*"
+        "text": "*Son visage se fige. La lampe de chevet s’éteint et un néon bourdonne au-dessus de ma tête.*"
     },
     "nurse_perfect_pills_black_3": {
         "name": "{name}",
-        "text": "*Quand la lumière revient, je vois un autre visage. Des cheveux violets, des yeux dorés. Les mains qui tendaient les deux comprimés n’ont pas bougé.*"
+        "text": "*Quand la lumière se rallume, quelqu’un d’autre se tient devant moi. Des cheveux violets, des yeux dorés. Les mains qui présentaient les deux comprimés sont toujours au même endroit.*"
     },
     "nurse_perfect_pills_black_4": {
         "name": "Kang Riin",

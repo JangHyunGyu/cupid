@@ -1255,11 +1255,11 @@
     },
     "nurse_perfect_pills_0": {
         "name": "Schulkrankenschwester",
-        "text": "Beim Aufwachen sahst du blass aus. Ich habe eine Tablette für den Morgen mitgebracht."
+        "text": "Als du vorhin aufgewacht bist, sahst du nicht gut aus. Ich habe dir deine Medizin für den Morgen mitgebracht."
     },
     "nurse_perfect_pills_1": {
         "name": "Schulkrankenschwester",
-        "text": "*Unter der Decke hebt sie nur die Hände. Auf der einen eine schwarze Tablette, auf der anderen eine rosa.*"
+        "text": "*Sie streckt beide Hände unter der Decke hervor. Auf einer Handfläche liegt eine schwarze Tablette, auf der anderen eine rosa.*"
     },
     "nurse_perfect_pills_ask": {
         "name": "{name}",
@@ -1275,19 +1275,19 @@
     },
     "nurse_perfect_pills_pink": {
         "name": "{name}",
-        "text": "*Ich schlucke die rosa Tablette. Sie bleibt süß auf der Zunge, und der Hals bleibt warm.*"
+        "text": "*Ich schlucke die rosa Tablette, und mir wird warm im Hals. Der süße Geschmack bleibt auf meiner Zunge.*"
     },
     "nurse_perfect_pills_pink_2": {
         "name": "Schulkrankenschwester",
-        "text": "Heute bleiben wir noch ein bisschen im Bett."
+        "text": "Lass uns heute noch ein bisschen liegen bleiben."
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",
-        "text": "*Die Finger berühren sich wieder unter der Decke. Die Lampe bleibt an.*"
+        "text": "*Unter der Decke berühren sich unsere Finger wieder. Die Lampe brennt noch.*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
-        "text": "*Ich schlucke die schwarze Tablette. Keine Süße. Nur der Hals wird kalt.*"
+        "text": "*Ich schlucke die schwarze Tablette. Sie schmeckt nicht süß, und mein Hals wird kalt.*"
     },
     "nurse_perfect_pills_black_ask": {
         "name": "{name}",
@@ -1295,11 +1295,11 @@
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",
-        "text": "*Ihr Lächeln verschwindet. Die Nachttischlampe erlischt, und über mir summt eine Leuchtstoffröhre.*"
+        "text": "*Ihr Gesichtsausdruck erstarrt. Die Nachttischlampe erlischt, und über mir summt eine Leuchtstoffröhre.*"
     },
     "nurse_perfect_pills_black_3": {
         "name": "{name}",
-        "text": "*Als das Licht zurückkehrt, sehe ich ein anderes Gesicht. Violettes Haar, goldene Augen. Die Hände, die mir die beiden Tabletten hinhielten, sind noch am selben Platz.*"
+        "text": "*Als das Licht wieder angeht, ist jemand anderes vor mir. Violettes Haar und goldene Augen. Die Hände, die mir die beiden Tabletten hingehalten haben, sind noch an derselben Stelle.*"
     },
     "nurse_perfect_pills_black_4": {
         "name": "Kang Riin",

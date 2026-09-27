@@ -1255,11 +1255,11 @@
     },
     "nurse_perfect_pills_0": {
         "name": "School Nurse",
-        "text": "You looked pale when you woke. I brought a morning pill."
+        "text": "You didn’t look well when you woke up earlier. I brought your morning medicine."
     },
     "nurse_perfect_pills_1": {
         "name": "School Nurse",
-        "text": "*From under the blanket, she holds out only her hands. One palm has a black pill. The other has a pink pill.*"
+        "text": "*She holds both hands out from under the blanket. A black pill rests in one palm and a pink pill in the other.*"
     },
     "nurse_perfect_pills_ask": {
         "name": "{name}",
@@ -1275,19 +1275,19 @@
     },
     "nurse_perfect_pills_pink": {
         "name": "{name}",
-        "text": "*The pink pill goes down. It stays sweet on the tongue, and the throat stays warm.*"
+        "text": "*I swallow the pink pill, and my throat grows warm. A sweet taste lingers on my tongue.*"
     },
     "nurse_perfect_pills_pink_2": {
         "name": "School Nurse",
-        "text": "Let's stay in bed a little longer today."
+        "text": "Let’s lie here a little longer today."
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",
-        "text": "*Her fingers find mine under the blanket again. The lamp stays on.*"
+        "text": "*Our fingers touch again beneath the blanket. The lamp is still on.*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
-        "text": "*The black pill goes down. No sweetness. Only the throat goes cold.*"
+        "text": "*I swallow the black pill. There is no sweetness, and my throat grows cold.*"
     },
     "nurse_perfect_pills_black_ask": {
         "name": "{name}",
@@ -1295,11 +1295,11 @@
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",
-        "text": "*Her smile fades. The bedside lamp goes out, and a fluorescent light hums overhead.*"
+        "text": "*Her expression stiffens. The bedside lamp goes out, and a fluorescent light buzzes overhead.*"
     },
     "nurse_perfect_pills_black_3": {
         "name": "{name}",
-        "text": "*When the light returns, I see a different face. Purple hair, golden eyes. The hands that offered the two pills have not moved.*"
+        "text": "*When the light comes back on, someone else is in front of me. Purple hair and golden eyes. The hands that held out the two pills are still in the same place.*"
     },
     "nurse_perfect_pills_black_4": {
         "name": "Kang Riin",

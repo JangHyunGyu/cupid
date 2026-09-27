@@ -1385,11 +1385,11 @@
     },
     "nurse_perfect_pills_0": {
         "name": "보건선생님",
-        "text": "자다 깨니 얼굴이 안 좋았어. 아침약 가져왔어."
+        "text": "너 아까 깼을 때 안색이 안 좋더라. 아침약 가져왔어."
     },
     "nurse_perfect_pills_1": {
         "name": "보건선생님",
-        "text": "*이불 밖으로 양손만 내민다. 한 손에는 검은 알약, 다른 손에는 분홍 알약.*"
+        "text": "*이불 밖으로 두 손을 내민다. 한 손에는 검은 알약이, 다른 손에는 분홍 알약이 놓여 있다.*"
     },
     "nurse_perfect_pills_ask": {
         "name": "{name}",
@@ -1405,19 +1405,19 @@
     },
     "nurse_perfect_pills_pink": {
         "name": "{name}",
-        "text": "*분홍 알약을 삼킨다. 혀에 단맛이 남고 목은 따뜻하다.*"
+        "text": "*분홍 알약을 삼키자 목 안이 따뜻해진다. 혀에는 단맛이 남는다.*"
     },
     "nurse_perfect_pills_pink_2": {
         "name": "보건선생님",
-        "text": "오늘은 침대에서 더 있자."
+        "text": "오늘은 좀 더 누워 있자."
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",
-        "text": "*이불 속에서 손가락이 다시 맞닿는다. 스탠드는 켜져 있다.*"
+        "text": "*이불 속에서 손가락이 다시 맞닿는다. 스탠드는 여전히 켜져 있다.*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
-        "text": "*검은 알약을 삼킨다. 단맛은 없고 목만 차갑다.*"
+        "text": "*검은 알약을 삼킨다. 단맛은 나지 않고 목 안이 차가워진다.*"
     },
     "nurse_perfect_pills_black_ask": {
         "name": "{name}",
@@ -1425,11 +1425,11 @@
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",
-        "text": "*선생님이 웃음을 거둔다. 침대 옆 스탠드가 꺼지고 머리 위에서 형광등 소리가 난다.*"
+        "text": "*선생님의 표정이 굳는다. 침대 옆 스탠드가 꺼지고 머리 위에서 형광등이 윙윙거린다.*"
     },
     "nurse_perfect_pills_black_3": {
         "name": "{name}",
-        "text": "*불빛이 돌아오자 다른 얼굴이 보인다. 보랏빛 머리와 금빛 눈. 두 알의 약을 내밀던 손은 같은 자리에 있다.*"
+        "text": "*불이 다시 켜지자 눈앞에 다른 사람이 있다. 보랏빛 머리에 금빛 눈. 두 알의 약을 내밀던 손은 여전히 같은 자리에 있다.*"
     },
     "nurse_perfect_pills_black_4": {
         "name": "강리인",

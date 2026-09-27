@@ -1255,11 +1255,11 @@
     },
     "nurse_perfect_pills_0": {
         "name": "Enfermeira",
-        "text": "Quando você acordou, o rosto estava pálido. Trouxe um comprimido para a manhã."
+        "text": "Não estavas com boa cara quando acordaste há pouco. Trouxe o teu remédio da manhã."
     },
     "nurse_perfect_pills_1": {
         "name": "Enfermeira",
-        "text": "*De baixo do cobertor, ela estende só as mãos. Numa, um comprimido preto. Na outra, um rosa.*"
+        "text": "*Ela estende as duas mãos para fora do cobertor. Numa palma está um comprimido preto e na outra, um rosa.*"
     },
     "nurse_perfect_pills_ask": {
         "name": "{name}",
@@ -1275,19 +1275,19 @@
     },
     "nurse_perfect_pills_pink": {
         "name": "{name}",
-        "text": "*Engulo o comprimido rosa. Fica doce na língua, e a garganta fica morna.*"
+        "text": "*Engulo o comprimido rosa e sinto a garganta aquecer. O sabor doce fica na língua.*"
     },
     "nurse_perfect_pills_pink_2": {
         "name": "Enfermeira",
-        "text": "Hoje a gente fica mais um pouco na cama."
+        "text": "Hoje vamos ficar mais um pouco na cama."
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",
-        "text": "*Os dedos se tocam de novo debaixo do cobertor. O abajur continua aceso.*"
+        "text": "*Os nossos dedos voltam a tocar-se debaixo do cobertor. O candeeiro continua aceso.*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
-        "text": "*Engulo o comprimido preto. Não tem doçura. Só a garganta esfria.*"
+        "text": "*Engulo o comprimido preto. Não tem sabor doce e a garganta fica fria.*"
     },
     "nurse_perfect_pills_black_ask": {
         "name": "{name}",
@@ -1295,11 +1295,11 @@
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",
-        "text": "*O sorriso dela desaparece. O candeeiro ao lado da cama apaga-se e uma luz fluorescente zune sobre a minha cabeça.*"
+        "text": "*A expressão dela fica tensa. O candeeiro de cabeceira apaga-se e uma lâmpada fluorescente zumbe sobre a minha cabeça.*"
     },
     "nurse_perfect_pills_black_3": {
         "name": "{name}",
-        "text": "*Quando a luz volta, vejo outro rosto. Cabelo roxo, olhos dourados. As mãos que ofereciam os dois comprimidos continuam no mesmo lugar.*"
+        "text": "*Quando a luz volta, há outra pessoa à minha frente. Cabelo roxo e olhos dourados. As mãos que ofereciam os dois comprimidos continuam no mesmo sítio.*"
     },
     "nurse_perfect_pills_black_4": {
         "name": "Kang Riin",
