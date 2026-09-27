@@ -49,6 +49,13 @@ async function upload() {
       key, sha256, etag: digest('md5', bytes), size: bytes.length };
     console.log('Verified ' + file);
   }
-  fs.writeFileSync(path.join(root, 'config/media-storage.json'), JSON.stringify(catalog, null, 2) + '\n');
+  const catalogJson = JSON.stringify(catalog, null, 2) + '\n';
+  // Authenticated backup viewers resolve logical paths through this private index.
+  // Publish it last so readers never see a reference to an unverified object.
+  await request('/objects/catalog/media-v1.json', { method: 'PUT', body: catalogJson,
+    headers: { 'Content-Type': 'application/json', 'Cache-Control': 'private, no-store' } });
+  const indexReadback = await (await request('/objects/catalog/media-v1.json')).text();
+  if (indexReadback !== catalogJson) throw new Error('Private catalog readback mismatch');
+  fs.writeFileSync(path.join(root, 'config/media-storage.json'), catalogJson);
 }
 upload().catch(error => { console.error(error.message); process.exitCode = 1; });

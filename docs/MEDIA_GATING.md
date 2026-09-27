@@ -59,7 +59,11 @@ body transfer; there is no decrypt stage.
 2. Set `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` in the environment.
    Run `node scripts/upload-private-media.cjs <private-original-directory>`.
    The tool rejects public buckets, verifies every upload by reading it back,
-   then writes `config/media-storage.json` after all objects succeed.
+   then publishes `catalog/media-v1.json` inside the private bucket and writes
+   `config/media-storage.json` after all objects succeed. Harem's authenticated
+   backup image proxy resolves archived paths through this private catalog;
+   its 60-second metadata cache picks up new assets without a separate manifest
+   copy or public access to originals.
 3. Run `npm run build`, `npm test`, `npm run cache:check` and browser/media checks.
    A source changed without matching uploaded catalog metadata fails the build.
    Commit the catalog and generated manifest together.
