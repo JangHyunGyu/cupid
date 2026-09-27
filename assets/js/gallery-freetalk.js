@@ -2015,6 +2015,14 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         }).join(' ');
     }
 
+    _hydratePendingCharacterImage() {
+        const img = document.getElementById('gft-char-img');
+        const path = img?.getAttribute('data-cupid-pending');
+        if (!path) return;
+        img.removeAttribute('data-cupid-pending');
+        this._updateExpression('normal');
+    }
+
     _updateExpression(expression, charId = this.currentCharId) {
         if (!charId) return;
         const validExprs = this.CHAR_EXPRESSIONS[charId] || [];

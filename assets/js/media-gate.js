@@ -1,8 +1,8 @@
 /**
  * CupidMedia - client gate for encrypted gallery/character assets.
  *
- * Decrypt key never ships here. Unlocks are posted to /api/gallery/unlocks
- * (forgeable by design) and images load via /api/media with X-Cupid-Guest.
+ * Decrypt key never ships here. Explicit progression grants and media reads
+ * use a signed HttpOnly session. Image loading and prefetching never grant access.
  */
 
 (function (global) {
@@ -18,6 +18,37 @@
   var MIGRATION_KEY = 'cupid_gallery_media_migrated_v1';
   var PLACEHOLDER = 'assets/images/ui/character-silhouette.svg';
   var BATCH_CAP = 100;
+  // BEGIN GENERATED MEDIA VERSIONS
+  var MEDIA_VERSIONS = {"background/dain_depression_event1":"7ee4549e9c01d86d8ceddab7","background/dain_hurt_event1":"03c309e91448e74d0f6524af","background/ending_alone":"be11653d9adf4a7b306b9f91","background/ending_bittersweet":"51eab37dfe08db46f30d72a8","background/ending_bittersweet_nurse":"3d0e4a5f18806c68e6be9014","background/ending_bittersweet_teacher":"39233a3911500d9e632dc38b","background/ending_confess_fail_dain":"787b7ab28af2ca24cc4a6fad","background/ending_confess_fail_seoyeon":"73831ccd142f8a97d9e6183a","background/ending_confess_fail_yuna":"e32c7f7a67d89e96a8edef1d","background/ending_friend":"3d8c2f3494301d31d369e80a","background/ending_good_dain":"209cb4651368bfa637e273d5","background/ending_good_nurse":"753c7a2e322c44c535de071b","background/ending_good_seoyeon":"9619f8ad7d14301d96d44b24","background/ending_good_teacher":"2e6dd0c2716bf020f13cb957","background/ending_good_yuna":"09c67542dd7e066422d1843e","background/ending_harem":"e0a423e1d41f9d780ce13ab0","background/ending_mayhem":"eebc0728b58bcec16e108f4f","background/ending_perfect_dain":"750033d2213d9d0240fdf07a","background/ending_perfect_haeun":"9903cd5bf1aa4e4465484b0e","background/ending_perfect_nurse":"2efe79fb6a3ccaa6bfc42ec5","background/ending_perfect_seoyeon":"513a2715bac51c0b403407ed","background/ending_perfect_teacher":"fe8877f9d320958a916ec193","background/ending_perfect_yuna":"d474988bda580a4fa93e9bdb","background/ending_true_dain":"208f6d687989178581114801","background/ending_true_nurse":"4727b2407b6623fd802285f8","background/ending_true_seoyeon":"edda8686b4b472e5099da930","background/ending_true_teacher":"14adfae607797f5fccdf601c","background/ending_true_yuna":"81604f5804f639ca8f67601c","background/event_haeun_reputation":"8b2edb7e9c3b3b7c804362ba","background/event_haeun_trust":"080f10ba1c95792d44d0de72","background/event_temptation_dain":"ea1f573b313ef7004b352a28","background/event_temptation_seoyeon":"139380703754eeefce44522d","background/event_temptation_yuna":"a3c33707fefd16c91df8d4cf","background/nurse_home_event1":"8fb762c5beb1d01ee83bc97b","characters/dain_active":"a1c0dfa5277675f50681b6cd","characters/dain_angry":"f66c1600aac2cf2fe6cd55f3","characters/dain_bikini":"675d1a52cea84edc24dddd5f","characters/dain_climax":"b23656e340b4009194f8a263","characters/dain_flushed":"8782d6013e2f514646ab0153","characters/dain_laugh":"c3e5e90d26b45186d2574ecd","characters/dain_normal":"94e9907a3243b74c8d6e0c60","characters/dain_pain":"99a3b11b78e3c75523c77252","characters/dain_pout":"d61eac7259237e9282829ad2","characters/dain_sad":"06fa16f733055ffa974cdef6","characters/dain_shy":"c87a3b1452ff0f7c858b12ab","characters/dain_sweat":"d5b5a8aa4c1272f03da30dfc","characters/haeun_firm":"7f962077d45dd165ad9c7c25","characters/haeun_normal":"a13bbe3ca7fd8704532f204e","characters/haeun_relieved":"3d65176faa1ef4f0c81bfc0b","characters/haeun_worried":"c7a30636d1a75e1fa24371af","characters/junho_awkward":"3875a3c4f0ed9f307c194a45","characters/junho_normal":"64a502d5f325cddc2fdecb76","characters/minsu_normal":"78f0752a9ade0f2047a2d644","characters/minsu_smirk":"e7f382060afa06f790d3411e","characters/nurse_angry":"e57983dc82405e43d23c095d","characters/nurse_bikini":"2d02c75d38dad14d33e150df","characters/nurse_climax":"66276cf2303b17ac4bf40160","characters/nurse_dry_smile":"c146ea09ba948b090538e658","characters/nurse_flushed":"5370027a015e706eb1797963","characters/nurse_normal":"be6bdf3e979df526ee599bbd","characters/nurse_sad":"54c668c664f7708a0e11c13d","characters/nurse_shy":"6d8d734d908ae5ece3efc55c","characters/nurse_smile":"30e5195ae35e720a4cfdfa68","characters/nurse_tired":"3bc09946ace4a0997af5a89e","characters/nurse_worried":"b7886813bd64ed96b4b9c5dd","characters/seyoun_angry":"6892890f70a076798a84cb5f","characters/seyoun_back":"f07695d181f1c620f1fd53f7","characters/seyoun_bikini":"811254edce80a69af5e46c3b","characters/seyoun_climax":"347fe4fca4b369f832a49d8f","characters/seyoun_cry":"33543af77582921e590d1c59","characters/seyoun_flushed":"b3150861d4f4ccf6e2d24ed2","characters/seyoun_laugh":"7b2178e6048f2bd168520baa","characters/seyoun_normal":"557245d018f0cad5171f6cf0","characters/seyoun_pout":"c0ddcfedbe8a20cc0c9ec3e7","characters/seyoun_sad":"82567c7b21bfa6e9bbc6babe","characters/seyoun_shy":"f801eecb2ccd228d45aa18b5","characters/seyoun_shy2":"7bc1a58bafdadc4aba81cd47","characters/seyoun_worried":"c9dde8ff0d8f06e5c0f7e32b","characters/teacher_angry":"e4898e8952dae2ebf91b0578","characters/teacher_bikini":"e28249e4880d2192538f472a","characters/teacher_climax":"08c27adcd4373a6ff092cc41","characters/teacher_flushed":"83fb3283569f9e690d1803ce","characters/teacher_normal":"035e176bdf30610982f002a0","characters/teacher_sad":"84fdf0fc2607c26a916eea70","characters/teacher_shy":"7c11cbbf36d76f81a913d6cc","characters/teacher_smile":"79b756cc5650e9f4cee60659","characters/teacher_worried":"8752a66f3049b5ac792493c2","characters/yuna_angry":"c131d16662fb6a37b97b1d13","characters/yuna_bikini":"f7e257282a62e3a43bf17635","characters/yuna_bored":"5f17b750ea81dec56829d23d","characters/yuna_climax":"00da935df51e1cb40ed25f3d","characters/yuna_flushed":"51f0cace489de71f28f96581","characters/yuna_gallery_bikini_sexy_20260813":"7cfb2d83e446e8a8da023f1c","characters/yuna_laugh":"964ad0b5d262a8858549cea1","characters/yuna_normal":"afeb6f7addfd9bbd5ed3d570","characters/yuna_pout":"ee1db586de794c1aa04fb8ac","characters/yuna_sad":"1a6659906b1c85352ec60c85","characters/yuna_shy":"f788a416ba79b4dfdaa08aa6","characters/yuna_smile":"80ad632b45278dbe1e5074fb","characters/yuna_worried":"6c68f2e75df4c0f88aefd7aa"};
+  // END GENERATED MEDIA VERSIONS
+  var sessionPromise = null;
+  var activeGuestId = null;
+  var unlockPromises = Object.create(null);
+  var unlockResolvers = Object.create(null);
+  var flushScheduled = false;
+  var preparedImages = new Map();
+  var preparingCount = 0;
+
+  function ensureSession() {
+    if (sessionPromise) return sessionPromise;
+    sessionPromise = fetch('/api/media-session', {
+      method: 'POST', credentials: 'same-origin', headers: { 'content-type': 'application/json' }
+    }).then(function (response) {
+      if (!response.ok) throw new Error('media_session_' + response.status);
+      return response.json();
+    }).then(function (data) {
+      if (!data.guestId || !/^[0-9a-f-]{36}$/i.test(data.guestId)) throw new Error('invalid_media_session');
+      activeGuestId = data.guestId;
+      if (storageGet(GUEST_KEY) !== data.guestId) {
+        knownUnlocked = Object.create(null);
+        storageSet(GUEST_KEY, data.guestId);
+        storageSet(MIGRATION_KEY, '0');
+        try { global.sessionStorage.removeItem(UNLOCK_MEMORY_KEY); } catch (_) {}
+      }
+      return data.guestId;
+    }).catch(function (error) { sessionPromise = null; throw error; });
+    return sessionPromise;
+  }
 
   var CG_BASES = [
     'ending_perfect_haeun', 'event_haeun_trust', 'event_haeun_reputation',
@@ -47,7 +78,6 @@
   var UNLOCK_MEMORY_KEY = 'cupid_media_unlocked_v1';
 
   var pendingUnlocks = [];
-  var unlockTimer = null;
   var knownUnlocked = Object.create(null);
 
   function storageGet(key) {
@@ -84,6 +114,7 @@
   }
 
   function getGuestId() {
+    if (activeGuestId) return activeGuestId;
     var existing = storageGet(GUEST_KEY);
     if (existing && /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(existing)) {
       return existing;
@@ -165,10 +196,9 @@
     if (!logical) return normalizePath(rawPath);
     var ext = extension || '.webp';
     var asset = 'assets/images/' + logical + ext;
-    var guest = getGuestId();
     var q = 'asset=' + encodeURIComponent(asset)
-      + '&guest=' + encodeURIComponent(guest)
-      + '&v=' + encodeURIComponent(assetVersion());
+      + (isPublicLogical(logical) ? '' : '&guest=' + encodeURIComponent(getGuestId()))
+      + '&v=' + encodeURIComponent(MEDIA_VERSIONS[logical] || assetVersion());
     return '/api/media?' + q;
   }
 
@@ -207,29 +237,39 @@
 
   function queueUnlock(assets) {
     if (!assets || !assets.length) return Promise.resolve({ upserted: 0 });
-    var added = 0;
-    for (var i = 0; i < assets.length; i++) {
-      var id = toLogicalAssetId(assets[i]);
-      if (!id || !isProtectedPath(id) || knownUnlocked[id]) continue;
-      if (pendingUnlocks.indexOf(id) === -1) {
-        pendingUnlocks.push(id);
-        added += 1;
+    assets = assets.filter(function (asset) {
+      var id = logicalFromAny(asset);
+      return id && MEDIA_VERSIONS[id] && !isPublicLogical(id);
+    });
+    if (!assets.length) return Promise.resolve({ upserted: 0 });
+    return ensureSession().then(function () {
+      var waits = [];
+      assets.forEach(function (asset) {
+        var id = logicalFromAny(asset);
+        if (!id || !MEDIA_VERSIONS[id] || isPublicLogical(id) || knownUnlocked[id]) return;
+        if (!unlockPromises[id]) {
+          unlockPromises[id] = new Promise(function (resolve) { unlockResolvers[id] = resolve; });
+          pendingUnlocks.push(id);
+        }
+        waits.push(unlockPromises[id]);
+      });
+      if (pendingUnlocks.length && !flushScheduled) {
+        flushScheduled = true;
+        Promise.resolve().then(flushUnlocks);
       }
-    }
-    if (!added && !pendingUnlocks.length) return Promise.resolve({ upserted: 0 });
-    return flushUnlocks();
+      return Promise.all(waits).then(function (results) {
+        return results.find(function (result) { return result.error; }) || { upserted: waits.length };
+      });
+    }).catch(function (error) { return { upserted: 0, error: String(error.message || error) }; });
   }
 
   function flushUnlocks() {
+    flushScheduled = false;
     if (!pendingUnlocks.length) return Promise.resolve({ upserted: 0 });
-    if (unlockTimer) {
-      clearTimeout(unlockTimer);
-      unlockTimer = null;
-    }
-
-    var guest = getGuestId();
     var batch = pendingUnlocks.splice(0, BATCH_CAP);
-    return fetch('/api/gallery/unlocks', {
+    function sendBatch() {
+      var guest = getGuestId();
+      return fetch('/api/gallery/unlocks', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
@@ -238,23 +278,39 @@
       body: JSON.stringify({ guestId: guest, assets: batch }),
       credentials: 'same-origin',
       keepalive: true
+      });
+    }
+    return sendBatch().then(function (resp) {
+      if (resp.status !== 401) return resp;
+      // A different tab may have established the browser cookie first.
+      // Retry this explicit grant once with the identity the server now owns.
+      sessionPromise = null;
+      return ensureSession().then(sendBatch);
     }).then(function (resp) {
       if (!resp.ok) {
-        // Re-queue on transient failure
-        pendingUnlocks = batch.concat(pendingUnlocks);
+        if (resp.status === 401) sessionPromise = null;
         throw new Error('unlock_failed_' + resp.status);
       }
       return resp.json().catch(function () { return {}; });
     }).then(function (data) {
-      for (var i = 0; i < batch.length; i++) knownUnlocked[batch[i]] = true;
-      rememberUnlocks(batch);
-      if (pendingUnlocks.length) {
-        unlockTimer = setTimeout(function () { flushUnlocks(); }, 50);
-      }
+      var accepted = Array.isArray(data.assets) ? data.assets : [];
+      for (var i = 0; i < accepted.length; i++) knownUnlocked[accepted[i]] = true;
+      rememberUnlocks(accepted);
       return data || { upserted: batch.length };
     }).catch(function (err) {
       console.warn('[CupidMedia] unlock sync failed', err);
       return { upserted: 0, error: String(err && err.message || err) };
+    }).then(function (result) {
+      batch.forEach(function (id) {
+        unlockResolvers[id](result);
+        delete unlockResolvers[id];
+        delete unlockPromises[id];
+      });
+      if (pendingUnlocks.length && !flushScheduled) {
+        flushScheduled = true;
+        Promise.resolve().then(flushUnlocks);
+      }
+      return result;
     });
   }
 
@@ -331,7 +387,7 @@
     }
     var assets = collectAssetsFromGalleryData(data);
     return queueUnlock(assets).then(function (result) {
-      storageSet(MIGRATION_KEY, '1');
+      if (!result.error) storageSet(MIGRATION_KEY, '1');
       return { migrated: true, count: assets.length, result: result };
     });
   }
@@ -360,6 +416,8 @@
 
   function loadImageWithMediaFallback(img, rawPath, onload, onerror) {
     if (!img) return;
+    var generation = (img.__cupidLoadGeneration || 0) + 1;
+    img.__cupidLoadGeneration = generation;
     var source = rawPath;
     if (typeof source === 'string' && source.indexOf('/api/media?') !== -1) {
       source = logicalFromAny(source) || source;
@@ -384,40 +442,44 @@
     }
 
     var logical = toLogicalAssetId(source);
-    var webpUrl = mediaUrl(logical, '.webp');
-    var pngUrl = mediaUrl(logical, '.png');
-    var needsUnlock = !!(logical && !isPublicLogical(logical) && !knownUnlocked[logical]);
-
-    function show(url, fallback) {
-      img.onload = onload || null;
-      img.onerror = function () {
-        if (fallback) {
-          fallback();
-          return;
-        }
-        if (onerror) onerror();
+    function show() {
+      if (img.__cupidLoadGeneration !== generation) return;
+      img.decoding = 'async';
+      img.onload = function () {
+        var ready = typeof img.decode === 'function' ? img.decode() : Promise.resolve();
+        ready.catch(function () {}).then(function () {
+          if (img.__cupidLoadGeneration === generation && onload) onload();
+        });
       };
-      img.src = url;
+      img.onerror = function () {
+        if (img.__cupidLoadGeneration === generation && onerror) onerror();
+      };
+      img.src = mediaUrl(logical, '.webp');
     }
+    // Reads, recovery and preloading never create an unlock. Only explicit game
+    // progression may enqueue a grant; wait for that grant if it is in flight.
+    if (isPublicLogical(logical)) show();
+    else ensureSession().then(function () { return unlockPromises[logical]; }).then(show).catch(function () {
+      if (img.__cupidLoadGeneration === generation && onerror) onerror();
+    });
+  }
 
-    function showWithRecovery() {
-      show(webpUrl, function () {
-        var recover = function () {
-          show(webpUrl + '&retry=1', function () {
-            show(pngUrl, null);
-          });
-        };
-        if (logical && !isPublicLogical(logical)) {
-          forgetUnlock(logical);
-          queueUnlock([logical]).finally(recover);
-          return;
-        }
-        recover();
+  function preloadUnlocked(assets) {
+    if (!global.Image || global.navigator?.connection?.saveData) return;
+    (assets || []).slice(0, 2).forEach(function (asset) {
+      var id = logicalFromAny(asset);
+      if (!id || (!isPublicLogical(id) && !knownUnlocked[id])) return;
+      var url = mediaUrl(id);
+      if (preparedImages.has(url) || preparingCount >= 2) return;
+      var img = new global.Image();
+      preparingCount += 1;
+      preparedImages.set(url, img);
+      while (preparedImages.size > 4) preparedImages.delete(preparedImages.keys().next().value);
+      loadImageWithMediaFallback(img, id, function () { preparingCount -= 1; }, function () {
+        preparingCount -= 1;
+        preparedImages.delete(url);
       });
-    }
-
-    if (needsUnlock) queueUnlock([logical]).finally(showWithRecovery);
-    else showWithRecovery();
+    });
   }
 
   function hydrateProtectedImages(root) {
@@ -437,6 +499,8 @@
 
   var api = {
     getGuestId: getGuestId,
+    ensureSession: ensureSession,
+    preloadUnlocked: preloadUnlocked,
     isProtectedPath: isProtectedPath,
     isPublicLogical: isPublicLogical,
     toLogicalAssetId: toLogicalAssetId,
@@ -461,7 +525,7 @@
   // Boot migrate shortly after load (storage + GalleryData may appear later).
   function bootMigrate() {
     hydrateProtectedImages();
-    migrateFromLocalGallery().catch(function () {});
+    ensureSession().then(migrateFromLocalGallery).catch(function () {});
   }
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function () {

@@ -7,13 +7,14 @@ const { pathToFileURL } = require('url');
 
 const root = path.resolve(__dirname, '..');
 
-function bootMediaGate() {
+function bootMediaGate(options = {}) {
     const store = new Map();
     const sandbox = {
         URL,
         console,
         setTimeout(fn) { fn(); },
-        fetch: async () => ({ ok: true, json: async () => ({}) }),
+        fetch: options.fetch || (async url => ({ ok: true, json: async () => url === '/api/media-session'
+            ? { guestId: '11111111-1111-4111-8111-111111111111' } : {} })),
         location: { href: 'http://127.0.0.1/' },
         document: {
             readyState: 'complete',
@@ -30,6 +31,7 @@ function bootMediaGate() {
         },
         crypto: { randomUUID: () => '11111111-1111-4111-8111-111111111111' }
     };
+    if (options.Image) sandbox.Image = options.Image;
     sandbox.window = sandbox;
     sandbox.globalThis = sandbox;
     vm.runInNewContext(
@@ -50,6 +52,62 @@ test('protected gameplay paths request WebP through the media API', () => {
         media.preferWebpUrl('/api/media?asset=assets%2Fimages%2Fcharacters%2Fdain_angry.png&guest=11111111-1111-4111-8111-111111111111'),
         '/api/media?asset=assets%2Fimages%2Fcharacters%2Fdain_angry.webp&guest=11111111-1111-4111-8111-111111111111'
     );
+});
+
+test('image reads and failed reads never register an unlock', async () => {
+    const calls = [];
+    const media = bootMediaGate({ fetch: async (url, init) => {
+        calls.push(url);
+        return { ok: true, json: async () => ({ guestId: '11111111-1111-4111-8111-111111111111' }) };
+    } });
+    await media.ensureSession();
+    const img = {};
+    media.loadImageWithMediaFallback(img, 'characters/dain_bikini');
+    await new Promise(resolve => setImmediate(resolve));
+    assert.match(img.src, /dain_bikini/);
+    img.onerror();
+    await new Promise(resolve => setImmediate(resolve));
+    assert.deepEqual(calls, ['/api/media-session']);
+});
+
+test('concurrent explicit grants share a batch and image loading waits for acknowledgement', async () => {
+    const calls = [];
+    let acknowledge;
+    const media = bootMediaGate({ fetch: async (url, init) => {
+        calls.push(url);
+        if (url === '/api/media-session') return { ok: true, json: async () => ({ guestId: '11111111-1111-4111-8111-111111111111' }) };
+        const body = JSON.parse(init.body);
+        await new Promise(resolve => { acknowledge = resolve; });
+        return { ok: true, json: async () => ({ assets: body.assets }) };
+    } });
+    await media.ensureSession();
+    const a = media.unlock(['characters/dain_laugh']);
+    const b = media.unlock(['characters/dain_laugh', 'characters/dain_angry']);
+    const img = {};
+    media.loadImageWithMediaFallback(img, 'characters/dain_laugh');
+    await new Promise(resolve => setImmediate(resolve));
+    assert.equal(img.src, undefined);
+    assert.equal(calls.filter(url => url === '/api/gallery/unlocks').length, 1);
+    acknowledge();
+    await Promise.all([a, b]);
+    await new Promise(resolve => setImmediate(resolve));
+    assert.match(img.src, /dain_laugh/);
+    await media.unlock(['characters/dain_laugh']);
+    assert.equal(calls.filter(url => url === '/api/gallery/unlocks').length, 1);
+});
+
+test('preloading skips locked media and content URLs stay stable across app versions', async () => {
+    const images = [];
+    function Image() { images.push(this); }
+    const media = bootMediaGate({ Image });
+    media.preloadUnlocked(['characters/dain_bikini']);
+    assert.equal(images.length, 0);
+    media.preloadUnlocked(['characters/dain_normal', 'characters/yuna_normal']);
+    media.preloadUnlocked(['characters/teacher_normal']);
+    assert.equal(images.length, 2, 'at most two concurrent speculative image loads');
+    const url = media.mediaUrl('characters/dain_normal');
+    assert.match(url, /&v=[a-f0-9]{24}$/);
+    assert.doesNotMatch(url, /guest=/);
 });
 
 test('title normals are public and story CGs stay unlock-gated', () => {

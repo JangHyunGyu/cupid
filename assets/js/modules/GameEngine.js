@@ -165,6 +165,17 @@ class GameEngine {
     }
 
     _prefetchNextScenarioDay(scene) {
+        // Only already-unlocked media in an unconditional next scene may warm up.
+        // Do not evaluate branches or grant future images while preloading.
+        if (typeof scene?.next === 'string' && !scene.choices && !scene.branches) {
+            const upcoming = this.sceneRenderer.getScene(scene.next);
+            if (upcoming) {
+                const images = [upcoming.background, upcoming.character,
+                    ...Object.values(upcoming.characters || {}).map(value => typeof value === 'string' ? value : value?.src)
+                ].filter(Boolean);
+                window.CupidMedia?.preloadUnlocked?.(images);
+            }
+        }
         const match = String(scene?.__sourceFile || '').match(/^day([1-4])_4_night$/);
         if (!match || !window.CupidContentLoader?.prefetchDay) return;
         window.CupidContentLoader.prefetchDay(Number(match[1]) + 1).catch(error => {

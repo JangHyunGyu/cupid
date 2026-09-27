@@ -68,6 +68,12 @@ function sendMedia(assetParam, response) {
 http.createServer((request, response) => {
     const requestUrl = new URL(request.url, 'http://localhost');
     const pathname = decodeURIComponent(requestUrl.pathname);
+    // Local UI fixture only; real session/authorization behavior is covered by media-security tests.
+    if (pathname === '/api/media-session') {
+        response.writeHead(200, { 'content-type': 'application/json', 'cache-control': 'no-store' });
+        response.end(JSON.stringify({ guestId: '11111111-1111-4111-8111-111111111111' }));
+        return;
+    }
     if (pathname === '/api/media') {
         sendMedia(requestUrl.searchParams.get('asset') || '', response);
         return;

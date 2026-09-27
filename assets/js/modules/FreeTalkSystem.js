@@ -2933,6 +2933,8 @@ class FreeTalkSystem {
     _loadCupidProtectedImage(img, rawPath) {
         if (!img || !rawPath) return;
         if (window.CupidMedia?.loadImageWithMediaFallback) {
+            // This expression was selected by the active conversation, not a preload.
+            window.CupidMedia.unlock?.([rawPath]);
             window.CupidMedia.loadImageWithMediaFallback(img, rawPath);
             return;
         }

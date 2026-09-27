@@ -8,6 +8,7 @@ const config = JSON.parse(fs.readFileSync(path.join(root, 'config/project.json')
 const write = process.argv.includes('--write');
 const check = process.argv.includes('--check') || !write;
 const changed = [];
+const mediaManifest = require('./sync-media-manifest.cjs').syncMediaManifest(write);
 
 function update(relativePath, transforms) {
     const fullPath = path.join(root, relativePath);
@@ -64,8 +65,8 @@ for (const page of config.localizedPages) {
                 `$1${version}`
             ),
             content => content.replace(
-                /(\/api\/media\?asset=assets%2Fimages%2Fcharacters%2F[a-z0-9_]+(?:\.webp|%2Ewebp)&amp;v=)[0-9.]+/g,
-                `$1${version}`
+                /(\/api\/media\?asset=assets%2Fimages%2Fcharacters%2F([a-z0-9_]+)(?:\.webp|%2Ewebp)&amp;v=)[a-z0-9.]+/g,
+                (_, prefix, name) => prefix + mediaManifest['characters/' + name].version
             )
         ];
         if (page === 'index') {

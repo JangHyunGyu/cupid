@@ -185,24 +185,21 @@ class CGRenderer {
         const modal = this.modalEl || this._createModal();
 
         const cgImage = document.getElementById('cg-modal-image');
+        const showLoaded = () => requestAnimationFrame(() => cgImage.classList.add('cg-image-loaded'));
+        cgImage.classList.remove('cg-image-loaded');
         if (window.CupidMedia) {
             window.CupidMedia.unlockCG(cg.id);
-            window.CupidMedia.loadImageWithMediaFallback(cgImage, cg.file);
+            window.CupidMedia.loadImageWithMediaFallback(cgImage, cg.file, showLoaded);
         } else {
+            cgImage.onload = showLoaded;
             cgImage.src = `${cg.file}?v=${window.ASSET_VERSION || ''}`;
         }
-        cgImage.classList.remove('cg-image-loaded');
 
         document.getElementById('cg-modal-title').textContent = cg.name;
         document.getElementById('cg-modal-desc').textContent = cg.description;
 
         modal.classList.add('active');
 
-        cgImage.onload = () => {
-            requestAnimationFrame(() => {
-                cgImage.classList.add('cg-image-loaded');
-            });
-        };
     }
 
     /**

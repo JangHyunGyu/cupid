@@ -67,7 +67,7 @@ export function toLogicalAssetId(raw) {
   if (!p || p.includes('..')) return null;
   if (p.startsWith('assets/images/')) p = p.slice('assets/images/'.length);
   p = p.replace(/\.(png|webp|jpg|jpeg)$/i, '');
-  return p;
+  return /^(?:characters|background)\/[a-z0-9_-]+$/.test(p) ? p : null;
 }
 
 export function isProtectedLogicalId(logicalId) {

@@ -12,9 +12,12 @@
  * ============================================================================
  */
 
-const CACHE_VERSION = 'cupid-v3.3.190';
+const CACHE_VERSION = 'cupid-v3.3.191';
 const STATIC_CACHE = CACHE_VERSION + '-static';
 const MEDIA_CACHE = CACHE_VERSION + '-media';
+// Protected images carry their own content hash. App-only releases retain them.
+const PROTECTED_MEDIA_CACHE = 'cupid-protected-media-v2';
+const mediaInFlight = new Map();
 
 const ERROR_LOG_ENDPOINT = 'https://chatbot-api.yama5993.workers.dev/error-logs';
 const ERROR_DEDUPE_TTL_MS = 30000;
@@ -141,7 +144,7 @@ self.addEventListener('activate', (event) => {
             .then(cacheNames => {
                 return Promise.all(
                     cacheNames
-                        .filter(name => name !== STATIC_CACHE && name !== MEDIA_CACHE)
+                        .filter(name => name !== STATIC_CACHE && name !== MEDIA_CACHE && name !== PROTECTED_MEDIA_CACHE)
                         .map(name => {
                             console.log('[SW] 구버전 캐시 삭제:', name);
                             return caches.delete(name).catch(() => false);
@@ -172,7 +175,13 @@ self.addEventListener('fetch', (event) => {
 
     // 복호화된 캐릭터/CG. 주소에 버전이 들어 있어 캐시 우선으로 정적 이미지와 같게 재사용한다.
     if (path === '/api/media') {
-        event.respondWith(cacheFirst(event.request, MEDIA_CACHE));
+        event.respondWith(protectedMedia(event));
+        return;
+    }
+
+    if (path.startsWith('/api/')) {
+        // Session and unlock responses must never be persisted by generic HTML caching.
+        event.respondWith(fetch(event.request));
         return;
     }
 
@@ -220,6 +229,30 @@ async function cacheFirst(request, cacheName) {
     } catch (e) {
         return new Response('Offline', { status: 503 });
     }
+}
+
+async function protectedMedia(event) {
+    const request = event.request;
+    const url = new URL(request.url);
+    const version = url.searchParams.get('v');
+    if (!/^[a-f0-9]{24}$/.test(version || '')) return fetch(request);
+    const cache = await caches.open(PROTECTED_MEDIA_CACHE).catch(() => null);
+    const cached = await cache?.match(request).catch(() => null);
+    if (cached) return cached;
+    const key = request.url;
+    let pending = mediaInFlight.get(key);
+    if (!pending) {
+        pending = fetch(request);
+        mediaInFlight.set(key, pending);
+        event.waitUntil(pending.then(async response => {
+            if (!cache || !response.ok || response.headers.get('x-cupid-media-version') !== version) return;
+            await cache.put(request, response.clone());
+            // Bound disk usage on mobile. Writes never block the visible image.
+            const keys = await cache.keys();
+            await Promise.all(keys.slice(0, Math.max(0, keys.length - 64)).map(old => cache.delete(old)));
+        }).catch(() => {}).finally(() => mediaInFlight.delete(key)));
+    }
+    return (await pending).clone();
 }
 
 async function refreshMediaFromNetwork(request, cacheName) {

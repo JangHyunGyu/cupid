@@ -3,8 +3,8 @@
  * POST /api/gallery/unlocks  { guestId, assets: string[] }
  * GET  /api/gallery/unlocks?guest=...
  *
- * Threat note: unlock POSTs are forgeable. This gates direct static URL spoiling,
- * not determined API abuse. Public git history may still hold plaintext blobs.
+ * Anonymous grants remain client-reported progression. A signed, same-origin
+ * session prevents guest URL impersonation, not fabrication of one's own play.
  */
 
 import {
@@ -13,6 +13,8 @@ import {
   isValidGuestId,
   jsonResponse
 } from '../../_lib/media-assets.js';
+import { readMediaSession, sameOriginRequest, readSmallJson } from '../../_lib/media-session.js';
+import { MEDIA_MANIFEST } from '../../_lib/media-manifest.js';
 
 const BATCH_CAP = 100;
 
@@ -23,16 +25,20 @@ function corsHeaders(request) {
     'access-control-allow-methods': 'GET, POST, OPTIONS',
     'access-control-allow-headers': 'content-type, x-cupid-guest'
   };
-  if (origin) headers['access-control-allow-origin'] = origin;
+  if (origin === new URL(request.url).origin) headers['access-control-allow-origin'] = origin;
   return headers;
 }
 
 export async function onRequestOptions(context) {
+  if (!sameOriginRequest(context.request, true)) return jsonResponse({ error: 'forbidden_origin' }, 403);
   return new Response(null, { status: 204, headers: corsHeaders(context.request) });
 }
 
 export async function onRequestGet(context) {
   const { request, env } = context;
+  if (!sameOriginRequest(request)) return jsonResponse({ error: 'forbidden_origin' }, 403);
+  if (!env.CUPID_MEDIA_KEY) return jsonResponse({ error: 'media_unavailable' }, 503);
+  const sessionGuest = await readMediaSession(request, env);
   const url = new URL(request.url);
   const guestId = (
     request.headers.get('X-Cupid-Guest')
@@ -40,6 +46,8 @@ export async function onRequestGet(context) {
     || url.searchParams.get('guestId')
     || ''
   ).trim();
+
+  if (!sessionGuest || sessionGuest !== guestId) return jsonResponse({ error: 'unauthorized' }, 401);
 
   if (!isValidGuestId(guestId)) {
     return jsonResponse({ error: 'invalid_guest' }, 400, corsHeaders(request));
@@ -61,18 +69,27 @@ export async function onRequestGet(context) {
 
 export async function onRequestPost(context) {
   const { request, env } = context;
+  if (!sameOriginRequest(request, true)) return jsonResponse({ error: 'forbidden_origin' }, 403);
+  if (!env.CUPID_MEDIA_KEY) return jsonResponse({ error: 'media_unavailable' }, 503);
+  const sessionGuest = await readMediaSession(request, env);
+  if (!sessionGuest) return jsonResponse({ error: 'unauthorized' }, 401);
+  if (!(request.headers.get('Content-Type') || '').startsWith('application/json')) {
+    return jsonResponse({ error: 'invalid_content_type' }, 415);
+  }
   if (!env.DB) {
     return jsonResponse({ error: 'db_unavailable' }, 503, corsHeaders(request));
   }
 
   let body;
   try {
-    body = await request.json();
-  } catch (_) {
+    body = await readSmallJson(request);
+  } catch (error) {
+    if (error.message === 'body_too_large') return jsonResponse({ error: 'body_too_large' }, 413);
     return jsonResponse({ error: 'invalid_json' }, 400, corsHeaders(request));
   }
 
   const guestId = String(body?.guestId || body?.guest || request.headers.get('X-Cupid-Guest') || '').trim();
+  if (guestId !== sessionGuest) return jsonResponse({ error: 'unauthorized' }, 401);
   if (!isValidGuestId(guestId)) {
     return jsonResponse({ error: 'invalid_guest' }, 400, corsHeaders(request));
   }
@@ -89,7 +106,7 @@ export async function onRequestPost(context) {
   const seen = new Set();
   for (const item of rawAssets) {
     const id = toLogicalAssetId(item);
-    if (!id || !isProtectedLogicalId(id) || seen.has(id)) continue;
+    if (!id || !Object.hasOwn(MEDIA_MANIFEST, id) || !isProtectedLogicalId(id) || seen.has(id)) continue;
     seen.add(id);
     logicalIds.push(id);
   }

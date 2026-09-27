@@ -421,7 +421,7 @@ class SceneRenderer {
 
         const cgFileName = bgPath.split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '');
         this.galleryManager.unlockCG(cgFileName);
-        try { window.CupidMedia?.unlockCG?.(cgFileName); } catch (_) {}
+        try { await window.CupidMedia?.unlockCG?.(cgFileName); } catch (_) {}
 
         const bgUrl = (window.CupidMedia?.isProtectedPath?.(bgPath))
             ? window.CupidMedia.resolveUrl(bgPath)
@@ -621,6 +621,9 @@ class SceneRenderer {
         });
 
         // 이미지 프리로드
+        // The renderer grants only expressions in the scene actually entered.
+        // The shared image loader itself is read-only (also used by galleries).
+        await window.CupidMedia?.unlock?.(Object.values(newCharMap));
         const charPromises = Object.entries(newCharMap)
             .filter(([pos]) => changedSlots.includes(pos))
             .map(([pos, charUrl]) => {
