@@ -946,12 +946,11 @@ function getCharacterOutfitGuard(lang, sceneName, displayName) {
 function getLanguageQualityGuard(lang) {
     const guards = {
         ko: `**[한국어 원문체]**
-- 주인공은 새로 온 전학생이지 편입생이 아닙니다.
-- 2020년대 한국의 자연스러운 구어체로 쓰고, 번역투·상담원 말투·정리 문구·기계적 열거를 피합니다. 호칭과 경어법은 일관되게 유지합니다.`,
+- 주인공은 편입생이 아닌 전학생입니다. 2020년대 구어체와 일관된 호칭·경어법을 씁니다.`,
         en: `**[Language & Terminology Naturalness]**
-- The protagonist is a transfer student/new kid, never an exchange student or college transfer. Use contemporary spoken English with consistent address; avoid translated VN prose and repeated names or pet names.`,
+- The protagonist is a transfer student/new kid, never an exchange student or college transfer. Avoid repeated names or pet names.`,
         es: `**[Language & Terminology Naturalness]**
-- En español latinoamericano natural, llámalo "el nuevo", "alumno nuevo" o "chico nuevo"; "alumno trasladado" solo en un registro oficial. Nunca "estudiante de intercambio" sin esa premisa. Usa tú/ustedes, no vosotros, y evita calcos literales.`,
+- En español latinoamericano natural, llámalo "el nuevo", "alumno nuevo" o "chico nuevo"; "alumno trasladado" solo en un registro oficial. Nunca "estudiante de intercambio" sin esa premisa. Usa tú/ustedes, no vosotros.`,
         ja: `**[自然な日本語と用語]**
 - 主人公はこの学校へ来たばかりの「転校生」です。入試区分の違う「編入生」とは呼びません。
 - セリフは2020年代の日本の高校生や教師が実際に話すような口語にし、キャラクターと好感度に合う距離感を守ります。
@@ -973,6 +972,7 @@ function getNativeAntiTranslationGuard(lang) {
 - 오타는 뜻만 받고, 처음부터 한국어로 쓴 듯 인물의 즉각적인 말·행동·감각으로 시작합니다. 요약·해설·도우미 말투를 피합니다.
 - 분명한 주어·호칭은 생략하고 명사화·피동·상투적 비유·감탄·말줄임표·의성어 반복을 줄이며 JSON 키는 유지합니다.
 - 지문(narration/scene/sceneNarration)은 3인칭 소설 서술체(-다/-했다)로 쓰며 -요·-ㅂ니다·-습니다로 끝내지 않습니다. 실제 발화는 dialogue에만 두고 존댓말·반말·사투리·호칭 등 인물 고유 말투는 대사에만 적용합니다. 과거 지문의 문체·대사 혼입 오류는 이어 쓰지 않습니다.
+- 하고 싶은 말을 하되 매번 요약·감정 확인·질문 순서를 밟지 않습니다. 길이와 끊김은 성격·감정·관계에 따르며 억지로 더듬거나 말을 흐리지 않습니다. 드러난 감정을 몸짓마다 설명하거나 대사 사이를 채우려 같은 표정이나 시선, 소품을 만지는 동작을 반복하지 않습니다.
 
 `;
     }
@@ -981,6 +981,7 @@ function getNativeAntiTranslationGuard(lang) {
         return `**[最初から日本語で書いた文体]**
 - 誤字や崩れた文法は意図だけを受け取り、翻訳調や案内役の返事ではなく、場面内の自然な日本語の言動から始めます。
 - キャラクター固有の一人称・呼び方・敬語・距離感を保ち、不要な比喩を足さず、JSONのキーと固定値は変えません。
+- セリフは、今この相手に伝えたいことから続けます。相手の話を要約し、気持ちを受け止め、質問で締める流れを毎回繰り返しません。言葉の長さや途切れ方は性格・感情・関係に合わせ、自然に見せるためだけにわざとつかえたり言葉を濁したりしません。すでに伝わっている感情を身振りのたびに解説したり、セリフの間を埋めるために同じ表情・視線・小道具の動きを繰り返したりしません。
 
 `;
     }
@@ -996,8 +997,8 @@ function getNativeAntiTranslationGuard(lang) {
     }[lang] || 'the selected target language';
 
     return `**[Target-Language Voice]**
-- Keep segments[].text idiomatic in ${languageName} and character-specific; read typos or code-switching for intent without copying them as style.
-- Keep dialect, pronouns, formality, and address consistent, localize honorific habits naturally, and leave JSON keys and enum values unchanged.
+- Use idiomatic ${languageName}, consistent character voice/dialect/pronouns/address/register/honorifics. Read typos/code-switching for intent; preserve JSON keys/enums.
+- Speak from current intent; avoid routine recap→validation→question. Personality/emotion/relationship set length and pauses; no feigned stammers or trailing speech. Do not explain clear emotions behind gestures or repeat expressions/glances/prop motions as filler.
 
 `;
 }
@@ -1056,10 +1057,7 @@ function getNativeStylePolishGuard(lang, sceneName, displayName) {
     };
 
     if (lang === 'ko') {
-        return `**[캐릭터 문체]**
-- 실제 사람의 말처럼 장면의 호흡을 따르고, 공용 로맨스 문체보다 캐릭터 고유의 말버릇·길이·리듬을 우선합니다.
-
-`;
+        return '';
     }
 
     if (lang === 'en') {
@@ -2130,7 +2128,7 @@ function buildSystemPrompt(params) {
             : "Face-to-face input is already an in-scene line, action, silence, correction, or cue.")
         : (isRemote
             ? "전화나 메신저 대화도 세계 안에서 벌어집니다. 길이와 호흡은 캐릭터와 순간을 따르며, 상대가 그 매체로 알 수 있는 말·소리·전송된 내용 안에서 반응하세요."
-            : "대면 입력은 이미 장면 안에서 나온 말, 행동, 침묵, 정정, 단서 가운데 하나입니다.");
+            : "대면 입력은 장면 속 말·행동·침묵·정정·단서입니다.");
     const livingInitiativeRule = buildCupidLivingInitiativeRule(effectiveLang);
     const thirdPersonAdultCameraRule = romanticInterlude
         ? `${buildCupidTemptationRomanceGuidance(effectiveLang)}\n\n${buildCupidThirdPersonAdultCameraRule(effectiveLang)}`
@@ -2174,7 +2172,7 @@ ${compactStableGuidance}
 ${compactLiveState}
 ${compactDynamicGuidance}`;
     }
-    return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}한국어로만 답하세요. 지금은 주인공과 ${aiCharName}, 두 사람만 마주한 장면입니다. 다른 인물은 언급을 들은 ${aiCharName}의 반응으로만 남기고 장면에 들이지 마세요.
+    return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}한국어로만 답합니다. 주인공과 ${aiCharName} 둘만 등장하며 다른 인물은 언급을 들은 ${aiCharName}의 반응으로만 다룹니다.
 ${koreanBanmalRule}
 [캐릭터 핵심]
 캐릭터: ${charPersonality}

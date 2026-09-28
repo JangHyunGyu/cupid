@@ -303,8 +303,8 @@ class GalleryFreeTalk {
     _getLanguageQualityGuard() {
         if (this.lang === 'ko') {
             return `**[한국어 원문체]**
-- 현재는 졸업 후이며, 전학생은 과거의 애칭·추억으로만 쓰고 편입생은 쓰지 않습니다.
-- 현대 한국 연인의 자연스러운 구어체로 쓰고, 번역투·상담원 말투·정리 문구·기계적 열거를 피합니다. 호칭과 말투는 일관되게 유지합니다.
+- 졸업 후: '전학생'은 옛 애칭으로 부르거나 추억을 이야기할 때만 쓰며 '편입생'은 쓰지 않습니다.
+- 현대 연인의 구어체와 일관된 호칭을 씁니다.
 
 `;
         }
@@ -395,17 +395,12 @@ class GalleryFreeTalk {
         };
 
         if (this.lang === 'ko') {
-            return `**[캐릭터 문체]**
-- 대사는 실제 사람의 말처럼 장면의 호흡에 맞춥니다.
-- 문장 길이와 리듬은 캐릭터와 순간에 따라 달라지며, 공용 연인 문체보다 캐릭터 고유의 말버릇을 우선합니다.
-
-`;
+            return '';
         }
 
         if (this.lang === 'en') {
             return `**[Natural English Voice]**
 - Dialogue sounds spoken, intimate, and current, not like translated VN prose or a romance essay. Use contractions when they fit the speaker.
-- Let length and pacing follow the character and the moment: a quick reaction can be brief, while a thought that matters can breathe.
 - Keep the character's voice distinct from generic romance style:
 ${englishCharacterLines[charId] || '- Keep the current character distinct in word choice, rhythm, and emotional distance.'}
 
@@ -425,7 +420,6 @@ ${japaneseCharacterLines[charId] || '- 現在のキャラの一人称、呼び�
         if (this.lang === 'es') {
             return `**[Voz natural en español latinoamericano]**
 - El diálogo suena hablado, íntimo, actual y natural, no como traducción literal del inglés, coreano o japonés.
-- La extensión y el ritmo siguen al personaje y al momento: una reacción puede ser breve y una idea importante puede desarrollarse sin cortes artificiales.
 - La voz del personaje manda sobre el romance genérico:
 ${spanishCharacterLines[charId] || '- Mantén una voz distintiva para este personaje en vocabulario, ritmo y distancia emocional.'}
 
@@ -435,7 +429,6 @@ ${spanishCharacterLines[charId] || '- Mantén una voz distintiva para este perso
         if (this.lang === 'fr') {
             return `**[Voix française naturelle]**
 - Le dialogue sonne parlé, intime, actuel et naturel, pas comme une traduction de l'anglais, du coréen ou du japonais.
-- La longueur et le rythme suivent le personnage et le moment : une réaction peut être brève, tandis qu'une pensée importante peut aller à son terme sans coupure artificielle.
 - La voix du personnage prime sur le romantisme générique :
 ${frenchCharacterLines[charId] || "- Garde une voix distincte pour ce personnage dans le vocabulaire, le rythme et la distance émotionnelle."}
 
@@ -445,7 +438,6 @@ ${frenchCharacterLines[charId] || "- Garde une voix distincte pour ce personnage
         if (this.lang === 'de') {
             return `**[Natürliche deutsche Stimme]**
 - Dialoge klingen gesprochen, intim, modern und natürlich, nicht wie aus dem Englischen, Koreanischen oder Japanischen übersetzt.
-- Länge und Rhythmus folgen Figur und Augenblick: Eine spontane Reaktion darf kurz sein, ein wichtiger Gedanke darf sich ohne künstliche Kürzung entfalten.
 - Charakterstimme steht über generischer Romantik:
 ${germanCharacterLines[charId] || '- Gib diesem Charakter eine eigene Stimme in Wortwahl, Rhythmus und emotionaler Distanz.'}
 
@@ -455,7 +447,6 @@ ${germanCharacterLines[charId] || '- Gib diesem Charakter eine eigene Stimme in 
         if (this.lang === 'pt') {
             return `**[Voz natural em português brasileiro]**
 - O diálogo soa falado, íntimo, atual e natural, não como tradução literal do inglês, coreano ou japonês.
-- A extensão e o ritmo seguem a personagem e o momento: uma reação pode ser breve, e uma ideia importante pode se desenvolver sem cortes artificiais.
 - A voz da personagem vem antes do romance genérico:
 ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta personagem no vocabulário, no ritmo e na distância emocional.'}
 
@@ -2602,7 +2593,7 @@ ${characterOutfitGuard}
 ${characterCanonGuard}
 ${sharedCastKnowledge}
 장면 사실: 성립한 사건을 잇습니다.
-시점: 사용자의 상태·선택·동의·거절을 지킵니다.
+시점: 사용자 상태·선택을 지킵니다.
 ${livingInitiativeRule}
 ${thirdPersonAdultCameraRule}
 ${compactGalleryGuidance}

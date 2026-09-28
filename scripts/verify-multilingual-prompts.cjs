@@ -271,6 +271,20 @@ function splitCacheBoundary(prompt, label) {
     const first = prompt.indexOf(marker);
     assert(first >= 0, `${label} is missing the cache boundary`);
     assert(first === prompt.lastIndexOf(marker), `${label} has more than one cache boundary`);
+    const naturalnessRules = prompt.includes('[자연스러운 한국어 말투]')
+        ? ["요약·감정 확인·질문 순서", "성격·감정·관계에 따르며", "억지로 더듬거나 말을 흐리지", "드러난 감정을 몸짓마다 설명", "소품을 만지는 동작을 반복하지"]
+        : prompt.includes('[最初から日本語で書いた文体]') ? ["質問で締める流れを毎回繰り返しません", "性格・感情・関係に合わせ", "わざとつかえたり言葉を濁したり", "身振りのたびに解説", "表情・視線・小道具の動き"] : ["routine recap→validation→question", "Personality/emotion/relationship set length and pauses", "no feigned stammers or trailing speech", "clear emotions behind gestures", "expressions/glances/prop motions as filler"];
+    const stable = prompt.slice(0, first);
+    const dynamic = prompt.slice(first + marker.length);
+    for (const rule of naturalnessRules) {
+        assert(stable.split(rule).length === 2 && !dynamic.includes(rule),
+            `${label} must include natural dialogue guidance exactly once in the stable prefix: ${rule}`);
+    }
+    const fingerprint = context.window.CupidFreeTalkCore.getStablePromptFingerprint;
+    assert(fingerprint(prompt) !== fingerprint(prompt.replace(naturalnessRules[0], '')),
+        `${label} natural dialogue rule edits must split the cache fingerprint`);
+    assert(fingerprint(prompt) === fingerprint(prompt + '\nLIVE_SCENE_VARIANT'),
+        `${label} live-scene changes must retain the stable fingerprint`);
     return {
         stable: prompt.slice(0, first).trim(),
         dynamic: prompt.slice(first + marker.length).trim()
