@@ -1,6 +1,36 @@
 /* Keep this entry guard parseable before any modern runtime is loaded. */
 (function () {
     'use strict';
+
+    // Chrome/WebView before 97 has no reverse array search. Older Android WebViews
+    // still pass the guard below, so keep these helpers available to every module.
+    function definePolyfill(name, fn) {
+        if (typeof Array.prototype[name] === 'function') return;
+        try {
+            Object.defineProperty(Array.prototype, name, { value: fn, writable: true, configurable: true });
+        } catch (_) {
+            Array.prototype[name] = fn;
+        }
+    }
+    definePolyfill('findLastIndex', function (predicate, thisArg) {
+        if (this == null) throw new TypeError('Array.prototype.findLastIndex called on null or undefined');
+        if (typeof predicate !== 'function') throw new TypeError('predicate must be a function');
+        var list = Object(this);
+        for (var i = (list.length >>> 0) - 1; i >= 0; i--) {
+            if (predicate.call(thisArg, list[i], i, list)) return i;
+        }
+        return -1;
+    });
+    definePolyfill('findLast', function (predicate, thisArg) {
+        if (this == null) throw new TypeError('Array.prototype.findLast called on null or undefined');
+        if (typeof predicate !== 'function') throw new TypeError('predicate must be a function');
+        var list = Object(this);
+        for (var i = (list.length >>> 0) - 1; i >= 0; i--) {
+            if (predicate.call(thisArg, list[i], i, list)) return list[i];
+        }
+        return undefined;
+    });
+
     var supported = typeof Object.hasOwn === 'function' && typeof Array.prototype.at === 'function';
     window.CupidRuntimeSupport = { supported: supported };
     if (supported) return;

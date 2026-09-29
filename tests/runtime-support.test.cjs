@@ -47,3 +47,17 @@ test('modern browsers are accepted without DOM work and missing runtime APIs are
     assert.equal(unsupported.window.CupidRuntimeSupport.supported, false);
     assert.equal(typeof listener, 'function');
 });
+
+test('reverse array search helpers are polyfilled for older WebViews', () => {
+    const source = read('assets/js/runtime-support.js');
+    const context = { window: {} };
+    vm.runInNewContext(`delete Array.prototype.findLastIndex; delete Array.prototype.findLast;\n${source}\n` +
+        'window.result = [' +
+        '[1, 2, 3, 2].findLastIndex(value => value === 2),' +
+        '[1, 2, 3].findLastIndex(value => value === 9),' +
+        '[1, 2, 3, 2].findLast(value => value < 3),' +
+        '[].findLast(value => true),' +
+        'Object.keys([1, 2, 3])' +
+        '];', context);
+    assert.deepEqual(JSON.parse(JSON.stringify(context.window.result)), [3, -1, 2, null, ['0', '1', '2']]);
+});
