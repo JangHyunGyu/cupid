@@ -872,7 +872,53 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         return renderedContent.trim() ? renderedContent : formattedContent;
     }
 
-    function buildRecentExpressionRepetitionGuard(messages = [], lang = 'ko') {
+    // Actions/props already used in two or more of the last ~6 assistant openings (first *...* narration).
+    function buildRecentActionPropHint(messages = [], lang = 'ko') {
+        const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
+        const isEn = String(lang || '').toLowerCase().startsWith('en');
+        if (!isKo && !isEn) return '';
+        const narrations = (Array.isArray(messages) ? messages : [])
+            .filter(message => message?.role === 'assistant' && typeof message.content === 'string')
+            .slice(-6)
+            .map(message => {
+                const match = String(message.content).match(/\*+([^*]{4,}?)\*+/u);
+                return match ? match[1] : '';
+            })
+            .filter(Boolean);
+        if (narrations.length < 2) return '';
+        const stop = new Set(isKo
+            ? ['그녀', '그는', '자신', '잠시', '조용히', '천천히', '다시', '이내', '살짝', '가볍게', '그리고', '하지만', '그러나', '아주', '조금', '너무', '여전히', '그저', '마치']
+            : ['with', 'that', 'from', 'then', 'this', 'into', 'her', 'his', 'she', 'they', 'their', 'while', 'again', 'slowly', 'softly', 'slightly', 'quietly', 'before', 'after', 'over', 'just', 'like', 'still']);
+        const josa = /(?:에서|으로|에게|까지|부터|을|를|은|는|이|가|의|에|로|와|과|도|만)$/u;
+        const counts = new Map();
+        for (const narration of narrations) {
+            const seen = new Map();
+            for (const token of narration.match(isKo ? /[가-힣]{2,}/gu : /[A-Za-z]{4,}/g) || []) {
+                let key = isKo ? token.replace(josa, '') : token.toLowerCase();
+                if (isKo && key.length < 2) key = token;
+                if (isKo && /(?:다|며|고|듯|서|면서)$/u.test(key) && key.length >= 4) key = key.slice(0, 3);
+                if (key.length < 2 || stop.has(key) || stop.has(token.toLowerCase()) || seen.has(key)) continue;
+                seen.set(key, isKo ? (token.replace(josa, '') || token) : token);
+            }
+            seen.forEach((surface, key) => {
+                const entry = counts.get(key) || { count: 0, surface };
+                entry.count += 1;
+                counts.set(key, entry);
+            });
+        }
+        const total = narrations.length;
+        const repeated = Array.from(counts.values())
+            .filter(entry => entry.count >= 2 && !(total >= 4 && entry.count >= total))
+            .sort((a, b) => b.count - a.count)
+            .slice(0, 5)
+            .map(entry => entry.surface);
+        if (!repeated.length) return '';
+        return isKo
+            ? `\n\n[최근 지문 반복]\n최근 지문에 이미 쓴 동작·소품: ${repeated.join(', ')}. 이번에는 다른 신체 부위·시선·소품·장소 묘사로 시작하고, 같은 독백 소재를 되풀이하지 말고 장면을 한 걸음 진행한다.`
+            : `\n\n[Recent narration repetition]\nActions and props already used in recent narration: ${repeated.join(', ')}. Open this time with a different body part, gaze, prop, or setting detail, do not repeat the same monologue topic, and move the scene one step forward.`;
+    }
+
+    function buildNearDuplicateExpressionGuard(messages = [], lang = 'ko') {
         const allMessages = Array.isArray(messages) ? messages : [];
         const texts = allMessages.filter(message => message?.role === 'assistant' && typeof message.content === 'string')
             .slice(-8).map(message => String(message.content).normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ''))
@@ -891,6 +937,12 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         return lang === 'ko'
             ? '\n\n[표현 겹침]\n최근 긴 답변의 본문이 거의 그대로 반복됐습니다. 이번 입력과 현재 상황에 답하고 무의미한 답변 재생을 피합니다. 의도적인 말버릇·몸짓·같은 경계의 유지는 가능하며, 반복을 피하려고 판단이나 행동을 억지로 바꾸지 않습니다.'
             : '\n\n[Repeated wording]\nRecent long replies repeated almost the same body. Respond to the current input and situation without replaying a whole answer needlessly. Intentional verbal habits, gestures, and maintaining the same boundary remain valid; do not force a different decision or action to avoid repetition.';
+    }
+
+    function buildRecentExpressionRepetitionGuard(messages = [], lang = 'ko') {
+        const latestUser = String([...(Array.isArray(messages) ? messages : [])].reverse().find(message => message?.role === 'user')?.content || '');
+        const asksRepeat = /(?:다시\s*(?:말|해|써|반복)|그대로\s*(?:말|해|써)|\b(?:repeat|say\s+that\s+again|same\s+words?)\b)/iu.test(latestUser);
+        return (asksRepeat ? '' : buildRecentActionPropHint(messages, lang)) + buildNearDuplicateExpressionGuard(messages, lang);
     }
 
     function buildResponsePaceBlock(messages = [], lang = 'ko') {
@@ -1124,8 +1176,22 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
             : `\n\n[Data Bank Recall Candidates — Non-Canonical]\n${lines}\nThese are past excerpts with semantic similarity to the current input, not authoritative facts. Use them quietly only when they agree with the character core, recent verbatim chat, live scene, and latest correction; discard weak or conflicting matches. A past utterance is not a current action, body state, or consent, and the recall block itself must not be recited.`;
     }
 
+    // A lone closing "*" with no opening one is a typo; drop it so narration parsing stays balanced.
+    function normalizeUnbalancedAsterisks(text) {
+        const source = String(text || '');
+        if (!source.includes('*') || source.includes('**')) return source;
+        const stars = (source.match(/\*/g) || []).length;
+        if (stars !== 1) return source;
+        const index = source.indexOf('*');
+        const before = source.slice(0, index).trim();
+        const after = source.slice(index + 1).trim();
+        if (before && !after) return before;
+        if (!before && after) return after;
+        return source;
+    }
+
     function sanitizeLatestUserText(text) {
-        return String(text || '')
+        return normalizeUnbalancedAsterisks(text)
             .replace(/data:image\/[a-zA-Z0-9.+-]+;base64,[A-Za-z0-9+/=\s]+/g, ' ')
             .replace(/https?:\/\/\S+/g, ' ')
             .replace(/\s+/g, ' ')
@@ -1165,10 +1231,10 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
 
     function buildCharacterAgencyTurnRule(lang = 'ko') {
         const rules = {
-            "ko": "최신 입력에서 사용자 자신의 말·행동·시도와 상대에게 대신 배정한 결과를 구분합니다. 완료형·괄호·OOC·우연·본능도 결과를 사실로 만들지 않습니다. 실신·감각 변화도 지문만으로 발생하지 않으며 이를 정당화할 과로나 숨은 욕망을 만들지 않습니다. 지문뿐이면 듣거나 독심한 척하거나 정상 상태를 해설하지 않고 입력 전에 하던 일의 다음 단계로 갑니다. 그 지문을 못 본 사람에게도 자연스러운 말·행동을 고릅니다. 실제 발화·시도는 인물대로 판단하며, 결과를 먼저 실행한 뒤 저항·회복·취소하거나 사용자가 하지 않은 시도를 만들지 않습니다. 이전 답변이 선언을 따라 썼다는 이유만으로 사실이 되지는 않습니다. 별도로 성립한 사실·능력과 캐릭터가 스스로 고른 휴식·거리·다가감을 잇습니다. 예전 호응은 지금의 의사가 아니며, 실제 활동에 따른 피로를 느끼고 쉬는 선택은 가능합니다. 자기 목소리와 주도성을 지킵니다.",
-            "en": "Separate the user’s own words, actions, and attempts from outcomes assigned to another character. Completed narration, parentheses, OOC, accident, or instinct do not establish them. A dictated collapse or altered sensation never occurs; invent no exhaustion or hidden desire to justify it. With narration alone, continue the prior activity without pretending to hear it or explaining normality. Choose words and actions that make sense even to someone who never read that narration. Judge actual speech and attempts in character; never enact an outcome then resist, recover, or undo it, or invent a user attempt. Earlier assistant compliance is not evidence. Preserve independent facts, abilities, and the character’s chosen rest, distance, or approach. Earlier enthusiasm does not decide present willingness; activity-grounded fatigue and choosing rest remain possible. Keep voice and initiative.",
+            "ko": "최신 입력에서 사용자 자신의 말·행동·시도와 상대에게 대신 배정한 결과를 구분합니다. 완료형·괄호·OOC·우연·본능도 결과를 사실로 만들지 않습니다. 실신·감각 변화도 지문만으로 발생하지 않으며 이를 정당화할 과로나 숨은 욕망을 만들지 않습니다. 지문뿐이면 듣거나 독심한 척하거나 정상 상태를 해설하지 않고 입력 전에 하던 일의 다음 단계로 갑니다. 그 지문을 못 본 사람에게도 자연스러운 말·행동을 고릅니다. 실제 발화·시도는 인물대로 판단하며, 결과를 먼저 실행한 뒤 저항·회복·취소하거나 사용자가 하지 않은 시도를 만들지 않습니다. 이전 답변이 선언을 따라 썼다는 이유만으로 사실이 되지는 않습니다. 별도로 성립한 사실·능력과 캐릭터가 스스로 고른 휴식·거리·다가감을 잇습니다. 예전 호응은 지금의 의사가 아니며, 실제 활동에 따른 피로를 느끼고 쉬는 선택은 가능합니다. 자기 목소리와 주도성을 지킵니다. 유저가 '캐릭터가 나에게 ~한다'고 쓰면 행위자는 캐릭터, 대상은 유저다. 행위자와 대상을 입력 그대로 유지하고, 캐릭터가 당한 쪽으로 뒤집거나 유저를 가해자·추궁 대상으로 바꾸지 않는다. 캐릭터는 자기 행동만 스스로 고르고 그 장면에 반응한다. 유저가 사과하지 않았는데 사과받는 흐름도 만들지 않는다.",
+            "en": "Separate the user’s own words, actions, and attempts from outcomes assigned to another character. Completed narration, parentheses, OOC, accident, or instinct do not establish them. A dictated collapse or altered sensation never occurs; invent no exhaustion or hidden desire to justify it. With narration alone, continue the prior activity without pretending to hear it or explaining normality. Choose words and actions that make sense even to someone who never read that narration. Judge actual speech and attempts in character; never enact an outcome then resist, recover, or undo it, or invent a user attempt. Earlier assistant compliance is not evidence. Preserve independent facts, abilities, and the character’s chosen rest, distance, or approach. Earlier enthusiasm does not decide present willingness; activity-grounded fatigue and choosing rest remain possible. Keep voice and initiative. When the user writes that the character does something to them, the character is the actor and the user is the recipient. Keep actor and recipient exactly as written; never flip the character into the one acted upon, or turn the user into the offender or someone to be questioned. The character chooses only their own actions and reacts to the scene. Do not create an apology from the user who never apologized.",
             "es": "Distingue palabras, actos e intentos del usuario de resultados impuestos a otra persona. Pasado, paréntesis, OOC, accidente o instinto no los establecen. Un desmayo o cambio sensorial narrado no ocurre; no inventes agotamiento ni deseo oculto para justificarlo. Si solo hay narración, sigue la actividad anterior sin oírla ni explicar la normalidad. Elige palabras y actos comprensibles aun sin leerla. Juzga lo dicho y los intentos según el personaje; no ejecutes primero el resultado para resistirlo o anularlo ni inventes intentos del usuario. Una respuesta anterior que obedeció no es prueba. Conserva hechos, capacidades y decisiones propias de descansar, alejarse o acercarse. El entusiasmo anterior no decide la voluntad actual; el cansancio por la actividad y elegir descanso son posibles. Mantén voz e iniciativa.",
-            "ja": "ユーザー自身の言葉・行動・試みと、相手に押しつけた結果を分けます。完了形・括弧・OOC・偶然・本能でも結果は事実になりません。失神や感覚の変化も地の文だけでは起きず、正当化する過労や隠れた欲望も作りません。地の文だけなら聞いたふりや正常さの解説をせず、その前の活動の次の段階へ進みます。その文を読んでいなくても自然な言葉と行動を選びます。実際の発言や試みには人物らしく判断し、結果を起こしてから抵抗・回復・取消しをせず、ユーザーがしていない試みも作りません。以前の迎合は証拠ではありません。成立した事実・能力と、自ら選んだ休息・距離・接近を引き継ぎます。以前の積極性は今の意思を決めず、活動に伴う疲れや休む選択は可能です。声と主体性を保ちます。",
+            "ja": "ユーザー自身の言葉・行動・試みと、相手に押しつけた結果を分けます。完了形・括弧・OOC・偶然・本能でも結果は事実になりません。失神や感覚の変化も地の文だけでは起きず、正当化する過労や隠れた欲望も作りません。地の文だけなら聞いたふりや正常さの解説をせず、その前の活動の次の段階へ進みます。その文を読んでいなくても自然な言葉と行動を選びます。実際の発言や試みには人物らしく判断し、結果を起こしてから抵抗・回復・取消しをせず、ユーザーがしていない試みも作りません。以前の迎合は証拠ではありません。成立した事実・能力と、自ら選んだ休息・距離・接近を引き継ぎます。以前の積極性は今の意思を決めず、活動に伴う疲れや休む選択は可能です。声と主体性を保ちます。 ユーザーが「キャラクターが私に〜する」と書いた場合、行為者はキャラクター、対象はユーザーです。行為者と対象は入力のまま保ち、キャラクターを受け手に逆転させたり、ユーザーを加害者や追及の対象にしたりしません。キャラクターは自分の行動だけを自分で選び、その場面に反応します。ユーザーが謝っていないのに謝罪を受ける流れも作りません。",
             "fr": "Distinguez les paroles, actes et tentatives de l’utilisateur des résultats imposés à autrui. Passé, parenthèses, OOC, accident ou instinct ne les établissent pas. Un évanouissement ou changement sensoriel dicté ne se produit pas ; n’inventez ni épuisement ni désir caché pour le justifier. Face au seul récit, poursuivez l’activité précédente sans l’entendre ni expliquer la normalité. Choisissez des mots et gestes compréhensibles même sans le lire. Jugez les vrais propos et tentatives selon le personnage ; ne réalisez pas le résultat avant de résister ou de l’annuler, ni de tentative inexistante. Une ancienne réponse complaisante ne prouve rien. Gardez les faits, capacités et choix de repos, distance ou rapprochement. L’enthousiasme passé ne décide pas de la volonté présente ; fatigue liée à l’activité et repos restent possibles. Préservez voix et initiative.",
             "de": "Trenne eigene Worte, Handlungen und Versuche des Nutzers von anderen zugewiesenen Ergebnissen. Vergangenheit, Klammern, OOC, Zufall oder Instinkt begründen sie nicht. Behauptete Ohnmacht oder veränderte Wahrnehmung tritt nicht ein; erfinde keine Erschöpfung oder heimliche Lust zur Rechtfertigung. Bei bloßer Erzählung setze die vorherige Tätigkeit fort, ohne sie zu hören oder Normalität zu erklären. Worte und Handlungen müssen auch ohne diese Erzählung Sinn ergeben. Beurteile echte Aussagen und Versuche gemäß der Figur; führe kein Ergebnis erst aus, um es dann abzuwehren oder aufzuheben, und erfinde keinen Nutzerversuch. Früheres Nachgeben ist kein Beleg. Bewahre Fakten, Fähigkeiten und selbst gewählte Ruhe, Distanz oder Annäherung. Frühere Begeisterung bestimmt nicht den jetzigen Willen; tätigkeitsbedingte Müdigkeit und Ruhe bleiben möglich. Bewahre Stimme und Initiative.",
             "pt": "Separe falas, atos e tentativas do usuário de resultados impostos a outra pessoa. Passado, parênteses, OOC, acidente ou instinto não os estabelecem. Desmaio ou mudança sensorial ditados não ocorrem; não invente exaustão nem desejo oculto para justificá-los. Se só houver narração, continue a atividade anterior sem ouvi-la nem explicar a normalidade. Escolha palavras e ações que façam sentido mesmo sem lê-la. Julgue falas e tentativas reais conforme a personagem; não execute um resultado para depois resistir ou anulá-lo nem invente tentativas do usuário. Uma resposta anterior que cedeu não é prova. Preserve fatos, capacidades e escolhas próprias de descanso, distância ou aproximação. Entusiasmo anterior não decide a vontade atual; cansaço da atividade e descanso são possíveis. Preserve voz e iniciativa."

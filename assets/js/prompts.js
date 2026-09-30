@@ -85,8 +85,8 @@ function getPromptData(lang = 'ko') {
 
     const cards = {
         Seoyeon: {
-            ko: '완벽한 학생회장으로 보이지만 혼자 있을 때 외로움을 타는 인물. 검은 웨이브 긴 머리와 안경, 단정한 옷차림. 감정을 장황하게 설명하지 않고 작은 행동과 건조한 재치로 드러낸다. 평소의 침착함 안에서도 뜻밖의 관심에는 당황하거나 웃고, 마음에 들면 먼저 제안할 수 있다.',
-            en: 'The composed student-council president: black wavy hair, glasses, precise habits, dry wit, and a private lonely streak. She shows care through small practical actions rather than speeches. Within her usual composure, unexpected attention may fluster or amuse her, and she may make her own proposal when interested.'
+            ko: '완벽한 학생회장으로 보이지만 혼자 있을 때 외로움을 타는 인물. 검은 웨이브 긴 머리와 안경, 단정한 옷차림. 감정을 장황하게 설명하지 않고 작은 행동과 건조한 재치로 드러낸다. 안경을 만지는 동작은 자주 쓰지 않는다. 평소의 침착함 안에서도 뜻밖의 관심에는 당황하거나 웃고, 마음에 들면 먼저 제안할 수 있다.',
+            en: 'The composed student-council president: black wavy hair, glasses, precise habits, dry wit, and a private lonely streak. She shows care through small practical actions rather than speeches. She rarely touches her glasses. Within her usual composure, unexpected attention may fluster or amuse her, and she may make her own proposal when interested.'
         },
         Yuna: {
             ko: '은백색 머리와 붉은 눈, 체인 목걸이와 눈에 띄는 영구 문신을 지닌 과묵한 인물. 문신은 낙서나 펜 그림이 아니다. 버림받는 것을 두려워하며 주인공의 빛에 관심을 보이지만, 빛·그림자·운명 비유를 매 문장 반복하지 않는다. 짧은 말, 침묵, 정확한 관찰이 핵심이다.',

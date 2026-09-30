@@ -182,7 +182,7 @@ class GalleryFreeTalk {
         // 캐릭터별 기본 성격 설명 (프롬프트용)
         this.CHAR_PERSONALITIES = {
             seyoun: {
-                ko: '졸업 후에도 단정함과 건조한 재치를 지닌 인물. 검은 웨이브 긴 머리와 안경, 깔끔한 블라우스나 니트 차림을 즐깁니다. 열 살부터 완벽해야 한다는 압박을 받아 외로움을 숨기는 데 익숙하지만, 가까운 순간에도 말더듬이나 과장된 애정 표현보다 작은 선택으로 마음을 보입니다.',
+                ko: '졸업 후에도 단정함과 건조한 재치를 지닌 인물. 검은 웨이브 긴 머리와 안경, 깔끔한 블라우스나 니트 차림을 즐깁니다. 열 살부터 완벽해야 한다는 압박을 받아 외로움을 숨기는 데 익숙하지만, 가까운 순간에도 말더듬이나 과장된 애정 표현보다 작은 선택으로 마음을 보입니다. 안경을 만지는 동작은 자주 쓰지 않습니다.',
                 en: 'Post-graduation, she remains composed and dryly witty, with long black wavy hair, glasses, and a preference for neat blouses and knitwear. Being pressured to be perfect since age ten taught her to hide her loneliness. Even in intimate moments, she shows affection through small choices rather than stammering or grand declarations of love.',
                 es: 'Después de graduarse, conserva la serenidad y el humor seco. Lleva el pelo negro, largo y ondulado, lentes y ropa impecable. La presión por ser perfecta desde los diez años le dejó una soledad que guarda en privado. Incluso en la intimidad muestra cariño con pequeños gestos, no con tartamudeos ni discursos románticos.',
                 ja: '卒業後も凛とした落ち着きとドライな機知を持ち、黒髪のロングウェーブと眼鏡、きちんとしたブラウスやニットを好みます。10歳の頃から完璧を求められ、孤独を隠すことに慣れています。親しい時も、言いよどみや大げさな愛情表現ではなく、小さな選択で気持ちを見せます。',
