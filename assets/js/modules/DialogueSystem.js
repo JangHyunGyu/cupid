@@ -258,17 +258,23 @@ class DialogueSystem {
     _parseNarrationSegments(text) {
         const segments = [];
         const regex = /\*\*([^*]+)(?:\*\*)?|\*([^*]+)(?:\*)?/g;
+        // 짝이 맞지 않아 남은 '*'는 화면에 별도 줄로 찍히지 않도록 일반 텍스트에서 걷어낸다.
+        const pushTextPiece = (piece) => {
+            const cleaned = piece.replace(/\*/g, '');
+            if (cleaned !== piece && !cleaned.trim()) return;
+            segments.push({ type: 'text', content: cleaned });
+        };
         let lastIndex = 0;
         let match;
         while ((match = regex.exec(text)) !== null) {
             if (match.index > lastIndex) {
-                segments.push({ type: 'text', content: text.substring(lastIndex, match.index) });
+                pushTextPiece(text.substring(lastIndex, match.index));
             }
             segments.push({ type: match[1] ? 'emphasis' : 'action', content: match[1] || match[2] });
             lastIndex = regex.lastIndex;
         }
         if (lastIndex < text.length) {
-            segments.push({ type: 'text', content: text.substring(lastIndex) });
+            pushTextPiece(text.substring(lastIndex));
         }
         return segments.length ? segments : [{ type: 'text', content: text }];
     }
@@ -296,7 +302,9 @@ class DialogueSystem {
         if (!Array.isArray(segments) || segments.length === 0) return '';
         return segments.map(seg => {
             if (!seg || !seg.text) return '';
-            const text = this._zetaFormatText(this.processPlaceholders(seg.text, charName), seg.type === 'narration');
+            // 모델이 지문 안에 섞어 보낸 '*'가 바깥 *...* 표시와 엉키지 않게 걷어낸다.
+            const text = this._zetaFormatText(this.processPlaceholders(String(seg.text).replace(/\*/g, ''), charName), seg.type === 'narration');
+            if (!text) return '';
             return seg.type === 'narration' ? `*${text}*` : text;
         }).filter(Boolean).join('\n');
     }

@@ -1926,8 +1926,9 @@ class FreeTalkSystem {
                 pt: 'A conexão foi interrompida. Sua última mensagem não foi salva na conversa. Tente novamente.'
             }[langErr] || 'The connection was interrupted. Your last input was not saved to the conversation. Please try again.';
 
+            // 모달을 닫지 않아도 입력창과 전송 버튼이 finally에서 바로 복구되도록 기다리지 않는다.
             if (typeof this.uiManager.showModal === 'function') {
-                await this.uiManager.showModal(requestErrorMessage, true);
+                this._showErrorModalWithoutBlocking(requestErrorMessage);
             } else if (typeof window.alert === 'function') {
                 window.alert(requestErrorMessage);
             }
@@ -1956,6 +1957,17 @@ class FreeTalkSystem {
         }
     }
 
+    _showErrorModalWithoutBlocking(message) {
+        try {
+            const shown = this.uiManager?.showModal?.(message, true);
+            if (shown && typeof shown.catch === 'function') {
+                shown.catch(modalError => console.warn('[Cupid FreeTalk] Error modal failed', modalError));
+            }
+        } catch (modalError) {
+            console.warn('[Cupid FreeTalk] Error modal failed', modalError);
+        }
+    }
+
     advanceGroupMessageQueue() {
         if (!this.isGroupMode || !this._groupAdvanceResolver) return false;
         const resolve = this._groupAdvanceResolver;
@@ -1970,7 +1982,20 @@ class FreeTalkSystem {
         this.uiManager.showNextIndicator?.(remaining > 0);
         if (remaining <= 0) return Promise.resolve(true);
         return new Promise((resolve) => {
-            this._groupAdvanceResolver = resolve;
+            // 사용자가 넘기지 않아도 대기가 영원히 이어지지 않도록 넉넉한 시간 뒤 자동으로 넘긴다.
+            let timer = null;
+            const resolver = (value) => {
+                if (timer) clearTimeout(timer);
+                resolve(value);
+            };
+            timer = setTimeout(() => {
+                if (this._groupAdvanceResolver === resolver) {
+                    this._groupAdvanceResolver = null;
+                    this.uiManager.showNextIndicator?.(false);
+                    resolver(true);
+                }
+            }, 180000);
+            this._groupAdvanceResolver = resolver;
         }).then((advanced) => {
             this._groupMessagesRemaining = Math.max(0, remaining - 1);
             this._assertRequestContext(requestContext);
@@ -2523,7 +2548,8 @@ class FreeTalkSystem {
                 de: 'Die Verbindung wurde unterbrochen. Deine letzte Eingabe wurde nicht gespeichert. Bitte versuche es erneut.',
                 pt: 'A conexão foi interrompida. Sua última mensagem não foi salva. Tente novamente.'
             }[lang] || 'The connection was interrupted. Please try again.';
-            await this.uiManager.showModal?.(message, true);
+            // 모달을 닫지 않아도 입력창과 전송 버튼이 finally에서 바로 복구되도록 기다리지 않는다.
+            this._showErrorModalWithoutBlocking(message);
         } finally {
             streamingPreview?.stop();
             this.dialogueSystem.finishStreamingText();
@@ -2894,7 +2920,8 @@ class FreeTalkSystem {
         const out = [];
         for (const seg of raw) {
             if (!seg || typeof seg !== 'object') continue;
-            const text = this._sanitizePlayerPlaceholders(typeof seg.text === 'string' ? seg.text.trim() : '');
+            // 지문/대사는 type으로 이미 구분되므로 본문에 섞인 '*'는 걷어낸다(화면에 '*'만 남는 줄 방지).
+            const text = this._sanitizePlayerPlaceholders(typeof seg.text === 'string' ? seg.text.replace(/\*/g, '').trim() : '');
             if (!text) continue;
             let type = (typeof seg.type === 'string') ? seg.type.toLowerCase() : '';
             if (type === 'action' || type === 'narrate' || type === 'narrator' || type === 'desc' || type === 'description' || type === 'scene') {
