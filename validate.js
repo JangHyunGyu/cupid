@@ -376,7 +376,7 @@ if (unreachable.length > 0) {
 }
 
 // ===== 11. Cross-language i18n key consistency =====
-const i18nLangs = ['en', 'ja', 'fr', 'es', 'de', 'pt'];
+const i18nLangs = ['en', 'ja', 'fr', 'es', 'de', 'pt', 'zh'];
 for (const lang of i18nLangs) {
     const langDir = path.join(BASE, 'i18n', lang);
     if (!fs.existsSync(langDir)) continue;
@@ -474,7 +474,7 @@ for (const file of jsFiles) {
 // index.html(KO)을 기준으로 다른 언어 index 파일의 인라인 JS 패턴 비교
 const koIndex = htmlFiles.find(f => f.name === 'index.html');
 if (koIndex) {
-    const langIndexFiles = htmlFiles.filter(f => /^index-(en|es|ja|fr|de|pt)\.html$/.test(f.name));
+    const langIndexFiles = htmlFiles.filter(f => /^index-(en|es|ja|fr|de|pt|zh)\.html$/.test(f.name));
 
     // 체크할 패턴: KO에 있는 수정된 패턴이 다른 언어에도 적용되었는지
     const syncPatterns = [
@@ -497,7 +497,7 @@ if (koIndex) {
 // maxlength는 언어별로 다를 수 있음 (한글 6자, 일본어 8자, 영문 12자) — 검사 스킵
 
 // ===== 13-2. HTML Structure Sync (KO 기준 핵심 HTML 요소가 다른 언어에도 존재하는지) =====
-for (const file of htmlFiles.filter(f => /^index(?:-(?:en|es|ja|fr|de|pt))?\.html$/.test(f.name))) {
+for (const file of htmlFiles.filter(f => /^index(?:-(?:en|es|ja|fr|de|pt|zh))?\.html$/.test(f.name))) {
     const earlyContactHandlerIndex = file.content.indexOf('window.openContactModal = function');
     const gameLoaderIndex = file.content.indexOf('data-cupid-entry-script="true"');
     if (earlyContactHandlerIndex < 0 || gameLoaderIndex < 0 || earlyContactHandlerIndex > gameLoaderIndex) {
@@ -516,7 +516,7 @@ const htmlStructureChecks = [
 for (const check of htmlStructureChecks) {
     const koFile = htmlFiles.find(f => f.name === check.context + '.html');
     if (!koFile || !koFile.content.includes(check.selector)) continue;
-    const langFiles = htmlFiles.filter(f => new RegExp('^' + check.context + '-(en|es|ja|fr|de|pt)\\.html$').test(f.name));
+    const langFiles = htmlFiles.filter(f => new RegExp('^' + check.context + '-(en|es|ja|fr|de|pt|zh)\\.html$').test(f.name));
     for (const langFile of langFiles) {
         if (!langFile.content.includes(check.selector)) {
             errors.push('[HTML_STRUCTURE] ' + langFile.name + ': "' + check.name + '" (' + check.selector + ') 가 index.html(KO)에는 있지만 이 파일에는 누락');
@@ -532,7 +532,7 @@ const gameStructureChecks = [
 for (const check of gameStructureChecks) {
     const koFile = htmlFiles.find(f => f.name === check.context + '.html');
     if (!koFile || !koFile.content.includes(check.selector)) continue;
-    const langFiles = htmlFiles.filter(f => new RegExp('^' + check.context + '-(en|es|ja|fr|de|pt)\\.html$').test(f.name));
+    const langFiles = htmlFiles.filter(f => new RegExp('^' + check.context + '-(en|es|ja|fr|de|pt|zh)\\.html$').test(f.name));
     for (const langFile of langFiles) {
         if (!langFile.content.includes(check.selector)) {
             errors.push('[HTML_STRUCTURE] ' + langFile.name + ': "' + check.name + '" (' + check.selector + ') 누락');
@@ -607,7 +607,7 @@ try {
     let exprMatch;
     while ((exprMatch = exprBlockRegex.exec(gdContent)) !== null) {
         const charId = exprMatch[1];
-        if (['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt'].includes(charId)) continue;
+        if (['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt', 'zh'].includes(charId)) continue;
         const exprs = exprMatch[2].match(/'([^']+)'/g);
         if (!exprs) continue;
         for (const expr of exprs) {
@@ -623,7 +623,7 @@ try {
     // Every canonical main-character sprite must be exposed by every language's gallery data.
     // Generated/working derivatives are intentionally excluded from the public gallery.
     const GalleryDataClass = new Function('window', gdContent + '\nreturn GalleryData;')({});
-    const galleryLanguages = ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt'];
+    const galleryLanguages = ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt', 'zh'];
     const mainGalleryCharacters = ['seyoun', 'yuna', 'dain', 'teacher', 'nurse'];
     const ignoredCharacterImages = new Set([
         'yuna_gallery_bikini_sexy_20260813.png'
@@ -1316,7 +1316,7 @@ console.log('[PLAYTEST] 탐색 완료: ' + pathsExplored + '개 경로, ' + comp
 
 // ===== TEST 8: 전 언어 i18n 완전 커버리지 — 모든 텍스트 씬이 모든 언어에 번역되어 있는지 =====
 console.log('[PLAYTEST] 전 언어 i18n 커버리지 검사...');
-const allLangs = ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt'];
+const allLangs = ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt', 'zh'];
 const allLangData = {};
 for (const lang of allLangs) {
     allLangData[lang] = {};
@@ -1482,7 +1482,7 @@ for (const file of htmlFiles) {
 const settingsIds = ['settingsModal', 'affinityToggle', 'bgmVolume', 'sfxVolume', 'bgmVolumeVal', 'sfxVolumeVal'];
 const koIndexFile = htmlFiles.find(f => f.name === 'index.html');
 if (koIndexFile) {
-    const langIndexes = htmlFiles.filter(f => /^index-(en|es|ja|fr|de|pt)\.html$/.test(f.name));
+    const langIndexes = htmlFiles.filter(f => /^index-(en|es|ja|fr|de|pt|zh)\.html$/.test(f.name));
     for (const langFile of langIndexes) {
         for (const sid of settingsIds) {
             const koHas = koIndexFile.content.includes('id="' + sid + '"');
@@ -1670,7 +1670,7 @@ try {
     }
     // SW가 모든 메인 HTML에서 등록되는지
     for (const file of htmlFiles) {
-        if (/^(index|game)\.html$/.test(file.name) || /^(index|game)-(en|es|ja|fr|de|pt)\.html$/.test(file.name)) {
+        if (/^(index|game)\.html$/.test(file.name) || /^(index|game)-(en|es|ja|fr|de|pt|zh)\.html$/.test(file.name)) {
             if (!file.content.includes('service-worker.js') && !file.content.includes('serviceWorker')) {
                 warnings.push('[SW_REG] ' + file.name + ': Service Worker 등록 코드 없음');
             }
@@ -2110,7 +2110,7 @@ try {
     require('node:vm').runInNewContext(ftCoreContent, repetitionSandbox);
     const repetitionGuard = repetitionSandbox.window.CupidFreeTalkCore.buildRecentExpressionRepetitionGuard;
     const repeatedReply = { role: 'assistant', content: '그녀는 책갈피를 펼쳐 어제 표시한 문장을 다시 확인했다. 창밖에서 들려오는 빗소리에 잠시 귀를 기울인 뒤, 책을 탁자 위에 놓고 지금 이야기하던 약속을 차분히 설명했다.' };
-    for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+    for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
         if (repetitionGuard([repeatedReply], lang)
             || !repetitionGuard([repeatedReply, repeatedReply], lang)
             || repetitionGuard([{ role: 'assistant', content: '그녀는 작게 웃었다.' }, { role: 'assistant', content: '그녀는 작게 웃었다.' }], lang)
@@ -3044,7 +3044,7 @@ console.log('[I18N_HANGUL_CHECK] 비한국어 i18n 한글 유출 검증 시작..
     const I18N_BASE = path.join(BASE, 'i18n');
     const HANGUL_RE = /[\u3131-\u318E\uAC00-\uD7A3]/;
     const scanFields = ['name', 'text', 'context', 'personality', 'affinityText'];
-    const langs = ['en', 'ja', 'es', 'fr', 'de', 'pt'];
+    const langs = ['en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'];
     let hangulLeaks = 0;
     for (const lang of langs) {
         const dir = path.join(I18N_BASE, lang);

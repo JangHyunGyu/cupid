@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
     test(`${lang}: earlier incidents retain day four and cannot interrupt accepted temptation`, async ({ page }) => {
         test.setTimeout(90_000);
         await page.route('**/*', route => {

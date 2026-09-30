@@ -60,7 +60,7 @@ class StateManager {
          * - 시나리오의 {name} 패턴이 이 값으로 치환됨
          */
         const lang = window.GAME_LANG || 'ko';
-        this.playerName = { en: "Protagonist", es: "Protagonista", ja: "主人公", fr: "Protagoniste", de: "Protagonist", pt: "Protagonista" }[lang] || "주인공";
+        this.playerName = { en: "Protagonist", es: "Protagonista", ja: "主人公", fr: "Protagoniste", de: "Protagonist", pt: "Protagonista", zh: "主角" }[lang] || "주인공";
 
         /**
          * 현재 게임 내 날짜
@@ -132,7 +132,7 @@ class StateManager {
      */
     resetForNewGame() {
         const lang = window.GAME_LANG || 'ko';
-        this.playerName = { en: "Protagonist", es: "Protagonista", ja: "主人公", fr: "Protagoniste", de: "Protagonist", pt: "Protagonista" }[lang] || "주인공";
+        this.playerName = { en: "Protagonist", es: "Protagonista", ja: "主人公", fr: "Protagoniste", de: "Protagonist", pt: "Protagonista", zh: "主角" }[lang] || "주인공";
         this.currentDay = 1;
         this.affinityRebalanceVersion = StateManager.AFFINITY_REBALANCE_VERSION;
         this.stats = {

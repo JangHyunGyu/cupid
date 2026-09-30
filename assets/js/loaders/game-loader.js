@@ -54,7 +54,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-    const version = '2.9.279';
+    const version = '2.9.280';
     const LOAD_RETRIES = 3;
 
     // =========================================================================
@@ -78,6 +78,7 @@
                : pathname.includes('-fr') ? 'fr'
                : pathname.includes('-de') ? 'de'
                : pathname.includes('-pt') ? 'pt'
+               : pathname.includes('-zh') ? 'zh'
                : pathname.includes('-en') ? 'en'
                : 'ko';
     const LOAD_RECOVERY_KEY = 'cupid:script-load-recovery:' + version + ':' + lang;
@@ -529,6 +530,11 @@
                 title: 'Não foi possível carregar o jogo',
                 message: 'Verifique sua conexão com a internet e tente novamente.',
                 retry: 'Recarregar'
+            },
+            zh: {
+                title: '游戏加载失败',
+                message: '请检查网络连接后重试。',
+                retry: '重新加载'
             }
         };
         var copy = copies[pageLang] || copies.en;
@@ -641,7 +647,7 @@
     var p = window.location.pathname;
     var lang = p.includes('-es') ? 'es' : p.includes('-ja') ? 'ja'
              : p.includes('-fr') ? 'fr' : p.includes('-de') ? 'de'
-             : p.includes('-pt') ? 'pt' : p.includes('-en') ? 'en' : 'ko';
+             : p.includes('-pt') ? 'pt' : p.includes('-zh') ? 'zh' : p.includes('-en') ? 'en' : 'ko';
     var APP_ID = lang === 'ko' ? 'cupid' : 'cupid-' + lang;
     var _lastError = '';
     var _errorCount = 0;
@@ -668,7 +674,7 @@
     }
 
     function _hasAppStack(stack) {
-        return /\/assets\/js\/|\/assets\/|modules\/|scenario\/|index-(ko|en|es|ja|fr|de|pt)|game-(ko|en|es|ja|fr|de|pt)|index\.html|game\.html/.test(stack || '');
+        return /\/assets\/js\/|\/assets\/|modules\/|scenario\/|index-(ko|en|es|ja|fr|de|pt|zh)|game-(ko|en|es|ja|fr|de|pt|zh)|index\.html|game\.html/.test(stack || '');
     }
 
     function _isOpaqueExternalRejection(type, msg, stack) {

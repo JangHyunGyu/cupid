@@ -138,7 +138,7 @@ test('history-dependent night messages have complete alternatives in every langu
     ]) {
         assert.equal(all[id].routeBeforeRender, true);
         assert.equal(all[id].branches[0].condition, flag);
-        for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+        for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
             const copy = JSON.parse(read(`assets/js/i18n/${lang}/day2_4_night.json`));
             assert.ok(copy[`${id}_established`].text.trim(), `${lang}:${id}:established`);
             assert.ok(copy[`${id}_first`].text.trim(), `${lang}:${id}:first`);
@@ -235,7 +235,7 @@ test('the same invitation flag recalls school supervision or romance according t
     for (const [id, char] of Object.entries(names)) {
         const flag = `day4_took_${id}_counteroffer`;
         const memory = window.FLAG_MEMORIES.find(m => m.flag === flag);
-        for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+        for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
             state.flags = { [flag]: true };
             const student = talk.getGameContext(char, lang, { includeGroupConversations: false });
             assert.ok(student.includes(memory[lang]), `${lang}/${id}/student`);
@@ -342,7 +342,7 @@ test('editing removes repeated beats without losing legacy save destinations or 
     for (const [id, route] of Object.entries(expectedRoutes)) {
         assert.deepEqual(JSON.parse(JSON.stringify(all[id])), { ...route, routeBeforeRender: true }, id);
     }
-    for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+    for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
         const copy = {};
         const dir = path.join(root, 'assets/js/i18n', lang);
         for (const file of fs.readdirSync(dir).filter(f => /^day[1-5]_/.test(f))) {
@@ -402,7 +402,7 @@ test('persistent event memories stay dated and remember the completed public wor
         assert.doesNotMatch(get(flag).ko, /오늘|어제/, flag);
         assert.doesNotMatch(get(flag).en, /today|yesterday/i, flag);
     }
-    for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+    for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
         assert.ok(get('homeroom_day4')[lang]?.trim());
         assert.ok(get('nurse_day3')[lang]?.trim());
     }

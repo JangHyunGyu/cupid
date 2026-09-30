@@ -14,7 +14,7 @@ for (const file of ['assets/js/freetalk-core.js', 'assets/js/example-dialogues-k
 const core = runtime.window.CupidFreeTalkCore;
 const prototype = runtime.window.FreeTalkSystem.prototype;
 const characters = ['Seoyeon', 'Yuna', 'Dain'];
-const languages = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'];
+const languages = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'];
 
 test('only the three five-turn interludes use dialogue affinity 100; stored scores and other scenes remain independent', async () => {
     for (const character of characters) {
@@ -96,9 +96,9 @@ test('every interlude preserves its CG and localized character voice with a sepa
             assert.equal(scene.next, 'day4_temptation_return_home');
             assert.ok(copy[id].name && copy[id].text && copy[id].precedingHistory && copy[id].context && copy[id].personality);
             assert.ok(copy[id].precedingHistory.includes({
-                Seoyeon: { ko: '내 심장, 뛰는 거 느껴져', en: 'Can you feel my heart beating', ja: '私の心臓、打つの分かる', es: '¿Sientes cómo late mi corazón', fr: 'Tu sens mon cœur battre', de: 'Spürst du, wie mein Herz schlägt', pt: 'Dá para sentir meu coração batendo' },
-                Yuna: { ko: '천 한 장도 사이에 두고 싶지 않아', en: 'scrap of cloth between us', ja: '布一枚もあいだに置きたくない', es: 'ni una tela entre nosotros', fr: 'même pas un tissu entre nous', de: 'nicht mal einen Stoff zwischen uns', pt: 'nem um pano entre a gente' },
-                Dain: { ko: '유니폼 안으로 손 넣어 봐', en: 'Put your hand inside my jersey', ja: 'ユニフォームの中に手を入れて', es: 'Mete la mano dentro del uniforme', fr: 'Glisse ta main dans le maillot', de: 'Steck deine Hand ins Trikot', pt: 'Enfia a mão dentro da camisa' }
+                Seoyeon: { ko: '내 심장, 뛰는 거 느껴져', en: 'Can you feel my heart beating', ja: '私の心臓、打つの分かる', es: '¿Sientes cómo late mi corazón', fr: 'Tu sens mon cœur battre', de: 'Spürst du, wie mein Herz schlägt', pt: 'Dá para sentir meu coração batendo', zh: '你能感觉到我的心跳吗' },
+                Yuna: { ko: '천 한 장도 사이에 두고 싶지 않아', en: 'scrap of cloth between us', ja: '布一枚もあいだに置きたくない', es: 'ni una tela entre nosotros', fr: 'même pas un tissu entre nous', de: 'nicht mal einen Stoff zwischen uns', pt: 'nem um pano entre a gente', zh: '哪怕一小块布' },
+                Dain: { ko: '유니폼 안으로 손 넣어 봐', en: 'Put your hand inside my jersey', ja: 'ユニフォームの中に手を入れて', es: 'Mete la mano dentro del uniforme', fr: 'Glisse ta main dans le maillot', de: 'Steck deine Hand ins Trikot', pt: 'Enfia a mão dentro da camisa', zh: '把手伸进我的球衣里' }
             }[character][lang]));
             const params = { lang, sceneName: character, displayName: copy[id].name,
                 locationName: scene.locationKey, context: copy[id].context, extraGuideline: copy[id].personality,
@@ -124,9 +124,9 @@ test('every interlude preserves its CG and localized character voice with a sepa
             assert.equal(prototype.processExpressionTags.call({}, '[EXPRESSION:happy]Hello', scene), 'Hello');
             assert.ok(stable.includes(runtime.window.buildCupidTemptationSceneCanonRule(lang)) === false);
             assert.ok(copy[id].context.includes({
-                Seoyeon: { ko: '맨가슴', en: 'bare chest', ja: '裸の胸', es: 'pecho desnudo', fr: 'poitrine nue', de: 'nackte Brust', pt: 'peito nu' },
-                Yuna: { ko: '목깃을 끌어내려', en: 'pulled her collar down', ja: '襟を引き下げ', es: 'bajó el cuello', fr: 'baissé son col', de: 'den Kragen heruntergezogen', pt: 'puxou a gola' },
-                Dain: { ko: '유니폼 앞자락을 아래로 당긴', en: 'pulled the front of her jersey down', ja: 'ユニフォームの前を下に引っ張り', es: 'tiró hacia abajo la parte delantera', fr: 'tiré le devant de son maillot', de: 'die Vorderseite ihres Trikots nach unten gezogen', pt: 'puxou a frente da camisa para baixo' }
+                Seoyeon: { ko: '맨가슴', en: 'bare chest', ja: '裸の胸', es: 'pecho desnudo', fr: 'poitrine nue', de: 'nackte Brust', pt: 'peito nu', zh: '裸露的胸口' },
+                Yuna: { ko: '목깃을 끌어내려', en: 'pulled her collar down', ja: '襟を引き下げ', es: 'bajó el cuello', fr: 'baissé son col', de: 'den Kragen heruntergezogen', pt: 'puxou a gola', zh: '把衣领拉低' },
+                Dain: { ko: '유니폼 앞자락을 아래로 당긴', en: 'pulled the front of her jersey down', ja: 'ユニフォームの前を下に引っ張り', es: 'tiró hacia abajo la parte delantera', fr: 'tiré le devant de son maillot', de: 'die Vorderseite ihres Trikots nach unten gezogen', pt: 'puxou a frente da camisa para baixo', zh: '把球衣的前襟往下拉' }
             }[character][lang]));
             assert.doesNotMatch(copy[id].text, /앉을래|sit beside me|Come sit with me|¿Te sientas a mi lado|Siéntate aquí|Ven, siéntate|Tu t’assieds à côté|Assieds-toi ici|Viens t’asseoir|Setzt du dich neben mich|Setz dich hierher|setz dich zu mir|Senta aqui do meu lado|Senta aqui\.|Vem sentar|隣に座ってくれる|こっちに座って|隣に来て/);
             assert.ok(dynamic.includes(copy[id].context));
@@ -137,7 +137,8 @@ test('every interlude preserves its CG and localized character voice with a sepa
                 ja: '直前の脚本ですでに起きた接触と誘惑の台詞',
                 fr: 'déjà établis dans la scène écrite précédente sont des faits présents',
                 de: 'bereits geschehene Kontakt und die Verführungsworte sind jetzt Tatsache',
-                pt: 'já estabelecidos na cena anterior são fatos presentes'
+                pt: 'já estabelecidos na cena anterior são fatos presentes',
+                zh: '已经发生的接触和挑逗的话，现在都是既成事实'
             }[lang]));
             assert.ok(!runtime.window.buildCupidTemptationRomanceGuidance(lang).includes('비노골'));
             assert.ok(!runtime.window.buildCupidTemptationRomanceGuidance(lang).includes('non-graphic'));
@@ -152,12 +153,13 @@ test('every interlude preserves its CG and localized character voice with a sepa
                 ja: 'やり方は人物固有の口調と好みに従い',
                 fr: 'La manière suit sa voix et ses goûts',
                 de: 'Die Art folgt ihrer Stimme und ihren Vorlieben',
-                pt: 'O jeito segue a voz e os gostos dela'
+                pt: 'O jeito segue a voz e os gostos dela',
+                zh: '方式要遵循这个角色自己的声音和喜好'
             }[lang]));
             assert.ok(copy[id].personality.includes({
-                Seoyeon: { ko: '차분한 말투', en: 'calm voice over the hand', ja: '落ち着いた口調', es: 'voz serena', fr: 'voix calme', de: 'ruhige Stimme', pt: 'voz calma' },
-                Yuna: { ko: '말은 짧게', en: 'lines short', ja: '言葉は短く', es: 'Habla poco', fr: 'Parle peu', de: 'Sätze kurz', pt: 'Fale pouco' },
-                Dain: { ko: '유니폼 안으로', en: 'inside the jersey', ja: 'ユニフォームの中', es: 'en el uniforme', fr: 'dans le maillot', de: 'ins Trikot', pt: 'na camisa' }
+                Seoyeon: { ko: '차분한 말투', en: 'calm voice over the hand', ja: '落ち着いた口調', es: 'voz serena', fr: 'voix calme', de: 'ruhige Stimme', pt: 'voz calma', zh: '保持她平静的声音' },
+                Yuna: { ko: '말은 짧게', en: 'lines short', ja: '言葉は短く', es: 'Habla poco', fr: 'Parle peu', de: 'Sätze kurz', pt: 'Fale pouco', zh: '台词要简短' },
+                Dain: { ko: '유니폼 안으로', en: 'inside the jersey', ja: 'ユニフォームの中', es: 'en el uniforme', fr: 'dans le maillot', de: 'ins Trikot', pt: 'na camisa', zh: '放进球衣里' }
             }[character][lang]));
             assert.ok(stable.includes(runtime.window.buildCupidThirdPersonAdultCameraRule(lang)));
         }

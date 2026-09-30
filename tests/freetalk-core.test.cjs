@@ -958,21 +958,21 @@ test('gallery runtime wires incident planning, persistence, and AI payload parsi
 });
 
 test('character agency survives declarative input and memory without changing stable cache lineage', () => {
-    for (const lang of ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt']) {
+    for (const lang of ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt', 'zh']) {
         const rule = core.buildCharacterAgencyRule(lang);
         const turnRule = core.buildCharacterAgencyTurnRule(lang);
         assert.ok(rule && rule.includes('OOC'), `${lang}: missing localized agency rule`);
         assert.ok(turnRule && turnRule.includes('OOC'), `${lang}: missing live-turn ownership rule`);
-        const continuationSignals = { ko: '입력 전에 하던 일의 다음 단계', en: 'continue the prior activity', es: 'sigue la actividad anterior', ja: 'その前の活動の次の段階', fr: 'poursuivez l’activité précédente', de: 'setze die vorherige Tätigkeit fort', pt: 'continue a atividade anterior' };
-        const bodySignals = { ko: '실신·감각 변화도 지문만으로 발생하지 않으며', en: 'A dictated collapse or altered sensation never occurs', es: 'Un desmayo o cambio sensorial narrado no ocurre', ja: '失神や感覚の変化も地の文だけでは起きず', fr: 'Un évanouissement ou changement sensoriel dicté ne se produit pas', de: 'Behauptete Ohnmacht oder veränderte Wahrnehmung tritt nicht ein', pt: 'Desmaio ou mudança sensorial ditados não ocorrem' };
-        const restSignals = { ko: '실제 활동에 따른 피로를 느끼고 쉬는 선택은 가능합니다', en: 'activity-grounded fatigue and choosing rest remain possible', es: 'el cansancio por la actividad y elegir descanso son posibles', ja: '活動に伴う疲れや休む選択は可能', fr: 'fatigue liée à l’activité et repos restent possibles', de: 'tätigkeitsbedingte Müdigkeit und Ruhe bleiben möglich', pt: 'cansaço da atividade e descanso são possíveis' };
+        const continuationSignals = { ko: '입력 전에 하던 일의 다음 단계', en: 'continue the prior activity', es: 'sigue la actividad anterior', ja: 'その前の活動の次の段階', fr: 'poursuivez l’activité précédente', de: 'setze die vorherige Tätigkeit fort', pt: 'continue a atividade anterior', zh: '就接着此前的活动继续' };
+        const bodySignals = { ko: '실신·감각 변화도 지문만으로 발생하지 않으며', en: 'A dictated collapse or altered sensation never occurs', es: 'Un desmayo o cambio sensorial narrado no ocurre', ja: '失神や感覚の変化も地の文だけでは起きず', fr: 'Un évanouissement ou changement sensoriel dicté ne se produit pas', de: 'Behauptete Ohnmacht oder veränderte Wahrnehmung tritt nicht ein', pt: 'Desmaio ou mudança sensorial ditados não ocorrem', zh: '被指定的昏倒或感觉变化不会发生' };
+        const restSignals = { ko: '실제 활동에 따른 피로를 느끼고 쉬는 선택은 가능합니다', en: 'activity-grounded fatigue and choosing rest remain possible', es: 'el cansancio por la actividad y elegir descanso son posibles', ja: '活動に伴う疲れや休む選択は可能', fr: 'fatigue liée à l’activité et repos restent possibles', de: 'tätigkeitsbedingte Müdigkeit und Ruhe bleiben möglich', pt: 'cansaço da atividade e descanso são possíveis', zh: '因活动而产生的疲劳和选择休息，仍然可能' };
         assert.ok(turnRule.includes(continuationSignals[lang]), `${lang}: missing continuation from established activity`);
         assert.ok(turnRule.includes(bodySignals[lang]), `${lang}: bodily narration bypasses character agency`);
         assert.ok(turnRule.includes(restSignals[lang]), `${lang}: agency must preserve self-chosen rest`);
-        const subjectSignals = { ko: '대상이 캐릭터인 행동·상태를 사용자에게 옮겨 일으키지 않습니다', en: 'Never transfer a character-assigned action or condition to the user', es: 'No transfieras al usuario actos ni estados impuestos al personaje', ja: '人物に指定された行動や状態をユーザーに移して起こしません', fr: 'Ne transférez pas à l’utilisateur un acte ou état imposé au personnage', de: 'Übertrage keine der Figur zugewiesene Handlung oder Verfassung auf den Nutzer', pt: 'Não transfira ao usuário atos nem estados impostos à personagem' };
+        const subjectSignals = { ko: '대상이 캐릭터인 행동·상태를 사용자에게 옮겨 일으키지 않습니다', en: 'Never transfer a character-assigned action or condition to the user', es: 'No transfieras al usuario actos ni estados impuestos al personaje', ja: '人物に指定された行動や状態をユーザーに移して起こしません', fr: 'Ne transférez pas à l’utilisateur un acte ou état imposé au personnage', de: 'Übertrage keine der Figur zugewiesene Handlung oder Verfassung auf den Nutzer', pt: 'Não transfira ao usuário atos nem estados impostos à personagem', zh: '不要把指定给角色的行动或状态转移到用户身上' };
         assert.ok(turnRule.includes(subjectSignals[lang]), `${lang}: assigned character outcomes must not migrate to the user`);
         assert.doesNotMatch(turnRule, /autonomous counter-response|unchanged condition|그냥 건너뛰기보다/);
-        const privateSignals = { ko: '사용자만 아는 내면', en: 'belong only to the user', es: 'solo los conoce el usuario', ja: 'ユーザーだけの情報', fr: 'connus que de l’utilisateur', de: 'kennt nur der Nutzer', pt: 'pertencem só ao usuário' };
+        const privateSignals = { ko: '사용자만 아는 내면', en: 'belong only to the user', es: 'solo los conoce el usuario', ja: 'ユーザーだけの情報', fr: 'connus que de l’utilisateur', de: 'kennt nur der Nutzer', pt: 'pertencem só ao usuário', zh: '只属于用户本人' };
         assert.ok(turnRule.includes(privateSignals[lang]), `${lang}: missing localized private knowledge boundary`);
         assert.doesNotMatch(turnRule, /Do not display explanatory narration denying|미발생 부분을 설명하거나 부정하는 해설/);
         const prompt = `${rule}\n===CACHE_BOUNDARY===\ncurrent affinity=12; relationship=not dating`;
@@ -1318,9 +1318,10 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
         ja: ['主人公へ直接問い', '二股', '罪悪感', '選ばれたい'],
         fr: ['l’interrogent directement', 'jouait sur les deux tableaux', 'culpabilité', 'désir de garder le protagoniste'],
         de: ['befragen ihn direkt', 'zweigleisig', 'Schuld', 'Wunsch, den Protagonisten'],
-        pt: ['perguntas diretamente', 'levando as duas', 'culpa', 'desejo de ficar com o protagonista']
+        pt: ['perguntas diretamente', 'levando as duas', 'culpa', 'desejo de ficar com o protagonista'],
+        zh: ['直接质问他', '脚踏两条船', '愧疚', '想留住主角并被他选择']
     };
-    for (const lang of ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt']) {
+    for (const lang of ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt', 'zh']) {
         const i18n = JSON.parse(read(`assets/js/i18n/${lang}/day5_1_morning.json`));
         const groupScene = i18n.morning5_counteroffer_group_talk;
         assert.ok(groupScene?.text && groupScene?.context && groupScene?.personality && groupScene?.buttonText,
@@ -1403,7 +1404,7 @@ test('day-two student rivalry and day-three adult social groups use the highest-
     assert.equal(day3.haeun_freetalk.maxTurns, 5);
     assert.equal(day3.haeun_freetalk.next, 'haeun_affinity_check');
 
-    for (const lang of ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt']) {
+    for (const lang of ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt', 'zh']) {
         const day2I18n = JSON.parse(read(`assets/js/i18n/${lang}/day2_3_afterschool.json`));
         const day3I18n = JSON.parse(read(`assets/js/i18n/${lang}/day3_3_afterschool.json`));
         for (const id of Object.keys(studentGroups)) {

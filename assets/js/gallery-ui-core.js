@@ -185,7 +185,7 @@ class GalleryUI {
             if (e.target === popup) this.closeUnlockPopup();
         });
 
-        const okText = { ko: '확인', en: 'OK', es: 'Aceptar', ja: 'OK', fr: 'OK', de: 'OK', pt: 'OK' }[this.lang] || 'OK';
+        const okText = { ko: '확인', en: 'OK', es: 'Aceptar', ja: 'OK', fr: 'OK', de: 'OK', pt: 'OK', zh: '确定' }[this.lang] || 'OK';
 
         popup.innerHTML = `
             <div class="unlock-popup-content">
@@ -230,10 +230,10 @@ class GalleryUI {
     showExpressionLockPopup(charName, exprName, requiredAffinity) {
         const charId = this.currentCharacter || this.character.currentCharacter;
         const currentAffinity = this.progress.getAffinity(charId);
-        const L = (ko, en, es, ja, fr, de, pt) => ({ ko, en, es, ja, fr, de, pt })[this.lang] || en;
+        const L = (ko, en, es, ja, fr, de, pt, zh) => ({ ko, en, es, ja, fr, de, pt, zh })[this.lang] || en;
 
         this.showUnlockPopup({
-            title: L('표정 미해금', 'Expression Locked', 'Expresión bloqueada', '未解放の表情', 'Expression verrouillée', 'Ausdruck gesperrt', 'Expressão bloqueada'),
+            title: L('표정 미해금', 'Expression Locked', 'Expresión bloqueada', '未解放の表情', 'Expression verrouillée', 'Ausdruck gesperrt', 'Expressão bloqueada', '表情未解锁'),
             message: L(
                 `"${exprName}" 표정을 해금하려면<br>호감도 ${requiredAffinity}이(가) 필요합니다.<br><br><span class="condition-line">💕 최대 호감도: ${currentAffinity}</span><span class="condition-line">🎯 필요 호감도: ${requiredAffinity}</span>`,
                 `To unlock the “${exprName}” expression,<br>reach an affinity of ${requiredAffinity}.<br><br><span class="condition-line">💕 Highest Affinity: ${currentAffinity}</span><span class="condition-line">🎯 Required: ${requiredAffinity}</span>`,
@@ -241,7 +241,8 @@ class GalleryUI {
                 `表情「${exprName}」を解放するには、<br>好感度が${requiredAffinity}以上必要です。<br><br><span class="condition-line">💕 最大好感度：${currentAffinity}</span><span class="condition-line">🎯 必要好感度：${requiredAffinity}</span>`,
                 `Pour débloquer l’expression « ${exprName} »,<br>il vous faut ${requiredAffinity} points d’affinité.<br><br><span class="condition-line">💕 Affinité maximale : ${currentAffinity}</span><span class="condition-line">🎯 Niveau requis : ${requiredAffinity}</span>`,
                 `Um den Ausdruck „${exprName}“ freizuschalten,<br>brauchst du ${requiredAffinity} Zuneigungspunkte.<br><br><span class="condition-line">💕 Höchste Zuneigung: ${currentAffinity}</span><span class="condition-line">🎯 Benötigt: ${requiredAffinity}</span>`,
-                `Para desbloquear a expressão “${exprName}”,<br>você precisa de ${requiredAffinity} pontos de afinidade.<br><br><span class="condition-line">💕 Afinidade máxima: ${currentAffinity}</span><span class="condition-line">🎯 Nível necessário: ${requiredAffinity}</span>`
+                `Para desbloquear a expressão “${exprName}”,<br>você precisa de ${requiredAffinity} pontos de afinidade.<br><br><span class="condition-line">💕 Afinidade máxima: ${currentAffinity}</span><span class="condition-line">🎯 Nível necessário: ${requiredAffinity}</span>`,
+                `要解锁“${exprName}”表情，<br>需要好感度达到${requiredAffinity}。<br><br><span class="condition-line">💕 最高好感度：${currentAffinity}</span><span class="condition-line">🎯 所需好感度：${requiredAffinity}</span>`
             ),
             icon: '🔒'
         });
@@ -259,10 +260,10 @@ class GalleryUI {
 
         const affinityStatus = currentAffinity >= 100 ? '✅' : '❌';
         const talkStatus = freeTalkCount >= 30 ? '✅' : '❌';
-        const L = (ko, en, es, ja, fr, de, pt) => ({ ko, en, es, ja, fr, de, pt })[this.lang] || en;
+        const L = (ko, en, es, ja, fr, de, pt, zh) => ({ ko, en, es, ja, fr, de, pt, zh })[this.lang] || en;
 
         this.showUnlockPopup({
-            title: L('💎 특별 표정', '💎 Special Expression', '💎 Expresión especial', '💎 特別な表情', '💎 Expression spéciale', '💎 Besonderer Ausdruck', '💎 Expressão especial'),
+            title: L('💎 특별 표정', '💎 Special Expression', '💎 Expresión especial', '💎 特別な表情', '💎 Expression spéciale', '💎 Besonderer Ausdruck', '💎 Expressão especial', '💎 特别表情'),
             message: L(
                 `${charName}의 특별한 모습을 보려면<br>두 가지 조건을 모두 달성해야 합니다!<br><br><span class="condition-line">💕 최대 호감도: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 프리토킹: ${freeTalkCount}/30회 ${talkStatus}</span>`,
                 `To see ${charName}'s special appearance,<br>complete both requirements.<br><br><span class="condition-line">💕 Highest Affinity: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Free-talk sessions: ${freeTalkCount}/30 ${talkStatus}</span>`,
@@ -270,7 +271,8 @@ class GalleryUI {
                 `${charName}の特別な姿を見るには、<br>次の2つの条件を両方達成してください。<br><br><span class="condition-line">💕 最大好感度：${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 フリートーク：${freeTalkCount}/30回 ${talkStatus}</span>`,
                 `Pour découvrir la tenue spéciale de ${charName},<br>remplissez les deux conditions.<br><br><span class="condition-line">💕 Affinité maximale : ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Discussions libres : ${freeTalkCount}/30 ${talkStatus}</span>`,
                 `Um ${charName}s besonderen Look zu sehen,<br>musst du beide Bedingungen erfüllen.<br><br><span class="condition-line">💕 Höchste Zuneigung: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Freie Gespräche: ${freeTalkCount}/30 ${talkStatus}</span>`,
-                `Para ver o visual especial de ${charName},<br>você precisa cumprir as duas condições.<br><br><span class="condition-line">💕 Afinidade máxima: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Conversas livres: ${freeTalkCount}/30 ${talkStatus}</span>`
+                `Para ver o visual especial de ${charName},<br>você precisa cumprir as duas condições.<br><br><span class="condition-line">💕 Afinidade máxima: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Conversas livres: ${freeTalkCount}/30 ${talkStatus}</span>`,
+                `想看到${charName}的特别模样，<br>需要同时满足两个条件！<br><br><span class="condition-line">💕 最高好感度：${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 自由对话：${freeTalkCount}/30次 ${talkStatus}</span>`
             ),
             icon: '💎'
         });
@@ -284,10 +286,10 @@ class GalleryUI {
     showDescriptionLockPopup(charId) {
         const currentAffinity = this.progress.getAffinity(charId);
         const char = GalleryData.getCharacter(this.lang, charId);
-        const L = (ko, en, es, ja, fr, de, pt) => ({ ko, en, es, ja, fr, de, pt })[this.lang] || en;
+        const L = (ko, en, es, ja, fr, de, pt, zh) => ({ ko, en, es, ja, fr, de, pt, zh })[this.lang] || en;
 
         this.showUnlockPopup({
-            title: L('소개 미해금', 'Description Locked', 'Descripción bloqueada', 'プロフィールは未解放です', 'Description verrouillée', 'Beschreibung gesperrt', 'Descrição bloqueada'),
+            title: L('소개 미해금', 'Description Locked', 'Descripción bloqueada', 'プロフィールは未解放です', 'Description verrouillée', 'Beschreibung gesperrt', 'Descrição bloqueada', '介绍未解锁'),
             message: L(
                 `${char.name}의 전체 소개를 보려면<br>호감도 80이 필요합니다.<br><br><span class="condition-line">💕 최대 호감도: ${currentAffinity}</span><span class="condition-line">🎯 필요 호감도: 80</span>`,
                 `To view ${char.name}'s full profile,<br>reach an affinity of 80.<br><br><span class="condition-line">💕 Highest Affinity: ${currentAffinity}</span><span class="condition-line">🎯 Required: 80</span>`,
@@ -295,7 +297,8 @@ class GalleryUI {
                 `${char.name}のプロフィールをすべて見るには、<br>好感度が80以上必要です。<br><br><span class="condition-line">💕 最大好感度：${currentAffinity}</span><span class="condition-line">🎯 必要好感度：80</span>`,
                 `Pour voir le profil complet de ${char.name},<br>il vous faut 80 points d’affinité.<br><br><span class="condition-line">💕 Affinité maximale : ${currentAffinity}</span><span class="condition-line">🎯 Niveau requis : 80</span>`,
                 `Um die vollständige Beschreibung von ${char.name} zu sehen,<br>brauchst du 80 Zuneigungspunkte.<br><br><span class="condition-line">💕 Höchste Zuneigung: ${currentAffinity}</span><span class="condition-line">🎯 Benötigt: 80</span>`,
-                `Para ver o perfil completo de ${char.name},<br>você precisa de 80 pontos de afinidade.<br><br><span class="condition-line">💕 Afinidade máxima: ${currentAffinity}</span><span class="condition-line">🎯 Nível necessário: 80</span>`
+                `Para ver o perfil completo de ${char.name},<br>você precisa de 80 pontos de afinidade.<br><br><span class="condition-line">💕 Afinidade máxima: ${currentAffinity}</span><span class="condition-line">🎯 Nível necessário: 80</span>`,
+                `要查看${char.name}的完整介绍，<br>需要好感度达到80。<br><br><span class="condition-line">💕 最高好感度：${currentAffinity}</span><span class="condition-line">🎯 所需好感度：80</span>`
             ),
             icon: '📖'
         });
@@ -310,11 +313,11 @@ class GalleryUI {
     showStatLockPopup(statType, charName) {
         const charId = this.currentCharacter || this.character.currentCharacter;
         const currentAffinity = this.progress.getAffinity(charId);
-        const L = (ko, en, es, ja, fr, de, pt) => ({ ko, en, es, ja, fr, de, pt })[this.lang] || en;
+        const L = (ko, en, es, ja, fr, de, pt, zh) => ({ ko, en, es, ja, fr, de, pt, zh })[this.lang] || en;
 
         if (statType === 'weight') {
             this.showUnlockPopup({
-                title: L('몸무게 미해금', 'Weight Locked', 'Peso bloqueado', '体重は未解放です', 'Poids verrouillé', 'Gewicht gesperrt', 'Peso bloqueado'),
+                title: L('몸무게 미해금', 'Weight Locked', 'Peso bloqueado', '体重は未解放です', 'Poids verrouillé', 'Gewicht gesperrt', 'Peso bloqueado', '体重未解锁'),
                 message: L(
                     `${charName}의 몸무게를 보려면<br>호감도 80이 필요합니다.<br><br><span class="condition-line">💕 최대 호감도: ${currentAffinity}</span><span class="condition-line">🎯 필요 호감도: 80</span>`,
                     `To view ${charName}'s weight,<br>reach an affinity of 80.<br><br><span class="condition-line">💕 Highest Affinity: ${currentAffinity}</span><span class="condition-line">🎯 Required: 80</span>`,
@@ -322,13 +325,14 @@ class GalleryUI {
                     `${charName}の体重を見るには、<br>好感度が80以上必要です。<br><br><span class="condition-line">💕 最大好感度：${currentAffinity}</span><span class="condition-line">🎯 必要好感度：80</span>`,
                     `Pour voir le poids de ${charName},<br>il vous faut 80 points d’affinité.<br><br><span class="condition-line">💕 Affinité maximale : ${currentAffinity}</span><span class="condition-line">🎯 Niveau requis : 80</span>`,
                     `Um das Gewicht von ${charName} zu sehen,<br>brauchst du 80 Zuneigungspunkte.<br><br><span class="condition-line">💕 Höchste Zuneigung: ${currentAffinity}</span><span class="condition-line">🎯 Benötigt: 80</span>`,
-                    `Para ver o peso de ${charName},<br>você precisa de 80 pontos de afinidade.<br><br><span class="condition-line">💕 Afinidade máxima: ${currentAffinity}</span><span class="condition-line">🎯 Nível necessário: 80</span>`
+                    `Para ver o peso de ${charName},<br>você precisa de 80 pontos de afinidade.<br><br><span class="condition-line">💕 Afinidade máxima: ${currentAffinity}</span><span class="condition-line">🎯 Nível necessário: 80</span>`,
+                    `要查看${charName}的体重，<br>需要好感度达到80。<br><br><span class="condition-line">💕 最高好感度：${currentAffinity}</span><span class="condition-line">🎯 所需好感度：80</span>`
                 ),
                 icon: '⚖️'
             });
         } else if (statType === 'bust') {
             this.showUnlockPopup({
-                title: L('신체사이즈 미해금', 'Measurements Locked', 'Medidas bloqueadas', 'スリーサイズは未解放です', 'Mensurations verrouillées', 'Körpermaße gesperrt', 'Medidas bloqueadas'),
+                title: L('신체사이즈 미해금', 'Measurements Locked', 'Medidas bloqueadas', 'スリーサイズは未解放です', 'Mensurations verrouillées', 'Körpermaße gesperrt', 'Medidas bloqueadas', '三围未解锁'),
                 message: L(
                     `${charName}의 신체사이즈를 보려면<br>호감도 100이 필요합니다.<br><br><span class="condition-line">💕 최대 호감도: ${currentAffinity}</span><span class="condition-line">🎯 필요 호감도: 100</span>`,
                     `To view ${charName}'s measurements,<br>reach an affinity of 100.<br><br><span class="condition-line">💕 Highest Affinity: ${currentAffinity}</span><span class="condition-line">🎯 Required: 100</span>`,
@@ -336,7 +340,8 @@ class GalleryUI {
                     `${charName}のスリーサイズを見るには、<br>好感度が100以上必要です。<br><br><span class="condition-line">💕 最大好感度：${currentAffinity}</span><span class="condition-line">🎯 必要好感度：100</span>`,
                     `Pour voir les mensurations de ${charName},<br>il vous faut 100 points d’affinité.<br><br><span class="condition-line">💕 Affinité maximale : ${currentAffinity}</span><span class="condition-line">🎯 Niveau requis : 100</span>`,
                     `Um die Körpermaße von ${charName} zu sehen,<br>brauchst du 100 Zuneigungspunkte.<br><br><span class="condition-line">💕 Höchste Zuneigung: ${currentAffinity}</span><span class="condition-line">🎯 Benötigt: 100</span>`,
-                    `Para ver as medidas de ${charName},<br>você precisa de 100 pontos de afinidade.<br><br><span class="condition-line">💕 Afinidade máxima: ${currentAffinity}</span><span class="condition-line">🎯 Nível necessário: 100</span>`
+                    `Para ver as medidas de ${charName},<br>você precisa de 100 pontos de afinidade.<br><br><span class="condition-line">💕 Afinidade máxima: ${currentAffinity}</span><span class="condition-line">🎯 Nível necessário: 100</span>`,
+                    `要查看${charName}的三围，<br>需要好感度达到100。<br><br><span class="condition-line">💕 最高好感度：${currentAffinity}</span><span class="condition-line">🎯 所需好感度：100</span>`
                 ),
                 icon: '💝'
             });

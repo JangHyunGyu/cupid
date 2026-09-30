@@ -9,7 +9,7 @@ const { readPlainMedia } = require('../scripts/lib/read-plain-media.cjs');
 const root = path.resolve(__dirname, '..');
 const characterIds = ['seyoun', 'yuna', 'dain', 'teacher', 'nurse'];
 const dedicatedAssetIds = ['seyoun', 'yuna', 'dain', 'teacher', 'nurse'];
-const languages = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'];
+const languages = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'];
 
 function read(relativePath) {
     return fs.readFileSync(path.join(root, relativePath));

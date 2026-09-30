@@ -11,7 +11,7 @@ test('unsupported browser notice is usable at phone, tablet and desktop sizes in
     });
     for (const [width, height] of [[320,568], [430,932], [844,390], [768,1024], [1024,768], [1440,900], [320,240]]) {
         await page.setViewportSize({ width, height });
-        for (const lang of ['', '-en', '-ja', '-es', '-fr', '-de', '-pt']) {
+        for (const lang of ['', '-en', '-ja', '-es', '-fr', '-de', '-pt', '-zh']) {
             await page.goto(`/index${lang}.html`);
             const notice = page.locator('#cupid-browser-update');
             await expect(notice).toBeVisible();

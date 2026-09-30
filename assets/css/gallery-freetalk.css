@@ -379,3 +379,8 @@
         font-size: 1rem;
     }
 }
+
+/* 简体中文 */
+html[lang^="zh"] .freetalk-btn {
+    font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+}

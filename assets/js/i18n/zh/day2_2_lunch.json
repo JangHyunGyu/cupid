@@ -1,0 +1,756 @@
+{
+    "lunch2_start": {
+        "name": "{name}",
+        "text": "*午休。由娜的纸条在我口袋里。走廊尽头，书妍拎着饭盒上楼，多因从小卖部的方向朝这边挥手。我在三岔口停住了脚步。*"
+    },
+    "lunch2_choice": {
+        "name": "{name}",
+        "text": "*我该跟谁一起去呢？*",
+        "choices": [
+            "循着由娜的纸条去图书馆别馆",
+            "跟着书妍去天台",
+            "和多因去小卖部"
+        ]
+    },
+    "lunch2_seo_1_check": {
+        "name": "{name}",
+        "text": "*我朝天台走去。*"
+    },
+    "lunch2_seo_1b": {
+        "name": "{name}",
+        "text": "*这是我第一次来天台。操场上的哨声越过栏杆飘了上来，书妍正把她的午饭摊在一把折叠椅上。*"
+    },
+    "lunch2_seo_2b_check": {},
+    "lunch2_seo_2b": {},
+    "lunch2_seo_2b_dain": {
+        "name": "书妍",
+        "text": "昨天你是往小卖部去的。今天倒是一路爬到了这上面。"
+    },
+    "lunch2_seo_3b_dain": {
+        "name": "{name}",
+        "text": "昨天是多因把我拖走的。今天，我想自己上来。"
+    },
+    "lunch2_seo_4b_dain": {
+        "name": "书妍",
+        "text": "那就不一样了。"
+    },
+    "lunch2_seo_5b_dain": {
+        "name": "{name}",
+        "text": "昨天我和多因一起吃的。我对你的午饭也很好奇。"
+    },
+    "lunch2_seo_6b_dain": {
+        "name": "书妍",
+        "text": "你倒是挺诚实。"
+    },
+    "lunch2_seo_2b_yuna": {
+        "name": "书妍",
+        "text": "收到纸条，你还是来了天台。"
+    },
+    "lunch2_seo_3b_yuna": {
+        "name": "{name}",
+        "text": "昨天选了安静的，所以今天对你这边好奇了。"
+    },
+    "lunch2_seo_4b_yuna": {
+        "name": "书妍",
+        "text": "我这边？"
+    },
+    "lunch2_seo_5b_yuna": {
+        "name": "{name}",
+        "text": "我好奇，和学生会长一起在天台吃午饭是什么感觉。"
+    },
+    "lunch2_seo_6b_yuna": {
+        "name": "书妍",
+        "text": "*她用筷子敲了敲饭盒盖的边缘。*说来也怪，这么说倒也讲得通。"
+    },
+    "lunch2_seo_1": {
+        "name": "{name}",
+        "text": "*天台。和昨天同一个位置。书妍正在摆放她的饭盒。*"
+    },
+    "lunch2_seo_2": {},
+    "lunch2_seo_3": {
+        "name": "{name}",
+        "text": "饭很好吃。"
+    },
+    "lunch2_seo_4": {
+        "name": "书妍",
+        "text": "所以是因为饭？"
+    },
+    "lunch2_seo_5": {
+        "name": "{name}",
+        "text": "风也很舒服。"
+    },
+    "lunch2_seo_6": {
+        "name": "书妍",
+        "text": "风啊。"
+    },
+    "lunch2_seo_7": {
+        "name": "{name}",
+        "text": "*书妍刚掀开饭盒盖，天台的门就“哐当”一声被推开了。多因从门缝里钻了进来。*"
+    },
+    "lunch2_seo_9": {
+        "name": "多因",
+        "text": "找到你啦。你们在上面吃饭的话，我能一起吗？"
+    },
+    "lunch2_seo_10": {
+        "name": "书妍",
+        "text": "天台要经过许可才能上来。而且我今天先约好了午饭。"
+    },
+    "lunch2_seo_11": {
+        "name": "多因",
+        "text": "那我以后就能上来了。我也坐下啦，行吧？"
+    },
+    "lunch2_seo_12": {
+        "name": "{name}",
+        "text": "*多因在空位上坐了下来。书妍的筷子在玉子烧上方绕了一圈，落了空，又回到原处。*"
+    },
+    "lunch2_seo_13": {
+        "name": "多因",
+        "text": "昨天你是跟我一起吃的。一天就改吃会长的饭盒了？"
+    },
+    "lunch2_seo_13b": {
+        "name": "多因",
+        "text": "初次见面，会长。你旁边的位子是空的吧？"
+    },
+    "lunch2_seo_13b_b": {
+        "name": "书妍",
+        "text": "*书妍把自己的饭盒往{name}那边挪近了些。*可以坐。不过让我们把话说完。"
+    },
+    "lunch2_seo_14": {
+        "name": "书妍",
+        "text": "*书妍看了一眼对面的多因，然后把自己的椅子往我这边又拉近了一点。*"
+    },
+    "lunch2_seo_15": {
+        "name": "{name}",
+        "text": "我们是同班同学。现在你们俩也认识了。"
+    },
+    "lunch2_seo_16": {
+        "name": "书妍",
+        "text": "靠近，和让步，是两回事。"
+    },
+    "lunch2_seo_17": {
+        "name": "多因",
+        "text": "那我也不让步。下个课间来体育馆。"
+    },
+    "lunch2_seo_19": {
+        "name": "书妍",
+        "text": "{name}，你是当着我的面在安排下一次约会吗？"
+    },
+    "lunch2_seo_20": {
+        "name": "书妍",
+        "text": "等会儿再回答。你嘴角沾了东西。别动。"
+    },
+    "lunch2_seo_choice": {
+        "name": "书妍",
+        "text": "*一根裹着湿巾的手指朝我的嘴边伸了过来。*",
+        "choices": [
+            "别动",
+            "我自己擦",
+            "这点小事我自己能行。"
+        ]
+    },
+    "lunch2_seo_c1_1": {
+        "name": "书妍",
+        "text": "*她擦掉那粒米饭，把湿巾用过的一面向内折起。*"
+    },
+    "lunch2_seo_c1_2": {
+        "name": "书妍",
+        "text": "好了。"
+    },
+    "lunch2_seo_c1_2_b": {
+        "name": "多因",
+        "text": "*多因在我们两人之间来回看，伸向饭盒的手还悬在半空。*"
+    },
+    "lunch2_seo_c1_3": {
+        "name": "多因",
+        "text": "你亲手帮他把米粒摘掉了？"
+    },
+    "lunch2_seo_c1_3_b": {
+        "name": "书妍",
+        "text": "*她把湿巾折成一个方块。*就是一粒米饭而已。"
+    },
+    "lunch2_seo_c1_4": {
+        "name": "书妍",
+        "text": "仅此而已。"
+    },
+    "lunch2_seo_c1_5": {
+        "name": "{name}",
+        "text": "*书妍拿起水瓶，却没有拧开。只有标签在她手里被攥皱了。*"
+    },
+    "lunch2_seo_end_c1": {
+        "name": "{name}",
+        "text": "*多因用运动鞋的鞋尖把折叠椅的椅腿顶了两下。书妍把折好的湿巾放在饭盒盖上。*"
+    },
+    "lunch2_seo_c2_1": {
+        "name": "{name}",
+        "text": "*我用手背擦了擦嘴。*"
+    },
+    "lunch2_seo_c2_2": {
+        "name": "书妍",
+        "text": "用湿巾。"
+    },
+    "lunch2_seo_c2_3": {},
+    "lunch2_seo_end_c2": {
+        "name": "{name}",
+        "text": "*手背上还留着米饭的印子。书妍解开饭盒的带子，又重新系上。*"
+    },
+    "lunch2_dain_1_check": {
+        "name": "{name}",
+        "text": "*我朝小卖部走去。*"
+    },
+    "lunch2_dain_1b": {
+        "name": "{name}",
+        "text": "*和多因去小卖部。头一件事：石头剪刀布对决。*"
+    },
+    "lunch2_dain_1b_seo": {
+        "name": "{name}",
+        "text": "*和多因去小卖部。昨天是饭盒，今天最先扑面而来的是面包的香味。*"
+    },
+    "lunch2_dain_2b_seo": {
+        "name": "多因",
+        "text": "哦，所以今天是选我这边，而不是会长的饭盒了？"
+    },
+    "lunch2_dain_3b_seo": {
+        "name": "{name}",
+        "text": "昨天是会长把我拽走的，所以今天我想看看跟你一起过午休是什么样子。"
+    },
+    "lunch2_dain_4b_seo": {
+        "name": "多因",
+        "text": "好耶！不许反悔。一局定胜负，赌一个肉松面包！"
+    },
+    "lunch2_dain_1b_yuna": {
+        "name": "{name}",
+        "text": "*和多因去小卖部。昨天是安静的图书馆。今天最先扑来的是面包的香味和喧闹声。*"
+    },
+    "lunch2_dain_2b_yuna": {
+        "name": "多因",
+        "text": "喂，你昨天在图书馆待了一天，那今天该好好跟我玩一玩了吧？"
+    },
+    "lunch2_dain_3b_yuna": {
+        "name": "{name}",
+        "text": "去过安静的地方，也该去试试吵闹的。"
+    },
+    "lunch2_dain_4b_yuna": {
+        "name": "多因",
+        "text": "不错！我佩服这种平衡感。那来玩一局吧！"
+    },
+    "lunch2_dain_1": {
+        "name": "{name}",
+        "text": "*和多因去小卖部。昨天那局石头剪刀布的复赛。*"
+    },
+    "lunch2_dain_2": {
+        "name": "多因",
+        "text": "你今天要输了。做好心理准备！"
+    },
+    "lunch2_dain_3": {
+        "name": "{name}",
+        "text": "你昨天也是这么说的。"
+    },
+    "lunch2_dain_4": {
+        "name": "多因",
+        "text": "昨天只是热身！"
+    },
+    "lunch2_dain_5": {
+        "name": "{name}",
+        "text": "*石头剪刀布。——多因又输了。*"
+    },
+    "lunch2_dain_3b": {
+        "name": "{name}",
+        "text": "真的假的？"
+    },
+    "lunch2_dain_4b": {
+        "name": "多因",
+        "text": "那当然！我其实超会玩这个的！"
+    },
+    "lunch2_dain_5b": {
+        "name": "{name}",
+        "text": "*石头剪刀布。多因输了。*"
+    },
+    "lunch2_dain_6": {
+        "name": "多因",
+        "text": "这是不是作弊了？"
+    },
+    "lunch2_dain_7": {
+        "name": "{name}",
+        "text": "石头剪刀布要怎么作弊？"
+    },
+    "lunch2_dain_8": {
+        "name": "多因",
+        "text": "好啦好啦。两个肉松面包，谢谢！"
+    },
+    "lunch2_dain_9": {
+        "name": "{name}",
+        "text": "*我们买了面包，站在走廊的窗边。书妍拎着饭袋从对面走过来。*"
+    },
+    "lunch2_dain_10": {
+        "name": "{name}",
+        "text": "*书妍瞥了一眼站在多因身边的我，继续往前走。嘴里还留着那一口肉松。*"
+    },
+    "lunch2_dain_11": {
+        "name": "多因",
+        "text": "喂，会长怎么回事？她干嘛盯着看？"
+    },
+    "lunch2_dain_12": {
+        "name": "{name}",
+        "text": "我怎么知道。"
+    },
+    "lunch2_dain_13": {
+        "name": "多因",
+        "text": "嗯……你跟会长也很熟吗？"
+    },
+    "lunch2_dain_13_b": {
+        "name": "多因",
+        "text": "*她大大咬了一口肉松面包。碎屑掉在了她的校服袖子上。*"
+    },
+    "lunch2_dain_choice": {
+        "name": "多因",
+        "text": "*她直直地盯着{name}。*",
+        "choices": [
+            "昨天聊了几句",
+            "她只是带我逛了逛学校而已？",
+            "怎么，你在意吗？"
+        ]
+    },
+    "lunch2_dain_c1_1": {
+        "name": "多因",
+        "text": "*她嘴里还咬着肉松面包，把包装纸的边缘折了起来。咀嚼停住了。*"
+    },
+    "lunch2_dain_c2_1": {
+        "name": "多因",
+        "text": "*她咬了一口肉松面包，看着书妍的倒影在小卖部的玻璃门里渐渐远去。*"
+    },
+    "lunch2_dain_c3_1": {
+        "name": "多因",
+        "text": "喂，别笑！*她把肉松面包掰成两半，递过来一半。*来，吃这个。"
+    },
+    "lunch2_dain_c3_2": {
+        "name": "多因",
+        "text": "*她把肉松面包的包装纸折了三折，直到只剩两个指节宽。*"
+    },
+    "lunch2_dain_end": {
+        "name": "{name}",
+        "text": "*多因嚼着肉松面包的时候，书妍刚走过的那扇玻璃门还在晃动。*"
+    },
+    "lunch2_dain_end_b": {
+        "name": "{name}",
+        "text": "*第五节体育课。我在操场上跑步时，旁边的人猛地停下，我撞了上去。我的胳膊肘擦破了——不严重，但流了一点血。*"
+    },
+    "lunch2_dain_end_c": {
+        "name": "体育老师",
+        "text": "去保健室把伤口清理一下。"
+    },
+    "lunch2_dain_end_d": {
+        "name": "{name}",
+        "text": "*我推开保健室的门。和昨天一样的消毒水味道。*"
+    },
+    "lunch2_dain_end_e": {
+        "name": "保健老师",
+        "text": "*她从病历上抬起头。*哦，昨天的转学生。"
+    },
+    "lunch2_dain_end_ins4_first": {
+        "name": "{name}",
+        "text": "*我推开保健室的门。陌生的消毒水气味扑面而来。*"
+    },
+    "lunch2_dain_end_ins5_first": {
+        "name": "保健老师",
+        "text": "*她合上病历。*第一次来保健室吧？你是那个转学生，对吧？"
+    },
+    "lunch2_dain_end_f": {
+        "name": "{name}",
+        "text": "胳膊肘擦破了一点。"
+    },
+    "lunch2_dain_end_g": {
+        "name": "保健老师",
+        "text": "又来了？想当常客吗？"
+    },
+    "lunch2_dain_end_h": {
+        "name": "{name}",
+        "text": "*一只戴着手套的手先查看了我胳膊肘周围的脏东西。*"
+    },
+    "lunch2_dain_end_ins7_first": {
+        "name": "保健老师",
+        "text": "第一次吧？难免的。来，我们清理一下。"
+    },
+    "lunch2_dain_end_ins8_first": {
+        "name": "{name}",
+        "text": "*保健老师戴着手套的手指，先把我胳膊肘周围的脏东西拂掉。*"
+    },
+    "lunch2_dain_end_i": {
+        "name": "保健老师",
+        "text": "*她拿出消毒水和纱布，把纱布托在我的胳膊肘下面。*"
+    },
+    "lunch2_dain_end_j": {
+        "name": "保健老师",
+        "text": "可能会有点刺痛。把手臂放松。"
+    },
+    "lunch2_dain_end_k": {
+        "name": "{name}",
+        "text": "*一块浸了消毒水的棉片扫过伤口。胳膊肘内侧刺刺地发麻。*"
+    },
+    "lunch2_dain_end_l": {
+        "name": "保健老师",
+        "text": "*她贴上创可贴。*别动。好了。"
+    },
+    "lunch2_dain_end_m": {
+        "name": "保健老师",
+        "text": "*她示意我弯一下胳膊肘。*"
+    },
+    "lunch2_dain_end_n": {
+        "name": "保健老师",
+        "text": "弯弯看。会不会扯着，或者刺痛？"
+    },
+    "lunch2_dain_end_o": {
+        "name": "{name}",
+        "text": "*即使我把胳膊弯起又伸直，创可贴的边缘也一直平平地贴着。*"
+    },
+    "lunch2_dain_end_p": {
+        "name": "保健老师",
+        "text": "这是我在医院学到的小窍门。关节上这样贴，创可贴能撑得更久。"
+    },
+    "lunch2_dain_end_q": {},
+    "lunch2_dain_end_r": {
+        "name": "{name}",
+        "text": "*我检查创可贴时，发现一本淡绿色的笔记本从抽屉里露出一截。摊开的那一页第一行写着：“致那一天的你——”保健老师把抽屉合上了。*"
+    },
+    "lunch2_dain_end_s": {
+        "name": "保健老师",
+        "text": "*她朝抽屉瞥了一眼。*把你刚才看到的忘掉。我告诉你一件事作为交换：比起咖啡，我更喜欢可可。"
+    },
+    "lunch2_dain_end_t": {
+        "name": "{name}",
+        "text": "*回答完之后，她的手仍按在抽屉的把手上。*"
+    },
+    "lunch2_dain_end_u": {
+        "name": "保健老师",
+        "text": "*她松开了抽屉把手。*关于我的事，就说到这里。创可贴怎么样？"
+    },
+    "lunch2_dain_end_v": {},
+    "lunch2_dain_end_w": {
+        "name": "保健老师",
+        "text": "好了。回教室去，今天别沾水。"
+    },
+    "lunch2_dain_end_x": {
+        "name": "{name}",
+        "text": "明天还要再换吗？"
+    },
+    "lunch2_dain_end_y": {
+        "name": "保健老师",
+        "text": "*保健老师停下折创可贴包装的动作，看向{name}。*"
+    },
+    "lunch2_dain_end_z": {
+        "name": "保健老师",
+        "text": "边角翘起来或者沾了水，就回来。要是看着没问题，就这样别动。"
+    },
+    "lunch2_dain_end_b2": {
+        "name": "{name}",
+        "text": "*保健老师在诊疗记录里写下了贴创可贴的时间。*"
+    },
+    "lunch2_dain_end_c2": {
+        "name": "保健老师",
+        "text": "上课时要是觉得不舒服，就告诉体育老师。不然就课间来。"
+    },
+    "lunch2_dain_end_d2": {
+        "name": "{name}",
+        "text": "*记录的末尾，她写下：“肘关节屈伸已确认。”*"
+    },
+    "lunch2_dain_end_nurse_short1": {
+        "name": "保健老师",
+        "text": "好了，处理完了。下次跑之前，先看清楚路。"
+    },
+    "lunch2_dain_end_nurse_short2": {
+        "name": "{name}",
+        "text": "*我贴着创可贴离开了保健室。就算弯曲胳膊肘，它的边缘也依然平整。*"
+    },
+    "lunch2_dain_end_nurse_short3": {
+        "name": "{name}",
+        "text": "*我一踏进走廊，铃声就响了。崭新的创可贴在袖口的边缘勾了一下，又落回原位。*"
+    },
+    "lunch2_yuna_1": {
+        "name": "{name}",
+        "text": "*图书馆别馆比主楼更旧，几乎没有学生。楼梯顶端，走廊的尽头，由娜拿着一本书靠墙站着。*"
+    },
+    "lunch2_yuna_intro_check": {},
+    "lunch2_yuna_3": {},
+    "lunch2_yuna_4": {
+        "name": "{name}",
+        "text": "我收到你的纸条了。"
+    },
+    "lunch2_yuna_5": {
+        "name": "由娜",
+        "text": "你也许不会来的。"
+    },
+    "lunch2_yuna_6": {
+        "name": "{name}",
+        "text": "为什么？"
+    },
+    "lunch2_yuna_7": {
+        "name": "由娜",
+        "text": "你跟那个吵闹的人在一起，那样更好玩，不是吗？"
+    },
+    "lunch2_yuna_8": {
+        "name": "{name}",
+        "text": "有时候，我也需要一个可以躲起来的地方。"
+    },
+    "lunch2_yuna_3_seo": {
+        "name": "由娜",
+        "text": "你来了。"
+    },
+    "lunch2_yuna_4_seo": {
+        "name": "{name}",
+        "text": "我收到你的纸条了。"
+    },
+    "lunch2_yuna_5_seo": {
+        "name": "由娜",
+        "text": "昨天你和会长在一起。"
+    },
+    "lunch2_yuna_6_seo": {
+        "name": "{name}",
+        "text": "今天是你叫我来的。"
+    },
+    "lunch2_yuna_7_seo": {
+        "name": "由娜",
+        "text": "真出乎意料。"
+    },
+    "lunch2_yuna_8_seo": {
+        "name": "{name}",
+        "text": "这让我更想来了。"
+    },
+    "lunch2_yuna_3_yuna": {
+        "name": "由娜",
+        "text": "你又来了。"
+    },
+    "lunch2_yuna_4_yuna": {
+        "name": "{name}",
+        "text": "这次你还给我写了纸条。"
+    },
+    "lunch2_yuna_5_yuna": {
+        "name": "由娜",
+        "text": "昨天也很安静。今天也是吗？"
+    },
+    "lunch2_yuna_6_yuna": {
+        "name": "{name}",
+        "text": "昨天很舒服。所以我又来了。"
+    },
+    "lunch2_yuna_7_yuna": {
+        "name": "由娜",
+        "text": "原来是这样。"
+    },
+    "lunch2_yuna_8_yuna": {
+        "name": "{name}",
+        "text": "嗯。坐在你旁边，并不难受。"
+    },
+    "lunch2_yuna_9": {
+        "name": "由娜",
+        "text": "*由娜把书签夹进书里，站起身，朝走廊那头点了点头。*"
+    },
+    "lunch2_yuna_10": {
+        "name": "由娜",
+        "text": "好。"
+    },
+    "lunch2_yuna_11": {
+        "name": "由娜",
+        "text": "*由娜带着我往别馆深处走去。走廊尽头，脚步声轻轻回荡，那里有一间小屋，阳光从旧窗帘的缝隙透进来，一直照到最下层的书架。*"
+    },
+    "lunch2_yuna_13": {
+        "name": "{name}",
+        "text": "这是什么地方？某种秘密阅览室吗？"
+    },
+    "lunch2_yuna_14": {
+        "name": "由娜",
+        "text": "几乎没有人知道这个地方。"
+    },
+    "lunch2_yuna_15": {
+        "name": "由娜",
+        "text": "*她坐到沙发上，把包放在地上，留出了一个空位。*"
+    },
+    "lunch2_yuna_16": {
+        "name": "由娜",
+        "text": "以前还有另一个人会来这里。"
+    },
+    "lunch2_yuna_17": {
+        "name": "{name}",
+        "text": "以前？"
+    },
+    "lunch2_yuna_17_b": {
+        "name": "由娜",
+        "text": "*书签的末端慢慢消失在书页之间。由娜没有翻到下一页。*"
+    },
+    "lunch2_yuna_choice": {
+        "name": "{name}",
+        "text": "*她在“以前”之后没有再说下去。由娜把书签的尖端推得更深地插进书里。*",
+        "choices": [
+            "那个人后来怎么了？",
+            "不问，在她旁边坐下",
+            "我比那个人更会听。",
+            "那你以后可以把什么都告诉我。"
+        ]
+    },
+    "lunch2_yuna_c1_1": {
+        "name": "由娜",
+        "text": "她转学了。一年前。"
+    },
+    "lunch2_yuna_c1_2": {
+        "name": "由娜",
+        "text": "*她的手指用力按住书签的末端。*"
+    },
+    "lunch2_yuna_c1_3": {
+        "name": "由娜",
+        "text": "一句话也没说。"
+    },
+    "lunch2_yuna_c1_4": {
+        "name": "由娜",
+        "text": "*她把书签往书里推得更深，折出了一页的书角。她没有把它抚平。*"
+    },
+    "lunch2_yuna_c1_5": {
+        "name": "{name}",
+        "text": "她从来没有联系过你吗？"
+    },
+    "lunch2_yuna_c1_6": {
+        "name": "由娜",
+        "text": "我不知道。是她没有，还是她做不到。"
+    },
+    "lunch2_yuna_c1_7": {
+        "name": "{name}",
+        "text": "*由娜举起书，挡住了脸的下半部分。我只看得见摊开的书脊上磨旧的金字。*"
+    },
+    "lunch2_yuna_c1_9": {
+        "name": "{name}",
+        "text": "也许她是匆忙离开的？有时候，事情就是这样从缝隙里漏掉的。"
+    },
+    "lunch2_yuna_c1_9_b": {
+        "name": "由娜",
+        "text": "*由娜合上了书。*"
+    },
+    "lunch2_yuna_c1_10": {
+        "name": "由娜",
+        "text": "转学的事，我是事后才知道的。在那之前，一个字都没有。"
+    },
+    "lunch2_yuna_c1_11": {
+        "name": "{name}",
+        "text": "这样啊。"
+    },
+    "lunch2_yuna_c1_12": {
+        "name": "由娜",
+        "text": "*书签还夹在书里，由娜没有翻页。她只是用拇指把折弯的书角抚平。*"
+    },
+    "lunch2_yuna_c1_14": {
+        "name": "{name}",
+        "text": "*我的指尖描着书脊上磨旧的金字。*"
+    },
+    "lunch2_yuna_c2_1": {
+        "name": "{name}",
+        "text": "*我在她旁边坐下时，由娜从自己那摞书里抽出一本，放在了我面前。*"
+    },
+    "lunch2_yuna_c2_3": {
+        "name": "由娜",
+        "text": "看。"
+    },
+    "lunch2_yuna_c2_4": {
+        "name": "{name}",
+        "text": "*我翻开书。我们的书页交替翻动着，窗框的影子慢慢移到了沙发的尽头。*"
+    },
+    "lunch2_yuna_c2_6": {
+        "name": "由娜",
+        "text": "这就是我喜欢这里的原因。"
+    },
+    "lunch2_yuna_c2_7": {
+        "name": "{name}",
+        "text": "嗯？"
+    },
+    "lunch2_yuna_c2_8": {
+        "name": "由娜",
+        "text": "很安静。——但我并不孤单。"
+    },
+    "lunch2_yuna_c2_9": {
+        "name": "由娜",
+        "text": "*她转回身面向书架，但她的书在同一页上停留了很久。*"
+    },
+    "lunch2_yuna_end": {
+        "name": "{name}",
+        "text": "*关门之前，我回头看了一眼。由娜重新翻开了停在“以前”的那一页。*"
+    },
+    "lunch2_seo_trap_1": {
+        "name": "书妍",
+        "text": "*她把湿巾缩了回去。*对。你自己能行。"
+    },
+    "lunch2_yuna_trap_compare": {
+        "name": "由娜",
+        "text": "*由娜把书签的尖端又往里推了一格。*这不是在拿你和那个人比较。"
+    },
+    "lunch2_yuna_trap_exclusive": {
+        "name": "由娜",
+        "text": "*她把书拉向自己，然后慢慢松开。*那是我自己来决定的事。"
+    },
+    "lunch2_seo_2_warm": {
+        "name": "书妍",
+        "text": "你又来了。开始习惯了？"
+    },
+    "lunch2_seo_2_cool": {
+        "name": "书妍",
+        "text": "你来了。我把饭盒打开。稍等一下。"
+    },
+    "lunch2_seo_2_neg": {
+        "name": "书妍",
+        "text": "*她没有打开饭盒，看着栏杆。*学生会有事。别待太久。"
+    },
+    "lunch2_seo_2b_warm": {
+        "name": "书妍",
+        "text": "你居然一路上来了。有胆量。"
+    },
+    "lunch2_seo_2b_cool": {
+        "name": "书妍",
+        "text": "天台是要许可才能上来的。今天是例外。"
+    },
+    "lunch2_dain_tone": {},
+    "lunch2_dain_2_cool": {
+        "name": "多因",
+        "text": "你既然来了，就去排队。你请面包，你知道的。"
+    },
+    "lunch2_dain_2_neg": {
+        "name": "多因",
+        "text": "*她在队伍里留出一个空位，盯着前方。*今天不打赌。买了就走吧。"
+    },
+    "lunch2_yuna_3_warm": {
+        "name": "由娜",
+        "text": "你来了。"
+    },
+    "lunch2_yuna_3_cool": {
+        "name": "由娜",
+        "text": "*她只是把书签夹进书里，让身边的座位空着。*"
+    },
+    "lunch2_yuna_3_neg": {
+        "name": "由娜",
+        "text": "*没有纸条。她只是翻了一页。*我今天不想说话。"
+    },
+    "lunch2_seo_neg_leave": {
+        "name": "{name}",
+        "text": "*我关上天台的门，走下楼梯。*"
+    },
+    "lunch2_dain_neg_leave": {
+        "name": "{name}",
+        "text": "*我从小卖部的队伍里退出来，站到了走廊上。*"
+    },
+    "lunch2_yuna_neg_leave": {
+        "name": "{name}",
+        "text": "*我关上别馆的门，走下楼梯。*"
+    },
+    "lunch2_seo_cool_cont": {
+        "name": "{name}",
+        "text": "*饭盒盖掀开了。风先吹了进来。*"
+    },
+    "lunch2_dain_cool_cont": {
+        "name": "{name}",
+        "text": "*我拿了一个肉松面包付了钱。多因只拿了她自己的那份。*"
+    },
+    "lunch2_dain_cool_leave": {
+        "name": "{name}",
+        "text": "*我付完钱走进走廊。多因已经朝她的朋友们走去了。*"
+    },
+    "lunch2_seo_cool_leave": {
+        "name": "{name}",
+        "text": "*我合上饭盒，关上了天台的门。*"
+    },
+    "lunch2_yuna_cool_cont": {
+        "name": "{name}",
+        "text": "*我翻过一页。由娜没有摘下耳机。*"
+    }
+}

@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.279";
+const ASSET_VERSION = "2.9.280";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -320,7 +320,10 @@ const CHAR_NAME_MAP = Object.freeze({
     // French
     "Professeur Principal": "Teacher", "Professeure principale": "Teacher", "Professeure": "Teacher", "Infirmière Scolaire": "Nurse", "Infirmière scolaire": "Nurse", "Infirmière": "Nurse",
     // German
-    "Klassenlehrerin": "Teacher", "Lehrerin": "Teacher", "Schulkrankenschwester": "Nurse"
+    "Klassenlehrerin": "Teacher", "Lehrerin": "Teacher", "Schulkrankenschwester": "Nurse",
+    // Chinese (Simplified)
+    "书妍": "Seoyeon", "由娜": "Yuna", "多因": "Dain", "夏恩": "Haeun",
+    "班主任": "Teacher", "保健老师": "Nurse"
 });
 
 
@@ -369,7 +372,7 @@ function getCupidDeviceId() {
     }
 }
 
-const CUPID_SUPPORTED_LANGS = new Set(['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt']);
+const CUPID_SUPPORTED_LANGS = new Set(['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt', 'zh']);
 
 function getCupidLanguage() {
     const raw = String(window.GAME_LANG || document.documentElement.lang || 'ko')
@@ -1395,7 +1398,8 @@ function optimizeImageHistory(messages, recentCount = 5) {
         ja: '[画像添付：現在のテキストモデルは画像そのものを読み取れません。ユーザーの文章と会話の文脈だけをもとに返答してください。]',
         fr: '[Image jointe : le modèle texte actuel ne peut pas analyser directement l’image. Répondez uniquement à partir du texte de l’utilisateur et du contexte de la conversation.]',
         de: '[Bildanhang: Das aktuelle Textmodell kann den Bildinhalt nicht direkt auswerten. Antworte ausschließlich anhand des Benutzertexts und des Gesprächskontexts.]',
-        pt: '[Imagem anexada: o modelo de texto atual não consegue analisar diretamente o conteúdo da imagem. Responda apenas com base no texto do usuário e no contexto da conversa.]'
+        pt: '[Imagem anexada: o modelo de texto atual não consegue analisar diretamente o conteúdo da imagem. Responda apenas com base no texto do usuário e no contexto da conversa.]',
+        zh: '[图片附件：当前的文本模型无法直接读取图片的像素。请只根据用户的文字和对话上下文来回应。]'
     }[String(lang).toLowerCase().split('-')[0]]
         || '[Image attachment: the current text model cannot inspect image pixels directly. Respond using only the user text and conversation context.]';
 

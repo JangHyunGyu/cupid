@@ -1,0 +1,222 @@
+{
+    "night_start": {
+        "name": "{name}",
+        "text": "*回到房间，我躺在床上。沾在校服衬衫上的樱花香气，渗进了被子里。*"
+    },
+    "night_start_3": {
+        "name": "{name}",
+        "text": "*手机震了一下。是学校的通讯软件。*"
+    },
+    "night_msg_seo_1": {
+        "name": "书妍",
+        "text": "*今天的天台怎么样？*"
+    },
+    "night_msg_seo_2": {
+        "name": "{name}",
+        "text": "*风很舒服*"
+    },
+    "night_msg_seo_3": {
+        "name": "书妍",
+        "text": "*下次我至少会把饮料备好*"
+    },
+    "night_msg_seo_4": {
+        "name": "书妍",
+        "text": "*免费请你*"
+    },
+    "night_msg_seo_5": {
+        "name": "{name}",
+        "text": "*她把“免费请你”单独作为一条消息发了出来。是故意的。*"
+    },
+    "night_msg_yuna_1": {
+        "name": "由娜",
+        "text": "*今天你安静地陪我坐着，我很开心*"
+    },
+    "night_msg_yuna_2": {
+        "name": "由娜",
+        "text": "*明天我给你留位子*"
+    },
+    "night_msg_yuna_3": {
+        "name": "{name}",
+        "text": "*我反复读着“我给你留位子”，屏幕自己暗了下去。*"
+    },
+    "night_msg_dain_1": {
+        "name": "多因",
+        "text": "没想到我居然会输掉石头剪刀布"
+    },
+    "night_msg_dain_2": {
+        "name": "多因",
+        "text": "*明天再来一局，哈哈*"
+    },
+    "night_msg_dain_3": {
+        "name": "多因",
+        "text": "*还在为那笔面包钱生气。说真的。*"
+    },
+    "night_msg_dain_4": {
+        "name": "{name}",
+        "text": "*三条消息几乎同时到达。回复框里已经先有了一个“哈哈”。*"
+    },
+    "night_hidden_check": {
+        "name": "{name}",
+        "text": "*通讯软件的通知底下——还压着别的东西。*"
+    },
+    "night_hidden_homeroom_1": {
+        "name": "{name}",
+        "text": "*学校的App上有班主任的一条帖子。“三年二班通知：明天第一节课请带好数学用具。——转学生只要继续好好适应就行了。”*"
+    },
+    "night_hidden_homeroom_2": {
+        "name": "{name}",
+        "text": "*我把通知又读了一遍，然后把手机屏幕朝下扣在桌上。我的倒影在黑屏上闪了一下。*"
+    },
+    "night_hidden_nurse_1": {
+        "name": "{name}",
+        "text": "*学校健康App弹出一条通知。“保健室记录：转学生——轻微头晕。今天请多喝水，不要不吃早饭。症状再出现，请到保健室就诊。”*"
+    },
+    "night_hidden_nurse_2": {
+        "name": "{name}",
+        "text": "*读完最后这条提醒，我把床边的水壶灌满了水。*"
+    },
+    "night_late_transition": {
+        "name": "{name}",
+        "text": "*我刚要睡着，手机又震了一下。晚上十一点。是谁？*"
+    },
+    "night_late_branch": {
+        "name": "{name}",
+        "text": "*屏幕亮了。*"
+    },
+    "night_seo_late_1": {
+        "name": "书妍",
+        "text": "*明天学校见。*"
+    },
+    "night_seo_late_2": {
+        "name": "书妍",
+        "text": "*你要是不来，我就去找你*"
+    },
+    "night_seo_late_3": {
+        "name": "{name}",
+        "text": "*我放下手机，明天的到校时间还停留在锁屏上。*"
+    },
+    "night_yuna_late_1": {
+        "name": "由娜",
+        "text": "*一个灰色的气泡写着“此消息已被撤回”。*"
+    },
+    "night_yuna_late_2": {
+        "name": "{name}",
+        "text": "*输入中的提示出现了，又消失了，却没有新消息进来。*"
+    },
+    "night_yuna_late_3": {
+        "name": "{name}",
+        "text": "*我不停地点开、关上回复框，直到屏幕进入休眠变黑。*"
+    },
+    "night_yuna_late_4": {
+        "name": "{name}",
+        "text": "*黑色的屏幕上只留下我的拇指印。*"
+    },
+    "night_dain_late_1": {
+        "name": "多因",
+        "text": "*你还没睡吧？*"
+    },
+    "night_dain_late_2": {
+        "name": "多因",
+        "text": "*我需要一个晨练搭子！*"
+    },
+    "night_dain_late_3": {
+        "name": "多因",
+        "text": "*“不行”这个选项不存在哦，哈哈*"
+    },
+    "night_dain_late_4": {
+        "name": "{name}",
+        "text": "*我已经在回复框里打好了“我去”。*"
+    },
+    "night_dain_late_4_b": {
+        "name": "{name}",
+        "text": "*多因的消息下面缀着一串表情符号。每一个都不一样。*"
+    },
+    "night_end_1": {
+        "name": "{name}",
+        "text": "*我放下手机，盯着天花板。校服上还留着樱花的香气。*"
+    },
+    "night_end_3": {
+        "name": "{name}",
+        "text": "*今天存下的名字还留在锁屏上。就算熄了屏，我的手指还是又一次伸向了电源键。*"
+    },
+    "forced_violation_day1_after_seoyeon": {
+        "name": "书妍",
+        "text": "*对话结束后，书妍沉默了好一会儿。等她再次开口时，声音已经冷了下来。*别以为你可以假装刚才的事没发生过。这段时间，别靠近我，也别联系我。",
+        "choices": [
+            "不找借口，先道歉，然后结束这段对话。",
+            "试着解释这是个误会。"
+        ]
+    },
+    "forced_violation_day1_seoyeon_apologize": {
+        "name": "书妍",
+        "text": "*书妍的神情并没有因为道歉而缓和。*我听见了。但这不能抹掉发生过的事。我说过了，这段时间别联系我。"
+    },
+    "forced_violation_day1_seoyeon_excuse": {
+        "name": "书妍",
+        "text": "*书妍打断了解释。*误会？从我说“不”的那一刻起，就不是误会了。别再说了。"
+    },
+    "forced_violation_day1_after_yuna": {
+        "name": "由娜",
+        "text": "*对话中断后，由娜短促地吸了一口气。紧绷的脸上只剩下戒备。*你明知道我不愿意，却还是无视了我。我现在连看到你都不想。别再联系我了。",
+        "choices": [
+            "不找借口，先道歉，然后结束这段对话。",
+            "试着解释这是个误会。"
+        ]
+    },
+    "forced_violation_day1_yuna_apologize": {
+        "name": "由娜",
+        "text": "*由娜停顿了很久才回答。*道歉不能让它消失。到此为止吧。"
+    },
+    "forced_violation_day1_yuna_excuse": {
+        "name": "由娜",
+        "text": "*由娜没等解释说完就打断了。*我说过不行。没什么好解释的。"
+    },
+    "forced_violation_day1_after_dain": {
+        "name": "多因",
+        "text": "*多因没有像平时那样笑着带过。沉默了很久，她才用生硬的声音开口。*这不是玩笑。我说了不行，你还是硬来。这件事我不会就这么算了。",
+        "choices": [
+            "不找借口，先道歉，然后结束这段对话。",
+            "试着解释这是个误会。"
+        ]
+    },
+    "forced_violation_day1_dain_apologize": {
+        "name": "多因",
+        "text": "*多因沉默了很久，终于简短地回了一句。*行。那今天就到此为止。什么时候再说话、要不要说话，由我来决定。"
+    },
+    "forced_violation_day1_dain_excuse": {
+        "name": "多因",
+        "text": "*多因的声音变得粗重。*不。别找借口。我说了不行，你还是做了。"
+    },
+    "forced_violation_day1_after_teacher": {
+        "name": "班主任",
+        "text": "*对话结束后，班主任把界线划得更清楚了，语气严厉。*你刚才的所作所为明显越线了。不许再靠近一步。我会按照正规程序处理这件事。",
+        "choices": [
+            "不找借口，先道歉，然后结束这段对话。",
+            "试着解释这是个误会。"
+        ]
+    },
+    "forced_violation_day1_teacher_apologize": {
+        "name": "班主任",
+        "text": "*班主任短促地吸了一口气，才接着说。*你的道歉我听到了。我仍然会按正规程序处理。什么都别再说了。"
+    },
+    "forced_violation_day1_teacher_excuse": {
+        "name": "班主任",
+        "text": "*班主任打断了解释。*现在不是你给自己辩解的时候。不要再说了，保持距离。"
+    },
+    "forced_violation_day1_after_nurse": {
+        "name": "保健老师",
+        "text": "*对话中断，保健老师声音里平日的玩笑意味全都消失了。*从现在起，请保持距离。我会把发生的事记录下来，并通知需要知道的人。",
+        "choices": [
+            "不找借口，先道歉，然后结束这段对话。",
+            "试着解释这是个误会。"
+        ]
+    },
+    "forced_violation_day1_nurse_apologize": {
+        "name": "保健老师",
+        "text": "*保健老师沉默了片刻，然后语气坚定地回答。*你的道歉我听到了。但我还是会记录此事，并通知相关人员。这次谈话到此为止。"
+    },
+    "forced_violation_day1_nurse_excuse": {
+        "name": "保健老师",
+        "text": "*保健老师的声音压得更低了。*你觉得把它说成误会，就能改变什么吗？事实是，我说了不，你却无视了我。"
+    }
+}

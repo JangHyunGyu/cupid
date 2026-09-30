@@ -311,7 +311,7 @@ test('negative-affinity copy exists in every language and differs from the zero-
         ['lunch2_seo_cool_leave', 'lunch2_seo_7'],
         ['lunch2_yuna_cool_cont', 'lunch2_yuna_4']
     ];
-    for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+    for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
         const copy = loadLocaleCopy(locale);
         for (const [negId, zeroId] of pairs) {
             assert.ok(copy[negId]?.text?.trim(), `${locale}:${negId}`);

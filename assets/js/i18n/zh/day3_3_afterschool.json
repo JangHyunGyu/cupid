@@ -1,0 +1,1049 @@
+{
+    "after3_start": {
+        "name": "{name}",
+        "text": "*放学后。我的脚步停在走廊的岔路口。学生会室、别馆、体育馆的指示牌，各指向不同的方向。*"
+    },
+    "after3_route_check": {
+        "name": "{name}",
+        "text": "*我查看手机。关于周末的事，该先去找谁谈？*"
+    },
+    "after3_auto_dain": {
+        "name": "{name}",
+        "text": "*我想到多因，朝体育馆走去。*"
+    },
+    "after3_auto_yuna": {
+        "name": "{name}",
+        "text": "*我想到由娜，朝图书馆别馆走去。*"
+    },
+    "after3_auto_seo": {
+        "name": "{name}",
+        "text": "*我想到书妍，朝学生会室走去。*"
+    },
+    "after3_multi_choice": {
+        "name": "{name}",
+        "text": "*周末的约不能就这么悬着。我该先跟谁说？*",
+        "choices": [
+            "去找书妍",
+            "去找由娜",
+            "去找多因",
+            "再想一想"
+        ]
+    },
+    "after3_choice": {
+        "name": "{name}",
+        "text": "*我该去哪儿？*",
+        "choices": [
+            "去学生会室",
+            "去图书馆",
+            "去体育馆",
+            "今天就直接回家"
+        ]
+    },
+    "after3_reject_for_seo_1": {
+        "name": "{name}",
+        "text": "*我在走廊里碰到多因，她没有先挥手。她只是用运动鞋的鞋尖蹭了蹭地板。*"
+    },
+    "after3_reject_for_seo_2": {
+        "name": "多因",
+        "text": "你今天不来体育馆了，对吧？"
+    },
+    "after3_reject_for_seo_3": {
+        "name": "{name}",
+        "text": "*图书馆里，由娜的座位上只剩下一张纸条：“今天先回去了。”我还是没能跟她谈成约定的事。*"
+    },
+    "after3_reject_for_seo_3b": {},
+    "after3_reject_for_seo_3c": {},
+    "after3_reject_for_seo_4": {
+        "name": "{name}",
+        "text": "*我走进走廊。多因沉默了，由娜的座位也空了。我把手里的纸条沿着折痕攥皱。*"
+    },
+    "after3_seo_1": {
+        "name": "{name}",
+        "text": "*我推开学生会室的门。书妍趴在桌上，写字板掉在地上。*"
+    },
+    "after3_seo_3": {
+        "name": "书妍",
+        "text": "*她听到有人进来，抬起了头。眼睛看起来很疲惫。妆容有一点花了。*"
+    },
+    "after3_seo_4": {
+        "name": "书妍",
+        "text": "*书妍用鞋尖把掉落的写字板推到桌子底下。*"
+    },
+    "after3_seo_5": {
+        "name": "{name}",
+        "text": "书妍？"
+    },
+    "after3_seo_5_b": {
+        "name": "书妍",
+        "text": "*书妍用手指梳了梳头发。*你看到了？"
+    },
+    "after3_seo_6": {
+        "name": "书妍",
+        "text": "*书妍清了一下嗓子。*没什么。忘了吧。"
+    },
+    "after3_seo_7": {
+        "name": "{name}",
+        "text": "忘什么？我什么都没看见。"
+    },
+    "after3_seo_7_b": {
+        "name": "书妍",
+        "text": "*书妍用手背盖住花掉的妆。*我不想让你看到这个。"
+    },
+    "after3_seo_8": {
+        "name": "书妍",
+        "text": "我的这一面。请保密。"
+    },
+    "after3_seo_9": {
+        "name": "书妍",
+        "text": "*书妍从桌子底下拿回写字板，放在膝盖上，双唇紧抿。*"
+    },
+    "after3_seo_choice": {
+        "name": "书妍",
+        "text": "今天你看到的，到此为止。现在，就像平时一样对待我。",
+        "choices": [
+            "谁都有这样的日子。别太往心里去。",
+            "刚才？我什么都没看到。我笔掉了，进来捡。",
+            "连你软弱的一面，我也会理解。",
+            "从今往后，我会陪在你身边，把一切都照顾好。"
+        ]
+    },
+    "after3_seo_pity_trap_1": {
+        "name": "书妍",
+        "text": "*书妍用手背使劲擦着花掉的妆。*"
+    },
+    "after3_seo_pity_trap_2": {
+        "name": "书妍",
+        "text": "谁都是。"
+    },
+    "after3_seo_pity_trap_3": {
+        "name": "书妍",
+        "text": "那是想安慰我吗？"
+    },
+    "after3_seo_pity_trap_4": {
+        "name": "书妍",
+        "text": "*她用手背擦着花掉的妆，一次擦过眼下，一次擦过嘴边。*"
+    },
+    "after3_seo_pity_trap_5": {
+        "name": "书妍",
+        "text": "请不要就这么轻轻带过。我现在没办法一下子就好起来。"
+    },
+    "after3_seo_pity_trap_6": {
+        "name": "书妍",
+        "text": "*书妍推了推眼镜。手背上留下了一道黑色的污痕。*"
+    },
+    "after3_seo_pity_trap_7": {
+        "name": "书妍",
+        "text": "能请你出去吗？我还有工作。"
+    },
+    "after3_seo_pity_trap_8": {
+        "name": "{name}",
+        "text": "书妍——"
+    },
+    "after3_seo_pity_trap_9": {
+        "name": "书妍",
+        "text": "叫我**会长**。"
+    },
+    "after3_seo_pity_trap_10": {
+        "name": "{name}",
+        "text": "*我在身后把学生会室的门关上。走廊里空无一人。屋里传来写字板被放在桌上的一声轻响。*"
+    },
+    "after3_seo_correct_1": {
+        "name": "书妍",
+        "text": "*写字板的边缘在她的手里被捏弯了。书妍在等我接下来要说什么。*"
+    },
+    "after3_seo_correct_2": {
+        "name": "{name}",
+        "text": "*我弯下腰，在桌子底下摸索，假装在找笔。我慢慢地找，眼睛不看书妍。*"
+    },
+    "after3_seo_correct_3": {
+        "name": "{name}",
+        "text": "哦，找到了。学生会室里的笔真的很容易丢啊，是吧？"
+    },
+    "after3_seo_correct_4": {
+        "name": "{name}",
+        "text": "*我站起来时，书妍用来擦妆的那只手的手背上，有一道黑色的痕迹。*"
+    },
+    "after3_seo_correct_5": {
+        "name": "书妍",
+        "text": "笔莫名消失，真是个谜。每年要丢三十支。"
+    },
+    "after3_seo_correct_6": {
+        "name": "{name}",
+        "text": "会长连犯人都抓不到吗？"
+    },
+    "after3_seo_correct_7": {
+        "name": "书妍",
+        "text": "*她短促地哼了一声。*要是抓到了，学生们就该开始怕学生会了。"
+    },
+    "after3_seo_correct_8": {
+        "name": "{name}",
+        "text": "*我一直在说笔的事，书妍推了推眼镜，等着我与她对上视线。*"
+    },
+    "after3_seo_correct_9": {
+        "name": "书妍",
+        "text": "{name}。"
+    },
+    "after3_seo_correct_10": {
+        "name": "{name}",
+        "text": "嗯。"
+    },
+    "after3_seo_correct_11": {
+        "name": "书妍",
+        "text": "下次丢笔，先来这里。"
+    },
+    "after3_seo_correct_12": {
+        "name": "{name}",
+        "text": "*书妍把下周的学生会日程折起，推到我面前。*"
+    },
+    "after3_seo_freetalk": {
+        "name": "书妍",
+        "text": "*书妍放下写字板，把身边的椅子拉出来。*再待一会儿吧。如果你不赶时间的话。",
+        "context": "第三天下午，两人一起坐在学生会室里。玩家没有追问书妍为什么落泪，而是假装去捡笔，照常开着玩笑。她为了表示感谢，把下周的日程递了过来。这一幕加深了信任。只有在旗标或记忆中已确立的情况下，才能提及其他的约会冲突。",
+        "personality": "书妍因为自己的尊严得到了尊重而松了口气。她那种干巴巴的简短幽默回来了，并为玩家腾出了位置。她没有立刻说出自己哭泣的所有原因。"
+    },
+    "after3_seo_end": {},
+    "after3_reject_for_yuna_1": {
+        "name": "{name}",
+        "text": "*书妍在走廊里整理她的写字板。她翻页的手比平时快。*"
+    },
+    "after3_reject_for_yuna_2": {
+        "name": "书妍",
+        "text": "我还有学生会的事要做。今天你先走吧。"
+    },
+    "after3_reject_for_yuna_walk_gym": {
+        "name": "{name}",
+        "text": "*我转身朝通向体育馆的走廊走去。*"
+    },
+    "after3_reject_for_yuna_3": {
+        "name": "多因",
+        "text": "*她一个人在体育馆里打球。*"
+    },
+    "after3_reject_for_yuna_3_dain": {
+        "name": "多因",
+        "text": "哦，嘿！"
+    },
+    "after3_reject_for_yuna_3_react": {
+        "name": "{name}",
+        "text": "*她只抬起一只手打了个招呼，把脸转向别处。她握着的书角压进了掌心。*"
+    },
+    "after3_reject_for_yuna_4": {
+        "name": "{name}",
+        "text": "*我只和书妍谈了公事，对多因几乎只打了个招呼。我想说的话，还是没有说。*"
+    },
+    "after3_yuna_1": {
+        "name": "{name}",
+        "text": "*我来到图书馆别馆内由娜的秘密阅读空间外。门开着。*"
+    },
+    "after3_yuna_2": {
+        "name": "{name}",
+        "text": "*由娜不在。沙发上放着一本摊开的笔记本，纸页上写满了字。封面内侧用小字写着由娜的名字。*"
+    },
+    "after3_yuna_4": {
+        "name": "{name}",
+        "text": "*第一页。“有一天，来了一个转学生。他找到了图书馆，一言不发地坐在我旁边。——我不介意。”*"
+    },
+    "after3_yuna_5_b": {
+        "name": "{name}",
+        "text": "*在第一句话下面，“教室窗边”被划了线。*"
+    },
+    "after3_yuna_6": {
+        "name": "由娜",
+        "text": "你在做什么？"
+    },
+    "after3_yuna_7": {
+        "name": "{name}",
+        "text": "*由娜的声音从我身后传来。她端着两杯饮料，停在门口，目光从摊开的笔记本移到我身上。*"
+    },
+    "after3_yuna_8": {
+        "name": "由娜",
+        "text": "那个。"
+    },
+    "after3_yuna_8b": {
+        "name": "由娜",
+        "text": "*由娜走过来，一把抢走了笔记本。*我没说你可以看。"
+    },
+    "after3_yuna_9": {
+        "name": "由娜",
+        "text": "*她把半边脸藏在笔记本后面。只有露出来的耳尖是红的。*"
+    },
+    "after3_yuna_choice": {
+        "name": "{name}",
+        "text": "*我把手从由娜抢回去的笔记本上收了回来。*",
+        "choices": [
+            "对不起。可是这写的是我，对吧？",
+            "对不起。我只看到了摊开的第一页。我不会再看了。不过，这位作者的文笔真的很好。",
+            "放心。我会替你好好保管这本笔记本。",
+            "从今往后，这样的文字，只给我一个人看。"
+        ]
+    },
+    "after3_yuna_decode_trap_1": {
+        "name": "由娜",
+        "text": "*由娜把笔记本按在胸口，用力得把封面都握弯了。*"
+    },
+    "after3_yuna_decode_trap_2": {
+        "name": "由娜",
+        "text": "不是。"
+    },
+    "after3_yuna_decode_trap_3": {
+        "name": "{name}",
+        "text": "不是吗？可是你看这一段——“坐在教室窗边读书——”"
+    },
+    "after3_yuna_decode_trap_4": {
+        "name": "由娜",
+        "text": "**我说了不是。**"
+    },
+    "after3_yuna_decode_trap_5": {
+        "name": "由娜",
+        "text": "*由娜把笔记本深深塞进包里，把拉链一直拉到底。*"
+    },
+    "after3_yuna_decode_trap_6": {
+        "name": "由娜",
+        "text": "正是因为有你这样的人，我才一行字都写不出来。"
+    },
+    "after3_yuna_decode_trap_7": {
+        "name": "{name}",
+        "text": "怎么了？"
+    },
+    "after3_yuna_decode_trap_8": {
+        "name": "由娜",
+        "text": "连在虚构的故事里也会被抓到——就无处可逃了。"
+    },
+    "after3_yuna_decode_trap_9": {
+        "name": "由娜",
+        "text": "*由娜把包甩到肩上，朝门口走去。拉链头随着每一步来回晃荡。*"
+    },
+    "after3_yuna_decode_trap_10": {
+        "name": "由娜",
+        "text": "从今以后，这个地方我要锁起来了。"
+    },
+    "after3_yuna_decode_trap_11": {
+        "name": "{name}",
+        "text": "*她的脚步声消失在走廊里。沙发上只留下笔记本的压痕。我承诺不再看，却说得太晚了。*"
+    },
+    "after3_yuna_correct_1": {
+        "name": "由娜",
+        "text": "*她的手指在笔记本上松开了大约一秒钟。*"
+    },
+    "after3_yuna_correct_2": {
+        "name": "由娜",
+        "text": "作者。"
+    },
+    "after3_yuna_correct_3": {
+        "name": "{name}",
+        "text": "嗯。这是谁写的？出版了吗？"
+    },
+    "after3_yuna_correct_4": {
+        "name": "由娜",
+        "text": "我不知道。大概没出版。"
+    },
+    "after3_yuna_correct_5": {
+        "name": "{name}",
+        "text": "可惜。这么好的作品，不该被埋没。"
+    },
+    "after3_yuna_correct_6": {
+        "name": "由娜",
+        "text": "*由娜把笔记本放在桌上，用手掌抚平封面上皱起的一角。*"
+    },
+    "after3_yuna_correct_7": {
+        "name": "由娜",
+        "text": "想借去看吗？"
+    },
+    "after3_yuna_correct_8": {
+        "name": "{name}",
+        "text": "真的？没有作者的许可，也可以吗？"
+    },
+    "after3_yuna_correct_9": {
+        "name": "由娜",
+        "text": "就当作者同意了吧。"
+    },
+    "after3_yuna_correct_10": {
+        "name": "由娜",
+        "text": "*由娜双手把笔记本递过来，但手臂没有完全伸直。*"
+    },
+    "after3_yuna_correct_11": {
+        "name": "{name}",
+        "text": "*笔记本到了我手里之后，由娜的视线也没有离开封面。*"
+    },
+    "after3_yuna_correct_12": {
+        "name": "由娜",
+        "text": "看完之后，给作者写一句话。匿名的。"
+    },
+    "after3_yuna_freetalk": {
+        "name": "由娜",
+        "text": "*由娜瞥了一眼我手里的笔记本，在沙发上腾出了位置。*先别看。先陪我聊一会儿。",
+        "context": "第三天下午，在别馆阅览室。玩家为未经许可看了第一页道了歉，并承诺不再往下看。由娜随后主动把笔记本借了出来。玩家拿着它，还没有读过剩下的部分。她要求读完后写一句匿名的感想。两人面对面坐在沙发上交谈。",
+        "personality": "由娜对于信任某个人、把自己的文字交给对方感到难为情。害羞的时候，她可能会把作者说成别人，但不会无缘无故收回这份信任。她继续用简短的提问和安静的幽默交谈。"
+    },
+    "after3_yuna_end": {},
+    "after3_reject_for_dain_1": {
+        "name": "书妍",
+        "text": "*她微笑着，把写字板上纸页的边角对齐。*"
+    },
+    "after3_reject_for_dain_2": {
+        "name": "书妍",
+        "text": "我今天有些事要做。我先走了。"
+    },
+    "after3_reject_for_dain_2b": {
+        "name": "{name}",
+        "text": "*我朝由娜的藏身处走去。*"
+    },
+    "after3_reject_for_dain_3": {
+        "name": "{name}",
+        "text": "*图书馆里没有纸条。由娜的包也不见了。桌上只留下一圈淡淡的水汽印，好像她刚才还在这里。*"
+    },
+    "after3_reject_for_dain_3b": {
+        "name": "{name}",
+        "text": "*我离开别馆，朝体育馆走去。*"
+    },
+    "after3_dain_1": {
+        "name": "{name}",
+        "text": "*多因一个人在体育馆里拉伸。轻轻跳了一下，落地时她的身子往右腿一侧歪了一下，随即立刻抚平了表情。*"
+    },
+    "after3_dain_3": {
+        "name": "{name}",
+        "text": "多因！"
+    },
+    "after3_dain_4": {
+        "name": "多因",
+        "text": "我没事！只是稍微扭了一下。"
+    },
+    "after3_dain_5": {
+        "name": "{name}",
+        "text": "你看起来可不像没事。"
+    },
+    "after3_dain_5_b": {
+        "name": "多因",
+        "text": "我真的没事。没什么。"
+    },
+    "after3_dain_6": {
+        "name": "多因",
+        "text": "*直到话说完，多因才大声笑了起来。*"
+    },
+    "after3_dain_choice": {
+        "name": "多因",
+        "text": "*她坐到长椅上。揉着膝盖的手一直在同一个地方打转。*",
+        "choices": [
+            "我就知道你在硬撑。别管比赛了，今天好好休息。",
+            "那我就留在这儿。等你想说的时候再说。",
+            "为了不让你逞强过头，我来替你做决定。",
+            "放心。从现在起，我会盯着你的。"
+        ]
+    },
+    "after3_dain_pity_trap_1": {
+        "name": "多因",
+        "text": "*多因抬头看我，手掌还按在膝盖上。*"
+    },
+    "after3_dain_pity_trap_2": {
+        "name": "多因",
+        "text": "硬撑。"
+    },
+    "after3_dain_pity_trap_3": {
+        "name": "多因",
+        "text": "喂。我没有硬撑。只是落地没落好。"
+    },
+    "after3_dain_pity_trap_4": {
+        "name": "{name}",
+        "text": "*多因拿起包站起身，右腿又一次承了力。*"
+    },
+    "after3_dain_pity_trap_5": {
+        "name": "多因",
+        "text": "别那样看我。连你也这样。"
+    },
+    "after3_dain_pity_trap_6": {
+        "name": "{name}",
+        "text": "哪样？"
+    },
+    "after3_dain_pity_trap_7": {
+        "name": "多因",
+        "text": "就是保健室里她们看我的那种眼神。"
+    },
+    "after3_dain_pity_trap_8": {
+        "name": "多因",
+        "text": "*她朝体育馆门口走去。她没有像平常那样跑。运动鞋拖在地上，留下一串长长的回声。*"
+    },
+    "after3_dain_pity_trap_9": {
+        "name": "多因",
+        "text": "我不想连你也对我说这种话。"
+    },
+    "after3_dain_pity_trap_10": {
+        "name": "{name}",
+        "text": "*体育馆的门悄悄地关上了。多因的护腕留在她离开的地板上。*"
+    },
+    "after3_dain_correct_1": {
+        "name": "多因",
+        "text": "*多因看着我，捂着膝盖的手仍抬不起来。*"
+    },
+    "after3_dain_correct_2": {
+        "name": "多因",
+        "text": "喂。"
+    },
+    "after3_dain_correct_3": {
+        "name": "{name}",
+        "text": "为什么。"
+    },
+    "after3_dain_correct_4": {
+        "name": "多因",
+        "text": "你有点怪。"
+    },
+    "after3_dain_correct_5": {
+        "name": "{name}",
+        "text": "是好的那种怪，还是坏的那种怪。"
+    },
+    "after3_dain_correct_6": {
+        "name": "多因",
+        "text": "我不知道。不过，在这儿待一会儿。我现在其实不太想一个人。"
+    },
+    "after3_dain_correct_7": {
+        "name": "多因",
+        "text": "*她在长椅里侧让出位置。她用脚尖把排球滚出了球场。*"
+    },
+    "after3_dain_correct_8": {
+        "name": "多因",
+        "text": "就聊聊吧。"
+    },
+    "after3_dain_correct_9": {},
+    "after3_dain_correct_10": {
+        "name": "多因",
+        "text": "我平时不怎么聊这种事。该从哪儿说起呢？"
+    },
+    "after3_dain_correct_11": {
+        "name": "多因",
+        "text": "*多因试着伸直右腿，皱了皱眉，又把它弯了回去。她的手掌一直没有离开膝盖。*"
+    },
+    "after3_dain_correct_12": {
+        "name": "{name}",
+        "text": "从你的膝盖说起。"
+    },
+    "after3_dain_dilemma_tell": {
+        "name": "多因",
+        "text": "怎么了？"
+    },
+    "after3_dain_dilemma_tell_2": {
+        "name": "{name}",
+        "text": "你的膝盖。你一直在揉它。这不是今天扭的吧？"
+    },
+    "after3_dain_dilemma_tell_3": {
+        "name": "{name}",
+        "text": "*多因闭上嘴，只是把膝盖上的手指蜷起又松开。*"
+    },
+    "after3_dain_dilemma_tell_4": {
+        "name": "多因",
+        "text": "你既然知道，干嘛还提？你知道比赛就在下周。"
+    },
+    "after3_dain_dilemma_tell_5": {
+        "name": "{name}",
+        "text": "你的膝盖比比赛更重要。"
+    },
+    "after3_dain_dilemma_tell_6": {
+        "name": "多因",
+        "text": "这不是你能决定的。"
+    },
+    "after3_dain_dilemma_tell_7": {
+        "name": "多因",
+        "text": "*多因弯下腰系鞋带，又一把抓住膝盖。她始终没有碰到鞋带。*"
+    },
+    "after3_dain_dilemma_tell_8": {
+        "name": "多因",
+        "text": "拜托。别告诉任何人。"
+    },
+    "after3_dain_dilemma_final": {
+        "name": "多因",
+        "text": "*多因没有去擦湿了的眼睛。她最后那句话之后，再也没有她惯有的笑声。*",
+        "choices": [
+            "对不起。可我还是要说。",
+            "好。你自己去说。但我要陪你一起去保健室。",
+            "我去跟老师解释。你只管休息。",
+            "你要是一直犹豫，还不如我先说。"
+        ]
+    },
+    "after3_dain_tell_confirm": {
+        "name": "多因",
+        "text": "你是最糟糕的。"
+    },
+    "after3_dain_tell_confirm_2": {
+        "name": "多因",
+        "text": "*她抓起包走了出去。没有回头。体育馆的门“砰”地关上。*"
+    },
+    "after3_dain_tell_confirm_3": {
+        "name": "{name}",
+        "text": "*多因的脚步声消失在紧闭的门外。空荡荡的体育馆里，我感到手心的汗渐渐变凉。*"
+    },
+    "after3_dain_tell_retreat": {
+        "name": "多因",
+        "text": "*多因长长地呼出一口气，用脚尖挡住滚向她的球。*……你愿意等到我能自己说出口吗？"
+    },
+    "after3_dain_choice1": {
+        "name": "{name}",
+        "text": "*我在她身边坐下，没有催她回答。多因一边抠着鞋带，一边看过来。*"
+    },
+    "after3_dain_choice1_2": {
+        "name": "多因",
+        "text": "你怎么不问？"
+    },
+    "after3_dain_choice1_3": {
+        "name": "{name}",
+        "text": "你说过，等你准备好了会告诉他们的。"
+    },
+    "after3_dain_choice1_react": {
+        "name": "多因",
+        "text": "*多因咬了咬嘴唇，轻轻笑了一声，用手背揉了揉眼睛。*"
+    },
+    "after3_dain_choice1_react2": {
+        "name": "多因",
+        "text": "嗯。你要是现在问，我肯定又会说我没事。"
+    },
+    "after3_dain_choice1_react3": {
+        "name": "多因",
+        "text": "谢谢。我去保健室的时候……你陪着我。"
+    },
+    "after3_dain_freetalk": {
+        "name": "多因",
+        "text": "*她调整了一下护腕；嘴角慢了半拍才扬起来。*今天，我先说。",
+        "context": "第三天下午，在体育馆的长椅上。多因承认她的右膝仍然会疼。玩家同意等她自己开口，而不是替她做决定。她请求去保健室时有人陪同。目前还没有进行检查，也没有决定是否参赛。两人面对面坐着交谈。",
+        "personality": "多因是一位精力充沛、坦率的排球选手。她表达自己的感受，以及想知道这段关系的什么时，幽默和真诚都会自然流露。"
+    },
+    "after3_dain_end_check": {},
+    "after3_dain_end": {
+        "name": "多因",
+        "text": "*多因的拳头碰到了我的肩膀，但没有像昨天那样把我顶开。*"
+    },
+    "after3_dain_end_first": {
+        "name": "多因",
+        "text": "*多因捶了一下我的肩膀，然后立刻把手插进了口袋。*"
+    },
+    "after3_confront_1": {
+        "name": "{name}",
+        "text": "*我离开碰面的地方，书妍正抱着手臂等在走廊里。她的手指在上臂上敲着稳定的节奏。*"
+    },
+    "after3_confront_2": {
+        "name": "书妍",
+        "text": "{name}。等一下。"
+    },
+    "after3_confront_3": {
+        "name": "书妍",
+        "text": "*书妍把我带到走廊尽头一个空荡荡的楼梯平台。*"
+    },
+    "after3_confront_4": {
+        "name": "书妍",
+        "text": "关于午休。"
+    },
+    "after3_confront_5": {
+        "name": "书妍",
+        "text": "当你对其他女生也那样微笑的时候，我感觉自己好像是唯一一个在自作多情的人。"
+    },
+    "after3_confront_5_b": {
+        "name": "多因",
+        "text": "我也是。我不喜欢。"
+    },
+    "after3_confront_5_c": {
+        "name": "多因",
+        "text": "*多因运动鞋的鞋尖在走廊地板上短暂地蹭了一下。*"
+    },
+    "after3_confront_6": {
+        "name": "书妍",
+        "text": "关于午休。你为什么定了好几个约，却什么都不解释？"
+    },
+    "after3_confront_choice": {
+        "name": "书妍",
+        "text": "*书妍把写字板放到身侧，往后退了一步，等待答案。*",
+        "choices": [
+            "老实承认",
+            "时间段不一样，我以为没关系",
+            "我只对你是认真的"
+        ]
+    },
+    "after3_confront_admit": {
+        "name": "书妍",
+        "text": "因为我没办法拒绝。"
+    },
+    "after3_confront_admit_b": {
+        "name": "书妍",
+        "text": "*书妍低头看着她饭袋的提手。*"
+    },
+    "after3_confront_admit_2": {
+        "name": "书妍",
+        "text": "比起道歉，我更想听你现在打算怎么处理那些约。"
+    },
+    "after3_confront_admit_3": {
+        "name": "书妍",
+        "text": "*书妍拿起饭袋时，提手在她手里拧了一下。*"
+    },
+    "after3_confront_admit_4": {
+        "name": "书妍",
+        "text": "你不想听到我们说不，所以把决定权留给了我们。这不叫坦诚。"
+    },
+    "after3_confront_admit_4_b": {
+        "name": "书妍",
+        "text": "*书妍转过身，在一扇教室门的把手前停住。*"
+    },
+    "after3_confront_admit_5": {
+        "name": "书妍",
+        "text": "今天我不会把天台留着了。"
+    },
+    "after3_confront_admit_6": {},
+    "after3_confront_excuse": {
+        "name": "书妍",
+        "text": "你看不出问题出在哪吗？"
+    },
+    "after3_confront_excuse_b": {},
+    "after3_confront_excuse_2": {
+        "name": "书妍",
+        "text": "问题不在于你跟多少人有约。而在于那个约定对我意味着什么。"
+    },
+    "after3_confront_excuse_2_b": {
+        "name": "书妍",
+        "text": "*书妍张开嘴，又闭上，把写字板拉到胸前。*"
+    },
+    "after3_confront_lie_b": {
+        "name": "书妍",
+        "text": "*写字板在书妍手里微微垂了下来。这一次，她直直地看着{name}。*"
+    },
+    "after3_confront_lie": {
+        "name": "书妍",
+        "text": "真的吗？我可以相信你，对吧？"
+    },
+    "after3_confront_lie_2": {
+        "name": "书妍",
+        "text": "*没等到回答，书妍就走向走廊尽头。她握着写字板的手始终没有松开。*"
+    },
+    "after3_confront_lie_2_b": {},
+    "after3_confront_end": {
+        "name": "书妍",
+        "text": "*书妍朝空荡荡走廊的另一头走去。在她僵直的背影旁边，我只能看到她紧握的拳头。*"
+    },
+    "after3_group_teacher_companion": {
+        "name": "班主任和同行的人",
+        "text": "*放学后。在为活动而敞开的教室里，老师把活动草稿摊开，同行者在她对面摆出了不同的材料。看过时钟后，老师依次指着每一项任务。*“这些东西只够时间做完一项。你先帮谁的忙？”",
+        "context": "放学后，主角在一间开放的教室里和班主任一起审阅面向全校的文学活动草稿，此时好感度最高的另一位角色带着另外的活动材料或请求加入了他们。只有时间做完一项任务，所以老师问主角先帮谁的忙。",
+        "personality": "老师保持职业距离，用干巴巴的幽默和精准的批注引导讨论。让同行者用自己的声音和兴趣提出真实的意见。不要把这演变成私下的师生关系，也不要变成闭门会谈。",
+        "buttonText": "发言",
+        "groupLocation": "开放教室",
+        "groupChoiceState": "主角必须说明，是先帮老师的文学活动草稿，还是先帮同行者的请求",
+        "groupAftermathCause": "主角在开放教室先选择帮助谁，以及为什么"
+    },
+    "after3_group_nurse_companion": {
+        "name": "保健老师和同行的人",
+        "text": "*一张健康检查表放在一箱运动社团用品旁边。保健老师指着一行空白，而同行者举起了一件快用完的用品。*“两件事今天都得查，但必须先从一件开始。先处理谁的事？”",
+        "context": "放学后在保健室，主角正帮保健老师整理运动员的健康检查，此时好感度最高的另一位角色带着一个紧急的物资问题赶到。只有时间先开始一项任务，所以保健老师问主角先处理谁的事。",
+        "personality": "保健老师可以用轻松的玩笑缓和紧张，但她从不把关怀或治疗当作表达情感的借口。同行者根据自己的性格和当前状态，对健康检查或物资作出反应。不要把日常工作夸大成事故或秘密会面。",
+        "buttonText": "发言",
+        "groupLocation": "保健室",
+        "groupChoiceState": "主角必须说明，是先处理保健老师的健康检查，还是先处理同行者的物资问题",
+        "groupAftermathCause": "主角在保健室先选择帮助谁，以及为什么"
+    },
+    "after3_group_return": {
+        "name": "{name}",
+        "text": "*对话结束后，我走回走廊。*"
+    },
+    "after3_final": {
+        "name": "{name}",
+        "text": "*下午结束了。走廊的灯一盏接一盏地熄灭。*"
+    },
+    "haeun_check": {
+        "name": "{name}",
+        "text": ""
+    },
+    "minsu_d3_check": {
+        "name": "{name}",
+        "text": ""
+    },
+    "minsu_d3_1": {
+        "name": "{name}",
+        "text": "*走路回家。敏秀站在校门口。*"
+    },
+    "minsu_d3_2": {
+        "name": "敏秀",
+        "text": "看到了。"
+    },
+    "minsu_d3_3": {
+        "name": "敏秀",
+        "text": "午休的时候。还有刚才书妍的脸色。"
+    },
+    "minsu_d3_4": {},
+    "minsu_d3_5": {
+        "name": "敏秀",
+        "text": "在旁边看着真难受。她们都是好人。我觉得你不是故意的，可你总是拖着不说不。"
+    },
+    "minsu_d3_5b": {
+        "name": "敏秀",
+        "text": "*敏秀把手里的吸管包装纸折起来。*"
+    },
+    "minsu_d3_6": {
+        "name": "{name}",
+        "text": "嗯。"
+    },
+    "minsu_d3_6b": {
+        "name": "敏秀",
+        "text": "你旧学校发生了什么，我不会问。但我要说一句。"
+    },
+    "minsu_d3_7": {
+        "name": "敏秀",
+        "text": "拒绝也是一种体贴。如果不行，现在就划清界线，比留着让人抱希望要好。"
+    },
+    "minsu_d3_8": {
+        "name": "{name}",
+        "text": "*在旧学校，我也曾拖着不开口。我看到了素晶桌上的涂鸦，却从没告诉过老师。这一次，我不能再把沉默叫作善意了。*"
+    },
+    "minsu_d3_9": {
+        "name": "敏秀",
+        "text": "*敏秀安静下来，把折好的吸管包装纸放进了口袋。*"
+    },
+    "minsu_d3_10": {
+        "name": "敏秀",
+        "text": "明天学校见。好好想想。"
+    },
+    "haeun_warn_1": {
+        "name": "{name}",
+        "text": "*通往校门的走廊尽头，有人在等着。*"
+    },
+    "haeun_warn_1_b": {
+        "name": "夏恩",
+        "text": "*夏恩靠在墙上，摆弄着她的学生会手环。*"
+    },
+    "haeun_warn_2": {
+        "name": "夏恩",
+        "text": "{name}。"
+    },
+    "haeun_warn_2_b": {
+        "name": "{name}",
+        "text": "夏恩？你在这儿做什么？"
+    },
+    "haeun_warn_2b": {
+        "name": "{name}",
+        "text": "嗯。"
+    },
+    "haeun_warn_3": {
+        "name": "夏恩",
+        "text": "你刚才看到书妍学姐了吗？"
+    },
+    "haeun_warn_3_b": {
+        "name": "夏恩",
+        "text": "她哭了。"
+    },
+    "haeun_warn_3_c": {
+        "name": "{name}",
+        "text": "*什么？*"
+    },
+    "haeun_warn_4": {
+        "name": "夏恩",
+        "text": "我在学生会室后面的洗手间里看到了她一会儿。她跟我说她没事，可看起来一点都不像没事。"
+    },
+    "haeun_warn_4b": {
+        "name": "{name}",
+        "text": "她哭了？"
+    },
+    "haeun_warn_5": {
+        "name": "{name}",
+        "text": "*夏恩看了看空荡荡的走廊，把声音压得更低。*"
+    },
+    "haeun_warn_5b": {
+        "name": "夏恩",
+        "text": "她让我别跟她说话，可她在洗手池前待了很久。"
+    },
+    "haeun_warn_5c": {
+        "name": "{name}",
+        "text": "*我回头望向走廊尽头的洗手间。*"
+    },
+    "haeun_warn_5c_b": {},
+    "haeun_warn_6": {
+        "name": "夏恩",
+        "text": "我要是跟过去，她只会又说她没事。她也许会听你的，{name}。"
+    },
+    "haeun_warn_6_b": {
+        "name": "夏恩",
+        "text": "*夏恩把学生会的手环转到手腕内侧。*"
+    },
+    "haeun_warn_7": {
+        "name": "夏恩",
+        "text": "我知道自己在多管闲事。可就今天，请别假装没注意到。"
+    },
+    "haeun_warn_7_b": {
+        "name": "夏恩",
+        "text": "*夏恩抿了抿嘴唇，一边摆弄着手环的扣子，一边朝办公室的方向看了看。*"
+    },
+    "haeun_warn_7_c": {
+        "name": "夏恩",
+        "text": "如果她想一个人待着，就给她一点时间。你能之后确认一下她平安到家了吗？"
+    },
+    "haeun_freetalk": {
+        "name": "夏恩",
+        "text": "*夏恩没有转开视线。她直直地看进你的眼睛。*“……我在等答案。你现在打算怎么做？”",
+        "context": "夏恩看到了书妍哭泣。她请玩家尊重书妍想要独处的心愿，并在稍后确认她是否平安到家。两人仍在走廊里，夏恩想听玩家的打算；她并没有要求他立刻回去，也没有要无视对方的拒绝。",
+        "personality": "夏恩保持礼貌，但不会轻易带过书妍受了伤害这件事。她想听主角现在会怎么做，而不是听借口。她可以对他的回答提出疑问或质疑，但不会替书妍决定她的感受，也不会强迫主角做某个行动。不要让这段对话变得带有恋爱或性的意味。她的好感度只代表个人的信任与好感，不影响任何结局。"
+    },
+    "haeun_affinity_high_1": {
+        "name": "夏恩",
+        "text": "*夏恩端详了{name}的脸片刻，然后把转到手腕内侧的学生会手环摆正。*……我相信你。"
+    },
+    "haeun_affinity_high_2": {
+        "name": "夏恩",
+        "text": "就算书妍学姐说她没事，今天也请你再问她一次。她不好的时候，也是这么说的。"
+    },
+    "haeun_affinity_neutral_1": {
+        "name": "夏恩",
+        "text": "*夏恩的手指仍搭在手环的扣子上，慢慢点了点头。*我还没有完全相信你。"
+    },
+    "haeun_affinity_neutral_2": {
+        "name": "夏恩",
+        "text": "只要守住你刚才许下的承诺就好。还有，稍后确认一下她平安到家了。"
+    },
+    "haeun_affinity_low_1": {
+        "name": "夏恩",
+        "text": "*夏恩攥着手环，往后退了半步。*我现在没办法放心把书妍学姐交给你，{name}。"
+    },
+    "haeun_affinity_low_2": {
+        "name": "夏恩",
+        "text": "我也会告诉指导老师。你要是真的去找书妍学姐，别说会让她更受伤的话。"
+    },
+    "haeun_warn_7_d": {},
+    "haeun_warn_8": {
+        "name": "{name}",
+        "text": "*夏恩走后，我敲了敲学生会室的门。没有人回应，但里面有椅子刮响的声音。*"
+    },
+    "haeun_warn_8b": {
+        "name": "{name}",
+        "text": "*我走到了学校前面。*"
+    },
+    "after3_walk_home": {
+        "name": "{name}",
+        "text": "*今天我再也找不到话说了。我收起手机，朝校门走去。*"
+    },
+    "after3_rivals_for_seo_start": {},
+    "after3_rivals_for_yuna_start": {},
+    "after3_rivals_for_dain_start": {},
+    "after3_rival_seo_check": {},
+    "after3_rival_seo_promised_dispatch": {},
+    "after3_rival_seo_affinity": {},
+    "after3_rival_seo_high": {
+        "name": "书妍",
+        "text": "*书妍在路口停下，确认了我要走的方向，调整了一下书包带的握法。*原来你要去别的地方。"
+    },
+    "after3_rival_seo_mid": {
+        "name": "书妍",
+        "text": "好。剩下的我来收尾。"
+    },
+    "after3_rival_seo_done": {},
+    "after3_rival_dain_check": {},
+    "after3_rival_dain_promised_dispatch": {},
+    "after3_rival_dain_affinity": {},
+    "after3_rival_dain_high": {
+        "name": "多因",
+        "text": "*多因把想问的话咽了回去，看向去体育馆的指示牌。*你要去别的地方？知道了。"
+    },
+    "after3_rival_dain_mid": {
+        "name": "多因",
+        "text": "好。那我先去体育馆。"
+    },
+    "after3_rival_dain_done": {},
+    "after3_rival_yuna_check": {},
+    "after3_rival_yuna_promised_dispatch": {},
+    "after3_rival_yuna_affinity": {},
+    "after3_rival_yuna_high": {
+        "name": "由娜",
+        "text": "*由娜合上了刚要翻开的书。*原来你要去别的地方。好吧。"
+    },
+    "after3_rival_yuna_mid": {
+        "name": "由娜",
+        "text": "好。我在图书馆。"
+    },
+    "after3_rival_yuna_done": {},
+    "after3_seo_affinity_check": {},
+    "after3_seo_partial_1": {
+        "name": "{name}",
+        "text": "*我打开学生会室的门，书妍正从地上捡起她的写字板。她擦了擦一只眼睛下面，把一把椅子摆正。*"
+    },
+    "after3_seo_partial_2": {
+        "name": "书妍",
+        "text": "今天这个我一个人做完。只是明天别躲着我。"
+    },
+    "after3_seo_low_1": {
+        "name": "书妍",
+        "text": "*书妍站在走廊里，让门半开着。*我还没准备好和你单独相处。周末就先空着吧。学校见。"
+    },
+    "after3_yuna_affinity_check": {},
+    "after3_yuna_partial_1": {
+        "name": "{name}",
+        "text": "*别馆的门开着，但由娜没有翻开她的书。她瞥了一眼对面的椅子，然后把它推到了桌子底下。*"
+    },
+    "after3_yuna_partial_2": {
+        "name": "由娜",
+        "text": "今天就到这里吧。下次，我先问你。"
+    },
+    "after3_yuna_low_1": {
+        "name": "由娜",
+        "text": "*由娜在别馆门口把包背到肩上。*就我们两个人……我还没准备好。周末我想一个人待着。"
+    },
+    "after3_dain_affinity_check": {},
+    "after3_dain_partial_1": {
+        "name": "{name}",
+        "text": "*体育馆里，多因整了整护膝。她刚要站起来，又坐回了长椅上。*"
+    },
+    "after3_dain_partial_2": {
+        "name": "多因",
+        "text": "休息一下就好了。你先走吧。明天见。"
+    },
+    "after3_dain_low_1": {
+        "name": "多因",
+        "text": "*多因扶着体育馆的门，没有进去。*我们先多了解彼此，再一起出去吧。这个周末我自己练。"
+    },
+    "after3_dain_departed_end": {},
+    "minsu_d3_4_established": {
+        "name": "敏秀",
+        "text": "昨天我就觉得别扭了。中午一个，放学后又是另一个。经过今天的事，我觉得你不能就这么算了。"
+    },
+    "minsu_d3_4_first": {
+        "name": "敏秀",
+        "text": "昨天我什么都没说，但午休发生的事，我不能当作没看见。"
+    },
+    "after3_seo_overcare_react": {
+        "name": "书妍",
+        "text": "理解并照顾一切？我只是请你像平常一样对待我。"
+    },
+    "after3_yuna_control_react": {
+        "name": "由娜",
+        "text": "这是我的笔记本。谁能读、谁能保管，由我决定。"
+    },
+    "after3_dain_control_react": {
+        "name": "多因",
+        "text": "别替我做决定。我也没有请你替我盯着。"
+    },
+    "after3_rival_seo_cool": {
+        "name": "书妍",
+        "text": "所以日程变了。*她把写字板翻过来，继续往前走。*"
+    },
+    "after3_rival_seo_neg": {
+        "name": "书妍",
+        "text": "*她只夹着花名册走进了学生会室。她没有叫任何人的名字。*"
+    },
+    "after3_rival_dain_cool": {
+        "name": "多因",
+        "text": "今天别去体育馆了。*她整了整球袋的背带。*"
+    },
+    "after3_rival_dain_neg": {
+        "name": "多因",
+        "text": "*她拿起一个排球，先转过了身。*"
+    },
+    "after3_rival_yuna_cool": {
+        "name": "由娜",
+        "text": "*她关上了别馆的门。没有纸条。*"
+    },
+    "after3_rival_yuna_neg": {
+        "name": "{name}",
+        "text": "*别馆的座位空着。没有书签，也没有纸条。*"
+    },
+    "after3_seo_neg_1": {
+        "name": "书妍",
+        "text": "*她把学生会室的钥匙揣进口袋。*今天就到此为止。周末的事也不用谈了。"
+    },
+    "after3_yuna_neg_1": {
+        "name": "由娜",
+        "text": "*她关掉别馆的灯。*我今天想一个人待着。"
+    },
+    "after3_dain_neg_1": {
+        "name": "多因",
+        "text": "*她收起球网的绳子，把包挎上肩。*今天算了。别打给我。"
+    },
+    "after3_seo_skip": {},
+    "after3_yuna_skip": {},
+    "after3_dain_skip": {}
+}

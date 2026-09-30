@@ -13,7 +13,7 @@
         nurse: { month: 9, day: 12 }
     });
 
-    const LOCALES = ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt'];
+    const LOCALES = ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt', 'zh'];
 
     function t(map, lang) {
         return map[lang] || map.en || map.ko || '';
@@ -24,130 +24,130 @@
             {
                 id: 'home',
                 background: 'assets/images/background/seyoun_room.png',
-                names: { ko: '서연의 방', en: "Seoyeon's room", es: 'Habitación de Seoyeon', ja: 'ソヨンの部屋', fr: 'Chambre de Seoyeon', de: 'Seoyeons Zimmer', pt: 'Quarto da Seoyeon' },
-                hints: { ko: '화분과 일정표가 있는 방.', en: 'Her room, with plants and a schedule.', es: 'Su habitación, con plantas y un horario.', ja: '鉢植えと予定表のある部屋。', fr: 'Sa chambre, plantes et planning.', de: 'Ihr Zimmer mit Pflanzen und einem Terminplan.', pt: 'O quarto dela, com vasos e agenda.' }
+                names: { ko: '서연의 방', en: "Seoyeon's room", es: 'Habitación de Seoyeon', ja: 'ソヨンの部屋', fr: 'Chambre de Seoyeon', de: 'Seoyeons Zimmer', pt: 'Quarto da Seoyeon', zh: '书妍的房间' },
+                hints: { ko: '화분과 일정표가 있는 방.', en: 'Her room, with plants and a schedule.', es: 'Su habitación, con plantas y un horario.', ja: '鉢植えと予定表のある部屋。', fr: 'Sa chambre, plantes et planning.', de: 'Ihr Zimmer mit Pflanzen und einem Terminplan.', pt: 'O quarto dela, com vasos e agenda.', zh: '有花盆和日程表的房间。' }
             },
             {
                 id: 'rooftop',
                 background: 'assets/images/background/top_school.png',
-                names: { ko: '옥상', en: 'Rooftop', es: 'Azotea', ja: '屋上', fr: 'Toit', de: 'Dach', pt: 'Terraço' },
-                hints: { ko: '예전에 같이 물 주던 화분.', en: 'The pots you used to water together.', es: 'Las macetas que regaban juntos.', ja: '一緒に水をやっていた鉢。', fr: 'Les pots que vous arrosiez ensemble.', de: 'Die Töpfe, die ihr zusammen gegossen habt.', pt: 'Os vasos que vocês regavam juntos.' }
+                names: { ko: '옥상', en: 'Rooftop', es: 'Azotea', ja: '屋上', fr: 'Toit', de: 'Dach', pt: 'Terraço', zh: '天台' },
+                hints: { ko: '예전에 같이 물 주던 화분.', en: 'The pots you used to water together.', es: 'Las macetas que regaban juntos.', ja: '一緒に水をやっていた鉢。', fr: 'Les pots que vous arrosiez ensemble.', de: 'Die Töpfe, die ihr zusammen gegossen habt.', pt: 'Os vasos que vocês regavam juntos.', zh: '以前一起浇水的那些花盆。' }
             },
             {
                 id: 'cafe',
                 background: 'assets/images/background/cafe.png',
-                names: { ko: '카페', en: 'Cafe', es: 'Cafetería', ja: 'カフェ', fr: 'Café', de: 'Café', pt: 'Café' },
-                hints: { ko: '창가 자리. 컵받침을 맞추는 버릇.', en: 'A window seat. She still squares the coaster.', es: 'Mesa junto a la ventana.', ja: '窓際。コースターを揃える癖。', fr: 'Une table près de la fenêtre.', de: 'Ein Fensterplatz. Sie richtet den Untersetzer noch immer gerade.', pt: 'Mesa na janela.' }
+                names: { ko: '카페', en: 'Cafe', es: 'Cafetería', ja: 'カフェ', fr: 'Café', de: 'Café', pt: 'Café', zh: '咖啡馆' },
+                hints: { ko: '창가 자리. 컵받침을 맞추는 버릇.', en: 'A window seat. She still squares the coaster.', es: 'Mesa junto a la ventana.', ja: '窓際。コースターを揃える癖。', fr: 'Une table près de la fenêtre.', de: 'Ein Fensterplatz. Sie richtet den Untersetzer noch immer gerade.', pt: 'Mesa na janela.', zh: '靠窗的位子。她还是会把杯垫摆正。' }
             },
             {
                 id: 'park',
                 background: 'assets/images/background/park.png',
-                names: { ko: '공원', en: 'Park', es: 'Parque', ja: '公園', fr: 'Parc', de: 'Park', pt: 'Parque' },
-                hints: { ko: '걸음만 맞추면 되는 저녁.', en: 'An evening where matching pace is enough.', es: 'Una tarde en la que basta ir al mismo paso.', ja: '歩幅を合わせるだけの夕方。', fr: 'Un soir où marcher au même pas suffit.', de: 'Ein Abend, an dem es reicht, im gleichen Tempo zu gehen.', pt: 'Uma tarde em que basta acompanhar o passo.' }
+                names: { ko: '공원', en: 'Park', es: 'Parque', ja: '公園', fr: 'Parc', de: 'Park', pt: 'Parque', zh: '公园' },
+                hints: { ko: '걸음만 맞추면 되는 저녁.', en: 'An evening where matching pace is enough.', es: 'Una tarde en la que basta ir al mismo paso.', ja: '歩幅を合わせるだけの夕方。', fr: 'Un soir où marcher au même pas suffit.', de: 'Ein Abend, an dem es reicht, im gleichen Tempo zu gehen.', pt: 'Uma tarde em que basta acompanhar o passo.', zh: '只要脚步一致就够了的傍晚。' }
             }
         ],
         yuna: [
             {
                 id: 'hideout',
                 background: 'assets/images/background/yuna_hideout.png',
-                names: { ko: '별관 다락', en: 'Annex loft', es: 'Altillo del anexo', ja: '別館の屋根裏', fr: 'Grenier de l’annexe', de: 'Dachboden im Anbau', pt: 'Sótão do anexo' },
-                hints: { ko: '아직 그 자리.', en: 'The same seat as always.', es: 'El mismo asiento de siempre.', ja: 'いつもの場所。', fr: 'La même place qu’avant.', de: 'Derselbe Platz wie immer.', pt: 'O mesmo lugar de sempre.' }
+                names: { ko: '별관 다락', en: 'Annex loft', es: 'Altillo del anexo', ja: '別館の屋根裏', fr: 'Grenier de l’annexe', de: 'Dachboden im Anbau', pt: 'Sótão do anexo', zh: '别馆阁楼' },
+                hints: { ko: '아직 그 자리.', en: 'The same seat as always.', es: 'El mismo asiento de siempre.', ja: 'いつもの場所。', fr: 'La même place qu’avant.', de: 'Derselbe Platz wie immer.', pt: 'O mesmo lugar de sempre.', zh: '还是老位子。' }
             },
             {
                 id: 'bookstore',
                 background: 'assets/images/background/bookstore.png',
-                names: { ko: '헌책방', en: 'Used bookstore', es: 'Librería de viejo', ja: '古本屋', fr: 'Librairie d’occasion', de: 'Antiquariat', pt: 'Sebo' },
-                hints: { ko: '서가 사이에 이마를 대던 곳.', en: 'The aisle where she once rested her forehead against a shelf.', es: 'El pasillo donde apoyó la frente.', ja: '書架の間で額を寄せた場所。', fr: 'L’allée où elle avait posé son front.', de: 'Der Gang, in dem sie einst die Stirn an ein Regal lehnte.', pt: 'O corredor em que ela encostou a testa.' }
+                names: { ko: '헌책방', en: 'Used bookstore', es: 'Librería de viejo', ja: '古本屋', fr: 'Librairie d’occasion', de: 'Antiquariat', pt: 'Sebo', zh: '二手书店' },
+                hints: { ko: '서가 사이에 이마를 대던 곳.', en: 'The aisle where she once rested her forehead against a shelf.', es: 'El pasillo donde apoyó la frente.', ja: '書架の間で額を寄せた場所。', fr: 'L’allée où elle avait posé son front.', de: 'Der Gang, in dem sie einst die Stirn an ein Regal lehnte.', pt: 'O corredor em que ela encostou a testa.', zh: '她曾把额头抵在书架上的那条过道。' }
             },
             {
                 id: 'library',
                 background: 'assets/images/background/library_old.png',
-                names: { ko: '도서관', en: 'Library', es: 'Biblioteca', ja: '図書館', fr: 'Bibliothèque', de: 'Bibliothek', pt: 'Biblioteca' },
-                hints: { ko: '쪽지 대신 책이 오가는 자리.', en: 'A desk where books replace notes.', es: 'Un pupitre donde los libros sustituyen las notas.', ja: 'メモの代わりに本が渡る席。', fr: 'Une table où les livres remplacent les mots.', de: 'Ein Platz, an dem Bücher die Zettel ersetzen.', pt: 'Uma mesa em que os livros substituem os bilhetes.' }
+                names: { ko: '도서관', en: 'Library', es: 'Biblioteca', ja: '図書館', fr: 'Bibliothèque', de: 'Bibliothek', pt: 'Biblioteca', zh: '图书馆' },
+                hints: { ko: '쪽지 대신 책이 오가는 자리.', en: 'A desk where books replace notes.', es: 'Un pupitre donde los libros sustituyen las notas.', ja: 'メモの代わりに本が渡る席。', fr: 'Une table où les livres remplacent les mots.', de: 'Ein Platz, an dem Bücher die Zettel ersetzen.', pt: 'Uma mesa em que os livros substituem os bilhetes.', zh: '用书代替便条传来传去的座位。' }
             },
             {
                 id: 'secret_roof',
                 background: 'assets/images/background/yuna_secret_rooftop.png',
-                names: { ko: '비밀 옥상', en: 'Secret rooftop', es: 'Azotea secreta', ja: '秘密の屋上', fr: 'Toit secret', de: 'Geheimes Dach', pt: 'Terraço secreto' },
-                hints: { ko: '세 번째 곡을 듣던 난간.', en: 'The rail where you listened to the third track.', es: 'La baranda donde oyeron la tercera canción.', ja: '三曲目を聴いた手すり。', fr: 'La rambarde de la troisième piste.', de: 'Das Geländer, an dem ihr das dritte Stück gehört habt.', pt: 'O parapeito da terceira faixa.' }
+                names: { ko: '비밀 옥상', en: 'Secret rooftop', es: 'Azotea secreta', ja: '秘密の屋上', fr: 'Toit secret', de: 'Geheimes Dach', pt: 'Terraço secreto', zh: '秘密天台' },
+                hints: { ko: '세 번째 곡을 듣던 난간.', en: 'The rail where you listened to the third track.', es: 'La baranda donde oyeron la tercera canción.', ja: '三曲目を聴いた手すり。', fr: 'La rambarde de la troisième piste.', de: 'Das Geländer, an dem ihr das dritte Stück gehört habt.', pt: 'O parapeito da terceira faixa.', zh: '一起听第三首歌的那道栏杆。' }
             }
         ],
         dain: [
             {
                 id: 'cafe',
                 background: 'assets/images/background/cafe.png',
-                names: { ko: '카페', en: 'Cafe', es: 'Cafetería', ja: 'カフェ', fr: 'Café', de: 'Café', pt: 'Café' },
-                hints: { ko: '무릎을 테이블 아래로 숨기는 버릇.', en: 'She still tucks the bad knee under the table.', es: 'Sigue escondiendo la rodilla bajo la mesa.', ja: '膝をテーブルの下に隠す癖。', fr: 'Elle cache encore le genou sous la table.', de: 'Sie schiebt das verletzte Knie noch immer unter den Tisch.', pt: 'Ela ainda esconde o joelho debaixo da mesa.' }
+                names: { ko: '카페', en: 'Cafe', es: 'Cafetería', ja: 'カフェ', fr: 'Café', de: 'Café', pt: 'Café', zh: '咖啡馆' },
+                hints: { ko: '무릎을 테이블 아래로 숨기는 버릇.', en: 'She still tucks the bad knee under the table.', es: 'Sigue escondiendo la rodilla bajo la mesa.', ja: '膝をテーブルの下に隠す癖。', fr: 'Elle cache encore le genou sous la table.', de: 'Sie schiebt das verletzte Knie noch immer unter den Tisch.', pt: 'Ela ainda esconde o joelho debaixo da mesa.', zh: '她还是习惯把受伤的膝盖藏在桌子底下。' }
             },
             {
                 id: 'gym',
                 background: 'assets/images/background/gym.png',
-                names: { ko: '체육관', en: 'Gym', es: 'Gimnasio', ja: '体育館', fr: 'Gymnase', de: 'Turnhalle', pt: 'Ginásio' },
-                hints: { ko: '공은 잡되 점프는 참는 날.', en: 'A day to hold the ball without jumping.', es: 'Sostiene el balón y se salta el salto.', ja: 'ボールは持つが跳ばない日。', fr: 'Elle tient le ballon et saute le saut.', de: 'Ein Tag, an dem sie den Ball hält, ohne zu springen.', pt: 'Ela segura a bola e dispensa o salto.' }
+                names: { ko: '체육관', en: 'Gym', es: 'Gimnasio', ja: '体育館', fr: 'Gymnase', de: 'Turnhalle', pt: 'Ginásio', zh: '体育馆' },
+                hints: { ko: '공은 잡되 점프는 참는 날.', en: 'A day to hold the ball without jumping.', es: 'Sostiene el balón y se salta el salto.', ja: 'ボールは持つが跳ばない日。', fr: 'Elle tient le ballon et saute le saut.', de: 'Ein Tag, an dem sie den Ball hält, ohne zu springen.', pt: 'Ela segura a bola e dispensa o salto.', zh: '只抱着球、不起跳的一天。' }
             },
             {
                 id: 'booth',
                 background: 'assets/images/background/dain_broadcast_booth.png',
-                names: { ko: '중계석', en: 'Broadcast booth', es: 'Cabina de retransmisión', ja: '実況席', fr: 'Cabine de commentaire', de: 'Kommentarplatz', pt: 'Cabine de transmissão' },
-                hints: { ko: '선수 대신 말로 경기를 따라가는 자리.', en: 'She follows the match with words, not spikes.', es: 'Sigue el partido con palabras, no con remates.', ja: 'スパイクの代わりに言葉で試合を追う。', fr: 'Elle suit le match avec des mots, pas des smashes.', de: 'Sie verfolgt das Spiel mit Worten, nicht mit Schmetterbällen.', pt: 'Ela acompanha o jogo com palavras, não com cortadas.' }
+                names: { ko: '중계석', en: 'Broadcast booth', es: 'Cabina de retransmisión', ja: '実況席', fr: 'Cabine de commentaire', de: 'Kommentarplatz', pt: 'Cabine de transmissão', zh: '解说席' },
+                hints: { ko: '선수 대신 말로 경기를 따라가는 자리.', en: 'She follows the match with words, not spikes.', es: 'Sigue el partido con palabras, no con remates.', ja: 'スパイクの代わりに言葉で試合を追う。', fr: 'Elle suit le match avec des mots, pas des smashes.', de: 'Sie verfolgt das Spiel mit Worten, nicht mit Schmetterbällen.', pt: 'Ela acompanha o jogo com palavras, não com cortadas.', zh: '她用话语，而不是扣球，追着比赛。' }
             },
             {
                 id: 'park',
                 background: 'assets/images/background/park.png',
-                names: { ko: '공원 벤치', en: 'Park bench', es: 'Banco del parque', ja: '公園のベンチ', fr: 'Banc du parc', de: 'Parkbank', pt: 'Banco do parque' },
-                hints: { ko: '5분만, 체력 충전.', en: 'Five minutes. Just a quick recharge.', es: 'Cinco minutos. Solo recargar.', ja: '5分だけ、充電。', fr: 'Cinq minutes. Juste recharger.', de: 'Fünf Minuten. Nur auftanken.', pt: 'Cinco minutos. Só recarregar.' }
+                names: { ko: '공원 벤치', en: 'Park bench', es: 'Banco del parque', ja: '公園のベンチ', fr: 'Banc du parc', de: 'Parkbank', pt: 'Banco do parque', zh: '公园长椅' },
+                hints: { ko: '5분만, 체력 충전.', en: 'Five minutes. Just a quick recharge.', es: 'Cinco minutos. Solo recargar.', ja: '5分だけ、充電。', fr: 'Cinq minutes. Juste recharger.', de: 'Fünf Minuten. Nur auftanken.', pt: 'Cinco minutos. Só recarregar.', zh: '就五分钟，充充电。' }
             }
         ],
         teacher: [
             {
                 id: 'study',
                 background: 'assets/images/background/teacher_room.png',
-                names: { ko: '서재', en: 'Study', es: 'Estudio', ja: '書斎', fr: 'Bureau', de: 'Arbeitszimmer', pt: 'Escritório' },
-                hints: { ko: '원고 옆자리. 교탁은 없다.', en: 'A chair beside the manuscript. No teacher’s desk.', es: 'Una silla junto al manuscrito. Sin pupitre.', ja: '原稿の隣。教卓はない。', fr: 'Une chaise à côté du manuscrit. Pas de bureau.', de: 'Ein Stuhl neben dem Manuskript. Kein Lehrerpult.', pt: 'Uma cadeira ao lado do original. Sem mesa de professora.' }
+                names: { ko: '서재', en: 'Study', es: 'Estudio', ja: '書斎', fr: 'Bureau', de: 'Arbeitszimmer', pt: 'Escritório', zh: '书房' },
+                hints: { ko: '원고 옆자리. 교탁은 없다.', en: 'A chair beside the manuscript. No teacher’s desk.', es: 'Una silla junto al manuscrito. Sin pupitre.', ja: '原稿の隣。教卓はない。', fr: 'Une chaise à côté du manuscrit. Pas de bureau.', de: 'Ein Stuhl neben dem Manuskript. Kein Lehrerpult.', pt: 'Uma cadeira ao lado do original. Sem mesa de professora.', zh: '手稿旁边的一把椅子。没有老师的讲桌。' }
             },
             {
                 id: 'cafe',
                 background: 'assets/images/background/cafe.png',
-                names: { ko: '카페', en: 'Cafe', es: 'Cafetería', ja: 'カフェ', fr: 'Café', de: 'Café', pt: 'Café' },
-                hints: { ko: '다음 주도 볼지 묻는 테이블.', en: 'The table where she asked about next week.', es: 'La mesa donde preguntó por la semana que viene.', ja: '来週も会うか聞いたテーブル。', fr: 'La table où elle a parlé de la semaine prochaine.', de: 'Der Tisch, an dem sie nach nächster Woche fragte.', pt: 'A mesa em que ela perguntou sobre a semana que vem.' }
+                names: { ko: '카페', en: 'Cafe', es: 'Cafetería', ja: 'カフェ', fr: 'Café', de: 'Café', pt: 'Café', zh: '咖啡馆' },
+                hints: { ko: '다음 주도 볼지 묻는 테이블.', en: 'The table where she asked about next week.', es: 'La mesa donde preguntó por la semana que viene.', ja: '来週も会うか聞いたテーブル。', fr: 'La table où elle a parlé de la semaine prochaine.', de: 'Der Tisch, an dem sie nach nächster Woche fragte.', pt: 'A mesa em que ela perguntou sobre a semana que vem.', zh: '她问起下周的那张桌子。' }
             },
             {
                 id: 'museum',
                 background: 'assets/images/background/museum.png',
-                names: { ko: '전시', en: 'Exhibition', es: 'Exposición', ja: '展示', fr: 'Exposition', de: 'Ausstellung', pt: 'Exposição' },
-                hints: { ko: '설명 대신 옆에 서는 사람.', en: 'She stands beside you instead of explaining.', es: 'Se queda a tu lado en vez de explicar.', ja: '説明せず、横に立つ。', fr: 'Elle se tient à tes côtés plutôt que d’expliquer.', de: 'Sie bleibt an deiner Seite, statt alles zu erklären.', pt: 'Ela fica ao lado em vez de explicar.' }
+                names: { ko: '전시', en: 'Exhibition', es: 'Exposición', ja: '展示', fr: 'Exposition', de: 'Ausstellung', pt: 'Exposição', zh: '展览馆' },
+                hints: { ko: '설명 대신 옆에 서는 사람.', en: 'She stands beside you instead of explaining.', es: 'Se queda a tu lado en vez de explicar.', ja: '説明せず、横に立つ。', fr: 'Elle se tient à tes côtés plutôt que d’expliquer.', de: 'Sie bleibt an deiner Seite, statt alles zu erklären.', pt: 'Ela fica ao lado em vez de explicar.', zh: '她站在你身旁，而不是给你讲解。' }
             },
             {
                 id: 'park',
                 background: 'assets/images/background/park.png',
-                names: { ko: '강변', en: 'Riverside', es: 'Orilla', ja: '川沿い', fr: 'Berges', de: 'Flussufer', pt: 'Beira do rio' },
-                hints: { ko: '직함 없이 걷는 길.', en: 'A walk with no job title.', es: 'Un paseo sin cargo.', ja: '肩書きのない散歩。', fr: 'Une promenade sans titre.', de: 'Ein Spaziergang ohne Titel.', pt: 'Um passeio sem cargo.' }
+                names: { ko: '강변', en: 'Riverside', es: 'Orilla', ja: '川沿い', fr: 'Berges', de: 'Flussufer', pt: 'Beira do rio', zh: '河边' },
+                hints: { ko: '직함 없이 걷는 길.', en: 'A walk with no job title.', es: 'Un paseo sin cargo.', ja: '肩書きのない散歩。', fr: 'Une promenade sans titre.', de: 'Ein Spaziergang ohne Titel.', pt: 'Um passeio sem cargo.', zh: '没有头衔的散步。' }
             }
         ],
         nurse: [
             {
                 id: 'home',
                 background: 'assets/images/background/nurse_house.png',
-                names: { ko: '둘의 집', en: 'Their home', es: 'Su casa', ja: '二人の家', fr: 'Chez eux', de: 'Ihr Zuhause', pt: 'A casa dos dois' },
-                hints: { ko: '주말에 남는 오전.', en: 'An unhurried weekend morning.', es: 'Una mañana de fin de semana que sobra.', ja: '予定のない週末の朝。', fr: 'Un matin de week-end qui reste.', de: 'Ein ruhiger Wochenendmorgen ohne Zeitdruck.', pt: 'Uma manhã de fim de semana que sobrou.' }
+                names: { ko: '둘의 집', en: 'Their home', es: 'Su casa', ja: '二人の家', fr: 'Chez eux', de: 'Ihr Zuhause', pt: 'A casa dos dois', zh: '两人的家' },
+                hints: { ko: '주말에 남는 오전.', en: 'An unhurried weekend morning.', es: 'Una mañana de fin de semana que sobra.', ja: '予定のない週末の朝。', fr: 'Un matin de week-end qui reste.', de: 'Ein ruhiger Wochenendmorgen ohne Zeitdruck.', pt: 'Uma manhã de fim de semana que sobrou.', zh: '不用着急的周末早晨。' }
             },
             {
                 id: 'cafe',
                 background: 'assets/images/background/cafe.png',
-                names: { ko: '카페', en: 'Cafe', es: 'Cafetería', ja: 'カフェ', fr: 'Café', de: 'Café', pt: 'Café' },
-                hints: { ko: '농담을 거두기 전의 테이블.', en: 'The table where her jokes give way to honesty.', es: 'Una mesa antes de dejar la broma.', ja: '冗談をやめる前、向かい合って座ったテーブル。', fr: 'Une table avant qu’elle range la blague.', de: 'Der Tisch, an dem ihre Scherze ehrlichen Worten weichen.', pt: 'Uma mesa antes de ela guardar a brincadeira.' }
+                names: { ko: '카페', en: 'Cafe', es: 'Cafetería', ja: 'カフェ', fr: 'Café', de: 'Café', pt: 'Café', zh: '咖啡馆' },
+                hints: { ko: '농담을 거두기 전의 테이블.', en: 'The table where her jokes give way to honesty.', es: 'Una mesa antes de dejar la broma.', ja: '冗談をやめる前、向かい合って座ったテーブル。', fr: 'Une table avant qu’elle range la blague.', de: 'Der Tisch, an dem ihre Scherze ehrlichen Worten weichen.', pt: 'Uma mesa antes de ela guardar a brincadeira.', zh: '玩笑让位给坦诚的那张桌子。' }
             },
             {
                 id: 'park',
                 background: 'assets/images/background/park.png',
-                names: { ko: '공원', en: 'Park', es: 'Parque', ja: '公園', fr: 'Parc', de: 'Park', pt: 'Parque' },
-                hints: { ko: '기록 없는 산책.', en: 'A walk with no chart.', es: 'Un paseo sin ficha.', ja: '記録のない散歩。', fr: 'Une promenade sans dossier.', de: 'Ein Spaziergang ohne Akte.', pt: 'Um passeio sem ficha.' }
+                names: { ko: '공원', en: 'Park', es: 'Parque', ja: '公園', fr: 'Parc', de: 'Park', pt: 'Parque', zh: '公园' },
+                hints: { ko: '기록 없는 산책.', en: 'A walk with no chart.', es: 'Un paseo sin ficha.', ja: '記録のない散歩。', fr: 'Une promenade sans dossier.', de: 'Ein Spaziergang ohne Akte.', pt: 'Um passeio sem ficha.', zh: '不用看病历的散步。' }
             },
             {
                 id: 'street',
                 background: 'assets/images/background/street.png',
-                names: { ko: '골목', en: 'Side street', es: 'Callejón', ja: '路地', fr: 'Ruelle', de: 'Seitengasse', pt: 'Beco' },
-                hints: { ko: '병원 앞을 지나지 않는 길.', en: 'A route that skips the hospital.', es: 'Un camino que no pasa por el hospital.', ja: '病院の前を通らない道。', fr: 'Un chemin qui évite l’hôpital.', de: 'Ein Weg, der nicht am Krankenhaus vorbeiführt.', pt: 'Um caminho que não passa no hospital.' }
+                names: { ko: '골목', en: 'Side street', es: 'Callejón', ja: '路地', fr: 'Ruelle', de: 'Seitengasse', pt: 'Beco', zh: '小巷' },
+                hints: { ko: '병원 앞을 지나지 않는 길.', en: 'A route that skips the hospital.', es: 'Un camino que no pasa por el hospital.', ja: '病院の前を通らない道。', fr: 'Un chemin qui évite l’hôpital.', de: 'Ein Weg, der nicht am Krankenhaus vorbeiführt.', pt: 'Um caminho que não passa no hospital.', zh: '一条绕开医院的路。' }
             }
         ]
     });
@@ -177,9 +177,9 @@
     }
 
     const pickerCopy = {
-        title: { ko: '오늘 어디 갈래', en: 'Where should we go today?', es: '¿Adónde vamos hoy?', ja: '今日はどこにする？', fr: 'Où on va aujourd’hui', de: 'Wohin sollen wir heute gehen?', pt: 'Aonde a gente vai hoje' },
-        birthday: { ko: '오늘 생일이다', en: 'Today is their birthday', es: 'Hoy es su cumpleaños', ja: '今日は誕生日', fr: 'C’est son anniversaire', de: 'Heute ist ihr Geburtstag', pt: 'Hoje é aniversário' },
-        start: { ko: '여기서 보자', en: 'Meet there', es: 'Allí', ja: 'ここで会おう', fr: 'On s’y retrouve', de: 'Dort treffen', pt: 'A gente se encontra lá' }
+        title: { ko: '오늘 어디 갈래', en: 'Where should we go today?', es: '¿Adónde vamos hoy?', ja: '今日はどこにする？', fr: 'Où on va aujourd’hui', de: 'Wohin sollen wir heute gehen?', pt: 'Aonde a gente vai hoje', zh: '今天去哪儿？' },
+        birthday: { ko: '오늘 생일이다', en: 'Today is their birthday', es: 'Hoy es su cumpleaños', ja: '今日は誕生日', fr: 'C’est son anniversaire', de: 'Heute ist ihr Geburtstag', pt: 'Hoje é aniversário', zh: '今天是她的生日' },
+        start: { ko: '여기서 보자', en: 'Meet there', es: 'Allí', ja: 'ここで会おう', fr: 'On s’y retrouve', de: 'Dort treffen', pt: 'A gente se encontra lá', zh: '就在那儿见' }
     };
 
     global.CupidGalleryOutings = Object.freeze({

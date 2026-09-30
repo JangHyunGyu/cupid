@@ -5,7 +5,7 @@ const fingerprint = createHash('sha256').update(deviceId).digest('hex');
 const originalFingerprint = '9fe6b2e83ad606ac68ff1832e42a7f1fd6d2f076a73ea469dec209639eefe2fb';
 const correctionId = 'main-route-seoyeon-20260909';
 
-for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
     test(`${lang}: targeted gallery correction, replay protection, and legitimate requalification`, async ({ page }) => {
         const logs = [];
         await page.route('**/*', async route => {

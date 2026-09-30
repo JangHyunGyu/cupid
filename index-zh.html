@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <script src="assets/js/runtime-support.js?v=2.9.280"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="origin-trial" content="Agn9opFYdjvT/UqEIvt4RnCkmN8Kt+8/lzvg731pKSz7MpNoJkLvra/pLOIFgR9GZb39JbBGeJ+CDO++Tus3FggAAABmeyJvcmlnaW4iOiJodHRwczovL2FyY2hlcmxhYi5kZXY6NDQzIiwiZmVhdHVyZSI6IkhUTUxJbkNhbnZhcyIsImV4cGlyeSI6MTc5MjQ1NDQwMCwiaXNTdWJkb21haW4iOnRydWV9">
+    <script src="assets/js/error-reporter.js?v=20260821-resource-retry"></script>
+    <script src="assets/js/storage-adapter.js?v=20260926-crossing-storage-v2"></script>
+    <!-- Explicit localized entry point (must be first script) -->
+    <script>
+    (function () {
+        try {
+            if (/bot|crawl|spider|slurp|facebookexternalhit|mediapartners/i.test(navigator.userAgent)) return;
+            window.CupidStorage.setItem('cupid:language', 'zh');
+        } catch (e) { }
+    })();
+    </script>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <script>
+        // Register Service Worker (skip on local dev)
+        if ('serviceWorker' in navigator && location.hostname !== '127.0.0.1' && location.hostname !== 'localhost') {
+            navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' })
+                .then(reg => console.log('[SW] Registered:', reg.scope))
+                .catch(err => console.log('[SW] Registration failed:', err));
+        }
+    </script>
+    <script>
+        // Keep landing-page controls usable while the parser-blocking game loader is still downloading.
+        window.openContactModal = function () {
+            const modal = document.getElementById('contactModal');
+            if (modal) modal.classList.add('is-open');
+        };
+        window.closeContactModal = function () {
+            const modal = document.getElementById('contactModal');
+            if (modal) modal.classList.remove('is-open');
+        };
+    </script>
+    <script src="assets/js/browser-check.js?v=2.9.9" defer></script>
+    <script src="assets/js/modal-accessibility.js?v=2.9.280" defer></script>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="favicon-192.png">
+    <link rel="manifest" href="manifest-zh.json">
+    <title>Cupid 在线游戏 - 免费网页恋爱视觉小说｜五天校园恋爱</title>
+    <meta name="description" content="在浏览器里免费畅玩的视觉小说《Cupid》，无需下载，无需注册。为期五天的校园恋爱故事，五位女主角，多重结局，支持八种语言。">
+    <meta name="keywords" content="免费恋爱游戏在线玩, 无需下载恋爱模拟, 校园恋爱视觉小说, 网页恋爱游戏免费, 乙女游戏网页版, 多结局恋爱游戏, 转学生恋爱游戏, 选择你的恋爱视觉小说, 恋爱模拟游戏浏览器, 校园恋爱故事免费玩, 免费视觉小说恋爱模拟, 无需注册恋爱游戏">
+    <meta name="author" content="ArcherLab">
+    <meta name="naver-site-verification" content="d1b1d31619e3752f70e28ef54cb08b49698ccf66" />
+    <link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/">
+    <link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/index-en">
+    <link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/index-ja">
+    <link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/index-es">
+    <link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/index-fr">
+    <link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/index-de">
+    <link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/index-pt">
+    <link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/index-zh">
+    <link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/">
+    <link rel="canonical" href="https://cupid.archerlab.dev/index-zh">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cupid 在线游戏 - 免费网页恋爱视觉小说｜五天校园恋爱">
+    <meta property="og:description" content="在浏览器里免费畅玩的视觉小说《Cupid》，无需下载，无需注册。为期五天的校园恋爱故事，五位女主角，多重结局，支持八种语言。">
+    <meta property="og:url" content="https://cupid.archerlab.dev/index-zh">
+    <meta property="og:image" content="https://cupid.archerlab.dev/assets/images/screenshots/cupid-title.jpg?v=2.9.6">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1080">
+    <meta property="og:image:alt" content="《Cupid》网页恋爱视觉小说标题画面">
+    <meta property="og:site_name" content="Cupid">
+    <meta property="og:locale" content="zh_CN">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cupid 在线游戏 - 免费网页恋爱视觉小说｜五天校园恋爱">
+    <meta name="twitter:description" content="在浏览器里免费畅玩的视觉小说《Cupid》，无需下载，无需注册。为期五天的校园恋爱故事，五位女主角，多重结局，支持八种语言。">
+    <meta name="twitter:image" content="https://cupid.archerlab.dev/assets/images/screenshots/cupid-title.jpg?v=2.9.6">
+    <meta name="twitter:image:alt" content="《Cupid》网页恋爱视觉小说标题画面">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "@id": "https://cupid.archerlab.dev/index-zh#webpage",
+                "url": "https://cupid.archerlab.dev/index-zh",
+                "name": "Cupid 在线游戏 - 免费网页恋爱视觉小说｜五天校园恋爱",
+                "description": "在浏览器里免费畅玩的视觉小说《Cupid》，无需下载，无需注册。为期五天的校园恋爱故事，五位女主角，多重结局，支持八种语言。",
+                "inLanguage": "zh-CN",
+                "mainEntity": {
+                    "@id": "https://cupid.archerlab.dev/#videogame"
+                }
+            },
+            {
+                "@type": [
+                    "VideoGame",
+                    "WebApplication"
+                ],
+                "@id": "https://cupid.archerlab.dev/#videogame",
+                "name": "Cupid",
+                "alternateName": [
+                    "Cupid Game",
+                    "Cupid Visual Novel",
+                    "무료 미연시 Cupid",
+                    "学園恋愛ゲーム Cupid"
+                ],
+                "description": "Cupid is a free browser romance visual novel with a five-day school story, five character routes, multiple endings, and support for seven languages.",
+                "url": "https://cupid.archerlab.dev/",
+                "image": "https://cupid.archerlab.dev/cupid_link.png?v=2.9.6",
+                "screenshot": [
+                    "https://cupid.archerlab.dev/assets/images/screenshots/cupid-title.jpg?v=2.9.6",
+                    "https://cupid.archerlab.dev/assets/images/screenshots/cupid-dialogue.jpg?v=2.9.6",
+                    "https://cupid.archerlab.dev/assets/images/screenshots/cupid-school.jpg?v=2.9.6"
+                ],
+                "genre": [
+                    "Visual Novel",
+                    "Romance",
+                    "Dating Simulation"
+                ],
+                "gamePlatform": [
+                    "Web Browser",
+                    "Mobile Browser"
+                ],
+                "applicationCategory": "GameApplication",
+                "operatingSystem": "Any",
+                "inLanguage": [
+                    "ko",
+                    "en",
+                    "ja",
+                    "es",
+                    "fr",
+                    "de",
+                    "pt"
+                ],
+                "isAccessibleForFree": true,
+                "offers": {
+                    "@type": "Offer",
+                    "price": 0,
+                    "priceCurrency": "USD"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "@id": "https://archerlab.dev/#organization",
+                    "name": "ArcherLab",
+                    "url": "https://archerlab.dev/"
+                }
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://cupid.archerlab.dev/#website",
+                "url": "https://cupid.archerlab.dev/",
+                "name": "Cupid",
+                "alternateName": [
+                    "Cupid Game",
+                    "Cupid Visual Novel"
+                ],
+                "inLanguage": [
+                    "ko",
+                    "en",
+                    "ja",
+                    "es",
+                    "fr",
+                    "de",
+                    "pt"
+                ],
+                "publisher": {
+                    "@id": "https://archerlab.dev/#organization"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-05YM7K3VX9"></script>
+    <!-- ga.js, sound.js loaded by game-loader.js -->
+    <link rel="stylesheet" href="assets/css/style.css?v=2.9.280">
+    <link rel="stylesheet" as="style" crossorigin
+        href="assets/vendor/pretendard/pretendard.css" />
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Pretendard', sans-serif;
+        }
+
+        #landing-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: url('assets/images/background/title_square.webp?v=2.9.6') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: clamp(60px, 13vh, 130px);
+            color: white;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        @media (orientation: landscape) {
+            #landing-container {
+                background-image: url('assets/images/background/title_landscape.webp?v=2.9.6');
+            }
+        }
+
+        @media (orientation: portrait) and (max-width: 768px) {
+            #landing-container {
+                background-image: url('assets/images/background/title_portrait.webp?v=2.9.6');
+            }
+        }
+
+        #landing-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .visual-h1 {
+            font-size: clamp(2.4rem, 7.2vmin, 4.8rem);
+            margin: 0 0 clamp(0.3rem, 1vh, 1rem) 0;
+            letter-spacing: clamp(8px, 1.6vw, 16px);
+            color: #fbf3f5;
+            font-weight: 200;
+            font-family: var(--font-stack);
+            text-shadow: 0 2px 24px rgba(0, 0, 0, 0.85), 0 0 60px rgba(0, 0, 0, 0.4);
+        }
+
+        p {
+            font-size: clamp(0.82rem, 2.1vmin, 1.2rem);
+            margin-bottom: clamp(0.8rem, 3vh, 3rem);
+            color: rgba(245, 238, 242, 0.85);
+            font-weight: 300;
+            letter-spacing: 0.4px;
+        }
+
+        .start-btn {
+            padding: clamp(10px, 1.7vh, 17px) clamp(38px, 7.5vw, 64px);
+            font-size: clamp(0.85rem, 1.95vmin, 1.05rem);
+            background: rgba(255, 255, 255, 0.06);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.55);
+            border-radius: 1px;
+            cursor: pointer;
+            transition: background 0.3s ease, border-color 0.3s ease, letter-spacing 0.3s ease;
+            text-decoration: none;
+            letter-spacing: clamp(3px, 0.7vw, 6px);
+            font-weight: 400;
+            text-transform: uppercase;
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+        }
+
+        .start-btn:hover {
+            background: rgba(255, 255, 255, 0.16);
+            border-color: rgba(255, 255, 255, 1);
+            letter-spacing: clamp(4px, 0.9vw, 8px);
+        }
+
+        .footer {
+            position: absolute;
+            bottom: clamp(5px, 2.5vh, 30px);
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(3px, 1vh, 15px);
+        }
+
+        .footer p {
+            font-size: clamp(0.55rem, 1.3vmin, 0.85rem) !important;
+            margin-bottom: clamp(1px, 0.4vh, 5px) !important;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: clamp(8px, 1.5vw, 20px);
+        }
+
+        .contact-link {
+            background: var(--c-surface-light);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            padding: clamp(5px, 0.9vh, 10px) clamp(12px, 2vw, 22px);
+            border-radius: var(--r-sharp);
+            color: var(--c-text);
+            text-decoration: none;
+            font-size: clamp(0.62rem, 1.4vmin, 0.82rem);
+            font-family: var(--font-stack);
+            border: 1px solid var(--c-border-soft);
+            letter-spacing: 1px;
+            transition: background 0.25s ease, border-color 0.25s ease;
+            cursor: pointer;
+        }
+
+        .contact-link:hover {
+            background: rgba(255, 255, 255, 0.16);
+            border-color: var(--c-border);
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-overlay.is-open {
+            display: flex;
+        }
+
+        .modal-container {
+            background: var(--c-surface);
+            padding: 32px 30px 26px;
+            border-radius: var(--r-soft);
+            width: 90%;
+            max-width: 420px;
+            text-align: center;
+            border: 1px solid var(--c-border-soft);
+            box-shadow: 0 18px 60px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .modal-title {
+            margin-top: 0;
+            margin-bottom: 18px;
+            color: var(--c-text);
+            font-size: 1.25rem;
+            font-weight: 500;
+            letter-spacing: 1.5px;
+        }
+
+        .confirm-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        .modal-btn {
+            padding: 11px 26px;
+            background: var(--c-surface-light);
+            border: 1px solid var(--c-border);
+            border-radius: var(--r-sharp);
+            color: var(--c-text);
+            font-family: var(--font-stack);
+            font-size: 0.85rem;
+            font-weight: 400;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            min-width: 110px;
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            transition: background 0.25s ease, border-color 0.25s ease, letter-spacing 0.25s ease;
+        }
+
+        .modal-btn.cancel {
+            border-color: var(--c-border-soft);
+            color: var(--c-text-soft);
+        }
+
+        .modal-btn.cancel:hover {
+            border-color: var(--c-border);
+            color: var(--c-text);
+            letter-spacing: 3.5px;
+        }
+
+        .modal-btn.confirm {
+            background: var(--c-accent-soft);
+            border-color: var(--c-accent);
+            color: var(--c-text);
+        }
+
+        .modal-btn.confirm:hover {
+            background: var(--c-accent-soft);
+            border-color: var(--c-accent-strong);
+            letter-spacing: 3.5px;
+        }
+
+        .modal-btn:active {
+            transform: scale(0.97);
+        }
+
+        .contact-options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .contact-option {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 18px;
+            background: var(--c-surface-light);
+            color: var(--c-text);
+            text-decoration: none;
+            border-radius: var(--r-soft);
+            border: 1px solid var(--c-border-soft);
+            transition: background 0.2s, border-color 0.2s;
+            font-family: var(--font-stack);
+            font-size: 0.9rem;
+            font-weight: 400;
+        }
+
+        .contact-option:hover {
+            background: rgba(255, 255, 255, 0.10);
+            border-color: var(--c-border);
+        }
+
+        .contact-option.kakao:hover {
+            border-color: rgba(254, 229, 0, 0.55);
+        }
+
+        .contact-option.email:hover {
+            border-color: rgba(100, 180, 255, 0.55);
+        }
+
+        .contact-option-icon {
+            font-size: 1.5rem;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        .contact-option-text {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .contact-option-label {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .contact-option-desc {
+            font-size: 0.75rem;
+            color: #999;
+        }
+
+        .contact-close-btn {
+            margin-top: 18px;
+            background: var(--c-surface-light);
+            border: 1px solid var(--c-border-soft);
+            color: var(--c-text-soft);
+            cursor: pointer;
+            padding: 9px 28px;
+            border-radius: var(--r-sharp);
+            font-size: 0.78rem;
+            font-family: var(--font-stack);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: background 0.2s, border-color 0.2s, color 0.2s;
+        }
+
+        .contact-close-btn:hover {
+            background: rgba(255, 255, 255, 0.12);
+            color: var(--c-text);
+            border-color: var(--c-border);
+        }
+
+        .lang-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .archerlab-link {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%) scale(var(--hero-scale, 1));
+            transform-origin: bottom center;
+            z-index: 50;
+            background: var(--c-surface-light);
+            color: var(--c-text);
+            border: 1px solid var(--c-border-soft);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            padding: 7px 16px;
+            border-radius: var(--r-sharp);
+            text-decoration: none;
+            font-size: 0.78rem;
+            font-family: var(--font-stack);
+            font-weight: 400;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: background 0.2s, border-color 0.2s;
+            white-space: nowrap;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .archerlab-link:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: var(--c-border);
+        }
+
+        .lang-btn {
+            background: var(--c-surface-light);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: var(--c-text);
+            border: 1px solid var(--c-border-soft);
+            padding: 7px 16px;
+            border-radius: var(--r-sharp);
+            text-decoration: none;
+            font-size: 0.78rem;
+            font-family: var(--font-stack);
+            font-weight: 400;
+            letter-spacing: 1px;
+            transition: background 0.2s, border-color 0.2s;
+            cursor: pointer;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .lang-btn:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: var(--c-border);
+        }
+
+        /* Custom Language Combo Box */
+        .lang-combo {
+            position: relative;
+        }
+
+        .lang-combo-selected {
+            background: var(--c-surface-light);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: var(--c-text);
+            border: 1px solid var(--c-border-soft);
+            padding: 7px 28px 7px 16px;
+            border-radius: var(--r-sharp);
+            font-size: 0.78rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background 0.2s, border-color 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+            user-select: none;
+            font-family: var(--font-stack);
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .lang-combo-selected::after {
+            content: '';
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 5px solid white;
+            transition: transform 0.2s;
+        }
+
+        .lang-combo.open .lang-combo-selected::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        .lang-combo-selected:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: var(--c-border);
+        }
+
+        .lang-combo-dropdown {
+            display: none;
+            position: absolute;
+            top: calc(100% + 6px);
+            right: 0;
+            background: var(--c-surface);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid var(--c-border-soft);
+            border-radius: var(--r-soft);
+            overflow: hidden;
+            min-width: 150px;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+            z-index: 100;
+        }
+
+        .lang-combo.open .lang-combo-dropdown {
+            display: block;
+            animation: dropdownFadeIn 0.15s ease-out;
+        }
+
+        @keyframes dropdownFadeIn {
+            from { opacity: 0; transform: translateY(-6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .lang-combo-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            color: white;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: background 0.15s;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .lang-combo-option:hover {
+            background: rgba(232, 138, 160, 0.3);
+        }
+
+        .lang-combo-option.active {
+            background: rgba(232, 138, 160, 0.15);
+            color: var(--c-accent);
+        }
+
+        .lang-combo-option .lang-flag {
+            font-size: 1.1rem;
+            line-height: 1;
+        }
+
+        /* Mobile: archerlab link top-left */
+        @media (max-width: 768px) {
+            .archerlab-link {
+                left: 20px;
+                transform: none;
+                font-size: 0.78rem;
+                padding: 6px 14px;
+            }
+            .archerlab-link:hover {
+                transform: scale(1.08);
+            }
+        }
+
+        @media (max-width: 480px) {
+            #landing-settings-btn {
+                width: 36px;
+                padding: 7px 8px;
+                font-size: 0;
+            }
+
+            #landing-settings-btn::before {
+                content: '⚙';
+                font-size: 0.9rem;
+            }
+        }
+
+        /* ===== Title Heroines ===== */
+        .title-heroines {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            pointer-events: none;
+            overflow: hidden;
+            --title-heroine-max-height: min(98vh, 1100px);
+            --title-heroine-max-width: min(32vw, 480px);
+        }
+
+        .title-heroine {
+            position: absolute;
+            bottom: var(--hero-bottom, 0);
+            left: var(--hero-x, 50%);
+            height: var(--hero-height, 100%);
+            max-height: var(--title-heroine-max-height);
+            max-width: var(--title-heroine-max-width);
+            width: auto;
+            object-fit: contain;
+            object-position: bottom;
+            filter: drop-shadow(0 8px 30px rgba(0, 0, 0, 0.65));
+            transform: translateX(-50%) scale(var(--hero-scale, 1));
+            transform-origin: bottom center;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            opacity: var(--hero-opacity, 0.85);
+            z-index: var(--hero-z, 1);
+        }
+
+        .title-heroine.pos-1 { --hero-x: 9%; --hero-height: 100%; --hero-opacity: 0.95; }
+        .title-heroine.pos-2 { --hero-x: 24%; --hero-height: 100%; --hero-opacity: 0.92; }
+        .title-heroine.pos-3 { --hero-x: 39%; --hero-height: 100%; --hero-opacity: 1; --hero-z: 2; }
+        .title-heroine.pos-4 { --hero-x: 68%; --hero-height: 100%; --hero-opacity: 0.9; }
+        .title-heroine.pos-5 { --hero-x: 84%; --hero-height: 100%; --hero-opacity: 0.94; }
+
+        /* Large desktop */
+        @media (min-width: 1600px) {
+            .title-heroines {
+                --title-heroine-max-height: min(100vh, 1280px);
+                --title-heroine-max-width: min(28vw, 540px);
+            }
+
+            .title-heroine.pos-1 { --hero-x: 10%; }
+            .title-heroine.pos-2 { --hero-x: 25%; }
+            .title-heroine.pos-3 { --hero-x: 40%; }
+            .title-heroine.pos-4 { --hero-x: 69%; }
+            .title-heroine.pos-5 { --hero-x: 85%; }
+        }
+
+        /* Laptop / compact desktop */
+        @media (min-width: 1101px) and (max-width: 1599px) {
+            .title-heroines {
+                --title-heroine-max-width: min(32vw, 460px);
+            }
+        }
+
+        /* Tablet landscape and narrow laptop */
+        @media (min-width: 821px) and (max-width: 1100px) {
+            .title-heroines {
+                --title-heroine-max-height: min(96vh, 820px);
+                --title-heroine-max-width: min(33vw, 360px);
+            }
+
+            .title-heroine.pos-1 { --hero-x: 8%; }
+            .title-heroine.pos-2 { --hero-x: 24%; }
+            .title-heroine.pos-3 { --hero-x: 40%; }
+            .title-heroine.pos-4 { --hero-x: 68%; }
+            .title-heroine.pos-5 { --hero-x: 83%; }
+        }
+
+        /* Tablet portrait (iPad portrait included) */
+        @media (min-width: 744px) and (max-width: 1024px) and (orientation: portrait) {
+            .title-heroines {
+                --title-heroine-max-height: min(78vh, 740px);
+                --title-heroine-max-width: min(36vw, 320px);
+            }
+
+            .title-heroine {
+                bottom: var(--hero-bottom, 0);
+            }
+
+            .title-heroine.pos-2 {
+                --hero-x: 10%;
+                --hero-bottom: -2%;
+                --hero-opacity: 0.55;
+                --hero-z: 0;
+            }
+
+            .title-heroine.pos-4 {
+                --hero-x: 90%;
+                --hero-bottom: -2%;
+                --hero-opacity: 0.55;
+                --hero-z: 0;
+            }
+
+            .title-heroine.pos-1 {
+                --hero-x: 27%;
+                --hero-opacity: 0.92;
+            }
+
+            .title-heroine.pos-3 {
+                --hero-x: 50%;
+                --hero-opacity: 1;
+                --hero-z: 2;
+            }
+
+            .title-heroine.pos-5 {
+                --hero-x: 73%;
+                --hero-opacity: 0.92;
+            }
+        }
+
+        /* Phone portrait: give the cast the space below the menu. */
+        @media (max-width: 743px) and (orientation: portrait) {
+            #landing-container {
+                height: 100dvh;
+                display: grid;
+                grid-template-columns: minmax(0, 1fr);
+                grid-template-rows: auto minmax(0, 1fr);
+                align-items: stretch;
+                padding: max(76px, calc(env(safe-area-inset-top) + 64px)) 0 0;
+            }
+
+            .content {
+                grid-area: 1 / 1;
+                justify-self: center;
+                width: min(calc(100% - 24px), 420px);
+            }
+
+            .content > p { margin: 0 0 8px; line-height: 1.4; }
+            .content .value-props { margin: 0 auto 8px; gap: 4px 10px; }
+            .content .vp-badge { line-height: 1.25; }
+
+            .title-heroines {
+                position: relative;
+                grid-area: 2 / 1;
+                min-height: 0;
+                --title-heroine-max-height: min(65svh, 720px);
+                --title-heroine-max-width: none;
+            }
+
+            .title-heroine.pos-2 { --hero-x: 8%; --hero-bottom: -3%; --hero-z: 0; }
+            .title-heroine.pos-4 { --hero-x: 92%; --hero-bottom: -3%; --hero-z: 0; }
+            .title-heroine.pos-1 { --hero-x: 25%; }
+            .title-heroine.pos-3 { --hero-x: 50%; }
+            .title-heroine.pos-5 { --hero-x: 75%; }
+
+            .lang-switch {
+                top: max(12px, env(safe-area-inset-top));
+                left: max(12px, env(safe-area-inset-left));
+                right: max(12px, env(safe-area-inset-right));
+                gap: 8px;
+            }
+
+            .archerlab-link {
+                position: static;
+                margin-right: auto;
+                padding-inline: 10px;
+                font-size: 0.72rem;
+                transform: none;
+            }
+            .archerlab-link:hover { transform: none; }
+            .lang-combo-selected { padding-left: 10px; padding-right: 24px; font-size: 0.72rem; }
+
+            .footer {
+                width: calc(100% - 24px);
+                left: 12px;
+                bottom: max(6px, env(safe-area-inset-bottom));
+                gap: 5px;
+                padding: 0;
+                border: 0;
+                border-radius: 0;
+                background: none;
+                box-shadow: none;
+                backdrop-filter: none;
+                -webkit-backdrop-filter: none;
+                text-shadow: 0 1px 2px #000, 0 0 4px #000;
+            }
+
+            .footer .contact-links { width: 100%; justify-content: center; gap: 6px; }
+            .footer .contact-link { flex: 1 1 0; min-width: 0; max-width: 120px; min-height: 48px; padding: 6px; font-size: 0.75rem; letter-spacing: 0; }
+            .footer nav { margin-top: 0 !important; font-size: 11px !important; line-height: 1.45; }
+            .footer p { font-size: 10px !important; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7); }
+        }
+
+        @media (max-width: 743px) and (max-height: 640px) and (orientation: portrait) {
+            .content .visual-h1 { margin-bottom: 4px; }
+            .content > p { font-size: 0.78rem; line-height: 1.3; margin-bottom: 4px; }
+            .content .value-props { margin-bottom: 6px; row-gap: 2px; }
+            .content .vp-badge { padding-block: 1px; }
+        }
+
+        /* Low-height landscape phones */
+        @media (max-height: 560px) and (orientation: landscape) {
+            .title-heroines {
+                --title-heroine-max-height: min(98vh, 480px);
+                --title-heroine-max-width: min(26vw, 240px);
+            }
+
+            .title-heroine {
+                bottom: 0;
+            }
+
+            .title-heroine.pos-1 { --hero-x: 7%; }
+            .title-heroine.pos-2 { --hero-x: 23%; --hero-opacity: 0.72; }
+            .title-heroine.pos-3 { --hero-x: 39%; }
+            .title-heroine.pos-4 { --hero-x: 68%; --hero-opacity: 0.72; }
+            .title-heroine.pos-5 { --hero-x: 84%; }
+        }
+
+        .title-heroine.pos-1,
+        .title-heroine.pos-2,
+        .title-heroine.pos-3,
+        .title-heroine.pos-4,
+        .title-heroine.pos-5 {
+            --hero-opacity: 1;
+        }
+    </style>
+<script src="assets/js/ga-engagement.js?v=20260618-engagement" defer></script>
+    <link rel="stylesheet" href="assets/css/buttons.css?v=20260913-all-controls-v2">
+    <link rel="stylesheet" href="assets/css/title-cast.css?v=20260913-balanced-cast-v3">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<script src="assets/js/immersive.js?v=20260916-immersive-disabled-v1" defer></script>
+
+    <style id="cupid-gate-veil-style">
+        html.cupid-from-gate { background: #f3d5df url('assets/images/background/gate_bloom.jpg') center/cover no-repeat; }
+        html.cupid-from-gate body { background: transparent; }
+        html.cupid-from-gate #landing-container,
+        html.cupid-from-gate .lang-switch { visibility: hidden !important; }
+        #cupid-gate-veil { position: fixed; inset: 0; z-index: 1600; background: #f3d5df url('assets/images/background/gate_bloom.jpg') center/cover no-repeat; transition: opacity 1.15s ease; pointer-events: auto; }
+        #cupid-gate-veil.cupid-gate-veil-out { opacity: 0; pointer-events: none; }
+    </style>
+    <script id="cupid-gate-veil-boot">
+        (function () {
+            if (!/(?:^|[?&])gate=1(?:&|$)/.test(location.search)) return;
+            document.documentElement.classList.add('cupid-from-gate');
+            var mount = function () {
+                if (document.getElementById('cupid-gate-veil')) return;
+                var veil = document.createElement('div');
+                veil.id = 'cupid-gate-veil';
+                (document.body || document.documentElement).appendChild(veil);
+            };
+            if (document.body) mount();
+            else document.addEventListener('DOMContentLoaded', mount);
+        })();
+    </script>
+</head>
+
+<body>
+    <noscript>
+        <div style="padding: 20px; text-align: center; color: #fff; background: #1a1a2e;">
+            <h1>Cupid 在线游戏 - 免费网页恋爱视觉小说｜五天校园恋爱</h1>
+            <p>在浏览器里免费畅玩的视觉小说《Cupid》，无需下载，无需注册。为期五天的校园恋爱故事，五位女主角，多重结局，支持八种语言。</p>
+            <p>请启用 JavaScript 后再游玩本游戏。</p>
+        </div>
+    </noscript>
+    <script>
+        function toggleLangCombo() {
+            document.getElementById('langCombo').classList.toggle('open');
+        }
+    </script>
+    <div class="lang-switch">
+        <a href="https://archerlab.dev" rel="noopener noreferrer" class="archerlab-link" aria-label="ArcherLab 首页" title="ArcherLab">🏹 ArcherLab</a>
+        <button id="landing-settings-btn" class="lang-btn"
+            style="border: none;">
+            设置</button>
+        <div class="lang-combo" id="langCombo">
+            <div class="lang-combo-selected" onclick="toggleLangCombo()">
+                <span class="lang-flag">🇨🇳</span> 简体中文
+            </div>
+            <div class="lang-combo-dropdown">
+                <a href="index.html" class="lang-combo-option" onclick="window.CupidStorage.setItem('cupid:language','ko')">
+                    <span class="lang-flag">🇰🇷</span> 한국어
+                </a>
+                <a href="index-en" class="lang-combo-option" onclick="window.CupidStorage.setItem('cupid:language','en')">
+                    <span class="lang-flag">🇺🇸</span> English
+                </a>
+                <a href="index-es" class="lang-combo-option" onclick="window.CupidStorage.setItem('cupid:language','es')">
+                    <span class="lang-flag">🇪🇸</span> Español
+                </a>
+                <a href="index-ja" class="lang-combo-option" onclick="window.CupidStorage.setItem('cupid:language','ja')">
+                    <span class="lang-flag">🇯🇵</span> 日本語
+                </a>
+                <a href="index-fr" class="lang-combo-option" onclick="window.CupidStorage.setItem('cupid:language','fr')">
+                    <span class="lang-flag">🇫🇷</span> Français
+                </a>
+                <a href="index-de" class="lang-combo-option" onclick="window.CupidStorage.setItem('cupid:language','de')">
+                    <span class="lang-flag">🇩🇪</span> Deutsch
+                </a>
+                <a href="index-pt" class="lang-combo-option" onclick="window.CupidStorage.setItem('cupid:language','pt')">
+                    <span class="lang-flag">🇧🇷</span> Português
+                </a>
+                <div class="lang-combo-option active">
+                    <span class="lang-flag">🇨🇳</span> 简体中文
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="landing-container">
+        <!-- Title Heroines -->
+        <div class="title-heroines">
+            <img src="/api/media?asset=assets%2Fimages%2Fcharacters%2Fdain_normal.webp&amp;v=94e9907a3243b74c8d6e0c60" alt="多因 - Cupid 女主角" class="title-heroine pos-1" loading="eager">
+            <img src="/api/media?asset=assets%2Fimages%2Fcharacters%2Fteacher_normal.webp&amp;v=035e176bdf30610982f002a0" alt="班主任 - Cupid 女主角" class="title-heroine pos-2" loading="eager">
+            <img src="/api/media?asset=assets%2Fimages%2Fcharacters%2Fseyoun_normal.webp&amp;v=557245d018f0cad5171f6cf0" alt="书妍 - Cupid 女主角" class="title-heroine pos-3" loading="eager">
+            <img src="/api/media?asset=assets%2Fimages%2Fcharacters%2Fnurse_normal.webp&amp;v=be6bdf3e979df526ee599bbd" alt="保健老师 - Cupid 女主角" class="title-heroine pos-4" loading="eager">
+            <img src="/api/media?asset=assets%2Fimages%2Fcharacters%2Fyuna_normal.webp&amp;v=afeb6f7addfd9bbd5ed3d570" alt="由娜 - Cupid 女主角" class="title-heroine pos-5" loading="eager">
+        </div>
+        <div class="content">
+            <h1 class="visual-h1">CUPID<span class="sr-only"> - Cupid 在线游戏，免费网页恋爱视觉小说</span></h1>
+            <p>转学到新学校第一天的故事</p>
+            <div class="title-actions">
+                <button id="start-btn" data-fullscreen-start onclick="startGame()" class="start-btn" style="cursor:pointer; opacity: 0.5;" disabled>新游戏</button>
+                <button id="continue-btn" data-fullscreen-start onclick="continueGame()" class="start-btn"
+                    style="cursor:pointer; opacity: 0.5;"
+                    disabled>继续游戏</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="contact-links">
+                <a href="gallery-zh.html" class="contact-link" style="text-decoration: none;">📖 图鉴</a>
+                <button class="contact-link" onclick="openContactModal()"> 联系我们</button>
+                <button class="contact-link" onclick="installApp()"> 安装应用</button>
+            </div>
+            <p style="color: #ffb6c1;">制作：ArcherLab</p>
+            <p style="opacity: 0.7;">© 2026 ArcherLab. 保留所有权利。 ver. 0.13</p>
+        </div>
+    </div>
+
+    <!-- New Game Confirm Modal (Landing Page) -->
+    <div id="newGameConfirmModal" class="modal-overlay" style="display: none;" onclick="closeNewGameConfirm(event)">
+        <div class="modal-container" onclick="event.stopPropagation()">
+            <div style="font-size: 2.5rem; margin-bottom: 10px;">⚠️</div>
+            <h3 class="modal-title">开始新游戏</h3>
+            <p style="color: #ccc; margin: 15px 0; line-height: 1.6;">现有的存档数据将会丢失。<br>仍要开始新游戏吗？</p>
+            <div class="confirm-buttons">
+                <button class="modal-btn cancel" onclick="closeNewGameConfirm(event)">取消</button>
+                <button class="modal-btn confirm" onclick="confirmNewGame()">开始</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Container (Hidden initially) -->
+    <div id="game-container" style="display: none;">
+        <!-- Background -->
+        <div id="background-layer"></div>
+
+        <!-- Characters -->
+        <div id="character-layer">
+            <div id="char-left" class="char-slot"></div>
+            <div id="char-center" class="char-slot"></div>
+            <div id="char-right" class="char-slot"></div>
+        </div>
+
+        <!-- UI Layer -->
+        <div id="ui-layer">
+            <div id="dialogue-box" data-fullscreen-play>
+                <div id="name-tag"></div>
+                <div id="message"></div>
+                <div id="next-indicator"></div>
+
+                <!-- Name Input -->
+                <div id="name-input-container" style="display: none;">
+                    <div id="name-input-wrapper">
+                        <input type="text" id="player-name-input" placeholder="请输入你的名字" maxlength="12">
+                        <button id="name-confirm-btn">确定</button>
+                    </div>
+                    <div id="name-input-guide">请输入1到8个汉字，或1到12个英文字母。不能使用数字和符号。</div>
+                </div>
+            </div>
+
+            <div id="choice-container" style="display: none;">
+                <!-- Choice buttons generated here -->
+            </div>
+
+            <!-- Free Talk Input -->
+            <div id="chat-container" style="display: none;">
+                <div id="chat-guide"></div>
+                <div id="chat-input-wrapper">
+                    <button id="upload-image-btn" title="上传图片">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                            <polyline points="21 15 16 10 5 21"></polyline>
+                        </svg>
+                    </button>
+                    <input type="text" id="chat-input" placeholder="输入消息…" maxlength="100">
+                    <input type="file" id="upload-image-input" accept="image/*" style="display: none;">
+                    <button type="button" id="action-toggle-btn" title="动作描写 (*)">✱</button>
+                    <button id="chat-send" title="发送">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                        </svg>
+                    </button>
+                    <button id="chat-skip-btn" title="结束对话">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="chat-turn-indicator">剩余回合：<span id="turn-count">3</span></div>
+            </div>
+
+            <!-- Settings Gear -->
+            <button id="settings-btn" class="settings-gear" onclick="openSettingsModal()" title="设置">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor"
+                        d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.488.488 0 0 0-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 0 0-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87a.49.49 0 0 0 .12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32a.49.49 0 0 0-.12-.61l-2.03-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- Gallery Button (in-game, top left) -->
+            <button id="gallery-btn" onclick="window.open('gallery-zh.html', '_blank')" title="图鉴" style="display: none;">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M22 16V4c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2zm-11-4l2.03 2.71L16 11l4 5H8l3-4zM2 6v14c0 1.1.9 2 2 2h14v-2H4V6H2z"/>
+                </svg>
+            </button>
+
+            <!-- Home Button (in-game, top center) -->
+            <button id="home-btn" onclick="showHomeConfirm()" title="返回标题" style="display: none;">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Fade Layer -->
+        <div id="fade-layer">
+            <div id="tbc-text">未完待续</div>
+        </div>
+
+        <!-- Ending Credits Layer -->
+        <div id="credits-layer">
+            <div id="credits-content">
+                <div class="credits-title">CUPID</div>
+                <div class="credits-subtitle">丘比特之箭落下的地方</div>
+                <div class="credits-divider">─ ─ ─</div>
+                <div class="credits-section">
+                    <div class="credits-role">策划 · 编剧</div>
+                    <div class="credits-name">ArcherLab</div>
+                </div>
+                <div class="credits-section">
+                    <div class="credits-role">程序 · 演出</div>
+                    <div class="credits-name">ArcherLab</div>
+                </div>
+                <div class="credits-section">
+                    <div class="credits-role">美术 · 设计</div>
+                    <div class="credits-name">ArcherLab</div>
+                </div>
+                <div class="credits-section">
+                    <div class="credits-role">音乐 · 音效</div>
+                    <div class="credits-name">ArcherLab</div>
+                </div>
+                <div class="credits-divider">─ ─ ─</div>
+                <div class="credits-section">
+                    <div class="credits-role">登场人物</div>
+                    <div class="credits-name">书妍 · 由娜 · 多因</div>
+                    <div class="credits-name">保健老师 · 班主任</div>
+                </div>
+                <div class="credits-divider">─ ─ ─</div>
+                <div class="credits-section">
+                    <div class="credits-role">制作</div>
+                    <div class="credits-name">ArcherLab</div>
+                </div>
+                <div class="credits-divider">─ ─ ─</div>
+                <div class="credits-section">
+                    <div class="credits-role">特别鸣谢</div>
+                    <div class="credits-name">感谢你的游玩！</div>
+                    <div class="credits-name">衷心感谢你的支持。</div>
+                </div>
+                <div class="credits-spacer"></div>
+                <div class="credits-final">Cupid © 2026 ArcherLab</div>
+                <div class="credits-final">感谢游玩</div>
+                <div class="credits-spacer"></div>
+            </div>
+        </div>
+
+        <!-- Image Zoom Modal -->
+        <div id="image-modal" class="modal-overlay" style="display: none;" onclick="this.style.display='none'">
+            <img id="image-modal-img" alt="CUPID 游戏大图"
+                style="max-width: 90%; max-height: 90%; border-radius: 10px; box-shadow: 0 0 30px rgba(0,0,0,0.5);">
+        </div>
+
+        <!-- Home Confirm Modal -->
+        <div id="homeConfirmModal" class="modal-overlay" style="display: none;" onclick="closeHomeConfirm(event)">
+            <div class="modal-container" onclick="event.stopPropagation()">
+                <h3 class="modal-title">返回标题</h3>
+                <p style="color: #ccc; margin: 20px 0; line-height: 1.6;">确定要返回标题画面吗？<br><span style="color: #6b5b95; font-size: 0.9em;">（进度会自动保存）</span></p>
+                <div class="confirm-buttons">
+                    <button class="modal-btn cancel" onclick="closeHomeConfirm(event)">取消</button>
+                    <button class="modal-btn confirm" onclick="goToHome()">返回</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Custom Modal -->
+        <div id="custom-modal" class="modal-overlay" style="display: none;">
+            <div class="modal-content">
+                <p id="modal-message"></p>
+                <div class="modal-buttons">
+                    <button id="modal-confirm-btn">确定</button>
+                    <button id="modal-cancel-btn">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settingsModal" class="modal-overlay" onclick="closeSettingsModal(event)">
+        <div class="modal-container" onclick="event.stopPropagation()">
+            <h3 class="modal-title">设置</h3>
+            <div class="contact-options" style="text-align: left; padding: 0 20px;">
+                <label
+                    style="display: flex; align-items: center; justify-content: space-between; color: white; cursor: pointer;">
+                    <span> 显示好感度条</span>
+                    <input type="checkbox" id="affinityToggle" checked style="transform: scale(1.5);">
+                </label>
+                <p style="font-size: 0.8rem; color: #aaa; margin-top: 10px; margin-bottom: 20px;">在角色名字旁边以条形显示好感度。</p>
+
+                <div style="margin-top: 20px;">
+                    <div style="display: flex; justify-content: space-between; color: white; margin-bottom: 5px;">
+                        <span> 背景音乐音量</span>
+                        <span id="bgmVolumeVal">50%</span>
+                    </div>
+                    <input type="range" id="bgmVolume" min="0" max="100" value="50"
+                        style="width: 100%; accent-color: var(--c-accent);">
+                </div>
+
+                <div style="margin-top: 15px;">
+                    <div style="display: flex; justify-content: space-between; color: white; margin-bottom: 5px;">
+                        <span> 音效音量</span>
+                        <span id="sfxVolumeVal">50%</span>
+                    </div>
+                    <input type="range" id="sfxVolume" min="0" max="100" value="50"
+                        style="width: 100%; accent-color: var(--c-accent);">
+                </div>
+            </div>
+            <button onclick="saveSettings()"
+                style="margin-top: 20px; background: var(--c-accent); border: none; padding: 10px 30px; border-radius: 4px; color: white; cursor: pointer; font-size: 1rem;">保存</button>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal-overlay" onclick="closeContactModal(event)">
+        <div class="modal-container" onclick="event.stopPropagation()">
+            <div style="font-size: 2.5rem; margin-bottom: 5px;">💌</div>
+            <h3 class="modal-title">联系我们</h3>
+            <p style="color: #999; font-size: 0.85rem; margin: 0 0 5px;">有问题或建议吗？欢迎联系我们！</p>
+            <div class="contact-options">
+                <a href="https://open.kakao.com/o/pF6xil6h" target="_blank" class="contact-option kakao">
+                    <span class="contact-option-icon">💬</span>
+                    <span class="contact-option-text">
+                        <span class="contact-option-label">KakaoTalk 开放聊天室</span>
+                        <span class="contact-option-desc">与我们实时聊天</span>
+                    </span>
+                </a>
+                <a href="https://archerlab.dev" rel="noopener noreferrer" class="contact-option email">
+                    <span class="contact-option-icon">🏹</span>
+                    <span class="contact-option-text">
+                        <span class="contact-option-label">ArcherLab 官网</span>
+                        <span class="contact-option-desc">archerlab.dev</span>
+                    </span>
+                </a>
+            </div>
+            <button onclick="closeContactModal()" class="contact-close-btn">关闭</button>
+        </div>
+    </div>
+
+    <script>window.preventAutoStart = true;</script>
+
+    <!-- Game Scripts (Dynamic Loader) -->
+<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.280&history=20260926-pills"></script>
+
+    <script>
+        // Initialize SoundManager + Enable Buttons (게임 스크립트 로드 완료 후)
+        function _onGameReady() {
+            if (window.soundManager) soundManager.init();
+
+            const startBtn = document.getElementById('start-btn');
+            if (startBtn) {
+                startBtn.disabled = false;
+                startBtn.style.opacity = '1';
+            }
+
+            setTimeout(() => {
+                const continueBtn = document.getElementById('continue-btn');
+                if (continueBtn && window.hasSavedGame && window.hasSavedGame()) {
+                    continueBtn.disabled = false;
+                    continueBtn.style.opacity = '1';
+                    continueBtn.style.cursor = 'pointer';
+                }
+            }, 100);
+        }
+        if (window.gameScriptsLoaded) _onGameReady();
+        else window.addEventListener('gameScriptsLoaded', _onGameReady);
+
+        function runLandingAsync(context, task) {
+            Promise.resolve()
+                .then(task)
+                .catch(error => {
+                    console.error(`[Cupid Landing] ${context} error:`, error);
+                });
+        }
+
+        function startGame() {
+            runLandingAsync('startGame', async () => {
+                // Show custom confirmation if saved game exists (continue button is enabled)
+                const continueBtn = document.getElementById('continue-btn');
+                if (continueBtn && !continueBtn.disabled) {
+                    const modal = document.getElementById('newGameConfirmModal');
+                    if (modal) modal.style.display = 'flex';
+                    return;
+                }
+                await launchNewGame();
+            });
+        }
+
+        // Close new game confirm modal
+        function closeNewGameConfirm(e) {
+            if (e && e.target !== e.currentTarget) return;
+            const modal = document.getElementById('newGameConfirmModal');
+            if (modal) modal.style.display = 'none';
+        }
+
+        // Confirm and start new game
+        function confirmNewGame() {
+            runLandingAsync('confirmNewGame', async () => {
+                const modal = document.getElementById('newGameConfirmModal');
+                if (modal) modal.style.display = 'none';
+                await launchNewGame();
+            });
+        }
+
+        // Actual new game launch logic
+        async function launchNewGame() {
+            if (window.loadCupidGameRuntime && !await window.loadCupidGameRuntime().catch(() => false)) return;
+            if (window.soundManager) window.soundManager.playBgm('assets/audio/bgm/intro.mp3');
+            document.getElementById('landing-container').style.display = 'none';
+            document.querySelector('.lang-switch').style.display = 'none';
+            document.getElementById('game-container').style.display = 'block';
+            if (window.initGame) await window.initGame();
+
+            // Show home button + gallery button when game starts
+            const homeBtn = document.getElementById('home-btn');
+            if (homeBtn) {
+                homeBtn.style.display = 'flex';
+            }
+            const galleryBtn = document.getElementById('gallery-btn');
+            if (galleryBtn) {
+                galleryBtn.style.display = 'flex';
+            }
+        }
+
+        // Home Button Functions
+        function showHomeConfirm() {
+            const homeModal = document.getElementById('homeConfirmModal');
+            if (homeModal) {
+                homeModal.style.display = 'flex';
+            }
+        }
+
+        function closeHomeConfirm(e) {
+            if (e && e.target !== e.currentTarget) return;
+            const homeModal = document.getElementById('homeConfirmModal');
+            if (homeModal) {
+                homeModal.style.display = 'none';
+            }
+        }
+
+        function goToHome() {
+            // Save current game state
+            if (window.saveGameState) {
+                window.saveGameState();
+            }
+            if (window.soundManager) {
+                soundManager.stopBgm();
+            }
+            window.location.reload();
+        }
+
+        // Continue game function
+        function continueGame() {
+            runLandingAsync('continueGame', async () => {
+                if (window.loadCupidGameRuntime && !await window.loadCupidGameRuntime().catch(() => false)) return;
+                const saveData = window.loadGameState ? window.loadGameState() : null;
+                if (!saveData) {
+                    alert('没有找到存档。');
+                    return;
+                }
+
+                if (window.soundManager) window.soundManager.playBgm('assets/audio/bgm/intro.mp3');
+                document.getElementById('landing-container').style.display = 'none';
+                document.querySelector('.lang-switch').style.display = 'none';
+                document.getElementById('game-container').style.display = 'block';
+
+                if (window.initGameFromSave) {
+                    await window.initGameFromSave(saveData);
+                }
+
+                const homeBtn = document.getElementById('home-btn');
+                if (homeBtn) {
+                    homeBtn.style.display = 'flex';
+                }
+                const galleryBtnContinue = document.getElementById('gallery-btn');
+                if (galleryBtnContinue) {
+                    galleryBtnContinue.style.display = 'flex';
+                }
+            });
+        }
+
+        // 버튼 활성화는 _onGameReady()에서 처리 (gameScriptsLoaded 이벤트)
+
+        function openSettingsModal() {
+            document.getElementById('settingsModal').classList.add('is-open');
+
+            const savedSetting = window.CupidStorage.getItem('showAffinity');
+            const showAffinity = savedSetting === null ? true : savedSetting === 'true';
+            document.getElementById('affinityToggle').checked = showAffinity;
+
+            const bgmVol = window.CupidStorage.getItem('bgmVolume') !== null ? parseFloat(window.CupidStorage.getItem('bgmVolume')) : 0.5;
+            const sfxVol = window.CupidStorage.getItem('sfxVolume') !== null ? parseFloat(window.CupidStorage.getItem('sfxVolume')) : 0.5;
+
+            document.getElementById('bgmVolume').value = bgmVol * 100;
+            document.getElementById('sfxVolume').value = sfxVol * 100;
+            document.getElementById('bgmVolumeVal').textContent = Math.round(bgmVol * 100) + '%';
+            document.getElementById('sfxVolumeVal').textContent = Math.round(sfxVol * 100) + '%';
+        }
+
+        window.addEventListener('input', (e) => {
+            if (e.target.id === 'bgmVolume') {
+                const vol = e.target.value / 100;
+                document.getElementById('bgmVolumeVal').textContent = e.target.value + '%';
+                if (window.soundManager) soundManager.setBgmVolume(vol);
+            } else if (e.target.id === 'sfxVolume') {
+                const vol = e.target.value / 100;
+                document.getElementById('sfxVolumeVal').textContent = e.target.value + '%';
+                if (window.soundManager) soundManager.setSfxVolume(vol);
+            }
+        });
+
+        function closeSettingsModal(e) {
+            if (e && e.target !== e.currentTarget) return;
+            document.getElementById('settingsModal').classList.remove('is-open');
+        }
+
+        function saveSettings() {
+            const showAffinity = document.getElementById('affinityToggle').checked;
+            window.CupidStorage.setItem('showAffinity', showAffinity);
+
+            const bgmVol = document.getElementById('bgmVolume').value / 100;
+            const sfxVol = document.getElementById('sfxVolume').value / 100;
+
+            if (window.soundManager) soundManager.setBgmVolume(bgmVol);
+            if (window.soundManager) soundManager.setSfxVolume(sfxVol);
+
+            closeSettingsModal();
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const settingsBtn = document.getElementById('landing-settings-btn');
+            if (settingsBtn) settingsBtn.addEventListener('click', openSettingsModal);
+        });
+
+        function openContactModal() { document.getElementById('contactModal').classList.add('is-open'); }
+        function closeContactModal() { document.getElementById('contactModal').classList.remove('is-open'); }
+
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); deferredPrompt = e; });
+        function installApp() {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then(() => { deferredPrompt = null; });
+            } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                alert('在 iOS 上，请点击“分享”按钮，然后选择“添加到主屏幕”。');
+            } else {
+                alert('应用已经安装，或者你的浏览器不支持安装。');
+            }
+        }
+
+        // Language combo box (toggleLangCombo is defined before .lang-switch)
+        document.addEventListener('click', function(e) {
+            const combo = document.getElementById('langCombo');
+            if (combo && !combo.contains(e.target)) {
+                combo.classList.remove('open');
+            }
+        });
+    </script>
+    <script>
+        // Naver Analytics (skip on local dev)
+        if (location.hostname !== '127.0.0.1' && location.hostname !== 'localhost') {
+            window.addEventListener('load', function () {
+                var wcs_script = document.createElement('script');
+                wcs_script.src = 'https://wcs.pstatic.net/wcslog.js';
+                wcs_script.async = true;
+                wcs_script.onload = function () {
+                    if (!window.wcs_add) window.wcs_add = {};
+                    window.wcs_add["wa"] = "229fd882959ab4";
+                    if (window.wcs) {
+                        wcs_do();
+                    }
+                };
+                document.head.appendChild(wcs_script);
+            });
+        }
+    </script>
+</body>
+
+</html>

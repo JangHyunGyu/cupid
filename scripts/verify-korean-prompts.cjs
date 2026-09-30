@@ -969,7 +969,7 @@ function verifyGroupPromptCacheContract(context) {
         })
     );
     const first = makePrompt();
-    for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+    for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
         for (const staffId of ['Teacher', 'Nurse']) {
             const buildStaffPrompt = (locationName, affinity) => context.window.buildCupidGroupSystemPrompt({
                 lang,

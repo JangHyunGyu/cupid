@@ -26,7 +26,7 @@ test('storage adapter falls back when localStorage is missing or blocked', () =>
 });
 
 test('app entry pages load the storage adapter before inline storage access', () => {
-    const pages = ['index', 'game', 'gallery'].flatMap(name => ['', '-en', '-es', '-ja', '-fr', '-de', '-pt'].map(suffix => `${name}${suffix}.html`));
+    const pages = ['index', 'game', 'gallery'].flatMap(name => ['', '-en', '-es', '-ja', '-fr', '-de', '-pt', '-zh'].map(suffix => `${name}${suffix}.html`));
     for (const page of pages) {
         const html = read(page);
         assert.match(html, /assets\/js\/storage-adapter\.js\?v=20260926-crossing-storage-v2/);

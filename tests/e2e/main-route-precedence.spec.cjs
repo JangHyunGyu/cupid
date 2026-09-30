@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 
 test.describe.configure({ mode: 'parallel' });
 
-for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
   for (const bothVisits of [false, true]) {
     test(`${lang}/${bothVisits ? 'both' : 'nurse'}: visits continue through check-in, main-route rivalry, and next-day follow-up`, async ({ page }) => {
         test.setTimeout(90_000);

@@ -167,8 +167,8 @@ class CharacterRenderer {
                     </div>
                     <div class="card-info">
                         <h3>${met ? char.name : '???'}</h3>
-                        <p>${met ? char.title : ({ ko: '아직 만나지 못함', en: 'Not yet met', es: 'Aún no la conoces', ja: 'まだ出会っていません', fr: 'Pas encore rencontrée', de: 'Noch nicht kennengelernt', pt: 'Você ainda não a conhece' }[this.ui.lang] || 'Not yet met')}</p>
-                        ${met ? `<span class="expression-count">${{ ko: '표정', en: 'Expressions', es: 'Expresiones', ja: '表情', fr: 'Expressions', de: 'Ausdrücke', pt: 'Expressões' }[this.ui.lang] || 'Expressions'} ${expressionCount}</span>` : ''}
+                        <p>${met ? char.title : ({ ko: '아직 만나지 못함', en: 'Not yet met', es: 'Aún no la conoces', ja: 'まだ出会っていません', fr: 'Pas encore rencontrée', de: 'Noch nicht kennengelernt', pt: 'Você ainda não a conhece', zh: '还没有遇见' }[this.ui.lang] || 'Not yet met')}</p>
+                        ${met ? `<span class="expression-count">${{ ko: '표정', en: 'Expressions', es: 'Expresiones', ja: '表情', fr: 'Expressions', de: 'Ausdrücke', pt: 'Expressões', zh: '表情' }[this.ui.lang] || 'Expressions'} ${expressionCount}</span>` : ''}
                     </div>
                 </div>
             `;
@@ -197,9 +197,9 @@ class CharacterRenderer {
         const met = this.ui.progress.isMet(charId);
 
         if (!met) {
-            const L = (ko, en, es, ja, fr, de, pt) => ({ ko, en, es, ja, fr, de, pt })[this.ui.lang] || en;
+            const L = (ko, en, es, ja, fr, de, pt, zh) => ({ ko, en, es, ja, fr, de, pt, zh })[this.ui.lang] || en;
             this.ui.showUnlockPopup({
-                title: L('캐릭터 미발견', 'Character Not Yet Met', 'Personaje aún no conocido', '未登場のキャラクター', 'Personnage encore inconnu', 'Figur noch unbekannt', 'Personagem ainda desconhecida'),
+                title: L('캐릭터 미발견', 'Character Not Yet Met', 'Personaje aún no conocido', '未登場のキャラクター', 'Personnage encore inconnu', 'Figur noch unbekannt', 'Personagem ainda desconhecida', '尚未遇见的角色'),
                 message: L(
                     '아직 이 캐릭터를 만나지 못했습니다.<br>게임을 진행하여 캐릭터를 만나보세요!',
                     'You haven\'t met this character yet.<br>Play the game to meet them!',
@@ -207,7 +207,8 @@ class CharacterRenderer {
                     'このキャラクターにはまだ出会っていません。<br>ゲームを進めて、まずは出会いましょう！',
                     'Vous ne l\'avez pas encore rencontrée.<br>Continuez à jouer pour faire sa connaissance !',
                     'Diese Figur ist dir noch unbekannt.<br>Spiele weiter, um sie kennenzulernen!',
-                    'Você ainda não conhece esta personagem.<br>Continue jogando para conhecê-la!'
+                    'Você ainda não conhece esta personagem.<br>Continue jogando para conhecê-la!',
+                    '你还没有遇见这个角色。<br>继续游戏，去和她相遇吧！'
                 ),
                 icon: '❓'
             });
@@ -247,7 +248,7 @@ class CharacterRenderer {
         if (affinity >= 80) {
             descContainer.innerHTML = char.description;
         } else {
-            const moreBtn = { ko: '소개 더 보기', en: 'Read More', es: 'Leer más', ja: '続きを読む', fr: 'En savoir plus', de: 'Mehr lesen', pt: 'Ler mais' }[this.ui.lang] || 'Read More';
+            const moreBtn = { ko: '소개 더 보기', en: 'Read More', es: 'Leer más', ja: '続きを読む', fr: 'En savoir plus', de: 'Mehr lesen', pt: 'Ler mais', zh: '查看更多介绍' }[this.ui.lang] || 'Read More';
             descContainer.innerHTML = `${char.shortDescription} <button class="desc-more-btn" data-char-id="${charId}">${moreBtn}</button>`;
         }
 
@@ -362,7 +363,8 @@ class CharacterRenderer {
             ja: { age: '年齢', birthday: '誕生日', height: '身長', weight: '体重', bust: 'スリーサイズ', hobby: '趣味' },
             fr: { age: 'Âge', birthday: 'Anniversaire', height: 'Taille', weight: 'Poids', bust: 'Mensurations', hobby: 'Loisirs' },
             de: { age: 'Alter', birthday: 'Geburtstag', height: 'Größe', weight: 'Gewicht', bust: 'Körpermaße', hobby: 'Hobbys' },
-            pt: { age: 'Idade', birthday: 'Aniversário', height: 'Altura', weight: 'Peso', bust: 'Medidas', hobby: 'Hobbies' }
+            pt: { age: 'Idade', birthday: 'Aniversário', height: 'Altura', weight: 'Peso', bust: 'Medidas', hobby: 'Hobbies' },
+            zh: { age: '年龄', birthday: '生日', height: '身高', weight: '体重', bust: '三围', hobby: '兴趣爱好' }
         }[this.ui.lang] || { age: 'Age', birthday: 'Birthday', height: 'Height', weight: 'Weight', bust: 'Measurements', hobby: 'Hobbies' };
 
         const lockText = '🔒';
@@ -411,18 +413,18 @@ class CharacterRenderer {
         if (!container) return;
 
         const unlocked = this.ui.progress.isFreeTalkUnlocked(charId);
-        const L = (ko, en, es, ja, fr, de, pt) => ({ ko, en, es, ja, fr, de, pt })[this.ui.lang] || en;
+        const L = (ko, en, es, ja, fr, de, pt, zh) => ({ ko, en, es, ja, fr, de, pt, zh })[this.ui.lang] || en;
 
         if (unlocked) {
             container.innerHTML = `
                 <button class="freetalk-btn" data-char-id="${charId}">
-                    💕 ${L('연인모드 비밀대화', 'Secret Love Chat', 'Chat secreto de pareja', '恋人モードの秘密トーク', 'Discussion secrète en couple', 'Geheimer Liebes-Chat', 'Conversa secreta de casal')}
+                    💕 ${L('연인모드 비밀대화', 'Secret Love Chat', 'Chat secreto de pareja', '恋人モードの秘密トーク', 'Discussion secrète en couple', 'Geheimer Liebes-Chat', 'Conversa secreta de casal', '恋人模式悄悄话')}
                 </button>
             `;
         } else {
             container.innerHTML = `
                 <button class="freetalk-btn locked" data-char-id="${charId}" data-char-name="${charName}">
-                    🔒 ${L('연인모드 비밀대화', 'Secret Love Chat', 'Chat secreto de pareja', '恋人モードの秘密トーク', 'Discussion secrète en couple', 'Geheimer Liebes-Chat', 'Conversa secreta de casal')}
+                    🔒 ${L('연인모드 비밀대화', 'Secret Love Chat', 'Chat secreto de pareja', '恋人モードの秘密トーク', 'Discussion secrète en couple', 'Geheimer Liebes-Chat', 'Conversa secreta de casal', '恋人模式悄悄话')}
                 </button>
             `;
         }
@@ -478,7 +480,7 @@ class CharacterRenderer {
     }
 
     _showFreeTalkLockPopup(charId, charName) {
-        const L = (ko, en, es, ja, fr, de, pt) => ({ ko, en, es, ja, fr, de, pt })[this.ui.lang] || en;
+        const L = (ko, en, es, ja, fr, de, pt, zh) => ({ ko, en, es, ja, fr, de, pt, zh })[this.ui.lang] || en;
 
         const perfectEnding = this.ui.progress.data.characters?.[charId]?.perfectEndingCleared || false;
         const currentAffinity = this.ui.progress.getAffinity(charId);
@@ -486,14 +488,15 @@ class CharacterRenderer {
 
         if (charId === 'haeun') {
             this.ui.showUnlockPopup({
-                title: L('대화 미해금', 'Chat Locked', 'Chat bloqueado', 'トーク未解放', 'Discussion verrouillée', 'Chat gesperrt', 'Chat bloqueado'),
+                title: L('대화 미해금', 'Chat Locked', 'Chat bloqueado', 'トーク未解放', 'Discussion verrouillée', 'Chat gesperrt', 'Chat bloqueado', '对话未解锁'),
                 message: L('하은을 선택하고 호감도 100으로 하은 엔딩을 보면 대화가 열립니다.',
                     'Choose Haeun and reach her ending with 100 affinity to unlock this chat.',
                     'Elige a Haeun y alcanza su final con 100 de afinidad para desbloquear este chat.',
                     'ハウンを選び、好感度100でエンディングを迎えると会話が解放されます。',
                     'Choisissez Haeun et atteignez sa fin avec 100 d’affinité pour débloquer cette discussion.',
                     'Wähle Haeun und erreiche ihr Ende mit 100 Zuneigung, um diesen Chat freizuschalten.',
-                    'Escolha Haeun e alcance o final dela com 100 de afinidade para liberar esta conversa.'),
+                    'Escolha Haeun e alcance o final dela com 100 de afinidade para liberar esta conversa.',
+                    '选择夏恩，并以好感度100达成夏恩的结局，即可开启这段对话。'),
                 icon: '🔒'
             });
             return;
@@ -506,7 +509,7 @@ class CharacterRenderer {
         const talkStatus = freeTalkCount >= 30 ? '✅' : '❌';
 
         this.ui.showUnlockPopup({
-            title: L('대화 미해금', 'Chat Locked', 'Chat bloqueado', '秘密トークは未解放です', 'Discussion verrouillée', 'Chat gesperrt', 'Chat bloqueado'),
+            title: L('대화 미해금', 'Chat Locked', 'Chat bloqueado', '秘密トークは未解放です', 'Discussion verrouillée', 'Chat gesperrt', 'Chat bloqueado', '对话未解锁'),
             message: L(
                 `${charName}의 비밀대화를 열려면<br>세 가지 조건을 모두 달성해야 합니다!<br><br><span class="condition-line">💘 PERFECT 엔딩 클리어 ${endingStatus}</span><span class="condition-line">💕 최대 호감도: ${currentAffinity}/${affinityMax} ${affinityStatus}</span><span class="condition-line">💬 프리토킹: ${freeTalkCount}/30회 ${talkStatus}</span>`,
                 `To unlock ${charName}'s secret chat,<br>complete all three requirements.<br><br><span class="condition-line">💘 Complete a PERFECT ending ${endingStatus}</span><span class="condition-line">💕 Highest Affinity: ${currentAffinity}/${affinityMax} ${affinityStatus}</span><span class="condition-line">💬 Free-talk sessions: ${freeTalkCount}/30 ${talkStatus}</span>`,
@@ -514,7 +517,8 @@ class CharacterRenderer {
                 `${charName}の秘密トークを解放するには、<br>次の3つの条件をすべて達成してください。<br><br><span class="condition-line">💘 パーフェクトエンドをクリア ${endingStatus}</span><span class="condition-line">💕 最大好感度：${currentAffinity}/${affinityMax} ${affinityStatus}</span><span class="condition-line">💬 フリートーク：${freeTalkCount}/30回 ${talkStatus}</span>`,
                 `Pour débloquer la discussion secrète avec ${charName},<br>remplissez les trois conditions.<br><br><span class="condition-line">💘 Obtenir la fin PERFECT ${endingStatus}</span><span class="condition-line">💕 Affinité maximale : ${currentAffinity}/${affinityMax} ${affinityStatus}</span><span class="condition-line">💬 Discussions libres : ${freeTalkCount}/30 ${talkStatus}</span>`,
                 `Um den geheimen Chat mit ${charName} freizuschalten,<br>musst du alle drei Bedingungen erfüllen.<br><br><span class="condition-line">💘 Ein PERFECT-Ende abschließen ${endingStatus}</span><span class="condition-line">💕 Höchste Zuneigung: ${currentAffinity}/${affinityMax} ${affinityStatus}</span><span class="condition-line">💬 Freie Gespräche: ${freeTalkCount}/30 ${talkStatus}</span>`,
-                `Para desbloquear a conversa secreta com ${charName},<br>você precisa cumprir as três condições.<br><br><span class="condition-line">💘 Concluir um final PERFECT ${endingStatus}</span><span class="condition-line">💕 Afinidade máxima: ${currentAffinity}/${affinityMax} ${affinityStatus}</span><span class="condition-line">💬 Conversas livres: ${freeTalkCount}/30 ${talkStatus}</span>`
+                `Para desbloquear a conversa secreta com ${charName},<br>você precisa cumprir as três condições.<br><br><span class="condition-line">💘 Concluir um final PERFECT ${endingStatus}</span><span class="condition-line">💕 Afinidade máxima: ${currentAffinity}/${affinityMax} ${affinityStatus}</span><span class="condition-line">💬 Conversas livres: ${freeTalkCount}/30 ${talkStatus}</span>`,
+                `要开启${charName}的悄悄话，<br>需要同时满足三个条件！<br><br><span class="condition-line">💘 通关PERFECT结局 ${endingStatus}</span><span class="condition-line">💕 最高好感度：${currentAffinity}/${affinityMax} ${affinityStatus}</span><span class="condition-line">💬 自由对话：${freeTalkCount}/30次 ${talkStatus}</span>`
             ),
             icon: '🔒'
         });

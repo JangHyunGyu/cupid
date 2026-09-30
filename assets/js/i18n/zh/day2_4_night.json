@@ -1,0 +1,385 @@
+{
+    "night2_start": {
+        "name": "{name}",
+        "text": "*回到家，我洗完澡躺到床上——通讯软件的通知开始接连不断地涌进来。三个人，同时。*"
+    },
+    "night2_msg_1": {},
+    "night2_msg_dain_specific": {
+        "name": "多因",
+        "text": "喂，今天的炒年糕真好吃！"
+    },
+    "night2_msg_dain_specific_2": {
+        "name": "多因",
+        "text": "明天再战！换个项目！"
+    },
+    "night2_msg_seo_general": {
+        "name": "书妍",
+        "text": "明天午休我会把天台留着。来吧"
+    },
+    "night2_msg_seo_specific": {
+        "name": "书妍",
+        "text": "今天谢谢你。多亏了你，早早就做完了"
+    },
+    "night2_msg_seo_specific_2": {
+        "name": "书妍",
+        "text": "下次我可能还会抓你来帮忙。做好准备哦。"
+    },
+    "night2_msg_yuna_specific": {
+        "name": "由娜",
+        "text": "我今天为你弹的那首曲子，你觉得怎么样？"
+    },
+    "night2_msg_yuna_specific_2": {
+        "name": "由娜",
+        "text": "下次，也让我看看你喜欢的东西。"
+    },
+    "night2_msg_dain_general": {
+        "name": "多因",
+        "text": "喂，明天小卖部见。"
+    },
+    "night2_msg_dain_general_merge": {
+        "name": "书妍",
+        "text": "明天午休去天台？应该会有很舒服的风。"
+    },
+    "night2_msg_seo_general_alt": {
+        "name": "书妍",
+        "text": "明天我会把天台留着。有空就来"
+    },
+    "night2_msg_yuna_general": {
+        "name": "由娜",
+        "text": "明天你来别馆吗？"
+    },
+    "night2_msg_generic": {
+        "name": "多因",
+        "text": "喂。明天学校见。"
+    },
+    "night2_msg_generic_2": {
+        "name": "书妍",
+        "text": "明天午休我会把天台留着"
+    },
+    "night2_msg_generic_3": {},
+    "night2_msg_7": {
+        "name": "{name}",
+        "text": "*三个对话窗口一个接一个地打开。还没来得及写回复，电量图标就掉了一格。*"
+    },
+    "night2_choice": {
+        "name": "{name}",
+        "text": "*我该先回谁？*",
+        "choices": [
+            "先回多因",
+            "先回书妍",
+            "先回由娜"
+        ]
+    },
+    "night2_reply_dain_1": {},
+    "night2_reply_dain_2": {
+        "name": "多因",
+        "text": "你吃不了辣？"
+    },
+    "night2_reply_dain_3": {
+        "name": "多因",
+        "text": "明天我们吃不辣的！"
+    },
+    "night2_reply_dain_4": {
+        "name": "多因",
+        "text": "不对等等，不辣的炒年糕不算哈哈"
+    },
+    "night2_reply_dain_5": {
+        "name": "{name}",
+        "text": "*又是连发三条消息。*"
+    },
+    "night2_reply_dain_react_high": {
+        "name": "多因",
+        "text": "说真的，你到底是什么人啊？明天你必须来体育馆！"
+    },
+    "night2_reply_dain_react_default": {
+        "name": "多因",
+        "text": "哈哈好吧，晚安！"
+    },
+    "night2_reply_seo_1": {
+        "name": "{name}",
+        "text": "你叫我，我就到"
+    },
+    "night2_reply_seo_2": {
+        "name": "书妍",
+        "text": "你还挺会轻易许诺的。"
+    },
+    "night2_reply_seo_3": {
+        "name": "{name}",
+        "text": "这种诺言很容易守。"
+    },
+    "night2_reply_seo_4": {
+        "name": "书妍",
+        "text": "午休我会把天台留着。别迟到。"
+    },
+    "night2_reply_seo_5": {
+        "name": "{name}",
+        "text": "*书妍的对话到这里就结束了。*"
+    },
+    "night2_reply_seo_react_high": {
+        "name": "书妍",
+        "text": "你挺有意思的。明天午休要不要在天台见？"
+    },
+    "night2_reply_seo_react_default": {
+        "name": "书妍",
+        "text": "嗯。知道了。明天见。"
+    },
+    "night2_reply_yuna_1": {},
+    "night2_reply_yuna_2": {
+        "name": "由娜",
+        "text": "好。我想听听你的想法。"
+    },
+    "night2_reply_yuna_3": {
+        "name": "{name}",
+        "text": "*回复框空了好一阵。然后冒出一个新的消息气泡。*"
+    },
+    "night2_reply_yuna_4": {},
+    "night2_reply_yuna_5": {
+        "name": "{name}",
+        "text": "*我打开由娜的歌单。播放键在第三首歌旁边闪烁。*"
+    },
+    "night2_reply_yuna_6": {
+        "name": "由娜",
+        "text": "从头听到尾。"
+    },
+    "night2_reply_yuna_6_b": {
+        "name": "{name}",
+        "text": "*我戴上耳机，按下播放。钢琴声后面进来一阵低沉的鼓点。*"
+    },
+    "night2_reply_yuna_6_c": {
+        "name": "{name}",
+        "text": "*歌曲结束，进度条停在了最后一小段上。*"
+    },
+    "night2_reply_yuna_7": {
+        "name": "{name}",
+        "text": "*歌单标题的下面，有由娜留的一条简短便签：“第三首是最不安静的一首。”*"
+    },
+    "night2_reply_yuna_react_high": {
+        "name": "由娜",
+        "text": "如果你全听完了，明天告诉我你的感想。要来别馆吗？"
+    },
+    "night2_reply_yuna_react_default": {
+        "name": "由娜",
+        "text": "嗯。晚安。"
+    },
+    "night2_dain_freetalk": {
+        "name": "多因",
+        "text": "等等，你真睡之前。今天最好玩的是哪一部分？",
+        "context": "[媒介：手机消息] 转学后的第二个夜晚，多因和学生聊起了今天的事。只有在已保存的事件确认过的情况下，才能回忆共同去过的地方或一起做过的事。接着刚刚交换的消息继续聊；两人还没有在交往。",
+        "personality": "多因是个坦率、反应很快的排球选手。她的活力在文字里也一样能感受到，但她不会逼对方回复。有兴趣的时候，她会通过调侃和直接的提问自然地表现出来。"
+    },
+    "night2_seo_freetalk": {
+        "name": "书妍",
+        "text": "哦，等等。你还没睡吧？",
+        "context": "现在是第二天的夜晚，书妍继续聊了一会儿通讯软件。今天学校里发生的事和已经交换过的消息，都是既定事实。两人没有在交往，仍在互相了解。这是手机聊天，所以不要在同一空间里制造身体接触或动作。",
+        "personality": "书妍沉稳，作为学生会长有清晰的标准。她不会夸大自己的兴趣；好奇心通过干巴巴的玩笑和坦率的提问表现出来。她不会操控对方的话，也不会表现得好像两人的关系已经定了。"
+    },
+    "night2_yuna_freetalk": {
+        "name": "由娜",
+        "text": "等等。你还没睡的话，要不要再聊一会儿？",
+        "context": "[媒介：手机消息] 转学后的第二个夜晚，学生继续与由娜安静地聊天。只有在已保存的事件和刚交换的消息确认过的情况下，才能回忆借书、去别馆和一起听的音乐。两人还没有在交往，且身处不同的地方。",
+        "personality": "由娜思虑周到，善于观察。她发送之前会斟酌措辞，随着越来越自在，会主动说出更多自己的喜好和问题。她不把沉默当作拒绝，并尊重对方的节奏。"
+    },
+    "night2_hidden_check": {
+        "name": "{name}",
+        "text": "*在通讯软件的提醒之间，我发现了另一条通知。*"
+    },
+    "night2_hidden_homeroom_1": {
+        "name": "{name}",
+        "text": "*学校咨询系统里弹出一条通知。“转学生适应情况的跟进面谈已完成。如需进一步支持，请利用班主任的答疑时间，或预约学校心理咨询中心的咨询。”*"
+    },
+    "night2_hidden_homeroom_2": {
+        "name": "{name}",
+        "text": "*可预约的咨询时间列在班主任的名字下面。*"
+    },
+    "night2_hidden_homeroom_3": {
+        "name": "{name}",
+        "text": "*我看了一眼预约按钮，然后划掉了通知。*"
+    },
+    "night2_hidden_nurse_1": {
+        "name": "{name}",
+        "text": "*健康App的一条通知。“保健室记录：转学生——肘部擦伤（轻微）。明天早上之前请保持创可贴干燥。如果边缘翘起或有血渗出，请到保健室更换。”*"
+    },
+    "night2_hidden_nurse_2": {
+        "name": "{name}",
+        "text": "*我弯了一下胳膊肘。创可贴的边角依然牢牢地贴着。*"
+    },
+    "night2_end_1": {
+        "name": "{name}",
+        "text": "*我发完回复，把手机放下。*"
+    },
+    "night2_flashback_1": {
+        "name": "{name}",
+        "text": "*我在回复前停了一下。在旧学校，我也曾这样告诉自己，我不想让任何人失望。*"
+    },
+    "night2_flashback_2": {
+        "name": "{name}",
+        "text": "*我往上翻了很久。三个月前的一张郊游照片。素晶在我旁边微笑。在那之后的每一张照片里，她的课桌都被推得更靠后一点。有涂鸦的下半部分，被裁掉了。*"
+    },
+    "night2_flashback_3": {
+        "name": "{name}",
+        "text": "*备忘录里满是从未发出去的句子。“老师，素晶的课桌上——”“今天又——”每一条都停在第一行。最后一次编辑是凌晨两点十七分。*"
+    },
+    "night2_flashback_5": {
+        "name": "{name}",
+        "text": "*第三十八条备忘是最后一条。在它下面，第三十九条连标题都没有。第二天，素晶的座位一直空到放学铃响。班主任只说她转学了。*"
+    },
+    "night2_flashback_7": {
+        "name": "{name}",
+        "text": "*我的手指悬在照片的删除键上，然后关掉了屏幕。*"
+    },
+    "night2_flashback_8": {
+        "name": "{name}",
+        "text": "*我再次拿起手机。在我刚回复过的聊天下面，还有两个名字并排等着，没有得到回答。*"
+    },
+    "night2_flashback_9": {
+        "name": "{name}",
+        "text": "*我又点开素晶的照片。我站在她身边，看着镜头。素晶在看着我。*"
+    },
+    "night2_flashback_10": {
+        "name": "{name}",
+        "text": "*我点开刚回复过的聊天，又关上。给另外两个人的话，我还是没找到该怎么发。*"
+    },
+    "night2_end_2": {
+        "name": "{name}",
+        "text": "*三个名字在我的锁屏上叠成一列。我把每条通知都读了一遍，熄了屏，然后又亮屏。*"
+    },
+    "night2_end_2_b": {},
+    "night2_end_3_b": {
+        "name": "{name}",
+        "text": "*屏幕暗下去之后，我的手仍然握着手机。*"
+    },
+    "night2_end_4_b": {
+        "name": "{name}",
+        "text": "*我打开冰箱。剩饭、鸡蛋、海苔。我拿出一个饭盒放在桌上。我还没有打开盖子。*"
+    },
+    "night2_end_4_c": {
+        "name": "{name}",
+        "text": "*我装进米饭、玉子烧、海苔和几根香肠，盖上盖子，把饭盒放进冰箱。*"
+    },
+    "forced_violation_day2_after_seoyeon": {
+        "name": "书妍",
+        "text": "*对话结束后，书妍沉默了好一会儿。等她再次开口时，声音已经冷了下来。*别以为你可以假装刚才的事没发生过。这段时间，别靠近我，也别联系我。",
+        "choices": [
+            "不找借口，先道歉，然后结束这段对话。",
+            "试着解释这是个误会。"
+        ]
+    },
+    "forced_violation_day2_seoyeon_apologize": {
+        "name": "书妍",
+        "text": "*书妍的神情并没有因为道歉而缓和。*我听见了。但这不能抹掉发生过的事。我说过了，这段时间别联系我。"
+    },
+    "forced_violation_day2_seoyeon_excuse": {
+        "name": "书妍",
+        "text": "*书妍打断了解释。*误会？从我说“不”的那一刻起，就不是误会了。别再说了。"
+    },
+    "forced_violation_day2_after_yuna": {
+        "name": "由娜",
+        "text": "*对话中断后，由娜短促地吸了一口气。紧绷的脸上只剩下戒备。*你明知道我不愿意，却还是无视了我。我现在连看到你都不想。别再联系我了。",
+        "choices": [
+            "不找借口，先道歉，然后结束这段对话。",
+            "试着解释这是个误会。"
+        ]
+    },
+    "forced_violation_day2_yuna_apologize": {
+        "name": "由娜",
+        "text": "*由娜停顿了很久才回答。*道歉不能让它消失。到此为止吧。"
+    },
+    "forced_violation_day2_yuna_excuse": {
+        "name": "由娜",
+        "text": "*由娜没等解释说完就打断了。*我说过不行。没什么好解释的。"
+    },
+    "forced_violation_day2_after_dain": {
+        "name": "多因",
+        "text": "*多因没有像平时那样笑着带过。沉默了很久，她才用生硬的声音开口。*这不是玩笑。我说了不行，你还是硬来。这件事我不会就这么算了。",
+        "choices": [
+            "不找借口，先道歉，然后结束这段对话。",
+            "试着解释这是个误会。"
+        ]
+    },
+    "forced_violation_day2_dain_apologize": {
+        "name": "多因",
+        "text": "*多因沉默了很久，终于简短地回了一句。*行。那今天就到此为止。什么时候再说话、要不要说话，由我来决定。"
+    },
+    "forced_violation_day2_dain_excuse": {
+        "name": "多因",
+        "text": "*多因的声音变得粗重。*不。别找借口。我说了不行，你还是做了。"
+    },
+    "forced_violation_day2_after_teacher": {
+        "name": "班主任",
+        "text": "*对话结束后，班主任把界线划得更清楚了，语气严厉。*你刚才的所作所为明显越线了。不许再靠近一步。我会按照正规程序处理这件事。",
+        "choices": [
+            "不找借口，先道歉，然后结束这段对话。",
+            "试着解释这是个误会。"
+        ]
+    },
+    "forced_violation_day2_teacher_apologize": {
+        "name": "班主任",
+        "text": "*班主任短促地吸了一口气，才接着说。*你的道歉我听到了。我仍然会按正规程序处理。什么都别再说了。"
+    },
+    "forced_violation_day2_teacher_excuse": {
+        "name": "班主任",
+        "text": "*班主任打断了解释。*现在不是你给自己辩解的时候。不要再说了，保持距离。"
+    },
+    "forced_violation_day2_after_nurse": {
+        "name": "保健老师",
+        "text": "*对话中断，保健老师声音里平日的玩笑意味全都消失了。*从现在起，请保持距离。我会把发生的事记录下来，并通知需要知道的人。",
+        "choices": [
+            "不找借口，先道歉，然后结束这段对话。",
+            "试着解释这是个误会。"
+        ]
+    },
+    "forced_violation_day2_nurse_apologize": {
+        "name": "保健老师",
+        "text": "*保健老师沉默了片刻，然后语气坚定地回答。*你的道歉我听到了。但我还是会记录此事，并通知相关人员。这次谈话到此为止。"
+    },
+    "forced_violation_day2_nurse_excuse": {
+        "name": "保健老师",
+        "text": "*保健老师的声音压得更低了。*你觉得把它说成误会，就能改变什么吗？事实是，我说了不，你却无视了我。"
+    },
+    "night2_reply_dain_1_established": {
+        "name": "{name}",
+        "text": "炒年糕好辣哈哈"
+    },
+    "night2_reply_dain_1_first": {
+        "name": "{name}",
+        "text": "明天要不要去吃炒年糕？我不太能吃辣哈哈"
+    },
+    "night2_reply_yuna_1_established": {
+        "name": "{name}",
+        "text": "看到一半了。挺好看的。"
+    },
+    "night2_reply_yuna_1_first": {
+        "name": "{name}",
+        "text": "明天我去别馆的时候，给我推荐一本书。"
+    },
+    "night2_reply_yuna_4_established": {
+        "name": "由娜",
+        "text": "刚才那个歌单。第三首你也听听。"
+    },
+    "night2_reply_yuna_4_first": {
+        "name": "由娜",
+        "text": "我发个歌单给你。从第三首开始听。"
+    },
+    "night2_msg_generic_3_established": {
+        "name": "由娜",
+        "text": "那本书你看完了吗？"
+    },
+    "night2_msg_generic_3_first": {
+        "name": "由娜",
+        "text": "你最近在读什么？"
+    },
+    "night2_reply_dain_react_neg": {
+        "name": "多因",
+        "text": "知道了。睡吧。*已读。没有别的。*"
+    },
+    "night2_reply_seo_react_neg": {
+        "name": "书妍",
+        "text": "明天见。*立刻显示已读。*"
+    },
+    "night2_reply_yuna_react_neg": {
+        "name": "由娜",
+        "text": "……晚安。*气泡到这里就停了。*"
+    },
+    "night2_reply_dain_1_visit": {},
+    "night2_reply_yuna_4_visit": {}
+}

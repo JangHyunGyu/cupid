@@ -9,7 +9,7 @@ const { readPlainMedia } = require('../scripts/lib/read-plain-media.cjs');
 const root = path.resolve(__dirname, '..');
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const characters = ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse'];
-const languages = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'];
+const languages = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'];
 function runtime(random = 0) {
     const context = { window: {}, console, setTimeout, clearTimeout, CHAR_NAME_MAP: {},
         Math: Object.assign(Object.create(Math), { random: () => random }),

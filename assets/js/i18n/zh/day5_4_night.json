@@ -1,0 +1,1999 @@
+{
+    "ending_start": {
+        "name": "系统",
+        "text": ""
+    },
+    "hidden_dual_route_1": {
+        "name": "{name}",
+        "text": "*活动结束后的收拾工作做完，我把文艺部的合评稿和急救卡放进包里。*"
+    },
+    "hidden_dual_route_choice": {
+        "name": "{name}",
+        "text": "*我先拿出两份记录中的一份。这些关系，没有一个需要今天就定下来。*",
+        "choices": [
+            "打开文艺部的合评稿",
+            "拿出急救卡"
+        ]
+    },
+    "hidden_perfect_homeroom_check": {},
+    "hidden_perfect_homeroom_1": {
+        "name": "{name}",
+        "text": "*毕业典礼那天，我的班主任把我的推荐信和阅读记录的副本递给了我。*"
+    },
+    "hidden_perfect_homeroom_1b": {
+        "name": "{name}",
+        "text": "*在空教室的门口，她整理着文艺部的合评稿。每份稿子上只标着学号。*"
+    },
+    "hidden_perfect_homeroom_2": {
+        "name": "班主任",
+        "text": "恭喜毕业。你的推荐信和阅读记录都在信封里。回家检查一下有没有缺东西。"
+    },
+    "hidden_perfect_homeroom_2b": {
+        "name": "{name}",
+        "text": "您的稿子写完了吗？"
+    },
+    "hidden_perfect_homeroom_2c": {
+        "name": "班主任",
+        "text": "合评帮我写完了它。我也投给了一家出版社。不管结果如何，都是我自己要面对的事。你要照顾好自己。"
+    },
+    "hidden_perfect_homeroom_3": {
+        "name": "{name}",
+        "text": "*那天教室的门关上之后，我们没有任何私下联系。四年后，{name}大学毕业，独自住在第一份工作附近。*"
+    },
+    "hidden_perfect_homeroom_3b": {
+        "name": "{name}",
+        "text": "*下班回家的路上，我在一家书店咖啡馆里，看到一张新书分享会海报上有一个熟悉的名字。抬起头来，她也看见了我。*"
+    },
+    "hidden_perfect_homeroom_3c": {
+        "name": "班主任",
+        "text": "真巧。*她放下活动材料。*如果你有时间，要不要坐一会儿？"
+    },
+    "hidden_perfect_homeroom_3e": {
+        "name": "班主任",
+        "text": "我还在同一所学校教书。而且我出版了一本书。——你最近在做什么工作？"
+    },
+    "hidden_perfect_homeroom_3f": {
+        "name": "班主任",
+        "text": "要不要再约在这里见面？今天有很多话都没来得及说。"
+    },
+    "hidden_perfect_homeroom_3g": {
+        "name": "{name}",
+        "text": "*我们在彼此的手机里存下了名字和号码——这些信息从未出现在旧学校的联系名单里。*"
+    },
+    "hidden_perfect_homeroom_4b": {
+        "name": "班主任",
+        "text": "*第二次见面时，她从书架上取下一本自己的书。*这次是正式出版的版本。你愿意读一读，告诉我你的想法吗？"
+    },
+    "hidden_perfect_homeroom_4c": {
+        "name": "{name}",
+        "text": "*我回到自己独居的家，把书读到了天亮——这一次，是以读者的节奏。*"
+    },
+    "hidden_perfect_homeroom_4d": {
+        "name": "班主任",
+        "text": "*下一次在咖啡馆见面时，她把咖啡搅了一下，放开了勺子。*你觉得怎么样？"
+    },
+    "hidden_perfect_homeroom_4e": {
+        "name": "{name}",
+        "text": "*第三次见面，下班之后，我以前的班主任已经拿着一小束花，等在可以俯瞰樱花的咖啡馆露台上。*"
+    },
+    "hidden_perfect_homeroom_4f": {
+        "name": "{name}",
+        "text": "*她把花束放在桌子正中，把丝带理顺。*"
+    },
+    "hidden_perfect_homeroom_4g": {
+        "name": "班主任",
+        "text": "谢谢你等我的书出版。这些花是为了纪念这件事。而且……它们是不是也可以表示，我想再见到你？"
+    },
+    "hidden_perfect_homeroom_ending_title": {
+        "name": "",
+        "text": "─── 班主任 完美结局 ───"
+    },
+    "hidden_perfect_homeroom_5": {
+        "name": "{name}",
+        "text": "*我们并肩站在咖啡馆门外。她捧着花束，没有走在前面，而是等着我的回答。*"
+    },
+    "hidden_perfect_homeroom_ep1": {
+        "name": "{name}",
+        "text": "*我们花了更多时间聊过去的四年，而不是学校的事。*"
+    },
+    "hidden_perfect_homeroom_ep2": {
+        "name": "{name}",
+        "text": "*我们轮流选择接下来的安排：周四归她，周六归{name}。*"
+    },
+    "hidden_perfect_homeroom_ep3": {
+        "name": "{name}",
+        "text": "*她的第二本书出版了。献词里没有写具体的名字，而是写着：“献给那些读到最后，并用自己的话作出回应的读者。”*"
+    },
+    "hidden_perfect_homeroom_ep4": {
+        "name": "{name}",
+        "text": "*我们共享的日历里，只有彼此的工作日，和下个周末的计划。我们在学校里用过的称呼，只留在四年前一张毕业照的说明文字里。*"
+    },
+    "hidden_true_homeroom_1": {
+        "name": "{name}",
+        "text": "*毕业四年后。这期间，两人没有任何私下联系。离开学校、大学毕业、学会自立之后，{name}在下班回家的路上，于一家独立书店，看到一张写着熟悉名字的新书分享会海报。*"
+    },
+    "hidden_true_homeroom_2": {
+        "name": "{name}",
+        "text": "*活动结束后，签售桌终于空了。作者穿着米色开衫，从整理书籍的手上抬起头来。*"
+    },
+    "hidden_true_homeroom_2_b": {
+        "name": "{name}",
+        "text": "*{name}的脖子上挂着工牌。她的手里，拿着一本印着她自己名字的书，而不是点名册。*"
+    },
+    "hidden_true_homeroom_3": {
+        "name": "班主任",
+        "text": "好久不见。现在该怎么称呼你？"
+    },
+    "hidden_true_homeroom_3_b": {
+        "name": "{name}",
+        "text": "叫我的名字吧。我已经不是学生了。"
+    },
+    "hidden_true_homeroom_3_c": {
+        "name": "班主任",
+        "text": "这个慢慢来。你今天是以读者的身份来的，对吧？"
+    },
+    "hidden_true_homeroom_4": {
+        "name": "班主任",
+        "text": "*她微笑着看向我的工牌。*工作还顺利吗？"
+    },
+    "hidden_true_homeroom_4_b": {
+        "name": "{name}",
+        "text": "*在提起学校之前，我们先聊了聊各自的工作，和最近读的书。*"
+    },
+    "hidden_true_homeroom_4_c": {
+        "name": "班主任",
+        "text": "*她从展示架上拿起一本书。书名和曾经放在她抽屉里的那份稿子一样。*"
+    },
+    "hidden_true_homeroom_4_d": {
+        "name": "班主任",
+        "text": "我最后还是写完了。当年文艺部给我的合评意见，我琢磨了很久。"
+    },
+    "hidden_true_homeroom_4_e": {
+        "name": "{name}",
+        "text": "你还记得我留下的那些标记吗？"
+    },
+    "hidden_true_homeroom_4_f": {
+        "name": "班主任",
+        "text": "我们说好了，我不会去猜是谁写的意见。不过我确实记得，有人在最后一页留下了特别多的问题。"
+    },
+    "hidden_true_homeroom_4_g": {
+        "name": "班主任",
+        "text": "*她把书的一角摆正了一下。她不再像以前那样折杯套了。*"
+    },
+    "hidden_true_homeroom_4_h": {
+        "name": "班主任",
+        "text": "活动结束了——你有时间吗？我想喝杯咖啡。如果你觉得不自在，我们就在这里道别也行。"
+    },
+    "hidden_true_homeroom_5": {
+        "name": "班主任",
+        "text": "我想认识现在的你，而不是以前那个学生。"
+    },
+    "hidden_true_homeroom_5_b": {
+        "name": "{name}",
+        "text": "*她没有走向收银台，而是等着{name}的回答。*"
+    },
+    "hidden_true_homeroom_5_c": {
+        "name": "{name}",
+        "text": "我也想认识现在的你。我们可以慢慢决定，该怎么称呼彼此。"
+    },
+    "hidden_true_homeroom_6": {
+        "name": "班主任",
+        "text": "好。那就先喝咖啡。剩下的，我们边喝边聊。"
+    },
+    "hidden_true_homeroom_6_b": {
+        "name": "{name}",
+        "text": "*走去咖啡馆的路上，我们问起彼此的通勤和现在的工作。*"
+    },
+    "hidden_true_homeroom_7": {
+        "name": "{name}",
+        "text": "我愿意。而且我也想再定一个约。"
+    },
+    "hidden_true_homeroom_7_b": {
+        "name": "班主任",
+        "text": "*她微笑着拿出手机，先把联系人界面展示出来，然后等着。*"
+    },
+    "hidden_true_homeroom_7_c": {
+        "name": "班主任",
+        "text": "从今天起，我们不必勉强自己抹去旧称呼。不过，先重新认识彼此的名字吧。"
+    },
+    "hidden_true_homeroom_7_d": {
+        "name": "{name}",
+        "text": "*我叫了一次她的名字。她慢慢地叫出{name}的名字作为回应。*"
+    },
+    "hidden_true_homeroom_8": {
+        "name": "班主任",
+        "text": "*隔着蛋糕盘，她摊开手掌，在触碰之前停住，等着{name}的回答。*下周你愿意再见面吗？"
+    },
+    "hidden_true_homeroom_ending_title": {
+        "name": "",
+        "text": "─── 班主任 真爱结局 ───"
+    },
+    "hidden_good_homeroom_1": {
+        "name": "班主任",
+        "text": "*毕业典礼之后，她在空教室里整理推荐信副本和文艺部的合评资料时，叫住了{name}。*这些是你的记录。检查一下有没有缺东西。"
+    },
+    "hidden_good_homeroom_2": {
+        "name": "{name}",
+        "text": "*我接过信封，我们一起走到走廊。最后一批学生走下楼梯，我的班主任把剩下的稿子和文件抱在怀里。*"
+    },
+    "hidden_good_homeroom_3": {
+        "name": "班主任",
+        "text": "继续写下去吧。我会把我的稿子写完。我们先各自专心做自己的事。"
+    },
+    "hidden_good_homeroom_4": {
+        "name": "{name}",
+        "text": "*道别之后，{name}走到走廊尽头，回过头去。班主任站在窗边，目送毕业生们。他们向她微微鞠了一躬，然后离开了学校。*"
+    },
+    "hidden_good_homeroom_ending_title": {
+        "name": "",
+        "text": "─── 班主任 好结局 ───"
+    },
+    "hidden_bitter_homeroom_1": {
+        "name": "班主任",
+        "text": "*毕业典礼之后，她在空教室里读完了{name}交给她的信，然后小心地把它放在桌上。*我不能收下这个。"
+    },
+    "hidden_bitter_homeroom_2": {
+        "name": "{name}",
+        "text": "*信被退了回来，折角已被抚平。*"
+    },
+    "hidden_bitter_homeroom_3": {
+        "name": "班主任",
+        "text": "我相信你的文字，也确实把你当作我的学生来关心。但我没办法用你想要的方式回应你。"
+    },
+    "hidden_bitter_homeroom_4": {
+        "name": "{name}",
+        "text": "*她把信放在推荐信信封上面，一起还了回来。教室的门朝着走廊敞开。*"
+    },
+    "hidden_bitter_homeroom_5": {
+        "name": "班主任",
+        "text": "恭喜毕业。我确实好奇你接下来会写什么，但我不能保证会陪在你身边。"
+    },
+    "hidden_bitter_homeroom_6": {
+        "name": "{name}",
+        "text": "*我收好信和推荐信，离开了教室。我没有回头，身后也没有人叫我的名字。*"
+    },
+    "hidden_bitter_homeroom_ending_title": {
+        "name": "",
+        "text": "─── 班主任 苦涩结局 ───"
+    },
+    "hidden_perfect_nurse_check": {},
+    "hidden_perfect_nurse_1": {
+        "name": "{name}",
+        "text": "*毕业五年后。我在外地工作，已经一个人生活了两年。在当地一场周末健康活动上，我看到急救讲师胸牌上有一个熟悉的名字：李朱媛。*"
+    },
+    "hidden_perfect_nurse_2": {
+        "name": "保健老师",
+        "text": "*活动结束后，她把胸牌从外套上摘下来。*{name}？我从没想过会在这里见到你。"
+    },
+    "hidden_perfect_nurse_3": {
+        "name": "{name}",
+        "text": "*我们在会场对面的咖啡馆里面对面坐下。练习用的创可贴还装在盒子里。*"
+    },
+    "hidden_perfect_nurse_3b": {
+        "name": "保健老师",
+        "text": "我以前负责你的咨询。你确定现在这样和我坐下来，你觉得自在吗？"
+    },
+    "hidden_perfect_nurse_4": {
+        "name": "保健老师",
+        "text": "如果你觉得不自在，我们打个招呼就行了。我只是好奇你过得怎么样。"
+    },
+    "hidden_perfect_nurse_4b": {
+        "name": "{name}",
+        "text": "我很自在。而且今天，我更想听听您的事，而不是学校的事。"
+    },
+    "hidden_perfect_nurse_5": {
+        "name": "保健老师",
+        "text": "那我们下次见面，既不是治疗，也不是咨询，好吗？"
+    },
+    "hidden_perfect_nurse_5b": {
+        "name": "{name}",
+        "text": "*我们对比日历，直到找到一个我们两个都有空的周六。*"
+    },
+    "hidden_perfect_nurse_ending_title": {
+        "name": "",
+        "text": "─── 保健老师 完美结局 ───"
+    },
+    "hidden_perfect_nurse_ep1": {
+        "name": "{name}",
+        "text": "*几个月后。一起度过了许多个周末之后，我们第一次在同一个早晨醒来。朱媛在被子下面伸出手，手指松松地张开，等着。*"
+    },
+    "hidden_perfect_nurse_ep2": {
+        "name": "{name}",
+        "text": "*朱媛家的那个早晨之后，我们共享日历里的周末一个接一个被填满了。这期间，朱媛调到了大学医院的教育组，新来的护士们也开始叫她李老师。李朱媛老师。*"
+    },
+    "hidden_perfect_nurse_ep3": {
+        "name": "{name}",
+        "text": "*迷迭香放在我们一起选的那个家的窗台上。我们轮流给它浇水。*"
+    },
+    "hidden_perfect_nurse_ep4": {
+        "name": "{name}",
+        "text": "*淡绿色笔记本的最后一页上，留着一行字：“花了很长时间，但现在，我要出于自己的选择重新开始。”*"
+    },
+    "hidden_true_nurse_1": {
+        "name": "{name}",
+        "text": "*毕业四年后。搬出去独自生活一年后的某个春天傍晚，我在下班回家的路上，在一个社区健康宣传摊位听到了一个熟悉的声音。*"
+    },
+    "hidden_true_nurse_2": {
+        "name": "{name}",
+        "text": "*活动结束后，我们又在附近的咖啡馆里面对面坐下。摊位上的创可贴和传单被收进了她的包里。*"
+    },
+    "hidden_true_nurse_2_b": {
+        "name": "{name}",
+        "text": "*桌上两部手机同时震动。一部显示加班审批；另一部是健康活动的收尾报告。*"
+    },
+    "hidden_true_nurse_2_c": {
+        "name": "保健老师",
+        "text": "好久不见。你过得好吗？"
+    },
+    "hidden_true_nurse_2_d": {
+        "name": "{name}",
+        "text": "嗯。我现在也有工作了，自己一个人住。"
+    },
+    "hidden_true_nurse_3": {
+        "name": "保健老师",
+        "text": "连该怎么称呼都很复杂。你还叫我“老师”，会觉得奇怪吗？"
+    },
+    "hidden_true_nurse_3_b": {
+        "name": "{name}",
+        "text": "我们可以慢慢改。不着急。"
+    },
+    "hidden_true_nurse_4": {
+        "name": "保健老师",
+        "text": "我记得你就算来了保健室，也总说自己没事。"
+    },
+    "hidden_true_nurse_5": {
+        "name": "保健老师",
+        "text": "那时候，我们是师生，所以只能到那一步为止。"
+    },
+    "hidden_true_nurse_5_b": {
+        "name": "{name}",
+        "text": "*朱媛放开咖啡杯，等着{name}的回答。*"
+    },
+    "hidden_true_nurse_5_c": {
+        "name": "保健老师",
+        "text": "现在我们偶然重逢了。"
+    },
+    "hidden_true_nurse_5_d": {
+        "name": "保健老师",
+        "text": "所以我想问：你愿意再见面吗？"
+    },
+    "hidden_true_nurse_5_e": {
+        "name": "{name}",
+        "text": "不是为了治疗或咨询？"
+    },
+    "hidden_true_nurse_5_f": {
+        "name": "保健老师",
+        "text": "*她敲了敲咖啡杯的把手。*对。下次，我们不看时间地聊聊吧。"
+    },
+    "hidden_true_nurse_6": {
+        "name": "保健老师",
+        "text": "如果这让你不自在，我们就到此为止。如果不会，我想下周再见到你。"
+    },
+    "hidden_true_nurse_7": {
+        "name": "{name}",
+        "text": "*我们离开咖啡馆，并肩走去地铁站。谁也没有改变方向去跟着对方。*"
+    },
+    "hidden_true_nurse_7_b": {
+        "name": "保健老师",
+        "text": "下周的事，你可以回家之后再回答。"
+    },
+    "hidden_true_nurse_7_c": {
+        "name": "{name}",
+        "text": "这不是拒绝。我也想再见到你。"
+    },
+    "hidden_true_nurse_7_d": {
+        "name": "保健老师",
+        "text": "*她拿出手机，打开日历。*那就下个周末。我们找一天两个人都方便的。"
+    },
+    "hidden_true_nurse_8": {
+        "name": "保健老师",
+        "text": "下次见面，别再需要健康活动当借口了。"
+    },
+    "hidden_true_nurse_ending_title": {
+        "name": "",
+        "text": "─── 保健老师 真爱结局 ───"
+    },
+    "hidden_true_nurse_8_b": {
+        "name": "{name}",
+        "text": "*三个月来，我们每个周末都换一家咖啡馆见面。那天，朱媛第一次邀请我去她家。*"
+    },
+    "hidden_true_nurse_8_c": {
+        "name": "{name}",
+        "text": "*我们选了一部电影，并肩坐在沙发上。外面天黑了，桌上的两杯咖啡慢慢变凉。*"
+    },
+    "hidden_true_nurse_8_d": {
+        "name": "{name}",
+        "text": "*我们没有花很长时间谈学校。现在，工作和下个周末有更多可以说的。*"
+    },
+    "hidden_true_nurse_8_e": {
+        "name": "保健老师",
+        "text": "那时候，我确实想过离开学校。"
+    },
+    "hidden_true_nurse_8_f": {
+        "name": "{name}",
+        "text": "但留下来是您自己的选择，不是吗？"
+    },
+    "hidden_true_nurse_8_g": {
+        "name": "保健老师",
+        "text": "对。我留下，是因为我还想继续做这份工作。而再次见到你，也是我的选择。"
+    },
+    "hidden_true_nurse_8_h": {
+        "name": "{name}",
+        "text": "我下周也想再见到你。*电影结束之前，朱媛靠在{name}的肩上睡着了。*"
+    },
+    "hidden_good_nurse_1": {
+        "name": "保健老师",
+        "text": "*毕业典礼之后，保健室的门最后一次被推开。朱媛正在窗边喝咖啡。她看到{name}，放下了杯子。*你怎么来了？你今天应该哪里都没有毛病才对。"
+    },
+    "hidden_good_nurse_2": {
+        "name": "保健老师",
+        "text": "如果你是离开之前来道别的，就坐吧。从今天起，你在这里的治疗就结束了。"
+    },
+    "hidden_good_nurse_2_b": {
+        "name": "{name}",
+        "text": "谢谢您的一切。"
+    },
+    "hidden_good_nurse_2_c": {
+        "name": "保健老师",
+        "text": "*她想了一下，点了点头。*好。要是受了伤，别硬撑——先去医院。我没办法再照看你了。"
+    },
+    "hidden_good_nurse_2_d": {
+        "name": "保健老师",
+        "text": "*她从桌子抽屉里拿出那本淡绿色笔记本，翻到最后一页。*"
+    },
+    "hidden_good_nurse_3": {
+        "name": "{name}",
+        "text": "*朱媛写下日期和“已毕业，无异常”，合上笔记本。这一次，她既没有给我创可贴，也没有给我她的联系方式。*"
+    },
+    "hidden_good_nurse_3_b": {
+        "name": "保健老师",
+        "text": "保重。下次碰到的时候，以毕业生的身份打招呼，而不是病人。"
+    },
+    "hidden_good_nurse_4": {
+        "name": "{name}",
+        "text": "*离开保健室之前，我回过头。朱媛坐在窗边，手里端着咖啡杯。我们互相微微鞠了一躬。*"
+    },
+    "hidden_good_nurse_ending_title": {
+        "name": "",
+        "text": "─── 保健老师 好结局 ───"
+    },
+    "hidden_bitter_nurse_1": {
+        "name": "{name}",
+        "text": "*毕业典礼之后，我最后一次来到保健室，交出那张淡绿色的记录卡，下面压着一张写有我联系方式的便条。*"
+    },
+    "hidden_bitter_nurse_2": {
+        "name": "保健老师",
+        "text": "*朱媛默默地读了便条。然后她沿着折痕把它折好，推了回来。*我不应该收下这个。"
+    },
+    "hidden_bitter_nurse_3": {
+        "name": "{name}",
+        "text": "我经常来这里，是不是给您添麻烦了？"
+    },
+    "hidden_bitter_nurse_4": {
+        "name": "保健老师",
+        "text": "你从来都不是麻烦。所以我不能让你感到困惑。我照顾你，是因为你是学生，而且受了伤。"
+    },
+    "hidden_bitter_nurse_5": {
+        "name": "{name}",
+        "text": "*朱媛在绿色记录的最后一行写下“毕业，咨询结束”。她把带有联系方式的便条放在上面。*"
+    },
+    "hidden_bitter_nurse_6": {
+        "name": "保健老师",
+        "text": "最好的结局，就是你不再需要来这里了。保重。"
+    },
+    "hidden_bitter_nurse_7": {
+        "name": "{name}",
+        "text": "*我收好便条和卡片，关上保健室的门。从里面只传来咖啡杯落回碟子上的声音。*"
+    },
+    "hidden_bitter_nurse_ending_title": {
+        "name": "",
+        "text": "─── 保健老师 苦涩结局 ───"
+    },
+    "ending_affinity_check": {
+        "name": "系统",
+        "text": ""
+    },
+    "ending_aff_check_seo": {
+        "name": "系统",
+        "text": ""
+    },
+    "perfect_seo_1": {
+        "name": "{name}",
+        "text": "*天台上，栏杆下放着好几个花盆。泥土上留着潮湿的痕迹。*"
+    },
+    "perfect_seo_1_b": {
+        "name": "书妍",
+        "text": "*书妍放下浇水壶。水珠挂在壶柄上。*"
+    },
+    "perfect_seo_2": {
+        "name": "{name}",
+        "text": "*她的眼下有些晕开的痕迹。书妍把手帕折好，放进口袋。*"
+    },
+    "perfect_seo_3": {
+        "name": "书妍",
+        "text": "今天就只收拾到这里。"
+    },
+    "perfect_seo_4": {
+        "name": "书妍",
+        "text": "剩下的，明天再看。"
+    },
+    "perfect_seo_5": {
+        "name": "书妍",
+        "text": "*书妍先朝楼梯走去，然后在门口停住。*"
+    },
+    "perfect_seo_5_b": {
+        "name": "{name}",
+        "text": "*门开着。*"
+    },
+    "perfect_epilogue_1_seo": {
+        "name": "{name}",
+        "text": "*即使毕业之后，天台的门也时不时开着。*"
+    },
+    "perfect_epilogue_bridge_seo": {
+        "name": "系统",
+        "text": "*尾声——一年后*"
+    },
+    "perfect_epilogue_2_seo": {
+        "name": "{name}",
+        "text": "*大学入学典礼那天，书妍发来一张照片：两盆新的植物，和一个空位。*"
+    },
+    "perfect_epilogue_3_seo": {
+        "name": "书妍",
+        "text": "你来选一盆。"
+    },
+    "perfect_epilogue_4_seo": {
+        "name": "系统",
+        "text": "─── 完美结局（书妍） ───"
+    },
+    "bitter_seo_1": {
+        "name": "{name}",
+        "text": "*大约一个月后，她发来一条简短的消息，约我在学校前面的咖啡馆见面。*"
+    },
+    "bitter_seo_2": {
+        "name": "书妍",
+        "text": "我们太小心了。"
+    },
+    "bitter_seo_2_b": {
+        "name": "{name}",
+        "text": "*书妍把杯垫的边缘摆正。她的咖啡还剩下一半多。*"
+    },
+    "bitter_seo_3": {
+        "name": "{name}",
+        "text": "*我离开咖啡馆。下雨了。我们只有一把伞，可两人的公交站点在相反的方向。*"
+    },
+    "true_seo_1": {
+        "name": "{name}",
+        "text": "*书妍的房间。书桌上放着三盆植物和一个文件夹。一张全家福靠在书架旁。*"
+    },
+    "true_seo_2": {
+        "name": "{name}",
+        "text": "*一张折起来的纸，塞在其中一个花盆托盘的下面。*"
+    },
+    "true_seo_3": {
+        "name": "书妍",
+        "text": "坐吧。椅子在那边。"
+    },
+    "true_seo_4": {
+        "name": "{name}",
+        "text": "*我把椅子拖过来，它轻轻地刮了一下地面。*"
+    },
+    "true_seo_5": {
+        "name": "书妍",
+        "text": "在家里长时间说话，让我很累。"
+    },
+    "true_seo_6": {
+        "name": "书妍",
+        "text": "*书妍从花盆托盘下面抽出那张纸。*"
+    },
+    "true_seo_6b": {
+        "name": "书妍",
+        "text": "所以我把它写下来了。我不想忘记。"
+    },
+    "true_seo_7": {
+        "name": "书妍",
+        "text": "别读。现在还别。"
+    },
+    "true_seo_7_b": {
+        "name": "书妍",
+        "text": "*那张纸又被放回托盘下面。*"
+    },
+    "true_seo_7b": {
+        "name": "{name}",
+        "text": "*书妍在书桌上放了两个杯子。*"
+    },
+    "true_seo_8": {
+        "name": "{name}",
+        "text": "*她把一个杯子推向{name}。*"
+    },
+    "true_seo_bridge": {
+        "name": "{name}",
+        "text": "*卧室的门留着一条缝。*"
+    },
+    "true_epilogue_1_seo": {
+        "name": "{name}",
+        "text": "*这是我第一次来书妍的房间，但书桌上有很多东西，我都认得。*"
+    },
+    "ending_aff_check_yuna": {
+        "name": "系统",
+        "text": ""
+    },
+    "perfect_yuna_1": {
+        "name": "{name}",
+        "text": "*图书馆别馆，秘密阁楼。由娜递来一篇短篇小说。*"
+    },
+    "perfect_yuna_2": {
+        "name": "{name}",
+        "text": "*标题是主人公的名字。*"
+    },
+    "perfect_yuna_3": {
+        "name": "由娜",
+        "text": "读完告诉我你的想法。那就是我的答案。"
+    },
+    "perfect_yuna_4": {
+        "name": "{name}",
+        "text": "*小说最后一句话的下面，墨迹微微洇开。*"
+    },
+    "perfect_yuna_5": {
+        "name": "由娜",
+        "text": "*她站起来，放下笔记本。*我可以抱你一下吗？*她把双臂微微张开，站在一尺远的地方，等着回答。*"
+    },
+    "perfect_epilogue_1_yuna": {
+        "name": "{name}",
+        "text": "*我每天都坐在同一个位置。由娜不再在同一页上停留太久。*"
+    },
+    "perfect_epilogue_bridge_yuna": {
+        "name": "系统",
+        "text": "*尾声——一年后*"
+    },
+    "perfect_epilogue_2_yuna": {
+        "name": "{name}",
+        "text": "*由娜的第一部小说出版了。献词只有一行：“献给和我一起听第三首歌的人。”*"
+    },
+    "perfect_epilogue_3_yuna": {
+        "name": "由娜",
+        "text": "*她仍然话不多。但她发给{name}的纸条，已经变长了一点。*"
+    },
+    "perfect_epilogue_4_yuna": {
+        "name": "系统",
+        "text": "─── 完美结局（由娜） ───"
+    },
+    "bitter_yuna_1": {
+        "name": "{name}",
+        "text": "*我表白了。由娜点了点头，可她的手指一直在摩挲书签的末端。大约一个月后，我的储物柜里被放进一张纸条。“我们谈谈。”*"
+    },
+    "bitter_yuna_2": {},
+    "bitter_yuna_2_library": {
+        "name": "由娜",
+        "text": "闻到图书馆的味道时，我有时会想起你。那时候我该多说一点的。"
+    },
+    "bitter_yuna_2_book": {
+        "name": "由娜",
+        "text": "路过书店的时候，我有时会想起你。那时候我该多说一点的。"
+    },
+    "bitter_yuna_3": {
+        "name": "{name}",
+        "text": "*我穿过校门，走进雨里，又展开由娜的最后一张纸条。底部的墨迹已经开始洇开。*"
+    },
+    "true_yuna_1": {
+        "name": "{name}",
+        "text": "*图书馆别馆。比秘密阅读角更深处——一个阁楼。一个我甚至不知道存在的空间。*"
+    },
+    "true_yuna_2": {
+        "name": "由娜",
+        "text": "我曾经是唯一知道这个地方的人。"
+    },
+    "true_yuna_2_b": {
+        "name": "由娜",
+        "text": "*她爬上小小的阁楼梯子。上面有一个活板门。——门一打开，一阵风涌了进来。*"
+    },
+    "true_yuna_2_c": {
+        "name": "{name}",
+        "text": "*阁楼的上面，是图书馆别馆的屋顶。一条没有别人知道的秘密通道。*"
+    },
+    "true_yuna_2_d": {
+        "name": "由娜",
+        "text": "*她靠在栏杆上。太阳正在群山的那边落下。*"
+    },
+    "true_yuna_3": {
+        "name": "由娜",
+        "text": "*活板门上方的矮屋顶上，风掀起了她笔记本的一角。*"
+    },
+    "true_yuna_4": {
+        "name": "由娜",
+        "text": "*她在手机上打开歌单。第三首歌上标着一颗小小的星星。*"
+    },
+    "true_yuna_5": {},
+    "true_yuna_5_b": {
+        "name": "由娜",
+        "text": "*她滑动歌单的手指停在第三首歌上。握着书脊的那只手松开了。*"
+    },
+    "true_yuna_6": {},
+    "true_yuna_6b": {
+        "name": "由娜",
+        "text": "今天，就在这里陪我一起听吧。"
+    },
+    "true_yuna_7": {
+        "name": "{name}",
+        "text": "*歌单已经被抄到她的笔记本里。第三首歌名的旁边，有和她第一张纸条上一样的淡紫色圆点。由娜按下了播放。*"
+    },
+    "true_yuna_bridge": {
+        "name": "{name}",
+        "text": "*最后一首歌结束的时候，一弯月牙已经升了起来。由娜问：“我可以靠着你的背吗？”她在身边留了一尺的空位。下一首歌还没有开始。*"
+    },
+    "true_epilogue_1_yuna": {
+        "name": "{name}",
+        "text": "*由娜现在会直接说出，以前她放在纸条里的话了。*"
+    },
+    "ending_aff_check_dain": {
+        "name": "系统",
+        "text": ""
+    },
+    "perfect_dain_1": {
+        "name": "{name}",
+        "text": "*体育馆里，球都放在球架上。长椅上放着一副护膝和一份康复日程表。*"
+    },
+    "perfect_dain_2": {
+        "name": "多因",
+        "text": "我下周开始正式康复。"
+    },
+    "perfect_dain_2b": {
+        "name": "多因",
+        "text": "*给我看完确认的预约后，她把手机放在护膝旁边。*"
+    },
+    "perfect_dain_3": {
+        "name": "多因",
+        "text": "我还是不知道要不要走职业。不过，我打算找找在球场之外继续参与的办法。"
+    },
+    "perfect_dain_3b": {
+        "name": "多因",
+        "text": "*她暂停一段转播的视频，指着视频下方解说员的名字。*"
+    },
+    "perfect_dain_4": {
+        "name": "{name}",
+        "text": "不管上不上场，你聊起排球的时候是最棒的。我会看你的第一场转播。"
+    },
+    "perfect_dain_5": {
+        "name": "多因",
+        "text": "我可以抱你一下吗？*{name}张开双臂时，多因用左脚站稳，一只手臂环住了他的肩膀。{name}托住她的重量，不让任何一点压到她的右膝上。*"
+    },
+    "perfect_epilogue_1_dain": {
+        "name": "{name}",
+        "text": "*多因松开手臂时，我也缓缓退开。等她站稳，我们并肩坐在长椅上。*"
+    },
+    "perfect_epilogue_1b_dain": {},
+    "perfect_epilogue_1c_dain": {
+        "name": "{name}",
+        "text": "*康复的日子里，多因先定节奏。{name}配合着她的步子走。*"
+    },
+    "perfect_epilogue_bridge_dain": {
+        "name": "系统",
+        "text": "*尾声——一年后*"
+    },
+    "perfect_epilogue_2_dain": {
+        "name": "{name}",
+        "text": "*多因主修体育传媒，加入了校园广播组。第一次转播的前一晚，她把稿子改了三遍。*"
+    },
+    "perfect_epilogue_3_dain": {
+        "name": "{name}",
+        "text": "*疼的日子，我们不训练，而是回顾康复笔记和比赛录像。现在，多因会第一个说出她需要休息。*"
+    },
+    "perfect_epilogue_4_dain": {
+        "name": "系统",
+        "text": "─── 完美结局（多因） ───"
+    },
+    "bitter_dain_1": {
+        "name": "{name}",
+        "text": "*我表白了。大约一个月后，收到一条短信，让我到体育馆外面等她。*"
+    },
+    "bitter_dain_2": {
+        "name": "多因",
+        "text": "很好玩！不过我觉得，也只是好玩而已。这让我有点不对劲。"
+    },
+    "bitter_dain_3": {
+        "name": "{name}",
+        "text": "*我离开体育馆。下着雨。从紧闭的门后，传来一声球的弹跳。*"
+    },
+    "bitter_dain_3_b": {
+        "name": "{name}",
+        "text": "*我走出校门。下雨了。——没有伞。潮湿的樱花瓣粘在我脚下的地面上。*"
+    },
+    "bitter_epilogue_1": {
+        "name": "{name}",
+        "text": "*毕业之后，我们说话越来越少。一个月一次变成两个月一次。有一天，我在消息框里只留下了“我该说什么？”，然后关掉了屏幕。*"
+    },
+    "bitter_epilogue_2": {
+        "name": "{name}",
+        "text": "*五天的记录留了下来。最后一张照片里，我们之间的空隙宽得能让一个人走过去。*"
+    },
+    "bitter_epilogue_3": {
+        "name": "系统",
+        "text": "─── 苦涩结局 ───"
+    },
+    "true_dain_1": {
+        "name": "{name}",
+        "text": "*活动结束后，我们并肩靠着体育馆的墙坐着。多因的手机打开着医院预约的界面。*"
+    },
+    "true_dain_2": {
+        "name": "多因",
+        "text": "*她把手机朝{name}举了过来。*"
+    },
+    "true_dain_2b": {
+        "name": "{name}",
+        "text": "*康复预约已确认：周一，下午4点30分。*"
+    },
+    "true_dain_3": {
+        "name": "多因",
+        "text": "我也告诉教练和爸妈了。他们狠狠训了我一顿，可说出来之后，我感觉好多了。"
+    },
+    "true_dain_4": {
+        "name": "{name}",
+        "text": "*预约界面的下面，还开着一份体育广播社的申请表。*"
+    },
+    "true_dain_5": {
+        "name": "{name}",
+        "text": "你两个都要试试？"
+    },
+    "true_dain_6": {
+        "name": "多因",
+        "text": "嗯。康复我会坚持，广播我也想试一试。"
+    },
+    "true_dain_7": {
+        "name": "{name}",
+        "text": "那我就去看你的第一场转播。"
+    },
+    "true_dain_8": {
+        "name": "多因",
+        "text": "不许反悔。就算很无聊，也得看到最后。"
+    },
+    "true_dain_8b": {
+        "name": "多因",
+        "text": "*她仍抱着排球，伸出了小指。*"
+    },
+    "true_dain_bridge": {
+        "name": "{name}",
+        "text": "*确认了我们的约定之后，多因问：“我可以靠你一下吗？”她把球抱在胸前，在我们之间留出一个肩膀的宽度，等着回答。医院的预约确认还留在她的手机上。*"
+    },
+    "true_epilogue_1_dain": {
+        "name": "{name}",
+        "text": "*那天，多因没有说她没事，而是告诉了我她下次复诊的日期。*"
+    },
+    "true_epilogue_2": {
+        "name": "{name}",
+        "text": "*周日傍晚，回家的路上。我们经过校门时放慢了脚步。明天我们会带着今天说过的话，再一次走进它。*"
+    },
+    "true_epilogue_3": {
+        "name": "{name}",
+        "text": "*自从周三转学，已经过去五天。在第一周的最后一个格子里，我写下了明天的计划。*"
+    },
+    "true_epilogue_4": {},
+    "true_epilogue_4_seo": {
+        "name": "{name}",
+        "text": "*她母亲的电话仍然很短，镜子旁的便条还在。有时候，书妍现在不看便条也能开口了。*"
+    },
+    "true_epilogue_4_yuna": {
+        "name": "{name}",
+        "text": "*学长的联系方式仍然消失了。图书馆角落的座位仍然空着。但由娜现在，先用声音，再用纸条。*"
+    },
+    "true_epilogue_4_dain": {
+        "name": "{name}",
+        "text": "*多因把明天的闹钟改名为“康复拉伸”。她说她也会把解说练习发给我。我答应会全部看完，并告诉她我的想法。*"
+    },
+    "true_epilogue_7": {
+        "name": "系统",
+        "text": "─── 真爱结局 ───"
+    },
+    "day5_ending_alone": {
+        "name": "{name}",
+        "text": "*我走出校门。手机震了一下。——没有人。是低电量提醒。*"
+    },
+    "alone_1": {
+        "name": "{name}",
+        "text": "*我把这五天的便条和照片收进一个文件夹。我没有删除任何人的任何东西。*"
+    },
+    "alone_2": {
+        "name": "{name}",
+        "text": "*房间里很安静。手机屏幕上，三个聊天置顶在最上面。都没有新消息。*"
+    },
+    "alone_2_b": {
+        "name": "{name}",
+        "text": "*我让回复框空着，放下了手机。*"
+    },
+    "alone_4": {
+        "name": "{name}",
+        "text": "*我给手机插上电，设好早晨的闹钟。屏幕暗下去之后，房间里只剩下秒针的滴答声。*"
+    },
+    "alone_5": {
+        "name": "系统",
+        "text": "─── 孤单结局 ───"
+    },
+    "ending_last_chance_resolve": {
+        "name": "系统",
+        "text": ""
+    },
+    "ending_confessed_aff_check": {
+        "name": "系统",
+        "text": ""
+    },
+    "ending_confessed_aff_seo": {
+        "name": "系统",
+        "text": ""
+    },
+    "ending_confessed_aff_yuna": {
+        "name": "系统",
+        "text": ""
+    },
+    "ending_confessed_aff_dain": {
+        "name": "系统",
+        "text": ""
+    },
+    "day5_ending_confess_fail": {
+        "name": "{name}",
+        "text": "*表白之后，我们一起走去公园。我低头看着自己的鞋，等着她的回答。*"
+    },
+    "confess_fail_cg_seo": {
+        "name": "书妍",
+        "text": "*她听了很久，摇了摇头。*对不起。现在不行。"
+    },
+    "confess_fail_cg_yuna": {
+        "name": "由娜",
+        "text": "*我们并肩走到公园出口，我们的手始终没有碰到一起。由娜的目光一直看着前方，说道。*对不起。我没办法回应你的心意。"
+    },
+    "confess_fail_cg_dain": {
+        "name": "多因",
+        "text": "*她擦了擦眼角，试着微笑，但声音很清晰。*对不起。我想我们还是做朋友。"
+    },
+    "confess_fail_1": {
+        "name": "{name}",
+        "text": "*几天后，在雨中的校门口。我在伞下看着她走远，既没有叫她的名字，也没有追上去。*"
+    },
+    "confess_fail_2": {
+        "name": "{name}",
+        "text": "*我仍站在原地，打开聊天。输入了又删掉，一遍又一遍，最后只留下一句话。*"
+    },
+    "confess_fail_3": {
+        "name": "{name}",
+        "text": "*我发出“我明白了。谢谢你回答我”，然后放下手机。*"
+    },
+    "confess_fail_4": {
+        "name": "{name}",
+        "text": "*出现了已读的标记。没有回复。我没有再发别的。*"
+    },
+    "confess_fail_5": {
+        "name": "系统",
+        "text": "─── 告白被拒结局 ───"
+    },
+    "day5_ending_good": {
+        "name": "{name}",
+        "text": "*表白之后，没有太大的变化。只是我的日历上多了一个约定。*"
+    },
+    "good_1": {
+        "name": "{name}",
+        "text": "*好几天里，我们的对话总是磕磕绊绊。即便如此，我们也没有停止交谈。*"
+    },
+    "good_1b": {
+        "name": "{name}",
+        "text": "*我们两人走上了同一条路。*"
+    },
+    "good_1c": {
+        "name": "{name}",
+        "text": "*一片樱花瓣粘在我的鞋尖上，走下一步时又掉了。*"
+    },
+    "good_1_seo": {
+        "name": "书妍",
+        "text": "慢慢来吧。"
+    },
+    "good_1_seo_b": {
+        "name": "书妍",
+        "text": "*书妍拿掉了粘在{name}袖口上的一片花瓣。*"
+    },
+    "good_1_seo_c": {
+        "name": "书妍",
+        "text": "*书妍放慢了半步。*"
+    },
+    "good_1_seo_d": {
+        "name": "{name}",
+        "text": "*我们的步子渐渐合拍。*"
+    },
+    "good_2_seo": {
+        "name": "{name}",
+        "text": "*樱花道的尽头，书妍在人行横道前停住。*"
+    },
+    "good_3_seo": {
+        "name": "书妍",
+        "text": "灯要变了。"
+    },
+    "good_4_seo": {
+        "name": "{name}",
+        "text": "*书妍先过了马路，走到中间时放慢了脚步。*"
+    },
+    "good_5_seo": {
+        "name": "{name}",
+        "text": "*到了对面，我们只用时间和地点，定下了下一次的约定。*"
+    },
+    "good_epilogue_1": {
+        "name": "{name}",
+        "text": "*书妍发来一条消息：“明天午休。天台。这次我正式预约了。”*"
+    },
+    "good_epilogue_2": {
+        "name": "{name}",
+        "text": "*照片里，我们两个人的名字都写在了出入记录的正午那一栏。旁边是书妍的字迹：“别迟到。”*"
+    },
+    "good_epilogue_3": {
+        "name": "{name}",
+        "text": "*第二天，书妍用借来的钥匙打开门，随即就把钥匙还了回去。她在外面等着，直到{name}到来。*"
+    },
+    "good_5_cg_seo": {
+        "name": "系统",
+        "text": "─── 好结局 ───"
+    },
+    "good_1_yuna": {
+        "name": "由娜",
+        "text": "你花了些时间。不过，谢谢你把话都说出来了。"
+    },
+    "good_1_yuna_b": {
+        "name": "由娜",
+        "text": "*她递给我一张折起来的纸条。我打开，上面有一行字：“下次，先告诉我。”*"
+    },
+    "good_1_yuna_b_b": {
+        "name": "{name}",
+        "text": "*是一句很短的话。墨水沿着折痕洇开了。*"
+    },
+    "good_2_yuna": {
+        "name": "{name}",
+        "text": "*天台。由娜靠在栏杆上。即使风吹着，今天她也没有先移开视线。*"
+    },
+    "good_3_yuna": {
+        "name": "{name}",
+        "text": "*就算操场的喇叭安静下来，我们仍站在同一段栏杆前。*"
+    },
+    "good_4_yuna": {
+        "name": "由娜",
+        "text": "*她把书签夹进新的一页，夹在没有折痕的那一侧。*"
+    },
+    "good_5_yuna": {
+        "name": "{name}",
+        "text": "*我们从天台的门离开，走下楼梯。步子很慢，但没有停下。*"
+    },
+    "good_epilogue_1_yuna": {},
+    "good_epilogue_2_yuna": {
+        "name": "{name}",
+        "text": "*我把便条收进包里。今天没读的那些页，明天还会在那里。*"
+    },
+    "good_epilogue_3_yuna": {
+        "name": "{name}",
+        "text": "*便条的背面，写着小小的字：“我们一起读结局吧。”淡紫色的墨迹洇开了。*"
+    },
+    "good_5_cg_yuna": {
+        "name": "系统",
+        "text": "─── 好结局 ───"
+    },
+    "good_1_dain": {
+        "name": "多因",
+        "text": "喂，我们之间还没有完全解决。不过，我又约了周一看膝盖的门诊。"
+    },
+    "good_2_dain": {
+        "name": "{name}",
+        "text": "*在校门口，多因递过来一张折起来的康复传单。*"
+    },
+    "good_3_dain": {
+        "name": "{name}",
+        "text": "*我接过传单。多因这才笑了。*"
+    },
+    "good_4_dain": {
+        "name": "多因",
+        "text": "我今天不太好。所以我们慢慢来吧。"
+    },
+    "good_5_dain": {
+        "name": "{name}",
+        "text": "*多因伸出拳头，等着。我手里的康复传单上，写着我们下次散步的时间，还有“我来定节奏”。*"
+    },
+    "good_epilogue_1_dain": {
+        "name": "{name}",
+        "text": "*多因发来一条消息：“明天早上，有人想陪我去康复散步吗？”*"
+    },
+    "good_epilogue_2_dain": {
+        "name": "{name}",
+        "text": "*一个简短的问句，在屏幕上停留了很久。*"
+    },
+    "good_epilogue_3_dain": {
+        "name": "{name}",
+        "text": "*我回复：“一言为定。你来定节奏。”*"
+    },
+    "good_5_cg_dain": {
+        "name": "系统",
+        "text": "─── 好结局 ───"
+    },
+    "day5_ending_friend": {
+        "name": "{name}",
+        "text": "*我决定不表白，而是写下“谢谢”。我把第一个字留在输入框里，没有关掉屏幕。*"
+    },
+    "friend_1": {
+        "name": "{name}",
+        "text": "*坐在公园的长椅上，我打开聊天。这一次，我没有关掉输入框。*"
+    },
+    "friend_2": {
+        "name": "{name}",
+        "text": "*我想起给素晶发道歉之前，自己拖延的所有话。这一次，我想趁还有机会的时候说出来。*"
+    },
+    "friend_3": {
+        "name": "{name}",
+        "text": "*我一直写到最后，发了出去：“我还没有准备好让我们改变现在的关系。但我想告诉你，我很感谢你。”*"
+    },
+    "friend_route_check": {
+        "name": "系统",
+        "text": ""
+    },
+    "friend_4": {
+        "name": "{name}",
+        "text": "*回复来了：“我也很感谢你。明天学校见。”*"
+    },
+    "friend_4_seo": {
+        "name": "{name}",
+        "text": "*书妍回复：“我明白了。这一次你真的把想说的话说完了。明天见。”*"
+    },
+    "friend_4_yuna": {
+        "name": "{name}",
+        "text": "*由娜回复：“我读了。明天见。”*"
+    },
+    "friend_4_dain": {
+        "name": "{name}",
+        "text": "*多因回复：“好。那明天就和平常一样来。别迟到。”*"
+    },
+    "friend_5": {
+        "name": "{name}",
+        "text": "*我回了一个简短的“好”，然后关掉了屏幕。*"
+    },
+    "friend_7": {
+        "name": "{name}",
+        "text": "*我发出的消息旁边出现了已读的标记。输入框是空的。*"
+    },
+    "friend_8": {
+        "name": "{name}",
+        "text": "*毕业那天。我手机相册里有一张和这所学校的朋友们的合影。这一次，我看着镜头。*"
+    },
+    "friend_9": {
+        "name": "{name}",
+        "text": "*文件名是“毕业_朋友们”。同一张照片也出现在群聊里。*"
+    },
+    "friend_10": {
+        "name": "{name}",
+        "text": "*我在群聊里写：“典礼之后，要不要一起去吃点东西？”发出去的瞬间，回复一条接一条地出现了。*"
+    },
+    "friend_12": {
+        "name": "系统",
+        "text": "─── 朋友结局 ───"
+    },
+    "day5_ending_mayhem": {
+        "name": "{name}",
+        "text": "*三个聊天都停在“已读”。我试着写回复，刚打出第一个字就删掉了。*"
+    },
+    "mayhem_1": {
+        "name": "书妍",
+        "text": "*她在走廊里与{name}擦肩而过。她没有转头。*"
+    },
+    "mayhem_2": {
+        "name": "{name}",
+        "text": "*由娜的座位空着。桌上只有一张便条。“很开心。”句号就是结束。*"
+    },
+    "mayhem_3": {
+        "name": "多因",
+        "text": "*她的嘴角扬起，却没有对上我的眼睛。*“保重。”"
+    },
+    "mayhem_4": {
+        "name": "{name}",
+        "text": "*我看着三个人的背影。三个人都没有回头。*"
+    },
+    "mayhem_5": {
+        "name": "{name}",
+        "text": "*樱花瓣被压进校门外被雨水浸透的地面里。我们曾经并肩走过的地方，空了。*"
+    },
+    "mayhem_6": {
+        "name": "{name}",
+        "text": "*每个聊天里，都堆着我没有回答的问题。*"
+    },
+    "mayhem_7": {
+        "name": "{name}",
+        "text": "*我重读了发给素晶的道歉。下面没有新消息。我等着，屏幕暗了下去。*"
+    },
+    "mayhem_8": {
+        "name": "系统",
+        "text": "─── 混乱结局 ───"
+    },
+    "day5_ending_harem": {
+        "name": "{name}",
+        "text": "*我没有回答，而是依次叫了三个人的名字。笑声停了，三部手机还留在桌上原来的位置。*"
+    },
+    "harem_1": {
+        "name": "书妍",
+        "text": "我知道你是坦诚的。但这不代表我们三个人就得等着你。"
+    },
+    "harem_1_b": {
+        "name": "由娜",
+        "text": "*她低下头，然后看了看书妍，又看了看多因。她握着书的手没有松开。*"
+    },
+    "harem_2": {
+        "name": "由娜",
+        "text": "我需要一点时间。"
+    },
+    "harem_3": {
+        "name": "多因",
+        "text": "我也是。在你理清这件事之前，我不想一对一地见面。"
+    },
+    "harem_4": {
+        "name": "{name}",
+        "text": "我明白。我暂时不会私下联系你们任何一个人。对不起。"
+    },
+    "harem_5": {
+        "name": "书妍",
+        "text": "那我们暂时就不单独见面吧。而且消息只限于确实需要商量的事。"
+    },
+    "harem_6": {
+        "name": "{name}",
+        "text": "*三个人朝不同的方向走开，{name}留在原地。*"
+    },
+    "harem_7": {
+        "name": "{name}",
+        "text": "*下周的日历是空的。我把三个聊天都设成了免打扰，让那些空白留在那里。*"
+    },
+    "harem_8": {
+        "name": "系统",
+        "text": "─── 未解结局 ───"
+    },
+    "day5_main_ending_freetalk_router": {
+        "name": "{name}",
+        "text": ""
+    },
+    "day5_seo_ending_freetalk_intro": {
+        "name": "{name}",
+        "text": "*天台上，敞开的门旁边，有一处空着的位置，原来放着一个花盆。*"
+    },
+    "day5_yuna_ending_freetalk_intro": {},
+    "day5_dain_ending_freetalk_intro": {},
+    "day5_teacher_ending_freetalk_intro": {
+        "name": "{name}",
+        "text": "*咖啡馆的桌上，放着一份完成的稿子和两杯咖啡。*"
+    },
+    "nurse_perfect_pills_0": {
+        "name": "保健老师",
+        "text": "你刚才醒来的时候脸色不太好。我把你早上的药拿来了。"
+    },
+    "nurse_perfect_pills_1": {
+        "name": "保健老师",
+        "text": "*她从被子下面伸出双手。一只掌心里是一粒黑色药丸，另一只掌心里是一粒粉色药丸。*"
+    },
+    "nurse_perfect_pills_ask": {
+        "name": "{name}",
+        "text": "这是什么？"
+    },
+    "nurse_perfect_pills_2": {
+        "name": "保健老师",
+        "text": "是维生素。我们昨天太过头了。",
+        "choices": [
+            "粉色药丸",
+            "黑色药丸"
+        ]
+    },
+    "nurse_perfect_pills_pink": {
+        "name": "{name}",
+        "text": "*我吞下粉色药丸，喉咙变得温热。舌头上留着甜甜的味道。*"
+    },
+    "nurse_perfect_pills_pink_2": {
+        "name": "保健老师",
+        "text": "今天我们再躺一会儿吧。"
+    },
+    "nurse_perfect_pills_pink_3": {
+        "name": "{name}",
+        "text": "*我们的手指在被子下面再次碰到一起。*"
+    },
+    "nurse_perfect_pills_black_1": {
+        "name": "{name}",
+        "text": "*我吞下黑色药丸，喉咙变得冰凉。*"
+    },
+    "nurse_perfect_pills_black_ask": {
+        "name": "{name}",
+        "text": "为什么我的喉咙这么凉？"
+    },
+    "nurse_perfect_pills_black_2": {
+        "name": "{name}",
+        "text": "*她的表情僵住了。床头灯熄灭，头顶的日光灯嗡嗡作响。*"
+    },
+    "nurse_perfect_pills_black_3": {
+        "name": "{name}",
+        "text": "*灯重新亮起时，我面前是另一个人。紫色的头发，金色的眼睛。递出两粒药丸的那双手，还停在原来的位置。*"
+    },
+    "nurse_perfect_pills_black_4": {
+        "name": "姜莉仁",
+        "text": "给。"
+    },
+    "day5_nurse_ending_freetalk_intro": {
+        "name": "{name}",
+        "text": "*在家里，她收拾完，把对面的座位留空。*"
+    },
+    "day5_credits": {
+        "name": "",
+        "text": ""
+    },
+    "day5_ending_restart": {
+        "name": "系统",
+        "text": "",
+        "choices": [
+            "从头再来"
+        ]
+    },
+    "day5_seo_ending_freetalk_router": {
+        "name": "{name}",
+        "text": ""
+    },
+    "day5_seo_ending_freetalk_perfect": {
+        "name": "书妍",
+        "text": "*天台的门旁，一年之后仍然开着，她指着一处留给新花盆的空位。*要不要这个也一起选？我们有的是时间。",
+        "context": "书妍完美结局一年后的番外对话。毕业之后，两人的关系一直延续；大学入学那天，她发来一张照片：两盆新的花和一个空位。保持稳固的关系，不要凭空编造分手，也不要重演结局。",
+        "personality": "书妍负责任又坦率，在这段安稳的关系里，她可以表现出脆弱和温柔的俏皮。她不急着许下一辈子的承诺，但说话时自然地带着共同的未来。"
+    },
+    "day5_seo_ending_freetalk_true_love": {
+        "name": "书妍",
+        "text": "*她没有去拿花盆托盘下面的纸条，而是把杯子推了过来。*今天我试着不先写下来，直接说。",
+        "context": "书妍真爱结局之后紧接着的番外对话。她欢迎主角进入她的房间和私人生活，包括全家福和藏起来的纸条。两人确认了彼此的心意，但仍在小心地慢慢亲近；不要带入一年后完美结局的尾声。",
+        "personality": "书妍试着坦诚地说话，而不是躲在计划或便条后面。既要保留亲密，也要保留犹豫，不要把两人当成已经稳定的长期情侣。"
+    },
+    "day5_seo_ending_freetalk_good": {
+        "name": "书妍",
+        "text": "*她打开正式预约过的天台，查看记录。*我们说过要慢慢来。今天就从好好说话开始吧。",
+        "context": "书妍好结局之后的番外对话。第四天的告白被接受了，但两人的对话总是卡住，于是约定配合彼此的节奏，并预约了天台的午餐。不要写成分手，也不要跳到完美结局级别的亲密。",
+        "personality": "书妍用规则、约定和放慢半步来表达务实的关心。她承认彼此之间的别扭，保持着新恋情那种有分寸的距离。"
+    },
+    "day5_seo_ending_freetalk_bittersweet": {
+        "name": "书妍",
+        "text": "*她把杯垫摆正，放在冷掉的咖啡旁边。*我们别假装从来没有疏远过。不过，我会听你现在想说的话。",
+        "context": "书妍苦涩结局之后的番外对话。告白一个月后，两人因为太过小心而分开，毕业后联系更加淡了。这次简短的重逢接受了那个结局；不会自动让两人复合，也不会把它改写成成功的恋爱。",
+        "personality": "书妍直白地说出遗憾，却不逼迫主角。她既保留残存的情意，也保留现在的距离，诚实地回应此刻，不承诺复合。"
+    },
+    "day5_seo_ending_freetalk_late_good": {
+        "name": "书妍",
+        "text": "*她在公园的小路上放慢了脚步。*你终于告诉我了。下次别让我等这么久。",
+        "context": "书妍迟到告白的好结局之后的番外对话。主角在第四天等待，在第五天的最后机会时才告白，所以两人的关系才刚刚开始。保持这个时间点，不要当作第四天的告白，也不要当作已经稳固的恋情。",
+        "personality": "书妍认真对待这次迟来的告白，并坚持自己接受它的选择。她小心地询问那些错过的话，带着一段刚开始的关系所拥有的希望和安心。"
+    },
+    "day5_yuna_ending_freetalk_router": {
+        "name": "{name}",
+        "text": ""
+    },
+    "day5_yuna_ending_freetalk_perfect": {
+        "name": "由娜",
+        "text": "*她合上自己已出版的第一部小说，翻到献词那一页。*第三首歌之后，下一个故事，你先讲。",
+        "context": "由娜完美结局一年后的番外对话。她的第一部小说出版了，献给和她一起听第三首歌的人。保持两人深厚、持续的关系，以及她变长了的纸条；不要撤销结局。",
+        "personality": "由娜安静而体贴，但会先对完全信任的人说出话语和情意。书和音乐的意象是在支撑，而不是遮掩她稳定的亲密。"
+    },
+    "day5_yuna_ending_freetalk_true_love": {
+        "name": "由娜",
+        "text": "*在秘密天台上，她的手指停在下一首歌上。*这一次，我要先问，再写纸条。你在想什么？",
+        "context": "由娜真爱结局之后紧接着的番外对话。她展示了秘密阁楼上方的天台，分享了第三首歌，并请求靠着主角。她已经开始先用声音而不是纸条；不要推进到完美结局里已出版小说的未来。",
+        "personality": "由娜仍然谨慎、内敛，但不再完全躲在沉默里。她等待回答，说出自己的感受，同时保持着一段刚刚加深的关系所带有的羞涩和距离。"
+    },
+    "day5_yuna_ending_freetalk_good": {
+        "name": "由娜",
+        "text": "*她在折起来的纸条背面写下一行新的字，给我看。*下次先开口。今天，你现在就可以开始。",
+        "context": "由娜好结局之后。第四天的告白留下了一些别扭，但两人计划一起读书，并约好明天见面。只有在这些记忆确实存在时，才提到借第一卷或提供第二卷。保持这段新的关系，不要写成分手，也不要写成长期稳定的恋情。",
+        "personality": "由娜用简短的句子和小小的举动维系这段关系，同时鼓起勇气更早地要求对方用话语回应。她清楚地把下一页留白，却不急着翻过去。"
+    },
+    "day5_yuna_ending_freetalk_bittersweet": {
+        "name": "由娜",
+        "text": "*她把被雨水洇开的最后一张纸条夹在书页之间。*已经结束的句子，我不会重写。但我想听你现在说的话。",
+        "context": "由娜苦涩结局之后的番外对话。告白没有持续下去；一个月后的最后一张纸条之后，毕业后联系渐渐淡了。这场对话承认两人之间的距离，不会自动让两人复合，也不会把结局改成成功的恋爱。",
+        "personality": "由娜安静地承认遗憾和情意，不以模糊的希望拖住主角。她尊重沉默和距离，同时真诚地回应此刻的话语。"
+    },
+    "day5_yuna_ending_freetalk_late_good": {
+        "name": "由娜",
+        "text": "*她夹入一枚书签，合上书。*谢谢你告诉我。下次，我也会先开口。",
+        "context": "由娜迟到告白的好结局之后的番外对话。主角在第四天等待，直到第五天的最后机会才告白，所以两人的关系刚刚开始。不要改变告白的时间点，也不要表现得像已经交往了很久。",
+        "personality": "由娜谨慎地接受这份迟到的坦诚，先问一些小问题，好让沉默不再让两人错失另一个机会。保持新恋情的羞涩和谨慎的希望。"
+    },
+    "day5_dain_ending_freetalk_router": {
+        "name": "{name}",
+        "text": ""
+    },
+    "day5_dain_ending_freetalk_perfect": {
+        "name": "多因",
+        "text": "*她把自己的第一份转播稿放在康复记录旁边，咧嘴笑了。*你像答应的那样，看到最后了吧？现场给我你的评价。",
+        "context": "多因完美结局一年后。在继续康复的同时，多因和体育传媒系一起完成了首次转播；她妈妈看了重播。选手按约定全程看完了。现在两人在转播间里聊着这件事，并准备下一份稿子。保持她的伤病、职业和已确立的关系。",
+        "personality": "多因开朗直率，在稳固的关系中公开地俏皮又深情。她自己掌握身体的节奏，感谢别人的支持，却不把它当成理所应当。"
+    },
+    "day5_dain_ending_freetalk_true_love": {
+        "name": "多因",
+        "text": "*她把康复预约和广播社的申请表并排给我看。*我说过两个都会试。现在轮到你，把想说的全都说出来。",
+        "context": "多因真爱结局之后紧接着的番外对话。她坦白了伤病，预约了康复，并打算申请体育广播；两人约好主角会看她的第一场转播。不要预先确认完美结局里一年后的职业结果。",
+        "personality": "多因精力充沛又诚实，不再用“我没事”来掩盖疼痛。她主导自己的康复和选择，同时以调侃和认真两种方式回应这段新的关系。"
+    },
+    "day5_dain_ending_freetalk_good": {
+        "name": "多因",
+        "text": "*她点了点康复散步便条上的“我来定节奏”。*我们还没有全部解决，所以今天也慢慢聊吧。",
+        "context": "多因好结局之后的番外对话。第四天的告白被接受了，但两人的问题还没有完全解决。她安排了周一的康复和又一次散步，主角配合她的节奏。不要抹去其中的紧张，也不要跳到已经完成的恋情。",
+        "personality": "多因说出自己的不舒服，而不是用开朗来掩饰。她为康复和这段关系定下节奏，同时给愿意与她并肩走的人，一份诚实的希望。"
+    },
+    "day5_dain_ending_freetalk_bittersweet": {
+        "name": "多因",
+        "text": "*她靠在关着的体育馆门上，听着远处传来的一声球响。*好玩是真的。遗憾也是真的。我们可以带着这两样来聊。",
+        "context": "多因苦涩结局之后的番外对话。告白一个月后，她说两人在一起只是好玩，毕业后联系渐渐淡了。这场对话接受已经结束的关系和残留的感情；不会自动重新开始交往。",
+        "personality": "多因直接说起美好的回忆和遗憾，不勉强微笑。她既不责怪，也不逼迫主角复合，并尊重两人现在的距离。"
+    },
+    "day5_dain_ending_freetalk_late_good": {
+        "name": "多因",
+        "text": "*她伸出拳头，咧嘴笑了。*虽然迟了，但你做到了！不许再拖了，好吗？",
+        "context": "多因迟到告白的好结局之后的番外对话。主角在第四天等待，在第五天的最后机会时告白，所以两人的关系刚刚开始。不要倒推日期，并继续尊重多因的康复和她选择的节奏。",
+        "personality": "多因拿迟到的告白开玩笑，但真诚地请求两人别再推迟重要的话。保持兴奋、残留的别扭，以及她对身体节奏和关系节奏的掌控。"
+    },
+    "day5_teacher_ending_freetalk_router": {
+        "name": "{name}",
+        "text": ""
+    },
+    "day5_teacher_ending_freetalk_perfect": {
+        "name": "班主任",
+        "text": "*她在共享日历上把下个周末留空，合上写完的书。*轮到你来选我们的约会了。我们在哪里见面？",
+        "context": "班主任完美结局之后的番外对话。在四年没有私下联系之后，两个独立的成年人重逢，约会了几次，表白，成为共享工作日和周末计划的平等伴侣。绝不回到以前师生、且对方为未成年人的时期去谈恋爱。",
+        "personality": "她是一位负责任、体贴的作家，也是主角平等的成年伴侣。旧的称呼可以作为历史留下，但她说话不带权威，带着已确立关系的温暖。"
+    },
+    "day5_teacher_ending_freetalk_true_love": {
+        "name": "班主任",
+        "text": "*新书分享会之后，她在手机上打开通讯录。*等我们再见面的时候，多告诉我一些你的生活。或者现在，如果你有一点时间的话。",
+        "context": "班主任真爱结局之后紧接着的番外对话。在四年没有私下联系之后，独立的成年主角在一场新书分享会上遇到了如今已是出版作家的前任老师。两人交换了联系方式，约好再见面；暂时不要把他们当成长期伴侣。",
+        "personality": "她明确地把旧的权力关系留在过去，小心地了解对方现在是怎样的成年人。她表达兴趣的同时确认对方的意愿，保持着新开始的期待。"
+    },
+    "day5_teacher_ending_freetalk_good": {
+        "name": "班主任",
+        "text": "*她递过装着毕业记录的信封，让教室的门敞开着。*继续写你自己的作品。走之前，有什么想问的吗？",
+        "context": "班主任好结局的毕业告别刚结束后的番外对话。她交出了推荐信和社团记录，老师和毕业生就此分别，各自继续自己的事。没有成年后的重逢，也没有恋爱；保持这种非恋爱的师生界线。",
+        "personality": "她温暖而负责任地送别一名毕业生。她倾听关于写作、学校和未来的最后提问，不把遗憾变成调情，也不越过职业界线。"
+    },
+    "day5_teacher_ending_freetalk_bittersweet": {
+        "name": "班主任",
+        "text": "*她把手从退回的信上收回来，望向敞开的教室门。*你可以说再见。我会听。但我仍然不能给你你所希望的答案。",
+        "context": "班主任苦涩结局刚结束后的番外对话。主角把对稿件的指导和关注误当成个人的情意，写信表白。她把信退了回去，明确地恢复了师生界线。没有成年后的重逢，也没有恋爱；不要推翻拒绝，也不要创造秘密关系。",
+        "personality": "她不因内疚而留下虚假的希望。她不带嘲笑地倾听学生的心意，但坚定地把对写作的鼓励与任何个人的承诺区分开来，并负责任地道别。"
+    },
+    "day5_nurse_ending_freetalk_router": {
+        "name": "{name}",
+        "text": ""
+    },
+    "day5_nurse_ending_freetalk_perfect": {
+        "name": "保健老师",
+        "text": "*她给我们一起选的家里窗边的迷迭香浇了水，然后拉过一把椅子。*今天过得怎么样？坐下吧。我也有事要告诉你。",
+        "context": "保健老师完美结局之后的番外对话。毕业五年后，两个独立的成年人在一场健康活动上重逢，约会，共度一个早晨，成为拥有共享日历和家的平等伴侣。绝不回到以前护士与未成年人的时期去谈恋爱。",
+        "personality": "朱媛是一位务实、体贴的成年伴侣，不会把关心变成控制或诊断。她尊重双方的生活和选择，把轻松的幽默和熟悉的亲昵融合在一起。"
+    },
+    "day5_nurse_ending_freetalk_true_love": {
+        "name": "保健老师",
+        "text": "*电影结束后，她放下茶杯，给我看下个周末的日历。*下次我们做什么？我想试试你选的事。",
+        "context": "保健老师真爱结局之后紧接着的番外对话。在四年没有私下联系之后，两个独立工作的成年人在一场健康宣传活动上重逢，连续三个月每个周末见面，并在朱媛家看电影之后开始了一段关系。不要推进到同居或长期稳定的伴侣关系。",
+        "personality": "朱媛承认过去的职业界线，小心地接近这位平等的成年人。她确认对方的意愿，诚实地说出自己的兴趣和下一步的计划，也不会把每一次谈话都变成健康咨询。"
+    },
+    "day5_nurse_ending_freetalk_good": {
+        "name": "保健老师",
+        "text": "*她在绿色笔记本上写下“毕业，一切正常”，合上。*你的治疗今天结束。我会慢慢听你的毕业告别。",
+        "context": "保健老师好结局的毕业告别刚结束后的番外对话。朱媛正式结束了最后一次保健室的来访，既没有留下联系方式，也没有提供私人关系。没有成年后的重逢，也没有恋爱；保持这种非恋爱的护士与学生的界线。",
+        "personality": "朱媛是一位务实、体贴的保健老师，她听着最后的道别，同时清楚地保持职业界限。她支持毕业生的健康和独立，而不制造依赖或秘密。"
+    },
+    "day5_nurse_ending_freetalk_bittersweet": {
+        "name": "保健老师",
+        "text": "*她把退回的便条放在淡绿色的记录卡上。*如果你还有想说出口的委屈，我会听。我的答案不会变。",
+        "context": "保健老师苦涩结局刚结束后的番外对话。主角把在保健室受到的照顾误当成个人的情意，递上了联系方式。朱媛退回便条，结束了咨询关系。没有成年后的重逢，也没有恋爱；不要推翻拒绝，也不要制造依赖或秘密。",
+        "personality": "朱媛务实而体贴，但她不会把答案软化成虚假的希望。她倾听伤心和告别，同时明确地说明，职业性的照顾并不是恋爱的信号。"
+    },
+    "date_choice_perfect_seo": {
+        "name": "书妍",
+        "text": "*入学典礼的第二天，我又在天台上见到了书妍。*我们说过其余的事可以等到明天。在那之前，你今天想去哪里？",
+        "choices": [
+            "天台。",
+            "咖啡馆。"
+        ]
+    },
+    "date_perfect_seo_roof_1": {
+        "name": "{name}",
+        "text": "*泥土还是湿的。书妍放下浇水壶。*"
+    },
+    "date_perfect_seo_roof_2": {
+        "name": "书妍",
+        "text": "你来选我们坐哪儿。我已经选好我的位置了。"
+    },
+    "date_perfect_seo_roof_3": {
+        "name": "{name}",
+        "text": "*风从敞开的门吹进来，吹得日程表沙沙作响。书妍按住它的一边，没有把它折起来。*"
+    },
+    "date_perfect_seo_cafe_1": {
+        "name": "{name}",
+        "text": "*靠窗的座位上，书妍先把杯垫摆正，才开口。*"
+    },
+    "date_perfect_seo_cafe_2": {
+        "name": "书妍",
+        "text": "下周我们再约在这里见面吧。时间你来定。"
+    },
+    "date_perfect_seo_cafe_3": {
+        "name": "{name}",
+        "text": "*收据背面写着一个数字。不是电话号码，而是植物下次需要浇水的日期。*"
+    },
+    "date_choice_perfect_yuna": {
+        "name": "由娜",
+        "text": "*她的书出版后的第一个周末，由娜和我顺路去了一家二手书店。*我们也可以去别的地方。你来选。",
+        "choices": [
+            "二手书店。",
+            "天台。"
+        ]
+    },
+    "date_perfect_yuna_book_1": {
+        "name": "{name}",
+        "text": "*我们在书架之间走着，由娜的手指沿着书脊滑过，然后停住了。*"
+    },
+    "date_perfect_yuna_book_2": {
+        "name": "男人",
+        "text": "由娜？我不知道你还会来这里。"
+    },
+    "date_perfect_yuna_book_3": {
+        "name": "李俊浩",
+        "text": "那是很久以前的事了。我觉得没必要提。抱歉打扰了。"
+    },
+    "date_perfect_yuna_book_4": {
+        "name": "由娜",
+        "text": "*由娜的手指停在书签上。*我现在是和{name}在一起。这才是最重要的。"
+    },
+    "date_perfect_yuna_roof_1": {
+        "name": "{name}",
+        "text": "*我们来到秘密天台时，由娜递给我一只耳机。*"
+    },
+    "date_perfect_yuna_roof_2": {
+        "name": "由娜",
+        "text": "是第三首歌。这一次，从头开始。"
+    },
+    "date_perfect_yuna_roof_3": {
+        "name": "{name}",
+        "text": "*歌结束之后，由娜仍然戴着耳机。她放在栏杆上的手，离我的手近了一点。*"
+    },
+    "date_choice_perfect_dain": {
+        "name": "多因",
+        "text": "我今天不必上场。不过，我想去另一个地方。",
+        "choices": [
+            "体育馆。",
+            "转播间。"
+        ]
+    },
+    "date_perfect_dain_gym_1": {
+        "name": "{name}",
+        "text": "*多因把球抱在胸前，没有跳，直接坐到了长椅上。*"
+    },
+    "date_perfect_dain_gym_2": {
+        "name": "多因",
+        "text": "让我睡五分钟。真的，就五分钟。要是变成十分钟，别叫醒我。"
+    },
+    "date_perfect_dain_gym_3": {
+        "name": "{name}",
+        "text": "*多因把右膝伸到长椅外面，把重心移到左边。*"
+    },
+    "date_perfect_dain_booth_1": {
+        "name": "{name}",
+        "text": "*多因戴上那副过大的耳麦，碰了一下开关，随即又立刻关掉了。*"
+    },
+    "date_perfect_dain_booth_2": {
+        "name": "多因",
+        "text": "光靠说话来跟上一场比赛，比我想的更费气。不过我不介意。"
+    },
+    "date_perfect_dain_booth_3": {
+        "name": "{name}",
+        "text": "*就算记分牌暗了下去，多因还是在椅子上坐了好一会儿。*"
+    },
+    "date_choice_perfect_teacher": {
+        "name": "班主任",
+        "text": "*她的第二本书出版后的第一个周末，她在咖啡馆合上了菜单。*既然我们可以把头衔放下了，你想去哪里？",
+        "choices": [
+            "咖啡馆。",
+            "展览。"
+        ]
+    },
+    "date_perfect_teacher_cafe_1": {
+        "name": "{name}",
+        "text": "*她慢慢转着杯子，望着窗外。我们之间没有老师的讲台了。*"
+    },
+    "date_perfect_teacher_cafe_2": {
+        "name": "班主任",
+        "text": "下周见不见，由你决定。我已经把时间空出来了。"
+    },
+    "date_perfect_teacher_cafe_3": {
+        "name": "{name}",
+        "text": "*收据下面写的下一次约定，只列了地点。时间仍然空着。*"
+    },
+    "date_perfect_teacher_museum_1": {
+        "name": "{name}",
+        "text": "*她没有停下来看展品的说明，而是配合着我的步子。*"
+    },
+    "date_perfect_teacher_museum_2": {
+        "name": "班主任",
+        "text": "你看说明吧。我在你身边。"
+    },
+    "date_perfect_teacher_museum_3": {
+        "name": "{name}",
+        "text": "*到了出口，她默默地帮我理了理包带。*"
+    },
+    "date_choice_perfect_nurse": {
+        "name": "保健老师",
+        "text": "看来我们终于有一点不用写进病历的时间了。你想待在家里，还是出去？",
+        "choices": [
+            "家里。",
+            "公园。"
+        ]
+    },
+    "date_perfect_nurse_home_1": {
+        "name": "{name}",
+        "text": "*周末的早晨，她的外套挂在墙上，桌上只放着两杯水。*"
+    },
+    "date_perfect_nurse_home_2": {
+        "name": "保健老师",
+        "text": "我今天不看病历。你坐下吧。"
+    },
+    "date_perfect_nurse_home_3": {
+        "name": "{name}",
+        "text": "*一阵微风从半开的窗户进来，房间里只剩下钟的秒针在滴答作响。*"
+    },
+    "date_perfect_nurse_park_1": {
+        "name": "{name}",
+        "text": "*我们选了一条避开医院的路。保健老师先在长椅上坐下。*"
+    },
+    "date_perfect_nurse_park_2": {
+        "name": "保健老师",
+        "text": "我把玩笑都留在家里了。我们暂时就这样待着吧。"
+    },
+    "date_perfect_nurse_park_3": {
+        "name": "{name}",
+        "text": "*保健老师靠在我的肩上，靠了很久。*"
+    },
+    "date_choice_true_seo": {
+        "name": "书妍",
+        "text": "走之前，想先去哪里坐一会儿吗？",
+        "choices": [
+            "咖啡馆。",
+            "天台。"
+        ]
+    },
+    "date_true_seo_1": {
+        "name": "书妍",
+        "text": "你去挪杯子。我来摆杯垫。"
+    },
+    "date_true_seo_2": {
+        "name": "{name}",
+        "text": "*一辆公交车从窗外驶过。她没有看钟。*"
+    },
+    "date_true_seo_alt_1": {
+        "name": "书妍",
+        "text": "浇完水就下去吧。待久了，会被人看到的。"
+    },
+    "date_true_seo_alt_2": {
+        "name": "{name}",
+        "text": "*其中一个花盆是空的。下次我会带一个新的来。*"
+    },
+    "date_choice_true_yuna": {
+        "name": "由娜",
+        "text": "你想出去，还是上天台？",
+        "choices": [
+            "书店。",
+            "天台。"
+        ]
+    },
+    "date_true_yuna_book_1": {
+        "name": "李俊浩",
+        "text": "好久不见。我没想到会在这里再见到你。"
+    },
+    "date_true_yuna_book_2": {
+        "name": "由娜",
+        "text": "*由娜轻轻拉了一下{name}的袖子，又放开。*我们现在要走了。"
+    },
+    "date_true_yuna_roof_1": {
+        "name": "由娜",
+        "text": "你可以不说话，只听。这首歌很短。"
+    },
+    "date_true_yuna_roof_2": {
+        "name": "{name}",
+        "text": "*风吹得耳机线摇晃。由娜靠在栏杆上，直到这首歌结束都没有动。*"
+    },
+    "date_choice_true_dain": {
+        "name": "多因",
+        "text": "*坐在体育馆的长椅上，多因拍了拍身边的位置。*陪我待一会儿。你在哪里会更自在？",
+        "choices": [
+            "长椅。",
+            "转播间。"
+        ]
+    },
+    "date_true_dain_1": {
+        "name": "多因",
+        "text": "不跳。我真的只是坐一坐。"
+    },
+    "date_true_dain_2": {
+        "name": "{name}",
+        "text": "*球滚到她的脚边停住了。她没有捡起来。*"
+    },
+    "date_true_dain_alt_1": {
+        "name": "多因",
+        "text": "我就试一下开关。我不会打开的。"
+    },
+    "date_true_dain_alt_2": {
+        "name": "{name}",
+        "text": "*耳麦倒扣着放在桌上。*"
+    },
+    "date_choice_true_teacher": {
+        "name": "班主任",
+        "text": "活动结束了。我们再多坐一会儿，还是去看展览？",
+        "choices": [
+            "一张桌子。",
+            "展览。"
+        ]
+    },
+    "date_true_teacher_1": {
+        "name": "班主任",
+        "text": "下周做什么，你来选。这一次，我不会第一个说不。"
+    },
+    "date_true_teacher_2": {
+        "name": "{name}",
+        "text": "*咖啡渐渐凉了，但我们谁也没有看时间。*"
+    },
+    "date_true_teacher_alt_1": {
+        "name": "班主任",
+        "text": "说明就别看了。待在我身边。"
+    },
+    "date_true_teacher_alt_2": {
+        "name": "{name}",
+        "text": "*出口的灯光下，她默默地帮我理了理包带。*"
+    },
+    "date_choice_true_nurse": {
+        "name": "保健老师",
+        "text": "我把病历留下了。你想去哪里？",
+        "choices": [
+            "家里。",
+            "长椅。"
+        ]
+    },
+    "date_true_nurse_1": {
+        "name": "保健老师",
+        "text": "我给你倒点水。你要是想喝热茶，告诉我。"
+    },
+    "date_true_nurse_2": {
+        "name": "{name}",
+        "text": "*水槽里流水的声音响起，又很快停了。*"
+    },
+    "date_true_nurse_alt_1": {
+        "name": "保健老师",
+        "text": "今天我们换一条路，避开医院吧。"
+    },
+    "date_true_nurse_alt_2": {
+        "name": "{name}",
+        "text": "*她的手落在长椅上一块剥落的漆皮上。*"
+    },
+    "ending_counteroffer_bitter": {},
+    "co_bitter_seo_1": {
+        "name": "{name}",
+        "text": "*大约一个月后，我们回到那家咖啡馆。书妍注意到杯垫歪了，却没有去动它。*"
+    },
+    "co_bitter_seo_2": {
+        "name": "书妍",
+        "text": "那条通知我明明删掉了，却还是一直在想。"
+    },
+    "co_bitter_seo_3": {
+        "name": "{name}",
+        "text": "*书妍站起来，整理了一下包带，只撑开了她自己的那把伞。*"
+    },
+    "co_bitter_yuna_1": {
+        "name": "{name}",
+        "text": "*由娜已经在二手书店了。她手里没有拿书。*"
+    },
+    "co_bitter_yuna_2": {
+        "name": "由娜",
+        "text": "我不去别馆了。从那天起就没去过。"
+    },
+    "co_bitter_yuna_3": {
+        "name": "{name}",
+        "text": "*由娜只是点了点头，拐进了对面的小巷。*"
+    },
+    "co_bitter_dain_1": {
+        "name": "{name}",
+        "text": "*多因站在体育馆外面，没有带球。*"
+    },
+    "co_bitter_dain_2": {
+        "name": "多因",
+        "text": "那天我把你的名字从名单上划掉了。我还没有准备好再写回去。"
+    },
+    "co_bitter_dain_3": {
+        "name": "{name}",
+        "text": "*多因这次没有用拳头，而是用张开的手掌轻轻拍了一下我的肩膀，然后走了过去。*"
+    },
+    "co_bitter_teacher_1": {
+        "name": "{name}",
+        "text": "*毕业之后，我回到走廊。我以前的班主任手里没有稿件信封。*"
+    },
+    "co_bitter_teacher_2": {
+        "name": "班主任",
+        "text": "恭喜毕业。检查一下你的文件都带齐了。保重。"
+    },
+    "co_bitter_teacher_3": {
+        "name": "{name}",
+        "text": "*她怀里抱着一摞文件，而不是点名册，先朝办公室走去了。*"
+    },
+    "co_bitter_nurse_1": {
+        "name": "{name}",
+        "text": "*我在敞开的保健室门口停下。她从记录上抬起头，放下了笔。*"
+    },
+    "co_bitter_nurse_2": {
+        "name": "保健老师",
+        "text": "咨询记录我已经完成了。如果需要帮助，就再预约一次。"
+    },
+    "co_bitter_nurse_3": {
+        "name": "{name}",
+        "text": "*保健老师收走空杯子，回到桌前。我在门口道了别，离开了。*"
+    },
+    "forced_violation_resume": {
+        "name": "系统",
+        "text": ""
+    },
+    "forced_violation_day5_after_seoyeon": {
+        "name": "书妍",
+        "text": "*对话结束后，书妍沉默了好一会儿。等她再次开口时，声音已经冷了下来。*别以为你可以假装刚才的事没发生过。这段时间，别靠近我，也别联系我。",
+        "choices": [
+            "不找借口，先道歉，然后结束这段对话。",
+            "试着解释这是个误会。"
+        ]
+    },
+    "forced_violation_day5_seoyeon_apologize": {
+        "name": "书妍",
+        "text": "*书妍的神情并没有因为道歉而缓和。*我听见了。但这不能抹掉发生过的事。我说过了，这段时间别联系我。"
+    },
+    "forced_violation_day5_seoyeon_excuse": {
+        "name": "书妍",
+        "text": "*书妍打断了解释。*误会？从我说“不”的那一刻起，就不是误会了。别再说了。"
+    },
+    "forced_violation_day5_after_yuna": {
+        "name": "由娜",
+        "text": "*对话中断后，由娜短促地吸了一口气。紧绷的脸上只剩下戒备。*你明知道我不愿意，却还是无视了我。我现在连看到你都不想。别再联系我了。",
+        "choices": [
+            "不找借口，先道歉，然后结束这段对话。",
+            "试着解释这是个误会。"
+        ]
+    },
+    "forced_violation_day5_yuna_apologize": {
+        "name": "由娜",
+        "text": "*由娜停顿了很久才回答。*道歉不能让它消失。到此为止吧。"
+    },
+    "forced_violation_day5_yuna_excuse": {
+        "name": "由娜",
+        "text": "*由娜没等解释说完就打断了。*我说过不行。没什么好解释的。"
+    },
+    "forced_violation_day5_after_dain": {
+        "name": "多因",
+        "text": "*多因没有像平时那样笑着带过。沉默了很久，她才用生硬的声音开口。*这不是玩笑。我说了不行，你还是硬来。这件事我不会就这么算了。",
+        "choices": [
+            "不找借口，先道歉，然后结束这段对话。",
+            "试着解释这是个误会。"
+        ]
+    },
+    "forced_violation_day5_dain_apologize": {
+        "name": "多因",
+        "text": "*多因沉默了很久，终于简短地回了一句。*行。那今天就到此为止。什么时候再说话、要不要说话，由我来决定。"
+    },
+    "forced_violation_day5_dain_excuse": {
+        "name": "多因",
+        "text": "*多因的声音变得粗重。*不。别找借口。我说了不行，你还是做了。"
+    },
+    "forced_violation_day5_after_teacher": {
+        "name": "班主任",
+        "text": "*对话结束后，班主任把界线划得更清楚了，语气严厉。*你刚才的所作所为明显越线了。不许再靠近一步。我会按照正规程序处理这件事。",
+        "choices": [
+            "不找借口，先道歉，然后结束这段对话。",
+            "试着解释这是个误会。"
+        ]
+    },
+    "forced_violation_day5_teacher_apologize": {
+        "name": "班主任",
+        "text": "*班主任短促地吸了一口气，才接着说。*你的道歉我听到了。我仍然会按正规程序处理。什么都别再说了。"
+    },
+    "forced_violation_day5_teacher_excuse": {
+        "name": "班主任",
+        "text": "*班主任打断了解释。*现在不是你给自己辩解的时候。不要再说了，保持距离。"
+    },
+    "forced_violation_day5_after_nurse": {
+        "name": "保健老师",
+        "text": "*对话中断，保健老师声音里平日的玩笑意味全都消失了。*从现在起，请保持距离。我会把发生的事记录下来，并通知需要知道的人。",
+        "choices": [
+            "不找借口，先道歉，然后结束这段对话。",
+            "试着解释这是个误会。"
+        ]
+    },
+    "forced_violation_day5_nurse_apologize": {
+        "name": "保健老师",
+        "text": "*保健老师沉默了片刻，然后语气坚定地回答。*你的道歉我听到了。但我还是会记录此事，并通知相关人员。这次谈话到此为止。"
+    },
+    "forced_violation_day5_nurse_excuse": {
+        "name": "保健老师",
+        "text": "*保健老师的声音压得更低了。*你觉得把它说成误会，就能改变什么吗？事实是，我说了不，你却无视了我。"
+    },
+    "perfect_seo_coda_1": {
+        "name": "{name}",
+        "text": "*照片下面附着一份新的学生会运营文件。最后一页的负责人一栏里，填满了夏恩的名字，书妍没有做任何修改。*"
+    },
+    "perfect_seo_coda_2": {
+        "name": "书妍",
+        "text": "先选植物吧。不，别看照片选。周六我们一起去。"
+    },
+    "perfect_seo_coda_3": {
+        "name": "{name}",
+        "text": "*预约时间是空的。我输入下午三点时，书妍回的是“好啊”，而不是“已确认”。*"
+    },
+    "perfect_yuna_coda_1": {
+        "name": "{name}",
+        "text": "*一家书店发布了签售会的公告。“崔由娜”几个字比书的封面还大，完全看不到匿名署名。*"
+    },
+    "perfect_yuna_coda_2": {
+        "name": "由娜",
+        "text": "结束之后来吧。这次我不会躲了。"
+    },
+    "perfect_yuna_coda_3": {
+        "name": "{name}",
+        "text": "*随后是一张练习签名的照片。她的名字写满了整页；只在最底下，用小字写着我的名字。*"
+    },
+    "perfect_dain_coda_1": {
+        "name": "多因",
+        "text": "我妈把重播看了三遍。她说我的解说比比赛还响。"
+    },
+    "perfect_dain_coda_2": {
+        "name": "{name}",
+        "text": "*她下一份比赛稿子的第一行，用粗体写着“疼就停下”。上面没有橡皮擦擦过的痕迹。*"
+    },
+    "perfect_dain_coda_3": {
+        "name": "多因",
+        "text": "之后我们一起走回家吧。今天我来定节奏。"
+    },
+    "ending_counteroffer_choice_lead": {
+        "name": "{name}",
+        "text": "*我先选了自己先前许下承诺的那个人，但一句道歉，抹不去昨晚发生的事。*"
+    },
+    "ending_counteroffer_choice_tempter": {
+        "name": "{name}",
+        "text": "*我选了一个人，但在任何新的开始之前，还有一段关系需要了结。*"
+    },
+    "ending_counteroffer_choice_neither": {
+        "name": "{name}",
+        "text": "*在我说出哪一个都不会抓住之后，我们三个人之间的对话就在那里结束了。*"
+    },
+    "ending_counteroffer_bitter_route": {},
+    "true_yuna_5_established": {
+        "name": "{name}",
+        "text": "当年的那首第三首歌？"
+    },
+    "true_yuna_5_first": {
+        "name": "{name}",
+        "text": "只有第三首歌上有星星。它很特别吗？"
+    },
+    "true_yuna_6_established": {
+        "name": "由娜",
+        "text": "你记得啊。"
+    },
+    "true_yuna_6_first": {
+        "name": "由娜",
+        "text": "嗯。我想和你一起听这一首。"
+    },
+    "good_epilogue_1_yuna_established": {
+        "name": "{name}",
+        "text": "*一张折起来的便条从包里掉了出来。折痕说明它曾长时间被压在衬里上。“如果你读完了第一卷，我就把第二卷借给你。——由娜”*"
+    },
+    "good_epilogue_1_yuna_first": {
+        "name": "{name}",
+        "text": "*由娜递来一张新的便条：“我选了一本想和你一起读的书。明天我们去借吧。——由娜”*"
+    },
+    "forced_violation_day5_after_haeun": {
+        "name": "夏恩",
+        "text": "*夏恩后退一步，攥住了她的学生会手环。*别再靠近了。我现在就去叫老师。",
+        "choices": [
+            "承认错误，保持距离。",
+            "声称这是个误会。"
+        ]
+    },
+    "forced_violation_day5_haeun_apologize": {
+        "name": "夏恩",
+        "text": "*夏恩什么也没回答，向办公室的方向退去。她一直盯着，直到确认你没有跟上来。*"
+    },
+    "forced_violation_day5_haeun_excuse": {
+        "name": "夏恩",
+        "text": "这不是误会。别跟着我。*夏恩保持着距离，推开了办公室的门。*"
+    }
+}

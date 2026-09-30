@@ -19,11 +19,11 @@ async function waitForRuntime(page) {
 
 const localizedGamePages = [
     'game.html', 'game-en.html', 'game-ja.html', 'game-es.html',
-    'game-fr.html', 'game-de.html', 'game-pt.html'
+    'game-fr.html', 'game-de.html', 'game-pt.html', 'game-zh.html'
 ];
 const localizedLandingPages = [
     'index.html', 'index-en.html', 'index-ja.html', 'index-es.html',
-    'index-fr.html', 'index-de.html', 'index-pt.html'
+    'index-fr.html', 'index-de.html', 'index-pt.html', 'index-zh.html'
 ];
 
 for (const pageName of localizedGamePages) {

@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-for (const [index, lang] of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].entries()) {
+for (const [index, lang] of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'].entries()) {
     test(`${lang}: Haeun CGs unlock only when viewed and open native masters in the gallery`, async ({ page }) => {
         test.setTimeout(120_000);
         const suffix = lang === 'ko' ? '' : `-${lang}`;

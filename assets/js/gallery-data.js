@@ -670,6 +670,145 @@ class GalleryData {
                 personality: 'Prática, Tranquila',
                 expressions: ['normal', 'shy', 'angry', 'flushed', 'worried', 'tired', 'dry_smile', 'smile', 'sad', 'bikini']
             }
+        },
+        zh: {
+            "seyoun": {
+                id: 'seyoun',
+                "name": "书妍",
+                "title": "不留任何空白的学生会长",
+                "shortDescription": "仔细核对日程和钥匙使用登记的学生会长。",
+                "description": "把活动流程和使用记录都记得一丝不苟的学生会长。就连拜托别人帮忙，也会先把理由和时间讲清楚。她正在学着和别人分担原本独自扛下的事，把正式借出的天台钥匙和两人接下来的约定一并记了下来。",
+                "age": "18岁",
+                "birthday": "3月14日",
+                "height": "165 cm",
+                "weight": "52 kg",
+                "bust": "36-23-35 70E",
+                "hobby": "音乐、读书",
+                "personality": "负责、谨慎",
+                "expressions": [
+                    "normal",
+                    "shy",
+                    "shy2",
+                    "angry",
+                    "sad",
+                    "laugh",
+                    "cry",
+                    "pout",
+                    "worried",
+                    "back",
+                    "flushed",
+                    "climax",
+                    "bikini"
+                ]
+            },
+            "yuna": {
+                id: 'yuna',
+                "name": "由娜",
+                "title": "用便条挑选话语的读书人",
+                "shortDescription": "会先把想说的话写在书签和便条上，再开口的读书人。",
+                "description": "珍惜图书馆别馆那个安静座位的读书人。她从不催着要答案，会用淡紫色墨水把难以说出口的句子写下来。当她把独自写了很久的小说交给对方时，会留出时间让对方慢慢读、慢慢回应。",
+                "age": "18岁",
+                "birthday": "7月22日",
+                "height": "162 cm",
+                "weight": "49 kg",
+                "bust": "34-21-34 65E",
+                "hobby": "音乐、写小说",
+                "personality": "善于观察、谨慎",
+                "expressions": [
+                    "normal",
+                    "smile",
+                    "shy",
+                    "angry",
+                    "sad",
+                    "bored",
+                    "flushed",
+                    "worried",
+                    "laugh",
+                    "pout",
+                    "climax",
+                    "bikini"
+                ]
+            },
+            "dain": {
+                id: 'dain',
+                "name": "多因",
+                "title": "寻找球场之外前路的排球队员",
+                "shortDescription": "遇到挑战立刻接招，却迟迟不肯承认膝盖受伤的排球队员。",
+                "description": "猜拳和打排球一样全力以赴的排球队员。她曾想用一句“我没事”把疼痛糊弄过去，最后还是告诉了教练和父母，并预约了康复治疗。如今她想为自己试一试另一条路：不只是上场比赛，也可以做体育解说。",
+                "age": "18岁",
+                "birthday": "12月25日",
+                "height": "158 cm",
+                "weight": "54 kg",
+                "bust": "37-22-35 65H",
+                "hobby": "排球、体育转播",
+                "personality": "直率、好胜",
+                "expressions": [
+                    "normal",
+                    "shy",
+                    "angry",
+                    "sad",
+                    "pain",
+                    "laugh",
+                    "pout",
+                    "active",
+                    "sweat",
+                    "flushed",
+                    "climax",
+                    "bikini"
+                ]
+            },
+            "teacher": {
+                id: 'teacher',
+                "name": "班主任",
+                "title": "重写自己手稿的班主任",
+                "shortDescription": "希望学生拿出自己读到的东西，而不是给她“标准答案”的语文老师。",
+                "description": "把授课、辅导和自己的写作划分得清清楚楚的语文老师。她把搁置了七年的手稿交给文艺部的公开合评，并根据匿名意见重写了最后一章。师生关系会在毕业典礼上以一句郑重的告别画上句号。",
+                "age": "28岁",
+                "birthday": "5月5日",
+                "height": "170 cm",
+                "weight": "58 kg",
+                "bust": "38-24-38 70G",
+                "hobby": "读书、看电影",
+                "personality": "有原则、爱反思",
+                "expressions": [
+                    "normal",
+                    "smile",
+                    "shy",
+                    "angry",
+                    "sad",
+                    "flushed",
+                    "worried",
+                    "climax",
+                    "bikini"
+                ]
+            },
+            "nurse": {
+                id: 'nurse',
+                "name": "保健老师",
+                "title": "为学生牵线求助的保健老师",
+                "shortDescription": "先确认症状和记录，再把学生引向合适的大人的保健老师。",
+                "description": "会先确认学生的状态和就诊时间，然后才开玩笑的保健老师。她会具体地告诉学生，该怎样向保健室、心理辅导室、监护人和老师求助。辅导结束后，她会正式结案，让每一位毕业生走向各自的人生。",
+                "age": "26岁",
+                "birthday": "9月12日",
+                "height": "168 cm",
+                "weight": "60 kg",
+                "bust": "38-24-38 70H",
+                "hobby": "园艺、冥想",
+                "personality": "务实、沉稳",
+                "expressions": [
+                    "normal",
+                    "shy",
+                    "angry",
+                    "flushed",
+                    "worried",
+                    "tired",
+                    "dry_smile",
+                    "smile",
+                    "sad",
+                    "climax",
+                    "bikini"
+                ]
+            }
         }
     };
 
@@ -853,6 +992,29 @@ class GalleryData {
             climax: 'Clímax',
             bikini: '???',
             awkward: 'Sem jeito'
+        },
+        zh: {
+            "normal": "普通",
+            "shy": "害羞",
+            "shy2": "害羞2",
+            "angry": "生气",
+            "sad": "难过",
+            "pain": "疼痛",
+            "laugh": "大笑",
+            "cry": "哭泣",
+            "pout": "闹别扭",
+            "worried": "担心",
+            "tired": "疲惫",
+            "dry_smile": "苦笑",
+            "back": "背影",
+            "smile": "微笑",
+            "bored": "无聊",
+            "active": "活泼",
+            "sweat": "出汗",
+            "flushed": "脸红",
+            "climax": "高潮",
+            "bikini": "???",
+            "awkward": "尴尬"
         }
     };
 
@@ -1716,6 +1878,41 @@ class GalleryData {
             { id: 'ending_perfect_nurse', name: 'Uma manhã juntos', character: 'Enfermeira', description: 'A manhã compartilhada por dois adultos que se reencontraram cinco anos após a formatura e continuaram se vendo por vários meses', file: 'assets/images/background/ending_perfect_nurse.png', thumbnail: 'assets/images/background/ending_perfect_nurse.png',
                 unlockHint: "Alcance o final perfeito da enfermeira"
             }
+        ],
+        zh: [
+            {"id":"event_haeun_trust","name":"我求助了","character":"夏恩","description":"在广播室门外，夏恩把文件箱拉到自己身边，替主角说话","file":"assets/images/background/event_haeun_trust.png","thumbnail":"assets/images/background/event_haeun_trust.webp","unlockHint":"在第5天午休时，信任度达到8以上，看到夏恩替主角辩护"},
+            {"id":"event_haeun_reputation","name":"校门口的解释","character":"夏恩","description":"夏恩在校门口解释，昨天的那番对话为什么让她不舒服","file":"assets/images/background/event_haeun_reputation.png","thumbnail":"assets/images/background/event_haeun_reputation.webp","unlockHint":"在第4天早晨，带着低于0的夏恩信任度，进入名声澄清的情节"},
+            {"id":"nurse_home_event1","name":"朱媛家的早晨","character":"保健老师","description":"毕业五年后重逢、周末相处了几个月的两个成年人共度的早晨","file":"assets/images/background/nurse_home_event1.png","thumbnail":"assets/images/background/nurse_home_event1.png"},
+            {"id":"dain_hurt_event1","name":"多因的伤","character":"多因","description":"多因在体育馆里伤了膝盖","file":"assets/images/background/dain_hurt_event1.png","thumbnail":"assets/images/background/dain_hurt_event1.png"},
+            {"id":"dain_depression_event1","name":"多因的眼泪","character":"多因","description":"多因独自在昏暗的体育馆里哭泣","file":"assets/images/background/dain_depression_event1.png","thumbnail":"assets/images/background/dain_depression_event1.png"},
+            {"id":"ending_perfect_seoyeon","name":"与书妍的约定","character":"书妍","description":"打理完天台的花盆后，书妍站在敞开的门边，留下了关于明天的约定","file":"assets/images/background/ending_perfect_seoyeon.png","thumbnail":"assets/images/background/ending_perfect_seoyeon.png","unlockHint":"达成书妍的完美结局"},
+            {"id":"ending_perfect_yuna","name":"由娜的回答","character":"由娜","description":"在图书馆别馆交出小说之后，由娜隔着一掌的距离，等待你的许可","file":"assets/images/background/ending_perfect_yuna.png","thumbnail":"assets/images/background/ending_perfect_yuna.png","unlockHint":"达成由娜的完美结局"},
+            {"id":"ending_perfect_dain","name":"多因的胜利","character":"多因","description":"在体育馆里，多因先征得同意，然后避开受伤的膝盖，抱住了你","file":"assets/images/background/ending_perfect_dain.png","thumbnail":"assets/images/background/ending_perfect_dain.png","unlockHint":"达成多因的完美结局"},
+            {"id":"ending_bittersweet","name":"雨中的告别","character":null,"description":"雨天的校门口，独自撑着伞，望着某个人渐渐走远","file":"assets/images/background/ending_bittersweet.png","thumbnail":"assets/images/background/ending_bittersweet.png","unlockHint":"达成苦涩结局"},
+            {"id":"ending_true_teacher","name":"下周的约定","character":"班主任","description":"毕业四年后，两个成年人偶然重逢，在咖啡馆里问起下一次见面","file":"assets/images/background/ending_true_teacher.png","thumbnail":"assets/images/background/ending_true_teacher.png","unlockHint":"达成班主任的真爱结局"},
+            {"id":"ending_true_nurse","name":"安心的地方","character":"保健老师","description":"毕业四年后重逢、已经交往三个月的两个成年人，一起看电影的夜晚","file":"assets/images/background/ending_true_nurse.png","thumbnail":"assets/images/background/ending_true_nurse.png","unlockHint":"达成保健老师的真爱结局"},
+            {"id":"ending_harem","name":"不同的答案","character":null,"description":"当着三个人的面说出真心的答案，每个人的界线都变得清楚的那一刻","file":"assets/images/background/ending_harem.png","thumbnail":"assets/images/background/ending_harem.png","unlockHint":"达成不同的答案结局"},
+            {"id":"ending_alone","name":"空荡荡的房间","character":null,"description":"黑暗的房间。关机的手机。窗外的一盏路灯。","file":"assets/images/background/ending_alone.png","thumbnail":"assets/images/background/ending_alone.png","unlockHint":"达成孤单结局"},
+            {"id":"ending_friend","name":"我们的毕业照","character":null,"description":"毕业那天在教室里拍下的五个人的合影自拍","file":"assets/images/background/ending_friend.png","thumbnail":"assets/images/background/ending_friend.png","unlockHint":"达成朋友结局"},
+            {"id":"ending_true_seoyeon","name":"书妍的房间","character":"书妍","description":"在书妍房间里的一个夜晚，两人之间放着两只杯子，花盆托盘下压着一张折起来的字条","file":"assets/images/background/ending_true_seoyeon.png","thumbnail":"assets/images/background/ending_true_seoyeon.png","unlockHint":"达成书妍的真爱结局"},
+            {"id":"ending_true_yuna","name":"天台上的星星","character":"由娜","description":"并肩坐在天台栏杆前，眺望城市和一弯新月的夜晚","file":"assets/images/background/ending_true_yuna.png","thumbnail":"assets/images/background/ending_true_yuna.png","unlockHint":"达成由娜的真爱结局"},
+            {"id":"ending_true_dain","name":"多因的下一个约定","character":"多因","description":"预约好医院之后，多因在体育馆里留出一个肩膀宽的距离，等待你的回答","file":"assets/images/background/ending_true_dain.png","thumbnail":"assets/images/background/ending_true_dain.png","unlockHint":"达成多因的真爱结局"},
+            {"id":"ending_good_seoyeon","name":"公园里的两个人","character":"书妍","description":"黄昏的公园里，两人放慢脚步走在一起，定下了下次见面的时间和地点","file":"assets/images/background/ending_good_seoyeon.png","thumbnail":"assets/images/background/ending_good_seoyeon.png","unlockHint":"达成书妍的好结局"},
+            {"id":"ending_good_yuna","name":"天台的下一章","character":"由娜","description":"校园广播安静下来之后，两人依然留在同一处栏杆旁，挑选下一张书签","file":"assets/images/background/ending_good_yuna.png","thumbnail":"assets/images/background/ending_good_yuna.png","unlockHint":"达成由娜的好结局"},
+            {"id":"ending_good_dain","name":"校门口的问候","character":"多因","description":"夕阳下的校门口，多因伸出拳头，等待你的回应","file":"assets/images/background/ending_good_dain.png","thumbnail":"assets/images/background/ending_good_dain.png","unlockHint":"达成多因的好结局"},
+            {"id":"ending_confess_fail_seoyeon","name":"书妍的回答","character":"书妍","description":"日落时分的公园里，书妍听到了最后，清楚地说现在还不是时候","file":"assets/images/background/ending_confess_fail_seoyeon.png","thumbnail":"assets/images/background/ending_confess_fail_seoyeon.png","unlockHint":"被书妍拒绝"},
+            {"id":"ending_confess_fail_yuna","name":"由娜的回答","character":"由娜","description":"并肩走到公园出口后，由娜说她无法回应这份心意","file":"assets/images/background/ending_confess_fail_yuna.png","thumbnail":"assets/images/background/ending_confess_fail_yuna.png","unlockHint":"被由娜拒绝"},
+            {"id":"ending_confess_fail_dain","name":"多因的回答","character":"多因","description":"擦干眼泪之后，多因清楚地说，她希望两人继续做朋友","file":"assets/images/background/ending_confess_fail_dain.png","thumbnail":"assets/images/background/ending_confess_fail_dain.png","unlockHint":"被多因拒绝"},
+            {"id":"ending_mayhem","name":"已读之后的距离","character":null,"description":"三个没人回复的聊天窗口，和三个朝不同方向走远的人","file":"assets/images/background/ending_mayhem.png","thumbnail":"assets/images/background/ending_mayhem.png","unlockHint":"劈腿被发现"},
+            {"id":"event_temptation_seoyeon","name":"没有回头路","character":"书妍","description":"夜里风很大的天台上，书妍毫不犹豫地伸出手，等待你的回答","file":"assets/images/background/event_temptation_seoyeon.png","thumbnail":"assets/images/background/event_temptation_seoyeon.png","unlockHint":"在第4天接受情敌书妍的提议"},
+            {"id":"event_temptation_yuna","name":"无处可躲","character":"由娜","description":"在旧图书馆的隐蔽角落，由娜一只手撑在书架上，毫不退缩地等待你的回答","file":"assets/images/background/event_temptation_yuna.png","thumbnail":"assets/images/background/event_temptation_yuna.png","unlockHint":"在第4天接受情敌由娜的提议"},
+            {"id":"event_temptation_dain","name":"昏暗的体育馆","character":"多因","description":"训练结束后，在昏暗的体育馆里，多因放低球，朝你走近一步","file":"assets/images/background/event_temptation_dain.png","thumbnail":"assets/images/background/event_temptation_dain.png","unlockHint":"在第4天接受情敌多因的提议"},
+            {"id":"ending_bittersweet_teacher","name":"退回的信","character":"班主任","description":"毕业之后，在空荡荡的教室里，班主任把推荐信和信件放在讲桌上，选择了告别","file":"assets/images/background/ending_bittersweet_teacher.png","thumbnail":"assets/images/background/ending_bittersweet_teacher.png","unlockHint":"达成班主任的苦涩结局"},
+            {"id":"ending_bittersweet_nurse","name":"结案","character":"保健老师","description":"辅导档案和联系便条被放回桌上，在保健室的门关上之前，留下最后一句告别","file":"assets/images/background/ending_bittersweet_nurse.png","thumbnail":"assets/images/background/ending_bittersweet_nurse.png","unlockHint":"达成保健老师的苦涩结局"},
+            {"id":"ending_good_teacher","name":"毕业典礼上的送别","character":"班主任","description":"毕业那天交出推荐信和合评复印件之后，班主任在走廊的窗边目送毕业生","file":"assets/images/background/ending_good_teacher.png","thumbnail":"assets/images/background/ending_good_teacher.png","unlockHint":"达成班主任的好结局"},
+            {"id":"ending_good_nurse","name":"最后一次检查","character":"保健老师","description":"毕业那天，保健老师合上辅导记录，向毕业生简短地道别","file":"assets/images/background/ending_good_nurse.png","thumbnail":"assets/images/background/ending_good_nurse.png","unlockHint":"达成保健老师的好结局"},
+            {"id":"ending_perfect_teacher","name":"樱花树下的花束","character":"班主任","description":"毕业四年后，两个成年人重逢，出版了作品的作者在能看到樱花的咖啡馆露台上献上祝贺的花束","file":"assets/images/background/ending_perfect_teacher.png","thumbnail":"assets/images/background/ending_perfect_teacher.png","unlockHint":"达成班主任的完美结局"},
+            {"id":"ending_perfect_nurse","name":"一起度过的早晨","character":"保健老师","description":"毕业五年后重逢、又相处了几个月的两个成年人共度的早晨","file":"assets/images/background/ending_perfect_nurse.png","thumbnail":"assets/images/background/ending_perfect_nurse.png","unlockHint":"达成保健老师的完美结局"}
         ]
     };
 
@@ -1804,6 +2001,11 @@ class GalleryData {
             discovered: 'finais encontrados', complete: 'Descoberto', locked: 'Não descoberto', hintLabel: 'Dica',
             labels: { perfect: 'PERFECT', true: 'TRUE LOVE', good: 'GOOD', counteroffer: 'Escolha abalada', bittersweet: 'BITTERSWEET', lateGood: 'Confissão tardia', confessFail: 'Confissão recusada', friend: 'Amizade', mayhem: 'Ruptura', unresolved: 'Respostas desencontradas', alone: 'Só' },
             hints: { perfect: 'Conclua a rota de {character} com 100 de afinidade.', true: 'Chegue ao último dia da rota de {character} com pelo menos 60 de afinidade.', good: 'Aceite a confissão de {character} e mantenha pelo menos 40 de afinidade.', counteroffer: 'Aceite a proposta de outra pessoa depois de se comprometer com {character} e encare o resultado.', bittersweet: 'Chegue ao último dia da rota de {character} com menos de 40 de afinidade.', lateGood: 'Adie a confissão de {character} e fale com sinceridade na última oportunidade.', confessFail: 'Adie a confissão de {character} e confesse antes que a relação esteja profunda o bastante.', friend: 'Escolha continuar como amigos em vez de fazer a confissão final.', mayhem: 'Faça várias promessas e deixe que sejam descobertas antes do último dia.', unresolved: 'Chegue ao último dia sem escolher uma única resposta entre vários relacionamentos.', alone: 'Chegue ao último dia sem entrar na rota de ninguém.' }
+        },
+        zh: {
+            discovered: "已发现的结局", complete: "已全部发现", locked: "未发现", hintLabel: "提示",
+            labels: {"perfect":"PERFECT","true":"TRUE LOVE","good":"GOOD","counteroffer":"动摇的选择","bittersweet":"BITTERSWEET","lateGood":"迟来的告白","confessFail":"告白失败","friend":"朋友","mayhem":"崩塌","unresolved":"错位的回答","alone":"孤单"},
+            hints: {"perfect":"以好感度100走完{character}的路线。","true":"以至少60的好感度迎来{character}路线的最后一天。","good":"接受{character}的告白，并保持至少40的好感度。","counteroffer":"在向{character}许下约定之后，接受别人的提议，并面对结果。","bittersweet":"以低于40的好感度迎来{character}路线的最后一天。","lateGood":"推迟{character}的告白，在最后的机会坦诚相告。","confessFail":"推迟{character}的告白，并在关系还不够深时再次告白。","friend":"最后选择继续做朋友，而不是告白。","mayhem":"许下多个约定，在事情败露后迎来最后一天。","unresolved":"面对多段关系，始终没有给出唯一的答案，直到最后一天。","alone":"不进入任何人的路线，直接迎来最后一天。"}
         }
     };
 
@@ -1918,6 +2120,20 @@ class GalleryData {
             { id: 'mystery', name: 'Algo estranho no ar', artist: 'Cupid OST', duration: '5:16', file: 'assets/audio/bgm/mystery.mp3' },
             { id: 'confession', name: 'Confissão', artist: 'Cupid OST', duration: '6:43', file: 'assets/audio/bgm/confession.mp3' },
             { id: 'ending', name: 'Tema de encerramento', artist: 'Cupid OST', duration: '4:56', file: 'assets/audio/bgm/ending.mp3' }
+        ],
+        zh: [
+            { id: 'intro', name: '主题曲', artist: 'Cupid OST', duration: '2:30', file: 'assets/audio/bgm/intro.mp3' },
+            { id: 'morning', name: '清爽的早晨', artist: 'Cupid OST', duration: '3:25', file: 'assets/audio/bgm/morning.mp3' },
+            { id: 'daily', name: '日常校园生活', artist: 'Cupid OST', duration: '3:15', file: 'assets/audio/bgm/daily.mp3' },
+            { id: 'daily2', name: '悠闲的午后', artist: 'Cupid OST', duration: '3:00', file: 'assets/audio/bgm/daily2.mp3' },
+            { id: 'sunset1', name: '夕阳下的回家路', artist: 'Cupid OST', duration: '2:45', file: 'assets/audio/bgm/sunset1.mp3' },
+            { id: 'sunset2', name: '日落之前', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
+            { id: 'date', name: '有约会的下午', artist: 'Cupid OST', duration: '4:16', file: 'assets/audio/bgm/date.mp3' },
+            { id: 'night1', name: '安静的夜晚', artist: 'Cupid OST', duration: '3:20', file: 'assets/audio/bgm/night1.mp3' },
+            { id: 'night2', name: '秘密的夜晚', artist: 'Cupid OST', duration: '3:10', file: 'assets/audio/bgm/night2.mp3' },
+            { id: 'mystery', name: '空气中的异样', artist: 'Cupid OST', duration: '5:16', file: 'assets/audio/bgm/mystery.mp3' },
+            { id: 'confession', name: '告白', artist: 'Cupid OST', duration: '6:43', file: 'assets/audio/bgm/confession.mp3' },
+            { id: 'ending', name: '片尾曲', artist: 'Cupid OST', duration: '4:56', file: 'assets/audio/bgm/ending.mp3' }
         ]
     };
 
@@ -2231,13 +2447,33 @@ const haeunGalleryProfiles = {
             "firm",
             "relieved"
         ]
+    },
+    "zh": {
+        "id": "haeun",
+        "name": "夏恩",
+        "title": "在对话中建立起来的羁绊",
+        "shortDescription": "一直担心着书妍的学妹。比起传言，她更相信当面谈话，不舒服时会有礼貌但清楚地说出来。庆典之后的单独谈话，也许会发展成一段恋情。",
+        "description": "一直担心着书妍的学妹。比起传言，她更相信当面谈话，不舒服时会有礼貌但清楚地说出来。庆典之后的单独谈话，也许会发展成一段恋情。",
+        "age": "未公开",
+        "birthday": "未公开",
+        "height": "未公开",
+        "weight": "未公开",
+        "bust": "未公开",
+        "hobby": "未公开",
+        "personality": "一直担心着书妍的学妹。比起传言，她更相信当面谈话，不舒服时会有礼貌但清楚地说出来。庆典之后的单独谈话，也许会发展成一段恋情。",
+        "expressions": [
+            "normal",
+            "worried",
+            "firm",
+            "relieved"
+        ]
     }
 };
 for (const [lang, profile] of Object.entries(haeunGalleryProfiles)) {
     GalleryData.characters[lang].haeun = profile;
     Object.assign(GalleryData.expressions[lang], {
-        firm: {"ko":"단호함","en":"Firm","ja":"毅然","es":"Firme","fr":"Ferme","de":"Entschlossen","pt":"Firme"}[lang],
-        relieved: {"ko":"안도","en":"Relieved","ja":"安堵","es":"Aliviada","fr":"Soulagée","de":"Erleichtert","pt":"Aliviada"}[lang]
+        firm: {"ko":"단호함","en":"Firm","ja":"毅然","es":"Firme","fr":"Ferme","de":"Entschlossen","pt":"Firme","zh":"坚决"}[lang],
+        relieved: {"ko":"안도","en":"Relieved","ja":"安堵","es":"Aliviada","fr":"Soulagée","de":"Erleichtert","pt":"Aliviada","zh":"安心"}[lang]
     });
 }
 const haeunEndingCG = {
@@ -2303,6 +2539,15 @@ const haeunEndingCG = {
         "file": "assets/images/background/ending_perfect_haeun.png",
         "thumbnail": "assets/images/background/ending_perfect_haeun.webp",
         "unlockHint": "Escolha Haeun e alcance o final dela com 100 de afinidade"
+    },
+    "zh": {
+        "id": "ending_perfect_haeun",
+        "name": "明天，只有我们",
+        "character": "夏恩",
+        "description": "庆典之后，夏恩在公园长椅上坐到主角身旁，答应和他交往",
+        "file": "assets/images/background/ending_perfect_haeun.png",
+        "thumbnail": "assets/images/background/ending_perfect_haeun.webp",
+        "unlockHint": "选择夏恩，以好感度100达成她的结局"
     }
 };
 for (const [lang, cg] of Object.entries(haeunEndingCG)) GalleryData.cg[lang].push(cg);

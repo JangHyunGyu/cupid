@@ -10,7 +10,7 @@ for (const file of ['freetalk-core.js', 'prompts.js', 'gallery-freetalk.js', 'mo
 }
 const api = runtime.window;
 const core = api.CupidFreeTalkCore;
-const languages = ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt'];
+const languages = ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt', 'zh'];
 const characters = ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse'];
 const scores = [-1, -19, -20, -39, -40, -59, -60, -79, -80, -100];
 const split = prompt => {

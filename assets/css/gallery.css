@@ -1993,3 +1993,16 @@ body::before {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
+
+/* 简体中文 */
+html[lang^="zh"] {
+    --font-stack: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+}
+
+html[lang^="zh"],
+html[lang^="zh"] body,
+html[lang^="zh"] button,
+html[lang^="zh"] .lang-btn,
+html[lang^="zh"] .lang-combo-selected {
+    font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+}

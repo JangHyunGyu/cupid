@@ -61,8 +61,8 @@
         var htmlLang = '';
         try { htmlLang = String(document.documentElement.lang || '').toLowerCase().split('-')[0]; }
         catch (_) { /* ignore */ }
-        if (/^(en|ja|es|fr|de|pt)$/.test(htmlLang)) return htmlLang;
-        var pathMatch = pagePath.match(/-(en|ja|es|fr|de|pt)(?:\.html)?(?:\/|$)/i);
+        if (/^(en|ja|es|fr|de|pt|zh)$/.test(htmlLang)) return htmlLang;
+        var pathMatch = pagePath.match(/-(en|ja|es|fr|de|pt|zh)(?:\.html)?(?:\/|$)/i);
         return pathMatch ? pathMatch[1].toLowerCase() : 'ko';
     }
 

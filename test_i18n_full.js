@@ -5,7 +5,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const LANGS = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'];
+const LANGS = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'];
 const BASE = path.join(__dirname, 'assets', 'js', 'i18n');
 const SCENARIO_DIR = path.join(__dirname, 'assets', 'js', 'scenario');
 

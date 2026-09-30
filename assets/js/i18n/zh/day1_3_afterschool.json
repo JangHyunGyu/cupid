@@ -1,0 +1,552 @@
+{
+    "after_start": {
+        "name": "{name}",
+        "text": "*放学后，我在走廊里边走边熟悉校内布局。口袋里的手机震了一下。是旧学校的群聊。*"
+    },
+    "after_kakao_1": {
+        "name": "{name}",
+        "text": "*“喂，素晶在新学校过得挺好的。”“听到就放心了哈哈。”熟悉的名字一个接一个跳出来。*"
+    },
+    "after_kakao_3": {
+        "name": "{name}",
+        "text": "*我又读了一遍最后一条消息。“听到就放心了哈哈。”我点开回复框，却想不出该写什么。*"
+    },
+    "after_kakao_5": {},
+    "after_kakao_end": {
+        "name": "{name}",
+        "text": "*犹豫了一会儿，我退出了那个群聊。新学校的群聊现在排到了列表的最上面。*"
+    },
+    "after1_jealousy_seo_1": {
+        "name": "多因",
+        "text": "喂，午休你去哪儿了？我去小卖部找你，你不在。"
+    },
+    "after1_jealousy_seo_2": {
+        "name": "{name}",
+        "text": "*我在回复框里输入“和书妍在一起”，又删掉了。光标在第一格里孤零零地闪烁着。*"
+    },
+    "after1_jealousy_seo_3": {
+        "name": "多因",
+        "text": "我看到你从天台下来了。就你们两个人？"
+    },
+    "after1_jealousy_seo_choice": {
+        "name": "多因",
+        "text": "*我握着手机的手紧了紧。*",
+        "choices": [
+            "我和会长在天台吃的饭。（坦白）",
+            "我就一个人到处逛了逛。（撒谎）",
+            "早知道你会这样找我，我就该叫你一起吃的。",
+            "早知道你会吃醋，我就先告诉你了。"
+        ]
+    },
+    "after1_jealousy_seo_honest": {
+        "name": "{name}",
+        "text": "嗯，是她带我上去的。连两人份的便当都准备好了。"
+    },
+    "after1_jealousy_seo_honest_2": {
+        "name": "多因",
+        "text": "哦？那你至少该告诉我一声吧。"
+    },
+    "after1_jealousy_seo_lie": {
+        "name": "{name}",
+        "text": "没有啦，我就是一个人瞎逛。"
+    },
+    "after1_jealousy_seo_lie_2": {
+        "name": "多因",
+        "text": "真的？……那大概是我看错了。"
+    },
+    "after1_jealousy_seo_yuna": {
+        "name": "{name}",
+        "text": "*一张折起的纸条卡在书包侧袋里。是由娜的字迹。“午休时我在天台看到你了。你和学生会长看起来很亲近。”最后那个句号已经洇进了纸里。*"
+    },
+    "after1_jealousy_dain_1": {
+        "name": "书妍",
+        "text": "午休时我看到你和多因在小卖部了。你适应得挺快嘛。"
+    },
+    "after1_jealousy_dain_2": {
+        "name": "{name}",
+        "text": "*书妍把写字板上的纸张理整齐。我停下脚步，思考该怎么回答。*"
+    },
+    "after1_jealousy_yuna_1": {
+        "name": "多因",
+        "text": "你午休去图书馆了？和由娜？"
+    },
+    "after1_jealousy_yuna_2": {
+        "name": "多因",
+        "text": "她平时不怎么跟人待在一起的。"
+    },
+    "after1_pre_miss": {
+        "name": "{name}",
+        "text": "*我继续沿着走廊往前走。*"
+    },
+    "after_dain_skip": {},
+    "after_miss_dain_1": {
+        "name": "{name}",
+        "text": "*我沿着走廊往前走，身后传来沉重的脚步声。*"
+    },
+    "after_miss_dain_2": {
+        "name": "多因",
+        "text": "小心！"
+    },
+    "after_miss_dain_3": {
+        "name": "{name}",
+        "text": "*我侧身让开，多因从我身边擦了过去。跑出三步后，她的运动鞋在地板上拖出一声急停。*"
+    },
+    "after_miss_dain_4": {
+        "name": "多因",
+        "text": "哦！反应不错嘛！"
+    },
+    "after_miss_dain_5": {
+        "name": "{name}",
+        "text": "你为什么在走廊里狂奔？"
+    },
+    "after_miss_dain_6": {
+        "name": "多因",
+        "text": "迟到了！要去体育馆！——明天见啦，转学生！"
+    },
+    "after_miss_dain_6_b": {
+        "name": "{name}",
+        "text": "*跑了几步后，她一只手撑住了右膝。她立刻把手挪开，又加快了速度。*"
+    },
+    "after_miss_dain_7": {
+        "name": "{name}",
+        "text": "*拐弯之前，多因把一只手高高举起。老师刚才叫过的那个名字，我终于想起来了。多因。*"
+    },
+    "after_yuna_skip": {},
+    "after_miss_yuna_1": {
+        "name": "{name}",
+        "text": "*经过图书馆门口时，我看到一个红眼睛的女生边走边看书。她那条有文身的手臂，小心地托着书脊。*"
+    },
+    "after_miss_yuna_1_b": {
+        "name": "{name}",
+        "text": "嘿，你东西掉了。"
+    },
+    "after_miss_yuna_1_c": {
+        "name": "{name}",
+        "text": "*我捡起来递过去。由娜把书夹在一条胳膊下面，接过了书签。*"
+    },
+    "after_miss_yuna_2": {
+        "name": "由娜",
+        "text": "*她用拇指把书签的边角抹平，举到灯光下看。没有折痕。*"
+    },
+    "after_miss_yuna_3": {
+        "name": "由娜",
+        "text": "谢谢。"
+    },
+    "after_miss_yuna_3_b": {
+        "name": "由娜",
+        "text": "*她把书签夹回书页之间，转身离开。*"
+    },
+    "after_miss_yuna_4": {},
+    "after_miss_seoyeon_1": {
+        "name": "{name}",
+        "text": "*出去的路上，我在走廊里遇到了书妍。*"
+    },
+    "after_miss_seoyeon_2": {
+        "name": "书妍",
+        "text": "你刚才去哪儿了？"
+    },
+    "after_miss_seoyeon_3": {
+        "name": "{name}",
+        "text": "什么意思？"
+    },
+    "after_miss_seoyeon_4": {
+        "name": "书妍",
+        "text": "我把天台留着，你却没来。——转学生，你胆子不小啊。"
+    },
+    "after_miss_seoyeon_5": {
+        "name": "{name}",
+        "text": "你等我了？"
+    },
+    "after_miss_seoyeon_6": {
+        "name": "书妍",
+        "text": "我已经开始吃了。下次提前告诉我一声就好。"
+    },
+    "after_miss_seoyeon_7": {
+        "name": "{name}",
+        "text": "*书妍把写字板转过来抵在胸前，看也没看我，只是合上了笔帽。*"
+    },
+    "after_miss_seoyeon_8": {
+        "name": "书妍",
+        "text": "明天别再跑掉了。"
+    },
+    "after_end": {
+        "name": "{name}",
+        "text": "*放学广播响起，留在走廊里的学生渐渐稀少。*",
+        "choices": [
+            "教师办公室",
+            "保健室",
+            "回家"
+        ]
+    },
+    "after_hidden_homeroom_1": {
+        "name": "{name}",
+        "text": "*我正要离开，忽然想起班主任在所有人都走后还留下来整理点名册。我在教师办公室外敲了敲门，推开门。*"
+    },
+    "after_hidden_homeroom_cool": {
+        "name": "班主任",
+        "text": "*她没有合上点名册，只是朝门口看了过来。*我还在点名。这事明天在班里说吧。"
+    },
+    "after_hidden_homeroom_neg": {
+        "name": "班主任",
+        "text": "*她把写字板抱在胸前。*该回家了。明天见。"
+    },
+    "after_hidden_homeroom_2": {
+        "name": "班主任",
+        "text": "哦，{name}？——有事吗？"
+    },
+    "after_hidden_homeroom_3": {
+        "name": "{name}",
+        "text": "*是班主任。她的开衫有一只袖子卷了起来，点名册的页面之间露出一张皱巴巴的通知。*"
+    },
+    "after_hidden_homeroom_3_b": {
+        "name": "{name}",
+        "text": "我想问一下关于适应新环境的事。"
+    },
+    "after_hidden_homeroom_3_c": {
+        "name": "班主任",
+        "text": "哦。原来是这件事？——你来得正好。坐一会儿。"
+    },
+    "after_hidden_homeroom_4": {
+        "name": "班主任",
+        "text": "你没有惹麻烦。——只是关心一下新同学。到现在感觉怎么样？"
+    },
+    "after_hidden_homeroom_choice": {
+        "name": "班主任",
+        "text": "*班主任放下写字板，看着{name}的脸。*",
+        "choices": [
+            "还好。不过还是觉得很陌生。",
+            "说实话？压力很大。",
+            "你不用因为我是转学生，就特意为我费心。"
+        ]
+    },
+    "after_homeroom_choice_trap": {
+        "name": "班主任",
+        "text": "*写字板又抬到了她胸前。*这不是特殊待遇。这是我作为你老师的分内之事。好吧。那就到此为止。"
+    },
+    "after_homeroom_ok": {
+        "name": "班主任",
+        "text": "是吗？——有什么事就来办公室。填表格是个不错的借口。"
+    },
+    "after_homeroom_ok_b": {
+        "name": "班主任",
+        "text": "*她把桌上的文件推到一边，腾出一把椅子，然后把手搭在椅背上，示意我坐。*"
+    },
+    "after_homeroom_ok_3": {
+        "name": "班主任",
+        "text": "如果只是觉得陌生，那我就放心了。第一天就觉得像回了家，才奇怪呢。"
+    },
+    "after_homeroom_ok_4": {
+        "name": "班主任",
+        "text": "*她本来要翻的那张纸，仍然停在写字板上没动。*"
+    },
+    "after_homeroom_ok_5": {
+        "name": "班主任",
+        "text": "从第一天起就完美的话，会把自己烧干的。允许自己有点不完美。——好了，去吧。"
+    },
+    "after_homeroom_ok_6": {
+        "name": "班主任",
+        "text": "*她转回身，面向自己的办公桌。我匆匆道了别，把办公室的门在身后关上。*"
+    },
+    "after_homeroom_honest_1": {
+        "name": "班主任",
+        "text": "压力大是正常的。第一天就平静，那才奇怪。"
+    },
+    "after_homeroom_honest_2": {
+        "name": "{name}",
+        "text": "你自己也转过学吗？"
+    },
+    "after_homeroom_honest_3": {
+        "name": "班主任",
+        "text": "算是吧。我也曾被毫无预兆地扔到一个陌生的地方。"
+    },
+    "after_homeroom_honest_3_b": {
+        "name": "班主任",
+        "text": "*她把写字板在手里翻了个面，用拇指摩挲着一个角。*"
+    },
+    "after_homeroom_honest_4": {
+        "name": "班主任",
+        "text": "要是觉得难熬，就来办公室找我。我请你喝咖啡——啊，你是学生。那就请你喝果汁吧。"
+    },
+    "after_homeroom_honest_5": {
+        "name": "{name}",
+        "text": "老师请学生喝饮料？"
+    },
+    "after_homeroom_honest_6": {
+        "name": "班主任",
+        "text": "就当是出于教育上的关心吧。"
+    },
+    "after_homeroom_honest_6_b": {
+        "name": "班主任",
+        "text": "*她用拇指把点名册折起的一角压平。*"
+    },
+    "after_homeroom_honest_choice2": {
+        "name": "{name}",
+        "text": "*点名册的一角搭在桌沿上。*",
+        "choices": [
+            "你要是担心，直说就行。",
+            "那下次我也等着喝果汁了。",
+            "我可以理解成，我对你来说是特别的吗？",
+            "下次，我还想喝你替我挑的那一杯。"
+        ]
+    },
+    "after_homeroom_honest_choice2a": {
+        "name": "班主任",
+        "text": "嗯，我是担心。有这么明显吗？"
+    },
+    "after_homeroom_honest_choice2a_b": {
+        "name": "班主任",
+        "text": "*她把点名册的边缘和桌沿对得整整齐齐。*"
+    },
+    "after_homeroom_honest_choice2b": {
+        "name": "班主任",
+        "text": "*她用笔尖指了指自动贩卖机。*别抱太大期待。就是贩卖机里的果汁。"
+    },
+    "after_homeroom_honest_choice2b_b": {
+        "name": "班主任",
+        "text": "*班主任合上点名册。走到门槛处，又叫了{name}一声。*"
+    },
+    "after_homeroom_honest_7": {
+        "name": "班主任",
+        "text": "啊，{name}。"
+    },
+    "after_homeroom_honest_8": {
+        "name": "{name}",
+        "text": "是？"
+    },
+    "after_homeroom_honest_9": {
+        "name": "班主任",
+        "text": "如果你还是适应不了，我会再来找你的。"
+    },
+    "after_homeroom_honest_9_b": {
+        "name": "{name}",
+        "text": "*学生们的脚步声从门外经过。老师把手边的文件挪到一旁。*"
+    },
+    "after_homeroom_honest_10": {
+        "name": "班主任",
+        "text": "*我们走到办公室门边的走廊上。她把点名册夹在腋下，等我继续往下说。*"
+    },
+    "after_homeroom_freetalk": {
+        "name": "班主任",
+        "text": "*老师让办公室的门半开着，把点名册夹在一侧腋下。*",
+        "context": "[媒介：当面交谈] 转学生第一天放学后，在办公室外面。学生来请教如何适应新环境，班主任认真倾听了。请接着这段对话继续，回应学生实际说的话，以及他来找老师的原因。",
+        "personality": "班主任是一位细心的二十八九岁女性，留着棕色长卷发，穿着米色开衫。她把辅导和指导都限定在学校的正规流程之内。她曾梦想成为小说家，至今仍在意写作。"
+    },
+    "after_hidden_nurse_intro": {
+        "name": "{name}",
+        "text": "*日光灯的光似乎在晃动，我扶住墙壁，油漆在掌心下冰凉。旁边就挂着“保健室”的牌子。*"
+    },
+    "after_hidden_nurse_choice": {
+        "name": "{name}",
+        "text": "*从早上起我就一直被人群包围着。我的脚步在保健室门外停了下来。*",
+        "choices": [
+            "去保健室",
+            "直接回家",
+            "保健老师肯定也闲着，我陪她待一会儿吧。",
+            "做个健康咨询，说不定能拉近我们的距离。"
+        ]
+    },
+    "after_hidden_nurse_intro_b": {
+        "name": "{name}",
+        "text": "*我在门前站住，深吸一口气，把手放在门把手上。冰凉的金属贴着掌心。*"
+    },
+    "after_nurse_d1_cool": {
+        "name": "保健老师",
+        "text": "*她合上病历。*我在收拾东西了。你要是没受伤，就回去吧。"
+    },
+    "after_nurse_d1_neg": {
+        "name": "保健老师",
+        "text": "*她合上预约簿。*今天就到这里。回家吧。"
+    },
+    "after_nurse_enter_1": {
+        "name": "{name}",
+        "text": "*我推开保健室的门。消毒水的味道。白色的帘子、一张床、一张小书桌。一位穿白大褂的女人隔着眼镜看向我。挂在她脖子上的听诊器碰到桌沿，轻轻晃了晃。*"
+    },
+    "after_nurse_enter_2": {
+        "name": "保健老师",
+        "text": "哟，来病人了。"
+    },
+    "after_nurse_enter_2_b": {
+        "name": "{name}",
+        "text": "*保健老师拿出一份病历，用笔尖敲了敲最上面那一行。*"
+    },
+    "after_nurse_enter_3": {
+        "name": "{name}",
+        "text": "我有点头晕。"
+    },
+    "after_nurse_enter_4": {
+        "name": "保健老师",
+        "text": "你是那个转学生吧？第一天就来保健室了。够呛啊，是吧？我看看。"
+    },
+    "after_nurse_enter_4_b": {
+        "name": "{name}",
+        "text": "你怎么知道的？"
+    },
+    "after_nurse_enter_4_c": {
+        "name": "保健老师",
+        "text": "我没见过你，而且你的校服看着是新的。我猜对了吧？"
+    },
+    "after_nurse_enter_4_d": {
+        "name": "保健老师",
+        "text": "*她递给我一支电子体温计，然后伸手到桌子下面拿出血压计。*"
+    },
+    "after_nurse_enter_5": {
+        "name": "保健老师",
+        "text": "*量完体温，她把袖带绑在了我的胳膊上。*"
+    },
+    "after_nurse_enter_6": {
+        "name": "保健老师",
+        "text": "没发烧。不过血压有点低。"
+    },
+    "after_nurse_enter_6_b": {
+        "name": "{name}",
+        "text": "我早饭没怎么吃。"
+    },
+    "after_nurse_enter_7": {
+        "name": "保健老师",
+        "text": "那就说得通了。来，躺下。先歇十分钟。"
+    },
+    "after_nurse_enter_7_b": {
+        "name": "{name}",
+        "text": "*我躺下时，身下的薄床单沙沙作响。*"
+    },
+    "after_nurse_enter_7_c": {
+        "name": "保健老师",
+        "text": "*她把帘子拉上了一半。*要喝水吗？还是喝点热的？"
+    },
+    "after_nurse_enter_7_d": {
+        "name": "{name}",
+        "text": "水就行。"
+    },
+    "after_nurse_enter_choice": {
+        "name": "{name}",
+        "text": "*透过帘子的缝隙，我能看见保健老师在填表。*",
+        "choices": [
+            "说实话，你看起来比我还累。",
+            "保健室比我想象的要安静。",
+            "这间屋子归你一个人，一定很惬意吧。"
+        ]
+    },
+    "after_nurse_enter_choice_a": {
+        "name": "保健老师",
+        "text": "反应挺快嘛。不过现在，先顾好你自己。"
+    },
+    "after_nurse_enter_choice_b": {
+        "name": "保健老师",
+        "text": "对吧？我喜欢这里。——安静，只要忽略消毒水的味道，就完美了。"
+    },
+    "after_nurse_enter_8": {
+        "name": "保健老师",
+        "text": "不用硬挤出一整句话。头晕的话，慢慢回答就行。"
+    },
+    "after_nurse_enter_8_b": {
+        "name": "{name}",
+        "text": "我很快就会好起来吗？"
+    },
+    "after_nurse_enter_8_c": {
+        "name": "保健老师",
+        "text": "*她递给我一杯水。*喝了这个，好好休息。你应该会舒服些。要是还晕，我们也会告诉你们班主任。"
+    },
+    "after_nurse_enter_8_d": {
+        "name": "{name}",
+        "text": "*我喝了水，环顾保健室。窗边的角落里放着一盆手掌大小的盆栽。*"
+    },
+    "after_nurse_enter_9_b": {
+        "name": "{name}",
+        "text": "那盆植物——是你的吗？"
+    },
+    "after_nurse_enter_9_c": {
+        "name": "保健老师",
+        "text": "嗯，迷迭香。——从我在医院的时候就养着了。"
+    },
+    "after_nurse_enter_9_d": {
+        "name": "{name}",
+        "text": "医院？"
+    },
+    "after_nurse_enter_9_e": {
+        "name": "保健老师",
+        "text": "*她握了一下抽屉的把手，又松开了。*"
+    },
+    "after_nurse_enter_10": {
+        "name": "保健老师",
+        "text": "陈年旧事了。我喜欢学校。在这里，铃一响，大家都会回到自己的教室。"
+    },
+    "after_nurse_enter_10_b": {
+        "name": "保健老师",
+        "text": "*她把那张表放进抽屉时，我瞥见里面有一本淡绿色的笔记本。我躺下已经过去十分钟了。*"
+    },
+    "after_nurse_enter_10_c": {
+        "name": "{name}",
+        "text": "谢谢您。我感觉好一点了。"
+    },
+    "after_nurse_enter_11": {
+        "name": "保健老师",
+        "text": "要是再头晕，就回来。保健室一直开着。别等到严重了才来。我可能会先训你一顿。"
+    },
+    "after_nurse_enter_11_b": {
+        "name": "{name}",
+        "text": "您会训我？"
+    },
+    "after_nurse_enter_11_c": {
+        "name": "保健老师",
+        "text": "*她把笔在病历上滚了一圈。*你要是带着病硬撑，过后才来，我当然会训你。我就是干这个的。"
+    },
+    "after_nurse_enter_11_d": {
+        "name": "保健老师",
+        "text": "*她把水杯“咚”地一声放在桌上。*"
+    },
+    "after_nurse_enter_11_e": {
+        "name": "保健老师",
+        "text": "*听到“累”这个字，她抬手揉了一下后颈。*"
+    },
+    "after_nurse_enter_11_f": {
+        "name": "保健老师",
+        "text": "你刚才说我看起来很累，对吧？连学生都看得出来，那我大概该早点收工了。谢谢。"
+    },
+    "after_nurse_enter_11_g": {
+        "name": "保健老师",
+        "text": "*她在诊疗记录里记下时间，收走了空杯子。*"
+    },
+    "after_nurse_enter_11_h": {
+        "name": "保健老师",
+        "text": "你说这里很安静，对吧？需要休息的话，跟你们班主任说一声再过来。别光硬撑着。"
+    },
+    "after_nurse_enter_11_i": {
+        "name": "保健老师",
+        "text": "*她拉开帘子，把床单抚平。*"
+    },
+    "after_nurse_enter_11_j": {},
+    "after_nurse_enter_11_k": {
+        "name": "保健老师",
+        "text": "啊，转学生。"
+    },
+    "after_nurse_enter_11_l": {
+        "name": "保健老师",
+        "text": "你叫什么名字？"
+    },
+    "after_nurse_enter_11_m": {
+        "name": "{name}",
+        "text": "我是{name}。"
+    },
+    "after_nurse_enter_12": {
+        "name": "保健老师",
+        "text": "症状再出现的话，直接来这里。别在走廊里硬撑。"
+    },
+    "after_nurse_enter_12_b": {
+        "name": "{name}",
+        "text": "*我起身到一半停了下来。保健老师看了看时钟，把椅子转向我。*"
+    },
+    "after_nurse_freetalk": {
+        "name": "保健老师",
+        "text": "*她把体温计放回盒子里，看了一眼病历上的时间。*头晕缓过来了吗？",
+        "context": "第一天放学后。转学生感到头晕，来到保健室。保健老师检查了症状，让学生休息；她一边观察恢复情况和适应情况，一边继续与学生交谈。",
+        "personality": "保健老师观察力敏锐，性格随和。她曾在医院当护士，因为倦怠而调到学校，必要时会用轻松的幽默让学生放松。她把治疗和咨询都控制在专业的界限之内。"
+    },
+    "after_nurse_skip": {
+        "name": "{name}",
+        "text": "*我朝校门走去。*"
+    },
+    "after_nurse_enter_trap": {
+        "name": "保健老师",
+        "text": "没人的时候，我会补记录、盘点物资。安静的房间，不一定就是在休息。"
+    }
+}

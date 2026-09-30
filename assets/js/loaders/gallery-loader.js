@@ -16,7 +16,7 @@
     var p = window.location.pathname;
     var lang = p.includes('-es') ? 'es' : p.includes('-ja') ? 'ja'
              : p.includes('-fr') ? 'fr' : p.includes('-de') ? 'de'
-             : p.includes('-pt') ? 'pt' : p.includes('-en') ? 'en' : 'ko';
+             : p.includes('-pt') ? 'pt' : p.includes('-zh') ? 'zh' : p.includes('-en') ? 'en' : 'ko';
     var APP_ID = lang === 'ko' ? 'cupid' : 'cupid-' + lang;
     var _lastError = '';
     var _errorCount = 0;
@@ -141,6 +141,11 @@ window.__cupidShowGalleryLoadError = function() {
             title: 'Não foi possível carregar a galeria',
             message: 'Verifique sua conexão com a internet e recarregue a página.',
             retry: 'Recarregar'
+        },
+        zh: {
+            title: '图鉴加载失败',
+            message: '请检查网络连接，然后刷新页面。',
+            retry: '重新加载'
         }
     };
     var copy = copies[pageLang] || copies.en;
@@ -174,7 +179,7 @@ window.__cupidShowGalleryLoadError = function() {
 (function () {
     // 로더 설정 로드 (동기)
     if (window.CupidRuntimeSupport && !window.CupidRuntimeSupport.supported) return;
-    document.write('<script src="assets/js/loaders/config.js?v=2.9.279" onerror="window.__cupidShowGalleryLoadError && window.__cupidShowGalleryLoadError()"><\/script>');
+    document.write('<script src="assets/js/loaders/config.js?v=2.9.280" onerror="window.__cupidShowGalleryLoadError && window.__cupidShowGalleryLoadError()"><\/script>');
 })();
 
 // config.js 로드 후 실행
@@ -186,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function () {
 (function () {
     const basePath = 'assets/js/';
     if (window.CupidRuntimeSupport && !window.CupidRuntimeSupport.supported) return;
-    const version = '2.9.279';
+    const version = '2.9.280';
 
     const scripts = [
         'affinity-corrections.js',

@@ -20,7 +20,8 @@ const HOME = [
   ['index-es.html', `${SITE}/index-es`, 'es'],
   ['index-fr.html', `${SITE}/index-fr`, 'fr'],
   ['index-de.html', `${SITE}/index-de`, 'de'],
-  ['index-pt.html', `${SITE}/index-pt`, 'pt']
+  ['index-pt.html', `${SITE}/index-pt`, 'pt'],
+  ['index-zh.html', `${SITE}/index-zh`, 'zh-CN']
 ];
 
 const PRIMARY_SEO_SLUGS = new Set([
@@ -63,7 +64,7 @@ const indexable = [
   ...seoFiles.map(([file, url]) => ({ file, url, lang: '', home: false }))
 ];
 
-if (indexable.length !== 43) fail(`Expected 43 indexable pages, found ${indexable.length}`);
+if (indexable.length !== 44) fail(`Expected 44 indexable pages, found ${indexable.length}`);
 
 const canonicals = new Set();
 let stableGame = '';
@@ -108,7 +109,7 @@ for (const page of indexable) {
   }
 
   const slug = page.file.startsWith('seo/') ? path.basename(page.file, '.html') : '';
-  const expectedAlternates = page.home || PRIMARY_SEO_SLUGS.has(slug) ? 8 : 0;
+  const expectedAlternates = page.home ? 9 : PRIMARY_SEO_SLUGS.has(slug) ? 8 : 0;
   if (hreflangs.length !== expectedAlternates) {
     fail(`${page.file}: expected ${expectedAlternates} hreflang entries, found ${hreflangs.length}`);
   }
@@ -191,8 +192,8 @@ if (!read('assets/js/modules/GameEngine.js').includes('sendGAGameMilestone(scene
 }
 
 const noindexFiles = [
-  'game.html', 'game-en.html', 'game-ja.html', 'game-es.html', 'game-fr.html', 'game-de.html', 'game-pt.html',
-  'gallery.html', 'gallery-en.html', 'gallery-ja.html', 'gallery-es.html', 'gallery-fr.html', 'gallery-de.html', 'gallery-pt.html'
+  'game.html', 'game-en.html', 'game-ja.html', 'game-es.html', 'game-fr.html', 'game-de.html', 'game-pt.html', 'game-zh.html',
+  'gallery.html', 'gallery-en.html', 'gallery-ja.html', 'gallery-es.html', 'gallery-fr.html', 'gallery-de.html', 'gallery-pt.html', 'gallery-zh.html'
 ];
 for (const file of noindexFiles) {
   const html = read(file);
@@ -214,7 +215,7 @@ for (const block of sitemapBlocks) {
   const lastmod = capture(block, /<lastmod>([^<]+)<\/lastmod>/);
   const alternates = [...block.matchAll(/<xhtml:link\s+rel="alternate"/g)].length;
   const slug = loc.includes('/seo/') ? loc.split('/').pop() : '';
-  const expectedAlternates = HOME.some(([, url]) => url === loc) || PRIMARY_SEO_SLUGS.has(slug) ? 8 : 0;
+  const expectedAlternates = HOME.some(([, url]) => url === loc) ? 9 : PRIMARY_SEO_SLUGS.has(slug) ? 8 : 0;
   if (!loc || sitemapUrls.has(loc)) fail(`sitemap.xml: missing or duplicate loc ${loc}`);
   sitemapUrls.add(loc);
   const expectedLastmod = TRAFFIC_PAGE_LASTMOD.get(slug) || LASTMOD;

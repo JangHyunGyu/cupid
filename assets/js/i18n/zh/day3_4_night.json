@@ -1,0 +1,333 @@
+{
+    "night3_start": {
+        "name": "{name}",
+        "text": "*回到房间，我把书包挂在椅背上。*"
+    },
+    "night3_start_2": {
+        "name": "{name}",
+        "text": "*我打开了扣在桌上的手机。*"
+    },
+    "night3_faithful_check": {
+        "name": "{name}",
+        "text": "*我查看手机上的通知。*"
+    },
+    "night3_faithful_msg_seo_1": {
+        "name": "书妍",
+        "text": "你今天看到的，只留在我们之间。"
+    },
+    "night3_faithful_msg_seo_2": {
+        "name": "书妍",
+        "text": "不过，你可以再回来。"
+    },
+    "night3_faithful_msg_seo_3": {
+        "name": "{name}",
+        "text": "*我把消息读到最后，熄了屏幕。手机的光亮从房间里消失了。*"
+    },
+    "night3_faithful_msg_yuna_1": {
+        "name": "由娜",
+        "text": "*由娜发来一条简短的消息，是关于她借给我的那本笔记本。*"
+    },
+    "night3_faithful_msg_yuna_2": {
+        "name": "由娜",
+        "text": "那篇小说，我还是没想好结局"
+    },
+    "night3_faithful_msg_yuna_2_b": {
+        "name": "{name}",
+        "text": "*光标在笔记最后一行闪烁。文件名旁边留着一个已保存的图标。*"
+    },
+    "night3_faithful_msg_dain_1": {
+        "name": "多因",
+        "text": "你要是想问我膝盖的事，当面来问哈哈"
+    },
+    "night3_faithful_msg_dain_2": {
+        "name": "多因",
+        "text": "不过说真的。谢谢"
+    },
+    "night3_faithful_msg_dain_3": {
+        "name": "{name}",
+        "text": "*“哈哈”和下一句话之间隔了很长一段空白。多因没有再发来新消息。*"
+    },
+    "night3_dream_1": {
+        "name": "{name}",
+        "text": "*熄灯之前，我又拿起了一次手机。我想起今天有脚步声和我并排走过。*"
+    },
+    "night3_dream_2_b": {
+        "name": "{name}",
+        "text": "*我放下手机。我还是不知道明天要说什么。*"
+    },
+    "night3_faithful_reflect_1": {
+        "name": "{name}",
+        "text": "*睡前，我打开手机相册，翻到素晶的照片，长按住。*"
+    },
+    "night3_faithful_reflect_2_b": {
+        "name": "{name}",
+        "text": "*“删除这张照片？”我的手指悬在确认键上。*"
+    },
+    "night3_faithful_reflect_2_c": {
+        "name": "{name}",
+        "text": "*我盯着屏幕看了一会儿，想起素晶桌上的字，还有我曾经移开视线的那些早晨。*"
+    },
+    "night3_faithful_reflect_2_d": {
+        "name": "{name}",
+        "text": "*我点了取消。删掉一张照片，改变不了我所做的选择。*"
+    },
+    "night3_faithful_reflect_3": {
+        "name": "{name}",
+        "text": "*我的手指停在删除键上。最后，我把那张照片移进了一个新建的文件夹，命名为“记录”。*"
+    },
+    "night3_faithful_reflect_3_b": {
+        "name": "{name}",
+        "text": "*我在照片旁边留下一条简短的备注。我在新聊天里说什么，都抵不过我欠素晶的。*"
+    },
+    "night3_faithful_reflect_4": {
+        "name": "{name}",
+        "text": "*我打开新文件夹，确认照片还在。名称下面出现了一张图片。*"
+    },
+    "night3_faithful_reflect_4_b": {},
+    "night3_faithful_reflect_4_c": {},
+    "night3_dream_3": {
+        "name": "{name}",
+        "text": "*我关掉相册，确认了明天的闹钟。放下手机之后，好一阵子才睡着。*"
+    },
+    "night3_dream_seo_bonus": {
+        "name": "{name}",
+        "text": "*闭上眼睛，最先浮现在脑海里的是天台的栏杆。*"
+    },
+    "night3_dream_yuna_bonus": {
+        "name": "{name}",
+        "text": "*闭上眼睛，最先浮现在脑海里的是图书馆别馆的窗户。*"
+    },
+    "night3_dream_dain_bonus": {
+        "name": "{name}",
+        "text": "*闭上眼睛，我听到了篮球在体育馆地板上弹跳的声音。*"
+    },
+    "night3_cheat_msg_1": {
+        "name": "{name}",
+        "text": "*一回到房间，我就打开了手机。*"
+    },
+    "night3_cheat_msg_2": {
+        "name": "书妍",
+        "text": "只对我一个人那样吧。"
+    },
+    "night3_cheat_msg_3": {
+        "name": "书妍",
+        "text": "拜托"
+    },
+    "night3_cheat_msg_3_b": {
+        "name": "书妍",
+        "text": "*她输入了“拜托”两个字。光标在后面停了很久。*"
+    },
+    "night3_cheat_msg_4": {
+        "name": "由娜",
+        "text": "我一直都知道"
+    },
+    "night3_cheat_msg_4_b": {
+        "name": "由娜",
+        "text": "*我和她们都不想当你的备胎。*"
+    },
+    "night3_cheat_msg_5": {
+        "name": "由娜",
+        "text": "*决定好明天你要选谁。*"
+    },
+    "night3_cheat_msg_6": {
+        "name": "由娜",
+        "text": "别躲着我。就这样"
+    },
+    "night3_cheat_msg_dain_1": {
+        "name": "多因",
+        "text": "哈哈，真希望这是个玩笑"
+    },
+    "night3_cheat_msg_7": {
+        "name": "由娜",
+        "text": "*我重读了由娜的消息。手指悬在回复框上方，又缩了回来。*"
+    },
+    "night3_nightmare_1": {
+        "name": "{name}",
+        "text": "*我关着灯躺下，却睡不着。只有手机屏幕的光贴在我的掌心。*"
+    },
+    "night3_nightmare_2_b": {
+        "name": "{name}",
+        "text": "*我点开书妍的聊天。她最后一条消息是“拜托”。后面没有新消息。*"
+    },
+    "night3_nightmare_3": {
+        "name": "书妍",
+        "text": "我不是要你现在回答。只是明天别躲着我。"
+    },
+    "night3_nightmare_3_b": {
+        "name": "{name}",
+        "text": "*由娜的消息下面，只有已读的标记。*"
+    },
+    "night3_nightmare_4": {
+        "name": "{name}",
+        "text": "*她的最后一句话很短：“别躲着我。就这样。”*"
+    },
+    "night3_nightmare_4_b": {
+        "name": "{name}",
+        "text": "*多因唯一的一条消息，是以一个笑开头的。*"
+    },
+    "night3_nightmare_5": {
+        "name": "{name}",
+        "text": "*“真希望那是个玩笑。”之后没有新消息。*"
+    },
+    "night3_nightmare_6": {
+        "name": "{name}",
+        "text": "*我轮流打开又关上三个聊天窗口。在每个输入框里，我都打下一个不同的开头字，然后又删掉。*"
+    },
+    "night3_nightmare_choice": {
+        "name": "{name}",
+        "text": "*明天我要先对谁坦白？*",
+        "choices": [
+            "决定先和书妍谈",
+            "决定先和由娜谈",
+            "决定先和多因谈"
+        ]
+    },
+    "night3_nightmare_seo": {
+        "name": "{name}",
+        "text": "*在书妍的输入框里，我写下“明天当面告诉你”，拇指停在发送键上方。*"
+    },
+    "night3_nightmare_yuna": {
+        "name": "{name}",
+        "text": "*在由娜的输入框里，我写下“明天，我不会躲着你。我会告诉你”，句号后面的光标在闪烁。*"
+    },
+    "night3_nightmare_dain": {
+        "name": "{name}",
+        "text": "*我打下：“抱歉让你久等了。明天我会跟你谈。”拇指悬在多因的聊天发送键上。*"
+    },
+    "night3_nightmare_end": {
+        "name": "{name}",
+        "text": "*一个输入框里还留着一句话。我关掉了另外两个聊天窗口。什么都还没有发出去。*"
+    },
+    "night3_nightmare_end_3": {
+        "name": "{name}",
+        "text": "*凌晨三点了我还醒着，关掉消息，打开了相册。我的拇指停在素晶的照片上。*"
+    },
+    "night3_cheat_reflect_2": {
+        "name": "{name}",
+        "text": "*合照里，素晶在看着镜头。在她旁边，我看着别处。*"
+    },
+    "night3_cheat_reflect_3_b": {
+        "name": "{name}",
+        "text": "*我关掉照片，回到消息界面。我之前写的那句话还存在草稿里。*"
+    },
+    "night3_cheat_reflect_3_c": {
+        "name": "{name}",
+        "text": "*我扫了一眼聊天列表。三个名字旁边，各放着一条不同的消息。*"
+    },
+    "night3_cheat_reflect_3_d": {
+        "name": "{name}",
+        "text": "*敏秀发来一条消息：“拖着，事情不会自己消失。”*"
+    },
+    "night3_cheat_reflect_3_e": {
+        "name": "{name}",
+        "text": "*我把三个聊天从头到尾又读了一遍。一个也没有关。*"
+    },
+    "night3_cheat_reflect_5": {
+        "name": "{name}",
+        "text": "*我把手从发送键上移开，把手机屏幕朝下扣住。离闹钟响还有三个小时。*"
+    },
+    "night3_nightmare_end_4": {
+        "name": "{name}",
+        "text": "*我把闹钟改名为“明天给答案”。*"
+    },
+    "night3_end": {
+        "name": "{name}",
+        "text": "*我关掉灯，让手机屏幕朝下放着。*"
+    },
+    "forced_violation_day3_after_seoyeon": {
+        "name": "书妍",
+        "text": "*对话结束后，书妍沉默了好一会儿。等她再次开口时，声音已经冷了下来。*别以为你可以假装刚才的事没发生过。这段时间，别靠近我，也别联系我。",
+        "choices": [
+            "不找借口，先道歉，然后结束这段对话。",
+            "试着解释这是个误会。"
+        ]
+    },
+    "forced_violation_day3_seoyeon_apologize": {
+        "name": "书妍",
+        "text": "*书妍的神情并没有因为道歉而缓和。*我听见了。但这不能抹掉发生过的事。我说过了，这段时间别联系我。"
+    },
+    "forced_violation_day3_seoyeon_excuse": {
+        "name": "书妍",
+        "text": "*书妍打断了解释。*误会？从我说“不”的那一刻起，就不是误会了。别再说了。"
+    },
+    "forced_violation_day3_after_yuna": {
+        "name": "由娜",
+        "text": "*对话中断后，由娜短促地吸了一口气。紧绷的脸上只剩下戒备。*你明知道我不愿意，却还是无视了我。我现在连看到你都不想。别再联系我了。",
+        "choices": [
+            "不找借口，先道歉，然后结束这段对话。",
+            "试着解释这是个误会。"
+        ]
+    },
+    "forced_violation_day3_yuna_apologize": {
+        "name": "由娜",
+        "text": "*由娜停顿了很久才回答。*道歉不能让它消失。到此为止吧。"
+    },
+    "forced_violation_day3_yuna_excuse": {
+        "name": "由娜",
+        "text": "*由娜没等解释说完就打断了。*我说过不行。没什么好解释的。"
+    },
+    "forced_violation_day3_after_dain": {
+        "name": "多因",
+        "text": "*多因没有像平时那样笑着带过。沉默了很久，她才用生硬的声音开口。*这不是玩笑。我说了不行，你还是硬来。这件事我不会就这么算了。",
+        "choices": [
+            "不找借口，先道歉，然后结束这段对话。",
+            "试着解释这是个误会。"
+        ]
+    },
+    "forced_violation_day3_dain_apologize": {
+        "name": "多因",
+        "text": "*多因沉默了很久，终于简短地回了一句。*行。那今天就到此为止。什么时候再说话、要不要说话，由我来决定。"
+    },
+    "forced_violation_day3_dain_excuse": {
+        "name": "多因",
+        "text": "*多因的声音变得粗重。*不。别找借口。我说了不行，你还是做了。"
+    },
+    "forced_violation_day3_after_teacher": {
+        "name": "班主任",
+        "text": "*对话结束后，班主任把界线划得更清楚了，语气严厉。*你刚才的所作所为明显越线了。不许再靠近一步。我会按照正规程序处理这件事。",
+        "choices": [
+            "不找借口，先道歉，然后结束这段对话。",
+            "试着解释这是个误会。"
+        ]
+    },
+    "forced_violation_day3_teacher_apologize": {
+        "name": "班主任",
+        "text": "*班主任短促地吸了一口气，才接着说。*你的道歉我听到了。我仍然会按正规程序处理。什么都别再说了。"
+    },
+    "forced_violation_day3_teacher_excuse": {
+        "name": "班主任",
+        "text": "*班主任打断了解释。*现在不是你给自己辩解的时候。不要再说了，保持距离。"
+    },
+    "forced_violation_day3_after_haeun": {
+        "name": "夏恩",
+        "text": "*夏恩后退一步，攥住了她的学生会手环。*别再靠近了。我现在就去叫老师。",
+        "choices": [
+            "承认错误，保持距离。",
+            "声称这是个误会。"
+        ]
+    },
+    "forced_violation_day3_haeun_apologize": {
+        "name": "夏恩",
+        "text": "*夏恩什么也没回答，向办公室的方向退去。她一直盯着，直到确认你没有跟上来。*"
+    },
+    "forced_violation_day3_haeun_excuse": {
+        "name": "夏恩",
+        "text": "这不是误会。别跟着我。*夏恩保持着距离，推开了办公室的门。*"
+    },
+    "forced_violation_day3_after_nurse": {
+        "name": "保健老师",
+        "text": "*对话中断，保健老师声音里平日的玩笑意味全都消失了。*从现在起，请保持距离。我会把发生的事记录下来，并通知需要知道的人。",
+        "choices": [
+            "不找借口，先道歉，然后结束这段对话。",
+            "试着解释这是个误会。"
+        ]
+    },
+    "forced_violation_day3_nurse_apologize": {
+        "name": "保健老师",
+        "text": "*保健老师沉默了片刻，然后语气坚定地回答。*你的道歉我听到了。但我还是会记录此事，并通知相关人员。这次谈话到此为止。"
+    },
+    "forced_violation_day3_nurse_excuse": {
+        "name": "保健老师",
+        "text": "*保健老师的声音压得更低了。*你觉得把它说成误会，就能改变什么吗？事实是，我说了不，你却无视了我。"
+    }
+}

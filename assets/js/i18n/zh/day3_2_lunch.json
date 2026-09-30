@@ -1,0 +1,434 @@
+{
+    "lunch3_start": {
+        "name": "{name}",
+        "text": "*午休时，我打开饭盒。书妍坐在我旁边，多因坐在对面，由娜把面包拿到空椅子那边。*"
+    },
+    "lunch3_start_2_b": {
+        "name": "多因",
+        "text": "*多因抢在由娜之前夹走了玉子烧。书妍拿起筷子之前，先看向桌子对面。*"
+    },
+    "lunch3_meal_1": {
+        "name": "多因",
+        "text": "哦，这个好吃。会长你也尝尝。今天先到先得，可不是全归你的。"
+    },
+    "lunch3_meal_2": {
+        "name": "{name}",
+        "text": "喂，那是我的——"
+    },
+    "lunch3_meal_3": {
+        "name": "书妍",
+        "text": "我无意独占别人的便当。玉子烧，给六分。"
+    },
+    "lunch3_meal_4": {
+        "name": "{name}",
+        "text": "别给我的饭菜打分。"
+    },
+    "lunch3_meal_5": {
+        "name": "书妍",
+        "text": "十分制。六分不算差了。"
+    },
+    "lunch3_meal_6": {
+        "name": "由娜",
+        "text": "*她默默伸出筷子，夹走了那根卖相最好的香肠。*"
+    },
+    "lunch3_meal_7": {
+        "name": "{name}",
+        "text": "由娜，那是我最爱吃的。"
+    },
+    "lunch3_meal_7_b": {
+        "name": "由娜",
+        "text": "*由娜嚼着香肠，看着多因。*所以第一个抢到的人，不一定能吃到。"
+    },
+    "lunch3_meal_8": {
+        "name": "{name}",
+        "text": "*这一次，由娜的筷子径直伸向了饭盒。*"
+    },
+    "lunch3_meal_10": {
+        "name": "{name}",
+        "text": "*三双筷子几乎在最后一块蛋卷上方碰到一起。三个人都停住了，看向我。*"
+    },
+    "lunch3_meal_10_b": {
+        "name": "{name}",
+        "text": "*饭盒正中只剩最后一样小菜，三双筷子都回到了原来的位置。*"
+    },
+    "lunch3_meal_10_c": {},
+    "lunch3_meal_10_d": {},
+    "lunch3_meal_10_e": {},
+    "lunch3_meal_11": {
+        "name": "{name}",
+        "text": "*我该给谁？*"
+    },
+    "lunch3_choice": {
+        "name": "{name}",
+        "text": "*我掂量着，最后一样小菜该给谁。*",
+        "choices": [
+            "给书妍",
+            "给多因",
+            "给由娜",
+            "大家一起分吧"
+        ]
+    },
+    "lunch3_give_seo_1": {
+        "name": "书妍",
+        "text": "谢谢。你真的很体贴。"
+    },
+    "lunch3_give_seo_cool": {
+        "name": "书妍",
+        "text": "我收下了。"
+    },
+    "lunch3_give_seo_neg": {
+        "name": "书妍",
+        "text": "*她把筷子放下。*我没关系。"
+    },
+    "lunch3_seo_skin_check": {},
+    "lunch3_seo_skin_1": {
+        "name": "{name}",
+        "text": "*吃午饭时，一粒米饭粘在了我的嘴唇上。书妍伸手把它捡掉了。*"
+    },
+    "lunch3_seo_skin_2": {
+        "name": "书妍",
+        "text": "在人前吃饭的时候，要更小心一点。"
+    },
+    "lunch3_seo_skin_3": {
+        "name": "{name}",
+        "text": "*书妍收回手的时候，筷子掉了。她立刻捡起来，但筷子尖刮到了盘子边缘。*"
+    },
+    "lunch3_give_seo_2": {
+        "name": "多因",
+        "text": "喂！我也想要！"
+    },
+    "lunch3_seo_witness_1": {
+        "name": "{name}",
+        "text": "*多因拿着空水瓶站起来，瞥了一眼我给书妍的菜，走进了走廊。*"
+    },
+    "lunch3_seo_witness_choice": {
+        "name": "{name}",
+        "text": "*多因运动鞋的鞋跟消失在了拐角。*",
+        "choices": [
+            "多因！",
+            "专心陪书妍",
+            "要是把多因也叫上，会更好玩。",
+            "把多因一个人丢下我过意不去。我会叫她回来。"
+        ]
+    },
+    "lunch3_seo_chase_dain_1": {
+        "name": "书妍",
+        "text": "*书妍放下饭盒，把盒盖的边角对齐。*"
+    },
+    "lunch3_seo_chase_dain_2": {
+        "name": "多因",
+        "text": "怎么了？"
+    },
+    "lunch3_seo_chase_dain_2b": {
+        "name": "{name}",
+        "text": "*我回到教室。*"
+    },
+    "lunch3_seo_focus_1": {
+        "name": "{name}",
+        "text": "*多因的脚步声消失在走廊里。*"
+    },
+    "lunch3_seo_focus_2": {
+        "name": "书妍",
+        "text": "你在意吗？"
+    },
+    "lunch3_give_seo_3": {
+        "name": "由娜",
+        "text": "*由娜把面包包装纸折好，放进包里。*"
+    },
+    "lunch3_give_dain_1": {
+        "name": "多因",
+        "text": "真的？谢啦！{name}，你直觉不错。"
+    },
+    "lunch3_give_dain_cool": {
+        "name": "多因",
+        "text": "好。我吃了。"
+    },
+    "lunch3_give_dain_neg": {
+        "name": "多因",
+        "text": "*她只拿起自己的水瓶。*我没事。"
+    },
+    "lunch3_dain_skin_check": {},
+    "lunch3_dain_skin_1": {
+        "name": "{name}",
+        "text": "*吃完东西，多因把双臂稍稍张开。“可以给你一个感谢的拥抱吗？”我点点头。她轻轻抱了我一下，然后伸手去拿她的水瓶。*"
+    },
+    "lunch3_dain_skin_3": {
+        "name": "多因",
+        "text": "……比我预想的还要难为情。"
+    },
+    "lunch3_give_dain_2": {
+        "name": "书妍",
+        "text": "真的吗？我还替你打了分呢。"
+    },
+    "lunch3_dain_witness_1": {
+        "name": "{name}",
+        "text": "*由娜看着多因笑，然后默默地把书挪到饭盒旁边，低下头。*"
+    },
+    "lunch3_dain_witness_2b": {},
+    "lunch3_give_dain_3": {
+        "name": "由娜",
+        "text": "*由娜望着窗外，攥着面包包装纸卷起的开口。*"
+    },
+    "lunch3_give_yuna_1": {
+        "name": "由娜",
+        "text": "谢谢。"
+    },
+    "lunch3_give_yuna_neg": {
+        "name": "由娜",
+        "text": "*她把面包袋折好。*我没事。"
+    },
+    "lunch3_yuna_skin_check": {},
+    "lunch3_yuna_skin_1": {
+        "name": "{name}",
+        "text": "*由娜拿起托盘旁边的一张小纸条，递给我。有那么一会儿，我们两人都捏着它的边缘。*"
+    },
+    "lunch3_yuna_skin_2": {
+        "name": "由娜",
+        "text": "我刚才说谢谢的时候，是认真的。"
+    },
+    "lunch3_yuna_skin_3": {
+        "name": "{name}",
+        "text": "*由娜松开了纸的边缘。我把纸条折好，小心地收起来。*"
+    },
+    "lunch3_give_yuna_2": {
+        "name": "书妍",
+        "text": "我还以为你会给我。"
+    },
+    "lunch3_yuna_witness_1": {
+        "name": "书妍",
+        "text": "当着我的面给了别人，就别露出那种愧疚的表情。来，吃吧。"
+    },
+    "lunch3_yuna_witness_2": {
+        "name": "{name}",
+        "text": "*由娜在杯子侧面轻敲了一下，看向书妍。*"
+    },
+    "lunch3_give_yuna_3": {
+        "name": "多因",
+        "text": "喂，那我呢？"
+    },
+    "lunch3_expose_1": {
+        "name": "{name}",
+        "text": "*这时，多因先开了口。*"
+    },
+    "lunch3_expose_2": {
+        "name": "多因",
+        "text": "对了。你周末的安排都定好了吗？"
+    },
+    "lunch3_expose_3": {
+        "name": "{name}",
+        "text": "*在我选择答案的时候，另外两双筷子还悬在饭盒上方。*"
+    },
+    "lunch3_expose_4": {
+        "name": "{name}",
+        "text": "*书妍的筷子尖抵着饭盒的边缘，而由娜手里拿着半开的面包包装纸，看向多因。*"
+    },
+    "lunch3_expose_5": {},
+    "lunch3_expose_6": {
+        "name": "书妍",
+        "text": "等等。你是说不止一个？"
+    },
+    "lunch3_expose_7": {
+        "name": "多因",
+        "text": "听起来，关于你要跟谁见面、什么时候见，我们各自听到的说法不一样。"
+    },
+    "lunch3_expose_7_b": {
+        "name": "{name}",
+        "text": "*由娜放下面包，把包装纸的开口折好。*"
+    },
+    "lunch3_expose_9": {
+        "name": "由娜",
+        "text": "我早就知道了。"
+    },
+    "lunch3_expose_10": {
+        "name": "{name}",
+        "text": "*一根筷子磕在饭盒盖上。没有人去捡。*"
+    },
+    "lunch3_expose_11": {
+        "name": "由娜",
+        "text": "我知道有人约过你。我不知道你答应了好几个约。"
+    },
+    "lunch3_expose_12": {
+        "name": "{name}",
+        "text": "*三双筷子停在饭盒上方。隔壁桌的敏秀看了过来，然后用手背捂住了嘴。*"
+    },
+    "lunch3_expose_14": {
+        "name": "敏秀",
+        "text": "哥们儿。你是疯了吗？"
+    },
+    "lunch3_expose_15": {
+        "name": "{name}",
+        "text": "*我的嘴唇动了动，却没有出声。敏秀放下了手里的筷子。*"
+    },
+    "lunch3_expose_choice": {
+        "name": "{name}",
+        "text": "*我该说什么？*",
+        "choices": [
+            "对不起。我喜欢你们所有人，我没办法拒绝。",
+            "时间都不一样，不是也可以吗？",
+            "离开餐桌"
+        ]
+    },
+    "lunch3_expose_honest_1": {
+        "name": "{name}",
+        "text": "对不起。我喜欢你们所有人，我没办法拒绝。"
+    },
+    "lunch3_expose_honest_2": {
+        "name": "书妍",
+        "text": "你没办法拒绝。这是你能说出口的最残忍的话了，{name}。"
+    },
+    "lunch3_expose_honest_3": {
+        "name": "书妍",
+        "text": "你因为没办法拒绝而微笑的时候，在对面的人看来，那就是希望。"
+    },
+    "lunch3_expose_honest_4": {
+        "name": "书妍",
+        "text": "*她合上饭盒。*"
+    },
+    "lunch3_expose_honest_4_b": {},
+    "lunch3_expose_honest_5": {
+        "name": "书妍",
+        "text": "我不玩模棱两可的那一套。要是这样的话，就别算上我。"
+    },
+    "lunch3_expose_honest_6": {
+        "name": "书妍",
+        "text": "*她离开了。*"
+    },
+    "lunch3_expose_honest_7": {
+        "name": "{name}",
+        "text": "*多因简短地回了一句，别开了视线。她刚才的兴奋消失了。*"
+    },
+    "lunch3_expose_excuse_1": {
+        "name": "{name}",
+        "text": "时间都不一样，不是也可以吗？"
+    },
+    "lunch3_expose_excuse_2": {
+        "name": "书妍",
+        "text": "你真的看不出问题出在哪吗？"
+    },
+    "lunch3_expose_excuse_2_b": {
+        "name": "多因",
+        "text": "*多因把椅子往后一推，拿起了书包。*"
+    },
+    "lunch3_expose_excuse_3": {
+        "name": "多因",
+        "text": "我也需要一点时间想想。"
+    },
+    "lunch3_expose_excuse_4": {
+        "name": "多因",
+        "text": "*多因把还没拆开包装的肉松面包塞进了书包。*"
+    },
+    "lunch3_expose_run_1": {
+        "name": "{name}",
+        "text": "*我推开教室门冲了出去。身后，椅子同时刮出一片响声。*"
+    },
+    "lunch3_expose_run_2": {
+        "name": "{name}",
+        "text": "*身后，椅子一把接一把地向后刮响。没有人跟着我出来。整个下午，我都没法集中精神看黑板上的粉笔字，桌子底下，我不停地把手机屏幕点亮又熄灭。*"
+    },
+    "lunch3_share_1": {
+        "name": "{name}",
+        "text": "*我提议大家分着吃，三个人都笑了。笑声停了之后，也没有人的筷子先伸向玉子烧。*"
+    },
+    "lunch3_share_cool": {
+        "name": "{name}",
+        "text": "*我把最后一块放在中间。三个人分着吃了，但没有人笑。*"
+    },
+    "lunch3_share_neg": {
+        "name": "{name}",
+        "text": "*我把蛋卷放在中间。没有人伸手。其中一个人已经合上了饭盒。*"
+    },
+    "lunch3_share_solo": {
+        "name": "{name}",
+        "text": "*三个人一点一点地分着吃玉子烧。直到最后那块对半切开的吃完，才有人站起来。*"
+    },
+    "lunch3_harem_1": {
+        "name": "{name}",
+        "text": "*三个人各自夹了一点。只有书妍的嘴角扬了扬，多因笑得比平时更大声，由娜始终没有拿出她折好的纸条。*"
+    },
+    "lunch3_end": {
+        "name": "{name}",
+        "text": "*铃声响起，我收拾好饭盒。没有人再提起周末的安排。*"
+    },
+    "lunch3_give_seo_2_check": {},
+    "lunch3_give_seo_dain_affinity": {},
+    "lunch3_give_seo_dain_mid": {
+        "name": "多因",
+        "text": "我是想吃，不过没关系。下次给我留点。"
+    },
+    "lunch3_give_seo_dain_low": {
+        "name": "多因",
+        "text": "*多因吃完自己那份，把水瓶盖拧上。*反正我也饱了。"
+    },
+    "lunch3_give_seo_3_check": {},
+    "lunch3_give_seo_yuna_affinity": {},
+    "lunch3_give_seo_yuna_mid": {
+        "name": "由娜",
+        "text": "*由娜看了看最后那样小菜，然后把面包包装纸折好。*下次给我留一点。"
+    },
+    "lunch3_give_seo_yuna_low": {
+        "name": "由娜",
+        "text": "*由娜面无表情地吃完了面包。*"
+    },
+    "lunch3_give_dain_2_check": {},
+    "lunch3_give_dain_seo_affinity": {},
+    "lunch3_give_dain_seo_mid": {
+        "name": "书妍",
+        "text": "*书妍放下筷子，把盖子扣到饭盒上。*下次请把我的分数也算进去。"
+    },
+    "lunch3_give_dain_seo_low": {
+        "name": "书妍",
+        "text": "*书妍把剩下的饭菜收拾好，只点了点头。*"
+    },
+    "lunch3_give_dain_3_check": {},
+    "lunch3_give_dain_yuna_mid": {
+        "name": "由娜",
+        "text": "你给了多因。下次也要问问我。"
+    },
+    "lunch3_give_dain_yuna_low": {
+        "name": "由娜",
+        "text": "*由娜把面包包装纸折好，喝了一口水。*"
+    },
+    "lunch3_give_yuna_2_check": {},
+    "lunch3_give_yuna_seo_affinity": {},
+    "lunch3_give_yuna_seo_mid": {
+        "name": "书妍",
+        "text": "你给了由娜。好吧。"
+    },
+    "lunch3_give_yuna_seo_low": {
+        "name": "书妍",
+        "text": "*书妍收拾好自己的饭盒。*"
+    },
+    "lunch3_give_yuna_3_check": {},
+    "lunch3_give_yuna_dain_mid": {
+        "name": "多因",
+        "text": "嗯，由娜先挑的。下次轮到我。"
+    },
+    "lunch3_give_yuna_dain_low": {
+        "name": "多因",
+        "text": "*多因把空水瓶放进包里。*我没事。"
+    },
+    "lunch3_give_seo_dain_neg": {
+        "name": "多因",
+        "text": "*她只拿了水瓶，就走出去进了走廊。没有打招呼。*"
+    },
+    "lunch3_give_seo_yuna_neg": {
+        "name": "{name}",
+        "text": "*由娜把面包袋折好收进背包，先站了起来。*"
+    },
+    "lunch3_give_dain_seo_neg": {
+        "name": "书妍",
+        "text": "*她合上饭盒，只拿了那个面包卷，就离开了。*"
+    },
+    "lunch3_give_dain_yuna_neg": {
+        "name": "{name}",
+        "text": "*由娜的座位已经空了。没有纸条。*"
+    },
+    "lunch3_give_yuna_seo_neg": {
+        "name": "书妍",
+        "text": "*她走在走廊上，没有看图书馆的门。*"
+    },
+    "lunch3_give_yuna_dain_neg": {
+        "name": "多因",
+        "text": "*她拿了一个球，朝体育馆走去。没有回头。*"
+    }
+}

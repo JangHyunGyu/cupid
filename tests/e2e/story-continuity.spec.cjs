@@ -6,7 +6,7 @@ async function ready(page) {
     await page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
 }
 
-for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
     test(`${lang}: edited story routers load translated dialogue and survive reload`, async ({ page }) => {
         test.setTimeout(90_000);
         await page.goto(lang === 'ko' ? '/game.html' : `/game-${lang}.html`);

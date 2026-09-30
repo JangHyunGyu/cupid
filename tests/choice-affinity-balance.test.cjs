@@ -153,7 +153,7 @@ test('day 2 afterschool rivalry scales with the live relationship instead of inv
     assert.doesNotMatch(korean.lunch2_seo_9.text, /오늘도 나 빼고/);
 
     const localizedNodes = checks.flatMap(([, , prefix]) => [`${prefix}_low`, `${prefix}_mid`, `${prefix}_high`, `${prefix}_neg`]);
-    for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+    for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
         const copy = loadLocaleCopy(locale);
         for (const nodeId of localizedNodes) {
             assert.ok(copy[nodeId]?.text?.trim(), `${locale}:${nodeId} must be localized`);
@@ -415,7 +415,7 @@ test('every affinity screen that had only two options now adds two localized neg
         'morning5_caught_yuna_by_dain',
         'hidden_homeroom_d5_choice'
     ];
-    const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy);
+    const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'].map(loadLocaleCopy);
 
     assert.equal(expandedSceneIds.length, 44);
     for (const sceneId of expandedSceneIds) {
@@ -494,7 +494,7 @@ test('audited trap copy follows the selected intent into a matching reaction', (
         }
     }
 
-    for (const copy of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy)) {
+    for (const copy of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'].map(loadLocaleCopy)) {
         assert.ok(copy.lunch2_yuna_trap_compare?.name && copy.lunch2_yuna_trap_compare?.text);
         assert.ok(copy.lunch2_yuna_trap_exclusive?.name && copy.lunch2_yuna_trap_exclusive?.text);
     }
@@ -537,7 +537,7 @@ test('ordinary safe-only dialogue screens add a localized third trap without cha
         ['hidden_homeroom_d4_choice', 'Teacher', -4, '저만 따로 불러내셔도 됐을 텐데요.', 'hidden_homeroom_d4_choice_trap', 'teacher_worried.png'],
         ['hidden_nurse_d4_morning_choice', 'Nurse', -5, '선생님한테만 말하면 안 돼요?', 'hidden_nurse_d4_morning_choice_trap', 'nurse_worried.png']
     ];
-    const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy);
+    const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'].map(loadLocaleCopy);
 
     for (const [sceneId, character, penalty, text, reactionId, avatar] of traps) {
         const scene = scenes[sceneId];
@@ -639,7 +639,7 @@ test('day 4 rival temptations grant +8 while retaining relationship costs and lo
             choices: ['유나에게 답장하고 학교 후문으로 간다', '체육관으로 들어가 다인의 부탁을 받아준다']
         }
     ];
-    const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy);
+    const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'].map(loadLocaleCopy);
 
     for (const counteroffer of counteroffers) {
         const scene = scenes[counteroffer.sceneId];
@@ -739,7 +739,7 @@ test('accepted temptations damage trust in two causal stages when the lead sees 
         ['wall_yuna_glimpse_3_b', 'Yuna', 'morning5_caught_yuna_by_seoyeon', 'morning5_caught_yuna_honest', 'morning5_caught_yuna_lie'],
         ['wall_yuna_dain_tempt_2', 'Yuna', 'morning5_caught_yuna_by_dain', 'morning5_caught_yuna_honest', 'morning5_caught_yuna_lie']
     ];
-    const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy);
+    const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'].map(loadLocaleCopy);
 
     assert.deepEqual(
         scenes.morning5_temptation_counteroffer_branch.branches.map(branch => branch.condition || 'fallback'),
@@ -814,7 +814,7 @@ test('new temptation and bittersweet CGs are registered and localized in every g
         'ending_bittersweet_nurse'
     ];
 
-    for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+    for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
         for (const cgId of cgIds) {
             const entry = context.window.GalleryData.getCG(locale, cgId);
             assert.ok(entry, `${locale}:${cgId} must be present in the gallery`);
@@ -1233,7 +1233,7 @@ test('day-five continuity keeps availability, history, affinity, and final choic
         'after5_hidden_return_to_park',
         'ending_counteroffer_choice_neither'
     ];
-    for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+    for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
         const localized = loadLocaleCopy(locale);
         for (const sceneId of requiredCopy) {
             assert.ok(localized[sceneId]?.text?.trim(), `${locale}:${sceneId} must be localized`);
@@ -1287,7 +1287,7 @@ test('live affinity guards enforce relationship thresholds and provide localized
         ['after5_farewell_yuna_1', 'Yuna', 40, 'after5_farewell_yuna_skip'],
         ['after5_farewell_dain_1', 'Dain', 40, 'after5_farewell_dain_skip']
     ];
-    const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy);
+    const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'].map(loadLocaleCopy);
     const affinities = { Seoyeon: 0, Yuna: 0, Dain: 0, Teacher: 0, Nurse: 0 };
     const renderer = createSceneRenderer(affinities);
 
@@ -1352,7 +1352,7 @@ test('date route gates cover automatic, manual, multiple-promise, and saved-entr
         assert.equal(negativeRefusal.next, 'after3_final');
         assert.equal(negativeRefusal.stats, undefined, 'A failed negative route must not penalize the other characters');
     }
-    for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+    for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
         const copy = loadLocaleCopy(locale);
         for (const id of ['after3_choice', 'after3_multi_choice', 'after3_seo_low_1', 'after3_yuna_low_1', 'after3_dain_low_1', 'after3_seo_neg_1', 'after3_yuna_neg_1', 'after3_dain_neg_1']) {
             assert.doesNotMatch(copy[id].text, /\d/, `${locale}:${id} must convey the relationship without numeric notices`);
@@ -1425,7 +1425,7 @@ test('every eligible day-four route shows the accepted rival CG at any affinity 
         ['Nurse', 'nurse_day4', ['Seoyeon', 'Dain', 'Yuna']]
     ];
 
-    for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+    for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
         const copy = loadLocaleCopy(locale);
         for (const [lead, routeFlag, rivals] of routes) {
             for (const rival of rivals) {
@@ -1529,7 +1529,7 @@ test('Haeun free talk branches by personal trust before rejoining the Seoyeon ro
     affinities.Haeun = -25;
     assert.equal(renderer.resolveNextScene(router), 'haeun_affinity_low_1');
 
-    for (const copy of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy)) {
+    for (const copy of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'].map(loadLocaleCopy)) {
         for (const id of [
             'haeun_affinity_high_1', 'haeun_affinity_high_2',
             'haeun_affinity_neutral_1', 'haeun_affinity_neutral_2',
@@ -1581,7 +1581,7 @@ test('forced sexual violation aftermath covers every day and resumes every free-
     }
     assert.equal(routes.length, 51, 'every authored main-story free talk must be covered');
 
-    const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'].map(loadLocaleCopy);
+    const localizedCopies = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'].map(loadLocaleCopy);
 
     for (const [day, character, freeTalkId] of routes) {
         const characterSlug = characterSlugs[character];
@@ -1670,7 +1670,7 @@ test('day-five mood uses the highest live affinity instead of a pseudo-character
 });
 
 test('day-four visits cannot replace an established student route or make its lead a rival', () => {
-    for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+    for (const locale of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
         const copy = loadLocaleCopy(locale);
         for (const [lead, short] of [['Seoyeon', 'seo'], ['Yuna', 'yuna'], ['Dain', 'dain']]) {
             for (const visits of [{}, { nurse_day4: true }, { homeroom_day4: true }, { nurse_day4: true, homeroom_day4: true }]) {

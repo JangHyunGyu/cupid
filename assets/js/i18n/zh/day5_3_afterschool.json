@@ -1,0 +1,775 @@
+{
+    "after5_farewell_seo_low": {
+        "name": "书妍",
+        "text": "*你在走廊里碰到书妍。她停了一下，朝你点了一下头。*我知道你的决定了。我没有别的可说。"
+    },
+    "after5_farewell_yuna_low": {
+        "name": "由娜",
+        "text": "*你们的视线在图书馆外相遇。由娜把书抱在身前，朝你微微点了点头。*再见。"
+    },
+    "after5_farewell_dain_low": {
+        "name": "多因",
+        "text": "*多因走到体育馆外，在两步远的地方停下。*我知道你的决定了。我进去了。"
+    },
+    "after5_start": {},
+    "after5_waited_start_branch": {
+        "name": "系统",
+        "text": ""
+    },
+    "after5_farewell_seo_1": {
+        "name": "{name}",
+        "text": "*我在走廊里遇到了书妍。*"
+    },
+    "after5_farewell_seo_2": {
+        "name": "书妍",
+        "text": "*书妍长长地呼出一口气。*"
+    },
+    "after5_farewell_seo_3": {
+        "name": "书妍",
+        "text": "*她把散落的头发别到耳后，重新握了握包带。*"
+    },
+    "after5_farewell_seo_4": {
+        "name": "书妍",
+        "text": "嗯，我预料到了。我只是不想让人觉得，是我先放弃的。"
+    },
+    "after5_farewell_seo_5": {
+        "name": "{name}",
+        "text": "书妍——"
+    },
+    "after5_farewell_seo_6": {
+        "name": "书妍",
+        "text": "如果这是你的决定，我尊重。但这不代表我已经理清了自己的感情。"
+    },
+    "after5_farewell_seo_6_b": {
+        "name": "书妍",
+        "text": "*她转过身，挥了挥手。她没有回头。走廊尽头，只有她手腕上的丝带在晃动。*"
+    },
+    "after5_farewell_seo_7": {
+        "name": "{name}",
+        "text": "*我一个人留在走廊里。书妍的脚步声渐渐消失，楼上某处，天台的门上了锁。*"
+    },
+    "after5_farewell_yuna_check": {},
+    "after5_farewell_yuna_1": {
+        "name": "{name}",
+        "text": "*由娜在图书馆前走来。一言不发地递给我一本书。*"
+    },
+    "after5_farewell_yuna_2": {
+        "name": "{name}",
+        "text": "*里面夹着一枚书签。书签上有一行字。*"
+    },
+    "after5_farewell_yuna_3": {
+        "name": "由娜",
+        "text": "别对你选的那个人迟到。……不过，我还是喜欢你的。"
+    },
+    "after5_farewell_yuna_4": {
+        "name": "由娜",
+        "text": "*她拐进通向图书馆的走廊。鞋声消失在拐角。*"
+    },
+    "after5_farewell_yuna_5": {
+        "name": "{name}",
+        "text": "*我又读了一遍书签上那行短短的字：“我很开心。”墨迹在最后一个字下面洇开了。*"
+    },
+    "after5_farewell_yuna_5b": {
+        "name": "{name}",
+        "text": "*我走回走廊。*"
+    },
+    "after5_farewell_dain_check": {},
+    "after5_farewell_dain_1": {
+        "name": "{name}",
+        "text": "*多因从体育馆走过来。她的步子比平时短。*"
+    },
+    "after5_farewell_dain_2": {
+        "name": "多因",
+        "text": "啧，好疼！不过我不会因为失望就退缩。"
+    },
+    "after5_farewell_dain_3": {
+        "name": "{name}",
+        "text": "多因——"
+    },
+    "after5_farewell_dain_4": {
+        "name": "多因",
+        "text": "我知道你选了谁。可我还是喜欢你。这点话，我总还是可以说的吧。"
+    },
+    "after5_farewell_dain_4_b": {
+        "name": "{name}",
+        "text": "*多因在我肩上轻轻捶了一拳。*"
+    },
+    "after5_farewell_dain_4_c": {
+        "name": "多因",
+        "text": "好好对她。你要是做不到，我就把你抢回来。"
+    },
+    "after5_farewell_dain_4_d": {
+        "name": "多因",
+        "text": "*她把排球推进球架，重新调整了护膝的带子。*"
+    },
+    "after5_farewell_dain_5": {
+        "name": "{name}",
+        "text": "*多因又把护膝的带子勒紧了一次，走进了体育馆。*"
+    },
+    "after5_farewell_dain_5b": {
+        "name": "{name}",
+        "text": "*我离开体育馆，朝学校后面走去。*"
+    },
+    "after5_hidden_farewell_1": {
+        "name": "{name}",
+        "text": "*校门口，书妍正和夏恩核对活动名单，多因夹着排球缩小了步幅，由娜垂着眼睛看着摊开的书。三个人各自朝不同的出口走去。*"
+    },
+    "after5_hidden_farewell_3": {
+        "name": "{name}",
+        "text": "*在校门口，我举起一只手道别。*"
+    },
+    "after5_hidden_farewell_3b": {
+        "name": "{name}",
+        "text": "*我朝学校后面走去。*"
+    },
+    "after5_sunset_1": {
+        "name": "{name}",
+        "text": "*夕阳挂在每一扇教室窗户上。广播室宣布活动结束，操场的喇叭慢了一拍，发出嘶嘶的杂音。*"
+    },
+    "after5_ending_check": {},
+    "after5_hidden_route_choice_check": {
+        "name": "{name}",
+        "text": "*去见朋友的路，和回去帮忙收尾活动的路，在这里分开了。*"
+    },
+    "after5_hidden_route_choice": {
+        "name": "{name}",
+        "text": "*去公园的路，和回去帮忙收尾活动的路，在这里分开了。我必须决定，今天把答案给谁。*",
+        "choices": [
+            "去公园，把已经开始的选择做个了结",
+            "回到班主任那里，整理文艺部的稿件",
+            "回到保健老师那里，整理咨询记录"
+        ]
+    },
+    "after5_last_chance_1": {
+        "name": "{name}",
+        "text": "*活动的喇叭断了电。在岔路口的路牌下，我停住了，无法选择方向。*"
+    },
+    "after5_last_chance_2": {
+        "name": "{name}",
+        "text": "*我从口袋里拿出手机。黑色的屏幕上只映出活动的横幅。*"
+    },
+    "after5_last_chance_route_check": {},
+    "after5_last_chance_seo_aff_check": {},
+    "after5_last_chance_2_b": {
+        "name": "{name}",
+        "text": "*我没有打开手机，把它放回口袋。我朝岔路口的另一边走了两步，叫出了她的名字。*"
+    },
+    "after5_last_chance_2_c": {
+        "name": "{name}",
+        "text": "书妍。"
+    },
+    "after5_last_chance_2_d": {
+        "name": "书妍",
+        "text": "*书妍转过身来。她身后的活动横幅在风中折了一下。*"
+    },
+    "after5_last_chance_2_e": {
+        "name": "书妍",
+        "text": "你迟到了。"
+    },
+    "after5_last_chance_2_f": {
+        "name": "{name}",
+        "text": "*书妍把学生会丝带的末端绕在一根手指上，然后松开。*"
+    },
+    "after5_last_chance_2_g": {
+        "name": "书妍",
+        "text": "我来说。你就停一会儿。"
+    },
+    "after5_last_chance_2_h": {
+        "name": "{name}",
+        "text": "*书妍伸出了手。*"
+    },
+    "after5_last_chance_2_i": {
+        "name": "书妍",
+        "text": "握住。"
+    },
+    "after5_last_chance_2_j": {
+        "name": "书妍",
+        "text": "*书妍摊开一只手掌，等着。*"
+    },
+    "after5_last_chance_seo_low_1": {
+        "name": "{name}",
+        "text": "书妍。"
+    },
+    "after5_last_chance_seo_low_2": {
+        "name": "书妍",
+        "text": "*她回过头，一只脚仍半朝着出口的方向。*为什么？"
+    },
+    "after5_last_chance_dain_aff_check": {},
+    "after5_last_chance_2_k": {
+        "name": "{name}",
+        "text": "多因。"
+    },
+    "after5_last_chance_2_l": {
+        "name": "多因",
+        "text": "*她从我身边走过一步，然后把排球按在地上，停住了。*"
+    },
+    "after5_last_chance_2_m": {
+        "name": "多因",
+        "text": "喂，你——"
+    },
+    "after5_last_chance_2_n": {
+        "name": "多因",
+        "text": "*抱着球的手臂从身侧垂了下来。她运动鞋的鞋尖转回{name}的方向。*"
+    },
+    "after5_last_chance_2_o": {
+        "name": "多因",
+        "text": "你回来了？"
+    },
+    "after5_last_chance_2_p": {
+        "name": "多因",
+        "text": "*她咬了一下嘴唇，短促地吸了口气。*"
+    },
+    "after5_last_chance_2_q": {
+        "name": "多因",
+        "text": "我没办法马上笑出来。不过，我会听你说，是什么让你一路走到这里。"
+    },
+    "after5_last_chance_2_r": {
+        "name": "多因",
+        "text": "*她揉了揉眼角。手背上沾着水汽。*"
+    },
+    "after5_last_chance_2_s": {
+        "name": "多因",
+        "text": "说吧。我听到最后。"
+    },
+    "after5_last_chance_dain_low_1": {
+        "name": "{name}",
+        "text": "多因。"
+    },
+    "after5_last_chance_dain_low_2": {
+        "name": "多因",
+        "text": "*她走过头一步，又折了回来。她把排球抱在胸前，保持着距离。*为什么？"
+    },
+    "after5_last_chance_yuna_aff_check": {},
+    "after5_last_chance_yuna_1": {
+        "name": "{name}",
+        "text": "由娜。"
+    },
+    "after5_last_chance_yuna_2": {
+        "name": "由娜",
+        "text": "*她停住了。她把书抱在胸前。大约两秒钟，她才转过身来。*"
+    },
+    "after5_last_chance_yuna_3": {
+        "name": "由娜",
+        "text": "你回来了。"
+    },
+    "after5_last_chance_yuna_4": {
+        "name": "{name}",
+        "text": "*我们之间还隔着两步。由娜把书抱在胸前等着。*"
+    },
+    "after5_last_chance_yuna_5": {
+        "name": "由娜",
+        "text": "走之前，我会先听你说。就算我没办法说没关系。"
+    },
+    "after5_last_chance_yuna_6": {
+        "name": "{name}",
+        "text": "*由娜没有移开视线。我们之间的距离缩短了一步。*"
+    },
+    "after5_last_chance_yuna_7": {},
+    "after5_last_chance_yuna_low_1": {
+        "name": "{name}",
+        "text": "由娜。"
+    },
+    "after5_last_chance_yuna_low_2": {
+        "name": "由娜",
+        "text": "*由娜转回身，双臂把书抱得更紧。*怎么了？"
+    },
+    "after5_last_chance_choice": {
+        "name": "{name}",
+        "text": "*我看着她，斟酌着措辞。*",
+        "choices": [
+            "告诉她我喜欢她",
+            "先不说",
+            "让我们都花点时间想一想。"
+        ]
+    },
+    "after5_confess_yes": {
+        "name": "{name}",
+        "text": "*我吸了一口气，叫出她的名字。*"
+    },
+    "after5_confess_yes_2": {
+        "name": "{name}",
+        "text": "我喜欢你。不只是朋友那种。我知道自己说晚了，但我想亲口告诉你。"
+    },
+    "after5_confess_aff_seo": {},
+    "after5_confess_react_seo": {
+        "name": "书妍",
+        "text": "*我们开始朝公园走去。*你可真会磨蹭。不过……现在，我知道你的心意了。"
+    },
+    "after5_confess_react_seo_low": {
+        "name": "书妍",
+        "text": "*红绿灯变了一次，她才开口。*我听到了。现在这样就够了。"
+    },
+    "after5_confess_aff_dain": {},
+    "after5_confess_react_dain": {
+        "name": "多因",
+        "text": "*我们离开时，她低头看着自己的鞋带。*喂。我一直在等着听这句话。别装作没说过，好吗？"
+    },
+    "after5_confess_react_dain_low": {
+        "name": "多因",
+        "text": "*她的拇指在排球上描出一道凹痕。*我听到了。不过，我现在还没办法马上笑出来。"
+    },
+    "after5_confess_aff_yuna": {},
+    "after5_confess_react_yuna": {
+        "name": "由娜",
+        "text": "*我们并肩走着。*嗯。你说的话我听到了。"
+    },
+    "after5_confess_react_yuna_call": {
+        "name": "{name}",
+        "text": "由娜。"
+    },
+    "after5_confess_react_yuna_b": {
+        "name": "由娜",
+        "text": "*她把书放下，然后又攥住了一角。*"
+    },
+    "after5_confess_react_yuna_c": {
+        "name": "由娜",
+        "text": "我还是想听你亲口说出来。"
+    },
+    "after5_confess_react_yuna_d": {
+        "name": "由娜",
+        "text": "*她递给我一张折起来的纸条。我展开，上面只有一行字。*"
+    },
+    "after5_confess_react_yuna_e": {
+        "name": "{name}",
+        "text": "*“我等了很久。”*"
+    },
+    "after5_confess_react_yuna_f": {
+        "name": "{name}",
+        "text": "*有一个字被用力压进了纸里。纸上有被反复折起又展开的折痕。*"
+    },
+    "after5_confess_react_yuna_g": {
+        "name": "由娜",
+        "text": "你读了，就够了。"
+    },
+    "after5_confess_react_yuna_h": {
+        "name": "{name}",
+        "text": "*我们并肩走着。没有说话。*"
+    },
+    "after5_confess_react_yuna_i": {
+        "name": "{name}",
+        "text": "*我们走出校门。*"
+    },
+    "after5_confess_react_yuna_low": {
+        "name": "由娜",
+        "text": "*由娜紧紧抱着她的书。*我听到了。不过，我现在还没办法给你答案。"
+    },
+    "after5_confess_fail_walk_1": {
+        "name": "{name}",
+        "text": "*太阳越沉越低。我们只是一直朝同一个方向走着。*"
+    },
+    "after5_confess_fail_walk_2": {
+        "name": "{name}",
+        "text": "*没有得出答案，我们朝公园走去。*"
+    },
+    "after5_confess_no": {
+        "name": "{name}",
+        "text": "*我关掉手机屏幕，抿紧了嘴唇。*"
+    },
+    "after5_confess_no_2": {
+        "name": "{name}",
+        "text": "*傍晚的风把一张活动传单吹到我的脚边。我捡起来，塞到布告栏下面。*"
+    },
+    "after5_confess_no_2b": {
+        "name": "{name}",
+        "text": "*最终，我转身回了家。*"
+    },
+    "after5_set_harem": {
+        "name": "{name}",
+        "text": "*我看着聊天列表里的三个名字，分别给她们发消息，请她们到学校后面简短见一面。*"
+    },
+    "after5_harem_commit": {
+        "name": "{name}",
+        "text": "*过了一会儿，她们一个接一个到了。我收起手机，面对她们。“我没办法只选一个人。”没有人马上回答。*"
+    },
+    "after5_harem_walk_1": {
+        "name": "{name}",
+        "text": "*我们一起朝公园走去。有一阵子，谁也没有说话。*"
+    },
+    "after5_harem_walk_2": {
+        "name": "{name}",
+        "text": "*锁屏上留着未回复的消息。我的脚转向了公园的方向。*"
+    },
+    "after5_defer_route_check": {},
+    "after5_defer_seo": {
+        "name": "书妍",
+        "text": "*她慢慢放下摊开的手。*好。如果这是你的决定。"
+    },
+    "after5_defer_dain": {
+        "name": "多因",
+        "text": "*她又把排球抱了起来。*好。今天我们又到此为止了。"
+    },
+    "after5_defer_yuna": {
+        "name": "由娜",
+        "text": "*她把书重新抱回胸前。*我明白了。今天我们又到此为止了。"
+    },
+    "after5_co_abandoned_branch": {},
+    "after5_co_tempter_branch": {},
+    "after5_co_start": {
+        "name": "{name}",
+        "text": "*活动接近尾声。走廊里剩下的，还是今天早上的那几张脸。*"
+    },
+    "after5_co_seo_1": {
+        "name": "书妍",
+        "text": "*她刚要推眼镜，又放下了手。*日程我已经发出去了。"
+    },
+    "after5_co_seo_2": {
+        "name": "书妍",
+        "text": "我今天没有别的话要说了。走吧。"
+    },
+    "after5_co_yuna_1": {
+        "name": "由娜",
+        "text": "*她把书签放进包里。*我把布告栏留空了。"
+    },
+    "after5_co_yuna_2": {
+        "name": "由娜",
+        "text": "别跟着我。今天不要。"
+    },
+    "after5_co_dain_1": {
+        "name": "多因",
+        "text": "*她把球塞进筐里。*我把你的名字从搭档名单上划掉了。"
+    },
+    "after5_co_dain_2": {
+        "name": "多因",
+        "text": "保重。我现在笑不出来。"
+    },
+    "after5_co_teacher_1": {
+        "name": "班主任",
+        "text": "*她合上点名册。*今天的活动由别的老师负责。"
+    },
+    "after5_co_teacher_2": {
+        "name": "班主任",
+        "text": "我们另约个时间谈吧。我今天得先把活动的收尾做完。"
+    },
+    "after5_co_nurse_1": {
+        "name": "保健老师",
+        "text": "*她把病历放进抽屉。*我们的咨询到此结束。"
+    },
+    "after5_co_nurse_2": {
+        "name": "保健老师",
+        "text": "如果不舒服，就来保健室。这场谈话，我们在你下次预约时再谈完。"
+    },
+    "after5_co_tempter_seo_1": {
+        "name": "书妍",
+        "text": "*她把天台的钥匙扣揣进口袋。*昨天是我先靠近你的。"
+    },
+    "after5_co_tempter_seo_2": {
+        "name": "书妍",
+        "text": "即便如此，今天我也不会请你留下。"
+    },
+    "after5_co_tempter_yuna_1": {
+        "name": "由娜",
+        "text": "*别馆的照片还留在她的锁屏上。*是我叫你来的。"
+    },
+    "after5_co_tempter_yuna_2": {
+        "name": "由娜",
+        "text": "现在别去追她们了。我只需要你做到这一点。"
+    },
+    "after5_co_tempter_dain_1": {
+        "name": "多因",
+        "text": "*她按了按膝盖上的胶带。*昨天是我叫你留下的。"
+    },
+    "after5_co_tempter_dain_2": {
+        "name": "多因",
+        "text": "今天我不会先叫你过来了。"
+    },
+    "after5_normal_start": {
+        "name": "{name}",
+        "text": "*活动接近尾声。在走廊里，我遇到了我没有选的那两个人。*"
+    },
+    "after5_farewell_seo_affinity_check": {},
+    "after5_farewell_seo_high_1": {},
+    "after5_farewell_seo_high_2": {
+        "name": "书妍",
+        "text": "我知道你选了谁。但我不会假装我喜欢过你的那段时间从未发生过。"
+    },
+    "after5_farewell_yuna_affinity_check": {},
+    "after5_farewell_yuna_high_1": {
+        "name": "由娜",
+        "text": "*由娜在书签背面写上今天的日期，递给我。*你读到了最后一页。"
+    },
+    "after5_farewell_yuna_high_2": {
+        "name": "由娜",
+        "text": "别对你选的那个人迟到。我也不会抹去我喜欢过你的那些字句。"
+    },
+    "after5_farewell_dain_affinity_check": {},
+    "after5_farewell_dain_high_1": {
+        "name": "多因",
+        "text": "*多因把排球拍了一下，接住，然后把它放到球场边线外面。*我知道你选了谁。"
+    },
+    "after5_farewell_dain_high_2": {
+        "name": "多因",
+        "text": "但我不会假装喜欢过你这件事没有发生过。好好对她。不然我真的会生气。"
+    },
+    "after5_hidden_teacher_affinity_check": {},
+    "after5_hidden_teacher_high": {
+        "name": "班主任",
+        "text": "*她检查了04号合评稿上空白的意见栏，然后合上信封。*周一告诉我你在哪里停下的。别只挑好听的说。"
+    },
+    "after5_hidden_teacher_mid": {
+        "name": "班主任",
+        "text": "*她核对04号合评稿上的编号。*只标你读到哪里。其余的，我们和文艺部一起过。"
+    },
+    "after5_hidden_teacher_low": {
+        "name": "班主任",
+        "text": "*她把稿件信封放进文件夹。*合评意见你会在预定的社团时间收到。今天先把活动做完。"
+    },
+    "after5_hidden_nurse_affinity_check": {},
+    "after5_hidden_nurse_high": {
+        "name": "保健老师",
+        "text": "*她把咨询确认单和急救卡并排放好。*下次再觉得沉重，别一个人硬扛。按我们定好的顺序联系人。"
+    },
+    "after5_hidden_nurse_mid": {
+        "name": "保健老师",
+        "text": "*她指着急救卡背面的咨询二维码。*需要的话就在这里预约。你不必编造理由。"
+    },
+    "after5_hidden_nurse_low": {
+        "name": "保健老师",
+        "text": "*她把咨询记录归档，合上预约簿。*下次咨询请按正规流程预约。今天的记录到此结束。"
+    },
+    "after5_last_chance_seo_history_check": {},
+    "after5_last_chance_seo_postponed": {
+        "name": "书妍",
+        "text": "把你昨天在天台上没做完的事做完。"
+    },
+    "after5_last_chance_seo_tentative": {
+        "name": "书妍",
+        "text": "昨天我们没有再定下别的约。可今天你还是先来了。"
+    },
+    "after5_last_chance_seo_distance": {
+        "name": "书妍",
+        "text": "昨天我们说好到此为止。告诉我你今天为什么先来。"
+    },
+    "after5_last_chance_dain_history_check": {},
+    "after5_last_chance_dain_postponed": {
+        "name": "多因",
+        "text": "把你昨天没能说出口的话说完。我想听。"
+    },
+    "after5_last_chance_dain_tentative": {
+        "name": "多因",
+        "text": "昨天我们没有约定下一次。你今天先来了。"
+    },
+    "after5_last_chance_dain_distance": {
+        "name": "多因",
+        "text": "昨天我们都停下了。我想听听你今天为什么回来。"
+    },
+    "after5_last_chance_yuna_history_check": {},
+    "after5_last_chance_yuna_postponed": {
+        "name": "由娜",
+        "text": "昨天我们把结局推迟了。今天我先听你的答案。"
+    },
+    "after5_last_chance_yuna_tentative": {
+        "name": "由娜",
+        "text": "我说过我会先联系你。可你今天来了。"
+    },
+    "after5_last_chance_yuna_distance": {
+        "name": "由娜",
+        "text": "昨天我们说好到此为止。我想听听你今天为什么来。"
+    },
+    "after5_hidden_return_to_park": {
+        "name": "{name}",
+        "text": "*做完工作后，我离开学校。通向公园的路上，两旁排着折起来的庆典横幅。*"
+    },
+    "after5_farewell_seo_skip": {},
+    "after5_farewell_yuna_skip": {},
+    "after5_farewell_dain_skip": {},
+    "after5_farewell_seo_neg": {
+        "name": "书妍",
+        "text": "*她走过去，没有转头。*"
+    },
+    "after5_farewell_yuna_neg": {
+        "name": "由娜",
+        "text": "*她拿着书沿走廊往另一个方向走去。一句话也没有。*"
+    },
+    "after5_farewell_dain_neg": {
+        "name": "多因",
+        "text": "*她整理好包，走进体育馆的门。她没有回头。*"
+    },
+    "after5_hidden_teacher_neg": {
+        "name": "班主任",
+        "text": "*她把稿件信封放进文件夹，合上。*今天我们就把活动做完吧。私人谈话到此为止。"
+    },
+    "after5_hidden_nurse_neg": {
+        "name": "保健老师",
+        "text": "*她把咨询表归档，合上预约单。*从现在起，只走正规渠道。今天就到这里。"
+    },
+    "after5_last_chance_seo_neg": {
+        "name": "书妍",
+        "text": "*她先朝出口走去。*今天够了。"
+    },
+    "after5_last_chance_dain_neg": {
+        "name": "多因",
+        "text": "*她肩上挎着球袋走过。*别打给我。"
+    },
+    "after5_last_chance_yuna_neg": {
+        "name": "由娜",
+        "text": "*她拿着书朝另一边走去。*我今天不听。"
+    },
+    "after5_confess_react_seo_neg": {
+        "name": "书妍",
+        "text": "*她把钥匙揣进口袋。*我们还没有熟到那个地步。"
+    },
+    "after5_confess_react_dain_neg": {
+        "name": "多因",
+        "text": "*她拿起球，先转过身。*我现在不想听这个。"
+    },
+    "after5_confess_react_yuna_neg": {
+        "name": "由娜",
+        "text": "*她只是翻过一页。*我不收下这个。"
+    },
+    "day5_haeun_route_choice": {
+        "name": "夏恩",
+        "text": "如果你选我，你和那个人的关系就不可能保持原样了。*夏恩把手里的纸折起来。*回答之前，请再想一想。",
+        "choices": [
+            "选择和夏恩相处，而不是之前的关系",
+            "回到最初在意的那个人身边"
+        ]
+    },
+    "day5_haeun_private_1": {
+        "name": "夏恩",
+        "text": "那我们再聊一会儿吧。我想听听你是怎么看我的。我也会试着在自己的节奏里，告诉你我的感受。",
+        "context": "与夏恩私下交谈。只记住实际发生过的往来。保持她礼貌的口吻和自然的学妹称呼。在明确的路线选择之前，不要确立恋爱关系；即使做出选择之后，她也还没有同意交往。根据当前的对话和好感度作出回应。",
+        "personality": "与夏恩私下交谈。只记住实际发生过的往来。保持她礼貌的口吻和自然的学妹称呼。在明确的路线选择之前，不要确立恋爱关系；即使做出选择之后，她也还没有同意交往。根据当前的对话和好感度作出回应。"
+    },
+    "day5_haeun_walk": {
+        "name": "夏恩",
+        "text": "*收拾完之后，你走到公园。夏恩把她的包放在长椅的一头。*坐这里。我想多听听我们刚才在说的事。"
+    },
+    "day5_haeun_private_2": {
+        "name": "夏恩",
+        "text": "我希望下次我们也能这样聊天。你想和我建立什么样的关系？",
+        "context": "与夏恩私下交谈。只记住实际发生过的往来。保持她礼貌的口吻和自然的学妹称呼。在明确的路线选择之前，不要确立恋爱关系；即使做出选择之后，她也还没有同意交往。根据当前的对话和好感度作出回应。",
+        "personality": "与夏恩私下交谈。只记住实际发生过的往来。保持她礼貌的口吻和自然的学妹称呼。在明确的路线选择之前，不要确立恋爱关系；即使做出选择之后，她也还没有同意交往。根据当前的对话和好感度作出回应。"
+    },
+    "day5_haeun_fallback": {
+        "name": "夏恩",
+        "text": "谢谢你今天陪我聊天。不过，我觉得我还没准备好和你交往。*夏恩拿起包。我们道了别，我转身朝学校走回去。*"
+    },
+    "day5_ending_haeun": {
+        "name": "夏恩",
+        "text": "*夏恩走过来坐到你身边。*我也喜欢你。我们交往吧。明天，我可以约你见面，而不用假装需要你帮忙做事吗？"
+    },
+    "day5_ending_haeun_epilogue": {
+        "name": "夏恩",
+        "text": "*夏恩也毕业、成年之后，你走进一家咖啡馆。她把包从对面的椅子上拿开。*今天我先到了。我等着，好一起点单。你想喝什么？"
+    },
+    "day5_haeun_offer_seoyeon": {
+        "name": "夏恩",
+        "text": "你不是要去见书妍吗？你说想和我在一起，是什么意思？"
+    },
+    "day5_haeun_leave_seoyeon": {
+        "name": "{name}",
+        "text": "*你请书妍谈谈。你们在走廊的窗边面对面站着，夏恩在你身旁停下。*夏恩是我想更亲近的人。今天我要和她一起走了。我想当面告诉你。"
+    },
+    "day5_haeun_offer_yuna": {
+        "name": "夏恩",
+        "text": "你不是要去见由娜吗？你说想和我在一起，是什么意思？"
+    },
+    "day5_haeun_leave_yuna": {
+        "name": "{name}",
+        "text": "*你请由娜谈谈。你们在走廊的窗边面对面站着，夏恩在你身旁停下。*夏恩是我想更亲近的人。今天我要和她一起走了。我想当面告诉你。"
+    },
+    "day5_haeun_offer_dain": {
+        "name": "夏恩",
+        "text": "你不是要去见多因吗？你说想和我在一起，是什么意思？"
+    },
+    "day5_haeun_leave_dain": {
+        "name": "{name}",
+        "text": "*你请多因谈谈。你们在走廊的窗边面对面站着，夏恩在你身旁停下。*夏恩是我想更亲近的人。今天我要和她一起走了。我想当面告诉你。"
+    },
+    "day5_haeun_offer_teacher": {
+        "name": "夏恩",
+        "text": "你不是要去见班主任吗？你说想和我在一起，是什么意思？"
+    },
+    "day5_haeun_leave_teacher": {
+        "name": "{name}",
+        "text": "*你请班主任谈谈。你们在走廊的窗边面对面站着，夏恩在你身旁停下。*夏恩是我想更亲近的人。今天我要和她一起走了。我想当面告诉你。"
+    },
+    "day5_haeun_offer_nurse": {
+        "name": "夏恩",
+        "text": "你不是要去见保健老师吗？你说想和我在一起，是什么意思？"
+    },
+    "day5_haeun_leave_nurse": {
+        "name": "{name}",
+        "text": "*你请保健老师谈谈。你们在走廊的窗边面对面站着，夏恩在你身旁停下。*夏恩是我想更亲近的人。今天我要和她一起走了。我想当面告诉你。"
+    },
+    "day5_haeun_switch_seoyeon_response": {
+        "name": "书妍",
+        "text": "你当着夏恩的面告诉我这些。你是从什么时候起有这种感觉的？"
+    },
+    "day5_haeun_switch_seoyeon_haeun": {
+        "name": "夏恩",
+        "text": "*夏恩留在你身边，看着书妍。*我也想和你多聊聊。不过，走之前，先听听书妍怎么说吧。"
+    },
+    "day5_haeun_switch_seoyeon_group_talk": {
+        "name": "书妍",
+        "text": "帮我理解一下。是今天发生了什么变化，还是你已经想了很久？",
+        "context": "第五天放学后。主角、书妍和夏恩在走廊里面对面。主角刚说了：“夏恩是我想更亲近的人。今天我要和她一起走了。我想当面告诉你。”夏恩被明确选中，但两人还没有约定交往。在这次选择之前，书妍的好感度最高。夏恩+20、书妍-30已经生效。",
+        "personality": "三个人讨论刚刚作出的宣告。夏恩为被选中而高兴，但尚未同意交往。另一个角色用自己的口吻表达受伤并提出质疑。已有的关系和承诺必须来自真实的记忆。不要把教职工描绘成曾经与学生交往过。这次输入带来的变化——夏恩+20、另一个角色-30——已经生效；只评判本回合新的言行。",
+        "groupLocation": "走廊窗边",
+        "groupChoiceState": "夏恩是我想更亲近的人。今天我要和她一起走了。我想当面告诉你。"
+    },
+    "day5_haeun_switch_yuna_response": {
+        "name": "由娜",
+        "text": "就没有时间先告诉我吗？你以为这样听说了，我就会轻易放你走吗？"
+    },
+    "day5_haeun_switch_yuna_haeun": {
+        "name": "夏恩",
+        "text": "*夏恩留在你身边，看着由娜。*我也想和你多聊聊。不过，走之前，先听听由娜怎么说吧。"
+    },
+    "day5_haeun_switch_yuna_group_talk": {
+        "name": "由娜",
+        "text": "看着我说。别转移话题。",
+        "context": "第五天放学后。主角、由娜和夏恩在走廊里面对面。主角刚说了：“夏恩是我想更亲近的人。今天我要和她一起走了。我想当面告诉你。”夏恩被明确选中，但两人还没有约定交往。在这次选择之前，由娜的好感度最高。夏恩+20、由娜-30已经生效。",
+        "personality": "三个人讨论刚刚作出的宣告。夏恩为被选中而高兴，但尚未同意交往。另一个角色用自己的口吻表达受伤并提出质疑。已有的关系和承诺必须来自真实的记忆。不要把教职工描绘成曾经与学生交往过。这次输入带来的变化——夏恩+20、另一个角色-30——已经生效；只评判本回合新的言行。",
+        "groupLocation": "走廊窗边",
+        "groupChoiceState": "夏恩是我想更亲近的人。今天我要和她一起走了。我想当面告诉你。"
+    },
+    "day5_haeun_switch_dain_response": {
+        "name": "多因",
+        "text": "你带着夏恩来告诉我。你期待我说什么？"
+    },
+    "day5_haeun_switch_dain_haeun": {
+        "name": "夏恩",
+        "text": "*夏恩留在你身边，看着多因。*我也想和你多聊聊。不过，走之前，先听听多因怎么说吧。"
+    },
+    "day5_haeun_switch_dain_group_talk": {
+        "name": "多因",
+        "text": "好。我在听。告诉我你为什么这么决定。",
+        "context": "第五天放学后。主角、多因和夏恩在走廊里面对面。主角刚说了：“夏恩是我想更亲近的人。今天我要和她一起走了。我想当面告诉你。”夏恩被明确选中，但两人还没有约定交往。在这次选择之前，多因的好感度最高。夏恩+20、多因-30已经生效。",
+        "personality": "三个人讨论刚刚作出的宣告。夏恩为被选中而高兴，但尚未同意交往。另一个角色用自己的口吻表达受伤并提出质疑。已有的关系和承诺必须来自真实的记忆。不要把教职工描绘成曾经与学生交往过。这次输入带来的变化——夏恩+20、另一个角色-30——已经生效；只评判本回合新的言行。",
+        "groupLocation": "走廊窗边",
+        "groupChoiceState": "夏恩是我想更亲近的人。今天我要和她一起走了。我想当面告诉你。"
+    },
+    "day5_haeun_switch_teacher_response": {
+        "name": "班主任",
+        "text": "好。不过你叫我来这里，就只是为了宣布你的决定吗？"
+    },
+    "day5_haeun_switch_teacher_haeun": {
+        "name": "夏恩",
+        "text": "*夏恩留在你身边，看着你的班主任。*我也想和您多聊聊。不过，走之前，先听听班主任怎么说吧。"
+    },
+    "day5_haeun_switch_teacher_group_talk": {
+        "name": "班主任",
+        "text": "你不是来征求我的许可的吧。告诉我，你真正想对我说什么。",
+        "context": "第五天放学后。主角、你的班主任和夏恩在走廊里面对面。主角刚说了：“夏恩是我想更亲近的人。今天我要和她一起走了。我想当面告诉你。”夏恩被明确选中，但两人还没有约定交往。在这次选择之前，你的班主任的好感度最高。夏恩+20、你的班主任-30已经生效。",
+        "personality": "三个人讨论刚刚作出的宣告。夏恩为被选中而高兴，但尚未同意交往。另一个角色用自己的口吻表达受伤并提出质疑。已有的关系和承诺必须来自真实的记忆。不要把教职工描绘成曾经与学生交往过。这次输入带来的变化——夏恩+20、另一个角色-30——已经生效；只评判本回合新的言行。",
+        "groupLocation": "走廊窗边",
+        "groupChoiceState": "夏恩是我想更亲近的人。今天我要和她一起走了。我想当面告诉你。"
+    },
+    "day5_haeun_switch_nurse_response": {
+        "name": "保健老师",
+        "text": "等一下。我明白你已经决定了，但走之前，你会先听我的答复，对吧？"
+    },
+    "day5_haeun_switch_nurse_haeun": {
+        "name": "夏恩",
+        "text": "*夏恩留在你身边，看着保健老师。*我也想和您多聊聊。不过，走之前，先听听保健老师怎么说吧。"
+    },
+    "day5_haeun_switch_nurse_group_talk": {
+        "name": "保健老师",
+        "text": "夏恩也在这儿。说吧，让我们两个都能听到。",
+        "context": "第五天放学后。主角、保健老师和夏恩在走廊里面对面。主角刚说了：“夏恩是我想更亲近的人。今天我要和她一起走了。我想当面告诉你。”夏恩被明确选中，但两人还没有约定交往。在这次选择之前，保健老师的好感度最高。夏恩+20、保健老师-30已经生效。",
+        "personality": "三个人讨论刚刚作出的宣告。夏恩为被选中而高兴，但尚未同意交往。另一个角色用自己的口吻表达受伤并提出质疑。已有的关系和承诺必须来自真实的记忆。不要把教职工描绘成曾经与学生交往过。这次输入带来的变化——夏恩+20、另一个角色-30——已经生效；只评判本回合新的言行。",
+        "groupLocation": "走廊窗边",
+        "groupChoiceState": "夏恩是我想更亲近的人。今天我要和她一起走了。我想当面告诉你。"
+    }
+}

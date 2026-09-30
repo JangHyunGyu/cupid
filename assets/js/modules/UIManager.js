@@ -175,7 +175,7 @@ class UIManager {
                             const btn = document.createElement('button');
                             btn.type = 'button';
                             btn.id = 'upload-image-btn';
-                            btn.title = { es: 'Subir imagen', ja: '画像をアップロード', en: 'Upload image', fr: 'Ajouter une image', de: 'Bild hochladen', pt: 'Enviar imagem' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 업로드';
+                            btn.title = { es: 'Subir imagen', ja: '画像をアップロード', en: 'Upload image', fr: 'Ajouter une image', de: 'Bild hochladen', pt: 'Enviar imagem', zh: '上传图片' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 업로드';
                             btn.innerHTML = '<span aria-hidden="true">📸</span>';
                             container.appendChild(btn);
                             this.imageUploadBtn = btn;
@@ -199,7 +199,7 @@ class UIManager {
                             const remBtn = document.createElement('button');
                             remBtn.id = 'remove-image-btn';
                             remBtn.type = 'button';
-                            remBtn.title = { es: 'Eliminar imagen', ja: '画像を削除', en: 'Remove image', fr: 'Supprimer l\'image', de: 'Bild entfernen', pt: 'Remover imagem' }[(window.GAME_LANG || document.documentElement.lang)] || '미리보기 제거';
+                            remBtn.title = { es: 'Eliminar imagen', ja: '画像を削除', en: 'Remove image', fr: 'Supprimer l\'image', de: 'Bild entfernen', pt: 'Remover imagem', zh: '移除图片' }[(window.GAME_LANG || document.documentElement.lang)] || '미리보기 제거';
                             remBtn.textContent = '×';
                             previewDiv.appendChild(remBtn);
 
@@ -365,7 +365,8 @@ class UIManager {
             ja: '\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u4e2d',
             fr: 'Téléversement en cours',
             de: 'Wird hochgeladen',
-            pt: 'Enviando'
+            pt: 'Enviando',
+            zh: '上传中'
         }[String(lang).toLowerCase().split('-')[0]] || 'Uploading';
 
         if (previewSrc && this.imagePreview) {
@@ -394,11 +395,11 @@ class UIManager {
 
     handleImageUpload(file) {
         if (!file.type.startsWith('image/')) {
-            alert({ es: 'Solo se pueden subir archivos de imagen.', ja: '画像ファイルのみアップロードできます。', en: 'Only image files can be uploaded.', fr: 'Seuls les fichiers image peuvent être ajoutés.', de: 'Nur Bilddateien können hochgeladen werden.', pt: 'Apenas arquivos de imagem podem ser enviados.' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 파일만 업로드 가능합니다.');
+            alert({ es: 'Solo se pueden subir archivos de imagen.', ja: '画像ファイルのみアップロードできます。', en: 'Only image files can be uploaded.', fr: 'Seuls les fichiers image peuvent être ajoutés.', de: 'Nur Bilddateien können hochgeladen werden.', pt: 'Apenas arquivos de imagem podem ser enviados.', zh: '只能上传图片文件。' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 파일만 업로드 가능합니다.');
             return;
         }
         if (file.size > 50 * 1024 * 1024) {
-            alert({ es: 'La imagen supera el límite de 50 MB.', ja: '画像サイズが50MBを超えています。', en: 'The image exceeds the 50 MB limit.', fr: "L’image dépasse la limite de 50 Mo.", de: 'Das Bild überschreitet das Limit von 50 MB.', pt: 'A imagem excede o limite de 50 MB.' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 크기가 50MB를 초과합니다.');
+            alert({ es: 'La imagen supera el límite de 50 MB.', ja: '画像サイズが50MBを超えています。', en: 'The image exceeds the 50 MB limit.', fr: "L’image dépasse la limite de 50 Mo.", de: 'Das Bild überschreitet das Limit von 50 MB.', pt: 'A imagem excede o limite de 50 MB.', zh: '图片超过了50 MB的限制。' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 크기가 50MB를 초과합니다.');
             return;
         }
 
@@ -484,7 +485,8 @@ class UIManager {
                     ja: '選択した画像',
                     fr: 'Image sélectionnée',
                     de: 'Ausgewähltes Bild',
-                    pt: 'Imagem selecionada'
+                    pt: 'Imagem selecionada',
+                    zh: '已选择的图片'
                 }[previewLang] || 'Selected image';
             }
             if (this.imagePreviewContainer) {
@@ -679,7 +681,8 @@ class UIManager {
             es: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Profesora tutora', Nurse: 'Enfermera escolar', Haeun: 'Haeun' },
             fr: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Professeure', Nurse: 'Infirmière', Haeun: 'Haeun' },
             de: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Klassenlehrerin', Nurse: 'Schulkrankenschwester', Haeun: 'Haeun' },
-            pt: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Professora da turma', Nurse: 'Enfermeira escolar', Haeun: 'Haeun' }
+            pt: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Professora da turma', Nurse: 'Enfermeira escolar', Haeun: 'Haeun' },
+            zh: { Seoyeon: '书妍', Yuna: '由娜', Dain: '多因', Teacher: '班主任', Nurse: '保健老师', Haeun: '夏恩' }
         };
         const nameMap = nameMapByLang[lang] || nameMapByLang['ko'];
 
@@ -887,7 +890,7 @@ class UIManager {
     goToHome() {
         if (window.soundManager) soundManager.stopBgm();
         const lang = (window.GAME_LANG || document.documentElement.lang) || 'ko';
-        window.location.href = { es: '/index-es', ja: '/index-ja', en: '/index-en', fr: '/index-fr', de: '/index-de', pt: '/index-pt' }[lang] || '/';
+        window.location.href = { es: '/index-es', ja: '/index-ja', en: '/index-en', fr: '/index-fr', de: '/index-de', pt: '/index-pt', zh: '/index-zh' }[lang] || '/';
     }
 
     /**

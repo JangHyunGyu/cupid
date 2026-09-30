@@ -8,7 +8,7 @@ const vm = require('node:vm');
 const { readPlainMedia } = require('../scripts/lib/read-plain-media.cjs');
 const root = path.resolve(__dirname, '..');
 const read = f => fs.readFileSync(path.join(root, f), 'utf8');
-const languages = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'];
+const languages = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'];
 function runtime() {
     const context = { window: {}, console, setTimeout, clearTimeout, URL, Blob, FormData, CHAR_NAME_MAP: {},
         document: { createElement: () => ({ toDataURL: () => '' }) } };

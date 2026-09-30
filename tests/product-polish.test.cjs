@@ -25,7 +25,7 @@ test('landing pages defer the game runtime and the initial content bundle contai
     assert.doesNotMatch(gameLoader, /concat\(commonScripts, scenarioScripts, engineScripts\)/u);
     assert.match(i18nLoader, /window\._i18nReady = loadDay\(1\)/u);
 
-    for (const language of ['', '-en', '-es', '-ja', '-fr', '-de', '-pt']) {
+    for (const language of ['', '-en', '-es', '-ja', '-fr', '-de', '-pt', '-zh']) {
         const html = read(`index${language}.html`);
         assert.match(html, /await window\.loadCupidGameRuntime\(\)/u);
     }
@@ -36,7 +36,7 @@ test('ending collection exposes 33 unique localized routes and resolves route va
     const ids = GalleryData.endingRoutes.map(ending => ending.id);
     assert.equal(ids.length, 33);
     assert.equal(new Set(ids).size, 33);
-    for (const language of ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt']) {
+    for (const language of ['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt', 'zh']) {
         const catalog = GalleryData.getEndingCatalog(language);
         assert.equal(catalog.length, 33);
         assert(catalog.every(ending => ending.name && ending.hint));
@@ -54,7 +54,7 @@ test('ending collection exposes 33 unique localized routes and resolves route va
 });
 
 test('every localized gallery includes the ending collection tab and content region', () => {
-    for (const language of ['', '-en', '-es', '-ja', '-fr', '-de', '-pt']) {
+    for (const language of ['', '-en', '-es', '-ja', '-fr', '-de', '-pt', '-zh']) {
         const html = read(`gallery${language}.html`);
         assert.match(html, /data-tab="endings"/u);
         assert.match(html, /id="tab-endings"/u);

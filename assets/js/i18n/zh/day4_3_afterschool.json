@@ -1,0 +1,368 @@
+{
+    "confess_seo_low": {
+        "name": "书妍",
+        "text": "*书妍拿出天台的钥匙，又放回口袋。*今天就到这里吧。我觉得现在我们再走近，并不合适。"
+    },
+    "confess_yuna_low": {
+        "name": "由娜",
+        "text": "*由娜望向别馆，然后转过身去。*今天就到此为止。我现在没办法谈我们走近的事。"
+    },
+    "confess_dain_low": {
+        "name": "多因",
+        "text": "*多因朝体育馆走了几步，又停下来整理球袋的带子。*今天就这样吧。再说下去，只会让彼此更难受。"
+    },
+    "confess_seo_1": {
+        "name": "{name}",
+        "text": "*约会结束后，我们发现自己又回到了学校门前。*"
+    },
+    "confess_seo_2": {
+        "name": "书妍",
+        "text": "上去待一会儿吧。"
+    },
+    "confess_seo_3": {
+        "name": "{name}",
+        "text": "*我跟着书妍上了学校的天台。下面的操场灯亮了起来。*"
+    },
+    "confess_seo_3b": {},
+    "confess_seo_4": {
+        "name": "书妍",
+        "text": "*书妍站在离栏杆一步远的地方，把钥匙放进口袋。*"
+    },
+    "confess_seo_4_b": {
+        "name": "{name}",
+        "text": "*我的手指勾到了口袋里折起来的纸条。*"
+    },
+    "confess_seo_5": {
+        "name": "{name}",
+        "text": "*我没有把纸条拿出来。*"
+    },
+    "confess_seo_choice": {
+        "name": "{name}",
+        "text": "*只有书妍手里的钥匙串发出一声短促的叮当声。*",
+        "choices": [
+            "告诉她我喜欢她。",
+            "再多待一会儿",
+            "等书妍先说，我再说我的心意。",
+            "到了这一步，我们应该不用说话，也知道彼此的心意。"
+        ]
+    },
+    "confess_seo_yes_1": {
+        "name": "书妍",
+        "text": "*钥匙串安静了下来。书妍与我对视。*"
+    },
+    "confess_seo_yes_2": {
+        "name": "{name}",
+        "text": "*我的喉咙发干。纸条在口袋里被折了一下。*"
+    },
+    "confess_seo_yes_3": {
+        "name": "{name}",
+        "text": "我喜欢你。我想在今天之后，继续和你见面。"
+    },
+    "confess_seo_yes_4": {
+        "name": "{name}",
+        "text": "*书妍没有马上回答。钥匙串在她手里转了一圈。*"
+    },
+    "confess_seo_yes_5": {
+        "name": "{name}",
+        "text": "你不用现在就回答。"
+    },
+    "confess_seo_yes_6": {
+        "name": "书妍",
+        "text": "你这么说，只会让我想得更多。"
+    },
+    "confess_seo_yes_7": {
+        "name": "{name}",
+        "text": "*栏杆下面，又亮起了一排操场灯。书妍仍留在原地，攥着钥匙串。*"
+    },
+    "confess_seo_yes_8": {
+        "name": "书妍",
+        "text": "我也一直在看着你。"
+    },
+    "confess_seo_yes_9": {
+        "name": "书妍",
+        "text": "你坐在哪里。什么时候安静下来。"
+    },
+    "confess_seo_yes_10": {
+        "name": "书妍",
+        "text": "*钥匙消失在她的口袋里。*"
+    },
+    "confess_seo_yes_11": {
+        "name": "书妍",
+        "text": "明天午休，我会把天台留着。"
+    },
+    "confess_seo_yes_11_b": {
+        "name": "书妍",
+        "text": "*书妍朝楼梯走去。*"
+    },
+    "confess_seo_yes_12": {
+        "name": "书妍",
+        "text": "*她走下两级台阶，停住了，没有回头。*"
+    },
+    "confess_seo_no_1": {
+        "name": "{name}",
+        "text": "想再待一会儿吗？"
+    },
+    "confess_seo_no_2": {
+        "name": "{name}",
+        "text": "*书妍朝栏杆方向挪了半步，在身边腾出位置。*"
+    },
+    "confess_seo_no_3": {
+        "name": "书妍",
+        "text": "*我们一起俯视操场。又一盏灯亮了。*"
+    },
+    "confess_seo_no_4": {
+        "name": "书妍",
+        "text": "明天午休有空的话，就过来。"
+    },
+    "confess_seo_no_4_b": {
+        "name": "{name}",
+        "text": "*一路走下楼梯，纸条都留在我的口袋里。*"
+    },
+    "confess_yuna_1": {
+        "name": "{name}",
+        "text": "*咖啡馆的招牌亮起来时，由娜朝别馆抬了抬下巴。*"
+    },
+    "confess_yuna_2": {
+        "name": "由娜",
+        "text": "还有最后一个地方要去。"
+    },
+    "confess_yuna_3": {
+        "name": "{name}",
+        "text": "*图书馆别馆里由娜的秘密阅读空间。橙色的光从窗户透进来，一直照到旧沙发的扶手上。她的书签放在身边的座位上。*"
+    },
+    "confess_yuna_3b": {},
+    "confess_yuna_4": {
+        "name": "由娜",
+        "text": "*她坐在沙发上看着{name}，一只手里拿着书签。*"
+    },
+    "confess_yuna_5": {
+        "name": "{name}",
+        "text": "*书签的尖端弯了。*"
+    },
+    "confess_yuna_choice": {
+        "name": "{name}",
+        "text": "*由娜用拇指抚平书签折起的末端，让对面的座位空着。*",
+        "choices": [
+            "告诉她我喜欢她。",
+            "这个地方真的很棒。",
+            "如果由娜先问我，我就回答。",
+            "由娜就算我不说，也应该知道我的心意。"
+        ]
+    },
+    "confess_yuna_yes_1": {
+        "name": "{name}",
+        "text": "*我的声音比我预想的要小。*"
+    },
+    "confess_yuna_yes_2": {
+        "name": "{name}",
+        "text": "*由娜的拇指从书签的一角抬了起来。*"
+    },
+    "confess_yuna_yes_3": {
+        "name": "{name}",
+        "text": "由娜，我喜欢你。和你在一起的时候，我不必压抑自己想说的话。"
+    },
+    "confess_yuna_yes_3_b": {
+        "name": "{name}",
+        "text": "我喜欢这样。"
+    },
+    "confess_yuna_yes_4": {
+        "name": "{name}",
+        "text": "*由娜放下书签。*"
+    },
+    "confess_yuna_yes_5": {
+        "name": "{name}",
+        "text": "我想在今天之后，继续和你见面。"
+    },
+    "confess_yuna_yes_6": {
+        "name": "{name}",
+        "text": "你不用现在就回答。"
+    },
+    "confess_yuna_yes_6_b": {
+        "name": "{name}",
+        "text": "*由娜坐直身子，沙发的布面发出轻轻的吱嘎声。*"
+    },
+    "confess_yuna_yes_7": {
+        "name": "{name}",
+        "text": "*书签仍留在沙发上。*"
+    },
+    "confess_yuna_yes_8": {
+        "name": "由娜",
+        "text": "*她的目光停在书架上，紧紧攥着自己的袖子。*"
+    },
+    "confess_yuna_yes_8_b": {
+        "name": "{name}",
+        "text": "*皱起来的袖口，消失在掌心里。*"
+    },
+    "confess_yuna_yes_8_c": {
+        "name": "由娜",
+        "text": "如果你要消失，先告诉我。"
+    },
+    "confess_yuna_yes_9": {
+        "name": "由娜",
+        "text": "不要什么都不说就消失。"
+    },
+    "confess_yuna_yes_9_b": {
+        "name": "{name}",
+        "text": "*她的袖口在掌心里被攥得更皱了。*"
+    },
+    "confess_yuna_no_1": {
+        "name": "{name}",
+        "text": "这个地方真的很棒。"
+    },
+    "confess_yuna_no_2": {
+        "name": "由娜",
+        "text": "*她把书签插进书页之间，推得很深，然后低了一下下巴。*"
+    },
+    "confess_yuna_no_3": {
+        "name": "由娜",
+        "text": "*她没有翻开书，只是用一根手指描着封面上的书名。*"
+    },
+    "confess_yuna_no_4": {
+        "name": "由娜",
+        "text": "结局还没有到这里。"
+    },
+    "confess_yuna_no_4_b": {
+        "name": "{name}",
+        "text": "*走出三步远，我回头看了一眼。由娜也隔着书的上沿看着我。*"
+    },
+    "confess_dain_1": {
+        "name": "{name}",
+        "text": "*约会结束时，多因大步走在前面，朝学校走去。*"
+    },
+    "confess_dain_2": {
+        "name": "多因",
+        "text": "最后一个地方。来吧。"
+    },
+    "confess_dain_3": {
+        "name": "{name}",
+        "text": "*我跟着多因走进空荡荡的体育馆。只有球场边上的灯亮着。*"
+    },
+    "confess_dain_3b": {},
+    "confess_dain_4": {
+        "name": "多因",
+        "text": "*她双手抱着一个球。指节按在球面上，泛出白色。*"
+    },
+    "confess_dain_5": {},
+    "confess_dain_choice": {
+        "name": "多因",
+        "text": "*球弹了一下。慢了半拍，多因的手从球的侧面擦了过去。*",
+        "choices": [
+            "告诉她我喜欢她。",
+            "我们要不要在长椅上再坐一会儿？",
+            "等多因先说，我再说我的心意。",
+            "到了这一步，我们应该不用说话，也知道彼此的心意。"
+        ]
+    },
+    "confess_dain_yes_1": {
+        "name": "{name}",
+        "text": "*第一个音节，从空荡荡的体育馆墙壁上低低地回响起来。*"
+    },
+    "confess_dain_yes_2": {
+        "name": "{name}",
+        "text": "*我稳住一口短促的呼吸，再次开口。*"
+    },
+    "confess_dain_yes_3": {
+        "name": "{name}",
+        "text": "多因。有件事——我必须告诉你。"
+    },
+    "confess_dain_yes_3_b": {
+        "name": "{name}",
+        "text": "我喜欢你。我想继续和你见面，不只是今天。"
+    },
+    "confess_dain_yes_4": {
+        "name": "{name}",
+        "text": "*多因放下了球。*"
+    },
+    "confess_dain_yes_5": {
+        "name": "{name}",
+        "text": "你不用现在就回答。"
+    },
+    "confess_dain_yes_6": {
+        "name": "{name}",
+        "text": "我只是想让你知道。"
+    },
+    "confess_dain_yes_7": {
+        "name": "{name}",
+        "text": "*体育馆的灯发出轻轻的嗡嗡声。*"
+    },
+    "confess_dain_yes_8": {
+        "name": "多因",
+        "text": "*多因僵在原地，用双手捂住了脸。*"
+    },
+    "confess_dain_yes_8_b": {
+        "name": "{name}",
+        "text": "*她一直捂着脸。排球撞到她的脚尖，她也没有去捡。*"
+    },
+    "confess_dain_yes_9": {
+        "name": "多因",
+        "text": "等等。我现在，话都说不利索。"
+    },
+    "confess_dain_yes_9_b": {
+        "name": "{name}",
+        "text": "*多因用手背粗鲁地揉了揉眼睛。嘴角扬了起来，却没有发出声音。*"
+    },
+    "confess_dain_yes_10": {
+        "name": "多因",
+        "text": "明天再来。"
+    },
+    "confess_dain_yes_10_b": {
+        "name": "多因",
+        "text": "*她又把球抱了起来。手背绷紧了。*"
+    },
+    "confess_dain_no_1": {
+        "name": "{name}",
+        "text": "……我们要不要在长椅上再坐一会儿？"
+    },
+    "confess_dain_no_2": {
+        "name": "{name}",
+        "text": "*我在长椅上坐到多因身边。我想说的话，说不出来。*"
+    },
+    "confess_dain_no_3": {
+        "name": "多因",
+        "text": "*多因把排球拍了两下。第三下，球越过了球场的边线，滚走了。*"
+    },
+    "confess_dain_no_4": {
+        "name": "多因",
+        "text": "下次，你说。"
+    },
+    "confess_dain_no_4_b": {
+        "name": "{name}",
+        "text": "*多因的声音消散在体育馆的天花板下。只剩下她护腕魔术贴被扯开的那一声长长的撕响。*"
+    },
+    "confess_seo_yes_mid_1": {
+        "name": "书妍",
+        "text": "我现在没办法回答。明天我会把天台留着。"
+    },
+    "confess_seo_yes_low_1": {
+        "name": "书妍",
+        "text": "*她把钥匙揣进口袋。*今天就到这里吧。这个我现在还接不住。"
+    },
+    "confess_yuna_yes_mid_1": {
+        "name": "由娜",
+        "text": "……我现在没办法回应你。只要你别消失。"
+    },
+    "confess_yuna_yes_low_1": {
+        "name": "由娜",
+        "text": "*她把书签推进书页之间。*我今天不收下这个。"
+    },
+    "confess_dain_yes_mid_1": {
+        "name": "多因",
+        "text": "我现在没办法回答。只是别逃。"
+    },
+    "confess_dain_yes_low_1": {
+        "name": "多因",
+        "text": "*她整理球袋的带子。*还不行。今天走吧。"
+    },
+    "confess_seo_yes_neg": {
+        "name": "书妍",
+        "text": "*她把钥匙揣进口袋。*我们还没到我会听这种话的地步。"
+    },
+    "confess_yuna_yes_neg": {
+        "name": "由娜",
+        "text": "*她把书签重新插了回去。*我不收下这个。"
+    },
+    "confess_dain_yes_neg": {
+        "name": "多因",
+        "text": "*她整理球袋的带子。*这个我现在不听。"
+    }
+}

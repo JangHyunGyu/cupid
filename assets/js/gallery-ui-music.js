@@ -99,7 +99,7 @@ class MusicRenderer {
                     
                     <div class="music-info">
                         <h4>${unlocked ? bgm.name : '???'}</h4>
-                        <p>${unlocked ? bgm.artist : ({ ko: '미해금', en: 'Locked', es: 'Bloqueada', ja: '未解放', fr: 'Verrouillée', de: 'Gesperrt', pt: 'Bloqueada' }[this.ui.lang] || 'Locked')}</p>
+                        <p>${unlocked ? bgm.artist : ({ ko: '미해금', en: 'Locked', es: 'Bloqueada', ja: '未解放', fr: 'Verrouillée', de: 'Gesperrt', pt: 'Bloqueada', zh: '未解锁' }[this.ui.lang] || 'Locked')}</p>
                     </div>
 
                     <div class="music-duration">
@@ -117,9 +117,9 @@ class MusicRenderer {
      * @param {string} bgmId - BGM ID
      */
     showLockPopup(bgmId) {
-        const L = (ko, en, es, ja, fr, de, pt) => ({ ko, en, es, ja, fr, de, pt })[this.ui.lang] || en;
+        const L = (ko, en, es, ja, fr, de, pt, zh) => ({ ko, en, es, ja, fr, de, pt, zh })[this.ui.lang] || en;
         this.ui.showUnlockPopup({
-            title: L('음악 미해금', 'Music Locked', 'Música bloqueada', '未解放のBGM', 'Musique verrouillée', 'Musik gesperrt', 'Música bloqueada'),
+            title: L('음악 미해금', 'Music Locked', 'Música bloqueada', '未解放のBGM', 'Musique verrouillée', 'Musik gesperrt', 'Música bloqueada', '音乐未解锁'),
             message: L(
                 '이 배경음악은 아직 해금되지 않았습니다.<br><br><span class="condition-line">🎵 해금 조건: 게임에서 해당 음악이 재생되면 자동 해금됩니다!</span>',
                 'This track is not yet unlocked.<br><br><span class="condition-line">🎵 Condition: It unlocks automatically when it plays in the game.</span>',
@@ -127,7 +127,8 @@ class MusicRenderer {
                 'このBGMはまだ解放されていません。<br><br><span class="condition-line">🎵 解放条件：ゲーム本編で再生されると、自動的に解放されます。</span>',
                 'Cette musique n\'est pas encore débloquée.<br><br><span class="condition-line">🎵 Condition : elle se débloquera automatiquement dès qu\'elle sera jouée dans le jeu.</span>',
                 'Dieses Musikstück ist noch nicht freigeschaltet.<br><br><span class="condition-line">🎵 Bedingung: Es wird automatisch freigeschaltet, sobald es im Spiel zu hören ist.</span>',
-                'Esta música de fundo ainda não foi desbloqueada.<br><br><span class="condition-line">🎵 Condição: ela será desbloqueada automaticamente quando tocar no jogo.</span>'
+                'Esta música de fundo ainda não foi desbloqueada.<br><br><span class="condition-line">🎵 Condição: ela será desbloqueada automaticamente quando tocar no jogo.</span>',
+                '这首音乐尚未解锁。<br><br><span class="condition-line">🎵 解锁条件：在游戏中播放到这首音乐时会自动解锁！</span>'
             ),
             icon: '🎵'
         });

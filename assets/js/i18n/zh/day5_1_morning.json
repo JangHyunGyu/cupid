@@ -1,0 +1,700 @@
+{
+    "hidden_homeroom_d5_low": {
+        "name": "班主任",
+        "text": "*你的班主任把折起的稿子放进文件夹，合上。*就留在这里吧。剩下的我在课上处理。"
+    },
+    "hidden_nurse_d5_low": {
+        "name": "保健老师",
+        "text": "*她递给我一张咨询卡。*预约一个时间，好好聊一聊。要是觉得不舒服，保健室永远都在。*我接过卡片，回到了教室。*"
+    },
+    "morning5_start": {
+        "name": "{name}",
+        "text": "*第五天。是周日，但学校有活动。校服的袖口不再磨得手腕发痒了。*"
+    },
+    "morning5_start_branch": {},
+    "morning5_temptation_discovery_branch": {},
+    "morning5_temptation_counteroffer_branch": {},
+    "morning5_caught_teacher_counteroffer": {
+        "name": "班主任",
+        "text": "*教室里，老师给我看学校App里缺失的报到记录。昨晚和朋友的聊天记录还留在我的手机上。*你说过你直接回家。为什么计划有变，却没有告诉我们？",
+        "choices": [
+            "告诉她昨晚发生了什么",
+            "当作不重要的事带过",
+            "只告诉她好的部分，免得她受伤。",
+            "先让她放心，细节以后再说。"
+        ]
+    },
+    "morning5_caught_nurse_counteroffer": {
+        "name": "保健老师",
+        "text": "*保健老师指着缺失的报到记录。昨晚和朋友的聊天记录还留在我的手机上。*你说过你回家了，之后就没了消息。我很担心。你只需要告诉我们你在哪里。",
+        "choices": [
+            "告诉她昨晚发生了什么",
+            "当作不重要的事带过",
+            "只告诉她好的部分，免得她受伤。",
+            "先让她放心，细节以后再说。"
+        ]
+    },
+    "morning5_caught_teacher_honest": {
+        "name": "班主任",
+        "text": "*她听完，合上登记册。*谢谢你告诉我。见朋友不是问题。下次请遵守报到的约定。今天我们就把稿子的讨论留在这里。"
+    },
+    "morning5_caught_teacher_lie": {
+        "name": "班主任",
+        "text": "*她把我的回答和App里的时间戳对照。*这对不上。不要为了结束这场谈话就改说法。我们可以在学校咨询时间再谈。"
+    },
+    "morning5_caught_nurse_honest": {
+        "name": "保健老师",
+        "text": "*她听完，合上记录。*你平安到家我就放心了。下次计划有变，告诉我们。我今天有活动的病人要照顾；我们另约时间好好谈一谈。*我回到了班里。*"
+    },
+    "morning5_caught_nurse_lie": {
+        "name": "保健老师",
+        "text": "*她把笔放在记录上。*这番解释有几处对不上。你要是不舒服，随时都可以来。我们会和咨询老师一起处理。*我回到了班里。*"
+    },
+    "morning5_caught_by_seoyeon_route": {},
+    "morning5_caught_by_yuna_route": {},
+    "morning5_caught_by_dain_route": {},
+    "morning5_caught_seoyeon_by_dain": {
+        "name": "书妍",
+        "text": "*教室里的早晨。我把手机放到书妍面前的一瞬间，屏幕亮了。多因发来的通知写着：“别忘了昨晚我们在体育馆的约定。”书妍的视线停在了屏幕上。*你跳过了公园，去了体育馆？",
+        "choices": [
+            "告诉她昨晚发生了什么",
+            "当作不重要的事带过",
+            "只告诉她好的部分，免得她受伤。",
+            "先让她放心，细节以后再说。"
+        ]
+    },
+    "morning5_caught_seoyeon_by_yuna": {
+        "name": "书妍",
+        "text": "*我的手机在书妍和我之间的桌上震动了。由娜发来的通知写着：“谢谢你昨晚在别馆陪着我。”书妍读到最后，慢慢抬起头。*你连回都没回我，就去了别馆？",
+        "choices": [
+            "告诉她昨晚发生了什么",
+            "当作不重要的事带过",
+            "只告诉她好的部分，免得她受伤。",
+            "先让她放心，细节以后再说。"
+        ]
+    },
+    "morning5_caught_dain_by_seoyeon": {
+        "name": "多因",
+        "text": "*多因站在桌边时，我的手机震了。书妍发来的通知写着：“我还记得昨晚在天台上握着的那只手。”多因的笑容一下子冻住了。*我在等你的时候，你去了天台？",
+        "choices": [
+            "告诉她昨晚发生了什么",
+            "当作不重要的事带过",
+            "只告诉她好的部分，免得她受伤。",
+            "先让她放心，细节以后再说。"
+        ]
+    },
+    "morning5_caught_dain_by_yuna": {
+        "name": "多因",
+        "text": "*多因拉开我对面的椅子时，由娜的通知点亮了屏幕。“谢谢你昨晚在别馆陪着我。”多因的手僵在椅背上。*你看了我的消息，还是去了别馆？",
+        "choices": [
+            "告诉她昨晚发生了什么",
+            "当作不重要的事带过",
+            "只告诉她好的部分，免得她受伤。",
+            "先让她放心，细节以后再说。"
+        ]
+    },
+    "morning5_caught_yuna_by_seoyeon": {
+        "name": "由娜",
+        "text": "*我的手机在由娜和我之间的桌上震动了。书妍发来的通知写着：“我还记得昨晚在天台上握着的那只手。”由娜把每一个字都读完，才把视线从屏幕上抬起来。*你没回我的消息，去了天台。",
+        "choices": [
+            "告诉她昨晚发生了什么",
+            "当作不重要的事带过",
+            "只告诉她好的部分，免得她受伤。",
+            "先让她放心，细节以后再说。"
+        ]
+    },
+    "morning5_caught_yuna_by_dain": {
+        "name": "由娜",
+        "text": "*由娜刚翻开书，屏幕上就出现了多因的通知。“别忘了昨晚我们在体育馆的约定。”由娜的手停在封面上。*我的名字还在你的屏幕上，你还是留在了体育馆。",
+        "choices": [
+            "告诉她昨晚发生了什么",
+            "当作不重要的事带过",
+            "只告诉她好的部分，免得她受伤。",
+            "先让她放心，细节以后再说。"
+        ]
+    },
+    "morning5_caught_seoyeon_honest": {
+        "name": "书妍",
+        "text": "*即使把一切都听完了，书妍也没有摘下眼镜。她把镜片后的目光转回屏幕上。*我没办法因为你诚实而感谢你。我现在很难看着你。"
+    },
+    "morning5_caught_seoyeon_lie": {
+        "name": "书妍",
+        "text": "*书妍的视线从亮着的通知移到对面那张脸上。她笑容的最后一丝痕迹也消失了。*你刚才说的这些，比昨晚的事更让我在意。"
+    },
+    "morning5_caught_dain_honest": {
+        "name": "多因",
+        "text": "*多因把护腕拉紧，又松开。*所以我发消息说我在等的时候，你已经在那儿了。"
+    },
+    "morning5_caught_dain_lie": {
+        "name": "多因",
+        "text": "*多因的眉毛扬了起来，但笑容没有回来。*你以为打运动的就是笨蛋吗？"
+    },
+    "morning5_caught_yuna_honest": {
+        "name": "由娜",
+        "text": "*由娜关掉屏幕，把手机从桌上滑了回来。*这次更痛，因为我知道你去了哪里。"
+    },
+    "morning5_caught_yuna_lie": {
+        "name": "由娜",
+        "text": "*由娜没有回答，而是把屏幕又亮起来。通知停在我们之间。*我甚至给了你坦白的机会，你却又在藏着。"
+    },
+    "morning5_counteroffer_group_talk": {
+        "name": "两人",
+        "text": "*活动说明会之前，我在教室里面对着昨晚事件中的两个人。我们一起回顾漏掉的消息，以及我们彼此说过的话，谁也没有离开。*\n“你现在打算怎么做？”",
+        "context": "第五天上午，在开放的教室里。玩家在接受了另一个人的请求后留了下来，没有联系他先约好的那个人。延续前面的诚实解释或回避。如果两位参与者都是学生，就处理他们重叠的恋爱承诺。老师或保健老师则是以教职工的身份，询问未完成的学校报到，绝不以恋爱对象的身份出现。学生说明自己的邀请和感受。咨询或关怀并不以恋爱选择为条件。两位学生之间，要求玩家直接说明自己的意图和承诺。",
+        "personality": "当两位参与者都是学生时：两个角色保持各自独特的声音和各自的伤痛。已确定关系的一方先开口，诱惑者在听完她说的话之后回应。对峙以主角的解释为中心：两人都直接质问他，并追问他说法中的任何漏洞。已确定关系的一方按角色本色，询问他为什么在继续这段关系的同时接受了别人，是否一开始就脚踏两条船，还是一直在玩弄她。诱惑者承认自己主动出击、伤害了对方的责任，却不掩饰想留住主角并被他选择的心愿。仅仅有愧疚，并不会让她退缩或让步。她们的关系并不融洽。她们不会站到一边、互相安慰，也不会结成一个只审问主角的统一阵线。已确定关系的一方也会质问诱惑者：是你先抢走了他。诱惑者承认错了，但不会崩溃，也不会成为对方的盟友。她们绝不会把主角排除在外、自己私下解决。不要重复已经回答过的问题；追问缺失的事实、这段关系的意义，或他接下来的选择。\n当有教职工参与时，用未完成的报到和沟通的责任，取代上面的恋爱对峙。教职工不是恋爱上的情敌，以官方支持者的身份说话。学生要恭敬地说明自己的邀请和感受。不要重复已经生效的扣分。",
+        "buttonText": "回答"
+    },
+    "morning5_start_b": {},
+    "morning5_start_2_b": {},
+    "morning5_mood_check": {
+        "name": "系统",
+        "text": ""
+    },
+    "morning5_mood_high": {
+        "name": "{name}",
+        "text": "*我在新学校的第一周快结束了。推开教室门之前，我回想起这四天里我们的对话。*"
+    },
+    "morning5_mood_mid": {
+        "name": "{name}",
+        "text": "我的第一周快结束了，我还是没有拿定主意。眼下，我先走进了校门。"
+    },
+    "morning5_mood_low": {
+        "name": "{name}",
+        "text": "我的第一周快结束了。我盯着锁屏上的三个名字，没有打开任何一个聊天，就关掉了屏幕。"
+    },
+    "morning5_gate": {},
+    "morning5_seo_note_1": {
+        "name": "{name}",
+        "text": "*桌上有一张纸条。是书妍的字迹。——“下午空出些时间。我会把天台留着。——书妍”*"
+    },
+    "morning5_seo_note_1_b": {
+        "name": "{name}",
+        "text": "*经过走廊里的文艺部展示区时，我发现布告栏上有四枚空的图钉。*"
+    },
+    "morning5_yuna_story_gone": {
+        "name": "{name}",
+        "text": "*布告栏上只剩下针孔。我分不清是贴过故事又被撕掉了，还是这里本来就是空的。*"
+    },
+    "morning5_yuna_story_gone_2": {
+        "name": "{name}",
+        "text": "*我在空荡荡的布告栏前停了下来。这些针孔，没有告诉我由娜在想什么。*"
+    },
+    "morning5_seo_note_1_c": {
+        "name": "{name}",
+        "text": "*布告栏上贴着一篇短篇小说。题目：《致我在图书馆遇见的人》。淡紫色的墨水。折起的一角上粘着一小粒面包屑。*"
+    },
+    "morning5_yuna_story_1": {
+        "name": "{name}",
+        "text": "*故事里，有人给在图书馆睡着的人盖上了毯子。这从未发生在我们之间，但那份安静的照顾，让我想起了由娜。*"
+    },
+    "morning5_yuna_story_2": {
+        "name": "{name}",
+        "text": "*最后一句。“那个人睁开眼睛的时候，我已经走了。我只留下了一张纸条。——下次我还会在这里。”淡紫色的墨水。与第一张纸条是同一种颜色。*"
+    },
+    "morning5_yuna_story_4": {
+        "name": "{name}",
+        "text": "*布告栏下面的角落里，留着一行小字：“这是虚构的。不是真的。”下面的橡皮擦痕迹已经模糊。*"
+    },
+    "morning5_return_class": {
+        "name": "{name}",
+        "text": "*回到教室，多因在等着。*"
+    },
+    "morning5_dain_1": {
+        "name": "多因",
+        "text": "喂！我把你写成今天运动会的搭档了。"
+    },
+    "morning5_dain_1_b": {
+        "name": "{name}",
+        "text": "连问都不问一声？"
+    },
+    "morning5_dain_2": {
+        "name": "多因",
+        "text": "你要是迟到，我可要生气了。"
+    },
+    "morning5_committed_start": {},
+    "morning5_committed_seo": {
+        "name": "{name}",
+        "text": "*桌上没有新的纸条。书妍的写字板一如既往地夹在臂弯里。由娜和多因只跟我聊了几句关于活动准备的事。*"
+    },
+    "morning5_committed_yuna": {
+        "name": "{name}",
+        "text": "*没有新的纸条。由娜把书签夹在笔记本的书页之间。书妍和多因只跟我聊了几句关于活动准备的事。*"
+    },
+    "morning5_committed_dain": {
+        "name": "{name}",
+        "text": "*体育馆附近，多因调整着护腕。书妍和由娜只跟我聊了几句关于活动准备的事。*"
+    },
+    "hidden_homeroom_d5_check": {
+        "name": "{name}",
+        "text": "*活动准备期间，我经过一间门开着的空教室。*"
+    },
+    "hidden_homeroom_d5_1": {
+        "name": "班主任",
+        "text": "*我的班主任坐在讲台边，拿着一个牛皮纸信封。稿纸不见踪影。*"
+    },
+    "hidden_homeroom_d5_1_b": {
+        "name": "班主任",
+        "text": "哦，你来了。"
+    },
+    "hidden_homeroom_d5_1_c": {
+        "name": "{name}",
+        "text": "老师。"
+    },
+    "hidden_homeroom_d5_1_d": {
+        "name": "班主任",
+        "text": "*她举起牛皮纸信封。*这个。"
+    },
+    "hidden_homeroom_d5_1_e": {
+        "name": "{name}",
+        "text": "是什么？"
+    },
+    "hidden_homeroom_d5_2": {
+        "name": "班主任",
+        "text": "文艺部的合评稿。还没写完，但我把你昨天指出的那些地方改了。"
+    },
+    "hidden_homeroom_d5_3": {
+        "name": "班主任",
+        "text": "我已经写了七年了。是时候也听听别人的想法了。"
+    },
+    "hidden_homeroom_d5_4": {
+        "name": "{name}",
+        "text": "*我领到一份编了号的合评稿。最后一页之后附着一张匿名反馈表。*"
+    },
+    "hidden_homeroom_d5_5": {
+        "name": "班主任",
+        "text": "印了好几份，也不会让人少紧张一点。"
+    },
+    "hidden_homeroom_d5_choice": {
+        "name": "{name}",
+        "text": "*我拿着稿子。信封压在我的手臂内侧。*",
+        "choices": [
+            "写了七年，应该快写完了吧。我大概不需要标什么。",
+            "我先读。可以在上面做标记吗？",
+            "难读的地方一定是有意为之，所以我就不动了。",
+            "既然是您写的，我只标好的地方。"
+        ]
+    },
+    "hidden_homeroom_d5_praise_trap_1": {
+        "name": "班主任",
+        "text": "*信封的一角在她手里微微皱了起来。她用拇指抚平折痕。*"
+    },
+    "hidden_homeroom_d5_praise_trap_2": {
+        "name": "班主任",
+        "text": "我还没写完呢。"
+    },
+    "hidden_homeroom_d5_praise_trap_3": {
+        "name": "{name}",
+        "text": "但您还是写了这么多。"
+    },
+    "hidden_homeroom_d5_praise_trap_4": {
+        "name": "班主任",
+        "text": "对。"
+    },
+    "hidden_homeroom_d5_praise_trap_5": {
+        "name": "班主任",
+        "text": "*老师伸出手。把稿子拿了回去。慢慢地。又把它滑回信封里。*"
+    },
+    "hidden_homeroom_d5_praise_trap_6": {
+        "name": "班主任",
+        "text": "没关系。只要确保你的评论只涉及你真正读过的部分就行。"
+    },
+    "hidden_homeroom_d5_praise_trap_7": {
+        "name": "{name}",
+        "text": "老师。"
+    },
+    "hidden_homeroom_d5_praise_trap_8": {
+        "name": "班主任",
+        "text": "我投过三次出版社，三次都被退了。我需要的不是含糊的鼓励，而是知道大家在哪里读不下去了。"
+    },
+    "hidden_homeroom_d5_praise_trap_9": {
+        "name": "{name}",
+        "text": "*信封一角上退件贴纸留下的痕迹，引起了我的注意。*"
+    },
+    "hidden_homeroom_d5_praise_trap_10": {
+        "name": "班主任",
+        "text": "比起夸奖，我更需要有人读过它的证明。如果我把这种压力放到你身上，那是我这个老师的错。"
+    },
+    "hidden_homeroom_d5_praise_trap_11": {
+        "name": "班主任",
+        "text": "去吧。活动你要迟到了。"
+    },
+    "hidden_homeroom_d5_praise_trap_12": {
+        "name": "{name}",
+        "text": "*我离开，关上了教室门。信封还放在老师的桌上。表面上留着一块指甲盖大小的退件标签的痕迹。*"
+    },
+    "hidden_homeroom_d5_correct_1": {
+        "name": "班主任",
+        "text": "*纸的末端在她手里微微弯曲。她抿着嘴唇，小心地抚平折起的边缘。*"
+    },
+    "hidden_homeroom_d5_correct_2": {
+        "name": "班主任",
+        "text": "在这里吗？"
+    },
+    "hidden_homeroom_d5_correct_3": {
+        "name": "{name}",
+        "text": "嗯。我不想随口说说。"
+    },
+    "hidden_homeroom_d5_correct_4": {
+        "name": "班主任",
+        "text": "好。给我一点时间。"
+    },
+    "hidden_homeroom_d5_correct_5": {
+        "name": "{name}",
+        "text": "*我打开信封，纸张的气味飘了上来。最后一页的末尾是空白。在一句被红笔划掉的句子下面，重新开始又中断的痕迹层层叠叠。*"
+    },
+    "hidden_homeroom_d5_correct_6": {
+        "name": "班主任",
+        "text": "你读到那里了？"
+    },
+    "hidden_homeroom_d5_correct_7": {
+        "name": "班主任",
+        "text": "每次看到最后一页，我的手就停住了。已经好多年了。"
+    },
+    "hidden_homeroom_d5_correct_8": {
+        "name": "班主任",
+        "text": "*她用指尖指着最后一行。门外的活动广播结束后，只剩下翻页的声音。*"
+    },
+    "hidden_homeroom_d5_correct_9": {
+        "name": "{name}",
+        "text": "我可以在最后一页标出我停下来的原因吗？"
+    },
+    "hidden_homeroom_d5_correct_10": {
+        "name": "班主任",
+        "text": "你是要给我完整的评论吗？"
+    },
+    "hidden_homeroom_d5_correct_11": {
+        "name": "{name}",
+        "text": "对。我是以您的读者之一的身份在读。"
+    },
+    "hidden_homeroom_d5_correct_12": {
+        "name": "班主任",
+        "text": "*她把写字板放在桌上，盖上红笔的笔帽。*"
+    },
+    "hidden_homeroom_d5_correct_13": {
+        "name": "班主任",
+        "text": "好。填到匿名反馈栏里。"
+    },
+    "hidden_homeroom_d5_correct_14": {
+        "name": "{name}",
+        "text": "*她把合评稿拿回来，用拇指在信封上旧的退件标签痕迹上搓了一下。*"
+    },
+    "hidden_homeroom_d5_6": {
+        "name": "班主任",
+        "text": "这是你的稿件编号。周一我会和其他的一起收上来。"
+    },
+    "hidden_homeroom_d5_6_b": {
+        "name": "{name}",
+        "text": "*我想起昨天咖啡馆里那一摞合评稿。信封上标着“04号”。*"
+    },
+    "hidden_homeroom_d5_6_c": {},
+    "hidden_homeroom_d5_6_d": {
+        "name": "班主任",
+        "text": "要诚实，但只针对你读到的部分。你不用署名。"
+    },
+    "hidden_homeroom_d5_6_e": {
+        "name": "{name}",
+        "text": "老师。"
+    },
+    "hidden_homeroom_d5_6_f": {
+        "name": "{name}",
+        "text": "而且不要去猜每条意见是谁写的。"
+    },
+    "hidden_homeroom_d5_6_g": {
+        "name": "班主任",
+        "text": "*她核对了合评稿上的编号，点点头。*"
+    },
+    "hidden_homeroom_d5_6_h": {
+        "name": "班主任",
+        "text": "我从没想过，会有这样一天，我已经准备好听听大家怎么想。"
+    },
+    "hidden_homeroom_d5_6_i": {},
+    "hidden_homeroom_d5_6_j": {
+        "name": "班主任",
+        "text": "周一文艺部活动之前，写完就行。"
+    },
+    "hidden_homeroom_d5_6_k": {},
+    "hidden_homeroom_d5_6_l": {
+        "name": "{name}",
+        "text": "我会读的。认真地读。"
+    },
+    "hidden_homeroom_d5_6_m": {
+        "name": "班主任",
+        "text": "*她把一缕散落的头发别到耳后。*我不收读后感。"
+    },
+    "hidden_homeroom_d5_6_n": {
+        "name": "{name}",
+        "text": "你在撒谎。"
+    },
+    "hidden_homeroom_d5_6_o": {
+        "name": "班主任",
+        "text": "*她的嘴角扬了起来。*对。至少写一行。"
+    },
+    "hidden_homeroom_d5_6_p": {},
+    "hidden_homeroom_d5_6_q": {
+        "name": "班主任",
+        "text": "{name}。"
+    },
+    "hidden_homeroom_d5_6_r": {
+        "name": "班主任",
+        "text": "周一文艺部活动上，我等你的答复。在那之前，我也会继续写结局。"
+    },
+    "hidden_homeroom_d5_6_s": {
+        "name": "班主任",
+        "text": "这下，我们俩谁也没有借口了。"
+    },
+    "hidden_homeroom_d5_6_t": {
+        "name": "班主任",
+        "text": "*她在文艺部日程表下面写上了合评的截止日期。*"
+    },
+    "hidden_homeroom_d5_7": {
+        "name": "班主任",
+        "text": "谢谢说得够多了。去帮忙布置活动吧。"
+    },
+    "hidden_homeroom_d5_7_b": {},
+    "hidden_homeroom_d5_7_c": {
+        "name": "班主任",
+        "text": "专心把活动撑过去。周一文艺部见。"
+    },
+    "hidden_homeroom_d5_8": {
+        "name": "班主任",
+        "text": "*她走进走廊，核对负责活动准备的学生名单。*"
+    },
+    "hidden_homeroom_d5_freetalk": {
+        "name": "班主任",
+        "text": "*她指着04号合评稿。*这是最终评审。别因为看到有空白，就手下留情。"
+    },
+    "hidden_nurse_d5_check": {
+        "name": "{name}",
+        "text": "*活动间隙，我路过保健室。*"
+    },
+    "hidden_nurse_d5_1": {
+        "name": "保健老师",
+        "text": "啊，{name}。活动的最后一天了。今天也把你的咨询记录结掉吧。"
+    },
+    "hidden_nurse_d5_1_b": {
+        "name": "{name}",
+        "text": "*保健老师打开了咨询表上最后一个确认框。*"
+    },
+    "hidden_nurse_d5_1_c": {
+        "name": "保健老师",
+        "text": "今天确认一下你的状态，这一轮咨询就算完成了。"
+    },
+    "hidden_nurse_d5_1_d": {
+        "name": "{name}",
+        "text": "所以我不用再来了？"
+    },
+    "hidden_nurse_d5_1_e": {
+        "name": "保健老师",
+        "text": "如果你受了伤，或者不堪重负，就通过正规渠道来。你不必编造理由。"
+    },
+    "hidden_nurse_d5_1_f": {
+        "name": "{name}",
+        "text": "*咨询表的下方，并排印着保健室和学校心理咨询中心的预约说明。*"
+    },
+    "hidden_nurse_d5_2_b": {},
+    "hidden_nurse_d5_2_c": {},
+    "hidden_nurse_d5_3": {
+        "name": "{name}",
+        "text": "我来领咨询确认单。"
+    },
+    "hidden_nurse_d5_3_b": {
+        "name": "保健老师",
+        "text": "*她在表上写下日期和时间。*"
+    },
+    "hidden_nurse_d5_3_c": {
+        "name": "保健老师",
+        "text": "随时欢迎你在预约的时间来寻求帮助。"
+    },
+    "hidden_nurse_d5_3_d": {},
+    "hidden_nurse_d5_3_e": {},
+    "hidden_nurse_d5_3_f": {
+        "name": "保健老师",
+        "text": "*她打开一盒急救信息卡。*"
+    },
+    "hidden_nurse_d5_3_g": {},
+    "hidden_nurse_d5_3_h": {},
+    "hidden_nurse_d5_3_i": {},
+    "hidden_nurse_d5_4": {
+        "name": "保健老师",
+        "text": "活动用的急救包在体育馆入口旁边。如果有人受伤，立刻叫负责的老师。"
+    },
+    "hidden_nurse_d5_4_b": {
+        "name": "{name}",
+        "text": "老师。"
+    },
+    "hidden_nurse_d5_4_c": {
+        "name": "{name}",
+        "text": "*表格底部盖上了一枚章：“咨询已结束；如有需要请重新预约。”*"
+    },
+    "hidden_nurse_d5_4_d": {
+        "name": "保健老师",
+        "text": "最终确认完成了。"
+    },
+    "hidden_nurse_d5_5": {
+        "name": "保健老师",
+        "text": "{name}。要拿一张急救信息卡吗？"
+    },
+    "hidden_nurse_d5_choice": {
+        "name": "{name}",
+        "text": "*正面列着基本的急救步骤；背面列着学校的咨询渠道。*",
+        "choices": [
+            "好的。我会放在书包里。",
+            "我更想知道怎么预约心理咨询中心。",
+            "有了这张卡，我就不用特地跑到咨询室去了。"
+        ]
+    },
+    "hidden_nurse_d5_choice_a": {
+        "name": "保健老师",
+        "text": "*她把信息卡放进透明卡套里，递给我。*"
+    },
+    "hidden_nurse_d5_choice_a_b": {
+        "name": "保健老师",
+        "text": "最好的结果是永远用不上。但如果需要，马上拿出来。"
+    },
+    "hidden_nurse_d5_choice_b": {
+        "name": "保健老师",
+        "text": "好。如果你通过学校App预约，即使我没法立刻回复，咨询老师也能跟进。"
+    },
+    "hidden_nurse_d5_choice_b_b": {
+        "name": "保健老师",
+        "text": "*她指着卡片背面的二维码。*"
+    },
+    "hidden_nurse_d5_choice_b_c": {
+        "name": "保健老师",
+        "text": "在学校App里点“预约咨询”。你可以选择保健室或者学校心理咨询中心。"
+    },
+    "hidden_nurse_d5_choice_b_d": {
+        "name": "保健老师",
+        "text": "如果我没法马上回答，会有咨询老师接手。记录只保留在学校内部。"
+    },
+    "hidden_nurse_d5_choice_b_e": {
+        "name": "{name}",
+        "text": "*上面没有列私人号码，而是列着可预约的咨询时段和负责的部门。*"
+    },
+    "hidden_nurse_d5_choice_b_f": {
+        "name": "保健老师",
+        "text": "如果事情紧急，你会先告诉谁？"
+    },
+    "hidden_nurse_d5_choice_b_g": {
+        "name": "{name}",
+        "text": "家长、监护人，或者我信任的老师。我不会一个人硬扛。"
+    },
+    "hidden_nurse_d5_6": {
+        "name": "保健老师",
+        "text": "那就没问题了。这是急救卡。"
+    },
+    "hidden_nurse_d5_6_b": {},
+    "hidden_nurse_d5_6_c": {
+        "name": "{name}",
+        "text": "*卡片底部印着一行小字：“受伤之前，先求助。”*"
+    },
+    "hidden_nurse_d5_flag_check": {},
+    "hidden_nurse_d5_7": {},
+    "hidden_nurse_d5_7_both": {},
+    "hidden_nurse_d5_freetalk": {
+        "name": "保健老师",
+        "text": "*她把咨询表归档。*咨询就到此为止。下次，需要什么就马上说。"
+    },
+    "morning5_end_branch": {},
+    "morning5_end": {
+        "name": "{name}",
+        "text": "*我收拢桌上的笔记，然后逐个查看手机上的通知。*"
+    },
+    "morning5_committed_end": {
+        "name": "{name}",
+        "text": "*我整理了桌上的笔记，对照活动日程，确认自己已经选定的方向。*"
+    },
+    "hidden_nurse_d5_choice_trap": {
+        "name": "保健老师",
+        "text": "恰恰相反。这张卡不是让你一个人处理所有事的。"
+    },
+    "morning5_after_counteroffer_hidden_check": {},
+    "hidden_nurse_d5_after_co_check": {},
+    "morning5_after_counteroffer": {
+        "name": "{name}",
+        "text": "*一张早晨的通知从桌上滑落。没有人去捡。还没等有人去捡，一条关于活动的广播就充满了教室。*"
+    },
+    "morning5_sojeong_1": {
+        "name": "{name}",
+        "text": "*我打开笔记：想把素晶的事上报却没有完成的尝试，写了又删的道歉。第三十九稿仍然是空白。*"
+    },
+    "morning5_sojeong_2": {
+        "name": "{name}",
+        "text": "*我没有开始写第四十稿。我把自己的道歉复制到聊天框里，按下了发送。*"
+    },
+    "morning5_sojeong_3": {
+        "name": "{name}",
+        "text": "我看到了他们对你课桌和桌上那些字做的事，却从没告诉过老师。视而不见也是我的选择。对不起。你不用回复。"
+    },
+    "morning5_sojeong_4": {
+        "name": "{name}",
+        "text": "*出现了“已发送”的标记。我没有等已读，就关掉了聊天。*"
+    },
+    "morning5_sojeong_5": {
+        "name": "{name}",
+        "text": "*我也给现在的班主任发了消息：“我需要谈谈在旧学校时，我选择无视的一件事。”两条消息都留在屏幕上，直到活动广播开始。*"
+    },
+    "morning5_caught_fallout_1": {
+        "name": "{name}",
+        "text": "*活动开始之前，三个人在教室里坐得远远的。桌上的值日表上，只列着必须完成的工作。*"
+    },
+    "morning5_caught_fallout_2": {
+        "name": "{name}",
+        "text": "*由娜先拿着导览手册离开，多因从对面的门出去。书妍拿起出勤表，看也没看我一眼。*"
+    },
+    "morning5_caught_fallout_3": {
+        "name": "{name}",
+        "text": "*直到活动结束，我们之间说的话只有工作上的确认。放学铃响时，她们走上了三条不同的楼梯。*"
+    },
+    "morning5_harem_fallout_1": {
+        "name": "{name}",
+        "text": "*活动期间，三个人只在群里留下必要的消息。私聊里没有任何新内容。*"
+    },
+    "morning5_harem_fallout_2": {
+        "name": "多因",
+        "text": "就算这件事结束了，我们也别单独见面。遵守我们说好的。"
+    },
+    "morning5_harem_fallout_3": {
+        "name": "{name}",
+        "text": "*我点点头。三个人一起走出了校门，我隔了一会儿，独自跟了出去。*"
+    },
+    "morning5_counteroffer_choice": {
+        "name": "{name}",
+        "text": "*对话结束时，两个人都在等着一个回答。*",
+        "choices": [
+            "回答我先约好的那个人，并承担责任",
+            "说我选择昨晚去找的那个人",
+            "不让她们任何一个人再等，结束两段关系"
+        ]
+    },
+    "morning5_counteroffer_choice_lead": {
+        "name": "{name}",
+        "text": "*我转向我先做出承诺的那个人。*我先为昨晚的选择道歉。我不会请你抓住我不放。"
+    },
+    "morning5_counteroffer_choice_tempter": {
+        "name": "{name}",
+        "text": "*我看向昨晚去找的那个人，然后向另一个人鞠了一躬。*我不会隐瞒自己的心现在偏向哪边。但我不会同时抓着你们两个不放。"
+    },
+    "morning5_counteroffer_choice_neither": {
+        "name": "{name}",
+        "text": "*我朝她们两人各退了一步。*我现在没有资格在你们中间做选择。我不会抓着你们任何一个人不放。"
+    },
+    "morning5_counteroffer_gather": {
+        "name": "{name}",
+        "text": "*我联系了昨晚陪着的那个人，约好在教室见面。我也向我最先约好的那个人确认了时间。等两个人都到了，我们在教室的一角坐下。*"
+    },
+    "morning5_mood_neg": {
+        "name": "{name}",
+        "text": "第一周就要结束了。我看也不看锁屏上的名字，把书包拉上了拉链。"
+    },
+    "hidden_homeroom_d5_skip": {},
+    "hidden_nurse_d5_skip": {},
+    "hidden_homeroom_d5_neg": {
+        "name": "班主任",
+        "text": "*她把稿件信封放进抽屉，锁上了。*私人谈话到此为止。剩下的，作为班级通知发布。"
+    },
+    "hidden_nurse_d5_neg": {
+        "name": "保健老师",
+        "text": "*她合上病历和预约表。*今天只做治疗。私人谈话走正规渠道。*我回到了班里。*"
+    }
+}

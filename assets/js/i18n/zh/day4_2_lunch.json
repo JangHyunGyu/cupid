@@ -1,0 +1,492 @@
+{
+    "date_seo_low": {
+        "name": "书妍",
+        "text": "*喷泉旁的长椅空着。片刻之后，书妍的消息到了。*我觉得今天我们不适合单独见面。下周学校见。"
+    },
+    "date_yuna_low": {
+        "name": "由娜",
+        "text": "*由娜已经站在咖啡馆外面。她整理了一下包带，后退了一步。*我觉得我们现在不适合单独待很久。今天就到这里吧。"
+    },
+    "date_dain_low": {
+        "name": "多因",
+        "text": "*体育馆外，多因整理着球袋的带子。*我今天没心情玩。学校见。"
+    },
+    "date_seo_1": {
+        "name": "{name}",
+        "text": "*书妍已经在喷泉旁等着了。没有写字板，只有包带缠在她的手指上。*"
+    },
+    "date_seo_compliment_choice": {
+        "name": "{name}",
+        "text": "*书妍又把包带在一根手指上绕了一圈。*",
+        "choices": [
+            "你今天真好看。",
+            "你今天下了不少功夫啊。",
+            "学生会长连约会都会安排得完美无缺。"
+        ]
+    },
+    "date_seo_pretty_high": {
+        "name": "书妍",
+        "text": "*攥着包带的手松开了。*"
+    },
+    "date_seo_pretty_high_b": {
+        "name": "书妍",
+        "text": "这句台词你排练过吧？"
+    },
+    "date_seo_pretty_high_2": {
+        "name": "书妍",
+        "text": "*她把视线转向喷泉的水声。*出去透透气吧。"
+    },
+    "date_seo_pretty_high_3": {
+        "name": "{name}",
+        "text": "只是脱口而出的。"
+    },
+    "date_seo_pretty_high_3_b": {
+        "name": "书妍",
+        "text": "*她重新握了握包带。*够了。"
+    },
+    "date_seo_pretty_high_4": {
+        "name": "书妍",
+        "text": "*别在耳后的头发又散落下来。她抬起的手又落回到包带上。*"
+    },
+    "date_seo_pretty_low": {
+        "name": "书妍",
+        "text": "这话是从哪儿冒出来的？说这种话之前先提醒我一声。"
+    },
+    "date_seo_bright": {
+        "name": "书妍",
+        "text": "当然。我今天费了点心思。"
+    },
+    "date_seo_walk": {
+        "name": "{name}",
+        "text": "*我们穿过公园，向鸭子扔面包。*"
+    },
+    "date_seo_duck": {
+        "name": "书妍",
+        "text": "这些家伙很简单。给面包就跟着走。没有面包，就理都不理。"
+    },
+    "date_seo_duck_2": {
+        "name": "{name}",
+        "text": "人也没有太大区别吧？"
+    },
+    "date_seo_duck_3": {
+        "name": "书妍",
+        "text": "人有时候，就算给了面包也不来。"
+    },
+    "date_seo_duck_4": {
+        "name": "书妍",
+        "text": "*她看着面包屑沉进水里。经过花店门前时，她放慢了步子。*"
+    },
+    "date_seo_flower_b": {
+        "name": "书妍",
+        "text": "*她把脚尖转向花店的玻璃门。*要进去吗？"
+    },
+    "date_seo_flower_2": {
+        "name": "书妍",
+        "text": "*她推开花店的门，风铃响了。书妍绕着陈列架走了一圈，挑了一小盆多肉植物。*"
+    },
+    "date_seo_succulent_2": {
+        "name": "书妍",
+        "text": "它不用经常浇水。我觉得很适合作为第一盆植物。"
+    },
+    "date_seo_succulent_2_b": {
+        "name": "{name}",
+        "text": "这是要送给我吗？"
+    },
+    "date_seo_succulent_3": {
+        "name": "书妍",
+        "text": "如果你能养活的话。——养不活我就收回来。"
+    },
+    "date_seo_end": {
+        "name": "书妍",
+        "text": "*她把花盆递过来。装着泥土的小小重量，落在了我的掌心里。*"
+    },
+    "date_seo_end_b": {
+        "name": "{name}",
+        "text": "*我们离开公园，沿着街道走。*"
+    },
+    "date_seo_end_c": {
+        "name": "书妍",
+        "text": "*花盆外的包装纸在她手里轻轻沙沙作响。*今天。"
+    },
+    "date_seo_end_d": {
+        "name": "书妍",
+        "text": "今天我玩得很开心。"
+    },
+    "date_yuna_1": {
+        "name": "{name}",
+        "text": "*咖啡馆外，由娜穿着黑色连衣裙，斜挎着一只小包，靠在墙上。没有穿校服，我的目光最先落在她文身的线条上。*"
+    },
+    "date_yuna_compliment_choice": {
+        "name": "{name}",
+        "text": "*由娜的视线短暂地越过杯沿抬了起来。*",
+        "choices": [
+            "你今天真漂亮。",
+            "你今天看起来有点不一样。",
+            "你今天看起来比平时好说话多了。"
+        ]
+    },
+    "date_yuna_pretty_high": {
+        "name": "由娜",
+        "text": "*她盯着杯沿看了很久。银白色的头发从脸颊旁滑落下来。*"
+    },
+    "date_yuna_pretty_high_2": {
+        "name": "由娜",
+        "text": "那个。"
+    },
+    "date_yuna_pretty_high_3": {
+        "name": "{name}",
+        "text": "嗯？"
+    },
+    "date_yuna_pretty_high_4": {
+        "name": "由娜",
+        "text": "再说一遍。"
+    },
+    "date_yuna_pretty_high_5": {
+        "name": "由娜",
+        "text": "*她没有抬起视线。*"
+    },
+    "date_yuna_pretty_high_5_b": {
+        "name": "{name}",
+        "text": "你很漂亮。"
+    },
+    "date_yuna_pretty_high_5_c": {
+        "name": "由娜",
+        "text": "*她的拇指抹去杯盖上的水汽。*够了。"
+    },
+    "date_yuna_pretty_low": {
+        "name": "由娜",
+        "text": "我不习惯听这种话。"
+    },
+    "date_yuna_bright": {
+        "name": "由娜",
+        "text": "有什么不同？"
+    },
+    "date_yuna_bookstore": {
+        "name": "{name}",
+        "text": "*我们去了一家书店。由娜在书架之间慢慢地走着。*"
+    },
+    "date_yuna_bookstore_2": {
+        "name": "由娜",
+        "text": "你以前来过这里吗？"
+    },
+    "date_yuna_bookstore_2_b": {
+        "name": "{name}",
+        "text": "我从来没来过。"
+    },
+    "date_yuna_bookstore_3": {
+        "name": "由娜",
+        "text": "好。那我就是第一个带你来这里的人了。"
+    },
+    "date_yuna_earphone": {
+        "name": "由娜",
+        "text": "*她递给我一只耳机。*"
+    },
+    "date_yuna_earphone_2": {
+        "name": "由娜",
+        "text": "听。"
+    },
+    "date_yuna_earphone_2_b": {
+        "name": "{name}",
+        "text": "*一首安静的钢琴曲流淌进来。书店里的嘈杂声渐渐远去。*"
+    },
+    "date_yuna_earphone_3": {
+        "name": "{name}",
+        "text": "*耳机线决定了我们之间的距离。由娜就坐在恰好那么近的地方。*"
+    },
+    "date_yuna_oldbook": {
+        "name": "{name}",
+        "text": "*走过一家二手书店两步远，由娜转过身来。*"
+    },
+    "date_yuna_oldbook_b": {
+        "name": "由娜",
+        "text": "给。"
+    },
+    "date_yuna_oldbook_c": {
+        "name": "{name}",
+        "text": "*她抽出一本旧书，翻着书页。*"
+    },
+    "date_yuna_oldbook_2": {
+        "name": "由娜",
+        "text": "这本书我一年前读过。那时候，觉得结局很悲伤。"
+    },
+    "date_yuna_oldbook_3": {
+        "name": "{name}",
+        "text": "那现在呢？"
+    },
+    "date_yuna_oldbook_4": {
+        "name": "由娜",
+        "text": "现在读起来不一样了。"
+    },
+    "date_yuna_end": {
+        "name": "由娜",
+        "text": "*她看着{name}。书页的一角在她的指下折起。*"
+    },
+    "date_yuna_end_b": {
+        "name": "由娜",
+        "text": "*离开书店之前，她没有说话，而是递给我一张纸条。*"
+    },
+    "date_yuna_end_c": {
+        "name": "{name}",
+        "text": "*“今天我说了很多话。因为是和你在一起。”薰衣草色的墨水在最后一个字上微微洇开。*"
+    },
+    "date_dain_1": {
+        "name": "{name}",
+        "text": "*体育馆外，多因戴着帽子，穿着运动装，朝我挥手。她的右膝上戴着护具。*"
+    },
+    "date_dain_2": {
+        "name": "多因",
+        "text": "你来啦！差点迟到了吧？"
+    },
+    "date_dain_3": {
+        "name": "{name}",
+        "text": "我提前十分钟到的。"
+    },
+    "date_dain_4": {
+        "name": "多因",
+        "text": "我提前二十分钟到的！"
+    },
+    "date_dain_compliment_choice": {
+        "name": "{name}",
+        "text": "*多因把帽檐按了一下，等着。*",
+        "choices": [
+            "这顶帽子很适合你。",
+            "运动装绝对是你的风格。",
+            "约会也穿运动装吗？",
+            "下次约会，稍微打扮一下吧。"
+        ]
+    },
+    "date_dain_pretty_high": {
+        "name": "多因",
+        "text": "*多因把帽子拉得很低，遮住了半边脸。*"
+    },
+    "date_dain_pretty_high_2": {
+        "name": "多因",
+        "text": "喂，别突然说这种话。"
+    },
+    "date_dain_pretty_high_3": {
+        "name": "{name}",
+        "text": "是真的。"
+    },
+    "date_dain_pretty_high_4": {
+        "name": "多因",
+        "text": "*帽檐下，她的耳尖红了。手指还勾在帽檐的边上。*"
+    },
+    "date_dain_pretty_low": {
+        "name": "多因",
+        "text": "怎么突然这么说？不过，谢谢。"
+    },
+    "date_dain_bright": {
+        "name": "多因",
+        "text": "*多因的笑容顿了一下，把帽檐拉得更低。*……对。运动装很舒服。"
+    },
+    "date_dain_to_arcade": {
+        "name": "{name}",
+        "text": "*我们去了游戏厅。*"
+    },
+    "date_dain_arcade": {
+        "name": "{name}",
+        "text": "*我们站在一台节奏游戏机前。屏幕闪烁着。*"
+    },
+    "date_dain_arcade_2": {
+        "name": "多因",
+        "text": "好，再赌一局！输的人请喝饮料！"
+    },
+    "date_dain_arcade_2_b": {
+        "name": "{name}",
+        "text": "又要赌？"
+    },
+    "date_dain_arcade_3": {
+        "name": "多因",
+        "text": "没有赌注就没意思嘛！"
+    },
+    "date_dain_arcade_3_b": {
+        "name": "{name}",
+        "text": "*节奏游戏一开始，多因就抓住了节拍。直到曲子结束，她的连击都没有断过。*"
+    },
+    "date_dain_arcade_3_c": {
+        "name": "多因",
+        "text": "*她一下子跳了起来。*全连！你看到了吗？"
+    },
+    "date_dain_rhythm": {
+        "name": "多因",
+        "text": "*她指着屏幕上的分数。*这是我有史以来第二高的分数。"
+    },
+    "date_dain_rhythm_2": {
+        "name": "{name}",
+        "text": "太厉害了。"
+    },
+    "date_dain_rhythm_3": {
+        "name": "多因",
+        "text": "那当然。这个又用不到我的膝盖。"
+    },
+    "date_dain_knee": {
+        "name": "{name}",
+        "text": "*“用不到膝盖。”多因笑着说，然后低头看了一眼她的右膝。*"
+    },
+    "date_dain_knee_2": {
+        "name": "{name}",
+        "text": "*我们离开游戏厅，路过一家体育用品店。多因在陈列着排球鞋的橱窗前放慢了脚步。*"
+    },
+    "date_dain_shop": {
+        "name": "多因",
+        "text": "*她的目光顺着玻璃后面排球鞋的鞋带移动。帽檐下，她的嘴唇抿紧了。*"
+    },
+    "date_dain_shop_2": {
+        "name": "{name}",
+        "text": "多因？"
+    },
+    "date_dain_shop_2_b": {
+        "name": "多因",
+        "text": "*她把下巴转向陈列柜的另一边。*没什么！走吧！"
+    },
+    "date_dain_shop_3": {
+        "name": "多因",
+        "text": "*她把两只手插进口袋，走在前面。*别盯着看。"
+    },
+    "date_dain_shop_3_b": {
+        "name": "多因",
+        "text": "*她把步子迈大了。*你再问一次，我真的就自己走了。"
+    },
+    "date_dain_end": {
+        "name": "{name}",
+        "text": "*她在笑。帽檐下，她的视线仍停留在店铺橱窗上。*"
+    },
+    "date_dain_end_b": {
+        "name": "多因",
+        "text": "喂。"
+    },
+    "date_dain_end_c": {
+        "name": "多因",
+        "text": "我今天玩得很开心。真的。"
+    },
+    "pre_confess_minsu": {
+        "name": "敏秀",
+        "text": "喂，你是在约会吧？就一件事"
+    },
+    "pre_confess_minsu_2": {
+        "name": "敏秀",
+        "text": "别躲。认真对待"
+    },
+    "pre_confess_callback": {
+        "name": "{name}",
+        "text": "*口袋里手机的一角压进了我的掌心。没有任何通知，只有黑色的玻璃映出的屏幕。*"
+    },
+    "date_seo_role_trap": {
+        "name": "书妍",
+        "text": "*她的手离开了包带。*我今天不是以学生会长的身份来的。"
+    },
+    "date_yuna_trap": {
+        "name": "由娜",
+        "text": "我想，你平时应该很难跟我说话。"
+    },
+    "date_seo_tier_check": {},
+    "date_seo_high_1": {
+        "name": "书妍",
+        "text": "我们今天可以改计划。就从你想去的地方开始吧。"
+    },
+    "date_seo_high_2": {
+        "name": "{name}",
+        "text": "*书妍把行程单折起来放进包里。她松开包带，先走进了公园。*"
+    },
+    "date_seo_tentative_1": {
+        "name": "{name}",
+        "text": "*我们绕着公园走，书妍只谈下周的日程。她在一张长椅前停下。*"
+    },
+    "date_seo_tentative_2": {
+        "name": "书妍",
+        "text": "今天到这里就够了。在学校我不会躲着你。"
+    },
+    "date_seo_tentative_3": {
+        "name": "{name}",
+        "text": "*我们在车站分别，没有再定下别的约。*"
+    },
+    "date_yuna_tier_check": {},
+    "date_yuna_high_1": {
+        "name": "由娜",
+        "text": "*由娜把两枚书签并排放在桌上。*结束后，和我一起挑一枚。留给我们下一本要读的书。"
+    },
+    "date_yuna_high_2": {
+        "name": "由娜",
+        "text": "我是说我们还会一起读。你可以记下来。"
+    },
+    "date_yuna_tentative_1": {
+        "name": "由娜",
+        "text": "今天只聊书吧。"
+    },
+    "date_yuna_tentative_2": {
+        "name": "{name}",
+        "text": "*谈话还在继续，但由娜始终没有从包里拿出那本旧书。她在咖啡还剩一半的时候看了看时间。*"
+    },
+    "date_yuna_tentative_3": {
+        "name": "由娜",
+        "text": "下次我先给你发消息。今天就到这里吧。"
+    },
+    "date_dain_tier_check": {},
+    "date_dain_high_1": {
+        "name": "多因",
+        "text": "下周也空出来。如果今天玩得开心，我们还要再来。"
+    },
+    "date_dain_high_2": {
+        "name": "多因",
+        "text": "*她从口袋里拿出一个腕带，递给我。*今天第一个游戏由你来选。"
+    },
+    "date_dain_tentative_1": {
+        "name": "多因",
+        "text": "今天不要在外面待太久。我的膝盖也需要休息。"
+    },
+    "date_dain_tentative_2": {
+        "name": "{name}",
+        "text": "*我们在自动贩卖机旁各喝了一杯饮料。多因让体育馆的门关着，整理着包带。*"
+    },
+    "date_dain_tentative_3": {
+        "name": "多因",
+        "text": "学校见。到时候再决定别的安排。"
+    },
+    "day4_caught_fallout_1": {
+        "name": "{name}",
+        "text": "*昨晚的道歉还留在输入框里。就在我要发送的时候，书妍的消息到了。*"
+    },
+    "day4_caught_fallout_2": {
+        "name": "书妍",
+        "text": "昨天撞在一起的约，我不会就这么算了。告诉我们，你今天先和谁见面。"
+    },
+    "day4_caught_fallout_3": {
+        "name": "{name}",
+        "text": "*由娜读了群里的消息，没有回复。多因写道：“如果今天要见面，先把时间定下来。”我再次查看日历里重叠的安排。*"
+    },
+    "day4_caught_fallout_4": {
+        "name": "{name}",
+        "text": "*我把没发出去的道歉补完，发了出去。等回复的时候，我查看了今天的安排。*"
+    },
+    "day4_harem_fallout_1": {
+        "name": "{name}",
+        "text": "*书妍在群里发了一条：“昨天一笑带过，并没有把我们的约定理清。”*"
+    },
+    "day4_harem_fallout_2": {
+        "name": "书妍",
+        "text": "我不会叫你选我们中的一个。但你不能一直让我们每个人都抱着期待。"
+    },
+    "day4_harem_fallout_3": {
+        "name": "{name}",
+        "text": "*由娜写道：“也确认一下我们的约定。”多因跟着写：“如果时间重叠，现在就说。”我打开日历回复了。*"
+    },
+    "day4_harem_fallout_4": {
+        "name": "{name}",
+        "text": "*我告诉群里，我会再确认一遍安排。日历还开着，我在门口穿上了鞋。*"
+    },
+    "date_seo_skip": {},
+    "date_yuna_skip": {},
+    "date_dain_skip": {},
+    "date_seo_neg": {
+        "name": "书妍",
+        "text": "*长椅空着。只有一条消息。*今天别出来了。学校见。"
+    },
+    "date_yuna_neg": {
+        "name": "由娜",
+        "text": "*她在咖啡馆前转过身。*我今天不想碰见你。"
+    },
+    "date_dain_neg": {
+        "name": "多因",
+        "text": "*在体育馆的卷帘门前，她整理着球袋。*我今天不想让你来。走吧。"
+    }
+}

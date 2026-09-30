@@ -22,7 +22,7 @@ async function ready(page) {
     await page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
 }
 
-for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
+for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
     test(`${lang}: date thresholds, refusal flags, and save continuation`, async ({ page }) => {
         test.setTimeout(120_000);
         await openGame(page, lang, true);

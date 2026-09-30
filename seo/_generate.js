@@ -49,7 +49,8 @@ const LOCALES = {
   es: 'es_LA',
   fr: 'fr_FR',
   de: 'de_DE',
-  pt: 'pt_BR'
+  pt: 'pt_BR',
+  zh: 'zh_CN'
 };
 
 function siteUrl(pathname) {
@@ -68,7 +69,8 @@ function seoUrl(slug) {
 const HOME = {
   ko: '/', en: '/index-en', ja: '/index-ja',
   es: '/index-es', fr: '/index-fr', de: '/index-de',
-  pt: '/index-pt'
+  pt: '/index-pt',
+  zh: '/index-zh'
 };
 
 // 언어별 공통 카피 (한 번만 번역)
@@ -820,7 +822,7 @@ ${altLinks ? `${altLinks}\n` : ''}        <lastmod>${LASTMOD}</lastmod>
 
 function renderHomeSitemapUrl(lang, pathname) {
   const altLinks = Object.keys(HOME).map(L =>
-    `        <xhtml:link rel="alternate" hreflang="${L}" href="${siteUrl(HOME[L])}"/>`
+    `        <xhtml:link rel="alternate" hreflang="${L === 'zh' ? 'zh-CN' : L}" href="${siteUrl(HOME[L])}"/>`
   ).join('\n') + `\n        <xhtml:link rel="alternate" hreflang="x-default" href="${siteUrl('/')}"/>`;
   const priority = lang === 'ko' ? '1.0' : '0.9';
 

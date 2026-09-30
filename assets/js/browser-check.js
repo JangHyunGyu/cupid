@@ -92,6 +92,12 @@
             guide: 'Selecione Abrir no navegador no menu Mais (⋯) ou Compartilhar do aplicativo. Se essa opção não aparecer, copie o link e cole na barra de endereços do {browser}.',
             open: 'Abrir no {browser}', copy: 'Copiar link', stay: 'Continuar aqui', copied: 'Link copiado. Cole na barra de endereços do {browser}.',
             manual: 'Pressione e segure o endereço abaixo para copiar e cole no {browser}.', pending: 'Se nenhuma janela abrir, selecione Abrir no navegador no menu do aplicativo.', browser: 'navegador'
+        },
+        zh: {
+            title: '请在外部浏览器中打开', intro: '你正在{app}内查看此页面。用外部浏览器打开，体验会更流畅。',
+            guide: '请在应用的“更多（⋯）”或“分享”菜单中选择“在浏览器中打开”。如果没有这个选项，请复制链接，粘贴到{browser}的地址栏。',
+            open: '在{browser}中打开', copy: '复制链接', stay: '留在这里继续', copied: '链接已复制。请粘贴到{browser}的地址栏。',
+            manual: '请长按下方的地址进行复制，然后粘贴到{browser}中。', pending: '如果没有打开新窗口，请在应用菜单中选择“在浏览器中打开”。', browser: '浏览器'
         }
     };
 

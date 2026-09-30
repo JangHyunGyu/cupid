@@ -105,7 +105,7 @@ function check(fn) { fn(); cases++; }
       const retry = environment(code, { ua: ios + ' Line/15.0', url: url.href, blockStorage: true });
       assert.equal(retry.navigations.length, 0); assert.ok(retry.panel());
     });
-    for (const lang of ['ko', 'en', 'ja', 'jp', 'es', 'fr', 'de', 'pt', 'en-US', 'unknown']) check(() => {
+    for (const lang of ['ko', 'en', 'ja', 'jp', 'es', 'fr', 'de', 'pt', 'zh', 'en-US', 'unknown']) check(() => {
       const env = environment(code, { lang });
       assert.ok(env.panel());
       assert.ok(env.elements.every(e => !/\{app\}|\{browser\}/.test(e.textContent)));

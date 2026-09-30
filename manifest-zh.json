@@ -1,0 +1,38 @@
+{
+    "name": "Cupid：免费网页视觉小说",
+    "short_name": "Cupid",
+    "description": "直接在浏览器里免费畅玩校园恋爱视觉小说，无需下载，也无需注册。",
+    "start_url": "/index-zh.html",
+    "display": "fullscreen",
+    "background_color": "#1a1a2e",
+    "theme_color": "#e94560",
+    "orientation": "any",
+    "lang": "zh-CN",
+    "icons": [
+        {
+            "src": "favicon.ico",
+            "sizes": "48x48",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "favicon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "favicon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "categories": [
+        "games",
+        "entertainment"
+    ],
+    "id": "/index-zh.html",
+    "scope": "/",
+    "display_override": [
+        "fullscreen",
+        "standalone"
+    ]
+}

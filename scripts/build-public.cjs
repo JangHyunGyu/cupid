@@ -8,7 +8,7 @@ const output = path.join(root, 'dist');
 function buildPublic() {
   const protectedFiles = new Set(listProtectedAssets(root));
   const publicFiles = [];
-  const topLevel = /^(?:(?:index|game|gallery)(?:-(?:ko|en|ja|es|fr|de|pt))?\.html|404\.html|manifest(?:-(?:ko|en|ja|es|fr|de|pt))?\.json|favicon(?:-(?:192|512))?\.(?:ico|png|webp)|cupid_link(?:_new)?\.(?:png|webp)|service-worker\.js|deepseek_api\.js|robots\.txt|llms\.txt|sitemap\.xml|_headers)$/;
+  const topLevel = /^(?:(?:index|game|gallery)(?:-(?:ko|en|ja|es|fr|de|pt|zh))?\.html|404\.html|manifest(?:-(?:ko|en|ja|es|fr|de|pt|zh))?\.json|favicon(?:-(?:192|512))?\.(?:ico|png|webp)|cupid_link(?:_new)?\.(?:png|webp)|service-worker\.js|deepseek_api\.js|robots\.txt|llms\.txt|sitemap\.xml|_headers)$/;
   function walk(dir) {
     for (const entry of fs.readdirSync(path.join(root, dir), { withFileTypes: true })) {
       const rel = (dir ? dir + '/' : '') + entry.name;

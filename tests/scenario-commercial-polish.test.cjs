@@ -7,7 +7,7 @@ const test = require('node:test');
 const vm = require('node:vm');
 
 const root = path.resolve(__dirname, '..');
-const locales = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'];
+const locales = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'];
 
 function loadScenario(files) {
     const context = vm.createContext({ console });
@@ -109,8 +109,8 @@ test('all seven locales contain the new scenes and distinct failure labels', () 
             for (const key of keys) assert.ok(data[key]?.text?.trim(), `${code}/${file}:${key}`);
         }
         const endings = locale(code, 'day5_4_night');
-        assert.equal(endings.confess_fail_5.text, '─── CONFESSION REJECTED END ───');
-        assert.equal(endings.harem_8.text, '─── UNRESOLVED END ───');
+        assert.equal(endings.confess_fail_5.text, code === 'zh' ? '─── 告白被拒结局 ───' : '─── CONFESSION REJECTED END ───');
+        assert.equal(endings.harem_8.text, code === 'zh' ? '─── 未解结局 ───' : '─── UNRESOLVED END ───');
     }
 });
 

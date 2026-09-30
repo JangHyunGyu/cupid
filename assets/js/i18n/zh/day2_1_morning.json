@@ -1,0 +1,405 @@
+{
+    "hidden_homeroom_d2_low": {
+        "name": "班主任",
+        "text": "*在办公室门口，你碰上了班主任。她把手里的文件转回朝向自己的办公桌。*今天先不要单独谈话。课堂上见。"
+    },
+    "hidden_homeroom_d2_neg": {
+        "name": "班主任",
+        "text": "*她把文件转过来抵在胸前。*今天没什么好谈的。去上课吧。"
+    },
+    "morning2_start": {
+        "name": "{name}",
+        "text": "*第二天。校服袖子上的折痕比昨天淡了。*"
+    },
+    "morning2_start_2": {},
+    "morning2_greet_seo_1": {},
+    "morning2_greet_seo_1_roof": {
+        "name": "书妍",
+        "text": "你昨天在天台说的话——还算数吗？"
+    },
+    "morning2_greet_seo_1_gate": {
+        "name": "书妍",
+        "text": "点名。坐下。"
+    },
+    "morning2_greet_seo_2": {
+        "name": "{name}",
+        "text": "*书妍先走了过来，今天她又把写字板夹在臂弯里。我们身后，多因的椅子吱地向后滑开，由娜翻过一页书。*"
+    },
+    "morning2_greet_seo_others_2": {
+        "name": "{name}",
+        "text": "*书妍用写字板敲了一下。*"
+    },
+    "morning2_greet_dain_1": {},
+    "morning2_greet_dain_2": {
+        "name": "多因",
+        "text": "*她从后面拍了一下我的肩膀。*"
+    },
+    "morning2_greet_dain_others": {
+        "name": "书妍",
+        "text": "*她翻着写字板从旁边走过。*"
+    },
+    "morning2_greet_dain_others_seo": {
+        "name": "书妍",
+        "text": "真有精神。"
+    },
+    "morning2_greet_dain_others_yuna": {
+        "name": "{name}",
+        "text": "*由娜的笔尖在纸条中间洇出了一个墨点。*"
+    },
+    "morning2_greet_dain_others_2": {
+        "name": "{name}",
+        "text": "*教室门关上之后，走廊里传来写字板“嗒”的一声轻响。*"
+    },
+    "morning2_greet_yuna_1": {},
+    "morning2_greet_yuna_2": {
+        "name": "{name}",
+        "text": "*是由娜的字迹。比昨天多了一句话。——背面用很小的字写着：“午休，图书馆别馆。”*"
+    },
+    "morning2_greet_yuna_others": {
+        "name": "书妍",
+        "text": "一大早就收到信？"
+    },
+    "morning2_greet_yuna_others_seo": {
+        "name": "{name}",
+        "text": "*书妍嘴角的线条柔和了些，但写字板的边缘却指向了那张纸条。*"
+    },
+    "morning2_greet_yuna_others_dain": {
+        "name": "多因",
+        "text": "那是什么？给我看看！"
+    },
+    "morning2_greet_yuna_others_2": {
+        "name": "{name}",
+        "text": "*我把纸条折好握在手里。折痕压进了掌心。*"
+    },
+    "morning2_dain_1": {
+        "name": "{name}",
+        "text": "*我一推开教室门，就有一只手掌拍在了我的两块肩胛骨之间。*"
+    },
+    "morning2_dain_2": {
+        "name": "多因",
+        "text": "你来啦！早！"
+    },
+    "morning2_dain_3": {
+        "name": "多因",
+        "text": "吓到你了？就是帮你醒醒神！"
+    },
+    "morning2_dain_4": {
+        "name": "{name}",
+        "text": "一大早就这么有精神，是不是有点太早了？"
+    },
+    "morning2_dain_5": {
+        "name": "多因",
+        "text": "这才是正常水平！是你自己没电！"
+    },
+    "morning2_dain_6": {
+        "name": "多因",
+        "text": "*早自习还没开始，她的声音就已经充满了整个教室。*"
+    },
+    "morning2_yuna_seen": {
+        "name": "由娜",
+        "text": "……你转学之前，来过这里吗？"
+    },
+    "morning2_note_1": {
+        "name": "{name}",
+        "text": "*我正要坐下时——发现桌上有一张折起来的纸条。*"
+    },
+    "morning2_note_2": {
+        "name": "{name}",
+        "text": "*“午休来图书馆别馆。——由娜”*"
+    },
+    "morning2_note_3": {
+        "name": "{name}",
+        "text": "*和昨天一样的字迹。底部写着一个地点：“图书馆别馆”。*"
+    },
+    "morning2_seo_1": {
+        "name": "书妍",
+        "text": "*她走过走廊，往教室里看了一眼。*昨晚睡得好吗？"
+    },
+    "morning2_seo_4": {
+        "name": "{name}",
+        "text": "学生会长特意走到教室来，只是为了打个招呼？"
+    },
+    "morning2_seo_5": {
+        "name": "书妍",
+        "text": "我正要去办公室。顺路过来看看你。"
+    },
+    "morning2_minsu_1": {
+        "name": "书妍",
+        "text": "*在她回到走廊之前，写字板的边缘在门框上轻轻敲了一下，又抬起离开。*"
+    },
+    "morning2_minsu_1b": {
+        "name": "{name}",
+        "text": "*我正盯着书妍消失的那截走廊——敏秀在我身后转过身来。*"
+    },
+    "morning2_minsu_3": {
+        "name": "敏秀",
+        "text": "哥们儿。你才来两天，学生会长就来跟你打招呼了？我在这儿待了一年，她连看都不看我一眼。"
+    },
+    "morning2_dain_claim_1": {
+        "name": "{name}",
+        "text": "也许只是你不受欢迎。"
+    },
+    "morning2_dain_claim_2": {
+        "name": "敏秀",
+        "text": "这倒是真的，但这不是重点。"
+    },
+    "morning2_dain_claim_3": {
+        "name": "{name}",
+        "text": "*书妍抱着写字板沿走廊走远了。*"
+    },
+    "morning2_dain_claim_4": {
+        "name": "多因",
+        "text": "连学生会长都对我们的转学生感兴趣了？有人受欢迎啦！"
+    },
+    "morning2_dain_claim_5": {
+        "name": "{name}",
+        "text": "“我们”的转学生？"
+    },
+    "morning2_dain_claim_6": {
+        "name": "多因",
+        "text": "我们在班上是同桌。这点面子你总要给吧。"
+    },
+    "morning2_break_transition": {
+        "name": "{name}",
+        "text": "*课间休息时，我走到走廊上。*"
+    },
+    "morning2_break_transition_b": {
+        "name": "{name}",
+        "text": "*班主任站在教室门边。她拿着出勤表朝这边看了一眼——我们的视线对上了。*"
+    },
+    "morning2_break_1": {
+        "name": "{name}",
+        "text": "*书妍的写字板边缘在我的课桌上敲了一下。我还没来得及回答，她就走回了走廊。*"
+    },
+    "hidden_homeroom_d2_1": {
+        "name": "班主任",
+        "text": "啊，{name}。来趟办公室。"
+    },
+    "hidden_homeroom_d2_1_b": {
+        "name": "{name}",
+        "text": "出什么事了吗？"
+    },
+    "hidden_homeroom_d2_1_c": {
+        "name": "班主任",
+        "text": "没有，就是核对一下你的转学材料。——行政上的事。"
+    },
+    "hidden_homeroom_d2_2": {
+        "name": "{name}",
+        "text": "*我的转学材料的一角露在她的点名册页面之间。*"
+    },
+    "hidden_homeroom_d2_2_b": {
+        "name": "{name}",
+        "text": "*我跟着班主任走进办公室。她放在角落的办公桌，抽屉开着几厘米，一页稿纸的一角从一叠文件下面露了出来。*"
+    },
+    "hidden_homeroom_d2_3": {
+        "name": "班主任",
+        "text": "我看了你以前的成绩单。你的语文成绩很扎实。你喜欢读书吗？"
+    },
+    "hidden_homeroom_d2_3_b": {
+        "name": "{name}",
+        "text": "我偶尔会读小说。"
+    },
+    "hidden_homeroom_d2_3_c": {
+        "name": "班主任",
+        "text": "*她把笔横放在敞开的抽屉里的那几页稿纸上。*"
+    },
+    "hidden_homeroom_d2_3_d": {
+        "name": "班主任",
+        "text": "你喜欢读。那写呢？"
+    },
+    "hidden_homeroom_d2_3_e": {
+        "name": "{name}",
+        "text": "*按在成绩单上的手指，盖住了稿纸的一角。*"
+    },
+    "hidden_homeroom_d2_3_f": {
+        "name": "{name}",
+        "text": "写作不太是我的强项。"
+    },
+    "hidden_homeroom_d2_3_g": {
+        "name": "班主任",
+        "text": "*她用膝盖去顶抽屉，但被稿纸的一角卡住，没能完全合上。*"
+    },
+    "hidden_homeroom_d2_choice1": {
+        "name": "{name}",
+        "text": "*班主任不再试着合上抽屉，等着我回答。*",
+        "choices": [
+            "那您呢？您读什么？",
+            "我确实喜欢读书。",
+            "你只读很难的书，对吧？"
+        ]
+    },
+    "hidden_homeroom_d2_choice1_a": {
+        "name": "班主任",
+        "text": "推理小说。不是那种抓出凶手的，而是追溯动机的那种。"
+    },
+    "hidden_homeroom_d2_choice1_b": {
+        "name": "班主任",
+        "text": "*她把咖啡杯的把手转了整整一圈。*是吗？这是个好爱好。"
+    },
+    "hidden_homeroom_d2_5": {
+        "name": "班主任",
+        "text": "对。我就是随口问问。"
+    },
+    "hidden_homeroom_d2_6": {
+        "name": "{name}",
+        "text": "*她把咖啡杯推到一边，用指尖把露出来的稿纸塞回抽屉，关上了。*"
+    },
+    "hidden_homeroom_d2_7": {
+        "name": "班主任",
+        "text": "适应得怎么样？比昨天好些了吗？"
+    },
+    "hidden_homeroom_d2_7_b": {
+        "name": "{name}",
+        "text": "好多了。我喜欢班上的同学。"
+    },
+    "hidden_homeroom_d2_8": {
+        "name": "班主任",
+        "text": "多因很吵，是吧？——她一直都这样。不过，闯祸的孩子和精力过剩的孩子，还是有区别的。"
+    },
+    "hidden_homeroom_d2_8_b": {
+        "name": "{name}",
+        "text": "您对多因这么了解，她一定挺有名的吧。"
+    },
+    "hidden_homeroom_d2_8_c": {
+        "name": "班主任",
+        "text": "与其说有名，不如说是我不放心她。*她喝了一口咖啡。*"
+    },
+    "hidden_homeroom_d2_8_d": {
+        "name": "{name}",
+        "text": "*她的笔尖停在点名册上多因的名字旁边。*"
+    },
+    "hidden_homeroom_d2_8_e": {
+        "name": "班主任",
+        "text": "*她放下咖啡。*总之，你这边好像没什么问题。"
+    },
+    "hidden_homeroom_d2_8_f": {},
+    "hidden_homeroom_d2_9": {
+        "name": "{name}",
+        "text": "谢谢老师。"
+    },
+    "hidden_homeroom_d2_10": {
+        "name": "班主任",
+        "text": "这是当班主任的分内事。你不必这么客气。"
+    },
+    "hidden_homeroom_d2_choice2": {
+        "name": "{name}",
+        "text": "*她把茶碟在原地转了两圈。*",
+        "choices": [
+            "嘴上说“只是工作”，你看起来倒挺高兴的。",
+            "谢谢您关照我。",
+            "像这样来关心我，也是您工作的一部分吗？"
+        ]
+    },
+    "hidden_homeroom_d2_choice2_trap": {
+        "name": "班主任",
+        "text": "*她转茶碟的手停住了。*别这么解读。"
+    },
+    "hidden_homeroom_d2_choice2_a": {
+        "name": "班主任",
+        "text": "听到你过得不错，我当然高兴。"
+    },
+    "hidden_homeroom_d2_choice2_b": {
+        "name": "班主任",
+        "text": "嗯，谢谢你这么说。"
+    },
+    "hidden_homeroom_d2_11": {
+        "name": "班主任",
+        "text": "别的同学有烦心事时也会来找我。你也可以这样。"
+    },
+    "hidden_homeroom_d2_11_b": {
+        "name": "班主任",
+        "text": "*她仍低头看着咖啡，轻声说道。*"
+    },
+    "hidden_homeroom_d2_12": {},
+    "morning2_seo_dust_1": {
+        "name": "{name}",
+        "text": "*第一节课后的课间，我在走廊里遇到了书妍。她的视线落在我肩头的接缝处，拿着写字板的那只手先抬了起来。*"
+    },
+    "morning2_seo_dust_2": {
+        "name": "书妍",
+        "text": "等一下。"
+    },
+    "morning2_seo_dust_3": {
+        "name": "书妍",
+        "text": "*她的手落在了{name}的肩上。她拂了两下灰尘，然后把手拿开。*"
+    },
+    "morning2_seo_dust_4": {
+        "name": "书妍",
+        "text": "你身上沾了东西。"
+    },
+    "morning2_seo_dust_5": {
+        "name": "{name}",
+        "text": "*书妍的手抽开的地方，我的书包带歪了。我只调整了一下背带。*"
+    },
+    "morning2_seo_dust_6": {
+        "name": "书妍",
+        "text": "什么？只是灰尘而已。"
+    },
+    "morning2_dain_react_1": {
+        "name": "{name}",
+        "text": "*肩上的灰尘没了，但我还是把书包带重新调整了两次。*"
+    },
+    "morning2_dain_react_2": {
+        "name": "{name}",
+        "text": "*书妍整了整写字板，朝走廊那头走去。多因的声音从身后传来。*"
+    },
+    "morning2_dain_react_3": {
+        "name": "多因",
+        "text": "喂，刚才那是怎么回事？她刚才是不是碰你肩膀了？"
+    },
+    "morning2_dain_react_4": {
+        "name": "{name}",
+        "text": "我身上有灰。"
+    },
+    "morning2_dain_react_5": {
+        "name": "多因",
+        "text": "我身上真的有灰吗？"
+    },
+    "morning2_dain_react_6": {
+        "name": "{name}",
+        "text": "*我没回答，只是调整了一下书包带。多因看在眼里，没有再追问。*"
+    },
+    "hidden_homeroom_d2_freetalk": {
+        "name": "班主任",
+        "text": "*她把椅子转向我。*你还想问别的吗？",
+        "context": "现在是第二天早上，刚刚在办公室结束了一次谈话。转学生偶然瞥见班主任抽屉里有一份很长的稿子，但还不知道内容和来历。两人是刚开始建立信任的师生关系。不要编造稿件背后的秘密，也不要越过师生的界限。",
+        "personality": "班主任沉稳、负责，会先倾听再给出建议。她对那份私人稿件的难为情，只体现在一瞬间的迟疑上，但她不会把情感上的责任压给学生，并保持温暖而恰当的界限。"
+    },
+    "morning2_end": {
+        "name": "{name}",
+        "text": "*据敏秀说，书妍整整一年都没有主动跟任何人打过招呼。今天，她却特意走到了我的教室。*"
+    },
+    "hidden_homeroom_d2_choice1_trap": {
+        "name": "班主任",
+        "text": "当老师，并不代表我就得喜欢难读的书。"
+    },
+    "morning2_greet_none_1": {
+        "name": "{name}",
+        "text": "*我推开教室门。没有人过来。只有书包落在课桌上的声音。*"
+    },
+    "morning2_greet_none_2": {
+        "name": "{name}",
+        "text": "*书妍翻了一页点名册。多因面朝着她的朋友们。由娜的书已经翻开了。*"
+    },
+    "morning2_greet_none_tone": {},
+    "morning2_greet_none_neg_1": {
+        "name": "{name}",
+        "text": "*我推开教室门。视线聚拢了一秒，又移开了。只有书包的声响变大了。*"
+    },
+    "morning2_greet_none_neg_2": {
+        "name": "{name}",
+        "text": "*书妍始终没有从点名册上抬头。多因已经和朋友们在一起了。由娜的目光一直落在书上。*"
+    },
+    "morning2_greet_dain_1_fun": {
+        "name": "多因",
+        "text": "喂！昨天好好玩，今天再一起玩吧！"
+    },
+    "morning2_greet_dain_1_plain": {
+        "name": "多因",
+        "text": "嘿！早啊。今天也留点力气。"
+    },
+    "morning2_greet_yuna_1_thanks": {
+        "name": "{name}",
+        "text": "*我刚要坐下，发现桌上有一张折起来的纸条。“谢谢你昨天。”*"
+    }
+}

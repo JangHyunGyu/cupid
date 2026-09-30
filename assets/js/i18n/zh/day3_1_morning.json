@@ -1,0 +1,840 @@
+{
+    "hidden_homeroom_d3_low": {
+        "name": "班主任",
+        "text": "*在空荡荡的教室门口，你的班主任停了下来，指向走廊那边，而不是课桌的方向。*今天就只谈课业吧。"
+    },
+    "hidden_homeroom_d3_neg": {
+        "name": "班主任",
+        "text": "*她只是指了指走廊。*私人谈话到此为止。"
+    },
+    "hidden_nurse_d3_low": {
+        "name": "保健老师",
+        "text": "*保健老师站在门边，没有把咨询用的椅子拉出来。*我觉得我们现在不适合单独继续这段谈话。如果你有需要，请在正式咨询时间过来。"
+    },
+    "hidden_nurse_d3_neg": {
+        "name": "保健老师",
+        "text": "*她没有拉出椅子。*只在正式的办公桌那儿谈。回去吧。"
+    },
+    "morning3_date_seo_low": {
+        "name": "书妍",
+        "text": "*书妍打开手机，又立刻关掉。你们视线相遇时，她低头看向写字板。*周末的日程我会发到群里。"
+    },
+    "morning3_date_dain_low": {
+        "name": "多因",
+        "text": "*多因朝我这边瞥了一眼，然后拉上了包的拉链。*这个周末我自己练。"
+    },
+    "morning3_date_yuna_low": {
+        "name": "由娜",
+        "text": "*由娜刚要抽出一张折起的纸条，又把它塞回书页之间。*这个周末……我想我还是想一个人待着。"
+    },
+    "morning3_start": {
+        "name": "{name}",
+        "text": "*第三天。我睡过头了，把闹钟关掉了三次。昨晚我熬夜看消息，睡得太晚了。*"
+    },
+    "morning3_start_2": {
+        "name": "{name}",
+        "text": "*我攥着书包带子，一路冲向学校。有人站在校门外。*"
+    },
+    "morning3_gate_branch": {},
+    "morning3_seo_gate_1": {
+        "name": "{name}",
+        "text": "*迟到铃眼看就要响了，书妍却站在校门外，连脚都没有点一下。*"
+    },
+    "morning3_seo_gate_warm_1": {
+        "name": "书妍",
+        "text": "*和平常不一样，她站在校门口等着。*"
+    },
+    "morning3_seo_gate_warm_2": {
+        "name": "书妍",
+        "text": "我是在外面办学生会的事。然后碰巧看到了你。"
+    },
+    "morning3_seo_gate_warm_3": {
+        "name": "{name}",
+        "text": "*她两手空空。没有文件，也没有写字板。*"
+    },
+    "morning3_seo_gate_warm_4": {
+        "name": "书妍",
+        "text": "*她先迈步往前走。走了几步，确认{name}跟上来了，就放慢了步子。*"
+    },
+    "morning3_seo_gate_2": {
+        "name": "书妍",
+        "text": "你迟到了。"
+    },
+    "morning3_seo_gate_3": {
+        "name": "{name}",
+        "text": "书妍？你怎么在这儿？"
+    },
+    "morning3_seo_gate_4": {
+        "name": "书妍",
+        "text": "迟到就迟到呗。总比一个人挨骂强。"
+    },
+    "morning3_seo_gate_5": {
+        "name": "{name}",
+        "text": "我觉得事情不是这样算的。"
+    },
+    "morning3_seo_gate_6": {
+        "name": "书妍",
+        "text": "开玩笑的。我会去解释我们俩为什么都迟到了。"
+    },
+    "morning3_seo_gate_6_b": {
+        "name": "书妍",
+        "text": "*书妍拿出学生会的日程表，给值周的老师看。*"
+    },
+    "morning3_seo_gate_7": {
+        "name": "书妍",
+        "text": "*她把盖了章的日程表折起来，走进校门。就算铃声响起，她的步子也没有乱。*"
+    },
+    "morning3_seo_gate_cold_1": {
+        "name": "书妍",
+        "text": "*书妍从旁边经过时，只有目光转向了我的名牌。*"
+    },
+    "morning3_seo_gate_cold_2": {
+        "name": "书妍",
+        "text": "转学生。你还在这儿啊。"
+    },
+    "morning3_seo_gate_cold_3": {
+        "name": "{name}",
+        "text": "*她一如既往，连我的名字都不叫。只有书妍的鞋跟声穿过校门，渐渐远去。*"
+    },
+    "morning3_yuna_gate_1": {
+        "name": "{name}",
+        "text": "*由娜站在校门外，半闭着眼睛，盯着自己的运动鞋鞋尖。*"
+    },
+    "morning3_yuna_gate_warm_1": {
+        "name": "{name}",
+        "text": "*由娜靠在校门旁的墙上。她递给我一张纸条。*"
+    },
+    "morning3_yuna_gate_warm_2": {
+        "name": "由娜",
+        "text": "我可以和你一起走吗？"
+    },
+    "morning3_yuna_gate_warm_3": {
+        "name": "{name}",
+        "text": "*由娜递出的纸条上只有两个词：“我等了。”*"
+    },
+    "morning3_yuna_gate_warm_4": {
+        "name": "{name}",
+        "text": "*我走在由娜身边。折起的纸条在我手里沙沙作响，我们的脚步渐渐合拍。*"
+    },
+    "morning3_yuna_gate_2": {
+        "name": "{name}",
+        "text": "由娜？你也迟到了？"
+    },
+    "morning3_yuna_gate_3": {
+        "name": "由娜",
+        "text": "我读了一整夜。"
+    },
+    "morning3_yuna_gate_4": {
+        "name": "{name}",
+        "text": "一整夜？"
+    },
+    "morning3_yuna_gate_5": {
+        "name": "由娜",
+        "text": "我想知道结局。放不下。"
+    },
+    "morning3_yuna_gate_6": {
+        "name": "{name}",
+        "text": "*看样子，她是熬夜看书才迟到的。由娜在包里翻找，把一个小面包掰成两半，递给了我。包装纸下面露出一张淡紫色的纸条。*"
+    },
+    "morning3_yuna_gate_6_b": {
+        "name": "{name}",
+        "text": "*纸条上写着：“你没吃早饭吧？”一点薰衣草色的墨水晕染到了面包袋的底部。*"
+    },
+    "morning3_yuna_gate_7": {
+        "name": "由娜",
+        "text": "*我们经过校门时，一起吃着分开的面包。由娜把空包装纸折起来。*"
+    },
+    "morning3_yuna_gate_cold_1": {
+        "name": "由娜",
+        "text": "*我们的视线相遇时，由娜把书抱得离胸口更近，先走进了校门。*"
+    },
+    "morning3_yuna_gate_cold_2": {
+        "name": "{name}",
+        "text": "*由娜加快了脚步，去追前面的人。没有能跟她搭话的空隙。*"
+    },
+    "morning3_dain_gate_1": {
+        "name": "{name}",
+        "text": "*校门附近，多因全速冲刺而来。*"
+    },
+    "morning3_dain_gate_warm_1": {
+        "name": "多因",
+        "text": "*多因在我身边刹住，喘着气伸出手肘。*"
+    },
+    "morning3_dain_gate_warm_2": {
+        "name": "多因",
+        "text": "哟！你差点让我们迟到！快，走吧！"
+    },
+    "morning3_dain_gate_warm_3": {
+        "name": "{name}",
+        "text": "*确认了我的回答后，多因轻轻把手肘挽进我的臂弯。走了几步，她放慢脚步，配合{name}的步幅。*"
+    },
+    "morning3_dain_gate_2": {
+        "name": "多因",
+        "text": "喂，迟到了。跑！"
+    },
+    "morning3_dain_gate_3": {
+        "name": "多因",
+        "text": "*多因伸出手掌，像站在起跑线上一样蹲下身。*"
+    },
+    "morning3_dain_gate_4": {
+        "name": "{name}",
+        "text": "别管手了。一起跑吧。"
+    },
+    "morning3_dain_gate_4_b": {
+        "name": "多因",
+        "text": "好。那就不许掉队。"
+    },
+    "morning3_dain_gate_5": {
+        "name": "{name}",
+        "text": "*我们并排加速。离校门的距离迅速缩短。*"
+    },
+    "morning3_dain_gate_5_b": {
+        "name": "{name}",
+        "text": "*多因跨过校门时，右脚一着地，就漏出一声“哎哟”。她立刻笑了起来，但那只脚慢了半拍才跟上。*"
+    },
+    "morning3_dain_gate_cold_1": {
+        "name": "多因",
+        "text": "*她和其他朋友一起跑了过去。*"
+    },
+    "morning3_dain_gate_cold_2": {
+        "name": "多因",
+        "text": "哦，嘿！"
+    },
+    "morning3_classroom_1": {
+        "name": "{name}",
+        "text": "*我走进教室，书妍的笔停住了，多因的椅子向后滑开。由娜在同一页上做了两次标记。*"
+    },
+    "morning3_react_seo_1": {
+        "name": "多因",
+        "text": "等等，你是跟学生会长一起进来的？一大早？"
+    },
+    "morning3_react_seo_2": {
+        "name": "由娜",
+        "text": "*由娜望着窗外，看到玻璃上{name}的倒影，把书签往里又推了一格。*"
+    },
+    "morning3_react_yuna_1": {
+        "name": "书妍",
+        "text": "现在一起上学了？真亲密。"
+    },
+    "morning3_react_yuna_1_b": {
+        "name": "多因",
+        "text": "*多因连人带椅子转过来，朝这边看。*"
+    },
+    "morning3_react_yuna_2": {
+        "name": "多因",
+        "text": "我好羡慕！我早上没有人可以一起走去学校。"
+    },
+    "morning3_react_yuna_2_b": {
+        "name": "书妍",
+        "text": "*她在教室门口停住了。*"
+    },
+    "morning3_react_dain_1": {
+        "name": "书妍",
+        "text": "晨练把你累坏了吧。午休要不要吃我的便当？"
+    },
+    "morning3_react_dain_2": {
+        "name": "由娜",
+        "text": "*她低着头，在书页的一角划了一道短线。*"
+    },
+    "morning3_date_intro": {
+        "name": "{name}",
+        "text": "*第一节课结束。每个课间，都有人来找我说话。*"
+    },
+    "morning3_date_intro_b": {
+        "name": "{name}",
+        "text": "*我走进走廊去课间休息。书妍是第一个走到我身边的人。*"
+    },
+    "hidden_homeroom_d3_1": {
+        "name": "{name}",
+        "text": "*课间。空荡荡的教室里，有笔尖沙沙的声音。班主任正站在讲台边写着什么。我一迈过门槛，笔尖就在纸上点出了一个墨点。*"
+    },
+    "hidden_homeroom_d3_3": {
+        "name": "班主任",
+        "text": "*她的笔尖在纸上留下了一个孤零零的墨点。*"
+    },
+    "hidden_homeroom_d3_3_b": {
+        "name": "班主任",
+        "text": "*班主任用手掌盖住稿纸，把它翻了过去。*"
+    },
+    "hidden_homeroom_d3_4": {
+        "name": "班主任",
+        "text": "没什么。工作文件。观察力强是优点，有时候也是缺点。"
+    },
+    "hidden_homeroom_d3_4_b": {
+        "name": "{name}",
+        "text": "*翻过去的稿纸之间露出密密麻麻的字迹。班主任的手掌盖着一个角。*"
+    },
+    "hidden_homeroom_d3_4_c": {
+        "name": "班主任",
+        "text": "*她把点名册拉过来盖在稿纸上，但翻过去的那页边缘仍露在外面。*"
+    },
+    "hidden_homeroom_d3_4_d": {
+        "name": "班主任",
+        "text": "你在看什么？课间你怎么在这儿？"
+    },
+    "hidden_homeroom_d3_4_e": {
+        "name": "{name}",
+        "text": "*稿纸正面朝下，上面写满了密密麻麻的字。我该问，还是假装没注意到？*"
+    },
+    "hidden_homeroom_d3_4_f": {
+        "name": "{name}",
+        "text": "*我一步也迈不动。桌上：点名册、成绩档案、学生资料袋，一份接一份。老师的手还按在稿纸上。*"
+    },
+    "hidden_homeroom_d3_4_g": {
+        "name": "{name}",
+        "text": "*红笔的笔迹透过翻过去的稿纸显了出来。两个字：“搁置。”我一看到，老师的指尖就把纸压得更紧了。*"
+    },
+    "hidden_homeroom_d3_4_h": {
+        "name": "{name}",
+        "text": "*我本可以装作没看见。老师没有去遮那张纸。她合上笔帽，又拧开。*"
+    },
+    "hidden_homeroom_d3_choice": {
+        "name": "{name}",
+        "text": "*那是稿纸。她用手掌盖住边缘。*",
+        "choices": [
+            "我看到稿纸了。您在写小说吗？",
+            "对不起，我什么都没看见。",
+            "写完之后，让我做第一个读者吧。",
+            "我会读，并且先指出哪里需要改。"
+        ]
+    },
+    "hidden_homeroom_d3_reveal_1": {
+        "name": "班主任",
+        "text": "说是小说都太粗糙，可说是练笔又写得太久了。七年了。"
+    },
+    "hidden_homeroom_d3_reveal_1_b": {
+        "name": "{name}",
+        "text": "多久？"
+    },
+    "hidden_homeroom_d3_reveal_1_c": {
+        "name": "班主任",
+        "text": "七年。我是大学时开始的，那时我学的是创意写作。"
+    },
+    "hidden_homeroom_d3_reveal_1_d": {
+        "name": "{name}",
+        "text": "您学的是创意写作？"
+    },
+    "hidden_homeroom_d3_reveal_1_e": {
+        "name": "班主任",
+        "text": "毕业后投过几次稿。被退了。那之后，投求职申请反倒觉得轻松些。"
+    },
+    "hidden_homeroom_d3_reveal_1_f": {
+        "name": "班主任",
+        "text": "*老师拿起一张稿纸。上面写满了密密麻麻的字。*"
+    },
+    "hidden_homeroom_d3_reveal_2": {
+        "name": "班主任",
+        "text": "上一次等结果的时候，没有人打电话来。差不多就在那时候，我开始准备当老师。"
+    },
+    "hidden_homeroom_d3_reveal_2_b": {
+        "name": "班主任",
+        "text": "我本以为找到工作之后就会把它收起来。可每次换抽屉，它都跟着一起搬。"
+    },
+    "hidden_homeroom_d3_reveal_2_c": {
+        "name": "{name}",
+        "text": "所以它一路跟到了这里。"
+    },
+    "hidden_homeroom_d3_reveal_2_d": {
+        "name": "班主任",
+        "text": "*她把稿纸理齐，终于叹了一口气。*"
+    },
+    "hidden_homeroom_d3_reveal_2_e": {
+        "name": "班主任",
+        "text": "把它当成普通的纸，会轻松一些。"
+    },
+    "hidden_homeroom_d3_reveal_2_f": {
+        "name": "班主任",
+        "text": "*她摩挲着稿纸的一角，然后向后靠在椅背上。*"
+    },
+    "hidden_homeroom_d3_reveal_3": {
+        "name": "班主任",
+        "text": "我就是这样成了语文老师的。有意思吧？我还抓着这些纸不放。"
+    },
+    "hidden_homeroom_d3_reveal_3_b": {
+        "name": "{name}",
+        "text": "您放弃了吗？"
+    },
+    "hidden_homeroom_d3_reveal_3_c": {
+        "name": "班主任",
+        "text": "*稿纸的边缘碰到了讲台，但她的手多停留了一拍。*"
+    },
+    "hidden_homeroom_d3_reveal_4": {
+        "name": "班主任",
+        "text": "说成放弃会更轻松。可我要是还会在这样的空教室里把它拿出来，大概就是从来没能放下吧。"
+    },
+    "hidden_homeroom_d3_reveal_4_b": {
+        "name": "{name}",
+        "text": "*稿纸的每一条边都被摩挲得起了毛。老师把指尖放在一行空白的格子上。*"
+    },
+    "hidden_homeroom_d3_reveal_4_c": {
+        "name": "班主任",
+        "text": "*她把稿纸与点名册分开放。*这是我自己写的东西。跟课堂没有关系，你不必勉强自己去读。"
+    },
+    "hidden_homeroom_d3_reveal_4_d": {
+        "name": "{name}",
+        "text": "我不能读吗？"
+    },
+    "hidden_homeroom_d3_reveal_4_e": {
+        "name": "班主任",
+        "text": "我打算把它带到文艺部的公开合评会上。到时候你愿意读吗？"
+    },
+    "hidden_homeroom_d3_reveal_4_f": {
+        "name": "班主任",
+        "text": "*话说完了，她的拇指仍在摩挲着稿纸的一角。*"
+    },
+    "hidden_homeroom_d3_reveal_4_g": {
+        "name": "{name}",
+        "text": "等您在那里拿出来的时候，我想读。"
+    },
+    "hidden_homeroom_d3_reveal_choice": {
+        "name": "{name}",
+        "text": "*七年。桌上的稿纸已经磨薄了。*",
+        "choices": [
+            "七年不是放弃——那是坚持",
+            "您为什么总在这里写？",
+            "七年了，不是该放下了吗？"
+        ]
+    },
+    "hidden_homeroom_d3_reveal_choice_trap": {
+        "name": "班主任",
+        "text": "*老师合上稿纸。*这话我已经听过很多遍了。"
+    },
+    "hidden_homeroom_d3_reveal_choice_a": {
+        "name": "班主任",
+        "text": "*她抚平稿纸一角的拇指，往纸页上按了一下。*说是坚持，听起来就没那么可怜了。"
+    },
+    "hidden_homeroom_d3_reveal_choice_b": {
+        "name": "班主任",
+        "text": "教室是最安静的地方。讽刺吧？"
+    },
+    "hidden_homeroom_d3_reveal_5": {
+        "name": "班主任",
+        "text": "我打算这周也拿给别的语文老师看。再藏下去，我觉得我永远也写不完。"
+    },
+    "hidden_homeroom_d3_reveal_6": {
+        "name": "班主任",
+        "text": "*她把嘴唇抿了一下，又松开，却没有把稿纸收起来。*"
+    },
+    "hidden_homeroom_d3_reveal_6_b": {
+        "name": "班主任",
+        "text": "我一直在自己修改。这次能当面听到大家的反应了。"
+    },
+    "hidden_homeroom_d3_reveal_6_c": {
+        "name": "{name}",
+        "text": "*她清了清嗓子，又把稿纸理齐。秒针的滴答声，钻进了她话语之间的停顿。*"
+    },
+    "hidden_homeroom_d3_reveal_6_d": {
+        "name": "班主任",
+        "text": "谢谢你。如果你没有先开口问，我说不定又会把它收起来了。"
+    },
+    "hidden_homeroom_d3_reveal_6_e": {
+        "name": "班主任",
+        "text": "*她的拇指按进稿纸的一角，把纸压出了些许皱痕。*"
+    },
+    "hidden_homeroom_d3_reveal_6_f": {
+        "name": "班主任",
+        "text": "总之，关于稿子，我们到合评会上再聊吧。"
+    },
+    "hidden_homeroom_d3_reveal_6_g": {
+        "name": "{name}",
+        "text": "*她把稿纸收进信封里，塞最后一页时停顿了一下。*"
+    },
+    "hidden_homeroom_d3_hide_1": {
+        "name": "班主任",
+        "text": "好。先让它合着吧。等我准备好拿出来的时候，会先告诉文艺部。"
+    },
+    "hidden_homeroom_d3_end": {
+        "name": "班主任",
+        "text": "*她合上稿纸，打开了讲台旁边的窗户。走廊的喧闹声飘进来，又渐渐消退。*"
+    },
+    "hidden_homeroom_d3_freetalk": {
+        "name": "班主任",
+        "text": "*她把稿纸收好，站到桌边。*想必你很意外吧。我们可以聊一会儿。稿子的反馈，等公开合评会再说。",
+        "context": "第三天上午。在一间空教室里，学生发现了班主任私人写的小说稿。她没有要求学生保密，也没有请学生私下给意见；她正在考虑把它拿到文艺部的公开合评会上。",
+        "personality": "班主任曾经梦想成为小说家。当了老师之后，她也从未停止写作，但她努力把私人创作与自己教学、评价学生的角色分开。"
+    },
+    "hidden_nurse_d3_check": {
+        "name": "{name}",
+        "text": "*课间快结束了。*"
+    },
+    "hidden_nurse_d3_1": {
+        "name": "{name}",
+        "text": "*下一个课间，我去了保健室。胳膊肘上创可贴的边缘勾住了袖子。*"
+    },
+    "hidden_nurse_d3_1_b": {
+        "name": "保健老师",
+        "text": "*保健老师从桌边站起来。*嗯？今天哪里受伤了？"
+    },
+    "hidden_nurse_d3_1_c": {
+        "name": "{name}",
+        "text": "我没受伤。"
+    },
+    "hidden_nurse_d3_1_d": {
+        "name": "保健老师",
+        "text": "没受伤却来保健室？"
+    },
+    "hidden_nurse_d3_1_e": {
+        "name": "{name}",
+        "text": "我就是想休息一下。"
+    },
+    "hidden_nurse_d3_2": {
+        "name": "保健老师",
+        "text": "哪里都不疼？你看起来气色不好。"
+    },
+    "hidden_nurse_d3_2_b": {},
+    "hidden_nurse_d3_2_c": {},
+    "hidden_nurse_d3_2_d": {},
+    "hidden_nurse_d3_2_e": {},
+    "hidden_nurse_d3_3": {
+        "name": "{name}",
+        "text": "我就是想休息一下。跟人相处的事，越来越复杂了。"
+    },
+    "hidden_nurse_d3_3_b": {
+        "name": "保健老师",
+        "text": "*保健老师放下杯子。*"
+    },
+    "hidden_nurse_d3_3_c": {},
+    "hidden_nurse_d3_3_d": {},
+    "hidden_nurse_d3_4": {
+        "name": "保健老师",
+        "text": "*保健老师拉上帘子，递给我一杯水。*坐吧。在这里你可以放松。慢慢来。"
+    },
+    "hidden_nurse_d3_5_b": {},
+    "hidden_nurse_d3_5_c": {},
+    "hidden_nurse_d3_5_d": {
+        "name": "{name}",
+        "text": "*保健老师的拇指在纸杯的杯沿上按了一下。*"
+    },
+    "hidden_nurse_d3_5_e": {
+        "name": "{name}",
+        "text": "那些跟谁都难以开口的事。"
+    },
+    "hidden_nurse_d3_5_f": {},
+    "hidden_nurse_d3_5_g": {
+        "name": "{name}",
+        "text": "我一直拖着不回答，因为我怕让人失望。"
+    },
+    "hidden_nurse_d3_5_h": {
+        "name": "保健老师",
+        "text": "*保健老师把纸杯端端正正地放在桌上。*"
+    },
+    "hidden_nurse_d3_5_i": {
+        "name": "保健老师",
+        "text": "这是恋爱咨询吗？"
+    },
+    "hidden_nurse_d3_5_j": {
+        "name": "{name}",
+        "text": "哦，那不是——"
+    },
+    "hidden_nurse_d3_5_k": {
+        "name": "保健老师",
+        "text": "你脸上写得太明白了，想否认都难。"
+    },
+    "hidden_nurse_d3_5_l": {
+        "name": "{name}",
+        "text": "*我只盯着桌上的纸杯。*"
+    },
+    "hidden_nurse_d3_5_m": {
+        "name": "保健老师",
+        "text": "我不确定这算不算学校的健康服务。不过我还是会听。床是空着的。"
+    },
+    "hidden_nurse_d3_5_n": {
+        "name": "{name}",
+        "text": "你有没有试过想照顾好每一个人，却发现实在太多了？"
+    },
+    "hidden_nurse_d3_5_o": {
+        "name": "保健老师",
+        "text": "*纸杯的边沿在她的拇指下被折弯了。保健老师望向窗外。*"
+    },
+    "hidden_nurse_d3_5_p": {
+        "name": "保健老师",
+        "text": "有过。在大学医院工作的时候。"
+    },
+    "hidden_nurse_d3_5_q": {
+        "name": "{name}",
+        "text": "大学医院？"
+    },
+    "hidden_nurse_d3_choice1": {
+        "name": "{name}",
+        "text": "*我张开嘴，又合上了。*",
+        "choices": [
+            "那时候发生了什么？",
+            "如果难以启齿，就不用告诉我。",
+            "您是因为讨厌医院才来学校的吗？"
+        ]
+    },
+    "hidden_nurse_d3_choice1_a": {
+        "name": "保健老师",
+        "text": "我想我可以讲一次。这也是我自己需要理清的故事。"
+    },
+    "hidden_nurse_d3_choice1_b": {
+        "name": "保健老师",
+        "text": "没关系。我不会讲细节。"
+    },
+    "hidden_nurse_d3_choice1_c": {
+        "name": "保健老师",
+        "text": "我不是因为讨厌才逃走的。没那么简单。"
+    },
+    "hidden_nurse_d3_6": {
+        "name": "保健老师",
+        "text": "在大学医院，好几个呼叫铃同时响起时，我脑子里只想着先去哪一个。很多时候，病人的话还没说完，我就得匆匆赶走。"
+    },
+    "hidden_nurse_d3_6_b": {
+        "name": "保健老师",
+        "text": "*保健老师放下杯子。杯子下面洇开了一圈水渍。*"
+    },
+    "hidden_nurse_d3_6_c": {
+        "name": "保健老师",
+        "text": "我觉得自己撑不下去了。"
+    },
+    "hidden_nurse_d3_6_d": {
+        "name": "保健老师",
+        "text": "*她一边收起听诊器，一边在打开笔记本抽屉之前把手缩了回来。*"
+    },
+    "hidden_nurse_d3_6_e": {
+        "name": "保健老师",
+        "text": "有过。有一位病人，我没能救回来。十七岁。这就是我来到这里的原因。"
+    },
+    "hidden_nurse_d3_6_f": {
+        "name": "{name}",
+        "text": "*我想起了昨天那本淡绿色的笔记本。那封停在第一页的信。*"
+    },
+    "hidden_nurse_d3_7": {
+        "name": "保健老师",
+        "text": "所以我来了这里。在学校，你可以真正好好地看每一个人。"
+    },
+    "hidden_nurse_d3_7_b": {},
+    "hidden_nurse_d3_8": {
+        "name": "保健老师",
+        "text": "把你真正能做到的告诉别人。不要许诺一切都没事，然后事后独自苦撑。你可以求助。"
+    },
+    "hidden_nurse_d3_8_b": {
+        "name": "{name}",
+        "text": "*纸杯的一侧沿着她手指的形状塌陷下去。*"
+    },
+    "hidden_nurse_d3_8_c": {
+        "name": "{name}",
+        "text": "谢谢老师。"
+    },
+    "hidden_nurse_d3_8_d": {
+        "name": "保健老师",
+        "text": "如果这些重得难以承受，就别自己扛着。需要的话，我可以帮你联系心理咨询中心。"
+    },
+    "hidden_nurse_d3_8_e": {
+        "name": "{name}",
+        "text": "*我把印有心理咨询中心电话的资料卡折好，放进口袋。*"
+    },
+    "hidden_nurse_d3_8_f": {
+        "name": "{name}",
+        "text": "*我站起来，握住门把手。身后的抽屉被拉开时，我在脑海里浮现出那本淡绿色笔记本的一角。*"
+    },
+    "hidden_nurse_d3_8_g": {
+        "name": "{name}",
+        "text": "*我用指甲把翘起的创可贴一端按平。晃动的帘子外，我能看见写着“保健老师”的铭牌。*"
+    },
+    "hidden_nurse_d3_8_h": {
+        "name": "{name}",
+        "text": "*我松开门把手，转过身。敞开的抽屉里，传来纸张折叠的声音。*"
+    },
+    "hidden_nurse_d3_choice2": {
+        "name": "保健老师",
+        "text": "*保健老师关上了抽屉。我站在门边，斟酌着措辞。*",
+        "choices": [
+            "您是因为这个才离开医院的吗？",
+            "您愿意再多说一些吗？",
+            "全部告诉我，您不会觉得轻松一点吗？"
+        ]
+    },
+    "hidden_nurse_d3_choice2_a": {
+        "name": "保健老师",
+        "text": "嗯。要是再待下去，我怕自己的手会在另一位病人面前发抖。"
+    },
+    "hidden_nurse_d3_choice2_b": {
+        "name": "保健老师",
+        "text": "嗯。我只说我承受得了的部分。"
+    },
+    "hidden_nurse_d3_choice2_c": {
+        "name": "保健老师",
+        "text": "说话的人才能决定说出来有没有帮助——而不是不停追问的听者。"
+    },
+    "hidden_nurse_d3_9": {
+        "name": "保健老师",
+        "text": "欢迎你来这里。但我不能保证一个人就能替你解决所有事情。"
+    },
+    "hidden_nurse_d3_9_b": {
+        "name": "{name}",
+        "text": "*她放下纸杯，从口袋里又拿出那张资料卡。*"
+    },
+    "hidden_nurse_d3_9_c": {
+        "name": "保健老师",
+        "text": "如果你的处境变得更艰难，我会和你们班主任或心理咨询中心一起帮你。"
+    },
+    "hidden_nurse_d3_9_d": {
+        "name": "保健老师",
+        "text": "而在那之前，由你和我一起决定，告诉谁、告诉多少。"
+    },
+    "hidden_nurse_d3_9_e": {
+        "name": "{name}",
+        "text": "*保健老师把咨询预约表推到桌子前面。*"
+    },
+    "hidden_nurse_d3_9_f": {
+        "name": "{name}",
+        "text": "*表上并排列着保健室和心理咨询中心的时间。她圈出了一个空档。*"
+    },
+    "hidden_nurse_d3_11": {
+        "name": "保健老师",
+        "text": "离上课还有一点时间。你还想问什么，都可以问。"
+    },
+    "hidden_nurse_d3_freetalk": {
+        "name": "保健老师",
+        "text": "*她把帘子拉上一半，拖过一把椅子。*先咨询，玩笑晚点再开。",
+        "context": "第三天。学生因人际关系变得复杂，来保健室接受正式咨询，保健老师分享了自己在大学医院经历倦怠的经验。她把自己的经历和学生的负担分开。",
+        "personality": "保健老师是位经验丰富的医护人员，有随和的幽默感。她可以谈论自己的倦怠，却不会让学生对她的恢复负责，并保持专业界限。"
+    },
+    "morning3_date_seo_1": {
+        "name": "书妍",
+        "text": "这个周末你有空吗？我们一起去公园吧。"
+    },
+    "morning3_date_seo_choice": {
+        "name": "书妍",
+        "text": "*书妍站在教室门口问道。多因水瓶盖上转动的手停住了。*",
+        "choices": [
+            "好啊。几点？",
+            "我可能会有点忙。",
+            "你是学生会长。我当然会为你腾出时间。",
+            "要是没有别人来，我就把日程腾出来。"
+        ]
+    },
+    "morning3_date_seo_accept": {
+        "name": "{name}",
+        "text": "*我和书妍定下了周末的约。她还没来得及关上教室门，多因就走到了我的课桌前。*"
+    },
+    "morning3_date_seo_accept_b": {
+        "name": "{name}",
+        "text": "*我回到教室。上完一节课，又到了短暂的课间。*"
+    },
+    "morning3_date_seo_decline": {
+        "name": "{name}",
+        "text": "*我拒绝了书妍的邀请，多因又开始转起水瓶盖。*"
+    },
+    "morning3_date_seo_decline_b": {
+        "name": "{name}",
+        "text": "*我回到教室。上完一节课，又到了短暂的课间。*"
+    },
+    "morning3_date_dain_1": {
+        "name": "多因",
+        "text": "那就轮到我了。这个周末去游戏厅玩玩怎么样？又不是只有会长才能约你。"
+    },
+    "morning3_date_dain_2": {
+        "name": "多因",
+        "text": "*多因敲了敲我的课桌边缘。透过敞开的教室门，我能看到书妍在整理文件。*"
+    },
+    "morning3_date_dain_choice": {
+        "name": "多因",
+        "text": "*多因凑得更近，等着我的回答。*",
+        "choices": [
+            "行，去吧",
+            "这个周末可能有点难。",
+            "你这么使劲约，我就去吧。",
+            "要好玩才行，这样就一言为定。"
+        ]
+    },
+    "morning3_date_dain_accept": {
+        "name": "{name}",
+        "text": "*我和多因定下了周末的安排。她咧嘴笑的时候，书妍在门外合上了写字板。*"
+    },
+    "morning3_date_dain_decline": {
+        "name": "多因",
+        "text": "哦，是吗？你忙的话也没办法啦！该不会是因为会长先约的吧？"
+    },
+    "morning3_date_dain_decline_narr": {
+        "name": "多因",
+        "text": "*她带着灿烂的笑容走开了。铃响之前，她用手指在口袋内侧点了一下。*"
+    },
+    "morning3_date_dain_decline_inner_2": {
+        "name": "{name}",
+        "text": "*多因回到座位后，只剩下铃响前的教室。*"
+    },
+    "morning3_date_yuna_1": {
+        "name": "{name}",
+        "text": "*午休前，由娜在我桌上放了一张折起来的纸条。书妍和多因同时看向她的手。*"
+    },
+    "morning3_date_yuna_1_b": {
+        "name": "书妍",
+        "text": "由娜。用纸条约人，别人就听不见了。"
+    },
+    "morning3_date_yuna_2": {
+        "name": "{name}",
+        "text": "*“周末。二手书店。就算你已经有安排了，想来也可以来。——由娜”*"
+    },
+    "morning3_date_yuna_choice": {
+        "name": "{name}",
+        "text": "*我读纸条的时候，由娜看了看书妍，又看了看多因。这一次，她没有躲到书后面。*",
+        "choices": [
+            "在纸条背面写上“我去”",
+            "在纸条背面写上“这个周末我去不了”",
+            "在纸条上写：“如果你不想一个人去，我陪你。”",
+            "在纸条上写：“只要对其他人保密，我就去。”"
+        ]
+    },
+    "morning3_date_yuna_accept": {
+        "name": "{name}",
+        "text": "*我把答案写在背面，把纸条还回去。由娜读了读，折好，塞进书里。*"
+    },
+    "morning3_date_yuna_decline": {
+        "name": "{name}",
+        "text": "*我把答案写在纸条背面，放在她的书上。由娜把书签夹进去，然后读了那句话。*"
+    },
+    "morning3_check_multiple": {},
+    "morning3_multi_from_seo": {},
+    "morning3_multi_from_dain": {},
+    "morning3_set_multiple": {
+        "name": "{name}",
+        "text": "*我周末的约撞在了一起。我合上日历，还没决定该先告诉谁。*"
+    },
+    "morning3_multi_from_yuna": {},
+    "morning3_end": {
+        "name": "{name}",
+        "text": "*下课铃响了。午休就要开始了。*"
+    },
+    "morning3_end_b": {},
+    "morning3_gate_none_1": {
+        "name": "{name}",
+        "text": "*校门口没有人在等。迟到铃先响了。*"
+    },
+    "morning3_seo_gate_neg_1": {
+        "name": "书妍",
+        "text": "*她从我身边走过，连名牌都没有看一眼。*"
+    },
+    "morning3_seo_gate_neg_2": {
+        "name": "{name}",
+        "text": "*书妍的鞋子先消失在了校门里。*"
+    },
+    "morning3_yuna_gate_neg_1": {
+        "name": "{name}",
+        "text": "*由娜在我们视线相遇之前转过头，走进了校门。没有纸条。*"
+    },
+    "morning3_dain_gate_neg_1": {
+        "name": "多因",
+        "text": "*她和朋友们一起跑了进去，没有朝这边看。*"
+    },
+    "morning3_dain_gate_neg_2": {
+        "name": "{name}",
+        "text": "*直到多因的书包消失在拐角，才有人打招呼。*"
+    },
+    "morning3_date_seo_skip": {},
+    "morning3_date_dain_skip": {},
+    "morning3_date_yuna_skip": {},
+    "morning3_date_seo_neg": {
+        "name": "书妍",
+        "text": "*她把写字板抱在胸前走过。*周末的日程只在群里发。不要单独来问。"
+    },
+    "morning3_date_dain_neg": {
+        "name": "多因",
+        "text": "*她把包的拉链一直拉到底。*这个周末别打给我。我一个人练。"
+    },
+    "morning3_date_yuna_neg": {
+        "name": "由娜",
+        "text": "*她刚要拿出纸条，又把它放回书页之间。*这个周末，别来找我。"
+    }
+}

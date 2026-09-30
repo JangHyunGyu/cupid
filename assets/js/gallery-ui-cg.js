@@ -84,7 +84,8 @@ class CGRenderer {
                 ja: { title: '登録されているCGはまだありません', desc: 'ゲームを進めて、特別なシーンを集めましょう！' },
                 fr: { title: "Aucun CG d'événement pour le moment", desc: 'Collectionnez les scènes marquantes au fil de votre partie !' },
                 de: { title: 'Noch keine Event-CGs', desc: 'Sammle besondere Momente beim Spielen!' },
-                pt: { title: 'Ainda não há CGs de eventos', desc: 'Colecione momentos especiais enquanto joga!' }
+                pt: { title: 'Ainda não há CGs de eventos', desc: 'Colecione momentos especiais enquanto joga!' },
+                zh: { title: '还没有活动CG', desc: '边玩边收集特别的瞬间吧！' }
             }[this.ui.lang] || { title: 'No event CGs yet', desc: 'Collect special moments as you play!' };
 
             this.gridEl.innerHTML = `
@@ -112,7 +113,7 @@ class CGRenderer {
                     </div>
                     <div class="card-info">
                         <h4>${cg.name}</h4>
-                        <p>${unlocked ? cg.character : ({ ko: '미해금', en: 'Locked', es: 'Bloqueado', ja: '未解放', fr: 'Verrouillé', de: 'Gesperrt', pt: 'Bloqueado' }[this.ui.lang] || 'Locked')}</p>
+                        <p>${unlocked ? cg.character : ({ ko: '미해금', en: 'Locked', es: 'Bloqueado', ja: '未解放', fr: 'Verrouillé', de: 'Gesperrt', pt: 'Bloqueado', zh: '未解锁' }[this.ui.lang] || 'Locked')}</p>
                     </div>
                 </div>
             `;
@@ -140,7 +141,7 @@ class CGRenderer {
      * @param {string} cgId - CG ID
      */
     showLockPopup(cgId) {
-        const L = (ko, en, es, ja, fr, de, pt) => ({ ko, en, es, ja, fr, de, pt })[this.ui.lang] || en;
+        const L = (ko, en, es, ja, fr, de, pt, zh) => ({ ko, en, es, ja, fr, de, pt, zh })[this.ui.lang] || en;
 
         // CG별 해금 힌트 가져오기
         const cgList = GalleryData.getCGList(this.ui.lang);
@@ -152,11 +153,12 @@ class CGRenderer {
             'ゲーム本編でこのイベントを迎えると解放されます。',
             'Vivez cet événement dans le jeu !',
             'Erlebe dieses Event im Spiel!',
-            'Experimente este evento no jogo!'
+            'Experimente este evento no jogo!',
+            '请在游戏中亲身体验这个事件！'
         );
 
         this.ui.showUnlockPopup({
-            title: L('CG 미해금', 'CG Locked', 'CG bloqueado', '未解放のCG', 'CG verrouillé', 'CG gesperrt', 'CG bloqueado'),
+            title: L('CG 미해금', 'CG Locked', 'CG bloqueado', '未解放のCG', 'CG verrouillé', 'CG gesperrt', 'CG bloqueado', 'CG未解锁'),
             message: L(
                 `이 이벤트 CG는 아직 해금되지 않았습니다.<br><br><span class="condition-line">💕 해금 조건: ${hint}</span>`,
                 `This event CG is not yet unlocked.<br><br><span class="condition-line">💕 Condition: ${hint}</span>`,
@@ -164,7 +166,8 @@ class CGRenderer {
                 `このイベントCGはまだ解放されていません。<br><br><span class="condition-line">💕 解放条件：${hint}</span>`,
                 `Ce CG d'événement n'est pas encore débloqué.<br><br><span class="condition-line">💕 Condition : ${hint}</span>`,
                 `Dieses Event-CG ist noch nicht freigeschaltet.<br><br><span class="condition-line">💕 Bedingung: ${hint}</span>`,
-                `Este CG de evento ainda não foi desbloqueado.<br><br><span class="condition-line">💕 Condição: ${hint}</span>`
+                `Este CG de evento ainda não foi desbloqueado.<br><br><span class="condition-line">💕 Condição: ${hint}</span>`,
+                `这张活动CG尚未解锁。<br><br><span class="condition-line">💕 解锁条件：${hint}</span>`
             ),
             icon: '🖼️'
         });
@@ -227,7 +230,8 @@ class CGRenderer {
             ja: '閉じる',
             fr: 'Fermer',
             de: 'Schließen',
-            pt: 'Fechar'
+            pt: 'Fechar',
+            zh: '关闭'
         }[this.ui.lang] || 'Close';
 
         // 모달 외부 클릭 시 닫기

@@ -850,7 +850,8 @@ html[lang="ja"] #message,
 html[lang="en"] #message,
 html[lang="fr"] #message,
 html[lang="de"] #message,
-html[lang="pt"] #message {
+html[lang="pt"] #message,
+html[lang^="zh"] #message {
     word-break: normal;
 }
 
@@ -2274,7 +2275,8 @@ html[lang="ja"] .modal-content p,
 html[lang="en"] .modal-content p,
 html[lang="fr"] .modal-content p,
 html[lang="de"] .modal-content p,
-html[lang="pt"] .modal-content p {
+html[lang="pt"] .modal-content p,
+html[lang^="zh"] .modal-content p {
     word-break: normal;
 }
 
@@ -2722,4 +2724,22 @@ html[lang="pt"] .modal-content p {
         animation: none;
         transform: translateY(0);
     }
+}
+
+/* 简体中文: CJK 폰트 스택과 줄바꿈 (keep-all은 한국어 전용) */
+html[lang^="zh"] {
+    --font-stack: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+}
+
+html[lang^="zh"],
+html[lang^="zh"] body,
+html[lang^="zh"] button,
+html[lang^="zh"] input,
+html[lang^="zh"] textarea,
+html[lang^="zh"] select {
+    font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+}
+
+html[lang^="zh"] .choice-btn {
+    word-break: normal;
 }

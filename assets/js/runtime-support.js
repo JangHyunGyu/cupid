@@ -42,7 +42,8 @@
         es: ['Actualiza tu navegador', 'Este navegador no puede ejecutar el juego. Actualiza el navegador y el sistema operativo de tu dispositivo. Si no puedes actualizarlos, abre el juego en otro dispositivo.'],
         fr: ['Mise à jour du navigateur nécessaire', 'Ce navigateur ne peut pas lancer le jeu. Mettez à jour votre navigateur et le système de votre appareil. Si aucune mise à jour n’est disponible, ouvrez le jeu sur un autre appareil.'],
         de: ['Browser-Update erforderlich', 'Dieser Browser kann das Spiel nicht ausführen. Aktualisiere deinen Browser und das Betriebssystem deines Geräts. Wenn keine Updates verfügbar sind, öffne das Spiel auf einem anderen Gerät.'],
-        pt: ['Atualize seu navegador', 'Este navegador não consegue executar o jogo. Atualize o navegador e o sistema operacional do dispositivo. Se não houver atualizações disponíveis, abra o jogo em outro dispositivo.']
+        pt: ['Atualize seu navegador', 'Este navegador não consegue executar o jogo. Atualize o navegador e o sistema operacional do dispositivo. Se não houver atualizações disponíveis, abra o jogo em outro dispositivo.'],
+        zh: ['需要更新浏览器', '当前浏览器无法运行本游戏。请把浏览器和设备的操作系统更新到最新版本。如果无法更新，请换一台设备打开游戏。']
     };
 
     function showNotice() {

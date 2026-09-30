@@ -27,14 +27,15 @@ for (const relativePath of [
 }
 context.FLAG_MEMORIES = context.window.FLAG_MEMORIES;
 
-const languages = ['en', 'es', 'ja', 'fr', 'de', 'pt'];
+const languages = ['en', 'es', 'ja', 'fr', 'de', 'pt', 'zh'];
 const stablePromptBudgets = {
     en: { main: 8800, gallery: 8400 },
     es: { main: 9100, gallery: 8600 },
     ja: { main: 6600, gallery: 5500 },
     fr: { main: 9200, gallery: 8950 },
     de: { main: 9200, gallery: 8850 },
-    pt: { main: 9000, gallery: 8500 }
+    pt: { main: 9000, gallery: 8500 },
+    zh: { main: 7000, gallery: 7000 }
 };
 const unnamedPlayerGuardByLanguage = {
     en: 'saved name when present',
@@ -42,7 +43,8 @@ const unnamedPlayerGuardByLanguage = {
     ja: '保存された名前がある時だけ',
     fr: 'prénom seulement s’il est enregistré',
     de: 'Namen nur, wenn er im Status gespeichert ist',
-    pt: 'nome apenas se estiver salvo'
+    pt: 'nome apenas se estiver salvo',
+    zh: '只有状态里保存了名字时才叫名字'
 };
 const characters = ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse'];
 const promptKeys = {
@@ -66,6 +68,16 @@ const sharedCastLabels = {
     Teacher: 'Homeroom Teacher',
     Nurse: 'School Nurse'
 };
+const sharedCastLabelsZh = {
+    Seoyeon: '书妍',
+    Yuna: '由娜',
+    Dain: '多因',
+    Teacher: '班主任',
+    Nurse: '保健老师'
+};
+function castLabel(lang, key) {
+    return lang === 'zh' ? sharedCastLabelsZh[key] : sharedCastLabels[key];
+}
 const galleryIds = {
     Seoyeon: 'seyoun',
     Yuna: 'yuna',
@@ -93,7 +105,8 @@ const languageSignals = {
     ja: /[\u3040-\u30ff\u4e00-\u9fff]/u,
     fr: /[àâçéèêëîïôùûüœ’]/i,
     de: /[äöüß]|\b(?:ich|du|dein|heute)\b/i,
-    pt: /[ãõáéíóúçêô]/i
+    pt: /[ãõáéíóúçêô]/i,
+    zh: /[\u4e00-\u9fff]/u
 };
 const adultVocalizationSignals = {
     en: '[Voice in an Adult Scene]',
@@ -101,7 +114,8 @@ const adultVocalizationSignals = {
     ja: '[成人向け場面の声]',
     fr: '[Voix dans une scène adulte]',
     de: '[Stimme in einer Erwachsenenszene]',
-    pt: '[Voz em uma cena adulta]'
+    pt: '[Voz em uma cena adulta]',
+    zh: '[成人场景中的声音]'
 };
 const detailedAdultNarrationSignals = {
     en: 'Only after a sex act between adults has actually begun',
@@ -109,7 +123,8 @@ const detailedAdultNarrationSignals = {
     ja: '成人同士の性行為が実際に始まった後だけ',
     fr: 'Seulement après qu’un acte sexuel entre adultes a réellement commencé',
     de: 'Erst nachdem ein Sexakt zwischen Erwachsenen tatsächlich begonnen hat',
-    pt: 'Só depois que um ato sexual entre adultos tiver começado de fato'
+    pt: 'Só depois que um ato sexual entre adultos tiver começado de fato',
+    zh: '只有在成年人之间的性行为真正开始之后'
 };
 const emotionalRangeSignals = {
     en: '[Emotional Range and Aftermath]',
@@ -117,7 +132,8 @@ const emotionalRangeSignals = {
     ja: '[感情の振れ幅と余韻]',
     fr: '[Amplitude et retombée émotionnelles]',
     de: '[Emotionale Spannweite und Nachwirkung]',
-    pt: '[Amplitude e consequência emocional]'
+    pt: '[Amplitude e consequência emocional]',
+    zh: '[情绪的起伏与余波]'
 };
 const emotionalContinuitySignals = {
     en: 'Carry the state into the next turn.',
@@ -125,7 +141,8 @@ const emotionalContinuitySignals = {
     ja: '次のターンにも状態を引き継ぎます。',
     fr: 'Gardez cet état au tour suivant.',
     de: 'Der Zustand gilt im nächsten Zug weiter.',
-    pt: 'Mantenha esse estado no turno seguinte.'
+    pt: 'Mantenha esse estado no turno seguinte.',
+    zh: '把这个状态带到下一回合。'
 };
 const livingInitiativeSignals = {
     en: '[Living Initiative]',
@@ -133,7 +150,8 @@ const livingInitiativeSignals = {
     ja: '[生きた人物としての主体性]',
     fr: '[Initiative d’un personnage vivant]',
     de: '[Eigeninitiative einer lebendigen Figur]',
-    pt: '[Iniciativa de uma pessoa viva]'
+    pt: '[Iniciativa de uma pessoa viva]',
+    zh: '[鲜活的人物主动性]'
 };
 const consensualAdultRoleplaySignals = {
     en: '[Consensual Adult Roleplay]',
@@ -141,7 +159,8 @@ const consensualAdultRoleplaySignals = {
     ja: '[成人同士で合意したロールプレイ]',
     fr: '[Jeu de rôle consensuel entre adultes]',
     de: '[Einvernehmliches Rollenspiel unter Erwachsenen]',
-    pt: '[Roleplay consensual entre adultos]'
+    pt: '[Roleplay consensual entre adultos]',
+    zh: '[成年人之间经同意的角色扮演]'
 };
 const consensualAdultSafetySignals = {
     en: ['safeword', 'never create blanket consent'],
@@ -149,7 +168,8 @@ const consensualAdultSafetySignals = {
     ja: ['合意したセーフワード', '包括的な同意にはなりません'],
     fr: ['mot de sécurité convenu', 'ne constituent jamais un consentement général'],
     de: ['vereinbartes Safeword', 'begründen niemals eine pauschale Zustimmung'],
-    pt: ['palavra de segurança combinada', 'nunca constituem consentimento geral']
+    pt: ['palavra de segurança combinada', 'nunca constituem consentimento geral'],
+    zh: ['约定好的安全词', '绝不构成概括性的同意']
 };
 const briefContinuationSignals = {
     en: '[The Latest Input Is a Brief Continue Signal]',
@@ -157,7 +177,8 @@ const briefContinuationSignals = {
     ja: '[最新の入力は短い続行の合図]',
     fr: '[Le dernier message est un bref signal pour continuer]',
     de: '[Die letzte Eingabe ist ein kurzes Weitersignal]',
-    pt: '[A última entrada é um breve sinal para continuar]'
+    pt: '[A última entrada é um breve sinal para continuar]',
+    zh: '[这次输入只是一个简短的继续信号]'
 };
 const removedEditorPressure = [
     'answer in polished target-language prose',
@@ -244,7 +265,8 @@ const freeTalkPressureByLanguage = {
     ja: /短いやり取り中心|短いやりとり中心|感嘆符が多い|心を開くと文が長くなる|文が短くなる|言葉を濁したり行動で逸らす|返答が短くなり|クリップボード|メモや栞|折ったり開いたり|リストガード|唯一の防衛機制|感嘆符が減れば|トーン[：:]/,
     fr: /échanges courts|beaucoup de points d'exclamation|ses phrases s'allongent|ses phrases raccourcissent|détourne avec des actions|réponses raccourcissent|porte-documents|plier et déplier|protège-poignet|Moins de points d'exclamation signifient|\bTon\s*:/i,
     de: /kurzen Wechseln|viele Ausrufezeichen|Sätze länger|kürzeren Sätzen|lenkt mit Handlungen ab|Antworten werden kürzer|Klemmbrett|falten und aufzufalten|Handgelenkbandage|Weniger Ausrufezeichen bedeuten|\bTon:/i,
-    pt: /trocas curtas|usa muitas exclamações|frases ficam mais longas|frases mais curtas|evita com ações|respostas ficam mais curtas|prancheta|dobrar e desdobrar|munhequeira|Menos exclamações significam|\bTom:/i
+    pt: /trocas curtas|usa muitas exclamações|frases ficam mais longas|frases mais curtas|evita com ações|respostas ficam mais curtas|prancheta|dobrar e desdobrar|munhequeira|Menos exclamações significam|\bTom:/i,
+    zh: /只聊玩笑和简短|只限于玩笑|感叹号|句子变长|句子变短|用动作(?:回避|岔开)|回答变短|写字板|剪贴板|折起再展开|手腕护具|唯一的防御|语气：/
 };
 const groupConfrontationSignals = {
     ko: ['직접 해명', '양다리', '가지고 논 건지', '죄책감', '선택받길 바라는 욕망', '물러나거나 양보하지 않는다'],
@@ -253,7 +275,8 @@ const groupConfrontationSignals = {
     ja: ['直接説明', '二股', 'もてあそんだ', '罪悪感', '選ばれたい', '身を引いたり譲ったりしない'],
     fr: ['explication directe', 'jouait sur les deux tableaux', 'joué d’elle', 'culpabilité', 'désir de garder le protagoniste', 'reculer ou céder'],
     de: ['direkte Erklärung', 'zweigleisig', 'mit ihr gespielt', 'Schuld', 'Wunsch, den Protagonisten', 'zieht sie sich nicht zurück'],
-    pt: ['explicação direta', 'levando as duas', 'brincou com ela', 'culpa', 'desejo de ficar com o protagonista', 'recuar ou ceder']
+    pt: ['explicação direta', 'levando as duas', 'brincou com ela', 'culpa', 'desejo de ficar com o protagonista', 'recuar ou ceder'],
+    zh: ['直接质问', '脚踏两条船', '玩弄她', '愧疚', '想留住主角并被他选择', '退缩或让步']
 };
 
 function assert(condition, message) {
@@ -482,7 +505,8 @@ for (const lang of languages) {
             || systemPrompt.includes('性器・挿入・愛液・精液・摩擦・深さと絶頂')
             || systemPrompt.includes('écrivez chatte, bite, pénétration')
             || systemPrompt.includes('Muschi, Schwanz, Penetration')
-            || systemPrompt.includes('escreva buceta, pau, penetração'),
+            || systemPrompt.includes('escreva buceta, pau, penetração')
+            || systemPrompt.includes('小穴、肉棒、插入、湿润、精液、摩擦、深度和高潮'),
             `[${lang}/${char}] main adult camera can still fade established sex into metaphor`);
         assert(systemPrompt.includes(emotionalRangeSignals[lang]),
             `[${lang}/${char}] main prompt is missing the emotional-range rule`);
@@ -490,7 +514,7 @@ for (const lang of languages) {
             `[${lang}/${char}] main stable prompt lost persistence of the character's chosen state`);
         assert(systemPrompt.includes(livingInitiativeSignals[lang]),
             `[${lang}/${char}] main prompt is missing living initiative`);
-        assert((systemPrompt.match(/\[Living Initiative\]|\[Iniciativa de una persona viva\]|\[生きた人物としての主体性\]|\[Initiative d’un personnage vivant\]|\[Eigeninitiative einer lebendigen Figur\]|\[Iniciativa de uma pessoa viva\]/g) || []).length === 1,
+        assert((systemPrompt.match(/\[Living Initiative\]|\[Iniciativa de una persona viva\]|\[生きた人物としての主体性\]|\[Initiative d’un personnage vivant\]|\[Eigeninitiative einer lebendigen Figur\]|\[Iniciativa de uma pessoa viva\]|\[鲜活的人物主动性\]/g) || []).length === 1,
             `[${lang}/${char}] main prompt duplicates living initiative`);
         assert(systemPrompt.includes('Scene input:') && systemPrompt.includes('Perspective:'),
             `[${lang}/${char}] main prompt does not separate scene input from perspective`);
@@ -511,11 +535,11 @@ for (const lang of languages) {
         const sharedCastKnowledge = context.window.getCupidSharedCastKnowledge(lang, char, data);
         assert(systemPrompt.includes(sharedCastKnowledge),
             `[${lang}/${char}] main prompt does not contain the complete shared cast block`);
-        assert(!sharedCastKnowledge.includes(`- ${sharedCastLabels[char]}: `),
+        assert(!sharedCastKnowledge.includes(`- ${castLabel(lang, char)}: `),
             `[${lang}/${char}] main shared cast block redundantly includes the current character`);
         for (const other of characters.filter(candidate => candidate !== char)) {
-            assert(sharedCastKnowledge.includes(`- ${sharedCastLabels[other]}: `),
-                `[${lang}/${char}] main shared cast block is missing ${sharedCastLabels[other]}`);
+            assert(sharedCastKnowledge.includes(`- ${castLabel(lang, other)}: `),
+                `[${lang}/${char}] main shared cast block is missing ${castLabel(lang, other)}`);
         }
         if (char === 'Seoyeon') mainCacheBaseline = systemPrompt;
     }
@@ -688,7 +712,8 @@ for (const lang of languages) {
             || systemPrompt.includes('性器・挿入・愛液・精液・摩擦・深さと絶頂')
             || systemPrompt.includes('écrivez chatte, bite, pénétration')
             || systemPrompt.includes('Muschi, Schwanz, Penetration')
-            || systemPrompt.includes('escreva buceta, pau, penetração'),
+            || systemPrompt.includes('escreva buceta, pau, penetração')
+            || systemPrompt.includes('小穴、肉棒、插入、湿润、精液、摩擦、深度和高潮'),
             `[${lang}/${char}] gallery adult camera can still fade established sex into metaphor`);
         assert(systemPrompt.includes(emotionalRangeSignals[lang]),
             `[${lang}/${char}] gallery prompt is missing the emotional-range rule`);
@@ -705,11 +730,11 @@ for (const lang of languages) {
         const gallerySharedCastKnowledge = context.window.getCupidSharedCastKnowledge(lang, id, data);
         assert(systemPrompt.includes(gallerySharedCastKnowledge),
             `[${lang}/${char}] gallery prompt does not contain the complete shared cast block`);
-        assert(!gallerySharedCastKnowledge.includes(`- ${sharedCastLabels[char]}: `),
+        assert(!gallerySharedCastKnowledge.includes(`- ${castLabel(lang, char)}: `),
             `[${lang}/${char}] gallery shared cast block redundantly includes the current character`);
         for (const other of characters.filter(candidate => candidate !== char)) {
-            assert(gallerySharedCastKnowledge.includes(`- ${sharedCastLabels[other]}: `),
-                `[${lang}/${char}] gallery shared cast block is missing ${sharedCastLabels[other]}`);
+            assert(gallerySharedCastKnowledge.includes(`- ${castLabel(lang, other)}: `),
+                `[${lang}/${char}] gallery shared cast block is missing ${castLabel(lang, other)}`);
         }
         if (char === 'Seoyeon') galleryCacheBaseline = systemPrompt;
     }
@@ -896,7 +921,7 @@ assert(typeof recoverQualityFallback === 'function', 'Cupid roleplay quality fal
 for (const [lang, text] of [
     ['ko', '그녀는 빛나는 별을 가리켰다.'], ['ko', '나라의 오래된 지도를 살폈다.'],
     ['ko', '나가는 길에 소리를 내는 새를 보았다.'], ['ko', '학교 내 복도는 조용했다.'],
-    ['es', 'Ella dejó su taza sobre la mesa.'], ['pt', 'Ela colocou sua xícara na mesa.']
+    ['es', 'Ella dejó su taza sobre la mesa.'], ['pt', 'Ela colocou sua xícara na mesa.'], ['zh', '她把杯子放在了桌子上。']
 ]) {
     for (const legacy of [false, true]) {
         const parsed = legacy ? { text: `*${text}*` } : { text, segments: [{ type: 'narration', text }] };
@@ -957,7 +982,8 @@ const groupNamesByLanguage = {
     ja: ['ソヨン', 'ダイン'],
     fr: ['Seoyeon', 'Dain'],
     de: ['Seoyeon', 'Dain'],
-    pt: ['Seoyeon', 'Dain']
+    pt: ['Seoyeon', 'Dain'],
+    zh: ['书妍', '多因']
 };
 for (const lang of languages) {
     const [leadName, tempterName] = groupNamesByLanguage[lang];

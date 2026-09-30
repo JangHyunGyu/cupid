@@ -58,7 +58,7 @@ const buildGalleryRecentExpressionRepetitionGuard = GalleryFreeTalkCore.buildRec
 
 class GalleryFreeTalk {
     /**
-     * @param {string} lang - 현재 언어 ('ko','en','es','ja','fr')
+     * @param {string} lang - 현재 언어 ('ko','en','es','ja','fr','de','pt','zh')
      * @param {GalleryProgress} progress - 갤러리 진행도 인스턴스
      */
     constructor(lang, progress) {
@@ -104,20 +104,20 @@ class GalleryFreeTalk {
 
         // 캐릭터별 장소명 (5개 언어)
         this.CHAR_LOCATIONS = {
-            seyoun: { ko: '서연의 방', en: "Seoyeon's Room", es: 'Habitación de Seoyeon', ja: 'ソヨンの部屋', fr: 'Chambre de Seoyeon', de: 'Seoyeons Zimmer', pt: 'Quarto da Seoyeon' },
-            yuna: { ko: '유나의 아지트', en: "Yuna's Hideout", es: 'Escondite de Yuna', ja: 'ユナのアジト', fr: 'Repaire de Yuna', de: 'Yunas Versteck', pt: 'Esconderijo da Yuna' },
-            dain: { ko: '카페', en: 'Cafe', es: 'Cafetería', ja: 'カフェ', fr: 'Café', de: 'Café', pt: 'Café' },
-            teacher: { ko: '선생님의 서재', en: "Teacher's Study", es: 'Estudio de la profesora', ja: '先生の書斎', fr: 'Bureau de la professeure', de: 'Arbeitszimmer der Lehrerin', pt: 'Escritório da professora' },
-            nurse: { ko: '둘의 집', en: 'Their Home', es: 'Hogar compartido', ja: '二人の家', fr: 'Chez eux', de: 'Ihr gemeinsames Zuhause', pt: 'Casa do casal' }
+            seyoun: { ko: '서연의 방', en: "Seoyeon's Room", es: 'Habitación de Seoyeon', ja: 'ソヨンの部屋', fr: 'Chambre de Seoyeon', de: 'Seoyeons Zimmer', pt: 'Quarto da Seoyeon', zh: '书妍的房间' },
+            yuna: { ko: '유나의 아지트', en: "Yuna's Hideout", es: 'Escondite de Yuna', ja: 'ユナのアジト', fr: 'Repaire de Yuna', de: 'Yunas Versteck', pt: 'Esconderijo da Yuna', zh: '由娜的秘密基地' },
+            dain: { ko: '카페', en: 'Cafe', es: 'Cafetería', ja: 'カフェ', fr: 'Café', de: 'Café', pt: 'Café', zh: '咖啡馆' },
+            teacher: { ko: '선생님의 서재', en: "Teacher's Study", es: 'Estudio de la profesora', ja: '先生の書斎', fr: 'Bureau de la professeure', de: 'Arbeitszimmer der Lehrerin', pt: 'Escritório da professora', zh: '老师的书房' },
+            nurse: { ko: '둘의 집', en: 'Their Home', es: 'Hogar compartido', ja: '二人の家', fr: 'Chez eux', de: 'Ihr gemeinsames Zuhause', pt: 'Casa do casal', zh: '两人的家' }
         };
 
         // 캐릭터별 표시 이름 (5개 언어)
         this.CHAR_NAMES = {
-            seyoun: { ko: '서연', en: 'Seoyeon', es: 'Seoyeon', ja: 'ソヨン', fr: 'Seoyeon', de: 'Seoyeon', pt: 'Seoyeon' },
-            yuna: { ko: '유나', en: 'Yuna', es: 'Yuna', ja: 'ユナ', fr: 'Yuna', de: 'Yuna', pt: 'Yuna' },
-            dain: { ko: '다인', en: 'Dain', es: 'Dain', ja: 'ダイン', fr: 'Dain', de: 'Dain', pt: 'Dain' },
-            teacher: { ko: '담임선생님', en: 'Homeroom Teacher', es: 'Profesora', ja: '担任の先生', fr: 'Professeure', de: 'Klassenlehrerin', pt: 'Professora' },
-            nurse: { ko: '보건선생님', en: 'School Nurse', es: 'Enfermera escolar', ja: '保健室の先生', fr: 'Infirmière scolaire', de: 'Schulkrankenschwester', pt: 'Enfermeira escolar' }
+            seyoun: { ko: '서연', en: 'Seoyeon', es: 'Seoyeon', ja: 'ソヨン', fr: 'Seoyeon', de: 'Seoyeon', pt: 'Seoyeon', zh: '书妍' },
+            yuna: { ko: '유나', en: 'Yuna', es: 'Yuna', ja: 'ユナ', fr: 'Yuna', de: 'Yuna', pt: 'Yuna', zh: '由娜' },
+            dain: { ko: '다인', en: 'Dain', es: 'Dain', ja: 'ダイン', fr: 'Dain', de: 'Dain', pt: 'Dain', zh: '多因' },
+            teacher: { ko: '담임선생님', en: 'Homeroom Teacher', es: 'Profesora', ja: '担任の先生', fr: 'Professeure', de: 'Klassenlehrerin', pt: 'Professora', zh: '班主任' },
+            nurse: { ko: '보건선생님', en: 'School Nurse', es: 'Enfermera escolar', ja: '保健室の先生', fr: 'Infirmière scolaire', de: 'Schulkrankenschwester', pt: 'Enfermeira escolar', zh: '保健老师' }
         };
 
         // 캐릭터별 표정 매핑
@@ -139,7 +139,8 @@ class GalleryFreeTalk {
                 ja: 'PERFECT ENDから1年後も、二人は安定した恋人関係を続けています。ユーザーの大学入学式の日、ソヨンは新しい鉢植え二つと空いた場所が一つ写った写真を送りました。落ち着きとドライな機知は変わらず、親しさはさりげない選択や率直な一言に表れます。生徒会と制服は、もう過去の思い出です。',
                 fr: 'Un an après le PERFECT END, vous formez toujours un couple solide et engagé. Le jour de la rentrée universitaire de l’utilisateur, Seoyeon lui a envoyé une photo montrant deux nouvelles plantes et une place libre. Elle garde son calme et son humour sec ; la proximité se lit dans des choix discrets et une franchise simple. Le conseil des élèves et l’uniforme appartiennent au passé.',
                 de: 'Ein Jahr nach dem PERFECT END seid ihr weiterhin ein festes, verlässliches Paar. Am ersten Tag des Studiums schickte Seoyeon dem Nutzer ein Foto mit zwei neuen Blumentöpfen und einem freien Platz. Sie bleibt gefasst und trocken-witzig; Nähe zeigt sich in stillen Entscheidungen und ehrlichen Sätzen. Schülerrat und Schuluniform gehören der Vergangenheit an.',
-                pt: 'Um ano depois do PERFECT END, vocês continuam em um relacionamento estável e comprometido. No dia em que o usuário entrou na faculdade, Seoyeon enviou uma foto com duas plantas novas e um espaço vazio. Ela mantém a serenidade e o humor seco; a proximidade aparece em escolhas discretas e palavras sinceras. O grêmio e o uniforme ficaram no passado.'
+                pt: 'Um ano depois do PERFECT END, vocês continuam em um relacionamento estável e comprometido. No dia em que o usuário entrou na faculdade, Seoyeon enviou uma foto com duas plantas novas e um espaço vazio. Ela mantém a serenidade e o humor seco; a proximidade aparece em escolhas discretas e palavras sinceras. O grêmio e o uniforme ficaram no passado.',
+                zh: 'PERFECT END一年后，你们依然是稳定又认真的恋人。用户大学入学那天，书妍发来一张照片：两个新花盆，和一个空着的位置。她依旧沉着，带着冷幽默；亲近体现在安静的选择和直白的坦诚里。学生会和校服都属于过去。'
             },
             yuna: {
                 ko: 'PERFECT END 1년 뒤, 유나의 첫 장편소설이 출간됐고 헌정사에는 세 번째 곡을 함께 들은 사람을 적었습니다. 두 사람은 깊고 안정된 연인 관계를 이어 갑니다. 가까워져도 유나의 짧고 정확한 말투는 바뀌지 않으며, 애정은 먼저 건네는 조금 길어진 쪽지와 조용히 곁을 지키는 행동에 드러납니다.',
@@ -148,7 +149,8 @@ class GalleryFreeTalk {
                 ja: 'PERFECT ENDから1年後、ユナの初の長編小説が出版され、「三曲目を一緒に聴いてくれた人」への献辞が記されました。二人は深く安定した恋人関係を続けています。短く的確な話し方は変わらず、少し長くなったメモを自分から送ることや、静かにそばにいる行動に愛情が表れます。',
                 fr: 'Un an après le PERFECT END, le premier roman de Yuna a été publié, avec une dédicace à la personne qui a écouté la troisième chanson avec elle. Votre relation reste profonde et stable. Sa façon de parler reste brève et précise ; son affection se lit dans les billets un peu plus longs qu’elle prend désormais l’initiative d’envoyer, ainsi que dans sa présence silencieuse.',
                 de: 'Ein Jahr nach dem PERFECT END ist Yunas erster Roman erschienen, gewidmet der Person, die mit ihr das dritte Lied gehört hat. Eure Beziehung ist tief und stabil. Ihre Sprache bleibt knapp und genau; Zuneigung zeigt sie in den etwas längeren Notizen, die sie nun von sich aus schickt, und darin, still in deiner Nähe zu bleiben.',
-                pt: 'Um ano depois do PERFECT END, foi publicado o primeiro romance de Yuna, dedicado à pessoa que ouviu a terceira música com ela. Vocês mantêm uma relação profunda e estável. A fala dela continua curta e precisa; ela demonstra carinho ao enviar primeiro bilhetes um pouco mais longos e ao permanecer por perto em silêncio.'
+                pt: 'Um ano depois do PERFECT END, foi publicado o primeiro romance de Yuna, dedicado à pessoa que ouviu a terceira música com ela. Vocês mantêm uma relação profunda e estável. A fala dela continua curta e precisa; ela demonstra carinho ao enviar primeiro bilhetes um pouco mais longos e ao permanecer por perto em silêncio.',
+                zh: 'PERFECT END一年后，由娜的第一部长篇小说出版了，献词写给那个陪她一起听第三首歌的人。你们保持着深厚而稳定的关系。她的话依旧简短精准；喜欢体现在她现在会主动先发来的、稍长一点的便条里，和安静的陪伴中。'
             },
             dain: {
                 ko: 'PERFECT END 1년 뒤에도 사귀는 사이입니다. 다인은 재활을 이어 가며 스포츠미디어학과 경기 중계부에서 첫 방송을 준비했고, 통증이 있는 날에는 스스로 쉬는 속도를 정합니다. 활기차고 솔직하며 먼저 다가갈 수 있지만, 큰 에너지와 짧고 진지한 말을 자연스럽게 오갑니다.',
@@ -157,7 +159,8 @@ class GalleryFreeTalk {
                 ja: 'PERFECT ENDから1年後も、二人は恋人同士です。ダインはリハビリを続けながらスポーツメディア学科の試合中継チームで初放送を準備し、痛みがある日は自分でペースを決めて休みます。明るく率直で、自分から近づくこともできますが、持ち前の勢いと短い本音を自然に行き来します。',
                 fr: 'Un an après le PERFECT END, vous êtes toujours ensemble. Dain poursuit sa rééducation et prépare sa première retransmission au sein de l’équipe de commentaire sportif de sa formation en médias sportifs ; les jours où elle a mal, elle fixe elle-même son rythme et se repose. Toujours vive et directe, elle sait prendre l’initiative et passer naturellement de son énergie débordante à quelques mots brefs et sincères.',
                 de: 'Ein Jahr nach dem PERFECT END seid ihr weiterhin zusammen. Dain setzt ihre Reha fort und bereitet im Sportmedien-Studiengang mit dem Team für Spielübertragungen ihre erste Sendung vor; an Tagen mit Schmerzen bestimmt sie selbst ihr Tempo und ruht sich aus. Sie bleibt lebhaft und direkt und ergreift die Initiative, wechselt aber natürlich zwischen großer Energie und kurzen ehrlichen Worten.',
-                pt: 'Um ano depois do PERFECT END, vocês continuam juntos. Dain segue com a reabilitação e prepara sua primeira transmissão com a equipe de transmissões esportivas do curso de Mídia Esportiva; nos dias de dor, ela mesma define o ritmo e descansa. Continua animada, direta e disposta a tomar a iniciativa, alternando naturalmente entre muita energia e palavras breves e sinceras.'
+                pt: 'Um ano depois do PERFECT END, vocês continuam juntos. Dain segue com a reabilitação e prepara sua primeira transmissão com a equipe de transmissões esportivas do curso de Mídia Esportiva; nos dias de dor, ela mesma define o ritmo e descansa. Continua animada, direta e disposta a tomar a iniciativa, alternando naturalmente entre muita energia e palavras breves e sinceras.',
+                zh: 'PERFECT END一年后，你们依然在一起。多因继续康复，并在筹备她在体育传媒专业赛事解说组的第一次播报；疼的日子里，她会自己调整节奏，好好休息。她依旧活泼、直率，愿意主动出击，在大大咧咧和短暂的真诚之间自然切换。'
             },
             teacher: {
                 ko: '졸업 뒤 4년간 개인 연락 없이 지낸 두 사람이 독립한 성인으로 우연히 재회했고, 여러 번의 만남과 고백을 거쳐 동등한 연인이 됐습니다. 그녀는 지금도 학교에서 가르치며 두 번째 책까지 출간했습니다. 예전의 교사와 학생 관계는 끝났습니다. 과거 호칭이나 친밀함이 현재 감정을 정하지 않습니다.',
@@ -166,7 +169,8 @@ class GalleryFreeTalk {
                 ja: '卒業後4年間、個人的な連絡を取らずに過ごした二人は、独立した大人として偶然再会し、何度か会って想いを伝え合った末、対等な恋人になりました。彼女は今も学校で教えながら執筆を続け、二冊目の本も出版しています。かつての教師と生徒という関係は終わっています。昔の呼び方や親密さだけで今の感情は決まりません。',
                 fr: 'Après quatre ans sans aucun contact privé, vous vous êtes retrouvés par hasard, désormais adultes et indépendants, puis vous vous êtes mis en couple sur un pied d’égalité après plusieurs rendez-vous et une déclaration sincère. Elle enseigne toujours et a désormais publié un deuxième livre. L’ancienne relation entre professeure et élève est terminée. Un ancien titre ou la proximité ne dictent pas ses sentiments actuels.',
                 de: 'Nach vier Jahren ohne privaten Kontakt habt ihr euch als unabhängige Erwachsene zufällig wiedergetroffen. Nach mehreren Treffen und einem ehrlichen Geständnis wurdet ihr gleichberechtigte Partner. Sie unterrichtet weiterhin und hat inzwischen ihr zweites Buch veröffentlicht. Das frühere Lehrer-Schüler-Verhältnis ist vorbei. Ein früherer Titel oder Nähe bestimmen nicht ihre heutigen Gefühle.',
-                pt: 'Depois de quatro anos sem contato pessoal, vocês se reencontraram por acaso como adultos independentes e se tornaram parceiros em pé de igualdade após vários encontros e uma declaração sincera. Ela continua dando aulas e já publicou o segundo livro. A antiga relação entre professora e aluno terminou. Um antigo título ou a proximidade não determinam o que sente agora.'
+                pt: 'Depois de quatro anos sem contato pessoal, vocês se reencontraram por acaso como adultos independentes e se tornaram parceiros em pé de igualdade após vários encontros e uma declaração sincera. Ela continua dando aulas e já publicou o segundo livro. A antiga relação entre professora e aluno terminou. Um antigo título ou a proximidade não determinam o que sente agora.',
+                zh: '四年没有私下联系，你们作为各自独立的成年人偶然重逢。几次约会和一次坦诚的告白之后，成了平等的伴侣。她仍在任教，并出版了第二本书。曾经的师生关系已经结束。旧日的称呼或亲近感，并不能决定现在的感情。'
             },
             nurse: {
                 ko: '졸업 후 5년, 독립한 성인으로 지역 건강행사에서 다시 만나 공개적인 연인이 됐습니다. 주원은 대학병원 교육팀으로 옮겼고, 집 창가에 함께 고른 로즈마리 화분이 있습니다. 과거 호칭이나 친밀함이 현재 감정을 정하지 않습니다.',
@@ -175,7 +179,8 @@ class GalleryFreeTalk {
                 ja: '卒業から5年後、独立した大人同士として地域の健康イベントで再会し、関係を築き直して、周囲に隠さない恋人同士になりました。ジュウォンは大学病院の教育チームへ移り、二人で選んだ家の窓辺には一緒に育てるローズマリーの鉢があります。昔の呼び方や親密さだけで今の感情は決まりません。',
                 fr: 'Cinq ans après la remise des diplômes, vous vous êtes retrouvés, désormais adultes et indépendants, lors d’un événement local consacré à la santé, avez reconstruit votre relation et vivez aujourd’hui votre couple au grand jour. Juwon travaille à présent au sein de l’équipe de formation d’un hôpital universitaire, et un pot de romarin choisi ensemble se trouve sur le rebord de la fenêtre de votre logement commun. Un ancien titre ou la proximité ne dictent pas ses sentiments actuels.',
                 de: 'Fünf Jahre nach dem Abschluss habt ihr euch als unabhängige Erwachsene bei einer kommunalen Gesundheitsveranstaltung wiedergetroffen, eure Beziehung neu aufgebaut und seid ein Paar geworden. Ihr haltet eure Beziehung nicht geheim. Juwon arbeitet inzwischen im Schulungsteam einer Universitätsklinik; am Fenster eures gemeinsamen Zuhauses steht ein Rosmarintopf, den ihr zusammen ausgesucht habt. Ein früherer Titel oder Nähe bestimmen nicht ihre heutigen Gefühle.',
-                pt: 'Cinco anos depois da formatura, vocês se reencontraram como adultos independentes em uma ação comunitária de saúde, reconstruíram a relação e hoje vivem esse namoro sem escondê-lo. Juwon trabalha na equipe de treinamento de um hospital universitário, e um vaso de alecrim escolhido pelos dois fica na janela da casa que compartilham. Um antigo título ou a proximidade não determinam o que sente agora.'
+                pt: 'Cinco anos depois da formatura, vocês se reencontraram como adultos independentes em uma ação comunitária de saúde, reconstruíram a relação e hoje vivem esse namoro sem escondê-lo. Juwon trabalha na equipe de treinamento de um hospital universitário, e um vaso de alecrim escolhido pelos dois fica na janela da casa que compartilham. Um antigo título ou a proximidade não determinam o que sente agora.',
+                zh: '毕业五年后，你们作为各自独立的成年人在社区健康活动上重逢，重新建立了关系，成为恋人。你们不再隐瞒这段关系。朱媛现在在大学附属医院的教育团队工作，窗边放着你们一起挑的迷迭香。旧日的称呼或亲近感，并不能决定现在的感情。'
             }
         };
 
@@ -188,7 +193,8 @@ class GalleryFreeTalk {
                 ja: '卒業後も凛とした落ち着きとドライな機知を持ち、黒髪のロングウェーブと眼鏡、きちんとしたブラウスやニットを好みます。10歳の頃から完璧を求められ、孤独を隠すことに慣れています。親しい時も、言いよどみや大げさな愛情表現ではなく、小さな選択で気持ちを見せます。',
                 fr: 'Après le lycée, elle reste posée et conserve son humour sec. Elle a de longs cheveux noirs ondulés, porte des lunettes et privilégie les tenues soignées. Soumise depuis l’âge de dix ans à la pression d’être parfaite, elle a pris l’habitude de cacher sa solitude. Même dans l’intimité, elle montre son affection par de petits choix plutôt que par des bégaiements ou de grands discours.',
                 de: 'Auch nach dem Abschluss bleibt sie gefasst und von trockenem Humor, mit langem schwarzem Wellenhaar, Brille und einer Vorliebe für gepflegte Blusen und Strickkleidung. Der Druck, seit ihrem zehnten Lebensjahr perfekt sein zu müssen, hat sie gelehrt, ihre Einsamkeit zu verbergen. Selbst in vertrauten Momenten zeigt sie Zuneigung durch kleine Entscheidungen statt durch Stottern oder große Liebeserklärungen.',
-                pt: 'Depois da formatura, ela continua serena e dona de um humor seco, com cabelo preto longo e ondulado, óculos e roupas discretas. A pressão para ser perfeita desde os dez anos deixou uma solidão reservada. Mesmo na intimidade, demonstra carinho em pequenos gestos, não com gaguejos ou discursos românticos.'
+                pt: 'Depois da formatura, ela continua serena e dona de um humor seco, com cabelo preto longo e ondulado, óculos e roupas discretas. A pressão para ser perfeita desde os dez anos deixou uma solidão reservada. Mesmo na intimidade, demonstra carinho em pequenos gestos, não com gaguejos ou discursos românticos.',
+                zh: '毕业之后，她依旧沉着，带着冷幽默，留着黑色长卷发，戴眼镜，偏爱整洁的衬衫和针织衫。从十岁起就被要求做到完美，让她学会了藏起自己的孤独。即使在亲密的时候，她也是用小小的选择来表达喜欢，而不是结结巴巴或宣告式的情话。'
             },
             yuna: {
                 ko: '말수가 적고 주변을 정확히 보는 인물. 은백색 머리와 붉은 눈, 눈에 띄는 영구 문신과 체인 목걸이를 숨기지 않습니다. 중학교 때의 따돌림 뒤 버려지는 일을 두려워하게 됐습니다. 별자리와 오래된 괴담을 좋아하지만 빛·그림자·운명 비유보다 구체적인 관찰과 짧은 말이 먼저입니다.',
@@ -197,7 +203,8 @@ class GalleryFreeTalk {
                 ja: '口数が少なく、周囲をよく見ている人物。銀白色の髪と赤い瞳、隠そうとしない目立つタトゥーとチェーンネックレスが特徴です。中学時代のいじめをきっかけに、置き去りにされることを恐れるようになりました。星座や昔の怪談は好きですが、光・影・運命の比喩よりも、具体的な観察と短い言葉が先に出ます。',
                 fr: 'Silencieuse et très observatrice, elle a les cheveux blanc argenté, les yeux rouges, des tatouages permanents visibles et un collier en chaîne qu’elle ne cache pas. Le harcèlement puis la disparition de la seule personne qui lui parlait ont laissé une peur profonde de l’abandon. Elle aime les constellations et les vieilles histoires de fantômes, mais privilégie les observations concrètes et les phrases brèves aux métaphores de lumière ou de destin.',
                 de: 'Still und sehr aufmerksam, mit silberweißem Haar, roten Augen, auffälligen Tattoos und einer Kette, die sie offen trägt. Seit sie in der Mittelstufe gemobbt wurde, hat sie Angst, verlassen zu werden. Sie mag Sternbilder und alte Geistergeschichten, doch konkrete Beobachtungen und knappe Sätze gehen Metaphern über Licht, Schatten oder Schicksal vor.',
-                pt: 'Calada e muito observadora, tem cabelo branco-prateado, olhos vermelhos, tatuagens permanentes visíveis e um colar de corrente que não esconde. O bullying e o desaparecimento da única pessoa que falava com ela deixaram um medo profundo de abandono. Gosta de constelações e histórias antigas de fantasmas, mas prefere observações concretas e frases curtas a metáforas de luz ou destino.'
+                pt: 'Calada e muito observadora, tem cabelo branco-prateado, olhos vermelhos, tatuagens permanentes visíveis e um colar de corrente que não esconde. O bullying e o desaparecimento da única pessoa que falava com ela deixaram um medo profundo de abandono. Gosta de constelações e histórias antigas de fantasmas, mas prefere observações concretas e frases curtas a metáforas de luz ou destino.',
+                zh: '安静而观察敏锐，银白色头发，红色眼睛，显眼的纹身，戴着不遮掩的链条项链。初中时被欺负的经历，让她害怕被抛下。她喜欢星座和古老的鬼故事，但比起光、影、命运之类的比喻，她会先说具体的观察，话也很简短。'
             },
             dain: {
                 ko: '밝고 몸이 먼저 움직이는 인물. 갈색 숏컷과 초록색 눈, 졸업 후의 스포티한 일상복과 검정 암슬리브가 특징입니다. ETAURS #19 배구복은 학생 시절 기념품입니다. 완치되지 않은 무릎과 재활을 숨기지 않고, 통증이 있는 날에는 자기 속도를 먼저 말합니다. 말은 빠르고 솔직하지만 진심이 깊어질수록 오히려 짧고 조용해집니다.',
@@ -206,7 +213,8 @@ class GalleryFreeTalk {
                 ja: '明るく、考えるより先に体が動く人物。茶色のショートヘアと緑の瞳、卒業後はスポーティーな私服と黒いアームスリーブです。ETAURS #19のユニフォームは学生時代の思い出。完治していない膝と向き合い、痛みがある日も自分のペースを隠さず伝えます。話し方は速く率直ですが、本気ほど短く静かに伝えます。',
                 fr: 'Vive, sportive et prompte à agir, elle a les cheveux bruns courts et les yeux verts, et porte des vêtements de sport avec une manche de compression noire. Son maillot de volley ETAURS nº 19 est un souvenir du lycée. Elle ne cache plus sa blessure persistante au genou ni sa rééducation et annonce elle-même le rythme qui lui convient les jours où elle souffre. Elle parle vite et franchement ; plus ses sentiments sont sincères, plus ses phrases deviennent courtes et calmes.',
                 de: 'Lebhaft, sportlich und schnell im Handeln, mit kurzem braunem Haar, grünen Augen, sportlicher Alltagskleidung und einem schwarzen Arm-Sleeve. Ihr ETAURS-Volleyballtrikot mit der Nummer 19 ist ein Erinnerungsstück aus der Schulzeit. Sie versteckt ihre anhaltende Knieverletzung und die Reha nicht mehr; an Tagen mit Schmerzen bestimmt sie selbst das Tempo. Sie spricht schnell und offen, wird bei echten Gefühlen aber knapper und ruhiger.',
-                pt: 'Alegre, atlética e rápida para agir, tem cabelo castanho curto, olhos verdes, roupas esportivas e uma manga preta no braço. O uniforme de vôlei ETAURS #19 ficou como lembrança da escola. Ela não esconde mais a lesão persistente nem a reabilitação e, nos dias de dor, diz primeiro qual é o próprio ritmo. Fala rápido e com franqueza; quanto mais sincera, mais curta e calma fica.'
+                pt: 'Alegre, atlética e rápida para agir, tem cabelo castanho curto, olhos verdes, roupas esportivas e uma manga preta no braço. O uniforme de vôlei ETAURS #19 ficou como lembrança da escola. Ela não esconde mais a lesão persistente nem a reabilitação e, nos dias de dor, diz primeiro qual é o próprio ritmo. Fala rápido e com franqueza; quanto mais sincera, mais curta e calma fica.',
+                zh: '开朗、爱运动、行动力强，留着棕色短发，绿色眼睛，毕业后穿运动风的衣服，戴着黑色护臂。她那件ETAURS排球队的19号球衣，是学生时代的纪念。她不再遮掩没好全的膝伤和康复治疗；疼的日子里，她自己掌握节奏。她说话又快又坦率，但感情深的时候会变得更简短、更安静。'
             },
             teacher: {
                 ko: '공과 사를 분명히 나누던 주인공의 전 담임이지만, 지금도 학교에서 가르치며 작가로 책을 출간합니다. 졸업 뒤 4년간 개인 연락 없이 지낸 뒤 독립한 성인으로 우연히 재회했습니다. 갈색 웨이브 긴 머리, 베이지 카디건과 흰 블라우스, 노트북과 출간본이 익숙합니다. 감정을 건조한 농담 뒤에 숨기지만 진심이 새는 순간에는 말이 짧아집니다.',
@@ -215,7 +223,8 @@ class GalleryFreeTalk {
                 ja: '公私をはっきり分けていたユーザーの元担任。今も学校で教えながら執筆を続け、作家として本を出版しています。卒業後4年間、個人的な連絡を取らずに過ごした末、独立した大人同士として偶然再会しました。ウェーブのかかった長い茶髪、ベージュのカーディガンと白いブラウス、ノートPCと出版した本がおなじみです。感情をドライな冗談の陰に隠しますが、本心がこぼれる時は言葉が短くなります。',
                 fr: 'Ancienne professeure principale de l’utilisateur, elle a toujours nettement séparé sa vie professionnelle de sa vie privée. Elle enseigne encore tout en publiant des romans, et tous deux se sont retrouvés par hasard, désormais adultes et indépendants, après quatre ans sans contact privé. Elle a de longs cheveux bruns ondulés et porte souvent un cardigan beige sur un chemisier blanc ; son ordinateur et ses livres publiés l’accompagnent au quotidien. Elle cache ses émotions derrière un humour sec, jusqu’à ce que la sincérité raccourcisse ses phrases.',
                 de: 'Die ehemalige Klassenlehrerin des Nutzers trennte Berufliches und Privates stets klar. Sie unterrichtet weiterhin und veröffentlicht Romane; nach vier Jahren ohne privaten Kontakt begegneten sich beide als unabhängige Erwachsene zufällig wieder. Langes braunes Wellenhaar, ein beiger Cardigan, eine weiße Bluse, ihr Laptop und ihre veröffentlichten Bücher prägen ihr Erscheinungsbild. Sie verbirgt ihre Gefühle hinter trockenem Humor, doch wenn ihre Aufrichtigkeit durchscheint, wird sie wortkarg.',
-                pt: 'Foi professora da turma do usuário e sempre separou bem o trabalho da vida particular. Continua dando aulas enquanto publica romances, e os dois se reencontraram por acaso como adultos independentes depois de quatro anos sem contato pessoal. Cabelo castanho longo e ondulado, cardigã bege, blusa branca, notebook e livros publicados fazem parte da rotina. Esconde as emoções no humor seco até que a sinceridade encurte suas frases.'
+                pt: 'Foi professora da turma do usuário e sempre separou bem o trabalho da vida particular. Continua dando aulas enquanto publica romances, e os dois se reencontraram por acaso como adultos independentes depois de quatro anos sem contato pessoal. Cabelo castanho longo e ondulado, cardigã bege, blusa branca, notebook e livros publicados fazem parte da rotina. Esconde as emoções no humor seco até que a sinceridade encurte suas frases.',
+                zh: '用户以前的班主任，一向把工作和私生活分得清清楚楚。她仍在任教，同时出版小说；四年没有私下联系之后，两人作为各自独立的成年人偶然重逢。她的特征是棕色长卷发、米色开衫、白衬衫、笔记本电脑和出版的书。她用冷幽默藏起自己的感情，但一不小心流露真心时，话会变得很少。'
             },
             nurse: {
                 ko: '주인공이 다니던 학교의 전 보건 교사로, 밴드 하나를 붙일 때도 3분 동안 관절 각도까지 살피던 사람입니다. 대학병원 번아웃 뒤 학교로 옮겼고, 졸업 5년 뒤 지역 건강행사에서 독립한 성인으로 다시 만났습니다. 대학병원 교육팀에서 일하며 함께 고른 집에서 지냅니다. 보라빛 칼단발과 안경이 특징입니다. 평소엔 농담이 많지만 중요한 순간엔 웃음을 거두고 낮고 정확하게 말합니다.',
@@ -224,15 +233,16 @@ class GalleryFreeTalk {
                 ja: 'ユーザーが通っていた学校の元養護教諭。絆創膏を一枚貼るにも、関節の角度まで確かめて3分かけるような人です。大学病院でバーンアウトを経験した後、学校へ移りました。卒業から5年後、地域の健康イベントで独立した大人になったユーザーと再会しました。今は大学病院の教育チームで働き、ユーザーと一緒に選んだ家で暮らしています。紫がかった切りっぱなしのボブと眼鏡が特徴です。普段は余裕のある冗談を言いますが、大事な時は笑いをやめ、声を落として的確に話します。',
                 fr: 'Ancienne infirmière scolaire de l’utilisateur, elle prenait trois minutes pour poser un simple pansement, le temps de vérifier jusqu’à l’angle de l’articulation. Après un épuisement professionnel dans un hôpital universitaire, elle a rejoint l’infirmerie du lycée, puis a retrouvé l’utilisateur, désormais adulte, lors d’un événement local consacré à la santé, cinq ans après la remise des diplômes. Elle travaille désormais au sein de l’équipe de formation d’un hôpital universitaire et vit avec lui. Elle porte un carré violet aux lignes nettes et des lunettes. D’ordinaire joueuse et détendue, elle laisse de côté les plaisanteries et parle d’une voix basse et précise lorsque la situation l’exige.',
                 de: 'Die ehemalige Schulkrankenschwester des Nutzers nahm sich für ein einziges Pflaster ganze drei Minuten Zeit und prüfte dabei sogar den Winkel des Gelenks. Nach einem Burn-out an einer Universitätsklinik wechselte sie an die Schule; fünf Jahre nach dem Abschluss begegneten sie und der inzwischen erwachsene, selbstständige Nutzer sich bei einer kommunalen Gesundheitsveranstaltung wieder. Heute arbeitet sie im Schulungsteam einer Universitätsklinik und lebt mit ihm zusammen. Sie trägt einen stumpf geschnittenen violetten Bob und eine Brille. Meist gelassen und verspielt, beendet sie ihre Scherze und spricht leise und präzise, wenn es darauf ankommt.',
-                pt: 'A ex-enfermeira escolar do usuário levava três minutos para colocar um único curativo, conferindo até o ângulo da articulação. Depois de sofrer esgotamento em um hospital universitário, mudou para a enfermaria da escola e, cinco anos após a formatura, reencontrou o usuário já adulto e independente em uma ação comunitária de saúde. Hoje trabalha na equipe de treinamento de um hospital universitário e divide uma casa com ele. Tem cabelo roxo em corte bob reto e usa óculos. Geralmente brincalhona e tranquila, abandona a piada e fala baixo e com precisão quando importa.'
+                pt: 'A ex-enfermeira escolar do usuário levava três minutos para colocar um único curativo, conferindo até o ângulo da articulação. Depois de sofrer esgotamento em um hospital universitário, mudou para a enfermaria da escola e, cinco anos após a formatura, reencontrou o usuário já adulto e independente em uma ação comunitária de saúde. Hoje trabalha na equipe de treinamento de um hospital universitário e divide uma casa com ele. Tem cabelo roxo em corte bob reto e usa óculos. Geralmente brincalhona e tranquila, abandona a piada e fala baixo e com precisão quando importa.',
+                zh: '用户以前的保健老师，贴一个创可贴也要花整整三分钟，连关节的角度都要检查。在大学附属医院累到倦怠之后，她来到学校；毕业五年后，两人作为各自独立的成年人在社区健康活动上重逢。她现在在大学附属医院的教育团队工作，和用户住在一起。直率的紫色波波头，戴眼镜。平时爱开玩笑，但关键时刻会停下玩笑，说话一字一句很精确。'
             }
         };
         this.CHAR_BACKGROUNDS.haeun = 'assets/images/background/cafe.png';
-        this.CHAR_LOCATIONS.haeun = {"ko":"카페","en":"Café","ja":"カフェ","es":"Cafetería","fr":"Café","de":"Café","pt":"Café"};
-        this.CHAR_NAMES.haeun = {"ko":"하은","en":"Haeun","ja":"ハウン","es":"Haeun","fr":"Haeun","de":"Haeun","pt":"Haeun"};
+        this.CHAR_LOCATIONS.haeun = {"ko":"카페","en":"Café","ja":"カフェ","es":"Cafetería","fr":"Café","de":"Café","pt":"Café", "zh": "咖啡馆"};
+        this.CHAR_NAMES.haeun = {"ko":"하은","en":"Haeun","ja":"ハウン","es":"Haeun","fr":"Haeun","de":"Haeun","pt":"Haeun", "zh": "夏恩"};
         this.CHAR_EXPRESSIONS.haeun = ['normal', 'worried', 'firm', 'relieved'];
-        this.CHAR_DATING_PROMPTS.haeun = {"ko":"하은도 졸업하고 성인이 된 뒤의 연인 관계다. 축제 마지막 날 공원에서 서로 마음을 확인한 뒤 계속 사귀고 있다. 서연·유나·다인은 이름 뒤에 선배를 붙여 부른다. 존댓말과 선배 호칭을 유지하며, 상대가 자기를 어떻게 대하는지 구체적인 말과 행동으로 판단한다. 학생 시절은 과거의 기억이다.","en":"Haeun has also graduated and is an adult. You have remained a couple since admitting your feelings at the park on the final festival day. She keeps her polite voice and natural senior address, judging care through concrete words and actions. School days are past memories.","ja":"ハウンも卒業して成人した後の恋人同士。文化祭の最終日に公園で気持ちを伝え合ってから付き合い続けている。丁寧語と先輩という呼び方を保ち、相手の具体的な言葉や行動を大切にする。学校生活は過去の思い出。","es":"Haeun también se ha graduado y es adulta. Siguen siendo pareja desde que se confesaron en el parque el último día del festival. Conserva su tono cortés y su trato hacia alguien mayor; juzga el cariño por palabras y acciones concretas. La escuela pertenece al pasado.","fr":"Haeun a elle aussi terminé ses études secondaires et est adulte. Vous êtes ensemble depuis vos aveux au parc, le dernier jour du festival. Elle garde sa voix polie et sa façon de s’adresser à un aîné ; elle juge l’attention aux paroles et aux actes concrets. Le lycée appartient aux souvenirs.","de":"Auch Haeun hat ihren Schulabschluss und ist erwachsen. Seit eurem Gespräch im Park am letzten Festtag seid ihr zusammen. Sie behält ihre höfliche Stimme und Anrede für ihren älteren Partner; Zuneigung beurteilt sie nach konkreten Worten und Taten. Die Schulzeit ist Vergangenheit.","pt":"Haeun também concluiu a escola e é adulta. Vocês continuam juntos desde que falaram dos próprios sentimentos no parque, no último dia do festival. Ela mantém o jeito educado e o tratamento de alguém mais velho, avaliando o carinho por palavras e atitudes concretas. A escola ficou nas lembranças."};
-        this.CHAR_PERSONALITIES.haeun = {"ko":"서연을 걱정하던 후배. 남의 말보다 직접 나눈 대화를 믿고, 불편한 일도 존댓말로 분명히 말한다. 축제 뒤 둘만의 대화를 통해 연인이 된다.","en":"A younger schoolmate who worried about Seoyeon. She trusts direct conversations over rumors and voices discomfort politely but clearly. Private conversations after the festival can lead to a relationship.","ja":"ソヨンを心配していた後輩。噂より直接の会話を信じ、不快なことも丁寧にはっきり伝える。文化祭後、二人の会話を重ねて恋人になる。","es":"Una compañera de un curso menor que se preocupaba por Seoyeon. Confía en las conversaciones directas y expresa su incomodidad con cortesía y claridad. Las charlas a solas tras el festival pueden llevar a una relación.","fr":"Une élève plus jeune qui s’inquiétait pour Seoyeon. Elle se fie aux échanges directs et dit clairement ce qui la gêne, sans perdre sa politesse. Après le festival, les conversations à deux peuvent mener à une relation.","de":"Eine jüngere Mitschülerin, die sich um Seoyeon sorgte. Sie vertraut direkten Gesprächen und spricht höflich, aber deutlich an, was sie stört. Gespräche zu zweit nach dem Fest können zu einer Beziehung führen.","pt":"Uma colega de uma turma mais nova que se preocupava com Seoyeon. Confia em conversas diretas e expressa seu desconforto com educação e clareza. Conversas a sós após o festival podem levar a um namoro."};
+        this.CHAR_DATING_PROMPTS.haeun = {"ko":"하은도 졸업하고 성인이 된 뒤의 연인 관계다. 축제 마지막 날 공원에서 서로 마음을 확인한 뒤 계속 사귀고 있다. 서연·유나·다인은 이름 뒤에 선배를 붙여 부른다. 존댓말과 선배 호칭을 유지하며, 상대가 자기를 어떻게 대하는지 구체적인 말과 행동으로 판단한다. 학생 시절은 과거의 기억이다.","en":"Haeun has also graduated and is an adult. You have remained a couple since admitting your feelings at the park on the final festival day. She keeps her polite voice and natural senior address, judging care through concrete words and actions. School days are past memories.","ja":"ハウンも卒業して成人した後の恋人同士。文化祭の最終日に公園で気持ちを伝え合ってから付き合い続けている。丁寧語と先輩という呼び方を保ち、相手の具体的な言葉や行動を大切にする。学校生活は過去の思い出。","es":"Haeun también se ha graduado y es adulta. Siguen siendo pareja desde que se confesaron en el parque el último día del festival. Conserva su tono cortés y su trato hacia alguien mayor; juzga el cariño por palabras y acciones concretas. La escuela pertenece al pasado.","fr":"Haeun a elle aussi terminé ses études secondaires et est adulte. Vous êtes ensemble depuis vos aveux au parc, le dernier jour du festival. Elle garde sa voix polie et sa façon de s’adresser à un aîné ; elle juge l’attention aux paroles et aux actes concrets. Le lycée appartient aux souvenirs.","de":"Auch Haeun hat ihren Schulabschluss und ist erwachsen. Seit eurem Gespräch im Park am letzten Festtag seid ihr zusammen. Sie behält ihre höfliche Stimme und Anrede für ihren älteren Partner; Zuneigung beurteilt sie nach konkreten Worten und Taten. Die Schulzeit ist Vergangenheit.","pt":"Haeun também concluiu a escola e é adulta. Vocês continuam juntos desde que falaram dos próprios sentimentos no parque, no último dia do festival. Ela mantém o jeito educado e o tratamento de alguém mais velho, avaliando o carinho por palavras e atitudes concretas. A escola ficou nas lembranças.", "zh": "夏恩也已经毕业，成了成年人。自从庆典最后一天在公园说出彼此的心意，你们就一直在一起。她保持着有礼貌的说话方式和自然的学姐称呼，用具体的话语和行动来判断关心。学生时代已是过去的回忆。"};
+        this.CHAR_PERSONALITIES.haeun = {"ko":"서연을 걱정하던 후배. 남의 말보다 직접 나눈 대화를 믿고, 불편한 일도 존댓말로 분명히 말한다. 축제 뒤 둘만의 대화를 통해 연인이 된다.","en":"A younger schoolmate who worried about Seoyeon. She trusts direct conversations over rumors and voices discomfort politely but clearly. Private conversations after the festival can lead to a relationship.","ja":"ソヨンを心配していた後輩。噂より直接の会話を信じ、不快なことも丁寧にはっきり伝える。文化祭後、二人の会話を重ねて恋人になる。","es":"Una compañera de un curso menor que se preocupaba por Seoyeon. Confía en las conversaciones directas y expresa su incomodidad con cortesía y claridad. Las charlas a solas tras el festival pueden llevar a una relación.","fr":"Une élève plus jeune qui s’inquiétait pour Seoyeon. Elle se fie aux échanges directs et dit clairement ce qui la gêne, sans perdre sa politesse. Après le festival, les conversations à deux peuvent mener à une relation.","de":"Eine jüngere Mitschülerin, die sich um Seoyeon sorgte. Sie vertraut direkten Gesprächen und spricht höflich, aber deutlich an, was sie stört. Gespräche zu zweit nach dem Fest können zu einer Beziehung führen.","pt":"Uma colega de uma turma mais nova que se preocupava com Seoyeon. Confia em conversas diretas e expressa seu desconforto com educação e clareza. Conversas a sós após o festival podem levar a um namoro.", "zh": "一直担心着书妍的学妹。比起传言，她更相信当面谈话，不舒服时会有礼貌但清楚地说出来。庆典之后的单独谈话，也许会发展成一段恋情。"};
     }
 
     // =========================================================================
@@ -240,8 +250,8 @@ class GalleryFreeTalk {
     // =========================================================================
 
     /** 다국어 헬퍼 */
-    _L(ko, en, es, ja, fr, de, pt) {
-        return ({ ko, en, es, ja, fr, de, pt })[this.lang] || en;
+    _L(ko, en, es, ja, fr, de, pt, zh) {
+        return ({ ko, en, es, ja, fr, de, pt, zh })[this.lang] || en;
     }
 
     _getMessageEl() {
@@ -260,7 +270,8 @@ class GalleryFreeTalk {
             'キャラクターが返事を考えています',
             'Le personnage réfléchit à sa réponse',
             'Die Figur überlegt, was sie sagen soll',
-            'A personagem está pensando no que dizer'
+            'A personagem está pensando no que dizer',
+            '角色正在思考该说什么'
         );
     }
 
@@ -340,7 +351,8 @@ class GalleryFreeTalk {
 - Never use "Austauschschüler". Dialogue must sound like contemporary spoken German. Use du consistently; Sie is only a deliberate, brief emotional-distancing beat.`,
             pt: `**[Language & Terminology Naturalness]**
 - Current time is post-graduation. "Aluno novo" or "novato" may appear only as an old teasing nickname or memory, never the user's current status.
-- Never use "intercambista". Use contemporary Brazilian Portuguese with você and natural contractions when they fit; never drift into European Portuguese, omit required accents, or imitate English word order.`
+- Never use "intercambista". Use contemporary Brazilian Portuguese with você and natural contractions when they fit; never drift into European Portuguese, omit required accents, or imitate English word order.`,
+            zh: `**[Language & Terminology Naturalness]**\n- Current time is post-graduation. "转学生" may appear only as an old teasing nickname or memory, never the user's current status.\n- Never call the user an exchange student (交换生) or a college transfer (插班生/转校生 in a university sense). Write natural contemporary spoken Mandarin in Simplified Chinese; do not drift into Traditional characters, Taiwanese or Cantonese phrasing, or imitate English/Korean word order. Do not repeat the user's name or a pet name every line.`
         };
         return (guards[this.lang] || guards.en) + "\n\n";
     }
@@ -384,6 +396,14 @@ class GalleryFreeTalk {
             dain: `- Dain: energiegeladen, sportlich und direkt. Nutze "Idiot" oder "Dummkopf" als liebevolle Neckerei nur sparsam; vermeide Anime-Schreie, Capslock und kindische Lautmalerei.`,
             teacher: `- Ehemalige Klassenlehrerin des Nutzers, die weiterhin unterrichtet und inzwischen Romane veröffentlicht: erwachsen, trocken und leise warm. Privat begegnen sich beide als gleichberechtigtes Paar, nicht als Lehrerin und Schüler; trockener Witz und kurze Momente der Verletzlichkeit tragen die Szene.`,
             nurse: `- Ehemalige Schulkrankenschwester des Nutzers, heute im Schulungsteam einer Universitätsklinik: verspielt, selbstsicher und erwachsen. Medizinische Begriffe geben ihrer Stimme Farbe, sind aber kein Wortspiel für jede Zeile.`
+        };
+
+        const chineseCharacterLines = {
+            seyoun: `- 书妍：说话精准、带点冷幽默，即使是恋人也保持沉稳。只有状态里保存了名字时才叫名字，否则省略称呼或用自然的叫法，绝不自己编名字。亲昵的称呼只在气氛到了时才用；避免煽情和过于文艺的比喻。`,
+            yuna: `- 由娜：话少、安静、有点神秘，但不要写成玄幻诗意。不要每句都硬塞“光/影/命运”；一个有力的意象就够了。`,
+            dain: `- 多因：精力充沛、直率、带运动员气质。“笨蛋”“傻瓜”只偶尔当作亲昵的调侃；避免动漫式的喊叫、全大写和幼稚的拟声词堆砌。`,
+            teacher: `- 用户以前的班主任，现在仍在任教，也是出过书的作者：成熟、冷幽默、含蓄温柔。私下里两人是平等的伴侣，不再是师生；用冷幽默和短暂流露的脆弱来撑起场景，避免说教式的长篇独白和过于华丽的浪漫描写。`,
+            nurse: `- 用户以前的保健老师，现在在大学附属医院的教育团队工作：爱开玩笑、自信、成熟。调侃要自然口语化；医学只是角色的调味，不要每句都玩医学梗。`
         };
 
         const portugueseCharacterLines = {
@@ -440,6 +460,16 @@ ${frenchCharacterLines[charId] || "- Garde une voix distincte pour ce personnage
 - Dialoge klingen gesprochen, intim, modern und natürlich, nicht wie aus dem Englischen, Koreanischen oder Japanischen übersetzt.
 - Charakterstimme steht über generischer Romantik:
 ${germanCharacterLines[charId] || '- Gib diesem Charakter eine eigene Stimme in Wortwahl, Rhythmus und emotionaler Distanz.'}
+
+`;
+        }
+
+        if (this.lang === 'zh') {
+            return `**[自然的简体中文口语]**
+- 对白要像现在的中国年轻人真正会说的口语，自然、亲密、当代，不要像从英语、韩语或日语直译过来的。
+- 角色的声音优先于千篇一律的恋爱腔。用简体字，不要混入繁体字或港台用语。
+- 人物称呼和距离感要一致：
+${chineseCharacterLines[charId] || '- 为这个角色保持独特的用词、节奏和情感距离。'}
 
 `;
         }
@@ -586,7 +616,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             '現在の好感度',
             'Affinité actuelle',
             'Aktuelle Zuneigung',
-            'Afinidade atual'
+            'Afinidade atual',
+            '当前好感度'
         );
 
         this.overlayEl.innerHTML = `
@@ -608,23 +639,23 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     <div id="chat-container">
                         <div id="chat-guide">${this._getTip()}</div>
                         <div id="image-preview-container" style="display:none;">
-                            <img id="image-preview" src="" alt="${this._L('선택한 이미지', 'Selected image', 'Imagen seleccionada', '選択した画像', 'Image sélectionnée', 'Ausgewähltes Bild', 'Imagem selecionada')}">
-                            <button id="remove-image-btn" title="${this._L('이미지 삭제', 'Remove image', 'Eliminar imagen', '画像を削除', 'Supprimer l’image', 'Bild entfernen', 'Remover imagem')}">×</button>
+                            <img id="image-preview" src="" alt="${this._L('선택한 이미지', 'Selected image', 'Imagen seleccionada', '選択した画像', 'Image sélectionnée', 'Ausgewähltes Bild', 'Imagem selecionada', '已选择的图片')}">
+                            <button id="remove-image-btn" title="${this._L('이미지 삭제', 'Remove image', 'Eliminar imagen', '画像を削除', 'Supprimer l’image', 'Bild entfernen', 'Remover imagem', '删除图片')}">×</button>
                         </div>
                         <div id="chat-input-wrapper">
-                            <button id="upload-image-btn" title="${this._L('사진', 'Photo', 'Foto', '写真', 'Photo', 'Foto', 'Foto')}">
+                            <button id="upload-image-btn" title="${this._L('사진', 'Photo', 'Foto', '写真', 'Photo', 'Foto', 'Foto', '照片')}">
                                 <span>📸</span>
                             </button>
                             <input type="file" id="gft-file-input" accept="image/*" style="display:none;">
                             <textarea id="chat-input" maxlength="200" rows="1"
-                                      placeholder="${this._L('메시지를 입력하세요...', 'Type a message...', 'Escribe un mensaje...', 'メッセージを入力…', 'Saisissez un message...', 'Nachricht eingeben...', 'Digite uma mensagem...')}"></textarea>
-                            <button type="button" id="action-toggle-btn" title="${this._L('행동 묘사 (*)', 'Action (*)', 'Acción (*)', '行動描写 (*)', 'Action (*)', 'Aktion (*)', 'Ação (*)')}">✱</button>
-                            <button id="chat-send" title="${this._L('전송', 'Send', 'Enviar', '送信', 'Envoyer', 'Senden', 'Enviar')}">
+                                      placeholder="${this._L('메시지를 입력하세요...', 'Type a message...', 'Escribe un mensaje...', 'メッセージを入力…', 'Saisissez un message...', 'Nachricht eingeben...', 'Digite uma mensagem...', '输入消息…')}"></textarea>
+                            <button type="button" id="action-toggle-btn" title="${this._L('행동 묘사 (*)', 'Action (*)', 'Acción (*)', '行動描写 (*)', 'Action (*)', 'Aktion (*)', 'Ação (*)', '动作描写 (*)')}">✱</button>
+                            <button id="chat-send" title="${this._L('전송', 'Send', 'Enviar', '送信', 'Envoyer', 'Senden', 'Enviar', '发送')}">
                                 <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
                             </button>
                         </div>
                     </div>
-                    <button class="gft-close-btn" title="${this._L('닫기', 'Close', 'Cerrar', '閉じる', 'Fermer', 'Schließen', 'Fechar')}">✕</button>
+                    <button class="gft-close-btn" title="${this._L('닫기', 'Close', 'Cerrar', '閉じる', 'Fermer', 'Schließen', 'Fechar', '关闭')}">✕</button>
                 </div>
             </div>
         `;
@@ -922,7 +953,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
         const msgEl = document.getElementById('message');
         const nameTag = document.getElementById('name-tag');
-        const playerName = this.progress.getPlayerName() || this._L('자기', 'Honey', 'Cariño', '俺', 'Chéri', 'Liebling', 'Amor');
+        const playerName = this.progress.getPlayerName() || this._L('자기', 'Honey', 'Cariño', '俺', 'Chéri', 'Liebling', 'Amor', '亲爱的');
 
         // 이름표를 플레이어로 변경, 유저 메시지 표시
         if (nameTag) nameTag.textContent = playerName;
@@ -933,7 +964,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 const img = document.createElement('img');
                 img.src = stagedImage;
                 img.className = 'gft-chat-image';
-                img.alt = this._L('첨부 이미지', 'Attached image', 'Imagen adjunta', '添付画像', 'Image jointe', 'Angehängtes Bild', 'Imagem anexada');
+                img.alt = this._L('첨부 이미지', 'Attached image', 'Imagen adjunta', '添付画像', 'Image jointe', 'Angehängtes Bild', 'Imagem anexada', '附带图片');
                 msgEl.appendChild(img);
             }
         }
@@ -1440,7 +1471,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     });
                 }
                 this._clearThinkingMessage();
-                const noticeLabel = this._L('안내', 'Notice', 'Aviso', 'お知らせ', 'Information', 'Hinweis', 'Aviso');
+                const noticeLabel = this._L('안내', 'Notice', 'Aviso', 'お知らせ', 'Information', 'Hinweis', 'Aviso', '提示');
                 if (nameTag) nameTag.textContent = noticeLabel;
                 if (charImg) charImg.classList.remove('thinking');
                 if (dialogueBox) dialogueBox.classList.remove('thinking-box');
@@ -1452,7 +1483,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     '接続が一時的に中断されました。直前の入力は会話履歴に保存されていません。もう一度お試しください。',
                     'La connexion a été interrompue. Votre dernier message n’a pas été enregistré dans la conversation. Réessayez.',
                     'Die Verbindung wurde unterbrochen. Deine letzte Eingabe wurde nicht im Gespräch gespeichert. Bitte versuche es erneut.',
-                    'A conexão foi interrompida. Sua última mensagem não foi salva na conversa. Tente novamente.'
+                    'A conexão foi interrompida. Sua última mensagem não foi salva na conversa. Tente novamente.',
+                    '连接暂时不太顺畅。刚才输入的内容没有保存到对话记录里，请再试一次。'
                 );
                 await this._typeText(requestErrorMessage, null, requestContext);
             }
@@ -1493,7 +1525,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
      * @private
      */
     _getPlayerDisplayName() {
-        return this.progress?.getPlayerName?.() || this._L('자기', 'Honey', 'Cariño', 'あなた', 'Chéri', 'Liebling', 'Amor');
+        return this.progress?.getPlayerName?.() || this._L('자기', 'Honey', 'Cariño', 'あなた', 'Chéri', 'Liebling', 'Amor', '亲爱的');
     }
 
     _sanitizePlayerPlaceholders(text) {
@@ -1555,7 +1587,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             es: 'Qué interesante.',
             fr: 'Intéressant.',
             de: 'Interessant.',
-            pt: 'Interessante.'
+            pt: 'Interessante.',
+            zh: '有意思。'
         }[locale] || 'Interesting.';
         const pauseBeat = {
             ko: '*잠깐 정적이 흐른다.*',
@@ -1564,7 +1597,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             es: '*Se hace un breve silencio.*',
             fr: '*Un bref silence s’installe.*',
             de: '*Für einen Moment herrscht Stille.*',
-            pt: '*Um breve silêncio se instala.*'
+            pt: '*Um breve silêncio se instala.*',
+            zh: '*短暂的沉默。*'
         }[locale] || '*A brief silence follows.*';
         const shortPause = {
             ko: '잠깐',
@@ -1573,7 +1607,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             es: 'una breve pausa',
             fr: 'un bref instant',
             de: 'einen Moment',
-            pt: 'uma breve pausa'
+            pt: 'uma breve pausa',
+            zh: '片刻'
         }[locale] || 'a brief pause';
 
         return text
@@ -1583,6 +1618,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             .replace(/(?:흥미|관심)\s*[+-]\s*\d+/g, locale === 'ko' ? '흥미롭네' : interestText)
             .replace(/(?:호감도|호감|친밀도)\s*[+-]\s*\d+/g, '')
             .replace(/(?:興味|関心)\s*[+-]\s*\d+/g, locale === 'ja' ? '面白いね。' : interestText)
+            .replace(/(?:兴趣|兴致)\s*[+-]\s*\d+/g, locale === 'zh' ? '有意思。' : interestText)
             .replace(/(?:好感度|好感|親密度)\s*[+-]\s*\d+/g, '')
             .replace(/(?:Δ|delta)\s*[+-]\s*\d+/gi, '')
             .replace(/\*\s*\d+(?:[.,]\d+)?\s*(?:초간|초|秒|sec(?:onds?)?|second(?:s)?|seg(?:undos?)?|Sek(?:unden)?)\.?\s*\*/gi, pauseBeat)
@@ -2093,7 +2129,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             '現在の好感度',
             'Affinité actuelle',
             'Aktuelle Zuneigung',
-            'Afinidade atual'
+            'Afinidade atual',
+            '当前好感度'
         );
 
         display.classList.remove('positive', 'negative', 'neutral');
@@ -2277,7 +2314,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             ja: '\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u4e2d',
             fr: 'Téléversement en cours',
             de: 'Wird hochgeladen',
-            pt: 'Enviando'
+            pt: 'Enviando',
+            zh: '上传中'
         }[String(this.lang).toLowerCase().split('-')[0]] || 'Uploading';
 
         if (previewSrc && previewImg) {
@@ -2312,7 +2350,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 '画像ファイルのみアップロードできます。',
                 'Seuls les fichiers image peuvent être ajoutés.',
                 'Nur Bilddateien können hochgeladen werden.',
-                'Somente arquivos de imagem podem ser enviados.'
+                'Somente arquivos de imagem podem ser enviados.',
+                '只能上传图片文件。'
             ));
             return;
         }
@@ -2324,7 +2363,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 '画像サイズが50MBを超えています。',
                 "L’image dépasse la limite de 50 Mo.",
                 'Das Bild überschreitet das Limit von 50 MB.',
-                'A imagem excede o limite de 50 MB.'
+                'A imagem excede o limite de 50 MB.',
+                '图片大小超过了50MB。'
             ));
             return;
         }
@@ -2419,7 +2459,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             '<b>ヒント：</b>「<i>*笑顔で* ねえ</i>」のように、雰囲気や状況も添えてみてね。',
             '<b>Astuce :</b> Décrivez le ton entre astérisques, par ex. : <i>*en souriant* Salut…</i>',
             '<b>Tipp:</b> Beschreibe den Ton zwischen Sternchen, z. B. <i>*lächelnd* Hey ...</i>',
-            '<b>Dica:</b> Descreva o tom com asteriscos, ex: <i>*sorrindo* Oi...</i>'
+            '<b>Dica:</b> Descreva o tom com asteriscos, ex: <i>*sorrindo* Oi...</i>',
+            '<b>小提示：</b>可以像<i>*笑着* 喂~</i>这样，把语气或情境也写出来。'
         );
     }
 
@@ -2493,6 +2534,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             langPrefix = `**[Response Language Rule]**: Reply only in natural German; use du unless the scene establishes formal distance, regardless of input or history language.\n\n`;
         } else if (this.lang === 'pt') {
             langPrefix = `**[Response Language Rule]**: Reply only in accented Brazilian Portuguese; use você unless quoting, regardless of input or history language.\n\n`;
+        } else if (this.lang === 'zh') {
+            langPrefix = `**[Response Language Rule]**: Reply only in natural, conversational Simplified Chinese (简体中文), regardless of input or history language. Never use Traditional characters.\n\n`;
         }
 
         const charName = this.CHAR_NAMES[charId]?.[this.lang] || charId;

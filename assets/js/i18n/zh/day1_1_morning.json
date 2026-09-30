@@ -1,0 +1,308 @@
+{
+    "start": {
+        "name": "{name}",
+        "text": "*四月的校门外。地上东一片西一片，粘着被踩烂的花瓣。新校服的手肘处还留着折痕，转学材料被压平了，放在书包里。*"
+    },
+    "start_again": {
+        "name": "{name}",
+        "text": "*一阵眩晕袭来，胃里翻搅。我扶着校门缓了口气，才重新站直。*"
+    },
+    "start_3": {
+        "name": "{name}",
+        "text": "*口袋里的手机震了一下。旧学校的群聊里跳出一个熟悉的名字。我没有清掉通知，直接熄了屏幕，把手机塞回口袋。*"
+    },
+    "name_input_scene": {
+        "name": "系统",
+        "text": "转学生，你叫什么名字？"
+    },
+    "gate_1": {
+        "name": "{name}",
+        "text": "*校门旁站着一个黑长直的女生，正推着眼镜看时间。我走近时，她抬起了头。*"
+    },
+    "seoyeon_meet_1": {
+        "name": "书妍",
+        "text": "转学生？你是{name}吧？"
+    },
+    "seoyeon_meet_2": {
+        "name": "书妍",
+        "text": "*她又核对了一遍{name}的名字，在写字板上打了个钩。笔尖悬在名单上没有挪开，目光却顺势落到我的名牌上。*"
+    },
+    "seoyeon_meet_3": {
+        "name": "{name}",
+        "text": "是我。你怎么知道的？"
+    },
+    "seoyeon_meet_4": {
+        "name": "书妍",
+        "text": "我是学生会长。带转学生熟悉学校，是我的工作。"
+    },
+    "seoyeon_meet_5": {
+        "name": "书妍",
+        "text": "走吧。十五分钟，我就能搞定。"
+    },
+    "seoyeon_meet_6": {
+        "name": "{name}",
+        "text": "学生会长亲自来接？受宠若惊啊。"
+    },
+    "seoyeon_meet_7": {
+        "name": "书妍",
+        "text": "带新生熟悉学校本来就是我的职责。放轻松。"
+    },
+    "seoyeon_meet_8": {
+        "name": "{name}",
+        "text": "*书妍已经走进了校门，手里那份迎新资料夹的一角随着步子一晃一晃。*"
+    },
+    "seoyeon_choice": {
+        "name": "{name}",
+        "text": "*这话该怎么接？*",
+        "choices": [
+            "等等——你该不会是特地为了我才跑到这儿来的吧？",
+            "那这趟导览，我得付出什么代价？",
+            "不用了，我自己摸索就行。"
+        ]
+    },
+    "choice_dismiss_1": {
+        "name": "书妍",
+        "text": "*她的鞋跟在石板路上轻轻一蹭。身子仍朝着前方，只把头转向了{name}。*"
+    },
+    "choice_dismiss_2": {
+        "name": "书妍",
+        "text": "是吗？那至少把教室记住。三年二班，走廊尽头右手边。"
+    },
+    "choice_dismiss_3": {
+        "name": "书妍",
+        "text": "*她把写字板夹到腋下，走进了校门。*"
+    },
+    "choice_flirt_1": {
+        "name": "书妍",
+        "text": "*书妍单脚一转，身子回过来。一边的眉毛挑到了镜框上方。*"
+    },
+    "choice_flirt_2": {
+        "name": "书妍",
+        "text": "哇。第一天就一点都不害羞啊。放心，你的名字我记住了。"
+    },
+    "choice_flirt_3": {
+        "name": "{name}",
+        "text": "你在记账吗？"
+    },
+    "choice_flirt_4": {
+        "name": "书妍",
+        "text": "看来你还是没学会看气氛。不过我不讨厌。"
+    },
+    "choice_flirt_5": {
+        "name": "{name}",
+        "text": "我是不是该觉得荣幸？"
+    },
+    "choice_flirt_6": {
+        "name": "书妍",
+        "text": "过几天你还能这么说的话，再看吧。"
+    },
+    "choice_flirt_7": {
+        "name": "书妍",
+        "text": "*她走在前面，回头看了一眼。听到{name}的脚步声近了，她也没有改变步调。*"
+    },
+    "choice_joke_1": {
+        "name": "书妍",
+        "text": "免费。——不过之后是要算利息的。"
+    },
+    "choice_joke_2": {
+        "name": "{name}",
+        "text": "你这个学生会长，好可怕。"
+    },
+    "choice_joke_3": {
+        "name": "书妍",
+        "text": "至少不会无聊。"
+    },
+    "hallway_1": {
+        "name": "书妍",
+        "text": "*她走在前面带路。每当有学生路过跟她打招呼，书妍就抬一下写字板的边角作为回应。*"
+    },
+    "hallway_3": {
+        "name": "书妍",
+        "text": "高年级教学楼在这边，图书馆在那边。小卖部在地下一层。"
+    },
+    "hallway_4": {
+        "name": "书妍",
+        "text": "*她从口袋里摸出一把钥匙，在掌心里晃了晃。*"
+    },
+    "hallway_5": {
+        "name": "书妍",
+        "text": "天台平时是锁着的。会长的特权。"
+    },
+    "hallway_6": {
+        "name": "{name}",
+        "text": "怎么，你在上面有秘密基地吗？"
+    },
+    "hallway_6_b": {
+        "name": "书妍",
+        "text": "*钥匙串的叮当声戛然而止。*反应挺快嘛。"
+    },
+    "hallway_6_c": {
+        "name": "书妍",
+        "text": "*她没有回答，把钥匙塞回了口袋。*"
+    },
+    "hallway_7": {
+        "name": "书妍",
+        "text": "啊，午饭。你不知道食堂在哪儿吧？跟我来。"
+    },
+    "hallway_8": {
+        "name": "{name}",
+        "text": "*书妍在一间教室外停下，指了指门牌。*"
+    },
+    "hallway_10": {
+        "name": "书妍",
+        "text": "到了。进去吧。"
+    },
+    "hallway_11": {
+        "name": "{name}",
+        "text": "午饭时间你也带我逛吗？"
+    },
+    "hallway_12": {
+        "name": "书妍",
+        "text": "要看你表现。"
+    },
+    "hallway_13": {
+        "name": "书妍",
+        "text": "*书妍转过身，握着写字板的那只手抬到肩膀的高度，随意挥了一下。*"
+    },
+    "hallway_13_b": {
+        "name": "{name}",
+        "text": "*她的步子一直没乱，就这样走到了走廊尽头。*"
+    },
+    "classroom_1": {
+        "name": "{name}",
+        "text": "*我推开教室门。喧闹声一下子断了，附近好几把椅子转向了我这边。*"
+    },
+    "classroom_2_b": {
+        "name": "{name}",
+        "text": "*班主任站在教室前面，手里拿着点名册。她二十八九岁的样子，开衫的扣子松开了几颗。*"
+    },
+    "classroom_3": {
+        "name": "班主任",
+        "text": "好了，各位同学。今天有一位转学生加入我们班。要不要自我介绍一下？"
+    },
+    "classroom_3_b": {
+        "name": "{name}",
+        "text": "我是{name}，请大家多关照。*老师在点名册上我名字旁边点了一个点。*"
+    },
+    "classroom_5_b": {
+        "name": "班主任",
+        "text": "欢迎你，{name}。慢慢适应，不用着急。"
+    },
+    "classroom_5_c": {
+        "name": "{name}",
+        "text": "*老师的嘀咕被教室里的嘈杂淹没了。教室一侧响起一声口哨。*"
+    },
+    "classroom_dain_1": {
+        "name": "多因",
+        "text": "哦，转学生！我们班来新面孔了！"
+    },
+    "classroom_dain_2": {
+        "name": "{name}",
+        "text": "*棕色短发，穿着排球队队服。她半站起身朝我挥手。旁边的女生拽了拽她的袖子，但已经来不及了。*"
+    },
+    "classroom_dain_3": {
+        "name": "班主任",
+        "text": "多因，小声点。还有，别再穿着排球服来上课了。"
+    },
+    "classroom_dain_4": {
+        "name": "多因",
+        "text": "哎呀老师，这是我最舒服的一件衣服嘛！话说——欢迎啊，新同学！"
+    },
+    "classroom_dain_5": {
+        "name": "{name}",
+        "text": "*教室里哄堂大笑。多因把手挥得更高了。*"
+    },
+    "classroom_dain_5_b": {
+        "name": "班主任",
+        "text": "*班主任用点名册的一角在讲台上敲了两下，看都没看多因一眼，就去找下一个名字。*"
+    },
+    "classroom_dain_5_c": {
+        "name": "班主任",
+        "text": "留点力气吧。第一节课还没开始呢。"
+    },
+    "classroom_dain_5_d": {
+        "name": "班主任",
+        "text": "*老师翻了一页点名册。*"
+    },
+    "classroom_yuna_1": {
+        "name": "{name}",
+        "text": "*最后排靠窗的位置上，一个女生单手托着下巴望着窗外。就算黑板上写上了我的名字，她也只是又翻了一页书。*"
+    },
+    "classroom_yuna_2": {},
+    "classroom_yuna_4": {
+        "name": "{name}",
+        "text": "*前排有人小声说：“别跟她说话，她很可怕。”由娜翻过一页书。*"
+    },
+    "classroom_seat_1": {
+        "name": "班主任",
+        "text": "*班主任指了指一个空位。*"
+    },
+    "classroom_seat_2": {
+        "name": "{name}",
+        "text": "*就在多因旁边的位子。我还没来得及坐下，多因就已经朝我的桌子侧过了身。*"
+    },
+    "classroom_minsu_1": {
+        "name": "{name}",
+        "text": "*我正要坐下，前排的男生转过身来。*"
+    },
+    "classroom_minsu_2": {
+        "name": "敏秀",
+        "text": "嘿，新同学。欢迎。——不过，先提醒你一句。"
+    },
+    "classroom_minsu_3": {
+        "name": "{name}",
+        "text": "提醒什么？"
+    },
+    "classroom_minsu_2_b": {
+        "name": "敏秀",
+        "text": "*他朝多因的方向扬了扬下巴。*悠着点。"
+    },
+    "classroom_dain_talk_1": {
+        "name": "{name}",
+        "text": "*我前面那张桌子上的名牌写着“敏秀”。*"
+    },
+    "classroom_dain_talk_2": {
+        "name": "{name}",
+        "text": "*我一坐下，多因就凑了过来。两张课桌之间的距离瞬间消失了。*"
+    },
+    "classroom_dain_talk_3": {
+        "name": "多因",
+        "text": "哟，{name}！你喜欢运动吗？"
+    },
+    "classroom_dain_talk_4": {
+        "name": "{name}",
+        "text": "怎么突然问这个？"
+    },
+    "classroom_dain_talk_5": {
+        "name": "多因",
+        "text": "不为什么。放学后我需要个人陪我练接球。没人帮我发球。"
+    },
+    "classroom_dain_talk_6": {
+        "name": "{name}",
+        "text": "所以我现在是发球机了？"
+    },
+    "classroom_dain_talk_7": {
+        "name": "多因",
+        "text": "不过你肯定比发球机强！大概吧！"
+    },
+    "classroom_dain_talk_8": {
+        "name": "{name}",
+        "text": "*多因在桌面上画了个小小的球场，画出中线，然后朝我挑了挑眉。*"
+    },
+    "classroom_yuna_note_1": {
+        "name": "{name}",
+        "text": "*一张折起来的纸条滑到了我的桌上。回头一看，窗边那个银发女生还在望着窗外。只有纸条上的字迹工整得一丝不苟。*"
+    },
+    "classroom_yuna_note_3": {
+        "name": "{name}",
+        "text": "*“被分到了一个吵闹的座位。——由娜”薰衣草色的墨水。纸条的一角有一道小小的折痕。*"
+    },
+    "classroom_yuna_note_5": {
+        "name": "{name}",
+        "text": "*我看向由娜。她的视线依旧落在窗外，但一只手已经垂到了桌子下面——正是纸条递过来的方向。*"
+    },
+    "classroom_yuna_note_6": {
+        "name": "{name}",
+        "text": "*铃声响起，由娜转回头看向窗外，多因已经在跟旁边的同学说话了。*"
+    }
+}
