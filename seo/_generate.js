@@ -874,6 +874,48 @@ ${sitemapFrag}
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://cupid.archerlab.dev/seo/cupid-ending-guide</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/cupid-ending-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-endings-guide-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-endings-guide-en"/>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cupid.archerlab.dev/seo/cupid-endings-guide-en</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/cupid-ending-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-endings-guide-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-endings-guide-en"/>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cupid.archerlab.dev/seo/cupid-ai-free-talk-guide</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/cupid-ai-free-talk-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en"/>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/cupid-ai-free-talk-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en"/>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cupid.archerlab.dev/seo/cupid-characters</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 <!-- traffic-pages:end -->
 </urlset>
 `;

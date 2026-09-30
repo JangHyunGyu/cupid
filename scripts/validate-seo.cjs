@@ -9,7 +9,19 @@ const LASTMOD = '2026-07-13';
 const TRAFFIC_PAGE_LASTMOD = new Map([
   ['visual-novel-beginner-guide', '2026-08-30'],
   ['multiple-ending-romance-game', '2026-08-30'],
-  ['cupid-gameplay-save-guide', '2026-08-30']
+  ['cupid-gameplay-save-guide', '2026-08-30'],
+  ['cupid-ending-guide', '2026-09-30'],
+  ['cupid-endings-guide-en', '2026-09-30'],
+  ['cupid-ai-free-talk-guide', '2026-09-30'],
+  ['cupid-ai-chat-guide-en', '2026-09-30'],
+  ['cupid-characters', '2026-09-30']
+]);
+// Traffic guides published as a KO/EN pair: 2 language entries + x-default.
+const TRAFFIC_PAIR_SLUGS = new Set([
+  'cupid-ending-guide',
+  'cupid-endings-guide-en',
+  'cupid-ai-free-talk-guide',
+  'cupid-ai-chat-guide-en'
 ]);
 const errors = [];
 
@@ -64,7 +76,7 @@ const indexable = [
   ...seoFiles.map(([file, url]) => ({ file, url, lang: '', home: false }))
 ];
 
-if (indexable.length !== 44) fail(`Expected 44 indexable pages, found ${indexable.length}`);
+if (indexable.length !== 49) fail(`Expected 49 indexable pages, found ${indexable.length}`);
 
 const canonicals = new Set();
 let stableGame = '';
@@ -109,7 +121,7 @@ for (const page of indexable) {
   }
 
   const slug = page.file.startsWith('seo/') ? path.basename(page.file, '.html') : '';
-  const expectedAlternates = page.home ? 9 : PRIMARY_SEO_SLUGS.has(slug) ? 8 : 0;
+  const expectedAlternates = page.home ? 9 : PRIMARY_SEO_SLUGS.has(slug) ? 8 : TRAFFIC_PAIR_SLUGS.has(slug) ? 3 : 0;
   if (hreflangs.length !== expectedAlternates) {
     fail(`${page.file}: expected ${expectedAlternates} hreflang entries, found ${hreflangs.length}`);
   }
@@ -215,7 +227,7 @@ for (const block of sitemapBlocks) {
   const lastmod = capture(block, /<lastmod>([^<]+)<\/lastmod>/);
   const alternates = [...block.matchAll(/<xhtml:link\s+rel="alternate"/g)].length;
   const slug = loc.includes('/seo/') ? loc.split('/').pop() : '';
-  const expectedAlternates = HOME.some(([, url]) => url === loc) ? 9 : PRIMARY_SEO_SLUGS.has(slug) ? 8 : 0;
+  const expectedAlternates = HOME.some(([, url]) => url === loc) ? 9 : PRIMARY_SEO_SLUGS.has(slug) ? 8 : TRAFFIC_PAIR_SLUGS.has(slug) ? 3 : 0;
   if (!loc || sitemapUrls.has(loc)) fail(`sitemap.xml: missing or duplicate loc ${loc}`);
   sitemapUrls.add(loc);
   const expectedLastmod = TRAFFIC_PAGE_LASTMOD.get(slug) || LASTMOD;
