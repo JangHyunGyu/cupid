@@ -200,7 +200,7 @@ class FreeTalkSystem {
                 player: 'Protagonista', image: '[imagem anexada]'
             },
             zh: {
-                header: '[之前的当面群聊]',
+                header: '[之前的当面小组对话]',
                 guard: '下面的记录，是这个角色、主角和另一个角色曾经一起实际进行过的对话。请分清每一句话是谁说的。不要把另一个角色的话当成这个角色自己的台词或想法，当前场景里只让此刻在场的人出现。',
                 player: '主角', image: '[附带图片]'
             }
@@ -1052,7 +1052,7 @@ class FreeTalkSystem {
                 fr: '<b>Conversation de groupe :</b> Chaque personnage s’affiche séparément. Touchez la boîte de dialogue pour passer au suivant.',
                 de: '<b>Gruppengespräch:</b> Die Figuren werden nacheinander angezeigt. Tippe auf das Dialogfeld, um die nächste Person zu sehen.',
                 pt: '<b>Conversa em grupo:</b> Cada personagem aparece separadamente. Toque na caixa de diálogo para ver a próxima fala.',
-                zh: '<b>群体对话：</b>每个角色会依次单独出场。点按对话框，查看下一位的发言。'
+                zh: '<b>小组对话：</b>每个角色会依次单独出场。点按对话框，查看下一位的发言。'
             };
             chatGuideEl.innerHTML = guides[lang] || guides.en;
         }
@@ -1151,7 +1151,7 @@ class FreeTalkSystem {
             fr: `Si vous passez cette conversation de groupe, l’affinité de ${names} diminuera de ${penalty} points pour chacun. Passer quand même à la scène suivante ?`,
             de: `Wenn du dieses Gruppengespräch überspringst, sinkt die Zuneigung von ${names} jeweils um ${penalty}. Trotzdem mit der nächsten Szene fortfahren?`,
             pt: `Se você pular esta conversa em grupo, a afinidade de ${names} cairá ${penalty} pontos para cada personagem. Mesmo assim, avançar para a próxima cena?`,
-            zh: `跳过这段群聊，${names}的好感度会各下降${penalty}。仍然要进入下一个场景吗？`
+            zh: `跳过这段小组对话，${names}的好感度会各下降${penalty}。仍然要进入下一个场景吗？`
         };
         return messages[language] || messages.en;
     }

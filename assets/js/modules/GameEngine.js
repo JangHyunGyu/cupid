@@ -1428,7 +1428,7 @@ class GameEngine {
                         <div class="credits-divider">─ ─ ─</div>
                         <div class="credits-section">
                             <div class="credits-role">${ct({ es: 'Agradecimientos especiales', ja: 'スペシャルサンクス', en: 'Special Thanks', fr: 'Remerciements', de: 'Besonderer Dank', pt: 'Agradecimentos especiais', zh: '特别鸣谢', ko: 'Special Thanks' })}</div>
-                            <div class="credits-name">${ct({ es: '¡Gracias por jugar!', ja: 'プレイしていただき、ありがとうございました。', en: 'Thank you for playing!', fr: 'Merci d\'avoir joué !', de: 'Vielen Dank fürs Spielen!', pt: 'Obrigado por jogar!', zh: '感谢你的游玩！', ko: '플레이해 주신 여러분께' })}</div>
+                            <div class="credits-name">${ct({ es: '¡Gracias por jugar!', ja: 'プレイしていただき、ありがとうございました。', en: 'Thank you for playing!', fr: 'Merci d\'avoir joué !', de: 'Vielen Dank fürs Spielen!', pt: 'Obrigado por jogar!', zh: '谢谢你来玩！', ko: '플레이해 주신 여러분께' })}</div>
                             <div class="credits-name">${ct({ es: 'Te lo agradecemos de corazón.', ja: '心より感謝申し上げます。', en: 'We truly appreciate your support.', fr: 'Merci du fond du cœur.', de: 'Wir danken dir von Herzen.', pt: 'Agradecemos de coração.', zh: '衷心感谢你的支持。', ko: '진심으로 감사드립니다' })}</div>
                         </div>
                         <div class="credits-spacer"></div>
@@ -1728,7 +1728,7 @@ class GameEngine {
             fr: '[Stabilisation de l\'environnement expérimental terminée]',
             de: '[Versuchsumgebung stabilisiert]',
             pt: '[Ambiente experimental estabilizado]',
-            zh: '[实验环境稳定完成]'
+            zh: '[实验环境已稳定]'
         }[lang] || '[Experiment environment stabilized]';
         if (!document.getElementById('cupid-stabilize-style')) {
             const style = document.createElement('style');

@@ -762,7 +762,7 @@ class GalleryData {
                 "name": "班主任",
                 "title": "重写自己手稿的班主任",
                 "shortDescription": "希望学生拿出自己读到的东西，而不是给她“标准答案”的语文老师。",
-                "description": "把授课、辅导和自己的写作划分得清清楚楚的语文老师。她把搁置了七年的手稿交给文艺部的公开合评，并根据匿名意见重写了最后一章。师生关系会在毕业典礼上以一句郑重的告别画上句号。",
+                "description": "把授课、咨询和自己的写作划分得清清楚楚的语文老师。她把搁置了七年的手稿交给文艺部的公开合评，并根据匿名意见重写了最后一章。师生关系会在毕业典礼上以一句郑重的告别画上句号。",
                 "age": "28岁",
                 "birthday": "5月5日",
                 "height": "170 cm",
@@ -787,7 +787,7 @@ class GalleryData {
                 "name": "保健老师",
                 "title": "为学生牵线求助的保健老师",
                 "shortDescription": "先确认症状和记录，再把学生引向合适的大人的保健老师。",
-                "description": "会先确认学生的状态和就诊时间，然后才开玩笑的保健老师。她会具体地告诉学生，该怎样向保健室、心理辅导室、监护人和老师求助。辅导结束后，她会正式结案，让每一位毕业生走向各自的人生。",
+                "description": "会先确认学生的状态和就诊时间，然后才开玩笑的保健老师。她会具体地告诉学生，该怎样向保健室、心理咨询室、监护人和老师求助。咨询结束后，她会正式结案，让每一位毕业生走向各自的人生。",
                 "age": "26岁",
                 "birthday": "9月12日",
                 "height": "168 cm",
@@ -1880,8 +1880,8 @@ class GalleryData {
             }
         ],
         zh: [
-            {"id":"event_haeun_trust","name":"我求助了","character":"夏恩","description":"在广播室门外，夏恩把文件箱拉到自己身边，替主角说话","file":"assets/images/background/event_haeun_trust.png","thumbnail":"assets/images/background/event_haeun_trust.webp","unlockHint":"在第5天午休时，信任度达到8以上，看到夏恩替主角辩护"},
-            {"id":"event_haeun_reputation","name":"校门口的解释","character":"夏恩","description":"夏恩在校门口解释，昨天的那番对话为什么让她不舒服","file":"assets/images/background/event_haeun_reputation.png","thumbnail":"assets/images/background/event_haeun_reputation.webp","unlockHint":"在第4天早晨，带着低于0的夏恩信任度，进入名声澄清的情节"},
+            {"id":"event_haeun_trust","name":"我求助了","character":"夏恩","description":"在广播室门外，夏恩把文件箱拉到自己身边，替主角说话","file":"assets/images/background/event_haeun_trust.png","thumbnail":"assets/images/background/event_haeun_trust.webp","unlockHint":"第五天午休时，夏恩的信任度达到8以上，就能看到她替主角辩护"},
+            {"id":"event_haeun_reputation","name":"校门口的解释","character":"夏恩","description":"夏恩在校门口解释，昨天的那番对话为什么让她不舒服","file":"assets/images/background/event_haeun_reputation.png","thumbnail":"assets/images/background/event_haeun_reputation.webp","unlockHint":"夏恩的信任度低于0时，在第四天早晨看到名誉澄清的场景"},
             {"id":"nurse_home_event1","name":"朱媛家的早晨","character":"保健老师","description":"毕业五年后重逢、周末相处了几个月的两个成年人共度的早晨","file":"assets/images/background/nurse_home_event1.png","thumbnail":"assets/images/background/nurse_home_event1.png"},
             {"id":"dain_hurt_event1","name":"多因的伤","character":"多因","description":"多因在体育馆里伤了膝盖","file":"assets/images/background/dain_hurt_event1.png","thumbnail":"assets/images/background/dain_hurt_event1.png"},
             {"id":"dain_depression_event1","name":"多因的眼泪","character":"多因","description":"多因独自在昏暗的体育馆里哭泣","file":"assets/images/background/dain_depression_event1.png","thumbnail":"assets/images/background/dain_depression_event1.png"},
@@ -1904,14 +1904,14 @@ class GalleryData {
             {"id":"ending_confess_fail_yuna","name":"由娜的回答","character":"由娜","description":"并肩走到公园出口后，由娜说她无法回应这份心意","file":"assets/images/background/ending_confess_fail_yuna.png","thumbnail":"assets/images/background/ending_confess_fail_yuna.png","unlockHint":"被由娜拒绝"},
             {"id":"ending_confess_fail_dain","name":"多因的回答","character":"多因","description":"擦干眼泪之后，多因清楚地说，她希望两人继续做朋友","file":"assets/images/background/ending_confess_fail_dain.png","thumbnail":"assets/images/background/ending_confess_fail_dain.png","unlockHint":"被多因拒绝"},
             {"id":"ending_mayhem","name":"已读之后的距离","character":null,"description":"三个没人回复的聊天窗口，和三个朝不同方向走远的人","file":"assets/images/background/ending_mayhem.png","thumbnail":"assets/images/background/ending_mayhem.png","unlockHint":"劈腿被发现"},
-            {"id":"event_temptation_seoyeon","name":"没有回头路","character":"书妍","description":"夜里风很大的天台上，书妍毫不犹豫地伸出手，等待你的回答","file":"assets/images/background/event_temptation_seoyeon.png","thumbnail":"assets/images/background/event_temptation_seoyeon.png","unlockHint":"在第4天接受情敌书妍的提议"},
-            {"id":"event_temptation_yuna","name":"无处可躲","character":"由娜","description":"在旧图书馆的隐蔽角落，由娜一只手撑在书架上，毫不退缩地等待你的回答","file":"assets/images/background/event_temptation_yuna.png","thumbnail":"assets/images/background/event_temptation_yuna.png","unlockHint":"在第4天接受情敌由娜的提议"},
-            {"id":"event_temptation_dain","name":"昏暗的体育馆","character":"多因","description":"训练结束后，在昏暗的体育馆里，多因放低球，朝你走近一步","file":"assets/images/background/event_temptation_dain.png","thumbnail":"assets/images/background/event_temptation_dain.png","unlockHint":"在第4天接受情敌多因的提议"},
+            {"id":"event_temptation_seoyeon","name":"没有回头路","character":"书妍","description":"夜里风很大的天台上，书妍毫不犹豫地伸出手，等待你的回答","file":"assets/images/background/event_temptation_seoyeon.png","thumbnail":"assets/images/background/event_temptation_seoyeon.png","unlockHint":"第四天接受情敌书妍的提议"},
+            {"id":"event_temptation_yuna","name":"无处可躲","character":"由娜","description":"在旧图书馆的隐蔽角落，由娜一只手撑在书架上，毫不退缩地等待你的回答","file":"assets/images/background/event_temptation_yuna.png","thumbnail":"assets/images/background/event_temptation_yuna.png","unlockHint":"第四天接受情敌由娜的提议"},
+            {"id":"event_temptation_dain","name":"昏暗的体育馆","character":"多因","description":"训练结束后，在昏暗的体育馆里，多因放低球，朝你走近一步","file":"assets/images/background/event_temptation_dain.png","thumbnail":"assets/images/background/event_temptation_dain.png","unlockHint":"第四天接受情敌多因的提议"},
             {"id":"ending_bittersweet_teacher","name":"退回的信","character":"班主任","description":"毕业之后，在空荡荡的教室里，班主任把推荐信和信件放在讲桌上，选择了告别","file":"assets/images/background/ending_bittersweet_teacher.png","thumbnail":"assets/images/background/ending_bittersweet_teacher.png","unlockHint":"达成班主任的苦涩结局"},
-            {"id":"ending_bittersweet_nurse","name":"结案","character":"保健老师","description":"辅导档案和联系便条被放回桌上，在保健室的门关上之前，留下最后一句告别","file":"assets/images/background/ending_bittersweet_nurse.png","thumbnail":"assets/images/background/ending_bittersweet_nurse.png","unlockHint":"达成保健老师的苦涩结局"},
+            {"id":"ending_bittersweet_nurse","name":"结案","character":"保健老师","description":"咨询档案和联系便条被放回桌上，在保健室的门关上之前，留下最后一句告别","file":"assets/images/background/ending_bittersweet_nurse.png","thumbnail":"assets/images/background/ending_bittersweet_nurse.png","unlockHint":"达成保健老师的苦涩结局"},
             {"id":"ending_good_teacher","name":"毕业典礼上的送别","character":"班主任","description":"毕业那天交出推荐信和合评复印件之后，班主任在走廊的窗边目送毕业生","file":"assets/images/background/ending_good_teacher.png","thumbnail":"assets/images/background/ending_good_teacher.png","unlockHint":"达成班主任的好结局"},
-            {"id":"ending_good_nurse","name":"最后一次检查","character":"保健老师","description":"毕业那天，保健老师合上辅导记录，向毕业生简短地道别","file":"assets/images/background/ending_good_nurse.png","thumbnail":"assets/images/background/ending_good_nurse.png","unlockHint":"达成保健老师的好结局"},
-            {"id":"ending_perfect_teacher","name":"樱花树下的花束","character":"班主任","description":"毕业四年后，两个成年人重逢，出版了作品的作者在能看到樱花的咖啡馆露台上献上祝贺的花束","file":"assets/images/background/ending_perfect_teacher.png","thumbnail":"assets/images/background/ending_perfect_teacher.png","unlockHint":"达成班主任的完美结局"},
+            {"id":"ending_good_nurse","name":"最后一次检查","character":"保健老师","description":"毕业那天，保健老师合上咨询记录，向毕业生简短地道别","file":"assets/images/background/ending_good_nurse.png","thumbnail":"assets/images/background/ending_good_nurse.png","unlockHint":"达成保健老师的好结局"},
+            {"id":"ending_perfect_teacher","name":"樱花树下的花束","character":"班主任","description":"毕业四年后，两个成年人重逢，已出版作品的作家在能看到樱花的咖啡馆露台上，递上祝贺的花束","file":"assets/images/background/ending_perfect_teacher.png","thumbnail":"assets/images/background/ending_perfect_teacher.png","unlockHint":"达成班主任的完美结局"},
             {"id":"ending_perfect_nurse","name":"一起度过的早晨","character":"保健老师","description":"毕业五年后重逢、又相处了几个月的两个成年人共度的早晨","file":"assets/images/background/ending_perfect_nurse.png","thumbnail":"assets/images/background/ending_perfect_nurse.png","unlockHint":"达成保健老师的完美结局"}
         ]
     };
@@ -2004,7 +2004,7 @@ class GalleryData {
         },
         zh: {
             discovered: "已发现的结局", complete: "已全部发现", locked: "未发现", hintLabel: "提示",
-            labels: {"perfect":"PERFECT","true":"TRUE LOVE","good":"GOOD","counteroffer":"动摇的选择","bittersweet":"BITTERSWEET","lateGood":"迟来的告白","confessFail":"告白失败","friend":"朋友","mayhem":"崩塌","unresolved":"错位的回答","alone":"孤单"},
+            labels: {"perfect":"完美结局","true":"真爱结局","good":"好结局","counteroffer":"动摇的选择","bittersweet":"苦涩结局","lateGood":"迟来的告白","confessFail":"告白失败","friend":"朋友","mayhem":"混乱结局","unresolved":"未解结局","alone":"孤单"},
             hints: {"perfect":"以好感度100走完{character}的路线。","true":"以至少60的好感度迎来{character}路线的最后一天。","good":"接受{character}的告白，并保持至少40的好感度。","counteroffer":"在向{character}许下约定之后，接受别人的提议，并面对结果。","bittersweet":"以低于40的好感度迎来{character}路线的最后一天。","lateGood":"推迟{character}的告白，在最后的机会坦诚相告。","confessFail":"推迟{character}的告白，并在关系还不够深时再次告白。","friend":"最后选择继续做朋友，而不是告白。","mayhem":"许下多个约定，在事情败露后迎来最后一天。","unresolved":"面对多段关系，始终没有给出唯一的答案，直到最后一天。","alone":"不进入任何人的路线，直接迎来最后一天。"}
         }
     };
@@ -2452,16 +2452,16 @@ const haeunGalleryProfiles = {
     "zh": {
         "id": "haeun",
         "name": "夏恩",
-        "title": "在对话中建立起来的羁绊",
-        "shortDescription": "一直担心着书妍的学妹。比起传言，她更相信当面谈话，不舒服时会有礼貌但清楚地说出来。庆典之后的单独谈话，也许会发展成一段恋情。",
-        "description": "一直担心着书妍的学妹。比起传言，她更相信当面谈话，不舒服时会有礼貌但清楚地说出来。庆典之后的单独谈话，也许会发展成一段恋情。",
+        "title": "靠聊天走近的学妹",
+        "shortDescription": "一直担心着书妍的学妹。比起传言，她更相信当面谈话，不舒服时会有礼貌但清楚地说出来。校园节之后的单独谈话，也许会发展成一段恋情。",
+        "description": "一直担心着书妍的学妹。比起传言，她更相信当面谈话，不舒服时会有礼貌但清楚地说出来。校园节之后的单独谈话，也许会发展成一段恋情。",
         "age": "未公开",
         "birthday": "未公开",
         "height": "未公开",
         "weight": "未公开",
         "bust": "未公开",
         "hobby": "未公开",
-        "personality": "一直担心着书妍的学妹。比起传言，她更相信当面谈话，不舒服时会有礼貌但清楚地说出来。庆典之后的单独谈话，也许会发展成一段恋情。",
+        "personality": "一直担心着书妍的学妹。比起传言，她更相信当面谈话，不舒服时会有礼貌但清楚地说出来。校园节之后的单独谈话，也许会发展成一段恋情。",
         "expressions": [
             "normal",
             "worried",
@@ -2545,7 +2545,7 @@ const haeunEndingCG = {
         "id": "ending_perfect_haeun",
         "name": "明天，只有我们",
         "character": "夏恩",
-        "description": "庆典之后，夏恩在公园长椅上坐到主角身旁，答应和他交往",
+        "description": "校园节之后，夏恩在公园长椅上坐到主角身旁，提出交往",
         "file": "assets/images/background/ending_perfect_haeun.png",
         "thumbnail": "assets/images/background/ending_perfect_haeun.webp",
         "unlockHint": "选择夏恩，以好感度100达成她的结局"
