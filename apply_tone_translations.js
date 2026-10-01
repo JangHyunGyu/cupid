@@ -8,7 +8,7 @@ const fs = require('fs');
 const path = require('path');
 
 const i18nPath = path.join(__dirname, 'assets', 'js', 'i18n');
-const LANGS = ['en', 'ja', 'es', 'fr', 'de', 'pt'];
+const LANGS = ['en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'];
 
 // fileKey → { nodeId → { lang: newText } }
 const updates = {

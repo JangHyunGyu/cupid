@@ -2282,7 +2282,8 @@ class GalleryData {
             ...(this.cg.ja || []).map(cg => cg.id),
             ...(this.cg.fr || []).map(cg => cg.id),
             ...(this.cg.de || []).map(cg => cg.id),
-            ...(this.cg.pt || []).map(cg => cg.id)
+            ...(this.cg.pt || []).map(cg => cg.id),
+            ...(this.cg.zh || []).map(cg => cg.id)
         ]);
     }
 

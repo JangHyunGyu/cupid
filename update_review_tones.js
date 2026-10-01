@@ -2,14 +2,14 @@
 /**
  * 대사 톤 수정 후 translation_review_day*.json 갱신 헬퍼
  * - _ko_text_preview 를 새 KO 텍스트로 교체
- * - 외국어 _reviewed: false 마킹 (pt 자동 추가)
+ * - 외국어 _reviewed: false 마킹 (pt/zh 자동 추가)
  * - 사용: node update_review_tones.js <day>
  *   day = 1~5
  */
 const fs = require('fs');
 const path = require('path');
 
-const FOREIGN_LANGS = ['en', 'ja', 'es', 'fr', 'de', 'pt'];
+const FOREIGN_LANGS = ['en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'];
 
 const DAY_UPDATES = {
     1: [
@@ -83,10 +83,12 @@ if (!updates || !updates.length) {
 const reviewFile = path.join(__dirname, `translation_review_day${day}.json`);
 const data = JSON.parse(fs.readFileSync(reviewFile, 'utf8'));
 
-// _meta 갱신: pt 추가 + all_reviewed false
+// _meta 갱신: pt/zh 추가 + all_reviewed false
 if (data._meta) {
-    if (data._meta.lang_avg && !('pt' in data._meta.lang_avg)) {
-        data._meta.lang_avg.pt = 10;
+    if (data._meta.lang_avg) {
+        for (const lang of ['pt', 'zh']) {
+            if (!(lang in data._meta.lang_avg)) data._meta.lang_avg[lang] = 10;
+        }
     }
     data._meta.all_reviewed = false;
 }

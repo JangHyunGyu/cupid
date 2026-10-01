@@ -9,7 +9,7 @@ const path = require('path');
 const { callDeepSeek } = require('./deepseek_api');
 
 const i18nDir = path.join(__dirname, 'assets', 'js', 'i18n');
-const LANGS = ['en', 'ja', 'es', 'fr', 'de', 'pt'];
+const LANGS = ['en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'];
 
 // 변경된 노드 목록 (파일별)
 // Round 2: only the skipped nodes with corrected file mappings
@@ -33,7 +33,7 @@ function saveJSON(lang, file, data) {
 }
 
 async function translateBatch(koTexts, targetLang) {
-    const langNames = { en: 'English', ja: 'Japanese', es: 'Spanish', fr: 'French', de: 'German', pt: 'Brazilian Portuguese' };
+    const langNames = { en: 'English', ja: 'Japanese', es: 'Spanish', fr: 'French', de: 'German', pt: 'Brazilian Portuguese', zh: 'Simplified Chinese (简体中文)' };
     const langName = langNames[targetLang];
 
     const prompt = `You are translating visual novel dialogue for a Korean high school romance game called "Cupid".
@@ -43,10 +43,11 @@ RULES:
 - Keep *italic* markers for narration/thoughts exactly as-is
 - Keep {name} placeholder exactly as-is
 - Character names: 서연=Seoyeon, 유나=Yuna, 다인=Dain, 민수=Minsu, 하은=Haeun
+- For Simplified Chinese: use 书妍, 由娜, 多因, 敏秀, 夏恩; 담임선생님=班主任, 보건선생님=保健老师 (see TRANSLATION_PROMPT_ZH.md)
 - For Japanese: use katakana for names (ソヨン, ユナ, ダイン, ミンス, ハウン)
 - Keep the tone: modern, trendy Korean drama vibe. Short, witty, with breathing room
 - NO cringe, NO overly dramatic expressions, NO anime translation patterns
-- ‹빈› means empty/blank — keep as ‹empty›(en), ‹空›(ja), ‹vacío›(es), ‹vide›(fr), ‹leer›(de)
+- ‹빈› means empty/blank — keep as ‹empty›(en), ‹空›(ja), ‹vacío›(es), ‹vide›(fr), ‹leer›(de), ‹空›(zh)
 
 Translate each numbered Korean text to ${langName}. Return ONLY a JSON object with the same keys mapping to translated strings.
 

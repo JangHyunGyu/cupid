@@ -4,7 +4,7 @@ const { execFileSync } = require('child_process');
 
 const ROOT = path.resolve(__dirname, '..');
 const KO_DIR = path.join(ROOT, 'assets/js/i18n/ko');
-const LANGS = ['en', 'ja', 'es', 'fr', 'de', 'pt'];
+const LANGS = ['en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'];
 const FILE_RE = /^day([1-5])_[1-4]_(?:morning|lunch|afterschool|night)\.json$/;
 const GENERATED_AT = new Date().toISOString();
 
