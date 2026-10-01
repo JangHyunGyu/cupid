@@ -853,6 +853,28 @@
         "name": "Haeun",
         "text": "*Haeun gira a pulseira do grêmio para o lado interno do pulso.*"
     },
+    "haeun_cheer_1": {
+        "name": "Haeun",
+        "text": "*Haeun solta a pulseira.* Quando Seoyeon fala de você, o rosto dela muda. Por isso eu torço pelos dois. Quero que você faça o que eu não consigo fazer de fora."
+    },
+    "haeun_cheer_choice": {
+        "name": "Haeun",
+        "text": "*Haeun sorri de leve.* Espero que Seoyeon volte a sorrir em mais dias. E seria ainda melhor se você estivesse ao lado dela. Só lembre que existe pelo menos uma pessoa torcendo por vocês.",
+        "choices": [
+            "Prometer cuidar primeiro da Seoyeon e dizer à Haeun que não se preocupe",
+            "Impor um limite: agradece o apoio, mas isso não é da conta da Haeun",
+            "Agradecer pelo apoio e dizer que isso também daria força à Seoyeon",
+            "Assentir sem responder e desviar o olhar"
+        ]
+    },
+    "haeun_cheer_up": {
+        "name": "Haeun",
+        "text": "*Os ombros de Haeun relaxam um pouco.* Que alívio. Então vou confiar e acompanhar de perto."
+    },
+    "haeun_cheer_down": {
+        "name": "Haeun",
+        "text": "*Haeun aperta os lábios por um instante.* ...Entendi. Desculpe se passei do limite. Mesmo assim, eu queria dizer."
+    },
     "haeun_warn_7": {
         "name": "Haeun",
         "text": "Eu sei que estou me intrometendo. Mesmo assim, só hoje não finja que não percebeu."

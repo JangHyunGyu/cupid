@@ -1437,6 +1437,11 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "morning4_end"
             },
             {
+                "condition": "haeun_cheer_seen",
+                "excludeCondition": "day4_haeun_notice_done",
+                "next": "day4_haeun_notice_check"
+            },
+            {
                 "condition": "messaged_haeun_freetalk",
                 "next": "day4_haeun_personal"
             },
@@ -1444,6 +1449,45 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "morning4_end"
             }
         ]
+    },
+    "day4_haeun_notice_check": {
+        "routeBeforeRender": true,
+        "branches": [
+            {
+                "condition": "messaged_haeun_freetalk",
+                "next": "day4_haeun_notice_1"
+            },
+            {
+                "next": "morning4_end"
+            }
+        ]
+    },
+    "day4_haeun_notice_1": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/haeun_normal.png",
+        "next": "day4_haeun_notice_choice"
+    },
+    "day4_haeun_notice_choice": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/haeun_worried.png",
+        "choices": [
+            { "next": "day4_haeun_notice_down", "stats": { "Haeun": { "affinity": -1 } } },
+            { "next": "day4_haeun_notice_up", "stats": { "Haeun": { "affinity": 3 } } },
+            { "next": "day4_haeun_notice_down", "stats": { "Haeun": { "affinity": -3 } } },
+            { "next": "day4_haeun_notice_up", "stats": { "Haeun": { "affinity": 1 } } }
+        ]
+    },
+    "day4_haeun_notice_up": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/haeun_relieved.png",
+        "next": "day4_haeun_personal",
+        "setFlags": ["day4_haeun_notice_done"]
+    },
+    "day4_haeun_notice_down": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/haeun_worried.png",
+        "next": "day4_haeun_personal",
+        "setFlags": ["day4_haeun_notice_done"]
     },
     "day4_haeun_personal": {
         "background": "assets/images/background/school.png",

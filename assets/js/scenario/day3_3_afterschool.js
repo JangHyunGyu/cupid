@@ -1609,7 +1609,34 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "haeun_warn_6_b": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/haeun_firm.png",
-        "next": "haeun_warn_7"
+        "next": "haeun_cheer_1"
+    },
+    "haeun_cheer_1": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_normal.png",
+        "next": "haeun_cheer_choice"
+    },
+    "haeun_cheer_choice": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_normal.png",
+        "choices": [
+            { "next": "haeun_cheer_up", "stats": { "Haeun": { "affinity": 1 } } },
+            { "next": "haeun_cheer_down", "stats": { "Haeun": { "affinity": -2 } } },
+            { "next": "haeun_cheer_up", "stats": { "Haeun": { "affinity": 2 } } },
+            { "next": "haeun_cheer_down", "stats": { "Haeun": { "affinity": -1 } } }
+        ]
+    },
+    "haeun_cheer_up": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_relieved.png",
+        "next": "haeun_warn_7",
+        "setFlags": ["haeun_cheer_seen"]
+    },
+    "haeun_cheer_down": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_worried.png",
+        "next": "haeun_warn_7",
+        "setFlags": ["haeun_cheer_seen"]
     },
     "haeun_warn_7": {
         "background": "assets/images/background/school_hallway.png",

@@ -853,6 +853,28 @@
         "name": "Haeun",
         "text": "*Haeun dreht das Armband des Schülerrats zur Innenseite ihres Handgelenks.*"
     },
+    "haeun_cheer_1": {
+        "name": "Haeun",
+        "text": "*Haeun lässt das Armband los.* Wenn Seoyeon von dir spricht, verändert sich ihr Gesicht. Deshalb drücke ich euch beiden die Daumen. Ich wünsche mir, dass du tust, was ich von der Seite aus nicht kann."
+    },
+    "haeun_cheer_choice": {
+        "name": "Haeun",
+        "text": "*Haeun lächelt leicht.* Ich hoffe, Seoyeon lächelt bald wieder öfter. Und noch schöner wäre es, wenn du bei ihr bist. Merk dir nur, dass euch zumindest eine Person die Daumen drückt.",
+        "choices": [
+            "Versprechen, sich zuerst um Seoyeon zu kümmern, und Haeun sagen, sie solle sich keine Sorgen machen",
+            "Eine Grenze ziehen: Danke für die Unterstützung, aber das geht Haeun nichts an",
+            "Sich für die Unterstützung bedanken und sagen, dass es auch Seoyeon Kraft geben würde",
+            "Wortlos nicken und den Blick abwenden"
+        ]
+    },
+    "haeun_cheer_up": {
+        "name": "Haeun",
+        "text": "*Haeuns Schultern entspannen sich ein wenig.* Da bin ich erleichtert. Dann vertraue ich dir und schaue zu."
+    },
+    "haeun_cheer_down": {
+        "name": "Haeun",
+        "text": "*Haeun presst kurz die Lippen zusammen.* …Verstanden. Tut mir leid, falls ich zu weit gegangen bin. Ich wollte es trotzdem sagen."
+    },
     "haeun_warn_7": {
         "name": "Haeun",
         "text": "Ich weiß, dass ich mich einmische. Aber bitte tu zumindest heute nicht so, als hättest du nichts bemerkt."

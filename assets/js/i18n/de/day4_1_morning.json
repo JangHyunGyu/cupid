@@ -773,6 +773,28 @@
         "name": "{name}",
         "text": "*Als das Gespräch endet, treten Haeun und ich am Tor zur Seite. Am Übergang warten Menschen auf Grün.*"
     },
+    "day4_haeun_notice_1": {
+        "name": "Haeun",
+        "text": "*Haeun spricht am Schultor über Seoyeon, bricht ab und berührt mit den Fingerspitzen das Armband.* Komisch. Ich wollte über Seoyeon reden, aber je mehr ich rede, desto mehr geht es auch um dich. Ich weiß selbst nicht, warum."
+    },
+    "day4_haeun_notice_choice": {
+        "name": "Haeun",
+        "text": "*Haeuns Blick bleibt kurz an dir hängen und sinkt dann zu Boden.* Hat mein Gesicht gerade komisch ausgesehen?",
+        "choices": [
+            "So tun, als hätte man ihren Ausdruck nicht gesehen, und auf die Uhr schauen",
+            "Haeuns veränderten Gesichtsausdruck bemerken und leise fragen, woran sie denkt",
+            "Absichtlich das Thema wieder auf Seoyeon lenken",
+            "Haeun ausreden lassen und sich bei ihr bedanken"
+        ]
+    },
+    "day4_haeun_notice_up": {
+        "name": "Haeun",
+        "text": "*Haeun blinzelt überrascht.* …Danke, dass du das ernst nimmst. Für Worte ist es noch zu früh, aber mir ist ein bisschen leichter."
+    },
+    "day4_haeun_notice_down": {
+        "name": "Haeun",
+        "text": "*Haeun lächelt unbeholfen und tritt einen Schritt zurück.* Ach so, ja. Es ging um Seoyeon. …War nur so dahingesagt. Vergiss es bitte."
+    },
     "day4_haeun_reputation_cg": {
         "name": "{name}",
         "text": "*Haeun bleibt am Schultor stehen und wartet auf eine Antwort.*"
@@ -780,7 +802,7 @@
     "day4_haeun_personal": {
         "name": "Haeun",
         "text": "Können wir kurz reden, bevor du gehst? Ich habe über gestern nachgedacht. *Haeun tritt am Tor zur Seite.* Darf ich heute auch etwas von mir erzählen?",
-        "context": "Ein Gespräch unter vier Augen mit Haeun. Nur tatsächliche frühere Gespräche erinnern. Ihre höfliche Stimme und Anrede für den älteren Mitschüler beibehalten. Vor der Routenwahl keine Liebesbeziehung festlegen; auch danach hat sie einer Beziehung noch nicht zugestimmt. Auf das aktuelle Gespräch und die Zuneigung eingehen.",
-        "personality": "Ein Gespräch unter vier Augen mit Haeun. Nur tatsächliche frühere Gespräche erinnern. Ihre höfliche Stimme und Anrede für den älteren Mitschüler beibehalten. Vor der Routenwahl keine Liebesbeziehung festlegen; auch danach hat sie einer Beziehung noch nicht zugestimmt. Auf das aktuelle Gespräch und die Zuneigung eingehen."
+        "context": "Morgen des vierten Tages. Du sprichst allein mit Haeun neben dem Schultor. Ein Gespräch unter vier Augen mit Haeun. Nur tatsächliche frühere Gespräche erinnern. Ihre höfliche Stimme und Anrede für den älteren Mitschüler beibehalten. Vor der Routenwahl keine Liebesbeziehung festlegen; auch danach hat sie einer Beziehung noch nicht zugestimmt. Auf das aktuelle Gespräch und die Zuneigung eingehen.",
+        "personality": "Ein Gespräch unter vier Augen mit Haeun. Nur tatsächliche frühere Gespräche erinnern. Ihre höfliche Stimme und Anrede für den älteren Mitschüler beibehalten. Vor der Routenwahl keine Liebesbeziehung festlegen; auch danach hat sie einer Beziehung noch nicht zugestimmt. Auf das aktuelle Gespräch und die Zuneigung eingehen. Wenn Haeuns Unterstützung für Seoyeon früher tatsächlich zur Sprache kam, setze diesen Faden fort. Sie findet es selbst fremd, dass Gespräche über Seoyeon zum Protagonisten abdriften, legt sich aber nicht auf ihre Gefühle fest und gesteht nichts."
     }
 }

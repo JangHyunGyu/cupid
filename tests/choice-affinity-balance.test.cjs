@@ -117,8 +117,9 @@ test('direct choice affinity distribution keeps subtle penalties meaningful but 
         }
     }
 
-    assert.equal(total, 385);
-    assert.deepEqual(counts, { positive: 59, negative: 154, neutral: 147, mixed: 25 });
+    // +16 choices: the four Haeun stage scenes (cheer/notice/waver/guilt), each 2 plus + 2 minus.
+    assert.equal(total, 401);
+    assert.deepEqual(counts, { positive: 67, negative: 162, neutral: 147, mixed: 25 });
 });
 
 test('day 2 afterschool rivalry scales with the live relationship instead of inventing plans', () => {
@@ -563,9 +564,9 @@ test('negative-choice screens stay distributed across every story day', () => {
     const expected = {
         1: { choiceScreens: 16, negativeScreens: 9 },
         2: { choiceScreens: 18, negativeScreens: 10 },
-        3: { choiceScreens: 24, negativeScreens: 14 },
-        4: { choiceScreens: 34, negativeScreens: 27 },
-        5: { choiceScreens: 36, negativeScreens: 11 } // Includes the two-pill crossover choice.
+        3: { choiceScreens: 25, negativeScreens: 15 },
+        4: { choiceScreens: 35, negativeScreens: 28 },
+        5: { choiceScreens: 38, negativeScreens: 13 } // Includes the two-pill crossover choice.
     };
 
     for (const [day, expectedCounts] of Object.entries(expected)) {

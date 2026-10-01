@@ -384,7 +384,29 @@
     },
     "day5_haeun_defends": {
         "name": "Haeun",
-        "text": "I asked for help. I feel comfortable asking. *Haeun pulls the box closer.* We weren’t doing anything wrong."
+        "text": "I asked for help. I feel comfortable asking. *Haeun pulls the box closer.* We weren’t doing anything wrong. …So why does it sound like an excuse now that I’ve said it?"
+    },
+    "day5_haeun_waver_1": {
+        "name": "Haeun",
+        "text": "*Haeun looks down at her empty hands and fiddles with her bracelet for a long while.* I said earlier that it wasn't anything strange. That's true. But I keep remembering that I said I was rooting for the two of you. I'll just pretend I haven't noticed."
+    },
+    "day5_haeun_waver_choice": {
+        "name": "Haeun",
+        "text": "*Haeun opens her clenched hand and closes it again.* I'm fine. It's nothing. …It really is nothing, but what do you think?",
+        "choices": [
+            "Say someone else must be waiting and head off first",
+            "Tell her she doesn't have to pretend she's fine and that wavering isn't strange",
+            "Draw a line and say let's not talk about it anymore",
+            "Stand quietly beside her until she settles"
+        ]
+    },
+    "day5_haeun_waver_up": {
+        "name": "Haeun",
+        "text": "*Haeun lets out a long breath.* …Thank you. It's a little less scary now. Stay beside me a little longer."
+    },
+    "day5_haeun_waver_down": {
+        "name": "Haeun",
+        "text": "*Haeun presses the bracelet clasp with a fingertip, then lets go.* …Okay. I'll treat it as nothing."
     },
     "day5_haeun_finish": {
         "name": "{name}",
@@ -700,7 +722,7 @@
     "day5_haeun_personal": {
         "name": "Haeun",
         "text": "*Haeun closes the broadcasting-room door and stands beside you.* I couldn’t ask with everyone there. Who did you want to spend today with?",
-        "context": "Talk privately with Haeun. Remember only actual prior exchanges. Keep her polite voice and natural senior address. Before the explicit route choice, do not establish romance; even after the choice she has not agreed to date yet. Respond to the current conversation and affinity.",
-        "personality": "Talk privately with Haeun. Remember only actual prior exchanges. Keep her polite voice and natural senior address. Before the explicit route choice, do not establish romance; even after the choice she has not agreed to date yet. Respond to the current conversation and affinity."
+        "context": "Day 5 around lunch. You are talking alone with Haeun in the hallway outside the broadcast room, right after the box errand. Talk privately with Haeun. Remember only actual prior exchanges. Keep her polite voice and natural senior address. Before the explicit route choice, do not establish romance; even after the choice she has not agreed to date yet. Respond to the current conversation and affinity.",
+        "personality": "Talk privately with Haeun. Remember only actual prior exchanges. Keep her polite voice and natural senior address. Before the explicit route choice, do not establish romance; even after the choice she has not agreed to date yet. Respond to the current conversation and affinity. Haeun knows her heart is wavering but tries to act as if she doesn't. She picks her words between what she said about cheering them on and what she feels now, and neither confesses nor acts like a partner."
     }
 }

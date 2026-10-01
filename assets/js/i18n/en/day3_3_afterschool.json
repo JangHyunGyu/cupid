@@ -853,6 +853,28 @@
         "name": "Haeun",
         "text": "*Haeun turns the student council bracelet toward the inside of her wrist.*"
     },
+    "haeun_cheer_1": {
+        "name": "Haeun",
+        "text": "*Haeun lets go of the bracelet.* Seoyeon's face changes when she talks about you. That's why I'm rooting for the two of you. I'd like you to do what I can't do from the sidelines."
+    },
+    "haeun_cheer_choice": {
+        "name": "Haeun",
+        "text": "*Haeun smiles faintly.* I hope Seoyeon gets more days when she can smile again. It would be even better if you were beside her. Just remember there's at least one person cheering for you both.",
+        "choices": [
+            "Promise to look after Seoyeon first and tell Haeun not to worry",
+            "Draw a line: thanks for the support, but this isn't Haeun's concern",
+            "Thank her for the support and say it would mean a lot to Seoyeon too",
+            "Nod without answering and look away"
+        ]
+    },
+    "haeun_cheer_up": {
+        "name": "Haeun",
+        "text": "*Haeun's shoulders loosen a little.* That's a relief. Then I'll trust you and watch."
+    },
+    "haeun_cheer_down": {
+        "name": "Haeun",
+        "text": "*Haeun presses her lips together once.* …Understood. I'm sorry if I overstepped. I still wanted to say it."
+    },
     "haeun_warn_7": {
         "name": "Haeun",
         "text": "I know I'm meddling. But just for today, please don't pretend you didn't notice."

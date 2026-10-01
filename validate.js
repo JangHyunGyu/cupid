@@ -1289,7 +1289,7 @@ for (const [sceneId, { scene }] of Object.entries(allScenes)) {
 }
 
 // ===== TEST 7: stats 캐릭터 키 검증 =====
-const validStatsCharKeys = [...validCharKeys, '#{current_character}'];
+const validStatsCharKeys = [...validCharKeys, 'Haeun', '#{current_character}'];
 for (const [sceneId, { scene }] of Object.entries(allScenes)) {
     if (scene.stats) {
         for (const charKey of Object.keys(scene.stats)) {

@@ -1089,10 +1089,21 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": null,
         "routeBeforeRender": true,
         "branches": [
-            { "condition": "day4_counteroffer_penalty_deferred", "next": "tour_co_branch" },
+            { "condition": "day4_counteroffer_penalty_deferred", "next": "morning5_co_haeun_check" },
             { "condition": "day4_confession_accepted", "next": "morning5_committed_end" },
             { "next": "morning5_end" }
         ]
+    },
+    "morning5_co_haeun_check": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "routeBeforeRender": true,
+        "affinityChar": "Haeun",
+        "affinityBranches": [
+            { "minAffinity": 8, "next": "day5_haeun_gate" },
+            { "minAffinity": -100, "next": "tour_co_branch" }
+        ],
+        "next": "tour_co_branch"
     },
     "morning5_end": {
         "background": "assets/images/background/room_school.png",

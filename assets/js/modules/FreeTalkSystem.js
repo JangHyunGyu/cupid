@@ -476,6 +476,108 @@ class FreeTalkSystem {
         return { romanticInterlude, actualAffinity, affinity: romanticInterlude ? 100 : actualAffinity };
     }
 
+    /**
+     * 하은 감정 단계 지시문 (캐시 경계 뒤 동적 영역에만 주입)
+     * - 응원 → 자각 → 외면과 동요 → 죄책감 → 결정 순서로 장면별 단계를 고정한다.
+     * - 하은 개인 대화 호감도 기준(anchor)은 haeunRomance 장면과 4·5일차 개인 대화에만 붙는다.
+     */
+    _getHaeunStageGuidance(scene, sceneId, lang = 'ko') {
+        const language = String(lang || 'ko').toLowerCase().split('-')[0];
+        const pick = table => table[language] || table.en || table.ko;
+        const STAGES = {
+            cheer: {
+                ko: "[하은의 현재 단계: 응원] 하은은 서연과 주인공을 응원하는 입장이다. 서연을 걱정해 주인공에게 서연 곁을 부탁할 뿐 자기 감정은 아직 드러내지 않는다. 호감이나 연애 쪽으로 기울이지 않는다.",
+                en: "[Haeun's current stage: cheering] Haeun is rooting for Seoyeon and the protagonist. Worried about Seoyeon, she asks the protagonist to stay by her side and does not show her own feelings yet. Do not lean toward attraction or romance.",
+                ja: "[ハウンの現在の段階：応援] ハウンはソヨンと主人公を応援する立場。ソヨンを心配して主人公に彼女のそばにいてほしいと頼み、自分の気持ちはまだ見せない。好意や恋愛の方向には傾けない。",
+                es: "[Etapa actual de Haeun: apoyo] Haeun apoya a Seoyeon y al protagonista. Preocupada por Seoyeon, le pide al protagonista que se quede a su lado y aún no muestra sus propios sentimientos. No la inclines hacia la atracción ni el romance.",
+                fr: "[Étape actuelle de Haeun : soutien] Haeun soutient Seoyeon et le protagoniste. Inquiète pour Seoyeon, elle demande au protagoniste de rester près d’elle et ne montre pas encore ses propres sentiments. Ne l’oriente ni vers l’attirance ni vers la romance.",
+                de: "[Haeuns aktuelle Phase: Unterstützung] Haeun unterstützt Seoyeon und den Protagonisten. Aus Sorge um Seoyeon bittet sie den Protagonisten, bei ihr zu bleiben, und zeigt ihre eigenen Gefühle noch nicht. Lenke sie nicht in Richtung Zuneigung oder Romantik.",
+                pt: "[Etapa atual de Haeun: apoio] Haeun torce por Seoyeon e pelo protagonista. Preocupada com Seoyeon, pede ao protagonista que fique ao lado dela e ainda não mostra os próprios sentimentos. Não incline para atração nem romance.",
+                zh: "[夏恩当前阶段：支持] 夏恩站在支持书妍和主角的立场上。她担心书妍，请主角留在书妍身边，还没有表露自己的感情。不要往好感或恋爱的方向引。"
+            },
+            notice: {
+                ko: "[하은의 현재 단계: 자각] 서연 얘기를 하다 보면 주인공 얘기가 길어지는 걸 하은 스스로 낯설어 한다. 서연을 응원한다는 말은 거두지 않지만 표정과 말끝에 망설임이 묻어난다. 마음을 확정하거나 고백하지 않는다.",
+                en: "[Haeun's current stage: awareness] Haeun finds it unfamiliar that talking about Seoyeon keeps turning into talking about the protagonist. She does not take back her support for Seoyeon, but hesitation shows in her face and the end of her sentences. She neither settles on her feelings nor confesses.",
+                ja: "[ハウンの現在の段階：自覚] ソヨンの話をしていると主人公の話が長くなってしまうことを、ハウン自身が不思議に思っている。ソヨンを応援するという言葉は取り消さないが、表情や語尾にためらいがにじむ。気持ちを確定させたり告白したりはしない。",
+                es: "[Etapa actual de Haeun: toma de conciencia] A Haeun le resulta extraño que hablar de Seoyeon acabe derivando en hablar del protagonista. No retira su apoyo a Seoyeon, pero la duda se nota en su rostro y en el final de sus frases. No define sus sentimientos ni se confiesa.",
+                fr: "[Étape actuelle de Haeun : prise de conscience] Haeun trouve étrange que parler de Seoyeon dérive vers le protagoniste. Elle ne retire pas son soutien à Seoyeon, mais l’hésitation se lit sur son visage et dans la fin de ses phrases. Elle ne fixe pas ses sentiments et ne se déclare pas.",
+                de: "[Haeuns aktuelle Phase: Bewusstwerden] Haeun findet es fremd, dass Gespräche über Seoyeon zum Protagonisten abdriften. Ihre Unterstützung für Seoyeon nimmt sie nicht zurück, aber Zögern zeigt sich in ihrem Gesicht und am Satzende. Sie legt sich nicht auf ihre Gefühle fest und gesteht nichts.",
+                pt: "[Etapa atual de Haeun: percepção] Haeun estranha que falar da Seoyeon acabe virando falar do protagonista. Ela não retira o apoio à Seoyeon, mas a hesitação aparece no rosto e no fim das frases. Não define os sentimentos nem se declara.",
+                zh: "[夏恩当前阶段：察觉] 夏恩自己也觉得奇怪：聊着书妍，话题却越来越多地绕到主角身上。她没有收回对书妍的支持，但犹豫会从表情和话尾透出来。她不会确定自己的心意，也不会表白。"
+            },
+            waver: {
+                ko: "[하은의 현재 단계: 외면과 동요] 하은은 마음이 흔들리는 걸 알지만 모른 척하려 한다. “아무것도 아니에요” 같은 말로 넘기려다 말끝이 흐려진다. 응원한다고 했던 말과 지금 마음 사이에서 말을 고른다. 고백하지도 연인처럼 굴지도 않는다.",
+                en: "[Haeun's current stage: avoidance and wavering] Haeun knows her heart is wavering but tries to act as if it isn't. She tries to wave it off with lines like “It's nothing,” but her sentences trail off. She picks her words between what she said about cheering them on and what she feels now. She neither confesses nor acts like a partner.",
+                ja: "[ハウンの現在の段階：目をそらすことと動揺] ハウンは気持ちが揺れていることに気づいているが、気づかないふりをしようとする。「何でもありません」と流そうとして語尾が揺らぐ。応援すると言った言葉と今の気持ちの間で言葉を選ぶ。告白したり恋人のように振る舞ったりはしない。",
+                es: "[Etapa actual de Haeun: evasión y vacilación] Haeun sabe que su corazón vacila, pero intenta hacer como si no. Quiere quitarle importancia con frases como «no es nada», pero se le apagan las palabras. Elige sus palabras entre lo que dijo de apoyarlos y lo que siente ahora. No se confiesa ni actúa como una pareja.",
+                fr: "[Étape actuelle de Haeun : évitement et trouble] Haeun sait que son cœur vacille mais essaie de faire comme si de rien n’était. Elle tente de passer à autre chose avec des phrases comme « ce n’est rien », mais ses mots s’éteignent. Elle choisit ses mots entre ce qu’elle a dit sur leur soutien et ce qu’elle ressent maintenant. Elle ne se déclare pas et n’agit pas en petite amie.",
+                de: "[Haeuns aktuelle Phase: Ausweichen und Schwanken] Haeun weiß, dass ihr Herz schwankt, versucht aber, so zu tun, als wäre nichts. Sie will es mit Sätzen wie „Es ist nichts“ abtun, doch ihre Sätze verebben. Sie wählt ihre Worte zwischen dem, was sie über ihre Unterstützung gesagt hat, und dem, was sie jetzt fühlt. Sie gesteht nichts und tut nicht wie eine Freundin.",
+                pt: "[Etapa atual de Haeun: evasão e hesitação] Haeun sabe que o coração está balançando, mas tenta agir como se não estivesse. Ela tenta dar de ombros com frases como “não é nada”, mas as palavras se perdem no fim. Escolhe as palavras entre o que disse sobre torcer pelos dois e o que sente agora. Não se declara nem age como namorada.",
+                zh: "[夏恩当前阶段：回避与动摇] 夏恩知道自己的心在动摇，却想装作没有。她想用“没什么”之类的话带过，话尾却渐渐低下去。她在说过要支持他们的话和此刻的心情之间斟酌措辞。她不会表白，也不会表现得像恋人。"
+            },
+            guilt: {
+                ko: "[하은의 현재 단계: 죄책감과 설렘] 주인공이 {R}보다 하은을 택했다. 하은은 설렘과 {R}에 대한 미안함이 섞여 말을 고른다. 응원한다던 말이 거짓은 아니었다고 인정하면서 지금 마음을 조심스럽게 꺼낸다. 아직 사귀기로 하지 않았다.",
+                en: "[Haeun's current stage: guilt and flutter] The protagonist has chosen Haeun over {R}. Haeun picks her words with a flutter of excitement mixed with guilt toward {R}. She admits the cheering was not a lie while carefully voicing how she feels now. They have not agreed to date yet.",
+                ja: "[ハウンの現在の段階：罪悪感とときめき] 主人公は{R}ではなくハウンを選んだ。ハウンはときめきと{R}への申し訳なさが入り混じり、言葉を選ぶ。応援すると言ったのは嘘ではなかったと認めつつ、今の気持ちをそっと口にする。まだ付き合うとは決めていない。",
+                es: "[Etapa actual de Haeun: culpa e ilusión] El protagonista ha elegido a Haeun en vez de a {R}. Haeun elige sus palabras entre la ilusión y la culpa hacia {R}. Admite que el apoyo no era mentira y expresa con cuidado lo que siente ahora. Todavía no han acordado salir.",
+                fr: "[Étape actuelle de Haeun : culpabilité et émoi] Le protagoniste a choisi Haeun plutôt que {R}. Haeun choisit ses mots entre l’émoi et la culpabilité envers {R}. Elle admet que le soutien n’était pas un mensonge et exprime avec prudence ce qu’elle ressent maintenant. Ils n’ont pas encore convenu de sortir ensemble.",
+                de: "[Haeuns aktuelle Phase: Schuld und Herzklopfen] Der Protagonist hat Haeun statt {R} gewählt. Haeun wählt ihre Worte zwischen Herzklopfen und Schuldgefühl gegenüber {R}. Sie räumt ein, dass die Unterstützung keine Lüge war, und spricht vorsichtig aus, was sie jetzt fühlt. Sie haben noch nicht vereinbart, zusammenzukommen.",
+                pt: "[Etapa atual de Haeun: culpa e emoção] O protagonista escolheu Haeun em vez de {R}. Haeun escolhe as palavras entre a emoção e a culpa em relação a {R}. Admite que o apoio não era mentira e expressa com cuidado o que sente agora. Ainda não combinaram namorar.",
+                zh: "[夏恩当前阶段：愧疚与悸动] 主角选择了夏恩，而不是{R}。夏恩的悸动里掺着对{R}的愧疚，措辞很谨慎。她承认当初说支持并不是谎话，同时小心地说出此刻的心情。两人还没有约定交往。"
+            },
+            decide: {
+                ko: "[하은의 현재 단계: 결정] 하은은 미안함을 그대로 둔 채 사귈지 정하려 한다. 주인공이 {R}에 대한 하은의 미안함을 가볍게 넘기지 않고 하은의 마음을 존중하는지 살핀다. 합의하기 전에는 연인으로 대하지 않는다.",
+                en: "[Haeun's current stage: deciding] Haeun is trying to decide whether to date while leaving her guilt as it is. She watches whether the protagonist takes her guilt toward {R} seriously and respects her feelings. Until they agree, she does not treat them as a couple.",
+                ja: "[ハウンの現在の段階：決断] ハウンは申し訳なさをそのままにして、付き合うかどうかを決めようとしている。主人公が{R}への申し訳なさを軽く流さず、自分の気持ちを尊重してくれるかを見ている。合意するまでは恋人として接しない。",
+                es: "[Etapa actual de Haeun: decisión] Haeun intenta decidir si salir sin borrar su culpa. Observa si el protagonista se toma en serio su culpa hacia {R} y respeta sus sentimientos. Hasta que acuerden algo, no lo trata como pareja.",
+                fr: "[Étape actuelle de Haeun : décision] Haeun essaie de décider si elle veut sortir ensemble sans effacer sa culpabilité. Elle observe si le protagoniste prend au sérieux sa culpabilité envers {R} et respecte ses sentiments. Tant qu’ils n’en ont pas convenu, elle ne le traite pas en couple.",
+                de: "[Haeuns aktuelle Phase: Entscheidung] Haeun versucht zu entscheiden, ob sie zusammenkommen will, ohne ihre Schuldgefühle zu löschen. Sie achtet darauf, ob der Protagonist ihre Schuldgefühle gegenüber {R} ernst nimmt und ihre Gefühle respektiert. Bevor sie sich einig sind, behandelt sie ihn nicht wie einen Partner.",
+                pt: "[Etapa atual de Haeun: decisão] Haeun tenta decidir se quer namorar sem apagar a culpa. Observa se o protagonista leva a sério a culpa dela em relação a {R} e respeita seus sentimentos. Até que combinem, não trata como casal.",
+                zh: "[夏恩当前阶段：决定] 夏恩想在不抹去愧疚的前提下决定要不要交往。她观察主角是否认真对待她对{R}的愧疚、是否尊重她的心意。在达成一致之前，她不会把两人当作恋人。"
+            }
+        };
+        const ANCHOR = {
+                ko: "[하은 개인 대화 호감도 기준] 진심이 담긴 말은 +2, 구체적인 배려나 공감이나 하은의 망설임을 알아주는 말은 +3까지 줄 수 있다. 하은이 먼저 마음을 열었을 때 건네는 평범한 예의는 0~+1이다. 감점 기준과 한 턴 상한은 그대로 지키며 연애 접근은 기존 경계 규칙을 따른다.",
+                en: "[Haeun private-conversation affinity anchors] Heartfelt words may earn +2; concrete care, empathy, or recognizing Haeun's hesitation may earn up to +3. Ordinary courtesy right after Haeun opens up is 0 to +1. Keep the penalty bands and the per-turn cap as they are, and follow the existing boundary rules for romantic approaches.",
+                ja: "[ハウンとの個人会話の好感度基準] 心のこもった言葉は+2、具体的な気遣いや共感、ハウンのためらいに気づく言葉は最大+3まで与えてよい。ハウンのほうから心を開いたときの普通の礼儀は0〜+1。減点の基準と1ターンの上限は従来どおり守り、恋愛的な接近は既存の境界ルールに従う。",
+                es: "[Criterios de afinidad en las charlas a solas con Haeun] Las palabras sinceras pueden dar +2; el cuidado concreto, la empatía o notar la duda de Haeun, hasta +3. La cortesía corriente justo después de que Haeun se abra vale de 0 a +1. Mantén las bandas de penalización y el tope por turno, y sigue las reglas de límites existentes para los acercamientos románticos.",
+                fr: "[Repères d’affinité pour les échanges en tête-à-tête avec Haeun] Des paroles sincères peuvent valoir +2 ; une attention concrète, de l’empathie ou le fait de remarquer l’hésitation de Haeun, jusqu’à +3. La simple politesse juste après que Haeun s’est confiée vaut de 0 à +1. Conserve les paliers de pénalité et le plafond par tour, et suis les règles de limites existantes pour les approches romantiques.",
+                de: "[Maßstäbe für die Zuneigung in Einzelgesprächen mit Haeun] Aufrichtige Worte können +2 bringen; konkrete Fürsorge, Empathie oder das Bemerken von Haeuns Zögern bis zu +3. Gewöhnliche Höflichkeit direkt nach Haeuns Öffnung gibt 0 bis +1. Behalte die Abzugsstufen und die Obergrenze pro Zug bei und folge den bestehenden Grenzregeln für romantische Annäherung.",
+                pt: "[Referências de afinidade nas conversas a sós com Haeun] Palavras sinceras podem render +2; cuidado concreto, empatia ou perceber a hesitação de Haeun, até +3. A cortesia comum logo depois de Haeun se abrir vale de 0 a +1. Mantenha as faixas de penalidade e o limite por turno, e siga as regras de limite existentes para aproximações românticas.",
+                zh: "[与夏恩单独交谈时的好感度标准] 发自真心的话可给+2；具体的关心、共情，或是察觉到夏恩的犹豫，最多可给+3。夏恩先敞开心扉之后，普通的礼貌只给0到+1。扣分标准和每回合上限保持不变，恋爱方面的接近仍遵守现有的界限规则。"
+            };
+        const GENERIC_OTHER = {
+                ko: "다른 사람",
+                en: "the other person",
+                ja: "ほかの人",
+                es: "la otra persona",
+                fr: "l’autre personne",
+                de: "die andere Person",
+                pt: "a outra pessoa",
+                zh: "对方"
+            };
+        const getFlag = flag => this.stateManager.getFlag?.(flag);
+        const cheered = !!getFlag('haeun_cheer_seen');
+        const routeChosen = !!getFlag('haeun_route_selected') || !!getFlag('haeun_switch_declared');
+        const rivalId = (typeof getFlag('day5_haeun_route_rival') === 'string' && getFlag('day5_haeun_route_rival'))
+            || (typeof getFlag('day5_haeun_rival') === 'string' && getFlag('day5_haeun_rival')) || '';
+        const focus = Array.isArray(scene?.groupParticipants) ? scene.groupParticipants.find(item => item?.role === 'focus' && item.id !== 'Haeun') : null;
+        const rivalName = focus?.id ? this._getLocalizedGroupCharacterName(focus.id, language) : rivalId ? this._getLocalizedGroupCharacterName(rivalId, language) : pick(GENERIC_OTHER);
+        const stageBySceneId = {
+            haeun_freetalk: 'cheer',
+            day4_haeun_personal: cheered ? 'notice' : '',
+            day5_haeun_personal: cheered ? 'waver' : '',
+            day5_haeun_private_1: routeChosen ? 'guilt' : '',
+            day5_haeun_private_2: routeChosen ? 'decide' : ''
+        };
+        const stage = stageBySceneId[sceneId] || (scene?.groupMode === 'haeun_switch' ? 'guilt' : '');
+        const parts = [];
+        if (stage && STAGES[stage]) parts.push(pick(STAGES[stage]).replace(/\{R\}/g, rivalName));
+        const anchored = scene?.haeunRomance === true || sceneId === 'day4_haeun_personal' || sceneId === 'day5_haeun_personal';
+        if (anchored && scene?.type !== 'group_free_talk') parts.push(pick(ANCHOR));
+        return parts.join(' ');
+    }
+
     async startFreeTalk(scene, sceneId) {
         if (scene.legacyHaeunMaxTurns && this.stateManager.getFlag('haeun_route_selected')
             && !this.stateManager.getFlag('haeun_switch_declared')) {
@@ -612,7 +714,7 @@ class FreeTalkSystem {
             sceneName: charKey,
             displayName: scene.name,
             locationName,
-            context: (charKey === 'Haeun' ? (scene.haeunRomance === true ? '[Current route state: the player explicitly chose Haeun. Mutual dating has NOT been agreed yet.] ' : '[Current route state: Haeun has NOT been chosen for romance.] ') : '') + (scene.context || ({ es: "La escena continúa a partir de la última intervención del protagonista.", ja: "主人公が直前に発した言葉や取った行動を受けて、場面を続けます。", en: "Continuing the scene from the protagonist's latest line or action.", fr: "La scène reprend après la dernière parole ou action du protagoniste.", de: "Die Szene wird nach der letzten Äußerung oder Handlung des Protagonisten fortgesetzt.", pt: "A cena continua a partir da última fala ou ação do protagonista.", zh: "接着主角最新的一句话或一个动作，继续这个场景。" }[lang] || "주인공이 방금 한 말이나 행동에서 장면을 이어갑니다.")),
+            context: (charKey === 'Haeun' ? (scene.haeunRomance === true ? '[Current route state: the player explicitly chose Haeun. Mutual dating has NOT been agreed yet.] ' : '[Current route state: Haeun has NOT been chosen for romance.] ') + ((this._getHaeunStageGuidance(scene, sceneId, lang) || '') ? this._getHaeunStageGuidance(scene, sceneId, lang) + ' ' : '') : '') + (scene.context || ({ es: "La escena continúa a partir de la última intervención del protagonista.", ja: "主人公が直前に発した言葉や取った行動を受けて、場面を続けます。", en: "Continuing the scene from the protagonist's latest line or action.", fr: "La scène reprend après la dernière parole ou action du protagoniste.", de: "Die Szene wird nach der letzten Äußerung oder Handlung des Protagonisten fortgesetzt.", pt: "A cena continua a partir da última fala ou ação do protagonista.", zh: "接着主角最新的一句话或一个动作，继续这个场景。" }[lang] || "주인공이 방금 한 말이나 행동에서 장면을 이어갑니다.")),
             affinity: sceneDialogue.affinity,
             romanticInterlude: sceneDialogue.romanticInterlude,
             extraGuideline: [scene.personality, scene.extra_guideline].filter(Boolean).join("\n"),
@@ -994,7 +1096,7 @@ class FreeTalkSystem {
                 : 'route_social'),
             participants,
             locationName: this._getLocalizedGroupLocation(scene, lang),
-            context: scene.context || '',
+            context: [scene.groupMode === 'haeun_switch' ? this._getHaeunStageGuidance(scene, this.currentSceneId, lang) : '', scene.context || ''].filter(Boolean).join(' '),
             extraGuideline: scene.personality || scene.extra_guideline || '',
             playerName: this.stateManager.playerName || '',
             choiceState: this._getGroupChoiceState(scene, lang),

@@ -853,6 +853,28 @@
         "name": "Haeun",
         "text": "*Haeun gira la pulsera del consejo estudiantil hacia el interior de la muñeca.*"
     },
+    "haeun_cheer_1": {
+        "name": "Haeun",
+        "text": "*Haeun suelta la pulsera.* Cuando Seoyeon habla de ti, le cambia la cara. Por eso os apoyo a los dos. Quiero que hagas tú lo que yo no puedo hacer desde fuera."
+    },
+    "haeun_cheer_choice": {
+        "name": "Haeun",
+        "text": "*Haeun sonríe apenas.* Ojalá Seoyeon vuelva a sonreír más días. Y si tú estás a su lado, mejor. Solo recuerda que hay al menos una persona que os apoya.",
+        "choices": [
+            "Prometer cuidar primero de Seoyeon y decirle a Haeun que no se preocupe",
+            "Marcar distancia: se agradece el apoyo, pero no es asunto de Haeun",
+            "Agradecerle el apoyo y decir que a Seoyeon también le daría fuerzas saberlo",
+            "Asentir sin responder y apartar la mirada"
+        ]
+    },
+    "haeun_cheer_up": {
+        "name": "Haeun",
+        "text": "*A Haeun se le relajan un poco los hombros.* Me alivia. Entonces confiaré y miraré desde aquí."
+    },
+    "haeun_cheer_down": {
+        "name": "Haeun",
+        "text": "*Haeun aprieta los labios un instante.* ...Entendido. Perdona si me pasé de la raya. Aun así, quería decírtelo."
+    },
     "haeun_warn_7": {
         "name": "Haeun",
         "text": "Sé que me estoy metiendo donde no me llaman. Aun así, por hoy no finjas que no has visto nada."

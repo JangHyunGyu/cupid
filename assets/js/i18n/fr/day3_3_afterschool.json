@@ -853,6 +853,28 @@
         "name": "Haeun",
         "text": "*Haeun tourne son bracelet du conseil vers l'intérieur de son poignet.*"
     },
+    "haeun_cheer_1": {
+        "name": "Haeun",
+        "text": "*Haeun lâche le bracelet.* Quand Seoyeon parle de toi, son visage change. C’est pour ça que je vous soutiens, tous les deux. J’aimerais que tu fasses ce que je ne peux pas faire depuis le bord."
+    },
+    "haeun_cheer_choice": {
+        "name": "Haeun",
+        "text": "*Haeun sourit à peine.* J’espère que Seoyeon sourira de nouveau plus souvent. Ce serait encore mieux si tu étais à ses côtés. Souviens-toi seulement qu’il y a au moins une personne qui vous soutient.",
+        "choices": [
+            "Promettre de s’occuper d’abord de Seoyeon et dire à Haeun de ne pas s’inquiéter",
+            "Poser une limite : merci du soutien, mais cela ne regarde pas Haeun",
+            "La remercier de son soutien et dire que Seoyeon y puiserait de la force aussi",
+            "Hocher la tête sans répondre et détourner le regard"
+        ]
+    },
+    "haeun_cheer_up": {
+        "name": "Haeun",
+        "text": "*Les épaules de Haeun se relâchent un peu.* Ça me soulage. Alors je te ferai confiance et je regarderai."
+    },
+    "haeun_cheer_down": {
+        "name": "Haeun",
+        "text": "*Haeun serre brièvement les lèvres.* …D’accord. Pardon si j’ai dépassé les bornes. Je voulais quand même te le dire."
+    },
     "haeun_warn_7": {
         "name": "Haeun",
         "text": "Je sais que je me mêle de ce qui ne me regarde pas. Mais aujourd'hui, s'il te plaît, ne fais pas comme si tu n'avais rien vu."

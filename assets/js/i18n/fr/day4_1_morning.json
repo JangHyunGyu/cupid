@@ -773,6 +773,28 @@
         "name": "{name}",
         "text": "*La conversation terminée, Haeun et moi nous écartons près du portail. Des passants attendent au feu devant le passage piéton.*"
     },
+    "day4_haeun_notice_1": {
+        "name": "Haeun",
+        "text": "*Haeun évoque Seoyeon près du portail, laisse sa phrase en suspens et touche le bracelet du bout des doigts.* C’est bizarre. Je voulais parler de Seoyeon, mais plus je parle, plus ça finit par être de toi. Je ne sais pas moi-même pourquoi."
+    },
+    "day4_haeun_notice_choice": {
+        "name": "Haeun",
+        "text": "*Le regard de Haeun s’attarde un instant sur toi, puis tombe vers le sol.* Mon visage avait l’air bizarre, à l’instant ?",
+        "choices": [
+            "Faire semblant de ne pas voir son expression et regarder l’heure",
+            "Remarquer le changement d’expression de Haeun et lui demander doucement à quoi elle pense",
+            "Détourner exprès la conversation vers Seoyeon",
+            "Écouter Haeun jusqu’au bout et la remercier"
+        ]
+    },
+    "day4_haeun_notice_up": {
+        "name": "Haeun",
+        "text": "*Haeun cligne des yeux, surprise.* …Merci de l’avoir pris au sérieux. C’est trop tôt pour le dire avec des mots, mais je me sens un peu plus légère."
+    },
+    "day4_haeun_notice_down": {
+        "name": "Haeun",
+        "text": "*Haeun sourit maladroitement et recule d’un pas.* Ah, oui. On parlait de Seoyeon. …C’était juste comme ça. Oublie ce que j’ai dit."
+    },
     "day4_haeun_reputation_cg": {
         "name": "{name}",
         "text": "*Haeun reste devant le portail de l’école, attendant une réponse.*"
@@ -780,7 +802,7 @@
     "day4_haeun_personal": {
         "name": "Haeun",
         "text": "Avant que tu partes, on peut parler ? J’ai réfléchi à hier. *Haeun se décale près du portail.* Je peux te parler un peu de moi, aujourd’hui ?",
-        "context": "Conversation privée avec Haeun. Ne rappeler que des échanges réels. Garder sa voix polie et sa façon de s’adresser à un élève plus âgé. Avant le choix de sa route, ne pas établir de romance ; même après, elle n’a pas encore accepté de sortir ensemble. Suivre la conversation et l’affinité actuelles.",
-        "personality": "Conversation privée avec Haeun. Ne rappeler que des échanges réels. Garder sa voix polie et sa façon de s’adresser à un élève plus âgé. Avant le choix de sa route, ne pas établir de romance ; même après, elle n’a pas encore accepté de sortir ensemble. Suivre la conversation et l’affinité actuelles."
+        "context": "Matin du jour 4. Tu parles seul à seul avec Haeun près du portail du lycée. Conversation privée avec Haeun. Ne rappeler que des échanges réels. Garder sa voix polie et sa façon de s’adresser à un élève plus âgé. Avant le choix de sa route, ne pas établir de romance ; même après, elle n’a pas encore accepté de sortir ensemble. Suivre la conversation et l’affinité actuelles.",
+        "personality": "Conversation privée avec Haeun. Ne rappeler que des échanges réels. Garder sa voix polie et sa façon de s’adresser à un élève plus âgé. Avant le choix de sa route, ne pas établir de romance ; même après, elle n’a pas encore accepté de sortir ensemble. Suivre la conversation et l’affinité actuelles. Si le soutien de Haeun pour Seoyeon a réellement été évoqué plus tôt, poursuivre ce fil. Elle trouve étrange que parler de Seoyeon dérive vers le protagoniste, mais elle ne fixe pas ses sentiments et ne se déclare pas."
     }
 }

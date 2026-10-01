@@ -384,7 +384,29 @@
     },
     "day5_haeun_defends": {
         "name": "Haeun",
-        "text": "C’est moi qui lui ai demandé de l’aide. Avec lui, je n’hésite pas à demander. *Haeun rapproche la caisse.* On ne faisait rien de mal."
+        "text": "C’est moi qui lui ai demandé de l’aide. Avec lui, je n’hésite pas à demander. *Haeun rapproche la caisse.* On ne faisait rien de mal. …Alors pourquoi ça sonne comme une excuse, maintenant que je l’ai dit ?"
+    },
+    "day5_haeun_waver_1": {
+        "name": "Haeun",
+        "text": "*Haeun regarde ses mains vides et tripote longuement son bracelet.* J’ai dit tout à l’heure que ce n’était rien d’étrange. C’est vrai. Mais je n’arrête pas de me rappeler que j’ai dit vous soutenir tous les deux. Je vais faire comme si je n’avais rien remarqué."
+    },
+    "day5_haeun_waver_choice": {
+        "name": "Haeun",
+        "text": "*Haeun ouvre la main qu’elle serrait, puis la referme.* Ça va. Ce n’est rien. …Vraiment rien, mais toi, qu’en penses-tu ?",
+        "choices": [
+            "Dire que quelqu’un d’autre doit attendre et partir en premier",
+            "Lui dire qu’elle n’a pas à faire semblant d’aller bien et que vaciller n’a rien d’étrange",
+            "Poser une limite et dire qu’on n’en parle plus",
+            "Rester en silence à côté d’elle jusqu’à ce qu’elle se calme"
+        ]
+    },
+    "day5_haeun_waver_up": {
+        "name": "Haeun",
+        "text": "*Haeun expire longuement.* …Merci. Ça fait un peu moins peur maintenant. Reste un peu à côté de moi."
+    },
+    "day5_haeun_waver_down": {
+        "name": "Haeun",
+        "text": "*Haeun appuie du bout du doigt sur le fermoir du bracelet, puis le relâche.* …D’accord. Je vais faire comme si ce n’était rien."
     },
     "day5_haeun_finish": {
         "name": "{name}",
@@ -700,7 +722,7 @@
     "day5_haeun_personal": {
         "name": "Haeun",
         "text": "*Haeun ferme la porte de la salle radio et se place à côté de toi.* Je n’ai pas pu te le demander devant tout le monde. Avec qui voulais-tu passer la journée ?",
-        "context": "Conversation privée avec Haeun. Ne rappeler que des échanges réels. Garder sa voix polie et sa façon de s’adresser à un élève plus âgé. Avant le choix de sa route, ne pas établir de romance ; même après, elle n’a pas encore accepté de sortir ensemble. Suivre la conversation et l’affinité actuelles.",
-        "personality": "Conversation privée avec Haeun. Ne rappeler que des échanges réels. Garder sa voix polie et sa façon de s’adresser à un élève plus âgé. Avant le choix de sa route, ne pas établir de romance ; même après, elle n’a pas encore accepté de sortir ensemble. Suivre la conversation et l’affinité actuelles."
+        "context": "Jour 5, vers midi. Tu parles seul à seul avec Haeun dans le couloir devant la salle de diffusion, juste après la course des caisses. Conversation privée avec Haeun. Ne rappeler que des échanges réels. Garder sa voix polie et sa façon de s’adresser à un élève plus âgé. Avant le choix de sa route, ne pas établir de romance ; même après, elle n’a pas encore accepté de sortir ensemble. Suivre la conversation et l’affinité actuelles.",
+        "personality": "Conversation privée avec Haeun. Ne rappeler que des échanges réels. Garder sa voix polie et sa façon de s’adresser à un élève plus âgé. Avant le choix de sa route, ne pas établir de romance ; même après, elle n’a pas encore accepté de sortir ensemble. Suivre la conversation et l’affinité actuelles. Haeun sait que son cœur vacille mais essaie de faire comme si de rien n’était. Elle choisit ses mots entre ce qu’elle a dit sur leur soutien et ce qu’elle ressent maintenant, sans se déclarer ni agir en petite amie."
     }
 }

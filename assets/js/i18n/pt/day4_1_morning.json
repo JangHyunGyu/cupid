@@ -773,6 +773,28 @@
         "name": "{name}",
         "text": "*Quando a conversa termina, Haeun e eu nos afastamos para o lado do portão. Há pessoas esperando o sinal na faixa de pedestres.*"
     },
+    "day4_haeun_notice_1": {
+        "name": "Haeun",
+        "text": "*Haeun puxa o assunto da Seoyeon junto ao portão, deixa a frase no ar e toca a pulseira com a ponta dos dedos.* É estranho. Eu queria falar da Seoyeon, mas, quanto mais falo, mais acabo falando de você. Eu mesma não sei por quê."
+    },
+    "day4_haeun_notice_choice": {
+        "name": "Haeun",
+        "text": "*O olhar de Haeun fica um instante em você e depois desce para o chão.* Minha cara ficou estranha agora há pouco?",
+        "choices": [
+            "Fingir que não viu a expressão dela e olhar o relógio",
+            "Perceber a mudança na expressão de Haeun e perguntar baixinho o que ela está pensando",
+            "Mudar de assunto de propósito, voltando a falar da Seoyeon",
+            "Ouvir até o fim o que Haeun queria dizer e agradecer"
+        ]
+    },
+    "day4_haeun_notice_up": {
+        "name": "Haeun",
+        "text": "*Haeun pisca, surpresa.* ...Obrigada por levar a sério. Ainda é cedo para dizer em palavras, mas me sinto um pouco mais leve."
+    },
+    "day4_haeun_notice_down": {
+        "name": "Haeun",
+        "text": "*Haeun sorri sem jeito e dá um passo para trás.* Ah, sim. Estávamos falando da Seoyeon. ...Foi só um comentário. Esqueça, por favor."
+    },
     "day4_haeun_reputation_cg": {
         "name": "{name}",
         "text": "*Haeun permanece diante do portão da escola, esperando uma resposta.*"
@@ -780,7 +802,7 @@
     "day4_haeun_personal": {
         "name": "Haeun",
         "text": "Antes de você ir, podemos conversar? Fiquei pensando no que falamos ontem. *Haeun vai para o lado do portão.* Hoje posso falar um pouco de mim?",
-        "context": "Conversa particular com Haeun. Lembre apenas de falas reais anteriores. Preserve o jeito educado e o tratamento de um colega mais velho. Não estabeleça romance antes da escolha da rota; mesmo depois ela ainda não aceitou namorar. Responda conforme a conversa e a afinidade atuais.",
-        "personality": "Conversa particular com Haeun. Lembre apenas de falas reais anteriores. Preserve o jeito educado e o tratamento de um colega mais velho. Não estabeleça romance antes da escolha da rota; mesmo depois ela ainda não aceitou namorar. Responda conforme a conversa e a afinidade atuais."
+        "context": "Manhã do dia 4. Você conversa a sós com Haeun junto ao portão da escola. Conversa particular com Haeun. Lembre apenas de falas reais anteriores. Preserve o jeito educado e o tratamento de um colega mais velho. Não estabeleça romance antes da escolha da rota; mesmo depois ela ainda não aceitou namorar. Responda conforme a conversa e a afinidade atuais.",
+        "personality": "Conversa particular com Haeun. Lembre apenas de falas reais anteriores. Preserve o jeito educado e o tratamento de um colega mais velho. Não estabeleça romance antes da escolha da rota; mesmo depois ela ainda não aceitou namorar. Responda conforme a conversa e a afinidade atuais. Se o apoio de Haeun a Seoyeon realmente apareceu antes, continue esse fio. Ela estranha que falar da Seoyeon acabe virando falar do protagonista, mas não define seus sentimentos nem se declara."
     }
 }

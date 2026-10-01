@@ -773,6 +773,28 @@
         "name": "{name}",
         "text": "*As the conversation ends, Haeun and I step aside by the gate. People are waiting for the light at the crossing.*"
     },
+    "day4_haeun_notice_1": {
+        "name": "Haeun",
+        "text": "*Haeun brings up Seoyeon by the school gate, trails off, and touches her bracelet with her fingertips.* It's strange. I meant to talk about Seoyeon, but the more I talk, the more it turns into talking about you. I don't really know why I'm like this."
+    },
+    "day4_haeun_notice_choice": {
+        "name": "Haeun",
+        "text": "*Haeun's gaze rests on you for a moment, then drops to the floor.* Did my face look strange just now?",
+        "choices": [
+            "Pretend not to see her expression and check the clock",
+            "Notice the change in Haeun's expression and quietly ask what she's thinking",
+            "Deliberately change the subject back to Seoyeon",
+            "Hear out what Haeun was trying to say and thank her"
+        ]
+    },
+    "day4_haeun_notice_up": {
+        "name": "Haeun",
+        "text": "*Haeun blinks, startled.* …Thank you for taking it in. It's too early to put it into words, but I feel a little lighter."
+    },
+    "day4_haeun_notice_down": {
+        "name": "Haeun",
+        "text": "*Haeun smiles awkwardly and steps back.* Oh, right. We were talking about Seoyeon. …It was just something I said. Please forget it."
+    },
     "day4_haeun_reputation_cg": {
         "name": "{name}",
         "text": "*Haeun stands by the school gate, waiting for an answer.*"
@@ -780,7 +802,7 @@
     "day4_haeun_personal": {
         "name": "Haeun",
         "text": "Before you go, could we talk? I thought about yesterday. *Haeun steps aside by the gate.* Could I tell you a little about myself today?",
-        "context": "Talk privately with Haeun. Remember only actual prior exchanges. Keep her polite voice and natural senior address. Before the explicit route choice, do not establish romance; even after the choice she has not agreed to date yet. Respond to the current conversation and affinity.",
-        "personality": "Talk privately with Haeun. Remember only actual prior exchanges. Keep her polite voice and natural senior address. Before the explicit route choice, do not establish romance; even after the choice she has not agreed to date yet. Respond to the current conversation and affinity."
+        "context": "Day 4 morning. You are talking alone with Haeun beside the school gate. Talk privately with Haeun. Remember only actual prior exchanges. Keep her polite voice and natural senior address. Before the explicit route choice, do not establish romance; even after the choice she has not agreed to date yet. Respond to the current conversation and affinity.",
+        "personality": "Talk privately with Haeun. Remember only actual prior exchanges. Keep her polite voice and natural senior address. Before the explicit route choice, do not establish romance; even after the choice she has not agreed to date yet. Respond to the current conversation and affinity. If Haeun cheering for Seoyeon actually came up earlier, continue that thread. She finds it unfamiliar that talking about Seoyeon keeps drifting to the protagonist, but she does not settle on her feelings or confess."
     }
 }

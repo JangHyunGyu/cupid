@@ -384,7 +384,29 @@
     },
     "day5_haeun_defends": {
         "name": "Haeun",
-        "text": "Yo le pedí ayuda. Me siento cómoda pidiéndosela. *Haeun acerca la caja.* No estábamos haciendo nada malo."
+        "text": "Yo le pedí ayuda. Me siento cómoda pidiéndosela. *Haeun acerca la caja.* No estábamos haciendo nada malo. ...Entonces, ¿por qué suena a excusa ahora que lo he dicho?"
+    },
+    "day5_haeun_waver_1": {
+        "name": "Haeun",
+        "text": "*Haeun mira sus manos vacías y se queda un buen rato tocando la pulsera.* Antes dije que no era nada raro. Es verdad. Pero no dejo de acordarme de que dije que os apoyaba a los dos. Voy a hacer como si no me hubiera dado cuenta."
+    },
+    "day5_haeun_waver_choice": {
+        "name": "Haeun",
+        "text": "*Haeun abre la mano que tenía cerrada y la vuelve a cerrar.* Estoy bien. No es nada. ...De verdad no es nada, pero ¿tú qué piensas?",
+        "choices": [
+            "Decir que alguien más estará esperando y marcharte primero",
+            "Decirle que no hace falta fingir que está bien y que dudar no es raro",
+            "Marcar un límite y decir que no hablen más de eso",
+            "Quedarte en silencio a su lado hasta que se calme"
+        ]
+    },
+    "day5_haeun_waver_up": {
+        "name": "Haeun",
+        "text": "*Haeun suelta un largo suspiro.* ...Gracias. Da un poco menos de miedo ahora. Quédate a mi lado un ratito más."
+    },
+    "day5_haeun_waver_down": {
+        "name": "Haeun",
+        "text": "*Haeun presiona el cierre de la pulsera con la yema del dedo y lo suelta.* ...Vale. Haré como que no es nada."
     },
     "day5_haeun_finish": {
         "name": "{name}",
@@ -700,7 +722,7 @@
     "day5_haeun_personal": {
         "name": "Haeun",
         "text": "*Haeun cierra la puerta de la sala de radio y se pone a tu lado.* No pude preguntarlo delante de todos. ¿Con quién querías pasar el día?",
-        "context": "Conversación privada con Haeun. Recuerda solo intercambios reales. Mantén su tono cortés y el trato a alguien de un curso superior. No establezcas un romance antes de elegir su ruta; incluso después, aún no ha aceptado salir. Responde según la conversación y la afinidad actuales.",
-        "personality": "Conversación privada con Haeun. Recuerda solo intercambios reales. Mantén su tono cortés y el trato a alguien de un curso superior. No establezcas un romance antes de elegir su ruta; incluso después, aún no ha aceptado salir. Responde según la conversación y la afinidad actuales."
+        "context": "Día 5, hacia la hora del almuerzo. Hablas a solas con Haeun en el pasillo frente a la sala de radio, justo tras el encargo de las cajas. Conversación privada con Haeun. Recuerda solo intercambios reales. Mantén su tono cortés y el trato a alguien de un curso superior. No establezcas un romance antes de elegir su ruta; incluso después, aún no ha aceptado salir. Responde según la conversación y la afinidad actuales.",
+        "personality": "Conversación privada con Haeun. Recuerda solo intercambios reales. Mantén su tono cortés y el trato a alguien de un curso superior. No establezcas un romance antes de elegir su ruta; incluso después, aún no ha aceptado salir. Responde según la conversación y la afinidad actuales. Haeun sabe que su corazón vacila, pero intenta hacer como si no. Elige las palabras entre lo que dijo de apoyarlos y lo que siente ahora, y no se confiesa ni actúa como una pareja."
     }
 }

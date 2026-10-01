@@ -125,7 +125,7 @@ test('switch groups preserve senior addresses and keep live relationship facts b
         await fixture.scene(context, state, renderer, scenes, scenes[`day5_haeun_leave_${character.toLowerCase()}`]);
         assert.equal(state.getAffinity('Haeun'),65);assert.equal(state.getAffinity(character),50);
         assert.equal(scene.maxTurns,3);assert.equal(scene.haeunRomance,true);
-        const talk={stateManager:state,getGameContext:()=>'',_getLocalizedGroupCharacterName:p._getLocalizedGroupCharacterName,_getLocalizedGroupLocation:p._getLocalizedGroupLocation,_getGroupChoiceState:p._getGroupChoiceState};
+        const talk={stateManager:state,getGameContext:()=>'',_getLocalizedGroupCharacterName:p._getLocalizedGroupCharacterName,_getLocalizedGroupLocation:p._getLocalizedGroupLocation,_getGroupChoiceState:p._getGroupChoiceState,_getHaeunStageGuidance:p._getHaeunStageGuidance,currentSceneId:id};
         talk.groupParticipants=p._resolveGroupParticipants.call(talk,scene,lang);
         const first=p._buildCurrentGroupSystemPrompt.call(talk,scene,lang);
         fixture.seed(state, 'Haeun', 68);fixture.seed(state, character, 47);
@@ -133,6 +133,8 @@ test('switch groups preserve senior addresses and keep live relationship facts b
         assert.equal(first.split('===CACHE_BOUNDARY===')[0],second.split('===CACHE_BOUNDARY===')[0]);
         assert.notEqual(first.split('===CACHE_BOUNDARY===')[1],second.split('===CACHE_BOUNDARY===')[1]);
         assert.ok(first.split('===CACHE_BOUNDARY===')[1].includes(scene.groupChoiceState));
+        assert.ok(first.split('===CACHE_BOUNDARY===')[1].includes(lang === 'ko' ? '[하은의 현재 단계: 죄책감과 설렘]' : "Haeun's current stage") || lang !== 'ko' && /Haeun|夏恩|ハウン/.test(first.split('===CACHE_BOUNDARY===')[1]), 'stage guidance must live after the cache boundary');
+        assert.ok(!first.split('===CACHE_BOUNDARY===')[0].includes(lang === 'ko' ? '하은의 현재 단계' : "Haeun's current stage"), 'stage guidance must not enter the stable prefix');
         if(lang==='ko') for(const name of ['서연','유나','다인']) assert.ok(first.includes(name+' 선배'));
     }
     for(const file of fs.readdirSync(path.join(root,'assets/js/i18n/ko')).filter(f=>f.endsWith('.json'))) {

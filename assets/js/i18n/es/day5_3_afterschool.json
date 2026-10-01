@@ -624,11 +624,33 @@
             "Volver con la persona que te gustaba antes"
         ]
     },
+    "day5_haeun_guilt_1": {
+        "name": "Haeun",
+        "text": "*Al final del pasillo, Haeun está de pie, aferrando la correa de su bolso con las dos manos.* No mentía cuando dije que os apoyaba. Pero ahora, yo, que lo dije, no puedo mirar a Seoyeon a la cara."
+    },
+    "day5_haeun_guilt_choice": {
+        "name": "Haeun",
+        "text": "*Haeun recupera el aliento y levanta la cabeza.* Sentirme culpable y querer estar a tu lado son cosas igual de reales, y por eso es más difícil. ¿Es raro que sea así?",
+        "choices": [
+            "Preguntarle adónde fue a parar el apoyo que prometió",
+            "Decirle que su culpa también es sincera y que no tiene que ocultar ninguna de las dos cosas",
+            "No apresurar una respuesta y darle tiempo a Haeun para ordenar sus sentimientos",
+            "Suspirar como si Haeun te hubiera puesto en un aprieto"
+        ]
+    },
+    "day5_haeun_guilt_up": {
+        "name": "Haeun",
+        "text": "*La tensión alrededor de los ojos de Haeun se afloja un poco.* ...Gracias. Dejaré la culpa tal como es y tampoco mentiré sobre lo que siento."
+    },
+    "day5_haeun_guilt_down": {
+        "name": "Haeun",
+        "text": "*Haeun aprieta con más fuerza la correa del bolso.* ...Tienes razón. Fui yo quien lo dijo. Lo siento."
+    },
     "day5_haeun_private_1": {
         "name": "Haeun",
         "text": "Entonces hablemos un poco más. Quiero saber cómo me ves. Yo también intentaré contarte lo que siento, a mi ritmo.",
-        "context": "Conversación privada con Haeun. Recuerda solo intercambios reales. Mantén su tono cortés y el trato a alguien de un curso superior. No establezcas un romance antes de elegir su ruta; incluso después, aún no ha aceptado salir. Responde según la conversación y la afinidad actuales.",
-        "personality": "Conversación privada con Haeun. Recuerda solo intercambios reales. Mantén su tono cortés y el trato a alguien de un curso superior. No establezcas un romance antes de elegir su ruta; incluso después, aún no ha aceptado salir. Responde según la conversación y la afinidad actuales."
+        "context": "Día 5 después de clase, en el pasillo. El protagonista acaba de decir que quiere pasar tiempo con Haeun. Conversación privada con Haeun. Recuerda solo intercambios reales. Mantén su tono cortés y el trato a alguien de un curso superior. No establezcas un romance antes de elegir su ruta; incluso después, aún no ha aceptado salir. Responde según la conversación y la afinidad actuales.",
+        "personality": "Conversación privada con Haeun. Recuerda solo intercambios reales. Mantén su tono cortés y el trato a alguien de un curso superior. No establezcas un romance antes de elegir su ruta; incluso después, aún no ha aceptado salir. Responde según la conversación y la afinidad actuales. Haeun siente culpa mezclada con la ilusión de haber sido elegida. Se basa solo en lo que realmente se dijo antes y muestra con cuidado lo que siente ahora sin negar el ánimo que dio a la otra persona. Todavía no han acordado salir."
     },
     "day5_haeun_walk": {
         "name": "Haeun",
@@ -637,16 +659,36 @@
     "day5_haeun_private_2": {
         "name": "Haeun",
         "text": "Me gustaría que la próxima vez también pudiéramos hablar así. ¿Qué tipo de relación quieres conmigo?",
-        "context": "Conversación privada con Haeun. Recuerda solo intercambios reales. Mantén su tono cortés y el trato a alguien de un curso superior. No establezcas un romance antes de elegir su ruta; incluso después, aún no ha aceptado salir. Responde según la conversación y la afinidad actuales.",
-        "personality": "Conversación privada con Haeun. Recuerda solo intercambios reales. Mantén su tono cortés y el trato a alguien de un curso superior. No establezcas un romance antes de elegir su ruta; incluso después, aún no ha aceptado salir. Responde según la conversación y la afinidad actuales."
+        "context": "Día 5 al atardecer, en un banco del parque. Haeun intenta decidir si salir o no. Conversación privada con Haeun. Recuerda solo intercambios reales. Mantén su tono cortés y el trato a alguien de un curso superior. No establezcas un romance antes de elegir su ruta; incluso después, aún no ha aceptado salir. Responde según la conversación y la afinidad actuales.",
+        "personality": "Conversación privada con Haeun. Recuerda solo intercambios reales. Mantén su tono cortés y el trato a alguien de un curso superior. No establezcas un romance antes de elegir su ruta; incluso después, aún no ha aceptado salir. Responde según la conversación y la afinidad actuales. Haeun intenta decidirse sin borrar su culpa. Recuerda solo lo que realmente se dijo antes y responde según cómo recibe la otra persona sus sentimientos. Hasta que acuerden algo, no lo trata como pareja."
     },
     "day5_haeun_fallback": {
         "name": "Haeun",
-        "text": "Gracias por hablar conmigo hoy. Pero todavía no creo estar preparada para salir contigo. *Haeun recoge su bolso. Nos despedimos y vuelvo hacia la escuela.*"
+        "text": "Gracias por hablar conmigo hoy. No es que no sienta nada. Pero la cara de esa persona no deja de volver y la culpa llega primero. Todavía no puedo decidir llegar a salir contigo. *Haeun recoge su bolso. Nos despedimos y vuelvo hacia la escuela.*"
     },
     "day5_ending_haeun": {
         "name": "Haeun",
         "text": "*Haeun se sienta a tu lado.* Tú también me gustas. Seamos pareja. Mañana, ¿puedo invitarte sin fingir que necesito ayuda con el trabajo?"
+    },
+    "day5_ending_haeun_apology_seoyeon": {
+        "name": "Haeun",
+        "text": "*Haeun ríe un momento y mira hacia la escuela.* Ya saludaré yo a Seoyeon por mi cuenta. Dejaré la culpa como está, y yo me quedo a tu lado."
+    },
+    "day5_ending_haeun_apology_yuna": {
+        "name": "Haeun",
+        "text": "*Haeun ríe un momento y mira hacia la escuela.* Ya saludaré yo a Yuna por mi cuenta. Dejaré la culpa como está, y yo me quedo a tu lado."
+    },
+    "day5_ending_haeun_apology_dain": {
+        "name": "Haeun",
+        "text": "*Haeun ríe un momento y mira hacia la escuela.* Ya saludaré yo a Dain por mi cuenta. Dejaré la culpa como está, y yo me quedo a tu lado."
+    },
+    "day5_ending_haeun_apology_teacher": {
+        "name": "Haeun",
+        "text": "*Haeun ríe un momento y mira hacia la escuela.* Ya saludaré yo a tu profesora por mi cuenta. Dejaré la culpa como está, y yo me quedo a tu lado."
+    },
+    "day5_ending_haeun_apology_nurse": {
+        "name": "Haeun",
+        "text": "*Haeun ríe un momento y mira hacia la escuela.* Ya saludaré yo a la enfermera escolar por mi cuenta. Dejaré la culpa como está, y yo me quedo a tu lado."
     },
     "day5_ending_haeun_epilogue": {
         "name": "Haeun",
@@ -654,7 +696,7 @@
     },
     "day5_haeun_offer_seoyeon": {
         "name": "Haeun",
-        "text": "¿No ibas a ver a Seoyeon? ¿Qué significa que quieras quedarte conmigo?"
+        "text": "¿No ibas a ver a Seoyeon? ¿Qué significa que quieras quedarte conmigo? Sinceramente, yo quería que te fuera bien con Seoyeon. Odio que ahora esa idea me tambalee."
     },
     "day5_haeun_leave_seoyeon": {
         "name": "{name}",
@@ -662,7 +704,7 @@
     },
     "day5_haeun_offer_yuna": {
         "name": "Haeun",
-        "text": "¿No ibas a ver a Yuna? ¿Qué significa que quieras quedarte conmigo?"
+        "text": "¿No ibas a ver a Yuna? ¿Qué significa que quieras quedarte conmigo? Sinceramente, yo quería que te fuera bien con Yuna. Odio que ahora esa idea me tambalee."
     },
     "day5_haeun_leave_yuna": {
         "name": "{name}",
@@ -670,7 +712,7 @@
     },
     "day5_haeun_offer_dain": {
         "name": "Haeun",
-        "text": "¿No ibas a ver a Dain? ¿Qué significa que quieras quedarte conmigo?"
+        "text": "¿No ibas a ver a Dain? ¿Qué significa que quieras quedarte conmigo? Sinceramente, yo quería que te fuera bien con Dain. Odio que ahora esa idea me tambalee."
     },
     "day5_haeun_leave_dain": {
         "name": "{name}",
@@ -678,7 +720,7 @@
     },
     "day5_haeun_offer_teacher": {
         "name": "Haeun",
-        "text": "¿No ibas a ver a tu profesora? ¿Qué significa que quieras quedarte conmigo?"
+        "text": "¿No ibas a ver a tu profesora? ¿Qué significa que quieras quedarte conmigo? Sinceramente, yo pensaba apoyarte para que fueras con tu profesora. Odio que ahora eso me tambalee."
     },
     "day5_haeun_leave_teacher": {
         "name": "{name}",
@@ -686,7 +728,7 @@
     },
     "day5_haeun_offer_nurse": {
         "name": "Haeun",
-        "text": "¿No ibas a ver a la enfermera escolar? ¿Qué significa que quieras quedarte conmigo?"
+        "text": "¿No ibas a ver a la enfermera escolar? ¿Qué significa que quieras quedarte conmigo? Sinceramente, yo pensaba apoyarte para que fueras con la enfermera escolar. Odio que ahora eso me tambalee."
     },
     "day5_haeun_leave_nurse": {
         "name": "{name}",
@@ -698,7 +740,7 @@
     },
     "day5_haeun_switch_seoyeon_haeun": {
         "name": "Haeun",
-        "text": "*Haeun permanece a tu lado y mira a Seoyeon.* Yo también quiero seguir hablando contigo. Pero escuchemos lo que tiene que decir antes de irnos."
+        "text": "*Haeun permanece a tu lado y mira a Seoyeon.* Yo también quiero seguir hablando contigo. No puedo decir que no lo sienta. Pero no quiero mentir. Escuchemos lo que tiene que decir antes de irnos."
     },
     "day5_haeun_switch_seoyeon_group_talk": {
         "name": "Seoyeon",
@@ -714,7 +756,7 @@
     },
     "day5_haeun_switch_yuna_haeun": {
         "name": "Haeun",
-        "text": "*Haeun permanece a tu lado y mira a Yuna.* Yo también quiero seguir hablando contigo. Pero escuchemos lo que tiene que decir antes de irnos."
+        "text": "*Haeun permanece a tu lado y mira a Yuna.* Yo también quiero seguir hablando contigo. No puedo decir que no lo sienta. Pero no quiero mentir. Escuchemos lo que tiene que decir antes de irnos."
     },
     "day5_haeun_switch_yuna_group_talk": {
         "name": "Yuna",
@@ -730,7 +772,7 @@
     },
     "day5_haeun_switch_dain_haeun": {
         "name": "Haeun",
-        "text": "*Haeun permanece a tu lado y mira a Dain.* Yo también quiero seguir hablando contigo. Pero escuchemos lo que tiene que decir antes de irnos."
+        "text": "*Haeun permanece a tu lado y mira a Dain.* Yo también quiero seguir hablando contigo. No puedo decir que no lo sienta. Pero no quiero mentir. Escuchemos lo que tiene que decir antes de irnos."
     },
     "day5_haeun_switch_dain_group_talk": {
         "name": "Dain",
@@ -746,7 +788,7 @@
     },
     "day5_haeun_switch_teacher_haeun": {
         "name": "Haeun",
-        "text": "*Haeun permanece a tu lado y mira a la profesora.* Yo también quiero seguir hablando contigo. Pero escuchemos lo que tiene que decir antes de irnos."
+        "text": "*Haeun permanece a tu lado y mira a la profesora.* Yo también quiero seguir hablando contigo. No puedo decir que no lo sienta. Pero no quiero mentir. Escuchemos lo que tiene que decir antes de irnos."
     },
     "day5_haeun_switch_teacher_group_talk": {
         "name": "Profesora",
@@ -762,7 +804,7 @@
     },
     "day5_haeun_switch_nurse_haeun": {
         "name": "Haeun",
-        "text": "*Haeun permanece a tu lado y mira a la enfermera escolar.* Yo también quiero seguir hablando contigo. Pero escuchemos lo que tiene que decir antes de irnos."
+        "text": "*Haeun permanece a tu lado y mira a la enfermera escolar.* Yo también quiero seguir hablando contigo. No puedo decir que no lo sienta. Pero no quiero mentir. Escuchemos lo que tiene que decir antes de irnos."
     },
     "day5_haeun_switch_nurse_group_talk": {
         "name": "Enfermera",

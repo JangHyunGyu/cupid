@@ -384,7 +384,29 @@
     },
     "day5_haeun_defends": {
         "name": "Haeun",
-        "text": "Ich habe um Hilfe gebeten. Bei ihm traue ich mich, einfach zu fragen. *Haeun zieht die Kiste heran.* Wir haben nichts Falsches gemacht."
+        "text": "Ich habe um Hilfe gebeten. Bei ihm traue ich mich, einfach zu fragen. *Haeun zieht die Kiste heran.* Wir haben nichts Falsches gemacht. …Warum klingt das jetzt nach einer Ausrede, wo ich es ausgesprochen habe?"
+    },
+    "day5_haeun_waver_1": {
+        "name": "Haeun",
+        "text": "*Haeun sieht auf ihre leeren Hände und fummelt lange an ihrem Armband.* Vorhin habe ich gesagt, dass nichts Seltsames dabei war. Das stimmt. Aber mir geht ständig durch den Kopf, dass ich gesagt habe, ich drücke euch beiden die Daumen. Ich tue einfach so, als hätte ich nichts bemerkt."
+    },
+    "day5_haeun_waver_choice": {
+        "name": "Haeun",
+        "text": "*Haeun öffnet die geballte Hand und schließt sie wieder.* Schon gut. Es ist nichts. …Wirklich nichts, aber was denkst du?",
+        "choices": [
+            "Sagen, dass jemand anderes wartet, und zuerst gehen",
+            "Ihr sagen, dass sie nicht so tun muss, als sei alles gut, und dass Schwanken nicht seltsam ist",
+            "Eine Grenze ziehen und sagen, dass sie darüber nicht mehr sprechen",
+            "Schweigend neben ihr stehen, bis sie sich beruhigt"
+        ]
+    },
+    "day5_haeun_waver_up": {
+        "name": "Haeun",
+        "text": "*Haeun atmet lang aus.* …Danke. Es macht jetzt etwas weniger Angst. Bleib noch ein bisschen neben mir."
+    },
+    "day5_haeun_waver_down": {
+        "name": "Haeun",
+        "text": "*Haeun drückt mit der Fingerspitze auf den Verschluss ihres Armbands und lässt los.* …Verstanden. Ich tue so, als wäre nichts."
     },
     "day5_haeun_finish": {
         "name": "{name}",
@@ -700,7 +722,7 @@
     "day5_haeun_personal": {
         "name": "Haeun",
         "text": "*Haeun schließt die Tür zum Rundfunkraum und stellt sich neben dich.* Vor den anderen konnte ich nicht fragen. Mit wem wolltest du heute zusammen sein?",
-        "context": "Ein Gespräch unter vier Augen mit Haeun. Nur tatsächliche frühere Gespräche erinnern. Ihre höfliche Stimme und Anrede für den älteren Mitschüler beibehalten. Vor der Routenwahl keine Liebesbeziehung festlegen; auch danach hat sie einer Beziehung noch nicht zugestimmt. Auf das aktuelle Gespräch und die Zuneigung eingehen.",
-        "personality": "Ein Gespräch unter vier Augen mit Haeun. Nur tatsächliche frühere Gespräche erinnern. Ihre höfliche Stimme und Anrede für den älteren Mitschüler beibehalten. Vor der Routenwahl keine Liebesbeziehung festlegen; auch danach hat sie einer Beziehung noch nicht zugestimmt. Auf das aktuelle Gespräch und die Zuneigung eingehen."
+        "context": "Tag 5, gegen Mittag. Du sprichst allein mit Haeun im Flur vor dem Sendestudio, direkt nach dem Kistenauftrag. Ein Gespräch unter vier Augen mit Haeun. Nur tatsächliche frühere Gespräche erinnern. Ihre höfliche Stimme und Anrede für den älteren Mitschüler beibehalten. Vor der Routenwahl keine Liebesbeziehung festlegen; auch danach hat sie einer Beziehung noch nicht zugestimmt. Auf das aktuelle Gespräch und die Zuneigung eingehen.",
+        "personality": "Ein Gespräch unter vier Augen mit Haeun. Nur tatsächliche frühere Gespräche erinnern. Ihre höfliche Stimme und Anrede für den älteren Mitschüler beibehalten. Vor der Routenwahl keine Liebesbeziehung festlegen; auch danach hat sie einer Beziehung noch nicht zugestimmt. Auf das aktuelle Gespräch und die Zuneigung eingehen. Haeun weiß, dass ihr Herz schwankt, versucht aber, so zu tun, als wäre nichts. Sie wählt ihre Worte zwischen dem, was sie über ihre Unterstützung gesagt hat, und dem, was sie jetzt fühlt, und gesteht nichts und tut nicht wie eine Freundin."
     }
 }

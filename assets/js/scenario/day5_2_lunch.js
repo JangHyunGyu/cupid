@@ -1583,6 +1583,43 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     }
     };
     Object.assign(scenes, {
+    "day5_haeun_wave_gate": {
+        "routeBeforeRender": true,
+        "branches": [
+            {
+                "condition": "haeun_cheer_seen",
+                "next": "day5_haeun_waver_1"
+            },
+            {
+                "next": "day5_haeun_personal"
+            }
+        ]
+    },
+    "day5_haeun_waver_1": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_worried.png",
+        "next": "day5_haeun_waver_choice"
+    },
+    "day5_haeun_waver_choice": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_worried.png",
+        "choices": [
+            { "next": "day5_haeun_waver_down", "stats": { "Haeun": { "affinity": -1 } } },
+            { "next": "day5_haeun_waver_up", "stats": { "Haeun": { "affinity": 2 } } },
+            { "next": "day5_haeun_waver_down", "stats": { "Haeun": { "affinity": -2 } } },
+            { "next": "day5_haeun_waver_up", "stats": { "Haeun": { "affinity": 1 } } }
+        ]
+    },
+    "day5_haeun_waver_up": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_normal.png",
+        "next": "day5_haeun_personal"
+    },
+    "day5_haeun_waver_down": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_firm.png",
+        "next": "day5_haeun_personal"
+    },
     "day5_haeun_personal": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/haeun_normal.png",
@@ -1593,7 +1630,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "haeunRomance": false
     }
 });
-    scenes.day5_haeun_finish.next = 'day5_haeun_personal';
+    scenes.day5_haeun_finish.next = 'day5_haeun_wave_gate';
     for (const scene of Object.values(scenes)) {
         if (scene && typeof scene === 'object') {
             Object.defineProperty(scene, "__sourceFile", {
