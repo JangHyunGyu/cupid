@@ -5,24 +5,32 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const SITE = 'https://cupid.archerlab.dev';
-const LASTMOD = '2026-07-13';
+const LASTMOD = '2026-10-01';
 const TRAFFIC_PAGE_LASTMOD = new Map([
   ['visual-novel-beginner-guide', '2026-08-30'],
   ['multiple-ending-romance-game', '2026-08-30'],
   ['cupid-gameplay-save-guide', '2026-08-30'],
-  ['cupid-ending-guide', '2026-09-30'],
-  ['cupid-endings-guide-en', '2026-09-30'],
-  ['cupid-ai-free-talk-guide', '2026-09-30'],
-  ['cupid-ai-chat-guide-en', '2026-09-30'],
-  ['cupid-characters', '2026-09-30']
+  ['cupid-ending-guide', '2026-10-01'],
+  ['cupid-endings-guide-en', '2026-10-01'],
+  ['cupid-ai-free-talk-guide', '2026-10-01'],
+  ['cupid-ai-chat-guide-en', '2026-10-01'],
+  ['cupid-characters', '2026-10-01'],
+  ['cupid-jieju-gonglue', '2026-10-01'],
+  ['cupid-ziyou-duihua-zhinan', '2026-10-01'],
+  ['cupid-renwu-jieshao', '2026-10-01']
 ]);
-// Traffic guides published as a KO/EN pair: 2 language entries + x-default.
-const TRAFFIC_PAIR_SLUGS = new Set([
+// Traffic guides published as a KO/EN/zh-CN trio: 3 language entries + x-default.
+const TRAFFIC_TRIO_SLUGS = new Set([
   'cupid-ending-guide',
   'cupid-endings-guide-en',
+  'cupid-jieju-gonglue',
   'cupid-ai-free-talk-guide',
-  'cupid-ai-chat-guide-en'
+  'cupid-ai-chat-guide-en',
+  'cupid-ziyou-duihua-zhinan'
 ]);
+// Characters guide: KO + zh-CN pair + x-default.
+const TRAFFIC_CHARACTER_SLUGS = new Set(['cupid-characters', 'cupid-renwu-jieshao']);
+const trafficAlternates = slug => TRAFFIC_TRIO_SLUGS.has(slug) ? 4 : TRAFFIC_CHARACTER_SLUGS.has(slug) ? 3 : 0;
 const errors = [];
 
 const HOME = [
@@ -37,6 +45,7 @@ const HOME = [
 ];
 
 const PRIMARY_SEO_SLUGS = new Set([
+  'mianfei-lianai-youxi-wuxu-xiazai',
   'muryo-misinsi-game',
   'free-dating-sim-no-download',
   'gakuen-renai-game-muryo-browser',
@@ -76,7 +85,7 @@ const indexable = [
   ...seoFiles.map(([file, url]) => ({ file, url, lang: '', home: false }))
 ];
 
-if (indexable.length !== 49) fail(`Expected 49 indexable pages, found ${indexable.length}`);
+if (indexable.length !== 57) fail(`Expected 57 indexable pages, found ${indexable.length}`);
 
 const canonicals = new Set();
 let stableGame = '';
@@ -121,7 +130,7 @@ for (const page of indexable) {
   }
 
   const slug = page.file.startsWith('seo/') ? path.basename(page.file, '.html') : '';
-  const expectedAlternates = page.home ? 9 : PRIMARY_SEO_SLUGS.has(slug) ? 8 : TRAFFIC_PAIR_SLUGS.has(slug) ? 3 : 0;
+  const expectedAlternates = page.home ? 9 : PRIMARY_SEO_SLUGS.has(slug) ? 9 : trafficAlternates(slug);
   if (hreflangs.length !== expectedAlternates) {
     fail(`${page.file}: expected ${expectedAlternates} hreflang entries, found ${hreflangs.length}`);
   }
@@ -183,7 +192,10 @@ const homepageSeoLinks = [
   ['index-de.html', 'Dating Spiel online', '/seo/dating-spiel-online'],
   ['index-pt.html', 'Otome game grátis no navegador', '/seo/otome-navegador-gratis'],
   ['index-pt.html', 'Jogo de namoro online grátis', '/seo/jogo-namoro-online-gratis'],
-  ['index-pt.html', 'Visual novel de romance grátis', '/seo/visual-novel-romance-gratis']
+  ['index-pt.html', 'Visual novel de romance grátis', '/seo/visual-novel-romance-gratis'],
+  ['index-zh.html', '免费恋爱游戏 无需下载', '/seo/mianfei-lianai-youxi-wuxu-xiazai'],
+  ['index-zh.html', '网页版乙女游戏', '/seo/wangyeban-yinv-youxi'],
+  ['index-zh.html', '在线恋爱模拟游戏', '/seo/zaixian-lianai-moni-youxi']
 ];
 for (const [file, anchor, expectedHref] of homepageSeoLinks) {
   const html = read(file);
@@ -227,7 +239,7 @@ for (const block of sitemapBlocks) {
   const lastmod = capture(block, /<lastmod>([^<]+)<\/lastmod>/);
   const alternates = [...block.matchAll(/<xhtml:link\s+rel="alternate"/g)].length;
   const slug = loc.includes('/seo/') ? loc.split('/').pop() : '';
-  const expectedAlternates = HOME.some(([, url]) => url === loc) ? 9 : PRIMARY_SEO_SLUGS.has(slug) ? 8 : TRAFFIC_PAIR_SLUGS.has(slug) ? 3 : 0;
+  const expectedAlternates = HOME.some(([, url]) => url === loc) ? 9 : PRIMARY_SEO_SLUGS.has(slug) ? 9 : trafficAlternates(slug);
   if (!loc || sitemapUrls.has(loc)) fail(`sitemap.xml: missing or duplicate loc ${loc}`);
   sitemapUrls.add(loc);
   const expectedLastmod = TRAFFIC_PAGE_LASTMOD.get(slug) || LASTMOD;

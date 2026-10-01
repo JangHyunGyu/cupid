@@ -5,12 +5,12 @@ const path = require('path');
 
 const SITE = 'https://cupid.archerlab.dev';
 const OUT = __dirname;
-const LASTMOD = '2026-07-13';
+const LASTMOD = '2026-10-01';
 const SEO_IMAGE = `${SITE}/cupid_link.png?v=2.9.6`;
 const SOCIAL_IMAGE = `${SITE}/assets/images/screenshots/cupid-title.jpg?v=2.9.6`;
-const GAME_DESCRIPTION = 'Cupid is a free browser romance visual novel with a five-day school story, five character routes, multiple endings, and support for seven languages.';
+const GAME_DESCRIPTION = 'Cupid is a free browser romance visual novel with a five-day school story, five character routes, multiple endings, and support for eight languages.';
 const GAME_DESCRIPTIONS = {
-  de: 'Cupid ist eine kostenlose romantische Visual Novel für den Browser mit einer fünftägigen Schulgeschichte, fünf Charakterrouten, mehreren Enden und Unterstützung für sieben Sprachen.'
+  de: 'Cupid ist eine kostenlose romantische Visual Novel für den Browser mit einer fünftägigen Schulgeschichte, fünf Charakterrouten, mehreren Enden und Unterstützung für acht Sprachen.'
 };
 const SOCIAL_IMAGE_ALTS = {
   ko: '브라우저 로맨스 비주얼 노벨 Cupid 타이틀 화면',
@@ -19,7 +19,8 @@ const SOCIAL_IMAGE_ALTS = {
   es: 'Pantalla de título de Cupid, novela visual romántica para navegador',
   fr: 'Écran-titre du roman visuel romantique Cupid sur navigateur',
   de: 'Titelbildschirm von Cupid, einer Romance-Visual-Novel für den Browser',
-  pt: 'Tela de título de Cupid, visual novel romântica para navegador'
+  pt: 'Tela de título de Cupid, visual novel romântica para navegador',
+  zh: '《Cupid》网页恋爱视觉小说标题画面'
 };
 const RELATED_NAV_LABELS = {
   ko: 'Cupid 관련 페이지',
@@ -28,8 +29,12 @@ const RELATED_NAV_LABELS = {
   es: 'Páginas relacionadas con Cupid',
   fr: 'Pages associées à Cupid',
   de: 'Weitere Seiten zu Cupid',
-  pt: 'Páginas relacionadas a Cupid'
+  pt: 'Páginas relacionadas a Cupid',
+  zh: '与 Cupid 相关的页面'
 };
+// hreflang / inLanguage 값 (내부 코드 zh → zh-CN)
+const LANG_TAGS = { zh: 'zh-CN' };
+const langTag = L => LANG_TAGS[L] || L;
 const GA_MEASUREMENT_ID = 'G-05YM7K3VX9';
 const ORIGIN_TRIAL_TOKEN = 'Agn9opFYdjvT/UqEIvt4RnCkmN8Kt+8/lzvg731pKSz7MpNoJkLvra/pLOIFgR9GZb39JbBGeJ+CDO++Tus3FggAAABmeyJvcmlnaW4iOiJodHRwczovL2FyY2hlcmxhYi5kZXY6NDQzIiwiZmVhdHVyZSI6IkhUTUxJbkNhbnZhcyIsImV4cGlyeSI6MTc5MjQ1NDQwMCwiaXNTdWJkb21haW4iOnRydWV9';
 const GA_LINKER_DOMAINS = [
@@ -263,6 +268,34 @@ const C = {
     cta: 'Jetzt kostenlos spielen →',
     other_langs_label: 'Andere Sprachen',
     footer: '© ArcherLab — Romance-Spiele im Browser, ohne Download'
+  },
+  zh: {
+    htmlLang: 'zh-CN',
+    why_title: '为什么选浏览器里的恋爱游戏？',
+    why: [
+      '无需安装、无需下载、无需注册，点开链接就能玩',
+      '电脑、平板、手机上的主流浏览器都能运行',
+      '进度自动保存在当前设备的同一个浏览器里',
+      '完整剧情免费开放，路线中途没有广告，也不用付费'
+    ],
+    how_title: '30 秒开始游玩',
+    how: ['点击下方的“立即免费游玩”按钮', '输入你的名字，开始故事', '在五天的校园生活里不断做选择，走向属于你的结局'],
+    faq_title: '常见问题',
+    faqs: [
+      ['真的完全免费吗？', '是的。所有角色路线和结局都能玩到最后，不用付费、不用订阅，也不用注册账号。'],
+      ['手机上能玩吗？', '可以。最新版的 Chrome、Safari、Edge 等手机浏览器都能运行。界面按竖屏设计，单手操作也很顺手。'],
+      ['进度会保存吗？', '会。进度自动保存在浏览器里，下次用同一台设备、同一个浏览器打开，就能从上次的地方接着玩。'],
+      ['这是什么类型的游戏？', '这是一款为期五天、用聊天界面推进剧情的校园恋爱视觉小说。你的选择会影响好感度，也会走向不同的结局。'],
+      ['有简体中文吗？', '有。游戏界面和全部剧情都有简体中文版，也可以随时切换到其他语言。']
+    ],
+    picks_title: '推荐：无需下载的恋爱游戏',
+    cupid_name: 'Cupid——五天校园恋爱',
+    cupid_desc: '用聊天界面推进剧情、拥有多重结局的恋爱视觉小说。你的选择会决定五天里的对话和关系走向，支持简体中文，手机上也能流畅游玩。',
+    nevergrad_name: 'Nevergrad',
+    nevergrad_desc: '人物更立体，路线更长，同样出自 ArcherLab 团队。',
+    cta: '立即免费游玩 →',
+    other_langs_label: '其他语言',
+    footer: '© ArcherLab——无需下载的浏览器恋爱游戏'
   }
 };
 
@@ -527,6 +560,48 @@ const PAGES = {
       meta: 'Visual novel romântica grátis para jogar no navegador, sem baixar nem instalar. Múltiplos finais, otimizada para celular.',
       intro: 'Você procura uma “visual novel de romance grátis”? Não precisa de Steam, loja de aplicativos nem cartão. Esta visual novel romântica de 5 dias, com vários finais, roda direto no navegador — no computador ou celular.'
     }
+  ],
+  zh: [
+    {
+      slug: 'mianfei-lianai-youxi-wuxu-xiazai',
+      group: 'free-browser-romance',
+      h1: '免费恋爱游戏，无需下载——浏览器里直接玩',
+      title: '免费恋爱游戏 无需下载 | 在线玩视觉小说 Cupid 2026',
+      meta: '免费恋爱游戏，无需下载、无需注册、不用付费。五天校园恋爱视觉小说《Cupid》，多重结局，支持简体中文，手机和电脑浏览器都能玩。',
+      intro: '想找“免费恋爱游戏 无需下载”？不用打开 Steam，不用翻应用商店，也不用绑银行卡。这款为期五天、拥有多重结局的恋爱视觉小说直接在浏览器里运行，电脑和手机都能玩。'
+    },
+    {
+      slug: 'wangyeban-yinv-youxi',
+      h1: '在找网页版乙女游戏？来试试免费的 Cupid',
+      title: '网页版乙女游戏 | 免费在线恋爱视觉小说，无需下载',
+      meta: '在找免费的网页版乙女游戏？《Cupid》是无需下载的校园恋爱视觉小说，男主视角，五位女主角，多重结局，支持简体中文。',
+      intro: '如果你是搜“乙女游戏网页版”来到这里，先说明一点：Cupid 不是传统的乙女游戏，不是女主角去攻略男性角色。你扮演的是一名男生转学生，在这部校园恋爱视觉小说里认识五位女生。免费、免安装、免注册，点开链接就能玩。'
+    },
+    {
+      slug: 'zaixian-lianai-moni-youxi',
+      h1: '在线恋爱模拟游戏——免费，浏览器直接玩',
+      title: '在线恋爱模拟游戏免费玩 | 无需下载，手机电脑都能玩 2026',
+      meta: '免费的在线恋爱模拟游戏，无需下载，无需注册，完整剧情全部开放。多重结局，打开浏览器就能玩。',
+      intro: '搜“在线恋爱模拟游戏”，结果里常常混着来路不明的下载站。Cupid 直接在浏览器里运行：一部为期五天的免费恋爱视觉小说，从点开链接的那一刻起，完整剧情就已经全部开放。'
+    },
+    {
+      slug: 'galgame-zaixian-wan',
+      h1: 'Galgame 在线玩——免费的网页版校园恋爱视觉小说',
+      title: 'Galgame 在线玩 | 免费网页版恋爱视觉小说 Cupid',
+      meta: '想在线玩 Galgame？《Cupid》是免费的网页版校园恋爱视觉小说，无需下载安装，五位女主角，多重结局，支持简体中文。',
+      intro: '“Galgame 在线玩”“网页版 Galgame”——如果你也想跳过下载和安装，Cupid 可以直接在浏览器里开玩。男主视角，五天校园生活，通过聊天式的对话和选项，一步步走向不同的结局。',
+      intentSection: {
+        title: 'Cupid 和传统 Galgame 有什么不同',
+        body: 'Cupid 不用下载安装包，也不用解压或折腾运行环境。点开链接就能开始，剧情以聊天界面推进，选项会影响好感度，好感度又会决定你最后看到的结局。'
+      }
+    },
+    {
+      slug: 'shouji-lianai-youxi-mianfei',
+      h1: '手机免费恋爱游戏——不用装 App，竖屏单手也能玩',
+      title: '手机免费恋爱游戏 | 无需安装 App，竖屏单手操作',
+      meta: '可以在手机上免费玩的恋爱游戏。《Cupid》无需安装 App，竖屏单手操作，是男主视角、五位女主角的校园恋爱视觉小说。',
+      intro: '想在手机上玩恋爱游戏，又不想为了它占内存装 App？Cupid 在手机浏览器里就能玩，界面按竖屏设计，单手操作很顺手。五天的校园故事，完整剧情免费。'
+    }
   ]
 };
 
@@ -558,6 +633,7 @@ footer{margin-top:48px;padding-top:20px;border-top:1px solid #fce4ec;text-align:
 .related{margin:22px 0 6px;text-align:center;font-size:13px;color:#777}
 .related a{color:#ad1457;margin:0 7px;text-decoration:none}
 .related a:hover{text-decoration:underline}
+html[lang="zh-CN"] body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Noto Sans SC","Noto Sans CJK SC",sans-serif}
 @media(max-width:520px){h1{font-size:23px}h2{font-size:18px}.intro{font-size:15px}.cta{font-size:16px;padding:12px 26px}}
 `;
 
@@ -613,7 +689,7 @@ function renderPage(lang, page) {
 
   const altLinks = alternateEntries.length > 0
     ? alternateEntries.map(({ lang: L, page: altPage }) =>
-      `<link rel="alternate" hreflang="${L}" href="${seoUrl(altPage.slug)}">`
+      `<link rel="alternate" hreflang="${langTag(L)}" href="${seoUrl(altPage.slug)}">`
     ).join('\n  ') + `\n  <link rel="alternate" hreflang="x-default" href="${seoUrl(defaultAlternate.page.slug)}">`
     : '';
 
@@ -623,7 +699,7 @@ function renderPage(lang, page) {
 
   const otherLangs = languageTargets
     .filter(entry => entry.lang !== lang)
-    .map(entry => `<a href="${seoPath(entry.page.slug)}" hreflang="${entry.lang}">${entry.lang.toUpperCase()}</a>`)
+    .map(entry => `<a href="${seoPath(entry.page.slug)}" hreflang="${langTag(entry.lang)}">${entry.lang.toUpperCase()}</a>`)
     .join(' | ');
 
   const relatedLinks = PAGES[lang]
@@ -641,7 +717,7 @@ function renderPage(lang, page) {
         "url": url,
         "name": page.title,
         "description": page.meta,
-        "inLanguage": lang,
+        "inLanguage": langTag(lang),
         "mainEntity": { "@id": `${SITE}/#videogame` },
         "breadcrumb": { "@id": `${url}#breadcrumb` }
       },
@@ -662,7 +738,7 @@ function renderPage(lang, page) {
         "gamePlatform": ["Web Browser", "Mobile Browser"],
         "applicationCategory": "GameApplication",
         "operatingSystem": "Any",
-        "inLanguage": Object.keys(PAGES),
+        "inLanguage": Object.keys(PAGES).map(langTag),
         "isAccessibleForFree": true,
         "offers": {
           "@type": "Offer",
@@ -808,7 +884,7 @@ function renderSitemapUrl(url, altEntries, changefreq, priority) {
   const defaultEntry = getDefaultAlternate(altEntries);
   const altLinks = altEntries.length > 0
     ? altEntries.map(entry =>
-      `        <xhtml:link rel="alternate" hreflang="${entry.lang}" href="${seoUrl(entry.page.slug)}"/>`
+      `        <xhtml:link rel="alternate" hreflang="${langTag(entry.lang)}" href="${seoUrl(entry.page.slug)}"/>`
     ).join('\n') + `\n        <xhtml:link rel="alternate" hreflang="x-default" href="${seoUrl(defaultEntry.page.slug)}"/>`
     : '';
 
@@ -822,7 +898,7 @@ ${altLinks ? `${altLinks}\n` : ''}        <lastmod>${LASTMOD}</lastmod>
 
 function renderHomeSitemapUrl(lang, pathname) {
   const altLinks = Object.keys(HOME).map(L =>
-    `        <xhtml:link rel="alternate" hreflang="${L === 'zh' ? 'zh-CN' : L}" href="${siteUrl(HOME[L])}"/>`
+    `        <xhtml:link rel="alternate" hreflang="${langTag(L)}" href="${siteUrl(HOME[L])}"/>`
   ).join('\n') + `\n        <xhtml:link rel="alternate" hreflang="x-default" href="${siteUrl('/')}"/>`;
   const priority = lang === 'ko' ? '1.0' : '0.9';
 
@@ -878,8 +954,9 @@ ${sitemapFrag}
     <loc>https://cupid.archerlab.dev/seo/cupid-ending-guide</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/cupid-ending-guide"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-endings-guide-en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/cupid-jieju-gonglue"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-endings-guide-en"/>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -887,8 +964,19 @@ ${sitemapFrag}
     <loc>https://cupid.archerlab.dev/seo/cupid-endings-guide-en</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/cupid-ending-guide"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-endings-guide-en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/cupid-jieju-gonglue"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-endings-guide-en"/>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cupid.archerlab.dev/seo/cupid-jieju-gonglue</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/cupid-ending-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-endings-guide-en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/cupid-jieju-gonglue"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-endings-guide-en"/>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -896,8 +984,9 @@ ${sitemapFrag}
     <loc>https://cupid.archerlab.dev/seo/cupid-ai-free-talk-guide</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/cupid-ai-free-talk-guide"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/cupid-ziyou-duihua-zhinan"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en"/>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -905,14 +994,37 @@ ${sitemapFrag}
     <loc>https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/cupid-ai-free-talk-guide"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/cupid-ziyou-duihua-zhinan"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en"/>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cupid.archerlab.dev/seo/cupid-ziyou-duihua-zhinan</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/cupid-ai-free-talk-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/cupid-ziyou-duihua-zhinan"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en"/>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cupid.archerlab.dev/seo/cupid-characters</loc>
-    <lastmod>2026-09-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/cupid-characters"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/cupid-renwu-jieshao"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-characters"/>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cupid.archerlab.dev/seo/cupid-renwu-jieshao</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/cupid-characters"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/cupid-renwu-jieshao"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-characters"/>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

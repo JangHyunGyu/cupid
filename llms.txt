@@ -31,6 +31,14 @@ Cupid is a web-based romantic visual novel game set in a Korean high school. Fol
 - Free talk guide (Korean): https://cupid.archerlab.dev/seo/cupid-ai-free-talk-guide
 - Free talk guide (English): https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en
 - Characters (Korean): https://cupid.archerlab.dev/seo/cupid-characters
+- Endings guide (Simplified Chinese): https://cupid.archerlab.dev/seo/cupid-jieju-gonglue
+- Free talk guide (Simplified Chinese): https://cupid.archerlab.dev/seo/cupid-ziyou-duihua-zhinan
+- Characters (Simplified Chinese): https://cupid.archerlab.dev/seo/cupid-renwu-jieshao
+- Free dating sim, no download (Simplified Chinese): https://cupid.archerlab.dev/seo/mianfei-lianai-youxi-wuxu-xiazai
+- Browser otome game (Simplified Chinese): https://cupid.archerlab.dev/seo/wangyeban-yinv-youxi
+- Online dating sim (Simplified Chinese): https://cupid.archerlab.dev/seo/zaixian-lianai-moni-youxi
+- Galgame online (Simplified Chinese): https://cupid.archerlab.dev/seo/galgame-zaixian-wan
+- Mobile dating game (Simplified Chinese): https://cupid.archerlab.dev/seo/shouji-lianai-youxi-mianfei
 - English: https://cupid.archerlab.dev/index-en
 - Japanese: https://cupid.archerlab.dev/index-ja
 - Spanish: https://cupid.archerlab.dev/index-es
