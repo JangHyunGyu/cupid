@@ -279,7 +279,7 @@
     },
     "hidden_perfect_nurse_4b": {
         "name": "{name}",
-        "text": "我很自在。而且今天，我更想听听您的事，而不是学校的事。"
+        "text": "我很自在。而且今天，我更想听听你的事，而不是学校的事。"
     },
     "hidden_perfect_nurse_5": {
         "name": "保健老师",
@@ -411,7 +411,7 @@
     },
     "hidden_true_nurse_8_f": {
         "name": "{name}",
-        "text": "但留下来是您自己的选择，不是吗？"
+        "text": "但留下来是你自己的选择，不是吗？"
     },
     "hidden_true_nurse_8_g": {
         "name": "保健老师",

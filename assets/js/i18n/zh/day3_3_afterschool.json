@@ -177,7 +177,7 @@
     },
     "after3_seo_correct_8": {
         "name": "{name}",
-        "text": "*我一直在说笔的事，书妍推了推眼镜，等着我与她对上视线。*"
+        "text": "*书妍推了推眼镜，我接着说笔的事，等她先看向我。*"
     },
     "after3_seo_correct_9": {
         "name": "书妍",
@@ -814,11 +814,11 @@
     },
     "haeun_warn_3": {
         "name": "夏恩",
-        "text": "你刚才看到书妍学姐了吗？"
+        "text": "学长，你刚才看到书妍学姐了吗？"
     },
     "haeun_warn_3_b": {
         "name": "夏恩",
-        "text": "她哭了。"
+        "text": "学姐哭了。"
     },
     "haeun_warn_3_c": {
         "name": "{name}",

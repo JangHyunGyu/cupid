@@ -274,7 +274,7 @@
     },
     "lunch3_expose_honest_2": {
         "name": "书妍",
-        "text": "你没办法拒绝。这是你能说出口的最残忍的话了，{name}。"
+        "text": "“不好意思拒绝”——这句话才最残忍，{name}。"
     },
     "lunch3_expose_honest_3": {
         "name": "书妍",
@@ -315,7 +315,7 @@
     },
     "lunch3_expose_excuse_4": {
         "name": "多因",
-        "text": "*多因把还没拆开包装的肉松面包塞进了书包。*"
+        "text": "*多因把还没拆开包装的酥粒面包塞进了书包。*"
     },
     "lunch3_expose_run_1": {
         "name": "{name}",
