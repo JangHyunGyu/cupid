@@ -1,0 +1,125 @@
+# Cupid — full service description
+
+---
+
+## Cupid란? 설치 없이 브라우저에서 하는 5일간의 학원 로맨스 비주얼 노벨 (ko)
+
+URL: https://cupid.archerlab.dev/seo/cupid-about
+Last updated: 2026-10-02
+
+Cupid(큐피드)는 전학 첫날부터 닷새 동안 선택과 대화로 이야기가 갈리는 무료 웹 미연시(비주얼 노벨)입니다. 다운로드, 설치, 회원가입 없이 모바일과 데스크톱 브라우저에서 바로 시작하고, 진행 상황은 브라우저에 자동 저장됩니다. 한국어를 비롯해 8개 언어로 즐길 수 있습니다.
+
+### 한눈에 보기
+- 게임: Cupid — 5일간의 학원 로맨스 비주얼 노벨(웹 미연시)
+- 이용 요금: 무료. 전체 이야기를 결제 없이 플레이할 수 있습니다.
+- 가입·설치: 다운로드, 설치, 회원가입 없이 브라우저에서 플레이
+- 구성: 게임 속 5일. 한 회차에 하나의 엔딩을 봅니다.
+- 엔딩: 스무 개가 넘는 엔딩. 4일차 고백 여부와 호감도 등으로 갈립니다.
+- 저장: 같은 기기·브라우저에 자동 저장 (계정 연동 없음)
+- 언어: 한국어, 영어, 일본어, 스페인어, 프랑스어, 독일어, 포르투갈어, 중국어 간체
+- 운영: ArcherLab (장현규·김유진)
+
+### Who it is for / 대상
+- 설치 없이 가볍게 시작할 수 있는 한글 미연시를 찾는 분
+- 선택에 따라 결말이 달라지는 멀티 엔딩 연애 게임을 좋아하는 분
+- 스마트폰에서 세로 화면으로 읽는 비주얼 노벨을 찾는 분
+
+### How to use / 이용 방법
+1. Cupid 메인 화면을 열고 "새 게임"을 누릅니다.
+2. 플레이어 이름을 입력하면 전학 첫날부터 이야기가 시작됩니다.
+3. 대사를 읽고 선택지를 고르거나, 입력창이 열리면 직접 문장을 써서 인물과 대화합니다.
+4. 5일을 마치면 엔딩이 나옵니다. 다른 엔딩은 새 게임에서 선택을 바꿔 확인합니다. 타이틀의 갤러리에서 지금까지 본 엔딩과 CG를 볼 수 있습니다.
+
+### Features / 기능
+- 서연·유나·다인을 비롯한 인물들과 5일간 이어지는 학원 로맨스
+- 선택지와 호감도, 4일차 고백 여부로 갈리는 멀티 엔딩
+- 직접 문장을 입력해 인물과 대화하는 자유 대화(AI 답변)
+- 갤러리, 호감도 게이지 표시 설정, 배경음악·효과음 설정
+- 8개 언어 지원, 모바일·데스크톱 지원
+
+### Notes / 알아 둘 점
+- 진행 기록은 브라우저에 저장됩니다. 다른 기기나 브라우저로 자동 이동하지 않고, 시크릿 모드나 브라우저 데이터 삭제 시 사라질 수 있습니다. 새 게임을 시작하면 현재 저장 데이터가 삭제됩니다.
+- 자유 대화에서 입력한 문장은 답변 생성을 위해 서버를 거쳐 AI 모델로 전달됩니다. 실명, 연락처, 계정 정보 같은 개인정보는 입력하지 마세요.
+- AI 답변은 가끔 어색하거나 설정과 다르게 나올 수 있습니다.
+
+### FAQ
+
+**Cupid는 무료인가요?**
+네. 결제나 구독 없이 전체 이야기를 무료로 플레이할 수 있습니다.
+
+**다운로드나 회원가입이 필요한가요?**
+아니요. 최신 Chrome, Safari, Firefox, Edge 같은 브라우저에서 바로 시작합니다.
+
+**진행 상황은 저장되나요?**
+네. 같은 기기와 브라우저에 자동 저장됩니다. 다른 기기로 이어서 하려면 기록이 자동으로 옮겨지지 않는다는 점을 알아 두세요.
+
+**엔딩은 몇 개인가요?**
+스무 개가 넘습니다. 엔딩이 갈리는 기준은 엔딩 가이드에 스포일러를 줄여 정리되어 있습니다.
+
+**자유 대화는 무엇인가요?**
+선택지 대신 직접 문장을 입력해 인물과 대화하는 장면입니다. 인물의 답은 AI가 만들고 호감도에도 반영됩니다. 한 장면에서 쓸 수 있는 횟수가 정해져 있습니다.
+
+**어떤 언어로 할 수 있나요?**
+한국어, 영어, 일본어, 스페인어, 프랑스어, 독일어, 포르투갈어, 중국어 간체를 지원합니다.
+
+---
+
+## What is Cupid? A free five-day school romance visual novel that runs in your browser (en)
+
+URL: https://cupid.archerlab.dev/seo/cupid-about-en
+Last updated: 2026-10-02
+
+Cupid is a free browser visual novel (dating sim) in which your choices and conversations shape five school days, starting on the first day at a new school. It needs no download, install or signup, runs on mobile and desktop browsers, and saves progress automatically in the browser. It is available in eight languages.
+
+### At a glance
+- Game: Cupid — five-day school romance visual novel
+- Price: Free. The full story is playable without payment.
+- Signup / install: No download, install or signup; plays in the browser
+- Structure: Five in-game days; one ending per playthrough
+- Endings: More than twenty, decided by factors such as whether you confess on day 4 and your affinity
+- Saving: Automatic, in the same browser on the same device (no account sync)
+- Languages: Korean, English, Japanese, Spanish, French, German, Portuguese, Simplified Chinese
+- Made by: ArcherLab (Hyungyu Jang and Yujin Kim)
+
+### Who it is for / 대상
+- Players looking for a no-install romance visual novel
+- Fans of multiple-ending dating games where choices matter
+- Mobile players who prefer a portrait-oriented reading experience
+
+### How to use / 이용 방법
+1. Open the Cupid title screen and choose "New game".
+2. Enter a player name and the story begins on the first day at a new school.
+3. Read the dialogue and pick choices, or type your own sentence when a free-talk box opens.
+4. After the five days an ending plays. See other endings by starting a new game and choosing differently. The gallery on the title screen shows endings and CGs you have seen.
+
+### Features / 기능
+- A five-day school romance with Seoyeon, Yuna, Dain and other characters
+- Multiple endings shaped by choices, affinity and the day-4 confession
+- Free talk: type your own lines and an AI writes the character's reply, which also affects affinity
+- Gallery, affinity gauge option, music and sound settings
+- Eight languages; mobile and desktop
+
+### Notes / 알아 둘 점
+- Progress is stored in your browser. It does not move to another device or browser, and private mode or clearing site data can erase it. Starting a new game deletes the current save.
+- Sentences typed in free talk are sent through a server to an AI model to write replies. Do not enter real names, contact details or account information.
+- AI replies can occasionally feel off or break character.
+
+### FAQ
+
+**Is Cupid free?**
+Yes. You can play the whole story with no payment or subscription.
+
+**Do I need to download it or sign up?**
+No. Open it in a current browser such as Chrome, Safari, Firefox or Edge.
+
+**Is my progress saved?**
+Yes, automatically, in the same browser on the same device. It does not transfer to other devices on its own.
+
+**How many endings are there?**
+More than twenty. The Endings Guide explains what decides them with minimal spoilers.
+
+**What is free talk?**
+A scene where you type your own sentences instead of choosing an option. An AI writes the character's reply, and your tone affects affinity. Each scene allows a limited number of lines.
+
+**Which languages are supported?**
+Korean, English, Japanese, Spanish, French, German, Portuguese and Simplified Chinese.

@@ -31,6 +31,9 @@ const TRAFFIC_TRIO_SLUGS = new Set([
 // Characters guide: KO + zh-CN pair + x-default.
 const TRAFFIC_CHARACTER_SLUGS = new Set(['cupid-characters', 'cupid-renwu-jieshao']);
 const trafficAlternates = slug => TRAFFIC_TRIO_SLUGS.has(slug) ? 4 : TRAFFIC_CHARACTER_SLUGS.has(slug) ? 3 : 0;
+// Service-guide pages: KO/EN pair + x-default, own app node, dated at publication.
+const ABOUT_SLUGS = new Set(['cupid-about', 'cupid-about-en']);
+const ABOUT_LASTMOD = '2026-10-02';
 const errors = [];
 
 const HOME = [
@@ -85,7 +88,7 @@ const indexable = [
   ...seoFiles.map(([file, url]) => ({ file, url, lang: '', home: false }))
 ];
 
-if (indexable.length !== 57) fail(`Expected 57 indexable pages, found ${indexable.length}`);
+if (indexable.length !== 59) fail(`Expected 59 indexable pages, found ${indexable.length}`);
 
 const canonicals = new Set();
 let stableGame = '';
@@ -116,13 +119,14 @@ for (const page of indexable) {
   if (ogUrl !== page.url) fail(`${page.file}: og:url does not match canonical`);
   if (ogSiteName !== 'Cupid') fail(`${page.file}: og:site_name must be Cupid`);
   if (ogImages.length !== 1) fail(`${page.file}: expected one og:image, found ${ogImages.length}`);
-  for (const property of ['og:image:type', 'og:image:width', 'og:image:height', 'og:image:alt']) {
+  const aboutPage = ABOUT_SLUGS.has(path.basename(page.file, '.html'));
+  for (const property of aboutPage ? [] : ['og:image:type', 'og:image:width', 'og:image:height', 'og:image:alt']) {
     if (!html.includes(`property="${property}"`)) fail(`${page.file}: missing ${property}`);
   }
-  if (!html.includes('name="twitter:image:alt"')) fail(`${page.file}: missing twitter:image:alt`);
+  if (!aboutPage && !html.includes('name="twitter:image:alt"')) fail(`${page.file}: missing twitter:image:alt`);
   if (html.includes('seo-screenshots')) fail(`${page.file}: hidden SEO screenshot section is still present`);
   const trafficPage = TRAFFIC_PAGE_LASTMOD.has(path.basename(page.file, '.html'));
-  if (!page.home && !trafficPage) {
+  if (!page.home && !trafficPage && !aboutPage) {
     const ctaPlacements = [...html.matchAll(/data-seo-cta="([^"]+)"/g)].map(match => match[1]);
     const ctaEvents = [...html.matchAll(/seo_cta_click/g)].length;
     if (ctaPlacements.join(',') !== 'top,bottom') fail(`${page.file}: expected tracked top and bottom SEO CTAs`);
@@ -130,7 +134,7 @@ for (const page of indexable) {
   }
 
   const slug = page.file.startsWith('seo/') ? path.basename(page.file, '.html') : '';
-  const expectedAlternates = page.home ? 9 : PRIMARY_SEO_SLUGS.has(slug) ? 9 : trafficAlternates(slug);
+  const expectedAlternates = page.home ? 9 : PRIMARY_SEO_SLUGS.has(slug) ? 9 : ABOUT_SLUGS.has(slug) ? 3 : trafficAlternates(slug);
   if (hreflangs.length !== expectedAlternates) {
     fail(`${page.file}: expected ${expectedAlternates} hreflang entries, found ${hreflangs.length}`);
   }
@@ -158,6 +162,7 @@ for (const page of indexable) {
       if (!trafficPage) fail(`${page.file}: game schema must co-type VideoGame and WebApplication`);
       continue;
     }
+    if (aboutPage) continue;
     if (game['@id'] !== `${SITE}/#videogame` || game.name !== 'Cupid' || game.url !== `${SITE}/`) {
       fail(`${page.file}: game identity is not stable`);
     }
@@ -239,10 +244,10 @@ for (const block of sitemapBlocks) {
   const lastmod = capture(block, /<lastmod>([^<]+)<\/lastmod>/);
   const alternates = [...block.matchAll(/<xhtml:link\s+rel="alternate"/g)].length;
   const slug = loc.includes('/seo/') ? loc.split('/').pop() : '';
-  const expectedAlternates = HOME.some(([, url]) => url === loc) ? 9 : PRIMARY_SEO_SLUGS.has(slug) ? 9 : trafficAlternates(slug);
+  const expectedAlternates = HOME.some(([, url]) => url === loc) ? 9 : PRIMARY_SEO_SLUGS.has(slug) ? 9 : ABOUT_SLUGS.has(slug) ? 3 : trafficAlternates(slug);
   if (!loc || sitemapUrls.has(loc)) fail(`sitemap.xml: missing or duplicate loc ${loc}`);
   sitemapUrls.add(loc);
-  const expectedLastmod = TRAFFIC_PAGE_LASTMOD.get(slug) || LASTMOD;
+  const expectedLastmod = ABOUT_SLUGS.has(slug) ? ABOUT_LASTMOD : TRAFFIC_PAGE_LASTMOD.get(slug) || LASTMOD;
   if (lastmod !== expectedLastmod) fail(`sitemap.xml: ${loc} has stale lastmod ${lastmod}`);
   if (alternates !== expectedAlternates) fail(`sitemap.xml: ${loc} has ${alternates} alternate links`);
 }
