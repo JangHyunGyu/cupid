@@ -123,3 +123,198 @@ A scene where you type your own sentences instead of choosing an option. An AI w
 
 **Which languages are supported?**
 Korean, English, Japanese, Spanish, French, German, Portuguese and Simplified Chinese.
+
+---
+
+## Cupid Game: a free dating sim you play online, with no download (en)
+
+URL: https://cupid.archerlab.dev/seo/cupid-game-free-dating-sim
+Last updated: 2026-10-02
+
+Cupid is a free romance visual novel (dating sim) that runs in your browser. Open the link, enter a name, and play five in-game days of school life where your choices and typed conversations decide who you grow close to and how the story ends. There is nothing to download, install or sign up for.
+
+### At a glance
+- Game: Cupid: a five-day school romance visual novel (dating sim)
+- Price: Free. The whole story is playable without payment.
+- Download / signup: None. It runs in a modern browser on desktop and mobile.
+- Length: Five in-game days per playthrough, one ending per run
+- Endings: More than twenty, decided by choices, affinity and the Day 4 confession
+- Free talk: Type your own lines to talk with characters; replies are AI-generated
+- Saving: Automatic, in the same browser on the same device (no account sync)
+- Languages: Korean, English, Japanese, Spanish, French, German, Portuguese, Simplified Chinese
+- Developer: ArcherLab (Hyungyu Jang)
+
+### What is the Cupid game?
+Cupid (full title "Cupid: 5 Days of Love") is a browser visual novel set in a Korean high school. You play a transfer student for five days. Seoyeon, Yuna and Dain are the first characters you meet, and hidden routes open from your choices on Day 1. Scenes read like a messenger chat, so it is easy to play on a phone.
+Korean is the original language. The other seven languages are translations, so some lines may read less smoothly than the Korean text.
+
+### How to play Cupid game online
+- Open the Cupid game page and press New Game.
+- Enter a player name (1-12 letters).
+- Read the dialogue and pick choices. When the input box opens, type your own sentence to talk with the character.
+- After the fifth day an ending plays. Start a new game and choose differently to see another ending. The gallery on the title screen keeps the endings and CGs you have seen.
+
+### Free dating sim, no download: what that means here
+- No installer, APK or app-store page. The game loads in the browser tab.
+- No account or email. You do not log in to play or to save.
+- No payment wall in the story. Every route can be played.
+- Works in current Chrome, Safari, Firefox and Edge on desktop and mobile.
+- Progress is stored in your browser. Clearing site data or private browsing removes it.
+
+### Other games called Cupid
+Several unrelated games share the name. Cupid Run : Love Girl is a separate Android runner app by another developer. Cupid's Game is a different jam puzzle game. This page is about ArcherLab's Cupid, a browser visual novel with no install.
+
+### Good to know
+Free talk sends the sentence you type to a server and an AI model to generate the reply. Do not enter real names, contact details or account information.
+AI replies can be awkward or off-character. Free talk turns per scene are limited.
+
+### FAQ
+
+**Is the Cupid game free?**
+Yes. The full story and all routes are free, with no subscription or payment.
+
+**Do I need to download Cupid or create an account?**
+No. Cupid runs in the browser. There is no download, install or signup.
+
+**Is Cupid the same as Cupid Run : Love Girl?**
+No. Cupid Run : Love Girl is a separate Android runner app by another developer. Cupid by ArcherLab is a browser visual novel.
+
+**Does Cupid work on a phone?**
+Yes. It runs in current mobile browsers and is laid out for portrait screens.
+
+**How many endings does it have?**
+More than twenty. What decides them is explained, with few spoilers, in the endings guide.
+
+**Is my progress saved?**
+Yes, automatically in the same browser on the same device. It does not move to another device by itself.
+
+**What languages can I play in?**
+Korean, English, Japanese, Spanish, French, German, Portuguese and Simplified Chinese.
+
+---
+
+## 무료 미연시 · 연애 시뮬레이션 게임, 설치 없이 웹에서 시작 (ko)
+
+URL: https://cupid.archerlab.dev/seo/muryo-miyeonsi-yeonae-simulation-game
+Last updated: 2026-10-02
+
+Cupid(큐피드)는 브라우저에서 바로 하는 무료 웹 미연시이자 연애 시뮬레이션 게임입니다. 전학 첫날부터 닷새 동안 선택지를 고르거나 직접 문장을 입력해 인물과 대화하고, 그 결과로 호감도와 엔딩이 갈립니다. 다운로드와 회원가입, 결제는 없습니다.
+
+### 한눈에 보기
+- 게임: Cupid, 5일간의 학원 로맨스 비주얼 노벨(웹 미연시·연애 시뮬레이션)
+- 요금: 무료. 전체 이야기를 결제 없이 플레이
+- 설치·가입: 다운로드, 설치, 회원가입 없음. PC와 모바일 브라우저에서 실행
+- 분량: 게임 속 5일. 한 회차에 엔딩 하나
+- 엔딩: 스무 개가 넘음. 선택, 호감도, 4일차 고백 여부로 갈림
+- 자유 대화: 직접 문장을 입력해 인물과 대화. 답변은 AI가 생성
+- 저장: 같은 기기·브라우저에 자동 저장(계정 연동 없음)
+- 연령: 전연령 대상 연애 게임(성인용 게임 아님)
+- 언어: 한국어, 영어, 일본어, 스페인어, 프랑스어, 독일어, 포르투갈어, 중국어 간체
+
+### Cupid는 어떤 게임인가요
+고등학교로 전학 온 주인공이 닷새를 보내는 연애 비주얼 노벨입니다. 서연, 유나, 다인을 먼저 만나고, 1일차 선택에 따라 히든 루트도 열립니다. 대화가 메신저처럼 이어져서 스마트폰 세로 화면에 잘 맞습니다.
+
+### 무료 미연시를 웹으로 하면 좋은 점
+- 링크를 열면 바로 시작합니다. 설치 파일이나 앱 심사가 필요 없습니다.
+- 회원가입과 로그인 없이 저장까지 됩니다.
+- 이야기 중간에 결제를 요구하지 않습니다. 모든 루트를 볼 수 있습니다.
+- 최신 Chrome, Safari, Edge에서 PC와 모바일 모두 실행됩니다.
+
+### 시작 방법
+- Cupid 메인 화면에서 새 게임을 누릅니다.
+- 플레이어 이름을 입력합니다.
+- 대사를 읽으며 선택지를 고르고, 입력창이 열리면 직접 문장을 써서 대화합니다.
+- 5일을 마치면 엔딩이 나옵니다. 새 게임에서 선택을 바꾸면 다른 엔딩을 볼 수 있습니다.
+
+### 다른 무료 미연시와 다른 점
+설치형 미연시는 파일을 받고 실행하는 과정이 필요하고, 짧은 웹 미니게임은 이야기가 금방 끝나는 경우가 많습니다. Cupid는 설치 없이 열 수 있으면서 5일 분량의 이야기와 스무 개 넘는 엔딩, AI 자유 대화를 갖췄습니다. 한국어가 원문이라 한글 대사가 가장 자연스럽습니다.
+
+### 알아 둘 점
+진행 기록은 브라우저에 저장됩니다. 다른 기기로 옮겨지지 않고, 시크릿 모드나 브라우저 데이터 삭제 시 사라질 수 있습니다.
+자유 대화에서 입력한 문장은 답변 생성을 위해 서버를 거쳐 AI 모델로 전달됩니다. 실명, 연락처, 계정 정보는 입력하지 마세요.
+
+### FAQ
+
+**Cupid는 무료인가요?**
+네. 결제나 구독 없이 전체 이야기를 무료로 플레이할 수 있습니다.
+
+**다운로드나 회원가입이 필요한가요?**
+아니요. 브라우저에서 바로 시작하며 설치와 가입이 필요 없습니다.
+
+**Cupid는 야겜(성인 게임)인가요?**
+아니요. 전연령 대상의 연애 비주얼 노벨입니다. 성인용 19금 게임을 찾는다면 맞지 않습니다.
+
+**모바일에서도 되나요?**
+네. 모바일 브라우저에서 실행되고 세로 화면에 맞춰져 있습니다.
+
+**엔딩은 몇 개인가요?**
+스무 개가 넘습니다. 엔딩이 갈리는 기준은 엔딩 가이드에 스포일러를 줄여 정리했습니다.
+
+**진행 상황은 저장되나요?**
+같은 기기와 브라우저에 자동 저장됩니다. 다른 기기로 자동 이동하지는 않습니다.
+
+**어떤 언어를 지원하나요?**
+한국어, 영어, 일본어, 스페인어, 프랑스어, 독일어, 포르투갈어, 중국어 간체를 지원합니다.
+
+---
+
+## 学園恋愛ゲームを無料・ダウンロードなしで遊ぶ (ja)
+
+URL: https://cupid.archerlab.dev/seo/gakuen-renai-game-muryo-guide
+Last updated: 2026-10-02
+
+Cupid（キューピッド）は、ブラウザだけで遊べる無料の学園恋愛ゲーム（恋愛ビジュアルノベル）です。転校初日からの5日間、選択肢や自分で入力した会話によって関係が変わり、物語が複数のエンディングへ分かれます。ダウンロード、インストール、会員登録、課金はありません。
+
+### At a glance
+- ゲーム: Cupid：5日間の学園ロマンス（恋愛ビジュアルノベル）
+- 料金: 無料。全ストーリーを課金なしで遊べます
+- ダウンロード・登録: 不要。PC・スマホのブラウザですぐ起動
+- 長さ: ゲーム内で5日間。1回のプレイで1つのエンディング
+- エンディング: 20以上。選択、好感度、4日目の告白などで分岐
+- フリートーク: 自分で文章を入力してキャラクターと会話（返答はAIが生成）
+- セーブ: 同じ端末・ブラウザに自動保存（アカウント連携なし）
+- 対象年齢: 全年齢向けの恋愛ゲーム
+- 言語: 日本語を含む8言語。原文は韓国語で、日本語版は翻訳です
+
+### Cupidはどんなゲームですか
+高校に転校してきた主人公として5日間を過ごす恋愛ビジュアルノベルです。最初にソヨン、ユナ、ダインと出会い、1日目の選択によって隠しルートも開きます。会話はメッセンジャー風に進むので、スマホの縦画面でも読みやすい作りです。
+主人公は男子生徒で、いわゆる乙女ゲームのような女性主人公ではありません。
+
+### ダウンロードなしで遊べる理由
+- リンクを開くだけで始まります。インストーラーやアプリは不要です。
+- 会員登録やログインなしでセーブもできます。
+- ストーリーの途中で課金を求められません。
+- 最新のChrome、Safari、Edgeで、PCでもスマホでも動作します。
+
+### 遊び方
+- Cupidのトップページで「ニューゲーム」を押します。
+- プレイヤー名を入力します。
+- セリフを読んで選択肢を選び、入力欄が開いたら自分の言葉で会話します。
+- 5日間が終わるとエンディングが流れます。選択を変えて新しく始めると別のエンディングを見られます。
+
+### ご利用上の注意
+進行状況はブラウザに保存されます。別の端末へは自動で移らず、シークレットモードやブラウザデータの削除で消えることがあります。
+フリートークで入力した文章は、返答の生成のためにサーバーを通してAIモデルに送られます。本名、連絡先、アカウント情報は入力しないでください。
+
+### FAQ
+
+**Cupidは無料ですか？**
+はい。課金や定期購入なしで全ストーリーを無料で遊べます。
+
+**ダウンロードや会員登録は必要ですか？**
+いいえ。ブラウザですぐに始められ、インストールも登録も不要です。
+
+**スマホでも遊べますか？**
+はい。モバイルブラウザで動作し、縦画面に合わせて作られています。
+
+**セーブはされますか？**
+同じ端末・ブラウザに自動保存されます。別の端末へは自動で引き継がれません。
+
+**エンディングはいくつありますか？**
+20以上あります。分岐の条件はネタバレを抑えてエンディングガイドにまとめています。
+
+**日本語で遊べますか？**
+はい。日本語を含む8言語に対応しています。原文は韓国語で、日本語版は翻訳です。
+
+**年齢制限はありますか？**
+全年齢向けの恋愛ビジュアルノベルです。

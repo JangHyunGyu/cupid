@@ -539,5 +539,23 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-about-en"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-about-en"/>
   </url>
+  <url>
+    <loc>https://cupid.archerlab.dev/seo/cupid-game-free-dating-sim</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cupid.archerlab.dev/seo/muryo-miyeonsi-yeonae-simulation-game</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cupid.archerlab.dev/seo/gakuen-renai-game-muryo-guide</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 <!-- about-pages:end -->
 </urlset>

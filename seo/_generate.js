@@ -702,10 +702,17 @@ function renderPage(lang, page) {
     .map(entry => `<a href="${seoPath(entry.page.slug)}" hreflang="${langTag(entry.lang)}">${entry.lang.toUpperCase()}</a>`)
     .join(' | ');
 
+  // Hand-written keyword guide pages (about-page layout) are linked from the generated pages of the same language.
+  const KEYWORD_GUIDES = {
+    ko: ['muryo-miyeonsi-yeonae-simulation-game', '무료 미연시·연애 시뮬레이션 게임 Cupid'],
+    en: ['cupid-game-free-dating-sim', 'Cupid Game: Free Dating Sim Online'],
+    ja: ['gakuen-renai-game-muryo-guide', '学園恋愛ゲーム 無料・ダウンロードなし']
+  };
   const relatedLinks = PAGES[lang]
     .filter(p => p.slug !== page.slug)
     .slice(0, 6)
     .map(p => `<a href="${seoPath(p.slug)}">${escapeHTML(p.title.split('|')[0].trim())}</a>`)
+    .concat(KEYWORD_GUIDES[lang] ? [`<a href="${seoPath(KEYWORD_GUIDES[lang][0])}">${escapeHTML(KEYWORD_GUIDES[lang][1])}</a>`] : [])
     .join(' | ');
 
   const jsonLd = {
@@ -925,6 +932,12 @@ const homeSitemap = Object.entries(HOME)
   .map(([lang, pathname]) => renderHomeSitemapUrl(lang, pathname))
   .join('\n');
 
+// Preserve the hand-maintained service-guide / keyword-page block (about-pages) from the existing sitemap.
+const prevSitemapPath = path.join(OUT, '..', 'sitemap.xml');
+const prevSitemap = fs.existsSync(prevSitemapPath) ? fs.readFileSync(prevSitemapPath, 'utf8') : '';
+const aboutBlockMatch = prevSitemap.match(/<!-- about-pages:start -->[\s\S]*?<!-- about-pages:end -->\n?/);
+const aboutBlock = aboutBlockMatch ? aboutBlockMatch[0].replace(/\n?$/, '\n') : '';
+
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
@@ -1029,7 +1042,7 @@ ${sitemapFrag}
     <priority>0.7</priority>
   </url>
 <!-- traffic-pages:end -->
-</urlset>
+${aboutBlock}</urlset>
 `;
 
 fs.writeFileSync(path.join(OUT, '..', 'sitemap.xml'), sitemap, 'utf8');

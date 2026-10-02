@@ -34,6 +34,8 @@ const trafficAlternates = slug => TRAFFIC_TRIO_SLUGS.has(slug) ? 4 : TRAFFIC_CHA
 // Service-guide pages: KO/EN pair + x-default, own app node, dated at publication.
 const ABOUT_SLUGS = new Set(['cupid-about', 'cupid-about-en']);
 const ABOUT_LASTMOD = '2026-10-02';
+// Keyword service-guide pages (about-page layout, one language each, no hreflang cluster).
+const KEYWORD_SLUGS = new Set(['cupid-game-free-dating-sim', 'muryo-miyeonsi-yeonae-simulation-game', 'gakuen-renai-game-muryo-guide']);
 const errors = [];
 
 const HOME = [
@@ -88,7 +90,7 @@ const indexable = [
   ...seoFiles.map(([file, url]) => ({ file, url, lang: '', home: false }))
 ];
 
-if (indexable.length !== 59) fail(`Expected 59 indexable pages, found ${indexable.length}`);
+if (indexable.length !== 62) fail(`Expected 62 indexable pages, found ${indexable.length}`);
 
 const canonicals = new Set();
 let stableGame = '';
@@ -119,7 +121,7 @@ for (const page of indexable) {
   if (ogUrl !== page.url) fail(`${page.file}: og:url does not match canonical`);
   if (ogSiteName !== 'Cupid') fail(`${page.file}: og:site_name must be Cupid`);
   if (ogImages.length !== 1) fail(`${page.file}: expected one og:image, found ${ogImages.length}`);
-  const aboutPage = ABOUT_SLUGS.has(path.basename(page.file, '.html'));
+  const aboutPage = ABOUT_SLUGS.has(path.basename(page.file, '.html')) || KEYWORD_SLUGS.has(path.basename(page.file, '.html'));
   for (const property of aboutPage ? [] : ['og:image:type', 'og:image:width', 'og:image:height', 'og:image:alt']) {
     if (!html.includes(`property="${property}"`)) fail(`${page.file}: missing ${property}`);
   }
@@ -134,7 +136,7 @@ for (const page of indexable) {
   }
 
   const slug = page.file.startsWith('seo/') ? path.basename(page.file, '.html') : '';
-  const expectedAlternates = page.home ? 9 : PRIMARY_SEO_SLUGS.has(slug) ? 9 : ABOUT_SLUGS.has(slug) ? 3 : trafficAlternates(slug);
+  const expectedAlternates = page.home ? 9 : PRIMARY_SEO_SLUGS.has(slug) ? 9 : KEYWORD_SLUGS.has(slug) ? 0 : ABOUT_SLUGS.has(slug) ? 3 : trafficAlternates(slug);
   if (hreflangs.length !== expectedAlternates) {
     fail(`${page.file}: expected ${expectedAlternates} hreflang entries, found ${hreflangs.length}`);
   }
@@ -244,10 +246,10 @@ for (const block of sitemapBlocks) {
   const lastmod = capture(block, /<lastmod>([^<]+)<\/lastmod>/);
   const alternates = [...block.matchAll(/<xhtml:link\s+rel="alternate"/g)].length;
   const slug = loc.includes('/seo/') ? loc.split('/').pop() : '';
-  const expectedAlternates = HOME.some(([, url]) => url === loc) ? 9 : PRIMARY_SEO_SLUGS.has(slug) ? 9 : ABOUT_SLUGS.has(slug) ? 3 : trafficAlternates(slug);
+  const expectedAlternates = HOME.some(([, url]) => url === loc) ? 9 : PRIMARY_SEO_SLUGS.has(slug) ? 9 : KEYWORD_SLUGS.has(slug) ? 0 : ABOUT_SLUGS.has(slug) ? 3 : trafficAlternates(slug);
   if (!loc || sitemapUrls.has(loc)) fail(`sitemap.xml: missing or duplicate loc ${loc}`);
   sitemapUrls.add(loc);
-  const expectedLastmod = ABOUT_SLUGS.has(slug) ? ABOUT_LASTMOD : TRAFFIC_PAGE_LASTMOD.get(slug) || LASTMOD;
+  const expectedLastmod = ABOUT_SLUGS.has(slug) || KEYWORD_SLUGS.has(slug) ? ABOUT_LASTMOD : TRAFFIC_PAGE_LASTMOD.get(slug) || LASTMOD;
   if (lastmod !== expectedLastmod) fail(`sitemap.xml: ${loc} has stale lastmod ${lastmod}`);
   if (alternates !== expectedAlternates) fail(`sitemap.xml: ${loc} has ${alternates} alternate links`);
 }
