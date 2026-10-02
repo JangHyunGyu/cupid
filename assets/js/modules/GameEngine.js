@@ -1704,7 +1704,12 @@ class GameEngine {
                     return saved?.currentSceneId === this.sceneRenderer.currentSceneId;
                 } catch (_) { return false; }
             },
-            onLeave: () => window.soundManager?.stopBgm?.(),
+            // onLeave runs only once the save succeeded and the crossing is really starting
+            // (not when the player picks "back to the scene"). The marker is non-blocking.
+            onLeave: () => {
+                try { window.CupidRouteTelemetry?.crossing('departed', this.stateManager, this.sceneRenderer.currentSceneId); } catch (_) { /* never block the crossing */ }
+                window.soundManager?.stopBgm?.();
+            },
             onBack: () => this.uiManager.dialogueBox.focus?.()
         });
     }

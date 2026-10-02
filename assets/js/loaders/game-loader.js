@@ -54,7 +54,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-    const version = '2.9.286';
+    const version = '2.9.287';
     const LOAD_RETRIES = 3;
 
     // =========================================================================
@@ -459,6 +459,7 @@
             }
         }
         if (arrival) {
+            try { if (window.CupidRouteTelemetry) window.CupidRouteTelemetry.crossing('arrived'); } catch (_) { /* never block the arrival scene */ }
             window.__cupidCrossingName = arrival.name;
             document.documentElement.classList.remove('cupid-from-gate');
             var gateVeil = document.getElementById('cupid-gate-veil');

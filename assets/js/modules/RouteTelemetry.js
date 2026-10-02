@@ -1,4 +1,4 @@
-/** Day 4 temptation / Day 5 confrontation diagnostics. No dialogue or player names. */
+/** Day 4 temptation / Day 5 confrontation diagnostics and Nevergrad crossing markers. No dialogue or player names. */
 (() => {
     const KEY = 'cupid_pending_route_events_v1';
     const CHARACTERS = ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse', 'Haeun'];
@@ -62,6 +62,43 @@
         if (state.getFlag('nurse_day4')) return 'Nurse';
         return '';
     }
+    function isTestTraffic() {
+        return window.CUPID_ROUTE_TELEMETRY_TEST === true
+            || /^(localhost|127\.0\.0\.1)$/.test(window.location.hostname)
+            || window.location.hostname.endsWith('.pages.dev');
+    }
+    // Nevergrad <-> Cupid crossing markers. Same queue, endpoint and fields as the other route events;
+    // the payload only names the direction. Fire-and-forget: the flush is never awaited (the fetch uses
+    // keepalive), a failure leaves the event in the persisted queue for the next visit, and nothing here
+    // can throw into the game or delay the page change. The guard drops a repeat of the same direction
+    // within 30 s (a retried departure click); an arrival cannot repeat on reload because takeArrival
+    // strips ?gate=1 from the URL.
+    const crossingSeen = {};
+    let crossingRunId = '';
+    function crossing(kind, state = null, sceneId = '') {
+        try {
+            if (kind !== 'arrived' && kind !== 'departed') return;
+            const now = Date.now();
+            if (crossingSeen[kind] && now - crossingSeen[kind] < 30000) return;
+            crossingSeen[kind] = now;
+            const arrived = kind === 'arrived';
+            if (state && !state.telemetryRunId) state.telemetryRunId = uuid();
+            if (!state && !crossingRunId) crossingRunId = uuid();
+            const day = Number(state?.currentDay);
+            const scene = String(sceneId || (arrived ? 'start' : '')).replace(/[^a-zA-Z0-9_.:-]/g, '').slice(0, 120) || (arrived ? 'start' : 'unknown');
+            pending.push({ appId: window.getCupidAppId(), userId: window.getCupidDeviceId(), event: {
+                eventId: uuid(), runId: state?.telemetryRunId || crossingRunId, eventType: 'crossing_' + kind,
+                sceneId: scene, nextSceneId: '',
+                day: Number.isInteger(day) && day >= 1 && day <= 5 ? day : (arrived ? 1 : 5),
+                route: state ? route(state) : '', version: ASSET_VERSION, clientTime: new Date().toISOString(),
+                isTest: isTestTraffic(),
+                details: arrived ? { from: 'nevergrad', to: 'cupid' } : { from: 'cupid', to: 'nevergrad' }
+            } });
+            pending = pending.slice(-500);
+            persist();
+            void flush();
+        } catch (_) { /* Diagnostics must never interrupt a crossing. */ }
+    }
     function emit(state, sceneId, eventType, details = {}, nextSceneId = '', dayOverride = null) {
         try {
             if (!state.telemetryRunId) state.telemetryRunId = uuid();
@@ -72,9 +109,7 @@
                 eventId: uuid(), runId: state.telemetryRunId, eventType, sceneId, nextSceneId,
                 day: Number.isInteger(dayOverride) ? dayOverride : (/^(morning5_|day5_)/.test(sceneId) ? 5 : 4),
                 route: route(state), version: ASSET_VERSION, clientTime: new Date().toISOString(),
-                isTest: window.CUPID_ROUTE_TELEMETRY_TEST === true
-                    || /^(localhost|127\.0\.0\.1)$/.test(window.location.hostname)
-                    || window.location.hostname.endsWith('.pages.dev'),
+                isTest: isTestTraffic(),
                 details: { ...details, affinities, flags }
             } });
             pending = pending.slice(-500);
@@ -143,7 +178,7 @@
         if (Array.isArray(report.changes) && report.changes.length) emit(state, sceneId, 'affinity_commit', { changes: report.changes }, '', day);
         if (Array.isArray(report.reverted) && report.reverted.length) emit(state, sceneId, 'affinity_reverted', { reverted: report.reverted }, '', day);
     }
-    window.CupidRouteTelemetry = { entered, transition, choice, auditAffinity, flush };
+    window.CupidRouteTelemetry = { entered, transition, choice, auditAffinity, crossing, flush };
     window.addEventListener('online', () => { void flush(); });
     window.addEventListener('pagehide', () => { void flush(); });
     document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') void flush(); });

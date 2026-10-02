@@ -217,3 +217,102 @@ test('Android file-origin users are production data; local and explicit smoke te
         assert.equal(h.requests[0].events[0].isTest, expected);
     }
 });
+
+test('crossing markers carry only the direction through the existing route-event queue', async () => {
+    const h = harness();
+    h.window.location.hostname = 'cupid.archerlab.dev';
+    assert.equal(h.telemetry.crossing('arrived'), undefined);
+    assert.equal(h.telemetry.crossing('arrived'), undefined, 'a repeat inside the guard window is dropped');
+    assert.equal(h.telemetry.crossing('sideways'), undefined, 'unknown kinds are ignored');
+    h.state.flags = { route_nurse: true, nurse_day4: true };
+    h.state.playerName = '비밀이름';
+    h.state.currentDay = 5;
+    h.telemetry.crossing('departed', h.state, 'nurse_perfect_pills_black_4');
+    h.telemetry.crossing('departed', h.state, 'nurse_perfect_pills_black_4');
+    // The first marker is already in flight (flushes are not awaited); the next flush carries the rest.
+    await new Promise(resolve => setImmediate(resolve));
+    await h.telemetry.flush();
+    const events = h.requests.flatMap(request => request.events);
+    assert.equal(events.length, 2);
+    assert.ok(h.requests.every(request => request.appId === 'cupid' && request.userId === 'test-device'));
+    const [arrived, departed] = events;
+    assert.equal(arrived.eventType, 'crossing_arrived');
+    assert.equal(arrived.sceneId, 'start');
+    assert.equal(arrived.day, 1);
+    assert.equal(arrived.route, '');
+    assert.deepEqual(arrived.details, { from: 'nevergrad', to: 'cupid' });
+    assert.equal(departed.eventType, 'crossing_departed');
+    assert.equal(departed.sceneId, 'nurse_perfect_pills_black_4');
+    assert.equal(departed.day, 5);
+    assert.equal(departed.route, 'Nurse');
+    assert.equal(departed.runId, h.state.telemetryRunId);
+    assert.deepEqual(departed.details, { from: 'cupid', to: 'nevergrad' });
+    for (const event of [arrived, departed]) {
+        assert.equal(event.version, '2.9.207');
+        assert.equal(event.isTest, false);
+        assert.deepEqual(Object.keys(event).sort(), ['clientTime', 'day', 'details', 'eventId', 'eventType', 'isTest', 'nextSceneId', 'route', 'runId', 'sceneId', 'version']);
+    }
+    assert.notEqual(arrived.eventId, departed.eventId);
+    assert.ok(!JSON.stringify(h.requests).includes('비밀이름'));
+});
+
+test('a failing or hanging crossing marker never throws, blocks, or loses the event', async () => {
+    const h = harness(new Map(), () => new Promise(() => {}));
+    const started = Date.now();
+    h.telemetry.crossing('departed', h.state, 'nurse_perfect_pills_black_4');
+    assert.ok(Date.now() - started < 200, 'crossing() returns without waiting for the network');
+    assert.equal(JSON.parse(h.storage.get('cupid_pending_route_events_v1')).length, 1, 'queued for a later retry');
+    // Broken storage or identity helpers must not leak an exception either.
+    const broken = harness();
+    broken.window.getCupidDeviceId = () => { throw new Error('storage blocked'); };
+    assert.doesNotThrow(() => broken.telemetry.crossing('arrived'));
+    // Test traffic stays flagged so the viewer ignores it.
+    const local = harness();
+    local.window.location.hostname = 'localhost';
+    local.telemetry.crossing('arrived');
+    await local.telemetry.flush();
+    assert.equal(local.requests[0].events[0].isTest, true);
+});
+
+test('an unsent crossing marker is retried with the same event ID after a reload', async () => {
+    const h = harness(new Map(), async () => { throw new Error('offline'); });
+    h.telemetry.crossing('departed', h.state, 'nurse_perfect_pills_black_4');
+    await h.telemetry.flush();
+    const original = h.requests[h.requests.length - 1].events[0];
+    const restored = harness(h.storage);
+    await restored.telemetry.flush();
+    assert.equal(restored.requests[0].events[0].eventId, original.eventId);
+    assert.equal(restored.requests[0].events[0].eventType, 'crossing_departed');
+});
+
+test('the departure marker fires when the crossing starts, and the arrival marker only on a real arrival', () => {
+    const engineSource = fs.readFileSync(path.join(root, 'assets/js/modules/GameEngine.js'), 'utf8');
+    let options = null;
+    const calls = [];
+    const env = { window: { GAME_LANG: 'ko', CrossWorld: { show: o => { options = o; } },
+        CupidRouteTelemetry: { crossing: (...args) => calls.push(['crossing', ...args]) },
+        soundManager: { stopBgm: () => calls.push(['stopBgm']) }, matchMedia: () => ({ matches: false }) },
+        document: { documentElement: { lang: 'ko' } }, console };
+    vm.runInNewContext(engineSource, env);
+    const engine = Object.create(env.window.GameEngine.prototype);
+    engine.stateManager = { playerName: 'x' };
+    engine.sceneRenderer = { currentSceneId: 'nurse_perfect_pills_black_4' };
+    engine.saveManager = {};
+    engine.uiManager = { dialogueBox: {} };
+    engine._redirectToNevergrad();
+    assert.equal(calls.length, 0, 'showing the confirmation alone records nothing');
+    options.onLeave();
+    assert.deepEqual(calls.map(call => call[0]), ['crossing', 'stopBgm']);
+    assert.equal(calls[0][1], 'departed');
+    assert.equal(calls[0][2], engine.stateManager);
+    assert.equal(calls[0][3], 'nurse_perfect_pills_black_4');
+    // A telemetry failure must not stop the audio fade or the crossing.
+    env.window.CupidRouteTelemetry.crossing = () => { throw new Error('boom'); };
+    calls.length = 0;
+    assert.doesNotThrow(() => options.onLeave());
+    assert.deepEqual(calls.map(call => call[0]), ['stopBgm']);
+
+    const loader = fs.readFileSync(path.join(root, 'assets/js/loaders/game-loader.js'), 'utf8');
+    assert.match(loader, /if \(arrival\) \{\s*try \{ if \(window\.CupidRouteTelemetry\) window\.CupidRouteTelemetry\.crossing\('arrived'\); \}/);
+    assert.match(loader, /const arrival = window\.CrossWorld\.takeArrival\('cupid'\);/);
+});
