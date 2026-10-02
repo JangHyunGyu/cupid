@@ -62,8 +62,8 @@ test('interludes score positive and negative turns using real point caps while k
         assert.equal(context._getSceneDialoguePolicy(scene).affinity, 100);
         fixture.seed(stateManager, character, 89);
         assert.equal((await fixture.talk(context, 5, scene)).change, 3);
-        assert.equal((await fixture.talk(context, 5, scene)).change, 2);
-        assert.equal(stateManager.getAffinity(character), 94);
+        assert.equal((await fixture.talk(context, 5, scene)).change, 3);
+        assert.equal(stateManager.getAffinity(character), 95);
         fixture.seed(stateManager, character, 99);
         assert.equal((await fixture.talk(context, 50, scene)).change, 1);
         assert.equal((await fixture.talk(context, 5, scene)).change, 0);

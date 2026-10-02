@@ -71,18 +71,23 @@ test('100 dates Haeun; 99 returns to the unchanged ending conditions and does no
     assert.equal(state.getFlag('isDating_Seoyeon'), false);
     assert.equal(state.getFlag('ending_perfect'), true);
 });
-test('the best path has a 110-point budget, stored cap 100, mostly personal conversation', async () => {
+test('the best path has a 129-point budget (33 turns x3, +20 declaration, +10 stage choices), stored cap 100, mostly personal conversation', async () => {
     const { context, state, scenes } = runtime();
     const personal = ['haeun_freetalk', 'day4_haeun_personal', 'day5_haeun_personal', 'day5_haeun_private_1', 'day5_haeun_private_2'];
     assert.equal(personal.reduce((n, id) => n + scenes[id].maxTurns, 0), 25);
     let raw = 0;
+    const stageBest = ['haeun_cheer_choice', 'day4_haeun_notice_choice', 'day5_haeun_waver_choice', 'day5_haeun_guilt_choice']
+        .reduce((sum, id) => sum + Math.max(...scenes[id].choices.map(c => Number(c.stats.Haeun.affinity))), 0);
+    assert.equal(stageBest, 10);
+    await fixture.award(state, 'Haeun', stageBest); raw += stageBest;
     for (let turn = 0; turn < 33; turn++) {
         if (turn === 20) { await fixture.award(state, 'Haeun', 20); raw += 20; }
         const gain = context.window.CupidFreeTalkCore.normalizeStoryFreeTalkAffinityChange(5, state.getAffinity('Haeun'));
         raw += gain;
         await fixture.award(state, 'Haeun', gain);
     }
-    assert.equal(raw, 110);
+    assert.equal(raw, 129);
+    assert.equal(raw, 33 * 3 + 20 + stageBest, 'flat +3 per turn at every affinity level');
     assert.equal(state.getAffinity('Haeun'), 100);
     fixture.seed(state, 'Haeun', 45);
     await fixture.award(state, 'Haeun', 20);

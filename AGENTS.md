@@ -24,11 +24,11 @@
 
 ## Affinity Balance and Legacy Rebalance (Permanent)
 - 모든 연애 캐릭터의 PERFECT 엔딩 기준은 호감도 100이다.
-- 개인·그룹 프리토킹 양수 보상에는 회차 누적 상한을 두지 않는다. 본편 적용 상한은 캐릭터당 한 턴 +3, 현재 호감도 90 이상에서는 +2이며 실제 저장 호감도는 100에서 제한한다. 엔딩 후 프리토킹은 호감도를 올리거나 내리지 않는다.
-- 최적 선택지와 엔딩 판정 전 개인·그룹 프리토킹을 모두 합친 이론 최대는 서연·유나·다인·담임·보건 모두 정확히 120으로 유지한다. 엔딩 후 프리토킹을 마쳐도 이 합계는 120으로 유지한다.
-- 본편 프리토킹 턴 수를 늘리면 추가 가능한 캐릭터별 양수 보상만큼 고정 선택지 예산을 줄이고, 턴 수를 줄이면 반대로 보정해 합산 호감도 120을 항상 유지한다.
-- 최적 선택지 합계는 서연 71, 유나 71, 다인 72, 담임 69, 보건 69다. 시나리오 보상이나 본편 프리토킹 기회를 바꾸면 120 불변 조건과 자동 회귀 테스트를 같은 변경에서 갱신한다.
-- 사용자 지정 예외(2026-09-13 갱신): 4일차 유혹 수락은 상대 +8, 기존 상대 -10이며 전용 5턴 프리토킹도 실제 호감도를 올리거나 내린다. 이 유혹 분기에는 이론 최대 120과 경쟁 선택지 합계 제한을 적용하지 않으며, 보상을 상쇄하려고 다른 선택지를 감액하지 않는다. 대화용 호감도 100은 장면 태도 기준이고, 실제 점수의 턴당 +3/90 이상 +2 및 저장 상한 100은 유지한다. 다음 날 갈등과 사건 플래그가 우선하는 엔딩 분기도 유지한다. 일반 루트의 120 기준과 엔딩 후 대화 점수 고정은 그대로 검증한다.
+- 개인·그룹 프리토킹 양수 보상에는 회차 누적 상한을 두지 않는다. 본편 적용 상한은 호감도 구간과 상관없이 모든 캐릭터에 캐릭터당 한 턴 +3이며(2026-10-02 사용자 승인으로 '호감도 90 이상 +2' 감쇠 규칙 삭제) 실제 저장 호감도는 100에서 제한한다. 엔딩 후 프리토킹은 호감도를 올리거나 내리지 않는다.
+- 최적 선택지와 엔딩 판정 전 개인·그룹 프리토킹을 모두 합친 이론 최대는 '90 이상 +2' 규칙 삭제(2026-10-02) 이후 서연 125, 유나 125, 다인 126, 담임 123, 보건 123이다(이전 전원 120). 엔딩 후 프리토킹은 점수를 바꾸지 않아 이 합계가 그대로다.
+- 본편 프리토킹 턴 수를 늘리면 추가 가능한 캐릭터별 양수 보상만큼 고정 선택지 예산을 줄이고, 턴 수를 줄이면 반대로 보정해 위 캐릭터별 이론 최대를 유지한다. 판정 전 프리토킹 양수 보상은 모든 캐릭터에서 18턴 × 3 = 54다.
+- 최적 선택지 합계는 서연 71, 유나 71, 다인 72, 담임 69, 보건 69다. 시나리오 보상이나 본편 프리토킹 기회를 바꾸면 위 이론 최대와 자동 회귀 테스트를 같은 변경에서 갱신한다.
+- 사용자 지정 예외(2026-09-13 갱신): 4일차 유혹 수락은 상대 +8, 기존 상대 -10이며 전용 5턴 프리토킹도 실제 호감도를 올리거나 내린다. 이 유혹 분기에는 이론 최대 120과 경쟁 선택지 합계 제한을 적용하지 않으며, 보상을 상쇄하려고 다른 선택지를 감액하지 않는다. 대화용 호감도 100은 장면 태도 기준이고, 실제 점수의 턴당 +3 및 저장 상한 100은 유지한다. 다음 날 갈등과 사건 플래그가 우선하는 엔딩 분기도 유지한다. 일반 루트의 이론 최대(위 수치)와 엔딩 후 대화 점수 고정은 그대로 검증한다.
 - `affinityRebalanceVersion` 일회성 마이그레이션은 기존 100점 본편·갤러리 기록을 99로 낮추고, 해당 캐릭터의 퍼펙트 완료 표식·퍼펙트 CG·100점 캐릭터 해금을 다시 잠근다. 이미 마이그레이션된 저장에서 새로 달성한 100점은 다시 내리지 않는다.
 
 ## Image Asset Generation (Permanent)
@@ -59,7 +59,7 @@
 - 시나리오의 구조, 대사, 선택지, 이름, 문맥, 성격 지시를 변경할 때는 지원하는 모든 언어(`ko`, `en`, `ja`, `es`, `fr`, `de`, `pt`, `zh`)를 같은 변경에서 갱신한다. 한 언어라도 누락되면 시나리오 변경은 미완료로 취급한다.
 
 ## Haeun Romance Exception (2026-09-22)
-- User-authorized Haeun route: stored affinity remains capped at 100; theoretical best-route budget is 110, primarily from personal FreeTalk. Other five route budgets stay unchanged.
+- User-authorized Haeun route: stored affinity remains capped at 100; theoretical best-route budget is 129 (33 FreeTalk turns × +3 = 99, declaration +20, four stage choices +10; was 110 before the 2026-10-02 stage choices and removal of the 90+ cap), primarily from personal FreeTalk. The other five route budgets are listed in Affinity Balance.
 - Offer Haeun on Day 5 at affinity 45 or higher after her personal conversation. Selection alone is not a dating agreement. Below 100 after the two private conversations, resume the original route and ending conditions with current scores and incident flags.
-- Current choice: Haeun +20, displaced highest-affinity character -30, then three group rounds and two five-turn personal conversations. This preserves the 110 best-route budget. Saves that already entered the previous route retain their original ten-turn personal scenes without the new declaration bonus or group.
+- Current choice: Haeun +20, displaced highest-affinity character -30, then three group rounds and two five-turn personal conversations. The best-route budget is 129 with the flat +3 turn cap. Saves that already entered the previous route retain their original ten-turn personal scenes without the new declaration bonus or group.
 - Haeun addresses Seoyeon, Yuna and Dain as `서연 선배`, `유나 선배`, `다인 선배` in Korean and uses the corresponding senior address in Japanese. School staff remain `선생님`. Verify authored speech and Main/Group/Gallery prompt guidance together.

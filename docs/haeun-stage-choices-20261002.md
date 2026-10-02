@@ -9,7 +9,7 @@
 | 3 외면·동요 | `day5_haeun_waver_1` → `day5_haeun_waver_choice` | 5일차 `day5_haeun_finish` 뒤, `day5_haeun_personal` 앞 | +2, +1, -1, -2 | `day5_haeun_waver_up` / `_down` |
 | 4 죄책감 | `day5_haeun_guilt_1` → `day5_haeun_guilt_choice` | 5일차 방과후 `after5_start` 뒤, `day5_haeun_route_gate` 앞 | +3, +2, -2, -3 | `day5_haeun_guilt_up` / `_down` |
 
-- 4개 모두 선택지 4개(플러스 2·마이너스 2), 크기는 짝을 이룬다. 최선 합계는 +10(최악은 -10)이다. 이로써 이론 예산에 +10이 더해져 120이 된다. 110→120 문서·테스트 수치 반영은 보류했다.
+- 4개 모두 선택지 4개(플러스 2·마이너스 2), 크기는 짝을 이룬다. 최선 합계는 +10(최악은 -10)이다. 이로써 하은 이론 예산에 +10이 더해진다. 같은 날 '호감도 90 이상 턴당 +2' 규칙이 삭제되어 하은 최종 예산은 33턴×3 + 선언 20 + 단계 선택 10 = 129이다(110→129, 문서·테스트 반영 완료).
 - 2 단계 이후는 `haeun_cheer_seen` 플래그가 있어야 열린다. 1 단계는 서연 이벤트(`seoyeon_day3_event`)를 거친 사람만 만난다. 4 단계는 5일차 개인 대화를 마쳤고 호감도 8 이상일 때만 나온다.
 - 기존 대사 수정: `day5_haeun_defends`(첫 동요), `day5_haeun_offer_<상대>`와 `day5_haeun_switch_<상대>_haeun`(제안·전환), `day5_haeun_fallback`(죄책감). `day5_ending_haeun_apology_<상대>` 5종이 엔딩 직전(호감도 100) 사과·결단 대사를 맡는다.
 - 개인 대화 4곳(`day4_haeun_personal`, `day5_haeun_personal`, `day5_haeun_private_1`, `day5_haeun_private_2`)의 `context`·`personality`에 장면 상황과 단계 지시를 더했다.

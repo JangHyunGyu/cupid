@@ -855,7 +855,7 @@ test('competitive scenes retain both relationship tradeoffs and add two all-nega
     }
 });
 
-test('authored routes preserve the shared 120 ceiling after added group turns', () => {
+test('authored optimal-route choice budgets stay fixed after added group turns', () => {
     const optimalRouteEffects = {
         Seoyeon: [
             ['seoyeon_choice', 0], ['lunch_seo_3'], ['lunch_seo_choice', 0],
@@ -1005,7 +1005,7 @@ test('personal free-talk routes keep earning positive affinity without a lifetim
     assert.deepEqual(actualBalance, expectedBalance);
 });
 
-test('optimal routes preserve the 120 ceiling after affinity-locked ending free talk', () => {
+test('optimal routes keep the flat +3 per-turn budget and a 100 ending threshold after affinity-locked ending free talk', () => {
     const routes = {
         Seoyeon: [
             ['authored', 10], ['free', 'lunch_seo_freetalk'],
@@ -1049,12 +1049,13 @@ test('optimal routes preserve the 120 ceiling after affinity-locked ending free 
             ['authored', 15], ['ending'], ['free', 'day5_nurse_ending_freetalk_perfect']
         ]
     };
+    // The reduced +2 cap at affinity 90+ was removed (2026-10-02): every turn is capped at +3 at every affinity level.
     const expected = {
-        Seoyeon: { authored: 71, freeTalk: 49, preEnding: 120, theoretical: 120 },
-        Yuna: { authored: 71, freeTalk: 49, preEnding: 120, theoretical: 120 },
-        Dain: { authored: 72, freeTalk: 48, preEnding: 120, theoretical: 120 },
-        Teacher: { authored: 69, freeTalk: 51, preEnding: 120, theoretical: 120 },
-        Nurse: { authored: 69, freeTalk: 51, preEnding: 120, theoretical: 120 }
+        Seoyeon: { authored: 71, freeTalk: 54, preEnding: 125, theoretical: 125 },
+        Yuna: { authored: 71, freeTalk: 54, preEnding: 125, theoretical: 125 },
+        Dain: { authored: 72, freeTalk: 54, preEnding: 126, theoretical: 126 },
+        Teacher: { authored: 69, freeTalk: 54, preEnding: 123, theoretical: 123 },
+        Nurse: { authored: 69, freeTalk: 54, preEnding: 123, theoretical: 123 }
     };
 
     for (const [character, steps] of Object.entries(routes)) {

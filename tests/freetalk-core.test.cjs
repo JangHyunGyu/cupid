@@ -458,12 +458,13 @@ test('the latest-turn boundary gate stays in the high-priority post-history task
 
 test('main-story free talk keeps per-turn diminishing returns without a lifetime positive-gain cap', () => {
     assert.equal(core.STORY_FREETALK_TURN_GAIN_MAX, 3);
-    assert.equal(core.STORY_FREETALK_HIGH_AFFINITY_GAIN_MAX, 2);
+    assert.equal(core.STORY_FREETALK_HIGH_AFFINITY_GAIN_MAX, undefined, 'the 90+ reduced cap must stay removed');
     assert.equal(core.normalizeStoryFreeTalkAffinityChange(5, 50, 0), 3);
-    assert.equal(core.normalizeStoryFreeTalkAffinityChange(5, 90, 0), 2);
+    assert.equal(core.normalizeStoryFreeTalkAffinityChange(5, 90, 0), 3);
     assert.equal(core.normalizeStoryFreeTalkAffinityChange(5, 50, 22), 3);
-    assert.equal(core.normalizeStoryFreeTalkAffinityChange(5, 90, 999), 2);
+    assert.equal(core.normalizeStoryFreeTalkAffinityChange(5, 90, 999), 3);
     assert.equal(core.normalizeStoryFreeTalkAffinityChange(-999, 99, 22), -50);
+    assert.equal(core.normalizeStoryFreeTalkAffinityChange(5, 99, 0), 3);
 
     const turnsToReachOneHundred = startAffinity => {
         let affinity = startAffinity;
@@ -476,8 +477,8 @@ test('main-story free talk keeps per-turn diminishing returns without a lifetime
         return { affinity, turns };
     };
 
-    assert.deepEqual(turnsToReachOneHundred(80), { affinity: 100, turns: 8 });
-    assert.deepEqual(turnsToReachOneHundred(60), { affinity: 100, turns: 15 });
+    assert.deepEqual(turnsToReachOneHundred(80), { affinity: 100, turns: 7 });
+    assert.deepEqual(turnsToReachOneHundred(60), { affinity: 100, turns: 14 });
 
     let uncappedGain = 0;
     for (let turn = 0; turn < 20; turn++) {

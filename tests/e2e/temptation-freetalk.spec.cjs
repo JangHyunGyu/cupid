@@ -91,7 +91,7 @@ for (const [lang, character, lead, offer, startAffinity] of [
                     background: e.uiManager.bgLayer.style.backgroundImage };
             }, character);
             const requested = requestedChanges[turn - 1];
-            const applied = requested > 0 ? Math.min(requested, expectedAffinity >= 90 ? 2 : 3) : requested;
+            const applied = requested > 0 ? Math.min(requested, 3) : requested;
             expectedAffinity = Math.max(-100, Math.min(100, expectedAffinity + applied));
             expect(state.affinity).toBe(expectedAffinity);
             expect(state.turns).toBe(turn);
