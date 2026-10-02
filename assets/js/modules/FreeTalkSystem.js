@@ -479,7 +479,7 @@ class FreeTalkSystem {
     /**
      * 하은 감정 단계 지시문 (캐시 경계 뒤 동적 영역에만 주입)
      * - 응원 → 자각 → 외면과 동요 → 죄책감 → 결정 순서로 장면별 단계를 고정한다.
-     * - 하은 개인 대화 호감도 기준(anchor)은 haeunRomance 장면과 4·5일차 개인 대화에만 붙는다.
+     * - 하은 호감도 기준(anchor: 구체적이고 진심 어린 배려에만 +2~+3)은 하은이 말하는 모든 자유 대화와 그룹 대화에 붙는다.
      */
     _getHaeunStageGuidance(scene, sceneId, lang = 'ko') {
         const language = String(lang || 'ko').toLowerCase().split('-')[0];
@@ -537,14 +537,14 @@ class FreeTalkSystem {
             }
         };
         const ANCHOR = {
-                ko: "[하은 개인 대화 호감도 기준] 진심이 담긴 말은 +2, 구체적인 배려나 공감이나 하은의 망설임을 알아주는 말은 +3까지 줄 수 있다. 하은이 먼저 마음을 열었을 때 건네는 평범한 예의는 0~+1이다. 감점 기준과 한 턴 상한은 그대로 지키며 연애 접근은 기존 경계 규칙을 따른다.",
-                en: "[Haeun private-conversation affinity anchors] Heartfelt words may earn +2; concrete care, empathy, or recognizing Haeun's hesitation may earn up to +3. Ordinary courtesy right after Haeun opens up is 0 to +1. Keep the penalty bands and the per-turn cap as they are, and follow the existing boundary rules for romantic approaches.",
-                ja: "[ハウンとの個人会話の好感度基準] 心のこもった言葉は+2、具体的な気遣いや共感、ハウンのためらいに気づく言葉は最大+3まで与えてよい。ハウンのほうから心を開いたときの普通の礼儀は0〜+1。減点の基準と1ターンの上限は従来どおり守り、恋愛的な接近は既存の境界ルールに従う。",
-                es: "[Criterios de afinidad en las charlas a solas con Haeun] Las palabras sinceras pueden dar +2; el cuidado concreto, la empatía o notar la duda de Haeun, hasta +3. La cortesía corriente justo después de que Haeun se abra vale de 0 a +1. Mantén las bandas de penalización y el tope por turno, y sigue las reglas de límites existentes para los acercamientos románticos.",
-                fr: "[Repères d’affinité pour les échanges en tête-à-tête avec Haeun] Des paroles sincères peuvent valoir +2 ; une attention concrète, de l’empathie ou le fait de remarquer l’hésitation de Haeun, jusqu’à +3. La simple politesse juste après que Haeun s’est confiée vaut de 0 à +1. Conserve les paliers de pénalité et le plafond par tour, et suis les règles de limites existantes pour les approches romantiques.",
-                de: "[Maßstäbe für die Zuneigung in Einzelgesprächen mit Haeun] Aufrichtige Worte können +2 bringen; konkrete Fürsorge, Empathie oder das Bemerken von Haeuns Zögern bis zu +3. Gewöhnliche Höflichkeit direkt nach Haeuns Öffnung gibt 0 bis +1. Behalte die Abzugsstufen und die Obergrenze pro Zug bei und folge den bestehenden Grenzregeln für romantische Annäherung.",
-                pt: "[Referências de afinidade nas conversas a sós com Haeun] Palavras sinceras podem render +2; cuidado concreto, empatia ou perceber a hesitação de Haeun, até +3. A cortesia comum logo depois de Haeun se abrir vale de 0 a +1. Mantenha as faixas de penalidade e o limite por turno, e siga as regras de limite existentes para aproximações românticas.",
-                zh: "[与夏恩单独交谈时的好感度标准] 发自真心的话可给+2；具体的关心、共情，或是察觉到夏恩的犹豫，最多可给+3。夏恩先敞开心扉之后，普通的礼貌只给0到+1。扣分标准和每回合上限保持不变，恋爱方面的接近仍遵守现有的界限规则。"
+                ko: "[하은 호감도 기준] 높은 점수는 구체적이고 진심 어린 배려에만 준다. 진심이 담긴 말은 +2, 하은의 사정이나 망설임을 짚은 구체적인 배려와 공감은 +3까지 줄 수 있다. 빈말, 형식적인 칭찬, 하은이 마음을 연 직후의 평범한 예의는 0~+1이다. 감점 기준과 한 턴 상한은 그대로 두고, 연애 접근은 기존 경계 규칙을 따른다.",
+                en: "[Haeun affinity anchors] Reserve high scores for concrete, heartfelt care. Heartfelt words may earn +2; concrete care or empathy that picks up on Haeun's situation or hesitation may earn up to +3. Empty phrases, formulaic compliments, and ordinary courtesy right after Haeun opens up stay at 0 to +1. Keep the penalty bands and the per-turn cap as they are, and follow the existing boundary rules for romantic approaches.",
+                ja: "[ハウンの好感度基準] 高い点数は、具体的で心のこもった気遣いにだけ与える。心のこもった言葉は+2、ハウンの事情やためらいに触れた具体的な気遣いや共感は最大+3まで与えてよい。口先だけの言葉、形式的な褒め言葉、ハウンが心を開いた直後の普通の礼儀は0〜+1にとどまる。減点の基準と1ターンの上限は従来どおりとし、恋愛的な接近は既存の境界ルールに従う。",
+                es: "[Criterios de afinidad de Haeun] Las puntuaciones altas se reservan para el cuidado concreto y sincero. Las palabras sinceras pueden dar +2; el cuidado concreto o la empatía que toca la situación o la duda de Haeun, hasta +3. Las frases vacías, los halagos de compromiso y la cortesía corriente justo después de que Haeun se abra se quedan en 0 a +1. Mantén las bandas de penalización y el tope por turno, y sigue las reglas de límites existentes para los acercamientos románticos.",
+                fr: "[Repères d’affinité pour Haeun] Les notes élevées sont réservées aux attentions concrètes et sincères. Des paroles sincères peuvent valoir +2 ; une attention concrète ou une empathie qui touche à la situation ou à l’hésitation de Haeun, jusqu’à +3. Les phrases creuses, les compliments de pure forme et la simple politesse juste après que Haeun s’est confiée restent entre 0 et +1. Conserve les paliers de pénalité et le plafond par tour, et suis les règles de limites existantes pour les approches romantiques.",
+                de: "[Maßstäbe für Haeuns Zuneigung] Hohe Werte sind konkreter, aufrichtiger Fürsorge vorbehalten. Aufrichtige Worte können +2 bringen; konkrete Fürsorge oder Empathie, die Haeuns Lage oder Zögern aufgreift, bis zu +3. Leere Phrasen, pflichtschuldige Komplimente und gewöhnliche Höflichkeit direkt nach Haeuns Öffnung bleiben bei 0 bis +1. Behalte die Abzugsstufen und die Obergrenze pro Zug bei und folge den bestehenden Grenzregeln für romantische Annäherung.",
+                pt: "[Referências de afinidade de Haeun] Pontuações altas ficam reservadas ao cuidado concreto e sincero. Palavras sinceras podem render +2; cuidado concreto ou empatia que toca a situação ou a hesitação de Haeun, até +3. Frases vazias, elogios de praxe e a cortesia comum logo depois de Haeun se abrir ficam em 0 a +1. Mantenha as faixas de penalidade e o limite por turno, e siga as regras de limite existentes para aproximações românticas.",
+                zh: "[夏恩好感度标准] 高分只留给具体而真诚的关心。发自真心的话可给+2；针对夏恩的处境或犹豫所做的具体关心和共情，最多可给+3。空话、流于形式的夸奖，以及夏恩敞开心扉之后的普通礼貌，都只给0到+1。扣分标准和每回合上限保持不变，恋爱方面的接近仍遵守现有的界限规则。"
             };
         const GENERIC_OTHER = {
                 ko: "다른 사람",
@@ -573,8 +573,16 @@ class FreeTalkSystem {
         const stage = stageBySceneId[sceneId] || (scene?.groupMode === 'haeun_switch' ? 'guilt' : '');
         const parts = [];
         if (stage && STAGES[stage]) parts.push(pick(STAGES[stage]).replace(/\{R\}/g, rivalName));
-        const anchored = scene?.haeunRomance === true || sceneId === 'day4_haeun_personal' || sceneId === 'day5_haeun_personal';
-        if (anchored && scene?.type !== 'group_free_talk') parts.push(pick(ANCHOR));
+        // 하은이 말하는 모든 장면(자유 대화·그룹 대화·스위치 그룹·private_1/2)에 같은 호감도 기준을 붙인다.
+        // 엔딩 후 대화처럼 점수가 잠긴 장면에는 붙이지 않는다.
+        const HAEUN_FREE_TALK_IDS = ['haeun_freetalk', 'day4_haeun_personal', 'day5_haeun_personal', 'day5_haeun_private_1', 'day5_haeun_private_2'];
+        const speakerKey = scene ? ((this.charNameMap && this.charNameMap[scene.name]) || scene.name) : '';
+        const haeunSpeaks = scene?.type === 'group_free_talk'
+            ? Array.isArray(scene.groupParticipants) && scene.groupParticipants.some(item => item?.id === 'Haeun')
+            : (HAEUN_FREE_TALK_IDS.includes(sceneId) || speakerKey === 'Haeun');
+        const anchored = haeunSpeaks && scene?.affinityLocked !== true
+            && (scene?.type === 'free_talk' || scene?.type === 'group_free_talk');
+        if (anchored) parts.push(pick(ANCHOR));
         return parts.join(' ');
     }
 
@@ -1096,7 +1104,7 @@ class FreeTalkSystem {
                 : 'route_social'),
             participants,
             locationName: this._getLocalizedGroupLocation(scene, lang),
-            context: [scene.groupMode === 'haeun_switch' ? this._getHaeunStageGuidance(scene, this.currentSceneId, lang) : '', scene.context || ''].filter(Boolean).join(' '),
+            context: [this._getHaeunStageGuidance?.(scene, this.currentSceneId, lang), scene.context || ''].filter(Boolean).join(' '),
             extraGuideline: scene.personality || scene.extra_guideline || '',
             playerName: this.stateManager.playerName || '',
             choiceState: this._getGroupChoiceState(scene, lang),

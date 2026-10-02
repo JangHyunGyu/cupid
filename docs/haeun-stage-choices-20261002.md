@@ -14,7 +14,7 @@
 - 기존 대사 수정: `day5_haeun_defends`(첫 동요), `day5_haeun_offer_<상대>`와 `day5_haeun_switch_<상대>_haeun`(제안·전환), `day5_haeun_fallback`(죄책감). `day5_ending_haeun_apology_<상대>` 5종이 엔딩 직전(호감도 100) 사과·결단 대사를 맡는다.
 - 개인 대화 4곳(`day4_haeun_personal`, `day5_haeun_personal`, `day5_haeun_private_1`, `day5_haeun_private_2`)의 `context`·`personality`에 장면 상황과 단계 지시를 더했다.
 - 자유대화 단계 지시는 `FreeTalkSystem._getHaeunStageGuidance`가 캐시 경계 뒤 동적 영역에만 붙인다. `haeun_freetalk`는 응원, 4일차는 자각(응원 플래그 필요), 5일차 개인 대화는 외면·동요, `private_1`·스위치 그룹은 죄책감, `private_2`는 결정 단계다.
-- 호감도 기준(진심 +2, 구체적 배려·공감·망설임 알아주기 +3)은 `haeunRomance` 장면과 4·5일차 개인 대화에만 붙는다. 감점 구간과 한 턴 상한은 그대로다.
+- 호감도 기준은 하은이 말하는 모든 장면에 붙는다(2026-10-02 확대, 에셋 2.9.286 / SW cupid-v3.3.205). 대상은 `haeun_freetalk`, 4·5일차 개인 대화, `private_1`·`private_2`, `day4_haeun_concern_<상대>_group_talk`, `day5_haeun_<상대>_group_talk`, `day5_haeun_concern_<상대>_group_talk`, 스위치 그룹이다. 문구는 "높은 점수는 구체적이고 진심 어린 배려에만 준다. 진심이 담긴 말은 +2, 하은의 사정이나 망설임을 짚은 구체적인 배려와 공감은 +3까지 줄 수 있다. 빈말, 형식적인 칭찬, 평범한 예의는 0~+1이다"이며 8개 언어로 있다. 캐시 경계 뒤에만 놓이고, 감점 구간(-50 하한 포함)·게이트 45·엔딩 100·선택지 ±1·한 턴 +3 상한은 그대로다. 엔딩 후 대화(점수 잠금)와 다른 캐릭터에는 붙지 않는다. 테스트는 `tests/haeun-affinity-anchor.test.cjs`다.
 - `FLAG_MEMORIES`에 `haeun_cheer_seen`, `day5_haeun_route_offered`, `haeun_switch_declared` 기억을 8개 언어로 더했다.
 - 캐리오버 경로(`day4_counteroffer_penalty_deferred`): 5일차 아침 분기가 `morning5_co_haeun_check`(호감도 8 이상이면 `day5_haeun_gate`)를 거친 뒤 기존 `tour_co_branch`로 돌아간다.
 - 테스트: `tests/haeun-stage-choices.test.cjs`(대칭·합계·순서·8개 언어·캐리오버 라우팅), `tests/choice-affinity-balance.test.cjs`(선택지 총수 385→401, 일별 선택 화면 수), `tests/haeun-romance.test.cjs`(단계 지시가 캐시 경계 뒤에만 있는지).
