@@ -1,6 +1,6 @@
 'use strict';
 // Haeun's four emotional-stage choice scenes (cheering -> awareness -> avoidance/wavering -> guilt).
-// Rules: plus/minus symmetric, 4 choices, best-choice sum = +10 (so the theoretical budget gains exactly 10),
+// Rules: plus/minus symmetric, 4 choices, every choice is ±1 so the best-choice sum = +4 (the theoretical budget gains exactly 4, Haeun total 123),
 // 8-language parity, and scene order following the emotional arc.
 const vm = require('node:vm');
 const fixture = require('./affinity-fixture.cjs');
@@ -44,11 +44,11 @@ test('every Haeun stage scene has equal plus and minus counts with paired magnit
     }
 });
 
-test('the best choices across the four scenes add exactly +10 and the worst exactly -10', () => {
+test('the best choices across the four scenes add exactly +4 and the worst exactly -4', () => {
     const best = STAGES.reduce((sum, { id, day }) => sum + Math.max(...scenario[day][id].choices.map(delta)), 0);
     const worst = STAGES.reduce((sum, { id, day }) => sum + Math.min(...scenario[day][id].choices.map(delta)), 0);
-    assert.equal(best, 10);
-    assert.equal(worst, -10);
+    assert.equal(best, 4);
+    assert.equal(worst, -4);
 });
 
 test('stage scenes follow the emotional arc and sit before the 45 gate', () => {

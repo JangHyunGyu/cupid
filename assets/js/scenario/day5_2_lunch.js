@@ -1605,8 +1605,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": "assets/images/characters/haeun_worried.png",
         "choices": [
             { "next": "day5_haeun_waver_down", "stats": { "Haeun": { "affinity": -1 } } },
-            { "next": "day5_haeun_waver_up", "stats": { "Haeun": { "affinity": 2 } } },
-            { "next": "day5_haeun_waver_down", "stats": { "Haeun": { "affinity": -2 } } },
+            { "next": "day5_haeun_waver_up", "stats": { "Haeun": { "affinity": 1 } } },
+            { "next": "day5_haeun_waver_down", "stats": { "Haeun": { "affinity": -1 } } },
             { "next": "day5_haeun_waver_up", "stats": { "Haeun": { "affinity": 1 } } }
         ]
     },
