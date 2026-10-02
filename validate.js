@@ -1470,7 +1470,7 @@ for (const file of htmlFiles) {
     for (const refId of idRefs) {
         if (!htmlIds.has(refId)) {
             // 동적 생성 요소는 허용 (game-loader가 생성하는 것들)
-            const dynamicIds = ['upload-image-btn', 'upload-image-input', 'image-preview-container', 'image-preview', 'remove-image-btn'];
+            const dynamicIds = ['upload-image-btn', 'upload-image-input', 'image-preview-container', 'image-preview', 'remove-image-btn', 'cupid-gate-veil'];
             if (!dynamicIds.includes(refId)) {
                 errors.push('[UI_DOM_ID] ' + file.name + ': getElementById("' + refId + '") 호출하지만 id="' + refId + '" 없음');
             }
@@ -1947,11 +1947,11 @@ try {
     const activePromptSources = [promptsContent, ftCoreContent, ftSysContent, gftContent].join('\n');
     const promptVersion = (promptsContent.match(/const PROMPT_VERSION = '([^']+)'/) || [])[1];
     const galleryPromptVersion = (gftContent.match(/const GALLERY_FREETALK_PROMPT_VERSION = '([^']+)'/) || [])[1];
-    if (promptVersion !== '2.7.76') {
-        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.76이 아님: ' + promptVersion);
+    if (promptVersion !== '2.7.77') {
+        errors.push('[FREETALK_PROMPT] 메인 프롬프트 캐시 버전이 2.7.77이 아님: ' + promptVersion);
     }
-    if (galleryPromptVersion !== '2.7.66') {
-        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.66가 아님: ' + galleryPromptVersion);
+    if (galleryPromptVersion !== '2.7.67') {
+        errors.push('[FREETALK_PROMPT] 갤러리 프롬프트 캐시 버전이 2.7.67가 아님: ' + galleryPromptVersion);
     }
     const galleryProgressContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-progress.js'), 'utf8');
     const galleryLoaderAffinityContent = fs.readFileSync(path.join(__dirname, 'assets/js/loaders/gallery-loader.js'), 'utf8');
@@ -1977,7 +1977,7 @@ try {
         'Math.max(-100',
         '"affinity":<판정한 정수>',
         'PERFECT 엔딩 후 성인 연인 관계는 점수만으로 초기화·결별하지 않습니다',
-        'They remain post-PERFECT-ending adult lovers at every score',
+        'Post-PERFECT-ending adult lovers: never reset or automatically separate them.',
         'current_affinity='
     ];
     if (galleryAffinitySignals.some(signal => !galleryAffinityRuntime.includes(signal))) {
@@ -2029,11 +2029,11 @@ try {
             errors.push('[FREETALK_PROMPT] ' + label + ' 빈 구조 방지 계약 또는 전역 문구 반복 금지 제거 상태 불일치');
         }
     }
-    for (const [label, source, perspectiveEn] of [
-        ['main runtime', promptsContent, 'Private thoughts are not shared knowledge'],
-        ['gallery runtime', gftContent, 'Perspective: Preserve user choices, consent, and refusal.']
+    for (const [label, source, perspectiveEn, perspectiveKo] of [
+        ['main runtime', promptsContent, 'Private thoughts are not shared knowledge', '시점: 사용자의 상태·선택·동의·거절을 지킵니다'],
+        ['gallery runtime', gftContent, 'Perspective: Preserve user choices, consent, and refusal.', '시점: 사용자 상태·선택을 지킵니다']
     ]) {
-        if (!source.includes('시점: 사용자의 상태·선택·동의·거절을 지킵니다')
+        if (!source.includes(perspectiveKo)
             || !source.includes(perspectiveEn)
             || !ftCoreContent.includes('속마음·상상·꿈·말하지 않은 계획은 사용자만 아는 내면')
             || !ftCoreContent.includes('Private thoughts, imagination, dreams, and unspoken plans belong only to the user')) {
@@ -2240,7 +2240,7 @@ try {
     const galleryCatchIndex = gftContent.indexOf('} catch (err)', gallerySendIndex);
     const affinityLogContracts = [
         ['config', configContent, ['affinityChange = null', 'affinityCurrent = null', 'entry.affinityChange', 'entry.affinityCurrent']],
-        ['main', ftSysContent, ['const affinityResult = this.applyAffinity(parsed.affinity, scene, finalContent)', 'affinityChange: affinityResult?.change', 'affinityCurrent: affinityResult?.value', 'const actualChange = newValue - previousValue']],
+        ['main', ftSysContent, ['affinityResult = this.applyAffinity(parsed.affinity, scene, finalContent)', 'affinityChange: affinityResult?.change', 'affinityCurrent: affinityResult?.value', 'const actualChange = newValue - previousValue']],
         ['gallery', gftContent, ['const affinityResult = this._applyAffinityChange(', 'incidentResult.affinityChange,', 'requestCharId,', 'finalContent', 'affinityChange: affinityResult?.change', 'affinityCurrent: affinityResult?.value']]
     ];
     for (const [label, source, required] of affinityLogContracts) {
