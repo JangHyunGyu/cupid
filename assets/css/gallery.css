@@ -2006,3 +2006,356 @@ html[lang^="zh"] .lang-btn,
 html[lang^="zh"] .lang-combo-selected {
     font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
 }
+
+/* ============================================================================
+   프리토킹 팁 탭 + 레이어 팝업 (공개 섹션)
+   - 목록: .tips-root > .tips-group > .tips-list > .tip-card
+   - 팝업: .tip-modal-backdrop > .tip-modal (role="dialog")
+   - 390px 폭에서도 가로 넘침이 없도록 min-width: 0 / overflow-wrap 을 사용합니다.
+   ============================================================================ */
+.tips-root {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 0 24px;
+    min-width: 0;
+}
+
+.tips-heading {
+    margin: 0 0 10px;
+    font-size: clamp(1.15rem, 4.5vw, 1.45rem);
+    color: var(--c-text);
+    overflow-wrap: anywhere;
+}
+
+.tips-intro {
+    margin: 0 0 22px;
+    color: var(--c-text-soft);
+    font-size: 0.88rem;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.tips-group {
+    margin-bottom: 26px;
+}
+
+.tips-group__title {
+    margin: 0 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--c-border-soft);
+    color: var(--c-accent);
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.tips-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tips-list__item {
+    min-width: 0;
+}
+
+.tip-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    min-height: 64px;
+    padding: 12px 14px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 6px;
+    background: linear-gradient(145deg, rgba(35, 26, 44, 0.9), rgba(15, 12, 21, 0.94));
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+    color: var(--c-text);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s, transform 0.2s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.tip-card:hover {
+    border-color: rgba(232, 138, 160, 0.52);
+    transform: translateY(-1px);
+}
+
+.tip-card:focus-visible {
+    outline: 2px solid var(--c-accent);
+    outline-offset: 2px;
+}
+
+.tip-card.is-locked {
+    cursor: default;
+    opacity: 0.6;
+}
+
+.tip-card.is-locked:hover {
+    border-color: rgba(255, 255, 255, 0.13);
+    transform: none;
+}
+
+.tip-card__icon {
+    flex: 0 0 auto;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.tip-card__text {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+}
+
+.tip-card__title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+}
+
+.tip-card__summary {
+    color: var(--c-text-soft);
+    font-size: 0.78rem;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.tip-card__chevron {
+    flex: 0 0 auto;
+    color: var(--c-accent);
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+html.tip-modal-open,
+body.tip-modal-open {
+    overflow: hidden;
+}
+
+.tip-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 310;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: max(14px, env(safe-area-inset-top)) max(14px, env(safe-area-inset-right)) max(14px, env(safe-area-inset-bottom)) max(14px, env(safe-area-inset-left));
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.82);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    overscroll-behavior: contain;
+}
+
+.tip-modal-backdrop[hidden] {
+    display: none;
+}
+
+.tip-modal-backdrop.is-open {
+    opacity: 1;
+}
+
+.tip-modal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: min(560px, 100%);
+    max-height: 100%;
+    max-height: calc(100dvh - 28px);
+    box-sizing: border-box;
+    border: 1px solid rgba(232, 138, 160, 0.34);
+    border-radius: 8px;
+    background: linear-gradient(135deg, #2a2a4a 0%, #1a1a2e 100%);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+    color: var(--c-text-soft);
+    transform: translateY(12px) scale(0.98);
+    transition: transform 0.2s ease;
+}
+
+.tip-modal-backdrop.is-open .tip-modal {
+    transform: none;
+}
+
+.tip-modal:focus {
+    outline: none;
+}
+
+.tip-modal__close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 1;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--c-text);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.tip-modal__close:hover {
+    background: rgba(255, 255, 255, 0.16);
+}
+
+.tip-modal__close:focus-visible,
+.tip-modal__done:focus-visible {
+    outline: 2px solid var(--c-accent);
+    outline-offset: 2px;
+}
+
+.tip-modal__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 60px 12px 20px;
+}
+
+.tip-modal__header > div {
+    min-width: 0;
+}
+
+.tip-modal__icon {
+    flex: 0 0 auto;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.tip-modal__eyebrow {
+    margin: 0 0 4px;
+    color: var(--c-accent);
+    font-size: 0.72rem;
+    letter-spacing: 0.6px;
+    overflow-wrap: anywhere;
+}
+
+.tip-modal__title {
+    margin: 0;
+    color: var(--c-text);
+    font-size: 1.15rem;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+}
+
+.tip-modal__body {
+    flex: 1 1 auto;
+    min-height: 0;
+    padding: 4px 20px 12px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+}
+
+.tip-modal__summary {
+    margin: 0 0 12px;
+    color: var(--c-text);
+    font-size: 0.92rem;
+    font-weight: 600;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.tip-modal__points {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tip-modal__points li {
+    position: relative;
+    padding-left: 18px;
+    font-size: 0.88rem;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.tip-modal__points li::before {
+    content: '';
+    position: absolute;
+    top: 0.72em;
+    left: 2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--c-accent);
+}
+
+.tip-modal__footer {
+    flex: 0 0 auto;
+    padding: 10px 20px calc(16px + env(safe-area-inset-bottom));
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tip-modal__done {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    border: 1px solid var(--c-accent);
+    border-radius: 6px;
+    background: linear-gradient(180deg, rgba(232, 138, 160, 0.28), rgba(232, 138, 160, 0.14));
+    color: var(--c-text);
+    font: inherit;
+    cursor: pointer;
+}
+
+@media (max-width: 720px) {
+    .tips-list {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .tips-intro {
+        font-size: 0.82rem;
+    }
+
+    .tip-modal-backdrop {
+        align-items: flex-end;
+        padding: 0;
+    }
+
+    .tip-modal {
+        width: 100%;
+        max-height: 88dvh;
+        border-radius: 14px 14px 0 0;
+        border-bottom: 0;
+    }
+
+    .tip-modal__header {
+        padding: 18px 56px 10px 16px;
+    }
+
+    .tip-modal__body {
+        padding: 4px 16px 10px;
+    }
+
+    .tip-modal__footer {
+        padding: 10px 16px calc(14px + env(safe-area-inset-bottom));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .tip-modal-backdrop,
+    .tip-modal,
+    .tip-card {
+        transition: none;
+    }
+}
+
+/* 한국어는 어절 단위로 줄바꿈하고, 너무 긴 단어만 강제로 나눕니다. */
+html[lang="ko"] .tips-root,
+html[lang="ko"] .tip-modal {
+    word-break: keep-all;
+}

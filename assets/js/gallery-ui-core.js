@@ -54,6 +54,9 @@ class GalleryUI {
         /** @type {MusicRenderer} 음악실 렌더러 */
         this.music = new MusicRenderer(this);
 
+        /** @type {TipsRenderer|null} 프리토킹 팁 렌더러 (갤러리 페이지에서만 로드됨) */
+        this.tips = typeof TipsRenderer === 'function' ? new TipsRenderer(this) : null;
+
         // ─────────────────────────────────────────────────────────────────────
         // 하위 호환성: 기존 코드에서 사용하던 속성들 유지
         // ─────────────────────────────────────────────────────────────────────
@@ -102,6 +105,20 @@ class GalleryUI {
 
     renderEndings() {
         this.ending.render();
+    }
+
+    /**
+     * 프리토킹 팁 목록 렌더링 (진행도와 무관하게 공개)
+     */
+    renderTips() {
+        if (this.tips) this.tips.render();
+    }
+
+    /**
+     * 프리토킹 팁 팝업 닫기
+     */
+    closeTipModal() {
+        return this.tips ? this.tips.close() : false;
     }
 
     /**

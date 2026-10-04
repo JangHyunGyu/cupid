@@ -203,6 +203,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'sound.js',
         // 1. 데이터 및 진행도
         'gallery-data.js',
+        'gallery-tips-data.js',
         'gallery-progress.js',
         // 한국어 대화 예시와 공통 프롬프트 규칙
         'freetalk-core.js',
@@ -215,6 +216,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'gallery-ui-cg.js',
         'gallery-ui-ending.js',
         'gallery-ui-music.js',
+        'gallery-ui-tips.js',
 
         // 3. UI 코어 (서브 렌더러 의존)
         'gallery-ui-core.js',

@@ -143,6 +143,9 @@ class Gallery {
             case 'music':
                 this.ui.renderMusic();
                 break;
+            case 'tips':
+                this.ui.renderTips();
+                break;
         }
     }
 
@@ -162,6 +165,7 @@ class Gallery {
                 this.ui.closeCharacterModal();
                 this.ui.closeCGModal();
                 this.ui.closeUnlockPopup();
+                this.ui.closeTipModal();
             }
         });
 

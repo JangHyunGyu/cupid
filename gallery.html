@@ -47,7 +47,7 @@
     <link rel="stylesheet" as="style" crossorigin
         href="assets/vendor/pretendard/pretendard.css" />
     <link rel="stylesheet" href="assets/css/style.css?v=2.9.293">
-    <link rel="stylesheet" href="assets/css/gallery.css?v=2.8.13">
+    <link rel="stylesheet" href="assets/css/gallery.css?v=2.8.14">
     <link rel="stylesheet" href="assets/css/gallery-freetalk.css?v=2.9.9">
 
     <!-- Google tag (gtag.js) -->
@@ -130,6 +130,7 @@
             <button class="tab-btn" data-tab="cg">🖼️ 이벤트 CG</button>
             <button class="tab-btn" data-tab="endings">🏆 엔딩 도감</button>
             <button class="tab-btn" data-tab="music">🎵 음악실</button>
+            <button class="tab-btn" data-tab="tips">💡 팁</button>
         </nav>
 
         <!-- ====================================================================
@@ -166,6 +167,11 @@
             <div id="music-list" class="music-list">
                 <!-- Music items will be rendered here by gallery.js -->
             </div>
+        </section>
+
+        <!-- 프리토킹 팁 탭 (공개) -->
+        <section id="tab-tips" class="tab-content">
+            <div id="tips-root" class="tips-root"></div>
         </section>
     </main>
 
@@ -235,6 +241,24 @@
 
     <!-- Gallery Free Talk Overlay -->
     <div id="gallery-freetalk-overlay" class="gallery-freetalk-overlay"></div>
+
+    <!-- 프리토킹 팁 레이어 팝업 -->
+    <div id="tip-modal-backdrop" class="tip-modal-backdrop" hidden>
+        <div id="tip-modal" class="tip-modal" role="dialog" aria-modal="true" aria-labelledby="tip-modal-title" aria-describedby="tip-modal-body" tabindex="-1">
+            <button type="button" id="tip-modal-close" class="tip-modal__close" data-tip-close aria-label="닫기">✕</button>
+            <div class="tip-modal__header">
+                <span id="tip-modal-icon" class="tip-modal__icon" aria-hidden="true"></span>
+                <div>
+                    <p id="tip-modal-eyebrow" class="tip-modal__eyebrow"></p>
+                    <h2 id="tip-modal-title" class="tip-modal__title"></h2>
+                </div>
+            </div>
+            <div id="tip-modal-body" class="tip-modal__body"></div>
+            <div class="tip-modal__footer">
+                <button type="button" id="tip-modal-done" class="tip-modal__done" data-tip-close>닫기</button>
+            </div>
+        </div>
+    </div>
 
     <!-- ========================================================================
          푸터 (Footer)
