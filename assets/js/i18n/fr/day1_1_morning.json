@@ -25,7 +25,7 @@
     },
     "seoyeon_meet_2": {
         "name": "Seoyeon",
-        "text": "*Après avoir vérifié une nouvelle fois le nom de {name}, elle le coche sur la liste de son porte-bloc. La pointe de son stylo reste suspendue au-dessus de la page tandis qu'elle examine aussi l'écusson de son uniforme.*"
+        "text": "*Après avoir vérifié une nouvelle fois le nom de {name}, elle le coche sur la liste de son porte-bloc. La pointe de son stylo reste suspendue au-dessus de la page tandis qu'elle examine aussi le badge nominatif de mon uniforme.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",

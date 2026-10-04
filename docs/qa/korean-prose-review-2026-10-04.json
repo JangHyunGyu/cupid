@@ -1,0 +1,2613 @@
+{
+  "date": "2026-10-04",
+  "base_commit": "f60363f9b0a7f57d1c5ead9abb5b298e9f38bb0f",
+  "reference": {
+    "repository": "epoko77-ai/im-not-ai",
+    "commit": "2f3d943d08056b612a92e12bfb72ea94dd2acd18",
+    "skill": "humanize-korean v2.3-codex",
+    "route": "heavy"
+  },
+  "reviewed_korean_records": 3591,
+  "korean_fields_changed": 50,
+  "translated_fields_changed": 66,
+  "invariants": {
+    "scene_ids": "preserved",
+    "speakers": "preserved",
+    "choices": "preserved",
+    "gameplay_values": "preserved",
+    "placeholders": "preserved",
+    "korean_numeric_tokens": "preserved",
+    "narration_markup": "preserved"
+  },
+  "gates": {
+    "scope": "all manifest body chunks; original official verify_gates.py on each complete chunk",
+    "chunks": 57,
+    "warning_chunks": [],
+    "change_rate_range": [
+      0.0,
+      0.0023
+    ],
+    "note": "Official verify_gates.py applied to all complete body chunks before and after independent finalization; no whole-corpus character rate claimed."
+  },
+  "finalizer": {
+    "decision": "accept",
+    "run_id": "2026-10-04-002-6712",
+    "review_scope": {
+      "korean_changed_records": 50,
+      "manifest_records": 3591,
+      "unchanged_records_verified_exactly": 3541,
+      "gate_chunks": 57
+    },
+    "fidelity_violations": [],
+    "residual_findings": [],
+    "over_polish_findings": [],
+    "correction_count": 0,
+    "korean_body_corrections": [],
+    "backup": "final_pre_finalize.md",
+    "summary_block_count": 1,
+    "genre": "한국어 게임 대사·지문·선택지",
+    "grade": "B",
+    "self_check_pass_count": 6,
+    "gate": {
+      "passed_chunks": 57,
+      "total_chunks": 57,
+      "max_chunk_change_rate": 0.0023,
+      "weighted_chunk_change_rate_reference": 0.00038966074313408737,
+      "weighted_rate_note": "공식 청크별 변경률의 글자 수 가중 평균이며 전체 SequenceMatcher 재산출값은 아님"
+    },
+    "checks": {
+      "record_markers_and_order": "pass",
+      "all_unlisted_records_byte_equivalent_after_utf8_decode": "pass",
+      "changed_record_meaning_and_action": "pass",
+      "names_numbers_dates_and_placeholders": "pass",
+      "negation_condition_and_modality": "pass",
+      "character_register_and_genre": "pass",
+      "no_added_metaphor_or_cliche": "pass",
+      "no_over_polish": "pass"
+    },
+    "notes": [
+      "원문의 50개 변경 후보와 윤문본을 직접 대조했다. 의미 보존을 위한 추가 한국어 보정은 필요하지 않았다.",
+      "새 주장을 더하거나 대사의 감정·높임말을 올리지 않았다.",
+      "전체 변경은 manifest에 등록된 50레코드와 정확히 일치하고 나머지 본문은 원문과 같다.",
+      "게임 장면의 의도된 단문·말줄임표와 유효한 시각적 비유는 유지했다.",
+      "공식 게이트는 전체 manifest의 57개 본문 청크에 대해 모두 exit 0이며, 재조립한 긴 텍스트 전체의 변경률을 재산출했다고 주장하지 않는다."
+    ],
+    "translation_review_file": "translation-review.json",
+    "translation_proposed_change_count": 66,
+    "sha256": {
+      "original": "3904c7ef4994cc7284c68abbb817800efc8b9eb4048e7c125ed5424acd30c3a9",
+      "approved_body": "205c3afe3c5734404d6cac2dd04e9d5f540e1daf76d8bf2fcd5b7db0429e6522"
+    }
+  },
+  "translation_review": {
+    "application_status": "applied",
+    "proposals_applied": 66,
+    "independent_review": {
+      "verdict": "corrections_proposed",
+      "scope": "한국어 변경 50레코드의 지원 언어 7종; 총 350개 번역을 의미·행동·말투·수치·플레이스홀더 관점에서 대조",
+      "source_korean_verdict": "accept",
+      "reviewed_records": 50,
+      "reviewed_languages": [
+        "en",
+        "ja",
+        "es",
+        "fr",
+        "de",
+        "pt",
+        "zh"
+      ],
+      "reviewed_translation_count": 350,
+      "aligned_translation_count": 284,
+      "proposed_change_count": 66,
+      "records_with_proposals": 21,
+      "placeholder_mismatch_count": 0,
+      "unsafe_change_count": 0,
+      "applied": false,
+      "review_policy": "명백한 누락·행동 불일치·수치·호칭·서법만 수정안에 포함한다. 의미가 같은 자연스러운 의역과 언어별 문장 배치는 유지한다. 위험한 내용은 추가하지 않고 교직원과 학생의 비연애적 경계 및 동의 거부를 보존한다.",
+      "notes": [
+        "제안은 실제 번역 파일에 아직 반영하지 않았다. file/id/field/before/after로 직접 검토하고 적용할 수 있다.",
+        "한국어에서 제거한 단순 중복이 번역에 남은 경우에는 의미 불일치가 없으므로 기계적으로 제거하지 않았다.",
+        "after5_last_chance_2_l의 눌러 세운다는 원문 자체의 장면 표현에 여지가 있어, 공을 누르는 동작이 보존된 기존 번역을 재해석하지 않았다.",
+        "인물 이름의 확립된 언어별 표기와 자연스러운 대사 말투를 유지했다."
+      ],
+      "record_results": [
+        {
+          "file": "assets/js/i18n/ko/day1_1_morning.json",
+          "id": "seoyeon_meet_2",
+          "field": "text",
+          "verdict": "corrections_proposed",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": [
+            "fr"
+          ]
+        },
+        {
+          "file": "assets/js/i18n/ko/day1_2_lunch.json",
+          "id": "lunch_seo_8",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day1_2_lunch.json",
+          "id": "lunch_yuna_1",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day1_2_lunch.json",
+          "id": "lunch_dain_neg_leave",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day1_3_afterschool.json",
+          "id": "after_miss_dain_3",
+          "field": "text",
+          "verdict": "corrections_proposed",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": [
+            "es",
+            "pt"
+          ]
+        },
+        {
+          "file": "assets/js/i18n/ko/day1_3_afterschool.json",
+          "id": "after_nurse_enter_10_b",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day1_4_night.json",
+          "id": "night_end_3",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day1_4_night.json",
+          "id": "forced_violation_day1_after_dain",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day2_1_morning.json",
+          "id": "morning2_greet_none_2",
+          "field": "text",
+          "verdict": "corrections_proposed",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": [
+            "es"
+          ]
+        },
+        {
+          "file": "assets/js/i18n/ko/day2_2_lunch.json",
+          "id": "lunch2_dain_10",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day2_2_lunch.json",
+          "id": "lunch2_dain_end",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day2_2_lunch.json",
+          "id": "lunch2_dain_neg_leave",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day2_3_afterschool.json",
+          "id": "hidden_nurse_d2_1",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day2_3_afterschool.json",
+          "id": "after2_dain_end_3",
+          "field": "text",
+          "verdict": "corrections_proposed",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": [
+            "es",
+            "fr",
+            "pt"
+          ]
+        },
+        {
+          "file": "assets/js/i18n/ko/day2_3_afterschool.json",
+          "id": "after2_seo_8b",
+          "field": "text",
+          "verdict": "corrections_proposed",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": [
+            "en",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ]
+        },
+        {
+          "file": "assets/js/i18n/ko/day2_3_afterschool.json",
+          "id": "after2_yuna_choice_pre3_b",
+          "field": "text",
+          "verdict": "corrections_proposed",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": [
+            "en",
+            "zh"
+          ]
+        },
+        {
+          "file": "assets/js/i18n/ko/day2_3_afterschool.json",
+          "id": "hidden_nurse_d2_return",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day2_3_afterschool.json",
+          "id": "after2_yuna_neg_leave",
+          "field": "text",
+          "verdict": "corrections_proposed",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ]
+        },
+        {
+          "file": "assets/js/i18n/ko/day2_4_night.json",
+          "id": "night2_flashback_3",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day2_4_night.json",
+          "id": "forced_violation_day2_after_dain",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day3_1_morning.json",
+          "id": "morning3_dain_gate_3",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day3_1_morning.json",
+          "id": "hidden_homeroom_d3_4_b",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day3_1_morning.json",
+          "id": "hidden_homeroom_d3_4_h",
+          "field": "text",
+          "verdict": "corrections_proposed",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": [
+            "de"
+          ]
+        },
+        {
+          "file": "assets/js/i18n/ko/day3_1_morning.json",
+          "id": "hidden_nurse_d3_6",
+          "field": "text",
+          "verdict": "corrections_proposed",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": [
+            "de"
+          ]
+        },
+        {
+          "file": "assets/js/i18n/ko/day3_1_morning.json",
+          "id": "morning3_date_dain_accept",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day3_2_lunch.json",
+          "id": "lunch3_expose_3",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day3_2_lunch.json",
+          "id": "lunch3_end",
+          "field": "text",
+          "verdict": "corrections_proposed",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": [
+            "en",
+            "ja",
+            "fr",
+            "de",
+            "zh"
+          ]
+        },
+        {
+          "file": "assets/js/i18n/ko/day3_3_afterschool.json",
+          "id": "after3_dain_freetalk",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day3_3_afterschool.json",
+          "id": "after3_group_nurse_companion",
+          "field": "context",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day3_4_night.json",
+          "id": "forced_violation_day3_after_dain",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day4_1_morning.json",
+          "id": "hidden_homeroom_d4_3",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day4_1_morning.json",
+          "id": "day4_haeun_personal",
+          "field": "context",
+          "verdict": "corrections_proposed",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": [
+            "zh"
+          ]
+        },
+        {
+          "file": "assets/js/i18n/ko/day4_3_afterschool.json",
+          "id": "confess_yuna_no_2",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day4_3_afterschool.json",
+          "id": "confess_seo_yes_low_1",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day4_3_afterschool.json",
+          "id": "confess_seo_yes_neg",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day4_4_night.json",
+          "id": "wall_yuna_moved_5_b",
+          "field": "text",
+          "verdict": "corrections_proposed",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": [
+            "de"
+          ]
+        },
+        {
+          "file": "assets/js/i18n/ko/day5_1_morning.json",
+          "id": "morning5_counteroffer_group_talk",
+          "field": "text",
+          "verdict": "corrections_proposed",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": [
+            "en",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ]
+        },
+        {
+          "file": "assets/js/i18n/ko/day5_1_morning.json",
+          "id": "morning5_counteroffer_group_talk",
+          "field": "context",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day5_2_lunch.json",
+          "id": "tour_dain_freetalk",
+          "field": "text",
+          "verdict": "corrections_proposed",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": [
+            "en",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ]
+        },
+        {
+          "file": "assets/js/i18n/ko/day5_2_lunch.json",
+          "id": "tour_dain_end_2",
+          "field": "text",
+          "verdict": "corrections_proposed",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ]
+        },
+        {
+          "file": "assets/js/i18n/ko/day5_2_lunch.json",
+          "id": "tour_yuna_affinity_80",
+          "field": "text",
+          "verdict": "corrections_proposed",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": [
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt"
+          ]
+        },
+        {
+          "file": "assets/js/i18n/ko/day5_2_lunch.json",
+          "id": "day5_haeun_personal",
+          "field": "context",
+          "verdict": "corrections_proposed",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": [
+            "zh"
+          ]
+        },
+        {
+          "file": "assets/js/i18n/ko/day5_3_afterschool.json",
+          "id": "after5_hidden_route_choice_check",
+          "field": "text",
+          "verdict": "corrections_proposed",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": [
+            "en",
+            "ja"
+          ]
+        },
+        {
+          "file": "assets/js/i18n/ko/day5_3_afterschool.json",
+          "id": "after5_last_chance_2_l",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day5_3_afterschool.json",
+          "id": "after5_confess_react_seo_neg",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day5_4_night.json",
+          "id": "day5_ending_mayhem",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day5_4_night.json",
+          "id": "bitter_yuna_3",
+          "field": "text",
+          "verdict": "corrections_proposed",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": [
+            "ja"
+          ]
+        },
+        {
+          "file": "assets/js/i18n/ko/day5_4_night.json",
+          "id": "good_1c",
+          "field": "text",
+          "verdict": "aligned",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": []
+        },
+        {
+          "file": "assets/js/i18n/ko/day5_4_night.json",
+          "id": "day5_seo_ending_freetalk_true_love",
+          "field": "context",
+          "verdict": "corrections_proposed",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": [
+            "en",
+            "ja",
+            "de"
+          ]
+        },
+        {
+          "file": "assets/js/i18n/ko/day5_4_night.json",
+          "id": "day5_teacher_ending_freetalk_good",
+          "field": "context",
+          "verdict": "corrections_proposed",
+          "reviewed_languages": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "languages_with_findings": [
+            "en",
+            "ja",
+            "de",
+            "zh"
+          ]
+        }
+      ],
+      "proposed_changes": [
+        {
+          "file": "assets/js/i18n/fr/day1_1_morning.json",
+          "id": "seoyeon_meet_2",
+          "field": "text",
+          "before": "*Après avoir vérifié une nouvelle fois le nom de {name}, elle le coche sur la liste de son porte-bloc. La pointe de son stylo reste suspendue au-dessus de la page tandis qu'elle examine aussi l'écusson de son uniforme.*",
+          "after": "*Après avoir vérifié une nouvelle fois le nom de {name}, elle le coche sur la liste de son porte-bloc. La pointe de son stylo reste suspendue au-dessus de la page tandis qu'elle examine aussi le badge nominatif de mon uniforme.*",
+          "language": "fr",
+          "source_record_number": 1,
+          "reason": "주인공의 명찰을 확인하는 장면에서 소유 대상이 서연의 교복으로 읽히는 부분을 바로잡는다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/es/day1_3_afterschool.json",
+          "id": "after_miss_dain_3",
+          "field": "text",
+          "before": "*Me aparto por reflejo. Dain pasa rozándome y frena de golpe unos pasos más allá.*",
+          "after": "*Me aparto a un lado y Dain pasa rozándome. Tres pasos más allá, arrastra la suela de la zapatilla por el suelo al detenerse.*",
+          "language": "es",
+          "source_record_number": 5,
+          "reason": "세 걸음이라는 수치와 운동화 밑창을 바닥에 끌며 멈추는 동작이 빠져 있다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/pt/day1_3_afterschool.json",
+          "id": "after_miss_dain_3",
+          "field": "text",
+          "before": "*Desvio pro lado por reflexo. A Dain passa voando e freia de repente.*",
+          "after": "*Desvio pro lado e a Dain passa rente a mim. Três passos adiante, ela arrasta a sola do tênis pelo chão ao parar.*",
+          "language": "pt",
+          "source_record_number": 5,
+          "reason": "세 걸음이라는 수치와 운동화 밑창을 바닥에 끌며 멈추는 동작이 빠져 있다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/es/day2_1_morning.json",
+          "id": "morning2_greet_none_2",
+          "field": "text",
+          "before": "*Seoyeon pasa lista. Dain se gira hacia sus amigas. El libro de Yuna ya está abierto.*",
+          "after": "*Seoyeon pasa una página del libro de asistencia. Dain se gira hacia sus amigas. El libro de Yuna ya está abierto.*",
+          "language": "es",
+          "source_record_number": 9,
+          "reason": "출석부를 넘기는 동작이 실제로 출석을 부르는 동작으로 바뀌어 있다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/es/day2_3_afterschool.json",
+          "id": "after2_dain_end_3",
+          "field": "text",
+          "before": "*Detiene los palillos. Solo un segundo.*",
+          "after": "*Las puntas de sus palillos permanecen inmóviles sobre el vaso de tteokbokki.*",
+          "language": "es",
+          "source_record_number": 14,
+          "reason": "떡볶이 컵 위에 멈춘 젓가락 끝을 복구하고 원문에 없는 1초 제한을 제거한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/fr/day2_3_afterschool.json",
+          "id": "after2_dain_end_3",
+          "field": "text",
+          "before": "*Ses baguettes s'immobilisent. Juste un instant.*",
+          "after": "*Le bout de ses baguettes reste immobile au-dessus du gobelet de tteokbokki.*",
+          "language": "fr",
+          "source_record_number": 14,
+          "reason": "떡볶이 컵 위에 멈춘 젓가락 끝을 복구하고 원문에 없는 짧은 시간 제한을 제거한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/pt/day2_3_afterschool.json",
+          "id": "after2_dain_end_3",
+          "field": "text",
+          "before": "*Para o hashi. Só por um instante.*",
+          "after": "*As pontas dos hashis ficam imóveis sobre o copo de tteokbokki.*",
+          "language": "pt",
+          "source_record_number": 14,
+          "reason": "떡볶이 컵 위에 멈춘 젓가락 끝을 복구하고 원문에 없는 짧은 시간 제한을 제거한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/en/day2_3_afterschool.json",
+          "id": "after2_seo_8b",
+          "field": "text",
+          "before": "*She lifts her eyes from the documents and looks toward {name}.*",
+          "after": "*She stops leafing through the documents and looks toward {name}.*",
+          "language": "en",
+          "source_record_number": 15,
+          "reason": "시선만 드는 동작으로 축약되어 빠진 서류를 넘기던 손의 멈춤을 복구한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/es/day2_3_afterschool.json",
+          "id": "after2_seo_8b",
+          "field": "text",
+          "before": "*Suelta los documentos que estaba pasando y mira hacia {name}.*",
+          "after": "*Deja de pasar los documentos y mira hacia {name}.*",
+          "language": "es",
+          "source_record_number": 15,
+          "reason": "서류를 놓아 버리는 동작을 서류를 넘기는 동작의 멈춤으로 복구한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/fr/day2_3_afterschool.json",
+          "id": "after2_seo_8b",
+          "field": "text",
+          "before": "*Elle lève les yeux de ses documents et regarde vers {name}.*",
+          "after": "*Elle cesse de feuilleter ses documents et regarde vers {name}.*",
+          "language": "fr",
+          "source_record_number": 15,
+          "reason": "시선만 드는 동작으로 축약되어 빠진 서류를 넘기던 손의 멈춤을 복구한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/de/day2_3_afterschool.json",
+          "id": "after2_seo_8b",
+          "field": "text",
+          "before": "*Sie löst den Blick von den Unterlagen und sieht zu {name} hinüber.*",
+          "after": "*Sie hört auf, in den Unterlagen zu blättern, und sieht zu {name} hinüber.*",
+          "language": "de",
+          "source_record_number": 15,
+          "reason": "시선만 드는 동작으로 축약되어 빠진 서류를 넘기던 손의 멈춤을 복구한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/pt/day2_3_afterschool.json",
+          "id": "after2_seo_8b",
+          "field": "text",
+          "before": "*Tira os olhos dos documentos e olha para {name}.*",
+          "after": "*Ela para de folhear os documentos e olha para {name}.*",
+          "language": "pt",
+          "source_record_number": 15,
+          "reason": "시선만 드는 동작으로 축약되어 빠진 서류를 넘기던 손의 멈춤을 복구한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/zh/day2_3_afterschool.json",
+          "id": "after2_seo_8b",
+          "field": "text",
+          "before": "*她把视线从文件上抬起，看向{name}。*",
+          "after": "*她停下翻文件的手，看向{name}。*",
+          "language": "zh",
+          "source_record_number": 15,
+          "reason": "시선만 드는 동작으로 축약되어 빠진 서류를 넘기던 손의 멈춤을 복구한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/en/day2_3_afterschool.json",
+          "id": "after2_yuna_choice_pre3_b",
+          "field": "text",
+          "before": "*Yuna looks directly at {name} over the top of her book. The earbud cord stays wound tight around her fingers.*",
+          "after": "*Yuna looks directly at {name} over the top of her book. The earbud cord stays wound around her fingers, motionless.*",
+          "language": "en",
+          "source_record_number": 16,
+          "reason": "단단히 감겨 있다는 상태와 움직이지 않는다는 상태를 구별해 정지한 이어폰 줄을 복구한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/zh/day2_3_afterschool.json",
+          "id": "after2_yuna_choice_pre3_b",
+          "field": "text",
+          "before": "*由娜越过书的上沿，直直地看向{name}。耳机线还紧紧地缠在她的手指上。*",
+          "after": "*由娜越过书的上沿，直直地看向{name}。耳机线还缠在她的手指上，一动不动。*",
+          "language": "zh",
+          "source_record_number": 16,
+          "reason": "단단히 감겨 있다는 상태와 움직이지 않는다는 상태를 구별해 정지한 이어폰 줄을 복구한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/en/day2_3_afterschool.json",
+          "id": "after2_yuna_neg_leave",
+          "field": "text",
+          "before": "*I step away from the unread book and stand by the door.*",
+          "after": "*I pass by the seat without closing the book and stand near the door.*",
+          "language": "en",
+          "source_record_number": 18,
+          "reason": "읽지 않은 책이라는 원문에 없는 상태를 제거하고 책을 닫지 않는 행동과 자리 옆을 지나 문 쪽에 서는 동작을 복구한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/ja/day2_3_afterschool.json",
+          "id": "after2_yuna_neg_leave",
+          "field": "text",
+          "before": "*本を閉じない席のそばを離れて、別館のドアを閉める。*",
+          "after": "*本を閉じないまま席のそばを通り、ドアのそばに立つ。*",
+          "language": "ja",
+          "source_record_number": 18,
+          "reason": "별관 문을 닫는 행동이 원문에 없다. 책을 닫지 않은 채 자리 옆을 지나 문 쪽에 서는 동작으로 복구한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/es/day2_3_afterschool.json",
+          "id": "after2_yuna_neg_leave",
+          "field": "text",
+          "before": "*Me alejo del asiento con el libro abierto y cierro la puerta del anexo.*",
+          "after": "*Paso junto al asiento sin cerrar el libro y me quedo cerca de la puerta.*",
+          "language": "es",
+          "source_record_number": 18,
+          "reason": "별관 문을 닫는 행동이 원문에 없다. 책을 닫지 않은 채 자리 옆을 지나 문 쪽에 서는 동작으로 복구한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/fr/day2_3_afterschool.json",
+          "id": "after2_yuna_neg_leave",
+          "field": "text",
+          "before": "*Je m'éloigne du livre encore ouvert et je ferme la porte de l'annexe.*",
+          "after": "*Sans refermer le livre, je passe à côté du siège et m'arrête près de la porte.*",
+          "language": "fr",
+          "source_record_number": 18,
+          "reason": "별관 문을 닫는 행동이 원문에 없다. 책을 닫지 않은 채 자리 옆을 지나 문 쪽에 서는 동작으로 복구한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/de/day2_3_afterschool.json",
+          "id": "after2_yuna_neg_leave",
+          "field": "text",
+          "before": "*Ich gehe vom ungelesenen Buch weg und schließe die Tür des Anbaus.*",
+          "after": "*Ich gehe am Sitzplatz vorbei, ohne das Buch zu schließen, und bleibe bei der Tür stehen.*",
+          "language": "de",
+          "source_record_number": 18,
+          "reason": "읽지 않은 책과 별관 문을 닫는 행동이 원문에 없다. 책을 닫지 않은 채 자리 옆을 지나 문 쪽에 서는 동작으로 복구한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/pt/day2_3_afterschool.json",
+          "id": "after2_yuna_neg_leave",
+          "field": "text",
+          "before": "*Saio do lugar com o livro aberto e fecho a porta do anexo.*",
+          "after": "*Passo ao lado do lugar sem fechar o livro e fico perto da porta.*",
+          "language": "pt",
+          "source_record_number": 18,
+          "reason": "별관 문을 닫는 행동이 원문에 없다. 책을 닫지 않은 채 자리 옆을 지나 문 쪽에 서는 동작으로 복구한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/zh/day2_3_afterschool.json",
+          "id": "after2_yuna_neg_leave",
+          "field": "text",
+          "before": "*我从那本没读的书旁离开，站到门边。*",
+          "after": "*我没有合上书，从座位旁走过，站到门边。*",
+          "language": "zh",
+          "source_record_number": 18,
+          "reason": "읽지 않은 책이라는 원문에 없는 상태를 제거하고 책을 닫지 않는 행동과 자리 옆을 지나 문 쪽에 서는 동작을 복구한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/de/day3_1_morning.json",
+          "id": "hidden_homeroom_d3_4_h",
+          "field": "text",
+          "before": "*Ich könnte so tun, als hätte ich nichts bemerkt. Die Lehrerin deckt das Papier nicht ab. Sie setzt die Kappe auf den Stift und nimmt sie wieder herunter.*",
+          "after": "*Ich hätte so tun können, als hätte ich nichts bemerkt. Die Lehrerin deckt das Papier nicht ab. Sie setzt die Kappe auf den Stift und nimmt sie wieder herunter.*",
+          "language": "de",
+          "source_record_number": 23,
+          "reason": "현재의 가능성을 과거에 모른 척할 수도 있었다는 반사실적 회고로 복구한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/de/day3_1_morning.json",
+          "id": "hidden_nurse_d3_6",
+          "field": "text",
+          "before": "In der Uniklinik wusste ich bei mehreren Klingeln oft nicht, wohin zuerst. Häufig musste ich schon weiter, bevor ein Patient ausgeredet hatte.",
+          "after": "In der Uniklinik habe ich überlegt, wohin ich zuerst gehen sollte, wenn mehrere Klingeln gleichzeitig läuteten. Häufig musste ich schon weiter, bevor ein Patient ausgeredet hatte.",
+          "language": "de",
+          "source_record_number": 24,
+          "reason": "우선 갈 곳을 생각했다는 말을 갈 곳을 몰랐다는 진술로 바꾸지 않는다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/en/day3_2_lunch.json",
+          "id": "lunch3_end",
+          "field": "text",
+          "before": "*The bell rings and I pack up the lunchbox. No one brings up the weekend plans again.*",
+          "after": "*The bell rings and I close the lunchbox lid. No one brings up the weekend plans again.*",
+          "language": "en",
+          "source_record_number": 27,
+          "reason": "도시락을 정리한다는 포괄적 표현을 명시된 도시락 뚜껑 닫기 동작으로 맞춘다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/ja/day3_2_lunch.json",
+          "id": "lunch3_end",
+          "field": "text",
+          "before": "*チャイムが鳴り、弁当を片づける。約束の話を、それ以上口にする者はいない。*",
+          "after": "*チャイムが鳴り、弁当箱のふたを閉める。約束の話を、それ以上口にする者はいない。*",
+          "language": "ja",
+          "source_record_number": 27,
+          "reason": "도시락을 정리한다는 포괄적 표현을 명시된 도시락 뚜껑 닫기 동작으로 맞춘다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/fr/day3_2_lunch.json",
+          "id": "lunch3_end",
+          "field": "text",
+          "before": "*La sonnerie retentit et je range le bento. Personne ne reparle des sorties prévues.*",
+          "after": "*La sonnerie retentit et je referme le couvercle du bento. Personne ne reparle des sorties prévues.*",
+          "language": "fr",
+          "source_record_number": 27,
+          "reason": "도시락을 정리한다는 포괄적 표현을 명시된 도시락 뚜껑 닫기 동작으로 맞춘다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/de/day3_2_lunch.json",
+          "id": "lunch3_end",
+          "field": "text",
+          "before": "*Die Glocke läutet, und ich packe die Lunchbox ein. Niemand spricht die Wochenendpläne noch einmal an.*",
+          "after": "*Die Glocke läutet, und ich schließe den Deckel der Lunchbox. Niemand spricht die Wochenendpläne noch einmal an.*",
+          "language": "de",
+          "source_record_number": 27,
+          "reason": "도시락을 정리한다는 포괄적 표현을 명시된 도시락 뚜껑 닫기 동작으로 맞춘다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/zh/day3_2_lunch.json",
+          "id": "lunch3_end",
+          "field": "text",
+          "before": "*铃声响起，我收拾好饭盒。没有人再提起周末的安排。*",
+          "after": "*铃声响起，我合上饭盒盖。没有人再提起周末的安排。*",
+          "language": "zh",
+          "source_record_number": 27,
+          "reason": "도시락을 정리한다는 포괄적 표현을 명시된 도시락 뚜껑 닫기 동작으로 맞춘다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/zh/day4_1_morning.json",
+          "id": "day4_haeun_personal",
+          "field": "context",
+          "before": "第4天早晨，在校门旁与夏恩单独交谈。 与夏恩私下交谈。只记住实际发生过的往来。保持她礼貌的口吻和自然的学妹称呼。在明确的路线选择之前，不要确立恋爱关系；即使做出选择之后，她也还没有同意交往。根据当前的对话和好感度作出回应。",
+          "after": "第4天早晨，在校门旁与夏恩单独交谈。 与夏恩私下交谈。只记住实际发生过的往来。保持她礼貌的口吻，并保留对对方的前辈称呼。在明确的路线选择之前，不要确立恋爱关系；即使做出选择之后，她也还没有同意交往。根据当前的对话和好感度作出回应。",
+          "language": "zh",
+          "source_record_number": 32,
+          "reason": "선배 호칭 유지 지시가 학妹 호칭으로 뒤바뀌어 있다. 성별을 추정하지 않고 선배에 해당하는 호칭으로 복구한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/de/day4_4_night.json",
+          "id": "wall_yuna_moved_5_b",
+          "field": "text",
+          "before": "*Ihre Hand lässt den Ärmel los. Sie überbrückt den einen Schritt Abstand zu {name}.*",
+          "after": "*Ihre Hand lässt den Ärmel los. Sie überbrückt den einen Schritt Abstand zwischen dem Bücherregal und {name}.*",
+          "language": "de",
+          "source_record_number": 36,
+          "reason": "거리의 한쪽 기준점인 서가가 빠져 있어 원문의 공간 배치를 복구한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/en/day5_1_morning.json",
+          "id": "morning5_counteroffer_group_talk",
+          "field": "text",
+          "before": "*Before the festival briefing, I face the two people involved in last night’s events in the classroom. Neither leaves as we go over the missed messages and what we told each other.*\n\"What are you going to do now?\"",
+          "after": "*Before the festival briefing, I face the two people involved in last night’s events in the classroom. No one leaves as we go over why contact broke off and what we told each other.*\n\"What are you going to do now?\"",
+          "language": "en",
+          "source_record_number": 37,
+          "reason": "누락된 메시지를 되짚는다는 행동을 연락이 끊긴 이유를 짚는 행동으로 맞춘다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/es/day5_1_morning.json",
+          "id": "morning5_counteroffer_group_talk",
+          "field": "text",
+          "before": "*Antes de las instrucciones del festival, me reúno en el aula con las dos personas implicadas en lo de anoche. Nadie se marcha mientras aclaramos los mensajes sin responder y lo que dijimos.*\n«¿Qué piensas hacer ahora?»",
+          "after": "*Antes de las instrucciones del festival, me reúno en el aula con las dos personas implicadas en lo de anoche. Nadie se marcha mientras aclaramos por qué se cortó la comunicación y lo que nos dijimos.*\n«¿Qué piensas hacer ahora?»",
+          "language": "es",
+          "source_record_number": 37,
+          "reason": "누락된 메시지를 되짚는다는 행동을 연락이 끊긴 이유를 짚는 행동으로 맞춘다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/fr/day5_1_morning.json",
+          "id": "morning5_counteroffer_group_talk",
+          "field": "text",
+          "before": "*Avant les consignes de la fête, je retrouve en classe les deux personnes concernées par hier soir. Personne ne part tandis que nous reprenons les messages sans réponse et nos paroles.*\n« Qu’est-ce que tu comptes faire maintenant ? »",
+          "after": "*Avant les consignes de la fête, je retrouve en classe les deux personnes concernées par hier soir. Personne ne part tandis que nous revenons sur la raison de l'interruption des échanges et sur ce que nous nous sommes dit.*\n« Qu’est-ce que tu comptes faire maintenant ? »",
+          "language": "fr",
+          "source_record_number": 37,
+          "reason": "누락된 메시지를 되짚는다는 행동을 연락이 끊긴 이유를 짚는 행동으로 맞춘다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/de/day5_1_morning.json",
+          "id": "morning5_counteroffer_group_talk",
+          "field": "text",
+          "before": "*Vor der Festbesprechung stehe ich im Klassenraum den beiden Beteiligten gegenüber. Niemand geht, während wir die ausgebliebenen Nachrichten und unsere Aussagen durchgehen.*\n„Was hast du jetzt vor?“",
+          "after": "*Vor der Festbesprechung stehe ich im Klassenraum den beiden Beteiligten von gestern Abend gegenüber. Niemand geht, während wir klären, warum der Kontakt abbrach, und durchgehen, was wir einander gesagt haben.*\n„Was hast du jetzt vor?“",
+          "language": "de",
+          "source_record_number": 37,
+          "reason": "어젯밤의 사건이라는 시간과 연락이 끊긴 이유를 짚는 행동을 복구한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/pt/day5_1_morning.json",
+          "id": "morning5_counteroffer_group_talk",
+          "field": "text",
+          "before": "*Antes das orientações do festival, encontro na sala as duas pessoas envolvidas no que houve ontem. Ninguém sai enquanto esclarecemos as mensagens sem resposta e o que dissemos.*\n“O que você pretende fazer agora?”",
+          "after": "*Antes das orientações do festival, encontro na sala as duas pessoas envolvidas no que houve ontem à noite. Ninguém sai enquanto esclarecemos por que a comunicação foi interrompida e o que dissemos uns aos outros.*\n“O que você pretende fazer agora?”",
+          "language": "pt",
+          "source_record_number": 37,
+          "reason": "어젯밤의 사건이라는 시간과 연락이 끊긴 이유를 짚는 행동을 복구한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/zh/day5_1_morning.json",
+          "id": "morning5_counteroffer_group_talk",
+          "field": "text",
+          "before": "*活动说明会之前，我在教室里面对着昨晚事件中的两个人。我们一起回顾漏掉的消息，以及我们彼此说过的话，谁也没有离开。*\n“你现在打算怎么做？”",
+          "after": "*活动说明会之前，我在教室里面对着昨晚事件中的两个人。我们一起梳理联系中断的原因，以及彼此说过的话，谁也没有先离开。*\n“你现在打算怎么做？”",
+          "language": "zh",
+          "source_record_number": 37,
+          "reason": "누락된 메시지를 되짚는다는 행동을 연락이 끊긴 이유를 짚는 행동으로 맞춘다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/en/day5_2_lunch.json",
+          "id": "tour_dain_freetalk",
+          "field": "text",
+          "before": "*She stops a rolling volleyball under her shoe.* It’s the festival lunch break. We can’t call it a day yet.",
+          "after": "*She stops a rolling volleyball under her shoe.* It’s the festival lunch break. Wouldn’t it be a shame to stop here?",
+          "language": "en",
+          "source_record_number": 39,
+          "reason": "이렇게 끝내면 아쉽다는 감정을 이제 끝낼 수 없다는 제한으로 단정하지 않도록 서법을 맞춘다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/es/day5_2_lunch.json",
+          "id": "tour_dain_freetalk",
+          "field": "text",
+          "before": "*Frena con la zapatilla un balón que venía rodando.* Es el descanso de la fiesta del instituto. Da pena dejarlo aquí.",
+          "after": "*Frena con la zapatilla un balón de voleibol que venía rodando.* Es la hora del almuerzo en la fiesta del instituto. Da pena dejarlo aquí.",
+          "language": "es",
+          "source_record_number": 39,
+          "reason": "배구공이라는 사물과 점심이라는 시점이 빠져 있다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/fr/day5_2_lunch.json",
+          "id": "tour_dain_freetalk",
+          "field": "text",
+          "before": "*Elle arrête du pied un ballon de volley.* C’est la pause déjeuner de la fête du lycée. Ce serait dommage d’en rester là.",
+          "after": "*Elle arrête du pied un ballon de volley qui vient de rouler vers elle.* C’est la pause déjeuner de la fête du lycée. Ce serait dommage d’en rester là.",
+          "language": "fr",
+          "source_record_number": 39,
+          "reason": "굴러온 공을 멈추는 장면에서 공의 운동이 빠져 있다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/de/day5_2_lunch.json",
+          "id": "tour_dain_freetalk",
+          "field": "text",
+          "before": "*Sie hält einen heranrollenden Volleyball mit dem Fuß an.* Mittagspause beim Schulfest. Da können wir doch nicht schon Schluss machen.",
+          "after": "*Sie hält einen heranrollenden Volleyball mit dem Fuß an.* Mittagspause beim Schulfest. Da wäre es doch schade, jetzt schon Schluss zu machen.",
+          "language": "de",
+          "source_record_number": 39,
+          "reason": "이렇게 끝내면 아쉽다는 감정을 이제 끝낼 수 없다는 제한으로 단정하지 않도록 서법을 맞춘다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/pt/day5_2_lunch.json",
+          "id": "tour_dain_freetalk",
+          "field": "text",
+          "before": "*Ela para uma bola de vôlei com o tênis.* É o intervalo do almoço no dia do evento. Não dá vontade de terminar assim, né?",
+          "after": "*Ela para com o tênis uma bola de vôlei que veio rolando.* É o intervalo do almoço no dia do evento. Não dá vontade de terminar assim, né?",
+          "language": "pt",
+          "source_record_number": 39,
+          "reason": "굴러온 공을 멈추는 장면에서 공의 운동이 빠져 있다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/zh/day5_2_lunch.json",
+          "id": "tour_dain_freetalk",
+          "field": "text",
+          "before": "*她用鞋底踩住一个滚动的排球。*现在是活动的午休时间。还没到收工的时候呢。",
+          "after": "*她用鞋底踩住一个滚动的排球。*现在是活动的午休时间。就这么结束，不觉得可惜吗？",
+          "language": "zh",
+          "source_record_number": 39,
+          "reason": "이렇게 끝내면 아쉽다는 감정을 이제 끝낼 시간이 아니라는 단정으로 바꾸지 않도록 서법을 맞춘다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/en/day5_2_lunch.json",
+          "id": "tour_dain_end_2",
+          "field": "text",
+          "before": "*Dain's hand rests on the volleyball, not on her knee.*",
+          "after": "*Dain rests her palm on the volleyball rather than her knee and rolls the ball.*",
+          "language": "en",
+          "source_record_number": 40,
+          "reason": "공에 손을 얹고 굴리는 행동에서 굴리기 동작이 빠져 있다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/ja/day5_2_lunch.json",
+          "id": "tour_dain_end_2",
+          "field": "text",
+          "before": "*ダインは膝には触れず、バレーボールの表面を手のひらで転がす。*",
+          "after": "*ダインは膝ではなくバレーボールに手のひらを置き、ボールを転がす。*",
+          "language": "ja",
+          "source_record_number": 40,
+          "reason": "공의 표면을 굴린다는 어색한 동작을 손바닥을 얹어 공을 굴리는 동작으로 맞춘다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/es/day5_2_lunch.json",
+          "id": "tour_dain_end_2",
+          "field": "text",
+          "before": "*Dain hace rodar bajo la palma la superficie del balón, en lugar de tocarse la rodilla.*",
+          "after": "*Dain apoya la palma en el balón de voleibol en vez de en la rodilla y lo hace rodar.*",
+          "language": "es",
+          "source_record_number": 40,
+          "reason": "공의 표면을 굴린다는 어색한 동작을 손바닥을 얹어 공을 굴리는 동작으로 맞춘다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/fr/day5_2_lunch.json",
+          "id": "tour_dain_end_2",
+          "field": "text",
+          "before": "*Au lieu de la poser sur son genou, Dain fait rouler la surface du ballon sous sa paume.*",
+          "after": "*Au lieu de poser la paume sur son genou, Dain la pose sur le ballon de volley et le fait rouler.*",
+          "language": "fr",
+          "source_record_number": 40,
+          "reason": "공의 표면을 굴린다는 어색한 동작을 손바닥을 얹어 공을 굴리는 동작으로 맞춘다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/de/day5_2_lunch.json",
+          "id": "tour_dain_end_2",
+          "field": "text",
+          "before": "*Dains Hand liegt auf dem Volleyball, nicht auf ihrem Knie.*",
+          "after": "*Dain legt die Handfläche statt auf ihr Knie auf den Volleyball und rollt ihn.*",
+          "language": "de",
+          "source_record_number": 40,
+          "reason": "공에 손을 얹고 굴리는 행동에서 굴리기 동작이 빠져 있다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/pt/day5_2_lunch.json",
+          "id": "tour_dain_end_2",
+          "field": "text",
+          "before": "*Dain faz a superfície da bola de vôlei girar sob a palma da mão, em vez de tocar o joelho.*",
+          "after": "*Dain apoia a palma na bola de vôlei em vez de no joelho e faz a bola rolar.*",
+          "language": "pt",
+          "source_record_number": 40,
+          "reason": "공의 표면을 굴린다는 어색한 동작을 손바닥을 얹어 공을 굴리는 동작으로 맞춘다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/zh/day5_2_lunch.json",
+          "id": "tour_dain_end_2",
+          "field": "text",
+          "before": "*多因的手放在排球上，而不是她的膝盖上。*",
+          "after": "*多因把手掌放在排球上，而不是膝盖上，滚动着球。*",
+          "language": "zh",
+          "source_record_number": 40,
+          "reason": "공에 손을 얹고 굴리는 행동에서 굴리기 동작이 빠져 있다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/ja/day5_2_lunch.json",
+          "id": "tour_yuna_affinity_80",
+          "field": "text",
+          "before": "次の話も、最初の読者はあなた。終わったら日付を決めよう。",
+          "after": "次の話も、最初の読者はあなた。終わったら日付を書いておこう。",
+          "language": "ja",
+          "source_record_number": 41,
+          "reason": "날짜를 적어 두자는 말을 날짜를 결정하자는 행동으로 바꾸지 않는다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/es/day5_2_lunch.json",
+          "id": "tour_yuna_affinity_80",
+          "field": "text",
+          "before": "Tu sitio como primer lector del próximo relato también está reservado. Pongamos una fecha al terminar.",
+          "after": "Tu sitio como primer lector del próximo relato también está reservado. Anotemos la fecha cuando terminemos.",
+          "language": "es",
+          "source_record_number": 41,
+          "reason": "날짜를 적어 두자는 말을 날짜를 결정하자는 행동으로 바꾸지 않는다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/fr/day5_2_lunch.json",
+          "id": "tour_yuna_affinity_80",
+          "field": "text",
+          "before": "Ta place de premier lecteur du prochain récit est réservée aussi. Fixons une date après.",
+          "after": "Ta place de premier lecteur du prochain récit est réservée aussi. Notons la date quand on aura fini.",
+          "language": "fr",
+          "source_record_number": 41,
+          "reason": "날짜를 적어 두자는 말을 날짜를 결정하자는 행동으로 바꾸지 않는다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/de/day5_2_lunch.json",
+          "id": "tour_yuna_affinity_80",
+          "field": "text",
+          "before": "Dein Platz als erster Leser der nächsten Geschichte ist ebenfalls reserviert. Danach legen wir ein Datum fest.",
+          "after": "Dein Platz als erster Leser der nächsten Geschichte ist ebenfalls reserviert. Danach schreiben wir das Datum auf.",
+          "language": "de",
+          "source_record_number": 41,
+          "reason": "날짜를 적어 두자는 말을 날짜를 결정하자는 행동으로 바꾸지 않는다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/pt/day5_2_lunch.json",
+          "id": "tour_yuna_affinity_80",
+          "field": "text",
+          "before": "Seu lugar como primeiro leitor da próxima história também está reservado. Vamos marcar uma data depois.",
+          "after": "Seu lugar como primeiro leitor da próxima história também está reservado. Vamos anotar a data quando terminarmos.",
+          "language": "pt",
+          "source_record_number": 41,
+          "reason": "날짜를 적어 두자는 말을 날짜를 결정하자는 행동으로 바꾸지 않는다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/zh/day5_2_lunch.json",
+          "id": "day5_haeun_personal",
+          "field": "context",
+          "before": "第5天午饭前后，在广播室外的走廊里，刚跑完搬文件箱的差事，与夏恩单独交谈。 与夏恩私下交谈。只记住实际发生过的往来。保持她礼貌的口吻和自然的学妹称呼。在明确的路线选择之前，不要确立恋爱关系；即使做出选择之后，她也还没有同意交往。根据当前的对话和好感度作出回应。",
+          "after": "第5天午饭前后，在广播室外的走廊里，刚跑完搬文件箱的差事，与夏恩单独交谈。 与夏恩私下交谈。只记住实际发生过的往来。保持她礼貌的口吻，并保留对对方的前辈称呼。在明确的路线选择之前，不要确立恋爱关系；即使做出选择之后，她也还没有同意交往。根据当前的对话和好感度作出回应。",
+          "language": "zh",
+          "source_record_number": 42,
+          "reason": "선배 호칭 유지 지시가 학妹 호칭으로 뒤바뀌어 있다. 성별을 추정하지 않고 선배에 해당하는 호칭으로 복구한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/en/day5_3_afterschool.json",
+          "id": "after5_hidden_route_choice_check",
+          "field": "text",
+          "before": "*The path to meet my friends and the path back to help finish the event split here.*",
+          "after": "*The path to meet my friends and the path back to help finish cleaning up after the event split here.*",
+          "language": "en",
+          "source_record_number": 43,
+          "reason": "행사를 마치는 행동과 행사 정리를 돕는 행동을 구별한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/ja/day5_3_afterschool.json",
+          "id": "after5_hidden_route_choice_check",
+          "field": "text",
+          "before": "*友人たちとの約束へ向かう道と、行事の片づけをもう少し手伝う道に分かれている。*",
+          "after": "*友人たちと約束した場所へ向かう道と、行事の片づけをもう少し手伝う道に分かれている。*",
+          "language": "ja",
+          "source_record_number": 43,
+          "reason": "약속이라는 추상 대상을 장소처럼 쓰지 않고 친구들과 약속한 장소로 맞춘다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/ja/day5_4_night.json",
+          "id": "bitter_yuna_3",
+          "field": "text",
+          "before": "*校門を出ると雨が降っている。ユナが残した最後のメモをもう一度開く。紙の下のほうは雨でにじんでいた。*",
+          "after": "*校門を出ると雨が降っている。ユナが残した最後のメモをもう一度開く。紙の下のほうの文字が雨でにじんでいた。*",
+          "language": "ja",
+          "source_record_number": 47,
+          "reason": "비에 번진 것은 종이가 아니라 종이 아래쪽의 글씨라는 대상을 맞춘다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/en/day5_4_night.json",
+          "id": "day5_seo_ending_freetalk_true_love",
+          "field": "context",
+          "before": "Bonus conversation immediately after Seoyeon’s TRUE LOVE END. She welcomed the protagonist into her room and private life, including the family photo and hidden note. They confirmed their feelings but are still growing closer carefully; do not import the one-year PERFECT epilogue.",
+          "after": "Bonus conversation immediately after Seoyeon’s TRUE LOVE END. She welcomed the protagonist into her room and private life, including the family photo and hidden note. They confirmed their feelings but are still growing closer carefully; do not import the one-year PERFECT END epilogue.",
+          "language": "en",
+          "source_record_number": 49,
+          "reason": "보존 대상인 PERFECT END 결말명을 온전히 유지한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/ja/day5_4_night.json",
+          "id": "day5_seo_ending_freetalk_true_love",
+          "field": "context",
+          "before": "ソヨンのTRUE LOVE END直後のボーナス会話。彼女は自室や家族写真、隠したメモを見せ、私生活へ主人公を招いた。まだ慎重に深まる段階で、PERFECTの一年後を持ち込まない。",
+          "after": "ソヨンのTRUE LOVE END直後のボーナス会話。彼女は自室や家族写真、隠したメモを見せ、私生活へ主人公を招いた。互いの本心を確かめ合ったが、関係はまだ慎重に深まる段階で、PERFECT ENDの一年後の出来事を持ち込まない。",
+          "language": "ja",
+          "source_record_number": 49,
+          "reason": "서로의 진심을 확인했다는 관계 상태가 빠져 있다. PERFECT END 결말명도 온전히 유지한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/de/day5_4_night.json",
+          "id": "day5_seo_ending_freetalk_true_love",
+          "field": "context",
+          "before": "Bonusgespräch direkt nach Seoyeons TRUE LOVE END. Sie öffnete dem Protagonisten ihr Zimmer und ihr Privatleben, doch die Beziehung vertieft sich noch vorsichtig. Ziehe den einjährigen PERFECT-Epilog nicht vor.",
+          "after": "Bonusgespräch direkt nach Seoyeons TRUE LOVE END. Sie zeigte dem Protagonisten ihr Zimmer, das Familienfoto und die versteckte Notiz und ließ ihn in ihr Privatleben. Beide haben ihre wahren Gefühle füreinander bestätigt, doch die Beziehung vertieft sich noch vorsichtig. Ziehe die Ereignisse ein Jahr später im PERFECT END nicht vor.",
+          "language": "de",
+          "source_record_number": 49,
+          "reason": "가족사진·숨긴 메모와 서로의 진심을 확인했다는 관계 상태가 빠져 있다. PERFECT END 결말명도 온전히 유지한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/en/day5_4_night.json",
+          "id": "day5_teacher_ending_freetalk_good",
+          "field": "context",
+          "before": "Bonus conversation just after the Homeroom Teacher’s GOOD END graduation farewell. She gave the recommendation and club records, and teacher and graduate parted to continue their own work. No adult reunion or romance occurred; keep this non-romantic teacher-student boundary.",
+          "after": "Bonus conversation just after the Homeroom Teacher’s GOOD END graduation farewell. She gave the recommendation letter and literature club records, and teacher and graduate parted to continue their own writing and lives. No adult reunion or romance occurred; keep this non-romantic teacher-student boundary.",
+          "language": "en",
+          "source_record_number": 50,
+          "reason": "추천서·문예부 기록과 각자의 글과 삶을 이어 가기로 한 작별이라는 구체 내용을 복구한다. 비연애적 교사·학생 경계를 보존한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/ja/day5_4_night.json",
+          "id": "day5_teacher_ending_freetalk_good",
+          "field": "context",
+          "before": "担任の先生のGOOD END、卒業式直後の別れ。成人後の再会も恋愛もなく、教師と卒業生の非恋愛的な境界を保つ。",
+          "after": "担任の先生のGOOD END、卒業式直後のボーナス会話。担任は推薦状と文芸部の記録を渡し、教師と卒業生はそれぞれの文章と人生を続けていくことにして別れる。成人後の再会も恋愛も起きておらず、この会話でも未成年の生徒と教師の恋愛を作らない。",
+          "language": "ja",
+          "source_record_number": 50,
+          "reason": "누락된 추천서·문예부 기록 전달과 각자의 글과 삶을 이어 가기로 한 작별을 복구한다. 미성년 학생과 교사의 로맨스 금지 지시를 보존한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/de/day5_4_night.json",
+          "id": "day5_teacher_ending_freetalk_good",
+          "field": "context",
+          "before": "Bonusgespräch nach dem Abschlussabschied ihres GOOD END. Es gab weder erwachsenes Wiedersehen noch Romanze; bewahre den nichtromantischen Abschied zwischen Lehrerin und Absolvent.",
+          "after": "Bonusgespräch direkt nach der Abschlussfeier im GOOD END der Klassenlehrerin. Die Lehrerin überreicht das Empfehlungsschreiben und die Unterlagen des Literaturklubs. Lehrerin und Absolvent verabschieden sich, um jeweils ihre eigenen Texte und ihr eigenes Leben fortzuführen. Es gab weder ein Wiedersehen im Erwachsenenalter noch eine Romanze; auch in diesem Gespräch darf keine Romanze zwischen einem minderjährigen Schüler und der Lehrerin entstehen.",
+          "language": "de",
+          "source_record_number": 50,
+          "reason": "누락된 추천서·문예부 기록 전달과 각자의 글과 삶을 이어 가기로 한 작별을 복구한다. 미성년 학생과 교사의 로맨스 금지 지시를 보존한다.",
+          "safe_to_apply": true
+        },
+        {
+          "file": "assets/js/i18n/zh/day5_4_night.json",
+          "id": "day5_teacher_ending_freetalk_good",
+          "field": "context",
+          "before": "班主任好结局的毕业告别刚结束后的番外对话。她交出了推荐信和社团记录，老师和毕业生就此分别，各自继续自己的事。没有成年后的重逢，也没有恋爱；保持这种非恋爱的师生界线。",
+          "after": "班主任好结局的毕业告别刚结束后的番外对话。她交出了推荐信和文学社记录，老师和毕业生就此分别，各自继续自己的写作和生活。没有成年后的重逢，也没有恋爱；保持这种非恋爱的师生界线。",
+          "language": "zh",
+          "source_record_number": 50,
+          "reason": "문예부 기록과 각자의 글과 삶을 이어 가는 작별이라는 구체 내용을 복구한다. 비연애적 교사·학생 경계를 보존한다.",
+          "safe_to_apply": true
+        }
+      ]
+    }
+  },
+  "changes": [
+    {
+      "file": "assets/js/i18n/de/day2_3_afterschool.json",
+      "id": "after2_seo_8b",
+      "field": "text",
+      "before": "*Sie löst den Blick von den Unterlagen und sieht zu {name} hinüber.*",
+      "after": "*Sie hört auf, in den Unterlagen zu blättern, und sieht zu {name} hinüber.*"
+    },
+    {
+      "file": "assets/js/i18n/de/day2_3_afterschool.json",
+      "id": "after2_yuna_neg_leave",
+      "field": "text",
+      "before": "*Ich gehe vom ungelesenen Buch weg und schließe die Tür des Anbaus.*",
+      "after": "*Ich gehe am Sitzplatz vorbei, ohne das Buch zu schließen, und bleibe bei der Tür stehen.*"
+    },
+    {
+      "file": "assets/js/i18n/de/day3_1_morning.json",
+      "id": "hidden_homeroom_d3_4_h",
+      "field": "text",
+      "before": "*Ich könnte so tun, als hätte ich nichts bemerkt. Die Lehrerin deckt das Papier nicht ab. Sie setzt die Kappe auf den Stift und nimmt sie wieder herunter.*",
+      "after": "*Ich hätte so tun können, als hätte ich nichts bemerkt. Die Lehrerin deckt das Papier nicht ab. Sie setzt die Kappe auf den Stift und nimmt sie wieder herunter.*"
+    },
+    {
+      "file": "assets/js/i18n/de/day3_1_morning.json",
+      "id": "hidden_nurse_d3_6",
+      "field": "text",
+      "before": "In der Uniklinik wusste ich bei mehreren Klingeln oft nicht, wohin zuerst. Häufig musste ich schon weiter, bevor ein Patient ausgeredet hatte.",
+      "after": "In der Uniklinik habe ich überlegt, wohin ich zuerst gehen sollte, wenn mehrere Klingeln gleichzeitig läuteten. Häufig musste ich schon weiter, bevor ein Patient ausgeredet hatte."
+    },
+    {
+      "file": "assets/js/i18n/de/day3_2_lunch.json",
+      "id": "lunch3_end",
+      "field": "text",
+      "before": "*Die Glocke läutet, und ich packe die Lunchbox ein. Niemand spricht die Wochenendpläne noch einmal an.*",
+      "after": "*Die Glocke läutet, und ich schließe den Deckel der Lunchbox. Niemand spricht die Wochenendpläne noch einmal an.*"
+    },
+    {
+      "file": "assets/js/i18n/de/day4_4_night.json",
+      "id": "wall_yuna_moved_5_b",
+      "field": "text",
+      "before": "*Ihre Hand lässt den Ärmel los. Sie überbrückt den einen Schritt Abstand zu {name}.*",
+      "after": "*Ihre Hand lässt den Ärmel los. Sie überbrückt den einen Schritt Abstand zwischen dem Bücherregal und {name}.*"
+    },
+    {
+      "file": "assets/js/i18n/de/day5_1_morning.json",
+      "id": "morning5_counteroffer_group_talk",
+      "field": "text",
+      "before": "*Vor der Festbesprechung stehe ich im Klassenraum den beiden Beteiligten gegenüber. Niemand geht, während wir die ausgebliebenen Nachrichten und unsere Aussagen durchgehen.*\n„Was hast du jetzt vor?“",
+      "after": "*Vor der Festbesprechung stehe ich im Klassenraum den beiden Beteiligten von gestern Abend gegenüber. Niemand geht, während wir klären, warum der Kontakt abbrach, und durchgehen, was wir einander gesagt haben.*\n„Was hast du jetzt vor?“"
+    },
+    {
+      "file": "assets/js/i18n/de/day5_2_lunch.json",
+      "id": "tour_dain_freetalk",
+      "field": "text",
+      "before": "*Sie hält einen heranrollenden Volleyball mit dem Fuß an.* Mittagspause beim Schulfest. Da können wir doch nicht schon Schluss machen.",
+      "after": "*Sie hält einen heranrollenden Volleyball mit dem Fuß an.* Mittagspause beim Schulfest. Da wäre es doch schade, jetzt schon Schluss zu machen."
+    },
+    {
+      "file": "assets/js/i18n/de/day5_2_lunch.json",
+      "id": "tour_dain_end_2",
+      "field": "text",
+      "before": "*Dains Hand liegt auf dem Volleyball, nicht auf ihrem Knie.*",
+      "after": "*Dain legt die Handfläche statt auf ihr Knie auf den Volleyball und rollt ihn.*"
+    },
+    {
+      "file": "assets/js/i18n/de/day5_2_lunch.json",
+      "id": "tour_yuna_affinity_80",
+      "field": "text",
+      "before": "Dein Platz als erster Leser der nächsten Geschichte ist ebenfalls reserviert. Danach legen wir ein Datum fest.",
+      "after": "Dein Platz als erster Leser der nächsten Geschichte ist ebenfalls reserviert. Danach schreiben wir das Datum auf."
+    },
+    {
+      "file": "assets/js/i18n/de/day5_4_night.json",
+      "id": "day5_seo_ending_freetalk_true_love",
+      "field": "context",
+      "before": "Bonusgespräch direkt nach Seoyeons TRUE LOVE END. Sie öffnete dem Protagonisten ihr Zimmer und ihr Privatleben, doch die Beziehung vertieft sich noch vorsichtig. Ziehe den einjährigen PERFECT-Epilog nicht vor.",
+      "after": "Bonusgespräch direkt nach Seoyeons TRUE LOVE END. Sie zeigte dem Protagonisten ihr Zimmer, das Familienfoto und die versteckte Notiz und ließ ihn in ihr Privatleben. Beide haben ihre wahren Gefühle füreinander bestätigt, doch die Beziehung vertieft sich noch vorsichtig. Ziehe die Ereignisse ein Jahr später im PERFECT END nicht vor."
+    },
+    {
+      "file": "assets/js/i18n/de/day5_4_night.json",
+      "id": "day5_teacher_ending_freetalk_good",
+      "field": "context",
+      "before": "Bonusgespräch nach dem Abschlussabschied ihres GOOD END. Es gab weder erwachsenes Wiedersehen noch Romanze; bewahre den nichtromantischen Abschied zwischen Lehrerin und Absolvent.",
+      "after": "Bonusgespräch direkt nach der Abschlussfeier im GOOD END der Klassenlehrerin. Die Lehrerin überreicht das Empfehlungsschreiben und die Unterlagen des Literaturklubs. Lehrerin und Absolvent verabschieden sich, um jeweils ihre eigenen Texte und ihr eigenes Leben fortzuführen. Es gab weder ein Wiedersehen im Erwachsenenalter noch eine Romanze; auch in diesem Gespräch darf keine Romanze zwischen einem minderjährigen Schüler und der Lehrerin entstehen."
+    },
+    {
+      "file": "assets/js/i18n/en/day2_3_afterschool.json",
+      "id": "after2_seo_8b",
+      "field": "text",
+      "before": "*She lifts her eyes from the documents and looks toward {name}.*",
+      "after": "*She stops leafing through the documents and looks toward {name}.*"
+    },
+    {
+      "file": "assets/js/i18n/en/day2_3_afterschool.json",
+      "id": "after2_yuna_choice_pre3_b",
+      "field": "text",
+      "before": "*Yuna looks directly at {name} over the top of her book. The earbud cord stays wound tight around her fingers.*",
+      "after": "*Yuna looks directly at {name} over the top of her book. The earbud cord stays wound around her fingers, motionless.*"
+    },
+    {
+      "file": "assets/js/i18n/en/day2_3_afterschool.json",
+      "id": "after2_yuna_neg_leave",
+      "field": "text",
+      "before": "*I step away from the unread book and stand by the door.*",
+      "after": "*I pass by the seat without closing the book and stand near the door.*"
+    },
+    {
+      "file": "assets/js/i18n/en/day3_2_lunch.json",
+      "id": "lunch3_end",
+      "field": "text",
+      "before": "*The bell rings and I pack up the lunchbox. No one brings up the weekend plans again.*",
+      "after": "*The bell rings and I close the lunchbox lid. No one brings up the weekend plans again.*"
+    },
+    {
+      "file": "assets/js/i18n/en/day5_1_morning.json",
+      "id": "morning5_counteroffer_group_talk",
+      "field": "text",
+      "before": "*Before the festival briefing, I face the two people involved in last night’s events in the classroom. Neither leaves as we go over the missed messages and what we told each other.*\n\"What are you going to do now?\"",
+      "after": "*Before the festival briefing, I face the two people involved in last night’s events in the classroom. No one leaves as we go over why contact broke off and what we told each other.*\n\"What are you going to do now?\""
+    },
+    {
+      "file": "assets/js/i18n/en/day5_2_lunch.json",
+      "id": "tour_dain_freetalk",
+      "field": "text",
+      "before": "*She stops a rolling volleyball under her shoe.* It’s the festival lunch break. We can’t call it a day yet.",
+      "after": "*She stops a rolling volleyball under her shoe.* It’s the festival lunch break. Wouldn’t it be a shame to stop here?"
+    },
+    {
+      "file": "assets/js/i18n/en/day5_2_lunch.json",
+      "id": "tour_dain_end_2",
+      "field": "text",
+      "before": "*Dain's hand rests on the volleyball, not on her knee.*",
+      "after": "*Dain rests her palm on the volleyball rather than her knee and rolls the ball.*"
+    },
+    {
+      "file": "assets/js/i18n/en/day5_3_afterschool.json",
+      "id": "after5_hidden_route_choice_check",
+      "field": "text",
+      "before": "*The path to meet my friends and the path back to help finish the event split here.*",
+      "after": "*The path to meet my friends and the path back to help finish cleaning up after the event split here.*"
+    },
+    {
+      "file": "assets/js/i18n/en/day5_4_night.json",
+      "id": "day5_seo_ending_freetalk_true_love",
+      "field": "context",
+      "before": "Bonus conversation immediately after Seoyeon’s TRUE LOVE END. She welcomed the protagonist into her room and private life, including the family photo and hidden note. They confirmed their feelings but are still growing closer carefully; do not import the one-year PERFECT epilogue.",
+      "after": "Bonus conversation immediately after Seoyeon’s TRUE LOVE END. She welcomed the protagonist into her room and private life, including the family photo and hidden note. They confirmed their feelings but are still growing closer carefully; do not import the one-year PERFECT END epilogue."
+    },
+    {
+      "file": "assets/js/i18n/en/day5_4_night.json",
+      "id": "day5_teacher_ending_freetalk_good",
+      "field": "context",
+      "before": "Bonus conversation just after the Homeroom Teacher’s GOOD END graduation farewell. She gave the recommendation and club records, and teacher and graduate parted to continue their own work. No adult reunion or romance occurred; keep this non-romantic teacher-student boundary.",
+      "after": "Bonus conversation just after the Homeroom Teacher’s GOOD END graduation farewell. She gave the recommendation letter and literature club records, and teacher and graduate parted to continue their own writing and lives. No adult reunion or romance occurred; keep this non-romantic teacher-student boundary."
+    },
+    {
+      "file": "assets/js/i18n/es/day1_3_afterschool.json",
+      "id": "after_miss_dain_3",
+      "field": "text",
+      "before": "*Me aparto por reflejo. Dain pasa rozándome y frena de golpe unos pasos más allá.*",
+      "after": "*Me aparto a un lado y Dain pasa rozándome. Tres pasos más allá, arrastra la suela de la zapatilla por el suelo al detenerse.*"
+    },
+    {
+      "file": "assets/js/i18n/es/day2_1_morning.json",
+      "id": "morning2_greet_none_2",
+      "field": "text",
+      "before": "*Seoyeon pasa lista. Dain se gira hacia sus amigas. El libro de Yuna ya está abierto.*",
+      "after": "*Seoyeon pasa una página del libro de asistencia. Dain se gira hacia sus amigas. El libro de Yuna ya está abierto.*"
+    },
+    {
+      "file": "assets/js/i18n/es/day2_3_afterschool.json",
+      "id": "after2_dain_end_3",
+      "field": "text",
+      "before": "*Detiene los palillos. Solo un segundo.*",
+      "after": "*Las puntas de sus palillos permanecen inmóviles sobre el vaso de tteokbokki.*"
+    },
+    {
+      "file": "assets/js/i18n/es/day2_3_afterschool.json",
+      "id": "after2_seo_8b",
+      "field": "text",
+      "before": "*Suelta los documentos que estaba pasando y mira hacia {name}.*",
+      "after": "*Deja de pasar los documentos y mira hacia {name}.*"
+    },
+    {
+      "file": "assets/js/i18n/es/day2_3_afterschool.json",
+      "id": "after2_yuna_neg_leave",
+      "field": "text",
+      "before": "*Me alejo del asiento con el libro abierto y cierro la puerta del anexo.*",
+      "after": "*Paso junto al asiento sin cerrar el libro y me quedo cerca de la puerta.*"
+    },
+    {
+      "file": "assets/js/i18n/es/day5_1_morning.json",
+      "id": "morning5_counteroffer_group_talk",
+      "field": "text",
+      "before": "*Antes de las instrucciones del festival, me reúno en el aula con las dos personas implicadas en lo de anoche. Nadie se marcha mientras aclaramos los mensajes sin responder y lo que dijimos.*\n«¿Qué piensas hacer ahora?»",
+      "after": "*Antes de las instrucciones del festival, me reúno en el aula con las dos personas implicadas en lo de anoche. Nadie se marcha mientras aclaramos por qué se cortó la comunicación y lo que nos dijimos.*\n«¿Qué piensas hacer ahora?»"
+    },
+    {
+      "file": "assets/js/i18n/es/day5_2_lunch.json",
+      "id": "tour_dain_freetalk",
+      "field": "text",
+      "before": "*Frena con la zapatilla un balón que venía rodando.* Es el descanso de la fiesta del instituto. Da pena dejarlo aquí.",
+      "after": "*Frena con la zapatilla un balón de voleibol que venía rodando.* Es la hora del almuerzo en la fiesta del instituto. Da pena dejarlo aquí."
+    },
+    {
+      "file": "assets/js/i18n/es/day5_2_lunch.json",
+      "id": "tour_dain_end_2",
+      "field": "text",
+      "before": "*Dain hace rodar bajo la palma la superficie del balón, en lugar de tocarse la rodilla.*",
+      "after": "*Dain apoya la palma en el balón de voleibol en vez de en la rodilla y lo hace rodar.*"
+    },
+    {
+      "file": "assets/js/i18n/es/day5_2_lunch.json",
+      "id": "tour_yuna_affinity_80",
+      "field": "text",
+      "before": "Tu sitio como primer lector del próximo relato también está reservado. Pongamos una fecha al terminar.",
+      "after": "Tu sitio como primer lector del próximo relato también está reservado. Anotemos la fecha cuando terminemos."
+    },
+    {
+      "file": "assets/js/i18n/fr/day1_1_morning.json",
+      "id": "seoyeon_meet_2",
+      "field": "text",
+      "before": "*Après avoir vérifié une nouvelle fois le nom de {name}, elle le coche sur la liste de son porte-bloc. La pointe de son stylo reste suspendue au-dessus de la page tandis qu'elle examine aussi l'écusson de son uniforme.*",
+      "after": "*Après avoir vérifié une nouvelle fois le nom de {name}, elle le coche sur la liste de son porte-bloc. La pointe de son stylo reste suspendue au-dessus de la page tandis qu'elle examine aussi le badge nominatif de mon uniforme.*"
+    },
+    {
+      "file": "assets/js/i18n/fr/day2_3_afterschool.json",
+      "id": "after2_dain_end_3",
+      "field": "text",
+      "before": "*Ses baguettes s'immobilisent. Juste un instant.*",
+      "after": "*Le bout de ses baguettes reste immobile au-dessus du gobelet de tteokbokki.*"
+    },
+    {
+      "file": "assets/js/i18n/fr/day2_3_afterschool.json",
+      "id": "after2_seo_8b",
+      "field": "text",
+      "before": "*Elle lève les yeux de ses documents et regarde vers {name}.*",
+      "after": "*Elle cesse de feuilleter ses documents et regarde vers {name}.*"
+    },
+    {
+      "file": "assets/js/i18n/fr/day2_3_afterschool.json",
+      "id": "after2_yuna_neg_leave",
+      "field": "text",
+      "before": "*Je m'éloigne du livre encore ouvert et je ferme la porte de l'annexe.*",
+      "after": "*Sans refermer le livre, je passe à côté du siège et m'arrête près de la porte.*"
+    },
+    {
+      "file": "assets/js/i18n/fr/day3_2_lunch.json",
+      "id": "lunch3_end",
+      "field": "text",
+      "before": "*La sonnerie retentit et je range le bento. Personne ne reparle des sorties prévues.*",
+      "after": "*La sonnerie retentit et je referme le couvercle du bento. Personne ne reparle des sorties prévues.*"
+    },
+    {
+      "file": "assets/js/i18n/fr/day5_1_morning.json",
+      "id": "morning5_counteroffer_group_talk",
+      "field": "text",
+      "before": "*Avant les consignes de la fête, je retrouve en classe les deux personnes concernées par hier soir. Personne ne part tandis que nous reprenons les messages sans réponse et nos paroles.*\n« Qu’est-ce que tu comptes faire maintenant ? »",
+      "after": "*Avant les consignes de la fête, je retrouve en classe les deux personnes concernées par hier soir. Personne ne part tandis que nous revenons sur la raison de l'interruption des échanges et sur ce que nous nous sommes dit.*\n« Qu’est-ce que tu comptes faire maintenant ? »"
+    },
+    {
+      "file": "assets/js/i18n/fr/day5_2_lunch.json",
+      "id": "tour_dain_freetalk",
+      "field": "text",
+      "before": "*Elle arrête du pied un ballon de volley.* C’est la pause déjeuner de la fête du lycée. Ce serait dommage d’en rester là.",
+      "after": "*Elle arrête du pied un ballon de volley qui vient de rouler vers elle.* C’est la pause déjeuner de la fête du lycée. Ce serait dommage d’en rester là."
+    },
+    {
+      "file": "assets/js/i18n/fr/day5_2_lunch.json",
+      "id": "tour_dain_end_2",
+      "field": "text",
+      "before": "*Au lieu de la poser sur son genou, Dain fait rouler la surface du ballon sous sa paume.*",
+      "after": "*Au lieu de poser la paume sur son genou, Dain la pose sur le ballon de volley et le fait rouler.*"
+    },
+    {
+      "file": "assets/js/i18n/fr/day5_2_lunch.json",
+      "id": "tour_yuna_affinity_80",
+      "field": "text",
+      "before": "Ta place de premier lecteur du prochain récit est réservée aussi. Fixons une date après.",
+      "after": "Ta place de premier lecteur du prochain récit est réservée aussi. Notons la date quand on aura fini."
+    },
+    {
+      "file": "assets/js/i18n/ja/day2_3_afterschool.json",
+      "id": "after2_yuna_neg_leave",
+      "field": "text",
+      "before": "*本を閉じない席のそばを離れて、別館のドアを閉める。*",
+      "after": "*本を閉じないまま席のそばを通り、ドアのそばに立つ。*"
+    },
+    {
+      "file": "assets/js/i18n/ja/day3_2_lunch.json",
+      "id": "lunch3_end",
+      "field": "text",
+      "before": "*チャイムが鳴り、弁当を片づける。約束の話を、それ以上口にする者はいない。*",
+      "after": "*チャイムが鳴り、弁当箱のふたを閉める。約束の話を、それ以上口にする者はいない。*"
+    },
+    {
+      "file": "assets/js/i18n/ja/day5_2_lunch.json",
+      "id": "tour_dain_end_2",
+      "field": "text",
+      "before": "*ダインは膝には触れず、バレーボールの表面を手のひらで転がす。*",
+      "after": "*ダインは膝ではなくバレーボールに手のひらを置き、ボールを転がす。*"
+    },
+    {
+      "file": "assets/js/i18n/ja/day5_2_lunch.json",
+      "id": "tour_yuna_affinity_80",
+      "field": "text",
+      "before": "次の話も、最初の読者はあなた。終わったら日付を決めよう。",
+      "after": "次の話も、最初の読者はあなた。終わったら日付を書いておこう。"
+    },
+    {
+      "file": "assets/js/i18n/ja/day5_3_afterschool.json",
+      "id": "after5_hidden_route_choice_check",
+      "field": "text",
+      "before": "*友人たちとの約束へ向かう道と、行事の片づけをもう少し手伝う道に分かれている。*",
+      "after": "*友人たちと約束した場所へ向かう道と、行事の片づけをもう少し手伝う道に分かれている。*"
+    },
+    {
+      "file": "assets/js/i18n/ja/day5_4_night.json",
+      "id": "bitter_yuna_3",
+      "field": "text",
+      "before": "*校門を出ると雨が降っている。ユナが残した最後のメモをもう一度開く。紙の下のほうは雨でにじんでいた。*",
+      "after": "*校門を出ると雨が降っている。ユナが残した最後のメモをもう一度開く。紙の下のほうの文字が雨でにじんでいた。*"
+    },
+    {
+      "file": "assets/js/i18n/ja/day5_4_night.json",
+      "id": "day5_seo_ending_freetalk_true_love",
+      "field": "context",
+      "before": "ソヨンのTRUE LOVE END直後のボーナス会話。彼女は自室や家族写真、隠したメモを見せ、私生活へ主人公を招いた。まだ慎重に深まる段階で、PERFECTの一年後を持ち込まない。",
+      "after": "ソヨンのTRUE LOVE END直後のボーナス会話。彼女は自室や家族写真、隠したメモを見せ、私生活へ主人公を招いた。互いの本心を確かめ合ったが、関係はまだ慎重に深まる段階で、PERFECT ENDの一年後の出来事を持ち込まない。"
+    },
+    {
+      "file": "assets/js/i18n/ja/day5_4_night.json",
+      "id": "day5_teacher_ending_freetalk_good",
+      "field": "context",
+      "before": "担任の先生のGOOD END、卒業式直後の別れ。成人後の再会も恋愛もなく、教師と卒業生の非恋愛的な境界を保つ。",
+      "after": "担任の先生のGOOD END、卒業式直後のボーナス会話。担任は推薦状と文芸部の記録を渡し、教師と卒業生はそれぞれの文章と人生を続けていくことにして別れる。成人後の再会も恋愛も起きておらず、この会話でも未成年の生徒と教師の恋愛を作らない。"
+    },
+    {
+      "file": "assets/js/i18n/ko/day1_1_morning.json",
+      "id": "seoyeon_meet_2",
+      "field": "text",
+      "before": "*{name}의 이름을 한 번 더 확인한 뒤 클립보드 위 명단에 체크한다. 펜 끝이 명단 위에 남은 채 교복 명찰까지 훑는다.*",
+      "after": "*{name}의 이름을 한 번 더 확인한 뒤 클립보드 위 명단에 체크한다. 펜 끝을 명단 위에 둔 채 교복 명찰까지 훑는다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day1_2_lunch.json",
+      "id": "lunch_seo_8",
+      "field": "text",
+      "before": "*가방에서 같은 크기의 도시락통 두 개, 2인분을 포개어 꺼낸다.*",
+      "after": "*가방에서 2인분이 담긴 같은 크기의 도시락통 두 개를 포개어 꺼낸다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day1_2_lunch.json",
+      "id": "lunch_yuna_1",
+      "field": "text",
+      "before": "*유나의 뒷모습을 따라 도서관으로 들어간다. 점심 종이 친 뒤인데도 대출대 의자만 삐뚤게 비어 있다.*",
+      "after": "*유나의 뒷모습을 따라 도서관으로 들어간다. 점심 종이 친 뒤인데도 대출대 의자만 삐뚤게 놓인 채 비어 있다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day1_2_lunch.json",
+      "id": "lunch_dain_neg_leave",
+      "field": "text",
+      "before": "*매점 줄에서 빠져나와 복도로 선다.*",
+      "after": "*매점 줄에서 빠져나와 복도에 선다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day1_3_afterschool.json",
+      "id": "after_miss_dain_3",
+      "field": "text",
+      "before": "*옆으로 비키자 다인이 스쳐 지나간다. 세 걸음 더 간 운동화 밑창이 바닥을 길게 끌며 선다.*",
+      "after": "*옆으로 비키자 다인이 스쳐 지나간다. 다인은 세 걸음 더 가서 운동화 밑창을 바닥에 길게 끌며 멈춰 선다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day1_3_afterschool.json",
+      "id": "after_nurse_enter_10_b",
+      "field": "text",
+      "before": "*기록지를 서랍에 넣자 안쪽의 연두색 노트가 잠깐 보인다. 벽시계는 처음 누웠을 때보다 10분을 지나 있다.*",
+      "after": "*기록지를 서랍에 넣자 안쪽의 연두색 노트가 잠깐 보인다. 벽시계는 처음 누웠을 때보다 10분 뒤를 가리킨다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day1_4_night.json",
+      "id": "night_end_3",
+      "field": "text",
+      "before": "*잠금화면에 오늘 저장한 이름들이 남아 있다. 화면을 끄고도, 손가락이 한 번 더 전원 버튼을 찾는다.*",
+      "after": "*잠금화면에 오늘 저장한 이름들이 남아 있다. 화면을 끄고도 손가락이 한 번 더 전원 버튼을 찾는다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day1_4_night.json",
+      "id": "forced_violation_day1_after_dain",
+      "field": "text",
+      "before": "*다인은 평소처럼 웃어넘기지 않는다. 한참 뒤에야 짧고 굳은 목소리가 돌아온다.* 장난 아니야. 내가 싫다는데 억지로 한 거, 절대 그냥 안 넘어가.",
+      "after": "*다인은 평소처럼 웃어넘기지 않는다. 한참 뒤에야 짧고 굳은 목소리로 대답한다.* 장난 아니야. 내가 싫다는데 억지로 한 거, 절대 그냥 안 넘어가."
+    },
+    {
+      "file": "assets/js/i18n/ko/day2_1_morning.json",
+      "id": "morning2_greet_none_2",
+      "field": "text",
+      "before": "*서연은 출석부를 넘기고 다인은 친구들 쪽으로 몸을 돌린다. 유나의 자리는 이미 책이 펴져 있다.*",
+      "after": "*서연은 출석부를 넘기고 다인은 친구들 쪽으로 몸을 돌린다. 유나의 자리에는 이미 책이 펴져 있다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day2_2_lunch.json",
+      "id": "lunch2_dain_10",
+      "field": "text",
+      "before": "*서연이 다인 옆에 선 나를 한 번 보고 지나간다. 베어 문 소보로가 입안에서 그대로다.*",
+      "after": "*서연이 다인 옆에 선 나를 한 번 보고 지나간다. 베어 문 소보로가 입안에 그대로 남아 있다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day2_2_lunch.json",
+      "id": "lunch2_dain_end",
+      "field": "text",
+      "before": "*다인이 소보로를 씹는 동안, 서연이 사라진 매점 유리문은 아직 앞뒤로 흔들린다.*",
+      "after": "*다인이 소보로를 씹는 동안 서연이 사라진 쪽의 매점 유리문은 아직 앞뒤로 흔들린다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day2_2_lunch.json",
+      "id": "lunch2_dain_neg_leave",
+      "field": "text",
+      "before": "*매점 줄에서 빠져나와 복도로 선다.*",
+      "after": "*매점 줄에서 빠져나와 복도에 선다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day2_3_afterschool.json",
+      "id": "hidden_nurse_d2_1",
+      "field": "text",
+      "before": "*소매를 걷자 밴드 한쪽이 들려 있다. 상처에는 피가 더 나지 않는다.*",
+      "after": "*소매를 걷자 밴드 한쪽이 들려 있다. 상처에서는 피가 더 나지 않는다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day2_3_afterschool.json",
+      "id": "after2_dain_end_3",
+      "field": "text",
+      "before": "*젓가락 끝이 떡볶이 컵 위에서 그대로다.*",
+      "after": "*젓가락 끝이 떡볶이 컵 위에서 그대로 멈춰 있다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day2_3_afterschool.json",
+      "id": "after2_seo_8b",
+      "field": "text",
+      "before": "*서류를 넘기던 손을 놓고 {name} 쪽을 본다.*",
+      "after": "*서류를 넘기던 손을 멈추고 {name} 쪽을 본다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day2_3_afterschool.json",
+      "id": "after2_yuna_choice_pre3_b",
+      "field": "text",
+      "before": "*유나가 책 위로 {name}을 바로 본다. 이어폰 줄은 손가락 사이에 감긴 채 굳어 있다.*",
+      "after": "*유나가 책 위로 {name}을 바로 본다. 이어폰 줄은 손가락 사이에 감긴 채 움직이지 않는다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day2_3_afterschool.json",
+      "id": "hidden_nurse_d2_return",
+      "field": "text",
+      "before": "*보건실을 나와 교실로 돌아오니, 방과후 햇빛이 책상 위로 길게 누워 있다.*",
+      "after": "*보건실을 나와 교실로 돌아오니 방과후 햇빛이 책상 위로 길게 누워 있다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day2_3_afterschool.json",
+      "id": "after2_yuna_neg_leave",
+      "field": "text",
+      "before": "*책을 덮지 않은 채 자리 옆을 지나 문 쪽으로 선다.*",
+      "after": "*책을 덮지 않은 채 자리 옆을 지나 문 쪽에 선다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day2_4_night.json",
+      "id": "night2_flashback_3",
+      "field": "text",
+      "before": "*메모장에 줄줄이 남은 보내지 않은 문장. '선생님, 소정이 책상에—' '오늘도—' 전부 첫 줄에서 끊겼다. 마지막 수정 시간은 새벽 2시 17분이다.*",
+      "after": "*보내지 않은 문장이 메모장에 줄줄이 남아 있다. '선생님, 소정이 책상에—' '오늘도—' 전부 첫 줄에서 끊겼다. 마지막 수정 시간은 새벽 2시 17분이다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day2_4_night.json",
+      "id": "forced_violation_day2_after_dain",
+      "field": "text",
+      "before": "*다인은 평소처럼 웃어넘기지 않는다. 한참 뒤에야 짧고 굳은 목소리가 돌아온다.* 장난 아니야. 내가 싫다는데 억지로 한 거, 절대 그냥 안 넘어가.",
+      "after": "*다인은 평소처럼 웃어넘기지 않는다. 한참 뒤에야 짧고 굳은 목소리로 대답한다.* 장난 아니야. 내가 싫다는데 억지로 한 거, 절대 그냥 안 넘어가."
+    },
+    {
+      "file": "assets/js/i18n/ko/day3_1_morning.json",
+      "id": "morning3_dain_gate_3",
+      "field": "text",
+      "before": "*다인이 손바닥을 내민 채 출발선처럼 몸을 낮춘다.*",
+      "after": "*다인이 손바닥을 내민 채 출발선에 선 것처럼 몸을 낮춘다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day3_1_morning.json",
+      "id": "hidden_homeroom_d3_4_b",
+      "field": "text",
+      "before": "*뒤집힌 종이 사이로 손글씨가 빼곡하다. 담임의 손바닥이 종이 모서리를 덮고 있다.*",
+      "after": "*뒤집힌 종이 사이로 빼곡한 손글씨가 보인다. 담임의 손바닥이 종이 모서리를 덮고 있다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day3_1_morning.json",
+      "id": "hidden_homeroom_d3_4_h",
+      "field": "text",
+      "before": "*모른 척할 수도 있었다. 담임은 종이를 덮지 않는다. 펜 뚜껑을 닫았다가, 다시 연다.*",
+      "after": "*모른 척할 수도 있었다. 담임은 종이를 덮지 않는다. 펜 뚜껑을 닫았다가 다시 연다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day3_1_morning.json",
+      "id": "hidden_nurse_d3_6",
+      "field": "text",
+      "before": "대학병원에 있을 때는 호출벨이 한꺼번에 울리면 어디부터 가야 할지부터 생각했어. 환자 말을 끝까지 못 듣고 뛰어가는 날도 많았고.",
+      "after": "대학병원에 있을 때는 호출벨이 한꺼번에 울리면 어디부터 가야 할지 생각했어. 환자 말을 끝까지 못 듣고 뛰어가는 날도 많았고."
+    },
+    {
+      "file": "assets/js/i18n/ko/day3_1_morning.json",
+      "id": "morning3_date_dain_accept",
+      "field": "text",
+      "before": "*다인과 주말 약속을 잡았다. 다인이 웃자, 문밖에 있던 서연이 클립보드를 덮는다.*",
+      "after": "*다인과 주말 약속을 잡았다. 다인이 웃자 문밖에 있던 서연이 클립보드를 덮는다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day3_2_lunch.json",
+      "id": "lunch3_expose_3",
+      "field": "text",
+      "before": "*대답을 고르는 사이, 나머지 두 사람의 젓가락이 도시락 위에 그대로 걸린다.*",
+      "after": "*대답을 고르는 사이, 나머지 두 사람의 젓가락이 도시락 위에서 그대로 멈춘다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day3_2_lunch.json",
+      "id": "lunch3_end",
+      "field": "text",
+      "before": "*종이 울려 도시락을 접는다. 약속 이야기는 누구도 다시 꺼내지 않는다.*",
+      "after": "*종이 울려 도시락 뚜껑을 닫는다. 약속 이야기는 누구도 다시 꺼내지 않는다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day3_3_afterschool.json",
+      "id": "after3_dain_freetalk",
+      "field": "text",
+      "before": "*다인은 손목 보호대를 고쳐 매다 입꼬리가 반 박자 늦게 올라간다.* 오늘은 내가 먼저 말할게.",
+      "after": "*다인이 손목 보호대를 고쳐 매는 동안 입꼬리가 반 박자 늦게 올라간다.* 오늘은 내가 먼저 말할게."
+    },
+    {
+      "file": "assets/js/i18n/ko/day3_3_afterschool.json",
+      "id": "after3_group_nurse_companion",
+      "field": "context",
+      "before": "방과 후 보건실에서 보건선생님과 운동부 건강 점검을 정리하던 중, 호감도가 가장 높은 다른 인물이 급한 비품 문제를 들고 합류했다. 남은 시간에는 한쪽 일부터 처리해야 해, 보건선생님이 주인공에게 누구 일을 먼저 볼지 묻는다.",
+      "after": "방과 후 보건실에서 보건선생님과 운동부 건강 점검을 정리하던 중, 호감도가 가장 높은 다른 인물이 급한 비품 문제를 들고 합류했다. 남은 시간에는 한쪽 일부터 처리해야 해 보건선생님이 주인공에게 누구 일을 먼저 볼지 묻는다."
+    },
+    {
+      "file": "assets/js/i18n/ko/day3_4_night.json",
+      "id": "forced_violation_day3_after_dain",
+      "field": "text",
+      "before": "*다인은 평소처럼 웃어넘기지 않는다. 한참 뒤에야 짧고 굳은 목소리가 돌아온다.* 장난 아니야. 내가 싫다는데 억지로 한 거, 절대 그냥 안 넘어가.",
+      "after": "*다인은 평소처럼 웃어넘기지 않는다. 한참 뒤에야 짧고 굳은 목소리로 대답한다.* 장난 아니야. 내가 싫다는데 억지로 한 거, 절대 그냥 안 넘어가."
+    },
+    {
+      "file": "assets/js/i18n/ko/day4_1_morning.json",
+      "id": "hidden_homeroom_d4_3",
+      "field": "text",
+      "before": "선생님? 주말인데 학교에요?",
+      "after": "선생님? 주말인데 학교예요?"
+    },
+    {
+      "file": "assets/js/i18n/ko/day4_1_morning.json",
+      "id": "day4_haeun_personal",
+      "field": "context",
+      "before": "4일차 아침, 교문 옆에서 하은과 단둘이 이야기한다. 하은과 단둘이 대화한다. 이전 대화에서 실제로 나온 말만 기억한다. 존댓말과 선배 호칭을 유지한다. 선택 전에는 연애를 확정하지 않는다. 하은을 선택한 뒤에도 사귀기로 합의한 상태는 아니며 현재 대화와 호감도에 따라 마음을 판단한다.",
+      "after": "4일차 아침, 교문 옆에서 하은과 단둘이 이야기한다. 이전 대화에서 실제로 나온 말만 기억한다. 존댓말과 선배 호칭을 유지한다. 선택 전에는 연애를 확정하지 않는다. 하은을 선택한 뒤에도 사귀기로 합의한 상태는 아니며 현재 대화와 호감도에 따라 마음을 판단한다."
+    },
+    {
+      "file": "assets/js/i18n/ko/day4_3_afterschool.json",
+      "id": "confess_yuna_no_2",
+      "field": "text",
+      "before": "*책갈피를 책 사이에 넣어 깊이 밀어 넣은 뒤 턱을 한 번 당긴다.*",
+      "after": "*책갈피를 책 사이에 깊이 밀어 넣은 뒤 턱을 한 번 당긴다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day4_3_afterschool.json",
+      "id": "confess_seo_yes_low_1",
+      "field": "text",
+      "before": "*열쇠를 주머니에 넣는다.* 오늘은 여기까지. 그 말은 아직 받지 못할게.",
+      "after": "*열쇠를 주머니에 넣는다.* 오늘은 여기까지. 그 말은 아직 못 받겠어."
+    },
+    {
+      "file": "assets/js/i18n/ko/day4_3_afterschool.json",
+      "id": "confess_seo_yes_neg",
+      "field": "text",
+      "before": "*열쇠를 주머니에 넣는다.* 그 말은 들을 사이가 아니야.",
+      "after": "*열쇠를 주머니에 넣는다.* 그 말을 들을 사이가 아니야."
+    },
+    {
+      "file": "assets/js/i18n/ko/day4_4_night.json",
+      "id": "wall_yuna_moved_5_b",
+      "field": "text",
+      "before": "*옷소매를 쥔 손이 풀린다. 서가와 {name} 사이의 한 걸음을 좁힌다.*",
+      "after": "*옷소매를 쥔 손이 풀린다. 서가와 {name} 사이의 한 걸음 거리를 좁힌다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day5_1_morning.json",
+      "id": "morning5_counteroffer_group_talk",
+      "field": "text",
+      "before": "*행사 안내를 앞둔 교실에서 어젯밤 일에 관련된 두 사람과 마주한다. 연락이 끊긴 이유와 서로에게 한 말을 짚는 동안 누구도 먼저 자리를 뜨지 않는다.*\n\"이제 어떻게 할 생각이야?\"",
+      "after": "*행사 안내를 앞둔 교실에서 어젯밤 일에 얽힌 두 사람과 마주한다. 연락이 끊긴 이유와 서로에게 한 말을 짚는 동안 누구도 먼저 자리를 뜨지 않는다.*\n\"이제 어떻게 할 생각이야?\""
+    },
+    {
+      "file": "assets/js/i18n/ko/day5_1_morning.json",
+      "id": "morning5_counteroffer_group_talk",
+      "field": "context",
+      "before": "5일차 아침의 공개된 교실이다. 어젯밤 다른 사람의 요청을 받아 남았고 먼저 한 약속에 연락하지 않은 일을 해명한다. 직전의 솔직한 설명 또는 회피에서 이어간다. 두 참여자가 모두 학생이면 겹친 연애 약속과 선택에 관한 대면이다. 담임이나 보건교사가 참여하면 그 인물은 귀가 확인 약속을 어긴 경위를 묻는 교직원이며 연애 상대가 아니다. 함께 남았던 학생은 자기 초대와 마음을 설명한다. 교사의 상담·치료와 학생의 연애 선택을 거래하지 않는다. 두 학생 사이에서는 주인공이 관계와 의도를 직접 해명해야 한다.",
+      "after": "5일차 아침의 공개된 교실이다. 어젯밤 다른 사람의 요청을 받아 남았고 먼저 약속한 사람에게 연락하지 않은 일을 해명한다. 직전의 솔직한 설명 또는 회피에서 이어간다. 두 참여자가 모두 학생이면 겹친 연애 약속과 선택에 관한 대면이다. 담임이나 보건교사가 참여하면 그 인물은 귀가 확인 약속을 어긴 경위를 묻는 교직원이며 연애 상대가 아니다. 함께 남았던 학생은 자기 초대와 마음을 설명한다. 교사의 상담·치료와 학생의 연애 선택을 거래하지 않는다. 두 학생 사이에서는 주인공이 관계와 의도를 직접 해명해야 한다."
+    },
+    {
+      "file": "assets/js/i18n/ko/day5_2_lunch.json",
+      "id": "tour_dain_freetalk",
+      "field": "text",
+      "before": "*굴러온 배구공을 운동화 밑으로 눌러 세운다.* 행사 날 점심인데, 이렇게 끝내긴 아쉽잖아.",
+      "after": "*굴러온 배구공을 운동화 밑으로 눌러 멈춘다.* 행사 날 점심인데, 이렇게 끝내긴 아쉽잖아."
+    },
+    {
+      "file": "assets/js/i18n/ko/day5_2_lunch.json",
+      "id": "tour_dain_end_2",
+      "field": "text",
+      "before": "*다인은 무릎 대신 배구공 표면을 손바닥으로 굴린다.*",
+      "after": "*다인은 무릎 대신 배구공 표면에 손바닥을 얹어 공을 굴린다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day5_2_lunch.json",
+      "id": "tour_yuna_affinity_80",
+      "field": "text",
+      "before": "다음 편 첫 독자도 네 자리야. 끝나면 날짜를 적어 두자.",
+      "after": "다음 편 첫 독자 자리도 네 거야. 끝나면 날짜를 적어 두자."
+    },
+    {
+      "file": "assets/js/i18n/ko/day5_2_lunch.json",
+      "id": "day5_haeun_personal",
+      "field": "context",
+      "before": "5일차 점심 무렵, 방송실 앞 복도에서 서류 상자 심부름을 마친 직후 하은과 단둘이 이야기한다. 하은과 단둘이 대화한다. 이전 대화에서 실제로 나온 말만 기억한다. 존댓말과 선배 호칭을 유지한다. 선택 전에는 연애를 확정하지 않는다. 하은을 선택한 뒤에도 사귀기로 합의한 상태는 아니며 현재 대화와 호감도에 따라 마음을 판단한다.",
+      "after": "5일차 점심 무렵, 방송실 앞 복도에서 서류 상자 심부름을 마친 직후 하은과 단둘이 이야기한다. 이전 대화에서 실제로 나온 말만 기억한다. 존댓말과 선배 호칭을 유지한다. 선택 전에는 연애를 확정하지 않는다. 하은을 선택한 뒤에도 사귀기로 합의한 상태는 아니며 현재 대화와 호감도에 따라 마음을 판단한다."
+    },
+    {
+      "file": "assets/js/i18n/ko/day5_3_afterschool.json",
+      "id": "after5_hidden_route_choice_check",
+      "field": "text",
+      "before": "*친구들과 한 약속으로 가는 길과, 행사 정리를 마저 돕는 길이 갈린다.*",
+      "after": "*친구들과 약속한 곳으로 가는 길과, 행사 정리를 마저 돕는 길이 갈린다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day5_3_afterschool.json",
+      "id": "after5_last_chance_2_l",
+      "field": "text",
+      "before": "*한 걸음 지나쳤다가 배구공으로 바닥을 눌러 세운다.*",
+      "after": "*한 걸음 지나쳤다가 배구공을 바닥에 눌러 세운다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day5_3_afterschool.json",
+      "id": "after5_confess_react_seo_neg",
+      "field": "text",
+      "before": "*열쇠를 주머니에 넣는다.* 그 말은 들을 사이가 아니야.",
+      "after": "*열쇠를 주머니에 넣는다.* 그 말을 들을 사이가 아니야."
+    },
+    {
+      "file": "assets/js/i18n/ko/day5_4_night.json",
+      "id": "day5_ending_mayhem",
+      "field": "text",
+      "before": "*세 대화방이 모두 읽음으로 멈춰 있다. 답장을 쓰려다, 첫 글자에서 지운다.*",
+      "after": "*세 대화방이 모두 읽음으로 멈춰 있다. 답장을 쓰려다 첫 글자에서 지운다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day5_4_night.json",
+      "id": "bitter_yuna_3",
+      "field": "text",
+      "before": "*교문을 나온다. 비가 내린다. 유나가 남긴 마지막 쪽지를 다시 펼친다. 종이 아래쪽이 비에 번져 있다.*",
+      "after": "*교문을 나온다. 비가 내린다. 유나가 남긴 마지막 쪽지를 다시 펼친다. 종이 아래쪽의 글씨가 비에 번져 있다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day5_4_night.json",
+      "id": "good_1c",
+      "field": "text",
+      "before": "*벚꽃잎이 신발 앞에 붙었다가, 다음 걸음에 떨어진다.*",
+      "after": "*벚꽃잎이 신발 앞에 붙었다가 다음 걸음에 떨어진다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day5_4_night.json",
+      "id": "day5_seo_ending_freetalk_true_love",
+      "field": "context",
+      "before": "서연 TRUE LOVE END 직후의 보너스 대화다. 서연은 자신의 방과 가족사진, 숨겨 둔 메모를 보여 주며 주인공을 사적인 삶 안으로 들였다. 관계는 서로의 진심을 확인했지만 아직 조심스럽게 깊어지는 단계다. PERFECT END의 1년 후 사건을 가져오지 않는다.",
+      "after": "서연 TRUE LOVE END 직후의 보너스 대화다. 서연은 자신의 방과 가족사진, 숨겨 둔 메모를 보여 주며 주인공을 사적인 삶 안으로 들였다. 서로의 진심을 확인했지만 관계는 아직 조심스럽게 깊어지는 단계다. PERFECT END의 1년 후 사건을 가져오지 않는다."
+    },
+    {
+      "file": "assets/js/i18n/ko/day5_4_night.json",
+      "id": "day5_teacher_ending_freetalk_good",
+      "field": "context",
+      "before": "담임선생님 GOOD END의 졸업식 직후 보너스 대화다. 담임은 추천서와 문예부 기록을 건네고 각자 맡은 글과 삶을 이어 가기로 한 교사와 졸업생의 작별이다. 성인 재회나 연애는 발생하지 않았으며 이 대화에서도 미성년 학생과 교사의 로맨스를 만들지 않는다.",
+      "after": "담임선생님 GOOD END의 졸업식 직후 보너스 대화다. 담임이 추천서와 문예부 기록을 건네고 교사와 졸업생은 각자 맡은 글과 삶을 이어 가기로 하며 작별한다. 성인 재회나 연애는 발생하지 않았으며 이 대화에서도 미성년 학생과 교사의 로맨스를 만들지 않는다."
+    },
+    {
+      "file": "assets/js/i18n/pt/day1_3_afterschool.json",
+      "id": "after_miss_dain_3",
+      "field": "text",
+      "before": "*Desvio pro lado por reflexo. A Dain passa voando e freia de repente.*",
+      "after": "*Desvio pro lado e a Dain passa rente a mim. Três passos adiante, ela arrasta a sola do tênis pelo chão ao parar.*"
+    },
+    {
+      "file": "assets/js/i18n/pt/day2_3_afterschool.json",
+      "id": "after2_dain_end_3",
+      "field": "text",
+      "before": "*Para o hashi. Só por um instante.*",
+      "after": "*As pontas dos hashis ficam imóveis sobre o copo de tteokbokki.*"
+    },
+    {
+      "file": "assets/js/i18n/pt/day2_3_afterschool.json",
+      "id": "after2_seo_8b",
+      "field": "text",
+      "before": "*Tira os olhos dos documentos e olha para {name}.*",
+      "after": "*Ela para de folhear os documentos e olha para {name}.*"
+    },
+    {
+      "file": "assets/js/i18n/pt/day2_3_afterschool.json",
+      "id": "after2_yuna_neg_leave",
+      "field": "text",
+      "before": "*Saio do lugar com o livro aberto e fecho a porta do anexo.*",
+      "after": "*Passo ao lado do lugar sem fechar o livro e fico perto da porta.*"
+    },
+    {
+      "file": "assets/js/i18n/pt/day5_1_morning.json",
+      "id": "morning5_counteroffer_group_talk",
+      "field": "text",
+      "before": "*Antes das orientações do festival, encontro na sala as duas pessoas envolvidas no que houve ontem. Ninguém sai enquanto esclarecemos as mensagens sem resposta e o que dissemos.*\n“O que você pretende fazer agora?”",
+      "after": "*Antes das orientações do festival, encontro na sala as duas pessoas envolvidas no que houve ontem à noite. Ninguém sai enquanto esclarecemos por que a comunicação foi interrompida e o que dissemos uns aos outros.*\n“O que você pretende fazer agora?”"
+    },
+    {
+      "file": "assets/js/i18n/pt/day5_2_lunch.json",
+      "id": "tour_dain_freetalk",
+      "field": "text",
+      "before": "*Ela para uma bola de vôlei com o tênis.* É o intervalo do almoço no dia do evento. Não dá vontade de terminar assim, né?",
+      "after": "*Ela para com o tênis uma bola de vôlei que veio rolando.* É o intervalo do almoço no dia do evento. Não dá vontade de terminar assim, né?"
+    },
+    {
+      "file": "assets/js/i18n/pt/day5_2_lunch.json",
+      "id": "tour_dain_end_2",
+      "field": "text",
+      "before": "*Dain faz a superfície da bola de vôlei girar sob a palma da mão, em vez de tocar o joelho.*",
+      "after": "*Dain apoia a palma na bola de vôlei em vez de no joelho e faz a bola rolar.*"
+    },
+    {
+      "file": "assets/js/i18n/pt/day5_2_lunch.json",
+      "id": "tour_yuna_affinity_80",
+      "field": "text",
+      "before": "Seu lugar como primeiro leitor da próxima história também está reservado. Vamos marcar uma data depois.",
+      "after": "Seu lugar como primeiro leitor da próxima história também está reservado. Vamos anotar a data quando terminarmos."
+    },
+    {
+      "file": "assets/js/i18n/zh/day2_3_afterschool.json",
+      "id": "after2_seo_8b",
+      "field": "text",
+      "before": "*她把视线从文件上抬起，看向{name}。*",
+      "after": "*她停下翻文件的手，看向{name}。*"
+    },
+    {
+      "file": "assets/js/i18n/zh/day2_3_afterschool.json",
+      "id": "after2_yuna_choice_pre3_b",
+      "field": "text",
+      "before": "*由娜越过书的上沿，直直地看向{name}。耳机线还紧紧地缠在她的手指上。*",
+      "after": "*由娜越过书的上沿，直直地看向{name}。耳机线还缠在她的手指上，一动不动。*"
+    },
+    {
+      "file": "assets/js/i18n/zh/day2_3_afterschool.json",
+      "id": "after2_yuna_neg_leave",
+      "field": "text",
+      "before": "*我从那本没读的书旁离开，站到门边。*",
+      "after": "*我没有合上书，从座位旁走过，站到门边。*"
+    },
+    {
+      "file": "assets/js/i18n/zh/day3_2_lunch.json",
+      "id": "lunch3_end",
+      "field": "text",
+      "before": "*铃声响起，我收拾好饭盒。没有人再提起周末的安排。*",
+      "after": "*铃声响起，我合上饭盒盖。没有人再提起周末的安排。*"
+    },
+    {
+      "file": "assets/js/i18n/zh/day4_1_morning.json",
+      "id": "day4_haeun_personal",
+      "field": "context",
+      "before": "第4天早晨，在校门旁与夏恩单独交谈。 与夏恩私下交谈。只记住实际发生过的往来。保持她礼貌的口吻和自然的学妹称呼。在明确的路线选择之前，不要确立恋爱关系；即使做出选择之后，她也还没有同意交往。根据当前的对话和好感度作出回应。",
+      "after": "第4天早晨，在校门旁与夏恩单独交谈。 与夏恩私下交谈。只记住实际发生过的往来。保持她礼貌的口吻，并保留对对方的前辈称呼。在明确的路线选择之前，不要确立恋爱关系；即使做出选择之后，她也还没有同意交往。根据当前的对话和好感度作出回应。"
+    },
+    {
+      "file": "assets/js/i18n/zh/day5_1_morning.json",
+      "id": "morning5_counteroffer_group_talk",
+      "field": "text",
+      "before": "*活动说明会之前，我在教室里面对着昨晚事件中的两个人。我们一起回顾漏掉的消息，以及我们彼此说过的话，谁也没有离开。*\n“你现在打算怎么做？”",
+      "after": "*活动说明会之前，我在教室里面对着昨晚事件中的两个人。我们一起梳理联系中断的原因，以及彼此说过的话，谁也没有先离开。*\n“你现在打算怎么做？”"
+    },
+    {
+      "file": "assets/js/i18n/zh/day5_2_lunch.json",
+      "id": "tour_dain_freetalk",
+      "field": "text",
+      "before": "*她用鞋底踩住一个滚动的排球。*现在是活动的午休时间。还没到收工的时候呢。",
+      "after": "*她用鞋底踩住一个滚动的排球。*现在是活动的午休时间。就这么结束，不觉得可惜吗？"
+    },
+    {
+      "file": "assets/js/i18n/zh/day5_2_lunch.json",
+      "id": "tour_dain_end_2",
+      "field": "text",
+      "before": "*多因的手放在排球上，而不是她的膝盖上。*",
+      "after": "*多因把手掌放在排球上，而不是膝盖上，滚动着球。*"
+    },
+    {
+      "file": "assets/js/i18n/zh/day5_2_lunch.json",
+      "id": "day5_haeun_personal",
+      "field": "context",
+      "before": "第5天午饭前后，在广播室外的走廊里，刚跑完搬文件箱的差事，与夏恩单独交谈。 与夏恩私下交谈。只记住实际发生过的往来。保持她礼貌的口吻和自然的学妹称呼。在明确的路线选择之前，不要确立恋爱关系；即使做出选择之后，她也还没有同意交往。根据当前的对话和好感度作出回应。",
+      "after": "第5天午饭前后，在广播室外的走廊里，刚跑完搬文件箱的差事，与夏恩单独交谈。 与夏恩私下交谈。只记住实际发生过的往来。保持她礼貌的口吻，并保留对对方的前辈称呼。在明确的路线选择之前，不要确立恋爱关系；即使做出选择之后，她也还没有同意交往。根据当前的对话和好感度作出回应。"
+    },
+    {
+      "file": "assets/js/i18n/zh/day5_4_night.json",
+      "id": "day5_teacher_ending_freetalk_good",
+      "field": "context",
+      "before": "班主任好结局的毕业告别刚结束后的番外对话。她交出了推荐信和社团记录，老师和毕业生就此分别，各自继续自己的事。没有成年后的重逢，也没有恋爱；保持这种非恋爱的师生界线。",
+      "after": "班主任好结局的毕业告别刚结束后的番外对话。她交出了推荐信和文学社记录，老师和毕业生就此分别，各自继续自己的写作和生活。没有成年后的重逢，也没有恋爱；保持这种非恋爱的师生界线。"
+    }
+  ],
+  "validation": {
+    "project_checks": {
+      "npm test": "pass",
+      "npm run text:check": "pass",
+      "npm run scenario:check": "pass (included in npm test)",
+      "npm run cache:check": "pass (53 tests)"
+    },
+    "targeted_browser_scenarios": {
+      "passed": 8,
+      "failed": 0,
+      "browser": "system Chrome; bundled headless Chromium had an ICU startup error"
+    },
+    "runtime_copy_check": "all eight languages match source before and after reload"
+  },
+  "runtime_copy_check": {
+    "project": "cupid",
+    "results": [
+      {
+        "language": "ko",
+        "reviewed_fields": 50,
+        "initial_load": "pass",
+        "reload": "pass"
+      },
+      {
+        "language": "en",
+        "reviewed_fields": 50,
+        "initial_load": "pass",
+        "reload": "pass"
+      },
+      {
+        "language": "ja",
+        "reviewed_fields": 50,
+        "initial_load": "pass",
+        "reload": "pass"
+      },
+      {
+        "language": "es",
+        "reviewed_fields": 50,
+        "initial_load": "pass",
+        "reload": "pass"
+      },
+      {
+        "language": "fr",
+        "reviewed_fields": 50,
+        "initial_load": "pass",
+        "reload": "pass"
+      },
+      {
+        "language": "de",
+        "reviewed_fields": 50,
+        "initial_load": "pass",
+        "reload": "pass"
+      },
+      {
+        "language": "pt",
+        "reviewed_fields": 50,
+        "initial_load": "pass",
+        "reload": "pass"
+      },
+      {
+        "language": "zh",
+        "reviewed_fields": 50,
+        "initial_load": "pass",
+        "reload": "pass"
+      }
+    ]
+  }
+}

@@ -347,7 +347,7 @@
     },
     "lunch3_end": {
         "name": "{name}",
-        "text": "*Die Glocke läutet, und ich packe die Lunchbox ein. Niemand spricht die Wochenendpläne noch einmal an.*"
+        "text": "*Die Glocke läutet, und ich schließe den Deckel der Lunchbox. Niemand spricht die Wochenendpläne noch einmal an.*"
     },
     "lunch3_give_seo_2_check": {},
     "lunch3_give_seo_dain_affinity": {},

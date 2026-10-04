@@ -205,11 +205,11 @@
     },
     "tour_dain_freetalk": {
         "name": "Dain",
-        "text": "*Ela para uma bola de vôlei com o tênis.* É o intervalo do almoço no dia do evento. Não dá vontade de terminar assim, né?"
+        "text": "*Ela para com o tênis uma bola de vôlei que veio rolando.* É o intervalo do almoço no dia do evento. Não dá vontade de terminar assim, né?"
     },
     "tour_dain_end_2": {
         "name": "{name}",
-        "text": "*Dain faz a superfície da bola de vôlei girar sob a palma da mão, em vez de tocar o joelho.*"
+        "text": "*Dain apoia a palma na bola de vôlei em vez de no joelho e faz a bola rolar.*"
     },
     "tour_co_branch": {},
     "tour_co_event_1": {
@@ -328,7 +328,7 @@
     "tour_yuna_affinity_check": {},
     "tour_yuna_affinity_80": {
         "name": "Yuna",
-        "text": "Seu lugar como primeiro leitor da próxima história também está reservado. Vamos marcar uma data depois."
+        "text": "Seu lugar como primeiro leitor da próxima história também está reservado. Vamos anotar a data quando terminarmos."
     },
     "tour_yuna_affinity_60": {
         "name": "Yuna",

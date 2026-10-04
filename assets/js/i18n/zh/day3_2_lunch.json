@@ -347,7 +347,7 @@
     },
     "lunch3_end": {
         "name": "{name}",
-        "text": "*铃声响起，我收拾好饭盒。没有人再提起周末的安排。*"
+        "text": "*铃声响起，我合上饭盒盖。没有人再提起周末的安排。*"
     },
     "lunch3_give_seo_2_check": {},
     "lunch3_give_seo_dain_affinity": {},

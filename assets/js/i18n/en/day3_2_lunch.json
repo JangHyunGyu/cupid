@@ -347,7 +347,7 @@
     },
     "lunch3_end": {
         "name": "{name}",
-        "text": "*The bell rings and I pack up the lunchbox. No one brings up the weekend plans again.*"
+        "text": "*The bell rings and I close the lunchbox lid. No one brings up the weekend plans again.*"
     },
     "lunch3_give_seo_2_check": {},
     "lunch3_give_seo_dain_affinity": {},

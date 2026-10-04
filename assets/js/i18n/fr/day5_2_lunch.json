@@ -205,11 +205,11 @@
     },
     "tour_dain_freetalk": {
         "name": "Dain",
-        "text": "*Elle arrête du pied un ballon de volley.* C’est la pause déjeuner de la fête du lycée. Ce serait dommage d’en rester là."
+        "text": "*Elle arrête du pied un ballon de volley qui vient de rouler vers elle.* C’est la pause déjeuner de la fête du lycée. Ce serait dommage d’en rester là."
     },
     "tour_dain_end_2": {
         "name": "{name}",
-        "text": "*Au lieu de la poser sur son genou, Dain fait rouler la surface du ballon sous sa paume.*"
+        "text": "*Au lieu de poser la paume sur son genou, Dain la pose sur le ballon de volley et le fait rouler.*"
     },
     "tour_co_branch": {},
     "tour_co_event_1": {
@@ -328,7 +328,7 @@
     "tour_yuna_affinity_check": {},
     "tour_yuna_affinity_80": {
         "name": "Yuna",
-        "text": "Ta place de premier lecteur du prochain récit est réservée aussi. Fixons une date après."
+        "text": "Ta place de premier lecteur du prochain récit est réservée aussi. Notons la date quand on aura fini."
     },
     "tour_yuna_affinity_60": {
         "name": "Yuna",

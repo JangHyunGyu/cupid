@@ -286,7 +286,7 @@
     },
     "hidden_homeroom_d3_4_h": {
         "name": "{name}",
-        "text": "*Ich könnte so tun, als hätte ich nichts bemerkt. Die Lehrerin deckt das Papier nicht ab. Sie setzt die Kappe auf den Stift und nimmt sie wieder herunter.*"
+        "text": "*Ich hätte so tun können, als hätte ich nichts bemerkt. Die Lehrerin deckt das Papier nicht ab. Sie setzt die Kappe auf den Stift und nimmt sie wieder herunter.*"
     },
     "hidden_homeroom_d3_choice": {
         "name": "{name}",
@@ -577,7 +577,7 @@
     },
     "hidden_nurse_d3_6": {
         "name": "Schulkrankenschwester",
-        "text": "In der Uniklinik wusste ich bei mehreren Klingeln oft nicht, wohin zuerst. Häufig musste ich schon weiter, bevor ein Patient ausgeredet hatte."
+        "text": "In der Uniklinik habe ich überlegt, wohin ich zuerst gehen sollte, wenn mehrere Klingeln gleichzeitig läuteten. Häufig musste ich schon weiter, bevor ein Patient ausgeredet hatte."
     },
     "hidden_nurse_d3_6_b": {
         "name": "Schulkrankenschwester",

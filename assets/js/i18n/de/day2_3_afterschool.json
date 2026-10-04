@@ -325,7 +325,7 @@
     },
     "after2_seo_8b": {
         "name": "Seoyeon",
-        "text": "*Sie löst den Blick von den Unterlagen und sieht zu {name} hinüber.*"
+        "text": "*Sie hört auf, in den Unterlagen zu blättern, und sieht zu {name} hinüber.*"
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
@@ -797,7 +797,7 @@
     },
     "after2_yuna_neg_leave": {
         "name": "{name}",
-        "text": "*Ich gehe vom ungelesenen Buch weg und schließe die Tür des Anbaus.*"
+        "text": "*Ich gehe am Sitzplatz vorbei, ohne das Buch zu schließen, und bleibe bei der Tür stehen.*"
     },
     "after2_dain_cool_cont": {
         "name": "{name}",

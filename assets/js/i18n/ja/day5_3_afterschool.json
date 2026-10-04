@@ -129,7 +129,7 @@
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
         "name": "{name}",
-        "text": "*友人たちとの約束へ向かう道と、行事の片づけをもう少し手伝う道に分かれている。*"
+        "text": "*友人たちと約束した場所へ向かう道と、行事の片づけをもう少し手伝う道に分かれている。*"
     },
     "after5_hidden_route_choice": {
         "name": "{name}",

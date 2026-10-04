@@ -209,7 +209,7 @@
     },
     "tour_dain_end_2": {
         "name": "{name}",
-        "text": "*ダインは膝には触れず、バレーボールの表面を手のひらで転がす。*"
+        "text": "*ダインは膝ではなくバレーボールに手のひらを置き、ボールを転がす。*"
     },
     "tour_co_branch": {},
     "tour_co_event_1": {
@@ -328,7 +328,7 @@
     "tour_yuna_affinity_check": {},
     "tour_yuna_affinity_80": {
         "name": "ユナ",
-        "text": "次の話も、最初の読者はあなた。終わったら日付を決めよう。"
+        "text": "次の話も、最初の読者はあなた。終わったら日付を書いておこう。"
     },
     "tour_yuna_affinity_60": {
         "name": "ユナ",

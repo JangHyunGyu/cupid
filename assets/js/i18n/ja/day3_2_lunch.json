@@ -347,7 +347,7 @@
     },
     "lunch3_end": {
         "name": "{name}",
-        "text": "*チャイムが鳴り、弁当を片づける。約束の話を、それ以上口にする者はいない。*"
+        "text": "*チャイムが鳴り、弁当箱のふたを閉める。約束の話を、それ以上口にする者はいない。*"
     },
     "lunch3_give_seo_2_check": {},
     "lunch3_give_seo_dain_affinity": {},

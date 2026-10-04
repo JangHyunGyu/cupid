@@ -379,7 +379,7 @@
     },
     "morning2_greet_none_2": {
         "name": "{name}",
-        "text": "*서연은 출석부를 넘기고 다인은 친구들 쪽으로 몸을 돌린다. 유나의 자리는 이미 책이 펴져 있다.*"
+        "text": "*서연은 출석부를 넘기고 다인은 친구들 쪽으로 몸을 돌린다. 유나의 자리에는 이미 책이 펴져 있다.*"
     },
     "morning2_greet_none_tone": {},
     "morning2_greet_none_neg_1": {

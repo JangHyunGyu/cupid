@@ -833,7 +833,7 @@
     },
     "wall_yuna_moved_5_b": {
         "name": "Yuna",
-        "text": "*Ihre Hand lässt den Ärmel los. Sie überbrückt den einen Schritt Abstand zu {name}.*"
+        "text": "*Ihre Hand lässt den Ärmel los. Sie überbrückt den einen Schritt Abstand zwischen dem Bücherregal und {name}.*"
     },
     "wall_yuna_skin_check": {},
     "wall_yuna_skin70_1": {

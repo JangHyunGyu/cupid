@@ -228,7 +228,7 @@
     },
     "after2_dain_end_3": {
         "name": "Dain",
-        "text": "*Ses baguettes s'immobilisent. Juste un instant.*"
+        "text": "*Le bout de ses baguettes reste immobile au-dessus du gobelet de tteokbokki.*"
     },
     "after2_dain_end_3b": {
         "name": "Dain",
@@ -325,7 +325,7 @@
     },
     "after2_seo_8b": {
         "name": "Seoyeon",
-        "text": "*Elle lève les yeux de ses documents et regarde vers {name}.*"
+        "text": "*Elle cesse de feuilleter ses documents et regarde vers {name}.*"
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
@@ -797,7 +797,7 @@
     },
     "after2_yuna_neg_leave": {
         "name": "{name}",
-        "text": "*Je m'éloigne du livre encore ouvert et je ferme la porte de l'annexe.*"
+        "text": "*Sans refermer le livre, je passe à côté du siège et m'arrête près de la porte.*"
     },
     "after2_dain_cool_cont": {
         "name": "{name}",

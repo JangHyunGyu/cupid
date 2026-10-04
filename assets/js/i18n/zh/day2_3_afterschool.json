@@ -325,7 +325,7 @@
     },
     "after2_seo_8b": {
         "name": "书妍",
-        "text": "*她把视线从文件上抬起，看向{name}。*"
+        "text": "*她停下翻文件的手，看向{name}。*"
     },
     "after2_seo_8b2": {
         "name": "书妍",
@@ -567,7 +567,7 @@
     },
     "after2_yuna_choice_pre3_b": {
         "name": "由娜",
-        "text": "*由娜越过书的上沿，直直地看向{name}。耳机线还紧紧地缠在她的手指上。*"
+        "text": "*由娜越过书的上沿，直直地看向{name}。耳机线还缠在她的手指上，一动不动。*"
     },
     "after2_yuna_choice": {
         "name": "{name}",
@@ -797,7 +797,7 @@
     },
     "after2_yuna_neg_leave": {
         "name": "{name}",
-        "text": "*我从那本没读的书旁离开，站到门边。*"
+        "text": "*我没有合上书，从座位旁走过，站到门边。*"
     },
     "after2_dain_cool_cont": {
         "name": "{name}",

@@ -797,7 +797,7 @@
     },
     "after2_yuna_neg_leave": {
         "name": "{name}",
-        "text": "*本を閉じない席のそばを離れて、別館のドアを閉める。*"
+        "text": "*本を閉じないまま席のそばを通り、ドアのそばに立つ。*"
     },
     "after2_dain_cool_cont": {
         "name": "{name}",

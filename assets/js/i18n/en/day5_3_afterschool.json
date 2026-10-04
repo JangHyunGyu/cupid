@@ -129,7 +129,7 @@
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
         "name": "{name}",
-        "text": "*The path to meet my friends and the path back to help finish the event split here.*"
+        "text": "*The path to meet my friends and the path back to help finish cleaning up after the event split here.*"
     },
     "after5_hidden_route_choice": {
         "name": "{name}",

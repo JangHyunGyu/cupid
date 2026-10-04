@@ -1,17 +1,18 @@
 {
   "_meta": {
-    "generated": "2026-07-30T03:25:32.203Z",
+    "generated": "2026-10-04T06:03:17.068Z",
     "day": 3,
-    "total_nodes": 535,
+    "total_nodes": 537,
     "lang_avg": {
       "en": 10,
       "ja": 10,
       "es": 10,
       "fr": 10,
       "de": 10,
-      "pt": 10
+      "pt": 10,
+      "zh": 10
     },
-    "all_reviewed": true
+    "all_reviewed": false
   },
   "day3_1_morning": {
     "morning3_start": {
@@ -1445,7 +1446,7 @@
     "morning3_dain_gate_3": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#morning3_dain_gate_3",
       "_ko_name": "다인",
-      "_ko_text_preview": "*다인이 손바닥을 내민 채 출발선처럼 몸을 낮춘다.*",
+      "_ko_text_preview": "*다인이 손바닥을 내민 채 출발선에 선 것처럼 몸을 낮춘다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#morning3_dain_gate_3",
@@ -1479,6 +1480,12 @@
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day3_1_morning.json#morning3_dain_gate_3",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "zh": {
+        "_ref": "assets/js/i18n/zh/day3_1_morning.json#morning3_dain_gate_3",
         "_reviewed": true,
         "_score": 10,
         "_issues": null
@@ -2412,7 +2419,7 @@
     "morning3_date_dain_accept": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#morning3_date_dain_accept",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*다인과 주말 약속을 잡았다.*",
+      "_ko_text_preview": "*다인과 주말 약속을 잡았다. 다인이 웃자 문밖에 있던 서연이 클립보드를 덮는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#morning3_date_dain_accept",
@@ -2446,6 +2453,12 @@
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day3_1_morning.json#morning3_date_dain_accept",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "zh": {
+        "_ref": "assets/js/i18n/zh/day3_1_morning.json#morning3_date_dain_accept",
         "_reviewed": true,
         "_score": 10,
         "_issues": null
@@ -3841,7 +3854,7 @@
     "hidden_nurse_d3_6": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_6",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "대학병원에서 일할 때. 호출벨이 동시에 울리면, 손이 먼저 빈 침대를 세더라. 그게 싫었어.",
+      "_ko_text_preview": "대학병원에 있을 때는 호출벨이 한꺼번에 울리면 어디부터 가야 할지 생각했어. 환자 말을 끝까지 못 듣고 뛰어가는 날도 많았고.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_nurse_d3_6",
@@ -3875,6 +3888,12 @@
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day3_1_morning.json#hidden_nurse_d3_6",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "zh": {
+        "_ref": "assets/js/i18n/zh/day3_1_morning.json#hidden_nurse_d3_6",
         "_reviewed": true,
         "_score": 10,
         "_issues": null
@@ -4514,7 +4533,7 @@
     "hidden_homeroom_d3_4_b": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_homeroom_d3_4_b",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*뒤집힌 종이 사이로 손글씨가 빼곡하다. 담임의 손바닥이 종이 모서리를 덮고 있다.*",
+      "_ko_text_preview": "*뒤집힌 종이 사이로 빼곡한 손글씨가 보인다. 담임의 손바닥이 종이 모서리를 덮고 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_4_b",
@@ -4548,6 +4567,12 @@
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day3_1_morning.json#hidden_homeroom_d3_4_b",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "zh": {
+        "_ref": "assets/js/i18n/zh/day3_1_morning.json#hidden_homeroom_d3_4_b",
         "_reviewed": true,
         "_score": 10,
         "_issues": null
@@ -7670,7 +7695,7 @@
     "hidden_homeroom_d3_4_h": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_homeroom_d3_4_h",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*모른 척할 수도 있었다. 담임은 종이를 덮지 않는다. 펜 뚜껑을 닫았다가, 다시 연다.*",
+      "_ko_text_preview": "*모른 척할 수도 있었다. 담임은 종이를 덮지 않는다. 펜 뚜껑을 닫았다가 다시 연다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_4_h",
@@ -7704,6 +7729,12 @@
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day3_1_morning.json#hidden_homeroom_d3_4_h",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "zh": {
+        "_ref": "assets/js/i18n/zh/day3_1_morning.json#hidden_homeroom_d3_4_h",
         "_reviewed": true,
         "_score": 10,
         "_issues": null
@@ -9690,7 +9721,7 @@
     "lunch3_expose_3": {
       "_ko_ref": "assets/js/i18n/ko/day3_2_lunch.json#lunch3_expose_3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*대답을 고르는 사이, 나머지 두 사람의 젓가락이 도시락 위에 그대로 걸린다.*",
+      "_ko_text_preview": "*대답을 고르는 사이, 나머지 두 사람의 젓가락이 도시락 위에서 그대로 멈춘다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_2_lunch.json#lunch3_expose_3",
@@ -9724,6 +9755,12 @@
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day3_2_lunch.json#lunch3_expose_3",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "zh": {
+        "_ref": "assets/js/i18n/zh/day3_2_lunch.json#lunch3_expose_3",
         "_reviewed": true,
         "_score": 10,
         "_issues": null
@@ -10740,7 +10777,7 @@
     "lunch3_end": {
       "_ko_ref": "assets/js/i18n/ko/day3_2_lunch.json#lunch3_end",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*종이 울려 도시락을 접는다. 약속 이야기는 누구도 다시 꺼내지 않는다.*",
+      "_ko_text_preview": "*종이 울려 도시락 뚜껑을 닫는다. 약속 이야기는 누구도 다시 꺼내지 않는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_2_lunch.json#lunch3_end",
@@ -10774,6 +10811,12 @@
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day3_2_lunch.json#lunch3_end",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "zh": {
+        "_ref": "assets/js/i18n/zh/day3_2_lunch.json#lunch3_end",
         "_reviewed": true,
         "_score": 10,
         "_issues": null
@@ -15072,7 +15115,7 @@
     "after3_dain_freetalk": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_freetalk",
       "_ko_name": "다인",
-      "_ko_text_preview": "*다인은 손목 보호대를 고쳐 매고 입꼬리를 억지로 올린다.* 오늘은 내가 먼저 말할게.",
+      "_ko_text_preview": "*다인이 손목 보호대를 고쳐 매는 동안 입꼬리가 반 박자 늦게 올라간다.* 오늘은 내가 먼저 말할게.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_freetalk",
@@ -15106,6 +15149,12 @@
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day3_3_afterschool.json#after3_dain_freetalk",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "zh": {
+        "_ref": "assets/js/i18n/zh/day3_3_afterschool.json#after3_dain_freetalk",
         "_reviewed": true,
         "_score": 10,
         "_issues": null
@@ -20026,6 +20075,54 @@
         "_score": 10,
         "_issues": null
       }
+    },
+    "after3_group_nurse_companion": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_group_nurse_companion",
+      "_ko_name": "보건선생님과 동행",
+      "_ko_text_preview": "*건강 점검표와 운동부 물품 상자가 나란히 놓인다. 보건선생님이 빈칸을 짚고 함께 온 인물은 상자 속 부족한 물품을 꺼낸다.* \"둘 다 오늘 확인해야 하는데 하나부터 골라야겠네. 누구 일을 먼저 볼까?\"",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_group_nurse_companion",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_group_nurse_companion",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_group_nurse_companion",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_group_nurse_companion",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_group_nurse_companion",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day3_3_afterschool.json#after3_group_nurse_companion",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "zh": {
+        "_ref": "assets/js/i18n/zh/day3_3_afterschool.json#after3_group_nurse_companion",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      }
     }
   },
   "day3_4_night": {
@@ -22506,6 +22603,54 @@
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day3_4_night.json#night3_faithful_reflect_4_c",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "forced_violation_day3_after_dain": {
+      "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#forced_violation_day3_after_dain",
+      "_ko_name": "다인",
+      "_ko_text_preview": "*다인은 평소처럼 웃어넘기지 않는다. 한참 뒤에야 짧고 굳은 목소리로 대답한다.* 장난 아니야. 내가 싫다는데 억지로 한 거, 절대 그냥 안 넘어가.",
+      "_has_choices": true,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_4_night.json#forced_violation_day3_after_dain",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_4_night.json#forced_violation_day3_after_dain",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_4_night.json#forced_violation_day3_after_dain",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_4_night.json#forced_violation_day3_after_dain",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_4_night.json#forced_violation_day3_after_dain",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day3_4_night.json#forced_violation_day3_after_dain",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "zh": {
+        "_ref": "assets/js/i18n/zh/day3_4_night.json#forced_violation_day3_after_dain",
         "_reviewed": true,
         "_score": 10,
         "_issues": null

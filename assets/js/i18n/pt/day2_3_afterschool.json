@@ -228,7 +228,7 @@
     },
     "after2_dain_end_3": {
         "name": "Dain",
-        "text": "*Para o hashi. Só por um instante.*"
+        "text": "*As pontas dos hashis ficam imóveis sobre o copo de tteokbokki.*"
     },
     "after2_dain_end_3b": {
         "name": "Dain",
@@ -325,7 +325,7 @@
     },
     "after2_seo_8b": {
         "name": "Seoyeon",
-        "text": "*Tira os olhos dos documentos e olha para {name}.*"
+        "text": "*Ela para de folhear os documentos e olha para {name}.*"
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
@@ -797,7 +797,7 @@
     },
     "after2_yuna_neg_leave": {
         "name": "{name}",
-        "text": "*Saio do lugar com o livro aberto e fecho a porta do anexo.*"
+        "text": "*Passo ao lado do lugar sem fechar o livro e fico perto da porta.*"
     },
     "after2_dain_cool_cont": {
         "name": "{name}",

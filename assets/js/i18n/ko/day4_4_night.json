@@ -833,7 +833,7 @@
     },
     "wall_yuna_moved_5_b": {
         "name": "유나",
-        "text": "*옷소매를 쥔 손이 풀린다. 서가와 {name} 사이의 한 걸음을 좁힌다.*"
+        "text": "*옷소매를 쥔 손이 풀린다. 서가와 {name} 사이의 한 걸음 거리를 좁힌다.*"
     },
     "wall_yuna_skin_check": {},
     "wall_yuna_skin70_1": {

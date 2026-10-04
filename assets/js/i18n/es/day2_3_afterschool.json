@@ -228,7 +228,7 @@
     },
     "after2_dain_end_3": {
         "name": "Dain",
-        "text": "*Detiene los palillos. Solo un segundo.*"
+        "text": "*Las puntas de sus palillos permanecen inmóviles sobre el vaso de tteokbokki.*"
     },
     "after2_dain_end_3b": {
         "name": "Dain",
@@ -325,7 +325,7 @@
     },
     "after2_seo_8b": {
         "name": "Seoyeon",
-        "text": "*Suelta los documentos que estaba pasando y mira hacia {name}.*"
+        "text": "*Deja de pasar los documentos y mira hacia {name}.*"
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
@@ -797,7 +797,7 @@
     },
     "after2_yuna_neg_leave": {
         "name": "{name}",
-        "text": "*Me alejo del asiento con el libro abierto y cierro la puerta del anexo.*"
+        "text": "*Paso junto al asiento sin cerrar el libro y me quedo cerca de la puerta.*"
     },
     "after2_dain_cool_cont": {
         "name": "{name}",

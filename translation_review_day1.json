@@ -1,17 +1,18 @@
 {
   "_meta": {
-    "generated": "2026-07-30T03:25:32.203Z",
+    "generated": "2026-10-04T06:03:17.068Z",
     "day": 1,
-    "total_nodes": 344,
+    "total_nodes": 346,
     "lang_avg": {
       "en": 10,
       "ja": 10,
       "es": 10,
       "fr": 10,
       "de": 10,
-      "pt": 10
+      "pt": 10,
+      "zh": 10
     },
-    "all_reviewed": true
+    "all_reviewed": false
   },
   "day1_1_morning": {
     "start": {
@@ -228,7 +229,7 @@
     "seoyeon_meet_2": {
       "_ko_ref": "assets/js/i18n/ko/day1_1_morning.json#seoyeon_meet_2",
       "_ko_name": "서연",
-      "_ko_text_preview": "*{name}의 이름을 한 번 더 확인한 뒤 클립보드 위 명단에 체크한다. 펜 끝이 명단 위에 남은 채 교복 명찰까지 훑는다.*",
+      "_ko_text_preview": "*{name}의 이름을 한 번 더 확인한 뒤 클립보드 위 명단에 체크한다. 펜 끝을 명단 위에 둔 채 교복 명찰까지 훑는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_1_morning.json#seoyeon_meet_2",
@@ -262,6 +263,12 @@
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day1_1_morning.json#seoyeon_meet_2",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "zh": {
+        "_ref": "assets/js/i18n/zh/day1_1_morning.json#seoyeon_meet_2",
         "_reviewed": true,
         "_score": 10,
         "_issues": null
@@ -3767,7 +3774,7 @@
     "lunch_seo_8": {
       "_ko_ref": "assets/js/i18n/ko/day1_2_lunch.json#lunch_seo_8",
       "_ko_name": "서연",
-      "_ko_text_preview": "*가방에서 같은 크기의 도시락통 두 개, 2인분을 포개어 꺼낸다.*",
+      "_ko_text_preview": "*가방에서 2인분이 담긴 같은 크기의 도시락통 두 개를 포개어 꺼낸다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_2_lunch.json#lunch_seo_8",
@@ -3801,6 +3808,12 @@
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day1_2_lunch.json#lunch_seo_8",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "zh": {
+        "_ref": "assets/js/i18n/zh/day1_2_lunch.json#lunch_seo_8",
         "_reviewed": true,
         "_score": 10,
         "_issues": null
@@ -6247,7 +6260,7 @@
     "lunch_yuna_1": {
       "_ko_ref": "assets/js/i18n/ko/day1_2_lunch.json#lunch_yuna_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*유나의 뒷모습을 따라 도서관으로 들어간다. 점심 종이 친 뒤인데도 대출대 의자만 삐뚤게 비어 있다.*",
+      "_ko_text_preview": "*유나의 뒷모습을 따라 도서관으로 들어간다. 점심 종이 친 뒤인데도 대출대 의자만 삐뚤게 놓인 채 비어 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_2_lunch.json#lunch_yuna_1",
@@ -6281,6 +6294,12 @@
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day1_2_lunch.json#lunch_yuna_1",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "zh": {
+        "_ref": "assets/js/i18n/zh/day1_2_lunch.json#lunch_yuna_1",
         "_reviewed": true,
         "_score": 10,
         "_issues": null
@@ -7800,6 +7819,54 @@
         "_score": 10,
         "_issues": null
       }
+    },
+    "lunch_dain_neg_leave": {
+      "_ko_ref": "assets/js/i18n/ko/day1_2_lunch.json#lunch_dain_neg_leave",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*매점 줄에서 빠져나와 복도에 선다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day1_2_lunch.json#lunch_dain_neg_leave",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day1_2_lunch.json#lunch_dain_neg_leave",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day1_2_lunch.json#lunch_dain_neg_leave",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day1_2_lunch.json#lunch_dain_neg_leave",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day1_2_lunch.json#lunch_dain_neg_leave",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day1_2_lunch.json#lunch_dain_neg_leave",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "zh": {
+        "_ref": "assets/js/i18n/zh/day1_2_lunch.json#lunch_dain_neg_leave",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      }
     }
   },
   "day1_3_afterschool": {
@@ -8688,7 +8755,7 @@
     "after_miss_dain_3": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_miss_dain_3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*옆으로 비키자 다인이 스쳐 지나간다. 세 걸음 더 간 운동화 밑창이 바닥을 길게 끌며 선다.*",
+      "_ko_text_preview": "*옆으로 비키자 다인이 스쳐 지나간다. 다인은 세 걸음 더 가서 운동화 밑창을 바닥에 길게 끌며 멈춰 선다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_miss_dain_3",
@@ -8722,6 +8789,12 @@
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day1_3_afterschool.json#after_miss_dain_3",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "zh": {
+        "_ref": "assets/js/i18n/zh/day1_3_afterschool.json#after_miss_dain_3",
         "_reviewed": true,
         "_score": 10,
         "_issues": null
@@ -12221,7 +12294,7 @@
     "after_nurse_enter_10_b": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_nurse_enter_10_b",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "*서랍이 닫히며 안쪽의 연두색 노트도 가려진다. 벽시계는 처음 누웠을 때보다 10분을 지나 있다.*",
+      "_ko_text_preview": "*기록지를 서랍에 넣자 안쪽의 연두색 노트가 잠깐 보인다. 벽시계는 처음 누웠을 때보다 10분 뒤를 가리킨다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_nurse_enter_10_b",
@@ -12255,6 +12328,12 @@
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day1_3_afterschool.json#after_nurse_enter_10_b",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "zh": {
+        "_ref": "assets/js/i18n/zh/day1_3_afterschool.json#after_nurse_enter_10_b",
         "_reviewed": true,
         "_score": 10,
         "_issues": null
@@ -14197,7 +14276,7 @@
     "night_end_3": {
       "_ko_ref": "assets/js/i18n/ko/day1_4_night.json#night_end_3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*잠금화면에 오늘 저장한 이름들이 남아 있다. 화면을 끄고도, 손가락이 한 번 더 전원 버튼을 찾는다.*",
+      "_ko_text_preview": "*잠금화면에 오늘 저장한 이름들이 남아 있다. 화면을 끄고도 손가락이 한 번 더 전원 버튼을 찾는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_4_night.json#night_end_3",
@@ -14232,6 +14311,12 @@
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day1_4_night.json#night_end_3",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "zh": {
+        "_ref": "assets/js/i18n/zh/day1_4_night.json#night_end_3",
         "_reviewed": true,
         "_score": 10,
         "_issues": null
@@ -14484,6 +14569,54 @@
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day1_4_night.json#night_dain_late_4_b",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "forced_violation_day1_after_dain": {
+      "_ko_ref": "assets/js/i18n/ko/day1_4_night.json#forced_violation_day1_after_dain",
+      "_ko_name": "다인",
+      "_ko_text_preview": "*다인은 평소처럼 웃어넘기지 않는다. 한참 뒤에야 짧고 굳은 목소리로 대답한다.* 장난 아니야. 내가 싫다는데 억지로 한 거, 절대 그냥 안 넘어가.",
+      "_has_choices": true,
+      "en": {
+        "_ref": "assets/js/i18n/en/day1_4_night.json#forced_violation_day1_after_dain",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day1_4_night.json#forced_violation_day1_after_dain",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day1_4_night.json#forced_violation_day1_after_dain",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day1_4_night.json#forced_violation_day1_after_dain",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day1_4_night.json#forced_violation_day1_after_dain",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day1_4_night.json#forced_violation_day1_after_dain",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "zh": {
+        "_ref": "assets/js/i18n/zh/day1_4_night.json#forced_violation_day1_after_dain",
         "_reviewed": true,
         "_score": 10,
         "_issues": null

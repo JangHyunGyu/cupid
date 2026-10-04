@@ -1815,7 +1815,7 @@ test('day 2 through 5 rivalry copy stays synchronized across every supported loc
         'after5_farewell_dain_2', 'after5_farewell_dain_4', 'after5_farewell_dain_4_c'
     ];
     const expectedDigests = {
-        "ko": "c6d0864232891bdf165afc857fe383020c1f474fc0084c3b6b178bd7f174ca5d",
+        "ko": "bc6942dc957981a3083134f0907e850fcd2ae2c7ad323062443a762760f05d2d",
         "en": "1f6c00dfd4db5c8ddbe65f4e21c676a73a9b1e7b8f4d08e94c9d2cb1e9bd73b0",
         "ja": "e1fd08117c49f6448a016ba485230e8d83739ab34e71e2353a363e5b25f3702c",
         "es": "c7b03538c5a6ddb45ae2271c7d619ca60c5e4a6444f847be1eabcac31ba29331",

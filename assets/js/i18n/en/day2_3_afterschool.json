@@ -325,7 +325,7 @@
     },
     "after2_seo_8b": {
         "name": "Seoyeon",
-        "text": "*She lifts her eyes from the documents and looks toward {name}.*"
+        "text": "*She stops leafing through the documents and looks toward {name}.*"
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
@@ -567,7 +567,7 @@
     },
     "after2_yuna_choice_pre3_b": {
         "name": "Yuna",
-        "text": "*Yuna looks directly at {name} over the top of her book. The earbud cord stays wound tight around her fingers.*"
+        "text": "*Yuna looks directly at {name} over the top of her book. The earbud cord stays wound around her fingers, motionless.*"
     },
     "after2_yuna_choice": {
         "name": "{name}",
@@ -797,7 +797,7 @@
     },
     "after2_yuna_neg_leave": {
         "name": "{name}",
-        "text": "*I step away from the unread book and stand by the door.*"
+        "text": "*I pass by the seat without closing the book and stand near the door.*"
     },
     "after2_dain_cool_cont": {
         "name": "{name}",

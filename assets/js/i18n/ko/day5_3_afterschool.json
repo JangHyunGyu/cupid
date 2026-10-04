@@ -129,7 +129,7 @@
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
         "name": "{name}",
-        "text": "*친구들과 한 약속으로 가는 길과, 행사 정리를 마저 돕는 길이 갈린다.*"
+        "text": "*친구들과 약속한 곳으로 가는 길과, 행사 정리를 마저 돕는 길이 갈린다.*"
     },
     "after5_hidden_route_choice": {
         "name": "{name}",
@@ -201,7 +201,7 @@
     },
     "after5_last_chance_2_l": {
         "name": "다인",
-        "text": "*한 걸음 지나쳤다가 배구공으로 바닥을 눌러 세운다.*"
+        "text": "*한 걸음 지나쳤다가 배구공을 바닥에 눌러 세운다.*"
     },
     "after5_last_chance_2_m": {
         "name": "다인",
@@ -606,7 +606,7 @@
     },
     "after5_confess_react_seo_neg": {
         "name": "서연",
-        "text": "*열쇠를 주머니에 넣는다.* 그 말은 들을 사이가 아니야."
+        "text": "*열쇠를 주머니에 넣는다.* 그 말을 들을 사이가 아니야."
     },
     "after5_confess_react_dain_neg": {
         "name": "다인",

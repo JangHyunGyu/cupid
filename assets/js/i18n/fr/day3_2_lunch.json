@@ -347,7 +347,7 @@
     },
     "lunch3_end": {
         "name": "{name}",
-        "text": "*La sonnerie retentit et je range le bento. Personne ne reparle des sorties prévues.*"
+        "text": "*La sonnerie retentit et je referme le couvercle du bento. Personne ne reparle des sorties prévues.*"
     },
     "lunch3_give_seo_2_check": {},
     "lunch3_give_seo_dain_affinity": {},
