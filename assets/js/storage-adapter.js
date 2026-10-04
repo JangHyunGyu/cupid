@@ -26,16 +26,18 @@
     'use strict';
 
     var memory = new Map();
+    var pending = new Map();
+    var knownNative = new Map();
+    var pendingClear = false;
     var nativeStorage = null;
     var nativeChecked = false;
 
     function resolveStorage() {
-        if (nativeChecked) return nativeStorage;
+        if (nativeChecked && nativeStorage) return nativeStorage;
         nativeChecked = true;
         try {
             var candidate = typeof resolveNativeStorage === 'function' ? resolveNativeStorage() : null;
             if (candidate && typeof candidate.getItem === 'function' && typeof candidate.setItem === 'function') {
-                candidate.getItem('__cupid_storage_probe__');
                 nativeStorage = candidate;
             }
         } catch (_) {
@@ -48,9 +50,12 @@
         var storage = resolveStorage();
         if (!storage) return { ok: false };
         try {
+            if (pendingClear) {
+                storage.clear();
+                pendingClear = false;
+            }
             return { ok: true, value: operation(storage) };
         } catch (_) {
-            nativeStorage = null;
             return { ok: false };
         }
     }
@@ -58,42 +63,92 @@
     var adapter = {
         getItem: function (key) {
             var normalizedKey = String(key);
+            if (pending.has(normalizedKey)) {
+                var flushed = useNative(function (storage) {
+                    var latest = storage.getItem(normalizedKey);
+                    if (latest !== pending.get(normalizedKey)) return { superseded: true, value: latest };
+                    if (memory.has(normalizedKey)) storage.setItem(normalizedKey, memory.get(normalizedKey));
+                    else storage.removeItem(normalizedKey);
+                    return { superseded: false };
+                });
+                if (!flushed.ok) return memory.has(normalizedKey) ? memory.get(normalizedKey) : null;
+                pending.delete(normalizedKey);
+                if (flushed.value.superseded) {
+                    if (flushed.value.value === null) memory.delete(normalizedKey);
+                    else memory.set(normalizedKey, flushed.value.value);
+                }
+            }
             var result = useNative(function (storage) { return storage.getItem(normalizedKey); });
-            if (result.ok) return result.value;
+            if (result.ok) {
+                knownNative.set(normalizedKey, result.value);
+                if (result.value === null) memory.delete(normalizedKey);
+                else memory.set(normalizedKey, result.value);
+                return result.value;
+            }
             return memory.has(normalizedKey) ? memory.get(normalizedKey) : null;
         },
         setItem: function (key, value) {
             var normalizedKey = String(key);
             var normalizedValue = String(value);
+            memory.set(normalizedKey, normalizedValue);
             var result = useNative(function (storage) { storage.setItem(normalizedKey, normalizedValue); });
-            if (!result.ok) memory.set(normalizedKey, normalizedValue);
+            if (result.ok) {
+                pending.delete(normalizedKey);
+                knownNative.set(normalizedKey, normalizedValue);
+            } else rememberPending(normalizedKey);
             writeSharedCookie(normalizedKey, normalizedValue);
         },
         removeItem: function (key) {
             var normalizedKey = String(key);
             var result = useNative(function (storage) { storage.removeItem(normalizedKey); });
             memory.delete(normalizedKey);
+            if (result.ok) {
+                pending.delete(normalizedKey);
+                knownNative.set(normalizedKey, null);
+            } else rememberPending(normalizedKey);
             return result.value;
         },
         clear: function () {
             var result = useNative(function (storage) { storage.clear(); });
             memory.clear();
+            pending.clear();
+            knownNative.clear();
+            pendingClear = !result.ok;
             return result.value;
         },
         key: function (index) {
-            var result = useNative(function (storage) { return storage.key(index); });
-            if (result.ok) return result.value;
-            return Array.from(memory.keys())[Number(index)] || null;
+            return keys()[Number(index)] || null;
         }
     };
 
     Object.defineProperty(adapter, 'length', {
         enumerable: true,
         get: function () {
-            var result = useNative(function (storage) { return storage.length; });
-            return result.ok ? result.value : memory.size;
+            return keys().length;
         }
     });
+
+    function keys() {
+        var result = useNative(function (storage) {
+            var names = new Set();
+            for (var i = 0; i < storage.length; i++) {
+                var name = storage.key(i);
+                if (name !== null && (!pending.has(name) || memory.has(name))) names.add(name);
+            }
+            pending.forEach(function (_, name) { if (memory.has(name)) names.add(name); });
+            return Array.from(names);
+        });
+        return result.ok ? result.value : Array.from(memory.keys());
+    }
+
+    function rememberPending(key) {
+        if (pending.has(key)) return;
+        // Retry only while the native value still belongs to this write.
+        // A newer tab's progress must win when storage becomes available again.
+        var result = useNative(function (storage) { return storage.getItem(key); });
+        if (result.ok) knownNative.set(key, result.value);
+        pending.set(key, knownNative.has(key) ? knownNative.get(key) : null);
+    }
 
     var SHARED_CUPID_KEYS = ['cupid_cycle_01', 'cupid_heroine', 'cupid_subject_compliance'];
 

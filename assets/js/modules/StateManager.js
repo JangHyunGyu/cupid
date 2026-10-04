@@ -254,14 +254,18 @@ class StateManager {
     }
 
     async commitProgressEvent(eventKey, operation, metadata = {}) {
-        beginCupidCommit(eventKey);
-        try {
-            const integrity = window.CupidProgressIntegrity;
-            if (!integrity) return { applied: true, value: operation() };
-            return await integrity.withLock(() => integrity.commit(this, eventKey, operation, metadata));
-        } finally {
-            endCupidCommit();
-        }
+        const integrity = window.CupidProgressIntegrity;
+        const commit = () => {
+            beginCupidCommit(eventKey);
+            try {
+                return integrity
+                    ? integrity.commit(this, eventKey, operation, metadata)
+                    : { applied: true, value: operation() };
+            } finally {
+                endCupidCommit();
+            }
+        };
+        return integrity ? integrity.withLock(commit) : commit();
     }
 
     getStoryFreeTalkGain(charKey) {

@@ -2,6 +2,67 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const createIntegrity = require('../assets/js/progression-integrity.js');
 const clone = value => JSON.parse(JSON.stringify(value));
+const fs = require('node:fs');
+const path = require('node:path');
+const vm = require('node:vm');
+function guardedSetup(locks) {
+    const data = new Map();
+    const storage = { getItem: key => data.get(key) || null, setItem: (key, value) => data.set(key, value) };
+    const api = createIntegrity({ storage, locks, crypto: require('node:crypto').webcrypto });
+    const window = { GAME_LANG: 'en', CupidProgressIntegrity: api };
+    vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../assets/js/modules/StateManager.js'), 'utf8'),
+        { window, console: { log() {} } });
+    const state = new window.StateManager();
+    api.start(state);
+    function commitTurn(key, amount = 3) {
+        assert.equal(window.CupidAffinityGate.commitKey(), key);
+        assert.equal(window.CupidAffinityGate.grant('Seoyeon', amount), true);
+        return state.changeAffinity('Seoyeon', amount);
+    }
+    return { window, state, api, data, commitTurn };
+}
+
+for (const mode of ['web-lock', 'fallback']) {
+    test(`queued affinity commits keep their own grant and receipt (${mode})`, async () => {
+        const pending = [];
+        const locks = mode === 'web-lock' ? { request: (_, options, operation) => new Promise((resolve, reject) => {
+            assert.equal(options.mode, 'exclusive');
+            pending.push(() => { try { resolve(operation()); } catch (error) { reject(error); } });
+        }) } : undefined;
+        const h = guardedSetup(locks);
+        const firstKey = 'talk:lunch:0';
+        const secondKey = 'talk:lunch:1';
+        const first = h.state.commitProgressEvent(firstKey, () => h.commitTurn(firstKey));
+        const second = h.state.commitProgressEvent(secondKey, () => h.commitTurn(secondKey));
+        const results = Promise.allSettled([first, second]);
+        assert.equal(h.window.CupidAffinityGate.commitKey(), '', 'queued work has no grant');
+        if (locks) { pending.shift()(); await first; pending.shift()(); }
+        assert.deepEqual((await results).map(result => result.status), ['fulfilled', 'fulfilled']);
+        assert.equal(h.state.getAffinity('Seoyeon'), 6);
+        assert.equal(h.state.progressionRevision, 2);
+        assert.deepEqual(Object.keys(JSON.parse(h.data.get('cupid_progress_integrity_v1')).receipts), [firstKey, secondKey]);
+        assert.equal(h.window.CupidAffinityGate.commitKey(), '');
+        assert.equal(h.state.changeAffinity('Seoyeon', 3), 6, 'no leftover grant');
+    });
+}
+
+test('guarded commits clean up failed grants and apply retried turns exactly once', async () => {
+    const h = guardedSetup();
+    function commitTurn() {
+        h.window.CupidAffinityGate.grant('Seoyeon', 3);
+        h.state.changeAffinity('Seoyeon', 3);
+        throw new Error('turn failed');
+    }
+    await assert.rejects(h.state.commitProgressEvent('talk:lunch:0', commitTurn), /turn failed/);
+    assert.equal(h.state.getAffinity('Seoyeon'), 0);
+    assert.equal(h.window.CupidAffinityGate.commitKey(), '');
+    const results = await Promise.all([
+        h.state.commitProgressEvent('talk:lunch:0', () => h.commitTurn('talk:lunch:0')),
+        h.state.commitProgressEvent('talk:lunch:0', () => h.commitTurn('talk:lunch:0'))
+    ]);
+    assert.deepEqual(results.map(result => result.applied), [true, false]);
+    assert.equal(h.state.getAffinity('Seoyeon'), 3);
+});
 function setup() {
     const data = new Map();
     const storage = { getItem: key => data.get(key) || null, setItem: (key, value) => data.set(key, value) };

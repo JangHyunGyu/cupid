@@ -18,7 +18,7 @@ const commands = [
     ['node', ['--test', 'tests/choice-affinity-balance.test.cjs', 'tests/cross-world.test.cjs']],
     ['node', ['--test', 'tests/haeun-festival.test.cjs', 'tests/haeun-romance.test.cjs', 'tests/haeun-affinity-anchor.test.cjs', 'tests/progression-integrity.test.cjs']],
     ['node', ['--test', 'tests/affinity-negative-branches.test.cjs']],
-    ['node', ['--test', 'tests/affinity-corrections.test.cjs']],
+    ['node', ['--test', 'tests/affinity-corrections.test.cjs', 'tests/affinity-guard.test.cjs']],
     ['node', ['--test', 'tests/route-telemetry.test.cjs']],
     ['node', ['--test', 'tests/scenario-commercial-polish.test.cjs']],
     ['node', ['--test', 'tests/story-continuity.test.cjs']],

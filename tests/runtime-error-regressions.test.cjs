@@ -25,11 +25,120 @@ test('storage adapter falls back when localStorage is missing or blocked', () =>
     assert.equal(blocked.getItem('volume'), '0.5');
 });
 
+function recoverableStorage() {
+    const createAdapter = require('../assets/js/storage-adapter.js');
+    const data = new Map();
+    let failWrites = false;
+    let failReads = false;
+    const native = {
+        getItem(key) { if (failReads) throw new DOMException('Blocked', 'SecurityError'); return data.get(key) ?? null; },
+        setItem(key, value) { if (failWrites) throw new DOMException('Full', 'QuotaExceededError'); data.set(key, String(value)); },
+        removeItem(key) { if (failWrites) throw new DOMException('Blocked', 'SecurityError'); data.delete(key); },
+        clear() { if (failWrites) throw new DOMException('Blocked', 'SecurityError'); data.clear(); },
+        key(index) { return [...data.keys()][index] ?? null; },
+        get length() { return data.size; }
+    };
+    return { data, native, adapter: createAdapter(() => native),
+        failWrites(value) { failWrites = value; }, failReads(value) { failReads = value; } };
+}
+
+test('a quota error preserves readable saves, receipts and identity and retries the pending write', () => {
+    const h = recoverableStorage();
+    h.data.set('cupid_save', 'existing save');
+    h.data.set('cupid_progress_integrity_v1', 'existing receipts');
+    h.data.set('cupid_device_id', 'existing device');
+    h.failWrites(true);
+    h.adapter.setItem('volume', '0.5');
+    for (const key of ['cupid_save', 'cupid_progress_integrity_v1', 'cupid_device_id']) {
+        assert.equal(h.adapter.getItem(key), h.data.get(key), key);
+    }
+    h.adapter.setItem('cupid_save', 'new save');
+    assert.equal(h.adapter.getItem('cupid_save'), 'new save');
+    h.failWrites(false);
+    assert.equal(h.adapter.getItem('cupid_save'), 'new save');
+    assert.equal(h.data.get('cupid_save'), 'new save', 'recovered storage receives the pending save');
+    assert.equal(h.adapter.getItem('volume'), '0.5');
+    assert.equal(h.data.get('volume'), '0.5');
+});
+
+test('transient read failures retain known data and recover without hiding newer native values', () => {
+    const h = recoverableStorage();
+    h.adapter.setItem('cupid_save', 'old');
+    assert.equal(h.adapter.getItem('cupid_save'), 'old');
+    h.failReads(true);
+    assert.equal(h.adapter.getItem('cupid_save'), 'old');
+    h.failReads(false);
+    h.data.set('cupid_save', 'newer tab');
+    assert.equal(h.adapter.getItem('cupid_save'), 'newer tab');
+});
+
+test('failed deletion and clear stay deleted in memory and are persisted after recovery', () => {
+    const h = recoverableStorage();
+    h.adapter.setItem('cupid_save', 'old');
+    h.failWrites(true);
+    h.adapter.removeItem('cupid_save');
+    assert.equal(h.adapter.getItem('cupid_save'), null);
+    h.failWrites(false);
+    assert.equal(h.adapter.getItem('cupid_save'), null);
+    assert.equal(h.data.has('cupid_save'), false);
+    h.adapter.setItem('cupid_save', 'new');
+    h.failWrites(true);
+    h.adapter.clear();
+    assert.equal(h.adapter.getItem('cupid_save'), null);
+    h.failWrites(false);
+    assert.equal(h.adapter.getItem('cupid_save'), null);
+    assert.equal(h.data.size, 0);
+});
+
+test('quota fallback retains affinity receipts and restored progress after recovery and reload', () => {
+    const createIntegrity = require('../assets/js/progression-integrity.js');
+    const createAdapter = require('../assets/js/storage-adapter.js');
+    const h = recoverableStorage();
+    const api = createIntegrity({ storage: h.adapter });
+    const state = { stats: { Seoyeon: { affinity: 0 } }, flags: {} };
+    api.start(state);
+    api.commit(state, 'talk:lunch:0', () => { state.stats.Seoyeon.affinity += 3; });
+    h.failWrites(true);
+    h.adapter.setItem('unrelated', 'full');
+    assert.equal(api.commit(state, 'talk:lunch:0', () => { state.stats.Seoyeon.affinity += 3; }).applied, false);
+    api.commit(state, 'talk:lunch:1', () => { state.stats.Seoyeon.affinity += 3; });
+    assert.equal(state.stats.Seoyeon.affinity, 6);
+    h.failWrites(false);
+    api.restoreState(state);
+    const reloaded = createIntegrity({ storage: createAdapter(() => h.native) });
+    const restored = { stats: { Seoyeon: { affinity: 0 } }, flags: {} };
+    reloaded.restoreState(restored);
+    assert.equal(restored.stats.Seoyeon.affinity, 6);
+    assert.equal(reloaded.commit(restored, 'talk:lunch:1', () => { restored.stats.Seoyeon.affinity += 3; }).applied, false);
+});
+
+test('pending affinity writes cannot replace a newer run committed by another tab', () => {
+    const createIntegrity = require('../assets/js/progression-integrity.js');
+    const createAdapter = require('../assets/js/storage-adapter.js');
+    const h = recoverableStorage();
+    const api = createIntegrity({ storage: h.adapter });
+    const old = { stats: { Seoyeon: { affinity: 0 } }, flags: {} };
+    api.start(old);
+    h.failWrites(true);
+    api.commit(old, 'talk:lunch:0', () => { old.stats.Seoyeon.affinity += 3; });
+    h.failWrites(false);
+    const other = createIntegrity({ storage: createAdapter(() => h.native) });
+    const fresh = { stats: { Seoyeon: { affinity: 0 } }, flags: {} };
+    other.start(fresh);
+    const latest = h.data.get('cupid_progress_integrity_v1');
+    assert.throws(() => api.commit(old, 'talk:lunch:1', () => { old.stats.Seoyeon.affinity += 3; }), { name: 'ProgressConflictError' });
+    assert.equal(h.data.get('cupid_progress_integrity_v1'), latest);
+    api.restoreState(old);
+    assert.equal(old.progressionRunId, fresh.progressionRunId);
+    assert.equal(old.stats.Seoyeon.affinity, 0);
+});
+
 test('app entry pages load the storage adapter before inline storage access', () => {
     const pages = ['index', 'game', 'gallery'].flatMap(name => ['', '-en', '-es', '-ja', '-fr', '-de', '-pt', '-zh'].map(suffix => `${name}${suffix}.html`));
     for (const page of pages) {
         const html = read(page);
-        assert.match(html, /assets\/js\/storage-adapter\.js\?v=20260926-crossing-storage-v2/);
+        const version = JSON.parse(read('config/project.json')).assetVersion;
+        assert.ok(html.includes(`assets/js/storage-adapter.js?v=${version}`), `${page}: storage cache version`);
         const firstInlineUse = html.indexOf('window.CupidStorage.');
         assert.ok(
             firstInlineUse === -1 || html.indexOf('assets/js/storage-adapter.js') < firstInlineUse,
