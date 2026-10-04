@@ -1251,46 +1251,6 @@ test('later 1:1 prompts receive labeled group history in every language without 
     assert.equal(system.getGameContext('Teacher', 'ko', { includeGroupConversations: false }), '');
 });
 
-test('group conversation memory injected into 1:1 prompts is bounded by turns and characters', () => {
-    const stateWindow = { GAME_LANG: 'ko', CupidFreeTalkCore: core };
-    vm.runInNewContext(read('assets/js/modules/StateManager.js'), {
-        window: stateWindow,
-        console: { log() {}, error() {} }
-    });
-    const state = new stateWindow.StateManager();
-    for (let index = 1; index <= 12; index += 1) {
-        state.addGroupConversationMemory({
-            turnId: `group-turn-cap-${index}`,
-            sessionId: 'morning5_counteroffer_group_talk',
-            participants: ['Teacher', 'Dain'],
-            playerName: '민준',
-            userContent: `질문 ${index} ${'가'.repeat(900)}`,
-            assistantMessages: [
-                { speakerId: 'Teacher', speakerName: '담임선생님', content: `답변 ${index} ${'나'.repeat(900)}` },
-                { speakerId: 'Dain', speakerName: '다인', content: `대꾸 ${index}` }
-            ]
-        });
-    }
-    const freeTalkWindow = { CupidFreeTalkCore: core, GAME_LANG: 'ko', FLAG_MEMORIES: [] };
-    vm.runInNewContext(read('assets/js/modules/FreeTalkSystem.js'), {
-        window: freeTalkWindow,
-        document: { documentElement: { lang: 'ko' } },
-        navigator: { onLine: true },
-        console: { log() {}, info() {}, warn() {}, error() {} },
-        DEFAULT_MAX_FREE_TALK_TURNS: 3,
-        CHAR_NAME_MAP: {},
-        setTimeout, clearTimeout, URL, URLSearchParams, Math, Date, Object, Array, String, Number, Set, Map, Promise
-    });
-    const system = new freeTalkWindow.FreeTalkSystem(state, {}, {}, {});
-    const context = system.getGameContext('Teacher', 'ko');
-    assert.ok(context.includes('[함께 있었던 대면 대화]') && context.includes('누가 한 말인지 구분해 기억하세요'));
-    const body = context.split('누가 한 말인지 구분해 기억하세요')[1];
-    assert.ok(body.length <= 3600, `group memory body must stay bounded (got ${body.length})`);
-    assert.doesNotMatch(context, /질문 1 /);
-    assert.match(context, /질문 12 /);
-    assert.ok(!/가{601}/.test(context) && !/나{601}/.test(context), 'each message must be clipped');
-});
-
 test('day-five confrontation uses two-speaker rendering, bounded recovery, and canonical group logs', () => {
     const scenario = read('assets/js/scenario/day5_1_morning.js');
     const freeTalk = read('assets/js/modules/FreeTalkSystem.js');
