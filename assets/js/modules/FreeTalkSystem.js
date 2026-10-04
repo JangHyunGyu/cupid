@@ -217,9 +217,9 @@ class FreeTalkSystem {
             const withImage = hadImage
                 ? [cleaned, localized.image].filter(Boolean).join(' ')
                 : cleaned;
-            return withImage.length > 1200 ? `${withImage.slice(0, 1200)}...` : withImage;
+            return withImage.length > 600 ? `${withImage.slice(0, 600)}...` : withImage;
         };
-        const turns = memories.map(memory => {
+        const turns = memories.slice(-6).map(memory => {
             const lines = [];
             const playerName = compact(memory.playerName) || localized.player;
             const userText = compact(memory.userContent);
@@ -232,8 +232,16 @@ class FreeTalkSystem {
             }
             return lines.join('\n');
         }).filter(Boolean);
-        if (turns.length === 0) return '';
-        return `\n\n${localized.header}\n${localized.guard}\n${turns.join('\n\n')}`;
+        // 토큰 상한: 최근 6턴, 본문 합계 3000자 이내(오래된 턴부터 제외)
+        let budget = 3000;
+        const keptTurns = [];
+        for (let index = turns.length - 1; index >= 0; index -= 1) {
+            if (keptTurns.length > 0 && turns[index].length > budget) break;
+            budget -= turns[index].length;
+            keptTurns.unshift(turns[index]);
+        }
+        if (keptTurns.length === 0) return '';
+        return `\n\n${localized.header}\n${localized.guard}\n${keptTurns.join('\n\n')}`;
     }
 
     /**

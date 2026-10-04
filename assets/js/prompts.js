@@ -1262,8 +1262,7 @@ function buildCupidLowInformationContinuationRule(value, lang = 'ko') {
     if (!isCupidLowInformationContinuationInput(value)) return '';
     const rules = {
         ko: `[이번 입력은 짧은 계속 신호]
-최신 사용자 입력은 새 사실을 거의 주지 않는 짧은 맞장구나 문장부호, 침묵 신호입니다. 입력 기호를 입 밖에 내어 언급하지 않습니다. 직전 답변의 질문·확인·자세·소품·장소 묘사를 비슷하게 되풀이하지 말고, 이 캐릭터의 현재 욕구와 목표에서 이어지는 다음 박자를 고릅니다. 기다리거나 쉬거나 대화를 끝내는 선택도 가능합니다.
-정해진 행동 개수나 형식은 없습니다. 성격과 상황에 어울린다면 작은 변화만으로도 충분합니다. 사용자의 행동·발화·속마음·동의·거절은 대신 만들지 않습니다. 성인끼리의 친밀 장면은 이미 명확한 동의 아래 진행 중일 때만 다음 박자를 이어 가며, 이 짧은 입력 자체를 새로운 동의로 해석하지 않습니다.`,
+최신 사용자 입력은 새 사실을 거의 주지 않는 짧은 맞장구나 문장부호, 침묵 신호입니다. 입력 기호를 입 밖에 내지 않고, 직전 답변의 질문·확인·자세·소품·장소 묘사를 되풀이하지 않으며 캐릭터의 현재 욕구와 목표에서 이어지는 다음 박자를 고릅니다. 기다리거나 쉬거나 대화를 끝내는 선택도 가능하고 작은 변화만으로 충분합니다. 사용자의 행동·발화·속마음·동의·거절은 대신 만들지 않습니다. 성인끼리의 친밀 장면은 이미 명확한 동의 아래 진행 중일 때만 다음 박자를 이어 가며, 이 짧은 입력 자체를 새로운 동의로 해석하지 않습니다.`,
         en: `[The Latest Input Is a Brief Continue Signal]
 The latest input adds little new information. Do not mention its symbol. Avoid repeating the previous question, confirmation, posture, prop, or setting; choose the next beat from this character's current desire and goal. Waiting, resting, or ending the conversation are valid choices.
 There is no action quota or response template. Do not invent the user's action, speech, inner thought, consent, or refusal. Continue adult intimacy only when explicit consent and the ongoing act are already established; this brief input is not new consent.`,
