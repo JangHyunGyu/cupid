@@ -20,7 +20,7 @@
         "choices": [
             "Contar o que aconteceu ontem à noite",
             "Dizer que não foi nada importante",
-            "Contar só as partes boas para não magoá-la.",
+            "Contar só a parte fácil",
             "Tranquilizá-la por enquanto e deixar os detalhes para depois."
         ]
     },
@@ -30,7 +30,7 @@
         "choices": [
             "Contar o que aconteceu ontem à noite",
             "Dizer que não foi nada importante",
-            "Contar só as partes boas para não magoá-la.",
+            "Contar só a parte fácil",
             "Tranquilizá-la por enquanto e deixar os detalhes para depois."
         ]
     },
@@ -59,7 +59,7 @@
         "choices": [
             "Contar o que aconteceu na noite passada",
             "Desconversar, dizendo que não foi nada importante",
-            "Contar só as partes boas para não magoá-la.",
+            "Contar só a parte fácil",
             "Tranquilizá-la por enquanto e deixar os detalhes para depois."
         ]
     },
@@ -69,7 +69,7 @@
         "choices": [
             "Contar o que aconteceu na noite passada",
             "Desconversar, dizendo que não foi nada importante",
-            "Contar só as partes boas para não magoá-la.",
+            "Contar só a parte fácil",
             "Tranquilizá-la por enquanto e deixar os detalhes para depois."
         ]
     },
@@ -79,7 +79,7 @@
         "choices": [
             "Contar o que aconteceu na noite passada",
             "Desconversar, dizendo que não foi nada importante",
-            "Contar só as partes boas para não magoá-la.",
+            "Contar só a parte fácil",
             "Tranquilizá-la por enquanto e deixar os detalhes para depois."
         ]
     },
@@ -89,7 +89,7 @@
         "choices": [
             "Contar o que aconteceu na noite passada",
             "Desconversar, dizendo que não foi nada importante",
-            "Contar só as partes boas para não magoá-la.",
+            "Contar só a parte fácil",
             "Tranquilizá-la por enquanto e deixar os detalhes para depois."
         ]
     },
@@ -99,7 +99,7 @@
         "choices": [
             "Contar o que aconteceu na noite passada",
             "Desconversar, dizendo que não foi nada importante",
-            "Contar só as partes boas para não magoá-la.",
+            "Contar só a parte fácil",
             "Tranquilizá-la por enquanto e deixar os detalhes para depois."
         ]
     },
@@ -109,7 +109,7 @@
         "choices": [
             "Contar o que aconteceu na noite passada",
             "Desconversar, dizendo que não foi nada importante",
-            "Contar só as partes boas para não magoá-la.",
+            "Contar só a parte fácil",
             "Tranquilizá-la por enquanto e deixar os detalhes para depois."
         ]
     },
@@ -662,9 +662,9 @@
         "name": "{name}",
         "text": "*Quando a conversa termina, as duas esperam uma resposta.*",
         "choices": [
-            "Responder com responsabilidade à pessoa com quem me comprometi primeiro",
-            "Dizer que escolho a pessoa que fui encontrar ontem à noite",
-            "Não prender nenhuma das duas e encerrar as duas relações"
+            "Responder a quem eu prometi primeiro",
+            "Escolher a pessoa de ontem à noite",
+            "Soltar as duas"
         ]
     },
     "morning5_counteroffer_choice_lead": {

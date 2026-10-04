@@ -135,7 +135,7 @@
         "name": "{name}",
         "text": "*The road to the park and the road back to help finish the event split here. I have to decide who gets my answer today.*",
         "choices": [
-            "Go to the park and finish the choice I had already started",
+            "Go to the park and finish what we started",
             "Return to the homeroom teacher and organize the literature-club manuscript",
             "Return to the school nurse and organize the counseling records"
         ]
@@ -262,7 +262,7 @@
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
-        "text": "*Yuna doesn't look away. The distance between us is one step shorter.*"
+        "text": "*Yuna holds my gaze. We're one step closer.*"
     },
     "after5_last_chance_yuna_7": {},
     "after5_last_chance_yuna_low_1": {
@@ -620,8 +620,8 @@
         "name": "Haeun",
         "text": "If you choose me, things with that person can’t stay as they were. *Haeun folds the paper in her hands.* Please think once more before you answer.",
         "choices": [
-            "Choose time with Haeun over the previous relationship",
-            "Return to the person you originally cared for"
+            "Spend this time with Haeun",
+            "Go back to the person I already cared about"
         ]
     },
     "day5_haeun_guilt_1": {
@@ -632,10 +632,10 @@
         "name": "Haeun",
         "text": "*Haeun steadies her breathing and looks up.* Being sorry and wanting to be beside you are both real, and that makes it harder. Is it strange that I'm like this?",
         "choices": [
-            "Ask what happened to the cheering she promised",
-            "Say that her guilt is as sincere as her feelings, and she doesn't have to hide either",
-            "Don't rush an answer and give Haeun time to sort out her feelings",
-            "Sigh as if Haeun has put me in a bind"
+            "What happened to all that cheering?",
+            "It's okay to be sorry and to want to stay.",
+            "Don't rush. Take your time.",
+            "*Just sigh.*"
         ]
     },
     "day5_haeun_guilt_up": {

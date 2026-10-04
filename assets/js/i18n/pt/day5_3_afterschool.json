@@ -135,7 +135,7 @@
         "name": "{name}",
         "text": "*Aqui se separam o caminho para o parque e o caminho de volta para terminar o evento. Hoje preciso decidir quem receberá minha resposta.*",
         "choices": [
-            "Ir ao parque e concluir a escolha que eu já havia começado",
+            "Ir ao parque e terminar o que já tínhamos começado",
             "Voltar à professora titular e organizar o manuscrito do clube de literatura",
             "Voltar à enfermeira escolar e organizar os registros de consulta"
         ]
@@ -262,7 +262,7 @@
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
-        "text": "*Yuna não desvia o olhar. A distância entre nós diminuiu um passo.*"
+        "text": "*Yuna segura o meu olhar. Falta um passo entre nós.*"
     },
     "after5_last_chance_yuna_7": {},
     "after5_last_chance_yuna_low_1": {
@@ -620,8 +620,8 @@
         "name": "Haeun",
         "text": "Se você me escolher, as coisas com essa pessoa não vão continuar como antes. *Haeun dobra o papel nas mãos.* Pense mais uma vez antes de responder.",
         "choices": [
-            "Escolher Haeun em vez da relação anterior",
-            "Voltar para a pessoa de quem gostava antes"
+            "Passar esse tempo com a Haeun",
+            "Voltar para quem já me importava"
         ]
     },
     "day5_haeun_guilt_1": {
@@ -632,10 +632,10 @@
         "name": "Haeun",
         "text": "*Haeun recupera o fôlego e levanta a cabeça.* Sentir culpa e querer ficar ao seu lado são coisas igualmente reais, e é por isso que fica mais difícil. É estranho eu ser assim?",
         "choices": [
-            "Perguntar onde foi parar o apoio que ela prometeu",
-            "Dizer que a culpa dela é tão sincera quanto os sentimentos e que ela não precisa esconder nenhum dos dois",
-            "Não apressar uma resposta e dar tempo para Haeun organizar seus sentimentos",
-            "Suspirar como se a Haeun tivesse deixado você em apuros"
+            "E aquele apoio que você prometeu?",
+            "Pode sentir culpa e querer ficar. As duas coisas estão bem.",
+            "Sem pressa. Pode pensar.",
+            "*Só suspirar.*"
         ]
     },
     "day5_haeun_guilt_up": {

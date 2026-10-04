@@ -20,7 +20,7 @@
         "choices": [
             "Contarle lo que pasó anoche",
             "Restarle importancia y decir que no fue nada",
-            "Contarle solo las partes buenas para no hacerle daño.",
+            "Contar solo lo que no duele",
             "Tranquilizarla por ahora y dejar los detalles para más tarde."
         ]
     },
@@ -30,7 +30,7 @@
         "choices": [
             "Contarle lo que pasó anoche",
             "Restarle importancia y decir que no fue nada",
-            "Contarle solo las partes buenas para no hacerle daño.",
+            "Contar solo lo que no duele",
             "Tranquilizarla por ahora y dejar los detalles para más tarde."
         ]
     },
@@ -59,7 +59,7 @@
         "choices": [
             "Contarle lo de anoche",
             "Restarle importancia y disimular",
-            "Contarle solo las partes buenas para no hacerle daño.",
+            "Contar solo lo que no duele",
             "Tranquilizarla por ahora y dejar los detalles para más tarde."
         ]
     },
@@ -69,7 +69,7 @@
         "choices": [
             "Contarle lo de anoche",
             "Restarle importancia y disimular",
-            "Contarle solo las partes buenas para no hacerle daño.",
+            "Contar solo lo que no duele",
             "Tranquilizarla por ahora y dejar los detalles para más tarde."
         ]
     },
@@ -79,7 +79,7 @@
         "choices": [
             "Contarle lo de anoche",
             "Restarle importancia y disimular",
-            "Contarle solo las partes buenas para no hacerle daño.",
+            "Contar solo lo que no duele",
             "Tranquilizarla por ahora y dejar los detalles para más tarde."
         ]
     },
@@ -89,7 +89,7 @@
         "choices": [
             "Contarle lo de anoche",
             "Restarle importancia y disimular",
-            "Contarle solo las partes buenas para no hacerle daño.",
+            "Contar solo lo que no duele",
             "Tranquilizarla por ahora y dejar los detalles para más tarde."
         ]
     },
@@ -99,7 +99,7 @@
         "choices": [
             "Contarle lo de anoche",
             "Restarle importancia y disimular",
-            "Contarle solo las partes buenas para no hacerle daño.",
+            "Contar solo lo que no duele",
             "Tranquilizarla por ahora y dejar los detalles para más tarde."
         ]
     },
@@ -109,7 +109,7 @@
         "choices": [
             "Contarle lo de anoche",
             "Restarle importancia y disimular",
-            "Contarle solo las partes buenas para no hacerle daño.",
+            "Contar solo lo que no duele",
             "Tranquilizarla por ahora y dejar los detalles para más tarde."
         ]
     },
@@ -662,9 +662,9 @@
         "name": "{name}",
         "text": "*Cuando termina la conversación, las dos esperan una respuesta.*",
         "choices": [
-            "Responder con responsabilidad a la persona con quien me comprometí primero",
-            "Decir que elijo a la persona que fui a ver anoche",
-            "No retener a ninguna y cerrar ambas relaciones"
+            "Responder a quien prometí primero",
+            "Elegir a la persona de anoche",
+            "Soltar a las dos"
         ]
     },
     "morning5_counteroffer_choice_lead": {

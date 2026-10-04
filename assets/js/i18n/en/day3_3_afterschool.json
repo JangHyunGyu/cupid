@@ -861,10 +861,10 @@
         "name": "Haeun",
         "text": "*Haeun smiles faintly.* I hope Seoyeon gets more days when she can smile again. It would be even better if you were beside her. Just remember there's at least one person cheering for you both.",
         "choices": [
-            "Promise to look after Seoyeon first and tell Haeun not to worry",
-            "Draw a line: thanks for the support, but this isn't Haeun's concern",
-            "Thank her for the support and say it would mean a lot to Seoyeon too",
-            "Nod without answering and look away"
+            "I'll look after Seoyeon first. Don't worry.",
+            "Thanks, but this isn't your problem.",
+            "Thanks. Seoyeon would want to hear that too.",
+            "Nod, then look away"
         ]
     },
     "haeun_cheer_up": {

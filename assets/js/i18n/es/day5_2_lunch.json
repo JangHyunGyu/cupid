@@ -370,8 +370,8 @@
         "name": "{name}",
         "text": "*Haeun suelta la pulsera y mira hacia atrás. Entre las dos, empiezo a hablar.*",
         "choices": [
-            "Presentar a Haeun y explicar lo que hacíamos",
-            "Pedir que espere y posponer la explicación"
+            "Presentar a Haeun",
+            "Dejar la explicación para después"
         ]
     },
     "day5_haeun_explain_open": {
@@ -394,10 +394,10 @@
         "name": "Haeun",
         "text": "*Haeun abre la mano que tenía cerrada y la vuelve a cerrar.* Estoy bien. No es nada. ...De verdad no es nada, pero ¿tú qué piensas?",
         "choices": [
-            "Decir que alguien más estará esperando y marcharte primero",
-            "Decirle que no hace falta fingir que está bien y que dudar no es raro",
-            "Marcar un límite y decir que no hablen más de eso",
-            "Quedarte en silencio a su lado hasta que se calme"
+            "Alguien está esperando. Me voy.",
+            "No hace falta que finjas que estás bien.",
+            "Dejemos el tema aquí.",
+            "Quedarse a su lado, sin decir nada"
         ]
     },
     "day5_haeun_waver_up": {
@@ -420,8 +420,8 @@
         "name": "Haeun",
         "text": "Solo falta revisar los números de los puestos y las vías de emergencia. Si quieres ayudar, ven conmigo, por favor.",
         "choices": [
-            "Disculparme por mi actitud anterior y terminar la revisión",
-            "Empezar a ayudar con la revisión",
+            "Disculparme por lo de antes y ayudar con la revisión",
+            "Hacer la revisión juntos",
             "Dejarle la tarea a Haeun e irme"
         ]
     },
@@ -564,8 +564,8 @@
         "name": "{name}",
         "text": "*Haeun se vuelve hacia mí. La persona que la escuchaba no se aparta.*",
         "choices": [
-            "Preguntar qué escuchó y explicarlo con Haeun presente",
-            "Decir que no quiero hablar de eso ahora"
+            "Preguntar qué oyeron",
+            "Ahora no"
         ]
     },
     "day5_haeun_concern_open": {

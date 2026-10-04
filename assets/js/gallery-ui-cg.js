@@ -78,7 +78,7 @@ class CGRenderer {
         // CG가 없는 경우 빈 상태 표시
         if (cgList.length === 0) {
             const emptyMsg = {
-                ko: { title: '아직 이벤트 CG가 없습니다', desc: '게임을 진행하며 특별한 순간을 수집하세요!' },
+                ko: { title: '아직 이벤트 CG가 없어요', desc: '플레이하면서 특별한 장면을 모으세요.' },
                 en: { title: 'No event CGs yet', desc: 'Collect special moments as you play!' },
                 es: { title: 'Aún no hay CG de eventos', desc: '¡Colecciona momentos especiales mientras juegas!' },
                 ja: { title: '登録されているCGはまだありません', desc: 'ゲームを進めて、特別なシーンを集めましょう！' },
@@ -147,7 +147,7 @@ class CGRenderer {
         const cgList = GalleryData.getCGList(this.ui.lang);
         const cgData = cgList.find(c => c.id === cgId);
         const hint = cgData?.unlockHint ?? L(
-            '게임에서 해당 이벤트를 경험하세요!',
+            '게임에서 그 장면을 보면 열려요.',
             'Experience this event in the game!',
             '¡Experimenta este evento en el juego!',
             'ゲーム本編でこのイベントを迎えると解放されます。',
@@ -160,7 +160,7 @@ class CGRenderer {
         this.ui.showUnlockPopup({
             title: L('CG 미해금', 'CG Locked', 'CG bloqueado', '未解放のCG', 'CG verrouillé', 'CG gesperrt', 'CG bloqueado', 'CG未解锁'),
             message: L(
-                `이 이벤트 CG는 아직 해금되지 않았습니다.<br><br><span class="condition-line">💕 해금 조건: ${hint}</span>`,
+                `이 이벤트 CG는 아직 안 열렸어요.<br><br><span class="condition-line">💕 해금 조건: ${hint}</span>`,
                 `This event CG is not yet unlocked.<br><br><span class="condition-line">💕 Condition: ${hint}</span>`,
                 `Este CG de evento aún no está desbloqueado.<br><br><span class="condition-line">💕 Condición: ${hint}</span>`,
                 `このイベントCGはまだ解放されていません。<br><br><span class="condition-line">💕 解放条件：${hint}</span>`,

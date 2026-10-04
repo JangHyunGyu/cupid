@@ -20,7 +20,7 @@
         "choices": [
             "Ihr offen erzählen, was gestern Nacht passiert ist",
             "Es als unwichtig abtun",
-            "Ihr nur die guten Teile erzählen, damit sie nicht verletzt wird.",
+            "Nur das Harmlose erzählen",
             "Sie erst einmal beruhigen und die Einzelheiten auf später verschieben."
         ]
     },
@@ -30,7 +30,7 @@
         "choices": [
             "Ihr offen erzählen, was gestern Nacht passiert ist",
             "Es als unwichtig abtun",
-            "Ihr nur die guten Teile erzählen, damit sie nicht verletzt wird.",
+            "Nur das Harmlose erzählen",
             "Sie erst einmal beruhigen und die Einzelheiten auf später verschieben."
         ]
     },
@@ -59,7 +59,7 @@
         "choices": [
             "Ihr ohne Ausflüchte von letzter Nacht erzählen",
             "So tun, als wäre es nichts Wichtiges gewesen",
-            "Ihr nur die guten Teile erzählen, damit sie nicht verletzt wird.",
+            "Nur das Harmlose erzählen",
             "Sie erst einmal beruhigen und die Einzelheiten auf später verschieben."
         ]
     },
@@ -69,7 +69,7 @@
         "choices": [
             "Ihr ohne Ausflüchte von letzter Nacht erzählen",
             "So tun, als wäre es nichts Wichtiges gewesen",
-            "Ihr nur die guten Teile erzählen, damit sie nicht verletzt wird.",
+            "Nur das Harmlose erzählen",
             "Sie erst einmal beruhigen und die Einzelheiten auf später verschieben."
         ]
     },
@@ -79,7 +79,7 @@
         "choices": [
             "Ihr ohne Ausflüchte von letzter Nacht erzählen",
             "So tun, als wäre es nichts Wichtiges gewesen",
-            "Ihr nur die guten Teile erzählen, damit sie nicht verletzt wird.",
+            "Nur das Harmlose erzählen",
             "Sie erst einmal beruhigen und die Einzelheiten auf später verschieben."
         ]
     },
@@ -89,7 +89,7 @@
         "choices": [
             "Ihr ohne Ausflüchte von letzter Nacht erzählen",
             "So tun, als wäre es nichts Wichtiges gewesen",
-            "Ihr nur die guten Teile erzählen, damit sie nicht verletzt wird.",
+            "Nur das Harmlose erzählen",
             "Sie erst einmal beruhigen und die Einzelheiten auf später verschieben."
         ]
     },
@@ -99,7 +99,7 @@
         "choices": [
             "Ihr ohne Ausflüchte von letzter Nacht erzählen",
             "So tun, als wäre es nichts Wichtiges gewesen",
-            "Ihr nur die guten Teile erzählen, damit sie nicht verletzt wird.",
+            "Nur das Harmlose erzählen",
             "Sie erst einmal beruhigen und die Einzelheiten auf später verschieben."
         ]
     },
@@ -109,7 +109,7 @@
         "choices": [
             "Ihr ohne Ausflüchte von letzter Nacht erzählen",
             "So tun, als wäre es nichts Wichtiges gewesen",
-            "Ihr nur die guten Teile erzählen, damit sie nicht verletzt wird.",
+            "Nur das Harmlose erzählen",
             "Sie erst einmal beruhigen und die Einzelheiten auf später verschieben."
         ]
     },
@@ -662,9 +662,9 @@
         "name": "{name}",
         "text": "*Als das Gespräch endet, warten beide auf eine Antwort.*",
         "choices": [
-            "Der Person, der ich zuerst etwas versprochen habe, verantwortlich antworten",
-            "Sagen, dass ich die Person wähle, zu der ich gestern Nacht gegangen bin",
-            "Keine von beiden festhalten und beide Beziehungen beenden"
+            "Der Person antworten, der ich zuerst etwas versprochen habe",
+            "Die Person von gestern Nacht wählen",
+            "Beide gehen lassen"
         ]
     },
     "morning5_counteroffer_choice_lead": {

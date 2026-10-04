@@ -370,8 +370,8 @@
         "name": "{name}",
         "text": "*Haeun lässt das Armband los und blickt zurück. Zwischen den beiden beginne ich zu sprechen.*",
         "choices": [
-            "Haeun vorstellen und unsere Arbeit erklären",
-            "Um Geduld bitten und die Erklärung aufschieben"
+            "Haeun vorstellen",
+            "Die Erklärung aufschieben"
         ]
     },
     "day5_haeun_explain_open": {
@@ -394,10 +394,10 @@
         "name": "Haeun",
         "text": "*Haeun öffnet die geballte Hand und schließt sie wieder.* Schon gut. Es ist nichts. …Wirklich nichts, aber was denkst du?",
         "choices": [
-            "Sagen, dass jemand anderes wartet, und zuerst gehen",
-            "Ihr sagen, dass sie nicht so tun muss, als sei alles gut, und dass Schwanken nicht seltsam ist",
-            "Eine Grenze ziehen und sagen, dass sie darüber nicht mehr sprechen",
-            "Schweigend neben ihr stehen, bis sie sich beruhigt"
+            "Jemand wartet. Ich gehe.",
+            "Du musst nicht so tun, als wäre alles gut.",
+            "Lassen wir es dabei.",
+            "Wortlos neben ihr bleiben"
         ]
     },
     "day5_haeun_waver_up": {
@@ -420,8 +420,8 @@
         "name": "Haeun",
         "text": "Wir müssen nur die Standnummern und die Fluchtwege noch einmal prüfen. Wenn du helfen möchtest, komm bitte mit.",
         "choices": [
-            "Mich entschuldigen und bis zum Ende helfen",
-            "Bei der Kontrolle mithelfen",
+            "Mich für neulich entschuldigen und bei der Kontrolle helfen",
+            "Die Kontrolle zusammen machen",
             "Die Aufgabe Haeun überlassen und gehen"
         ]
     },
@@ -564,8 +564,8 @@
         "name": "{name}",
         "text": "*Haeun wendet sich mir zu. Die Zuhörerin bleibt stehen.*",
         "choices": [
-            "Fragen, was erzählt wurde, und es vor Haeun erklären",
-            "Sagen, dass ich jetzt nicht darüber reden möchte"
+            "Fragen, was sie gehört haben",
+            "Jetzt nicht"
         ]
     },
     "day5_haeun_concern_open": {

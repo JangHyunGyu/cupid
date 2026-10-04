@@ -1983,7 +1983,7 @@ class FreeTalkSystem {
 
             this._clearThinkingMessage();
             const requestErrorMessage = {
-                ko: '연결이 잠시 원활하지 않습니다. 방금 입력은 대화 기록에 저장되지 않았습니다. 다시 시도해 주세요.',
+                ko: '연결이 잠깐 끊겼어요. 방금 입력은 대화에 남지 않았어요. 다시 보내 주세요.',
                 en: 'The connection was interrupted. Your last input was not saved to the conversation. Please try again.',
                 es: 'La conexión se interrumpió. Tu último mensaje no se guardó en la conversación. Inténtalo de nuevo.',
                 ja: '接続が一時的に中断されました。直前の入力は会話履歴に保存されていません。もう一度お試しください。',
@@ -2607,7 +2607,7 @@ class FreeTalkSystem {
                 });
             }
             const message = {
-                ko: '연결이 잠시 원활하지 않습니다. 방금 입력은 대화 기록에 저장되지 않았습니다. 다시 시도해 주세요.',
+                ko: '연결이 잠깐 끊겼어요. 방금 입력은 대화에 남지 않았어요. 다시 보내 주세요.',
                 en: 'The connection was interrupted. Your last input was not saved. Please try again.',
                 es: 'La conexión se interrumpió. Tu último mensaje no se guardó. Inténtalo de nuevo.',
                 ja: '接続が一時的に中断されました。直前の入力は保存されていません。もう一度お試しください。',

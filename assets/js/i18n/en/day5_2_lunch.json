@@ -370,8 +370,8 @@
         "name": "{name}",
         "text": "*Haeun lets go of the bracelet and looks back. Standing between them, I begin to speak.*",
         "choices": [
-            "Introduce Haeun and explain what we were doing",
-            "Ask them to wait and put off explaining"
+            "Introduce Haeun",
+            "Put off the explanation"
         ]
     },
     "day5_haeun_explain_open": {
@@ -394,10 +394,10 @@
         "name": "Haeun",
         "text": "*Haeun opens her clenched hand and closes it again.* I'm fine. It's nothing. …It really is nothing, but what do you think?",
         "choices": [
-            "Say someone else must be waiting and head off first",
-            "Tell her she doesn't have to pretend she's fine and that wavering isn't strange",
-            "Draw a line and say let's not talk about it anymore",
-            "Stand quietly beside her until she settles"
+            "Someone's waiting. I'll go.",
+            "You don't have to pretend you're fine.",
+            "Let's leave it there.",
+            "Stay beside her without a word"
         ]
     },
     "day5_haeun_waver_up": {
@@ -420,8 +420,8 @@
         "name": "Haeun",
         "text": "We just need to check the booth numbers and emergency access routes again. If you want to help, please come with me.",
         "choices": [
-            "Apologize for my earlier attitude and finish the inspection",
-            "Start helping with the inspection",
+            "Apologize for earlier and help with the inspection",
+            "Do the inspection together",
             "Leave the task to Haeun and go"
         ]
     },
@@ -564,8 +564,8 @@
         "name": "{name}",
         "text": "*Haeun turns toward me. The person listening to her stays where they are.*",
         "choices": [
-            "Ask what they heard and explain with Haeun present",
-            "Say I do not want to discuss it now"
+            "Ask what they heard",
+            "Not now"
         ]
     },
     "day5_haeun_concern_open": {

@@ -614,8 +614,8 @@
         "name": "{name}",
         "text": "*Haeun wendet sich mir zu. Die Zuhörerin bleibt stehen.*",
         "choices": [
-            "Fragen, was erzählt wurde, und es vor Haeun erklären",
-            "Sagen, dass ich jetzt nicht darüber reden möchte"
+            "Fragen, was sie gehört haben",
+            "Jetzt nicht"
         ]
     },
     "day4_haeun_concern_open": {
@@ -781,10 +781,10 @@
         "name": "Haeun",
         "text": "*Haeuns Blick bleibt kurz an dir hängen und sinkt dann zu Boden.* Hat mein Gesicht gerade komisch ausgesehen?",
         "choices": [
-            "So tun, als hätte man ihren Ausdruck nicht gesehen, und auf die Uhr schauen",
-            "Haeuns veränderten Gesichtsausdruck bemerken und leise fragen, woran sie denkt",
-            "Absichtlich das Thema wieder auf Seoyeon lenken",
-            "Haeun ausreden lassen und sich bei ihr bedanken"
+            "So tun, als hätte man nichts gesehen, und auf die Uhr schauen",
+            "Fragen, warum sich ihr Gesicht verändert hat",
+            "Das Thema auf Seoyeon lenken",
+            "Sie ausreden lassen und sich bedanken"
         ]
     },
     "day4_haeun_notice_up": {

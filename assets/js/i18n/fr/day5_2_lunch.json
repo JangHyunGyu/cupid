@@ -370,8 +370,8 @@
         "name": "{name}",
         "text": "*Haeun lâche son bracelet et se retourne. Entre elles deux, je prends la parole.*",
         "choices": [
-            "Présenter Haeun et expliquer notre tâche",
-            "Demander de patienter et remettre l’explication à plus tard"
+            "Présenter Haeun",
+            "Remettre l'explication à plus tard"
         ]
     },
     "day5_haeun_explain_open": {
@@ -394,10 +394,10 @@
         "name": "Haeun",
         "text": "*Haeun ouvre la main qu’elle serrait, puis la referme.* Ça va. Ce n’est rien. …Vraiment rien, mais toi, qu’en penses-tu ?",
         "choices": [
-            "Dire que quelqu’un d’autre doit attendre et partir en premier",
-            "Lui dire qu’elle n’a pas à faire semblant d’aller bien et que vaciller n’a rien d’étrange",
-            "Poser une limite et dire qu’on n’en parle plus",
-            "Rester en silence à côté d’elle jusqu’à ce qu’elle se calme"
+            "Quelqu'un t'attend. J'y vais.",
+            "Tu n'as pas à faire semblant d'aller bien.",
+            "On en reste là.",
+            "Rester à côté d'elle, sans un mot"
         ]
     },
     "day5_haeun_waver_up": {
@@ -420,8 +420,8 @@
         "name": "Haeun",
         "text": "Il reste à vérifier les numéros des stands et les passages de secours. Si tu veux aider, viens avec moi, s’il te plaît.",
         "choices": [
-            "M’excuser pour mon attitude et aider jusqu’au bout",
-            "Commencer par aider au contrôle",
+            "M'excuser pour l'autre fois et aider au contrôle",
+            "Faire le contrôle ensemble",
             "Laisser Haeun s’en charger et partir"
         ]
     },
@@ -564,8 +564,8 @@
         "name": "{name}",
         "text": "*Haeun se tourne vers moi. La personne qui l’écoutait reste sur place.*",
         "choices": [
-            "Demander ce qui a été rapporté et expliquer devant Haeun",
-            "Dire que je ne veux pas en parler maintenant"
+            "Demander ce qu'ils ont entendu",
+            "Pas maintenant"
         ]
     },
     "day5_haeun_concern_open": {

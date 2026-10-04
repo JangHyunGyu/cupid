@@ -1957,17 +1957,17 @@ class GalleryData {
             discovered: '발견한 엔딩', complete: '발견 완료', locked: '미발견', hintLabel: '힌트',
             labels: { perfect: 'PERFECT', true: 'TRUE LOVE', good: 'GOOD', counteroffer: '흔들린 선택', bittersweet: 'BITTERSWEET', lateGood: '늦은 고백', confessFail: '고백 실패', friend: '친구', mayhem: '파국', unresolved: '엇갈린 대답', alone: '혼자' },
             hints: {
-                perfect: '{character} 루트에서 호감도 100으로 마지막 날을 맞이하세요.',
-                true: '{character} 루트에서 호감도 60 이상으로 마지막 날을 맞이하세요.',
+                perfect: '{character} 루트에서 호감도 100으로 마지막 날까지 가세요.',
+                true: '{character} 루트에서 호감도 60 이상으로 마지막 날까지 가세요.',
                 good: '고백을 받아들인 {character} 루트에서 호감도 40 이상을 유지하세요.',
                 counteroffer: '{character}와의 약속 뒤 다른 사람의 제안을 받아들이고 그 결과를 확인하세요.',
-                bittersweet: '{character} 루트에서 호감도 40 미만으로 마지막 날을 맞이하세요.',
+                bittersweet: '{character} 루트에서 호감도 40 미만으로 마지막 날까지 가세요.',
                 lateGood: '{character}의 고백을 미룬 뒤 마지막 기회에 마음을 전하세요.',
                 confessFail: '{character}의 고백을 미루고 관계가 깊어지기 전에 마지막 고백을 선택하세요.',
                 friend: '마지막 고백 대신 친구로 남는 답을 선택하세요.',
-                mayhem: '여러 약속을 잡고 그 사실이 드러난 채 마지막 날을 맞이하세요.',
-                unresolved: '여러 관계에 하나의 답을 정하지 않은 채 마지막 날을 맞이하세요.',
-                alone: '누구의 루트도 선택하지 않은 채 마지막 날을 맞이하세요.'
+                mayhem: '여러 약속을 잡고 그 사실이 드러난 채 마지막 날까지 가세요.',
+                unresolved: '여러 관계에 하나의 답을 정하지 않은 채 마지막 날까지 가세요.',
+                alone: '누구의 루트도 선택하지 않은 채 마지막 날까지 가세요.'
             }
         },
         en: {

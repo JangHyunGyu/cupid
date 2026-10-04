@@ -861,10 +861,10 @@
         "name": "Haeun",
         "text": "*Haeun sorri de leve.* Espero que Seoyeon volte a sorrir em mais dias. E seria ainda melhor se você estivesse ao lado dela. Só lembre que existe pelo menos uma pessoa torcendo por vocês.",
         "choices": [
-            "Prometer cuidar primeiro da Seoyeon e dizer à Haeun que não se preocupe",
-            "Impor um limite: agradece o apoio, mas isso não é da conta da Haeun",
-            "Agradecer pelo apoio e dizer que isso também daria força à Seoyeon",
-            "Assentir sem responder e desviar o olhar"
+            "Eu cuido da Seoyeon primeiro. Fica tranquila.",
+            "Obrigado, mas isso não é com você.",
+            "Obrigado. A Seoyeon também ia gostar de ouvir.",
+            "Assentir e desviar o olhar"
         ]
     },
     "haeun_cheer_up": {

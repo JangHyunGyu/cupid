@@ -14988,10 +14988,10 @@
 ### `haeun_cheer_choice`
 - 배경: `school_hallway.png`
 - 선택지:
-  1. "서연부터 챙기겠다고 하고 하은도 걱정하지 말라고 말한다" → `haeun_cheer_up` | Haeun +1
-  2. "응원은 고맙지만 하은이 신경 쓸 일은 아니라고 선을 긋는다" → `haeun_cheer_down` | Haeun -1
-  3. "응원해 줘서 고맙고 서연도 알면 힘이 될 거라고 답한다" → `haeun_cheer_up` | Haeun +1
-  4. "대꾸 없이 고개만 끄덕이고 시선을 돌린다" → `haeun_cheer_down` | Haeun -1
+  1. "서연부터 챙길게. 너도 걱정 마." → `haeun_cheer_up` | Haeun +1
+  2. "응원은 고마운데 네가 신경 쓸 일은 아니야." → `haeun_cheer_down` | Haeun -1
+  3. "응원해 줘서 고마워. 서연도 들으면 힘이 될 거야." → `haeun_cheer_up` | Haeun +1
+  4. "고개만 끄덕이고 시선을 돌린다" → `haeun_cheer_down` | Haeun -1
 
 - 캐릭터: `haeun_normal.png`
 **하은**: *하은이 작게 웃는다.* 서연 선배가 다시 웃는 날이 늘었으면 좋겠어요. 그 곁에 선배가 있으면 더 좋고요. 응원하는 사람이 한 명은 있다는 것만 기억해 줘요.
@@ -17421,8 +17421,8 @@
 ### `day4_haeun_concern_choice`
 - 배경: `school.png`
 - 선택지:
-  1. "어떤 이야기를 들었는지 묻고 함께 설명한다" → `day4_haeun_concern_open`
-  2. "지금은 이야기하고 싶지 않다고 미룬다" → `day4_haeun_concern_delay` | 플래그: `day4_haeun_delayed_explanation`
+  1. "무슨 얘길 들었는지 묻는다" → `day4_haeun_concern_open`
+  2. "지금은 말하기 싫다" → `day4_haeun_concern_delay` | 플래그: `day4_haeun_delayed_explanation`
 
 - 캐릭터: `haeun_worried.png`
 **{name}**: *하은이 내 쪽으로 돌아선다. 이야기를 듣던 상대도 자리를 비키지 않는다.*
@@ -17708,10 +17708,10 @@
 ### `day4_haeun_notice_choice`
 - 배경: `school.png`
 - 선택지:
-  1. "표정은 못 본 척하고 시계를 확인한다" → `day4_haeun_notice_down` | Haeun -1
-  2. "하은의 표정이 달라진 걸 알아채고 무슨 생각을 하는지 조용히 묻는다" → `day4_haeun_notice_up` | Haeun +1
-  3. "일부러 서연 얘기로 화제를 돌린다" → `day4_haeun_notice_down` | Haeun -1
-  4. "하은이 하려던 말을 끝까지 들어 주고 고맙다고 한다" → `day4_haeun_notice_up` | Haeun +1
+  1. "못 본 척하고 시계를 본다" → `day4_haeun_notice_down` | Haeun -1
+  2. "표정이 왜 달라졌는지 묻는다" → `day4_haeun_notice_up` | Haeun +1
+  3. "서연 얘기로 넘긴다" → `day4_haeun_notice_down` | Haeun -1
+  4. "끝까지 듣고 고맙다고 한다" → `day4_haeun_notice_up` | Haeun +1
 
 - 캐릭터: `haeun_worried.png`
 **하은**: *하은의 시선이 잠깐 내 쪽에 머물렀다가 바닥으로 내려간다.* 방금 제 표정, 이상했어요?
@@ -22930,7 +22930,7 @@
 - 선택지:
   1. "어젯밤 일을 그대로 말한다" → `morning5_caught_teacher_honest` | Teacher -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_teacher`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_teacher_lie` | Teacher -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_teacher`
-  3. "상처받지 않게 좋은 부분만 골라서 말한다" → `morning5_caught_teacher_lie` | Teacher -45
+  3. "좋은 말만 골라 전한다" → `morning5_caught_teacher_lie` | Teacher -45
   4. "일단 안심시키고 자세한 얘기는 나중으로 미룬다" → `morning5_caught_teacher_lie` | Teacher -55
 
 - 캐릭터: `teacher_sad.png`
@@ -22965,7 +22965,7 @@
 - 선택지:
   1. "어젯밤 일을 그대로 말한다" → `morning5_caught_nurse_honest` | Nurse -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_nurse`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_nurse_lie` | Nurse -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_nurse`
-  3. "상처받지 않게 좋은 부분만 골라서 말한다" → `morning5_caught_nurse_lie` | Nurse -45
+  3. "좋은 말만 골라 전한다" → `morning5_caught_nurse_lie` | Nurse -45
   4. "일단 안심시키고 자세한 얘기는 나중으로 미룬다" → `morning5_caught_nurse_lie` | Nurse -55
 
 - 캐릭터: `nurse_worried.png`
@@ -23011,7 +23011,7 @@
 - 선택지:
   1. "어젯밤 일을 그대로 말한다" → `morning5_caught_dain_honest` | Dain -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_dain`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_dain_lie` | Dain -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_dain`
-  3. "상처받지 않게 좋은 부분만 골라서 말한다" → `morning5_caught_dain_lie` | Dain -45
+  3. "좋은 말만 골라 전한다" → `morning5_caught_dain_lie` | Dain -45
   4. "일단 안심시키고 자세한 얘기는 나중으로 미룬다" → `morning5_caught_dain_lie` | Dain -55
 
 - 캐릭터: `dain_sad.png`
@@ -23025,7 +23025,7 @@
 - 선택지:
   1. "어젯밤 일을 그대로 말한다" → `morning5_caught_yuna_honest` | Yuna -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_yuna`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_yuna_lie` | Yuna -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_yuna`
-  3. "상처받지 않게 좋은 부분만 골라서 말한다" → `morning5_caught_yuna_lie` | Yuna -45
+  3. "좋은 말만 골라 전한다" → `morning5_caught_yuna_lie` | Yuna -45
   4. "일단 안심시키고 자세한 얘기는 나중으로 미룬다" → `morning5_caught_yuna_lie` | Yuna -55
 
 - 캐릭터: `yuna_sad.png`
@@ -23051,7 +23051,7 @@
 - 선택지:
   1. "어젯밤 일을 그대로 말한다" → `morning5_caught_seoyeon_honest` | Seoyeon -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_seoyeon`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_seoyeon_lie` | Seoyeon -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_seoyeon`
-  3. "상처받지 않게 좋은 부분만 골라서 말한다" → `morning5_caught_seoyeon_lie` | Seoyeon -45
+  3. "좋은 말만 골라 전한다" → `morning5_caught_seoyeon_lie` | Seoyeon -45
   4. "일단 안심시키고 자세한 얘기는 나중으로 미룬다" → `morning5_caught_seoyeon_lie` | Seoyeon -55
 
 - 캐릭터: `seyoun_sad.png`
@@ -23064,7 +23064,7 @@
 - 선택지:
   1. "어젯밤 일을 그대로 말한다" → `morning5_caught_dain_honest` | Dain -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_dain`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_dain_lie` | Dain -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_dain`
-  3. "상처받지 않게 좋은 부분만 골라서 말한다" → `morning5_caught_dain_lie` | Dain -45
+  3. "좋은 말만 골라 전한다" → `morning5_caught_dain_lie` | Dain -45
   4. "일단 안심시키고 자세한 얘기는 나중으로 미룬다" → `morning5_caught_dain_lie` | Dain -55
 
 - 캐릭터: `dain_sad.png`
@@ -23110,7 +23110,7 @@
 - 선택지:
   1. "어젯밤 일을 그대로 말한다" → `morning5_caught_seoyeon_honest` | Seoyeon -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_seoyeon`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_seoyeon_lie` | Seoyeon -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_seoyeon`
-  3. "상처받지 않게 좋은 부분만 골라서 말한다" → `morning5_caught_seoyeon_lie` | Seoyeon -45
+  3. "좋은 말만 골라 전한다" → `morning5_caught_seoyeon_lie` | Seoyeon -45
   4. "일단 안심시키고 자세한 얘기는 나중으로 미룬다" → `morning5_caught_seoyeon_lie` | Seoyeon -55
 
 - 캐릭터: `seyoun_sad.png`
@@ -23144,7 +23144,7 @@
 - 선택지:
   1. "어젯밤 일을 그대로 말한다" → `morning5_caught_yuna_honest` | Yuna -40 | 플래그: `day5_confessed_counteroffer`, `day5_abandoned_yuna`
   2. "별일 아니었다고 둘러댄다" → `morning5_caught_yuna_lie` | Yuna -50 | 플래그: `day5_lied_about_counteroffer`, `day5_abandoned_yuna`
-  3. "상처받지 않게 좋은 부분만 골라서 말한다" → `morning5_caught_yuna_lie` | Yuna -45
+  3. "좋은 말만 골라 전한다" → `morning5_caught_yuna_lie` | Yuna -45
   4. "일단 안심시키고 자세한 얘기는 나중으로 미룬다" → `morning5_caught_yuna_lie` | Yuna -55
 
 - 캐릭터: `yuna_sad.png`
@@ -23196,9 +23196,9 @@
 ### `morning5_counteroffer_choice`
 - 배경: `room_school.png`
 - 선택지:
-  1. "먼저 약속했던 사람에게 책임지고 답한다" → `morning5_counteroffer_choice_lead` | 플래그: `day5_counteroffer_choice_lead`
-  2. "어젯밤 찾아간 사람을 선택한다고 말한다" → `morning5_counteroffer_choice_tempter` | 플래그: `day5_counteroffer_choice_tempter`
-  3. "둘 다 붙잡지 않고 관계를 정리한다" → `morning5_counteroffer_choice_neither` | 플래그: `day5_counteroffer_choice_neither`
+  1. "먼저 약속한 사람에게 답한다" → `morning5_counteroffer_choice_lead` | 플래그: `day5_counteroffer_choice_lead`
+  2. "어젯밤 사람을 고른다" → `morning5_counteroffer_choice_tempter` | 플래그: `day5_counteroffer_choice_tempter`
+  3. "둘 다 놓는다" → `morning5_counteroffer_choice_neither` | 플래그: `day5_counteroffer_choice_neither`
 
 - 캐릭터: `없음`
 **{name}**: *대화가 끝나자 두 사람 모두 답을 기다린다.*
@@ -24737,8 +24737,8 @@
 ### `day5_haeun_explain_choice`
 - 배경: `school_hallway.png`
 - 선택지:
-  1. "하은을 소개하고 함께 하던 일을 설명한다" → `day5_haeun_explain_open`
-  2. "잠깐 기다려 달라고 하고 설명을 미룬다" → `day5_haeun_explain_delay` | 플래그: `day5_haeun_delayed_explanation`
+  1. "하은을 소개한다" → `day5_haeun_explain_open`
+  2. "설명을 미룬다" → `day5_haeun_explain_delay` | 플래그: `day5_haeun_delayed_explanation`
 
 - 캐릭터: `haeun_worried.png`
 **{name}**: *하은이 팔찌에서 손을 떼고 뒤를 돌아본다. 나는 둘 사이에서 입을 연다.*
@@ -25015,10 +25015,10 @@
 ### `day5_haeun_waver_choice`
 - 배경: `school_hallway.png`
 - 선택지:
-  1. "다른 사람이 기다릴 거라며 먼저 가 보겠다고 한다" → `day5_haeun_waver_down` | Haeun -1
-  2. "괜찮은 척하지 않아도 되고 흔들리는 것도 이상하지 않다고 말해 준다" → `day5_haeun_waver_up` | Haeun +1
-  3. "그 얘기는 더 하지 말자고 선을 긋는다" → `day5_haeun_waver_down` | Haeun -1
-  4. "말없이 하은 곁에 서서 마음이 가라앉기를 기다린다" → `day5_haeun_waver_up` | Haeun +1
+  1. "다른 사람이 기다려. 먼저 갈게." → `day5_haeun_waver_down` | Haeun -1
+  2. "괜찮은 척 안 해도 돼." → `day5_haeun_waver_up` | Haeun +1
+  3. "그 얘기는 여기까지 하자." → `day5_haeun_waver_down` | Haeun -1
+  4. "말없이 옆에 있는다" → `day5_haeun_waver_up` | Haeun +1
 
 - 캐릭터: `haeun_worried.png`
 **하은**: *하은이 쥐었던 손을 폈다가 다시 쥔다.* 괜찮아요. 아무것도 아니에요. …정말 아무것도 아닌 건데, 선배는 어떻게 생각해요?
@@ -25158,8 +25158,8 @@
 ### `day5_haeun_concern_choice`
 - 배경: `school_hallway.png`
 - 선택지:
-  1. "어떤 이야기를 들었는지 묻고 함께 설명한다" → `day5_haeun_concern_open`
-  2. "지금은 이야기하고 싶지 않다고 미룬다" → `day5_haeun_concern_delay` | 플래그: `day5_haeun_delayed_explanation`
+  1. "무슨 얘길 들었는지 묻는다" → `day5_haeun_concern_open`
+  2. "지금은 말하기 싫다" → `day5_haeun_concern_delay` | 플래그: `day5_haeun_delayed_explanation`
 
 - 캐릭터: `haeun_worried.png`
 **{name}**: *하은이 내 쪽으로 돌아선다. 이야기를 듣던 상대도 자리를 비키지 않는다.*
@@ -25410,8 +25410,8 @@
 ### `day5_haeun_low_choice`
 - 배경: `school_hallway.png`
 - 선택지:
-  1. "지난번 태도를 사과하고 점검을 끝까지 돕는다" → `day5_haeun_low_apology` | 플래그: `day5_haeun_apologized`
-  2. "점검 업무부터 함께 한다" → `day5_haeun_low_work`
+  1. "지난번 태도를 사과하고 점검을 돕는다" → `day5_haeun_low_apology` | 플래그: `day5_haeun_apologized`
+  2. "점검부터 같이 한다" → `day5_haeun_low_work`
   3. "하은에게 맡기고 자리를 뜬다" → `day5_haeun_low_leave`
 
 - 캐릭터: `haeun_worried.png`
@@ -26438,10 +26438,10 @@
 ### `day5_haeun_guilt_choice`
 - 배경: `school_hallway.png`
 - 선택지:
-  1. "응원한다던 말은 어디 갔느냐고 되묻는다" → `day5_haeun_guilt_down` | Haeun -1
-  2. "미안해하는 마음도 하은의 진심이니 둘 다 숨기지 않아도 된다고 말한다" → `day5_haeun_guilt_up` | Haeun +1
-  3. "대답을 재촉하지 않고 하은이 마음을 정리할 시간을 준다" → `day5_haeun_guilt_up` | Haeun +1
-  4. "하은 때문에 곤란해졌다는 듯 한숨을 쉰다" → `day5_haeun_guilt_down` | Haeun -1
+  1. "응원한다던 말은 어디 갔냐고 묻는다" → `day5_haeun_guilt_down` | Haeun -1
+  2. "미안한 마음도, 여기 있고 싶은 마음도 둘 다 괜찮아." → `day5_haeun_guilt_up` | Haeun +1
+  3. "서두르지 마. 생각할 시간 줄게." → `day5_haeun_guilt_up` | Haeun +1
+  4. "*한숨만 쉰다.*" → `day5_haeun_guilt_down` | Haeun -1
 
 - 캐릭터: `haeun_worried.png`
 **하은**: *하은이 숨을 고르고 고개를 든다.* 미안한 마음도, 선배 옆에 있고 싶은 마음도 둘 다 진짜라서 더 곤란해요. 이런 제가 이상하죠?
@@ -26542,8 +26542,8 @@
 - 배경: `school_hallway.png`
 - 플래그: `day5_haeun_route_offered`
 - 선택지:
-  1. "기존 관계 대신 하은과 시간을 보낸다" → `day5_haeun_choose_rival` | 플래그: `haeun_route_selected`
-  2. "원래 마음을 두었던 사람에게 돌아간다" → `after5_original_start`
+  1. "하은과 시간을 보낸다" → `day5_haeun_choose_rival` | 플래그: `haeun_route_selected`
+  2. "원래 마음 둔 사람에게 돌아간다" → `after5_original_start`
 
 - 캐릭터: `haeun_worried.png`
 **하은**: 저한테 오면, 그분하고는 전처럼 지내기 어렵잖아요. *하은이 들고 있던 종이를 접는다.* 지금 대답하기 전에 한 번만 더 생각해 주세요.
@@ -27612,7 +27612,7 @@
 ### `after5_hidden_route_choice`
 - 배경: `park.png`
 - 선택지:
-  1. "공원으로 가서 원래 하던 선택을 마무리한다" → `after5_last_chance_1`
+  1. "공원으로 가 하던 일을 끝낸다" → `after5_last_chance_1`
   2. "담임선생님에게 돌아가 문예부 원고를 함께 정리한다" → `after5_hidden_teacher_affinity_check` | 플래그: `hidden_route_chosen_teacher`
   3. "보건선생님에게 돌아가 상담 기록을 함께 정리한다" → `after5_hidden_nurse_affinity_check` | 플래그: `hidden_route_chosen_nurse`
 
@@ -28205,7 +28205,7 @@
 - 다음: `after5_last_chance_yuna_7`
 
 - 캐릭터: `yuna_shy.png`
-**{name}**: *유나는 시선을 피하지 않는다. 둘 사이 거리가 한 걸음만큼 줄어 있다.*
+**{name}**: *유나는 눈을 맞춘다. 둘 사이가 한 걸음 줄어 있다.*
 
 ---
 

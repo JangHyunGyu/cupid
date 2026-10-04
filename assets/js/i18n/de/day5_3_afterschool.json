@@ -135,7 +135,7 @@
         "name": "{name}",
         "text": "*Hier trennen sich der Weg zum Park und der Rückweg zu den letzten Aufräumarbeiten. Heute muss ich entscheiden, wem ich antworte.*",
         "choices": [
-            "Zum Park gehen und die bereits begonnene Entscheidung zu Ende bringen",
+            "Zum Park gehen und zu Ende bringen, was schon angefangen war",
             "Zur Klassenlehrerin zurückkehren und das Manuskript des Literaturklubs ordnen",
             "Zur Schulkrankenschwester zurückkehren und die Beratungsunterlagen ordnen"
         ]
@@ -262,7 +262,7 @@
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
-        "text": "*Yuna sieht nicht weg. Der Abstand zwischen uns ist um einen Schritt geschrumpft.*"
+        "text": "*Yuna hält meinen Blick. Zwischen uns fehlt nur noch ein Schritt.*"
     },
     "after5_last_chance_yuna_7": {},
     "after5_last_chance_yuna_low_1": {
@@ -620,8 +620,8 @@
         "name": "Haeun",
         "text": "Wenn du mich wählst, kann es mit dieser Person nicht einfach weitergehen wie bisher. *Haeun faltet das Papier in ihren Händen.* Denk bitte noch einmal nach, bevor du antwortest.",
         "choices": [
-            "Haeun statt der bisherigen Beziehung wählen",
-            "Zur ursprünglich geliebten Person zurückgehen"
+            "Die Zeit mit Haeun verbringen",
+            "Zur Person zurückgehen, die mir schon wichtig war"
         ]
     },
     "day5_haeun_guilt_1": {
@@ -632,10 +632,10 @@
         "name": "Haeun",
         "text": "*Haeun fängt sich und hebt den Kopf.* Dass es mir leidtut und dass ich bei dir sein will, ist beides echt, und gerade deshalb ist es so schwer. Ist es seltsam, dass ich so bin?",
         "choices": [
-            "Fragen, was aus der versprochenen Unterstützung geworden ist",
-            "Sagen, dass ihre Schuldgefühle genauso aufrichtig sind wie ihre Gefühle und sie keines von beiden verbergen muss",
-            "Keine Antwort drängen und Haeun Zeit geben, ihre Gefühle zu ordnen",
-            "Seufzen, als hätte Haeun einen in Verlegenheit gebracht"
+            "Was ist aus dem Anfeuern geworden?",
+            "Es ist okay, dass es dir leidtut und du bleiben willst.",
+            "Lass dir Zeit.",
+            "*Nur seufzen.*"
         ]
     },
     "day5_haeun_guilt_up": {

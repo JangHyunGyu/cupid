@@ -135,7 +135,7 @@
         "name": "{name}",
         "text": "*Le chemin du parc et celui qui revient vers les derniers préparatifs se séparent ici. Aujourd’hui, je dois décider à qui répondre.*",
         "choices": [
-            "Aller au parc et mener à terme le choix déjà commencé",
+            "Aller au parc et finir ce qu'on avait commencé",
             "Retourner auprès de la professeure principale et ranger le manuscrit du club de littérature",
             "Retourner auprès de l’infirmière scolaire et ranger les dossiers de consultation"
         ]
@@ -262,7 +262,7 @@
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
-        "text": "*Yuna ne détourne pas les yeux. La distance entre nous a diminué d'un pas.*"
+        "text": "*Yuna soutient mon regard. Il ne reste plus qu'un pas entre nous.*"
     },
     "after5_last_chance_yuna_7": {},
     "after5_last_chance_yuna_low_1": {
@@ -620,8 +620,8 @@
         "name": "Haeun",
         "text": "Si tu me choisis, les choses avec cette personne ne pourront pas rester comme avant. *Haeun plie la feuille qu’elle tient.* Réfléchis encore avant de répondre.",
         "choices": [
-            "Choisir Haeun plutôt que la relation précédente",
-            "Retourner vers la personne qui comptait jusque-là"
+            "Passer ce temps avec Haeun",
+            "Revenir vers la personne qui comptait déjà"
         ]
     },
     "day5_haeun_guilt_1": {
@@ -632,10 +632,10 @@
         "name": "Haeun",
         "text": "*Haeun reprend son souffle et relève la tête.* Me sentir désolée et vouloir être à tes côtés sont tous les deux bien réels, et c’est ça qui rend les choses plus difficiles. C’est bizarre d’être comme ça ?",
         "choices": [
-            "Lui demander ce qu’est devenu le soutien qu’elle avait promis",
-            "Lui dire que sa culpabilité est aussi sincère que ses sentiments et qu’elle n’a pas à cacher ni l’une ni l’autre",
-            "Ne pas presser de réponse et laisser à Haeun le temps de démêler ses sentiments",
-            "Soupirer comme si Haeun t’avait mis dans l’embarras"
+            "Et le soutien que tu avais promis ?",
+            "Tu peux être désolé et vouloir rester. Les deux, ça va.",
+            "Ne te presse pas. Prends ton temps.",
+            "*Juste soupirer.*"
         ]
     },
     "day5_haeun_guilt_up": {

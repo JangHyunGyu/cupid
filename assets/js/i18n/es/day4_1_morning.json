@@ -614,8 +614,8 @@
         "name": "{name}",
         "text": "*Haeun se vuelve hacia mí. La persona que la escuchaba no se aparta.*",
         "choices": [
-            "Preguntar qué escuchó y explicarlo con Haeun presente",
-            "Decir que no quiero hablar de eso ahora"
+            "Preguntar qué oyeron",
+            "Ahora no"
         ]
     },
     "day4_haeun_concern_open": {
@@ -781,10 +781,10 @@
         "name": "Haeun",
         "text": "*La mirada de Haeun se queda un instante en ti y luego baja al suelo.* ¿Se me notó algo raro en la cara?",
         "choices": [
-            "Fingir que no ves su expresión y mirar el reloj",
-            "Notar el cambio en la expresión de Haeun y preguntarle en voz baja qué piensa",
-            "Cambiar de tema a propósito para volver a hablar de Seoyeon",
-            "Escuchar hasta el final lo que Haeun quería decir y darle las gracias"
+            "Hacer como que no lo vi y mirar el reloj",
+            "Preguntar por qué le cambió la cara",
+            "Desviar el tema hacia Seoyeon",
+            "Escucharla hasta el final y darle las gracias"
         ]
     },
     "day4_haeun_notice_up": {

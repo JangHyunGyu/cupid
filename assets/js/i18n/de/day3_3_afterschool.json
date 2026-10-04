@@ -861,10 +861,10 @@
         "name": "Haeun",
         "text": "*Haeun lächelt leicht.* Ich hoffe, Seoyeon lächelt bald wieder öfter. Und noch schöner wäre es, wenn du bei ihr bist. Merk dir nur, dass euch zumindest eine Person die Daumen drückt.",
         "choices": [
-            "Versprechen, sich zuerst um Seoyeon zu kümmern, und Haeun sagen, sie solle sich keine Sorgen machen",
-            "Eine Grenze ziehen: Danke für die Unterstützung, aber das geht Haeun nichts an",
-            "Sich für die Unterstützung bedanken und sagen, dass es auch Seoyeon Kraft geben würde",
-            "Wortlos nicken und den Blick abwenden"
+            "Ich kümmere mich zuerst um Seoyeon. Mach dir keine Sorgen.",
+            "Danke, aber das ist nicht deine Sache.",
+            "Danke. Seoyeon würde das auch guttun.",
+            "Nicken und wegsehen"
         ]
     },
     "haeun_cheer_up": {

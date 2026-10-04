@@ -614,8 +614,8 @@
         "name": "{name}",
         "text": "*Haeun turns toward me. The person listening to her stays where they are.*",
         "choices": [
-            "Ask what they heard and explain with Haeun present",
-            "Say I do not want to discuss it now"
+            "Ask what they heard",
+            "Not now"
         ]
     },
     "day4_haeun_concern_open": {
@@ -781,10 +781,10 @@
         "name": "Haeun",
         "text": "*Haeun's gaze rests on you for a moment, then drops to the floor.* Did my face look strange just now?",
         "choices": [
-            "Pretend not to see her expression and check the clock",
-            "Notice the change in Haeun's expression and quietly ask what she's thinking",
-            "Deliberately change the subject back to Seoyeon",
-            "Hear out what Haeun was trying to say and thank her"
+            "Pretend not to notice and check the clock",
+            "Ask why her face changed",
+            "Switch the subject to Seoyeon",
+            "Hear her out and thank her"
         ]
     },
     "day4_haeun_notice_up": {

@@ -201,7 +201,7 @@ class CharacterRenderer {
             this.ui.showUnlockPopup({
                 title: L('캐릭터 미발견', 'Character Not Yet Met', 'Personaje aún no conocido', '未登場のキャラクター', 'Personnage encore inconnu', 'Figur noch unbekannt', 'Personagem ainda desconhecida', '尚未遇见的角色'),
                 message: L(
-                    '아직 이 캐릭터를 만나지 못했습니다.<br>게임을 진행하여 캐릭터를 만나보세요!',
+                    '아직 이 캐릭터는 안 나왔어요.<br>이야기를 더 진행하면 만나요.',
                     'You haven\'t met this character yet.<br>Play the game to meet them!',
                     'Aún no conoces a este personaje.<br>¡Sigue jugando para conocerla!',
                     'このキャラクターにはまだ出会っていません。<br>ゲームを進めて、まずは出会いましょう！',
@@ -511,7 +511,7 @@ class CharacterRenderer {
         this.ui.showUnlockPopup({
             title: L('대화 미해금', 'Chat Locked', 'Chat bloqueado', '秘密トークは未解放です', 'Discussion verrouillée', 'Chat gesperrt', 'Chat bloqueado', '对话未解锁'),
             message: L(
-                `${charName}의 비밀대화를 열려면<br>세 가지 조건을 모두 달성해야 합니다!<br><br><span class="condition-line">💘 PERFECT 엔딩 클리어 ${endingStatus}</span><span class="condition-line">💕 최대 호감도: ${currentAffinity}/${affinityMax} ${affinityStatus}</span><span class="condition-line">💬 프리토킹: ${freeTalkCount}/30회 ${talkStatus}</span>`,
+                `${charName}의 비밀대화를 열려면<br>세 가지를 모두 채워야 해요.<br><br><span class="condition-line">💘 PERFECT 엔딩 클리어 ${endingStatus}</span><span class="condition-line">💕 최대 호감도: ${currentAffinity}/${affinityMax} ${affinityStatus}</span><span class="condition-line">💬 프리토킹: ${freeTalkCount}/30회 ${talkStatus}</span>`,
                 `To unlock ${charName}'s secret chat,<br>complete all three requirements.<br><br><span class="condition-line">💘 Complete a PERFECT ending ${endingStatus}</span><span class="condition-line">💕 Highest Affinity: ${currentAffinity}/${affinityMax} ${affinityStatus}</span><span class="condition-line">💬 Free-talk sessions: ${freeTalkCount}/30 ${talkStatus}</span>`,
                 `Para desbloquear el chat secreto de ${charName},<br>¡debes cumplir las tres condiciones!<br><br><span class="condition-line">💘 Completar un final PERFECT ${endingStatus}</span><span class="condition-line">💕 Afinidad máxima: ${currentAffinity}/${affinityMax} ${affinityStatus}</span><span class="condition-line">💬 Charlas libres: ${freeTalkCount}/30 ${talkStatus}</span>`,
                 `${charName}の秘密トークを解放するには、<br>次の3つの条件をすべて達成してください。<br><br><span class="condition-line">💘 パーフェクトエンドをクリア ${endingStatus}</span><span class="condition-line">💕 最大好感度：${currentAffinity}/${affinityMax} ${affinityStatus}</span><span class="condition-line">💬 フリートーク：${freeTalkCount}/30回 ${talkStatus}</span>`,

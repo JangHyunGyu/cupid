@@ -265,7 +265,7 @@ class GalleryUI {
         this.showUnlockPopup({
             title: L('💎 특별 표정', '💎 Special Expression', '💎 Expresión especial', '💎 特別な表情', '💎 Expression spéciale', '💎 Besonderer Ausdruck', '💎 Expressão especial', '💎 特别表情'),
             message: L(
-                `${charName}의 특별한 모습을 보려면<br>두 가지 조건을 모두 달성해야 합니다!<br><br><span class="condition-line">💕 최대 호감도: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 프리토킹: ${freeTalkCount}/30회 ${talkStatus}</span>`,
+                `${charName}의 특별한 모습을 보려면<br>두 가지를 모두 채워야 해요.<br><br><span class="condition-line">💕 최대 호감도: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 프리토킹: ${freeTalkCount}/30회 ${talkStatus}</span>`,
                 `To see ${charName}'s special appearance,<br>complete both requirements.<br><br><span class="condition-line">💕 Highest Affinity: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Free-talk sessions: ${freeTalkCount}/30 ${talkStatus}</span>`,
                 `Para ver el atuendo especial de ${charName},<br>¡debes cumplir ambas condiciones!<br><br><span class="condition-line">💕 Afinidad máxima: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Charlas libres: ${freeTalkCount}/30 ${talkStatus}</span>`,
                 `${charName}の特別な姿を見るには、<br>次の2つの条件を両方達成してください。<br><br><span class="condition-line">💕 最大好感度：${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 フリートーク：${freeTalkCount}/30回 ${talkStatus}</span>`,

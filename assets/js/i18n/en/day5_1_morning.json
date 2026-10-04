@@ -20,7 +20,7 @@
         "choices": [
             "Tell her what happened last night",
             "Brush it off as nothing important",
-            "Tell her only the good parts so she doesn’t get hurt.",
+            "Tell only the easy parts",
             "Reassure her for now and save the details for later."
         ]
     },
@@ -30,7 +30,7 @@
         "choices": [
             "Tell her what happened last night",
             "Brush it off as nothing important",
-            "Tell her only the good parts so she doesn’t get hurt.",
+            "Tell only the easy parts",
             "Reassure her for now and save the details for later."
         ]
     },
@@ -59,7 +59,7 @@
         "choices": [
             "Tell her what happened last night",
             "Brush it off as nothing important",
-            "Tell her only the good parts so she doesn’t get hurt.",
+            "Tell only the easy parts",
             "Reassure her for now and save the details for later."
         ]
     },
@@ -69,7 +69,7 @@
         "choices": [
             "Tell her what happened last night",
             "Brush it off as nothing important",
-            "Tell her only the good parts so she doesn’t get hurt.",
+            "Tell only the easy parts",
             "Reassure her for now and save the details for later."
         ]
     },
@@ -79,7 +79,7 @@
         "choices": [
             "Tell her what happened last night",
             "Brush it off as nothing important",
-            "Tell her only the good parts so she doesn’t get hurt.",
+            "Tell only the easy parts",
             "Reassure her for now and save the details for later."
         ]
     },
@@ -89,7 +89,7 @@
         "choices": [
             "Tell her what happened last night",
             "Brush it off as nothing important",
-            "Tell her only the good parts so she doesn’t get hurt.",
+            "Tell only the easy parts",
             "Reassure her for now and save the details for later."
         ]
     },
@@ -99,7 +99,7 @@
         "choices": [
             "Tell her what happened last night",
             "Brush it off as nothing important",
-            "Tell her only the good parts so she doesn’t get hurt.",
+            "Tell only the easy parts",
             "Reassure her for now and save the details for later."
         ]
     },
@@ -109,7 +109,7 @@
         "choices": [
             "Tell her what happened last night",
             "Brush it off as nothing important",
-            "Tell her only the good parts so she doesn’t get hurt.",
+            "Tell only the easy parts",
             "Reassure her for now and save the details for later."
         ]
     },
@@ -662,9 +662,9 @@
         "name": "{name}",
         "text": "*When the conversation ends, both of them wait for an answer.*",
         "choices": [
-            "Answer the person I promised first and take responsibility",
-            "Say that I choose the person I went to last night",
-            "Let neither of them wait and end both relationships"
+            "Answer the person I promised first",
+            "Choose the person from last night",
+            "Let both of them go"
         ]
     },
     "morning5_counteroffer_choice_lead": {

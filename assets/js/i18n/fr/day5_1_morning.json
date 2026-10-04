@@ -20,7 +20,7 @@
         "choices": [
             "Lui raconter ce qui s'est passé hier soir",
             "Prétendre que ce n'était rien d'important",
-            "Ne lui raconter que les bons côtés pour ne pas la blesser.",
+            "Ne raconter que ce qui passe bien",
             "La rassurer pour l’instant et garder les détails pour plus tard."
         ]
     },
@@ -30,7 +30,7 @@
         "choices": [
             "Lui raconter ce qui s'est passé hier soir",
             "Prétendre que ce n'était rien d'important",
-            "Ne lui raconter que les bons côtés pour ne pas la blesser.",
+            "Ne raconter que ce qui passe bien",
             "La rassurer pour l’instant et garder les détails pour plus tard."
         ]
     },
@@ -59,7 +59,7 @@
         "choices": [
             "Lui raconter ce qui s'est passé la veille",
             "Prétendre que ce n'était rien d'important",
-            "Ne lui raconter que les bons côtés pour ne pas la blesser.",
+            "Ne raconter que ce qui passe bien",
             "La rassurer pour l’instant et garder les détails pour plus tard."
         ]
     },
@@ -69,7 +69,7 @@
         "choices": [
             "Lui raconter ce qui s'est passé la veille",
             "Prétendre que ce n'était rien d'important",
-            "Ne lui raconter que les bons côtés pour ne pas la blesser.",
+            "Ne raconter que ce qui passe bien",
             "La rassurer pour l’instant et garder les détails pour plus tard."
         ]
     },
@@ -79,7 +79,7 @@
         "choices": [
             "Lui raconter ce qui s'est passé la veille",
             "Prétendre que ce n'était rien d'important",
-            "Ne lui raconter que les bons côtés pour ne pas la blesser.",
+            "Ne raconter que ce qui passe bien",
             "La rassurer pour l’instant et garder les détails pour plus tard."
         ]
     },
@@ -89,7 +89,7 @@
         "choices": [
             "Lui raconter ce qui s'est passé la veille",
             "Prétendre que ce n'était rien d'important",
-            "Ne lui raconter que les bons côtés pour ne pas la blesser.",
+            "Ne raconter que ce qui passe bien",
             "La rassurer pour l’instant et garder les détails pour plus tard."
         ]
     },
@@ -99,7 +99,7 @@
         "choices": [
             "Lui raconter ce qui s'est passé la veille",
             "Prétendre que ce n'était rien d'important",
-            "Ne lui raconter que les bons côtés pour ne pas la blesser.",
+            "Ne raconter que ce qui passe bien",
             "La rassurer pour l’instant et garder les détails pour plus tard."
         ]
     },
@@ -109,7 +109,7 @@
         "choices": [
             "Lui raconter ce qui s'est passé la veille",
             "Prétendre que ce n'était rien d'important",
-            "Ne lui raconter que les bons côtés pour ne pas la blesser.",
+            "Ne raconter que ce qui passe bien",
             "La rassurer pour l’instant et garder les détails pour plus tard."
         ]
     },
@@ -662,9 +662,9 @@
         "name": "{name}",
         "text": "*Quand la conversation s’achève, toutes les deux attendent une réponse.*",
         "choices": [
-            "Répondre avec responsabilité à la personne à qui j’ai promis en premier",
-            "Dire que je choisis la personne que je suis allé voir hier soir",
-            "Ne retenir aucune des deux et mettre fin aux deux relations"
+            "Répondre à la personne à qui j'ai promis en premier",
+            "Choisir la personne d'hier soir",
+            "Lâcher les deux"
         ]
     },
     "morning5_counteroffer_choice_lead": {
