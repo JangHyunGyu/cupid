@@ -8,13 +8,13 @@
       "fr": 0,
       "de": 0,
       "pt": 0,
-      "zh": 1725
+      "zh": 1778
     },
     "bySeverity": {
-      "WARNING": 1725
+      "WARNING": 1778
     },
     "byType": {
-      "NAME_MISMATCH": 1725
+      "NAME_MISMATCH": 1778
     }
   },
   "issues": [
@@ -64,6 +64,14 @@
       "lang": "zh",
       "file": "day1_1_morning",
       "node": "seoyeon_meet_7",
+      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day1_1_morning",
+      "node": "seoyeon_meet_8",
       "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
     {
@@ -239,7 +247,23 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day1_1_morning",
+      "node": "classroom_dain_2",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day1_1_morning",
       "node": "classroom_dain_4",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day1_1_morning",
+      "node": "classroom_dain_5",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
     {
@@ -271,6 +295,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day1_1_morning",
+      "node": "classroom_seat_2",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day1_1_morning",
       "node": "classroom_minsu_2",
       "detail": "\"민수\" -> 예상:\"undefined\" 실제:\"敏秀\""
     },
@@ -281,6 +313,14 @@
       "file": "day1_1_morning",
       "node": "classroom_minsu_2_b",
       "detail": "\"민수\" -> 예상:\"undefined\" 실제:\"敏秀\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day1_1_morning",
+      "node": "classroom_dain_talk_2",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
     {
       "severity": "WARNING",
@@ -310,9 +350,41 @@
       "severity": "WARNING",
       "type": "NAME_MISMATCH",
       "lang": "zh",
+      "file": "day1_1_morning",
+      "node": "classroom_dain_talk_8",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day1_1_morning",
+      "node": "classroom_yuna_note_3",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day1_2_lunch",
+      "node": "lunch_start_4",
+      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
       "file": "day1_2_lunch",
       "node": "lunch_start_5",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day1_2_lunch",
+      "node": "lunch_start_6",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
     },
     {
       "severity": "WARNING",
@@ -647,6 +719,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day1_2_lunch",
+      "node": "lunch_dain_c1_2",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day1_2_lunch",
       "node": "lunch_dain_c2_1",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
@@ -719,6 +799,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day1_2_lunch",
+      "node": "lunch_yuna_8",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day1_2_lunch",
       "node": "lunch_yuna_12",
       "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
     },
@@ -728,6 +816,14 @@
       "lang": "zh",
       "file": "day1_2_lunch",
       "node": "lunch_yuna_14",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day1_2_lunch",
+      "node": "lunch_yuna_15",
       "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
     },
     {
@@ -887,6 +983,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day1_3_afterschool",
+      "node": "after1_jealousy_seo_yuna",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day1_3_afterschool",
       "node": "after1_jealousy_dain_1",
       "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
@@ -919,6 +1023,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day1_3_afterschool",
+      "node": "after_miss_dain_3",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day1_3_afterschool",
       "node": "after_miss_dain_4",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
@@ -928,6 +1040,14 @@
       "lang": "zh",
       "file": "day1_3_afterschool",
       "node": "after_miss_dain_6",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day1_3_afterschool",
+      "node": "after_miss_dain_7",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
     {
@@ -1583,16 +1703,16 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day2_1_morning",
-      "node": "morning2_greet_dain_2",
-      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+      "node": "morning2_greet_seo_2",
+      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
     {
       "severity": "WARNING",
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day2_1_morning",
-      "node": "morning2_greet_dain_others",
-      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
+      "node": "morning2_greet_dain_2",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
     {
       "severity": "WARNING",
@@ -1608,6 +1728,14 @@
       "lang": "zh",
       "file": "day2_1_morning",
       "node": "morning2_greet_yuna_others",
+      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day2_1_morning",
+      "node": "morning2_greet_yuna_others_seo",
       "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
     {
@@ -1640,14 +1768,6 @@
       "lang": "zh",
       "file": "day2_1_morning",
       "node": "morning2_dain_5",
-      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day2_1_morning",
-      "node": "morning2_dain_6",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
     {
@@ -1743,14 +1863,6 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day2_1_morning",
-      "node": "hidden_homeroom_d2_3_c",
-      "detail": "\"담임선생님\" -> 예상:\"undefined\" 실제:\"班主任\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day2_1_morning",
       "node": "hidden_homeroom_d2_3_d",
       "detail": "\"담임선생님\" -> 예상:\"undefined\" 실제:\"班主任\""
     },
@@ -1784,6 +1896,14 @@
       "lang": "zh",
       "file": "day2_1_morning",
       "node": "hidden_homeroom_d2_5",
+      "detail": "\"담임선생님\" -> 예상:\"undefined\" 실제:\"班主任\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day2_1_morning",
+      "node": "hidden_homeroom_d2_6",
       "detail": "\"담임선생님\" -> 예상:\"undefined\" 실제:\"班主任\""
     },
     {
@@ -1871,6 +1991,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day2_1_morning",
+      "node": "morning2_seo_dust_1",
+      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day2_1_morning",
       "node": "morning2_seo_dust_2",
       "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
@@ -1945,6 +2073,22 @@
       "file": "day2_1_morning",
       "node": "morning2_greet_dain_1_plain",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day2_1_morning",
+      "node": "morning2_greet_yuna_1_thanks",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day2_2_lunch",
+      "node": "lunch2_seo_1b",
+      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
     {
       "severity": "WARNING",
@@ -2032,6 +2176,14 @@
       "lang": "zh",
       "file": "day2_2_lunch",
       "node": "lunch2_seo_11",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day2_2_lunch",
+      "node": "lunch2_seo_12",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
     {
@@ -2159,6 +2311,22 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day2_2_lunch",
+      "node": "lunch2_seo_c1_5",
+      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day2_2_lunch",
+      "node": "lunch2_seo_end_c1",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day2_2_lunch",
       "node": "lunch2_seo_c2_2",
       "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
@@ -2255,14 +2423,6 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day2_2_lunch",
-      "node": "lunch2_dain_13_b",
-      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day2_2_lunch",
       "node": "lunch2_dain_choice",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
@@ -2335,14 +2495,6 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day2_2_lunch",
-      "node": "lunch2_dain_end_i",
-      "detail": "\"보건선생님\" -> 예상:\"undefined\" 실제:\"保健老师\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day2_2_lunch",
       "node": "lunch2_dain_end_j",
       "detail": "\"보건선생님\" -> 예상:\"undefined\" 실제:\"保健老师\""
     },
@@ -2352,14 +2504,6 @@
       "lang": "zh",
       "file": "day2_2_lunch",
       "node": "lunch2_dain_end_l",
-      "detail": "\"보건선생님\" -> 예상:\"undefined\" 실제:\"保健老师\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day2_2_lunch",
-      "node": "lunch2_dain_end_m",
       "detail": "\"보건선생님\" -> 예상:\"undefined\" 실제:\"保健老师\""
     },
     {
@@ -2919,6 +3063,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day2_3_afterschool",
+      "node": "after2_dain_9_f",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day2_3_afterschool",
       "node": "after2_dain_12",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
@@ -2983,14 +3135,6 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day2_3_afterschool",
-      "node": "after2_dain_end_3",
-      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day2_3_afterschool",
       "node": "after2_dain_end_3b",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
@@ -3009,6 +3153,14 @@
       "file": "day2_3_afterschool",
       "node": "after2_dain_end_3e",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day2_3_afterschool",
+      "node": "after2_dain_rival_seo_high",
+      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
     {
       "severity": "WARNING",
@@ -3063,14 +3215,6 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day2_3_afterschool",
-      "node": "after2_seo_8b",
-      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day2_3_afterschool",
       "node": "after2_seo_8b2",
       "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
@@ -3088,14 +3232,6 @@
       "lang": "zh",
       "file": "day2_3_afterschool",
       "node": "after2_seo_8b4_b",
-      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day2_3_afterschool",
-      "node": "after2_seo_sunset_joke",
       "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
     {
@@ -3144,6 +3280,14 @@
       "lang": "zh",
       "file": "day2_3_afterschool",
       "node": "after2_seo_neck_high_2",
+      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_neck_high_2_b",
       "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
     {
@@ -3295,6 +3439,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day2_3_afterschool",
+      "node": "after2_yuna_8b",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day2_3_afterschool",
       "node": "after2_yuna_8c",
       "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
     },
@@ -3417,6 +3569,30 @@
       "file": "day2_3_afterschool",
       "node": "after2_yuna_rival_seo_low",
       "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day2_3_afterschool",
+      "node": "after2_group_seoyeon_companion",
+      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day2_3_afterschool",
+      "node": "after2_group_yuna_companion",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day2_3_afterschool",
+      "node": "after2_group_dain_companion",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
     {
       "severity": "WARNING",
@@ -4119,6 +4295,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day3_1_morning",
+      "node": "morning3_yuna_gate_warm_3",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day3_1_morning",
       "node": "morning3_yuna_gate_3",
       "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
     },
@@ -4128,6 +4312,14 @@
       "lang": "zh",
       "file": "day3_1_morning",
       "node": "morning3_yuna_gate_5",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day3_1_morning",
+      "node": "morning3_yuna_gate_6",
       "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
     },
     {
@@ -4167,6 +4359,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day3_1_morning",
+      "node": "morning3_dain_gate_warm_3",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day3_1_morning",
       "node": "morning3_dain_gate_2",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
@@ -4184,6 +4384,14 @@
       "lang": "zh",
       "file": "day3_1_morning",
       "node": "morning3_dain_gate_4_b",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day3_1_morning",
+      "node": "morning3_dain_gate_5_b",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
     {
@@ -4503,6 +4711,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_reveal_6_g",
+      "detail": "\"담임선생님\" -> 예상:\"undefined\" 실제:\"班主任\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day3_1_morning",
       "node": "hidden_homeroom_d3_hide_1",
       "detail": "\"담임선생님\" -> 예상:\"undefined\" 실제:\"班主任\""
     },
@@ -4656,14 +4872,6 @@
       "lang": "zh",
       "file": "day3_1_morning",
       "node": "hidden_nurse_d3_6_c",
-      "detail": "\"보건선생님\" -> 예상:\"undefined\" 실제:\"保健老师\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day3_1_morning",
-      "node": "hidden_nurse_d3_6_d",
       "detail": "\"보건선생님\" -> 예상:\"undefined\" 실제:\"保健老师\""
     },
     {
@@ -4839,6 +5047,22 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day3_1_morning",
+      "node": "morning3_date_yuna_2",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day3_1_morning",
+      "node": "morning3_date_yuna_choice",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day3_1_morning",
       "node": "morning3_seo_gate_neg_1",
       "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
@@ -4872,6 +5096,14 @@
       "lang": "zh",
       "file": "day3_1_morning",
       "node": "morning3_date_yuna_neg",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day3_2_lunch",
+      "node": "lunch3_start",
       "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
     },
     {
@@ -4951,6 +5183,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day3_2_lunch",
+      "node": "lunch3_seo_skin_1",
+      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day3_2_lunch",
       "node": "lunch3_seo_skin_2",
       "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
@@ -4959,7 +5199,23 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day3_2_lunch",
+      "node": "lunch3_seo_skin_3",
+      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day3_2_lunch",
       "node": "lunch3_give_seo_2",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day3_2_lunch",
+      "node": "lunch3_seo_witness_1",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
     {
@@ -5023,6 +5279,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day3_2_lunch",
+      "node": "lunch3_dain_skin_1",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day3_2_lunch",
       "node": "lunch3_dain_skin_3",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
@@ -5056,6 +5320,14 @@
       "lang": "zh",
       "file": "day3_2_lunch",
       "node": "lunch3_give_yuna_neg",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day3_2_lunch",
+      "node": "lunch3_yuna_skin_1",
       "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
     },
     {
@@ -5129,6 +5401,14 @@
       "file": "day3_2_lunch",
       "node": "lunch3_expose_11",
       "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_12",
+      "detail": "\"민수\" -> 예상:\"undefined\" 실제:\"敏秀\""
     },
     {
       "severity": "WARNING",
@@ -5351,6 +5631,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day3_3_afterschool",
+      "node": "after3_reject_for_seo_3",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
       "node": "after3_seo_3",
       "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
@@ -5552,6 +5840,14 @@
       "lang": "zh",
       "file": "day3_3_afterschool",
       "node": "after3_yuna_6",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_7",
       "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
     },
     {
@@ -6191,6 +6487,22 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day3_3_afterschool",
+      "node": "after3_group_teacher_companion",
+      "detail": "\"담임선생님\" -> 예상:\"undefined\" 실제:\"班主任\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_group_nurse_companion",
+      "detail": "\"보건선생님\" -> 예상:\"undefined\" 실제:\"保健老师\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
       "node": "minsu_d3_2",
       "detail": "\"민수\" -> 예상:\"undefined\" 실제:\"敏秀\""
     },
@@ -6583,6 +6895,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day3_4_night",
+      "node": "night3_cheat_reflect_3_d",
+      "detail": "\"민수\" -> 예상:\"undefined\" 실제:\"敏秀\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day3_4_night",
       "node": "forced_violation_day3_after_seoyeon",
       "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
@@ -6951,14 +7271,6 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day4_1_morning",
-      "node": "hidden_homeroom_d4_cafe_5_b",
-      "detail": "\"담임선생님\" -> 예상:\"undefined\" 실제:\"班主任\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day4_1_morning",
       "node": "hidden_homeroom_d4_cafe_5_c",
       "detail": "\"담임선생님\" -> 예상:\"undefined\" 실제:\"班主任\""
     },
@@ -6976,14 +7288,6 @@
       "lang": "zh",
       "file": "day4_1_morning",
       "node": "hidden_homeroom_d4_cafe_5_g",
-      "detail": "\"담임선생님\" -> 예상:\"undefined\" 실제:\"班主任\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day4_1_morning",
-      "node": "hidden_homeroom_d4_cafe_5_h",
       "detail": "\"담임선생님\" -> 예상:\"undefined\" 실제:\"班主任\""
     },
     {
@@ -7256,14 +7560,6 @@
       "lang": "zh",
       "file": "day4_1_morning",
       "node": "hidden_nurse_d4_meal_1_c",
-      "detail": "\"보건선생님\" -> 예상:\"undefined\" 실제:\"保健老师\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day4_1_morning",
-      "node": "hidden_nurse_d4_meal_2_b",
       "detail": "\"보건선생님\" -> 예상:\"undefined\" 실제:\"保健老师\""
     },
     {
@@ -7879,6 +8175,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day4_2_lunch",
+      "node": "date_dain_arcade_3_b",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day4_2_lunch",
       "node": "date_dain_arcade_3_c",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
@@ -7896,6 +8200,14 @@
       "lang": "zh",
       "file": "day4_2_lunch",
       "node": "date_dain_rhythm_3",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day4_2_lunch",
+      "node": "date_dain_knee_2",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
     {
@@ -7991,6 +8303,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day4_2_lunch",
+      "node": "date_seo_high_2",
+      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day4_2_lunch",
       "node": "date_seo_tentative_2",
       "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
@@ -8064,6 +8384,14 @@
       "lang": "zh",
       "file": "day4_2_lunch",
       "node": "day4_caught_fallout_2",
+      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day4_2_lunch",
+      "node": "day4_harem_fallout_1",
       "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
     {
@@ -8159,6 +8487,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day4_3_afterschool",
+      "node": "confess_seo_yes_7",
+      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day4_3_afterschool",
       "node": "confess_seo_yes_8",
       "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
@@ -8168,14 +8504,6 @@
       "lang": "zh",
       "file": "day4_3_afterschool",
       "node": "confess_seo_yes_9",
-      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day4_3_afterschool",
-      "node": "confess_seo_yes_10",
       "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
     {
@@ -8271,14 +8599,6 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day4_3_afterschool",
-      "node": "confess_yuna_no_3",
-      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day4_3_afterschool",
       "node": "confess_yuna_no_4",
       "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
     },
@@ -8320,6 +8640,14 @@
       "lang": "zh",
       "file": "day4_3_afterschool",
       "node": "confess_dain_yes_9",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day4_3_afterschool",
+      "node": "confess_dain_yes_9_b",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
     {
@@ -8511,6 +8839,22 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day4_4_night",
+      "node": "day4_adult_night_regret_teacher",
+      "detail": "\"담임선생님\" -> 예상:\"undefined\" 실제:\"班主任\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day4_4_night",
+      "node": "day4_adult_night_regret_nurse",
+      "detail": "\"보건선생님\" -> 예상:\"undefined\" 실제:\"保健老师\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day4_4_night",
       "node": "wall_seo_pre_high_1",
       "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
@@ -8592,14 +8936,6 @@
       "lang": "zh",
       "file": "day4_4_night",
       "node": "wall_seo_11",
-      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day4_4_night",
-      "node": "wall_seo_11_b",
       "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
     {
@@ -8817,6 +9153,14 @@
       "file": "day4_4_night",
       "node": "wall_seo_glimpse_4",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day4_4_night",
+      "node": "wall_seo_yuna_tempt_1",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
     },
     {
       "severity": "WARNING",
@@ -9287,6 +9631,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day4_4_night",
+      "node": "wall_yuna_1",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day4_4_night",
       "node": "wall_yuna_pre_high_1",
       "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
     },
@@ -9464,14 +9816,6 @@
       "lang": "zh",
       "file": "day4_4_night",
       "node": "wall_yuna_moved_2",
-      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day4_4_night",
-      "node": "wall_yuna_moved_3",
       "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
     },
     {
@@ -10111,6 +10455,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day5_1_morning",
+      "node": "morning5_seo_note_1",
+      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day5_1_morning",
       "node": "morning5_dain_1",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
@@ -10121,14 +10473,6 @@
       "file": "day5_1_morning",
       "node": "morning5_dain_2",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day5_1_morning",
-      "node": "hidden_homeroom_d5_1",
-      "detail": "\"담임선생님\" -> 예상:\"undefined\" 실제:\"班主任\""
     },
     {
       "severity": "WARNING",
@@ -10232,14 +10576,6 @@
       "lang": "zh",
       "file": "day5_1_morning",
       "node": "hidden_homeroom_d5_praise_trap_11",
-      "detail": "\"담임선생님\" -> 예상:\"undefined\" 실제:\"班主任\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day5_1_morning",
-      "node": "hidden_homeroom_d5_correct_1",
       "detail": "\"담임선생님\" -> 예상:\"undefined\" 실제:\"班主任\""
     },
     {
@@ -10455,14 +10791,6 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day5_1_morning",
-      "node": "hidden_nurse_d5_3_b",
-      "detail": "\"보건선생님\" -> 예상:\"undefined\" 실제:\"保健老师\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day5_1_morning",
       "node": "hidden_nurse_d5_3_c",
       "detail": "\"보건선생님\" -> 예상:\"undefined\" 실제:\"保健老师\""
     },
@@ -10496,14 +10824,6 @@
       "lang": "zh",
       "file": "day5_1_morning",
       "node": "hidden_nurse_d5_5",
-      "detail": "\"보건선생님\" -> 예상:\"undefined\" 실제:\"保健老师\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day5_1_morning",
-      "node": "hidden_nurse_d5_choice_a",
       "detail": "\"보건선생님\" -> 예상:\"undefined\" 실제:\"保健老师\""
     },
     {
@@ -10655,6 +10975,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day5_2_lunch",
+      "node": "tour_seo_8",
+      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day5_2_lunch",
       "node": "tour_seo_9",
       "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
@@ -10735,6 +11063,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day5_2_lunch",
+      "node": "tour_yuna_10",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day5_2_lunch",
       "node": "tour_yuna_freetalk",
       "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
     },
@@ -10776,6 +11112,14 @@
       "lang": "zh",
       "file": "day5_2_lunch",
       "node": "tour_dain_7",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_8",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
     {
@@ -11343,6 +11687,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day5_3_afterschool",
+      "node": "after5_farewell_yuna_5",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day5_3_afterschool",
       "node": "after5_farewell_dain_2",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
@@ -11455,23 +11807,7 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day5_3_afterschool",
-      "node": "after5_last_chance_2_p",
-      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day5_3_afterschool",
       "node": "after5_last_chance_2_q",
-      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day5_3_afterschool",
-      "node": "after5_last_chance_2_r",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
     {
@@ -11584,6 +11920,14 @@
       "lang": "zh",
       "file": "day5_3_afterschool",
       "node": "after5_confess_react_yuna_d",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day5_3_afterschool",
+      "node": "after5_confess_react_yuna_e",
       "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
     },
     {
@@ -12175,6 +12519,30 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day5_4_night",
+      "node": "friend_4_seo",
+      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "friend_4_yuna",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "friend_4_dain",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day5_4_night",
       "node": "friend_12",
       "detail": "\"시스템\" -> 예상:\"undefined\" 실제:\"系统\""
     },
@@ -12185,6 +12553,14 @@
       "file": "day5_4_night",
       "node": "mayhem_1",
       "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "mayhem_2",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
     },
     {
       "severity": "WARNING",
@@ -12759,14 +13135,6 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day5_4_night",
-      "node": "true_seo_6",
-      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
-    },
-    {
-      "severity": "WARNING",
-      "type": "NAME_MISMATCH",
-      "lang": "zh",
-      "file": "day5_4_night",
       "node": "true_seo_6b",
       "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
     },
@@ -12911,6 +13279,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day5_4_night",
+      "node": "true_yuna_bridge",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day5_4_night",
       "node": "ending_aff_check_dain",
       "detail": "\"시스템\" -> 예상:\"undefined\" 실제:\"系统\""
     },
@@ -13031,6 +13407,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day5_4_night",
+      "node": "true_dain_bridge",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day5_4_night",
       "node": "true_epilogue_7",
       "detail": "\"시스템\" -> 예상:\"undefined\" 실제:\"系统\""
     },
@@ -13071,6 +13455,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day5_4_night",
+      "node": "good_epilogue_1",
+      "detail": "\"서연\" -> 예상:\"undefined\" 실제:\"书妍\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day5_4_night",
       "node": "good_5_cg_seo",
       "detail": "\"시스템\" -> 예상:\"undefined\" 실제:\"系统\""
     },
@@ -13103,6 +13495,14 @@
       "type": "NAME_MISMATCH",
       "lang": "zh",
       "file": "day5_4_night",
+      "node": "good_epilogue_3_yuna",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day5_4_night",
       "node": "good_5_cg_yuna",
       "detail": "\"시스템\" -> 예상:\"undefined\" 실제:\"系统\""
     },
@@ -13120,6 +13520,14 @@
       "lang": "zh",
       "file": "day5_4_night",
       "node": "good_4_dain",
+      "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "good_epilogue_1_dain",
       "detail": "\"다인\" -> 예상:\"undefined\" 실제:\"多因\""
     },
     {
@@ -13816,6 +14224,22 @@
       "lang": "zh",
       "file": "day5_4_night",
       "node": "true_yuna_6_first",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "good_epilogue_1_yuna_established",
+      "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "good_epilogue_1_yuna_first",
       "detail": "\"유나\" -> 예상:\"undefined\" 실제:\"由娜\""
     }
   ]

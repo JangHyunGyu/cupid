@@ -366,6 +366,27 @@ test('affinity changes use the shared asymmetric -50 to +5 range', () => {
     assert.match(core.buildAffinityChangeGuidance('en'), /outwardly laughs it off or stays composed/);
 });
 
+test('non-Korean affinity rubric matches the Korean rubric in bands and strictness', () => {
+    const ranges = text => (text.match(/[+-]\d+\s*(?:~|to)\s*[+-]\d+/g) || []).map(range => range.replace(/\s*(?:~|to)\s*/, '~'));
+    const ko = core.buildAffinityChangeGuidance('ko');
+    const en = core.buildAffinityChangeGuidance('en');
+    // 같은 -50~+5 범위와 감점 구간, +1~+5 상승 구간을 쓴다.
+    assert.deepEqual(ranges(ko), ['-50~+5', '-2~-4', '-5~-9', '-10~-20', '-21~-35', '-36~-50', '+1~+5']);
+    assert.deepEqual(ranges(en), ranges(ko));
+    for (const lang of ['ja', 'es', 'fr', 'de', 'pt', 'zh']) {
+        assert.equal(core.buildAffinityChangeGuidance(lang), en, `${lang} shares the English rubric`);
+    }
+    // 한국어는 "실제 좋아지면 +1~+5"로 상승을 열어 두므로 영어도 'only/truly'로 조이지 않는다.
+    assert.match(ko, /배려·솔직함·관심으로 실제 좋아지면 \+1~\+5입니다/);
+    assert.match(en, /Use \+1 to \+5 when care, honesty, or attention actually improves the relationship/);
+    assert.doesNotMatch(en, /\+1 to \+5 only/);
+    // 둘 다 일상 인사·예의에 점수를 주지 않고 짧은 입력을 감점하지 않는다.
+    assert.match(ko, /짧거나 수동적인 입력은 감점 사유가 아니며, 단순 인사·일상 예의에 점수를 주거나/);
+    assert.match(en, /penalize short\/passive input, reward routine greetings\/courtesy/);
+    // 한 턴 본편 상승 상한은 모든 언어 공통이다.
+    assert.equal(core.normalizeStoryFreeTalkAffinityChange(5), 3);
+});
+
 test('low-affinity intimacy is classified, refused, and never rewarded', () => {
     assert.deepEqual(
         { ...core.classifyCupidIntimacyAdvance('키스하자') },
