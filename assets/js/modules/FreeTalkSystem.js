@@ -1750,12 +1750,12 @@ class FreeTalkSystem {
             };
 
             // JSON 파싱
-            let data = await requestCupidReplyData(_optimized);
+            const data = await requestCupidReplyData(_optimized);
             this._assertRequestContext(requestContext, data);
 
             // OpenAI API 응답 구조에서 대답 텍스트 추출
             // 구조: { choices: [{ message: { content: "대답 내용" } }] }
-            let reply = CupidFreeTalkCore.selectChatCompletionContent(data);
+            const reply = CupidFreeTalkCore.selectChatCompletionContent(data);
 
             if (!reply) {
                 console.warn('[Cupid FreeTalk] Empty AI response payload:', {
@@ -1786,76 +1786,7 @@ class FreeTalkSystem {
             }
 
             this._assertRequestContext(requestContext, data);
-            let parsed = this.parseJsonResponse(reply);
-
-            for (let repairAttempt = 0; repairAttempt < 2; repairAttempt += 1) {
-                const qualityIssue = window.getCupidRoleplayQualityIssue?.(parsed, {
-                    lang: _lang,
-                    charKey,
-                    recentMessages: _optimized,
-                    latestUserText: finalContent,
-                    requireForcedSexualViolation: true
-                });
-                if (!qualityIssue?.shouldRetry) break;
-
-                console.warn('[Cupid FreeTalk] Rejected roleplay draft; regenerating before display', qualityIssue);
-                const repairBlock = window.buildCupidRoleplayQualityRepairBlock?.(
-                    qualityIssue,
-                    _lang,
-                    charKey
-                );
-                if (!repairBlock || !_optimized[0] || _optimized[0].role !== 'system') break;
-
-                let repairMessages = [
-                    {
-                        ..._optimized[0],
-                        content: appendFreeTalkDynamicContext(_optimized[0].content, repairBlock)
-                    },
-                    ..._optimized.slice(1)
-                ];
-                repairMessages = this._forceLatestUserMessageLast(repairMessages, finalContent);
-                data = await requestCupidReplyData(repairMessages, { resetPreview: true });
-                this._assertRequestContext(requestContext, data);
-                const repairedContent = data?.choices?.[0]?.message?.content;
-                reply = typeof repairedContent === 'string' ? repairedContent.trim() : '';
-                if (!reply) throw new Error('AI response was empty. Please try again.');
-                parsed = this.parseJsonResponse(reply);
-            }
-
-            let finalQualityIssue = window.getCupidRoleplayQualityIssue?.(parsed, {
-                lang: _lang,
-                charKey,
-                recentMessages: _optimized,
-                latestUserText: finalContent,
-                requireForcedSexualViolation: true
-            });
-            if (finalQualityIssue?.shouldRetry) {
-                const recovered = window.recoverCupidRoleplayQualityFallback?.(parsed, {
-                    lang: _lang,
-                    charKey,
-                    recentMessages: _optimized,
-                    latestUserText: finalContent
-                });
-                if (recovered) {
-                    console.warn('[Cupid FreeTalk] Kept the valid response segments after quality retries were exhausted', recovered.qualityRecovery);
-                    parsed = recovered;
-                    finalQualityIssue = recovered.qualityRecovery?.acceptedAfterRetries
-                        ? null
-                        : window.getCupidRoleplayQualityIssue?.(parsed, {
-                            lang: _lang,
-                            charKey,
-                            recentMessages: _optimized,
-                            latestUserText: finalContent,
-                            requireForcedSexualViolation: true
-                        });
-                }
-            }
-            if (finalQualityIssue?.shouldRetry) {
-                const qualityError = new Error('AI response failed roleplay quality validation. Please try again.');
-                qualityError.reason = 'ROLEPLAY_QUALITY_REJECTED';
-                qualityError.qualityIssue = finalQualityIssue;
-                throw qualityError;
-            }
+            const parsed = this.parseJsonResponse(reply);
 
             window.__cupidLastStreamFinish = {
                 provider: data?.provider || '',
@@ -2028,9 +1959,7 @@ class FreeTalkSystem {
             if (typeof window.logCupidError === 'function' && !isOfflineTransportFailure && (!isTransientTransportFailure || error?.retryExhausted)) {
                 window.logCupidError(error, {
                     source: 'cupid-freetalk',
-                    errorType: error?.retryExhausted ? 'freetalk_upstream_retries_exhausted' : error?.reason === 'ROLEPLAY_QUALITY_REJECTED'
-                        ? 'freetalk_roleplay_quality_rejected'
-                        : (/^HTTP\s+\d+/.test(error?.message || '') ? 'freetalk_http_error' : 'freetalk_request_failed'),
+                    errorType: error?.retryExhausted ? 'freetalk_upstream_retries_exhausted' : (/^HTTP\s+\d+/.test(error?.message || '') ? 'freetalk_http_error' : 'freetalk_request_failed'),
                     sessionId: requestSceneId || '',
                     context: {
                         charId: charKey || '',
@@ -2047,8 +1976,7 @@ class FreeTalkSystem {
                         latestUserHash: _lastTurnMeta?.latestUserHash || '',
                         latestUserLength: _lastTurnMeta?.latestUserLength || String(finalContent || '').length,
                         hasImage: String(finalContent || '').includes('data:image/'),
-                        historyLength: requestHistory.length,
-                        qualityReason: error?.qualityIssue?.reason || ''
+                        historyLength: requestHistory.length
                     }
                 });
             }

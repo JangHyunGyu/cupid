@@ -2128,23 +2128,17 @@ try {
         || !promptsContent.includes('german_blick_grammar')) {
         errors.push('[FREETALK_OUTPUT_QUALITY] 다국어 시점·문자·캐릭터 설정 검증기 누락');
     }
-    if (!ftSysContent.includes('recentMessages: _optimized')
-        || !gftContent.includes('recentMessages: _optimized')
-        || !ftSysContent.includes('latestUserText: finalContent')
-        || !gftContent.includes('latestUserText: finalContent')) {
-        errors.push('[FREETALK_OUTPUT_QUALITY] 최근 답변 중복 또는 최신 사용자 상태 검증 연결 누락');
-    }
     if (!ftSysContent.includes("throw new Error('Unsupported Cupid response JSON schema')")
         || !gftContent.includes("throw new Error('Unsupported Cupid response JSON schema')")
         || ftSysContent.includes('obj.dialogue || obj.content || obj.message || obj.response')
         || gftContent.includes('parsed.dialogue || parsed.content || parsed.message || parsed.response')) {
         errors.push('[FREETALK_OUTPUT_SCHEMA] 미지원 JSON 객체의 내부 사유가 대사로 노출될 수 있음');
     }
-    if (!/requestCupidReplyData\(repairMessages(?:\s*,|\))/.test(ftSysContent)
-        || !/requestCupidGalleryReplyData\(repairMessages(?:\s*,|\))/.test(gftContent)
-        || !ftSysContent.includes("qualityError.reason = 'ROLEPLAY_QUALITY_REJECTED'")
-        || !gftContent.includes("qualityError.reason = 'ROLEPLAY_QUALITY_REJECTED'")) {
-        errors.push('[FREETALK_OUTPUT_QUALITY] 게임/갤러리 저장 전 재생성 경로 누락');
+    if (/requestCupidReplyData\(repairMessages/.test(ftSysContent)
+        || /requestCupidGalleryReplyData\(repairMessages/.test(gftContent)
+        || ftSysContent.includes('ROLEPLAY_QUALITY_REJECTED')
+        || gftContent.includes('ROLEPLAY_QUALITY_REJECTED')) {
+        errors.push('[FREETALK_OUTPUT_QUALITY] Displayable responses must not be regenerated or rejected for quality warnings');
     }
     if (!promptsContent.includes('At the adult reunion exactly four or five years after graduation, she is 30–31, never 36')
         || !promptsContent.includes('Yuna always has silver-white hair and red eyes')

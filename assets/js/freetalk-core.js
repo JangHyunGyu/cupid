@@ -1415,6 +1415,27 @@ Latest user: """${excerpt}"""
         };
     }
 
+    function closeDisplayJsonContainers(source) {
+      const stack = [];
+      let quoted = false;
+      let escaped = false;
+      for (const char of source) {
+        if (quoted) {
+          if (escaped) escaped = false;
+          else if (char === '\\') escaped = true;
+          else if (char === '"') quoted = false;
+          continue;
+        }
+        if (char === '"') quoted = true;
+        else if (char === '{' || char === '[') stack.push(char);
+        else if (char === '}' || char === ']') {
+          if (stack.pop() !== (char === '}' ? '{' : '[')) return '';
+        }
+      }
+      if (quoted || !stack.length) return '';
+      return source.replace(/,\s*$/, '') + stack.reverse().map(char => char === '{' ? '}' : ']').join('');
+    }
+
     function getCompleteDisplayableStreamReply(rawContent) {
         const source = String(rawContent || '').trim();
         if (!source) return '';
@@ -1425,7 +1446,9 @@ Latest user: """${excerpt}"""
         try {
             parsed = JSON.parse(candidate);
         } catch (_) {
-            return '';
+            if (!/^[\[{]/.test(candidate)) return candidate;
+            const repaired = closeDisplayJsonContainers(candidate);
+            return repaired ? getCompleteDisplayableStreamReply(repaired) : '';
         }
 
         const readDisplayText = value => {
@@ -1548,10 +1571,18 @@ Latest user: """${excerpt}"""
                 if (done) break;
             }
             if (buffer.trim()) await processEvent(buffer);
+        } catch (error) {
+            if (['SAFETY_BLOCKED', 'STALE_TURN'].includes(error?.reason) || error?.name === 'AbortError') throw error;
+            const existingReply = getCompleteDisplayableStreamReply(rawContent);
+            if (!existingReply) throw error;
+            finalPayload = { choices: [{ message: { content: existingReply }, finish_reason: 'stop' }] };
         } finally {
             reader.releaseLock?.();
         }
 
+        if (!finalPayload && getCompleteDisplayableStreamReply(rawContent)) {
+            finalPayload = { choices: [{ message: { content: getCompleteDisplayableStreamReply(rawContent) }, finish_reason: 'stop' }] };
+        }
         if (!finalPayload) {
             const error = new Error('AI stream ended before the final response');
             error.reason = 'STREAM_INTERRUPTED';

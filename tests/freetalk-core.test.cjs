@@ -191,7 +191,7 @@ test('normal completion keeps raw streamed narration while recovery uses final c
     );
 });
 
-test('SSE reader rejects a transport that ends without final metadata', async () => {
+test('SSE reader preserves visible prose when final metadata is missing', async () => {
     const encoder = new TextEncoder();
     const response = new Response(new ReadableStream({
         start(controller) {
@@ -199,10 +199,7 @@ test('SSE reader rejects a transport that ends without final metadata', async ()
             controller.close();
         }
     }), { headers: { 'content-type': 'text/event-stream' } });
-    await assert.rejects(
-        core.readChatCompletionStream(response),
-        error => error?.reason === 'STREAM_INTERRUPTED'
-    );
+    assert.equal(core.selectChatCompletionContent(await core.readChatCompletionStream(response)), 'partial');
 });
 
 test('every Cupid free-talk surface uses SSE, fixed pacing, and non-blocking backup logs', () => {
@@ -947,7 +944,8 @@ test('gallery runtime wires incident planning, persistence, and AI payload parsi
     assert.match(gallery, /_prepareGalleryIncidentRuntime/);
     assert.match(gallery, /_commitGalleryIncidentTurn/);
     assert.match(gallery, /normalizeGalleryIncidentPayload\(parsed\.incident\)/);
-    assert.match(gallery, /incidentState: requestContext\.incidentRuntime\?\.state/);
+    assert.match(gallery, /_commitGalleryIncidentTurn\(\{\s*charId: requestCharId,\s*runtime: requestContext\.incidentRuntime,\s*payload: parsed\.incident/);
+    assert.doesNotMatch(gallery, /requestCupidGalleryReplyData\(repairMessages/);
     assert.match(prompts, /scheduled_gallery_incident_payload_missing/);
     assert.match(prompts, /active_gallery_incident_payload_missing/);
     assert.match(progress, /getGalleryIncidentState\(charId\)/);

@@ -1219,9 +1219,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 }
             };
 
-            let data = await requestCupidGalleryReplyData(_optimized);
+            const data = await requestCupidGalleryReplyData(_optimized);
             this._assertRequestContext(requestContext, data);
-            let reply = GalleryFreeTalkCore.selectChatCompletionContent(data);
+            const reply = GalleryFreeTalkCore.selectChatCompletionContent(data);
 
             if (!reply) {
                 console.warn('[Cupid GalleryFreeTalk] Empty AI response payload:', {
@@ -1252,74 +1252,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             }
 
             this._assertRequestContext(requestContext, data);
-            let parsed = this._parseResponse(reply);
-            const roleplayQualityOptions = {
-                lang: this.lang,
-                charKey: requestCharKey || requestCharId,
-                recentMessages: _optimized,
-                latestUserText: finalContent,
-                incidentState: requestContext.incidentRuntime?.state || null,
-                incidentPlan: requestContext.incidentRuntime?.plan || null
-            };
-
-            for (let repairAttempt = 0; repairAttempt < 2; repairAttempt += 1) {
-                const qualityIssue = window.getCupidRoleplayQualityIssue?.(
-                    parsed,
-                    roleplayQualityOptions
-                );
-                if (!qualityIssue?.shouldRetry) break;
-
-                console.warn('[Cupid GalleryFreeTalk] Rejected roleplay draft; regenerating before display', qualityIssue);
-                const repairBlock = window.buildCupidRoleplayQualityRepairBlock?.(
-                    qualityIssue,
-                    this.lang,
-                    requestCharKey || requestCharId
-                );
-                if (!repairBlock || !_optimized[0] || _optimized[0].role !== 'system') break;
-
-                let repairMessages = [
-                    {
-                        ..._optimized[0],
-                        content: appendGalleryFreeTalkDynamicContext(_optimized[0].content, repairBlock)
-                    },
-                    ..._optimized.slice(1)
-                ];
-                repairMessages = this._forceLatestUserMessageLast(repairMessages, finalContent);
-                data = await requestCupidGalleryReplyData(repairMessages, { resetPreview: true });
-                this._assertRequestContext(requestContext, data);
-                const repairedContent = data?.choices?.[0]?.message?.content;
-                reply = typeof repairedContent === 'string' ? repairedContent.trim() : '';
-                if (!reply) throw new Error('AI response was empty. Please try again.');
-                parsed = this._parseResponse(reply);
-            }
-
-            let finalQualityIssue = window.getCupidRoleplayQualityIssue?.(
-                parsed,
-                roleplayQualityOptions
-            );
-            if (finalQualityIssue?.shouldRetry) {
-                const recovered = window.recoverCupidRoleplayQualityFallback?.(
-                    parsed,
-                    roleplayQualityOptions
-                );
-                if (recovered) {
-                    console.warn('[Cupid GalleryFreeTalk] Kept the valid response segments after quality retries were exhausted', recovered.qualityRecovery);
-                    parsed = recovered;
-                    finalQualityIssue = recovered.qualityRecovery?.acceptedAfterRetries
-                        ? null
-                        : window.getCupidRoleplayQualityIssue?.(
-                            parsed,
-                            roleplayQualityOptions
-                        );
-                }
-            }
-            if (finalQualityIssue?.shouldRetry) {
-                const qualityError = new Error('AI response failed roleplay quality validation. Please try again.');
-                qualityError.reason = 'ROLEPLAY_QUALITY_REJECTED';
-                qualityError.qualityIssue = finalQualityIssue;
-                throw qualityError;
-            }
-
+            const parsed = this._parseResponse(reply);
             window.__cupidLastStreamFinish = {
                 provider: data?.provider || '',
                 providerRoute: data?.providerRoute || '',
@@ -1448,9 +1381,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 if (typeof window.logCupidError === 'function' && !isOfflineTransportFailure && (!isTransientTransportFailure || err?.retryExhausted)) {
                     window.logCupidError(err, {
                         source: 'cupid-gallery-freetalk',
-                        errorType: err?.retryExhausted ? 'freetalk_upstream_retries_exhausted' : err?.reason === 'ROLEPLAY_QUALITY_REJECTED'
-                            ? 'freetalk_roleplay_quality_rejected'
-                            : (/^HTTP\s+\d+/.test(err?.message || '') ? 'freetalk_http_error' : 'freetalk_request_failed'),
+                        errorType: err?.retryExhausted ? 'freetalk_upstream_retries_exhausted' : (/^HTTP\s+\d+/.test(err?.message || '') ? 'freetalk_http_error' : 'freetalk_request_failed'),
                         sessionId: 'gallery-freetalk',
                         context: {
                             charId: requestCharKey || requestCharId || '',
@@ -1465,8 +1396,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                             latestUserHash: _lastTurnMeta?.latestUserHash || '',
                             latestUserLength: _lastTurnMeta?.latestUserLength || String(finalContent || '').length,
                             hasImage: String(finalContent || '').includes('data:image/'),
-                            historyLength: requestHistory.length,
-                            qualityReason: err?.qualityIssue?.reason || ''
+                            historyLength: requestHistory.length
                         }
                     });
                 }

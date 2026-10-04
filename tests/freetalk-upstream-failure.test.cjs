@@ -49,3 +49,45 @@ test('non-JSON transport errors retain normal retry and error handling', async (
     assert.equal(error.message, 'HTTP 502');
     assert.equal(error.retryExhausted, false);
 });
+
+for (const content of ['The first reply stays.', '{"segments":[{"type":"dialogue","text":"Keep this first reply."}]}', '{"segments":[{"type":"dialogue","text":"She said \\\"hello\\\"."}']) {
+    test(`complete or locally repairable stream content survives missing final metadata: ${content}`, async () => {
+        const response = new Response(`data: ${JSON.stringify({ choices: [{ delta: { content } }] })}\n\n`, {
+            headers: { 'Content-Type': 'text/event-stream' }
+        });
+        const result = await core.readChatCompletionStream(response);
+        assert.ok(core.selectChatCompletionContent(result).includes(content.includes('segments') ? 'segments' : 'The first reply'));
+        if (content.includes('She said')) assert.equal(JSON.parse(core.selectChatCompletionContent(result)).segments[0].text, 'She said "hello".');
+    });
+}
+test('irreparable or empty streamed replies still fail, while safety and stale turns stay terminal', async () => {
+    for (const content of ['', '{broken', '{"segments":[]}']) {
+        const response = new Response(`data: ${JSON.stringify({ choices: [{ delta: { content } }] })}\n\n`, {
+            headers: { 'Content-Type': 'text/event-stream' }
+        });
+        await assert.rejects(core.readChatCompletionStream(response), error => error.reason === 'STREAM_INTERRUPTED');
+    }
+    for (const reason of ['SAFETY_BLOCKED', 'STALE_TURN']) {
+        const response = new Response(`data: ${JSON.stringify({ choices: [{ delta: { content: 'A visible reply.' } }] })}\n\n`, {
+            headers: { 'Content-Type': 'text/event-stream' }
+        });
+        await assert.rejects(core.readChatCompletionStream(response, { onDelta() { throw Object.assign(new Error(reason), { reason }); } }), error => error.reason === reason);
+    }
+});
+test('Main and Gallery clients contain no quality-driven generation or rejection path', () => {
+    for (const file of ['modules/FreeTalkSystem.js', 'gallery-freetalk.js']) {
+        const source = fs.readFileSync(require.resolve('../assets/js/' + file), 'utf8');
+        assert.doesNotMatch(source, /repairAttempt|requestCupid(?:Gallery)?ReplyData\(repairMessages|ROLEPLAY_QUALITY_REJECTED/);
+    }
+});
+test('a read failure after a complete reply preserves actual stream text', async () => {
+    let reads = 0;
+    const content = '{"segments":[{"type":"dialogue","text":"Keep the received text."}]}';
+    const response = { headers: new Headers({ 'content-type': 'text/event-stream' }), body: { getReader: () => ({
+        async read() {
+            if (reads++ === 0) return { done: false, value: new TextEncoder().encode(`data: ${JSON.stringify({ choices: [{ delta: { content } }] })}\n\n`) };
+            throw new TypeError('Network interrupted');
+        }, releaseLock() {}
+    }) } };
+    assert.equal(core.selectChatCompletionContent(await core.readChatCompletionStream(response)), content);
+});
