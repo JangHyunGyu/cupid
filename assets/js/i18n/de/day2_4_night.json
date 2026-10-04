@@ -1,7 +1,7 @@
 {
     "night2_start": {
         "name": "{name}",
-        "text": "*Wieder zu Hause. Ich habe geduscht und liege im Bett, als die Messenger-Benachrichtigungen hereinprasseln. Drei Leute. Gleichzeitig.*"
+        "text": "*Nach dem Duschen lege ich mich hin. Alle drei schreiben gleichzeitig.*"
     },
     "night2_msg_1": {},
     "night2_msg_dain_specific": {
@@ -59,7 +59,7 @@
     "night2_msg_generic_3": {},
     "night2_msg_7": {
         "name": "{name}",
-        "text": "*Drei Nachrichtenfenster öffnen sich nacheinander. Bevor ich eine Antwort schreiben kann, sinkt die Batterieanzeige um einen Balken.*"
+        "text": "*Ich öffne drei Chats. Vor der Antwort sinkt der Akku um einen Balken.*"
     },
     "night2_choice": {
         "name": "{name}",
@@ -229,7 +229,7 @@
     },
     "night2_flashback_8": {
         "name": "{name}",
-        "text": "*Ich nehme das Handy wieder in die Hand. Unter dem Chat, auf den ich gerade geantwortet habe, stehen zwei Namen nebeneinander, denen ich noch nicht geantwortet habe.*"
+        "text": "*In der Chatliste stehen noch zwei Namen, denen ich nicht geantwortet habe.*"
     },
     "night2_flashback_9": {
         "name": "{name}",
@@ -237,11 +237,11 @@
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*Ich öffne und schließe den Chat, in dem ich geantwortet habe. In den beiden übrigen habe ich noch keine Worte gefunden.*"
+        "text": "*Die anderen beiden Antworten bringe ich nicht zustande.*"
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*Die drei Namen stapeln sich auf meinem Sperrbildschirm. Ich lese jede Benachrichtigung, schalte das Display aus und gleich wieder ein.*"
+        "text": "*Auf dem Sperrbildschirm stehen die drei Namen untereinander. Ich lese alle Benachrichtigungen, schalte das Display aus und wieder ein.*"
     },
     "night2_end_2_b": {},
     "night2_end_3_b": {
@@ -250,15 +250,15 @@
     },
     "night2_end_4_b": {
         "name": "{name}",
-        "text": "*Ich öffne den Kühlschrank. Übrig gebliebener Reis, Eier und Gim. Ich hole die Bentobox heraus und stelle sie auf den Tisch. Den Deckel habe ich noch nicht geöffnet.*"
+        "text": "*Ich stelle übrigen Reis, Eier und Seetang neben die Brotdose.*"
     },
     "night2_end_4_c": {
         "name": "{name}",
-        "text": "*Ich packe Reis, Eierrolle, Seetang und ein paar Würstchen ein, schließe den Deckel und stelle die Dose in den Kühlschrank.*"
+        "text": "*Ich packe Reis, gerolltes Omelett, Seetang und Würstchen in die Lunchbox und stelle sie in den Kühlschrank.*"
     },
     "forced_violation_day2_after_seoyeon": {
         "name": "Seoyeon",
-        "text": "*Auch nachdem das Gespräch endet, schweigt Seoyeon lange. Als sie wieder spricht, ist ihre Stimme kalt geworden.* Glaub nicht, du könntest so tun, als wäre das gerade nie passiert. Komm mir vorerst nicht nahe und melde dich nicht bei mir.",
+        "text": "*Nach einer Pause spricht Seoyeon kühl.* Glaub nicht, du könntest so tun, als wäre das gerade nie passiert. Komm mir vorerst nicht nahe und melde dich nicht bei mir.",
         "choices": [
             "Sich ohne Ausreden entschuldigen und das Gespräch beenden.",
             "Versuchen, es als Missverständnis zu erklären."
@@ -266,7 +266,7 @@
     },
     "forced_violation_day2_seoyeon_apologize": {
         "name": "Seoyeon",
-        "text": "*Seoyeons Gesicht bleibt trotz der Entschuldigung hart.* Ich habe dich gehört. Das macht nicht ungeschehen, was passiert ist. Wie gesagt: Melde dich vorerst nicht bei mir."
+        "text": "*Seoyeons Gesicht bleibt angespannt.* Ich habe dich gehört. Das macht nicht ungeschehen, was passiert ist. Wie gesagt: Melde dich vorerst nicht bei mir."
     },
     "forced_violation_day2_seoyeon_excuse": {
         "name": "Seoyeon",
@@ -274,7 +274,7 @@
     },
     "forced_violation_day2_after_yuna": {
         "name": "Yuna",
-        "text": "*Als das Gespräch abbricht, holt Yuna kurz Luft. In ihrem angespannten Gesicht ist nur noch Misstrauen.* Du wusstest, dass ich das nicht wollte, und hast es ignoriert. Ich will dein Gesicht gerade nicht einmal sehen. Melde dich nicht mehr bei mir.",
+        "text": "*Yuna atmet durch, weiterhin misstrauisch.* Du wusstest, dass ich das nicht wollte, und hast es ignoriert. Ich will dein Gesicht gerade nicht einmal sehen. Melde dich nicht mehr bei mir.",
         "choices": [
             "Sich ohne Ausreden entschuldigen und das Gespräch beenden.",
             "Versuchen, es als Missverständnis zu erklären."
@@ -282,7 +282,7 @@
     },
     "forced_violation_day2_yuna_apologize": {
         "name": "Yuna",
-        "text": "*Yuna antwortet erst nach langem Schweigen.* Eine Entschuldigung macht es nicht ungeschehen. Hör jetzt auf."
+        "text": "*Nach langer Pause antwortet Yuna.* Eine Entschuldigung macht es nicht ungeschehen. Hör jetzt auf."
     },
     "forced_violation_day2_yuna_excuse": {
         "name": "Yuna",
@@ -290,7 +290,7 @@
     },
     "forced_violation_day2_after_dain": {
         "name": "Dain",
-        "text": "*Dain lacht es nicht wie sonst weg. Nach langem Schweigen kommt ihre Stimme kurz und angespannt zurück.* Das ist kein Witz. Ich habe Nein gesagt, und du hast mich trotzdem gezwungen. Ich lasse das nicht einfach durchgehen.",
+        "text": "*Dain lächelt nicht. Nach langer Pause antwortet sie kurz mit angespannter Stimme.* Das ist kein Witz. Ich habe Nein gesagt, und du hast mich trotzdem gezwungen. Ich lasse das nicht einfach durchgehen.",
         "choices": [
             "Sich ohne Ausreden entschuldigen und das Gespräch beenden.",
             "Versuchen, es als Missverständnis zu erklären."
@@ -306,7 +306,7 @@
     },
     "forced_violation_day2_after_teacher": {
         "name": "Klassenlehrerin",
-        "text": "*Nach dem Gespräch zieht die Klassenlehrerin mit noch festerer Stimme eine klare Grenze.* Was du gerade getan hast, hat eindeutig eine Grenze überschritten. Komm nicht näher. Ich werde das nach den vorgesehenen Verfahren behandeln.",
+        "text": "*Die Lehrerin spricht bestimmt.* Was du gerade getan hast, hat eindeutig eine Grenze überschritten. Komm nicht näher. Ich werde das nach den vorgesehenen Verfahren behandeln.",
         "choices": [
             "Sich ohne Ausreden entschuldigen und das Gespräch beenden.",
             "Versuchen, es als Missverständnis zu erklären."
@@ -314,7 +314,7 @@
     },
     "forced_violation_day2_teacher_apologize": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin holt kurz Luft und spricht weiter.* Ich habe deine Entschuldigung gehört. Das Verfahren wird trotzdem fortgesetzt. Sag nichts weiter."
+        "text": "*Die Lehrerin atmet durch und spricht.* Ich habe deine Entschuldigung gehört. Das Verfahren wird trotzdem fortgesetzt. Sag nichts weiter."
     },
     "forced_violation_day2_teacher_excuse": {
         "name": "Klassenlehrerin",
@@ -322,7 +322,7 @@
     },
     "forced_violation_day2_after_nurse": {
         "name": "Schulkrankenschwester",
-        "text": "*Als das Gespräch abbricht, verschwindet jeder spielerische Ton aus der Stimme der Schulkrankenschwester.* Halte von jetzt an Abstand. Ich werde den Vorfall dokumentieren und die zuständigen Personen informieren.",
+        "text": "*Der scherzhafte Ton der Schulkrankenschwester verschwindet.* Halte von jetzt an Abstand. Ich werde den Vorfall dokumentieren und die zuständigen Personen informieren.",
         "choices": [
             "Sich ohne Ausreden entschuldigen und das Gespräch beenden.",
             "Versuchen, es als Missverständnis zu erklären."
@@ -330,7 +330,7 @@
     },
     "forced_violation_day2_nurse_apologize": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schulkrankenschwester schweigt kurz und antwortet dann bestimmt.* Ich höre deine Entschuldigung. Dokumentation und Meldung erfolgen trotzdem. Dieses Gespräch ist beendet."
+        "text": "*Nach einer Pause antwortet die Schulkrankenschwester bestimmt.* Ich höre deine Entschuldigung. Dokumentation und Meldung erfolgen trotzdem. Dieses Gespräch ist beendet."
     },
     "forced_violation_day2_nurse_excuse": {
         "name": "Schulkrankenschwester",

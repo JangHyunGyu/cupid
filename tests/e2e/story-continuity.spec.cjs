@@ -38,14 +38,21 @@ for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
 test('reload and landing Continue preserve authored rewards and the current scene', async ({ page }) => {
     await page.goto('/game.html');
     await ready(page);
-    const expected = await page.evaluate(async () => {
+    const observed = await page.evaluate(async () => {
         const engine = window.gameEngine;
         engine.dialogueSystem.typingSpeed = 0;
-        engine.stateManager.stats.Dain.affinity = 20;
+        const before = engine.stateManager.getAffinity('Dain');
+        const authoredScene = await engine._getSceneWithLazyContent('lunch_dain_2');
         await engine.renderScene('lunch_dain_2');
-        return { affinity: engine.stateManager.getAffinity('Dain'), scene: engine.sceneRenderer.currentSceneId };
+        return {
+            before,
+            reward: authoredScene.stats.Dain.affinity,
+            saved: { affinity: engine.stateManager.getAffinity('Dain'), scene: engine.sceneRenderer.currentSceneId }
+        };
     });
-    expect(expected.affinity).toBeGreaterThan(20);
+    expect(observed.reward).toBe(8);
+    expect(observed.saved.affinity).toBe(observed.before + observed.reward);
+    const expected = observed.saved;
     for (let i = 0; i < 2; i++) {
         await page.reload();
         await ready(page);

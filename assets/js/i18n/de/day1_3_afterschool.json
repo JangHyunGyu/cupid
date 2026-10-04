@@ -1,7 +1,7 @@
 {
     "after_start": {
         "name": "{name}",
-        "text": "*Nach dem Unterricht gehe ich durch die Flure, um mich besser in der Schule zurechtzufinden. Mein Handy vibriert in der Tasche. Es ist der Gruppenchat meiner alten Schule.*"
+        "text": "*Nach Schulschluss im Flur. Ich sehe mir die Nachricht aus dem Gruppenchat meiner alten Schule an.*"
     },
     "after_kakao_1": {
         "name": "{name}",
@@ -14,7 +14,7 @@
     "after_kakao_5": {},
     "after_kakao_end": {
         "name": "{name}",
-        "text": "*Nach kurzem Zögern verlasse ich den Gruppenchat. Ganz oben steht jetzt der Chat der neuen Schule.*"
+        "text": "*Nach kurzem Zögern verlasse ich die Gruppe. Oben bleibt nur der Messenger der neuen Schule.*"
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
@@ -22,7 +22,7 @@
     },
     "after1_jealousy_seo_2": {
         "name": "{name}",
-        "text": "*Ich tippe 'mit Seoyeon' ins Antwortfeld und lösche es wieder. Der Cursor blinkt allein im ersten Feld.*"
+        "text": "*Ich lösche „mit Seoyeon“ aus meiner Antwort.*"
     },
     "after1_jealousy_seo_3": {
         "name": "Dain",
@@ -55,8 +55,8 @@
         "text": "Wirklich? …Dann habe ich mich wohl verguckt."
     },
     "after1_jealousy_seo_yuna": {
-        "name": "{name}",
-        "text": "*In der Seitentasche meiner Tasche steckt ein gefalteter Zettel. Yunas Handschrift. »Ich hab dich mittags auf dem Dach gesehen. Du und die Schülersprecherin, ihr saht euch ziemlich nah.« Der Punkt am Ende ist auf dem Papier verlaufen.*"
+        "name": "Yuna",
+        "text": "*Ein gefalteter Zettel im Seitenfach. Yunas Schrift, der letzte Punkt verwischt.* Ich habe dich mittags auf dem Dach gesehen. Du schienst dich gut mit der Schülerratsvorsitzenden zu verstehen."
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
@@ -64,7 +64,7 @@
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
-        "text": "*Seoyeon richtet die Blätter auf ihrem Klemmbrett aus. Ich bleibe stehen und überlege, was ich sagen soll.*"
+        "text": "*Seoyeon richtet das Klemmbrett mit den Fingerspitzen aus. Ich halte an und überlege, was ich antworten soll.*"
     },
     "after1_jealousy_yuna_1": {
         "name": "Dain",
@@ -88,8 +88,8 @@
         "text": "Vorsicht!!"
     },
     "after_miss_dain_3": {
-        "name": "{name}",
-        "text": "*Ich trete zur Seite, und Dain streift im Vorbeilaufen an mir vorbei. Drei Schritte später schleift die Sohle ihres Turnschuhs über den Boden, als sie anhält.*"
+        "name": "Dain",
+        "text": "Oh, du bist ausgewichen! *Sie hält drei Schritte später an.*"
     },
     "after_miss_dain_4": {
         "name": "Dain",
@@ -105,16 +105,16 @@
     },
     "after_miss_dain_6_b": {
         "name": "{name}",
-        "text": "*Nach ein paar Laufschritten stützt sie eine Hand aufs rechte Knie. Sofort zieht sie sie wieder weg und beschleunigt erneut.*"
+        "text": "*Nach ein paar Laufschritten greift sie ans rechte Knie, lässt es los und wird schneller.*"
     },
     "after_miss_dain_7": {
-        "name": "{name}",
-        "text": "*Kurz bevor Dain um die Ecke biegt, hebt sie eine Hand hoch. Endlich fällt mir wieder ein, welchen Namen die Lehrerin vorhin gerufen hat. Dain.*"
+        "name": "Dain",
+        "text": "Ich heiße Dain. Nicht vergessen! *Sie winkt an der Ecke.*"
     },
     "after_yuna_skip": {},
     "after_miss_yuna_1": {
         "name": "{name}",
-        "text": "*Als ich an der Bibliothek vorbeigehe, kommt mir das Mädchen mit den roten Augen entgegen und liest dabei. Mit ihrem tätowierten Arm stützt sie behutsam den Buchrücken.*"
+        "text": "*Das Mädchen mit den roten Augen geht an der Bibliothek vorbei, das Buch auf dem tätowierten Arm.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
@@ -126,7 +126,7 @@
     },
     "after_miss_yuna_2": {
         "name": "Yuna",
-        "text": "*Mit dem Daumen streicht sie die Ecke des Lesezeichens glatt und hält es ins Licht. Keine Knickspur.*"
+        "text": "Keine Knicke. *Sie prüft das Lesezeichen.*"
     },
     "after_miss_yuna_3": {
         "name": "Yuna",
@@ -163,7 +163,7 @@
     },
     "after_miss_seoyeon_7": {
         "name": "{name}",
-        "text": "*Seoyeon drückt die Klemmbrettmappe an ihre Brust und steckt die Kappe auf den Stift, ohne mich anzusehen.*"
+        "text": "*Sie hält das Klemmbrett fest und verschließt den Stift, ohne mich anzusehen.*"
     },
     "after_miss_seoyeon_8": {
         "name": "Seoyeon",
@@ -171,7 +171,7 @@
     },
     "after_end": {
         "name": "{name}",
-        "text": "*Die Durchsage zum Schulschluss ertönt, und nach und nach leeren sich die Flure.*",
+        "text": "*Nach der Durchsage zum Schulschluss leert sich der Flur.*",
         "choices": [
             "Lehrerzimmer",
             "Krankenzimmer",
@@ -180,7 +180,7 @@
     },
     "after_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Ich will gerade nach Hause gehen, als mir meine Klassenlehrerin einfällt. Sie war bis zuletzt im Klassenzimmer geblieben und hatte das Klassenbuch geordnet. Vor dem Lehrerzimmer klopfe ich und öffne die Tür.*"
+        "text": "*Ich klopfe an die Tür des Lehrerzimmers.* Haben Sie kurz Zeit?"
     },
     "after_hidden_homeroom_cool": {
         "name": "Klassenlehrerin",
@@ -195,8 +195,8 @@
         "text": "Oh, {name}? Was gibt's?"
     },
     "after_hidden_homeroom_3": {
-        "name": "{name}",
-        "text": "*Es ist die Klassenlehrerin. Ein Ärmel ihrer Strickjacke ist hochgekrempelt, und eine geknickte Mitteilung ragt zwischen den Seiten des Anwesenheitshefts hervor.*"
+        "name": "Klassenlehrerin",
+        "text": "Ja, komm rein. *Ein hochgeschobener Ärmel; eine gefaltete Mitteilung ragt aus dem Klassenbuch.*"
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
@@ -229,7 +229,7 @@
     },
     "after_homeroom_ok_b": {
         "name": "Klassenlehrerin",
-        "text": "*Sie schiebt die Unterlagen auf ihrem Schreibtisch zur Seite und macht einen Stuhl frei. Mit einer Hand auf der Lehne bedeutet sie mir, mich zu setzen.*"
+        "text": "*Sie schiebt die Papiere zur Seite und macht einen Stuhl frei.*"
     },
     "after_homeroom_ok_3": {
         "name": "Klassenlehrerin",
@@ -245,7 +245,7 @@
     },
     "after_homeroom_ok_6": {
         "name": "Klassenlehrerin",
-        "text": "*Die Lehrerin wendet sich wieder ihrem Schreibtisch zu. Ich verabschiede mich kurz und schließe die Tür des Lehrerzimmers hinter mir.*"
+        "text": "Mach's gut. *Sie wendet sich wieder ihrem Schreibtisch zu.*"
     },
     "after_homeroom_honest_1": {
         "name": "Klassenlehrerin",
@@ -261,7 +261,7 @@
     },
     "after_homeroom_honest_3_b": {
         "name": "Klassenlehrerin",
-        "text": "*Sie dreht das Klemmbrett in der Hand um und reibt mit dem Daumen über eine Ecke.*"
+        "text": "*Sie dreht das Klemmbrett um und reibt mit dem Daumen eine Ecke.*"
     },
     "after_homeroom_honest_4": {
         "name": "Klassenlehrerin",
@@ -319,11 +319,11 @@
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
-        "text": "*Draußen gehen Schüler vorbei. Die Lehrerin schiebt ihre Unterlagen zur Seite.*"
+        "text": "*Schritte draußen. Die Lehrerin schiebt die Unterlagen zur Seite.*"
     },
     "after_homeroom_honest_10": {
         "name": "Klassenlehrerin",
-        "text": "*Wir treten vor dem Lehrerzimmer auf den Flur. Sie hält das Klassenbuch unter dem Arm und wartet, bis ich weiterrede.*"
+        "text": "Reden wir im Flur weiter? *Sie geht mit dem Klassenbuch hinaus.*"
     },
     "after_homeroom_freetalk": {
         "name": "Klassenlehrerin",
@@ -333,7 +333,7 @@
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",
-        "text": "*Die Leuchtstoffröhren im Flur scheinen zu schwanken. Ich stütze mich an der Wand ab und spüre die kalte Farbe unter meiner Handfläche. Direkt neben mir hängt das Schild zum Krankenzimmer.*"
+        "text": "*Mir wird schwindlig. Ich stütze mich an die Wand, neben dem Schild zur Krankenstation.*"
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
@@ -347,7 +347,7 @@
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
-        "text": "*Vor der Tür bleibe ich stehen, atme einmal durch und lege die Hand auf die Klinke. Das Metall ist kalt.*"
+        "text": "*Ich atme durch und greife die kalte Klinke.*"
     },
     "after_nurse_d1_cool": {
         "name": "Schulkrankenschwester",
@@ -359,7 +359,7 @@
     },
     "after_nurse_enter_1": {
         "name": "{name}",
-        "text": "*Ich öffne die Tür zum Krankenzimmer. Desinfektionsmittelgeruch. Weiße Vorhänge und ein Bett, ein kleiner Schreibtisch. Eine Frau in einem weißen Kittel sieht mich über ihre Brille hinweg an. Das Stethoskop um ihren Hals berührt die Tischkante und schwingt leicht.*"
+        "text": "*Es riecht nach Desinfektionsmittel. Die Frau im weißen Kittel blickt über ihre Brille.* Entschuldigung."
     },
     "after_nurse_enter_2": {
         "name": "Schulkrankenschwester",
@@ -367,7 +367,7 @@
     },
     "after_nurse_enter_2_b": {
         "name": "{name}",
-        "text": "*Die Schulkrankenschwester zieht einen Behandlungsbogen hervor und tippt mit dem Stift auf die oberste Zeile.*"
+        "text": "*Sie nimmt ein Protokollblatt und tippt auf die erste Zeile.*"
     },
     "after_nurse_enter_3": {
         "name": "{name}",
@@ -407,7 +407,7 @@
     },
     "after_nurse_enter_7_b": {
         "name": "{name}",
-        "text": "*Als ich mich hinlege, raschelt das dünne Laken unter mir.*"
+        "text": "*Beim Hinlegen raschelt das Laken.*"
     },
     "after_nurse_enter_7_c": {
         "name": "Schulkrankenschwester",
@@ -419,7 +419,7 @@
     },
     "after_nurse_enter_choice": {
         "name": "{name}",
-        "text": "*Durch den Spalt im Vorhang sehe ich, wie die Schulkrankenschwester ein Formular ausfüllt.*",
+        "text": "*Hinter dem Vorhang füllt die Schulkrankenschwester das Protokoll aus.*",
         "choices": [
             "Sie sehen müder aus als ich, ehrlich gesagt",
             "Das Krankenzimmer ist ruhiger, als ich dachte.",
@@ -472,7 +472,7 @@
     },
     "after_nurse_enter_10_b": {
         "name": "Schulkrankenschwester",
-        "text": "*Als sie das Formular in die Schublade legt, sehe ich kurz ein hellgrünes Notizbuch darin. Seit ich mich hingelegt habe, sind zehn Minuten vergangen.*"
+        "text": "Zehn Minuten sind um. Geht's besser? *Beim Einräumen des Formulars ist kurz ein hellgrünes Heft im Fach zu sehen.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",
@@ -492,7 +492,7 @@
     },
     "after_nurse_enter_11_d": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Krankenschwester stellt den Wasserbecher auf den Tisch. Der Becherboden klingt dumpf.*"
+        "text": "*Sie stellt das Wasserglas mit einem dumpfen Geräusch ab.*"
     },
     "after_nurse_enter_11_e": {
         "name": "Schulkrankenschwester",
@@ -533,7 +533,7 @@
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*Ich halte beim Aufstehen inne. Die Schulkrankenschwester schaut auf die Uhr und dreht ihren Stuhl zu mir.*"
+        "text": "*Ich will aufstehen, halte aber inne. Die Schulkrankenschwester sieht auf die Uhr und dreht den Stuhl zu mir.*"
     },
     "after_nurse_freetalk": {
         "name": "Schulkrankenschwester",

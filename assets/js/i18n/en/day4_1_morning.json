@@ -43,15 +43,15 @@
     },
     "minsu_cheer_1_b": {
         "name": "Minsu",
-        "text": "*Yo, you've got a date today?*"
+        "text": "Hey, you've got a date today, right?"
     },
     "minsu_cheer_1_c": {
         "name": "{name}",
-        "text": "*How did you know*"
+        "text": "How did you know?"
     },
     "minsu_cheer_1_d": {
         "name": "Minsu",
-        "text": "*After all that weekend talk in class, you thought I wouldn’t notice? lol*"
+        "text": "You talked about the weekend all over class. Think I wouldn't notice? lol"
     },
     "minsu_cheer_2": {
         "name": "Minsu",
@@ -103,7 +103,7 @@
     },
     "morning4_fallback_msg": {
         "name": "{name}",
-        "text": "*Weekend morning. I check a few notifications and set down my phone. Outside, an apartment-complex street sweeper passes by.*"
+        "text": "*Weekend morning. I check the notifications and put my phone down.*"
     },
     "morning4_hidden_check": {
         "name": "{name}",
@@ -116,7 +116,7 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "*One side of the main gate is open. My homeroom teacher comes out carrying a paper bag.*"
+        "text": "Good morning. *I meet my teacher carrying a paper bag at the open gate.*"
     },
     "hidden_homeroom_d4_1_b": {
         "name": "{name}",
@@ -180,7 +180,7 @@
     },
     "hidden_homeroom_d4_5_d": {
         "name": "Homeroom Teacher",
-        "text": "*After she finishes speaking, she folds the paper-bag handles twice in her grip.*"
+        "text": "You don't have to read it just because your teacher wrote it. You may have plans of your own today. *She folds the paper bag's handles twice and holds them.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
@@ -209,7 +209,7 @@
     },
     "hidden_homeroom_d4_cafe_1_d": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher says it like a joke and touches the coffee cup. Two circular water rings overlap on the coaster.*"
+        "text": "We should finish our coffee first, right? *She touches the cup with a joking air. Two round water marks overlap on the coaster.*"
     },
     "hidden_homeroom_d4_cafe_1_e": {
         "name": "{name}",
@@ -217,7 +217,7 @@
     },
     "hidden_homeroom_d4_cafe_1_f": {
         "name": "Homeroom Teacher",
-        "text": "*She sets down her coffee cup, her fingers lingering on the handle.*"
+        "text": "Choosing feels a little embarrassing. Reading it alone is different from showing it to someone. *She sets down the coffee cup, her fingers still on the handle.*"
     },
     "hidden_homeroom_d4_cafe_2": {
         "name": "Homeroom Teacher",
@@ -245,7 +245,7 @@
     },
     "hidden_homeroom_d4_cafe_choice": {
         "name": "Homeroom Teacher",
-        "text": "*She sets down her coffee and tips her chin toward the critique copies on an inside table.*",
+        "text": "Mark it if you get stuck. I'd like to know whether you turned the page out of curiosity or just kept reading to be polite. *She sets down her cup and nods toward the workshop copies on the inner table.*",
         "choices": [
             "You still haven't decided on the ending?",
             "You'll show the whole thing to the club too, right?",
@@ -273,8 +273,8 @@
         "text": "I'll give it a try."
     },
     "hidden_homeroom_d4_cafe_5_b": {
-        "name": "Homeroom Teacher",
-        "text": "*The hand folding the cup sleeve opens. The creases remain in the paper.*"
+        "name": "{name}",
+        "text": "Should I put my name on my comments? I was wondering if the others would see what I wrote. *She opens the hand that was folding the cup sleeve. The creases remain.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Homeroom Teacher",
@@ -297,8 +297,8 @@
         "text": "I’ll collect today’s comments so we can go through them together next time."
     },
     "hidden_homeroom_d4_cafe_5_h": {
-        "name": "Homeroom Teacher",
-        "text": "*She numbers each copy and sends the last one to the table in the back.*"
+        "name": "{name}",
+        "text": "Is having the workshop here very different from doing it at school? ...I didn't expect to be reading a manuscript over coffee. *She numbers every copy and sends the last one to the inner table.*"
     },
     "hidden_homeroom_d4_cafe_6": {
         "name": "Homeroom Teacher",
@@ -315,7 +315,7 @@
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "*On the morning set aside to prepare for the school event, I open the nurse's office door at my scheduled counseling time. A counseling form and an information sheet lie in front of the nurse.*"
+        "text": "I'm here for my appointment. *Event-preparation day in the infirmary. Records and leaflets lie on the desk.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "School Nurse",
@@ -412,7 +412,7 @@
     },
     "hidden_nurse_d4_2_d": {
         "name": "{name}",
-        "text": "*As event staff come and go, we lay out gauze and alcohol swabs by type across the table.*"
+        "text": "I'll separate the gauze and swabs. *I arrange the table as staff come and go.*"
     },
     "hidden_nurse_d4_2_e": {
         "name": "School Nurse",
@@ -420,7 +420,7 @@
     },
     "hidden_nurse_d4_2_f": {
         "name": "{name}",
-        "text": "*I fill each pouch with supplies. The nurse checks every finished kit again.*"
+        "text": "This pouch is ready. Could you check it? *I start filling the next one.*"
     },
     "hidden_nurse_d4_2_g": {
         "name": "School Nurse",
@@ -444,7 +444,7 @@
     },
     "hidden_nurse_d4_4_c": {
         "name": "School Nurse",
-        "text": "*She closes the file. The tip of her pen slips once across the cover.*"
+        "text": "I was very busy, yes. But if I said it was only because of that... I'd be leaving something out. *She closes the file. Her pen slips once across the cover.*"
     },
     "hidden_nurse_d4_4_d": {
         "name": "School Nurse",
@@ -473,7 +473,7 @@
     },
     "hidden_nurse_d4_4_k": {
         "name": "{name}",
-        "text": "*She zips the final first-aid kit closed. Outside, other volunteers carry away the completed boxes.*"
+        "text": "That's the last kit done. *I zip it shut; the volunteers move the boxes.*"
     },
     "hidden_nurse_d4_5": {
         "name": "School Nurse",
@@ -523,7 +523,7 @@
     },
     "hidden_nurse_d4_meal_walk": {
         "name": "{name}",
-        "text": "*I stop by the snack shop in front of school with the event staff. There are enough takeout bags for everyone.*"
+        "text": "One order per person, right? *I count bags at the snack shop outside school.*"
     },
     "hidden_nurse_d4_meal_1": {
         "name": "School Nurse",
@@ -546,8 +546,8 @@
         "text": "You look different now than when you talk about the hospital."
     },
     "hidden_nurse_d4_meal_2_b": {
-        "name": "School Nurse",
-        "text": "*One label goes on crooked over the corner of a box.*"
+        "name": "{name}",
+        "text": "*One label sticks crookedly to the box's corner.* You look a little more at ease now. ...Oh, that label's crooked. Maybe I distracted you by talking."
     },
     "hidden_nurse_d4_meal_3": {
         "name": "School Nurse",
@@ -620,11 +620,11 @@
     },
     "day4_haeun_concern_open": {
         "name": "{name}",
-        "text": "*I ask what they heard and say I will explain with Haeun here. The other person glances at her once more, then turns to me.*"
+        "text": "Tell me what you heard first. I'll explain with Haeun here."
     },
     "day4_haeun_concern_delay": {
         "name": "{name}",
-        "text": "*I say I don’t want to discuss it now and try to leave. The other person calls my name. Haeun stays as well.*"
+        "text": "I don't want to talk now. Later. *As I try to leave, the other person calls me back.*"
     },
     "day4_haeun_concern_clarify": {
         "name": "Haeun",
@@ -632,7 +632,7 @@
     },
     "day4_haeun_concern_seoyeon_intro": {
         "name": "Haeun",
-        "text": "*I hear Haeun by the gate. She is speaking quietly to someone, then stops when she sees me.* I felt uncomfortable when we talked yesterday. I wasn’t sure how to take it, so I brought it up."
+        "text": "*By the gate, Haeun speaks quietly to the person opposite her, then stops when she sees me.* I felt uncomfortable when we talked yesterday. I wasn’t sure how to take it, so I brought it up."
     },
     "day4_haeun_concern_seoyeon_arrival": {
         "name": "Seoyeon",
@@ -659,7 +659,7 @@
     },
     "day4_haeun_concern_yuna_intro": {
         "name": "Haeun",
-        "text": "*I hear Haeun by the gate. She is speaking quietly to someone, then stops when she sees me.* I felt uncomfortable when we talked yesterday. I wasn’t sure how to take it, so I brought it up."
+        "text": "*By the gate, Haeun speaks quietly to the person opposite her, then stops when she sees me.* I felt uncomfortable when we talked yesterday. I wasn’t sure how to take it, so I brought it up."
     },
     "day4_haeun_concern_yuna_arrival": {
         "name": "Yuna",
@@ -686,7 +686,7 @@
     },
     "day4_haeun_concern_dain_intro": {
         "name": "Haeun",
-        "text": "*I hear Haeun by the gate. She is speaking quietly to someone, then stops when she sees me.* I felt uncomfortable when we talked yesterday. I wasn’t sure how to take it, so I brought it up."
+        "text": "*By the gate, Haeun speaks quietly to the person opposite her, then stops when she sees me.* I felt uncomfortable when we talked yesterday. I wasn’t sure how to take it, so I brought it up."
     },
     "day4_haeun_concern_dain_arrival": {
         "name": "Dain",
@@ -713,7 +713,7 @@
     },
     "day4_haeun_concern_teacher_intro": {
         "name": "Haeun",
-        "text": "*I hear Haeun by the gate. She is speaking quietly to someone, then stops when she sees me.* I felt uncomfortable when we talked yesterday. I wasn’t sure how to take it, so I brought it up."
+        "text": "*By the gate, Haeun speaks quietly to the person opposite her, then stops when she sees me.* I felt uncomfortable when we talked yesterday. I wasn’t sure how to take it, so I brought it up."
     },
     "day4_haeun_concern_teacher_arrival": {
         "name": "Homeroom Teacher",
@@ -740,7 +740,7 @@
     },
     "day4_haeun_concern_nurse_intro": {
         "name": "Haeun",
-        "text": "*I hear Haeun by the gate. She is speaking quietly to someone, then stops when she sees me.* I felt uncomfortable when we talked yesterday. I wasn’t sure how to take it, so I brought it up."
+        "text": "*By the gate, Haeun speaks quietly to the person opposite her, then stops when she sees me.* I felt uncomfortable when we talked yesterday. I wasn’t sure how to take it, so I brought it up."
     },
     "day4_haeun_concern_nurse_arrival": {
         "name": "School Nurse",
@@ -767,11 +767,11 @@
     },
     "day4_haeun_approach": {
         "name": "{name}",
-        "text": "*Haeun stands beside the open school gate. I slow down when I see her talking to someone.*"
+        "text": "Haeun, got a moment? *I approach her as she talks with someone by the open gate.*"
     },
     "day4_haeun_finish": {
         "name": "{name}",
-        "text": "*As the conversation ends, Haeun and I step aside by the gate. People are waiting for the light at the crossing.*"
+        "text": "We're in the way. Let's move over. *I step aside with Haeun by the gate.*"
     },
     "day4_haeun_notice_1": {
         "name": "Haeun",

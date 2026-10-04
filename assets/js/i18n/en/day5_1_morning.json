@@ -9,7 +9,7 @@
     },
     "morning5_start": {
         "name": "{name}",
-        "text": "*Day five. It's Sunday, but there's a school event. The cuff of my uniform no longer scratches my wrist.*"
+        "text": "*Day five, Sunday. I head to the school event.*"
     },
     "morning5_start_branch": {},
     "morning5_temptation_discovery_branch": {},
@@ -115,11 +115,11 @@
     },
     "morning5_caught_seoyeon_honest": {
         "name": "Seoyeon",
-        "text": "*Even after hearing everything, Seoyeon doesn't take off her glasses. She turns the eyes behind the lenses back to the screen.* I can't thank you for being honest. It's hard to look at you right now."
+        "text": "*Seoyeon looks back at the screen.* I can't thank you for being honest. Right now, I can barely look at you."
     },
     "morning5_caught_seoyeon_lie": {
         "name": "Seoyeon",
-        "text": "*Seoyeon looks from the lit notification to the face across from her. The last trace of her smile disappears.* What you just said bothers me more than last night."
+        "text": "*Seoyeon looks between the alert and me.* What you're saying now bothers me more than yesterday."
     },
     "morning5_caught_dain_honest": {
         "name": "Dain",
@@ -135,7 +135,7 @@
     },
     "morning5_caught_yuna_lie": {
         "name": "Yuna",
-        "text": "*Instead of answering, Yuna turns the screen on again. The notification stays between us.* I even gave you a chance to come clean, and you're hiding it again."
+        "text": "*Yuna lights up the alert again.* I even gave you a chance to explain, and you're still hiding it."
     },
     "morning5_counteroffer_group_talk": {
         "name": "Both of Them",
@@ -164,8 +164,8 @@
     },
     "morning5_gate": {},
     "morning5_seo_note_1": {
-        "name": "{name}",
-        "text": "*There's a note on my desk. Seoyeon's handwriting. — 'Make some time this afternoon. I'll leave the rooftop unlocked. — Seoyeon'*"
+        "name": "Seoyeon",
+        "text": "*A note on the desk in Seoyeon's handwriting.* Make a little time this afternoon. I'll leave the rooftop open. — Seoyeon"
     },
     "morning5_seo_note_1_b": {
         "name": "{name}",
@@ -177,7 +177,7 @@
     },
     "morning5_yuna_story_gone_2": {
         "name": "{name}",
-        "text": "*I pause before the empty noticeboard. The pinholes tell me nothing about what Yuna was thinking.*"
+        "text": "*Pin marks alone can't tell me how Yuna feels.*"
     },
     "morning5_seo_note_1_c": {
         "name": "{name}",
@@ -226,11 +226,11 @@
     },
     "hidden_homeroom_d5_check": {
         "name": "{name}",
-        "text": "*During event preparations, I pass an empty classroom with its door open.*"
+        "text": "*During setup, I pass an open, empty classroom.*"
     },
     "hidden_homeroom_d5_1": {
-        "name": "Homeroom Teacher",
-        "text": "*My homeroom teacher sits at the lectern holding a brown envelope. The manuscript pages are nowhere in sight.*"
+        "name": "{name}",
+        "text": "You're still here, ma'am. That envelope... I can't see the manuscript. *She sits at the teacher's desk holding a brown envelope.*"
     },
     "hidden_homeroom_d5_1_b": {
         "name": "Homeroom Teacher",
@@ -258,7 +258,7 @@
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",
-        "text": "*I receive a numbered critique copy. An anonymous feedback form is attached after the last page.*"
+        "text": "I submit it under this number, right? *An anonymous feedback section follows the manuscript.*"
     },
     "hidden_homeroom_d5_5": {
         "name": "Homeroom Teacher",
@@ -276,7 +276,7 @@
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "Homeroom Teacher",
-        "text": "*The corner of the envelope crumples slightly in her hand. She smooths the fold with her thumb.*"
+        "text": "You don't have to find something nice to say before reading. Spending a long time writing doesn't mean I've written it well. *She smooths the envelope corner crumpled in her hand with her thumb.*"
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Homeroom Teacher",
@@ -292,7 +292,7 @@
     },
     "hidden_homeroom_d5_praise_trap_5": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher reaches out. Takes the manuscript back. Slowly. Slides it back into the envelope.*"
+        "text": "I'll take it for now. I know you're trying to be kind. But you haven't read it yet. *She takes the manuscript, hesitates, and puts it in the envelope.*"
     },
     "hidden_homeroom_d5_praise_trap_6": {
         "name": "Homeroom Teacher",
@@ -323,8 +323,8 @@
         "text": "*I left and closed the classroom door. The envelope is still on the teacher's desk. A return-label mark the size of a fingernail remains on the surface.*"
     },
     "hidden_homeroom_d5_correct_1": {
-        "name": "Homeroom Teacher",
-        "text": "*The end of the paper bends slightly in her hand. Lips pressed together, she carefully smooths the folded edge.*"
+        "name": "{name}",
+        "text": "If there's a little time, can I read it now? I'd like to see where I get stuck first. *She keeps her lips closed and straightens the paper edge bent in her hand.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Homeroom Teacher",
@@ -340,7 +340,7 @@
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*When I open the envelope, the smell of paper rises. The end of the last page is blank. Beneath a sentence crossed out in red, traces of starting again and stopping overlap.*"
+        "text": "*The manuscript ends blank. Beneath red deletions are overlapping, abandoned revisions.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Homeroom Teacher",
@@ -352,7 +352,7 @@
     },
     "hidden_homeroom_d5_correct_8": {
         "name": "Homeroom Teacher",
-        "text": "*She points to the final line with one fingertip. When the event announcement outside ends, only the sound of turning pages remains.*"
+        "text": "...Right here. *She points to the last line. The event announcement ends.*"
     },
     "hidden_homeroom_d5_correct_9": {
         "name": "{name}",
@@ -368,7 +368,7 @@
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Homeroom Teacher",
-        "text": "*She sets the clipboard on the desk and caps the red pen.*"
+        "text": "That's the kind of reading I needed. Even though I wrote it, there are things I miss when I read it alone. *She puts the clipboard on the desk and caps the red pen.*"
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Homeroom Teacher",
@@ -376,7 +376,7 @@
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "*She takes back the critique copy and rubs the old return-label mark on the envelope once with her thumb.*"
+        "text": "Okay. I'll read it and write my comments. *She rubs the return-sticker mark on the envelope.*"
     },
     "hidden_homeroom_d5_6": {
         "name": "Homeroom Teacher",
@@ -401,7 +401,7 @@
     },
     "hidden_homeroom_d5_6_g": {
         "name": "Homeroom Teacher",
-        "text": "*She checks the number on the critique copy and nods.*"
+        "text": "I won't look for who wrote it. I only need to see what they've said. *She checks the workshop copy's number label and nods.*"
     },
     "hidden_homeroom_d5_6_h": {
         "name": "Homeroom Teacher",
@@ -498,8 +498,8 @@
         "text": "I'm here to pick up my counseling confirmation."
     },
     "hidden_nurse_d5_3_b": {
-        "name": "School Nurse",
-        "text": "*She writes the date and time on the form.*"
+        "name": "{name}",
+        "text": "Coming at the agreed time isn't a bother, is it? I thought you'd be busy with the event, too. *She writes the date and time on the confirmation form.*"
     },
     "hidden_nurse_d5_3_c": {
         "name": "School Nurse",
@@ -544,8 +544,8 @@
         ]
     },
     "hidden_nurse_d5_choice_a": {
-        "name": "School Nurse",
-        "text": "*She slips the information card into a clear case and hands it to me.*"
+        "name": "{name}",
+        "text": "I'll keep it safe. It's okay if it just stays in my bag when I don't need it, right? *She puts the card in a clear case and hands it over.*"
     },
     "hidden_nurse_d5_choice_a_b": {
         "name": "School Nurse",
@@ -632,23 +632,23 @@
     },
     "morning5_sojeong_5": {
         "name": "{name}",
-        "text": "*I message my current homeroom teacher too: 'I need to talk about something I chose to ignore at my old school.' I leave both messages on the screen until the festival announcement begins.*"
+        "text": "I'd like to talk about something I ignored at my previous school. *I send this to my teacher too. Until the festival announcement, I leave both sent messages intact.*"
     },
     "morning5_caught_fallout_1": {
         "name": "{name}",
-        "text": "*Before the event begins, the three of them sit far apart in the classroom. The duty sheet on the desk lists only the work that must be done.*"
+        "text": "*Before the event, all three sit apart. The assignment sheet lists work only.*"
     },
     "morning5_caught_fallout_2": {
         "name": "{name}",
-        "text": "*Yuna leaves first with the guidebooks, and Dain takes the opposite door. Seoyeon picks up the attendance sheet without looking my way.*"
+        "text": "*Yuna leaves first with the guidebook, Dain heads for another door. Seoyeon collects the attendance sheet without looking my way.*"
     },
     "morning5_caught_fallout_3": {
         "name": "{name}",
-        "text": "*Until the event ends, the only words we exchange are work checks. At the final bell, they take three different staircases.*"
+        "text": "*We talk only about work. At the end, they take different stairs.*"
     },
     "morning5_harem_fallout_1": {
         "name": "{name}",
-        "text": "*During the event, the three of them leave only necessary messages in the group chat. None of the private chats receive anything new.*"
+        "text": "*Work only in the group chat; no new private messages.*"
     },
     "morning5_harem_fallout_2": {
         "name": "Dain",

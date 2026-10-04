@@ -9,7 +9,7 @@
     },
     "morning5_start": {
         "name": "{name}",
-        "text": "*Quinto dia. É domingo, mas há um evento na escola. As pontas das mangas do uniforme já não arranham meus pulsos.*"
+        "text": "*Quinto dia, domingo. Vou ao evento da escola.*"
     },
     "morning5_start_branch": {},
     "morning5_temptation_discovery_branch": {},
@@ -115,11 +115,11 @@
     },
     "morning5_caught_seoyeon_honest": {
         "name": "Seoyeon",
-        "text": "*Mesmo depois de ouvir tudo, Seoyeon não tira os óculos. Por trás das lentes, ela devolve o olhar para a tela.* Não consigo agradecer por você ter sido sincero. Agora eu não consigo olhar para você."
+        "text": "*Seoyeon volta a olhar a tela.* Não consigo agradecer pela sinceridade. Agora está difícil olhar para você."
     },
     "morning5_caught_seoyeon_lie": {
         "name": "Seoyeon",
-        "text": "*Seoyeon olha da notificação acesa para o rosto à sua frente. O último vestígio do sorriso desaparece.* O que você acabou de dizer me incomoda mais do que ontem à noite."
+        "text": "*Seoyeon olha a notificação e depois para mim.* O que você diz agora incomoda mais que o que aconteceu ontem."
     },
     "morning5_caught_dain_honest": {
         "name": "Dain",
@@ -135,7 +135,7 @@
     },
     "morning5_caught_yuna_lie": {
         "name": "Yuna",
-        "text": "*Em vez de responder, Yuna acende a tela outra vez. A notificação permanece entre nós.* Eu dei a você a chance de me contar, e você escondeu de novo."
+        "text": "*Yuna acende a tela de novo.* Dei até uma chance de esclarecer, mas você continua escondendo."
     },
     "morning5_counteroffer_group_talk": {
         "name": "As duas",
@@ -164,8 +164,8 @@
     },
     "morning5_gate": {},
     "morning5_seo_note_1": {
-        "name": "{name}",
-        "text": "*Há um bilhete sobre a carteira, escrito por Seoyeon: — 'Separe um tempinho à tarde. Vou deixar o terraço aberto. — Seoyeon'*"
+        "name": "Seoyeon",
+        "text": "*Um bilhete na mesa, com a letra de Seoyeon.* Arruma um tempinho à tarde. Vou deixar o terraço aberto. — Seoyeon"
     },
     "morning5_seo_note_1_b": {
         "name": "{name}",
@@ -177,7 +177,7 @@
     },
     "morning5_yuna_story_gone_2": {
         "name": "{name}",
-        "text": "*Paro diante do mural vazio. As marcas das tachinhas não dizem o que Yuna estava pensando.*"
+        "text": "*As marcas de tachinhas não dizem o que Yuna sente.*"
     },
     "morning5_seo_note_1_c": {
         "name": "{name}",
@@ -226,11 +226,11 @@
     },
     "hidden_homeroom_d5_check": {
         "name": "{name}",
-        "text": "*Horário de preparar o evento. Ando pelo corredor — passo na frente de uma sala vazia. A porta tá aberta.*"
+        "text": "*Durante os preparativos, passo por uma sala vazia com a porta aberta.*"
     },
     "hidden_homeroom_d5_1": {
-        "name": "Professora",
-        "text": "*A professora está sentada à mesa dela, segurando um envelope pardo. O manuscrito não está à vista.*"
+        "name": "{name}",
+        "text": "Professora, ainda está aqui. Esse envelope... não estou vendo o manuscrito. *Ela está sentada à mesa da professora com um envelope marrom.*"
     },
     "hidden_homeroom_d5_1_b": {
         "name": "Professora",
@@ -258,7 +258,7 @@
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",
-        "text": "*Recebo uma cópia numerada. Atrás da última página há um espaço para comentários anônimos.*"
+        "text": "Entrego com este número, certo? *Há um espaço anônimo de comentários no final.*"
     },
     "hidden_homeroom_d5_5": {
         "name": "Professora",
@@ -276,7 +276,7 @@
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "Professora",
-        "text": "*O canto do envelope se amassa um pouco em sua mão. A professora alisa a dobra com o polegar.*"
+        "text": "Não precisa escolher um elogio antes de ler. Escrever por muito tempo não quer dizer que escrevi bem. *Alisa com o polegar o canto do envelope amassado na mão.*"
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Professora",
@@ -292,7 +292,7 @@
     },
     "hidden_homeroom_d5_praise_trap_5": {
         "name": "Professora",
-        "text": "*Ela estende a mão, recebe o manuscrito e, após hesitar por um instante, guarda-o no envelope.*"
+        "text": "Vou ficar com ele por enquanto. Sei que está tentando ser gentil. Mas ainda não leu. *Recebe o manuscrito, hesita um pouco e o põe no envelope.*"
     },
     "hidden_homeroom_d5_praise_trap_6": {
         "name": "Professora",
@@ -323,8 +323,8 @@
         "text": "*Saí e fechei a porta da sala. O envelope continua na mesa da professora. Uma marca de etiqueta de devolução do tamanho de uma unha permanece na superfície.*"
     },
     "hidden_homeroom_d5_correct_1": {
-        "name": "Professora",
-        "text": "*A borda do papel se curva um pouco em sua mão. A professora aperta os lábios e endireita a ponta dobrada.*"
+        "name": "{name}",
+        "text": "Se tiver um pouco de tempo, posso ler agora? Primeiro quero ver onde a leitura trava. *Ela mantém os lábios fechados e endireita a ponta do papel curvada na mão.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Professora",
@@ -340,7 +340,7 @@
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*Quando abro o envelope, sobe um cheiro de papel. O fim da última página está em branco. Abaixo de uma frase riscada em vermelho, marcas de começar de novo e parar se sobrepõem.*"
+        "text": "*O fim do manuscrito está vazio. Sob cortes vermelhos se sobrepõem tentativas abandonadas.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Professora",
@@ -352,7 +352,7 @@
     },
     "hidden_homeroom_d5_correct_8": {
         "name": "Professora",
-        "text": "*Ela aponta a última linha com a ponta do dedo. Quando o anúncio do evento do lado de fora termina, resta apenas o som das páginas virando.*"
+        "text": "...Aqui. *Ela aponta a última linha. O aviso do evento termina.*"
     },
     "hidden_homeroom_d5_correct_9": {
         "name": "{name}",
@@ -368,7 +368,7 @@
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Professora",
-        "text": "*Ela põe a prancheta sobre a mesa e coloca a tampa na caneta vermelha.*"
+        "text": "Era desse jeito de ler que eu precisava. Mesmo tendo escrito, tem coisa que não vejo lendo sozinha. *Põe a prancheta na mesa e tampa a caneta vermelha.*"
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Professora",
@@ -376,7 +376,7 @@
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "*Recebo de volta a cópia comentada. A professora passa o polegar uma vez sobre a marca deixada pela etiqueta de devolução no envelope.*"
+        "text": "Entendi. Vou ler e anotar meus comentários. *Ela esfrega a marca da etiqueta de devolução no envelope.*"
     },
     "hidden_homeroom_d5_6": {
         "name": "Professora",
@@ -401,7 +401,7 @@
     },
     "hidden_homeroom_d5_6_g": {
         "name": "Professora",
-        "text": "*Confere o número da cópia e concorda com a cabeça.*"
+        "text": "Não vou procurar quem escreveu. Basta ver o que disseram. *Confere a etiqueta numerada da cópia da oficina e concorda com a cabeça.*"
     },
     "hidden_homeroom_d5_6_h": {
         "name": "Professora",
@@ -498,8 +498,8 @@
         "text": "Vim buscar o comprovante da consulta."
     },
     "hidden_nurse_d5_3_b": {
-        "name": "Enfermeira",
-        "text": "*Anota a data e o horário no comprovante.*"
+        "name": "{name}",
+        "text": "Não atrapalho vindo no horário combinado, né? Pensei que estaria ocupada com o evento também. *Ela escreve a data e a hora na declaração.*"
     },
     "hidden_nurse_d5_3_c": {
         "name": "Enfermeira",
@@ -544,8 +544,8 @@
         ]
     },
     "hidden_nurse_d5_choice_a": {
-        "name": "Enfermeira",
-        "text": "*Coloca o cartão informativo em uma capa transparente e o entrega.*"
+        "name": "{name}",
+        "text": "Vou guardar direitinho. Se não precisar, pode ficar só na bolsa, né? *Põe o cartão num estojo transparente e me entrega.*"
     },
     "hidden_nurse_d5_choice_a_b": {
         "name": "Enfermeira",
@@ -632,23 +632,23 @@
     },
     "morning5_sojeong_5": {
         "name": "{name}",
-        "text": "*Também escrevo ao meu professor atual: 'Quero conversar sobre algo que escolhi ignorar na minha antiga escola.' Deixo as duas mensagens na tela até o anúncio do festival começar.*"
+        "text": "Gostaria de conversar sobre algo que fingi não ver na antiga escola. *Mando também para a professora. Até o anúncio do festival, não apago as duas frases enviadas.*"
     },
     "morning5_caught_fallout_1": {
         "name": "{name}",
-        "text": "*Antes do evento começar, as três se sentam afastadas na sala. A folha sobre a mesa lista apenas as tarefas necessárias.*"
+        "text": "*Antes do evento, as três sentam separadas. A lista só traz tarefas.*"
     },
     "morning5_caught_fallout_2": {
         "name": "{name}",
-        "text": "*Yuna sai primeiro com os folhetos, e Dain usa a porta oposta. Seoyeon pega a lista de presença sem olhar para mim.*"
+        "text": "*Yuna sai primeiro com o guia; Dain vai para outra porta. Seoyeon recolhe a lista sem olhar para mim.*"
     },
     "morning5_caught_fallout_3": {
         "name": "{name}",
-        "text": "*Até o fim do evento, só falamos para conferir tarefas. No último sinal, elas descem por três escadas diferentes.*"
+        "text": "*Só conversamos sobre tarefas. No fim, elas pegam escadas diferentes.*"
     },
     "morning5_harem_fallout_1": {
         "name": "{name}",
-        "text": "*Durante o evento, as três deixam apenas mensagens necessárias no grupo. Nenhuma conversa privada recebe algo novo.*"
+        "text": "*Só tarefas no grupo; nenhuma mensagem privada nova.*"
     },
     "morning5_harem_fallout_2": {
         "name": "Dain",

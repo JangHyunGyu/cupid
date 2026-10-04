@@ -40,8 +40,8 @@
         "text": "*Não tem vento nenhum hoje.*"
     },
     "tour_seo_8": {
-        "name": "{name}",
-        "text": "*Seoyeon tira de dentro da mochila um pequeno chaveiro de metal. Tem o mesmo formato da chave do terraço, mas não tem ranhuras.*"
+        "name": "Seoyeon",
+        "text": "Parece a chave do terraço, né? Mas não tem dentes. *Ela tira um chaveiro de metal.*"
     },
     "tour_seo_9": {
         "name": "Seoyeon",
@@ -57,7 +57,7 @@
     },
     "tour_seo_12": {
         "name": "Seoyeon",
-        "text": "*Ela me entrega o chaveiro. Quando nossas mãos se encostam, Seoyeon ajeita de novo a alça da mochila.*"
+        "text": "Guarda bem. *As mãos se encostam ao passar o chaveiro; ela segura a alça.*"
     },
     "tour_seo_13": {
         "name": "{name}",
@@ -73,7 +73,7 @@
     },
     "tour_seo_end": {
         "name": "{name}",
-        "text": "*Guardo no bolso o chaveiro que Seoyeon me deu. A chave verdadeira do terraço tilinta mais uma vez dentro da mochila dela.*"
+        "text": "*Guardo o chaveiro. A chave de verdade bate na bolsa de Seoyeon.*"
     },
     "tour_yuna_1_check": {
         "name": "{name}",
@@ -81,15 +81,15 @@
     },
     "tour_yuna_1": {
         "name": "{name}",
-        "text": "*O anexo da biblioteca. A luz da tarde entra por uma fresta da janela e incide sobre uma ponta do sofá velho. Sinto o mesmo cheiro de poeira da primeira vez que entrei aqui.*"
+        "text": "*A luz da tarde cai no sofá velho do anexo. O mesmo cheiro de poeira.*"
     },
     "tour_yuna_1b": {
         "name": "{name}",
-        "text": "*O anexo da biblioteca. A luz da tarde entra por uma fresta da janela e incide sobre o sofá velho onde eu lia com Yuna.*"
+        "text": "*A luz cai no sofá do anexo onde líamos juntos.*"
     },
     "tour_yuna_2": {
         "name": "Yuna",
-        "text": "*Ela se senta no sofá e deixa livre o lugar ao lado, onde não há poeira acumulada.*"
+        "text": "Senta do lado. Aqui não tem poeira. *Ela libera um lugar no sofá.*"
     },
     "tour_yuna_3": {
         "name": "{name}",
@@ -105,7 +105,7 @@
     },
     "tour_yuna_6": {
         "name": "Yuna",
-        "text": "*Ela tira um caderno novo da bolsa. As margens mostram onde revisou e passou a limpo o rascunho anterior.*"
+        "text": "Revisei e passei para um caderno novo. As margens estão cheias. *Ela o tira da bolsa.*"
     },
     "tour_yuna_7": {
         "name": "Yuna",
@@ -120,8 +120,8 @@
         "text": "Parecia estranho chamar isso de fim."
     },
     "tour_yuna_10": {
-        "name": "{name}",
-        "text": "*Yuna estende o caderno para mim. A capa prende uma vez no tecido do sofá, e ela aguarda minhas próximas palavras sem soltar o canto.*"
+        "name": "Yuna",
+        "text": "Toma. ...Prendeu no tecido. *Ela solta a capa e oferece o caderno.*"
     },
     "tour_yuna_11": {
         "name": "{name}",
@@ -145,7 +145,7 @@
     },
     "tour_dain_1": {
         "name": "{name}",
-        "text": "*O ginásio. Ao lado da linha onde fizemos a primeira aposta está o armário em que guardamos as bolas ontem à noite. Hoje as luzes estão acesas.*"
+        "text": "*Ao lado da linha da primeira aposta, o armário de bolas arrumado ontem à noite. Hoje o ginásio está aceso.*"
     },
     "tour_dain_1b": {
         "name": "{name}",
@@ -153,7 +153,7 @@
     },
     "tour_dain_2": {
         "name": "Dain",
-        "text": "*Dain está no meio da quadra, com uma bola de vôlei debaixo do braço.*"
+        "text": "Hoje quero só ficar com você, sem jogar bola. Não vai para casa ainda, né? *Está no meio da quadra com uma bola debaixo do braço.*"
     },
     "tour_dain_3": {
         "name": "Dain",
@@ -176,8 +176,8 @@
         "text": "Por que perdi de novo?"
     },
     "tour_dain_8": {
-        "name": "{name}",
-        "text": "*Dain franze a testa, mas não consegue conter o sorriso. Um instante depois, põe a bola de vôlei no chão da quadra.*"
+        "name": "Dain",
+        "text": "...Não me faz rir. *Ela franze a testa, mas não segura o sorriso e põe a bola na quadra um tempo depois.*"
     },
     "tour_dain_10": {
         "name": "Dain",
@@ -363,8 +363,8 @@
         "text": "Pode segurar deste lado? Você me ajuda a levar até a sala de rádio? *Haeun oferece uma ponta da caixa de documentos.*"
     },
     "day5_haeun_high_clasp": {
-        "name": "{name}",
-        "text": "*Deixamos a caixa diante da sala de rádio. O fecho da pulseira do conselho estudantil de Haeun ficou preso no botão da minha manga. Ela se aproxima para soltá-lo. Os passos no corredor param.*"
+        "name": "Haeun",
+        "text": "Espera um instante, por favor. A pulseira prendeu no botão da sua manga. *Ela põe a caixa diante da cabine e se inclina mais perto para soltar o fecho. Passos param.*"
     },
     "day5_haeun_explain_choice": {
         "name": "{name}",
@@ -376,7 +376,7 @@
     },
     "day5_haeun_explain_open": {
         "name": "{name}",
-        "text": "*Apresento Haeun e explico que estávamos levando documentos à sala de rádio. Ela concorda, mas a outra pessoa continua olhando para minha manga.*"
+        "text": "É Haeun, do grêmio. Estávamos levando papéis ao estúdio e a pulseira prendeu. *A outra pessoa ainda olha minha manga.*"
     },
     "day5_haeun_explain_delay": {
         "name": "{name}",
@@ -409,8 +409,8 @@
         "text": "*Haeun aperta o fecho da pulseira com a ponta do dedo e solta.* ...Certo. Vou tratar como se não fosse nada."
     },
     "day5_haeun_finish": {
-        "name": "{name}",
-        "text": "*A porta se abre e um estudante recebe a caixa. Haeun fecha a pulseira. Os avisos das atividades do almoço continuam no fim do corredor.*"
+        "name": "Haeun",
+        "text": "Obrigada por pegar. *Ela entrega a caixa ao aluno responsável e fecha a pulseira. O aviso do almoço continua.*"
     },
     "day5_haeun_low_intro": {
         "name": "Haeun",
@@ -431,7 +431,7 @@
     },
     "day5_haeun_low_work": {
         "name": "{name}",
-        "text": "*Conferimos os números das barracas um a um, tiramos caixas vazias da passagem e anotamos onde falta uma placa. Devolvo a lista a Haeun depois de conferir o último item.*"
+        "text": "O último número confere. As caixas vazias estão junto à parede; anotei aqui as placas que faltam. *Devolvo a lista a Haeun.*"
     },
     "day5_haeun_low_repair": {
         "name": "Haeun",
@@ -459,7 +459,7 @@
     },
     "day5_haeun_seoyeon_group_talk": {
         "name": "Seoyeon · Haeun",
-        "text": "*Haeun se afasta meio passo de mim. A outra pessoa fica, esperando minha resposta.*",
+        "text": "*Haeun recua meio passo; a outra pessoa espera a resposta.*",
         "groupLocation": "Corredor diante da sala de rádio durante o festival escolar",
         "context": "Haeun e o protagonista levaram documentos à sala de rádio. A outra pessoa viu Haeun se aproximar para soltar o fecho da pulseira do botão da manga dele. Haeun o defendeu dizendo que se sentia à vontade para pedir ajuda, agravando o mal-entendido sobre a relação. A afinidade da outra pessoa já caiu 15 pontos, ou 20 se a explicação foi adiada. Não houve romance nem atividade sexual entre Haeun e o protagonista.",
         "personality": "A outra pessoa pede explicações com sua própria voz e de acordo com a afinidade atual. Ter a maior afinidade não comprova namoro nem promessas anteriores. Haeun permanece educada e conta apenas o que presenciou, sem responder pelos sentimentos do protagonista. Deixe espaço para ele explicar; as respostas reais podem esclarecer ou manter o mal-entendido. Não resolva tudo de início nem transforme suspeitas em traição comprovada. Não repita a penalidade inicial; pontue apenas o efeito da contribuição atual.",
@@ -482,7 +482,7 @@
     },
     "day5_haeun_yuna_group_talk": {
         "name": "Yuna · Haeun",
-        "text": "*Haeun se afasta meio passo de mim. A outra pessoa fica, esperando minha resposta.*",
+        "text": "*Haeun recua meio passo; a outra pessoa espera a resposta.*",
         "groupLocation": "Corredor diante da sala de rádio durante o festival escolar",
         "context": "Haeun e o protagonista levaram documentos à sala de rádio. A outra pessoa viu Haeun se aproximar para soltar o fecho da pulseira do botão da manga dele. Haeun o defendeu dizendo que se sentia à vontade para pedir ajuda, agravando o mal-entendido sobre a relação. A afinidade da outra pessoa já caiu 15 pontos, ou 20 se a explicação foi adiada. Não houve romance nem atividade sexual entre Haeun e o protagonista.",
         "personality": "A outra pessoa pede explicações com sua própria voz e de acordo com a afinidade atual. Ter a maior afinidade não comprova namoro nem promessas anteriores. Haeun permanece educada e conta apenas o que presenciou, sem responder pelos sentimentos do protagonista. Deixe espaço para ele explicar; as respostas reais podem esclarecer ou manter o mal-entendido. Não resolva tudo de início nem transforme suspeitas em traição comprovada. Não repita a penalidade inicial; pontue apenas o efeito da contribuição atual.",
@@ -505,7 +505,7 @@
     },
     "day5_haeun_dain_group_talk": {
         "name": "Dain · Haeun",
-        "text": "*Haeun se afasta meio passo de mim. A outra pessoa fica, esperando minha resposta.*",
+        "text": "*Haeun recua meio passo; a outra pessoa espera a resposta.*",
         "groupLocation": "Corredor diante da sala de rádio durante o festival escolar",
         "context": "Haeun e o protagonista levaram documentos à sala de rádio. A outra pessoa viu Haeun se aproximar para soltar o fecho da pulseira do botão da manga dele. Haeun o defendeu dizendo que se sentia à vontade para pedir ajuda, agravando o mal-entendido sobre a relação. A afinidade da outra pessoa já caiu 15 pontos, ou 20 se a explicação foi adiada. Não houve romance nem atividade sexual entre Haeun e o protagonista.",
         "personality": "A outra pessoa pede explicações com sua própria voz e de acordo com a afinidade atual. Ter a maior afinidade não comprova namoro nem promessas anteriores. Haeun permanece educada e conta apenas o que presenciou, sem responder pelos sentimentos do protagonista. Deixe espaço para ele explicar; as respostas reais podem esclarecer ou manter o mal-entendido. Não resolva tudo de início nem transforme suspeitas em traição comprovada. Não repita a penalidade inicial; pontue apenas o efeito da contribuição atual.",
@@ -528,7 +528,7 @@
     },
     "day5_haeun_teacher_group_talk": {
         "name": "Professora · Haeun",
-        "text": "*Haeun se afasta meio passo de mim. A outra pessoa fica, esperando minha resposta.*",
+        "text": "*Haeun recua meio passo; a outra pessoa espera a resposta.*",
         "groupLocation": "Corredor diante da sala de rádio durante o festival escolar",
         "context": "Haeun e o protagonista levaram documentos à sala de rádio. A outra pessoa viu Haeun se aproximar para soltar o fecho da pulseira do botão da manga dele. Haeun o defendeu dizendo que se sentia à vontade para pedir ajuda, agravando o mal-entendido sobre a relação. A afinidade da outra pessoa já caiu 15 pontos, ou 20 se a explicação foi adiada. Não houve romance nem atividade sexual entre Haeun e o protagonista.",
         "personality": "A outra pessoa pede explicações com sua própria voz e de acordo com a afinidade atual. Ter a maior afinidade não comprova namoro nem promessas anteriores. Haeun permanece educada e conta apenas o que presenciou, sem responder pelos sentimentos do protagonista. Deixe espaço para ele explicar; as respostas reais podem esclarecer ou manter o mal-entendido. Não resolva tudo de início nem transforme suspeitas em traição comprovada. Não repita a penalidade inicial; pontue apenas o efeito da contribuição atual.",
@@ -551,7 +551,7 @@
     },
     "day5_haeun_nurse_group_talk": {
         "name": "Enfermeira · Haeun",
-        "text": "*Haeun se afasta meio passo de mim. A outra pessoa fica, esperando minha resposta.*",
+        "text": "*Haeun recua meio passo; a outra pessoa espera a resposta.*",
         "groupLocation": "Corredor diante da sala de rádio durante o festival escolar",
         "context": "Haeun e o protagonista levaram documentos à sala de rádio. A outra pessoa viu Haeun se aproximar para soltar o fecho da pulseira do botão da manga dele. Haeun o defendeu dizendo que se sentia à vontade para pedir ajuda, agravando o mal-entendido sobre a relação. A afinidade da outra pessoa já caiu 15 pontos, ou 20 se a explicação foi adiada. Não houve romance nem atividade sexual entre Haeun e o protagonista.",
         "personality": "A outra pessoa pede explicações com sua própria voz e de acordo com a afinidade atual. Ter a maior afinidade não comprova namoro nem promessas anteriores. Haeun permanece educada e conta apenas o que presenciou, sem responder pelos sentimentos do protagonista. Deixe espaço para ele explicar; as respostas reais podem esclarecer ou manter o mal-entendido. Não resolva tudo de início nem transforme suspeitas em traição comprovada. Não repita a penalidade inicial; pontue apenas o efeito da contribuição atual.",
@@ -582,7 +582,7 @@
     },
     "day5_haeun_concern_seoyeon_intro": {
         "name": "Haeun",
-        "text": "*Ouço Haeun na esquina do corredor. Ela fala baixo com alguém e para quando me vê.* Fiquei desconfortável quando conversamos antes. Não sabia como entender aquilo, então comentei."
+        "text": "*Na esquina do corredor, Haeun fala baixo com a pessoa à sua frente e para ao me ver.* Fiquei desconfortável quando conversamos antes. Não sabia como entender aquilo, então comentei."
     },
     "day5_haeun_concern_seoyeon_arrival": {
         "name": "Seoyeon",
@@ -609,7 +609,7 @@
     },
     "day5_haeun_concern_yuna_intro": {
         "name": "Haeun",
-        "text": "*Ouço Haeun na esquina do corredor. Ela fala baixo com alguém e para quando me vê.* Fiquei desconfortável quando conversamos antes. Não sabia como entender aquilo, então comentei."
+        "text": "*Na esquina do corredor, Haeun fala baixo com a pessoa à sua frente e para ao me ver.* Fiquei desconfortável quando conversamos antes. Não sabia como entender aquilo, então comentei."
     },
     "day5_haeun_concern_yuna_arrival": {
         "name": "Yuna",
@@ -636,7 +636,7 @@
     },
     "day5_haeun_concern_dain_intro": {
         "name": "Haeun",
-        "text": "*Ouço Haeun na esquina do corredor. Ela fala baixo com alguém e para quando me vê.* Fiquei desconfortável quando conversamos antes. Não sabia como entender aquilo, então comentei."
+        "text": "*Na esquina do corredor, Haeun fala baixo com a pessoa à sua frente e para ao me ver.* Fiquei desconfortável quando conversamos antes. Não sabia como entender aquilo, então comentei."
     },
     "day5_haeun_concern_dain_arrival": {
         "name": "Dain",
@@ -663,7 +663,7 @@
     },
     "day5_haeun_concern_teacher_intro": {
         "name": "Haeun",
-        "text": "*Ouço Haeun na esquina do corredor. Ela fala baixo com alguém e para quando me vê.* Fiquei desconfortável quando conversamos antes. Não sabia como entender aquilo, então comentei."
+        "text": "*Na esquina do corredor, Haeun fala baixo com a pessoa à sua frente e para ao me ver.* Fiquei desconfortável quando conversamos antes. Não sabia como entender aquilo, então comentei."
     },
     "day5_haeun_concern_teacher_arrival": {
         "name": "Professora",
@@ -690,7 +690,7 @@
     },
     "day5_haeun_concern_nurse_intro": {
         "name": "Haeun",
-        "text": "*Ouço Haeun na esquina do corredor. Ela fala baixo com alguém e para quando me vê.* Fiquei desconfortável quando conversamos antes. Não sabia como entender aquilo, então comentei."
+        "text": "*Na esquina do corredor, Haeun fala baixo com a pessoa à sua frente e para ao me ver.* Fiquei desconfortável quando conversamos antes. Não sabia como entender aquilo, então comentei."
     },
     "day5_haeun_concern_nurse_arrival": {
         "name": "Enfermeira",

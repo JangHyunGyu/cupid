@@ -57,7 +57,7 @@
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*Before sleeping, I open my phone’s gallery, scroll to Sojeong’s photo and hold it down.*"
+        "text": "*I long-press Sojeong's photo in the gallery.*"
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
@@ -81,7 +81,7 @@
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*I open the new folder to check that the photo is still there. One image appears beneath its name.*"
+        "text": "*The new folder still holds that one photo.*"
     },
     "night3_faithful_reflect_4_b": {},
     "night3_faithful_reflect_4_c": {},
@@ -123,11 +123,11 @@
     },
     "night3_cheat_msg_4_b": {
         "name": "Yuna",
-        "text": "*Neither I nor they want to be your backup.*"
+        "text": "Neither I nor the others want to be your backup."
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "*Decide who you're going to choose tomorrow.*"
+        "text": "Decide who you're going to see tomorrow"
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
@@ -171,7 +171,7 @@
     },
     "night3_nightmare_6": {
         "name": "{name}",
-        "text": "*I open and close all three chats in turn. In each text box, I type a different first letter, then erase it.*"
+        "text": "*I type and erase replies in all three chats.*"
     },
     "night3_nightmare_choice": {
         "name": "{name}",
@@ -196,7 +196,7 @@
     },
     "night3_nightmare_end": {
         "name": "{name}",
-        "text": "*One sentence remains in one text box. I close the other two chats. Nothing has been sent yet.*"
+        "text": "*The one sentence left is still unsent.*"
     },
     "night3_nightmare_end_3": {
         "name": "{name}",
@@ -208,15 +208,15 @@
     },
     "night3_cheat_reflect_3_b": {
         "name": "{name}",
-        "text": "*I close the photo and return to my messages. The sentence I wrote earlier is still saved as a draft.*"
+        "text": "*The draft remains in my chat list.*"
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",
         "text": "*I scan the chat list. A different message sits beside each of the three names.*"
     },
     "night3_cheat_reflect_3_d": {
-        "name": "{name}",
-        "text": "*There’s a message from Minsu: ‘Putting it off won’t make it go away.’*"
+        "name": "Minsu",
+        "text": "*A message from Minsu.* Putting it off won't make it go away"
     },
     "night3_cheat_reflect_3_e": {
         "name": "{name}",
@@ -236,7 +236,7 @@
     },
     "forced_violation_day3_after_seoyeon": {
         "name": "Seoyeon",
-        "text": "*Even after the conversation ends, Seoyeon remains silent for a while. When she finally speaks again, her voice has gone cold.* Don't think you can pretend what you just did never happened. Don't come near me or contact me for a while.",
+        "text": "*Seoyeon speaks coldly after a silence.* Don't think you can pretend what you just did never happened. Don't come near me or contact me for a while.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -244,7 +244,7 @@
     },
     "forced_violation_day3_seoyeon_apologize": {
         "name": "Seoyeon",
-        "text": "*Seoyeon's expression does not soften at the apology.* I heard you. That doesn't erase what happened. Like I said, don't contact me for a while."
+        "text": "*Seoyeon's face stays tense.* I heard you. That doesn't erase what happened. Like I said, don't contact me for a while."
     },
     "forced_violation_day3_seoyeon_excuse": {
         "name": "Seoyeon",
@@ -252,7 +252,7 @@
     },
     "forced_violation_day3_after_yuna": {
         "name": "Yuna",
-        "text": "*After the conversation breaks off, Yuna takes a short breath. Only caution remains on her tense face.* You knew I didn't want it, and you ignored me. I don't even want to see your face right now. Don't contact me again.",
+        "text": "*Yuna catches her breath, wary.* You knew I didn't want it, and you ignored me. I don't even want to see your face right now. Don't contact me again.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -260,7 +260,7 @@
     },
     "forced_violation_day3_yuna_apologize": {
         "name": "Yuna",
-        "text": "*Yuna answers only after a long pause.* An apology doesn't make it disappear. Stop now."
+        "text": "*Yuna answers after a long pause.* An apology doesn't make it disappear. Stop now."
     },
     "forced_violation_day3_yuna_excuse": {
         "name": "Yuna",
@@ -268,7 +268,7 @@
     },
     "forced_violation_day3_after_dain": {
         "name": "Dain",
-        "text": "*Dain does not laugh it off the way she usually might. A long silence passes before she answers in a clipped, hard voice.* This isn't a joke. I said no and you forced it anyway. I'm not letting this go.",
+        "text": "*Dain doesn't smile. After a long pause, she answers briefly in a stiff voice.* This isn't a joke. I said no and you forced it anyway. I'm not letting this go.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -284,7 +284,7 @@
     },
     "forced_violation_day3_after_teacher": {
         "name": "Homeroom Teacher",
-        "text": "*After the conversation ends, the homeroom teacher makes the boundary even clearer, her voice firm.* What you just did clearly crossed a line. Do not come any closer. I will handle this through the proper procedures.",
+        "text": "*The teacher speaks firmly.* What you just did clearly crossed a line. Do not come any closer. I will handle this through the proper procedures.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -292,7 +292,7 @@
     },
     "forced_violation_day3_teacher_apologize": {
         "name": "Homeroom Teacher",
-        "text": "*The homeroom teacher takes a short breath before continuing.* I heard your apology. I'll still follow the proper procedures. Don't say anything else."
+        "text": "*The teacher takes a breath and speaks.* I heard your apology. I'll still follow the proper procedures. Don't say anything else."
     },
     "forced_violation_day3_teacher_excuse": {
         "name": "Homeroom Teacher",
@@ -308,7 +308,7 @@
     },
     "forced_violation_day3_haeun_apologize": {
         "name": "Haeun",
-        "text": "*Haeun backs toward the faculty office without answering. She keeps watching until she is sure you aren't following.*"
+        "text": "*Without answering, Haeun retreats toward the staffroom, making sure I don't follow.*"
     },
     "forced_violation_day3_haeun_excuse": {
         "name": "Haeun",
@@ -316,7 +316,7 @@
     },
     "forced_violation_day3_after_nurse": {
         "name": "School Nurse",
-        "text": "*As the conversation cuts off, all the usual playfulness leaves the school nurse's voice.* Keep your distance from now on. I will document what happened and inform the people who need to know.",
+        "text": "*The nurse's playfulness disappears.* Keep your distance from now on. I will document what happened and inform the people who need to know.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -324,7 +324,7 @@
     },
     "forced_violation_day3_nurse_apologize": {
         "name": "School Nurse",
-        "text": "*The school nurse is silent for a moment, then answers firmly.* I hear your apology. I'll still document this and notify the appropriate people. This conversation is over."
+        "text": "*The nurse answers firmly after a pause.* I hear your apology. I'll still document this and notify the appropriate people. This conversation is over."
     },
     "forced_violation_day3_nurse_excuse": {
         "name": "School Nurse",

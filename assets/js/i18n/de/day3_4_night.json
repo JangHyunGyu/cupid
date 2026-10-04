@@ -57,7 +57,7 @@
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*Vor dem Einschlafen öffne ich die Galerie, scrolle zu Sojeongs Foto und halte es gedrückt.*"
+        "text": "*Ich drücke lange auf Sojeongs Foto in der Galerie.*"
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
@@ -81,7 +81,7 @@
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*Ich öffne den neuen Ordner und prüfe, ob das Foto noch da ist. Unter dem Namen wird ein Bild angezeigt.*"
+        "text": "*Das eine Foto liegt unverändert im neuen Ordner.*"
     },
     "night3_faithful_reflect_4_b": {},
     "night3_faithful_reflect_4_c": {},
@@ -123,11 +123,11 @@
     },
     "night3_cheat_msg_4_b": {
         "name": "Yuna",
-        "text": "*Ich will kein Ersatz sein. Die anderen auch nicht.*"
+        "text": "Weder ich noch die anderen wollen deine Reserve sein."
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "*Entscheide, zu wem du morgen gehst.*"
+        "text": "Entscheide, zu wem du morgen gehst"
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
@@ -171,7 +171,7 @@
     },
     "night3_nightmare_6": {
         "name": "{name}",
-        "text": "*Ich öffne und schließe die drei Chats nacheinander. In jedes Eingabefeld tippe ich einen anderen Anfangsbuchstaben und lösche ihn wieder.*"
+        "text": "*In allen drei Chats schreibe und lösche ich Antworten.*"
     },
     "night3_nightmare_choice": {
         "name": "{name}",
@@ -196,7 +196,7 @@
     },
     "night3_nightmare_end": {
         "name": "{name}",
-        "text": "*In einem Eingabefeld bleibt ein Satz stehen, die beiden anderen Chats schließe ich. Gesendet habe ich noch nichts.*"
+        "text": "*Der einzige übrige Satz ist noch nicht abgeschickt.*"
     },
     "night3_nightmare_end_3": {
         "name": "{name}",
@@ -208,15 +208,15 @@
     },
     "night3_cheat_reflect_3_b": {
         "name": "{name}",
-        "text": "*Ich schließe das Foto und kehre zur Chatliste zurück. Der Satz von vorhin liegt noch als Entwurf da.*"
+        "text": "*In der Chatliste steht noch der Entwurf.*"
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",
         "text": "*Ich überfliege die Chatliste. Neben den drei Namen steht jeweils ein anderer letzter Satz.*"
     },
     "night3_cheat_reflect_3_d": {
-        "name": "{name}",
-        "text": "*Minsu hat geschrieben: „Vom Aufschieben geht das nicht weg.“*"
+        "name": "Minsu",
+        "text": "*Eine Nachricht von Minsu.* Aufschieben lässt es nicht verschwinden"
     },
     "night3_cheat_reflect_3_e": {
         "name": "{name}",
@@ -236,7 +236,7 @@
     },
     "forced_violation_day3_after_seoyeon": {
         "name": "Seoyeon",
-        "text": "*Auch nachdem das Gespräch endet, schweigt Seoyeon lange. Als sie wieder spricht, ist ihre Stimme kalt geworden.* Glaub nicht, du könntest so tun, als wäre das gerade nie passiert. Komm mir vorerst nicht nahe und melde dich nicht bei mir.",
+        "text": "*Nach einer Pause spricht Seoyeon kühl.* Glaub nicht, du könntest so tun, als wäre das gerade nie passiert. Komm mir vorerst nicht nahe und melde dich nicht bei mir.",
         "choices": [
             "Sich ohne Ausreden entschuldigen und das Gespräch beenden.",
             "Versuchen, es als Missverständnis zu erklären."
@@ -244,7 +244,7 @@
     },
     "forced_violation_day3_seoyeon_apologize": {
         "name": "Seoyeon",
-        "text": "*Seoyeons Gesicht bleibt trotz der Entschuldigung hart.* Ich habe dich gehört. Das macht nicht ungeschehen, was passiert ist. Wie gesagt: Melde dich vorerst nicht bei mir."
+        "text": "*Seoyeons Gesicht bleibt angespannt.* Ich habe dich gehört. Das macht nicht ungeschehen, was passiert ist. Wie gesagt: Melde dich vorerst nicht bei mir."
     },
     "forced_violation_day3_seoyeon_excuse": {
         "name": "Seoyeon",
@@ -252,7 +252,7 @@
     },
     "forced_violation_day3_after_yuna": {
         "name": "Yuna",
-        "text": "*Als das Gespräch abbricht, holt Yuna kurz Luft. In ihrem angespannten Gesicht ist nur noch Misstrauen.* Du wusstest, dass ich das nicht wollte, und hast es ignoriert. Ich will dein Gesicht gerade nicht einmal sehen. Melde dich nicht mehr bei mir.",
+        "text": "*Yuna atmet durch, weiterhin misstrauisch.* Du wusstest, dass ich das nicht wollte, und hast es ignoriert. Ich will dein Gesicht gerade nicht einmal sehen. Melde dich nicht mehr bei mir.",
         "choices": [
             "Sich ohne Ausreden entschuldigen und das Gespräch beenden.",
             "Versuchen, es als Missverständnis zu erklären."
@@ -260,7 +260,7 @@
     },
     "forced_violation_day3_yuna_apologize": {
         "name": "Yuna",
-        "text": "*Yuna antwortet erst nach langem Schweigen.* Eine Entschuldigung macht es nicht ungeschehen. Hör jetzt auf."
+        "text": "*Nach langer Pause antwortet Yuna.* Eine Entschuldigung macht es nicht ungeschehen. Hör jetzt auf."
     },
     "forced_violation_day3_yuna_excuse": {
         "name": "Yuna",
@@ -268,7 +268,7 @@
     },
     "forced_violation_day3_after_dain": {
         "name": "Dain",
-        "text": "*Dain lacht es nicht wie sonst weg. Nach langem Schweigen kommt ihre Stimme kurz und angespannt zurück.* Das ist kein Witz. Ich habe Nein gesagt, und du hast mich trotzdem gezwungen. Ich lasse das nicht einfach durchgehen.",
+        "text": "*Dain lächelt nicht. Nach langer Pause antwortet sie kurz mit angespannter Stimme.* Das ist kein Witz. Ich habe Nein gesagt, und du hast mich trotzdem gezwungen. Ich lasse das nicht einfach durchgehen.",
         "choices": [
             "Sich ohne Ausreden entschuldigen und das Gespräch beenden.",
             "Versuchen, es als Missverständnis zu erklären."
@@ -284,7 +284,7 @@
     },
     "forced_violation_day3_after_teacher": {
         "name": "Klassenlehrerin",
-        "text": "*Nach dem Gespräch zieht die Klassenlehrerin mit noch festerer Stimme eine klare Grenze.* Was du gerade getan hast, hat eindeutig eine Grenze überschritten. Komm nicht näher. Ich werde das nach den vorgesehenen Verfahren behandeln.",
+        "text": "*Die Lehrerin spricht bestimmt.* Was du gerade getan hast, hat eindeutig eine Grenze überschritten. Komm nicht näher. Ich werde das nach den vorgesehenen Verfahren behandeln.",
         "choices": [
             "Sich ohne Ausreden entschuldigen und das Gespräch beenden.",
             "Versuchen, es als Missverständnis zu erklären."
@@ -292,7 +292,7 @@
     },
     "forced_violation_day3_teacher_apologize": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin holt kurz Luft und spricht weiter.* Ich habe deine Entschuldigung gehört. Das Verfahren wird trotzdem fortgesetzt. Sag nichts weiter."
+        "text": "*Die Lehrerin atmet durch und spricht.* Ich habe deine Entschuldigung gehört. Das Verfahren wird trotzdem fortgesetzt. Sag nichts weiter."
     },
     "forced_violation_day3_teacher_excuse": {
         "name": "Klassenlehrerin",
@@ -308,7 +308,7 @@
     },
     "forced_violation_day3_haeun_apologize": {
         "name": "Haeun",
-        "text": "*Ohne zu antworten, weicht Haeun zum Lehrerzimmer zurück. Sie achtet bis zuletzt darauf, dass ich ihr nicht folge.*"
+        "text": "*Ohne zu antworten zieht Haeun sich zum Lehrerzimmer zurück und stellt sicher, dass ich ihr nicht folge.*"
     },
     "forced_violation_day3_haeun_excuse": {
         "name": "Haeun",
@@ -316,7 +316,7 @@
     },
     "forced_violation_day3_after_nurse": {
         "name": "Schulkrankenschwester",
-        "text": "*Als das Gespräch abbricht, verschwindet jeder spielerische Ton aus der Stimme der Schulkrankenschwester.* Halte von jetzt an Abstand. Ich werde den Vorfall dokumentieren und die zuständigen Personen informieren.",
+        "text": "*Der scherzhafte Ton der Schulkrankenschwester verschwindet.* Halte von jetzt an Abstand. Ich werde den Vorfall dokumentieren und die zuständigen Personen informieren.",
         "choices": [
             "Sich ohne Ausreden entschuldigen und das Gespräch beenden.",
             "Versuchen, es als Missverständnis zu erklären."
@@ -324,7 +324,7 @@
     },
     "forced_violation_day3_nurse_apologize": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schulkrankenschwester schweigt kurz und antwortet dann bestimmt.* Ich höre deine Entschuldigung. Dokumentation und Meldung erfolgen trotzdem. Dieses Gespräch ist beendet."
+        "text": "*Nach einer Pause antwortet die Schulkrankenschwester bestimmt.* Ich höre deine Entschuldigung. Dokumentation und Meldung erfolgen trotzdem. Dieses Gespräch ist beendet."
     },
     "forced_violation_day3_nurse_excuse": {
         "name": "Schulkrankenschwester",

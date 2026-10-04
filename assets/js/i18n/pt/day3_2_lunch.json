@@ -1,11 +1,11 @@
 {
     "lunch3_start": {
-        "name": "{name}",
-        "text": "*Abro a marmita. Seoyeon senta ao meu lado, Dain à frente, e Yuna traz seu pão e puxa a cadeira vazia.*"
+        "name": "Yuna",
+        "text": "Podem comer do meu pão também. *Seoyeon senta ao lado, Dain em frente. Yuna puxa uma cadeira.*"
     },
     "lunch3_start_2_b": {
         "name": "Dain",
-        "text": "*Dain pega a omelete antes de Yuna. Seoyeon olha para o outro lado da mesa antes de erguer os hashis.*"
+        "text": "Posso provar primeiro, né? ...Só um pouquinho. *Dain pega a omelete enrolada antes de Yuna. Seoyeon olha para o outro lado da mesa antes de levantar os palitinhos.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
@@ -29,7 +29,7 @@
     },
     "lunch3_meal_6": {
         "name": "Yuna",
-        "text": "*Estica os pauzinhos em silêncio e pega a salsicha de melhor aparência.*"
+        "text": "*Estende os palitinhos e pega a salsicha mais apetitosa.*"
     },
     "lunch3_meal_7": {
         "name": "{name}",
@@ -45,11 +45,11 @@
     },
     "lunch3_meal_10": {
         "name": "{name}",
-        "text": "*Três pares de hashis quase se encontram sobre o último pedaço de omelete. As três param e olham para mim.*"
+        "text": "Ah, é o último pedaço. Esperem. *Três pares de hashis param.*"
     },
     "lunch3_meal_10_b": {
         "name": "{name}",
-        "text": "*Resta apenas um acompanhamento no centro da marmita, e os hashis das três voltam aos seus lugares.*"
+        "text": "*Só resta o último pedaço de omelete.*"
     },
     "lunch3_meal_10_c": {},
     "lunch3_meal_10_d": {},
@@ -82,24 +82,24 @@
     },
     "lunch3_seo_skin_check": {},
     "lunch3_seo_skin_1": {
-        "name": "{name}",
-        "text": "*Enquanto comia, ficou um grão de arroz no canto da boca. Seoyeon estende a mão e tira.*"
+        "name": "Seoyeon",
+        "text": "Ficou arroz na sua boca. Não mexe. ...Eu sei que está concentrado em comer, mas olha só. *Ela tira o grão de arroz com a mão.*"
     },
     "lunch3_seo_skin_2": {
         "name": "Seoyeon",
         "text": "...Presta mais atenção quando come na frente dos outros."
     },
     "lunch3_seo_skin_3": {
-        "name": "{name}",
-        "text": "*Ao retirar a mão, Seoyeon deixa os hashis caírem. Ela os recolhe imediatamente, mas a ponta raspa a borda do prato.*"
+        "name": "Seoyeon",
+        "text": "...Ah, os palitinhos. Tudo bem, eu pego. Não precisa fazer tanto caso. *Ao tirar a mão, deixa os palitinhos cair e os pega, raspando a borda do prato.*"
     },
     "lunch3_give_seo_2": {
         "name": "Dain",
         "text": "Aah! Eu também queria comer!"
     },
     "lunch3_seo_witness_1": {
-        "name": "{name}",
-        "text": "*Dain se levanta com a garrafa vazia, olha a comida que dei a Seoyeon e sai para o corredor.*"
+        "name": "Dain",
+        "text": "Vou encher a garrafa. *Com a garrafa vazia, ela olha uma vez a comida que dei à Seoyeon e sai para o corredor.*"
     },
     "lunch3_seo_witness_choice": {
         "name": "{name}",
@@ -149,8 +149,8 @@
     },
     "lunch3_dain_skin_check": {},
     "lunch3_dain_skin_1": {
-        "name": "{name}",
-        "text": "*Depois de comer, Dain abre um pouco os braços. “Posso te dar um abraço de agradecimento?” Concordo. Ela me abraça brevemente e pega a garrafa.*"
+        "name": "Dain",
+        "text": "Para agradecer, posso te abraçar? *Termina os acompanhamentos e abre os braços um pouco. Eu concordo; ela me abraça rápido e pega a garrafa.*"
     },
     "lunch3_dain_skin_3": {
         "name": "Dain",
@@ -179,8 +179,8 @@
     },
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {
-        "name": "{name}",
-        "text": "*Yuna pega um bilhete ao lado da bandeja e me entrega. Por um instante, seguramos juntos a beirada do papel.*"
+        "name": "Yuna",
+        "text": "Toma. *Nossas mãos seguram juntas a ponta do bilhete.*"
     },
     "lunch3_yuna_skin_2": {
         "name": "Yuna",
@@ -188,7 +188,7 @@
     },
     "lunch3_yuna_skin_3": {
         "name": "{name}",
-        "text": "*Yuna solta a ponta do papel. Dobro o bilhete e o guardo com cuidado.*"
+        "text": "*Yuna tira a mão. Dobro o bilhete e o guardo.*"
     },
     "lunch3_give_yuna_2": {
         "name": "Seoyeon",
@@ -216,7 +216,7 @@
     },
     "lunch3_expose_3": {
         "name": "{name}",
-        "text": "*Enquanto escolho uma resposta, os hashis das outras duas permanecem suspensos sobre a marmita.*"
+        "text": "Espera, sobre isso... *Os hashis param.*"
     },
     "lunch3_expose_4": {
         "name": "{name}",
@@ -241,15 +241,15 @@
     },
     "lunch3_expose_10": {
         "name": "{name}",
-        "text": "*Um dos hashis bate na tampa da marmita. Ninguém o recolhe.*"
+        "text": "*Um palitinho bate na tampa. Ninguém o pega.*"
     },
     "lunch3_expose_11": {
         "name": "Yuna",
         "text": "Sabia que tinham te convidado. Não que você tivesse aceitado vários planos."
     },
     "lunch3_expose_12": {
-        "name": "{name}",
-        "text": "*Os três pares de hashis ficam sobre a marmita. Na mesa ao lado, Minsu olha para cá e cobre a boca com o dorso da mão.*"
+        "name": "Minsu",
+        "text": "Ei, vem cá um segundo. *Na mesa ao lado, ele cobre a boca.*"
     },
     "lunch3_expose_14": {
         "name": "Minsu",
@@ -257,7 +257,7 @@
     },
     "lunch3_expose_15": {
         "name": "{name}",
-        "text": "*Apenas meus lábios se movem. Minsu deixa os hashis que segurava.*"
+        "text": "*Só meus lábios se movem. Minsu pousa os palitinhos.*"
     },
     "lunch3_expose_choice": {
         "name": "{name}",
@@ -295,7 +295,7 @@
     },
     "lunch3_expose_honest_7": {
         "name": "{name}",
-        "text": "*Dain responde poucas palavras e desvia o olhar. A animação de antes desapareceu.*"
+        "text": "*Dain responde curto e desvia o olhar, sem a animação de antes.*"
     },
     "lunch3_expose_excuse_1": {
         "name": "{name}",
@@ -315,39 +315,39 @@
     },
     "lunch3_expose_excuse_4": {
         "name": "Dain",
-        "text": "*Dain enfia na mochila o pão soboro que nem sequer foi aberto.*"
+        "text": "*Põe o pão soboro ainda fechado na bolsa.*"
     },
     "lunch3_expose_run_1": {
         "name": "{name}",
-        "text": "*Empurro a porta da sala. Atrás de mim, cadeiras arrastam todas de uma vez.*"
+        "text": "*Empurro a porta e saio. As cadeiras arrastam de uma vez atrás de mim.*"
     },
     "lunch3_expose_run_2": {
         "name": "{name}",
-        "text": "*Atrás de mim, ouvem-se apenas, uma após outra, as cadeiras sendo arrastadas. Ninguém sai atrás de mim. Durante toda a aula da tarde, não consigo prestar atenção nas marcas de giz do quadro e fico ligando e desligando a tela do celular sob a carteira.*"
+        "text": "*Atrás de mim, ouvem-se cadeiras sendo arrastadas, uma após outra; ninguém me segue. Durante as aulas da tarde, não consigo prestar atenção na lousa e fico acendendo e apagando a tela do celular debaixo da mesa.*"
     },
     "lunch3_share_1": {
         "name": "{name}",
-        "text": "*Quando sugiro que todos dividam, as três sorriem. Mesmo depois que as risadas cessam, ninguém aproxima primeiro os hashis da omelete enrolada.*"
+        "text": "Vamos cortar e dividir. Assim dá, né? *As três sorriem, mas não movem os hashis.*"
     },
     "lunch3_share_cool": {
         "name": "{name}",
-        "text": "*Ponho o último pedaço no meio. As três dividem, mas ninguém ri.*"
+        "text": "*As três dividem o último pedaço. Sem sorrisos.*"
     },
     "lunch3_share_neg": {
         "name": "{name}",
-        "text": "*Ponho a omelete no meio. Ninguém estica o hashi. Uma já fechou a marmita.*"
+        "text": "*Omelete enrolada no meio. Os palitinhos não se movem; uma já fechou a marmita.*"
     },
     "lunch3_share_solo": {
         "name": "{name}",
-        "text": "*As três dividem pequenos pedaços da omelete. Ninguém se levanta primeiro até desaparecer o último pedaço, cortado ao meio.*"
+        "text": "*Elas dividem o último pedaço e continuam sentadas.*"
     },
     "lunch3_harem_1": {
         "name": "{name}",
-        "text": "*As três comem um pouco. Seoyeon sorri com educação, Dain está animada demais e Yuna não chega a tirar o bilhete que dobrou.*"
+        "text": "*As três dividem pequenas porções. Seoyeon sorri de leve; Dain ri mais alto que o normal. Yuna não tira o bilhete dobrado.*"
     },
     "lunch3_end": {
         "name": "{name}",
-        "text": "*O sinal toca e fecho a marmita. Ninguém volta a mencionar os planos.*"
+        "text": "*O sinal toca e fecho a marmita. Ninguém retoma os compromissos.*"
     },
     "lunch3_give_seo_2_check": {},
     "lunch3_give_seo_dain_affinity": {},

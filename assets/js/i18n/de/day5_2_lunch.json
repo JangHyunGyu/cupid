@@ -40,8 +40,8 @@
         "text": "*Es weht kein Wind.*"
     },
     "tour_seo_8": {
-        "name": "{name}",
-        "text": "*Seoyeon holt einen kleinen Schlüsselanhänger aus Metall aus ihrer Tasche. Er hat die Form des Dachschlüssels, aber keine Kerben.*"
+        "name": "Seoyeon",
+        "text": "Sieht aus wie der Dachschlüssel, oder? Nur ohne Rillen. *Sie holt einen kleinen Metallschlüsselanhänger heraus.*"
     },
     "tour_seo_9": {
         "name": "Seoyeon",
@@ -57,7 +57,7 @@
     },
     "tour_seo_12": {
         "name": "Seoyeon",
-        "text": "*Sie reicht mir den Schlüsselanhänger. Als sich unsere Hände streifen, richtet Seoyeon den Riemen ihrer Tasche neu.*"
+        "text": "Heb ihn gut auf. *Beim Überreichen streifen sich unsere Hände; sie greift den Taschenriemen.*"
     },
     "tour_seo_13": {
         "name": "{name}",
@@ -73,7 +73,7 @@
     },
     "tour_seo_end": {
         "name": "{name}",
-        "text": "*Ich stecke den Schlüsselanhänger von Seoyeon ein. Der echte Dachschlüssel stößt in ihrer Tasche noch einmal an etwas.*"
+        "text": "*Ich stecke den Anhänger ein. Der echte Schlüssel klirrt in Seoyeons Tasche.*"
     },
     "tour_yuna_1_check": {
         "name": "{name}",
@@ -81,15 +81,15 @@
     },
     "tour_yuna_1": {
         "name": "{name}",
-        "text": "*Im Bibliotheksanbau fällt Nachmittagslicht durch den Fensterspalt auf eine Seite des alten Sofas. Es riecht noch genauso staubig wie bei meinem ersten Besuch.*"
+        "text": "*Nachmittagslicht auf dem alten Sofa im Anbau. Derselbe Staubgeruch.*"
     },
     "tour_yuna_1b": {
         "name": "{name}",
-        "text": "*Im Bibliotheksanbau fällt Nachmittagslicht durch den Fensterspalt auf das alte Sofa, auf dem Yuna und ich gelesen haben.*"
+        "text": "*Nachmittagslicht fällt auf das Sofa im Anbau, wo wir zusammen lasen.*"
     },
     "tour_yuna_2": {
         "name": "Yuna",
-        "text": "*Sie setzt sich aufs Sofa. Sie lässt den Platz neben sich frei. Eine Stelle, an der sich kein Staub abgesetzt hat.*"
+        "text": "Setz dich daneben. Hier ist kein Staub. *Sie macht auf dem Sofa Platz.*"
     },
     "tour_yuna_3": {
         "name": "{name}",
@@ -105,7 +105,7 @@
     },
     "tour_yuna_6": {
         "name": "Yuna",
-        "text": "*Sie holt ein neues Heft hervor. An den Rändern sieht man, wo sie den früheren Entwurf überarbeitet und übertragen hat.*"
+        "text": "Ich hab es überarbeitet und in ein neues Heft übertragen. Die Ränder sind voll. *Sie holt es heraus.*"
     },
     "tour_yuna_7": {
         "name": "Yuna",
@@ -120,8 +120,8 @@
         "text": "Es fühlt sich nur seltsam an, es das Ende zu nennen."
     },
     "tour_yuna_10": {
-        "name": "{name}",
-        "text": "*Yuna hält mir das Notizbuch hin. Der Umschlag bleibt einmal am Sofastoff hängen, und sie wartet auf meine Antwort, während sie noch eine Ecke festhält.*"
+        "name": "Yuna",
+        "text": "Hier. ...Am Stoff hängen geblieben. *Sie löst den Einband und reicht das Heft.*"
     },
     "tour_yuna_11": {
         "name": "{name}",
@@ -145,7 +145,7 @@
     },
     "tour_dain_1": {
         "name": "{name}",
-        "text": "*Die Turnhalle. Neben der Linie, an der wir unsere erste Wette abgeschlossen haben, steht der Ballwagen, den wir gestern Abend gefüllt haben. Heute brennt Licht.*"
+        "text": "*Neben der Linie unserer ersten Wette steht der gestern Abend aufgeräumte Ballschrank. Heute ist das Hallenlicht an.*"
     },
     "tour_dain_1b": {
         "name": "{name}",
@@ -153,7 +153,7 @@
     },
     "tour_dain_2": {
         "name": "Dain",
-        "text": "*Dain steht mitten auf dem Spielfeld und hat einen Volleyball an die Seite geklemmt.*"
+        "text": "Heute möchte ich einfach mit dir etwas machen, ohne Ballspiel. Du gehst noch nicht nach Hause, oder? *Sie steht mitten auf dem Feld, einen Ball unter dem Arm.*"
     },
     "tour_dain_3": {
         "name": "Dain",
@@ -176,8 +176,8 @@
         "text": "Warum hab ich schon wieder verloren?"
     },
     "tour_dain_8": {
-        "name": "{name}",
-        "text": "*Dain zieht die Brauen zusammen, kann ihre Mundwinkel aber nicht unterdrücken. Einen Takt zu spät legt sie den Volleyball aufs Spielfeld.*"
+        "name": "Dain",
+        "text": "...Bring mich nicht zum Lachen. *Sie runzelt die Stirn, kann das Lächeln aber nicht unterdrücken und legt den Ball einen Takt zu spät ab.*"
     },
     "tour_dain_10": {
         "name": "Dain",
@@ -363,8 +363,8 @@
         "text": "Kannst du diese Seite nehmen? Hilfst du mir, das zum Rundfunkraum zu tragen? *Haeun hält mir eine Seite der Kiste mit Unterlagen hin.*"
     },
     "day5_haeun_high_clasp": {
-        "name": "{name}",
-        "text": "*Wir stellen die Kiste vor dem Rundfunkraum ab. Der Verschluss von Haeuns Schülerratsarmband hängt an meinem Ärmelknopf fest. Sie beugt sich näher, um ihn zu lösen. Schritte auf dem Flur verstummen.*"
+        "name": "Haeun",
+        "text": "Warte bitte kurz. Mein Armband hängt am Ärmelknopf fest. *Sie stellt die Kiste vor dem Senderaum ab und beugt sich näher, um den Verschluss zu lösen. Schritte bleiben stehen.*"
     },
     "day5_haeun_explain_choice": {
         "name": "{name}",
@@ -376,7 +376,7 @@
     },
     "day5_haeun_explain_open": {
         "name": "{name}",
-        "text": "*Ich stelle Haeun vor und erkläre, dass wir Unterlagen zum Rundfunkraum gebracht haben. Sie nickt, doch der Blick der anderen bleibt an meinem Ärmel hängen.*"
+        "text": "Das ist Haeun von der Schülervertretung. Wir brachten Unterlagen zum Senderaum, da blieb ihr Armband hängen. *Die andere Person schaut weiter auf meinen Ärmel.*"
     },
     "day5_haeun_explain_delay": {
         "name": "{name}",
@@ -409,8 +409,8 @@
         "text": "*Haeun drückt mit der Fingerspitze auf den Verschluss ihres Armbands und lässt los.* …Verstanden. Ich tue so, als wäre nichts."
     },
     "day5_haeun_finish": {
-        "name": "{name}",
-        "text": "*Die Tür geht auf, und ein Schüler nimmt die Kiste entgegen. Haeun schließt ihr Armband. Am Ende des Flurs laufen die Durchsagen für das Mittagsprogramm weiter.*"
+        "name": "Haeun",
+        "text": "Danke fürs Abnehmen. *Sie gibt die Kiste ab und schließt das Armband. Die Mittagsdurchsage geht weiter.*"
     },
     "day5_haeun_low_intro": {
         "name": "Haeun",
@@ -431,7 +431,7 @@
     },
     "day5_haeun_low_work": {
         "name": "{name}",
-        "text": "*Wir gleichen die Standnummern einzeln ab, räumen leere Kisten aus dem Durchgang an die Wand und notieren ein fehlendes Schild. Nach dem letzten Eintrag gebe ich Haeun die Liste zurück.*"
+        "text": "Die letzte Nummer stimmt. Leere Kisten stehen an der Wand, fehlende Schilder habe ich hier notiert. *Ich gebe Haeun die Liste zurück.*"
     },
     "day5_haeun_low_repair": {
         "name": "Haeun",
@@ -459,7 +459,7 @@
     },
     "day5_haeun_seoyeon_group_talk": {
         "name": "Seoyeon · Haeun",
-        "text": "*Haeun tritt einen halben Schritt von mir weg. Die andere bleibt stehen und wartet auf meine Antwort.*",
+        "text": "*Haeun tritt einen halben Schritt zurück; die andere Person wartet auf eine Antwort.*",
         "groupLocation": "Flur vor dem Rundfunkraum während des Schulfests",
         "context": "Haeun und der Protagonist trugen Unterlagen zum Rundfunkraum. Die andere Person sah Haeun sich vorbeugen, um ihren Armbandverschluss vom Ärmelknopf zu lösen. Haeun verteidigte ihn und sagte, sie könne ihn ungezwungen um Hilfe bitten. Das vertiefte das Missverständnis über ihre Beziehung. Die Zuneigung der anderen Person ist bereits um 15 gesunken, bei aufgeschobener Erklärung um 20. Zwischen Haeun und dem Protagonisten gab es weder Romantik noch sexuelle Handlungen.",
         "personality": "Die andere Person verlangt in ihrer eigenen Stimme und entsprechend ihrer aktuellen Zuneigung eine Erklärung. Der höchste Wert belegt weder eine Paarbeziehung noch frühere Versprechen. Haeun bleibt höflich und berichtet nur, was sie gesehen hat; sie spricht nicht für seine Gefühle. Lass dem Protagonisten Raum zur Erklärung. Seine tatsächlichen Antworten können das Missverständnis lösen oder bestehen lassen. Löse nicht alles sofort und mache aus einem Verdacht keinen erwiesenen Verrat. Wiederhole den anfänglichen Abzug nicht; bewerte nur die aktuelle Äußerung und Handlung.",
@@ -482,7 +482,7 @@
     },
     "day5_haeun_yuna_group_talk": {
         "name": "Yuna · Haeun",
-        "text": "*Haeun tritt einen halben Schritt von mir weg. Die andere bleibt stehen und wartet auf meine Antwort.*",
+        "text": "*Haeun tritt einen halben Schritt zurück; die andere Person wartet auf eine Antwort.*",
         "groupLocation": "Flur vor dem Rundfunkraum während des Schulfests",
         "context": "Haeun und der Protagonist trugen Unterlagen zum Rundfunkraum. Die andere Person sah Haeun sich vorbeugen, um ihren Armbandverschluss vom Ärmelknopf zu lösen. Haeun verteidigte ihn und sagte, sie könne ihn ungezwungen um Hilfe bitten. Das vertiefte das Missverständnis über ihre Beziehung. Die Zuneigung der anderen Person ist bereits um 15 gesunken, bei aufgeschobener Erklärung um 20. Zwischen Haeun und dem Protagonisten gab es weder Romantik noch sexuelle Handlungen.",
         "personality": "Die andere Person verlangt in ihrer eigenen Stimme und entsprechend ihrer aktuellen Zuneigung eine Erklärung. Der höchste Wert belegt weder eine Paarbeziehung noch frühere Versprechen. Haeun bleibt höflich und berichtet nur, was sie gesehen hat; sie spricht nicht für seine Gefühle. Lass dem Protagonisten Raum zur Erklärung. Seine tatsächlichen Antworten können das Missverständnis lösen oder bestehen lassen. Löse nicht alles sofort und mache aus einem Verdacht keinen erwiesenen Verrat. Wiederhole den anfänglichen Abzug nicht; bewerte nur die aktuelle Äußerung und Handlung.",
@@ -505,7 +505,7 @@
     },
     "day5_haeun_dain_group_talk": {
         "name": "Dain · Haeun",
-        "text": "*Haeun tritt einen halben Schritt von mir weg. Die andere bleibt stehen und wartet auf meine Antwort.*",
+        "text": "*Haeun tritt einen halben Schritt zurück; die andere Person wartet auf eine Antwort.*",
         "groupLocation": "Flur vor dem Rundfunkraum während des Schulfests",
         "context": "Haeun und der Protagonist trugen Unterlagen zum Rundfunkraum. Die andere Person sah Haeun sich vorbeugen, um ihren Armbandverschluss vom Ärmelknopf zu lösen. Haeun verteidigte ihn und sagte, sie könne ihn ungezwungen um Hilfe bitten. Das vertiefte das Missverständnis über ihre Beziehung. Die Zuneigung der anderen Person ist bereits um 15 gesunken, bei aufgeschobener Erklärung um 20. Zwischen Haeun und dem Protagonisten gab es weder Romantik noch sexuelle Handlungen.",
         "personality": "Die andere Person verlangt in ihrer eigenen Stimme und entsprechend ihrer aktuellen Zuneigung eine Erklärung. Der höchste Wert belegt weder eine Paarbeziehung noch frühere Versprechen. Haeun bleibt höflich und berichtet nur, was sie gesehen hat; sie spricht nicht für seine Gefühle. Lass dem Protagonisten Raum zur Erklärung. Seine tatsächlichen Antworten können das Missverständnis lösen oder bestehen lassen. Löse nicht alles sofort und mache aus einem Verdacht keinen erwiesenen Verrat. Wiederhole den anfänglichen Abzug nicht; bewerte nur die aktuelle Äußerung und Handlung.",
@@ -528,7 +528,7 @@
     },
     "day5_haeun_teacher_group_talk": {
         "name": "Klassenlehrerin · Haeun",
-        "text": "*Haeun tritt einen halben Schritt von mir weg. Die andere bleibt stehen und wartet auf meine Antwort.*",
+        "text": "*Haeun tritt einen halben Schritt zurück; die andere Person wartet auf eine Antwort.*",
         "groupLocation": "Flur vor dem Rundfunkraum während des Schulfests",
         "context": "Haeun und der Protagonist trugen Unterlagen zum Rundfunkraum. Die andere Person sah Haeun sich vorbeugen, um ihren Armbandverschluss vom Ärmelknopf zu lösen. Haeun verteidigte ihn und sagte, sie könne ihn ungezwungen um Hilfe bitten. Das vertiefte das Missverständnis über ihre Beziehung. Die Zuneigung der anderen Person ist bereits um 15 gesunken, bei aufgeschobener Erklärung um 20. Zwischen Haeun und dem Protagonisten gab es weder Romantik noch sexuelle Handlungen.",
         "personality": "Die andere Person verlangt in ihrer eigenen Stimme und entsprechend ihrer aktuellen Zuneigung eine Erklärung. Der höchste Wert belegt weder eine Paarbeziehung noch frühere Versprechen. Haeun bleibt höflich und berichtet nur, was sie gesehen hat; sie spricht nicht für seine Gefühle. Lass dem Protagonisten Raum zur Erklärung. Seine tatsächlichen Antworten können das Missverständnis lösen oder bestehen lassen. Löse nicht alles sofort und mache aus einem Verdacht keinen erwiesenen Verrat. Wiederhole den anfänglichen Abzug nicht; bewerte nur die aktuelle Äußerung und Handlung.",
@@ -551,7 +551,7 @@
     },
     "day5_haeun_nurse_group_talk": {
         "name": "Schulkrankenschwester · Haeun",
-        "text": "*Haeun tritt einen halben Schritt von mir weg. Die andere bleibt stehen und wartet auf meine Antwort.*",
+        "text": "*Haeun tritt einen halben Schritt zurück; die andere Person wartet auf eine Antwort.*",
         "groupLocation": "Flur vor dem Rundfunkraum während des Schulfests",
         "context": "Haeun und der Protagonist trugen Unterlagen zum Rundfunkraum. Die andere Person sah Haeun sich vorbeugen, um ihren Armbandverschluss vom Ärmelknopf zu lösen. Haeun verteidigte ihn und sagte, sie könne ihn ungezwungen um Hilfe bitten. Das vertiefte das Missverständnis über ihre Beziehung. Die Zuneigung der anderen Person ist bereits um 15 gesunken, bei aufgeschobener Erklärung um 20. Zwischen Haeun und dem Protagonisten gab es weder Romantik noch sexuelle Handlungen.",
         "personality": "Die andere Person verlangt in ihrer eigenen Stimme und entsprechend ihrer aktuellen Zuneigung eine Erklärung. Der höchste Wert belegt weder eine Paarbeziehung noch frühere Versprechen. Haeun bleibt höflich und berichtet nur, was sie gesehen hat; sie spricht nicht für seine Gefühle. Lass dem Protagonisten Raum zur Erklärung. Seine tatsächlichen Antworten können das Missverständnis lösen oder bestehen lassen. Löse nicht alles sofort und mache aus einem Verdacht keinen erwiesenen Verrat. Wiederhole den anfänglichen Abzug nicht; bewerte nur die aktuelle Äußerung und Handlung.",
@@ -582,7 +582,7 @@
     },
     "day5_haeun_concern_seoyeon_intro": {
         "name": "Haeun",
-        "text": "*Ich höre Haeun hinter der Flurecke. Sie spricht leise mit jemandem und hält inne, als sie mich sieht.* Bei unserem letzten Gespräch war mir unwohl. Ich wusste nicht, wie ich das verstehen sollte, und habe es deshalb angesprochen."
+        "text": "*An der Flurecke spricht Haeun leise mit der Person gegenüber und verstummt, als sie mich sieht.* Bei unserem letzten Gespräch war mir unwohl. Ich wusste nicht, wie ich das verstehen sollte, und habe es deshalb angesprochen."
     },
     "day5_haeun_concern_seoyeon_arrival": {
         "name": "Seoyeon",
@@ -609,7 +609,7 @@
     },
     "day5_haeun_concern_yuna_intro": {
         "name": "Haeun",
-        "text": "*Ich höre Haeun hinter der Flurecke. Sie spricht leise mit jemandem und hält inne, als sie mich sieht.* Bei unserem letzten Gespräch war mir unwohl. Ich wusste nicht, wie ich das verstehen sollte, und habe es deshalb angesprochen."
+        "text": "*An der Flurecke spricht Haeun leise mit der Person gegenüber und verstummt, als sie mich sieht.* Bei unserem letzten Gespräch war mir unwohl. Ich wusste nicht, wie ich das verstehen sollte, und habe es deshalb angesprochen."
     },
     "day5_haeun_concern_yuna_arrival": {
         "name": "Yuna",
@@ -636,7 +636,7 @@
     },
     "day5_haeun_concern_dain_intro": {
         "name": "Haeun",
-        "text": "*Ich höre Haeun hinter der Flurecke. Sie spricht leise mit jemandem und hält inne, als sie mich sieht.* Bei unserem letzten Gespräch war mir unwohl. Ich wusste nicht, wie ich das verstehen sollte, und habe es deshalb angesprochen."
+        "text": "*An der Flurecke spricht Haeun leise mit der Person gegenüber und verstummt, als sie mich sieht.* Bei unserem letzten Gespräch war mir unwohl. Ich wusste nicht, wie ich das verstehen sollte, und habe es deshalb angesprochen."
     },
     "day5_haeun_concern_dain_arrival": {
         "name": "Dain",
@@ -663,7 +663,7 @@
     },
     "day5_haeun_concern_teacher_intro": {
         "name": "Haeun",
-        "text": "*Ich höre Haeun hinter der Flurecke. Sie spricht leise mit jemandem und hält inne, als sie mich sieht.* Bei unserem letzten Gespräch war mir unwohl. Ich wusste nicht, wie ich das verstehen sollte, und habe es deshalb angesprochen."
+        "text": "*An der Flurecke spricht Haeun leise mit der Person gegenüber und verstummt, als sie mich sieht.* Bei unserem letzten Gespräch war mir unwohl. Ich wusste nicht, wie ich das verstehen sollte, und habe es deshalb angesprochen."
     },
     "day5_haeun_concern_teacher_arrival": {
         "name": "Klassenlehrerin",
@@ -690,7 +690,7 @@
     },
     "day5_haeun_concern_nurse_intro": {
         "name": "Haeun",
-        "text": "*Ich höre Haeun hinter der Flurecke. Sie spricht leise mit jemandem und hält inne, als sie mich sieht.* Bei unserem letzten Gespräch war mir unwohl. Ich wusste nicht, wie ich das verstehen sollte, und habe es deshalb angesprochen."
+        "text": "*An der Flurecke spricht Haeun leise mit der Person gegenüber und verstummt, als sie mich sieht.* Bei unserem letzten Gespräch war mir unwohl. Ich wusste nicht, wie ich das verstehen sollte, und habe es deshalb angesprochen."
     },
     "day5_haeun_concern_nurse_arrival": {
         "name": "Schulkrankenschwester",

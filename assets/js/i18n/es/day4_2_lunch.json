@@ -13,7 +13,7 @@
     },
     "date_seo_1": {
         "name": "{name}",
-        "text": "*Seoyeon ya está frente a la fuente. No lleva el portapapeles; solo tiene la correa del bolso enrollada en los dedos.*"
+        "text": "¿Llevas esperando? Hoy no hay portapapeles. *Ante la fuente, Seoyeon tiene la correa del bolso enrollada en los dedos.*"
     },
     "date_seo_compliment_choice": {
         "name": "{name}",
@@ -26,7 +26,7 @@
     },
     "date_seo_pretty_high": {
         "name": "Seoyeon",
-        "text": "*La correa del bolso se afloja en la mano que la sujetaba.*"
+        "text": "...Si me lo dices de repente, no sé qué responder. ¿Puedo sonreír primero? *La mano que sujeta la correa del bolso se relaja.*"
     },
     "date_seo_pretty_high_b": {
         "name": "Seoyeon",
@@ -46,7 +46,7 @@
     },
     "date_seo_pretty_high_4": {
         "name": "Seoyeon",
-        "text": "*El cabello que había colocado detrás de la oreja vuelve a caer. La mano que subía regresa a la correa del bolso.*"
+        "text": "Lo que has dicho antes... lo he oído. No lo retires solo porque no haya respondido enseguida. *El pelo que apartó cae de nuevo; la mano que levantaba vuelve a la correa.*"
     },
     "date_seo_pretty_low": {
         "name": "Seoyeon",
@@ -74,7 +74,7 @@
     },
     "date_seo_duck_4": {
         "name": "Seoyeon",
-        "text": "*Observa las migas de pan que se hunden junto a la orilla. Al pasar frente a una florería, reduce el paso.*"
+        "text": "Esa floristería... Un momento. *Afloja el paso tras mirar el agua.*"
     },
     "date_seo_flower_b": {
         "name": "Seoyeon",
@@ -82,7 +82,7 @@
     },
     "date_seo_flower_2": {
         "name": "Seoyeon",
-        "text": "*Al empujar la puerta de la florería suena una campanilla. Seoyeon recorre una vez los exhibidores y elige una pequeña maceta con una suculenta.*"
+        "text": "¿Qué tal esta macetita? *Suena la campana; elige una suculenta.*"
     },
     "date_seo_succulent_2": {
         "name": "Seoyeon",
@@ -98,7 +98,7 @@
     },
     "date_seo_end": {
         "name": "Seoyeon",
-        "text": "*Me extiende la maceta. La pequeña maceta llena de tierra toca mi palma.*"
+        "text": "Toma. Lo de llevármela otra vez... no significa que no quiera dártela. *Me tiende la maceta pequeña con tierra, que toca mi palma.*"
     },
     "date_seo_end_b": {
         "name": "{name}",
@@ -114,7 +114,7 @@
     },
     "date_yuna_1": {
         "name": "{name}",
-        "text": "*Frente a la cafetería. Yuna está parada contra la pared. Un vestido negro y un pequeño bolso cruzado. Como no hay uniforme escolar, las líneas del tatuaje son lo primero que llama la atención.*"
+        "text": "*Yuna ante el café: vestido negro, bolso cruzado y tatuajes visibles.* ¿Has esperado mucho?"
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
@@ -127,7 +127,7 @@
     },
     "date_yuna_pretty_high": {
         "name": "Yuna",
-        "text": "*Observa durante un largo rato solo el borde del vaso. El cabello plateado le cae junto a la mejilla.*"
+        "text": "...Ahora no se me ocurre nada más que decir. No dejo de pensar en lo que acabas de decir. *Mira largo rato el borde de la taza; el pelo blanco plateado cae junto a su mejilla.*"
     },
     "date_yuna_pretty_high_2": {
         "name": "Yuna",
@@ -179,7 +179,7 @@
     },
     "date_yuna_earphone": {
         "name": "Yuna",
-        "text": "*Me tiende uno de los auriculares.*"
+        "text": "No es solo hablar de libros. Hoy también quiero que escuchemos esto juntos. *Me da un auricular.*"
     },
     "date_yuna_earphone_2": {
         "name": "Yuna",
@@ -191,7 +191,7 @@
     },
     "date_yuna_earphone_3": {
         "name": "{name}",
-        "text": "*El cable del auricular marca la distancia entre nosotros. Yuna se sienta justo a esa distancia.*"
+        "text": "*Yuna se sienta más cerca, justo antes de que se tense el cable del auricular.*"
     },
     "date_yuna_oldbook": {
         "name": "{name}",
@@ -231,7 +231,7 @@
     },
     "date_dain_1": {
         "name": "{name}",
-        "text": "*Frente al gimnasio, Dain saluda con gorra y ropa deportiva. Lleva una rodillera en la pierna derecha.*"
+        "text": "*Dain saluda ante el gimnasio, con ropa deportiva y gorra. Lleva una rodillera en la rodilla derecha.*"
     },
     "date_dain_2": {
         "name": "Dain",
@@ -257,7 +257,7 @@
     },
     "date_dain_pretty_high": {
         "name": "Dain",
-        "text": "*Se detiene. Se baja tanto la gorra que le cubre media cara.*"
+        "text": "No te estás burlando, ¿verdad? Es solo una gorra, pero que lo digas así de repente... *Se la baja hasta ocultar media cara.*"
     },
     "date_dain_pretty_high_2": {
         "name": "Dain",
@@ -269,7 +269,7 @@
     },
     "date_dain_pretty_high_4": {
         "name": "Dain",
-        "text": "*Se queda sujetando la visera de la gorra y tarda en bajar la mano.*"
+        "text": "¿Crees que puedes decirlo todo porque sea verdad? ...No digo que no me guste. Si sigues mirando, no voy a poder moverme. *Las orejas se le enrojecen bajo la visera; los dedos siguen enganchados al borde.*"
     },
     "date_dain_pretty_low": {
         "name": "Dain",
@@ -300,8 +300,8 @@
         "text": "Sin apuesta no es divertido."
     },
     "date_dain_arcade_3_b": {
-        "name": "{name}",
-        "text": "*En cuanto empieza el juego de ritmo, Dain atrapa el compás. Su combo no se rompe hasta que termina la canción.*"
+        "name": "Dain",
+        "text": "¡Mira, este ritmo no se puede fallar! *Mantiene el combo hasta el final.*"
     },
     "date_dain_arcade_3_c": {
         "name": "Dain",
@@ -324,12 +324,12 @@
         "text": "*«Así no tengo que usar las rodillas». Dain lo dice sonriendo, y luego baja la vista hacia la rodilla derecha.*"
     },
     "date_dain_knee_2": {
-        "name": "{name}",
-        "text": "*Salimos del arcade y pasamos frente a una tienda de artículos deportivos. Dain reduce el paso ante el escaparate donde exhiben tenis de voleibol.*"
+        "name": "Dain",
+        "text": "Un momento. Quiero ver esas zapatillas de voleibol. *Se para ante la tienda.*"
     },
     "date_dain_shop": {
         "name": "Dain",
-        "text": "*Sigue con la mirada las agujetas de los tenis de voleibol del escaparate. Bajo la visera de la gorra, aprieta los labios.*"
+        "text": "...Nada, solo miro. *No aparta los ojos de las zapatillas.*"
     },
     "date_dain_shop_2": {
         "name": "{name}",
@@ -385,8 +385,8 @@
         "text": "Hoy podemos cambiar de planes. Empecemos por donde tú quieras ir."
     },
     "date_seo_high_2": {
-        "name": "{name}",
-        "text": "*Seoyeon dobla el itinerario y lo guarda en su bolso. Suelta la correa y entra primero en el parque.*"
+        "name": "Seoyeon",
+        "text": "Guardo el horario. Hoy no quiero ir siguiendo un plan también. *Se adelanta por el parque.*"
     },
     "date_seo_tentative_1": {
         "name": "{name}",
@@ -459,8 +459,8 @@
         "text": "*Termino la disculpa que no había enviado y la mando. Mientras espero respuesta, reviso los planes de hoy.*"
     },
     "day4_harem_fallout_1": {
-        "name": "{name}",
-        "text": "*Seoyeon escribe en el grupo: «Que ayer nos riéramos no significa que hayamos aclarado los planes».*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon escribe en el grupo.* Que ayer nos riéramos no significa que los planes estén resueltos."
     },
     "day4_harem_fallout_2": {
         "name": "Seoyeon",

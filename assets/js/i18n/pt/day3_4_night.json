@@ -57,7 +57,7 @@
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*Antes de dormir, abro a galeria, procuro a foto de Sojeong e mantenho o dedo sobre ela.*"
+        "text": "*Mantenho o dedo na foto de Sojeong na galeria.*"
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
@@ -81,7 +81,7 @@
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*Abro a pasta nova para conferir se a foto continua lá. Uma imagem aparece abaixo do nome.*"
+        "text": "*Aquela foto continua na pasta nova.*"
     },
     "night3_faithful_reflect_4_b": {},
     "night3_faithful_reflect_4_c": {},
@@ -123,11 +123,11 @@
     },
     "night3_cheat_msg_4_b": {
         "name": "Yuna",
-        "text": "*Nem eu nem elas queremos ser sua segunda opção.*"
+        "text": "Nem eu nem as outras queremos ficar de reserva."
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "*decida quem você vai ver amanhã*"
+        "text": "Decide quem você vai procurar amanhã"
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
@@ -171,7 +171,7 @@
     },
     "night3_nightmare_6": {
         "name": "{name}",
-        "text": "*Abro e fecho as três conversas, uma de cada vez. Em cada campo de texto, digito uma primeira letra diferente e apago.*"
+        "text": "*Escrevo e apago respostas nas três conversas.*"
     },
     "night3_nightmare_choice": {
         "name": "{name}",
@@ -196,7 +196,7 @@
     },
     "night3_nightmare_end": {
         "name": "{name}",
-        "text": "*A frase fica em um dos campos de texto, e fecho as outras duas conversas. Ainda não enviei.*"
+        "text": "*A única frase que ficou ainda não foi enviada.*"
     },
     "night3_nightmare_end_3": {
         "name": "{name}",
@@ -208,15 +208,15 @@
     },
     "night3_cheat_reflect_3_b": {
         "name": "{name}",
-        "text": "*Fecho a foto e volto para a lista de mensagens. Uma das frases que escrevi há pouco ficou salva como rascunho.*"
+        "text": "*O rascunho continua na lista de conversas.*"
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",
         "text": "*Percorro a lista. Ao lado dos três nomes, há uma última frase diferente em cada conversa.*"
     },
     "night3_cheat_reflect_3_d": {
-        "name": "{name}",
-        "text": "*Tem uma mensagem de Minsu: ‘Adiar não vai fazer isso sumir.’*"
+        "name": "Minsu",
+        "text": "*Mensagem do Minsu.* Adiar não faz isso sumir"
     },
     "night3_cheat_reflect_3_e": {
         "name": "{name}",
@@ -236,7 +236,7 @@
     },
     "forced_violation_day3_after_seoyeon": {
         "name": "Seoyeon",
-        "text": "*Mesmo depois que a conversa termina, Seoyeon fica em silêncio por um bom tempo. Quando volta a falar, a voz está fria.* Não pense que pode fingir que o que acabou de fazer nunca aconteceu. Por enquanto, não chegue perto de mim nem entre em contato.",
+        "text": "*Após um silêncio, Seoyeon fala com frieza.* Não pense que pode fingir que o que acabou de fazer nunca aconteceu. Por enquanto, não chegue perto de mim nem entre em contato.",
         "choices": [
             "Pedir desculpas sem dar desculpas e encerrar a conversa.",
             "Tentar explicar que foi um mal-entendido."
@@ -244,7 +244,7 @@
     },
     "forced_violation_day3_seoyeon_apologize": {
         "name": "Seoyeon",
-        "text": "*A expressão de Seoyeon não se suaviza com o pedido de desculpas.* Eu ouvi. Isso não apaga o que aconteceu. Como eu disse, não entre em contato por um tempo."
+        "text": "*O rosto de Seoyeon continua sério.* Eu ouvi. Isso não apaga o que aconteceu. Como eu disse, não entre em contato por um tempo."
     },
     "forced_violation_day3_seoyeon_excuse": {
         "name": "Seoyeon",
@@ -252,7 +252,7 @@
     },
     "forced_violation_day3_after_yuna": {
         "name": "Yuna",
-        "text": "*Quando a conversa é interrompida, Yuna respira fundo uma vez. No rosto tenso, só resta desconfiança.* Você sabia que eu não queria e mesmo assim ignorou. Agora eu não quero nem olhar para você. Não entre mais em contato.",
+        "text": "*Yuna respira, desconfiada.* Você sabia que eu não queria e mesmo assim ignorou. Agora eu não quero nem olhar para você. Não entre mais em contato.",
         "choices": [
             "Pedir desculpas sem dar desculpas e encerrar a conversa.",
             "Tentar explicar que foi um mal-entendido."
@@ -260,7 +260,7 @@
     },
     "forced_violation_day3_yuna_apologize": {
         "name": "Yuna",
-        "text": "*Yuna só responde depois de um longo silêncio.* Pedir desculpas não faz isso desaparecer. Pare agora."
+        "text": "*Yuna responde depois de um longo silêncio.* Pedir desculpas não faz isso desaparecer. Pare agora."
     },
     "forced_violation_day3_yuna_excuse": {
         "name": "Yuna",
@@ -268,7 +268,7 @@
     },
     "forced_violation_day3_after_dain": {
         "name": "Dain",
-        "text": "*Dain não tenta levar a situação na brincadeira como faria normalmente. Depois de um longo silêncio, sua voz volta curta e tensa.* Isso não é brincadeira. Eu disse não e você me forçou mesmo assim. Não vou deixar isso passar.",
+        "text": "*Dain não sorri. Depois de um longo silêncio, responde brevemente, com a voz tensa.* Isso não é brincadeira. Eu disse não e você me forçou mesmo assim. Não vou deixar isso passar.",
         "choices": [
             "Pedir desculpas sem dar desculpas e encerrar a conversa.",
             "Tentar explicar que foi um mal-entendido."
@@ -284,7 +284,7 @@
     },
     "forced_violation_day3_after_teacher": {
         "name": "Professora",
-        "text": "*Depois que a conversa termina, a professora traça um limite com a voz ainda mais firme.* O que você acabou de fazer passou claramente dos limites. Não chegue mais perto. Vou tratar isso de acordo com os procedimentos necessários.",
+        "text": "*A professora fala com firmeza.* O que você acabou de fazer passou claramente dos limites. Não chegue mais perto. Vou tratar isso de acordo com os procedimentos necessários.",
         "choices": [
             "Pedir desculpas sem dar desculpas e encerrar a conversa.",
             "Tentar explicar que foi um mal-entendido."
@@ -292,7 +292,7 @@
     },
     "forced_violation_day3_teacher_apologize": {
         "name": "Professora",
-        "text": "*A professora respira fundo antes de continuar.* Eu ouvi seu pedido de desculpas. Mesmo assim, os procedimentos vão seguir. Não diga mais nada."
+        "text": "*A professora respira e fala.* Eu ouvi seu pedido de desculpas. Mesmo assim, os procedimentos vão seguir. Não diga mais nada."
     },
     "forced_violation_day3_teacher_excuse": {
         "name": "Professora",
@@ -308,7 +308,7 @@
     },
     "forced_violation_day3_haeun_apologize": {
         "name": "Haeun",
-        "text": "*Haeun recua em direção à sala dos professores sem responder. Ela continua olhando até ter certeza de que o protagonista não a segue.*"
+        "text": "*Sem responder, Haeun recua para a sala dos professores, conferindo se não a sigo.*"
     },
     "forced_violation_day3_haeun_excuse": {
         "name": "Haeun",
@@ -316,7 +316,7 @@
     },
     "forced_violation_day3_after_nurse": {
         "name": "Enfermeira",
-        "text": "*Quando a conversa é interrompida, toda a brincadeira habitual desaparece da voz da enfermeira escolar.* De agora em diante, mantenha distância. Vou registrar o que aconteceu e avisar as pessoas responsáveis.",
+        "text": "*O tom brincalhão da enfermeira desaparece.* De agora em diante, mantenha distância. Vou registrar o que aconteceu e avisar as pessoas responsáveis.",
         "choices": [
             "Pedir desculpas sem dar desculpas e encerrar a conversa.",
             "Tentar explicar que foi um mal-entendido."
@@ -324,7 +324,7 @@
     },
     "forced_violation_day3_nurse_apologize": {
         "name": "Enfermeira",
-        "text": "*A enfermeira fica em silêncio por um momento e então responde com firmeza.* Vou ouvir seu pedido de desculpas. Ainda assim, vou registrar e fazer os avisos necessários. Esta conversa acabou."
+        "text": "*Após uma pausa, a enfermeira responde com firmeza.* Vou ouvir seu pedido de desculpas. Ainda assim, vou registrar e fazer os avisos necessários. Esta conversa acabou."
     },
     "forced_violation_day3_nurse_excuse": {
         "name": "Enfermeira",

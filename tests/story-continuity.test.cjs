@@ -375,7 +375,7 @@ test('first-week continuity preserves unsent apologies, injury limits and spoken
     for (const file of fs.readdirSync(path.join(root, 'assets/js/i18n/ko')).filter(f => /^day[1-5]_/.test(f))) {
         Object.assign(ko, JSON.parse(read('assets/js/i18n/ko/' + file)));
     }
-    assert.match(ko.night3_nightmare_end.text, /아직 보내지는 않았다/);
+    assert.match(ko.night3_nightmare_end.text, /아직 보내지(?:는)? 않았다/);
     assert.match(ko.day4_caught_fallout_1.text, /입력창에 남아/);
     assert.doesNotMatch(ko.day4_caught_fallout_1.text, /읽음/);
     assert.doesNotMatch(ko.day4_harem_fallout_3.text, /컵/);

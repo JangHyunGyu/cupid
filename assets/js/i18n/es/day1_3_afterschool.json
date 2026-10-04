@@ -1,7 +1,7 @@
 {
     "after_start": {
         "name": "{name}",
-        "text": "*Después de clases, recorro los pasillos para familiarizarme con la escuela y saco el celular cuando vibra en mi bolsillo. Es el chat grupal de mi antigua escuela.*"
+        "text": "*Después de clase, en el pasillo. Consulto el aviso del grupo de mi antigua escuela.*"
     },
     "after_kakao_1": {
         "name": "{name}",
@@ -14,7 +14,7 @@
     "after_kakao_5": {},
     "after_kakao_end": {
         "name": "{name}",
-        "text": "*Tras un momento de duda, salgo del grupo. El chat del nuevo instituto queda el primero de la lista.*"
+        "text": "*Tras dudar, salgo del grupo. Arriba queda el chat de la nueva escuela.*"
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
@@ -22,7 +22,7 @@
     },
     "after1_jealousy_seo_2": {
         "name": "{name}",
-        "text": "*Escribo 'con Seoyeon' en el cuadro de respuesta y lo borro. El cursor parpadea solo en el primer espacio otra vez.*"
+        "text": "*Borro «con Seoyeon» de mi respuesta.*"
     },
     "after1_jealousy_seo_3": {
         "name": "Dain",
@@ -55,8 +55,8 @@
         "text": "¿En serio? …Pues me habré equivocado."
     },
     "after1_jealousy_seo_yuna": {
-        "name": "{name}",
-        "text": "*Una nota doblada asoma del bolsillo lateral de la mochila. Es la letra de Yuna: «Te vi en la azotea a la hora del almuerzo. Parecías llevarte bien con la presidenta». El punto final está corrido.*"
+        "name": "Yuna",
+        "text": "*Una nota doblada en el bolsillo lateral. Letra de Yuna, punto final borroso.* Te vi en la azotea a la hora de comer. Parecías llevarte bien con la presidenta."
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
@@ -64,7 +64,7 @@
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
-        "text": "*Seoyeon alinea los papeles de su portapapeles. Me detengo a pensar qué responder.*"
+        "text": "*Seoyeon alinea el portapapeles. Me detengo y elijo la respuesta.*"
     },
     "after1_jealousy_yuna_1": {
         "name": "Dain",
@@ -88,8 +88,8 @@
         "text": "¡Cuidado!"
     },
     "after_miss_dain_3": {
-        "name": "{name}",
-        "text": "*Me aparto a un lado y Dain pasa rozándome. Tres pasos más allá, arrastra la suela de la zapatilla por el suelo al detenerse.*"
+        "name": "Dain",
+        "text": "¡Ah, te has apartado! *Se para tres pasos después.*"
     },
     "after_miss_dain_4": {
         "name": "Dain",
@@ -105,16 +105,16 @@
     },
     "after_miss_dain_6_b": {
         "name": "{name}",
-        "text": "*Después de correr unos pasos, se sujeta la rodilla derecha. Suelta la mano enseguida y vuelve a acelerar.*"
+        "text": "*Tras un par de pasos, se toca la rodilla derecha, la suelta y acelera.*"
     },
     "after_miss_dain_7": {
-        "name": "{name}",
-        "text": "*Justo antes de doblar la esquina del pasillo, Dain levanta la mano bien alto. Por fin recuerdo el nombre que dijo antes la profesora: Dain.*"
+        "name": "Dain",
+        "text": "¡Soy Dain, no lo olvides! *Saluda desde la esquina.*"
     },
     "after_yuna_skip": {},
     "after_miss_yuna_1": {
         "name": "{name}",
-        "text": "*Paso frente a la biblioteca y veo a una chica de ojos rojos caminando mientras lee. Su brazo tatuado sostiene con cuidado el lomo del libro.*"
+        "text": "*La chica de ojos rojos pasa ante la biblioteca, apoyando el libro en el brazo tatuado.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
@@ -126,7 +126,7 @@
     },
     "after_miss_yuna_2": {
         "name": "Yuna",
-        "text": "*Alisa con el pulgar la esquina del marcapáginas y lo sostiene a contraluz. Ni una arruga.*"
+        "text": "No se ha arrugado. *Revisa el marcapáginas.*"
     },
     "after_miss_yuna_3": {
         "name": "Yuna",
@@ -163,7 +163,7 @@
     },
     "after_miss_seoyeon_7": {
         "name": "{name}",
-        "text": "*Seoyeon aprieta la carpeta contra el pecho y tapa el bolígrafo sin mirarme.*"
+        "text": "*Abraza el portapapeles, evita mirarme y tapa el bolígrafo.*"
     },
     "after_miss_seoyeon_8": {
         "name": "Seoyeon",
@@ -171,7 +171,7 @@
     },
     "after_end": {
         "name": "{name}",
-        "text": "*Suena el aviso de salida y los estudiantes que quedan en el pasillo van disminuyendo poco a poco.*",
+        "text": "*Tras el aviso de salida, el pasillo se vacía poco a poco.*",
         "choices": [
             "Sala de profesores",
             "Enfermería",
@@ -180,7 +180,7 @@
     },
     "after_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Cuando estoy por irme, recuerdo a la profesora, que se quedó hasta el final ordenando la lista de asistencia. Toco frente a la sala de profesores y abro la puerta.*"
+        "text": "*Llamo a la puerta de la sala de profesores.* ¿Tiene un momento, profesora?"
     },
     "after_hidden_homeroom_cool": {
         "name": "Profesora",
@@ -195,8 +195,8 @@
         "text": "Oh, ¿{name}? ¿Qué pasa?"
     },
     "after_hidden_homeroom_3": {
-        "name": "{name}",
-        "text": "*Es la profesora. Lleva una manga del cárdigan remangada y entre las páginas de la lista de asistencia sobresale un aviso doblado.*"
+        "name": "Profesora",
+        "text": "Sí, pasa. *Una manga remangada; un aviso doblado asoma en la lista.*"
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
@@ -229,7 +229,7 @@
     },
     "after_homeroom_ok_b": {
         "name": "Profesora",
-        "text": "*Aparta los documentos del escritorio para desocupar una silla. Con la mano en el respaldo, me indica que me siente.*"
+        "text": "*Aparta los papeles para dejar libre una silla.*"
     },
     "after_homeroom_ok_3": {
         "name": "Profesora",
@@ -245,7 +245,7 @@
     },
     "after_homeroom_ok_6": {
         "name": "Profesora",
-        "text": "*La profesora vuelve a girarse hacia el escritorio. Me despido brevemente y cierro la puerta de la sala de profesores.*"
+        "text": "Hasta luego. *Se vuelve hacia la mesa.*"
     },
     "after_homeroom_honest_1": {
         "name": "Profesora",
@@ -261,7 +261,7 @@
     },
     "after_homeroom_honest_3_b": {
         "name": "Profesora",
-        "text": "*Da vuelta el portapapeles y frota la esquina con el pulgar.*"
+        "text": "*Vuelve el portapapeles y frota una esquina con el pulgar.*"
     },
     "after_homeroom_honest_4": {
         "name": "Profesora",
@@ -319,11 +319,11 @@
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
-        "text": "*Pasan unos alumnos por el pasillo. La profesora aparta los papeles de su mesa.*"
+        "text": "*Pasos fuera. La profesora aparta los papeles.*"
     },
     "after_homeroom_honest_10": {
         "name": "Profesora",
-        "text": "*Salimos al pasillo, junto a la sala de profesores. Sostiene el registro bajo el brazo y espera a que continúe.*"
+        "text": "¿Seguimos hablando en el pasillo? *Sale con la lista de asistencia.*"
     },
     "after_homeroom_freetalk": {
         "name": "Profesora",
@@ -333,7 +333,7 @@
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",
-        "text": "*Las luces fluorescentes del pasillo parecen tambalearse. Apoyo una mano en la pared y la pintura fría me toca la palma. Justo al lado cuelga un letrero que dice «Enfermería».*"
+        "text": "*Me mareo y me apoyo en la pared. Al lado veo el letrero de la enfermería.*"
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
@@ -347,7 +347,7 @@
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
-        "text": "*Me detengo frente a la puerta, respiro hondo y pongo la mano en la manija. El metal frío roza mi palma.*"
+        "text": "*Respiro y agarro el pomo frío.*"
     },
     "after_nurse_d1_cool": {
         "name": "Enfermera",
@@ -359,7 +359,7 @@
     },
     "after_nurse_enter_1": {
         "name": "{name}",
-        "text": "*Abro la puerta de la enfermería. Olor a desinfectante. Cortinas blancas y una cama, un pequeño escritorio. Una mujer con bata blanca me mira por encima de sus lentes. El estetoscopio alrededor de su cuello roza el borde del escritorio y se balancea levemente.*"
+        "text": "*Huele a desinfectante. La enfermera me mira tras las gafas.* Disculpe."
     },
     "after_nurse_enter_2": {
         "name": "Enfermera",
@@ -367,7 +367,7 @@
     },
     "after_nurse_enter_2_b": {
         "name": "{name}",
-        "text": "*La enfermera saca una hoja de registro clínico y tamborilea la primera línea con el bolígrafo.*"
+        "text": "*Saca una ficha y señala la primera línea con el bolígrafo.*"
     },
     "after_nurse_enter_3": {
         "name": "{name}",
@@ -407,7 +407,7 @@
     },
     "after_nurse_enter_7_b": {
         "name": "{name}",
-        "text": "*Al recostarme, la sábana delgada cruje bajo mi cuerpo.*"
+        "text": "*La sábana cruje al acostarme.*"
     },
     "after_nurse_enter_7_c": {
         "name": "Enfermera",
@@ -419,7 +419,7 @@
     },
     "after_nurse_enter_choice": {
         "name": "{name}",
-        "text": "*Por la abertura de la cortina veo a la enfermera rellenar una ficha.*",
+        "text": "*Tras la cortina, la enfermera rellena la ficha.*",
         "choices": [
             "Usted parece más cansada que yo",
             "La enfermería es muy tranquila.",
@@ -472,7 +472,7 @@
     },
     "after_nurse_enter_10_b": {
         "name": "Enfermera",
-        "text": "*Al guardar la ficha en el cajón, deja ver un cuaderno verde claro. Han pasado diez minutos desde que me tumbé.*"
+        "text": "Ya van diez minutos. ¿Mejor? *Al guardar el registro en el cajón, asoma un cuaderno verde claro.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",
@@ -492,7 +492,7 @@
     },
     "after_nurse_enter_11_d": {
         "name": "Enfermera",
-        "text": "*La enfermera deja el vaso de agua sobre el escritorio. El fondo golpea la madera con un sonido suave.*"
+        "text": "*Deja el vaso de agua con un sonido leve.*"
     },
     "after_nurse_enter_11_e": {
         "name": "Enfermera",
@@ -533,7 +533,7 @@
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*Me detengo al ir a levantarme. La enfermera mira el reloj y gira la silla hacia mí.*"
+        "text": "*Voy a levantarme, pero paro. La enfermera mira la hora y gira la silla hacia mí.*"
     },
     "after_nurse_freetalk": {
         "name": "Enfermera",

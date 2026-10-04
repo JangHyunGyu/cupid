@@ -21,7 +21,7 @@
     },
     "after2_msg_yuna": {
         "name": "{name}",
-        "text": "*Yuna não mandou nenhuma mensagem. Enquanto arrumo a mochila, o bilhete desta manhã escapa do bolso. As palavras «Anexo da biblioteca» ficam atravessadas pela dobra.*"
+        "text": "*Sem mensagem. Confiro “anexo da biblioteca” no bilhete da manhã.*"
     },
     "after2_nurse_transition": {
         "name": "{name}",
@@ -147,7 +147,7 @@
     },
     "after2_dain_9_c": {
         "name": "Dain",
-        "text": "*Ela abaixa o centro de gravidade. A mão que segura a bola se contrai.*"
+        "text": "Pode ter sido uma bola de sorte. Tem que jogar de novo para saber se você é bom mesmo. *Abaixa o corpo e aperta a bola nas mãos.*"
     },
     "after2_dain_9_d": {
         "name": "Dain",
@@ -155,11 +155,11 @@
     },
     "after2_dain_9_e": {
         "name": "{name}",
-        "text": "*A troca acelera. Sempre que aterrissa, Dain apoia primeiro o pé esquerdo e baixa o direito meio tempo depois.*"
+        "text": "*Durante a troca de bola, Dain aterrissa primeiro no pé esquerdo a cada vez e apoia o direito meio tempo depois.*"
     },
     "after2_dain_9_f": {
-        "name": "{name}",
-        "text": "*O placar marca 3 a 2. Ao se levantar, Dain esfrega uma vez o joelho direito e usa a mesma mão para virar o placar.*"
+        "name": "Dain",
+        "text": "3 a 2... Acabou! *Ela se levanta, esfrega o joelho direito e vira o placar.*"
     },
     "after2_dain_11b": {
         "name": "{name}",
@@ -187,7 +187,7 @@
     },
     "after2_dain_skinship_1": {
         "name": "Dain",
-        "text": "*Nossas palmas se encontram. Dain grita «Boa!» e só então afasta a mão.*"
+        "text": "Boa! Jogando assim você até me empolga mais. Só não vai se achar demais porque ganhou. *Nossas palmas só se separam depois do grito.*"
     },
     "after2_dain_skinship_2": {
         "name": "Dain",
@@ -208,7 +208,7 @@
     },
     "after2_dain_end_b": {
         "name": "{name}",
-        "text": "*Lanchonete de tteokbokki perto da escola. Dain assopra o tteokbokki e fala.*"
+        "text": "*No restaurante de tteokbokki perto da escola, Dain sopra a comida.*"
     },
     "after2_dain_end_2": {
         "name": "Dain",
@@ -227,8 +227,8 @@
         "text": "Você jogava muito melhor do que eu."
     },
     "after2_dain_end_3": {
-        "name": "Dain",
-        "text": "*As pontas dos hashis ficam imóveis sobre o copo de tteokbokki.*"
+        "name": "{name}",
+        "text": "Desde quando joga tão bem? Com aquele saque, não parece que era só brincadeira no intervalo. *Os palitinhos de Dain param sobre o copo de tteokbokki.*"
     },
     "after2_dain_end_3b": {
         "name": "Dain",
@@ -244,11 +244,11 @@
     },
     "after2_dain_end_3e": {
         "name": "Dain",
-        "text": "*Ela empurra o copo de tteokbokki na direção de {name} e sacode de cabeça para baixo a garrafa de água vazia.*"
+        "text": "Tem mais água, {name}? Minha boca está pegando fogo. *Ela empurra o copo de tteokbokki.*"
     },
     "after2_dain_rival_seo_high": {
-        "name": "{name}",
-        "text": "*Do outro lado da vitrine, Seoyeon para. Depois de ver os dois copos de tteokbokki na mesa, manda uma mensagem curta: «Então hoje você estava no ginásio. Da próxima vez, passe também no grêmio.»*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon para diante da vitrine. Vê os dois copos de tteokbokki e manda uma mensagem.* Hoje foi dia de ginásio. Na próxima passa também no conselho."
     },
     "after2_dain_rival_seo_mid": {
         "name": "{name}",
@@ -292,7 +292,7 @@
     },
     "after2_seo_4_b": {
         "name": "Seoyeon",
-        "text": "*Ela vira a prancheta para {name}. O topo da lista de tarefas está em branco.*"
+        "text": "{name}, anota primeiro o que você pode fazer. *Ela vira a prancheta para mim.*"
     },
     "after2_seo_5": {
         "name": "{name}",
@@ -304,7 +304,7 @@
     },
     "after2_seo_6_b": {
         "name": "{name}",
-        "text": "*Começo a organizar os documentos. Orçamento de eventos, ficha de clubes. É bastante coisa.*"
+        "text": "Orçamento do evento e inscrições dos clubes? Por onde começo?"
     },
     "after2_seo_7": {},
     "after2_seo_8": {
@@ -324,8 +324,8 @@
         "text": "É quase um elogio. Você também deixa as coisas ambíguas."
     },
     "after2_seo_8b": {
-        "name": "Seoyeon",
-        "text": "*Ela para de folhear os documentos e olha para {name}.*"
+        "name": "{name}",
+        "text": "Trabalhamos juntos. Posso ganhar pelo menos um elogio, né? Sem ficar dando voltas. *Seoyeon para de passar as folhas e olha para {name}.*"
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
@@ -354,8 +354,8 @@
         ]
     },
     "after2_seo_sunset_joke": {
-        "name": "Seoyeon",
-        "text": "*Os óculos escorregam um pouco para a ponta do nariz, e a caneta sai do espaço reservado à data.*"
+        "name": "{name}",
+        "text": "Tenho que deixar claro que falei da vista. Se entender errado, quem fica mal sou eu. *Os óculos de Seoyeon descem para a ponta do nariz e a caneta sai do campo da data.*"
     },
     "after2_seo_sunset_joke_b": {},
     "after2_seo_sunset_react": {
@@ -400,8 +400,8 @@
         "text": "Por hoje, eu aceito."
     },
     "after2_seo_neck_high_2_b": {
-        "name": "{name}",
-        "text": "*Seoyeon não tira a caixa dali. Nós voltamos a ordenar os documentos por data.*"
+        "name": "Seoyeon",
+        "text": "Vamos ordenar por data. Deixa a caixa aqui. *Ela vira uma folha.*"
     },
     "after2_seo_neck_low": {
         "name": "{name}",
@@ -438,7 +438,7 @@
     },
     "after2_seo_stay": {
         "name": "Seoyeon",
-        "text": "*Ela deixa os documentos sobre a mesa e ergue uma seção da persiana.*"
+        "text": "Não estou te segurando pelo trabalho que falta. Não precisa ir embora assim que terminarmos. *Põe os papéis na mesa e sobe a persiana um nível.*"
     },
     "after2_seo_stay_2": {
         "name": "Seoyeon",
@@ -454,7 +454,7 @@
     },
     "after2_seo_stay_3c": {
         "name": "{name}",
-        "text": "*A prancheta de Seoyeon está virada para baixo sobre a mesa, e apenas a última folha permanece ao lado.*"
+        "text": "É a última, né? Vamos conferir juntos. *Puxo a folha para perto da prancheta virada.*"
     },
     "after2_seo_leave": {
         "name": "Seoyeon",
@@ -467,7 +467,7 @@
     },
     "after2_seo_skinship_2": {
         "name": "Seoyeon",
-        "text": "*Os dedos permanecem sobre a gola da camisa. Ela só retira a mão depois que as rodas do carrinho de limpeza terminam de passar pelo corredor.*"
+        "text": "Fica parado. ...Pronto. *Só depois que o carrinho de limpeza passa é que ela tira a mão da gola da minha camisa.*"
     },
     "after2_seo_skinship_3": {
         "name": "Seoyeon",
@@ -503,7 +503,7 @@
     },
     "after2_yuna_1": {
         "name": "{name}",
-        "text": "*Nenhuma mensagem de Yuna. Ainda assim, meus pés vão em direção à biblioteca. O bilhete dobrado no meu bolso roça no dorso da minha mão a cada passo.*"
+        "text": "*Vejo o bilhete da manhã e vou ao anexo.*"
     },
     "after2_yuna_1_b": {
         "name": "{name}",
@@ -511,7 +511,7 @@
     },
     "after2_yuna_2": {
         "name": "{name}",
-        "text": "*Quando empurro a porta, a dobradiça antiga range brevemente. Yuna lê no sofá, e a sombra do batente da janela já alcança a lombada do livro.*"
+        "text": "*A porta range. Yuna lê no sofá.*"
     },
     "after2_yuna_2_b": {
         "name": "Yuna",
@@ -542,8 +542,8 @@
         "text": "...Por acaso."
     },
     "after2_yuna_8b": {
-        "name": "{name}",
-        "text": "*A porta está aberta, como que por acaso. Na cadeira lá dentro, um fone de ouvido já está ali. Yuna aponta em silêncio para o assento ao lado dela com o queixo.*"
+        "name": "Yuna",
+        "text": "Senta aqui do meu lado. *Um dos fones está na cadeira mais ao fundo. Ela aponta para a almofada ao lado dela.*"
     },
     "after2_yuna_8c": {
         "name": "Yuna",
@@ -551,7 +551,7 @@
     },
     "after2_yuna_8d": {
         "name": "{name}",
-        "text": "*Uma melodia suave de piano toca no fone. Yuna lê, e o fio do meu lado passa esticado pela fresta do sofá.*"
+        "text": "Piano. Não atrapalha a leitura? *O fio fica esticado entre nós.*"
     },
     "after2_yuna_choice_pre1": {
         "name": "Yuna",
@@ -580,7 +580,7 @@
     },
     "after2_yuna_everyday": {
         "name": "Yuna",
-        "text": "*Ela desfaz o nó do fio e volta a enrolá-lo no indicador.*"
+        "text": "Todo dia, você fala isso fácil. Eu nem pedi para vir. *Desfaz o nó do fio do fone e o enrola de novo no indicador.*"
     },
     "after2_yuna_everyday_b": {
         "name": "Yuna",
@@ -600,11 +600,11 @@
     },
     "after2_yuna_quiet_react": {
         "name": "Yuna",
-        "text": "*Ela move o marcador uma página para trás. Não retira o fone da ponta do sofá.*"
+        "text": "Não fica quieto só quando estou sozinha. Com você aqui também consigo ler. *Move o marcador uma página para trás e deixa o fone na ponta do sofá.*"
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "*É hora de fechar os livros. Puxo minha mochila enquanto Yuna junta suas coisas no sofá.*"
+        "text": "Preciso ir. Vou deixar o fone aqui. *Pego a mochila.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",
@@ -612,7 +612,7 @@
     },
     "after2_yuna_skinship_2": {
         "name": "Yuna",
-        "text": "*Passam três segundos com a ponta do livro pressionada sobre nossas mãos sobrepostas. Só então Yuna retira a sua.*"
+        "text": "...Não tentei pegar primeiro. Vou passar o livro para você. *O canto do livro pressiona nossas mãos sobrepostas por 3 segundos antes de ela tirar a sua.*"
     },
     "after2_yuna_skinship_3": {
         "name": "{name}",
@@ -647,8 +647,8 @@
         "text": "Consegui ajuda suficiente. Até amanhã."
     },
     "after2_group_seoyeon_companion": {
-        "name": "Seoyeon e acompanhante",
-        "text": "*Voltamos à sala do conselho para conferir o tempo que resta. Seoyeon aponta com a ponta do dedo dois horários sobrepostos. O olhar do outro lado também não recua.* \"Os dois precisam da sua ajuda. Quem você vai ajudar primeiro?\"",
+        "name": "Seoyeon",
+        "text": "*Ela aponta dois horários que se sobrepõem na sala do conselho estudantil.* Nós duas precisamos da sua ajuda. Quem você vai ajudar primeiro?",
         "context": "Enquanto o protagonista e Seoyeon organizam os horários da tarde, a outra personagem com maior afinidade chega com um compromisso ou pedido próprio. O trabalho do conselho estudantil coincide com outra atividade escolar, e os três precisam ajustar tudo. Seoyeon pergunta claramente quem o protagonista vai ajudar primeiro.",
         "personality": "Parece um pequeno conflito de horários, mas as duas personagens percebem a prioridade do protagonista. Não transforme a cena em hostilidade aberta ou humilhação. Se ele fugir da resposta, cada uma insiste à sua maneira. Se uma for escolhida, a outra não finge que está tudo bem.",
         "groupLocation": "Sala do conselho estudantil",
@@ -656,8 +656,8 @@
         "groupAftermathCause": "quem o protagonista escolheu ajudar primeiro na sala do conselho e por quê"
     },
     "after2_group_yuna_companion": {
-        "name": "Yuna e acompanhante",
-        "text": "*Voltamos ao anexo e espalhamos os materiais para organizar. Há duas pilhas para organizar, mas mal resta tempo para terminar uma. Yuna tira um lado do fone e olha para o outro lado da mesa.* \"Se só dá para terminar uma com a gente, do lado de quem você vai ficar?\"",
+        "name": "Yuna",
+        "text": "*Duas pilhas de material estão sobre a mesa do anexo.* Mal dá tempo de terminar uma delas. Ao lado de quem você vai ficar?",
         "context": "Enquanto o protagonista e Yuna organizam materiais no anexo da biblioteca, a outra personagem com maior afinidade chega com outros documentos ou um pedido urgente. Só há tempo para concluir direito um dos dois trabalhos. Yuna pergunta de forma curta e direta ao lado de quem o protagonista vai ficar.",
         "personality": "Yuna exige uma escolha curta e precisa, e a acompanhante mantém sua posição do próprio jeito. Não force uma reconciliação nem invente logo uma solução que agrade às duas. A resposta pode aliviar uma e magoar a outra.",
         "groupLocation": "Anexo da biblioteca",
@@ -665,8 +665,8 @@
         "groupAftermathCause": "ao lado de quem o protagonista escolheu ficar no anexo e por quê"
     },
     "after2_group_dain_companion": {
-        "name": "Dain e acompanhante",
-        "text": "*Voltamos ao ginásio pelo carrinho de bolas. A outra pessoa diz que o responsável pediu primeiro os materiais do festival. Dain segura o carrinho.* “Eu ouvi bolas primeiro. Qual pedido você vai confirmar antes?”",
+        "name": "Dain",
+        "text": "*Ela segura o carrinho de bolas no ginásio.* Pediram para tirar primeiro o material do evento do depósito. A mim disseram para trazer as bolas primeiro. O que você vai conferir primeiro?",
         "context": "Na saída voltaram ao ginásio para devolver o carrinho. Pediram à companhia o material do festival primeiro; Dain ouviu bolas primeiro. Só a ordem diverge, sem acidente nem mentira estabelecida. Com pouco tempo, o protagonista precisa dizer qual pedido vai conferir e quem vai ajudar antes.",
         "personality": "Não invente um acidente grave nem uma mentira maldosa. O ponto não é a solução objetiva de um mistério, mas em quem o protagonista decide acreditar primeiro. Dain cobra uma resposta franca, e a acompanhante não recua para um papel secundário. A resposta pode magoar uma das duas.",
         "groupLocation": "Ginásio",
@@ -726,7 +726,7 @@
     },
     "after2_yuna_trap_react": {
         "name": "Yuna",
-        "text": "*O marcador avança uma página. Ela guarda na bolsa o fone que estava na ponta do sofá.*"
+        "text": "Parece que está perguntando se pode trazer outra pessoa. Não disse que qualquer um podia vir. *Avança o marcador uma página e guarda na bolsa o fone que estava na ponta do sofá.*"
     },
     "after2_seo_tone": {},
     "after2_dain_tone": {},

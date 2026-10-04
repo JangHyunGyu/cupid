@@ -22,11 +22,11 @@
     },
     "after5_farewell_seo_2": {
         "name": "Seoyeon",
-        "text": "*Seoyeon atmet lange aus.*"
+        "text": "Was soll ich deiner Meinung nach sagen? ...Vergiss es. Das musst du nicht beantworten. *Sie atmet lange aus.*"
     },
     "after5_farewell_seo_3": {
         "name": "Seoyeon",
-        "text": "*Sie schiebt eine lose Haarsträhne hinters Ohr und fasst den Riemen ihrer Tasche neu.*"
+        "text": "Ich habe überlegt, wortlos vorbeizugehen, aber das wäre mir noch unangenehmer. Deine Entscheidung habe ich gehört. *Sie streicht das Haar hinter ihr Ohr und fasst den Taschenriemen neu.*"
     },
     "after5_farewell_seo_4": {
         "name": "Seoyeon",
@@ -42,11 +42,11 @@
     },
     "after5_farewell_seo_6_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon dreht sich um und winkt. Sie schaut nicht zurück. Nur das Band an ihrem Handgelenk schwankt kurz am Ende des Flurs.*"
+        "text": "*Seoyeon winkt, ohne zurückzusehen. Ihr Handgelenkband entfernt sich.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
-        "text": "*Ich bleibe allein auf dem Flur zurück. Seoyeons Schritte entfernen sich, und von oben höre ich, wie die Dachtür abgeschlossen wird.*"
+        "text": "*Allein im Flur höre ich oben die Dachtür verriegeln.*"
     },
     "after5_farewell_yuna_check": {},
     "after5_farewell_yuna_1": {
@@ -66,8 +66,8 @@
         "text": "*Sie biegt in den Flur zur Bibliothek ab. Das Klacken ihrer Schuhe verschwindet hinter der Ecke.*"
     },
     "after5_farewell_yuna_5": {
-        "name": "{name}",
-        "text": "*Ich lese die kurze Zeile auf dem Lesezeichen erneut: „Es war schön.“ Unter dem letzten Buchstaben ist die Tinte leicht verlaufen.*"
+        "name": "Yuna",
+        "text": "*Ich lese den Satz auf dem Lesezeichen erneut. Unter dem letzten Zeichen ist Tinte verwischt.* Es hat Spaß gemacht."
     },
     "after5_farewell_yuna_5b": {
         "name": "{name}",
@@ -100,7 +100,7 @@
     },
     "after5_farewell_dain_4_d": {
         "name": "Dain",
-        "text": "*Sie schiebt den Volleyball in den Ballwagen und zieht den Riemen ihrer Kniebandage nach.*"
+        "text": "Geh jetzt. Dich lächelnd zu verabschieden, reicht mir bis hierhin. ...Vor dir muss ich mich nicht auch noch zusammenreißen. *Sie schiebt den Ball in den Schrank und richtet den Riemen ihrer Kniebandage.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
@@ -124,7 +124,7 @@
     },
     "after5_sunset_1": {
         "name": "{name}",
-        "text": "*Die Abendsonne hängt an jedem Klassenzimmerfenster. Aus dem Senderaum kommt die Durchsage zum Veranstaltungsende, und die Lautsprecher auf dem Sportplatz knacken einen Takt zu spät.*"
+        "text": "*Die Schlussdurchsage klingt über den Hof im Abendlicht.*"
     },
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
@@ -142,7 +142,7 @@
     },
     "after5_last_chance_1": {
         "name": "{name}",
-        "text": "*Die Lautsprecher auf dem Veranstaltungsgelände werden ausgeschaltet. Unter dem Wegweiser an der Gabelung bleibe ich stehen, unfähig, mich für eine Richtung zu entscheiden.*"
+        "text": "*Die Lautsprecher gehen aus. Ich bleibe an der Weggabelung stehen.*"
     },
     "after5_last_chance_2": {
         "name": "{name}",
@@ -184,7 +184,7 @@
     },
     "after5_last_chance_2_j": {
         "name": "Seoyeon",
-        "text": "*Seoyeon wartet mit geöffneter Handfläche.*"
+        "text": "Wenn du sie nicht nehmen willst, sag es. Lass mich nicht wieder allein warten und hoffen. *Sie wartet mit weiterhin offener Handfläche.*"
     },
     "after5_last_chance_seo_low_1": {
         "name": "{name}",
@@ -209,23 +209,23 @@
     },
     "after5_last_chance_2_n": {
         "name": "Dain",
-        "text": "*Der Arm mit dem Ball sinkt von ihrer Seite herab. Die Spitze ihres Turnschuhs dreht sich wieder zu {name}.*"
+        "text": "{name}, warte. *Sie senkt den Arm mit dem Ball und dreht sich wieder zu mir.*"
     },
     "after5_last_chance_2_o": {
         "name": "Dain",
         "text": "Du bist zurückgekommen?"
     },
     "after5_last_chance_2_p": {
-        "name": "Dain",
-        "text": "*Sie beißt sich einmal auf die Lippe und holt kurz Luft.*"
+        "name": "{name}",
+        "text": "Ja. Ich konnte nicht einfach gehen. Ich konnte nicht weiter allein darüber nachdenken, was ich dir sagen muss. *Dain beißt einmal auf die Lippe und atmet kurz ein.*"
     },
     "after5_last_chance_2_q": {
         "name": "Dain",
         "text": "Ich kann nicht sofort lächeln. Aber ich höre mir an, was du bis hierher gebracht hast."
     },
     "after5_last_chance_2_r": {
-        "name": "Dain",
-        "text": "*Sie reibt sich den Augenwinkel. Feuchtigkeit haftet an ihrem Handrücken.*"
+        "name": "{name}",
+        "text": "Ich habe es mir vorher überlegt, aber vor dir bekomme ich die Worte nicht heraus. ...Warte kurz. *Dain reibt sich die Augen, Feuchtigkeit bleibt auf ihrem Handrücken.*"
     },
     "after5_last_chance_2_s": {
         "name": "Dain",
@@ -254,7 +254,7 @@
     },
     "after5_last_chance_yuna_4": {
         "name": "{name}",
-        "text": "*Zwischen uns bleiben zwei Schritte Abstand. Yuna wartet mit dem Buch an der Brust.*"
+        "text": "Ich sage es hier. ...Hör mir kurz zu. *Yuna wartet zwei Schritte entfernt.*"
     },
     "after5_last_chance_yuna_5": {
         "name": "Yuna",
@@ -262,7 +262,7 @@
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
-        "text": "*Yuna wendet den Blick nicht ab. Der Abstand zwischen uns ist um einen Schritt kleiner geworden.*"
+        "text": "*Yuna sieht nicht weg. Der Abstand zwischen uns ist um einen Schritt geschrumpft.*"
     },
     "after5_last_chance_yuna_7": {},
     "after5_last_chance_yuna_low_1": {
@@ -319,7 +319,7 @@
     },
     "after5_confess_react_yuna_b": {
         "name": "Yuna",
-        "text": "*Sie legt das Buch ab und greift die Ecke gleich wieder.*"
+        "text": "Wenn du es sagst... muss ich nicht mehr überlegen, ob ich dich falsch verstanden habe. *Sie will das Buch ablegen, greift aber wieder nach der Ecke.*"
     },
     "after5_confess_react_yuna_c": {
         "name": "Yuna",
@@ -330,8 +330,8 @@
         "text": "*Sie reicht mir einen gefalteten Zettel. Aufgeklappt steht darauf eine einzige Zeile.*"
     },
     "after5_confess_react_yuna_e": {
-        "name": "{name}",
-        "text": "*‚Ich habe lange gewartet.‘*"
+        "name": "Yuna",
+        "text": "Ich habe lange gewartet."
     },
     "after5_confess_react_yuna_f": {
         "name": "{name}",
@@ -379,7 +379,7 @@
     },
     "after5_harem_commit": {
         "name": "{name}",
-        "text": "*Wenig später kommen sie eine nach der anderen. Ich stecke mein Handy weg und sehe sie an. „Ich konnte mich nicht für eine Person entscheiden.“ Keine antwortet sofort.*"
+        "text": "Ich konnte mich nicht für eine entscheiden. *Vor den drei stecke ich das Handy weg. Keine antwortet sofort.*"
     },
     "after5_harem_walk_1": {
         "name": "{name}",
@@ -567,7 +567,7 @@
     },
     "after5_hidden_return_to_park": {
         "name": "{name}",
-        "text": "*Nach dem Aufräumen verlasse ich die Schule. Gefaltete Festbanner säumen den Weg zum Park.*"
+        "text": "*Nach dem Aufräumen gehe ich zum Park. Die Festfahnen sind zusammengelegt.*"
     },
     "after5_farewell_seo_skip": {},
     "after5_farewell_yuna_skip": {},
@@ -672,23 +672,23 @@
     },
     "day5_ending_haeun_apology_seoyeon": {
         "name": "Haeun",
-        "text": "*Haeun lacht kurz und blickt zur Schule zurück.* Bei Seoyeon melde ich mich selbst noch einmal. Die Schuldgefühle lasse ich, wie sie sind, und ich bleibe an deiner Seite."
+        "text": "*Haeun lächelt und schaut zur Schule zurück.* Bei Seoyeon melde ich mich selbst noch einmal. Ich fühle mich immer noch schuldig, aber ich möchte an deiner Seite bleiben."
     },
     "day5_ending_haeun_apology_yuna": {
         "name": "Haeun",
-        "text": "*Haeun lacht kurz und blickt zur Schule zurück.* Bei Yuna melde ich mich selbst noch einmal. Die Schuldgefühle lasse ich, wie sie sind, und ich bleibe an deiner Seite."
+        "text": "*Haeun lächelt und schaut zur Schule zurück.* Bei Yuna melde ich mich selbst noch einmal. Ich fühle mich immer noch schuldig, aber ich möchte an deiner Seite bleiben."
     },
     "day5_ending_haeun_apology_dain": {
         "name": "Haeun",
-        "text": "*Haeun lacht kurz und blickt zur Schule zurück.* Bei Dain melde ich mich selbst noch einmal. Die Schuldgefühle lasse ich, wie sie sind, und ich bleibe an deiner Seite."
+        "text": "*Haeun lächelt und schaut zur Schule zurück.* Bei Dain melde ich mich selbst noch einmal. Ich fühle mich immer noch schuldig, aber ich möchte an deiner Seite bleiben."
     },
     "day5_ending_haeun_apology_teacher": {
         "name": "Haeun",
-        "text": "*Haeun lacht kurz und blickt zur Schule zurück.* Bei deiner Klassenlehrerin melde ich mich selbst noch einmal. Die Schuldgefühle lasse ich, wie sie sind, und ich bleibe an deiner Seite."
+        "text": "*Haeun lächelt und schaut zur Schule zurück.* Bei deiner Klassenlehrerin melde ich mich selbst noch einmal. Ich fühle mich immer noch schuldig, aber ich möchte an deiner Seite bleiben."
     },
     "day5_ending_haeun_apology_nurse": {
         "name": "Haeun",
-        "text": "*Haeun lacht kurz und blickt zur Schule zurück.* Bei der Schulkrankenschwester melde ich mich selbst noch einmal. Die Schuldgefühle lasse ich, wie sie sind, und ich bleibe an deiner Seite."
+        "text": "*Haeun lächelt und schaut zur Schule zurück.* Bei der Schulkrankenschwester melde ich mich selbst noch einmal. Ich fühle mich immer noch schuldig, aber ich möchte an deiner Seite bleiben."
     },
     "day5_ending_haeun_epilogue": {
         "name": "Haeun",

@@ -21,7 +21,7 @@
     },
     "after2_msg_yuna": {
         "name": "{name}",
-        "text": "*I haven't heard from Yuna. As I pack my bag, the note from this morning slips out of my pocket. The words 'Library annex' straddle the crease.*"
+        "text": "*No message. I check “library annex” on this morning's note.*"
     },
     "after2_nurse_transition": {
         "name": "{name}",
@@ -147,7 +147,7 @@
     },
     "after2_dain_9_c": {
         "name": "Dain",
-        "text": "*She lowers her stance and tightens her grip on the ball.*"
+        "text": "That could have been one lucky shot. We'll have to play again to see if you're really good. *She lowers her stance and tightens her grip on the ball.*"
     },
     "after2_dain_9_d": {
         "name": "Dain",
@@ -155,11 +155,11 @@
     },
     "after2_dain_9_e": {
         "name": "{name}",
-        "text": "*The rally speeds up. Every time Dain lands, her left foot comes down first and her right follows half a beat later.*"
+        "text": "*During the rally, Dain lands on her left foot each time, setting her right foot down half a beat later.*"
     },
     "after2_dain_9_f": {
-        "name": "{name}",
-        "text": "*The scoreboard reads 3–2. As Dain stands, she rubs her right knee once, then uses the same hand to flip the scorecard.*"
+        "name": "Dain",
+        "text": "3:2... All done! *She stands, rubs her right knee, and flips the scoreboard.*"
     },
     "after2_dain_11b": {
         "name": "{name}",
@@ -187,7 +187,7 @@
     },
     "after2_dain_skinship_1": {
         "name": "Dain",
-        "text": "*Our palms meet. Dain shouts, “Nice!” and only then lets go.*"
+        "text": "Nice! Playing like that gets me fired up, too. Just don't get too full of yourself because you won. *Our palms stay together until after her shout.*"
     },
     "after2_dain_skinship_2": {
         "name": "Dain",
@@ -208,7 +208,7 @@
     },
     "after2_dain_end_b": {
         "name": "{name}",
-        "text": "*The tteokbokki place near school. Dain blows on her tteokbokki and talks.*"
+        "text": "*At the tteokbokki shop by school, Dain blows on her food.*"
     },
     "after2_dain_end_2": {
         "name": "Dain",
@@ -227,8 +227,8 @@
         "text": "You were way better than me."
     },
     "after2_dain_end_3": {
-        "name": "Dain",
-        "text": "*The tips of her chopsticks stay suspended over the tteokbokki.*"
+        "name": "{name}",
+        "text": "When did you get that good? From your serve, you did more than just play during breaks. *Dain's chopsticks stop over the tteokbokki cup.*"
     },
     "after2_dain_end_3b": {
         "name": "Dain",
@@ -244,11 +244,11 @@
     },
     "after2_dain_end_3e": {
         "name": "Dain",
-        "text": "*She pushes the tteokbokki toward {name} and shakes the empty water bottle upside down.*"
+        "text": "Any more water, {name}? My mouth's on fire. *She pushes the tteokbokki cup over.*"
     },
     "after2_dain_rival_seo_high": {
-        "name": "{name}",
-        "text": "*Beyond the snack bar window, Seoyeon stops. After seeing the two tteokbokki cups on the table, she sends a short message. 'So you were at the gym today. Stop by the student council room next time, too.'*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon stops outside the window. Seeing the two tteokbokki cups, she texts.* So you went to the gym today. Come by the council room next time too."
     },
     "after2_dain_rival_seo_mid": {
         "name": "{name}",
@@ -292,7 +292,7 @@
     },
     "after2_seo_4_b": {
         "name": "Seoyeon",
-        "text": "*She turns the clipboard toward {name}. The top of the to-do list is blank.*"
+        "text": "{name}, write down what you can take on first. *She turns the clipboard toward me.*"
     },
     "after2_seo_5": {
         "name": "{name}",
@@ -304,7 +304,7 @@
     },
     "after2_seo_6_b": {
         "name": "{name}",
-        "text": "*We start sorting documents. Event budgets, club applications. Quite the pile.*"
+        "text": "Event budgets and club applications? Which should I sort first?"
     },
     "after2_seo_7": {},
     "after2_seo_8": {
@@ -324,8 +324,8 @@
         "text": "Kind of like the way you compliment people. Vague."
     },
     "after2_seo_8b": {
-        "name": "Seoyeon",
-        "text": "*She stops leafing through the documents and looks toward {name}.*"
+        "name": "{name}",
+        "text": "We've been working together. Surely I can get one compliment? Without talking around it. *Seoyeon stops turning the papers and looks toward {name}.*"
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
@@ -354,8 +354,8 @@
         ]
     },
     "after2_seo_sunset_joke": {
-        "name": "Seoyeon",
-        "text": "*Her glasses slide slightly down her nose, and the tip of her pen slips out of the date box.*"
+        "name": "{name}",
+        "text": "I should make it clear I meant the view. I'd be the one in trouble if you took it the wrong way. *Seoyeon's glasses slip toward her nose tip; her pen slides outside the date box.*"
     },
     "after2_seo_sunset_joke_b": {},
     "after2_seo_sunset_react": {
@@ -400,8 +400,8 @@
         "text": "I'll allow it today."
     },
     "after2_seo_neck_high_2_b": {
-        "name": "{name}",
-        "text": "*Seoyeon leaves the file box where it is. We go back to sorting the papers by date.*"
+        "name": "Seoyeon",
+        "text": "Sort them by date. Leave this box here. *She turns a page.*"
     },
     "after2_seo_neck_low": {
         "name": "{name}",
@@ -438,7 +438,7 @@
     },
     "after2_seo_stay": {
         "name": "Seoyeon",
-        "text": "*She sets down the papers and raises the blind by one slat.*"
+        "text": "I'm not keeping you here for the work that's left. You don't have to leave the moment we're done. *She puts the papers down and raises the blinds one notch.*"
     },
     "after2_seo_stay_2": {
         "name": "Seoyeon",
@@ -454,7 +454,7 @@
     },
     "after2_seo_stay_3c": {
         "name": "{name}",
-        "text": "*Seoyeon's clipboard lies face down on the desk, with only the last sheet of paperwork beside it.*"
+        "text": "Last one, right? Let's check this together. *I pull the sheet beside the face-down clipboard.*"
     },
     "after2_seo_leave": {
         "name": "Seoyeon",
@@ -467,7 +467,7 @@
     },
     "after2_seo_skinship_2": {
         "name": "Seoyeon",
-        "text": "*Her fingers stay against my collar. Only after the wheels of a cleaning cart pass down the hall does she pull her hand away.*"
+        "text": "Hold still. ...There. *Only after the cleaning cart passes does she take her hand from my shirt collar.*"
     },
     "after2_seo_skinship_3": {
         "name": "Seoyeon",
@@ -503,7 +503,7 @@
     },
     "after2_yuna_1": {
         "name": "{name}",
-        "text": "*No message from Yuna. Still, my feet head toward the library. The folded note in my pocket brushes against the back of my hand with every step.*"
+        "text": "*I check the morning's note and head to the annex.*"
     },
     "after2_yuna_1_b": {
         "name": "{name}",
@@ -511,7 +511,7 @@
     },
     "after2_yuna_2": {
         "name": "{name}",
-        "text": "*The old hinge gives a short cry when I push the door. Yuna is reading on the sofa, and the window-frame shadow has reached the spine of her book.*"
+        "text": "*The door creaks. Yuna reads on the sofa.*"
     },
     "after2_yuna_2_b": {
         "name": "Yuna",
@@ -542,8 +542,8 @@
         "text": "By coincidence."
     },
     "after2_yuna_8b": {
-        "name": "{name}",
-        "text": "*One earbud is already waiting on the chair inside. Yuna points to the cushion beside her with her chin.*"
+        "name": "Yuna",
+        "text": "Sit beside me. *One earbud rests on the inner chair. She points to the cushion beside her.*"
     },
     "after2_yuna_8c": {
         "name": "Yuna",
@@ -551,7 +551,7 @@
     },
     "after2_yuna_8d": {
         "name": "{name}",
-        "text": "*A quiet piano piece plays through the earbuds. Yuna reads while the cord on my side stretches taut through the gap in the sofa.*"
+        "text": "Piano, huh. Doesn't it distract you from reading? *The cable stretches taut between us.*"
     },
     "after2_yuna_choice_pre1": {
         "name": "Yuna",
@@ -580,7 +580,7 @@
     },
     "after2_yuna_everyday": {
         "name": "Yuna",
-        "text": "*She untangles the earbud cord, then winds it around her index finger again.*"
+        "text": "You say every day so easily. I didn't even ask you to come. *She undoes the knot in the earbud cable, then winds it around her index finger again.*"
     },
     "after2_yuna_everyday_b": {
         "name": "Yuna",
@@ -600,11 +600,11 @@
     },
     "after2_yuna_quiet_react": {
         "name": "Yuna",
-        "text": "*Her bookmark moves back one page. She doesn't clear away the earbud at the end of the sofa.*"
+        "text": "It isn't only quiet when I'm alone. I can still read with you here. *She moves the bookmark one page back and leaves the earbud at the end of the sofa.*"
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "*It’s time to close our books. I pull my bag closer while Yuna gathers her things from the sofa.*"
+        "text": "I should go now. I'll leave the earbud here. *I pick up my bag.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",
@@ -612,7 +612,7 @@
     },
     "after2_yuna_skinship_2": {
         "name": "Yuna",
-        "text": "*Three seconds pass with the corner of the book pressed over our overlapping hands. Only then does Yuna pull hers away.*"
+        "text": "...I wasn't trying to grab it first. I'll hand the book to you. *The book corner presses on our overlapping hands for 3 seconds before she withdraws hers.*"
     },
     "after2_yuna_skinship_3": {
         "name": "{name}",
@@ -647,8 +647,8 @@
         "text": "I found enough help. See you tomorrow."
     },
     "after2_group_seoyeon_companion": {
-        "name": "Seoyeon and companion",
-        "text": "*We return to the student council room to check the time left for cleanup. Seoyeon taps two overlapping schedule blocks with one finger. The person across from her refuses to yield.* \"We both need your help. Who are you going to help first?\"",
+        "name": "Seoyeon",
+        "text": "*In the council room, she points at two overlapping tasks.* We both need your help. Who will you help first?",
         "context": "While the protagonist and Seoyeon are sorting the after-school schedule, the other character with the highest affinity arrives with a schedule or request of their own. Student-council work overlaps with another school activity, and the three of them must settle it. Seoyeon clearly asks whom the protagonist will help first.",
         "personality": "It looks like a small scheduling issue, but both characters are conscious of the protagonist's priority. Keep it from turning into open hostility or humiliation. If the protagonist dodges, each presses for an answer in their own way. If one is chosen, the other does not force a cheerful shrug.",
         "groupLocation": "Student Council Room",
@@ -656,8 +656,8 @@
         "groupAftermathCause": "whom the protagonist chose to help first in the student council room, and why"
     },
     "after2_group_yuna_companion": {
-        "name": "Yuna and companion",
-        "text": "*We return to the annex and lay out the materials to sort. There are two stacks to sort, but barely enough time to finish one. Yuna removes one earbud and looks across the table.* \"If you can only finish one with us, who will you stay with?\"",
+        "name": "Yuna",
+        "text": "*Two bundles of material lie on the annex desk.* There's barely time to finish even one. Who will you stay beside?",
         "context": "While the protagonist and Yuna sort material in the library annex, the other character with the highest affinity arrives with separate material or an urgent request. There is only enough time to finish one side properly. Yuna asks, briefly and directly, whom the protagonist will stay beside.",
         "personality": "Yuna demands a short, exact choice, while the companion holds their ground in their own voice. Do not force a reconciliation or instantly invent a solution that satisfies both. Let the answer bring relief to one person and disappointment to the other when appropriate.",
         "groupLocation": "Library Annex",
@@ -665,8 +665,8 @@
         "groupAftermathCause": "whose side the protagonist chose in the library annex, and why"
     },
     "after2_group_dain_companion": {
-        "name": "Dain and companion",
-        "text": "*We return to the gym for the ball cart. Our companion says the storage attendant asked for festival materials first. Dain grips the cart.* “I heard balls first. Which instruction will you check first?”",
+        "name": "Dain",
+        "text": "*She grips the ball cart in the gym.* They said to move the event materials from storage first. I was told to get the balls first. What will you check first?",
         "context": "On the way out, they returned to the gym with Dain to return the ball cart. The companion was asked by the storage attendant to bring festival materials first; Dain heard balls first. Only the order conflicts, with no accident or established liar. With little time left, the player must say whose instruction to verify and help with first.",
         "personality": "Do not invent a serious accident or malicious lie. The point is not a mystery's objective solution, but whose word the protagonist trusts first. Dain presses honestly, and the companion does not withdraw into a supporting role. Let one person be hurt by the answer when that fits.",
         "groupLocation": "Gym",
@@ -726,7 +726,7 @@
     },
     "after2_yuna_trap_react": {
         "name": "Yuna",
-        "text": "*The bookmark moves one page forward. She puts the earbud lying at the edge of the sofa into her bag.*"
+        "text": "It sounds like you're asking if you can bring someone else. I never said just anyone could come. *She moves the bookmark one page forward and puts the earbud from the sofa's end into her bag.*"
     },
     "after2_seo_tone": {},
     "after2_dain_tone": {},

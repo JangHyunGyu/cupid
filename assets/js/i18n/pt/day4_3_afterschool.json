@@ -48,7 +48,7 @@
     },
     "confess_seo_yes_1": {
         "name": "Seoyeon",
-        "text": "*O tilintar do chaveiro para de repente. Seoyeon cruza o olhar comigo.*"
+        "text": "...Ouvi direito, né? Não tenta dizer que era brincadeira. *O chaveiro para de fazer barulho. Ela encontra meu olhar.*"
     },
     "confess_seo_yes_2": {
         "name": "{name}",
@@ -71,8 +71,8 @@
         "text": "Se você fala assim, vou pensar ainda mais nisso."
     },
     "confess_seo_yes_7": {
-        "name": "{name}",
-        "text": "*Outra fileira de luzes se acende na quadra, abaixo da grade. Seoyeon permanece de pé, segurando o chaveiro.*"
+        "name": "Seoyeon",
+        "text": "...Quero ficar aqui. Só mais um pouco. *Ela segura o chaveiro.*"
     },
     "confess_seo_yes_8": {
         "name": "Seoyeon",
@@ -83,8 +83,8 @@
         "text": "Onde você senta, quando fica mais quieto."
     },
     "confess_seo_yes_10": {
-        "name": "Seoyeon",
-        "text": "*Guarda a chave no bolso.*"
+        "name": "{name}",
+        "text": "Não sabia que prestava tanta atenção. ...Talvez eu estivesse tão ocupado escondendo meus sentimentos que não via sua expressão. *Seoyeon guarda as chaves no bolso.*"
     },
     "confess_seo_yes_11": {
         "name": "Seoyeon",
@@ -96,7 +96,7 @@
     },
     "confess_seo_yes_12": {
         "name": "Seoyeon",
-        "text": "*Desce dois degraus e para. Não olha para trás.*"
+        "text": "...Talvez eu devesse ter falado primeiro. É tão bom ouvir isso. *Os passos param dois degraus abaixo. Ela não se vira.*"
     },
     "confess_seo_no_1": {
         "name": "{name}",
@@ -128,12 +128,12 @@
     },
     "confess_yuna_3": {
         "name": "{name}",
-        "text": "*O espaço secreto de leitura no anexo da biblioteca. A luz laranja entra pela fresta da janela e chega até o braço do sofá velho. No lugar ao lado está o marcador de Yuna.*"
+        "text": "*O canto secreto de leitura do anexo. A luz do pôr do sol chega ao apoio de braço do velho sofá; o marcador de Yuna está no assento do sofá, junto ao apoio de braço.*"
     },
     "confess_yuna_3b": {},
     "confess_yuna_4": {
         "name": "Yuna",
-        "text": "*Senta-se no sofá e olha para {name}, segurando um marcador em uma das mãos.*"
+        "text": "Senta um pouco. Hoje não precisa abrir um livro. Você veio até aqui. *Senta no sofá e olha para {name}, com um marcador entre os dedos.*"
     },
     "confess_yuna_5": {
         "name": "{name}",
@@ -214,8 +214,8 @@
         "text": "*Ela coloca o marcador entre as páginas, empurra-o até o fundo e abaixa uma vez o queixo.*"
     },
     "confess_yuna_no_3": {
-        "name": "Yuna",
-        "text": "*Pega um livro. Está olhando pra capa, mas não está lendo.*"
+        "name": "{name}",
+        "text": "Yuna, ainda não terminou esse livro? ...Estava só olhando a capa. *Sem abrir, passa o dedo apenas pelo título na capa.*"
     },
     "confess_yuna_no_4": {
         "name": "Yuna",
@@ -240,7 +240,7 @@
     "confess_dain_3b": {},
     "confess_dain_4": {
         "name": "Dain",
-        "text": "*Está segurando uma bola. Com cara de quem não liga. — Mas os dedos estão brancos. Tá apertando com força.*"
+        "text": "Não viemos treinar. Posso segurar a bola, né? Ficar com as mãos vazias é mais estranho. *Segura a bola com as duas mãos; as juntas dos dedos ficam brancas contra ela.*"
     },
     "confess_dain_5": {},
     "confess_dain_choice": {
@@ -287,7 +287,7 @@
     },
     "confess_dain_yes_8": {
         "name": "Dain",
-        "text": "*Os tênis de Dain ficam lado a lado sobre a linha da quadra. Ela cobre o rosto com as duas mãos.*"
+        "text": "Também quero falar alguma coisa... Para de olhar. Quer dizer, não é para nunca mais olhar. *Junta os pés sobre a linha da quadra e cobre o rosto com as mãos.*"
     },
     "confess_dain_yes_8_b": {
         "name": "{name}",
@@ -298,8 +298,8 @@
         "text": "...Peraí. Não consigo organizar as palavras agora."
     },
     "confess_dain_yes_9_b": {
-        "name": "{name}",
-        "text": "*Dain esfrega com força os olhos usando o dorso da mão. Os cantos da boca se erguem, mas sua voz não sai.*"
+        "name": "Dain",
+        "text": "...Espera. Não consigo falar agora. *Ela sorri e esfrega os olhos.*"
     },
     "confess_dain_yes_10": {
         "name": "Dain",
@@ -327,7 +327,7 @@
     },
     "confess_dain_no_4_b": {
         "name": "{name}",
-        "text": "*A voz de Dain se dispersa baixinho até o teto do ginásio. Apenas o velcro da munhequeira se abre com um som longo.*"
+        "text": "*Ela solta devagar o velcro da munhequeira.*"
     },
     "confess_seo_yes_mid_1": {
         "name": "Seoyeon",

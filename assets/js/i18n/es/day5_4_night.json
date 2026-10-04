@@ -22,7 +22,7 @@
     },
     "hidden_perfect_homeroom_1b": {
         "name": "{name}",
-        "text": "*Ante la puerta del aula vacía, la tutora ordena las copias de la sesión de crítica. En cada manuscrito solo figura el número de un estudiante.*"
+        "text": "*Ante el aula vacía, ordena copias de revisión con números de alumno.*"
     },
     "hidden_perfect_homeroom_2": {
         "name": "Profesora",
@@ -38,11 +38,11 @@
     },
     "hidden_perfect_homeroom_3": {
         "name": "{name}",
-        "text": "*Cuando la puerta del aula se cerró aquel día, no volvieron a mantener contacto personal. Cuatro años después, {name} había terminado la universidad y vivía por su cuenta cerca de su primer trabajo.*"
+        "text": "*Cuatro años sin contacto personal. Tras la universidad, {name} vive solo cerca de su primer trabajo.*"
     },
     "hidden_perfect_homeroom_3b": {
         "name": "{name}",
-        "text": "*En la cafetería de una librería, de camino a casa después del trabajo, descubro un nombre conocido ante el cartel de una presentación de novedades. Al levantar la vista, esa persona también me mira.*"
+        "text": "*En una librería-café tras el trabajo, veo un nombre familiar en un anuncio. Alzo la vista; nos miramos.*"
     },
     "hidden_perfect_homeroom_3c": {
         "name": "Profesora",
@@ -58,7 +58,7 @@
     },
     "hidden_perfect_homeroom_3g": {
         "name": "{name}",
-        "text": "*Guardamos nuestros nombres y números en el celular del otro. Es información que no aparecía en la antigua lista de contactos de la escuela.*"
+        "text": "*Guardamos nuestros números personales, que no figuraban en la lista escolar.*"
     },
     "hidden_perfect_homeroom_4b": {
         "name": "Profesora",
@@ -66,7 +66,7 @@
     },
     "hidden_perfect_homeroom_4c": {
         "name": "{name}",
-        "text": "*Regreso a casa y leo el libro hasta el amanecer, esta vez al ritmo de un lector.*"
+        "text": "*En mi casa, leo hasta el amanecer. Esta vez como lector.*"
     },
     "hidden_perfect_homeroom_4d": {
         "name": "Profesora",
@@ -78,7 +78,7 @@
     },
     "hidden_perfect_homeroom_4f": {
         "name": "{name}",
-        "text": "*La antigua profesora deja el ramo en medio de la mesa y acomoda el listón del envoltorio.*"
+        "text": "*Coloca el ramo entre nosotros y arregla la cinta.*"
     },
     "hidden_perfect_homeroom_4g": {
         "name": "Profesora",
@@ -90,7 +90,7 @@
     },
     "hidden_perfect_homeroom_5": {
         "name": "{name}",
-        "text": "*Los dos permanecen juntos junto a la puerta de la cafetería. Ella sostiene el ramo y espera una respuesta sin empezar a caminar.*"
+        "text": "*Junto a la puerta del café, ramo en mano, espera mi respuesta.*"
     },
     "hidden_perfect_homeroom_ep1": {
         "name": "{name}",
@@ -142,7 +142,7 @@
     },
     "hidden_true_homeroom_4_c": {
         "name": "Profesora",
-        "text": "*Saca un libro del expositor. Tiene el mismo título que el manuscrito del cajón de la tarima.*"
+        "text": "*Saca un libro con el mismo título que aquel manuscrito del cajón.*"
     },
     "hidden_true_homeroom_4_d": {
         "name": "Profesora",
@@ -158,7 +158,7 @@
     },
     "hidden_true_homeroom_4_g": {
         "name": "Profesora",
-        "text": "*Alinea una vez la esquina del libro. Ya no dobla el posavasos como antes.*"
+        "text": "*Alinea el libro. Ya no dobla la funda del vaso como antes.*"
     },
     "hidden_true_homeroom_4_h": {
         "name": "Profesora",
@@ -182,7 +182,7 @@
     },
     "hidden_true_homeroom_6_b": {
         "name": "{name}",
-        "text": "*Mientras caminamos hasta la cafetería, nos preguntamos por el trayecto al trabajo y por lo que hacemos últimamente.*"
+        "text": "¿Cuánto tardas en ir al trabajo? *De camino al café, hablamos de trabajos y trayectos.*"
     },
     "hidden_true_homeroom_7": {
         "name": "{name}",
@@ -190,7 +190,7 @@
     },
     "hidden_true_homeroom_7_b": {
         "name": "Profesora",
-        "text": "*Sonríe y saca el celular. Muestra primero la pantalla de contactos y espera.*"
+        "text": "Aquí tienes mi número. ...Puedes guardarlo. *Me ofrece su pantalla primero.*"
     },
     "hidden_true_homeroom_7_c": {
         "name": "Profesora",
@@ -198,7 +198,7 @@
     },
     "hidden_true_homeroom_7_d": {
         "name": "{name}",
-        "text": "*Pronuncio su nombre una vez. Ella repite despacio el de {name}.*"
+        "text": "*Pronuncio su nombre una vez. Ella pronuncia despacio el de {name}.*"
     },
     "hidden_true_homeroom_8": {
         "name": "Profesora",
@@ -214,7 +214,7 @@
     },
     "hidden_good_homeroom_2": {
         "name": "{name}",
-        "text": "*Con el sobre en las manos, salen juntos al pasillo. Los últimos alumnos bajan las escaleras y la profesora sostiene contra el pecho los manuscritos y documentos que quedan.*"
+        "text": "*Salgo con el sobre. Ella lleva los manuscritos restantes y despide a los graduados.*"
     },
     "hidden_good_homeroom_3": {
         "name": "Profesora",
@@ -222,7 +222,7 @@
     },
     "hidden_good_homeroom_4": {
         "name": "{name}",
-        "text": "*Después de despedirse, {name} camina hasta el final del pasillo y mira atrás. La profesora está junto a la ventana, despidiendo a los graduados. Él también inclina levemente la cabeza antes de salir de la escuela.*"
+        "text": "*{name} saluda a la profesora junto a la ventana y sale de la escuela.*"
     },
     "hidden_good_homeroom_ending_title": {
         "name": "",
@@ -242,7 +242,7 @@
     },
     "hidden_bitter_homeroom_4": {
         "name": "{name}",
-        "text": "*Coloca la carta sobre el sobre de recomendación y devuelve ambos. La puerta del aula permanece abierta hacia el pasillo.*"
+        "text": "*Ante la puerta abierta, la profesora me devuelve la carta sobre el sobre de la recomendación.*"
     },
     "hidden_bitter_homeroom_5": {
         "name": "Profesora",
@@ -250,7 +250,7 @@
     },
     "hidden_bitter_homeroom_6": {
         "name": "{name}",
-        "text": "*Recoge la carta y la recomendación y sale del aula sin mirar atrás. Nadie pronuncia su nombre a sus espaldas.*"
+        "text": "*Salgo con la carta y la recomendación. Nadie me llama.*"
     },
     "hidden_bitter_homeroom_ending_title": {
         "name": "",
@@ -267,7 +267,7 @@
     },
     "hidden_perfect_nurse_3": {
         "name": "{name}",
-        "text": "*Nos sentamos frente a frente en una cafetería situada enfrente del recinto. Las vendas de práctica siguen guardadas en su caja.*"
+        "text": "*En el café de enfrente, nos sentamos cara a cara. Las vendas de práctica siguen en su caja.*"
     },
     "hidden_perfect_nurse_3b": {
         "name": "Enfermera",
@@ -303,7 +303,7 @@
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
-        "text": "*La maceta de romero está en la ventana de la casa que elegimos juntos. Nos turnamos para regarla.*"
+        "text": "*Romero en la ventana del hogar que elegimos. Nos turnamos para regarlo.*"
     },
     "hidden_perfect_nurse_ep4": {
         "name": "{name}",
@@ -315,11 +315,11 @@
     },
     "hidden_true_nurse_2": {
         "name": "{name}",
-        "text": "*Cuando termina el evento, volvemos a sentarnos frente a frente en una cafetería cercana. Las vendas y los folletos que usó en el puesto están guardados en su bolso.*"
+        "text": "*Tras el evento, en un café. Guardamos vendas y folletos y nos sentamos enfrente.*"
     },
     "hidden_true_nurse_2_b": {
         "name": "{name}",
-        "text": "*Suenan los dos móviles sobre la mesa. Uno muestra la aprobación de unas horas extra; el otro, el informe de cierre del evento de salud.*"
+        "text": "*Los dos móviles muestran una autorización de horas extra y el informe de cierre del evento de salud, uno en cada pantalla.*"
     },
     "hidden_true_nurse_2_c": {
         "name": "Enfermera",
@@ -371,7 +371,7 @@
     },
     "hidden_true_nurse_7": {
         "name": "{name}",
-        "text": "*Salimos de la cafetería y caminamos juntos hasta el metro. Ninguno cambia de rumbo para seguir al otro.*"
+        "text": "*Caminamos juntos al metro y seguimos cada uno por su lado.*"
     },
     "hidden_true_nurse_7_b": {
         "name": "Enfermera",
@@ -399,7 +399,7 @@
     },
     "hidden_true_nurse_8_c": {
         "name": "{name}",
-        "text": "*Mientras elegimos una película, nos sentamos juntos en el sofá. Fuera está oscuro y las dos tazas de café sobre la mesa se enfrían poco a poco.*"
+        "text": "Cuesta elegir película. ¿Por cuál empezamos? *Nos sentamos juntos en el sofá. Fuera está oscuro y se enfrían dos cafés en la mesa.*"
     },
     "hidden_true_nurse_8_d": {
         "name": "{name}",
@@ -451,7 +451,7 @@
     },
     "hidden_good_nurse_4": {
         "name": "{name}",
-        "text": "*Antes de salir de la enfermería, miro atrás. Juwon está sentada junto a la ventana con la taza de café en la mano. Los dos inclinamos levemente la cabeza a modo de despedida.*"
+        "text": "*Nos saludamos con una inclinación y salgo de la enfermería.*"
     },
     "hidden_good_nurse_ending_title": {
         "name": "",
@@ -483,7 +483,7 @@
     },
     "hidden_bitter_nurse_7": {
         "name": "{name}",
-        "text": "*Recoge la nota y la tarjeta y cierra la puerta de la enfermería. Dentro solo se oye una taza de café al posarse de nuevo en su plato.*"
+        "text": "*Me llevo la nota y la tarjeta. Tras la puerta, una taza toca su plato.*"
     },
     "hidden_bitter_nurse_ending_title": {
         "name": "",
@@ -499,15 +499,15 @@
     },
     "perfect_seo_1": {
         "name": "{name}",
-        "text": "*En la azotea hay varias jardineras bajo la barandilla. La tierra conserva manchas de humedad.*"
+        "text": "*Macetas bajo la barandilla. La tierra conserva marcas de agua.*"
     },
     "perfect_seo_1_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon deja la regadera. Hay gotas de agua en el asa.*"
+        "text": "Has venido. ...Espera, primero dejo la regadera. Ahora que estás aquí, no consigo terminar lo que hacía. *Deja la regadera, con gotas en el asa.*"
     },
     "perfect_seo_2": {
         "name": "{name}",
-        "text": "*Tiene manchas bajo los ojos. Seoyeon dobla un pañuelo y se lo guarda en el bolsillo.*"
+        "text": "*Seoyeon guarda el pañuelo. Quedan manchas bajo los ojos.*"
     },
     "perfect_seo_3": {
         "name": "Seoyeon",
@@ -519,7 +519,7 @@
     },
     "perfect_seo_5": {
         "name": "Seoyeon",
-        "text": "*Seoyeon camina primero hacia las escaleras y se detiene ante la puerta.*"
+        "text": "...Baja conmigo. No quiero mandarte primero solo porque hayamos terminado lo de hoy. *Va primero hacia la escalera y se detiene ante la puerta.*"
     },
     "perfect_seo_5_b": {
         "name": "{name}",
@@ -555,11 +555,11 @@
     },
     "bitter_seo_2_b": {
         "name": "{name}",
-        "text": "*Seoyeon alinea el borde del posavasos. No se ha bebido ni la mitad del café.*"
+        "text": "*Seoyeon alinea el posavasos. No ha bebido ni medio café.*"
     },
     "bitter_seo_3": {
         "name": "{name}",
-        "text": "*Salimos de la cafetería. Llueve. Solo hay un paraguas y la parada del autobús está al otro lado de la calle.*"
+        "text": "*Llueve fuera del café. Un paraguas; la parada enfrente.*"
     },
     "true_seo_1": {
         "name": "{name}",
@@ -582,8 +582,8 @@
         "text": "En casa, las conversaciones largas me agotan."
     },
     "true_seo_6": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon saca el papel de debajo del plato de la maceta.*"
+        "name": "{name}",
+        "text": "*Seoyeon saca un papel de debajo del plato de la maceta.* ¿Lo escribiste? ...¿Porque cuesta decirlo en voz alta?"
     },
     "true_seo_6b": {
         "name": "Seoyeon",
@@ -595,7 +595,7 @@
     },
     "true_seo_7_b": {
         "name": "Seoyeon",
-        "text": "*El papel vuelve debajo del plato.*"
+        "text": "No lo he sacado para enseñártelo. ...Quizá algún día lo leas, pero ahora no. *Vuelve a meter el papel bajo el plato de la maceta.*"
     },
     "true_seo_7b": {
         "name": "{name}",
@@ -611,7 +611,7 @@
     },
     "true_epilogue_1_seo": {
         "name": "{name}",
-        "text": "*Era la primera vez que entraba en la habitación de Seoyeon, pero reconocía muchas cosas de su escritorio.*"
+        "text": "*Es mi primera vez en su cuarto, pero los objetos son familiares.*"
     },
     "ending_aff_check_yuna": {
         "name": "Sistema",
@@ -676,7 +676,7 @@
     },
     "true_yuna_1": {
         "name": "{name}",
-        "text": "*El anexo de la biblioteca. Más al fondo que el rincón secreto de lectura — una buhardilla. Un sitio que ni sabía que existía.*"
+        "text": "*Tras el rincón de lectura, un desván secreto desconocido.*"
     },
     "true_yuna_2": {
         "name": "Yuna",
@@ -684,15 +684,15 @@
     },
     "true_yuna_2_b": {
         "name": "Yuna",
-        "text": "*Sube la escalerilla de la buhardilla. Arriba hay una trampilla. — Al abrirse entra una brisa.*"
+        "text": "Cuidado al subir. La escalera es pequeña. *Abre la trampilla y entra viento.*"
     },
     "true_yuna_2_c": {
         "name": "{name}",
-        "text": "*Encima de la buhardilla había una azotea. La del anexo de la biblioteca. — Un pasadizo secreto que no conoce nadie.*"
+        "text": "Lleva a la azotea del anexo. No sabía que existía este paso."
     },
     "true_yuna_2_d": {
         "name": "Yuna",
-        "text": "*Se apoya en la barandilla. El sol se pone detrás de las montañas.*"
+        "text": "Ya que hemos subido juntos, quédate un poco. Aún hay algo que quiero enseñarte. *Se apoya en la barandilla. El sol se inclina tras las montañas.*"
     },
     "true_yuna_3": {
         "name": "Yuna",
@@ -705,7 +705,7 @@
     "true_yuna_5": {},
     "true_yuna_5_b": {
         "name": "Yuna",
-        "text": "*El dedo con el que recorría la lista se detiene en la tercera canción. La mano que sujeta el lomo del libro se relaja.*"
+        "text": "Primero esta. *El dedo para en la tercera canción; afloja la mano del libro.*"
     },
     "true_yuna_6": {},
     "true_yuna_6b": {
@@ -717,8 +717,8 @@
         "text": "*La lista de reproducción está copiada en el cuaderno. Junto al título de la tercera canción hay un punto lila claro, como el de la primera nota. Yuna pulsa el botón de reproducción.*"
     },
     "true_yuna_bridge": {
-        "name": "{name}",
-        "text": "*Cuando está por terminar la última canción, aparece la luna creciente. Yuna pregunta: «¿Puedo apoyar mi espalda en la tuya?» y deja un palmo de espacio a su lado. La siguiente canción todavía no empieza.*"
+        "name": "Yuna",
+        "text": "¿Puedo apoyarme en ti? *Bajo la luna creciente, deja un palmo de sitio. Acaba la última canción.*"
     },
     "true_epilogue_1_yuna": {
         "name": "{name}",
@@ -730,7 +730,7 @@
     },
     "perfect_dain_1": {
         "name": "{name}",
-        "text": "*El gimnasio. Los balones están guardados; sobre el banco descansan la rodillera y el calendario de rehabilitación.*"
+        "text": "*Rodillera y plan de rehabilitación en el banco. Balones en el armario.*"
     },
     "perfect_dain_2": {
         "name": "Dain",
@@ -738,7 +738,7 @@
     },
     "perfect_dain_2b": {
         "name": "Dain",
-        "text": "*Enseña la pantalla con la reserva confirmada y deja el celular junto a la rodillera.*"
+        "text": "Mira, de verdad he reservado. ...No lo dije solo para tranquilizarte. *Enseña la confirmación y deja el móvil junto a la rodillera.*"
     },
     "perfect_dain_3": {
         "name": "Dain",
@@ -746,7 +746,7 @@
     },
     "perfect_dain_3b": {
         "name": "Dain",
-        "text": "*Pausa el vídeo de una retransmisión y señala el nombre del comentarista bajo la imagen.*"
+        "text": "Al oír a esta persona, me dan ganas de añadir cosas yo también. ...Escuchar también tiene su gracia. *Pausa la retransmisión y señala el nombre del comentarista debajo de la imagen.*"
     },
     "perfect_dain_4": {
         "name": "{name}",
@@ -758,12 +758,12 @@
     },
     "perfect_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Cuando Dain afloja los brazos, me aparto despacio. Al verla bien apoyada, nos sentamos juntos en el banco.*"
+        "text": "Sentémonos en el banco. Despacio. *Dain suelta los brazos y me aparto con cuidado. Compruebo que está cómoda sobre ambos pies y nos sentamos juntos.*"
     },
     "perfect_epilogue_1b_dain": {},
     "perfect_epilogue_1c_dain": {
         "name": "{name}",
-        "text": "*Los días de rehabilitación, Dain marca primero el ritmo. {name} acompasa sus pasos a los de ella.*"
+        "text": "*Dain marca el ritmo en días de rehabilitación; {name} se adapta.*"
     },
     "perfect_epilogue_bridge_dain": {
         "name": "Sistema",
@@ -791,11 +791,11 @@
     },
     "bitter_dain_3": {
         "name": "{name}",
-        "text": "*Salgo del gimnasio. Llueve. Tras la puerta cerrada, una pelota rebota una vez.*"
+        "text": "*Fuera del gimnasio, llueve. Un bote suena tras la puerta.*"
     },
     "bitter_dain_3_b": {
         "name": "{name}",
-        "text": "*Salgo de la escuela. Está lloviendo. No tengo paraguas. Los pétalos de cerezo, mojados por la lluvia, se pegan al suelo bajo mis pies.*"
+        "text": "*Salgo sin paraguas. Los pétalos mojados se pegan bajo mis pies.*"
     },
     "bitter_epilogue_1": {
         "name": "{name}",
@@ -811,11 +811,11 @@
     },
     "true_dain_1": {
         "name": "{name}",
-        "text": "*El gimnasio después del evento. Estamos sentados uno junto al otro, apoyados contra la pared. En el celular de Dain está abierta la pantalla de reserva del hospital.*"
+        "text": "*Tras el evento, nos sentamos juntos contra la pared del gimnasio. El móvil de Dain muestra la pantalla para pedir cita en el hospital.*"
     },
     "true_dain_2": {
         "name": "Dain",
-        "text": "*Le acerca el celular a {name}.*"
+        "text": "{name}, mira. Ya no puedo decir que estoy bien y dejarlo ahí. *Me tiende el móvil.*"
     },
     "true_dain_2b": {
         "name": "{name}",
@@ -847,11 +847,11 @@
     },
     "true_dain_8b": {
         "name": "Dain",
-        "text": "*Con el balón abrazado contra el pecho, extiende el meñique.*"
+        "text": "Si solo lo dices para hacerme feliz, me lo voy a creer. ...Así que espero que lo digas de verdad. *Abrazando el balón, me tiende el meñique.*"
     },
     "true_dain_bridge": {
-        "name": "{name}",
-        "text": "*Después de confirmar la promesa, Dain pregunta: «¿Puedo apoyarme un momento?». Abraza el balón contra el pecho, deja libre un espacio del ancho de un hombro y espera una respuesta. En el celular sigue abierta la pantalla que confirma la cita médica.*"
+        "name": "Dain",
+        "text": "¿Puedo apoyarme un momento? *La confirmación sigue en el móvil. Abraza el balón, deja espacio para un hombro y espera la respuesta.*"
     },
     "true_epilogue_1_dain": {
         "name": "{name}",
@@ -859,7 +859,7 @@
     },
     "true_epilogue_2": {
         "name": "{name}",
-        "text": "*El domingo por la tarde, de camino a casa, frenamos al pasar por el instituto. Mañana volveremos a cruzar la puerta, con lo que nos hemos dicho hoy.*"
+        "text": "*Domingo por la noche. Paso despacio ante la verja. Mañana volveré.*"
     },
     "true_epilogue_3": {
         "name": "{name}",
@@ -884,7 +884,7 @@
     },
     "day5_ending_alone": {
         "name": "{name}",
-        "text": "*Salgo por la entrada de la escuela. Suena el celular. No es nadie: es un aviso de batería baja.*"
+        "text": "*Un aviso fuera de la verja. Batería baja.*"
     },
     "alone_1": {
         "name": "{name}",
@@ -892,7 +892,7 @@
     },
     "alone_2": {
         "name": "{name}",
-        "text": "*La habitación está en silencio. En la pantalla del celular hay tres chats fijados en la parte superior. Ninguno tiene mensajes nuevos.*"
+        "text": "*Una habitación silenciosa. Ningún mensaje nuevo en los tres chats fijados.*"
     },
     "alone_2_b": {
         "name": "{name}",
@@ -900,7 +900,7 @@
     },
     "alone_4": {
         "name": "{name}",
-        "text": "*Conecto el celular al cargador y programo la alarma de la mañana. En la habitación, con la pantalla apagada, solo queda el sonido del segundero.*"
+        "text": "*Cargo el móvil y pongo la alarma de la mañana. La pantalla se apaga; el reloj sigue haciendo tictac.*"
     },
     "alone_5": {
         "name": "Sistema",
@@ -928,7 +928,7 @@
     },
     "day5_ending_confess_fail": {
         "name": "{name}",
-        "text": "*Después de confesarle lo que siento, caminamos juntos hasta el parque. Miro la punta de mis zapatos mientras espero su respuesta.*"
+        "text": "*Tras confesarme, caminamos al parque. Espero la respuesta.*"
     },
     "confess_fail_cg_seo": {
         "name": "Seoyeon",
@@ -936,7 +936,7 @@
     },
     "confess_fail_cg_yuna": {
         "name": "Yuna",
-        "text": "*Caminan juntos hasta la salida del parque, pero sus manos no llegan a rozarse. Yuna habla sin apartar la vista del frente.* ...Lo siento. No puedo corresponder a lo que sientes."
+        "text": "*En la salida del parque, mira al frente. Nuestras manos no se tocan.* Lo siento. No puedo corresponderte."
     },
     "confess_fail_cg_dain": {
         "name": "Dain",
@@ -944,19 +944,19 @@
     },
     "confess_fail_1": {
         "name": "{name}",
-        "text": "*Días después, bajo la lluvia frente a la entrada de la escuela. Veo cómo se aleja bajo un paraguas, pero no la llamo ni voy tras ella.*"
+        "text": "*Días después, en la entrada lluviosa. No sigo la figura que se aleja.*"
     },
     "confess_fail_2": {
         "name": "{name}",
-        "text": "*Sin moverme del sitio, abro el chat. Después de escribir y borrar varias veces, dejo una sola frase.*"
+        "text": "*Tras escribir y borrar, dejo una frase en el chat.*"
     },
     "confess_fail_3": {
         "name": "{name}",
-        "text": "*Envío «Entiendo. Gracias por responder» y dejo el celular.*"
+        "text": "Entiendo. Gracias por responder. *Lo envío y dejo el móvil.*"
     },
     "confess_fail_4": {
         "name": "{name}",
-        "text": "*Aparece la marca de leído. No llega ninguna respuesta. No envío nada más.*"
+        "text": "*Leído. Sin respuesta. No envío más.*"
     },
     "confess_fail_5": {
         "name": "Sistema",
@@ -984,11 +984,11 @@
     },
     "good_1_seo_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon retira un pétalo enganchado en el puño de la manga de {name}.*"
+        "text": "{name}, espera. Tienes un pétalo. ...Ahora no quiero pasar de largo por ir con prisas. *Quita el pétalo del borde de la manga.*"
     },
     "good_1_seo_c": {
         "name": "Seoyeon",
-        "text": "*Seoyeon aminora un poco el paso.*"
+        "text": "Lo de ir despacio no lo decía por decir. También cuenta caminar juntos ahora. *Aminora el paso y se queda medio paso atrás.*"
     },
     "good_1_seo_d": {
         "name": "{name}",
@@ -1011,8 +1011,8 @@
         "text": "*Al llegar al otro lado, concertamos nuestra próxima cita usando solo una hora y un lugar.*"
     },
     "good_epilogue_1": {
-        "name": "{name}",
-        "text": "*Llega un mensaje de Seoyeon: «Mañana, a la hora de comer, en la azotea. Esta vez la he reservado como corresponde».*"
+        "name": "Seoyeon",
+        "text": "*Un mensaje de Seoyeon.* Mañana, almuerzo, azotea. Esta vez la he reservado oficialmente."
     },
     "good_epilogue_2": {
         "name": "{name}",
@@ -1032,7 +1032,7 @@
     },
     "good_1_yuna_b": {
         "name": "Yuna",
-        "text": "*Me entrega una nota doblada. Al abrirla, solo hay una línea: «La próxima vez, dímelo primero».*"
+        "text": "*Me entrega una nota doblada. Una línea dentro.* La próxima vez, dímelo antes."
     },
     "good_1_yuna_b_b": {
         "name": "{name}",
@@ -1040,11 +1040,11 @@
     },
     "good_2_yuna": {
         "name": "{name}",
-        "text": "*La azotea. Yuna se apoya en la barandilla. Aunque sople el viento, hoy no es ella la que se aparta primero.*"
+        "text": "*En la barandilla, Yuna no se vuelve pese al viento.*"
     },
     "good_3_yuna": {
         "name": "{name}",
-        "text": "*Incluso después de que termina el sonido de cierre de los altavoces del campo, los dos seguimos frente a la misma baranda.*"
+        "text": "*Acaba el aviso. Seguimos en la misma barandilla.*"
     },
     "good_4_yuna": {
         "name": "Yuna",
@@ -1052,7 +1052,7 @@
     },
     "good_5_yuna": {
         "name": "{name}",
-        "text": "*Salimos por la puerta de la azotea y bajamos las escaleras. Nuestros pasos son lentos, pero no se detienen.*"
+        "text": "*Bajamos despacio las escaleras, sin pararnos.*"
     },
     "good_epilogue_1_yuna": {},
     "good_epilogue_2_yuna": {
@@ -1060,8 +1060,8 @@
         "text": "*Guardo la nota en la bolsa. Las páginas que no leímos hoy seguirán ahí mañana.*"
     },
     "good_epilogue_3_yuna": {
-        "name": "{name}",
-        "text": "*En el reverso de la nota, en letra pequeña: '...El final, leámoslo juntos.' La tinta lila clara está corrida.*"
+        "name": "Yuna",
+        "text": "*Letra pequeña detrás de la nota, en tinta lila corrida.* ...Leamos juntos el final."
     },
     "good_5_cg_yuna": {
         "name": "Sistema",
@@ -1088,8 +1088,8 @@
         "text": "*Dain me tiende el puño y espera. En el folleto de rehabilitación que tengo en la mano figuran la hora del próximo paseo y una nota: «El ritmo lo marco yo».*"
     },
     "good_epilogue_1_dain": {
-        "name": "{name}",
-        "text": "*Llega un mensaje de Dain: «¿Alguien se apunta mañana por la mañana a un paseo de rehabilitación?»*"
+        "name": "Dain",
+        "text": "*Mensaje de Dain.* ¿Quién se apunta al paseo de rehabilitación mañana por la mañana?"
     },
     "good_epilogue_2_dain": {
         "name": "{name}",
@@ -1097,7 +1097,7 @@
     },
     "good_epilogue_3_dain": {
         "name": "{name}",
-        "text": "*Respondo: «Hecho. Tú marcas el ritmo».*"
+        "text": "Me apunto. Tú marcas el ritmo. *Envío la respuesta.*"
     },
     "good_5_cg_dain": {
         "name": "Sistema",
@@ -1109,7 +1109,7 @@
     },
     "friend_1": {
         "name": "{name}",
-        "text": "*Me siento en un banco del parque y abro los mensajes. Esta vez no cierro el cuadro de texto.*"
+        "text": "*Dejo abierto el mensaje en el banco del parque.*"
     },
     "friend_2": {
         "name": "{name}",
@@ -1117,7 +1117,7 @@
     },
     "friend_3": {
         "name": "{name}",
-        "text": "*Escribo hasta el final: «Ahora mismo no tengo el valor de pedirte que cambiemos nuestra relación. Pero quería decirte que te agradezco todo lo que has hecho». Y lo envío.*"
+        "text": "Ahora no me atrevo a pedir que seamos algo más. Pero quería decirte que te lo agradezco. *Termino de escribir y lo envío.*"
     },
     "friend_route_check": {
         "name": "Sistema",
@@ -1128,16 +1128,16 @@
         "text": "*Llega una respuesta: «Yo también te lo agradezco. Nos vemos mañana en la escuela».*"
     },
     "friend_4_seo": {
-        "name": "{name}",
-        "text": "*Llega una respuesta de Seoyeon: «Entiendo. Esta vez has terminado de decir lo que querías. Nos vemos mañana».*"
+        "name": "Seoyeon",
+        "text": "*Respuesta de Seoyeon.* Vale. Esta vez lo has dicho hasta el final. Hasta mañana."
     },
     "friend_4_yuna": {
-        "name": "{name}",
-        "text": "*Llega una respuesta de Yuna: «Lo he leído. ...Nos vemos mañana».*"
+        "name": "Yuna",
+        "text": "*Respuesta de Yuna.* Lo he leído. ...Hasta mañana."
     },
     "friend_4_dain": {
-        "name": "{name}",
-        "text": "*Llega una respuesta de Dain: «Sí. Entonces mañana ven como siempre. Y no llegues tarde».*"
+        "name": "Dain",
+        "text": "*Respuesta de Dain.* Sí. Pues mañana ven como siempre. No llegues tarde."
     },
     "friend_5": {
         "name": "{name}",
@@ -1145,7 +1145,7 @@
     },
     "friend_7": {
         "name": "{name}",
-        "text": "*Junto al mensaje enviado aparece la marca de leído. El cuadro de texto está vacío.*"
+        "text": "*El mensaje enviado aparece como leído. El cuadro de texto está vacío.*"
     },
     "friend_8": {
         "name": "{name}",
@@ -1157,7 +1157,7 @@
     },
     "friend_10": {
         "name": "{name}",
-        "text": "*Escribo en el chat de grupo: «¿Comemos algo todos juntos después de la graduación?». En cuanto lo envío, empiezan a llegar respuestas una tras otra.*"
+        "text": "¿Comemos juntos después de la graduación? *Lo mando al grupo y van llegando respuestas.*"
     },
     "friend_12": {
         "name": "Sistema",
@@ -1172,8 +1172,8 @@
         "text": "*Pasa junto a {name} en el pasillo. No gira la cabeza.*"
     },
     "mayhem_2": {
-        "name": "{name}",
-        "text": "*El lugar de Yuna estaba vacío. Sobre el pupitre había una nota: «Fue divertido». El punto fue lo último.*"
+        "name": "Yuna",
+        "text": "*El sitio de Yuna, vacío. Una nota en la mesa, con punto final.* Fue divertido."
     },
     "mayhem_3": {
         "name": "Dain",
@@ -1185,7 +1185,7 @@
     },
     "mayhem_5": {
         "name": "{name}",
-        "text": "*Los pétalos de cerezo están pegados al suelo de la entrada de la escuela, mojado por la lluvia primaveral. El lugar donde caminábamos juntos está vacío.*"
+        "text": "*Pétalos pegados por la lluvia. El sitio a mi lado está vacío.*"
     },
     "mayhem_6": {
         "name": "{name}",
@@ -1193,7 +1193,7 @@
     },
     "mayhem_7": {
         "name": "{name}",
-        "text": "*Releo la disculpa que envié a Sojeong. No hay mensajes nuevos debajo. La pantalla se apaga mientras espero.*"
+        "text": "*No hay respuesta a mi disculpa a Sojeong. Se apaga la pantalla.*"
     },
     "mayhem_8": {
         "name": "Sistema",
@@ -1209,7 +1209,7 @@
     },
     "harem_1_b": {
         "name": "Yuna",
-        "text": "*Baja la cabeza y luego mira por turnos a Seoyeon y Dain. No afloja la mano que sujeta el libro.*"
+        "text": "*Baja la cabeza y mira a Seoyeon y Dain. No suelta el libro.*"
     },
     "harem_2": {
         "name": "Yuna",
@@ -1233,7 +1233,7 @@
     },
     "harem_7": {
         "name": "{name}",
-        "text": "*El calendario de la semana siguiente está vacío. Silencio los chats de las tres y dejo libres los espacios.*"
+        "text": "*La semana que viene está vacía. Silencio los tres chats.*"
     },
     "harem_8": {
         "name": "Sistema",
@@ -1829,7 +1829,7 @@
     },
     "forced_violation_day5_after_seoyeon": {
         "name": "Seoyeon",
-        "text": "*Incluso después de que termina la conversación, Seoyeon guarda silencio un buen rato. Cuando vuelve a hablar, su voz se ha vuelto fría.* No pienses que puedes fingir que lo que acabas de hacer nunca pasó. Durante un tiempo, no te acerques a mí ni me contactes.",
+        "text": "*Seoyeon habla con frialdad tras un silencio.* No pienses que puedes fingir que lo que acabas de hacer nunca pasó. Durante un tiempo, no te acerques a mí ni me contactes.",
         "choices": [
             "Pedir perdón sin excusas y terminar la conversación.",
             "Intentar explicar que fue un malentendido."
@@ -1837,7 +1837,7 @@
     },
     "forced_violation_day5_seoyeon_apologize": {
         "name": "Seoyeon",
-        "text": "*La expresión de Seoyeon no se suaviza al oír la disculpa.* Te escuché. Eso no borra lo que pasó. Como dije, no me contactes por un tiempo."
+        "text": "*Seoyeon sigue seria.* Te escuché. Eso no borra lo que pasó. Como dije, no me contactes por un tiempo."
     },
     "forced_violation_day5_seoyeon_excuse": {
         "name": "Seoyeon",
@@ -1845,7 +1845,7 @@
     },
     "forced_violation_day5_after_yuna": {
         "name": "Yuna",
-        "text": "*Cuando la conversación se corta, Yuna respira hondo una vez. En su rostro tenso solo queda desconfianza.* Sabías que no quería y aun así me ignoraste. Ahora mismo no quiero ni verte. No vuelvas a contactarme.",
+        "text": "*Yuna respira, recelosa.* Sabías que no quería y aun así me ignoraste. Ahora mismo no quiero ni verte. No vuelvas a contactarme.",
         "choices": [
             "Pedir perdón sin excusas y terminar la conversación.",
             "Intentar explicar que fue un malentendido."
@@ -1853,7 +1853,7 @@
     },
     "forced_violation_day5_yuna_apologize": {
         "name": "Yuna",
-        "text": "*Yuna tarda mucho en responder y, cuando lo hace, es breve.* Pedir perdón no hace que desaparezca. Basta."
+        "text": "*Yuna responde tras una larga pausa.* Pedir perdón no hace que desaparezca. Basta."
     },
     "forced_violation_day5_yuna_excuse": {
         "name": "Yuna",
@@ -1877,7 +1877,7 @@
     },
     "forced_violation_day5_after_teacher": {
         "name": "Profesora",
-        "text": "*Cuando termina la conversación, la profesora marca el límite con una voz aún más firme.* Lo que acabas de hacer cruzó claramente la línea. No te acerques más. Voy a tratar esto siguiendo el procedimiento correspondiente.",
+        "text": "*La profesora habla con firmeza.* Lo que acabas de hacer cruzó claramente la línea. No te acerques más. Voy a tratar esto siguiendo el procedimiento correspondiente.",
         "choices": [
             "Pedir perdón sin excusas y terminar la conversación.",
             "Intentar explicar que fue un malentendido."
@@ -1885,7 +1885,7 @@
     },
     "forced_violation_day5_teacher_apologize": {
         "name": "Profesora",
-        "text": "*La profesora respira brevemente antes de continuar.* Escuché tu disculpa. Aun así, el procedimiento seguirá adelante. No digas nada más."
+        "text": "*La profesora respira y habla.* Escuché tu disculpa. Aun así, el procedimiento seguirá adelante. No digas nada más."
     },
     "forced_violation_day5_teacher_excuse": {
         "name": "Profesora",
@@ -1893,7 +1893,7 @@
     },
     "forced_violation_day5_after_nurse": {
         "name": "Enfermera",
-        "text": "*Cuando la conversación se corta, toda la picardía habitual desaparece de la voz de la enfermera escolar.* A partir de ahora, mantén la distancia. Voy a dejar constancia de lo ocurrido y avisar a quien corresponda.",
+        "text": "*Desaparece el tono bromista de la enfermera.* A partir de ahora, mantén la distancia. Voy a dejar constancia de lo ocurrido y avisar a quien corresponda.",
         "choices": [
             "Pedir perdón sin excusas y terminar la conversación.",
             "Intentar explicar que fue un malentendido."
@@ -1901,7 +1901,7 @@
     },
     "forced_violation_day5_nurse_apologize": {
         "name": "Enfermera",
-        "text": "*La enfermera guarda silencio un momento antes de responder con firmeza.* Escucharé tu disculpa. Aun así, lo registraré y haré los avisos necesarios. Esta conversación se acabó."
+        "text": "*La enfermera responde con firmeza tras una pausa.* Escucharé tu disculpa. Aun así, lo registraré y haré los avisos necesarios. Esta conversación se acabó."
     },
     "forced_violation_day5_nurse_excuse": {
         "name": "Enfermera",
@@ -1973,12 +1973,12 @@
         "text": "Sí. Quería escuchar esta contigo."
     },
     "good_epilogue_1_yuna_established": {
-        "name": "{name}",
-        "text": "*Una nota doblada cae de la mochila. Hay marcas donde estuvo presionada contra el forro durante mucho tiempo. 'Si terminaste el volumen 1, te prestaré el volumen 2. — Yuna'*"
+        "name": "Yuna",
+        "text": "*Marcas antiguas en el forro del bolso. Saco la nota doblada.* Si has acabado el tomo 1, te presto el 2. — Yuna"
     },
     "good_epilogue_1_yuna_first": {
-        "name": "{name}",
-        "text": "*Yuna me tiende una nota nueva: «Elegí un libro para leer juntos. Mañana lo sacamos de la biblioteca. — Yuna»*"
+        "name": "Yuna",
+        "text": "*Yuna entrega una nota nueva.* Elegí un libro para leer juntos. Mañana lo sacamos de la biblioteca. — Yuna"
     },
     "forced_violation_day5_after_haeun": {
         "name": "Haeun",
@@ -1990,7 +1990,7 @@
     },
     "forced_violation_day5_haeun_apologize": {
         "name": "Haeun",
-        "text": "*Haeun retrocede hacia la sala de profesores sin responder. No deja de mirar hasta comprobar que el protagonista no la sigue.*"
+        "text": "*Sin responder, Haeun retrocede hacia la sala de profesores y se asegura de que no la siga.*"
     },
     "forced_violation_day5_haeun_excuse": {
         "name": "Haeun",

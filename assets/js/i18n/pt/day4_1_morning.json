@@ -43,15 +43,15 @@
     },
     "minsu_cheer_1_b": {
         "name": "Minsu",
-        "text": "*E aí, hoje é dia de encontro né*"
+        "text": "Ei, ouvi que tem um encontro hoje?"
     },
     "minsu_cheer_1_c": {
         "name": "{name}",
-        "text": "*Como você sabe disso*"
+        "text": "Como ficou sabendo?"
     },
     "minsu_cheer_1_d": {
         "name": "Minsu",
-        "text": "*Depois de tanto papo sobre o fim de semana na sala, achou que eu não ia perceber? kkk*"
+        "text": "Falou tanto do fim de semana na sala e achou que eu não ia saber? kkk"
     },
     "minsu_cheer_2": {
         "name": "Minsu",
@@ -103,7 +103,7 @@
     },
     "morning4_fallback_msg": {
         "name": "{name}",
-        "text": "*Manhã de fim de semana. Confiro algumas notificações e deixo o celular de lado. Lá fora, passa o som do caminhão de limpeza do condomínio.*"
+        "text": "*Manhã de fim de semana. Vejo as notificações e deixo o celular.*"
     },
     "morning4_hidden_check": {
         "name": "{name}",
@@ -116,7 +116,7 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "*O portão da escola está entreaberto. Há movimento lá dentro. A professora sai em direção ao portão com uma sacola de papel na mão.*"
+        "text": "Bom dia, professora. *Encontro a professora com uma sacola de papel no portão aberto.*"
     },
     "hidden_homeroom_d4_1_b": {
         "name": "{name}",
@@ -180,7 +180,7 @@
     },
     "hidden_homeroom_d4_5_d": {
         "name": "Professora",
-        "text": "*Depois de terminar de falar, ela dobra duas vezes a alça da sacola de papel dentro da mão.*"
+        "text": "Não precisa ler só porque foi sua professora que escreveu. Talvez tenha seus próprios planos hoje. *Dobra duas vezes as alças da sacola de papel e as segura.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
@@ -209,7 +209,7 @@
     },
     "hidden_homeroom_d4_cafe_1_d": {
         "name": "Professora",
-        "text": "*A professora diz como uma piada e toca a xícara de café. Dois anéis circulares de água se sobrepõem no porta-copos.*"
+        "text": "Vamos terminar o café antes, né? *Ela toca a xícara em tom de brincadeira. Duas marcas redondas de água se sobrepõem no apoio.*"
     },
     "hidden_homeroom_d4_cafe_1_e": {
         "name": "{name}",
@@ -217,7 +217,7 @@
     },
     "hidden_homeroom_d4_cafe_1_f": {
         "name": "Professora",
-        "text": "*Ela deixa a xícara. Os dedos permanecem na alça.*"
+        "text": "Escolher dá um pouco de vergonha. Ler sozinha é diferente de mostrar para alguém. *Põe a xícara na mesa, mas mantém os dedos na alça.*"
     },
     "hidden_homeroom_d4_cafe_2": {
         "name": "Professora",
@@ -245,7 +245,7 @@
     },
     "hidden_homeroom_d4_cafe_choice": {
         "name": "Professora",
-        "text": "*A professora deixa a xícara e aponta com o queixo para as cópias de avaliação na mesa ao fundo.*",
+        "text": "Marca onde travar. Quero saber se virou a página por curiosidade ou se só continuou por obrigação. *Põe a xícara na mesa e aponta com o queixo para as cópias da oficina na mesa do fundo.*",
         "choices": [
             "A senhora ainda não decidiu o final?",
             "Vai mostrar tudo aos outros membros também, não vai?",
@@ -273,8 +273,8 @@
         "text": "Vou tentar."
     },
     "hidden_homeroom_d4_cafe_5_b": {
-        "name": "Professora",
-        "text": "*A mão que dobrava o porta-copo se abre. As rugas do papel permanecem.*"
+        "name": "{name}",
+        "text": "Coloco meu nome nos comentários também? Pensei se os outros vão ver o que escrevi. *Ela abre a mão que dobrava a capa de papel do copo. As marcas no papel ficam.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Professora",
@@ -297,8 +297,8 @@
         "text": "Vou reunir os comentários de hoje para a gente discutir no próximo encontro."
     },
     "hidden_homeroom_d4_cafe_5_h": {
-        "name": "Professora",
-        "text": "*Numera cada manuscrito e envia também a última cópia para a mesa do fundo.*"
+        "name": "{name}",
+        "text": "É muito diferente fazer a oficina aqui em vez de na escola? ...Não pensei que fosse ler um manuscrito tomando café. *Numera todas as cópias e manda a última para a mesa do fundo.*"
     },
     "hidden_homeroom_d4_cafe_6": {
         "name": "Professora",
@@ -315,7 +315,7 @@
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "*Na manhã de preparação do evento escolar, abro a porta da enfermaria no horário da consulta que marquei. Diante da enfermeira há uma ficha de acompanhamento e um folheto informativo.*"
+        "text": "Vim no horário marcado. *Dia de preparação na enfermaria. Há fichas e orientações na mesa.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "Enfermeira",
@@ -412,7 +412,7 @@
     },
     "hidden_nurse_d4_2_d": {
         "name": "{name}",
-        "text": "*Enquanto a equipe do evento entra e sai, espalho sobre a mesa as gazes e os algodões com álcool, separados por tipo.*"
+        "text": "Vou separar as gazes e os algodões. *Arrumo a mesa enquanto a equipe entra e sai.*"
     },
     "hidden_nurse_d4_2_e": {
         "name": "Enfermeira",
@@ -420,7 +420,7 @@
     },
     "hidden_nurse_d4_2_f": {
         "name": "{name}",
-        "text": "*Encho cada bolsa com os materiais. A enfermeira confere de novo os kits prontos.*"
+        "text": "Esta bolsa está pronta. Pode conferir? *Encho a próxima.*"
     },
     "hidden_nurse_d4_2_g": {
         "name": "Enfermeira",
@@ -444,7 +444,7 @@
     },
     "hidden_nurse_d4_4_c": {
         "name": "Enfermeira",
-        "text": "*Ela fecha a pasta. A ponta da caneta desliza uma vez sobre a capa.*"
+        "text": "É verdade que estava muito ocupada. Mas dizer que foi só por isso... deixaria parte da história de fora. *Fecha a pasta. A ponta da caneta desliza uma vez pela capa.*"
     },
     "hidden_nurse_d4_4_d": {
         "name": "Enfermeira",
@@ -473,7 +473,7 @@
     },
     "hidden_nurse_d4_4_k": {
         "name": "{name}",
-        "text": "*Fecha o zíper do último kit. Lá fora, outros voluntários carregam as caixas prontas.*"
+        "text": "O último kit ficou pronto. *Fecho o zíper; os voluntários carregam as caixas.*"
     },
     "hidden_nurse_d4_5": {
         "name": "Enfermeira",
@@ -523,7 +523,7 @@
     },
     "hidden_nurse_d4_meal_walk": {
         "name": "{name}",
-        "text": "*Passo com a equipe do evento em uma lanchonete em frente à escola. Há uma sacola para viagem para cada pessoa.*"
+        "text": "Uma por pessoa, certo? *Conto as sacolas na lanchonete em frente à escola.*"
     },
     "hidden_nurse_d4_meal_1": {
         "name": "Enfermeira",
@@ -546,8 +546,8 @@
         "text": "Sua expressão é diferente quando fala do hospital e agora."
     },
     "hidden_nurse_d4_meal_2_b": {
-        "name": "Enfermeira",
-        "text": "*Uma etiqueta fica torta na ponta de uma caixa.*"
+        "name": "{name}",
+        "text": "*Uma etiqueta fica torta no canto da caixa.* Agora parece mais à vontade. ...Ah, a etiqueta ficou torta. Talvez eu tenha distraído a senhora falando."
     },
     "hidden_nurse_d4_meal_3": {
         "name": "Enfermeira",
@@ -620,11 +620,11 @@
     },
     "day4_haeun_concern_open": {
         "name": "{name}",
-        "text": "*Pergunto o que foi contado e digo que explicarei com Haeun presente. A outra pessoa olha mais uma vez para ela e depois se vira para mim.*"
+        "text": "Primeiro me diz o que ouviu. Vou explicar com Haeun aqui também."
     },
     "day4_haeun_concern_delay": {
         "name": "{name}",
-        "text": "*Digo que não quero conversar agora e tento sair. A outra pessoa me chama pelo nome. Haeun também fica onde está.*"
+        "text": "Não quero falar agora. Depois. *Tento sair, mas me chamam.*"
     },
     "day4_haeun_concern_clarify": {
         "name": "Haeun",
@@ -632,7 +632,7 @@
     },
     "day4_haeun_concern_seoyeon_intro": {
         "name": "Haeun",
-        "text": "*Ouço Haeun perto do portão. Ela fala baixo com alguém e para quando me vê.* Fiquei desconfortável quando conversamos ontem. Não sabia como entender aquilo, então comentei."
+        "text": "*No portão, Haeun fala baixo com a pessoa à sua frente e para ao me ver.* Fiquei desconfortável quando conversamos ontem. Não sabia como entender aquilo, então comentei."
     },
     "day4_haeun_concern_seoyeon_arrival": {
         "name": "Seoyeon",
@@ -659,7 +659,7 @@
     },
     "day4_haeun_concern_yuna_intro": {
         "name": "Haeun",
-        "text": "*Ouço Haeun perto do portão. Ela fala baixo com alguém e para quando me vê.* Fiquei desconfortável quando conversamos ontem. Não sabia como entender aquilo, então comentei."
+        "text": "*No portão, Haeun fala baixo com a pessoa à sua frente e para ao me ver.* Fiquei desconfortável quando conversamos ontem. Não sabia como entender aquilo, então comentei."
     },
     "day4_haeun_concern_yuna_arrival": {
         "name": "Yuna",
@@ -686,7 +686,7 @@
     },
     "day4_haeun_concern_dain_intro": {
         "name": "Haeun",
-        "text": "*Ouço Haeun perto do portão. Ela fala baixo com alguém e para quando me vê.* Fiquei desconfortável quando conversamos ontem. Não sabia como entender aquilo, então comentei."
+        "text": "*No portão, Haeun fala baixo com a pessoa à sua frente e para ao me ver.* Fiquei desconfortável quando conversamos ontem. Não sabia como entender aquilo, então comentei."
     },
     "day4_haeun_concern_dain_arrival": {
         "name": "Dain",
@@ -713,7 +713,7 @@
     },
     "day4_haeun_concern_teacher_intro": {
         "name": "Haeun",
-        "text": "*Ouço Haeun perto do portão. Ela fala baixo com alguém e para quando me vê.* Fiquei desconfortável quando conversamos ontem. Não sabia como entender aquilo, então comentei."
+        "text": "*No portão, Haeun fala baixo com a pessoa à sua frente e para ao me ver.* Fiquei desconfortável quando conversamos ontem. Não sabia como entender aquilo, então comentei."
     },
     "day4_haeun_concern_teacher_arrival": {
         "name": "Professora",
@@ -740,7 +740,7 @@
     },
     "day4_haeun_concern_nurse_intro": {
         "name": "Haeun",
-        "text": "*Ouço Haeun perto do portão. Ela fala baixo com alguém e para quando me vê.* Fiquei desconfortável quando conversamos ontem. Não sabia como entender aquilo, então comentei."
+        "text": "*No portão, Haeun fala baixo com a pessoa à sua frente e para ao me ver.* Fiquei desconfortável quando conversamos ontem. Não sabia como entender aquilo, então comentei."
     },
     "day4_haeun_concern_nurse_arrival": {
         "name": "Enfermeira",
@@ -767,11 +767,11 @@
     },
     "day4_haeun_approach": {
         "name": "{name}",
-        "text": "*Haeun está ao lado do portão aberto da escola. Diminuo o passo ao vê-la conversando com alguém.*"
+        "text": "Haeun, tem um instante? *Me aproximo enquanto ela fala com alguém perto do portão aberto.*"
     },
     "day4_haeun_finish": {
         "name": "{name}",
-        "text": "*Quando a conversa termina, Haeun e eu nos afastamos para o lado do portão. Há pessoas esperando o sinal na faixa de pedestres.*"
+        "text": "Estamos no caminho. Vamos para cá. *Saio do caminho com Haeun.*"
     },
     "day4_haeun_notice_1": {
         "name": "Haeun",

@@ -1,7 +1,7 @@
 {
     "lunch2_start": {
         "name": "{name}",
-        "text": "*Mittagspause. Yunas Zettel steckt in meiner Tasche. Am Ende des Flurs geht Seoyeon mit ihrer Bentobox zum Dach, während Dain vom Schulkiosk herüberwinkt. An der Weggabelung bleibe ich stehen.*"
+        "text": "*Mit Yunas Zettel in der Hand stehe ich an der Abzweigung zum Dach, zum Schulkiosk und zum Bibliotheksanbau.*"
     },
     "lunch2_choice": {
         "name": "{name}",
@@ -17,8 +17,8 @@
         "text": "*Ich gehe aufs Dach.*"
     },
     "lunch2_seo_1b": {
-        "name": "{name}",
-        "text": "*Ich bin zum ersten Mal auf dem Dach. Vom Sportplatz dringt ein Pfiff über das Geländer herauf, während Seoyeon ihr Mittagessen auf einem Klappstuhl ausbreitet.*"
+        "name": "Seoyeon",
+        "text": "Zum ersten Mal hier? Setz dich hier hin. Man hört allerdings ein bisschen Lärm vom Sportplatz. *Sie öffnet ihre Lunchbox auf einem Stuhl.*"
     },
     "lunch2_seo_2b_check": {},
     "lunch2_seo_2b": {},
@@ -64,7 +64,7 @@
     },
     "lunch2_seo_1": {
         "name": "{name}",
-        "text": "*Das Dach. Gleicher Ort wie gestern. Seoyeon packt ihre Lunchbox aus.*"
+        "text": "*Dasselbe Dach wie gestern. Seoyeon packt das Essen aus.*"
     },
     "lunch2_seo_2": {},
     "lunch2_seo_3": {
@@ -85,7 +85,7 @@
     },
     "lunch2_seo_7": {
         "name": "{name}",
-        "text": "*In dem Moment, als Seoyeon den Deckel der Lunchbox öffnet, scheppert die Dachtür auf. Dain schlüpft durch den Spalt.*"
+        "text": "*Die Dachtür geht klappernd auf, und Dain kommt herein.*"
     },
     "lunch2_seo_9": {
         "name": "Dain",
@@ -100,8 +100,8 @@
         "text": "Dann kann ich mich eben ab jetzt dazusetzen. Ich setze mich auch, ja?"
     },
     "lunch2_seo_12": {
-        "name": "{name}",
-        "text": "*Dain setzt sich auf den leeren Platz. Seoyeons Stäbchen kreisen über der Eierrolle, greifen daneben und kehren an ihren Ausgangspunkt zurück.*"
+        "name": "Dain",
+        "text": "Dann nehme ich den Platz, ja? *Sie setzt sich auf den freien Stuhl.*"
     },
     "lunch2_seo_13": {
         "name": "Dain",
@@ -117,7 +117,7 @@
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "*Seoyeon schaut zu Dain gegenüber und rückt ihren eigenen Stuhl etwas näher an meinen.*"
+        "text": "Ich rücke etwas näher. *Sie zieht ihren Stuhl zu mir.*"
     },
     "lunch2_seo_15": {
         "name": "{name}",
@@ -150,7 +150,7 @@
     },
     "lunch2_seo_c1_1": {
         "name": "Seoyeon",
-        "text": "*Sie wischt das Reiskorn weg und faltet anschließend die benutzte Seite des Tuchs nach innen.*"
+        "text": "Genau so solltest du stillhalten. Dauert nicht lange. *Sie nimmt das Reiskorn ab und faltet die benutzte Seite des Feuchttuchs nach innen.*"
     },
     "lunch2_seo_c1_2": {
         "name": "Seoyeon",
@@ -158,7 +158,7 @@
     },
     "lunch2_seo_c1_2_b": {
         "name": "Dain",
-        "text": "*Dain blickt zwischen uns hin und her. Ihre Hand schwebt noch immer auf halbem Weg zur Lunchbox in der Luft.*"
+        "text": "Moment, ich wollte nur etwas zu essen nehmen. ...Darf ich gerade überhaupt hier sein? *Ihre Hand bleibt über der Lunchbox in der Luft, während sie uns abwechselnd ansieht.*"
     },
     "lunch2_seo_c1_3": {
         "name": "Dain",
@@ -173,12 +173,12 @@
         "text": "Das war alles."
     },
     "lunch2_seo_c1_5": {
-        "name": "{name}",
-        "text": "*Seoyeon nimmt ihre Wasserflasche, öffnet sie aber nicht. Nur das Etikett zerknittert in ihrer Hand.*"
+        "name": "Seoyeon",
+        "text": "Gut. Redet ihr zwei. *Sie öffnet die Wasserflasche nicht.*"
     },
     "lunch2_seo_end_c1": {
-        "name": "{name}",
-        "text": "*Dain stößt zweimal mit der Spitze ihres Turnschuhs gegen das Bein eines Klappstuhls. Seoyeon legt das gefaltete Feuchttuch auf den Deckel der Lunchbox.*"
+        "name": "Dain",
+        "text": "...Essen wir. Sonst wird's kalt. *Sie stößt zweimal gegen ein Stuhlbein.*"
     },
     "lunch2_seo_c2_1": {
         "name": "{name}",
@@ -219,7 +219,7 @@
     },
     "lunch2_dain_1b_yuna": {
         "name": "{name}",
-        "text": "*Mit Dain zum Schulkiosk. Gestern war es die stille Bibliothek, heute kommen zuerst Brotgeruch und Lärm.*"
+        "text": "*Mit Dain gehe ich in den vollen Schulkiosk.*"
     },
     "lunch2_dain_2b_yuna": {
         "name": "Dain",
@@ -279,11 +279,11 @@
     },
     "lunch2_dain_9": {
         "name": "{name}",
-        "text": "*Wir kaufen Brötchen und stellen uns an die Fenster im Flur. Aus der Gegenrichtung kommt Seoyeon mit ihrer Lunchtasche vorbei.*"
+        "text": "Essen wir hier. *Mit dem Brot stehe ich am Fenster. Seoyeon geht vorbei.*"
     },
     "lunch2_dain_10": {
         "name": "{name}",
-        "text": "*Seoyeon wirft mir neben Dain einen Blick zu und geht weiter. Der Bissen Soboro bleibt im Mund liegen.*"
+        "text": "*Seoyeon blickt herüber und geht weiter. Das Brot bleibt mir im Mund stecken.*"
     },
     "lunch2_dain_11": {
         "name": "Dain",
@@ -298,12 +298,12 @@
         "text": "Hm, bist du mit der Schülersprecherin auch befreundet?"
     },
     "lunch2_dain_13_b": {
-        "name": "Dain",
-        "text": "*Sie beißt ein großes Stück vom Soboro-Brot ab. Krümel fallen auf ihren Uniformärmel.*"
+        "name": "{name}",
+        "text": "*Dain beißt kräftig in das Brot. Krümel bleiben an ihrem Mundwinkel hängen.*"
     },
     "lunch2_dain_choice": {
         "name": "Dain",
-        "text": "*Sie starrt {name} unverwandt an.*",
+        "text": "{name}, ich habe dir eine Frage gestellt. Ich will das Thema nicht fallen lassen, bevor ich deine Antwort gehört habe. *Sie sieht mich unverwandt an.*",
         "choices": [
             "Wir haben gestern ein bisschen geredet",
             "Sie hat mir nur die Schule gezeigt",
@@ -312,11 +312,11 @@
     },
     "lunch2_dain_c1_1": {
         "name": "Dain",
-        "text": "*Noch immer das Soboro-Brötchen zwischen den Zähnen, faltet sie den Rand der Verpackung. Sie hört auf zu kauen.*"
+        "text": "...Ihr habt also gestern auch geredet. Ach so. Dann gibt es etwas, wovon ich nichts weiß. *Mit dem Soboro-Brötchen im Mund faltet sie den Verpackungsrand. Das Kauen hört auf.*"
     },
     "lunch2_dain_c2_1": {
         "name": "Dain",
-        "text": "*Sie beißt in ihr Soboro-Brötchen und sieht in der Glastür des Schulkiosks Seoyeons Spiegelbild verschwinden.*"
+        "text": "Nur herumgeführt... Gut. Wenn du das sagst, glaube ich dir das. *Sie beißt ins Soboro-Brötchen und sieht Seoyeons Rücken in der Glastür des Schulladens gespiegelt.*"
     },
     "lunch2_dain_c3_1": {
         "name": "Dain",
@@ -324,7 +324,7 @@
     },
     "lunch2_dain_c3_2": {
         "name": "Dain",
-        "text": "*Sie faltet die Soboro-Verpackung dreimal, bis sie nur noch zwei Fingerglieder breit ist.*"
+        "text": "Warum grinst du, wenn ich dir sage, du sollst essen? In den Mund stecke ich es dir nicht. Nimm schon. *Sie faltet die Verpackung dreimal auf die Breite von zwei Fingergliedern.*"
     },
     "lunch2_dain_end": {
         "name": "{name}",
@@ -332,7 +332,7 @@
     },
     "lunch2_dain_end_b": {
         "name": "{name}",
-        "text": "*Fünfte Stunde, Sport. Beim Laufen auf dem Platz stoße ich mit dem Jungen neben mir zusammen, als er abrupt stehen bleibt. Mein Ellbogen ist aufgeschürft – nicht schlimm, aber er blutet ein wenig.*"
+        "text": "*In Sport in der fünften Stunde stoße ich mit einem Mitschüler zusammen. Mein aufgeschürfter Ellbogen blutet leicht.*"
     },
     "lunch2_dain_end_c": {
         "name": "Sportlehrer",
@@ -375,8 +375,8 @@
         "text": "*Mit behandschuhten Fingern streicht die Schulkrankenschwester zuerst den Schmutz rund um meinen Ellbogen weg.*"
     },
     "lunch2_dain_end_i": {
-        "name": "Schulkrankenschwester",
-        "text": "*Sie holt Desinfektionsmittel und Mull hervor und hält den Mull unter meinen Ellbogen.*"
+        "name": "{name}",
+        "text": "Das kommt unter meinen Ellbogen? Da braucht man mehr, als ich dachte. *Sie holt Desinfektionsmittel und Mull heraus und legt den Mull unter meinen Ellbogen.*"
     },
     "lunch2_dain_end_j": {
         "name": "Schulkrankenschwester",
@@ -391,8 +391,8 @@
         "text": "*Sie klebt das Pflaster auf.* Nicht bewegen. So, fertig."
     },
     "lunch2_dain_end_m": {
-        "name": "Schulkrankenschwester",
-        "text": "*Sie deutet mir an, den Ellbogen einmal anzuwinkeln.*"
+        "name": "{name}",
+        "text": "Schon fertig? Mit dem Pflaster kann ich den Arm aber noch beugen, oder? *Sie bedeutet mir, den Ellbogen einmal zu beugen.*"
     },
     "lunch2_dain_end_n": {
         "name": "Schulkrankenschwester",
@@ -409,7 +409,7 @@
     "lunch2_dain_end_q": {},
     "lunch2_dain_end_r": {
         "name": "{name}",
-        "text": "*Während ich das Pflaster prüfe, ragt ein hellgrünes Notizbuch aus der Schreibtischschublade. Die erste Zeile der offenen Seite lautet: ‚An dich von damals —‘ Die Krankenschwester schließt die Schublade.*"
+        "text": "*Ein hellgrünes Heft in der Schublade. In der ersten Zeile steht „An dich von damals —“. Dann wird die Schublade geschlossen.*"
     },
     "lunch2_dain_end_s": {
         "name": "Schulkrankenschwester",
@@ -434,7 +434,7 @@
     },
     "lunch2_dain_end_y": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie hält beim Falten der Pflasterverpackung inne und sieht {name} an.*"
+        "text": "Es muss nicht auf jeden Fall gewechselt werden. Das hängt vom Zustand ab. *Sie hält beim Falten der Pflasterverpackung inne und sieht {name} an.*"
     },
     "lunch2_dain_end_z": {
         "name": "Schulkrankenschwester",
@@ -462,11 +462,11 @@
     },
     "lunch2_dain_end_nurse_short3": {
         "name": "{name}",
-        "text": "*Als ich auf den Flur trete, läutet es zum Ende der Stunde. Das neue Pflaster bleibt kurz am Ärmelsaum hängen und legt sich wieder an.*"
+        "text": "*Es klingelt zum Ende der Stunde. Das neue Pflaster bleibt kurz am Ärmelsaum hängen und legt sich wieder an.*"
     },
     "lunch2_yuna_1": {
         "name": "{name}",
-        "text": "*Der Bibliotheksanbau ist älter als das Hauptgebäude. Kaum ein Schüler ist hier. Oben an der Treppe steht Yuna am Ende des Flurs, an die Wand gelehnt und in ein Buch vertieft.*"
+        "text": "*Der alte Bibliotheksanbau. Yuna liest am Ende des Flurs.*"
     },
     "lunch2_yuna_intro_check": {},
     "lunch2_yuna_3": {},
@@ -540,7 +540,7 @@
     },
     "lunch2_yuna_9": {
         "name": "Yuna",
-        "text": "*Yuna legt das Lesezeichen ein, steht auf und deutet mit dem Kinn den Flur hinunter.*"
+        "text": "Komm weiter rein. Hier gehen Leute vorbei. *Sie legt das Lesezeichen ein.*"
     },
     "lunch2_yuna_10": {
         "name": "Yuna",
@@ -548,7 +548,7 @@
     },
     "lunch2_yuna_11": {
         "name": "Yuna",
-        "text": "*Yuna geht tiefer in den Anbau voraus. Am Ende eines Flurs, in dem unsere Schritte leise widerhallen, liegt ein kleiner Raum. Durch die alten Vorhänge fällt das Sonnenlicht bis in die untersten Regalfächer.*"
+        "text": "Die Schritte hallen, was? Gleich da. *Sie betritt einen kleinen Raum mit alten Vorhängen.*"
     },
     "lunch2_yuna_13": {
         "name": "{name}",
@@ -560,7 +560,7 @@
     },
     "lunch2_yuna_15": {
         "name": "Yuna",
-        "text": "*Sie setzt sich aufs Sofa, stellt ihre Tasche auf den Boden und lässt einen Platz frei.*"
+        "text": "Wenn du da stehst, kann ich auch nicht lesen. Setz dich. Hier musst du nicht nach einem Platz fragen. *Sie setzt sich aufs Sofa, stellt ihre Tasche auf den Boden und lässt einen Platz frei.*"
     },
     "lunch2_yuna_16": {
         "name": "Yuna",
@@ -610,7 +610,7 @@
     },
     "lunch2_yuna_c1_7": {
         "name": "{name}",
-        "text": "*Yuna hält das Buch hoch und verbirgt die untere Hälfte ihres Gesichts dahinter. Ich lese nur die abgewetzten Goldbuchstaben auf dem offenen Buchrücken.*"
+        "text": "Wenn du nicht weiterreden willst, musst du nicht. *Yuna verbirgt ihr Gesicht hinter dem Buch.*"
     },
     "lunch2_yuna_c1_9": {
         "name": "{name}",
@@ -618,7 +618,7 @@
     },
     "lunch2_yuna_c1_9_b": {
         "name": "Yuna",
-        "text": "*Yuna klappt das Buch zu.*"
+        "text": "Ich weiß, dass das sein kann. Aber erklär nicht an ihrer Stelle, was mit dieser Person war. *Sie klappt das Buch zu.*"
     },
     "lunch2_yuna_c1_10": {
         "name": "Yuna",
@@ -630,7 +630,7 @@
     },
     "lunch2_yuna_c1_12": {
         "name": "Yuna",
-        "text": "*Yuna lässt das Lesezeichen zwischen den Seiten und blättert nicht weiter. Nur die umgeknickte Ecke streicht sie mit dem Daumen glatt.*"
+        "text": "...Ja. Lesen wir erst mal. *Sie glättet die geknickte Seitenecke.*"
     },
     "lunch2_yuna_c1_14": {
         "name": "{name}",
@@ -646,7 +646,7 @@
     },
     "lunch2_yuna_c2_4": {
         "name": "{name}",
-        "text": "*Ich schlage das Buch auf. Unsere Seiten werden abwechselnd umgeblättert, während der Schatten des Fensterrahmens bis ans Ende des Sofas wandert.*"
+        "text": "*Abwechselnd blättern wir um.*"
     },
     "lunch2_yuna_c2_6": {
         "name": "Yuna",

@@ -4,8 +4,8 @@
         "text": "*Hora de comer. Seoyeon va hacia las escaleras con su almuerzo. Dain saluda desde la tienda y Yuna lleva su libro a la biblioteca.*"
     },
     "lunch_start_4": {
-        "name": "{name}",
-        "text": "*Al final del pasillo, Seoyeon cruza la mirada conmigo y señala la azotea con la mano.*"
+        "name": "Seoyeon",
+        "text": "¿Vienes a la azotea? *Señala las escaleras.*"
     },
     "lunch_start_4_b": {
         "name": "{name}",
@@ -16,12 +16,12 @@
         "text": "¡Oye! ¿Ya comiste? Vamos a la tienda. Apostemos un pan: quien pierda invita."
     },
     "lunch_start_6": {
-        "name": "{name}",
-        "text": "*Yuna toma su mochila, sale del salón y dobla hacia la biblioteca.*"
+        "name": "Yuna",
+        "text": "Yo voy a la biblioteca. *Coge la mochila.*"
     },
     "lunch_start_7": {
         "name": "{name}",
-        "text": "*El pasillo se divide en tres caminos: la azotea, la tienda escolar y la biblioteca. Dentro del bolsillo, la esquina del celular me roza la mano.*"
+        "text": "*Los caminos se separan hacia la azotea, la tienda y la biblioteca.*"
     },
     "lunch_choice": {
         "name": "{name}",
@@ -46,7 +46,7 @@
     },
     "lunch_seo_2": {
         "name": "{name}",
-        "text": "*No se ve ni un puñado de tierra en el suelo de la azotea. Junto a las macetas cubiertas de gotas, las sillas plegables están alineadas contra la pared.*"
+        "text": "¿También cuidas las plantas? *Las sillas plegables están bien alineadas.*"
     },
     "lunch_seo_3": {
         "name": "Seoyeon",
@@ -82,7 +82,7 @@
     },
     "lunch_seo_11": {
         "name": "{name}",
-        "text": "*Al abrir la lonchera, los acompañamientos aparecen ordenados en fila: tortilla enrollada, salchicha y bolitas de arroz. Hay dos pares de palillos.*"
+        "text": "Tortilla enrollada, salchichas, bolitas de arroz... Y dos pares de palillos."
     },
     "lunch_seo_13": {
         "name": "{name}",
@@ -102,7 +102,7 @@
     },
     "lunch_seo_17": {
         "name": "Seoyeon",
-        "text": "*En lugar de responder, se pone a comer. Más allá de la barandilla se ven de un vistazo la cancha y el techo del edificio anexo.*"
+        "text": "Yo empiezo. *Tras la barandilla se ven el patio y el anexo.*"
     },
     "lunch_seo_19": {
         "name": "Seoyeon",
@@ -144,7 +144,7 @@
     },
     "lunch_seo_c1_2_b": {
         "name": "Seoyeon",
-        "text": "*Levanta la botella de agua para taparse la boca. La etiqueta se arruga bajo su mano.*"
+        "text": "Come despacio. *Se tapa la boca con la botella y arruga la etiqueta.*"
     },
     "lunch_seo_c1_3": {
         "name": "Seoyeon",
@@ -152,11 +152,11 @@
     },
     "lunch_seo_c1_3_b": {
         "name": "{name}",
-        "text": "*Una etiqueta medio despegada sigue adherida a la botella. Seoyeon vuelve a levantar los palillos.*"
+        "text": "*La etiqueta, medio doblada, sigue pegada a la botella de agua. Seoyeon vuelve a tomar los palillos.*"
     },
     "lunch_seo_c2_1": {
         "name": "Seoyeon",
-        "text": "*Se mete la tortilla enrollada en la boca. Mientras mastica, tamborilea la tapa de la lonchera con la punta de los palillos.*"
+        "text": "Pues lo pruebo yo. *Mastica la tortilla enrollada y golpea la tapa con los palillos.*"
     },
     "lunch_seo_c2_2": {
         "name": "Seoyeon",
@@ -164,7 +164,7 @@
     },
     "lunch_seo_c2_3": {
         "name": "Seoyeon",
-        "text": "*Intenta alinear las esquinas de la tapa, pero falla dos veces. Solo al tercer intento logra cerrarla con un clic.*"
+        "text": "Espera, no encaja la tapa. *Cierra al tercer intento.*"
     },
     "lunch_seo_after": {
         "name": "{name}",
@@ -184,7 +184,7 @@
     },
     "lunch_seo_after_5": {
         "name": "Seoyeon",
-        "text": "*Ata una vez la correa de la lonchera y luego la ajusta más.*"
+        "text": "*Ata el cordón de la bolsa y lo aprieta.*"
     },
     "lunch_seo_after_7": {},
     "lunch_seo_freetalk": {
@@ -199,7 +199,7 @@
     },
     "lunch_dain_1_aff_default": {
         "name": "Dain",
-        "text": "*La tienda está a reventar por la hora del almuerzo. El olor a pan y a leche se mezcla en el ambiente.*"
+        "text": "Huele bien, ¿eh? Aunque esté lleno. *Entra en la tienda.*"
     },
     "lunch_dain_2": {
         "name": "Dain",
@@ -251,7 +251,7 @@
     },
     "lunch_dain_14": {
         "name": "Dain",
-        "text": "*Deja caer las monedas sobre el mostrador y recibe dos panes soboro.*"
+        "text": "*Deja las monedas y recibe dos bollos soboro.*"
     },
     "lunch_dain_15": {
         "name": "{name}",
@@ -283,7 +283,7 @@
     },
     "lunch_dain_22": {
         "name": "Dain",
-        "text": "*El cartón de leche de fresa se hunde bajo la presión de sus dedos.*"
+        "text": "*El cartón de leche de fresa se abolla en su mano.*"
     },
     "lunch_dain_23": {
         "name": "Dain",
@@ -303,8 +303,8 @@
         "text": "Bien. Desde hoy, entrenamiento especial. Gimnasio después de clase, empezamos calentando. ¿Va?"
     },
     "lunch_dain_c1_2": {
-        "name": "{name}",
-        "text": "*La risa de Dain sobresale por encima del ruido de la tienda. La silla se desliza hacia atrás; ella ya está de pie.*"
+        "name": "Dain",
+        "text": "¡Ya tengo ganas! *Se ríe y se levanta de golpe.*"
     },
     "lunch_dain_c2_1": {
         "name": "Dain",
@@ -338,7 +338,7 @@
     },
     "lunch_yuna_1": {
         "name": "{name}",
-        "text": "*Sigo la silueta de Yuna hasta la biblioteca. Ya sonó la campana del almuerzo, pero solo la silla del mostrador de préstamos está vacía, ligeramente torcida.*"
+        "text": "*Sigo a Yuna a la biblioteca silenciosa.*"
     },
     "lunch_yuna_1_aff_default": {
         "name": "Yuna",
@@ -346,15 +346,15 @@
     },
     "lunch_yuna_2": {
         "name": "Yuna",
-        "text": "*Abre el libro en un rincón de la sala de lectura. Cuando la pata de la silla de enfrente raspa el suelo, la mano que sujetaba la esquina de la página hace más fuerza.*"
+        "text": "No hagas ruido con la silla. *Sujeta la esquina de la página.*"
     },
     "lunch_yuna_4": {
         "name": "Yuna",
-        "text": "*Pasa una página. Yuna dobla la punta del recibo del préstamo y la mete bajo el separador.*"
+        "text": "...Un momento. *Dobla el extremo del recibo del préstamo y lo mete bajo el marcapáginas.*"
     },
     "lunch_yuna_5": {
         "name": "{name}",
-        "text": "*Pasan cinco segundos y luego diez. Yuna solo sigue doblando la punta del recibo. No pasa una sola página.*"
+        "text": "*Cinco segundos y otros diez. Yuna sigue doblando el recibo sin pasar página.*"
     },
     "lunch_yuna_5_b": {
         "name": "{name}",
@@ -365,16 +365,16 @@
         "text": "*Sin apartar la vista del libro.* Si no haces ruido."
     },
     "lunch_yuna_8": {
-        "name": "{name}",
-        "text": "*Yuna vuelve a abrir el libro. Empuja la mochila de la silla de enfrente bajo el escritorio. Me siento en el asiento vacío.*"
+        "name": "Yuna",
+        "text": "He quitado la mochila. Siéntate aquí. *Abre el libro.*"
     },
     "lunch_yuna_10": {
         "name": "{name}",
-        "text": "*El segundero del reloj de pared y el paso de las páginas se alternan. Las patas de la silla de enfrente permanecen inmóviles contra el suelo.*"
+        "text": "*Solo el reloj y las páginas al pasar.*"
     },
     "lunch_yuna_10_b": {
         "name": "{name}",
-        "text": "*Del libro de Yuna sobresale un separador viejo y ella posa la palma como si quisiera ocultar las letras descoloridas. Saco cualquier libro de un estante cercano.*"
+        "text": "*Yuna tapa las letras descoloridas del viejo marcapáginas. Cojo un libro del estante cercano.*"
     },
     "lunch_yuna_12": {
         "name": "Yuna",
@@ -389,8 +389,8 @@
         "text": "Deberías empezar por el tomo 1."
     },
     "lunch_yuna_15": {
-        "name": "{name}",
-        "text": "*Me desliza un libro que tenía a su lado.*"
+        "name": "Yuna",
+        "text": "Toma. Empieza por el principio. *Me acerca el libro que tiene al lado.*"
     },
     "lunch_yuna_16": {
         "name": "{name}",
@@ -402,11 +402,11 @@
     },
     "lunch_yuna_18": {
         "name": "Yuna",
-        "text": "*Yuna abre también su libro. Nos quedamos sentados frente a frente, leyendo en silencio.*"
+        "text": "Pues leamos. *Abrimos nuestros libros frente a frente.*"
     },
     "lunch_yuna_20": {
         "name": "{name}",
-        "text": "*Levanto la vista del libro y veo que Yuna me está mirando.*"
+        "text": "*Al alzar la vista, Yuna me está mirando.*"
     },
     "lunch_yuna_21": {
         "name": "{name}",

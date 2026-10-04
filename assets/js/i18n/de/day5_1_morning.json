@@ -9,7 +9,7 @@
     },
     "morning5_start": {
         "name": "{name}",
-        "text": "*Fünfter Tag. Obwohl Sonntag ist, findet in der Schule eine Veranstaltung statt. Der Ärmel meiner Uniform kratzt nicht mehr am Handgelenk.*"
+        "text": "*Fünfter Tag, Sonntag. Ich gehe zur Schulveranstaltung.*"
     },
     "morning5_start_branch": {},
     "morning5_temptation_discovery_branch": {},
@@ -115,11 +115,11 @@
     },
     "morning5_caught_seoyeon_honest": {
         "name": "Seoyeon",
-        "text": "*Selbst nachdem sie alles gehört hat, nimmt Seoyeon ihre Brille nicht ab. Hinter den Gläsern wendet sie den Blick zurück zum Bildschirm.* Ich kann dir nicht dafür danken, dass du ehrlich warst. Ich kann dich gerade nicht ansehen."
+        "text": "*Seoyeon schaut wieder auf den Bildschirm.* Für deine Ehrlichkeit kann ich dir nicht danken. Gerade fällt es mir schwer, dich anzusehen."
     },
     "morning5_caught_seoyeon_lie": {
         "name": "Seoyeon",
-        "text": "*Seoyeon blickt von der leuchtenden Nachricht zu dem Gesicht vor ihr. Die letzte Spur ihres Lächelns verschwindet.* Was du gerade gesagt hast, stört mich mehr als gestern Abend."
+        "text": "*Seoyeon blickt zwischen Nachricht und mir hin und her.* Was du jetzt sagst, stört mich mehr als das gestern."
     },
     "morning5_caught_dain_honest": {
         "name": "Dain",
@@ -135,7 +135,7 @@
     },
     "morning5_caught_yuna_lie": {
         "name": "Yuna",
-        "text": "*Statt zu antworten, schaltet Yuna den Bildschirm noch einmal ein. Die Nachricht bleibt zwischen uns liegen.* Ich habe dir die Gelegenheit gegeben, es mir zu sagen, und du hast es wieder verschwiegen."
+        "text": "*Yuna schaltet den Bildschirm mit der Nachricht wieder an.* Ich habe dir sogar eine Chance zum Klarstellen gegeben. Du verheimlichst es immer noch."
     },
     "morning5_counteroffer_group_talk": {
         "name": "Die beiden",
@@ -164,8 +164,8 @@
     },
     "morning5_gate": {},
     "morning5_seo_note_1": {
-        "name": "{name}",
-        "text": "*Auf meinem Tisch liegt ein Zettel. Seoyeons Handschrift. — 'Nimm dir heute Nachmittag kurz Zeit. Ich lasse das Dach offen. — Seoyeon'*"
+        "name": "Seoyeon",
+        "text": "*Ein Zettel auf dem Tisch in Seoyeons Schrift.* Nimm dir heute Nachmittag kurz Zeit. Ich lasse das Dach offen. — Seoyeon"
     },
     "morning5_seo_note_1_b": {
         "name": "{name}",
@@ -177,7 +177,7 @@
     },
     "morning5_yuna_story_gone_2": {
         "name": "{name}",
-        "text": "*Ich bleibe vor der leeren Pinnwand stehen. Die Einstichlöcher verraten mir nicht, was Yuna gedacht hat.*"
+        "text": "*An Reißzweckenspuren erkenne ich nicht, was Yuna fühlt.*"
     },
     "morning5_seo_note_1_c": {
         "name": "{name}",
@@ -226,11 +226,11 @@
     },
     "hidden_homeroom_d5_check": {
         "name": "{name}",
-        "text": "*Während der Vorbereitungszeit gehe ich über den Flur. Als ich an einem leeren Klassenzimmer vorbeikomme, steht die Tür offen.*"
+        "text": "*Bei den Vorbereitungen gehe ich an einem offenen, leeren Klassenraum vorbei.*"
     },
     "hidden_homeroom_d5_1": {
-        "name": "Klassenlehrerin",
-        "text": "*Meine Klassenlehrerin sitzt mit einem braunen Umschlag am Pult. Das Manuskript ist nirgends zu sehen.*"
+        "name": "{name}",
+        "text": "Sie sind noch hier. Der Umschlag... das Manuskript sehe ich nicht. *Sie sitzt am Lehrerpult und hält einen braunen Umschlag.*"
     },
     "hidden_homeroom_d5_1_b": {
         "name": "Klassenlehrerin",
@@ -258,7 +258,7 @@
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",
-        "text": "*Ich nehme eine nummerierte Kopie entgegen. Hinter der letzten Seite ist ein anonymes Rückmeldungsformular angeheftet.*"
+        "text": "Ich gebe es unter dieser Nummer ab, richtig? *Hinter dem Manuskript ist ein Feld für anonymes Feedback.*"
     },
     "hidden_homeroom_d5_5": {
         "name": "Klassenlehrerin",
@@ -276,7 +276,7 @@
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "Klassenlehrerin",
-        "text": "*Die Ecke des Umschlags knittert leicht in ihrer Hand. Mit dem Daumen streicht sie die Falte glatt.*"
+        "text": "Du musst nicht schon vor dem Lesen etwas Nettes suchen. Lange daran geschrieben zu haben heißt nicht, dass es gut geschrieben ist. *Sie glättet mit dem Daumen die in ihrer Hand zerknitterte Umschlagecke.*"
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Klassenlehrerin",
@@ -292,7 +292,7 @@
     },
     "hidden_homeroom_d5_praise_trap_5": {
         "name": "Klassenlehrerin",
-        "text": "*Die Lehrerin streckt die Hand aus, nimmt das Manuskript zurück und steckt es nach kurzem Zögern wieder in den Umschlag.*"
+        "text": "Ich nehme es erst mal. Ich weiß, dass du es gut meinst. Aber gelesen hast du es noch nicht. *Sie nimmt das Manuskript, zögert kurz und steckt es in den Umschlag.*"
     },
     "hidden_homeroom_d5_praise_trap_6": {
         "name": "Klassenlehrerin",
@@ -323,8 +323,8 @@
         "text": "*Ich verlasse das Klassenzimmer und schließe die Tür. Der Umschlag liegt noch auf dem Pult; auf seiner Vorderseite ist ein fingernagelgroßer Rest eines Rücksendeaufklebers zu sehen.*"
     },
     "hidden_homeroom_d5_correct_1": {
-        "name": "Klassenlehrerin",
-        "text": "*Das Ende des Papiers biegt sich leicht in ihrer Hand. Mit fest geschlossenen Lippen streicht sie die gefaltete Kante sorgfältig glatt.*"
+        "name": "{name}",
+        "text": "Wenn wir etwas Zeit haben, kann ich es jetzt lesen? Ich möchte erst sehen, wo ich hängen bleibe. *Sie hält die Lippen geschlossen und glättet das in ihrer Hand gebogene Papierende.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Klassenlehrerin",
@@ -340,7 +340,7 @@
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*Als ich den Umschlag öffne, steigt Papiergeruch auf. Das Ende der letzten Seite ist leer. Unter einem rot durchgestrichenen Satz überlagern sich Spuren von neuem Ansetzen und Abbrechen.*"
+        "text": "*Das Manuskript endet leer. Unter roten Streichungen liegen Spuren abgebrochener Neubeginne.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Klassenlehrerin",
@@ -352,7 +352,7 @@
     },
     "hidden_homeroom_d5_correct_8": {
         "name": "Klassenlehrerin",
-        "text": "*Sie deutet mit der Fingerspitze auf die letzte Zeile. Als die Veranstaltungsdurchsage draußen endet, ist nur noch das Umblättern der Seiten zu hören.*"
+        "text": "...Hier. *Sie zeigt auf die letzte Zeile. Die Durchsage endet.*"
     },
     "hidden_homeroom_d5_correct_9": {
         "name": "{name}",
@@ -368,7 +368,7 @@
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Klassenlehrerin",
-        "text": "*Sie legt das Klemmbrett auf den Tisch und steckt die Kappe auf den roten Stift.*"
+        "text": "So eine Lektüre habe ich gebraucht. Obwohl es mein eigener Text ist, übersehe ich manches, wenn ich ihn allein lese. *Sie legt das Klemmbrett auf den Tisch und setzt die Kappe auf den roten Stift.*"
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Klassenlehrerin",
@@ -376,7 +376,7 @@
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "*Sie nimmt die Kritikfassung zurück und reibt einmal mit dem Daumen über die Spur des alten Rücksendeaufklebers auf dem Umschlag.*"
+        "text": "Gut. Ich lese es und schreibe meine Anmerkungen auf. *Sie reibt die Spur des Rücksendeaufklebers am Umschlag.*"
     },
     "hidden_homeroom_d5_6": {
         "name": "Klassenlehrerin",
@@ -401,7 +401,7 @@
     },
     "hidden_homeroom_d5_6_g": {
         "name": "Klassenlehrerin",
-        "text": "*Sie prüft die Nummer auf der Kopie und nickt.*"
+        "text": "Ich suche nicht danach, von wem es ist. Was geschrieben wurde, genügt. *Sie überprüft das Nummernschild am Workshopmanuskript und nickt.*"
     },
     "hidden_homeroom_d5_6_h": {
         "name": "Klassenlehrerin",
@@ -498,8 +498,8 @@
         "text": "Ich bin hier, um meine Beratungsbestätigung abzuholen."
     },
     "hidden_nurse_d5_3_b": {
-        "name": "Schulkrankenschwester",
-        "text": "*Sie trägt Datum und Uhrzeit auf der Bestätigung ein.*"
+        "name": "{name}",
+        "text": "Ich störe nicht, wenn ich zur vereinbarten Zeit komme, oder? Wegen der Veranstaltung haben Sie sicher auch viel zu tun. *Sie trägt Datum und Uhrzeit in die Bescheinigung ein.*"
     },
     "hidden_nurse_d5_3_c": {
         "name": "Schulkrankenschwester",
@@ -544,8 +544,8 @@
         ]
     },
     "hidden_nurse_d5_choice_a": {
-        "name": "Schulkrankenschwester",
-        "text": "*Sie steckt die Karte in eine durchsichtige Hülle und reicht sie mir.*"
+        "name": "{name}",
+        "text": "Ich passe darauf auf. Wenn ich sie nicht brauche, kann sie einfach in der Tasche bleiben, oder? *Sie steckt die Karte in eine durchsichtige Hülle und reicht sie mir.*"
     },
     "hidden_nurse_d5_choice_a_b": {
         "name": "Schulkrankenschwester",
@@ -632,23 +632,23 @@
     },
     "morning5_sojeong_5": {
         "name": "{name}",
-        "text": "*Auch meiner jetzigen Klassenleitung schreibe ich: „Ich möchte über etwas sprechen, das ich an meiner alten Schule absichtlich ignoriert habe.“ Bis die Festivalansage beginnt, lasse ich beide Nachrichten auf dem Bildschirm stehen.*"
+        "text": "Ich möchte über etwas sprechen, das ich an meiner alten Schule absichtlich ignoriert habe. *Ich schicke es jetzt auch der Lehrerin. Bis zur Festdurchsage lösche ich keine der beiden gesendeten Sätze.*"
     },
     "morning5_caught_fallout_1": {
         "name": "{name}",
-        "text": "*Vor Beginn der Veranstaltung sitzen die drei weit voneinander entfernt. Auf dem Aufgabenblatt stehen nur die notwendigen Arbeiten.*"
+        "text": "*Vor der Veranstaltung sitzen die drei getrennt. Im Plan stehen nur Aufgaben.*"
     },
     "morning5_caught_fallout_2": {
         "name": "{name}",
-        "text": "*Yuna geht zuerst mit den Broschüren hinaus, und Dain nimmt die andere Tür. Seoyeon holt die Anwesenheitsliste, ohne zu mir zu sehen.*"
+        "text": "*Yuna geht mit dem Programmheft vor, Dain zu einer anderen Tür. Seoyeon nimmt die Anwesenheitsliste, ohne zu mir zu sehen.*"
     },
     "morning5_caught_fallout_3": {
         "name": "{name}",
-        "text": "*Bis zum Ende der Veranstaltung reden wir nur über die Arbeit. Beim letzten Klingeln nehmen sie drei verschiedene Treppen.*"
+        "text": "*Wir reden nur über die Arbeit. Danach nehmen sie verschiedene Treppen.*"
     },
     "morning5_harem_fallout_1": {
         "name": "{name}",
-        "text": "*Während der Veranstaltung schreiben die drei nur das Nötigste in den Gruppenchat. In den privaten Chats kommt nichts Neues an.*"
+        "text": "*Nur Arbeit im Gruppenchat, keine neuen privaten Nachrichten.*"
     },
     "morning5_harem_fallout_2": {
         "name": "Dain",

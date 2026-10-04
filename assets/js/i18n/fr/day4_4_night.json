@@ -83,12 +83,12 @@
     },
     "day4_adult_night_regret_target_branch": {},
     "day4_adult_night_regret_teacher": {
-        "name": "{name}",
-        "text": "*Une fois à la maison, j'allume mon téléphone et découvre le message de ma professeure principale : 'Je t'avais demandé de me prévenir en arrivant. Il y a un problème ?' Ma main s'immobilise au-dessus du champ de réponse.*"
+        "name": "Professeure principale",
+        "text": "*Chez moi, j'allume le téléphone et commence une réponse à la professeure, puis m'arrête.* Je t'avais demandé de me prévenir en arrivant. Il y a un problème ?"
     },
     "day4_adult_night_regret_nurse": {
-        "name": "{name}",
-        "text": "*Une fois à la maison, j'allume mon téléphone et découvre le message de l'infirmière : 'Tu n'avais pas l'air bien tout à l'heure. Tu es bien rentré ?' Ma main s'immobilise avant de pouvoir écrire que tout va bien.*"
+        "name": "Infirmière",
+        "text": "*Chez moi, j'allume le téléphone et m'arrête avant d'écrire que ça va.* Tu avais l'air contrarié tout à l'heure. Tu es bien rentré ?"
     },
     "day4_student_night_branch": {
         "text": "*De retour, je pose mon sac. Avant de charger mon téléphone, je regarde les notifications.*",
@@ -104,7 +104,7 @@
     },
     "wall_seo_pre_high_2": {
         "name": "{name}",
-        "text": "*J'entends d'abord la respiration de Seoyeon à travers le téléphone.*"
+        "text": "Oui. Si c'est dur au téléphone, prends ton temps. Je t'écoute. *J'entends Seoyeon respirer.*"
     },
     "wall_seo_pre_low_1": {
         "name": "{name}",
@@ -112,7 +112,7 @@
     },
     "wall_seo_pre_low_1b": {
         "name": "{name}",
-        "text": "*J’envoie : « Seoyeon, ça va en ce moment ? » Une minute plus tard, la mention Lu apparaît sans réponse, puis mon téléphone sonne.*"
+        "text": "Seoyeon, ça va en ce moment ? *J'envoie. Une minute après, le message est lu ; elle appelle au lieu de répondre.*"
     },
     "wall_seo_pre_low_2": {
         "name": "Seoyeon",
@@ -148,7 +148,7 @@
     },
     "wall_seo_7_b": {
         "name": "{name}",
-        "text": "*Une voiture passe sur la route qui longe le parc. Seoyeon entrelace ses doigts sur ses genoux.*"
+        "text": "Elle t'a dit quoi, ta mère ? Ça n'avait pas l'air d'être juste pour prendre de tes nouvelles. *Une voiture passe. Seoyeon entrelace les doigts sur ses genoux.*"
     },
     "wall_seo_8": {
         "name": "Seoyeon",
@@ -168,7 +168,7 @@
     },
     "wall_seo_9_d": {
         "name": "{name}",
-        "text": "*Une feuille morte roule sous le banc et s’arrête devant les baskets de Seoyeon.*"
+        "text": "On ne le voit pas de l'extérieur. Même chez toi, tu ne pouvais pas souffler ? *Une feuille sèche s'arrête devant sa basket.*"
     },
     "wall_seo_10": {
         "name": "Seoyeon",
@@ -179,8 +179,8 @@
         "text": "Ma mère m'a dit : « Si tu t'écroules, cette maison s'écroule aussi. »"
     },
     "wall_seo_11_b": {
-        "name": "Seoyeon",
-        "text": "*Elle se tait et déglutit.*"
+        "name": "{name}",
+        "text": "Elle t'a dit ça... quand ? Elle t'a fait porter quelque chose de lourd même pour un adulte ? *Seoyeon avale sa salive, bouche fermée.*"
     },
     "wall_seo_12": {
         "name": "Seoyeon",
@@ -200,7 +200,7 @@
     },
     "wall_seo_14_c": {
         "name": "Seoyeon",
-        "text": "*Sa phrase reste en suspens et ses doigts s’enfoncent les uns dans les autres sur ses genoux. Une goutte tombe de ses lunettes sur le dos de sa main.*"
+        "text": "Avec toi... Attends. J'essaie de le dire, mais ça bloque. *Ses doigts s'enfoncent les uns dans les autres. Une goutte tombe de ses lunettes sur sa main.*"
     },
     "wall_seo_14_d": {
         "name": "{name}",
@@ -218,7 +218,7 @@
     },
     "wall_seo_hug_1": {
         "name": "{name}",
-        "text": "*Je serre Seoyeon contre moi. Elle enfouit son visage dans mon épaule, ses larmes imprégnant le tissu.*"
+        "text": "Tu peux rester comme ça. Ne te force pas à parler. *Je la serre ; elle enfouit le visage dans mon épaule. Les larmes mouillent le tissu.*"
     },
     "wall_seo_hug_2_b": {
         "name": "Seoyeon",
@@ -242,7 +242,7 @@
     },
     "wall_seo_pinky_3": {
         "name": "Seoyeon",
-        "text": "*Seoyeon baisse les yeux vers ma main.*"
+        "text": "Même la nuit ? ...Tu veux dire que je peux te contacter la première. *Elle regarde ma main tendue.*"
     },
     "wall_seo_pinky_4": {
         "name": "Seoyeon",
@@ -254,7 +254,7 @@
     },
     "wall_seo_pinky_5_b": {
         "name": "{name}",
-        "text": "*La main de Seoyeon se pose dans ma paume. Elle est froide.*"
+        "text": "*La main de Seoyeon touche ma paume.* Tu as la main froide. ...D'accord. Je sais que tu te souviendras de ce que tu as dit, toi aussi."
     },
     "wall_seo_line_choice": {
         "name": "Seoyeon",
@@ -287,7 +287,7 @@
     },
     "wall_seo_after_line_2": {
         "name": "Seoyeon",
-        "text": "*Seoyeon baisse les yeux vers le dos de sa main. Son maquillage a coulé.*"
+        "text": "En essuyant avec la main, j'ai tout étalé. ...Ça me gênait un peu moins parce que c'est toi. *Elle regarde le maquillage étalé sur le dos de sa main.*"
     },
     "wall_seo_after_line_3": {
         "name": "{name}",
@@ -295,7 +295,7 @@
     },
     "wall_seo_after_line_4": {
         "name": "Seoyeon",
-        "text": "*Elle prend la lingette que je sors de ma poche.*"
+        "text": "Merci. Même avec cette tête... j'ai pas envie de me détourner maintenant. *Elle prend la lingette que je sors de ma poche.*"
     },
     "wall_seo_after_line_4_b": {
         "name": "Seoyeon",
@@ -342,8 +342,8 @@
         "text": "*Le dernier ballon roule sur le sol. Dain reprend son souffle, agrippe le devant de son maillot et le tire vers le bas. Elle se penche jusqu'à se retrouver tout près de {name}, son souffle encore chaud d'effort à quelques centimètres. Les messages de Seoyeon font vibrer sans arrêt le téléphone dans la poche.* Glisse ta main dans le maillot. La sueur entre mes seins, tu ne veux pas la sentir avec tes doigts ?"
     },
     "wall_seo_yuna_tempt_1": {
-        "name": "{name}",
-        "text": "*En route pour le parc, Yuna m'écrit : « Les lumières de l'annexe sont encore allumées. » Une photo suit, avec deux chaises vides.*"
+        "name": "Yuna",
+        "text": "*En allant au parc, Yuna m'envoie deux chaises vides en photo.* La lumière est encore allumée dans l'annexe"
     },
     "wall_seo_yuna_tempt_2": {
         "name": "Yuna",
@@ -379,7 +379,7 @@
     },
     "wall_dain_2_b": {
         "name": "Dain",
-        "text": "*Je ne devrais pas être au lycée, pas vrai ?*"
+        "text": "Tu peux pas venir au lycée, hein ?"
     },
     "wall_dain_3": {
         "name": "Dain",
@@ -411,7 +411,7 @@
     },
     "wall_dain_8_b": {
         "name": "{name}",
-        "text": "*Pendant que j'hésite, le ballon entre les mains, Dain fait un pas. Son genou droit lâche et elle s'accroupit sur place.*"
+        "text": "Dain, attends ! Je n'ai même pas lancé le ballon. *Je le tiens sous la taille. Elle avance, son genou droit lâche et elle s'accroupit.*"
     },
     "wall_dain_9": {
         "name": "{name}",
@@ -475,7 +475,7 @@
     },
     "wall_dain_18_c": {
         "name": "{name}",
-        "text": "*La lumière de secours du gymnase vacille une fois. L’ongle de Dain suit la rainure à la surface du ballon.*"
+        "text": "Mais tu as encore mal. Tu en as parlé à quelqu'un ? Tu gardais ça pour toi ? *La lumière de secours clignote une fois. Son ongle suit une rainure du ballon.*"
     },
     "wall_dain_18_d": {
         "name": "Dain",
@@ -536,7 +536,7 @@
     },
     "wall_dain_newdream_5": {
         "name": "Dain",
-        "text": "*Elle déplie un à un les doigts posés sur ses genoux.*"
+        "text": "Quand j'ai envie de parler... Je crois que je peux, là. Je sais pas si je vais réussir à bien expliquer. *Elle déplie un à un les doigts sur son genou.*"
     },
     "wall_dain_newdream_6": {
         "name": "Dain",
@@ -556,7 +556,7 @@
     },
     "wall_dain_cry_2": {
         "name": "Dain",
-        "text": "*Elle se replie sur le ballon. Une goutte, puis une autre, tombe sur le caoutchouc et ses sanglots lui reviennent brièvement des murs du gymnase vide.*"
+        "text": "Ah, là... même quand j'essaie, j'arrive pas à sourire. *Elle se replie en serrant le ballon. Les larmes tombent sur le caoutchouc et ses sanglots résonnent dans le gymnase vide.*"
     },
     "wall_dain_cry_3": {
         "name": "Dain",
@@ -572,11 +572,11 @@
     },
     "wall_dain_cry_6": {
         "name": "Dain",
-        "text": "*Elle efface le titre de l'alarme, « Souris encore aujourd'hui ». À la place, elle écrit « Parler de mon genou à maman » et enregistre.*"
+        "text": "Je vais effacer ça. Il faut que je parle de mon genou à maman, au lieu de juste sourire. *Elle remplace le titre de l'alarme « Souris aujourd'hui encore » par « Parler à maman de mon genou » et enregistre.*"
     },
     "wall_dain_lastspike_1": {
         "name": "{name}",
-        "text": "*{name} prend le ballon des bras de Dain. Elle reste assise pendant qu'il se dirige seul vers le chariot à ballons.*"
+        "text": "Reste assise. Je vais ranger le ballon. *Dain reste assise ; {name} prend le ballon et se dirige seul vers le casier.*"
     },
     "wall_dain_lastspike_2": {
         "name": "Dain",
@@ -600,7 +600,7 @@
     },
     "wall_dain_lastspike_4_b": {
         "name": "Dain",
-        "text": "*Elle ouvre la page de prise de rendez-vous en orthopédie sur son téléphone. La première date disponible est lundi.*"
+        "text": "*Elle ouvre la page de prise de rendez-vous en orthopédie sur son téléphone.* Au plus tôt, lundi."
     },
     "wall_dain_lastspike_5": {
         "name": "Dain",
@@ -612,7 +612,7 @@
     },
     "wall_dain_farewell_1": {
         "name": "Dain",
-        "text": "*Pendant que {name} range les ballons, elle prend appui sur le banc et se relève lentement.*"
+        "text": "Doucement... Oui, je peux me lever seule. *Pendant que {name} range le ballon, elle s'appuie sur le banc et se lève lentement.*"
     },
     "wall_dain_farewell_2": {
         "name": "{name}",
@@ -628,7 +628,7 @@
     },
     "wall_dain_mention_3": {
         "name": "Dain",
-        "text": "*Son pas s’interrompt. Lorsqu’elle repart, elle raccourcit sa foulée pour marcher à côté de {name}.*"
+        "text": "Voilà que je te raconte ça aussi. ...On marche. Doucement, ça te va ? *Son pas s'interrompt, puis elle raccourcit sa foulée à côté de {name}.*"
     },
     "wall_dain_skin_check": {},
     "wall_dain_skin70_1": {
@@ -700,8 +700,8 @@
         "text": "*La porte du toit se referme. Sans un mot, Seoyeon déboutonne sa blouse, saisit le poignet de {name} et attire la main vers elle. La paume rencontre la peau nue de sa poitrine entre les pans ouverts, puis la main de Seoyeon vient la recouvrir. Le message de Dain — « La porte arrière du gymnase est ouverte. » — éclaire l'écran.* Tu sens mon cœur battre ?"
     },
     "wall_yuna_1": {
-        "name": "{name}",
-        "text": "*22 heures. Un message de Yuna. « Porte arrière du lycée. Viens maintenant. »*"
+        "name": "Yuna",
+        "text": "*22 h. Un message de Yuna.* Portail arrière du lycée. Viens maintenant."
     },
     "wall_yuna_pre_high_1": {
         "name": "Yuna",
@@ -720,7 +720,7 @@
     },
     "wall_yuna_4": {
         "name": "Yuna",
-        "text": "*Nous entrons dans l’annexe et gagnons la réserve au fond de la salle de lecture. Yuna sort une vieille enveloppe d’une étagère poussiéreuse.*"
+        "text": "C'est dans la réserve du fond. *Elle sort une vieille enveloppe de l'étagère poussiéreuse.*"
     },
     "wall_yuna_6": {
         "name": "Yuna",
@@ -788,7 +788,7 @@
     },
     "wall_yuna_14_h": {
         "name": "{name}",
-        "text": "*De la poussière tombe le long du pli de l’enveloppe. Yuna n’insiste pas pour avoir une réponse.*"
+        "text": "Oui, je t'écoute. *La poussière tombe le long du pli de l'enveloppe. Yuna ne presse pas ma réponse.*"
     },
     "wall_yuna_15": {
         "name": "Yuna",
@@ -800,11 +800,11 @@
     },
     "wall_yuna_16_b": {
         "name": "Yuna",
-        "text": "*Le néon vacille une fois. Yuna se mord l’intérieur de la lèvre, puis le relâche.*"
+        "text": "Ça me faisait peur d'attendre que tu reviennes, aussi. Mais... j'en avais envie. *Le néon vacille une fois. Elle mord l'intérieur de sa lèvre puis relâche.*"
     },
     "wall_yuna_choice": {
         "name": "Yuna",
-        "text": "*Elle resserre sa prise sur le livre. Pendant qu'elle attend ma réponse, le coin de la lettre se froisse légèrement.*",
+        "text": "...Tu en penses quoi ? *Le coin de la lettre se froisse dans sa main.*",
         "choices": [
             "Je ne peux pas le remplacer. Mais je suis là, maintenant.",
             "Là, je t'écoute.",
@@ -820,8 +820,8 @@
         "text": "Mais maintenant..."
     },
     "wall_yuna_moved_3": {
-        "name": "Yuna",
-        "text": "*Elle lâche la lettre et croise le regard de {name}.*"
+        "name": "{name}",
+        "text": "Alors maintenant, qui tu regardes, si c'est pas ton aînée ? ...J'ai envie de l'entendre de ta bouche. *Yuna retire la main de la lettre et croise le regard de {name}.*"
     },
     "wall_yuna_moved_4": {
         "name": "Yuna",
@@ -829,11 +829,11 @@
     },
     "wall_yuna_moved_5": {
         "name": "Yuna",
-        "text": "*Elle remet la lettre dans l’enveloppe. Du pouce, elle redresse soigneusement le coin plié.*"
+        "text": "Je range la lettre. Pas besoin de la lire maintenant. *Elle lisse le coin de l'enveloppe.*"
     },
     "wall_yuna_moved_5_b": {
         "name": "Yuna",
-        "text": "*Sa main relâche sa manche. Elle réduit d’un pas la distance entre l’étagère et {name}.*"
+        "text": "*Elle lâche la manche et franchit le pas entre l'étagère et {name}.*"
     },
     "wall_yuna_skin_check": {},
     "wall_yuna_skin70_1": {
@@ -862,7 +862,7 @@
     },
     "wall_yuna_sub_2": {
         "name": "Yuna",
-        "text": "*Un seul coin de sa bouche se soulève. La lettre rentre dans l’enveloppe.*"
+        "text": "...Oui. Je vais ranger la lettre. *Un seul coin de sa bouche se relève ; elle remet la lettre dans l'enveloppe.*"
     },
     "wall_yuna_reject_1": {
         "name": "Yuna",
@@ -878,7 +878,7 @@
     },
     "wall_yuna_reject_3": {
         "name": "Yuna",
-        "text": "*Yuna se détourne mais s’arrête à la porte. Elle ramasse un marque-page tombé et hésite sans toucher la poignée.*"
+        "text": "...Je vais rentrer. *Elle ramasse son marque-page et s'arrête à la porte.*"
     },
     "wall_yuna_rival_rank": {
         "name": "Système",
@@ -926,7 +926,7 @@
     },
     "day4_night_regret": {
         "name": "{name}",
-        "text": "*Même après mon retour à la maison, une phrase inachevée reste dans la fenêtre de discussion. Le curseur clignote à la fin.*"
+        "text": "*Même chez moi, la phrase reste inachevée.*"
     },
     "day4_night_regret_msg_branch": {
         "name": "Système",
@@ -950,7 +950,7 @@
     },
     "day4_night_regret_reply": {
         "name": "{name}",
-        "text": "*Je tape une réponse et l'efface. Une seule lettre reste dans le champ, puis disparaît.*"
+        "text": "*J'efface la réponse. Le champ est vide.*"
     },
     "day4_night_reflect": {
         "name": "{name}",
@@ -1012,7 +1012,7 @@
     },
     "day4_night_sleep": {
         "name": "{name}",
-        "text": "*Je règle mon réveil pour dimanche matin et j’éteins la lumière. Une phrase que je n’ai pas réussi à envoyer reste dans le champ de saisie.*"
+        "text": "*Je règle le réveil pour dimanche matin et j'éteins la lumière. La phrase n'est toujours pas envoyée.*"
     },
     "day4_final": {
         "name": "{name}",
@@ -1020,7 +1020,7 @@
     },
     "forced_violation_day4_after_seoyeon": {
         "name": "Seoyeon",
-        "text": "*Même après la fin de la conversation, Seoyeon reste silencieuse un long moment. Lorsqu'elle reprend enfin la parole, sa voix est devenue glaciale.* Ne crois pas pouvoir faire comme si ce que tu viens de faire n'avait jamais eu lieu. Pendant quelque temps, ne m'approche plus et ne me contacte pas.",
+        "text": "*Après un silence, Seoyeon parle froidement.* Ne crois pas pouvoir faire comme si ce que tu viens de faire n'avait jamais eu lieu. Pendant quelque temps, ne m'approche plus et ne me contacte pas.",
         "choices": [
             "S'excuser sans chercher d'excuse, puis mettre fin à la conversation.",
             "Essayer d'expliquer qu'il s'agissait d'un malentendu."
@@ -1028,7 +1028,7 @@
     },
     "forced_violation_day4_seoyeon_apologize": {
         "name": "Seoyeon",
-        "text": "*L'expression de Seoyeon ne s'adoucit pas en entendant les excuses.* J'ai entendu. Ça n'efface pas ce qui s'est passé. Comme je l'ai dit, ne me contacte pas pendant quelque temps."
+        "text": "*Seoyeon garde le visage fermé.* J'ai entendu. Ça n'efface pas ce qui s'est passé. Comme je l'ai dit, ne me contacte pas pendant quelque temps."
     },
     "forced_violation_day4_seoyeon_excuse": {
         "name": "Seoyeon",
@@ -1036,7 +1036,7 @@
     },
     "forced_violation_day4_after_yuna": {
         "name": "Yuna",
-        "text": "*Quand la conversation s'interrompt, Yuna reprend brièvement son souffle. Il ne reste que de la méfiance sur son visage crispé.* Tu savais que je ne voulais pas et tu n'en as pas tenu compte. Là, je ne veux même pas voir ton visage. Ne me contacte plus.",
+        "text": "*Yuna reprend son souffle, méfiante.* Tu savais que je ne voulais pas et tu n'en as pas tenu compte. Là, je ne veux même pas voir ton visage. Ne me contacte plus.",
         "choices": [
             "S'excuser sans chercher d'excuse, puis mettre fin à la conversation.",
             "Essayer d'expliquer qu'il s'agissait d'un malentendu."
@@ -1044,7 +1044,7 @@
     },
     "forced_violation_day4_yuna_apologize": {
         "name": "Yuna",
-        "text": "*Yuna ne répond qu'après un long silence.* Des excuses ne feront pas disparaître ce qui s'est passé. Arrête."
+        "text": "*Yuna répond après un long silence.* Des excuses ne feront pas disparaître ce qui s'est passé. Arrête."
     },
     "forced_violation_day4_yuna_excuse": {
         "name": "Yuna",
@@ -1068,7 +1068,7 @@
     },
     "forced_violation_day4_after_teacher": {
         "name": "Professeure principale",
-        "text": "*Une fois la conversation terminée, la professeure pose une limite d'une voix encore plus ferme.* Ce que tu viens de faire a clairement dépassé les bornes. Ne t'approche plus. Cette affaire sera traitée selon les procédures prévues.",
+        "text": "*La professeure parle fermement.* Ce que tu viens de faire a clairement dépassé les bornes. Ne t'approche plus. Cette affaire sera traitée selon les procédures prévues.",
         "choices": [
             "S'excuser sans chercher d'excuse, puis mettre fin à la conversation.",
             "Essayer d'expliquer qu'il s'agissait d'un malentendu."
@@ -1076,7 +1076,7 @@
     },
     "forced_violation_day4_teacher_apologize": {
         "name": "Professeure principale",
-        "text": "*La professeure reprend son souffle avant de poursuivre.* J'ai entendu tes excuses. La procédure suivra quand même son cours. Ne dis rien de plus."
+        "text": "*La professeure respire et parle.* J'ai entendu tes excuses. La procédure suivra quand même son cours. Ne dis rien de plus."
     },
     "forced_violation_day4_teacher_excuse": {
         "name": "Professeure principale",
@@ -1084,7 +1084,7 @@
     },
     "forced_violation_day4_after_nurse": {
         "name": "Infirmière",
-        "text": "*Quand la conversation s'interrompt, toute la malice habituelle disparaît de la voix de l'infirmière scolaire.* À partir de maintenant, garde tes distances. Je vais consigner ce qui s'est passé et prévenir les personnes concernées.",
+        "text": "*L'infirmière perd son ton joueur.* À partir de maintenant, garde tes distances. Je vais consigner ce qui s'est passé et prévenir les personnes concernées.",
         "choices": [
             "S'excuser sans chercher d'excuse, puis mettre fin à la conversation.",
             "Essayer d'expliquer qu'il s'agissait d'un malentendu."
@@ -1092,7 +1092,7 @@
     },
     "forced_violation_day4_nurse_apologize": {
         "name": "Infirmière",
-        "text": "*L'infirmière reste silencieuse un instant, puis répond fermement.* J'entends tes excuses. Mais je vais quand même consigner les faits et prévenir qui de droit. Cette conversation est terminée."
+        "text": "*Après un silence, l'infirmière répond fermement.* J'entends tes excuses. Mais je vais quand même consigner les faits et prévenir qui de droit. Cette conversation est terminée."
     },
     "forced_violation_day4_nurse_excuse": {
         "name": "Infirmière",
@@ -1136,11 +1136,11 @@
     },
     "day4_teacher_checkin": {
         "name": "{name}",
-        "text": "*L’application du lycée affiche la demande de ma professeure aux élèves restés préparer la fête. Je réponds : « Je rentre directement. Je confirmerai mon arrivée. »*"
+        "text": "*Sur l'appli scolaire, je réponds à la demande de la professeure aux élèves restés préparer l'événement.* Je rentre directement et je confirmerai en arrivant."
     },
     "day4_nurse_checkin": {
         "name": "{name}",
-        "text": "*L’application du lycée affiche la demande de l’infirmière aux élèves restés préparer la fête. Je réponds : « Je rentre directement. Je confirmerai mon arrivée. »*"
+        "text": "*Sur l'appli scolaire, je réponds à la demande de l'infirmière aux élèves restés préparer l'événement.* Je rentre directement et je confirmerai en arrivant."
     },
     "day4_adult_return_home": {
         "name": "{name}",
@@ -1178,7 +1178,7 @@
     },
     "day4_waited_seoyeon_promise": {
         "name": "{name}",
-        "text": "*J'écris à Seoyeon : « D'accord, je serai au parc à vingt-deux heures. » Je prends ma veste et ressors.*"
+        "text": "Oui, je serai au parc à dix heures. *Je réponds à Seoyeon, prends une veste et ressors.*"
     },
     "day4_waited_dain_invite": {
         "name": "Dain",
@@ -1186,7 +1186,7 @@
     },
     "day4_waited_dain_promise": {
         "name": "{name}",
-        "text": "*« J'y serai pour vingt-deux heures. » Dain confirme avec un emoji. J'enfile mes baskets et ouvre la porte d'entrée.*"
+        "text": "Je serai là d'ici dix heures. *Dain confirme par un émoji. Je mets mes baskets et ouvre la porte.*"
     },
     "day4_waited_yuna_invite": {
         "name": "Yuna",
@@ -1194,21 +1194,21 @@
     },
     "day4_waited_yuna_promise": {
         "name": "{name}",
-        "text": "*J'écris à Yuna : « D'accord, à vingt-deux heures à l'entrée arrière. » Je range mon téléphone et repars vers l'école.*"
+        "text": "Oui, à dix heures au portail arrière du lycée. *Je l’envoie à Yuna, range le téléphone et retourne vers le lycée.*"
     },
     "day4_student_visit_branch": {},
     "day4_student_visit_teacher_branch": {},
     "day4_student_teacher_checkin": {
         "name": "{name}",
-        "text": "*L’application du lycée affiche la demande de ma professeure aux élèves restés préparer la fête. Je réponds : « Je rentre directement. Je confirmerai mon arrivée. »*"
+        "text": "*Sur l'appli scolaire, je réponds à la demande de la professeure aux élèves restés préparer l'événement.* Je rentre directement et je confirmerai en arrivant."
     },
     "day4_student_nurse_checkin": {
         "name": "{name}",
-        "text": "*L’application du lycée affiche la demande de l’infirmière aux élèves restés préparer la fête. Je réponds : « Je rentre directement. Je confirmerai mon arrivée. »*"
+        "text": "*Sur l'appli scolaire, je réponds à la demande de l'infirmière aux élèves restés préparer l'événement.* Je rentre directement et je confirmerai en arrivant."
     },
     "day4_student_both_checkin": {
         "name": "{name}",
-        "text": "*L’application du lycée affiche les demandes de ma professeure et de l’infirmière pour confirmer mon retour à la maison. Je réponds à chacune : « Je rentre directement. Je confirmerai mon arrivée. »*"
+        "text": "*Sur l’appli scolaire, je réponds aux deux demandes de la professeure et de l’infirmière pour confirmer mon arrivée à la maison.* Je rentre directement et je confirmerai mon arrivée."
     },
     "day4_student_checkin_return_home": {
         "name": "{name}",
@@ -1236,7 +1236,7 @@
     },
     "forced_violation_day4_haeun_apologize": {
         "name": "Haeun",
-        "text": "*Sans répondre, Haeun recule vers la salle des professeurs. Elle vérifie jusqu'au bout que le protagoniste ne la suit pas.*"
+        "text": "*Sans répondre, Haeun recule vers la salle des profs en vérifiant que je ne la suis pas.*"
     },
     "forced_violation_day4_haeun_excuse": {
         "name": "Haeun",

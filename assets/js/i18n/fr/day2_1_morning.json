@@ -22,8 +22,8 @@
         "text": "Appel. Assieds-toi."
     },
     "morning2_greet_seo_2": {
-        "name": "{name}",
-        "text": "*Seoyeon vient vers moi la première, son porte-bloc serré contre son bras comme toujours. Au fond de la classe, la chaise de Dain recule dans un grincement et Yuna tourne une page.*"
+        "name": "Seoyeon",
+        "text": "Déjà là ? Tu trouves la salle sans problème maintenant ? *Dain recule sa chaise ; Yuna tourne une page.*"
     },
     "morning2_greet_seo_others_2": {
         "name": "{name}",
@@ -32,11 +32,11 @@
     "morning2_greet_dain_1": {},
     "morning2_greet_dain_2": {
         "name": "Dain",
-        "text": "*Elle me tape l'épaule par derrière.*"
+        "text": "Tu dors encore ? Tourne-toi. J'ai pas envie de dire bonjour à ton dos. *Elle me tape sur l'épaule par-derrière.*"
     },
     "morning2_greet_dain_others": {
-        "name": "Seoyeon",
-        "text": "*Elle passe en feuilletant son porte-bloc.*"
+        "name": "{name}",
+        "text": "Dain, tu vas m'épuiser avant l'appel. Rien qu'à t'entendre, j'ai déjà l'impression d'être sur le terrain. *Seoyeon passe en tournant une feuille de son porte-bloc.*"
     },
     "morning2_greet_dain_others_seo": {
         "name": "Seoyeon",
@@ -60,8 +60,8 @@
         "text": "Une lettre dès le matin ?"
     },
     "morning2_greet_yuna_others_seo": {
-        "name": "{name}",
-        "text": "*Seoyeon esquisse un sourire, mais désigne le coin du mot avec le bord de son porte-bloc.*"
+        "name": "Seoyeon",
+        "text": "Ce billet, j'ai pas le droit de le voir ? *Elle en montre le coin.*"
     },
     "morning2_greet_yuna_others_dain": {
         "name": "Dain",
@@ -69,7 +69,7 @@
     },
     "morning2_greet_yuna_others_2": {
         "name": "{name}",
-        "text": "*Je plie le mot et le tiens dans ma main. Le pli appuie dans ma paume.*"
+        "text": "*Je plie le billet et le serre dans ma main ; le pli s'aplatit dans ma paume.*"
     },
     "morning2_dain_1": {
         "name": "{name}",
@@ -92,8 +92,8 @@
         "text": "C'est ça la norme ! C'est toi qui es à plat !"
     },
     "morning2_dain_6": {
-        "name": "Dain",
-        "text": "*Sa voix remplit la classe avant même l'appel du matin.*"
+        "name": "{name}",
+        "text": "D'accord, j'en manque. Alors partage un peu. Mais essaie pas de me la donner en criant. *La voix de Dain résonne dans la classe avant l'appel.*"
     },
     "morning2_yuna_seen": {
         "name": "Yuna",
@@ -125,11 +125,11 @@
     },
     "morning2_minsu_1": {
         "name": "Seoyeon",
-        "text": "*Juste avant de repartir dans le couloir, le bord de son porte-bloc heurte une fois l'encadrement de la porte, puis s'en détache.*"
+        "text": "Je t'ai vu, alors j'y vais. ...Sois pas en retard pour l'appel. Ce serait gênant que je le sois parce que je suis venue te voir. *Avant de sortir, son porte-bloc touche une fois l'encadrement de la porte.*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
-        "text": "*Je fixe le couloir où Seoyeon a disparu — quand Minsu se retourne derrière moi.*"
+        "text": "*Je regarde le couloir où Seoyeon est partie. Minsu se retourne.*"
     },
     "morning2_minsu_3": {
         "name": "Minsu",
@@ -145,7 +145,7 @@
     },
     "morning2_dain_claim_3": {
         "name": "{name}",
-        "text": "*Seoyeon serre sa planchette et s’éloigne dans le couloir.*"
+        "text": "*Seoyeon serre le porte-bloc et s'éloigne dans le couloir.*"
     },
     "morning2_dain_claim_4": {
         "name": "Dain",
@@ -165,11 +165,11 @@
     },
     "morning2_break_transition_b": {
         "name": "{name}",
-        "text": "*La prof se tient devant la porte de la classe. Feuille de présence en main, elle jette un coup d'œil vers la porte — nos regards se croisent.*"
+        "text": "*À la porte, je croise le regard de la professeure, registre en main.*"
     },
     "morning2_break_1": {
         "name": "{name}",
-        "text": "*Le bord du porte-bloc de Seoyeon tapote le bureau. Avant même que je puisse répondre, elle ressort dans le couloir.*"
+        "text": "*Le porte-bloc touche le bureau. Seoyeon sort avant ma réponse.*"
     },
     "hidden_homeroom_d2_1": {
         "name": "Professeure principale",
@@ -189,7 +189,7 @@
     },
     "hidden_homeroom_d2_2_b": {
         "name": "{name}",
-        "text": "*Je suis la prof principale jusqu'à la salle des profs. Le tiroir d'un bureau, dans un coin, est entrouvert. Sous une pile de documents dépasse le bord d'une page de manuscrit.*"
+        "text": "*Des feuilles de manuscrit dépassent d'un tiroir.* Je m'assieds ici ?"
     },
     "hidden_homeroom_d2_3": {
         "name": "Professeure principale",
@@ -200,8 +200,8 @@
         "text": "Je lis parfois des romans."
     },
     "hidden_homeroom_d2_3_c": {
-        "name": "Professeure principale",
-        "text": "*Elle pose son stylo en travers des pages manuscrites dans le tiroir ouvert.*"
+        "name": "{name}",
+        "text": "Je ne pensais pas qu'on parlerait aussi de romans. Je croyais que vous alliez seulement vérifier mes notes de coréen. *Elle pose un stylo en travers des feuilles du manuscrit dans le tiroir ouvert.*"
     },
     "hidden_homeroom_d2_3_d": {
         "name": "Professeure principale",
@@ -217,7 +217,7 @@
     },
     "hidden_homeroom_d2_3_g": {
         "name": "Professeure principale",
-        "text": "*Elle pousse le tiroir du genou, mais le coin du manuscrit l'empêche de se refermer complètement.*"
+        "text": "Attends, le tiroir coince. *Elle cesse de le pousser du genou : le coin d'une feuille du manuscrit bloque la fermeture.*"
     },
     "hidden_homeroom_d2_choice1": {
         "name": "{name}",
@@ -241,8 +241,8 @@
         "text": "...D'accord. Je demandais, c'est tout."
     },
     "hidden_homeroom_d2_6": {
-        "name": "{name}",
-        "text": "*La professeure pousse sa tasse sur le côté, rentre du bout des doigts les pages qui dépassent, puis referme le tiroir.*"
+        "name": "Professeure principale",
+        "text": "Mon bureau est un peu en désordre, hein ? *Elle range le manuscrit et ferme le tiroir.*"
     },
     "hidden_homeroom_d2_7": {
         "name": "Professeure principale",
@@ -308,12 +308,12 @@
     },
     "hidden_homeroom_d2_11_b": {
         "name": "Professeure principale",
-        "text": "*La voix de la prof principale se perd, basse, dans la tasse de café.*"
+        "text": "Tu n'as pas à te sentir coupable de venir. Et tu peux garder pour toi ce que tu ne veux pas dire. *Elle parle doucement, les yeux sur son café.*"
     },
     "hidden_homeroom_d2_12": {},
     "morning2_seo_dust_1": {
-        "name": "{name}",
-        "text": "*Pause après le premier cours. Je croise Seoyeon dans le couloir. Elle s'arrête et regarde mon épaule. La main qui tient son porte-bloc se lève la première.*"
+        "name": "Seoyeon",
+        "text": "Tu as fait quoi dès le premier cours ? *Pendant la pause, elle regarde mon épaule.*"
     },
     "morning2_seo_dust_2": {
         "name": "Seoyeon",
@@ -329,7 +329,7 @@
     },
     "morning2_seo_dust_5": {
         "name": "{name}",
-        "text": "*À l'endroit où la main de Seoyeon s'est retirée, la bandoulière de mon sac est de travers. Je ne rajuste qu'elle.*"
+        "text": "Tu m'as surpris en tendant la main comme ça. *Je rajuste la sangle de mon sac.*"
     },
     "morning2_seo_dust_6": {
         "name": "Seoyeon",
@@ -357,7 +357,7 @@
     },
     "morning2_dain_react_6": {
         "name": "{name}",
-        "text": "*Au lieu de répondre, j'ajuste la bandoulière de mon sac. Dain le voit mais ne pose pas d'autres questions.*"
+        "text": "Elle m'a juste enlevé de la poussière. Pourquoi tu me regardes comme ça ? *Je lâche la bandoulière.*"
     },
     "hidden_homeroom_d2_freetalk": {
         "name": "Professeure principale",
@@ -375,20 +375,20 @@
     },
     "morning2_greet_none_1": {
         "name": "{name}",
-        "text": "*J'ouvre la porte de la classe. Personne ne s'approche. Juste le bruit des sacs.*"
+        "text": "*J'ouvre la porte de la classe. Personne ne s'approche. Seul le bruit d'un sac qu'on pose.*"
     },
     "morning2_greet_none_2": {
         "name": "{name}",
-        "text": "*Seoyeon tourne une page du registre. Dain se tourne vers ses amies. Le livre de Yuna est déjà ouvert.*"
+        "text": "*Seoyeon est sur son registre, Dain avec ses amis, Yuna sur son livre.*"
     },
     "morning2_greet_none_tone": {},
     "morning2_greet_none_neg_1": {
         "name": "{name}",
-        "text": "*J'ouvre la porte de la classe. Les regards se croisent une seconde, puis se détournent. Seul le bruit des sacs augmente.*"
+        "text": "*J’ouvre la porte de la classe. Les regards se tournent vers moi, puis se détournent aussitôt. Le bruit d’un sac qu’on pose paraît particulièrement fort.*"
     },
     "morning2_greet_none_neg_2": {
         "name": "{name}",
-        "text": "*Seoyeon ne lève pas les yeux du registre. Dain est déjà avec ses amies. Yuna ne quitte pas son livre.*"
+        "text": "*Aucune des trois ne me regarde.*"
     },
     "morning2_greet_dain_1_fun": {
         "name": "Dain",
@@ -399,7 +399,7 @@
         "text": "Hé ! Salut. Garde de l'énergie pour aujourd'hui."
     },
     "morning2_greet_yuna_1_thanks": {
-        "name": "{name}",
-        "text": "*Sur le point de m'asseoir, je découvre un mot plié sur mon bureau. « Merci pour hier. »*"
+        "name": "Yuna",
+        "text": "*Un billet plié sur le bureau quand je m'assieds.* Merci pour hier."
     }
 }

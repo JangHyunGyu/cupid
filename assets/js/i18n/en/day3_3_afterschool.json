@@ -48,8 +48,8 @@
         "text": "You're not coming to the gym today, are you?"
     },
     "after3_reject_for_seo_3": {
-        "name": "{name}",
-        "text": "*At the library, only a note remains in Yuna’s place: “Heading home first today.” I haven’t managed to discuss our plans.*"
+        "name": "Yuna",
+        "text": "*Only a note remains at Yuna's seat in the library. I never got to clear up our plans.* I'm leaving first today."
     },
     "after3_reject_for_seo_3b": {},
     "after3_reject_for_seo_3c": {},
@@ -95,7 +95,7 @@
     },
     "after3_seo_9": {
         "name": "Seoyeon",
-        "text": "*Seoyeon retrieves the clipboard from under the desk and places it on her knees, lips pressed shut.*"
+        "text": "Give me a second. *She rests the clipboard on her lap, lips pressed shut.*"
     },
     "after3_seo_choice": {
         "name": "Seoyeon",
@@ -121,7 +121,7 @@
     },
     "after3_seo_pity_trap_4": {
         "name": "Seoyeon",
-        "text": "*She wipes at the smudged makeup with the back of her hand, passing once beneath her eye and once across her mouth.*"
+        "text": "Stop looking. *She wipes the smeared makeup with the back of her hand.*"
     },
     "after3_seo_pity_trap_5": {
         "name": "Seoyeon",
@@ -129,7 +129,7 @@
     },
     "after3_seo_pity_trap_6": {
         "name": "Seoyeon",
-        "text": "*Seoyeon adjusts her glasses. A black smear remains on the back of her hand.*"
+        "text": "I wasn't asking to hear that it's fine. Please don't add anything right now. *She adjusts her glasses. Black stains remain on her hand.*"
     },
     "after3_seo_pity_trap_7": {
         "name": "Seoyeon",
@@ -177,7 +177,7 @@
     },
     "after3_seo_correct_8": {
         "name": "{name}",
-        "text": "*I keep talking about pens while Seoyeon adjusts her glasses, waiting for her to meet my eyes.*"
+        "text": "Where do all those pens even go? *I keep talking about pens, waiting for Seoyeon to meet my eyes first.*"
     },
     "after3_seo_correct_9": {
         "name": "Seoyeon",
@@ -251,8 +251,8 @@
         "text": "What are you doing?"
     },
     "after3_yuna_7": {
-        "name": "{name}",
-        "text": "*Yuna's voice comes from behind me. Holding two drinks, she stops in the doorway and looks from the open notebook to me.*"
+        "name": "Yuna",
+        "text": "I brought drinks. ...Why are you looking at that? *She looks at the notebook from the doorway.*"
     },
     "after3_yuna_8": {
         "name": "Yuna",
@@ -264,7 +264,7 @@
     },
     "after3_yuna_9": {
         "name": "Yuna",
-        "text": "*She hides the side of her face behind the notebook. Only the exposed tip of her ear is red.*"
+        "text": "I've taken it back, so let go. I haven't said you can borrow it. ...I can't show you now. *She hides one side of her face with the notebook, ear tip red.*"
     },
     "after3_yuna_choice": {
         "name": "{name}",
@@ -294,7 +294,7 @@
     },
     "after3_yuna_decode_trap_5": {
         "name": "Yuna",
-        "text": "*Yuna pushes the notebook deep into her bag and pulls the zipper all the way closed.*"
+        "text": "If you keep trusting what you read over what I say, I've got nothing more to tell you. *She pushes the notebook inside her bag and zips it all the way shut.*"
     },
     "after3_yuna_decode_trap_6": {
         "name": "Yuna",
@@ -310,7 +310,7 @@
     },
     "after3_yuna_decode_trap_9": {
         "name": "Yuna",
-        "text": "*Yuna slings her bag over her shoulder and heads for the door. The zipper pull swings with each step.*"
+        "text": "I can't listen to any more right now. *She shoulders her bag and heads for the door.*"
     },
     "after3_yuna_decode_trap_10": {
         "name": "Yuna",
@@ -342,7 +342,7 @@
     },
     "after3_yuna_correct_6": {
         "name": "Yuna",
-        "text": "*Yuna places the notebook on the desk and smooths the crumpled corner of the cover with her palm.*"
+        "text": "You don't have to go that far... No, you'll find weaker passages as you read, too. *She sets the notebook down and smooths the crumpled cover corner.*"
     },
     "after3_yuna_correct_7": {
         "name": "Yuna",
@@ -358,7 +358,7 @@
     },
     "after3_yuna_correct_10": {
         "name": "Yuna",
-        "text": "*Yuna holds the notebook out with both hands, but doesn't extend her arms all the way.*"
+        "text": "Handing it over myself feels... strange. You wanted to read it. Here. *She offers it with both hands, arms not quite straight.*"
     },
     "after3_yuna_correct_11": {
         "name": "{name}",
@@ -459,7 +459,7 @@
     },
     "after3_dain_pity_trap_8": {
         "name": "Dain",
-        "text": "*She walks toward the gym door. She doesn't run like usual. The drag of her sneakers leaves a long echo.*"
+        "text": "Go home. I'm leaving, too. *She drags her shoes toward the door.*"
     },
     "after3_dain_pity_trap_9": {
         "name": "Dain",
@@ -495,7 +495,7 @@
     },
     "after3_dain_correct_7": {
         "name": "Dain",
-        "text": "*She makes room on the inside of the bench. With her toe, she rolls the volleyball out of the court.*"
+        "text": "If you stand there, I have to keep looking up at you. Sit here. ...Come beside me. *She clears room on the bench and nudges the ball off court.*"
     },
     "after3_dain_correct_8": {
         "name": "Dain",
@@ -508,7 +508,7 @@
     },
     "after3_dain_correct_11": {
         "name": "Dain",
-        "text": "*Dain starts to extend her right leg, winces, and bends it again. Her palm never leaves her knee.*"
+        "text": "It's a little better sitting down. *She grimaces as she straightens her right leg and bends it again, her palm still on her knee.*"
     },
     "after3_dain_correct_12": {
         "name": "{name}",
@@ -540,7 +540,7 @@
     },
     "after3_dain_dilemma_tell_7": {
         "name": "Dain",
-        "text": "*Dain bends to tie her shoe, then grabs her knee. She never reaches the laces.*"
+        "text": "Can't even tie my laces. ...Don't decide just because you saw this. *She grips her knee.*"
     },
     "after3_dain_dilemma_tell_8": {
         "name": "Dain",
@@ -548,7 +548,7 @@
     },
     "after3_dain_dilemma_final": {
         "name": "Dain",
-        "text": "*Dain doesn't wipe her wet eyes. None of her usual laughter follows her final words.*",
+        "text": "I'm not joking. I can't just laugh it off like before. ...Answer me. *She leaves her wet eyes untouched, no laugh after her words.*",
         "choices": [
             "Sorry. But I'm telling.",
             "Okay. You tell them yourself. But I'm going to the nurse's office with you.",
@@ -586,7 +586,7 @@
     },
     "after3_dain_choice1_react": {
         "name": "Dain",
-        "text": "*Dain bites her lip, lets out a small laugh, and rubs her eyes with the back of her hand.*"
+        "text": "When I'm ready... that's when I should talk. I don't have to explain right this second. *She bites her lip, smiles, then rubs her eyes with the back of her hand.*"
     },
     "after3_dain_choice1_react2": {
         "name": "Dain",
@@ -637,7 +637,7 @@
     },
     "after3_confront_5_c": {
         "name": "Dain",
-        "text": "*The toe of Dain's sneaker briefly scrapes the hallway floor.*"
+        "text": "I meant what I said, too. Please don't turn it into a joke now. *Her sneaker toe briefly rubs the hallway floor.*"
     },
     "after3_confront_6": {
         "name": "Seoyeon",
@@ -645,7 +645,7 @@
     },
     "after3_confront_choice": {
         "name": "Seoyeon",
-        "text": "*Seoyeon lowers the clipboard to her side and takes one step away, waiting for an answer.*",
+        "text": "Your turn to speak. I can't decide for you. *She steps aside.*",
         "choices": [
             "Admit it honestly",
             "The time slots are different, so I thought it would be fine",
@@ -666,7 +666,7 @@
     },
     "after3_confront_admit_3": {
         "name": "Seoyeon",
-        "text": "*When Seoyeon picks up the lunch bag, the handle twists in her hand.*"
+        "text": "Did you think an apology would make us all okay? I asked what happens to those plans now. *As she lifts her lunch bag, its handle twists in her hand.*"
     },
     "after3_confront_admit_4": {
         "name": "Seoyeon",
@@ -696,7 +696,7 @@
     },
     "after3_confront_lie_b": {
         "name": "Seoyeon",
-        "text": "*The clipboard drops slightly in Seoyeon's hand. This time, she looks directly at {name}.*"
+        "text": "Look at me when you say it, {name}. *She lowers the clipboard.*"
     },
     "after3_confront_lie": {
         "name": "Seoyeon",
@@ -712,8 +712,8 @@
         "text": "*Seoyeon walks toward the far end of the empty hall. Beside her rigid back, all I can see is her clenched fist.*"
     },
     "after3_group_teacher_companion": {
-        "name": "Homeroom Teacher and companion",
-        "text": "*Classes are over. In a classroom left open for the event, the teacher spreads out the event draft while the companion lays out different materials across from her. After checking the clock, the teacher points to each task in turn.* \"There is barely time to finish one of these. Whose work will you help with first?\"",
+        "name": "Homeroom Teacher",
+        "text": "*An event draft and other papers lie in the open classroom.* Barely time for one task. Who will you help first?",
         "context": "After school, the protagonist is reviewing a draft for a public school literature event with the homeroom teacher in an open classroom when the other character with the highest affinity joins them with separate event materials or a request. There is only enough time to finish one task, so the teacher asks whose work the protagonist will help with first.",
         "personality": "The teacher keeps professional distance while guiding the discussion with dry humor and precise notes. Let the companion contribute real opinions through their own voice and interests. Do not turn this into a private teacher-student relationship or a closed-door meeting.",
         "buttonText": "Speak",
@@ -722,8 +722,8 @@
         "groupAftermathCause": "whom the protagonist chose to help first in the open classroom, and why"
     },
     "after3_group_nurse_companion": {
-        "name": "School Nurse and companion",
-        "text": "*A health-check sheet lies beside a box of athletic-club supplies. The nurse points to an empty line while the companion holds up one of the supplies running low.* \"Both need checking today, but we have to start with one. Whose task should we handle first?\"",
+        "name": "School Nurse",
+        "text": "*A health checklist and sports supplies sit side by side.* Both need checking today. Pick one first. Whose task shall we start with?",
         "context": "After school in the nurse's office, the protagonist is helping the school nurse organize athletic health checks when the other character with the highest affinity arrives with an urgent supply problem. There is only time to begin with one task, so the nurse asks whose work the protagonist will handle first.",
         "personality": "The nurse may ease tension with a light joke, but she never uses care or treatment as an excuse for affection. The companion reacts to the health check or supplies according to their own personality and current condition. Do not inflate routine work into an accident or a secret meeting.",
         "buttonText": "Speak",
@@ -880,8 +880,8 @@
         "text": "I know I'm meddling. But just for today, please don't pretend you didn't notice."
     },
     "haeun_warn_7_b": {
-        "name": "Haeun",
-        "text": "*Haeun presses her lips together and checks toward the faculty office while fingering the clasp of her bracelet.*"
+        "name": "{name}",
+        "text": "*Haeun closes her lips. Touching her student council bracelet clasp, she checks toward the staffroom.*"
     },
     "haeun_warn_7_c": {
         "name": "Haeun",
@@ -920,7 +920,7 @@
     "haeun_warn_7_d": {},
     "haeun_warn_8": {
         "name": "{name}",
-        "text": "*After Haeun leaves, I knock on the student council room door. No one answers, but a chair scrapes inside.*"
+        "text": "*After Haeun leaves, I knock on the council room door. No answer, but a chair scrapes inside.* Seoyeon, it's me."
     },
     "haeun_warn_8b": {
         "name": "{name}",

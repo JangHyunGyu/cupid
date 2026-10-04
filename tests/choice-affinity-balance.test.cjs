@@ -1814,14 +1814,16 @@ test('day 2 through 5 rivalry copy stays synchronized across every supported loc
         'after5_farewell_seo_4', 'after5_farewell_seo_6', 'after5_farewell_yuna_3',
         'after5_farewell_dain_2', 'after5_farewell_dain_4', 'after5_farewell_dain_4_c'
     ];
+    // Reviewed dialogue-balance copy in all eight languages; see docs/qa/dialogue-balance-2026-10-04.json.
     const expectedDigests = {
-        "ko": "bc6942dc957981a3083134f0907e850fcd2ae2c7ad323062443a762760f05d2d",
-        "en": "1f6c00dfd4db5c8ddbe65f4e21c676a73a9b1e7b8f4d08e94c9d2cb1e9bd73b0",
-        "ja": "e1fd08117c49f6448a016ba485230e8d83739ab34e71e2353a363e5b25f3702c",
-        "es": "c7b03538c5a6ddb45ae2271c7d619ca60c5e4a6444f847be1eabcac31ba29331",
-        "fr": "2bb26e4e994ccd36e5386d660a63a02ae7b36238c7284005308d2edf67b2658d",
-        "de": "7946fc3236ac1e10a62f362a6b9ad0951a9b08ce9442cb9fd9a79c0b9756a21e",
-        "pt": "e171561faa61f9bc9da6d2e09883063eda55a96e0f85535a71f7f870a31548a1"
+        "ko": "67eede3e997f6ca9bcd0db56b19a828ad4eb2215eeb1c19b3e6d9c6827b2a70c",
+        "en": "4ec70da07388b91d7b4ce115355ef36b04c454637c5c9a988219317271169a3e",
+        "ja": "acbe3eb560bfce6d08713659a588a7934db906d66407f9b1f4f49220b86dcfe1",
+        "es": "b5000288fd3459a757263fe457016328df7e493fd61dda74990f1ce44fcc939f",
+        "fr": "aa2817fe1947fa57661533d4c239a72fa58ba7cd89bd56f746c9a7e088c84d93",
+        "de": "f715b33c3bcb1b480a77193efdfdd3629201345c2679d6e6d684c58dc78ae98a",
+        "pt": "ba27408147268660076e8d4298f0dae6dc7e6971925491a65cce16340b01dcad",
+        "zh": "f5856c848f2e4f01903480dd927b254949aef9365a803886dca4af7fa132e4df"
     };
 
     for (const [locale, expectedDigest] of Object.entries(expectedDigests)) {

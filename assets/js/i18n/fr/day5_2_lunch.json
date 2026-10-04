@@ -40,8 +40,8 @@
         "text": "*Il n'y a pas de vent.*"
     },
     "tour_seo_8": {
-        "name": "{name}",
-        "text": "*Seoyeon sort un petit porte-clés métallique d'une poche intérieure de son sac. Il a la forme de la clé du toit, mais aucune encoche.*"
+        "name": "Seoyeon",
+        "text": "Ça ressemble à la clé du toit, hein ? Sans les crans. *Elle sort un petit porte-clés en métal.*"
     },
     "tour_seo_9": {
         "name": "Seoyeon",
@@ -57,7 +57,7 @@
     },
     "tour_seo_12": {
         "name": "Seoyeon",
-        "text": "*Elle me tend le porte-clés. Lorsque nos mains se frôlent, Seoyeon rajuste la sangle de son sac.*"
+        "text": "Garde-le bien. *Nos mains se frôlent avec le porte-clés ; elle reprend sa bandoulière.*"
     },
     "tour_seo_13": {
         "name": "{name}",
@@ -73,7 +73,7 @@
     },
     "tour_seo_end": {
         "name": "{name}",
-        "text": "*Je glisse le porte-clés de Seoyeon dans ma poche. La vraie clé du toit tinte encore une fois dans son sac.*"
+        "text": "*Je range le porte-clés. La vraie clé tinte dans le sac de Seoyeon.*"
     },
     "tour_yuna_1_check": {
         "name": "{name}",
@@ -81,15 +81,15 @@
     },
     "tour_yuna_1": {
         "name": "{name}",
-        "text": "*L'annexe de la bibliothèque. Un vieux canapé, la lumière de l'après-midi à travers la fenêtre. La même odeur de poussière que la première fois que je suis entré ici.*"
+        "text": "*Le soleil éclaire le vieux canapé de l'annexe. La même odeur de poussière.*"
     },
     "tour_yuna_1b": {
         "name": "{name}",
-        "text": "*L’annexe de la bibliothèque. La lumière de l’après-midi qui passe par l’interstice de la fenêtre tombe sur le vieux canapé où je lisais avec Yuna.*"
+        "text": "*La lumière tombe sur le canapé de l'annexe où nous lisions ensemble.*"
     },
     "tour_yuna_2": {
         "name": "Yuna",
-        "text": "*Elle s'assoit sur le canapé et laisse libre la place à côté d'elle. La poussière ne s'y est pas déposée.*"
+        "text": "Assieds-toi à côté. Y a pas de poussière ici. *Elle libère une place.*"
     },
     "tour_yuna_3": {
         "name": "{name}",
@@ -105,7 +105,7 @@
     },
     "tour_yuna_6": {
         "name": "Yuna",
-        "text": "*Elle sort un nouveau carnet. Les marges gardent les traces de l’ancien brouillon qu’elle a repris et recopié.*"
+        "text": "Je l'ai repris dans un nouveau carnet. Les marges sont chargées, par contre. *Elle le sort.*"
     },
     "tour_yuna_7": {
         "name": "Yuna",
@@ -120,8 +120,8 @@
         "text": "Parce que ça me semblait un peu étrange de dire que c'était fini."
     },
     "tour_yuna_10": {
-        "name": "{name}",
-        "text": "*Yuna me tend le carnet. La couverture accroche une fois le tissu du canapé et elle attend mes prochains mots sans lâcher le coin.*"
+        "name": "Yuna",
+        "text": "Tiens. ...La couverture a accroché le tissu. *Elle la dégage et tend le carnet.*"
     },
     "tour_yuna_11": {
         "name": "{name}",
@@ -145,7 +145,7 @@
     },
     "tour_dain_1": {
         "name": "{name}",
-        "text": "*Le gymnase. Près de la ligne de notre premier pari se trouve le bac à ballons rangé hier soir. Aujourd'hui, les lumières sont allumées.*"
+        "text": "*Près de la ligne du premier pari, le casier de ballons rangé hier soir. Aujourd'hui, la salle est éclairée.*"
     },
     "tour_dain_1b": {
         "name": "{name}",
@@ -153,7 +153,7 @@
     },
     "tour_dain_2": {
         "name": "Dain",
-        "text": "*Dain se tient au milieu du terrain, un ballon de volley calé contre le flanc.*"
+        "text": "Aujourd'hui, j'ai juste envie de traîner avec toi, sans jouer au ballon. Tu rentres pas encore, hein ? *Elle se tient au milieu du terrain, un ballon sous le bras.*"
     },
     "tour_dain_3": {
         "name": "Dain",
@@ -176,8 +176,8 @@
         "text": "...Pourquoi j'ai encore perdu ?"
     },
     "tour_dain_8": {
-        "name": "{name}",
-        "text": "*Dain fronce les sourcils sans parvenir à réprimer son sourire. Une seconde plus tard, elle pose le ballon sur le terrain.*"
+        "name": "Dain",
+        "text": "...Ne me fais pas rire. *Elle fronce les sourcils sans pouvoir retenir son sourire et pose le ballon sur le terrain avec un temps de retard.*"
     },
     "tour_dain_10": {
         "name": "Dain",
@@ -363,8 +363,8 @@
         "text": "Tu peux prendre ce côté ? Tu m’aides à porter ça jusqu’à la salle radio ? *Haeun tend un côté de la caisse de documents.*"
     },
     "day5_haeun_high_clasp": {
-        "name": "{name}",
-        "text": "*Nous posons la caisse devant la salle radio. Le fermoir du bracelet du conseil des élèves de Haeun est accroché au bouton de ma manche. Elle se penche vers moi pour le dégager. Des pas s’arrêtent dans le couloir.*"
+        "name": "Haeun",
+        "text": "Attendez un instant. Mon bracelet s'est accroché au bouton de votre manche. *Elle pose la boîte devant la cabine et se rapproche pour libérer le fermoir. Des pas s'arrêtent.*"
     },
     "day5_haeun_explain_choice": {
         "name": "{name}",
@@ -376,7 +376,7 @@
     },
     "day5_haeun_explain_open": {
         "name": "{name}",
-        "text": "*Je présente Haeun et explique que nous apportions des documents à la salle radio. Elle hoche la tête, mais l’autre personne regarde encore ma manche.*"
+        "text": "C'est Haeun, du conseil. On apportait des papiers au studio, son bracelet s'est accroché. *L'autre regarde encore ma manche.*"
     },
     "day5_haeun_explain_delay": {
         "name": "{name}",
@@ -409,8 +409,8 @@
         "text": "*Haeun appuie du bout du doigt sur le fermoir du bracelet, puis le relâche.* …D’accord. Je vais faire comme si ce n’était rien."
     },
     "day5_haeun_finish": {
-        "name": "{name}",
-        "text": "*La porte s’ouvre et un élève prend la caisse. Haeun referme son bracelet. Les annonces des activités de midi continuent au bout du couloir.*"
+        "name": "Haeun",
+        "text": "Merci de la prendre. *Elle passe la boîte au responsable et ferme son bracelet. L'annonce du déjeuner continue.*"
     },
     "day5_haeun_low_intro": {
         "name": "Haeun",
@@ -431,7 +431,7 @@
     },
     "day5_haeun_low_work": {
         "name": "{name}",
-        "text": "*Nous vérifions les numéros un par un, rangeons contre le mur les cartons qui encombrent le passage et notons où il manque un panneau. Après la dernière case, je rends la liste à Haeun.*"
+        "text": "Le dernier numéro est bon. Les cartons vides sont contre le mur, les panneaux manquants sont notés ici. *Je rends la fiche à Haeun.*"
     },
     "day5_haeun_low_repair": {
         "name": "Haeun",
@@ -459,7 +459,7 @@
     },
     "day5_haeun_seoyeon_group_talk": {
         "name": "Seoyeon · Haeun",
-        "text": "*Haeun s’écarte d’un demi-pas. L’autre personne reste là, attendant ma réponse.*",
+        "text": "*Haeun recule d'un demi-pas ; l'autre attend ma réponse.*",
         "groupLocation": "Couloir devant la salle radio pendant la fête de l’école",
         "context": "Haeun et le protagoniste ont porté des documents à la salle radio. L’autre personne a vu Haeun se pencher pour dégager le fermoir de son bracelet du bouton de sa manche. Haeun l’a défendu en disant qu’elle lui demandait facilement de l’aide, aggravant le malentendu sur leur relation. L’affinité de l’autre personne a déjà baissé de 15 points, ou de 20 si l’explication a été différée. Il n’y a eu ni romance ni activité sexuelle entre Haeun et le protagoniste.",
         "personality": "L’autre personne demande une explication avec sa voix propre et selon son affinité actuelle. Être première en affinité ne prouve ni couple ni promesses antérieures. Haeun reste polie, rapporte uniquement ce qu’elle a vu et ne parle pas des sentiments du protagoniste à sa place. Laisse-lui la place de répondre ; ses explications peuvent dissiper ou entretenir le malentendu. Ne résous pas tout dès le début et ne transforme pas les soupçons en trahison avérée. Ne répète pas la pénalité initiale ; note uniquement les effets de la contribution actuelle.",
@@ -482,7 +482,7 @@
     },
     "day5_haeun_yuna_group_talk": {
         "name": "Yuna · Haeun",
-        "text": "*Haeun s’écarte d’un demi-pas. L’autre personne reste là, attendant ma réponse.*",
+        "text": "*Haeun recule d'un demi-pas ; l'autre attend ma réponse.*",
         "groupLocation": "Couloir devant la salle radio pendant la fête de l’école",
         "context": "Haeun et le protagoniste ont porté des documents à la salle radio. L’autre personne a vu Haeun se pencher pour dégager le fermoir de son bracelet du bouton de sa manche. Haeun l’a défendu en disant qu’elle lui demandait facilement de l’aide, aggravant le malentendu sur leur relation. L’affinité de l’autre personne a déjà baissé de 15 points, ou de 20 si l’explication a été différée. Il n’y a eu ni romance ni activité sexuelle entre Haeun et le protagoniste.",
         "personality": "L’autre personne demande une explication avec sa voix propre et selon son affinité actuelle. Être première en affinité ne prouve ni couple ni promesses antérieures. Haeun reste polie, rapporte uniquement ce qu’elle a vu et ne parle pas des sentiments du protagoniste à sa place. Laisse-lui la place de répondre ; ses explications peuvent dissiper ou entretenir le malentendu. Ne résous pas tout dès le début et ne transforme pas les soupçons en trahison avérée. Ne répète pas la pénalité initiale ; note uniquement les effets de la contribution actuelle.",
@@ -505,7 +505,7 @@
     },
     "day5_haeun_dain_group_talk": {
         "name": "Dain · Haeun",
-        "text": "*Haeun s’écarte d’un demi-pas. L’autre personne reste là, attendant ma réponse.*",
+        "text": "*Haeun recule d'un demi-pas ; l'autre attend ma réponse.*",
         "groupLocation": "Couloir devant la salle radio pendant la fête de l’école",
         "context": "Haeun et le protagoniste ont porté des documents à la salle radio. L’autre personne a vu Haeun se pencher pour dégager le fermoir de son bracelet du bouton de sa manche. Haeun l’a défendu en disant qu’elle lui demandait facilement de l’aide, aggravant le malentendu sur leur relation. L’affinité de l’autre personne a déjà baissé de 15 points, ou de 20 si l’explication a été différée. Il n’y a eu ni romance ni activité sexuelle entre Haeun et le protagoniste.",
         "personality": "L’autre personne demande une explication avec sa voix propre et selon son affinité actuelle. Être première en affinité ne prouve ni couple ni promesses antérieures. Haeun reste polie, rapporte uniquement ce qu’elle a vu et ne parle pas des sentiments du protagoniste à sa place. Laisse-lui la place de répondre ; ses explications peuvent dissiper ou entretenir le malentendu. Ne résous pas tout dès le début et ne transforme pas les soupçons en trahison avérée. Ne répète pas la pénalité initiale ; note uniquement les effets de la contribution actuelle.",
@@ -528,7 +528,7 @@
     },
     "day5_haeun_teacher_group_talk": {
         "name": "Professeure principale · Haeun",
-        "text": "*Haeun s’écarte d’un demi-pas. L’autre personne reste là, attendant ma réponse.*",
+        "text": "*Haeun recule d'un demi-pas ; l'autre attend ma réponse.*",
         "groupLocation": "Couloir devant la salle radio pendant la fête de l’école",
         "context": "Haeun et le protagoniste ont porté des documents à la salle radio. L’autre personne a vu Haeun se pencher pour dégager le fermoir de son bracelet du bouton de sa manche. Haeun l’a défendu en disant qu’elle lui demandait facilement de l’aide, aggravant le malentendu sur leur relation. L’affinité de l’autre personne a déjà baissé de 15 points, ou de 20 si l’explication a été différée. Il n’y a eu ni romance ni activité sexuelle entre Haeun et le protagoniste.",
         "personality": "L’autre personne demande une explication avec sa voix propre et selon son affinité actuelle. Être première en affinité ne prouve ni couple ni promesses antérieures. Haeun reste polie, rapporte uniquement ce qu’elle a vu et ne parle pas des sentiments du protagoniste à sa place. Laisse-lui la place de répondre ; ses explications peuvent dissiper ou entretenir le malentendu. Ne résous pas tout dès le début et ne transforme pas les soupçons en trahison avérée. Ne répète pas la pénalité initiale ; note uniquement les effets de la contribution actuelle.",
@@ -551,7 +551,7 @@
     },
     "day5_haeun_nurse_group_talk": {
         "name": "Infirmière · Haeun",
-        "text": "*Haeun s’écarte d’un demi-pas. L’autre personne reste là, attendant ma réponse.*",
+        "text": "*Haeun recule d'un demi-pas ; l'autre attend ma réponse.*",
         "groupLocation": "Couloir devant la salle radio pendant la fête de l’école",
         "context": "Haeun et le protagoniste ont porté des documents à la salle radio. L’autre personne a vu Haeun se pencher pour dégager le fermoir de son bracelet du bouton de sa manche. Haeun l’a défendu en disant qu’elle lui demandait facilement de l’aide, aggravant le malentendu sur leur relation. L’affinité de l’autre personne a déjà baissé de 15 points, ou de 20 si l’explication a été différée. Il n’y a eu ni romance ni activité sexuelle entre Haeun et le protagoniste.",
         "personality": "L’autre personne demande une explication avec sa voix propre et selon son affinité actuelle. Être première en affinité ne prouve ni couple ni promesses antérieures. Haeun reste polie, rapporte uniquement ce qu’elle a vu et ne parle pas des sentiments du protagoniste à sa place. Laisse-lui la place de répondre ; ses explications peuvent dissiper ou entretenir le malentendu. Ne résous pas tout dès le début et ne transforme pas les soupçons en trahison avérée. Ne répète pas la pénalité initiale ; note uniquement les effets de la contribution actuelle.",
@@ -582,7 +582,7 @@
     },
     "day5_haeun_concern_seoyeon_intro": {
         "name": "Haeun",
-        "text": "*J’entends Haeun au coin du couloir. Elle parle à voix basse à quelqu’un, puis s’interrompt en me voyant.* J’étais mal à l’aise quand on a discuté. Je ne savais pas comment le prendre, alors j’en ai parlé."
+        "text": "*Au coin du couloir, Haeun parle à voix basse à la personne en face, puis s'interrompt en me voyant.* J’étais mal à l’aise quand on a discuté. Je ne savais pas comment le prendre, alors j’en ai parlé."
     },
     "day5_haeun_concern_seoyeon_arrival": {
         "name": "Seoyeon",
@@ -609,7 +609,7 @@
     },
     "day5_haeun_concern_yuna_intro": {
         "name": "Haeun",
-        "text": "*J’entends Haeun au coin du couloir. Elle parle à voix basse à quelqu’un, puis s’interrompt en me voyant.* J’étais mal à l’aise quand on a discuté. Je ne savais pas comment le prendre, alors j’en ai parlé."
+        "text": "*Au coin du couloir, Haeun parle à voix basse à la personne en face, puis s'interrompt en me voyant.* J’étais mal à l’aise quand on a discuté. Je ne savais pas comment le prendre, alors j’en ai parlé."
     },
     "day5_haeun_concern_yuna_arrival": {
         "name": "Yuna",
@@ -636,7 +636,7 @@
     },
     "day5_haeun_concern_dain_intro": {
         "name": "Haeun",
-        "text": "*J’entends Haeun au coin du couloir. Elle parle à voix basse à quelqu’un, puis s’interrompt en me voyant.* J’étais mal à l’aise quand on a discuté. Je ne savais pas comment le prendre, alors j’en ai parlé."
+        "text": "*Au coin du couloir, Haeun parle à voix basse à la personne en face, puis s'interrompt en me voyant.* J’étais mal à l’aise quand on a discuté. Je ne savais pas comment le prendre, alors j’en ai parlé."
     },
     "day5_haeun_concern_dain_arrival": {
         "name": "Dain",
@@ -663,7 +663,7 @@
     },
     "day5_haeun_concern_teacher_intro": {
         "name": "Haeun",
-        "text": "*J’entends Haeun au coin du couloir. Elle parle à voix basse à quelqu’un, puis s’interrompt en me voyant.* J’étais mal à l’aise quand on a discuté. Je ne savais pas comment le prendre, alors j’en ai parlé."
+        "text": "*Au coin du couloir, Haeun parle à voix basse à la personne en face, puis s'interrompt en me voyant.* J’étais mal à l’aise quand on a discuté. Je ne savais pas comment le prendre, alors j’en ai parlé."
     },
     "day5_haeun_concern_teacher_arrival": {
         "name": "Professeure principale",
@@ -690,7 +690,7 @@
     },
     "day5_haeun_concern_nurse_intro": {
         "name": "Haeun",
-        "text": "*J’entends Haeun au coin du couloir. Elle parle à voix basse à quelqu’un, puis s’interrompt en me voyant.* J’étais mal à l’aise quand on a discuté. Je ne savais pas comment le prendre, alors j’en ai parlé."
+        "text": "*Au coin du couloir, Haeun parle à voix basse à la personne en face, puis s'interrompt en me voyant.* J’étais mal à l’aise quand on a discuté. Je ne savais pas comment le prendre, alors j’en ai parlé."
     },
     "day5_haeun_concern_nurse_arrival": {
         "name": "Infirmière",

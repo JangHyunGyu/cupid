@@ -13,7 +13,7 @@
     },
     "date_seo_1": {
         "name": "{name}",
-        "text": "*Seoyeon wartet schon am Brunnen. Kein Klemmbrett, nur der Taschenriemen, der sich um ihre Finger wickelt.*"
+        "text": "Wartest du schon? Heute ohne Klemmbrett. *Am Brunnen hat Seoyeon den Taschenriemen um die Finger gewickelt.*"
     },
     "date_seo_compliment_choice": {
         "name": "{name}",
@@ -26,7 +26,7 @@
     },
     "date_seo_pretty_high": {
         "name": "Seoyeon",
-        "text": "*Der Taschenriemen lockert sich in der Hand, die ihn gehalten hat.*"
+        "text": "...Wenn du das so plötzlich sagst, weiß ich gar nicht, was ich antworten soll. Darf ich erst mal lächeln? *Ihr Griff um den Taschenriemen lockert sich.*"
     },
     "date_seo_pretty_high_b": {
         "name": "Seoyeon",
@@ -46,7 +46,7 @@
     },
     "date_seo_pretty_high_4": {
         "name": "Seoyeon",
-        "text": "*Die Haarsträhne, die sie hinters Ohr geschoben hat, fällt wieder nach vorn. Ihre erhobene Hand kehrt zum Taschenriemen zurück.*"
+        "text": "Was du vorhin gesagt hast... habe ich gehört. Nimm es nicht zurück, nur weil ich nicht gleich geantwortet habe. *Das zurückgestrichene Haar fällt wieder herab. Die angehobene Hand kehrt zum Taschenriemen zurück.*"
     },
     "date_seo_pretty_low": {
         "name": "Seoyeon",
@@ -74,7 +74,7 @@
     },
     "date_seo_duck_4": {
         "name": "Seoyeon",
-        "text": "*Sie sieht den Brotkrumen zu, die am Wasser versinken. Vor dem Blumenladen wird ihr Schritt langsamer.*"
+        "text": "Der Blumenladen ... Warte kurz. *Nach einem Blick aufs Wasser wird sie langsamer.*"
     },
     "date_seo_flower_b": {
         "name": "Seoyeon",
@@ -82,7 +82,7 @@
     },
     "date_seo_flower_2": {
         "name": "Seoyeon",
-        "text": "*Als sie die Tür des Blumenladens aufdrückt, klingelt ein Glöckchen. Seoyeon geht einmal an den Auslagen entlang und wählt eine kleine Sukkulente im Topf.*"
+        "text": "Wie wäre der kleine Topf? *Die Türglocke klingelt; sie wählt eine Sukkulente.*"
     },
     "date_seo_succulent_2": {
         "name": "Seoyeon",
@@ -98,7 +98,7 @@
     },
     "date_seo_end": {
         "name": "Seoyeon",
-        "text": "*Sie hält mir die Pflanze hin. Der kleine, mit Erde gefüllte Topf landet in meiner Handfläche.*"
+        "text": "Hier. Dass ich sie wieder abholen würde... heißt nicht, dass ich sie dir nicht geben möchte. *Sie reicht den kleinen Topf mit Erde. Er berührt meine Handfläche.*"
     },
     "date_seo_end_b": {
         "name": "{name}",
@@ -114,7 +114,7 @@
     },
     "date_yuna_1": {
         "name": "{name}",
-        "text": "*Vor dem Café lehnt Yuna an der Wand. Sie trägt ein schwarzes Kleid und eine kleine Umhängetasche. Ohne Schuluniform fallen als Erstes die Linien ihres Tattoos ins Auge.*"
+        "text": "*Yuna vor dem Café: schwarzes Kleid, Umhängetasche, sichtbare Tattoos.* Wartest du schon lange?"
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
@@ -127,7 +127,7 @@
     },
     "date_yuna_pretty_high": {
         "name": "Yuna",
-        "text": "*Sie starrt lange auf den Rand ihres Bechers. Silberweißes Haar fällt ihr an der Wange herab.*"
+        "text": "...Mir fällt gerade nichts anderes ein. Ich muss dauernd an deine Worte denken. *Sie schaut lange auf den Tassenrand. Silberweißes Haar fällt neben ihre Wange.*"
     },
     "date_yuna_pretty_high_2": {
         "name": "Yuna",
@@ -179,7 +179,7 @@
     },
     "date_yuna_earphone": {
         "name": "Yuna",
-        "text": "*Sie reicht mir einen ihrer Ohrhörer.*"
+        "text": "Es geht nicht nur um Bücher. Das möchte ich heute auch mit dir hören. *Sie reicht mir einen Ohrhörer.*"
     },
     "date_yuna_earphone_2": {
         "name": "Yuna",
@@ -191,7 +191,7 @@
     },
     "date_yuna_earphone_3": {
         "name": "{name}",
-        "text": "*Der Abstand zwischen uns reicht genau so weit, dass das Kopfhörerkabel noch nicht spannt. Yuna setzt sich nur so nah neben mich.*"
+        "text": "*Yuna setzt sich näher, bis kurz bevor das Kopfhörerkabel straff wird.*"
     },
     "date_yuna_oldbook": {
         "name": "{name}",
@@ -231,7 +231,7 @@
     },
     "date_dain_1": {
         "name": "{name}",
-        "text": "*Vor der Turnhalle winkt Dain in Kappe und Sportkleidung. Am rechten Knie trägt sie eine Bandage.*"
+        "text": "*Vor der Turnhalle winkt Dain in Sportkleidung und Kappe, rechts mit Kniebandage.*"
     },
     "date_dain_2": {
         "name": "Dain",
@@ -257,7 +257,7 @@
     },
     "date_dain_pretty_high": {
         "name": "Dain",
-        "text": "*Dain zieht ihre Kappe so tief herunter, dass ihr halbes Gesicht darunter verschwindet.*"
+        "text": "Du machst dich nicht lustig, oder? Nur wegen einer Kappe gleich so ein Kompliment... *Sie zieht sie tief und verdeckt das halbe Gesicht.*"
     },
     "date_dain_pretty_high_2": {
         "name": "Dain",
@@ -269,7 +269,7 @@
     },
     "date_dain_pretty_high_4": {
         "name": "Dain",
-        "text": "*Unter dem Schirm werden ihre Ohrenspitzen rot. Ihre Finger bleiben am Rand eingehakt.*"
+        "text": "Denkst du, du kannst alles sagen, nur weil es stimmt? ...Ich sage nicht, dass es mir nicht gefällt. Wenn du weiter guckst, komme ich gar nicht mehr vom Fleck. *Unter dem Schirm röten sich ihre Ohrspitzen, die Finger bleiben am Rand.*"
     },
     "date_dain_pretty_low": {
         "name": "Dain",
@@ -300,8 +300,8 @@
         "text": "Ohne Wetteinsatz macht es doch keinen Spaß!"
     },
     "date_dain_arcade_3_b": {
-        "name": "{name}",
-        "text": "*Als das Rhythmusspiel beginnt, finden Dains Hände sofort den Takt. Bis zum Ende des Songs reißt ihre Combo auf dem Bildschirm kein einziges Mal ab.*"
+        "name": "Dain",
+        "text": "Schau, den Takt darfst du nicht verpassen! *Die Kombo hält bis zum Liedende.*"
     },
     "date_dain_arcade_3_c": {
         "name": "Dain",
@@ -324,12 +324,12 @@
         "text": "*„Da brauche ich meine Knie nicht.“ Dain lächelt dabei und sieht dann auf ihr rechtes Knie.*"
     },
     "date_dain_knee_2": {
-        "name": "{name}",
-        "text": "*Wir verlassen die Spielhalle und gehen an einem Sportgeschäft vorbei. Vor dem Schaufenster mit den Volleyballschuhen wird Dain langsamer.*"
+        "name": "Dain",
+        "text": "Warte. Ich will mir die Volleyballschuhe ansehen. *Sie hält vorm Sportladen an.*"
     },
     "date_dain_shop": {
         "name": "Dain",
-        "text": "*Ihr Blick folgt den Schnürsenkeln der Volleyballschuhe hinter der Scheibe. Unter dem Schirm ihrer Kappe presst sie die Lippen zusammen.*"
+        "text": "...Nein, ich schaue nur. *Sie kann den Blick nicht von den Schuhen lösen.*"
     },
     "date_dain_shop_2": {
         "name": "{name}",
@@ -385,8 +385,8 @@
         "text": "Heute können wir ruhig vom Plan abweichen. Gehen wir zuerst dahin, wo du hinwillst."
     },
     "date_seo_high_2": {
-        "name": "{name}",
-        "text": "*Seoyeon faltet den Zeitplan und steckt ihn in ihre Tasche. Sie lässt den Riemen los und geht zuerst in den Park.*"
+        "name": "Seoyeon",
+        "text": "Den Zeitplan packe ich weg. Heute will ich nicht auch nach Stundenplan laufen. *Sie geht in den Park voraus.*"
     },
     "date_seo_tentative_1": {
         "name": "{name}",
@@ -459,8 +459,8 @@
         "text": "*Ich schreibe die noch nicht gesendete Entschuldigung zu Ende und schicke sie ab. Während ich auf eine Antwort warte, prüfe ich die heutigen Verabredungen.*"
     },
     "day4_harem_fallout_1": {
-        "name": "{name}",
-        "text": "*Seoyeon schreibt in die Gruppe: „Dass wir gestern darüber gelacht haben, hat unsere Verabredungen nicht geklärt.“*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon schreibt in die Gruppe.* Dass wir gestern darüber gelacht haben, klärt unsere Verabredungen noch nicht."
     },
     "day4_harem_fallout_2": {
         "name": "Seoyeon",

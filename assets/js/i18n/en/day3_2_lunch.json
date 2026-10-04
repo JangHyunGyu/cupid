@@ -1,11 +1,11 @@
 {
     "lunch3_start": {
-        "name": "{name}",
-        "text": "*At lunch, I open my lunchbox. Seoyeon sits beside me, Dain sits across, and Yuna brings her bread to the empty chair.*"
+        "name": "Yuna",
+        "text": "Have some of my bread, too. *Seoyeon sits beside me, Dain opposite. Yuna pulls up a chair.*"
     },
     "lunch3_start_2_b": {
         "name": "Dain",
-        "text": "*Dain picks up the rolled omelette before Yuna can. Before lifting her chopsticks, Seoyeon looks across the table.*"
+        "text": "I can try this first, right? ...Okay, just a taste. *Dain takes the rolled omelet before Yuna. Seoyeon looks across the table before lifting her chopsticks.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
@@ -29,7 +29,7 @@
     },
     "lunch3_meal_6": {
         "name": "Yuna",
-        "text": "*She silently reaches out with her chopsticks and takes the best-looking sausage.*"
+        "text": "*She reaches out with her chopsticks and takes the most tempting sausage.*"
     },
     "lunch3_meal_7": {
         "name": "{name}",
@@ -45,11 +45,11 @@
     },
     "lunch3_meal_10": {
         "name": "{name}",
-        "text": "*Three pairs of chopsticks nearly meet over the last piece of egg. All three stop and look at me.*"
+        "text": "Oh, that's the last piece. Hang on. *Three pairs of chopsticks stop.*"
     },
     "lunch3_meal_10_b": {
         "name": "{name}",
-        "text": "*Only one last side dish remains in the center of the lunchbox, and all three pairs of chopsticks return to their places.*"
+        "text": "*Only the last piece of omelet remains.*"
     },
     "lunch3_meal_10_c": {},
     "lunch3_meal_10_d": {},
@@ -82,24 +82,24 @@
     },
     "lunch3_seo_skin_check": {},
     "lunch3_seo_skin_1": {
-        "name": "{name}",
-        "text": "*While eating lunch, a grain of rice sticks to my lip. Seoyeon reaches over and picks it off.*"
+        "name": "Seoyeon",
+        "text": "You've got something on your mouth. Hold still. ...I know you're busy eating, but really. *She picks off the grain of rice left from lunch.*"
     },
     "lunch3_seo_skin_2": {
         "name": "Seoyeon",
         "text": "Be more careful when you eat in front of people."
     },
     "lunch3_seo_skin_3": {
-        "name": "{name}",
-        "text": "*As Seoyeon pulls her hand back, she drops her chopsticks. She picks them up at once, but their tips scrape the rim of the plate.*"
+        "name": "Seoyeon",
+        "text": "...Oh, my chopsticks. It's fine, I'll get them. You don't have to make a fuss. *Withdrawing her hand, she drops and retrieves them, scraping the plate's edge.*"
     },
     "lunch3_give_seo_2": {
         "name": "Dain",
         "text": "Hey! I wanted some too!"
     },
     "lunch3_seo_witness_1": {
-        "name": "{name}",
-        "text": "*Dain gets up with her empty water bottle, glances at the food I gave Seoyeon and steps into the hall.*"
+        "name": "Dain",
+        "text": "I'll refill my water. *Empty bottle in hand, she glances once at the food I gave Seoyeon, then leaves for the hall.*"
     },
     "lunch3_seo_witness_choice": {
         "name": "{name}",
@@ -149,8 +149,8 @@
     },
     "lunch3_dain_skin_check": {},
     "lunch3_dain_skin_1": {
-        "name": "{name}",
-        "text": "*After finishing the food, Dain opens her arms a little. “Can I give you a thank-you hug?” I nod. She hugs me briefly, then reaches for her bottle.*"
+        "name": "Dain",
+        "text": "Thanks for the food. Can I hug you? *Meal finished, she opens her arms slightly. I nod; she hugs me briefly, then picks up her water bottle.*"
     },
     "lunch3_dain_skin_3": {
         "name": "Dain",
@@ -179,8 +179,8 @@
     },
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {
-        "name": "{name}",
-        "text": "*Yuna picks up a small note beside her tray and passes it to me. For a moment, we both hold its edge.*"
+        "name": "Yuna",
+        "text": "Take this. *Our hands hold the edge of the note together.*"
     },
     "lunch3_yuna_skin_2": {
         "name": "Yuna",
@@ -188,7 +188,7 @@
     },
     "lunch3_yuna_skin_3": {
         "name": "{name}",
-        "text": "*Yuna lets go of the edge of the paper. I fold the note and carefully put it away.*"
+        "text": "*Yuna lets go. I fold the note and put it away.*"
     },
     "lunch3_give_yuna_2": {
         "name": "Seoyeon",
@@ -216,7 +216,7 @@
     },
     "lunch3_expose_3": {
         "name": "{name}",
-        "text": "*While I choose an answer, the other two sets of chopsticks remain suspended over the lunchbox.*"
+        "text": "Wait, about that... *The chopsticks stop.*"
     },
     "lunch3_expose_4": {
         "name": "{name}",
@@ -241,15 +241,15 @@
     },
     "lunch3_expose_10": {
         "name": "{name}",
-        "text": "*One chopstick strikes the lunchbox lid. No one picks it up.*"
+        "text": "*A chopstick hits the lid. No one picks it up.*"
     },
     "lunch3_expose_11": {
         "name": "Yuna",
         "text": "I knew people had asked. I didn’t know you’d accepted several plans."
     },
     "lunch3_expose_12": {
-        "name": "{name}",
-        "text": "*Three pairs of chopsticks rest over the lunchbox. At the next table, Minsu looks over, then covers his mouth with the back of his hand.*"
+        "name": "Minsu",
+        "text": "Hey, come here a second. *At the next table, he covers his mouth with his hand.*"
     },
     "lunch3_expose_14": {
         "name": "Minsu",
@@ -257,7 +257,7 @@
     },
     "lunch3_expose_15": {
         "name": "{name}",
-        "text": "*My lips move without sound. Minsu puts down the chopsticks in his hand.*"
+        "text": "*My lips move without words. Minsu puts down his chopsticks.*"
     },
     "lunch3_expose_choice": {
         "name": "{name}",
@@ -295,7 +295,7 @@
     },
     "lunch3_expose_honest_7": {
         "name": "{name}",
-        "text": "*Dain gives a short reply and looks away. Her earlier excitement is gone.*"
+        "text": "*Dain answers briefly and looks away, her excitement gone.*"
     },
     "lunch3_expose_excuse_1": {
         "name": "{name}",
@@ -315,39 +315,39 @@
     },
     "lunch3_expose_excuse_4": {
         "name": "Dain",
-        "text": "*Dain stuffs the still-wrapped soboro bun into her bag.*"
+        "text": "*She puts the unopened soboro bun in her bag.*"
     },
     "lunch3_expose_run_1": {
         "name": "{name}",
-        "text": "*I push through the classroom door. Behind me, chairs scrape all at once.*"
+        "text": "*I push through the door. Chairs scrape all at once behind me.*"
     },
     "lunch3_expose_run_2": {
         "name": "{name}",
-        "text": "*Behind me, chairs scrape back one after another. No one follows me out. All afternoon, I can't focus on the chalk marks on the board, and beneath my desk I keep turning my phone screen on and off.*"
+        "text": "*Behind me, chairs scrape one after another; no one follows. All afternoon in class, I can't focus on the board and keep turning my phone screen on and off under the desk.*"
     },
     "lunch3_share_1": {
         "name": "{name}",
-        "text": "*When I suggest sharing, all three laugh. Even after the laughter stops, no one's chopsticks reach the rolled omelette first.*"
+        "text": "Let's cut it up and share. That works, right? *All three smile; their chopsticks stay still.*"
     },
     "lunch3_share_cool": {
         "name": "{name}",
-        "text": "*I set the last piece in the middle. The three of them split it, but nobody laughs.*"
+        "text": "*The three share the last piece. No smiles.*"
     },
     "lunch3_share_neg": {
         "name": "{name}",
-        "text": "*I put the egg roll in the middle. Nobody reaches. One of them has already closed her lunch box.*"
+        "text": "*Rolled omelet in the middle. The chopsticks stay still; one person has already closed her lunchbox.*"
     },
     "lunch3_share_solo": {
         "name": "{name}",
-        "text": "*The three of them split the omelette a little at a time. No one gets up until the final halved piece is gone.*"
+        "text": "*They share the last piece and stay seated.*"
     },
     "lunch3_harem_1": {
         "name": "{name}",
-        "text": "*The three of them each take a little. Only the corners of Seoyeon's mouth lift, Dain laughs louder than usual, and Yuna never takes out the note she folded.*"
+        "text": "*The three share small portions. Seoyeon smiles faintly, Dain laughs louder than usual. Yuna never takes out the folded note.*"
     },
     "lunch3_end": {
         "name": "{name}",
-        "text": "*The bell rings and I close the lunchbox lid. No one brings up the weekend plans again.*"
+        "text": "*The bell rings; I close my lunchbox. No more talk of plans.*"
     },
     "lunch3_give_seo_2_check": {},
     "lunch3_give_seo_dain_affinity": {},
