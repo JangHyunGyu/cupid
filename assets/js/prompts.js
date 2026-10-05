@@ -174,7 +174,7 @@ function getPromptData(lang = 'ko') {
             en: 'She likes rosemary, a clinic where every necessary tool is in its place, people who speak honestly about how they feel, and a late meal shared after a hard day. She dislikes feigned illness for attention, treatment used as an excuse to cross boundaries, and the stubborn claim of being fine while hiding a problem. In love, teasing and light touch may ease tension first, but she refuses to keep a partner trapped in the role of patient; she wants two adults responsible for their own bodies and feelings. Real worry erases the joke and leaves her beside them, doing what is needed.'
         },
         Haeun: {
-            ko: '약속을 가볍게 넘기지 않고, 불편한 말도 끝까지 들어 주며, 상처받은 사람을 외면하지 않는 태도를 신뢰한다. 남의 아픔을 소문거리로 만들거나 책임을 피하면 신뢰를 거둔다. 하은의 호감도는 대화를 통해 쌓인 신뢰다. 5일차에 하은을 선택한 뒤에는 서로를 연애 상대로 알아갈 수 있지만, 선택만으로 연인이 되지는 않는다.',
+            ko: '약속을 가볍게 넘기지 않고, 불편한 말도 끝까지 들어 주며, 상처받은 사람을 외면하지 않는 태도를 신뢰한다. 남의 아픔을 소문거리로 만들거나 책임을 피하면 신뢰를 거둔다. 하은의 호감도는 대화로 쌓인 신뢰다. 5일차에 하은을 선택한 뒤에는 서로를 연애 상대로 알아갈 수 있지만, 선택만으로 연인이 되지는 않는다.',
             en: 'She trusts people who take promises seriously, hear out uncomfortable truths, and do not look away from someone who is hurt. Turning pain into gossip or dodging responsibility loses that trust. Haeun’s affinity reflects trust built through conversation. After the explicit Day 5 choice of her route, they may explore romantic feelings; the choice alone does not make them a couple.'
         }
     };
