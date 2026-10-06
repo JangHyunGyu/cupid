@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.296";
+const ASSET_VERSION = "2.9.297";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -1353,7 +1353,8 @@ function logCupidError(error, options = {}) {
         const endpoint = API_ENDPOINT + 'error-logs';
         if (typeof navigator !== 'undefined' && navigator.sendBeacon && typeof Blob !== 'undefined') {
             try {
-                const sent = navigator.sendBeacon(endpoint, new Blob([body], { type: 'application/json' }));
+                // sendBeacon은 자격 증명을 포함해 보내므로 application/json이면 사전 요청에서 막혀 보고가 사라집니다. text/plain은 사전 요청 없이 바로 전달됩니다.
+                const sent = navigator.sendBeacon(endpoint, new Blob([body], { type: 'text/plain;charset=UTF-8' }));
                 if (sent) return true;
             } catch (_) {}
         }

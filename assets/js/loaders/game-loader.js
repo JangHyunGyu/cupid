@@ -54,7 +54,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-    const version = '2.9.296';
+    const version = '2.9.297';
     const LOAD_RETRIES = 3;
 
     // =========================================================================
@@ -711,7 +711,8 @@
             var body = JSON.stringify(payload);
             if (typeof navigator !== 'undefined' && navigator.sendBeacon) {
                 try {
-                    var beaconBody = typeof Blob !== 'undefined' ? new Blob([body], { type: 'application/json' }) : body;
+                    // sendBeacon은 자격 증명을 포함해 보내므로 application/json이면 사전 요청에서 막혀 보고가 사라집니다. text/plain은 사전 요청 없이 바로 전달됩니다.
+                    var beaconBody = typeof Blob !== 'undefined' ? new Blob([body], { type: 'text/plain;charset=UTF-8' }) : body;
                     var sent = navigator.sendBeacon(ERROR_ENDPOINT, beaconBody);
                     if (sent) return true;
                 } catch (_) {}
