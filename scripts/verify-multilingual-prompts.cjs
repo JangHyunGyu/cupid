@@ -1011,8 +1011,9 @@ for (const lang of languages) {
     `group/${lang} does not isolate both character cards for local prompt compaction`);
     assert(parts.stable.includes(leadName) && parts.stable.includes(tempterName),
         `group/${lang} lost exact localized speaker names`);
-    assert(parts.stable.includes('Recovery is capped at +3 for either character')
-        && parts.stable.includes('+3 total across both characters'),
+    assert(parts.stable.includes('Score recovery separately for each character: each may recover at most +3')
+        && !parts.stable.includes('+3 total across both characters')
+        && !parts.stable.includes('sum of positive affinity values'),
         `group/${lang} lost the recovery distribution rule`);
     assert(parts.stable.includes('[Group choice mission]')
         && parts.stable.includes("the unchosen character's affinity must be negative")
@@ -1078,8 +1079,9 @@ for (const lang of languages) {
         && !socialParts.stable.includes('two-timing from the start')
         && !socialParts.stable.includes('-40 or -50'),
     `group-social/${lang} leaks the betrayal confrontation`);
-    assert(socialParts.stable.includes('Either character may gain at most +3')
-        && socialParts.stable.includes('must not exceed +3')
+    assert(socialParts.stable.includes('Score affinity separately for each character. Each may gain at most +3')
+        && socialParts.stable.includes('one character’s score never reduces the other’s')
+        && !socialParts.stable.includes('must not exceed +3')
         && socialParts.stable.includes('Do not award points merely for continuing the conversation'),
     `group-social/${lang} lost bounded, behavior-based affinity scoring`);
     assert(socialParts.stable.includes('[Group choice mission]')

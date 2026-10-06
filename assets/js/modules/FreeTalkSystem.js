@@ -54,6 +54,7 @@ const cupidSanitizeLatestUserText = CupidFreeTalkCore.sanitizeLatestUserText;
 const cupidTruncateLatestUserText = CupidFreeTalkCore.truncateLatestUserText;
 const cupidFindLatestUserText = CupidFreeTalkCore.findLatestUserText;
 const GROUP_FREE_TALK_SKIP_AFFINITY_PENALTY = -20;
+const GROUP_FREE_TALK_PER_CHARACTER_TURN_GAIN_MAX = 3;
 
 class FreeTalkSystem {
     /**
@@ -748,29 +749,29 @@ class FreeTalkSystem {
             const tips = {
                 es: isRemote
                     ? "<b>Tip:</b> Describe el tono con asteriscos, ej: <i>*sonriendo* Hola...</i>"
-                    : "<b>Tip:</b> Describe la escena o acciones, ej: <i>*toma la mano* Vamos.</i>",
+                    : "<b>Tip:</b> Describe la escena o acciones, ej: <i>*le ofrece una bebida* Antes se te veía cansada. Tómate esto y descansa un poco.</i>",
                 ja: isRemote
                     ? "<b>ヒント：</b>「<i>*笑顔で* ねえ</i>」のように、雰囲気や状況も添えてみてね。"
-                    : "<b>ヒント：</b>「<i>*手を握って* 行こう</i>」のように、動作も添えて話してみてね。",
+                    : "<b>ヒント：</b>「<i>*飲み物を差し出して* さっき疲れてるみたいだったから。これ飲んで少し休んで</i>」のように、動作も添えて話してみてね。",
                 en: isRemote
                     ? "<b>Tip:</b> Describe the tone in asterisks, e.g., <i>*smiling* Hey...</i>"
-                    : "<b>Tip:</b> Describe the scene or an action, e.g., <i>*holds her hand* Let's go.</i>",
+                    : "<b>Tip:</b> Describe the scene or an action, e.g., <i>*hands her a drink* You looked worn out earlier. Take a break with this.</i>",
                 fr: isRemote
                     ? "<b>Astuce :</b> Décrivez le ton entre astérisques, par ex. : <i>*en souriant* Salut…</i>"
-                    : "<b>Astuce :</b> Décrivez la scène ou les actions, par ex. : <i>*prend la main* Allons-y.</i>",
+                    : "<b>Astuce :</b> Décrivez la scène ou les actions, par ex. : <i>*lui tend une boisson* Tu avais l’air épuisée tout à l’heure. Bois ça et fais une pause.</i>",
                 de: isRemote
                     ? "<b>Tipp:</b> Beschreibe den Ton in Sternchen, z. B. <i>*lächelt* Hey ...</i>"
-                    : "<b>Tipp:</b> Beschreibe die Szene oder eine Handlung, z. B. <i>*nimmt ihre Hand* Komm mit.</i>",
+                    : "<b>Tipp:</b> Beschreibe die Szene oder eine Handlung, z. B. <i>*reicht ihr ein Getränk* Du sahst vorhin ziemlich erschöpft aus. Trink das und mach kurz Pause.</i>",
                 pt: isRemote
                     ? "<b>Dica:</b> Descreva o tom com asteriscos, ex: <i>*sorrindo* Oi...</i>"
-                    : "<b>Dica:</b> Descreva a cena ou ações, ex: <i>*segura a mão* Vamos.</i>",
+                    : "<b>Dica:</b> Descreva a cena ou ações, ex: <i>*oferece uma bebida* Você parecia cansada mais cedo. Toma isto e descansa um pouco.</i>",
                 zh: isRemote
                     ? "<b>提示：</b>可以用星号描述语气，比如：<i>*笑着* 喂……</i>"
-                    : "<b>提示：</b>可以描述场景或动作，比如：<i>*牵起她的手* 走吧。</i>"
+                    : "<b>提示：</b>可以描述场景或动作，比如：<i>*递给她一瓶饮料* 刚才看你挺累的。喝点这个，歇一会儿吧。</i>"
             };
             chatGuideEl.innerHTML = tips[lang] || (isRemote
                 ? "<b>Tip:</b> <i>*웃으며* 자?</i> 처럼 어조나 상황을 표현해보세요."
-                : "<b>Tip:</b> <i>*손을 잡으며* 같이 가자.</i> 처럼 말해보세요.");
+                : "<b>Tip:</b> <i>*음료수를 건네며* 아까 좀 지쳐 보이더라. 이거 마시고 잠깐 쉬어.</i> 처럼 행동과 말을 함께 써 보세요.");
         }
 
         // ─────────────────────────────────────────────────────────────
@@ -1588,6 +1589,7 @@ class FreeTalkSystem {
                 finalContent,
                 {
                     characterName: scene.name || charKey,
+                    characterId: charKey,
                     establishedRelationship: _isDatingCurrentForBoundary,
                     nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true
                 }
@@ -2135,16 +2137,18 @@ class FreeTalkSystem {
         }
     }
 
-    _applyGroupAffinity(change, speakerId, positiveBudget, latestUserText = '', scene = null) {
+    // Each group speaker is scored independently: every character may gain up to +3 per turn on its own,
+    // matching the documented 18 turns x 3 = 54 pre-ending free-talk budget per character (2026-10-06).
+    _applyGroupAffinity(change, speakerId, latestUserText = '', scene = null) {
         if (!this.stateManager.stats?.[speakerId]) return null;
         const previousValue = this.stateManager.getAffinity(speakerId);
         let requestedChange = CupidFreeTalkCore.enforceCupidAffinityIntimacyBoundary(
             change,
             latestUserText,
             previousValue,
-            { nonRomance: speakerId === 'Haeun' && scene?.haeunRomance !== true }
+            { characterId: speakerId, nonRomance: speakerId === 'Haeun' && scene?.haeunRomance !== true }
         );
-        if (requestedChange > 0) requestedChange = Math.min(requestedChange, 3, positiveBudget);
+        if (requestedChange > 0) requestedChange = Math.min(requestedChange, GROUP_FREE_TALK_PER_CHARACTER_TURN_GAIN_MAX);
         if (requestedChange === 0) {
             return { change: 0, value: previousValue, requestedChange: 0, positiveUsed: 0 };
         }
@@ -2214,16 +2218,13 @@ class FreeTalkSystem {
         // Skipping or leaving between speakers must not retain half a turn's rewards.
         this._assertRequestContext(requestContext);
         const commitTurn = () => {
-        let positiveBudget = 3;
         for (const conversation of rendered) {
             const affinityResult = this._applyGroupAffinity(
                 conversation.affinity,
                 conversation.speakerId,
-                positiveBudget,
                 latestUserText,
                 scene
             );
-            positiveBudget = Math.max(0, positiveBudget - (affinityResult?.positiveUsed || 0));
             const nextAftermath = CupidFreeTalkCore.updateRelationshipAftermath(
                 this.stateManager.getRelationshipAftermath?.(conversation.speakerId),
                 affinityResult?.requestedChange ?? 0,
@@ -2372,6 +2373,7 @@ class FreeTalkSystem {
                     finalContent,
                     {
                         characterName: participant.name,
+                        characterId: participant.id,
                         nonRomance: participant.id === 'Haeun' && scene.haeunRomance !== true
                     }
                 ))
@@ -3085,7 +3087,7 @@ class FreeTalkSystem {
             change,
             latestUserText,
             this._getSceneDialoguePolicy(scene).affinity,
-            { nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true }
+            { characterId: charKey, nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true }
         );
         if (requestedChange === 0) {
             return { change: 0, value: previousValue, requestedChange: 0 };

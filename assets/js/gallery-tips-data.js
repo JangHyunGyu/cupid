@@ -11,7 +11,7 @@
  * - 캐릭터 팁의 제목은 GalleryData의 캐릭터 이름을 사용합니다.
  * - gateByMet 항목(하은)은 캐릭터를 만나기 전에는 "???" 잠금 행으로만 보입니다.
  *
- * 내용은 게임 코드 기준입니다(턴당 +3 한도, 그룹 점수 공유, 그룹 건너뛰기 -20,
+ * 내용은 게임 코드 기준입니다(턴당 +3 한도, 그룹은 캐릭터별 독립 +3, 그룹 건너뛰기 -20,
  * 엔딩 후 0점 등). 내부 프롬프트 문구는 옮기지 않고 경향만 풀어 썼습니다.
  * 수치가 바뀌면 이 파일과 tests/gallery-tips.test.cjs를 함께 갱신하세요.
  */
@@ -58,9 +58,9 @@ class GalleryTipsData {
                     '짧게 쓴다고 깎이지는 않아요. 다만 짧은 말은 점수도 작은 편이에요.',
                     '방금 장면에서 일어난 일이나 캐릭터가 전에 들려준 이야기를 기억한다는 걸 보여 주면 반응이 한결 따뜻해져요. 칭찬 한마디보다 구체적인 기억이 더 잘 통해요.'
                 ] },
-                group: { title: '그룹 대화', summary: '점수를 나눠 갖고, 중간에 건너뛰면 각각 -20이에요.', points: [
-                    '두 사람 이상이 함께 있는 장면에서는 메시지 하나에 여러 캐릭터가 반응해요. 이때 오르는 점수는 합쳐서 최대 +3이고 캐릭터들이 나눠 가져요.',
-                    '한 사람의 호감도를 올리고 싶다면 1:1 장면에 힘을 쏟는 편이 좋아요.',
+                group: { title: '그룹 대화', summary: '캐릭터마다 점수를 따로 받아요. 중간에 건너뛰면 각각 -20이에요.', points: [
+                    '두 사람 이상이 함께 있는 장면에서는 메시지 하나에 여러 캐릭터가 반응해요. 점수는 캐릭터마다 따로 매겨져서 각자 최대 +3까지 오를 수 있어요.',
+                    '두 사람을 모두 챙기면 둘 다 점수를 얻어요. 한 사람 편만 들면 다른 사람은 서운해서 점수가 내려갈 수 있어요.',
                     '그룹 대화를 중간에 건너뛰면 함께한 두 캐릭터의 호감도가 각각 20 떨어져요. 건너뛰기 전에 안내 창이 먼저 뜹니다. 1:1 대화는 건너뛰어도 감점은 없지만 남은 메시지의 점수를 놓치게 돼요.'
                 ] },
                 mistakes: { title: '감점과 만회', summary: '무례함과 거짓말은 크게 깎여요. 진심 어린 사과는 도움이 돼요.', points: [
@@ -148,9 +148,9 @@ class GalleryTipsData {
                     'A short message is not penalized, but it rarely earns much either.',
                     'Showing that you remember what just happened in the scene, or something the character told you earlier, gets a warmer reaction. A specific memory beats a quick compliment.'
                 ] },
-                group: { title: 'Group talk', summary: 'Points are shared, and skipping costs \u221220 each.', points: [
-                    'In scenes with several characters, one message gets reactions from more than one of them. The positive points from that message are shared between them, +3 in total.',
-                    'If you want to raise one person\u2019s affinity, put your effort into the one-on-one scenes.',
+                group: { title: 'Group talk', summary: 'Each character is scored separately, and skipping costs \u221220 each.', points: [
+                    'In scenes with several characters, one message gets reactions from more than one of them. Each character is scored separately and can gain up to +3 from that message.',
+                    'Looking out for both of them can earn points with both. Siding with only one may leave the other hurt and cost you points with her.',
                     'Skipping a group conversation lowers the affinity of both characters in it by 20 each. The game asks you to confirm first. Skipping a one-on-one scene costs nothing, but you give up the points from its remaining messages.'
                 ] },
                 mistakes: { title: 'Penalties and making amends', summary: 'Rudeness and lies cost a lot. A sincere apology helps.', points: [
@@ -238,9 +238,9 @@ class GalleryTipsData {
                     'Escribir poco no se penaliza, pero rara vez suma mucho.',
                     'Mostrar que recuerdas lo que acaba de pasar en la escena o algo que el personaje te contó antes provoca una reacción más cálida. Un recuerdo concreto vale más que un cumplido rápido.'
                 ] },
-                group: { title: 'Charla en grupo', summary: 'Los puntos se reparten y saltarla cuesta \u221220 a cada uno.', points: [
-                    'En las escenas con varios personajes, un mensaje recibe reacciones de más de uno. Los puntos positivos de ese mensaje se reparten entre ellos, con un total de +3.',
-                    'Si quieres subir la afinidad de una sola persona, concentra tu esfuerzo en las escenas a solas.',
+                group: { title: 'Charla en grupo', summary: 'Cada personaje puntúa por separado y saltarla cuesta \u221220 a cada uno.', points: [
+                    'En las escenas con varios personajes, un mensaje recibe reacciones de más de uno. Cada personaje puntúa por separado y puede ganar hasta +3 con ese mensaje.',
+                    'Si cuidas de las dos, puedes ganar puntos con ambas. Si solo te pones de parte de una, la otra puede sentirse dolida y perderás puntos con ella.',
                     'Saltarte una conversación de grupo baja 20 puntos la afinidad de cada uno de los dos personajes. El juego te pide confirmación antes. Saltarte una escena a solas no se penaliza, pero pierdes los puntos de los mensajes restantes.'
                 ] },
                 mistakes: { title: 'Penalizaciones y cómo repararlas', summary: 'La grosería y las mentiras restan mucho. Una disculpa sincera ayuda.', points: [
@@ -328,9 +328,9 @@ class GalleryTipsData {
                     '短く書いても減点にはなりません。ただ、短い言葉は点数も小さめです。',
                     'いまのシーンで起きたことや、キャラクターが以前話してくれたことを覚えていると伝えると、反応がぐっと温かくなります。ひと言の褒め言葉より、具体的な記憶のほうがよく伝わります。'
                 ] },
-                group: { title: 'グループトーク', summary: '点数は分け合い、途中でスキップするとそれぞれ-20です。', points: [
-                    '複数のキャラクターがいるシーンでは、1通のメッセージに何人かが反応します。このとき上がる点数は合計で最大+3で、キャラクター同士で分け合います。',
-                    '特定の相手の好感度を上げたいなら、一対一のシーンに力を入れるのがおすすめです。',
+                group: { title: 'グループトーク', summary: '点数はキャラクターごとに別々で、途中でスキップするとそれぞれ-20です。', points: [
+                    '複数のキャラクターがいるシーンでは、1通のメッセージに何人かが反応します。点数はキャラクターごとに別々に計算され、それぞれ最大+3まで上がります。',
+                    '2人とも気にかければ、2人から点数をもらえます。片方の肩だけ持つと、もう片方は寂しく感じて点数が下がることもあります。',
                     'グループトークを途中でスキップすると、その場にいた2人の好感度がそれぞれ20下がります。スキップする前に確認の画面が出ます。一対一の会話はスキップしても減点されませんが、残りのメッセージの点数は逃してしまいます。'
                 ] },
                 mistakes: { title: '減点と挽回', summary: '失礼な言葉や嘘は大きく下がります。心からの謝罪は助けになります。', points: [
@@ -418,9 +418,9 @@ class GalleryTipsData {
                     'Un message court n’est pas pénalisé, mais il rapporte rarement beaucoup.',
                     'Montrer que vous vous souvenez de ce qui vient de se passer dans la scène, ou de ce que le personnage vous a confié plus tôt, provoque une réaction plus chaleureuse. Un souvenir précis vaut mieux qu’un compliment vite fait.'
                 ] },
-                group: { title: 'Discussion de groupe', summary: 'Les points sont partagés, et passer coûte \u221220 à chacun.', points: [
-                    'Dans les scènes avec plusieurs personnages, un message déclenche des réactions de plusieurs d’entre eux. Les points positifs de ce message sont partagés entre eux, +3 au total.',
-                    'Si vous voulez faire monter l’affinité d’une seule personne, concentrez vos efforts sur les scènes en tête-à-tête.',
+                group: { title: 'Discussion de groupe', summary: 'Chaque personnage est noté séparément, et passer coûte \u221220 à chacun.', points: [
+                    'Dans les scènes avec plusieurs personnages, un message déclenche des réactions de plusieurs d’entre eux. Chaque personnage est noté séparément et peut gagner jusqu’à +3 avec ce message.',
+                    'Prendre soin des deux peut vous rapporter des points auprès des deux. Ne soutenir que l’une peut blesser l’autre et vous coûter des points auprès d’elle.',
                     'Passer une conversation de groupe fait baisser de 20 l’affinité de chacun des deux personnages. Le jeu vous demande d’abord de confirmer. Passer une scène en tête-à-tête n’est pas pénalisé, mais vous perdez les points des messages restants.'
                 ] },
                 mistakes: { title: 'Pénalités et réparation', summary: 'La grossièreté et les mensonges coûtent cher. Des excuses sincères aident.', points: [
@@ -508,9 +508,9 @@ class GalleryTipsData {
                     'Eine kurze Nachricht wird nicht bestraft, bringt aber selten viel.',
                     'Wenn du zeigst, dass du dich an das erinnerst, was gerade in der Szene passiert ist oder was die Figur dir früher erzählt hat, fällt die Reaktion wärmer aus. Eine konkrete Erinnerung wirkt besser als ein schnelles Kompliment.'
                 ] },
-                group: { title: 'Gruppengespräch', summary: 'Die Punkte werden geteilt, Überspringen kostet je \u221220.', points: [
-                    'In Szenen mit mehreren Figuren reagieren auf eine Nachricht mehrere von ihnen. Die positiven Punkte dieser Nachricht werden unter ihnen aufgeteilt, insgesamt +3.',
-                    'Wenn du die Zuneigung einer einzelnen Person steigern willst, steck deine Mühe in die Szenen unter vier Augen.',
+                group: { title: 'Gruppengespräch', summary: 'Jede Figur wird einzeln bewertet, Überspringen kostet je \u221220.', points: [
+                    'In Szenen mit mehreren Figuren reagieren auf eine Nachricht mehrere von ihnen. Jede Figur wird einzeln bewertet und kann mit dieser Nachricht bis zu +3 gewinnen.',
+                    'Wenn du dich um beide kümmerst, kannst du bei beiden punkten. Hältst du nur zu einer, kann die andere gekränkt sein, und du verlierst bei ihr Punkte.',
                     'Wer ein Gruppengespräch überspringt, senkt die Zuneigung beider beteiligten Figuren um jeweils 20. Das Spiel fragt vorher nach. Eine Szene unter vier Augen zu überspringen kostet nichts, aber du verlierst die Punkte der restlichen Nachrichten.'
                 ] },
                 mistakes: { title: 'Punktabzug und Wiedergutmachung', summary: 'Unhöflichkeit und Lügen kosten viel. Eine ehrliche Entschuldigung hilft.', points: [
@@ -598,9 +598,9 @@ class GalleryTipsData {
                     'Escrever pouco não é penalizado, mas raramente rende muito.',
                     'Mostrar que você lembra do que acabou de acontecer na cena, ou de algo que a personagem contou antes, provoca uma reação mais calorosa. Uma lembrança concreta vale mais que um elogio rápido.'
                 ] },
-                group: { title: 'Conversa em grupo', summary: 'Os pontos são divididos e pular custa \u221220 a cada uma.', points: [
-                    'Em cenas com várias personagens, uma mensagem recebe reações de mais de uma. Os pontos positivos dessa mensagem são divididos entre elas, num total de +3.',
-                    'Se quiser aumentar a afinidade de uma só pessoa, dedique seu esforço às cenas a dois.',
+                group: { title: 'Conversa em grupo', summary: 'Cada personagem é pontuada separadamente, e pular custa \u221220 a cada uma.', points: [
+                    'Em cenas com várias personagens, uma mensagem recebe reações de mais de uma. Cada personagem é pontuada separadamente e pode ganhar até +3 com essa mensagem.',
+                    'Dar atenção às duas pode render pontos com ambas. Ficar do lado de só uma pode magoar a outra e custar pontos com ela.',
                     'Pular uma conversa em grupo reduz em 20 a afinidade de cada uma das duas personagens. O jogo pede confirmação antes. Pular uma cena a dois não é penalizado, mas você perde os pontos das mensagens restantes.'
                 ] },
                 mistakes: { title: 'Penalidades e reparação', summary: 'Grosseria e mentiras custam caro. Um pedido de desculpas sincero ajuda.', points: [
@@ -688,9 +688,9 @@ class GalleryTipsData {
                     '写得短不会被扣分，只是短句得分通常也比较少。',
                     '如果你表现出记得刚才场景里发生的事，或角色之前讲过的话，对方的反应会温暖得多。具体的回忆比一句夸奖更管用。'
                 ] },
-                group: { title: '小组对话', summary: '得分由大家分享，中途跳过各扣20。', points: [
-                    '在有多个角色的场景里，一条消息会引来不止一个角色的反应。这条消息带来的正分由她们分享，合计最多+3。',
-                    '想提升某一个人的好感度，就把精力放在一对一的场景上。',
+                group: { title: '小组对话', summary: '每位角色单独计分，中途跳过各扣20。', points: [
+                    '在有多个角色的场景里，一条消息会引来不止一个角色的反应。每位角色单独计分，各自最多+3。',
+                    '同时照顾到两个人，就能在两人那里都得分。只偏向其中一人，另一人可能会失落，好感度也会下降。',
                     '中途跳过小组对话，在场的两位角色好感度会各下降20。跳过之前游戏会先弹出确认。跳过一对一对话不会扣分，但会错过剩余消息的得分。'
                 ] },
                 mistakes: { title: '扣分与补救', summary: '无礼和谎言扣得很重，真诚道歉有帮助。', points: [

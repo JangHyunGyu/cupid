@@ -1065,6 +1065,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 finalContent,
                 {
                     characterName: pendingCharName,
+                    characterId: requestCharId,
                     establishedRelationship: true,
                     completedActionIsFact: true
                 }
@@ -2009,7 +2010,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const requestedChange = GalleryFreeTalkCore.enforceCupidAffinityIntimacyBoundary(
             change,
             latestUserText,
-            currentAffinity
+            currentAffinity,
+            { characterId: charId }
         );
         const result = this.progress.changeCurrentAffinity(
             charId,

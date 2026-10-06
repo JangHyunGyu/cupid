@@ -1292,8 +1292,9 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
     assert.match(freeTalk, /setChatMemory\(groupKey, requestHistory\)/);
     assert.match(freeTalk, /addGroupConversationMemory\?\.\(\{/);
     assert.match(freeTalk, /includeGroupConversations: false/);
-    assert.match(freeTalk, /let positiveBudget = 3/);
-    assert.match(freeTalk, /requestedChange = Math\.min\(requestedChange, 3, positiveBudget\)/);
+    assert.doesNotMatch(freeTalk, /positiveBudget/);
+    assert.match(freeTalk, /const GROUP_FREE_TALK_PER_CHARACTER_TURN_GAIN_MAX = 3;/);
+    assert.match(freeTalk, /requestedChange = Math\.min\(requestedChange, GROUP_FREE_TALK_PER_CHARACTER_TURN_GAIN_MAX\)/);
     assert.match(freeTalk, /advanceGroupMessageQueue\(\)/);
     assert.match(gameEngine, /scene\.type === 'group_free_talk'/);
     assert.match(config, /charId: 'group'/);
@@ -1595,7 +1596,7 @@ test('group reply order, per-speaker affinity, and Dain expression assets follow
     system.currentSceneId = 'group_scene';
     system.currentMaxTurns = 3;
     freeTalkWindow.CupidAffinityGate = { commitKey: () => 'talk:group_scene:0', grant: (id, amount) => id === 'Teacher' && amount === 1 };
-    function commitTurn() { return system._applyGroupAffinity(1, 'Teacher', 3); }
+    function commitTurn() { return system._applyGroupAffinity(1, 'Teacher'); }
     const mildPositive = commitTurn();
     assert.equal(mildPositive.requestedChange, 1);
     assert.equal(mildPositive.appliedChange, 1);

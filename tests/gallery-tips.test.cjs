@@ -49,7 +49,7 @@ test('tips cover general advice plus every character in all eight gallery langua
 test('tips stay accurate to the game code values', () => {
     const freeTalk = read('assets/js/modules/FreeTalkSystem.js');
     const skipPenalty = Number(/GROUP_FREE_TALK_SKIP_AFFINITY_PENALTY\s*=\s*(-?\d+)/u.exec(freeTalk)[1]);
-    const groupBudget = Number(/let positiveBudget\s*=\s*(\d+)/u.exec(freeTalk)[1]);
+    const groupBudget = Number(/GROUP_FREE_TALK_PER_CHARACTER_TURN_GAIN_MAX\s*=\s*(\d+)/u.exec(freeTalk)[1]);
     assert.equal(skipPenalty, -20);
     assert.equal(groupBudget, 3);
 
@@ -65,7 +65,7 @@ test('tips stay accurate to the game code values', () => {
         assert(/\+3/u.test(basicsText), `${lang} basics mentions the +3 cap`);
         assert(/3/u.test(basicsText) && /5/u.test(basicsText), `${lang} basics mentions 3 or 5 messages`);
         const groupText = `${group.summary} ${group.points.join(' ')}`;
-        assert(/\+3/u.test(groupText), `${lang} group mentions the shared +3`);
+        assert(/\+3/u.test(groupText), `${lang} group mentions the per-character +3`);
         assert(groupText.includes(String(Math.abs(skipPenalty))), `${lang} group mentions the skip penalty`);
         const perfectText = perfect.points.join(' ');
         assert(/100/u.test(perfectText) && /4/u.test(perfectText) && /5/u.test(perfectText), `${lang} perfect rules`);

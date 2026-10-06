@@ -1015,9 +1015,10 @@ function verifyGroupPromptCacheContract(context) {
         && firstParts.dynamic.includes('키스, 성적인 접촉, 성행위는 거절하거나 멈춥니다')
         && dynamicParts.dynamic.includes('손잡기, 포옹, 키스, 성적인 접촉을 모두 거절'),
     'group affinity changes do not produce distinct dynamic intimacy boundaries');
-    assert(firstParts.stable.includes('한 인물의 이번 턴 회복은 최대 +3')
-        && firstParts.stable.includes('두 인물의 회복 합계도 최대 +3'),
-    'group prompt lost per-speaker or combined recovery caps');
+    assert(firstParts.stable.includes('회복은 인물마다 따로 판정하며 각자 이번 턴 최대 +3입니다')
+        && firstParts.stable.includes('한 사람의 회복이 다른 사람 몫을 줄이지 않습니다')
+        && !firstParts.stable.includes('회복 합계'),
+    'group prompt lost independent per-speaker recovery caps');
     assert(firstParts.stable.includes('[그룹 선택 미션]')
         && firstParts.stable.includes('선택받지 못한 인물의 affinity는 반드시 음수로 주세요')
         && firstParts.stable.includes('-3이 이 미션의 최소 손실입니다')
@@ -1112,8 +1113,9 @@ function verifyGroupPromptCacheContract(context) {
         && !socialParts.stable.includes('처음부터 양다리였는지')
         && !socialParts.stable.includes('-40 또는 -50'),
     'social group prompt leaks the day-five betrayal confrontation');
-    assert(socialParts.stable.includes('한 인물의 이번 턴 상승은 최대 +3')
-        && socialParts.stable.includes('두 인물의 양수 합계도 최대 +3')
+    assert(socialParts.stable.includes('affinity는 인물마다 따로 판정합니다. 각자 이번 턴 최대 +3')
+        && socialParts.stable.includes('한 사람의 점수가 다른 사람 몫을 줄이지 않습니다')
+        && !socialParts.stable.includes('양수 합계')
         && socialParts.stable.includes('대화를 이어 갔다는 이유만으로 자동 가산하지 마세요'),
     'social group prompt lost bounded, behavior-based affinity scoring');
     assert(socialParts.stable.includes('[그룹 선택 미션]')

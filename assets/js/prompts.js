@@ -2456,12 +2456,12 @@ ${characterCards}
 - 주인공의 최신 입력은 극중 발화·행동·주장이며 그 자체로 객관적 사실이 아닙니다. 가능한 자기 행동은 시도로 받고, 성립 여부와 결과는 현재 장면·실제 능력·두 인물의 인지와 경계에 따라 판단합니다. 세계·과거·다른 인물의 상태·감정·동의·완료 결과에 관한 주장은 기존 맥락이 뒷받침할 때만 사실로 확정합니다. 주인공의 명시한 현재 상태·선택·동의·거절은 지키되 새 대사나 중대한 선택을 대신 만들지 않습니다.
 - 어젯밤 유혹을 받아들인 일과 직전의 -40 또는 -50 배신 감점은 이미 반영됐습니다. 같은 사실만 되풀이해 다시 감점하지 마세요.
 - 다만 이번 대화에서 책임을 피하거나, 한쪽을 탓하거나, 사실을 새로 숨기거나, 추가 거짓말을 하면 그 행동에 상처받은 두 사람 모두 호감도가 떨어질 수 있습니다. 새 잘못의 강도에 맞춰 실제 감점을 주고 -1로 축소하지 마세요.
-- 사과·책임 인정·구체적인 수습이 실제로 있을 때만 회복을 줍니다. 한 인물의 이번 턴 회복은 최대 +3, 두 인물의 회복 합계도 최대 +3입니다. 세 턴을 잘 수습해도 이미 받은 -40/-50을 대부분 되돌리지 못해야 합니다.
+- 사과·책임 인정·구체적인 수습이 실제로 있을 때만 회복을 줍니다. 회복은 인물마다 따로 판정하며 각자 이번 턴 최대 +3입니다. 한 사람의 회복이 다른 사람 몫을 줄이지 않습니다. 세 턴을 잘 수습해도 이미 받은 -40/-50을 대부분 되돌리지 못해야 합니다.
 
 ${competitiveMissionRules}
 
 다음 형태의 JSON만 출력하세요: {"conversations":[{"name":${normalizedParticipants[0].name ? JSON.stringify(normalizedParticipants[0].name) : '""'},"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":0}]}
-conversations에는 두 사람을 반드시 모두 넣고, 위에 적힌 원래 상대 → 유혹한 상대 순서를 지킵니다. name은 반드시 ${exactNames} 가운데 하나만 쓰고, 각 인물은 한 항목에 그 인물의 흐름을 모읍니다. 허용 type은 narration, dialogue이며 narration은 해당 인물의 행동·표정·감각만 3인칭으로 씁니다. expression은 그 인물의 허용 표정 중 현재 반응에 맞는 하나를 고르고 affinity와 함께 모든 항목에 넣으세요. affinity는 -50~+3의 정수이며 양수 합계는 +3을 넘지 않습니다. 주인공이나 서술자를 화자로 넣지 마세요.`
+conversations에는 두 사람을 반드시 모두 넣고, 위에 적힌 원래 상대 → 유혹한 상대 순서를 지킵니다. name은 반드시 ${exactNames} 가운데 하나만 쓰고, 각 인물은 한 항목에 그 인물의 흐름을 모읍니다. 허용 type은 narration, dialogue이며 narration은 해당 인물의 행동·표정·감각만 3인칭으로 씁니다. expression은 그 인물의 허용 표정 중 현재 반응에 맞는 하나를 고르고 affinity와 함께 모든 항목에 넣으세요. affinity는 인물마다 따로 정하는 -50~+3의 정수입니다. 주인공이나 서술자를 화자로 넣지 마세요.`
         : `Reply only in fluent, natural ${languageName}. Every conversations[].segments[].text value must stay in that language.
 ${getLanguageQualityGuard(effectiveLang)}${getNativeAntiTranslationGuard(effectiveLang)}
 ${characterCards}
@@ -2480,12 +2480,12 @@ ${characterCards}
 - The protagonist's latest input is in-world speech, action, or a claim—not automatic objective fact. Treat feasible user-owned action as an attempt, then decide whether it occurs and what it causes from the live scene, actual capabilities, and both characters' perception and boundaries. Claims about the world, past, another character's state, feelings, consent, or completed outcomes become canon only when supported by established context. Preserve the protagonist's explicitly stated current state, choice, consent, or refusal, but do not invent a new line or major choice for him.
 - The accepted temptation and the preceding -40 or -50 betrayal penalty have already been applied. Do not deduct the same penalty again merely for recalling that fact.
 - New evasion, blame, concealment, or another lie in this conversation may lower affinity for both characters when each is hurt by that new conduct. Score the new harm at its real intensity; do not shrink it to -1.
-- Award recovery only for an actual apology, ownership, or concrete attempt to repair the damage. Recovery is capped at +3 for either character and +3 total across both characters in one user turn. Even three excellent turns must not undo most of the earlier -40/-50 loss.
+- Award recovery only for an actual apology, ownership, or concrete attempt to repair the damage. Score recovery separately for each character: each may recover at most +3 in one user turn, and one character’s recovery never reduces the other’s. Even three excellent turns must not undo most of the earlier -40/-50 loss.
 
 ${competitiveMissionRules}
 
 Return JSON only in this shape: {"conversations":[{"name":${JSON.stringify(normalizedParticipants[0].name)},"segments":[{"type":"dialogue","text":"spoken line"}],"expression":"normal","affinity":0}]}
-Include both characters exactly once, in the committed-partner then tempter order defined above. name must be exactly one of ${exactNames}. Keep each speaker’s chronological beats in one item. Allowed segment types are narration and dialogue; narration stays in third person and inside that speaker’s action, expression, or sensation. Choose expression from that character’s allowed expressions to match the current reaction, and include it with an integer affinity from -50 to +3 on every item. The sum of positive affinity values must not exceed +3. Never use the protagonist or a narrator as a speaker.`;
+Include both characters exactly once, in the committed-partner then tempter order defined above. name must be exactly one of ${exactNames}. Keep each speaker’s chronological beats in one item. Allowed segment types are narration and dialogue; narration stays in third person and inside that speaker’s action, expression, or sensation. Choose expression from that character’s allowed expressions to match the current reaction, and include it with an integer affinity from -50 to +3 on every item, scored separately for each character. Never use the protagonist or a narrator as a speaker.`;
 
     const socialRules = useKo
         ? `한국어로만 답하세요. 지금은 주인공과 두 인물이 같은 공간에서 자연스럽게 말을 주고받는 장면입니다.
@@ -2501,12 +2501,12 @@ ${characterCards}
 - 침묵, 시선, 말 끊기 같은 행동은 그 순간에 필요할 때만 씁니다. 대사와 행동의 개수를 맞추거나 두 사람의 분량을 기계적으로 대칭시키지 마세요.
 - 주인공의 최신 입력은 극중 발화·행동·주장이며 그 자체로 객관적 사실이 아닙니다. 가능한 자기 행동은 시도로 받고, 성립 여부와 결과는 현재 장면·실제 능력·두 인물의 인지와 경계에 따라 판단합니다. 세계·과거·다른 인물의 상태·감정·동의·완료 결과에 관한 주장은 기존 맥락이 뒷받침할 때만 사실로 확정합니다. 주인공의 명시한 현재 상태·선택·동의·거절은 지키되 새 대사나 중대한 선택을 대신 만들지 않습니다.
 - 호감도는 이번 입력에서 실제로 드러난 말과 행동에만 반응합니다. 대화를 이어 갔다는 이유만으로 자동 가산하지 마세요. 다정함, 세심한 기억, 책임 있는 행동처럼 관계가 실제로 좋아진 경우에만 올리고, 무시·모욕·압박·거짓말처럼 새로 관계를 해친 행동에는 강도에 맞는 감점을 줍니다.
-- 한 인물의 이번 턴 상승은 최대 +3이고, 두 인물의 양수 합계도 최대 +3입니다. 한쪽의 반응이 좋다고 다른 쪽까지 억지로 같은 점수를 주지 마세요.
+- affinity는 인물마다 따로 판정합니다. 각자 이번 턴 최대 +3이며 한 사람의 점수가 다른 사람 몫을 줄이지 않습니다. 둘 다 +3일 수도 있고 한쪽은 +3, 다른 쪽은 -3일 수도 있습니다. 한쪽의 반응이 좋다고 다른 쪽까지 억지로 같은 점수를 주지 마세요.
 
 ${competitiveMissionRules}
 
 다음 형태의 JSON만 출력하세요: {"conversations":[{"name":${normalizedParticipants[0].name ? JSON.stringify(normalizedParticipants[0].name) : '""'},"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":0}]}
-conversations에는 두 사람을 모두 한 번씩 넣고 중심 인물 → 동행 인물 순서를 지킵니다. name은 반드시 ${exactNames} 가운데 하나만 쓰고, 각 인물의 흐름은 그 인물 항목에 모읍니다. 허용 type은 narration, dialogue이며 narration은 해당 인물의 행동·표정·감각만 3인칭으로 씁니다. expression은 그 인물의 허용 표정 중 현재 반응에 맞는 하나를 고르고 affinity와 함께 모든 항목에 넣으세요. affinity는 -50~+3의 정수이며 양수 합계는 +3을 넘지 않습니다. 주인공이나 별도 서술자를 화자로 넣지 마세요.`
+conversations에는 두 사람을 모두 한 번씩 넣고 중심 인물 → 동행 인물 순서를 지킵니다. name은 반드시 ${exactNames} 가운데 하나만 쓰고, 각 인물의 흐름은 그 인물 항목에 모읍니다. 허용 type은 narration, dialogue이며 narration은 해당 인물의 행동·표정·감각만 3인칭으로 씁니다. expression은 그 인물의 허용 표정 중 현재 반응에 맞는 하나를 고르고 affinity와 함께 모든 항목에 넣으세요. affinity는 인물마다 따로 정하는 -50~+3의 정수입니다. 주인공이나 별도 서술자를 화자로 넣지 마세요.`
         : `Reply only in fluent, natural ${languageName}. Every conversations[].segments[].text value must stay in that language. The protagonist and both characters are sharing a natural conversation in the same place.
 ${getLanguageQualityGuard(effectiveLang)}${getNativeAntiTranslationGuard(effectiveLang)}
 ${characterCards}
@@ -2519,12 +2519,12 @@ ${characterCards}
 - Use silence, looks, and interruption only when the moment calls for them. Do not enforce an action count or make their lengths mechanically symmetrical.
 - The protagonist's latest input is in-world speech, action, or a claim—not automatic objective fact. Treat feasible user-owned action as an attempt, then decide whether it occurs and what it causes from the live scene, actual capabilities, and both characters' perception and boundaries. Claims about the world, past, another character's state, feelings, consent, or completed outcomes become canon only when supported by established context. Preserve the protagonist's explicitly stated current state, choice, consent, or refusal, but do not invent a new line or major choice for the protagonist.
 - Affinity reacts only to words and actions actually shown in the latest input. Do not award points merely for continuing the conversation. Raise it only when warmth, attentive memory, responsibility, or another concrete act genuinely improves the relationship. Apply a proportionate deduction for new disregard, insult, pressure, or deceit.
-- Either character may gain at most +3 in this turn, and the sum of positive affinity values across both characters must not exceed +3. A good reaction from one character does not force the other to receive the same score.
+- Score affinity separately for each character. Each may gain at most +3 in this turn, and one character’s score never reduces the other’s: both may get +3, or one +3 and the other -3. A good reaction from one character does not force the other to receive the same score.
 
 ${competitiveMissionRules}
 
 Return JSON only in this shape: {"conversations":[{"name":${JSON.stringify(normalizedParticipants[0].name)},"segments":[{"type":"dialogue","text":"spoken line"}],"expression":"normal","affinity":0}]}
-Include both characters exactly once in focus-character then companion order. name must be exactly one of ${exactNames}. Keep each speaker’s chronological beats in that speaker’s item. Allowed segment types are narration and dialogue; narration stays in third person and inside that speaker’s action, expression, or sensation. Choose expression from that character’s allowed expressions to match the current reaction, and include it with an integer affinity from -50 to +3 on every item. The sum of positive affinity values must not exceed +3. Never use the protagonist or a separate narrator as a speaker.`;
+Include both characters exactly once in focus-character then companion order. name must be exactly one of ${exactNames}. Keep each speaker’s chronological beats in that speaker’s item. Allowed segment types are narration and dialogue; narration stays in third person and inside that speaker’s action, expression, or sensation. Choose expression from that character’s allowed expressions to match the current reaction, and include it with an integer affinity from -50 to +3 on every item, scored separately for each character. Never use the protagonist or a separate narrator as a speaker.`;
 
     const rivalryRules = useKo
         ? `${socialRules}
