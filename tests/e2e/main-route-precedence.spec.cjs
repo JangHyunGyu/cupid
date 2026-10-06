@@ -1,4 +1,5 @@
 const { test, expect } = require('@playwright/test');
+const { installAffinitySeeder } = require('./helpers/affinity-seed.cjs');
 
 test.describe.configure({ mode: 'parallel' });
 
@@ -13,6 +14,7 @@ for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
             events.push(...(body?.events || []));
             return route.fulfill({ status: 200, json: { ok: true, eventIds: (body?.events || []).map(event => event.eventId) } });
         });
+        await installAffinitySeeder(page);
         await page.goto(lang === 'ko' ? '/game.html' : `/game-${lang}.html`);
         const ready = () => page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
         await ready();
@@ -23,7 +25,7 @@ for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
             e.stateManager.flags = { route_seoyeon: true, nurse_day4: true, nurse_route_unlocked: true,
                 homeroom_day4: bothVisits, homeroom_route_unlocked: bothVisits, day4_confession_accepted: true };
             for (const [id, affinity] of Object.entries({ Seoyeon: 71, Yuna: -4, Dain: -5, Teacher: 0, Nurse: 16 })) {
-                e.stateManager.stats[id].affinity = affinity;
+                window.cupidTestSeedAffinities({ [id]: affinity });
             }
             await e.renderScene('day4_night_branch');
             return { id: e.sceneRenderer.currentSceneId, text: e.sceneRenderer.getScene(e.sceneRenderer.currentSceneId).text,

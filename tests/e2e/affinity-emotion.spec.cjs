@@ -1,4 +1,5 @@
 const { test, expect } = require('@playwright/test');
+const { installAffinitySeeder } = require('./helpers/affinity-seed.cjs');
 
 for (const [lang, character, startAffinity, viewport] of [
     ['ko', 'Yuna', -38, { width: 390, height: 844 }],
@@ -22,6 +23,7 @@ for (const [lang, character, startAffinity, viewport] of [
             }
             return route.fulfill({ status: 200, json: { ok: true, eventIds: (body?.events || []).map(event => event.eventId) } });
         });
+        await installAffinitySeeder(page);
         await page.goto(lang === 'ko' ? '/game.html' : '/game-en.html');
         const ready = () => page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
         await ready();
@@ -29,7 +31,7 @@ for (const [lang, character, startAffinity, viewport] of [
             const e = window.gameEngine;
             e.dialogueSystem.typingSpeed = 0;
             e.stateManager.flags = { [`isDating_${character}`]: true };
-            e.stateManager.stats[character].affinity = startAffinity;
+            window.cupidTestSeedAffinities({ [character]: startAffinity });
             await e.renderScene(`wall_${character.toLowerCase()}_freetalk`);
         }, { character, startAffinity });
         let score = startAffinity;

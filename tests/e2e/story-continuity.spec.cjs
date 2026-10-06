@@ -1,6 +1,7 @@
 'use strict';
 
 const { expect, test } = require('@playwright/test');
+const { installAffinitySeeder } = require('./helpers/affinity-seed.cjs');
 
 async function ready(page) {
     await page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
@@ -9,6 +10,7 @@ async function ready(page) {
 for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
     test(`${lang}: edited story routers load translated dialogue and survive reload`, async ({ page }) => {
         test.setTimeout(90_000);
+        await installAffinitySeeder(page);
         await page.goto(lang === 'ko' ? '/game.html' : `/game-${lang}.html`);
         await ready(page);
         await page.evaluate(async () => {
@@ -36,6 +38,7 @@ for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
 }
 
 test('reload and landing Continue preserve authored rewards and the current scene', async ({ page }) => {
+    await installAffinitySeeder(page);
     await page.goto('/game.html');
     await ready(page);
     const observed = await page.evaluate(async () => {
@@ -61,6 +64,7 @@ test('reload and landing Continue preserve authored rewards and the current scen
             scene: window.gameEngine.sceneRenderer.currentSceneId
         }))).toEqual(expected);
     }
+    await installAffinitySeeder(page);
     await page.goto('/index.html');
     await page.locator('#continue-btn').click();
     await ready(page);
@@ -71,6 +75,7 @@ test('reload and landing Continue preserve authored rewards and the current scen
 });
 
 test('a saved authored penalty and its flags are not applied again on reload', async ({ page }) => {
+    await installAffinitySeeder(page);
     await page.goto('/game.html');
     await ready(page);
     const expected = await page.evaluate(async () => {
@@ -82,7 +87,7 @@ test('a saved authored penalty and its flags are not applied again on reload', a
             n.stats && Object.values(n.stats).some(s => s.affinity < 0)
         );
         const char = Object.keys(scene.stats).find(key => scene.stats[key].affinity < 0);
-        e.stateManager.stats[char].affinity = 60;
+        window.cupidTestSeedAffinities({ [char]: 60 });
         await e.renderScene(id);
         return { id: e.sceneRenderer.currentSceneId, char, affinity: e.stateManager.getAffinity(char), flags: e.stateManager.flags };
     });
@@ -98,12 +103,13 @@ test('a saved authored penalty and its flags are not applied again on reload', a
 });
 
 test('individual dialogue reload restores committed turns, reply, medium and location', async ({ page }) => {
+    await installAffinitySeeder(page);
     await page.goto('/game.html');
     await ready(page);
     await page.evaluate(async () => {
         const e = window.gameEngine;
         e.dialogueSystem.typingSpeed = 0;
-        e.stateManager.stats.Seoyeon.affinity = 70;
+        window.cupidTestSeedAffinities({ Seoyeon: 70 });
         await e.renderScene('after3_seo_freetalk');
         const talk = e.freeTalkSystem;
         const reply = { role: 'assistant', content: '오늘은 조금 더 얘기해도 돼.', speakerId: 'Seoyeon', speakerName: '서연' };
@@ -135,20 +141,21 @@ test('individual dialogue reload restores committed turns, reply, medium and loc
 });
 
 test('group dialogue reload retains its speakers despite a changed affinity ranking', async ({ page }) => {
+    await installAffinitySeeder(page);
     await page.goto('/game.html');
     await ready(page);
     const original = await page.evaluate(async () => {
         const e = window.gameEngine;
         e.dialogueSystem.typingSpeed = 0;
-        e.stateManager.stats.Dain.affinity = 50;
-        e.stateManager.stats.Yuna.affinity = 40;
-        e.stateManager.stats.Seoyeon.affinity = 30;
+        window.cupidTestSeedAffinities({ Dain: 50 });
+        window.cupidTestSeedAffinities({ Yuna: 40 });
+        window.cupidTestSeedAffinities({ Seoyeon: 30 });
         await e.renderScene('after2_group_dain_companion');
         const t = e.freeTalkSystem;
         const ids = t.groupParticipants.map(p => p.id);
         t.freeTalkTurns = 1;
         t._commitFreeTalkCheckpoint({ content: '자료도 여기 있어.', speakerId: 'Yuna', speakerName: '유나' });
-        e.stateManager.stats.Seoyeon.affinity = 90;
+        window.cupidTestSeedAffinities({ Seoyeon: 90 });
         e.saveGame();
         return ids;
     });
@@ -165,6 +172,7 @@ test('group dialogue reload retains its speakers despite a changed affinity rank
 
 test('school staff confrontation uses the missed check-in, with distinct speaker roles', async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 });
+    await installAffinitySeeder(page);
     await page.goto('/game.html');
     await ready(page);
     const prompts = await page.evaluate(async () => {

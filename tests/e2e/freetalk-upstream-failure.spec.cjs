@@ -1,4 +1,5 @@
 const { test, expect } = require('@playwright/test');
+const { installAffinitySeeder } = require('./helpers/affinity-seed.cjs');
 
 for (const surface of ['single', 'group', 'gallery']) for (const lang of ['ko', 'de']) {
     test(`${lang}/${surface}: failed generation preserves input and state; the next real reply completes once`, async ({ page }, testInfo) => {
@@ -37,18 +38,31 @@ for (const surface of ['single', 'group', 'gallery']) for (const lang of ['ko', 
             return route.fulfill({ status: 200, json: { ok: true, eventIds: (body.events || []).map(item => item.eventId) } });
         });
         const suffix = lang === 'ko' ? '' : `-${lang}`;
+        if (surface === 'gallery') {
+            // Gallery free talk opens only after the Nurse ending, 80+ affinity and 30 talks.
+            await page.addInitScript(() => {
+                if (localStorage.getItem('upstream-failure-gallery-seeded')) return;
+                localStorage.setItem('upstream-failure-gallery-seeded', '1');
+                localStorage.setItem('cupid_gallery', JSON.stringify({
+                    version: 2, affinityRebalanceVersion: 1,
+                    characters: { nurse: { met: true, maxAffinity: 90, currentAffinity: 60, galleryFreeTalkAffinityInitialized: true, perfectEndingCleared: true, freeTalkCount: 30 } },
+                    cg: {}, endings: {}, bgm: {}
+                }));
+            });
+        }
+        await installAffinitySeeder(page);
         await page.goto(`/${surface === 'gallery' ? 'gallery' : 'game'}${suffix}.html`);
         if (surface === 'gallery') {
             await page.waitForFunction(() => window.galleryFreeTalk);
-            await page.evaluate(() => window.galleryFreeTalk.open('nurse'));
+            expect(await page.evaluate(() => window.galleryFreeTalk.open('nurse'))).not.toBe(false);
         } else {
             await page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
             await page.evaluate(async surface => {
                 const e = window.gameEngine;
                 e.dialogueSystem.typingSpeed = 0;
                 e.uiManager.showModal = async () => {};
-                e.stateManager.stats.Teacher.affinity = 50;
-                e.stateManager.stats.Nurse.affinity = 60;
+                window.cupidTestSeedAffinities({ Teacher: 50 });
+                window.cupidTestSeedAffinities({ Nurse: 60 });
                 await e.renderScene(surface === 'group' ? 'after3_group_teacher_companion' : 'after_nurse_freetalk');
             }, surface);
         }

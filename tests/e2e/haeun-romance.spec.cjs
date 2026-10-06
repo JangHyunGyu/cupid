@@ -1,4 +1,6 @@
 const { test, expect } = require('@playwright/test');
+const { installAffinitySeeder } = require('./helpers/affinity-seed.cjs');
+const { isMediaFixtureRequest } = require('./helpers/media-fixture.cjs');
 const fs = require('node:fs');
 const path = require('node:path');
 const output = path.resolve(__dirname, '../../test-results/haeun-romance');
@@ -10,7 +12,8 @@ for (const [suffix, score] of [['', 60], ['-en', 45]]) {
         page.on('pageerror', e => errors.push(e.message));
         await page.setViewportSize(suffix ? { width: 390, height: 844 } : { width: 1280, height: 800 });
         await page.route('**/*', route => {
-            if (route.request().method() !== 'POST') return route.continue();
+            // The on-screen popup needs Haeun's sprite, so media session and grants reach the fixture server.
+            if (route.request().method() !== 'POST' || isMediaFixtureRequest(route.request())) return route.continue();
             const body = route.request().postDataJSON() || {};
             if (new URL(route.request().url()).pathname === '/api/ai') {
                 requests.push(body);
@@ -19,12 +22,13 @@ for (const [suffix, score] of [['', 60], ['-en', 45]]) {
             }
             return route.fulfill({ json: { ok: true, eventIds: (body.events || []).map(e => e.eventId) } });
         });
+        await installAffinitySeeder(page);
         await page.goto(`/game${suffix}.html`, { waitUntil: 'domcontentloaded' }); await ready(page);
         await page.evaluate(async score => {
             const e = window.gameEngine; e.dialogueSystem.typingSpeed = 0;
             e.stateManager.currentDay = 5;
-            e.stateManager.stats.Haeun.affinity = score;
-            e.stateManager.stats.Yuna.affinity = 80;
+            window.cupidTestSeedAffinities({ Haeun: score });
+            window.cupidTestSeedAffinities({ Yuna: 80 });
             e.stateManager.flags = { route_yuna: true, day4_confession_accepted: true, isDating_Yuna: true, messaged_day5_haeun_personal: true };
             await e.renderScene('after5_start');
         }, score);
@@ -83,6 +87,7 @@ for (const [suffix, score] of [['', 60], ['-en', 45]]) {
         expect(unlock.characters.haeun.perfectEndingCleared).toBe(true);
         expect(unlock.endings.perfect_haeun).toBeTruthy();
         expect(unlock.cg.ending_perfect_haeun.unlocked).toBe(true);
+        await installAffinitySeeder(page);
         await page.goto(`/gallery${suffix}.html`, { waitUntil: 'domcontentloaded' });
         await page.waitForFunction(() => window.gallery?.freeTalk && window.galleryProgressInstance);
         expect(await page.evaluate(() => window.galleryProgressInstance.isFreeTalkUnlocked('haeun'))).toBe(true);
@@ -97,10 +102,11 @@ for (const [suffix, score] of [['', 60], ['-en', 45]]) {
 }
 test('Haeun selected at 99 without enough successful dialogue resumes the original route', async ({ page }) => {
     await page.route('**/*', r => r.request().method()==='POST' ? r.fulfill({json:{ok:true}}) : r.continue());
+    await installAffinitySeeder(page);
     await page.goto('/game-en.html', { waitUntil: 'domcontentloaded' }); await ready(page);
     const result = await page.evaluate(async () => {
         const e=window.gameEngine; e.dialogueSystem.typingSpeed=0;e.stateManager.currentDay=5;
-        e.stateManager.stats.Haeun.affinity=99;
+        window.cupidTestSeedAffinities({ Haeun: 99 });
         e.stateManager.flags={haeun_route_selected:true,route_yuna:true,day4_confession_accepted:true};
         await e.renderScene('day5_haeun_romance_check');
         const scene=e.sceneRenderer.currentSceneId;
@@ -115,10 +121,11 @@ test('Haeun selected at 99 without enough successful dialogue resumes the origin
 
 test('a pre-switch Haeun save retains its remaining ten-turn conversation', async ({page})=>{
     await page.route('**/*',r=>r.request().method()==='POST'?r.fulfill({json:{ok:true}}):r.continue());
+    await installAffinitySeeder(page);
     await page.goto('/game-en.html', { waitUntil: 'domcontentloaded' });await ready(page);
     const result=await page.evaluate(async()=>{
         const e=window.gameEngine;e.dialogueSystem.typingSpeed=0;e.stateManager.currentDay=5;
-        e.stateManager.flags={haeun_route_selected:true};e.stateManager.stats.Haeun.affinity=75;
+        e.stateManager.flags={haeun_route_selected:true};window.cupidTestSeedAffinities({ Haeun: 75 });
         e.stateManager.freeTalkCheckpoint={sceneId:'day5_haeun_private_1',turns:7,completed:false,lastReply:{content:'We were talking here.',speakerName:'Haeun'}};
         await e.renderScene('day5_haeun_switch_yuna_entry');
         return {scene:e.sceneRenderer.currentSceneId,turns:e.freeTalkSystem.freeTalkTurns,max:e.freeTalkSystem.currentMaxTurns};

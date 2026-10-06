@@ -1,9 +1,11 @@
 const { test, expect } = require('@playwright/test');
+const { installAffinitySeeder } = require('./helpers/affinity-seed.cjs');
 
 test.describe.configure({ mode: 'parallel' });
 const characters = [['Seoyeon', 'seo'], ['Yuna', 'yuna'], ['Dain', 'dain']];
 
 async function openGame(page, lang, lightweight = false) {
+    await installAffinitySeeder(page);
     await page.route('**/*', route => {
         const request = route.request();
         if (request.method() === 'POST') return route.fulfill({ status: 200, json: { ok: true } });
@@ -36,7 +38,7 @@ for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
                 async function render(id, affinity, flags = {}) {
                     e.stateManager.flags = { ...flags };
                     e.stateManager.currentDay = id.startsWith('date_') || id === 'day4_date_branch' ? 4 : 3;
-                    for (const id of ['Seoyeon', 'Yuna', 'Dain']) e.stateManager.stats[id].affinity = id === character ? affinity : 50;
+                    window.cupidTestSeedAffinities(Object.fromEntries(['Seoyeon', 'Yuna', 'Dain'].map(id => [id, id === character ? affinity : 50])));
                     await e.renderScene(id);
                     return e.sceneRenderer.currentSceneId;
                 }
@@ -61,7 +63,7 @@ for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
                 result.waited = e.stateManager.getFlag('day4_waited');
                 result.dateAllowed = await render('day4_date_branch', 30, { [route]: true, [promise]: true });
                 // Seed a pre-update save at the first date scene; the next tier must recheck live affinity.
-                e.stateManager.stats[character].affinity = 29;
+                window.cupidTestSeedAffinities({ [character]: 29 });
                 e.saveGame();
                 return result;
             }, { character, short });

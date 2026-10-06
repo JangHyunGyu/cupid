@@ -1,4 +1,5 @@
 const { test, expect } = require('@playwright/test');
+const { installAffinitySeeder } = require('./helpers/affinity-seed.cjs');
 
 for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
     test(`${lang}: earlier incidents retain day four and cannot interrupt accepted temptation`, async ({ page }) => {
@@ -9,6 +10,7 @@ for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
             const body = request.postDataJSON();
             return route.fulfill({ status: 200, json: { ok: true, eventIds: (body?.events || []).map(event => event.eventId) } });
         });
+        await installAffinitySeeder(page);
         await page.goto(lang === 'ko' ? '/game.html' : `/game-${lang}.html`);
         const ready = () => page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
         await ready();
@@ -16,7 +18,7 @@ for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
             const e = window.gameEngine;
             e.dialogueSystem.typingSpeed = 0;
             e.stateManager.flags = { route_seoyeon: true, day3_caught_multiple_dates: true, harem_seed: true };
-            e.stateManager.stats.Seoyeon.affinity = 65;
+            window.cupidTestSeedAffinities({ Seoyeon: 65 });
             await e.renderScene('morning4_end');
             const visited = [];
             for (let i = 0; i < 10; i++) {
@@ -34,7 +36,7 @@ for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
         const accepted = await page.evaluate(async () => {
             const e = window.gameEngine;
             e.stateManager.flags.day4_waited = true;
-            e.stateManager.stats.Dain.affinity = -10;
+            window.cupidTestSeedAffinities({ Dain: -10 });
             await e.renderScene('wall_seo_glimpse_2');
             await e.executeChoice(e.sceneRenderer.getScene('wall_seo_glimpse_2').choices[1]);
             const cg = e.sceneRenderer.getScene(e.sceneRenderer.currentSceneId);

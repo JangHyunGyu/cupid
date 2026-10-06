@@ -1,6 +1,7 @@
 'use strict';
 
 const { expect, test } = require('@playwright/test');
+const { installAffinitySeeder } = require('./helpers/affinity-seed.cjs');
 
 async function waitForRuntime(page) {
     try {
@@ -78,13 +79,14 @@ test('explicit localized landing URL overrides a stale stored language', async (
 
 test('four-choice affinity scene renders all options and applies a trap penalty', async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 });
+    await installAffinitySeeder(page);
     await page.goto('/game.html');
     await waitForRuntime(page);
     await page.waitForFunction(() => window.gameEngine?.dialogueSystem);
 
     await page.evaluate(async () => {
         window.gameEngine.dialogueSystem.typingSpeed = 0;
-        window.gameEngine.stateManager.stats.Seoyeon.affinity = 50;
+        window.cupidTestSeedAffinities({ Seoyeon: 50 });
         await window.gameEngine.renderScene('lunch_seo_choice');
     });
     await page.locator('#dialogue-box').click();
@@ -325,6 +327,7 @@ test('new game reaches the name input scene without changing UI contracts', asyn
 });
 
 test('new game clears main chat context but preserves separate gallery memory', async ({ page }) => {
+    await installAffinitySeeder(page);
     await page.goto('/game.html');
     await waitForRuntime(page);
     await page.waitForFunction(() => window.gameEngine?.freeTalkSystem);
@@ -341,7 +344,7 @@ test('new game clears main chat context but preserves separate gallery memory', 
         const engine = window.gameEngine;
         engine.stateManager.playerName = 'Previous Player';
         engine.stateManager.currentDay = 5;
-        engine.stateManager.stats.Seoyeon.affinity = 87;
+        window.cupidTestSeedAffinities({ Seoyeon: 87 });
         engine.stateManager.flags.ending_perfect_seoyeon = true;
         engine.stateManager.storyFreeTalkGains.Seoyeon = 22;
         engine.stateManager.chatMemories.Seoyeon = [{ role: 'user', content: 'old main run' }];
@@ -410,27 +413,39 @@ test('main free-talk request keeps the complete per-character run history', asyn
 });
 
 test('main free-talk affinity pacing can recover after prior positive gains', async ({ page }) => {
+    await installAffinitySeeder(page);
     await page.goto('/game.html');
     await waitForRuntime(page);
     await page.waitForFunction(() => window.gameEngine?.freeTalkSystem);
 
-    const result = await page.evaluate(() => {
+    const result = await page.evaluate(async () => {
         const engine = window.gameEngine;
         const state = engine.stateManager;
-        state.stats.Seoyeon.affinity = 80;
+        const talk = engine.freeTalkSystem;
+        engine.dialogueSystem.typingSpeed = 0;
+        await engine.renderScene('lunch_seo_freetalk');
+        // Only per-turn pacing is under test, so one scene may commit eight scored turns.
+        talk.currentMaxTurns = 8;
+        // Each reply goes through the same gated turn commit the game uses (see tests/affinity-fixture.cjs).
+        const commitReplies = async () => {
+            const changes = [];
+            for (let turn = 0; turn < 8; turn += 1) {
+                const committed = await state.commitProgressEvent(`talk:${talk.currentSceneId}:${turn}`, function commitTurn() {
+                    return talk.applyAffinity(5, { name: 'Seoyeon' });
+                });
+                changes.push(committed.value.change);
+            }
+            return changes;
+        };
+
+        window.cupidTestSeedAffinities({ Seoyeon: 80 });
         state.storyFreeTalkGains.Seoyeon = 0;
+        const changes = await commitReplies();
 
-        const changes = [];
-        for (let turn = 0; turn < 8; turn += 1) {
-            changes.push(engine.freeTalkSystem.applyAffinity(5, { name: 'Seoyeon' }).change);
-        }
-
+        // A legacy gain record must not block recovery after the score drops back to 80.
         state.storyFreeTalkGains.Seoyeon = 22;
-        state.changeAffinity('Seoyeon', -20);
-        const recoveryChanges = [];
-        for (let turn = 0; turn < 8; turn += 1) {
-            recoveryChanges.push(engine.freeTalkSystem.applyAffinity(5, { name: 'Seoyeon' }).change);
-        }
+        window.cupidTestSeedAffinities({ Seoyeon: 80 });
+        const recoveryChanges = await commitReplies();
 
         const saved = state.exportState();
         const restored = new window.StateManager();
@@ -444,8 +459,9 @@ test('main free-talk affinity pacing can recover after prior positive gains', as
         };
     });
 
-    expect(result.changes).toEqual([3, 3, 3, 3, 2, 2, 2, 2]);
-    expect(result.recoveryChanges).toEqual([3, 3, 3, 3, 2, 2, 2, 2]);
+    // Since 681152f8 every positive turn is capped at a flat +3 up to the 100 ceiling.
+    expect(result.changes).toEqual([3, 3, 3, 3, 3, 3, 2, 0]);
+    expect(result.recoveryChanges).toEqual([3, 3, 3, 3, 3, 3, 2, 0]);
     expect(result.affinity).toBe(100);
     expect(result.legacyGain).toBe(22);
     expect(result.restoredLegacyGain).toBe(22);
@@ -457,18 +473,20 @@ test('gallery runtime includes the shared free-talk core', async ({ page }) => {
     await expect(page.locator('#gallery-freetalk-overlay')).toHaveCount(1);
 });
 
-test('ending collection renders 32 routes and records distinct route variants', async ({ page }) => {
+test('ending collection renders 33 routes and records distinct route variants', async ({ page }) => {
     await page.goto('/game.html');
     await waitForRuntime(page);
-    const result = await page.evaluate(() => {
+    const result = await page.evaluate(async () => {
         const engine = window.gameEngine;
-        engine.galleryManager.recordEndingScene('day5_seo_ending_freetalk_perfect', engine.stateManager);
+        engine.dialogueSystem.typingSpeed = 0;
+        // Gallery writes only stick from the scene runtime, so each ending is recorded by rendering it.
+        await engine.renderScene('day5_seo_ending_freetalk_perfect');
         engine.stateManager.setFlag('day5_abandoned_seoyeon', true);
-        engine.galleryManager.recordEndingScene('day5_seo_ending_freetalk_bittersweet', engine.stateManager);
+        await engine.renderScene('day5_seo_ending_freetalk_bittersweet');
         engine.stateManager.setFlag('day5_abandoned_seoyeon', false);
-        engine.galleryManager.recordEndingScene('day5_seo_ending_freetalk_bittersweet', engine.stateManager);
+        await engine.renderScene('day5_seo_ending_freetalk_bittersweet');
         engine.stateManager.setFlag('route_yuna', true);
-        engine.galleryManager.recordEndingScene('day5_ending_confess_fail', engine.stateManager);
+        await engine.renderScene('day5_ending_confess_fail');
         return JSON.parse(localStorage.getItem('cupid_gallery')).endings;
     });
     expect(Object.keys(result).sort()).toEqual([
@@ -477,34 +495,41 @@ test('ending collection renders 32 routes and records distinct route variants', 
 
     await page.goto('/gallery.html');
     await page.locator('[data-tab="endings"]').click();
-    await expect(page.locator('.ending-card')).toHaveCount(32);
-    await expect(page.locator('#ending-summary')).toContainText('4/32');
+    // The Haeun perfect ending (5ff374dd) brought the collection to 33 routes.
+    await expect(page.locator('.ending-card')).toHaveCount(33);
+    await expect(page.locator('#ending-summary')).toContainText('4/33');
     await expect(page.locator('[data-ending-id="perfect_seoyeon"]')).toHaveClass(/is-unlocked/);
     await expect(page.locator('[data-ending-id="true_seoyeon"]')).toHaveClass(/is-locked/);
 });
 
 test('game and gallery preserve valid outward expressions independently of affinity', async ({ page }) => {
+    // Sprites are protected media now, so src is an /api/media URL that resolves asynchronously.
+    const avatarSrc = () => page.evaluate(() => decodeURIComponent(window.__expressionAvatar?.getAttribute('src') || ''));
     await page.goto('/game.html');
     await waitForRuntime(page);
-    const gameAvatar = await page.evaluate(() => {
+    await page.evaluate(() => {
         const slot = document.createElement('div');
         const image = document.createElement('img');
         slot.appendChild(image);
+        window.__expressionAvatar = image;
         window.FreeTalkSystem.prototype.applyExpression.call(
-            { uiManager: { charSlots: { center: slot } } },
+            {
+                uiManager: { charSlots: { center: slot } },
+                _loadCupidProtectedImage: window.FreeTalkSystem.prototype._loadCupidProtectedImage
+            },
             'smile',
             { name: 'Yuna' }
         );
-        return image.getAttribute('src');
     });
-    expect(gameAvatar).toContain('yuna_smile.png');
+    await expect.poll(avatarSrc).toMatch(/characters\/yuna_smile\.(?:png|webp)/);
 
     await page.goto('/gallery.html');
     await page.waitForFunction(() => window.GalleryFreeTalk && window.CupidFreeTalkCore);
-    const galleryAvatar = await page.evaluate(() => {
+    await page.evaluate(() => {
         const image = document.createElement('img');
         image.id = 'gft-char-img';
         document.body.appendChild(image);
+        window.__expressionAvatar = image;
         window.GalleryFreeTalk.prototype._updateExpression.call(
             {
                 currentCharId: 'yuna',
@@ -515,9 +540,8 @@ test('game and gallery preserve valid outward expressions independently of affin
             'angry',
             'yuna'
         );
-        return image.getAttribute('src');
     });
-    expect(galleryAvatar).toContain('yuna_angry.png');
+    await expect.poll(avatarSrc).toMatch(/characters\/yuna_angry\.(?:png|webp)/);
 });
 
 test('gallery keeps relationship history and all ten emotional bands in the live prompt', async ({ page }) => {
@@ -719,7 +743,7 @@ test('gallery does not penalize a planned incident that the AI failed to establi
 
 test('legacy 100-point gallery progress drops to 99 and relocks perfect content once', async ({ page }) => {
     await page.goto('/gallery.html');
-    await page.waitForFunction(() => window.GalleryProgress && window.GalleryData && window.CupidFreeTalkCore);
+    await page.waitForFunction(() => window.GalleryProgress && window.GalleryData && window.CupidFreeTalkCore && window.galleryFreeTalk);
 
     const result = await page.evaluate(() => {
         localStorage.setItem('cupid_gallery', JSON.stringify({
@@ -752,7 +776,8 @@ test('legacy 100-point gallery progress drops to 99 and relocks perfect content 
         const progress = new window.GalleryProgress();
         const incidentState = progress.getGalleryIncidentState('seyoun');
         const unlockedBefore = progress.isFreeTalkUnlocked('seyoun');
-        progress.changeCurrentAffinity('seyoun', -50);
+        // Gallery scores only move through the free-talk scoring path.
+        window.galleryFreeTalk._applyAffinityChange(-50, 'seyoun', '');
         const saved = JSON.parse(localStorage.getItem('cupid_gallery'));
         const ids = ['seyoun', 'yuna', 'dain', 'teacher', 'nurse'];
         const perfectCgIds = ids.map(id => id === 'seyoun' ? 'ending_perfect_seoyeon' : `ending_perfect_${id}`);
@@ -785,6 +810,9 @@ test('legacy 100-point main save drops to 99, reroutes, and never downgrades twi
     await page.waitForFunction(() => window.SaveManager && window.StateManager);
 
     const result = await page.evaluate(() => {
+        // A legacy save predates the progress-integrity record. Opening the page already created one
+        // for the empty run, so drop it to reproduce a browser that only has the old save.
+        window.CupidStorage.removeItem('cupid_progress_integrity_v1');
         localStorage.setItem('cupid_save', JSON.stringify({
             currentSceneId: 'perfect_seo_5',
             lastBgUrl: 'assets/images/background/ending_perfect_seoyeon.png',
@@ -869,7 +897,7 @@ test('first gallery free-talk starts at max affinity and never resets a played r
         talk.open('seyoun');
         const firstStart = progress.getCurrentAffinity('seyoun');
         talk.close();
-        progress.changeCurrentAffinity('seyoun', -50);
+        talk._applyAffinityChange(-50, 'seyoun', '');
         talk.open('seyoun');
         const reopened = progress.getCurrentAffinity('seyoun');
         talk.close();

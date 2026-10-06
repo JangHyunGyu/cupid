@@ -1,4 +1,6 @@
 const { test, expect } = require('@playwright/test');
+const { installAffinitySeeder } = require('./helpers/affinity-seed.cjs');
+const { isMediaFixtureRequest } = require('./helpers/media-fixture.cjs');
 
 for (const mode of ['high', 'low']) for (const [index, character] of ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse'].entries()) {
     test(`${mode}/${character}: buildup, persisted rival, entry loss, group turns and archive`, async ({ page }) => {
@@ -9,7 +11,7 @@ for (const mode of ['high', 'low']) for (const [index, character] of ['Seoyeon',
         page.on('pageerror', error => errors.push(error.message));
         await page.route('**/*', async route => {
             const request = route.request();
-            if (request.method() !== 'POST') return route.continue();
+            if (request.method() !== 'POST' || isMediaFixtureRequest(request)) return route.continue();
             const body = request.postDataJSON() || {};
             if (new URL(request.url()).pathname === '/api/ai') {
                 requests.push(body);
@@ -32,6 +34,7 @@ for (const mode of ['high', 'low']) for (const [index, character] of ['Seoyeon',
             return route.fulfill({ status: 200, json: { ok: true, eventIds: (body.events || []).map(event => event.eventId) } });
         });
         await page.setViewportSize(index % 2 ? { width: 390, height: 844 } : { width: 1280, height: 800 });
+        await installAffinitySeeder(page);
         await page.goto('/game.html', { waitUntil: 'domcontentloaded' });
         const ready = () => page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
         await ready();
@@ -42,9 +45,9 @@ for (const mode of ['high', 'low']) for (const [index, character] of ['Seoyeon',
             e.stateManager.currentDay = mode === 'high' ? 5 : 4;
             e.stateManager.playerName = '검증';
             e.stateManager.flags = { route_seoyeon: true };
-            for (const id of ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse']) e.stateManager.stats[id].affinity = 79;
-            e.stateManager.stats[character].affinity = 80;
-            e.stateManager.stats.Haeun.affinity = mode === 'high' ? 12 : -1;
+            for (const id of ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse']) window.cupidTestSeedAffinities({ [id]: 79 });
+            window.cupidTestSeedAffinities({ [character]: 80 });
+            window.cupidTestSeedAffinities({ Haeun: mode === 'high' ? 12 : -1 });
             e.stateManager.setChatMemory('Haeun', [{ role: 'user', content: '지금은 얘기를 듣기 어려워.' }, { role: 'assistant', content: '제 얘기도 조금은 들어 주셨으면 좋겠어요.' }]);
             await e.renderScene(mode === 'high' ? 'day5_haeun_gate' : 'day4_haeun_gate');
             const seen = [];
@@ -74,8 +77,11 @@ for (const mode of ['high', 'low']) for (const [index, character] of ['Seoyeon',
         expect(await page.evaluate(() => window.gameEngine.sceneRenderer.currentSceneId)).toBe(sessionId);
         expect(await page.evaluate(() => window.gameEngine.freeTalkSystem.groupParticipants.map(participant => participant.id))).toEqual([character, 'Haeun']);
         await expect(page.locator('[data-group-char-id="Haeun"] img')).toBeVisible();
-        const dimensions = await page.evaluate(() => [...document.querySelectorAll('.group-freetalk-participant img')].map(img => ({ width: img.naturalWidth, height: img.naturalHeight })));
-        expect(dimensions.every(image => image.width > 0 && image.height > 0)).toBe(true);
+        // Protected sprites decode asynchronously, so wait until every participant image has real pixels.
+        await expect.poll(() => page.evaluate(() => {
+            const images = [...document.querySelectorAll('.group-freetalk-participant img')];
+            return images.length === 2 && images.every(img => img.complete && img.naturalWidth > 0 && img.naturalHeight > 0);
+        })).toBe(true);
         await page.screenshot({ path: `test-results/haeun-${mode}-${character}.png` });
         const turns = character === 'Seoyeon' ? 5 : 1;
         for (let turn = 0; turn < turns; turn++) {
@@ -117,7 +123,7 @@ for (const mode of ['high', 'low']) for (const [index, character] of ['Seoyeon',
                     await e.renderScene('day4_haeun_gate');
                     const morning = e.sceneRenderer.currentSceneId;
                     e.stateManager.currentDay = 5;
-                    e.stateManager.stats.Haeun.affinity = -1;
+                    window.cupidTestSeedAffinities({ Haeun: -1 });
                     await e.renderScene('day5_haeun_gate');
                     return { morning, festival: e.sceneRenderer.currentSceneId, completed: e.stateManager.getFlag('day4_haeun_event_done') };
                 });
@@ -131,6 +137,7 @@ for (const mode of ['high', 'low']) for (const [index, character] of ['Seoyeon',
 test('legacy Day 5 reputation saves keep their date, score and continuation', async ({ page }) => {
     await page.route('**/*', route => route.request().method() === 'POST'
         ? route.fulfill({ json: { ok: true } }) : route.continue());
+    await installAffinitySeeder(page);
     await page.goto('/game.html', { waitUntil: 'domcontentloaded' });
     const ready = () => page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
     await ready();
@@ -138,7 +145,7 @@ test('legacy Day 5 reputation saves keep their date, score and continuation', as
         const e = window.gameEngine;
         e.dialogueSystem.typingSpeed = 0;
         e.stateManager.currentDay = 5;
-        e.stateManager.stats.Yuna.affinity = 65;
+        window.cupidTestSeedAffinities({ Yuna: 65 });
         e.stateManager.flags = { day5_haeun_rival: 'Yuna', day5_haeun_misunderstanding_started: true };
         await e.renderScene('day5_haeun_concern_yuna_group_talk');
     });

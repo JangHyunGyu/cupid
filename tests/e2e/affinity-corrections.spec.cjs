@@ -48,17 +48,22 @@ for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
         expect(corrected.seoyeonTalk).toBe(false);
         expect(corrected.lastExpression).toBe(false);
         expect(corrected.dainTalk).toBe(true);
-        await page.evaluate(async () => {
-            const p = window.gallery.progress;
-            p.data.characters.seyoun.currentAffinity = 99;
-            p.save();
-            const result = p.changeCurrentAffinity('seyoun', 1);
+        const requalified = await page.evaluate(async () => {
+            // Direct progress writes are ignored since d42fcee2, so the score climbs back to 100
+            // through the gallery free-talk scoring path (+5 per reply at most).
+            const talk = window.galleryFreeTalk;
+            let result = null;
+            for (let reply = 0; reply < 10 && talk.progress.getCurrentAffinity('seyoun') < 100; reply++) {
+                result = talk._applyAffinityChange(5, 'seyoun', '');
+            }
             await window.saveCupidChatLog({ charId: 'Seoyeon', sessionId: 'gallery-freetalk', userContent: 'test', assistantContent: 'test', affinityChange: result.change, affinityCurrent: result.value });
             await window.saveCupidGroupChatLog({ sessionId: 'test-group', turnId: 'test-correction-turn', participants: ['Seoyeon', 'Dain'], userContent: 'test', assistantMessages: [
                 { speakerId: 'Seoyeon', content: 'test', affinityChange: 0, affinityCurrent: 100 },
                 { speakerId: 'Dain', content: 'test', affinityChange: 0, affinityCurrent: 100 }
             ] });
+            return result;
         });
+        expect(requalified).toMatchObject({ value: 100, change: 2, maxAffinity: 100 });
         const real = logs.filter(entry => entry.role === 'assistant');
         expect(real.filter(entry => entry.charId === 'Seoyeon' || entry.speakerId === 'Seoyeon').every(entry => entry.affinityCorrectionIds?.includes(correctionId))).toBe(true);
         expect(real.find(entry => entry.speakerId === 'Dain').affinityCorrectionIds).toBeUndefined();

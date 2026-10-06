@@ -1,4 +1,5 @@
 const { test, expect } = require('@playwright/test');
+const { installAffinitySeeder } = require('./helpers/affinity-seed.cjs');
 
 for (const [lang, character, lead, offer, startAffinity] of [
     ['ko', 'Seoyeon', 'Dain', 'wall_dain_seo_tempt_2', 0],
@@ -30,6 +31,7 @@ for (const [lang, character, lead, offer, startAffinity] of [
             if (Array.isArray(body?.events)) events.push(...body.events);
             return route.fulfill({ status: 200, json: { ok: true, eventIds: (body?.events || []).map(event => event.eventId) } });
         });
+        await installAffinitySeeder(page);
         await page.goto(lang === 'ko' ? '/game.html' : '/game-en.html');
         const ready = () => page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
         await ready();
@@ -37,8 +39,8 @@ for (const [lang, character, lead, offer, startAffinity] of [
             const e = window.gameEngine;
             e.dialogueSystem.typingSpeed = 0;
             e.stateManager.flags = { [`route_${lead.toLowerCase()}`]: true, day4_confession_accepted: true };
-            e.stateManager.stats[lead].affinity = 80;
-            e.stateManager.stats[character].affinity = startAffinity;
+            window.cupidTestSeedAffinities({ [lead]: 80 });
+            window.cupidTestSeedAffinities({ [character]: startAffinity });
             await e.renderScene(offer);
             const choice = e.sceneRenderer.getScene(offer).choices[1];
             await e.executeChoice(choice);

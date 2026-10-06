@@ -1,4 +1,6 @@
 const { test, expect } = require('@playwright/test');
+const { installAffinitySeeder } = require('./helpers/affinity-seed.cjs');
+const { isMediaFixtureRequest } = require('./helpers/media-fixture.cjs');
 
 for (const [index, lang] of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'].entries()) {
     test(`${lang}: Haeun CGs unlock only when viewed and open native masters in the gallery`, async ({ page }) => {
@@ -6,9 +8,11 @@ for (const [index, lang] of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'].ent
         const suffix = lang === 'ko' ? '' : `-${lang}`;
         const ids = ['event_haeun_trust', 'event_haeun_reputation'];
         await page.setViewportSize(index % 2 === 0 ? { width: 390, height: 844 } : { width: 1280, height: 800 });
-        await page.route('**/*', route => route.request().method() === 'POST'
+        // Media session and unlock grants go to the local fixture server; a stubbed reply breaks CG loading.
+        await page.route('**/*', route => route.request().method() === 'POST' && !isMediaFixtureRequest(route.request())
             ? route.fulfill({ json: { ok: true } }) : route.continue());
         const readyGallery = () => page.waitForFunction(() => window.gallery?.ui && window.GalleryData);
+        await installAffinitySeeder(page);
         await page.goto(`/gallery${suffix}.html`, { waitUntil: 'domcontentloaded' });
         await readyGallery();
         await page.locator('[data-tab="cg"]').click();
@@ -17,6 +21,7 @@ for (const [index, lang] of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'].ent
             ['high', ids[0], 'day5_haeun_trust_cg', 'day5_haeun_defends'],
             ['low', ids[1], 'day4_haeun_reputation_cg', 'day4_haeun_concern_clarify']
         ]) {
+            await installAffinitySeeder(page);
             await page.goto(`/game${suffix}.html`, { waitUntil: 'domcontentloaded' });
             await page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
             const result = await page.evaluate(async ({ mode, id, sceneId }) => {
@@ -24,8 +29,8 @@ for (const [index, lang] of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'].ent
                 e.dialogueSystem.typingSpeed = 0;
                 e.stateManager.currentDay = mode === 'high' ? 5 : 4;
                 e.stateManager.flags = { route_seoyeon: true };
-                e.stateManager.stats.Haeun.affinity = mode === 'high' ? 8 : -1;
-                for (const key of ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse']) e.stateManager.stats[key].affinity = key === 'Seoyeon' ? 80 : 30;
+                window.cupidTestSeedAffinities({ Haeun: mode === 'high' ? 8 : -1 });
+                for (const key of ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse']) window.cupidTestSeedAffinities({ [key]: key === 'Seoyeon' ? 80 : 30 });
                 await e.renderScene(mode === 'high' ? 'day5_haeun_gate' : 'day4_haeun_gate');
                 const visited = [];
                 for (let count = 0; count < 15; count++) {
@@ -52,6 +57,7 @@ for (const [index, lang] of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'].ent
             await page.reload({ waitUntil: 'domcontentloaded' });
             await page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
             expect(await page.evaluate(() => window.gameEngine.sceneRenderer.currentSceneId)).toBe(sceneId);
+            await installAffinitySeeder(page);
             await page.goto(`/gallery${suffix}.html`, { waitUntil: 'domcontentloaded' });
             await readyGallery();
             await page.locator('[data-tab="cg"]').click();

@@ -1,4 +1,5 @@
 const { test, expect } = require('@playwright/test');
+const { installAffinitySeeder } = require('./helpers/affinity-seed.cjs');
 const fs = require('node:fs');
 const path = require('node:path');
 const root = path.resolve(__dirname, '../..');
@@ -16,9 +17,10 @@ async function mock(page, requests) {
 }
 test('reload and an old save cannot duplicate a completed personal turn', async ({page}) => {
     const requests=[];await mock(page,requests);
+    await installAffinitySeeder(page);
     await page.goto('/game-en.html');await ready(page);
     const oldSave=await page.evaluate(async()=>{
-        const e=window.gameEngine;e.dialogueSystem.typingSpeed=0;e.stateManager.stats.Seoyeon.affinity=10;
+        const e=window.gameEngine;e.dialogueSystem.typingSpeed=0;window.cupidTestSeedAffinities({ Seoyeon: 10 });
         await e.renderScene('lunch_seo_freetalk');
         return window.CupidStorage.getItem('cupid_save');
     });
@@ -40,9 +42,9 @@ test('reload and an old save cannot duplicate a completed personal turn', async 
     expect(await page.evaluate(()=>window.gameEngine.stateManager.getAffinity('Seoyeon'))).toBe(19);
 });
 test('simultaneous choice executions and scene re-entry cannot repeat rewards', async ({page})=>{
-    await mock(page,[]);await page.goto('/game-en.html');await ready(page);
+    await mock(page,[]);await installAffinitySeeder(page);await page.goto('/game-en.html');await ready(page);
     const result=await page.evaluate(async()=>{
-        const e=window.gameEngine;e.dialogueSystem.typingSpeed=0;e.stateManager.stats.Seoyeon.affinity=0;
+        const e=window.gameEngine;e.dialogueSystem.typingSpeed=0;window.cupidTestSeedAffinities({ Seoyeon: 0 });
         SCENARIO[1].integrity_choice={name:'Test',text:'Choose',choices:[{stats:{Seoyeon:{affinity:7}},next:'integrity_after'}]};
         SCENARIO[1].integrity_after={name:'Test',text:'Done',stats:{Seoyeon:{affinity:2}},next:'integrity_choice'};
         await e.renderScene('integrity_choice');

@@ -3,6 +3,7 @@
 // `const reply` reassignment threw on every AI reply). A mocked AI reply must be displayed,
 // its affinity applied, the turn committed, and the realtime chat log sent, with no client error.
 const { test, expect } = require('@playwright/test');
+const { installAffinitySeeder } = require('./helpers/affinity-seed.cjs');
 
 const CASES = {
     ko: { input: '오늘 수업 많이 힘들었지? 매점에서 네가 좋아하는 우유 사 왔어.', reply: '어? 고마워. 마침 목말랐는데, 이거 어떻게 알았어?' },
@@ -36,13 +37,14 @@ for (const [lang, sample] of Object.entries(CASES)) {
             if (pathname === '/error-logs') errorLogs.push(body);
             return route.fulfill({ status: 200, json: { ok: true, eventIds: (body.events || []).map(item => item.eventId) } });
         });
+        await installAffinitySeeder(page);
         await page.goto(`/game${lang === 'ko' ? '' : `-${lang}`}.html`);
         await page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
         await page.evaluate(async () => {
             const e = window.gameEngine;
             e.dialogueSystem.typingSpeed = 0;
             e.uiManager.showModal = async message => { window.__cupidReplyPathModal = String(message); };
-            e.stateManager.stats.Seoyeon.affinity = 10;
+            window.cupidTestSeedAffinities({ Seoyeon: 10 });
             await e.renderScene('lunch_seo_freetalk');
         });
         await page.waitForFunction(() => !window.gameEngine.dialogueSystem.isCurrentlyTyping());
@@ -95,13 +97,14 @@ test('ko: a client code exception in the reply path is reported to error logs, n
         }
         return route.fulfill({ status: 200, json: { ok: true } });
     });
+    await installAffinitySeeder(page);
     await page.goto('/game.html');
     await page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
     const result = await page.evaluate(async () => {
         const e = window.gameEngine;
         e.dialogueSystem.typingSpeed = 0;
         e.uiManager.showModal = async () => {};
-        e.stateManager.stats.Seoyeon.affinity = 10;
+        window.cupidTestSeedAffinities({ Seoyeon: 10 });
         await e.renderScene('lunch_seo_freetalk');
         while (e.dialogueSystem.isCurrentlyTyping()) await new Promise(resolve => setTimeout(resolve, 20));
         const affinityBefore = e.stateManager.getAffinity('Seoyeon');
