@@ -13,6 +13,8 @@
     "test:deterministic": "node validate.js --seed=cupid-ci --no-report && node test_endings.js && node test_i18n_full.js",
     "test:choices": "node --test tests/choice-affinity-balance.test.cjs",
     "test:freetalk": "node --test tests/freetalk-core.test.cjs",
+    "test:freetalk-reply": "playwright test tests/e2e/freetalk-reply-path.spec.cjs",
+    "lint:const": "node --test tests/const-reassign.test.cjs",
     "test:e2e": "playwright test",
     "media:audit": "node scripts/audit-media.cjs",
     "validate": "node validate.js --seed=cupid-ci --no-report",

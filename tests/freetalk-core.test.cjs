@@ -272,7 +272,9 @@ test('group free-talk retries transient fetch failures before reporting an error
 
     const retryBlock = freeTalkSystem.slice(retryStart, retryEnd);
     assert.match(retryBlock, /catch \(error\)/);
-    assert.match(retryBlock, /Failed to fetch\|Load failed\|NetworkError/);
+    assert.match(retryBlock, /CupidFreeTalkCore\.isNetworkTransportError\(error\)/);
+    assert.ok(core.isNetworkTransportError(new TypeError('Failed to fetch')));
+    assert.equal(core.isNetworkTransportError(new TypeError('Assignment to constant variable.')), false);
     assert.match(retryBlock, /attempt >= 2/);
     assert.match(retryBlock, /400 \* \(attempt \+ 1\)/);
     assert.match(retryBlock, /this\._assertRequestContext\(requestContext\)/);

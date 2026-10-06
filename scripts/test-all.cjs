@@ -23,6 +23,7 @@ const commands = [
     ['node', ['--test', 'tests/scenario-commercial-polish.test.cjs']],
     ['node', ['--test', 'tests/story-continuity.test.cjs']],
     ['node', ['--test', 'tests/freetalk-core.test.cjs']],
+    ['node', ['--test', 'tests/const-reassign.test.cjs', 'tests/freetalk-upstream-failure.test.cjs']],
     ['node', ['--test', 'tests/temptation-freetalk.test.cjs']],
     ['node', ['--test', 'tests/affinity-emotion.test.cjs']],
     ['node', ['--test', 'tests/runtime-error-regressions.test.cjs', 'tests/progress-recovery.test.cjs', 'tests/runtime-support.test.cjs']],

@@ -1798,10 +1798,10 @@ try {
         || !gftContent.includes('outputLanguage: this.lang')) {
         errors.push('[FREETALK_API] game and gallery requests must send the explicit output-language contract in both header and body');
     }
-    if (!ftSysContent.includes('primaryError instanceof TypeError')
+    if (!ftSysContent.includes('isNetworkTransportError(primaryError)')
         || !ftSysContent.includes('fallbackEndpoint !== aiEndpoint')
         || !ftSysContent.includes('FREE_TALK_AI_FAILOVER_HTTP_STATUSES')
-        || !gftContent.includes('primaryError instanceof TypeError')
+        || !gftContent.includes('isNetworkTransportError(primaryError)')
         || !gftContent.includes('fallbackEndpoint !== aiEndpoint')
         || !gftContent.includes('GALLERY_AI_FAILOVER_HTTP_STATUSES')) {
         errors.push('[FREETALK_API] game and gallery chat requests must keep network and HTTP-status failover');

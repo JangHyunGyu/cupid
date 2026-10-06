@@ -1698,8 +1698,7 @@ class FreeTalkSystem {
                         } catch (error) {
                             lastError = error;
                             this._assertRequestContext(requestContext);
-                            const isTransientFetchError = error instanceof TypeError
-                                || /^(?:Failed to fetch|Load failed|NetworkError)$/i.test(error?.message || '');
+                            const isTransientFetchError = CupidFreeTalkCore.isNetworkTransportError(error);
                             if (!isTransientFetchError || navigator.onLine === false || attempt >= 2) throw error;
                         }
                         await new Promise(resolve => window.setTimeout(resolve, 400 * (attempt + 1)));
@@ -1719,7 +1718,7 @@ class FreeTalkSystem {
                 }
 
                 const canFallback = (
-                    primaryError instanceof TypeError || shouldFailOverFreeTalkAiResponse(response)
+                    CupidFreeTalkCore.isNetworkTransportError(primaryError) || shouldFailOverFreeTalkAiResponse(response)
                 ) && fallbackEndpoint && fallbackEndpoint !== aiEndpoint;
                 if (canFallback) {
                     _lastAiEndpoint = fallbackEndpoint;
@@ -1755,7 +1754,7 @@ class FreeTalkSystem {
 
             // OpenAI API 응답 구조에서 대답 텍스트 추출
             // 구조: { choices: [{ message: { content: "대답 내용" } }] }
-            const reply = CupidFreeTalkCore.selectChatCompletionContent(data);
+            let reply = CupidFreeTalkCore.selectChatCompletionContent(data);
 
             if (!reply) {
                 console.warn('[Cupid FreeTalk] Empty AI response payload:', {
@@ -1950,16 +1949,16 @@ class FreeTalkSystem {
             }
             const langErr = window.GAME_LANG || document.documentElement.lang || 'ko';
 
-            const isTransientTransportFailure = error instanceof TypeError
-                || /^(?:Failed to fetch|Load failed|NetworkError|HTTP (?:408|425|429|5\d\d))$/i.test(error?.message || '');
-            const isOfflineTransportFailure = navigator.onLine === false
-                && (error instanceof TypeError || /^(?:Failed to fetch|Load failed|NetworkError)$/i.test(error?.message || ''));
+            const isNetworkTransportFailure = CupidFreeTalkCore.isNetworkTransportError(error);
+            const isTransientTransportFailure = isNetworkTransportFailure
+                || /^HTTP (?:408|425|429|5\d\d)$/i.test(error?.message || '');
+            const isOfflineTransportFailure = navigator.onLine === false && isNetworkTransportFailure;
             if (isTransientTransportFailure) console.warn("AI Chat transport interruption:", error?.message || error);
             else console.error("AI Chat Error:", error);
             if (typeof window.logCupidError === 'function' && !isOfflineTransportFailure && (!isTransientTransportFailure || error?.retryExhausted)) {
                 window.logCupidError(error, {
                     source: 'cupid-freetalk',
-                    errorType: error?.retryExhausted ? 'freetalk_upstream_retries_exhausted' : (/^HTTP\s+\d+/.test(error?.message || '') ? 'freetalk_http_error' : 'freetalk_request_failed'),
+                    errorType: error?.retryExhausted ? 'freetalk_upstream_retries_exhausted' : CupidFreeTalkCore.isClientCodeException(error) ? 'freetalk_client_exception' : (/^HTTP\s+\d+/.test(error?.message || '') ? 'freetalk_http_error' : 'freetalk_request_failed'),
                     sessionId: requestSceneId || '',
                     context: {
                         charId: charKey || '',
@@ -2441,8 +2440,7 @@ class FreeTalkSystem {
                     } catch (error) {
                         lastError = error;
                         this._assertRequestContext(requestContext);
-                        const isTransientFetchError = error instanceof TypeError
-                            || /^(?:Failed to fetch|Load failed|NetworkError)$/i.test(error?.message || '');
+                        const isTransientFetchError = CupidFreeTalkCore.isNetworkTransportError(error);
                         if (!isTransientFetchError || navigator.onLine === false || attempt >= 2) throw error;
                     }
                     await new Promise(resolve => window.setTimeout(resolve, 400 * (attempt + 1)));
@@ -2588,13 +2586,14 @@ class FreeTalkSystem {
                 if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
             }
             if (!ownsCurrentContext || error?.isStaleTurn || error?.reason === 'STALE_TURN') return;
-            const isOfflineTransportFailure = navigator.onLine === false;
-            const isTransientTransportFailure = error instanceof TypeError
-                || /^(?:Failed to fetch|Load failed|NetworkError)$/i.test(error?.message || '');
+            const isTransientTransportFailure = CupidFreeTalkCore.isNetworkTransportError(error);
+            const isOfflineTransportFailure = navigator.onLine === false && isTransientTransportFailure;
+            if (isTransientTransportFailure) console.warn('[Cupid Group FreeTalk] transport interruption:', error?.message || error);
+            else console.error('[Cupid Group FreeTalk] Error:', error);
             if (typeof window.logCupidError === 'function' && !isOfflineTransportFailure && (!isTransientTransportFailure || error?.retryExhausted)) {
                 window.logCupidError(error, {
                     source: 'cupid-group-freetalk',
-                    errorType: error?.retryExhausted ? 'freetalk_upstream_retries_exhausted' : /^HTTP\s+\d+/.test(error?.message || '') ? 'group_freetalk_http_error' : 'group_freetalk_request_failed',
+                    errorType: error?.retryExhausted ? 'freetalk_upstream_retries_exhausted' : CupidFreeTalkCore.isClientCodeException(error) ? 'group_freetalk_client_exception' : /^HTTP\s+\d+/.test(error?.message || '') ? 'group_freetalk_http_error' : 'group_freetalk_request_failed',
                     sessionId: requestSceneId || '',
                     context: {
                         charId: 'group',

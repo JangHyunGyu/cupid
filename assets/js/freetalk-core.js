@@ -590,6 +590,30 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         );
     }
 
+    // Browser fetch() rejects with a TypeError whose message names the network failure
+    // (Chrome "Failed to fetch", Safari "Load failed" / "The network connection was lost.",
+    // Firefox "NetworkError when attempting to fetch resource.", undici "fetch failed").
+    // Any other TypeError is a client code bug and must be logged, never hidden as transport noise.
+    const NETWORK_TRANSPORT_ERROR_PATTERN = /Failed to fetch|Load failed|NetworkError|network (?:error|connection|request)|Network interrupted|fetch failed/i;
+
+    function isNetworkTransportError(error) {
+        if (!error) return false;
+        if (error.isTransportFailure === true) return true;
+        const message = String(error.message || '');
+        if (/^(?:Failed to fetch|Load failed|NetworkError)$/i.test(message)) return true;
+        const isTypeError = (typeof TypeError === 'function' && error instanceof TypeError) || error.name === 'TypeError';
+        return isTypeError && NETWORK_TRANSPORT_ERROR_PATTERN.test(message);
+    }
+
+    function isClientCodeException(error) {
+        if (!error || isNetworkTransportError(error)) return false;
+        const name = String(error.name || '');
+        return /^(?:TypeError|ReferenceError|RangeError|SyntaxError|URIError|EvalError)$/.test(name)
+            || (typeof TypeError === 'function' && error instanceof TypeError)
+            || (typeof ReferenceError === 'function' && error instanceof ReferenceError)
+            || (typeof RangeError === 'function' && error instanceof RangeError);
+    }
+
     function appendDynamicContext(content, addition) {
         if (!addition) return content || '';
         const base = normalizePromptBlockForCache(content || '');
@@ -1769,6 +1793,8 @@ Latest user: """${excerpt}"""
         normalizePromptBlockForCache,
         shouldFailOverAiResponse,
         shouldRetryAiResponse,
+        isNetworkTransportError,
+        isClientCodeException,
         appendDynamicContext,
         getStablePromptHash,
         getStablePromptFingerprint,

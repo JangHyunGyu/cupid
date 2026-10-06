@@ -1168,8 +1168,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                         } catch (error) {
                             lastError = error;
                             this._assertRequestContext(requestContext);
-                            const isTransientFetchError = error instanceof TypeError
-                                || /^(?:Failed to fetch|Load failed|NetworkError)$/i.test(error?.message || '');
+                            const isTransientFetchError = GalleryFreeTalkCore.isNetworkTransportError(error);
                             if (!isTransientFetchError || navigator.onLine === false || attempt >= 2) throw error;
                         }
                         await new Promise(resolve => window.setTimeout(resolve, 400 * (attempt + 1)));
@@ -1189,7 +1188,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 }
 
                 const canFallback = (
-                    primaryError instanceof TypeError || shouldFailOverGalleryAiResponse(response)
+                    GalleryFreeTalkCore.isNetworkTransportError(primaryError) || shouldFailOverGalleryAiResponse(response)
                 ) && fallbackEndpoint && fallbackEndpoint !== aiEndpoint;
                 if (canFallback) {
                     _lastAiEndpoint = fallbackEndpoint;
@@ -1372,16 +1371,16 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     this.stagedImage = stagedImage;
                     this._setImageUploadState(false, stagedImage);
                 }
-                const isTransientTransportFailure = err instanceof TypeError
-                    || /^(?:Failed to fetch|Load failed|NetworkError|HTTP (?:408|425|429|5\d\d))$/i.test(err?.message || '');
-                const isOfflineTransportFailure = navigator.onLine === false
-                    && (err instanceof TypeError || /^(?:Failed to fetch|Load failed|NetworkError)$/i.test(err?.message || ''));
+                const isNetworkTransportFailure = GalleryFreeTalkCore.isNetworkTransportError(err);
+                const isTransientTransportFailure = isNetworkTransportFailure
+                    || /^HTTP (?:408|425|429|5\d\d)$/i.test(err?.message || '');
+                const isOfflineTransportFailure = navigator.onLine === false && isNetworkTransportFailure;
                 if (isTransientTransportFailure) console.warn('[GalleryFreeTalk] transport interruption:', err?.message || err);
                 else console.error('[GalleryFreeTalk] API 오류:', err);
                 if (typeof window.logCupidError === 'function' && !isOfflineTransportFailure && (!isTransientTransportFailure || err?.retryExhausted)) {
                     window.logCupidError(err, {
                         source: 'cupid-gallery-freetalk',
-                        errorType: err?.retryExhausted ? 'freetalk_upstream_retries_exhausted' : (/^HTTP\s+\d+/.test(err?.message || '') ? 'freetalk_http_error' : 'freetalk_request_failed'),
+                        errorType: err?.retryExhausted ? 'freetalk_upstream_retries_exhausted' : GalleryFreeTalkCore.isClientCodeException(err) ? 'freetalk_client_exception' : (/^HTTP\s+\d+/.test(err?.message || '') ? 'freetalk_http_error' : 'freetalk_request_failed'),
                         sessionId: 'gallery-freetalk',
                         context: {
                             charId: requestCharKey || requestCharId || '',

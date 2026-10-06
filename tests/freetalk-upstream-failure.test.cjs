@@ -91,3 +91,40 @@ test('a read failure after a complete reply preserves actual stream text', async
     }) } };
     assert.equal(core.selectChatCompletionContent(await core.readChatCompletionStream(response)), content);
 });
+test('only real network fetch failures are treated as transient transport noise', () => {
+    for (const message of ['Failed to fetch', 'Load failed', 'NetworkError when attempting to fetch resource.',
+        'The network connection was lost.', 'Network request failed', 'fetch failed', 'Network interrupted']) {
+        assert.equal(core.isNetworkTransportError(new TypeError(message)), true, message);
+        assert.equal(core.isClientCodeException(new TypeError(message)), false, message);
+    }
+    assert.equal(core.isNetworkTransportError(Object.assign(new Error('socket closed'), { isTransportFailure: true })), true);
+    // Code bugs (e.g. the 7eebb302 const reassignment) must reach logCupidError as client exceptions.
+    for (const error of [new TypeError('Assignment to constant variable.'),
+        new TypeError("Cannot read properties of undefined (reading 'fetch')"),
+        new TypeError('this.applyAffinity is not a function'), new ReferenceError('reply is not defined'),
+        new RangeError('Invalid array length')]) {
+        assert.equal(core.isNetworkTransportError(error), false, error.message);
+        assert.equal(core.isClientCodeException(error), true, error.message);
+    }
+    for (const error of [new Error('HTTP 503'), new Error('AI response was empty. Please try again.'), null, undefined]) {
+        assert.equal(core.isNetworkTransportError(error), false);
+        assert.equal(core.isClientCodeException(error), false);
+    }
+});
+test('Main, Group and Gallery catch blocks classify TypeErrors through the shared network check', () => {
+    const main = fs.readFileSync(require.resolve('../assets/js/modules/FreeTalkSystem.js'), 'utf8');
+    const gallery = fs.readFileSync(require.resolve('../assets/js/gallery-freetalk.js'), 'utf8');
+    for (const source of [main, gallery]) {
+        assert.doesNotMatch(source, /instanceof TypeError/);
+        assert.match(source, /isTransientFetchError = (?:CupidFreeTalkCore|GalleryFreeTalkCore)\.isNetworkTransportError\(error\)/);
+        assert.match(source, /isNetworkTransportError\(primaryError\) \|\| shouldFailOver/);
+    }
+    assert.equal((main.match(/isTransientFetchError = CupidFreeTalkCore\.isNetworkTransportError\(error\)/g) || []).length, 2);
+    assert.match(main, /isClientCodeException\(error\) \? 'freetalk_client_exception'/);
+    assert.match(main, /isClientCodeException\(error\) \? 'group_freetalk_client_exception'/);
+    assert.match(gallery, /isClientCodeException\(err\) \? 'freetalk_client_exception'/);
+    // A code bug is neither transient nor offline, so the logging guard lets it through.
+    assert.match(main, /const isOfflineTransportFailure = navigator\.onLine === false && isNetworkTransportFailure;/);
+    assert.match(main, /const isOfflineTransportFailure = navigator\.onLine === false && isTransientTransportFailure;/);
+    assert.match(gallery, /const isOfflineTransportFailure = navigator\.onLine === false && isNetworkTransportFailure;/);
+});
