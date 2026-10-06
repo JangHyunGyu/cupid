@@ -1,6 +1,7 @@
 'use strict';
 // Haeun's four emotional-stage choice scenes (cheering -> awareness -> avoidance/wavering -> guilt).
-// Rules: plus/minus symmetric, 4 choices, every choice is ±1 so the best-choice sum = +4 (the theoretical budget gains exactly 4, Haeun total 123),
+// Rules: plus/minus symmetric, 4 choices. Day 3 cheering stays ±1; the late scenes were raised on 2026-10-06
+// (awareness ±2/±1, wavering ±2/±1, guilt ±3/±2) so the best-choice sum = +8 (Haeun total 127),
 // 8-language parity, and scene order following the emotional arc.
 const vm = require('node:vm');
 const fixture = require('./affinity-fixture.cjs');
@@ -44,11 +45,21 @@ test('every Haeun stage scene has equal plus and minus counts with paired magnit
     }
 });
 
-test('the best choices across the four scenes add exactly +4 and the worst exactly -4', () => {
+test('the best choices across the four scenes add exactly +8 and the worst exactly -8', () => {
     const best = STAGES.reduce((sum, { id, day }) => sum + Math.max(...scenario[day][id].choices.map(delta)), 0);
     const worst = STAGES.reduce((sum, { id, day }) => sum + Math.min(...scenario[day][id].choices.map(delta)), 0);
-    assert.equal(best, 4);
-    assert.equal(worst, -4);
+    assert.equal(best, 8);
+    assert.equal(worst, -8);
+});
+
+test('late stage scenes carry the raised 2026-10-06 values and day 3 cheering stays at ±1', () => {
+    const values = id => STAGES.find(stage => stage.id === id) && scenario[STAGES.find(stage => stage.id === id).day][id].choices.map(delta);
+    assert.deepEqual(values('haeun_cheer_choice'), [1, -1, 1, -1]);
+    assert.deepEqual(values('day4_haeun_notice_choice'), [-1, 2, -2, 1]);
+    assert.deepEqual(values('day5_haeun_waver_choice'), [-1, 2, -2, 1]);
+    assert.deepEqual(values('day5_haeun_guilt_choice'), [-2, 3, 2, -3]);
+    // the stage choices never exceed the +3 a single free-talk turn can give
+    for (const { id, day } of STAGES) assert.ok(scenario[day][id].choices.every(c => Math.abs(delta(c)) <= 3), id);
 });
 
 test('stage scenes follow the emotional arc and sit before the 45 gate', () => {

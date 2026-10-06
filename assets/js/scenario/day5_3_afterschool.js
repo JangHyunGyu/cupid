@@ -1197,10 +1197,10 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/haeun_worried.png",
         "choices": [
-            { "next": "day5_haeun_guilt_down", "stats": { "Haeun": { "affinity": -1 } } },
-            { "next": "day5_haeun_guilt_up", "stats": { "Haeun": { "affinity": 1 } } },
-            { "next": "day5_haeun_guilt_up", "stats": { "Haeun": { "affinity": 1 } } },
-            { "next": "day5_haeun_guilt_down", "stats": { "Haeun": { "affinity": -1 } } }
+            { "next": "day5_haeun_guilt_down", "stats": { "Haeun": { "affinity": -2 } } },
+            { "next": "day5_haeun_guilt_up", "stats": { "Haeun": { "affinity": 3 } } },
+            { "next": "day5_haeun_guilt_up", "stats": { "Haeun": { "affinity": 2 } } },
+            { "next": "day5_haeun_guilt_down", "stats": { "Haeun": { "affinity": -3 } } }
         ]
     },
     "day5_haeun_guilt_up": {

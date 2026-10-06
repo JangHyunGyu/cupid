@@ -120,7 +120,7 @@ class GalleryTipsData {
                 ] },
                 haeun: { summary: '구체적이고 진심 어린 배려가 가장 잘 통해요.', points: [
                     '직접 나눈 대화를 믿는 후배예요. 약속을 지키고 불편한 이야기도 끝까지 들어 주며 상처받은 사람에게서 눈을 돌리지 않는 사람을 신뢰해요.',
-                    '구체적이고 진심 어린 배려에 가장 높은 점수를 줘요. 상황이나 망설임을 알아챘다는 걸 보여 주세요. 빈말, 공식 같은 칭찬, 평범한 예의는 거의 점수가 되지 않아요.',
+                    '구체적이고 진심 어린 배려에 가장 높은 점수를 줘요. 상황이나 망설임을 알아챘다는 걸 보여 주세요. 빈말, 공식 같은 칭찬, 평범한 예의는 거의 점수가 되지 않아요. 한두 마디 대꾸나 가볍게 던진 농담 한 줄도 마찬가지예요.',
                     '누구의 아픔이든 소문거리로 만들거나 책임을 피하면 신뢰를 잃어요. 존댓말을 쓰는 후배니 예의 있게 대하세요.',
                     '그녀가 연애 상대로 제안되기 전에는 연애 감정을 드러내거나 스킨십을 시도하지 마세요. 거절당하고 점수도 깎여요.'
                 ] }
@@ -210,7 +210,7 @@ class GalleryTipsData {
                 ] },
                 haeun: { summary: 'Specific, heartfelt care works best.', points: [
                     'She trusts what she hears in person. She values people who keep promises, listen to uncomfortable things to the end, and do not look away from someone who is hurt.',
-                    'Specific, heartfelt care earns the most. Show that you noticed her situation or her hesitation. Empty phrases, formula compliments, and plain courtesy earn very little.',
+                    'Specific, heartfelt care earns the most. Show that you noticed her situation or her hesitation. Empty phrases, formula compliments, and plain courtesy earn very little. One- or two-word replies and throwaway one-line jokes earn just as little.',
                     'Turning anyone\u2019s pain into gossip, or dodging responsibility, loses her trust. She speaks politely, so keep your tone respectful.',
                     'Until she is offered to you as a route, do not make romantic or physical approaches. They are turned down and cost points.'
                 ] }
@@ -300,7 +300,7 @@ class GalleryTipsData {
                 ] },
                 haeun: { summary: 'Funciona mejor el cuidado concreto y sincero.', points: [
                     'Confía en lo que habla en persona. Valora a quien cumple sus promesas, escucha hasta el final lo incómodo y no aparta la vista de alguien herido.',
-                    'El cuidado concreto y sincero es lo que más puntúa. Demuestra que te has fijado en su situación o en sus dudas. Las frases vacías, los cumplidos de fórmula y la simple cortesía suman muy poco.',
+                    'El cuidado concreto y sincero es lo que más puntúa. Demuestra que te has fijado en su situación o en sus dudas. Las frases vacías, los cumplidos de fórmula y la simple cortesía suman muy poco. Las respuestas de una o dos palabras y las bromas sueltas de una línea suman igual de poco.',
                     'Convertir el dolor de alguien en chisme o esquivar tu responsabilidad hace perder su confianza. Habla con educación, así que mantén un tono respetuoso.',
                     'Mientras no se te ofrezca como ruta, no tengas acercamientos románticos ni físicos. Se rechazan y restan puntos.'
                 ] }
@@ -390,7 +390,7 @@ class GalleryTipsData {
                 ] },
                 haeun: { summary: '具体的で心のこもった気遣いが一番伝わります。', points: [
                     '直接交わした会話を信じる後輩です。約束を守り、言いにくい話も最後まで聞き、傷ついた人から目をそらさない人を信頼します。',
-                    '具体的で心のこもった気遣いに最も高い点をつけます。状況やためらいに気づいたことを伝えましょう。空虚な言葉、型どおりの褒め言葉、ありきたりな礼儀では、ほとんど点になりません。',
+                    '具体的で心のこもった気遣いに最も高い点をつけます。状況やためらいに気づいたことを伝えましょう。空虚な言葉、型どおりの褒め言葉、ありきたりな礼儀では、ほとんど点になりません。一言二言の返事や、軽く投げた一行の冗談も同じです。',
                     '誰の痛みでもうわさ話の種にしたり、責任を避けたりすると、信頼を失います。敬語で話す後輩なので、礼儀正しく接してください。',
                     '彼女が恋の相手として示される前は、恋愛感情を見せたりスキンシップをしたりしないでください。断られて、点数も下がります。'
                 ] }
@@ -480,7 +480,7 @@ class GalleryTipsData {
                 ] },
                 haeun: { summary: 'Une attention concrète et sincère marche le mieux.', points: [
                     'Elle croit ce qui se dit en face. Elle estime ceux qui tiennent leurs promesses, écoutent jusqu’au bout les choses gênantes et ne détournent pas le regard de quelqu’un qui souffre.',
-                    'L’attention concrète et sincère rapporte le plus. Montrez que vous avez remarqué sa situation ou son hésitation. Les phrases creuses, les compliments de convenance et la simple politesse rapportent très peu.',
+                    'L’attention concrète et sincère rapporte le plus. Montrez que vous avez remarqué sa situation ou son hésitation. Les phrases creuses, les compliments de convenance et la simple politesse rapportent très peu. Les réponses d’un ou deux mots et les blagues lancées en une ligne rapportent tout aussi peu.',
                     'Faire de la peine de quelqu’un un sujet de ragots, ou éviter vos responsabilités, lui fait perdre confiance. Elle parle poliment : gardez un ton respectueux.',
                     'Tant qu’elle ne vous est pas proposée comme route, évitez les approches romantiques ou physiques. Elles sont refusées et coûtent des points.'
                 ] }
@@ -570,7 +570,7 @@ class GalleryTipsData {
                 ] },
                 haeun: { summary: 'Konkrete, herzliche Fürsorge kommt am besten an.', points: [
                     'Sie vertraut dem, was sie im direkten Gespräch hört. Sie schätzt Menschen, die Versprechen halten, Unbequemes bis zum Ende anhören und vor einem verletzten Menschen nicht wegsehen.',
-                    'Konkrete, herzliche Fürsorge bringt am meisten. Zeige, dass du ihre Lage oder ihr Zögern bemerkt hast. Leere Phrasen, Standardkomplimente und bloße Höflichkeit bringen sehr wenig.',
+                    'Konkrete, herzliche Fürsorge bringt am meisten. Zeige, dass du ihre Lage oder ihr Zögern bemerkt hast. Leere Phrasen, Standardkomplimente und bloße Höflichkeit bringen sehr wenig. Antworten aus ein, zwei Wörtern und hingeworfene Einzeiler-Witze bringen ebenso wenig.',
                     'Wer den Schmerz anderer zu Klatsch macht oder Verantwortung scheut, verliert ihr Vertrauen. Sie spricht höflich, also bleib respektvoll im Ton.',
                     'Solange sie dir nicht als Route angeboten wird, mach keine romantischen oder körperlichen Annäherungen. Sie werden abgewiesen und kosten Punkte.'
                 ] }
@@ -660,7 +660,7 @@ class GalleryTipsData {
                 ] },
                 haeun: { summary: 'Cuidado concreto e sincero funciona melhor.', points: [
                     'Ela confia no que ouve pessoalmente. Valoriza quem cumpre promessas, escuta até o fim o que é desconfortável e não desvia o olhar de alguém ferido.',
-                    'O cuidado concreto e sincero é o que mais pontua. Mostre que você notou a situação ou a hesitação dela. Frases vazias, elogios de fórmula e simples cortesia rendem muito pouco.',
+                    'O cuidado concreto e sincero é o que mais pontua. Mostre que você notou a situação ou a hesitação dela. Frases vazias, elogios de fórmula e simples cortesia rendem muito pouco. Respostas de uma ou duas palavras e piadas soltas de uma linha rendem igualmente pouco.',
                     'Transformar a dor de alguém em fofoca ou fugir da responsabilidade faz perder a confiança dela. Ela fala com educação, então mantenha um tom respeitoso.',
                     'Enquanto ela não for oferecida como rota, não faça aproximações românticas ou físicas. Elas são recusadas e custam pontos.'
                 ] }
@@ -750,7 +750,7 @@ class GalleryTipsData {
                 ] },
                 haeun: { summary: '具体而真诚的关心最管用。', points: [
                     '她相信当面交流的内容。她看重守约、把难听的话听到最后、不对受伤的人移开视线的人。',
-                    '具体而真诚的关心得分最高。表明你留意到了她的处境或犹豫。空话、套路式的夸奖和普通的礼貌几乎不会加分。',
+                    '具体而真诚的关心得分最高。表明你留意到了她的处境或犹豫。空话、套路式的夸奖和普通的礼貌几乎不会加分。一两个词的回应、随口抛出的一句玩笑也一样。',
                     '把任何人的痛苦当成闲话，或逃避责任，都会失去她的信任。她说话有礼貌，所以你也要保持尊重的语气。',
                     '在她被当作恋爱对象提出之前，不要表露恋爱感情或做肢体接触。会被拒绝并且扣分。'
                 ] }

@@ -17709,8 +17709,8 @@
 - 배경: `school.png`
 - 선택지:
   1. "못 본 척하고 시계를 본다" → `day4_haeun_notice_down` | Haeun -1
-  2. "표정이 왜 달라졌는지 묻는다" → `day4_haeun_notice_up` | Haeun +1
-  3. "서연 얘기로 넘긴다" → `day4_haeun_notice_down` | Haeun -1
+  2. "표정이 왜 달라졌는지 묻는다" → `day4_haeun_notice_up` | Haeun +2
+  3. "서연 얘기로 넘긴다" → `day4_haeun_notice_down` | Haeun -2
   4. "끝까지 듣고 고맙다고 한다" → `day4_haeun_notice_up` | Haeun +1
 
 - 캐릭터: `haeun_worried.png`
@@ -25016,8 +25016,8 @@
 - 배경: `school_hallway.png`
 - 선택지:
   1. "다른 사람이 기다려. 먼저 갈게." → `day5_haeun_waver_down` | Haeun -1
-  2. "괜찮은 척 안 해도 돼." → `day5_haeun_waver_up` | Haeun +1
-  3. "그 얘기는 여기까지 하자." → `day5_haeun_waver_down` | Haeun -1
+  2. "괜찮은 척 안 해도 돼." → `day5_haeun_waver_up` | Haeun +2
+  3. "그 얘기는 여기까지 하자." → `day5_haeun_waver_down` | Haeun -2
   4. "말없이 옆에 있는다" → `day5_haeun_waver_up` | Haeun +1
 
 - 캐릭터: `haeun_worried.png`
@@ -26438,10 +26438,10 @@
 ### `day5_haeun_guilt_choice`
 - 배경: `school_hallway.png`
 - 선택지:
-  1. "응원한다던 말은 어디 갔냐고 묻는다" → `day5_haeun_guilt_down` | Haeun -1
-  2. "미안한 마음도, 여기 있고 싶은 마음도 둘 다 괜찮아." → `day5_haeun_guilt_up` | Haeun +1
-  3. "서두르지 마. 생각할 시간 줄게." → `day5_haeun_guilt_up` | Haeun +1
-  4. "*한숨만 쉰다.*" → `day5_haeun_guilt_down` | Haeun -1
+  1. "응원한다던 말은 어디 갔냐고 묻는다" → `day5_haeun_guilt_down` | Haeun -2
+  2. "미안한 마음도, 여기 있고 싶은 마음도 둘 다 괜찮아." → `day5_haeun_guilt_up` | Haeun +3
+  3. "서두르지 마. 생각할 시간 줄게." → `day5_haeun_guilt_up` | Haeun +2
+  4. "*한숨만 쉰다.*" → `day5_haeun_guilt_down` | Haeun -3
 
 - 캐릭터: `haeun_worried.png`
 **하은**: *하은이 숨을 고르고 고개를 든다.* 미안한 마음도, 선배 옆에 있고 싶은 마음도 둘 다 진짜라서 더 곤란해요. 이런 제가 이상하죠?

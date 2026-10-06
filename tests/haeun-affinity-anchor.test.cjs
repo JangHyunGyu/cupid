@@ -145,3 +145,36 @@ test('single Haeun free-talk prompt carries the anchor only in the live tail and
         assert.ok(dynamicA.includes(HEADER[lang]), `${lang} anchor sits after the boundary`);
     }
 });
+
+// 2026-10-06: 짧거나 성의 없는 말('뭔데', 한 줄 작업 멘트, 근거 없는 칭찬)은 0~+1, 구체적으로 받지 않으면 +2 이상 금지.
+// 여덟 언어가 같은 조항·같은 점수 순서(+2, +3, +1, +1, +2)를 갖는지 확인한다.
+const SHORT = {
+    ko: '짧거나 성의 없는 말도 마찬가지로 0~+1이다', en: 'Short or low-effort lines also stay at 0 to +1', ja: '短い言葉や手を抜いた言葉も同じく0〜+1にとどまる',
+    es: 'Las frases cortas o sin esfuerzo también se quedan en 0 a +1', fr: 'Les répliques courtes ou sans effort restent aussi entre 0 et +1',
+    de: 'Kurze oder lieblose Zeilen bleiben ebenfalls bei 0 bis +1', pt: 'Falas curtas ou sem esforço também ficam em 0 a +1', zh: '简短或敷衍的话同样只给0到+1'
+};
+const SHORT_EXAMPLE = { ko: "'뭔데'", en: '“what?”', ja: '「なに？」', es: '«¿qué?»', fr: '« quoi ? »', de: '„was denn?“', pt: '“o quê?”', zh: '“干嘛”' };
+const NO_PLUS_TWO = { ko: '+2 이상 주지 않는다', en: 'do not give +2 or more', ja: '+2以上を与えない', es: 'no des +2 o más', fr: 'ne donne pas +2 ou plus', de: 'gib nicht +2 oder mehr', pt: 'não dê +2 ou mais', zh: '不给+2及以上' };
+
+test('short or low-effort lines stay at 0 to +1 with the same clause and score order in all eight languages', () => {
+    const { context, state, scenes } = runtime();
+    const sequences = {};
+    for (const lang of languages) {
+        const copy = copyOf(lang, 'day3_3_afterschool');
+        const { text } = guidanceFor(context, state, { ...scenes.haeun_freetalk, ...copy.haeun_freetalk }, 'haeun_freetalk', lang);
+        const anchor = text.slice(text.indexOf(HEADER[lang]));
+        assert.ok(anchor.includes(SHORT[lang]), `${lang} keeps short or low-effort lines at 0 to +1`);
+        assert.ok(anchor.includes(SHORT_EXAMPLE[lang]), `${lang} gives a one- or two-word reply example`);
+        assert.ok(anchor.includes(NO_PLUS_TWO[lang]), `${lang} withholds +2 when the line does not answer Haeun concretely`);
+        assert.equal(anchor.split(LOW_BAND[lang]).length - 1, 2, `${lang} names the 0 to +1 band twice`);
+        sequences[lang] = anchor.match(/\+\d/g).join(' ');
+    }
+    for (const lang of languages) assert.equal(sequences[lang], '+2 +3 +1 +1 +2', `${lang} score order matches Korean`);
+});
+
+test('the stricter anchor stays non-sexual and age-appropriate for a 17-year-old student', () => {
+    const src = read('assets/js/modules/FreeTalkSystem.js');
+    const anchorBlock = src.slice(src.indexOf('const ANCHOR'), src.indexOf('const GENERIC_OTHER'));
+    assert.doesNotMatch(anchorBlock, /섹시|야한|스킨십|몸매|sexy|sexual|body|kiss|키스|性感|セクシー/i);
+    assert.match(anchorBlock, /연애 접근은 기존 경계 규칙을 따른다/);
+});
