@@ -1493,6 +1493,195 @@ Latest user: """${excerpt}"""
         };
     }
 
+    // AI_DISPLAY_FALLBACK_START
+    async function readAiReplyPrefix(response) {
+        if (!response.body?.getReader) return { text: await response.text(), interrupted: false };
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+        let text = '';
+        let interrupted = false;
+        let error = null;
+        try {
+            while (true) {
+                const chunk = await reader.read();
+                text += decoder.decode(chunk.value || new Uint8Array(), { stream: !chunk.done });
+                if (chunk.done) break;
+                if (text.length > 1048576) { interrupted = true; break; }
+            }
+        } catch (failure) { interrupted = true; error = failure; }
+        finally {
+            if (interrupted) { try { await reader.cancel?.(); } catch (_) { /* best effort */ } }
+            reader.releaseLock?.();
+        }
+        return { text, interrupted, error };
+    }
+    function buildAiDisplayFallback(raw, options = {}) {
+        const source = String(raw || '').replace(/^\s*```(?:json)?\s*/i, '').replace(/\s*```\s*$/, '').trim().slice(0, 262144);
+        const cut = new Set();
+        let cursor = 0;
+        const skip = () => { while (/\s/.test(source[cursor] || '') && cursor < source.length) cursor++; };
+        const readString = () => {
+            const quote = source[cursor++];
+            let value = '';
+            while (cursor < source.length) {
+                const char = source[cursor++];
+                if (char === quote) return { value, complete: true };
+                if (char !== '\\') { value += char; continue; }
+                const escape = source[cursor++];
+                if (escape === undefined) break;
+                if (escape === 'u') {
+                    const digits = source.slice(cursor, cursor + 4);
+                    if (!/^[\da-f]{4}$/i.test(digits)) break;
+                    value += String.fromCharCode(parseInt(digits, 16));
+                    cursor += 4;
+                } else value += ({ n: '\n', r: '\r', t: '\t', b: '\b', f: '\f' })[escape] ?? escape;
+            }
+            return { value: value.replace(/[\uD800-\uDBFF]$/, ''), complete: false };
+        };
+        const readValue = (path, depth = 0) => {
+            if (depth > 32 || cursor >= source.length) return undefined;
+            skip();
+            if (source[cursor] === '"' || source[cursor] === "'") {
+                const result = readString();
+                if (!result.complete) cut.add(JSON.stringify(path));
+                return result.value;
+            }
+            if (source[cursor] === '{') {
+                cursor++;
+                const value = Object.create(null);
+                while (cursor < source.length) {
+                    skip();
+                    if (source[cursor] === '}') { cursor++; break; }
+                    if (source[cursor] === ',') { cursor++; continue; }
+                    if (source[cursor] !== '"' && source[cursor] !== "'") break;
+                    const key = readString();
+                    if (!key.complete) break;
+                    skip();
+                    if (source[cursor++] !== ':') break;
+                    const start = cursor;
+                    const item = readValue([...path, key.value], depth + 1);
+                    if (!['__proto__', 'constructor', 'prototype'].includes(key.value) && item !== undefined) value[key.value] = item;
+                    if (cursor <= start) break;
+                    skip();
+                    if (!['}', ','].includes(source[cursor])) break;
+                }
+                return value;
+            }
+            if (source[cursor] === '[') {
+                cursor++;
+                const value = [];
+                while (cursor < source.length) {
+                    skip();
+                    if (source[cursor] === ']') { cursor++; break; }
+                    if (source[cursor] === ',') { cursor++; continue; }
+                    const start = cursor;
+                    const item = readValue([...path, value.length], depth + 1);
+                    if (item !== undefined) value.push(item);
+                    if (cursor <= start) break;
+                    skip();
+                    if (![']', ','].includes(source[cursor])) break;
+                }
+                return value;
+            }
+            const scalar = /^(?:true|false|null|-?\d+(?:\.\d+)?(?:e[+-]?\d+)?)/i.exec(source.slice(cursor));
+            if (!scalar) return undefined;
+            cursor += scalar[0].length;
+            try { return JSON.parse(scalar[0]); } catch (_) { return undefined; }
+        };
+        let parsed;
+        try { parsed = JSON.parse(source); } catch (_) { parsed = readValue([]); }
+        const choice = parsed?.choices?.[0];
+        const envelopeText = choice?.message?.content ?? choice?.delta?.content;
+        if (typeof envelopeText === 'string' && !options.envelopeRead) {
+            const field = choice.message ? 'message' : 'delta';
+            return buildAiDisplayFallback(envelopeText, { ...options, envelopeRead: true, truncated: options.truncated || cut.has(JSON.stringify(['choices', 0, field, 'content'])) });
+        }
+        const result = { displayFallback: { empty: false, partial: false } };
+        const suffix = text => /(?:\.{3}|\u2026)$/.test(text) ? text : `${text}...`;
+        const displayText = (value, path, plain = false) => {
+            if (typeof value !== 'string') return '';
+            const text = value.replace(/\u0000/g, '').trim();
+            if (!text || /^[\[{]/.test(text) || /^```/.test(text)) return '';
+            if (cut.has(JSON.stringify(path)) || (plain && options.truncated)) {
+                result.displayFallback.partial = true;
+                return suffix(text);
+            }
+            return text;
+        };
+        const segments = (item, path) => {
+            if (!item || typeof item !== 'object') return [];
+            if (Array.isArray(item.segments)) return item.segments.map((segment, index) => {
+                const text = displayText(segment?.text, [...path, 'segments', index, 'text']);
+                return text ? { type: ['dialogue', 'narration', 'scene', 'thought', 'action', 'text'].includes(segment.type) ? segment.type : 'dialogue', text } : null;
+            }).filter(Boolean);
+            for (const key of ['text', 'response', 'message', 'content', 'reply', 'dialogue', 'narration', 'speech']) {
+                const text = displayText(item[key], [...path, key]);
+                if (text) return [{ type: key === 'narration' ? 'narration' : 'dialogue', text }];
+            }
+            return [];
+        };
+        const speakers = Array.isArray(options.responseSpeakers) ? options.responseSpeakers : [];
+        const knownName = typeof speakers[0]?.name === 'string' ? speakers[0].name : '';
+        const name = item => typeof item?.name === 'string' ? item.name : knownName;
+        if (parsed && typeof parsed === 'object') {
+            const rootPath = Array.isArray(parsed) ? null : [];
+            if (rootPath) {
+                const main = segments(parsed, rootPath);
+                if (main.length) result.segments = main;
+                const scene = displayText(parsed.sceneNarration, ['sceneNarration']);
+                if (scene) result.sceneNarration = scene;
+            }
+            const collection = Array.isArray(parsed) ? '' : ['sceneMessages', 'conversations', 'messages', 'responses', 'speech', 'character_speech'].find(key => Array.isArray(parsed[key]));
+            const items = Array.isArray(parsed) ? parsed : (collection ? parsed[collection] : []);
+            const parts = items.map((item, index) => {
+                const content = typeof item === 'string' ? [{ type: 'dialogue', text: displayText(item, collection ? [collection, index] : [index]) }] : segments(item, collection ? [collection, index] : [index]);
+                return content.some(segment => segment.text) ? { name: name(item), segments: content.filter(segment => segment.text) } : null;
+            }).filter(Boolean);
+            if (parts.length) result[collection === 'conversations' ? 'conversations' : 'sceneMessages'] = parts;
+        } else if (source && !/^[\[{"]/.test(source) && parsed === undefined && !/^<\/?(?:html|!doctype)/i.test(source)) {
+            const text = displayText(source, [], true);
+            if (text) result.segments = [{ type: 'dialogue', text }];
+        }
+        const visible = (result.segments?.length || 0) + (result.sceneMessages?.length || 0) + (result.conversations?.length || 0) + (result.sceneNarration ? 1 : 0);
+        if (!visible) {
+            result.displayFallback.empty = true;
+            result.segments = [{ type: 'dialogue', text: '...' }];
+        }
+        if (options.chatMode === 'group' && !result.conversations && options.appType !== 'harem') {
+            result.conversations = [{ name: name(parsed), segments: result.segments || [{ type: 'narration', text: result.sceneNarration }] }];
+            delete result.segments;
+            delete result.sceneNarration;
+        } else if (options.appType === 'harem' && result.segments) {
+            result.sceneMessages = [...(result.sceneMessages || []), { name: name(parsed), segments: result.segments }];
+            result.name = name(parsed);
+            delete result.segments;
+        }
+        if (options.appType === 'cupid') {
+            result.expression = 'neutral'; result.affinity = 0; result.forcedSexualViolation = 'none';
+            result.conversations?.forEach(item => { item.expression = 'neutral'; item.affinity = 0; });
+        }
+        return { content: JSON.stringify(result), ...result.displayFallback };
+    }
+    function getAiDisplayFallbackInfo(content) {
+        try { return JSON.parse(String(content || '')).displayFallback || null; } catch (_) { return null; }
+    }
+    function isAiDisplayJsonIncomplete(raw) {
+        const source = String(raw || '').replace(/^\s*```(?:json)?\s*/i, '').replace(/\s*```\s*$/, '').trim();
+        if (!/^[\[{]/.test(source)) return false;
+        try { JSON.parse(source); return false; } catch (_) { return true; }
+    }
+    function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
+        const fallback = buildAiDisplayFallback(raw, options);
+        return {
+            ...payload,
+            recovered: true,
+            recoveryReason: 'DISPLAY_FALLBACK',
+            displayFallback: { empty: fallback.empty, partial: fallback.partial },
+            choices: [{ message: { role: 'assistant', content: fallback.content }, finish_reason: 'stop' }]
+        };
+    }
+    // AI_DISPLAY_FALLBACK_END
+
     function closeDisplayJsonContainers(source) {
       const stack = [];
       let quoted = false;
@@ -1618,13 +1807,17 @@ Latest user: """${excerpt}"""
                 if (controller.signal.aborted) throw Object.assign(new Error('AI request aborted'), { name: 'AbortError' });
                 let response;
                 try {
-                    response = await fetchImpl(endpoint, { ...buildRequestInit(wantsStream), signal: controller.signal });
+                    const init = buildRequestInit(wantsStream);
+                    const presentation = { ...JSON.parse(init.body), appType: 'cupid' };
+                    response = await fetchImpl(endpoint, { ...init, signal: controller.signal });
                     assertCurrent();
                     if (!response.ok) throw await createAiResponseError(response);
-                    const payload = await readChatCompletionStream(response, { onDelta, wasTimedOut: () => timedOut });
+                    const payload = await readChatCompletionStream(response, { onDelta, wasTimedOut: () => timedOut, presentation });
                     assertCurrent(payload);
                     const reply = getCompleteDisplayableStreamReply(selectChatCompletionContent(payload));
-                    if (!reply) throw Object.assign(new Error('AI response has no displayable content'), { reason: 'EMPTY_AI_RESPONSE' });
+                    if (!reply || isAiDisplayJsonIncomplete(payload?.choices?.[0]?.message?.content) || payload?.choices?.[0]?.finish_reason === 'length') {
+                        return makeAiDisplayCompletion(selectChatCompletionContent(payload), payload, { ...presentation, truncated: true });
+                    }
                     payload.choices[0].message.content = reply;
                     return payload;
                 } catch (error) {
@@ -1647,11 +1840,17 @@ Latest user: """${excerpt}"""
         }
     }
 
-    async function readChatCompletionStream(response, { onDelta = null, wasTimedOut = () => false } = {}) {
+    async function readChatCompletionStream(response, { onDelta = null, wasTimedOut = () => false, presentation = null } = {}) {
         const contentType = String(response?.headers?.get?.('content-type') || '').toLowerCase();
         if (!contentType.includes('text/event-stream') || !response?.body?.getReader) {
             let payload;
-            try { payload = await response.json(); } catch (error) {
+            const received = typeof response.text === 'function' ? await readAiReplyPrefix(response) : null;
+            if (received?.error && !presentation) throw received.error;
+            if (received?.error?.name === 'AbortError' && !wasTimedOut()) throw received.error;
+            if (received?.interrupted && presentation) return makeAiDisplayCompletion(received.text, {}, { ...presentation, truncated: true });
+            const responseText = received?.text ?? null;
+            try { payload = responseText === null ? await response.json() : JSON.parse(responseText); } catch (error) {
+                if (presentation && error?.name === 'SyntaxError') return makeAiDisplayCompletion(responseText || '', {}, { ...presentation, truncated: true });
                 if (error?.name === 'SyntaxError') error.isResponseDecodeFailure = true;
                 throw error;
             }
@@ -1662,6 +1861,7 @@ Latest user: """${excerpt}"""
         const decoder = new TextDecoder();
         let buffer = '';
         let rawContent = '';
+        let partialEvent = '';
         let finalPayload = null;
         const processEvent = async eventText => {
             const dataText = String(eventText || '')
@@ -1675,6 +1875,7 @@ Latest user: """${excerpt}"""
             try {
                 event = JSON.parse(dataText);
             } catch {
+                partialEvent = dataText;
                 return;
             }
             assertChatCompletionSucceeded(event);
@@ -1709,8 +1910,11 @@ Latest user: """${excerpt}"""
             }
             if (!finalPayload && buffer.trim()) await processEvent(buffer);
         } catch (error) {
-            if (['SAFETY_BLOCKED', 'STALE_TURN'].includes(error?.reason) || (error?.name === 'AbortError' && !wasTimedOut())) throw error;
+            if (buffer.trim()) await processEvent(buffer);
+            if (error?.retryExhausted || ['SAFETY_BLOCKED', 'STALE_TURN'].includes(error?.reason) || (error?.name === 'AbortError' && !wasTimedOut())) throw error;
+            if (presentation && isAiDisplayJsonIncomplete(rawContent)) return makeAiDisplayCompletion(rawContent, {}, { ...presentation, truncated: true });
             const existingReply = getCompleteDisplayableStreamReply(rawContent);
+            if (!existingReply && presentation) return makeAiDisplayCompletion(rawContent || partialEvent, {}, { ...presentation, truncated: true });
             if (!existingReply) throw error;
             finalPayload = { choices: [{ message: { content: existingReply }, finish_reason: 'stop' }] };
         } finally {
@@ -1718,9 +1922,11 @@ Latest user: """${excerpt}"""
             reader.releaseLock?.();
         }
 
+        if (!finalPayload && presentation && isAiDisplayJsonIncomplete(rawContent)) return makeAiDisplayCompletion(rawContent, {}, { ...presentation, truncated: true });
         if (!finalPayload && getCompleteDisplayableStreamReply(rawContent)) {
             finalPayload = { choices: [{ message: { content: getCompleteDisplayableStreamReply(rawContent) }, finish_reason: 'stop' }] };
         }
+        if (!finalPayload && presentation) return makeAiDisplayCompletion(rawContent || partialEvent, {}, { ...presentation, truncated: true });
         if (!finalPayload) {
             const error = new Error('AI stream ended before the final response');
             error.reason = 'STREAM_INTERRUPTED';
@@ -1939,6 +2145,8 @@ Latest user: """${excerpt}"""
         selectChatCompletionContent,
         readChatCompletionStream,
         requestChatCompletion,
+        buildAiDisplayFallback,
+        getAiDisplayFallbackInfo,
         createPacedStreamingPreview,
         normalizeGalleryIncidentCategory,
         normalizeGalleryCrisisSeverity,

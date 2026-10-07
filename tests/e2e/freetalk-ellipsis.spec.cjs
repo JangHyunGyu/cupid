@@ -1,8 +1,8 @@
 const { test, expect } = require('@playwright/test');
 const { installAffinitySeeder } = require('./helpers/affinity-seed.cjs');
 
-for (const surface of ['single', 'group', 'gallery']) for (const lang of ['ko', 'de']) for (const failure of ['network']) {
-    test(`${lang}/${surface}: ${failure}: automatic recovery commits exactly one turn`, async ({ page }, testInfo) => {
+for (const surface of ['single', 'group', 'gallery']) for (const lang of ['ko', 'de']) for (const failure of ['empty', 'malformed']) {
+    test(`${lang}/${surface}: ${failure}: ellipsis presentation uses one request and no affinity change`, async ({ page }, testInfo) => {
         test.setTimeout(90_000);
         let unavailable = true;
         const requests = [];
@@ -18,7 +18,7 @@ for (const surface of ['single', 'group', 'gallery']) for (const lang of ['ko', 
                 requests.push(body);
                 if (requests.length === 1) {
                     if (failure === 'network') return route.abort('failed');
-                    return route.fulfill({ status: 200, json: { choices: [{ message: { content: failure === 'empty' ? '' : '{broken' } }] } });
+                    return route.fulfill({ status: 200, json: { choices: [{ message: { content: failure === 'empty' ? '' : '{"segments":[{"type":"dialogue","text":"Received prefix' } }] } });
                 }
                 unavailable = false;
                 const segments = [{ type: 'dialogue', text: unavailable ? placeholder : lang === 'ko' ? '오늘은 잘 지냈어. 너는 어땠어?' : 'Heute war es ganz ruhig. Wie war dein Tag?' }];
@@ -92,16 +92,15 @@ for (const surface of ['single', 'group', 'gallery']) for (const lang of ['ko', 
             finally { window.clearInterval(advance); }
         }, { surface, input });
         await send();
-        expect(requests).toHaveLength(2);
+        expect(requests).toHaveLength(1);
         const succeeded = await snapshot();
-        expect(succeeded.turns).toBe(before.turns + 1);
+        expect(succeeded.turns).toBe(before.turns + (failure === 'empty' ? 0 : 1));
+        expect(succeeded.affinity).toBe(before.affinity);
+        expect(await page.locator('body').innerText()).toContain(failure === 'empty' ? '...' : 'Received prefix...');
         expect(succeeded.input).toBe('');
         expect(succeeded.history.filter(item => item.role === 'assistant').length).toBe(before.history.filter(item => item.role === 'assistant').length + 1);
-        await expect.poll(() => logs.filter(entry => entry.role === 'assistant' && entry.logSource === 'realtime').length).toBe(surface === 'group' ? 2 : 1);
+        await expect.poll(() => logs.filter(entry => entry.role === 'assistant' && entry.logSource === 'realtime').length).toBe(1);
         expect(logs.some(entry => String(entry.content).includes(placeholder))).toBe(false);
-        expect(requests[1].cacheKey).toBe(requests[0].cacheKey);
-        expect(requests[1].turnId).toBe(requests[0].turnId);
-        expect(requests[1].messages).toEqual(requests[0].messages);
         expect(errors).toHaveLength(0);
         await testInfo.attach('requests', { body: JSON.stringify(requests), contentType: 'application/json' });
     });

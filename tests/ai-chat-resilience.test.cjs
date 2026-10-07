@@ -12,23 +12,32 @@ const sse = (content, final = null) => new Response(`data: ${JSON.stringify({ ch
 const history = [{ role: 'system', content: 'Stable character canon\n===CACHE_BOUNDARY===\nCurrent turn' }, { role: 'user', content: 'Continue.' }];
 
 for (const [label, response] of [
-  ['empty text', () => completion('')],
-  ['empty structured reply', () => completion('{"segments":[]}')],
-  ['malformed structured reply', () => completion('{"segments":[{"text":"unfinished')],
-  ['JSON scalar', () => completion('null')],
-  ['broken HTTP JSON', () => new Response('<html>Bad gateway</html>', { headers: { 'content-type': 'application/json' } })],
   ['network disconnect', () => { throw new TypeError('Failed to fetch'); }],
-  ['interrupted stream', () => sse('{"segments":[{"text":"unfinished')],
-  ['empty final stream', () => sse('', { choices: [{ message: { content: '' } }] })],
   ['temporary gateway error', () => new Response('Bad gateway', { status: 502 })]
 ]) test(`${label}: recover with the same prompt, cache key and turn`, async () => {
   const runtime = load([response, () => completion(reply)]);
   assert.match(await runtime.run(), /The original reply/);
   assert.equal(runtime.requests.length, 2);
-  const first = runtime.requests[0], second = runtime.requests[1];
-  assert.deepEqual(second.body.messages, first.body.messages);
-  assert.equal(second.body.turnId, first.body.turnId);
-  assert.equal(second.headers['x-cache-key'], first.headers['x-cache-key']);
+  assert.deepEqual(runtime.requests[1].body.messages, runtime.requests[0].body.messages);
+  assert.equal(runtime.requests[1].body.turnId, runtime.requests[0].body.turnId);
+  assert.equal(runtime.requests[1].headers['x-cache-key'], runtime.requests[0].headers['x-cache-key']);
+});
+for (const [label, response, expected] of [
+  ['empty text', () => completion(''), '...'],
+  ['empty structured reply', () => completion('{"segments":[]}'), '...'],
+  ['malformed structured reply', () => completion('{"segments":[{"text":"unfinished'), 'unfinished...'],
+  ['JSON scalar', () => completion('null'), '...'],
+  ['broken HTTP JSON', () => new Response('<html>Bad gateway</html>', { headers: { 'content-type': 'application/json' } }), '...'],
+  ['interrupted stream', () => sse('{"segments":[{"text":"unfinished'), 'unfinished...'],
+  ['empty final stream', () => sse('', { choices: [{ message: { content: '' } }] }), '...']
+]) test(`${label}: display the received content or ellipsis without generating again`, async () => {
+  const runtime = load([response, () => completion(reply)]);
+  const parsed = JSON.parse(await runtime.run());
+  const visible = parsed.segments || parsed.sceneMessages?.[0]?.segments || parsed.conversations?.[0]?.segments;
+  assert.equal(visible[0].text, expected);
+  assert.equal(parsed.displayFallback.empty, expected === '...');
+  assert.equal(runtime.requests.length, 1);
+  assert.equal(runtime.requests[0].body.responsePresentation, 'ellipsis');
 });
 for (const [label, response] of [
   ['complete stream without final event', () => sse(reply)],
@@ -49,10 +58,10 @@ for (const [label, response] of [
   await assert.rejects(runtime.run());
   assert.equal(runtime.requests.length, 1);
 });
-test('repeated invalid replies stop within the shared retry budget', async () => {
-  const runtime = load(Array.from({ length: 5 }, () => () => completion('{"segments":[]}')));
-  await assert.rejects(runtime.run());
-  assert.ok(runtime.requests.length >= 2 && runtime.requests.length <= 3);
+test('an empty reply completes with an ellipsis after a single request', async () => {
+  const runtime = load([() => completion('{"segments":[]}')]);
+  assert.match(await runtime.run(), /\.\.\./);
+  assert.equal(runtime.requests.length, 1);
 });
 test('explicit cancellation stops recovery', async () => {
   const runtime = load([() => { runtime.cancel(); throw Object.assign(new Error('Canceled'), { name: 'AbortError' }); }, () => completion(reply)]);
@@ -66,7 +75,7 @@ const core = sandbox.window.CupidFreeTalkCore;
 function load(responses) {
   const requests = [], controller = new AbortController();
   return { requests, cancel: () => controller.abort(), async run(options = {}) {
-    const payload = await core.requestChatCompletion('https://ai.test', stream => ({ method: 'POST', headers: { 'x-cache-key': 'test:stable' }, body: JSON.stringify({ messages: history, turnId: 'same-turn', stream }) }), {
+    const payload = await core.requestChatCompletion('https://ai.test', stream => ({ method: 'POST', headers: { 'x-cache-key': 'test:stable' }, body: JSON.stringify({ messages: history, turnId: 'same-turn', stream, responsePresentation: 'ellipsis' }) }), {
       signal: controller.signal, retryDelayMs: 1, timeoutMs: options.timeout || 120000,
       fetchImpl: async (_url, init) => { requests.push({ body: JSON.parse(init.body), headers: init.headers }); return responses[requests.length - 1](init); }
     });

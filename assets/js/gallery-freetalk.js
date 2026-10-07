@@ -1156,6 +1156,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                         outputLanguage: this.lang,
                         cacheKey: _gftCacheKey,
                         stream: wantsStream,
+                        responsePresentation: 'ellipsis',
                         ...(_turnMeta || {})
                     })
                 });
@@ -1219,6 +1220,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             if (!parsed?.text && !(Array.isArray(parsed?.segments) && parsed.segments.length > 0)) {
                 throw new Error('AI response did not contain visible roleplay text. Please try again.');
             }
+            const displayFallback = GalleryFreeTalkCore.getAiDisplayFallbackInfo(reply);
             const displayText = this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(parsed.text || ''));
             const displaySegments = this._sanitizeSegmentsPlaceholders(parsed.segments || null);
             if (!displayText) {
@@ -1244,9 +1246,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             _streamingPreview = null;
             const assistantRenderReceipt = this._getChatRenderReceipt(displayText, displaySegments);
             this._assertRequestContext(requestContext, data);
-            this._updateExpression(parsed.expression, requestCharId);
+            if (!displayFallback) this._updateExpression(parsed.expression, requestCharId);
             this._assertRequestContext(requestContext, data);
-            const incidentResult = this._commitGalleryIncidentTurn({
+            const incidentResult = displayFallback ? { affinityChange: 0 } : this._commitGalleryIncidentTurn({
                 charId: requestCharId,
                 runtime: requestContext.incidentRuntime,
                 payload: parsed.incident,
@@ -1254,7 +1256,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 latestUserText: finalContent,
                 turnAffinity: parsed.affinity
             });
-            const affinityResult = this._applyAffinityChange(
+            const affinityResult = displayFallback ? { change: 0, requestedChange: 0, value: this.progress.getAffinity(requestCharId) } : this._applyAffinityChange(
                 incidentResult.affinityChange,
                 requestCharId,
                 finalContent
@@ -1271,7 +1273,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                         : (aftermathFromIncident ? 'a relationship event between them' : 'the user\'s preceding words or action')
                 }
             );
-            this.progress?.setRelationshipAftermath?.(requestCharId, nextAftermath);
+            if (!displayFallback) this.progress?.setRelationshipAftermath?.(requestCharId, nextAftermath);
             requestHistory.push({
                 role: 'assistant',
                 content: displayText,
@@ -1281,7 +1283,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             });
 
             // 프리토킹 횟수 증가
-            this._incrementFreeTalkCount(requestCharId);
+            if (!displayFallback?.empty) this._incrementFreeTalkCount(requestCharId);
 
             this._assertRequestContext(requestContext, data);
             this._saveMemory(requestCharId, requestHistory);

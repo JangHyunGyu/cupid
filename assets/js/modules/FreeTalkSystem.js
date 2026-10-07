@@ -1687,6 +1687,7 @@ class FreeTalkSystem {
                         outputLanguage: _lang,
                         cacheKey: _cacheKey,
                         stream: wantsStream,
+                        responsePresentation: 'ellipsis',
                         ...(_turnMeta || {})
                     })
                 });
@@ -1739,6 +1740,7 @@ class FreeTalkSystem {
 
             this._assertRequestContext(requestContext, data);
             const parsed = this.parseJsonResponse(reply);
+            const displayFallback = CupidFreeTalkCore.getAiDisplayFallbackInfo(reply);
 
             window.__cupidLastStreamFinish = {
                 provider: data?.provider || '',
@@ -1802,8 +1804,8 @@ class FreeTalkSystem {
                 this._assertRequestContext(requestContext, data);
                 let affinityResult;
                 const commitTurn = () => {
-                this.applyExpression(parsed.expression, scene);
-                affinityResult = this.applyAffinity(parsed.affinity, scene, finalContent);
+                if (!displayFallback) this.applyExpression(parsed.expression, scene);
+                affinityResult = displayFallback ? { change: 0, requestedChange: 0, value: this.stateManager.getAffinity(charKey) } : this.applyAffinity(parsed.affinity, scene, finalContent);
                 this._assertRequestContext(requestContext, data);
                 const nextAftermath = CupidFreeTalkCore.updateRelationshipAftermath(
                     this.stateManager.getRelationshipAftermath?.(charKey),
@@ -1816,7 +1818,7 @@ class FreeTalkSystem {
                             : 'the user\'s preceding words or action'
                     }
                 );
-                if (!_sceneDialogue.romanticInterlude) this.stateManager.setRelationshipAftermath?.(charKey, nextAftermath);
+                if (!displayFallback && !_sceneDialogue.romanticInterlude) this.stateManager.setRelationshipAftermath?.(charKey, nextAftermath);
                 if (forcedSexualViolation === 'rape' || forcedSexualViolation === 'molestation') {
                     this.stateManager.setFlag('forced_sexual_violation', {
                         character: charKey,
@@ -1831,14 +1833,18 @@ class FreeTalkSystem {
                     speakerId: charKey,
                     speakerName: scene.name
                 });
-                this.galleryManager.incrementFreeTalkCount(charKey);
+                if (!displayFallback?.empty) this.galleryManager.incrementFreeTalkCount(charKey);
+                if (displayFallback?.empty) {
+                    this.freeTalkTurns = requestContext.freeTalkTurnsBefore;
+                    if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
+                }
 
                 // 대화 기록 저장 (로컬)
                 this._assertRequestContext(requestContext, data);
                 this.stateManager.setChatMemory(charKey, requestHistory);
                 this._commitFreeTalkCheckpoint(requestHistory.at(-1));
                 };
-                const turnResult = this.stateManager.commitProgressEvent
+                const turnResult = this.stateManager.commitProgressEvent && !displayFallback?.empty
                     ? await this.stateManager.commitProgressEvent(`talk:${requestSceneId}:${requestContext.freeTalkTurnsBefore}`, commitTurn,
                         { checkpoint: () => this.stateManager.freeTalkCheckpoint })
                     : { applied: true, value: commitTurn() };
@@ -2040,7 +2046,7 @@ class FreeTalkSystem {
         const ordered = this.groupParticipants
             .map(participant => normalized.find(conversation => conversation.speakerId === participant.id))
             .filter(Boolean);
-        if (ordered.length !== this.groupParticipants.length) {
+        if (!ordered.length || (ordered.length !== this.groupParticipants.length && !parsed.displayFallback)) {
             throw new Error('Cupid group response did not contain every required speaker message');
         }
         return ordered;
@@ -2106,14 +2112,14 @@ class FreeTalkSystem {
         };
     }
 
-    async _renderGroupConversations(conversations, requestContext, latestUserText, lang, scene = null, streamingPreview = null) {
+    async _renderGroupConversations(conversations, requestContext, latestUserText, lang, scene = null, streamingPreview = null, displayFallback = null) {
         const rendered = [];
         for (let index = 0; index < conversations.length; index += 1) {
             this._assertRequestContext(requestContext);
             const conversation = conversations[index];
             this._setGroupActiveSpeaker(conversation.speakerId);
             this.uiManager.updateNameTag(conversation.speakerName);
-            this._applyGroupExpression(conversation.expression, conversation.speakerId);
+            if (!displayFallback) this._applyGroupExpression(conversation.expression, conversation.speakerId);
             if (index === 0 && streamingPreview) {
                 const pacedConversationText = Array.isArray(conversation.segments) && conversation.segments.length > 0
                     ? conversation.segments.map(segment => segment.text).join('\n\n')
@@ -2144,7 +2150,7 @@ class FreeTalkSystem {
         this._assertRequestContext(requestContext);
         const commitTurn = () => {
         for (const conversation of rendered) {
-            const affinityResult = this._applyGroupAffinity(
+            const affinityResult = displayFallback ? { change: 0, requestedChange: 0, value: this.stateManager.getAffinity(conversation.speakerId) } : this._applyGroupAffinity(
                 conversation.affinity,
                 conversation.speakerId,
                 latestUserText,
@@ -2161,14 +2167,18 @@ class FreeTalkSystem {
                         : 'the user’s words or actions during the group conversation')
                 }
             );
-            this.stateManager.setRelationshipAftermath?.(conversation.speakerId, nextAftermath);
-            this.galleryManager.incrementFreeTalkCount(conversation.speakerId);
+            if (!displayFallback) this.stateManager.setRelationshipAftermath?.(conversation.speakerId, nextAftermath);
+            if (!displayFallback?.empty) this.galleryManager.incrementFreeTalkCount(conversation.speakerId);
             conversation.affinityResult = affinityResult;
         }
             const last = rendered.at(-1);
             this._commitFreeTalkCheckpoint({ content: last.text, speakerId: last.speakerId, speakerName: last.speakerName, segments: last.segments });
         };
-        const turnResult = this.stateManager.commitProgressEvent
+        if (displayFallback?.empty) {
+            this.freeTalkTurns = requestContext.freeTalkTurnsBefore;
+            if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
+        }
+        const turnResult = this.stateManager.commitProgressEvent && !displayFallback?.empty
             ? await this.stateManager.commitProgressEvent(`talk:${requestContext.sceneId}:${requestContext.freeTalkTurnsBefore}`, commitTurn,
                 { checkpoint: () => this.stateManager.freeTalkCheckpoint })
             : { applied: true, value: commitTurn() };
@@ -2352,6 +2362,7 @@ class FreeTalkSystem {
                     outputLanguage: lang,
                     cacheKey: lastCacheKey,
                     stream: wantsStream,
+                        responsePresentation: 'ellipsis',
                     ...(lastTurnMeta || {})
                 })
             });
@@ -2407,7 +2418,8 @@ class FreeTalkSystem {
                 finalContent,
                 lang,
                 scene,
-                streamingPreview
+                streamingPreview,
+                CupidFreeTalkCore.getAiDisplayFallbackInfo(reply)
             );
             streamingPreview = null;
             this._assertRequestContext(requestContext, data);
