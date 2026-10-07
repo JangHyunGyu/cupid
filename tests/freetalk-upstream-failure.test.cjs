@@ -116,10 +116,10 @@ test('Main, Group and Gallery catch blocks classify TypeErrors through the share
     const gallery = fs.readFileSync(require.resolve('../assets/js/gallery-freetalk.js'), 'utf8');
     for (const source of [main, gallery]) {
         assert.doesNotMatch(source, /instanceof TypeError/);
-        assert.match(source, /isTransientFetchError = (?:CupidFreeTalkCore|GalleryFreeTalkCore)\.isNetworkTransportError\(error\)/);
-        assert.match(source, /isNetworkTransportError\(primaryError\) \|\| shouldFailOver/);
+        assert.match(source, /(?:CupidFreeTalkCore|GalleryFreeTalkCore)\.requestChatCompletion\(/);
+        assert.match(source, /(?:CupidFreeTalkCore|GalleryFreeTalkCore)\.isNetworkTransportError\(/);
     }
-    assert.equal((main.match(/isTransientFetchError = CupidFreeTalkCore\.isNetworkTransportError\(error\)/g) || []).length, 2);
+    assert.equal((main.match(/CupidFreeTalkCore\.requestChatCompletion\(/g) || []).length, 2);
     assert.match(main, /isClientCodeException\(error\) \? 'freetalk_client_exception'/);
     assert.match(main, /isClientCodeException\(error\) \? 'group_freetalk_client_exception'/);
     assert.match(gallery, /isClientCodeException\(err\) \? 'freetalk_client_exception'/);

@@ -1297,6 +1297,7 @@ class FreeTalkSystem {
             resolve(false);
         }
         if (!preserveRequestOwner && this._activeRequestContext) {
+            this._activeRequestContext.abortController?.abort();
             this._rollbackRequestHistory(this._activeRequestContext);
             if (this.uiManager?.messageEl) this.uiManager.messageEl.innerHTML = '';
         }
@@ -1429,6 +1430,7 @@ class FreeTalkSystem {
         const requestOwner = {};
         const requestContext = {
             owner: requestOwner,
+            abortController: new AbortController(),
             epoch: requestEpoch,
             sceneId: requestSceneId,
             charKey,
@@ -1688,68 +1690,15 @@ class FreeTalkSystem {
                         ...(_turnMeta || {})
                     })
                 });
-                const fetchWithTransientRetry = async (endpoint, wantsStream) => {
-                    let lastError = null;
-                    for (let attempt = 0; attempt < 3; attempt += 1) {
-                        try {
-                            const response = await fetch(endpoint, buildRequestInit(wantsStream));
-                            if (!shouldRetryFreeTalkAiResponse(response)
-                                || navigator.onLine === false
-                                || attempt >= 2) {
-                                return response;
-                            }
-                            try { await response.body?.cancel?.(); } catch (_) { /* best-effort cleanup */ }
-                        } catch (error) {
-                            lastError = error;
-                            this._assertRequestContext(requestContext);
-                            const isTransientFetchError = CupidFreeTalkCore.isNetworkTransportError(error);
-                            if (!isTransientFetchError || navigator.onLine === false || attempt >= 2) throw error;
-                        }
-                        await new Promise(resolve => window.setTimeout(resolve, 400 * (attempt + 1)));
+                return CupidFreeTalkCore.requestChatCompletion(aiEndpoint, buildRequestInit, {
+                    assertCurrent: payload => this._assertRequestContext(requestContext, payload),
+                    signal: requestContext.abortController.signal,
+                    onDelta: ({ content }) => {
                         this._assertRequestContext(requestContext);
-                    }
-                    throw lastError;
-                };
-                let response;
-                let primaryError = null;
-                _lastAiEndpoint = aiEndpoint;
-                try {
-                    response = await fetchWithTransientRetry(aiEndpoint, true);
-                    this._assertRequestContext(requestContext);
-                } catch (error) {
-                    this._assertRequestContext(requestContext);
-                    primaryError = error;
-                }
-
-                const canFallback = (
-                    CupidFreeTalkCore.isNetworkTransportError(primaryError) || shouldFailOverFreeTalkAiResponse(response)
-                ) && fallbackEndpoint && fallbackEndpoint !== aiEndpoint;
-                if (canFallback) {
-                    _lastAiEndpoint = fallbackEndpoint;
-                    response = await fetchWithTransientRetry(fallbackEndpoint, true);
-                    this._assertRequestContext(requestContext);
-                } else if (primaryError) {
-                    throw primaryError;
-                }
-
-                if (!response.ok) throw await CupidFreeTalkCore.createAiResponseError(response);
-                try {
-                    return await CupidFreeTalkCore.readChatCompletionStream(response, {
-                        onDelta: ({ content }) => {
-                            this._assertRequestContext(requestContext);
-                            updateStreamingPreview(content);
-                        }
-                    });
-                } catch (streamError) {
-                    this._assertRequestContext(requestContext);
-                    if (streamError?.retryExhausted) throw streamError;
-                    console.warn('[Cupid FreeTalk] Streaming interrupted; retrying once without streaming', streamError?.reason || streamError?.message || streamError);
-                    _streamingPreview.reset();
-                    const recoveryResponse = await fetchWithTransientRetry(_lastAiEndpoint, false);
-                    this._assertRequestContext(requestContext);
-                    if (!recoveryResponse.ok) throw await CupidFreeTalkCore.createAiResponseError(recoveryResponse);
-                    return await recoveryResponse.json();
-                }
+                        updateStreamingPreview(content);
+                    },
+                    onReset: () => _streamingPreview.reset()
+                });
             };
 
             // JSON 파싱
@@ -2246,6 +2195,7 @@ class FreeTalkSystem {
         const requestOwner = {};
         const requestContext = {
             owner: requestOwner,
+            abortController: new AbortController(),
             epoch: requestEpoch,
             sceneId: requestSceneId,
             charKey: groupKey,
@@ -2405,48 +2355,15 @@ class FreeTalkSystem {
                     ...(lastTurnMeta || {})
                 })
             });
-            const fetchWithTransientRetry = async wantsStream => {
-                let lastError = null;
-                for (let attempt = 0; attempt < 3; attempt += 1) {
-                    try {
-                        const response = await fetch(endpoint, buildRequestInit(wantsStream));
-                        this._assertRequestContext(requestContext);
-                        if (!shouldRetryFreeTalkAiResponse(response)
-                            || navigator.onLine === false
-                            || attempt >= 2) {
-                            return response;
-                        }
-                        try { await response.body?.cancel?.(); } catch (_) { /* best-effort cleanup */ }
-                    } catch (error) {
-                        lastError = error;
-                        this._assertRequestContext(requestContext);
-                        const isTransientFetchError = CupidFreeTalkCore.isNetworkTransportError(error);
-                        if (!isTransientFetchError || navigator.onLine === false || attempt >= 2) throw error;
-                    }
-                    await new Promise(resolve => window.setTimeout(resolve, 400 * (attempt + 1)));
+            const data = await CupidFreeTalkCore.requestChatCompletion(endpoint, buildRequestInit, {
+                assertCurrent: payload => this._assertRequestContext(requestContext, payload),
+                signal: requestContext.abortController.signal,
+                onDelta: ({ content }) => {
                     this._assertRequestContext(requestContext);
-                }
-                throw lastError;
-            };
-            let response = await fetchWithTransientRetry(true);
-            if (!response?.ok) throw await CupidFreeTalkCore.createAiResponseError(response);
-            let data;
-            try {
-                data = await CupidFreeTalkCore.readChatCompletionStream(response, {
-                    onDelta: ({ content }) => {
-                        this._assertRequestContext(requestContext);
-                        updateGroupStreamingPreview(content);
-                    }
-                });
-            } catch (streamError) {
-                this._assertRequestContext(requestContext);
-                if (streamError?.retryExhausted) throw streamError;
-                console.warn('[Cupid Group FreeTalk] Streaming interrupted; retrying once without streaming', streamError?.reason || streamError?.message || streamError);
-                streamingPreview.reset();
-                response = await fetchWithTransientRetry(false);
-                if (!response?.ok) throw await CupidFreeTalkCore.createAiResponseError(response);
-                data = await response.json();
-            }
+                    updateGroupStreamingPreview(content);
+                },
+                onReset: () => streamingPreview.reset()
+            });
             this._assertRequestContext(requestContext, data);
             if (data?.provider === 'deepseek' && data?.usage) {
                 const usage = data.usage;

@@ -829,6 +829,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
     _invalidateGalleryTalkContext() {
         if (this._activeRequestContext) {
+            this._activeRequestContext.abortController?.abort();
             this._rollbackRequestHistory(this._activeRequestContext);
         }
         this._galleryTalkEpoch += 1;
@@ -921,6 +922,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const requestOwner = {};
         const requestContext = {
             owner: requestOwner,
+            abortController: new AbortController(),
             epoch: this._galleryTalkEpoch,
             charId: this.currentCharId,
             charKey: this.currentCharKey,
@@ -1157,68 +1159,15 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                         ...(_turnMeta || {})
                     })
                 });
-                const fetchWithTransientRetry = async (endpoint, wantsStream) => {
-                    let lastError = null;
-                    for (let attempt = 0; attempt < 3; attempt += 1) {
-                        try {
-                            const response = await fetch(endpoint, buildRequestInit(wantsStream));
-                            if (!shouldRetryGalleryAiResponse(response)
-                                || navigator.onLine === false
-                                || attempt >= 2) {
-                                return response;
-                            }
-                            try { await response.body?.cancel?.(); } catch (_) { /* best-effort cleanup */ }
-                        } catch (error) {
-                            lastError = error;
-                            this._assertRequestContext(requestContext);
-                            const isTransientFetchError = GalleryFreeTalkCore.isNetworkTransportError(error);
-                            if (!isTransientFetchError || navigator.onLine === false || attempt >= 2) throw error;
-                        }
-                        await new Promise(resolve => window.setTimeout(resolve, 400 * (attempt + 1)));
+                return GalleryFreeTalkCore.requestChatCompletion(aiEndpoint, buildRequestInit, {
+                    assertCurrent: payload => this._assertRequestContext(requestContext, payload),
+                    signal: requestContext.abortController.signal,
+                    onDelta: ({ content }) => {
                         this._assertRequestContext(requestContext);
-                    }
-                    throw lastError;
-                };
-                let response;
-                let primaryError = null;
-                _lastAiEndpoint = aiEndpoint;
-                try {
-                    response = await fetchWithTransientRetry(aiEndpoint, true);
-                    this._assertRequestContext(requestContext);
-                } catch (error) {
-                    this._assertRequestContext(requestContext);
-                    primaryError = error;
-                }
-
-                const canFallback = (
-                    GalleryFreeTalkCore.isNetworkTransportError(primaryError) || shouldFailOverGalleryAiResponse(response)
-                ) && fallbackEndpoint && fallbackEndpoint !== aiEndpoint;
-                if (canFallback) {
-                    _lastAiEndpoint = fallbackEndpoint;
-                    response = await fetchWithTransientRetry(fallbackEndpoint, true);
-                    this._assertRequestContext(requestContext);
-                } else if (primaryError) {
-                    throw primaryError;
-                }
-
-                if (!response.ok) throw await GalleryFreeTalkCore.createAiResponseError(response);
-                try {
-                    return await GalleryFreeTalkCore.readChatCompletionStream(response, {
-                        onDelta: ({ content }) => {
-                            this._assertRequestContext(requestContext);
-                            updateStreamingPreview(content);
-                        }
-                    });
-                } catch (streamError) {
-                    this._assertRequestContext(requestContext);
-                    if (streamError?.retryExhausted) throw streamError;
-                    console.warn('[Cupid GalleryFreeTalk] Streaming interrupted; retrying once without streaming', streamError?.reason || streamError?.message || streamError);
-                    _streamingPreview.reset();
-                    const recoveryResponse = await fetchWithTransientRetry(_lastAiEndpoint, false);
-                    this._assertRequestContext(requestContext);
-                    if (!recoveryResponse.ok) throw await GalleryFreeTalkCore.createAiResponseError(recoveryResponse);
-                    return await recoveryResponse.json();
-                }
+                        updateStreamingPreview(content);
+                    },
+                    onReset: () => _streamingPreview.reset()
+                });
             };
 
             const data = await requestCupidGalleryReplyData(_optimized);

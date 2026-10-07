@@ -1520,6 +1520,7 @@ Latest user: """${excerpt}"""
 
         const fenced = source.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/i);
         const candidate = (fenced ? fenced[1] : source).trim();
+        if (/^```/.test(candidate)) return '';
         let parsed;
         try {
             parsed = JSON.parse(candidate);
@@ -1558,6 +1559,9 @@ Latest user: """${excerpt}"""
     }
 
     function assertChatCompletionSucceeded(payload = {}) {
+        if (payload?.reason === 'SAFETY_BLOCKED' || payload?.error === 'SAFETY_BLOCKED') {
+            throw Object.assign(new Error('SAFETY_BLOCKED'), { reason: 'SAFETY_BLOCKED', isSafetyBlocked: true });
+        }
         if (payload?.retryExhausted === true
             || payload?.model === 'local-structured-recovery'
             || payload?.providerRoute === 'worker:local-structured-recovery'
@@ -1574,6 +1578,9 @@ Latest user: """${excerpt}"""
         const error = new Error('HTTP ' + (response?.status || 0));
         let payload = null;
         try { payload = await response?.json?.(); } catch (_) { /* An HTML gateway error has no metadata. */ }
+        error.status = response?.status || 0;
+        error.reason = payload?.reason || payload?.error || '';
+        error.isSafetyBlocked = error.reason === 'SAFETY_BLOCKED';
         error.retryExhausted = response?.headers?.get?.('x-ai-retry-exhausted') === 'true'
             || payload?.retryExhausted === true;
         if (error.retryExhausted) error.reason = 'UPSTREAM_RETRIES_EXHAUSTED';
@@ -1593,10 +1600,62 @@ Latest user: """${excerpt}"""
         return getCompleteDisplayableStreamReply(payload?.streamedContent) || fallback;
     }
 
-    async function readChatCompletionStream(response, { onDelta = null } = {}) {
+    // One budget covers transport and content recovery; the prompt and turn stay identical.
+    async function requestChatCompletion(endpoint, buildRequestInit, {
+        assertCurrent = () => {}, onDelta = null, onReset = null,
+        signal = null, timeoutMs = 120000, retryDelayMs = 400, fetchImpl = fetch
+    } = {}) {
+        const controller = new AbortController();
+        const cancel = () => controller.abort();
+        signal?.addEventListener('abort', cancel, { once: true });
+        if (signal?.aborted) cancel();
+        let timedOut = false;
+        const timeout = setTimeout(() => { timedOut = true; cancel(); }, timeoutMs);
+        let wantsStream = true;
+        try {
+            for (let attempt = 0; attempt < 3; attempt += 1) {
+                assertCurrent();
+                if (controller.signal.aborted) throw Object.assign(new Error('AI request aborted'), { name: 'AbortError' });
+                let response;
+                try {
+                    response = await fetchImpl(endpoint, { ...buildRequestInit(wantsStream), signal: controller.signal });
+                    assertCurrent();
+                    if (!response.ok) throw await createAiResponseError(response);
+                    const payload = await readChatCompletionStream(response, { onDelta, wasTimedOut: () => timedOut });
+                    assertCurrent(payload);
+                    const reply = getCompleteDisplayableStreamReply(selectChatCompletionContent(payload));
+                    if (!reply) throw Object.assign(new Error('AI response has no displayable content'), { reason: 'EMPTY_AI_RESPONSE' });
+                    payload.choices[0].message.content = reply;
+                    return payload;
+                } catch (error) {
+                    assertCurrent();
+                    const terminal = controller.signal.aborted || error?.name === 'AbortError'
+                        || error?.retryExhausted || ['SAFETY_BLOCKED', 'STALE_TURN', 'VERSION_MISMATCH'].includes(error?.reason);
+                    const recoverable = isNetworkTransportError(error)
+                        || error?.isResponseDecodeFailure || ['STREAM_INTERRUPTED', 'STREAM_ERROR', 'EMPTY_AI_RESPONSE', 'INCOMPLETE_STRUCTURED_STREAM', 'PROVIDER_OUTPUT_CONTRACT_VIOLATION'].includes(error?.reason)
+                        || (response && shouldRetryAiResponse(response));
+                    if (terminal || !recoverable || attempt === 2 || (typeof navigator !== 'undefined' && navigator.onLine === false)) throw error;
+                    try { await response?.body?.cancel?.(); } catch (_) { /* best effort */ }
+                    onReset?.();
+                    wantsStream = false;
+                    await new Promise(resolve => setTimeout(resolve, retryDelayMs * (attempt + 1)));
+                }
+            }
+        } finally {
+            clearTimeout(timeout);
+            signal?.removeEventListener('abort', cancel);
+        }
+    }
+
+    async function readChatCompletionStream(response, { onDelta = null, wasTimedOut = () => false } = {}) {
         const contentType = String(response?.headers?.get?.('content-type') || '').toLowerCase();
         if (!contentType.includes('text/event-stream') || !response?.body?.getReader) {
-            return assertChatCompletionSucceeded(await response.json());
+            let payload;
+            try { payload = await response.json(); } catch (error) {
+                if (error?.name === 'SyntaxError') error.isResponseDecodeFailure = true;
+                throw error;
+            }
+            return assertChatCompletionSucceeded(payload);
         }
 
         const reader = response.body.getReader();
@@ -1646,15 +1705,16 @@ Latest user: """${excerpt}"""
                     buffer = buffer.slice(boundary + separator);
                     await processEvent(eventText);
                 }
-                if (done) break;
+                if (done || finalPayload) break;
             }
-            if (buffer.trim()) await processEvent(buffer);
+            if (!finalPayload && buffer.trim()) await processEvent(buffer);
         } catch (error) {
-            if (['SAFETY_BLOCKED', 'STALE_TURN'].includes(error?.reason) || error?.name === 'AbortError') throw error;
+            if (['SAFETY_BLOCKED', 'STALE_TURN'].includes(error?.reason) || (error?.name === 'AbortError' && !wasTimedOut())) throw error;
             const existingReply = getCompleteDisplayableStreamReply(rawContent);
             if (!existingReply) throw error;
             finalPayload = { choices: [{ message: { content: existingReply }, finish_reason: 'stop' }] };
         } finally {
+            if (finalPayload) { try { await reader.cancel?.(); } catch (_) { /* best effort */ } }
             reader.releaseLock?.();
         }
 
@@ -1878,6 +1938,7 @@ Latest user: """${excerpt}"""
         createAiResponseError,
         selectChatCompletionContent,
         readChatCompletionStream,
+        requestChatCompletion,
         createPacedStreamingPreview,
         normalizeGalleryIncidentCategory,
         normalizeGalleryCrisisSeverity,

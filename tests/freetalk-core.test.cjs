@@ -208,8 +208,9 @@ test('every Cupid free-talk surface uses SSE, fixed pacing, and non-blocking bac
     const dialogue = read('assets/js/modules/DialogueSystem.js');
     assert.ok((main.match(/stream:\s*wantsStream/g) || []).length >= 2, 'single and group requests must carry the stream flag');
     assert.match(gallery, /stream:\s*wantsStream/);
-    assert.ok((main.match(/readChatCompletionStream/g) || []).length >= 2, 'single and group readers must consume SSE');
-    assert.match(gallery, /readChatCompletionStream/);
+    assert.ok((main.match(/requestChatCompletion/g) || []).length >= 2, 'single and group readers must consume SSE');
+    assert.match(gallery, /requestChatCompletion/);
+    assert.match(source, /await readChatCompletionStream\(response, \{ onDelta, wasTimedOut:/);
     assert.ok((main.match(/selectChatCompletionContent\(data\)/g) || []).length >= 2, 'single and group completion must preserve valid raw streams');
     assert.match(gallery, /selectChatCompletionContent\(data\)/, 'gallery completion must preserve a valid raw stream');
     assert.ok((main.match(/characterDelayMs:\s*10/g) || []).length >= 2);
@@ -263,21 +264,16 @@ test('retry and failover status contracts remain distinct', () => {
     assert.equal(core.shouldFailOverAiResponse({ ok: false, status: 400 }), false);
 });
 
-test('group free-talk retries transient fetch failures before reporting an error', () => {
+test('group free-talk delegates transport and content recovery to the shared budget', () => {
     const freeTalkSystem = read('assets/js/modules/FreeTalkSystem.js');
     const groupMethodStart = freeTalkSystem.indexOf('async sendGroupChatMessage(getSceneFn)');
-    const retryStart = freeTalkSystem.indexOf('const fetchWithTransientRetry = async wantsStream =>', groupMethodStart);
-    const retryEnd = freeTalkSystem.indexOf('let response = await fetchWithTransientRetry(true)', retryStart);
-    assert.ok(groupMethodStart >= 0 && retryStart > groupMethodStart && retryEnd > retryStart);
-
-    const retryBlock = freeTalkSystem.slice(retryStart, retryEnd);
-    assert.match(retryBlock, /catch \(error\)/);
-    assert.match(retryBlock, /CupidFreeTalkCore\.isNetworkTransportError\(error\)/);
+    const recoveryStart = freeTalkSystem.indexOf('CupidFreeTalkCore.requestChatCompletion(endpoint, buildRequestInit', groupMethodStart);
+    assert.ok(recoveryStart > groupMethodStart);
+    assert.match(freeTalkSystem.slice(recoveryStart, recoveryStart + 700), /assertCurrent: payload => this\._assertRequestContext\(requestContext, payload\)/);
+    assert.match(source, /attempt < 3/);
+    assert.match(source, /retryDelayMs \* \(attempt \+ 1\)/);
     assert.ok(core.isNetworkTransportError(new TypeError('Failed to fetch')));
     assert.equal(core.isNetworkTransportError(new TypeError('Assignment to constant variable.')), false);
-    assert.match(retryBlock, /attempt >= 2/);
-    assert.match(retryBlock, /400 \* \(attempt \+ 1\)/);
-    assert.match(retryBlock, /this\._assertRequestContext\(requestContext\)/);
 });
 
 test('selective memory retrieval searches old recall needs but skips live or recently covered context', () => {
