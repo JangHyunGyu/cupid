@@ -180,7 +180,7 @@ window.__cupidShowGalleryLoadError = function() {
 (function () {
     // 로더 설정 로드 (동기)
     if (window.CupidRuntimeSupport && !window.CupidRuntimeSupport.supported) return;
-    document.write('<script src="assets/js/loaders/config.js?v=2.9.297" onerror="window.__cupidShowGalleryLoadError && window.__cupidShowGalleryLoadError()"><\/script>');
+    document.write('<script src="assets/js/loaders/config.js?v=2.9.298" onerror="window.__cupidShowGalleryLoadError && window.__cupidShowGalleryLoadError()"><\/script>');
 })();
 
 // config.js 로드 후 실행
@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', function () {
 (function () {
     const basePath = 'assets/js/';
     if (window.CupidRuntimeSupport && !window.CupidRuntimeSupport.supported) return;
-    const version = '2.9.297';
+    const version = '2.9.298';
 
     const scripts = [
         'affinity-corrections.js',

@@ -1480,6 +1480,8 @@ class FreeTalkSystem {
         }
         // 유저 메시지 표시 후 대화창 최하단으로 스크롤
         if (this.uiManager.messageEl) this.uiManager.messageEl.scrollTop = this.uiManager.messageEl.scrollHeight;
+        const failedTurnName = playerLabel;
+        const failedTurnHtml = this.uiManager.messageEl?.innerHTML || '';
 
         const historyLengthBeforeTurn = requestHistory.length;
         requestContext.historyLengthBeforeTurn = historyLengthBeforeTurn;
@@ -1983,23 +1985,8 @@ class FreeTalkSystem {
             }
 
             this._clearThinkingMessage();
-            const requestErrorMessage = {
-                ko: '연결이 잠깐 끊겼어요. 방금 입력은 대화에 남지 않았어요. 다시 보내 주세요.',
-                en: 'The connection was interrupted. Your last input was not saved to the conversation. Please try again.',
-                es: 'La conexión se interrumpió. Tu último mensaje no se guardó en la conversación. Inténtalo de nuevo.',
-                ja: '接続が一時的に中断されました。直前の入力は会話履歴に保存されていません。もう一度お試しください。',
-                fr: 'La connexion a été interrompue. Votre dernier message n’a pas été enregistré dans la conversation. Réessayez.',
-                de: 'Die Verbindung wurde unterbrochen. Deine letzte Eingabe wurde nicht im Gespräch gespeichert. Bitte versuche es erneut.',
-                pt: 'A conexão foi interrompida. Sua última mensagem não foi salva na conversa. Tente novamente.',
-                zh: '连接中断了。你的上一条消息没有保存到对话里。请再试一次。'
-            }[langErr] || 'The connection was interrupted. Your last input was not saved to the conversation. Please try again.';
-
-            // 모달을 닫지 않아도 입력창과 전송 버튼이 finally에서 바로 복구되도록 기다리지 않는다.
-            if (typeof this.uiManager.showModal === 'function') {
-                this._showErrorModalWithoutBlocking(requestErrorMessage);
-            } else if (typeof window.alert === 'function') {
-                window.alert(requestErrorMessage);
-            }
+            this.uiManager.updateNameTag(failedTurnName);
+            if (this.uiManager.messageEl) this.uiManager.messageEl.innerHTML = failedTurnHtml;
         } finally {
             _streamingPreview?.stop();
             this.dialogueSystem.finishStreamingText(scene.name);
@@ -2022,17 +2009,6 @@ class FreeTalkSystem {
                     this.uiManager.chatInput.focus();
                 }
             }
-        }
-    }
-
-    _showErrorModalWithoutBlocking(message) {
-        try {
-            const shown = this.uiManager?.showModal?.(message, true);
-            if (shown && typeof shown.catch === 'function') {
-                shown.catch(modalError => console.warn('[Cupid FreeTalk] Error modal failed', modalError));
-            }
-        } catch (modalError) {
-            console.warn('[Cupid FreeTalk] Error modal failed', modalError);
         }
     }
 
@@ -2296,6 +2272,8 @@ class FreeTalkSystem {
             img.alt = { ko: '첨부 이미지', en: 'Attached image', es: 'Imagen adjunta', ja: '添付画像', fr: 'Image jointe', de: 'Angehängtes Bild', pt: 'Imagem anexada', zh: '附带图片' }[lang] || 'Attached image';
             this.uiManager.messageEl.appendChild(img);
         }
+        const failedTurnName = playerLabels[lang] || playerLabels.en;
+        const failedTurnHtml = this.uiManager.messageEl?.innerHTML || '';
         this.uiManager.chatInput.value = '';
         this.uiManager.resizeChatInput?.();
         this.uiManager.removeStagedImage();
@@ -2607,18 +2585,9 @@ class FreeTalkSystem {
                     extra: { cacheKey: lastCacheKey, turnId: lastTurnMeta?.turnId || '' }
                 });
             }
-            const message = {
-                ko: '연결이 잠깐 끊겼어요. 방금 입력은 대화에 남지 않았어요. 다시 보내 주세요.',
-                en: 'The connection was interrupted. Your last input was not saved. Please try again.',
-                es: 'La conexión se interrumpió. Tu último mensaje no se guardó. Inténtalo de nuevo.',
-                ja: '接続が一時的に中断されました。直前の入力は保存されていません。もう一度お試しください。',
-                fr: 'La connexion a été interrompue. Votre dernier message n’a pas été enregistré. Réessayez.',
-                de: 'Die Verbindung wurde unterbrochen. Deine letzte Eingabe wurde nicht gespeichert. Bitte versuche es erneut.',
-                pt: 'A conexão foi interrompida. Sua última mensagem não foi salva. Tente novamente.',
-                zh: '连接中断了。你的上一条消息没有保存。请再试一次。'
-            }[lang] || 'The connection was interrupted. Please try again.';
-            // 모달을 닫지 않아도 입력창과 전송 버튼이 finally에서 바로 복구되도록 기다리지 않는다.
-            this._showErrorModalWithoutBlocking(message);
+            this._clearThinkingMessage();
+            this.uiManager.updateNameTag(failedTurnName);
+            if (this.uiManager.messageEl) this.uiManager.messageEl.innerHTML = failedTurnHtml;
         } finally {
             streamingPreview?.stop();
             this.dialogueSystem.finishStreamingText();

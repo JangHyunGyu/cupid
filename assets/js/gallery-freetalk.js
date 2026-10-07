@@ -968,6 +968,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 msgEl.appendChild(img);
             }
         }
+        const failedTurnName = playerName;
+        const failedTurnHtml = msgEl?.innerHTML || '';
 
         // 이미지 미리보기 제거
         this._removeStagedImage();
@@ -1401,22 +1403,11 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     });
                 }
                 this._clearThinkingMessage();
-                const noticeLabel = this._L('안내', 'Notice', 'Aviso', 'お知らせ', 'Information', 'Hinweis', 'Aviso', '提示');
-                if (nameTag) nameTag.textContent = noticeLabel;
+                if (nameTag) nameTag.textContent = failedTurnName;
+                if (msgEl) msgEl.innerHTML = failedTurnHtml;
                 if (charImg) charImg.classList.remove('thinking');
                 if (dialogueBox) dialogueBox.classList.remove('thinking-box');
                 document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
-                const requestErrorMessage = this._L(
-                    '연결이 잠깐 끊겼어요. 방금 입력은 대화에 남지 않았어요. 다시 보내 주세요.',
-                    'The connection was interrupted. Your last input was not saved to the conversation. Please try again.',
-                    'La conexión se interrumpió. Tu último mensaje no se guardó en la conversación. Inténtalo de nuevo.',
-                    '接続が一時的に中断されました。直前の入力は会話履歴に保存されていません。もう一度お試しください。',
-                    'La connexion a été interrompue. Votre dernier message n’a pas été enregistré dans la conversation. Réessayez.',
-                    'Die Verbindung wurde unterbrochen. Deine letzte Eingabe wurde nicht im Gespräch gespeichert. Bitte versuche es erneut.',
-                    'A conexão foi interrompida. Sua última mensagem não foi salva na conversa. Tente novamente.',
-                    '连接断了一下。刚才输入的内容没有留在对话里。请再发一次。'
-                );
-                await this._typeText(requestErrorMessage, null, requestContext);
             }
         }
 

@@ -60,7 +60,8 @@ for (const surface of ['single', 'group', 'gallery']) for (const lang of ['ko', 
             await page.evaluate(async surface => {
                 const e = window.gameEngine;
                 e.dialogueSystem.typingSpeed = 0;
-                e.uiManager.showModal = async () => {};
+                window.__cupidFailureModals = [];
+                e.uiManager.showModal = async message => { window.__cupidFailureModals.push(String(message || '')); };
                 window.cupidTestSeedAffinities({ Teacher: 50 });
                 window.cupidTestSeedAffinities({ Nurse: 60 });
                 await e.renderScene(surface === 'group' ? 'after3_group_teacher_companion' : 'after_nurse_freetalk');
@@ -94,7 +95,13 @@ for (const surface of ['single', 'group', 'gallery']) for (const lang of ['ko', 
         const failed = await snapshot();
         expect(failed).toEqual({ ...before, input });
         expect(logs.filter(entry => entry.logSource === 'realtime')).toHaveLength(0);
-        expect(await page.locator('body').innerText()).not.toContain(placeholder);
+        const bodyText = await page.locator('body').innerText();
+        expect(bodyText).not.toContain(placeholder);
+        expect(bodyText).not.toContain('연결이 잠깐 끊겼어요');
+        expect(bodyText).not.toContain('The connection was interrupted');
+        expect(bodyText).not.toContain('Die Verbindung wurde unterbrochen');
+        const failureModals = await page.evaluate(() => window.__cupidFailureModals || []);
+        expect(failureModals.join('\n')).not.toMatch(/연결이 잠깐 끊겼어요|The connection was interrupted|Die Verbindung wurde unterbrochen/);
         await expect.poll(() => errors.length).toBeGreaterThan(0);
         unavailable = false;
         await send();
