@@ -26,7 +26,7 @@ const commands = [
     ['node', ['--test', 'tests/const-reassign.test.cjs', 'tests/freetalk-upstream-failure.test.cjs', 'tests/contact-and-group-scoring.test.cjs']],
     ['node', ['--test', 'tests/temptation-freetalk.test.cjs']],
     ['node', ['--test', 'tests/affinity-emotion.test.cjs']],
-    ['node', ['--test', 'tests/runtime-error-regressions.test.cjs', 'tests/progress-recovery.test.cjs', 'tests/runtime-support.test.cjs']],
+    ['node', ['--test', 'tests/runtime-error-regressions.test.cjs', 'tests/progress-recovery.test.cjs', 'tests/runtime-support.test.cjs', 'tests/spoken-lexicon.test.cjs']],
     ['node', ['--test', 'tests/product-polish.test.cjs', 'tests/gallery-tips.test.cjs']],
     ['node', ['--test', 'tests/review-regressions.test.cjs']],
     ['node', ['--test', 'tests/scene-visuals.test.cjs']],

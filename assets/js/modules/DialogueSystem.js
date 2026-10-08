@@ -287,10 +287,17 @@ class DialogueSystem {
      * 제타식 호흡: 문장 종결 뒤를 빈 줄로 분리합니다.
      * @private
      */
+    _rewriteSpokenLexicon(text) {
+        const source = String(text ?? '');
+        if (!source.includes('씨물')) return source;
+        // 씨물 ends in ㄹ, so 로; 정액 ends in ㄱ, so 으로.
+        return source.replace(/씨물로/g, '정액으로').replace(/씨물/g, '정액');
+    }
+
     _zetaFormatText(text, paragraphBreak = true) {
         if (!text) return '';
         const separator = paragraphBreak ? '\n\n' : '\n';
-        let s = String(text).replace(/\\n/g, '\n').replace(/\r\n?/g, '\n');
+        let s = this._rewriteSpokenLexicon(text).replace(/\\n/g, '\n').replace(/\r\n?/g, '\n');
         s = s.replace(/([.!?…。！？]["'”’)\]]*)[ \t]+/g, '$1' + separator);
         s = s.replace(/([.!?…。！？]["'”’)\]]*)(?=[가-힣A-Zぁ-んァ-ヶ一-龯¿¡])/g, '$1' + separator);
         s = s.replace(/[ \t]+\n/g, '\n').replace(/\n[ \t]+/g, '\n');

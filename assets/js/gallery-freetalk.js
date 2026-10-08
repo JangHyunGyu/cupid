@@ -1647,10 +1647,16 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
      * 제타식 단락 분리: 문장 종결 뒤에 빈 줄 삽입.
      * @private
      */
+    _rewriteSpokenLexicon(text) {
+        const source = String(text ?? '');
+        if (!source.includes('씨물')) return source;
+        return source.replace(/씨물로/g, '정액으로').replace(/씨물/g, '정액');
+    }
+
     _zetaFormatText(text, paragraphBreak = true) {
         if (!text) return '';
         const separator = paragraphBreak ? '\n\n' : '\n';
-        let s = String(text).replace(/\\n/g, '\n').replace(/\r\n?/g, '\n');
+        let s = this._rewriteSpokenLexicon(text).replace(/\\n/g, '\n').replace(/\r\n?/g, '\n');
         s = s.replace(/([.!?…。！？]["'”’)\]]*)[ \t]+/g, '$1' + separator);
         s = s.replace(/([.!?…。！？]["'”’)\]]*)(?=[가-힣A-Zぁ-んァ-ヶ一-龯¿¡])/g, '$1' + separator);
         s = s.replace(/[ \t]+\n/g, '\n').replace(/\n[ \t]+/g, '\n');
