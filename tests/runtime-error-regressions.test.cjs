@@ -335,3 +335,27 @@ test('same-origin script and stylesheet failures retry twice before reporting a 
     assert.equal(reports.length, 2);
     assert.equal(reports[1].errorType, 'ResourceError');
 });
+
+test('gallery back button survives an opener that throws and falls back to the link', () => {
+    // 2026-10-08 Edge(Android): window.opener 접근이 'TypeError: no access'를 던져 돌아가기 버튼이 오류로 끝났다.
+    const pages = fs.readdirSync(root).filter(name => /^gallery(?:-[a-z]{2})?\.html$/u.test(name));
+    assert.equal(pages.length, 8);
+    for (const page of pages) {
+        const match = read(page).match(/class="back-btn" onclick="([^"]+)"/u);
+        assert.ok(match, `${page} back button handler`);
+        const handler = new Function('window', match[1]);
+        const denied = {};
+        Object.defineProperty(denied, 'opener', { get() { throw new TypeError('no access'); } });
+        assert.doesNotThrow(() => handler(denied), `${page} must not throw`);
+        assert.notEqual(handler(denied), false, `${page} follows the href when opener is not accessible`);
+
+        let closeCalls = 0;
+        const closable = { opener: { closed: false }, closed: false, close() { closeCalls += 1; this.closed = true; } };
+        assert.equal(handler(closable), false, `${page} closes a tab opened by the game`);
+        assert.equal(closeCalls, 1);
+
+        const blockedClose = { opener: { closed: false }, closed: false, close() {} };
+        assert.notEqual(handler(blockedClose), false, `${page} follows the href when the browser refuses to close`);
+        assert.notEqual(handler({ opener: null }), false);
+    }
+});

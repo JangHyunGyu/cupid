@@ -193,11 +193,32 @@
         return changed;
     }
     let queue = Promise.resolve();
-    function withLock(operation) {
-        if (locks?.request) return locks.request('cupid-progress-integrity', { mode: 'exclusive' }, operation);
+    let locksDenied = false;
+    function withQueue(operation) {
         const result = queue.then(operation, operation);
         queue = result.catch(() => {});
         return result;
+    }
+    function withLock(operation) {
+        if (!locks?.request || locksDenied) return withQueue(operation);
+        let started = false;
+        const run = lock => {
+            started = true;
+            return operation(lock);
+        };
+        // 쿠키·사이트 데이터를 막은 브라우저는 Web Locks 요청을 SecurityError('The request was denied.')로
+        // 거절합니다. 잠금을 못 받았을 뿐 작업은 아직 돌지 않았으니, 탭 안 대기열로 순서만 지키고 이어갑니다.
+        // 작업이 시작된 뒤 난 오류나 다른 종류의 오류는 그대로 올려 코드 버그로 남깁니다.
+        const fallback = error => {
+            if (started || error?.name !== 'SecurityError') throw error;
+            locksDenied = true;
+            return withQueue(operation);
+        };
+        try {
+            return Promise.resolve(locks.request('cupid-progress-integrity', { mode: 'exclusive' }, run)).catch(fallback);
+        } catch (error) {
+            return new Promise(resolve => resolve(fallback(error)));
+        }
     }
     return Object.freeze({ start, commit, checkpoint, save, restoreState, restoreSave, withLock });
 });

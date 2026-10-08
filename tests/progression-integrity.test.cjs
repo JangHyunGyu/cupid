@@ -158,3 +158,40 @@ test('a choice routed through intermediate nodes resumes at the final arrived sc
     assert.equal(restored.currentSceneId, 'actual');
     assert.notEqual(restored.pendingEntryEffects, true);
 });
+
+test('a denied Web Lock (SecurityError) falls back to the in-tab queue and the scene still commits', async () => {
+    // 2026-10-08 cupid-en: 쿠키·사이트 데이터를 막은 크롬은 navigator.locks.request를
+    // SecurityError('The request was denied.')로 거절해 새 게임 시작(scene:start 커밋)이 멈췄다.
+    let lockCalls = 0;
+    const deniedLocks = { request: () => {
+        lockCalls += 1;
+        const error = new Error('The request was denied.');
+        error.name = 'SecurityError';
+        return Promise.reject(error);
+    } };
+    const h = guardedSetup(deniedLocks);
+    let runs = 0;
+    const first = await h.state.commitProgressEvent('scene:start', () => { runs += 1; return 'start'; }, { arrivedScene: 'start' });
+    assert.equal(first.applied, true);
+    assert.equal(first.value, 'start');
+    const turn = await h.state.commitProgressEvent('talk:lunch:0', () => { runs += 1; return h.commitTurn('talk:lunch:0'); });
+    assert.equal(turn.applied, true);
+    assert.equal(h.state.getAffinity('Seoyeon'), 3);
+    assert.equal(runs, 2, 'each operation runs exactly once');
+    assert.equal(lockCalls, 1, 'after one denial the lock API is not asked again');
+});
+
+test('a synchronous SecurityError from locks.request also falls back', async () => {
+    const h = guardedSetup({ request: () => { const error = new Error('The request was denied.'); error.name = 'SecurityError'; throw error; } });
+    const result = await h.state.commitProgressEvent('scene:start', () => 'start', { arrivedScene: 'start' });
+    assert.equal(result.applied, true);
+});
+
+test('errors thrown inside the locked operation and non-security lock failures are not swallowed', async () => {
+    let runs = 0;
+    const granted = guardedSetup({ request: (_, __, operation) => Promise.resolve().then(() => operation({})) });
+    await assert.rejects(granted.state.commitProgressEvent('scene:broken', () => { runs += 1; throw new TypeError('scene bug'); }), /scene bug/);
+    assert.equal(runs, 1, 'a failing operation is not replayed through the fallback queue');
+    const broken = guardedSetup({ request: () => Promise.reject(new TypeError('locks bug')) });
+    await assert.rejects(broken.state.commitProgressEvent('scene:start', () => 'start'), /locks bug/);
+});
