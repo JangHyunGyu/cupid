@@ -4974,7 +4974,7 @@
 - 배경: `top_school.png`
 - 다음: `after2_start`
 
-- 캐릭터: `seyoun_shy.png`
+- 캐릭터: `dain_normal.png`
 **다인**: ...먹자. 식겠다. *의자 다리를 두 번 건드린다.*
 
 ---

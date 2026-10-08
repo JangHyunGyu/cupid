@@ -113,7 +113,7 @@ class CGRenderer {
                     </div>
                     <div class="card-info">
                         <h4>${cg.name}</h4>
-                        <p>${unlocked ? cg.character : ({ ko: '미해금', en: 'Locked', es: 'Bloqueado', ja: '未解放', fr: 'Verrouillé', de: 'Gesperrt', pt: 'Bloqueado', zh: '未解锁' }[this.ui.lang] || 'Locked')}</p>
+                        <p>${unlocked ? (cg.character || '') : ({ ko: '미해금', en: 'Locked', es: 'Bloqueado', ja: '未解放', fr: 'Verrouillé', de: 'Gesperrt', pt: 'Bloqueado', zh: '未解锁' }[this.ui.lang] || 'Locked')}</p>
                     </div>
                 </div>
             `;
@@ -188,20 +188,28 @@ class CGRenderer {
         const modal = this.modalEl || this._createModal();
 
         const cgImage = document.getElementById('cg-modal-image');
-        const showLoaded = () => requestAnimationFrame(() => cgImage.classList.add('cg-image-loaded'));
+        const requestId = this._imageRequestId = (this._imageRequestId || 0) + 1;
+        const isCurrent = () => this._imageRequestId === requestId && modal.classList.contains('active');
+        const errorPanel = modal.querySelector('#cg-load-error');
+        errorPanel.hidden = true;
+        const showLoaded = () => requestAnimationFrame(() => {
+            if (isCurrent()) cgImage.classList.add('cg-image-loaded');
+        });
+        const showError = () => { if (isCurrent()) errorPanel.hidden = false; };
+        this._retryCG = () => this.openModal(cgId);
         cgImage.classList.remove('cg-image-loaded');
+        modal.classList.add('active');
         if (window.CupidMedia) {
             window.CupidMedia.unlockCG(cg.id);
-            window.CupidMedia.loadImageWithMediaFallback(cgImage, cg.file, showLoaded);
+            window.CupidMedia.loadImageWithMediaFallback(cgImage, cg.file, showLoaded, showError);
         } else {
             cgImage.onload = showLoaded;
+            cgImage.onerror = showError;
             cgImage.src = `${cg.file}?v=${window.ASSET_VERSION || ''}`;
         }
 
         document.getElementById('cg-modal-title').textContent = cg.name;
         document.getElementById('cg-modal-desc').textContent = cg.description;
-
-        modal.classList.add('active');
 
     }
 
@@ -209,6 +217,7 @@ class CGRenderer {
      * CG 모달 닫기
      */
     closeModal() {
+        this._imageRequestId = (this._imageRequestId || 0) + 1;
         if (this.modalEl) {
             this.modalEl.classList.remove('active');
         }
@@ -233,6 +242,16 @@ class CGRenderer {
             pt: 'Fechar',
             zh: '关闭'
         }[this.ui.lang] || 'Close';
+        const loadText = {
+            ko: ['이미지를 불러오지 못했어요.', '다시 시도'],
+            en: ['Could not load the image.', 'Try again'],
+            ja: ['画像を読み込めませんでした。', '再試行'],
+            es: ['No se pudo cargar la imagen.', 'Reintentar'],
+            fr: ['Impossible de charger l’image.', 'Réessayer'],
+            de: ['Das Bild konnte nicht geladen werden.', 'Erneut versuchen'],
+            pt: ['Não foi possível carregar a imagem.', 'Tentar novamente'],
+            zh: ['图片加载失败。', '重试']
+        }[this.ui.lang] || ['Could not load the image.', 'Try again'];
 
         // 모달 외부 클릭 시 닫기
         modal.addEventListener('click', (e) => {
@@ -248,6 +267,10 @@ class CGRenderer {
                     <img id="cg-modal-image" src="" alt="CG">
                 </div>
                 <div class="cg-info">
+                    <div id="cg-load-error" hidden role="status">
+                        <p>${loadText[0]}</p>
+                        <button type="button" class="modal-btn" id="cg-retry-btn">${loadText[1]}</button>
+                    </div>
                     <h3 id="cg-modal-title"></h3>
                     <p id="cg-modal-desc"></p>
                 </div>
@@ -256,6 +279,7 @@ class CGRenderer {
 
         // 닫기 버튼 이벤트
         modal.querySelector('#cg-close-btn').addEventListener('click', () => this.closeModal());
+        modal.querySelector('#cg-retry-btn').addEventListener('click', () => this._retryCG?.());
 
         document.body.appendChild(modal);
         this._createParticles(modal.querySelector('.cg-particles'));

@@ -2552,4 +2552,9 @@ const haeunEndingCG = {
     }
 };
 for (const [lang, cg] of Object.entries(haeunEndingCG)) GalleryData.cg[lang].push(cg);
+// Preserve the archived asset and old save records; the rewritten ending uses ending_perfect_nurse.
+GalleryData.RETIRED_CG_IDS = Object.freeze(['nurse_home_event1']);
+for (const lang of Object.keys(GalleryData.cg)) {
+    GalleryData.cg[lang] = GalleryData.cg[lang].filter(cg => !GalleryData.RETIRED_CG_IDS.includes(cg.id));
+}
 window.GalleryData = GalleryData;

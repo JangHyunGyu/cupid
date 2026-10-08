@@ -13,7 +13,9 @@ const mediaManifest = require('./sync-media-manifest.cjs').syncMediaManifest(wri
 function update(relativePath, transforms) {
     const fullPath = path.join(root, relativePath);
     const before = fs.readFileSync(fullPath, 'utf8');
-    const after = transforms.reduce((content, transform) => transform(content), before);
+    const newline = before.includes('\r\n') ? '\r\n' : '\n';
+    const after = transforms.reduce((content, transform) => transform(content), before.replace(/\r\n/g, '\n'))
+        .replace(/\n/g, newline);
     if (before === after) return;
     changed.push(relativePath);
     if (write) fs.writeFileSync(fullPath, after, 'utf8');

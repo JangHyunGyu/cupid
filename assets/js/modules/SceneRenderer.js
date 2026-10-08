@@ -55,7 +55,10 @@ function toWebpUrl(url) {
     if (text.indexOf('/api/media?') !== -1) {
         return text.replace(/\.(png|jpeg|jpg)(?=(&|$))/i, '.webp');
     }
-    return text.replace(/\.(png|jpg|jpeg)$/i, '.webp');
+    if (/(?:^|\/)assets\/images\/background\/[^/?#]+\.png(?=[?#]|$)/i.test(text)) {
+        return text.replace(/\.png(?=[?#]|$)/i, '.lossless.webp');
+    }
+    return text.replace(/\.(png|jpg|jpeg)(?=[?#]|$)/i, '.webp');
 }
 
 /**
@@ -439,15 +442,12 @@ class SceneRenderer {
         const currentBg = bgLayer.style.backgroundImage;
 
         // 이미지 프리로드 (WebP 우선 + PNG 폴백)
-        await new Promise((resolve) => {
+        const displayBgUrl = await new Promise((resolve) => {
             const img = new Image();
-            loadImageWithFallback(img, bgUrl, () => resolve(), () => resolve());
+            loadImageWithFallback(img, bgUrl, () => resolve(img.src), () => resolve(null));
         });
 
-        if (this.lastBgUrl !== bgUrl) return;
-
-        // WebP 우선 URL
-        const displayBgUrl = toWebpUrl(bgUrl);
+        if (this.lastBgUrl !== bgUrl || !displayBgUrl) return;
 
         // 첫 배경이거나 같은 배경이면 즉시 적용
         if (!currentBg || currentBg === 'none' || currentBg === `url("${displayBgUrl}")` || currentBg === `url(${displayBgUrl})` || currentBg === `url("${bgUrl}")` || currentBg === `url(${bgUrl})`) {

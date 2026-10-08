@@ -19,8 +19,13 @@ const NAME_MAP = {
     '시스템': { en: 'System', ja: 'システム', es: 'Sistema', fr: 'Système', de: 'System', pt: 'Sistema' },
     '{name}': { en: '{name}', ja: '{name}', es: '{name}', fr: '{name}', de: '{name}', pt: '{name}' },
     '민수': { en: 'Minsu', ja: 'ミンス', es: 'Minsu', fr: 'Minsu', de: 'Minsu', pt: 'Minsu' },
-    '해은': { en: 'Haeun', ja: 'ハウン', es: 'Haeun', fr: 'Haeun', de: 'Haeun', pt: 'Haeun' },
+    '하은': { en: 'Haeun', ja: 'ハウン', es: 'Haeun', fr: 'Haeun', de: 'Haeun', pt: 'Haeun' },
 };
+for (const [name, translated] of Object.entries({
+    '서연': '书妍', '다인': '多因', '유나': '由娜', '담임선생님': '班主任',
+    '보건선생님': '保健老师', '나': '我', '시스템': '系统', '{name}': '{name}',
+    '민수': '敏秀', '하은': '夏恩'
+})) NAME_MAP[name].zh = translated;
 
 const FILES = [
     'day1_1_morning','day1_2_lunch','day1_3_afterschool','day1_4_night',

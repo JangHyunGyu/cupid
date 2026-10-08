@@ -1,5 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const { installAffinitySeeder } = require('./helpers/affinity-seed.cjs');
+const { isMediaFixtureRequest } = require('./helpers/media-fixture.cjs');
 
 for (const [lang, character, lead, offer, startAffinity] of [
     ['ko', 'Seoyeon', 'Dain', 'wall_dain_seo_tempt_2', 0],
@@ -15,6 +16,7 @@ for (const [lang, character, lead, offer, startAffinity] of [
         const requestedChanges = [5, -4, 5, -2, 5];
         await page.route('**/*', async route => {
             const request = route.request();
+            if (isMediaFixtureRequest(request)) return route.continue();
             if (request.method() !== 'POST') return route.continue();
             const body = request.postDataJSON();
             if (new URL(request.url()).pathname === '/api/ai' && body.requestType === 'character') {

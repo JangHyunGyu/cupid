@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-08",
+  "branch": "main",
+  "baseCommit": "b026ca03",
+  "assetVersion": "2.9.303",
+  "requestedFixes": [1, 4, 5, 6, 7, 8, 9],
+  "cgDecision": {
+    "id": "nurse_home_event1",
+    "decision": "Retire from the current gallery and collectible IDs; preserve artwork and historical unlock records.",
+    "history": "cfa3f561 replaced this CG's former scenes with cafe and street backgrounds.",
+    "currentEndingScene": "hidden_perfect_nurse_ep1",
+    "currentEndingCG": "ending_perfect_nurse",
+    "reason": "The current morning ending already has its own CG. The retired night-time coffee illustration does not match that scene. No new narrative or replacement scene is needed.",
+    "activeCGsPerLanguage": 33,
+    "languages": ["ko", "en", "ja", "es", "fr", "de", "pt", "zh"]
+  },
+  "cutouts": {
+    "provider": "Higgsfield image_background_remover",
+    "assets": ["yuna_laugh", "yuna_pout", "nurse_smile", "nurse_sad"],
+    "inputAndOutputDimensions": [864, 1152],
+    "qualityControls": "The dedicated remover exposes no prompt, quality or resolution parameter. Original dimensions and RGB pixels were preserved; only alpha changed.",
+    "delivery": "Private R2 objects uploaded and downloaded again for SHA-256 verification. Encrypted repository archives and the media manifest were synchronized.",
+    "testSources": "tests/fixtures/corrected-media; excluded from the public build, hash-checked against both source archives and the private media catalog."
+  },
+  "backgroundDelivery": {
+    "losslessCopies": 33,
+    "sourcePngBytes": 245377560,
+    "losslessWebpBytes": 114436328,
+    "pixelVerification": "All decoded RGBA pixels and original dimensions match; source PNGs and existing gallery WebPs are retained.",
+    "visualVerification": "Before/after school and gym comparisons at 390x844 and 1440x900 showed zero pixel differences for the delivery change. The merged release was also inspected with the original layout and styling preserved.",
+    "maintenance": "python scripts/prepare-lossless-backgrounds.py --check"
+  },
+  "otherFixes": {
+    "speaker": "lunch2_seo_end_c1 now shows Dain with Dain's existing dialogue; SCENARIO.md synchronized.",
+    "galleryLabels": "Null character fields render as an empty subtitle in all eight languages.",
+    "galleryRecovery": "Localized load failure and retry controls; late callbacks cannot mutate a replaced or closed modal.",
+    "backgroundRecovery": "Version queries are preserved; the actually loaded fallback URL is displayed. Failed loads retain the previous background.",
+    "validation": "Missing backgrounds now return a nonzero exit code; shared AI recovery behavior is tested instead of retired inline retry implementation strings. Active CGs are checked against authored scenes.",
+    "localizationValidation": "Correct Haeun spelling and Chinese name mappings eliminate 1,778 false warnings.",
+    "metadata": "Generation preserves the input newline style; both LF and CRLF checks still reject stale versions.",
+    "testFixture": "Temptation browser tests now allow real local media-session and unlock fixture requests instead of intercepting them as chat logging."
+  },
+  "verification": {
+    "npmTest": "passed",
+    "cacheCheck": "passed",
+    "buildAndMetadataCheck": "passed",
+    "scenarioCheck": "3448 scenes synchronized",
+    "textCheck": "passed",
+    "endingChecks": "33/33 passed",
+    "localizationErrorsAndWarnings": 0,
+    "newNodeRegressions": "5 passed",
+    "newBrowserRegressions": "11 passed",
+    "fullBrowserSuite": "274 passed",
+    "existingValidatorAdvisories": 78,
+    "evidenceDirectory": "D:/workspace/cupid-fixes-20261008"
+  },
+  "scope": "Mobile CG cropping (review item 3), unrelated art redesign, authored dialogue and affinity rules are unchanged. The latest main logging fix was preserved."
+}

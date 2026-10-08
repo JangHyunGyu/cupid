@@ -273,7 +273,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "lunch2_seo_end_c1": {
         "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/seyoun_shy.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "after2_start"
     },
     "lunch2_seo_c2_1": {
