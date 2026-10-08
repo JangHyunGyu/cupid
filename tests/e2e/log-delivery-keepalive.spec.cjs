@@ -2,7 +2,7 @@
 // 2026-10-08 장애 재현: 브라우저의 keepalive 전송 한도(64KB)가 차면 keepalive·sendBeacon 요청이 네트워크에 나가기도 전에
 // 'Failed to fetch'로 거절되어, AI 답변은 계속 나오는데 chat_logs·장면 기록·표시 영수증·오류 보고가 통째로 끊겼다.
 // 실제 Chromium에서 응답하지 않는 keepalive 요청으로 한도를 채운 뒤, 실제 1:1 프리토킹 답변 경로가
-// 답변을 표시하고 chat_logs·표시 영수증·장면 기록을 보내는지, HTTP 500은 보고된 뒤 6번째에 큐에서 빠지는지 확인한다.
+// 답변 표시와 chat_logs·표시 영수증·장면 기록 전송, HTTP 500 반복 실패 후 기록 보존과 복구 확인
 const { test, expect } = require('@playwright/test');
 const { installAffinitySeeder } = require('./helpers/affinity-seed.cjs');
 
@@ -18,7 +18,7 @@ function parseBody(request) {
 }
 
 async function installNetwork(page, { chatLogStatus = 200 } = {}) {
-    const seen = { ai: [], chatLogs: [], renderAcks: [], routeEvents: [], errorLogs: [] };
+    const seen = { ai: [], chatLogs: [], renderAcks: [], routeEvents: [], errorLogs: [], chatLogStatus };
     await page.route(/googletagmanager|google-analytics|analytics\.google|cloudflareinsights/, route => route.fulfill({ status: 204, body: '' }));
     await page.route(API_HOST, async route => {
         const request = route.request();
@@ -37,9 +37,9 @@ async function installNetwork(page, { chatLogStatus = 200 } = {}) {
         const body = parseBody(request);
         if (url.pathname === '/chat-logs') {
             seen.chatLogs.push({ body, keepalive: false });
-            return route.fulfill(chatLogStatus === 200
+            return route.fulfill(seen.chatLogStatus === 200
                 ? { status: 200, headers: cors, body: JSON.stringify({ ok: true }) }
-                : { status: chatLogStatus, headers: cors, body: JSON.stringify({ error: 'mock D1 failure' }) });
+                : { status: seen.chatLogStatus, headers: cors, body: JSON.stringify({ error: 'mock D1 failure' }) });
         }
         if (url.pathname === '/chat-logs/render-ack') {
             seen.renderAcks.push(body);
@@ -176,7 +176,7 @@ for (const [lang, sample] of Object.entries(CASES)) {
     });
 }
 
-test('ko: chat-logs HTTP 500 is reported on first failure and dropped with chat_log_queue_dropped at the sixth attempt (keepalive exhausted)', async ({ page }) => {
+test('ko: repeated HTTP 500 retains the whole turn and recovers after reload (keepalive exhausted)', async ({ page }) => {
     test.setTimeout(90_000);
     const seen = await installNetwork(page, { chatLogStatus: 500 });
     seen.reply = CASES.ko.reply;
@@ -189,8 +189,8 @@ test('ko: chat-logs HTTP 500 is reported on first failure and dropped with chat_
         await e.freeTalkSystem.sendChatMessage(id => e.sceneRenderer.getScene(id));
     }, CASES.ko.input);
 
-    // 첫 실패는 바로 D1 오류 로그로 갑니다(오류 보고도 keepalive 없이 나가므로 한도와 상관없이 도착).
-    await expect.poll(() => seen.errorLogs.filter(body => body.errorType === 'chat_log_send_failed').length, { timeout: 20_000 }).toBe(1);
+    // 전송 한도가 찬 상태에서도 사용자·답변 기록의 첫 실패 보고 도착 확인
+    await expect.poll(() => seen.errorLogs.filter(body => body.errorType === 'chat_log_send_failed').length, { timeout: 20_000 }).toBe(2);
     const firstReport = seen.errorLogs.find(body => body.errorType === 'chat_log_send_failed');
     expect(firstReport.extra.httpStatus).toBe(500);
     expect(firstReport.extra.attempts).toBe(1);
@@ -198,15 +198,32 @@ test('ko: chat-logs HTTP 500 is reported on first failure and dropped with chat_
     const headId = firstReport.extra.clientMsgId;
     expect(headId).toBeTruthy();
 
-    // 재시도 대기(15초×회차)를 기다리지 않고 같은 큐 비우기를 다섯 번 더 부릅니다.
+    // 브라우저 저장값의 대기 시각만 앞당겨 재시도 실행
     for (let attempt = 2; attempt <= 6; attempt += 1) {
-        await page.evaluate(() => window.flushCupidChatLogQueue());
+        await page.evaluate(async () => {
+            const key = 'cupid_pending_chat_logs_v1';
+            const queue = JSON.parse(window.CupidStorage.getItem(key) || '[]');
+            window.CupidStorage.setItem(key, JSON.stringify(queue.map(item => ({ ...item, nextAttemptAt: 0 }))));
+            await window.flushCupidChatLogQueue();
+        });
     }
-    await expect.poll(() => seen.errorLogs.filter(body => body.errorType === 'chat_log_queue_dropped' && body.extra?.clientMsgId === headId).length, { timeout: 20_000 }).toBe(1);
-    const dropped = seen.errorLogs.find(body => body.errorType === 'chat_log_queue_dropped');
-    expect(dropped.extra).toMatchObject({ reason: 'max_attempts', attempts: 6, maxAttempts: 6, httpStatus: 500 });
+    await expect.poll(() => seen.errorLogs.filter(body => body.errorType === 'chat_log_delivery_delayed' && body.extra?.clientMsgId === headId).length, { timeout: 20_000 }).toBe(1);
     expect(seen.chatLogs.filter(item => item.body.clientMsgId === headId)).toHaveLength(6);
     expect(seen.errorLogs.filter(body => body.errorType === 'chat_log_send_failed' && body.extra?.clientMsgId === headId)).toHaveLength(1);
     const queue = await page.evaluate(() => JSON.parse(window.CupidStorage.getItem('cupid_pending_chat_logs_v1') || '[]'));
-    expect(queue.some(entry => entry.clientMsgId === headId)).toBe(false);
+    expect(queue).toHaveLength(2);
+    expect(queue.every(entry => entry.attempts === 6)).toBe(true);
+    expect(seen.errorLogs.some(body => body.errorType === 'chat_log_queue_dropped')).toBe(false);
+
+    seen.chatLogStatus = 200;
+    await page.evaluate(() => {
+        const key = 'cupid_pending_chat_logs_v1';
+        const queue = JSON.parse(localStorage.getItem(key));
+        localStorage.setItem(key, JSON.stringify(queue.map(item => ({ ...item, nextAttemptAt: 0 }))));
+    });
+    await page.reload();
+    await expect.poll(() => page.evaluate(() => JSON.parse(localStorage.getItem('cupid_pending_chat_logs_v1') || '[]').length)).toBe(0);
+    await expect.poll(() => seen.renderAcks.length).toBe(1);
+    await expect.poll(() => page.evaluate(() => JSON.parse(localStorage.getItem('cupid_pending_render_acks_v1') || '[]').length)).toBe(0);
+    expect(seen.chatLogs.slice(-2).map(item => item.body.clientMsgId)).toEqual(queue.map(item => item.clientMsgId));
 });

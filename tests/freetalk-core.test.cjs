@@ -1299,8 +1299,9 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
     assert.match(config, /conversationDay/);
     assert.match(config, /groupConversationMemories/);
     assert.match(config, /local-recovery/);
-    // 네트워크 실패는 큐에 남겨 다시 보내되, 같은 항목은 6번까지만 보내고 *_queue_dropped로 보고합니다.
+    // 일시 실패 기록은 재시도 대기 시각과 함께 보존하고 복구 불가 오류만 삭제
     assert.match(config, /const CUPID_LOG_MAX_ATTEMPTS = 6;/);
+    assert.match(config, /\$\{kind\}_delivery_delayed/);
     assert.match(config, /\$\{kind\}_queue_dropped/);
     assert.doesNotMatch(config, /errorType: 'chat_log_queue_transient_failure'/);
     assert.doesNotMatch(config, /group_chat_log_direct_transient_failure/);
@@ -2195,7 +2196,7 @@ test('game and gallery FreeTalk inputs use the shared keyboard rule', () => {
 });
 
 test('gallery rollover retains recent voice and a bounded stable checkpoint', () => {
-    const context = { window: { addEventListener() {} }, navigator: { userAgent: '', platform: '' }, document: { documentElement: { lang: 'ko' } }, location: { search: '', pathname: '/gallery.html' }, URLSearchParams, console };
+    const context = { window: { addEventListener() {} }, navigator: { userAgent: '', platform: '' }, document: { addEventListener() {}, documentElement: { lang: 'ko' } }, location: { search: '', pathname: '/gallery.html' }, URLSearchParams, console };
     vm.runInNewContext(read('assets/js/modules/config.js'), context);
     const history = [{ role: 'system', content: 'stable profile' }, ...Array.from({ length: 33 }, (_, i) => ({ role: i % 2 ? 'assistant' : 'user', content: `line ${i}`, timestamp: i + 1 }))];
     const first = context.window.buildCupidPromptEpoch(history);

@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.303";
+const ASSET_VERSION = "2.9.304";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -776,9 +776,7 @@ async function migrateCupidChatHistoryToD1() {
 }
 
 const CUPID_CHAT_LOG_QUEUE_KEY = 'cupid_pending_chat_logs_v1';
-const CUPID_CHAT_LOG_QUEUE_LIMIT = 80;
 const CUPID_RENDER_ACK_QUEUE_KEY = 'cupid_pending_render_acks_v1';
-const CUPID_RENDER_ACK_QUEUE_LIMIT = 120;
 let cupidChatLogFlushPromise = null;
 let cupidRenderAckFlushPromise = null;
 
@@ -795,7 +793,7 @@ function readCupidChatLogQueue() {
 function writeCupidChatLogQueue(queue) {
     try {
         if (!queue.length) window.CupidStorage.removeItem(CUPID_CHAT_LOG_QUEUE_KEY);
-        else window.CupidStorage.setItem(CUPID_CHAT_LOG_QUEUE_KEY, JSON.stringify(queue.slice(-CUPID_CHAT_LOG_QUEUE_LIMIT)));
+        else window.CupidStorage.setItem(CUPID_CHAT_LOG_QUEUE_KEY, JSON.stringify(queue));
         return true;
     } catch (_) {
         return false;
@@ -1070,8 +1068,8 @@ function reportCupidLogFailure(error, item = {}, errorType, extra = {}) {
     }
 }
 
-// 큐 맨 앞 항목이 실패했을 때: 일시 실패가 아니면 첫 발생 때 보고하고, 같은 항목은 6번까지만 보낸 뒤
-// 큐에서 빼고 *_queue_dropped로 보고합니다. 다시 보낼 항목이면 'retry', 뺐으면 'dropped'를 돌려줍니다.
+// 실패 항목과 저장 함수를 받아 재전송 가능 여부 확인 후 큐 갱신
+// 일시 오류는 대기 시간을 늘려 보존하고 retry 반환, 복구 불가 오류만 보고 후 dropped 반환
 function handleCupidLogQueueFailure(error, item, { kind, readQueue, writeQueue, getId }) {
     const attempts = Number(item?.attempts || 0) + 1;
     const transient = isCupidLogTransientError(error);
@@ -1083,16 +1081,20 @@ function handleCupidLogQueueFailure(error, item, { kind, readQueue, writeQueue, 
             : `${kind}_send_failed`);
     }
     const id = getId(item);
-    if ((transient || retryableHttp) && attempts < CUPID_LOG_MAX_ATTEMPTS) {
+    if (transient || retryableHttp) {
         const lastError = String(error?.message || error).substring(0, 200);
-        writeQueue(readQueue().map(queued => getId(queued) === id ? { ...queued, attempts, lastError } : queued));
-        console.warn(`[ChatLog] ${kind} 전송 실패(${attempts}/${CUPID_LOG_MAX_ATTEMPTS}), 큐에 남겨 다시 보냅니다:`, error?.message || error);
+        const nextAttemptAt = Date.now() + Math.min(CUPID_LOG_RETRY_BASE_MS * attempts, CUPID_LOG_RETRY_MAX_MS);
+        writeQueue(readQueue().map(queued => getId(queued) === id ? { ...queued, attempts, lastError, nextAttemptAt } : queued));
+        if (attempts === CUPID_LOG_MAX_ATTEMPTS) {
+            reportCupidLogFailure(error, itemWithAttempts, `${kind}_delivery_delayed`, { nextAttemptAt });
+        }
+        console.warn(`[대화 로그 재전송 대기] kind=${kind} attempts=${attempts}`, error?.message || error);
         scheduleCupidLogRetry(attempts);
         return 'retry';
     }
     writeQueue(readQueue().filter(queued => getId(queued) !== id));
     reportCupidLogFailure(error, itemWithAttempts, `${kind}_queue_dropped`, {
-        reason: (transient || retryableHttp) ? 'max_attempts' : 'non_retryable',
+        reason: 'non_retryable',
         maxAttempts: CUPID_LOG_MAX_ATTEMPTS,
         firstError: item?.lastError || ''
     });
@@ -1100,8 +1102,19 @@ function handleCupidLogQueueFailure(error, item, { kind, readQueue, writeQueue, 
 }
 
 function stripCupidLogQueueFields(item = {}) {
-    const { attempts, lastError, ...payload } = item || {};
+    const { attempts, lastError, nextAttemptAt, ...payload } = item || {};
     return payload;
+}
+
+// 전송 가능한 항목을 찾아 반환하고 모두 대기 중이면 가장 이른 재시도 예약
+function findCupidReadyLogEntry(queue) {
+    const now = Date.now();
+    const entry = queue.find(item => !(Number(item.nextAttemptAt) > now));
+    if (!entry && queue.length) {
+        const nextAttemptAt = queue.reduce((earliest, item) => Math.min(earliest, Number(item.nextAttemptAt)), Infinity);
+        scheduleCupidLogRetry((nextAttemptAt - now) / CUPID_LOG_RETRY_BASE_MS);
+    }
+    return entry;
 }
 
 async function postCupidChatLogEntry(entry, options = {}) {
@@ -1125,23 +1138,24 @@ async function flushCupidChatLogQueue() {
 
     cupidChatLogFlushPromise = (async () => {
         let sent = 0;
+        const visited = new Set();
         while (typeof navigator === 'undefined' || navigator.onLine !== false) {
             const queue = readCupidChatLogQueue();
-            const entry = queue[0];
+            const entry = findCupidReadyLogEntry(queue.filter(item => !visited.has(item.clientMsgId)));
             if (!entry) break;
+            visited.add(entry.clientMsgId);
             try {
                 await postCupidChatLogEntry(entry);
                 const latestQueue = readCupidChatLogQueue();
                 writeCupidChatLogQueue(latestQueue.filter(item => item.clientMsgId !== entry.clientMsgId));
                 sent++;
             } catch (error) {
-                const outcome = handleCupidLogQueueFailure(error, entry, {
+                handleCupidLogQueueFailure(error, entry, {
                     kind: 'chat_log',
                     readQueue: readCupidChatLogQueue,
                     writeQueue: writeCupidChatLogQueue,
                     getId: item => item?.clientMsgId
                 });
-                if (outcome === 'retry') break;
             }
         }
         return sent;
@@ -1205,7 +1219,7 @@ function readCupidRenderAckQueue() {
 function writeCupidRenderAckQueue(queue) {
     try {
         if (!queue.length) window.CupidStorage.removeItem(CUPID_RENDER_ACK_QUEUE_KEY);
-        else window.CupidStorage.setItem(CUPID_RENDER_ACK_QUEUE_KEY, JSON.stringify(queue.slice(-CUPID_RENDER_ACK_QUEUE_LIMIT)));
+        else window.CupidStorage.setItem(CUPID_RENDER_ACK_QUEUE_KEY, JSON.stringify(queue));
         return true;
     } catch (_) {
         return false;
@@ -1264,25 +1278,27 @@ async function flushCupidChatRenderAckQueue() {
 
     cupidRenderAckFlushPromise = (async () => {
         let sent = 0;
+        const visited = new Set();
         while (typeof navigator === 'undefined' || navigator.onLine !== false) {
             const queue = readCupidRenderAckQueue();
-            const payload = queue[0];
+            const pendingLogIds = new Set(readCupidChatLogQueue().map(entry => entry.clientMsgId));
+            const payload = findCupidReadyLogEntry(queue.filter(item => !pendingLogIds.has(item.clientMsgId)
+                && !visited.has(getCupidRenderAckQueueId(item))));
             if (!payload) break;
-            if (readCupidChatLogQueue().some(entry => entry.clientMsgId === payload.clientMsgId)) break;
             const queueId = getCupidRenderAckQueueId(payload);
+            visited.add(queueId);
             try {
                 await postCupidChatRenderAckPayload(payload);
                 const latestQueue = readCupidRenderAckQueue();
                 writeCupidRenderAckQueue(latestQueue.filter(item => getCupidRenderAckQueueId(item) !== queueId));
                 sent += 1;
             } catch (error) {
-                const outcome = handleCupidLogQueueFailure(error, { ...payload, role: 'assistant' }, {
+                handleCupidLogQueueFailure(error, { ...payload, role: 'assistant' }, {
                     kind: 'chat_render_ack',
                     readQueue: readCupidRenderAckQueue,
                     writeQueue: writeCupidRenderAckQueue,
                     getId: getCupidRenderAckQueueId
                 });
-                if (outcome === 'retry') break;
             }
         }
         return sent;
@@ -1706,6 +1722,10 @@ function _cupidSendChatLogsOnPageHide() {
 }
 if (typeof window !== 'undefined') {
     window.addEventListener('online', _cupidFlushChatLogsOnOnline);
+    window.addEventListener('pageshow', _cupidFlushChatLogsOnOnline);
+    document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') _cupidFlushChatLogsOnOnline();
+    });
     window.addEventListener('pagehide', _cupidSendChatLogsOnPageHide);
     if (document.readyState === 'complete') {
         _cupidMigrateOnLoad();

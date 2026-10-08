@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-08",
+  "project": "cupid",
+  "baseCommit": "b1a98998060b1232252678f19ddf5b8545ede278",
+  "findings": [
+    "The existing keepalive saturation fix b026ca03 was already deployed. Its Chromium regression tests passed before this change.",
+    "The old queue discarded retryable network/HTTP failures on the sixth attempt, even though the server had not acknowledged the record.",
+    "A failing head row blocked later chat records; its waiting render receipt blocked unrelated receipts.",
+    "Queue writes silently removed old records above 80 chat rows or 120 render receipts."
+  ],
+  "reproduction": "All five initial queue regression tests failed against config-before.js; all passed after the fix. Two additional timeout/concurrency tests also passed.",
+  "changes": [
+    "Retain retryable failures with per-record retry timestamps and a 15-second to 120-second backoff; report delayed delivery once at attempt six.",
+    "Send ready records and independent receipts while failed records wait. Report and remove non-retryable payload errors.",
+    "Retain complete pending queues instead of slicing away unacknowledged records.",
+    "Resume flushing on pageshow and visible-tab restoration as well as online/load.",
+    "Preserve clientMsgId across retries and reloads; strip local retry metadata from transmitted payloads.",
+    "Advance assetVersion to 2.9.304 and service-worker cache to cupid-v3.3.223 without changing the displayed version."
+  ],
+  "validation": {
+    "npmTest": "passed",
+    "build": "passed",
+    "cacheCheck": "passed after each repository edit",
+    "queueUnitTests": 7,
+    "keepaliveAndReplyBrowserTests": 7,
+    "singleGroupGalleryRecoveryBrowserTests": 6,
+    "browserRecovery": "HTTP 500 repeated six times preserves both turn rows; reload with restored service drains chat and render-ack queues with the original IDs.",
+    "visuals": [
+      {
+        "screen": "game",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "identical": true
+      },
+      {
+        "screen": "gallery",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "identical": true
+      },
+      {
+        "screen": "game",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "identical": true
+      },
+      {
+        "screen": "gallery",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "identical": true
+      }
+    ],
+    "visualMethod": "Chromium, fixed desktop/mobile viewports, local assets and mocked external requests; before/after config interception, screenshots with animations disabled. Software rendering removes a one-channel, one-pixel GPU edge fluctuation. All four final screenshot pairs are byte-identical."
+  },
+  "limitations": [
+    "The reproduction establishes code-path failures; it does not prove how many production users lost records.",
+    "Already discarded records cannot be restored by this change. Pending records can retry on a later visit.",
+    "Durability still depends on browser storage availability. The existing storage adapter can use memory when native storage is unavailable or full.",
+    "Non-retryable errors remain explicitly reported and removed. Route telemetry has its existing independent policy."
+  ],
+  "koreanReview": {
+    "procedure": "humanize-korean single-call light monolith plus local verify_gates.py",
+    "original": "실패 항목과 저장 함수를 받아 재전송 가능 여부 확인 후 큐 갱신\r\n일시 오류는 대기 시간을 늘려 보존하고 retry 반환, 복구 불가 오류만 보고 후 dropped 반환\r\nconsole.warn(`[대화 로그 재전송 대기] kind=${kind} attempts=${attempts}`, error?.message || error);\r\n전송 가능한 항목을 찾아 반환하고 모두 대기 중이면 가장 이른 재시도 예약\r\n답변 표시와 chat_logs·표시 영수증·장면 기록 전송, HTTP 500 반복 실패 후 기록 보존과 복구 확인\r\n전송 한도가 찬 상태에서도 사용자·답변 기록의 첫 실패 보고 도착 확인\r\n브라우저 저장값의 대기 시각만 앞당겨 재시도 실행\r\n일시 실패 기록은 재시도 대기 시각과 함께 보존하고 복구 불가 오류만 삭제\r\n",
+    "final": "실패 항목과 저장 함수를 받아 재전송 가능 여부 확인 후 큐 갱신\r\n일시 오류는 대기 시간을 늘려 보존하고 retry 반환, 복구 불가 오류만 보고 후 dropped 반환\r\nconsole.warn(`[대화 로그 재전송 대기] kind=${kind} attempts=${attempts}`, error?.message || error);\r\n전송 가능한 항목을 찾아 반환하고 모두 대기 중이면 가장 이른 재시도 예약\r\n답변 표시와 chat_logs·표시 영수증·장면 기록 전송, HTTP 500 반복 실패 후 기록 보존과 복구 확인\r\n전송 한도가 찬 상태에서도 사용자·답변 기록의 첫 실패 보고 도착 확인\r\n브라우저 저장값의 대기 시각만 앞당겨 재시도 실행\r\n일시 실패 기록은 재시도 대기 시각과 함께 보존하고 복구 불가 오류만 삭제\r\n",
+    "changeRatePercent": 0,
+    "findings": [],
+    "selfChecksPassed": 6,
+    "gateExitCode": 0,
+    "result": "Concise noun-form developer notes; no justified additional style edits."
+  },
+  "evidenceDirectory": "D:/workspace/_workspace/cupid-log-recovery-20261008"
+}
