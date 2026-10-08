@@ -329,7 +329,8 @@ class CharacterRenderer {
                 `;
             } else {
                 const isBikini = expr === 'bikini';
-                const requiredAffinity = this.ui.progress.getExpressionRequirement(index, totalExpressions);
+                const requiredAffinity = GalleryData.getExpressionRequirement?.(char.id, expr)
+                    ?? this.ui.progress.getExpressionRequirement(index, totalExpressions);
 
                 html += `
                     <button class="expression-btn locked ${isBikini ? 'special' : ''}"

@@ -104,8 +104,10 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "morning3_seo_gate_cold_3": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "setFlags": ["morning3_companion_seoyeon"],
+        "character": null,
+        "setFlags": [
+            "morning3_companion_seoyeon"
+        ],
         "next": "morning3_classroom_1"
     },
     "morning3_yuna_gate_1": {
@@ -232,7 +234,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "morning3_dain_gate_5_b": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_pain.png",
         "next": "morning3_classroom_1"
     },
     "morning3_dain_gate_cold_1": {
@@ -766,22 +768,22 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "hidden_nurse_d3_6_c": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_sad.png",
         "next": "hidden_nurse_d3_6_d"
     },
     "hidden_nurse_d3_6_d": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_sad.png",
         "next": "hidden_nurse_d3_6_e"
     },
     "hidden_nurse_d3_6_e": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_sad.png",
         "next": "hidden_nurse_d3_6_f"
     },
     "hidden_nurse_d3_6_f": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_sad.png",
         "next": "hidden_nurse_d3_7"
     },
     "hidden_nurse_d3_7": {
@@ -1129,7 +1131,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "morning3_seo_gate_neg_2": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": null,
         "next": "morning3_classroom_1"
     },
     "morning3_yuna_gate_neg_1": {
@@ -1144,7 +1146,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "morning3_dain_gate_neg_2": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": null,
         "next": "morning3_classroom_1"
     },
     "morning3_date_seo_skip": {

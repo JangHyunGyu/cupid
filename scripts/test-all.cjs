@@ -29,6 +29,7 @@ const commands = [
     ['node', ['--test', 'tests/runtime-error-regressions.test.cjs', 'tests/progress-recovery.test.cjs', 'tests/runtime-support.test.cjs']],
     ['node', ['--test', 'tests/product-polish.test.cjs', 'tests/gallery-tips.test.cjs']],
     ['node', ['--test', 'tests/review-regressions.test.cjs']],
+    ['node', ['--test', 'tests/scene-visuals.test.cjs']],
     ['node', ['--test', 'tests/immersive.test.cjs']],
     ['node', ['scripts/verify-repetition-guards.cjs']],
     ['node', ['scripts/audit-media.cjs']]

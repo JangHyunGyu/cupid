@@ -358,12 +358,12 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "morning5_mood_low"
     },
     "morning5_mood_high": {
-        "background": "assets/images/background/room_school.png",
+        "background": "assets/images/background/school_hallway.png",
         "character": null,
         "next": "morning5_gate"
     },
     "morning5_mood_mid": {
-        "background": "assets/images/background/room_school.png",
+        "background": "assets/images/background/school.png",
         "character": null,
         "next": "morning5_gate"
     },
@@ -378,8 +378,14 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "morning5_seo_note_1": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "morning5_seo_note_1_b"
+        "character": null,
+        "next": "morning5_seo_note_1_b",
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_normal.png",
+                "opacity": 0.35
+            }
+        }
     },
     "morning5_seo_note_1_b": {
         "background": "assets/images/background/school_hallway.png",
@@ -406,8 +412,14 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "morning5_yuna_story_1": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/yuna_normal.png",
-        "next": "morning5_yuna_story_2"
+        "character": null,
+        "next": "morning5_yuna_story_2",
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_normal.png",
+                "opacity": 0.35
+            }
+        }
     },
     "morning5_yuna_story_2": {
         "background": "assets/images/background/school_hallway.png",
@@ -416,8 +428,14 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "morning5_yuna_story_4": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/yuna_normal.png",
-        "next": "morning5_return_class"
+        "character": null,
+        "next": "morning5_return_class",
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_normal.png",
+                "opacity": 0.35
+            }
+        }
     },
     "morning5_return_class": {
         "background": "assets/images/background/room_school.png",
@@ -606,10 +624,13 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "hidden_homeroom_d5_praise_trap_12"
     },
     "hidden_homeroom_d5_praise_trap_12": {
-        "background": "assets/images/background/room_school.png",
+        "background": "assets/images/background/school_hallway.png",
         "backgroundVariant": "empty",
         "character": null,
-        "setFlags": ["homeroom_day5","teacher_praise_broken"],
+        "setFlags": [
+            "homeroom_day5",
+            "teacher_praise_broken"
+        ],
         "next": "hidden_nurse_d5_check"
     },
     "hidden_homeroom_d5_correct_1": {
@@ -997,7 +1018,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "hidden_nurse_d5_choice_b_e": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/nurse_angry.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d5_choice_b_f"
     },
     "hidden_nurse_d5_choice_b_f": {

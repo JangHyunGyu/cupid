@@ -96,7 +96,8 @@ function loadImageWithFallback(img, url, onload, onerror) {
 
 const BACKGROUND_LAYOUT_CLASS_PREFIX = 'bg-layout-';
 const BACKGROUND_LAYOUT_CLASSES = {
-    sojeong_flashback: 'bg-layout-sojeong-flashback-contain'
+    sojeong_flashback: 'bg-layout-sojeong-flashback-contain',
+    ending_harem: 'bg-layout-full-art'
 };
 const FORCED_SEXUAL_VIOLATION_CHARACTER_IDS = Object.freeze({
     Seoyeon: 'seoyeon',
@@ -582,23 +583,28 @@ class SceneRenderer {
             const newUrl = newCharMap[pos];
 
             if (existingImg) {
-                if (!newUrl || existingImg.dataset.rawSrc !== newUrl) changedSlots.push(pos);
+                if (!newUrl || existingImg.dataset.rawSrc !== newUrl || existingImg.complete === false || existingImg.naturalWidth === 0) changedSlots.push(pos);
             } else {
                 if (newUrl) changedSlots.push(pos);
             }
         });
 
-        if (changedSlots.length === 0) {
-            // 이미지 변경 없어도 silhouette/thinking 상태는 업데이트
+        const syncPresentation = () => {
             Object.entries(this.uiManager.charSlots).forEach(([pos, slot]) => {
                 if (!slot) return;
                 const img = slot.querySelector('img');
-                if (!img) return;
+                if (!img || !newCharMap[pos] || img.dataset.rawSrc !== newCharMap[pos]) return;
+                const opacity = charOptions[pos]?.opacity ?? 1;
+                img.style.opacity = opacity === 1 ? '' : String(opacity);
+                img.classList.remove('char-fade-out');
                 if (scene.silhouette) img.classList.add('silhouette');
                 else img.classList.remove('silhouette');
                 if (scene.thinking) img.classList.add('thinking');
                 else img.classList.remove('thinking');
             });
+        };
+        if (changedSlots.length === 0) {
+            syncPresentation();
             return;
         }
 
@@ -613,7 +619,7 @@ class SceneRenderer {
                 if (oldImg) {
                     oldImg.classList.add('char-fade-out');
                     exitPromises.push(new Promise(r => setTimeout(() => {
-                        if (slot.contains(oldImg)) slot.removeChild(oldImg);
+                        if (this.currentSceneId === sceneId && this._charUpdateId === updateId && slot.contains(oldImg)) slot.removeChild(oldImg);
                         r();
                     }, 260)));
                 }
@@ -675,6 +681,7 @@ class SceneRenderer {
                 // 다른 캐릭터 → 페이드아웃 후 페이드인
                 oldImg.classList.add('char-fade-out');
                 swapPromises.push(new Promise(r => setTimeout(() => {
+                    if (this.currentSceneId !== sceneId || this._charUpdateId !== updateId) { r(); return; }
                     if (slot.contains(oldImg)) slot.removeChild(oldImg);
                     result.img.classList.add('char-fade-in');
                     slot.appendChild(result.img);
@@ -692,6 +699,7 @@ class SceneRenderer {
         });
 
         await Promise.all([...exitPromises, ...swapPromises]);
+        if (this.currentSceneId === sceneId && this._charUpdateId === updateId) syncPresentation();
     }
     // ============================================================================================
     // 🚩 연락처 합성 플래그 계산

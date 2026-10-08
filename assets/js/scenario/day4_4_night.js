@@ -198,7 +198,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         ]
     },
     "day4_teacher_dain_counteroffer": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/school_back.png",
         "backgroundVariant": "lights-off",
         "character": "assets/images/characters/dain_sad.png",
         "competitiveAffinity": true,
@@ -400,7 +400,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         ]
     },
     "day4_nurse_dain_counteroffer": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/school_back.png",
         "backgroundVariant": "lights-off",
         "character": "assets/images/characters/dain_sad.png",
         "competitiveAffinity": true,
@@ -557,7 +557,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "day4_adult_counteroffer_soft_return_home"
     },
     "day4_adult_counteroffer_soft_dain": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "day4_adult_counteroffer_soft_return_home"
     },
@@ -735,7 +735,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "wall_seo_to_park": {
         "background": "assets/images/background/park.png",
         "backgroundVariant": "cold",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": null,
         "next": "wall_seo_3"
     },
     "wall_seo_3": {
@@ -1167,13 +1167,19 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "day4_temptation_dain_freetalk"
     },
     "wall_seo_yuna_tempt_1": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_sad.png",
-        "next": "wall_seo_yuna_tempt_2"
+        "background": "assets/images/background/street.png",
+        "character": null,
+        "next": "wall_seo_yuna_tempt_2",
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_sad.png",
+                "opacity": 0.35
+            }
+        }
     },
     "wall_seo_yuna_tempt_2": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_sad.png",
+        "background": "assets/images/background/street.png",
+        "character": null,
         "competitiveAffinity": true,
         "choices": [
             {
@@ -1233,7 +1239,13 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                     "day4_held_route_seoyeon"
                 ]
             }
-        ]
+        ],
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_sad.png",
+                "opacity": 0.35
+            }
+        }
     },
     "wall_seo_yuna_tempt_accept": {
         "background": "assets/images/background/event_temptation_yuna.png",
@@ -1325,7 +1337,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "wall_dain_8_b": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_pain.png",
         "next": "wall_dain_9"
     },
     "wall_dain_9": {
@@ -1343,7 +1355,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "wall_dain_11": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
-        "character": "assets/images/characters/dain_sweat.png",
+        "character": "assets/images/characters/dain_pain.png",
         "next": "wall_dain_12"
     },
     "wall_dain_12": {
@@ -1361,7 +1373,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "wall_dain_12_c": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_pain.png",
         "next": "wall_dain_13"
     },
     "wall_dain_13": {
@@ -1580,7 +1592,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "wall_dain_lastspike_3": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "wall_dain_lastspike_3_b"
     },
     "wall_dain_lastspike_3_b": {
@@ -2263,13 +2275,13 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "day4_temptation_seoyeon_freetalk"
     },
     "wall_yuna_dain_tempt_1": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/school_back.png",
         "backgroundVariant": "lights-off",
         "character": "assets/images/characters/dain_sad.png",
         "next": "wall_yuna_dain_tempt_2"
     },
     "wall_yuna_dain_tempt_2": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/school_back.png",
         "backgroundVariant": "lights-off",
         "character": "assets/images/characters/dain_sad.png",
         "competitiveAffinity": true,
@@ -2380,7 +2392,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "day4_adult_night_regret_target_branch"
     },
     "day4_student_counteroffer_soft_seoyeon": {
-        "background": "assets/images/background/school_back.png",
+        "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "day4_night_regret"
     },

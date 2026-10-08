@@ -96,8 +96,8 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "choice_dismiss_3"
     },
     "choice_dismiss_3": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/seyoun_back.png",
         "next": "classroom_1"
     },
     "choice_flirt_1": {

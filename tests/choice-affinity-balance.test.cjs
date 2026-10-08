@@ -1913,7 +1913,7 @@ test('character-specific trap choices retain their understated Korean wording an
         after2_yuna_trap: 'yuna_normal.png',
         after2_yuna_trap_react: 'yuna_normal.png',
         date_seo_role_trap: 'seyoun_normal.png',
-        date_yuna_trap: 'yuna_normal.png'
+        date_yuna_trap: 'yuna_date_normal.webp'
     };
     for (const [sceneId, filename] of Object.entries(authoredReactionAvatars)) {
         assert.ok(

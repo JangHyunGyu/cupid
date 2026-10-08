@@ -803,7 +803,9 @@ class GalleryProgress {
         }
 
         // 일반 표정: 호감도 기준
-        const requiredAffinity = this.getExpressionRequirement(expressionIndex, totalExpressions);
+        const requiredAffinity = expressionName && typeof GalleryData.getExpressionRequirement === 'function'
+            ? GalleryData.getExpressionRequirement(charId, expressionName)
+            : this.getExpressionRequirement(expressionIndex, totalExpressions);
         const currentAffinity = this.getAffinity(charId);
         return currentAffinity >= requiredAffinity;
     }

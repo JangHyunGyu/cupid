@@ -1,0 +1,303 @@
+{
+  "date": "2026-10-08",
+  "release": "2.9.305",
+  "scope": {
+    "authoredScenes": 3448,
+    "changedVisualRecords": 657,
+    "languages": [
+      "ko",
+      "en",
+      "ja",
+      "es",
+      "fr",
+      "de",
+      "pt",
+      "zh"
+    ],
+    "unchangedLocalizedSceneRecords": 27584
+  },
+  "review": {
+    "method": "Read every canonical scene and its dialogue, inspect shared image/expression references and predecessor visual state, validate all localized records, render every concrete visual state in Chromium.",
+    "authoredDialogueChoicesFlagsAffinityRouting": "unchanged",
+    "concreteBrowserRenders": 3103,
+    "graphCheckedRouterInheritedDynamicRecords": 345,
+    "browserRenderFailures": 0,
+    "structuralErrors": 0,
+    "limits": "Runtime AI-generated dialogue cannot be exhaustively enumerated; outfit retention and expression-to-authored-scene restoration have regression tests."
+  },
+  "changes": [
+    "Correct background locations and explicit daytime/nighttime in scene metadata",
+    "Correct visible speakers and remove departed characters",
+    "Distinguish remote messages and memories with existing opacity presentation",
+    "Match authored date and off-duty clothing; register 16 expressions in all eight galleries without changing base unlock requirements",
+    "Replace unresolved ending art to match the existing serious conversation and three phones; preserve square native master and show complete composition",
+    "Prevent stale character transitions, reused opacity and AI-selected expressions from leaking into the next authored scene"
+  ],
+  "assets": {
+    "backgroundsAdded": 5,
+    "outfitExpressionsAdded": 16,
+    "cgReplaced": 1,
+    "provider": "Higgsfield MCP",
+    "requestedModel": "nano_banana_pro",
+    "reportedGenerationModel": "nano_banana_2",
+    "requestedResolution": "4K / maximum supported native quality",
+    "conversion": "Full native dimensions, lossless WebP, exact decoded RGBA bytes verified",
+    "originalCGPreserved": "assets/images/masters/scene-audit-20261008/ending_harem_before.png",
+    "selectedFiles": [
+      {
+        "source": "yuna_hideout_day.png",
+        "target": "background/yuna_hideout_day.webp",
+        "width": 4096,
+        "height": 4096,
+        "bytes": 14211526,
+        "pixelSha256": "c8261c7e681314ba2d83f4e5910df3304f16b2ca6b4f91cf148433431cdd1e95"
+      },
+      {
+        "source": "snack_shop.png",
+        "target": "background/snack_shop.webp",
+        "width": 4096,
+        "height": 4096,
+        "bytes": 12113498,
+        "pixelSha256": "0cce994242c7452261fe2d1f2f960e1b6434e0260a0f553d55041d47ccc3b418"
+      },
+      {
+        "source": "room_my_day.png",
+        "target": "background/room_my_day.webp",
+        "width": 4096,
+        "height": 4096,
+        "bytes": 12146032,
+        "pixelSha256": "d78f8301edbc085e5bc3bdf5838206e2f1a3069ffbebfc2c1bec4d5650964ce9"
+      },
+      {
+        "source": "flower_shop.png",
+        "target": "background/flower_shop.webp",
+        "width": 4096,
+        "height": 4096,
+        "bytes": 13628972,
+        "pixelSha256": "df17cf8e640c25077e85a0ae1b3baf8dee556f08e6b39202de98ae60641d2b18"
+      },
+      {
+        "source": "nurse_house_day.png",
+        "target": "background/nurse_house_day.webp",
+        "width": 4096,
+        "height": 4096,
+        "bytes": 12367306,
+        "pixelSha256": "d27dd4f5ae7e6ed8edbcfe18e38538174576aef9ca7efc8b21d9952e15135b78"
+      },
+      {
+        "source": "ending_harem_final.png",
+        "target": "background/ending_harem.webp",
+        "protected": true,
+        "width": 4096,
+        "height": 4096,
+        "bytes": 12507018,
+        "pixelSha256": "27d24f5ca02ab7ffaca301b0b7e8465a736c881158ad3c69ecfb9bbf43ae2c62"
+      },
+      {
+        "source": "yuna_date_normal-cutout.png",
+        "target": "characters/yuna_date_normal.webp",
+        "protected": true,
+        "transparent": true,
+        "width": 3584,
+        "height": 4800,
+        "bytes": 8763698,
+        "pixelSha256": "534ee4755f00a2d28eff39f1380ee924403682ae03ff704ab8974431dc966d22"
+      },
+      {
+        "source": "yuna_date_shy-cutout.png",
+        "target": "characters/yuna_date_shy.webp",
+        "protected": true,
+        "transparent": true,
+        "width": 3584,
+        "height": 4800,
+        "bytes": 8207412,
+        "pixelSha256": "6ef087d12a20cd3d3ba593ee8b81f1bbb713402b87349aa924ff1e60aa14159d"
+      },
+      {
+        "source": "yuna_date_smile-cutout.png",
+        "target": "characters/yuna_date_smile.webp",
+        "protected": true,
+        "transparent": true,
+        "width": 3584,
+        "height": 4800,
+        "bytes": 8311428,
+        "pixelSha256": "bb26b7814e4bbd6dbcf392366dc89f1066c61fb76fe362bf9598e6552be96069"
+      },
+      {
+        "source": "yuna_date_sad-cutout.png",
+        "target": "characters/yuna_date_sad.webp",
+        "protected": true,
+        "transparent": true,
+        "width": 3584,
+        "height": 4800,
+        "bytes": 8455596,
+        "pixelSha256": "02de0d9af3b72797f1e955bdf2afdf5bab0d7ab8e33664556630a0fce270b8cd"
+      },
+      {
+        "source": "yuna_date_bored-cutout.png",
+        "target": "characters/yuna_date_bored.webp",
+        "protected": true,
+        "transparent": true,
+        "width": 3584,
+        "height": 4800,
+        "bytes": 8348876,
+        "pixelSha256": "377b1099a739fa8c5118d1f8559c509ecb5eaa915a16c0c12e3bb0f55ef58abe"
+      },
+      {
+        "source": "dain_date_normal-cutout.png",
+        "target": "characters/dain_date_normal.webp",
+        "protected": true,
+        "transparent": true,
+        "width": 3584,
+        "height": 4800,
+        "bytes": 9095512,
+        "pixelSha256": "cd57cafa66bdee968ccb52f438d41de41c03110b56938d6c9fbd9baa1b64595c"
+      },
+      {
+        "source": "dain_date_laugh-cutout.png",
+        "target": "characters/dain_date_laugh.webp",
+        "protected": true,
+        "transparent": true,
+        "width": 3584,
+        "height": 4800,
+        "bytes": 9140774,
+        "pixelSha256": "eb4c1189be70dd46ad6a90b2e5b2d1aba07b88d96adc8d4f94f07d31ef10b0e1"
+      },
+      {
+        "source": "dain_date_shy-cutout.png",
+        "target": "characters/dain_date_shy.webp",
+        "protected": true,
+        "transparent": true,
+        "width": 3584,
+        "height": 4800,
+        "bytes": 8598188,
+        "pixelSha256": "083f112ff1c370e0255f05f88502209000a61870aef61fc1804855113ce58ea3"
+      },
+      {
+        "source": "dain_date_sweat-cutout.png",
+        "target": "characters/dain_date_sweat.webp",
+        "protected": true,
+        "transparent": true,
+        "width": 3584,
+        "height": 4800,
+        "bytes": 9155064,
+        "pixelSha256": "d1dd0b852d4ce860ff4efbde5fe7b5fa116de2ac8e0f337c2e4c01a93244aa4e"
+      },
+      {
+        "source": "dain_date_angry-cutout.png",
+        "target": "characters/dain_date_angry.webp",
+        "protected": true,
+        "transparent": true,
+        "width": 3584,
+        "height": 4800,
+        "bytes": 9148032,
+        "pixelSha256": "53f47feb8cef069af86ecc4e8548a2578208abe4b63eb5f03f7008b21bbecc1e"
+      },
+      {
+        "source": "dain_date_sad-cutout.png",
+        "target": "characters/dain_date_sad.webp",
+        "protected": true,
+        "transparent": true,
+        "width": 3584,
+        "height": 4800,
+        "bytes": 8774042,
+        "pixelSha256": "eed8adc0a3b29fa96a966de1267fc22505c536a6f93c7b765fdc93cb8d8b85bf"
+      },
+      {
+        "source": "nurse_home_normal_fixed-cutout.png",
+        "target": "characters/nurse_home_normal.webp",
+        "protected": true,
+        "transparent": true,
+        "width": 3584,
+        "height": 4800,
+        "bytes": 8846094,
+        "pixelSha256": "e331f46dc13ea0f078a7cc25719cdd6e713fc05ca693bb8f67b7304556385e6e"
+      },
+      {
+        "source": "nurse_home_smile-cutout.png",
+        "target": "characters/nurse_home_smile.webp",
+        "protected": true,
+        "transparent": true,
+        "width": 3584,
+        "height": 4800,
+        "bytes": 9618790,
+        "pixelSha256": "24d2b69cfa10ff8379e346945d811a93ec5561313d13935166dc3677df2611bf"
+      },
+      {
+        "source": "nurse_home_shy-cutout.png",
+        "target": "characters/nurse_home_shy.webp",
+        "protected": true,
+        "transparent": true,
+        "width": 3584,
+        "height": 4800,
+        "bytes": 9265798,
+        "pixelSha256": "423e50782c68d78ec76e4604ad676844acdeb34f5b4a31c43ee258f0acbc3ccc"
+      },
+      {
+        "source": "nurse_home_sad-cutout.png",
+        "target": "characters/nurse_home_sad.webp",
+        "protected": true,
+        "transparent": true,
+        "width": 3584,
+        "height": 4800,
+        "bytes": 9137084,
+        "pixelSha256": "6dc98e27254e7422a4ce01c729a7a9cff9cf950534e8b6f309cbede33999500e"
+      },
+      {
+        "source": "nurse_home_angry-cutout.png",
+        "target": "characters/nurse_home_angry.webp",
+        "protected": true,
+        "transparent": true,
+        "width": 3584,
+        "height": 4800,
+        "bytes": 9016584,
+        "pixelSha256": "6f034a448fd5f285ed2c4600720bf37d1863451f0c8de78b49632a4deecefb70"
+      }
+    ]
+  },
+  "verification": {
+    "npmTest": "passed",
+    "cacheCheck": "passed",
+    "build": "passed, 476 public files",
+    "fullE2E": {
+      "passed": 286,
+      "failed": 1,
+      "reason": "New opacity test sampled before CSS transition completion",
+      "resolution": "Disable animation only in that functional test; targeted rerun passed; final full visual suite 13/13 passed"
+    },
+    "finalVisualE2E": 13,
+    "galleryRenders": 37,
+    "unaffectedUI": [
+      {
+        "width": 390,
+        "scene": "school",
+        "identical": true,
+        "bounds": null
+      },
+      {
+        "width": 390,
+        "scene": "gym",
+        "identical": true,
+        "bounds": null
+      },
+      {
+        "width": 1440,
+        "scene": "school",
+        "identical": true,
+        "bounds": null
+      },
+      {
+        "width": 1440,
+        "scene": "gym",
+        "identical": true,
+        "bounds": null
+      }
+    ]
+  },
+  "artifacts": {
+    "ledger": "docs/qa/scene-visual-ledger-20261008.json",
+    "exactCorrections": "docs/qa/scene-visual-corrections-20261008.json",
+    "invariants": "docs/qa/scene-visual-invariants-20261008.json",
+    "localEvidence": "D:/workspace/cupid-scene-audit-20261008"
+  }
+}

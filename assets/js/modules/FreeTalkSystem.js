@@ -2951,6 +2951,10 @@ class FreeTalkSystem {
 
     _loadCupidProtectedImage(img, rawPath) {
         if (!img || !rawPath) return;
+        if (img.dataset) {
+            img.dataset.rawSrc = window.CupidMedia?.resolveUrl?.(rawPath)
+                || (typeof getAssetUrl === 'function' ? getAssetUrl(rawPath) : rawPath);
+        }
         if (window.CupidMedia?.loadImageWithMediaFallback) {
             // This expression was selected by the active conversation, not a preload.
             window.CupidMedia.unlock?.([rawPath]);
@@ -2976,7 +2980,7 @@ class FreeTalkSystem {
         const centerSlot = this.uiManager.charSlots.center;
         if (!centerSlot) return;
 
-        const rawPath = charExprs[name];
+        const rawPath = window.GalleryData?.resolveOutfitExpression?.(scene, charExprs[name]) || charExprs[name];
         const existingImg = centerSlot.querySelector('img');
         if (existingImg) {
             this._loadCupidProtectedImage(existingImg, rawPath);

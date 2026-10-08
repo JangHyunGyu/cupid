@@ -253,8 +253,8 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "morning2_break_1"
     },
     "morning2_break_1": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": null,
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_back.png",
         "next": "morning2_seo_dust_1"
     },
     "hidden_homeroom_d2_1": {

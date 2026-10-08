@@ -162,7 +162,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "after_miss_dain_6_b": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_pain.png",
         "next": "after_miss_dain_7"
     },
     "after_miss_dain_7": {

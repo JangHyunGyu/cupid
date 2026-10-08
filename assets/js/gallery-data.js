@@ -2558,3 +2558,50 @@ for (const lang of Object.keys(GalleryData.cg)) {
     GalleryData.cg[lang] = GalleryData.cg[lang].filter(cg => !GalleryData.RETIRED_CG_IDS.includes(cg.id));
 }
 window.GalleryData = GalleryData;
+// Outfit variants share the original expression's unlock threshold and meaning.
+GalleryData.OUTFIT_EXPRESSIONS = Object.freeze({
+    yuna: { date: ['normal', 'shy', 'smile', 'sad', 'bored'] },
+    dain: { date: ['normal', 'laugh', 'shy', 'sweat', 'angry', 'sad'] },
+    nurse: { home: ['normal', 'smile', 'shy', 'sad', 'angry'] }
+});
+GalleryData.getExpressionRequirement = function (charId, expression) {
+    const baseExpressions = (this.getCharacter('ko', charId)?.expressions || ['normal'])
+        .filter(name => !/^(date|home)_/.test(name));
+    const base = String(expression).replace(/^(date|home)_/, '');
+    const index = baseExpressions.indexOf(base);
+    if (index < 0) return 100;
+    return baseExpressions.length <= 1 ? 0 : Math.round(index / (baseExpressions.length - 1) * 100);
+};
+GalleryData.resolveOutfitExpression = function (scene, rawPath) {
+    const outfit = String(scene?.character || '').match(/\/(yuna|dain|nurse)_(date|home)_[^/]+\.(?:png|webp)$/);
+    if (!outfit) return rawPath;
+    const available = this.OUTFIT_EXPRESSIONS[outfit[1]]?.[outfit[2]];
+    if (!available) return rawPath;
+    const expression = String(rawPath).split('/').pop().replace(/^[^_]+_/, '').replace(/\.(png|webp)$/, '');
+    if (expression === 'bikini' || expression === 'climax') return rawPath;
+    const alternatives = { angry: 'bored', pout: 'sad', worried: 'sad', pain: 'sad', laugh: 'smile', active: 'normal', flushed: 'shy' };
+    const chosen = available.includes(expression) ? expression
+        : available.includes(alternatives[expression]) ? alternatives[expression] : 'normal';
+    return `assets/images/characters/${outfit[1]}_${outfit[2]}_${chosen}.webp`;
+};
+const outfitLabels = {
+    ko: { date: '데이트 복장', home: '사복' },
+    en: { date: 'Date outfit', home: 'Casual outfit' },
+    ja: { date: 'デート服', home: '私服' },
+    es: { date: 'Ropa de cita', home: 'Ropa informal' },
+    fr: { date: 'Tenue de sortie', home: 'Tenue décontractée' },
+    de: { date: 'Date-Outfit', home: 'Freizeit' },
+    pt: { date: 'Roupa de encontro', home: 'Roupa casual' },
+    zh: { date: '约会装', home: '便服' }
+};
+for (const [lang, label] of Object.entries(outfitLabels)) {
+    for (const [charId, outfits] of Object.entries(GalleryData.OUTFIT_EXPRESSIONS)) {
+        for (const [outfit, expressions] of Object.entries(outfits)) {
+            for (const expression of expressions) {
+                const id = `${outfit}_${expression}`;
+                if (!GalleryData.characters[lang][charId].expressions.includes(id)) GalleryData.characters[lang][charId].expressions.push(id);
+                GalleryData.expressions[lang][id] = `${label[outfit]} · ${GalleryData.getExpressionName(lang, expression)}`;
+            }
+        }
+    }
+}

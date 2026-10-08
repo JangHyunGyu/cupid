@@ -1571,7 +1571,7 @@ test('group reply order, per-speaker affinity, and Dain expression assets follow
 
     system._applyGroupExpression('angry', 'Dain');
     assert.equal(dainImage.src, 'assets/images/characters/dain_angry.png?v=test');
-    assert.equal(dainImage.dataset.rawSrc, 'assets/images/characters/dain_angry.png');
+    assert.equal(dainImage.dataset.rawSrc, 'assets/images/characters/dain_angry.png?v=test');
     system._applyGroupExpression('sad', 'Dain');
     assert.equal(dainImage.src, 'assets/images/characters/dain_sad.png?v=test');
 

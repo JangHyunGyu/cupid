@@ -93,12 +93,12 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "night3_dream_1"
     },
     "night3_dream_1": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_dream_2_b"
     },
     "night3_dream_2_b": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_faithful_reflect_1"
     },
@@ -220,7 +220,12 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "night3_cheat_msg_7": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_normal.png",
+                "opacity": 0.35
+            }
+        },
         "next": "night3_nightmare_1"
     },
     "night3_nightmare_1": {
@@ -231,33 +236,69 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "night3_nightmare_2_b": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/seyoun_sad.png",
-        "next": "night3_nightmare_3"
+        "character": null,
+        "next": "night3_nightmare_3",
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_sad.png",
+                "opacity": 0.35
+            }
+        }
     },
     "night3_nightmare_3": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/seyoun_sad.png",
-        "next": "night3_nightmare_3_b"
+        "character": null,
+        "next": "night3_nightmare_3_b",
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_sad.png",
+                "opacity": 0.35
+            }
+        }
     },
     "night3_nightmare_3_b": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/yuna_sad.png",
-        "next": "night3_nightmare_4"
+        "character": null,
+        "next": "night3_nightmare_4",
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_sad.png",
+                "opacity": 0.35
+            }
+        }
     },
     "night3_nightmare_4": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/yuna_sad.png",
-        "next": "night3_nightmare_4_b"
+        "character": null,
+        "next": "night3_nightmare_4_b",
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_sad.png",
+                "opacity": 0.35
+            }
+        }
     },
     "night3_nightmare_4_b": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/dain_sad.png",
-        "next": "night3_nightmare_5"
+        "character": null,
+        "next": "night3_nightmare_5",
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/dain_sad.png",
+                "opacity": 0.35
+            }
+        }
     },
     "night3_nightmare_5": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/dain_sad.png",
-        "next": "night3_nightmare_6"
+        "character": null,
+        "next": "night3_nightmare_6",
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/dain_sad.png",
+                "opacity": 0.35
+            }
+        }
     },
     "night3_nightmare_6": {
         "background": "assets/images/background/room_my.png",

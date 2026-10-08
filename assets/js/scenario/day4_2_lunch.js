@@ -144,27 +144,27 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "date_seo_flower_2"
     },
     "date_seo_flower_2": {
-        "background": "assets/images/background/park.png",
+        "background": "assets/images/background/flower_shop.webp",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "date_seo_succulent_2"
     },
     "date_seo_succulent_2": {
-        "background": "assets/images/background/park.png",
+        "background": "assets/images/background/flower_shop.webp",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "date_seo_succulent_2_b"
     },
     "date_seo_succulent_2_b": {
-        "background": "assets/images/background/park.png",
+        "background": "assets/images/background/flower_shop.webp",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "date_seo_succulent_3"
     },
     "date_seo_succulent_3": {
-        "background": "assets/images/background/park.png",
+        "background": "assets/images/background/flower_shop.webp",
         "character": "assets/images/characters/seyoun_laugh.png",
         "next": "date_seo_end"
     },
     "date_seo_end": {
-        "background": "assets/images/background/park.png",
+        "background": "assets/images/background/flower_shop.webp",
         "character": "assets/images/characters/seyoun_worried.png",
         "next": "date_seo_end_b"
     },
@@ -185,10 +185,14 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "date_yuna_1": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_date_normal.webp",
         "bgm": "night1.mp3",
         "condition": "route_yuna",
-        "affinityGuard": {"character":"Yuna","minAffinity":30,"fallback":"date_yuna_skip"},
+        "affinityGuard": {
+            "character": "Yuna",
+            "minAffinity": 30,
+            "fallback": "date_yuna_skip"
+        },
         "next": "date_yuna_tier_check"
     },
     "date_yuna_tier_check": {
@@ -207,380 +211,481 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "date_yuna_high_1": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/yuna_smile.png",
+        "character": "assets/images/characters/yuna_date_smile.webp",
         "next": "date_yuna_high_2"
     },
     "date_yuna_high_2": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/yuna_shy.png",
+        "character": "assets/images/characters/yuna_date_shy.webp",
         "next": "date_yuna_compliment_choice"
     },
     "date_yuna_tentative_1": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_date_normal.webp",
         "next": "date_yuna_tentative_2"
     },
     "date_yuna_tentative_2": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_date_normal.webp",
         "next": "date_yuna_tentative_3"
     },
     "date_yuna_tentative_3": {
         "background": "assets/images/background/street.png",
         "locationTransition": true,
-        "character": "assets/images/characters/yuna_normal.png",
-        "setFlags": ["day4_tentative_yuna"],
+        "character": "assets/images/characters/yuna_date_normal.webp",
+        "setFlags": [
+            "day4_tentative_yuna"
+        ],
         "next": "pre_confess_minsu"
     },
     "date_yuna_compliment_choice": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_date_normal.webp",
         "choices": [
-            { "affinityChar": "Yuna", "affinityBranches": [{"minAffinity":50,"next":"date_yuna_pretty_high"},{"minAffinity":-100,"next":"date_yuna_pretty_low"}] },
-            { "next": "date_yuna_bright", "stats": {"Yuna":{"affinity":4}} },
-            { "next": "date_yuna_trap", "stats": {"Yuna":{"affinity":-3}} }
+            {
+                "affinityChar": "Yuna",
+                "affinityBranches": [
+                    {
+                        "minAffinity": 50,
+                        "next": "date_yuna_pretty_high"
+                    },
+                    {
+                        "minAffinity": -100,
+                        "next": "date_yuna_pretty_low"
+                    }
+                ]
+            },
+            {
+                "next": "date_yuna_bright",
+                "stats": {
+                    "Yuna": {
+                        "affinity": 4
+                    }
+                }
+            },
+            {
+                "next": "date_yuna_trap",
+                "stats": {
+                    "Yuna": {
+                        "affinity": -3
+                    }
+                }
+            }
         ]
     },
     "date_yuna_pretty_high": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/yuna_shy.png",
-        "stats": {"Yuna":{"affinity":3}},
+        "character": "assets/images/characters/yuna_date_shy.webp",
+        "stats": {
+            "Yuna": {
+                "affinity": 3
+            }
+        },
         "next": "date_yuna_pretty_high_2"
     },
     "date_yuna_pretty_high_2": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/yuna_shy.png",
+        "character": "assets/images/characters/yuna_date_shy.webp",
         "next": "date_yuna_pretty_high_3"
     },
     "date_yuna_pretty_high_3": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/yuna_shy.png",
+        "character": "assets/images/characters/yuna_date_shy.webp",
         "next": "date_yuna_pretty_high_4"
     },
     "date_yuna_pretty_high_4": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/yuna_shy.png",
+        "character": "assets/images/characters/yuna_date_shy.webp",
         "next": "date_yuna_pretty_high_5"
     },
     "date_yuna_pretty_high_5": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/yuna_shy.png",
+        "character": "assets/images/characters/yuna_date_shy.webp",
         "next": "date_yuna_pretty_high_5_b"
     },
     "date_yuna_pretty_high_5_b": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/yuna_shy.png",
+        "character": "assets/images/characters/yuna_date_shy.webp",
         "next": "date_yuna_pretty_high_5_c"
     },
     "date_yuna_pretty_high_5_c": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_date_normal.webp",
         "next": "date_yuna_bookstore"
     },
     "date_yuna_pretty_low": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/yuna_shy.png",
-        "stats": {"Yuna":{"affinity":2}},
+        "character": "assets/images/characters/yuna_date_shy.webp",
+        "stats": {
+            "Yuna": {
+                "affinity": 2
+            }
+        },
         "next": "date_yuna_bookstore"
     },
     "date_yuna_bright": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/yuna_smile.png",
+        "character": "assets/images/characters/yuna_date_smile.webp",
         "next": "date_yuna_bookstore"
     },
     "date_yuna_trap": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_date_normal.webp",
         "next": "date_yuna_bookstore"
     },
     "date_yuna_bookstore": {
         "background": "assets/images/background/bookstore.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_date_normal.webp",
         "next": "date_yuna_bookstore_2"
     },
     "date_yuna_bookstore_2": {
         "background": "assets/images/background/bookstore.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_date_normal.webp",
         "next": "date_yuna_bookstore_2_b"
     },
     "date_yuna_bookstore_2_b": {
         "background": "assets/images/background/bookstore.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_date_normal.webp",
         "next": "date_yuna_bookstore_3"
     },
     "date_yuna_bookstore_3": {
         "background": "assets/images/background/bookstore.png",
-        "character": "assets/images/characters/yuna_smile.png",
+        "character": "assets/images/characters/yuna_date_smile.webp",
         "next": "date_yuna_earphone"
     },
     "date_yuna_earphone": {
         "background": "assets/images/background/bookstore.png",
-        "character": "assets/images/characters/yuna_shy.png",
+        "character": "assets/images/characters/yuna_date_shy.webp",
         "next": "date_yuna_earphone_2"
     },
     "date_yuna_earphone_2": {
         "background": "assets/images/background/bookstore.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_date_normal.webp",
         "next": "date_yuna_earphone_2_b"
     },
     "date_yuna_earphone_2_b": {
         "background": "assets/images/background/bookstore.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_date_normal.webp",
         "next": "date_yuna_earphone_3"
     },
     "date_yuna_earphone_3": {
         "background": "assets/images/background/bookstore.png",
-        "character": "assets/images/characters/yuna_shy.png",
+        "character": "assets/images/characters/yuna_date_shy.webp",
         "next": "date_yuna_oldbook"
     },
     "date_yuna_oldbook": {
         "background": "assets/images/background/bookstore.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_date_normal.webp",
         "next": "date_yuna_oldbook_b"
     },
     "date_yuna_oldbook_b": {
         "background": "assets/images/background/bookstore.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_date_normal.webp",
         "next": "date_yuna_oldbook_c"
     },
     "date_yuna_oldbook_c": {
         "background": "assets/images/background/bookstore.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_date_normal.webp",
         "next": "date_yuna_oldbook_2"
     },
     "date_yuna_oldbook_2": {
         "background": "assets/images/background/bookstore.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_date_normal.webp",
         "next": "date_yuna_oldbook_3"
     },
     "date_yuna_oldbook_3": {
         "background": "assets/images/background/bookstore.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_date_normal.webp",
         "next": "date_yuna_oldbook_4"
     },
     "date_yuna_oldbook_4": {
         "background": "assets/images/background/bookstore.png",
-        "character": "assets/images/characters/yuna_smile.png",
+        "character": "assets/images/characters/yuna_date_smile.webp",
         "next": "date_yuna_end"
     },
     "date_yuna_end": {
         "background": "assets/images/background/bookstore.png",
-        "character": "assets/images/characters/yuna_smile.png",
+        "character": "assets/images/characters/yuna_date_smile.webp",
         "next": "date_yuna_end_b"
     },
     "date_yuna_end_b": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_date_normal.webp",
         "next": "date_yuna_end_c"
     },
     "date_yuna_end_c": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_date_normal.webp",
         "next": "pre_confess_minsu"
     },
     "date_dain_1": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_date_laugh.webp",
         "bgm": "daily2.mp3",
         "condition": "route_dain",
-        "affinityGuard": {"character":"Dain","minAffinity":30,"fallback":"date_dain_skip"},
+        "affinityGuard": {
+            "character": "Dain",
+            "minAffinity": 30,
+            "fallback": "date_dain_skip"
+        },
         "next": "date_dain_tier_check"
     },
     "date_dain_tier_check": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/school_back.png",
         "character": null,
         "affinityChar": "Dain",
         "affinityBranches": [
-            { "minAffinity": 60, "next": "date_dain_high_1" },
-            { "minAffinity": 40, "next": "date_dain_2" },
-            { "minAffinity": 30, "next": "date_dain_tentative_1" },
-            { "minAffinity": 0, "next": "date_dain_low" },
-            { "minAffinity": -19, "next": "date_dain_low" },
-            { "minAffinity": -100, "next": "date_dain_neg" }
+            {
+                "minAffinity": 60,
+                "next": "date_dain_high_1"
+            },
+            {
+                "minAffinity": 40,
+                "next": "date_dain_2"
+            },
+            {
+                "minAffinity": 30,
+                "next": "date_dain_tentative_1"
+            },
+            {
+                "minAffinity": 0,
+                "next": "date_dain_low"
+            },
+            {
+                "minAffinity": -19,
+                "next": "date_dain_low"
+            },
+            {
+                "minAffinity": -100,
+                "next": "date_dain_neg"
+            }
         ],
         "next": "date_dain_neg"
     },
     "date_dain_high_1": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_date_laugh.webp",
         "next": "date_dain_high_2"
     },
     "date_dain_high_2": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_shy.png",
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_date_shy.webp",
         "next": "date_dain_2"
     },
     "date_dain_tentative_1": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_date_normal.webp",
         "next": "date_dain_tentative_2"
     },
     "date_dain_tentative_2": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_date_normal.webp",
         "next": "date_dain_tentative_3"
     },
     "date_dain_tentative_3": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/dain_normal.png",
-        "setFlags": ["day4_tentative_dain"],
+        "character": "assets/images/characters/dain_date_normal.webp",
+        "setFlags": [
+            "day4_tentative_dain"
+        ],
         "next": "pre_confess_minsu"
     },
     "date_dain_2": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_date_laugh.webp",
         "next": "date_dain_3"
     },
     "date_dain_3": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_date_laugh.webp",
         "next": "date_dain_4"
     },
     "date_dain_4": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_date_normal.webp",
         "next": "date_dain_compliment_choice"
     },
     "date_dain_compliment_choice": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_date_normal.webp",
         "choices": [
-            { "affinityChar": "Dain", "affinityBranches": [{"minAffinity":50,"next":"date_dain_pretty_high"},{"minAffinity":-100,"next":"date_dain_pretty_low"}] },
-            { "next": "date_dain_bright", "stats": {"Dain":{"affinity":-3}} },
-            { "next": "date_dain_bright", "stats": {"Dain":{"affinity":-4}} },
-            { "next": "date_dain_bright", "stats": {"Dain":{"affinity":-5}} }
+            {
+                "affinityChar": "Dain",
+                "affinityBranches": [
+                    {
+                        "minAffinity": 50,
+                        "next": "date_dain_pretty_high"
+                    },
+                    {
+                        "minAffinity": -100,
+                        "next": "date_dain_pretty_low"
+                    }
+                ]
+            },
+            {
+                "next": "date_dain_bright",
+                "stats": {
+                    "Dain": {
+                        "affinity": -3
+                    }
+                }
+            },
+            {
+                "next": "date_dain_bright",
+                "stats": {
+                    "Dain": {
+                        "affinity": -4
+                    }
+                }
+            },
+            {
+                "next": "date_dain_bright",
+                "stats": {
+                    "Dain": {
+                        "affinity": -5
+                    }
+                }
+            }
         ]
     },
     "date_dain_pretty_high": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_shy.png",
-        "stats": {"Dain":{"affinity":2}},
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_date_shy.webp",
+        "stats": {
+            "Dain": {
+                "affinity": 2
+            }
+        },
         "next": "date_dain_pretty_high_2"
     },
     "date_dain_pretty_high_2": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_shy.png",
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_date_shy.webp",
         "next": "date_dain_pretty_high_3"
     },
     "date_dain_pretty_high_3": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_shy.png",
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_date_shy.webp",
         "next": "date_dain_pretty_high_4"
     },
     "date_dain_pretty_high_4": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_shy.png",
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_date_shy.webp",
         "next": "date_dain_to_arcade"
     },
     "date_dain_pretty_low": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_shy.png",
-        "stats": {"Dain":{"affinity":2}},
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_date_shy.webp",
+        "stats": {
+            "Dain": {
+                "affinity": 2
+            }
+        },
         "next": "date_dain_to_arcade"
     },
     "date_dain_bright": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_date_laugh.webp",
         "next": "date_dain_to_arcade"
     },
     "date_dain_to_arcade": {
         "background": "assets/images/background/arcade.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_date_laugh.webp",
         "next": "date_dain_arcade"
     },
     "date_dain_arcade": {
         "background": "assets/images/background/arcade.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_date_normal.webp",
         "next": "date_dain_arcade_2"
     },
     "date_dain_arcade_2": {
         "background": "assets/images/background/arcade.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_date_normal.webp",
         "next": "date_dain_arcade_2_b"
     },
     "date_dain_arcade_2_b": {
         "background": "assets/images/background/arcade.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_date_normal.webp",
         "next": "date_dain_arcade_3"
     },
     "date_dain_arcade_3": {
         "background": "assets/images/background/arcade.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_date_normal.webp",
         "next": "date_dain_arcade_3_b"
     },
     "date_dain_arcade_3_b": {
         "background": "assets/images/background/arcade.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_date_normal.webp",
         "next": "date_dain_arcade_3_c"
     },
     "date_dain_arcade_3_c": {
         "background": "assets/images/background/arcade.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_date_normal.webp",
         "next": "date_dain_rhythm"
     },
     "date_dain_rhythm": {
         "background": "assets/images/background/arcade.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_date_laugh.webp",
         "next": "date_dain_rhythm_2"
     },
     "date_dain_rhythm_2": {
         "background": "assets/images/background/arcade.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_date_normal.webp",
         "next": "date_dain_rhythm_3"
     },
     "date_dain_rhythm_3": {
         "background": "assets/images/background/arcade.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_date_laugh.webp",
         "next": "date_dain_knee"
     },
     "date_dain_knee": {
         "background": "assets/images/background/arcade.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_date_laugh.webp",
         "next": "date_dain_knee_2"
     },
     "date_dain_knee_2": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/dain_sweat.png",
+        "character": "assets/images/characters/dain_date_sweat.webp",
         "next": "date_dain_shop"
     },
     "date_dain_shop": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_date_normal.webp",
         "next": "date_dain_shop_2"
     },
     "date_dain_shop_2": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_date_normal.webp",
         "next": "date_dain_shop_2_b"
     },
     "date_dain_shop_2_b": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_date_normal.webp",
         "next": "date_dain_shop_3"
     },
     "date_dain_shop_3": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_date_laugh.webp",
         "next": "date_dain_shop_3_b"
     },
     "date_dain_shop_3_b": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_date_normal.webp",
         "next": "date_dain_end"
     },
     "date_dain_end": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/dain_sweat.png",
+        "character": "assets/images/characters/dain_date_sweat.webp",
         "next": "date_dain_end_b"
     },
     "date_dain_end_b": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_date_normal.webp",
         "next": "date_dain_end_c"
     },
     "date_dain_end_c": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/dain_sweat.png",
+        "character": "assets/images/characters/dain_date_sweat.webp",
         "next": "pre_confess_minsu"
     },
     "pre_confess_minsu": {
@@ -595,51 +700,62 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "pre_confess_callback": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/minsu_smirk.png",
+        "character": null,
         "next": "confess_seo_1"
     },
     "day4_caught_fallout_1": {
-        "background": "assets/images/background/room_my.png",
+        "background": "assets/images/background/room_my_day.webp",
         "character": null,
         "bgm": "morning.mp3",
-        "next": "day4_caught_fallout_2"
+        "next": "day4_caught_fallout_2",
+        "timeOfDay": "day"
     },
     "day4_caught_fallout_2": {
-        "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/seyoun_sad.png","opacity":0.35}},
-        "next": "day4_caught_fallout_3"
+        "background": "assets/images/background/room_my_day.webp",
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_sad.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "day4_caught_fallout_3",
+        "timeOfDay": "day"
     },
     "day4_caught_fallout_3": {
-        "background": "assets/images/background/room_my.png",
+        "background": "assets/images/background/room_my_day.webp",
         "character": null,
-        "next": "day4_caught_fallout_4"
+        "next": "day4_caught_fallout_4",
+        "timeOfDay": "day"
     },
     "day4_caught_fallout_4": {
-        "background": "assets/images/background/room_my.png",
+        "background": "assets/images/background/room_my_day.webp",
         "character": null,
         "setFlags": [
             "day4_caught_fallout_seen"
         ],
-        "next": "day4_date_branch"
+        "next": "day4_date_branch",
+        "timeOfDay": "day"
     },
     "day4_harem_fallout_1": {
-        "background": "assets/images/background/room_my.png",
+        "background": "assets/images/background/room_my_day.webp",
         "character": null,
         "bgm": "morning.mp3",
-        "next": "day4_harem_fallout_2"
+        "next": "day4_harem_fallout_2",
+        "timeOfDay": "day"
     },
     "day4_harem_fallout_2": {
-        "background": "assets/images/background/room_my.png",
+        "background": "assets/images/background/room_my_day.webp",
         "next": "day4_harem_fallout_3",
         "characters": {
             "center": {
                 "src": "assets/images/characters/seyoun_normal.png",
                 "opacity": 0.35
             }
-        }
+        },
+        "timeOfDay": "day"
     },
     "day4_harem_fallout_3": {
-        "background": "assets/images/background/room_my.png",
+        "background": "assets/images/background/room_my_day.webp",
         "characters": {
             "left": {
                 "src": "assets/images/characters/yuna_normal.png",
@@ -650,32 +766,49 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "opacity": 0.35
             }
         },
-        "next": "day4_harem_fallout_4"
+        "next": "day4_harem_fallout_4",
+        "timeOfDay": "day"
     },
     "day4_harem_fallout_4": {
-        "background": "assets/images/background/room_my.png",
+        "background": "assets/images/background/room_my_day.webp",
         "character": null,
         "setFlags": [
             "day4_harem_fallout_seen"
         ],
-        "next": "day4_date_branch"
+        "next": "day4_date_branch",
+        "timeOfDay": "day"
     },
     "date_seo_low": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "setFlags": ["day4_waited", "day4_distance_seoyeon"],
-        "next": "day4_night_start"
+        "character": null,
+        "setFlags": [
+            "day4_waited",
+            "day4_distance_seoyeon"
+        ],
+        "next": "day4_night_start",
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_normal.png",
+                "opacity": 0.35
+            }
+        }
     },
     "date_yuna_low": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/yuna_normal.png",
-        "setFlags": ["day4_waited", "day4_distance_yuna"],
+        "character": "assets/images/characters/yuna_date_normal.webp",
+        "setFlags": [
+            "day4_waited",
+            "day4_distance_yuna"
+        ],
         "next": "day4_night_start"
     },
     "date_dain_low": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
-        "setFlags": ["day4_waited", "day4_distance_dain"],
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_date_normal.webp",
+        "setFlags": [
+            "day4_waited",
+            "day4_distance_dain"
+        ],
         "next": "day4_night_start"
     },
     "date_seo_skip": {
@@ -695,29 +828,57 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "routeBeforeRender": true
     },
     "date_dain_skip": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/school_back.png",
         "character": null,
         "affinityChar": "Dain",
-        "affinityBranches": [{"minAffinity":0,"next":"date_dain_low"},{"minAffinity":-19,"next":"date_dain_low"},{"minAffinity":-100,"next":"date_dain_neg"}],
+        "affinityBranches": [
+            {
+                "minAffinity": 0,
+                "next": "date_dain_low"
+            },
+            {
+                "minAffinity": -19,
+                "next": "date_dain_low"
+            },
+            {
+                "minAffinity": -100,
+                "next": "date_dain_neg"
+            }
+        ],
         "next": "date_dain_neg",
         "routeBeforeRender": true
     },
     "date_seo_neg": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_pout.png",
-        "setFlags": ["day4_waited","day4_distance_seoyeon"],
-        "next": "day4_night_start"
+        "character": null,
+        "setFlags": [
+            "day4_waited",
+            "day4_distance_seoyeon"
+        ],
+        "next": "day4_night_start",
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_pout.png",
+                "opacity": 0.35
+            }
+        }
     },
     "date_yuna_neg": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/yuna_bored.png",
-        "setFlags": ["day4_waited","day4_distance_yuna"],
+        "character": "assets/images/characters/yuna_date_bored.webp",
+        "setFlags": [
+            "day4_waited",
+            "day4_distance_yuna"
+        ],
         "next": "day4_night_start"
     },
     "date_dain_neg": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_angry.png",
-        "setFlags": ["day4_waited","day4_distance_dain"],
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_date_angry.webp",
+        "setFlags": [
+            "day4_waited",
+            "day4_distance_dain"
+        ],
         "next": "day4_night_start"
     }
     };

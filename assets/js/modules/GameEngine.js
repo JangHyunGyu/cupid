@@ -1179,8 +1179,9 @@ class GameEngine {
         const sourceFile = scene.__sourceFile || '';
         const nightFromFile = /_night$/.test(sourceFile);
         const sunsetFromFile = /_3_afterschool$/.test(sourceFile);
-        const isNightScene = !!scene.night || nightFromFile;
-        const isSunsetScene = !!scene.sunset || sunsetFromFile;
+        const explicitTime = ['day', 'sunset', 'night'].includes(scene.timeOfDay) ? scene.timeOfDay : null;
+        const isNightScene = explicitTime ? explicitTime === 'night' : !!scene.night || nightFromFile;
+        const isSunsetScene = explicitTime ? explicitTime === 'sunset' : !!scene.sunset || sunsetFromFile;
         console.log('[TimeFilter]', {
             sceneId,
             sourceFile,

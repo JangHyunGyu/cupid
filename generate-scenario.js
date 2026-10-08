@@ -275,6 +275,7 @@ function formatScene(sceneId, scene, i18n) {
     }
 
     if (scene.backgroundVariant) lines.push(`- 배경톤: \`${scene.backgroundVariant}\``);
+    if (scene.timeOfDay) lines.push(`- 시간대: \`${scene.timeOfDay}\``);
     if (scene.bgm) lines.push(`- BGM: \`${scene.bgm}\``);
     if (scene.type) lines.push(`- 타입: \`${scene.type}\``);
     if (scene.affinityLocked === true) lines.push('- 호감도 변동: `없음`');

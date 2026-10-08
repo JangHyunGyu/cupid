@@ -232,7 +232,9 @@ html {
 }
 
 #background-layer.bg-layout-sojeong-flashback-contain,
-#background-layer.bg-layout-sojeong-flashback-contain::after {
+#background-layer.bg-layout-sojeong-flashback-contain::after,
+#background-layer.bg-layout-full-art,
+#background-layer.bg-layout-full-art::after {
     background-color: #000;
     background-position: center;
     background-repeat: no-repeat;

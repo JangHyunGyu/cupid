@@ -210,7 +210,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "after5_farewell_seo_7": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_sad.png",
+        "character": null,
         "next": "after5_farewell_yuna_check"
     },
     "after5_farewell_yuna_check": {
@@ -265,8 +265,14 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "after5_farewell_yuna_5": {
         "background": "assets/images/background/library_old.png",
-        "character": "assets/images/characters/yuna_smile.png",
-        "next": "after5_farewell_yuna_5b"
+        "character": null,
+        "next": "after5_farewell_yuna_5b",
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_smile.png",
+                "opacity": 0.35
+            }
+        }
     },
     "after5_farewell_yuna_5b": {
         "background": "assets/images/background/school_hallway.png",
@@ -283,9 +289,13 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         ]
     },
     "after5_farewell_dain_1": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/dain_normal.png",
-        "affinityGuard": {"character":"Dain","minAffinity":40,"fallback":"after5_farewell_dain_skip"},
+        "affinityGuard": {
+            "character": "Dain",
+            "minAffinity": 40,
+            "fallback": "after5_farewell_dain_skip"
+        },
         "next": "after5_farewell_dain_affinity_check"
     },
     "after5_farewell_dain_affinity_check": {
@@ -400,12 +410,36 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         ]
     },
     "after5_hidden_route_choice": {
-        "background": "assets/images/background/park.png",
+        "background": "assets/images/background/school_back.png",
         "character": null,
         "choices": [
-            { "next": "after5_last_chance_1", "clearFlags": ["hidden_route_chosen_teacher", "hidden_route_chosen_nurse"] },
-            { "condition": "homeroom_day5", "next": "after5_hidden_teacher_affinity_check", "setFlags": ["hidden_route_chosen_teacher"], "clearFlags": ["hidden_route_chosen_nurse"] },
-            { "condition": "nurse_day5", "next": "after5_hidden_nurse_affinity_check", "setFlags": ["hidden_route_chosen_nurse"], "clearFlags": ["hidden_route_chosen_teacher"] }
+            {
+                "next": "after5_last_chance_1",
+                "clearFlags": [
+                    "hidden_route_chosen_teacher",
+                    "hidden_route_chosen_nurse"
+                ]
+            },
+            {
+                "condition": "homeroom_day5",
+                "next": "after5_hidden_teacher_affinity_check",
+                "setFlags": [
+                    "hidden_route_chosen_teacher"
+                ],
+                "clearFlags": [
+                    "hidden_route_chosen_nurse"
+                ]
+            },
+            {
+                "condition": "nurse_day5",
+                "next": "after5_hidden_nurse_affinity_check",
+                "setFlags": [
+                    "hidden_route_chosen_nurse"
+                ],
+                "clearFlags": [
+                    "hidden_route_chosen_teacher"
+                ]
+            }
         ]
     },
     "after5_hidden_teacher_affinity_check": {
@@ -939,7 +973,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "after5_farewell_dain_check"
     },
     "after5_farewell_dain_low": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "after5_sunset_1"
     },
@@ -978,7 +1012,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "after5_farewell_dain_check"
     },
     "after5_farewell_dain_neg": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/dain_angry.png",
         "next": "after5_sunset_1"
     },
