@@ -252,7 +252,7 @@ class GalleryUI {
         this.showUnlockPopup({
             title: L('표정 미해금', 'Expression Locked', 'Expresión bloqueada', '未解放の表情', 'Expression verrouillée', 'Ausdruck gesperrt', 'Expressão bloqueada', '表情未解锁'),
             message: L(
-                `"${exprName}" 표정을 해금하려면<br>호감도 ${requiredAffinity}이(가) 필요합니다.<br><br><span class="condition-line">💕 최대 호감도: ${currentAffinity}</span><span class="condition-line">🎯 필요 호감도: ${requiredAffinity}</span>`,
+                `"${exprName}" 표정을 해금하려면<br>호감도 ${requiredAffinity}이 필요합니다.<br><br><span class="condition-line">💕 최대 호감도: ${currentAffinity}</span><span class="condition-line">🎯 필요 호감도: ${requiredAffinity}</span>`,
                 `To unlock the “${exprName}” expression,<br>reach an affinity of ${requiredAffinity}.<br><br><span class="condition-line">💕 Highest Affinity: ${currentAffinity}</span><span class="condition-line">🎯 Required: ${requiredAffinity}</span>`,
                 `Para desbloquear la expresión «${exprName}»,<br>necesitas ${requiredAffinity} puntos de afinidad.<br><br><span class="condition-line">💕 Afinidad máxima: ${currentAffinity}</span><span class="condition-line">🎯 Nivel requerido: ${requiredAffinity}</span>`,
                 `表情「${exprName}」を解放するには、<br>好感度が${requiredAffinity}以上必要です。<br><br><span class="condition-line">💕 最大好感度：${currentAffinity}</span><span class="condition-line">🎯 必要好感度：${requiredAffinity}</span>`,
