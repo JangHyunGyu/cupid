@@ -229,6 +229,8 @@ test('legacy chat migration uses the durable queue before network access', () =>
 });
 
 test('same-origin script and stylesheet failures retry twice before reporting a persistent failure', async () => {
+    // 보고 전송이 응답 본문까지 읽고 끝나도록 마이크로태스크를 충분히 돌립니다.
+    const settleMicrotasks = async () => { for (let i = 0; i < 20; i++) await Promise.resolve(); };
     const listeners = new Map();
     const timers = [];
     const reports = [];
@@ -305,7 +307,7 @@ test('same-origin script and stylesheet failures retry twice before reporting a 
     timers.find(timer => timer.delay === 600).callback();
 
     fireResourceError();
-    await Promise.resolve();
+    await settleMicrotasks();
     assert.equal(reports.length, 1);
     assert.equal(reports[0].errorType, 'ResourceError');
 
@@ -331,7 +333,7 @@ test('same-origin script and stylesheet failures retry twice before reporting a 
     timers.filter(timer => timer.delay === 600).at(-1).callback();
 
     fireStylesheetError();
-    await Promise.resolve();
+    await settleMicrotasks();
     assert.equal(reports.length, 2);
     assert.equal(reports[1].errorType, 'ResourceError');
 });

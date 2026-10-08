@@ -12,7 +12,7 @@
  * ============================================================================
  */
 
-const CACHE_VERSION = 'cupid-v3.3.220';
+const CACHE_VERSION = 'cupid-v3.3.221';
 const STATIC_CACHE = CACHE_VERSION + '-static';
 const MEDIA_CACHE = CACHE_VERSION + '-media';
 // Protected images carry their own content hash. App-only releases retain them.
@@ -88,8 +88,10 @@ function reportServiceWorkerError(type, error) {
                 reportId: eventId,
                 extra: { eventId, occurredAt: new Date(occurredAtMs).toISOString() }
             }),
-            keepalive: true
-        }).catch(() => {});
+            // keepalive는 쓰지 않습니다. 진행 중인 keepalive 본문이 64KB를 넘으면 브라우저가 요청을 거절합니다.
+            credentials: 'omit',
+            cache: 'no-store'
+        }).then(response => response.text()).catch(() => {});
     } catch (_) {
         return Promise.resolve();
     }

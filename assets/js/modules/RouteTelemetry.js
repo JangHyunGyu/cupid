@@ -26,32 +26,108 @@
         if (timer || !pending.length) return;
         timer = setTimeout(() => { timer = null; void flush(); }, delay);
     }
+    const MAX_ATTEMPTS = 6;
+    function reportFailure(error, batch, errorType, extra = {}) {
+        try {
+            window.logCupidError?.(error instanceof Error ? error : new Error(String(error || errorType)), {
+                source: 'CupidRouteTelemetry.flush',
+                errorType,
+                errorClass: error?.cupidStatus ? 'http' : (error?.cupidClientException ? 'client' : (error?.name || 'route-events')),
+                context: { eventTypes: [...new Set(batch.map(item => item.event.eventType))].slice(0, 8) },
+                extra: {
+                    eventIds: batch.map(item => item.event.eventId).slice(0, 8),
+                    httpStatus: Number(error?.cupidStatus || 0),
+                    attempts: Math.max(...batch.map(item => Number(item.attempts || 0)), 0),
+                    ...extra
+                }
+            });
+        } catch (_) { /* Diagnostics must never interrupt a scene. */ }
+    }
+    function nextBatch(skip = new Set()) {
+        const first = pending.find(item => !skip.has(item.event.eventId));
+        if (!first) return [];
+        return pending.filter(item => !skip.has(item.event.eventId)
+            && item.appId === first.appId && item.userId === first.userId).slice(0, 8);
+    }
+    // keepalive는 pagehide에서만, error-reporter.js가 관리하는 한도 안에서 씁니다. 평소에는 일반 요청(15초 시간 제한)입니다.
+    async function sendBatch(batch, options = {}) {
+        const first = batch[0];
+        const result = await window.sendCupidLogRequest(API_ENDPOINT + 'cupid-route-events', {
+            label: 'cupid-route-events',
+            headers: { 'Content-Type': 'application/json', 'x-app-id': first.appId },
+            body: JSON.stringify({ appId: first.appId, userId: first.userId, events: batch.map(item => item.event) }),
+            keepalive: options.keepalive === true,
+            keepaliveOnly: options.keepalive === true
+        });
+        let parsed = null;
+        try { parsed = JSON.parse(result.text || 'null'); } catch (_) { parsed = null; }
+        if (!parsed?.ok || !Array.isArray(parsed.eventIds)) {
+            const error = new Error('route telemetry missing acknowledgement');
+            error.cupidClientException = true;
+            throw error;
+        }
+        const acknowledged = new Set(parsed.eventIds);
+        pending = pending.filter(item => !acknowledged.has(item.event.eventId));
+        persist(acknowledged);
+        return acknowledged.size;
+    }
+    function handleFailure(error, batch) {
+        const ids = new Set(batch.map(item => item.event.eventId));
+        const attempts = Math.max(...batch.map(item => Number(item.attempts || 0)), 0) + 1;
+        const transient = window.isCupidLogTransientError?.(error) === true;
+        const retryableHttp = window.isCupidLogRetryableHttpStatus?.(error?.cupidStatus) === true;
+        // 네트워크 단절·시간 초과가 아닌 실패는 첫 발생 때 바로 D1 오류 로그로 남깁니다.
+        if (!transient && attempts === 1) {
+            reportFailure(error, batch, error?.cupidClientException ? 'route_events_client_exception' : 'route_events_send_failed');
+        }
+        if ((transient || retryableHttp) && attempts < MAX_ATTEMPTS) {
+            const lastError = String(error?.message || error).substring(0, 200);
+            pending = pending.map(item => ids.has(item.event.eventId) ? { ...item, attempts, lastError } : item);
+            persist();
+            return Math.min(15000 * attempts, 120000);
+        }
+        const firstError = batch[0]?.lastError || '';
+        pending = pending.filter(item => !ids.has(item.event.eventId));
+        persist(ids);
+        reportFailure(error, batch.map(item => ({ ...item, attempts })), 'route_events_queue_dropped', {
+            reason: (transient || retryableHttp) ? 'max_attempts' : 'non_retryable',
+            maxAttempts: MAX_ATTEMPTS,
+            firstError
+        });
+        return 200;
+    }
     async function flush() {
         if (busy || !pending.length) return;
+        if (typeof window.sendCupidLogRequest !== 'function') return;
+        if (typeof navigator !== 'undefined' && navigator.onLine === false) return;
         busy = true;
-        const first = pending[0];
-        const batch = pending.filter(item => item.appId === first.appId && item.userId === first.userId).slice(0, 8);
-        const controller = new AbortController();
-        const timeout = setTimeout(() => controller.abort(), 10000);
+        const batch = nextBatch();
+        let delay = 200;
         try {
-            const response = await fetch(API_ENDPOINT + 'cupid-route-events', {
-                method: 'POST', headers: { 'Content-Type': 'application/json', 'x-app-id': first.appId },
-                body: JSON.stringify({ appId: first.appId, userId: first.userId, events: batch.map(item => item.event) }),
-                credentials: 'omit', cache: 'no-store', keepalive: true, signal: controller.signal
-            });
-            if (!response.ok) throw new Error('route telemetry HTTP ' + response.status);
-            const result = await response.json();
-            if (!result.ok || !Array.isArray(result.eventIds)) throw new Error('route telemetry missing acknowledgement');
-            const acknowledged = new Set(result.eventIds);
-            pending = pending.filter(item => !acknowledged.has(item.event.eventId));
-            persist(acknowledged);
+            await sendBatch(batch);
             retryMs = 2000;
-        } catch (_) {
-            retryMs = Math.min(retryMs * 2, 60000);
+        } catch (error) {
+            delay = handleFailure(error, batch);
+            retryMs = delay;
         } finally {
-            clearTimeout(timeout);
             busy = false;
-            schedule(retryMs);
+            schedule(pending.length ? delay : retryMs);
+        }
+    }
+    // 페이지를 떠날 때: 한도 안에서만 keepalive로 보내고, 남은 것은 큐에 두어 다음 방문 때 보냅니다.
+    function flushOnPageHide() {
+        try {
+            if (!pending.length || typeof window.sendCupidLogRequest !== 'function') return;
+            if (typeof navigator !== 'undefined' && navigator.onLine === false) return;
+            const sentIds = new Set();
+            for (let i = 0; i < 4; i++) {
+                const batch = nextBatch(sentIds);
+                if (!batch.length) break;
+                batch.forEach(item => sentIds.add(item.event.eventId));
+                sendBatch(batch, { keepalive: true }).catch(() => { /* 큐에 남겨 다음 방문 때 보냅니다. */ });
+            }
+        } catch (error) {
+            reportFailure(error, [], 'route_events_client_exception', { stage: 'pagehide' });
         }
     }
     function route(state) {
@@ -68,8 +144,8 @@
             || window.location.hostname.endsWith('.pages.dev');
     }
     // Nevergrad <-> Cupid crossing markers. Same queue, endpoint and fields as the other route events;
-    // the payload only names the direction. Fire-and-forget: the flush is never awaited (the fetch uses
-    // keepalive), a failure leaves the event in the persisted queue for the next visit, and nothing here
+    // the payload only names the direction. Fire-and-forget: the flush is never awaited (pagehide sends
+    // what is still queued with keepalive), a failure leaves the event in the persisted queue for the next visit, and nothing here
     // can throw into the game or delay the page change. The guard drops a repeat of the same direction
     // within 30 s (a retried departure click); an arrival cannot repeat on reload because takeArrival
     // strips ?gate=1 from the URL.
@@ -180,7 +256,7 @@
     }
     window.CupidRouteTelemetry = { entered, transition, choice, auditAffinity, crossing, flush };
     window.addEventListener('online', () => { void flush(); });
-    window.addEventListener('pagehide', () => { void flush(); });
+    window.addEventListener('pagehide', flushOnPageHide);
     document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') void flush(); });
     schedule();
 })();

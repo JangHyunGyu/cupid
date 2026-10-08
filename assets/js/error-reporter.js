@@ -203,12 +203,21 @@
 
     if (window.__cupidErrorReporterInstalled) return;
 
-    var VERSION = '20261005-env-guard';
+    var VERSION = '20261008-log-transport';
     var ERROR_ENDPOINT = 'https://chatbot-api.yama5993.workers.dev/error-logs';
     var QUEUE_KEY = 'cupid-error-queue-v2';
     var SESSION_KEY = 'cupid-error-session-v2';
     var MAX_QUEUE_SIZE = 100;
     var RETRY_DELAY_MS = 15000;
+    var RETRY_MAX_DELAY_MS = 120000;
+    var MAX_ATTEMPTS = 6;
+    var REQUEST_TIMEOUT_MS = 15000;
+    // 브라우저는 진행 중인 keepalive 요청(sendBeacon 포함) 본문을 합쳐 64KB까지만 받고, 넘으면
+    // 네트워크가 멀쩡해도 'Failed to fetch'로 거절합니다. 이 페이지의 모든 기록 전송이 이 예산을 나눠 씁니다.
+    // 광고·분석 스크립트도 같은 한도를 쓰므로 절반만 잡습니다.
+    var KEEPALIVE_BUDGET_BYTES = 32 * 1024;
+    var BEACON_BUDGET_HOLD_MS = 10000;
+    var keepaliveInFlightBytes = 0;
     var unsupportedLegacyBrowser = /(?:MSIE\s|Trident\/|Edge\/(?:1[0-8])\.)/i.test(navigator.userAgent || '');
     if (unsupportedLegacyBrowser) {
         try { window.localStorage.removeItem(QUEUE_KEY); } catch (_) { /* ignore */ }
@@ -366,14 +375,14 @@
         return window.location.href;
     }
 
-    function enqueue(payload) {
+    function enqueue(payload, options) {
         var id = randomId();
         payload.extra = payload.extra || {};
         payload.extra.eventId = id;
-        queue.push({ id: id, payload: payload });
+        queue.push({ id: id, payload: payload, attempts: 0 });
         if (queue.length > MAX_QUEUE_SIZE) queue.splice(0, queue.length - MAX_QUEUE_SIZE);
         persistQueue();
-        flushQueue();
+        if (!(options && options.deferFlush)) flushQueue();
     }
 
     function report(type, message, stack, source, details) {
@@ -411,18 +420,127 @@
         }
     }
 
-    function scheduleRetry() {
+    function byteLength(text) {
+        try { return new Blob([String(text || '')]).size; }
+        catch (_) { return String(text || '').length * 3; }
+    }
+
+    var keepaliveBudget = {
+        limit: KEEPALIVE_BUDGET_BYTES,
+        inFlight: function () { return keepaliveInFlightBytes; },
+        canReserve: function (bytes) {
+            bytes = Number(bytes) || 0;
+            return bytes > 0 && keepaliveInFlightBytes + bytes <= KEEPALIVE_BUDGET_BYTES;
+        },
+        reserve: function (bytes, holdMs) {
+            bytes = Number(bytes) || 0;
+            if (!keepaliveBudget.canReserve(bytes)) return false;
+            keepaliveInFlightBytes += bytes;
+            // sendBeacon은 끝난 시점을 알 수 없으므로 잠시 뒤에 예산을 돌려받습니다.
+            if (holdMs) window.setTimeout(function () { keepaliveBudget.release(bytes); }, holdMs);
+            return true;
+        },
+        release: function (bytes) {
+            keepaliveInFlightBytes = Math.max(0, keepaliveInFlightBytes - (Number(bytes) || 0));
+        }
+    };
+
+    function scheduleRetry(attempts) {
         if (retryTimer) return;
+        var delay = Math.min(RETRY_DELAY_MS * Math.max(1, Number(attempts) || 1), RETRY_MAX_DELAY_MS);
         retryTimer = window.setTimeout(function () {
             retryTimer = null;
             flushQueue();
-        }, RETRY_DELAY_MS);
+        }, delay);
+    }
+
+    function clearTimer(id) {
+        try {
+            if (typeof window.clearTimeout === 'function') window.clearTimeout(id);
+            else if (typeof clearTimeout === 'function') clearTimeout(id);
+        } catch (_) { /* ignore */ }
+    }
+
+    // 일반 요청(keepalive 없음)으로 보내고 15초 안에 응답 본문까지 읽습니다.
+    function postErrorPayload(body) {
+        return new Promise(function (resolve, reject) {
+            var controller = typeof AbortController === 'function' ? new AbortController() : null;
+            var settled = false;
+            var timer = window.setTimeout(function () {
+                if (settled) return;
+                settled = true;
+                try { if (controller) controller.abort(); } catch (_) { /* ignore */ }
+                var timeoutError = new Error('error log request timed out after ' + REQUEST_TIMEOUT_MS + 'ms');
+                timeoutError.transient = true;
+                reject(timeoutError);
+            }, REQUEST_TIMEOUT_MS);
+            var init = {
+                method: 'POST',
+                headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
+                body: body,
+                mode: 'cors',
+                credentials: 'omit',
+                cache: 'no-store'
+            };
+            if (controller) init.signal = controller.signal;
+            window.fetch(ERROR_ENDPOINT, init).then(function (response) {
+                var readBody = typeof response.text === 'function'
+                    ? response.text().catch(function () { return ''; })
+                    : Promise.resolve('');
+                return readBody.then(function (text) {
+                    return { ok: response.ok, status: response.status, text: text };
+                });
+            }).then(function (result) {
+                if (settled) return;
+                settled = true;
+                clearTimer(timer);
+                resolve(result);
+            }, function (error) {
+                if (settled) return;
+                settled = true;
+                clearTimer(timer);
+                var transportError = error instanceof Error ? error : new Error(safeString(error));
+                transportError.transient = navigator.onLine === false || transportError.name === 'TypeError';
+                reject(transportError);
+            });
+        });
+    }
+
+    function isRetryableStatus(status) {
+        return status === 408 || status === 425 || status === 429 || status >= 500;
+    }
+
+    // 같은 보고를 6번 보내도 실패하면 큐에서 빼고, 그 사실을 작은 보고 하나로 남깁니다.
+    function dropQueuedEvent(item, reason, lastError) {
+        removeQueuedEvent(item.id);
+        var payload = item.payload || {};
+        if (payload.errorType === 'error_report_queue_dropped') return;
+        enqueue({
+            appId: payload.appId || defaultAppId,
+            userId: payload.userId || getDeviceId(),
+            message: '[app:error_report_queue_dropped] ' + String(payload.message || '').slice(0, 300),
+            stack: '',
+            url: window.location.href.slice(0, 500),
+            source: 'error-reporter',
+            errorType: 'error_report_queue_dropped',
+            errorClass: 'reporter',
+            sessionId: String(payload.sessionId || sessionId).slice(0, 64),
+            context: getGameContext(),
+            extra: {
+                reason: reason,
+                attempts: Number(item.attempts || 0),
+                maxAttempts: MAX_ATTEMPTS,
+                droppedErrorType: String(payload.errorType || '').slice(0, 100),
+                droppedEventId: payload.extra && payload.extra.eventId || '',
+                lastError: String(lastError || '').slice(0, 200)
+            }
+        }, { deferFlush: true });
     }
 
     function flushQueue() {
         if (flushing || !queue.length) return;
         if (navigator.onLine === false) {
-            scheduleRetry();
+            scheduleRetry(1);
             return;
         }
         if (typeof window.fetch !== 'function') {
@@ -433,41 +551,63 @@
         flushing = true;
         var current = queue[0];
         inFlightId = current.id;
-        window.fetch(ERROR_ENDPOINT, {
-            method: 'POST',
-            headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
-            body: JSON.stringify(current.payload),
-            mode: 'cors',
-            credentials: 'omit',
-            cache: 'no-store',
-            keepalive: true
-        }).then(function (response) {
-            if (!response.ok) throw new Error('Error log endpoint returned ' + response.status);
+        postErrorPayload(JSON.stringify(current.payload)).then(function (result) {
+            if (!result.ok) {
+                var httpError = new Error('Error log endpoint returned ' + result.status);
+                httpError.status = result.status;
+                throw httpError;
+            }
             removeQueuedEvent(current.id);
             flushing = false;
             if (inFlightId === current.id) inFlightId = null;
             if (queue.length) window.setTimeout(flushQueue, 0);
-        }).catch(function () {
+        }).catch(function (error) {
             flushing = false;
             if (inFlightId === current.id) inFlightId = null;
-            scheduleRetry();
+            var status = Number(error && error.status || 0);
+            var retryable = (error && error.transient) || isRetryableStatus(status);
+            current.attempts = Number(current.attempts || 0) + 1;
+            if (!retryable || current.attempts >= MAX_ATTEMPTS) {
+                dropQueuedEvent(current, retryable ? 'max_attempts' : 'non_retryable', error && error.message);
+                if (!queue.length) return;
+                if (retryable) scheduleRetry(1);
+                else window.setTimeout(flushQueue, 0);
+                return;
+            }
+            persistQueue();
+            scheduleRetry(current.attempts);
         });
     }
 
+    // pagehide에서만 씁니다. 한도 안에서 sendBeacon으로 보내고, 한도를 넘거나 거절되면 일반 요청으로 보냅니다.
     function flushWithBeacon() {
-        if (!queue.length || navigator.onLine === false || typeof navigator.sendBeacon !== 'function') return;
+        if (!queue.length || navigator.onLine === false) return;
         var acceptedIds = [];
+        var needsFetch = false;
         for (var i = 0; i < queue.length; i++) {
             if (queue[i].id === inFlightId) continue;
-            try {
-                if (navigator.sendBeacon(ERROR_ENDPOINT, JSON.stringify(queue[i].payload))) {
-                    acceptedIds.push(queue[i].id);
-                }
-            } catch (_) { /* leave the item queued */ }
+            var body = JSON.stringify(queue[i].payload);
+            var bytes = byteLength(body);
+            if (typeof navigator.sendBeacon !== 'function' || !keepaliveBudget.reserve(bytes, BEACON_BUDGET_HOLD_MS)) {
+                needsFetch = true;
+                break;
+            }
+            var sent = false;
+            try { sent = navigator.sendBeacon(ERROR_ENDPOINT, body); }
+            catch (_) { sent = false; }
+            if (sent) {
+                acceptedIds.push(queue[i].id);
+            } else {
+                keepaliveBudget.release(bytes);
+                needsFetch = true;
+                break;
+            }
         }
-        if (!acceptedIds.length) return;
-        queue = queue.filter(function (item) { return acceptedIds.indexOf(item.id) === -1; });
-        persistQueue();
+        if (acceptedIds.length) {
+            queue = queue.filter(function (item) { return acceptedIds.indexOf(item.id) === -1; });
+            persistQueue();
+        }
+        if (needsFetch && typeof window.fetch === 'function') flushQueue();
     }
 
     function tryRecoverSameOriginResource(target, resource, tagName) {
@@ -563,9 +703,9 @@
         );
     }
 
+    // 탭이 가려질 때는 일반 요청으로 보냅니다. keepalive(sendBeacon)는 pagehide에서만 씁니다.
     function handleVisibilityChange() {
-        if (document.visibilityState === 'hidden') flushWithBeacon();
-        else flushQueue();
+        flushQueue();
     }
 
     window.addEventListener('error', handleWindowError, true);
@@ -615,6 +755,7 @@
         return true;
     };
     window.__cupidFlushErrors = flushQueue;
+    window.__cupidKeepaliveBudget = keepaliveBudget;
     window.__cupidErrorReporterVersion = VERSION;
     window.__cupidErrorReporterInstalled = true;
 

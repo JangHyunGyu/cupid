@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.301";
+const ASSET_VERSION = "2.9.302";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -899,26 +899,225 @@ function makeCupidChatLogEntry({
     return entry;
 }
 
-async function postCupidChatLogEntry(entry) {
-    const res = await fetch(API_ENDPOINT + 'chat-logs', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'x-app-id': entry.appId || getCupidAppId() },
-        body: JSON.stringify(entry),
-        credentials: 'omit',
-        cache: 'no-store',
-        keepalive: true
-    });
-    if (!res.ok) {
-        const error = new Error(`HTTP ${res.status}`);
-        error.cupidStatus = res.status;
-        throw error;
+// ============================================================================
+// chatbot-api 기록 전송 (대화 로그·표시 영수증·장면 기록 공통)
+// ============================================================================
+// 평소에는 keepalive 없이 일반 요청(15초 시간 제한)으로 보냅니다. 브라우저의 keepalive 전송 한도(64KB)가 차면
+// 네트워크가 멀쩡해도 'Failed to fetch'로 거절되고, 그동안 이 기록들이 통째로 막히기 때문입니다.
+// keepalive는 페이지를 떠날 때(pagehide)만, error-reporter.js가 관리하는 한도 안에서 씁니다.
+// CUPID_LOG_TRANSPORT_START (tests/route-telemetry.test.cjs가 이 구간을 그대로 불러 씁니다)
+const CUPID_LOG_REQUEST_TIMEOUT_MS = 15000;
+const CUPID_LOG_MAX_ATTEMPTS = 6;
+const CUPID_LOG_RETRY_BASE_MS = 15000;
+const CUPID_LOG_RETRY_MAX_MS = 120000;
+let cupidLogRetryTimer = null;
+
+function getCupidLogByteLength(text) {
+    try {
+        return new Blob([String(text || '')]).size;
+    } catch (_) {
+        return String(text || '').length * 3;
     }
-    return res;
+}
+
+function getCupidKeepaliveBudget() {
+    const budget = typeof window !== 'undefined' ? window.__cupidKeepaliveBudget : null;
+    return budget && typeof budget.reserve === 'function' && typeof budget.release === 'function' ? budget : null;
+}
+
+// 일시적인 실패는 오프라인, 시간 초과, 일반 요청이 TypeError로 거절된 경우뿐입니다.
+// HTTP 오류와 코드 예외는 모두 첫 발생 때 D1 오류 로그로 남깁니다.
+function isCupidLogTransientError(error) {
+    if (!error || error.cupidClientException) return false;
+    if (Number(error.cupidStatus || 0)) return false;
+    if (typeof navigator !== 'undefined' && navigator.onLine === false) return true;
+    if (error.cupidFetchTimeout) return true;
+    return Boolean(error.cupidTransport) && error.name === 'TypeError';
+}
+
+function isCupidLogRetryableHttpStatus(status) {
+    const code = Number(status || 0);
+    return code === 408 || code === 425 || code === 429 || code >= 500;
+}
+
+function markCupidLogTransportError(error) {
+    // 다른 realm(iframe 등)에서 온 오류도 이름(TypeError)을 그대로 지키도록 instanceof 대신 모양으로 봅니다.
+    const transportError = error && typeof error === 'object' && 'message' in error
+        ? error
+        : new Error(String(error || 'Network Error'));
+    if (!transportError.cupidFetchTimeout) transportError.cupidTransport = true;
+    transportError.cupidStatus = 0;
+    return transportError;
+}
+
+// 요청 하나를 보내고 응답 본문까지 읽습니다. 본문을 읽지 않고 두면 연결이 붙잡혀 다음 전송이 밀립니다.
+async function fetchCupidLogOnce(url, init, timeoutMs = CUPID_LOG_REQUEST_TIMEOUT_MS) {
+    const controller = typeof AbortController === 'function' ? new AbortController() : null;
+    let timer = null;
+    let timedOut = false;
+    const timeout = new Promise((_, reject) => {
+        timer = setTimeout(() => {
+            timedOut = true;
+            try { controller?.abort(); } catch (_) {}
+            const error = new Error(`fetch timeout after ${timeoutMs}ms`);
+            error.name = 'TimeoutError';
+            error.cupidFetchTimeout = true;
+            reject(error);
+        }, timeoutMs);
+    });
+    timeout.catch(() => {});
+    let response = null;
+    try {
+        response = await Promise.race([
+            fetch(url, controller ? { ...init, signal: controller.signal } : init),
+            timeout
+        ]);
+        const text = await Promise.race([response.text(), timeout]);
+        return { ok: response.ok, status: response.status, text: String(text || '') };
+    } catch (error) {
+        if (timedOut) {
+            try { response?.body?.cancel?.(); } catch (_) {}
+            const timeoutError = new Error(`fetch timeout after ${timeoutMs}ms`);
+            timeoutError.name = 'TimeoutError';
+            timeoutError.cupidFetchTimeout = true;
+            timeoutError.cupidStatus = 0;
+            throw timeoutError;
+        }
+        throw markCupidLogTransportError(error);
+    } finally {
+        clearTimeout(timer);
+    }
+}
+
+function assertCupidLogResponse(result, label) {
+    if (result.ok) return result;
+    const detail = String(result.text || '').replace(/\s+/g, ' ').trim().substring(0, 300);
+    const error = new Error(`${label} HTTP ${result.status}${detail ? `: ${detail}` : ''}`);
+    error.cupidStatus = result.status;
+    throw error;
+}
+
+// keepalive: true는 pagehide에서만 넘깁니다. 한도를 확보하지 못하면 keepaliveOnly일 때 보내지 않고,
+// 아니면 일반 요청으로 보냅니다. keepalive 요청이 거절되면(한도 초과 등) 일반 요청으로 한 번 더 보냅니다.
+async function sendCupidLogRequest(url, {
+    body,
+    headers = {},
+    label = 'log',
+    keepalive = false,
+    keepaliveOnly = false,
+    timeoutMs = CUPID_LOG_REQUEST_TIMEOUT_MS
+} = {}) {
+    const init = { method: 'POST', headers, body, credentials: 'omit', cache: 'no-store' };
+    if (keepalive) {
+        const budget = getCupidKeepaliveBudget();
+        const bytes = getCupidLogByteLength(body);
+        if (budget && budget.reserve(bytes)) {
+            try {
+                return assertCupidLogResponse(await fetchCupidLogOnce(url, { ...init, keepalive: true }, timeoutMs), label);
+            } catch (error) {
+                if (Number(error?.cupidStatus || 0) || error?.cupidFetchTimeout) throw error;
+                console.warn(`[ChatLog] ${label} keepalive 요청이 거절되어 일반 요청으로 다시 보냅니다:`, error?.message || error);
+            } finally {
+                budget.release(bytes);
+            }
+        } else if (keepaliveOnly) {
+            const skipped = new Error(`${label} keepalive budget unavailable`);
+            skipped.cupidKeepaliveSkipped = true;
+            throw skipped;
+        }
+    }
+    return assertCupidLogResponse(await fetchCupidLogOnce(url, init, timeoutMs), label);
+}
+
+// CUPID_LOG_TRANSPORT_END
+
+function scheduleCupidLogRetry(attempts = 1) {
+    if (cupidLogRetryTimer || typeof setTimeout !== 'function') return;
+    const delayMs = Math.min(CUPID_LOG_RETRY_BASE_MS * Math.max(1, Number(attempts) || 1), CUPID_LOG_RETRY_MAX_MS);
+    cupidLogRetryTimer = setTimeout(() => {
+        cupidLogRetryTimer = null;
+        Promise.resolve(flushCupidChatLogQueue())
+            .then(() => flushCupidChatRenderAckQueue())
+            .catch(error => reportCupidLogFailure(error, {}, 'chat_log_client_exception', { stage: 'retry_timer' }));
+    }, delayMs);
+}
+
+function reportCupidLogFailure(error, item = {}, errorType, extra = {}) {
+    try {
+        const reportError = error instanceof Error ? error : new Error(String(error || errorType));
+        logCupidError(reportError, {
+            source: 'cupid-chat-log',
+            errorType,
+            errorClass: reportError.cupidStatus
+                ? 'http'
+                : (reportError.cupidClientException ? 'client' : (reportError.name || 'chat-log')),
+            sessionId: item.sessionId || '',
+            context: {
+                charId: item.charId || '',
+                role: item.role || '',
+                logContext: item.context || '',
+                conversationDay: item.conversationDay ?? null
+            },
+            extra: {
+                clientMsgId: item.clientMsgId || '',
+                httpStatus: Number(reportError.cupidStatus || 0),
+                attempts: Number(item.attempts || 0),
+                contentLength: String(item.content || item.expectedContent || '').length,
+                ...extra
+            }
+        });
+    } catch (reportError) {
+        console.warn('[ChatLog] 대화 로그 오류를 보고하지 못했습니다:', reportError?.message || reportError);
+    }
+}
+
+// 큐 맨 앞 항목이 실패했을 때: 일시 실패가 아니면 첫 발생 때 보고하고, 같은 항목은 6번까지만 보낸 뒤
+// 큐에서 빼고 *_queue_dropped로 보고합니다. 다시 보낼 항목이면 'retry', 뺐으면 'dropped'를 돌려줍니다.
+function handleCupidLogQueueFailure(error, item, { kind, readQueue, writeQueue, getId }) {
+    const attempts = Number(item?.attempts || 0) + 1;
+    const transient = isCupidLogTransientError(error);
+    const retryableHttp = isCupidLogRetryableHttpStatus(error?.cupidStatus);
+    const itemWithAttempts = { ...item, attempts };
+    if (!transient && attempts === 1) {
+        reportCupidLogFailure(error, itemWithAttempts, error?.cupidClientException
+            ? `${kind}_client_exception`
+            : `${kind}_send_failed`);
+    }
+    const id = getId(item);
+    if ((transient || retryableHttp) && attempts < CUPID_LOG_MAX_ATTEMPTS) {
+        const lastError = String(error?.message || error).substring(0, 200);
+        writeQueue(readQueue().map(queued => getId(queued) === id ? { ...queued, attempts, lastError } : queued));
+        console.warn(`[ChatLog] ${kind} 전송 실패(${attempts}/${CUPID_LOG_MAX_ATTEMPTS}), 큐에 남겨 다시 보냅니다:`, error?.message || error);
+        scheduleCupidLogRetry(attempts);
+        return 'retry';
+    }
+    writeQueue(readQueue().filter(queued => getId(queued) !== id));
+    reportCupidLogFailure(error, itemWithAttempts, `${kind}_queue_dropped`, {
+        reason: (transient || retryableHttp) ? 'max_attempts' : 'non_retryable',
+        maxAttempts: CUPID_LOG_MAX_ATTEMPTS,
+        firstError: item?.lastError || ''
+    });
+    return 'dropped';
+}
+
+function stripCupidLogQueueFields(item = {}) {
+    const { attempts, lastError, ...payload } = item || {};
+    return payload;
+}
+
+async function postCupidChatLogEntry(entry, options = {}) {
+    const payload = stripCupidLogQueueFields(entry);
+    return sendCupidLogRequest(API_ENDPOINT + 'chat-logs', {
+        label: 'chat-logs',
+        headers: { 'Content-Type': 'application/json', 'x-app-id': payload.appId || getCupidAppId() },
+        body: JSON.stringify(payload),
+        keepalive: options.keepalive === true,
+        keepaliveOnly: options.keepaliveOnly === true
+    });
 }
 
 function isTransientCupidChatLogError(error) {
-    const status = Number(error?.cupidStatus || 0);
-    return !status || status === 408 || status === 429 || status >= 500;
+    return isCupidLogTransientError(error);
 }
 
 async function flushCupidChatLogQueue() {
@@ -937,22 +1136,13 @@ async function flushCupidChatLogQueue() {
                 writeCupidChatLogQueue(latestQueue.filter(item => item.clientMsgId !== entry.clientMsgId));
                 sent++;
             } catch (error) {
-                if (isTransientCupidChatLogError(error)) {
-                    console.warn('[ChatLog] cupid pending queue retained:', error.message);
-                    break;
-                }
-                writeCupidChatLogQueue(queue.slice(1));
-                logCupidError(error, {
-                    source: 'flushCupidChatLogQueue',
-                    errorType: 'chat_log_queue_rejected',
-                    sessionId: entry.sessionId,
-                    context: { charId: entry.charId, role: entry.role, logContext: entry.context },
-                    extra: {
-                        contentLength: String(entry.content || '').length,
-                        contentHash: hashCupidLogText(entry.content),
-                        clientMsgId: entry.clientMsgId
-                    }
+                const outcome = handleCupidLogQueueFailure(error, entry, {
+                    kind: 'chat_log',
+                    readQueue: readCupidChatLogQueue,
+                    writeQueue: writeCupidChatLogQueue,
+                    getId: item => item?.clientMsgId
                 });
+                if (outcome === 'retry') break;
             }
         }
         return sent;
@@ -977,29 +1167,19 @@ async function persistCupidChatLogEntries(entries = [], {
         return pendingEntries;
     }
 
-    if (typeof navigator !== 'undefined' && navigator.onLine === false) return pendingEntries;
+    // 큐에 넣지 못했으면(저장 공간 부족 등) 그 사실을 남기고 바로 보냅니다.
+    reportCupidLogFailure(new Error('chat log queue write failed'), pendingEntries[0], 'chat_log_queue_write_failed', {
+        source,
+        entryCount: pendingEntries.length
+    });
     for (const entry of pendingEntries) {
         try {
             await postCupidChatLogEntry(entry);
         } catch (error) {
-            if (isTransientCupidChatLogError(error)) {
-                console.warn('[ChatLog] cupid direct save retained for retry:', error.message);
-                enqueueCupidChatLog(entry);
-                break;
-            }
-            logCupidError(error, {
-                source,
-                errorType,
-                sessionId: entry.sessionId,
-                context: {
-                    charId: entry.charId,
-                    role: entry.role,
-                    speakerId: entry.speakerId || '',
-                    logContext: entry.context,
-                    conversationDay: entry.conversationDay ?? null
-                },
-                extra: { clientMsgId: entry.clientMsgId }
-            });
+            // 큐가 없으니 다시 보낼 수 없습니다. 일시 실패여도 기록이 사라지므로 남깁니다.
+            reportCupidLogFailure(error, entry, isCupidLogTransientError(error)
+                ? 'chat_log_queue_dropped'
+                : errorType, { source, stage: 'direct' });
         }
     }
     return pendingEntries;
@@ -1051,6 +1231,8 @@ function makeCupidChatRenderAckPayload(entry, receipt = {}) {
         : (!renderedComparable
             ? 'failed'
             : (expectedComparable === renderedComparable ? 'rendered' : 'mismatch'));
+    // 화면 글과 기대 글이 같으면 같은 글을 두 번 보내지 않습니다. 서버가 renderedContent를 expectedContent로 채웁니다.
+    const renderedMatchesExpected = status === 'rendered' && expectedComparable === renderedComparable;
     return {
         appId: entry.appId || getCupidAppId(),
         userId: entry.userId,
@@ -1060,27 +1242,21 @@ function makeCupidChatRenderAckPayload(entry, receipt = {}) {
         speakerId: entry.speakerId || entry.charId,
         context: entry.context || '1:1',
         expectedContent,
-        renderedContent,
+        ...(renderedMatchesExpected ? { renderedMatchesExpected: true } : { renderedContent }),
         status,
         renderedAt: receipt.renderedAt || Date.now()
     };
 }
 
-async function postCupidChatRenderAckPayload(payload) {
-    const res = await fetch(API_ENDPOINT + 'chat-logs/render-ack', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'x-app-id': payload.appId || getCupidAppId() },
-        body: JSON.stringify(payload),
-        credentials: 'omit',
-        cache: 'no-store',
-        keepalive: true
+async function postCupidChatRenderAckPayload(payload, options = {}) {
+    const body = stripCupidLogQueueFields(payload);
+    return sendCupidLogRequest(API_ENDPOINT + 'chat-logs/render-ack', {
+        label: 'chat-logs/render-ack',
+        headers: { 'Content-Type': 'application/json', 'x-app-id': body.appId || getCupidAppId() },
+        body: JSON.stringify(body),
+        keepalive: options.keepalive === true,
+        keepaliveOnly: options.keepaliveOnly === true
     });
-    if (!res.ok) {
-        const error = new Error(`HTTP ${res.status}`);
-        error.cupidStatus = res.status;
-        throw error;
-    }
-    return res;
 }
 
 async function flushCupidChatRenderAckQueue() {
@@ -1101,18 +1277,13 @@ async function flushCupidChatRenderAckQueue() {
                 writeCupidRenderAckQueue(latestQueue.filter(item => getCupidRenderAckQueueId(item) !== queueId));
                 sent += 1;
             } catch (error) {
-                if (isTransientCupidChatLogError(error)) {
-                    console.warn('[ChatLog] cupid render acknowledgement queue retained:', error.message);
-                    break;
-                }
-                writeCupidRenderAckQueue(queue.slice(1));
-                logCupidError(error, {
-                    source: 'flushCupidChatRenderAckQueue',
-                    errorType: 'chat_render_ack_queue_rejected',
-                    sessionId: payload.sessionId,
-                    context: { charId: payload.charId, logContext: payload.context },
-                    extra: { clientMsgId: payload.clientMsgId, status: payload.status }
+                const outcome = handleCupidLogQueueFailure(error, { ...payload, role: 'assistant' }, {
+                    kind: 'chat_render_ack',
+                    readQueue: readCupidRenderAckQueue,
+                    writeQueue: writeCupidRenderAckQueue,
+                    getId: getCupidRenderAckQueueId
                 });
+                if (outcome === 'retry') break;
             }
         }
         return sent;
@@ -1129,25 +1300,38 @@ async function postCupidChatRenderAck(entry, receipt = {}) {
         await flushCupidChatRenderAckQueue();
         return true;
     }
-    if (typeof navigator !== 'undefined' && navigator.onLine === false) return false;
     try {
         await postCupidChatRenderAckPayload(payload);
         return true;
     } catch (error) {
         console.warn('[ChatLog] cupid render acknowledgement could not be persisted:', error?.message || error);
-        logCupidError(error, {
-            source: 'postCupidChatRenderAck',
-            errorType: 'chat_render_ack_save_failed',
-            sessionId: entry.sessionId,
-            context: {
-                charId: entry.charId,
-                logContext: entry.context,
-                conversationDay: entry.conversationDay ?? null
-            },
-            extra: { clientMsgId: entry.clientMsgId }
-        });
+        reportCupidLogFailure(error, { ...entry, attempts: 1 }, isCupidLogTransientError(error)
+            ? 'chat_render_ack_queue_dropped'
+            : 'chat_render_ack_send_failed', { stage: 'direct' });
         return false;
     }
+}
+
+// 페이지를 떠날 때만 keepalive로 남은 대화 로그와 표시 영수증을 보냅니다. 한도를 넘는 항목은
+// 큐에 그대로 두고 다음 방문 때 일반 요청으로 보냅니다. 응답을 받은 항목만 큐에서 뺍니다.
+function sendCupidPendingLogsOnPageHide() {
+    if (typeof navigator !== 'undefined' && navigator.onLine === false) return 0;
+    if (!getCupidKeepaliveBudget()) return 0;
+    let started = 0;
+    const sendItem = (item, post, readQueue, writeQueue, getId) => {
+        const id = getId(item);
+        post(item, { keepalive: true, keepaliveOnly: true })
+            .then(() => writeQueue(readQueue().filter(queued => getId(queued) !== id)))
+            .catch(() => { /* 큐에 남겨 다음 방문 때 보냅니다. */ });
+        started += 1;
+    };
+    for (const entry of readCupidChatLogQueue().slice(0, 12)) {
+        sendItem(entry, postCupidChatLogEntry, readCupidChatLogQueue, writeCupidChatLogQueue, item => item?.clientMsgId);
+    }
+    for (const payload of readCupidRenderAckQueue().slice(0, 12)) {
+        sendItem(payload, postCupidChatRenderAckPayload, readCupidRenderAckQueue, writeCupidRenderAckQueue, getCupidRenderAckQueueId);
+    }
+    return started;
 }
 
 // user/assistant 메시지 한 페어를 D1에 저장. 전송 실패 시 오프라인 큐에서 복구한다.
@@ -1164,7 +1348,12 @@ async function saveCupidChatLog({
     affinityCurrent = null,
     responseMetadata = null
 }) {
-    if (!charId) return;
+    if (!charId) {
+        reportCupidLogFailure(new Error('chat log skipped: missing charId'), { sessionId, context, content: userContent }, 'chat_log_skipped', {
+            reason: 'missing_char_id'
+        });
+        return;
+    }
     const shared = {
         userId: getCupidDeviceId(),
         charId,
@@ -1194,6 +1383,11 @@ async function saveCupidChatLog({
             affinityCorrectionIds: window.CupidAffinityCorrections?.ids(charId) || []
         });
         entries.push(assistantEntry);
+    } else {
+        reportCupidLogFailure(new Error('chat log skipped: empty assistant content'), { ...shared, role: 'assistant' }, 'chat_log_skipped', {
+            reason: 'empty_assistant_content',
+            receiptStatus: assistantRenderReceipt?.status || ''
+        });
     }
 
     const renderAckQueued = Boolean(assistantEntry && assistantRenderReceipt)
@@ -1218,7 +1412,15 @@ async function saveCupidGroupChatLog({
     responseMetadata = null
 }) {
     const participantIds = participants.map(item => String(item?.id || item || '')).filter(Boolean);
-    if (participantIds.length < 2) return;
+    if (participantIds.length < 2) {
+        reportCupidLogFailure(new Error('group chat log skipped: fewer than two participants'), {
+            charId: 'group',
+            sessionId,
+            context: 'group',
+            content: userContent
+        }, 'chat_log_skipped', { reason: 'missing_group_participants', participantCount: participantIds.length });
+        return;
+    }
     const groupJoinIndices = Object.fromEntries(participantIds.map((id, index) => [id, index]));
     const shared = {
         userId: getCupidDeviceId(),
@@ -1351,19 +1553,17 @@ function logCupidError(error, options = {}) {
 
         const body = JSON.stringify(payload);
         const endpoint = API_ENDPOINT + 'error-logs';
-        if (typeof navigator !== 'undefined' && navigator.sendBeacon && typeof Blob !== 'undefined') {
-            try {
-                // sendBeacon은 자격 증명을 포함해 보내므로 application/json이면 사전 요청에서 막혀 보고가 사라집니다. text/plain은 사전 요청 없이 바로 전달됩니다.
-                const sent = navigator.sendBeacon(endpoint, new Blob([body], { type: 'text/plain;charset=UTF-8' }));
-                if (sent) return true;
-            } catch (_) {}
-        }
-        fetch(endpoint, {
+        // error-reporter.js가 없을 때만 쓰는 예비 경로입니다. keepalive·sendBeacon은 한도가 차면 거절되므로
+        // 일반 요청으로 보냅니다. text/plain이면 사전 요청 없이 바로 전달됩니다.
+        fetchCupidLogOnce(endpoint, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
             body,
-            keepalive: true
-        }).catch(err => console.warn('[ErrorLog] cupid 저장 실패:', err.message));
+            credentials: 'omit',
+            cache: 'no-store'
+        }).then(result => {
+            if (!result.ok) console.warn('[ErrorLog] cupid 저장 실패: HTTP', result.status);
+        }).catch(err => console.warn('[ErrorLog] cupid 저장 실패:', err?.message || err));
         return true;
     } catch (e) {
         console.warn('[ErrorLog] cupid logCupidError 오류:', e.message);
@@ -1466,6 +1666,10 @@ window.saveCupidChatLog = saveCupidChatLog;
 window.saveCupidGroupChatLog = saveCupidGroupChatLog;
 window.flushCupidChatLogQueue = flushCupidChatLogQueue;
 window.flushCupidChatRenderAckQueue = flushCupidChatRenderAckQueue;
+window.sendCupidLogRequest = sendCupidLogRequest;
+window.isCupidLogTransientError = isCupidLogTransientError;
+window.isCupidLogRetryableHttpStatus = isCupidLogRetryableHttpStatus;
+window.CUPID_LOG_MAX_ATTEMPTS = CUPID_LOG_MAX_ATTEMPTS;
 window.logCupidError = logCupidError;
 window.reportCupidCaughtError = reportCupidCaughtError;
 window.hashCupidLogText = hashCupidLogText;
@@ -1477,7 +1681,7 @@ function _cupidMigrateOnLoad() {
     setTimeout(() => {
         Promise.resolve(flushCupidChatLogQueue())
             .then(() => flushCupidChatRenderAckQueue())
-            .catch(() => {});
+            .catch(error => reportCupidLogFailure(error, {}, 'chat_log_client_exception', { stage: 'load_flush' }));
     }, 1000);
     setTimeout(() => {
         try {
@@ -1489,11 +1693,21 @@ function _cupidFlushChatLogsOnOnline() {
     try {
         Promise.resolve(flushCupidChatLogQueue())
             .then(() => flushCupidChatRenderAckQueue())
-            .catch(() => {});
-    } catch (_) {}
+            .catch(error => reportCupidLogFailure(error, {}, 'chat_log_client_exception', { stage: 'online_flush' }));
+    } catch (error) {
+        reportCupidLogFailure(error, {}, 'chat_log_client_exception', { stage: 'online_flush' });
+    }
+}
+function _cupidSendChatLogsOnPageHide() {
+    try {
+        sendCupidPendingLogsOnPageHide();
+    } catch (error) {
+        reportCupidLogFailure(error, {}, 'chat_log_client_exception', { stage: 'pagehide' });
+    }
 }
 if (typeof window !== 'undefined') {
     window.addEventListener('online', _cupidFlushChatLogsOnOnline);
+    window.addEventListener('pagehide', _cupidSendChatLogsOnPageHide);
     if (document.readyState === 'complete') {
         _cupidMigrateOnLoad();
     } else {

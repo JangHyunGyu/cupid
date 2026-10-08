@@ -54,7 +54,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-    const version = '2.9.301';
+    const version = '2.9.302';
     const LOAD_RETRIES = 3;
 
     // =========================================================================
@@ -706,25 +706,26 @@
         return 'app';
     }
 
+    // error-reporter.js가 없을 때만 쓰는 예비 경로입니다. keepalive·sendBeacon은 진행 중인 본문이 64KB를 넘으면
+    // 네트워크가 멀쩡해도 거절되므로 일반 요청으로 보냅니다. text/plain이면 사전 요청 없이 바로 전달됩니다.
     function _postErrorPayload(payload) {
         try {
             var body = JSON.stringify(payload);
-            if (typeof navigator !== 'undefined' && navigator.sendBeacon) {
-                try {
-                    // sendBeacon은 자격 증명을 포함해 보내므로 application/json이면 사전 요청에서 막혀 보고가 사라집니다. text/plain은 사전 요청 없이 바로 전달됩니다.
-                    var beaconBody = typeof Blob !== 'undefined' ? new Blob([body], { type: 'text/plain;charset=UTF-8' }) : body;
-                    var sent = navigator.sendBeacon(ERROR_ENDPOINT, beaconBody);
-                    if (sent) return true;
-                } catch (_) {}
-            }
             if (typeof fetch === 'function') {
                 fetch(ERROR_ENDPOINT, {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
+                    headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
                     body: body,
-                    keepalive: true
-                }).catch(function() {});
+                    credentials: 'omit',
+                    cache: 'no-store'
+                }).then(function(response) { return response.text(); }).catch(function() {});
                 return true;
+            }
+            if (typeof navigator !== 'undefined' && navigator.sendBeacon) {
+                try {
+                    var beaconBody = typeof Blob !== 'undefined' ? new Blob([body], { type: 'text/plain;charset=UTF-8' }) : body;
+                    return navigator.sendBeacon(ERROR_ENDPOINT, beaconBody);
+                } catch (_) {}
             }
         } catch (_) {}
         return false;

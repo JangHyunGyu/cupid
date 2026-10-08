@@ -1688,6 +1688,8 @@ class FreeTalkSystem {
                         cacheKey: _cacheKey,
                         stream: wantsStream,
                         responsePresentation: 'ellipsis',
+                        // 서버가 답변 뒤 chat_logs 도착을 확인할 때 씁니다(user_id + request_id).
+                        ...(typeof window.getCupidDeviceId === 'function' ? { userId: window.getCupidDeviceId() } : {}),
                         ...(_turnMeta || {})
                     })
                 });
@@ -1874,8 +1876,16 @@ class FreeTalkSystem {
                             responseMetadata: data
                         }))
                         .catch(logError => {
-                        console.warn('[Cupid FreeTalk] Could not persist chat log asynchronously', logError);
-                    });
+                            console.warn('[Cupid FreeTalk] Could not persist chat log asynchronously', logError);
+                            window.logCupidError?.(logError, {
+                                source: 'FreeTalkSystem.saveCupidChatLog',
+                                errorType: 'chat_log_client_exception',
+                                errorClass: 'client',
+                                sessionId: requestSceneId || '',
+                                context: { charId: charKey, logContext: '1:1' },
+                                extra: { turnId: requestContext?.turnMeta?.turnId || '' }
+                            });
+                        });
                 }
             }
 
@@ -2362,7 +2372,9 @@ class FreeTalkSystem {
                     outputLanguage: lang,
                     cacheKey: lastCacheKey,
                     stream: wantsStream,
-                        responsePresentation: 'ellipsis',
+                    responsePresentation: 'ellipsis',
+                    // 서버가 답변 뒤 chat_logs 도착을 확인할 때 씁니다(user_id + request_id).
+                    ...(typeof window.getCupidDeviceId === 'function' ? { userId: window.getCupidDeviceId() } : {}),
                     ...(lastTurnMeta || {})
                 })
             });
@@ -2474,7 +2486,17 @@ class FreeTalkSystem {
                         conversationDay,
                         responseMetadata: data
                     }))
-                    .catch(logError => console.warn('[Cupid Group FreeTalk] Could not persist chat log asynchronously', logError));
+                    .catch(logError => {
+                        console.warn('[Cupid Group FreeTalk] Could not persist chat log asynchronously', logError);
+                        window.logCupidError?.(logError, {
+                            source: 'FreeTalkSystem.saveCupidGroupChatLog',
+                            errorType: 'chat_log_client_exception',
+                            errorClass: 'client',
+                            sessionId: requestSceneId || '',
+                            context: { charId: 'group', logContext: 'group' },
+                            extra: { turnId: requestContext?.turnMeta?.turnId || '' }
+                        });
+                    });
             }
 
             if (this.freeTalkTurns >= this.currentMaxTurns) {

@@ -16,9 +16,16 @@ function harness(storage = new Map(), post = null) {
         setTimeout: () => 1, fetch: async (url, options) => {
             const body = JSON.parse(options.body); requests.push(body);
             if (post) return post(body);
-            return { ok: true, json: async () => ({ ok: true, eventIds: body.events.map(event => event.eventId) }) };
+            return new Response(JSON.stringify({ ok: true, eventIds: body.events.map(event => event.eventId) }), { status: 200 });
         } };
     vm.createContext(context);
+    // 실제 전송 코드(config.js의 공통 전송 구간)를 그대로 불러 RouteTelemetry가 쓰게 합니다.
+    const configSource = fs.readFileSync(path.join(root, 'assets/js/modules/config.js'), 'utf8');
+    const transport = configSource.slice(configSource.indexOf('// CUPID_LOG_TRANSPORT_START'), configSource.indexOf('// CUPID_LOG_TRANSPORT_END'));
+    vm.runInContext(`${transport}
+window.sendCupidLogRequest = sendCupidLogRequest;
+window.isCupidLogTransientError = isCupidLogTransientError;
+window.isCupidLogRetryableHttpStatus = isCupidLogRetryableHttpStatus;`, context);
     for (const file of ['StateManager', 'SceneRenderer', 'RouteTelemetry']) vm.runInContext(fs.readFileSync(path.join(root, 'assets/js/modules', file + '.js'), 'utf8'), context);
     for (const file of fs.readdirSync(path.join(root, 'assets/js/scenario')).filter(file => /^day[45].*\.js$/.test(file))) vm.runInContext(fs.readFileSync(path.join(root, 'assets/js/scenario', file), 'utf8'), context);
     const state = new window.StateManager();
@@ -169,7 +176,7 @@ test('distance and deferred invitation decisions remain distinct in monitoring',
 });
 
 test('failed transmission survives reload with the same event IDs; acknowledgements clear it', async () => {
-    const h = harness(new Map(), async () => { throw new Error('offline'); });
+    const h = harness(new Map(), async () => { throw new TypeError('Failed to fetch'); });
     h.telemetry.entered(h.state, 'day4_night_start', h.scenes.day4_night_start);
     await h.telemetry.flush();
     const original = h.requests[0].events[0];
@@ -275,7 +282,7 @@ test('a failing or hanging crossing marker never throws, blocks, or loses the ev
 });
 
 test('an unsent crossing marker is retried with the same event ID after a reload', async () => {
-    const h = harness(new Map(), async () => { throw new Error('offline'); });
+    const h = harness(new Map(), async () => { throw new TypeError('Failed to fetch'); });
     h.telemetry.crossing('departed', h.state, 'nurse_perfect_pills_black_4');
     await h.telemetry.flush();
     const original = h.requests[h.requests.length - 1].events[0];
@@ -315,4 +322,47 @@ test('the departure marker fires when the crossing starts, and the arrival marke
     const loader = fs.readFileSync(path.join(root, 'assets/js/loaders/game-loader.js'), 'utf8');
     assert.match(loader, /if \(arrival\) \{\s*try \{ if \(window\.CupidRouteTelemetry\) window\.CupidRouteTelemetry\.crossing\('arrived'\); \}/);
     assert.match(loader, /const arrival = window\.CrossWorld\.takeArrival\('cupid'\);/);
+});
+
+test('HTTP 500 is reported on the first failure and the batch is dropped and reported after six attempts', async () => {
+    const h = harness(new Map(), async () => new Response('{"error":"boom"}', { status: 500 }));
+    const reports = [];
+    h.window.logCupidError = (error, options) => { reports.push({ message: error.message, ...options }); };
+    h.telemetry.entered(h.state, 'day4_night_start', h.scenes.day4_night_start);
+    await h.telemetry.flush();
+    assert.deepEqual(reports.map(report => report.errorType), ['route_events_send_failed']);
+    assert.equal(reports[0].extra.httpStatus, 500);
+    assert.match(reports[0].message, /cupid-route-events HTTP 500/);
+    for (let attempt = 2; attempt <= 5; attempt++) await h.telemetry.flush();
+    assert.equal(reports.length, 1, 'retries 2-5 are not reported again');
+    assert.equal(JSON.parse(h.storage.get('cupid_pending_route_events_v1'))[0].attempts, 5);
+    await h.telemetry.flush();
+    assert.equal(h.requests.length, 6);
+    assert.deepEqual(reports.map(report => report.errorType), ['route_events_send_failed', 'route_events_queue_dropped']);
+    assert.equal(reports[1].extra.reason, 'max_attempts');
+    assert.equal(reports[1].extra.attempts, 6);
+    assert.equal(JSON.parse(h.storage.get('cupid_pending_route_events_v1')).length, 0);
+    await h.telemetry.flush();
+    assert.equal(h.requests.length, 6, 'a dropped batch is not sent again');
+});
+
+test('a non-network rejection is reported at once instead of being retried silently', async () => {
+    const h = harness(new Map(), async () => { const error = new Error('blocked by client'); error.name = 'SecurityError'; throw error; });
+    const reports = [];
+    h.window.logCupidError = (error, options) => { reports.push({ message: error.message, ...options }); };
+    h.telemetry.entered(h.state, 'day4_night_start', h.scenes.day4_night_start);
+    await h.telemetry.flush();
+    assert.deepEqual(reports.map(report => report.errorType), ['route_events_send_failed', 'route_events_queue_dropped']);
+    assert.equal(reports[1].extra.reason, 'non_retryable');
+});
+
+test('a network TypeError stays queued without a report until the sixth attempt', async () => {
+    const h = harness(new Map(), async () => { throw new TypeError('Failed to fetch'); });
+    const reports = [];
+    h.window.logCupidError = (error, options) => { reports.push(options.errorType); };
+    h.telemetry.entered(h.state, 'day4_night_start', h.scenes.day4_night_start);
+    for (let attempt = 1; attempt <= 5; attempt++) await h.telemetry.flush();
+    assert.deepEqual(reports, []);
+    await h.telemetry.flush();
+    assert.deepEqual(reports, ['route_events_queue_dropped']);
 });

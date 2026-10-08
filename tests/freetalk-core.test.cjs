@@ -1299,7 +1299,9 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
     assert.match(config, /conversationDay/);
     assert.match(config, /groupConversationMemories/);
     assert.match(config, /local-recovery/);
-    assert.match(config, /pending queue retained/);
+    // 네트워크 실패는 큐에 남겨 다시 보내되, 같은 항목은 6번까지만 보내고 *_queue_dropped로 보고합니다.
+    assert.match(config, /const CUPID_LOG_MAX_ATTEMPTS = 6;/);
+    assert.match(config, /\$\{kind\}_queue_dropped/);
     assert.doesNotMatch(config, /errorType: 'chat_log_queue_transient_failure'/);
     assert.doesNotMatch(config, /group_chat_log_direct_transient_failure/);
     assert.match(freeTalk, /Promise\.resolve\(\)\.then\(\(\) => window\.saveCupidGroupChatLog\(\{/);

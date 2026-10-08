@@ -1157,6 +1157,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                         cacheKey: _gftCacheKey,
                         stream: wantsStream,
                         responsePresentation: 'ellipsis',
+                        // 서버가 답변 뒤 chat_logs 도착을 확인할 때 씁니다(user_id + request_id).
+                        ...(typeof window.getCupidDeviceId === 'function' ? { userId: window.getCupidDeviceId() } : {}),
                         ...(_turnMeta || {})
                     })
                 });
@@ -1305,7 +1307,17 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                         assistantRenderReceipt,
                         responseMetadata: data
                     }))
-                    .catch(logError => console.warn('[Cupid GalleryFreeTalk] Could not persist chat log asynchronously', logError));
+                    .catch(logError => {
+                        console.warn('[Cupid GalleryFreeTalk] Could not persist chat log asynchronously', logError);
+                        window.logCupidError?.(logError, {
+                            source: 'GalleryFreeTalk.saveCupidChatLog',
+                            errorType: 'chat_log_client_exception',
+                            errorClass: 'client',
+                            sessionId: 'gallery-freetalk',
+                            context: { charId: requestCharKey, logContext: '1:1' },
+                            extra: { turnId: requestContext?.turnMeta?.turnId || '' }
+                        });
+                    });
             }
 
         } catch (err) {
