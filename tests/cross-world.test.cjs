@@ -63,3 +63,82 @@ test('consecutive lab dialogue keeps one reveal and never filters the dialogue c
   assert.equal(nodes.get('game-container').classList.values.size,0);
   engine._applyLabGlitch({}); assert.equal(layer.classList.values.size,0);
 });
+
+function engineWithTimers() {
+  const pending = new Map();
+  let seq = 1;
+  const env = {
+    window: {},
+    setTimeout(fn, ms) { const id = seq++; pending.set(id, { fn, ms: Number(ms) || 0 }); return id; },
+    clearTimeout(id) { pending.delete(id); }
+  };
+  vm.createContext(env);
+  vm.runInContext(fs.readFileSync(path.join(__dirname, '../assets/js/modules/GameEngine.js'), 'utf8'), env);
+  const engine = Object.create(env.window.GameEngine.prototype);
+  engine.sceneRenderer = { currentSceneId: 'ending_cg' };
+  return {
+    engine,
+    pending,
+    fire(ms) {
+      for (const [id, item] of [...pending.entries()]) {
+        item.ms -= ms;
+        if (item.ms <= 0) { pending.delete(id); item.fn(); }
+      }
+    }
+  };
+}
+
+test('an ending illustration keeps the full four-second lock and a stale timer cannot open the next scene', () => {
+  const { engine, pending, fire } = engineWithTimers();
+  engine._armCgLock('ending_cg', 900);
+  engine._armCgLock('ending_cg', 4000);
+  assert.equal(pending.size, 1);
+  fire(900);
+  assert.equal(engine._cgLocked, true);
+  fire(3100);
+  assert.equal(engine._cgLocked, false);
+
+  engine.sceneRenderer.currentSceneId = 'nurse_perfect_pills_1';
+  engine._armCgLock('nurse_perfect_pills_1', 1800);
+  engine.sceneRenderer.currentSceneId = 'after';
+  fire(1800);
+  assert.equal(engine._cgLocked, true);
+  engine._clearCgLock();
+  assert.equal(engine._cgLocked, false);
+  fire(5000);
+  assert.equal(engine._cgLocked, false);
+  assert.equal(pending.size, 0);
+});
+
+test('a gate arrival still hitches the school gate after the query is removed', () => {
+  const nodes = new Map();
+  const node = () => ({ classList: { values: new Set(), add(...v) { v.forEach(x => this.values.add(x)); }, remove(...v) { v.forEach(x => this.values.delete(x)); } }, dataset: {} });
+  nodes.set('background-layer', node());
+  const env = {
+    window: { __cupidArrivedFromGate: true, matchMedia: () => ({ matches: false }) },
+    document: { getElementById: id => nodes.get(id) || null, createElement: () => ({}), head: { appendChild() {} } },
+    location: { search: '' },
+    setTimeout, clearTimeout
+  };
+  vm.createContext(env);
+  vm.runInContext(fs.readFileSync(path.join(__dirname, '../assets/js/modules/GameEngine.js'), 'utf8'), env);
+  const engine = Object.create(env.window.GameEngine.prototype);
+  let sounds = 0;
+  engine._crackleAndBuzz = () => sounds++;
+  engine._releaseGateVeil = () => { engine.released = true; };
+  engine._applyCrossHitch('start');
+  assert.equal(env.window.__cupidArrivedFromGate, false);
+  assert.equal(engine.released, true);
+  assert.equal(sounds, 1);
+  assert.ok(nodes.get('background-layer').classList.values.has('lab-flicker'));
+  engine._applyCrossHitch('start');
+  assert.equal(sounds, 1);
+});
+
+test('the arrival overlay arms the gate hitch only for a new game', () => {
+  const loader = fs.readFileSync(path.join(__dirname, '../assets/js/loaders/game-loader.js'), 'utf8');
+  assert.match(loader, /onNew:\s*function \(\) \{\s*window\.__cupidArrivedFromGate = true;/);
+  assert.match(loader, /onContinue:\s*function \(\) \{\s*window\.__cupidArrivedFromGate = false;/);
+  assert.match(loader, /onTitle:\s*function \(\) \{\s*window\.__cupidArrivedFromGate = false;/);
+  assert.equal(loader.includes('?.'), false);
+});

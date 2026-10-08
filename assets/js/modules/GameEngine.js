@@ -146,6 +146,7 @@ class GameEngine {
 
         /** 엔딩 CG 감상 잠금 플래그 (CG 씬에서 N초간 클릭 무시) */
         this._cgLocked = false;
+        this._endingLockTimer = null;
 
         // ════════════════════════════════════════════════════════════════
         // 📌 이벤트 핸들러 연결 및 전역 함수 등록
@@ -390,6 +391,23 @@ class GameEngine {
         if (!sceneId) return false;
         return /^(perfect_|good_|bitter_|confess_fail_|harem_|hidden_|ending_|day5_ending_|day5_credits|nurse_perfect_pills_)/.test(sceneId)
             || sceneId.includes('_epilogue_') || sceneId.includes('epilogue_');
+    }
+
+    _clearCgLock() {
+        clearTimeout(this._endingLockTimer);
+        this._endingLockTimer = null;
+        this._cgLocked = false;
+    }
+
+    // One timer per scene. A later, longer hold must replace the shorter one,
+    // and a timer from the scene we already left must not unlock the next scene.
+    _armCgLock(sceneId, holdMs) {
+        this._clearCgLock();
+        this._cgLocked = true;
+        this._endingLockTimer = setTimeout(() => {
+            this._endingLockTimer = null;
+            if (this.sceneRenderer?.currentSceneId === sceneId) this._cgLocked = false;
+        }, holdMs);
     }
 
     /** 대화창 클릭 처리 */
@@ -1139,10 +1157,10 @@ class GameEngine {
         this._applyLabGlitch(scene);
         this._applyCrossHitch(sceneId);
         if (this._isEndingScene(sceneId)) {
-            this._cgLocked = true;
-            clearTimeout(this._endingLockTimer);
             const hold = (scene.background && (String(scene.background).includes('nurse_bedroom_pills') || String(scene.background).includes('riin_lab_pills'))) ? 1800 : 900;
-            this._endingLockTimer = setTimeout(() => { this._cgLocked = false; }, hold);
+            this._armCgLock(sceneId, hold);
+        } else {
+            this._clearCgLock();
         }
         const bgPromise = scene.background
             ? this.sceneRenderer.setBackground(scene.background)
@@ -1245,10 +1263,10 @@ class GameEngine {
         // 비동기 로딩 완료 → 렌더링 락 해제 (이제 클릭 가능)
         this._isRendering = false;
 
-        // 엔딩 CG 씬이면 4초간 클릭 잠금 (CG 감상 시간 보장)
+        // 엔딩 CG 씬이면 4초간 클릭 잠금 (CG 감상 시간 보장).
+        // 위에서 건 짧은 잠금을 교체해야 0.9초 뒤에 감상 잠금이 풀리지 않는다.
         if (scene.background && scene.background.includes('ending_') && !scene.choices) {
-            this._cgLocked = true;
-            setTimeout(() => { this._cgLocked = false; }, 4000);
+            this._armCgLock(sceneId, 4000);
         }
 
         // ─────────────────────────────────────────────────────────
@@ -1634,8 +1652,15 @@ class GameEngine {
     }
 
     _applyCrossHitch(sceneId) {
-        const fromGate = /(?:^|[?&])gate=1(?:&|$)/.test(location.search);
-        if (fromGate && sceneId === 'start') this._releaseGateVeil();
+        let search = '';
+        try { search = location.search || ''; } catch (_) { search = ''; }
+        // takeArrival removes ?gate=1 before the first scene, so the arrival
+        // overlay records the handoff on window until this scene consumes it.
+        const fromGate = window.__cupidArrivedFromGate === true || /(?:^|[?&])gate=1(?:&|$)/.test(search);
+        if (fromGate && sceneId === 'start') {
+            window.__cupidArrivedFromGate = false;
+            this._releaseGateVeil();
+        }
         const hitch = sceneId === 'start_again'
             || (sceneId === 'start' && fromGate)
             || (sceneId === 'morning2_yuna_seen' && this._hasPlayedNevergrad());
@@ -1838,6 +1863,8 @@ class GameEngine {
         if (requireSave && !saveData) throw new Error('No saved progress is available for conflict recovery');
 
         if (saveData) {
+            // 이어하기는 교문 진입이 아니므로 도착 연출을 남기지 않는다.
+            window.__cupidArrivedFromGate = false;
             // ═══════════════════════════════════════════════════
             // 📌 저장 데이터가 있는 경우: 상태 복원
             // ═══════════════════════════════════════════════════

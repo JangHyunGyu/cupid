@@ -54,7 +54,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-    const version = '2.9.305';
+    const version = '2.9.306';
     const LOAD_RETRIES = 3;
 
     // =========================================================================
@@ -468,9 +468,19 @@
                 world: 'cupid', lang: window.GAME_LANG || document.documentElement.lang || 'ko',
                 image: 'assets/images/background/gate_bloom.jpg',
                 hasSave: Boolean(window.hasSavedGame && window.hasSavedGame()),
-                onContinue: () => window.continueGame && window.continueGame(),
-                onNew: () => window.startGame && window.startGame(),
-                onTitle: () => { var start = document.getElementById('start-btn'); if (start) start.focus(); }
+                onContinue: function () {
+                    window.__cupidArrivedFromGate = false;
+                    if (window.continueGame) return window.continueGame();
+                },
+                onNew: function () {
+                    window.__cupidArrivedFromGate = true;
+                    if (window.startGame) return window.startGame();
+                },
+                onTitle: function () {
+                    window.__cupidArrivedFromGate = false;
+                    var start = document.getElementById('start-btn');
+                    if (start) start.focus();
+                }
             });
         }
     }
