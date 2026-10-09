@@ -232,7 +232,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     scripts.forEach(function (src) {
         const historyRevision = src === 'modules/config.js' || src === 'gallery-freetalk.js' ? '&history=20260924b'
-            : (src === 'gallery-progress.js' || src === 'gallery-ui-cg.js' || src === 'media-gate.js' ? '&guard=20260926-gallery-slot' : '');
+            : (src === 'gallery-progress.js' || src === 'gallery-ui-cg.js' || src === 'media-gate.js' ? '&guard=20260926-gallery-slot'
+            : (src === 'gallery-tips-data.js' || src === 'gallery-data.js' ? '&history=20261009-ko-voice' : ''));
         document.write('<script src="' + basePath + src + '?v=' + version + historyRevision + '" onerror="window.__cupidShowGalleryLoadError && window.__cupidShowGalleryLoadError()"><\/script>');
     });
 })();

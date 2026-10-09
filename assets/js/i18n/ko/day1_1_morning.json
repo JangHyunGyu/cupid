@@ -13,7 +13,7 @@
     },
     "name_input_scene": {
         "name": "시스템",
-        "text": "전학생, 당신의 이름은?"
+        "text": "전학생, 이름이 뭐야?"
     },
     "gate_1": {
         "name": "{name}",
@@ -41,7 +41,7 @@
     },
     "seoyeon_meet_6": {
         "name": "{name}",
-        "text": "학생회장이 직접? 과분한데."
+        "text": "학생회장이 직접? 부담되는데."
     },
     "seoyeon_meet_7": {
         "name": "서연",

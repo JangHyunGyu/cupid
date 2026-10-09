@@ -15,7 +15,7 @@
     "morning2_greet_seo_1": {},
     "morning2_greet_seo_1_roof": {
         "name": "서연",
-        "text": "어제 옥상에서 한 말, 아직 유효한 거지?"
+        "text": "어제 옥상에서 한 말, 아직 그대로지?"
     },
     "morning2_greet_seo_1_gate": {
         "name": "서연",
@@ -32,7 +32,7 @@
     "morning2_greet_dain_1": {},
     "morning2_greet_dain_2": {
         "name": "다인",
-        "text": "아직 덜 깼어? 이쪽 봐. 아침 인사를 등 보고 하긴 싫은데. *뒤에서 어깨를 탁 친다.*"
+        "text": "아직 덜 깼어? 이쪽 봐. 등 보고 아침 인사하긴 싫거든. *뒤에서 어깨를 탁 친다.*"
     },
     "morning2_greet_dain_others": {
         "name": "{name}",
@@ -367,7 +367,7 @@
     },
     "morning2_end": {
         "name": "{name}",
-        "text": "*민수 말로는 1년 동안 먼저 인사한 적도 없다던 서연이 오늘은 내 교실 앞까지 왔다.*"
+        "text": "*민수 말로는 1년을 다녀도 눈도 안 마주친다던 서연이 오늘은 내 교실 앞까지 왔다.*"
     },
     "hidden_homeroom_d2_choice1_trap": {
         "name": "담임선생님",

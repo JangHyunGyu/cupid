@@ -176,7 +176,7 @@ class GalleryData {
                 name: '보건선생님',
                 title: '도움을 연결하는 보건교사',
                 shortDescription: '증상과 기록을 확인하고 필요한 어른에게 연결하는 보건교사.',
-                description: '농담보다 먼저 상태와 예약 시간을 확인하는 보건교사. 보건실, 위클래스, 보호자와 담당 교사를 잇는 방법을 구체적으로 알려 준다. 상담이 끝나면 기록을 정식으로 종결하고 졸업생을 자기 생활로 돌려보낸다.',
+                description: '농담보다 먼저 상태와 예약 시간을 확인하는 보건교사. 보건실, 위클래스, 보호자와 담당 교사를 잇는 방법을 구체적으로 알려 준다. 상담이 끝나면 기록을 정식으로 종결하고 졸업생을 각자 일상으로 돌려보낸다.',
                 age: '26세',
                 birthday: '9월 12일',
                 height: '168cm',
@@ -1185,13 +1185,13 @@ class GalleryData {
             { id: 'event_temptation_yuna', name: '숨을 곳 없는 거리', character: '유나', description: '낡은 도서관 은신처에서 유나가 책장에 손을 짚고, 물러서지 않은 채 대답을 기다린 순간', file: 'assets/images/background/event_temptation_yuna.png', thumbnail: 'assets/images/background/event_temptation_yuna.png',
                 unlockHint: "4일차에 라이벌 유나의 제안을 받아들이기"
             },
-            { id: 'event_temptation_dain', name: '불 꺼진 체육관', character: '다인', description: '훈련이 끝난 어두운 체육관에서 다인이 공을 내린 채 한 걸음 다가온 순간', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
+            { id: 'event_temptation_dain', name: '불 꺼진 체육관', character: '다인', description: '훈련이 끝난 어두운 체육관에서 다인이 공을 낮춘 채 한 걸음 다가온 순간', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
                 unlockHint: "4일차에 라이벌 다인의 제안을 받아들이기"
             },
             { id: 'ending_bittersweet_teacher', name: '돌아온 편지', character: '담임선생님', description: '졸업식 뒤 빈 교실, 담임이 추천서와 편지를 책상 위에 돌려놓고 작별을 택한 순간', file: 'assets/images/background/ending_bittersweet_teacher.png', thumbnail: 'assets/images/background/ending_bittersweet_teacher.png',
                 unlockHint: "담임 Bittersweet 엔딩 도달"
             },
-            { id: 'ending_bittersweet_nurse', name: '상담 종료', character: '보건선생님', description: '상담 기록과 연락처 쪽지가 책상 위로 돌아오고, 보건실 문이 닫히기 직전 남은 마지막 인사', file: 'assets/images/background/ending_bittersweet_nurse.png', thumbnail: 'assets/images/background/ending_bittersweet_nurse.png',
+            { id: 'ending_bittersweet_nurse', name: '상담 종료', character: '보건선생님', description: '상담 기록과 연락처 쪽지가 책상 위로 돌아오고, 보건실 문이 닫히기 직전에 남은 마지막 인사', file: 'assets/images/background/ending_bittersweet_nurse.png', thumbnail: 'assets/images/background/ending_bittersweet_nurse.png',
                 unlockHint: "보건 Bittersweet 엔딩 도달"
             },
             { id: 'ending_good_teacher', name: '졸업식의 작별', character: '담임선생님', description: '졸업식 날 추천서와 합평본을 건넨 뒤, 복도 창가에서 졸업생들을 배웅하는 담임선생님', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png',

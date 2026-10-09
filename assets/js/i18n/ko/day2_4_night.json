@@ -117,7 +117,7 @@
     },
     "night2_reply_seo_react_high": {
         "name": "서연",
-        "text": "너, 꽤 재밌는 사람이야. 내일 점심 옥상에서 볼래?"
+        "text": "너, 은근 재밌네. 내일 점심 옥상에서 볼래?"
     },
     "night2_reply_seo_react_default": {
         "name": "서연",
@@ -334,7 +334,7 @@
     },
     "forced_violation_day2_nurse_excuse": {
         "name": "보건선생님",
-        "text": "*보건선생님의 목소리가 더 낮아진다.* 오해라고 부르면 달라질 것 같아? 싫다는 의사를 무시한 건 사실이야."
+        "text": "*보건선생님의 목소리가 더 낮아진다.* 오해라고 부르면 달라질 것 같아? 싫다고 했는데 무시한 거잖아."
     },
     "night2_reply_dain_1_established": {
         "name": "{name}",
