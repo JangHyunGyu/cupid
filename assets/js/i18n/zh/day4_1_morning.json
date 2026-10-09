@@ -110,7 +110,7 @@
         "text": "*周末的早晨，我在学校外的路口等着。*"
     },
     "morning4_manuscript_check": {},
-    "hidden_homeroom_d4_skip": {
+    "hidden_homeroom_d4_missed": {
         "name": "{name}",
         "text": "*正门里面某处，有一扇门关上了。与此同时，人行横道的绿灯亮了。*"
     },

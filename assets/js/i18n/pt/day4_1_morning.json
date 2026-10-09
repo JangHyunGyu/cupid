@@ -110,7 +110,7 @@
         "text": "*Manhã de fim de semana. Espero o sinal abrir no cruzamento diante da escola.*"
     },
     "morning4_manuscript_check": {},
-    "hidden_homeroom_d4_skip": {
+    "hidden_homeroom_d4_missed": {
         "name": "{name}",
         "text": "*Ouve-se uma porta se fechar do lado de dentro da entrada principal. Enquanto isso, o sinal de pedestres abre.*"
     },

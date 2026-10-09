@@ -110,7 +110,7 @@
         "text": "*주말 아침, 학교 앞 사거리에서 신호를 기다린다.*"
     },
     "morning4_manuscript_check": {},
-    "hidden_homeroom_d4_skip": {
+    "hidden_homeroom_d4_missed": {
         "name": "{name}",
         "text": "*정문 안쪽에서 문 닫히는 소리가 난다. 그사이 보행 신호가 켜진다.*"
     },

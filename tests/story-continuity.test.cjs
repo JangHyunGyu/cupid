@@ -410,3 +410,22 @@ test('persistent event memories stay dated and remember the completed public wor
     assert.doesNotMatch(get('homeroom_day4').ko, /합평에 낼/);
     assert.doesNotMatch(get('nurse_day3').ko, /예약한/);
 });
+
+test('day-4 manuscript miss shows the closed gate instead of the teacher refusal', () => {
+    const all = scenarios();
+    const miss = all.morning4_manuscript_check.branches.find(branch => !branch.condition);
+    assert.equal(miss.next, 'hidden_homeroom_d4_missed');
+    assert.equal(all.hidden_homeroom_d4_missed.background, 'assets/images/background/street.png');
+    assert.equal(all.hidden_homeroom_d4_missed.character, null);
+    assert.equal(all.hidden_homeroom_d4_missed.next, 'hidden_nurse_d4_check');
+    assert.equal(all.hidden_homeroom_d4_missed.routeBeforeRender, undefined);
+    assert.equal(all.hidden_homeroom_d4_1.affinityGuard.fallback, 'hidden_homeroom_d4_skip');
+    assert.equal(all.hidden_homeroom_d4_skip.routeBeforeRender, true);
+    assert.equal(all.hidden_homeroom_d4_skip.affinityChar, 'Teacher');
+    for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
+        const copy = JSON.parse(read(`assets/js/i18n/${lang}/day4_1_morning.json`));
+        assert.equal(copy.hidden_homeroom_d4_missed.name, '{name}');
+        assert.match(copy.hidden_homeroom_d4_missed.text, /\S/);
+        assert.equal(copy.hidden_homeroom_d4_skip, undefined);
+    }
+});

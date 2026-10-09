@@ -844,12 +844,12 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "hidden_homeroom_d4_1"
             },
             {
-                "next": "hidden_homeroom_d4_skip"
+                "next": "hidden_homeroom_d4_missed"
             }
         ]
     },
-    "hidden_homeroom_d4_skip": {
-        "background": "assets/images/background/room_my.png",
+    "hidden_homeroom_d4_missed": {
+        "background": "assets/images/background/street.png",
         "character": null,
         "next": "hidden_nurse_d4_check"
     },

@@ -110,7 +110,7 @@
         "text": "*Un matin de week-end, j'attends que le feu passe au vert au carrefour devant l'école.*"
     },
     "morning4_manuscript_check": {},
-    "hidden_homeroom_d4_skip": {
+    "hidden_homeroom_d4_missed": {
         "name": "{name}",
         "text": "*Une porte se referme derrière le portail principal. Entre-temps, le feu piéton passe au vert.*"
     },

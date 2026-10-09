@@ -16136,39 +16136,18 @@
 - 배경: `street.png`
 - 분기:
   - [`discovered_manuscript`] → `hidden_homeroom_d4_1`
-  - [기본] → `hidden_homeroom_d4_skip`
+  - [기본] → `hidden_homeroom_d4_missed`
 
 <!-- i18n -->
 
 ---
 
-### `hidden_homeroom_d4_skip`
+### `hidden_homeroom_d4_missed`
 - 배경: `street.png`
-- 호감분기: Teacher
-  - [-19 이상] → `hidden_homeroom_d4_low`
-  - [기본] → `hidden_homeroom_d4_neg`
-- 다음: `hidden_homeroom_d4_neg`
+- 다음: `hidden_nurse_d4_check`
 
 - 캐릭터: `없음`
 **{name}**: *정문 안쪽에서 문 닫히는 소리가 난다. 그사이 보행 신호가 켜진다.*
-
----
-
-### `hidden_homeroom_d4_low`
-- 배경: `street.png`
-- 다음: `hidden_nurse_d4_check`
-
-- 캐릭터: `teacher_normal.png`
-**담임선생님**: *약속 장소 앞에서 담임이 종이봉투를 품 쪽으로 당긴다.* 오늘은 원고를 보여주지 않을게. 학교에서 보자.
-
----
-
-### `hidden_homeroom_d4_neg`
-- 배경: `street.png`
-- 다음: `hidden_nurse_d4_check`
-
-- 캐릭터: `teacher_worried.png`
-**담임선생님**: *봉투를 품에 넣는다.* 원고는 없다. 가.
 
 ---
 
@@ -16815,6 +16794,35 @@
 
 - 캐릭터: `nurse_normal.png`
 **보건선생님**: *상담 기록지를 덮는다.* 오늘 적은 순서 기억하지? 막막하면 첫 번째 사람부터 찾아가.
+
+---
+
+### `hidden_homeroom_d4_skip`
+- 배경: `street.png`
+- 호감분기: Teacher
+  - [-19 이상] → `hidden_homeroom_d4_low`
+  - [기본] → `hidden_homeroom_d4_neg`
+- 다음: `hidden_homeroom_d4_neg`
+
+- 캐릭터: `없음`
+
+---
+
+### `hidden_homeroom_d4_low`
+- 배경: `street.png`
+- 다음: `hidden_nurse_d4_check`
+
+- 캐릭터: `teacher_normal.png`
+**담임선생님**: *약속 장소 앞에서 담임이 종이봉투를 품 쪽으로 당긴다.* 오늘은 원고를 보여주지 않을게. 학교에서 보자.
+
+---
+
+### `hidden_homeroom_d4_neg`
+- 배경: `street.png`
+- 다음: `hidden_nurse_d4_check`
+
+- 캐릭터: `teacher_worried.png`
+**담임선생님**: *봉투를 품에 넣는다.* 원고는 없다. 가.
 
 ---
 

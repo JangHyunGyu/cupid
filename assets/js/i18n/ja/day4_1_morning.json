@@ -110,7 +110,7 @@
         "text": "*週末の朝、学校前の交差点で信号を待つ。*"
     },
     "morning4_manuscript_check": {},
-    "hidden_homeroom_d4_skip": {
+    "hidden_homeroom_d4_missed": {
         "name": "{name}",
         "text": "*正門の内側からドアの閉まる音がする。その間に歩行者信号が青へ変わる。*"
     },
