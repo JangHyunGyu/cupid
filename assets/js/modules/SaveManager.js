@@ -164,6 +164,9 @@ class SaveManager {
         } catch (e) {
             console.warn('[SaveManager] 호감도 재조정 저장 실패:', e);
         }
+        if (downgradedCharacters.length > 0) {
+            window.CupidProgressIntegrity?.commitMigration?.(saveData);
+        }
         return { changed: true, downgradedCharacters, reroutedScene };
     }
 

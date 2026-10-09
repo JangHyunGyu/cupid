@@ -54,7 +54,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-    const version = '2.9.309';
+    const version = '2.9.310';
     const LOAD_RETRIES = 3;
 
     // =========================================================================
@@ -291,7 +291,8 @@
         var query = '?v=' + encodeURIComponent(version);
         if (src === 'modules/config.js' || src === 'modules/FreeTalkSystem.js') query += '&history=20260924';
         if (src === 'sound.js' || src === 'scenario/day5_4_night.js') query += '&history=20260926-bedline';
-        if (src === 'modules/GameEngine.js' || src === 'modules/SceneRenderer.js') query += '&history=20260926-cross';
+        if (src === 'modules/SceneRenderer.js') query += '&history=20260926-cross';
+        if (src === 'modules/GameEngine.js' || src === 'progression-integrity.js' || src === 'modules/SaveManager.js') query += '&history=20261009-rebalance';
         if (src === 'loaders/i18n-loader.js') query += '&history=20261009-d4-gate';
         if (src === 'affinity-corrections.js' || src === 'progression-integrity.js' || src === 'modules/StateManager.js' || src === 'modules/RouteTelemetry.js' || src === 'modules/SceneRenderer.js' || src === 'modules/GameEngine.js' || src === 'modules/FreeTalkSystem.js' || src === 'modules/GalleryManager.js' || src === 'gallery-progress.js' || src === 'media-gate.js') query += '&guard=20260926-gallery-slot';
         if (attempt > 0) {

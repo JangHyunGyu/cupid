@@ -1018,8 +1018,14 @@ class GameEngine {
     }
 
     async renderScene(sceneId, { restoring = false } = {}) {
-        // 렌더링 락 활성화 (비동기 로딩 중 클릭 방지)
+        // 렌더링 락 활성화 (비동기 로딩 중 클릭 방지).
+        // 중간에 예외가 나도 이 락이 남지 않게 하고, 더 새로 시작한 렌더의 락은 풀지 않는다.
+        const renderToken = (this._renderToken = (this._renderToken || 0) + 1);
         this._isRendering = true;
+        const releaseRenderLock = () => {
+            if (this._renderToken === renderToken) this._isRendering = false;
+        };
+        try {
 
         // ─────────────────────────────────────────────────────────
         // 📌 1단계: 씬 데이터 로드
@@ -1028,7 +1034,7 @@ class GameEngine {
 
         // 씬이 없으면 HTML 페이지 이동인지 확인
         if (!scene) {
-            this._isRendering = false;
+            releaseRenderLock();
             if (sceneId?.endsWith('.html')) {
                 // index.html 계열은 언어별 라우팅 적용
                 if (sceneId === 'index.html') {
@@ -1050,7 +1056,7 @@ class GameEngine {
 
             if (preRenderVisited.has(sceneId)) {
                 console.error(`[GameEngine] 사전 분기 순환 감지: ${sceneId}`);
-                this._isRendering = false;
+                releaseRenderLock();
                 return;
             }
             preRenderVisited.add(sceneId);
@@ -1059,7 +1065,7 @@ class GameEngine {
             if (guardedNext) window.CupidRouteTelemetry?.transition(this.stateManager, sceneId, scene, nextId, true);
             if (!nextId || nextId === sceneId) {
                 console.error(`[GameEngine] 사전 분기 대상이 올바르지 않음: ${sceneId}`);
-                this._isRendering = false;
+                releaseRenderLock();
                 return;
             }
 
@@ -1067,7 +1073,7 @@ class GameEngine {
             scene = await this._getSceneWithLazyContent(sceneId);
             if (!scene) {
                 console.error(`[GameEngine] 사전 분기 대상 씬을 찾을 수 없음: ${sceneId}`);
-                this._isRendering = false;
+                releaseRenderLock();
                 return;
             }
         }
@@ -1258,10 +1264,10 @@ class GameEngine {
         await Promise.all([bgPromise, charPromise]);
 
         // ⚠️ 비동기 작업 중 씬이 바뀌었으면 중단 (Race Condition 방지)
-        if (this.sceneRenderer.currentSceneId !== sceneId) { this._isRendering = false; return; }
+        if (this.sceneRenderer.currentSceneId !== sceneId) { releaseRenderLock(); return; }
 
         // 비동기 로딩 완료 → 렌더링 락 해제 (이제 클릭 가능)
-        this._isRendering = false;
+        releaseRenderLock();
 
         // 엔딩 CG 씬이면 4초간 클릭 잠금 (CG 감상 시간 보장).
         // 위에서 건 짧은 잠금을 교체해야 0.9초 뒤에 감상 잠금이 풀리지 않는다.
@@ -1620,6 +1626,9 @@ class GameEngine {
         window.CupidRouteTelemetry?.entered(this.stateManager, sceneId, scene, restoring);
         // 매 씬마다 저장하여 브라우저 종료 시에도 이어하기 가능
         this.saveGame();
+        } finally {
+            releaseRenderLock();
+        }
     }
 
     /**

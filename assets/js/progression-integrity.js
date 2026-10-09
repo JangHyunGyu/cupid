@@ -192,6 +192,22 @@
         }
         return changed;
     }
+    // 일회성 호감도 재조정은 봉인된 스냅샷과 다를 수 있다. 같은 회차의 저장을
+    // 재조정 결과로 다시 봉인해야 다음 불러오기가 예전 100점으로 되돌리지 않는다.
+    function commitMigration(saveData) {
+        const record = read();
+        const state = saveData?.gameState;
+        if (!record || !state) return false;
+        if (!state.progressionRunId || state.progressionRunId !== record.runId) return false;
+        if (Number(state.progressionRevision || 0) !== record.revision) return false;
+        record.snapshot = critical(state);
+        record.sceneId = saveData.currentSceneId;
+        record.lastBgUrl = saveData.lastBgUrl || '';
+        record.currentCharacters = saveData.currentCharacters || {};
+        delete record.pendingNextScene;
+        persist(record);
+        return true;
+    }
     let queue = Promise.resolve();
     let locksDenied = false;
     function withQueue(operation) {
@@ -220,5 +236,5 @@
             return new Promise(resolve => resolve(fallback(error)));
         }
     }
-    return Object.freeze({ start, commit, checkpoint, save, restoreState, restoreSave, withLock });
+    return Object.freeze({ start, commit, checkpoint, save, restoreState, restoreSave, commitMigration, withLock });
 });

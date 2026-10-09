@@ -853,6 +853,24 @@ test('legacy 100-point main save drops to 99, reroutes, and never downgrades twi
     expect(result.secondAffinity).toBe(100);
 });
 
+test('a failed scene render releases the click lock', async ({ page }) => {
+    await page.goto('/game.html');
+    await page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
+    const result = await page.evaluate(async () => {
+        const engine = window.gameEngine;
+        engine.sceneRenderer.setBackground = () => { throw new Error('background failed'); };
+        let message = '';
+        try {
+            await engine.renderScene('hidden_homeroom_d4_missed');
+        } catch (error) {
+            message = String(error?.message || error);
+        }
+        return { message, locked: engine._isRendering };
+    });
+    expect(result.message).toContain('background failed');
+    expect(result.locked).toBe(false);
+});
+
 test('first gallery free-talk starts at max affinity and never resets a played relationship', async ({ page }) => {
     await page.goto('/gallery.html');
     await page.waitForFunction(() => window.galleryFreeTalk?.progress && window.GalleryData && window.CupidFreeTalkCore);

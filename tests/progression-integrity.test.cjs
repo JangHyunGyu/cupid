@@ -195,3 +195,58 @@ test('errors thrown inside the locked operation and non-security lock failures a
     const broken = guardedSetup({ request: () => Promise.reject(new TypeError('locks bug')) });
     await assert.rejects(broken.state.commitProgressEvent('scene:start', () => 'start'), /locks bug/);
 });
+
+test('a sealed 100-point save stays at 99, and a later committed 100 is kept', () => {
+    const data = new Map();
+    const storage = {
+        getItem: key => data.get(key) ?? null,
+        setItem: (key, value) => data.set(key, value),
+        removeItem: key => data.delete(key)
+    };
+    const api = createIntegrity({ storage, crypto: require('node:crypto').webcrypto });
+    const state = {
+        playerName: '테스트',
+        currentDay: 5,
+        stats: { Seoyeon: { affinity: 100 } },
+        flags: { route_seoyeon: true, ending_perfect: true, isDating_Seoyeon: true },
+        progressionRunId: '',
+        progressionRevision: 0,
+        freeTalkCheckpoint: null
+    };
+    api.start(state);
+    const save = {
+        currentSceneId: 'perfect_seo_5',
+        lastBgUrl: 'assets/images/background/ending_perfect_seoyeon.png',
+        currentCharacters: { center: 'assets/images/characters/seyoun_shy.png' },
+        gameState: clone(state)
+    };
+    api.save(save);
+    storage.setItem('cupid_save', JSON.stringify(save));
+    const context = { window: { CupidStorage: storage, CupidProgressIntegrity: api }, console: { log() {}, warn() {}, error() {} } };
+    context.window.window = context.window;
+    vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../assets/js/modules/SaveManager.js'), 'utf8'), context);
+    const manager = new context.window.SaveManager();
+
+    const first = manager.load();
+    assert.equal(first.gameState.stats.Seoyeon.affinity, 99);
+    assert.equal(first.currentSceneId, 'ending_aff_check_seo');
+    assert.equal(first.gameState.flags.ending_perfect, false);
+    assert.equal(first.gameState.flags.isDating_Seoyeon, false);
+    assert.equal(first.gameState.affinityRebalanceVersion, 1);
+    const second = manager.load();
+    assert.equal(second.gameState.stats.Seoyeon.affinity, 99);
+    assert.equal(second.currentSceneId, 'ending_aff_check_seo');
+    assert.equal(JSON.parse(storage.getItem('cupid_progress_integrity_v1')).snapshot.stats.Seoyeon.affinity, 99);
+
+    const live = second.gameState;
+    api.commit(live, 'scene:perfect-again', () => {
+        live.stats.Seoyeon.affinity = 100;
+        live.flags.ending_perfect = true;
+    });
+    const earned = { ...second, gameState: live };
+    api.save(earned);
+    storage.setItem('cupid_save', JSON.stringify(earned));
+    const kept = manager.load();
+    assert.equal(kept.gameState.stats.Seoyeon.affinity, 100);
+    assert.equal(kept.gameState.flags.ending_perfect, true);
+});
