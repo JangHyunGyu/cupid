@@ -202,7 +202,7 @@ test('SSE reader preserves visible prose when final metadata is missing', async 
     assert.equal(core.selectChatCompletionContent(await core.readChatCompletionStream(response)), 'partial');
 });
 
-test('every Cupid free-talk surface uses SSE, fixed pacing, and non-blocking backup logs', () => {
+test('every Cupid free-talk surface validates buffered SSE before paced display and backup receipts', () => {
     const main = read('assets/js/modules/FreeTalkSystem.js');
     const gallery = read('assets/js/gallery-freetalk.js');
     const dialogue = read('assets/js/modules/DialogueSystem.js');
@@ -210,7 +210,8 @@ test('every Cupid free-talk surface uses SSE, fixed pacing, and non-blocking bac
     assert.match(gallery, /stream:\s*wantsStream/);
     assert.ok((main.match(/requestChatCompletion/g) || []).length >= 2, 'single and group readers must consume SSE');
     assert.match(gallery, /requestChatCompletion/);
-    assert.match(source, /await readChatCompletionStream\(response, \{ onDelta, wasTimedOut:/);
+    assert.match(source, /await readChatCompletionStream\(response, \{ wasTimedOut:/);
+    assert.doesNotMatch(source, /await readChatCompletionStream\(response, \{ onDelta/, 'unchecked deltas must not reach the preview callback');
     assert.ok((main.match(/selectChatCompletionContent\(data\)/g) || []).length >= 2, 'single and group completion must preserve valid raw streams');
     assert.match(gallery, /selectChatCompletionContent\(data\)/, 'gallery completion must preserve a valid raw stream');
     assert.ok((main.match(/characterDelayMs:\s*10/g) || []).length >= 2);
