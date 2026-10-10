@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 const { installAffinitySeeder } = require('./helpers/affinity-seed.cjs');
 
-for (const surface of ['single', 'group', 'gallery']) for (const lang of ['ko', 'de']) for (const failure of ['empty', 'malformed']) {
+for (const surface of ['single', 'group', 'gallery']) for (const lang of ['ko', 'de']) for (const failure of ['empty', 'malformed', 'repeat']) {
     test(`${lang}/${surface}: ${failure}: ellipsis presentation uses one request and no affinity change`, async ({ page }, testInfo) => {
         test.setTimeout(90_000);
         let unavailable = true;
@@ -18,7 +18,7 @@ for (const surface of ['single', 'group', 'gallery']) for (const lang of ['ko', 
                 requests.push(body);
                 if (requests.length === 1) {
                     if (failure === 'network') return route.abort('failed');
-                    return route.fulfill({ status: 200, json: { choices: [{ message: { content: failure === 'empty' ? '' : '{"segments":[{"type":"dialogue","text":"Received prefix' } }] } });
+                    return route.fulfill({ status: 200, json: { choices: [{ message: { content: failure === 'repeat' ? JSON.stringify({ segments: [{ type: 'narration', text: 'our '.repeat(150) }], affinity: 3 }) : failure === 'empty' ? '' : '{"segments":[{"type":"dialogue","text":"Received prefix' } }] } });
                 }
                 unavailable = false;
                 const segments = [{ type: 'dialogue', text: unavailable ? placeholder : lang === 'ko' ? '오늘은 잘 지냈어. 너는 어땠어?' : 'Heute war es ganz ruhig. Wie war dein Tag?' }];
@@ -82,6 +82,12 @@ for (const surface of ['single', 'group', 'gallery']) for (const lang of ['ko', 
                 history: e.freeTalkSystem.freeTalkHistory.filter(item => item.role !== 'system'), input: e.uiManager.chatInput.value };
         }, surface);
         const before = await snapshot();
+        if (failure === 'repeat') {
+            const sizes = [[320, 568], [430, 932], [768, 1024], [1024, 768], [844, 390], [1440, 900]];
+            const [width, height] = sizes[['single', 'group', 'gallery'].indexOf(surface) * 2 + (lang === 'de' ? 1 : 0)];
+            await page.setViewportSize({ width, height });
+            await page.emulateMedia({ reducedMotion: 'reduce' });
+        }
         const input = lang === 'ko' ? '오늘은 잘 지냈어?' : 'Wie war dein Tag?';
         const send = () => page.evaluate(async ({ surface, input }) => {
             document.getElementById('chat-input').value = input;
@@ -94,14 +100,28 @@ for (const surface of ['single', 'group', 'gallery']) for (const lang of ['ko', 
         await send();
         expect(requests).toHaveLength(1);
         const succeeded = await snapshot();
-        expect(succeeded.turns).toBe(before.turns + (failure === 'empty' ? 0 : 1));
+        expect(succeeded.turns).toBe(before.turns + (failure === 'malformed' ? 1 : 0));
         expect(succeeded.affinity).toBe(before.affinity);
-        expect(await page.locator('body').innerText()).toContain(failure === 'empty' ? '...' : 'Received prefix...');
+        expect(await page.locator('body').innerText()).toContain(failure === 'malformed' ? 'Received prefix...' : '...');
+        expect(await page.locator('body').innerText()).not.toContain('our our our');
         expect(succeeded.input).toBe('');
         expect(succeeded.history.filter(item => item.role === 'assistant').length).toBe(before.history.filter(item => item.role === 'assistant').length + 1);
         await expect.poll(() => logs.filter(entry => entry.role === 'assistant' && entry.logSource === 'realtime').length).toBe(1);
         expect(logs.some(entry => String(entry.content).includes(placeholder))).toBe(false);
-        expect(errors).toHaveLength(0);
+        expect(errors).toHaveLength(failure === 'repeat' ? 1 : 0);
+        if (failure === 'repeat') {
+            await expect(page.locator('#chat-input')).toBeVisible();
+            await expect(page.locator('#chat-input')).toBeEnabled();
+            const fit = await page.locator('#chat-input').evaluate(el => {
+                const r = el.getBoundingClientRect();
+                return { x: r.x, y: r.y, right: r.right, bottom: r.bottom, width: innerWidth, height: innerHeight, scroll: document.documentElement.scrollWidth };
+            });
+            expect(fit.x).toBeGreaterThanOrEqual(0); expect(fit.y).toBeGreaterThanOrEqual(0);
+            expect(fit.right).toBeLessThanOrEqual(fit.width); expect(fit.bottom).toBeLessThanOrEqual(fit.height);
+            expect(fit.scroll).toBeLessThanOrEqual(fit.width);
+            expect(fit.right - fit.x).toBeGreaterThanOrEqual(140);
+            await page.screenshot({ path: testInfo.outputPath('repeat-blocked.png') });
+        }
         await testInfo.attach('requests', { body: JSON.stringify(requests), contentType: 'application/json' });
     });
 }

@@ -1790,6 +1790,10 @@ Latest user: """${excerpt}"""
     }
 
     // One budget covers transport and content recovery; the prompt and turn stay identical.
+    function hasCupidRepeatLoop(value) {
+        return /(?:^|[\s"*])([\p{L}\p{N}]{1,32}(?:[ ,]+[\p{L}\p{N}]{1,32}){0,3}?)(?:[\s,]+\1){11,}(?=[\s",.*!?\]}]|$)/iu.test(String(value || ''));
+    }
+
     async function requestChatCompletion(endpoint, buildRequestInit, {
         assertCurrent = () => {}, onDelta = null, onReset = null,
         signal = null, timeoutMs = 120000, retryDelayMs = 400, fetchImpl = fetch
@@ -1812,13 +1816,23 @@ Latest user: """${excerpt}"""
                     response = await fetchImpl(endpoint, { ...init, signal: controller.signal });
                     assertCurrent();
                     if (!response.ok) throw await createAiResponseError(response);
-                    const payload = await readChatCompletionStream(response, { onDelta, wasTimedOut: () => timedOut, presentation });
+                    // Validate the complete candidate before any preview can render it.
+                    const payload = await readChatCompletionStream(response, { wasTimedOut: () => timedOut, presentation });
                     assertCurrent(payload);
+                    if (hasCupidRepeatLoop(payload?.streamedContent) || hasCupidRepeatLoop(payload?.choices?.[0]?.message?.content)) {
+                        window.logCupidError?.(new Error('Repeated-token output blocked before display'), {
+                            source: 'cupid-reply-guard', errorType: 'DEGENERATE_REPEAT_LOOP', errorClass: 'upstream',
+                            extra: { turnId: payload?.turnId || presentation.turnId || '', rawPreview: String(payload?.streamedContent || payload?.choices?.[0]?.message?.content || '').slice(0, 1500) }
+                        });
+                        onReset?.();
+                        return makeAiDisplayCompletion('', payload, presentation);
+                    }
                     const reply = getCompleteDisplayableStreamReply(selectChatCompletionContent(payload));
                     if (!reply || isAiDisplayJsonIncomplete(payload?.choices?.[0]?.message?.content) || payload?.choices?.[0]?.finish_reason === 'length') {
                         return makeAiDisplayCompletion(selectChatCompletionContent(payload), payload, { ...presentation, truncated: true });
                     }
                     payload.choices[0].message.content = reply;
+                    if (typeof onDelta === 'function') await onDelta({ delta: reply, content: reply, event: payload });
                     return payload;
                 } catch (error) {
                     assertCurrent();

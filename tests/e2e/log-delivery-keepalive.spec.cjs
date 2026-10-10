@@ -162,11 +162,13 @@ for (const [lang, sample] of Object.entries(CASES)) {
         await expect.poll(() => seen.routeEvents.flatMap(body => body.events || []).filter(event => event.eventType === 'crossing_arrived').length, { timeout: 20_000 }).toBe(1);
 
         // 큐가 비고, 오류 로그에는 기록 전송 실패가 없으며, 한도는 끝까지 차 있었습니다.
-        const queues = await page.evaluate(() => ({
+        const readQueues = () => page.evaluate(() => ({
             chatLogs: window.CupidStorage.getItem('cupid_pending_chat_logs_v1'),
             renderAcks: window.CupidStorage.getItem('cupid_pending_render_acks_v1'),
             routeEvents: JSON.parse(window.CupidStorage.getItem('cupid_pending_route_events_v1') || '[]').length
         }));
+        await expect.poll(async () => (await readQueues()).chatLogs ?? null).toBeNull();
+        const queues = await readQueues();
         expect(queues.chatLogs ?? null).toBeNull();
         expect(queues.renderAcks ?? null).toBeNull();
         expect(queues.routeEvents).toBe(0);

@@ -2745,3 +2745,23 @@ html[lang^="zh"] select {
 html[lang^="zh"] .choice-btn {
     word-break: normal;
 }
+
+/* Keep the retry input readable alongside four touch controls on narrow phones. */
+@media (max-width: 600px) and (orientation: portrait) {
+    #chat-container:not(.group-freetalk-mode) #chat-input-wrapper {
+        display: grid;
+        grid-template-columns: 44px minmax(0, 1fr) 44px 44px;
+        gap: 8px;
+    }
+    #chat-container:not(.group-freetalk-mode) #chat-input {
+        grid-column: 2 / -1;
+        grid-row: 1;
+        width: 100%;
+        min-height: 44px;
+    }
+    #chat-container:not(.group-freetalk-mode) #upload-image-btn { grid-column: 1; grid-row: 1; }
+    #chat-container:not(.group-freetalk-mode) #action-toggle-btn { grid-column: 2; grid-row: 2; justify-self: end; margin-left: 0; }
+    #chat-container:not(.group-freetalk-mode) #chat-send { grid-column: 3; grid-row: 2; }
+    #chat-container:not(.group-freetalk-mode) #chat-skip-btn { grid-column: 4; grid-row: 2; }
+    #chat-container:not(.group-freetalk-mode) #chat-input-wrapper > button { width: 44px; height: 44px; }
+}

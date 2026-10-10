@@ -76,12 +76,31 @@ function load(responses) {
   const requests = [], controller = new AbortController();
   return { requests, cancel: () => controller.abort(), async run(options = {}) {
     const payload = await core.requestChatCompletion('https://ai.test', stream => ({ method: 'POST', headers: { 'x-cache-key': 'test:stable' }, body: JSON.stringify({ messages: history, turnId: 'same-turn', stream, responsePresentation: 'ellipsis' }) }), {
-      signal: controller.signal, retryDelayMs: 1, timeoutMs: options.timeout || 120000,
+      signal: controller.signal, retryDelayMs: 1, timeoutMs: options.timeout || 120000, onDelta: options.onDelta,
       fetchImpl: async (_url, init) => { requests.push({ body: JSON.parse(init.body), headers: init.headers }); return responses[requests.length - 1](init); }
     });
     return core.selectChatCompletionContent(payload);
   } };
 }
+
+for (const stream of [false, true]) test(`repeated-token ${stream ? 'stream' : 'JSON'} never reaches preview or consumes a turn`, async () => {
+  const content = JSON.stringify({ segments: [{ type: 'narration', text: 'our '.repeat(150) }], affinity: 3 });
+  const runtime = load([() => stream ? sse(content, { choices: [{ message: { content } }] }) : completion(content)]);
+  const previews = [];
+  const parsed = JSON.parse(await runtime.run({ onDelta: value => previews.push(value.content) }));
+  assert.equal(parsed.displayFallback.empty, true);
+  assert.equal(parsed.affinity, 0);
+  assert.equal(previews.length, 0);
+  assert.equal(runtime.requests.length, 1);
+});
+
+test('normal emphasis remains intact and reaches the validated preview once', async () => {
+  const content = JSON.stringify({ segments: [{ type: 'dialogue', text: 'No no no! Come back.' }] });
+  const runtime = load([() => sse(content, { choices: [{ message: { content } }] })]);
+  const previews = [];
+  assert.match(await runtime.run({ onDelta: value => previews.push(value.content) }), /No no no!/);
+  assert.equal(previews.length, 1);
+});
 
 test('a stalled stream retains a complete reply at the deadline without regenerating', async () => {
   const runtime = load([init => new Response(new ReadableStream({ start(controller) {

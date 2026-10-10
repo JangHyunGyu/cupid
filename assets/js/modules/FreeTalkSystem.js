@@ -1679,6 +1679,7 @@ class FreeTalkSystem {
                     body: JSON.stringify({
                         messages,
                         characterId: charKey,
+                        chatLogContext: { sessionId: requestSceneId || '', conversationDay: this.stateManager.currentDay },
                         roleplaySurface: "game",
                         requestType: "character",
                         chatMode: "single",
@@ -2364,6 +2365,7 @@ class FreeTalkSystem {
                 body: JSON.stringify({
                     messages: optimized,
                     characterId: 'group',
+                    chatLogContext: { sessionId: requestSceneId || '', conversationDay: this.stateManager.currentDay },
                     roleplaySurface: 'game',
                     requestType: 'character',
                     chatMode: 'group',

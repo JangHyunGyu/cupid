@@ -29,7 +29,9 @@ for (const [lang, sample] of Object.entries(CASES)) {
                 aiRequests.push(body);
                 const content = { segments: [{ type: 'dialogue', text: sample.reply }], expression: 'neutral', affinity: 2, forcedSexualViolation: 'none' };
                 const payload = { ...(body.turnId && { turnId: body.turnId }), model: 'google/gemma-4-31b-it', provider: 'openrouter',
+                    logIds: { user: `cupid-api:${body.turnId}:user`, assistant: `cupid-api:${body.turnId}:assistant:Seoyeon` },
                     choices: [{ message: { content: JSON.stringify(content) } }] };
+                if (lang === 'en') return route.fulfill({ status: 200, json: payload });
                 return route.fulfill({ status: 200, contentType: 'text/event-stream',
                     body: `data: ${JSON.stringify({ choices: [{ delta: { content: JSON.stringify(content) } }] })}\n\ndata: ${JSON.stringify({ ...payload, final: true })}\n\ndata: [DONE]\n\n` });
             }
@@ -78,6 +80,9 @@ for (const [lang, sample] of Object.entries(CASES)) {
         expect(after.affinity).toBe(before.affinity + 2);
         await expect.poll(() => chatLogs.filter(entry => entry.role === 'assistant' && entry.logSource === 'realtime').length).toBe(1);
         expect(chatLogs.find(entry => entry.role === 'assistant' && entry.logSource === 'realtime').content).toContain(sample.reply);
+        expect(chatLogs.find(entry => entry.role === 'assistant' && entry.logSource === 'realtime').clientMsgId).toBe(`cupid-api:${aiRequests[0].turnId}:assistant:Seoyeon`);
+        expect(chatLogs.find(entry => entry.role === 'user' && entry.logSource === 'realtime').clientMsgId).toBe(`cupid-api:${aiRequests[0].turnId}:user`);
+        expect(aiRequests[0].chatLogContext.sessionId).toBe('lunch_seo_freetalk');
         expect(errorLogs.filter(entry => /freetalk/.test(JSON.stringify(entry)))).toEqual([]);
         expect(pageErrors).toEqual([]);
         expect(consoleErrors.filter(text => /AI Chat Error|Assignment to constant/i.test(text))).toEqual([]);

@@ -1148,6 +1148,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     body: JSON.stringify({
                         messages,
                         characterId: requestCharId || '',
+                        chatLogContext: { sessionId: 'gallery-freetalk' },
                         roleplaySurface: 'gallery',
                         requestType: 'character',
                         chatMode: 'single',

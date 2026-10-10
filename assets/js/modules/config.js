@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.310";
+const ASSET_VERSION = "2.9.311";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -1382,7 +1382,7 @@ async function saveCupidChatLog({
         logSource: 'realtime'
     };
     const entries = [];
-    if (userContent) entries.push(makeCupidChatLogEntry({ ...shared, role: 'user', content: userContent }));
+    if (userContent) entries.push(makeCupidChatLogEntry({ ...shared, role: 'user', content: userContent, clientMsgId: responseMetadata?.logIds?.user }));
     const assistantLogContent = window.CupidFreeTalkCore?.resolveCupidAssistantLogContent?.(
         assistantContent,
         assistantRenderReceipt
@@ -1393,6 +1393,7 @@ async function saveCupidChatLog({
             ...shared,
             role: 'assistant',
             content: assistantLogContent,
+            clientMsgId: responseMetadata?.logIds?.assistant,
             affinityChange,
             affinityCurrent,
             affinityCorrectionIds: window.CupidAffinityCorrections?.ids(charId) || []
@@ -1460,7 +1461,7 @@ async function saveCupidGroupChatLog({
             role: 'user',
             content: userContent,
             speakerId: '__player__',
-            clientMsgId: makeCupidGroupChatLogClientId({ turnId, role: 'user', content: userContent })
+            clientMsgId: responseMetadata?.logIds?.user || makeCupidGroupChatLogClientId({ turnId, role: 'user', content: userContent })
         }));
     }
     for (let messageIndex = 0; messageIndex < assistantMessages.length; messageIndex++) {
@@ -1480,7 +1481,7 @@ async function saveCupidGroupChatLog({
             affinityChange: message.affinityChange,
             affinityCurrent: message.affinityCurrent,
             affinityCorrectionIds: window.CupidAffinityCorrections?.ids(speakerId) || [],
-            clientMsgId: makeCupidGroupChatLogClientId({
+            clientMsgId: responseMetadata?.logIds?.assistants?.[speakerId] || makeCupidGroupChatLogClientId({
                 turnId,
                 role: 'assistant',
                 speakerId,
