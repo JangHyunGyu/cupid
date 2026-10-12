@@ -5,6 +5,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const SITE = 'https://cupid.archerlab.dev';
+const CANONICAL_ALIASES = require('../config/seo-canonicals.json');
 const LASTMOD = '2026-10-01';
 const TRAFFIC_PAGE_LASTMOD = new Map([
   ['visual-novel-beginner-guide', '2026-08-30'],
@@ -12,11 +13,11 @@ const TRAFFIC_PAGE_LASTMOD = new Map([
   ['cupid-gameplay-save-guide', '2026-08-30'],
   ['cupid-ending-guide', '2026-10-01'],
   ['cupid-endings-guide-en', '2026-10-01'],
-  ['cupid-ai-free-talk-guide', '2026-10-01'],
-  ['cupid-ai-chat-guide-en', '2026-10-01'],
+  ['cupid-ai-free-talk-guide', '2026-10-12'],
+  ['cupid-ai-chat-guide-en', '2026-10-12'],
   ['cupid-characters', '2026-10-01'],
   ['cupid-jieju-gonglue', '2026-10-01'],
-  ['cupid-ziyou-duihua-zhinan', '2026-10-01'],
+  ['cupid-ziyou-duihua-zhinan', '2026-10-12'],
   ['cupid-renwu-jieshao', '2026-10-01']
 ]);
 // Traffic guides published as a KO/EN/zh-CN trio: 3 language entries + x-default.
@@ -102,6 +103,8 @@ for (const page of indexable) {
   const lang = capture(html, /<html\s+lang="([^"]+)"/i);
   const title = capture(html, /<title>([\s\S]*?)<\/title>/i).trim();
   const description = capture(html, /<meta\s+name="description"\s+content="([^"]+)"/i);
+  const aliasTarget = CANONICAL_ALIASES[path.basename(page.file, '.html')];
+  const expectedCanonical = aliasTarget ? `${SITE}/seo/${aliasTarget}` : page.url;
   const canonical = capture(html, /<link\s+rel="canonical"\s+href="([^"]+)"/i);
   const robots = capture(html, /<meta\s+name="robots"\s+content="([^"]+)"/i);
   const ogUrl = capture(html, /<meta\s+property="og:url"\s+content="([^"]+)"/i);
@@ -112,13 +115,23 @@ for (const page of indexable) {
   if (charsetOffset < 0 || charsetOffset > 1024) fail(`${page.file}: charset is outside the first 1024 bytes`);
   if (!title) fail(`${page.file}: missing title`);
   if (!description) fail(`${page.file}: missing description`);
-  if (canonical !== page.url) fail(`${page.file}: canonical ${canonical || '(missing)'} does not match ${page.url}`);
-  if (canonicals.has(canonical)) fail(`${page.file}: duplicate canonical ${canonical}`);
-  canonicals.add(canonical);
+  if (canonical !== expectedCanonical) fail(`${page.file}: canonical ${canonical || '(missing)'} does not match ${expectedCanonical}`);
+  if (!aliasTarget) {
+    if (canonicals.has(canonical)) fail(`${page.file}: duplicate canonical ${canonical}`);
+    canonicals.add(canonical);
+  } else {
+    const target = read(`seo/${aliasTarget}.html`);
+    const targetLang = capture(target, /<html\s+lang="([^"]+)"/i);
+    if (targetLang !== lang) fail(`${page.file}: canonical target language differs`);
+    if (CANONICAL_ALIASES[aliasTarget]) fail(`${page.file}: canonical chain is not allowed`);
+    if (!target.includes(`rel="canonical" href="${expectedCanonical}"`)) {
+      fail(`${page.file}: canonical target must reference itself`);
+    }
+  }
   if (!lang) fail(`${page.file}: missing html lang`);
   if (page.lang && lang !== page.lang) fail(`${page.file}: expected lang ${page.lang}, found ${lang}`);
   if (!/index/i.test(robots) || /noindex/i.test(robots)) fail(`${page.file}: page is not indexable`);
-  if (ogUrl !== page.url) fail(`${page.file}: og:url does not match canonical`);
+  if (ogUrl !== expectedCanonical) fail(`${page.file}: og:url does not match canonical`);
   if (ogSiteName !== 'Cupid') fail(`${page.file}: og:site_name must be Cupid`);
   if (ogImages.length !== 1) fail(`${page.file}: expected one og:image, found ${ogImages.length}`);
   const aboutPage = ABOUT_SLUGS.has(path.basename(page.file, '.html')) || KEYWORD_SLUGS.has(path.basename(page.file, '.html'));
@@ -255,7 +268,7 @@ for (const block of sitemapBlocks) {
   if (lastmod !== expectedLastmod) fail(`sitemap.xml: ${loc} has stale lastmod ${lastmod}`);
   if (alternates !== expectedAlternates) fail(`sitemap.xml: ${loc} has ${alternates} alternate links`);
 }
-const expectedUrls = new Set(indexable.map(page => page.url));
+const expectedUrls = new Set(indexable.filter(page => !CANONICAL_ALIASES[path.basename(page.file, '.html')]).map(page => page.url));
 for (const url of expectedUrls) if (!sitemapUrls.has(url)) fail(`sitemap.xml: missing ${url}`);
 for (const url of sitemapUrls) if (!expectedUrls.has(url)) fail(`sitemap.xml: unexpected ${url}`);
 

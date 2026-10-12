@@ -3,6 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 
+const CANONICAL_ALIASES = require('../config/seo-canonicals.json');
 const SITE = 'https://cupid.archerlab.dev';
 const OUT = __dirname;
 const LASTMOD = '2026-10-01';
@@ -680,6 +681,7 @@ function renderGoogleAnalytics() {
 function renderPage(lang, page) {
   const c = C[lang];
   const url = seoUrl(page.slug);
+  const canonical = seoUrl(CANONICAL_ALIASES[page.slug] || page.slug);
   const homeUrl = HOME[lang];
   const socialImageAlt = SOCIAL_IMAGE_ALTS[lang] || SOCIAL_IMAGE_ALTS.en;
   const relatedNavLabel = RELATED_NAV_LABELS[lang] || RELATED_NAV_LABELS.en;
@@ -799,11 +801,11 @@ function renderPage(lang, page) {
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>${escapeHTML(page.title)}</title>
   <meta name="description" content="${escapeHTML(page.meta)}">
-  <link rel="canonical" href="${url}">
+  <link rel="canonical" href="${canonical}">
 ${altLinks ? `  ${altLinks}\n` : ''}  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta property="og:title" content="${escapeHTML(page.title)}">
   <meta property="og:description" content="${escapeHTML(page.meta)}">
-  <meta property="og:url" content="${url}">
+  <meta property="og:url" content="${canonical}">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Cupid">
   <meta property="og:locale" content="${LOCALES[lang] || 'en_US'}">
@@ -919,7 +921,7 @@ ${altLinks}
 }
 
 // sitemap 단편 출력 및 메인 sitemap.xml 갱신
-const sitemapFrag = allUrls.map(u => {
+const sitemapFrag = allUrls.filter(u => !CANONICAL_ALIASES[u.slug]).map(u => {
   const page = PAGES[u.lang].find(p => p.slug === u.slug);
   const altEntries = getAlternateEntries(u.lang, page);
   return renderSitemapUrl(u.url, altEntries, 'monthly', '0.7');
@@ -999,7 +1001,7 @@ ${sitemapFrag}
     <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/cupid-ziyou-duihua-zhinan"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en"/>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1009,7 +1011,7 @@ ${sitemapFrag}
     <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/cupid-ziyou-duihua-zhinan"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en"/>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1019,7 +1021,7 @@ ${sitemapFrag}
     <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/cupid-ziyou-duihua-zhinan"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en"/>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -138,37 +138,7 @@
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://cupid.archerlab.dev/seo/web-misinsi</loc>
-        <lastmod>2026-10-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://cupid.archerlab.dev/seo/muryo-misinsi</loc>
-        <lastmod>2026-10-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://cupid.archerlab.dev/seo/misinsi-muryo</loc>
-        <lastmod>2026-10-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://cupid.archerlab.dev/seo/muryo-yeonae-sim</loc>
-        <lastmod>2026-10-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
         <loc>https://cupid.archerlab.dev/seo/browser-misinsi</loc>
-        <lastmod>2026-10-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://cupid.archerlab.dev/seo/mu-seolchi-yeonae-game</loc>
         <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -259,18 +229,6 @@
     </url>
     <url>
         <loc>https://cupid.archerlab.dev/seo/web-otome</loc>
-        <lastmod>2026-10-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://cupid.archerlab.dev/seo/renai-game-muryo-download-nashi</loc>
-        <lastmod>2026-10-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://cupid.archerlab.dev/seo/sumaho-otome-game-muryo</loc>
         <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -477,7 +435,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/cupid-ziyou-duihua-zhinan"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en"/>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -487,7 +445,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/cupid-ziyou-duihua-zhinan"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en"/>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -497,7 +455,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/cupid-ziyou-duihua-zhinan"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-ai-chat-guide-en"/>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -420,7 +420,28 @@
         }
     }
 
+    async function loadStoryFont() {
+        const homeFont = document.querySelector('link[href*="pretendard-home.css"]');
+        if (!homeFont || document.querySelector('link[data-cupid-story-font]')) return;
+        // Restore one complete shaping face before dialogue mixes uncommon glyphs.
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.dataset.cupidStoryFont = 'true';
+        link.href = homeFont.href.replace('pretendard-home.css', 'pretendard.css');
+        await new Promise(resolve => {
+            const timer = setTimeout(() => { link.remove(); resolve(); }, 10000);
+            link.onload = async () => {
+                try { await document.fonts.load('400 16px "Pretendard"'); } catch (_) {}
+                clearTimeout(timer);
+                resolve();
+            };
+            link.onerror = () => { clearTimeout(timer); link.remove(); resolve(); };
+            homeFont.parentNode.appendChild(link);
+        });
+    }
+
     async function loadAllScripts() {
+        await loadStoryFont();
         for (var commonIndex = 0; commonIndex < commonScripts.length; commonIndex++) {
             await loadScript(commonScripts[commonIndex]);
         }
