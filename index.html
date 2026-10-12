@@ -2,11 +2,11 @@
 <html lang="ko">
 
 <head>
-    <script src="assets/js/runtime-support.js?v=2.9.312"></script>
+    <script src="assets/js/runtime-support.js?v=2.9.313"></script>
     <meta charset="UTF-8">
     <meta http-equiv="origin-trial" content="Agn9opFYdjvT/UqEIvt4RnCkmN8Kt+8/lzvg731pKSz7MpNoJkLvra/pLOIFgR9GZb39JbBGeJ+CDO++Tus3FggAAABmeyJvcmlnaW4iOiJodHRwczovL2FyY2hlcmxhYi5kZXY6NDQzIiwiZmVhdHVyZSI6IkhUTUxJbkNhbnZhcyIsImV4cGlyeSI6MTc5MjQ1NDQwMCwiaXNTdWJkb21haW4iOnRydWV9">
     <script src="assets/js/error-reporter.js?v=20261008-log-transport"></script>
-    <script src="assets/js/storage-adapter.js?v=2.9.312"></script>
+    <script src="assets/js/storage-adapter.js?v=2.9.313"></script>
     <!-- Language auto-detect & redirect (must be first script) -->
     <script>
     (function () {
@@ -50,7 +50,7 @@
         };
     </script>
     <script src="assets/js/browser-check.js?v=2.9.308" defer></script>
-    <script src="assets/js/modal-accessibility.js?v=2.9.312" defer></script>
+    <script src="assets/js/modal-accessibility.js?v=2.9.313" defer></script>
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -197,7 +197,7 @@
     <!-- Google tag (gtag.js) - 외부 CDN은 head에서 로드 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-05YM7K3VX9"></script>
     <!-- ga.js, sound.js는 game-loader.js에서 로드됨 -->
-    <link rel="stylesheet" href="assets/css/style.css?v=2.9.312">
+    <link rel="stylesheet" href="assets/css/style.css?v=2.9.313">
     <link rel="stylesheet" as="style" crossorigin
         href="assets/vendor/pretendard/pretendard-home.css" />
     <style>
@@ -1048,7 +1048,7 @@
         <div class="modal-container" onclick="event.stopPropagation()">
             <div style="font-size: 2.5rem; margin-bottom: 10px;">⚠️</div>
             <h3 class="modal-title">새 게임 시작</h3>
-            <p style="color: #ccc; margin: 15px 0; line-height: 1.6;">저장된 게임 데이터가 삭제됩니다.<br>그래도 새 게임을 시작하시겠습니까?</p>
+            <p style="color: #ccc; margin: 15px 0; line-height: 1.6;">저장된 진행이 지워집니다.<br>그래도 새로 시작할까요?</p>
             <div class="confirm-buttons">
                 <button class="modal-btn cancel" onclick="closeNewGameConfirm(event)">취소</button>
                 <button class="modal-btn confirm" onclick="confirmNewGame()">시작</button>
@@ -1101,7 +1101,7 @@
                             <polyline points="21 15 16 10 5 21"></polyline>
                         </svg>
                     </button>
-                    <textarea id="chat-input" placeholder="메시지를 입력하세요..." maxlength="100" rows="1"></textarea>
+                    <textarea id="chat-input" placeholder="메시지를 입력하세요..." maxlength="160" rows="1"></textarea>
                     <input type="file" id="upload-image-input" accept="image/*" style="display: none;">
                     <button type="button" id="action-toggle-btn" title="행동 묘사 (*)">✱</button>
                     <button id="chat-send" title="전송">
@@ -1204,8 +1204,8 @@
         <div id="homeConfirmModal" class="modal-overlay" style="display: none;" onclick="closeHomeConfirm(event)">
             <div class="modal-container" onclick="event.stopPropagation()">
                 <h3 class="modal-title">홈으로 돌아가기</h3>
-                <p style="color: #ccc; margin: 20px 0; line-height: 1.6;">정말 시작 화면으로 돌아가시겠습니까?<br><span
-                        style="color: #6b5b95; font-size: 0.9em;">(현재 진행 상황이 저장됩니다)</span></p>
+                <p style="color: #ccc; margin: 20px 0; line-height: 1.6;">시작 화면으로 돌아갈까요?<br><span
+                        style="color: #6b5b95; font-size: 0.9em;">(지금까지의 진행은 저장됩니다)</span></p>
                 <div class="confirm-buttons">
                     <button class="modal-btn cancel" onclick="closeHomeConfirm(event)">취소</button>
                     <button class="modal-btn confirm" onclick="goToHome()">확인</button>
@@ -1293,7 +1293,7 @@
     </script>
 
     <!-- 게임 스크립트 (동적 로더) -->
-<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.312&history=20261009-ko-voice"></script>
+<script data-cupid-entry-script="true" src="assets/js/loaders/game-loader.js?v=2.9.313&history=20261009-ko-voice"></script>
 
     <script>
         // Initialize SoundManager + Enable Buttons (게임 스크립트 로드 완료 후)
@@ -1508,9 +1508,9 @@
                     deferredPrompt = null;
                 });
             } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-                alert('아이폰/아이패드에서는 [공유] 버튼을 누르고 [홈 화면에 추가]를 선택해주세요.');
+                alert('아이폰/아이패드에서는 [공유] 버튼을 누르고 [홈 화면에 추가]를 선택해 주세요.');
             } else {
-                alert('이미 설치되어 있거나, 이 브라우저에서는 설치할 수 없습니다.');
+                alert('이미 설치되어 있거나 이 브라우저에서는 설치할 수 없습니다.');
             }
         }
 

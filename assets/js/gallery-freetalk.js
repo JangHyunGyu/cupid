@@ -910,8 +910,10 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
     _forceLatestUserMessageLast(messages = [], latestContent = '') {
         const text = String(latestContent || '');
         if (!text) return Array.isArray(messages) ? messages : [];
-        const withoutDuplicate = (Array.isArray(messages) ? messages : []).filter(msg => !(msg?.role === 'user' && msg.content === text));
-        return [...withoutDuplicate, { role: 'user', content: text }];
+        const completeHistory = Array.isArray(messages) ? messages.slice() : [];
+        const lastMessage = completeHistory[completeHistory.length - 1];
+        if (lastMessage?.role === 'user' && lastMessage.content === text) return completeHistory;
+        return [...completeHistory, { role: 'user', content: text }];
     }
 
     async _handleSend() {
@@ -961,7 +963,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
         const msgEl = document.getElementById('message');
         const nameTag = document.getElementById('name-tag');
-        const playerName = this.progress.getPlayerName() || this._L('자기', 'Honey', 'Cariño', '俺', 'Chéri', 'Liebling', 'Amor', '亲爱的');
+        const playerName = this.progress.getPlayerName() || this._L('자기', 'Honey', 'Cariño', 'あなた', 'Chéri', 'Liebling', 'Amor', '亲爱的');
 
         // 이름표를 플레이어로 변경, 유저 메시지 표시
         if (nameTag) nameTag.textContent = playerName;
@@ -2250,7 +2252,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
     _handleImageUpload(file) {
         if (!file.type.startsWith('image/')) {
             alert(this._L(
-                '이미지 파일만 업로드 가능합니다.',
+                '이미지 파일만 올릴 수 있습니다.',
                 'Only image files can be uploaded.',
                 'Solo se pueden subir archivos de imagen.',
                 '画像ファイルのみアップロードできます。',
@@ -2359,7 +2361,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
      */
     _getTip() {
         return this._L(
-            '<b>Tip:</b> <i>*웃으며* 자기야~</i> 처럼 어조나 상황을 표현해보세요.',
+            '<i>*웃으며* 자기야~</i>처럼 말투나 상황을 적어도 돼요.',
             '<b>Tip:</b> Describe the tone in asterisks, e.g., <i>*smiling* Hey...</i>',
             '<b>Tip:</b> Describe el tono con asteriscos, ej: <i>*sonriendo* Hola...</i>',
             '<b>ヒント：</b>「<i>*笑顔で* ねえ</i>」のように、雰囲気や状況も添えてみてね。',

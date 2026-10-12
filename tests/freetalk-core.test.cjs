@@ -1079,6 +1079,21 @@ test('main story keeps every character message for the current run', () => {
     const latest = freeTalk.slice(latestStart, latestEnd);
     assert.doesNotMatch(latest, /\.filter\(/);
     assert.match(latest, /lastMessage\?\.role === 'user'/);
+
+    const gallery = read('assets/js/gallery-freetalk.js');
+    const galleryStart = gallery.indexOf('    _forceLatestUserMessageLast(');
+    const galleryEnd = gallery.indexOf('    async _handleSend(', galleryStart);
+    const galleryLatest = gallery.slice(galleryStart, galleryEnd);
+    assert.doesNotMatch(galleryLatest, /\.filter\(/);
+    assert.match(galleryLatest, /lastMessage\?\.role === 'user'/);
+
+    const location = freeTalk.slice(freeTalk.indexOf('const locNames = {'), freeTalk.indexOf('// 캐릭터 정보 수집'));
+    assert.match(location, /locByStem\[bgStem\]/);
+    assert.doesNotMatch(location, /bgUrl\.includes/);
+    assert.match(location, /store:/);
+    assert.match(location, /seyoun_room:/);
+    assert.match(location, /yuna_secret_rooftop:/);
+    assert.match(location, /yuna_hideout_day = locNames\.yuna_hideout/);
 });
 
 test('main relationship aftermath survives save import and is isolated per character', () => {

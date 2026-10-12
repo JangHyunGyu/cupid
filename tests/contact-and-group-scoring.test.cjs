@@ -30,7 +30,7 @@ function faceToFaceTips() {
         assert.ok(match, `${lang} face-to-face tip`);
         tips[lang] = match[1];
     }
-    const ko = /:\s*"(<b>Tip:<\/b> <i>\*[^"]*처럼[^"]*)"\);/u.exec(block);
+    const ko = /:\s*"(<i>\*[^"]*)"\);/u.exec(block);
     assert.ok(ko, 'ko face-to-face tip');
     tips.ko = ko[1];
     return tips;

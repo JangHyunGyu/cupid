@@ -652,18 +652,24 @@ class FreeTalkSystem {
             park:          { es: "Parque", ja: "公園", en: "Park", fr: "Parc", de: "Park", pt: "Parque", zh: "公园", ko: "공원" },
             school_back:   { es: "Entrada trasera de la escuela", ja: "学校の裏門", en: "School back gate", fr: "Entrée arrière du lycée", de: "Hinteres Schultor", pt: "Portão dos fundos da escola", zh: "学校后门", ko: "학교 후문" },
             nurse_house:   { es: "Casa de Juwon", ja: "ジュウォンの家", en: "Juwon’s home", fr: "Chez Juwon", de: "Juwons Zuhause", pt: "Casa de Juwon", zh: "朱媛的家", ko: "주원의 집" },
-            dain_broadcast_booth: { es: "Cabina de retransmisión", ja: "中継ブース", en: "Broadcast booth", fr: "Cabine de commentaire", de: "Kommentatorenkabine", pt: "Cabine de transmissão", zh: "转播间", ko: "중계 부스" }
+            dain_broadcast_booth: { es: "Cabina de retransmisión", ja: "中継ブース", en: "Broadcast booth", fr: "Cabine de commentaire", de: "Kommentatorenkabine", pt: "Cabine de transmissão", zh: "转播间", ko: "중계 부스" },
+            store:         { es: "Tienda del instituto", ja: "購買", en: "School store", fr: "Kiosque du lycée", de: "Schulkiosk", pt: "Cantina da escola", zh: "学校小卖部", ko: "학교 매점" },
+            seyoun_room:   { es: "Habitación de Seoyeon", ja: "ソヨンの部屋", en: "Seoyeon's Room", fr: "Chambre de Seoyeon", de: "Seoyeons Zimmer", pt: "Quarto da Seoyeon", zh: "书妍的房间", ko: "서연의 방" },
+            yuna_secret_rooftop: { es: "Azotea secreta", ja: "秘密の屋上", en: "Secret rooftop", fr: "Toit secret", de: "Geheimes Dach", pt: "Terraço secreto", zh: "秘密天台", ko: "비밀 옥상" }
         };
         let locationName = locNames.default[lang] || locNames.default.ko;
         const bgUrl = scene.background || this.uiManager.bgLayer.style.backgroundImage;
         locNames.room_my = locNames.home_room;
         locNames.library_old = locNames.yuna_hideout;
-        const locKeys = Object.keys(locNames).filter(key => key !== 'default').sort((a, b) => b.length - a.length);
-        for (const key of locKeys) {
-            if (bgUrl.includes(key)) {
-                locationName = locNames[key][lang] || locNames[key].ko;
-                break;
-            }
+        locNames.yuna_hideout_day = locNames.yuna_hideout;
+        const bgStem = (String(bgUrl || '').match(/([^\/\\?#"')\s]+)\.(?:png|jpe?g|webp|gif)/i) || [])[1] || '';
+        const locByStem = {};
+        for (const key of Object.keys(locNames)) {
+            if (key === 'default') continue;
+            locByStem[key.replace(/\.(?:png|jpe?g|webp|gif)$/i, '')] = locNames[key];
+        }
+        if (bgStem && locByStem[bgStem]) {
+            locationName = locByStem[bgStem][lang] || locByStem[bgStem].ko;
         }
         if (locNames[scene.locationKey]) {
             locationName = locNames[scene.locationKey][lang] || locNames[scene.locationKey].ko;
@@ -770,8 +776,8 @@ class FreeTalkSystem {
                     : "<b>提示：</b>可以描述场景或动作，比如：<i>*递给她一瓶饮料* 刚才看你挺累的。喝点这个，歇一会儿吧。</i>"
             };
             chatGuideEl.innerHTML = tips[lang] || (isRemote
-                ? "<b>Tip:</b> <i>*웃으며* 자?</i> 처럼 어조나 상황을 표현해보세요."
-                : "<b>Tip:</b> <i>*음료수를 건네며* 아까 좀 지쳐 보이더라. 이거 마시고 잠깐 쉬어.</i> 처럼 행동과 말을 함께 써 보세요.");
+                ? "<i>*웃으며* 자?</i>처럼 말투나 상황을 적어도 돼요."
+                : "<i>*음료수를 건네며* 아까 좀 지쳐 보이더라. 이거 마시고 잠깐 쉬어.</i> 행동과 말도 같이 적어도 돼요.");
         }
 
         // ─────────────────────────────────────────────────────────────

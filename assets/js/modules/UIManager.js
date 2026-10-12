@@ -395,7 +395,7 @@ class UIManager {
 
     handleImageUpload(file) {
         if (!file.type.startsWith('image/')) {
-            alert({ es: 'Solo se pueden subir archivos de imagen.', ja: '画像ファイルのみアップロードできます。', en: 'Only image files can be uploaded.', fr: 'Seuls les fichiers image peuvent être ajoutés.', de: 'Nur Bilddateien können hochgeladen werden.', pt: 'Apenas arquivos de imagem podem ser enviados.', zh: '只能上传图片文件。' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 파일만 업로드 가능합니다.');
+            alert({ es: 'Solo se pueden subir archivos de imagen.', ja: '画像ファイルのみアップロードできます。', en: 'Only image files can be uploaded.', fr: 'Seuls les fichiers image peuvent être ajoutés.', de: 'Nur Bilddateien können hochgeladen werden.', pt: 'Apenas arquivos de imagem podem ser enviados.', zh: '只能上传图片文件。' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 파일만 올릴 수 있습니다.');
             return;
         }
         if (file.size > 50 * 1024 * 1024) {

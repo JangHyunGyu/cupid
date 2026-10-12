@@ -441,7 +441,7 @@ class GameEngine {
         if (!scene) {
             // 씬 데이터 없으면 오류 메시지 표시
             const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
-            const errorMsg = { es: "Escena no encontrada. Verifica los datos del escenario.", ja: "シーンが見つかりません。シナリオデータを確認してください。", en: "Scene not found. Please check the scenario data.", fr: "Scène introuvable. Veuillez vérifier les données du scénario.", de: "Szene nicht gefunden. Bitte überprüfe die Szenariodaten.", pt: "Cena não encontrada. Verifique os dados do cenário.", zh: "找不到场景。请检查剧本数据。" }[lang] || "씬을 찾을 수 없습니다. 시나리오 데이터를 확인하세요.";
+            const errorMsg = { es: "Escena no encontrada. Verifica los datos del escenario.", ja: "シーンが見つかりません。シナリオデータを確認してください。", en: "Scene not found. Please check the scenario data.", fr: "Scène introuvable. Veuillez vérifier les données du scénario.", de: "Szene nicht gefunden. Bitte überprüfe die Szenariodaten.", pt: "Cena não encontrada. Verifique os dados do cenário.", zh: "找不到场景。请检查剧本数据。" }[lang] || "이 장면을 열 수 없습니다. 페이지를 다시 열어 주세요.";
             await this.uiManager.showModal(errorMsg, true);
             return;
         }
@@ -467,7 +467,7 @@ class GameEngine {
             } else {
                 // 다음 씬이 없으면 오류 메시지
                 const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
-                const errorMsg = { es: "Siguiente escena no definida. Verifica los datos del escenario.", ja: "次のシーンが定義されていません。シナリオデータを確認してください。", en: "Next scene not defined. Please check the scenario data.", fr: "Scène suivante non définie. Veuillez vérifier les données du scénario.", de: "Nächste Szene nicht definiert. Bitte überprüfe die Szenariodaten.", pt: "Próxima cena não definida. Verifique os dados do cenário.", zh: "下一个场景尚未定义。请检查剧本数据。" }[lang] || "다음 씬이 정의되지 않았습니다. 시나리오 데이터를 확인하세요.";
+                const errorMsg = { es: "Siguiente escena no definida. Verifica los datos del escenario.", ja: "次のシーンが定義されていません。シナリオデータを確認してください。", en: "Next scene not defined. Please check the scenario data.", fr: "Scène suivante non définie. Veuillez vérifier les données du scénario.", de: "Nächste Szene nicht definiert. Bitte überprüfe die Szenariodaten.", pt: "Próxima cena não definida. Verifique os dados do cenário.", zh: "下一个场景尚未定义。请检查剧本数据。" }[lang] || "다음 장면이 없습니다. 페이지를 다시 열어 주세요.";
                 await this.uiManager.showModal(errorMsg, true);
             }
             return;
@@ -495,7 +495,7 @@ class GameEngine {
                 } else {
                     // 다음 씬이 없으면 오류 메시지
                     const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
-                    const errorMsg = { es: "No hay opciones disponibles y no se ha definido la siguiente escena. Revisa los datos del escenario.", ja: "選択肢がなく、次のシーンが定義されていません。シナリオデータを確認してください。", en: "No choices are available, and the next scene is not defined. Please check the scenario data.", fr: "Aucun choix n'est disponible et la scène suivante n'est pas définie. Vérifiez les données du scénario.", de: "Es sind keine Auswahlmöglichkeiten verfügbar, und die nächste Szene ist nicht definiert. Überprüfe die Szenariodaten.", pt: "Não há opções disponíveis, e a próxima cena não foi definida. Verifique os dados do cenário.", zh: "没有可选的选项，而且下一个场景尚未定义。请检查剧本数据。" }[lang] || "선택지가 없고 다음 씬이 정의되지 않았습니다. 시나리오 데이터를 확인하세요.";
+                    const errorMsg = { es: "No hay opciones disponibles y no se ha definido la siguiente escena. Revisa los datos del escenario.", ja: "選択肢がなく、次のシーンが定義されていません。シナリオデータを確認してください。", en: "No choices are available, and the next scene is not defined. Please check the scenario data.", fr: "Aucun choix n'est disponible et la scène suivante n'est pas définie. Vérifiez les données du scénario.", de: "Es sind keine Auswahlmöglichkeiten verfügbar, und die nächste Szene ist nicht definiert. Überprüfe die Szenariodaten.", pt: "Não há opções disponíveis, e a próxima cena não foi definida. Verifique os dados do cenário.", zh: "没有可选的选项，而且下一个场景尚未定义。请检查剧本数据。" }[lang] || "선택지도 없고 다음 장면도 없습니다. 페이지를 다시 열어 주세요.";
                     await this.uiManager.showModal(errorMsg, true);
                 }
                 return;
@@ -519,7 +519,7 @@ class GameEngine {
             } else {
                 // 다음 씬이 없으면 오류 메시지
                 const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
-                const errorMsg = { es: "Siguiente escena no definida. Verifica los datos del escenario.", ja: "次のシーンが定義されていません。シナリオデータを確認してください。", en: "Next scene not defined. Please check the scenario data.", fr: "Scène suivante non définie. Veuillez vérifier les données du scénario.", de: "Nächste Szene nicht definiert. Bitte überprüfe die Szenariodaten.", pt: "Próxima cena não definida. Verifique os dados do cenário.", zh: "下一个场景尚未定义。请检查剧本数据。" }[lang] || "다음 씬이 정의되지 않았습니다. 시나리오 데이터를 확인하세요.";
+                const errorMsg = { es: "Siguiente escena no definida. Verifica los datos del escenario.", ja: "次のシーンが定義されていません。シナリオデータを確認してください。", en: "Next scene not defined. Please check the scenario data.", fr: "Scène suivante non définie. Veuillez vérifier les données du scénario.", de: "Nächste Szene nicht definiert. Bitte überprüfe die Szenariodaten.", pt: "Próxima cena não definida. Verifique os dados do cenário.", zh: "下一个场景尚未定义。请检查剧本数据。" }[lang] || "다음 장면이 없습니다. 페이지를 다시 열어 주세요.";
                 await this.uiManager.showModal(errorMsg, true);
             }
         }
@@ -908,12 +908,12 @@ class GameEngine {
             msg = { es: "Por favor, usa solo coreano o solo inglés. No se permite mezclar.", ja: "名前は日本語（ひらがな・カタカナ・漢字）1〜8文字、または英字1〜12文字で入力してください。", en: "Please use only Korean or only English. Mixing is not allowed.", fr: "Veuillez utiliser uniquement le coréen ou uniquement l'anglais. Le mélange n'est pas autorisé.", de: "Bitte verwende nur Koreanisch oder nur Englisch. Mischen ist nicht erlaubt.", pt: "Use apenas coreano ou apenas inglês. Não é permitido misturar.", zh: "请只使用韩文或只使用英文，不能混用。" }[lang] || "한글과 영문을 섞어서 사용할 수 없습니다.";
         } else if (hasJamo) {
             // 한글 자모만 입력 (ㄱ, ㅏ 등)
-            msg = { es: "Por favor, ingresa caracteres coreanos completos (ej: 가, no ㄱ).", ja: "名前は日本語（ひらがな・カタカナ・漢字）1〜8文字、または英字1〜12文字で入力してください。", en: "Please enter complete Korean characters (e.g., 가, not ㄱ).", fr: "Veuillez entrer des caractères coréens complets (ex : 가, pas ㄱ).", de: "Bitte gib vollständige koreanische Zeichen ein (z.B. 가, nicht ㄱ).", pt: "Insira caracteres coreanos completos (ex.: 가, não ㄱ).", zh: "请输入完整的韩文字符（例如：가，而不是ㄱ）。" }[lang] || "완성된 한글을 입력해주세요. (예: ㄱ → 가)";
+            msg = { es: "Por favor, ingresa caracteres coreanos completos (ej: 가, no ㄱ).", ja: "名前は日本語（ひらがな・カタカナ・漢字）1〜8文字、または英字1〜12文字で入力してください。", en: "Please enter complete Korean characters (e.g., 가, not ㄱ).", fr: "Veuillez entrer des caractères coréens complets (ex : 가, pas ㄱ).", de: "Bitte gib vollständige koreanische Zeichen ein (z.B. 가, nicht ㄱ).", pt: "Insira caracteres coreanos completos (ex.: 가, não ㄱ).", zh: "请输入完整的韩文字符（例如：가，而不是ㄱ）。" }[lang] || "완성된 한글로 입력해 주세요. (예: ㄱ이 아니라 가)";
         } else if (lang === 'ko') {
             // KO 페이지: 한글 1-6자 또는 영문 1-12자
             const nameRegex = hasKorean ? /^[가-힣]{1,6}$/ : /^[a-zA-Z]{1,12}$/;
             if (!nameRegex.test(name)) {
-                msg = "이름은 한글 1~6자 또는 영문 1~12자로 입력해주세요.";
+                msg = "이름은 한글 1~6자, 또는 영문 1~12자로 입력해 주세요.";
             }
         } else if (lang === 'ja') {
             // JA 페이지: 히라가나/카타카나/한자 1-8자 또는 영문 1-12자
