@@ -107,7 +107,7 @@ for (const mode of ['high', 'low']) for (const [index, character] of ['Seoyeon',
         }
         expect(new Set(requests.map(request => request.cacheKey)).size).toBe(1);
         expect(requests[0].messages[0].content).toContain(mode === 'low' ? '지금은 얘기를 듣기 어려워.' : '팔찌');
-        await expect.poll(() => logs.filter(log => log.sessionId === sessionId).length).toBe(turns * 3);
+        await expect.poll(() => logs.filter(log => log.sessionId === sessionId && log.logSource === 'realtime').length).toBe(turns * 3);
         expect(logs.filter(log => log.sessionId === sessionId).every(log => log.conversationDay === (mode === 'low' ? 4 : 5))).toBe(true);
         expect(logs.filter(log => log.sessionId === sessionId && log.role === 'assistant').map(log => log.speakerId).filter(Boolean).length).toBeGreaterThan(0);
         if (turns === 5) {

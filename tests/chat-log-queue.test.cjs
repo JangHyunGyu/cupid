@@ -6,7 +6,7 @@ const fs = require('node:fs');
 const vm = require('node:vm');
 const path = require('node:path');
 
-function harness(post = async () => new Response('{}')) {
+function harness(post = async () => new Response('{"ok":true}')) {
     const source = fs.readFileSync(process.env.CUPID_LOG_TEST_SOURCE
         || path.join(__dirname, '../assets/js/modules/config.js'), 'utf8');
     const storage = new Map();
@@ -41,7 +41,7 @@ function harness(post = async () => new Response('{}')) {
 
 test('retryable server errors survive six attempts and recover with the original ID', async () => {
     let status = 503;
-    const h = harness(async () => new Response('{}', { status }));
+    const h = harness(async () => new Response('{"ok":true}', { status }));
     h.run("enqueueCupidChatLog({ appId: 'cupid', clientMsgId: 'saved-turn', content: 'reply' })");
     for (let attempt = 1; attempt <= 8; attempt++) {
         await h.run('flushCupidChatLogQueue()');
@@ -59,7 +59,7 @@ test('retryable server errors survive six attempts and recover with the original
 });
 
 test('failed rows and their receipts do not block newer successful rows and receipts', async () => {
-    const h = harness(async body => new Response('{}', { status: body.clientMsgId === 'bad' ? 500 : 200 }));
+    const h = harness(async body => new Response('{"ok":true}', { status: body.clientMsgId === 'bad' ? 500 : 200 }));
     h.run(`enqueueCupidChatLogs(['bad', 'good'].map(clientMsgId => ({ appId: 'cupid', clientMsgId, content: 'reply' })));
         ['bad', 'good'].forEach(clientMsgId => enqueueCupidRenderAck({ appId: 'cupid', clientMsgId }));`);
     await h.run('flushCupidChatLogQueue()');
@@ -75,7 +75,7 @@ test('failed rows and their receipts do not block newer successful rows and rece
 
 test('render receipt failures also survive six attempts without blocking other receipts', async () => {
     let status = 429;
-    const h = harness(async body => new Response('{}', { status: body.clientMsgId === 'bad' ? status : 200 }));
+    const h = harness(async body => new Response('{"ok":true}', { status: body.clientMsgId === 'bad' ? status : 200 }));
     h.run(`['bad', 'good'].forEach(clientMsgId => enqueueCupidRenderAck({ appId: 'cupid', clientMsgId }));`);
     for (let attempt = 1; attempt <= 7; attempt++) {
         await h.run('flushCupidChatRenderAckQueue()');
@@ -110,7 +110,7 @@ test('network interruptions retain rows and non-retryable payload errors cannot 
     let online = false;
     const h = harness(async body => {
         if (!online) throw new TypeError('Failed to fetch');
-        return new Response('{}', { status: body.clientMsgId === 'invalid' ? 400 : 200 });
+        return new Response('{"ok":true}', { status: body.clientMsgId === 'invalid' ? 400 : 200 });
     });
     h.run(`enqueueCupidChatLogs(['invalid', 'valid'].map(clientMsgId => ({ appId: 'cupid', clientMsgId, content: 'reply' })))`);
     for (let i = 0; i < 7; i++) {
@@ -130,7 +130,7 @@ test('network interruptions retain rows and non-retryable payload errors cannot 
 test('a stalled response body times out, releases the flush, and lets the next row save', async () => {
     const h = harness(async body => body.clientMsgId === 'stalled'
         ? { ok: true, status: 200, text: () => new Promise(() => {}) }
-        : new Response('{}'));
+        : new Response('{"ok":true}'));
     h.run(`enqueueCupidChatLogs(['stalled', 'next'].map(clientMsgId => ({ appId: 'cupid', clientMsgId, content: 'reply' })))`);
     const flushing = h.run('flushCupidChatLogQueue()');
     await Promise.resolve();
@@ -150,7 +150,7 @@ test('concurrent save calls join the active flush without duplicate requests or 
     const gate = new Promise(resolve => { release = resolve; });
     const h = harness(async body => {
         if (body.clientMsgId === 'first') await gate;
-        return new Response('{}');
+        return new Response('{"ok":true}');
     });
     h.run("enqueueCupidChatLog({ appId: 'cupid', clientMsgId: 'first', content: 'reply' })");
     const first = h.run('flushCupidChatLogQueue()');
@@ -160,4 +160,21 @@ test('concurrent save calls join the active flush without duplicate requests or 
     await Promise.all([first, second]);
     assert.deepEqual(h.requests.map(r => r.body.clientMsgId), ['first', 'second']);
     assert.equal(h.logs().length, 0);
+});
+
+test('a final reply replaces its pending preview and cannot be erased by an earlier acknowledgement', async () => {
+    let release; const gate = new Promise(resolve => { release = resolve; });
+    const h = harness(async body => { if (body.content === 'preview') await gate; return new Response('{"ok":true}'); });
+    h.run("enqueueCupidChatLog({appId:'cupid',clientMsgId:'turn',content:'preview'})");
+    const pending = h.run('flushCupidChatLogQueue()');
+    h.run("enqueueCupidChatLog({appId:'cupid',clientMsgId:'turn',content:'complete response'})");
+    release(); await pending;
+    assert.deepEqual(h.requests.map(r=>r.body.content), ['preview','complete response']);
+    assert.equal(h.logs().length,0);
+});
+
+test('HTTP 200 without D1 acknowledgement retains the message for retry', async () => {
+    const h=harness(async()=>new Response('<html>upstream page</html>'));
+    h.run("enqueueCupidChatLog({appId:'cupid',clientMsgId:'unconfirmed',content:'visible'})");
+    await h.run('flushCupidChatLogQueue()');assert.equal(h.logs().length,1);assert.equal(h.logs()[0].attempts,1);
 });

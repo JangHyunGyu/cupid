@@ -94,7 +94,9 @@ for (const surface of ['single', 'group', 'gallery']) for (const lang of ['ko', 
         expect(requests).toHaveLength(1);
         const failed = await snapshot();
         expect(failed).toEqual({ ...before, input });
-        expect(logs.filter(entry => entry.logSource === 'realtime')).toHaveLength(0);
+        expect(logs.filter(entry => entry.role === 'assistant' && entry.logSource === 'realtime')).toHaveLength(0);
+        await expect.poll(() => new Set(logs.filter(entry => entry.role === 'user' && entry.content === input)
+            .map(entry => entry.clientMsgId)).size).toBe(1);
         const bodyText = await page.locator('body').innerText();
         expect(bodyText).not.toContain(placeholder);
         expect(bodyText).not.toContain('연결이 잠깐 끊겼어요');

@@ -815,6 +815,9 @@ class FreeTalkSystem {
         // → 타이핑 효과로 표시하고, AI 대화 기록에도 추가
         const displayReply = checkpoint?.lastReply;
         if (displayReply?.content || scene.text) {
+            if (!displayReply?.content) window.recordCupidVisibleChat?.({ charId: charKey,
+                role: 'assistant', content: scene.text, sessionId: sceneId,
+                conversationDay: this.stateManager.currentDay, logSource: 'opening' });
             await this.dialogueSystem.typeText(displayReply?.content || scene.text, displayReply?.speakerName || scene.name, displayReply?.segments || null, () => (
                 this._freeTalkEpoch === startEpoch
                 && this.currentSceneId === sceneId
@@ -1184,6 +1187,10 @@ class FreeTalkSystem {
         const lastReply = checkpoint?.lastReply;
         this.uiManager.updateNameTag(lastReply?.speakerName || participants[0].name);
         if (lastReply?.speakerId) this._setGroupActiveSpeaker(lastReply.speakerId);
+        if (!lastReply?.content && scene.text) window.recordCupidVisibleChat?.({ charId: 'group',
+            role: 'assistant', content: scene.text, sessionId: sceneId,
+            speakerId: participants[0]?.id, participants,
+            conversationDay: this.stateManager.currentDay, logSource: 'opening' });
         if (lastReply?.content || scene.text) await this.dialogueSystem.typeText(lastReply?.content || scene.text, lastReply?.speakerName || openingName, lastReply?.segments || null);
         if (this._freeTalkEpoch !== openingEpoch || this.currentSceneId !== sceneId) return;
         this._commitFreeTalkCheckpoint(lastReply || { content: scene.text || '', speakerName: openingName });
@@ -1459,6 +1466,12 @@ class FreeTalkSystem {
             ? (text ? `${text}\n\n${stagedImage}` : stagedImage)
             : text;
 
+        requestContext.turnMeta = this._createTurnMeta(finalContent);
+        this._activeChatTurnId = requestContext.turnMeta.turnId;
+        window.recordCupidVisibleChat?.({ charId: charKey, role: 'user', content: finalContent,
+            sessionId: requestSceneId, turnId: requestContext.turnMeta.turnId,
+            conversationDay: this.stateManager.currentDay, logSource: 'realtime' });
+
         // 텍스트 표시
         this.uiManager.messageEl.innerHTML = text ? this.dialogueSystem.parseNarration(text) : '';
         if (stagedImage) {
@@ -1554,6 +1567,9 @@ class FreeTalkSystem {
                             () => this._isRequestContextCurrent(requestContext)
                         );
                     }
+                    window.recordCupidVisibleChat?.({ charId: charKey, role: 'assistant', content: previewText,
+                        sessionId: requestSceneId, turnId: requestContext.turnMeta?.turnId,
+                        conversationDay: this.stateManager.currentDay, logSource: 'stream-preview' });
                     this.dialogueSystem.renderStreamingText(
                         previewText,
                         scene.name,
@@ -1653,7 +1669,7 @@ class FreeTalkSystem {
                 ? `cupid:ctx:${encodeFreeTalkCacheKeyPart(_lang)}:${encodeFreeTalkCacheKeyPart(charKey)}:${this._isRemote ? 'r' : 'f'}:s${_stablePromptFingerprint}`
                 : '';
             _lastCacheKey = _cacheKey;
-            const _turnMeta = this._createTurnMeta(finalContent);
+            const _turnMeta = requestContext.turnMeta;
             _lastTurnMeta = _turnMeta;
             requestContext.turnMeta = _turnMeta;
             this._activeChatTurnId = _turnMeta?.turnId || null;
@@ -1792,6 +1808,10 @@ class FreeTalkSystem {
                 const pacedReplyText = Array.isArray(parsedSegments) && parsedSegments.length > 0
                     ? parsedSegments.map(segment => segment.text).join('\n\n')
                     : reply;
+                window.recordCupidVisibleChat?.({ charId: charKey, role: 'assistant', content: reply,
+                    sessionId: requestSceneId, turnId: requestContext.turnMeta.turnId,
+                    conversationDay: this.stateManager.currentDay, responseMetadata: data,
+                    clientMsgId: data?.logIds?.assistant });
                 _streamingPreview.update(pacedReplyText, parsedSegments);
                 await _streamingPreview.drain();
                 this.dialogueSystem.finishStreamingText(scene.name);
@@ -1874,6 +1894,7 @@ class FreeTalkSystem {
                             affinityChange: affinityResult?.change,
                             affinityCurrent: affinityResult?.value,
                             assistantRenderReceipt,
+                            turnId: requestContext.turnMeta?.turnId || '',
                             responseMetadata: data
                         }))
                         .catch(logError => {
@@ -2128,6 +2149,10 @@ class FreeTalkSystem {
         for (let index = 0; index < conversations.length; index += 1) {
             this._assertRequestContext(requestContext);
             const conversation = conversations[index];
+            window.recordCupidVisibleChat?.({ charId: 'group', role: 'assistant', content: conversation.text,
+                speakerId: conversation.speakerId, participants: this.groupParticipants,
+                sessionId: requestContext.sceneId, turnId: requestContext.turnMeta?.turnId,
+                conversationDay: this.stateManager.currentDay });
             this._setGroupActiveSpeaker(conversation.speakerId);
             this.uiManager.updateNameTag(conversation.speakerName);
             if (!displayFallback) this._applyGroupExpression(conversation.expression, conversation.speakerId);
@@ -2235,6 +2260,11 @@ class FreeTalkSystem {
         const playerLabels = { ko: '나', en: 'Me', es: 'Yo', ja: '俺', fr: 'Moi', de: 'Ich', pt: 'Eu', zh: '我' };
         this.uiManager.updateNameTag(playerLabels[lang] || playerLabels.en);
         const finalContent = stagedImage ? (text ? `${text}\n\n${stagedImage}` : stagedImage) : text;
+        requestContext.turnMeta = this._createTurnMeta(finalContent);
+        this._activeChatTurnId = requestContext.turnMeta.turnId;
+        window.recordCupidVisibleChat?.({ charId: 'group', role: 'user', content: finalContent,
+            sessionId: requestSceneId, turnId: requestContext.turnMeta.turnId, speakerId: '__player__',
+            participants: this.groupParticipants, conversationDay: this.stateManager.currentDay, logSource: 'realtime' });
         this.uiManager.messageEl.innerHTML = text ? this.dialogueSystem.parseNarration(text) : '';
         if (stagedImage) {
             const img = document.createElement('img');
@@ -2284,6 +2314,10 @@ class FreeTalkSystem {
                             () => this._isRequestContextCurrent(requestContext)
                         );
                     }
+                    window.recordCupidVisibleChat?.({ charId: 'group', role: 'assistant', content: previewText,
+                        speakerId: previewSpeaker.id, participants: this.groupParticipants,
+                        sessionId: requestSceneId, turnId: requestContext.turnMeta?.turnId,
+                        conversationDay: this.stateManager.currentDay, logSource: 'stream-preview' });
                     this.dialogueSystem.renderStreamingText(
                         previewText,
                         previewSpeaker.name,
@@ -2343,7 +2377,7 @@ class FreeTalkSystem {
             lastCacheKey = stableFingerprint
                 ? `cupid:ctx:${encodeFreeTalkCacheKeyPart(lang)}:group:${this.groupParticipants.map(item => encodeFreeTalkCacheKeyPart(item.id)).join(':')}:f:s${stableFingerprint}`
                 : '';
-            lastTurnMeta = this._createTurnMeta(finalContent);
+            lastTurnMeta = requestContext.turnMeta;
             requestContext.turnMeta = lastTurnMeta;
             this._activeChatTurnId = lastTurnMeta?.turnId || null;
 

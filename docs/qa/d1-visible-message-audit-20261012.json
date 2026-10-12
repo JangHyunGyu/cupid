@@ -1,0 +1,175 @@
+{
+  "date": "2026-10-12",
+  "scope": {
+    "projects": [
+      "cupid",
+      "chatbot",
+      "harem"
+    ],
+    "included": [
+      "AI chat",
+      "visible opening greetings and scene narration",
+      "single/group/pair/supporting speakers",
+      "main/gallery/free-talk/messenger",
+      "Harem public room"
+    ],
+    "excluded": [
+      "Cupid fixed story dialogue and choices",
+      "loading indicators and administrative UI notices",
+      "hidden prompts and internal AI instructions"
+    ]
+  },
+  "productionEvidence": {
+    "windowDays": 7,
+    "source": "chat_render_acks LEFT JOIN chat_logs by app/user/client message ID",
+    "missingRenderedRows": {
+      "harem": 10,
+      "chatbot": 0,
+      "cupidAllLocales": 0
+    },
+    "missingRenderedContentLength": {
+      "min": 35,
+      "max": 207
+    },
+    "note": "Receipts prove these missing rows; absence of a receipt cannot prove a message was never displayed.",
+    "allHistoryRecoverable": {
+      "cupid": 47,
+      "cupid-en": 22,
+      "cupid-ja": 72,
+      "harem": 97,
+      "total": 238
+    }
+  },
+  "findings": [
+    {
+      "projects": [
+        "harem",
+        "cupid"
+      ],
+      "trigger": "A user sees their input but generation fails, hangs or becomes stale",
+      "fix": "Queue user message before rendering/AI awaits; correlate later writes with the same message ID"
+    },
+    {
+      "projects": [
+        "harem"
+      ],
+      "trigger": "Leave or renderer throws between pair speakers or during an automatic greeting/opening narration",
+      "fix": "Archive prepared parts before renderer callbacks; keep gameplay rollback separate from immutable display audit"
+    },
+    {
+      "projects": [
+        "chatbot",
+        "cupid"
+      ],
+      "trigger": "A fixed opening greeting or FreeTalk opening is shown without an AI request",
+      "fix": "Queue newly displayed opening messages; do not log hidden prompts or fixed Cupid story scenes"
+    },
+    {
+      "projects": [
+        "cupid",
+        "chatbot",
+        "harem"
+      ],
+      "trigger": "A visible stream is interrupted before final response processing",
+      "fix": "Journal stream previews and promote correlated final rows; late previews cannot replace finalized text"
+    },
+    {
+      "projects": [
+        "chatbot",
+        "harem",
+        "cupid receipts"
+      ],
+      "trigger": "A message or display receipt exceeds 8000 characters",
+      "fix": "Remove lossy truncation; keep complete text and archive inline image bytes in R2 before D1 acknowledgement"
+    },
+    {
+      "projects": [
+        "cupid",
+        "chatbot",
+        "harem"
+      ],
+      "trigger": "Two tabs enqueue from the same snapshot or an old in-flight write completes after a final revision",
+      "fix": "Per-message storage journals, acknowledgement markers and revision-aware removal; retain memory fallback during storage failure"
+    },
+    {
+      "projects": [
+        "shared chatbot-api"
+      ],
+      "trigger": "A render receipt reaches D1 but its chat row does not",
+      "fix": "Idempotently recover the missing assistant row from actual rendered text; later canonical logs preserve correlation"
+    },
+    {
+      "projects": [
+        "harem-room"
+      ],
+      "trigger": "AI draft broadcast is displayed, then retracted or interrupted",
+      "fix": "Persist drafts before broadcast; preserve normal public delivery sequences and retain interrupted drafts as filtered audit rows. Remove an unflushed draft only when its final archived segment contains the complete draft."
+    },
+    {
+      "projects": [
+        "harem-room"
+      ],
+      "trigger": "Final D1 flush fails twice after a room closes, or backlog exceeds the final batch",
+      "fix": "Keep durable alarm retries and drain remaining batches for closed rooms"
+    },
+    {
+      "projects": [
+        "cupid",
+        "chatbot",
+        "harem"
+      ],
+      "trigger": "HTTP 200 is returned without an explicit D1 persistence acknowledgement",
+      "fix": "Require ok:true before removing a queued record; retain invalid responses for retry"
+    }
+  ],
+  "verification": {
+    "targetedPersistenceTests": 21,
+    "cupidBrowserFaultTests": 5,
+    "chatbotAndHaremRealBrowserChat": "Passed mocked provider and D1 transport using actual application UI",
+    "visualRegression": [
+      {
+        "project": "harem",
+        "width": 390,
+        "identical": true,
+        "bounds": null
+      },
+      {
+        "project": "harem",
+        "width": 1440,
+        "identical": true,
+        "bounds": null
+      },
+      {
+        "project": "chatbot",
+        "width": 390,
+        "identical": true,
+        "bounds": null
+      },
+      {
+        "project": "chatbot",
+        "width": 1440,
+        "identical": true,
+        "bounds": null
+      },
+      {
+        "project": "cupid",
+        "width": 390,
+        "identical": true,
+        "bounds": null
+      },
+      {
+        "project": "cupid",
+        "width": 1440,
+        "identical": true,
+        "bounds": null
+      }
+    ],
+    "fullSuiteArtifacts": "D:/workspace/d1-log-audit-20261012/",
+    "notes": "Production and local verification use synthetic audit messages. Existing narration, prompts, scores, route logic, UI and backend version constants are unchanged."
+  },
+  "limits": [
+    "An offline browser that permanently loses all local storage before any server receipt cannot provide recoverable data. Memory fallback keeps pending messages while the page remains open.",
+    "Historical missing messages without either a receipt or surviving browser/server source cannot be reconstructed from absent data."
+  ],
+  "repository": "cupid"
+}

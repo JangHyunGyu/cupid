@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.311";
+const ASSET_VERSION = "2.9.312";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -780,24 +780,77 @@ const CUPID_RENDER_ACK_QUEUE_KEY = 'cupid_pending_render_acks_v1';
 let cupidChatLogFlushPromise = null;
 let cupidRenderAckFlushPromise = null;
 
-function readCupidChatLogQueue() {
-    try {
-        const parsed = JSON.parse(window.CupidStorage.getItem(CUPID_CHAT_LOG_QUEUE_KEY) || '[]');
-        return Array.isArray(parsed) ? parsed.filter(entry => entry && entry.clientMsgId) : [];
-    } catch (_) {
-        try { window.CupidStorage.removeItem(CUPID_CHAT_LOG_QUEUE_KEY); } catch (_) {}
-        return [];
+// Individual message journals prevent one tab's queue snapshot from erasing another tab's pending rows.
+class ChatLogOutbox {
+    constructor(storage) { this.storage = storage; this.snapshots = new Map(); this.memory = new Map(); this.knownKeys = new Set(); }
+    get(key) {
+        if (this.memory.has(key)) {
+            const value = this.memory.get(key);
+            this.put(key, value);
+            return value;
+        }
+        try { return this.storage().getItem(key); } catch (_) { return null; }
+    }
+    put(key, value) {
+        this.knownKeys.add(key);
+        try {
+            if (value === null) this.storage().removeItem(key); else this.storage().setItem(key, value);
+            this.memory.delete(key);
+        } catch (_) {
+            this.memory.set(key, value);
+            if (!this.warned) { this.warned = true; console.warn('[Chat log outbox] Storage unavailable; retaining pending messages in memory until delivery'); }
+        }
+    }
+    itemKey(key, id) { return key + ':item:' + encodeURIComponent(id); }
+    read(key) {
+        let legacy = [];
+        try { legacy = JSON.parse(this.get(key) || '[]'); } catch (_) {}
+        const entries = new Map((Array.isArray(legacy) ? legacy : []).filter(x => x?.clientMsgId).map(x => [x.clientMsgId, x]));
+        const keys = new Set(this.knownKeys);
+        try { const storage = this.storage(); for (let i = 0; i < storage.length; i++) keys.add(storage.key(i)); } catch (_) {}
+        const prefix = key + ':item:';
+        for (const itemKey of keys) {
+            if (!itemKey?.startsWith(prefix)) continue;
+            try {
+                const journal = JSON.parse(this.get(itemKey) || 'null');
+                if (!journal) continue;
+                const id = decodeURIComponent(itemKey.slice(prefix.length));
+                if (journal.entry) entries.set(id, journal.entry); else entries.delete(id);
+                // Acknowledgement markers outlive simultaneous writes, then expire.
+                if (!journal.entry && Date.now() - journal.at > 86400000) this.put(itemKey, null);
+            } catch (_) {}
+        }
+        const result = [...entries.values()];
+        this.snapshots.set(key, new Map(result.map(x => [x.clientMsgId, JSON.stringify(x)])));
+        return result;
+    }
+    write(key, entries) {
+        if (!this.snapshots.has(key)) this.read(key);
+        const previous = this.snapshots.get(key);
+        const next = new Map(entries.map(x => [x.clientMsgId, JSON.stringify(x)]));
+        for (const id of new Set([...previous.keys(), ...next.keys()])) {
+            if (previous.get(id) === next.get(id)) continue;
+            const itemKey = this.itemKey(key, id);
+            let current;
+            try { current = JSON.parse(this.get(itemKey) || 'null'); } catch (_) {}
+            // Do not acknowledge or replace a newer revision written by another tab.
+            if (current && JSON.stringify(current.entry || undefined) !== previous.get(id)) continue;
+            this.put(itemKey, JSON.stringify({ entry: next.has(id) ? JSON.parse(next.get(id)) : null, at: Date.now() }));
+        }
+        this.put(key, entries.length ? JSON.stringify(entries) : null);
+        this.read(key);
+        return true;
     }
 }
 
+const chatLogOutbox = new ChatLogOutbox(() => window.CupidStorage);
+
+function readCupidChatLogQueue() {
+    return chatLogOutbox.read(CUPID_CHAT_LOG_QUEUE_KEY);
+}
+
 function writeCupidChatLogQueue(queue) {
-    try {
-        if (!queue.length) window.CupidStorage.removeItem(CUPID_CHAT_LOG_QUEUE_KEY);
-        else window.CupidStorage.setItem(CUPID_CHAT_LOG_QUEUE_KEY, JSON.stringify(queue));
-        return true;
-    } catch (_) {
-        return false;
-    }
+    return chatLogOutbox.write(CUPID_CHAT_LOG_QUEUE_KEY, queue);
 }
 
 function enqueueCupidChatLog(entry) {
@@ -807,7 +860,9 @@ function enqueueCupidChatLog(entry) {
 function enqueueCupidChatLogs(entries = []) {
     const queue = readCupidChatLogQueue();
     entries.filter(entry => entry?.clientMsgId).forEach(entry => {
-        if (!queue.some(item => item.clientMsgId === entry.clientMsgId)) queue.push(entry);
+        const index = queue.findIndex(item => item.clientMsgId === entry.clientMsgId);
+        if (index < 0) queue.push(entry);
+        else queue[index] = { ...queue[index], ...entry };
     });
     return writeCupidChatLogQueue(queue);
 }
@@ -1117,15 +1172,26 @@ function findCupidReadyLogEntry(queue) {
     return entry;
 }
 
+function assertCupidLogAcknowledged(response) {
+    let data;
+    try { data = JSON.parse(response.text); } catch (_) {}
+    if (data?.ok !== true) {
+        const error = new Error('D1 delivery acknowledgement missing');
+        error.cupidStatus = 502;
+        throw error;
+    }
+    return response;
+}
+
 async function postCupidChatLogEntry(entry, options = {}) {
     const payload = stripCupidLogQueueFields(entry);
-    return sendCupidLogRequest(API_ENDPOINT + 'chat-logs', {
+    return assertCupidLogAcknowledged(await sendCupidLogRequest(API_ENDPOINT + 'chat-logs', {
         label: 'chat-logs',
         headers: { 'Content-Type': 'application/json', 'x-app-id': payload.appId || getCupidAppId() },
         body: JSON.stringify(payload),
         keepalive: options.keepalive === true,
         keepaliveOnly: options.keepaliveOnly === true
-    });
+    }));
 }
 
 function isTransientCupidChatLogError(error) {
@@ -1141,13 +1207,13 @@ async function flushCupidChatLogQueue() {
         const visited = new Set();
         while (typeof navigator === 'undefined' || navigator.onLine !== false) {
             const queue = readCupidChatLogQueue();
-            const entry = findCupidReadyLogEntry(queue.filter(item => !visited.has(item.clientMsgId)));
+            const entry = findCupidReadyLogEntry(queue.filter(item => !visited.has(JSON.stringify(item))));
             if (!entry) break;
-            visited.add(entry.clientMsgId);
+            visited.add(JSON.stringify(entry));
             try {
                 await postCupidChatLogEntry(entry);
                 const latestQueue = readCupidChatLogQueue();
-                writeCupidChatLogQueue(latestQueue.filter(item => item.clientMsgId !== entry.clientMsgId));
+                writeCupidChatLogQueue(latestQueue.filter(item => item.clientMsgId !== entry.clientMsgId || JSON.stringify(item) !== JSON.stringify(entry)));
                 sent++;
             } catch (error) {
                 handleCupidLogQueueFailure(error, entry, {
@@ -1207,23 +1273,11 @@ function getCupidRenderAckQueueId(payload = {}) {
 }
 
 function readCupidRenderAckQueue() {
-    try {
-        const parsed = JSON.parse(window.CupidStorage.getItem(CUPID_RENDER_ACK_QUEUE_KEY) || '[]');
-        return Array.isArray(parsed) ? parsed.filter(entry => entry && entry.clientMsgId) : [];
-    } catch (_) {
-        try { window.CupidStorage.removeItem(CUPID_RENDER_ACK_QUEUE_KEY); } catch (_) {}
-        return [];
-    }
+    return chatLogOutbox.read(CUPID_RENDER_ACK_QUEUE_KEY);
 }
 
 function writeCupidRenderAckQueue(queue) {
-    try {
-        if (!queue.length) window.CupidStorage.removeItem(CUPID_RENDER_ACK_QUEUE_KEY);
-        else window.CupidStorage.setItem(CUPID_RENDER_ACK_QUEUE_KEY, JSON.stringify(queue));
-        return true;
-    } catch (_) {
-        return false;
-    }
+    return chatLogOutbox.write(CUPID_RENDER_ACK_QUEUE_KEY, queue);
 }
 
 function enqueueCupidRenderAck(payload) {
@@ -1234,8 +1288,8 @@ function enqueueCupidRenderAck(payload) {
 }
 
 function makeCupidChatRenderAckPayload(entry, receipt = {}) {
-    const expectedContent = String(receipt.expectedContent || '').substring(0, 8000);
-    const renderedContent = String(receipt.renderedContent || '').substring(0, 8000);
+    const expectedContent = String(receipt.expectedContent || '');
+    const renderedContent = String(receipt.renderedContent || '');
     const expectedComparable = normalizeCupidRenderedText(expectedContent);
     const renderedComparable = normalizeCupidRenderedText(renderedContent);
     const requestedStatus = String(receipt.status || '').toLowerCase();
@@ -1263,13 +1317,13 @@ function makeCupidChatRenderAckPayload(entry, receipt = {}) {
 
 async function postCupidChatRenderAckPayload(payload, options = {}) {
     const body = stripCupidLogQueueFields(payload);
-    return sendCupidLogRequest(API_ENDPOINT + 'chat-logs/render-ack', {
+    return assertCupidLogAcknowledged(await sendCupidLogRequest(API_ENDPOINT + 'chat-logs/render-ack', {
         label: 'chat-logs/render-ack',
         headers: { 'Content-Type': 'application/json', 'x-app-id': body.appId || getCupidAppId() },
         body: JSON.stringify(body),
         keepalive: options.keepalive === true,
         keepaliveOnly: options.keepaliveOnly === true
-    });
+    }));
 }
 
 async function flushCupidChatRenderAckQueue() {
@@ -1349,6 +1403,30 @@ function sendCupidPendingLogsOnPageHide() {
     return started;
 }
 
+// Queue before rendering or awaiting AI. The server archive uses these same IDs.
+function recordCupidVisibleChat({ charId, role, content, sessionId = '', turnId = '',
+    speakerId = null, participants = [], conversationDay = null, playerName = '',
+    clientMsgId = '', responseMetadata = null, logSource = 'client-reply' } = {}) {
+    if (!charId || !String(content || '').trim()) return null;
+    const group = charId === 'group';
+    const entry = makeCupidChatLogEntry({
+        userId: getCupidDeviceId(), charId, role, content, sessionId,
+        context: group ? 'group' : '1:1', speakerId,
+        playerName: playerName || window.gameEngine?.stateManager?.playerName || '',
+        language: getCupidLanguage(), appId: getCupidAppId(),
+        conversationDay: resolveCupidConversationDay(conversationDay, sessionId),
+        groupParticipants: participants.map(item => String(item?.id || item)),
+        ...getCupidResponseLogMetadata(responseMetadata || { turnId }, getCupidLanguage()),
+        logSource, clientMsgId: clientMsgId || (turnId
+            ? `cupid-api:${turnId}:${role}${role === 'assistant' ? ':' + (speakerId || charId) : ''}` : '')
+    });
+    if (logSource === 'stream-preview' && enqueueCupidChatLog(entry)) scheduleCupidLogRetry(1);
+    else void persistCupidChatLogEntries([entry]).catch(error =>
+        reportCupidLogFailure(error, entry, 'chat_log_client_exception'));
+    return entry;
+}
+window.recordCupidVisibleChat = recordCupidVisibleChat;
+
 // user/assistant 메시지 한 페어를 D1에 저장. 전송 실패 시 오프라인 큐에서 복구한다.
 async function saveCupidChatLog({
     charId,
@@ -1361,8 +1439,10 @@ async function saveCupidChatLog({
     conversationDay = getCurrentCupidConversationDay(),
     affinityChange = null,
     affinityCurrent = null,
-    responseMetadata = null
+    responseMetadata = null,
+    turnId = ''
 }) {
+    responseMetadata = { ...(responseMetadata || {}), turnId: responseMetadata?.turnId || turnId };
     if (!charId) {
         reportCupidLogFailure(new Error('chat log skipped: missing charId'), { sessionId, context, content: userContent }, 'chat_log_skipped', {
             reason: 'missing_char_id'
@@ -1382,7 +1462,7 @@ async function saveCupidChatLog({
         logSource: 'realtime'
     };
     const entries = [];
-    if (userContent) entries.push(makeCupidChatLogEntry({ ...shared, role: 'user', content: userContent, clientMsgId: responseMetadata?.logIds?.user }));
+    if (userContent) entries.push(makeCupidChatLogEntry({ ...shared, role: 'user', content: userContent, clientMsgId: responseMetadata?.logIds?.user || (responseMetadata?.turnId ? `cupid-api:${responseMetadata.turnId}:user` : '') }));
     const assistantLogContent = window.CupidFreeTalkCore?.resolveCupidAssistantLogContent?.(
         assistantContent,
         assistantRenderReceipt
@@ -1393,7 +1473,7 @@ async function saveCupidChatLog({
             ...shared,
             role: 'assistant',
             content: assistantLogContent,
-            clientMsgId: responseMetadata?.logIds?.assistant,
+            clientMsgId: responseMetadata?.logIds?.assistant || (responseMetadata?.turnId ? `cupid-api:${responseMetadata.turnId}:assistant:${charId}` : ''),
             affinityChange,
             affinityCurrent,
             affinityCorrectionIds: window.CupidAffinityCorrections?.ids(charId) || []
@@ -1461,7 +1541,7 @@ async function saveCupidGroupChatLog({
             role: 'user',
             content: userContent,
             speakerId: '__player__',
-            clientMsgId: responseMetadata?.logIds?.user || makeCupidGroupChatLogClientId({ turnId, role: 'user', content: userContent })
+            clientMsgId: responseMetadata?.logIds?.user || (turnId ? `cupid-api:${turnId}:user` : '') || makeCupidGroupChatLogClientId({ turnId, role: 'user', content: userContent })
         }));
     }
     for (let messageIndex = 0; messageIndex < assistantMessages.length; messageIndex++) {
@@ -1481,7 +1561,7 @@ async function saveCupidGroupChatLog({
             affinityChange: message.affinityChange,
             affinityCurrent: message.affinityCurrent,
             affinityCorrectionIds: window.CupidAffinityCorrections?.ids(speakerId) || [],
-            clientMsgId: responseMetadata?.logIds?.assistants?.[speakerId] || makeCupidGroupChatLogClientId({
+            clientMsgId: responseMetadata?.logIds?.assistants?.[speakerId] || (turnId ? `cupid-api:${turnId}:assistant:${speakerId}` : '') || makeCupidGroupChatLogClientId({
                 turnId,
                 role: 'assistant',
                 speakerId,

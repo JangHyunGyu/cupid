@@ -953,6 +953,12 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             ? (text ? `${text}\n\n${stagedImage}` : stagedImage)
             : text;
 
+        requestContext.turnMeta = this._createTurnMeta(finalContent);
+        this._activeChatTurnId = requestContext.turnMeta.turnId;
+        window.recordCupidVisibleChat?.({ charId: requestCharKey, role: 'user', content: finalContent,
+            sessionId: 'gallery-freetalk', turnId: requestContext.turnMeta.turnId,
+            playerName: this.progress.getPlayerName() || '', logSource: 'realtime' });
+
         const msgEl = document.getElementById('message');
         const nameTag = document.getElementById('name-tag');
         const playerName = this.progress.getPlayerName() || this._L('자기', 'Honey', 'Cariño', '俺', 'Chéri', 'Liebling', 'Amor', '亲爱的');
@@ -1036,6 +1042,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                         document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
                         this._beginStreamingText(requestContext);
                     }
+                    window.recordCupidVisibleChat?.({ charId: requestCharKey, role: 'assistant', content: previewText,
+                        sessionId: 'gallery-freetalk', turnId: requestContext.turnMeta?.turnId,
+                        playerName: this.progress.getPlayerName() || '', logSource: 'stream-preview' });
                     this._renderStreamingText(previewText, previewSegments, requestContext);
                 },
                 onReset: () => {
@@ -1125,7 +1134,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 ? `cupid-gft:ctx:${encodeGalleryFreeTalkCacheKeyPart(this.lang)}:${encodeGalleryFreeTalkCacheKeyPart(requestCharId)}:s${_stablePromptFingerprint}`
                 : '';
             _lastCacheKey = _gftCacheKey;
-            const _turnMeta = this._createTurnMeta(finalContent);
+            const _turnMeta = requestContext.turnMeta;
             _lastTurnMeta = _turnMeta;
             requestContext.turnMeta = _turnMeta;
             this._activeChatTurnId = _turnMeta?.turnId || null;
@@ -1242,6 +1251,10 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             const pacedDisplayText = Array.isArray(displaySegments) && displaySegments.length > 0
                 ? displaySegments.map(segment => segment.text).join('\n\n')
                 : displayText;
+            window.recordCupidVisibleChat?.({ charId: requestCharKey, role: 'assistant', content: displayText,
+                sessionId: 'gallery-freetalk', turnId: requestContext.turnMeta.turnId,
+                playerName: this.progress.getPlayerName() || '', responseMetadata: data,
+                clientMsgId: data?.logIds?.assistant });
             _streamingPreview.update(pacedDisplayText, displaySegments);
             await _streamingPreview.drain();
             this._finishStreamingText();
@@ -1306,6 +1319,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                         affinityChange: affinityResult?.change,
                         affinityCurrent: affinityResult?.value,
                         assistantRenderReceipt,
+                        turnId: requestContext.turnMeta?.turnId || '',
                         responseMetadata: data
                     }))
                     .catch(logError => {

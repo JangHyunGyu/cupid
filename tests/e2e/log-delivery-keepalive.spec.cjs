@@ -143,8 +143,8 @@ for (const [lang, sample] of Object.entries(CASES)) {
         expect(shown.text.replace(/\s+/g, '')).toContain(sample.reply.replace(/\s+/g, ''));
 
         // chat_logs: 사용자·답변 행이 이 턴의 turnId(request_id)로 도착합니다.
-        await expect.poll(() => seen.chatLogs.filter(item => item.body.requestId === seen.ai[0].turnId).length, { timeout: 20_000 }).toBe(2);
-        const assistant = seen.chatLogs.find(item => item.body.role === 'assistant' && item.body.requestId === seen.ai[0].turnId).body;
+        await expect.poll(() => new Set(seen.chatLogs.filter(item => item.body.requestId === seen.ai[0].turnId).map(item => item.body.clientMsgId)).size, { timeout: 20_000 }).toBe(2);
+        const assistant = seen.chatLogs.findLast(item => item.body.role === 'assistant' && item.body.logSource === 'realtime' && item.body.requestId === seen.ai[0].turnId).body;
         expect(assistant.appId).toBe(sample.appId);
         expect(assistant.userId).toBe(deviceId);
         expect(assistant.content).toContain(sample.reply);
@@ -192,8 +192,8 @@ test('ko: repeated HTTP 500 retains the whole turn and recovers after reload (ke
     }, CASES.ko.input);
 
     // 전송 한도가 찬 상태에서도 사용자·답변 기록의 첫 실패 보고 도착 확인
-    await expect.poll(() => seen.errorLogs.filter(body => body.errorType === 'chat_log_send_failed').length, { timeout: 20_000 }).toBe(2);
-    const firstReport = seen.errorLogs.find(body => body.errorType === 'chat_log_send_failed');
+    await expect.poll(() => seen.errorLogs.filter(body => body.errorType === 'chat_log_send_failed' && body.extra?.clientMsgId.includes(seen.ai[0].turnId)).length, { timeout: 20_000 }).toBe(2);
+    const firstReport = seen.errorLogs.find(body => body.errorType === 'chat_log_send_failed' && body.extra?.clientMsgId.includes(seen.ai[0].turnId));
     expect(firstReport.extra.httpStatus).toBe(500);
     expect(firstReport.extra.attempts).toBe(1);
     expect(firstReport.message).toMatch(/chat-logs HTTP 500/);
@@ -204,8 +204,8 @@ test('ko: repeated HTTP 500 retains the whole turn and recovers after reload (ke
     for (let attempt = 2; attempt <= 6; attempt += 1) {
         await page.evaluate(async () => {
             const key = 'cupid_pending_chat_logs_v1';
-            const queue = JSON.parse(window.CupidStorage.getItem(key) || '[]');
-            window.CupidStorage.setItem(key, JSON.stringify(queue.map(item => ({ ...item, nextAttemptAt: 0 }))));
+            const queue = readCupidChatLogQueue();
+            writeCupidChatLogQueue(queue.map(item => ({ ...item, nextAttemptAt: 0 })));
             await window.flushCupidChatLogQueue();
         });
     }
@@ -213,19 +213,33 @@ test('ko: repeated HTTP 500 retains the whole turn and recovers after reload (ke
     expect(seen.chatLogs.filter(item => item.body.clientMsgId === headId)).toHaveLength(6);
     expect(seen.errorLogs.filter(body => body.errorType === 'chat_log_send_failed' && body.extra?.clientMsgId === headId)).toHaveLength(1);
     const queue = await page.evaluate(() => JSON.parse(window.CupidStorage.getItem('cupid_pending_chat_logs_v1') || '[]'));
-    expect(queue).toHaveLength(2);
+    expect(queue).toHaveLength(3);
     expect(queue.every(entry => entry.attempts === 6)).toBe(true);
     expect(seen.errorLogs.some(body => body.errorType === 'chat_log_queue_dropped')).toBe(false);
 
     seen.chatLogStatus = 200;
     await page.evaluate(() => {
         const key = 'cupid_pending_chat_logs_v1';
-        const queue = JSON.parse(localStorage.getItem(key));
-        localStorage.setItem(key, JSON.stringify(queue.map(item => ({ ...item, nextAttemptAt: 0 }))));
+        const queue = readCupidChatLogQueue();
+        writeCupidChatLogQueue(queue.map(item => ({ ...item, nextAttemptAt: 0 })));
     });
     await page.reload();
     await expect.poll(() => page.evaluate(() => JSON.parse(localStorage.getItem('cupid_pending_chat_logs_v1') || '[]').length)).toBe(0);
     await expect.poll(() => seen.renderAcks.length).toBe(1);
     await expect.poll(() => page.evaluate(() => JSON.parse(localStorage.getItem('cupid_pending_render_acks_v1') || '[]').length)).toBe(0);
-    expect(seen.chatLogs.slice(-2).map(item => item.body.clientMsgId)).toEqual(queue.map(item => item.clientMsgId));
+    expect(seen.chatLogs.slice(-queue.length).map(item => item.body.clientMsgId)).toEqual(queue.map(item => item.clientMsgId));
+});
+
+test('a displayed user message is archived even when generation never answers', async ({ page }) => {
+    const seen = await installNetwork(page);
+    await openFreeTalk(page, '/game-en.html');
+    await page.route('**/api/ai', () => {});
+    await page.evaluate(() => {
+        const e = window.gameEngine;
+        e.uiManager.chatInput.value = 'Visible input before an interrupted request.';
+        void e.freeTalkSystem.sendChatMessage(id => e.sceneRenderer.getScene(id));
+    });
+    await expect.poll(() => seen.chatLogs.some(x => x.body.role === 'user'
+        && x.body.content === 'Visible input before an interrupted request.')).toBe(true);
+    expect(seen.chatLogs.some(x => x.body.logSource === 'opening')).toBe(true);
 });

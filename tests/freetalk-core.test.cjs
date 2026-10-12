@@ -1824,15 +1824,9 @@ test('group backup logs save one player row then one row per character with cano
     }
     assert.equal(queued[1].affinityCurrent, 18);
     assert.equal(queued[2].affinityCurrent, 27);
-    assert.equal(queued[0].clientMsgId, logSandbox.__makeCupidGroupChatLogClientId({
-        turnId: 'group-turn-1', role: 'user', content: '내가 책임질게.'
-    }));
-    assert.equal(queued[1].clientMsgId, logSandbox.__makeCupidGroupChatLogClientId({
-        turnId: 'group-turn-1', role: 'assistant', speakerId: 'Teacher', messageIndex: 0, content: '먼저 내 말을 들어.'
-    }));
-    assert.equal(queued[2].clientMsgId, logSandbox.__makeCupidGroupChatLogClientId({
-        turnId: 'group-turn-1', role: 'assistant', speakerId: 'Dain', messageIndex: 1, content: '저도 들을게요.'
-    }));
+    assert.equal(queued[0].clientMsgId, 'cupid-api:group-turn-1:user');
+    assert.equal(queued[1].clientMsgId, 'cupid-api:group-turn-1:assistant:Teacher');
+    assert.equal(queued[2].clientMsgId, 'cupid-api:group-turn-1:assistant:Dain');
 
     for (const routeGroup of [
         { day: 2, sessionId: 'after2_seo_group_talk', turnId: 'group-day2', participants: ['Seoyeon', 'Dain'] },
@@ -1963,8 +1957,8 @@ test('Cupid chat entries and every free-talk path preserve actual AI routing met
     assert.equal(entry.providerRoute, 'openrouter:provider:actual/provider-model');
     assert.equal(entry.outputLanguage, 'ja');
     assert.equal(entry.logSource, 'realtime');
-    assert.equal((freeTalk.match(/responseMetadata: data/g) || []).length, 2);
-    assert.equal((gallery.match(/responseMetadata: data/g) || []).length, 1);
+    assert.equal((freeTalk.match(/responseMetadata: data/g) || []).length, 3);
+    assert.equal((gallery.match(/responseMetadata: data/g) || []).length, 2);
 });
 
 test('existing local group turns are recovered even when the legacy migration flag is already set', async () => {

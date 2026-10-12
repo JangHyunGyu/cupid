@@ -112,7 +112,7 @@ for (const [lang, character, lead, offer, startAffinity] of [
             }
         }
         expect(new Set(requests.map(request => request.cacheKey)).size).toBe(1);
-        await expect.poll(() => chatLogs.filter(entry => entry.sessionId === sceneId).length).toBe(10);
+        await expect.poll(() => new Set(chatLogs.filter(entry => entry.sessionId === sceneId && entry.logSource === 'realtime').map(entry => entry.clientMsgId)).size).toBe(10);
         expect(chatLogs.filter(entry => entry.sessionId === sceneId).every(entry => entry.conversationDay === 4)).toBe(true);
         await page.waitForFunction(() => !window.gameEngine.freeTalkSystem.isFreeTalking);
         await page.evaluate(() => window.CupidRouteTelemetry.flush());
