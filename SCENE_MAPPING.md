@@ -252,7 +252,7 @@
 | 씬 ID | 배경 | 캐릭터 | 화자 | 장면 설명 |
 |--------|------|--------|------|-----------|
 | morning2_start ~ 2 | room_school.png | 없음 | 주인공 | 등교, 교실 도착 |
-| morning2_dain_1 ~ 6 | room_school.png | dain_normal/laugh | 다인 | 등짝 인사, "내가 먼저 친구했지" |
+| morning2_greet_dain_1 ~ others_2 | room_school.png | dain_laugh | 다인 | 등짝 인사 |
 | morning2_note_1 ~ 3 | room_school.png | 없음 | 주인공 | 유나 쪽지: "도서관 별관으로" |
 | morning2_seo_1 ~ 5 | room_school.png | seyoun_normal/laugh | 서연 | 아침 인사 |
 | morning2_minsu_1 ~ 3 | room_school.png | minsu_normal/smirk | 민수 | "학생회장이 인사하러 오냐?" |

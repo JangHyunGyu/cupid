@@ -551,26 +551,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": null,
         "next": "day4_temptation_yuna_freetalk"
     },
-    "day4_adult_counteroffer_soft_seoyeon": {
-        "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "day4_adult_counteroffer_soft_return_home"
-    },
-    "day4_adult_counteroffer_soft_dain": {
-        "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/dain_normal.png",
-        "next": "day4_adult_counteroffer_soft_return_home"
-    },
-    "day4_adult_counteroffer_soft_yuna": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_normal.png",
-        "next": "day4_adult_counteroffer_soft_return_home"
-    },
-    "day4_adult_counteroffer_soft_return_home": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
-        "next": "day4_adult_night_regret_target_branch"
-    },
     "day4_adult_night_regret_target_branch": {
         "background": "assets/images/background/room_my.png",
         "character": null,
@@ -2390,21 +2370,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "day4_adult_night_regret_target_branch"
-    },
-    "day4_student_counteroffer_soft_seoyeon": {
-        "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "day4_night_regret"
-    },
-    "day4_student_counteroffer_soft_dain": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
-        "next": "day4_night_regret"
-    },
-    "day4_student_counteroffer_soft_yuna": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_normal.png",
-        "next": "day4_night_regret"
     },
     "day4_night_regret": {
         "background": "assets/images/background/room_my.png",

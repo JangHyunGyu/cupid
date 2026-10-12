@@ -71,30 +71,6 @@
         "name": "{name}",
         "text": "*I fold the note and hold it in my hand, pressing down the crease inside my palm.*"
     },
-    "morning2_dain_1": {
-        "name": "{name}",
-        "text": "*The moment I open the classroom door, a palm smacks me between the shoulder blades.*"
-    },
-    "morning2_dain_2": {
-        "name": "Dain",
-        "text": "You're here! Morning!"
-    },
-    "morning2_dain_3": {
-        "name": "Dain",
-        "text": "Startled you? Just getting you awake!"
-    },
-    "morning2_dain_4": {
-        "name": "{name}",
-        "text": "Isn't it a little early for this much energy?"
-    },
-    "morning2_dain_5": {
-        "name": "Dain",
-        "text": "This IS normal! You're the one running on empty!"
-    },
-    "morning2_dain_6": {
-        "name": "{name}",
-        "text": "Fine, I'm short on energy. Then share some with me. Just don't try to shout it into me. *Dain's voice rings through the classroom before homeroom.*"
-    },
     "morning2_yuna_seen": {
         "name": "Yuna",
         "text": "...Had you ever been here before you transferred?"

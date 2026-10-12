@@ -3783,60 +3783,6 @@
 
 ---
 
-### `morning2_dain_1`
-- 배경: `room_school.png`
-- 다음: `morning2_dain_2`
-
-- 캐릭터: `없음`
-**{name}**: *교실 문을 여는 순간 손바닥이 등짝을 탁 친다.*
-
----
-
-### `morning2_dain_2`
-- 배경: `room_school.png`
-- 다음: `morning2_dain_3`
-
-- 캐릭터: `dain_normal.png`
-**다인**: 왔어? 좋은 아침.
-
----
-
-### `morning2_dain_3`
-- 배경: `room_school.png`
-- 다음: `morning2_dain_4`
-
-- 캐릭터: `dain_laugh.png`
-**다인**: 놀랐어? 아침부터 기운 좀 내라고!
-
----
-
-### `morning2_dain_4`
-- 배경: `room_school.png`
-- 다음: `morning2_dain_5`
-
-- 캐릭터: `dain_laugh.png`
-**{name}**: 너 아침부터 에너지 과잉 아냐?
-
----
-
-### `morning2_dain_5`
-- 배경: `room_school.png`
-- 다음: `morning2_dain_6`
-
-- 캐릭터: `dain_laugh.png`
-**다인**: 이게 정상이야! 네가 부족한 거야!
-
----
-
-### `morning2_dain_6`
-- 배경: `room_school.png`
-- 다음: `morning2_yuna_seen`
-
-- 캐릭터: `dain_laugh.png`
-**{name}**: 그래, 나 부족하다. 그러니까 기운 좀 나눠 줘. 목소리로 밀어붙이지만 말고. *조회 전 교실에 다인의 목소리가 울린다.*
-
----
-
 ### `morning2_yuna_seen`
 - 배경: `room_school.png`
 - 다음: `morning2_note_1`
@@ -22428,60 +22374,6 @@
 
 ---
 
-### `wall_yuna_skip`
-- 배경: `room_my.png`
-- 다음: `day4_night_reflect`
-
-- 캐릭터: `없음`
-**{name}**: *유나에게서는 쪽지도, 메시지도 없다. 화면만 꺼진다.*
-
----
-
-### `day4_night_reflect`
-- 배경: `room_my.png`
-- 다음: `day4_hidden_msg_branch`
-
-- 캐릭터: `없음`
-**{name}**: *오늘 주고받은 메시지를 시간순으로 다시 올려 본다. 내일은 일요일 학교 행사다.*
-
----
-
-### `day4_adult_counteroffer_soft_seoyeon`
-- 배경: `top_school.png`
-- 다음: `day4_adult_counteroffer_soft_return_home`
-
-- 캐릭터: `seyoun_normal.png`
-**서연**: *서연을 따라 옥상에 올라간다. 난간 앞에 선 서연이 손바닥을 편다.* 오늘은 여기 있어 줘. 그거면 돼.
-
----
-
-### `day4_adult_counteroffer_soft_dain`
-- 배경: `school_back.png`
-- 다음: `day4_adult_counteroffer_soft_return_home`
-
-- 캐릭터: `dain_normal.png`
-**다인**: *체육관 앞 벤치에 나란히 앉는다. 다인은 무릎을 편하게 놓고 공을 옆에 내려둔다.* 오늘은 그냥 같이 있어 줘.
-
----
-
-### `day4_adult_counteroffer_soft_yuna`
-- 배경: `yuna_hideout.png`
-- 다음: `day4_adult_counteroffer_soft_return_home`
-
-- 캐릭터: `yuna_normal.png`
-**유나**: *별관으로 들어가 빈 의자에 앉는다. 유나는 재킷을 벗지 않은 채 맞은편 책을 덮는다.* 오늘은 가지 마. 말 안 해도 돼.
-
----
-
-### `day4_adult_counteroffer_soft_return_home`
-- 배경: `room_my.png`
-- 다음: `day4_adult_night_regret_target_branch`
-
-- 캐릭터: `없음`
-**{name}**: *학교를 나와 집으로 돌아간다. 조금 전까지 나눈 말이 현관문을 닫은 뒤에도 남아 있다.*
-
----
-
 ### `day4_adult_night_regret_target_branch`
 - 배경: `room_my.png`
 - 분기:
@@ -22510,33 +22402,6 @@
 
 - 캐릭터: `nurse_worried.png` @ 0.35
 **보건선생님**: *집에 와서 휴대폰을 켠다. 괜찮다는 답을 쓰려다 손이 멎는다.* 아까 표정이 안 좋아 보였는데 집에는 잘 갔어?
-
----
-
-### `day4_student_counteroffer_soft_seoyeon`
-- 배경: `top_school.png`
-- 다음: `day4_night_regret`
-
-- 캐릭터: `seyoun_normal.png`
-**서연**: *서연을 따라 옥상에 올라간다. 난간 앞에 선 서연이 손바닥을 편다.* 오늘은 여기 있어 줘. 그거면 돼.
-
----
-
-### `day4_student_counteroffer_soft_dain`
-- 배경: `gym.png`
-- 다음: `day4_night_regret`
-
-- 캐릭터: `dain_normal.png`
-**다인**: *체육관으로 들어가자 다인이 공을 내려놓고 벤치에 앉는다. 내 쪽을 보며 옆자리를 두드린다.* 오늘은 그냥 같이 앉아 있어 줘.
-
----
-
-### `day4_student_counteroffer_soft_yuna`
-- 배경: `yuna_hideout.png`
-- 다음: `day4_night_regret`
-
-- 캐릭터: `yuna_normal.png`
-**유나**: *별관으로 들어가 빈 의자에 앉는다. 유나는 재킷을 벗지 않은 채 맞은편 책을 덮는다.* 오늘은 가지 마. 말 안 해도 돼.
 
 ---
 
@@ -22604,6 +22469,24 @@
 
 - 캐릭터: `없음`
 **{name}**: *쓰다 지운 답장. 입력창은 비어 있다.*
+
+---
+
+### `wall_yuna_skip`
+- 배경: `room_my.png`
+- 다음: `day4_night_reflect`
+
+- 캐릭터: `없음`
+**{name}**: *유나에게서는 쪽지도, 메시지도 없다. 화면만 꺼진다.*
+
+---
+
+### `day4_night_reflect`
+- 배경: `room_my.png`
+- 다음: `day4_hidden_msg_branch`
+
+- 캐릭터: `없음`
+**{name}**: *오늘 주고받은 메시지를 시간순으로 다시 올려 본다. 내일은 일요일 학교 행사다.*
 
 ---
 

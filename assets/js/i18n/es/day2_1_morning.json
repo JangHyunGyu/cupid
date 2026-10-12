@@ -71,30 +71,6 @@
         "name": "{name}",
         "text": "*Doblo la nota y la aprieto en la mano, aplastando el pliegue dentro de la palma.*"
     },
-    "morning2_dain_1": {
-        "name": "{name}",
-        "text": "*En cuanto abro la puerta del salón, una palma me golpea la espalda.*"
-    },
-    "morning2_dain_2": {
-        "name": "Dain",
-        "text": "¿Ya llegaste? Buenos días."
-    },
-    "morning2_dain_3": {
-        "name": "Dain",
-        "text": "¿Te asusté? ¡Era para despertarte!"
-    },
-    "morning2_dain_4": {
-        "name": "{name}",
-        "text": "¿No es un poco temprano para tanta energía?"
-    },
-    "morning2_dain_5": {
-        "name": "Dain",
-        "text": "¡Esto es lo normal! ¡El que anda flojo eres tú!"
-    },
-    "morning2_dain_6": {
-        "name": "{name}",
-        "text": "Vale, me falta energía. Pues comparte un poco. Pero no intentes metérmela a gritos. *La voz de Dain resuena en el aula antes de la tutoría.*"
-    },
     "morning2_yuna_seen": {
         "name": "Yuna",
         "text": "...¿Habías estado aquí antes de cambiarte de colegio?"

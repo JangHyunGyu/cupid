@@ -126,36 +126,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "character": "assets/images/characters/dain_normal.png",
         "next": "morning2_seo_4"
     },
-    "morning2_dain_1": {
-        "background": "assets/images/background/room_school.png",
-        "character": null,
-        "next": "morning2_dain_2"
-    },
-    "morning2_dain_2": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_normal.png",
-        "next": "morning2_dain_3"
-    },
-    "morning2_dain_3": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_laugh.png",
-        "next": "morning2_dain_4"
-    },
-    "morning2_dain_4": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_laugh.png",
-        "next": "morning2_dain_5"
-    },
-    "morning2_dain_5": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_laugh.png",
-        "next": "morning2_dain_6"
-    },
-    "morning2_dain_6": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_laugh.png",
-        "next": "morning2_yuna_seen"
-    },
     "morning2_yuna_seen": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_normal.png",

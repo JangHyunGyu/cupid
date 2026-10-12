@@ -1102,34 +1102,6 @@
         "name": "{name}",
         "text": "*见面之后，我回到家。前门关上的时候，房间里只剩下手机的光亮。*"
     },
-    "day4_adult_counteroffer_soft_seoyeon": {
-        "name": "书妍",
-        "text": "*我跟着书妍上了天台。她在栏杆边停下，张开手。*今天就留在这里陪我。这样就够了。"
-    },
-    "day4_adult_counteroffer_soft_dain": {
-        "name": "多因",
-        "text": "*我们坐在体育馆外的长椅上。多因把膝盖放舒服，把球放到一边。*今天就陪着我吧。"
-    },
-    "day4_adult_counteroffer_soft_yuna": {
-        "name": "由娜",
-        "text": "*我走进别馆，拉出一把空椅子。由娜没有脱下外套，合上了对面的书。*今天别走。你什么都不用说。"
-    },
-    "day4_student_counteroffer_soft_seoyeon": {
-        "name": "书妍",
-        "text": "*我跟着书妍上了天台。她在栏杆边停下，张开手。*今天就留在这里陪我。这样就够了。"
-    },
-    "day4_student_counteroffer_soft_dain": {
-        "name": "多因",
-        "text": "*我走进体育馆，多因放下球，坐到长椅上。她看着我，拍了拍身边的座位。*今晚就陪我坐一会儿。"
-    },
-    "day4_student_counteroffer_soft_yuna": {
-        "name": "由娜",
-        "text": "*我走进别馆，拉出一把空椅子。由娜没有脱下外套，合上了对面的书。*今天别走。你什么都不用说。"
-    },
-    "day4_adult_counteroffer_soft_return_home": {
-        "name": "{name}",
-        "text": "*我离开学校，回到家。关上前门之后，我们刚才说过的话依然留在耳边。*"
-    },
     "wall_seo_overpromise_react": {
         "name": "书妍",
         "text": "*书妍摇了摇头。*不要承诺什么都能修好。现在，只要听我说。"

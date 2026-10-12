@@ -71,30 +71,6 @@
         "name": "{name}",
         "text": "*我把纸条折好攥住，手里的折痕被压紧了。*"
     },
-    "morning2_dain_1": {
-        "name": "{name}",
-        "text": "*我一推开教室门，就有一只手掌拍在了我的两块肩胛骨之间。*"
-    },
-    "morning2_dain_2": {
-        "name": "多因",
-        "text": "你来啦！早！"
-    },
-    "morning2_dain_3": {
-        "name": "多因",
-        "text": "吓到你了？就是帮你醒醒神！"
-    },
-    "morning2_dain_4": {
-        "name": "{name}",
-        "text": "一大早就这么有精神，是不是有点太早了？"
-    },
-    "morning2_dain_5": {
-        "name": "多因",
-        "text": "这才是正常水平！是你自己没电！"
-    },
-    "morning2_dain_6": {
-        "name": "{name}",
-        "text": "好，我精力不够。那就分我一点嘛，别光靠声音压过来。*早会前的教室里响着多因的声音。*"
-    },
     "morning2_yuna_seen": {
         "name": "由娜",
         "text": "……你转学之前，来过这里吗？"

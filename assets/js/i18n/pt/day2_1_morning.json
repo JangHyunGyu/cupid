@@ -71,30 +71,6 @@
         "name": "{name}",
         "text": "*Dobro o bilhete e o seguro na mão, comprimindo a dobra na palma.*"
     },
-    "morning2_dain_1": {
-        "name": "{name}",
-        "text": "*No instante em que abro a porta da sala, uma palma bate nas minhas costas.*"
-    },
-    "morning2_dain_2": {
-        "name": "Dain",
-        "text": "Chegou? Bom dia."
-    },
-    "morning2_dain_3": {
-        "name": "Dain",
-        "text": "Assustou? Era para te acordar!"
-    },
-    "morning2_dain_4": {
-        "name": "{name}",
-        "text": "Não é cedo demais pra tanta energia?"
-    },
-    "morning2_dain_5": {
-        "name": "Dain",
-        "text": "Isso aqui é o normal! Você que tá em modo poupança!"
-    },
-    "morning2_dain_6": {
-        "name": "{name}",
-        "text": "Tá, falta energia. Então divide um pouco comigo. Só não tenta passar tudo no grito. *A voz de Dain ecoa na sala antes da chamada.*"
-    },
     "morning2_yuna_seen": {
         "name": "Yuna",
         "text": "...Você já tinha vindo aqui antes de se transferir?"

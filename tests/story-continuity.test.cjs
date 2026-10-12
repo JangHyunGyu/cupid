@@ -212,7 +212,6 @@ test('adult route counteroffers occur after the check-in promise and return home
         }
     }
     assert.equal(all.day4_adult_return_home.next, 'day4_hidden_msg_branch');
-    assert.equal(all.day4_adult_counteroffer_soft_return_home.next, 'day4_adult_night_regret_target_branch');
 });
 
 test('Minsu recalls a warning only on paths where he actually gave it', () => {
@@ -381,7 +380,7 @@ test('first-week continuity preserves unsent apologies, injury limits and spoken
     assert.doesNotMatch(ko.day4_harem_fallout_3.text, /컵/);
     assert.match(ko.wall_dain_21.text, /걷는 것도 아팠/);
     assert.doesNotMatch(ko.wall_dain_21.text, /뛰어다니/);
-    for (const id of ['wall_seo_glimpse_2', 'wall_yuna_dain_tempt_2', 'day4_student_counteroffer_soft_dain']) {
+    for (const id of ['wall_seo_glimpse_2', 'wall_yuna_dain_tempt_2']) {
         assert.doesNotMatch(ko[id].text, /열 번|토스/);
     }
     assert.match(ko.true_dain_6.text, /재활은 계속/);

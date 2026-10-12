@@ -71,30 +71,6 @@
         "name": "{name}",
         "text": "*Ich falte den Zettel und halte ihn in der Hand. In meiner Handfläche wird die Falte zusammengedrückt.*"
     },
-    "morning2_dain_1": {
-        "name": "{name}",
-        "text": "*In dem Moment, als ich die Klassentür öffne, klatscht mir eine Hand zwischen die Schulterblätter.*"
-    },
-    "morning2_dain_2": {
-        "name": "Dain",
-        "text": "Da bist du ja! Guten Morgen!"
-    },
-    "morning2_dain_3": {
-        "name": "Dain",
-        "text": "Erschrocken? Du sollst doch wach werden!"
-    },
-    "morning2_dain_4": {
-        "name": "{name}",
-        "text": "Ist es nicht etwas früh für so viel Energie?"
-    },
-    "morning2_dain_5": {
-        "name": "Dain",
-        "text": "Das ist völlig normal! Du hast nur zu wenig Energie!"
-    },
-    "morning2_dain_6": {
-        "name": "{name}",
-        "text": "Gut, mir fehlt Energie. Dann gib mir was davon ab. Aber versuch nicht, sie mir zuzubrüllen. *Dains Stimme hallt vor der Morgenbesprechung durchs Klassenzimmer.*"
-    },
     "morning2_yuna_seen": {
         "name": "Yuna",
         "text": "...Warst du vor deinem Schulwechsel schon einmal hier?"

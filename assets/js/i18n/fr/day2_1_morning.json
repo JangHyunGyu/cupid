@@ -71,30 +71,6 @@
         "name": "{name}",
         "text": "*Je plie le billet et le serre dans ma main ; le pli s'aplatit dans ma paume.*"
     },
-    "morning2_dain_1": {
-        "name": "{name}",
-        "text": "*Au moment où j'ouvre la porte de la classe, une paume me claque dans le dos.*"
-    },
-    "morning2_dain_2": {
-        "name": "Dain",
-        "text": "T'es là ?! Bonjour !!"
-    },
-    "morning2_dain_3": {
-        "name": "Dain",
-        "text": "Je t’ai fait peur ? C’était pour te réveiller !"
-    },
-    "morning2_dain_4": {
-        "name": "{name}",
-        "text": "C'est pas un peu tôt pour autant d'énergie ?"
-    },
-    "morning2_dain_5": {
-        "name": "Dain",
-        "text": "C'est ça la norme ! C'est toi qui es à plat !"
-    },
-    "morning2_dain_6": {
-        "name": "{name}",
-        "text": "D'accord, j'en manque. Alors partage un peu. Mais essaie pas de me la donner en criant. *La voix de Dain résonne dans la classe avant l'appel.*"
-    },
     "morning2_yuna_seen": {
         "name": "Yuna",
         "text": "...Tu étais déjà venu ici avant ton transfert ?"

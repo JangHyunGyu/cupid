@@ -1227,7 +1227,7 @@ test('day-five continuity keeps availability, history, affinity, and final choic
     );
 
     const requiredCopy = [
-        'day4_adult_counteroffer_soft_seoyeon',
+        'day4_adult_counteroffer_accept_seoyeon',
         'morning5_counteroffer_choice',
         'after5_farewell_seo_high_2',
         'after5_hidden_teacher_high',

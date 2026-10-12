@@ -1102,34 +1102,6 @@
         "name": "{name}",
         "text": "*Je rentre chez moi après le rendez-vous. Une fois la porte fermée, le téléphone reste la seule lumière dans ma chambre.*"
     },
-    "day4_adult_counteroffer_soft_seoyeon": {
-        "name": "Seoyeon",
-        "text": "*Je suis Seoyeon sur le toit. Elle s’arrête devant la rambarde et ouvre la main.* Reste avec moi aujourd’hui. Ça me suffit."
-    },
-    "day4_adult_counteroffer_soft_dain": {
-        "name": "Dain",
-        "text": "*Nous nous asseyons devant le gymnase. Dain installe son genou confortablement et pose le ballon.* Reste juste avec moi, aujourd’hui."
-    },
-    "day4_adult_counteroffer_soft_yuna": {
-        "name": "Yuna",
-        "text": "*J’entre dans l’annexe et m’assieds sur une chaise vide. Sans enlever sa veste, Yuna ferme le livre en face d’elle.* Ne pars pas aujourd’hui. Tu n’as rien besoin de dire."
-    },
-    "day4_student_counteroffer_soft_seoyeon": {
-        "name": "Seoyeon",
-        "text": "*Je suis Seoyeon sur le toit. Elle s’arrête devant la rambarde et ouvre la main.* Reste avec moi aujourd’hui. Ça me suffit."
-    },
-    "day4_student_counteroffer_soft_dain": {
-        "name": "Dain",
-        "text": "*Quand j’entre dans le gymnase, Dain pose le ballon et s’assied sur le banc. Elle me regarde et tapote la place à côté d’elle.* Reste juste assis avec moi, ce soir."
-    },
-    "day4_student_counteroffer_soft_yuna": {
-        "name": "Yuna",
-        "text": "*J’entre dans l’annexe et m’assieds sur une chaise vide. Sans enlever sa veste, Yuna ferme le livre en face d’elle.* Ne pars pas aujourd’hui. Tu n’as rien besoin de dire."
-    },
-    "day4_adult_counteroffer_soft_return_home": {
-        "name": "{name}",
-        "text": "*Je quitte l’école et rentre chez moi. Les mots que nous venons d’échanger restent présents après la fermeture de la porte.*"
-    },
     "wall_seo_overpromise_react": {
         "name": "Seoyeon",
         "text": "*Seoyeon secoue la tête.* Ne promets pas de tout régler. Écoute-moi, là, maintenant."

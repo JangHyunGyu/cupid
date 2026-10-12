@@ -2542,7 +2542,7 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
         if (!scene.characters) {
             // CG/이벤트/엔딩 배경에서는 캐릭터가 이미지에 포함되어 있으므로 제외
             const bg = scene.background || '';
-            const isCgBackground = /ending_|_event\d/.test(bg);
+            const isCgBackground = /ending_|_event\d|event_temptation_/.test(bg);
             if (!isCgBackground) {
                 warnings.push('[IMAGE_MATCH] ' + sceneId + ': speaker="' + speakerName + '" 인데 character=null (캐릭터가 말하는데 이미지 없음)');
                 charMatchWarnings++;
