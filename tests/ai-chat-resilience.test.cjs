@@ -110,3 +110,36 @@ test('a stalled stream retains a complete reply at the deadline without regenera
   assert.match(await runtime.run({ timeout: 20 }), /The original reply/);
   assert.equal(runtime.requests.length, 1);
 });
+
+test('the request deadline during a retry wait is reported as a transport timeout', async () => {
+  let calls = 0;
+  const error = await core.requestChatCompletion('https://ai.test', stream => ({ method: 'POST', body: JSON.stringify({ messages: history, turnId: 'same-turn', stream }) }), {
+    retryDelayMs: 60, timeoutMs: 15,
+    fetchImpl: async () => { calls += 1; throw new TypeError('Failed to fetch'); }
+  }).then(() => null, value => value);
+  assert.ok(error, 'request must reject');
+  assert.equal(calls, 1);
+  assert.equal(error.name, 'AbortError');
+  assert.equal(error.message, 'AI request timed out');
+  assert.equal(error.isTransportFailure, true);
+  assert.equal(core.isNetworkTransportError(error), true);
+});
+
+test('a fetch aborted by the request deadline is a transport timeout', async () => {
+  const error = await core.requestChatCompletion('https://ai.test', stream => ({ method: 'POST', body: JSON.stringify({ messages: history, turnId: 'same-turn', stream }) }), {
+    retryDelayMs: 1, timeoutMs: 15,
+    fetchImpl: (_url, init) => new Promise((_, reject) => init.signal.addEventListener('abort', () => reject(Object.assign(new Error('The user aborted a request.'), { name: 'AbortError' })), { once: true }))
+  }).then(() => null, value => value);
+  assert.ok(error, 'request must reject');
+  assert.equal(error.isTransportFailure, true);
+  assert.equal(error.reason, 'AI_REQUEST_TIMEOUT');
+  assert.equal(core.isNetworkTransportError(error), true);
+});
+
+test('explicit cancellation is not reported as a transport timeout', async () => {
+  const runtime = load([() => { runtime.cancel(); throw Object.assign(new Error('Canceled'), { name: 'AbortError' }); }]);
+  const error = await runtime.run().then(() => null, value => value);
+  assert.ok(error);
+  assert.notEqual(error.isTransportFailure, true);
+  assert.equal(core.isNetworkTransportError(error), false);
+});

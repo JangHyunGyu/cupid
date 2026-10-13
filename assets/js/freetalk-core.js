@@ -1794,6 +1794,17 @@ Latest user: """${excerpt}"""
         return /(?:^|[\s"*])([\p{L}\p{N}]{1,32}(?:[ ,]+[\p{L}\p{N}]{1,32}){0,3}?)(?:[\s,]+\1){11,}(?=[\s",.*!?\]}]|$)/iu.test(String(value || ''));
     }
 
+    // The 120s deadline is a fetch timeout: a frozen mobile tab resumes long after the reply was sent.
+    // Mark it as a transport interruption so callers retry quietly instead of logging an app bug.
+    function markAiRequestTimeout(error, timedOut) {
+        if (!timedOut || !error || typeof error !== 'object') return error;
+        try {
+            error.isTransportFailure = true;
+            if (!error.reason) error.reason = 'AI_REQUEST_TIMEOUT';
+        } catch (_) { /* frozen error objects keep their original classification */ }
+        return error;
+    }
+
     async function requestChatCompletion(endpoint, buildRequestInit, {
         assertCurrent = () => {}, onDelta = null, onReset = null,
         signal = null, timeoutMs = 120000, retryDelayMs = 400, fetchImpl = fetch
@@ -1808,7 +1819,7 @@ Latest user: """${excerpt}"""
         try {
             for (let attempt = 0; attempt < 3; attempt += 1) {
                 assertCurrent();
-                if (controller.signal.aborted) throw Object.assign(new Error('AI request aborted'), { name: 'AbortError' });
+                if (controller.signal.aborted) throw markAiRequestTimeout(Object.assign(new Error(timedOut ? 'AI request timed out' : 'AI request aborted'), { name: 'AbortError' }), timedOut);
                 let response;
                 try {
                     const init = buildRequestInit(wantsStream);
@@ -1836,6 +1847,7 @@ Latest user: """${excerpt}"""
                     return payload;
                 } catch (error) {
                     assertCurrent();
+                    markAiRequestTimeout(error, timedOut && controller.signal.aborted);
                     const terminal = controller.signal.aborted || error?.name === 'AbortError'
                         || error?.retryExhausted || ['SAFETY_BLOCKED', 'STALE_TURN', 'VERSION_MISMATCH'].includes(error?.reason);
                     const recoverable = isNetworkTransportError(error)
