@@ -2746,22 +2746,61 @@ html[lang^="zh"] .choice-btn {
     word-break: normal;
 }
 
-/* Keep the retry input readable alongside four touch controls on narrow phones. */
-@media (max-width: 600px) and (orientation: portrait) {
+/* Reserve the whole first row for typing, including while the keyboard is open. */
+@media (max-width: 600px) {
     #chat-container:not(.group-freetalk-mode) #chat-input-wrapper {
         display: grid;
         grid-template-columns: 44px minmax(0, 1fr) 44px 44px;
         gap: 8px;
     }
     #chat-container:not(.group-freetalk-mode) #chat-input {
-        grid-column: 2 / -1;
+        grid-column: 1 / -1;
         grid-row: 1;
         width: 100%;
         min-height: 44px;
     }
-    #chat-container:not(.group-freetalk-mode) #upload-image-btn { grid-column: 1; grid-row: 1; }
+    #chat-container:not(.group-freetalk-mode) #upload-image-btn { grid-column: 1; grid-row: 2; }
     #chat-container:not(.group-freetalk-mode) #action-toggle-btn { grid-column: 2; grid-row: 2; justify-self: end; margin-left: 0; }
     #chat-container:not(.group-freetalk-mode) #chat-send { grid-column: 3; grid-row: 2; }
     #chat-container:not(.group-freetalk-mode) #chat-skip-btn { grid-column: 4; grid-row: 2; }
     #chat-container:not(.group-freetalk-mode) #chat-input-wrapper > button { width: 44px; height: 44px; }
+
+    #chat-container.group-freetalk-mode {
+        display: grid !important;
+        grid-template-columns: 44px minmax(0, 1fr) 44px 44px 44px;
+        grid-template-areas:
+            "guide guide guide guide guide"
+            "preview preview preview preview preview"
+            "input input input input input"
+            "upload turn action send skip";
+        gap: 8px;
+        align-items: end;
+    }
+    #chat-container.group-freetalk-mode #chat-guide { grid-area: guide; margin-bottom: 0; }
+    #chat-container.group-freetalk-mode #image-preview-container { grid-area: preview; }
+    #chat-container.group-freetalk-mode #chat-input-wrapper { display: contents; }
+    #chat-container.group-freetalk-mode #chat-input { grid-area: input; width: 100%; min-height: 44px; }
+    #chat-container.group-freetalk-mode #upload-image-btn { grid-area: upload; }
+    #chat-container.group-freetalk-mode #action-toggle-btn { grid-area: action; margin-left: 0; }
+    #chat-container.group-freetalk-mode #chat-send { grid-area: send; }
+    #chat-container.group-freetalk-mode #chat-skip-btn { grid-area: skip; }
+    #chat-container.group-freetalk-mode #chat-turn-indicator {
+        grid-area: turn;
+        align-self: center;
+        text-align: left;
+        min-width: 0;
+    }
+    #chat-container.group-freetalk-mode #chat-input-wrapper > button { width: 44px; height: 44px; }
+    #chat-container #chat-input { font-size: 16px; }
+    .gallery-freetalk-overlay .gft-bottom-row {
+        display: block;
+        position: relative;
+    }
+    .gallery-freetalk-overlay .gft-bottom-row .gft-close-btn {
+        position: absolute;
+        right: 14px;
+        bottom: 22px;
+        width: 44px;
+        height: 44px;
+    }
 }
