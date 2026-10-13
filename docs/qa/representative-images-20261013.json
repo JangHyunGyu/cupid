@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-13",
+  "scope": "Search and social preview metadata only; existing visible page bodies, styles and executable scripts preserved.",
+  "representativeImage": "https://cupid.archerlab.dev/assets/images/social/cupid-seoyeon-portrait.png",
+  "dimensions": [
+    720,
+    720
+  ],
+  "indexablePagesUpdated": 62,
+  "source": "cupid-seoyeon-portrait.png",
+  "originalAssetsPreserved": true,
+  "visualVerification": {
+    "viewports": [
+      "1440x900",
+      "390x844"
+    ],
+    "result": "No visible UI change; zero pixel difference in final comparisons.",
+    "method": "Before/after browser screenshots with animations frozen."
+  },
+  "publishing": "main branch; GitHub Pages/Cloudflare Pages Git integration, or existing news Worker",
+  "crop": {
+    "source": "assets/images/characters/seyoun_normal.png",
+    "sourceDimensions": [
+      1086,
+      1448
+    ],
+    "box": [
+      210,
+      -32,
+      930,
+      688
+    ],
+    "background": "assets/images/background/title_square.png",
+    "backgroundBox": [
+      650,
+      200,
+      1370,
+      920
+    ],
+    "resampled": false,
+    "format": "Lossless PNG and WebP; source files untouched"
+  }
+}

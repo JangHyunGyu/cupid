@@ -7,22 +7,13 @@ const CANONICAL_ALIASES = require('../config/seo-canonicals.json');
 const SITE = 'https://cupid.archerlab.dev';
 const OUT = __dirname;
 const LASTMOD = '2026-10-01';
-const SEO_IMAGE = `${SITE}/cupid_link.png?v=2.9.6`;
-const SOCIAL_IMAGE = `${SITE}/assets/images/screenshots/cupid-title.jpg?v=2.9.6`;
+const SEO_IMAGE = 'https://cupid.archerlab.dev/assets/images/social/cupid-seoyeon-portrait.png';
+const SOCIAL_IMAGE = SEO_IMAGE;
 const GAME_DESCRIPTION = 'Cupid is a free browser romance visual novel with a five-day school story, five character routes, multiple endings, and support for eight languages.';
 const GAME_DESCRIPTIONS = {
   de: 'Cupid ist eine kostenlose romantische Visual Novel für den Browser mit einer fünftägigen Schulgeschichte, fünf Charakterrouten, mehreren Enden und Unterstützung für acht Sprachen.'
 };
-const SOCIAL_IMAGE_ALTS = {
-  ko: '브라우저 로맨스 비주얼 노벨 Cupid 타이틀 화면',
-  en: 'Cupid browser romance visual novel title screen',
-  ja: 'ブラウザ恋愛ビジュアルノベル「Cupid」のタイトル画面',
-  es: 'Pantalla de título de Cupid, novela visual romántica para navegador',
-  fr: 'Écran-titre du roman visuel romantique Cupid sur navigateur',
-  de: 'Titelbildschirm von Cupid, einer Romance-Visual-Novel für den Browser',
-  pt: 'Tela de título de Cupid, visual novel romântica para navegador',
-  zh: '《Cupid》网页恋爱视觉小说标题画面'
-};
+const SOCIAL_IMAGE_ALTS = Object.fromEntries(['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'].map(lang => [lang, 'Seoyeon from Cupid against the sunset title-screen background']));
 const RELATED_NAV_LABELS = {
   ko: 'Cupid 관련 페이지',
   en: 'Related Cupid pages',
@@ -727,6 +718,7 @@ function renderPage(lang, page) {
         "name": page.title,
         "description": page.meta,
         "inLanguage": langTag(lang),
+        "primaryImageOfPage": { "@type": "ImageObject", "url": SEO_IMAGE, "width": 720, "height": 720 },
         "mainEntity": { "@id": `${SITE}/#videogame` },
         "breadcrumb": { "@id": `${url}#breadcrumb` }
       },
@@ -810,9 +802,9 @@ ${altLinks ? `  ${altLinks}\n` : ''}  <meta name="robots" content="index, follow
   <meta property="og:site_name" content="Cupid">
   <meta property="og:locale" content="${LOCALES[lang] || 'en_US'}">
   <meta property="og:image" content="${SOCIAL_IMAGE}">
-  <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:width" content="1920">
-  <meta property="og:image:height" content="1080">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="720">
+  <meta property="og:image:height" content="720">
   <meta property="og:image:alt" content="${socialImageAlt}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${escapeHTML(page.title)}">

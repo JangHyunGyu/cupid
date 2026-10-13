@@ -249,8 +249,9 @@ for (const file of noindexFiles) {
 
 const robotsTxt = read('robots.txt');
 const disallowedPaths = [...robotsTxt.matchAll(/^Disallow:\s*([^\r\n]*)/gm)].map(match => match[1].trim());
-// Cloudflare's operational routes do not contain application pages.
-if (disallowedPaths.some(value => value && value !== '/cdn-cgi/')) fail('robots.txt: noindex pages must remain crawlable');
+// Operational and private API routes are separate from the crawlable HTML shells.
+const privateRoutes = new Set(['/cdn-cgi/', '/api/']);
+if (disallowedPaths.some(value => value && !privateRoutes.has(value))) fail('robots.txt: noindex pages must remain crawlable');
 if (!robotsTxt.includes(`Sitemap: ${SITE}/sitemap.xml`)) fail('robots.txt: missing canonical sitemap URL');
 
 const sitemap = read('sitemap.xml');
