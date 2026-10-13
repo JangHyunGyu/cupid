@@ -1,6 +1,8 @@
 User-agent: *
 Allow: /
 Disallow: /cdn-cgi/
+Disallow: /api/
+Allow: /api/media?asset=*_normal
 
 # AI search and assistant crawlers: public pages may be read, quoted and linked.
 User-agent: GPTBot
@@ -20,5 +22,7 @@ User-agent: Amazonbot
 User-agent: DuckAssistBot
 Allow: /
 Disallow: /cdn-cgi/
+Disallow: /api/
+Allow: /api/media?asset=*_normal
 
 Sitemap: https://cupid.archerlab.dev/sitemap.xml
