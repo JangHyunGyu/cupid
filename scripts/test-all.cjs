@@ -5,6 +5,7 @@ const path = require('path');
 
 const root = path.resolve(__dirname, '..');
 const commands = [
+    ['node', ['--test', 'tests/school-bridge.test.cjs']],
     ['node', ['scripts/sync-build-metadata.cjs', '--check']],
     ['node', ['scripts/verify-project-structure.cjs']],
     ['node', ['--test', 'tests/media-public-build.test.cjs']],
