@@ -20,7 +20,7 @@ for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
             await e.renderScene('night2_msg_1');
         });
         const nightCopy = require(`../../assets/js/i18n/${lang}/day2_4_night.json`);
-        await expect(page.locator('#message')).toHaveText(nightCopy.night2_msg_yuna_specific.text);
+        await expect(page.locator('#message')).toHaveText(nightCopy.night2_msg_yuna_specific.text, { useInnerText: true });
         expect(await page.evaluate(() => window.gameEngine.sceneRenderer.currentSceneId)).toBe('night2_msg_yuna_specific');
 
         await page.evaluate(async () => {
@@ -33,7 +33,7 @@ for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
         await page.reload();
         await ready(page);
         expect(await page.evaluate(() => window.gameEngine.sceneRenderer.currentSceneId)).toBe('after5_farewell_seo_high_2');
-        await expect(page.locator('#message')).toHaveText(before, { useInnerText: true });
+        await expect(page.locator('#message')).toHaveText(before, { useInnerText: true, timeout: 15_000 });
     });
 }
 

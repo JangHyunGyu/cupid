@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-14",
+  "baseCommit": "f8ede3ceb111f83cb3fba5e4ec526a2a2b837b24",
+  "languages": [
+    "en",
+    "ja",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "zh"
+  ],
+  "packets": {
+    "total": 266,
+    "validated": 266,
+    "validatedLocalizedNodes": 20762,
+    "missingFiles": 0,
+    "errors": 0
+  },
+  "exclusions": {
+    "policy": "User requested that these nodes retain their existing locale data. The latest main commit is the preservation reference.",
+    "uniqueNodes": 13,
+    "localizedRowsPreserved": 91,
+    "ids": [
+      "after2_seo_skinship_1",
+      "day4_adult_counteroffer_accept_seoyeon",
+      "day4_adult_counteroffer_accept_dain",
+      "day4_adult_counteroffer_accept_yuna",
+      "wall_seo_glimpse_4",
+      "wall_seo_yuna_tempt_accept",
+      "wall_dain_glimpse_4",
+      "wall_dain_seo_tempt_accept",
+      "wall_yuna_glimpse_4",
+      "wall_yuna_dain_tempt_accept",
+      "day4_temptation_seoyeon_freetalk",
+      "day4_temptation_yuna_freetalk",
+      "day4_temptation_dain_freetalk"
+    ]
+  },
+  "sourcePreservation": {
+    "koreanFilesUnchanged": 20,
+    "scenarioDocumentUnchanged": true,
+    "gameplayDataUnchanged": true
+  },
+  "changes": {
+    "localeFiles": [
+      "assets/js/i18n/de/day3_3_afterschool.json",
+      "assets/js/i18n/de/day4_4_night.json",
+      "assets/js/i18n/de/day5_3_afterschool.json",
+      "assets/js/i18n/de/day5_4_night.json",
+      "assets/js/i18n/en/day3_3_afterschool.json",
+      "assets/js/i18n/en/day5_4_night.json",
+      "assets/js/i18n/es/day3_3_afterschool.json",
+      "assets/js/i18n/es/day4_4_night.json",
+      "assets/js/i18n/es/day5_1_morning.json",
+      "assets/js/i18n/es/day5_4_night.json",
+      "assets/js/i18n/fr/day3_3_afterschool.json",
+      "assets/js/i18n/fr/day4_4_night.json",
+      "assets/js/i18n/fr/day5_4_night.json",
+      "assets/js/i18n/ja/day3_3_afterschool.json",
+      "assets/js/i18n/ja/day4_4_night.json",
+      "assets/js/i18n/ja/day5_4_night.json",
+      "assets/js/i18n/pt/day3_3_afterschool.json",
+      "assets/js/i18n/pt/day4_4_night.json",
+      "assets/js/i18n/pt/day5_4_night.json",
+      "assets/js/i18n/zh/day3_3_afterschool.json",
+      "assets/js/i18n/zh/day4_4_night.json",
+      "assets/js/i18n/zh/day5_3_afterschool.json",
+      "assets/js/i18n/zh/day5_4_night.json"
+    ],
+    "assetVersion": "2.9.318",
+    "serviceWorkerCacheVersion": "cupid-v3.3.237",
+    "visibleVersionLabel": "ver. 0.13"
+  },
+  "review": [
+    "Missing packet translation and source comparison using the configured text service",
+    "Manual corrections to character names, German address, Japanese protagonist pronouns and punctuation",
+    "Preserved segment order, narration markers and placeholder counts",
+    "Restored missing quotation marks in three locale entries"
+  ],
+  "verification": {
+    "build": "passed",
+    "npmTest": "passed",
+    "cacheCheck": "passed",
+    "koreanTextCheck": "passed",
+    "scenarioCheck": "passed",
+    "multilingualIssues": 0,
+    "entryAndVisualBrowserTestsPassed": 53,
+    "storyContinuityBrowserTestsPassed": 13,
+    "localizedScenesChecked": 42,
+    "exactLocalesLoaded": true,
+    "horizontalOverflow": false,
+    "browserErrors": 0
+  },
+  "uiPreservation": {
+    "viewports": [
+      "1440x900",
+      "390x844"
+    ],
+    "comparisons": 18,
+    "initialPixelIdentical": 17,
+    "remainingCapture": "Korean desktop title initially differed by 13 raster pixels; HEAD/current captures after font and image decoding and a warm-up screenshot were identical.",
+    "stableHeadComparisonIdentical": true,
+    "designChanges": false,
+    "translatedStoryTextChangesExpected": true
+  },
+  "browserTestAdjustment": "Retained full text and scene assertions. Read rendered innerText across paragraph breaks and allow 15 seconds for the longer restored typewriter dialogue.",
+  "evidenceDirectory": "D:/workspace/_workspace/cupid-i18n-finish-20261014"
+}

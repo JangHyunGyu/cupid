@@ -489,34 +489,34 @@
     },
     "hidden_nurse_d5_1_f": {
         "name": "{name}",
-        "text": "*Bajo la hoja de seguimiento figuran, uno junto al otro, los métodos para reservar en la enfermería y en Wee Class.*"
+        "text": "*En el recuadro de abajo de la hoja de la consulta están impresos, lado a lado, el procedimiento para venir a la enfermería y la forma de reservar una consulta en Wee Class.*"
     },
     "hidden_nurse_d5_2_b": {},
     "hidden_nurse_d5_2_c": {},
     "hidden_nurse_d5_3": {
         "name": "{name}",
-        "text": "He venido a recoger el justificante de la consulta."
+        "text": "Enfermera, he pasado a recoger el justificante de la consulta."
     },
     "hidden_nurse_d5_3_b": {
         "name": "{name}",
-        "text": "¿No molesto si vengo a la hora acordada? Pensé que también estaría ocupada con el evento. *Escribe la fecha y la hora en el justificante.*"
+        "text": "He venido a la hora acordada. No le estoy dando trabajo de más sin necesidad, ¿verdad? Con el evento de la escuela, pensé que estaría sin un minuto libre. *La enfermera, con mano tranquila, va anotando la fecha y la hora en los huecos del justificante.*"
     },
     "hidden_nurse_d5_3_c": {
         "name": "Enfermera",
-        "text": "Siempre puedes venir a recibir ayuda a la hora acordada."
+        "text": "El alumno que viene por su propio pie, a la hora acordada, a pedir ayuda, siempre es bienvenido."
     },
     "hidden_nurse_d5_3_d": {},
     "hidden_nurse_d5_3_e": {},
     "hidden_nurse_d5_3_f": {
         "name": "Enfermera",
-        "text": "*Abre la caja de tarjetas con instrucciones de primeros auxilios.*"
+        "text": "*Abre la caja de plástico blanco de un lado del escritorio y saca una tarjeta con las instrucciones de primeros auxilios.*"
     },
     "hidden_nurse_d5_3_g": {},
     "hidden_nurse_d5_3_h": {},
     "hidden_nurse_d5_3_i": {},
     "hidden_nurse_d5_4": {
         "name": "Enfermera",
-        "text": "El botiquín del evento está en la entrada del gimnasio. Si te lastimas, llama de inmediato al docente responsable."
+        "text": "Durante el festival, el botiquín de emergencia está en la puerta principal del gimnasio. Si te haces daño, no lo aguantes y llama enseguida a la profesora encargada."
     },
     "hidden_nurse_d5_4_b": {
         "name": "{name}",
@@ -524,19 +524,19 @@
     },
     "hidden_nurse_d5_4_c": {
         "name": "{name}",
-        "text": "*En el justificante estampan: «Consulta finalizada; nueva reserva si es necesario».*"
+        "text": "*En el recuadro de abajo del justificante se marca, nítido, un sello de tinta azul: «Consulta concluida; nueva reserva si es necesario.»*"
     },
     "hidden_nurse_d5_4_d": {
         "name": "Enfermera",
-        "text": "Última comprobación terminada."
+        "text": "Bueno, con esto termina también el último paso de confirmación."
     },
     "hidden_nurse_d5_5": {
         "name": "Enfermera",
-        "text": "{name}. ¿Quieres llevarte una tarjeta de primeros auxilios?"
+        "text": "{name}. De camino, ¿te llevas también una de estas tarjetas de primeros auxilios?"
     },
     "hidden_nurse_d5_choice": {
         "name": "{name}",
-        "text": "*En el anverso de la tarjeta figuran los pasos básicos de primeros auxilios; en el reverso, los canales de orientación de la escuela.*",
+        "text": "*La tarjeta, bien tiesa, trae en el anverso el orden básico de los primeros auxilios y, en el reverso, la guía del canal oficial de consulta de la escuela.*",
         "choices": [
             "Sí. La guardaré en la mochila.",
             "Explíqueme cómo reservar una consulta.",
@@ -545,64 +545,64 @@
     },
     "hidden_nurse_d5_choice_a": {
         "name": "{name}",
-        "text": "La guardaré bien. Si no la necesito, puede quedarse en la mochila, ¿verdad? *Mete la tarjeta en una funda transparente y me la entrega.*"
+        "text": "Me la guardaré bien. Si no me hago daño, ¿puedo dejarla quieta en el bolsillo interior de la mochila? *La enfermera desliza la tarjeta en una funda protectora transparente y fina, y me la pone sobre la palma.*"
     },
     "hidden_nurse_d5_choice_a_b": {
         "name": "Enfermera",
-        "text": "Lo mejor sería que no tuvieras que usarla, pero si la necesitas, sácala enseguida."
+        "text": "Claro. Lo mejor es que no tengas que sacarla. Pero si se te corta el aire, o llega un momento en que la necesites, no dudes y sácala enseguida."
     },
     "hidden_nurse_d5_choice_b": {
         "name": "Enfermera",
-        "text": "Bien. Si reservas mediante la aplicación escolar, un orientador podrá atenderte aunque yo no pueda hacerlo de inmediato."
+        "text": "Buena pregunta. Si dejas la reserva hecha por adelantado en la app de la escuela, aunque yo esté en una cura y no pueda verte al momento, una orientadora puede tomarte el relevo enseguida."
     },
     "hidden_nurse_d5_choice_b_b": {
         "name": "Enfermera",
-        "text": "*Señala el código QR del reverso de la tarjeta.*"
+        "text": "*Señala con el índice el código QR pequeño impreso en una esquina del reverso de la tarjeta.*"
     },
     "hidden_nurse_d5_choice_b_c": {
         "name": "Enfermera",
-        "text": "Pulsa «Reservar consulta» en la aplicación escolar. Puedes elegir entre la enfermería y Wee Class."
+        "text": "Si lo escaneas y entras en la app de la escuela, se abre al momento la ventana para reservar la consulta. Eliges entre la enfermería y Wee Class, la que te venga mejor."
     },
     "hidden_nurse_d5_choice_b_d": {
         "name": "Enfermera",
-        "text": "Si no puedo responder enseguida, se hará cargo un orientador. Los registros también se gestionan solo dentro de la escuela."
+        "text": "Aunque yo no esté en mi sitio, otra profesora te va a atender sin pasarte por alto, y todos los registros quedan protegidos, a salvo, dentro de las normas de la escuela."
     },
     "hidden_nurse_d5_choice_b_e": {
         "name": "{name}",
-        "text": "*En lugar de un número personal, aparecen impresos el horario de atención y el departamento responsable.*"
+        "text": "*En la parte de abajo de la tarjeta, en vez de un contacto personal, están impresos con limpieza los días y las horas de consulta, y el número del departamento encargado.*"
     },
     "hidden_nurse_d5_choice_b_f": {
         "name": "Enfermera",
-        "text": "Si fuera urgente, ¿a quién se lo dirías primero?"
+        "text": "Si ahora mismo surge algo urgente que no puedas sobrellevar, ¿a quién se lo dirías primero?"
     },
     "hidden_nurse_d5_choice_b_g": {
         "name": "{name}",
-        "text": "A mi tutor legal o a una profesora cercana. No intentaré aguantarlo solo."
+        "text": "A mi tutor en casa, o a una profesora cercana de la escuela. No me lo voy a guardar solo por dentro y aguantarlo, como antes."
     },
     "hidden_nurse_d5_6": {
         "name": "Enfermera",
-        "text": "Entonces está bien. Esta es la tarjeta de primeros auxilios."
+        "text": "*Solo entonces se le suaviza la mirada, como si por fin se hubiera quedado tranquila.* Con que hagas eso, basta. Toma, la tarjeta de primeros auxilios."
     },
     "hidden_nurse_d5_6_b": {},
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
-        "text": "*En la parte inferior de la tarjeta hay una frase breve: «Pedir ayuda antes de hacerse daño».*"
+        "text": "*En la última línea de la tarjeta me llama la atención una frase impresa en letra pequeña y recta: «Tender la mano antes de que la herida se haga más profunda.»*"
     },
     "hidden_nurse_d5_flag_check": {},
     "hidden_nurse_d5_7": {},
     "hidden_nurse_d5_7_both": {},
     "hidden_nurse_d5_freetalk": {
         "name": "Enfermera",
-        "text": "*Guarda la hoja de seguimiento en una carpeta.* La consulta termina aquí. La próxima vez, di directamente qué necesitas."
+        "text": "*La enfermera mete en el archivador la hoja de la consulta, ya ordenada.* La consulta oficial acaba aquí. La próxima vez, si te duele algo, no lo aguantes y dímelo enseguida."
     },
     "morning5_end_branch": {},
     "morning5_end": {
         "name": "{name}",
-        "text": "*Reúno las notas sobre la mesa y reviso las notificaciones del móvil una a una.*"
+        "text": "*Escojo y junto con cuidado las notas de la mesa, y reviso una por una, sin saltarme ninguna, las notificaciones que han llegado a la pantalla del móvil. El corazón empieza a latirme un poco más deprisa.*"
     },
     "morning5_committed_end": {
         "name": "{name}",
-        "text": "*Organizo las notas en mi escritorio y reviso el horario del evento para la dirección que ya elegí.*"
+        "text": "*Tras ordenar el escritorio, vuelvo a grabarme el horario del festival según el recorrido de la persona hacia la que ya va mi corazón.*"
     },
     "hidden_nurse_d5_choice_trap": {
         "name": "Enfermera",
@@ -612,55 +612,55 @@
     "hidden_nurse_d5_after_co_check": {},
     "morning5_after_counteroffer": {
         "name": "{name}",
-        "text": "*Un aviso se resbala del escritorio. Nadie lo recoge. El anuncio del evento suena antes.*"
+        "text": "*Una hoja de la reunión de la mañana, que estaba en el borde de la mesa de la profesora, se desliza sin ruido hasta el suelo, empujada por el viento. Antes de que nadie se anime a agacharse a recogerla, el aviso alegre de la apertura del festival llena el aula, que se ha quedado fría.*"
     },
     "morning5_sojeong_1": {
         "name": "{name}",
-        "text": "*Abro las notas: intentos incompletos de denunciar lo de Sojeong, disculpas escritas y borradas. El borrador treinta y nueve sigue vacío.*"
+        "text": "*De pie junto a la ventana, en silencio, abro la app de notas del móvil. Están las frases que acabé tragándome cuando, en la escuela anterior, intenté contarles a los adultos lo que Sojeong estaba pasando, y las excusas cobardes que borré y reescribí una y otra vez. El cursor del borrador treinta y nueve parpadea sobre la pantalla vacía.*"
     },
     "morning5_sojeong_2": {
         "name": "{name}",
-        "text": "*No empiezo el borrador cuarenta. Copio la disculpa en el chat y pulso enviar.*"
+        "text": "*Decido no hacer ya un borrador cuarenta para defenderme. Paso tal cual a la casilla del mensaje la frase de disculpa que llevo tanto tiempo aplazando, y pulso enviar con el pulgar temblándome.*"
     },
     "morning5_sojeong_3": {
         "name": "{name}",
-        "text": "Vi tu pupitre y lo que habían escrito en él, pero no se lo dije a ningún profesor. Mirar hacia otro lado también fue decisión mía. Lo siento. No tienes que responder."
+        "text": "Entonces vi con mis propios ojos las pintadas de tu pupitre y, aun así, no se lo pude decir a la profesora. Girar la cabeza haciendo como que no lo veía fue elección mía, sin excusa que valga. Lo siento de verdad. Te lo mando para quedarme yo más tranquilo, así que no hace falta que contestes."
     },
     "morning5_sojeong_4": {
         "name": "{name}",
-        "text": "*El mensaje se envía. Cierro el chat sin esperar a que aparezca como leído.*"
+        "text": "*Junto al globo sale un pequeño aviso de enviado. En vez de angustiarme esperando a que desaparezca el 1, tapo la pantalla con calma y salgo del chat.*"
     },
     "morning5_sojeong_5": {
         "name": "{name}",
-        "text": "Quisiera hablar de algo que fingí no ver en mi antigua escuela. *Se lo envío también a la profesora. Hasta el anuncio del festival, no borro ninguna de las dos frases enviadas.*"
+        "text": "Quisiera una consulta formal sobre lo que dejé pasar, haciendo como que no lo veía, en la escuela anterior. *Le mando el mensaje también a la profesora de ahora. Entre el aviso del festival, que resuena por el patio, no borro las dos líneas de confesión que por fin he enviado.*"
     },
     "morning5_caught_fallout_1": {
         "name": "{name}",
-        "text": "*Antes del evento, las tres se sientan separadas. La hoja solo enumera tareas.*"
+        "text": "*El aire del aula, justo antes de que abra el festival, está frío como el hielo. Las tres se sientan bien apartadas, cada una en una esquina, y en la tabla de reparto pegada a la pizarra solo quedan tareas secas, de puro trámite.*"
     },
     "morning5_caught_fallout_2": {
         "name": "{name}",
-        "text": "*Yuna sale primero con la guía; Dain va a otra puerta. Seoyeon recoge la lista sin mirar hacia mí.*"
+        "text": "*Yuna sale la primera por la puerta de atrás, con el fajo de guías apretado contra el pecho, sin mirar ni una vez. Dain, con la cara cerrada, se va a zancadas hacia la puerta de delante. Ni Seoyeon, que ordenaba la lista de asistencia frente a la mesa de la profesora, llega a volver la cabeza hacia mí.*"
     },
     "morning5_caught_fallout_3": {
         "name": "{name}",
-        "text": "*Solo hablamos de tareas. Al acabar, toman distintas escaleras.*"
+        "text": "*Durante todo el evento de la mañana, lo único que se cruzó fueron las comprobaciones de trabajo imprescindibles. En cuanto acaba el turno que les toca, las tres bajan por escaleras distintas, como si lo hubieran acordado.*"
     },
     "morning5_harem_fallout_1": {
         "name": "{name}",
-        "text": "*Solo tareas en el grupo; ningún mensaje privado nuevo.*"
+        "text": "*En el chat de grupo solo entran, tiesos, los avisos del evento por franjas de hora. Los tres chats privados que estuvieron encendidos los cuatro días enteros se han quedado en silencio, como si fuera mentira.*"
     },
     "morning5_harem_fallout_2": {
         "name": "Dain",
-        "text": "Aunque esto termine, no quedemos por separado. Cumple lo que acordamos."
+        "text": "*En la esquina del pasillo, al pasar, Dain lo clava en voz baja, con la cara seria.* Aunque se acabe el evento de hoy, no llames a una sola por separado. Es la línea que pusimos las tres, así que tú también cúmplela."
     },
     "morning5_harem_fallout_3": {
         "name": "{name}",
-        "text": "*Asiento. Las tres salen juntas por la entrada y yo las sigo a solas un poco después.*"
+        "text": "*Apenas muevo los labios y asiento sin fuerza. Me quedo un buen rato viéndolas de espaldas, las tres, saliendo por la puerta de la escuela hombro con hombro, y después las sigo solo, como una sombra un paso por detrás.*"
     },
     "morning5_counteroffer_choice": {
         "name": "{name}",
-        "text": "*Cuando termina la conversación, las dos esperan una respuesta.*",
+        "text": "*Al terminar la explicación, que no deja respirar, las dos me clavan la mirada en los labios y esperan la última respuesta.*",
         "choices": [
             "Responder a quien prometí primero",
             "Elegir a la persona de anoche",
@@ -669,32 +669,32 @@
     },
     "morning5_counteroffer_choice_lead": {
         "name": "{name}",
-        "text": "*Me vuelvo hacia la persona con quien me comprometí primero.* Empezaré por disculparme por lo que elegí anoche. No te pediré que me retengas."
+        "text": "*Me giro de frente hacia la persona a la que se lo prometí primero y bajo la cabeza.* Primero te pido perdón por la elección de anoche, la que tomé porque me tambaleé. No voy a agarrarte ahora, sin vergüenza, para pedirte que te quedes a mi lado."
     },
     "morning5_counteroffer_choice_tempter": {
         "name": "{name}",
-        "text": "*Miro a la persona que fui a ver anoche y bajo la cabeza ante la otra.* No ocultaré hacia quién se inclina ahora mi corazón. Pero no intentaré retenerlas a las dos."
+        "text": "*Miro a la persona con la que pasé anoche y, después, bajo la cabeza, hondo, ante la persona a la que se lo prometí primero.* No voy a ocultar, por cobardía, hacia quién se me ha inclinado ahora el corazón. Aquí dejo de retenerlas a las dos a la vez y de hacerles daño."
     },
     "morning5_counteroffer_choice_neither": {
         "name": "{name}",
-        "text": "*Retrocedo un paso entre las dos.* Ahora mismo no merezco elegir a ninguna. No intentaré retener a ninguna."
+        "text": "*Doy un paso atrás, despacio, de entre las dos.* Yo, que ya rompí la confianza, ahora no tengo derecho a elegir a una. No las voy a retener a las dos por egoísmo."
     },
     "morning5_counteroffer_gather": {
         "name": "{name}",
-        "text": "*Contacto con la persona con la que me quedé anoche y acordamos vernos en el aula. También confirmo la hora con quien tenía la primera cita. Cuando llegan ambas personas, nos sentamos en un rincón del aula.*"
+        "text": "*Le mando un mensaje a la persona con la que me quedé anoche para vernos en el aula por la mañana, y a la persona a la que se lo había prometido le pido que saque un momento. Al rato, las dos abren la puerta del aula, entran y se quedan paradas, una junto a la otra, a un lado de la ventana.*"
     },
     "morning5_mood_neg": {
         "name": "{name}",
-        "text": "Se acaba la primera semana. Subo la cremallera sin mirar los nombres en la pantalla de bloqueo."
+        "text": "*La primera semana desde que me trasladé llega a su fin, pesada. Sin atreverme a mirar de frente los nombres que han salido en la pantalla de bloqueo, subo la cremallera de la mochila hasta el tope.*"
     },
     "hidden_homeroom_d5_skip": {},
     "hidden_nurse_d5_skip": {},
     "hidden_homeroom_d5_neg": {
         "name": "Profesora",
-        "text": "*Mete el sobre del manuscrito en el cajón y gira la llave.* Las tutorías personales terminan aquí. Lo que quede irá en el aviso de clase."
+        "text": "*La profesora mete el sobre marrón del manuscrito al fondo del cajón de la mesa y echa la llave.* La consulta privada se queda aquí. Lo que queda del festival lo avisaré solo en el comunicado para toda la clase."
     },
     "hidden_nurse_d5_neg": {
         "name": "Enfermera",
-        "text": "*Cierra la ficha y la hoja de citas.* Hoy solo tratamiento. Lo personal, por el canal oficial. *Vuelvo al aula.*"
+        "text": "*La enfermera cierra la ficha de golpe y cierra la hoja de citas.* En esta hora solo voy a hacer la cura de urgencia. Si necesitas una consulta personal, pídela por el canal oficial de la escuela. *Me doy la vuelta y vuelvo al aula.*"
     }
 }

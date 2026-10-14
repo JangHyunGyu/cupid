@@ -141,7 +141,7 @@
     },
     "after3_seo_pity_trap_9": {
         "name": "Seoyeon",
-        "text": "Appelle-moi **Présidente**."
+        "text": "*Seoyeon me coupe la parole, les yeux de glace.* À l'école, appelle-moi Présidente."
     },
     "after3_seo_pity_trap_10": {
         "name": "{name}",
@@ -290,7 +290,7 @@
     },
     "after3_yuna_decode_trap_4": {
         "name": "Yuna",
-        "text": "**J'ai dit non.**"
+        "text": "*La voix de Yuna se déchire, aiguë.* Je t'ai dit que non."
     },
     "after3_yuna_decode_trap_5": {
         "name": "Yuna",

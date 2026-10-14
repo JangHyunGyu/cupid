@@ -934,27 +934,27 @@
     },
     "day4_night_regret_msg_seo": {
         "name": "Seoyeon",
-        "text": "Je t’ai attendu un moment au parc. Je rentre."
+        "text": "J'ai attendu un bon moment sur le banc du parc. Le vent est froid, alors aujourd'hui je rentre d'abord."
     },
     "day4_night_regret_msg_dain": {
         "name": "Dain",
-        "text": "Je t’attends toujours. Si tu ne peux pas venir, dis-le-moi au moins."
+        "text": "Je suis encore à la porte de derrière du gymnase. Si tu ne viens pas aujourd'hui, dis au moins que tu ne viens pas."
     },
     "day4_night_regret_msg_yuna": {
         "name": "Yuna",
-        "text": "Je pensais que tu viendrais ce soir. Je m’en vais."
+        "text": "Ce soir, je croyais vraiment que tu viendrais. Je pars d'abord."
     },
     "day4_night_regret_msg": {
         "name": "{name}",
-        "text": "*L'écran du téléphone s'allume. Le message ne tient qu'en une ligne. L'accusé de lecture apparaît tardivement.*"
+        "text": "*Dans la chambre sombre, l'écran du téléphone s'allume d'une lumière froide. Sous le message d'une seule ligne, où même le reproche a été ravalé, il ne reste qu'un accusé de lecture tardif.*"
     },
     "day4_night_regret_reply": {
         "name": "{name}",
-        "text": "*J'efface la réponse. Le champ est vide.*"
+        "text": "*À force de taper, puis d'effacer, encore et encore, le champ de saisie redevient blanc et vide.*"
     },
     "day4_night_reflect": {
         "name": "{name}",
-        "text": "*Je fais défiler dans l’ordre chronologique les messages échangés aujourd’hui. Demain, dimanche, a lieu l’événement du lycée.*"
+        "text": "*Allongé sur le lit, je repasse lentement, dans l'ordre, les messages échangés aujourd'hui. Passé minuit, l'événement du lycée de dimanche commencera bientôt.*"
     },
     "day4_hidden_msg_branch": {
         "name": "Système",
@@ -962,15 +962,15 @@
     },
     "night_homeroom_msg_1": {
         "name": "Professeure principale",
-        "text": "*Annonce sur le portail scolaire* J'ai mis en ligne le manuscrit pour la critique du club littéraire. Les personnes qui souhaitent le lire pourront récupérer un exemplaire imprimé en salle des profs demain."
+        "text": "*Notification d'annonce sur le portail d'apprentissage du lycée* J'ai mis sur le forum le fichier du manuscrit révisé pour la séance de critique du club littéraire. Les membres qui veulent le lire sur papier, venez demain matin à la salle des professeurs pour récupérer l'exemplaire imprimé."
     },
     "night_homeroom_msg_2": {
         "name": "Professeure principale",
-        "text": "*Annonce sur le portail scolaire* Pour laisser un avis, venez pendant le club littéraire. Il n'est pas nécessaire de répondre en privé."
+        "text": "*Notification d'annonce sur le portail d'apprentissage du lycée* Ceux qui veulent laisser une impression en plus, dites-le-moi librement à la prochaine séance du club littéraire. Il est tard, vous n'êtes pas obligés de répondre individuellement."
     },
     "night_homeroom_msg_3": {
         "name": "{name}",
-        "text": "*Des membres du club ont répondu à l’annonce publiée à 21 heures. J’ajoute « atelier de critique » à mon programme du lendemain.*"
+        "text": "*Sous l'annonce de la professeure principale, publiée à neuf heures du soir pile, les commentaires de confirmation des élèves du club littéraire s'alignent. Sur un coin du planning de demain, j'inscris en silence « vérifier l'exemplaire de critique ».*"
     },
     "day4_hidden_msg_after_homeroom": {
         "name": "Système",
@@ -978,49 +978,49 @@
     },
     "night_nurse_msg_1": {
         "name": "Infirmière",
-        "text": "*Notification de l'application santé du lycée* Merci de faire le point sur votre état après l'entretien d'aujourd'hui."
+        "text": "*Notification de l'application santé du lycée* Après l'entretien du week-end, merci de vérifier votre condition actuelle."
     },
     "night_nurse_msg_2": {
         "name": "{name}",
-        "text": "*Deux boutons apparaissent sous la notification automatique : « État stable » et « Besoin d'un nouvel entretien ».*"
+        "text": "*Sous le texte d'information envoyé automatiquement, deux boutons de choix s'affichent côte à côte : « Nettement plus stable » et « Je souhaite un entretien en plus ».*"
     },
     "night_nurse_msg_3": {
         "name": "Infirmière",
-        "text": "*Message de l'infirmerie* Si vous avez besoin d'un nouvel entretien, prenez rendez-vous avant le début de l'événement demain. Vous pouvez aussi choisir votre professeure principale ou le service d'écoute."
+        "text": "*Message de l'infirmerie* Les élèves qui ont besoin d'un entretien supplémentaire, réservez un créneau à l'avance, demain, avant le début de l'événement au lycée. Vous pouvez aussi choisir la professeure principale ou la salle de consultation du service d'écoute."
     },
     "wall_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Elle essuie ses yeux humides du revers de la main et regarde {name}.* Ne pars pas encore. Parlons encore un peu.",
+        "text": "*Seoyeon essuie légèrement du revers de la main le coin humide de ses yeux et lève le regard vers {name}.* Ne rentre pas encore. Je veux te tenir la main et parler encore un peu.",
         "context": "Nous sommes au soir du jour 4, juste après que Seoyeon a parlé du conflit familial et de la pression d'être parfaite. Le choix du protagoniste d'accepter ou de différer sa déclaration, ainsi que le réconfort partagé, sont des faits sauvegardés à respecter. Ne prétends pas qu'une conversation a guéri sa douleur et ne réévalue pas leur relation.",
         "personality": "Seoyeon est posée et responsable, mais elle a baissé sa garde pour l'instant. Elle parle avec sincérité sans charger l'autre de la réparer, mêlant sa franchise habituelle à une tendresse nouvelle et prudente."
     },
     "wall_dain_freetalk": {
         "name": "Dain",
-        "text": "*Elle expire lentement et accorde son pas à celui de {name}.* Ce soir… marchons simplement ensemble. On peut parler aussi.",
+        "text": "*Dain, les larmes arrêtées, laisse sortir un long souffle et cale son pas à côté de {name}.* Ce soir, on ne rentre pas tout de suite. Marchons un peu ensemble. N'importe quel sujet me va.",
         "context": "Nous sommes au soir du jour 4, après que Dain a révélé la vérité sur sa blessure au genou et le rêve interrompu avec elle. Le choix du protagoniste d'accepter ou de différer sa déclaration et le réconfort partagé sont acquis. Ne guéris pas soudainement sa blessure, ne décide pas de son avenir à sa place et ne change pas l'état actuel de leur relation.",
         "personality": "Dain est franche et physique, et elle essaie de ne plus cacher ses sentiments. Elle est plus calme que d'habitude sans perdre son éclat ; elle reconnaît l'incertitude tout en cherchant les prochains mots avec le protagoniste."
     },
     "wall_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*De retour à nos places dans la salle de lecture, Yuna replie la lettre dans son livre. Cette fois, elle cherche mon regard.* Il y a encore quelque chose que je voudrais te demander.",
+        "text": "*Revenue devant la table de la salle de lecture, Yuna plie la vieille lettre et la glisse tout au fond, entre les pages. Cette fois, elle ne fuit pas. C'est elle qui vient chercher mon regard, droit.* Il me reste encore des choses que je veux entendre de toi.",
         "context": "Nuit du quatrième jour dans l’annexe. Après la lettre de Lee Junho, Yuna craint de retenir le protagoniste pour remplacer l’aîné parti. Préserver leurs choix et l’acceptation ou le report de la déclaration. Ne pas inverser ce doute en faisant de Yuna une remplaçante. La lettre est pliée dans le livre et ils sont encore ensemble.",
         "personality": "Yuna est calme et réfléchie, mais n'évite plus les questions essentielles. Elle ne se cache pas derrière les métaphores quand la franchise est nécessaire et écoute sans déformer la réponse pour l'adapter à ses craintes."
     },
     "night_nurse_msg_4": {
         "name": "Infirmière",
-        "text": "*Message de l'infirmerie* Inutile de répondre tard le soir. En cas d'urgence, prévenez d'abord un parent, un tuteur ou un adulte de confiance."
+        "text": "*Message de l'infirmerie* Tard dans la nuit, inutile d'envoyer une réponse individuelle. Si la situation est urgente et que vous avez besoin d'aide tout de suite, contactez d'abord un responsable ou un adulte proche."
     },
     "day4_night_sleep": {
         "name": "{name}",
-        "text": "*Je règle le réveil pour dimanche matin et j'éteins la lumière. La phrase n'est toujours pas envoyée.*"
+        "text": "*Je règle l'alarme de dimanche matin et j'éteins la lampe sur pied. Seule la phrase que je n'ai finalement pas envoyée reste dans le noir, comme une image qui persiste.*"
     },
     "day4_final": {
         "name": "{name}",
-        "text": "*L’horloge de la chambre approche de minuit. L’écran du téléphone s’assombrit lui aussi, ne laissant visible qu’une ligne pour le réveil.*"
+        "text": "*Les aiguilles de l'horloge, dans la chambre, passent minuit et avancent vers le cinquième jour. L'écran du téléphone à mon chevet s'assombrit en silence, ne laissant qu'une ligne pour l'alarme de demain matin.*"
     },
     "forced_violation_day4_after_seoyeon": {
         "name": "Seoyeon",
-        "text": "*Après un silence, Seoyeon parle froidement.* Ne crois pas pouvoir faire comme si ce que tu viens de faire n'avait jamais eu lieu. Pendant quelque temps, ne m'approche plus et ne me contacte pas.",
+        "text": "*Au bout d'un lourd silence, Seoyeon parle d'une voix froide comme de la glace.* N'essaie pas de faire comme si le geste qui vient de franchir la ligne n'avait pas eu lieu. Pendant quelque temps, ne te montre pas devant moi, et ne me contacte pas.",
         "choices": [
             "S'excuser sans chercher d'excuse, puis mettre fin à la conversation.",
             "Essayer d'expliquer qu'il s'agissait d'un malentendu."
@@ -1028,15 +1028,15 @@
     },
     "forced_violation_day4_seoyeon_apologize": {
         "name": "Seoyeon",
-        "text": "*Seoyeon garde le visage fermé.* J'ai entendu. Ça n'efface pas ce qui s'est passé. Comme je l'ai dit, ne me contacte pas pendant quelque temps."
+        "text": "*Le visage de Seoyeon ne se détend pas du tout. Il reste fermé.* J'ai entendu tes excuses. Ça n'efface pas ce que tu as fait. Comme je l'ai dit, ne me contacte pas pendant quelque temps."
     },
     "forced_violation_day4_seoyeon_excuse": {
         "name": "Seoyeon",
-        "text": "*Seoyeon coupe court à l'explication.* Un malentendu ? À partir du moment où j'ai dit non, ça n'en était plus un. Ne dis rien de plus."
+        "text": "*Seoyeon coupe mes paroles d'un coup sec.* Un malentendu ? Depuis l'instant où j'ai clairement refusé, ça ne peut pas être un malentendu. Arrête de te justifier."
     },
     "forced_violation_day4_after_yuna": {
         "name": "Yuna",
-        "text": "*Yuna reprend son souffle, méfiante.* Tu savais que je ne voulais pas et tu n'en as pas tenu compte. Là, je ne veux même pas voir ton visage. Ne me contacte plus.",
+        "text": "*Yuna recule d'un pas et reprend son souffle, le regard tranchant.* Je t'ai dit que je ne voulais pas, et tu as ignoré ça jusqu'au bout. Là, je ne veux même pas voir ton visage. Ne me contacte plus jamais.",
         "choices": [
             "S'excuser sans chercher d'excuse, puis mettre fin à la conversation.",
             "Essayer d'expliquer qu'il s'agissait d'un malentendu."
@@ -1044,15 +1044,15 @@
     },
     "forced_violation_day4_yuna_apologize": {
         "name": "Yuna",
-        "text": "*Yuna répond après un long silence.* Des excuses ne feront pas disparaître ce qui s'est passé. Arrête."
+        "text": "*Au bout d'un long silence, Yuna répond d'une voix glacée.* Ce n'est pas parce que tu t'es excusé en paroles que ce qui vient de se passer s'efface. Maintenant, va-t'en."
     },
     "forced_violation_day4_yuna_excuse": {
         "name": "Yuna",
-        "text": "*Yuna refuse d'écouter l'explication jusqu'au bout.* J'ai dit non. Il n'y a rien à expliquer."
+        "text": "*Yuna tourne la tête sans même écouter mon excuse jusqu'au bout.* Je t'ai dit clairement non. Ce n'est pas une chose qu'on peut habiller de mots."
     },
     "forced_violation_day4_after_dain": {
         "name": "Dain",
-        "text": "*Dain ne cherche pas à en rire comme d'habitude. Après un long silence, sa voix revient, brève et tendue.* Ce n'est pas une blague. Je t'ai dit non et tu m'as forcée quand même. Je ne laisserai pas passer ça.",
+        "text": "*Dain ne rit pas pour passer outre, comme elle le fait d'habitude. Ce n'est qu'après un long moment que sa voix revient, basse.* Je ne peux pas faire passer ça pour une blague. Tu as forcé la ligne alors que je disais non. Je ne laisse absolument pas passer.",
         "choices": [
             "S'excuser sans chercher d'excuse, puis mettre fin à la conversation.",
             "Essayer d'expliquer qu'il s'agissait d'un malentendu."
@@ -1060,15 +1060,15 @@
     },
     "forced_violation_day4_dain_apologize": {
         "name": "Dain",
-        "text": "*Dain finit par répondre brièvement après un long moment.* D'accord. Alors on s'arrête là pour aujourd'hui. C'est moi qui déciderai si on reparle, et quand."
+        "text": "*Dain garde longtemps la bouche fermée, puis répond brièvement.* J'ai entendu tes excuses. Aujourd'hui, on s'arrête là. C'est moi qui déciderai si on se revoit."
     },
     "forced_violation_day4_dain_excuse": {
         "name": "Dain",
-        "text": "*La voix de Dain devient plus dure.* Non. Ne cherche pas d'excuse. J'ai dit non, et tu l'as fait quand même."
+        "text": "*La voix de Dain se durcit d'un coup.* Ne te cherche pas une excuse, c'est lâche. C'est toi qui as insisté, alors que je t'avais dit de ne pas le faire."
     },
     "forced_violation_day4_after_teacher": {
         "name": "Professeure principale",
-        "text": "*La professeure parle fermement.* Ce que tu viens de faire a clairement dépassé les bornes. Ne t'approche plus. Cette affaire sera traitée selon les procédures prévues.",
+        "text": "*La professeure principale parle d'une voix sans l'ombre d'un tremblement.* Ce que tu viens de faire a clairement franchi la ligne entre un enseignant et un élève. Ne t'approche plus. Cette affaire sera traitée selon le règlement du lycée, par la procédure officielle.",
         "choices": [
             "S'excuser sans chercher d'excuse, puis mettre fin à la conversation.",
             "Essayer d'expliquer qu'il s'agissait d'un malentendu."
@@ -1076,15 +1076,15 @@
     },
     "forced_violation_day4_teacher_apologize": {
         "name": "Professeure principale",
-        "text": "*La professeure respire et parle.* J'ai entendu tes excuses. La procédure suivra quand même son cours. Ne dis rien de plus."
+        "text": "*La professeure principale reprend froidement son souffle, puis parle.* J'ai entendu tes excuses. Mais la procédure officielle avancera comme prévu. Ne dis plus rien, et va-t'en."
     },
     "forced_violation_day4_teacher_excuse": {
         "name": "Professeure principale",
-        "text": "*La professeure interrompt l'explication.* Ce n'est pas le moment de commencer à te justifier. Arrête de parler et garde tes distances."
+        "text": "*La professeure principale lève fermement la paume et coupe l'explication.* Ce n'est pas le moment d'aligner des excuses. Écarte-toi de là, tout de suite."
     },
     "forced_violation_day4_after_nurse": {
         "name": "Infirmière",
-        "text": "*L'infirmière perd son ton joueur.* À partir de maintenant, garde tes distances. Je vais consigner ce qui s'est passé et prévenir les personnes concernées.",
+        "text": "*Du visage de l'infirmière, l'aisance et l'air joueur habituels disparaissent complètement.* Recule tout de suite et garde tes distances. Tout ce que tu viens de faire restera au dossier officiel, et j'en informerai le responsable.",
         "choices": [
             "S'excuser sans chercher d'excuse, puis mettre fin à la conversation.",
             "Essayer d'expliquer qu'il s'agissait d'un malentendu."
@@ -1092,31 +1092,31 @@
     },
     "forced_violation_day4_nurse_apologize": {
         "name": "Infirmière",
-        "text": "*Après un silence, l'infirmière répond fermement.* J'entends tes excuses. Mais je vais quand même consigner les faits et prévenir qui de droit. Cette conversation est terminée."
+        "text": "*L'infirmière rajuste froidement ses lunettes et répond.* Je retiens tes excuses. Le dossier de l'entretien et le rapport au lycée suivront quand même la règle. Pour aujourd'hui, on s'arrête là."
     },
     "forced_violation_day4_nurse_excuse": {
         "name": "Infirmière",
-        "text": "*La voix de l'infirmière baisse encore.* Tu crois que parler de malentendu change quelque chose ? Tu n'as pas respecté mon refus. C'est un fait."
+        "text": "*La voix de l'infirmière se fait plus basse, et plus froide encore.* Tu crois que le mot « malentendu » suffit à couvrir ça ? Je t'avais clairement averti, et tu as quand même ignoré l'avertissement."
     },
     "day4_student_return_home": {
         "name": "{name}",
-        "text": "*Je rentre chez moi après le rendez-vous. Une fois la porte fermée, le téléphone reste la seule lumière dans ma chambre.*"
+        "text": "*Une fois la rencontre de la nuit finie, je rentre d'un pas où le reste ne s'est pas encore effacé. La porte d'entrée se ferme, et dans la chambre silencieuse il ne reste, douce, que la lumière de l'écran du téléphone.*"
     },
     "wall_seo_overpromise_react": {
         "name": "Seoyeon",
-        "text": "*Seoyeon secoue la tête.* Ne promets pas de tout régler. Écoute-moi, là, maintenant."
+        "text": "*Seoyeon, le coin des yeux mouillé, secoue la tête sans force.* Ne me fais pas la promesse trop lourde de tout résoudre. Là, maintenant, reste à côté de moi et écoute seulement ce que je dis, en silence."
     },
     "day4_teacher_checkin": {
         "name": "{name}",
-        "text": "*Sur l'appli scolaire, je réponds à la demande de la professeure aux élèves restés préparer l'événement.* Je rentre directement et je confirmerai en arrivant."
+        "text": "*Je laisse une réponse sur l'appli scolaire à la notification de confirmation de retour à la maison envoyée par la professeure principale aux élèves restés au lycée pour préparer l'événement du week-end.* Je viens de partir pour la maison à l'instant. Je laisserai la confirmation dès mon arrivée."
     },
     "day4_nurse_checkin": {
         "name": "{name}",
-        "text": "*Sur l'appli scolaire, je réponds à la demande de l'infirmière aux élèves restés préparer l'événement.* Je rentre directement et je confirmerai en arrivant."
+        "text": "*Je laisse une réponse sur l'appli scolaire à la notification de confirmation de retour à la maison envoyée par l'infirmière aux élèves restés au lycée pour préparer l'événement du week-end.* Je viens de partir pour la maison à l'instant. Je laisserai la confirmation dès mon arrivée."
     },
     "day4_adult_return_home": {
         "name": "{name}",
-        "text": "*Chez moi, je confirme mon arrivée sur l’application, ferme la porte et enlève mes chaussures.*"
+        "text": "*Arrivé sans encombre à la maison, j'appuie sur le bouton de confirmation de retour à la maison de l'appli scolaire. Ce n'est qu'après avoir vérifié le verrou de la porte d'entrée que je relâche la tension et que j'enlève mes chaussures.*"
     },
     "day4_temptation_seoyeon_freetalk": {
         "name": "Seoyeon",
@@ -1141,66 +1141,66 @@
     },
     "day4_temptation_return_home": {
         "name": "{name}",
-        "text": "*Après leur conversation en tête-à-tête, le protagoniste rentre chez lui.*"
+        "text": "*Je rentre à la maison, la chaleur et le souffle encore pris dans tout le corps, sans avoir pu les laisser retomber.*"
     },
     "day4_waited_night_branch": {},
     "day4_waited_seoyeon_invite": {
         "name": "Seoyeon",
-        "text": "On se voit un moment au parc à vingt-deux heures ? J'ai l'impression qu'on n'a pas fini de parler tout à l'heure."
+        "text": "Si tu ne dors pas, on se voit un moment à dix heures, sur le banc du parc ? Tout à l'heure, dans la journée, on n'a pas fini, je crois, ce qu'on devait se dire."
     },
     "day4_waited_seoyeon_promise": {
         "name": "{name}",
-        "text": "Oui, je serai au parc à dix heures. *Je réponds à Seoyeon, prends une veste et ressors.*"
+        "text": "Oui, je serai au parc pour dix heures. *Dès la réponse envoyée à Seoyeon, j'enfile une veste et je sors de nouveau.*"
     },
     "day4_waited_dain_invite": {
         "name": "Dain",
-        "text": "Hé, tu es chez toi ? Viens au gymnase à vingt-deux heures. Je laisserai la porte de derrière ouverte. On peut juste rester assis un moment."
+        "text": "Hé, tu es à la maison ? Viens juste un moment au gymnase du lycée, à dix heures. Je laisserai la porte de derrière ouverte. Pas besoin de s'entraîner : on peut juste s'asseoir l'un à côté de l'autre, puis repartir."
     },
     "day4_waited_dain_promise": {
         "name": "{name}",
-        "text": "Je serai là d'ici dix heures. *Dain confirme par un émoji. Je mets mes baskets et ouvre la porte.*"
+        "text": "D'accord, je serai au gymnase pour dix heures. *La réponse à peine envoyée, une émoticône de confirmation arrive aussitôt de Dain. Je resserre les lacets de mes baskets et j'ouvre la porte.*"
     },
     "day4_waited_yuna_invite": {
         "name": "Yuna",
-        "text": "Viens à l'entrée arrière de l'école à vingt-deux heures. On parlera en marchant."
+        "text": "Viens à dix heures sous le lampadaire du portail arrière du lycée. Je veux prendre le vent de la nuit et parler avec toi de ce qu'on n'a pas fini."
     },
     "day4_waited_yuna_promise": {
         "name": "{name}",
-        "text": "Oui, à dix heures au portail arrière du lycée. *Je l’envoie à Yuna, range le téléphone et retourne vers le lycée.*"
+        "text": "Oui, on se voit à dix heures au portail arrière du lycée. *J'envoie ma réponse à Yuna et je range le téléphone dans ma poche. En respirant l'air de la nuit, je repars à pied vers le lycée.*"
     },
     "day4_student_visit_branch": {},
     "day4_student_visit_teacher_branch": {},
     "day4_student_teacher_checkin": {
         "name": "{name}",
-        "text": "*Sur l'appli scolaire, je réponds à la demande de la professeure aux élèves restés préparer l'événement.* Je rentre directement et je confirmerai en arrivant."
+        "text": "*Je réponds sur l'appli scolaire à l'avis de confirmation de retour à la maison envoyé par la professeure principale aux élèves restés au lycée pour préparer l'événement du week-end.* Je suis parti directement pour la maison. Je laisserai la confirmation en arrivant."
     },
     "day4_student_nurse_checkin": {
         "name": "{name}",
-        "text": "*Sur l'appli scolaire, je réponds à la demande de l'infirmière aux élèves restés préparer l'événement.* Je rentre directement et je confirmerai en arrivant."
+        "text": "*Je réponds sur l'appli scolaire à l'avis de confirmation de retour à la maison envoyé par l'infirmière aux élèves restés au lycée pour préparer l'événement du week-end.* Je suis parti directement pour la maison. Je laisserai la confirmation en arrivant."
     },
     "day4_student_both_checkin": {
         "name": "{name}",
-        "text": "*Sur l’appli scolaire, je réponds aux deux demandes de la professeure et de l’infirmière pour confirmer mon arrivée à la maison.* Je rentre directement et je confirmerai mon arrivée."
+        "text": "*Je réponds sur l'appli scolaire aux deux notifications d'avis de confirmation de retour à la maison, envoyées chacune par la professeure principale et par l'infirmière.* Je suis parti directement pour la maison. Je laisserai la confirmation en arrivant."
     },
     "day4_student_checkin_return_home": {
         "name": "{name}",
-        "text": "*Une fois chez moi, je confirme mon arrivée sur l’application du lycée. Je pose mon sac et branche mon téléphone. Une nouvelle notification apparaît.*"
+        "text": "*Dès que j'arrive à la maison, je confirme sur l'appli scolaire que le retour est fait. Au moment où je pose le sac et branche le téléphone au chargeur, une nouvelle notification de nuit apparaît sur l'écran.*"
     },
     "wall_seo_skip": {
         "name": "{name}",
-        "text": "*La conversation de Seoyeon reste muette. Aucun appel.*"
+        "text": "*La conversation avec Seoyeon reste silencieuse à mesure que la nuit s'enfonce. Au bout du compte, aucun appel n'arrive.*"
     },
     "wall_dain_skip": {
         "name": "{name}",
-        "text": "*Le dernier message de Dain s'est arrêté ce matin. Rien ce soir.*"
+        "text": "*Le dernier message de Dain en est resté à la matinée. La nuit s'écoule, et aucune nouvelle notification ne sonne.*"
     },
     "wall_yuna_skip": {
         "name": "{name}",
-        "text": "*Ni mot ni message de Yuna. L'écran s'éteint.*"
+        "text": "*De toute la nuit, aucune note, aucun message de Yuna. Seul l'écran du téléphone, que je fixais sans bouger, s'éteint dans le noir.*"
     },
     "forced_violation_day4_after_haeun": {
         "name": "Haeun",
-        "text": "*Haeun recule d'un pas et serre son bracelet du conseil des élèves.* Ne vous approchez pas. Je vais appeler un professeur.",
+        "text": "*Haeun, le visage tout blanc, recule d'un pas et serre fort le bracelet du conseil des élèves.* Ne vous approchez plus. J'appelle un professeur tout de suite.",
         "choices": [
             "Reconnaître ce que j'ai fait et garder mes distances.",
             "Prétendre qu'il s'agit d'un malentendu."
@@ -1208,10 +1208,10 @@
     },
     "forced_violation_day4_haeun_apologize": {
         "name": "Haeun",
-        "text": "*Sans répondre, Haeun recule vers la salle des profs en vérifiant que je ne la suis pas.*"
+        "text": "*Haeun ne répond même pas. Elle marche à reculons vers la salle des professeurs et surveille, méfiante, que je ne la suis pas.*"
     },
     "forced_violation_day4_haeun_excuse": {
         "name": "Haeun",
-        "text": "Ce n'était pas un malentendu. Ne me suivez pas. *En gardant ses distances, Haeun ouvre la porte de la salle des professeurs.*"
+        "text": "Ce n'est absolument pas un malentendu. S'il vous plaît, ne me suivez pas. *En gardant une bonne distance, Haeun ouvre en hâte la porte de la salle des professeurs et entre.*"
     }
 }

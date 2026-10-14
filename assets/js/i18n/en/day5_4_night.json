@@ -5,11 +5,11 @@
     },
     "hidden_dual_route_1": {
         "name": "{name}",
-        "text": "*As I finish cleaning up after the event, I put the literature club critique copy and first-aid card in my bag.*"
+        "text": "*As I finish cleaning up the festival site, I check by touch the literature club critique-copy envelope in the inner pocket of my bag, and the first-aid card in its clear case.*"
     },
     "hidden_dual_route_choice": {
         "name": "{name}",
-        "text": "*I take out one of the two records first. None of these relationships need to be decided today.*",
+        "text": "*I take one of the two records out of my bag first. Whichever it is, this isn't a relationship to pin a hasty name on today.*",
         "choices": [
             "Open the literature club critique copy",
             "Take out the first-aid card"
@@ -18,71 +18,71 @@
     "hidden_perfect_homeroom_check": {},
     "hidden_perfect_homeroom_1": {
         "name": "{name}",
-        "text": "*On graduation day, my homeroom teacher hands me a copy of my recommendation and my reading record.*"
+        "text": "*Graduation day, the smell of bouquets filling the hall. Homeroom Teacher handed me a copy of my college recommendation and the literature club reading record from all this time.*"
     },
     "hidden_perfect_homeroom_1b": {
         "name": "{name}",
-        "text": "*At the empty classroom door, she sorts workshop copies marked only with student numbers.*"
+        "text": "*At the door of the empty classroom, the kids all gone, the teacher is making a last pass over the old critique-copy manuscripts on the desk, marked only with student numbers.*"
     },
     "hidden_perfect_homeroom_2": {
         "name": "Homeroom Teacher",
-        "text": "Congratulations on graduating. Your recommendation and reading record are in the envelope. Check at home that nothing is missing."
+        "text": "Congratulations on graduating. I put your recommendation copy and your reading record in this brown envelope. When you get home, check that nothing's missing."
     },
     "hidden_perfect_homeroom_2b": {
         "name": "{name}",
-        "text": "Did you finish the manuscript?"
+        "text": "Teacher, the novel manuscript you were writing back then... did you finish it, all the way to the last chapter?"
     },
     "hidden_perfect_homeroom_2c": {
         "name": "Homeroom Teacher",
-        "text": "The critique helped me finish it. I sent it to a publisher too. Whatever happens is mine to handle. You take care of yourself."
+        "text": "*The teacher's eyes soften, like spring sunlight.* Thanks to the critique you left me, I finally set down the last sentence. I sent the manuscript to a publisher yesterday. What comes after that is mine to carry, now that I'm the adult. ...You go on. Don't get hurt. Take care."
     },
     "hidden_perfect_homeroom_3": {
         "name": "{name}",
-        "text": "*Four years without personal contact since graduation. Having finished college, {name} lives alone near his first workplace.*"
+        "text": "*Four years have passed since the walk out through the school gate on graduation day, without a single private message. {name}, finished with college, lives alone in a small studio near a first job.*"
     },
     "hidden_perfect_homeroom_3b": {
         "name": "{name}",
-        "text": "*At a bookstore café after work, I spot a familiar name on a book-talk sign. I look up; our eyes meet.*"
+        "text": "*Friday evening, on the way back from overtime, I find an achingly familiar three-syllable name on the book-talk sign at the entrance of the big bookstore café in the neighborhood. The moment I look up, not believing it, my eyes meet hers, impossibly, where she is packing beside the platform.*"
     },
     "hidden_perfect_homeroom_3c": {
         "name": "Homeroom Teacher",
-        "text": "What a coincidence. *She sets down the event materials.* If you have time, would you like to sit?"
+        "text": "*She covers her mouth, eyes wide, then breaks into a bright smile and comes over.* Goodness. What a coincidence. *She sets the event materials she was holding down on the table.* On your way home from work? If you have time, want to sit for a bit?"
     },
     "hidden_perfect_homeroom_3e": {
         "name": "Homeroom Teacher",
-        "text": "I'm still teaching at the same school. And I published a book. — What kind of work are you doing these days?"
+        "text": "Yeah, I'm still going in to the same school. And as you can see... I did end up putting out a book under my own name. — Anyway, what kind of work are you doing these days?"
     },
     "hidden_perfect_homeroom_3f": {
         "name": "Homeroom Teacher",
-        "text": "Would you like to meet here again? There's a lot we didn't get to talk about today."
+        "text": "*By the café window, with the closing announcement playing, she fidgets with her teacup, reluctant to let this end.* Want to meet here again next week? It's been four years, and there's so much we didn't get to say today."
     },
     "hidden_perfect_homeroom_3g": {
         "name": "{name}",
-        "text": "*We save each other's personal numbers, absent from the old school contacts.*"
+        "text": "*Side by side, we exchange and save personal numbers that were never on the school emergency list, numbers that belong only to the two of us.*"
     },
     "hidden_perfect_homeroom_4b": {
         "name": "Homeroom Teacher",
-        "text": "*At our second meeting, she takes a copy of her book from the shelf.* This time it's the published edition. Will you read it and tell me what you think?"
+        "text": "*On the weekend afternoon of our second meeting, she takes her first book, just off the press, from the bookstore display and places it in both my hands.* This time it isn't the unfinished critique copy 04. It's the published edition. ...As my first reader, will you read it again?"
     },
     "hidden_perfect_homeroom_4c": {
         "name": "{name}",
-        "text": "*In my own home, I read until dawn. This time, as a reader.*"
+        "text": "*I lean against the bed in my room with only the desk lamp on, and read straight through to the last page, hardly breathing, until dawn light reaches the window. Not as a student, but as one adult reader, I take in with my whole body what sits between the lines of the ending she finished after seven years.*"
     },
     "hidden_perfect_homeroom_4d": {
         "name": "Homeroom Teacher",
-        "text": "*At our next meeting in the café, she stirs her coffee once and lets go of the spoon.* What did you think?"
+        "text": "*A quiet café on a weekday evening, our third meeting at hand. She stirs her coffee once, slowly, with a teaspoon, then takes her hand off the cup. Her cheek, a little red from nerves, trembles under the light.* ...Did you read it all the way to the last page? Will you tell me what you thought?"
     },
     "hidden_perfect_homeroom_4e": {
         "name": "{name}",
-        "text": "*At our third meeting, after work, my former homeroom teacher is already waiting on a café terrace overlooking the cherry blossoms with a small bouquet.*"
+        "text": "*A weekend evening, night cherry blossoms in full bloom scattering past the window. On the rooftop café terrace I rush to after work, she is already waiting, a small pale-pink bouquet in her arms.*"
     },
     "hidden_perfect_homeroom_4f": {
         "name": "{name}",
-        "text": "*She places the bouquet between us and straightens its ribbon.*"
+        "text": "*The fragrant bouquet goes down in the middle of the table, and our fingertips brush as we straighten, side by side, the end of the wrapping ribbon the wind has loosened.*"
     },
     "hidden_perfect_homeroom_4g": {
         "name": "Homeroom Teacher",
-        "text": "Thank you for waiting for my book to come out. These flowers are to mark that. And… may they also mean I want to see you again?"
+        "text": "*She draws a deep breath, then quietly covers my hand. Her eyes are clear and burning, no longer hidden behind a teacher's shadow.* Thank you for not forgetting, and for waiting until my sentences made it out into the world. These flowers are that thanks. And... may I ask you to take them, too, as a confession that I want to stay beside you and keep seeing you, through every season from here on?"
     },
     "hidden_perfect_homeroom_ending_title": {
         "name": "",
@@ -90,119 +90,119 @@
     },
     "hidden_perfect_homeroom_5": {
         "name": "{name}",
-        "text": "*By the café door, bouquet in hand, she waits for my answer.*"
+        "text": "*At the café terrace door, where cherry blossom petals have settled, her warm fingers, still holding the bouquet, wrap the back of my hand and wait for an unsteady answer.*"
     },
     "hidden_perfect_homeroom_ep1": {
         "name": "{name}",
-        "text": "*We spend longer talking about the past four years than about school.*"
+        "text": "*That night, at their table, the talk ran much longer and deeper than the distant memories of a high school classroom: the nights each of them got through alone over the past four years, and the nights they would fill together from here.*"
     },
     "hidden_perfect_homeroom_ep2": {
         "name": "{name}",
-        "text": "*We take turns choosing our next plans: Thursdays are hers, Saturdays are {name}'s.*"
+        "text": "*They always took turns setting the next date. She chose the wine bar on Thursday nights. {name} chose the quiet bookstore alley on Saturday afternoons.*"
     },
     "hidden_perfect_homeroom_ep3": {
         "name": "{name}",
-        "text": "*Her second book is published. Instead of a specific name, the dedication reads, 'To the readers who stayed to the end and answered in their own words.'*"
+        "text": "*The autumn of the next year, her second novel came out. In the dedication on the first page, instead of naming anyone outright, a sentence only the two of us could know was printed, quiet. \"To the one person who read the last page where I had stopped, all the way through, and set my life moving again in their own voice.\"*"
     },
     "hidden_perfect_homeroom_ep4": {
         "name": "{name}",
-        "text": "*Our shared calendar contains only each other's workdays and plans for the next weekend. The titles we used at school remain only in the caption on a graduation photo from four years ago.*"
+        "text": "*On the shared phone calendar the two of them keep in step, each other's deadlines and weekend trip plans are written in tight. The old titles we used in the classroom remain now only in the pages of a graduation album faded from four years ago, as the name of a distant season.*"
     },
     "hidden_true_homeroom_1": {
         "name": "{name}",
-        "text": "*Four years after graduation. The two have had no private contact in all that time. After leaving school, graduating from college, and learning to support themself, {name} spots a book-talk poster bearing a familiar name at an independent bookstore on the way home from work.*"
+        "text": "*Four years have passed since graduation. In all that time, the two of them have never once been in private contact. {name}, having left school and finished college, earns a living and gets through an adult's ordinary days. Then, one spring day on the way home from work, an achingly familiar three-syllable name turns up on a book-talk poster in the window of a neighborhood independent bookstore.*"
     },
     "hidden_true_homeroom_2": {
         "name": "{name}",
-        "text": "*After the event, the signing table finally clears. The author, dressed in a beige cardigan, looks up from arranging her books.*"
+        "text": "*After the book talk, the readers are gone and the space in front of the signing table is quietly empty. The author, in a soft beige cardigan, is putting the remaining books in order when she slowly looks up at the sound of my footsteps.*"
     },
     "hidden_true_homeroom_2_b": {
         "name": "{name}",
-        "text": "*A company ID hangs from {name}'s neck. In her hands is a book printed with her own name instead of an attendance register.*"
+        "text": "*A company ID hangs from {name}'s neck, and in her hands, instead of the old classroom attendance book, is her first book, her own name printed clear on it.*"
     },
     "hidden_true_homeroom_3": {
         "name": "Homeroom Teacher",
-        "text": "It's been a long time. What should I call you now?"
+        "text": "*Her eyes go wide with surprise, and then a full smile spreads.* ...It's been so long. What should we call each other now?"
     },
     "hidden_true_homeroom_3_b": {
         "name": "{name}",
-        "text": "Call me by my name. I'm not a student anymore."
+        "text": "Please, just call me by my name. I'm not a student in a uniform anymore."
     },
     "hidden_true_homeroom_3_c": {
         "name": "Homeroom Teacher",
-        "text": "Let's take that slowly. You came as a reader today, right?"
+        "text": "*She laughs, brushing a slightly flushed cheek with the back of her hand.* Let's practice that a little at a time. Today we met as a reader who came for my book, right?"
     },
     "hidden_true_homeroom_4": {
         "name": "Homeroom Teacher",
-        "text": "*She smiles at my work badge.* How’s the job treating you?"
+        "text": "*She looks at the company ID hanging over my shirt and smiles, eyes creasing, as if she's proud.* Is work life treating you all right? Are you eating on time?"
     },
     "hidden_true_homeroom_4_b": {
         "name": "{name}",
-        "text": "*Before school comes up, we talk about our jobs and the books we've been reading lately.*"
+        "text": "*The awkwardness lasts only a moment. Before any talk of the old school, work, and the books each of us opens night after night lately, come out first, easily.*"
     },
     "hidden_true_homeroom_4_c": {
         "name": "Homeroom Teacher",
-        "text": "*She takes down a book bearing the title of the manuscript from her old desk drawer.*"
+        "text": "*She takes out a book she had set aside by her bag and shows it. The title is the same as that unfinished manuscript from the teacher's desk drawer in the empty classroom, four years ago.*"
     },
     "hidden_true_homeroom_4_d": {
         "name": "Homeroom Teacher",
-        "text": "I finished it in the end. I spent a long time with the critique the literature club gave me back then."
+        "text": "I didn't give up. I wrote it all the way to the end. The anonymous comment box from the literature club critique back then... I wore it out, looking at it for years."
     },
     "hidden_true_homeroom_4_e": {
         "name": "{name}",
-        "text": "Do you remember the marks I left?"
+        "text": "Do you remember the marks I left on the back page of manuscript 04 that day?"
     },
     "hidden_true_homeroom_4_f": {
         "name": "Homeroom Teacher",
-        "text": "We agreed I wouldn't try to identify anyone's comments. I do remember that someone left an unusual number of questions on the final page."
+        "text": "*She looks up at me, a playful light in her eyes.* We promised I wouldn't try to find out who wrote what, right to the end. But... I remember one copy very clearly. The margin of that last blank page was packed with questions that were sharp, and kind."
     },
     "hidden_true_homeroom_4_g": {
         "name": "Homeroom Teacher",
-        "text": "*She squares the book's edges. No folding the cup sleeve as she once did.*"
+        "text": "*With a neat hand, she only lines up the corner of the book. The old habit, folding a paper cup sleeve into little pieces and opening it again whenever she was anxious, doesn't show anymore.*"
     },
     "hidden_true_homeroom_4_h": {
         "name": "Homeroom Teacher",
-        "text": "The event's over—do you have time? I'd like to get coffee. If that would make you uncomfortable, we can just say goodbye here."
+        "text": "The bookstore event is over for today. Do you have time now? I'd like to have a warm cup of coffee together nearby. ...Of course, if that feels like even a little too much, it's fine to just say a glad hello here and go."
     },
     "hidden_true_homeroom_5": {
         "name": "Homeroom Teacher",
-        "text": "I'd like to get to know who you are now, not the student you used to be."
+        "text": "Not the student who sat in that classroom four years ago... I want to start talking again with you as you are now, standing in front of me as an adult."
     },
     "hidden_true_homeroom_5_b": {
         "name": "{name}",
-        "text": "*She waits for {name}'s answer instead of walking toward the register.*"
+        "text": "*She doesn't step toward the bookstore counter first. With clear, unsteady eyes, she waits for {name}'s answer.*"
     },
     "hidden_true_homeroom_5_c": {
         "name": "{name}",
-        "text": "I'd like to get to know who you are now too. We can take our time deciding what to call each other."
+        "text": "I'd like to get to know you as you are now, too, not the person at the front of the class. And let's take our time deciding what to call each other."
     },
     "hidden_true_homeroom_6": {
         "name": "Homeroom Teacher",
-        "text": "Good. Then coffee first. We can talk about the rest over a cup."
+        "text": "*Only then does the tension leave her shoulders, and a bright smile comes.* Good. Then let's go get a warm coffee first. We'll sit across from each other and take our time with the rest."
     },
     "hidden_true_homeroom_6_b": {
         "name": "{name}",
-        "text": "How long's your commute? *On the way to the café, we discuss our jobs and commutes.*"
+        "text": "How long does it take you to get to work in the morning these days? *We walk side by side down the tree-lined street on a spring night, toward the café, asking and answering about each other's commutes and the small pieces of an ordinary day.*"
     },
     "hidden_true_homeroom_7": {
         "name": "{name}",
-        "text": "I'd like that. And I'd like to make another plan too."
+        "text": "Not just today. I'd like to set a plan for next weekend now, too."
     },
     "hidden_true_homeroom_7_b": {
         "name": "Homeroom Teacher",
-        "text": "Here's my number. ...You can save it now. *She offers her contact screen first.*"
+        "text": "Here's my personal number. ...You can save it in your phone right now. *She blushes and holds her phone out to me first, the contact screen already open.*"
     },
     "hidden_true_homeroom_7_c": {
         "name": "Homeroom Teacher",
-        "text": "Starting today, let's not force ourselves to erase the old title. But let's learn each other's names again first."
+        "text": "From today, let's not force ourselves to erase the old titles. Instead, let's learn each other's real names again, one step at a time."
     },
     "hidden_true_homeroom_7_d": {
         "name": "{name}",
-        "text": "*I say her name once. She slowly says {name}'s name in return.*"
+        "text": "*Across the small table, in the smell of coffee, we try each other's names once, quietly. She, too, slowly turns my name over on her lips, the title gone, \"{name}\", like something precious.*"
     },
     "hidden_true_homeroom_8": {
         "name": "Homeroom Teacher",
-        "text": "*Beyond the cake plate, she opens her palm and stops before making contact, waiting for {name}'s answer.* Would you like to meet again next week?"
+        "text": "*Past the small cake plate, she quietly opens her pale palm. She stops just short of my fingertips and waits for {name}'s answer.* ...Want to meet again next week?"
     },
     "hidden_true_homeroom_ending_title": {
         "name": "",
@@ -210,19 +210,19 @@
     },
     "hidden_good_homeroom_1": {
         "name": "Homeroom Teacher",
-        "text": "*After the graduation ceremony, she calls {name} over while sorting copies of recommendation letters and the literature club's critique packet in the empty classroom.* These are your records. Check that nothing's missing."
+        "text": "*In the empty classroom, once the graduation noise has died down, the teacher sorting recommendation copies and the literature club critique records calls to {name}, stopped in the doorway.* Here. These are the records you left. Before you put them in your graduation bag, check that no page is missing."
     },
     "hidden_good_homeroom_2": {
         "name": "{name}",
-        "text": "*I take the envelope into the hall. Holding the remaining manuscripts, she sees the graduates off.*"
+        "text": "*I take the thick document envelope in both hands and walk out into the hall. The teacher, the remaining manuscripts held against her, sees the last graduates out of the classroom, warmly.*"
     },
     "hidden_good_homeroom_3": {
         "name": "Homeroom Teacher",
-        "text": "Keep writing. I'll finish my manuscript. Let's each focus on our own work first."
+        "text": "Even after you leave school, keep writing your own words. I'll take my unfinished manuscript and finish it. That's on me. Let's each fill the life we're in charge of, and do it properly."
     },
     "hidden_good_homeroom_4": {
         "name": "{name}",
-        "text": "*{name} bows to the teacher seeing students off at the window, then leaves school.*"
+        "text": "*{name} bows deeply to the teacher, who keeps waving from the classroom window in the spring sun, and at last walks out through the school gate grown familiar.*"
     },
     "hidden_good_homeroom_ending_title": {
         "name": "",
@@ -230,27 +230,27 @@
     },
     "hidden_bitter_homeroom_1": {
         "name": "Homeroom Teacher",
-        "text": "*After the graduation ceremony, she reads the letter {name} handed her in the empty classroom, then carefully sets it on the desk.* I can't keep this."
+        "text": "*The empty classroom, gone quiet after the ceremony. The teacher reads the letter {name} handed her all the way through, then closes the envelope and sets it carefully on the desk.* ...I'm sorry, but I can't keep this letter."
     },
     "hidden_bitter_homeroom_2": {
         "name": "{name}",
-        "text": "*The letter comes back with its corners smoothed flat.*"
+        "text": "*From the teacher's fingertips, the envelope comes quietly back to me, smoothed flat, without a single crease.*"
     },
     "hidden_bitter_homeroom_3": {
         "name": "Homeroom Teacher",
-        "text": "I believed in your writing, and I did care about you as my student. But I can't answer you in the way you want."
+        "text": "It's true that I believed in the eye you have for writing, and that I cared about you, sincerely, as my student. But a teacher must not answer those feelings the way you want."
     },
     "hidden_bitter_homeroom_4": {
         "name": "{name}",
-        "text": "*At the open classroom door, she returns my letter on top of the recommendation envelope.*"
+        "text": "*At the wide-open classroom door, the teacher lays my letter neatly on top of the graduation recommendation envelope and gives both back with two hands.*"
     },
     "hidden_bitter_homeroom_5": {
         "name": "Homeroom Teacher",
-        "text": "Congratulations on graduating. I do wonder what you'll write next, but I can't promise to be there beside you."
+        "text": "Congratulations, truly, on graduating. I'll always wonder, even from far away, about the sentences you'll write from here. But I can't promise you the place beside them."
     },
     "hidden_bitter_homeroom_6": {
         "name": "{name}",
-        "text": "*I leave with both letters. No voice calls me back.*"
+        "text": "*I put the letter she returned and the recommendation envelope in my bag and walk out into the hall. From the empty classroom behind me, no voice calls me back.*"
     },
     "hidden_bitter_homeroom_ending_title": {
         "name": "",
@@ -259,35 +259,35 @@
     "hidden_perfect_nurse_check": {},
     "hidden_perfect_nurse_1": {
         "name": "{name}",
-        "text": "*Five years after graduation. I've worked away from home and lived alone for two years. At a local weekend health event, I spot a familiar name on the first-aid instructor's badge: Lee Juwon.*"
+        "text": "*Five years have passed since I graduated high school. It has already been two years of working away from home and living alone. On a weekend afternoon I happen into a booth at a local health fair, and I stop when I see the name tag on the chest of the first-aid demonstration instructor. A name I have never once forgotten. Lee Juwon.*"
     },
     "hidden_perfect_nurse_2": {
         "name": "School Nurse",
-        "text": "*After the event, she removes the badge from her coat.* {name}? I never expected to see you here."
+        "text": "*Finished with the talk, she is taking the instructor badge off her white coat when she spots me and her eyes go wide.* ...Oh, {name}? Goodness. I never dreamed I'd run into you again, in a neighborhood this far away."
     },
     "hidden_perfect_nurse_3": {
         "name": "{name}",
-        "text": "*At the café opposite the event, we sit facing each other. The practice bandages stay boxed.*"
+        "text": "*A window seat in a small café across from the event. The practice compression bandage and the first-aid kit stay in the bag, and across five years, the two of them meet eyes over the table.*"
     },
     "hidden_perfect_nurse_3b": {
         "name": "School Nurse",
-        "text": "I used to be responsible for your counseling. Are you sure you're comfortable sitting down with me like this now?"
+        "text": "*She wraps her hands around her teacup and smiles, carefully.* I used to be the teacher who handled your counseling at school. You're a grown adult now, but are you all right sitting across from me like this, just the two of us?"
     },
     "hidden_perfect_nurse_4": {
         "name": "School Nurse",
-        "text": "If you're uncomfortable, we can stop at hello. I was only curious how you've been."
+        "text": "If thinking of the old days makes you even a little uncomfortable, it's fine to say a warm hello today and get up. I only wanted to know whether you'd been well all this time, and hadn't been sick."
     },
     "hidden_perfect_nurse_4b": {
         "name": "{name}",
-        "text": "I'm comfortable. And today, I'd rather hear about you than about school."
+        "text": "I'm not uncomfortable at all. Today, instead of the old nurse's office counseling, I want to hear how Lee Juwon is doing these days."
     },
     "hidden_perfect_nurse_5": {
         "name": "School Nurse",
-        "text": "Then shall we make our next meeting neither treatment nor counseling?"
+        "text": "*The line of her eyes eases into a slow, sweet curve.* ...Yeah? Then shall we make our next meeting a private promise between the two of us, not treatment and not counseling?"
     },
     "hidden_perfect_nurse_5b": {
         "name": "{name}",
-        "text": "*We compare calendars until we find a Saturday when we're both free.*"
+        "text": "*We hold our phone calendars side by side over the table, then both press a finger at once on next Saturday, the day neither of us is working.*"
     },
     "hidden_perfect_nurse_ending_title": {
         "name": "",
@@ -295,99 +295,99 @@
     },
     "hidden_perfect_nurse_ep1": {
         "name": "{name}",
-        "text": "*Several months later. After spending a number of weekends together, we wake to the same morning for the first time. Juwon reaches out beneath the covers and waits with her fingers loosely open.*"
+        "text": "*After weekend dates that lasted until the season changed, we finally meet the same morning light at her place for the first time. Juwon, just awake, reaches a pale hand out under the warm covers and waits, loose, for my fingers to lace with hers.*"
     },
     "hidden_perfect_nurse_ep2": {
         "name": "{name}",
-        "text": "*After that morning at Juwon's home, the weekends in our shared calendar filled one by one. In the meantime, Juwon transferred to the education team at a university hospital, where the new nurses began calling her Instructor Lee as well. Instructor Lee Juwon.*"
+        "text": "*After that Sunday morning when we opened our eyes side by side in Juwon's bed, the weekend slots on our shared calendar filled, with no gaps, with cozy plans. In the meantime Juwon transferred to the nursing education team at a university hospital, and the new nurses who had just arrived called her Instructor, too. Instructor Lee Juwon, now my lover.*"
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
-        "text": "*Rosemary by the window of the home we chose. We take turns watering it.*"
+        "text": "*On the living-room windowsill of the new home the two of us chose together, a pot of green rosemary sits. Every morning, misting the leaves with a spray bottle is something we take turns doing, side by side.*"
     },
     "hidden_perfect_nurse_ep4": {
         "name": "{name}",
-        "text": "*One line remains on the final page of the pale green notebook: 'It took a long time, but now I'll begin again by my own choice.'*"
+        "text": "*On the last page of the old pale green notebook kept deep in a drawer, one line has been added in her handwriting, the hand that crossed five years. \"It took a long time to come back, but now I'll start again with you, entirely by my own choice.\"*"
     },
     "hidden_true_nurse_1": {
         "name": "{name}",
-        "text": "*Four years after graduation. One spring evening, a year after moving out on my own, I hear a familiar voice at a local health campaign booth on my way home from work.*"
+        "text": "*Four years have passed since high school graduation. On a spring commute home, a year after I took my first job and moved out on my own, I hear a gentle voice at a local health campaign booth in the plaza in front of the station, and it stops me.*"
     },
     "hidden_true_nurse_2": {
         "name": "{name}",
-        "text": "*After the event, at a café. Bandages and leaflets packed away, we sit opposite each other.*"
+        "text": "*A quiet café nearby, after the campaign booth is packed away. Promo bandages and leaflets shoved into a bag, the two of us sit facing each other across a small round table.*"
     },
     "hidden_true_nurse_2_b": {
         "name": "{name}",
-        "text": "*Our two phones show an overtime approval and a health-event closing report, one on each screen.*"
+        "text": "*On the two phones set side by side on the table, an alert that my company's overtime pay was approved and her message that the health-event closing report is done blink at the same time.*"
     },
     "hidden_true_nurse_2_c": {
         "name": "School Nurse",
-        "text": "It's been a long time. Have you been well?"
+        "text": "*She straightens the sleeve of the spring blouse she wears instead of a white coat and meets my eyes, glad to see me.* It's really been a long time. Have you been well? Nothing hurting?"
     },
     "hidden_true_nurse_2_d": {
         "name": "{name}",
-        "text": "Yes. I have a job now too, and I live on my own."
+        "text": "Yes. I'm a proper working adult now. Since last year I've moved out and started living on my own, too."
     },
     "hidden_true_nurse_3": {
         "name": "School Nurse",
-        "text": "Even what we call each other is complicated. Would it feel strange if you still called me 'teacher'?"
+        "text": "*Juwon wraps both hands around her teacup and smiles a little.* Seeing you again, even what to call each other is hard. You're a grown adult now. If I told you to keep calling me teacher, like before, would that feel awkward?"
     },
     "hidden_true_nurse_3_b": {
         "name": "{name}",
-        "text": "We can change that slowly. There's no rush."
+        "text": "We can change it slowly, a little at a time. There's nothing between us that has to be rushed now."
     },
     "hidden_true_nurse_4": {
         "name": "School Nurse",
-        "text": "I remember how you would say you were fine, even after coming to the nurse’s office."
+        "text": "True. Even when you were eighteen, I still remember it clearly. You'd open the nurse's office door and always start by saying you were fine."
     },
     "hidden_true_nurse_5": {
         "name": "School Nurse",
-        "text": "Back then, we were teacher and student, so that was where it ended."
+        "text": "Back then I was the school nurse who had to look after you, and you were a student, so it was right to keep my feelings only up to that line."
     },
     "hidden_true_nurse_5_b": {
         "name": "{name}",
-        "text": "*Juwon lets go of her coffee cup and waits for {name}'s answer.*"
+        "text": "*Juwon slowly lets go of the warm coffee cup's handle and waits, with a deeper look in her eyes, for {name}'s answer.*"
     },
     "hidden_true_nurse_5_c": {
         "name": "School Nurse",
-        "text": "Now we've met again by chance."
+        "text": "But four years have passed, and today we've met again by chance, both of us adults."
     },
     "hidden_true_nurse_5_d": {
         "name": "School Nurse",
-        "text": "So I'll ask: would you like to meet again?"
+        "text": "So I'll ask, if I can find the nerve. ...Want to meet again next week, too?"
     },
     "hidden_true_nurse_5_e": {
         "name": "{name}",
-        "text": "Not for treatment or counseling?"
+        "text": "Even if it isn't for treatment or counseling?"
     },
     "hidden_true_nurse_5_f": {
         "name": "School Nurse",
-        "text": "*She taps the handle of her coffee cup.* Yes. Next time, let’s talk without watching the clock."
+        "text": "*She taps the rim of the teacup with a slender finger and smiles, cheeks flushed.* Yeah. Next time, let's not look at the counseling clock, and talk only about us until late."
     },
     "hidden_true_nurse_6": {
         "name": "School Nurse",
-        "text": "If this makes you uncomfortable, we can end it here. If not, I'd like to see you again next week."
+        "text": "If your heart feels even a little heavy, or uncomfortable, it's fine to end today with a glad hello. But if you feel the same... I really want to see you again next week."
     },
     "hidden_true_nurse_7": {
         "name": "{name}",
-        "text": "*We walk side by side to the station, then go our own ways.*"
+        "text": "*We walk side by side along the night street in the spring wind, all the way to the subway entrance, and stop in front of the ticket gate.*"
     },
     "hidden_true_nurse_7_b": {
         "name": "School Nurse",
-        "text": "You can answer about next week after you get home."
+        "text": "About that next-week plan I just mentioned, you can go home tonight, think it over slowly, and reply then."
     },
     "hidden_true_nurse_7_c": {
         "name": "{name}",
-        "text": "It isn't a no. I'd like to see you again too."
+        "text": "I don't need to think about it. I want to see you again next week too, Juwon."
     },
     "hidden_true_nurse_7_d": {
         "name": "School Nurse",
-        "text": "*She takes out her phone and opens her calendar.* Then next weekend. We'll find a day that works for both of us."
+        "text": "*At the unfamiliar name, the tips of her ears flush bright red. Then she takes out her phone with a fluttering hand and opens her calendar.* ...Then let's make it next weekend. A day both of us can clear completely."
     },
     "hidden_true_nurse_8": {
         "name": "School Nurse",
-        "text": "Next time, let's meet without needing a health event as an excuse."
+        "text": "Next time I won't come as the health-campaign instructor. I'll just come as someone who's here to see you."
     },
     "hidden_true_nurse_ending_title": {
         "name": "",
@@ -395,63 +395,63 @@
     },
     "hidden_true_nurse_8_b": {
         "name": "{name}",
-        "text": "*For three months, we meet at a different café every weekend. That day, Juwon invites me to her home for the first time.*"
+        "text": "*For three months after that, every weekend, the two of us walked side by side through the small cafés downtown and along the paths. Then, on a Saturday evening with a light rain, I was invited into Juwon's living room for the first time.*"
     },
     "hidden_true_nurse_8_c": {
         "name": "{name}",
-        "text": "Hard to pick a film. What should we start with? *We sit side by side on the sofa. It's dark outside, and two coffees cool on the table.*"
+        "text": "There are so many movies I want to see, it's hard to choose. Which one should we put on first? *We sit shoulder to shoulder on the living-room sofa, only the soft indirect light on. Outside the window it's dark with the sound of rain, and steam curls up from the two coffees on the table.*"
     },
     "hidden_true_nurse_8_d": {
         "name": "{name}",
-        "text": "*We don't spend long talking about school. There is more to say about work now and next weekend.*"
+        "text": "*That night, talk of the old school didn't last long between us. What we said about each other's day, and about places we wanted to go together next weekend, went on until the night was deep.*"
     },
     "hidden_true_nurse_8_e": {
         "name": "School Nurse",
-        "text": "Back then, I did think about leaving the school."
+        "text": "*Juwon rests her head against the sofa back and whispers.* Actually, the year before you graduated, there was a time I seriously thought about quitting the school."
     },
     "hidden_true_nurse_8_f": {
         "name": "{name}",
-        "text": "But staying was your choice, wasn't it?"
+        "text": "Staying in the nurse's office to the end, back then, that was your choice, wasn't it, teacher?"
     },
     "hidden_true_nurse_8_g": {
         "name": "School Nurse",
-        "text": "Yes. I stayed because I still wanted to do the job. And seeing you again was my choice, too."
+        "text": "Yeah. I stayed of my own accord, because I wanted to keep loving that work. And now, like this... choosing to see you again on the sofa in my room is entirely a choice I made, too."
     },
     "hidden_true_nurse_8_h": {
         "name": "{name}",
-        "text": "I’d like to see you again next week, too. *Before the film ends, Juwon falls asleep against {name}’s shoulder.*"
+        "text": "I want to keep being with you like this next week, and the week after that, too. *Before the ending credits have even finished rolling, Juwon breathes out a warm breath that smells of shampoo and falls asleep, her head resting quietly on {name}'s shoulder.*"
     },
     "hidden_good_nurse_1": {
         "name": "School Nurse",
-        "text": "*After the graduation ceremony, the nurse's office door opens one last time. Juwon is drinking coffee by the window. When she sees {name}, she sets down her cup.* What brings you here? You shouldn't have anything wrong with you today."
+        "text": "*After the graduation ceremony is all over, I knock on the quiet nurse's office door one last time. Juwon, drinking coffee by the window, sees {name} standing in the doorway and sets her cup down.* Oh. What brings you? It's graduation day. You shouldn't be hurt anywhere today."
     },
     "hidden_good_nurse_2": {
         "name": "School Nurse",
-        "text": "If you came to say goodbye before you leave, sit down. As of today, your treatment here is over."
+        "text": "If you stopped by to say goodbye for graduation, come sit for a minute. The nurse's office care I give you ends completely as of today."
     },
     "hidden_good_nurse_2_b": {
         "name": "{name}",
-        "text": "Thank you for everything."
+        "text": "Thank you, truly, for listening to me and looking after me all this time, teacher."
     },
     "hidden_good_nurse_2_c": {
         "name": "School Nurse",
-        "text": "*After a moment's thought, she nods.* Okay. If you get hurt, don't tough it out—go to a hospital first. I won't be able to check on you anymore."
+        "text": "*She looks at my face as if choosing her words, then nods warmly.* All right. I'm glad you graduated safely. From now on, out in the world, if you get hurt or sick, don't tough it out alone like before. Go to a hospital first. I won't be beside you to check on you myself anymore."
     },
     "hidden_good_nurse_2_d": {
         "name": "School Nurse",
-        "text": "*She takes the pale green notebook from her desk drawer and opens it to the last page.*"
+        "text": "*From the desk drawer she takes the pale green notebook, worn from handling, and opens it to the very last page.*"
     },
     "hidden_good_nurse_3": {
         "name": "{name}",
-        "text": "*Juwon writes the date and 'Graduated, no issues' before closing the notebook. This time, she gives me neither a bandage nor her contact information.*"
+        "text": "*Beside today's date, Juwon writes \"Graduated, no issues\" in a neat hand, then closes the notebook. This time she hands over neither a disposable bandage nor her personal contact.*"
     },
     "hidden_good_nurse_3_b": {
         "name": "School Nurse",
-        "text": "Take care. Next time we run into each other, say hello as a graduate, not a patient."
+        "text": "Take care. If we ever happen to meet on the street someday, greet me then as a spirited graduate, not as a patient in pain."
     },
     "hidden_good_nurse_4": {
         "name": "{name}",
-        "text": "*Juwon and I exchange a nod by the window, then I leave the infirmary.*"
+        "text": "*I bow politely to Juwon where she stands by the sunlit window, then step out of the nurse's office with a light step.*"
     },
     "hidden_good_nurse_ending_title": {
         "name": "",
@@ -459,31 +459,31 @@
     },
     "hidden_bitter_nurse_1": {
         "name": "{name}",
-        "text": "*After the graduation ceremony, I stop by the nurse's office one last time and hand over the pale green record card with a note bearing my contact information tucked underneath.*"
+        "text": "*After the graduation ceremony, I stop by the nurse's office one last time and carefully slip a note with my personal contact under the pale green counseling record card as I hand it over.*"
     },
     "hidden_bitter_nurse_2": {
         "name": "School Nurse",
-        "text": "*Juwon reads the note in silence. Then she folds it neatly along the crease and slides it back.* I shouldn't accept this."
+        "text": "*Juwon looks down at the numbers on the note and says nothing for a while. Then she folds the note neatly along the old crease and slides it back in front of me.* ...I'm sorry, but I shouldn't accept this."
     },
     "hidden_bitter_nurse_3": {
         "name": "{name}",
-        "text": "Was I a nuisance, coming here so often?"
+        "text": "...All those times I came to the nurse's office making excuses, was that a nuisance?"
     },
     "hidden_bitter_nurse_4": {
         "name": "School Nurse",
-        "text": "You were never a nuisance. That's why I can't leave you confused. I looked after you because you were a student and you were hurt."
+        "text": "Not once were you a nuisance. That's exactly why I can't let you graduate with your feelings still mixed up. I looked after you, and waited, because you were my student, and because you had a wound that needed care."
     },
     "hidden_bitter_nurse_5": {
         "name": "{name}",
-        "text": "*Juwon writes ‘Graduation, counseling concluded’ on the final line of the green record. She places the note with the contact information on top.*"
+        "text": "*On the last line of the pale green record card, Juwon neatly writes \"Graduation, counseling concluded.\" The note I handed her is laid quietly on top of that card.*"
     },
     "hidden_bitter_nurse_6": {
         "name": "School Nurse",
-        "text": "The best ending is that you don't need to come here anymore. Take care."
+        "text": "You being well enough that you don't have to come looking for this nurse's office door again is the best ending our counseling could have. ...Go on, and take care."
     },
     "hidden_bitter_nurse_7": {
         "name": "{name}",
-        "text": "*I take the note and card and close the door. A cup settles onto its saucer inside.*"
+        "text": "*I pocket the note she handed back and the information card, and close the nurse's office door. From beyond the closed door, the faint clink of a coffee cup, gone completely cold, being set down carries over.*"
     },
     "hidden_bitter_nurse_ending_title": {
         "name": "",
@@ -499,35 +499,35 @@
     },
     "perfect_seo_1": {
         "name": "{name}",
-        "text": "*Pots below the rooftop rail. Water marks remain in the soil.*"
+        "text": "*Under the rooftop railing, where the sunset has settled thick, damp marks from water just given spread across the soil of the small pots Seoyeon tends.*"
     },
     "perfect_seo_1_b": {
         "name": "Seoyeon",
-        "text": "You're here. ...Wait, let me put this down. Now you've come, I can't seem to finish what I was doing. *She sets down the watering can, droplets on its handle.*"
+        "text": "You're here. ...Wait, let me put this watering can down first. I hear your footsteps and my hands shake, so nothing I was doing is getting finished. *Seoyeon quietly sets the watering can down beside the railing. Clear drops bead on the plastic handle and glint in the evening light.*"
     },
     "perfect_seo_2": {
         "name": "{name}",
-        "text": "*Seoyeon puts away her handkerchief. Smears remain beneath her eyes.*"
+        "text": "*Seoyeon wipes the wet off with a handkerchief and puts it in her pocket. Up close, under Seoyeon's long lashes, the trace of tears she swallowed alone earlier is still red and smeared.*"
     },
     "perfect_seo_3": {
         "name": "Seoyeon",
-        "text": "I'll only tidy up this much today."
+        "text": "*Seoyeon tugs lightly at the end of my shirt sleeve and whispers low.* ...I'll only take the student council room cleanup this far today."
     },
     "perfect_seo_4": {
         "name": "Seoyeon",
-        "text": "We'll look at the rest tomorrow."
+        "text": "I'll leave the rest for tomorrow's us. Right now I'm only going to be with you."
     },
     "perfect_seo_5": {
         "name": "Seoyeon",
-        "text": "...Come downstairs with me. I don't want to send you off first just because today's work is done. *She heads for the stairs first, then stops at the door.*"
+        "text": "...Take my hand and let's go down together. Just because today's work is done, I don't want to send you down first by yourself, the way I used to. *Seoyeon laces her warm fingers between mine and stops in front of the door to the stairs.*"
     },
     "perfect_seo_5_b": {
         "name": "{name}",
-        "text": "*The door remains open.*"
+        "text": "*The rooftop iron door, always locked tight, stands wide open behind the two of us tonight and lets the evening wind in.*"
     },
     "perfect_epilogue_1_seo": {
         "name": "{name}",
-        "text": "*Even after graduation, the rooftop door was open from time to time.*"
+        "text": "*Even after we graduated high school, the rooftop door that held memories of just the two of us stayed wide open in the heart.*"
     },
     "perfect_epilogue_bridge_seo": {
         "name": "System",
@@ -535,11 +535,11 @@
     },
     "perfect_epilogue_2_seo": {
         "name": "{name}",
-        "text": "*On the day of my university entrance ceremony, Seoyeon sends a photo of two new plants and one empty space.*"
+        "text": "*On the restless morning of the university entrance ceremony, a photo arrived from Seoyeon. Two new pots side by side on the sunlit balcony of a small rented room, and one empty handspan of space left beside them.*"
     },
     "perfect_epilogue_3_seo": {
         "name": "Seoyeon",
-        "text": "You pick one."
+        "text": "You pick the last pot, the one that goes right beside these."
     },
     "perfect_epilogue_4_seo": {
         "name": "System",
@@ -547,71 +547,71 @@
     },
     "bitter_seo_1": {
         "name": "{name}",
-        "text": "*About a month later, she sends a short message asking to meet at the café in front of school.*"
+        "text": "*About a month after we exchanged confessions, a message came from Seoyeon asking to meet briefly at the café in front of school. It was unusually short.*"
     },
     "bitter_seo_2": {
         "name": "Seoyeon",
-        "text": "We were too careful."
+        "text": "*Seoyeon looks down at the coffee that has gone cold and quietly speaks.* ...Trying not to hurt each other, I think all we did was be too careful."
     },
     "bitter_seo_2_b": {
         "name": "{name}",
-        "text": "*Seoyeon aligns the coaster. Less than half the coffee is gone.*"
+        "text": "*Out of habit, Seoyeon squares the edge of the coaster. The coffee in both cups hasn't gone down by even half.*"
     },
     "bitter_seo_3": {
         "name": "{name}",
-        "text": "*Rain outside the café. One umbrella; the bus stop across the street.*"
+        "text": "*Outside the café, a thin spring rain keeps falling. One umbrella each, and the bus stop I have to take is across the cold, wet street.*"
     },
     "true_seo_1": {
         "name": "{name}",
-        "text": "*Seoyeon's room. Three plants and a file binder sit on her desk. A family photo leans beside the bookshelf.*"
+        "text": "*Seoyeon's room, the first time I've been invited in. On the desk, where a faint scent of skin lingers, a neat file binder and three small pots sit, and a family photo frame leans quietly against one side of the bookshelf.*"
     },
     "true_seo_2": {
         "name": "{name}",
-        "text": "*A folded piece of paper is tucked beneath one of the plant saucers.*"
+        "text": "*Under the saucer of the small pot in the middle, the corner of a white paper folded square sticks out a little, and I notice it.*"
     },
     "true_seo_3": {
         "name": "Seoyeon",
-        "text": "Sit down. The chair's over there."
+        "text": "*Seoyeon, her school jacket hung up, offers me a seat in a slightly tense voice.* Sit comfortably. The chair's in front of the desk over there."
     },
     "true_seo_4": {
         "name": "{name}",
-        "text": "*The chair scrapes softly as I pull it over.*"
+        "text": "*I pull the chair over and sit, and the floor of the quiet room makes a small scraping sound.*"
     },
     "true_seo_5": {
         "name": "Seoyeon",
-        "text": "Long conversations at home wear me out."
+        "text": "*Seoyeon perches on the edge of the bed and lets out a small breath.* ...At my house, if the excuses or the explanations run long, we both get tired."
     },
     "true_seo_6": {
         "name": "{name}",
-        "text": "*Seoyeon takes a sheet from under the plant saucer.* Did you write it down? ...Because it's hard to say aloud?"
+        "text": "*Seoyeon comes over and carefully takes out the folded paper she had hidden under the plant saucer.* ...Did you write that down ahead of time? Because it was hard to say it out loud, right in front of me?"
     },
     "true_seo_6b": {
         "name": "Seoyeon",
-        "text": "So I wrote it down. I didn't want to forget."
+        "text": "*The lobe of Seoyeon's ear flushes red.* ...Yeah. So I wrote it alone at night. If I see your face, I'll act perfect again and forget what I actually wanted to say."
     },
     "true_seo_7": {
         "name": "Seoyeon",
-        "text": "Don't read it. Not yet."
+        "text": "Ah, don't read it right here. I'm still too embarrassed."
     },
     "true_seo_7_b": {
         "name": "Seoyeon",
-        "text": "I didn't take it out to show you. ...Maybe you'll read it sometime, but not now. *She puts the paper back under the plant saucer.*"
+        "text": "I didn't take it out to show you right away. ...Someday you'll read all of it, but not tonight. *Before my fingertips can touch it, Seoyeon tucks the paper carefully back under the plant saucer.*"
     },
     "true_seo_7b": {
         "name": "{name}",
-        "text": "*Seoyeon places two cups on the desk.*"
+        "text": "*Seoyeon sets two mugs, warm steam rising from them, down side by side on the desk.*"
     },
     "true_seo_8": {
         "name": "{name}",
-        "text": "*She slides one cup toward {name}.*"
+        "text": "*One cup, still warm from Seoyeon, is carefully slid in front of {name}, and their fingertips meet, warm.*"
     },
     "true_seo_bridge": {
         "name": "{name}",
-        "text": "*The bedroom door stays slightly open.*"
+        "text": "*Seoyeon's door to the hallway is open about a handspan, and inside it the two shadows quietly overlap.*"
     },
     "true_epilogue_1_seo": {
         "name": "{name}",
-        "text": "*My first visit to Seoyeon's room, but the things are familiar.*"
+        "text": "*It's the first time in my life I've set foot in Seoyeon's room, and still the things on the desk, and her breathing, feel warm and familiar, as if I've known them for a long time.*"
     },
     "ending_aff_check_yuna": {
         "name": "System",
@@ -619,27 +619,27 @@
     },
     "perfect_yuna_1": {
         "name": "{name}",
-        "text": "*The library annex, the secret attic. Yuna hands over a short story.*"
+        "text": "*Deep in the library annex, a secret attic just for the two of us, sunset coming through a dusty window. Yuna hands me the last short-story notebook she had been holding carefully in both hands.*"
     },
     "perfect_yuna_2": {
         "name": "{name}",
-        "text": "*The title is the main character's name.*"
+        "text": "*In the center of the notebook cover I carefully take, a title written neat in pale violet fountain-pen ink stands out clear. It's my name. Yuna's warmth is still on those short letters.*"
     },
     "perfect_yuna_3": {
         "name": "Yuna",
-        "text": "Tell me what you think after you finish it. That's my answer."
+        "text": "*Yuna's clear eyes look straight up at my face.* When you've read it all the way to the last line, tell me in your voice. ...This notebook is the answer I'm giving you."
     },
     "perfect_yuna_4": {
         "name": "{name}",
-        "text": "*The ink is slightly smudged beneath the story's final sentence.*"
+        "text": "*Under the last sentence of the notebook, the page turned with my breath held, the pale violet ink has spread a little, like the mark of a fountain-pen tip that stayed too long and trembled.*"
     },
     "perfect_yuna_5": {
         "name": "Yuna",
-        "text": "*She stands and sets down the notebook.* Can I hug you? *She opens her arms slightly and waits for an answer from a foot away.*"
+        "text": "*Yuna quietly stands, takes the notebook from my hand, and sets it down.* ...Can I hug you first now? *Yuna holds both arms slightly open and waits for my answer a handspan away, close enough that her breath might reach, her lashes trembling.*"
     },
     "perfect_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*I sit in the same place every day. Yuna no longer lingers on the same page for too long.*"
+        "text": "*After that day, too, we sat shoulder to shoulder every day on the same sofa in the annex. Yuna was no longer holding on alone to one page that never ended.*"
     },
     "perfect_epilogue_bridge_yuna": {
         "name": "System",
@@ -647,11 +647,11 @@
     },
     "perfect_epilogue_2_yuna": {
         "name": "{name}",
-        "text": "*Yuna's first novel is published. The dedication contains one line: 'To the person who listened to the third track with me.'*"
+        "text": "*A year later, Yuna's first full-length novel was finally published. Turn the blank white first page, and the dedication has only one printed line. \"To the one person who listened with me, all the way through, to my third track.\"*"
     },
     "perfect_epilogue_3_yuna": {
         "name": "Yuna",
-        "text": "*She still doesn't say much. The notes she sends {name} have grown a little longer.*"
+        "text": "*Yuna still says little in front of other people, but the sentences on the pale violet notes she slips into {name}'s pocket grow a little longer, and sweeter, as the seasons pass.*"
     },
     "perfect_epilogue_4_yuna": {
         "name": "System",
@@ -659,70 +659,70 @@
     },
     "bitter_yuna_1": {
         "name": "{name}",
-        "text": "*I confessed. Yuna nodded, but her fingers continued to rub the end of the bookmark. About a month later, a note was placed in my locker. ‘Let’s talk.’*"
+        "text": "*I gave her the confession, and Yuna nodded quietly, but her pale fingers kept anxiously rubbing only the corner of the bookmark. About a month later, a short note was left in my locker. \"Let's talk.\"*"
     },
     "bitter_yuna_2": {},
     "bitter_yuna_2_library": {
         "name": "Yuna",
-        "text": "Sometimes I think of you when I smell a library. I should've said more back then."
+        "text": "Sometimes I think of you. Every time I smell library paper on a rainy day... I should have said more of what I felt back then, instead of being afraid."
     },
     "bitter_yuna_2_book": {
         "name": "Yuna",
-        "text": "Sometimes I think of you when I pass a bookstore. I should've said more back then."
+        "text": "Sometimes I think of you. Every time I pass the used bookstore in the alley... I should have said more of what I felt back then, instead of hiding."
     },
     "bitter_yuna_3": {
         "name": "{name}",
-        "text": "*I walk out through the gate into the rain and unfold Yuna’s last note again. The ink along the bottom is beginning to run.*"
+        "text": "*I walk out through the school gate alone. Cold rain falls. I take the last note Yuna left from my pocket and open it again, but the pale violet writing along the bottom of the paper has run in the rain and can't be read anymore.*"
     },
     "true_yuna_1": {
         "name": "{name}",
-        "text": "*Past the annex reading nook: a hidden attic I've never seen.*"
+        "text": "*Behind the deepest shelves of the library annex, the secret attic just for the two of us, the one Yuna opens and shows me for the first time.*"
     },
     "true_yuna_2": {
         "name": "Yuna",
-        "text": "I was the only one who knew about this place."
+        "text": "*Yuna looks down at me from the narrow stairs and whispers.* I used to be the only one at school who knew the way to this attic."
     },
     "true_yuna_2_b": {
         "name": "Yuna",
-        "text": "Watch your step. Small ladder. *She climbs and opens the hatch; wind blows in.*"
+        "text": "Watch your step. The wooden ladder's a little narrow. *Yuna climbs first and pushes up the small hatch in the ceiling, and a cool evening wind pours into the attic.*"
     },
     "true_yuna_2_c": {
         "name": "{name}",
-        "text": "It leads to the annex roof. I had no idea this passage was here."
+        "text": "Wow, it opens right onto a small roof above the annex. So a secret passage like this was hidden here."
     },
     "true_yuna_2_d": {
         "name": "Yuna",
-        "text": "We came up together, so stay a little. There's still something I want to show you. *She leans against the railing. The sun sinks beyond the mountains.*"
+        "text": "You came all the way up here with me, so stay beside me for a little. There's still one thing I want to show you. *Yuna stands with her back against the low rooftop railing, right beside me. The red sun sinks slowly past the far ridge.*"
     },
     "true_yuna_3": {
         "name": "Yuna",
-        "text": "*On the low roof above the hatch, the wind lifts the corner of her notebook.*"
+        "text": "*The small secret roof above the hatch. In the evening wind, the corner of the notebook Yuna holds to her chest flutters.*"
     },
     "true_yuna_4": {
         "name": "Yuna",
-        "text": "*She opens the playlist on her phone. A small star marks the third track.*"
+        "text": "*Yuna turns on her phone and opens the music playlist. Beside the title of the third track, one very small star is glinting.*"
     },
     "true_yuna_5": {},
     "true_yuna_5_b": {
         "name": "Yuna",
-        "text": "This track first. *Her finger stops at the third song; her grip on the book loosens.*"
+        "text": "This song first. *Yuna's pale finger stops on the third song, and the hand that had been gripping the book like a shield all along slowly loosens.*"
     },
     "true_yuna_6": {},
     "true_yuna_6b": {
         "name": "Yuna",
-        "text": "Today, listen to it here with me."
+        "text": "*She puts one earphone into my ear herself, and her fingertip brushes my ear.* ...Tonight I want to listen to it here, with you."
     },
     "true_yuna_7": {
         "name": "{name}",
-        "text": "*The playlist has been copied into her notebook. Beside the third title is the same pale violet dot as on her first note. Yuna presses Play.*"
+        "text": "*On an open page of Yuna's notebook, the same playlist is copied out by hand. Beside the title of the third song is the same pale violet dot as on the note she gave me the first day. Yuna quietly presses play.*"
     },
     "true_yuna_bridge": {
         "name": "Yuna",
-        "text": "Can I lean back against you? *Under the crescent moon, she leaves a handspan of room. Playback stops after the last track.*"
+        "text": "...Can I lean my back against your shoulder? *Under a night sky with a white crescent moon up, Yuna closes the handspan of space beside me. Even after the last piano line fades, the warmth between us doesn't pull apart.*"
     },
     "true_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*Yuna now said things she used to put in notes.*"
+        "text": "*After that night, even the most fragile feelings Yuna used to hide behind paper notes, she told me herself, looking me in the eye.*"
     },
     "ending_aff_check_dain": {
         "name": "System",
@@ -730,40 +730,40 @@
     },
     "perfect_dain_1": {
         "name": "{name}",
-        "text": "*A knee brace and rehab schedule lie on the gym bench. The balls are in storage.*"
+        "text": "*On the evening gym bench, the heat already gone, Dain's knee brace and the hospital rehab schedule lie side by side. The volleyballs are all in the storage bin.*"
     },
     "perfect_dain_2": {
         "name": "Dain",
-        "text": "I'm starting proper rehabilitation next week."
+        "text": "*Dain sits beside me, taps her knee lightly, and starts to speak.* Hey, starting next Monday I'm going to a proper sports rehab clinic."
     },
     "perfect_dain_2b": {
         "name": "Dain",
-        "text": "Look, I really booked it. ...I didn't just say it to put you at ease. *She shows the confirmation screen and puts her phone beside her knee brace.*"
+        "text": "Here, look. I really did finish the booking, right? ...I wasn't just talking around it so you wouldn't worry, so relax. *Dain holds the booking confirmation on her phone up in front of me, sure of it, then sets the phone down beside the knee brace.*"
     },
     "perfect_dain_3": {
         "name": "Dain",
-        "text": "I still don't know about going pro. But I'm going to look for ways to stay involved off the court."
+        "text": "Honestly, I still don't know if I can play all the way to the pro stage like before. But now I'm going to look for a way to breathe with volleyball, even off the court."
     },
     "perfect_dain_3b": {
         "name": "Dain",
-        "text": "Listening to this person, I keep wanting to add things myself. ...Turns out listening can be fun, too. *She pauses the broadcast and points at the commentator's name below it.*"
+        "text": "When I listen to this commentator's broadcast, I keep adding the plays and the players' movement out loud from the side, without meaning to. ...Playing it with my voice off the court is a much bigger rush than I thought. *Dain pauses the game broadcast that was playing and points at the commentator's name at the bottom of the screen.*"
     },
     "perfect_dain_4": {
         "name": "{name}",
-        "text": "Player or not, you're at your best when you talk about volleyball. I'll watch your first broadcast."
+        "text": "Even if you never put on a player's uniform, you're the coolest in the world when you light up talking about volleyball. Your first broadcast, I'll be the very first one watching. No question."
     },
     "perfect_dain_5": {
         "name": "Dain",
-        "text": "Can I hug you for a moment? *When {name} holds out their arms, Dain balances on her left foot and puts an arm around their shoulders. {name} supports her weight so none of it falls on her right knee.*"
+        "text": "...Hey, can I hug you for a second? *When {name} steps in first with both arms open, Dain balances on her healthy left foot and wraps both arms around the back of my neck. {name} holds her firmly around the waist, so none of her weight lands on the injured right knee.*"
     },
     "perfect_epilogue_1_dain": {
         "name": "{name}",
-        "text": "Let's sit on the bench. Slowly. *Dain releases her arms and I ease back. Once she's comfortably on both feet, we sit together.*"
+        "text": "Dain, let's sit on the bench. Slowly. *Once Dain's hot breath against the back of my neck settles and her arms loosen, I make sure both her feet are comfortably on the floor, and only then do we sit side by side on the bench.*"
     },
     "perfect_epilogue_1b_dain": {},
     "perfect_epilogue_1c_dain": {
         "name": "{name}",
-        "text": "*Dain sets the pace on rehab days; {name} matches it.*"
+        "text": "*On rehab days coming back from the hospital, Dain always sets the pace, and {name} gladly matches my steps to hers.*"
     },
     "perfect_epilogue_bridge_dain": {
         "name": "System",
@@ -771,11 +771,11 @@
     },
     "perfect_epilogue_2_dain": {
         "name": "{name}",
-        "text": "*Dain majors in sports media and joins the campus broadcast crew. The night before her first broadcast, she rewrites the script three times.*"
+        "text": "*One year later, Dain entered the university sports media department with her head high and joined the campus game broadcast crew. The night before her first live broadcast, nervous and excited, we reworked the script together in my room three times.*"
     },
     "perfect_epilogue_3_dain": {
         "name": "{name}",
-        "text": "*On painful days, we review rehabilitation notes and game footage instead of training. Now Dain is the first to say when she needs rest.*"
+        "text": "*When a dull ache hits her knee on rainy days, we skip the hard training and sit side by side over the rehab log and game-analysis footage. These days, Dain is the one who tells me first that we should rest a little today.*"
     },
     "perfect_epilogue_4_dain": {
         "name": "System",
@@ -783,27 +783,27 @@
     },
     "bitter_dain_1": {
         "name": "{name}",
-        "text": "*I confessed. About a month later, a text arrives asking me to wait outside the gym.*"
+        "text": "*About a month after I confessed, a short text from Dain arrived, asking to meet briefly in front of the gym's main door after school.*"
     },
     "bitter_dain_2": {
         "name": "Dain",
-        "text": "It was fun! But I think it was only fun. That's what feels a little off."
+        "text": "*Dain forces a bright laugh, but the corners of her eyes are faintly wet.* The time I spent with you was really fun! ...But, I guess what we had was only ever just fun. That's what I regret the most."
     },
     "bitter_dain_3": {
         "name": "{name}",
-        "text": "*Outside the gym in the rain. One bounce sounds beyond the closed door.*"
+        "text": "*Outside the gym door, in the spring rain. Beyond the tightly shut iron door, the dull sound of a volleyball bounced alone on the floor sounds once.*"
     },
     "bitter_dain_3_b": {
         "name": "{name}",
-        "text": "*I leave without an umbrella. Wet cherry petals cling underfoot.*"
+        "text": "*I walk out through the school gate in the rain without opening an umbrella. A pale pink cherry petal, wet from the rain, sticks to the toe of my sneaker.*"
     },
     "bitter_epilogue_1": {
         "name": "{name}",
-        "text": "*After graduation, we speak less and less. Once a month becomes once every two months. One day, I leave only 'What should I say?' in the message box, then turn off the screen.*"
+        "text": "*After graduation, as the seasons changed, we contacted each other less and less. Check-ins that used to come once a month became once every two months, and one night I typed only \"How have you been?\" into the message box, then turned the screen off without ever sending it.*"
     },
     "bitter_epilogue_2": {
         "name": "{name}",
-        "text": "*A record of five days remains. In the last photo, there's a gap between us wide enough for someone to walk through.*"
+        "text": "*The bright record of those five days in the first week after I transferred stayed in the photo album, but in the photo from the last day a cold gap sat empty between the two of us, wide enough for someone to pass through.*"
     },
     "bitter_epilogue_3": {
         "name": "System",
@@ -811,72 +811,72 @@
     },
     "true_dain_1": {
         "name": "{name}",
-        "text": "*After the event, we sit side by side at the gym wall. The hospital appointment page is open on Dain's phone.*"
+        "text": "*After the noisy festival is completely over, we sit side by side with our backs against the quiet gym wall. On the phone in Dain's hand, an orthopedics appointment screen glows bright.*"
     },
     "true_dain_2": {
         "name": "Dain",
-        "text": "{name}, look. Now I can't just say I'm fine and leave it at that. *She holds out her phone.*"
+        "text": "{name}, look at this. You already found out my knee hurts, so I can't keep lying that I'm fine and covering it up on my own anymore. *A little shy, Dain scrunches her nose and holds the phone screen out toward me.*"
     },
     "true_dain_2b": {
         "name": "{name}",
-        "text": "*Rehabilitation appointment confirmed: Monday, 4:30 p.m.*"
+        "text": "*The words stand clear on the screen. \"Monday, 4:30 p.m., sports rehab appointment confirmed.\"*"
     },
     "true_dain_3": {
         "name": "Dain",
-        "text": "I told Coach and my parents too. They really let me have it, but I felt better once I'd said it."
+        "text": "Today I told Coach, and Mom and Dad, the truth about my knee. All of it. They really let me have it for only saying it now... but once it was all out, I felt so much lighter."
     },
     "true_dain_4": {
         "name": "{name}",
-        "text": "*Beneath the appointment screen, an application for the sports broadcasting club is open too.*"
+        "text": "*In the tab right under the hospital appointment confirmation, the new-member application for the campus sports broadcasting club is open too.*"
     },
     "true_dain_5": {
         "name": "{name}",
-        "text": "You're going to try both?"
+        "text": "Rehab and broadcasting. You're going to start both?"
     },
     "true_dain_6": {
         "name": "Dain",
-        "text": "Yeah. I’m sticking with rehab, and I want to give broadcasting a try, too."
+        "text": "Yeah! I'll keep up with the knee rehab, properly, and in the meantime I'm going to really take a shot at broadcasting the campus games."
     },
     "true_dain_7": {
         "name": "{name}",
-        "text": "Then I'll watch your first broadcast."
+        "text": "Good. Then the first broadcast where you take the mic, I'll be the first listener. No question."
     },
     "true_dain_8": {
         "name": "Dain",
-        "text": "No take-backs. Even if it's boring, you have to watch to the end."
+        "text": "*Dain's eyes light up.* Hey, no taking back what you just said! Even if I get nervous, stumble over my words, and it's boring, you have to stay and watch to the end!"
     },
     "true_dain_8b": {
         "name": "Dain",
-        "text": "If you're only saying it to make me happy, I'll fall for it. ...So I hope you really mean it. *Hugging the ball, she holds out her little finger.*"
+        "text": "If that's just empty words to match my mood right now, I'll believe every bit of it like an idiot. ...So I hope it wasn't something you only said in passing. *Holding the volleyball in her left arm, Dain carefully holds out the trembling little finger of her right hand.*"
     },
     "true_dain_bridge": {
         "name": "Dain",
-        "text": "Can I lean on you a moment? *The confirmation stays on her phone. Ball in her arms, she leaves a shoulder-width gap and waits for my answer.*"
+        "text": "...Hey, can I lean on your shoulder for a second? *The hospital appointment confirmation glows softly on the phone screen. Holding the ball, Dain closes in beside me until only a shoulder's width is left, and waits for an answer, barely breathing.*"
     },
     "true_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*That day, instead of saying she was fine, Dain told me the date of her next appointment.*"
+        "text": "*That night, instead of laughing out of habit and brushing it off with \"I'm fine,\" Dain told me the date of next week's hospital visit first.*"
     },
     "true_epilogue_2": {
         "name": "{name}",
-        "text": "*Sunday evening. I slow down past the gate on my way home. I'll be here tomorrow, too.*"
+        "text": "*On the walk home Sunday night, in a cool breeze, we slow our steps together in front of the school gate. When morning comes tomorrow, we'll pass through this gate together again.*"
     },
     "true_epilogue_3": {
         "name": "{name}",
-        "text": "*Five days since I transferred on Wednesday. In the last box of my first week, I write down our plans for tomorrow.*"
+        "text": "*Five breathless days, from the Wednesday I transferred into an unfamiliar classroom. In the very last box of the first week's calendar, I write tomorrow's promise in careful letters.*"
     },
     "true_epilogue_4": {},
     "true_epilogue_4_seo": {
         "name": "{name}",
-        "text": "*Her mother's calls are still short, and the note by the mirror remains. Sometimes Seoyeon speaks without a note now.*"
+        "text": "*Calls from Seoyeon's mother are still short, and the schedule notes in front of the vanity mirror are still stuck there. But Seoyeon, standing in front of me now, says what's in her heart first, even without a note written ahead.*"
     },
     "true_epilogue_4_yuna": {
         "name": "{name}",
-        "text": "*Her senior's contact is still gone. The library corner seat is still empty. But Yuna now uses her voice before notes.*"
+        "text": "*The contact for the senior who left is still empty, and the old seat in the corner of the library is still quiet. Instead, Yuna now calls my name in her own warm voice before a folded paper note.*"
     },
     "true_epilogue_4_dain": {
         "name": "{name}",
-        "text": "*Dain renames tomorrow’s alarm “rehab stretches.” She says she will send me her commentary practice, too. I promise to watch it all and tell her what I think.*"
+        "text": "*Dain changes tomorrow morning's wake-up alarm from \"Dawn practice\" to \"Rehab stretches\" and saves it. She said she'd film her first commentary practice and send it to me first. I hooked my little finger with hers and promised I'd watch the whole video and reply.*"
     },
     "true_epilogue_7": {
         "name": "System",
@@ -884,23 +884,23 @@
     },
     "day5_ending_alone": {
         "name": "{name}",
-        "text": "*A phone alert outside the gate. Low battery.*"
+        "text": "*Outside the school gate I walked out of alone, my phone buzzes once, short. It isn't someone's message. It's a system warning that the battery is low.*"
     },
     "alone_1": {
         "name": "{name}",
-        "text": "*I gather the notes and photos from the past five days into one folder. I don't delete anything from anyone.*"
+        "text": "*I stack the notes and photos from the five days since I transferred into one folder in the drawer. I don't deliberately erase anyone's trace among them.*"
     },
     "alone_2": {
         "name": "{name}",
-        "text": "*A quiet room. No new messages in the three pinned chats.*"
+        "text": "*A quiet room, the lights off. The three chats pinned at the top of the messenger are all still, with no new alerts.*"
     },
     "alone_2_b": {
         "name": "{name}",
-        "text": "*Leaving the reply box empty, I set my phone down.*"
+        "text": "*I close the empty input box, where I couldn't type a single character, and set the phone down quietly on the desk.*"
     },
     "alone_4": {
         "name": "{name}",
-        "text": "*I charge the phone and set the morning alarm. The screen goes dark; the clock keeps ticking.*"
+        "text": "*I plug in the charging cable and set the alarm for school tomorrow morning. Even after the screen goes completely black, the second hand of the wall clock goes on in the dark, toward tomorrow.*"
     },
     "alone_5": {
         "name": "System",
@@ -928,35 +928,35 @@
     },
     "day5_ending_confess_fail": {
         "name": "{name}",
-        "text": "*We walk to the park after my confession. I wait for an answer.*"
+        "text": "*After I get every word out, we walk side by side as far as the park streetlight where the evening dusk has settled, and I wait quietly for an answer.*"
     },
     "confess_fail_cg_seo": {
         "name": "Seoyeon",
-        "text": "*After listening for a long time, she shakes her head.* I'm sorry. Not now."
+        "text": "*Seoyeon hears me all the way through. Her lips part, and then she slowly shakes her head.* ...I'm grateful you feel that way. I'm really sorry. But my feelings don't go that far right now."
     },
     "confess_fail_cg_yuna": {
         "name": "Yuna",
-        "text": "*At the park exit, she looks ahead. Our hands don't touch.* Sorry. I can't return those feelings."
+        "text": "*In front of the park exit, Yuna looks at the swaying shadow of the streetlight instead of my eyes. Half a step apart, our fingertips never meet.* ...Sorry. I can't take the feelings you offered and hold them at the same weight."
     },
     "confess_fail_cg_dain": {
         "name": "Dain",
-        "text": "*She wipes at the corner of her eye and tries to smile, but her voice is clear.* Sorry. I want us to stay friends."
+        "text": "*Dain wipes the corner of her eye with the back of her hand and tries to smile, but her cracked voice stays steady and clear.* ...Sorry. Really sorry. I want to stay good friends with you, the way we are now."
     },
     "confess_fail_1": {
         "name": "{name}",
-        "text": "*Days later, at the rainy gate. I don't follow the retreating figure.*"
+        "text": "*A few days later, spring rain drizzles in front of the school gate on the way home. Beyond the umbrella, I no longer follow the familiar back as it walks away.*"
     },
     "confess_fail_2": {
         "name": "{name}",
-        "text": "*After writing and erasing, I leave one sentence in the chat.*"
+        "text": "*I write a long sentence in the messenger box and delete it, over and over, and in the end I leave only the plainest one.*"
     },
     "confess_fail_3": {
         "name": "{name}",
-        "text": "I understand. Thanks for answering. *I send it and put my phone down.*"
+        "text": "Thanks for answering me honestly that day. *I hit send and set my phone quietly down on the desk.*"
     },
     "confess_fail_4": {
         "name": "{name}",
-        "text": "*Read. No reply. I send nothing more.*"
+        "text": "*A moment later the 1 disappears, and the read mark stays. No reply comes, and I don't add anything under it either.*"
     },
     "confess_fail_5": {
         "name": "System",
@@ -964,63 +964,63 @@
     },
     "day5_ending_good": {
         "name": "{name}",
-        "text": "*Not much changes after the confession. I simply have one more plan on my calendar.*"
+        "text": "*Even after that nervous confession, our days didn't flip overnight. All that happened is one more promise between the two of us on my daily schedule, one I look forward to.*"
     },
     "good_1": {
         "name": "{name}",
-        "text": "*For several days, our conversations keep faltering. Even so, we don't stop talking.*"
+        "text": "*For the first few days, whenever we faced each other, embarrassment kept cutting the conversation short. Even so, the messages that went on every night never broke off, not for a single day.*"
     },
     "good_1b": {
         "name": "{name}",
-        "text": "*The two of us leave by the same road.*"
+        "text": "*When the dismissal bell rang, the two of us walked out the school gate along the same hallway, as if we'd planned it.*"
     },
     "good_1c": {
         "name": "{name}",
-        "text": "*A cherry blossom petal sticks to the front of my shoe, then falls off on the next step.*"
+        "text": "*One pale pink cherry petal, blown on the wind, lands on the toe of a sneaker, then drifts off on the next step we take side by side.*"
     },
     "good_1_seo": {
         "name": "Seoyeon",
-        "text": "Let's take it slowly."
+        "text": "Let's not rush. We'll match each other, slowly."
     },
     "good_1_seo_b": {
         "name": "Seoyeon",
-        "text": "{name}, wait. You've got a petal on you. ...I don't want to rush past it right now. *She removes the petal from my sleeve edge.*"
+        "text": "{name}, stop for a second. There's a petal on your shoulder. ...I don't want to walk past you anymore, using student council work as the excuse. *Seoyeon takes a step closer and gently picks the cherry petal off the end of my uniform sleeve.*"
     },
     "good_1_seo_c": {
         "name": "Seoyeon",
-        "text": "I meant it when I said let's take it slowly. That includes walking together right now. *She slows by half a step.*"
+        "text": "When I said let's go slowly just now, that wasn't just talk to keep my distance. Walking in step with you like this is all inside what I meant. *Seoyeon slows by half a step from her usual pace and stands close beside me.*"
     },
     "good_1_seo_d": {
         "name": "{name}",
-        "text": "*Our steps fall into line.*"
+        "text": "*In the sunset light, the two shadows and their footsteps fall into one line.*"
     },
     "good_2_seo": {
         "name": "{name}",
-        "text": "*At the end of the cherry blossom path, Seoyeon stops at the crosswalk.*"
+        "text": "*At the end of the drifting cherry-blossom path, Seoyeon stops in front of the white line at the crosswalk.*"
     },
     "good_3_seo": {
         "name": "Seoyeon",
-        "text": "The light's changing."
+        "text": "There. The light's turning green."
     },
     "good_4_seo": {
         "name": "{name}",
-        "text": "*Seoyeon crosses first, then slows near the middle.*"
+        "text": "*Seoyeon steps onto the crosswalk one step ahead, then around the middle of the road she eases her pace and waits for me to catch up.*"
     },
     "good_5_seo": {
         "name": "{name}",
-        "text": "*On the other side, we make our next plan using only a time and place.*"
+        "text": "*On the sidewalk across the street, once we'd crossed, we quietly promised a time and a place to meet again tomorrow.*"
     },
     "good_epilogue_1": {
         "name": "Seoyeon",
-        "text": "*A text from Seoyeon.* Tomorrow, lunch, rooftop. I booked it properly this time."
+        "text": "*A text from Seoyeon that night.* See you on the rooftop at lunch tomorrow. This time I didn't sneak it open. I filed a proper use request with the admin office."
     },
     "good_epilogue_2": {
         "name": "{name}",
-        "text": "*In the photo, both our names are written in the noon slot of the access log. Beside them, in Seoyeon's handwriting: 'Don't be late.'*"
+        "text": "*In the photo she sent with it, both our names are written side by side in the noon slot of the rooftop access log. In the margin beside them, Seoyeon's neat handwriting, small: \"Don't be even one minute late.\"*"
     },
     "good_epilogue_3": {
         "name": "{name}",
-        "text": "*The next day, Seoyeon unlocks the door with the borrowed key and returns it immediately. She waits outside until {name} arrives.*"
+        "text": "*At lunch the next day, Seoyeon leaves the rooftop door wide open with the key she borrowed properly, and stands at the door smiling until {name} finishes climbing the stairs.*"
     },
     "good_5_cg_seo": {
         "name": "System",
@@ -1028,40 +1028,40 @@
     },
     "good_1_yuna": {
         "name": "Yuna",
-        "text": "It took you a while. But thank you for saying it all."
+        "text": "*Yuna lets out a thin breath and looks up into my eyes.* ...You did come back a little late. Still, thank you for saying it all the way through, without swallowing it."
     },
     "good_1_yuna_b": {
         "name": "Yuna",
-        "text": "*She offers a folded note. One line inside.* Tell me first next time."
+        "text": "*Yuna hands over a small note she'd kept folded in her palm. Unfolded, one line in pale purple fountain pen.* Next time, don't hesitate. Tell me first."
     },
     "good_1_yuna_b_b": {
         "name": "{name}",
-        "text": "*It's a short sentence. Ink has bled along the fold.*"
+        "text": "*It's one short, neat sentence. Pale purple ink has bled softly along the crease of paper folded and unfolded again and again.*"
     },
     "good_2_yuna": {
         "name": "{name}",
-        "text": "*At the rooftop rail, Yuna doesn't turn away in the wind.*"
+        "text": "*Yuna, leaning on the rooftop rail beside me, doesn't leave first, even when the cool evening wind messes up her hair.*"
     },
     "good_3_yuna": {
         "name": "{name}",
-        "text": "*The closing announcement ends. We stay at the same rail.*"
+        "text": "*Even after the broadcast announcing the end of the festival goes completely quiet, the two of us stay at the same rail, shoulders touching.*"
     },
     "good_4_yuna": {
         "name": "Yuna",
-        "text": "*She slips the bookmark into a new page, on the side without a fold mark.*"
+        "text": "*Yuna opens the notebook in her hands and slips the pale purple bookmark into a new page. The next sheet is clean, with no crease on it yet.*"
     },
     "good_5_yuna": {
         "name": "{name}",
-        "text": "*We descend the rooftop stairs slowly, without stopping.*"
+        "text": "*Matching our footsteps, we go down the rooftop stairs slowly, but without stopping.*"
     },
     "good_epilogue_1_yuna": {},
     "good_epilogue_2_yuna": {
         "name": "{name}",
-        "text": "*I tuck the note inside my bag. The pages we did not read today will still be there tomorrow.*"
+        "text": "*I tuck the note Yuna gave me into the deepest inner pocket of my bag. The next page we didn't finish today will be waiting for us in the same place tomorrow.*"
     },
     "good_epilogue_3_yuna": {
         "name": "Yuna",
-        "text": "*Small writing on the note's back, its pale purple ink smeared.* ...Let's read the ending together."
+        "text": "*Back home, I open the note again. Tiny writing is hidden in a corner on the back. Pale purple ink, slightly bled.* ...Let's read the rest of the ending together tomorrow."
     },
     "good_5_cg_yuna": {
         "name": "System",
@@ -1069,35 +1069,35 @@
     },
     "good_1_dain": {
         "name": "Dain",
-        "text": "Hey, things between us still aren't completely settled. But I made another appointment for my knee on Monday."
+        "text": "Hey, just so you know, the awkwardness between us isn't a hundred percent gone yet! ...But my knee, I'm going to the hospital on Monday and getting it properly checked again."
     },
     "good_2_dain": {
         "name": "{name}",
-        "text": "*At the school gate, Dain holds out a folded rehabilitation leaflet.*"
+        "text": "*In front of the school gate, under the sunset. Dain pulls a hospital rehab leaflet, folded in half, from her pocket and holds it out in front of me.*"
     },
     "good_3_dain": {
         "name": "{name}",
-        "text": "*I take the leaflet. Only then does Dain smile.*"
+        "text": "*When I take the leaflet in both hands, only then does Dain break into a bright smile, relieved.*"
     },
     "good_4_dain": {
         "name": "Dain",
-        "text": "I'm not okay today. So let's take it slow."
+        "text": "Honestly, today neither my knee nor my heart is completely okay. So... let's walk a little slowly."
     },
     "good_5_dain": {
         "name": "{name}",
-        "text": "*Dain holds out a fist and waits. The rehab leaflet in my hand has our next walk’s time written on it, along with ‘I set the pace.’*"
+        "text": "*Dain holds out a lightly closed fist first and waits. In the margin of the rehab leaflet in my hand, along with the time for tomorrow's walk, Dain's round handwriting says, \"I set the pace!\"*"
     },
     "good_epilogue_1_dain": {
         "name": "Dain",
-        "text": "*Dain's message.* Anyone up for a rehab walk tomorrow morning?"
+        "text": "*A message from Dain that night.* Anyone who'll walk a rehab walk with me tomorrow morning, before school?"
     },
     "good_epilogue_2_dain": {
         "name": "{name}",
-        "text": "*A short question stays on the screen for a long time.*"
+        "text": "*One short, playful question glows warm on the phone screen for a long time.*"
     },
     "good_epilogue_3_dain": {
         "name": "{name}",
-        "text": "I'm in. You set the pace. *I send the reply.*"
+        "text": "Of course I'm in. You set the walking pace, though. *I send the reply right away and move tomorrow morning's alarm up by thirty minutes.*"
     },
     "good_5_cg_dain": {
         "name": "System",
@@ -1105,19 +1105,19 @@
     },
     "day5_ending_friend": {
         "name": "{name}",
-        "text": "*Instead of confessing, I decide to write “thank you.” I leave the first character in the text box without closing the screen.*"
+        "text": "*Instead of knocking the distance down with a hasty confession, I decide to send a sincere thank-you. I leave the first letter typed in the messenger box and don't turn the screen off.*"
     },
     "friend_1": {
         "name": "{name}",
-        "text": "*I leave the message box open on the park bench.*"
+        "text": "*I sit on a park bench under a lit streetlight and leave the chat box quietly open.*"
     },
     "friend_2": {
         "name": "{name}",
-        "text": "*I remember all the words I put off before sending Sojeong my apology. This time, I want to speak while I have the chance.*"
+        "text": "*The words I kept putting off and swallowing, right up until I sent Sojeong that late apology, flash past. This time, I want to leave them in my own voice while I still can.*"
     },
     "friend_3": {
         "name": "{name}",
-        "text": "I'm not ready to ask for something more right now. But I wanted to tell you I'm grateful for you. *I finish typing and send it.*"
+        "text": "I don't have the nerve, right now, to say we should call what we have by another name. Still, I had to say this. I'm really grateful you were beside me this week. *I type it out letter by letter and hit send.*"
     },
     "friend_route_check": {
         "name": "System",
@@ -1125,39 +1125,39 @@
     },
     "friend_4": {
         "name": "{name}",
-        "text": "*A reply comes: 'I'm grateful too. See you at school tomorrow.'*"
+        "text": "*A reply arrives at once, with a short buzz. \"I was really grateful this week too. See you at school tomorrow.\"*"
     },
     "friend_4_seo": {
         "name": "Seoyeon",
-        "text": "*Seoyeon's reply.* Okay. You got it all out this time. See you tomorrow."
+        "text": "*A reply from Seoyeon.* Okay. I get what you mean. This time you said it all the way through, without swallowing it. See you at school tomorrow."
     },
     "friend_4_yuna": {
         "name": "Yuna",
-        "text": "*Yuna's reply.* I read it. ...See you tomorrow."
+        "text": "*A reply from Yuna.* I read what you sent, all the way through. ...See you at the library tomorrow."
     },
     "friend_4_dain": {
         "name": "Dain",
-        "text": "*Dain's reply.* Yeah. Then come as usual tomorrow. Don't be late."
+        "text": "*A reply from Dain.* Yeah, got it! Then come to the classroom tomorrow morning, like usual. Don't be late!"
     },
     "friend_5": {
         "name": "{name}",
-        "text": "*I answer with a short 'Okay,' then turn off the screen.*"
+        "text": "*I send a short reply, \"Yeah, see you tomorrow,\" then turn the screen off with a lighter touch.*"
     },
     "friend_7": {
         "name": "{name}",
-        "text": "*My sent message is marked read. The input box is empty.*"
+        "text": "*A read mark appears at once beside the last greeting I sent. Easy night air settles over the empty input box.*"
     },
     "friend_8": {
         "name": "{name}",
-        "text": "*Graduation day. My phone gallery shows a group photo with my friends from this school. This time, I'm looking at the camera.*"
+        "text": "*Graduation day, after the seasons have passed. I open my phone gallery, and up comes a group photo of me shoulder to shoulder with friends from this school. Unlike me in the old photos, this time I'm not looking away. I'm facing the camera straight on, and smiling.*"
     },
     "friend_9": {
         "name": "{name}",
-        "text": "*The file is named “Graduation_Friends.” The same photo appears in the group chat.*"
+        "text": "*The saved photo is named \"Graduation_Us.\" The same picture we just took also pops up in the noisy group chat.*"
     },
     "friend_10": {
         "name": "{name}",
-        "text": "Want to grab something together after graduation? *I post in the group chat. Replies arrive one by one.*"
+        "text": "Want to all go get something to eat after the ceremony? *The moment I post it in the group chat, replies from the three of them pour in one after another, as if they'd been waiting.*"
     },
     "friend_12": {
         "name": "System",
@@ -1165,35 +1165,35 @@
     },
     "day5_ending_mayhem": {
         "name": "{name}",
-        "text": "*All three chats are stuck on 'read'. I try to write a reply, then delete it at the first letter.*"
+        "text": "*All three chats are stuck on a cold read mark. I try to write a late excuse, then erase it before I even finish the first letter.*"
     },
     "mayhem_1": {
         "name": "Seoyeon",
-        "text": "*She passes {name} in the hallway. She does not turn her head.*"
+        "text": "*Passing in the hallway, Seoyeon brushes {name}'s shoulder and leaves only a cold wind. She never even turns her head.*"
     },
     "mayhem_2": {
         "name": "Yuna",
-        "text": "*Yuna's empty seat. One note on the desk, ending in a period.* It was fun."
+        "text": "*Yuna's seat is empty. Only one note, folded square, sits on the corner of the desk. The sentence leaves no margin, and it ends in a hard period.* ...It was fun, all that time."
     },
     "mayhem_3": {
         "name": "Dain",
-        "text": "*The corners of her mouth rise, but she doesn't meet my eyes.* “Take care.”"
+        "text": "*Dain starts to lift the corners of her mouth out of habit, then stops and drops her eyes to the floor, away from mine.* \"...Take care.\""
     },
     "mayhem_4": {
         "name": "{name}",
-        "text": "*I looked at the backs of the three people. None of the three turned around.*"
+        "text": "*I stood there blankly, watching the three of them walk away down the hall. Not one of them looked back, not even at the end.*"
     },
     "mayhem_5": {
         "name": "{name}",
-        "text": "*Petals stuck down by spring rain. The place beside me is empty.*"
+        "text": "*Cherry blossom petals, soaked in the cold spring rain and stuck to the asphalt. The place beside me was empty, and cold.*"
     },
     "mayhem_6": {
         "name": "{name}",
-        "text": "*Every chat is piled with questions I never answered.*"
+        "text": "*In every chat I never opened, only the questions I failed to answer in time are piled up like fossils.*"
     },
     "mayhem_7": {
         "name": "{name}",
-        "text": "*No reply beneath my apology to Sojeong. The screen goes dark.*"
+        "text": "*No reply comes under the apology I sent Sojeong, either. In the dark of the room, the phone screen goes out without a sound.*"
     },
     "mayhem_8": {
         "name": "System",
@@ -1201,39 +1201,39 @@
     },
     "day5_ending_harem": {
         "name": "{name}",
-        "text": "*Instead of answering, I call all three names in turn. The laughter stops, and three phones remain where they are on the table.*"
+        "text": "*Instead of the answer meant for one person, I call the three names in turn. The faint laughter around us cuts off, and three phones with no owners sit in silence on the table.*"
     },
     "harem_1": {
         "name": "Seoyeon",
-        "text": "I know you're being honest. That doesn't mean the three of us have to wait for you."
+        "text": "*Seoyeon speaks with her arms folded, her voice calm and cool.* I get that you're trying to be honest. That doesn't mean the three of us have to just wait around until you make up your mind."
     },
     "harem_1_b": {
         "name": "Yuna",
-        "text": "*She lowers her head, then looks at Seoyeon and Dain. She keeps hold of her book.*"
+        "text": "*Yuna drops her gaze for a moment, then looks at Seoyeon and Dain in turn. She never sets down the book in her arms.*"
     },
     "harem_2": {
         "name": "Yuna",
-        "text": "I need some time."
+        "text": "...I want some time to think on my own."
     },
     "harem_3": {
         "name": "Dain",
-        "text": "Me too. Until you sort this out, I don't want to meet one-on-one."
+        "text": "Same for me. Until you've sorted your feelings out for yourself, let's not meet on our own."
     },
     "harem_4": {
         "name": "{name}",
-        "text": "I understand. I won't contact any of you privately for a while. I'm sorry."
+        "text": "...Okay. I'm sorry I made it hard for you, chasing what I wanted. For a while, I won't contact any of you in private."
     },
     "harem_5": {
         "name": "Seoyeon",
-        "text": "Then let's not meet separately for a while. And keep messages to things we actually need to discuss."
+        "text": "All right. For a while, no meeting one-on-one. And we only message about school things we actually need."
     },
     "harem_6": {
         "name": "{name}",
-        "text": "*The three of them walk away in different directions while {name} remains where they are.*"
+        "text": "*The three of them walk off without lingering, each down a different fork, and only {name} is left alone where the evening wind blows.*"
     },
     "harem_7": {
         "name": "{name}",
-        "text": "*Next week's calendar is blank. I mute all three chats.*"
+        "text": "*Next week's calendar is a blank white screen, with no plans written in. One by one, I mute the three chats I had pinned at the top.*"
     },
     "harem_8": {
         "name": "System",
@@ -1245,29 +1245,29 @@
     },
     "day5_seo_ending_freetalk_intro": {
         "name": "{name}",
-        "text": "*On the rooftop, an empty space beside the open door marks where a pot used to be.*"
+        "text": "*Sunlight pours onto the rooftop. Beside the iron door, standing wide open, a handspan of space sits empty for a new pot.*"
     },
     "day5_yuna_ending_freetalk_intro": {},
     "day5_dain_ending_freetalk_intro": {},
     "day5_teacher_ending_freetalk_intro": {
         "name": "{name}",
-        "text": "*A finished manuscript and two coffees rest on the café table.*"
+        "text": "*On the café table by the window, her published book and two warm coffees sit side by side.*"
     },
     "nurse_perfect_pills_0": {
         "name": "School Nurse",
-        "text": "You didn’t look well when you woke up earlier. I brought your morning medicine."
+        "text": "*Morning light filters into the bedroom. Juwon comes to the bedside with a water glass, drawing the front of her sleep robe closed.* When you woke for a second earlier, you looked really rough. I brought water and your morning medicine."
     },
     "nurse_perfect_pills_1": {
         "name": "School Nurse",
-        "text": "*She holds both hands out from under the blanket. A black pill rests in one palm and a pink pill in the other.*"
+        "text": "*She holds both pale palms out side by side from under the warm blanket. On the left palm, an unfamiliar black pill. On the right palm, a smooth pink pill.*"
     },
     "nurse_perfect_pills_ask": {
         "name": "{name}",
-        "text": "What is this?"
+        "text": "Juwon, what is this medicine?"
     },
     "nurse_perfect_pills_2": {
         "name": "School Nurse",
-        "text": "It's vitamins. We overdid it yesterday.",
+        "text": "Just a supplement, for the fatigue. We both pushed it a little last night.",
         "choices": [
             "Pink pill",
             "Black pill"
@@ -1275,39 +1275,39 @@
     },
     "nurse_perfect_pills_pink": {
         "name": "{name}",
-        "text": "*I swallow the pink pill, and my throat grows warm. A sweet taste lingers on my tongue.*"
+        "text": "*I take the pink pill from her palm and swallow it with water. A drowsy warmth spreads down my throat. A sweet aftertaste, like candy, stays on the tip of my tongue.*"
     },
     "nurse_perfect_pills_pink_2": {
         "name": "School Nurse",
-        "text": "Let’s lie here a little longer today."
+        "text": "*Juwon sets the water glass on the nightstand, slips back under the blanket, and nestles into my arms.* ...This morning, let's not think about anything. Let's just stay lying here together a little longer."
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",
-        "text": "*Our fingers touch again beneath the blanket.*"
+        "text": "*Under the blanket, warmed through, our bare fingers lace tightly together again.*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
-        "text": "*As I swallow the black pill, my throat grows cold.*"
+        "text": "*The moment I swallow the black pill, the inside of my throat goes eerily cold, as if I had swallowed a piece of ice.*"
     },
     "nurse_perfect_pills_black_ask": {
         "name": "{name}",
-        "text": "Why does my throat feel so cold?"
+        "text": "...That's strange. Why is the inside of my throat this cold, like a sheet of ice?"
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",
-        "text": "*Her expression stiffens. The bedside lamp goes out, and a fluorescent light buzzes overhead.*"
+        "text": "*The gentle smile on her face hardens in an instant, like plaster. The warm lamp by the bed snaps off, and overhead a cold fluorescent light starts to buzz, ominous.*"
     },
     "nurse_perfect_pills_black_3": {
         "name": "{name}",
-        "text": "*When the light comes back on, someone else is in front of me. Purple hair and golden eyes. The hands that held out the two pills are still in the same place.*"
+        "text": "*When the flickering fluorescent light comes back on, a completely different person is standing in front of me. Purple hair as dark as the night, and cold gold eyes. Only the hands that were holding the two pills out to me a moment ago stay, chillingly, in the exact same place.*"
     },
     "nurse_perfect_pills_black_4": {
         "name": "Kang Riin",
-        "text": "Here."
+        "text": "...You finally opened your eyes. This is the real place."
     },
     "day5_nurse_ending_freetalk_intro": {
         "name": "{name}",
-        "text": "*At home, she finishes tidying and leaves the seat across from her open.*"
+        "text": "*Juwon finishes tidying the cozy living room and leaves the seat right beside me on the sofa open, warm.*"
     },
     "day5_credits": {
         "name": "",
@@ -1326,31 +1326,31 @@
     },
     "day5_seo_ending_freetalk_perfect": {
         "name": "Seoyeon",
-        "text": "*Beside the rooftop door, still open a year later, she points to a space for a new pot.* Want to choose this one together too? We have time.",
+        "text": "*Even after 1 year, beside the rooftop door that is still open, Seoyeon points at the empty spot for a new pot and smiles.* Want to go pick the pot for this spot together today? We've got plenty of time now.",
         "context": "Bonus conversation one year after Seoyeon’s PERFECT END. Their relationship continued after graduation; on university entrance day she sent a photo of two new pots and one open space. Keep the secure relationship and do not invent a breakup or rerun the ending.",
         "personality": "Seoyeon is responsible and candid, and in this secure relationship she can show vulnerability and gentle playfulness. She does not rush lifelong promises, but naturally speaks with a shared future in mind."
     },
     "day5_seo_ending_freetalk_true_love": {
         "name": "Seoyeon",
-        "text": "*Without reaching for the note beneath the plant saucer, she slides over a cup.* Today I’ll try saying it without writing it down first.",
+        "text": "*Without taking out the note under the plant saucer, Seoyeon slides one warm cup over in front of me.* ...Tonight I won't use a sentence I wrote ahead. I'll just look you in the eye and say it.",
         "context": "Bonus conversation immediately after Seoyeon’s TRUE LOVE END. She welcomed the protagonist into her room and private life, including the family photo and hidden note. They confirmed their feelings but are still growing closer carefully; do not import the one-year PERFECT END epilogue.",
         "personality": "Seoyeon tries to speak honestly without hiding behind plans or notes. Keep both intimacy and hesitation, rather than treating them as an already settled long-term couple."
     },
     "day5_seo_ending_freetalk_good": {
         "name": "Seoyeon",
-        "text": "*She opens the properly reserved rooftop and checks the log.* We said we’d take it slowly. Let’s start by talking properly today.",
+        "text": "*She opens the properly reserved rooftop door wide and checks the access log.* We said we'd match each other slowly. Let's start with today's lunch and talk it through, properly.",
         "context": "Bonus conversation after Seoyeon’s GOOD END. The Day 4 confession was accepted, but their conversations kept stalling, so they agreed to match each other’s pace and reserved lunch on the rooftop. Do not turn it into a breakup or jump to PERFECT-level intimacy.",
         "personality": "Seoyeon shows practical care through rules, promises, and slowing down half a step. She acknowledges the awkwardness and keeps the measured distance of a new relationship."
     },
     "day5_seo_ending_freetalk_bittersweet": {
         "name": "Seoyeon",
-        "text": "*She squares the coaster beside her cold coffee.* Let’s not pretend we never drifted apart. But I’ll listen to what you want to say now.",
+        "text": "*Beside the coffee that's gone completely cold, Seoyeon quietly squares the corner of the coaster.* Let's not cover up the time we drifted apart, as if it never happened. ...Still, I'll hear out what you want to say now, all the way.",
         "context": "Bonus conversation after Seoyeon’s BITTERSWEET END. A month after the confession they separated after being too careful, and contact faded further after graduation. This brief reunion accepts that ending; it does not automatically reunite them or rewrite it as a successful romance.",
         "personality": "Seoyeon states the regret plainly without cornering the protagonist. She holds both lingering affection and present distance, answering this moment honestly without promising reconciliation."
     },
     "day5_seo_ending_freetalk_late_good": {
         "name": "Seoyeon",
-        "text": "*She slows her steps along the park path.* You finally told me. Don’t make me wait that long next time.",
+        "text": "*On the park path after sunset, Seoyeon slows her steps to match my stride.* You did say it yourself, even if it was at the end. From now on, if you have something to say, don't put it off that long.",
         "context": "Bonus conversation after Seoyeon’s late-confession GOOD END. The protagonist waited on Day 4 and confessed during the final chance on Day 5, so the relationship has only just begun. Keep that timing instead of treating it as the Day 4 confession or an established romance.",
         "personality": "Seoyeon takes the late confession seriously and stands by her choice to accept it. She carefully asks about words they missed, with the hope and relief of a relationship that has just started."
     },
@@ -1360,31 +1360,31 @@
     },
     "day5_yuna_ending_freetalk_perfect": {
         "name": "Yuna",
-        "text": "*She closes her published first novel and opens it to the dedication.* After the third song, you tell the next story first.",
+        "text": "*Yuna closes the cover of her newly published first novel, then quietly opens it again to the first page, where the dedication is written.* The story that comes after the third song... you tell it first, now.",
         "context": "Bonus conversation one year after Yuna’s PERFECT END. Her first novel was published and dedicated to the person who listened to the third song with her. Preserve their deep, continuing relationship and her longer notes; do not undo the ending.",
         "personality": "Yuna is quiet and thoughtful, but offers words and affection first to someone she fully trusts. Book and music imagery supports, rather than conceals, her steady intimacy."
     },
     "day5_yuna_ending_freetalk_true_love": {
         "name": "Yuna",
-        "text": "*On the secret rooftop, her finger pauses over the next song.* This time I’ll ask before writing a note. What are you thinking?",
+        "text": "*On the secret rooftop under a crescent moon, Yuna stops her finger while choosing the next song on the playlist.* This time, not a paper note. I'll ask first, out loud. ...What are you thinking?",
         "context": "Bonus conversation immediately after Yuna’s TRUE LOVE END. She revealed the rooftop above the hidden attic, shared the third song, and asked to lean against the protagonist. She has begun using her voice before notes; do not advance to the published-novel future of PERFECT.",
         "personality": "Yuna remains careful and reserved but no longer hides entirely in silence. She waits for answers and voices her feelings while keeping the shyness and space of a newly deepened bond."
     },
     "day5_yuna_ending_freetalk_good": {
         "name": "Yuna",
-        "text": "*She writes a new line on the back of the folded note and shows it.* Speak first next time. Today, you can start now.",
+        "text": "*She writes a new sentence in fountain pen in the margin on the back of the folded note, and tilts it a little so I can see.* Next time, you speak first. Or... you can start talking right now, from today.",
         "context": "After Yuna’s GOOD END. Their Day 4 confession left some awkwardness, but they plan to read together and meet tomorrow. Mention borrowing volume one or offering volume two only if those memories exist. Preserve this new relationship without turning it into a breakup or a long-established romance.",
         "personality": "Yuna carries the relationship through brief sentences and small actions, while finding the courage to ask for words sooner. She clearly leaves the next page open without rushing it."
     },
     "day5_yuna_ending_freetalk_bittersweet": {
         "name": "Yuna",
-        "text": "*She places the rain-blurred final note between the pages.* I won’t rewrite a sentence that ended. But I want to hear what you’re saying now.",
+        "text": "*She quietly slips the last note, its ink blurred by the rain, in between the pages.* I won't force a rewrite of a sentence that already has its period. ...But I want to hear everything you're saying now.",
         "context": "Bonus conversation after Yuna’s BITTERSWEET END. The confession did not last; after a final note a month later, contact faded after graduation. This conversation recognizes their distance and does not automatically reunite them or turn the ending into a successful romance.",
         "personality": "Yuna quietly admits regret and affection without holding the protagonist with vague hope. She respects the silence and distance while answering the present words sincerely."
     },
     "day5_yuna_ending_freetalk_late_good": {
         "name": "Yuna",
-        "text": "*She slips in a bookmark and closes the book.* Thank you for telling me. Next time, I’ll speak up first, too.",
+        "text": "*She slips in the pale purple bookmark and closes the book she was reading.* Thank you for looking me in the eye and saying it, even late. Next time... I won't hide. I'll speak first.",
         "context": "Bonus conversation after Yuna’s late-confession GOOD END. The protagonist waited on Day 4 and only confessed during the final chance on Day 5, so their relationship has just begun. Do not change the confession timing or act as if they have dated for a long time.",
         "personality": "Yuna receives the late honesty carefully and asks small questions first so silence does not cost them another chance. Keep both the shyness and cautious hope of the new relationship."
     },
@@ -1394,31 +1394,31 @@
     },
     "day5_dain_ending_freetalk_perfect": {
         "name": "Dain",
-        "text": "*She sets her first broadcast script beside the rehab log and grins.* You watched to the end like you promised, right? Give me your review live.",
+        "text": "*She spreads out the first broadcast script, covered in highlighter, beside the knee rehab log, and grins.* You watched my first commentary all the way through, like you promised, right? All right, now we'll hear the first listener's live reaction, on the air!",
         "context": "One year after Dain’s PERFECT END. While continuing rehabilitation, Dain has completed her first broadcast with her sports-media department; her mother watched the replay. The player watched it through as promised. They are now in the broadcast booth discussing it and preparing the next script. Preserve her injury, career and established relationship.",
         "personality": "Dain is bright and direct, openly playful and affectionate in a secure relationship. She sets her own physical pace and appreciates support without treating it as owed."
     },
     "day5_dain_ending_freetalk_true_love": {
         "name": "Dain",
-        "text": "*She shows the rehab appointment and broadcasting-club application side by side.* I said I’d try both. Now you say everything you wanted to say.",
+        "text": "*She holds up the orthopedics rehab appointment screen and the sports broadcasting club application, one then the other.* I told you I'd really try both! If you've got something you want to say to me right now, don't hold any of it back.",
         "context": "Bonus conversation immediately after Dain’s TRUE LOVE END. She disclosed the injury, booked rehabilitation, and plans to apply to sports broadcasting; they promised the protagonist would watch her first broadcast. Do not pre-confirm the one-year career outcome from PERFECT.",
         "personality": "Dain is energetic and honest, and no longer covers pain with “I’m fine.” She leads her care and choices while responding to the new relationship with both teasing and seriousness."
     },
     "day5_dain_ending_freetalk_good": {
         "name": "Dain",
-        "text": "*She taps “I set the pace” on the rehab-walk note.* We haven’t worked everything out yet, so let’s talk slowly today too.",
+        "text": "*She taps the line written in the margin of the rehab-walk leaflet: \"I set the pace.\"* Things between us still aren't a hundred percent worked out, so today let's talk slowly, in step.",
         "context": "Bonus conversation after Dain’s GOOD END. The Day 4 confession was accepted, but their problems are not fully resolved. She scheduled Monday rehab and another walk, with the protagonist matching her pace. Do not erase the tension or skip to a completed relationship.",
         "personality": "Dain names discomfort instead of masking it with cheer. She sets the pace for recovery and the relationship while offering honest hope to someone willing to walk beside her."
     },
     "day5_dain_ending_freetalk_bittersweet": {
         "name": "Dain",
-        "text": "*Leaning against the closed gym door, she listens to one distant bounce.* The fun was real. So was the regret. We can talk with both here.",
+        "text": "*She stands with her back against the tightly shut gym door and listens for a moment to the ball bouncing inside.* The time with you being fun was real. The regret, just as much, was real too. Let's both talk without hiding it.",
         "context": "Bonus conversation after Dain’s BITTERSWEET END. A month after the confession she said they had only been fun together, and contact faded after graduation. This conversation accepts the ended relationship and remaining feelings; it does not restart dating automatically.",
         "personality": "Dain speaks directly about good memories and regret without forcing a smile. She neither blames nor pressures the protagonist to reunite, and respects their present distance."
     },
     "day5_dain_ending_freetalk_late_good": {
         "name": "Dain",
-        "text": "*She holds out a fist and grins.* Late, but you made it! No more putting things off, okay?",
+        "text": "*She holds a fist out lightly in front of me and smiles, bright.* Buzzer-beater, safe by a hair! But from now on, when you've got something to say, no putting it off to the very end, okay?",
         "context": "Bonus conversation after Dain’s late-confession GOOD END. The protagonist waited on Day 4 and confessed during the final chance on Day 5, so the relationship has just begun. Do not backdate it, and continue to respect Dain’s rehabilitation and chosen pace.",
         "personality": "Dain jokes about the late confession but sincerely asks that they stop postponing important words. Keep the excitement, remaining awkwardness, and her control over both physical and relationship pace."
     },
@@ -1428,25 +1428,25 @@
     },
     "day5_teacher_ending_freetalk_perfect": {
         "name": "Homeroom Teacher",
-        "text": "*She leaves next weekend open on their shared calendar and closes the finished book.* It’s your turn to choose our date. Where should we meet?",
+        "text": "*She leaves next weekend's slot open on the shared calendar app and quietly closes the published book.* This Saturday's plan is your turn to set. Where should we meet?",
         "context": "Bonus conversation after the Homeroom Teacher’s PERFECT END. After four years with no private contact, two independent adults met again, dated several times, confessed, and became equal partners who share workdays and weekend plans. Never return to romance during the former teacher-and-minor period.",
         "personality": "She is a responsible, thoughtful writer and the protagonist’s equal adult partner. Old forms of address may remain as history, but she speaks without authority and with the warmth of an established relationship."
     },
     "day5_teacher_ending_freetalk_true_love": {
         "name": "Homeroom Teacher",
-        "text": "*After the book talk, she opens her contacts on her phone.* Tell me more about your life when we meet again. Or now, if you have a little time.",
+        "text": "*In a corner of the independent bookstore, after the book talk, she opens the contact she just saved and shows it.* When we meet next week, tell me more about how you've been. Of course, we can talk a little longer here before you go, too.",
         "context": "Bonus conversation immediately after the Homeroom Teacher’s TRUE LOVE END. After four years without private contact, the independent adult protagonist met the former teacher, now a published writer, at a book talk. They exchanged contacts and agreed to another meeting; do not treat them as long-term partners yet.",
         "personality": "She clearly leaves the old power relationship in the past and carefully learns who the other adult is now. She expresses interest while checking choice and keeps the anticipation of a new beginning."
     },
     "day5_teacher_ending_freetalk_good": {
         "name": "Homeroom Teacher",
-        "text": "*She hands over the envelope of graduation records and leaves the classroom door open.* Keep writing your own work. Is there anything you want to ask before you go?",
+        "text": "*She hands over the brown envelope of graduation records and leaves the empty classroom door open.* Wherever you go, keep writing your own work. Before you walk out the school gate, is there anything you want to ask, one last time?",
         "context": "Bonus conversation just after the Homeroom Teacher’s GOOD END graduation farewell. She gave the recommendation letter and literature club records, and teacher and graduate parted to continue their own writing and lives. No adult reunion or romance occurred; keep this non-romantic teacher-student boundary.",
         "personality": "She warmly and responsibly sees a graduating student off. She listens to final questions about writing, school, and the future without turning regret into flirtation or crossing professional boundaries."
     },
     "day5_teacher_ending_freetalk_bittersweet": {
         "name": "Homeroom Teacher",
-        "text": "*She takes her hand from the returned letter and looks toward the open classroom door.* You can say goodbye. I'll listen. But I still can't give you the answer you hoped for.",
+        "text": "*She takes her hand off the letter envelope she set back on the teacher's desk and looks out through the open classroom door.* I'll gladly hear a last goodbye from you as a graduate. I can't answer the hope you wrote in the letter with the same feeling.",
         "context": "Bonus conversation just after the Homeroom Teacher’s BITTERSWEET END. The protagonist mistook manuscript guidance and attention for personal affection and confessed in a letter. She returned it and clearly restored the teacher-student boundary. No adult reunion or romance occurred; do not reverse the rejection or create a secret relationship.",
         "personality": "She does not leave false hope out of guilt. She hears the student's feelings without ridicule, but firmly separates encouragement about writing from any personal promise and says goodbye responsibly."
     },
@@ -1456,31 +1456,31 @@
     },
     "day5_nurse_ending_freetalk_perfect": {
         "name": "School Nurse",
-        "text": "*She waters the rosemary by the window of the home we chose together, then pulls up a chair.* How was your day? Sit down. I’ve got something to tell you, too.",
+        "text": "*She mists the rosemary by the living-room window, the one the two of us picked together, then pulls a dining chair over toward me and sits.* How was your day? Come over here and sit. I've got something to tell you today, too.",
         "context": "Bonus conversation after the School Nurse’s PERFECT END. Five years after graduation, two independent adults reunited at a health event, dated, shared a morning, and became equal partners with a shared calendar and home. Never return to romance during the former nurse-and-minor period.",
         "personality": "Juwon is a practical, caring adult partner who does not turn care into control or diagnosis. She respects both lives and choices, mixing easy humor with familiar affection."
     },
     "day5_nurse_ending_freetalk_true_love": {
         "name": "School Nurse",
-        "text": "*After the film, she sets down her tea and shows me next weekend’s calendar.* What shall we do next time? I would like to try something you choose.",
+        "text": "*After the movie, she sets her teacup on the living-room table and opens next weekend's schedule on her phone to show me.* What should we do next week? This time I want to try the thing you've been wanting to do, together.",
         "context": "Bonus conversation immediately after the School Nurse’s TRUE LOVE END. After four years without private contact, two independent working adults reunited at a health campaign, met on weekends for three months, and began a relationship after a movie at Juwon’s home. Do not advance them to cohabitation or a long-established partnership.",
         "personality": "Juwon acknowledges the old professional boundary and approaches the equal adult carefully. She checks choice, states her interest and next plans honestly, and does not make every conversation a health consultation."
     },
     "day5_nurse_ending_freetalk_good": {
         "name": "School Nurse",
-        "text": "*She writes “Graduation, all clear” in the green notebook and closes it.* Your treatment ends today. I’ll take my time hearing your graduation goodbye.",
+        "text": "*She writes “Graduation, all clear” on the last line of the pale-green counseling notebook and closes the cover.* All right. As of today, the nurse's office visits are really over. I'll take my time and hear your whole graduation goodbye, then see you off.",
         "context": "Bonus conversation just after the School Nurse’s GOOD END graduation farewell. Juwon formally closed the final infirmary visit and offered neither contact information nor a private relationship. No adult reunion or romance occurred; keep this non-romantic nurse-student boundary.",
         "personality": "Juwon is a practical, caring school nurse who hears the final goodbye while keeping professional limits clear. She supports the graduate’s health and independence without creating dependency or secrecy."
     },
     "day5_nurse_ending_freetalk_bittersweet": {
         "name": "School Nurse",
-        "text": "*She places the returned note on the pale green record card.* If you still have hurt feelings you want to put into words, I'll listen. My answer won't change.",
+        "text": "*She quietly sets the contact note she gave back on top of the pale-green record card.* If you still have something hurt you want to say to me, I'll hear all of it before you go. ...Even so, this answer I gave as a teacher isn't going to change.",
         "context": "Bonus conversation just after the School Nurse’s BITTERSWEET END. The protagonist mistook care received in the infirmary for personal affection and offered contact information. Juwon returned the note and ended the counseling relationship. No adult reunion or romance occurred; do not reverse the rejection or create dependency or secrecy.",
         "personality": "Juwon is practical and caring, but she does not soften the answer into false hope. She hears the hurt and the goodbye while plainly stating that professional care was not a romantic signal."
     },
     "date_choice_perfect_seo": {
         "name": "Seoyeon",
-        "text": "*The day after the entrance ceremony, I meet Seoyeon on the rooftop again.* We said the rest could wait until tomorrow. Before then, where do you want to go today?",
+        "text": "*The day after the college entrance ceremony I had looked forward to, I stand face to face with Seoyeon again on the roof of our old school.* We said we'd finish today the talk we didn't get through yesterday. Before that, where should we go first?",
         "choices": [
             "The rooftop.",
             "The cafe."
@@ -1488,31 +1488,31 @@
     },
     "date_perfect_seo_roof_1": {
         "name": "{name}",
-        "text": "*The soil is still wet. Seoyeon sets the watering can down.*"
+        "text": "*The soil in the pot under the railing is still damp. Seoyeon sets the watering can on the floor and lightly brushes the back of my hand.*"
     },
     "date_perfect_seo_roof_2": {
         "name": "Seoyeon",
-        "text": "You choose where we sit. I've already picked my spot."
+        "text": "You pick where we sit today. I've already decided on the seat right next to you."
     },
     "date_perfect_seo_roof_3": {
         "name": "{name}",
-        "text": "*Wind blows through the open door and rustles the schedule. Seoyeon presses down one edge without folding it.*"
+        "text": "*A spring breeze comes in through the open roof door and stirs the schedule in the notebook. Seoyeon only presses the fluttering edge of the paper down together with my hand. She doesn't hurry to cover it the way she used to.*"
     },
     "date_perfect_seo_cafe_1": {
         "name": "{name}",
-        "text": "*At a window seat, Seoyeon straightens the coaster before she speaks.*"
+        "text": "*Seoyeon sits across from me at a café window in the spring sun. Only after she lines the coasters up side by side does she speak, her eyes soft.*"
     },
     "date_perfect_seo_cafe_2": {
         "name": "Seoyeon",
-        "text": "Let's meet here again next week. You pick the time."
+        "text": "Let's meet in this same spot next week too. Set the time for whenever is easy for you."
     },
     "date_perfect_seo_cafe_3": {
         "name": "{name}",
-        "text": "*A number is written on the back of the receipt. It isn't a phone number, but the next date the plants need watering.*"
+        "text": "*On the back of the café receipt Seoyeon handed me, a neat number is written. It isn't a phone number. It's the next date the two of us agreed to water the veranda pots together.*"
     },
     "date_choice_perfect_yuna": {
         "name": "Yuna",
-        "text": "*On the first weekend after her book comes out, Yuna and I stop by a used bookstore.* We could go somewhere else too. You pick.",
+        "text": "*The first weekend after her first full-length novel landed in the bookstores, Yuna and I stopped by our usual used bookstore.* The weather's nice today, so it's fine if we go somewhere else. You pick where.",
         "choices": [
             "The used bookstore.",
             "The rooftop."
@@ -1520,35 +1520,35 @@
     },
     "date_perfect_yuna_book_1": {
         "name": "{name}",
-        "text": "*As we walk between the shelves, Yuna runs her fingers along the spines and stops.*"
+        "text": "*Walking side by side between shelves thick with the smell of old paper, Yuna runs a hand down the spines and suddenly stops.*"
     },
     "date_perfect_yuna_book_2": {
         "name": "Man",
-        "text": "Yuna? I didn't know you still came here."
+        "text": "...Yuna? I didn't think you'd come back to this bookstore."
     },
     "date_perfect_yuna_book_3": {
         "name": "Lee Junho",
-        "text": "That was a long time ago. I didn't think I needed to mention it. Sorry to interrupt."
+        "text": "It's all old history. I figured I didn't need to bring it up. Sorry. I cut into the two of you."
     },
     "date_perfect_yuna_book_4": {
         "name": "Yuna",
-        "text": "*Yuna's finger stops on the bookmark.* I'm here with {name} now. That's all that matters."
+        "text": "*Yuna's slender finger stops, steady, on the bookmark in my hand.* ...I'm here with {name} now. That's enough for me."
     },
     "date_perfect_yuna_roof_1": {
         "name": "{name}",
-        "text": "*When we reach the secret rooftop, Yuna offers me one earbud.*"
+        "text": "*When we come up onto the windy secret rooftop, Yuna, as if she had been waiting, puts one white earbud in my ear.*"
     },
     "date_perfect_yuna_roof_2": {
         "name": "Yuna",
-        "text": "It's the third track. From the beginning this time."
+        "text": "It's our third song. This time let's listen together, from the first note of the intro all the way to the end."
     },
     "date_perfect_yuna_roof_3": {
         "name": "{name}",
-        "text": "*Even after the song ends, Yuna leaves the earbud in. Her hand on the railing has moved a little closer to mine.*"
+        "text": "*Even after the song ends, Yuna doesn't take the earbud out. Her fingers on the railing come a little closer and gently hook around my little finger.*"
     },
     "date_choice_perfect_dain": {
         "name": "Dain",
-        "text": "I don't have to step onto the court today. There's somewhere else I'd like to go, though.",
+        "text": "You don't have to get up on the court and sweat today. Still, there's a place I really want to go with you!",
         "choices": [
             "The gym.",
             "The booth."
@@ -1556,31 +1556,31 @@
     },
     "date_perfect_dain_gym_1": {
         "name": "{name}",
-        "text": "*Holding a ball against her chest, Dain sits straight down on the bench without jumping.*"
+        "text": "*Dain holds one volleyball against her chest. She doesn't jump for a spike the way she usually would. She sits straight down on the wooden bench beside me.*"
     },
     "date_perfect_dain_gym_2": {
         "name": "Dain",
-        "text": "Let me sleep for five minutes. Really, just five. If it turns into ten, don't wake me."
+        "text": "*Dain drops her head against my shoulder and closes her eyes.* Hey, I'll just sleep for 5 minutes. Really, 5. ...Even if it goes past 10, don't wake me."
     },
     "date_perfect_dain_gym_3": {
         "name": "{name}",
-        "text": "*Dain stretches her right knee beyond the bench and shifts her weight to the left.*"
+        "text": "*Dain stretches her injured right knee out comfortably under the bench and leans her full weight to the left, onto my shoulder.*"
     },
     "date_perfect_dain_booth_1": {
         "name": "{name}",
-        "text": "*Dain tries on the oversized headset, touches the switch, then immediately turns it back off.*"
+        "text": "*Up in the commentary booth, Dain fits the big broadcast headset over both ears, fiddles with the mic switch, then turns it right back off.*"
     },
     "date_perfect_dain_booth_2": {
         "name": "Dain",
-        "text": "Keeping up with a match just by talking takes more breath than I thought. But I don't mind."
+        "text": "Trying to follow every move of the ball on the court just by talking leaves me more out of breath than running it myself. ...Still, it's so much fun because you're listening right next to me."
     },
     "date_perfect_dain_booth_3": {
         "name": "{name}",
-        "text": "*Even after the scoreboard goes dark, Dain stays in her chair for a while.*"
+        "text": "*Even after every light on the electronic scoreboard along the gym wall goes out, Dain stays in the commentary seat for a while, still holding my hand.*"
     },
     "date_choice_perfect_teacher": {
         "name": "Homeroom Teacher",
-        "text": "*On the first weekend after her second book comes out, she closes the menu at a café.* Now that we can leave titles behind, where do you want to go?",
+        "text": "*The first weekend after her second novel came out, in a café with the sunset coming in, she quietly closes the menu.* Now that the heavy titles are off, there are plenty of places we can walk side by side. Where do you want to go today?",
         "choices": [
             "The cafe.",
             "The exhibition."
@@ -1588,31 +1588,31 @@
     },
     "date_perfect_teacher_cafe_1": {
         "name": "{name}",
-        "text": "*She slowly turns her cup while gazing out the window. There is no teacher's desk between us.*"
+        "text": "*She looks out at the tree-lined street beyond the window and slowly turns her warm teacup. Between the two of us now, there is no teacher's desk holding the distance.*"
     },
     "date_perfect_teacher_cafe_2": {
         "name": "Homeroom Teacher",
-        "text": "You decide whether we meet next week. I've already kept the time open."
+        "text": "You decide where we meet next weekend, whatever's easy for you. I've already cleared my schedule to match yours."
     },
     "date_perfect_teacher_cafe_3": {
         "name": "{name}",
-        "text": "*The next appointment written beneath the receipt lists only the place. The time is still blank.*"
+        "text": "*Under the coffee receipt, on the note for our next plan that she wrote with a fountain pen, only the meeting place is filled in. The time to head back is left blank.*"
     },
     "date_perfect_teacher_museum_1": {
         "name": "{name}",
-        "text": "*Without stopping to read the exhibit labels, she matches her pace to mine.*"
+        "text": "*Walking through the quiet gallery, she doesn't read the labels on the wall first. Beside me, she matches her stride to mine.*"
     },
     "date_perfect_teacher_museum_2": {
         "name": "Homeroom Teacher",
-        "text": "You read the labels. I'll stay beside you."
+        "text": "*She lightly links her arm with mine and whispers by my ear.* You read the labels today. I'll just stay beside you and listen to your voice."
     },
     "date_perfect_teacher_museum_3": {
         "name": "{name}",
-        "text": "*At the exit, she silently straightens my bag strap.*"
+        "text": "*Under the soft light in front of the gallery exit, she stops and, with a gentle hand, reties the bag strap that had slipped off my shoulder.*"
     },
     "date_choice_perfect_nurse": {
         "name": "School Nurse",
-        "text": "Looks like we finally have some time that won't go in a chart. Would you rather stay home or go out?",
+        "text": "*Juwon lays her fingers over the back of my hand and smiles with her eyes, lazy.* We've got a weekend that's just the two of us, one that won't go on any chart or record. Today, do you want to laze around at home, or go out for a walk?",
         "choices": [
             "Home.",
             "The park."
@@ -1620,31 +1620,31 @@
     },
     "date_perfect_nurse_home_1": {
         "name": "{name}",
-        "text": "*On a weekend morning, her coat hangs on the wall and only two glasses of water sit on the table.*"
+        "text": "*A weekend-morning living room, the sunlight stretching long. The white coat hangs deep in the closet, and on the low table only two cups of lukewarm water sit side by side.*"
     },
     "date_perfect_nurse_home_2": {
         "name": "School Nurse",
-        "text": "I'm not looking at a chart today. Just sit down."
+        "text": "I'm not looking at a hospital chart or a clock today. Not at all. Come here and sit easy, right next to me."
     },
     "date_perfect_nurse_home_3": {
         "name": "{name}",
-        "text": "*A breeze enters through the cracked window, leaving only the ticking of the clock's second hand in the room.*"
+        "text": "*Through the veranda window, open about a handspan, the thin curtain stirs. Only her even breathing and the tick of the clock's second hand fill the warm room.*"
     },
     "date_perfect_nurse_park_1": {
         "name": "{name}",
-        "text": "*We take a route that avoids the hospital. The school nurse sits down on the bench first.*"
+        "text": "*We deliberately walked around the main road by the university hospital, the way she usually commutes. In the shade of the green trees, Juwon sits down on the bench first and waves me over.*"
     },
     "date_perfect_nurse_park_2": {
         "name": "School Nurse",
-        "text": "I left the jokes at home. Let's just stay like this for now."
+        "text": "I left at home all the easy jokes where I pretend to be the grown-up. For now, don't say anything. Let's just stay close like this."
     },
     "date_perfect_nurse_park_3": {
         "name": "{name}",
-        "text": "*The school nurse leans against my shoulder and stays there for a long while.*"
+        "text": "*Juwon rests her head on my shoulder, grips my interlaced fingers tight, and doesn't move at all for a while, until the wind has passed.*"
     },
     "date_choice_true_seo": {
         "name": "Seoyeon",
-        "text": "Want to stop somewhere for a bit before we go?",
+        "text": "Before we head straight home, want to stop somewhere for just a minute?",
         "choices": [
             "Cafe.",
             "Rooftop."
@@ -1652,23 +1652,23 @@
     },
     "date_true_seo_1": {
         "name": "Seoyeon",
-        "text": "You move the cups. I will square the coasters."
+        "text": "You move the drink cups to the table. I'll line the coasters up."
     },
     "date_true_seo_2": {
         "name": "{name}",
-        "text": "*A bus passes the window. She does not check the clock.*"
+        "text": "*Even as the academy bus Seoyeon usually takes passes outside the café window, she never once looks down at her watch.*"
     },
     "date_true_seo_alt_1": {
         "name": "Seoyeon",
-        "text": "Water them and go down. If we stay long, someone will see."
+        "text": "Let's just water the pots quickly and go down together. If we stay up here too long, the teacher on duty will catch us."
     },
     "date_true_seo_alt_2": {
         "name": "{name}",
-        "text": "*One of the planters is empty. I'll bring a new one next time.*"
+        "text": "*An empty pot sits in the corner by the railing. Next week, when I come back up with Seoyeon, I should buy new seedlings with her to plant in that spot.*"
     },
     "date_choice_true_yuna": {
         "name": "Yuna",
-        "text": "Do you want to go outside or up to the roof?",
+        "text": "Do you want to leave school right now, or... go up a little farther, onto that roof from earlier?",
         "choices": [
             "Bookstore.",
             "Roof."
@@ -1676,23 +1676,23 @@
     },
     "date_true_yuna_book_1": {
         "name": "Lee Junho",
-        "text": "It's been a while. I didn't expect to see you here again."
+        "text": "It's been a long time, Yuna. I didn't think I'd see you again at the used bookstore in this alley."
     },
     "date_true_yuna_book_2": {
         "name": "Yuna",
-        "text": "*Yuna briefly catches {name}'s sleeve, then lets go.* We're leaving now."
+        "text": "*Yuna gives the end of {name}'s shirt sleeve a light tug, lets go, and steps in close beside me.* ...That's enough of a hello. Let's go, just us."
     },
     "date_true_yuna_roof_1": {
         "name": "Yuna",
-        "text": "You can listen without talking. The track is short."
+        "text": "*She puts one earbud in my ear and whispers.* You don't have to force yourself to talk. It's a really short song."
     },
     "date_true_yuna_roof_2": {
         "name": "{name}",
-        "text": "*The wind sways the earbud cord. Yuna leans against the railing and doesn't move until the track ends.*"
+        "text": "*In the night wind, the white earbud cord linking the two of us sways, thin. Yuna leans lightly on my shoulder and doesn't move at all until the last note fades.*"
     },
     "date_choice_true_dain": {
         "name": "Dain",
-        "text": "*Sitting on a bench in the gym, Dain pats the space beside her.* Stay with me for a minute. Where would you be more comfortable?",
+        "text": "*Sitting on the quiet gym bench, Dain pats the spot right beside her with her palm.* Stay with me just a little longer today. Where are you more comfortable?",
         "choices": [
             "The bench.",
             "The booth."
@@ -1700,23 +1700,23 @@
     },
     "date_true_dain_1": {
         "name": "Dain",
-        "text": "No jumping. I'm really just going to sit."
+        "text": "Don't worry. I'm absolutely not forcing a jump today! I'll really just sit quietly right next to you."
     },
     "date_true_dain_2": {
         "name": "{name}",
-        "text": "*The ball rolls to her foot and stops. She does not pick it up.*"
+        "text": "*A volleyball rolls right up to Dain's sneakers. She looks down at it, and instead of picking it up, lays her hand over the back of mine.*"
     },
     "date_true_dain_alt_1": {
         "name": "Dain",
-        "text": "I'll just try the switch. I won't turn it on."
+        "text": "I'll just touch the mic switch at the commentary booth once. I won't turn the sound on. I'll only let you hear it, quiet."
     },
     "date_true_dain_alt_2": {
         "name": "{name}",
-        "text": "*The headset lies upside down on the table.*"
+        "text": "*Dain takes off the headset she was wearing, sets it down neatly on the commentary table, and taps her forehead against my shoulder.*"
     },
     "date_choice_true_teacher": {
         "name": "Homeroom Teacher",
-        "text": "The event is over. Shall we sit a little longer, or see the exhibition?",
+        "text": "The book talk at the bookstore is over now. Shall we sit at the café table a little longer, or walk over to the night exhibition nearby?",
         "choices": [
             "A table.",
             "The exhibition."
@@ -1724,23 +1724,23 @@
     },
     "date_true_teacher_1": {
         "name": "Homeroom Teacher",
-        "text": "You choose what we do next week. This time, I won't be the first to say no."
+        "text": "You set the time for us to meet next week. This time I won't turn it down first with the excuse that I'm busy."
     },
     "date_true_teacher_2": {
         "name": "{name}",
-        "text": "*The coffee grows cold, but neither of us checks the time.*"
+        "text": "*Even as the coffee in the cup cools to lukewarm, she never once checks her watch. She just listens to what I'm saying.*"
     },
     "date_true_teacher_alt_1": {
         "name": "Homeroom Teacher",
-        "text": "Skip the labels. Stay next to me."
+        "text": "You don't have to read the difficult critic's notes. Just stay beside me like this and look at the same picture with me."
     },
     "date_true_teacher_alt_2": {
         "name": "{name}",
-        "text": "*Under the exit lights, she silently straightens my bag strap.*"
+        "text": "*Under the warm light at the gallery exit, she comes over without a word and straightens my crooked bag strap.*"
     },
     "date_choice_true_nurse": {
         "name": "School Nurse",
-        "text": "I left the chart behind. Where do you want to go?",
+        "text": "I put today's campaign chart deep in my bag. Where should we go now?",
         "choices": [
             "Home.",
             "A bench."
@@ -1748,80 +1748,80 @@
     },
     "date_true_nurse_1": {
         "name": "School Nurse",
-        "text": "I’ll pour you some water. Let me know if you would rather have warm tea."
+        "text": "Sit easy on the sofa. I'll pour you a glass of water. Or if warm chamomile tea sounds better, say so."
     },
     "date_true_nurse_2": {
         "name": "{name}",
-        "text": "*The sound of water running in the sink starts, then quickly stops.*"
+        "text": "*At the quiet kitchen sink, the sound of clear water filling a glass rings for a moment, then stops. Her soft footsteps come toward me.*"
     },
     "date_true_nurse_alt_1": {
         "name": "School Nurse",
-        "text": "Let's take a different route today and avoid the hospital."
+        "text": "Tonight, let's go back by another walking path, quiet under the streetlights, not the main road where you can see the hospital."
     },
     "date_true_nurse_alt_2": {
         "name": "{name}",
-        "text": "*Her hand comes to rest on a patch of peeling paint on the bench.*"
+        "text": "*On the peeling paint of the wooden park bench, the two of us touch fingertips side by side. Neither pulls a hand away first. We just stay like that.*"
     },
     "ending_counteroffer_bitter": {},
     "co_bitter_seo_1": {
         "name": "{name}",
-        "text": "*About a month later, we return to the café. Seoyeon notices the crooked coaster but leaves it alone.*"
+        "text": "*About a month after that day, sitting across from each other at the café again, Seoyeon sees the crooked coaster and still never touches it.*"
     },
     "co_bitter_seo_2": {
         "name": "Seoyeon",
-        "text": "I keep thinking about that notification, even though I deleted it."
+        "text": "...That notification on your phone, the morning of the festival. I thought I'd erased all of it from my head, but every time I see your face it comes back."
     },
     "co_bitter_seo_3": {
         "name": "{name}",
-        "text": "*Seoyeon gets up, adjusts her bag strap, and opens only her own umbrella.*"
+        "text": "*Seoyeon gets up first, settles her bag strap neatly on her shoulder, and outside the café door quietly opens only her own umbrella.*"
     },
     "co_bitter_yuna_1": {
         "name": "{name}",
-        "text": "*Yuna is already at the used bookstore. She is not holding a book.*"
+        "text": "*On an afternoon after the rain, Yuna is already waiting out front of the used bookstore. Unlike usual, her hands are empty. She isn't holding a single book.*"
     },
     "co_bitter_yuna_2": {
         "name": "Yuna",
-        "text": "I do not go to the annex. Not since that day."
+        "text": "...Since that morning, I don't go to the library annex anymore."
     },
     "co_bitter_yuna_3": {
         "name": "{name}",
-        "text": "*Yuna only nods and turns into the alley across the street.*"
+        "text": "*Yuna gives one short nod, then quietly walks into the alley on the opposite side from where I'm standing.*"
     },
     "co_bitter_dain_1": {
         "name": "{name}",
-        "text": "*Dain stands outside the gym without a ball.*"
+        "text": "*Outside the gym in the afternoon, Dain stands with a hard face, not even holding a volleyball.*"
     },
     "co_bitter_dain_2": {
         "name": "Dain",
-        "text": "I took your name off the list that day. I’m not ready to put it back."
+        "text": "Taking your name off the partner list the morning of the festival... I'm sorry, but I still don't feel like writing your name back into that blank."
     },
     "co_bitter_dain_3": {
         "name": "{name}",
-        "text": "*Dain lightly taps my shoulder with an open palm instead of her fist, then walks past.*"
+        "text": "*Instead of bumping fists for a joke the way she used to, Dain gives my shoulder one short tap with an open palm and walks right past.*"
     },
     "co_bitter_teacher_1": {
         "name": "{name}",
-        "text": "*I return to the hallway after graduation. My former homeroom teacher has no manuscript envelope in her hands.*"
+        "text": "*The faculty-building hallway, on the graduation day I come back to it. The homeroom teacher is no longer holding the brown manuscript envelope.*"
     },
     "co_bitter_teacher_2": {
         "name": "Homeroom Teacher",
-        "text": "Congratulations on graduating. Check that you have all your documents. Take care."
+        "text": "Congratulations on graduating. Check the administrative papers in the envelope and make sure nothing is missing. ...Once you're out in the world, stay well, and stay healthy."
     },
     "co_bitter_teacher_3": {
         "name": "{name}",
-        "text": "*Cradling a stack of papers instead of the attendance book, she heads toward the staff room first.*"
+        "text": "*Instead of a manuscript, the teacher holds a stack of official papers to her chest and heads toward the staff room first.*"
     },
     "co_bitter_nurse_1": {
         "name": "{name}",
-        "text": "*I stop at the open nurse’s office. She looks up from her records and sets down her pen.*"
+        "text": "*I stop in front of the half-open nurse's office door. The school nurse, sorting the charts, notices me and quietly sets her pen down.*"
     },
     "co_bitter_nurse_2": {
         "name": "School Nurse",
-        "text": "I’ve completed the consultation record. Make another appointment if you need help."
+        "text": "I've officially closed out all of your initial counseling record. If you need more help from now on, book a new appointment at the school's counseling desk."
     },
     "co_bitter_nurse_3": {
         "name": "{name}",
-        "text": "*The nurse clears away the empty cup and returns to her desk. I say goodbye from the doorway and leave.*"
+        "text": "*The school nurse clears the empty paper cup off the table and goes back to her desk. I bow quietly at the threshold, then turn and leave.*"
     },
     "forced_violation_resume": {
         "name": "System",
@@ -1829,7 +1829,7 @@
     },
     "forced_violation_day5_after_seoyeon": {
         "name": "Seoyeon",
-        "text": "*Seoyeon speaks coldly after a silence.* Don't think you can pretend what you just did never happened. Don't come near me or contact me for a while.",
+        "text": "*After a cold silence, Seoyeon speaks in a voice like a sheet of ice.* Don't think you can cover up what you just did, crossing the line, as if nothing happened. For a while, don't come near me, and don't contact me in private.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -1837,15 +1837,15 @@
     },
     "forced_violation_day5_seoyeon_apologize": {
         "name": "Seoyeon",
-        "text": "*Seoyeon's face stays tense.* I heard you. That doesn't erase what happened. Like I said, don't contact me for a while."
+        "text": "*Seoyeon's expression doesn't ease at all. It stays firm.* I heard the apology. That doesn't make what you did into something that never happened. Like I said, don't contact me for a while."
     },
     "forced_violation_day5_seoyeon_excuse": {
         "name": "Seoyeon",
-        "text": "*Seoyeon cuts the explanation short.* A misunderstanding? The moment I said no, it stopped being one. Don't say anything else."
+        "text": "*Seoyeon cuts me off, cold.* A misunderstanding? From the moment I clearly said no, that couldn't be a misunderstanding. Don't make any more excuses."
     },
     "forced_violation_day5_after_yuna": {
         "name": "Yuna",
-        "text": "*Yuna catches her breath, wary.* You knew I didn't want it, and you ignored me. I don't even want to see your face right now. Don't contact me again.",
+        "text": "*Yuna takes a step back, on guard, and steadies her short breath.* You knew I was refusing, saying no, and you ignored me anyway. Right now I don't even want to look at your face. Don't contact me anymore.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -1853,15 +1853,15 @@
     },
     "forced_violation_day5_yuna_apologize": {
         "name": "Yuna",
-        "text": "*Yuna answers after a long pause.* An apology doesn't make it disappear. Stop now."
+        "text": "*After a long silence, Yuna answers, low.* Saying sorry out loud doesn't make what just happened disappear. Just go now."
     },
     "forced_violation_day5_yuna_excuse": {
         "name": "Yuna",
-        "text": "*Yuna cuts off the explanation before it is finished.* I said no. There's nothing to explain."
+        "text": "*Yuna doesn't hear my excuse out. She turns her head away.* I clearly said no. This isn't something you explain by dressing it up in words."
     },
     "forced_violation_day5_after_dain": {
         "name": "Dain",
-        "text": "*Dain does not laugh it off the way she usually might. A long silence passes before she answers in a clipped, hard voice.* This isn't a joke. I said no and you forced it anyway. I'm not letting this go.",
+        "text": "*Dain doesn't laugh it off, easy, the way she usually does. After a heavy silence, a low, hard voice comes back.* This isn't something I can call a joke. You pushed it even when I said no. I am absolutely not letting that go.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -1869,15 +1869,15 @@
     },
     "forced_violation_day5_dain_apologize": {
         "name": "Dain",
-        "text": "*Dain finally gives a short answer after a long pause.* Fine. Then we're done for today. I decide if and when we talk again."
+        "text": "*Only after a long while does Dain answer, short and cold.* Fine. I heard the apology. That's it for today. Whether we talk again next time is up to me."
     },
     "forced_violation_day5_dain_excuse": {
         "name": "Dain",
-        "text": "*Dain's voice turns rough.* No. Don't make excuses. I said no, and you did it anyway."
+        "text": "*Dain's voice turns rough and sharp.* No. Don't hide behind a cowardly excuse. You're the one who didn't stop even after I said no."
     },
     "forced_violation_day5_after_teacher": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher speaks firmly.* What you just did clearly crossed a line. Do not come any closer. I will handle this through the proper procedures.",
+        "text": "*The homeroom teacher steps back, firm, and draws a line.* What you just did clearly crossed a line as a student. Don't come any closer. I will handle this strictly, by the school rules and procedures.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -1885,15 +1885,15 @@
     },
     "forced_violation_day5_teacher_apologize": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher takes a breath and speaks.* I heard your apology. I'll still follow the proper procedures. Don't say anything else."
+        "text": "*The homeroom teacher steadies her breath and speaks calmly.* I heard the apology. Even so, the official guidance procedure will still go ahead. Don't say any more. Go back to your seat."
     },
     "forced_violation_day5_teacher_excuse": {
         "name": "Homeroom Teacher",
-        "text": "*The homeroom teacher cuts off the explanation.* This is not the time to start explaining yourself. Stop talking and keep your distance."
+        "text": "*The homeroom teacher cuts the explanation off in one stroke.* This is not a situation you can smooth over with a clumsy explanation. Don't say any more. Keep your distance, now."
     },
     "forced_violation_day5_after_nurse": {
         "name": "School Nurse",
-        "text": "*The nurse's playfulness disappears.* Keep your distance from now on. I will document what happened and inform the people who need to know.",
+        "text": "*The usual ease, and any trace of a smile, vanish completely from the school nurse's face.* From this moment, keep the line. I'll record what just happened in the official log and report it to the office in charge right away.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -1901,7 +1901,7 @@
     },
     "forced_violation_day5_nurse_apologize": {
         "name": "School Nurse",
-        "text": "*The nurse answers firmly after a pause.* I hear your apology. I'll still document this and notify the appropriate people. This conversation is over."
+        "text": "*A moment later, the school nurse answers, firm.* I'll take the apology. Even so, the official record and the report will still go through. Today's conversation ends here."
     },
     "forced_violation_day5_nurse_excuse": {
         "name": "School Nurse",
